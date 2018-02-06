@@ -79,6 +79,8 @@ _.Zones =
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
+								qg(13636, qh(  6983)),	-- You're a Mean One...
+								qg(13636, qa(  7043)),	-- You're a Mean One...	
 							}),
 						},
 						["achievementID"] = 1691, -- Merrymaker
@@ -111,7 +113,7 @@ _.Zones =
 					qg(49243, qh(28635)),	-- A Haunting in Hillsbrad
 					qg(48545, qh(28587)),	-- Aid of the Frostwolf
 					qg(13777, qa( 7081)),	-- Alterac Valley Graveyards
-					n(48319, {	-- Angry Blight Slime
+					n( 48319, {	-- Angry Blight Slime
 						qh(28329),	-- Angry Scrubbing Bubbles
 					}),
 					qg(49687, q( 28733)),	-- Basic Botany
@@ -243,7 +245,7 @@ _.Zones =
 --[[
 					qg(13840, qh( 7166)),	-- Legendary Heroes
 					qg(13841, qa( 7171)),	-- Legendary Heroes
-					n(45728, {	-- Arcane Remnant
+					n( 45728, {	-- Arcane Remnant
 						i(61310, {	-- Arcane Remnant
 							qh(27480),	-- Ley Energies
 						}),
@@ -320,98 +322,119 @@ _.Zones =
 						}),
 					}),
 --[[					
-					qg(, qh(28230)),	-- Protocol
-					qg(, qa( 7162)),	-- Proving Grounds
-					qg(, qh( 7161)),	-- Proving Grounds					
-					qg(, q( 43297)),	-- Repel
-					qg(, qh( 7163)),	-- Rise and Be Recognized
-					qg(, qa( 7168)),	-- Rise and Be Recognized
-					qg(, q( 30116)),	-- Sharpening Your Fangs
+					qg(48020, qh(28230)),	-- Protocol (secondary QG ID 47900)
+					qg(13841, qa( 7162)),	-- Proving Grounds
+					qg(13840, qh( 7161)),	-- Proving Grounds					
+--					q( 43297),	-- Repel (REMOVED, part of Legion pre-patch)
+					qg(13840, qh( 7163)),	-- Rise and Be Recognized
+					qg(13841, qa( 7168)),	-- Rise and Be Recognized
+					ql(qg(57777, q( 30116, {	-- Sharpening Your Fangs
+						["groups"] = {
+						},
+						["classes"] = {4},	-- Rogue
+					}))),
 --]]					
 					qg(49240, qh(28636, { -- Silence of the Dwarves
-						i( 65724),	-- 
-						i( 65706),	-- 
-						i( 65686),	-- 
-						i(131703),	-- 
+						i( 65724),	-- Grasps of the Unyielding
+						i( 65706),	-- Mr. Hider's Bracers
+						i( 65686),	-- Mantle of Haunting
+						i(131703),	-- Foreboding Bracers
 					})),
---					qg(, q( 28747)),	-- Someone Setup the Pumpkin Bomb
+--					qg(49687, q( 28747)),	-- Someone Setup the Pumpkin Bomb
 					qg( 2397, qh(28489, { -- Stagwiches
-						i(65681),	-- 
+						i(65681),	-- 65681
 					})),
 					qg(48545, qh(28616, { -- Stormpike Apocalypse
-						i( 65723),	-- 
-						i( 65705),	-- 
-						i( 65685),	-- 
-						i(131702),	-- 
+						i( 65723),	-- Cloak of Treason
+						i( 65705),	-- Pocket-Nuke Belt
+						i( 65685),	-- Broken Fingers of Hillsbrad
+						i(131702),	-- Nuke Resistant Gauntlets
 					})),
 --[[					
-					qg(, qh(28348)),	-- Stormpike Rendezvous
-					qg(, qh(28324)),	-- Studies in Lethality
-					qg(, q( 28751)),	-- Tending the Garden
-					qg(, q( 28355)),	-- Terrible Little Creatures
-					qg(, qh( 7142)),	-- The Battle for Alterac
-					qg(, qh(28196)),	-- The Battle for Hillsbrad
-					qg(, qa( 7141)),	-- The Battle of Alterac					
-					qg(, qh(28645)),	-- The Durnholde Challenge: Bloodvenom
+					qg(48218, qh(28348)),	-- Stormpike Rendezvous
+					qg( 2391, qh(28324)),	-- Studies in Lethality
+					qg(49687, q( 28751)),	-- Tending the Garden
+					n(2373, {	-- Mudsnout Shaman
+						q(28355),	-- Terrible Little Creatures (may be Horde-only)
+					}),
+					qg(13817, qh( 7142)),	-- The Battle for Alterac
+					n(47789, {	-- Clerk Horrace Whitesteed
+						i(63250, {	-- The Battle for Hillsbrad
+							qh(28196),	-- The Battle for Hillsbrad
+						}),
+					}),
+					qg(13816, qa( 7141)),	-- The Battle of Alterac					
+					qg(49243, qh(28645)),	-- The Durnholde Challenge: Bloodvenom
 --]]
 					qg(49243, qh(28647, { -- The Durnholde Challenge: D-1000
-						i(65707),	-- 
-						i(65687),	-- 
+						i(65707),	-- Discontinuer's Hammer
+						i(65687),	-- Axe of the Judgment Day
 					})),
 --[[					
-					qg(, qh(28646)),	-- The Durnholde Challenge: Infernus
-					qg(, qh(28644)),	-- The Durnholde Challenge: Teracula
-					qg(, qh(28643)),	-- The Durnholde Challenge: Zephyrus					
-					qg(, qh( 7167)),	-- The Eye of Command
-					qg(, qa( 7172)),	-- The Eye of Command
-					qg(, qa(11997)),	-- The Frozen Flame
+					qg(49243, qh(28646)),	-- The Durnholde Challenge: Infernus
+					qg(49243, qh(28644)),	-- The Durnholde Challenge: Teracula
+					qg(49243, qh(28643)),	-- The Durnholde Challenge: Zephyrus					
+					qg(13840, qh( 7167)),	-- The Eye of Command
+					qg(13841, qa( 7172)),	-- The Eye of Command
+					qart(qg(99415, qa(11997, {	-- The Frozen Flame
+						["groups"] = {
+						},
+						["classes"] = {8},	-- Mage
+					}))),
 --]]					
 					qg( 2437, qh(28484, { -- The Heart of the Matter
-						i( 65720),	-- 
-						i( 65702),	-- 
-						i( 65682),	-- 
-						i(131698),	-- 
+						i( 65720),	-- Tell-Tale Bracers
+						i( 65702),	-- Supple Yeti Leggings
+						i( 65682),	-- Bel'varil's Armbands
+						i(131698),	-- Bel'varil's Chain Leggings
 					})),
 --[[					
-					qg(, q( 40270)),	-- The Path of Atonement
-					qg(, qh(28375)),	-- The Road to Purgation
-					qg(, qh(28397)),	-- They Will Never Expect This...
-					qg(, qh(28144)),	-- Thieving Little Monsters!
-					qg(, q( 29847)),	-- To Catch a Thief
-					qg(, q( 29934)),	-- To Ravenholdt
-					qg(, qa( 7102)),	-- Towers and Bunkers
+					qart(qg(99398, q( 40270, {	-- The Path of Atonement
+						["groups"] = {
+						},
+						["classes"] = {8},	-- Mage
+					}))),
+					qg(48218, qh(28375)),	-- The Road to Purgation
+					qg(48470, qh(28397)),	-- They Will Never Expect This...
+					qg(47554, qh(28144)),	-- Thieving Little Monsters!
+					ql(qg(56375, q(29847, {	-- To Catch a Thief
+						["groups"] = {
+						},
+						["classes"] = {4},	-- Rogue
+					}))),
+					ql(qg(55488, q( 29934, {	-- To Ravenholdt
+						["groups"] = {
+						},
+						["classes"] = {4},	-- Rogue
+					}))),
+					qg(13777, qa( 7102)),	-- Towers and Bunkers
 --]]
 					qg( 2391, qh(28330, { -- Trail of Filth
-						i( 65718),	-- 
-						i( 65700),	-- 
-						i( 65679),	-- 
-						i(131694),	-- 
+						i( 65718),	-- Lethality Leggings
+						i( 65700),	-- Chet's Slimy Bracers
+						i( 65679),	-- Hinott's Outer Robe
+						i(131694),	-- Slime Resistant Bracer
 					})),
 --[[					
-					qg(, qh(27512)),	-- Transdimensional Warfare: Chapter I
-					qg(, qh(28111)),	-- Trouble at Azurelode
-					qg(, qh(28251)),	-- Trouble at Southshore
-					qg(, qh(28168)),	-- Trouble at the Sludge Fields
-					qg(, q( 28752)),	-- Unstoppable Onslaught
-					qg(, qh(28619)),	-- Warchief's Command: Arathi Highlands!
-					qg(, qh(28089)),	-- Warchief's Command: Hillsbrad Foothills!
-					qg(, qh(28571)),	-- Warchief's Command: Hillsbrad Foothills!
+					qg( 2215, qh(28111)),	-- Trouble at Azurelode
+					qg(47900, qh(28251)),	-- Trouble at Southshore
+					qg(47554, qh(28168)),	-- Trouble at the Sludge Fields (add'l QG 2215)
+--					q(28752),	-- Unstoppable Onslaught (REMOVED in Beta)
+					o(207279, {	-- Warchief's Command Board
+						qh(28619),	-- Warchief's Command: Arathi Highlands!
+					}),
 --]]					
 					qg( 2215, qh(28096, { -- Welcome to the Machine
-						i( 65711),	-- 
-						i( 65693),	-- 
-						i( 65671),	-- 
-						i(131688),	-- 
+						i( 65711),	-- Portable Lap Desk
+						i( 65693),	-- Quest Giver's Pauldrons
+						i( 65671),	-- Cue Cue Gloves
+						i(131688),	-- Winning Mail Gloves
 					})),
 					qg( 2418, qh(28485, { -- Yetimus the Yeti Lord
-						i(65726),	-- 
-						i(65708),	-- 
-						i(65688),	-- 
-					})),
---[[					
-					qg(, qh(  6983)),	-- You're a Mean One...
-					qg(, qa(  7043)),	-- You're a Mean One...	
---]]					
+						i(65726),	-- Shield of Uncurbed Appetite
+						i(65708),	-- Tarren Orb
+						i(65688),	-- Yetimus Maximus
+					})),					
 					nlq({ 	-- Legacy Quests
 						qh(1051, { 	-- Vorrel's Revenge
 							i(4643), 	-- Grimsteel Cape
