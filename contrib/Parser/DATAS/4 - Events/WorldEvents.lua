@@ -11,7 +11,6 @@ _.WorldEvents =
 			}),
 			n(-540, {	-- The Scourge Invasion
 			}),
-			--[[
 			n(-539, {	-- Gates of Ahn'Qiraj
 			}),
 			n(-531, {	-- 2008 Spirit of Competition Event
@@ -20,13 +19,10 @@ _.WorldEvents =
 			}),
 			n(-562, {	-- 2008 Worldwide Invitational
 			}),
-			--]]
 			n(-545, {	-- Blizzcon
 			}),
-			--[[
 			n(-534, {	-- Collector's Edition
 			}),
-			--]]
 			n(-546, {	-- Recruit A Friend
 			}),
 			n(-573, {	-- Scroll of Resurrection
@@ -35,7 +31,6 @@ _.WorldEvents =
 			}),
 			n(-538, {	-- Diablo 20th Anniversary Promotion
 			}),
-			--[[
 			n(-574, {	-- Diablo III Annual Pass
 			}),
 			n(-533, {	-- Hearthstone Promotion
@@ -60,7 +55,6 @@ _.WorldEvents =
 			}),
 			n(-558, {	-- Battle.net World Championship Shanghai 2012
 			}),
-			--]]
 			i(19160, {	-- Contest Winner's Tabard
 				["groups"] = {
 				},
