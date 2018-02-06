@@ -5,83 +5,7 @@ _.Zones =
 {
 	m(862, { 	-- Pandaria
 		m(806, {	-- The Jade Forest
-			["groups"] = {			
---[[				
-				n(-3, { 	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),				
---]]				
+			["groups"] = {
 				n(-25, { 	-- Pet Battle
 					p(380), 	-- Bucktooth Flapper
 					p(562), 	-- Coral Adder
@@ -126,7 +50,7 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[				
+--[[
 					q( 29619),	-- A Courteous Guest
 					q( 30149),	-- A Feast for the Senses
 					q( 29756),	-- A Humble Offering
@@ -297,7 +221,7 @@ _.Zones =
 					qh( 31773),	-- Prowler Problems
 					q( 29882),	-- Quill of Stingers
 					q( 29579),	-- Rally the Survivors
-					q( 41733),	-- Rebuilding the Order					
+					q( 41733),	-- Rebuilding the Order
 					qh( 29694),	-- Regroup!
 					q( 30500),	-- Residual Fallout
 					qa( 29899),	-- Rest in Peace
@@ -462,7 +386,7 @@ _.Zones =
 						i(84264),
 						i(84265),
 						i(84266),
-					}),	
+					}),
 					q(29630,  {  	-- And a Heavy Fist
 						i(80740),
 						i(80741),
@@ -473,7 +397,7 @@ _.Zones =
 						i(80746),
 						i(80747),
 						i(80748),
-					}),	
+					}),
 					q(29624,  {  	-- Attention
 						i(80731),
 						i(80732),
@@ -780,23 +704,23 @@ _.Zones =
 							i(87590),
 							i(87589),
 						}),
-					}), 
-					{				-- Ancient Jinyu Staff	
-					["itemID"] = 86196, 	
-					["objectID"] = 213741,
-					["questID"] = 31402,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},
-					{				-- Ancient Pandaren Mining Pick
-					["itemID"] = 85777, 	
-					["objectID"] = 213364,
-					["questID"] = 31399,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},					
+					}),
+					o(213741, { 		-- Ancient Jinyu Staff
+						["groups"] = {
+							i(86196),	-- Ancient Jinyu Staff
+						},
+						["questID"] = 31402,
+					}),
+					o(213364, { 		-- Ancient Pandaren Mining Pick
+						["groups"] = {
+							i(85777),	-- Ancient Pandaren Mining Pick
+						},
+						["questID"] = 31399,
+					}),
 					n(51078, { 		-- Ferdinand
 						dr(16, i(87652)),
 						dr(12, i(87586)),
-						dr(11, {	
+						dr(11, {
 							i(87587),
 							i(87588),
 							i(87589),
@@ -807,18 +731,18 @@ _.Zones =
 							i(87594),
 						}),
 					}),
-					{				-- Hammer of Ten Thunders		
-					["itemID"] = 86198, 	
-					["objectID"] = 213742,
-					["questID"] = 31403,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},		
-					{				-- Jade Infused Blade				
-					["itemID"] = 86199, 	
-					["objectID"] = 213743,
-					["questID"] = 31307,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},						
+					o(213742, { 		-- Hammer of Ten Thunders
+						["groups"] = {
+							i(86198),	-- Hammer of Ten Thunders
+						},
+						["questID"] = 31403,
+					}),
+					o(213743, { 		-- Jade Infused Blade
+						["groups"] = {
+							i(86199),	-- Jade Infused Blade
+						},
+						["questID"] = 31307,
+					}),
 					n(50338, { 		-- Kor'nas Nightsavage
 						dr(14, i(87642)),
 						dr(12, i(87590)),
@@ -826,13 +750,13 @@ _.Zones =
 							i(87586),
 							i(87587),
 							i(87588),
-							i(87589),	
+							i(87589),
 							i(87591),
 							i(87592),
 							i(87593),
 							i(87594),
 						}),
-					}), 
+					}),
 					n(50363, { 		-- Krax'ik
 						dr(15, i(87646)),
 						dr(12, {
@@ -848,9 +772,9 @@ _.Zones =
 						dr(10, {
 							i(87591),
 							i(87587),
-							i(87594),	
+							i(87594),
 						}),
-					}), 
+					}),
 					n(50823, { 		-- Mister Ferocious
 						dr(14, i(87652)),
 						dr(11, {
@@ -861,10 +785,10 @@ _.Zones =
 							i(87590),
 							i(87592),
 							i(87593),
-							i(87594),	
+							i(87594),
 						}),
 						dr(10, 	i(87591)),
-					}), 
+					}),
 					n(50350, { 		-- Morgrinn Crackfang
 						dr(15, i(87643)),
 						dr(11, {
@@ -878,7 +802,7 @@ _.Zones =
 							i(87594),
 						}),
 						dr(10, i(87588)),
-					}), 
+					}),
 					n(50782, { 		-- Sarnak
 							dr(15, i(87650)),
 						dr(13, i(87594)),
@@ -888,21 +812,21 @@ _.Zones =
 							i(87588),
 							i(87591),
 						}),
-						dr(10, {	
+						dr(10, {
 							i(87586),
 							i(87587),
 							i(87590),
 							i(87592),
-						}),					
-										
-					}), 
+						}),
+
+					}),
 					n(50808, { 		-- Urobi the Walker
 						dr(14, i(87651)),
 						dr(12, {
 							i(87586),
 							i(87591),
-						}),	
-						dr(11, {	
+						}),
+						dr(11, {
 							i(87588),
 							i(87590),
 							i(87592),
@@ -912,14 +836,14 @@ _.Zones =
 							i(87594),
 							i(87589),
 							i(87587),
-						}),		
-					}), 
-					{				-- Wodin's Mantid Shanker						
-					["itemID"] = 85776, 	
-					["objectID"] = 213363,
-					["questID"] = 31397,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},						
+						}),
+					}),
+					o(213363, { 		-- Wodin's Mantid Shanker
+						["groups"] = {
+							i(85776),	-- Wodin's Mantid Shanker
+						},
+						["questID"] = 31397,
+					}),
 					n(69769, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -945,9 +869,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),		
+						}),
 						dr(4, i(94229)), 	-- Mount
-					}), 
+					}),
 					n(69841, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -973,9 +897,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),	
-						dr(4, i(94230)),	-- Mount							
-					}), 
+						}),
+						dr(4, i(94230)),	-- Mount
+					}),
 					n(69842, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -1001,9 +925,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),				
+						}),
 						dr(4, i(94231)),	-- Mount
-					}), 
+					}),
 					n(69768, { 		-- Zandalari Warscout
 						dr(15, {
 							i(94158, {
@@ -1029,10 +953,10 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),							
-					}), 
+						}),
+					}),
 				--	n(70323, { 		-- Krakkanon	}),
-				--	n(65003, { 		-- Martar the Not-So-Smart	}),					
+				--	n(65003, { 		-- Martar the Not-So-Smart	}),
 				}),
 				n(-2, {		-- Vendors
 					nh(56406, {	-- Rivett Clutchpop
@@ -1351,9 +1275,9 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 85,	
+			["Lvl"] = 85,
 			["achievementID"] = 6351,
-			["description"] = "|cff66ccffThe Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.|r",				
-		}),	
+			["description"] = "|cff66ccffThe Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.|r",
+		}),
 	}),
 };

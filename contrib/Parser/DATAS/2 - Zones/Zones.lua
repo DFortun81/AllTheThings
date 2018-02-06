@@ -4,7 +4,7 @@
 _.Zones =
 {
 	n(-48, { 	-- Stable Master
-		["groups"] = {	
+		["groups"] = {
 			i(37460), -- Toy
 		},
 		["icon"] = "Interface\\Icons\\garrison_building_stables",
@@ -14,11 +14,11 @@ _.Zones =
 			m(43, {		-- Ashenvale
 			}),
 			m(181, {	-- Azshara
-			}),	
+			}),
 			m(464, {	-- Azuremyst Isle
 			}),
 			m(476, {	-- Bloodmyst Isle
-			}), 
+			}),
 			m(42, {		-- Darkshore
 			}),
 			m(381, { 	-- Darnassus
@@ -34,7 +34,7 @@ _.Zones =
 			m(121, {	-- Feralas
 			}),
 			m(606, {	-- Mount Hyjal
-			}),	
+			}),
 			m(241, { 	-- Moonglade
 			}),
 			m(9, { 		-- Mulgore
@@ -46,7 +46,7 @@ _.Zones =
 			m(261, {	-- Silithus
 			}),
 			m(607, {	-- Southern Barrens
-			}),		
+			}),
 			m(81, {		-- Stonetalon Mountains
 			}),
 			m(161, {	-- Tanaris
@@ -89,11 +89,11 @@ _.Zones =
 			m(23, {		-- Eastern Plaguelands
 			}),
 			m(30, {		-- Elwynn Forest
-			}),	
+			}),
 			m(462, {	-- Eversong Woods
 			}),
 			m(463, {	-- Ghostlands
-			}), 
+			}),
 			m(545, { 	-- Gilneas
 			}),
 			m(24, {		-- Hillsbrad Foothills
@@ -111,7 +111,7 @@ _.Zones =
 			m(28, {		-- Searing Gorge
 			}),
 			m(480, { 	-- Silvermoon City
-			}), 
+			}),
 			m(21, {		-- Silverpine Forest
 			}),
 			m(301, { 	-- Stormwind City
@@ -132,11 +132,11 @@ _.Zones =
 								i(67282), 	-- Pet Elementium Geode
 							},
 							["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
-						}),	
+						}),
 					}),
-				},	
-				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",	
-				["description"] = "|cff66ccffTol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.|r",		
+				},
+				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",
+				["description"] = "|cff66ccffTol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.|r",
 			}),
 			m(700, {	-- Twilight Highlands
 			}),
@@ -158,20 +158,20 @@ _.Zones =
 	m(466, { 	-- Outland
 		["groups"] = {
 			m(475, {	-- Blade's Edge Mountains
-			}), 
+			}),
 			m(465, {	-- Hellfire Peninsula
-			}), 
+			}),
 			m(477, { 	-- Nagrand (Outland)
-			}), 
+			}),
 			m(479, { 	-- Netherstorm
-			}), 	
+			}),
 			m(473, {	-- Shadowmoon Valley (Outland)
 			}),
 			m(481, { 	-- Shattrath City
 			}),
 			m(478, { 	-- Terokkar Forest
-			}), 
-			m(467, {	-- Zangarmarsh 	
+			}),
+			m(467, {	-- Zangarmarsh
 			}),
 		},
 		["achievementID"] = 44,
@@ -184,16 +184,16 @@ _.Zones =
 			}),
 			m(510, {	-- Crystalsong Forest
 			}),
-			m(504, { 	-- Dalaran: Northrend		
+			m(504, { 	-- Dalaran: Northrend
 			}),
 			m(488, { 	-- Dragonblight
-			}),	
+			}),
 			m(490, {	-- Grizzly Hills
 			}),
 			m(491, { 	-- Howling Fjord
 			}),
 			m(492, { 	-- Icecrown
-			}), 
+			}),
 			m(493, { 	-- Sholazar Basin
 			}),
 			m(495, { 	-- The Storm Peaks
@@ -210,7 +210,7 @@ _.Zones =
 	m(751, { 	-- The Maelstrom
 		["groups"] = {
 			m(640, {	-- Deepholm
-			}),	
+			}),
 			--[[ Let's comment this out until we get some data in here.
 			m(605, { 	-- Kezan
 			}),
@@ -232,16 +232,14 @@ _.Zones =
 			}),
 			m(857, {	-- Krasarang Wilds
 			}),
-			m(809, { 	-- Kun-Lai Summit	
+			m(809, { 	-- Kun-Lai Summit
 			}),
 			m(806, {	-- The Jade Forest
 			}),
 			m(873, {	-- The Veiled Stair
 			}),
-			--[[ Let's comment this out until we get some data in here.
 			m(1044, { 	-- The Wandering Isle
 			}),
-			--]]
 			m(951, {	-- Timeless Isle
 			}),
 			m(810, {	-- Townlong Steppes
@@ -295,18 +293,18 @@ _.Zones =
 					i(143660), -- Mrgrglhjorn
 				}),
 			}),
-			n(-20, {	-- Order Halls	
+			n(-20, {	-- Order Halls
 				n(-23, { 	-- Acherus: The Ebon Hold -- Death Knight
-				}),		
+				}),
 				m(1050, { 	-- Dreadscar Rift -- Warlock
 				}),
 				m(1068, { 	-- Hall of the Guardian -- Mage
 				}),
 				m(1052, {	-- Mardum, the Shattered Abyss - Demon Hunter
-				}),			
+				}),
 				m(1040, { 	-- Netherlight Temple -- Priest
 				}),
-				n(-21, { 	-- Sanctum of Light -- Paladin 
+				n(-21, { 	-- Sanctum of Light -- Paladin
 				}),
 				m(1035, { 	-- Skyhold -- Warrior
 				}),
@@ -315,11 +313,11 @@ _.Zones =
 				n(-22, { 	-- The Hall of  Shadows -- Rogue
 				}),
 				m(1057, { 	-- The Heart of Azeroth -- Shaman
-				}),			
+				}),
 				m(1044, { 	-- The Wandering Isle -- Monk
-				}),			
+				}),
 				m(1072, { 	-- Trueshot Lodge -- Hunter
-				}),			
+				}),
 			}),
 			n(-171, { -- Quest Chains
 			}),
@@ -385,7 +383,7 @@ _.Zones =
 					i(140020), -- Vambraces of the Ebon Tide
 					i(139998), -- Construct Plate Grips
 					i(121756), -- Shieldguard Girdle
-					i(140009), -- Felsword Legplates 
+					i(140009), -- Felsword Legplates
 					i(140017), -- Boots of the Felsword
 				}),
 			}),
@@ -446,13 +444,13 @@ _.Zones =
 			m(1015, {  	-- Azsuna
 				n(-7, { 	-- World Bosses
 				}),
-			}),	
+			}),
 			m(1021, { 	-- Broken Shore
 				n(-7, { 	-- World Bosses
 				}),
 			}),
 			m(1014, { 	-- Dalaran
-			}),		
+			}),
 			m(1096, {	-- Eye of Azshara
 			}),
 			m(1024, {	-- Highmountain
