@@ -5,83 +5,7 @@ _.Zones =
 {
 	m(862, { 	-- Pandaria
 		m(858, {	-- Dread Wastes
-			["groups"] = {		
---[[				
-				n(-3, { 	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),				
---]]				
+			["groups"] = {
 				n(-25, { 	-- Pet Battles
 					p(732), 	-- Amber Moth
 					p(742), 	-- Clouded Hedgehog
@@ -108,9 +32,9 @@ _.Zones =
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 					}),
-				}),	
+				}),
 				n(-17, { 	-- Quests
---[[				
+--[[
 					q( 31178),	-- A Bloody Delight
 					q( 31066),	-- A Cry From Darkness
 					q( 32616),	-- A Large Pile of Giant Dinosaur Bones
@@ -185,7 +109,7 @@ _.Zones =
 					q( 31071),	-- I Bring Us Great Shame
 					q( 31010),	-- In Her Clutch
 					q( 31081),	-- Incantations Fae and Primal
-					q( 31272),	-- Infection	
+					q( 31272),	-- Infection
 					q( 31133),	-- Kor'thik Aggression
 					q( 31024),	-- Kunchong Treats
 					q( 31598),	-- Kypa'rak's Core
@@ -259,7 +183,7 @@ _.Zones =
 					q( 31502),	-- Wing Clip
 					q( 31074),	-- Wood and Shade
 					q( 31182),	-- You Otter Know
---]]					
+--]]
 					q(31008,  {  	-- Amber Arms
 						i(88122),
 						i(88121),
@@ -452,19 +376,19 @@ _.Zones =
 							i(87634),
 						}),
 						dr(8, i(87633)),
-					}), 
-					{				-- Blade of the Poisoned Mind
-					["itemID"] = 86527, 	
-					["objectID"] = 213972,
-					["questID"] = 31438,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},
-					{				-- Blade of the Prime
-					["itemID"] = 86522, 
-					["objectID"] = 213967,
-					["questID"] = 31433,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},					
+					}),
+					o(213972, {		-- Blade of the Poisoned Mind
+						["groups"] = {
+							i(86527),	-- Blade of the Poisoned Mind
+						},
+						["questID"] = 31438,
+					}),
+					o(213967, {		-- Blade of the Prime
+						["groups"] = {
+							i(86522),	-- Blade of the Prime
+						},
+						["questID"] = 31433,
+					}),
 					n(50334, { 		-- Dak the Breaker
 						dr(24, i(87635)),
 						dr(10, {
@@ -479,13 +403,13 @@ _.Zones =
 							i(87633),
 							i(87628),
 						}),
-					}), 
-					{				-- Dissector's Staff of Mutation
-					["itemID"] = 86524,        
-					["objectID"] = 213969,
-					["questID"] = 31435,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},
+					}),
+					o(213969, {		-- Dissector's Staff of Mutation
+						["groups"] = {
+							i(86524),	-- Dissector's Staff of Mutation
+						},
+						["questID"] = 31435,
+					}),
 					n(50739, { 		-- Gar'lok
 						dr(23, i(86578)),
 						dr(20, i(87628)),
@@ -499,7 +423,7 @@ _.Zones =
 						}),
 						dr(9, i(87634)),
 						dr(8, i(87633)),
-					}), 
+					}),
 					n(50836, { 		-- Ik-Ik the Nimble
 						dr(17, i(87634)),
 						dr(15, i(87630)),
@@ -515,7 +439,7 @@ _.Zones =
 							i(87627),
 						}),
 						dr(8, i(87633)),
-					}), 
+					}),
 					n(50347, { 		-- Karr the Darkener
 						dr(18, i(87634)),
 						dr(17, i(87630)),
@@ -549,12 +473,12 @@ _.Zones =
 						}),
 						dr(8, i(87633)),
 					}),
-					{				-- Malik's Stalwart Spear
-					["itemID"] = 86520, 
-					["objectID"] = 213964,
-					["questID"] = 31430,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},
+					o(213964, {		-- Malik's Stalwart Spear
+						["groups"] = {
+							i(86520),	-- Malik's Stalwart Spear
+						},
+						["questID"] = 31430,
+					}),
 					n(50776, { 		-- Nalash Verdantis
 						dr(15, {
 							i(87635),
@@ -572,7 +496,7 @@ _.Zones =
 							i(86563),	-- Pet
 							i(87633),
 						}),
-					}), 
+					}),
 					n(50805, { 		-- Omnis Grinlok
 						dr(18, i(87628)),
 						dr(11, {
@@ -587,19 +511,19 @@ _.Zones =
 						}),
 						dr(9, i(87630)),
 						dr(8, i(87633)),
-					}), 
-					{				-- Swarming Cleaver of Ka'roz
-					["itemID"] = 86523, 
-					["objectID"] = 213968,
-					["questID"] = 31434,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},					
-					{				-- Wind-Reaver's Dagger of Quick Strikes
-					["itemID"] = 86519, 
-					["objectID"] = 213962,
-					["questID"] = 31429,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},						
+					}),
+					o(213968, {		-- Swarming Cleaver of Ka'roz
+						["groups"] = {
+							i(86523),	-- Swarming Cleaver of Ka'roz
+						},
+						["questID"] = 31434,
+					}),
+					o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
+						["groups"] = {
+							i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
+						},
+						["questID"] = 31429,
+					}),
 					n(69769, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -625,9 +549,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),		
+						}),
 						dr(4, i(94229)), 	-- Mount
-					}), 
+					}),
 					n(69841, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -653,9 +577,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),	
-						dr(4, i(94230)),	-- Mount							
-					}), 
+						}),
+						dr(4, i(94230)),	-- Mount
+					}),
 					n(69842, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -681,9 +605,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),				
+						}),
 						dr(4, i(94231)),	-- Mount
-					}), 
+					}),
 					n(69768, { 		-- Zandalari Warscout
 						dr(15, {
 							i(94158, {
@@ -709,8 +633,8 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),							
-					}), 
+						}),
+					}),
 				}),
 				n(-2, {		-- Vendors
 					n(64599, {	-- Ambersmith Zikk <Klaxxi Quartermaster>
@@ -790,9 +714,9 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 89,	
+			["Lvl"] = 89,
 			["achievementID"] = 6978,
-			["description"] = "|cff66ccffThe Dread Wastes are an area of Pandaria, located south of Townlong Steppes and west of the Valley of the Four Winds and Vale of Eternal Blossoms. Separated from the rest of Pandaria by the Serpent's Spine constructed during the rule of Lei Shen, the Dread Wastes are the home of the Mantid. The landscape is dotted with massive Kypari trees that produce the amber which the Mantid utilize in many ways. Klaxxi'vess serves as the main quest hub for the zone, but there are two Pandaren settlements, Soggy's Gamble and Sunset Brewgarden, that provide additional quests and are necessary for unlocking all of the Paragons.|r",				
-		}),	
+			["description"] = "|cff66ccffThe Dread Wastes are an area of Pandaria, located south of Townlong Steppes and west of the Valley of the Four Winds and Vale of Eternal Blossoms. Separated from the rest of Pandaria by the Serpent's Spine constructed during the rule of Lei Shen, the Dread Wastes are the home of the Mantid. The landscape is dotted with massive Kypari trees that produce the amber which the Mantid utilize in many ways. Klaxxi'vess serves as the main quest hub for the zone, but there are two Pandaren settlements, Soggy's Gamble and Sunset Brewgarden, that provide additional quests and are necessary for unlocking all of the Paragons.|r",
+		}),
 	}),
 };

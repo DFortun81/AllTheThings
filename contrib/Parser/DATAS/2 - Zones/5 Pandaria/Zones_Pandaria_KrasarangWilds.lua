@@ -6,82 +6,6 @@ _.Zones =
 	m(862, { 	-- Pandaria
 		m(857, {	-- Krasarang Wilds
 			["groups"] = {
---[[				
-				n(-3, { 	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),				
---]]				     
 				n(-25, { 	-- Pet Battle
 					p(716), 	-- Amethyst Spiderling
 					p(714), 	-- Feverbite Hatchling
@@ -102,7 +26,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["description"] = "This wild pet can be found on Turtle Beach in Krasarang Wilds. It only spawns during the Wanderer's Festival. The festival is held only on Sunday night from 9 PM to 11 PM (Pacific Standard Time, GMT-8). During the festival, floating lanterns appear on the surface of the water and Pandaren NPCs wander onto the beach to set up bonfires and shoot off fireworks. Shortly after, the Wanderer's Festival Hatchlings appear.",
-					}),	
+					}),
 					q(31954, { 	-- Grand Master Mo'ruk
 						i(89125, {	-- Sack of Pet Supplies
 							i(89139),	-- TOY! Chain Pet Leash
@@ -112,7 +36,7 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[				
+--[[
 					qh( 32169),	-- A Colossal Victory
 					qa( 32172),	-- A Colossal Victory
 					qa( 32143),	-- A Kind of Magic
@@ -204,7 +128,7 @@ _.Zones =
 					qh( 30130),	-- Herbal Remedies
 					qh( 32135),	-- Hero Killer
 					qa( 32153),	-- Hero Killer
-					q( 32499),	-- Honor the Flame					
+					q( 32499),	-- Honor the Flame
 					q( 30376),	-- Hope Springs Eternal
 					q( 30734),	-- Huck Wheelbarrow
 					q( 30658),	-- Huff & Puff
@@ -304,7 +228,7 @@ _.Zones =
 					qa( 32370),	-- The Kun-Lai Expedition
 					qa( 30359),	-- The Lord Reclaimer
 					q( 30669),	-- The Lorewalker on the Lake
-					qa( 30344),	-- The Lost Dynasty					
+					qa( 30344),	-- The Lost Dynasty
 					qh( 30175),	-- The Mantid
 					qa( 30361),	-- The Mantid
 					qh( 32250),	-- The Might of the Warchief
@@ -517,7 +441,7 @@ _.Zones =
 					}),
 					qa(32455,  {  	-- The Silence
 						i(93385), 		-- MOUNT! Grand Gryphon
-					}),	
+					}),
 					qa(30357,  {  	-- The Stoneplow Convoy
 						["groups"] = {
 							i(84291),
@@ -592,13 +516,13 @@ _.Zones =
 							i(87605),
 							i(87611),
 						}),
-					}), 
-					n(66936, { -- Clawlord Kril'mandar <The Pinch King>
+					}),
+					n(66936, { 		-- Clawlord Kril'mandar <The Pinch King>
 						 ["groups"] = {
 							i(90087), -- Lobstmourne
 						 },
 						 ["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
-					}),					
+					}),
 					n(50768, { 		-- Cournith Waterstrider
 						dr(15, i(90721)),
 						dr(11, {
@@ -612,9 +536,9 @@ _.Zones =
 							i(87606),
 						}),
 						dr(10, i(87607)),
-					}), 
+					}),
 					o(213651, { 	-- Equipment Locker
-						["groups"] = {	
+						["groups"] = {
 							dr(20.0, i( 86122)),	-- Plankwalking Greaves
 							dr(19.0, i( 86115)),	-- Swashbuckling Boots
 							dr(18.0, i( 86117)),	-- Seafarer's Treads of Precision
@@ -623,7 +547,7 @@ _.Zones =
 							dr(08.0, i( 86118)),	-- Seafaring Advisor's Slippers
 							dr(05.0, i( 86119)),	-- Seafarer's Boots of Meditation
 							dr(04.0, i( 86120)),	-- Seafaring Sabatons of Meditation
-							dr(00.9, i( 86121)),	-- Radiant Seafarer's Boots		
+							dr(00.9, i( 86121)),	-- Radiant Seafarer's Boots
 						},
 						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 						["modelScale"] = 1.5,
@@ -647,7 +571,7 @@ _.Zones =
 							i(87605),
 							i(87610),
 						}),
-					}), 					
+					}),
 					n(50340, { 		-- Gaarn the Toxic
 						dr(14, i(90725)),
 						dr(11, {
@@ -663,13 +587,13 @@ _.Zones =
 							i(87610),
 							i(87608),
 						}),
-					}), 
-					{				-- Pandaren Fishing Spear
-					["itemID"] = 86124, 
-					["objectID"] = 213653,
-					["questID"] = 31409, 
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},								
+					}),
+					o(213653, {		-- Pandaren Fishing Spear
+						["groups"] = {
+							i(86124),	-- Pandaren Fishing Spear
+						},
+						["questID"] = 31409,
+					}),
 					n(50352, { 		-- Qu'nas
 						dr(16, i(90717)),
 						dr(12, {
@@ -685,7 +609,7 @@ _.Zones =
 							i(87611),
 						}),
 						dr(10, i(87612)),
-					}), 
+					}),
 					n(50816, { 		-- Ruun Ghostpaw
 						dr(16, i(90720)),
 						dr(12, {
@@ -703,7 +627,7 @@ _.Zones =
 							i(87605),
 							i(87606),
 						}),
-					}), 
+					}),
 					n(50830, { 		-- Spriggin
 						dr(14, i(90724)),
 						dr(11, {
@@ -719,7 +643,7 @@ _.Zones =
 							i(87605),
 							i(87608),
 						}),
-					}), 
+					}),
 					n(50388, { 		-- Torik-Ethis
 						dr(13, i(90718)),
 						dr(12, {
@@ -737,7 +661,7 @@ _.Zones =
 							i(87604),
 							i(87606),
 						}),
-					}), 
+					}),
 					n(69769, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -763,9 +687,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),		
+						}),
 						dr(4, i(94229)), 	-- Mount
-					}), 
+					}),
 					n(69841, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -791,9 +715,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),	
-						dr(4, i(94230)),	-- Mount							
-					}), 
+						}),
+						dr(4, i(94230)),	-- Mount
+					}),
 					n(69842, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -819,9 +743,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),				
+						}),
 						dr(4, i(94231)),	-- Mount
-					}), 
+					}),
 					n(69768, { 		-- Zandalari Warscout
 						dr(15, {
 							i(94158, {
@@ -847,16 +771,16 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),							
-					}), 
+						}),
+					}),
 --[[
-				--	n(68318, { 		-- Dalan Nightbreaker	}), 
-				--	n(68319, { 		-- Disha Fearwarden	}), 
-				--	n(68321, { 		-- Kar Warmaker	}), 
+				--	n(68318, { 		-- Dalan Nightbreaker	}),
+				--	n(68319, { 		-- Disha Fearwarden	}),
+				--	n(68321, { 		-- Kar Warmaker	}),
 				--	n(70323, { 		-- Krakkanon	}),
-				--	n(68317, { 		-- Mavis Harms	}), 
-				-- 	n(68322, { 		-- Muerta	}), 
-				--	n(68320, { 		-- Ubunti the Shade	}), 
+				--	n(68317, { 		-- Mavis Harms	}),
+				-- 	n(68322, { 		-- Muerta	}),
+				--	n(68320, { 		-- Ubunti the Shade	}),
 --]]
 				}),
 				n(-2, {		-- Vendor
@@ -944,9 +868,9 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 86,	
+			["Lvl"] = 86,
 			["achievementID"] = 6975,
-			["description"] = "|cff66ccffThe Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.|r",				
-		}),	
+			["description"] = "|cff66ccffThe Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.|r",
+		}),
 	}),
 };

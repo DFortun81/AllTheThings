@@ -8,6 +8,7 @@ profession(356, 7620, { 	-- Fishing
 			desc(un(15, i(84661)), "Bought from Nat Pagle in Krasarang Wilds after obtaining Revered with The Anglers for 400g."),	-- Dragon Fishing Pole
 			desc(un(15, i(45992)), "Drop from Lunarfall or Frostdeep Cavedwellers in the garrison."),	-- Jeweled Fishing Pole
 			desc(un(15, i(44050)), "Bought from Sairuk or Tanaika after obtaining Exalted with Kalu'ak for 102g73s17c."),	-- Mastercraft Kalu'ak Fishing Pole
+			desc(un(15, i(19022)), "Reward from quest in The Hinterlands."),	-- Nat Pagle's Extreme Angler FC-5000
 			desc(un(15, i(45858)), "Reward from Nat Pagle, Angler Extreme quest in Duskwallow Marsh."),	-- Nat's Lucky Fishing Pole
 			desc(un(15, i(84660)), "Bought from Nat Pagle in Krasarang Wilds after obtaining Honored with The Anglers for 20g."),	-- Pandaren Fishing Pole
 			desc(un(15, h(i(116825))), "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin."),	-- Savage Fishing Pole

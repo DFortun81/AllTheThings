@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(862, { 	-- Pandaria
 		m(809, { 	-- Kun-Lai Summit
-			["groups"] = {		
+			["groups"] = {
 				cr(60491, e(691, { 	-- Sha of Anger
 					["groups"] = {
 						i(84806),
@@ -129,83 +129,7 @@ _.Zones =
 					["achievementID"] = 6480,
 					["isRaid"] = true,
 					["questID"] = 32099,
-				})),			
---[[				
-				n(-3, { 	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),				
---]]				
+				})),
 				n(-25, { 	-- Pet Battle
 					p(724), 	-- Alpine Foxling
 					p(725), 	-- Alpine Foxling Kit
@@ -217,7 +141,7 @@ _.Zones =
 					p(728), 	-- Szechuan Chicken
 					p(729), 	-- Tolai Hare
 					p(730), 	-- Tolai Hare Pup
-					p(731), 	-- Zooey Snake 
+					p(731), 	-- Zooey Snake
 					q(31956, { 	-- Grand Master Yon
 						i(89125, {	-- Sack of Pet Supplies
 							i(89139),	-- TOY! Chain Pet Leash
@@ -238,7 +162,7 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[				
+--[[
 					q( 30581),	-- ... and the Pot, Too!
 					qh( 31395),	-- A Celestial Experience
 					qa( 31394),	-- A Celestial Experience
@@ -327,7 +251,7 @@ _.Zones =
 					qh( 30511),	-- General Nazgrim has Awakened
 					q( 30824),	-- Gourmet Kafa
 					q( 30743),	-- Gourmet Kafa
-					q( 31956),	-- Grand Master Yon					
+					q( 31956),	-- Grand Master Yon
 					q( 30610),	-- Grummle! Grummle! Grummle!
 					q( 30943),	-- Handle With Care
 					qa( 32397),	-- He Won't Even Miss It
@@ -427,7 +351,7 @@ _.Zones =
 					qh( 32392),	-- The Divine Bell
 					q( 30855),	-- The Fall of Shai Hu
 					q( 30804),	-- The Fearmaster
-					qa( 32332),	-- The First Riddle: Mercy					
+					qa( 32332),	-- The First Riddle: Mercy
 					qa( 32335),	-- The Greatest Prank
 					qa( 32355),	-- The Harmonic Mallet
 					qh( 32244),	-- The Korune
@@ -502,8 +426,8 @@ _.Zones =
 					q( 30945),	-- What's Yours Is Mine
 					q( 30993),	-- Where are My Reinforcements?
 					q( 30490),	-- Yakity Yak
-					q( 30587),	-- Yakity Yak	
---]]					
+					q( 30587),	-- Yakity Yak
+--]]
 					q(30820,  {  	-- A Funeral
 						i(82496),
 						i(82497),
@@ -755,7 +679,7 @@ _.Zones =
 						i(88072),
 						i(88071),
 					}),
-				}),	
+				}),
 				n(-16, { 	-- Rares
 					n(50817, { 		-- Ahone the Wanderer
 						dr(12, i(87614)),
@@ -772,7 +696,7 @@ _.Zones =
 							i(87615),
 							i(86588),		-- Toy
 						}),
-					}), 
+					}),
 					n(50341, { 		-- Borginn Darkfist
 						dr(21, i(87617)),
 						dr(11, i(87613)),
@@ -787,7 +711,7 @@ _.Zones =
 							i(87616),
 							i(87619),
 						}),
-					}), 
+					}),
 					n(50354, { 		-- Havak
 						dr(15, i(86573)), 	-- Toy
 						dr(12, {
@@ -805,13 +729,13 @@ _.Zones =
 							i(87616),
 							i(87619),
 						}),
-					}), 
-					{				-- Hozen Warrior Spear
-					["itemID"] = 86394, 	
-					["objectID"] = 213768,
-					["questID"] = 31413,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},
+					}),
+					o(213768, {		-- Hozen Warrior Spear
+						["groups"] = {
+							i(86394),	-- Hozen Warrior Spear
+						},
+						["questID"] = 31413,
+					}),
 					n(50332, { 		-- Korda Torros
 						dr(13, i(87620)),
 						dr(12, {
@@ -829,7 +753,7 @@ _.Zones =
 							i(87615),
 						}),
 						dr(9, i(87621)),
-					}), 
+					}),
 					n(50789, { 		-- Nessos the Oracle
 						dr(29, i(86584)),	-- Toy
 						dr(22, i(87615)),
@@ -845,7 +769,7 @@ _.Zones =
 							i(87616),
 							i(87619),
 						}),
-					}), 
+					}),
 					n(50831, { 		-- Scritch
 						dr(14, i(87615)),
 						dr(12, {
@@ -862,7 +786,7 @@ _.Zones =
 							i(87613),
 							i(87618),
 						}),
-					}), 
+					}),
 					n(50733, { 		-- Ski'thik
 						dr(13, i(87613)),
 						dr(11, {
@@ -877,7 +801,7 @@ _.Zones =
 							i(87614),
 							i(87621),
 						}),
-					}), 
+					}),
 					o(213751, {		-- Sprite's Cloth Chest
 						["groups"] = {
 							dr(35, i(86223)),
@@ -890,7 +814,7 @@ _.Zones =
 						["model"] = "World\\SkillActivated\\Containers\\TreasureChest04.mdx",
 						["modelScale"] = 1.5,
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
-					}),					
+					}),
 					o(213842, {		-- Stash of Yaungol Weapons
 						["groups"] = {
 							i(88723),
@@ -915,7 +839,7 @@ _.Zones =
 							i(87616),
 							i(87615),
 						}),
-					}), 
+					}),
 					n(69769, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -941,9 +865,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),		
+						}),
 						dr(4, i(94229)), 	-- Mount
-					}), 
+					}),
 					n(69841, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -969,9 +893,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),	
-						dr(4, i(94230)),	-- Mount							
-					}), 
+						}),
+						dr(4, i(94230)),	-- Mount
+					}),
 					n(69842, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -997,9 +921,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),				
+						}),
 						dr(4, i(94231)),	-- Mount
-					}), 
+					}),
 					n(69768, { 		-- Zandalari Warscout
 						dr(15, {
 							i(94158, {
@@ -1025,8 +949,8 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),							
-					}), 
+						}),
+					}),
 				--	n(70323, { 		-- Krakkanon	}),
 				}),
 				n(-18, { 	-- Scenario's
@@ -2068,7 +1992,7 @@ _.Zones =
 						i(103527),	-- Prideful Gladiator's Plate Helm
 						i(103528),	-- Prideful Gladiator's Plate Legguards
 						i(103529),	-- Prideful Gladiator's Plate Shoulders
-					}),										
+					}),
 					n(61749, {	-- The Metal Paw <Adventuring Supplies>
 						i(82614),	-- Mountainscaler Satin Hood
 						i(82615),	-- Mountainscaler Hide Helm
@@ -2169,8 +2093,8 @@ _.Zones =
 						i(84101),	-- Reins of the Grand Expedition Yak Mount
 						i(87788),	-- Reins of the Grey Riding Yak Mount
 					}),
-				}),				
-				n(-362, {	-- Peak of Serenity 
+				}),
+				n(-362, {	-- Peak of Serenity
 					["groups"] = {
 						n(-17, { 	-- Quests
 							q(31834,  {  	-- Begin Your Training: Master Cheng - Monk Only
@@ -2274,9 +2198,9 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 86,	
+			["Lvl"] = 86,
 			["achievementID"] = 6976,
-			["description"] = "|cff66ccffKun-Lai Summit is a zone in northern Pandaria, surrounded by the Vale of Eternal Blossoms to the south, the Townlong Steppes to the west, and the Jade Forest to the east. It is a vast area with majestic mountains, autumnal plains, and a lush coastal area. High atop the frigid northern peaks looms the Temple of the White Tiger, an ancient training ground protected by an elite force of martial priests, along with the spirit of the White Tiger itself, Xuen. Deeper into the mountains is the hideout of the Shado-pan clan: a mysterious order charged with protecting Pandaria from the dark things buried beneath its surface. When the isolated people of Kun-Lai are threatened by marauders from the west and a Zandalari troll menace invading its northern shores, they turn to the Alliance and Horde for help.|r",				
-		}),	
+			["description"] = "|cff66ccffKun-Lai Summit is a zone in northern Pandaria, surrounded by the Vale of Eternal Blossoms to the south, the Townlong Steppes to the west, and the Jade Forest to the east. It is a vast area with majestic mountains, autumnal plains, and a lush coastal area. High atop the frigid northern peaks looms the Temple of the White Tiger, an ancient training ground protected by an elite force of martial priests, along with the spirit of the White Tiger itself, Xuen. Deeper into the mountains is the hideout of the Shado-pan clan: a mysterious order charged with protecting Pandaria from the dark things buried beneath its surface. When the isolated people of Kun-Lai are threatened by marauders from the west and a Zandalari troll menace invading its northern shores, they turn to the Alliance and Horde for help.|r",
+		}),
 	}),
 };

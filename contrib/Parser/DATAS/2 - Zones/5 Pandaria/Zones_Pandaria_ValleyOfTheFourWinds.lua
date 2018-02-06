@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(862, { 	-- Pandaria
 		m(807, {	-- Valley of the Four Winds
-			["groups"] = {			
+			["groups"] = {
 				e(725, { 	-- Saylis's Warband -- Galleon
 					["groups"] = {
 						i(90412),
@@ -49,82 +49,6 @@ _.Zones =
 					["isRaid"] = true,
 					["questID"] = 32098
 				}),
---[[				
-				n(-3, { 	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),				
---]]				
 				n(-25, { 	-- Pet Battles
 					p(706), 	-- Bandicoon
 					p(707), 	-- Bandicoon Kit
@@ -144,7 +68,7 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[				
+--[[
 					q( 31329),	-- A Beautiful Brooch
 					q( 30400),	-- A Blue Feather for Chee Chee
 					q( 30382),	-- A Blue Feather for Ella
@@ -243,7 +167,7 @@ _.Zones =
 					q( 31321),	-- Buy A Fish A Round?
 					q( 32046),	-- Candy Bucket
 					q( 32048),	-- Candy Bucket
-					q( 33022),	-- Catch and Carry					
+					q( 33022),	-- Catch and Carry
 					q( 30318),	-- Chasing the Chicken
 					q( 29907),	-- Chen and Li Li
 					q( 30046),	-- Chen's Resolution
@@ -333,7 +257,7 @@ _.Zones =
 					q( 31949),	-- Nana's Vote III: Witchberry Julep
 					q( 32685),	-- No Fishing Pole Necessary!
 					q( 33146),	-- Noodle Time
-					q( 33358),	-- Noodle Time: Bonus					
+					q( 33358),	-- Noodle Time: Bonus
 					q( 30324),	-- Not in Chee-Chee's Backyard
 					q( 31340),	-- Oh Sheepie...
 					q( 31314),	-- Old Man Thistle's Treasure
@@ -475,8 +399,8 @@ _.Zones =
 					q( 32659),	-- Work Order: The Klaxxi II
 					q( 29945),	-- Yellow and Red Make Orange
 					q( 30327),	-- You Have to Burn the Ropes
-					q( 32684),	-- You Want Fish?	
---]]					
+					q( 32684),	-- You Want Fish?
+--]]
 					q(31820,  {		-- A Present for Teacher
 						["groups"] = {
 							i(86468),	-- Apron
@@ -530,7 +454,7 @@ _.Zones =
 					}),
 					q(29944,  {  	-- Leaders Among Breeders
 						i(88375),  -- TOY! Turnip Punching Bag
-					}),				
+					}),
 					q(30058,  {  	-- Mathallus!
 						i(88034),
 						i(88033),
@@ -705,13 +629,13 @@ _.Zones =
 							i(87599),
 							i(87600),
 						--	i(86591),	-- Should be a toy
-						}),							
-					}), 
+						}),
+					}),
 					n(64004, { 		-- Ghostly Pandaren Fisherman
 						["groups"] = {
 							i(85973), 	-- Ancient Pandaren Fishing Charm Toy
 						},
-					["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",						
+					["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",
 					}),
 					n(50351, { 		-- Jonn-Dar
 						dr(11, {
@@ -729,7 +653,7 @@ _.Zones =
 						}),
 					}),
 					n(50364, { 		-- Nal'lak the Ripper
-						dr(11, {	
+						dr(11, {
 							i(87595),
 							i(87596),
 							i(87597),
@@ -742,7 +666,7 @@ _.Zones =
 							i(87600),
 							i(87603),
 						}),
-					}), 
+					}),
 					n(50811, { 		-- Nasra Spothide
 						dr(12, i(87600)),
 						dr(11, {
@@ -751,13 +675,13 @@ _.Zones =
 							i(87598),
 							i(87599),
 							i(87602),
-							i(87603),	
-						}),	
+							i(87603),
+						}),
 						dr(10, {
 							i(87601),
 							i(87595),
 						}),
-					}), 
+					}),
 					n(50783, { 		-- Salyin Warscout
 						dr(15, i(86583)),
 						dr(12, {
@@ -770,12 +694,12 @@ _.Zones =
 							i(87598),
 							i(87596),
 						}),
-						dr(10, {	
+						dr(10, {
 							i(87597),
 							i(87600),
 							i(87603),
 						}),
-					}), 
+					}),
 					n(50766, { 		-- Sele'na
 						dr(12, i(87595)),
 						dr(11, {
@@ -784,19 +708,19 @@ _.Zones =
 							i(87600),
 							i(87601),
 							i(87602),
-							i(87603),	
+							i(87603),
 						}),
 						dr(10, {
 							i(87599),
 							i(87598),
 						}),
-					}), 
-					{				-- Staff of the Hidden Master			
-					["itemID"] = 86218, 	
-					["objectID"] = 213749,
-					["questID"] = 31407,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",
-					},					
+					}),
+					o(213749, {		-- Staff of the Hidden Master
+						["groups"] = {
+							i(86218),	-- Staff of the Hidden Master
+						},
+						["questID"] = 31407,
+					}),
 					n(50339, { 		-- Sulik'shor
 						dr(12, i(87599)),
 						dr(11, {
@@ -806,18 +730,18 @@ _.Zones =
 							i(87598),
 							i(87602),
 							i(87603),
-						}),	
+						}),
 						dr(10, {
 							i(87601),
 							i(87600),
 						}),
-					}), 
+					}),
 				--	o(226956, 		-- Mysterious Fruit Pile
 				--		i(110505),		-- Should be a toy
-				--	}),					
+				--	}),
 				}),
-				n(-2, {		-- Vendors	
-					na(75694, {	-- Armsmaster Holinka <Tyrannical Gladiator>			
+				n(-2, {		-- Vendors
+					na(75694, {	-- Armsmaster Holinka <Tyrannical Gladiator>
 						i(144246, { -- Arsenal: Tyrannical Gladiator's Weapons
 							i(99794),	-- Tyrannical Gladiator's Barrier
 							i(100171),	-- Tyrannical Gladiator's Barrier
@@ -1004,7 +928,7 @@ _.Zones =
 						i(99915),	-- Tyrannical Gladiator's Armbands of Meditation
 						i(99916),	-- Tyrannical Gladiator's Ringmail Armor
 						i(99917),	-- Tyrannical Gladiator's Ringmail Gauntlets
-						i(99918),	-- Tyrannical Gladiator's Ringmail Helm			
+						i(99918),	-- Tyrannical Gladiator's Ringmail Helm
 						i(99919),	-- Tyrannical Gladiator's Ringmail Leggings
 						i(99920),	-- Tyrannical Gladiator's Ringmail Spaulders
 						i(99921),	-- Tyrannical Gladiator's Linked Armor
@@ -1029,8 +953,8 @@ _.Zones =
 						i(99958),	-- Tyrannical Gladiator's Plate Gauntlets
 						i(99959),	-- Tyrannical Gladiator's Plate Helm
 						i(99960),	-- Tyrannical Gladiator's Plate Legguards
-						i(99961),	-- Tyrannical Gladiator's Plate Shoulders				
-					}), 
+						i(99961),	-- Tyrannical Gladiator's Plate Shoulders
+					}),
 					n(61215, {	-- Claretta <Adventuring Supplies>
 						i(81579),	-- Faded Forest Satin Hood
 						i(81580),	-- Faded Forest Hide Helm
@@ -1326,7 +1250,7 @@ _.Zones =
 						i(103287),	-- Grievous Gladiator's Armbands of Meditation
 						i(103288),	-- Grievous Gladiator's Ringmail Armor
 						i(103289),	-- Grievous Gladiator's Ringmail Gauntlets
-						i(103290),	-- Grievous Gladiator's Ringmail Helm			
+						i(103290),	-- Grievous Gladiator's Ringmail Helm
 						i(103291),	-- Grievous Gladiator's Ringmail Leggings
 						i(103292),	-- Grievous Gladiator's Ringmail Spaulders
 						i(103293),	-- Grievous Gladiator's Linked Armor
@@ -1352,7 +1276,7 @@ _.Zones =
 						i(103330),	-- Grievous Gladiator's Plate Helm
 						i(103331),	-- Grievous Gladiator's Plate Legguards
 						i(103332),	-- Grievous Gladiator's Plate Shoulders
-					}), 
+					}),
 					n(58706, {	-- Gina Mudclaw <Tillers Quartermaster>
 						i(90175),	-- Gin'Ji Knife Set Toy
 						i(89869),	-- Pandaren Scarecrow Toy
@@ -1364,7 +1288,7 @@ _.Zones =
 						i(90895),	-- Straw Hat - Mail
 						i(90896),	-- Straw Hat - Plate
 						i(89784),	-- Tillers Tabard
-					}),		
+					}),
 					na(75691, {	-- Hayden Christophen <Dreadful Gladiator>
 						i(84345),	-- Dreadful Gladiator's Cape of Cruelty
 						i(84346),	-- Dreadful Gladiator's Cape of Prowess
@@ -1482,7 +1406,7 @@ _.Zones =
 						i(84471),	-- Dreadful Gladiator's Armbands of Meditation
 						i(84472),	-- Dreadful Gladiator's Ringmail Armor
 						i(84473),	-- Dreadful Gladiator's Ringmail Gauntlets
-						i(84474),	-- Dreadful Gladiator's Ringmail Helm			
+						i(84474),	-- Dreadful Gladiator's Ringmail Helm
 						i(84475),	-- Dreadful Gladiator's Ringmail Leggings
 						i(84476),	-- Dreadful Gladiator's Ringmail Spaulders
 						i(84477),	-- Dreadful Gladiator's Linked Armor
@@ -1508,7 +1432,7 @@ _.Zones =
 						i(84506),	-- Dreadful Gladiator's Plate Helm
 						i(84507),	-- Dreadful Gladiator's Plate Legguards
 						i(84508),	-- Dreadful Gladiator's Plate Shoulders
---[[						
+--[[
 						i(138714, {	-- Ensemble: Dreadful Gladiator's Plate Armor - Warrior
 						}),
 						i(138715, {	-- Ensemble: Dreadful Gladiator's Dreadplate Armor - Death Knight
@@ -1532,7 +1456,7 @@ _.Zones =
 						i(138724, {	-- Ensemble: Dreadful Gladiator's Felweave Armor - Warlock
 						}),
 --]]
-					}), 
+					}),
 					n(75689, {	-- Lucan Malory <Malevolent Gladiator>
 						i(144243, { -- Arsenal: Malevolent Gladiator's Weapons
 							i(91482),	-- Malevolent Gladiator's Barrier
@@ -1728,7 +1652,7 @@ _.Zones =
 						i( 91787),	-- Malevolent Gladiator's Plate Helm
 						i( 91789),	-- Malevolent Gladiator's Plate Legguards
 						i( 91791),	-- Malevolent Gladiator's Plate Shoulders
-					}), 
+					}),
 					n(64395, { --	Nam Ironpaw <Stockmaster>
 						i(88801),	-- Flippable Table
 						i(86468),	-- Apron
@@ -1939,7 +1863,7 @@ _.Zones =
 						i(102624),	-- Prideful Gladiator's Armbands of Meditation
 						i(102717),	-- Prideful Gladiator's Ringmail Armor
 						i(102774),	-- Prideful Gladiator's Ringmail Gauntlets
-						i(102718),	-- Prideful Gladiator's Ringmail Helm			
+						i(102718),	-- Prideful Gladiator's Ringmail Helm
 						i(102719),	-- Prideful Gladiator's Ringmail Leggings
 						i(102655),	-- Prideful Gladiator's Ringmail Spaulders
 						i(102759),	-- Prideful Gladiator's Linked Armor
@@ -1965,7 +1889,7 @@ _.Zones =
 						i(102619),	-- Prideful Gladiator's Plate Helm
 						i(102732),	-- Prideful Gladiator's Plate Legguards
 						i(102685),	-- Prideful Gladiator's Plate Shoulders
-					}), 
+					}),
 					n(59583, {	-- Trader Jambeezi <Adventuring Supplies>
 						i(81579),	-- Faded Forest Satin Hood
 						i(81580),	-- Faded Forest Hide Helm
@@ -2069,9 +1993,9 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 86,	
+			["Lvl"] = 86,
 			["achievementID"] = 6969,
-			["description"] = "|cff66ccffValley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year’s harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.|r",				
+			["description"] = "|cff66ccffValley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year’s harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.|r",
 		}),
 	}),
 };

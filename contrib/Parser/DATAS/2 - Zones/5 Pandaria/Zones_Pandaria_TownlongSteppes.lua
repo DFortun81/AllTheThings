@@ -3,85 +3,9 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria	
+	m(862, { 	-- Pandaria
 		m(810, {	-- Townlong Steppes
-			["groups"] = {			
---[[				
-				n(-3, { 	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),				
---]]				
+			["groups"] = {
 				n(-25, { 	-- Pet Battles
 					p(724), 	-- Alpine Foxling
 					p(725), 	-- Alpine Foxling Kit
@@ -94,7 +18,7 @@ _.Zones =
 					p(739), 	-- Mongoose Pup
 					p(741), 	-- Silent Hedgehog
 					p(729), 	-- Tolai Hare
-					p(740), 	-- Yakrat 
+					p(740), 	-- Yakrat
 					q(31991, { -- Grand Master Zusshi
 						i(89125, {	-- Sack of Pet Supplies
 							i(89139),	-- TOY! Chain Pet Leash
@@ -115,7 +39,7 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[				
+--[[
 					q( 31065),	-- Buried Beneath
 					q( 32434),	-- Burning Pandaren Spirit
 					q( 32043),	-- Candy Bucket
@@ -184,7 +108,7 @@ _.Zones =
 					q( 31809),	-- Remnants of Anger
 					q( 30960),	-- Returning from the Pass
 					q( 31061),	-- Riding the Storm
-					q( 30894),	-- Rummaging Through the Remains					
+					q( 30894),	-- Rummaging Through the Remains
 					q( 30770),	-- Running Rampant
 					q( 30772),	-- Seeing Red
 					q( 30933),	-- Seeking Father
@@ -255,7 +179,7 @@ _.Zones =
 					q( 31117),	-- Uruk!
 					q( 30827),	-- What Lies Beneath
 					q( 31062),	-- When The Dead Speak
---]]					
+--]]
 					q(31032,  {  	-- Choking the Skies
 						i(88589), 		-- TOY! Cremating Torch
 					}),
@@ -462,19 +386,19 @@ _.Zones =
 								i(87652),
 								i(87651),
 								i(90717),
-							}),	
+							}),
 							dr(11, {
 								i(87642),
 								i(87650),
 								i(90719),
 								i(87649),
 								i(87641),
-							}),	
+							}),
 							dr(10, {
 								i(90721),
 								i(87643),
 								i(90722),
-							}),	
+							}),
 							dr(9, {
 								i(90723),
 								i(90720),
@@ -482,13 +406,13 @@ _.Zones =
 							}),
 							dr(8, i(90718)),
 						})),
-					}), 
-					n(50344, { 		-- Norlaxx	
+					}),
+					n(50344, { 		-- Norlaxx
 						dr(9, i(87220, {
 							dr(3, {
 								i(90721),
 								i(87646),
-							}),	
+							}),
 							dr(2, {
 								i(87649),
 								i(87651),
@@ -509,13 +433,13 @@ _.Zones =
 								i(90724),
 							}),
 						})),
-					}), 
-					{				-- Yaungol Fire Carrier
-					["itemID"] = 86518,
-					["objectID"] = 213960,
-					["questID"] = 31425,
-					["description"] = "|cff66ccffThis item is looted from an object in the zone.|r",					
-					},
+					}),
+					o(213960, {		-- Yaungol Fire Carrier
+						["groups"] = {
+							i(86518),	-- Yaungol Fire Carrier
+						},
+						["questID"] = 31425,
+					}),
 					n(69769, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -541,9 +465,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),		
+						}),
 						dr(4, i(94229)), 	-- Mount
-					}), 
+					}),
 					n(69841, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -569,9 +493,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),	
-						dr(4, i(94230)),	-- Mount							
-					}), 
+						}),
+						dr(4, i(94230)),	-- Mount
+					}),
 					n(69842, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
@@ -597,9 +521,9 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),				
+						}),
 						dr(4, i(94231)),	-- Mount
-					}), 
+					}),
 					n(69768, { 		-- Zandalari Warscout
 						dr(15, {
 							i(94158, {
@@ -625,15 +549,15 @@ _.Zones =
 									i(90720),
 								}),
 							}),
-						}),							
-					}), 
---[[					
-				--	n(50772, { 		-- Eshelon	}), 
-				--	n(50734, { 		-- Lith'ik the Stalker	}), 
-				--	n(50333, { 		-- Lon the Bull	}), 
-				--	n(50791, { 		-- Siltriss the Sharpener	}), 
-				--	n(50832, { 		-- The Yowler	}), 
-				--	n(50820, { 		-- Yul Wildpaw	}), 
+						}),
+					}),
+--[[
+				--	n(50772, { 		-- Eshelon	}),
+				--	n(50734, { 		-- Lith'ik the Stalker	}),
+				--	n(50333, { 		-- Lon the Bull	}),
+				--	n(50791, { 		-- Siltriss the Sharpener	}),
+				--	n(50832, { 		-- The Yowler	}),
+				--	n(50820, { 		-- Yul Wildpaw	}),
 --]]
 				}),
 				n(-2, {	-- Vendors
@@ -1638,7 +1562,7 @@ _.Zones =
 							i(138794, { -- Tome of Illusions: Secrets of the Shado-Pan
 								ill(4446),	-- River's Song
 								ill(4444),	-- Dancing Steel
-							}),	
+							}),
 						}),
 					}),
 					n(62737, {	-- Supplier Xin
@@ -1745,9 +1669,9 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 88,	
+			["Lvl"] = 88,
 			["achievementID"] = 6977,
-			["description"] = "|cff66ccffTownlong Steppes is relatively small zone located in northwestern Pandaria. The main story that is played out here involves aiding the Shado-Pan on their pursuit against the Sha of Hatred, and aiding them in fending off the Osul yaungol and the aggressive mantid coming from the south.|r",				
-		}),	
+			["description"] = "|cff66ccffTownlong Steppes is relatively small zone located in northwestern Pandaria. The main story that is played out here involves aiding the Shado-Pan on their pursuit against the Sha of Hatred, and aiding them in fending off the Osul yaungol and the aggressive mantid coming from the south.|r",
+		}),
 	}),
 };
