@@ -1,0 +1,1313 @@
+---------------------------------------------------
+--          Z O N E S       M O D U L E          --
+---------------------------------------------------
+_.Zones =
+{
+	m(1007, { 	-- The Broken Isles
+		m(1015, {	-- Azsuna
+			["groups"] = {
+				n(-7, { 	-- World Bosses
+					["groups"] = {
+						cr(109331, e(1774, { 	-- Calamir 
+							["groups"] = {
+								i(141432),
+								i(141437),
+								i(141430),
+								i(141443)
+							},
+							["questID"] = 44502,
+							["isRaid"] = true,
+						})),
+						cr(108829, e(1769, { 	-- Levantus 
+							["groups"] = {
+								i(141440),
+								i(141435),
+								i(141441),
+								i(141431)
+							},
+							["questID"] = 43192, -- Change to tracking quest later.
+							["isRaid"] = true,
+						})),	
+						cr(112350, e(1796, { 	-- Withered J'im 
+							["groups"] = {
+								i(141455),
+								i(141453),
+								i(141459),
+								i(141449),
+								i(141543)
+							},
+							["questID"] = 44287, -- Change to tracking quest later.
+							["isRaid"] = true,
+						})),	
+					},
+					["itemModID"] = 3
+				}),
+--[[				
+				n(-3, { 	-- Holidays					
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+						["u"] = 17,
+					}),
+					n(-50, {     -- Love is in the Air
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1693,    -- Fool For Love
+						["u"] = 18,
+					}),
+					n(-51, {     -- Noblegarden
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 2798, -- Noble Gardener
+						["u"] = 19,
+					}),
+					n(-52, {     -- Children's Week
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1793, -- For The Children
+						["u"] = 20,
+					}),					
+					n(-53, {     -- Midsummer Fire Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1038, -- The Flame Warden
+						["u"] = 21,
+					}),					
+					n(-56, {     -- Brewfest
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1683, -- Brewmaster
+						["u"] = 24,
+					}),
+					n(-58, {     -- Hallow's End
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["u"] = 26,
+					}),	
+					n(-60, {     -- Pilgrim's Bounty
+						["groups"]  = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 3478, -- Pilgrim
+						["u"] = 28,
+					}),
+					n(-61, {     -- Feast of Winter Veil
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1691, -- Merrymaker
+						["u"] = 29,
+					}),						
+				}),				
+--]]				
+				n(-25, { 	-- Pet Battle
+					p(1708), 	-- Albatross Chick
+					p(706), 	-- Bandicoon
+					p(1914), 	-- Coastal Sandpiper
+					p(396), 	-- Dusk Spiderling
+					p(1774), 	-- Eldritch Manafiend
+					p(1773), 	-- Erudite Manafiend
+					p(1731), 	-- Felspider
+					p(1709), 	-- Fledgling Kingfeather
+					p(1710), 	-- Fledgling Oliveback
+					p(478), 	-- Forest Moth
+					p(464), 	-- Grey Moth
+					p(647), 	-- Grizzly Squirrel
+					p(699), 	-- Jumping Spider
+					p(1728),	-- Juvenile Scuttleback
+					p(1583), 	-- Kelp Scuttler
+					p(1729), 	-- Olivetail Hare
+					p(743), 	-- Rapana Whelk
+					p(1587), 	-- Royal Moth
+					p(1736), 	-- Slithering Brownscale
+					p(1935), 	-- Squirky
+					n(115741, {	-- Orphaned Bloodgazer
+						["groups"] = {
+							p(1977),  	-- Bloodgazer Hatchling
+							q(45008, { -- Bloodgazer Bonding
+								i(142494), -- TOY! Purple Blossom
+							}),
+							q(45020, { -- Bloodgazer Reunion
+								i(137577), -- Mount! Predatory Bloodgazer
+							}),
+						},
+						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling pet!|r",
+					}),	
+				}),
+				n(-17, { 	-- Quests
+--[[					
+					n(-34, {	-- World Quests
+						q( 42119),	-- A Cleansing Cocktail
+						q( 42024),	-- A Friend of My Enemy
+						q( 43803),	-- A Giant Murloc Problem
+						q( 42014),	-- A Tainted Vintage
+						q( 44784),	-- Advanced Wanding
+						q( 41545),	-- Aethril Cluster
+						q( 41286),	-- Aethril Cluster
+						q( 42652),	-- Ancient Exemplars
+						q( 43805),	-- Aquatic Assassination
+						q( 41290),	-- Aqueous Aethril
+						q( 45838),	-- Assault on Azsuna
+						q( 42165),	-- Azsuna Specimens
+						q( 45069),	-- Barrels o' Fun
+						q( 45203),	-- Battle for the Ruins
+						q( 44894),	-- Bloodgazer Swarm!
+						q( 41495),	-- Brilliant Leystone Seams
+						q( 41481),	-- Brimstone Destroyer
+						q( 41483),	-- Brimstone Destroyer
+						q( 41482),	-- Brimstone Destroyer
+						q( 41529),	-- Bushy Aethril
+						q( 41438),	-- Charged Leystone Deposits
+						q( 46168),	-- Commander Vorlax
+						q( 43091),	-- DANGER: Arcanor Prime
+						q( 44189),	-- DANGER: Bestrix
+						q( 43121),	-- DANGER: Chief Treasurer Jabrill
+						q( 44187),	-- DANGER: Cinderwing
+						q( 43175),	-- DANGER: Deepclaw
+						q( 43059),	-- DANGER: Fjordun
+						q( 43079),	-- DANGER: Immolian
+						q( 44190),	-- DANGER: Jade Darkhaven
+						q( 44191),	-- DANGER: Karthax
+						q( 43798),	-- DANGER: Kosumoth the Hungering
+						q( 44192),	-- DANGER: Lysanis Shadesoul
+						q( 43098),	-- DANGER: Marblub the Massive
+						q( 43027),	-- DANGER: Mortiferous
+						q( 44193),	-- DANGER: Sea King Tidross
+						q( 43063),	-- DANGER: Stormfeather
+						q( 43072),	-- DANGER: The Whisperer
+						q( 44194),	-- DANGER: Torrentius
+						q( 43040),	-- DANGER: Valakar the Thirsty
+						q( 42146),	-- Dazed and Confused and Adorable
+						q( 44287),	-- DEADLY: Withered J'im
+						q( 44054),	-- Demonicide
+						q( 42276),	-- Disgusting, but Useful
+						q( 46169),	-- Dro'zek
+						q( 43328),	-- Enigmatic
+						q( 44049),	-- Evil Has Many Legs
+						q( 42027),	-- Faronaar in Chaos
+						q( 42026),	-- Faronaar in Ruin
+						q( 41323),	-- Fatty Lion Seal Skin
+						q( 46161),	-- Felcaller Thalezra
+						q( 41564),	-- Felhide
+						q( 41562),	-- Felhide
+						q( 41563),	-- Felhide
+						q( 44044),	-- Felled Experiment
+						q( 41514),	-- Felwort
+						q( 41515),	-- Felwort
+						q( 41513),	-- Felwort
+						q( 41437),	-- Fine Leystone Deposits
+						q( 41289),	-- Flourishing Aethril
+						q( 46166),	-- Garthulak the Crusher
+						q( 41455),	-- Gleaming Leystone Outcropping
+						q( 41434),	-- Glowing Leystone Deposits
+						q( 43804),	-- Hate the Hatecoil
+						q( 42624),	-- Heads of the Fleet
+						q( 44737),	-- Helarjar Landing: Grey Shoals
+						q( 42154),	-- Help a Whelp
+						q( 41611),	-- Huge Cursed Queenfish
+						q( 41610),	-- Huge Cursed Queenfish
+						q( 41265),	-- Huge Cursed Queenfish
+						q( 42277),	-- Interlopers!
+						q( 42021),	-- Investigation at Mak'rana
+						q( 41528),	-- Iridescent Aethril
+						q( 46165),	-- Kazruul
+						q( 46167),	-- Kozrum
+						q( 42101),	-- Language of the Lost
+						q( 42211),	-- Leodrath's Kin
+						q( 43325),	-- Ley Race
+						q( 42172),	-- Leyhollow Infestation
+						q( 41498),	-- Leystone Basilisks
+						q( 41501),	-- Leystone Basilisks
+						q( 41500),	-- Leyworms
+						q( 45046),	-- Like the Wind
+						q( 41527),	-- Lively Aethril
+						q( 41598),	-- Lively Cursed Queenfish
+						q( 41599),	-- Lively Cursed Queenfish
+						q( 41264),	-- Lively Cursed Queenfish
+						q( 41454),	-- Luminous Leystone Outcropping
+						q( 46164),	-- Mal'serus
+						q( 44786),	-- Midterm: Rune Aptitude
+						q( 42105),	-- Mixology Mix-up
+						q( 44048),	-- Nagana Happen
+						q( 42275),	-- Not On My Watch
+						q( 46116),	-- On Unhallowed Grounds
+						q( 41896),	-- Operation Murloc Freedom
+						q( 42623),	-- Piracy Doesn't Pay
+						q( 41268),	-- Queen Queenfish
+						q( 41266),	-- Raft Fishing
+						q( 42108),	-- Rally the Nightwatchers
+						q( 42123),	-- Reclaiming Llothien
+						q( 45058),	-- Release the Wardens!
+						q( 43776),	-- Scouting
+						q( 43765),	-- Scouting
+						q( 43801),	-- Shell Out Some Pain
+						q( 41324),	-- Silky Prowler Fur
+						q( 42063),	-- Size Doesn't Matter
+						q( 41551),	-- Slab of Bacon
+						q( 41259),	-- Slab of Bacon
+						q( 41552),	-- Slab of Bacon
+						q( 41435),	-- Smooth Leystone Deposits
+						q( 41582),	-- Smooth Sunrunner Hide
+						q( 44847),	-- Straight From the Source
+						q( 46162),	-- Subjugator Val'rek
+						q( 43192),	-- Terror of the Deep
+						q( 46170),	-- Thar'gokk
+						q( 46163),	-- Thaz'gul
+						q( 42022),	-- The Broken Academy
+						q( 46146),	-- The Burning Shores
+						q( 42711),	-- The Eternal Mages
+						q( 44050),	-- The Felsworn Must Fall
+						q( 43327),	-- The Magic of Flight
+						q( 45134),	-- The Soul Harvesters
+						q( 42148),	-- The Wine's Gone Bad
+						q( 42112),	-- The Withered Return
+						q( 42018),	-- Those Beyond Redemption
+						q( 42019),	-- Tip the Scales
+						q( 42506),	-- Tomes of Yore
+						q( 42159),	-- Training with the Nightwatchers
+						q( 42511),	-- Twisted Souls
+						q( 41322),	-- Unscratched Hippogryph Scale
+						q( 42160),	-- Unwelcome Visitors
+						q( 41663),	-- Vantus Rune Work Order: Elerethe Renferal
+						q( 42636),	-- WANTED: Arcanist Shal'iman
+						q( 43605),	-- WANTED: Arcanist Shal'iman
+						q( 42620),	-- WANTED: Arcavellus
+						q( 43606),	-- WANTED: Arcavellus
+						q( 43426),	-- WANTED: Brogozog
+						q( 43607),	-- WANTED: Brogozog
+						q( 43430),	-- WANTED: Captain Volo'ren
+						q( 43608),	-- WANTED: Captain Volo'ren
+						q( 43428),	-- WANTED: Doomlord Kazrok
+						q( 43609),	-- WANTED: Doomlord Kazrok
+						q( 43427),	-- WANTED: Infernal Lord
+						q( 43610),	-- WANTED: Infernal Lord
+						q( 42631),	-- WANTED: Inquisitor Tivos
+						q( 43611),	-- WANTED: Inquisitor Tivos
+						q( 43432),	-- WANTED: Normantis the Deposed
+						q( 43612),	-- WANTED: Normantis the Deposed
+						q( 43429),	-- WANTED: Syphonus
+						q( 43613),	-- WANTED: Syphonus
+						q( 42633),	-- WANTED: Vorthax
+						q( 43614),	-- WANTED: Vorthax
+						q( 43431),	-- WANTED: Warbringer Mox'na
+						q( 43615),	-- WANTED: Warbringer Mox'na
+						q( 43802),	-- Watery Graves
+						q( 46263),	-- Weaving Fel Webs
+						q( 42274),	-- Won't Anyone Think of the Whelps?
+						q( 41287),	-- Work Order: Aethril
+						q( 41651),	-- Work Order: Azsunite Pendant
+						q( 41639),	-- Work Order: Battlebound Spaulders
+						q( 41675),	-- Work Order: Blink-Trigger Headgun
+						q( 41267),	-- Work Order: Cursed Queenfish
+						q( 41657),	-- Work Order: Draughts of Raw Magic
+						q( 41311),	-- Work Order: Leystone
+						q( 41633),	-- Work Order: Leystone Greaves
+						q( 41645),	-- Work Order: Silkweave Epaulets
+						q( 41326),	-- Work Order: Stormscales
+						q( 41669),	-- Work Order: Word of Critical Strike
+						q( 44788),	-- Work Study: Bestiaries of Azsuna
+					}),
+--]]					
+					ach(10763, { -- Azsuna Matata
+						crit(1, { -- Behind Legion Lines
+							q(41220), -- Down to Azsuna NOTE: This is technically a breadcrumb
+							q(38834, { -- Into the Fray (Non-DH version)
+								["groups"] = {
+								},
+								["classes"] = {1,2,3,4,5,6,7,8,9,10,11}
+							}),
+							q(44137, { -- Into the Fray (DH version)
+								["groups"] = {
+								},
+								["classes"] = {12}
+							}),
+							q(37658,  {  	-- Reignite the Wards
+								i(141623),
+								i(141622),
+								i(141621),
+								i(141620),
+								i(141628),
+								i(141627),
+								i(141626),
+								i(141625),
+							}),
+							q(37653), -- Demon Souls
+							q(37660,  {  	-- The Scythe of Souls
+								i(132951),
+								i(132949),
+								i(132948),
+								i(132947),
+							}),
+							q( 36920, {	-- From Within
+								["groups"] = {
+								},
+								["classes"] = {1,2,3,4,5,6,7,8,9,10,11},
+							}),
+							q(40815, { -- From Within (DH version, must choose Altruis)
+								["groups"] = {
+								},
+								["classes"] = {12},
+								["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the  Demon Hunter introduction quests."
+							}),
+							q(44140, { -- From Within (DH version, must choose Kayn)
+								["groups"] = {
+								},
+								["classes"] = {12},
+								["description"] = "This quest is available if you chose to follow Kayn Sunfury during the  Demon Hunter introduction quests."
+							}),
+							q(37450,  {  	-- Saving Stellagosa
+								i(132961),
+							}),
+							q(37656), -- Fel Machinations
+							q(37449), -- Dark Revelations
+						}),
+						crit(2, { -- Defending Azurewing Repose
+							q(37853), -- The Death of the Eldest
+							q(37991), -- Agapanthus
+							q(42271,  {  	-- Their Dying Breaths
+								i(121425),
+								i(121423),
+								i(121426),
+								i(121424),
+							}),
+							q(37855), -- The Last of the Last
+							q(37856), -- The Withered
+							q(37859), -- The Consumed
+							q(37858), -- Stellagosa NOTE: This is a breadcrumb quest for 37957
+							q(37957,  {  	-- Runas the Shamed
+								i(132975),
+								i(132974),
+								i(132973),
+								i(132972),
+							}),
+							q(37857), -- Runas Knows the Way
+							q(37959,  {  	-- The Hunger Returns
+								i(138876), 		-- TOY! Runas' Crystal Grinder
+							}),
+							q(37960), -- Leyline Abuse
+							q(37860), -- You Scratch My Back...
+							q(37861,  {  	-- The Nightborne Prince
+								i(121444),
+								i(121447),
+								i(121446),
+								i(121445),
+								i(132929),
+								i(132928),
+								i(132927),
+								i(132926),
+							}),
+							q(37862), -- Still Alive
+							q(38014,  {  	-- Feasting on the Dragon
+								i(121435),
+								i(121418),
+								i(121417),
+								i(121416),
+								i(132914),
+								i(132915),
+								i(132916),
+								i(132917),
+							}),
+							q(38015,  {  	-- On the Brink
+								i(129178),  	-- PET! Emmigosa
+							}),	
+							q(42567), -- Cursed to Wither
+							q(42756), -- Hunger's End
+						}),
+						crit(3, { -- Azsuna versus Azshara
+							q(37690), -- Those Who Remember
+							q(37256,  {  	-- They Came From the Sea
+								i(121428),
+								i(121430),
+								i(121429),
+								i(121427),
+								i(132906),
+								i(132905),
+								i(132904),
+								i(132903),
+							}),
+							q(37733), -- Prince Farondis
+							q(37257,  {  	-- Our Very Bones
+								i(121432),
+								i(121434),
+								i(121433),
+								i(121431),
+								i(132941),
+								i(132939),
+								i(132938),
+								i(132937),
+							}),
+							q(37497), -- Trailing the Tidestone
+							q(37486,  {  	-- Nar'thalas Still Suffers
+								i(121487),
+							}),
+							q(37467), -- The Walk of Shame
+							q(37468), -- Into the Academy
+							q(37736,  {  	-- Dressing With Class
+								i(138873),  	-- TOY! Mystical Frosh Hat
+							}),
+							q(37678,  {  	-- Hit the Books
+								i(138843),
+								i(138842),
+								i(138841),
+								i(138840),
+								i(138844),
+								i(138847),
+								i(138846),
+								i(138845),
+							}),
+							q(37518), -- The Haunted Halls
+							q(42370), -- Wanding 101
+							q(42371), -- Study Hall: Combat Research
+							q(37729), -- Pop Quiz: Advanced Rune Drawing
+							q(37730,  {  	-- The Headmistress' Keys
+								i(132910),
+								i(132909),
+								i(132908),
+								i(132907),
+							}),
+							q(37469), -- The Tidestone: Shattered
+							q(37530,  {  	-- Save Yourself
+								i(121420),
+								i(121422),
+								i(121421),
+								i(121419),
+								i(132946),
+								i(132945),
+								i(132944),
+								i(132942),
+							}),
+							q(37470), -- The Head of the Snake
+						}),
+						crit(4, { -- Against the Giants
+							q(38407), -- Bottled Up
+							q(37496), -- Infiltrating Shipwreck Arena
+							q(37507), -- Boss Whalebelly's in Charge
+							q(37542), -- No Time for Tryouts
+							q(37528), -- Let Sleeping Giants Lie
+							q(37510), -- Sternfathom's Champion
+							q(37536), -- Morale Booster
+							q(37538,  {  	-- Round 1, Fight!
+								i(121438),
+								i(121436),
+								i(121439),
+								i(121437),
+								i(132901),
+								i(132899),
+								i(132900),
+								i(132902),
+							}),
+							q(37565), -- The Right Weapon for the Job
+							q(37566,  {  	-- The Prince is Going Down
+								i(121441),
+								i(121443),
+								i(121442),
+								i(121440),
+							}),
+						}),
+						crit(5, { -- Mak'rana and the Fate of the Queen's Reprisal
+							q(38857), -- A Favor for Mr. Shackle
+							q(37654), -- Maritime Law
+							q(37657,  {  	-- Making the World Safe for Profit
+								i(138852),
+								i(138851),
+								i(138850),
+								i(138848),
+								i(133549,  {  	-- Muck-Covered Shoes
+								  i(133548),
+								  i(133547),
+								  i(133546),
+								  i(133544),
+								}),	
+							}),
+							q(37659), -- The Captain's Foot Locker
+							qa(40794, {	-- Fate of the Queen's Reprisal [Alliance]
+								i(121482),	-- Cloak of the Greywatch
+								i(138857),	-- SI:7 Standard Issue Vest
+								i(138856),	-- Alliance Auxillary Hauberk
+								i(138855),	-- Alliance Crusader's Breastplate
+								i(138858),	-- Stormwind Clergy Vestments
+							}),
+							qh(42244, {	-- Fate of the Queen's Reprisal [Horde]
+								i(138859),	-- Royal Apothecary Robe
+								i(121488),	-- Royal Apothecary Drape
+								i(138862),	-- Decorated Deathstalker Jerkin
+								i(138861),	-- Troll Auxillary Chainmail
+								i(138860),	-- Kor'kron Breastplate
+							}),
+						}),
+					}),
+					ach(10877, { -- Pillars of Creation
+						q(38286), -- Eye of Azshara: Wrath of Azshara
+						q(42213, { -- Eye of Azshara: The Tidestone of Golganneth
+							i(140622), -- Harshell Greatbelt
+							i(140623), -- Brightscale Waistguard
+							i(140624), -- Bitterbrine Binding
+							i(140625), -- Waistban of the Hatecoil Oracles
+						}),
+					}),  
+					n(-38, { 	 -- Professions
+						n(-182, { -- Enchanting
+							q(40169), -- Crossroads Rendezvous
+							q(39923), -- Down to the Core
+							q(39907), -- Elven Enchantments
+						}),
+						n(-183, { -- Engineering
+							qp202(qg(102196, q( 40876))),	-- 'Locke, Stock and Barrel
+						}),
+						n(-184, { -- Herbalism
+							q(40013), -- Aethril Sample
+							q(40015), -- Ragged Strips of Silk
+							q(40017), -- A Slip of the Hand
+						}),
+						n(-185, { -- Inscription
+							q(39938), -- Containing the Demon Within
+							q(39941), -- Control is Key
+						}),
+						n(-193, { -- First Aid
+							q(42255), -- Bloody Note
+						}),
+					}),
+					ach(10994, { -- Class Campaign
+						cl(5, {    -- Priest
+							q(43375), -- An Ample Supply
+							q(42137), -- Champion: Yalia Sagewhisper
+							q(42138), -- Champion: Zabra Hex
+						}),
+						cl(2, {    -- Paladin
+							q(43490), -- Aponi's Trail
+							q(42888), -- Communication Orbs
+						}),
+						cl(8, {    -- Mage
+							q(42222), -- Empyrean Society Report
+						}),
+						cl(4, {    -- Rogue
+							qh( 46324),	-- False Orders
+							qa( 45835),	-- False Orders
+						}),
+						cl(9, {    -- Warlock
+							q(39179), -- Bloodstone Bandit
+							q(45024), -- Cult Culling
+							q(40218), -- Debt Repaid
+							q(45026), -- Expending Fel Energy
+						}),
+					}),
+					n(-170, {    -- Balance of Power
+						q(43521), -- Essence of Power
+						q(43522), -- Essential Corruption
+						q(40668), -- Eye of Azshara: The Heart of Zin-Azshari
+						q(43517), -- Darkheart Thicket: Fallen Power
+					}),
+					n(-168, {    -- Other Quests
+						sz(10665,2, { -- Felblaze Ingress
+							q(42372), -- Felblaze Ingress
+							q(42375), -- Eye See You
+							q(42369), -- They're Doing it Wrong
+							q(42367), -- Arkethrax
+							q(42368), -- Quantity over Quality
+						}),
+						sz(10665,5, { -- Llothien Highlands
+							q(42238), -- Missing Demon
+							q(38460), -- Let's Make A Deal
+							q(38232), -- Minion! Kill Them!
+							q(38237,  {  	-- This IS In My Contract
+								i(138878), 		-- TOY! Copy of Daglop's Contract
+							}),
+						}),
+						sz(10665,6, { -- The Lost Orchard
+							q(38203,  {  	-- Challiane Vineyards
+								i(132968),
+								i(132967),
+								i(132966),
+								i(132965),
+							}),
+						}),
+						sz(10665,7, { -- Nar'thalas
+							q(42692), -- Children of Nar'thalas
+							q(42693), -- You Never Know Until You Scry
+							q(42694,  {  	-- Back from the Dead
+								i(138820),
+								i(138821),
+								i(138822),
+								i(138824),
+							}),
+						}),
+						n(-169, { -- Emissary Quests
+							q(46745, {		-- Supplies from the Court
+								i(152102, {			-- Farondis Chest
+									dr(3, i(147806)),		-- Cloudwing Hippogryph
+								})
+							}),
+							q(46749, {		-- Supplies From the Wardens
+								i(152107, {			-- Warden's Supply Kit
+									dr(3, i(147843)),  	-- TOY! Sira's Extra Cloak
+								}),
+							}),
+						}),
+					}),
+        --[[ These quests will be organized soon™
+					q( 41173),	-- A Beacon of Hope
+					q( 46205),	-- A Conduit No More
+					q( 42434),	-- A Covert Operation
+					q( 44876),	-- A Dance With Dragons
+					q( 40195),	-- A Daring Rescue
+					q( 40206),	-- A Debt Paid
+					q( 40524),	-- A Familiar Ring to It
+					q( 39390),	-- A Mysterious Text
+					q( 38951),	-- A Needle Need
+					q( 37492),	-- A Rather Long Walk
+					q( 37965),	-- A Tainted Vintage
+					q( 43514),	-- A Vainglorious Past
+					q( 41183),	-- Academic Exploration
+					q( 38953),	-- Advanced Needlework
+					q( 41759),	-- An Unlikely Ally
+					q( 41162),	-- And Into the Fel Fire
+					q( 45021),	-- Answers Unknown
+					q( 46199),	-- Battle for Azsuna
+					q( 47193),	-- Battle for Azsuna
+					q( 47194),	-- Battle for Highmountain
+					q( 47195),	-- Battle for Stormheim
+					q( 47196),	-- Battle for Val'sharah
+					q( 40188),	-- Best Served Cold
+					q( 40857),	-- Bits and Pieces
+					q( 42450),	-- Brawlgoth
+					q( 43193),	-- Calamitous Intent
+					q( 40766),	-- Charfeather
+					q( 42221),	-- Chief Bitterbrine										
+					q( 44673),	-- Commander Soraax
+					q( 38946),	-- Consult the Locals
+					q( 40060),	-- Containing the Demon Within
+					q( 40063),	-- Control is Key
+					q( 41157),	-- Corrupted Studies
+					q( 42420),	-- Court of Farondis
+					q( 46020),	-- Crystal Containment
+					q( 39891),	-- Cursed, But Convenient
+					q( 41166),	-- Dark Secrets
+					q( 41169),	-- Darkheart Thicket: Through the Fog
+					q( 41165),	-- Deciphering Demonology
+					q( 40058),	-- Defense Symbology
+					q( 41172),	-- Echoes of My Ancestors
+					q( 41178),	-- Explosive Results
+					q( 43378),	-- Eye of Azshara: Looking Through the Lens
+					q( 40208),	-- Eye of Azshara: Scales of the Sea
+					q( 38961),	-- Eye of Azshara: The Depraved Nightfallen
+					q( 37526),	-- Farondis Murder Flag
+					q( 38014),	-- Feasting on the Dragon
+					q( 41167),	-- Fel Fragments
+					qa( 45127),	-- Fel-Crossed Lovers
+					q( 42069),	-- Felbats
+					q( 42171),	-- Final Exit
+					q( 40527),	-- Finishing Touches
+					q( 40528),	-- Finishing Touches
+					q( 40526),	-- Finishing Touches
+					q( 45848),	-- Fit For a Pirate
+					q( 41175),	-- Fit for an Elven Queen
+					q( 45917),	-- Following the Scent
+					q( 41158),	-- Fragments of the Fjords
+					q( 40525),	-- Getting the Band Back Together
+					q( 40193),	-- Getting the Kinks Out
+					q( 40144),	-- Glielle
+					q( 41177),	-- Goblin Archaeology
+					q( 40872),	-- Going Out With a Bang
+					q( 40875),	-- Going to Waste
+					q( 38948),	-- Hard Times
+					q( 39876),	-- Helping the Hunters
+					q( 44574),	-- Honor the Flame
+					q( 43561),	-- I Believe I Can Fly!
+					q( 40874),	-- I'd Do It Myself, But...
+					q( 39877),	-- In the Loop
+					q( 45794),	-- Informing the Council
+					q( 37908),	-- Inquisitor Ernstenbok
+					q( 39936),	-- Inscription of the Body
+					q( 39389),	-- It Hungers for Blood
+					q( 40856),	-- It'll Cost You
+					q( 40556),	-- Jabrul Needs You
+					qh( 46326),	-- Jorach's Calling
+					qa( 45836),	-- Jorach's Calling
+					q( 38443),	-- Journey to the Repose
+					q( 40873),	-- Keep Yer Powder Dry
+					q( 42214),	-- Knocked for a Loop
+					q( 42689),	-- Knowing Our Enemy
+					q( 38959),	-- Left Behind
+					q( 42691),	-- Leyworm Lure
+					q( 38960),	-- Lining Them Up
+					q( 40187),	-- Links in the Chain
+					q( 38785),	-- Living Leystone Sample
+					q( 45073),	-- Loot and Plunder!
+					q( 43519),	-- Lucid Strength
+					q( 38952),	-- Meticulous Precision
+					q( 43462),	-- Mother Ozram
+					q( 43374),	-- Murloc Mind Control
+					q( 40189),	-- Naga Know-How
+					q( 41181),	-- Narrowing Down
+					q( 39921),	-- Neltharion's Lair: Rod of Azure
+					q( 37928),	-- Normantis the Deposed
+					q( 44873),	-- Oculeth Ex Machina
+					q( 39920),	-- On Azure Wings
+					q( 41164),	-- One Step Closer
+					q( 40059),	-- Opposites Repel
+					q( 39937),	-- Opposites Repel
+					q( 40855),	-- Our Man in Azsuna
+					q( 39934),	-- Our New Allies
+					q( 40056),	-- Our New Allies
+					q( 41161),	-- Out of the Frying Pan										
+					q( 39718),	-- Paradise Lost
+					q( 46794),	-- Paragon of the Court
+					q( 46800),	-- Paragon of the Wardens
+					q( 37495),	-- Plunder the Cove
+					q( 42435),	-- Prepare To Be Assimilated
+					q( 39906),	-- Prepping For Battle
+					q( 45795),	-- Presence of Power
+					q( 37728),	-- Presentation is Everything
+					q( 38061),	-- Pridelord Meowl
+					q( 43376),	-- Problem Salver
+					q( 41159),	-- Process of Elimination
+					q( 41771),	-- Recharging the Blade
+					q( 40194),	-- Reclaimed Cargo
+					q( 43523),	-- Repaid Debt
+					q( 36811),	-- Retake Faronaar
+					q( 38791),	-- Rethu's Horn
+					q( 38792),	-- Rethu's Lesson
+					q( 38794),	-- Rethu's Sacrifice
+					q( 38803),	-- Rin'thissa
+					q( 39905),	-- Ringing True
+					q( 39940),	-- Runes of Power
+					q( 38947),	-- Runic Catgut
+					q( 43527),	-- Saving the Guard
+					q( 40207),	-- Scales of the Arcane
+					q( 40209),	-- Scales of the Earth
+					q( 40133),	-- Scrap of Pants
+					q( 39939),	-- Scribal Knowledge
+					q( 39914),	-- Sentinel's Final Duty
+					q( 38955),	-- Sew Far, Sew Good
+					q( 46795),	-- Ship - Azsuna
+					q( 46808),	-- Ship - Highmountain
+					q( 46801),	-- Ship - Val'sharah
+					q( 40310),	-- Shipwrecked Captive
+					q( 42220),	-- Shipwrecked Sailors
+					q( 42268),	-- Shipwrecked Sailors
+					q( 41176),	-- Sifting Through the Rubble
+					q( 38949),	-- So You Think You Can Sew
+					q( 45175),	-- Soul Prism of the Illidari
+					q( 45025),	-- Stealing the Source of Power
+					q( 40131),	-- Stonehide Leather Sample
+					q( 40141),	-- Stormscale Sample
+					q( 40048),	-- Strings of the Puppet Masters
+					q( 41288),	-- Supplies Needed: Aethril
+					q( 41315),	-- Supplies Needed: Leystone
+					q( 41327),	-- Supplies Needed: Stormscales
+					q( 38957),	-- Taking Inspiration
+					q( 43518),	-- Tempering Darkness
+					q( 39142),	-- Testing a Theory
+					q( 40327),	-- Testing the Metal
+					q( 39918),	-- The Absent Priestess
+					q( 41163),	-- The Apocalypse Bringer
+					q( 44875),	-- The Art of Flow
+					q( 43373),	-- The Best and Brightest
+					q( 37466),	-- The Broken Academy
+					q( 39943),	-- The Burdens of Hunting
+					q( 39910),	-- The Druid's Debt
+					q( 43520),	-- The Emerald Nightmare: In Nightmares
+					q( 45028),	-- The Fate of Kanrethad										
+					q( 38963),	-- The Final Lesson?
+					q( 41802),	-- The Gates of Valor
+					q( 45174),	-- The Hunt for Illidan Stormrage
+					q( 41185),	-- The Keys to Success
+					q( 40859),	-- The Latest Fashion: Headguns!
+					q( 37727),	-- The Magister of Mixology
+					q( 40858),	-- The Missing Pieces
+					q( 42407),	-- The Nature of the Beast
+					qh( 46322),	-- The Pirate's Bay
+					qa( 45833),	-- The Pirate's Bay
+					q( 43501),	-- The Power Within
+					q( 43505),	-- The Power Within
+					q( 43503),	-- The Power Within
+					q( 43496),	-- The Power Within
+					q( 39935),	-- The Price of Power
+					q( 40057),	-- The Price of Power
+					q( 41168),	-- The Purple Hills of Mac'Aree
+					q( 41170),	-- The Relic Renewed
+					q( 41171),	-- The Reliquary Calls
+					q( 37660),	-- The Scythe of Souls
+					q( 41770),	-- The Skies Above
+					q( 42422),	-- The Wardens
+					q( 38950),	-- The Wayward Tailor
+					q( 43581),	-- The Wisdom of Patience
+					q( 42887),	-- This Is Retribution
+					q( 37963),	-- Those Beyond Redemption
+					q( 40210),	-- Time Well Spent
+					q( 43942),	-- Timeworn Artifact
+					q( 37779),	-- Tip the Scales
+					q( 40547),	-- To Dalaran, With Love
+					q( 42886),	-- To Faronaar
+					q( 43489),	-- To Felblaze Ingress
+					q( 40061),	-- To Know Your Enemy
+					q( 42406),	-- To Tame the Beast
+					q( 45027),	-- To the Broken Shore
+					q( 47064),	-- Tracking Quest
+					q( 44081),	-- Treacherous Leyrunners
+					q( 37649),	-- Treasure: Offerings for the Giants
+					q( 45176),	-- Trial of Valor: The Once and Future Lord of Shadows
+					q( 41184),	-- Tried and True
+					q( 39916),	-- Turnabout Betrayal
+					q( 44874),	-- Unbeleyvable
+					q( 41182),	-- Uncovering the Orb of Sciallax
+					q( 40145),	-- Under Down
+					q( 45126),	-- Unlikely Seduction
+					q( 41180),	-- Unspeakable Power
+					q( 40130),	-- Washed Clean					
+					q( 42166),	-- What Is Going On Here?
+					q( 41179),	-- What Once Was Lost
+					qa( 44758),	-- What's the Cache?
+					qh( 46323),	-- What's the Cache?
+					q( 37930),	-- Whelp? That Happened.
+					q( 38956),	-- Where's Lyndras Again?
+					q( 38954),	-- Where's Lyndras?
+					q( 41174),	-- Worth Its Weight
+          SOON™
+          --]]
+				}),
+				n(-16, { 	-- Rares
+					n(107657, { 	-- Arcanist Shal'iman
+						["groups"] = {
+							i(141868),
+						},
+						["questID"] = 42505,
+						["ids"] = {1794},
+					}), 
+					n(90244, { 		-- Arcavellus
+						["groups"] = {
+							i(129085),
+						},
+						["questID"] = 37932,	
+						["ids"] = {1794},
+						["description"] = "|cff66ccffClick Unbound Rift in Ley-Ruins of Zarkhenar to start event. Arcavellus will spawn after a few waves of enemies.|r",
+					}), 
+					n(91187, { 		-- Beacher
+						["groups"] = {
+							i(129067),
+						},
+						["questID"] = 38238,	
+						["ids"] = {1794},	
+					}), 
+					n(107327, { 	-- Bilebrain
+						["groups"] = {
+							i(129079),
+						},
+						["questID"] = 42417,	
+						["ids"] = {1794},	
+					}), 
+					n(107127, { 	-- Brawlgoth
+						["groups"] = {
+							i(129086),
+						},
+						["questID"] = 42450,	
+						["ids"] = {1794},		
+					}), 
+					n(91100, { 		-- Brogozog
+						["groups"] = {	
+							i(129068),
+						},
+						["questID"] = 38212,	
+						["ids"] = {1794},
+						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
+					}),
+					n(107105, { 	-- Broodmother Lizax
+						["groups"] = {
+							i(141869),
+						},
+						["questID"] = 44670,	
+						["ids"] = {1794},	
+					}), 
+					n(91289, { 		-- Cailyn Paledoom 
+						["groups"] = {
+							i(129063),
+						},
+						["questID"] = 38268,	
+						["ids"] = {1794},	
+					}), 
+					n(89846, { 		-- Captain Volo'ren
+						["groups"] = {	
+							i(129066),
+						},
+						["questID"] = 37821,	
+						["ids"] = {1794},	
+					}),				
+					n(107266, { 	-- Commander Soraax
+						["groups"] = {	
+							i(141871),
+						},
+						["questID"] = 44673,	
+						["ids"] = {1794},	
+					}), 
+					n(90057, { 		-- Daggerbeak
+						["groups"] = {	
+							i(129084),
+						},
+						["questID"] = 37869,	
+						["ids"] = {1794},	
+					}), 
+					n(105938, { 	-- Felwing (Felbats)
+						["groups"] = {
+							i(129087),
+						},
+						["questID"] = 42069,	
+						["ids"] = {1794},
+						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
+					}), 
+					n(89884, { 		-- Flog the Captain-Eater
+						["groups"] = {	
+							i(129090),
+						},
+						["questID"] = 37824,	
+						["ids"] = {1794},	
+					}), 
+					n(109564, { 	-- Glimmering Treasure Chest
+						["groups"] = {					
+							i(129078),
+						},
+						["quests"] = 37649,	
+						["ids"] = {1794},
+						["displayID"] = 71077,
+						["modelScale"] = 1.5,
+						["description"] = "|cff66ccffThis chest is underground in the Oceanus Cove caves on the ground of gold coins next to Lady Sssurine.|r",
+					}),	
+					n(107136, { 	-- Houndmaster Stroxis
+						["groups"] = {
+							i(141873),
+						},
+						["questID"] = 42286,	
+						["ids"] = {1794},	
+					}), 
+					n(90803, { 		-- Infernal Lord
+						["groups"] = {	
+							i(129083),
+						},
+						["questID"] = 38037,	
+						["ids"] = {1794},
+						["description"] = "|cff66ccffClick Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.|r",
+					}), 
+					n(107269, { 	-- Inquisitor Tivos
+						["groups"] = {
+							i(141874),
+						},
+						["questID"] = 42376,	
+						["ids"] = {1794},	
+					}), 
+					n(90217, { 		-- Normantis the Deposed
+						["groups"] = {
+							i(129061),
+						},
+						["questID"] = 37928,	
+						["ids"] = {1794},	
+					}), 
+					n(90901, { 		-- Pridelord Meowl
+						["groups"] = {
+							i(138395),
+						},
+						["questID"] = 38061,	
+						["ids"] = {1794},	
+					}),
+					n(109504, { 	-- Ragemaw
+						["groups"] = {
+							i(129075),
+						},
+						["questID"] = 44108,	
+						["ids"] = {1794},	
+					}), 
+					n(89016, { 		-- Ravyn-Drath
+						["groups"] = {
+							i(129080),
+						},
+						["questID"] = 37537,	
+						["ids"] = {1794},	
+					}), 
+					n(90505, { 		-- Syphonus
+						["groups"] = {
+							i(129064),
+						},
+						["questID"] = 37989,	
+						["ids"] = {1794},	
+					}), 
+					n(108136, { 	-- The Muscle
+						["groups"] = {	
+							i(129081),
+						},
+						["questID"] = 44671,	
+						["ids"] = {1794},	
+					}),
+					n(89850, { 		-- The Oracle
+						["groups"] = {	
+							i(129065),
+						},
+						["questID"] = 37822,	
+						["ids"] = {1794},	
+					}), 
+					n(91113, { 		-- Tide Behemoth
+						["groups"] = {	
+							i(129062),
+						},
+						["questID"] = 38217,	
+						["ids"] = {1794},	
+					}),
+						n(97116, { -- Treasure Chest
+                        ["groups"] = {
+                            i(122681),
+                        },
+                        ["questID"] = 38217,
+                        ["modelID"] = 71076,
+                    }),
+					n(89650, { 		-- Valiyaka the Stormbringer
+						["groups"] = {	
+							i(129082),
+						},
+						["questID"] = 37726,	
+						["ids"] = {1794},	
+					}),
+					n(107113, { 	-- Vorthax
+						["groups"] = {
+							i(141875),
+						},
+						["questID"] = 42280,	
+						["ids"] = {1794},	
+					}), 
+					n(90164, { 		-- Warbringer Mox'na
+						["groups"] = {	
+							i(129069),
+						},
+						["questID"] = 37909,	
+						["ids"] = {1794},	
+					}), 
+--[[	
+	--				n(109641, { 	-- Arcanor Prime }), 
+	--				n(106583, { 	-- Arkethrax }),
+	--				n(101596, { 	-- Charfeather }), 
+	--				n(106990, { 	-- Chief Bitterbrine Drops ring }), 
+	--				n(109677, { 	-- Chief Treasurer Jabrill }), 
+	--				n(108255, { 	-- Coura, Mistress of Arcana }), 
+	--				n(109702, { 	-- Deepclaw }), 
+	--				n(112637, { 	-- Devious Sunrunner }),
+	--				n(91579, { 		-- Doomlord Kazrok Drops trinket tehd }), 
+	--				n(109584, { 	-- Fjordun }), 
+	--				n(89816, { 		-- Golza the Iron Fin drops trinket	 }), 
+	--				n(109630, { 	-- Immolian }), 
+	--				n(103975, { 	-- Jade Darkhaven }), 
+	--				n(111939, { 	-- Lysanis Shadesoul }), 
+	--				n(109653, { 	-- Marblub the Massive }), 
+	--				n(93622, { 		-- Mortiferous }), 
+	--				n(89865, { 		-- Mrrgrl the Tide Reaver drops neck }), 
+	--				n(111434, { 	-- Sea King Tidross }), 
+	--				n(112636, { 	-- Sinister Leyrunner }), 
+	--				n(109594, { 	-- Stormfeather }), 
+	--				o(254087, { 	-- The Dreadblades
+	--					i(128872), 		-- Rogue Outlaw Hidden Appearance
+	--				}),
+	--				n(109620, { 	-- The Whisperer }), 
+	--				n(110824, { 	-- Tideclaw }), 
+	--				n(102064, { 	-- Torrentius }),
+	--				n(109575, { 	-- Valakar the Thirsty }), 
+--]]				
+				}),
+				n(-2, { 	-- Vendors
+					n(102196, {	-- Fargo Flintlocke
+						i(136629),
+						i(136630),
+						i(136631),
+						i(136632),
+					}),
+					n(120266, {	-- Ilyssia of the Waters
+						["groups"] = {
+							ach(11725, { -- Fisherfriend of the Isles
+								i(152583, { -- Underlight Emerald
+									i(133755, { -- Underlight Angler
+										["groups"] = {
+											{
+												["artifactID"] = 988, -- Fisherfriend of the Isles
+												["itemID"] = 133755, -- Underlight Angler
+												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+												["modelScale"] = 1.25,
+												["modelRotation"] = 55,
+												["u"] = 15,
+											},
+											{
+												["artifactID"] = 989, -- Fisherfriend of the Isles
+												["itemID"] = 133755, -- Underlight Angler
+												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+												["modelScale"] = 1.25,
+												["modelRotation"] = 55,
+												["u"] = 15,
+											},
+										},
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+										["modelScale"] = 1.25,
+										["modelRotation"] = 55,
+										["ignoreSource"] = true,
+										["u"] = 15,										
+									}),
+								}),
+							}),
+							i(152555), -- Ghost Shark
+							i(147308), -- Enchanted Bobber
+						},
+						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+						["requiredSkill"] = 356,
+					}),
+					n(93973, {	-- Leyweaver Phaxondus
+						i(127023, { 				-- Pattern: Imbued Silkweave Epaulets
+							i(127000)					-- Imbued Silkweave Epaulets
+						})
+					}),
+					n(107379, {	-- Marin Bladewing <Wardens Emissary>
+						i(136898), 					-- Fledgling Warden Owl Pet
+						i(130157), 					-- Syxsehnz Rod Toy
+						i(130191), 					-- Trapped Treasure Chest Kit Toy
+						i(139607), 					-- Drape of the Patient Hunter
+						i(139603), 					-- Vault Patroller's Warboots
+						i(140580), 					-- Warden's Tabard	
+					}),
+					n(107376, {	-- Veridis Fallon <Court of Farondis Emissary>
+						i(140672), 					-- Court Scribe Pet
+						i(129279), 					-- Enchanted Stone Whistle Toy
+						i(139606), 					-- Cadet's Gaudy Scarf
+						i(140577), 					-- Court of Farondis Tabard
+						i(139595), 					-- Once-Fashionable Nar'thalas Leggings
+						i(129276, {					-- Beginner's Guide to Dimensional Rifting
+							ach(11175),					-- Higher Dimensional Rifting
+						}),
+						--i(139556), 				-- Hunter Legendary Appearance
+					}),
+				}),
+				n(-34, { -- World Quests
+					n(-322, { -- Cloak
+						i(134334), -- Disgraced Court Cloak
+						i(134246), -- Herringbone Drape
+					}),
+					n(-3241, {	-- Arcane Singed Set		
+						["groups"] = {		
+							i(134348),	-- Arcane Singed Aurora
+							i(134353),	-- Arcane Singed Mantle
+							i(134351),	-- Arcane Singed Robe
+							i(134354),	-- Arcane Singed Wristwraps
+							i(134349),	-- Arcane Singed Handwraps
+							i(134347),	-- Arcane Singed Cord
+							i(134350),	-- Arcane Singed Leggings
+							i(134352),	-- Arcane Singed Slippers
+						},		
+						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
+					}),			
+					n(-3248, {	-- Seawitch Set		
+						["groups"] = {		
+							i(134260),	-- Seawitch Hood
+							i(134265),	-- Seawitch Mantle
+							i(134263),	-- Seawitch Robes
+							i(134266),	-- Seawitch Bracers
+							i(134261),	-- Seawitch Gloves
+							i(134259),	-- Seawitch Cinch
+							i(134262),	-- Seawitch Leggings
+							i(134264),	-- Seawitch Sandals
+						},		
+						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
+					}),			
+					n(-3271, {	-- Brinewashed Set		
+						["groups"] = {		
+							i(134240),	-- Brinewashed Leather Cowl
+							i(134242),	-- Brinewashed Leather Shoulderpads
+							i(134241),	-- Brinewashed Leather Vest
+							i(134236),	-- Brinewashed Leather Bracers
+							i(134239),	-- Brinewashed Leather Grips
+							i(134243),	-- Brinewashed Leather Belt
+							i(134238),	-- Brinewashed Leather Pants
+							i(134237),	-- Brinewashed Leather Boots
+						},		
+						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
+					}),			
+					n(-3264, {	-- Mana-Saber Set		
+						["groups"] = {		
+							i(134328),	-- Mana-Saber Hide Hood
+							i(134330),	-- Mana-Saber Hide Shoulders
+							i(134329),	-- Mana-Saber Hide Jerkin
+							i(134324),	-- Mana-Saber Hide Bindings
+							i(134327),	-- Mana-Saber Hide Gloves
+							i(134331),	-- Mana-Saber Hide Belt
+							i(134326),	-- Mana-Saber Hide Pants
+							i(134325),	-- Mana-Saber Hide Boots
+						},		
+						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
+					}),			
+					n(-3282, {	-- Manaburst Set		
+						["groups"] = {		
+							i(134343),	-- Manaburst Helm
+							i(134345),	-- Manaburst Spaulders
+							i(134346),	-- Manaburst Chainmail
+							i(134340),	-- Manaburst Bracers
+							i(134341),	-- Manaburst Grips
+							i(134339),	-- Manaburst Waistguard
+							i(134344),	-- Manaburst Legguards
+							i(134342),	-- Manaburst Greaves
+						},		
+						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
+					}),	
+					n(-3276, {	-- Sea Stalker's Set		
+						["groups"] = {		
+							i(134255),	-- Sea Stalker's Hood
+							i(134257),	-- Sea Stalker's Mantle
+							i(134258),	-- Sea Stalker's Shirt
+							i(134252),	-- Sea Stalker's Bracers
+							i(134253),	-- Sea Stalker's Gloves
+							i(134251),	-- Sea Stalker's Cinch
+							i(134256),	-- Sea Stalker's Leggings
+							i(134254),	-- Sea Stalker's Boots
+						},		
+						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
+					}),			
+					n(-3305, {	-- Coralplate Set		
+						["groups"] = {		
+							i(134226),	-- Coralplate Helmet
+							i(134228),	-- Coralplate Pauldrons
+							i(134223),	-- Coralplate Chestguard
+							i(134230),	-- Coralplate Wristguard
+							i(134224),	-- Coralplate Gauntlets
+							i(134225),	-- Coralplate Girdle
+							i(134227),	-- Coralplate Legguards
+							i(134229),	-- Coralplate Sandstompers
+						},		
+						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
+					}),			
+					n(-3304, {	-- Ley-Scarred Set		
+						["groups"] = {		
+							i(134314),	-- Ley-Scarred Helm
+							i(134316),	-- Ley-Scarred Pauldrons
+							i(134311),	-- Ley-Scarred Chestplate
+							i(134318),	-- Ley-Scarred Vambraces
+							i(134312),	-- Ley-Scarred Gauntlets
+							i(134313),	-- Ley-Scarred Waistplate
+							i(134315),	-- Ley-Scarred Greaves
+							i(134317),	-- Ley-Scarred Sabatons
+						},		
+						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
+					}),			
+				}),		
+			},
+			["achievementID"] = 10665,
+			["Lvl"] = 98,
+			["description"] = "|cff66ccffAzsuna is located on the West/South Western side of the Broken Isles. A land rich in magical leylines and magic so condensed that it has formed crystals. Azsuna was a home to many elves, nightelves and highborne. Azsuna is a very serene place, with mythical beasts that adorns it's plains. However is seems some of the Legions corruption has begun to take a bit of this land over. You will aid this land and those that currently reside in it by thwarting off some of the Legion as well as helping out a familiar dragonflight. The magical academy is also located here as Azsuna is a place that does hold vast amount of magic located in it's leylines. You will also learn about an old foe that you once fought during one of your trips back in time to the well of eternity.|r",
+		}),
+	}),
+};

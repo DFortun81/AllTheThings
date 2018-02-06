@@ -1,0 +1,159 @@
+-----------------------------------------------------
+--   D U N G E O N S  &  R A I D S  M O D U L E    --
+-----------------------------------------------------
+
+_.Instances = 
+{
+	{ -- Burning Crusade
+		["groups"] = {
+			c(248, { 	-- Hellfire Ramparts
+				["groups"] = {
+					d(1, {		-- Normal
+						n(-17, {	-- Quests 				
+							qa(29528,{ -- War on the Ramparts
+								i(25718), -- Mantle of Magical Might
+								i(25717), -- Sure-Step Boots
+								i(25716), -- Handguards of Precision
+								i(25715), -- Jade Warrior Pauldrons
+							}),	
+							qh(29527,{ -- War on the Ramparts
+								i(25718), -- Mantle of Magical Might
+								i(25717), -- Sure-Step Boots
+								i(25716), -- Handguards of Precision
+								i(25715), -- Jade Warrior Pauldrons
+							}),	
+						}),
+						e(527, { 	-- Watchkeeper Gargolmar
+							["groups"] = {
+								i(24020),	-- Shadowrend Longblade
+								i(27449),	-- Blood Knight Defender
+								i(24024),	-- Pauldrons of Arcane Rage
+								i(27448),	-- Cloak of the Everliving
+								i(24021),	-- Light-Touched Breastplate
+								i(24023),	-- Bracers of Finesse
+								i(27447),	-- Bracers of Just Rewards
+								i(24022),	-- Scale Leggings of the Skirmisher
+								i(27451),	-- Boots of the Darkwalker
+								i(27450),	-- Wild Stalker Boots
+							},
+							["creatureID"] = 17306,
+						}),
+						e(528, { -- Omor the Unscarred
+							["groups"] = {
+								i(24069),	-- Crystalfire Staff
+								i(24094),	-- Heart Fire Warhammer
+								i(27463),	-- Terror Flame Dagger
+								i(27476),	-- Truncheon of Five Hells
+								i(27477),	-- Faol's Signet of Cleansing
+								i(27466),	-- Headdress of Alacrity
+								i(27539),	-- Justice Bearer's Pauldrons
+								i(27906),	-- Crimsonforge Breastplate
+								i(27462),	-- Crimson Bracers of Gloom
+								i(24090),	-- Bloodstained Ravager Gauntlets
+								i(27465),	-- Mana-Etched Gloves
+								i(27478),	-- Girdle of the Blasted Reaches
+								i(24091),	-- Tenacious Defender
+								i(27467),	-- Silent-Strider Kneeboots
+							},
+							["creatureID"] = 17308,
+						}),
+						e(529, { -- Vazruden the Herald
+							["groups"] = {
+								model(34286, o(185168, { 	-- Reinforced Fel Iron Chest
+									i(24044),	-- Hellreaver
+									i(24155),	-- Ursol's Claw
+									i(29346),	-- Feltooth Eviscerator
+									i(27455),	-- Irondrake Faceguard
+									i(27454),	-- Volcanic Pauldrons
+									i(24150),	-- Mok'Nathal Wildercloak
+									i(27461),	-- Chestguard of the Prowler
+									i(27456),	-- Raiments of Nature's Breath
+									i(27452),	-- Light Scribe Bands
+									i(27459),	-- Vambraces of Daring
+									i(27457),	-- Life Bearer's Gauntlets
+									i(32077),	-- Wrath Infused Gauntlets
+									i(29238),	-- Lion's Heart Girdle
+									i(24063),	-- Shifting Sash of Midnight
+									i(29264),	-- Tree-Mender's Belt
+									i(24046),	-- Kilt of Rolling Thunders
+									i(24083),	-- Lifegiver Britches
+									i(27458),	-- Oceansong Kilt
+									i(24064),	-- Ironsole Clompers
+								})),
+							},
+							["creatureID"] = 17307,
+						})
+					}),
+					d(2, {		-- Heroic
+						["Lvl"] = 70,
+						["ignoreBonus"] = true,
+						["groups"] = {
+							e(527, { -- Watchkeeper Gargolmar
+								["groups"] = {
+									i(24020),	-- Shadowrend Longblade
+									i(27449),	-- Blood Knight Defender
+									i(24024),	-- Pauldrons of Arcane Rage
+									i(27448),	-- Cloak of the Everliving
+									i(24021),	-- Light-Touched Breastplate
+									i(24023),	-- Bracers of Finesse
+									i(27447),	-- Bracers of Just Rewards
+									i(24022),	-- Scale Leggings of the Skirmisher
+									i(27451),	-- Boots of the Darkwalker
+									i(27450),	-- Wild Stalker Boots
+								},
+								["creatureID"] = 17306,
+							}),
+							e(528, { -- Omor the Unscarred
+								["groups"] = {
+									i(24069),	-- Crystalfire Staff
+									i(24094),	-- Heart Fire Warhammer
+									i(27463),	-- Terror Flame Dagger
+									i(27476),	-- Truncheon of Five Hells
+									i(27477),	-- Faol's Signet of Cleansing
+									i(27466),	-- Headdress of Alacrity
+									i(27539),	-- Justice Bearer's Pauldrons
+									i(27906),	-- Crimsonforge Breastplate
+									i(27462),	-- Crimson Bracers of Gloom
+									i(24090),	-- Bloodstained Ravager Gauntlets
+									i(27465),	-- Mana-Etched Gloves
+									i(27478),	-- Girdle of the Blasted Reaches
+									i(24091),	-- Tenacious Defender
+									i(27467),	-- Silent-Strider Kneeboots
+								},
+								["creatureID"] = 17308,
+							}),
+							e(529, { -- Vazruden the Herald
+								["groups"] = {
+									model(34286, o(185168, { 	-- Reinforced Fel Iron Chest
+										i(24044),	-- Hellreaver
+										i(24155),	-- Ursol's Claw
+										i(29346),	-- Feltooth Eviscerator
+										i(27455),	-- Irondrake Faceguard
+										i(27454),	-- Volcanic Pauldrons
+										i(24150),	-- Mok'Nathal Wildercloak
+										i(27461),	-- Chestguard of the Prowler
+										i(27456),	-- Raiments of Nature's Breath
+										i(27452),	-- Light Scribe Bands
+										i(27459),	-- Vambraces of Daring
+										i(27457),	-- Life Bearer's Gauntlets
+										i(32077),	-- Wrath Infused Gauntlets
+										i(29238),	-- Lion's Heart Girdle
+										i(24063),	-- Shifting Sash of Midnight
+										i(29264),	-- Tree-Mender's Belt
+										i(24046),	-- Kilt of Rolling Thunders
+										i(24083),	-- Lifegiver Britches
+										i(27458),	-- Oceansong Kilt
+										i(24064),	-- Ironsole Clompers
+									})),
+								},
+								["creatureID"] = 17307,
+							}),
+						}})
+				},
+				["Lvl"] = 57,
+				["mapID"] = 797
+			}),
+		},					
+		["tierID"] = 2
+	},	
+};
