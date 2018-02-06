@@ -7,8 +7,31 @@ _.Zones =
 		m(341, { 	-- Ironforge
 			["groups"] = {
 				n(-3, { 	-- Holidays
+--[[				
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+								qg(15871, q(  8866)),	-- Bronzebeard the Elder							
+								qg(15895, q(  8867)),	-- Lunar Fireworks
+								qg(15892, qa( 8870)),	-- The Lunar Festival
+								qg(15895, q(  8883)),	-- Valadar Starsong
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+						["u"] = 17,
+					}),
+--]]
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
+--[[						
+							n(-17, {	-- Quests
+								qg(37675, q( 24635)),	-- A Cloudlet of Classy Cologne
+								qg(38041, qa(24609)),	-- A Gift for a Lord of Ironforge								
+								qg(37675, q( 24629)),	-- A Perfect Puff of Perfume								
+								qg(37675, q( 24636)),	-- Bonbon Blitz
+								qg(38293, qa(24804)),	-- Uncommon Scents
+							}),
+--]]
 							n(-2, { -- Vendors
 								n(37674, { -- Lovely Merchant <Crown Chemical Co.>
 									i(50161, { -- Dinner Suit Box
@@ -22,11 +45,11 @@ _.Zones =
 										i(151767),	-- Lovely Purple Dress
 										i(151769),	-- Lovely Red Dress
 									}),
-									i(72146),	-- Swift Lovebird
+									i( 72146),	-- Swift Lovebird
 									i(116155),	-- Lovebird Hatchling
-									i(22235),	-- Truesilver Shafted Arrow
+									i( 22235),	-- Truesilver Shafted Arrow
 									i(142341),	-- Love Boat
-									i(34480),	-- Romantic Picnic Basket
+									i( 34480),	-- Romantic Picnic Basket
 									i(144339),	-- Sturdy Love Fool
 								}),
 							}),
@@ -34,6 +57,7 @@ _.Zones =
 						["achievementID"] = 1693,    -- Fool For Love
 						["u"] = 18,
 					}),
+--[[					
 					n(-51, {     -- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -43,7 +67,7 @@ _.Zones =
 						},
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
-					}),
+					}),					
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -53,24 +77,34 @@ _.Zones =
 										qh(  9331),	-- Stealing Ironforge's Flame
 									}),
 								}),
+								qg(25975, qa(11924)),	-- More Torch Catching
+								qg(25975, qa(11921)),	-- More Torch Tossing
+								qg(19148, qa(11970)),	-- The Master of Summer Lore (add'l QG 19172)
+								qg(25975, qa(11657)),	-- Torch Catching
+								qg(25975, qa(11731)),	-- Torch Tossing
+								qg(26221, q( 11886)),	-- Unusual Activity
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
 						["u"] = 21,
 					}),
+--]]
 					n(-56, {     -- Brewfest
 						["groups"] = {
---							n(-17, { 	-- Quests
---							}),
+--[[
+							n(-17, { 	-- Quests
+								qg(19148, qa(11441)),	-- Brewfest! (add'l QG 19172)
+							}),
+--]]
 							n(-2, { -- Vendors
 								a(n(27478, { -- Larkin Thunderbrew
-									i(46707), -- Pint-Sized Pink Pachyderm
+									i( 46707), -- Pint-Sized Pink Pachyderm
 									i(116756), -- Stout Alemental; pet
-									i(32233), -- Wolpertinger Tankard; pet
+									i( 32233), -- Wolpertinger Tankard; pet
 									i(116758), -- Brewfest Banner
-									i(71137), -- Brewfest Key Pony
-									i(33927), -- Brewfest Pony Keg
-									i(90427), -- Pandaren Brewpack
+									i( 71137), -- Brewfest Key Pony
+									i( 33927), -- Brewfest Pony Keg
+									i( 90427), -- Pandaren Brewpack
 									i(116757), -- Steamworks Sausage Grill
 									n(-3198, { -- Brewfest Garb
 										i(33968), -- Blue Brewfest Hat
@@ -82,12 +116,39 @@ _.Zones =
 										i(33868), -- Brewfest Boots
 										i(33966), -- Brewfest Slippers
 									}),
+									i(37571, {	-- "Brew of the Month" Club Membership Form
+										qa(12420),	-- Brew of the Month Club
+									}),
 								})),
 							}),
 						},
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),
+--[[					
+					n(-58, {	-- Hallow's End
+						["groups"] = {
+							n(-17, { 	-- Quests
+								qg(19148, qa(29074)),	-- A Season for Celebration (add'l QG 19172)
+								qa(12335),	-- Candy Bucket
+								qg( 5111, qa( 8353)),	-- Chicken Clucking for a Mint
+								qg(19148, qa(11356)),	-- Costumed Orphan Matron (add'l QG 19172)
+								qg( 6826, qa( 8355)),	-- Incoming Gumdrop								
+							}),
+						},
+						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["u"] = 26,
+					}),
+					n(-60, {     -- Pilgrim's Bounty
+						["groups"]  = {
+							n(-17, { 	-- Quests
+								qg(19148, qa(14022)),	-- Pilgrim's Bounty (add'l QG 19172)
+							}),
+						},
+						["achievementID"] = 3478, -- Pilgrim
+						["u"] = 28,
+					}),			
+--]]					
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 							a(n(-4, { 	-- Achievements
@@ -158,8 +219,8 @@ _.Zones =
 								}),
 							}),
 							n(-17, { 	-- Quests
-								qg(13444, qa(7025)), -- Treats for Greatfather Winter
-								qg(13433, qa(7045, { -- A Smokywood Pastures' Thank You
+								qg(13444, qa(7025)),	-- Treats for Greatfather Winter
+								qg(13433, qa(7045, {	-- A Smokywood Pastures' Thank You
 									["groups"] = {
 										i(17726, { -- Smokywood Pasture's Special Gift
 											dr(5.0, i(128649)), -- Illusion: Winter's Grasp
@@ -180,8 +241,10 @@ _.Zones =
 										["description"] = "This quest can only be done once per year.",
 									},
 								})),
-								qg(13433, qa(7022)), -- Greatfather Winter is Here!
-								qg(13433, qa(7043, { -- You're A Mean One
+								qg(13433, qa(7022)),	-- Greatfather Winter is Here!
+--								qg( 2916, qa(7063)),	-- The Feast of Winter Veil
+								qg( 1365, qa(7062)),	-- The Reason for the Season
+								qg(13433, qa(7043, {	-- You're A Mean One
 									["groups"] = {
 										i(73792, { -- Stolen Present
 											["groups"] = {
@@ -199,84 +262,84 @@ _.Zones =
 										}),
 										i(93626, { -- Stolen Present
 											["groups"] = {
-												i(54436), -- Blue Clockwork Rocket Bot
+												i( 54436), -- Blue Clockwork Rocket Bot
 												dr(2.0, i(34425)), -- Clockwork Rocket Bot Toy
-												i(73797), -- Lump of Coal
+												i( 73797), -- Lump of Coal
 												i(104317), -- Rotten Helper Box
-												i(54343), -- Blue Crashin' Thrashin' Racer Controller
-												i(37710), -- Crashin' Thrashin' Racer Controller Toy
-												i(90888), -- Foot Ball
-												i(46709), -- MiniZep Controller Toy
-												i(90883), -- The Pigskin
-												i(54438), -- Tiny Blue Ragdoll
-												i(54437), -- Tiny Green Ragdoll
-												i(44606), -- Toy Train Set
-												i(93625), -- Miniature Winter Veil Tree
-												i(70923), -- Gaudy Winter Veil Sweater
+												i( 54343), -- Blue Crashin' Thrashin' Racer Controller
+												i( 37710), -- Crashin' Thrashin' Racer Controller Toy
+												i( 90888), -- Foot Ball
+												i( 46709), -- MiniZep Controller Toy
+												i( 90883), -- The Pigskin
+												i( 54438), -- Tiny Blue Ragdoll
+												i( 54437), -- Tiny Green Ragdoll
+												i( 44606), -- Toy Train Set
+												i( 93625), -- Miniature Winter Veil Tree
+												i( 70923), -- Gaudy Winter Veil Sweater
 											},
 											["description"] = "This particular box was offered in 2013.",
 										}),
 										i(149503, { -- Stolen Gift
 											["groups"] = {
-												dr(0.1, i(118572)), -- Illusion: Flame of Ragnaros
+												dr(0.1, i( 118572)), -- Illusion: Flame of Ragnaros
 												dr(1.14, i(128649)), -- Illusion: Winter's Grasp
-												dr(0.08, i(54436)), -- Blue Clockwork Rocket Bot
-												dr(2.0, i(34425)), -- Clockwork Rocket Bot Toy
-												dr(2.0, i(73797)), -- Lump of Coal
-												dr(3.0, i(104317)), -- Rotten Helper Box
-												dr(0.1, i(54343)), -- Blue Crashin' Thrashin' Racer Controller
-												dr(0.8, i(108632)), -- Crashin' Thrashin' Flamer Controller
-												dr(0.8, i(104318)), -- Crashin' Thrashin' Flyer Controller
-												dr(2.0, i(37710)), -- Crashin' Thrashin' Racer Controller Toy
-												dr(1.5, i(116763)), -- Crashin' Thrashin' Shredder Controller
-												dr(1.7, i(116692)), -- Fuzzy Green Lounge Cushion
-												dr(3.0, i(90888)), -- Foot Ball
-												dr(2.0, i(46709)), -- MiniZep Controller Toy
-												dr(1.6, i(116689)), -- Pineapple Lounge Cushion
-												dr(0.7, i(128776)), -- Red Wooden Sled
-												dr(1.5, i(116690)), -- Safarai Lounge Cushion
+												dr(0.08, i( 54436)), -- Blue Clockwork Rocket Bot
+												dr(2.0, i(  34425)), -- Clockwork Rocket Bot Toy
+												dr(2.0, i(  73797)), -- Lump of Coal
+												dr(3.0, i( 104317)), -- Rotten Helper Box
+												dr(0.1, i(  54343)), -- Blue Crashin' Thrashin' Racer Controller
+												dr(0.8, i( 108632)), -- Crashin' Thrashin' Flamer Controller
+												dr(0.8, i( 104318)), -- Crashin' Thrashin' Flyer Controller
+												dr(2.0, i(  37710)), -- Crashin' Thrashin' Racer Controller Toy
+												dr(1.5, i( 116763)), -- Crashin' Thrashin' Shredder Controller
+												dr(1.7, i( 116692)), -- Fuzzy Green Lounge Cushion
+												dr(3.0, i(  90888)), -- Foot Ball
+												dr(2.0, i(  46709)), -- MiniZep Controller Toy
+												dr(1.6, i( 116689)), -- Pineapple Lounge Cushion
+												dr(0.7, i( 128776)), -- Red Wooden Sled
+												dr(1.5, i( 116690)), -- Safarai Lounge Cushion
 												dr(19.0, i(116456)), -- Scroll of Storytelling
-												dr(2.0, i(90883)), -- The Pigskin
-												dr(4.0, i(54438)), -- Tiny Blue Ragdoll
-												dr(4.0, i(54437)), -- Tiny Green Ragdoll
-												dr(0.11, i(44606)), -- Toy Train Set
-												dr(0.16, i(45057)), -- Wind-Up Train Wrecker
-												dr(1.7, i(116691)), -- Zhevra Lounge Cusion
-												dr(0.6, i(117371)), -- Miniature Winter Veil Tree
-												dr(0.4, i(143898)), -- Miniature Winter Veil Tree
-												dr(3.0, i(70923)), -- Gaudy Winter Veil Sweater
+												dr(2.0, i(  90883)), -- The Pigskin
+												dr(4.0, i(  54438)), -- Tiny Blue Ragdoll
+												dr(4.0, i(  54437)), -- Tiny Green Ragdoll
+												dr(0.11, i( 44606)), -- Toy Train Set
+												dr(0.16, i( 45057)), -- Wind-Up Train Wrecker
+												dr(1.7, i( 116691)), -- Zhevra Lounge Cusion
+												dr(0.6, i( 117371)), -- Miniature Winter Veil Tree
+												dr(0.4, i( 143898)), -- Miniature Winter Veil Tree
+												dr(3.0, i(  70923)), -- Gaudy Winter Veil Sweater
 											},
 											["description"] = "This gift is for characters below level 100.  Not all of the contents are 100% sure yet"
 										}),
 										i(116762, { -- Stolen Present
 											["groups"] = {
-												dr(0.1, i(118572)), -- Illusion: Flame of Ragnaros
+												dr(0.1, i( 118572)), -- Illusion: Flame of Ragnaros
 												dr(1.14, i(128649)), -- Illusion: Winter's Grasp
-												dr(0.08, i(54436)), -- Blue Clockwork Rocket Bot
-												dr(2.0, i(34425)), -- Clockwork Rocket Bot Toy
-												dr(2.0, i(73797)), -- Lump of Coal
-												dr(3.0, i(104317)), -- Rotten Helper Box
-												dr(0.1, i(54343)), -- Blue Crashin' Thrashin' Racer Controller
-												dr(0.8, i(108632)), -- Crashin' Thrashin' Flamer Controller
-												dr(0.8, i(104318)), -- Crashin' Thrashin' Flyer Controller
-												dr(2.0, i(37710)), -- Crashin' Thrashin' Racer Controller Toy
-												dr(1.5, i(116763)), -- Crashin' Thrashin' Shredder Controller
-												dr(1.7, i(116692)), -- Fuzzy Green Lounge Cushion
-												dr(3.0, i(90888)), -- Foot Ball
-												dr(2.0, i(46709)), -- MiniZep Controller Toy
-												dr(1.6, i(116689)), -- Pineapple Lounge Cushion
-												dr(0.7, i(128776)), -- Red Wooden Sled
-												dr(1.5, i(116690)), -- Safarai Lounge Cushion
+												dr(0.08, i( 54436)), -- Blue Clockwork Rocket Bot
+												dr(2.0, i(  34425)), -- Clockwork Rocket Bot Toy
+												dr(2.0, i(  73797)), -- Lump of Coal
+												dr(3.0, i( 104317)), -- Rotten Helper Box
+												dr(0.1, i(  54343)), -- Blue Crashin' Thrashin' Racer Controller
+												dr(0.8, i( 108632)), -- Crashin' Thrashin' Flamer Controller
+												dr(0.8, i( 104318)), -- Crashin' Thrashin' Flyer Controller
+												dr(2.0, i(  37710)), -- Crashin' Thrashin' Racer Controller Toy
+												dr(1.5, i( 116763)), -- Crashin' Thrashin' Shredder Controller
+												dr(1.7, i( 116692)), -- Fuzzy Green Lounge Cushion
+												dr(3.0, i(  90888)), -- Foot Ball
+												dr(2.0, i(  46709)), -- MiniZep Controller Toy
+												dr(1.6, i( 116689)), -- Pineapple Lounge Cushion
+												dr(0.7, i( 128776)), -- Red Wooden Sled
+												dr(1.5, i( 116690)), -- Safarai Lounge Cushion
 												dr(19.0, i(116456)), -- Scroll of Storytelling
-												dr(2.0, i(90883)), -- The Pigskin
-												dr(4.0, i(54438)), -- Tiny Blue Ragdoll
-												dr(4.0, i(54437)), -- Tiny Green Ragdoll
-												dr(0.11, i(44606)), -- Toy Train Set
-												dr(0.16, i(45057)), -- Wind-Up Train Wrecker
-												dr(1.7, i(116691)), -- Zhevra Lounge Cusion
-												dr(0.6, i(117371)), -- Miniature Winter Veil Tree
-												dr(0.4, i(143898)), -- Miniature Winter Veil Tree
-												dr(3.0, i(70923)), -- Gaudy Winter Veil Sweater
+												dr(2.0, i(  90883)), -- The Pigskin
+												dr(4.0, i(  54438)), -- Tiny Blue Ragdoll
+												dr(4.0, i(  54437)), -- Tiny Green Ragdoll
+												dr(0.11, i( 44606)), -- Toy Train Set
+												dr(0.16, i( 45057)), -- Wind-Up Train Wrecker
+												dr(1.7, i( 116691)), -- Zhevra Lounge Cusion
+												dr(0.6, i( 117371)), -- Miniature Winter Veil Tree
+												dr(0.4, i( 143898)), -- Miniature Winter Veil Tree
+												dr(3.0, i(  70923)), -- Gaudy Winter Veil Sweater
 											},
 										}),
 										nld({     	-- Legacy
@@ -485,222 +548,192 @@ _.Zones =
 					p(404), 	-- Long tailed Mole
 				}),
 				n(-38, { 	-- Profession
+					prof(185, 2550, {	-- Cooking
+						qg(5159, qa(29352)),	-- A Fowl Shortage
+						qg(5159, qa(29351)),	-- A Round for the Guards
+						qg(5159, qa(29355)),	-- Can't Get Enough Spice Bread
+						qg(5159, qa(29356)),	-- I Need to Cask a Favor
+						qg(5159, qa(29353)),	-- Keepin' the Haggis Flowin'
+					}),
 					prof(356, 7620, { -- Fishing
 						["groups"] = {
+--							Add quest subsection?  Not sure what would be more ~aesthetically appealing~						
+							qg(5161, qa(29342)),	-- Cold Water Fishing
+							qg(5161, qa(29344)),	-- Fish fer Squrky
+							qg(5161, qa(29347)),	-- Live Bait
+							qg(5161, qa(29343)),	-- One fer the Ages
+							qg(5161, qa(29350)),	-- The Gnomish Bait-o-Matic
 							a(i(122204)),	-- Music Roll: Cold Mountain
 							i(34484),		-- Old Ironjaw
 						},
-						["description"] = "Go fishing for a bit in the Folorn Cavern.",
+						["description"] = "Go fishing for a bit in the Forlorn Cavern.",
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[
-					qg(, q(  8744)),	-- A Carefully Wrapped Present
-					qg(, q( 24635)),	-- A Cloudlet of Classy Cologne
-					qg(, qa(38396)),	-- A Curious Oddity
-					qg(, q(  8803)),	-- A Festive Gift
-					qg(, qa(29352)),	-- A Fowl Shortage
-					qg(, q(  8768)),	-- A Gaily Wrapped Present
-					qg(, q(  8788)),	-- A Gently Shaken Gift
-					qg(, q(  8767)),	-- A Gently Shaken Gift
-					qg(, q( 39658)),	-- A Gently Shaken Gift
-					qg(, q( 43364)),	-- A Gently Shaken Gift
-					qg(, qa(24609)),	-- A Gift for a Lord of Ironforge
---]]					
+---					qg( 6294, qa(38396)),	-- A Curious Oddity			
 					qg( 9616, qa( 4513, { -- A Little Slime Goes a Long Way
-						i(12050),
-						i(12051),
+						i(12050),	-- Hazecover Boots
+						i(12051),	-- Brazen Gauntlets
+					})),					
+--					qg( 9616, qa( 4512)),	-- A Little Slime Goes a Long Way
+					qg(16817, qa( 9365, {	-- A Thief's Reward
+						i(23323),	-- Crown of the Fire Festival (reportedly transmoggable since 6.2.1)
 					})),
---[[					
-					qg(, qa( 4512)),	-- A Little Slime Goes a Long Way
-					qg(, q( 24629)),	-- A Perfect Puff of Perfume
-					qg(, qa(29351)),	-- A Round for the Guards
-					qg(, qa(29074)),	-- A Season for Celebration
-					qg(, qa( 7045)),	-- A Smokywood Pastures' Thank You!
-					qg(, qa( 9365)),	-- A Thief's Reward
-					qg(, q(  8769)),	-- A Ticking Present
-					qg(, q( 39659)),	-- A Winter Veil Gift
-					qg(, q( 43363)),	-- A Winter Veil Gift
-					qg(, q( 36617)),	-- A Winter Veil Gift
-					qg(, qa(11528)),	-- A Winter Veil Gift
-					qg(, q( 33252)),	-- A Winter Veil Gift
-					qg(, q( 32106)),	-- A Winter Veil Gift
-					qg(, q( 28878)),	-- A Winter Veil Gift
-					qg(, q( 29385)),	-- A Winter Veil Gift
+--[[
 					qp356(qg( 5150, qa( 6625))),	-- Alliance Trauma
 					qg(23127, qa(27270, {	-- An Audience with the Farseer
 						["groups"] = {
 						},
-						["classes"] = {7},
+						["classes"] = {7}, -- Shaman
 					})),
-					qg(, q( 24636)),	-- Bonbon Blitz
-					qg(, qa(12420)),	-- Brew of the Month Club
-					qg(, qa(11441)),	-- Brewfest!
-					qg(, q(  8866)),	-- Bronzebeard the Elder
-					qg(, qa(29355)),	-- Can't Get Enough Spice Bread
-					qa(12335),	-- Candy Bucket
-					qg(, qa( 8353)),	-- Chicken Clucking for a Mint
-					qg(, qa(29342)),	-- Cold Water Fishing
-					qg(, qa(38394)),	-- Completionism
-					qg(, qa(11356)),	-- Costumed Orphan Matron
-					qg(, qa( 8229)),	-- Could I get a Fishing Flier?
-					qg(, qa(26112)),	-- Demanding Answers
-					qg(, qa(27272)),	-- Demisette Sends Word
-					qg(, qa( 2039)),	-- Find Bingles
-					qg(, qa(29344)),	-- Fish fer Squrky
-					qg(, qa( 1618)),	-- Gearing Redridge
-					qg(, qa( 2948)),	-- Gnome Improvement
-					qg(, q( 29477)),	-- Gnomish Engineering
-					qg(, q( 29475)),	-- Goblin Engineering
-					qg(, qa( 7022)),	-- Greatfather Winter is Here!
-					qg(, qa( 7023)),	-- Greatfather Winter is Here!
-					qg(, qa( 6388)),	-- Gryth Thurden
-					qa(29391),	-- Guardians of Hyjal: Call of the Ancients
-					qa(29387),	-- Guardians of Hyjal: Firelands Invasion!
-					qa(28573),	-- Hero's Call: Arathi Highlands!
-					qa(28579),	-- Hero's Call: Badlands!
-					qa(28673),	-- Hero's Call: Blasted Lands!
-					qa(28666),	-- Hero's Call: Burning Steppes!
-					qa(27727),	-- Hero's Call: Deepholm!
-					qa(28578),	-- Hero's Call: Eastern Plaguelands!
-					qa(28567),	-- Hero's Call: Loch Modan!
-					qa(27726),	-- Hero's Call: Mount Hyjal!
-					qa(28709),	-- Hero's Call: Northrend!
-					qa(28708),	-- Hero's Call: Outland!
-					qa(28582),	-- Hero's Call: Searing Gorge!
-					qa(28675),	-- Hero's Call: Swamp of Sorrows!
-					qa(26542),	-- Hero's Call: The Hinterlands!
-					qa(28716),	-- Hero's Call: Twilight Highlands!
-					qa(28558),	-- Hero's Call: Uldum!
-					qa(27724),	-- Hero's Call: Vashj'ir!
-					qa(28576),	-- Hero's Call: Western Plaguelands!
-					qa(28565),	-- Hero's Call: Wetlands!
+					qg( 6294, qa(38394)),	-- Completionism
+					qg(15119, qa( 8229)),	-- Could I get a Fishing Flier?
+					qg(41853, qa(26112)),	-- Demanding Answers
+					qg( 5173, qa(27272, {	-- Demisette Sends Word
+						["groups"] = {
+						},
+						["classes"] = {9}, -- Warlock
+					})),
+					qg( 6569, qa( 2039)),	-- Find Bingles
+					qg( 6031, qa( 1618)),	-- Gearing Redridge
+					qdg(qg(6826, qa( 2948))),	-- Gnome Improvement
+					qp202(qg(5174, q 29477))),	-- Gnomish Engineering
+					qp202(qg(5174, q 29475))),	-- Goblin Engineering
+					qg( 4256, qa( 6388, {	-- Gryth Thurden
+						["groups"] = {
+						},
+						["races"] = {3,7}, -- Dwarf, Gnome
+					})),
+					o(207320, {	-- Hero's Call Board
+						qa(29391),	-- Guardians of Hyjal: Call of the Ancients
+						qa(29387),	-- Guardians of Hyjal: Firelands Invasion!
+						qa(28573),	-- Hero's Call: Arathi Highlands!
+						qa(28579),	-- Hero's Call: Badlands!
+						qa(28673),	-- Hero's Call: Blasted Lands!
+						qa(28666),	-- Hero's Call: Burning Steppes!
+						qa(27727),	-- Hero's Call: Deepholm!
+						qa(28578),	-- Hero's Call: Eastern Plaguelands!
+						qa(28567),	-- Hero's Call: Loch Modan!
+						qa(27726),	-- Hero's Call: Mount Hyjal!
+						qa(28709),	-- Hero's Call: Northrend!
+						qa(28708),	-- Hero's Call: Outland!
+						qa(28582),	-- Hero's Call: Searing Gorge!
+						qa(28675),	-- Hero's Call: Swamp of Sorrows!
+						qa(26542),	-- Hero's Call: The Hinterlands!
+						qa(28716),	-- Hero's Call: Twilight Highlands!
+						qa(28558),	-- Hero's Call: Uldum!
+						qa(27724),	-- Hero's Call: Vashj'ir!
+						qa(28576),	-- Hero's Call: Western Plaguelands!
+						qa(28565),	-- Hero's Call: Wetlands!
+						qa(29156),	-- The Troll Incursion
+					}),
 					qp129(qg( 5161, qa( 6609))),	-- I Got Nothin' Left!
-					qg(, qa( 6612)),	-- I Know A Guy...
-					qg(, qa(29356)),	-- I Need to Cask a Favor
-					qg(, qa(11964)),	-- Incense for the Summer Scorchlings
-					qg(, qa( 8355)),	-- Incoming Gumdrop
-					qg(, q( 12012)),	-- Inform the Elder
-					qg(, qa(29092)),	-- Inform the Elder
+					qg( 5159, qa( 6612)),	-- I Know A Guy...
 					qg( 5146, qa(27271, {	-- Journey to the Wizard's Sanctum
 						["groups"] = {
 						},
-						["classes"] = {8},
+						["classes"] = {8}, -- Mage
 					})),
-					qg(, qa(29353)),	-- Keepin' the Haggis Flowin'
-					qg(, qa(29347)),	-- Live Bait
 					qg( 5147, qa(27265, {	-- Lord Grayson Shadowbreaker
 						["groups"] = {
 						},
-						["classes"] = {2},
+						["classes"] = {2}, -- Paladin
 					})),
-					qg(, q(  8867)),	-- Lunar Fireworks
 					qg( 5165, qa(27267, {	-- Make Contact with SI:7
 						["groups"] = {
 						},
-						["classes"] = {4},
+						["classes"] = {4}, -- Rogue
 					})),
-					qg(, qa(27268)),	-- Make Haste to the Cathedral
-					qg(, qa(28259)),	-- Meet with Demisette Cloyce
+					qg(11406, qa(27268, {	-- Make Haste to the Cathedral
+						["groups"] = {
+						},
+						["classes"] = {5}, -- Priest
+					})),
+					qg( 5173, qa(28259, {	-- Meet with Demisette Cloyce
+						["groups"] = {
+						},
+						["classes"] = {9}, -- Warlock
+					})),
 					qg(23127, qa(28287, {	-- Meet with Farseer Umbrua
 						["groups"] = {
 						},
-						["classes"] = {7},
+						["classes"] = {7}, -- Shaman
 					})),
 					qg(11406, qa(28285, {	-- Meet with High Priestess Laurena
 						["groups"] = {
 						},
-						["classes"] = {5},
+						["classes"] = {5}, -- Priest
 					})),
 					qg( 5147, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
 						["groups"] = {
 						},
-						["classes"] = {2},
+						["classes"] = {2}, -- Paladin
 					})),
 					qg( 5165, qa(28262, {	-- Meet with Lord Tony Romano
 						["groups"] = {
 						},
-						["classes"] = {4},
+						["classes"] = {4}, -- Rogue
 					})),
 					qg( 5146, qa(28263, {	-- Meet with Maginor Dumas
 						["groups"] = {
 						},
-						["classes"] = {8},
+						["classes"] = {8}, -- Mage
 					})),
 					qg( 5115, qa(28260, {	-- Meet with Wulf Hansreim
 						["groups"] = {
 						},
-						["classes"] = {3},
+						["classes"] = {3}, -- Hunter
 					})),
-					qg(, qa(11924)),	-- More Torch Catching
-					qg(, qa(11921)),	-- More Torch Tossing
-					qg(, qa(38344)),	-- Mystery Notebook
-					qg(, qa(38345)),	-- Numismatics
-					qg(, qa(29343)),	-- One fer the Ages
-					qg(, qa(14022)),	-- Pilgrim's Bounty
-					qg(, qa(11882)),	-- Playing with Fire
-					qg(, qa( 2963)),	-- Portents of Uldum					
-					qg(, qa(  302)),	-- Powder to Ironband
+					qg( 6294, qa(38345)),	-- Numismatics
+--					qa( 2963),	-- Portents of Uldum (LEGACY)
+					qg( 1356, qa(  302)),	-- Powder to Ironband
 					qg( 5637, qa( 1453)),	-- Reclaimers' Business in Desolace
-					qg(, qa(26131)),	-- Reinforcements for Loch Modan
-					qg(, qa(  301)),	-- Report to Ironforge
-					qg(, qa( 2947)),	-- Return of the Ring
-					qg(, qa( 6392)),	-- Return to Gremlock
-					qg(, qa( 6391)),	-- Ride to Ironforge
+					qg( 1959, qa(26131)),	-- Reinforcements for Loch Modan
+					qg( 1573, qa( 6392, {	-- Return to Gremlock
+						["groups"] = {
+						},
+						["races"] = {3,7}, -- Dwarf, Gnome
+					})),
 --]]					
 					qg(42129, qa(26118, { -- Seize the Ambassador
-						i( 57583),
-						i( 57584),
-						i( 57585),
-						i(133692),
+						i( 57583),	-- The Slaghammer
+						i( 57584),	-- Battleaxe of the Sober Dwarf
+						i( 57585),	-- Ambassador's Duplicitous Dagger
+						i(133692),	-- Ambassador's Deceitful Dagger
 					})),
---[[					
-					qg(, q( 11954)),	-- Striking Back
-					qg(, q( 11917)),	-- Striking Back
-					qg(, q( 11947)),	-- Striking Back
-					qg(, q( 11948)),	-- Striking Back
-					qg(, q( 11952)),	-- Striking Back
-					qg(, q( 11953)),	-- Striking Back
-					qg(, qa( 1578)),	-- Supplying the Front
-					qg(, qa(27274)),	-- The Chief Surgeon
-					qg(, qa( 7905)),	-- The Darkmoon Faire
-					qg(, qa( 7063)),	-- The Feast of Winter Veil
-					qg(, qa(29350)),	-- The Gnomish Bait-o-Matic
-					qg(, qh( 8799)),	-- The Hero of the Day
-					qg(, qa( 8763)),	-- The Hero of the Day
-					qg(, qa(39956)),	-- The Legacy Passed On
-					qg(, qh( 8873)),	-- The Lunar Festival
-					qg(, qa( 8872)),	-- The Lunar Festival
-					qg(, qa( 8871)),	-- The Lunar Festival
-					qg(, qa( 8870)),	-- The Lunar Festival
-					qg(, qh( 8875)),	-- The Lunar Festival
-					qg(, qh( 8874)),	-- The Lunar Festival
-					qg(, qa(11970)),	-- The Master of Summer Lore
-					qg(, qa(39955)),	-- The Plot Thickens
-					qg(, qa( 7062)),	-- The Reason for the Season
-					qg(, qa(  291)),	-- The Reports
-					qg(, qa(38402)),	-- The Same, But Different
-					qg(, qa( 1789)),	-- The Symbol of Life
+					qp164(qg( 6031, qa( 1578, {	-- Supplying the Front
+						i(33792, {	-- Plans: Heavy Copper Longsword
+							i(33791),	-- Heavy Copper Longsword
+						}),
+					}))),
+--[[
+					qg(11406, qa(27274, {	-- The Chief Surgeon
+						["groups"] = {
+						},
+						["races"] = {7}, -- Gnome
+						["classes"] = {5}, -- Priest
+					})),
+--					qh( 8799),	-- The Hero of the Day (LEGACY)
+					qg(13433, qa( 8763)),	-- The Hero of the Day
+					qp773(qg(97762, qa(39956))),	-- The Legacy Passed On (teaches spell 193542 Recipe: Steamy Romance Novel)
+					qg(92195, qa(39955)),	-- The Plot Thickens
+					qg( 6294, qa(38402)),	-- The Same, But Different
+					qg( 6179, qa( 1789, {	-- The Symbol of Life
+						["groups"] = {
+						},
+						["classes"] = {2}, -- Paladin
+					})),
 					qg(11406, qa(27269, {	-- The Temple of the Moon
 						["groups"] = {
 						},
-						["races"] = {4},
-						["classes"] = {5},
+						["races"] = {4}, -- Night Elf
+						["classes"] = {5}, -- Priest
 					})),
-					qg(, qa(29156)),	-- The Troll Incursion
-					qg(, qa(11657)),	-- Torch Catching
-					qg(, qa(11731)),	-- Torch Tossing
-					qg(, qa( 7025)),	-- Treats for Greatfather Winter
-					qg(, qa(24804)),	-- Uncommon Scents
-					qg(, q( 11886)),	-- Unusual Activity
-					qg(, q(  8883)),	-- Valadar Starsong
-					qg(, qa( 8827)),	-- Winter's Presents
 					qg( 5115, qa(27266, {	-- Wulf Calls
 						["groups"] = {
 						},
-						["classes"] = {3},
+						["classes"] = {3}, -- Hunter
 					})),
-					qg(, qa( 7043)),	-- You're a Mean One...
 --]]					
 				}),
 				n(-16, { 	-- Rares
