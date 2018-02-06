@@ -6,24 +6,24 @@ _.WorldDrops =
 	{
 		["groups"] = {	-- Classic
 			n(-1000, { -- Sets
-				i(6527),
-				i(3292),
-				i(3291),
-				i(3282),
-				i(3283),
-				i(120950),
-				i(14090),
-				i(14091),
-				i(14094),
-				i(2962),
-				i(2961),
-				i(9763),
-				i(9765),
-				i(15479),
-				i(15477),
-				i(6267),
-				i(6512),
-				i(6266),
+				i(6527),	-- Ancestral Robe
+				i(3292),	-- Ancestral Tunic
+				i(3291),	-- Ancestral Woollies
+				i(3282),	-- Battle Chain Pants
+				i(3283),	-- Battle Chain Tunic
+				i(120950),	-- Battle Chain Vest
+				i(14090),	-- Beaded Britches
+				i(14091),	-- Beaded Robe
+				i(14094),	-- Beaded Wraps
+				i(2962),	-- Burnt Leather Breeches
+				i(2961),	-- Burnt Leather Vest
+				i(9763),	-- Cadet Leggings
+				i(9765),	-- Cadet Vest
+				i(15479),	-- Charger's Armor
+				i(15477),	-- Charger's Pants
+				i(6267),	-- Disciple's Pants
+				i(6512),	-- Disciple's Robe
+				i(6266),	-- Disciple's Vest
 				i(68754),
 				i(68749),
 				i(68755),
@@ -64,78 +64,78 @@ _.WorldDrops =
 				i(15487),
 				i(2966),
 				i(2965),
-				i(14114),
-				i(14117),
-				i(14119),
-				i(14120),
-				i(14113),
-				i(14121),
-				i(9776),
-				i(9777),
-				i(9775),
-				i(9780),
-				i(9782),
-				i(9781),
-				i(3307),
-				i(3308),
-				i(6531),
-				i(3310),
-				i(3309),
-				i(6558),
-				i(6557),
-				i(6556),
-				i(6554),
-				i(6553),
-				i(6552),
+				i(14114),	-- Aboriginal Footwraps
+				i(14117),	-- Aboriginal Gloves
+				i(14119),	-- Aboriginal Loincloth
+				i(14120),	-- Aboriginal Robe
+				i(14113),	-- Aboriginal Sash
+				i(14121),	-- Aboriginal Vest
+				i(9776),	-- Bandit Boots
+				i(9777),	-- Bandit Bracers
+				i(9775),	-- Bandit Cinch
+				i(9780),	-- Bandit Gloves
+				i(9782),	-- Bandit Jerkin
+				i(9781),	-- Bandit Pants
+				i(3307),	-- Barbaric Cloth Boots
+				i(3308),	-- Barbaric Cloth Gloves
+				i(6531),	-- Barbaric Cloth Robe
+				i(3310),	-- Barbaric Cloth Vest
+				i(3309),	-- Barbaric Loincloth
+				i(6558),	-- Bard's Belt
+				i(6557),	-- Bard's Boots
+				i(6556),	-- Bard's Bracers
+				i(6554),	-- Bard's Gloves
+				i(6553),	-- Bard's Trousers
+				i(6552),	-- Bard's Tunic
 				un(7, i(1446)), -- Blackrock Boots
 				un(7, i(1448)), -- Blackrock Gauntlets
-				i(15491),
-				i(15493),
-				i(15489),
-				i(15492),
-				i(15488),
-				i(15495),
-				i(3302),
+				i(15491),	-- Bloodspattered Gloves
+				i(15493),	-- Bloodspattered Loincloth
+				i(15489),	-- Bloodspattered Sabatons
+				i(15492),	-- Bloodspattered Sash
+				i(15488),	-- Bloodspattered Surcoat
+				i(15495),	-- Bloodspattered Wristbands
+				i(3302),	-- Brackwater Boots
 				un(7, i(3305)), -- Brackwater Leggings
-				i(120954),
-				i(3306),
-				i(6608),
-				i(4708),
-				i(3065),
-				i(3647),
-				i(3066),
-				i(4661),
-				i(3067),
-				i(3069),
-				i(14573),
-				i(14567),
-				i(14569),
-				i(14570),
-				i(14568),
-				i(14574),
-				i(14572),
-				i(14174),
-				i(14166),
-				i(14173),
-				i(14168),
-				i(14171),
-				i(14172),
-				i(14175),
-				i(2991),
-				i(3211),
-				i(4697),
-				i(2992),
-				i(2990),
-				i(2989),
-				i(3314),
-				i(3313),
-				i(3315),
-				i(6573),
-				i(6574),
-				i(6577),
-				i(6576),
-				i(6578),
-				i(6580),
+				i(120954),	-- Brackwater Legguards
+				i(3306),	-- Brackwater Vest
+				i(6608),	-- Bright Armor
+				i(4708),	-- Bright Belt
+				i(3065),	-- Bright Boots
+				i(3647),	-- Bright Bracers
+				i(3066),	-- Bright Gloves
+				i(4661),	-- Bright Mantle
+				i(3067),	-- Bright Pants
+				i(3069),	-- Bright Robe
+				i(14573),	-- Bristlebark Amice
+				i(14567),	-- Bristlebark Belt
+				i(14569),	-- Bristlebark Bindings
+				i(14570),	-- Bristlebark Blouse
+				i(14568),	-- Bristlebark Boots
+				i(14574),	-- Bristlebark Britches
+				i(14572),	-- Bristlebark Gloves
+				i(14174),	-- Buccaneer's Boots
+				i(14166),	-- Buccaneer's Bracers
+				i(14173),	-- Buccaneer's Cord
+				i(14168),	-- Buccaneer's Gloves
+				i(14171),	-- Buccaneer's Pants
+				i(14172),	-- Buccaneer's Robes
+				i(14175),	-- Buccaneer's Vest
+				i(2991),	-- Burnished Boots
+				i(3211),	-- Burnished Bracers
+				i(4697),	-- Burnished Girdle
+				i(2992),	-- Burnished Gloves
+				i(2990),	-- Burnished Leggings
+				i(2989),	-- Burnished Tunic
+				i(3314),	-- Ceremonial Leather Gloves
+				i(3313),	-- Ceremonial Leather Harness
+				i(3315),	-- Ceremonial Leather Loincloth
+				i(6573),	-- Defender Boots
+				i(6574),	-- Defender Bracers
+				i(6577),	-- Defender Gauntlets
+				i(6576),	-- Defender Girdle
+				i(6578),	-- Defender Leggings
+				i(6580),	-- Defender Tunic
 				i(15306),
 				i(15308),
 				i(15310),
@@ -307,87 +307,87 @@ _.WorldDrops =
 				i(15338),
 				i(15337),
 				i(15331),
-				i(9854),
-				i(9855),
-				i(9856),
-				i(9857),
-				i(9859),
-				i(9861),
-				i(9862),
-				i(9863),
-				i(10408),
-				i(10409),
-				i(9836),
-				i(9837),
-				i(9839),
-				i(9840),
-				i(9841),
-				i(9842),
-				i(6590),
-				i(6591),
-				i(6592),
-				i(6594),
-				i(6595),
-				i(6596),
-				i(6597),
-				i(9844),
-				i(9845),
-				i(9846),
-				i(9848),
-				i(9849),
-				i(9850),
-				i(9851),
-				i(9852),
-				i(9853),
-				i(15130),
-				i(15131),
-				i(15132),
-				i(15134),
-				i(15136),
-				i(15137),
-				i(15139),
-				i(15140),
-				i(6600),
-				i(6601),
-				i(6602),
-				i(6603),
-				i(6605),
-				i(6607),
-				i(7415),
-				i(14578),
-				i(14579),
-				i(14580),
-				i(14581),
-				i(14583),
-				i(14584),
-				i(14585),
-				i(14587),
-				i(10289),
-				i(10404),
-				i(9819),
-				i(9820),
-				i(9821),
-				i(9823),
-				i(9824),
-				i(9825),
-				i(9826),
-				i(7353),
-				i(7354),
-				i(7355),
-				i(7357),
-				i(7366),
-				i(7367),
-				i(7368),
-				i(7369),
-				i(7370),
-				i(4048),
-				i(4049),
-				i(4050),
-				i(4051),
-				i(6396),
-				i(6397),
-				i(6398),
-				i(6399),
+				i(9854),	-- Archer's Jerkin
+				i(9855),	-- Archer's Belt
+				i(9856),	-- Archer's Boots
+				i(9857),	-- Archer's Bracers
+				i(9859),	-- Archer's Cap
+				i(9861),	-- Archer's Gloves
+				i(9862),	-- Archer's Trousers
+				i(9863),	-- Archer's Shoulderpads
+				i(10408),	-- Banded Helm
+				i(10409),	-- Banded Boots
+				i(9836),	-- Banded Armor
+				i(9837),	-- Banded Bracers
+				i(9839),	-- Banded Gauntlets
+				i(9840),	-- Banded Girdle
+				i(9841),	-- Banded Leggings
+				i(9842),	-- Banded Pauldrons
+				i(6590),	-- Battleforge Boots
+				i(6591),	-- Battleforge Wristguards
+				i(6592),	-- Battleforge Armor
+				i(6594),	-- Battleforge Girdle
+				i(6595),	-- Battleforge Gauntlets
+				i(6596),	-- Battleforge Legguards
+				i(6597),	-- Battleforge Shoulderguards
+				i(9844),	-- Conjurer's Vest
+				i(9845),	-- Conjurer's Shoes
+				i(9846),	-- Conjurer's Bracers
+				i(9848),	-- Conjurer's Gloves
+				i(9849),	-- Conjurer's Hood
+				i(9850),	-- Conjurer's Mantle
+				i(9851),	-- Conjurer's Breeches
+				i(9852),	-- Conjurer's Robe
+				i(9853),	-- Conjurer's Cinch
+				i(15130),	-- Cutthroat's Vest
+				i(15131),	-- Cutthroat's Boots
+				i(15132),	-- Cutthroat's Armguards
+				i(15134),	-- Cutthroat's Hat
+				i(15136),	-- Cutthroat's Belt
+				i(15137),	-- Cutthroat's Mitts
+				i(15139),	-- Cutthroat's Pants
+				i(15140),	-- Cutthroat's Mantle
+				i(6600),	-- Dervish Belt
+				i(6601),	-- Dervish Boots
+				i(6602),	-- Dervish Bracers
+				i(6603),	-- Dervish Tunic
+				i(6605),	-- Dervish Gloves
+				i(6607),	-- Dervish Leggings
+				i(7415),	-- Dervish Spaulders
+				i(14578),	-- Dokebi Cord
+				i(14579),	-- Dokebi Boots
+				i(14580),	-- Dokebi Bracers
+				i(14581),	-- Dokebi Chestguard
+				i(14583),	-- Dokebi Gloves
+				i(14584),	-- Dokebi Hat
+				i(14585),	-- Dokebi Leggings
+				i(14587),	-- Dokebi Mantle
+				i(10289),	-- Durable Hat
+				i(10404),	-- Durable Belt
+				i(9819),	-- Durable Tunic
+				i(9820),	-- Durable Boots
+				i(9821),	-- Durable Bracers
+				i(9823),	-- Durable Gloves
+				i(9824),	-- Durable Shoulders
+				i(9825),	-- Durable Pants
+				i(9826),	-- Durable Robe
+				i(7353),	-- Elder's Padded Armor
+				i(7354),	-- Elder's Boots
+				i(7355),	-- Elder's Bracers
+				i(7357),	-- Elder's Hat
+				i(7366),	-- Elder's Gloves
+				i(7367),	-- Elder's Mantle
+				i(7368),	-- Elder's Pants
+				i(7369),	-- Elder's Robe
+				i(7370),	-- Elder's Sash
+				i(4048),	-- Emblazoned Hat
+				i(4049),	-- Emblazoned Bracers
+				i(4050),	-- Emblazoned Leggings
+				i(4051),	-- Emblazoned Boots
+				i(6396),	-- Emblazoned Chestpiece
+				i(6397),	-- Emblazoned Gloves
+				i(6398),	-- Emblazoned Belt
+				i(6399),	-- Emblazoned Shoulders
 				i(14759),
 				i(14760),
 				i(14761),
@@ -632,91 +632,91 @@ _.WorldDrops =
 				i(15539),
 				i(15540),
 				i(15541),
-				i(15542),			
-				i(15599),
-				i(15600),
-				i(15601),
-				i(15602),
-				i(15605),
-				i(15606),
-				i(15607),
-				i(15608),
-				i(4041),
-				i(4042),
-				i(4043),
-				i(4044),
-				i(4729),
-				i(6415),
-				i(6416),
-				i(6418),
-				i(7112),
-				i(4080),
-				i(4082),
-				i(4083),
-				i(4084),
-				i(4733),
-				i(6423),
-				i(6425),
-				i(6426),
-				i(14258),
-				i(14259),
-				i(14260),
-				i(14262),
-				i(14263),
-				i(14264),
-				i(14265),
-				i(14266),
-				i(14267),
-				i(15609),
-				i(15610),
-				i(15612),
-				i(15613),
-				i(15614),
-				i(15615),
-				i(15616),
-				i(15617),
-				i(9926),
-				i(9927),
-				i(9928),
-				i(9930),
-				i(9931),
-				i(9932),
-				i(9933),
-				i(9934),
-				i(7486),
-				i(7487),
-				i(7488),
-				i(7489),
-				i(7490),
-				i(7491),
-				i(7493),
-				i(7494),
-				i(1988),
-				i(4078),
-				i(4079),
-				i(4725),
-				i(4727),
-				i(6411),
-				i(6412),
-				i(6413),
-				i(14237),
-				i(14238),
-				i(14240),
-				i(14241),
-				i(14242),
-				i(14243),
-				i(14244),
-				i(14245),
-				i(14246),
-				i(14226),
-				i(14228),
-				i(14230),
-				i(14231),
-				i(14232),
-				i(14233),
-				i(14234),
-				i(14235),
-				i(14236),
+				i(15542),
+				i(15599),	-- Ancient Greaves
+				i(15600),	-- Ancient Vambraces
+				i(15601),	-- Ancient Chestpiece
+				i(15602),	-- Ancient Crown
+				i(15605),	-- Ancient Gauntlets
+				i(15606),	-- Ancient Belt
+				i(15607),	-- Ancient Legguards
+				i(15608),	-- Ancient Pauldrons
+				i(4041),	-- Aurora Cowl
+				i(4042),	-- Aurora Gloves
+				i(4043),	-- Aurora Bracers
+				i(4044),	-- Aurora Pants
+				i(4729),	-- Aurora Mantle
+				i(6415),	-- Aurora Robe
+				i(6416),	-- Aurora Boots
+				i(6418),	-- Aurora Sash
+				i(7112),	-- Aurora Armor
+				i(4080),	-- Blackforge Cowl
+				i(4082),	-- Blackforge Breastplate
+				i(4083),	-- Blackforge Gauntlets
+				i(4084),	-- Blackforge Leggings
+				i(4733),	-- Blackforge Pauldrons
+				i(6423),	-- Blackforge Greaves
+				i(6425),	-- Blackforge Girdle
+				i(6426),	-- Blackforge Bracers
+				i(14258),	-- Bloodwoven Cord
+				i(14259),	-- Bloodwoven Boots
+				i(14260),	-- Bloodwoven Bracers
+				i(14262),	-- Bloodwoven Mitts
+				i(14263),	-- Bloodwoven Mask
+				i(14264),	-- Bloodwoven Pants
+				i(14265),	-- Bloodwoven Wraps
+				i(14266),	-- Bloodwoven Pads
+				i(14267),	-- Bloodwoven Jerkin
+				i(15609),	-- Bonelink Armor
+				i(15610),	-- Bonelink Bracers
+				i(15612),	-- Bonelink Gauntlets
+				i(15613),	-- Bonelink Belt
+				i(15614),	-- Bonelink Sabatons
+				i(15615),	-- Bonelink Helmet
+				i(15616),	-- Bonelink Legplates
+				i(15617),	-- Bonelink Epaulets
+				i(9926),	-- Brigade Boots
+				i(9927),	-- Brigade Bracers
+				i(9928),	-- Brigade Breastplate
+				i(9930),	-- Brigade Gauntlets
+				i(9931),	-- Brigade Girdle
+				i(9932),	-- Brigade Circlet
+				i(9933),	-- Brigade Leggings
+				i(9934),	-- Brigade Pauldrons
+				i(7486),	-- Captain's Brestplate
+				i(7487),	-- Captain's Leggings
+				i(7488),	-- Captain's Circlet
+				i(7489),	-- Captain's Gauntlets
+				i(7490),	-- Captain's Boots
+				i(7491),	-- Captain's Shoulderguards
+				i(7493),	-- Captain's Bracers
+				i(7494),	-- Captain's Waistguard
+				i(1988),	-- Chief Brigadier Gauntlets
+				i(4078),	-- Chief Brigadier Coif
+				i(4079),	-- Chief Brigadier Leggings
+				i(4725),	-- Chief Brigadier Pauldrons
+				i(4727),	-- Chief Brigadier Girdle
+				i(6411),	-- Chief Brigadier Armor
+				i(6412),	-- Chief Brigadier Boots
+				i(6413),	-- Chief Brigadier Bracers
+				i(14237),	-- Darkmist Armor
+				i(14238),	-- Darkmist Boots
+				i(14240),	-- Darkmist Bands
+				i(14241),	-- Darkmist Handguards
+				i(14242),	-- Darkmist Pants
+				i(14243),	-- Darkmist Mantle
+				i(14244),	-- Darkmist Wraps
+				i(14245),	-- Darkmist Girdle
+				i(14246),	-- Darkmist Wizard Hat
+				i(14226),	-- Embersilk Bracelets
+				i(14228),	-- Embersilk Coronet
+				i(14230),	-- Embersilk Tunic
+				i(14231),	-- Embersilk Mitts
+				i(14232),	-- Embersilk Mantle
+				i(14233),	-- Embersilk Leggings
+				i(14234),	-- Embersilk Robes
+				i(14235),	-- Embersilk Cord
+				i(14236),	-- Embersilk Boots
 				i(14216),
 				i(14217),
 				i(14218),
@@ -949,140 +949,140 @@ _.WorldDrops =
 				i(15374),
 				i(15375),
 				i(15376),
-				i(15377),			
-				i(9936),
-				i(9937),
-				i(9939),
-				i(9940),
-				i(9941),
-				i(9942),
-				i(9943),
-				i(9945),
-				i(9946),
-				i(8311),
-				i(8312),
-				i(8314),
-				i(8315),
-				i(8316),
-				i(8317),
-				i(8318),
-				i(8319),
-				i(14288),
-				i(14289),
-				i(14290),
-				i(14291),
-				i(14293),
-				i(14294),
-				i(14295),
-				i(14296),
-				i(14297),
-				i(14948),
-				i(14949),
-				i(14950),
-				i(14951),
-				i(14952),
-				i(14953),
-				i(14955),
-				i(14956),
-				i(14798),
-				i(14799),
-				i(14802),
-				i(14803),
-				i(14804),
-				i(14805),
-				i(14806),
-				i(14807),
-				i(14298),
-				i(14299),
-				i(14301),
-				i(14302),
-				i(14303),
-				i(14304),
-				i(14305),
-				i(14306),
-				i(14307),
-				i(14904),
-				i(14905),
-				i(14906),
-				i(14907),
-				i(14908),
-				i(14909),
-				i(14910),
-				i(14911),
-				i(7527),
-				i(7528),
-				i(7529),
-				i(7530),
-				i(7531),
-				i(7532),
-				i(7534),
-				i(7535),
-				i(7538),
-				i(7539),
-				i(7540),
-				i(7541),
-				i(7542),
-				i(7543),
-				i(7545),
-				i(7546),
-				i(9947),
-				i(9948),
-				i(9949),
-				i(9950),
-				i(9952),
-				i(9953),
-				i(9954),
-				i(9955),
-				i(8137),
-				i(8138),
-				i(8139),
-				i(8140),
-				i(8141),
-				i(8142),
-				i(8143),
-				i(8144),
-				i(10095),
-				i(10096),
-				i(10097),
-				i(10099),
-				i(10100),
-				i(10101),
-				i(10102),
-				i(10103),
-				i(10104),
-				i(10191),
-				i(10192),
-				i(10193),
-				i(10196),
-				i(10197),
-				i(10198),
-				i(10199),
-				i(10200),
-				i(10057),
-				i(10058),
-				i(10059),
-				i(10061),
-				i(10062),
-				i(10063),
-				i(10064),
-				i(10065),
-				i(10066),
-				i(8264),
-				i(8265),
-				i(8267),
-				i(8268),
-				i(8269),
-				i(8270),
-				i(8271),
-				i(8272),
-				i(9966),
-				i(9967),
-				i(9968),
-				i(9969),
-				i(9970),
-				i(9971),
-				i(9972),
-				i(9973),
+				i(15377),
+				i(9936),	-- Abjurer's Boots
+				i(9937),	-- Abjurer's Bands
+				i(9939),	-- Abjurer's Gloves
+				i(9940),	-- Abjurer's Hood
+				i(9941),	-- Abjurer's Mantle
+				i(9942),	-- Abjurer's Pants
+				i(9943),	-- Abjurer's Robe
+				i(9945),	-- Abjurer's Sash
+				i(9946),	-- Abjurer's Tunic
+				i(8311),	-- Alabaster Plate Vambraces
+				i(8312),	-- Alabaster Breastplate
+				i(8314),	-- Alabaster Plate Gauntlets
+				i(8315),	-- Alabaster Plate Girdle
+				i(8316),	-- Alabaster Plate Greaves
+				i(8317),	-- Alabaster Plate Helmet
+				i(8318),	-- Alabaster Plate Leggings
+				i(8319),	-- Alabaster Plate Pauldrons
+				i(14288),	-- Arachnidian Armor
+				i(14289),	-- Arachnidian Girdle
+				i(14290),	-- Arachnidian Footpads
+				i(14291),	-- Arachnidian Bracelets
+				i(14293),	-- Arachnidian Circlet
+				i(14294),	-- Arachnidian Gloves
+				i(14295),	-- Arachnidian Legguards
+				i(14296),	-- Arachnidian Pauldrons
+				i(14297),	-- Arachnidian Robes
+				i(14948),	-- Bloodforged Chestpiece
+				i(14949),	-- Bloodforged Gauntlets
+				i(14950),	-- Bloodforged Belt
+				i(14951),	-- Bloodforged Sabatons
+				i(14952),	-- Bloodforged Helmet
+				i(14953),	-- Bloodforged Legplates
+				i(14955),	-- Bloodforged Shoulder Pads
+				i(14956),	-- Bloodforged Bindings
+				i(14798),	-- Bloodlust Breastplate
+				i(14799),	-- Bloodlust Boots
+				i(14802),	-- Bloodlust Gauntlets
+				i(14803),	-- Bloodlust Belt
+				i(14804),	-- Bloodlust Helm
+				i(14805),	-- Bloodlust Britches
+				i(14806),	-- Bloodlust Epaulets
+				i(14807),	-- Bloodlust Bracelets
+				i(14298),	-- Boncaster's Spaulders
+				i(14299),	-- Bonecsater's Boots
+				i(14301),	-- Bonecaster's Bindings
+				i(14302),	-- Bonecaster's Gloves
+				i(14303),	-- Bonecaster's Shroud
+				i(14304),	-- Bonecaster's Belt
+				i(14305),	-- Bonecaster's Sarong
+				i(14306),	-- Bonecaster's Vest
+				i(14307),	-- Bonecaster's Crown
+				i(14904),	-- Brutish Breastplate
+				i(14905),	-- Brutish Gauntlets
+				i(14906),	-- Brutish Belt
+				i(14907),	-- Brutish Helmet
+				i(14908),	-- Brutish Legguards
+				i(14909),	-- Brutish Shoulders
+				i(14910),	-- Brutish Armguards
+				i(14911),	-- Brutish Boots
+				i(7527),	-- Cabalist Chestpiece
+				i(7528),	-- Cabalist Leggings
+				i(7529),	-- Cabalist Helm
+				i(7530),	-- Cabalist Gloves
+				i(7531),	-- Cabalist Boots
+				i(7532),	-- Cabalist Spaulders
+				i(7534),	-- Cabalist Bracers
+				i(7535),	-- Cabalist Belt
+				i(7538),	-- Champion's Armor
+				i(7539),	-- Champion's Leggings
+				i(7540),	-- Champion's Helmet
+				i(7541),	-- Champion's Gauntlets
+				i(7542),	-- Champion's Greaves
+				i(7543),	-- Champion's Pauldrons
+				i(7545),	-- Champion's Bracers
+				i(7546),	-- Champion's Girdle
+				i(9947),	-- Chieftain's Belt
+				i(9948),	-- Chieftain's Boots
+				i(9949),	-- Chieftain's Bracers
+				i(9950),	-- Chieftain's Breastplate
+				i(9952),	-- Chieftain's Gloves
+				i(9953),	-- Chieftain's Headdress
+				i(9954),	-- Chieftain's Leggings
+				i(9955),	-- Chieftain's Shoulders
+				i(8137),	-- Chromite Bracers
+				i(8138),	-- Chromite Chestplate
+				i(8139),	-- Chromite Gauntlets
+				i(8140),	-- Chromite Girdle
+				i(8141),	-- Chromite Greaves
+				i(8142),	-- Chromite Barbute
+				i(8143),	-- Chromite Legplates
+				i(8144),	-- Chromite Pauldrons
+				i(10095),	-- Councillor's Boots
+				i(10096),	-- Councillor's Cuffs
+				i(10097),	-- Councillor's Circlet
+				i(10099),	-- Councillor's Gloves
+				i(10100),	-- Councillor's Shoulders
+				i(10101),	-- Councillor's Pants
+				i(10102),	-- Councillor's Robes
+				i(10103),	-- Councillor's Sash
+				i(10104),	-- Councillor's Tunic
+				i(10191),	-- Crusader's Armguards
+				i(10192),	-- Crusader's Boots
+				i(10193),	-- Crusader's Armor
+				i(10196),	-- Crusader's Gauntlets
+				i(10197),	-- Crusader's Belt
+				i(10198),	-- Crusader's Helm
+				i(10199),	-- Crusader's Leggings
+				i(10200),	-- Crusader's Pauldrons
+				i(10057),	-- Duskwoven Tunic
+				i(10058),	-- Duskwoven Sandals
+				i(10059),	-- Duskwoven Bracers
+				i(10061),	-- Duskwoven Turban
+				i(10062),	-- Duskwoven Gloves
+				i(10063),	-- Duskwoven Amice
+				i(10064),	-- Duskwoven Pants
+				i(10065),	-- Duskwoven Robe
+				i(10066),	-- Duskwoven Sash
+				i(8264),	-- Ebonhold Wristguards
+				i(8265),	-- Ebonhold Armor
+				i(8267),	-- Ebonhold Gauntlets
+				i(8268),	-- Ebonhold Girdle
+				i(8269),	-- Ebonhold Boots
+				i(8270),	-- Ebonhold Helmet
+				i(8271),	-- Ebonhold Leggings
+				i(8272),	-- Ebonhold Shoulderpads
+				i(9966),	-- Embossed Plate Armor
+				i(9967),	-- Embossed Plate Gauntlets
+				i(9968),	-- Embossed Plate Girdle
+				i(9969),	-- Embossed Plate Helmet
+				i(9970),	-- Embossed Plate Leggings
+				i(9971),	-- Embossed Plate Pauldrons
+				i(9972),	-- Embossed Plate Bracers
+				i(9973),	-- Embossed Plate Boots
 				i(9285),
 				i(9286),
 				i(9287),
@@ -1458,67 +1458,67 @@ _.WorldDrops =
 				i(9962),
 				i(9963),
 				i(9964),
-				i(9965),			
-				i(10256),
-				i(10257),
-				i(10259),
-				i(10260),
-				i(10261),
-				i(10262),
-				i(10263),
-				i(10264),
-				i(8283),
-				i(8284),
-				i(8285),
-				i(8287),
-				i(8288),
-				i(8289),
-				i(8290),
-				i(8291),
-				i(8292),
-				i(14308),
-				i(14309),
-				i(14310),
-				i(14311),
-				i(14312),
-				i(14314),
-				i(14315),
-				i(14316),
-				i(14317),
-				i(10376),
-				i(10377),
-				i(10378),
-				i(10379),
-				i(10380),
-				i(10381),
-				i(10382),
-				i(10383),
-				i(10210),
-				i(10211),
-				i(10213),
-				i(10214),
-				i(10215),
-				i(10216),
-				i(10217),
-				i(10218),
-				i(10219),
-				i(14456),
-				i(14457),
-				i(14458),
-				i(14460),
-				i(14461),
-				i(14462),
-				i(14463),
-				i(14464),
-				i(14465),
-				i(10275),
-				i(10276),
-				i(10277),
-				i(10278),
-				i(10279),
-				i(10280),
-				i(10281),
-				i(10282),
+				i(9965),
+				i(10256),	-- Adventurer's Bracers
+				i(10257),	-- Adventurer's Boots
+				i(10259),	-- Adventurer's Belt
+				i(10260),	-- Adventurer's Gloves
+				i(10261),	-- Adventurer's Bandana
+				i(10262),	-- Adventurer's Legguards
+				i(10263),	-- Adventurer's Shoulders
+				i(10264),	-- Adventurer's Tunic
+				i(8283),	-- Arcane Armor
+				i(8284),	-- Arcane Boots
+				i(8285),	-- Arcane Bands
+				i(8287),	-- Arcane Gloves
+				i(8288),	-- Arcane Pads
+				i(8289),	-- Arcane Leggings
+				i(8290),	-- Arcane Robe
+				i(8291),	-- Arcane Sash
+				i(8292),	-- Arcane Cover
+				i(14308),	-- Celestial Tunic
+				i(14309),	-- Celestial Belt
+				i(14310),	-- Celestial Slippers
+				i(14311),	-- Celestial Bindings
+				i(14312),	-- Celestial Crown
+				i(14314),	-- Celestial Handwraps
+				i(14315),	-- Celestial Kilt
+				i(14316),	-- Celestial Pauldrons
+				i(14317),	-- Celestial Silk Robes
+				i(10376),	-- Commander's Boots
+				i(10377),	-- Commander's Vambraces
+				i(10378),	-- Commander's Armor
+				i(10379),	-- Commander's Helm
+				i(10380),	-- Commander's Gauntlets
+				i(10381),	-- Commander's Girdle
+				i(10382),	-- Commander's Leggings
+				i(10383),	-- Commander's Pauldrons
+				i(10210),	-- Elegant Mantle
+				i(10211),	-- Elegant Boots
+				i(10213),	-- Elegant Bracers
+				i(10214),	-- Elegant Gloves
+				i(10215),	-- Elegant Robes
+				i(10216),	-- Elegant Belt
+				i(10217),	-- Elegant Leggings
+				i(10218),	-- Elegant Tunic
+				i(10219),	-- Elegant Circlet
+				i(14456),	-- Elunarian Vest
+				i(14457),	-- Elunarian Cuffs
+				i(14458),	-- Elunarian Boots
+				i(14460),	-- Elunarian Diadem
+				i(14461),	-- Elunarian Handgrips
+				i(14462),	-- Elunarian Sarong
+				i(14463),	-- Elunarian Spaulders
+				i(14464),	-- Elunarian Silk Robes
+				i(14465),	-- Elunarian Belt
+				i(10275),	-- Emerald Breastplate
+				i(10276),	-- Emerald Sabatons
+				i(10277),	-- Emerald Gauntlets
+				i(10278),	-- Emerald Girdle
+				i(10279),	-- Emerald Helm
+				i(10280),	-- Emerald Legplates
+				i(10281),	-- Emerald Pauldrons
+				i(10282),	-- Emerald Vambraces
 				i(10229),
 				i(10230),
 				i(10232),
@@ -1724,7 +1724,7 @@ _.WorldDrops =
 				i(14814),
 				i(14815),
 				i(14816),
-				i(14817),			
+				i(14817),
 			}),
 		},
 		["icon"] = "Interface\\Icons\\expansionicon_classic",
