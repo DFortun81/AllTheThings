@@ -43,6 +43,8 @@ _.Zones =
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
+								qa(11776),	-- Desecrate this Fire!
+								qg(25935, qh(11853)),	-- Honor the Flame
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
@@ -59,6 +61,8 @@ _.Zones =
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
+								qh(12376),	-- Candy Bucket
+								qh(28962),	-- Candy Bucket
 							}),
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
@@ -97,213 +101,221 @@ _.Zones =
 					p(420), 	-- Toad
 				}),
 				n(-17, { 	-- Quests
---					qg(, qh(28345)),	-- *Gurgle* HELP! *Gurgle*
+--					qg(48218, qh(28345)),	-- *Gurgle* HELP! *Gurgle*
 					qg(48020, qh(28237, { -- A Blight Upon the Land
-						i(65697),
-						i(65675),
+						i(65697),	-- Stillwater's Cloak
+						i(65675),	-- Stillwater's Dagger
 					})),
 --[[					
-					qg(, qh(28495)),	-- A Fighting Chance
-					qg(, qh(28635)),	-- A Haunting in Hillsbrad
-					qg(, qh(28587)),	-- Aid of the Frostwolf
-					qg(, qa( 7081)),	-- Alterac Valley Graveyards
-					qg(, q( 40267)),	-- An Unexpected Message
-					qg(, qh(28329)),	-- Angry Scrubbing Bubbles
-					qg(, q( 28733)),	-- Basic Botany
+					qg(17092, qh(28495)),	-- A Fighting Chance
+					qg(49243, qh(28635)),	-- A Haunting in Hillsbrad
+					qg(48545, qh(28587)),	-- Aid of the Frostwolf
+					qg(13777, qa( 7081)),	-- Alterac Valley Graveyards
+					n(48319, {	-- Angry Blight Slime
+						qh(28329),	-- Angry Scrubbing Bubbles
+					}),
+					qg(49687, q( 28733)),	-- Basic Botany
 --]]					
 					qg(48545, qh(28556, { -- Breaking the Hand
-						i( 65721),
-						i( 65703),
-						i( 65683),
-						i(131699),
+						i( 65721),	-- Corrahn's Cloak
+						i( 65703),	-- Gavin's Pauldrons
+						i( 65683),	-- Sofera's Belt
+						i(131699),	-- Headland Belt
 					})),
 --[[					
-					qg(, qh(28235)),	-- Burnside Must Fall
-					qg(, qh(28344)),	-- Can You Smell What the Lok'tar is Cooking?
-					qh(12376),	-- Candy Bucket
-					qh(28962),	-- Candy Bucket
-					qg(, qa( 7122)),	-- Capture a Mine
-					qg(, q( 30107)),	-- Cluster Clutch
-					qg(, qh(28146)),	-- Coastal Delicacies!
-					qg(, qh(28538)),	-- Cry of the Banshee
+					qg(48020, qh(28235)),	-- Burnside Must Fall
+					qg(48129, qh(28344)),	-- Can You Smell What the Lok'tar is Cooking?
+					qg(13777, qa( 7122)),	-- Capture a Mine
+					qg(57777, q( 30107, {	-- Cluster Clutch
+						["groups"] = {
+						},
+						["classes"] = {4},	-- Rogue
+					})),
+					qg(47551, qh(28146)),	-- Coastal Delicacies!
+					qg( 2278, qh(28538)),	-- Cry of the Banshee
 --]]					
 					qg(49035, qh(28604, { -- Deception and Trickery
-						i( 65722),
-						i( 65704),
-						i( 65684),
-						i(131700),
-						i(131701),
+						i( 65722),	-- Lilith's Wand
+						i( 65704),	-- Vest of the Phantom
+						i( 65684),	-- Poisoned Bracers
+						i(131700),	-- Phantom Chain Tunic
+						i(131701),	-- Bracers of Deceit
 					})),
 --[[					
-					qg(, qh(28566)),	-- Decimation
-					qg(, qh(28156)),	-- Deep Mine Rescue
-					qg(, q( 43296)),	-- Defend
-					qg(, q( 43286)),	-- Demon Commander
-					qa(11766),	-- Desecrate this Fire!
-					qa(11755),	-- Desecrate this Fire!
-					qa(11732),	-- Desecrate this Fire!
-					qa(11786),	-- Desecrate this Fire!
-					qa(11580),	-- Desecrate this Fire!
-					qa(11776),	-- Desecrate this Fire!
+					qg( 2278, qh(28566)),	-- Decimation
+					qg(47681, qh(28156)),	-- Deep Mine Rescue
+--					q( 43296),	-- Defend (REMOVED, from Legion pre-patch)
+--					q( 43286),	-- Demon Commander (REMOVED, from Legion pre-patch)
 --]]					
 					qg(47781, qh(28197, { -- Discretion is Key
-						i(65694),
-						i(65672),
+						i(65694),	-- Clerk Whitesteed's Cloak
+						i(65672),	-- Crossbow of the Twice-Slain
 					})),
 					qg(48021, qh(28231, { -- Do it for Twinkles (secondary QG ID 47869)
-						i( 65714),
-						i( 65696),
-						i( 65674),
-						i(131693),
+						i( 65714),	-- "Jenny's" Gloves
+						i( 65696),	-- Awesome Boots
+						i( 65674),	-- Star Pony Leggings
+						i(131693),	-- Amazing Chain Boots
 					})),
 					o(206944, {	-- Shovel
 						qh(28189, { -- Do the Right Thing
-							i(65667),
+							i(65667),	-- Shovel of Mercy
 						}),
 					}),
 --[[					
-					qg(, qh(28605)),	-- Domination
-					qg(, qh( 7165)),	-- Earned Reverence
-					qg(, qa( 7170)),	-- Earned Reverence
-					qg(, qh(28620)),	-- Eastpoint Tower
-					qg(, qh(27746)),	-- Empire of Dirt
-					qg(, qh(28634)),	-- Extinction
-					qg(, q( 28617)),	-- Flower Power
-					qg(, qh(28199)),	-- For Science!
+					qg(49035, qh(28605)),	-- Domination (add'l QG 2278)
+					qg(13840, qh( 7165)),	-- Earned Reverence
+					qg(13841, qa( 7170)),	-- Earned Reverence
+					qg( 2229, qh(28620)),	-- Eastpoint Tower
+					qg(46124, qh(27746)),	-- Empire of Dirt
+					qg(49201, qh(28634)),	-- Extinction
+					qg(49687, q( 28617)),	-- Flower Power
+					qg(47899, qh(28199)),	-- For Science!
 --]]					
 					qg(47900, qh(28209, { -- Freedom for Lydon
-						i( 65713),
-						i( 65673),
-						i(131692),
+						i( 65713),	-- Monstrous Shield
+						i( 65673),	-- Aberrant Vest
+						i(131692),	-- Sludge Guard Mail Vest
 					})),
---					qg(, q( 28744)),	-- Ghouls Hate My Grains
+--					qg(49687, q( 28744)),	-- Ghouls Hate My Grains
 					qg(47432, qh(28114, { -- Glorious Harvest
-						i( 65710),
-						i( 65692),
-						i( 65670),
-						i(131689)
+						i( 65710),	-- Creeping Boots
+						i( 65692),	-- Bear Hide Vest
+						i( 65670),	-- Spider-Handler's Mantle
+						i(131689),	-- Web Encased Tunic
 					})),
 --[[
-					qg(, qh(28325)),	-- Green Living
-					qg(, qh(28332)),	-- Helcular's Command
+					qg( 2391, qh(28325)),	-- Green Living
+					qg(48129, qh(28332)),	-- Helcular's Command
 --]]					
 					qg(48129, qh(28331, { -- Helcular's Rod Giveth...
-						i(65676),
+						i(65676),	-- Helcular's Other Rod
 					})),
 					qpvp(qg(13817, qh( 8272, { -- Hero of the Frostwolf PvP
-						i(19107),
-						i(19106),
-						i(19108),
-						i(20648),
+						i(19107),	-- Bloodseeker
+						i(19106),	-- Ice Barbed Spear
+						i(19108),	-- Wand of Biting Cold
+						i(20648),	-- Cold Forged Hammer
 					}))),
 					qpvp(qg(13816, qa( 8271, { -- Hero of the Stormpike PvP
-						i(19107),
-						i(19106),
-						i(19108),
-						i(20648),
+						i(19107),	-- Bloodseeker
+						i(19106),	-- Ice Barbed Spear
+						i(19108),	-- Wand of Biting Cold
+						i(20648),	-- Cold Forged Hammer
 					}))),
 					qg(48470, qh(28400, { -- Heroes of the Horde! (secondary QG ID 48503)
-						i( 65728),
-						i( 65719),
-						i( 65701),
-						i( 65680),
-						i(131696),
-						i(131697),
+						i( 65728),	-- Boots of the Hero
+						i( 65719),	-- Spaulders of the Hero
+						i( 65701),	-- Gloves of the Hero
+						i( 65680),	-- Belt of the Hero
+						i(131696),	-- Pauldrons of the Hero
+						i(131697),	-- Gauntlets of the Hero
 					})),
 --[[					
-					qg(, qh(11853)),	-- Honor the Flame
-					qg(, qh( 7164)),	-- Honored Amongst the Clan
-					qg(, qa( 7169)),	-- Honored Amongst the Guard
+					qg(13840, qh( 7164)),	-- Honored Amongst the Clan
+					qg(13841, qa( 7169)),	-- Honored Amongst the Guard
 --]]					
 					qg(47554, qh(28138, { -- Human Infestation
-						i( 65709),
-						i( 65690),
-						i( 65668),
-						i(131690),
+						i( 65709),	-- Binding Plates
+						i( 65690),	-- Slaver's Leggings
+						i( 65668),	-- Officer's Armbands
+						i(131690),	-- Web Coated Leggings
 					})),
 --[[					
-					qg(, qh(28487)),	-- Humbert's Personal Problems
-					qg(, qh(28603)),	-- Infiltration
-					qg(, q( 43285)),	-- Invasion: Hillsbrad Foothills
-					qg(, q( 42805)),	-- Invasion: Hillsbrad Foothills
-					qg(, q(  8249)),	-- Junkboxes Needed
+					qg( 2419, qh(28487)),	-- Humbert's Personal Problems
+					qg( 2278, qh(28603)),	-- Infiltration
+--					q( 43285),	-- Invasion: Hillsbrad Foothills (REMOVED, from Legion pre-patch)
+--					q( 42805),	-- Invasion: Hillsbrad Foothills (REMOVED, from Legion pre-patch)
+					qg( 7323, q(  8249)),	-- Junkboxes Needed
 --]]					
 					qg(48218, qh(28354, { -- Kasha Will Fly Again
-						i( 65717),
-						i( 65699),
-						i( 65678),
-						i(131695),
+						i( 65717),	-- Kingslayer's Breastplate
+						i( 65699),	-- Mudsnout Spaulders
+						i( 65678),	-- Red Riding Gloves
+						i(131695),	-- Orkus' Riding Spaulders
 					})),
 					qg(49687, q( 28748, { -- Lawn of the Dead
-						i( 65689),
-						i( 65666),
-						i(131894),
-						i( 66067), -- PET Singing Sunflower
+						i( 65689),	-- Brazie's Plant Light
+						i( 65666),	-- Botanist's Britches
+						i(131894),	-- Botanist's Chain Pants
+						i( 66067),	-- Singing Sunflower (PET!)
 					})),
 --[[
-					qg(, qh( 7166)),	-- Legendary Heroes
-					qg(, qa( 7171)),	-- Legendary Heroes
-					qg(, qh(27480)),	-- Ley Energies
-					qg(, qh(28206)),	-- Little Girl Lost
-					qg(, qh(28506)),	-- March of the Stormpike
-					qg(, qh(28600)),	-- Matters of Loyalty
+					qg(13840, qh( 7166)),	-- Legendary Heroes
+					qg(13841, qa( 7171)),	-- Legendary Heroes
+					n(45728, {	-- Arcane Remnant
+						i(61310, {	-- Arcane Remnant
+							qh(27480),	-- Ley Energies
+						}),
+					}),
+					qg(47781, qh(28206)),	-- Little Girl Lost
+					qg(48545, qh(28506)),	-- March of the Stormpike
+					qg(13817, qh(28600)),	-- Matters of Loyalty
 --]]					
 					n(47759, {	-- Muckgill
 						i(63090, {	-- MuckGill's Flipper
 							qh(28154, { -- Muckgill's Flipper or Something...
-								i( 65691),
-								i( 65669),
-								i(131691),
+								i( 65691),	-- Floppy Shoulderguards
+								i( 65669),	-- Keyton's Sash
+								i(131691),	-- Keyton's Mail Pauldrons
 							}),
 						}),
 					}),
 --[[					
-					qg(, qh(28192)),	-- No One Here Gets Out Alive
-					qg(, qh(27484)),	-- Only One May Enter
-					qg(, q( 30092)),	-- Our Man in Gilneas
-					qg(, q( 30108)),	-- Our Man in Karazhan
-					qg(, qh(28115)),	-- Past Their Prime
---]]					
-					--[[q(30118, { -- Patricide
+					qg(47781, qh(28192)),	-- No One Here Gets Out Alive
+					qg( 1938, qh(27484)),	-- Only One May Enter
+					ql(qg(57777, q( 30092, {	-- Our Man in Gilneas
 						["groups"] = {
-							i(77949),
-							i(77950),
+						},
+						["classes"] = {4},	-- Rogue
+					}))),
+					ql(qg(57777, q( 30108, {	-- Our Man in Karazhan
+						["groups"] = {
+						},
+						["classes"] = {4},	-- Rogue
+					}))),
+					qg(47432, qh(28115)),	-- Past Their Prime
+--]]					
+					--[[ql(qg(57777, q(30118, { -- Patricide
+						["groups"] = {
+							i(77949),	-- Golad, Twilight of Aspects
+							i(77950),	-- Tiriosh, Nightmare of Ages
 						},
 						["classes"] = {4},
-					}),]]--Legendaries cannot be transmogged
+					}))),]]--Legendaries cannot be transmogged
 					n(2371, {	-- Daggerspine Siren
 						i(63686, {	-- Daggerspine Attack Plans
 							qh(28356, { -- Preemptive Strike
-								i(65716),
-								i(65698),
-								i(65677),
+								i(65716),	-- Daggerspine Ball
+								i(65698),	-- Daggerspine Dagger
+								i(65677),	-- Preemptive Staff
 							}),
 						}),
 					}),
 					n(2369, {	-- Daggerspine Shorehunter
 						i(63686, {	-- Daggerspine Attack Plans
 							qh(28356, { -- Preemptive Strike
-								i(65716),
-								i(65698),
-								i(65677),
+								i(65716),	-- Daggerspine Ball
+								i(65698),	-- Daggerspine Dagger
+								i(65677),	-- Preemptive Staff
 							}),
 						}),
 					}),
 					n(2368, {	-- Daggerspine Shorestalker
 						i(63686, {	-- Daggerspine Attack Plans
 							qh(28356, { -- Preemptive Strike
-								i(65716),
-								i(65698),
-								i(65677),
+								i(65716),	-- Daggerspine Ball
+								i(65698),	-- Daggerspine Dagger
+								i(65677),	-- Preemptive Staff
 							}),
 						}),
 					}),
 					n(2370, {	-- Daggerspine Screamer
 						i(63686, {	-- Daggerspine Attack Plans
 							qh(28356, { -- Preemptive Strike
-								i(65716),
-								i(65698),
-								i(65677),
+								i(65716),	-- Daggerspine Ball
+								i(65698),	-- Daggerspine Dagger
+								i(65677),	-- Preemptive Staff
 							}),
 						}),
 					}),
@@ -317,20 +329,20 @@ _.Zones =
 					qg(, q( 30116)),	-- Sharpening Your Fangs
 --]]					
 					qg(49240, qh(28636, { -- Silence of the Dwarves
-						i( 65724),
-						i( 65706),
-						i( 65686),
-						i(131703),
+						i( 65724),	-- 
+						i( 65706),	-- 
+						i( 65686),	-- 
+						i(131703),	-- 
 					})),
 --					qg(, q( 28747)),	-- Someone Setup the Pumpkin Bomb
 					qg( 2397, qh(28489, { -- Stagwiches
-						i(65681),
+						i(65681),	-- 
 					})),
 					qg(48545, qh(28616, { -- Stormpike Apocalypse
-						i( 65723),
-						i( 65705),
-						i( 65685),
-						i(131702),
+						i( 65723),	-- 
+						i( 65705),	-- 
+						i( 65685),	-- 
+						i(131702),	-- 
 					})),
 --[[					
 					qg(, qh(28348)),	-- Stormpike Rendezvous
@@ -343,8 +355,8 @@ _.Zones =
 					qg(, qh(28645)),	-- The Durnholde Challenge: Bloodvenom
 --]]
 					qg(49243, qh(28647, { -- The Durnholde Challenge: D-1000
-						i(65707),
-						i(65687),
+						i(65707),	-- 
+						i(65687),	-- 
 					})),
 --[[					
 					qg(, qh(28646)),	-- The Durnholde Challenge: Infernus
@@ -355,10 +367,10 @@ _.Zones =
 					qg(, qa(11997)),	-- The Frozen Flame
 --]]					
 					qg( 2437, qh(28484, { -- The Heart of the Matter
-						i( 65720),
-						i( 65702),
-						i( 65682),
-						i(131698),
+						i( 65720),	-- 
+						i( 65702),	-- 
+						i( 65682),	-- 
+						i(131698),	-- 
 					})),
 --[[					
 					qg(, q( 40270)),	-- The Path of Atonement
@@ -370,10 +382,10 @@ _.Zones =
 					qg(, qa( 7102)),	-- Towers and Bunkers
 --]]
 					qg( 2391, qh(28330, { -- Trail of Filth
-						i( 65718),
-						i( 65700),
-						i( 65679),
-						i(131694),
+						i( 65718),	-- 
+						i( 65700),	-- 
+						i( 65679),	-- 
+						i(131694),	-- 
 					})),
 --[[					
 					qg(, qh(27512)),	-- Transdimensional Warfare: Chapter I
@@ -386,15 +398,15 @@ _.Zones =
 					qg(, qh(28571)),	-- Warchief's Command: Hillsbrad Foothills!
 --]]					
 					qg( 2215, qh(28096, { -- Welcome to the Machine
-						i( 65711),
-						i( 65693),
-						i( 65671),
-						i(131688),
+						i( 65711),	-- 
+						i( 65693),	-- 
+						i( 65671),	-- 
+						i(131688),	-- 
 					})),
 					qg( 2418, qh(28485, { -- Yetimus the Yeti Lord
-						i(65726),
-						i(65708),
-						i(65688),
+						i(65726),	-- 
+						i(65708),	-- 
+						i(65688),	-- 
 					})),
 --[[					
 					qg(, qh(  6983)),	-- You're a Mean One...
