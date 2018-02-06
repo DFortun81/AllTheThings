@@ -1,4 +1,5 @@
 contrib/Harvesters/RAW/
+contrib/Harvesters/RAW/RAW_*.json
 AllTheThings.iml
 .idea/workspace.xml
 .idea/modules.xml
