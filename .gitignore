@@ -1,5 +1,13 @@
 contrib/Harvesters/RAW/
-contrib/Harvesters/RAW/RAW_*.json
+contrib/Harvesters/RAW_eventDB.json
+contrib/Harvesters/eventDB.json
+contrib/Harvesters/itemDB.json
+contrib/Harvesters/npcDB_sweetlie.json
+contrib/Harvesters/quests_dump.json
+contrib/Harvesters/RAW_itemDB.json
+contrib/Harvesters/RAW_npcDB.json
+contrib/Harvesters/RAW_zoneDB.json
+contrib/Harvesters/zoneDB.json
 AllTheThings.iml
 .idea/workspace.xml
 .idea/modules.xml
