@@ -218,14 +218,14 @@ _.Mounts =
 		i(118515),				-- Cindermane Charger
 		un(6, i(109013)),		-- Dread Raven
 		i(106246),				-- Emerald Hippogryph
-		i(153540),				-- Gilded Ravasaur
+		h(i(153540)),			-- Gilded Ravasaur
 		i(98618),				-- Hearthsteed
 		un(6, i(128425)),		-- Illidari Felstalker
 		un(6, i(85870)),		-- Imperial Quilen
 		i(83086),				-- Obsidian Nightwing
 		un(16, h(i(151617))),	-- Orgrimmar Interceptor Mount
 		un(3, i(143631)),		-- Primal Flamesaber
-		i(153539),				-- Seabraid Stallion
+		a(i(153539)),			-- Seabraid Stallion
 		un(3, a(i(76889))),		-- Spectral Gryphon
 		un(3, h(i(76902))),		-- Spectral Wind Rider
 		un(16, a(i(151618))),	-- Stormwind Skychaser Mount
