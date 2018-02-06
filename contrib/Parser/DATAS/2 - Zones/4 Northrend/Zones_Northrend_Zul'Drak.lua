@@ -1,0 +1,455 @@
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+_.Zones =
+{
+	m(485, { 	-- Northrend
+		m(496, {	-- Zul'Drak
+			["groups"] = {							
+				n(-3, { 	-- Holidays					
+--[[					
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+						["u"] = 17,
+					}),
+					n(-50, {     -- Love is in the Air
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1693,    -- Fool For Love
+						["u"] = 18,
+					}),
+					n(-51, {     -- Noblegarden
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 2798, -- Noble Gardener
+						["u"] = 19,
+					}),
+					n(-52, {     -- Children's Week
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1793, -- For The Children
+						["u"] = 20,
+					}),	
+--]]					
+					n(-53, {     -- Midsummer Fire Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+								qg(25962, qa( 11882)),	-- Playing with Fire
+							}),
+						},
+						["achievementID"] = 1038, -- The Flame Warden
+						["u"] = 21,
+					}),	
+--[[					
+					n(-56, {     -- Brewfest
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1683, -- Brewmaster
+						["u"] = 24,
+					}),
+					n(-58, {     -- Hallow's End
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["u"] = 26,
+					}),	
+					n(-60, {     -- Pilgrim's Bounty
+						["groups"]  = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 3478, -- Pilgrim
+						["u"] = 28,
+					}),
+					n(-61, {     -- Feast of Winter Veil
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1691, -- Merrymaker
+						["u"] = 29,
+					}),						
+--]]				
+				}),							
+				n(-25, { 	-- Pet Battle
+					p(641), 	-- Arctic Hare
+					p(648), 	-- Huge Toad
+					p(387), 	-- Snake
+					p(412), 	-- Spider
+					p(535), 	-- Water Waveling
+					p(1238), 	-- Unborn Val'kyr
+				}),
+				n(-17, { 	-- Quests
+--[[				
+					q( 12912),	-- A Great Storm Approaches
+					q( 12555),	-- A Tangled Skein
+					q( 12647),	-- An End to the Suffering
+					q( 12631),	-- An Invitation, of Sorts...
+					q( 12504),	-- Argent Crusade, We Are Leaving!
+					q( 12653),	-- Back to Har'koa
+					q( 12713),	-- Betrayal
+					q( 12567),	-- Blessing of Zim'Abwa
+					q( 12656),	-- Blessing of Zim'Rhuk
+					q( 12618),	-- Blessing of Zim'Torga
+					q( 12684),	-- Blood of a Dead God
+					q( 12627),	-- Breaking Through Jin'Alai
+					q( 12662),	-- Bringing Down Heb'Jin
+					q( 12632),	-- But First My Offspring
+					q( 12940),	-- Candy Bucket
+					q( 12941),	-- Candy Bucket
+					q( 12610),	-- Clipping Their Wings
+					q( 12638),	-- Close Call
+					q( 12606),	-- Cocooned!
+					q( 12604),	-- Congratulations!
+					q( 12730),	-- Convocation at Zol'Heb
+					q( 12583),	-- Crashed Sprayer
+					q( 12599),	-- Creature Comforts
+					q( 12894),	-- Crusader Forward Camp
+					q( 12664),	-- Dark Horizon
+					q( 12633),	-- Darkness Calling
+					q( 12552),	-- Death to the Necromagi
+					q( 12503),	-- Defend the Stand
+					qa( 11755),	-- Desecrate this Fire!
+					qh( 13449),	-- Desecrate this Fire!
+					qa( 11766),	-- Desecrate this Fire!
+					qh( 11749),	-- Desecrate this Fire!
+					qa( 11732),	-- Desecrate this Fire!
+					qh( 11745),	-- Desecrate this Fire!
+					qa( 11580),	-- Desecrate this Fire!
+					qh( 11581),	-- Desecrate this Fire!
+					qa( 13458),	-- Desecrate this Fire!
+					qa( 11786),	-- Desecrate this Fire!
+					q( 12710),	-- Disclosure
+					q( 12648),	-- Dressing Down
+					q( 13556),	-- Eggs for Dubra'Jin
+					q( 12708),	-- Enchanted Tiki Warriors
+					q( 12652),	-- Feedin' Da Goolz
+					q( 12792),	-- First Things First
+					q( 12668),	-- Foundation for Revenge
+					q( 12690),	-- Fuel for the Fire
+					q( 12527),	-- Gluttonous Lurkers
+					q( 31934),	-- Gutretch
+					q( 12914),	-- Gymer's Salvation
+					q( 12677),	-- Hazardous Materials
+					q( 12674),	-- Hell Hath a Fury
+					q( 12709),	-- Hexed Caches
+					qh( 13500),	-- Honor the Flame
+					qa( 13492),	-- Honor the Flame
+					q( 12665),	-- I Sense a Disturbance
+					q( 12902),	-- In Search Of Answers
+					q( 12661),	-- Infiltrating Voltarus
+					q( 12789),	-- Into the Breach!
+					q( 12673),	-- It Rolls Downhill
+					q( 29836),	-- Just Checkin'
+					q( 12630),	-- Kickin' Nass and Takin' Manes
+					q( 12557),	-- Lab Work
+					q( 12512),	-- Leave No One Behind
+					q( 12904),	-- Light Won't Grant Me Vengeance
+					q( 12901),	-- Making Something Out Of Nothing
+					q( 12554),	-- Malas the Corrupter
+					q( 12508),	-- Mopping Up
+					q( 12514),	-- Mushroom Mixer
+					q( 12646),	-- My Prophet, My Enemy
+					q( 12637),	-- Near Miss
+					q( 12505),	-- New Orders for Sergeant Stackhammer
+					q( 12675),	-- One Last Thing
+					q( 12883),	-- Orders From Drakuru
+					q( 12916),	-- Our Only Hope
+					q( 12596),	-- Pa'Troll
+					q( 12740),	-- Parachutes for the Argent Crusade
+					qa( 11882),	-- Playing with Fire
+					q( 12650),	-- Plundering Their Own
+					q( 12510),	-- Precious Elemental Fluids
+					q( 12666),	-- Preparations for the Underworld
+					q( 12584),	-- Pure Evil
+					q( 12721),	-- Rampage
+					qa( 12770),	-- Reallocating Resources
+					q( 12635),	-- Relics of the Snow Leopard Goddess
+					q( 12663),	-- Reunited
+					q( 12676),	-- Sabotage
+					q( 12659),	-- Scalps!
+					q( 12640),	-- Sealing the Rifts
+					q( 12667),	-- Seek the Wind Serpent Goddess
+					q( 12672),	-- Setting the Stage
+					qh( 12763),	-- Shifting Priorities
+					q( 12643),	-- Silver Lining
+					q( 12799),	-- Siphoning the Spirits
+					q( 12553),	-- Skimmer Spinnerets
+					q( 12793),	-- Smoke on the Horizon
+					q( 12669),	-- So Far, So Bad
+					q( 12597),	-- Something for the Pain
+					q( 12642),	-- Spirit of Rhunok
+					q( 12609),	-- Stocking the Shelves
+					q( 12507),	-- Strange Mojo					
+					q( 12649),	-- Suit Up!
+					q( 13549),	-- Tails Up
+					q( 12795),	-- Taking a Stand
+					q( 13027),	-- Tauros the Elder
+					q( 12903),	-- That's What Friends Are For...
+					q( 12934),	-- The Amphitheater of Anguish: From Beyond!
+					q( 12936),	-- The Amphitheater of Anguish: Korrak the Bloodrager!
+					q( 12933),	-- The Amphitheater of Anguish: Magnataur!
+					q( 12935),	-- The Amphitheater of Anguish: Tuskarrmageddon!
+					q( 12932),	-- The Amphitheater of Anguish: Yggdras!
+					q( 12565),	-- The Blessing of Zim'Abwa
+					q( 12655),	-- The Blessing of Zim'Rhuk
+					q( 12615),	-- The Blessing of Zim'Torga
+					q( 12948),	-- The Champion of Anguish
+					q( 12974),	-- The Champion's Call!
+					q( 12562),	-- The Drakkari Do Not Need Water Elementals!
+					q( 12884),	-- The Ebon Watch
+					q( 12639),	-- The Frozen Earth
+					q( 12729),	-- The Gods Have Spoken
+					q( 12712),	-- The Key of Warlord Zol'Maz
+					q( 12622),	-- The Leaders at Jin'Alai
+					q( 12796),	-- The Magical Kingdom of Dalaran
+					q( 12919),	-- The Storm King's Vengeance
+					q( 12598),	-- Throwing Down
+					q( 12628),	-- To Speak With Har'koa
+					q( 12623),	-- To the Witch Doctor
+					q( 12516),	-- Too Much of a Good Thing
+					q( 12587),	-- Troll Patrol
+					q( 12588),	-- Troll Patrol: Can You Dig It?
+					q( 12594),	-- Troll Patrol: Couldn't Care Less
+					q( 12585),	-- Troll Patrol: Creature Comforts
+					q( 12568),	-- Troll Patrol: Done to Death
+					q( 12502),	-- Troll Patrol: High Standards
+					q( 12509),	-- Troll Patrol: Intestinal Fortitude
+					q( 12564),	-- Troll Patrol: Something for the Pain
+					q( 12541),	-- Troll Patrol: The Alchemist's Apprentice
+					q( 12591),	-- Troll Patrol: Throwing Down
+					q( 12519),	-- Troll Patrol: Whatdya Want, a Medal?
+					q( 12861),	-- Trolls Is Gone Crazy!
+					q( 12506),	-- Trouble at the Altar of Sseratus
+					q( 29833),	-- Unfinished Business
+					q( 12857),	-- Wanted: Ragemane's Flipper
+					q( 12707),	-- Wooly Justice
+					q( 12629),	-- You Can Run, But You Can't Hide
+					q( 12685),	-- You Reap What You Sow
+					q( 12686),	-- Zero Tolerance
+					q( 39208),	-- Zul'Drak	
+--]]					
+					q(12555,  {  -- A Tangled Skein
+						i(39806),
+						i(39822),
+						i(39824),
+						i(39784),
+						i(39823),
+						i(39808),
+					}),
+					q(12647,  {  -- An End to the Suffering
+						i(39789),
+						i(39858),
+						i(39825),
+						i(39893),
+					}),
+					q(12504,  {  -- Argent Crusade, We Are Leaving!
+						i(39771),
+						i(39834),
+						i(39780),
+						i(39782),
+					}),
+					q(12662,  {  -- Bringing Down Heb'Jin
+						i(39836),
+						i(39788),
+						i(39790),
+					}),
+					q(12632,  {  -- But First My Offspring
+						i(39787),
+						i(39856),
+						i(39891),
+					}),
+					q(12610,  {  -- Clipping Their Wings
+						i(39804),
+						i(39867),
+						i(39854),
+						i(39855),
+					}),
+					q(12730,  {  -- Convocation at Zol'Heb
+						i(41890),
+						i(41891),
+						i(41905),
+						i(41932),
+					}),
+					q(12652,  {  -- Feedin' Da Goolz
+						i(39812),
+						i(39876),
+						i(39880),
+						i(39882),
+					}),
+					q(12674,  {  -- Hell Hath a Fury
+						i(39791),
+						i(39859),
+						i(39839),
+						i(39841),
+					}),
+					q(12709,  {  -- Hexed Caches
+						i(39797),
+						i(39863),
+						i(39849),
+					}),
+					q(12661,  {  -- Infiltrating Voltarus
+						i(39809),
+						i(39869),
+						i(39866),
+						i(39870),
+						i(39830),
+					}),
+					q(12512,  {  -- Leave No One Behind
+						i(39807),
+						i(39868),
+						i(39857),
+						i(39860),
+					}),
+					q(12554,  {  -- Malas the Corrupter
+						i(43160),
+						i(43161),
+						i(43162),
+						i(43163),
+					}),
+					q(12596,  {  -- Pa'Troll
+						i(39800),
+						i(39864),
+						i(39850),
+						i(39851),
+						i(39827),
+					}),
+					q(12740,  {  -- Parachutes for the Argent Crusade
+						i(39779),
+						i(39799),
+						i(39801),
+						i(39820),
+					}),
+					q(12510,  {  -- Precious Elemental Fluids
+						i(39781),
+						i(39842),
+						i(39803),
+						i(39805),
+					}),
+					q(12584,  {  -- Pure Evil
+						i(39773),
+						i(39837),
+						i(39795),
+					}),
+					q(12721,  {  -- Rampage
+						i(39794),
+						i(39862),
+						i(39846),
+						i(39847),
+					}),
+					q(12676,  {  -- Sabotage
+						i(39873),
+						i(39875),
+						i(39877),
+					}),
+					q(12669,  {  -- So Far, So Bad
+						i(39810),
+						i(39871),
+						i(39872),
+						i(39874),
+					}),
+					q(12609,  {  -- Stocking the Shelves
+						i(39865),
+						i(39852),
+						i(39853),
+						i(39802),
+						i(39829),
+					}),
+					q(12903,  {  -- That's What Friends Are For...
+						i(39886),
+						i(39816),
+						i(39890),
+					}),
+					q(12948,  {  -- The Champion of Anguish
+						i(41815),
+						i(41821),
+						i(41825),
+						i(41816),
+						i(41822),
+						i(41824),
+					}),
+					q(12639,  {  -- The Frozen Earth
+						i(39772),
+						i(39835),
+						i(39783),
+					}),
+					q(12622,  {  -- The Leaders at Jin'Alai
+						i(39775),
+						i(39838),
+						i(39796),
+					}),
+					q(12919,  {  -- The Storm King's Vengeance
+						i(41826),
+						i(41829),
+						i(41844),
+						i(41845),
+						i(41846),
+					}),
+					q(12859, {	-- This Just In: Fire Still Hot!
+						i(41755), -- The Fire Extinguisher
+					}),
+					q(12516,  {  -- Too Much of a Good Thing
+						i(39785),
+						i(39843),
+						i(39815),
+						i(39817),
+					}),
+					q(12861,  {  -- Trolls Is Gone Crazy!
+						i(41760),
+						i(41761),
+						i(41762),
+						i(41763),
+					}),
+					q(12857,  {  -- Wanted: Ragemane's Flipper
+						i(41987),
+						i(44734),
+						i(44735),
+						i(44736),
+					}),
+					q(12707,  {  -- Wooly Justice
+						i(39770),
+						i(39833),
+						i(39776),
+						i(39778),
+						i(39818),
+					}),
+					q(12685,  {  -- You Reap What You Sow
+						i(39844),
+						i(39861),
+						i(39845),
+						i(39826),
+					}),
+				}),	
+				n(-16, { 	-- Rares	
+					n(32447, { -- Zul'drak Sentinel
+						i(44677),
+					}), 
+					n(32471, { -- Griegen
+						i(44686),
+					}), 
+					n(32475, { -- Terror Spinner
+						i(44685),
+					}), 
+	--				n(33776, { -- Gondria -- Drops Ring			}),
+				}),
+			},
+			["Lvl"] = 73,	
+			["achievementID"] = 1267,
+			["description"] = "|cff66ccffZul'Drak is a zone in central Northrend, intended for level 75+ players leveling. It is the home of the Drakkari ice trolls, who have gone insane after sacrificing their loa gods to fight off the Scourge. The Argent Dawn and the Zandalari tribe have tried to restore order to the zone, after its decimation and betrayal by Drakkuru. The zone is covered in Scourge blight and abandoned ziggurats, with Gundrak at its pinnacle.|r",				
+		}),
+	}),
+};

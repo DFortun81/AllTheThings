@@ -1,0 +1,17 @@
+## Author: Crieve-Sargeras
+## Interface: 70300
+## Title: AllTheThings
+## Name: AllTheThings
+## SavedVariables: AllTheThingsAD
+## SavedVariablesPerCharacter: AllTheThingsPCD
+## Notes: Finally a collections solution that actually works.
+## Version: 1.4.8
+lib\LibStub\LibStub.lua
+lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
+lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
+lib\!NoTaint_UIDropDownMenu\UIDropDownMenu.xml
+AllTheThings.lua
+locales\enUS.lua
+db\Presets.lua
+db\RaceDB.lua
+db\SourceDB.lua
