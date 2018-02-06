@@ -28,12 +28,12 @@ _.WorldDrops =
 				i(68749),
 				i(68755),
 				i(68747),
-				i(10554),
-				i(10553),
-				i(15304),
-				i(15303),
-				i(9756),
-				i(9757),
+				i(10554),	-- Foreman Pants
+				i(10553),	-- Foreman Vest
+				i(15304),	-- Grizzly Jerkin
+				i(15303),	-- Grizzly Pants
+				i(9756),	-- Gypsy Trousers
+				i(9757),	-- Gypsy Tunic
 				i(68752),
 				i(68761),
 				i(68753),
@@ -136,41 +136,41 @@ _.WorldDrops =
 				i(6576),	-- Defender Girdle
 				i(6578),	-- Defender Leggings
 				i(6580),	-- Defender Tunic
-				i(15306),
-				i(15308),
-				i(15310),
-				i(15311),
-				i(15312),
-				i(15305),
-				i(6382),
-				i(3057),
-				i(3202),
-				i(3055),
-				i(3058),
-				i(4709),
-				i(3056),
-				i(9814),
-				i(9810),
-				i(9811),
-				i(9818),
-				i(9813),
-				i(9815),
-				i(9817),
-				i(9768),
-				i(9771),
-				i(9772),
-				i(10287),
-				i(9773),
-				i(9767),
-				i(9766),
-				i(9774),
-				i(15506),
-				i(15510),
-				i(15507),
-				i(15514),
-				i(15509),
-				i(15511),
-				i(15513),
+				i(15306),	-- Feral Bindings
+				i(15308),	-- Feral Cord
+				i(15310),	-- Feral Gloves
+				i(15311),	-- Feral Harness
+				i(15312),	-- Feral Leggings
+				i(15305),	-- Feral Shoes
+				i(6382),	-- Forest Leather Belt
+				i(3057),	-- Forest Leather Boots
+				i(3202),	-- Forest Leather Bracers
+				i(3055),	-- Forest Leather Chestpiece
+				i(3058),	-- Forest Leather Gloves
+				i(4709),	-- Forest Leather Mantle
+				i(3056),	-- Forest Leather Pants
+				i(9814),	-- Fortified Belt
+				i(9810),	-- Fortified Boots
+				i(9811),	-- Fortified Bracers
+				i(9818),	-- Fortified Chain
+				i(9813),	-- Fortified Gauntlets
+				i(9815),	-- Fortified Leggings
+				i(9817),	-- Fortified Spaulders
+				i(9768),	-- Greenweave Bracers
+				i(9771),	-- Greenweave Gloves
+				i(9772),	-- Greenweave Leggings
+				i(10287),	-- Greenweave Mantle
+				i(9773),	-- Greenweave Robe
+				i(9767),	-- Greenweave Sandals
+				i(9766),	-- Greenweave Sash
+				i(9774),	-- Greenweave Vest
+				i(15506),	-- Grunt's Ankle Wraps
+				i(15510),	-- Grunt's Belt
+				i(15507),	-- Grunt's Bracers
+				i(15514),	-- Grunt's Chestpiece
+				i(15509),	-- Grunt's Handwraps
+				i(15511),	-- Grunt's Legguards
+				i(15513),	-- Grunt's Pauldrons
 				i(14743),
 				i(14746),
 				i(14742),
@@ -388,30 +388,30 @@ _.WorldDrops =
 				i(6397),	-- Emblazoned Gloves
 				i(6398),	-- Emblazoned Belt
 				i(6399),	-- Emblazoned Shoulders
-				i(14759),
-				i(14760),
-				i(14761),
-				i(14762),
-				i(14764),
-				i(14765),
-				i(14766),
-				i(14767),
-				i(15142),
-				i(15143),
-				i(15144),
-				i(15146),
-				i(15148),
-				i(15149),
-				i(15150),
-				i(15151),
-				i(4071),
-				i(4072),
-				i(4073),
-				i(4712),
-				i(6386),
-				i(6387),
-				i(6388),
-				i(6389),
+				i(14759),	-- Enduring Bracers
+				i(14760),	-- Enduring Breastplate
+				i(14761),	-- Enduring Belt
+				i(14762),	-- Enduring Boots
+				i(14764),	-- Enduring Gauntlets
+				i(14765),	-- Enduring Circlet
+				i(14766),	-- Enduring Breeches
+				i(14767),	-- Enduring Pauldrons
+				i(15142),	-- Ghostwalker Boots
+				i(15143),	-- Ghostwalker Bindings
+				i(15144),	-- Ghostwalker Rags
+				i(15146),	-- Ghostwalker Crown
+				i(15148),	-- Ghostwalker Belt
+				i(15149),	-- Ghostwalker Gloves
+				i(15150),	-- Ghostwalker Pads
+				i(15151),	-- Ghostwalker Legguards
+				i(4071),	-- Glimmering Mail Breastplate
+				i(4072),	-- Glimmering Mail Gauntlets
+				i(4073),	-- Glimmering Mail Greaves
+				i(4712),	-- Glimmering Mail Girdle
+				i(6386),	-- Glimmering Mail Legguards
+				i(6387),	-- Glimmering Mail Bracers
+				i(6388),	-- Glimmering Mail Pauldrons
+				i(6389),	-- Glimmering Mail Coif
 				i(15349),
 				i(15350),
 				i(15351),
@@ -717,23 +717,23 @@ _.WorldDrops =
 				i(14234),	-- Embersilk Robes
 				i(14235),	-- Embersilk Cord
 				i(14236),	-- Embersilk Boots
-				i(14216),
-				i(14217),
-				i(14218),
-				i(14220),
-				i(14221),
-				i(14222),
-				i(14223),
-				i(14224),
-				i(14225),
-				i(4058),
-				i(4059),
-				i(4060),
-				i(4731),
-				i(6419),
-				i(6420),
-				i(6421),
-				i(6422),
+				i(14216),	-- Geomancer's Jerkin
+				i(14217),	-- Geomancer's Cord
+				i(14218),	-- Geomancer's Boots
+				i(14220),	-- Geomancer's Cap
+				i(14221),	-- Geomancer's Bracers
+				i(14222),	-- Geomancer's Gloves
+				i(14223),	-- Geomancer's Spaulders
+				i(14224),	-- Geomancer's Trousers
+				i(14225),	-- Geomancer's Wraps
+				i(4058),	-- Glyphed Breastplate
+				i(4059),	-- Glyphed Bracers
+				i(4060),	-- Glyphed Leggings
+				i(4731),	-- Glyphed Epaulets
+				i(6419),	-- Glyphed Mitts
+				i(6420),	-- Glyphed Boots
+				i(6421),	-- Glyphed Belt
+				i(6422),	-- Glyphed Helm
 				i(14588),
 				i(14589),
 				i(14590),
@@ -1083,56 +1083,56 @@ _.WorldDrops =
 				i(9971),	-- Embossed Plate Pauldrons
 				i(9972),	-- Embossed Plate Bracers
 				i(9973),	-- Embossed Plate Boots
-				i(9285),
-				i(9286),
-				i(9287),
-				i(9288),
-				i(9289),
-				i(9290),
-				i(9291),
-				i(9292),
-				i(15629),
-				i(15630),
-				i(15631),
-				i(15634),
-				i(15635),
-				i(15636),
-				i(15637),
-				i(15638),
-				i(14268),
-				i(14269),
-				i(14271),
-				i(14272),
-				i(14273),
-				i(14274),
-				i(14275),
-				i(14276),
-				i(14277),
-				i(7517),
-				i(7518),
-				i(7519),
-				i(7520),
-				i(7521),
-				i(7522),
-				i(7523),
-				i(7525),
-				i(7526),
-				i(10086),
-				i(10087),
-				i(10088),
-				i(10089),
-				i(10090),
-				i(10091),
-				i(10092),
-				i(10094),
-				i(15619),
-				i(15620),
-				i(15622),
-				i(15623),
-				i(15625),
-				i(15626),
-				i(15627),
-				i(15628),
+				i(9285),	-- Field Plate Vambraces
+				i(9286),	-- Field Plate Armor
+				i(9287),	-- Field Plate Gauntlets
+				i(9288),	-- Field Plate Girdle
+				i(9289),	-- Field Plate Boots
+				i(9290),	-- Field Plate Helmet
+				i(9291),	-- Field Plate Leggings
+				i(9292),	-- Field Plate Pauldrons
+				i(15629),	-- Formidable Bracers
+				i(15630),	-- Formidable Sabatons
+				i(15631),	-- Formidable Chestpiece
+				i(15634),	-- Formidable Circlet
+				i(15635),	-- Formidable Gauntlets
+				i(15636),	-- Formidable Belt
+				i(15637),	-- Formidable Legguards
+				i(15638),	-- Formidable Shoulder Pads
+				i(14268),	-- Gaea's Cuffs
+				i(14269),	-- Gaea's Slippers
+				i(14271),	-- Gaea's Circlet
+				i(14272),	-- Gaea's Handwraps
+				i(14273),	-- Gaea's Amice
+				i(14274),	-- Gaea's Leggings
+				i(14275),	-- Gaea's Raiment
+				i(14276),	-- Gaea's Belt
+				i(14277),	-- Gaea's Tunic
+				i(7517),	-- Gossamer Tunic
+				i(7518),	-- Gossamer Robe
+				i(7519),	-- Gossamer Pants
+				i(7520),	-- Gossamer Headpiece
+				i(7521),	-- Gossamer Gloves
+				i(7522),	-- Gossamer Boots
+				i(7523),	-- Gossamer Shoulderpads
+				i(7525),	-- Gossamer Bracers
+				i(7526),	-- Gossamer Belt
+				i(10086),	-- Gothic Plate Armor
+				i(10087),	-- Gothic Plate Gauntlets
+				i(10088),	-- Gothic Plate Girdle
+				i(10089),	-- Gothic Sabatons
+				i(10090),	-- Gothic Plate Helmet
+				i(10091),	-- Gothic Plate Leggings
+				i(10092),	-- Gothic Plate Spaulders
+				i(10094),	-- Gothic Plate Vambraces
+				i(15619),	-- Gryphon Mail Belt
+				i(15620),	-- Gryphon Mail Bracelets
+				i(15622),	-- Gryphon Mail Breastplate
+				i(15623),	-- Gryphon Mail Crown
+				i(15625),	-- Gryphon Mail Gauntlets
+				i(15626),	-- Gryphon Mail Greaves
+				i(15627),	-- Gryphon Mail Legguards
+				i(15628),	-- Gryphon Mail Pauldrons
 				i(10238),
 				i(10239),
 				i(10240),
@@ -1519,47 +1519,47 @@ _.WorldDrops =
 				i(10280),	-- Emerald Legplates
 				i(10281),	-- Emerald Pauldrons
 				i(10282),	-- Emerald Vambraces
-				i(10229),
-				i(10230),
-				i(10232),
-				i(10233),
-				i(10234),
-				i(10235),
-				i(10236),
-				i(10237),
-				i(14328),
-				i(14329),
-				i(14330),
-				i(14332),
-				i(14333),
-				i(14334),
-				i(14335),
-				i(14336),
-				i(14337),
-				i(14975),
-				i(14976),
-				i(14977),
-				i(14978),
-				i(14979),
-				i(14980),
-				i(14981),
-				i(14983),
-				i(14966),
-				i(14967),
-				i(14968),
-				i(14969),
-				i(14970),
-				i(14971),
-				i(14972),
-				i(14974),
-				i(15188),
-				i(15189),
-				i(15191),
-				i(15192),
-				i(15193),
-				i(15194),
-				i(15195),
-				i(15693),
+				i(10229),	-- Engraved Bracers
+				i(10230),	-- Engraved Breastplate
+				i(10232),	-- Engraved Gauntlets
+				i(10233),	-- Engraved Girdle
+				i(10234),	-- Engraved Boots
+				i(10235),	-- Engraved Helm
+				i(10236),	-- Engraved Leggings
+				i(10237),	-- Engraved Pauldrons
+				i(14328),	-- Eternal Chestguard
+				i(14329),	-- Eternal Boots
+				i(14330),	-- Eternal Bindings
+				i(14332),	-- Eternal Crown
+				i(14333),	-- Eternal Gloves
+				i(14334),	-- Eternal Sarong
+				i(14335),	-- Eternal Spaulders
+				i(14336),	-- Eternal Wraps
+				i(14337),	-- Eternal Cord
+				i(14975),	-- Exalted Harness
+				i(14976),	-- Exalted Gauntlets
+				i(14977),	-- Exalted Girdle
+				i(14978),	-- Exalted Sabatons
+				i(14979),	-- Exalted Helmet
+				i(14980),	-- Exalted Legplates
+				i(14981),	-- Exalted Epaulets
+				i(14983),	-- Exalted Armsplints
+				i(14966),	-- Glorious Breastplate
+				i(14967),	-- Glorious Gauntlets
+				i(14968),	-- Glorious Belt
+				i(14969),	-- Glorious Headdress
+				i(14970),	-- Glorious Legplates
+				i(14971),	-- Glorious Shoulder Pads
+				i(14972),	-- Glorious Sabatons
+				i(14974),	-- Glorious Bindings
+				i(15188),	-- Grand Armguards
+				i(15189),	-- Grand Boots
+				i(15191),	-- Grand Belt
+				i(15192),	-- Grand Gauntlets
+				i(15193),	-- Grand Crown
+				i(15194),	-- Grand Legguards
+				i(15195),	-- Grand Breastplate
+				i(15693),	-- Grand Shoulders
 				i(8302),
 				i(8303),
 				i(8305),
