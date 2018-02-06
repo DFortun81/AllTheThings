@@ -100,3 +100,5 @@ i(155656, 258022); -- Lightforged Felcrusher
 i(156486, 259202); -- Starcursed Voidstrider
 i(156487, 258845); -- Nightborne Manasaber
 i(155662, 258060); -- Highmountain Thunderhoof
+i(153540, 255696); -- Gilded Ravasaur
+i(153539, 255695); -- Seabraid Stallion
