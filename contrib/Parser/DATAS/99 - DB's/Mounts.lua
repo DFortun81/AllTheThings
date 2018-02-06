@@ -96,3 +96,7 @@ i(153485, 247448); -- Darkmoon Dirigible
 i(151617, 245725); -- Orgrimmar Interceptor
 i(151618, 245723); -- Stormwind Skychaser
 i(103630, 30174); -- Lucky Riding Turtle
+i(155656, 258022); -- Lightforged Felcrusher
+i(156486, 259202); -- Starcursed Voidstrider
+i(156487, 258845); -- Nightborne Manasaber
+i(155662, 258060); -- Highmountain Thunderhoof
