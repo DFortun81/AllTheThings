@@ -6,9 +6,6 @@ local i = function(itemID, mountID)
 	return item;
 end
 
-i(63039, 88741).creatureID = 47647; -- Drake of the West Wind (Alliance)
-i(65356, 88741).creatureID = 47647; -- Drake of the West Wind (Horde)
-
 i(8586, 16084);		-- Whistle of the Mottled Red Raptor
 i(8628, 10792);		-- Reins of the Spotted Nightsaber
 i(12325, 16058);	-- Reins of the Primal Leopard
@@ -43,6 +40,8 @@ i(46750, 65641); 	-- Great Golden Kodo
 i(46751, 65639); 	-- Swift Red Hawkstrider
 i(46752, 65640); 	-- Swift Gray Steed
 i(46778, 65917);	-- Magic Rooster Egg
+i(63039, 88741).creatureID = 47647; --	Drake of the West Wind (Alliance)
+i(65356, 88741).creatureID = 47647; --	Drake of the West Wind (Horde)
 i(74269, 74856);	-- Blazing Hippogryph
 i(87795, 127286);	-- Reins of the Black Dragon Turtle
 i(87799, 127289);	-- Reins of the Purple Dragon Turtle
@@ -56,49 +55,45 @@ i(91009, 127287);	-- Reins of the Blue Dragon Turtle
 i(91010, 120822);	-- Reins of the Great Red Dragon Turtle
 i(91013, 127302);	-- Reins of the Great Blue Dragon Turtle
 i(91015, 127310);	-- Reins of the Great Purple Dragon Turtle
+i(103630, 30174);	-- Lucky Riding Turtle
+i(122703, 179244);	-- Chauffeured Chopper
 i(128480, 190690);	-- Bristling Hellboar
 i(128526, 190977);	-- Deathtusk Felboar
-i(122703, 179244);	-- Chauffeured Chopper 
 i(142224, 229377); 	-- High Priest's Lightsworn Seeker
 i(147901, 243512);	-- Luminous Starseeker
-
------------------
------- ADD ------
------------------
-i(152905, 253661); -- Crimson Slavermaw
-i(152790, 243652); -- Vile Fiend
-i(152843, 235764); -- Darkspore Mana Ray Mount
-i(152841, 253108); -- Felglow Mana Ray Mount
-i(152840, 253109); -- Scintillating Mana Ray Mount
-i(152842, 253106); -- Vibrant Mana Ray Mount
-i(152904, 253662); -- Acid Belcher
-i(152844, 253107); -- Lambent Mana Ray
-i(152814, 253058); -- Maddened Chaorunner
-i(153041, 254260); -- Bleakhoof Ruinstrider
-i(152903, 253660); -- Biletooth Gnasher Mount
-i(151623, 247402); -- Lucid Nightmare Mount
-i(152912, 253711); -- Pond Nettle
-i(153044, 254259); -- Avenging Felcrusher Mount
-i(153043, 254258); -- Blessed Felcrusher Mount
-i(153042, 254069); -- Glorious Felcrusher Mount
-i(152788, 239013); -- Lightforged Warframe Mount
-i(152794, 253004); -- Reins of the Amethyst Ruinstrider Mount
-i(152795, 253005); -- Reins of the Beryl Ruinstrider Mount
-i(152797, 253007); -- Reins of the Cerulean Ruinstrider Mount
-i(152793, 253006); -- Reins of the Russet Ruinstrider Mount
-i(152791, 242305); -- Reins of the Sable Ruinstrider Mount
-i(152796, 253008); -- Reins of the Umber Ruinstrider Mount
-i(152901, 253639); -- Kirin Tor Summoning Crystal
-i(152815, 253087); -- Antoran Gloomhound
-i(152789, 243651); -- Shackled Ur'zul
-i(152816, 253088); -- Antoran Charhound
-i(153485, 247448); -- Darkmoon Dirigible
-i(151617, 245725); -- Orgrimmar Interceptor
-i(151618, 245723); -- Stormwind Skychaser
-i(103630, 30174); -- Lucky Riding Turtle
-i(155656, 258022); -- Lightforged Felcrusher
-i(156486, 259202); -- Starcursed Voidstrider
-i(156487, 258845); -- Nightborne Manasaber
-i(155662, 258060); -- Highmountain Thunderhoof
-i(153540, 255696); -- Gilded Ravasaur
-i(153539, 255695); -- Seabraid Stallion
+i(151617, 245725);	-- Orgrimmar Interceptor
+i(151618, 245723);	-- Stormwind Skychaser
+i(151623, 247402);	-- Lucid Nightmare Mount
+i(152788, 239013);	-- Lightforged Warframe Mount
+i(152789, 243651);	-- Shackled Ur'zul
+i(152790, 243652);	-- Vile Fiend
+i(152791, 242305);	-- Reins of the Sable Ruinstrider Mount
+i(152793, 253006);	-- Reins of the Russet Ruinstrider Mount
+i(152794, 253004);	-- Reins of the Amethyst Ruinstrider Mount
+i(152795, 253005);	-- Reins of the Beryl Ruinstrider Mount
+i(152796, 253008);	-- Reins of the Umber Ruinstrider Mount
+i(152797, 253007);	-- Reins of the Cerulean Ruinstrider Mount
+i(152814, 253058);	-- Maddened Chaorunner
+i(152815, 253087);	-- Antoran Gloomhound
+i(152816, 253088);	-- Antoran Charhound
+i(152840, 253109);	-- Scintillating Mana Ray Mount
+i(152841, 253108);	-- Felglow Mana Ray Mount
+i(152842, 253106);	-- Vibrant Mana Ray Mount
+i(152843, 235764);	-- Darkspore Mana Ray Mount
+i(152844, 253107);	-- Lambent Mana Ray
+i(152901, 253639);	-- Kirin Tor Summoning Crystal
+i(152903, 253660);	-- Biletooth Gnasher Mount
+i(152904, 253662);	-- Acid Belcher
+i(152905, 253661);	-- Crimson Slavermaw
+i(152912, 253711);	-- Pond Nettle
+i(153041, 254260);	-- Bleakhoof Ruinstrider
+i(153042, 254069);	-- Glorious Felcrusher Mount
+i(153043, 254258);	-- Blessed Felcrusher Mount
+i(153044, 254259);	-- Avenging Felcrusher Mount
+i(153485, 247448);	-- Darkmoon Dirigible
+i(153539, 255695);	-- Seabraid Stallion
+i(153540, 255696);	-- Gilded Ravasaur
+i(155656, 258022);	-- Lightforged Felcrusher
+i(155662, 258060);	-- Highmountain Thunderhoof
+i(156486, 259202);	-- Starcursed Voidstrider
+i(156487, 258845);	-- Nightborne Manasaber
