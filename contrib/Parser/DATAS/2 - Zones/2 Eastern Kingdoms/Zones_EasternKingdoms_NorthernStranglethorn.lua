@@ -6,17 +6,46 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(37, {		-- Northern Stranglethorn
 			["groups"] = {
+--[[			
 				n(-3, { 	-- Holidays
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+								qg(15596, q(  8716)),	-- Starglade the Elder
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+						["u"] = 17,
+					}),				
 					n(-53, {	-- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, {	-- Quests
+								o(207983, {	-- Horde Bonfire
+									qa(28911),	-- Desecrate this Fire!
+									qg(51574, qa(28922)),	-- Honor the Flame
+									qg(51582, qh(28924)),	-- Honor the Flame
+								}),
+								o(207982, {	-- Alliance Bonfire
+									qh(28910),	-- Desecrate this Fire!
+								}),
 								qg(25962, qa( 11882)),	-- Playing with Fire
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
 						["u"] = 21,
 					}),
+					n(-58, {     -- Hallow's End
+						["groups"] = {
+							n(-17, { 	-- Quests
+								qa(28964),	-- Candy Bucket
+								qh(12382),	-- Candy Bucket
+							}),
+						},
+						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["u"] = 26,
+					}),	
 				}),
+--]]				
 				n(-25, { 	-- Pet Battle
 					p(406), 	-- Beetle
 					p(421), 	-- Crimson Moth
@@ -34,199 +63,179 @@ _.Zones =
 							i(44820),	-- TOY! Red Ribbon Pet Leash
 						}),
 					}),
-					qa(31852),	-- Steven Lisbane
+--					qg(63194, q( 31852)),	-- Steven Lisbane (DAILY VERSION)
 				}),
 				n(-17, { 	-- Quests
 --[[
-					qg(, qh(26317)),	-- A Lashtail Hatchling
-					qg(, q( 26764)),	-- A New Low
-					qg(, qh(26325)),	-- A Nose for This Sort of Thing
-					qg(, qa(26746)),	-- A Nose for This Sort of Thing
+					qg( 2465, qh(26317)),	-- A Lashtail Hatchling
+--					q( 26764),	-- A New Low (REMOVED)
+					qg(43884, qa(26746)),	-- A Nose for This Sort of Thing
 --]]
 					qg(43884, qa(26747, { -- A Physical Specimen
-						i( 61064),
-						i( 61063),
-						i( 61062),
-						i(131595),
-						i(156989), -- Gan'zulah's Headchopper
+						i( 61064),	-- Electrostatic Legguards
+						i( 61063),	-- Discarded Troll Leggings
+						i( 61062),	-- Juju Belt
+						i(131595),	-- Discarded Troll Greaves
+						i(156989),	-- Gan'zulah's Headchopper
 					})),
 --[[
-					qg(, qa(29155)),	-- A Shiny Reward
-					qg(, qh(29253)),	-- A Shiny Reward
-					qg(, qh(26404)),	-- Above My Pay Grade
-					qg(, q(  3721)),	-- An OOX of Your Own
+					qg(53151, qa(29155)),	-- A Shiny Reward (add'l QG 2496)
+					qg(53151, qh(29253)),	-- A Shiny Reward (add'l QG 2496)
+					qg(42814, qh(26404)),	-- Above My Pay Grade
+					qg( 7406, q(  3721)),	-- An OOX of Your Own
 --]]
 					qg(17094, qh( 9457, { -- An Unusual Patron
-						i( 61093),
-						i( 61092),
-						i( 61091),
-						i(131255),
+						i( 61093),	-- Junglewalker Boots
+						i( 61092),	-- Monnions of Raw Power
+						i( 61091),	-- Blade of Exotic Magic
+						i(131255),	-- Shouldersguards of Raw Power
 					})),
---[[
-					qg(, q(  7838)),	-- Arena Grandmaster
-					qg(, q(  4621)),	-- Avast Ye, Admiral!
-					qg(, q(  1036)),	-- Avast Ye, Scallywag
---]]
 					qg(  739, qa(26732, { -- Bad Medicine
-						i( 61054),
-						i( 61053),
-						i( 61052),
-						i(131591),
+						i( 61054),	-- Nimetz's Pauldrons
+						i( 61053),	-- Cord of the Ascetic
+						i( 61052),	-- Missionary's Leggings
+						i(131591),	-- Cinch of the Ascetic
 					})),
 --[[
-					qg(, qa(29151)),	-- Bad Supplies
-					qg(, qh(29238)),	-- Bad Supplies
+					qg(52234, qa(29151)),	-- Bad Supplies
+					qg(52234, qh(29238)),	-- Bad Supplies
 --]]
 					qg(44017, qa(26775, { -- Be Raptor
-						i( 61079),
-						i( 61078),
-						i( 61077),
-						i(131599),
+						i( 61079),	-- Belt of the High Shaman
+						i( 61078),	-- Thaalia's Slippers
+						i( 61077),	-- Jingle Spirits' Embrace
+						i(131599),	-- Waistguard of the High Shaman
 					})),
 					qg(42812, qh(26362, { -- Be Raptor
-						i( 61122),
-						i( 61121),
-						i( 61120),
-						i(131515),
+						i( 61122),	-- Belt of the High Shaman
+						i( 61121),	-- Hu'rula's Slippers
+						i( 61120),	-- Jungle Spirits' Embrace
+						i(131515),	-- Waistguard of the High Shaman
 					})),
 					qg(  715, q(   208, { -- Big Game Hunter
-						i( 61127),
-						i( 61126),
-						i( 61125),
-						i( 61124),
-						i(131202),
+						i( 61127),	-- Gloves of the Jungle King
+						i( 61126),	-- Mantle of the White Tiger
+						i( 61125),	-- Nesingwary's Sash
+						i( 61124),	-- Bangalash's Claw
+						i(131202),	-- Monnion of the White Tiger
+--						i( 17687),	-- Master Hunter's Rifle (REMOVED)
 					})),
 --[[
-					qg(, q( 31728)),	-- Bill Buckler
-					qg(, qh(26334)),	-- Bloodlord Mandokir
-					qg(, qa(26748)),	-- Bloodlord Mandokir
-					qg(, qa(26742)),	-- Bloodscalp Insight
-					qg(, qh( 9436)),	-- Bloodscalp Insight
-					qg(, qh(29232)),	-- Bury Me With Me Boots...
-					qg(, qa(29121)),	-- Bury Me With Me Boots...
-					qg(, qh(29219)),	-- Bwemba's Spirit
-					qg(, qa(29100)),	-- Bwemba's Spirit
-					qg(, qa(28964)),	-- Candy Bucket
-					qg(, qh(12382)),	-- Candy Bucket
-					qg(, qh(26302)),	-- Chasing Yenniku's Fate
-					qg(, qa(26733)),	-- Control Sample
-					qg(, qh(26352)),	-- Cozzle's Plan
+					qg(63194, q( 31728)),	-- Bill Buckler
+					qg(42790, qh(26334)),	-- Bloodlord Mandokir
+					qg(42790, qa(26748)),	-- Bloodlord Mandokir
+					qg(43886, qa(26742)),	-- Bloodscalp Insight
+					qg(17094, qh( 9436)),	-- Bloodscalp Insight
+					qg(52371, qh(29232)),	-- Bury Me With Me Boots...
+					qg(52371, qa(29121)),	-- Bury Me With Me Boots...
+					qg(  739, qa(26733)),	-- Control Sample
+					qg(42813, qh(26352)),	-- Cozzle's Plan
 --]]
 					qg( 1422, qa(26744, { -- Deep Roots
-						i( 61066),
-						i( 61065),
-						i( 61067),
-						i(131594),
+						i( 61066),	-- Well Crafted Leather Britches
+						i( 61065),	-- Soft Cotton Armbands
+						i( 61067),	-- Rebel Breastplate
+						i(131594),	-- Well Crafted Chain Britches
 					})),
 --[[
-					qg(, qh(29235)),	-- Defend Grom'gol
-					qg(, qa(29131)),	-- Defend the Rebel Camp
-					qg(, qa(11755)),	-- Desecrate this Fire!
-					qg(, qa(11580)),	-- Desecrate this Fire!
-					qg(, qa(11786)),	-- Desecrate this Fire!
-					qg(, qa(28911)),	-- Desecrate this Fire!
-					qg(, qh(11581)),	-- Desecrate this Fire!
-					qg(, qh(11745)),	-- Desecrate this Fire!
-					qg(, qh(11749)),	-- Desecrate this Fire!
-					qg(, qh(28910)),	-- Desecrate this Fire!
-					qg(, qa(11732)),	-- Desecrate this Fire!
-					qg(, qa(11766)),	-- Desecrate this Fire!
-					qg(, q(  9272)),	-- Dressing the Part
+					qg(52996, qh(29235)),	-- Defend Grom'gol
+					qg(52410, qa(29131)),	-- Defend the Rebel Camp
 --]]
 					qg( 2495, q( 26345, { -- Excelsior
-						i(131892),
-						i( 61106),
+						i(131892),	-- Excelsior Footwear
+						i( 61106),	-- Excelsior Waders
 					})),
 --[[
-					qg(, qa(26944)),	-- Exploring Gnomeregan
-					qg(, qh(26323)),	-- Favored Skull
-					qg(, qa(26745)),	-- Favored Skull
-					qg(, qa(29118)),	-- Follow That Cat
-					qg(, qh(29229)),	-- Follow That Cat
-					qg(, qa(26776)),	-- Ghaliri
+					qdg(qg(44018, qa(26944))),	-- Exploring Gnomeregan
+					qg(42736, qh(26323)),	-- Favored Skull
+					qg(42736, qa(26745)),	-- Favored Skull
+					o(208365, {	-- Recently Disturbed Dirt Mound
+						qa(29118),	-- Follow That Cat
+						qh(29229),	-- Follow That Cat
+					}),
+					qg(44017, qa(26776)),	-- Ghaliri
 --]]
 					qg( 2497, qh(26299, { -- Headhunting
-						i(61090),
-						i(61089),
-						i(61088),
-						i(131506),
+						i( 61090),	-- Head Inspector's Gloves
+						i( 61089),	-- Palm Frond Shoulderpads
+						i( 61088),	-- Junglestrider Sandals
+						i(131506),	-- Palm Frond Pauldrons
 					})),
 --[[
-					qg(, qa(28699)),	-- Hero's Call: Northern Stranglethorn Vale!
-					qg(, qa(28922)),	-- Honor the Flame
-					qg(, qh(28924)),	-- Honor the Flame
-					qg(, qa(29213)),	-- How's the Hunter Holding Up?
-					qg(, qh(29231)),	-- How's the Hunter Holding Up?
-					qg(, qh(26298)),	-- Hunt for Yenniku
-					qg(, qh(26321)),	-- I Think She's Hungry
-					qg(, qa(26739)),	-- I Think She's Hungry
-					qg(, qa(11964)),	-- Incense for the Summer Scorchlings
-					qg(, qa(26738)),	-- Just Hatched
-					qg(, qa(26740)),	-- Krazek's Cookery
-					qg(, qh(29250)),	-- Making Contact
-					qg(, qa(29152)),	-- Making Contact
-					qg(, qa(29120)),	-- Mauti
-					qg(, qh(29230)),	-- Mauti
-					qg(, qa(26774)),	-- Mind Control
-					qg(, qh(26360)),	-- Mind Control
-					qg(, qh(26351)),	-- Mind Vision
-					qg(, qa(26772)),	-- Mind Vision
-					qg(, qh(26407)),	-- Mosh'Ogg Handiwork
-					qg(, qa(29105)),	-- Nesingwary Will Know
-					qg(, qh(29223)),	-- Nesingwary Will Know
-					qg(, qh(26300)),	-- Nezzliok Will Know
-					qg(, qa(26780)),	-- Nighttime in the Jungle
-					qg(, qh(26304)),	-- Nighttime in the Jungle
-					qg(, qh(26417)),	-- Northern Stranglethorn: The Fallen Empire
-					qg(, q(   190)),	-- Panther Hunting
+					qg(52234, qa(29213)),	-- How's the Hunter Holding Up?
+					qg(52234, qh(29231)),	-- How's the Hunter Holding Up?
+					qg( 2497, qh(26298)),	-- Hunt for Yenniku
+					qg( 2465, qh(26321)),	-- I Think She's Hungry
+					qg( 1422, qa(26739)),	-- I Think She's Hungry
+					qg( 1422, qa(26738)),	-- Just Hatched
+					qg(  770, qa(26740)),	-- Krazek's Cookery
+					qg(52234, qa(29120)),	-- Mauti
+					qg(52234, qh(29230)),	-- Mauti
+					qg(44017, qa(26774)),	-- Mind Control
+					qg(42812, qh(26360)),	-- Mind Control
+					qg(42812, qh(26351)),	-- Mind Vision
+					qg(44017, qa(26772)),	-- Mind Vision
+					n(  1144, {	-- Mosh'Ogg Witch Doctor
+						i(58491, {	-- Disfigured Mosh'Ogg Hand
+							qh(26407),	-- Mosh'Ogg Handiwork
+						}),
+					}),
+					n(  1142, {	-- Mosh'Ogg Brute
+						i(58491, {	-- Disfigured Mosh'Ogg Hand
+							qh(26407),	-- Mosh'Ogg Handiwork
+						}),
+					}),
+					qg(52281, qa(29105)),	-- Nesingwary Will Know
+					qg(52980, qh(29223)),	-- Nesingwary Will Know
+					qg( 2497, qh(26300)),	-- Nezzliok Will Know
+					qg(44043, qa(26780)),	-- Nighttime in the Jungle
+					qg(42813, qh(26304)),	-- Nighttime in the Jungle
+					qg(  718, q(   190)),	-- Panther Hunting
 --]]
 					qg(  718, q(   193, { -- Panther Mastery
-						i(61109),
-						i(61108),
-						i(61107),
+						i(61109),	-- Bhag'thera's Roar
+						i(61108),	-- Shield of the Panther
+						i(61107),	-- Mantle of the Panther
 					})),
 --[[
-					qg(, q(   192)),	-- Panther Prowess
-					qg(, q(   191)),	-- Panther Stalking
-					qg(, qa(11882)),	-- Playing with Fire
-					qg(, qh(26338)),	-- Population Con-Troll
-					qg(, qa(26751)),	-- Population Con-Troll
-					qg(, qh(26350)),	-- Priestess Hu'rala
-					qg(, qa(26749)),	-- Priestess Thaalia
-					qg(, q(   194)),	-- Raptor Hunting
+					qg(  718, q(   192)),	-- Panther Prowess
+					qg(  718, q(   191)),	-- Panther Stalking
+					qg( 2465, qh(26338)),	-- Population Con-Troll
+					qg(  733, qa(26751)),	-- Population Con-Troll
+					qg( 2497, qh(26350)),	-- Priestess Hu'rala
+					qg(43884, qa(26749)),	-- Priestess Thaalia
+					qg(  715, q(   194)),	-- Raptor Hunting
 --]]
 					qg(  715, q(   197, { -- Raptor Mastery
-						i( 61111),
-						i( 61110),
-						i(131201),
+						i( 61111),	-- Belt of the Raptor
+						i( 61110),	-- Tethis' Skull
+						i(131201),	-- Scale-Cord of the Raptor
 					})),
 --[[
-					qg(, q(   196)),	-- Raptor Prowess
-					qg(, q(   195)),	-- Raptor Stalking
-					qg(, qa(26838)),	-- Rebels Without a Clue
+					qg(  715, q(   196)),	-- Raptor Prowess
+					qg(  715, q(   195)),	-- Raptor Stalking
 --]]
 					qg(  773, qa(26765, { -- Return to Corporal Kaleb
-						i(4124),
+						i(4124),	-- Cap of Harmony
 					})),
 					qg(43886, qa(26743, { -- Sacred to the Bloodscalp
-						i( 61058),
-						i( 61057),
-						i( 61056),
-						i(131593),
+						i( 61058),	-- Tsul'kalu's Strikers
+						i( 61057),	-- Mahamba's Caress
+						i( 61056),	-- Bloodscalp Sandals
+						i(131593),	-- Mahamba's Pauldrons
 					})),
 					qg( 2519, qh(26305, { -- Saving Yenniku
-						i( 61102),
-						i( 61101),
-						i( 61100),
-						i(131508),
+						i( 61102),	-- Nimboya's Legguards
+						i( 61101),	-- Weavers of the Unending Tale
+						i( 61100),	-- Stone Etcher
+						i(131508),	-- Linkers of the Unending Tale
 					})),
 --[[
-					qg(, qh(26359)),	-- See Raptor
-					qg(, qa(26773)),	-- See Raptor
-					qg(, qa(29103)),	-- Serpents and Poison
-					qg(, qh(29221)),	-- Serpents and Poison
-					qg(, qh(26332)),	-- Skullsplitter Mojo
-					qg(, q( 26344)),	-- Some Assembly Required
+					qg(42812, qh(26359)),	-- See Raptor
+					qg(44017, qa(26773)),	-- See Raptor
+					qg(52281, qa(29103)),	-- Serpents and Poison
+					qg(52980, qh(29221)),	-- Serpents and Poison
+					qg 2495(, q( 26344)),	-- Some Assembly Required
 --]]
 					qa(29267, { -- Some Good Will Come (The Zandalar Representative questline)
 						i(68833), -- PET! Panther Cub
@@ -234,138 +243,134 @@ _.Zones =
 					qh(29268, { -- Some Good Will Come (The Zandalari Menace questline)
 						i(68833), -- PET! Panther Cub
 					}),
---					qg(, qa(26736)),	-- Spared from Madness
+--					qg(  469, qa(26736)),	-- Spared from Madness
 					o(2076, {	-- Bubbling Cauldron
+--						qh(26325),	-- A Nose for This Sort of Thing
+--						qh(26302),	-- Chasing Yenniku's Fate
+--						qh(26332),	-- Skullsplitter Mojo
 						qh(26301, { -- Speaking with Nezzliok
-							i( 61099),
-							i( 61098),
-							i( 61097),
-							i(131507),
+							i( 61099),	-- Slaver's Plate
+							i( 61098),	-- Balia'mah Leggings
+							i( 61097),	-- Ziata'jai Bracers
+							i(131507),	-- Balia'mah Chain Pants
 						}),
 						qh(26330, { -- Who's a Big Troll
-							i( 61096),
-							i( 61095),
-							i( 61094),
-							i(131513),
+							i( 61096),	-- Electrostatic Legguards
+							i( 61095),	-- Discarded Troll Leggings
+							i( 61094),	-- Juju Belt
+							i(131513),	-- Discarded Troll Greaves
 							i(156989), -- Gan'zulah's Headchopper
 						}),
 					}),
 --[[
-					qg(, qa(29104)),	-- Spirits Are With Us
-					qg(, qh(29222)),	-- Spirits Are With Us
-					qg(, q(  8716)),	-- Starglade the Elder
-					qg(, q( 31852)),	-- Steven Lisbane
-					qg(, q( 31729)),	-- Steven Lisbane
+					qg(52234, qa(29104)),	-- Spirits Are With Us
+					qg(52234, qh(29222)),	-- Spirits Are With Us
 --]]
 					qg(  469, qa(26737, { -- Stopping Kurzen's Legacy
-						i( 61051),
-						i( 61050),
-						i(131592),
+						i( 61051),	-- Guerilla Breastplate
+						i( 61050),	-- Expedition Scouting Gear
+						i(131592),	-- Expedition Scout's Hauberk
 					})),
 --[[
-					qg(, q( 26343)),	-- Supply and Demand
-					qg(, qh(26386)),	-- Surkhan
+					qg( 2495, q( 26343)),	-- Supply and Demand
+					qg(42812, qh(26386)),	-- Surkhan
 --]]
 					qg(43885, qa(26731, { -- The Altar of Naias
-						i( 61061),
-						i( 61060),
-						i( 61059),
-						i(131590),
+						i( 61061),	-- Junglewalker Boots
+						i( 61060),	-- Salt-Cured Monnions
+						i( 61059),	-- Emerine's Blade
+						i(131590),	-- Salt-Cured Mantle
 					})),
---					qg(, qh(26280)),	-- The Defense of Grom'gol: Murloc Menace
+--					qg( 2464, qh(26280)),	-- The Defense of Grom'gol: Murloc Menace
 					qg( 2464, qh(26279, { -- The Defense of Grom'gol: Ogre Oppression
-						i( 61083),
-						i( 61082),
-						i(131499),
+						i( 61083),	-- Smashing Breastplate
+						i( 61082),	-- Mizjah Vest
+						i(131499),	-- Mizjah Hauberk
 					})),
---					qg(, qh(26278)),	-- The Defense of Grom'gol: Raptor Risk
+--					qg( 2464, qh(26278)),	-- The Defense of Grom'gol: Raptor Risk
 					qg( 2464, qh(26281, { -- The Defense of Grom'gol: Trollish Thievery
-						i( 61086),
-						i( 61085),
-						i( 61084),
-						i(131500),
+						i( 61086),	-- Pitiless Pauldrons
+						i( 61085),	-- Bal'lal Belt
+						i( 61084),	-- Unforgiving Pantaloons
+						i(131500),	-- Bal'lal Waistguard
 					})),
 --[[
-					qg(, qa(26735)),	-- The Fate of Kurzen
-					qg(, q( 26269)),	-- The Green Hills of Stranglethorn
-					qg(, qh(26340)),	-- The Hunt
-					qg(, qa(29115)),	-- The Hunter's Revenge
-					qg(, qh(29227)),	-- The Hunter's Revenge
+					qg(  469, qa(26735)),	-- The Fate of Kurzen
+					qg(  716, q( 26269)),	-- The Green Hills of Stranglethorn
+					qg(17094, qh(26340)),	-- The Hunt
+					qg(52346, qa(29115)),	-- The Hunter's Revenge
+					qg(52294, qh(29227)),	-- The Hunter's Revenge
 --]]
 					qg(44019, qa(26781, { -- The Mind's Eye
-						i( 61070),
-						i( 61069),
-						i( 61068),
-						i(131603),
+						i( 61070),	-- Fort Livingston Legguards
+						i( 61069),	-- Eye-Plucker Gloves
+						i( 61068),	-- Wand of Imagination
+						i(131603),	-- Eye-Plucker Grips
 					})),
 --[[
-					qg(, qh(26303)),	-- The Mind's Eye
-					qg(, qa(26783)),	-- The Mosh'Ogg Bounty
-					qg(, q( 26412)),	-- The Mosh'Ogg Bounty
-					qg(, qh(26399)),	-- The Mosh'Ogg Bounty
-					qg(, qa(26782)),	-- The Mosh'Ogg Bounty
-					qg(, qa(26734)),	-- The Source of the Madness
-					qg(, qh(26400)),	-- The Universal Key
-					qg(, q(   185)),	-- Tiger Hunting
+					qg( 2519, qh(26303)),	-- The Mind's Eye
+					qg(44018, qa(26783)),	-- The Mosh'Ogg Bounty
+--					q( 26412),	-- The Mosh'Ogg Bounty (IN GAME?  identical quest text to quest 26399)
+					qg(42814, qh(26399)),	-- The Mosh'Ogg Bounty
+					qg(44017, qa(26782)),	-- The Mosh'Ogg Bounty
+					qg(  739, qa(26734)),	-- The Source of the Madness
+					qg(42814, qh(26400)),	-- The Universal Key
+					qg(  717, q(   185)),	-- Tiger Hunting
 --]]
 					qg(  717, q(   188, { -- Tiger Mastery
-						i( 61116),
-						i( 61115),
-						i( 61114),
-						i( 61113),
-						i(131200),
+						i( 61116),	-- Tiger Strangler's Bracers
+						i( 61115),	-- Paws of Sin'Dall
+						i( 61114),	-- Cat Lover's Vest
+						i( 61113),	-- Sin'Dall's Femur
+						i(131200),	-- Footpads of Sin'Dall
 					})),
 --[[
-					qg(, q(   187)),	-- Tiger Prowess
-					qg(, q(   186)),	-- Tiger Stalking
-					qg(, qh(29220)),	-- To Bambala
-					qg(, qa(29102)),	-- To Fort Livingston
-					qg(, qh(29236)),	-- To Hardwrench Hideaway
-					qg(, qa(26805)),	-- To the Cape!
-					qg(, qa(29133)),	-- To the Digsite
-					qg(, qa(29114)),	-- Track the Tracker
-					qg(, qh(29226)),	-- Track the Tracker
-					qg(, q(  9259)),	-- Traitor to the Bloodsail
+					qg(  717, q(   187)),	-- Tiger Prowess
+					qg(  717, q(   186)),	-- Tiger Stalking
+					qg(53008, qh(29236)),	-- To Hardwrench Hideaway
+					qg(44018, qa(26805)),	-- To the Cape!
+					qg(52753, qa(29133)),	-- To the Digsite
+					qg(52294, qa(29114)),	-- Track the Tracker
+					qg(52294, qh(29226)),	-- Track the Tracker
+					qg(  , q(  9259)),	-- Traitor to the Bloodsail
 --]]
 					qg(  773, qa(26763, { -- Venture Company Mining
-						i( 61073),
-						i( 61072),
-						i( 61071),
-						i(131598),
-						i(156991),	-- Shredder Arm Extension
+						i( 61073),	-- Spare Metal Pauldrons
+						i( 61072),	-- Bartered Bracers
+						i( 61071),	-- Krazek's Oven Mitts
+						i(131598),	-- Bartered Wristguards
 						i(156990),	-- Crystal-Chipping Mallet
+						i(156991),	-- Shredder Arm Extension
 					})),
 					qg(42814, qh(26403, { -- Venture Company Mining
-						i( 61105),
-						i( 61104),
-						i( 61103),
-						i(131521),
+						i( 61105),	-- Scrap Metal Pauldrons
+						i( 61104),	-- Skeezy Bracers
+						i( 61103),	-- Junglepicker Gloves
+						i(131521),	-- Skeezy Wraps
 						i(156990),	-- Crystal-Chipping Mallet
 					})),
 --[[
-					qg(, qa(29150)),	-- Voodoo Zombies
-					qg(, qh(29237)),	-- Voodoo Zombies
-					qg(, qh(28688)),	-- Warchief's Command: Northern Stranglethorn Vale!
-					qg(, qh(29233)),	-- Warn Grom'gol
-					qg(, qa(29124)),	-- Warn the Rebel Camp
-					qg(, qa(26729)),	-- Water Elementals
-					qg(, q(   583)),	-- Welcome to the Jungle
-					qg(, qh(26416)),	-- Well, Come to the Jungle
-					qg(, qa(26730)),	-- You Can Take the Murloc Out of the Ocean...
+					qg(52234, qa(29150)),	-- Voodoo Zombies
+					qg(52234, qh(29237)),	-- Voodoo Zombies
+					qg(52234, qh(29233)),	-- Warn Grom'gol
+					qg(52234, qa(29124)),	-- Warn the Rebel Camp
+					qg(43885, qa(26729)),	-- Water Elementals
+					qg(  716, q(   583)),	-- Welcome to the Jungle
+					qg(43885, qa(26730)),	-- You Can Take the Murloc Out of the Ocean...
 --]]
 					qg(44021, qa(26779, { -- Zul'Mamwe Mambo
-						i( 61076),
-						i( 61075),
-						i( 61074),
-						i(131601),
-						i(131602),
+						i( 61076),	-- Pauldrons of the Wayward Tribe
+						i( 61075),	-- Breastplate of Zul'Mamwe
+						i( 61074),	-- Irradiated Faux Croc' Bracers
+						i(131601),	-- Hauberk of Zul'Mamwe
+						i(131602),	-- Irradiated Faux Croc' Wristguards
 					})),
 					qg(42811, qh(26405, { -- Zul'Mamwe Mambo
-						i( 61119),
-						i( 61118),
-						i( 61117),
-						i(131522),
-						i(131523),
+						i( 61119),	-- Pauldrons of the Wayward Tribe
+						i( 61118),	-- Breastplate of Zul'Mamwe
+						i( 61117),	-- Irradiated Faux Croc' Bracers
+						i(131522),	-- Hauberk of Zul'Mamwe
+						i(131523),	-- Irradiated Faux Croc' Wristguards
 					})),
 				}),
 				n(-16, { 	-- Rares
