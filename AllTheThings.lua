@@ -1158,6 +1158,13 @@ local function SearchForItemLink(link)
 						group = SearchForSourceIDQuickly(sourceID) or SearchForItemIDQuickly(itemID);
 					end
 					
+					if group and #group > 0 then
+						if group[1].u and numBonusIds and tonumber(numBonusIds) > 0 then
+							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE"));
+							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE_PT2"));
+						end
+					end
+					
 					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 					if sourceInfo then
 						--[[
@@ -1235,6 +1242,13 @@ local function SearchForItemLink(link)
 						group = SearchForItemID(itemID);
 					else
 						group = SearchForItemIDQuickly(itemID);
+					end
+					
+					if group and #group > 0 then
+						if group[1].u and numBonusIds and tonumber(numBonusIds) > 0 then
+							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE"));
+							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE_PT2"));
+						end
 					end
 				end
 				
