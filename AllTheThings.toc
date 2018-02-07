@@ -4,8 +4,8 @@
 ## Name: AllTheThings
 ## SavedVariables: AllTheThingsAD
 ## SavedVariablesPerCharacter: AllTheThingsPCD
-## Notes: Finally a collections solution that actually works.
-## Version: 1.4.8
+## Notes: Addon for Tracking Collections & Account Completion
+## Version: 1.4.9
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
