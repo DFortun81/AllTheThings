@@ -1346,16 +1346,19 @@ _.Zones =
 									i(135965),	-- Vindictive Combatant's Ironskin Legguards
 									i(135962),	-- Vindictive Combatant's Ironskin Slippers
 								}),		
-								i(146265, { -- Vindictive Combatant's Felskin Armor		
-									i(136305),	-- Vindictive Combatant's Felskin Helm
-									i(136308),	-- Vindictive Combatant's Felskin Spaulders
-									i(136894),	-- Vindictive Combatant's Demonthread Cloak
-									i(136307),	-- Vindictive Combatant's Felskin Tunic
-									i(136310),	-- Vindictive Combatant's Felskin Wristguards
-									i(136304),	-- Vindictive Combatant's Felskin Gloves
-									i(136309),	-- Vindictive Combatant's Felskin Belt
-									i(136306),	-- Vindictive Combatant's Felskin Legguards
-									i(136303),	-- Vindictive Combatant's Felskin Boots
+								i(146265, { -- Vindictive Combatant's Felskin Armor	
+									["groups"] = {
+										i(136305),	-- Vindictive Combatant's Felskin Helm
+										i(136308),	-- Vindictive Combatant's Felskin Spaulders
+										i(136894),	-- Vindictive Combatant's Demonthread Cloak
+										i(136307),	-- Vindictive Combatant's Felskin Tunic
+										i(136310),	-- Vindictive Combatant's Felskin Wristguards
+										i(136304),	-- Vindictive Combatant's Felskin Gloves
+										i(136309),	-- Vindictive Combatant's Felskin Belt
+										i(136306),	-- Vindictive Combatant's Felskin Legguards
+										i(136303),	-- Vindictive Combatant's Felskin Boots
+									},
+									["classes"] = { 12 },
 								}),		
 								i(146155, { -- Vindictive Combatant's Chain Armor		
 									i(135949),	-- Vindictive Combatant's Chain Helm
@@ -1479,16 +1482,19 @@ _.Zones =
 									i(145137),	-- Cruel Combatant's Ironskin Legguards
 									i(145131),	-- Cruel Combatant's Ironskin Slippers
 								}),		
-								i(147679, { -- Cruel Combatant's Felskin Armor		
-									i(145073),	-- Cruel Combatant's Felskin Helm
-									i(145077),	-- Cruel Combatant's Felskin Spaulders
-									i(145029),	-- Cruel Combatant's Demonthread Cloak
-									i(145067),	-- Cruel Combatant's Felskin Tunic
-									i(145081),	-- Cruel Combatant's Felskin Wristguards
-									i(145071),	-- Cruel Combatant's Felskin Gloves
-									i(145079),	-- Cruel Combatant's Felskin Belt
-									i(145075),	-- Cruel Combatant's Felskin Legguards
-									i(145069),	-- Cruel Combatant's Felskin Boots
+								i(147679, { -- Cruel Combatant's Felskin Armor	
+									["groups"] = {
+										i(145073),	-- Cruel Combatant's Felskin Helm
+										i(145077),	-- Cruel Combatant's Felskin Spaulders
+										i(145029),	-- Cruel Combatant's Demonthread Cloak
+										i(145067),	-- Cruel Combatant's Felskin Tunic
+										i(145081),	-- Cruel Combatant's Felskin Wristguards
+										i(145071),	-- Cruel Combatant's Felskin Gloves
+										i(145079),	-- Cruel Combatant's Felskin Belt
+										i(145075),	-- Cruel Combatant's Felskin Legguards
+										i(145069),	-- Cruel Combatant's Felskin Boots
+									},
+									["classes"] = { 12 },
 								}),		
 								i(147690, { -- Cruel Combatant's Chain Armor		
 									i(145105),	-- Cruel Combatant's Chain Helm
@@ -2004,15 +2010,18 @@ _.Zones =
 									i(136075),	-- Vindictive Gladiator's Ironskin Slippers
 								}),		
 								i(146270, { -- Vindictive Gladiator's Satin Armor		
-									i(136313),	-- Vindictive Gladiator's Felskin Helm
-									i(136316),	-- Vindictive Gladiator's Felskin Spaulders
-									i(136895),	-- Vindictive Gladiator's Demonthread Cloak
-									i(136315),	-- Vindictive Gladiator's Felskin Tunic
-									i(136318),	-- Vindictive Gladiator's Felskin Wristguards
-									i(136312),	-- Vindictive Gladiator's Felskin Gloves
-									i(136317),	-- Vindictive Gladiator's Felskin Belt
-									i(136314),	-- Vindictive Gladiator's Felskin Legguards
-									i(136311),	-- Vindictive Gladiator's Felskin Boots
+									["groups"] = {
+										i(136313),	-- Vindictive Gladiator's Felskin Helm
+										i(136316),	-- Vindictive Gladiator's Felskin Spaulders
+										i(136895),	-- Vindictive Gladiator's Demonthread Cloak
+										i(136315),	-- Vindictive Gladiator's Felskin Tunic
+										i(136318),	-- Vindictive Gladiator's Felskin Wristguards
+										i(136312),	-- Vindictive Gladiator's Felskin Gloves
+										i(136317),	-- Vindictive Gladiator's Felskin Belt
+										i(136314),	-- Vindictive Gladiator's Felskin Legguards
+										i(136311),	-- Vindictive Gladiator's Felskin Boots
+									},
+									["classes"] = { 12 },
 								}),		
 								i(146226, { -- Vindictive Gladiator's Satin Armor		
 									i(136062),	-- Vindictive Gladiator's Chain Helm
@@ -2136,16 +2145,19 @@ _.Zones =
 									i(144890),	-- Cruel Gladiator's Ironskin Legguards
 									i(144884),	-- Cruel Gladiator's Ironskin Slippers
 								}),		
-								i(147627, { -- Cruel Gladiator's Felskin Armor		
-									i(144826),	-- Cruel Gladiator's Felskin Helm
-									i(144830),	-- Cruel Gladiator's Felskin Spaulders
-									i(144782),	-- Cruel Gladiator's Demonthread Cloak
-									i(144820),	-- Cruel Gladiator's Felskin Tunic
-									i(144834),	-- Cruel Gladiator's Felskin Wristguards
-									i(144824),	-- Cruel Gladiator's Felskin Gloves
-									i(144832),	-- Cruel Gladiator's Felskin Belt
-									i(144828),	-- Cruel Gladiator's Felskin Legguards
-									i(144822),	-- Cruel Gladiator's Felskin Boots
+								i(147627, { -- Cruel Gladiator's Felskin Armor
+									["groups"] = {
+										i(144826),	-- Cruel Gladiator's Felskin Helm
+										i(144830),	-- Cruel Gladiator's Felskin Spaulders
+										i(144782),	-- Cruel Gladiator's Demonthread Cloak
+										i(144820),	-- Cruel Gladiator's Felskin Tunic
+										i(144834),	-- Cruel Gladiator's Felskin Wristguards
+										i(144824),	-- Cruel Gladiator's Felskin Gloves
+										i(144832),	-- Cruel Gladiator's Felskin Belt
+										i(144828),	-- Cruel Gladiator's Felskin Legguards
+										i(144822),	-- Cruel Gladiator's Felskin Boots
+									},
+									["classes"] = { 12 },
 								}),		
 								i(147621, { -- Cruel Gladiator's Chain Armor		
 									i(144858),	-- Cruel Gladiator's Chain Helm
@@ -2509,15 +2521,18 @@ _.Zones =
 									i(135849),	-- Vindictive Combatant's Ironskin Slippers
 								}),		
 								i(146264, { -- Vindictive Combatant's Satin Armor		
-									i(136297),	-- Vindictive Combatant's Felskin Helm
-									i(136300),	-- Vindictive Combatant's Felskin Spaulders
-									i(136893),	-- Vindictive Combatant's Demonthread Cloak
-									i(136299),	-- Vindictive Combatant's Felskin Tunic
-									i(136302),	-- Vindictive Combatant's Felskin Wristguards
-									i(136296),	-- Vindictive Combatant's Felskin Gloves
-									i(136301),	-- Vindictive Combatant's Felskin Belt
-									i(136298),	-- Vindictive Combatant's Felskin Legguards
-									i(136295),	-- Vindictive Combatant's Felskin Boots
+									["groups"] = {
+										i(136297),	-- Vindictive Combatant's Felskin Helm
+										i(136300),	-- Vindictive Combatant's Felskin Spaulders
+										i(136893),	-- Vindictive Combatant's Demonthread Cloak
+										i(136299),	-- Vindictive Combatant's Felskin Tunic
+										i(136302),	-- Vindictive Combatant's Felskin Wristguards
+										i(136296),	-- Vindictive Combatant's Felskin Gloves
+										i(136301),	-- Vindictive Combatant's Felskin Belt
+										i(136298),	-- Vindictive Combatant's Felskin Legguards
+										i(136295),	-- Vindictive Combatant's Felskin Boots
+									},
+									["classes"] = { 12 },
 								}),		
 								i(146154, { -- Vindictive Combatant's Satin Armor		
 									i(135836),	-- Vindictive Combatant's Chain Helm
@@ -2641,16 +2656,19 @@ _.Zones =
 									i(145136),	-- Cruel Combatant's Ironskin Legguards
 									i(145130),	-- Cruel Combatant's Ironskin Slippers
 								}),		
-								i(147680, { -- Cruel Combatant's Felskin Armor		
-									i(145072),	-- Cruel Combatant's Felskin Helm
-									i(145076),	-- Cruel Combatant's Felskin Spaulders
-									i(145028),	-- Cruel Combatant's Demonthread Cloak
-									i(145066),	-- Cruel Combatant's Felskin Tunic
-									i(145080),	-- Cruel Combatant's Felskin Wristguards
-									i(145070),	-- Cruel Combatant's Felskin Gloves
-									i(145078),	-- Cruel Combatant's Felskin Belt
-									i(145074),	-- Cruel Combatant's Felskin Legguards
-									i(145068),	-- Cruel Combatant's Felskin Boots
+								i(147680, { -- Cruel Combatant's Felskin Armor
+									["groups"] = {
+										i(145072),	-- Cruel Combatant's Felskin Helm
+										i(145076),	-- Cruel Combatant's Felskin Spaulders
+										i(145028),	-- Cruel Combatant's Demonthread Cloak
+										i(145066),	-- Cruel Combatant's Felskin Tunic
+										i(145080),	-- Cruel Combatant's Felskin Wristguards
+										i(145070),	-- Cruel Combatant's Felskin Gloves
+										i(145078),	-- Cruel Combatant's Felskin Belt
+										i(145074),	-- Cruel Combatant's Felskin Legguards
+										i(145068),	-- Cruel Combatant's Felskin Boots
+									},
+									["classes"] = { 12 },
 								}),		
 								i(147689, { -- Cruel Combatant's Chain Armor		
 									i(145104),	-- Cruel Combatant's Chain Helm
@@ -2779,16 +2797,19 @@ _.Zones =
 									i(135626),	-- Vindictive Gladiator's Ironskin Legguards
 									i(135623),	-- Vindictive Gladiator's Ironskin Slippers
 								}),		
-								i(146262, { -- Vindictive Gladiator's Satin Armor		
-									i(136281),	-- Vindictive Gladiator's Felskin Helm
-									i(136284),	-- Vindictive Gladiator's Felskin Spaulders
-									i(136891),	-- Vindictive Gladiator's Demonthread Cloak
-									i(136283),	-- Vindictive Gladiator's Felskin Tunic
-									i(136286),	-- Vindictive Gladiator's Felskin Wristguards
-									i(136280),	-- Vindictive Gladiator's Felskin Gloves
-									i(136285),	-- Vindictive Gladiator's Felskin Belt
-									i(136282),	-- Vindictive Gladiator's Felskin Legguards
-									i(136279),	-- Vindictive Gladiator's Felskin Boots
+								i(146262, { -- Vindictive Gladiator's Satin Armor
+									["groups"] = {
+										i(136281),	-- Vindictive Gladiator's Felskin Helm
+										i(136284),	-- Vindictive Gladiator's Felskin Spaulders
+										i(136891),	-- Vindictive Gladiator's Demonthread Cloak
+										i(136283),	-- Vindictive Gladiator's Felskin Tunic
+										i(136286),	-- Vindictive Gladiator's Felskin Wristguards
+										i(136280),	-- Vindictive Gladiator's Felskin Gloves
+										i(136285),	-- Vindictive Gladiator's Felskin Belt
+										i(136282),	-- Vindictive Gladiator's Felskin Legguards
+										i(136279),	-- Vindictive Gladiator's Felskin Boots
+									},
+									["classes"] = { 12 },
 								}),		
 								i(146138, { -- Vindictive Gladiator's Satin Armor		
 									i(135610),	-- Vindictive Gladiator's Chain Helm
@@ -2912,16 +2933,19 @@ _.Zones =
 									i(144644),	-- Cruel Gladiator's Ironskin Legguards
 									i(144638),	-- Cruel Gladiator's Ironskin Slippers
 								}),		
-								i(147651, { -- Cruel Gladiator's Felskin Armor		
-									i(144580),	-- Cruel Gladiator's Felskin Helm
-									i(144584),	-- Cruel Gladiator's Felskin Spaulders
-									i(144536),	-- Cruel Gladiator's Demonthread Cloak
-									i(144574),	-- Cruel Gladiator's Felskin Tunic
-									i(144588),	-- Cruel Gladiator's Felskin Wristguards
-									i(144578),	-- Cruel Gladiator's Felskin Gloves
-									i(144586),	-- Cruel Gladiator's Felskin Belt
-									i(144582),	-- Cruel Gladiator's Felskin Legguards
-									i(144576),	-- Cruel Gladiator's Felskin Boots
+								i(147651, { -- Cruel Gladiator's Felskin Armor	
+									["groups"] = {
+										i(144580),	-- Cruel Gladiator's Felskin Helm
+										i(144584),	-- Cruel Gladiator's Felskin Spaulders
+										i(144536),	-- Cruel Gladiator's Demonthread Cloak
+										i(144574),	-- Cruel Gladiator's Felskin Tunic
+										i(144588),	-- Cruel Gladiator's Felskin Wristguards
+										i(144578),	-- Cruel Gladiator's Felskin Gloves
+										i(144586),	-- Cruel Gladiator's Felskin Belt
+										i(144582),	-- Cruel Gladiator's Felskin Legguards
+										i(144576),	-- Cruel Gladiator's Felskin Boots
+									},
+									["classes"] = { 12 },
 								}),		
 								i(147646, { -- Cruel Gladiator's Chain Armor		
 									i(144612),	-- Cruel Gladiator's Chain Helm
@@ -3686,16 +3710,19 @@ _.Zones =
 									i(136191),	-- Vindictive Gladiator's Ironskin Legguards
 									i(136188),	-- Vindictive Gladiator's Ironskin Slippers
 								}),		
-								i(146271, { -- Vindictive Gladiator's Satin Armor		
-									i(136321),	-- Vindictive Gladiator's Felskin Helm
-									i(136324),	-- Vindictive Gladiator's Felskin Spaulders
-									i(136896),	-- Vindictive Gladiator's Demonthread Cloak
-									i(136323),	-- Vindictive Gladiator's Felskin Tunic
-									i(136326),	-- Vindictive Gladiator's Felskin Wristguards
-									i(136320),	-- Vindictive Gladiator's Felskin Gloves
-									i(136325),	-- Vindictive Gladiator's Felskin Belt
-									i(136322),	-- Vindictive Gladiator's Felskin Legguards
-									i(136319),	-- Vindictive Gladiator's Felskin Boots
+								i(146271, { -- Vindictive Gladiator's Satin Armor
+									["groups"] = {
+										i(136321),	-- Vindictive Gladiator's Felskin Helm
+										i(136324),	-- Vindictive Gladiator's Felskin Spaulders
+										i(136896),	-- Vindictive Gladiator's Demonthread Cloak
+										i(136323),	-- Vindictive Gladiator's Felskin Tunic
+										i(136326),	-- Vindictive Gladiator's Felskin Wristguards
+										i(136320),	-- Vindictive Gladiator's Felskin Gloves
+										i(136325),	-- Vindictive Gladiator's Felskin Belt
+										i(136322),	-- Vindictive Gladiator's Felskin Legguards
+										i(136319),	-- Vindictive Gladiator's Felskin Boots
+									},
+									["classes"] = { 12 },
 								}),		
 								i(146227, { -- Vindictive Gladiator's Satin Armor		
 									i(136175),	-- Vindictive Gladiator's Chain Helm
@@ -3819,16 +3846,19 @@ _.Zones =
 									i(144891),	-- Cruel Gladiator's Ironskin Legguards
 									i(144885),	-- Cruel Gladiator's Ironskin Slippers
 								}),		
-								i(147628, { -- Cruel Gladiator's Felskin Armor		
-									i(144827),	-- Cruel Gladiator's Felskin Helm
-									i(144831),	-- Cruel Gladiator's Felskin Spaulders
-									i(144783),	-- Cruel Gladiator's Demonthread Cloak
-									i(144821),	-- Cruel Gladiator's Felskin Tunic
-									i(144835),	-- Cruel Gladiator's Felskin Wristguards
-									i(144825),	-- Cruel Gladiator's Felskin Gloves
-									i(144833),	-- Cruel Gladiator's Felskin Belt
-									i(144829),	-- Cruel Gladiator's Felskin Legguards
-									i(144823),	-- Cruel Gladiator's Felskin Boots
+								i(147628, { -- Cruel Gladiator's Felskin Armor
+									["groups"] = {
+										i(144827),	-- Cruel Gladiator's Felskin Helm
+										i(144831),	-- Cruel Gladiator's Felskin Spaulders
+										i(144783),	-- Cruel Gladiator's Demonthread Cloak
+										i(144821),	-- Cruel Gladiator's Felskin Tunic
+										i(144835),	-- Cruel Gladiator's Felskin Wristguards
+										i(144825),	-- Cruel Gladiator's Felskin Gloves
+										i(144833),	-- Cruel Gladiator's Felskin Belt
+										i(144829),	-- Cruel Gladiator's Felskin Legguards
+										i(144823),	-- Cruel Gladiator's Felskin Boots
+									},
+									["classes"] = { 12 },
 								}),		
 								i(147622, { -- Cruel Gladiator's Chain Armor		
 									i(144859),	-- Cruel Gladiator's Chain Helm
