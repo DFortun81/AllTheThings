@@ -5,9 +5,14 @@ _.WorldEvents =
 {
 	n(-77, { 	-- Special
 		["groups"] = {
-		   n(-300, { -- Satchel of Helpful Goods
-			["icon"] = "Interface\\Icons\\inv_misc_bag_15",
-			["groups"] = {
+			n(-300, { -- Satchel of Helpful Goods
+				["groups"] = {
+					i(156683, { -- Satchel of Helpful Goods [Level 15-25]
+						["groups"] = {
+						},
+						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-25 range.|r",
+					}),
+			--[[
 			   i(51999, { -- Satchel of Helpful Goods 15-25
 				["groups"] = {
 				   i(51994), -- Tumultuous Cloak
@@ -231,7 +236,10 @@ _.WorldEvents =
 				["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.|r", -- Again, saying 89 because at level 90 you can no longer queue for this.
 			   }),
 			},
-		   }),
+				--]]
+				},
+				["icon"] = "Interface\\Icons\\inv_misc_bag_15",
+			}),
 		   n(-301, { -- Crates of Battlefield Goods
 			["icon"] = "Interface\\Icons\\inv_crate_05",
 			["groups"] = {
