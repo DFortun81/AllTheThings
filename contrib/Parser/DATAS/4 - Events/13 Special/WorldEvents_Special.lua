@@ -9,18 +9,20 @@ _.WorldEvents =
 				["groups"] = {
 					i(156683, { -- Satchel of Helpful Goods [Level 15-25]
 						["groups"] = {
+							i(51994), -- Tumultuous Cloak
+							i(51968), -- Enumerated Wrap
+							i(51964), -- Vigorous Belt
+							--i(51978), -- Earthbound Girdle; Probably unobtainable.
+							i(143580), -- Earthbound Girdle
+						 	i(143582), -- Stalwart Belt
 						},
 						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-25 range.|r",
+						["Lvl"] = 15,
 					}),
 			--[[
 			   i(51999, { -- Satchel of Helpful Goods 15-25
 				["groups"] = {
-				   i(51994), -- Tumultuous Cloak
-				   i(51968), -- Enumerated Wrap
-				   i(51964), -- Vigorous Belt
-				   --i(51978), -- Earthbound Girdle; Probably unobtainable.
-				   i(143580), -- Earthbound Girdle
-				   i(143582), -- Stalwart Belt
+				   
 				},
 				["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-25 range.|r",
 			   }),
