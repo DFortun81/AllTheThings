@@ -234,14 +234,6 @@ _.Zones =
 				n(-25, { 	-- Pet Battle
 					p(441), 	-- Alpine Hare
 					p(440), 	-- Snow Cub
-					n(124617, { -- Environeer Bert
-						["groups"] = {
-							i(151638, { -- Leprous Sack of Pet Supplies
-								i(151645), -- Model D1-BB-L3R
-							}),
-						},
-						["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan."
-					}),
 					n(63075, {		-- Grady Bannson
 						["groups"] = {
 							p(138, {	-- Blue Moth
@@ -574,6 +566,14 @@ _.Zones =
 				m(895, {	-- New Tinkertown
 					["groups"] = {	
 						n(-25, { 	-- Pet Battle
+							n(124617, { -- Environeer Bert
+								["groups"] = {
+									i(151638, { -- Leprous Sack of Pet Supplies
+										i(151645), -- Model D1-BB-L3R
+									}),
+								},
+								["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan."
+							}),
 							p(441), 	-- Alpine Hare
 							p(1162), 	-- Fluxfire Feline
 							p(442), 	-- Irradiated Roach
