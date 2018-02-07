@@ -2049,7 +2049,7 @@ _.Zones =
 									i(126305), -- Warmongering Gladiator's Dreadplate Gauntlets
 									i(126396), -- Warmongering Gladiator's Girdle of Cruelty
 									i(126307), -- Warmongering Gladiator's Dreadplate Legguards
-									i(126399), -- Warmongering Gladiator's Warboots of Cruelty},
+									i(126401), -- Warmongering Gladiator's Warboots of Victory
 								},
 								["ignoreBonus"] = true,
 								["itemID"] = 138494,
