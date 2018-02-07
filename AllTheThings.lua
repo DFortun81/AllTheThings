@@ -3250,12 +3250,14 @@ function app.FilterItemSourceUnique(sourceInfo)
 												end
 											else
 												-- This item is not race locked.
-												-- Since the source item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
+												-- Since the source item is race locked, but this item matches the class requirements and is not race locked, you unlock the source ID. Congrats, mate!
+												return true;
 											end
 										end
 									else
 										-- This item is not class locked.
-										-- Since the source item is class locked, you don't unlock this source ID despite matching the appearance. Sorry mate.
+										-- Since this item is also not class or race locked, you unlock the source ID. Congrats, mate!
+										return true;
 									end
 								end
 							end
@@ -3282,7 +3284,13 @@ function app.FilterItemSourceUnique(sourceInfo)
 										end
 									else
 										-- This item is not class locked.
-										-- Since the source item is class locked, you don't unlock this source ID despite matching the appearance. Sorry mate.
+										if otherItem.races then
+											-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
+										else
+											-- This item is not race locked.
+											-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
+											return true;
+										end
 									end
 								end
 							end
@@ -3311,7 +3319,8 @@ function app.FilterItemSourceUnique(sourceInfo)
 											end
 										else
 											-- This item is not race locked.
-											-- Since the source item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
+											-- Since the source item is locked to the a race, but this item is not, you unlock the source ID. Congrats, mate!
+											return true;
 										end
 									end
 								end
@@ -3326,8 +3335,20 @@ function app.FilterItemSourceUnique(sourceInfo)
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
 								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
 								if otherItem and item.f == otherItem.f then
-									-- The source item is not class nor race locked, you unlock this source ID! Congrats, mate!
-									return true;
+									if otherItem.classes then
+										-- If this item is class locked...
+										-- Since the item is class locked, you don't unlock this source ID despite matching the class. Sorry mate.
+									else
+										-- This item is not class locked.
+										if otherItem.races then
+											-- If this item is race locked.
+											-- Since the item is race locked, you don't unlock this source ID despite matching the race. Sorry mate.
+										else
+											-- This item is not race locked.
+											-- The source item is not class nor race locked, you unlock this source ID! Congrats, mate!
+											return true;
+										end
+									end
 								end
 							end
 						end
