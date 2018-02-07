@@ -8,40 +8,39 @@ _.Zones =
 			["groups"] = {
 --[[			
 				n(-17, { 	-- Quests
-					q( 11554),	-- A Friend in the Frontlines
-					q( 11549),	-- A Magnanimous Benefactor
-					q( 11523),	-- Arm the Wards!
-					q( 11544),	-- Ata'mal Armaments
-					q( 11481),	-- Crisis at the Sunwell
-					q( 11540),	-- Crush the Dawnblade
-					q( 11541),	-- Disrupt the Greengill Coast
-					q( 11536),	-- Don't Stop Now....
-					q( 11482),	-- Duty Calls
-					qa(11550),	-- Enter, the Deceiver...
-					q( 11557),	-- Exalted Among All Combatants
-					q( 11525),	-- Further Conversions
-					q( 11555),	-- Honored by Your Allies
-					qa(24522),	-- Journey To The Sunwell
-					qh(24562),	-- Journey To The Sunwell
-					q( 11543),	-- Keeping the Enemy at Bay
-					q( 11547),	-- Know Your Ley Lines
-					q( 29682),	-- Magisters' Terrace
-					q( 11535),	-- Making Ready
-					q( 11546),	-- Open for Business
-					q( 11521),	-- Rediscovering Your Roots
-					q( 11534),	-- Report to Nasuun
-					q( 11556),	-- Revered in the Field of Battle
-					qh(24563),	-- Thalorien Dawnseeker
-					qa(24535),	-- Thalorien Dawnseeker
-					q( 11533),	-- The Air Strikes Must Continue
-					q( 11537),	-- The Battle Must Go On
-					q( 11526),	-- The Missing Magistrix
-					qh(24564),	-- The Purification of Quel'Delar
-					qh(24594),	-- The Purification of Quel'Delar
-					qa(24595),	-- The Purification of Quel'Delar
-					qh(24598),	-- The Purification of Quel'Delar
-					qa(24553),	-- The Purification of Quel'Delar
-					q( 11548),	-- Your Continued Support
+					qg(25032, q( 11554)),	-- A Friend in the Frontlines
+					qg(25163, q( 11549)),	-- A Magnanimous Benefactor
+					qg(24967, q( 11523)),	-- Arm the Wards!
+					qg(25046, q( 11544)),	-- Ata'mal Armaments
+					qg(25069, q( 11540)),	-- Crush the Dawnblade
+					qg(25088, q( 11541)),	-- Disrupt the Greengill Coast
+					qg(25046, q( 11536)),	-- Don't Stop Now....
+					qg(25032, q( 11557)),	-- Exalted Among All Combatants
+					qg(24965, q( 11525)),	-- Further Conversions
+					qg(25032, q( 11555)),	-- Honored by Your Allies
+					qg(25108, q( 11543)),	-- Keeping the Enemy at Bay
+					qg(25133, q( 11547)),	-- Know Your Ley Lines
+					qg(24967, q( 29682)),	-- Magisters' Terrace
+--					qg(25046, q( 11535)),	-- Making Ready (REMOVED?  no info about where to pick up -- attached QG mentioned in quest text, but wowhead doesn't say she starts it)
+					qg(24975, q( 11546)),	-- Open for Business
+					qg(24975, q( 11521)),	-- Rediscovering Your Roots
+					qg(25034, q( 11534)),	-- Report to Nasuun
+					qg(25032, q( 11556)),	-- Revered in the Field of Battle
+					qg(37527, qh(24563)),	-- Thalorien Dawnseeker
+					qg(37527, qa(24535)),	-- Thalorien Dawnseeker
+					qg(25057, q( 11533)),	-- The Air Strikes Must Continue
+					qg(25061, q( 11537)),	-- The Battle Must Go On
+					qg(24967, q( 11526)),	-- The Missing Magistrix
+					qg(37527, qh(24564)),	-- The Purification of Quel'Delar
+					qg(37527, qh(24594, {	-- The Purification of Quel'Delar
+						["groups"] = {
+						},
+						["races"] = {10},	-- Blood Elf
+					})),
+					qg(37527, qa(24595)),	-- The Purification of Quel'Delar
+					qg(37527, qh(24598)),	-- The Purification of Quel'Delar
+					qg(37527, qa(24553)),	-- The Purification of Quel'Delar
+					qg(25112, q( 11548)),	-- Your Continued Support
 --]]					
 --[[					
 					q( 11524),	-- Erratic Behavior (Removed completion of Phase 1)
