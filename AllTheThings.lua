@@ -5189,7 +5189,7 @@ function app:GetDataCache()
 		]]--
 		
 		-- Unsorted
-		
+		--[[
 		if app.Unsorted then
 			db = {};
 			db.groups = app.Unsorted;
@@ -5198,7 +5198,7 @@ function app:GetDataCache()
 			table.insert(groups, db);
 			app.Unsorted = nil;
 		end
-		
+		]]--
 		
 		local missingData = {};
 		app.missingData = missingData;
