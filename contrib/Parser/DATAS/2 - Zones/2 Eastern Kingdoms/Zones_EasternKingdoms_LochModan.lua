@@ -5,13 +5,24 @@ _.Zones =
 {
 	m(14, { 	-- Eastern Kingdoms
 		m(35, {		-- Loch Modan
-			["groups"] = {							
-				n(-3, { 	-- Holidays					
+			["groups"] = {			
+--[[			
+				n(-3, { 	-- Holidays		
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+								qg(15558, q(  8642)),	-- Silvervein the Elder
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+						["u"] = 17,
+					}),				
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								o(187564, {	-- Alliance Bonfire
 									qh(11749),	-- Desecrate this Fire!
+									qg(25902, qa(11820)),	-- Honor the Flame
 								}),
 								qg(25962, qa( 11882)),	-- Playing with Fire
 							}),
@@ -19,7 +30,18 @@ _.Zones =
 						["achievementID"] = 1038, -- The Flame Warden
 						["u"] = 21,
 					}),
-				}),								
+					n(-58, { 		-- Hallow's End
+						["groups"] = {
+							n(-17, { 	-- Quests
+								qa(28963),	-- Candy Bucket
+								qa(12339),	-- Candy Bucket
+							}),
+						},
+						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["u"] = 26,
+					}),	
+				}),
+--]]				
 				n(-25, { 	-- Pet Battle
 					p(441), 	-- Alpine Hare
 					p(437), 	-- Little Black Lamb
@@ -37,13 +59,19 @@ _.Zones =
 						i(131492),	-- Waistguard of the Valley of Kings
 					})),
 --[[
-					qg(, qa(26929)),	-- A Load of Croc
-					qg(, qa(26846)),	-- A Nasty Exploit
-					qg(, qa(26843)),	-- A Tiny, Clever Commander
-					qg(, qa(  454)),	-- After the Ambush
-					qg(, qa(27115)),	-- Ando's Call
-					qg(, qa(26868)),	-- Axis of Awful
-					qg(, qa( 1655)),	-- Bailor's Ore Shipment
+					qg(44345, qa(26929)),	-- A Load of Croc
+					qg(44200, qa(26846)),	-- A Nasty Exploit
+					qg( 1343, qa(26843)),	-- A Tiny, Clever Commander
+					qg( 2057, qa(  454)),	-- After the Ambush
+					qg( 1073, qa(27115)),	-- Ando's Call
+					qg(44345, qa(26868)),	-- Axis of Awful
+--]]
+--[[
+					qg( 6241, qa( 1655, {	-- Bailor's Ore Shipment (REMOVED)
+						["groups"] = {
+						},
+						["classes"] = {2},	-- Paladin
+					})),
 --]]					
 					qg( 1090, qa(26147, { -- Bigger and Uglier
 						i( 58995),	-- Bonesnapper Bracers
@@ -52,24 +80,31 @@ _.Zones =
 						i( 58994),	-- Trogg-Slayer Boots
 					})),
 --[[					
-					qg(, qa(27032)),	-- Bird is the Word
-					qg(, qa(26932)),	-- Buzz Off
-					qg(, qa(28963)),	-- Candy Bucket
-					qg(, qa(12339)),	-- Candy Bucket
-					qg(, qa(26137)),	-- Checking on the Boys
-					qg(, qa(27077)),	-- Clutching at Chaos
-					qg(, qa(27026)),	-- Defcon: Bobcat
-					qg(, q( 13652)),	-- Defense of the Stonewrought Dam
-					qg(, qh(11749)),	-- Desecrate this Fire!
-					qg(, qh(11745)),	-- Desecrate this Fire!
-					qg(, qh(11581)),	-- Desecrate this Fire!
-					qg(, qa(13656)),	-- Explorers' League Document (1 of 6)
-					qg(, qa(13655)),	-- Explorers' League Document (2 of 6)
-					qg(, qa(13657)),	-- Explorers' League Document (3 of 6)
-					qg(, qa(13658)),	-- Explorers' League Document (4 of 6)
-					qg(, qa(13660)),	-- Explorers' League Document (5 of 6)
-					qg(, qa(13659)),	-- Explorers' League Document (6 of 6)
-					qg(, qa(27074)),	-- Fight the Hammer
+					qg( 6577, qa(27032)),	-- Bird is the Word
+					qg( 1340, qa(26932)),	-- Buzz Off
+					qg( 1343, qa(26137)),	-- Checking on the Boys
+					qg( 1073, qa(27077)),	-- Clutching at Chaos
+					qg(44859, qa(27026)),	-- Defcon: Bobcat
+--					q( 13652),	-- Defense of the Stonewrought Dam (REMOVED)
+					o(194387, {	-- Stolen Explorers' League Document
+						qa(13656),	-- Explorers' League Document (1 of 6)
+					}),
+					o(194378, {	-- Stolen Explorers' League Document
+						qa(13655),	-- Explorers' League Document (2 of 6)
+					}),
+					o(194388, {	-- Stolen Explorers' League Document
+						qa(13657),	-- Explorers' League Document (3 of 6)
+					}),
+					o(194389, {	-- Stolen Explorers' League Document
+						qa(13658),	-- Explorers' League Document (4 of 6)
+					}),
+					o(194391, {	-- Stolen Explorers' League Document
+						qa(13660),	-- Explorers' League Document (5 of 6)
+					}),
+					o(194390, {	-- Stolen Explorers' League Document
+						qa(13659),	-- Explorers' League Document (6 of 6)
+					}),
+					qg(44870, qa(27074)),	-- Fight the Hammer
 --]]					
 					qg( 1343, qa(26863, { -- Filthy Paws
 						i(58978),	-- Filthy Paw
@@ -77,8 +112,7 @@ _.Zones =
 						i(58979),	-- Silver Stream Shield
 					})),
 --[[					
-					qg(, qa( 2039)),	-- Find Bingles
-					qg(, qa(27030)),	-- Foxtails By The Handful
+					qg( 1154, qa(27030)),	-- Foxtails By The Handful
 --]]
 					qg( 1345, qa(26961, {	-- Gathering Idols
 						i( 58997),	-- Carved Stone Mace
@@ -87,8 +121,8 @@ _.Zones =
 						i(131628),	-- Trogg Stompers
 					})),
 --[[					
-					qg(, qa(27078)),	-- Gor'kresh
-					qg(, qa(27034)),	-- He's That Age
+					qg( 1073, qa(27078)),	-- Gor'kresh
+					qg( 6577, qa(27034)),	-- He's That Age
 --]]
 					desc(qa(13661), "After turning in all six Stolen Explorers' League Documents, this quest will pop up.", { -- Heartfelt Appreciation
 						i( 58993),	-- Old Dwarven Hammer
@@ -98,9 +132,7 @@ _.Zones =
 						i(131300),	-- Uncovered Chestguard
 					}),
 --[[					
-					qg(, qa(28567)),	-- Hero's Call: Loch Modan!
-					qg(, qa(11820)),	-- Honor the Flame
-					qg(, qa(27028)),	-- Hornet Hunting
+					qg( 1154, qa(27028)),	-- Hornet Hunting
 --]]
 					qg( 1092, qa(26146, { -- In Defense of the King's Lands
 						i(131490),	-- Greaves of Uncanny Courage
@@ -109,14 +141,12 @@ _.Zones =
 						i( 58984),	-- Stonesplinter Staff
 					})),
 --[[					
-					qg(, qa(13647)),	-- Joining the Hunt
-					qg(, qa(13650)),	-- Keep Your Hands Off The Goods!
-					qg(, qa(26844)),	-- Kobold and Kobolder
-					qg(, qa(25118)),	-- Looking for Lurkers
-					qg(, qa(26176)),	-- Onward to Thelsamar
-					qg(, qa(26842)),	-- Out of Gnoll-where
-					qg(, qa(11882)),	-- Playing with Fire
-					qg(, qa(  302)),	-- Powder to Ironband
+					qg( 1345, qa(13647)),	-- Joining the Hunt
+					qg( 1344, qa(13650)),	-- Keep Your Hands Off The Goods!
+					qg( 1343, qa(26844)),	-- Kobold and Kobolder
+					qg( 1777, qa(25118)),	-- Looking for Lurkers
+					qg( 1092, qa(26176)),	-- Onward to Thelsamar
+					qg( 1340, qa(26842)),	-- Out of Gnoll-where
 --]]
 					qg( 2057, qa(  309, { 	-- Protecting the Shipment
 						i( 58981),	-- Dastardly Bracers
@@ -125,23 +155,20 @@ _.Zones =
 						i( 58983),	-- Ironband Legguards
 					})),
 --[[					
-					qg(, qa(26131)),	-- Reinforcements for Loch Modan
-					qg(, qa(  301)),	-- Report to Ironforge
-					qg(, qa(  273)),	-- Resupplying the Excavation
-					qg(, qa(13639)),	-- Resupplying the Excavation
-					qg(, qa(27075)),	-- Servants of Cho'gall
-					qg(, q(  8642)),	-- Silvervein the Elder
-					qg(, qa(27033)),	-- Skystrider's Heart
-					qg(, qa(26928)),	-- Smells Like A Plan
-					qg(, qa(13635)),	-- South Gate Status Report
-					qg(, qa(27035)),	-- Standing Up
-					qg(, qa(  353)),	-- Stormpike's Delivery
-					qg(, qa( 1338)),	-- Stormpike's Order
-					qg(, qa(13636)),	-- Stormpike's Orders
-					qg(, qa(26927)),	-- Suddenly, Murlocs!
-					qg(, qa(26864)),	-- The Bearer of Gnoll-edge
-					qg(, q( 13638)),	-- The Captured Mountaineer
-					qg(, q( 27016)),	-- The Joy of Boar Hunting
+					qg( 1105, qa(  301)),	-- Report to Ironforge
+--					qg( 1105, qa(  273)),	-- Resupplying the Excavation (REMOVED, replaced with next quest)
+					qg( 1105, qa(13639)),	-- Resupplying the Excavation
+					qg( 1073, qa(27075)),	-- Servants of Cho'gall
+					qg(44618, qa(27033)),	-- Skystrider's Heart
+					qg(44345, qa(26928)),	-- Smells Like A Plan
+					qg( 1960, qa(13635)),	-- South Gate Status Report
+					qg(44870, qa(27035)),	-- Standing Up
+--					qa( 1338),	-- Stormpike's Order (REMOVED)
+					qg( 1340, qa(13636)),	-- Stormpike's Orders
+					qg( 1340, qa(26927)),	-- Suddenly, Murlocs!
+					qg( 1343, qa(26864)),	-- The Bearer of Gnoll-edge
+--					q( 13638),	-- The Captured Mountaineer (REMOVED)
+					qg( 1187, q( 27016)),	-- The Joy of Boar Hunting
 --]]
 					qg( 1960, qa(26854, { -- The Lost Pilot
 						i( 58970),	-- Mori's Cloak
@@ -150,10 +177,10 @@ _.Zones =
 						i(156933),	-- Mori's Pocketknife
 					})),
 --[[
-					qg(, qa(26145)),	-- The Trogg Threat
-					qg(, qa(27116)),	-- The Winds of Loch Modan
-					qg(, qa(26860)),	-- Thelsamar Blood Sausages
-					qg(, qa(27025)),	-- Thistle While You Work
+					qg( 1089, qa(26145)),	-- The Trogg Threat
+					qg(44870, qa(27116)),	-- The Winds of Loch Modan
+					qg( 1963, qa(26860)),	-- Thelsamar Blood Sausages
+					qg(44859, qa(27025)),	-- Thistle While You Work
 --]]
 					qg( 1187, qa(27037, { -- Vyrin's Revenge
 						i( 59010),	-- Swiftwind Blade
@@ -162,10 +189,12 @@ _.Zones =
 						i(131633),	-- Vyrin's Waistband
 					})),
 --[[					
-					qg(, qa(27036)),	-- Vyrin's Revenge
-					qg(, qa(13648)),	-- WANTED: The Dark Iron Spy
-					qg(, qa(26845)),	-- Who's In Charge Here?
-					qg(, qa(27031)),	-- Wing Nut	
+					qg( 1156, qa(27036)),	-- Vyrin's Revenge
+					o(256, {	-- Wanted!
+						qa(13648),	-- WANTED: The Dark Iron Spy
+					}),
+					qg( 1343, qa(26845)),	-- Who's In Charge Here?
+					qg( 6577, qa(27031)),	-- Wing Nut	
 --]]					
 					nlq({	-- Legacy Quests
 						qa(283, { -- A Dark Threat Looms
