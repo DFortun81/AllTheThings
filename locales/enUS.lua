@@ -231,6 +231,7 @@ AllTheThings.Locales.enUS = {
 		[107] = "Vignettes",
 		[108] = ENABLE_MUSIC.." "..ROLL,						-- Music Rolls
 		[109] = HEIRLOOMS, 										-- Heirlooms
+		[110] = "Titles", 										-- Titles
 
 		-- "Recipes"
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes

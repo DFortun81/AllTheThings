@@ -3029,6 +3029,8 @@ app.BaseTitle = {
 			return "titleID";
 		elseif key == "collectable" then
 			return true;
+		elseif key == "f" then
+			return 110;
 		elseif key == "collected" then
 			if GetDataSubMember("CollectedTitles", t.titleID) == 1 then return 1; end
 			if IsTitleKnown(t.titleID) then
@@ -3052,7 +3054,7 @@ app.BaseTitle = {
 						-- Suffix
 						local first = string.sub(name, 2, 2);
 						if first == string.upper(first) then
-							return UnitName("player") .. "," .. name;
+							return UnitName("player") .. ", " .. name;
 						else
 							return UnitName("player") .. name;
 						end
@@ -3068,7 +3070,7 @@ app.BaseTitle = {
 					return UnitName("player") .. name;
 				elseif t.style == 2 then
 					-- Comma Separated
-					return UnitName("player") .. "," .. name;
+					return UnitName("player") .. ", " .. name;
 				end
 			end
 		else
@@ -3947,40 +3949,40 @@ local function CreateSettingsMenu()
 		-- "Armor Types" and "Non-Equipment Types"
 		local itemFilterNames = L("FILTER_ID_TYPES");
 		for itemClassID,filters in pairs({ [4] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 } }) do
-		local itemClassFilter = CreateFrame("CheckButton", name .. "-" .. itemClassID, self, "InterfaceOptionsCheckButtonTemplate");
-		itemClassFilter:SetPoint("TOPLEFT", self, "TOPLEFT", 10, -325);
-		itemClassFilter.itemClassID = itemClassID;
-		itemClassFilter.Label = _G[itemClassFilter:GetName() .. "Text"];
-		itemClassFilter.Label:SetText(GetItemClassInfo(itemClassID) .. " (" .. itemClassID .. ")");
-		itemClassFilter.Label:SetWidth(200);
-		itemClassFilter.groups = {};
-		itemClassFilter:SetScript("OnClick", function(self)
-			for j, f in ipairs(self.groups) do
-				local checked = not itemFilters[f.filter];
-				itemFilters[f.filter] = checked;
-				f:SetChecked(checked);
-			end
-			self:SetChecked(false);
-			app:RefreshData();
-		end);
-		local lastFilter = itemClassFilter;
-		for j, filter in ipairs(filters) do
-			local itemFilter = CreateFrame("CheckButton", itemClassFilter:GetName() .. "-" .. filter, self, "InterfaceOptionsCheckButtonTemplate");
-			itemFilter:SetPoint("LEFT", self, "LEFT", 20, 0);
-			itemFilter:SetPoint("TOP", lastFilter, "BOTTOM", 0, 6);
-			itemFilter.filter = filter;
-			itemFilter.Label = _G[itemFilter:GetName() .. "Text"];
-			itemFilter.Label:SetText(itemFilterNames[filter] .. " (" .. filter .. ")");
-			itemFilter.Label:SetWidth(200);
-			lastFilter = itemFilter;
-			tinsert(itemClassFilter.groups, itemFilter);
-			itemFilter:SetChecked(itemFilters[filter]);
-			itemFilter:SetScript("OnClick", function(self)
-				itemFilters[self.filter] = self:GetChecked();
+			local itemClassFilter = CreateFrame("CheckButton", name .. "-" .. itemClassID, self, "InterfaceOptionsCheckButtonTemplate");
+			itemClassFilter:SetPoint("TOPLEFT", self, "TOPLEFT", 10, -325);
+			itemClassFilter.itemClassID = itemClassID;
+			itemClassFilter.Label = _G[itemClassFilter:GetName() .. "Text"];
+			itemClassFilter.Label:SetText(GetItemClassInfo(itemClassID) .. " (" .. itemClassID .. ")");
+			itemClassFilter.Label:SetWidth(200);
+			itemClassFilter.groups = {};
+			itemClassFilter:SetScript("OnClick", function(self)
+				for j, f in ipairs(self.groups) do
+					local checked = not itemFilters[f.filter];
+					itemFilters[f.filter] = checked;
+					f:SetChecked(checked);
+				end
+				self:SetChecked(false);
 				app:RefreshData();
 			end);
+			local lastFilter = itemClassFilter;
+			for j, filter in ipairs(filters) do
+				local itemFilter = CreateFrame("CheckButton", itemClassFilter:GetName() .. "-" .. filter, self, "InterfaceOptionsCheckButtonTemplate");
+				itemFilter:SetPoint("LEFT", self, "LEFT", 20, 0);
+				itemFilter:SetPoint("TOP", lastFilter, "BOTTOM", 0, 6);
+				itemFilter.filter = filter;
+				itemFilter.Label = _G[itemFilter:GetName() .. "Text"];
+				itemFilter.Label:SetText(itemFilterNames[filter] .. " (" .. filter .. ")");
+				itemFilter.Label:SetWidth(200);
+				lastFilter = itemFilter;
+				tinsert(itemClassFilter.groups, itemFilter);
+				itemFilter:SetChecked(itemFilters[filter]);
+				itemFilter:SetScript("OnClick", function(self)
+					itemFilters[self.filter] = self:GetChecked();
+					app:RefreshData();
+				end);
+			end
 		end
-	end
 		
 		
 			
@@ -4073,7 +4075,7 @@ local function CreateSettingsMenu()
 				
 		-- "Non-Equipment Types" (Part 2)
 		lastFilter = self.dummy;
-		for i,filter in ipairs({ 104, 108, 109, 200 }) do
+		for i,filter in ipairs({ 104, 108, 109, 110, 200 }) do
 			local itemFilter = CreateFrame("CheckButton", name .. "-15-" .. filter, self, "InterfaceOptionsCheckButtonTemplate");
 			itemFilter:SetPoint("LEFT", self.FilterGroupsByLevel, "LEFT", 285, 0);
 			itemFilter:SetPoint("TOP", lastFilter, "BOTTOM", 0, 6);
