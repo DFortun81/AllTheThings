@@ -122,6 +122,9 @@ _.Instances =
 								i(109851),
 								i(109850)
 							})),
+							n(77927, {	-- Son of the Beast
+								i(120340),	-- Son of the Beast's Bloody Paw
+							}),
 							cr(76585, e(1229, {	-- Ragewing the Untamed
 								i(118737),
 								i(109804),
@@ -334,6 +337,9 @@ _.Instances =
 								i(109853),
 								i(109852)
 							})),
+							n(77927, {	-- Son of the Beast
+								i(120340),	-- Son of the Beast's Bloody Paw
+							}),
 							cr(76585, e(1229, {	-- Ragewing the Untamed
 								i(118737),
 								i(109805),
@@ -541,6 +547,9 @@ _.Instances =
 								i(109853),
 								i(109852)
 							})),
+							n(77927, {	-- Son of the Beast
+								i(120340),	-- Son of the Beast's Bloody Paw
+							}),
 							cr(76585, e(1229, {	-- Ragewing the Untamed
 								i(118737),
 								i(109805),

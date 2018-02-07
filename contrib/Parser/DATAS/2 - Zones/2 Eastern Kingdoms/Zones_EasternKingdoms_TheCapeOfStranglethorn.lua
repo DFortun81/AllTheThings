@@ -208,14 +208,14 @@ _.Zones =
 					})),
 --[[					
 					qg(, q(  8194)),	-- Apprentice Angler
-					qg(, q(  7838)),	-- Arena Grandmaster
+					qg(14508, q(  7838)),	-- Arena Grandmaster
 					qg(, q(  7810)),	-- Arena Master
 					qg(, q( 26644)),	-- Attracting Attention
 --]]					
-					qg( 2546, q(  4621, { -- Avast Ya, Admiral!
-						i(12185),
+					qg( 2546, q(  4621, {	-- Avast Ye, Admiral!
+						i(12185),	-- Bloodsail Admiral's Hat
 					})),
---					qg(, q(  1036)),	-- Avast Ye, Scallywag
+					qg( 2545, q(  1036)),	-- Avast Ye, Scallywag
 					qg(44084, qa(26809, { -- Backdoor Dealings
 						i( 61531),
 						i( 61532),
