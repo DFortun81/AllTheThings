@@ -406,6 +406,7 @@ AllTheThings.Locales.enUS = {
 		[-208] = "Interface\\Icons\\achievement_alliedrace_voidelf",			-- Void Elf
 		[-209] = "Interface\\Icons\\achievement_alliedrace_highmountaintauren",	-- Highmountain Tauren
 		[-210] = "Interface\\Icons\\achievement_alliedrace_nightborne",			-- Nightborne
+		[-212] = "Interface\\WorldMap\\TreasureChest_64",						-- Treasure Chest
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-318] = "Interface\\Icons\\garrison_purplearmor",						-- Armor
@@ -823,6 +824,7 @@ AllTheThings.Locales.enUS = {
 		[-209] = GetSpellInfo(262063),											-- Highmountain Tauren
 		[-210] = GetSpellInfo(262061),											-- Nightborne
 		[-211] = NEW.." "..CHARACTER,											-- New Character
+		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
