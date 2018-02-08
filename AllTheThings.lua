@@ -594,17 +594,27 @@ local function GetCachedSearchResults(search, method, ...)
 				cache[2] = group;
 				if GetDataMember("ShowSources") then
 					local temp = {};
+					local count = 0;
 					local abbrevs = L("ABBREVIATIONS");
 					for i,j in ipairs(group) do
 						local text = BuildSourceText(j, 0, j.qg);
 						for source,replacement in pairs(abbrevs) do
 							text = string.gsub(text, source,replacement);
 						end
-						tinsert(temp, 1, text);
+						tinsert(temp, text);
 						if not GetDataMember("ShowAllSources") then break; end
+						
+						count = count + 1;
+						if count > 25 then
+							count = #group - count;
+							if count > 1 then
+								tinsert(temp, "And " .. count .. " other sources...");
+								break;
+							end
+						end
 					end
 					for i,j in ipairs(temp) do
-						tinsert(listing, 1, j);
+						tinsert(listing, i, j);
 					end
 				end
 				if #group > 0 and group[1].u then
