@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(1007, { 	-- The Broken Isles
 		n(-171, { -- Quest Chains
-			n(-206, {	-- Allied Races
+			gsh(1522, { -- Allied Races
 				qa(49929),	-- The Call for Allies
 				qg(126301, qa(50239, {	-- A Choice of Allies
 					na(-207, {	-- Lightforged Draenei
