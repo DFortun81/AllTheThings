@@ -1872,6 +1872,7 @@ AllTheThings.Locales.enUS = {
 		[244699] = "Small Treasure Chest",
 		[244701] = "Small Treasure Chest",
 		[246353] = "Small Treasure Chest",
+		[244700] = "Small Treasure Chest",
 
 
 	};
