@@ -817,11 +817,12 @@ AllTheThings.Locales.enUS = {
 		[-203] = "Valiant", -- Warrior
 		[-204] = "Ebonsoul", -- Death Knight
 		[-205] = "Battle for Azeroth",
-		[-206] = "Allied Races",
-		[-207] = "Lightforged Draenei",
-		[-208] = "Void Elves",
-		[-209] = "Highmountain Tauren",
-		[-210] = "Nightborne",
+		--[-206] = "Allied Races",   											-- USE gsh(1522, { -- Allied Races instead
+		[-207] = GetSpellInfo(262064),											-- Lightforged Draenei
+		[-208] = GetSpellInfo(262062),											-- Void Elf
+		[-209] = GetSpellInfo(262063),											-- Highmountain Tauren
+		[-210] = GetSpellInfo(262061),											-- Nightborne
+		[-211] = NEW.." "..CHARACTER,											-- New Character
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
