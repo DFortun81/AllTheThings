@@ -93,7 +93,7 @@ _.Instances =
 													un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
 													un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
 													un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
-													un(18, dr(1.0, i(50250))),	-- Big Love Rocket
+													un(18, dr(0.33, i(50250))),	-- Big Love Rocket
 													un(18, dr(1.0, i(50471))),	-- The Heartbreaker
 												},
 												["Lvl"] = 98,
@@ -103,7 +103,6 @@ _.Instances =
 													un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
 													un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
 													un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
-													--un(18, dr(1.0, i(50250))),	-- Big Love Rocket  [Assumption is they use Hallow's End as their basis and remove mounts from blue boxes]
 													un(18, dr(1.0, i(50471))),	-- The Heartbreaker
 												},
 												["Lvl"] = 16,
