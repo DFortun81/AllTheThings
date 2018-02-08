@@ -302,6 +302,14 @@ app.CreateVignette = function(id, t)
 	return t;
 end
 
+--[[
+-- Race Class Lib
+app.CreateCharacterRace = function(id, t)
+	if not t.groups then t = { ["groups"] = t }; end
+	t.raceID = id;
+	return t;
+end
+--]]
 
 -- Item Lib
 app.ItemClassInfo = {
@@ -547,6 +555,7 @@ bi = function(bonusID, t)
 end
 c = _.CreateInstance;										-- Create an Instance Object (localized automatically)
 cl = _.CreateCharacterClass;
+--race = _.CreateCharacterRace;
 cr = function(creatureID, t)
 	if not t then t = {};
     elseif not t.groups then t = { ["groups"] = t }; end
