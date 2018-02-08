@@ -1948,7 +1948,7 @@ AllTheThings.Locales.enUS = {
 		{4, "|CFFFF0000This vendor is no longer available in this spot or in game.|r", "Legacy Vendors"}; -- 33
 		{4, "|CFFFF0000This item was a quest award from a Legacy Quest that is no longer obtainable.|r", "Legacy Quest Reward"}; --34
 		{3, "|CFFFF0000This item is purchased from the In-Game Store.|r", "In-Game Store"}; --35
-		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed]"} -- 36
+		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed]"}; -- 36
 		{1, "|CFFFF0000This title is no longer obtainable in game.|r", "Titles"}; --37
 	};
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you, please post in Discord where you got it!|r";
