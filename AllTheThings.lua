@@ -3739,7 +3739,7 @@ local function CreateSettingsMenu()
 		end);
 		self.CompletionistMode:SetScript("onEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("When turned on shows you ALL items you are missing the appearances from. Turn off if you only want to collect the appearance id.", nil, nil, nil, nil, true);
+			GameTooltip:SetText ("Turn this setting off if you want ATT to *pretend* that you've earned shared appearances for items that qualify for the same unlock requirements.\n\nItems 'Collected' through this mode will be marked with an asterisk (*). This means that you haven't collected that specific source of the appearance yet.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 			if self:GetChecked() then
 				mainFrame.MainOnly:Hide();
@@ -3757,7 +3757,7 @@ local function CreateSettingsMenu()
 		end);
 		self.MainOnly:SetScript("onEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Turn this setting on if you are not interested in collecting shared appearances that are not class or race locked. As an example, if you have collected a Priest-Only Tier Piece from ICC and there is a shared appearance from the raid that can be used by other classes, ATT will *pretend* that you've earned that appearance.", nil, nil, nil, nil, true);
+			GameTooltip:SetText ("Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a " .. GetClassInfo(app.ClassIndex) .. "-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that appearance for your current class. (Shift + Click will refresh this data for your alts if you decide to earn appearances on them.)", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
 		if GetDataMember("CompletionistMode") then
