@@ -1858,6 +1858,22 @@ AllTheThings.Locales.enUS = {
 		[277343] = "Long-Lost Augari Treasure",
 		[277344] = "Precious Augari Keepsakes",
 		[277349] = "Missing Augari Chest",
+		[246309] = "Small Treasure Chest",
+		[244689] = "Small Treasure Chest",
+		[244691] = "Small Treasure Chest",
+		[245316] = "Small Treasure Chest",
+		[246249] = "Small Treasure Chest",
+		[246147] = "Small Treasure Chest",
+		[244694] = "Small Treasure Chest",
+		[244692] = "Small Treasure Chest",
+		[244698] = "Small Treasure Chest",
+		[246269] = "Small Treasure Chest",
+		[245345] = "Small Treasure Chest",
+		[244699] = "Small Treasure Chest",
+		[244701] = "Small Treasure Chest",
+		[246353] = "Small Treasure Chest",
+
+
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
