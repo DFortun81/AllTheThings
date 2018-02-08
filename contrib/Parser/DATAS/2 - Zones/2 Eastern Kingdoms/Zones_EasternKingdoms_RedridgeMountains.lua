@@ -58,18 +58,18 @@ _.Zones =
 						i( 60724),	-- Bravo Company Shoulderguards
 						i(131589),	-- Bravo Company Spaulders
 						},
-						["sourceQuestID"] = 26694	-- The Grand Magus Doane
+						["sourceQuestID"] = {26694},	-- The Grand Magus Doane
 					})),
 					qg(43303, qa(26562, {	-- And Last But Not Least... Danforth
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26561	-- Krakauer
+						["sourceQuestID"] = {26561},	-- Krakauer
 					})),
 					qg(  342, qa(26509)),	-- An Unwelcome Guest
 					qg(43461, qa(26636, {	-- Bravo Company Field Kit: Camouflage
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26616	-- It's Never Over
+						["sourceQuestID"] = {26616},	-- It's Never Over
 					})),
 					qg(43459, qa(26637, {	-- Bravo Company Field Kit: Chloroform
 						["groups"] = {
@@ -78,23 +78,23 @@ _.Zones =
 						i(131569),	-- Muckdweller Handguards
 						i( 60715),	-- Vial of Chloroform
 						},
-						["sourceQuestID"] = 26616	-- It's Never Over
+						["sourceQuestID"] = {26616},	-- It's Never Over
 					})),
 					qg(43270, qa(26587, {	-- Breaking Out is Hard to Do
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26586	-- In Search of Bravo Company
+						["sourceQuestID"] = {26586},	-- In Search of Bravo Company
 					})),
 					qg(  344, qa(26514, {	-- Canyon Romp
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26512	-- Tuning the Gnomecorder
+						["sourceQuestID"] = {26512},	-- Tuning the Gnomecorder
 					})),
 					qg(  620, q(  3861)),	-- CLUCK!
 					qg(43733, qa(26714, {	-- Darkblaze, Brood of the Worldbreaker
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26713	-- Showdown at Stonewatch
+						["sourceQuestID"] = {26713},	-- Showdown at Stonewatch
 					})),
 					qg(43611, qa(26668, {	-- Detonation
 						["groups"] = {
@@ -105,14 +105,14 @@ _.Zones =
 						i( 60711),	-- Messner's Cuffs
 						i( 60713),	-- Redridge Legguards
 						},
-						["sourceQuestID"] = 26651	-- To Win a War, You Gotta Become War
+						["sourceQuestID"] = {26651},	-- To Win a War, You Gotta Become War
 					})),
 					qg(  379, qa(26506)),	-- Franks and Beans	
 --					qg(  900, qa(26728)),	-- Hero's Call: Duskwood! (BREADCRUMB)
 					qg(43462, qa(26638, {	-- Hunting the Hunters
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26616	-- It's Never Over
+						["sourceQuestID"] = {26616},	-- It's Never Over
 					})),
 					n(   446, {	-- Redridge Basher
 						["groups"] = {
@@ -120,7 +120,7 @@ _.Zones =
 							qa(26519),	-- He Who Controls the Ettins
 						}),
 					},
-						["sourceQuestID"] = 26514	-- Canyon Romp
+						["sourceQuestID"] = {26514},	-- Canyon Romp
 					}),
 					n(   430, {	-- Redridge Mystic
 						["groups"] = {
@@ -128,7 +128,7 @@ _.Zones =
 							qa(26519),	-- He Who Controls the Ettins
 						}),
 					},
-						["sourceQuestID"] = 26514	-- Canyon Romp
+						["sourceQuestID"] = {26514},	-- Canyon Romp
 					}),
 					n(   445, {	-- Redridge Alpha
 						["groups"] = {
@@ -136,7 +136,7 @@ _.Zones =
 							qa(26519),	-- He Who Controls the Ettins
 						}),
 						},
-						["sourceQuestID"] = 26514	-- Canyon Romp
+						["sourceQuestID"] = {26514},	-- Canyon Romp
 					}),
 					qg(43221, qa(26573, {	-- His Heart Must Be In It
 						["groups"] = {
@@ -144,32 +144,32 @@ _.Zones =
 						i( 60710),	-- Troteman's Bracers
 						i( 60709),	-- Vest of the Changing Heart
 						},
-						["sourceQuestID"] = 26571	-- Weapons of War
+						["sourceQuestID"] = {26571},	-- Weapons of War
 					})),
 					qg(43221, qa(26586, {	-- In Search of Bravo Company
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26568	-- This Ain't My War
+						["sourceQuestID"] = {26568},	-- This Ain't My War
 					})),
 					qg(43184, qa(26616, {	-- It's Never Over
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26607	-- They Drew First Blood
+						["sourceQuestID"] = {26607},	-- They Drew First Blood
 					})),
 					qg(43221, qa(26567, {	-- John J. Keeshan
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26545	-- Yowler Must Die!
+						["sourceQuestID"] = {26545},	-- Yowler Must Die!
 					})),
 					qg(43300, qa(26560, {	-- Jorgensen
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26587	-- Breaking Out is Hard to Do
+						["sourceQuestID"] = {26587},	-- Breaking Out is Hard to Do
 					})),
 					qg(43305, qa(26561, {	-- Krakauer
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26560	-- Jorgensen
+						["sourceQuestID"] = {26560},	-- Jorgensen
 					})),
 					qg(  900, qa(26511, {	-- Lake Everstill Clean Up
 						i( 60699),	-- Bailiff's Gloves
@@ -188,34 +188,34 @@ _.Zones =
 						i( 60693),	-- Ventillated Leggings
 						i(131541),	-- Ventillated Vest
 						},
-						["sourceQuestID"] = 26510	-- We Must Prepare! (+ 26503 Still Assessing the Threat and 26505 Parker's Report)
+						["sourceQuestID"] = {26510,26503,26505},	-- We Must Prepare! + Still Assessing the Threat + Parker's Report)
 					})),					
 					qg( 8965, qa(26508)),	-- Nida's Necklace	
 					qg(  464, qa(26505, {	-- Parker's Report					
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26503	-- Still Assessing the Threat
+						["sourceQuestID"] = {26503},	-- Still Assessing the Threat
 					})),
 					qg(43458, qa(26639, {	-- Point of Contact: Brubaker
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26616	-- It's Never Over
+						["sourceQuestID"] = {26616},	-- It's Never Over
 					})),
 					qg(43458, qa(26646, {	-- Prisoners of War
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26640	-- Unspeakable Atrocities
+						["sourceQuestID"] = {26640},	-- Unspeakable Atrocities
 					})),
 --					q( 33350),	-- Redridge Group Trial (NOT IMPLEMENTED?)
 					qg(  382, qa(26570, {	-- Render's Army
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26568	-- This Ain't My War
+						["sourceQuestID"] = {26568},	-- This Ain't My War
 					})),
 					qg(43302, qa(26563, {	-- Return of the Bravo Company
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26562	-- And Last But Not Least... Danforth
+						["sourceQuestID"] = {26562},	-- And Last But Not Least... Danforth
 					})),
 					o(204351, {	-- Ettin Control Orb
 						["groups"] = {
@@ -226,7 +226,7 @@ _.Zones =
 							i( 60702),	-- Sword of the Falling Sky
 						}),
 						},
-						["sourceQuestID"] = 26519	-- He Who Controls the Ettins
+						["sourceQuestID"] = {26519},	-- He Who Controls the Ettins
 					}),					
 					qg(43607, qa(26692, {	-- Shadowhide Extinction
 						["groups"] = {
@@ -234,12 +234,12 @@ _.Zones =
 						i( 60718),	-- Shadowhide Boots
 						i(131583),	-- Shadowhide Footguards
 						},
-						["sourceQuestID"] = 26668	-- Detonation
+						["sourceQuestID"] = {26668},	-- Detonation
 					})),
 					qg(43733, qa(26713, {	-- Showdown at Stonewatch
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26708	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
+						["sourceQuestID"] = {26708},	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 					})),
 					qg(  464, qa(26503, {	-- Still Assessing the Threat
 --						["groups"] = {
@@ -248,7 +248,7 @@ _.Zones =
 						i(131538),	-- Striders of the Prolific Sire
 						i( 60685),	-- Yowling Cloak
 --						},
---						["sourceQuestID"] = 26365,	-- Hero's Call: Redridge Mountains! (unnecessary after a certain level?)
+--						["sourceQuestID"] = {26365},	-- Hero's Call: Redridge Mountains! (unnecessary after a certain level?)
 					})),
 					qg(43194, qa(26569, {	-- Surveying Equipment
 						["groups"] = {
@@ -257,12 +257,12 @@ _.Zones =
 						i(131556),	-- Lakeshire Handwraps
 						i( 60706),	-- Sandals of the Neverending Bridge
 						},
-						["sourceQuestID"] = 26568	-- This Ain't My War
+						["sourceQuestID"] = {26568},	-- This Ain't My War
 					})),
 					qg(43611, qa(26693, {	-- The Dark Tower
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26668	-- Detonation
+						["sourceQuestID"] = {26668},	-- Detonation
 					})),
 					qg(43611, qa(26694, {	-- The Grand Magus Doane
 						["groups"] = {
@@ -270,44 +270,44 @@ _.Zones =
 						i(131584),	-- Treacherous Boots
 						i( 60720),	-- Treacherous Treads
 						},
-						["sourceQuestID"] = 26693	-- The Dark Tower
+						["sourceQuestID"] = {26693},	-- The Dark Tower
 					})),
 					qg(43221, qa(26607, {	-- They Drew First Blood
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26563	-- Return of the Bravo Company
+						["sourceQuestID"] = {26563},	-- Return of the Bravo Company
 					})),
 					qg(  344, qa(26544, {	-- They've Wised Up...
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26514	-- Canyon Romp
+						["sourceQuestID"] = {26514},	-- Canyon Romp
 					})),
 					qg(43184, qa(26568, {	-- This Ain't My War					
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26567	-- John J. Keeshan
+						["sourceQuestID"] = {26567},	-- John J. Keeshan
 					})),
 					qg(43458, qa(26651, {	-- To Win a War, You Gotta Become War
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26646	-- Prisoners of War
+						["sourceQuestID"] = {26646},	-- Prisoners of War
 					})),
 					qg(43733, qa(26726, { -- Triumphant Return
 						["groups"] = {
 						i(60727),	-- Keeshan's Bow
 						i(60726),	-- Keeshan's Dagger
 						},
-						["sourceQuestID"] = 26714	-- Darkblaze, Brood of the Worldbreaker
+						["sourceQuestID"] = {26714},	-- Darkblaze, Brood of the Worldbreaker
 					})),
 					qg(  344, qa(26512, {	-- Tuning the Gnomecorder
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26510	-- We Must Prepare!
+						["sourceQuestID"] = {26510},	-- We Must Prepare!
 					})),
 					qg(43508, qa(26640, {	-- Unspeakable Atrocities
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26639	-- Point of Contact: Brubaker
+						["sourceQuestID"] = {26639},	-- Point of Contact: Brubaker
 					})),
 					o(204344, {	-- Wanted!
 						qa(26504, { -- Wanted: Redridge Gnolls
@@ -319,7 +319,7 @@ _.Zones =
 					qg(43221, qa(26571, {	-- Weapons of War
 						["groups"] = {
 						},
-						["sourceQuestID"] = 26568	-- This Ain't My War
+						["sourceQuestID"] = {26568},	-- This Ain't My War
 					})),
 					qg(  344, qa(26510)),	-- We Must Prepare!
 					qg(  344, qa(26545, {	-- Yowler Must Die!
@@ -329,7 +329,7 @@ _.Zones =
 						i(131552),	-- Mongrel Greaves
 						i( 60704),	-- Mongrel Leggings
 						},
-						["sourceQuestID"] = 26544	-- They've Wised Up...
+						["sourceQuestID"] = {26544},	-- They've Wised Up...
 					})),					
 					nlq({ -- Legacy Quests
 						qa(116, { 		-- Dry Times
@@ -363,283 +363,283 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(14273, { 	-- Boulderheart
-						dr(07.0, i(  9766)),	-- Greenweave Sash
-						dr(07.0, i(  9783)),	-- Raider's Chestpiece
-						dr(06.0, i(  9776)),	-- Bandit Boots
-						dr(06.0, i(  9780)),	-- Bandit Gloves
-						dr(06.0, i(  9771)),	-- Greenweave Gloves
-						dr(06.0, i(  6585)),	-- Scouting Cloak
-						dr(05.0, i(  6575)),	-- Defender Cloak
-						dr(04.0, i(  6562)),	-- Shimmering Boots
-						dr(04.0, i(  6563)),	-- Shimmering Bracers
-						dr(03.0, i(  6581)),	-- Scouting Belt
-						dr(03.0, i(  6583)),	-- Scouting Bracers
-						dr(03.0, i(  6564)),	-- Shimmering Cloak
-						dr(02.0, i(  9777)),	-- Bandit Bracers
-						dr(02.0, i(  6552)),	-- Bard's Tunic
-						dr(02.0, i(  9768)),	-- Greenweave Bracers
-						dr(02.0, i(  9770)),	-- Greenweave Cloak
-						dr(01.9, i(  6582)),	-- Scouting Boots
-						dr(01.8, i(  9775)),	-- Bandit Cinch
-						dr(01.8, i(  9789)),	-- Raider's Legguards
-						dr(01.6, i(  6536)),	-- Willow Vest
-						dr(01.5, i(  9784)),	-- Raider's Boots
-						dr(01.5, i(  6538)),	-- Willow Robe
-						dr(01.4, i(  9767)),	-- Greenweave Sandals
-						dr(01.3, i(  9787)),	-- Raider's Gauntlets
-						dr(01.2, i(  9781)),	-- Bandit Pants
-						dr(01.2, i(  6576)),	-- Defender Girdle
-						dr(01.1, i(  6580)),	-- Defender Tunic
-						dr(01.1, i(  9772)),	-- Greenweave Leggings
-						dr(01.1, i(  6565)),	-- Shimmering Gloves
-						dr(01.0, i(  6574)),	-- Defender Bracers
-						dr(01.0, i(  6570)),	-- Shimmering Sash					
+						dr(07.0, i( 9766)),	-- Greenweave Sash
+						dr(07.0, i( 9783)),	-- Raider's Chestpiece
+						dr(06.0, i( 9776)),	-- Bandit Boots
+						dr(06.0, i( 9780)),	-- Bandit Gloves
+						dr(06.0, i( 9771)),	-- Greenweave Gloves
+						dr(06.0, i( 6585)),	-- Scouting Cloak
+						dr(05.0, i( 6575)),	-- Defender Cloak
+						dr(04.0, i( 6562)),	-- Shimmering Boots
+						dr(04.0, i( 6563)),	-- Shimmering Bracers
+						dr(03.0, i( 6581)),	-- Scouting Belt
+						dr(03.0, i( 6583)),	-- Scouting Bracers
+						dr(03.0, i( 6564)),	-- Shimmering Cloak
+						dr(02.0, i( 9777)),	-- Bandit Bracers
+						dr(02.0, i( 6552)),	-- Bard's Tunic
+						dr(02.0, i( 9768)),	-- Greenweave Bracers
+						dr(02.0, i( 9770)),	-- Greenweave Cloak
+						dr(01.9, i( 6582)),	-- Scouting Boots
+						dr(01.8, i( 9775)),	-- Bandit Cinch
+						dr(01.8, i( 9789)),	-- Raider's Legguards
+						dr(01.6, i( 6536)),	-- Willow Vest
+						dr(01.5, i( 9784)),	-- Raider's Boots
+						dr(01.5, i( 6538)),	-- Willow Robe
+						dr(01.4, i( 9767)),	-- Greenweave Sandals
+						dr(01.3, i( 9787)),	-- Raider's Gauntlets
+						dr(01.2, i( 9781)),	-- Bandit Pants
+						dr(01.2, i( 6576)),	-- Defender Girdle
+						dr(01.1, i( 6580)),	-- Defender Tunic
+						dr(01.1, i( 9772)),	-- Greenweave Leggings
+						dr(01.1, i( 6565)),	-- Shimmering Gloves
+						dr(01.0, i( 6574)),	-- Defender Bracers
+						dr(01.0, i( 6570)),	-- Shimmering Sash					
 					}), 
 					n(616, { 	-- Chatter
-						dr(09.0, i(  6557)),	-- Bard's Boots
-						dr(09.0, i(  9786)),	-- Raider's Cloak
-						dr(09.0, i(  6539)),	-- Willow Belt
-						dr(08.0, i(  6548)),	-- Soldier's Girdle
-						dr(08.0, i(  6541)),	-- Willow Gloves
-						dr(04.0, i(  6546)),	-- Soldier's Leggings
-						dr(03.0, i(  6554)),	-- Bard's Gloves
-						dr(03.0, i(  9785)),	-- Raider's Bracers
-						dr(03.0, i(  9749)),	-- Simple Blouse
-						dr(03.0, i(  6551)),	-- Soldier's Boots
-						dr(03.0, i(  6547)),	-- Soldier's Gauntlets
-						dr(03.0, i(  6537)),	-- Willow Boots
-						dr(02.0, i(  9779)),	-- Bandit Cloak
-						dr(02.0, i(  6558)),	-- Bard's Belt
-						dr(02.0, i(  6556)),	-- Bard's Bracers
-						dr(02.0, i(  6553)),	-- Bard's Trousers
-						dr(02.0, i(  9765)),	-- Cadet Vest
-						dr(02.0, i(  9757)),	-- Gypsy Tunic
-						dr(02.0, i(  6545)),	-- Soldier's Armor
-						dr(02.0, i(  6543)),	-- Willow Bracers
-						dr(02.0, i(  6542)),	-- Willow Cape
-						dr(02.0, i(  6540)),	-- Willow Pants
-						dr(01.9, i(  9748)),	-- Simple Robe
-						dr(01.8, i(  9788)),	-- Raider's Belt
-						dr(01.8, i(  6550)),	-- Soldier's Wristguards	
+						dr(09.0, i( 6557)),	-- Bard's Boots
+						dr(09.0, i( 9786)),	-- Raider's Cloak
+						dr(09.0, i( 6539)),	-- Willow Belt
+						dr(08.0, i( 6548)),	-- Soldier's Girdle
+						dr(08.0, i( 6541)),	-- Willow Gloves
+						dr(04.0, i( 6546)),	-- Soldier's Leggings
+						dr(03.0, i( 6554)),	-- Bard's Gloves
+						dr(03.0, i( 9785)),	-- Raider's Bracers
+						dr(03.0, i( 9749)),	-- Simple Blouse
+						dr(03.0, i( 6551)),	-- Soldier's Boots
+						dr(03.0, i( 6547)),	-- Soldier's Gauntlets
+						dr(03.0, i( 6537)),	-- Willow Boots
+						dr(02.0, i( 9779)),	-- Bandit Cloak
+						dr(02.0, i( 6558)),	-- Bard's Belt
+						dr(02.0, i( 6556)),	-- Bard's Bracers
+						dr(02.0, i( 6553)),	-- Bard's Trousers
+						dr(02.0, i( 9765)),	-- Cadet Vest
+						dr(02.0, i( 9757)),	-- Gypsy Tunic
+						dr(02.0, i( 6545)),	-- Soldier's Armor
+						dr(02.0, i( 6543)),	-- Willow Bracers
+						dr(02.0, i( 6542)),	-- Willow Cape
+						dr(02.0, i( 6540)),	-- Willow Pants
+						dr(01.9, i( 9748)),	-- Simple Robe
+						dr(01.8, i( 9788)),	-- Raider's Belt
+						dr(01.8, i( 6550)),	-- Soldier's Wristguards	
 						nld({     -- Legacy
 							un(7, i(3229)), 	-- Tarantula Silk Sash
 						}),							
 					}), 
 					n(52146, { 	-- Chitter
-						dr(09.0, i(  6545)),	-- Soldier's Armor
-						dr(08.0, i(  9779)),	-- Bandit Cloak
-						dr(08.0, i(  6553)),	-- Bard's Trousers
-						dr(08.0, i(  9788)),	-- Raider's Belt
-						dr(08.0, i(  6551)),	-- Soldier's Boots
-						dr(08.0, i(  6540)),	-- Willow Pants
-						dr(06.0, i(  6547)),	-- Soldier's Gauntlets
-						dr(05.0, i(  6554)),	-- Bard's Gloves
-						dr(05.0, i(  6546)),	-- Soldier's Leggings
-						dr(04.0, i(  9785)),	-- Raider's Bracers
-						dr(02.0, i(  9775)),	-- Bandit Cinch
-						dr(01.9, i(  9771)),	-- Greenweave Gloves
-						dr(01.9, i(  9766)),	-- Greenweave Sash
-						dr(01.8, i(  6585)),	-- Scouting Cloak
-						dr(01.7, i(  9783)),	-- Raider's Chestpiece
-						dr(01.6, i(  9776)),	-- Bandit Boots
-						dr(01.4, i(  9777)),	-- Bandit Bracers
-						dr(01.4, i(  9768)),	-- Greenweave Bracers
-						dr(01.4, i(  6564)),	-- Shimmering Cloak
-						dr(01.4, i(  6536)),	-- Willow Vest
-						dr(01.2, i(  6552)),	-- Bard's Tunic
-						dr(01.2, i(  9784)),	-- Raider's Boots
-						dr(01.2, i(  6562)),	-- Shimmering Boots
-						dr(01.2, i(  6538)),	-- Willow Robe
-						dr(01.1, i(  9780)),	-- Bandit Gloves
-						dr(01.1, i(  9770)),	-- Greenweave Cloak
-						dr(01.1, i(  9787)),	-- Raider's Gauntlets
-						dr(01.1, i(  6583)),	-- Scouting Bracers
-						dr(01.0, i(  6581)),	-- Scouting Belt					
+						dr(09.0, i( 6545)),	-- Soldier's Armor
+						dr(08.0, i( 9779)),	-- Bandit Cloak
+						dr(08.0, i( 6553)),	-- Bard's Trousers
+						dr(08.0, i( 9788)),	-- Raider's Belt
+						dr(08.0, i( 6551)),	-- Soldier's Boots
+						dr(08.0, i( 6540)),	-- Willow Pants
+						dr(06.0, i( 6547)),	-- Soldier's Gauntlets
+						dr(05.0, i( 6554)),	-- Bard's Gloves
+						dr(05.0, i( 6546)),	-- Soldier's Leggings
+						dr(04.0, i( 9785)),	-- Raider's Bracers
+						dr(02.0, i( 9775)),	-- Bandit Cinch
+						dr(01.9, i( 9771)),	-- Greenweave Gloves
+						dr(01.9, i( 9766)),	-- Greenweave Sash
+						dr(01.8, i( 6585)),	-- Scouting Cloak
+						dr(01.7, i( 9783)),	-- Raider's Chestpiece
+						dr(01.6, i( 9776)),	-- Bandit Boots
+						dr(01.4, i( 9777)),	-- Bandit Bracers
+						dr(01.4, i( 9768)),	-- Greenweave Bracers
+						dr(01.4, i( 6564)),	-- Shimmering Cloak
+						dr(01.4, i( 6536)),	-- Willow Vest
+						dr(01.2, i( 6552)),	-- Bard's Tunic
+						dr(01.2, i( 9784)),	-- Raider's Boots
+						dr(01.2, i( 6562)),	-- Shimmering Boots
+						dr(01.2, i( 6538)),	-- Willow Robe
+						dr(01.1, i( 9780)),	-- Bandit Gloves
+						dr(01.1, i( 9770)),	-- Greenweave Cloak
+						dr(01.1, i( 9787)),	-- Raider's Gauntlets
+						dr(01.1, i( 6583)),	-- Scouting Bracers
+						dr(01.0, i( 6581)),	-- Scouting Belt					
 					}),
 					n(584, { 	-- Kazon
-						dr(09.0, i(  6547)),	-- Soldier's Gauntlets
-						dr(09.0, i(  6546)),	-- Soldier's Leggings
-						dr(08.0, i(  9785)),	-- Raider's Bracers
-						dr(08.0, i(  6551)),	-- Soldier's Boots
-						dr(07.0, i(  6554)),	-- Bard's Gloves
-						dr(05.0, i(  6557)),	-- Bard's Boots
-						dr(05.0, i(  9786)),	-- Raider's Cloak
-						dr(05.0, i(  6541)),	-- Willow Gloves
-						dr(04.0, i(  9779)),	-- Bandit Cloak
-						dr(04.0, i(  6553)),	-- Bard's Trousers
-						dr(04.0, i(  6548)),	-- Soldier's Girdle
-						dr(04.0, i(  6539)),	-- Willow Belt
-						dr(03.0, i(  9788)),	-- Raider's Belt
-						dr(03.0, i(  6545)),	-- Soldier's Armor
-						dr(03.0, i(  6540)),	-- Willow Pants
-						dr(01.7, i(  9784)),	-- Raider's Boots
-						dr(01.6, i(  9780)),	-- Bandit Gloves
-						dr(01.5, i(  9787)),	-- Raider's Gauntlets
-						dr(01.2, i(  9777)),	-- Bandit Bracers
-						dr(01.1, i(  9776)),	-- Bandit Boots
-						dr(01.1, i(  6585)),	-- Scouting Cloak
-						dr(01.0, i(  6552)),	-- Bard's Tunic
-						dr(01.0, i(  9768)),	-- Greenweave Bracers
-						dr(01.0, i(  9770)),	-- Greenweave Cloak		
+						dr(09.0, i( 6547)),	-- Soldier's Gauntlets
+						dr(09.0, i( 6546)),	-- Soldier's Leggings
+						dr(08.0, i( 9785)),	-- Raider's Bracers
+						dr(08.0, i( 6551)),	-- Soldier's Boots
+						dr(07.0, i( 6554)),	-- Bard's Gloves
+						dr(05.0, i( 6557)),	-- Bard's Boots
+						dr(05.0, i( 9786)),	-- Raider's Cloak
+						dr(05.0, i( 6541)),	-- Willow Gloves
+						dr(04.0, i( 9779)),	-- Bandit Cloak
+						dr(04.0, i( 6553)),	-- Bard's Trousers
+						dr(04.0, i( 6548)),	-- Soldier's Girdle
+						dr(04.0, i( 6539)),	-- Willow Belt
+						dr(03.0, i( 9788)),	-- Raider's Belt
+						dr(03.0, i( 6545)),	-- Soldier's Armor
+						dr(03.0, i( 6540)),	-- Willow Pants
+						dr(01.7, i( 9784)),	-- Raider's Boots
+						dr(01.6, i( 9780)),	-- Bandit Gloves
+						dr(01.5, i( 9787)),	-- Raider's Gauntlets
+						dr(01.2, i( 9777)),	-- Bandit Bracers
+						dr(01.1, i( 9776)),	-- Bandit Boots
+						dr(01.1, i( 6585)),	-- Scouting Cloak
+						dr(01.0, i( 6552)),	-- Bard's Tunic
+						dr(01.0, i( 9768)),	-- Greenweave Bracers
+						dr(01.0, i( 9770)),	-- Greenweave Cloak		
 						nld({     -- Legacy
 							un(7, i(3231)),		-- Cutthroat Pauldrons	
 							un(7, i(2058)),		-- Kazon's Maul
 						}),						
 					}), 
 					n(14271, { 	-- Ribchaser
-						dr(09.0, i(  6557)),	-- Bard's Boots
-						dr(09.0, i(  6539)),	-- Willow Belt
-						dr(09.0, i(  6541)),	-- Willow Gloves
-						dr(08.0, i(  6548)),	-- Soldier's Girdle
-						dr(07.0, i(  9786)),	-- Raider's Cloak
-						dr(04.0, i(  9748)),	-- Simple Robe
-						dr(04.0, i(  6551)),	-- Soldier's Boots
-						dr(03.0, i(  9779)),	-- Bandit Cloak
-						dr(03.0, i(  6558)),	-- Bard's Belt
-						dr(03.0, i(  6554)),	-- Bard's Gloves
-						dr(03.0, i(  6553)),	-- Bard's Trousers
-						dr(03.0, i(  9765)),	-- Cadet Vest
-						dr(03.0, i(  9785)),	-- Raider's Bracers
-						dr(03.0, i(  6546)),	-- Soldier's Leggings
-						dr(03.0, i(  6542)),	-- Willow Cape
-						dr(02.0, i(  9757)),	-- Gypsy Tunic
-						dr(02.0, i(  9788)),	-- Raider's Belt
-						dr(02.0, i(  9749)),	-- Simple Blouse
-						dr(02.0, i(  6547)),	-- Soldier's Gauntlets
-						dr(02.0, i(  6550)),	-- Soldier's Wristguards
-						dr(02.0, i(  6540)),	-- Willow Pants
-						dr(01.9, i(  6543)),	-- Willow Bracers
-						dr(01.8, i(  6556)),	-- Bard's Bracers
-						dr(01.8, i(  6545)),	-- Soldier's Armor
-						dr(01.8, i(  6537)),	-- Willow Boots					
+						dr(09.0, i( 6557)),	-- Bard's Boots
+						dr(09.0, i( 6539)),	-- Willow Belt
+						dr(09.0, i( 6541)),	-- Willow Gloves
+						dr(08.0, i( 6548)),	-- Soldier's Girdle
+						dr(07.0, i( 9786)),	-- Raider's Cloak
+						dr(04.0, i( 9748)),	-- Simple Robe
+						dr(04.0, i( 6551)),	-- Soldier's Boots
+						dr(03.0, i( 9779)),	-- Bandit Cloak
+						dr(03.0, i( 6558)),	-- Bard's Belt
+						dr(03.0, i( 6554)),	-- Bard's Gloves
+						dr(03.0, i( 6553)),	-- Bard's Trousers
+						dr(03.0, i( 9765)),	-- Cadet Vest
+						dr(03.0, i( 9785)),	-- Raider's Bracers
+						dr(03.0, i( 6546)),	-- Soldier's Leggings
+						dr(03.0, i( 6542)),	-- Willow Cape
+						dr(02.0, i( 9757)),	-- Gypsy Tunic
+						dr(02.0, i( 9788)),	-- Raider's Belt
+						dr(02.0, i( 9749)),	-- Simple Blouse
+						dr(02.0, i( 6547)),	-- Soldier's Gauntlets
+						dr(02.0, i( 6550)),	-- Soldier's Wristguards
+						dr(02.0, i( 6540)),	-- Willow Pants
+						dr(01.9, i( 6543)),	-- Willow Bracers
+						dr(01.8, i( 6556)),	-- Bard's Bracers
+						dr(01.8, i( 6545)),	-- Soldier's Armor
+						dr(01.8, i( 6537)),	-- Willow Boots					
 					}), 
 					n(947, { 	-- Rohh the Silent
-						dr(11.0, i(  6540)),	-- Willow Pants
-						dr(09.0, i(  9779)),	-- Bandit Cloak
-						dr(09.0, i(  9788)),	-- Raider's Belt
-						dr(08.0, i(  6553)),	-- Bard's Trousers
-						dr(08.0, i(  6545)),	-- Soldier's Armor
-						dr(05.0, i(  6551)),	-- Soldier's Boots
-						dr(05.0, i(  6547)),	-- Soldier's Gauntlets
-						dr(04.0, i(  6554)),	-- Bard's Gloves
-						dr(04.0, i(  9785)),	-- Raider's Bracers
-						dr(04.0, i(  6563)),	-- Shimmering Bracers
-						dr(04.0, i(  6546)),	-- Soldier's Leggings
-						dr(02.0, i(  9780)),	-- Bandit Gloves
-						dr(01.9, i(  9775)),	-- Bandit Cinch
-						dr(01.9, i(  9784)),	-- Raider's Boots
-						dr(01.8, i(  9771)),	-- Greenweave Gloves
-						dr(01.7, i(  6552)),	-- Bard's Tunic
-						dr(01.7, i(  6575)),	-- Defender Cloak
-						dr(01.7, i(  9768)),	-- Greenweave Bracers
-						dr(01.6, i(  6581)),	-- Scouting Belt
-						dr(01.5, i(  9783)),	-- Raider's Chestpiece
-						dr(01.5, i(  6564)),	-- Shimmering Cloak
-						dr(01.4, i(  6536)),	-- Willow Vest
-						dr(01.3, i(  9787)),	-- Raider's Gauntlets
-						dr(01.3, i(  6585)),	-- Scouting Cloak
-						dr(01.3, i(  6538)),	-- Willow Robe
-						dr(01.2, i(  9777)),	-- Bandit Bracers
-						dr(01.2, i(  9770)),	-- Greenweave Cloak
-						dr(01.2, i(  9767)),	-- Greenweave Sandals
-						dr(01.2, i(  9789)),	-- Raider's Legguards
-						dr(01.1, i(  6562)),	-- Shimmering Boots
-						dr(01.0, i(  9776)),	-- Bandit Boots
-						dr(01.0, i(  9766)),	-- Greenweave Sash	
+						dr(11.0, i( 6540)),	-- Willow Pants
+						dr(09.0, i( 9779)),	-- Bandit Cloak
+						dr(09.0, i( 9788)),	-- Raider's Belt
+						dr(08.0, i( 6553)),	-- Bard's Trousers
+						dr(08.0, i( 6545)),	-- Soldier's Armor
+						dr(05.0, i( 6551)),	-- Soldier's Boots
+						dr(05.0, i( 6547)),	-- Soldier's Gauntlets
+						dr(04.0, i( 6554)),	-- Bard's Gloves
+						dr(04.0, i( 9785)),	-- Raider's Bracers
+						dr(04.0, i( 6563)),	-- Shimmering Bracers
+						dr(04.0, i( 6546)),	-- Soldier's Leggings
+						dr(02.0, i( 9780)),	-- Bandit Gloves
+						dr(01.9, i( 9775)),	-- Bandit Cinch
+						dr(01.9, i( 9784)),	-- Raider's Boots
+						dr(01.8, i( 9771)),	-- Greenweave Gloves
+						dr(01.7, i( 6552)),	-- Bard's Tunic
+						dr(01.7, i( 6575)),	-- Defender Cloak
+						dr(01.7, i( 9768)),	-- Greenweave Bracers
+						dr(01.6, i( 6581)),	-- Scouting Belt
+						dr(01.5, i( 9783)),	-- Raider's Chestpiece
+						dr(01.5, i( 6564)),	-- Shimmering Cloak
+						dr(01.4, i( 6536)),	-- Willow Vest
+						dr(01.3, i( 9787)),	-- Raider's Gauntlets
+						dr(01.3, i( 6585)),	-- Scouting Cloak
+						dr(01.3, i( 6538)),	-- Willow Robe
+						dr(01.2, i( 9777)),	-- Bandit Bracers
+						dr(01.2, i( 9770)),	-- Greenweave Cloak
+						dr(01.2, i( 9767)),	-- Greenweave Sandals
+						dr(01.2, i( 9789)),	-- Raider's Legguards
+						dr(01.1, i( 6562)),	-- Shimmering Boots
+						dr(01.0, i( 9776)),	-- Bandit Boots
+						dr(01.0, i( 9766)),	-- Greenweave Sash	
 						nld({     -- Legacy
 							un(7, i(4447)),		-- Cloak of Night					
 						}),						
 					}), 
 					n(14269, { 	-- Seeker Aqualon
-						dr(07.0, i(  6540)),	-- Willow Pants
-						dr(05.0, i(  9779)),	-- Bandit Cloak
-						dr(05.0, i(  6553)),	-- Bard's Trousers
-						dr(04.0, i(  9775)),	-- Bandit Cinch
-						dr(04.0, i(  6552)),	-- Bard's Tunic
-						dr(04.0, i(  9770)),	-- Greenweave Cloak
-						dr(04.0, i(  9788)),	-- Raider's Belt
-						dr(04.0, i(  9784)),	-- Raider's Boots
-						dr(04.0, i(  9789)),	-- Raider's Legguards
-						dr(04.0, i(  6545)),	-- Soldier's Armor
-						dr(04.0, i(  6536)),	-- Willow Vest
-						dr(03.0, i(  9776)),	-- Bandit Boots
-						dr(03.0, i(  9777)),	-- Bandit Bracers
-						dr(03.0, i(  9768)),	-- Greenweave Bracers
-						dr(03.0, i(  9767)),	-- Greenweave Sandals
-						dr(03.0, i(  9783)),	-- Raider's Chestpiece
-						dr(03.0, i(  9787)),	-- Raider's Gauntlets
-						dr(03.0, i(  6581)),	-- Scouting Belt
-						dr(03.0, i(  6562)),	-- Shimmering Boots
-						dr(03.0, i(  6563)),	-- Shimmering Bracers
-						dr(03.0, i(  6564)),	-- Shimmering Cloak
-						dr(03.0, i(  6538)),	-- Willow Robe
-						dr(02.0, i(  9780)),	-- Bandit Gloves
-						dr(02.0, i(  9771)),	-- Greenweave Gloves
-						dr(01.9, i(  9766)),	-- Greenweave Sash
-						dr(01.8, i(  6585)),	-- Scouting Cloak
-						dr(01.7, i(  6583)),	-- Scouting Bracers
-						dr(01.5, i(  6575)),	-- Defender Cloak
-						dr(01.4, i(  9781)),	-- Bandit Pants
-						dr(01.0, i(  6570)),	-- Shimmering Sash					
+						dr(07.0, i( 6540)),	-- Willow Pants
+						dr(05.0, i( 9779)),	-- Bandit Cloak
+						dr(05.0, i( 6553)),	-- Bard's Trousers
+						dr(04.0, i( 9775)),	-- Bandit Cinch
+						dr(04.0, i( 6552)),	-- Bard's Tunic
+						dr(04.0, i( 9770)),	-- Greenweave Cloak
+						dr(04.0, i( 9788)),	-- Raider's Belt
+						dr(04.0, i( 9784)),	-- Raider's Boots
+						dr(04.0, i( 9789)),	-- Raider's Legguards
+						dr(04.0, i( 6545)),	-- Soldier's Armor
+						dr(04.0, i( 6536)),	-- Willow Vest
+						dr(03.0, i( 9776)),	-- Bandit Boots
+						dr(03.0, i( 9777)),	-- Bandit Bracers
+						dr(03.0, i( 9768)),	-- Greenweave Bracers
+						dr(03.0, i( 9767)),	-- Greenweave Sandals
+						dr(03.0, i( 9783)),	-- Raider's Chestpiece
+						dr(03.0, i( 9787)),	-- Raider's Gauntlets
+						dr(03.0, i( 6581)),	-- Scouting Belt
+						dr(03.0, i( 6562)),	-- Shimmering Boots
+						dr(03.0, i( 6563)),	-- Shimmering Bracers
+						dr(03.0, i( 6564)),	-- Shimmering Cloak
+						dr(03.0, i( 6538)),	-- Willow Robe
+						dr(02.0, i( 9780)),	-- Bandit Gloves
+						dr(02.0, i( 9771)),	-- Greenweave Gloves
+						dr(01.9, i( 9766)),	-- Greenweave Sash
+						dr(01.8, i( 6585)),	-- Scouting Cloak
+						dr(01.7, i( 6583)),	-- Scouting Bracers
+						dr(01.5, i( 6575)),	-- Defender Cloak
+						dr(01.4, i( 9781)),	-- Bandit Pants
+						dr(01.0, i( 6570)),	-- Shimmering Sash					
 					}), 
 					n(14272, { 	-- Snarlflare
-						dr(09.0, i(  6551)),	-- Soldier's Boots
-						dr(09.0, i(  6547)),	-- Soldier's Gauntlets
-						dr(09.0, i(  6546)),	-- Soldier's Leggings
-						dr(07.0, i(  6554)),	-- Bard's Gloves
-						dr(07.0, i(  9785)),	-- Raider's Bracers
-						dr(05.0, i(  6557)),	-- Bard's Boots
-						dr(05.0, i(  9786)),	-- Raider's Cloak
-						dr(05.0, i(  6548)),	-- Soldier's Girdle
-						dr(04.0, i(  9779)),	-- Bandit Cloak
-						dr(04.0, i(  6553)),	-- Bard's Trousers
-						dr(04.0, i(  6539)),	-- Willow Belt
-						dr(04.0, i(  6541)),	-- Willow Gloves
-						dr(03.0, i(  9788)),	-- Raider's Belt
-						dr(03.0, i(  6545)),	-- Soldier's Armor
-						dr(03.0, i(  6540)),	-- Willow Pants
-						dr(01.7, i(  9768)),	-- Greenweave Bracers
-						dr(01.4, i(  6552)),	-- Bard's Tunic
-						dr(01.4, i(  9787)),	-- Raider's Gauntlets
-						dr(01.2, i(  9789)),	-- Raider's Legguards
-						dr(01.1, i(  9780)),	-- Bandit Gloves
-						dr(01.1, i(  6575)),	-- Defender Cloak
-						dr(01.1, i(  9767)),	-- Greenweave Sandals
-						dr(01.1, i(  9784)),	-- Raider's Boots
-						dr(01.1, i(  6585)),	-- Scouting Cloak
-						dr(01.1, i(  6536)),	-- Willow Vest
-						dr(01.0, i(  9776)),	-- Bandit Boots
-						dr(01.0, i(  9777)),	-- Bandit Bracers
-						dr(01.0, i(  9775)),	-- Bandit Cinch
-						dr(01.0, i(  9771)),	-- Greenweave Gloves
-						dr(01.0, i(  9766)),	-- Greenweave Sash					
+						dr(09.0, i( 6551)),	-- Soldier's Boots
+						dr(09.0, i( 6547)),	-- Soldier's Gauntlets
+						dr(09.0, i( 6546)),	-- Soldier's Leggings
+						dr(07.0, i( 6554)),	-- Bard's Gloves
+						dr(07.0, i( 9785)),	-- Raider's Bracers
+						dr(05.0, i( 6557)),	-- Bard's Boots
+						dr(05.0, i( 9786)),	-- Raider's Cloak
+						dr(05.0, i( 6548)),	-- Soldier's Girdle
+						dr(04.0, i( 9779)),	-- Bandit Cloak
+						dr(04.0, i( 6553)),	-- Bard's Trousers
+						dr(04.0, i( 6539)),	-- Willow Belt
+						dr(04.0, i( 6541)),	-- Willow Gloves
+						dr(03.0, i( 9788)),	-- Raider's Belt
+						dr(03.0, i( 6545)),	-- Soldier's Armor
+						dr(03.0, i( 6540)),	-- Willow Pants
+						dr(01.7, i( 9768)),	-- Greenweave Bracers
+						dr(01.4, i( 6552)),	-- Bard's Tunic
+						dr(01.4, i( 9787)),	-- Raider's Gauntlets
+						dr(01.2, i( 9789)),	-- Raider's Legguards
+						dr(01.1, i( 9780)),	-- Bandit Gloves
+						dr(01.1, i( 6575)),	-- Defender Cloak
+						dr(01.1, i( 9767)),	-- Greenweave Sandals
+						dr(01.1, i( 9784)),	-- Raider's Boots
+						dr(01.1, i( 6585)),	-- Scouting Cloak
+						dr(01.1, i( 6536)),	-- Willow Vest
+						dr(01.0, i( 9776)),	-- Bandit Boots
+						dr(01.0, i( 9777)),	-- Bandit Bracers
+						dr(01.0, i( 9775)),	-- Bandit Cinch
+						dr(01.0, i( 9771)),	-- Greenweave Gloves
+						dr(01.0, i( 9766)),	-- Greenweave Sash					
 					}), 
 					n(14270, { 	-- Squiddic
-						dr(09.0, i(  6557)),	-- Bard's Boots
-						dr(09.0, i(  6548)),	-- Soldier's Girdle
-						dr(09.0, i(  6539)),	-- Willow Belt
-						dr(08.0, i(  9786)),	-- Raider's Cloak
-						dr(08.0, i(  6541)),	-- Willow Gloves
-						dr(04.0, i(  6551)),	-- Soldier's Boots
-						dr(04.0, i(  6546)),	-- Soldier's Leggings
-						dr(03.0, i(  9779)),	-- Bandit Cloak
-						dr(03.0, i(  6554)),	-- Bard's Gloves
-						dr(03.0, i(  9765)),	-- Cadet Vest
-						dr(03.0, i(  9785)),	-- Raider's Bracers
-						dr(03.0, i(  6547)),	-- Soldier's Gauntlets
-						dr(02.0, i(  6558)),	-- Bard's Belt
-						dr(02.0, i(  6556)),	-- Bard's Bracers
-						dr(02.0, i(  9757)),	-- Gypsy Tunic
-						dr(02.0, i(  9749)),	-- Simple Blouse
-						dr(02.0, i(  9748)),	-- Simple Robe
-						dr(02.0, i(  6545)),	-- Soldier's Armor
-						dr(02.0, i(  6537)),	-- Willow Boots
-						dr(02.0, i(  6543)),	-- Willow Bracers
-						dr(02.0, i(  6542)),	-- Willow Cape
-						dr(02.0, i(  6540)),	-- Willow Pants
-						dr(01.9, i(  6553)),	-- Bard's Trousers
-						dr(01.7, i(  9788)),	-- Raider's Belt
-						dr(01.7, i(  6550)),	-- Soldier's Wristguards
+						dr(09.0, i( 6557)),	-- Bard's Boots
+						dr(09.0, i( 6548)),	-- Soldier's Girdle
+						dr(09.0, i( 6539)),	-- Willow Belt
+						dr(08.0, i( 9786)),	-- Raider's Cloak
+						dr(08.0, i( 6541)),	-- Willow Gloves
+						dr(04.0, i( 6551)),	-- Soldier's Boots
+						dr(04.0, i( 6546)),	-- Soldier's Leggings
+						dr(03.0, i( 9779)),	-- Bandit Cloak
+						dr(03.0, i( 6554)),	-- Bard's Gloves
+						dr(03.0, i( 9765)),	-- Cadet Vest
+						dr(03.0, i( 9785)),	-- Raider's Bracers
+						dr(03.0, i( 6547)),	-- Soldier's Gauntlets
+						dr(02.0, i( 6558)),	-- Bard's Belt
+						dr(02.0, i( 6556)),	-- Bard's Bracers
+						dr(02.0, i( 9757)),	-- Gypsy Tunic
+						dr(02.0, i( 9749)),	-- Simple Blouse
+						dr(02.0, i( 9748)),	-- Simple Robe
+						dr(02.0, i( 6545)),	-- Soldier's Armor
+						dr(02.0, i( 6537)),	-- Willow Boots
+						dr(02.0, i( 6543)),	-- Willow Bracers
+						dr(02.0, i( 6542)),	-- Willow Cape
+						dr(02.0, i( 6540)),	-- Willow Pants
+						dr(01.9, i( 6553)),	-- Bard's Trousers
+						dr(01.7, i( 9788)),	-- Raider's Belt
+						dr(01.7, i( 6550)),	-- Soldier's Wristguards
 						nld({     -- Legacy
 							un(7, i(1469)), 	-- Scimitar of Atun				
 						}),							
