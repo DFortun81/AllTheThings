@@ -1953,6 +1953,7 @@ AllTheThings.Locales.enUS = {
 	};
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you, please post in Discord where you got it!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
+	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
 };
 
 -- Set the fallback file for all translation IDs.

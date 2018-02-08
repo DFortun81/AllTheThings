@@ -1708,13 +1708,17 @@ local function SetCompletionistMode(completionistMode, fromSettings)
 		local setting = _G[app:GetName() .. "-CompletionistMode"];
 		if setting then setting:SetChecked(completionistMode); end
 	end
-	app.print(completionistMode and "Entering Completionist Mode..." or "Entering Unique Appearances Mode...");
+	app.print(completionistMode and "Entering Completionist Mode..." or GetDataMember("MainOnly") and "Entering Unique Appearances Mode (Main Only)..." or "Entering Unique Appearances Mode...");
 	SetDataMember("CompletionistMode", completionistMode);
 	SetDataMember("CollectedSources", {});	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 	if completionistMode then
 		app.ItemSourceFilter = app.FilterItemSource;
 	else
-		app.ItemSourceFilter = app.FilterItemSourceUnique;
+		if GetDataMember("MainOnly") then
+			app.ItemSourceFilter = app.FilterItemSourceUniqueOnlyMain;
+		else
+			app.ItemSourceFilter = app.FilterItemSourceUnique;
+		end
 	end
 	RefreshCollections();
 end
@@ -3375,6 +3379,134 @@ function app.FilterItemSourceUnique(sourceInfo)
 		return false;
 	end
 end
+function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
+	if sourceInfo.isCollected then
+		-- NOTE: This makes it so that the loop isn't necessary.
+		return true;
+	else
+		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
+		local item = SearchForSourceIDVeryQuickly(sourceInfo.sourceID);
+		if item then
+			-- If the first item is class locked...
+			if item.classes then
+				if item.races then
+					-- If the first item is ALSO race locked...
+					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+						if sourceID ~= sourceInfo.sourceID then
+							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
+								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								if otherItem and item.f == otherItem.f then
+									if otherItem.classes then
+										-- If this item is class locked...
+										if containsAny(otherItem.classes, item.classes) then
+											if otherItem.races then
+												-- If this item is ALSO race locked.
+												if containsAny(otherItem.races, item.races) then
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											else
+												-- This item is not race locked.
+												-- Since the source item is race locked, but this item matches the class requirements and is not race locked, you unlock the source ID. Congrats, mate!
+												return true;
+											end
+										end
+									else
+										-- This item is not class locked.
+										-- Since this item is also not class or race locked, you unlock the source ID. Congrats, mate!
+										return true;
+									end
+								end
+							end
+						end
+					end
+				else
+					-- Not additionally race locked.
+					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+						if sourceID ~= sourceInfo.sourceID then
+							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
+								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								if otherItem and item.f == otherItem.f then
+									if otherItem.classes then
+										-- If this item is class locked...
+										if containsAny(otherItem.classes, item.classes) then
+											if otherItem.races then
+												-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
+											else
+												-- This item is not race locked.
+												-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
+												return true;
+											end
+										end
+									else
+										-- This item is not class locked.
+										if otherItem.races then
+											-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
+										else
+											-- This item is not race locked.
+											-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
+											return true;
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			else
+				if item.races then
+					-- If the first item is race locked...
+					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+						if sourceID ~= sourceInfo.sourceID then
+							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
+								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								if otherItem and item.f == otherItem.f then
+									if otherItem.classes then
+										-- If this item is class locked...
+										-- Since the item is class locked, you don't unlock this source ID despite matching the class. Sorry mate.
+									else
+										-- This item is not class locked.
+										if otherItem.races then
+											-- If this item is race locked.
+											if containsAny(otherItem.races, item.races) then
+												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+												return true;
+											end
+										else
+											-- This item is not race locked.
+											-- Since the source item is locked to the a race, but this item is not, you unlock the source ID. Congrats, mate!
+											return true;
+										end
+									end
+								end
+							end
+						end
+					end
+				else
+					-- Not race nor class locked.
+					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+						if sourceID ~= sourceInfo.sourceID then
+							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
+								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								if otherItem and item.f == otherItem.f then
+									-- Check for class and race locks...
+									if app.FilterItemClass_RequireClasses(otherItem.classes) and app.FilterItemClass_RequireRaces(otherItem.races) then
+										return true; -- Okay, fine. You are this class. Enjoy your +1, cheater. D:
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+		return false;
+	end
+end
 function app.FilterItemTrackable(group)
 	return group.trackable;
 end
@@ -3582,18 +3714,47 @@ local function CreateSettingsMenu()
 		end);
 		
 		
-		-- This creates the completiionst Mode checkBox --
+		-- This creates the completionst Mode checkBox --
 		self.CompletionistMode = CreateFrame("CheckButton", name .. "-CompletionistMode", self, "InterfaceOptionsCheckButtonTemplate");
 		CreateCheckBox(self.CompletionistMode, self, "|CFFADD8E6Completionist Mode|r", 25, -150, GetDataMember("CompletionistMode")); 
 		self.CompletionistMode:SetScript("OnClick", function(self)
 			SetCompletionistMode(self:GetChecked(), true);
+			if self:GetChecked() then
+				mainFrame.MainOnly:Hide();
+			else
+				mainFrame.MainOnly:Show();
+			end
 		end);
 		self.CompletionistMode:SetScript("onEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
 			GameTooltip:SetText ("When turned on shows you ALL items you are missing the appearances from. Turn off if you only want to collect the appearance id.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
+			if self:GetChecked() then
+				mainFrame.MainOnly:Hide();
+			else
+				mainFrame.MainOnly:Show();
+			end
 		end);
 
+		-- This creates the "I only care about my main" checkBox --
+		self.MainOnly = CreateFrame("CheckButton", name .. "-MainOnly", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.MainOnly, self, L("I_ONLY_CARE_ABOUT_MY_MAIN"), 35, -170, GetDataMember("MainOnly")); 
+		self.MainOnly:SetScript("OnClick", function(self)
+			SetDataMember("MainOnly", self:GetChecked());
+			SetCompletionistMode(GetDataMember("CompletionistMode"));
+		end);
+		self.MainOnly:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Turn this setting on if you are not interested in collecting shared appearances that are not class or race locked. As an example, if you have collected a Priest-Only Tier Piece from ICC and there is a shared appearance from the raid that can be used by other classes, ATT will *pretend* that you've earned that appearance.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		if GetDataMember("CompletionistMode") then
+			self.MainOnly:Hide();
+		else
+			self.MainOnly:Show();
+		end
+
+		
 		self.PlayFanfare = CreateFrame("CheckButton", name .. "-PlayFanfare", self, "InterfaceOptionsCheckButtonTemplate");
 		CreateCheckBox(self.PlayFanfare, self, "Play Collection Fanfare", 300, -50, GetDataMember("PlayFanfare", true));
 		self.PlayFanfare:SetScript("OnClick", function(self)
@@ -4994,7 +5155,7 @@ function app:GetDataCache()
 		allData = setmetatable({}, {
 			__index = function(t, key)
 				if key == "title" then
-					return GetDataMember("CompletionistMode") and "Completionist Mode" or "Unique Appearance Mode";
+					return GetDataMember("CompletionistMode") and "Completionist Mode" or GetDataMember("MainOnly") and "Unique Appearance Mode (Main Only)" or "Unique Appearance Mode";
 				else
 					-- Something that isn't dynamic.
 					return table[key];
