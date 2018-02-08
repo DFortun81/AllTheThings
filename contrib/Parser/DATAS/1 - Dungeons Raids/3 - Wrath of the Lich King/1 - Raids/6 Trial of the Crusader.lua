@@ -809,7 +809,7 @@ _.Instances =
 					n(-40, { -- Legacy
 						["groups"] = {
 							ach(4080, {		-- A Tribute to Dedicated Insanity
-								style(2, title(136)),	-- the Argent Defender
+								un(37, style(2, title(136))),	-- the Argent Defender
 							}),
 							a(ach(4156, {	-- A Tribute to Immortality
 								un(2, a(i(49096))),		-- Crusader's White Warhorse
