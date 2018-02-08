@@ -457,7 +457,7 @@ _.Zones =
 				n(-7, { 	-- World Bosses
 				}),
 			}),
-			m(1052, {	-- Mardum, the Shattered Abyss
+			m(1028, {	-- Mardum, the Shattered Abyss
 			}),
 			m(1017, {	-- Stormheim
 				n(-7, { 	-- World Bosses
