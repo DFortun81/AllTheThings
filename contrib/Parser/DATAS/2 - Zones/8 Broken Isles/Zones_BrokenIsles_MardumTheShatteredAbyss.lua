@@ -4,228 +4,163 @@
 _.Zones =
 {
 	m(1007, { 	-- The Broken Isles
-		m(1052, {	-- Mardum, the Shattered Abyss
+		m(1028, {	-- Mardum, the Shattered Abyss
 			["groups"] = {
 				n(-17, { 	-- Quests
-					q( 44057),	-- A "Noble" Event
-					q( 42810),	-- A Final Offer
-					q( 43412),	-- A Hero's Weapon
-					q( 42733),	-- A Very Special Kind of Fuel
-					q( 42682),	-- Additional Accoutrements
-					q( 45180),	-- An Island of War
-					q( 46159),	-- An Urgent Message
-					q( 45993),	-- An Urgent Warning
-					q( 41803),	-- Asking a Favor
-					q( 40247),	-- Asking a Favor
-					q( 42801),	-- Back in Black
-					q( 42679),	-- Broken Warriors
-					q( 44223),	-- Champion Armaments
-					q( 42653),	-- Champion: Akama
-					q( 43184),	-- Champion: Allari the Souleater
-					q( 42690),	-- Champion: Altruis the Sufferer
-					q( 42697),	-- Champion: Asha Ravensong
-					q( 42777),	-- Champion: Belath Dawnblade
-					q( 43185),	-- Champion: Jace Darkweaver
-					q( 42695),	-- Champion: Kayn Sunfury
-					q( 42673),	-- Champion: Kor'vas Bloodthorn
-					q( 45391),	-- Champion: Lady S'theno
-					q( 42701),	-- Champion: Matron Mother Malevolence
-					q( 42664),	-- Champion: Shade of Akama
-					q( 42634),	-- Confrontation at the Black Temple
-					q( 42921),	-- Confrontation at the Black Temple
-					q( 44275),	-- Court of Stars
-					q( 41064),	-- Cursed Forge of the Nathrezim
-					q( 44273),	-- Darkheart Thicket
-					q( 44272),	-- Darkheart Thicket
-					q( 42732),	-- Deadlier Warglaives
-					q( 42787),	-- Deal With It Personally
-					q( 45339),	-- Defense of the Fel Hammer
-					q( 47078),	-- Delivering Lost Knowledge
-					q( 42683),	-- Demonic Improvements
-					q( 45173),	-- Desperate Times
-					q( 41069),	-- Direct Our Wrath
-					q( 41099),	-- Direct Our Wrath
-					q( 43552),	-- Eye of Azshara
-					q( 44270),	-- Eye of Azshara
-					q( 44271),	-- Eye of Azshara
-					q( 44226),	-- Fate Favors Us
-					q( 46780),	-- Further Advancement
-					q( 46152),	-- Furthering Knowledge
-					q( 42808),	-- Green Adepts
-					q( 43186),	-- I Am the Slayer!
-					q( 42510),	-- Immortal Soul
-					q( 44383),	-- In Pursuit of Power
-					q( 44379),	-- In Pursuit of Power
-					q( 42665),	-- Into Our Ranks
-					q( 39741),	-- Into Our Ranks
-					q( 43906),	-- Into the Nightmare: Fall of Cenarius
-					q( 43908),	-- Into the Nightmare: Fall of Cenarius
-					q( 43902),	-- Into the Nightmare: Fall of Cenarius
-					q( 43904),	-- Into the Nightmare: Fall of Cenarius
-					q( 43548),	-- Into the Nightmare: Il'gynoth
-					q( 43547),	-- Into the Nightmare: Il'gynoth
-					q( 43549),	-- Into the Nightmare: Il'gynoth
-					q( 43546),	-- Into the Nightmare: Il'gynoth
-					q( 43907),	-- Into the Nightmare: Xavius
-					q( 43909),	-- Into the Nightmare: Xavius
-					q( 43903),	-- Into the Nightmare: Xavius
-					q( 45994),	-- Investigate the Broken Shore
-					q( 42754),	-- Jump-Capable
-					q( 42132),	-- Last, But Not Least
-					q( 42522),	-- Leader of the Illidari
-					q( 46333),	-- Livin' on the Ledge
-					q( 42681),	-- Loramus, Is That You?
-					q( 40819),	-- Making Arrangements
-					q( 41120),	-- Making Arrangements
-					q( 42735),	-- Malace in Vrykul Land
-					q( 44266),	-- Maw of Souls
-					q( 44267),	-- Maw of Souls
-					q( 42594),	-- Move Like No Other
-					q( 43554),	-- Neltharion's Lair
-					q( 44264),	-- Neltharion's Lair
-					q( 44265),	-- Neltharion's Lair
-					q( 44269),	-- Odyn's Challenge
-					q( 44268),	-- Odyn's Challenge
-					q( 44694),	-- One Battle at a Time
-					q( 44214),	-- One More Thing...
-					q( 45329),	-- Operation: Portals
-					q( 42669),	-- Preparations for Invasion
-					q( 46266),	-- Return of the Slayer
-					q( 44917),	-- Return to Karazhan: The Tower of Power
-					q( 41033),	-- Return to Mardum
-					q( 41221),	-- Return to Mardum
-					q( 42666),	-- Return to the Fel Hammer
-					q( 44087),	-- Return to the Fel Hammer
-					q( 42670),	-- Rise, Champions
-					q( 42671),	-- Rise, Champions
-					q( 45330),	-- Scouting Party
-					q( 42802),	-- Securing Mardum
-					q( 41062),	-- Spoils of Victory
-					q( 41070),	-- Spoils of Victory
-					q( 45301),	-- Taking Charge
-					q( 42593),	-- The Arcane Way
-					q( 44263),	-- The Arcway
-					q( 37447),	-- The Blood of Demons
-					q( 42775),	-- The Crux of the Plan
-					q( 39247),	-- The Hunt
-					q( 41119),	-- The Hunt
-					q( 41066),	-- The Hunter's Gaze
-					q( 42809),	-- The Invasion of Niskara
-					q( 42920),	-- The Invasion of Niskara
-					q( 44276),	-- The Lord of Black Rook Hold
-					q( 44277),	-- The Lord of Black Rook Hold
-					q( 43914),	-- The Nighthold: Elisande
-					q( 43920),	-- The Nighthold: Elisande
-					q( 43911),	-- The Nighthold: Elisande
-					q( 43917),	-- The Nighthold: Elisande
-					q( 43912),	-- The Nighthold: Gul'dan
-					q( 43915),	-- The Nighthold: Gul'dan
-					q( 43921),	-- The Nighthold: Gul'dan
-					q( 43918),	-- The Nighthold: Gul'dan
-					q( 43910),	-- The Nighthold: High Botanist Tel'arn
-					q( 43913),	-- The Nighthold: High Botanist Tel'arn
-					q( 43916),	-- The Nighthold: High Botanist Tel'arn
-					q( 43890),	-- The Nighthold: Vaults
-					q( 43882),	-- The Nighthold: Vaults
-					q( 43889),	-- The Nighthold: Vaults
-					q( 43891),	-- The Nighthold: Vaults
-					q( 43501),	-- The Power Within
-					q( 43496),	-- The Power Within
-					q( 42677),	-- Things Gaardoun Needs
-					q( 44161),	-- Things Gaardoun Needs
-					q( 41096),	-- Time is of the Essence
-					q( 41067),	-- Time is of the Essence
-					q( 45172),	-- To Battle!
-					q( 46334),	-- To Fel and Back
-					q( 42776),	-- Two Worthies
-					q( 41060),	-- Unbridled Power
-					q( 41037),	-- Unbridled Power
-					q( 42131),	-- Unexpected Visitors
-					q( 44224),	-- Unleashing our Wrath
-					q( 44261),	-- Vault of the Wardens
-					q( 44260),	-- Vault of the Wardens
-					q( 43556),	-- Vault of the Wardens
-					q( 42752),	-- Vault of the Wardens: Vault Break-In
-					q( 42753),	-- Vault of the Wardens: Vault Break-In
-					q( 40249),	-- Vengeance Will Be Ours
-					q( 41863),	-- Vengeance Will Be Ours
-					q( 44258),	-- Violet Hold
-					q( 44259),	-- Violet Hold
-					qa( 43557),	-- Violet Hold
-					q( 44058),	-- Volpin the Elusive
-					q( 45385),	-- We Must be Prepared!
-					q( 45179),	-- Win the Crowd
-					q( 42731),	-- Working With the Wardens
-					q( 44213),	-- You Will Be Prepared!
-					q(  1111),	-- Gripping Shadows
-					q(  2395),	-- Gurgstok
-					q(  6553),	-- Hulking Forgefiend
-					q(  2391),	-- Idra'zuul
-					q(  3228),	-- Illidari Adept
-					q(  6392),	-- Illidari Adepts
-					q(   602),	-- Illidari Enforcer
-					q(   603),	-- Illidari Enforcer
-					q(   604),	-- Illidari Enforcer
-					q(   601),	-- Illidari Enforcer
-					q(  3395),	-- Illidari Enforcer
-					q(   257),	-- Illidari Fel Bat
-					q(  3708),	-- Illidari Rift Controller
-					q(  6560),	-- Illidari Scout
-					q(  6556),	-- Illidari Scout
-					q(  6485),	-- Illidari Veteran
-					q(  3013),	-- Illysanna Ravencrest
-					q(  0768),	-- Image of Kalec
-					q(  3674),	-- Imprisoned Centurion
-					q(  3647),	-- Imprisoned Eradicator
-					q(  3673),	-- Imprisoned Executioner
-					q(  3636),	-- Imprisoned Forgefiend
-					q(  3687),	-- Imprisoned Imp
-					q(  3676),	-- Imprisoned Weaver
-					q(  8425),	-- Injured Adept
-					q(  9965),	-- Izal Whitemoon
-					q(   246),	-- Izal Whitemoon
-					q(   587),	-- Izir the Lidless Eye
-					q(   646),	-- Jace Darkweaver
-					q(   241),	-- Jace Darkweaver
-					q(  0482),	-- Kayn Sunfury
-					q(  7724),	-- Kayn Sunfury
-					q(  8572),	-- Kayn Sunfury
-					q(   240),	-- Kayn Sunfury
-					q(  1680),	-- Kayn Sunfury
-					q(  2384),	-- Ko'razz
-					q(  8311),	-- Kor'vas Bloodthorn
-					q(  6448),	-- Kor'vas Bloodthorn
-					q(  3761),	-- Kor'vas Bloodthorn
-					q(  3010),	-- Kor'vas Bloodthorn
-					q(  2394),	-- Kur'zok
-					q(  6490),	-- Kyra Lightblade
-					q(   556),	-- Lady Elosar
-					q(  8784),	-- Lady S'theno
-					q(  7481),	-- Lady S'theno
-					q(  2628),	-- Lady S'theno
-					q(   624),	-- Lady S'theno
-					q(  0599),	-- Loramus Thalipedes
-					q(  8527),	-- Loramus Thalipedes
-					q(  2398),	-- Maglothar				
+					qg(93011 , q(40077, { -- The Invasion Begins
+						i(128953), -- Treads of Illidari Supremacy
+					})),
+					qg(98229 , q(40378)), -- Enter the Illidar: Ashtongue
+					q(39279, {-- Assault on Mardum
+						["groups"] = {
+						},
+						["description"] = "This is a bonus objective."
+					}),
+					qg(100982 , q(40379)), -- Enter the Illidari: Coilskar
+					qg(94410 , q(39049)), -- Eye On the Prize
+					qg(94410 , q(38759, { -- Set Them Free
+						i(128952), -- Torment Ender's Chestguard
+					})),
+					qg(93759, q(39050)), -- Meeting With the Queen
+					qg(93759, q(38766)), -- Before We're Overrun
+					qg(93759, q(38765, { -- Enter the Illidari: Shivarra
+						i(128951), -- Leggings of Sacrifice
+					})),
+					qg(93127, q(38813)), -- Orders for Your Captains
+					qg(93127, q(39262)), -- Give Me Sight Beyond Sight
+					qg(96436, q(39495)), -- Hidden No More
+					qg(96420, q(38819, { -- Their Numbers Are Legion
+						i(128950), -- Demon-Rend Shoulderblades
+					})),
+					qg(93127, q(38727)), -- Stop the Bombardment
+					qg(96655, q(38725)), -- Into the Foul Creche
+					qg(98711, q(40222, { -- The Imp Mother's Tome
+						i(128954),  -- Power Handler's Gloves
+					})),
+					qg(99045, q(40051)), -- Fel Secrets
+					qg(93127, q(39515)), -- Vengeance Will Be Mine! [Only if you choose Vengeance Spec]
+					qg(93127, q(39516)), -- Cry Havoc and Let Slip the Illidari! [Only if you choose Havoc Spec]
+					qg(93127, q(39663)), -- On Felbat Wings
+					qg(97297, q(38728, {  -- The Keystone
+						i(128955), -- The Brood Queen's Veil
+					})),
+					qg(97303, q(38729)), -- Return to the Black Temple
+					--[[
+					m(1032, { Vault of Wardens
+						qg(92718, q(38672)), -- Breaking Out
+					}),
+					--]]
+				}),
+				n(-212, { -- Treasure Chest
+					o(246309, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 40797, -- Fel Crystal Fragments x2
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(244689, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 39970, -- Fel Crystal Fragments x2
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(244691, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 39971, -- Inquisitor's Menacing Eye
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(245316, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 40223, -- Fel Crystal Fragments x1
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(246249, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 40759, -- Legion Healthstone
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(246147, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 40743, -- Fel Crystal Fragments x3
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(244694, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 39973, -- Mardum Lord Signetm
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(244692, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 39972, -- Legion Healthstone
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(244698, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 39974, -- Fel Crystal Fragments x2
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(246269, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 40772, -- Fel Crystal Fragments x2
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(244699, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 39975, -- Vile Stalkerskin Pouch [28 Slot Bag]
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(244701, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 40274, -- Fel Crystal Fragments x1
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(246353, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 40820, -- Legion Healthstone
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
+					o(244700, { -- Small Treasure Chest
+						["groups"] = {
+						},
+						["questID"] = 39976, -- Fel Crystal Fragments x2
+						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+					}),
 				}),
 				n(-16, { 	-- Rares
-					n(97059, { 	-- King Voras
-						["groups"] = {	
-							i(128944),
+					n(97058,  { -- Count Nefarious
+						["groups"] = {
 						},
-						["questID"] = 40232,	
-						["ids"] = {1794},	
-					}), 
+						["questID"] = 40231, -- Nefarious Ring
+					}),
 					n(97370, { 	-- General Volroth
 						["groups"] = {	
-							a(i(128947)),
-							h(i(133313)),
+							a(i(128947)), -- Pit Lord's Cuffs
+							h(i(133313)), -- Pit Lord's Cuffs
 						},
-						["questID"] = 40234,	
-						["ids"] = {1794},	
+						["questID"] = 40234,
 					}),
-				--	v(40233, { 	-- Overseer Brutarg	}), 
-				--	v(40231, { 	-- Count Nefarious	}), 					
+					n(97059, { 	-- King Voras
+						["groups"] = {	
+							i(128944), -- Voras' Silk Drape
+						},
+						["questID"] = 40232,
+					}), 
+					n(97057,  { -- Overseer Brutarg
+						["groups"] = {
+						},
+						["questID"] = 40233, -- Brutarg's Sword Tip
+					}),			
 				}),	
 			},
 			["classes"] = {12},
