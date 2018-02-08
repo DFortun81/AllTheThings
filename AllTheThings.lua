@@ -597,19 +597,21 @@ local function GetCachedSearchResults(search, method, ...)
 					local count = 0;
 					local abbrevs = L("ABBREVIATIONS");
 					for i,j in ipairs(group) do
-						local text = BuildSourceText(j, 0, j.qg);
-						for source,replacement in pairs(abbrevs) do
-							text = string.gsub(text, source,replacement);
-						end
-						tinsert(temp, text);
-						if not GetDataMember("ShowAllSources") then break; end
-						
-						count = count + 1;
-						if count > 25 then
-							count = #group - count;
-							if count > 1 then
-								tinsert(temp, "And " .. count .. " other sources...");
-								break;
+						if j.parent and j.parent.parent then
+							local text = BuildSourceText(j, 0, j.qg);
+							for source,replacement in pairs(abbrevs) do
+								text = string.gsub(text, source,replacement);
+							end
+							tinsert(temp, text);
+							if not GetDataMember("ShowAllSources") then break; end
+							
+							count = count + 1;
+							if count > 25 then
+								count = #group - count;
+								if count > 1 then
+									tinsert(temp, "And " .. count .. " other sources...");
+									break;
+								end
 							end
 						end
 					end
@@ -4697,7 +4699,7 @@ local function RowOnEnter(self)
 			if reference.parent.parent then
 				GameTooltip:AddDoubleLine(reference.parent.parent.text or RETRIEVING_DATA, reference.parent.text or RETRIEVING_DATA);
 			else
-				GameTooltip:AddLine(reference.parent.text or RETRIEVING_DATA, 1, 1, 1);
+				--GameTooltip:AddLine(reference.parent.text or RETRIEVING_DATA, 1, 1, 1);
 			end
 		end
 		
