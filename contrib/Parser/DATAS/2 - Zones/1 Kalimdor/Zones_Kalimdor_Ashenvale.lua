@@ -198,8 +198,7 @@ _.Zones =
 					})),
 				}),
 				n(-17, { 	-- Quests
---[[
-					qg(17106, qa(26453)),	-- A Helping Hand (breadcrumb quest for 26454)
+					qg(17106, qa(26453)),	-- A Helping Hand (breadcrumb quest for 26454) (No Prereq)
 					qg( 3897, qa(26481, {	-- A New Adornment
 						["groups"] = {
 						},
@@ -210,30 +209,27 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13872},
 					})),
-					qg(17291, qa(26454, {	-- A Shameful Waste
+					qg(17291, qa(26454, {	-- A Shameful Waste (No Prereq)
 						["groups"] = {
 						},
 						["breadcrumbQuestID"] = {26453},
 					})),
-					qg(11806, qa(13624)),	-- A Squad of Your Own
+					qg(11806, qa(13624)),	-- A Squad of Your Own (No Prereq)
 					qg( 3894, qa(13919, {	-- A Trip to the Moonwell
 						["groups"] = {
 						},
 						["sourceQuestID"] = {26475},
 					})),
---]]
-					qg(17287, qa(26457, {	-- Agents of Destruction
+					qg(17287, qa(26457, {	-- Agents of Destruction  (No Prereq)
 						i(56642),
 						i(56643),
 						i(131532),
 					})),
---[[
 					qg(33726, qh(13841, {	-- All Apologies
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13798},
 					})),
---]]
 					qg(34358, qa(13924, {	-- All's Well
 						["groups"] = {
 							i(56676),
@@ -243,19 +239,18 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13922},
 					})),
---[[
 					qg(33889, qh(13870, {	-- As Good as it Gets
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13815, 13865},
 					})),
-					qg(12867, qh( 6503)),	-- Ashenvale Outrunners
+					qg(12867, qh( 6503)),	-- Ashenvale Outrunners (No Prereq)
 					qg(33445, qa(13646, {	-- Astranaar Bound
 						["groups"] = {
 						},
 						["sourceQuestID"] = {26464},
 					})),
-					qg( 4079, qa(13849)),	-- Astranaar's Burning!
+					qg( 4079, qa(13849)),	-- Astranaar's Burning! (No Prereq)
 					qg(33837, qh(13848, {	-- Bad News Bear-er
 						["groups"] = {
 						},
@@ -266,8 +261,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13623},
 					})),
-					qg(33204, qa(26473)),	-- Bathran's Hair
---]]
+					qg(33204, qa(26473)),	-- Bathran's Hair (No Prereq)
 					qg(34122, qh(13920, {	-- Before You Go...
 						["groups"] = {
 							i(56721),
@@ -277,10 +271,9 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13890},
 					})),
---[[
-					qg(12757, qh(  216)),	-- Between a Rock and a Thistlefur
-					qdg(qg( 3845, qa(26897))),	-- Blackfathom Deeps
---]]
+					qg(12757, qh(  216)),	-- Between a Rock and a Thistlefur (No Prereq)
+					qdg(qg(34122, qh(26894))),	-- Blackfathom Deeps (No Prereq)
+					qdg(qg( 3845, qa(26897))),	-- Blackfathom Deeps (No Prereq)
 					qg(34359, qh(13947, {	-- Blastranaar!
 						["groups"]	= {
 							i(56661),
@@ -290,7 +283,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13944},
 					})),
---[[
 					qg(33837, qh(13803, {	-- Blood of the Weak
 						["groups"] = {
 						},
@@ -301,7 +293,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = {25622},
 					})),
---]]
 					qg(34359, qh(13943, {	-- Breathing Room
 						["groups"] = {
 							i(56667),
@@ -311,13 +302,11 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13936},
 					})),
---[[
 					qg(34596, qh(13983, {	-- Building Your Own Coffin
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13977},
 					})),
---]]
 					qg(40895, qa(25622, {	-- Burn, Baby, Burn!
 						["groups"] = {
 							i(57426),
@@ -326,7 +315,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = {25621},
 					})),
---[[
 					qg( 3996, qa(13965, {	-- Check in on the Edunes (breadcrumb quest for 13976)
 						["groups"] = {
 						},
@@ -347,32 +335,31 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13947},
 					})),
-					n(3925, { 	-- Thistlefur Avenger
+					n(3925, {				-- Thistlefur Avenger (No Prereq)
 						i(46128, { 	-- Troll Charm
 							qa(13868),	-- Corrupting Influence?
 						}),
 					}),
-					n(3926, { 	-- Thistlefur Pathfinder
+					n(3926, {				-- Thistlefur Pathfinder (No Prereq)
 						i(46128, { 	-- Troll Charm
 							qa(13868),	-- Corrupting Influence?
 						}),
 					}),
-					n(3924, { 	-- Thistlefur Shaman
+					n(3924, {				-- Thistlefur Shaman (No Prereq)
 						i(46128, { 	-- Troll Charm
 							qa(13868),	-- Corrupting Influence?
 						}),
 					}),
-					n(3922, { 	-- Thistlefur Totemic
+					n(3922, {				-- Thistlefur Totemic (No Prereq)
 						i(46128, { 	-- Troll Charm
 							qa(13868),	-- Corrupting Influence?
 						}),
 					}),
-					n(3921, { 	-- Thistlefur Ursa
+					n(3921, {				-- Thistlefur Ursa (No Prereq)
 						i(46128, { 	-- Troll Charm
 							qa(13868),	-- Corrupting Influence?
 						}),
 					}),
---]]
 					qg(33421, qh(13653, {	-- Crisis at Splintertree
 						["groups"] = {
 							i(56639),
@@ -382,8 +369,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13651},
 					})),
---[[
-					qg( 3691, qa(13867)),	-- Culling the Furbolg Threat
+					qg( 3691, qa(13867)),	-- Culling the Furbolg Threat (No Prereq)
 					qg( 3691, qa(26480, {	-- Dartol's Rod
 						["groups"] = {
 						},
@@ -394,8 +380,11 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13803},
 					})),
-					qg(12719, qh(13901)),	-- Deep Despair
---]]
+					qg(12719, qh(13901, {	-- Deep Despair
+						["groups"] = {
+						},
+						["sourceQuestID"] = {6442},
+					})),
 					qg(34377, qa(13935, {	-- Defend the Tree!
 						["groups"] = {
 							i(56670),
@@ -405,7 +394,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13928},
 					})),
---[[
 					qg(33204, qa(13623, {	-- Delivery for Orendil
 						["groups"] = {
 						},
@@ -416,45 +404,30 @@ _.Zones =
 						},
 						["sourceQuestID"] = {26449},
 					})),
-					qg(17303, qa(26444)),	-- Destroy the Legion
-					qg(17355, qh(26448)),	-- Destroy the Legion
-					n(11697, { 	-- Mannoroc Lasher
+					qg(17303, qa(26444)),	-- Destroy the Legion (No Prereq)
+					qg(17355, qh(26448)),	-- Destroy the Legion (No Prereq)
+					n(11697, {				-- Mannoroc Lasher (No Prereq)
 						i(23798, { 	-- Diabolical Plans
 							qh(26447),	-- Diabolical Plans
 						}),
 						i(23777, { 	-- Diabolical Plans
-							qa(26443, {	-- Diabolical Plans
-								["groups"] = {
-								},
-								["sourceQuestID"] = {13766},
-								["description"] = "The quest Closure is Only Natural needs to be in your quest log for this item to drop.",
-							}),
+							qa(26443),	-- Diabolical Plans
 						}),
 					}),
-					n(6115, { 	-- Roaming Felguard
+					n(6115, {				-- Roaming Felguard (No Prereq)
 						i(23798, { 	-- Diabolical Plans
 							qh(26447),	-- Diabolical Plans
 						}),
 						i(23777, { 	-- Diabolical Plans
-							qa(26443, {	-- Diabolical Plans
-								["groups"] = {
-								},
-								["sourceQuestID"] = {13766},
-								["description"] = "The quest Closure is Only Natural needs to be in your quest log for this item to drop.",
-							}),
+							qa(26443),	-- Diabolical Plans
 						}),
 					}),
-					n(6073, { 	-- Searing Infernal
+					n(6073, {				-- Searing Infernal (No Prereq)
 						i(23798, { 	-- Diabolical Plans
 							qh(26447),	-- Diabolical Plans
 						}),
 						i(23777, { 	-- Diabolical Plans
-							qa(26443, {	-- Diabolical Plans
-								["groups"] = {
-								},
-								["sourceQuestID"] = {13766},
-								["description"] = "The quest Closure is Only Natural needs to be in your quest log for this item to drop.",
-							}),
+							qa(26443),	-- Diabolical Plans
 						}),
 					}),
 					qg(33760, qh(13797, {	-- Dirty Deeds
@@ -467,7 +440,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13913, 25607, 13979},
 					})),
-					qg(33187, qa(13594, {	-- Don't Forget the Horde
+					qg(33187, qa(13594, {	-- Don't Forget the Horde (No Prereq)
 						["groups"] = {
 						},
 						["breadcrumbQuestID"] = {26408, 28492},
@@ -482,7 +455,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = {26474},
 					})),
---]]
 					qg(17287, qa(13698, {	-- Explosives Shredding
 						["groups"] = {
 							i( 56648),
@@ -493,7 +465,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = {26457},
 					})),
---[[
 					qg(40895, qa(25621, {	-- Field Test: Gnomecorder
 						["groups"] = {
 						},
@@ -509,7 +480,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13623},
 					})),
-					qg(12818, qh( 6482)),	-- Freedom to Ruul
+					qg(12818, qh( 6482)),	-- Freedom to Ruul (No Prereq)
 					qg(40895, qa(25729, {	-- Gerenzo the Traitor
 						["groups"] = {
 						},
@@ -520,21 +491,19 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13874},
 					})),
---]]
-					qg(34242, qh(13875, {	-- Gurtar's Request
+					qg(34242, qh(13875, {	-- Gurtar's Request (No Prereq)
 						i(56655),
 						i(56656),
 						i(56657),
 						i(131309),
 					})),
---[[
-					qa(13921),				-- He Who Would Be Forgiven
+					qa(13921, {				-- He Who Would Be Forgiven
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13919},
 						["description"] = "This quest is auto given to you once completing A Trip To The Moonwell.",
 					}),
-					qg(3894, qa(14018)),	-- He Who Would Be Forgiven
+					qg(3894, qa(14018, {	-- He Who Would Be Forgiven
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13919},
@@ -560,7 +529,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13921, 14018},
 					})),
---]]
 					qg(33777, qa(26472, {	-- Insane Druids
 						["groups"] = {
 							i(  5813),
@@ -568,7 +536,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13792},
 					})),
-					qg(34122, qh(13890, {	-- Keep the Fires Burning
+					qg(34122, qh(13890, {	-- Keep the Fires Burning (No Prereq)
 						i( 56715),
 						i( 56716),
 						i( 56717),
@@ -588,14 +556,12 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13967},
 					})),
---[[
-					qg(34303, qh(13883)),	-- Lousy Pieces of Ship
+					qg(34303, qh(13883)),	-- Lousy Pieces of Ship (No Prereq)
 					qg(33889, qh(13815, {	-- Making Stumps
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13808},
 					})),
---]]
 					qg(33421, qh(13640, {	-- Management Material
 						["groups"] = {
 							i( 56627),
@@ -605,7 +571,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13628},
 					})),
---[[
 					qg(34569, qh(13977, {	-- Mass Production
 						["groups"] = {
 						},
@@ -616,8 +581,8 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13805},
 					})),
-					qg(12719, qh( 6442)),	-- Naga at the Zoram Strand
-					qg( 3845, qa(13602)),	-- Naga of the Strand
+					qg(12719, qh( 6442)),	-- Naga at the Zoram Strand (No Prereq)
+					qg( 3845, qa(13602)),	-- Naga of the Strand (No Prereq)
 					qg(33421, qh(13651, {	-- Needs a Little Lubrication
 						["groups"] = {
 						},
@@ -633,13 +598,12 @@ _.Zones =
 						},
 						["sourceQuestID"] = {26447},
 					})),
-					qg(33182, qa(13595)),	-- Of Their Own Design
+					qg(33182, qa(13595)),	-- Of Their Own Design (No Prereq)
 					qg( 3847, qa(26474, {	-- Orendil's Cure
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13642},
 					})),
---]]
 					qg(33760, qh(13805, {	-- Pierce Their Heart!
 						["groups"] = {
 							i( 56727),
@@ -668,13 +632,11 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13803},
 					})),
---[[
 					qg(34292, q( 13884, {	-- Put Out The Fire
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13877, 13879},
 					})),
---]]
 					qg(33760, qh(13798, {	-- Rain of Destruction
 						["groups"] = {
 							i(56711),
@@ -683,18 +645,20 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13797},
 					})),
---[[
-					qg(11219, qa(13632)),	-- Rear Guard Duty
-					qg( 3885, qa(26838)),	-- Rebels Without a Clue (breadcrumb quest for 26735 removed if 28699 is completed)
-					qg(17310, qa(26446)),	-- Reclaiming Felfire Hill
-					qg( 3880, qa(13928)),	-- Recover the Fallen
-					qg(17310, qa(13869)),	-- Recover the Remains
+					qg(11219, qa(13632)),	-- Rear Guard Duty (No Prereq) 
+					qg( 3885, qa(26838)),	-- Rebels Without a Clue (breadcrumb quest for 26735) (No Prereq)
+					qg(17310, qa(26446)),	-- Reclaiming Felfire Hill (No Prereq)
+					qg( 3880, qa(13928)),	-- Recover the Fallen (No Prereq)
+					qg(17310, qa(13869, {	-- Recover the Remains
+						["groups"] = {
+						},
+						["sourceQuestID"] = {26454},
+					})),
 					qg( 3880, qa(26456, {	-- Report from the Northern Front
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13935},
 					})),
---]]
 					qg(11806, qa(13626, {	-- Respect for the Fallen
 						["groups"] = {
 							i(56630),
@@ -704,13 +668,11 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13624},
 					})),
---[[
-					qg( 3885, qa(26470, {	-- Retaking Mystral Lake
+					qg( 3885, qa(26470, {	-- Retaking Mystral Lake (No Prereq)
 						["groups"] = {
 						},
 						["breadcrumbQuestID"] = {13964},
 					})),
---]]
 					qg( 4079, qa(13853, {	-- Return Fire
 						["groups"] = {
 							i(56673),
@@ -720,20 +682,17 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13849},
 					})),
---[[
 					qg( 3916, qa(26479, {	-- Return to Raene
 						["groups"] = {
 						},
 						["sourceQuestID"] = {26478},
 					})),
---]]
 					qg( 3846, qa(26466, {	-- Ruuzel
 						["groups"] = {
 							i(5812),
 						},
 						["sourceQuestID"] = {26465},
 					})),
---[[
 					qg(12724, qh( 6441, {	-- Satyr Horns
 						["groups"] = {
 						},
@@ -745,11 +704,10 @@ _.Zones =
 						["sourceQuestID"] = {26468},
 					})),
 					qg( 3916, qa(26477, {	-- Search the Bole
--						["groups"] = {
+						["groups"] = {
 						},
 						["sourceQuestID"] = {26476},
 					})),
---]]
 					qg(17304, qh(13871, {	-- Security!
 						["groups"] = {
 							i( 56718),
@@ -759,7 +717,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13870},
 					})),
---[[
 					desc(qg(14753, qa( 7865)), "Requires Friendly Reputation with Silverwing Sentinels."),	-- Sentinel Advanced Care Package
 					desc(qg(14753, qa( 7863)), "Requires Friendly Reputation with Silverwing Sentinels."),	-- Sentinel Basic Care Package
 					desc(qg(14753, qa( 7864)), "Requires Friendly Reputation with Silverwing Sentinels."),	-- Sentinel Standard Care Package
@@ -768,12 +725,12 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13936},
 					})),
-					n(12677, { 	-- Shadumbra
+					n(12677, {				-- Shadumbra (No Prereq)
 						i(16304, { 	-- Shadumbra's Head
 							qh(   24),	-- Shadumbra's Head
 						}),
 					}),
-					n(12676, { 	-- Sharptalon
+					n(12676, {				-- Sharptalon (No Prereq)
 						i(16305, { 	-- Sharptalon's Claw
 							qh(    2),	-- Sharptalon's Claw
 						}),
@@ -783,7 +740,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13871},
 					})),
-					qg(34559, qh(   25)),	-- Simmer Down Now
+					qg(34559, qh(   25)),	-- Simmer Down Now (No Prereq)
 					qg(34395, qh(13944, {	-- Small Hands, Short Fuse
 						["groups"] = {
 						},
@@ -804,25 +761,22 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13730},
 					})),
---]]
-					qg(33443, qa(13644, {	-- That Which has Risen
+					qg(33443, qa(13644, {	-- That Which has Risen (No Prereq)
 						i(56652),
 						i(56653),
 						i(56654),
 						i(131298),
 					})),
---[[
-					qg( 3846, qa(26465, {	-- The Ancient Statuettes
+					qg( 3846, qa(26465, {	-- The Ancient Statuettes (No Prereq)
 						["groups"] = {
 						},
 						["breadcrumbQuestID"] = {13617},
 					})),
-					n(12759, { 	-- Tideress
+					n(12759, {				-- Tideress (No Prereq)
 						i(16408, { 	-- Befouled Water Globe
 							qh( 1918),	-- The Befouled Element
 						}),
 					}),
---]]
 					qg( 3920, qa(26468, {	-- The Branch of Cenarius
 						["groups"] = {
 							i(5820),
@@ -830,7 +784,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {26467},
 					})),
---					qg(34303, qh(26890)),	-- The Essence of Aku'Mai
+					qg(34303, qh(26890)),	-- The Essence of Aku'Mai (No Prereq)
 					qg(33777, qa(13796, {	-- The Forest Heart
 						["groups"] = {
 							i(56636),
@@ -840,7 +794,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13792},
 					})),
-					qg(34354, qa(13979, {	-- The Goblin Braintrust
+					qg(34354, qa(13979, {	-- The Goblin Braintrust (No Prereq)
 						i(56704),
 						i(56705),
 						i(131326),
@@ -854,7 +808,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13985},
 					})),
---					qg( 3848, qa(26455)),	-- The Lost Chalice
+					qg( 3848, qa(26455)),	-- The Lost Chalice (No Prereq)
 					qg( 3891, qa(26464, {	-- The Lost Gem
 						["groups"] = {
 							i(56624),
@@ -864,8 +818,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {26463},
 					})),
---[[
-					qg(33276, qa(13630)),	-- The Reason Why
+					qg(33276, qa(13630)),	-- The Reason Why (No Prereq)
 					qg(17310, qa(13792, {	-- The Shadewalker
 						["groups"] = {
 						},
@@ -877,20 +830,18 @@ _.Zones =
 						["sourceQuestID"] = {29303},
 						["description"] = "This quest is auto given after finishing the Tragedy and Family quest.",
 					}),
-					o(195134, { 	-- The Bomb
+					o(195134, { 			-- The Bomb (No Prereq)
 						qa(13981),		-- They Set Them Up The Bomb!
 					}),
-					qg(34354, qa(13913)),	-- They Took Our Gnomes
---]]
+					qg(34354, qa(13913)),	-- They Took Our Gnomes (No Prereq)
 					qg(34596, qh(13980, {	-- They're Out There!
 						["groups"] = {
 							i(56692),
 						},
 						["sourceQuestID"] = {13977},
 					})),
---[[
-					qg(12696, qh(13967)),	-- Thinning the... Herd?
-					qg(24739, qa(13976, {	-- Three Friends of the Forest
+					qg(12696, qh(13967)),	-- Thinning the... Herd? (No Prereq)
+					qg(24739, qa(13976, {	-- Three Friends of the Forest (No Prereq)
 						["groups"] = {
 						},
 						["breadcrumbQuestID"] = {13965},
@@ -900,7 +851,7 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13947},
 					})),
-					qg(34122, qh(13923, {	-- To Hellscream's Watch
+					qg(34122, qh(13923, {	-- To Hellscream's Watch (breadcrumb for 13936)
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13920},
@@ -920,19 +871,18 @@ _.Zones =
 						},
 						["sourceQuestID"] = {26478},
 					})),
---]]
 					qg(34251, qa(13876, {	-- Too Far Gone
 						["groups"] = {
 							i(56623),
 						},
 						["sourceQuestID"] = {13868},
 					})),
-					qg(12858, qh( 6544, { 	-- Torek's Assault
+					qg(12858, qh( 6544, { 	-- Torek's Assault (No Prereq)
 						i(16889),
 						i(16890),
 						i(156956),	-- Rugged Walking Staff
 					})),
---					qg(12721, qh( 6462)),	-- Troll Charm
+					qg(12721, qh( 6462)),	-- Troll Charm (No Prereq)
 					qg( 3897, qa(26482, {	-- True Power of the Rod
 						["groups"] = {
 							i(56694),
@@ -942,25 +892,23 @@ _.Zones =
 						},
 						["sourceQuestID"] = {26481},
 					})),
---[[
-					qg(34359, qh(13936, {	-- Tweedle's Dumb
+					qg(34359, qh(13936, {	-- Tweedle's Dumb (No Prereq)
 						["groups"] = {
 						},
-						["sourceQuestID"] = {13923},
+						["breadcrumbQuestID"] = {13923},
 					})),
 					qg(34395, qh(13974, {	-- Tweedle's Tiny Package
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13947},
 					})),
-					n(12678, { 	-- Ursangous
+					n(12678, {				-- Ursangous (No Prereq)
 						i(16303, { 	-- Ursangous' Paw
 							qh(   23),	-- Ursangous' Paw
 						}),
 					}),
-					qg( 3901, qa(26467)),	-- Vile Satyr! Dryads in Danger!
-					qg(12717, qh( 6641)),	-- Vorsha the Lasher
---]]
+					qg( 3901, qa(26467)),	-- Vile Satyr! Dryads in Danger! (No Prereq)
+					qg(12717, qh( 6641)),	-- Vorsha the Lasher (No Prereq)
 					qg(34289, qa(13886, {	-- Vortex
 						["groups"] = {
 							i( 56683),
@@ -979,19 +927,17 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13880,13884},
 					})),
---[[
-					qg(41678, qh(25945)),	-- We're Here to Do One Thing, Maybe Two...
+					qg(41678, qh(25945, {	-- We're Here to Do One Thing, Maybe Two... (No Prereq)
 						["groups"] = {
 						},
 						["breadcrumbQuestID"] = {28532},
 					})),
-					qg(43063, qh(26416)),	-- Well, Come to the Jungle
+					qg(43063, qh(26416)),	-- Well, Come to the Jungle (No Prereq)
 					qg(33187, qa(13617, {	-- West to the Strand (breadcrumb quest for 26465)
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13594},
 					})),
---]]
 					qg(33889, qh(13865, {	-- Wet Work
 						["groups"] = {
 							i( 56724),
@@ -1001,14 +947,12 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13808},
 					})),
---[[
 					qg( 3691, qa(13872, {	-- Worgen Wisdom
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13868},
 					})),
-					qg(40895, qa(25607)),	-- Ze Gnomecorder
---]]
+					qg(40895, qa(25607)),	-- Ze Gnomecorder (No Prereq)
 				}),
 				n(-16, { 	-- Rares
 					n(3773, { 	-- Akkrilus
@@ -1355,11 +1299,11 @@ _.Zones =
 						dr(01.0, i(  9806)),	-- Superior Gloves
 						dr(01.0, i(  9807)),	-- Superior Shoulders
 					}),
-						nld({     -- Legacy
-							na(3808, { 	-- Forsaken Dark Stalker
-								i(1351),	-- Fingerbone Bracers
-							}),
+					nld({     -- Legacy
+						na(3808, { 	-- Forsaken Dark Stalker
+							i(1351),	-- Fingerbone Bracers
 						}),
+					}),
 				}),
 				n(-2, { 	-- Vendor
 					na(3951, { 	-- Bhaldaran Ravenshade (_)
