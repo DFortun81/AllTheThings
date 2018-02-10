@@ -1338,6 +1338,51 @@ local function ExpandGroupsRecursively(group, expanded)
 		end
 	end
 end
+local function ExportDataRecursively(group, indent)
+	if group.itemID then return ""; end
+	if group.groups then
+		if group.instanceID then
+			EJ_SelectInstance(group.instanceID);
+			EJ_SetLootFilter(0, 0);
+			EJ_SetSlotFilter(0);
+			local str = indent .. "c(" .. group.instanceID .. "--[[" .. select(1, EJ_GetInstanceInfo()) .. "]], {\n";
+			for i,subgroup in ipairs(group.groups) do
+				str = str .. ExportDataRecursively(subgroup, indent .. "\t");
+			end
+			return str .. indent .. "}),\n"
+		end
+		if group.difficultyID then
+			EJ_SetDifficulty(group.difficultyID);
+			EJ_SetLootFilter(0, 0);
+			EJ_SetSlotFilter(0);
+			local str = indent .. "d(" .. group.difficultyID .. "--[[" .. select(1, GetDifficultyInfo(group.difficultyID)) .. "]], {\n";
+			for i,subgroup in ipairs(group.groups) do
+				str = str .. ExportDataRecursively(subgroup, indent .. "\t");
+			end
+			return str .. indent .. "}),\n"
+		end
+		if group.encounterID then
+			EJ_SelectEncounter(group.encounterID);
+			EJ_SetLootFilter(0, 0);
+			EJ_SetSlotFilter(0);
+			local str = indent .. "e(" .. group.encounterID .. "--[[" .. select(1, EJ_GetEncounterInfo(group.encounterID)) .. "]], {\n";
+			local numLoot = EJ_GetNumLoot();
+			for i = 1,numLoot do
+				local itemID = EJ_GetLootInfoByIndex(i);
+				str = str .. indent .. "\ti(" .. itemID .. "--[[" .. select(1, GetItemInfo(itemID)) .. "]]),\n";
+			end
+			return str .. indent .. "}),\n"
+		end
+	end
+	return "";
+end
+local function ExportData(group)
+	if group.instanceID then
+		EJ_SetLootFilter(0, 0);
+		EJ_SetSlotFilter(0);
+		SetDataMember("EXPORT_DATA", ExportDataRecursively(group, ""));
+	end
+end
 local function FindMapDataRecursively(listing, data, mapID)
 	if data then
 		for i, group in ipairs(data) do
@@ -1898,6 +1943,8 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 						rightSide:SetText(GetCollectionText(group.collected));
 					elseif group.trackable then
 						rightSide:SetText(GetCompletionText(group.saved));
+					else
+						rightSide:SetText("---");
 					end
 				end
 				rightSide:Show();
@@ -2211,6 +2258,7 @@ local DifficultyColors = {
 	[17] = "ff9d9d9d",		--"Interface/Worldmap/Skull_64Grey",
 	[23] = "ffa335ee",	--"Interface/Worldmap/Skull_64Purple",
 	[24] = "ffe6cc80",	--"Interface/Worldmap/Skull_64Red",
+	[33] = "ffe6cc80",	--"Interface/Worldmap/Skull_64Red",
 };
 local DifficultyIcons = {
 	[1] = "Interface\\Addons\\AllTheThings\\assets\\Normal",	--"Interface/Worldmap/Skull_64Green",
@@ -2226,6 +2274,7 @@ local DifficultyIcons = {
 	[17] = "Interface\\Addons\\AllTheThings\\assets\\LFR",		--"Interface/Worldmap/Skull_64Grey",
 	[23] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",	--"Interface/Worldmap/Skull_64Purple",
 	[24] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",	--"Interface/Worldmap/Skull_64Red",
+	[33] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",	--"Interface/Worldmap/Skull_64Red",
 };
 app.BaseDifficulty = {
 	__index = function(t, key)
@@ -4459,8 +4508,14 @@ local function SetRowData(self, data)
 		elseif data.trackable then
 			self.Summary:SetText(GetCompletionIcon(data.saved));
 			self.Summary:Show();
-		else
+		elseif data.collectable then
 			self.Summary:SetText(GetCollectionIcon(data.collected));
+			self.Summary:Show();
+		elseif data.groups and not data.expanded then
+			self.Summary:SetText("+++");
+			self.Summary:Show();
+		else
+			self.Summary:SetText("---");
 			self.Summary:Show();
 		end
 		self.Label:SetPoint("LEFT", leftmost, relative, x, 0);
@@ -4603,6 +4658,7 @@ local function RowOnClick(self, button)
 					local popout = app:GetWindow(self.ref.parent.text .. self.ref.text);
 					popout.data = setmetatable({}, { __index = self.ref });
 					ExpandGroupsRecursively(popout.data, true);
+					--ExportData(popout.data);
 					popout:Toggle(true);
 				else
 					-- Configuration Functionality!
