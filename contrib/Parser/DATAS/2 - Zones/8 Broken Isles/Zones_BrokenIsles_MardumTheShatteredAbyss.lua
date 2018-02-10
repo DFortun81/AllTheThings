@@ -257,7 +257,7 @@ _.Zones =
 						["questID"] = 40233, -- Brutarg's Sword Tip
 					}),			
 				}),	
-				m(1032, { -- Vault of Wardens
+				m(1032, { -- Vault of the Wardens: Vault of Silence
 					["groups"] = {
 						n(-17, { -- Quests
 							q(38672, {	-- Breaking Out
@@ -265,6 +265,186 @@ _.Zones =
 								},			
 								["qg"] = 92718, -- Maiev Shadowsong
 								["sourceQuestID"] = { 38729 }, -- Return to the Black Temple
+							}),
+							q(39742, {	-- Vault of the Wardens
+								["groups"] = {
+								},
+								["description"] = "This is a bonus objective.",
+								["sourceQuestID"] = { 38672 }, -- Breaking Out
+							}),	
+							q(38689, {	-- Fel Infusion
+								["groups"] = {
+								},
+								["qg"] = 92986, -- Altruis the Sufferer
+								["sourceQuestID"] = { 38672 }, -- Breaking Out
+							}),	
+							q(38690, {	-- Rise of the Illidari
+								["groups"] = {
+								},
+								["qg"] = 92980, -- Kayn Sunfury
+								["sourceQuestID"] = { 38672 }, -- Breaking Out
+							}),	
+							q(38723, {	-- Stop Gul'dan! [Havoc Version]
+								["groups"] = {
+								},
+								["qg"] = 92718, -- Maiev Shadowsong
+								["sourceQuestID"] = { 38672, 38672 }, -- Fel Infusion / Rise of the Illidari
+							}),	
+							q(40253, {	-- Stop Gul'dan! [Vengeance Version]
+								["groups"] = {
+								},
+								["qg"] = 92718, -- Maiev Shadowsong
+								["sourceQuestID"] = { 38672, 38672 }, -- Fel Infusion / Rise of the Illidari
+							}),	
+							q(39682, { -- Grand Theft Felbat
+								["groups"] = {
+								},
+								["qg"] = 96665, -- Kayn Sunfury
+								["sourceQuestID"] = { 38723, 40253 }, -- Stop Gul'dan!
+							}),
+							q(39683, { -- Forged in Fire [Havoc Only]
+								["groups"] = {
+								},
+								["qg"] = 96675, -- Allari the Souleater
+								["sourceQuestID"] = { 39682 }, -- Grand Theft Felbat
+							}),
+							q(40254, { -- Forged in Fire [Vengeance Only]
+								["groups"] = {
+								},
+								["qg"] = 96675, -- Allari the Souleater
+								["sourceQuestID"] = { 39682 }, -- Grand Theft Felbat
+							}),
+							q(39684, { -- Beam Me Up
+								["groups"] = {
+								},
+								["qg"] = 97643, -- Kor'vas Bloodthorn
+								["sourceQuestID"] = { 39682 }, -- Grand Theft Felbat
+							}),
+							q(39685, { -- Frozen in Time
+								["groups"] = {
+									a(i(128949)), -- Infernal Firecord Sash
+									h(i(133315)), -- Infernal Firecord Sash
+								},
+								["qg"] = 97643, -- Kor'vas Bloodthorn
+								["sourceQuestID"] = { 39682 }, -- Grand Theft Felbat
+							}),
+							q(39686, { -- All The Way Up
+								["groups"] = {
+								},
+								["qg"] = 96675, -- Allari the Souleater
+								["sourceQuestID"] = { 39683, 40254, 39684, 39685 }, -- Forged in Fire / Beam Me Up / Frozen in Time
+							}),
+							q(40373, { -- A New Direction
+								["groups"] = {
+									a(i(138970)), -- Helm of Reaffirmed Purpose
+									h(i(141650)), -- Helm of Reaffirmed Purpose
+								},
+								["qg"] = 97644, -- Kor'vas Bloodthorn
+								["sourceQuestID"] = { 39686 }, -- All The Way Up
+							}),
+							q(39688, { -- Between Us and Freedom / Nightelf [Havoc]
+								["groups"] = {
+								},
+								["qg"] = 97644, -- Kor'vas Bloodthorn
+								["races"] = { 4 }, -- Night Elf
+								["sourceQuestID"] = { 40373 }, -- A New Direction
+							}),
+							q(40255, { -- Between Us and Freedom / Night Elf [Vengeance]
+								["groups"] = {
+								},
+								["qg"] = 97644, -- Kor'vas Bloodthorn
+								["races"] = { 4 }, -- Night Elf
+								["sourceQuestID"] = { 40373 }, -- A New Direction
+							}),
+							q(39694, { -- Between Us and Freedom / Blood Elf [Havoc]
+								["groups"] = {
+								},
+								["qg"] = 97644, -- Kor'vas Bloodthorn
+								["races"] = { 10 }, -- Blood Elf
+								["sourceQuestID"] = { 40373 }, -- A New Direction
+							}),
+							q(40256, { -- Between Us and Freedom / Blood Elf [Vengeance]
+								["groups"] = {
+								},
+								["qg"] = 97644, -- Kor'vas Bloodthorn
+								["races"] = { 10 }, -- Blood Elf
+								["sourceQuestID"] = { 40373 }, -- A New Direction
+							}),
+							q(39690, { -- Illidari, We Are Leaving / Horde
+								["groups"] = {
+								},
+								["qg"] = 97978, -- Archmage Khadgar
+								["races"] = { 10 }, -- Blood Elf
+								["sourceQuestID"] = { 39688, 40255, 39694, 40256 }, -- Between Us and Freedom
+							}),
+							q(39689, { -- Illidari, We Are Leaving / Alliance
+								["groups"] = {
+								},
+								["qg"] = 97978, -- Archmage Khadgar
+								["races"] = { 4 }, -- Night Elf
+								["sourceQuestID"] = { 39688, 40255, 39694, 40256 }, -- Between Us and Freedom
+							}),
+						}),
+						n(-16, { -- Rares
+							n(96997, { -- Kethrazor
+								["groups"] = {
+								},
+								["questID"] = 40251, -- Inquisitor's Glowering Eye
+							}),
+							n(97069, { -- Wrath-Lord Lekos
+								["groups"] = {
+								},
+								["questID"] = 40301, -- Lekos' Leash
+							}),
+						}),
+						n(-212, { -- Treasure Chest
+							o(246555, { -- Small Treasure Chest
+								["groups"] = {
+								},
+								["questID"] = 40909, -- Fel Crystal Fragments x1
+								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+							}),
+							o(246556, { -- Small Treasure Chest
+								["groups"] = {
+								},
+								["questID"] = 40910, -- Legion Healthstone
+								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+							}),
+							o(246557, { -- Small Treasure Chest
+								["groups"] = {
+								},
+								["questID"] = 40911, -- Legion Healthstone
+								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+							}),
+							o(246558, { -- Small Treasure Chest
+								["groups"] = {
+								},
+								["questID"] = 40912, -- Legion Healthstone
+								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+							}),
+							o(246560, { -- Small Treasure Chest
+								["groups"] = {
+								},
+								["questID"] = 40914, -- Fel Crystal Fragments x1
+								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+							}),
+							o(246559, { -- Small Treasure Chest
+								["groups"] = {
+								},
+								["questID"] = 40913, -- Fel Crystal Fragments x1
+								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+							}),
+							o(246561, { -- Small Treasure Chest
+								["groups"] = {
+								},
+								["questID"] = 40915, -- Fel Crystal Fragments x1
+								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
+							}),
+							o(246562, { -- Small Treasure Chest
+								["groups"] = {
+								},
+								["questID"] = 40916, -- Fel Crystal Fragments x1
+								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
 							}),
 						}),
 					},

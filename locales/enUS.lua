@@ -1893,8 +1893,14 @@ AllTheThings.Locales.enUS = {
 		[244701] = "Small Treasure Chest",
 		[246353] = "Small Treasure Chest",
 		[244700] = "Small Treasure Chest",
-
-
+		[246555] = "Small Treasure Chest",
+		[246556] = "Small Treasure Chest",
+		[246557] = "Small Treasure Chest",
+		[246558] = "Small Treasure Chest",
+		[246559] = "Small Treasure Chest",
+		[246560] = "Small Treasure Chest",
+		[246561] = "Small Treasure Chest",
+		[246562] = "Small Treasure Chest",
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
