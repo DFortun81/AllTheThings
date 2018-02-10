@@ -8,112 +8,42 @@ _.Instances =
 		["groups"] = {
 			c(64, { 	-- Shadowfang Keep
 				["groups"] = {
-					n(-40, { 	-- Legacy
+					n(-50, { -- Love Is In the Air
 						["groups"] = {
-							nlq({ 		-- Legacy Quests
-								qh(1098, { -- Deathstalkers in Shadowfang
-									i(3324), -- Ghostly Mantle
-								}),
-								qh(1013, { -- The Book of Ur
-									i(6335), -- Grizzled Boots
-									i(4534), -- Steel-Clasped Bracers
-								}),
-								qh(1014),	-- Arugal Must Die
-								q(1740, { -- The Orb of Soran'ruk
+							n(-17, { -- Quests
+								i(49641, { -- Faded Lovely Greeting Card
 									["groups"] = {
-										i(6898), -- Orb of Soran'ruk
-										i(15109), -- Staff of Soran'ruk
+										qh(14483), -- Something is in the Air (and it Ain't Love)
+										qa(24745), -- Something is in the Air (and it Ain't Love)
 									},
-									["classes"] = { 9 }
+									["qg"] = 36296,
 								}),
-								qh(9692, { -- The Path of the Adept
+							}),
+							n(36296, { -- Apothecary Hummel
+								i(54537, { -- Heart-Shaped Box
 									["groups"] = {
-										q(9707, { -- Forging the Weapon
-											["groups"] = {
-												q(9710, { -- The Blood-Tempered Ranseur
-													["groups"] = {
-														i(25464), -- Blood-Tempered Ranseur
-													},
-													["classes"] = { 2 }
-												}),
-											},
-											["classes"] = { 2 }
-										}),
+										un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
+										un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
+										un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
+										un(18, dr(0.33, i(50250))),	-- Big Love Rocket
+										un(18, dr(1.0, i(50471))),	-- The Heartbreaker
 									},
-									["classes"] = { 2 }
+									["Lvl"] = 98,
 								}),
-								qa(1654, { -- The Test of Righteousness
+								i(147907, { -- Heart-Shaped Carton
 									["groups"] = {
-										q(1806, { -- The Test of Righteousness
-											["groups"] = {
-												i(6953), -- Verigan's Fist
-											},
-											["classes"] = { 2 }
-										}),
+										un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
+										un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
+										un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
+										un(18, dr(1.0, i(50471))),	-- The Heartbreaker
 									},
-									["classes"] = { 2 }
+									["Lvl"] = 16,
 								}),
-							}),
-							n(3886, {	-- Razorclaw the Butcher
-								i(6226),	-- Bloody Apron
-								i(1292),	-- Butcher's Cleaver
-								i(6633),	-- Butcher's Slicer
-							}),
-							n(14682, {	-- Sever
-								i(23173),	-- Abomination Skin Leggings
-								i(23171),	-- The Axe of Severing
-							}),
-							n(4274, {	-- Fenrus the Devourer
-								i(6340),	-- Fenrus' Hide
-							}),
-							n(4275, {	-- Archmage Arugal
-								i(6392),	-- Belt of Arugal
 							}),
 						},
-						["description"] = "During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",
-						["u"] = 12,
 					}),
 					d(1, {		-- Normal
-						n(-3, { 			-- Holiday
-							["groups"] = {
-								n(-50, { -- Love Is In the Air
-									["groups"] = {
-										n(-17, { -- Quests
-											i(49641, { -- Faded Lovely Greeting Card
-												["groups"] = {
-													qh(14483), -- Something is in the Air (and it Ain't Love)
-													qa(24745), -- Something is in the Air (and it Ain't Love)
-												},
-												["qg"] = 36296,
-											}),
-										}),
-										n(36296, { -- Apothecary Hummel
-											i(54537, { -- Heart-Shaped Box
-												["groups"] = {
-													un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
-													un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
-													un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
-													un(18, dr(0.33, i(50250))),	-- Big Love Rocket
-													un(18, dr(1.0, i(50471))),	-- The Heartbreaker
-												},
-												["Lvl"] = 98,
-											}),
-											i(147907, { -- Heart-Shaped Carton
-												["groups"] = {
-													un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
-													un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
-													un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
-													un(18, dr(1.0, i(50471))),	-- The Heartbreaker
-												},
-												["Lvl"] = 16,
-											}),
-										}),
-									},
-									["u"] = 18,
-								}),
-							},
-						}),
-						n(-17, {			-- Quests 
+						n(-17, { -- Quests 
 							qg(47006, qa(27920)), 	-- Armored to the Teeth
 							qg(47006, qa(27921)), 	-- Fighting Tooth and Claw
 							qg(47006, qa(27968,{ 	-- Fury of the Pack
@@ -146,7 +76,6 @@ _.Instances =
 						})),
 						n(3864, {  			-- Fel Steed
 							dr(21, i(6341)), 	-- Eerie Stable Lantern
-							dr(0.05, i(2807)), 	-- Guillotine Axe
 						}),
 						cr(3887, e(97, { 	-- Baron Silverlaine
 							i(5254),	-- Rugged Spaulders
@@ -343,6 +272,71 @@ _.Instances =
 								dr(0.02, i(1484)),	-- Witching Stave
 							}),		
 						}),
+					}),
+					n(-40, { 	-- Legacy
+						["groups"] = {
+							nlq({ 		-- Legacy Quests
+								qh(1098, { -- Deathstalkers in Shadowfang
+									i(3324), -- Ghostly Mantle
+								}),
+								qh(1013, { -- The Book of Ur
+									i(6335), -- Grizzled Boots
+									i(4534), -- Steel-Clasped Bracers
+								}),
+								qh(1014),	-- Arugal Must Die
+								q(1740, { -- The Orb of Soran'ruk
+									["groups"] = {
+										i(6898), -- Orb of Soran'ruk
+										i(15109), -- Staff of Soran'ruk
+									},
+									["classes"] = { 9 }
+								}),
+								qh(9692, { -- The Path of the Adept
+									["groups"] = {
+										q(9707, { -- Forging the Weapon
+											["groups"] = {
+												q(9710, { -- The Blood-Tempered Ranseur
+													["groups"] = {
+														i(25464), -- Blood-Tempered Ranseur
+													},
+													["classes"] = { 2 }
+												}),
+											},
+											["classes"] = { 2 }
+										}),
+									},
+									["classes"] = { 2 }
+								}),
+								qa(1654, { -- The Test of Righteousness
+									["groups"] = {
+										q(1806, { -- The Test of Righteousness
+											["groups"] = {
+												i(6953), -- Verigan's Fist
+											},
+											["classes"] = { 2 }
+										}),
+									},
+									["classes"] = { 2 }
+								}),
+							}),
+							n(3886, {	-- Razorclaw the Butcher
+								i(6226),	-- Bloody Apron
+								i(1292),	-- Butcher's Cleaver
+								i(6633),	-- Butcher's Slicer
+							}),
+							n(14682, {	-- Sever
+								i(23173),	-- Abomination Skin Leggings
+								i(23171),	-- The Axe of Severing
+							}),
+							n(4274, {	-- Fenrus the Devourer
+								i(6340),	-- Fenrus' Hide
+							}),
+							n(4275, {	-- Archmage Arugal
+								i(6392),	-- Belt of Arugal
+							}),
+						},
+						["description"] = "During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",
+						["u"] = 12,
 					}),
 				},
 				["Lvl"] = 11,
