@@ -165,6 +165,7 @@ local DifficultyDB = {
 	[17] = { icon = "Interface/Worldmap/Skull_64Grey", itemModID = 4 },
 	[23] = { icon = "Interface/Worldmap/Skull_64Purple", itemModID = 23 },
 	[24] = { icon = "Interface/Worldmap/Skull_64Red", itemModID = 22 },
+	[33] = { icon = "Interface/Worldmap/Skull_64Red", itemModID = 22 },
 };
 app.CreateDifficulty = function(id, t)
 	if not t.groups then t = { ["groups"] = t }; end
