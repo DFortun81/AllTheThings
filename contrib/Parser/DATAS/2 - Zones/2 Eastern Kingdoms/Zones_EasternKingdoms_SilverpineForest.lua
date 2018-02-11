@@ -877,6 +877,10 @@ _.Zones =
 						i(4777), 	-- Ironwood Maul
 					}),
 				}),
+				m(684, { -- Ruins of Gilneas
+					n(-17, { -- Quests
+					}),
+				}),
 			},
 			["Lvl"] = 10,	
 			["achievementID"] = 769,
