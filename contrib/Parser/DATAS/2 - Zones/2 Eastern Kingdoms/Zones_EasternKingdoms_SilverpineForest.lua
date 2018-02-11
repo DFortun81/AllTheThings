@@ -6,11 +6,12 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(21, {		-- Silverpine Forest
 			["groups"] = {				
-				n(-3, { 	-- Holidays					
---[[					
+--[[
+				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
+								qg(15561, q(  8645)),	-- Obsidian the Elder
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
@@ -39,20 +40,19 @@ _.Zones =
 						},
 						["achievementID"] = 1793, -- For The Children
 						["u"] = 20,
-					}),	
---]]					
+					}),						
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								o(187559, {	-- Horde Bonfire (Silverpine Forest)
 									qa(11580),	-- Desecrate this Fire!
 								}),
+								qg(25939, qh(11584)),	-- Honor the Flame
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
 						["u"] = 21,
 					}),	
---[[					
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -64,6 +64,8 @@ _.Zones =
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
+								qh(12371),	-- Candy Bucket
+								qh(28966),	-- Candy Bucket
 							}),
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
@@ -84,9 +86,9 @@ _.Zones =
 						},
 						["achievementID"] = 1691, -- Merrymaker
 						["u"] = 29,
-					}),						
---]]				
-				}),								
+					}),										
+				}),
+--]]
 				n(-25, { 	-- Pet Battle
 					p(455),		-- Blighted Squirrel
 					p(628),		-- Infected Fawn
@@ -97,47 +99,94 @@ _.Zones =
 					p(379),		-- Squirrel
 					p(420)		-- Toad
 				}),
-				n(-17, { 	-- Quests	
---					qg(, qh(27577)),	-- 7th Legion Battle Plans
+				n(-17, { 	-- Quests
+					
+					
+					
+					qh(26992, {	-- Agony Abounds
+						["groups"] = {
+						},
+						["qg"] = 44778,	-- Apothecary Witherbloom
+						["sourceQuestID"] = {26965},	-- The Warchief Cometh
+					}),
+					
+					
+					qh(26995, {	-- Guts and Gore
+						["groups"] = {
+						},
+						["qg"] = 44784,	-- High Apothecary Shana T'veen
+						["sourceQuestID"] = {26965},	-- The Warchief Cometh
+					}),
+					
+					
+					qh(26989, { 	-- The Gilneas Liberation Front
+						["groups"] = {
+							i(62839),	-- Nubly Bracers
+							i(62837),	-- Nubish Cloak
+							i(62838),	-- Nub's Wand
+						},
+						["qg"] = 44615,	-- Grand Executor Mortuus
+						["sourceQuestID"] = {26965},	-- The Warchief Cometh
+					}),
+					
+					
+					qh(26965, {	-- The Warchief Cometh
+						["groups"] = {
+						},
+						["qg"] = 44615,	-- Grand Executor Mortuus
+						["breadcrumbQuestID"] = {26964},	-- Warchief's Command: Silverpine Forest!
+					}),
+				
+				
+				
+				
+				
+				
+				
+--[[				
+						
+						
+						["groups"] = {
+						},
+						["qg"] =	-- 
+						["sourceQuestID"] = {},	-- 
+					}),
+				
+--]]				
+				
+				
+				
+				
+				
+				
+				
+				
+					qg(45879, qh(27577)),	-- 7th Legion Battle Plans
 					qg(45631, qh(27510, { 	-- A Wolf in Bear's Clothing
 						i( 62884),	-- "Bear" Hide Boots
 						i(131678),	-- Inconspicuous Footguards
 						i( 62883),	-- Inconspicuous Pantaloons
 						i( 62885),	-- Unmistakable Gloves
 					})),
---[[					
-					qg(, qh(26992)),	-- Agony Abounds
-					qg(, qh(27056)),	-- Belmont's Report
-					qg(, qh(27474)),	-- Breaking the Barrier
-					qh(12371),	-- Candy Bucket
-					qh(28966),	-- Candy Bucket
---]]					
+					qg(44789, qh(27056)),	-- Belmont's Report
+					qg(45617, qh(27474)),	-- Breaking the Barrier
 					qg(45617, qh(27601, { 	-- Cities in Dust
 						i( 62897),	-- Bracers of the Most Trusted
 						i(131680),	-- Belt of Absolute Allegiance
 						i( 62896),	-- Belt of Beginnings
 						i( 62895),	-- Slippers of Unturned Loyalties
 					})),
---[[					
-					qg(, qh(27194)),	-- Cornered and Crushed!
-					qg(, qh(27476)),	-- Dalar Dawnweaver
-					qg(, qh(27039)),	-- Dangerous Intentions
---]]
+					qg(44365, qh(27194)),	-- Cornered and Crushed!
+					qg(45617, qh(27476)),	-- Dalar Dawnweaver
+					qg(44789, qh(27039)),	-- Dangerous Intentions
 					qg(44917, qh(27094, { 	-- Deeper into Darkness
 						i( 62850),	-- Drunken Style Bracers
 						i(131640),	-- Rear Guard Bands
 						i( 62851),	-- Rear Guard Britches
 						i( 62849),	-- Skitterweb Glovelettes
 					})),
---[[					
-					qa(11755),	-- Desecrate this Fire!
-					qa(11786),	-- Desecrate this Fire!
-					qa(11580),	-- Desecrate this Fire!
-					qa(11766),	-- Desecrate this Fire!
-					qa(11732),	-- Desecrate this Fire!
-					qg(, qh(27746)),	-- Empire of Dirt
-					qg(, qh(27181)),	-- Excising the Taint
---]]
+					qg(46124, qh(27746)),	-- Empire of Dirt
+					qg(45195, qh(27181)),	-- Excising the Taint
 					qg(45878, qh(27575, { 	-- From the Belly of the Beast
 						["groups"] = {
 							i(131679),	-- Better, Stronger, Faster Bracers
@@ -147,21 +196,19 @@ _.Zones =
 						},
 						["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"
 					})),
---[[					
-					qg(, qh(27073)),	-- Give 'em Hell!
-					qg(, qh(26995)),	-- Guts and Gore
---]]
+					qg(44917, qh(27073)),	-- Give 'em Hell!
 					qg(44917, qh(27226, { 	-- Hair of the Dog
 						i( 62846),	-- Ale-Soaked Robes
 						i(131660),	-- Cord of the Sepulcher
 						i( 62847),	-- Sea Dog Belt
 						i( 62848),	-- Treads of the Sepulcher
 					})),
---[[				
-					qg(, qh(27180)),	-- Honor the Dead
-					qg(, qh(11584)),	-- Honor the Flame
-					qg(, qh(27574)),	-- I Never Forget a Face
---]]
+					qg(44365, qh(27180)),	-- Honor the Dead
+					n( 45896, {	-- Marsh Crocolisk
+						i(61505, {	-- Partially Digested Head
+							qh(27574),	-- I Never Forget a Face
+						}),
+					}),
 					qg(44912, qh(27088, { 	-- It's Only Poisonous if You Ingest It
 						i(62843),	-- Bush Chicken Remote Injector
 						i(62845),	-- Chicken Stuffers
@@ -173,7 +220,7 @@ _.Zones =
 						i( 62836),	-- Muckdweller Spear
 						i( 62834),	-- T'veen's Cloak
 					})),
-					n(45301, {	-- Korok the Colossus
+					n( 45301, {	-- Korok the Colossus
 						i(60956, {	-- Korok's Second Head
 							qh(27322, { 	-- Korok the Colossus
 								["groups"] = {
@@ -185,12 +232,9 @@ _.Zones =
 							}),
 						}),
 					}),
---[[					
-					qg(, qh(27548)),	-- Lessons in Fear
-					qg(, qh(27480)),	-- Ley Energies
-					qg(, qh(27098)),	-- Lordaeron
-					qg(, qh(27093)),	-- Lost in the Darkness
---]]
+					qg(45879, qh(27548)),	-- Lessons in Fear
+					qg(44365, qh(27098)),	-- Lordaeron
+					qg(44916, qh(27093)),	-- Lost in the Darkness
 					qg(44365, qh(27099, { 	-- No Escape
 						i(62858),	-- Flesh and Bone
 						i(62857),	-- Staff of the Formidable Opponent
@@ -202,59 +246,44 @@ _.Zones =
 						i(131652),	-- Trousers of Desperate Measures
 						i( 62856),	-- Underestimated Crossbow
 					})),
---[[					
-					qg(, q(  8645)),	-- Obsidian the Elder
-					qg(, qh(27547)),	-- Of No Consequence
-					qg(, qh(27594)),	-- On Her Majesty's Secret Service
-					qg(, qh(27484)),	-- Only One May Enter
-					qg(, qh(27096)),	-- Orcs are in Order
-					qg(, qh(27082)),	-- Playing Dirty
---]]
+					qg(45880, qh(27547)),	-- Of No Consequence
+					qg(45878, qh(27594)),	-- On Her Majesty's Secret Service
+					qg( 1938, qh(27484)),	-- Only One May Enter
+					qg(44916, qh(27096)),	-- Orcs are in Order
+					qg(44912, qh(27082)),	-- Playing Dirty
 					qg( 1938, qh(27483, { 	-- Practical Vengeance
 						i(62880),	-- Axe of Practical Vengeance
 						i(62881),	-- Dawnweaver's Dagger
 						i(62882),	-- Edge of Unlifted Burdens
 						i(62879),	-- Psychopathic Hatchet
 					})),
---[[					
-					qg(, qh(27550)),	-- Pyrewood's Fall
-					qg(, qh(27231)),	-- Reinforcements from Fenris
---]]
+					qg(45878, qh(27550)),	-- Pyrewood's Fall
+					qg(44916, qh(27231)),	-- Reinforcements from Fenris
 					qg( 1938, qh(27478, { 	-- Relios the Relic Keeper
 						i(62875),	-- Betrayal's Sting
 						i(62878),	-- Codex Breaker
 						i(62877),	-- Forsaken Ball
 						i(62876),	-- Relios's Mace
 					})),
---[[					
-					qg(, qh(27097)),	-- Rise, Forsaken
-					qg(, qh(27472)),	-- Rise, Godfrey
-					qg(, qh(27193)),	-- Seek and Destroy
-					qg(, qh(27095)),	-- Skitterweb Menace
-					qg(, qh(27580)),	-- Sowing Discord
---]]
+					qg(44365, qh(27097)),	-- Rise, Forsaken
+					qg(45525, qh(27472)),	-- Rise, Godfrey
+					qg(44365, qh(27193)),	-- Seek and Destroy
+					qg(44917, qh(27095)),	-- Skitterweb Menace
+					qg(45878, qh(27580)),	-- Sowing Discord
 					qg(44916, qh(27069, { 	-- Steel Thunder
 						i( 62841),	-- Bloodfang Vest
 						i( 62840),	-- Sober Pup Wristbands
 						i( 62842),	-- Steel Thunder Belt
 						i(131636),	-- Steel Thunder Chestbrace
 					})),
---					qg(, qh(27542)),	-- Taking the Battlefront
-					qg(44615, qh(26989, { 	-- The Gilneas Liberation Front
-						i(62839),	-- Nubly Bracers
-						i(62837),	-- Nubish Cloak
-						i(62838),	-- Nub's Wand
-					})),
+					qg(45617, qh(27542)),	-- Taking the Battlefront
 					qg(45312, qh(27438, { 	-- The Great Escape (secondary QG ID 45474)
 						i( 62872),	-- Cloak of Secret Purpose
 						i( 62873),	-- Godfrey's Belt
 						i(131677),	-- Godfrey's Waistband
 						i( 62874),	-- Treads of the True Plan
 					})),
---[[				
-					qg(, qh(26965)),	-- The Warchief Cometh
-					qg(, qh(27065)),	-- The Warchief's Fleet
---]]
+					qg(44365, qh(27065)),	-- The Warchief's Fleet
 					o(205350, {	-- Horde Communication Panel
 						qh(27232, { 	-- The Waters Run Red...
 							i( 62853),	-- Blood Offering Platter
@@ -262,20 +291,15 @@ _.Zones =
 							i(131661),	-- Treads of Red Waters
 						}),
 					}),
---[[					
-					qg(, qh(27290)),	-- To Forsaken Forward Command
-					qg(, qh(27512)),	-- Transdimensional Warfare: Chapter I
-					qg(, qh(27513)),	-- Transdimensional Warfare: Chapter II
---]]
+					qg(44365, qh(27290)),	-- To Forsaken Forward Command
+					qg(45617, qh(27512)),	-- Transdimensional Warfare: Chapter I
+					qg(45752, qh(27513)),	-- Transdimensional Warfare: Chapter II
 					qg(45617, qh(27518, { 	-- Transdimensional Warfare: Chapter III
 						i(62890),	-- Ataeric's Gloves
 						i(62889),	-- Transdimensional Cloak
 						i(62891),	-- Vessel of the Dark Lady
 					})),
---[[
-					qg(, qh(  264)),	-- Until Death Do Us Part
-					qg(, qh(27475)),	-- Unyielding Servitors
---]]
+					qg(45610, qh(27475)),	-- Unyielding Servitors (secondary QG ID 45626)
 					o(205143, {	-- Abandoned Outhouse
 						qh(27045, { 	-- Waiting to Exsanguinate
 							i( 62833),	-- Cloak of Courage
@@ -284,11 +308,7 @@ _.Zones =
 							i( 62832),	-- Yorick's Bequest
 						}),
 					}),
---[[					
-					qg(, qh(28089)),	-- Warchief's Command: Hillsbrad Foothills!
-					qg(, qh(28568)),	-- Warchief's Command: Silverpine Forest!
-					qg(, qh(26964)),	-- Warchief's Command: Silverpine Forest!
---]]
+					qg(44640, qh(28089)),	-- Warchief's Command: Hillsbrad Foothills! (secondary QG IDs 45631 and 46125)
 					nlq({     -- Legacy Quests
 						qh(451, { 	-- A Recipe for Death
 							i(3582),	-- Acidproof Cloak

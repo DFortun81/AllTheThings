@@ -242,13 +242,13 @@ _.Zones =
 						["sourceQuestID"] = {26708},	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 					})),
 					qg(  464, qa(26503, {	-- Still Assessing the Threat
---						["groups"] = {
+						["groups"] = {
 						i( 60687),	-- Belt of the Sons
 						i( 60686),	-- Boots of the Prolific Sire
 						i(131538),	-- Striders of the Prolific Sire
 						i( 60685),	-- Yowling Cloak
---						},
---						["sourceQuestID"] = {26365},	-- Hero's Call: Redridge Mountains! (unnecessary after a certain level?)
+						},
+						["breadcrumbQuestID"] = {26365},	-- Hero's Call: Redridge Mountains!
 					})),
 					qg(43194, qa(26569, {	-- Surveying Equipment
 						["groups"] = {
