@@ -100,40 +100,67 @@ _.Zones =
 					p(420)		-- Toad
 				}),
 				n(-17, { 	-- Quests
-					
-					
-					
+					qh(27577, {	-- 7th Legion Battle Plans
+						["groups"] = {
+						},
+						["qg"] = 45879,	-- Lord Walden
+						["sourceQuestID"] = { 27548, 27550 },	-- Lessons in Fear / Pyrewood's Fall
+					}),
 					qh(26992, {	-- Agony Abounds
 						["groups"] = {
 						},
 						["qg"] = 44778,	-- Apothecary Witherbloom
 						["sourceQuestID"] = { 26965 },	-- The Warchief Cometh
 					}),
-					
-					
+					qh(27510, {	-- A Wolf in Bear's Clothing
+						["groups"] = {
+							i( 62884),	-- "Bear" Hide Boots
+							i(131678),	-- Inconspicuous Footguards
+							i( 62883),	-- Inconspicuous Pantaloons
+							i( 62885),	-- Unmistakable Gloves
+						},
+						["qg"] = 45631,	-- High Warlord Cromush
+						["sourceQuestID"] = { 27484 },	-- Only One May Enter
+					}),
 					qh(27056, {	-- Belmont's Report
 						["groups"] = {
 						},
 						["qg"] = 44789,	-- Deathstalker Commander Belmont
 						["sourceQuestID"] = { 27045 },	-- Waiting to Exsanguinate
 					}),
-					
-					
+					qh(27474, {	-- Breaking the Barrier
+						["groups"] = {
+						},
+						["qg"] = 45617,	-- Lady Sylvanas Windrunner
+						["sourceQuestID"] = { 27472 },	-- Rise, Godfrey
+					}),
+					qh(27601, { -- Cities in Dust
+						["groups"] = {
+							i( 62897),	-- Bracers of the Most Trusted
+							i(131680),	-- Belt of Absolute Allegiance
+							i( 62896),	-- Belt of Beginnings
+							i( 62895),	-- Slippers of Unturned Loyalties
+						},
+						["qg"] = 45617,	-- Lady Sylvanas Windrunner
+						["questSourceID"] = { 27594 }	-- On Her Majesty's Secret Service
+					}),
 					qh(27194, {	-- Cornered and Crushed!
 						["groups"] = {
 						},
 						["sourceQuestID"] = { 27193 },	-- Seek and Destroy
 					}),
-					
-					
+					qh(27476, {	-- Dalar Dawnweaver
+						["groups"] = {
+						},
+						["qg"] = 45617,	-- Lady Sylvanas Windrunner
+						["sourceQuestID"] = { 27474, 27475 },	-- Breaking the Barrier / Unyielding Servitors
+					}),
 					qh(27039, {	-- Dangerous Intentions
 						["groups"] = {
 						},
 						["qg"] = 44789,	-- Deathstalker Commander Belmont
 						["sourceQuestID"] = { 26998 },	-- Iterating Upon Success
 					}),
-					
-					
 					qh(27094, {	-- Deeper into Darkness
 						["groups"] = {
 							i( 62850),	-- Drunken Style Bracers
@@ -143,32 +170,41 @@ _.Zones =
 						},
 						["sourceQuestID"] = { 27095 },	-- Skitterweb Menace
 					}),
-					
-					
+					qh(27746, {	-- Empire of Dirt
+						["groups"] = {
+						},
+						["qg"] = 46124,	-- Lady Sylvanas Windrunner
+						["sourceQuestID"] = { 27601 },	-- Cities in Dust
+					}),
 					qh(27181, {	-- Excising the Taint
 						["groups"] = {
 						},
 						["qg"] = 45195,	-- Bloodfang Stalker
 						["sourceQuestID"] = { 27180 },	-- Honor the Dead
 					}),
-					
-					
+					qh(27575, { -- From the Belly of the Beast
+						["groups"] = {
+							i(131679),	-- Better, Stronger, Faster Bracers
+							i(62887),	-- Bracers of the Million Gold Man
+							i(62888),	-- Leg Bone Covers
+							i(62886),	-- Vest of Forsaken Necromancy
+						},
+						["qg"] = 45878,	-- Lord Godfrey
+						["questSourceID"] = { 27574 },	-- I Never Forget a Face
+						["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"
+					}),
 					qh(27073, {	-- Give 'em Hell!
 						["groups"] = {
 						},
 						["qg"] = 44917,	-- Warlord Torok
 						["sourceQuestID"] = { 27065 },	-- The Warchief's Fleet
 					}),
-					
-					
 					qh(26995, {	-- Guts and Gore
 						["groups"] = {
 						},
 						["qg"] = 44784,	-- High Apothecary Shana T'veen
 						["sourceQuestID"] = { 26965 },	-- The Warchief Cometh
 					}),
-					
-					
 					qh(27226, {	-- Hair of the Dog
 						["groups"] = {
 							i( 62846),	-- Ale-Soaked Robes
@@ -179,16 +215,20 @@ _.Zones =
 						["qg"] = 44917,	-- Warlord Torok
 						["sourceQuestID"] = { 27098 },	-- Lordaeron
 					}),
-					
-					
 					qh(27180, {	-- Honor the Dead
 						["groups"] = {
 						},
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuestID"] = { 27098 },	-- Lordaeron
 					}),
-					
-					
+					n( 45896, {	-- Marsh Crocolisk				
+						["groups"] = {
+							i(61505, {	-- Partially Digested Head
+								qh(27574),	-- I Never Forget a Face
+							}),
+						},
+						["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"							
+					}),
 					qh(26998, {	-- Iterating Upon Success
 						["groups"] = {
 							i(131629),	-- Maggot-Ridden Greaves
@@ -199,8 +239,6 @@ _.Zones =
 						["qg"] = 44784,	-- High Apothecary Shana T'veen
 						["sourceQuestID"] = { 26992, 26995 },	-- Agony Abounds / Guts and Gore
 					}),
-					
-					
 					qh(27088, {	-- It's Only Poisonous if You Ingest It
 						["groups"] = {
 							i(62843),	-- Bush Chicken Remote Injector
@@ -210,24 +248,24 @@ _.Zones =
 						["qg"] = 44912,	-- Apothecary Wormcrud
 						["sourceQuestID"] = { 27082 },	-- Playing Dirty
 					}),
-					
-					
+					qh(27548, {	-- Lessons in Fear
+						["groups"] = {
+						},
+						["qg"] = 45879,	-- Lord Walden
+						["sourceQuestID"] = { 27542 },	-- Taking the Battlefront
+					}),
 					qh(27098, {	-- Lordaeron
 						["groups"] = {
 						},
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuestID"] = { 27099 },	-- No Escape
 					}),
-					
-					
 					qh(27093, {	-- Lost in the Darkness
 						["groups"] = {
 						},
 						["qg"] = 44916,	-- Admiral Hatchet
 						["sourceQuestID"] = { 27073, 27069 },	-- Give 'em Hell! / Steel Thunder
 					}),
-					
-
 					qh(27099, {	-- No Escape
 						["groups"] = {						
 							i(62858),	-- Flesh and Bone
@@ -236,8 +274,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = { 27097 },	-- Rise, Forsaken
 					}),
-					
-					
 					qh(27195, {	-- Nowhere to Run
 						["groups"] = {
 							i( 62855),	-- Britches of Desperate Measures
@@ -248,55 +284,97 @@ _.Zones =
 						["qg"] = 45228,	-- Master Forteski
 						["sourceQuestID"] = { 27194 },	-- Cornered and Crushed
 					}),
-					
-					
+					qh(27547, {	-- Of No Consequence
+						["groups"] = {
+						},
+						["qg"] = 45880,	-- Baron Ashbury
+						["sourceQuestID"] = { 27542 },	-- Taking the Battlefront
+					}),
+					qh(27594, {	-- On Her Majesty's Secret Service
+						["groups"] = {
+						},
+						["qg"] = 45878,	-- Lord Godfrey
+						["sourceQuestID"] = { 27580 },	-- Sowing Discord
+					}),
+					qh(27484, {	-- Only One May Enter
+						["groups"] = {
+						},
+						["qg"] = 1938,	-- Dalar Dawnweaver
+						["sourceQuestID"] = { 27478 },	-- Relios the Relic Keeper
+					}),
 					qh(27096, {	-- Orcs are in Order
 						["groups"] = {
 						},
 						["qg"] = 44916,	-- Admiral Hatchet
 						["sourceQuestID"] = { 27088, 27093 },	-- It's Only Poisonous if You Ingest It / Lost in the Darkness
 					}),
-
-					
 					qh(27082, {	-- Playing Dirty
 						["groups"] = {
 						},
 						["qg"] = 44912,	-- Apothecary Wormcrud
 						["sourceQuestID"] = { 27065 },	-- The Warchief's Fleet
 					}),
-					
-					
+					qh(27483, {	-- Practical Vengeance
+						["groups"] = {
+							i(62880),	-- Axe of Practical Vengeance
+							i(62881),	-- Dawnweaver's Dagger
+							i(62882),	-- Edge of Unlifted Burdens
+							i(62879),	-- Psychopathic Hatchet
+						},
+						["qg"] = 1938,	-- Dalar Dawnweaver
+						["sourceQuestID"] = { 27476 },	-- Dalar Dawnweaver
+					}),
+					qh(27550, {	-- Pyrewood's Fall
+						["groups"] = {
+						},
+						["qg"] = 45878,	-- Lord Godfrey
+						["sourceQuestID"] = { 27542 },	-- Taking the Battlefront
+					}),
 					qh(27231, {	-- Reinforcements from Fenris
 						["groups"] = {
 						},
 						["qg"] = 44916,	-- Admiral Hatchet
 						["sourceQuestID"] = { 27098 },	-- Lordaeron
 					}),
-					
-					
+					qh(27478, {	-- Relios the Relic Keeper
+						["groups"] = {
+							i(62875),	-- Betrayal's Sting
+							i(62878),	-- Codex Breaker
+							i(62877),	-- Forsaken Ball
+							i(62876),	-- Relios's Mace
+						},
+						["qg"] = 1938,	-- Dalar Dawnweaver
+						["sourceQuestID"] = { 27476 },	-- Dalar Dawnweaver
+					}),
 					qh(27097, {	-- Rise, Forsaken
 						["groups"] = {
 						},
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuestID"] = { 27096 },	-- Orcs are in Order
 					}),
-					
-					
+					qh(27472, {	-- Rise, Godfrey
+						["groups"] = {
+						},
+						["qg"] = 45525,	-- Lady Sylvanas Windrunner
+						["sourceQuestID"] = { 27438 },	-- The Great Escape
+					}),
 					qh(27193, {	-- Seek and Destroy
 						["groups"] = {
 						},
 						["sourceQuestID"] = { 27181 },	-- Excising the Taint
 					}),
-					
-					
 					qh(27095, {	-- Skitterweb Menace
 						["groups"] = {
 						},
 						["qg"] = 44917,	-- Warlord Torok
 						["sourceQuestID"] = { 27073 },	-- Give 'em Hell!
 					}),
-					
-					
+					qh(27580, {	-- Sowing Discord
+						["groups"] = {
+						},
+						["qg"] = 45878,	-- Lord Godfrey
+						["sourceQuestID"] = { 27550 },	-- Pyrewood's Fall
+					}),
 					qh(27069, {	-- Steel Thunder
 						["groups"] = {
 							i( 62841),	-- Bloodfang Vest
@@ -307,16 +385,12 @@ _.Zones =
 						["qg"] = 44916,	-- Admiral Hatcher
 						["sourceQuestID"] = { 27065 },	-- The Warchief's Fleet
 					}),
-					
-					
-					qh(27290, {	-- To Forsaken Forward Command
+					qh(27542, {	-- Taking the Battlefront
 						["groups"] = {
 						},
-						["qg"] = 44365,	-- Lady Sylvanas Windrunner
-						["sourceQuestID"] = { 27195 },	-- Nowhere to Run
+						["qg"] = 45617,	-- Lady Sylvanas Windrunner
+						["sourceQuestID"] = { 27518 },	-- Transdimensional Warfare: Chapter III
 					}),
-					
-					
 					qh(26989, {	-- The Gilneas Liberation Front
 						["groups"] = {
 							i(62839),	-- Nubly Bracers
@@ -326,24 +400,18 @@ _.Zones =
 						["qg"] = 44615,	-- Grand Executor Mortuus
 						["sourceQuestID"] = { 26965 },	-- The Warchief Cometh
 					}),
-					
-					
 					qh(26965, {	-- The Warchief Cometh
 						["groups"] = {
 						},
 						["qg"] = 44615,	-- Grand Executor Mortuus
 						["breadcrumbQuestID"] = { 26964 },	-- Warchief's Command: Silverpine Forest!
 					}),
-					
-					
 					qh(27065, {	-- The Warchief's Fleet
 						["groups"] = {
 						},
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuestID"] = { 27056 },	-- Belmont's Report
 					}),
-					
-					
 					o(205350, {	-- Horde Communication Panel
 						qh(27232, { 	-- The Waters Run Red...
 						["groups"] = {
@@ -354,8 +422,37 @@ _.Zones =
 						["sourceQuestID"] = { 27231 },	-- Reinforcements from Fenris						
 						}),
 					}),
-					
-					
+					qh(27290, {	-- To Forsaken Forward Command
+						["groups"] = {
+						},
+						["qg"] = 44365,	-- Lady Sylvanas Windrunner
+						["sourceQuestID"] = { 27195 },	-- Nowhere to Run
+					}),
+					qh(27512, {	-- Transdimensional Warfare: Chapter I
+						["groups"] = {
+						},
+						["qg"] = 45617,	-- Lady Sylvanas Windrunner
+						["sourceQuestID"] = { 27484 },	-- Only One May Enter
+					}),
+					qh(27513, {	-- Transdimensional Warfare: Chapter II
+						["groups"] = {
+						},
+						["sourceQuestID"] = { 27512 },	-- Transdimensional Warfare: Chapter I
+					}),
+					qh(27518, {	-- Transdimensional Warfare: Chapter III
+						["groups"] = {
+							i(62890),	-- Ataeric's Gloves
+							i(62889),	-- Transdimensional Cloak
+							i(62891),	-- Vessel of the Dark Lady
+						},
+						["questSourceID"] = { 27513 },	-- Transdimensional Warfare: Chapter II
+					}),					
+					qh(27475, {	-- Unyielding Servitors (secondary QG ID 45626)
+						["groups"] = {
+						},
+						["qg"] = 45626,	-- Daschla (secondary QG ID 45610)
+						["sourceQuestID"] = { 27472 },	-- Rise, Godfrey
+					}),
 					o(205143, {	-- Abandoned Outhouse
 						qh(27045, { 	-- Waiting to Exsanguinate
 							["groups"] = {
@@ -367,106 +464,7 @@ _.Zones =
 							["sourceQuestID"] = { 27039 },	-- Dangerous Intentions
 						}),
 					}),
-				
-				
-				
-				
-				
---[[				
-						
-						
-						["groups"] = {
-						},
-						["qg"] = ,	-- 
-						["sourceQuestID"] = {  },	-- 
-					}),
-				
---]]				
-				
-				
-				
-				
-				
-				
-				
-				
-					qg(45879, qh(27577)),	-- 7th Legion Battle Plans
-					qg(45631, qh(27510, { 	-- A Wolf in Bear's Clothing
-						i( 62884),	-- "Bear" Hide Boots
-						i(131678),	-- Inconspicuous Footguards
-						i( 62883),	-- Inconspicuous Pantaloons
-						i( 62885),	-- Unmistakable Gloves
-					})),
-					qg(45617, qh(27474)),	-- Breaking the Barrier
-					qg(45617, qh(27601, { 	-- Cities in Dust
-						i( 62897),	-- Bracers of the Most Trusted
-						i(131680),	-- Belt of Absolute Allegiance
-						i( 62896),	-- Belt of Beginnings
-						i( 62895),	-- Slippers of Unturned Loyalties
-					})),
-					qg(45617, qh(27476)),	-- Dalar Dawnweaver
-					qg(46124, qh(27746)),	-- Empire of Dirt
-					qg(45878, qh(27575, { 	-- From the Belly of the Beast
-						["groups"] = {
-							i(131679),	-- Better, Stronger, Faster Bracers
-							i(62887),	-- Bracers of the Million Gold Man
-							i(62888),	-- Leg Bone Covers
-							i(62886),	-- Vest of Forsaken Necromancy
-						},
-						["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"
-					})),
-					n( 45896, {	-- Marsh Crocolisk
-						i(61505, {	-- Partially Digested Head
-							qh(27574),	-- I Never Forget a Face
-						}),
-					}),
-					n( 45301, {	-- Korok the Colossus
-						i(60956, {	-- Korok's Second Head
-							qh(27322, { 	-- Korok the Colossus
-								["groups"] = {
-									i(62867),	-- Belt of the Second Head
-									i(62866),	-- Cromush's Cloak
-									i(62868),	-- Korok's Ring
-								},
-								["description"] = "If Forward Commander Onslaught is dead, you can turn this quest in to High Warlord Cromush in Silverpine Forest. However, once you have completed 'Cities in Dust', Cromush may despawn and you will be unable to complete this quest.|r",
-							}),
-						}),
-					}),
-					qg(45879, qh(27548)),	-- Lessons in Fear
-					qg(45880, qh(27547)),	-- Of No Consequence
-					qg(45878, qh(27594)),	-- On Her Majesty's Secret Service
-					qg( 1938, qh(27484)),	-- Only One May Enter
-					qg( 1938, qh(27483, { 	-- Practical Vengeance
-						i(62880),	-- Axe of Practical Vengeance
-						i(62881),	-- Dawnweaver's Dagger
-						i(62882),	-- Edge of Unlifted Burdens
-						i(62879),	-- Psychopathic Hatchet
-					})),
-					qg(45878, qh(27550)),	-- Pyrewood's Fall
-					qg( 1938, qh(27478, { 	-- Relios the Relic Keeper
-						i(62875),	-- Betrayal's Sting
-						i(62878),	-- Codex Breaker
-						i(62877),	-- Forsaken Ball
-						i(62876),	-- Relios's Mace
-					})),
-					qg(45525, qh(27472)),	-- Rise, Godfrey
-					qg(45878, qh(27580)),	-- Sowing Discord
-					qg(45617, qh(27542)),	-- Taking the Battlefront
-					qg(45312, qh(27438, { 	-- The Great Escape (secondary QG ID 45474)
-						i( 62872),	-- Cloak of Secret Purpose
-						i( 62873),	-- Godfrey's Belt
-						i(131677),	-- Godfrey's Waistband
-						i( 62874),	-- Treads of the True Plan
-					})),
-					qg(45617, qh(27512)),	-- Transdimensional Warfare: Chapter I
-					qg(45752, qh(27513)),	-- Transdimensional Warfare: Chapter II
-					qg(45617, qh(27518, { 	-- Transdimensional Warfare: Chapter III
-						i(62890),	-- Ataeric's Gloves
-						i(62889),	-- Transdimensional Cloak
-						i(62891),	-- Vessel of the Dark Lady
-					})),
-					qg(45610, qh(27475)),	-- Unyielding Servitors (secondary QG ID 45626)
-					qg(44640, qh(28089)),	-- Warchief's Command: Hillsbrad Foothills! (secondary QG IDs 45631 and 46125)
+--					qg(44640, qh(28089)),	-- Warchief's Command: Hillsbrad Foothills! (secondary QG IDs 45631 and 46125 -- couldn't find this to pick up -- may overlap with Empire of Dirt, which is also a Hillsbrad breadcrumb quest)
 					nlq({     -- Legacy Quests
 						qh(451, { 	-- A Recipe for Death
 							i(3582),	-- Acidproof Cloak
@@ -879,6 +877,101 @@ _.Zones =
 				}),
 				m(684, { -- Ruins of Gilneas
 					n(-17, { -- Quests
+						qh(27406, {	-- A Man Named Godfrey
+							["groups"] = {
+							},
+							["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
+							["sourceQuestID"] = { 27405 },	-- Fall Back!
+						}),
+						qh(27349, {	-- Break in Communications: Dreadwatch Outpost
+							["groups"] = {
+							},
+							["qg"] = 45315,	-- Forward Commander Onslaught
+							["sourceQuestID"] = { 27333, 27345 },	-- Losing Ground / The F.C.D.
+						}),
+						qh(27350, {	-- Break in Communications: Rutsak's Guard
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 27349 },	-- Break in Communications: Dreadwatch Outpost
+						}),
+						qh(27405, {	-- Fall Back!
+							["groups"] = {
+								i(62865),	-- Emberstone Breastplate
+								i(62864),	-- Bracers of the Final Transmission
+								i(62863),	-- Wild Howl Dagger
+							},
+							["sourceQuestID"] = { 27401 },	-- What Tomorrow Brings
+						}),
+						qh(27342, {	-- In Time, All Will Be Revealed
+							["groups"] = {
+								i( 62862),	-- Belmont's Bracers
+								i( 62861),	-- Wolfsbane Vest
+								i( 62860),	-- Watched Watcher's Slippers
+								i(131665),	-- Wolfsbane Harness
+							},
+							["qg"] = 45312,	-- Deathstalker Commander Belmont
+							["sourceQuestID"] = { 27290 },	-- To Forsaken Forward Command
+						}),
+						n( 45301, {	-- Korok the Colossus
+							i(60956, {	-- Korok's Second Head
+								qh(27322, { 	-- Korok the Colossus
+									["groups"] = {
+										i(62867),	-- Belt of the Second Head
+										i(62866),	-- Cromush's Cloak
+										i(62868),	-- Korok's Ring
+									},
+									["sourceQuestID"] = { 27290 }, 	-- To Forsaken Forward Command
+									["description"] = "If Forward Commander Onslaught is dead, you can turn this quest in to High Warlord Cromush in Silverpine Forest. However, once you have completed 'Cities in Dust', Cromush may despawn and you will be unable to complete this quest.|r",
+								}),
+							}),
+						}),
+						qh(27333, {	-- Losing Ground
+							["groups"] = {
+							},
+							["qg"] = 45315,	-- Forward Commander Onslaught
+							["sourceQuestID"] = { 27290 },	-- To Forsaken Forward Command
+						}),
+						qh(27364, {	-- On Whose Orders?
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 27360 },	-- Vengeance for Our Soldiers
+						}),
+						qh(27423, {	-- Resistance is Futile
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 27405 },	-- Fall Back!
+						}),
+						qh(27345, {	-- The F.C.D.
+							["groups"] = {
+							},
+							["qg"] = 45315,	-- Forward Commander Onslaught
+							["sourceQuestID"] = { 27290 },	-- To Forsaken Forward Command
+						}),
+						qh(27438, {	-- The Great Escape (awards "Ruins of Gilneas" criteria for zone achievement)
+							["groups"] = {
+								i( 62874),	-- Treads of the True Plan
+								i( 62873),	-- Godfrey's Belt
+								i( 62872),	-- Cloak of Secret Purpose
+								i(131677),	-- Godfrey's Waistband
+							},
+							["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
+							["sourceQuestID"] = { 27406, 27423 },	-- A Man Named Godfrey / Resistance is Futile
+						}),
+						qh(27360, {	-- Vengeance for Our Soldiers
+							["groups"] = {
+								i( 62871),	-- War Blood Cloak
+								i( 62870),	-- Rutsak Carriers
+								i( 62869),	-- Submariner Killer
+								i(131667),	-- War Blood Gloves
+							},
+							["qg"] = 45389,	-- Captain Rutsak
+							["sourceQuestID"] = { 27350 },	-- Break in Communication: Rutsak's Guard
+						}),
+						qh(27401, {	-- What Tomorrow Brings
+							["groups"] = {
+							}, 
+							["sourceQuestID"] = { 27364 },	-- On Whose Orders?
+						}),
 					}),
 				}),
 			},

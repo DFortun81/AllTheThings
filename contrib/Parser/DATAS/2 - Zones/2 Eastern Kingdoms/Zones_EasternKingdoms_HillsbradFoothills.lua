@@ -242,12 +242,16 @@ _.Zones =
 						i(131894),	-- Botanist's Chain Pants
 						i( 66067),	-- Singing Sunflower (PET!)
 					})),
---[[
 					qg(13840, qh( 7166)),	-- Legendary Heroes
 					qg(13841, qa( 7171)),	-- Legendary Heroes
+--[[					
 					n( 45728, {	-- Arcane Remnant
 						i(61310, {	-- Arcane Remnant
 							qh(27480),	-- Ley Energies
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 27483 },
+							["description"] = "This quest is part of a chain that begins in Silverpine Forest.  The quest counts towards Loremaster, but not the Hillsbrad or Silverpine zone quest achievements.",
 						}),
 					}),
 					qg(47781, qh(28206)),	-- Little Girl Lost
