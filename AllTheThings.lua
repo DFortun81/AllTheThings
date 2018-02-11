@@ -688,6 +688,7 @@ local function CacheFields(group)
 	CacheFieldID(group, "s");
 	CacheFieldID(group, "speciesID");
 	CacheFieldID(group, "spellID");
+	CacheSubFieldID(group, "itemID", "toyID");
 	CacheFieldID(group, "toyID");
 	return group;
 end
@@ -3160,7 +3161,7 @@ app.BaseToy = {
 		elseif key == "f" then
 			return 102;
 		elseif key == "text" then
-			return select(2, C_ToyBox_GetToyInfo(t.toyID));
+			return C_ToyBox_GetToyLink(t.toyID); --select(2, C_ToyBox_GetToyInfo(t.itemID));
 		elseif key == "link" then
 			return C_ToyBox_GetToyLink(t.toyID);
 		elseif key == "icon" then
