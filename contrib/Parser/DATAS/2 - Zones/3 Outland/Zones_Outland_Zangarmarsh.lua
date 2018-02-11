@@ -438,12 +438,14 @@ _.Zones =
 						}),
 					})),
 					n(18382, {	-- Mycah <Sporeggar Quartermaster>
-						i(25827),	-- Muck-Covered Drape
-						i(25828),	-- Petrified Lichen Guard
-						i(29149),	-- Sporeling's Firestick
-						i(29150),	-- Hardened Stone Shard
-						i(31775),	-- Sporeggar Tabard
-						i(34478),	-- Tiny Sporebat Pet
+						i(24245, { -- Glowcap
+							i(25827),	-- Muck-Covered Drape
+							i(25828),	-- Petrified Lichen Guard
+							i(29149),	-- Sporeling's Firestick
+							i(29150),	-- Hardened Stone Shard
+							i(31775),	-- Sporeggar Tabard
+							i(34478),	-- Tiny Sporebat Pet
+						}),
 					}),
 					h(n(18011, {	-- Zurai <Merchant>
 						i(21899, {	-- Pattern: Imbued Netherweave Boots
