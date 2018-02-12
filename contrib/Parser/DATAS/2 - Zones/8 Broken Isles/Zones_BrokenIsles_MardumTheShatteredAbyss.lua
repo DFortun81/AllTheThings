@@ -161,6 +161,7 @@ _.Zones =
 					}),
 					o(244691, { -- Small Treasure Chest
 						["groups"] = {
+							i(129192),	-- Inquisitor's Menacing Eye
 						},
 						["questID"] = 39971, -- Inquisitor's Menacing Eye
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
@@ -185,8 +186,9 @@ _.Zones =
 					}),
 					o(244694, { -- Small Treasure Chest
 						["groups"] = {
+							i(128946), -- Mardum Lord Signet
 						},
-						["questID"] = 39973, -- Mardum Lord Signetm
+						["questID"] = 39973, -- Mardum Lord Signet
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey", -- Grey Treasure Chest
 					}),
 					o(244692, { -- Small Treasure Chest
@@ -235,6 +237,7 @@ _.Zones =
 				n(-16, { 	-- Rares
 					n(97058,  { -- Count Nefarious
 						["groups"] = {
+							i(128948), -- Nefarious Ring
 						},
 						["questID"] = 40231, -- Nefarious Ring
 					}),
@@ -253,6 +256,7 @@ _.Zones =
 					}), 
 					n(97057,  { -- Overseer Brutarg
 						["groups"] = {
+							i(133580), -- Brutarg's Sword Tip
 						},
 						["questID"] = 40233, -- Brutarg's Sword Tip
 					}),			
@@ -388,11 +392,13 @@ _.Zones =
 						n(-16, { -- Rares
 							n(96997, { -- Kethrazor
 								["groups"] = {
+									i(128945), -- Inquisitor's Glowering Eye
 								},
 								["questID"] = 40251, -- Inquisitor's Glowering Eye
 							}),
 							n(97069, { -- Wrath-Lord Lekos
 								["groups"] = {
+									i(128958), -- Lekos' Leash
 								},
 								["questID"] = 40301, -- Lekos' Leash
 							}),
