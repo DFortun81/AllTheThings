@@ -650,6 +650,7 @@ fieldCache["objectID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["mapID"] = {};
 fieldCache["mountID"] = {};
+fieldCache["questID"] = {};
 fieldCache["s"] = {};
 fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
@@ -685,6 +686,7 @@ local function CacheFields(group)
 	CacheFieldID(group, "itemID");
 	CacheFieldID(group, "mapID");
 	CacheFieldID(group, "mountID");
+	CacheFieldID(group, "questID");
 	CacheFieldID(group, "s");
 	CacheFieldID(group, "speciesID");
 	CacheFieldID(group, "spellID");
@@ -4840,6 +4842,24 @@ local function RowOnEnter(self)
 				GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
 			end
 			GameTooltipIcon:Show();
+		end
+		
+		-- Show Quest Prereqs
+		if reference.sourceQuestID then
+			GameTooltip:AddLine("Prerequisite Quests");
+			local sourceQuests = {};
+			for i,sourceQuestID in ipairs(reference.sourceQuestID) do
+				local sourceQuest = SearchForField("questID", sourceQuestID);
+				if #sourceQuest > 0 then
+					-- Only care about the first search result.
+					sourceQuest = sourceQuest[1];
+				else
+					-- Create a Quest Object.
+					sourceQuest = app.CreateQuest(sourceQuestID);
+				end
+				GameTooltip:AddDoubleLine("  " .. (sourceQuest.text or RETRIEVING_DATA), GetCompletionIcon(sourceQuest.saved));
+			end
+			
 		end
 		
 		-- Show lockout information
