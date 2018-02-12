@@ -18,6 +18,7 @@ _.WorldEvents =
 			un(35, i(107951)), -- Iron Skyreaver
 			un(35, i(147901)), -- Luminous Starseeker
 			un(35, i(122469)), -- Mystic Runesaber
+			un(35, i(156564)), -- Shu-zen, the Divine Sentinel
 			un(35, i(92724)), -- Swift Windsteed
 			i(112326, { -- Warforged Nightmare
 				["groups"] = {

@@ -97,3 +97,4 @@ i(155656, 258022);	-- Lightforged Felcrusher
 i(155662, 258060);	-- Highmountain Thunderhoof
 i(156486, 259202);	-- Starcursed Voidstrider
 i(156487, 258845);	-- Nightborne Manasaber
+i(156564, 259395);	-- Shu-zen, the Divine Sentinel
