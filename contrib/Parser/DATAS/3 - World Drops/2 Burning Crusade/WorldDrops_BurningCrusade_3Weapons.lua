@@ -7,343 +7,343 @@ _.WorldDrops =
 		["groups"] = {
 			n(-319, { -- Weapons		
 				n(-334, { -- 1H Axes
-					i(25198),
-					i(25199),
-					i(25200),
-					i(25201),
-					i(25202),
-					i(25203),
-					i(25204),
-					i(25205),
-					i(25206),
-					i(25207),
-					i(25208),
-					i(25209),
-					i(25210),
-					i(25211),
-					i(31153),
+					i(25198),	-- Karaborian Battle Axe
+					i(25199),	-- Knight's War Axe
+					i(25200),	-- Jagged Broadaxe
+					i(25201),	-- Reaver's Sickle
+					i(25202),	-- Kingly Axe
+					i(25203),	-- Chipped Woodchopper
+					i(25204),	-- Colossal War Axe
+					i(25205),	-- Silvermoon Crescent Axe
+					i(25206),	-- Berserker Axe
+					i(25207),	-- Shadowmoon Cleaver
+					i(25208),	-- Bladespire Broadaxe
+					i(25209),	-- Amani Tomahawk
+					i(25210),	-- Double-Bladed Axe
+					i(25211),	-- Rockbiter Cutter
+					i(31153),	-- Axe of the Legion
 				}),
 				n(-335, { -- 2H Axes
-					i(25212),
-					i(25213),
-					i(25214),
-					i(25215),
-					i(25216),
-					i(25217),
-					i(25218),
-					i(25219),
-					i(25220),
-					i(25221),
-					i(25222),
-					i(25223),
-					i(25224),
-					i(25225),
-					i(30722),
-					i(31291),
-					i(31318),
-					i(32663),
+					i(25212),	-- Lucky Strike Axe
+					i(25213),	-- Fel-Touched Axe
+					i(25214),	-- Mok'Nathal Battleaxe
+					i(25215),	-- Spiked Battle Axe
+					i(25216),	-- Ogre Splitting Axe
+					i(25217),	-- Sundering Axe
+					i(25218),	-- Silver-Edged Axe
+					i(25219),	-- Rending Claw
+					i(25220),	-- Glorious War-Axe
+					i(25221),	-- Ghostly Battle Axe
+					i(25222),	-- Ceremonial Slayer's Axe
+					i(25223),	-- Windcaller Hatchet
+					i(25224),	-- Slavemaster Axe
+					i(25225),	-- Deepforge Broadaxe
+					i(30722),	-- Ethereum Nexus-Reaver
+					i(31291),	-- Crystalforged War Axe
+					i(31318),	-- Singing Crystal Axe
+					i(32663),	-- Apexis Cleaver
 				}),	
 				n(-346, { -- Bows
-					i(25240),
-					i(25241),
-					i(25242),
-					i(25243),
-					i(25244),
-					i(25245),
-					i(25246),
-					i(25247),
-					i(25248),
-					i(25249),
-					i(25250),
-					i(25251),
-					i(25252),
-					i(25253),
-					i(31303),
+					i(25240),	-- Azerothian Longbow
+					i(25241),	-- Ashenvale Longbow
+					i(25242),	-- Telaari Longbow
+					i(25243),	-- Windtalker Bow
+					i(25244),	-- Viper Bow
+					i(25245),	-- Razorsong Bow
+					i(25246),	-- Thalassian Compound Bow
+					i(25247),	-- Expert's Bow
+					i(25248),	-- Talbuk Hunting Bow
+					i(25249),	-- Ranger's Recurved Bow
+					i(25250),	-- Rocslayer Longbow
+					i(25251),	-- Orc Flatbow
+					i(25252),	-- Dream Catcher Bow
+					i(25253),	-- Windspear Longbow
+					i(31303),	-- Valanos' Longbow
 				}),
 				n(-347, { -- Crossbows
-					i(25254),
-					i(25255),
-					i(25256),
-					i(25257),
-					i(25258),
-					i(25259),
-					i(25260),
-					i(25261),
-					i(25262),
-					i(25263),
-					i(25264),
-					i(25265),
-					i(25266),
-					i(25267),
+					i(25254),	-- Tower Crossbow
+					i(25255),	-- Ram's Head Crossbow
+					i(25256),	-- Stronghold Crossbow
+					i(25257),	-- Citadel Crossbow
+					i(25258),	-- Repeater Crossbow
+					i(25259),	-- Collapsible Crossbow
+					i(25260),	-- Archer's Crossbow
+					i(25261),	-- Mighty Crossbow
+					i(25262),	-- Battle Damaged Crossbow
+					i(25263),	-- Assassins' Silent Crossbow
+					i(25264),	-- Pocket Ballista
+					i(25265),	-- Barreled Crossbow
+					i(25266),	-- Well-Balanced Crossbow
+					i(25267),	-- Rampant Crossbow
 				}),			
 				n(-333, { -- Daggers	
-					i(25100),
-					i(25101),
-					i(25102),
-					i(25103),
-					i(25104),
-					i(25105),
-					i(25106),
-					i(25107),
-					i(25108),
-					i(25109),
-					i(25110),
-					i(25111),
-					i(25112),
-					i(25113),
-					i(25296),
-					i(25297),
-					i(25298),
-					i(25299),
-					i(25300),
-					i(25301),
-					i(25302),
-					i(25303),
-					i(25304),
-					i(25305),
-					i(25306),
-					i(25307),
-					i(25308),
-					i(25309),
-					i(29391),
-					i(30723),
-					i(31142),
-					i(31193),
-					i(31305),
-					i(31331),
-					i(32659),
+					i(25100),	-- Liege Blade
+					i(25101),	-- Cross Pommel Dagger
+					i(25102),	-- Jaedenis Dagger
+					i(25103),	-- Nightstalker Dagger
+					i(25104),	-- Anzac Dagger
+					i(25105),	-- Arachnid Dagger
+					i(25106),	-- Cobra Shortblade
+					i(25107),	-- Draconic Dagger
+					i(25108),	-- Grave Keeper Knife
+					i(25109),	-- Moon Blade
+					i(25110),	-- Sharp Bowie Knife
+					i(25111),	-- Lionhead Dagger
+					i(25112),	-- Fel Ripper
+					i(25113),	-- Phantom Dagger
+					i(25296),	-- Absorption Dagger
+					i(25297),	-- Tuning Knife
+					i(25298),	-- Combustion Dagger
+					i(25299),	-- Siphoning Dagger
+					i(25300),	-- Lightning Dagger
+					i(25301),	-- Shattering Dagger
+					i(25302),	-- Soul-Drain Dagger
+					i(25303),	-- Amplifying Blade
+					i(25304),	-- Destructo-Blade
+					i(25305),	-- Elemental Dagger
+					i(25306),	-- Permafrost Dagger
+					i(25307),	-- Shadow Dagger
+					i(25308),	-- Thunder Spike
+					i(25309),	-- Warpdagger
+					i(29391),	-- Pulse Dagger
+					i(30723),	-- Talon of the Tempest
+					i(31142),	-- Blade of Trapped Knowledge
+					i(31193),	-- Blade of Unquenched Thirst
+					i(31305),	-- Ced's Carver
+					i(31331),	-- The Night Blade
+					i(32659),	-- Crystal-Infused Shiv
 				}),
 				n(-348, { -- Fist Weapons	
-					i(25184),
-					i(25185),
-					i(25186),
-					i(25187),
-					i(25188),
-					i(25189),
-					i(25190),
-					i(25191),
-					i(25192),
-					i(25193),
-					i(25194),
-					i(25195),
-					i(25196),
-					i(25197),
-					i(29371),
-					i(29372),
-					i(30755),
+					i(25184),	-- Ravager Claws
+					i(25185),	-- Thrasher Blades
+					i(25186),	-- Vampiric Handscythes
+					i(25187),	-- Shekketh Talons
+					i(25188),	-- Spleenripper Claws
+					i(25189),	-- Ironspine Point
+					i(25190),	-- Wight's Claws
+					i(25191),	-- Dread Fangs
+					i(25192),	-- Gutrippers
+					i(25193),	-- Deathclaw Talons
+					i(25194),	-- Serpent's Fangs
+					i(25195),	-- Diamond Tipped Claws
+					i(25196),	-- Boneshredder Claws
+					i(25197),	-- Razor Scythes
+					i(29371),	-- Nexus-Claw
+					i(29372),	-- Void-Talon
+					i(30755),	-- Mag'hari Fighting Claw
 				}),
 				n(-345, { -- Guns
-					i(25268),
-					i(25269),
-					i(25270),
-					i(25271),
-					i(25272),
-					i(25273),
-					i(25274),
-					i(25275),
-					i(25276),
-					i(25277),
-					i(25278),
-					i(25279),
-					i(25280),
-					i(25281),
-					i(30724),
-					i(31204),
-					i(31323),
+					i(25268),	-- Lead-Slug Shotgun
+					i(25269),	-- Longbeard Rifle
+					i(25270),	-- Gnomish Assault Rifle
+					i(25271),	-- Croc-Hunter's Rifle
+					i(25272),	-- PC-54 Shotgun
+					i(25273),	-- Sawed-Off Shotgun
+					i(25274),	-- Cliffjumper Shotgun
+					i(25275),	-- Dragonbreath Musket
+					i(25276),	-- Tauren Runed Musket
+					i(25277),	-- Sporting Rifle
+					i(25278),	-- Nesingwary Longrifle
+					i(25279),	-- Sen'jin Longrifle
+					i(25280),	-- Game Hunter Musket
+					i(25281),	-- Big-Boar Battle Rifle
+					i(30724),	-- Barrel-Blade Longrifle
+					i(31204),	-- The Gunblade
+					i(31323),	-- Don Santos' Famous Hunting Rifle
 				}),			
 				n(-331, { -- Held in Off-hand
-					i(25086),
-					i(25087),
-					i(25088),
-					i(25089),
-					i(25090),
-					i(25092),
-					i(25093),
-					i(25094),
-					i(25095),
-					i(25096),
-					i(25097),
-					i(25098),
-					i(25099),
+					i(25086),	-- Dreamseeker Dandelion
+					i(25087),	-- Bleeding Eye
+					i(25088),	-- Laughing Skull Orb
+					i(25089),	-- Supplicant's Rod
+					i(25090),	-- Slavehandler Rod
+					i(25092),	-- Consortium Crystal
+					i(25093),	-- Shadow Council Orb
+					i(25094),	-- Eldr'naan Scepter
+					i(25095),	-- Archmage Orb
+					i(25096),	-- Elementalist Star
+					i(25097),	-- Astralaan Orb
+					i(25098),	-- Tuurik Torch
+					i(25099),	-- Draenei Crystal Rod
 				}),
 				n(-336, { -- 1H Maces
-					i(25114),
-					i(25115),
-					i(25116),
-					i(25117),
-					i(25118),
-					i(25119),
-					i(25120),
-					i(25121),
-					i(25122),
-					i(25123),
-					i(25124),
-					i(25125),
-					i(25126),
-					i(25127),
-					i(25310),
-					i(25311),
-					i(25312),
-					i(25313),
-					i(25314),
-					i(25315),
-					i(25316),
-					i(25317),
-					i(25318),
-					i(25319),
-					i(25320),
-					i(25321),
-					i(25322),
-					i(25323),
-					i(31139),
-					i(31304),
-					i(31342),
-					i(32661),
+					i(25114),	-- Doomsayer's Mace
+					i(25115),	-- Riversong Mace
+					i(25116),	-- Pneumatic War Hammer
+					i(25117),	-- Flanged Battle Mace
+					i(25118),	-- Battle Star
+					i(25119),	-- Silvermoon War-Mace
+					i(25120),	-- Rockshard Club
+					i(25121),	-- Dreaded Mace
+					i(25122),	-- Khorium Plated Bludgeon
+					i(25123),	-- Boneshredder Mace
+					i(25124),	-- Footman Mace
+					i(25125),	-- Retro-Spike Club
+					i(25126),	-- Anvilmar Hammer
+					i(25127),	-- Knight's War Hammer
+					i(25310),	-- Naaru Lightmace
+					i(25311),	-- Revitalizing Hammer
+					i(25312),	-- Glorious Scepter
+					i(25313),	-- Cold-Iron Scepter
+					i(25314),	-- Ceremonial Hammer
+					i(25315),	-- Restorative Mace
+					i(25316),	-- Spirit-Clad Mace
+					i(25317),	-- Lesser Sledgemace
+					i(25318),	-- Ancestral Hammer
+					i(25319),	-- Tranquility Mace
+					i(25320),	-- Queen's Insignia
+					i(25321),	-- Divine Hammer
+					i(25322),	-- Lordly Scepter
+					i(25323),	-- Ascendant's Scepter
+					i(31139),	-- Fist of Reckoning
+					i(31304),	-- The Essence Focuser
+					i(31342),	-- The Ancient Scepter of Sue-Min
+					i(32661),	-- Apexis Crystal Mace
 				}),
 				n(-337, { -- 2H Maces
-					i(25128),
-					i(25129),
-					i(25130),
-					i(25131),
-					i(25132),
-					i(25133),
-					i(25134),
-					i(25135),
-					i(25136),
-					i(25137),
-					i(25138),
-					i(25139),
-					i(25140),
-					i(25141),
-					i(31299),
-					i(31322),
+					i(25128),	-- Shining Mace
+					i(25129),	-- Giant's Leg Bone
+					i(25130),	-- Gronn-Bone Club
+					i(25131),	-- Hateful Bludgeon
+					i(25132),	-- Thrallmar War Hammer
+					i(25133),	-- Stormwind Maul
+					i(25134),	-- Highmountain Hammer
+					i(25135),	-- Clefthoof Mace
+					i(25136),	-- Blood Stained Hammer
+					i(25137),	-- Draenethyst Mallet
+					i(25138),	-- Blood Knight Maul
+					i(25139),	-- Algaz Battle Hammer
+					i(25140),	-- Commanding Mallet
+					i(25141),	-- Halaani Hammer
+					i(31299),	-- The Oathkeeper
+					i(31322),	-- The Hammer of Destiny
 				}),
 				n(-343, { -- Polearms
-					i(25226),
-					i(25227),
-					i(25228),
-					i(25229),
-					i(25230),
-					i(25231),
-					i(25232),
-					i(25233),
-					i(25234),
-					i(25235),
-					i(25236),
-					i(25237),
-					i(25238),
-					i(25239),
-					i(29377),
-					i(30753),
+					i(25226),	-- War Scythe
+					i(25227),	-- Sha'tari Longspear
+					i(25228),	-- Halberd Polearm
+					i(25229),	-- Partisan Polearm
+					i(25230),	-- Voulge Blade
+					i(25231),	-- Fel-Wrought Halberd
+					i(25232),	-- War Glaive
+					i(25233),	-- Battle Scythe
+					i(25234),	-- Telaari Polearm
+					i(25235),	-- Ethereal-Etched Glaive
+					i(25236),	-- Grim Scythe
+					i(25237),	-- Nether Trident
+					i(25238),	-- Hellfire War Spear
+					i(25239),	-- Legend's Glaive
+					i(29377),	-- Ethereum Phase-Spear
+					i(30753),	-- Warphorn Spear
 				}),			
 				n(-332, { -- Shield
-					i(25072),
-					i(25074),
-					i(25076),
-					i(25077),
-					i(25078),
-					i(25079),
-					i(31200),
-					i(25080),
-					i(25081),
-					i(25082),
-					i(25083),
-					i(25084),
-					i(25085),
-					i(31287),
-					i(31292),
+					i(25072),	-- Northman's Shield
+					i(25074),	-- Telaari Shield
+					i(25076),	-- Screaming Shield
+					i(25077),	-- Modani War-Shield
+					i(25078),	-- Zangari Shield
+					i(25079),	-- Outland Shield
+					i(25080),	-- Spell-Breaker Shield
+					i(25081),	-- Bayeaux Shield
+					i(25082),	-- Fel-Iron Shield
+					i(25083),	-- Smouldering Shield
+					i(25084),	-- Zeth'Gor Shield
+					i(25085),	-- Dragonscale Shield
+					i(31200),	-- Shield of the Wayward Footman
+					i(31287),	-- Draenei Honor Guard Shield
+					i(31292),	-- Crystal Pulse Shield
 				}),
 				n(-342, { -- Staves
-					i(25170),
-					i(25171),
-					i(25172),
-					i(25173),
-					i(25174),
-					i(25175),
-					i(25176),
-					i(25177),
-					i(25178),
-					i(25179),
-					i(25180),
-					i(25181),
-					i(25182),
-					i(25183),
-					i(25324),
-					i(25325),
-					i(25326),
-					i(25327),
-					i(25328),
-					i(25329),
-					i(25330),
-					i(25331),
-					i(25332),
-					i(25333),
-					i(25334),
-					i(25335),
-					i(25336),
-					i(25337),
-					i(30732),
-					i(31186),
-					i(31289),
-					i(31308),
-					i(31334),
-					i(32662),
+					i(25170),	-- Rattan Bo Staff
+					i(25171),	-- Straight Hardwood Staff
+					i(25172),	-- Jinbali Warp-Staff
+					i(25173),	-- Master's Bo Staff
+					i(25174),	-- Hanbo Staff
+					i(25175),	-- Demoniac Longstaff
+					i(25176),	-- Taiji Quarterstaff
+					i(25177),	-- Tanjo Staff
+					i(25178),	-- Bata Staff
+					i(25179),	-- Nguni Stick
+					i(25180),	-- Calenda Fighting Stick
+					i(25181),	-- Tapered Staff
+					i(25182),	-- Crystal-Etched Warstaff
+					i(25183),	-- Voodoo Hex-Staff
+					i(25324),	-- Angerstaff
+					i(25325),	-- Brutal Scar-Limb
+					i(25326),	-- Primal Lore-Staff
+					i(25327),	-- Frenzied Staff
+					i(25328),	-- Faerie-Kind Staff
+					i(25329),	-- Tranquility Staff
+					i(25330),	-- Starshine Staff
+					i(25331),	-- Vengeance Staff
+					i(25332),	-- Reflective Staff
+					i(25333),	-- Purification Staff
+					i(25334),	-- Intimidating Greatstaff
+					i(25335),	-- Feral Warp-Staff
+					i(25336),	-- Splintering Greatstaff
+					i(25337),	-- Swarming Sting-Staff
+					i(30732),	-- Exodar Life-Staff
+					i(31186),	-- Braxxis' Staff of Slumber
+					i(31289),	-- Staff of Divine Infusion
+					i(31308),	-- The Bringer of Death
+					i(31334),	-- Staff of Natural Fury
+					i(32662),	-- Flaming Quartz Staff
 				}),
 				n(-338, { -- 1H Swords
-					i(25142),
-					i(25143),
-					i(25144),
+					i(25142),	-- Telaari Longblade
+					i(25143),	-- Silver Hand Blade
+					i(25144),	-- Skettis Curved Blade
 					desc(un(7, i(25145)), "Added in WOD only to Big Crate of Salvage"),	-- Wisdom Blade
-					i(25146),
-					i(25147),
-					i(25148),
-					i(25149),
-					i(25150),
-					i(25151),
-					i(25152),
-					i(25153),
-					i(25154),
-					i(25155),
-					i(29380),
-					i(30733),
-					i(31234),
-					i(31332),
-					i(31336),
-					i(32660),
+					i(25146),	-- Light-Etched Longsword
+					i(25147),	-- Skystrider Katana
+					i(25148),	-- Bone Collector Sword
+					i(25149),	-- Baron's Broadsword
+					i(25150),	-- Honor Hold Saber
+					i(25151),	-- Assassins' Short Blade
+					i(25152),	-- Howling Sword
+					i(25153),	-- Gladiator Greatblade
+					i(25154),	-- Blood Groove Blade
+					i(25155),	-- Iron Skull Sword
+					i(29380),	-- Ethereum Phase Blade
+					i(30733),	-- Hope Ender
+					i(31234),	-- Crystalblade of the Draenei
+					i(31332),	-- Blinkstrike
+					i(31336),	-- Blade of Wizardry
+					i(32660),	-- Crystalforged Sword
 				}),
 				n(-339, { -- 2H Swords
-					i(25156),
-					i(25157),
-					i(25158),
-					i(25159),
-					i(25160),
-					i(25161),
-					i(25162),
-					i(25163),
-					i(25164),
-					i(25165),
-					i(25166),
-					i(25167),
-					i(25168),
-					i(25169),
-					i(31134),
+					i(25156),	-- Royal Crusader Sword
+					i(25157),	-- Serpentlord Claymore
+					i(25158),	-- Skeletal Broadsword
+					i(25159),	-- Thunderstrike Falchion
+					i(25160),	-- Vengeance Blade
+					i(25161),	-- Dragon Wing Blade
+					i(25162),	-- Darkened Broadsword
+					i(25163),	-- Elexorien Blade
+					i(25164),	-- Crude Umbrafen Blade
+					i(25165),	-- Boulderfist Claymore
+					i(25166),	-- Mok'Nathal Warblade
+					i(25167),	-- Nethersteel Claymore
+					i(25168),	-- Sha'tari Longsword
+					i(25169),	-- Fel Orc Brute Sword
+					i(31134),	-- Blade of Misfortune
 				}),
 				n(-341, { -- Wands
-					i(25282),
-					i(25283),
-					i(25284),
-					i(25285),
-					i(25286),
-					i(25287),
-					i(25288),
-					i(25289),
-					i(25290),
-					i(25291),
-					i(25292),
-					i(25293),
-					i(25294),
-					i(25295),
-					i(29378),
+					i(25282),	-- Mahogany Wand
+					i(25283),	-- Crystallized Ebony Wand
+					i(25284),	-- Purpleheart Wand
+					i(25285),	-- Bloodwood Wand
+					i(25286),	-- Yew Wand
+					i(25287),	-- Magician's Wand
+					i(25288),	-- Conjurer's Wand
+					i(25289),	-- Majestic Wand
+					i(25290),	-- Solitaire Wand
+					i(25291),	-- Nobility Torch
+					i(25292),	-- Mechano-Wand
+					i(25293),	-- Draenethyst Wand
+					i(25294),	-- Dragonscale Wand
+					i(25295),	-- Flawless Wand
+					i(29378),	-- Starheart Baton
 				}),
 			}),	
 		},
