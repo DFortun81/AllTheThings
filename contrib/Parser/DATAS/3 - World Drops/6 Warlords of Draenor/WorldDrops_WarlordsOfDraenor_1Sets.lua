@@ -6,358 +6,358 @@ _.WorldDrops =
 	{
 		["groups"] = {
 			n(-1000, { -- Sets
-				i(106440),
-				i(106441),
-				i(106442),
-				i(106443),
-				i(106444),
-				i(106445),
-				i(106446),
-				i(106447),
-				i(106390),
-				i(106391),
-				i(106392),
-				i(106393),
-				i(106394),
-				i(106395),
-				i(106396),
-				i(106398),
-				i(106663),
-				i(106664),
-				i(106665),
-				i(106666),
-				i(106667),
-				i(106668),
-				i(106669),
-				i(106670),
-				i(106399),
-				i(106400),
-				i(106401),
-				i(106402),
-				i(106403),
-				i(106404),
-				i(106405),
-				i(106406),
-				i(106531),
-				i(106532),
-				i(106533),
-				i(106534),
-				i(106535),
-				i(106536),
-				i(106537),
-				i(106538),
-				i(106737),
-				i(106738),
-				i(106739),
-				i(106740),
-				i(106741),
-				i(106742),
-				i(106743),
-				i(106744),
-				i(106580),
-				i(106581),
-				i(106582),
-				i(106583),
-				i(106584),
-				i(106585),
-				i(106586),
-				i(106587),
-				i(106415),
-				i(106416),
-				i(106417),
-				i(106418),
-				i(106419),
-				i(106420),
-				i(106421),
-				i(106422),
-				i(106572),
-				i(106573),
-				i(106574),
-				i(106575),
-				i(106576),
-				i(106577),
-				i(106578),
-				i(106579),
-				i(106448),
-				i(106449),
-				i(106450),
-				i(106451),
-				i(106452),
-				i(106453),
-				i(106454),
-				i(106455),
-				i(106522),
-				i(106523),
-				i(106524),
-				i(106525),
-				i(106526),
-				i(106527),
-				i(106528),
-				i(106530),
-				i(106514),
-				i(106515),
-				i(106516),
-				i(106517),
-				i(106518),
-				i(106519),
-				i(106520),
-				i(106521),
-				i(106687),
-				i(106688),
-				i(106689),
-				i(106690),
-				i(106691),
-				i(106692),
-				i(106693),
-				i(106695),
-				i(106473),
-				i(106474),
-				i(106475),
-				i(106476),
-				i(106477),
-				i(106478),
-				i(106479),
-				i(106480),
-				i(106407),
-				i(106408),
-				i(106409),
-				i(106410),
-				i(106411),
-				i(106412),
-				i(106413),
-				i(106414),
-				i(106506),
-				i(106507),
-				i(106508),
-				i(106509),
-				i(106510),
-				i(106511),
-				i(106512),
-				i(106513),
-				i(106729),
-				i(106730),
-				i(106731),
-				i(106732),
-				i(106733),
-				i(106734),
-				i(106735),
-				i(106736),
-				i(106539),
-				i(106540),
-				i(106541),
-				i(106542),
-				i(106543),
-				i(106544),
-				i(106545),
-				i(106546),
-				i(106745),
-				i(106746),
-				i(106747),
-				i(106748),
-				i(106749),
-				i(106750),
-				i(106751),
-				i(106752),
-				i(106605),
-				i(106606),
-				i(106607),
-				i(106608),
-				i(106609),
-				i(106610),
-				i(106611),
-				i(106612),
-				i(106621),
-				i(106622),
-				i(106623),
-				i(106624),
-				i(106625),
-				i(106626),
-				i(106627),
-				i(106629),
-				i(106423),
-				i(106424),
-				i(106425),
-				i(106426),
-				i(106427),
-				i(106428),
-				i(106429),
-				i(106431),
-				i(106597),
-				i(106598),
-				i(106599),
-				i(106600),
-				i(106601),
-				i(106602),
-				i(106603),
-				i(106604),
-				i(106456),
-				i(106457),
-				i(106458),
-				i(106459),
-				i(106460),
-				i(106461),
-				i(106462),
-				i(106464),
-				i(106696),
-				i(106697),
-				i(106698),
-				i(106699),
-				i(106700),
-				i(106701),
-				i(106702),
-				i(106703),
-				i(106630),
-				i(106631),
-				i(106632),
-				i(106633),
-				i(106634),
-				i(106635),
-				i(106636),
-				i(106637),
-				i(106489),
-				i(106490),
-				i(106491),
-				i(106492),
-				i(106493),
-				i(106494),
-				i(106495),
-				i(106497),
-				i(106588),
-				i(106589),
-				i(106590),
-				i(106591),
-				i(106592),
-				i(106593),
-				i(106594),
-				i(106596),
-				i(106679),
-				i(106680),
-				i(106681),
-				i(106682),
-				i(106683),
-				i(106684),
-				i(106685),
-				i(106686),
-				i(106646),
-				i(106647),
-				i(106648),
-				i(106649),
-				i(106650),
-				i(106651),
-				i(106652),
-				i(106653),
-				i(106498),
-				i(106499),
-				i(106500),
-				i(106501),
-				i(106502),
-				i(106503),
-				i(106504),
-				i(106505),
-				i(106555),
-				i(106556),
-				i(106557),
-				i(106558),
-				i(106559),
-				i(106560),
-				i(106561),
-				i(106563),
-				i(106720),
-				i(106721),
-				i(106722),
-				i(106723),
-				i(106724),
-				i(106725),
-				i(106726),
-				i(106728),
-				i(106638),
-				i(106639),
-				i(106640),
-				i(106641),
-				i(106642),
-				i(106643),
-				i(106644),
-				i(106645),
-				i(106712),
-				i(106713),
-				i(106714),
-				i(106715),
-				i(106716),
-				i(106717),
-				i(106718),
-				i(106719),
-				i(106465),
-				i(106466),
-				i(106467),
-				i(106468),
-				i(106469),
-				i(106470),
-				i(106471),
-				i(106472),
-				i(106654),
-				i(106655),
-				i(106656),
-				i(106657),
-				i(106658),
-				i(106659),
-				i(106660),
-				i(106662),
-				i(106481),
-				i(106482),
-				i(106483),
-				i(106484),
-				i(106485),
-				i(106486),
-				i(106487),
-				i(106488),
-				i(106564),
-				i(106565),
-				i(106566),
-				i(106567),
-				i(106568),
-				i(106569),
-				i(106570),
-				i(106571),
-				i(106613),
-				i(106614),
-				i(106615),
-				i(106616),
-				i(106617),
-				i(106618),
-				i(106619),
-				i(106620),
-				i(106432),
-				i(106433),
-				i(106434),
-				i(106435),
-				i(106436),
-				i(106437),
-				i(106438),
-				i(106439),
-				i(106704),
-				i(106705),
-				i(106706),
-				i(106707),
-				i(106708),
-				i(106709),
-				i(106710),
-				i(106711),
-				i(106547),
-				i(106548),
-				i(106549),
-				i(106550),
-				i(106551),
-				i(106552),
-				i(106553),
-				i(106554),
-				i(106671),
-				i(106672),
-				i(106673),
-				i(106674),
-				i(106675),
-				i(106676),
-				i(106677),
-				i(106678),		
+				i(106390),	-- Bladespire Breastplate
+				i(106391),	-- Bladespire Gauntlets
+				i(106392),	-- Bladespire Girdle
+				i(106393),	-- Bladespire Helm
+				i(106394),	-- Bladespire Legplates
+				i(106395),	-- Bladespire Pauldrons
+				i(106396),	-- Bladespire Sabatons
+				i(106398),	-- Bladespire Vambraces
+				i(106399),	-- Coldsnout Bindings
+				i(106400),	-- Coldsnout Boots
+				i(106401),	-- Coldsnout Britches
+				i(106402),	-- Coldsnout Gloves
+				i(106403),	-- Coldsnout Hood
+				i(106404),	-- Coldsnout Jerkin
+				i(106405),	-- Coldsnout Shoulders
+				i(106406),	-- Coldsnout Waistband
+				i(106407),	-- Lunarglow Cord
+				i(106408),	-- Lunarglow Cowl
+				i(106409),	-- Lunarglow Handwraps
+				i(106410),	-- Lunarglow Leggings
+				i(106411),	-- Lunarglow Robe
+				i(106412),	-- Lunarglow Sandals
+				i(106413),	-- Lunarglow Shoulderpads
+				i(106414),	-- Lunarglow Wristwraps
+				i(106415),	-- Frostlink Belt
+				i(106416),	-- Frostlink Bracers
+				i(106417),	-- Frostlink Gauntlets
+				i(106418),	-- Frostlink Greaves
+				i(106419),	-- Frostlink Helm
+				i(106420),	-- Frostlink Legguards
+				i(106421),	-- Frostlink Spaulders
+				i(106422),	-- Frostlink Vest
+				i(106423),	-- Rimeplate Breastplate
+				i(106424),	-- Rimeplate Gauntlets
+				i(106425),	-- Rimeplate Girdle
+				i(106426),	-- Rimeplate Helm
+				i(106427),	-- Rimeplate Legplates
+				i(106428),	-- Rimeplate Pauldrons
+				i(106429),	-- Rimeplate Sabatons
+				i(106431),	-- Rimeplate Vambraces
+				i(106432),	-- Voidcaller Bindings
+				i(106433),	-- Voidcaller Boots
+				i(106434),	-- Voidcaller Britches
+				i(106435),	-- Voidcaller Gloves
+				i(106436),	-- Voidcaller Hood
+				i(106437),	-- Voidcaller Jerkin
+				i(106438),	-- Voidcaller Shoulders
+				i(106439),	-- Voidcaller Waistband
+				i(106440),	-- Anchorite Cord
+				i(106441),	-- Anchorite Cowl
+				i(106442),	-- Anchorite Handwraps
+				i(106443),	-- Anchorite Leggings
+				i(106444),	-- Anchorite Robe
+				i(106445),	-- Anchorite Sandals
+				i(106446),	-- Anchorite Shoulderpads
+				i(106447),	-- Anchorite Wristwraps
+				i(106448),	-- Gronnling Belt
+				i(106449),	-- Gronnling Bracers
+				i(106450),	-- Gronnling Gauntlets
+				i(106451),	-- Gronnling Greaves
+				i(106452),	-- Gronnling Helm
+				i(106453),	-- Gronnling Legguards
+				i(106454),	-- Gronnling Spaulders
+				i(106455),	-- Gronnling Vest
+				i(106456),	-- Rockspine Breastplate
+				i(106457),	-- Rockspine Gauntlets
+				i(106458),	-- Rockspine Girdle
+				i(106459),	-- Rockspine Helm
+				i(106460),	-- Rockspine Legplates
+				i(106461),	-- Rockspine Pauldrons
+				i(106462),	-- Rockspine Sabatons
+				i(106464),	-- Rockspine Vambraces
+				i(106465),	-- Tailthrasher Bindings
+				i(106466),	-- Tailthrasher Boots
+				i(106467),	-- Tailthrasher Britches
+				i(106468),	-- Tailthrasher Gloves
+				i(106469),	-- Tailthrasher Hood
+				i(106470),	-- Tailthrasher Jerkin
+				i(106471),	-- Tailthrasher Shoulders
+				i(106472),	-- Tailthrasher Waistband
+				i(106473),	-- Iyun Cord
+				i(106474),	-- Iyun Cowl
+				i(106475),	-- Iyun Handwraps
+				i(106476),	-- Iyun Leggings
+				i(106477),	-- Iyun Robe
+				i(106478),	-- Iyun Sandals
+				i(106479),	-- Iyun Shoulderpads
+				i(106480),	-- Iyun Wristwraps
+				i(106481),	-- Tangleheart Belt
+				i(106482),	-- Tangleheart Bracers
+				i(106483),	-- Tangleheart Gauntlets
+				i(106484),	-- Tangleheart Greaves
+				i(106485),	-- Tangleheart Helm
+				i(106486),	-- Tangleheart Legguards
+				i(106487),	-- Tangleheart Spaulders
+				i(106488),	-- Tangleheart Vest
+				i(106489),	-- Shardback Breastplate
+				i(106490),	-- Shardback Gauntlets
+				i(106491),	-- Shardback Girdle
+				i(106492),	-- Shardback Helm
+				i(106493),	-- Shardback Legplates
+				i(106494),	-- Shardback Pauldrons
+				i(106495),	-- Shardback Sabatons
+				i(106497),	-- Shardback Vambraces
+				i(106498),	-- Steamscar Bindings
+				i(106499),	-- Steamscar Boots
+				i(106500),	-- Steamscar Britches
+				i(106501),	-- Steamscar Gloves
+				i(106502),	-- Steamscar Hood
+				i(106503),	-- Steamscar Jerkin
+				i(106504),	-- Steamscar Shoulders
+				i(106505),	-- Steamscar Waistband
+				i(106506),	-- Mandragoran Cord
+				i(106507),	-- Mandragoran Cowl
+				i(106508),	-- Mandragoran Handwraps
+				i(106509),	-- Mandragoran Leggings
+				i(106510),	-- Mandragoran Robe
+				i(106511),	-- Mandragoran Sandals
+				i(106512),	-- Mandragoran Shoulderpads
+				i(106513),	-- Mandragoran Wristwraps
+				i(106514),	-- Highland Belt
+				i(106515),	-- Highland Bracers
+				i(106516),	-- Highland Gauntlets
+				i(106517),	-- Highland Greaves
+				i(106518),	-- Highland Helm
+				i(106519),	-- Highland Legguards
+				i(106520),	-- Highland Spaulders
+				i(106521),	-- Highland Vest
+				i(106522),	-- Gul'rok Breastplate
+				i(106523),	-- Gul'rok Gauntlets
+				i(106524),	-- Gul'rok Girdle
+				i(106525),	-- Gul'rok Helm
+				i(106526),	-- Gul'rok Legplates
+				i(106527),	-- Gul'rok Pauldrons
+				i(106528),	-- Gul'rok Sabatons
+				i(106530),	-- Gul'rok Vambraces
+				i(106531),	-- Daggerjaw Bindings
+				i(106532),	-- Daggerjaw Boots
+				i(106533),	-- Daggerjaw Britches
+				i(106534),	-- Daggerjaw Gloves
+				i(106535),	-- Daggerjaw Hood
+				i(106536),	-- Daggerjaw Jerkin
+				i(106537),	-- Daggerjaw Shoulders
+				i(106538),	-- Daggerjaw Waistband
+				i(106539),	-- Orunai Cord
+				i(106540),	-- Orunai Cowl
+				i(106541),	-- Orunai Handwraps
+				i(106542),	-- Orunai Leggings
+				i(106543),	-- Orunai Robe
+				i(106544),	-- Orunai Sandals
+				i(106545),	-- Orunai Shoulderpads
+				i(106546),	-- Orunai Wristwraps
+				i(106547),	-- Warpscale Belt
+				i(106548),	-- Warpscale Bracers
+				i(106549),	-- Warpscale Gauntlets
+				i(106550),	-- Warpscale Greaves
+				i(106551),	-- Warpscale Helm
+				i(106552),	-- Warpscale Legguards
+				i(106553),	-- Warpscale Spaulders
+				i(106554),	-- Warpscale Vest
+				i(106555),	-- Stonebreaker Breastplate
+				i(106556),	-- Stonebreaker Gauntlets
+				i(106557),	-- Stonebreaker Girdle
+				i(106558),	-- Stonebreaker Helm
+				i(106559),	-- Stonebreaker Legplates
+				i(106560),	-- Stonebreaker Pauldrons
+				i(106561),	-- Stonebreaker Sabatons
+				i(106563),	-- Stonebreaker Vambraces
+				i(106564),	-- Teroclaw Bindings
+				i(106565),	-- Teroclaw Boots
+				i(106566),	-- Teroclaw Britches
+				i(106567),	-- Teroclaw Gloves
+				i(106568),	-- Teroclaw Hood
+				i(106569),	-- Teroclaw Jerkin
+				i(106570),	-- Teroclaw Shoulders
+				i(106571),	-- Teroclaw Waistband
+				i(106572),	-- Gordunni Cord
+				i(106573),	-- Gordunni Cowl
+				i(106574),	-- Gordunni Handwraps
+				i(106575),	-- Gordunni Leggings
+				i(106576),	-- Gordunni Robe
+				i(106577),	-- Gordunni Sandals
+				i(106578),	-- Gordunni Shoulderpads
+				i(106579),	-- Gordunni Wristwraps
+				i(106580),	-- Deathweb Belt
+				i(106581),	-- Deathweb Bracers
+				i(106582),	-- Deathweb Gauntlets
+				i(106583),	-- Deathweb Greaves
+				i(106584),	-- Deathweb Helm
+				i(106585),	-- Deathweb Legguards
+				i(106586),	-- Deathweb Spaulders
+				i(106587),	-- Deathweb Vest
+				i(106588),	-- Sharptusk Breastplate
+				i(106589),	-- Sharptusk Gauntlets
+				i(106590),	-- Sharptusk Girdle
+				i(106591),	-- Sharptusk Helm
+				i(106592),	-- Sharptusk Legplates
+				i(106593),	-- Sharptusk Pauldrons
+				i(106594),	-- Sharptusk Sabatons
+				i(106596),	-- Sharptusk Vambraces
+				i(106597),	-- Ripfang Bindings
+				i(106598),	-- Ripfang Boots
+				i(106599),	-- Ripfang Britches
+				i(106600),	-- Ripfang Gloves
+				i(106601),	-- Ripfang Hood
+				i(106602),	-- Ripfang Jerkin
+				i(106603),	-- Ripfang Shoulders
+				i(106604),	-- Ripfang Waistband
+				i(106605),	-- Ravendown Cord
+				i(106606),	-- Ravendown Cowl
+				i(106607),	-- Ravendown Handwraps
+				i(106608),	-- Ravendown Leggings
+				i(106609),	-- Ravendown Robe
+				i(106610),	-- Ravendown Sandals
+				i(106611),	-- Ravendown Shoulderpads
+				i(106612),	-- Ravendown Wristwraps
+				i(106613),	-- Varashi Belt
+				i(106614),	-- Varashi Bracers
+				i(106615),	-- Varashi Gauntlets
+				i(106616),	-- Varashi Greaves
+				i(106617),	-- Varashi Helm
+				i(106618),	-- Varashi Legguards
+				i(106619),	-- Varashi Spaulders
+				i(106620),	-- Varashi Vest
+				i(106621),	-- Ravenskar Breastplate
+				i(106622),	-- Ravenskar Gauntlets
+				i(106623),	-- Ravenskar Girdle
+				i(106624),	-- Ravenskar Helm
+				i(106625),	-- Ravenskar Legplates
+				i(106626),	-- Ravenskar Pauldrons
+				i(106627),	-- Ravenskar Sabatons
+				i(106629),	-- Ravenskar Vambraces
+				i(106630),	-- Shadeback Bindings
+				i(106631),	-- Shadeback Boots
+				i(106632),	-- Shadeback Britches
+				i(106633),	-- Shadeback Gloves
+				i(106634),	-- Shadeback Hood
+				i(106635),	-- Shadeback Jerkin
+				i(106636),	-- Shadeback Shoulders
+				i(106637),	-- Shadeback Waistband
+				i(106638),	-- Sunscryer Cord
+				i(106639),	-- Sunscryer Cowl
+				i(106640),	-- Sunscryer Handwraps
+				i(106641),	-- Sunscryer Leggings
+				i(106642),	-- Sunscryer Robe
+				i(106643),	-- Sunscryer Sandals
+				i(106644),	-- Sunscryer Shoulderpads
+				i(106645),	-- Sunscryer Wristwraps
+				i(106646),	-- Spirestrider Belt
+				i(106647),	-- Spirestrider Bracers
+				i(106648),	-- Spirestrider Gauntlets
+				i(106649),	-- Spirestrider Greaves
+				i(106650),	-- Spirestrider Helm
+				i(106651),	-- Spirestrider Legguards
+				i(106652),	-- Spirestrider Spaulders
+				i(106653),	-- Spirestrider Vest
+				i(106654),	-- Talon Guard Breastplate
+				i(106655),	-- Talon Guard Gauntlets
+				i(106656),	-- Talon Guard Girdle
+				i(106657),	-- Talon Guard Helm
+				i(106658),	-- Talon Guard Legplates
+				i(106659),	-- Talon Guard Pauldrons
+				i(106660),	-- Talon Guard Sabatons
+				i(106662),	-- Talon Guard Vambraces
+				i(106663),	-- Breezestrider Bindings
+				i(106664),	-- Breezestrider Boots
+				i(106665),	-- Breezestrider Britches
+				i(106666),	-- Breezestrider Gloves
+				i(106667),	-- Breezestrider Hood
+				i(106668),	-- Breezestrider Jerkin
+				i(106669),	-- Breezestrider Shoulders
+				i(106670),	-- Breezestrider Waistband
+				i(106671),	-- Windswept Cord
+				i(106672),	-- Windswept Cowl
+				i(106673),	-- Windswept Handwraps
+				i(106674),	-- Windswept Leggings
+				i(106675),	-- Windswept Robe
+				i(106676),	-- Windswept Sandals
+				i(106677),	-- Windswept Shoulderpads
+				i(106678),	-- Windswept Wristwraps
+				i(106679),	-- Snarlthorn Belt
+				i(106680),	-- Snarlthorn Bracers
+				i(106681),	-- Snarlthorn Gauntlets
+				i(106682),	-- Snarlthorn Greaves
+				i(106683),	-- Snarlthorn Helm
+				i(106684),	-- Snarlthorn Legguards
+				i(106685),	-- Snarlthorn Spaulders
+				i(106686),	-- Snarlthorn Vest
+				i(106687),	-- Ironfist Breastplate
+				i(106688),	-- Ironfist Gauntlets
+				i(106689),	-- Ironfist Girdle
+				i(106690),	-- Ironfist Helm
+				i(106691),	-- Ironfist Legplates
+				i(106692),	-- Ironfist Pauldrons
+				i(106693),	-- Ironfist Sabatons
+				i(106695),	-- Ironfist Vambraces
+				i(106696),	-- Sabermaw Bindings
+				i(106697),	-- Sabermaw Boots
+				i(106698),	-- Sabermaw Britches
+				i(106699),	-- Sabermaw Gloves
+				i(106700),	-- Sabermaw Hood
+				i(106701),	-- Sabermaw Jerkin
+				i(106702),	-- Sabermaw Shoulders
+				i(106703),	-- Sabermaw Waistband
+				i(106704),	-- Voidwrap Cord
+				i(106705),	-- Voidwrap Cowl
+				i(106706),	-- Voidwrap Handwraps
+				i(106707),	-- Voidwrap Leggings
+				i(106708),	-- Voidwrap Robe
+				i(106709),	-- Voidwrap Sandals
+				i(106710),	-- Voidwrap Shoulderpads
+				i(106711),	-- Voidwrap Wristwraps
+				i(106712),	-- Sunspring Belt
+				i(106713),	-- Sunspring Bracers
+				i(106714),	-- Sunspring Gauntlets
+				i(106715),	-- Sunspring Greaves
+				i(106716),	-- Sunspring Helm
+				i(106717),	-- Sunspring Legguards
+				i(106718),	-- Sunspring Spaulders
+				i(106719),	-- Sunspring Vest
+				i(106720),	-- Stonecrag Breastplate
+				i(106721),	-- Stonecrag Gauntlets
+				i(106722),	-- Stonecrag Girdle
+				i(106723),	-- Stonecrag Helm
+				i(106724),	-- Stonecrag Legplates
+				i(106725),	-- Stonecrag Pauldrons
+				i(106726),	-- Stonecrag Sabatons
+				i(106728),	-- Stonecrag Vambraces
+				i(106729),	-- Meadowstomper Bindings
+				i(106730),	-- Meadowstomper Boots
+				i(106731),	-- Meadowstomper Britches
+				i(106732),	-- Meadowstomper Gloves
+				i(106733),	-- Meadowstomper Hood
+				i(106734),	-- Meadowstomper Jerkin
+				i(106735),	-- Meadowstomper Shoulders
+				i(106736),	-- Meadowstomper Waistband
+				i(106737),	-- Dark Star Cord
+				i(106738),	-- Dark Star Cowl
+				i(106739),	-- Dark Star Handwraps
+				i(106740),	-- Dark Star Leggings
+				i(106741),	-- Dark Star Robe
+				i(106742),	-- Dark Star Sandals
+				i(106743),	-- Dark Star Shoulderpads
+				i(106744),	-- Dark Star Wristwraps
+				i(106745),	-- Packrunner Belt
+				i(106746),	-- Packrunner Bracers
+				i(106747),	-- Packrunner Gauntlets
+				i(106748),	-- Packrunner Greaves
+				i(106749),	-- Packrunner Helm
+				i(106750),	-- Packrunner Legguards
+				i(106751),	-- Packrunner Spaulders
+				i(106752),	-- Packrunner Vest
 			}),
 		},
 		["Lvl"] = 90,
