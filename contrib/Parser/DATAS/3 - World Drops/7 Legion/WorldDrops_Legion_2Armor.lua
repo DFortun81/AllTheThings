@@ -7,71 +7,71 @@ _.WorldDrops =
 		["groups"] = {
 			n(-318, { -- Armor
 				n(-320, { -- Head
-					i(141566),
-					i(141575),
-					i(141579),
-					i(147064),
+					i(141566),	-- Serrinne's Maleficent Habit
+					i(141575),	-- Gorrog's Serene Gaze
+					i(141579),	-- Welded Hardskin Helmet
+					i(147064),	-- Diadem of the Highborne
 				}),
 				n(-321, { -- Shoulder
-					i(141567),
-					i(141568),
-					i(147038),
+					i(141567),	-- Cyno's Mantle of Sin
+					i(141568),	-- Boughs of Archdruid Van-Yali
+					i(147038),	-- Wakening Horror Spaulders
 				}),
 				n(-322, { -- Back
-					i(121012),
-					i(121067),
-					i(121122),
-					i(121177),
-					i(121232),
-					i(141589),
-					i(141590),
-					i(142541),
-					i(144399),
-					i(144400),
-					i(144401),
-					i(144403),
+					i(121012),	-- Azurewing Defender's Drape
+					i(121067),	-- Thunder Totem Cloak
+					i(121122),	-- Stormwing Drape
+					i(121177),	-- Vale Walker's Cloak
+					i(121232),	-- Nightfallen Outcast's Cloak
+					i(141589),	-- Treia's Handcrafted Shroud
+					i(141590),	-- Cloak of Martayl Oceanstrider
+					i(142541),	-- Drape of the Forgotten Souls
+					i(144399),	-- Aristocrat's Winter Drape
+					i(144400),	-- Feathermane Feather Cloak
+					i(144401),	-- Cloak of Multitudinous Sheaths
+					i(144403),	-- Fashionable Autumn Cloak
 				}),
 				n(-323, { -- Chest
-					i(141570),
-					i(141576),
-					i(147044),
+					i(141570),	-- Cainen's Preeminent Chestguard
+					i(141576),	-- Aethrynn's Everwarm Chestplate
+					i(147044),	-- Soul-Rattle Ribcage
 				}),
 				n(-326, { -- Wrist
-					i(141571),
+					i(141571),	-- Mavanah's Shifting Wristguards
 				}),
 				n(-327, { -- Hands
-					i(141565),
-					i(141577),
-					i(141695),
-					i(146989),
+					i(141565),	-- Mir's Enthralling Grasp
+					i(141577),	-- Fists of Thane Kray-Tan
+					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
+					i(146989),	-- Fel-Flecked Grips
 				}),
 				n(-328, { -- Waist
-					i(141564),
-					i(141573),
-					i(144404),
-					i(144405),
-					i(144406),
-					i(144407),
-					i(147423),
-					i(147425),
-					i(147427),
-					i(147429),
+					i(141564),	-- Telubis' Binding of Patience
+					i(141573),	-- Shokell's Grim Cinch
+					i(144404),	-- Mana-Cord of Deception
+					i(144405),	-- Waistclasp of Unethical Power
+					i(144406),	-- Vintage Duskwatch Cinch
+					i(144407),	-- Gleaming Celestial Waistguard
+					i(147423),	-- Sash of the Unredeemed
+					i(147425),	-- Cord of Pilfered Rosaries
+					i(147427),	-- Pristine Moon-Wrought Clasp
+					i(147429),	-- Girdle of the Crumbling Sanctum
 				}),
 				n(-329, { -- Legs
-					i(141569),
-					i(141574),
+					i(141569),	-- Samnoh's Exceptional Leggings
+					i(141574),	-- Ulfgor's Greaves of Bravery
 				}),
 				n(-330, { -- Feet
-					i(139405),
-					i(139406),
-					i(139407),
-					i(139408),
-					i(141572),
-					i(141578),
-					i(147422),
-					i(147424),
-					i(147426),
-					i(147428),
+					i(139405),	-- Kul'Tiras Marine Issue Boots
+					i(139406),	-- Sea Dog Boots
+					i(139407),	-- Diver's Chain Boots
+					i(139408),	-- Deck Sandals
+					i(141572),	-- Geta of Tay'Shute
+					i(141578),	-- Claud's War-Ravaged Boots
+					i(147422),	-- Acolyte's Abandoned Footwraps
+					i(147424),	-- Treads of Violent Intrusion
+					i(147426),	-- Treads of Panicked Escape
+					i(147428),	-- Spiked Terrorwake Greatboots
 				}),
 			}),
 		},

@@ -7,113 +7,113 @@ _.WorldDrops =
 		["groups"] = {
 			n(-318, { -- Armor
 				n(-320, { -- Head
-					i(118857),
-					i(118821),
-					i(118829),
-					i(118836),
-					i(118893),
-					i(118894),
-					i(118895),
-					i(118896),
+					i(118821),	-- Mystical Cap of Skill
+					i(118829),	-- Treasure Hunter's Bandana
+					i(118836),	-- Rellwyn's Crimson Cowl
+					i(118857),	-- Casque of Defiance
+					i(118893),	-- Lylirra's Shining Circlet
+					i(118894),	-- Toria's Perseverance
+					i(118895),	-- Plume Adorned Headdress
+					i(118896),	-- Helmet of Vile Indignation
 				}),
 				n(-321, { -- Shoulder
-					i(118823),
-					i(118831),
-					i(118838),
-					i(118859),
-					i(118889),
-					i(118890),
-					i(118891),
-					i(118892),
+					i(118823),	-- Mantle of Moera
+					i(118831),	-- Arentios' Amice of Alacrity
+					i(118838),	-- J'kaey's Shining Spaulders
+					i(118859),	-- Mantle of Moriccalas
+					i(118889),	-- Ephew's Enlightened Mantle
+					i(118890),	-- Studded Frostboar Leather Spaulders
+					i(118891),	-- Dunestalker's Mantle
+					i(118892),	-- Botani-Barbed Pauldrons
 				}),
 				n(-322, { -- Back
-					i(116696),
-					i(116699),
-					i(116702),
-					i(116705),
-					i(116708),
-					i(116711),
-					i(116714),
-					i(116717),
-					i(116720),
-					i(116723),
-					i(118807),
-					i(118808),
-					i(118809),
-					i(118810),
-					i(118815),
-					i(118811),
-					i(118812),
-					i(118813),
-					i(118814),
-					i(118816),
-					i(119343),
-					i(119344),
-					i(119345),
-					i(119346),
-					i(119347),
+					i(116696),	-- Moonwhisper Cloak
+					i(116699),	-- Growthshaper Cloak
+					i(116702),	-- Evermorn Cloak
+					i(116705),	-- Zangarra Cloak
+					i(116708),	-- Soulkeeper Cloak
+					i(116711),	-- Sunsworn Cloak
+					i(116714),	-- Shadowsage Cloak
+					i(116717),	-- Ruhkmari Cloak
+					i(116720),	-- Ancestral Cloak
+					i(116723),	-- Oshu'gun Cloak
+					i(118807),	-- Dunewalker Wrap
+					i(118808),	-- Highmaul Magi Scarf
+					i(118809),	-- Eldodin's Elegant Drape
+					i(118810),	-- Rinnila's Regal Cloak
+					i(118811),	-- Embroidered Wolfsfur Cloak
+					i(118812),	-- Flamelicked Cloak of Kaufebyrd
+					i(118813),	-- Tarred Greatcloak
+					i(118814),	-- Berserker's Windwrap
+					i(118815),	-- Double Layered Frostboar Cloak
+					i(118816),	-- Gorenscale Mesh Cloak
+					i(119343),	-- Eye-Blinder Greatcloak
+					i(119344),	-- Magic-Breaker Cape
+					i(119345),	-- Milenah's Intricate Cloak
+					i(119346),	-- Kyu-Sy's Tarflame Doomcloak
+					i(119347),	-- Gill's Glorious Windcloak
 				}),
 				n(-323, { -- Chest
-					i(118819),
-					i(118827),
-					i(118855),
+					i(118819),	-- Ariya's Auspicious Robe
+					i(118827),	-- Thrice-Tanned Tunic
+					i(118855),	-- Chyler's Charming Chestguard
 				}),
 				n(-326, { -- Wrist
-					i(118824),
-					i(118860),
-					i(118832),
-					i(118839),
-					i(119331),
-					i(119332),
-					i(119333),
+					i(118824),	-- Noxiia's Shackles
+					i(118832),	-- Wodin's Weary Wristguards
+					i(118839),	-- Bonechain Bracers
+					i(118860),	-- Bolt-Bound Bracers
+					i(119331),	-- Bracers of Visceral Force
+					i(119332),	-- Bracers of Darkened Skies
+					i(119333),	-- Bracers of Shattered Limbs
 				}),
 				n(-327, { -- Hands
-					i(113593),
-					i(113602),
-					i(113610),
-					i(113632),
-					i(118820),
-					i(118828),
-					i(118835),
-					i(118856),
+					i(113593),	-- Grips of Vicious Mauling
+					i(113602),	-- Throat-Ripper Gauntlets
+					i(113610),	-- Meatmonger's Gory Grips
+					i(113632),	-- Gauntlets of the Heavy Hand
+					i(118820),	-- Anruin's Grips of Agony
+					i(118828),	-- Amienne's Velvety Touch
+					i(118835),	-- Kiraser's Gloves of Precision
+					i(118856),	-- Cydil's Coiled Grasp
 				}),
 				n(-328, { -- Waist
-					i(118817),
-					i(118825),
-					i(118833),
-					i(118853),
-					i(118885),
-					i(118886),
-					i(118887),
-					i(118888),
-					i(119335),
-					i(119336),
-					i(119337),
-					i(119338),
-					i(124182),
-					i(124277),
-					i(124311),
-					i(124350),
+					i(118817),	-- Girthbinder of N'karas
+					i(118825),	-- Windswept Leather Waistguard
+					i(118833),	-- Chain Links of Pea'dexx
+					i(118853),	-- Iron Beltguard of Fuufuu
+					i(118885),	-- Gem-Inlaid Velvet Cinch
+					i(118886),	-- Waistgirdle of the Mountain
+					i(118887),	-- Cloudcaller's Linked Belt
+					i(118888),	-- Ashelia's Adorned Waistguard
+					i(119335),	-- Eyeripper Girdle
+					i(119336),	-- Cord of Winsome Sorrows
+					i(119337),	-- Ripswallow Plate Belt
+					i(119338),	-- Belt of Inebriated Sorrows
+					i(124182),	-- Cord of Unhinged Malice
+					i(124277),	-- Flayed Demonskin Belt
+					i(124311),	-- Cursed Demonchain Belt
+					i(124350),	-- Girdle of Demonic Wrath
 				}),
 				n(-329, { -- Legs
-					i(118822),
-					i(118830),
-					i(118837),
-					i(118858),
+					i(118822),	-- Kitsy's Knickers
+					i(118830),	-- Fur-Padded Driftwaders
+					i(118837),	-- Puu'sey's Pantaloons
+					i(118858),	-- Fobbly's Fabulous Legplates
 				}),
 				n(-330, { -- Feet
-					i(118854),
-					i(118818),
-					i(118826),
-					i(118834),
-					i(119339),
-					i(119340),
-					i(119341),
-					i(119342),
-					i(124150),
-					i(124252),
-					i(124288),
-					i(124323),
+					i(118818),	-- Kymi's Stylish Slippers
+					i(118826),	-- Cadi's Grass Stained Slippers
+					i(118834),	-- Spiffy Chainmail Boots
+					i(118854),	-- Zor's Taboo Treads
+					i(119339),	-- Treads of the Veteran Smith
+					i(119340),	-- Iron-Flecked Sandals
+					i(119341),	-- Doomslag Greatboots
+					i(119342),	-- Furnace Stoker's Footwraps
+					i(124150),	-- Dessicated Soulrender Slippers
+					i(124252),	-- Jungle Assassin's Footpads
+					i(124288),	-- Unhallowed Voidlink Boots
+					i(124323),	-- Cruel Hope Crushers
 				}),
 			}),
 		},

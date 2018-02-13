@@ -7,265 +7,265 @@ _.WorldDrops =
 		["groups"] = {
 			n(-319, { -- Weapons		
 				n(-334, { -- 1H Axes
-					i(116474),
-					i(116491),
-					i(116508),
-					i(116525),
-					i(116542),
-					i(116559),
-					i(116576),
-					i(116593),
-					i(116610),
-					i(116627),
-					--i(117010), -- Not a valid item so commenting out
-					i(118781),
-					i(118782),
+					i(116474),	-- Lunarglow Axe
+					i(116491),	-- Vinewrapped Axe
+					i(116508),	-- Creeperclaw Axe
+					i(116525),	-- Incised Axe
+					i(116542),	-- Auchenai Axe
+					i(116559),	-- Skettis Axe
+					i(116576),	-- Longclaw Axe
+					i(116593),	-- Bloodmane Axe
+					i(116610),	-- Gorian Axe
+					i(116627),	-- Howling Axe
+					--i(117010), -- Not a valid item so commenting out Forester's Axe
+					i(118781),	-- Gorestained Hatchet
+					i(118782),	-- Ivory-Hilted Cleaver
 				}),
 				n(-335, { -- 2H Axes
-					i(116475),
-					i(116492),
-					i(116509),
-					i(116526),
-					i(116543),
-					i(116560),
-					i(116577),
-					i(116594),
-					i(116611),
-					i(116628),
-					i(118802),
+					i(116475),	-- Lunarglow Broadaxe
+					i(116492),	-- Vinewrapped Broadaxe
+					i(116509),	-- Creeperclaw Broadaxe
+					i(116526),	-- Incised Broadaxe
+					i(116543),	-- Auchenai Broadaxe
+					i(116560),	-- Skettis Broadaxe
+					i(116577),	-- Longclaw Broadaxe
+					i(116594),	-- Bloodmane Broadaxe
+					i(116611),	-- Gorian Broadaxe
+					i(116628),	-- Howling Broadaxe
+					i(118802),	-- Tayger's Sword-On-A-Stick
 				}),	
 				n(-346, { -- Bows
-					i(116476),
-					i(116493),
-					i(116510),
-					i(116527),
-					i(116544),
-					i(116561),
-					i(116578),
-					i(116595),
-					i(116612),
-					i(116629),
-					i(118796),
+					i(116476),	-- Lunarglow Bow
+					i(116493),	-- Vinewrapped Bow
+					i(116510),	-- Creeperclaw Bow
+					i(116527),	-- Incised Bow
+					i(116544),	-- Auchenai Bow
+					i(116561),	-- Skettis Bow
+					i(116578),	-- Longclaw Bow
+					i(116595),	-- Bloodmane Bow
+					i(116612),	-- Gorian Bow
+					i(116629),	-- Howling Bow
+					i(118796),	-- Gorestrung Longbow of Kel'tann
 				}),
 				n(-347, { -- Crossbows
-					i(116477),
-					i(116494),
-					i(116511),
-					i(116528),
-					i(116545),
-					i(116562),
-					i(116579),
-					i(116596),
-					i(116613),
-					i(116630),
-					i(118797),
+					i(116477),	-- Lunarglow Crossbow
+					i(116494),	-- Vinewrapped Crossbow
+					i(116511),	-- Creeperclaw Crossbow
+					i(116528),	-- Incised Crossbow
+					i(116545),	-- Auchenai Crossbow
+					i(116562),	-- Skettis Crossbow
+					i(116579),	-- Longclaw Crossbow
+					i(116596),	-- Bloodmane Crossbow
+					i(116613),	-- Gorian Crossbow
+					i(116630),	-- Howling Crossbow
+					i(118797),	-- Auto-Loading Crossbow of the Sand Emperor
 				}),			
 				n(-333, { -- Daggers	
-					i(116478),
-					i(116479),
-					i(116495),
-					i(116496),
-					i(116512),
-					i(116513),
-					i(116529),
-					i(116530),
-					i(116546),
-					i(116547),
-					i(116563),
-					i(116564),
-					i(116580),
-					i(116581),
-					i(116597),
-					i(116598),
-					i(116614),
-					i(116615),
-					i(116631),
-					i(116632),
-					i(117371),
-					i(118783),
-					i(118784),
-					i(118785),
+					i(116478),	-- Lunarglow Dagger
+					i(116479),	-- Moonwhisper Spellblade
+					i(116495),	-- Vinewrapped Dagger
+					i(116496),	-- Growthshaper Spellblade
+					i(116512),	-- Creeperclaw Dagger
+					i(116513),	-- Evermorn Spellblade
+					i(116529),	-- Incised Dagger
+					i(116530),	-- Zangarra Spellblade
+					i(116546),	-- Auchenai Dagger
+					i(116547),	-- Soulkeeper Spellblade
+					i(116563),	-- Skettis Dagger
+					i(116564),	-- Sunsworn Spellblade
+					i(116580),	-- Longclaw Dagger
+					i(116581),	-- Shadowsage Spellblade
+					i(116597),	-- Bloodmane Dagger
+					i(116598),	-- Ruhkmari Spellblade
+					i(116614),	-- Gorian Dagger
+					i(116615),	-- Ancestral Spellblade
+					i(116631),	-- Howling Dagger
+					i(116632),	-- Oshu'gun Spellblade
+					i(117371),	-- Miniature Winter Veil Tree
+					i(118783),	-- Rykard's Reliable Ribcutter
+					i(118784),	-- Sliver of Na'the
+					i(118785),	-- Void Bound Knife
 				}),
 				n(-348, { -- Fist Weapons	
-					i(116480),
-					i(116497),
-					i(116514),
-					i(116531),
-					i(116548),
-					i(116565),
-					i(116582),
-					i(116599),
-					i(116616),
-					i(116633),
-					i(118786),
+					i(116480),	-- Lunarglow Knuckles
+					i(116497),	-- Vinewrapped Knuckles
+					i(116514),	-- Creeperclaw Knuckles
+					i(116531),	-- Incised Knuckles
+					i(116548),	-- Auchenai Knuckles
+					i(116565),	-- Skettis Knuckles
+					i(116582),	-- Longclaw Knuckles
+					i(116599),	-- Bloodmane Knuckles
+					i(116616),	-- Gorian Knuckles
+					i(116633),	-- Howling Knuckles
+					i(118786),	-- Chade's Kidneythumper
 				}),
 				n(-345, { -- Guns
-					i(116481),
-					i(116498),
-					i(116515),
-					i(116532),
-					i(116549),
-					i(116566),
-					i(116583),
-					i(116600),
-					i(116617),
-					i(116634),
-					i(118798),
+					i(116481),	-- Lunarglow Gun
+					i(116498),	-- Vinewrapped Gun
+					i(116515),	-- Creeperclaw Gun
+					i(116532),	-- Incised Gun
+					i(116549),	-- Auchenai Gun
+					i(116566),	-- Skettis Gun
+					i(116583),	-- Longclaw Gun
+					i(116600),	-- Bloodmane Gun
+					i(116617),	-- Gorian Gun
+					i(116634),	-- Howling Gun
+					i(118798),	-- Dead Eye Zakk's Boomshooter
 				}),			
 				n(-331, { -- Held in Off-hand
-					i(116697),
-					i(116700),
-					i(116703),
-					i(116706),
-					i(116709),
-					i(116712),
-					i(116715),
-					i(116718),
-					i(116721),
-					i(116724),
-					i(118849),
-					i(118850),
-					i(118851),
-					i(118852),
+					i(116697),	-- Moonwhisper Crystal
+					i(116700),	-- Growthshaper Branch
+					i(116703),	-- Evermorn Twig
+					i(116706),	-- Zangarra Crystal
+					i(116709),	-- Soulkeeper Ledger
+					i(116712),	-- Sunsworn Transcription
+					i(116715),	-- Shadowsage Cauldron
+					i(116718),	-- Ruhkmari Bowl
+					i(116721),	-- Ancestral Branch
+					i(116724),	-- Oshu'gun Basin
+					i(118849),	-- Boneboiler's Cauldron
+					i(118850),	-- Transcription of Hir Oto'ro
+					i(118851),	-- Genesaur Braid
+					i(118852),	-- Erorus' Ledger of Trade
 				}),
 				n(-336, { -- 1H Maces
-					i(116482),
-					i(116483),
-					i(116499),
-					i(116500),
-					i(116516),
-					i(116517),
-					i(116533),
-					i(116534),
-					i(116550),
-					i(116551),
-					i(116567),
-					i(116568),
-					i(116584),
-					i(116585),
-					i(116601),
-					i(116602),
-					i(116618),
-					i(116619),
-					i(116635),
-					i(116636),
-					i(117379),
-					i(118787),
-					i(118788),
-					i(118789),
+					i(116482),	-- Lunarglow Mace
+					i(116483),	-- Moonwhisper Scepter
+					i(116499),	-- Vinewrapped Mace
+					i(116500),	-- Growthshaper Scepter
+					i(116516),	-- Creeperclaw Mace
+					i(116517),	-- Evermorn Scepter
+					i(116533),	-- Incised Mace
+					i(116534),	-- Zangarra Scepter
+					i(116550),	-- Auchenai Mace
+					i(116551),	-- Soulkeeper Scepter
+					i(116567),	-- Skettis Mace
+					i(116568),	-- Sunsworn Scepter
+					i(116584),	-- Longclaw Mace
+					i(116585),	-- Shadowsage Scepter
+					i(116601),	-- Bloodmane Mace
+					i(116602),	-- Ruhkmari Scepter
+					i(116618),	-- Gorian Mace
+					i(116619),	-- Ancestral Scepter
+					i(116635),	-- Howling Mace
+					i(116636),	-- Oshu'gun Scepter
+					i(117379),	-- Tremendous Tankard O' Terror
+					i(118787),	-- Gibberskull Mace
+					i(118788),	-- Matti's Magnificent Mace
+					i(118789),	-- Firecrystal Mace
 				}),
 				n(-337, { -- 2H Maces
-					i(111475),
-					i(116484),
-					i(116501),
-					i(116518),
-					i(116535),
-					i(116552),
-					i(116569),
-					i(116586),
-					i(116603),
-					i(116620),
-					i(116637),
-					i(118799),
+					i(111475),	-- Beater's Beat Stick
+					i(116484),	-- Lunarglow Hammer
+					i(116501),	-- Vinewrapped Hammer
+					i(116518),	-- Creeperclaw Hammer
+					i(116535),	-- Incised Hammer
+					i(116552),	-- Auchenai Hammer
+					i(116569),	-- Skettis Hammer
+					i(116586),	-- Longclaw Hammer
+					i(116603),	-- Bloodmane Hammer
+					i(116620),	-- Gorian Hammer
+					i(116637),	-- Howling Hammer
+					i(118799),	-- Draenic Ribsmasher
 				}),
 				n(-343, { -- Polearms
-					i(107658),
-					i(116485),
-					i(116502),
-					i(116519),
-					i(116536),
-					i(116553),
-					i(116570),
-					i(116587),
-					i(116604),
-					i(116621),
-					i(116638),
-					i(118795),
-					i(118800),
-					i(118801),
+					i(107658),	-- Thunderlord Longspear
+					i(116485),	-- Lunarglow Spear
+					i(116502),	-- Vinewrapped Spear
+					i(116519),	-- Creeperclaw Spear
+					i(116536),	-- Incised Spear
+					i(116553),	-- Auchenai Spear
+					i(116570),	-- Skettis Spear
+					i(116587),	-- Longclaw Spear
+					i(116604),	-- Bloodmane Spear
+					i(116621),	-- Gorian Spear
+					i(116638),	-- Howling Spear
+					i(118795),	-- Draenic Treecleaver
+					i(118800),	-- Pillar of Malice
+					i(118801),	-- Spire of Autumn
 				}),			
 				n(-332, { -- Shield
-					i(106430),
-					i(106463),
-					i(106496),
-					i(106529),
-					i(106562),
-					i(106595),
-					i(106628),
-					i(106661),
-					i(106694),
-					i(106727),
-					i(118871),
-					i(118872),
-					i(118873),
-					i(118874),
+					i(106430),	-- Rimeplate Shield
+					i(106463),	-- Rockspine Shield
+					i(106496),	-- Shardback Shield
+					i(106529),	-- Gul'rok Shield
+					i(106562),	-- Stonebreaker Shield
+					i(106595),	-- Sharptusk Shield
+					i(106628),	-- Ravenskar Shield
+					i(106661),	-- Talon Guard Shield
+					i(106694),	-- Ironfist Shield
+					i(106727),	-- Stonecrag Shield
+					i(118871),	-- Shield of Shining Fate
+					i(118872),	-- Disc of the Third Moon
+					i(118873),	-- Jerek's Intractable Barrier
+					i(118874),	-- Blackrock Bulwark
 				}),
 				n(-342, { -- Staves
-					i(116486),
-					i(116487),
-					i(116503),
-					i(116504),
-					i(116520),
-					i(116521),
-					i(116537),
-					i(116538),
-					i(116554),
-					i(116555),
-					i(116571),
-					i(116572),
-					i(116588),
-					i(116589),
-					i(116605),
-					i(116606),
-					i(116622),
-					i(116623),
-					i(116639),
-					i(116640),
-					i(118803),
-					i(118804),
-					i(118805),
+					i(116486),	-- Lunarglow Staff
+					i(116487),	-- Lunarglow Staff
+					i(116503),	-- Vinewrapped Staff
+					i(116504),	-- Vinewrapped Staff
+					i(116520),	-- Creeperclaw Staff
+					i(116521),	-- Creeperclaw Staff
+					i(116537),	-- Incised Staff
+					i(116538),	-- Incised Staff
+					i(116554),	-- Auchenai Staff
+					i(116555),	-- Auchenai Staff
+					i(116571),	-- Skettis Staff
+					i(116572),	-- Skettis Staff
+					i(116588),	-- Longclaw Staff
+					i(116589),	-- Longclaw Staff
+					i(116605),	-- Bloodmane Staff
+					i(116606),	-- Bloodmane Staff
+					i(116622),	-- Gorian Staff
+					i(116623),	-- Gorian Staff
+					i(116639),	-- Howling Staff
+					i(116640),	-- Howling Staff
+					i(118803),	-- Kihrawr's Scratching Post
+					i(118804),	-- Starrgo's Walking Stick
+					i(118805),	-- Caniki's Cane of Command
 				}),
 				n(-338, { -- 1H Swords
-					i(116488),
-					i(116505),
-					i(116522),
-					i(116539),
-					i(116556),
-					i(116573),
-					i(116590),
-					i(116607),
-					i(116624),
-					i(116641),
-					i(118790),
-					i(118791),
-					i(118792),
+					i(116488),	-- Lunarglow Sword
+					i(116505),	-- Vinewrapped Sword
+					i(116522),	-- Creeperclaw Sword
+					i(116539),	-- Incised Sword
+					i(116556),	-- Auchenai Sword
+					i(116573),	-- Skettis Sword
+					i(116590),	-- Longclaw Sword
+					i(116607),	-- Bloodmane Sword
+					i(116624),	-- Gorian Sword
+					i(116641),	-- Howling Sword
+					i(118790),	-- Sabre of the Faceless Moon
+					i(118791),	-- Razorcrystal Blade
+					i(118792),	-- Reinforced Tuskblade
 				}),
 				n(-339, { -- 2H Swords
-					i(116489),
-					i(116506),
-					i(116523),
-					i(116540),
-					i(116557),
-					i(116574),
-					i(116591),
-					i(116608),
-					i(116625),
-					i(116642),
-					i(118806),
+					i(116489),	-- Lunarglow Greatsword
+					i(116506),	-- Vinewrapped Greatsword
+					i(116523),	-- Creeperclaw Greatsword
+					i(116540),	-- Incised Greatsword
+					i(116557),	-- Auchenai Greatsword
+					i(116574),	-- Skettis Greatsword
+					i(116591),	-- Longclaw Greatsword
+					i(116608),	-- Bloodmane Greatsword
+					i(116625),	-- Gorian Greatsword
+					i(116642),	-- Howling Greatsword
+					i(118806),	-- Windworn Greatsword
 				}),
 				n(-341, { -- Wands
-					i(116490),
-					i(116507),
-					i(116524),
-					i(116541),
-					i(116558),
-					i(116575),
-					i(116592),
-					i(116609),
-					i(116626),
-					i(116643),
-					i(118793),
-					i(118794),
+					i(116490),	-- Moonwhisper Wand
+					i(116507),	-- Growthshaper Wand
+					i(116524),	-- Evermorn Wand
+					i(116541),	-- Zangarra Wand
+					i(116558),	-- Soulkeeper Wand
+					i(116575),	-- Sunsworn Wand
+					i(116592),	-- Shadowsage Wand
+					i(116609),	-- Ruhkmari Wand
+					i(116626),	-- Ancestral Wand
+					i(116643),	-- Oshu'gun Wand
+					i(118793),	-- Kuug'lar's Stylus of Sorcery
+					i(118794),	-- Felcore Iron Wand
 				}),
 			}),	
 		},
