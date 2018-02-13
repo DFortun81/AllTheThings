@@ -692,7 +692,11 @@ local function CacheFields(group)
 	CacheFieldID(group, "spellID");
 	CacheSubFieldID(group, "itemID", "toyID");
 	CacheFieldID(group, "toyID");
-	return group;
+	if group.groups then
+		for i,subgroup in ipairs(group.groups) do
+			CacheFields(subgroup);
+		end
+	end
 end
 local constructor = function(id, t, typeID)
 	if not t then
@@ -706,7 +710,7 @@ local constructor = function(id, t, typeID)
 	return t;
 end
 local createInstance = function(template, prototype)
-	return CacheFields(setmetatable(template, prototype));
+	return setmetatable(template, prototype);
 end
 local containsAny = function(arr, otherArr)
 	for i, v in ipairs(arr) do
@@ -4859,7 +4863,6 @@ local function RowOnEnter(self)
 				end
 				GameTooltip:AddDoubleLine("  " .. (sourceQuest.text or RETRIEVING_DATA), GetCompletionIcon(sourceQuest.saved));
 			end
-			
 		end
 		
 		-- Show lockout information
@@ -5475,6 +5478,7 @@ function app:GetDataCache()
 		missingData.rows = GetTempDataMember("Missing", {});
 		table.insert(groups, missingData);
 		app.refreshDataForce = true;
+		CacheFields(allData);
 	end
 	if app.refreshDataForce then
 		app.refreshDataForce = nil;
