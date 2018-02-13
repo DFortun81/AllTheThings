@@ -7,703 +7,702 @@ _.WorldDrops =
 		["groups"] = {	-- Classic
 			n(-319, { -- Weapons		
 				n(-334, { -- 1H Axes
-					i(10623),
-					i(12527),
-					i(12990),
-					i(13014),
-					i(13015),
-					i(1454),
+					i(10623),	-- Winter's Bite
+					i(12527),	-- Ribsplitter
+					i(12990),	-- Razor's Edge
+					i(13014),	-- Axe of Rin'ji
+					i(13015),	-- Serathil
+					i(1454),	-- Axe of the Enforcer
 					un(7, i(1459)), -- Shadowhide Scalper
-					i(1481),
-					i(15230),
-					i(15231),
-					i(15232),
-					i(15233),
-					i(15234),
-					i(15235),
-					i(15236),
-					i(15237),
-					i(15238),
-					i(15239),
-					i(15240),
-					i(1602),
-					i(1927),
-					i(19921),
-					i(1994),
-					i(2073),
-					i(2080),
+					i(1481),	-- Grimclaw
+					i(15230),	-- Ridge Cleaver
+					i(15231),	-- Splitting Hatchet
+					i(15232),	-- Hacking Cleaver
+					i(15233),	-- Savage Axe
+					i(15234),	-- Greater Scythe
+					i(15235),	-- Crescent Edge
+					i(15236),	-- Moon Cleaver
+					i(15237),	-- Corpse Harvester
+					i(15238),	-- Warlord's Axe
+					i(15239),	-- Felstone Reaver
+					i(15240),	-- Demon's Claw
+					i(1602),	-- Sickle Axe
+					i(1927),	-- Deadmines Cleaver
+					i(19921),	-- Zulian Hacker
+					i(1994),	-- Ebonclaw Reaver
+					i(2073),	-- Dwarven Hatchet
+					i(2080),	-- Hillborne Axe
 					un(7, i(2265)), -- Stonesplinter Axe
 					un(7, i(2281)), -- Rodentia Flint Axe
-					i(2807),
-					i(2815),
-					i(2878),
-					i(31268),
-					i(4445),
-					i(4561),
-					i(4568),
-					i(4824),
-					i(4825),
-					i(4826),
+					i(2807),	-- Guillotine Axe
+					i(2815),	-- Curve-Bladed Ripper
+					i(2878),	-- Bearded Boneaxe
+					i(31268),	-- Abomination Cleaver
+					i(4445),	-- Flesh Carver
+					i(4561),	-- Scalping Tomahawk
+					i(4568),	-- Grunt Axe
+					i(4824),	-- Blurred Axe
+					i(4825),	-- Callous Axe
+					i(4826),	-- Marauder Axe
 					un(7, i(4949)), -- Orcish Cleaver
-					i(5426),
-					i(7761),
-					i(7786),
-					i(790),
-					i(811),
+					i(5426),	-- Serpent's Kiss
+					i(7761),	-- Steelclaw Reaver
+					i(7786),	-- Headsplitter
+					i(790),		-- Forester's Axe
+					i(811),		-- Axe of the Deep Woods
 					un(7, i(826)), -- Brutish Riverpaw Axe
-					i(863),
-					i(871),
-					i(885),
-					i(934),
-					i(9378),
-					i(9465),
-					i(9485),
+					i(863),		-- Gloom Reaper
+					i(871),		-- Flurry Axe
+					i(885),		-- Black Metal Axe
+					i(934),		-- Stalvan's Reaper
+					i(9378),	-- Shovelphlange's Mining Axe
+					i(9465),	-- Digmaster 5000
+					i(9485),	-- Vibroblade
 				}),
 				n(-335, { -- 2H Axes
-					i(10570),
+					i(10570),	-- Manslayer
 					un(7, i(1220)), -- Lupine Axe
-					i(12249),
-					i(12250),
-					i(1263),
-					i(12975),
-					i(13003),
-					i(13016),
-					i(13017),
-					i(13018),
-					i(1318),
+					i(12249),	-- Merciless Axe
+					i(12250),	-- Midnight Axe
+					i(1263),	-- Brain Hacker
+					i(12975),	-- Prospector Axe
+					i(13003),	-- Lord Alexander's Battle Axe
+					i(13016),	-- Killmaim
+					i(13017),	-- Hellslayer Battle Axe
+					i(13018),	-- Executioner's Cleaver
+					i(1318),	-- Night Reaver
 					un(7, i(1455)), -- Blackrock Champion's Axe
 					un(7, i(1461)), -- Slayer's Battle Axe
-					i(1521),
-					i(15268),
-					i(15269),
-					i(15270),
-					i(15271),
-					i(15272),
-					i(15273),
-					i(1639),
-					i(1640),
-					i(1680),
-					i(2015),
+					i(1521),	-- Lumbering Ogre Axe
+					i(15268),	-- Twin-Bladed Axe
+					i(15269),	-- Massive Battle Axe
+					i(15270),	-- Gigantic War Axe
+					i(15271),	-- Colossal Great Axe
+					i(15272),	-- Razor Axe
+					i(15273),	-- Death Striker
+					i(1639),	-- Grinning Axe
+					i(1640),	-- Monstrous War Axe
+					i(1680),	-- Headchopper
+					i(2015),	-- Black Metal War Axe
 					un(7, i(2175)), -- Shadowhide Battle Axe
 					un(7, i(2203)), -- Brashclaw's Chopper
-					i(2227),
-					i(2291),
-					i(2299),
+					i(2227),	-- Heavy Ogre War Axe
+					i(2291),	-- Kang the Decapitator
+					i(2299),	-- Burning War Axe
 					un(7, i(2823)),	-- Mo'grosh Can Opener
-					i(3195),
-					i(3199),
-					i(3201),
-					i(3210),
-					i(4562),
-					i(5423),
-					i(5749),
-					i(756),
-					i(7753),
-					i(870),
-					i(9383),
-					i(9425),
-					i(9481),
-					i(9486),
+					i(3195),	-- Barbaric Battle Axe
+					i(3199),	-- Battle Slayer
+					i(3201),	-- Barbarian War Axe
+					i(3210),	-- Brutal War Axe
+					i(4562),	-- Severing Axe
+					i(5423),	-- Boahn's Fang
+					i(5749),	-- Scythe Axe
+					i(756),		-- Tunnel Pick
+					i(7753),	-- Bloodspiller
+					i(870),		-- Fiery War Axe
+					i(9383),	-- Obsidian Cleaver
+					i(9425),	-- Pendulum of Doom
+					i(9481),	-- The Minotaur
+					i(9486),	-- Supercharger Battle Axe
 				}),	
 				n(-346, { -- Bows
-					i(3021), -- Ranger Bow
-					i(10567),
-					i(10624),
-					i(11303),
-					i(11304),
-					i(11305),
-					i(11306),
-					i(11307),
-					i(11308),
-					i(13019),
-					i(13020),
-					i(13021),
-					i(13022),
-					i(13023),
-					i(15284),
-					i(15285),
-					i(15286),
-					i(15287),
-					i(15288),
-					i(15289),
-					i(15291),
-					i(15294),
-					i(15295),
-					i(15296),
-					i(2824),
-					i(2825),
-					i(3021),
-					i(3036),
-					i(3037),
-					i(3039),
-					i(4087),
-					i(4474),
-					i(4576),
-					i(8180),
-					i(8183),
-					i(9426),
+					i(10567),	-- Quillshooter
+					i(10624),	-- Stinging Bow
+					i(11303),	-- Fine Shortbow
+					i(11304),	-- Fine Longbow
+					i(11305),	-- Dense Shortbow
+					i(11306),	-- Sturdy Recurve
+					i(11307),	-- Massive Longbow
+					i(11308),	-- Sylvan Shortbow
+					i(13019),	-- Harpyclaw Short Bow
+					i(13020),	-- Skystriker Bow
+					i(13021),	-- Needle Threader
+					i(13022),	-- Gryphonwing Long Bow
+					i(13023),	-- Eaglehorn Long Bow
+					i(15284),	-- Long Battle Bow
+					i(15285),	-- Archer's Longbow
+					i(15286),	-- Long Redwood Bow
+					i(15287),	-- Crusader Bow
+					i(15288),	-- Blasthorn Bow
+					i(15289),	-- Archstrike Bow
+					i(15291),	-- Harpy Needler
+					i(15294),	-- Siege Bow
+					i(15295),	-- Quillfire Bow
+					i(15296),	-- Hawkeye Bow
+					i(2824),	-- Hurricane
+					i(2825),	-- Bow of Searing Arrows
+					i(3021),	-- Ranger Bow
+					i(3036),	-- Heavy Shortbow
+					i(3037),	-- Whipwood Recurve Bow
+					i(3039),	-- Short Ash Bow
+					i(4087),	-- Trueshot Bow
+					i(4474),	-- Ravenwood Bow
+					i(4576),	-- Light Bow
+					i(8180),	-- Hunting Bow
+					i(8183),	-- Precision Bow
+					i(9426),	-- Monolithic Bow
 				}),
 				n(-347, { -- Crossbows
-					i(13037),
-					i(13038),
-					i(13039),
-					i(13040),
-					i(6315),
+					i(13037),	-- Crystalpine Stinger
+					i(13038),	-- Swiftwind
+					i(13039),	-- Skull Splitting Crossbow
+					i(13040),	-- Heartseeking Crossbow
+					i(6315),	-- Steelarrow Crossbow
 				}),			
 				n(-333, { -- Daggers	
-					i(10625),
-					i(115349),
-					i(12247),
-					i(12248),
-					i(12531),
+					i(10625),	-- Stealthblade
+					i(115349),	-- Talon of Vultros
+					i(12247),	-- Broad Bladed Knife
+					i(12248),	-- Daring Dirk
+					i(12531),	-- Searing Needle
 					un(7, i(1287)), -- Giant Tarantula Fang
-					i(14555),
-					i(1465),
-					i(15241),
-					i(15242),
-					i(15243),
-					i(15244),
-					i(15245),
-					i(15246),
-					i(15247),
-					i(1917),
-					i(1935),
-					i(1936),
-					i(2020),
-					i(20720),
-					i(2088),
-					i(2140),
-					i(2163),
-					i(2164),
-					i(21802),
+					i(14555),	-- Alcor's Sunrazor
+					i(1465),	-- Tigerbane
+					i(15241),	-- Battle Knife
+					i(15242),	-- Honed Stiletto
+					i(15243),	-- Deadly Kris
+					i(15244),	-- Razor Blade
+					i(15245),	-- Vorpal Dagger
+					i(15246),	-- Demon Blade
+					i(15247),	-- Bloodstrike Dagger
+					i(1917),	-- Jeweled Dagger
+					i(1935),	-- Assassin's Blade
+					i(1936),	-- Goblin Screwdriver
+					i(2020),	-- Hollowfang Blade
+					i(20720),	-- Dark Whisper Blade
+					i(2088),	-- Long Crawler Limb
+					i(2140),	-- Carving Knife
+					i(2163),	-- Shadowblade
+					i(2164),	-- Gut Ripper
+					i(21802),	-- The Lost Kris of Zedd
 					un(7, i(2235)),	-- Brackclaw
-					i(2236),
+					i(2236),	-- Blackfang
 					un(7, i(2266)),	-- Stonesplinter Dagger
-					i(24222),
-					i(2567),
-					i(2632),
-					i(2819),
-					i(2912),
-					i(3184),
-					i(3187),
+					i(24222),	-- The Shadowfoot Stabber
+					i(2567),	-- Evocator's Blade
+					i(2632),	-- Curved Dagger
+					i(2819),	-- Cross Dagger
+					i(2912),	-- Claw of the Shadowmancer
+					i(3184),	-- Hook Dagger
+					i(3187),	-- Sacrificial Kris
 					un(7, i(3336)),	-- Flesh Piercer (Originally a World Drop)
-					i(3413),
-					i(4088),
-					i(4091),
-					i(4446),
-					i(4449),
+					i(3413),	-- Doomspike
+					i(4088),	-- Dreadblade
+					i(4091),	-- Widowmaker
+					i(4446),	-- Blackvenom Blade
+					i(4449),	-- Naraxis' Fang
 					un(7, i(4454)), -- Talon of Vultros
-					i(4571),
-					i(5112),
-					i(5267),
-					i(5616),
-					i(5742),
-					i(5752),
-					i(5756),
-					i(6331),
-					i(6333),
-					i(6660),
-					i(776),
-					i(8006),
+					i(4571),	-- War Knife
+					i(5112),	-- Ritual Blade
+					i(5267),	-- Scarlet Kris
+					i(5616),	-- Gutwrencher
+					i(5742),	-- Gemstone Dagger
+					i(5752),	-- Wyvern Tailspike
+					i(5756),	-- Sliverblade
+					i(6331),	-- Howling Blade
+					i(6333),	-- Spikelash Dagger
+					i(6660),	-- Julie's Dagger
+					i(776),		-- Vendetta
+					i(8006),	-- The Ziggler
 					un(7, i(816)), -- Small Hand Blade
-					i(820),
-					i(899),
-					i(9384),
+					i(820),		-- Slicer Blade
+					i(899),		-- Venom Web Fang
+					i(9384),	-- Stonevault Shiv
 				}),
 				n(-348, { -- Fist Weapons	
-					i(11603),
+					i(11603),	-- Vilerend Slicer
 				}),
 				n(-345, { -- Guns
-					i(13136),
-					i(13137),
-					i(13138),
-					i(13139),
-					i(13146),
-					i(15322),
-					i(15323),
-					i(15324),
-					i(15325),
-					i(20722),
-					i(2098),
-					i(2099),
-					i(2100),
-					i(21800),
-					i(3040),
-					i(3041),
-					i(3042),
-					i(3430),
-					i(4089),
-					i(4577),
-					i(7729),
-					i(8188),
-					i(9422),
-					i(9487),
+					i(13136),	-- Lil Timmy's Peashooter
+					i(13137),	-- Ironweaver
+					i(13138),	-- The Silencer
+					i(13139),	-- Guttbuster
+					i(13146),	-- Shell Launcher Shotgun
+					i(15322),	-- Smoothbore Gun
+					i(15323),	-- Percussion Shotgun
+					i(15324),	-- Burnside Rifle
+					i(15325),	-- Sharpshooter Harquebus
+					i(20722),	-- Crystal Slugthrower
+					i(2098),	-- Double-Barreled Shotgun
+					i(2099),	-- Dwarven Hand Cannon
+					i(2100),	-- Precisely Calibrated Boomstick
+					i(21800),	-- Silithid Husked Launcher
+					i(3040),	-- Hunter's Muzzle Loader
+					i(3041),	-- "Mage-Eye" Blunderbuss
+					i(3042),	-- BKP "Sparrow" Smallbore
+					i(3430),	-- Sniper Rifle
+					i(4089),	-- Ricochet Blunderbuss
+					i(4577),	-- Compact Shotgun
+					i(7729),	-- Chesterfall Musket
+					i(8188),	-- Explosive Shotgun
+					i(9422),	-- Shadowforge Bushmaster
+					i(9487),	-- Hi-Tech Supergun
 				}),			
 				n(-331, { -- Held in Off-hand
-					i(13029),
-					i(13030),
-					i(13031),
-					i(15912),
-					i(15918),
-					i(15925),
-					i(15926),
-					i(15927),
-					i(15928),
-					i(15929),
-					i(15930),
-					i(15931),
-					i(15932),
-					i(15933),
-					i(15934),
-					i(15935),
-					i(15936),
-					i(15937),
-					i(15938),
-					i(15939),
-					i(15940),
-					i(15941),
-					i(15942),
-					i(15944),
-					i(15945),
-					i(15946),
-					i(15947),
-					i(15962),
-					i(15963),
-					i(15964),
-					i(15965),
-					i(15966),
-					i(15967),
-					i(15968),
-					i(15969),
-					i(15970),
-					i(15971),
-					i(15972),
-					i(15973),
-					i(15974),
-					i(15975),
-					i(15976),
-					i(15977),
-					i(15978),
-					i(15979),
-					i(15980),
-					i(15981),
-					i(15982),
-					i(15983),
-					i(15984),
-					i(15985),
-					i(15986),
-					i(15987),
-					i(15988),
-					i(15989),
-					i(18672),
-					i(1992),
-					i(20694),
-					i(25091),
-					i(2565),
-					i(2879),
-					i(4696),
-					i(4836),
-					i(4837),
-					i(4838),
-					i(5028),
-					i(5183),
-					i(7554),
-					i(7555),
-					i(7556),
-					i(7557),
-					i(7558),
-					i(7559),
-					i(7608),
-					i(7609),
-					i(7610),
-					i(7611),
-					i(9393),
-					i(9769),
-					i(9800),
-					i(9882),
-					i(9914),
-					i(9944),
+					i(13029),	-- Umbral Crystal
+					i(13030),	-- Basilisk Bone
+					i(13031),	-- Orb of Mistmantle
+					i(15912),	-- Buccaneer's Orb
+					i(15918),	-- Conjurer's Sphere
+					i(15925),	-- Journeyman's Stave
+					i(15926),	-- Spellbinder Orb
+					i(15927),	-- Bright Sphere
+					i(15928),	-- Silver-Thread Rod
+					i(15929),	-- Nightsky Orb
+					i(15930),	-- Imperial Red Scepter
+					i(15931),	-- Arcane Star
+					i(15932),	-- Disciple's Stein
+					i(15933),	-- Simple Branch
+					i(15934),	-- Sage's Stave
+					i(15935),	-- Durable Rod
+					i(15936),	-- Duskwoven Branch
+					i(15937),	-- Hibernal Sphere
+					i(15938),	-- Mystical Orb
+					i(15939),	-- Councillor's Scepter
+					i(15940),	-- Elegant Scepter
+					i(15941),	-- High Councillor's Scepter
+					i(15942),	-- Master's Rod
+					i(15944),	-- Ancestral Orb
+					i(15945),	-- Runic Stave
+					i(15946),	-- Mystic's Sphere
+					i(15947),	-- Sanguine Star
+					i(15962),	-- Satyr's Rod
+					i(15963),	-- Stonecloth Branch
+					i(15964),	-- Silksand Star
+					i(15965),	-- Windchaser Orb
+					i(15966),	-- Venomshroud Orb
+					i(15967),	-- Highborne Star
+					i(15968),	-- Elunarian Sphere
+					i(15969),	-- Beaded Orb
+					i(15970),	-- Native Branch
+					i(15971),	-- Aboriginal Rod
+					i(15972),	-- Ritual Stein
+					i(15973),	-- Watcher's Star
+					i(15974),	-- Pagan Rod
+					i(15975),	-- Raincaller Scepter
+					i(15976),	-- Thistlefur Branch
+					i(15977),	-- Vital Orb
+					i(15978),	-- Geomancer's Rod
+					i(15979),	-- Flamecloth Stave
+					i(15980),	-- Darkmist Orb
+					i(15981),	-- Lunar Sphere
+					i(15982),	-- Bloodwoven Rod
+					i(15983),	-- Gaea's Scepter
+					i(15984),	-- Opulent Scepter
+					i(15985),	-- Arachnidian Branch
+					i(15986),	-- Bonecaster's Star
+					i(15987),	-- Astral Orb
+					i(15988),	-- Resplendent Orb
+					i(15989),	-- Eternal Rod
+					i(18672),	-- Elemental Ember
+					i(1992),	-- Swampchill Fetish
+					i(20694),	-- Glowing Black Orb
+					i(25091),	-- Mistyreed Torch
+					i(2565),	-- Rod of Molten Fire
+					i(2879),	-- Antipodean Rod
+					i(4696),	-- Lapidis Tankard of Tidesippe
+					i(4836),	-- Fireproof Orb
+					i(4837),	-- Strength of Will
+					i(4838),	-- Orb of Power
+					i(5028),	-- Lord Sakrasis' Scepter
+					i(5183),	-- Pulsating Hydra Heart
+					i(7554),	-- Willow Branch
+					i(7555),	-- Regal Star
+					i(7556),	-- Twilight Orb
+					i(7557),	-- Gossamer Rod
+					i(7558),	-- Shimmering Stave
+					i(7559),	-- Runic Cane
+					i(7608),	-- Seer's Fine Stein
+					i(7609),	-- Elder's Amber Stave
+					i(7610),	-- Aurora Sphere
+					i(7611),	-- Mistscape Stave
+					i(9393),	-- Beacon of Hope
+					i(9769),	-- Greenweave Branch
+					i(9800),	-- Ivy Orb
+					i(9882),	-- Sorcerer Sphere
+					i(9914),	-- Royal Scepter
+					i(9944),	-- Abjurer's Crystal
 				}),
 				n(-336, { -- 1H Maces
-					i(10571),
-					i(1207),
+					i(10571),	-- Ebony Boneclub
+					i(1207),	-- Murphstar
 					un(7, i(1214)), -- Gnoll Punisher
 					un(7, i(1296)), -- Blackrock Mace
-					i(13006),
-					i(13024),
-					i(13025),
-					i(13026),
-					i(13027),
-					i(13028),
-					i(13048),
+					i(13006),	-- Mass of McGowan
+					i(13024),	-- Beazel's Basher
+					i(13025),	-- Deadwood Sledge
+					i(13026),	-- Heaven's Light
+					i(13027),	-- Bonesnapper
+					i(13028),	-- Bludstone Hammer
+					i(13048),	-- Looming Gavel
 					un(7, i(1394)), -- Driftwood Club
 					un(7, i(1440)), -- Gnoll Skull Basher
 					un(7, i(1457)), -- Shadowhide Mace
-					i(1483),
-					i(15222),
-					i(15223),
-					i(15224),
-					i(15225),
-					i(15226),
-					i(15227),
-					i(15228),
-					i(15229),
-					i(1608),
-					i(17055),
-					i(1721),
-					i(18671),
-					i(1926),
+					i(1483),	-- Face Smasher
+					i(15222),	-- Barbed Club
+					i(15223),	-- Jagged Star
+					i(15224),	-- Battlesmasher
+					i(15225),	-- Sequoia Hammer
+					i(15226),	-- Giant Club
+					i(15227),	-- Diamond-Tip Bludgeon
+					i(15228),	-- Smashing Star
+					i(15229),	-- Blesswind Hammer
+					i(1608),	-- Skullcrusher Mace
+					i(17055),	-- Changuk Smasher
+					i(1721),	-- Viking Warhammer
+					i(18671),	-- Baron Charr's Sceptre
+					i(1926),	-- Weighted Sap
 					un(7, i(1938)),	-- Block Mallet
-					i(1958), -- cannot be transmogged petrified shinbone
-					i(19808), -- cannot be transmogged rockhide strongfish
-					i(2075),
-					i(2079),
-					i(2194),
-					i(2243),
-					i(2256),
+					i(1958),	-- cannot be transmogged Petrified Shinbone
+					i(19808),	-- cannot be transmogged Rockhide Strongfish
+					i(2075),	-- Heavy Mace
+					i(2079),	-- Sergeant's Warhammer
+					i(2194),	-- Diamond Hammer
+					i(2243),	-- Hand of Edward the Odd
+					i(2256),	-- Skeletal Club
 					un(7, i(2267)), -- Stonesplinter Mace
 					un(7, i(2821)), -- Mo'grosh Masher
-					i(31269),
-					i(3223),
-					i(3414),
-					i(4090), -- cannot be transmogged Mug O' Hurt
-					i(4303),
-					i(4439),
-					i(4569),
-					i(5256),
-					i(6360), -- cannot be transmogged steelscale crushfish
-					i(68194), -- cannot be transmogged Oggleflint's Inspirer
-					i(7736),
-					i(7752),
-					i(789),
-					i(810),
-					i(8194),
-					i(827),
-					i(865),
-					i(868),
-					i(920),
-					i(9359),
-					i(936),
-					i(9386),
-					i(9427),
-					i(9488),
+					i(31269),	-- Ghoul Hammer
+					i(3223),	-- Frostmane Scepter
+					i(3414),	-- Crested Scepter
+					i(4090),	-- cannot be transmogged Mug O' Hurt
+					i(4303),	-- Cranial Thumper
+					i(4439),	-- Bruiser Club
+					i(4569),	-- Staunch Hammer
+					i(5256),	-- Kovork's Rattle
+					i(6360),	-- cannot be transmogged Steelscale Crushfish
+					i(68194),	-- cannot be transmogged Oggleflint's Inspirer
+					i(7736),	-- Fight Club
+					i(7752),	-- Dreamslayer
+					i(789),		-- Stout Battlehammer
+					i(810),		-- Hammer of the Northern Wind
+					i(8194),	-- Goblin Nutcracker
+					i(827),		-- Wicked Blackjack
+					i(865),		-- Leaden Mace
+					i(868),		-- Ardent Custodian
+					i(920),		-- Wicked Spiked Mace
+					i(9359),	-- Wirt's Third Leg
+					i(936),		-- Midnight Mace
+					i(9386),	-- Excavator's Brand
+					i(9427),	-- Stonevault Bonebreaker
+					i(9488),	-- Oscillating Power Hammer
 				}),
 				n(-337, { -- 2H Maces
-					i(10626),
+					i(10626),	-- Ragehammer
 					un(7, i(1218)), -- Heavy Gnoll War Club
-					i(12528),
-					i(12983),
-					i(13045),
-					i(13046),
-					i(13047),
+					i(12528),	-- The Judge's Gavel
+					i(12983),	-- Rakzur Club
+					i(13045),	-- Viscous Hammer
+					i(13046),	-- Blanchard's Stout
+					i(13047),	-- Twig of the World Tree
 					un(7, i(1458)), -- Shadowhide Maul
-					i(1523),
-					i(15259),
-					i(15260),
-					i(15261),
-					i(15262),
-					i(15263),
-					i(15264),
-					i(15265),
-					i(15266),
-					i(15267),
-					i(1679),
-					i(1722),
-					i(1976),
-					i(1990),
-					i(1991),
+					i(1523),	-- Huge Stone Club
+					i(15259),	-- Hefty Battlehammer
+					i(15260),	-- Stone Hammer
+					i(15261),	-- Sequoia Branch
+					i(15262),	-- Greater Maul
+					i(15263),	-- Royal Mallet
+					i(15264),	-- Backbreaker
+					i(15265),	-- Painbringer
+					i(15266),	-- Fierce Mauler
+					i(15267),	-- Brutehammer
+					i(1679),	-- Korg Bat
+					i(1722),	-- Thornstone Sledgehammer
+					i(1976),	-- Slaghammer
+					i(1990),	-- Ballast Maul
+					i(1991),	-- Goblin Power Shovel
 					un(7, i(2058)),	-- Kazon's Maul
-					i(20696),
-					i(2915),
-					i(3193),
-					i(3194),
-					i(3198),
-					i(3203),
-					i(3208),
+					i(20696),	-- Crystal Spiked Maul
+					i(2915),	-- Taran Icebreaker
+					i(3193),	-- Oak Mallet
+					i(3194),	-- Black Malice
+					i(3198),	-- Battering Hammer
+					i(3203),	-- Dense Triangle Mace
+					i(3208),	-- Conk Hammer
 					un(7, i(3571)),	-- Trogg Beater
-					i(4564),
-					i(4570),
-					i(4777),
-					i(4778),
+					i(4564),	-- Spiked Club
+					i(4570),	-- Birchwood Maul
+					i(4777),	-- Ironwood Maul
+					i(4778),	-- Heavy Spiked Mace
 					un(7, i(6205)), -- Burrowing Shovel
-					i(6327),
-					i(7730),
-					i(9391),
-					i(9423),
+					i(6327),	-- The Pacifier
+					i(7730),	-- Cobalt Crusher
+					i(9391),	-- The Shoveler
+					i(9423),	-- The Jackhammer
 				}),
 				n(-343, { -- Polearms
-					i(12989),
-					i(13054),
-					i(13055),
-					i(13056),
-					i(13057),
-					i(13058),
-					i(13059),
-					i(13060),
-					i(1522),
-					i(1726),
+					i(12989),	-- Gargoyle's Bite
+					i(13054),	-- Grim Reaper
+					i(13055),	-- Bonechewer
+					i(13056),	-- Frenzied Striker
+					i(13057),	-- Bloodpike
+					i(13058),	-- Khoo's Point
+					i(13059),	-- Stoneraven
+					i(13060),	-- The Needler
+					i(1522),	-- Headhunting Spear
+					i(1726),	-- Poison-Tipped Bone Spear
 					un(7, i(7758)),	-- Ruthless Shiv (Old World Drop)
-					i(9480),
+					i(9480),	-- Eyegouger
 				}),			
 				n(-332, { -- Shield
-					i(10078),
-					i(10093),
-					i(10158),
-					i(10195),
-					i(10204),
-					i(10271),
-					i(10362),
-					i(10363),
-					i(10364),
-					i(10365),
-					i(10366),
-					i(10367),
-					i(1168),
-					i(1169),
-					i(1203),
-					i(1204),
-					i(12997),
-					i(13079),
-					i(13081),
-					i(13082),
-					i(13083),
-					i(14607),
-					i(14608),
-					i(14729),
-					i(14777),
-					i(14780),
-					i(14790),
-					i(14800),
-					i(14812),
-					i(14825),
-					i(14842),
-					i(14852),
-					i(14902),
-					i(14912),
-					i(14916),
-					i(14930),
-					i(14947),
-					i(14954),
-					i(14964),
-					i(14973),
-					i(14982),
-					i(15014),
-					i(15113),
-					i(15123),
-					i(15133),
-					i(15145),
-					i(15298),
-					i(15307),
-					i(15332),
-					i(15342),
-					i(15352),
-					i(15367),
-					i(15486),
-					i(15494),
-					i(15504),
-					i(15512),
-					i(15522),
-					i(15530),
-					i(15543),
-					i(15552),
-					i(15563),
-					i(15569),
-					i(15584),
-					i(15592),
-					i(15604),
-					i(15618),
-					i(15621),
-					i(15633),
-					i(15648),
-					i(15657),
-					i(15667),
-					i(15675),
-					i(15687),
-					i(15887),
-					i(15890),
-					i(15891),
-					i(15892),
-					i(15893),
-					i(15894),
-					i(15943),
-					i(15990),
-					i(15991),
-					i(18673),
-					i(1979),
-					i(2021),
-					i(2040),
-					i(25073),
-					i(25075),
-					i(3651),
-					i(3652),
-					i(3653),
-					i(3654),
-					i(3655),
-					i(3656),
-					i(4064),
-					i(4065),
-					i(4066),
-					i(4067),
-					i(4068),
-					i(4069),
-					i(4070),
+					i(10078),	-- Lord's Crest
+					i(10093),	-- Revenant Deflector
+					i(10158),	-- Mercurial Guard
+					i(10195),	-- Crusader's Shield
+					i(10204),	-- Heavy Lamellar Shield
+					i(10271),	-- Masterwork Shield
+					i(10362),	-- Ornate Shield
+					i(10363),	-- Engraved Wall
+					i(10364),	-- Templar Shield
+					i(10365),	-- Emerald Shield
+					i(10366),	-- Demon Guard
+					i(10367),	-- Hyperion Shield
+					i(1168),	-- Skullflame Shield
+					i(1169),	-- Blackskull Shield
+					i(1203),	-- Aegis of Stormwind
+					i(1204),	-- The Green Tower
+					i(12997),	-- Redbeard Crest
+					i(13079),	-- Shield of Thorsen
+					i(13081),	-- Skullance Shield
+					i(13082),	-- Mountainside Buckler
+					i(13083),	-- Garrett Family Crest
+					i(14607),	-- Hawkeye's Buckler
+					i(14608),	-- Dokebi Buckler
+					i(14729),	-- War Paint Shield
+					i(14777),	-- Ravager's Shield
+					i(14780),	-- Khan's Buckler
+					i(14790),	-- Protector Buckler
+					i(14800),	-- Bloodlust Buckler
+					i(14812),	-- Warstrike Buckler
+					i(14825),	-- Symbolic Crest
+					i(14842),	-- Tyrant's Shield
+					i(14852),	-- Sunscale Shield
+					i(14902),	-- Saltstone Shield
+					i(14912),	-- Brutish Shield
+					i(14916),	-- Jade Deflector
+					i(14930),	-- Lofty Shield
+					i(14947),	-- Warbringer's Shield
+					i(14954),	-- Bloodforged Shield
+					i(14964),	-- High Chief's Shield
+					i(14973),	-- Glorious Shield
+					i(14982),	-- Exalted Shield
+					i(15014),	-- Lupine Buckler
+					i(15113),	-- Rigid Buckler
+					i(15123),	-- Robust Buckler
+					i(15133),	-- Cutthroat's Buckler
+					i(15145),	-- Ghostwalker Buckler
+					i(15298),	-- Grizzly Buckler
+					i(15307),	-- Feral Buckler
+					i(15332),	-- Wrangler's Buckler
+					i(15342),	-- Pathfinder Guard
+					i(15352),	-- Headhunter's Buckler
+					i(15367),	-- Trickster's Protector
+					i(15486),	-- War Torn Shield
+					i(15494),	-- Bloodspattered Shield
+					i(15504),	-- Outrunner's Shield
+					i(15512),	-- Grunt's Shield
+					i(15522),	-- Spiked Chain Shield
+					i(15530),	-- Sentry's Shield
+					i(15543),	-- Wicked Chain Shield
+					i(15552),	-- Thick Scale Shield
+					i(15563),	-- Pillager's Shield
+					i(15569),	-- Marauder's Crest
+					i(15584),	-- Sparkleshell Shield
+					i(15592),	-- Steadfast Buckler
+					i(15604),	-- Ancient Defender
+					i(15618),	-- Bonelink Wall Shield
+					i(15621),	-- Gryphon Mail Buckler
+					i(15633),	-- Formidable Crest
+					i(15648),	-- Ironhide Shield
+					i(15657),	-- Merciless Shield
+					i(15667),	-- Impenetrable Wall
+					i(15675),	-- Magnificent Guard
+					i(15687),	-- Triumphant Shield
+					i(15887),	-- Heroic Guard
+					i(15890),	-- Vanguard Shield
+					i(15891),	-- Hulking Shield
+					i(15892),	-- Slayer's Shield
+					i(15893),	-- Prospector's Buckler
+					i(15894),	-- Bristlebark Buckler
+					i(15943),	-- Imbued Shield
+					i(15990),	-- Enduring Shield
+					i(15991),	-- Warleader's Shield
+					i(18673),	-- Avalanchion's Stony Hide
+					i(1979),	-- Wall of the Dead
+					i(2021),	-- Green Carapace Shield
+					i(2040),	-- Troll Protector
+					i(25073),	-- Emperor Shield
+					i(25075),	-- Hardened Steel Shield
+					i(3651),	-- Veteran Shield
+					i(3652),	-- Hunting Buckler
+					i(3653),	-- Ceremonial Buckler
+					i(3654),	-- Brackwater Shield
+					i(3655),	-- Burnished Shield
+					i(3656),	-- Lambent Scale Shield
+					i(4064),	-- Emblazoned Buckler
+					i(4065),	-- Combat Shield
+					i(4066),	-- Insignia Buckler
+					i(4067),	-- Glyphed Buckler
+					i(4068),	-- Chief Brigadier Shield
+					i(4069),	-- Blackforge Buckler
+					i(4070),	-- Jouster's Crest
 					un(7, i(4290)), -- Dust Bowl
-					i(4444),
-					i(4477),
-					i(4820),
-					i(4821),
-					i(4822),
-					i(6380),
-					i(6383),
-					i(6400),
-					i(6559),
-					i(6560),
-					i(6571),
-					i(6572),
-					i(6598),
-					i(6599),
-					i(7108),
-					i(7330),
-					i(7331),
-					i(7463),
-					i(7465),
-					i(7495),
-					i(7496),
-					i(7536),
-					i(7537),
-					i(7787),
-					i(8134),
-					i(8135),
-					i(8275),
-					i(8282),
-					i(8313),
-					i(8320),
-					i(9753),
-					i(9764),
-					i(9778),
-					i(9790),
-					i(9804),
-					i(9816),
-					i(9830),
-					i(9843),
-					i(9858),
-					i(9873),
-					i(9899),
-					i(9918),
-					i(9935),
-					i(9958),
-					i(9974),
+					i(4444),	-- Black Husk Shield
+					i(4477),	-- Nefarious Buckler
+					i(4820),	-- Guardian Buckler
+					i(4821),	-- Bear Buckler
+					i(4822),	-- Owl's Disk
+					i(6380),	-- Inscribed Buckler
+					i(6383),	-- Forest Buckler
+					i(6400),	-- Glimmering Shield
+					i(6559),	-- Bard's Buckler
+					i(6560),	-- Soldier's Shield
+					i(6571),	-- Scouting Buckler
+					i(6572),	-- Defender Shield
+					i(6598),	-- Dervish Buckler
+					i(6599),	-- Battleforge Shield
+					i(7108),	-- Infantry Shield
+					i(7330),	-- Infiltrator Buckler
+					i(7331),	-- Phalanx Shield
+					i(7463),	-- Sentinel Buckler
+					i(7465),	-- Knight's Crest
+					i(7495),	-- Captain's Buckler
+					i(7496),	-- Field Plate Shield
+					i(7536),	-- Champion's Wall Shield
+					i(7537),	-- Gothic Shield
+					i(7787),	-- Resplendent Guardian
+					i(8134),	-- Myrmidon's Defender
+					i(8135),	-- Chromite Shield
+					i(8275),	-- Ebonhold Buckler
+					i(8282),	-- Valorous Shield
+					i(8313),	-- Hero's Buckler
+					i(8320),	-- Alabaster Shield
+					i(9753),	-- Gypsy Buckler
+					i(9764),	-- Cadet Shield
+					i(9778),	-- Bandit Buckler
+					i(9790),	-- Raider's Shield
+					i(9804),	-- Superior Buckler
+					i(9816),	-- Fortified Shield
+					i(9830),	-- Scaled Shield
+					i(9843),	-- Banded Shield
+					i(9858),	-- Archer's Buckler
+					i(9873),	-- Renegade Shield
+					i(9899),	-- Jazeraint Shield
+					i(9918),	-- Brigade Defender
+					i(9935),	-- Embossed Plate Shield
+					i(9958),	-- Warmonger's Buckler
+					i(9974),	-- Overlord's Shield
 				}),
 				n(-342, { -- Staves
-					i(10627),
-					i(12251),
-					i(12252),
-					i(12532),
+					i(10627),	-- Bludgeon of the Grinning Dog
+					i(12251),	-- Big Stick
+					i(12252),	-- Staff of Protection
+					i(12532),	-- Spire of the Stoneshaper
 					un(7, i(1300)), -- Lesser Staff of the Spire
-					i(13000),
-					i(1391),
-					i(1405),
-					i(1484),
-					i(15274),
-					i(15275),
-					i(15276),
-					i(15278),
-					i(1539),
-					i(1607),
-					i(1613),
-					i(1664),
-					i(1720),
+					i(13000),	-- Staff of Hale Magefire
+					i(1391),	-- Riverpaw Mystic Staff
+					i(1405),	-- Foamspittle Staff
+					i(1484),	-- Witching Stave
+					i(15274),	-- Diviner Long Staff
+					i(15275),	-- Thaumaturgist Staff
+					i(15276),	-- Magus Long Staff
+					i(15278),	-- Solstice Staff
+					i(1539),	-- Gnarled Hermit's Staff
+					i(1607),	-- Soulkeeper
+					i(1613),	-- Spiritchaser Staff
+					i(1664),	-- Spellforce Rod
+					i(1720),	-- Tanglewood Staff
 					un(7, i(1928)), -- Defias Mage Staff
 					un(7, i(1933)), -- Staff of Conjuring
-					i(1998),
-					i(2013),
-					i(20258),
-					i(2072),
-					i(2077),
-					i(2226),
-					i(2271),
-					i(2549),
-					i(3185),
-					i(3227),
-					i(3415),
+					i(1998),	-- Bloodscalp Channeling Staff
+					i(2013),	-- Cryptbone Staff
+					i(20258),	-- Zulian Ceremonial Staff
+					i(2072),	-- Dwarven Magestaff
+					i(2077),	-- Magician Staff
+					i(2226),	-- Ogremage Staff
+					i(2271),	-- Staff of the Blessed Seer
+					i(2549),	-- Staff of the Shade
+					i(3185),	-- Acrobatic Staff
+					i(3227),	-- Nightbane Staff
+					i(3415),	-- Staff of the Friar
 					un(7, i(3902)), -- Staff of Nobles
-					i(4437),
-					i(4566),
-					i(4575),
-					i(7757),
-					i(791),
-					i(812),
-					i(866),
-					i(873),
-					i(880),
-					i(890),
-					i(937),
-					i(943),
-					i(944),
-					i(9482),
+					i(4437),	-- Channeler's Staff
+					i(4566),	-- Sturdy Quarterstaff
+					i(4575),	-- Medicine Staff
+					i(7757),	-- Windweaver Staff
+					i(791),		-- Gnarled Ash Staff
+					i(812),		-- Glowing Brightwood Staff
+					i(866),		-- Monk's Staff
+					i(873),		-- Staff of Jordan
+					i(880),		-- Staff of Horrors
+					i(890),		-- Twisted Chanter's Staff
+					i(937),		-- Black Duskwood Staff
+					i(943),		-- Warden Staff
+					i(944),		-- Elemental Mage Staff
+					i(9482),	-- Witch Doctor's Cane
 				}),
 				n(-338, { -- 1H Swords
 					un(7, i(1219)), -- Redridge Machete
-					i(12535),
-					i(1265),
-					i(12974),
-					i(12976),
-					i(13032),
-					i(13033),
-					i(13034),
-					i(13035),
-					i(13036),
+					i(12535),	-- Doomforged Straightedge
+					i(1265),	-- Scorpion Sting
+					i(12974),	-- The Black Knight
+					i(12976),	-- Ironpatch Blade
+					i(13032),	-- Sword of Corruption
+					i(13033),	-- Zealot Blade
+					i(13034),	-- Speedsteel Rapier
+					i(13035),	-- Serpent Slicer
+					i(13036),	-- Assassination Blade
 					un(7, i(1469)), -- Scimitar of Atun
-					i(1482),
-					i(1493),
-					i(15210),
-					i(15211),
-					i(15212),
-					i(15213),
-					i(15214),
-					i(15215),
-					i(15216),
-					i(15217),
-					i(15218),
-					i(15219),
-					i(15220),
-					i(15221),
-					i(17054),
-					i(1727),
-					i(1728),
+					i(1482),	-- Shadowfang
+					i(1493),	-- Heavy Marauder Scimitar
+					i(15210),	-- Raider Shortsword
+					i(15211),	-- Militant Shortsword
+					i(15212),	-- Fighter Broadsword
+					i(15213),	-- Mercenary Blade
+					i(15214),	-- Nobles Brand
+					i(15215),	-- Furious Falchion
+					i(15216),	-- Rune Sword
+					i(15217),	-- Widow Blade
+					i(15218),	-- Crystal Sword
+					i(15219),	-- Dimensional Blade
+					i(15220),	-- Battlefell Sabre
+					i(15221),	-- Holy War Sword
+					i(17054),	-- Joonho's Mercy
+					i(1727),	-- Sword of Decay
+					i(1728),	-- Teebu's Blazing Longsword
 					un(7, i(1925)), -- Defias Rapier
-					i(1951),
-					i(2011),
-					i(2018),
-					i(2035),
-					i(2046),
-					i(20698),
-					i(2078),
-					i(2244),
-					i(29583),
-					i(3186),
-					i(3740),
-					i(4765),
-					i(4766),
-					i(5744),
-					i(6622),
-					i(727),
-					i(753),
-					i(754),
-					i(809),
-					i(8190),
-					i(8196),
-					i(8223),
-					i(8224),
-					i(8225),
-					i(8226),
-					i(864),
-					i(869),
-					i(886),
-					i(935),
-					i(9392),
-					i(9424),
-					i(9511),
+					i(1951),	-- Blackwater Cutlass
+					i(2011),	-- Twisted Sabre
+					i(2018),	-- Skeletal Longsword
+					i(2035),	-- Sword of the Night Sky
+					i(2046),	-- Bluegill Kukri
+					i(20698),	-- Elemental Attuned Blade
+					i(2078),	-- Northern Shortsword
+					i(2244),	-- Krol Blade
+					i(29583),	-- Sinister Scimitar
+					i(3186),	-- Viking Sword
+					i(3740),	-- Decapitating Sword
+					i(4765),	-- Enamelled Broadsword
+					i(4766),	-- Feral Blade
+					i(5744),	-- Pale Skinner
+					i(6622),	-- Sword of Zeal
+					i(727),		-- Notched Shortsword
+					i(753),		-- Dragonmaw Shortsword
+					i(754),		-- Shortsword of Vengeance
+					i(809),		-- Bloodrazor
+					i(8190),	-- Hanzo Sword
+					i(8196),	-- Ebon Scimitar
+					i(8223),	-- Blade of the Basilisk
+					i(8224),	-- Silithid Ripper
+					i(8225),	-- Tainted Pierce
+					i(8226),	-- The Butcher
+					i(864),		-- Knightly Longsword
+					i(869),		-- Dazzling Longsword
+					i(886),		-- Black Metal Shortsword
+					i(935),		-- Night Watch Shortsword
+					i(9392),	-- Annealed Blade
+					i(9424),	-- Ginn-Su Sword
+					i(9511),	-- Bloodletter Scalpel
 					i(9719, { -- Broken Blade of Heroes
 						["groups"] = {
 							i(9718),  -- Reforged Blade of Heroes
@@ -712,88 +711,88 @@ _.WorldDrops =
 					}), 
 				}),
 				n(-339, { -- 2H Swords
-					i(10573),
-					i(10628),
-					i(12992),
-					i(13041),
-					i(13042),
-					i(13043),
-					i(13044),
-					i(13049),
-					i(13051),
-					i(13052),
-					i(13053),
+					i(10573),	-- Boneslasher
+					i(10628),	-- Deathblow
+					i(12992),	-- Searing Blade
+					i(13041),	-- Guardian Blade
+					i(13042),	-- Sword of the Magistrate
+					i(13043),	-- Blade of the Titans
+					i(13044),	-- Demonslayer
+					i(13049),	-- Deanship Claymore
+					i(13051),	-- Witchfury
+					i(13052),	-- Warmonger
+					i(13053),	-- Doombringer
 					un(7, i(1387)), -- Ghoulfang
 					un(7, i(1460)), -- Shadowhide Two-Handed Sword
-					i(15248),
-					i(15249),
-					i(15250),
-					i(15251),
-					i(15252),
-					i(15253),
-					i(15254),
-					i(15255),
-					i(15256),
-					i(15257),
-					i(15258),
-					i(16039),
-					i(1604),
-					i(1625),
-					i(1975),
-					i(1982),
-					i(1986),
-					i(2014),
-					i(2084),
+					i(15248),	-- Gleaming Claymore
+					i(15249),	-- Polished Zweihander
+					i(15250),	-- Glimmering Flamberge
+					i(15251),	-- Headstriker Sword
+					i(15252),	-- Tusker Sword
+					i(15253),	-- Beheading Blade
+					i(15254),	-- Dark Espadon
+					i(15255),	-- Gallant Flamberge
+					i(15256),	-- Massacre Sword
+					i(15257),	-- Shin Blade
+					i(15258),	-- Divine Warblade
+					i(16039),	-- Ta'Kierthan Songblade
+					i(1604),	-- Chromatic Sword
+					i(1625),	-- Exquisite Flamberge
+					i(1975),	-- Pysan's Old Greatsword
+					i(1982),	-- Nightblade
+					i(1986),	-- Gutrender
+					i(2014),	-- Black Metal Greatsword
+					i(2084),	-- Darksteel Bastard Sword
 					un(7, i(2204)), -- Brashclaw's Skewer
-					i(2205),
-					i(2801),
+					i(2205),	-- Duskbringer
+					i(2801),	-- Blade of Hanna
 					un(7, i(2822)),	-- Mo'grosh Toothpick
-					i(2877),
+					i(2877),	-- Combatant Claymore
 					un(7, i(3188)), -- Coral Claymore
-					i(3192),
-					i(3196),
-					i(3197),
-					i(3206),
-					i(3417),
-					i(4567),
-					i(4817),
-					i(4818),
-					i(5182),
-					i(647),
-					i(8178),
-					i(8199),
-					i(9385),
-					i(9490),
+					i(3192),	-- Short Bastard Sword
+					i(3196),	-- Edged Bastard Sword
+					i(3197),	-- Stonecutter Claymore
+					i(3206),	-- Cavalier Two-Hander
+					i(3417),	-- Onyx Claymore
+					i(4567),	-- Merc Sword
+					i(4817),	-- Blessed Claymore
+					i(4818),	-- Executioner's Sword
+					i(5182),	-- Shiver Blade
+					i(647),		-- Destiny
+					i(8178),	-- Training Sword
+					i(8199),	-- Battlefield Destroyer
+					i(9385),	-- Archaic Defender
+					i(9490),	-- Gizmotron Megachopper
 				}),
 				n(-341, { -- Wands
-					i(10572),
-					i(12984),
-					i(13004),
-					i(13062),
-					i(13063),
-					i(13064),
-					i(13065),
-					i(15279),
-					i(15280),
-					i(15281),
-					i(15282),
-					i(15283),
-					i(18338),
-					i(21801),
-					i(31270),
-					i(5069),
-					i(5071),
-					i(5207),
-					i(5212),
-					i(5213),
-					i(5214),
-					i(5215),
-					i(5216),
-					i(5245),
-					i(8184),
-					i(8186),
-					i(9381),
-					i(9483),
+					i(10572),	-- Freezing Shard
+					i(12984),	-- Skycaller
+					i(13004),	-- Torch of Austen
+					i(13062),	-- Thunderwood
+					i(13063),	-- Starfaller
+					i(13064),	-- Jaina's Firestarter
+					i(13065),	-- Wand of Allistarj
+					i(15279),	-- Ivory Wand
+					i(15280),	-- Wizard's Hand
+					i(15281),	-- Glowstar Rod
+					i(15282),	-- Dragon Finger
+					i(15283),	-- Lunar Wand
+					i(18338),	-- Wand of Arcane Potency
+					i(21801),	-- Antenna of Invigoration
+					i(31270),	-- Banshee Rod
+					i(5069),	-- Fire Wand
+					i(5071),	-- Shadow Wand
+					i(5207),	-- Opaque Wand
+					i(5212),	-- Blazing Wand
+					i(5213),	-- Scorching Wand
+					i(5214),	-- Wand of Eventide
+					i(5215),	-- Ember Wand
+					i(5216),	-- Umbral Wand
+					i(5245),	-- Summoner's Wand
+					i(8184),	-- Firestarter
+					i(8186),	-- Dire Wand
+					i(9381),	-- Earthen Rod
+					i(9483),	-- Flaming Incinerator
 				}),
 			}),	
 		},
