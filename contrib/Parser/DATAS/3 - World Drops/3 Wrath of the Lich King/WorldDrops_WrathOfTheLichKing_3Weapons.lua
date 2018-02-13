@@ -7,337 +7,337 @@ _.WorldDrops =
 		["groups"] = {
 			n(-319, { -- Weapons		
 				n(-334, { -- 1H Axes
-					i(36571),
-					i(36572),
-					i(36573),
-					i(36574),
-					i(36575),
-					i(36576),
-					i(36577),
-					i(36578),
-					i(36579),
-					i(36580),
-					i(36581),
-					i(36582),
-					i(36583),
-					i(36584),
+					i(36571),	-- Splicing Axe
+					i(36572),	-- Dinged Cleaver
+					i(36573),	-- Primeval Adze
+					i(36574),	-- Bone Cleaver
+					i(36575),	-- Dragonflayer Hatchet
+					i(36576),	-- Beaked Axe
+					i(36577),	-- Disk Axe
+					i(36578),	-- Troll Chopper
+					i(36579),	-- Boreal Woodchopper
+					i(36580),	-- Dire Axe
+					i(36581),	-- Wolvar Handaxe
+					i(36582),	-- Ice Pick
+					i(36583),	-- Skeletal Hacker
+					i(36584),	-- Snowy Edge
 				}),
 				n(-335, { -- 2H Axes
-					i(36585),
-					i(36586),
-					i(36587),
-					i(36588),
-					i(36589),
-					i(36590),
-					i(36591),
-					i(36592),
-					i(36593),
-					i(36594),
-					i(36595),
-					i(36596),
-					i(36597),
-					i(36598),
-					i(37811),
+					i(36585),	-- Finned Battleaxe
+					i(36586),	-- Wreaking Battleaxe
+					i(36587),	-- Taunka Axe
+					i(36588),	-- Burning Battleaxe
+					i(36589),	-- Segmenting Broadaxe
+					i(36590),	-- Bone Plate Axe
+					i(36591),	-- Winged Axe
+					i(36592),	-- Deforester Axe
+					i(36593),	-- Troll Decollator
+					i(36594),	-- Fracturing Battleaxe
+					i(36595),	-- Planate Broadaxe
+					i(36596),	-- Rupturing Axe
+					i(36597),	-- Ice-Splintering Axe
+					i(36598),	-- Scarlet Battle Axe
+					i(37811),	-- Captain Carver's Persuader
 				}),	
 				n(-346, { -- Bows
-					i(36613),
-					i(36614),
-					i(36615),
-					i(36616),
-					i(36617),
-					i(36618),
-					i(36619),
-					i(36620),
-					i(36621),
-					i(36622),
-					i(36623),
-					i(36624),
-					i(36625),
-					i(36626),
-					i(37809),
+					i(36613),	-- Honorable Longbow
+					i(36614),	-- Yew Bow
+					i(36615),	-- Expert's Longbow
+					i(36616),	-- Dutiful Longbow
+					i(36617),	-- Yielding Bow
+					i(36618),	-- Twisted Longbow
+					i(36619),	-- Astral Light Bow
+					i(36620),	-- Tracking Bow
+					i(36621),	-- Advanced Flatbow
+					i(36622),	-- Acute Shortbow
+					i(36623),	-- Harnessed Longbow
+					i(36624),	-- Shrieking Bow
+					i(36625),	-- Massive Recurved Bow
+					i(36626),	-- Military Compound Bow
+					i(37809),	-- Roc-Feather Longbow
 				}),
 				n(-347, { -- Crossbows
-					i(36627),
-					i(36628),
-					i(36629),
-					i(36630),
-					i(36631),
-					i(36632),
-					i(36633),
-					i(36634),
-					i(36635),
-					i(36636),
-					i(36637),
-					i(36638),
-					i(36639),
-					i(36640),
+					i(36627),	-- Composite Crossbow
+					i(36628),	-- Under-Arm Crossbow
+					i(36629),	-- Ferocious Crossbow
+					i(36630),	-- Sinewed Crossbow
+					i(36631),	-- Horned Crossbow
+					i(36632),	-- Slingshot Crossbow
+					i(36633),	-- Palisade Crossbow
+					i(36634),	-- Pain Repeater
+					i(36635),	-- Marvelous Crossbow
+					i(36636),	-- Arbalest Crossbow
+					i(36637),	-- Horrific Crossbow
+					i(36638),	-- Bloody Crossbow
+					i(36639),	-- Brutal Ballista
+					i(36640),	-- Scourge Crossbow
 				}),			
 				n(-333, { -- Daggers	
-					i(35681),
-					i(36473),
-					i(36474),
-					i(36475),
-					i(36476),
-					i(36477),
-					i(36478),
-					i(36479),
-					i(36480),
-					i(36481),
-					i(36482),
-					i(36483),
-					i(36484),
-					i(36485),
-					i(36486),
-					i(36669),
-					i(36670),
-					i(36671),
-					i(36672),
-					i(36673),
-					i(36674),
-					i(36675),
-					i(36676),
-					i(36677),
-					i(36678),
-					i(36679),
-					i(36680),
-					i(36681),
-					i(36682),
-					i(37802),
-					i(37856),
-					i(43613),
-					i(44310),
-					i(44505),
-					i(44703), -- cannot be transmogged Dark Herring
-					i(49227),
+					i(35681),	-- Unrelenting Blade
+					i(36473),	-- Pioneer's Dagger
+					i(36474),	-- Engraved Dagger
+					i(36475),	-- Seal Shortblade
+					i(36476),	-- Whale Ripper
+					i(36477),	-- Twin-Edged Stiletto
+					i(36478),	-- Frosty Talon
+					i(36479),	-- Snobold Ripper
+					i(36480),	-- Ebony Dagger
+					i(36481),	-- Trapper Knife
+					i(36482),	-- Parrying Dagger
+					i(36483),	-- Mandible Edge
+					i(36484),	-- Etched Dagger
+					i(36485),	-- Sinuous Keris
+					i(36486),	-- Ornate Pugio
+					i(36669),	-- Eccentric Dagger
+					i(36670),	-- Gypsy Blade
+					i(36671),	-- Ominous Dagger
+					i(36672),	-- Strange Dagger
+					i(36673),	-- Wise Dagger
+					i(36674),	-- Old Tooth
+					i(36675),	-- Sockeye Dagger
+					i(36676),	-- Water Blade
+					i(36677),	-- Levitating Dagger
+					i(36678),	-- Runed Talon
+					i(36679),	-- Singing Dagger
+					i(36680),	-- Mystic Fang
+					i(36681),	-- Wisdom Carver
+					i(36682),	-- Seduced Blade
+					i(37802),	-- Elanor's Edge
+					i(37856),	-- Librarian's Paper Cutter
+					i(43613),	-- The Dusk Blade
+					i(44310),	-- Namlak's Supernumerary Sticker
+					i(44505),	-- Dustbringer
+					i(44703),	-- Dark Herring -- Cannot Be Transmogged
+					i(49227),	-- Skoll's Fang
 				}),
 				n(-348, { -- Fist Weapons	
-					i(36557),
-					i(36558),
-					i(36559),
-					i(36560),
-					i(36561),
-					i(36562),
-					i(36563),
-					i(36564),
-					i(36565),
-					i(36566),
-					i(36567),
-					i(36568),
-					i(36569),
-					i(36570),
-					i(37749),
+					i(36557),	-- Meat Ripper
+					i(36558),	-- Curved Scratcher
+					i(36559),	-- Prized Handscythes
+					i(36560),	-- Fighter's Grip
+					i(36561),	-- Mummified Paw
+					i(36562),	-- Blue-Nailed Claws
+					i(36563),	-- Gloved Talons
+					i(36564),	-- Spider Claw
+					i(36565),	-- Hero's Knuckles
+					i(36566),	-- Gilded Fangs
+					i(36567),	-- Six-Fingered Claws
+					i(36568),	-- Hollowed Bone Knuckles
+					i(36569),	-- Savage Talons
+					i(36570),	-- Corrupted Scythes
+					i(37749),	-- Shocking Claws
 				}),
 				n(-345, { -- Guns
-					i(36641),
-					i(36642),
-					i(36643),
-					i(36644),
-					i(36645),
-					i(36646),
-					i(36647),
-					i(36648),
-					i(36649),
-					i(36650),
-					i(36651),
-					i(36652),
-					i(36653),
-					i(36654),
-					i(50444),
+					i(36641),	-- Bound Musket
+					i(36642),	-- Flintlock Gun
+					i(36643),	-- Tracker's Musket
+					i(36644),	-- Inelegant Musket
+					i(36645),	-- Tuskarr Boomstick
+					i(36646),	-- Haggard Gun
+					i(36647),	-- Noisy Blaster
+					i(36648),	-- Trapper's Rifle
+					i(36649),	-- Tundra Rifle
+					i(36650),	-- Mammoth Gun
+					i(36651),	-- Muzzled Musket
+					i(36652),	-- Stocky Shotgun
+					i(36653),	-- Precipice Longrifle
+					i(36654),	-- Harsh-Winter Rifle
+					i(50444),	-- Rowan's Rifle of Silver Bullets
 				}),			
 				n(-331, { -- Held in Off-hand
-					i(36459),
-					i(36460),
-					i(36461),
-					i(36462),
-					i(36463),
-					i(36464),
-					i(36465),
-					i(36466),
-					i(36467),
-					i(36468),
-					i(36469),
-					i(36470),
-					i(36471),
-					i(36472),
-					i(37364),
-					i(37817),
-					i(37889),
+					i(36459),	-- Icy Orb
+					i(36460),	-- Northern Star
+					i(36461),	-- Demon-Skull Orb
+					i(36462),	-- Coldarra Crystal
+					i(36463),	-- Polished Orb
+					i(36464),	-- Darkened Scepter
+					i(36465),	-- Evergreen Branch
+					i(36466),	-- Facetted Orb
+					i(36467),	-- Reflecting Sphere
+					i(36468),	-- Glistening Star
+					i(36469),	-- Lidless Orb
+					i(36470),	-- Gilded Scepter
+					i(36471),	-- Ice Crystal
+					i(36472),	-- Carved Rod
+					i(37364),	-- Frostbridge Orb
+					i(37817),	-- Branch of Sinful Reprieve
+					i(37889),	-- Prison Manifest
 				}),
 				n(-336, { -- 1H Maces
-					i(35664),
-					i(36487),
-					i(36488),
-					i(36489),
-					i(36490),
-					i(36491),
-					i(36492),
-					i(36493),
-					i(36494),
-					i(36495),
-					i(36496),
-					i(36497),
-					i(36498),
-					i(36499),
-					i(36500),
-					i(36683),
-					i(36684),
-					i(36685),
-					i(36686),
-					i(36687),
-					i(36688),
-					i(36689),
-					i(36690),
-					i(36691),
-					i(36692),
-					i(36693),
-					i(36694),
-					i(36695),
-					i(36696),
-					i(37805),
-					i(37808),
-					i(48663),
+					i(35664),	-- Unknown Archaeologist's Hammer
+					i(36487),	-- Stone-Headed Gavel
+					i(36488),	-- Conifer Club
+					i(36489),	-- Iron Flanged Scepter
+					i(36490),	-- Tuskarr Cudgel
+					i(36491),	-- Serrated Maul
+					i(36492),	-- Peaked Club
+					i(36493),	-- Furbolg Truncheon
+					i(36494),	-- Barbed Star
+					i(36495),	-- Ferrous Hammer
+					i(36496),	-- Brass-Bound Cudgel
+					i(36497),	-- Adamant Mallet
+					i(36498),	-- Nerubian Mace
+					i(36499),	-- Frigid War-Mace
+					i(36500),	-- Gargoyle's Mace
+					i(36683),	-- Enshrined Mace
+					i(36684),	-- Ambrosial Hammer
+					i(36685),	-- Placid Lightmace
+					i(36686),	-- Harmonious Scepter
+					i(36687),	-- Illuminated Scepter
+					i(36688),	-- Sacrosanct Mace
+					i(36689),	-- Refreshing Hammer
+					i(36690),	-- Unearthly Scepter
+					i(36691),	-- Dignified Hammer
+					i(36692),	-- Remedial Mace
+					i(36693),	-- Serene Hammer
+					i(36694),	-- Beatific Mace
+					i(36695),	-- Dogmatic Scepter
+					i(36696),	-- Graced Scepter
+					i(37805),	-- Melia's Magnificent Scepter
+					i(37808),	-- Dragonjaw Mauler
+					i(48663),	-- Tankard O' Terror
 				}),
 				n(-337, { -- 2H Maces
-					i(36501),
-					i(36502),
-					i(36503),
-					i(36504),
-					i(36505),
-					i(36506),
-					i(36507),
-					i(36508),
-					i(36509),
-					i(36510),
-					i(36511),
-					i(36512),
-					i(36513),
-					i(36514),
-					i(37812),
-					i(44708),
+					i(36501),	-- Granite Maul
+					i(36502),	-- Ungainly Mace
+					i(36503),	-- Toothless Bludgeon
+					i(36504),	-- Cleft-Edged Hammer
+					i(36505),	-- Frosted Steel Mallet
+					i(36506),	-- Vaulted Mace
+					i(36507),	-- Iron-Molded Fist
+					i(36508),	-- Cumbersome Sledgehammer
+					i(36509),	-- Femur-Shafted Mace
+					i(36510),	-- Lumbering Bludgeon
+					i(36511),	-- Arctic War Hammer
+					i(36512),	-- Onerous Mallet
+					i(36513),	-- Lode-Headed Hammer
+					i(36514),	-- Kingly Battlehammer
+					i(37812),	-- Petrified Ironwood Smasher
+					i(44708),	-- Dirkee's Superstructure
 				}),
 				n(-343, { -- Polearms
-					i(36599),
-					i(36600),
-					i(36601),
-					i(36602),
-					i(36603),
-					i(36604),
-					i(36605),
-					i(36606),
-					i(36607),
-					i(36608),
-					i(36609),
-					i(36610),
-					i(36611),
-					i(36612),
-					i(37813),
+					i(36599),	-- Ocean Trident
+					i(36600),	-- Village Scythe
+					i(36601),	-- Patient Harpoon
+					i(36602),	-- Rust-Covered Polearm
+					i(36603),	-- Archaic Longspear
+					i(36604),	-- Grizzly Glaive
+					i(36605),	-- Wind Scythe
+					i(36606),	-- Rugged Polearm
+					i(36607),	-- Dwarven Halberd
+					i(36608),	-- Piercing Glaive
+					i(36609),	-- Abandoned Spear
+					i(36610),	-- Plagued Pike
+					i(36611),	-- Bleak Scythe
+					i(36612),	-- Scourge War Spear
+					i(37813),	-- Banner Slicer
 				}),			
 				n(-332, { -- Shield
-					i(36445),
-					i(36446),
-					i(36447),
-					i(36448),
-					i(36449),
-					i(36450),
-					i(36451),
-					i(36452),
-					i(36453),
-					i(36454),
-					i(36455),
-					i(36456),
-					i(36457),
-					i(36458),
-					i(37747),
-					i(37810),
-					i(44313),
-					i(45450),
+					i(36445),	-- Riveted Shield
+					i(36446),	-- Forged-Iron Shield
+					i(36447),	-- Kaskala Buckler
+					i(36448),	-- Spiked Targe
+					i(36449),	-- Vrykul Shield
+					i(36450),	-- Strapped Heater Shield
+					i(36451),	-- Kamagua Shield
+					i(36452),	-- Spoke Shield
+					i(36453),	-- Embossed Brazen Shield
+					i(36454),	-- Domed Buckler
+					i(36455),	-- Plated Bulwark
+					i(36456),	-- Icy Kite Shield
+					i(36457),	-- Ivory Shield
+					i(36458),	-- Frozen Shield
+					i(37747),	-- Beneficent Bulwark
+					i(37810),	-- Blade-Binding Bulwark
+					i(44313),	-- Zom's Crackling Bulwark
+					i(45450),	-- Northern Barrier
 				}),
 				n(-342, { -- Staves
-					i(36543),
-					i(36544),
-					i(36545),
-					i(36546),
-					i(36547),
-					i(36548),
-					i(36549),
-					i(36550),
-					i(36551),
-					i(36552),
-					i(36553),
-					i(36554),
-					i(36555),
-					i(36556),
-					i(36697),
-					i(36698),
-					i(36699),
-					i(36700),
-					i(36701),
-					i(36702),
-					i(36703),
-					i(36704),
-					i(36705),
-					i(36706),
-					i(36707),
-					i(36708),
-					i(36709),
-					i(36710),
-					i(37803),
-					i(37804),
-					i(37806),
+					i(36543),	-- Survival Stick
+					i(36544),	-- Journeyed Staff
+					i(36545),	-- Branched Stick
+					i(36546),	-- Unusual Staff
+					i(36547),	-- Jester's Stick
+					i(36548),	-- Promised Staff
+					i(36549),	-- Pulsing Quarterstaff
+					i(36550),	-- Refulgent Staff
+					i(36551),	-- Ritual Greatstaff
+					i(36552),	-- Spiked Greatstaff
+					i(36553),	-- Desecrated Staff
+					i(36554),	-- Cursed Staff
+					i(36555),	-- Minion Staff
+					i(36556),	-- Apocalyptic Staff
+					i(36697),	-- Aquatic Greatstaff
+					i(36698),	-- Conifer Cone Staff
+					i(36699),	-- Iceberg Staff
+					i(36700),	-- Peat Greatstaff
+					i(36701),	-- Pine Needle Staff
+					i(36702),	-- Melting Icestaff
+					i(36703),	-- Tusked Greatstaff
+					i(36704),	-- Hive Comb Staff
+					i(36705),	-- Geyser Staff
+					i(36706),	-- Tenacious Vine Staff
+					i(36707),	-- Cascading Water Staff
+					i(36708),	-- Snow Blossom Staff
+					i(36709),	-- Crystal Woodstaff
+					i(36710),	-- Avalanche Staff
+					i(37803),	-- Lola's Lifegiving Branch
+					i(37804),	-- Bloodwood Greatstaff
+					i(37806),	-- Zabra's Misplaced Staff
 				}),
 				n(-338, { -- 1H Swords
-					i(36515),
-					i(36516),
-					i(36517),
-					i(36518),
-					i(36519),
-					i(36520),
-					i(36521),
-					i(36522),
-					i(36523),
-					i(36524),
-					i(36525),
-					i(36526),
-					i(36527),
-					i(36528),
-					i(37807),
-					i(43611),
-					i(44311),
+					i(36515),	-- Raider's Cutlass
+					i(36516),	-- Tribal Blade
+					i(36517),	-- Iron-Grip Shortsword
+					i(36518),	-- Tundra's Edge
+					i(36519),	-- Moonlit Katana
+					i(36520),	-- Chopping Wideblade
+					i(36521),	-- Shimmering Sabre
+					i(36522),	-- Scored Blade
+					i(36523),	-- Trollish Slicer
+					i(36524),	-- Primitive Scimitar
+					i(36525),	-- Craggy Machete
+					i(36526),	-- Sleeted Longsword
+					i(36527),	-- Blackened Blade
+					i(36528),	-- Skeleton's Sword
+					i(37807),	-- Lydia's Sharpened Swordbreaker
+					i(43611),	-- Krol Cleaver
+					i(44311),	-- Avool's Sword of Jin
 				}),
 				n(-339, { -- 2H Swords
-					i(36529),
-					i(36530),
-					i(36531),
-					i(36532),
-					i(36533),
-					i(36534),
-					i(36535),
-					i(36536),
-					i(36537),
-					i(36538),
-					i(36539),
-					i(36540),
-					i(36541),
-					i(36542),
+					i(36529),	-- Unearthed Broadsword
+					i(36530),	-- Whetted Ironblade
+					i(36531),	-- Sawtooth Greatsword
+					i(36532),	-- Shark Fin Blade
+					i(36533),	-- Adorned Broadsword
+					i(36534),	-- Tempered-Steel Blade
+					i(36535),	-- Dragon's Rib Sword
+					i(36536),	-- Inlaid Greatsword
+					i(36537),	-- Fur-Grip Broadsword
+					i(36538),	-- Trollish Destroyer
+					i(36539),	-- Chilled Warblade
+					i(36540),	-- Petrified Sword
+					i(36541),	-- Wintry Claymore
+					i(36542),	-- Invasion Blade
 				}),
 				n(-341, { -- Wands
-					i(35652),
-					i(36655),
-					i(36656),
-					i(36657),
-					i(36658),
-					i(36659),
-					i(36660),
-					i(36661),
-					i(36662),
-					i(36663),
-					i(36664),
-					i(36665),
-					i(36666),
-					i(36667),
-					i(36668),
-					i(37824),
-					i(50472),
+					i(35652),	-- Incessant Torch
+					i(36655),	-- Pearled Wand
+					i(36656),	-- Darkened Wand
+					i(36657),	-- Vicious Wand
+					i(36658),	-- Extinguished Spark
+					i(36659),	-- Shivery Wand
+					i(36660),	-- Melted Wand
+					i(36661),	-- Enigmatic Wand
+					i(36662),	-- Voodoo Wand
+					i(36663),	-- Ancient Wand
+					i(36664),	-- Chilled Wand
+					i(36665),	-- Wasteland Wand
+					i(36666),	-- Polar Wand
+					i(36667),	-- Solid Ice Wand
+					i(36668),	-- Mindless Wand
+					i(37824),	-- Gwyneth's Runed Dragonwand
+					i(50472),	-- Nightmare Ender
 				}),
 			}),	
 		},

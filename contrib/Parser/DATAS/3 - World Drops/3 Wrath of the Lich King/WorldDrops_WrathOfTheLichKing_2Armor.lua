@@ -7,215 +7,215 @@ _.WorldDrops =
 		["groups"] = {
 			n(-318, { -- Armor
 				n(-320, { -- Head
-					i(35639),
-					i(37746),
-					i(37754),
-					i(37767),
-					i(37775),
-					i(37787),
-					i(37793),
-					i(37857),
-					i(44667),
-					i(44695),
-					i(44732),
-					i(45107),
-					i(45435),
+					i(35639),	-- Brighthelm of Guarding
+					i(37746),	-- Helm of the Burning Soul
+					i(37754),	-- Shimmersteel Hood
+					i(37767),	-- Ryft's Deathgaze
+					i(37775),	-- Helm of the Broken Ram
+					i(37787),	-- Greathelm of the Unyielding Bull
+					i(37793),	-- Skullcage of Eternal Terror
+					i(37857),	-- Helm of the Lightning Halls
+					i(44667),	-- Mammoth-Hair Crown
+					i(44695),	-- Corroded Faceguard
+					i(44732),	-- Azure Dragonleather Helm
+					i(45107),	-- Iron Riveted War Helm
+					i(45435),	-- Cowl of the Absolute
 				}),
 				n(-321, { -- Shoulder
-					i(35580),
-					i(35616),
-					i(37115),
-					i(37116),
-					i(37196),
-					i(37673),
-					i(37757),
-					i(37764),
-					i(37769),
-					i(37772),
-					i(37779),
-					i(37783),
-					i(39310),
-					i(40305),
-					i(40439),
-					i(44312),
-					i(44672),
-					i(44685),
-					i(50020),
-					i(50449),
+					i(35580),	-- Skein Woven Mantle
+					i(35616),	-- Spored Tendrils Spaulders
+					i(37115),	-- Crusader's Square Pauldrons
+					i(37116),	-- Epaulets of Market Row
+					i(37196),	-- Runecaster's Mantle
+					i(37673),	-- Dark Runic Mantle
+					i(37757),	-- Charlotte's Chastizing Pauldrons
+					i(37764),	-- Corehound Fang Shoulderpads
+					i(37769),	-- Gnarled Shovelhorn Spaulders
+					i(37772),	-- Wub's Electrospike Spaulders
+					i(37779),	-- Nixod's Chain-Threshed Spaulders
+					i(37783),	-- Blood-Tempered Spaulders
+					i(39310),	-- Mantle of the Extensive Mind
+					i(40305),	-- Spaulders of Egotism
+					i(40439),	-- Mantle of the Eternal Sentinel
+					i(44312),	-- Wapach's Spaulders of Solidarity
+					i(44672),	-- Seal-Fur Spaulders
+					i(44685),	-- Calcified Web Spaulders
+					i(50020),	-- Raging Behemoth's Shoulderplates
+					i(50449),	-- Stiffened Corpse Shoulderpads
 				}),
 				n(-322, { -- Back
-					i(36403),
-					i(36404),
-					i(36405),
-					i(36406),
-					i(36407),
-					i(36408),
-					i(36409),
-					i(36410),
-					i(36411),
-					i(36412),
-					i(36413),
-					i(36414),
-					i(36415),
-					i(36416),
-					i(37197),
-					i(37647),
-					i(37756),
-					i(37796),
-					i(37797),
-					i(37799),
-					i(44687),
-					i(45322),
-					i(45493),
-					i(45704),
-					i(46970),
-					i(47089),
-					i(47257),
-					i(47291),
+					i(36403),	-- Riding Cloak
+					i(36404),	-- Suede Cloak
+					i(36405),	-- Double Cape
+					i(36406),	-- Wayfarer's Cloak
+					i(36407),	-- Lace-Trimmed Cloak
+					i(36408),	-- Reversible Wool Cape
+					i(36409),	-- Crushed Velvet Cloak
+					i(36410),	-- Caribou Skin Cloak
+					i(36411),	-- Brawler's Cape
+					i(36412),	-- Fleece Cloak
+					i(36413),	-- Dyed Taffeta Cape
+					i(36414),	-- Mammoth Fur Cloak
+					i(36415),	-- Vintage Satin Cloak
+					i(36416),	-- Regal Cloak
+					i(37197),	-- Tattered Castle Drape
+					i(37647),	-- Cloak of Bloodied Waters
+					i(37756),	-- Zoe's Comforting Cape
+					i(37796),	-- Earthbound Cape
+					i(37797),	-- Cloak of the Agile Mind
+					i(37799),	-- Reanimator's Cloak
+					i(44687),	-- Loque'Nahak's Pelt
+					i(45322),	-- Cloak of the Iron Council
+					i(45493),	-- Asimov's Drape
+					i(45704),	-- Shawl of the Shattered Giant
+					i(46970),	-- Drape of the Untamed Predator
+					i(47089),	-- Cloak of Displacement
+					i(47257),	-- Cloak of the Untamed Predator
+					i(47291),	-- Shroud of Displacement
 				}),
 				n(-323, { -- Chest
-					i(37587),
-					i(37672),
-					i(37745),
-					i(37753),
-					i(37770),
-					i(37780),
-					i(37792),
-					i(37800),
-					i(44666),
-					i(44668),
-					i(44697),
-					i(45167),
-					i(45237),
-					i(50001),
-					i(50038),
-					i(51958),
+					i(37587),	-- Ymirjar Physician's Robe
+					i(37672),	-- Patina-Coated Breastplate
+					i(37745),	-- Greenhealer's Garb
+					i(37753),	-- Mendicant's Robe of Mendacity
+					i(37770),	-- Bulge-Concealing Breastplate
+					i(37780),	-- Condor-Bone Chestguard
+					i(37792),	-- Agin's Crushing Carapace
+					i(37800),	-- Aviary Guardsman's Hauberk
+					i(44666),	-- Fumblub's Seat Cushion
+					i(44668),	-- Egg-Warming Blanket
+					i(44697),	-- Val'kyr Vestments
+					i(45167),	-- Lifeforge Breastplate
+					i(45237),	-- Phaelia's Vestments of the Sprouting Seed
+					i(50001),	-- Ikfirus' Sack of Wonder
+					i(50038),	-- Carapace of Forgotten Kings
+					i(51958),	-- Pristine Glowbear Pelt
 				}),
 				n(-325, { -- Tabard
-					i(52252),
+					i(52252),	-- Tabard of the Lightbringer
 				}),
 				n(-326, { -- Wrist
-					i(35579),
-					i(35593),
-					i(35615),
-					i(35640),
-					i(35654),
-					i(35665),
-					i(35682),
-					i(36977),
-					i(37000),
-					i(37069),
-					i(37117),
-					i(37365),
-					i(37366),
-					i(37590),
-					i(37760),
-					i(37766),
-					i(37771),
-					i(37776),
-					i(37777),
-					i(37891),
-					i(39235),
-					i(39283),
-					i(40282),
-					i(40338),
-					i(40733),
-					i(40734),
-					i(40735),
-					i(40736),
-					i(40737),
-					i(40738),
-					i(40739),
-					i(40740),
-					i(40741),
-					i(44669),
-					i(44674),
-					i(44691),
-					i(44696),
-					i(45291),
-					i(45301),
-					i(45316),
-					i(45680),
-					i(46009),
-					i(49994),
-					i(50175),
+					i(35579),	-- Vrykul Shackles
+					i(35593),	-- Steel Bear Trap Bracers
+					i(35615),	-- Glowworm Cavern Bindings
+					i(35640),	-- Darkweb Bindings
+					i(35654),	-- Bindings of the Bastille
+					i(35665),	-- Soothing Lichen Wraps
+					i(35682),	-- Rune Giant Bindings
+					i(36977),	-- Bindings of the Construct
+					i(37000),	-- Storming Vortex Bracers
+					i(37069),	-- Dragonflayer Seer's Bindings
+					i(37117),	-- King's Square Bracers
+					i(37365),	-- Bands of the Sky Ring
+					i(37366),	-- Drake-Champion's Bracers
+					i(37590),	-- Bands of Fading Light
+					i(37760),	-- Cracklefire Wristguards
+					i(37766),	-- Bracers of Unmitigated Larceny
+					i(37771),	-- Wristguards of Verdant Recovery
+					i(37776),	-- Bracers of Accurate Fire
+					i(37777),	-- Bracers of Sizzling Heat
+					i(37891),	-- Cast Iron Shackles
+					i(39235),	-- Bone-Framed Bracers
+					i(39283),	-- Putrescent Bands
+					i(40282),	-- Slime Stream Bands
+					i(40338),	-- Bindings of Yearning
+					i(40733),	-- Wristbands of the Sentinel Huntress
+					i(40734),	-- Bracers of Dalaran's Parapets
+					i(40735),	-- Zartson's Jungle Vambraces
+					i(40736),	-- Armguard of the Tower Archer
+					i(40737),	-- Pigmented Clan Bindings
+					i(40738),	-- Wristwraps of the Cutthroat
+					i(40739),	-- Bands of the Great Tree
+					i(40740),	-- Wraps of the Astral Traveler
+					i(40741),	-- Cuffs of the Shadow Ascendant
+					i(44669),	-- Worgen-Scored Shackles
+					i(44674),	-- Ichor-Stained Wraps
+					i(44691),	-- Aotona's Collar
+					i(44696),	-- Giant's Toewrap
+					i(45291),	-- Combustion Bracers
+					i(45301),	-- Bracers of the Smothering Inferno
+					i(45316),	-- Armbraces of the Vibrant Flame
+					i(45680),	-- Armbands of the Construct
+					i(46009),	-- Bindings of the Depths
+					i(49994),	-- The Lady's Brittle Bracers
+					i(50175),	-- Crypt Keeper's Bracers
 				}),
 				n(-327, { -- Hands
-					i(37625),
-					i(37671),
-					i(37759),
-					i(37781),
-					i(37782),
-					i(37789),
-					i(37795),
-					i(37858),
-					i(39194),
-					i(39733),
-					i(40302),
-					i(40347),
-					i(40362),
-					i(44649),
-					i(44675),
-					i(44686),
-					i(45927),
+					i(37625),	-- Web Winder Gloves
+					i(37671),	-- Refined Ore Gloves
+					i(37759),	-- Rhie-Ay's Clutching Gauntlets
+					i(37781),	-- Grips of the Warming Heart
+					i(37782),	-- Gauntlets of the Cheerful Hearth
+					i(37789),	-- Gauntlets of Disembowelment
+					i(37795),	-- Grips of the Valiant Champion
+					i(37858),	-- Awakened Handguards
+					i(39194),	-- Rusted-Link Spiked Gauntlets
+					i(39733),	-- Gloves of Token Respect
+					i(40302),	-- Benefactor's Gauntlets
+					i(40347),	-- Zeliek's Gauntlets
+					i(40362),	-- Gloves of Fast Reactions
+					i(44649),	-- Crystalbark's Toenail
+					i(44675),	-- Rock-Giant's Pinky Cover
+					i(44686),	-- Ethereal Terror Handwraps
+					i(45927),	-- Handwraps of Resonance
 				}),
 				n(-328, { -- Waist
-					i(30034),
-					i(35594),
-					i(35653),
-					i(36978),
-					i(36997),
-					i(37243),
-					i(37648),
-					i(37761),
-					i(37762),
-					i(37773),
-					i(37778),
-					i(37785),
-					i(37790),
-					i(37801),
-					i(39762),
-					i(44309),
-					i(44670),
-					i(45709),
-					i(45975),
-					i(50015),
-					i(50069),
-					i(50451),
+					i(30034),	-- Belt of the Guardian
+					i(35594),	-- Snowmelt Silken Cinch
+					i(35653),	-- Girdle of the Mystical Prison
+					i(36978),	-- Ley-Whelphide Belt
+					i(36997),	-- Sash of the Hardened Watcher
+					i(37243),	-- Treasure Seeker's Belt
+					i(37648),	-- Belt of Tasseled Lanterns
+					i(37761),	-- Shimmerthread Girdle
+					i(37762),	-- Many-Pocketed Belt
+					i(37773),	-- Shock-Inducing Girdle
+					i(37778),	-- Girdle of Unerring Flight
+					i(37785),	-- Girdle of the Howling Berserker
+					i(37790),	-- Belt of Crystalline Tears
+					i(37801),	-- Waistguard of the Risen Knight
+					i(39762),	-- Torn Web Wrapping
+					i(44309),	-- Sash of Jordan
+					i(44670),	-- Soul-Sealed Belt
+					i(45709),	-- Nimble Climber's Belt
+					i(45975),	-- Cable of the Metrognome
+					i(50015),	-- Belt of the Blood Nova
+					i(50069),	-- Professor's Bloodied Smock
+					i(50451),	-- Belt of the Lonely Noble
 				}),
 				n(-329, { -- Legs
-					i(36976),
-					i(37743),
-					i(37755),
-					i(37765),
-					i(37768),
-					i(37774),
-					i(37786),
-					i(37890),
-					i(44671),
-					i(44676),
-					i(44677),
-					i(45141),
-					i(45274),
-					i(45468),
-					i(45504),
-					i(50450),
+					i(36976),	-- Ring-Lord's Leggings
+					i(37743),	-- Legguards of Brutalization
+					i(37755),	-- Leggings of the Icy Heart
+					i(37765),	-- Leggings of the Water Moccasin
+					i(37768),	-- Leggings of Violent Exsanguination
+					i(37774),	-- Leggings of Aqueous Dissolution
+					i(37786),	-- Legguards of the Forlorn Seas
+					i(37890),	-- Chain Gang Legguards
+					i(44671),	-- Highlord's Padded Legguards
+					i(44676),	-- Syreian's Leggings
+					i(44677),	-- Eternal Observer's Legplates
+					i(45141),	-- Proto-Hide Leggings
+					i(45274),	-- Leggings of the Stoneweaver
+					i(45468),	-- Leggings of Lost Love
+					i(45504),	-- Darkcore Leggings
+					i(50450),	-- Leggings of Dubious Charms
 				}),
 				n(-330, { -- Feet
-					i(35641),
-					i(36999),
-					i(37068),
-					i(37070),
-					i(37744),
-					i(37752),
-					i(37763),
-					i(39717),
-					i(40187),
-					i(40206),
-					i(40246),
-					i(40270),
-					i(40558),
-					i(44673),
+					i(35641),	-- Scytheclaw Boots
+					i(36999),	-- Boots of the Terrestrial Guardian
+					i(37068),	-- Berserker's Sabatons
+					i(37070),	-- Tundra Wolf Boots
+					i(37744),	-- Horrorblood Treads
+					i(37752),	-- Sandals of Broken Dreams
+					i(37763),	-- Treads of the Purifier
+					i(39717),	-- Inexorable Sabatons
+					i(40187),	-- Poignant Sabatons
+					i(40206),	-- Iron-Spring Jumpers
+					i(40246),	-- Boots of Impetuous Ideals
+					i(40270),	-- Boots of Septic Wounds
+					i(40558),	-- Arcanic Tramplers
+					i(44673),	-- Mammoth-Riding Boots
 				}),
 			}),
 		},
