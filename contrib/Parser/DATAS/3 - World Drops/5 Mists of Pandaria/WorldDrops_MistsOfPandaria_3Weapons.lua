@@ -7,226 +7,226 @@ _.WorldDrops =
 		["groups"] = {
 			n(-319, { -- Weapons		
 				n(-334, { -- 1H Axes
-					i(116457),
-					i(82020),
-					i(82045),
-					i(82100),
-					i(82155),
-					i(82210),
-					i(82265),
-					i(87513),
-					i(87516),
-					i(94028),
-					i(94099),
+					i(116457),	-- Frostbitten Axe
+					i(82020),	-- Polished Axe
+					i(82045),	-- Bronzed Axe
+					i(82100),	-- Barbarian Axe
+					i(82155),	-- Rigid Axe
+					i(82210),	-- Inlaid Axe
+					i(82265),	-- Engraved Axe
+					i(87513),	-- Axe of the Iron Price
+					i(87516),	-- Scalebreaker Axe
+					i(94028),	-- Zandalari Head-Cleaver
+					i(94099),	-- Corroded Hacker
 				}),
 				n(-335, { -- 2H Axes
-					i(116458),
-					i(82019),
-					i(82047),
-					i(82102),
-					i(82157),
-					i(82212),
-					i(82267),
-					i(87421),
-					i(94100),
+					i(116458),	-- Frostbitten Broadaxe
+					i(82019),	-- Polished Broadaxe
+					i(82047),	-- Bronzed Broadaxe
+					i(82102),	-- Barbarian Broadaxe
+					i(82157),	-- Rigid Broadaxe
+					i(82212),	-- Inlaid Broadaxe
+					i(82267),	-- Engraved Broadaxe
+					i(87421),	-- Fellworth's Repetitive Greataxe
+					i(94100),	-- Weighty Stone Axe
 				}),	
 				n(-346, { -- Bows
-					i(116459),
-					i(82018),
-					i(82046),
-					i(82101),
-					i(82156),
-					i(82211),
-					i(82266),
-					i(87474),
-					i(94101),
+					i(116459),	-- Frostbitten Bow
+					i(82018),	-- Polished Bow
+					i(82046),	-- Bronzed Bow
+					i(82101),	-- Barbarian Bow
+					i(82156),	-- Rigid Bow
+					i(82211),	-- Inlaid Bow
+					i(82266),	-- Engraved Bow
+					i(87474),	-- Ennadee's Twirling Longbow
+					i(94101),	-- Restrung Voodoo Bow
 				}),
 				n(-347, { -- Crossbows
-					i(116460),
-					i(82016),
-					i(82048),
-					i(82103),
-					i(82158),
-					i(82213),
-					i(82268),
-					i(87650),
+					i(116460),	-- Frostbitten Crossbow
+					i(82016),	-- Polished Crossbow
+					i(82048),	-- Bronzed Crossbow
+					i(82103),	-- Barbarian Crossbow
+					i(82158),	-- Rigid Crossbow
+					i(82213),	-- Inlaid Crossbow
+					i(82268),	-- Engraved Crossbow
+					i(87650),	-- Fishsticker Crossbow
 				}),			
 				n(-333, { -- Daggers	
-					i(116461),
-					i(116462),
-					i(82003),
-					i(82015),
-					i(82049),
-					i(82065),
-					i(82104),
-					i(82120),
-					i(82159),
-					i(82175),
-					i(82214),
-					i(82230),
-					i(82269),
-					i(82285),
-					i(87467),
-					i(87508),
-					i(87514),
-					i(88149),
-					i(93625),
-					i(94096),
-					i(94102),
-					i(94215),
+					i(116461),	-- Frostbitten Dagger
+					i(116462),	-- Coldsinger Spellblade
+					i(82003),	-- Intricate Spellblade
+					i(82015),	-- Polished Dagger
+					i(82049),	-- Bronzed Dagger
+					i(82065),	-- Gemmed Spellblade
+					i(82104),	-- Barbarian Dagger
+					i(82120),	-- Shamanic Spellblade
+					i(82159),	-- Rigid Dagger
+					i(82175),	-- Grummle Spellblade
+					i(82214),	-- Inlaid Dagger
+					i(82230),	-- Bejeweled Spellblade
+					i(82269),	-- Engraved Dagger
+					i(82285),	-- Immaculate Spellblade
+					i(87467),	-- Ravenclaw Harbinger
+					i(87508),	-- Lhakaz's Missing Ribspreader
+					i(87514),	-- Sharpened Multi-Prong Dagger
+					i(88149),	-- The Gloaming Blade
+					i(93625),	-- Miniature Winter Veil Tree
+					i(94096),	-- Discarded Strikeblade
+					i(94102),	-- Chiseled Fangs
+					i(94215),	-- Saurjaw Dagger
 				}),
 				n(-348, { -- Fist Weapons	
-					i(116463),
-					i(82013),
-					i(82054),
-					i(82109),
-					i(82164),
-					i(82219),
-					i(82274),
-					i(87509),
-					i(94098),
+					i(116463),	-- Frostbitten Knuckles
+					i(82013),	-- Polished Knuckles
+					i(82054),	-- Bronzed Knuckles
+					i(82109),	-- Barbarian Knuckles
+					i(82164),	-- Rigid Knuckles
+					i(82219),	-- Inlaid Knuckles
+					i(82274),	-- Engraved Knuckles
+					i(87509),	-- Fist of Fate
+					i(94098),	-- Dull Hawktalons
 				}),
 				n(-345, { -- Guns
-					i(116464),
-					i(82012),
-					i(82051),
-					i(82106),
-					i(82161),
-					i(82216),
-					i(82271),
-					i(87476),
-					i(87477),
-					i(94094),
+					i(116464),	-- Frostbitten Gun
+					i(82012),	-- Polished Gun
+					i(82051),	-- Bronzed Gun
+					i(82106),	-- Barbarian Gun
+					i(82161),	-- Rigid Gun
+					i(82216),	-- Inlaid Gun
+					i(82271),	-- Engraved Gun
+					i(87476),	-- Wall Guardian's Longrifle
+					i(87477),	-- Penate's Penance-Procuring Pistol
+					i(94094),	-- Hexbelcher Rifle
 				}),			
 				n(-331, { -- Held in Off-hand
-					i(116694),
-					i(82010),
-					i(82062),
-					i(82117),
-					i(82172),
-					i(82227),
-					i(82282),
-					i(87457),
-					i(87458),
-					i(90571),
+					i(116694),	-- Coldsinger Crystal
+					i(82010),	-- Intricate Crystal
+					i(82062),	-- Gemmed Crystal
+					i(82117),	-- Shamanic Crystal
+					i(82172),	-- Grummle Crystal
+					i(82227),	-- Bejeweled Crystal
+					i(82282),	-- Immaculate Crystal
+					i(87457),	-- Record of Mysterious Deeds
+					i(87458),	-- Bone-Inlaid Fan
+					i(90571),	-- Scroll of Whispered Secrets
 				}),
 				n(-336, { -- 1H Maces
-					i(107218),
-					i(116465),
-					i(116466),
-					i(71332),
-					i(82009),
-					i(82011),
-					i(82055),
-					i(82064),
-					i(82110),
-					i(82119),
-					i(82165),
-					i(82174),
-					i(82220),
-					i(82229),
-					i(82275),
-					i(82284),
-					i(87465),
-					i(87512),
-					i(87515),
-					i(94212),
+					i(107218),	-- Tremendous Tankard O' Terror
+					i(116465),	-- Frostbitten Mace
+					i(116466),	-- Coldsinger Scepter
+					i(71332),	-- Tremendous Tankard O' Terror
+					i(82009),	-- Polished Mace
+					i(82011),	-- Intricate Scepter
+					i(82055),	-- Bronzed Mace
+					i(82064),	-- Gemmed Scepter
+					i(82110),	-- Barbarian Mace
+					i(82119),	-- Shamanic Scepter
+					i(82165),	-- Rigid Mace
+					i(82174),	-- Grummle Scepter
+					i(82220),	-- Inlaid Mace
+					i(82229),	-- Bejeweled Scepter
+					i(82275),	-- Engraved Mace
+					i(82284),	-- Immaculate Scepter
+					i(87465),	-- Solianti's Insect Smasher
+					i(87512),	-- Porter's Tooth-Marked Mace
+					i(87515),	-- Ced's Crusher
+					i(94212),	-- Hex-Caster Gavel
 				}),
 				n(-337, { -- 2H Maces
-					i(116467),
-					i(82008),
-					i(82052),
-					i(82107),
-					i(82162),
-					i(82217),
-					i(82272),
-					i(87418),
+					i(116467),	-- Frostbitten Hammer
+					i(82008),	-- Polished Hammer
+					i(82052),	-- Bronzed Hammer
+					i(82107),	-- Barbarian Hammer
+					i(82162),	-- Rigid Hammer
+					i(82217),	-- Inlaid Hammer
+					i(82272),	-- Engraved Hammer
+					i(87418),	-- Lerah's Ribsmasher
 				}),
 				n(-343, { -- Polearms
-					i(116468),
-					i(82006),
-					i(82056),
-					i(82111),
-					i(82166),
-					i(82221),
-					i(82276),
-					i(87420),
-					i(94103),
+					i(116468),	-- Frostbitten Spear
+					i(82006),	-- Polished Spear
+					i(82056),	-- Bronzed Spear
+					i(82111),	-- Barbarian Spear
+					i(82166),	-- Rigid Spear
+					i(82221),	-- Inlaid Spear
+					i(82276),	-- Engraved Spear
+					i(87420),	-- Ritter's Rat Render
+					i(94103),	-- Ritual Headcleaver Halberd
 				}),			
 				n(-332, { -- Shield
-					i(106397),
-					i(82004),
-					i(82074),
-					i(82129),
-					i(82184),
-					i(82239),
-					i(82294),
-					i(87486),
-					i(87487),
-					i(87488),
-					i(87641),
-					i(90575),
-					i(94214),
-					i(94218),
+					i(106397),	-- Frostbitten Shield
+					i(82004),	-- Wall Shield
+					i(82074),	-- Brick Shield
+					i(82129),	-- Miner Shield
+					i(82184),	-- Snowy Shield
+					i(82239),	-- Highpeak Shield
+					i(82294),	-- Temple Shield
+					i(87486),	-- Skyrider's Shining Shield
+					i(87487),	-- Turpster's Sonorous Shield
+					i(87488),	-- Don Carlos' Drifting Shield
+					i(87641),	-- Yaungol Battle Barrier
+					i(90575),	-- Sutiru's Brazen Bulwark
+					i(94214),	-- Loa-Binder Disc
+					i(94218),	-- Skyking Bulwark
 				}),
 				n(-342, { -- Staves
-					i(116469),
-					i(116470),
-					i(82002),
-					i(82014),
-					i(82057),
-					i(82058),
-					i(82112),
-					i(82113),
-					i(82167),
-					i(82168),
-					i(82222),
-					i(82223),
-					i(82277),
-					i(82278),
-					i(87417),
-					i(87419),
-					i(87422),
-					i(94095),
-					i(94097),
-					i(94104),
+					i(116469),	-- Frostbitten Staff
+					i(116470),	-- Frostbitten Staff
+					i(82002),	-- Polished Staff
+					i(82014),	-- Polished Staff
+					i(82057),	-- Bronzed Staff
+					i(82058),	-- Bronzed Staff
+					i(82112),	-- Barbarian Staff
+					i(82113),	-- Barbarian Staff
+					i(82167),	-- Rigid Staff
+					i(82168),	-- Rigid Staff
+					i(82222),	-- Inlaid Staff
+					i(82223),	-- Inlaid Staff
+					i(82277),	-- Engraved Staff
+					i(82278),	-- Engraved Staff
+					i(87417),	-- Staff of Broken Hopes
+					i(87419),	-- Kaleiki's Lost Training Staff
+					i(87422),	-- Matsuba's Breadmaker
+					i(94095),	-- Thunder Eagle Staff
+					i(94097),	-- Defective Soulgem Staff
+					i(94104),	-- Sky-Shaper Staff
 				}),
 				n(-338, { -- 1H Swords
-					i(116471),
-					i(82001),
-					i(82059),
-					i(82114),
-					i(82169),
-					i(82224),
-					i(82279),
-					i(87466),
-					i(87510),
-					i(87511),
-					i(88150),
-					i(94093),
-					i(94217),
+					i(116471),	-- Frostbitten Sword
+					i(82001),	-- Polished Sword
+					i(82059),	-- Bronzed Sword
+					i(82114),	-- Barbarian Sword
+					i(82169),	-- Rigid Sword
+					i(82224),	-- Inlaid Sword
+					i(82279),	-- Engraved Sword
+					i(87466),	-- Ritualistic Sickle
+					i(87510),	-- Buc-Zakai Bugslicer
+					i(87511),	-- Horrifying Meatsaw
+					i(88150),	-- Krol Scimitar
+					i(94093),	-- Saur-Singer Spellblade
+					i(94217),	-- Stubby Talonblade
 				}),
 				n(-339, { -- 2H Swords
-					i(116472),
-					i(82000),
-					i(82050),
-					i(82105),
-					i(82160),
-					i(82215),
-					i(82270),
-					i(87423),
+					i(116472),	-- Frostbitten Greatsword
+					i(82000),	-- Polished Greatsword
+					i(82050),	-- Bronzed Greatsword
+					i(82105),	-- Barbarian Greatsword
+					i(82160),	-- Rigid Greatsword
+					i(82215),	-- Inlaid Greatsword
+					i(82270),	-- Engraved Greatsword
+					i(87423),	-- Bjam's Door-Breaker
 				}),
 				n(-341, { -- Wands
-					i(116473),
-					i(81998),
-					i(82066),
-					i(82121),
-					i(82176),
-					i(82231),
-					i(82286),
-					i(87475),
-					i(87478),
-					i(94092),
+					i(116473),	-- Coldsinger Wand
+					i(81998),	-- Intricate Wand
+					i(82066),	-- Gemmed Wand
+					i(82121),	-- Shamanic Wand
+					i(82176),	-- Grummle Wand
+					i(82231),	-- Bejeweled Wand
+					i(82286),	-- Immaculate Wand
+					i(87475),	-- Wand of Stultifying Smoke
+					i(87478),	-- Wand of the Exiled Path
+					i(94092),	-- Rustic Voodoo Wand
 				}),
 			}),	
 		},

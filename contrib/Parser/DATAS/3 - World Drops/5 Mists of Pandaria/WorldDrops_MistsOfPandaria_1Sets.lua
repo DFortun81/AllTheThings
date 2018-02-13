@@ -6,265 +6,265 @@ _.WorldDrops =
 	{
 		["groups"] = {
 			n(-1000, { -- Sets
-				i(94052),
-				i(94053),
-				i(94054),
-				i(94055),
-				i(94056),
-				i(94057),
-				i(94213),
-				i(82139),
-				i(82140),
-				i(82141),
-				i(82142),
-				i(82143),
-				i(82144),
-				i(82145),
-				i(82146),
-				i(82067),
-				i(82068),
-				i(82069),
-				i(82070),
-				i(82071),
-				i(82072),
-				i(82073),
-				i(82075),
-				i(94077),
-				i(94078),
-				i(94079),
-				i(94080),
-				i(94081),
-				i(94082),
-				i(94083),
-				i(94084),
-				i(94261),
-				i(94044),
-				i(94045),
-				i(94046),
-				i(94047),
-				i(94048),
-				i(94049),
-				i(94050),
-				i(94051),
-				i(94058),
-				i(94059),
-				i(94060),
-				i(94061),
-				i(94062),
-				i(94063),
-				i(94029),
-				i(94065),
-				i(94262),
-				i(94036),
-				i(94037),
-				i(94038),
-				i(94039),
-				i(94040),
-				i(94041),
-				i(94042),
-				i(94064),
-				i(94066),
-				i(94067),
-				i(82084),
-				i(82085),
-				i(82086),
-				i(82087),
-				i(82088),
-				i(82089),
-				i(82090),
-				i(82091),
-				i(82232),
-				i(82233),
-				i(82234),
-				i(82235),
-				i(82236),
-				i(82237),
-				i(82238),
-				i(82240),
-				i(94216),
-				i(82122),
-				i(82123),
-				i(82124),
-				i(82125),
-				i(82126),
-				i(82127),
-				i(82128),
-				i(82130),
-				i(82186),
-				i(82187),
-				i(82188),
-				i(82189),
-				i(82190),
-				i(82191),
-				i(82192),
-				i(82193),
-				i(82092),
-				i(82093),
-				i(82094),
-				i(82095),
-				i(82096),
-				i(82097),
-				i(82098),
-				i(82099),
-				i(94030),
-				i(94031),
-				i(94032),
-				i(94033),
-				i(94034),
-				i(94035),
-				i(94043),
-				i(82029),
-				i(82030),
-				i(82031),
-				i(82032),
-				i(82033),
-				i(82034),
-				i(82035),
-				i(82036),
-				i(81982),
-				i(81983),
-				i(81984),
-				i(81985),
-				i(81986),
-				i(81987),
-				i(81988),
-				i(81989),
-				i(81974),
-				i(81975),
-				i(81976),
-				i(81977),
-				i(81978),
-				i(81979),
-				i(81980),
-				i(81981),
-				i(82076),
-				i(82077),
-				i(82078),
-				i(82079),
-				i(82080),
-				i(82081),
-				i(82082),
-				i(82083),
-				i(82177),
-				i(82178),
-				i(82179),
-				i(82180),
-				i(82181),
-				i(82182),
-				i(82183),
-				i(82185),
-				i(82021),
-				i(82022),
-				i(82023),
-				i(82024),
-				i(82025),
-				i(82026),
-				i(82027),
-				i(82028),
-				i(81966),
-				i(81967),
-				i(81968),
-				i(81969),
-				i(81970),
-				i(81971),
-				i(81972),
-				i(81973),
-				i(82147),
-				i(82148),
-				i(82149),
-				i(82150),
-				i(82151),
-				i(82152),
-				i(82153),
-				i(82154),
-				i(94085),
-				i(94086),
-				i(94087),
-				i(94088),
-				i(94089),
-				i(94090),
-				i(94091),
-				i(94211),
-				i(82287),
-				i(82288),
-				i(82289),
-				i(82290),
-				i(82291),
-				i(82292),
-				i(82293),
-				i(82295),
-				i(82202),
-				i(82203),
-				i(82204),
-				i(82205),
-				i(82206),
-				i(82207),
-				i(82208),
-				i(82209),
-				i(102348),
-				i(94070),
-				i(94071),
-				i(94072),
-				i(94073),
-				i(94074),
-				i(94075),
-				i(94076),
-				i(82194),
-				i(82195),
-				i(82196),
-				i(82197),
-				i(82198),
-				i(82199),
-				i(82200),
-				i(82201),
-				i(82257),
-				i(82258),
-				i(82259),
-				i(82260),
-				i(82261),
-				i(82262),
-				i(82263),
-				i(82264),
-				i(81990),
-				i(81991),
-				i(81992),
-				i(81993),
-				i(81994),
-				i(81995),
-				i(81996),
-				i(81997),
-				i(82249),
-				i(82250),
-				i(82251),
-				i(82252),
-				i(82253),
-				i(82254),
-				i(82255),
-				i(82256),
-				i(82037),
-				i(82038),
-				i(82039),
-				i(82040),
-				i(82041),
-				i(82042),
-				i(82043),
-				i(82044),
-				i(82131),
-				i(82132),
-				i(82133),
-				i(82134),
-				i(82135),
-				i(82136),
-				i(82137),
-				i(82138),
-				i(82241),
-				i(82242),
-				i(82243),
-				i(82244),
-				i(82245),
-				i(82246),
-				i(82247),
-				i(82248),
+				i(94056),	-- Battered Saurscale Belt
+				i(94057),	-- Battered Saurscale Boots
+				i(94055),	-- Battered Saurscale Bracers
+				i(94052),	-- Battered Saurscale Chestpiece
+				i(94054),	-- Battered Saurscale Gloves
+				i(94053),	-- Battered Saurscale Leggings
+				i(94213),	-- Bloodtusk Shoulderpads
+				i(82139),	-- Brewer's Cord
+				i(82140),	-- Brewer's Cowl
+				i(82141),	-- Brewer's Handwraps
+				i(82142),	-- Brewer's Leggings
+				i(82143),	-- Brewer's Robe
+				i(82144),	-- Brewer's Sandals
+				i(82145),	-- Brewer's Shoulderpads
+				i(82146),	-- Brewer's Wristwraps
+				i(82067),	-- Brick Breastplate
+				i(82068),	-- Brick Gauntlets
+				i(82069),	-- Brick Girdle
+				i(82070),	-- Brick Helm
+				i(82071),	-- Brick Legplates
+				i(82072),	-- Brick Pauldrons
+				i(82073),	-- Brick Sabatons
+				i(82075),	-- Brick Vambraces
+				i(94079),	-- Brittle Flamereaver Belt
+				i(94084),	-- Brittle Flamereaver Bracers
+				i(94083),	-- Brittle Flamereaver Gloves
+				i(94081),	-- Brittle Flamereaver Hauberk
+				i(94082),	-- Brittle Flamereaver Leggings
+				i(94077),	-- Brittle Flamereaver Mask
+				i(94080),	-- Brittle Flamereaver Pauldrons
+				i(94078),	-- Brittle Flamereaver Treads
+				i(94261),	-- Deathbog Hauberk
+				i(94045),	-- Discarded Swampstalker Belt
+				i(94049),	-- Discarded Swampstalker Boots
+				i(94044),	-- Discarded Swampstalker Gloves
+				i(94046),	-- Discarded Swampstalker Headband
+				i(94047),	-- Discarded Swampstalker Leggings
+				i(94048),	-- Discarded Swampstalker Shoulders
+				i(94050),	-- Discarded Swampstalker Tunic
+				i(94051),	-- Discarded Swampstalker Wrists
+				i(94063),	-- Exiled Dabbler's Bracer
+				i(94059),	-- Exiled Dabbler's Cinch
+				i(94062),	-- Exiled Dabbler's Gloves
+				i(94061),	-- Exiled Dabbler's Leggings
+				i(94060),	-- Exiled Dabbler's Mantle
+				i(94058),	-- Exiled Dabbler's Robe
+				i(94262),	-- Faded Spirit-Wrencher Cage
+				i(94065),	-- Faded Spirit-Wrencher Robe
+				i(94029),	-- Faded Spirit-Wrencher Shoulders
+				i(94041),	-- Forgotten Peacekeeper Armguards
+				i(94040),	-- Forgotten Peacekeeper Belt
+				i(94037),	-- Forgotten Peacekeeper Boots
+				i(94039),	-- Forgotten Peacekeeper Breastplate
+				i(94038),	-- Forgotten Peacekeeper Gauntlets
+				i(94036),	-- Forgotten Peacekeeper Leggings
+				i(94042),	-- Forgotten Peacekeeper Shoulders
+				i(94066),	-- Forlorn Loa-Binder Cage
+				i(94064),	-- Forlorn Loa-Binder Robe
+				i(94067),	-- Forlorn Loa-Binder Shoulders
+				i(82084),	-- Growing Cord
+				i(82085),	-- Growing Cowl
+				i(82086),	-- Growing Handwraps
+				i(82087),	-- Growing Leggings
+				i(82088),	-- Growing Robe
+				i(82089),	-- Growing Sandals
+				i(82090),	-- Growing Shoulderpads
+				i(82091),	-- Growing Wristwraps
+				i(82232),	-- Highpeak Breastplate
+				i(82233),	-- Highpeak Gauntlets
+				i(82234),	-- Highpeak Girdle
+				i(82235),	-- Highpeak Helm
+				i(82236),	-- Highpeak Legplates
+				i(82237),	-- Highpeak Pauldrons
+				i(82238),	-- Highpeak Sabatons
+				i(82240),	-- Highpeak Vambraces
+				i(94216),	-- Lifestep Treads
+				i(82122),	-- Miner Breastplate
+				i(82123),	-- Miner Gauntlets
+				i(82124),	-- Miner Girdle
+				i(82125),	-- Miner Helm
+				i(82126),	-- Miner Legplates
+				i(82127),	-- Miner Pauldrons
+				i(82128),	-- Miner Sabatons
+				i(82130),	-- Miner Vambraces
+				i(82186),	-- Mountain Belt
+				i(82187),	-- Mountain Bracers
+				i(82188),	-- Mountain Gauntlets
+				i(82189),	-- Mountain Greaves
+				i(82190),	-- Mountain Helm
+				i(82191),	-- Mountain Legguards
+				i(82192),	-- Mountain Spaulders
+				i(82193),	-- Mountain Vest
+				i(82092),	-- Mushan Hide Bindings
+				i(82093),	-- Mushan Hide Boots
+				i(82094),	-- Mushan Hide Britches
+				i(82095),	-- Mushan Hide Gloves
+				i(82096),	-- Mushan Hide Hood
+				i(82097),	-- Mushan Hide Jerkin
+				i(82098),	-- Mushan Hide Shoulders
+				i(82099),	-- Mushan Hide Waistband
+				i(94035),	-- Primordial Bloodsoaked Belt
+				i(94034),	-- Primordial Bloodsoaked Breastplate
+				i(94032),	-- Primordial Bloodsoaked Gauntlets
+				i(94033),	-- Primordial Bloodsoaked Greaves
+				i(94030),	-- Primordial Bloodsoaked Legplates
+				i(94031),	-- Primordial Bloodsoaked Pauldrons
+				i(94043),	-- Primordial Bloodsoaked Vambraces
+				i(82029),	-- Reed Cord
+				i(82030),	-- Reed Cowl
+				i(82031),	-- Reed Handwraps
+				i(82032),	-- Reed Leggings
+				i(82033),	-- Reed Robe
+				i(82034),	-- Reed Sandals
+				i(82035),	-- Reed Shoulderpads
+				i(82036),	-- Reed Wristwraps
+				i(81982),	-- Saurok Belt
+				i(81989),	-- Saurok Bracers
+				i(81986),	-- Saurok Gauntlets
+				i(81987),	-- Saurok Greaves
+				i(81985),	-- Saurok Helm
+				i(81984),	-- Saurok Legguards
+				i(81983),	-- Saurok Spaulders
+				i(81988),	-- Saurok Vest
+				i(81981),	-- Silent Bindings
+				i(81979),	-- Silent Boots
+				i(81976),	-- Silent Britches
+				i(81978),	-- Silent Gloves
+				i(81977),	-- Silent Hood
+				i(81980),	-- Silent Jerkin
+				i(81975),	-- Silent Shoulders
+				i(81974),	-- Silent Waistband
+				i(82076),	-- Snake Belt
+				i(82077),	-- Snake Bracers
+				i(82078),	-- Snake Gauntlets
+				i(82079),	-- Snake Greaves
+				i(82080),	-- Snake Helm
+				i(82081),	-- Snake Legguards
+				i(82082),	-- Snake Spaulders
+				i(82083),	-- Snake Vest
+				i(82177),	-- Snowy Breastplate
+				i(82178),	-- Snowy Gauntlets
+				i(82179),	-- Snowy Girdle
+				i(82180),	-- Snowy Helm
+				i(82181),	-- Snowy Legplates
+				i(82182),	-- Snowy Pauldrons
+				i(82183),	-- Snowy Sabatons
+				i(82185),	-- Snowy Vambraces
+				i(82021),	-- Steppe Belt
+				i(82022),	-- Steppe Bracers
+				i(82023),	-- Steppe Gauntlets
+				i(82024),	-- Steppe Greaves
+				i(82025),	-- Steppe Helm
+				i(82026),	-- Steppe Legguards
+				i(82027),	-- Steppe Spaulders
+				i(82028),	-- Steppe Vest
+				i(81966),	-- Stitched Cord
+				i(81969),	-- Stitched Cowl
+				i(81970),	-- Stitched Handwraps
+				i(81968),	-- Stitched Leggings
+				i(81972),	-- Stitched Robe
+				i(81971),	-- Stitched Sandals
+				i(81967),	-- Stitched Shoulderpads
+				i(81973),	-- Stitched Wristwraps
+				i(82147),	-- Swamp Bindings
+				i(82148),	-- Swamp Boots
+				i(82149),	-- Swamp Britches
+				i(82150),	-- Swamp Gloves
+				i(82151),	-- Swamp Hood
+				i(82152),	-- Swamp Jerkin
+				i(82153),	-- Swamp Shoulders
+				i(82154),	-- Swamp Waistband
+				i(94085),	-- Tarnished Fanatic's Battlevest
+				i(94089),	-- Tarnished Fanatic's Deathgrips
+				i(94087),	-- Tarnished Fanatic's Girdle
+				i(94211),	-- Tarnished Fanatic's Headcover
+				i(94091),	-- Tarnished Fanatic's Pauldrons
+				i(94090),	-- Tarnished Fanatic's Shackles
+				i(94086),	-- Tarnished Fanatic's Warboots
+				i(94088),	-- Tarnished Fanatic's Wargreaves
+				i(82287),	-- Temple Breastplate
+				i(82288),	-- Temple Gauntlets
+				i(82289),	-- Temple Girdle
+				i(82290),	-- Temple Helm
+				i(82291),	-- Temple Legplates
+				i(82292),	-- Temple Pauldrons
+				i(82293),	-- Temple Sabatons
+				i(82295),	-- Temple Vambraces
+				i(82202),	-- Thresher Bindings
+				i(82203),	-- Thresher Boots
+				i(82204),	-- Thresher Britches
+				i(82205),	-- Thresher Gloves
+				i(82206),	-- Thresher Hood
+				i(82207),	-- Thresher Jerkin
+				i(82208),	-- Thresher Shoulders
+				i(82209),	-- Thresher Waistband
+				i(94075),	-- Timeworn Shadowtooth Belt
+				i(94070),	-- Timeworn Shadowtooth Boots
+				i(94072),	-- Timeworn Shadowtooth Cuirass
+				i(102348),	-- Timeworn Shadowtooth Faceguard
+				i(94071),	-- Timeworn Shadowtooth Grips
+				i(94076),	-- Timeworn Shadowtooth Shoulderpads
+				i(94074),	-- Timeworn Shadowtooth Trousers
+				i(94073),	-- Timeworn Shadowtooth Wristwraps
+				i(82194),	-- Trellised Cord
+				i(82195),	-- Trellised Cowl
+				i(82196),	-- Trellised Handwraps
+				i(82197),	-- Trellised Leggings
+				i(82198),	-- Trellised Robe
+				i(82199),	-- Trellised Sandals
+				i(82200),	-- Trellised Shoulderpads
+				i(82201),	-- Trellised Wristwraps
+				i(82257),	-- Vine Bindings
+				i(82258),	-- Vine Boots
+				i(82259),	-- Vine Britches
+				i(82260),	-- Vine Gloves
+				i(82261),	-- Vine Hood
+				i(82262),	-- Vine Jerkin
+				i(82263),	-- Vine Shoulders
+				i(82264),	-- Vine Waistband
+				i(81996),	-- Wall Breastplate
+				i(81994),	-- Wall Gauntlets
+				i(81990),	-- Wall Girdle
+				i(81993),	-- Wall Helm
+				i(81992),	-- Wall Legplates
+				i(81991),	-- Wall Pauldrons
+				i(81995),	-- Wall Sabatons
+				i(81997),	-- Wall Vambraces
+				i(82249),	-- Waterfall Cord
+				i(82250),	-- Waterfall Cowl
+				i(82251),	-- Waterfall Handwraps
+				i(82252),	-- Waterfall Leggings
+				i(82253),	-- Waterfall Robe
+				i(82254),	-- Waterfall Sandals
+				i(82255),	-- Waterfall Shoulderpads
+				i(82256),	-- Waterfall Wristwraps
+				i(82037),	-- Whisper Bindings
+				i(82038),	-- Whisper Boots
+				i(82039),	-- Whisper Britches
+				i(82040),	-- Whisper Gloves
+				i(82041),	-- Whisper Hood
+				i(82042),	-- Whisper Jerkin
+				i(82043),	-- Whisper Shoulders
+				i(82044),	-- Whisper Waistband
+				i(82131),	-- Willow Belt
+				i(82132),	-- Willow Bracers
+				i(82133),	-- Willow Gauntlets
+				i(82134),	-- Willow Greaves
+				i(82135),	-- Willow Helm
+				i(82136),	-- Willow Legguards
+				i(82137),	-- Willow Spaulders
+				i(82138),	-- Willow Vest
+				i(82241),	-- Yak Belt
+				i(82242),	-- Yak Bracers
+				i(82243),	-- Yak Gauntlets
+				i(82244),	-- Yak Greaves
+				i(82245),	-- Yak Helm
+				i(82246),	-- Yak Legguards
+				i(82247),	-- Yak Spaulders
+				i(82248),	-- Yak Vest
 			}),	
 		},
 		["Lvl"] = 86,
