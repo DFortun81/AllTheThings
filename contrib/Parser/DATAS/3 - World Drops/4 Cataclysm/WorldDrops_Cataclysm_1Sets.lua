@@ -6,294 +6,294 @@ _.WorldDrops =
 	{
 		["groups"] = {
 			n(-1000, { -- Sets
-				i(55635),
-				i(55644),
-				i(55653),
-				i(55662),
-				i(55671),
-				i(55680),
-				i(55689),
-				i(55698),
-				i(55704),
-				i(55713),
-				i(55722),
-				i(55731),
-				i(55740),
-				i(55749),
-				i(55758),
-				i(55767),
-				i(55706),
-				i(55715),
-				i(55724),
-				i(55733),
-				i(55742),
-				i(55751),
-				i(55760),
-				i(55769),
-				i(55711),
-				i(55720),
-				i(55729),
-				i(55738),
-				i(55747),
-				i(55756),
-				i(55765),
-				i(55774),
-				i(55563),
-				i(55572),
-				i(55581),
-				i(55590),
-				i(55599),
-				i(55608),
-				i(55617),
-				i(55626),
-				i(55708),
-				i(55717),
-				i(55726),
-				i(55735),
-				i(55744),
-				i(55753),
-				i(55762),
-				i(55771),
-				i(55495),
-				i(55504),
-				i(55513),
-				i(55522),
-				i(55531),
-				i(55540),
-				i(55549),
-				i(55558),
-				i(55637),
-				i(55646),
-				i(55655),
-				i(55664),
-				i(55673),
-				i(55682),
-				i(55691),
-				i(55700),
-				i(55707),
-				i(55716),
-				i(55725),
-				i(55734),
-				i(55743),
-				i(55752),
-				i(55761),
-				i(55770),
-				i(55491),
-				i(55500),
-				i(55509),
-				i(55518),
-				i(55527),
-				i(55536),
-				i(55545),
-				i(55554),
-				i(55488),
-				i(55497),
-				i(55506),
-				i(55515),
-				i(55524),
-				i(55533),
-				i(55542),
-				i(55551),
-				i(55709),
-				i(55718),
-				i(55727),
-				i(55736),
-				i(55745),
-				i(55754),
-				i(55763),
-				i(55772),
-				i(55492),
-				i(55501),
-				i(55510),
-				i(55519),
-				i(55528),
-				i(55537),
-				i(55546),
-				i(55555),
-				i(55568),
-				i(55577),
-				i(55586),
-				i(55595),
-				i(55604),
-				i(55613),
-				i(55622),
-				i(55631),
-				i(55712),
-				i(55721),
-				i(55730),
-				i(55739),
-				i(55748),
-				i(55757),
-				i(55766),
-				i(55775),
-				i(55638),
-				i(55647),
-				i(55656),
-				i(55665),
-				i(55674),
-				i(55683),
-				i(55692),
-				i(55701),
-				i(55565),
-				i(55574),
-				i(55583),
-				i(55592),
-				i(55601),
-				i(55610),
-				i(55619),
-				i(55628),
-				i(55564),
-				i(55573),
-				i(55582),
-				i(55591),
-				i(55600),
-				i(55609),
-				i(55618),
-				i(55627),
-				i(55490),
-				i(55499),
-				i(55508),
-				i(55517),
-				i(55526),
-				i(55535),
-				i(55544),
-				i(55553),
-				i(55705),
-				i(55714),
-				i(55723),
-				i(55732),
-				i(55741),
-				i(55750),
-				i(55759),
-				i(55768),
-				i(55633),
-				i(55642),
-				i(55651),
-				i(55660),
-				i(55669),
-				i(55678),
-				i(55687),
-				i(55696),
-				i(55710),
-				i(55719),
-				i(55728),
-				i(55737),
-				i(55746),
-				i(55755),
-				i(55764),
-				i(55773),
-				i(55560),
-				i(55569),
-				i(55578),
-				i(55587),
-				i(55596),
-				i(55605),
-				i(55614),
-				i(55623),
-				i(55640),
-				i(55649),
-				i(55658),
-				i(55667),
-				i(55676),
-				i(55685),
-				i(55694),
-				i(55703),
-				i(55493),
-				i(55502),
-				i(55511),
-				i(55520),
-				i(55529),
-				i(55538),
-				i(55547),
-				i(55556),
-				i(55639),
-				i(55648),
-				i(55657),
-				i(55666),
-				i(55675),
-				i(55684),
-				i(55693),
-				i(55702),
-				i(55489),
-				i(55498),
-				i(55507),
-				i(55516),
-				i(55525),
-				i(55534),
-				i(55543),
-				i(55552),
-				i(55636),
-				i(55645),
-				i(55654),
-				i(55663),
-				i(55672),
-				i(55681),
-				i(55690),
-				i(55699),
-				i(55561),
-				i(55570),
-				i(55579),
-				i(55588),
-				i(55597),
-				i(55606),
-				i(55615),
-				i(55624),
-				i(55632),
-				i(55641),
-				i(55650),
-				i(55659),
-				i(55668),
-				i(55677),
-				i(55686),
-				i(55695),
-				i(55496),
-				i(55505),
-				i(55514),
-				i(55523),
-				i(55532),
-				i(55541),
-				i(55550),
-				i(55559),
-				i(55494),
-				i(55503),
-				i(55512),
-				i(55521),
-				i(55530),
-				i(55539),
-				i(55548),
-				i(55557),
-				i(55562),
-				i(55571),
-				i(55580),
-				i(55589),
-				i(55598),
-				i(55607),
-				i(55616),
-				i(55625),
-				i(55567),
-				i(55576),
-				i(55585),
-				i(55594),
-				i(55603),
-				i(55612),
-				i(55621),
-				i(55630),
-				i(55566),
-				i(55575),
-				i(55584),
-				i(55593),
-				i(55602),
-				i(55611),
-				i(55620),
-				i(55629),
-				i(55634),
-				i(55643),
-				i(55652),
-				i(55661),
-				i(55670),
-				i(55679),
-				i(55688),
-				i(55697),		
+				i(55635),	-- Aboraz Bindings
+				i(55653),	-- Aboraz Boots
+				i(55680),	-- Aboraz Britches
+				i(55662),	-- Aboraz Gloves
+				i(55671),	-- Aboraz Hood
+				i(55644),	-- Aboraz Jerkin
+				i(55689),	-- Aboraz Shoulders
+				i(55698),	-- Aboraz Waistband
+				i(55767),	-- Ameth'Aran Cord
+				i(55740),	-- Ameth'Aran Cowl
+				i(55731),	-- Ameth'Aran Handwraps
+				i(55749),	-- Ameth'Aran Leggings
+				i(55713),	-- Ameth'Aran Robe
+				i(55722),	-- Ameth'Aran Sandals
+				i(55758),	-- Ameth'Aran Shoulderpads
+				i(55704),	-- Ameth'Aran Wristwraps
+				i(55769),	-- Baradin Cord
+				i(55742),	-- Baradin Cowl
+				i(55733),	-- Baradin Handwraps
+				i(55751),	-- Baradin Leggings
+				i(55715),	-- Baradin Robe
+				i(55724),	-- Baradin Sandals
+				i(55760),	-- Baradin Shoulderpads
+				i(55706),	-- Baradin Wristwraps
+				i(55774),	-- Bluefen Cord
+				i(55747),	-- Bluefen Cowl
+				i(55738),	-- Bluefen Handwraps
+				i(55756),	-- Bluefen Leggings
+				i(55720),	-- Bluefen Robe
+				i(55729),	-- Bluefen Sandals
+				i(55765),	-- Bluefen Shoulderpads
+				i(55711),	-- Bluefen Wristwraps
+				i(55626),	-- Bramblescar Belt
+				i(55563),	-- Bramblescar Bracers
+				i(55590),	-- Bramblescar Gauntlets
+				i(55581),	-- Bramblescar Greaves
+				i(55599),	-- Bramblescar Helm
+				i(55608),	-- Bramblescar Legguards
+				i(55617),	-- Bramblescar Spaulders
+				i(55572),	-- Bramblescar Vest
+				i(55771),	-- Brightwood Cord
+				i(55744),	-- Brightwood Cowl
+				i(55735),	-- Brightwood Handwraps
+				i(55753),	-- Brightwood Leggings
+				i(55717),	-- Brightwood Robe
+				i(55726),	-- Brightwood Sandals
+				i(55762),	-- Brightwood Shoulderpads
+				i(55708),	-- Brightwood Wristwraps
+				i(55504),	-- Crystalvein Breastplate
+				i(55522),	-- Crystalvein Gauntlets
+				i(55558),	-- Crystalvein Girdle
+				i(55531),	-- Crystalvein Helm
+				i(55540),	-- Crystalvein Legplates
+				i(55549),	-- Crystalvein Pauldrons
+				i(55513),	-- Crystalvein Sabatons
+				i(55495),	-- Crystalvein Vambraces
+				i(55637),	-- Dandred Bindings
+				i(55655),	-- Dandred Boots
+				i(55682),	-- Dandred Britches
+				i(55664),	-- Dandred Gloves
+				i(55673),	-- Dandred Hood
+				i(55646),	-- Dandred Jerkin
+				i(55691),	-- Dandred Shoulders
+				i(55700),	-- Dandred Waistband
+				i(55770),	-- Darrowmere Cord
+				i(55743),	-- Darrowmere Cowl
+				i(55734),	-- Darrowmere Handwraps
+				i(55752),	-- Darrowmere Leggings
+				i(55716),	-- Darrowmere Robe
+				i(55725),	-- Darrowmere Sandals
+				i(55761),	-- Darrowmere Shoulderpads
+				i(55707),	-- Darrowmere Wristwraps
+				i(55500),	-- Direforge Breastplate
+				i(55518),	-- Direforge Gauntlets
+				i(55554),	-- Direforge Girdle
+				i(55527),	-- Direforge Helm
+				i(55536),	-- Direforge Legplates
+				i(55545),	-- Direforge Pauldrons
+				i(55509),	-- Direforge Sabatons
+				i(55491),	-- Direforge Vambraces
+				i(55497),	-- Dreadmaul Breastplate
+				i(55515),	-- Dreadmaul Gauntlets
+				i(55551),	-- Dreadmaul Girdle
+				i(55524),	-- Dreadmaul Helm
+				i(55533),	-- Dreadmaul Legplates
+				i(55542),	-- Dreadmaul Pauldrons
+				i(55506),	-- Dreadmaul Sabatons
+				i(55488),	-- Dreadmaul Vambraces
+				i(55772),	-- Everstill Cord
+				i(55745),	-- Everstill Cowl
+				i(55736),	-- Everstill Handwraps
+				i(55754),	-- Everstill Leggings
+				i(55718),	-- Everstill Robe
+				i(55727),	-- Everstill Sandals
+				i(55763),	-- Everstill Shoulderpads
+				i(55709),	-- Everstill Wristwraps
+				i(55501),	-- Fargodeep Breastplate
+				i(55519),	-- Fargodeep Gauntlets
+				i(55555),	-- Fargodeep Girdle
+				i(55528),	-- Fargodeep Helm
+				i(55537),	-- Fargodeep Legplates
+				i(55546),	-- Fargodeep Pauldrons
+				i(55510),	-- Fargodeep Sabatons
+				i(55492),	-- Fargodeep Vambraces
+				i(55631),	-- Frayfeather Belt
+				i(55568),	-- Frayfeather Bracers
+				i(55595),	-- Frayfeather Gauntlets
+				i(55586),	-- Frayfeather Greaves
+				i(55604),	-- Frayfeather Helm
+				i(55613),	-- Frayfeather Legguards
+				i(55622),	-- Frayfeather Spaulders
+				i(55577),	-- Frayfeather Vest
+				i(55775),	-- Galardell Cord
+				i(55748),	-- Galardell Cowl
+				i(55739),	-- Galardell Handwraps
+				i(55757),	-- Galardell Leggings
+				i(55721),	-- Galardell Robe
+				i(55730),	-- Galardell Sandals
+				i(55766),	-- Galardell Shoulderpads
+				i(55712),	-- Galardell Wristwraps
+				i(55638),	-- Haldarr Bindings
+				i(55656),	-- Haldarr Boots
+				i(55683),	-- Haldarr Britches
+				i(55665),	-- Haldarr Gloves
+				i(55674),	-- Haldarr Hood
+				i(55647),	-- Haldarr Jerkin
+				i(55692),	-- Haldarr Shoulders
+				i(55701),	-- Haldarr Waistband
+				i(55628),	-- Highperch Belt
+				i(55565),	-- Highperch Bracers
+				i(55592),	-- Highperch Gauntlets
+				i(55583),	-- Highperch Greaves
+				i(55601),	-- Highperch Helm
+				i(55610),	-- Highperch Legguards
+				i(55619),	-- Highperch Spaulders
+				i(55574),	-- Highperch Vest
+				i(55627),	-- Hiri'watha Belt
+				i(55564),	-- Hiri'watha Bracers
+				i(55591),	-- Hiri'watha Gauntlets
+				i(55582),	-- Hiri'watha Greaves
+				i(55600),	-- Hiri'watha Helm
+				i(55609),	-- Hiri'watha Legguards
+				i(55618),	-- Hiri'watha Spaulders
+				i(55573),	-- Hiri'watha Vest
+				i(55499),	-- Jasperlode Breastplate
+				i(55517),	-- Jasperlode Gauntlets
+				i(55553),	-- Jasperlode Girdle
+				i(55526),	-- Jasperlode Helm
+				i(55535),	-- Jasperlode Legplates
+				i(55544),	-- Jasperlode Pauldrons
+				i(55508),	-- Jasperlode Sabatons
+				i(55490),	-- Jasperlode Vambraces
+				i(55768),	-- Mistmantle Cord
+				i(55741),	-- Mistmantle Cowl
+				i(55732),	-- Mistmantle Handwraps
+				i(55750),	-- Mistmantle Leggings
+				i(55714),	-- Mistmantle Robe
+				i(55723),	-- Mistmantle Sandals
+				i(55759),	-- Mistmantle Shoulderpads
+				i(55705),	-- Mistmantle Wristwraps
+				i(55633),	-- Mosshide Bindings
+				i(55651),	-- Mosshide Boots
+				i(55678),	-- Mosshide Britches
+				i(55660),	-- Mosshide Gloves
+				i(55669),	-- Mosshide Hood
+				i(55642),	-- Mosshide Jerkin
+				i(55687),	-- Mosshide Shoulders
+				i(55696),	-- Mosshide Waistband
+				i(55773),	-- Mystral Cord
+				i(55746),	-- Mystral Cowl
+				i(55737),	-- Mystral Handwraps
+				i(55755),	-- Mystral Leggings
+				i(55719),	-- Mystral Robe
+				i(55728),	-- Mystral Sandals
+				i(55764),	-- Mystral Shoulderpads
+				i(55710),	-- Mystral Wristwraps
+				i(55623),	-- Nazferiti Belt
+				i(55560),	-- Nazferiti Bracers
+				i(55587),	-- Nazferiti Gauntlets
+				i(55578),	-- Nazferiti Greaves
+				i(55596),	-- Nazferiti Helm
+				i(55605),	-- Nazferiti Legguards
+				i(55614),	-- Nazferiti Spaulders
+				i(55569),	-- Nazferiti Vest
+				i(55640),	-- Nighthaven Bindings
+				i(55658),	-- Nighthaven Boots
+				i(55685),	-- Nighthaven Britches
+				i(55667),	-- Nighthaven Gloves
+				i(55676),	-- Nighthaven Hood
+				i(55649),	-- Nighthaven Jerkin
+				i(55694),	-- Nighthaven Shoulders
+				i(55703),	-- Nighthaven Waistband
+				i(55502),	-- Ravencrest Breastplate
+				i(55520),	-- Ravencrest Gauntlets
+				i(55556),	-- Ravencrest Girdle
+				i(55529),	-- Ravencrest Helm
+				i(55538),	-- Ravencrest Legplates
+				i(55547),	-- Ravencrest Pauldrons
+				i(55511),	-- Ravencrest Sabatons
+				i(55493),	-- Ravencrest Vambraces
+				i(55639),	-- Ravenholdt Bindings
+				i(55657),	-- Ravenholdt Boots
+				i(55684),	-- Ravenholdt Britches
+				i(55666),	-- Ravenholdt Gloves
+				i(55675),	-- Ravenholdt Hood
+				i(55648),	-- Ravenholdt Jerkin
+				i(55693),	-- Ravenholdt Shoulders
+				i(55702),	-- Ravenholdt Waistband
+				i(55498),	-- Rethban Breastplate
+				i(55516),	-- Rethban Gauntlets
+				i(55552),	-- Rethban Girdle
+				i(55525),	-- Rethban Helm
+				i(55534),	-- Rethban Legplates
+				i(55543),	-- Rethban Pauldrons
+				i(55507),	-- Rethban Sabatons
+				i(55489),	-- Rethban Vambraces
+				i(55636),	-- Rocktusk Bindings
+				i(55654),	-- Rocktusk Boots
+				i(55681),	-- Rocktusk Britches
+				i(55663),	-- Rocktusk Gloves
+				i(55672),	-- Rocktusk Hood
+				i(55645),	-- Rocktusk Jerkin
+				i(55690),	-- Rocktusk Shoulders
+				i(55699),	-- Rocktusk Waistband
+				i(55624),	-- Southfury Belt
+				i(55561),	-- Southfury Bracers
+				i(55588),	-- Southfury Gauntlets
+				i(55579),	-- Southfury Greaves
+				i(55597),	-- Southfury Helm
+				i(55606),	-- Southfury Legguards
+				i(55615),	-- Southfury Spaulders
+				i(55570),	-- Southfury Vest
+				i(55632),	-- Stagalbog Bindings
+				i(55650),	-- Stagalbog Boots
+				i(55677),	-- Stagalbog Britches
+				i(55659),	-- Stagalbog Gloves
+				i(55668),	-- Stagalbog Hood
+				i(55641),	-- Stagalbog Jerkin
+				i(55686),	-- Stagalbog Shoulders
+				i(55695),	-- Stagalbog Waistband
+				i(55505),	-- Steelgrill Breastplate
+				i(55523),	-- Steelgrill Gauntlets
+				i(55559),	-- Steelgrill Girdle
+				i(55532),	-- Steelgrill Helm
+				i(55541),	-- Steelgrill Legplates
+				i(55550),	-- Steelgrill Pauldrons
+				i(55514),	-- Steelgrill Sabatons
+				i(55496),	-- Steelgrill Vambraces
+				i(55503),	-- Stonewrought Breastplate
+				i(55521),	-- Stonewrought Gauntlets
+				i(55557),	-- Stonewrought Girdle
+				i(55530),	-- Stonewrought Helm
+				i(55539),	-- Stonewrought Legplates
+				i(55548),	-- Stonewrought Pauldrons
+				i(55512),	-- Stonewrought Sabatons
+				i(55494),	-- Stonewrought Vambraces
+				i(55625),	-- Sundown Belt
+				i(55562),	-- Sundown Bracers
+				i(55589),	-- Sundown Gauntlets
+				i(55580),	-- Sundown Greaves
+				i(55598),	-- Sundown Helm
+				i(55607),	-- Sundown Legguards
+				i(55616),	-- Sundown Spaulders
+				i(55571),	-- Sundown Vest
+				i(55630),	-- Talondeep Belt
+				i(55567),	-- Talondeep Bracers
+				i(55594),	-- Talondeep Gauntlets
+				i(55585),	-- Talondeep Greaves
+				i(55603),	-- Talondeep Helm
+				i(55612),	-- Talondeep Legguards
+				i(55621),	-- Talondeep Spaulders
+				i(55576),	-- Talondeep Vest
+				i(55629),	-- Thornsnarl Belt
+				i(55566),	-- Thornsnarl Bracers
+				i(55593),	-- Thornsnarl Gauntlets
+				i(55584),	-- Thornsnarl Greaves
+				i(55602),	-- Thornsnarl Helm
+				i(55611),	-- Thornsnarl Legguards
+				i(55620),	-- Thornsnarl Spaulders
+				i(55575),	-- Thornsnarl Vest
+				i(55634),	-- Yojamba Bindings
+				i(55652),	-- Yojamba Boots
+				i(55679),	-- Yojamba Britches
+				i(55661),	-- Yojamba Gloves
+				i(55670),	-- Yojamba Hood
+				i(55643),	-- Yojamba Jerkin
+				i(55688),	-- Yojamba Shoulders
+				i(55697),	-- Yojamba Waistband
 			}),	
 		},
 		["Lvl"] = 77,
