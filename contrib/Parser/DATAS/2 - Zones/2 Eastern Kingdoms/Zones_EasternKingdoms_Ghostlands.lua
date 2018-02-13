@@ -94,7 +94,43 @@ _.Zones =
 					p(463),		-- Spirit Crab
 					p(420)		-- Toad
 				}),
-				n(-17, { 	-- Quests					
+				n(-17, { 	-- Quests
+				
+				
+				qh( 9327, {	-- The Forsaken
+					["groups"] = {
+					},
+					["qg"] = 16197,	-- Arcanist Vandril
+					["races"] = {10} -- Blood Elf
+				}),
+				qh( 9329, {	-- The Forsaken
+					["groups"] = {
+					},
+					["qg"] = 16197,	-- Arcanist Vandril					
+					["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 }, -- Horde, not Blood Elf
+				}),
+				
+				
+				
+				
+				
+				
+--[[							
+					["groups"] = {
+					},
+					["qg"] = ,	-- 
+					["sourceQuestID"] = {  },	-- 
+				}),
+--]]
+				
+				
+				
+				
+				
+				
+				
+				
+				
 --					qg(16464, qh( 9275)),	-- A Little Dash of Seasoning
 --					qh( 9877),	-- A Restorative Draught (LEGACY)
 					qg(16197, qh( 9488, {	-- A Simple Robe
@@ -229,12 +265,6 @@ _.Zones =
 					qg(16197, qh( 9138)),	-- Suncrown Village
 					qg(16196, qh( 9147)),	-- The Fallen Courier
 					qg(16239, qh( 9282)),	-- The Farstrider Enclave
-					qg(16197, qh( 9327, {	-- The Forsaken
-						["groups"] = {
-						},
-						["races"] = {10} -- Blood Elf
-					})),
-					qg(16197, qh( 9329)),	-- The Forsaken
 					n(16314, {	-- Fallen Ranger
 						i(22597, {	-- The Lady's Necklace
 							qh(9175),	-- The Lady's Necklace
