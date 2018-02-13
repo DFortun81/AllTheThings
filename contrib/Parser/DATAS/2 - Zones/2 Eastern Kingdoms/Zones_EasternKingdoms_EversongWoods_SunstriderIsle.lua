@@ -27,15 +27,15 @@ _.Zones =
 --]]					
 					n(-51, {     -- Noblegarden
 						["groups"] = {
+--[[
 							n(-17, { 	-- Quests
 								qg(32837, qh(13503, {	-- A Tisket, a Tasket, a Noblegarden Basket
 									i(45067),	-- Egg Basket
 								})),
---[[
 								qg(19169, qh(13483)),	-- Spring Gatherers
 								qg(32798, qh(13479)),	-- The Great Egg Hunt
---]]
 							}),
+--]]
 							n(-2, { -- Vendors
 								h(n(32837, { -- Noblegarden Merchant
 									i(74282),	-- Black Spring Circlet
@@ -165,7 +165,106 @@ _.Zones =
 --]]					
 				}),
 				n(-17, { 	-- Quests
---[[				
+					
+					
+					qh( 8350, {	-- Completing the Delivery
+						["groups"] = {
+						},
+						["qg"] = 15301,	-- Outrunner Alarion
+						["sourceQuestID"] = { 9705 },	-- Package Recovery
+					}),
+					
+					
+					qh( 9352, {	-- Darnassian Intrusions
+						["groups"] = {
+						},
+						["qg"] = 15403,	-- Aeldon Sunbrand
+						["sourceQuestID"] = { 8463 },	-- Unstable Mana Crystals
+					}),
+
+					
+					qh( 8895, {	-- Delivery to the North Sanctum
+						["groups"] = {
+						},
+						["qg"] = 15418,	-- Magister Jaronis
+						["sourceQuestID"] = { 8472 },	-- Major Malfunction
+					}),
+					
+					
+					qh( 8472, {	-- Major Malfunction
+						["groups"] = {
+						},
+						["qg"] = 15418,	-- Magister Jaronis
+					}),
+					
+					
+					qh( 9119, {	-- Malfunction at the West Sanctum
+						["groups"] = {
+						},
+						["qg"] = 15405,	-- Ley-Keeper Caidanis
+						["sourceQuestID"] = { 8895 },	-- Delivery to the North Sanctum
+					}),
+					
+					
+					qh( 9705, {	-- Package Recovery
+						["groups"] = {
+						},
+						["sourceQuestID"] = { 9704 },	-- Slain by the Wretched
+					}),
+					
+					
+					qh( 9035, {	-- Roadside Ambush
+						["groups"] = {
+						},
+						["qg"] = 15941,	-- Apprentice Ralen
+						["description"] = "This quest counts towards Loremaster and is unavailable after you do the quest Soaked Pages.",
+					}),
+
+					
+					qh( 9704, {	-- Slain by the Wretched
+						["groups"] = {
+						},
+						["qg"] = 15301,	-- Outrunner Alarion
+						["sourceBreadcrumbID"] = { 8347 },	-- Aiding the Outrunners (BLOOD ELF ONLY)
+					}),
+					
+					
+					qh( 9062, {	-- Soaked Pages
+						["groups"] = {
+						},
+						["qg"] = 15945,	-- Apprentice Meledor
+						["sourceBreadcrumbID"] = { 9035 },	-- Roadside Ambush
+						["description"] = "If you are working towards Loremaster, make sure you pick up Roadside Ambush before doing this quest - it counts toward the achievement and is unavailable after turning in Soaked Pages.",
+					}),
+
+					
+					qh( 8463, {	-- Unstable Mana Crystals
+						["groups"] = {
+						},
+						["qg"] = 15403,	-- Aeldon Sunbrand
+					}),
+					
+					
+					o(180918, {	-- Wanted: Thaelis the Hungerer
+						qh(8468),	-- Wanted: Thaelis the Hungerer
+					}),
+
+
+
+
+
+
+--[[							
+						["groups"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuestID"] = {  },	-- 
+					}),
+--]]
+
+				
+				
+				--[[				
 					qg(15398, qh( 8473)),	-- A Somber Task
 					o(181011, {	-- Magister Duskwither's Journal
 						qh(8891),	-- Abandoned Investigations
@@ -204,10 +303,8 @@ _.Zones =
 					}),					
 					qg(15969, qh( 8894)),	-- Cleaning up the Grounds
 					qg(15402, qh( 8487)),	-- Corrupted Soil
-					qg(15403, qh( 9352)),	-- Darnassian Intrusions
 					qg(15924, qh( 8889)),	-- Deactivating the Spire
 					qg(15942, qh( 9252)),	-- Defending Fairbreeze Village
-					qg(15418, qh( 8895)),	-- Delivery to the North Sanctum
 --]]					
 					qg(16183, qh( 9148, {	-- Delivery to Tranquillien
 						i( 28146),
@@ -248,8 +345,6 @@ _.Zones =
 					}),
 --					qh(14081),	-- Learn to Ride in the Eversong Woods (REMOVED)
 					qg(15404, qh( 8480)),	-- Lost Armaments
-					qg(15418, qh( 8472)),	-- Major Malfunction
-					qg(15405, qh( 9119)),	-- Malfunction at the West Sanctum
 					qg(16210, qh( 9144)),	-- Missing in the Ghostlands
 					n(15409, {	-- Old Whitebark
 						i(23228, {	-- Old Whitebark's Pendant
@@ -274,7 +369,6 @@ _.Zones =
 						},
 						["races"] = {10}, -- Blood Elf
 					})),
-					qg(15941, qh( 9035)),	-- Roadside Ambush
 					qg(15942, qh( 9253)),	-- Runewarden Deryan
 					qg(16210, qh( 9395)),	-- Saltheril's Haven
 					qg(15939, qh( 8892)),	-- Situation at Sunsail Anchorage
@@ -283,7 +377,6 @@ _.Zones =
 						},
 						["races"] = {10}, -- Blood Elf
 					})),
-					qg(15945, qh( 9062)),	-- Soaked Pages
 					qg(15970, qh( 9066)),	-- Swift Discipline
 					qg(15945, qh( 9064)),	-- Taking the Fall
 					qg(15416, qh( 8475)),	-- The Dead Scar
@@ -306,10 +399,6 @@ _.Zones =
 					qg(15400, qh( 8477)),	-- The Spearcrafter's Hammer
 					qg(16210, qh( 9254)),	-- The Wayward Apprentice					
 					qg(15402, qh( 8488)),	-- Unexpected Results
-					qg(15403, qh( 8463)),	-- Unstable Mana Crystals
-					o(180918, {	-- Wanted: Thaelis the Hungerer
-						qh(8468),	-- Wanted: Thaelis the Hungerer
-					}),
 					qg(15399, qh( 9363)),	-- Warning Fairbreeze Village
 					qg(15924, qh( 9394)),	-- Where's Wyllithen?
 					qg(15398, qh(10166)),	-- Whitebark's Memory
@@ -378,33 +467,79 @@ _.Zones =
 					})
 				}),
 				m(893, { 	-- Sunstrider Isle
-					["groups"] = {
---[[					
+					["groups"] = {					
 						n(-17, {	-- Quests
-							qg(15296, qh(37440)),	-- A Fistful of Slivers
-							qg(15296, qh( 8336)),	-- A Fistful of Slivers
-							qg(15281, qh( 8334)),	-- Aggression
-							qg(15281, qh( 8347)),	-- Aiding the Outrunners
-							qg(15301, qh( 8350)),	-- Completing the Delivery
-							qg(15281, qh( 8335)),	-- Felendren the Banished
-							qg(17849, qh( 9705)),	-- Package Recovery
-							qg(15278, qh( 8325)),	-- Reclaiming Sunstrider Isle
-							qg(15278, qh( 8327)),	-- Report to Lanthan Perilon
-							qg(15301, qh( 9704)),	-- Slain by the Wretched
-							qg(15295, qh( 8330)),	-- Solanian's Belongings
-							qg(15295, qh(37443)),	-- Solanian's Belongings
-							n(15298, {	-- Tainted Arcane Wraith
+							qh(37440, {	-- A Fistful of Slivers
+								["groups"] = {
+								},
+								["qg"] = 15296,	-- Arcanist Ithanas
+								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
+							}),
+							qh( 8334, {	-- Aggression
+								["groups"] = {
+								},
+								["qg"] = 15281,	-- Lanthan Perilon
+								["sourceQuestID"] = { 8327 },	-- Report to Lanthan Perilon
+							}),
+							qh( 8347, {	-- Aiding the Outrunners
+								["groups"] = {
+								},
+								["qg"] = 15281,	-- Lanthan Perilon
+								["sourceQuestID"] = { 8335 },	-- Felendren the Banished
+							}),
+							qh( 8335, {	-- Felendren the Banished
+								["groups"] = {
+								},
+								["qg"] = 15281,	-- Lanthan Perilon
+								["sourceQuestID"] = { 8334 },	-- Aggression
+							}),
+							qh( 8325, {	-- Reclaiming Sunstrider Isle
+								["groups"] = {
+								},
+								["qg"] = 15278,	-- Magistrix Erona
+							}),
+							qh( 8327, {	-- Report to Lanthan Perilon
+								["groups"] = {
+								},
+								["qg"] = 15278,	-- Magistrix Erona
+								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
+							}),
+							qh(37443, {	-- Solanian's Belongings
+								["groups"] = {
+								},
+								["qg"] = 15295,	-- Well Watcher Solanian
+								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
+							}),
+							n( 15298, {	-- Tainted Arcane Wraith
 								i(20483, {	-- Tainted Arcane Sliver
 									qh(8338),	-- Tainted Arcane Sliver
 								}),
 							}),
+							qh(37442, {	-- The Shrine of Dath'Remar
+								["groups"] = {
+								},
+								["qg"] = 15295,	-- Well Watcher Solanian
+								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
+							}),
+							qh(37439, {	-- Thirst Unending
+								["groups"] = {
+								},
+								["qg"] = 15297,	-- Arcanist Helion
+								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
+							}),
+							qh( 8326, {	-- Unfortunate Measures
+								["groups"] = {
+								},
+								["qg"] = 15278,	-- Magistrix Erona
+								["sourceQuestID"] = { 8325 },	-- Reclaiming Sunstrider Isle
+							}),
+--[[						It appears these four quests were replaced with newer versions.
+							qg(15296, qh( 8336)),	-- A Fistful of Slivers
+							qg(15295, qh( 8330)),	-- Solanian's Belongings
 							qg(15295, q(  8345)),	-- The Shrine of Dath'Remar
-							qg(15295, qh(37442)),	-- The Shrine of Dath'Remar
 							qg(15297, qh( 8346)),	-- Thirst Unending
-							qg(15297, qh(37439)),	-- Thirst Unending
-							qg(15278, qh( 8326)),	-- Unfortunate Measures
-						}),
---]]						
+--]]
+						}),						
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Bloodelf_Female",
 					["description"] = "|cff66ccffSunstrider Isle is an island located in northwestern Eversong Woods. After the Third War, no elf was alive on the isle. It was through here that the red dragon Korialstrasz flew over when Prince Kael'thas destroyed the corrupted Sunwell. By the year 25, the isle was reclaimed and thriving|r",

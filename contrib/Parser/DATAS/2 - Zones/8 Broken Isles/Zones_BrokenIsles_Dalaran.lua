@@ -213,10 +213,11 @@ _.Zones =
 				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
-						p(1778), -- Dust Bunny
-						qg(98725, qa( 45540)),	-- A Call from the Caverns
-						qg(115287, qh( 45540)),	-- A Call from the Caverns
-						qw(qg(111246, q( 44173))),	-- A Call to Battle
+						p(1915),	-- Blind Rat
+						p(1778),	-- Dust Bunny
+						qg(98725, qa(   45540)),	-- A Call from the Caverns
+						qg(115287, qh(  45540)),	-- A Call from the Caverns
+						qw(qg(111246, q(44173))),	-- A Call to Battle
 						ach(12431, {	-- Post Haste
 							i(156721),		-- Mailemental
 						}),
