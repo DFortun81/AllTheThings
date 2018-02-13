@@ -34,7 +34,7 @@ _.WorldDrops =
 					i(66985),	-- Termination Axe
 				}),	
 				n(-346, { -- Bows
-					i(111783),	-- Irontree Bow - item does not seem to exist in game - from what I could find, this item was never in game
+					--i(111783),	-- Irontree Bow - item does not seem to exist in game - from what I could find, this item was never in game
 					i(55299),	-- Razorwind Bow
 					i(55300),	-- Steelspark Bow
 					i(55301),	-- Angerfang Bow

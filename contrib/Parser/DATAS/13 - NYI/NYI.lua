@@ -290,7 +290,9 @@ i(28111),	-- Everlasting Underspore Frond
 -- Cloth
 -- Mail
 -- Plate
+i(67235),	-- Garr's Girdle of Memories - item does not seem to exist in game - Wowhead says removed/no longer available
 -- Leather
+i(67240),	-- Belt of a Thousand Mouths - item does not seem to exist in game - Wowhead says removed/no longer available
 -- Polearms
 -- Staves
 i(30313),	-- Staff of Disintegration (Temporary)
@@ -304,6 +306,7 @@ i(30311),	-- Warp Slicer (Temporary)
 -- Back
 -- Bows
 i(30318),	-- Netherstrand Longbow (Temporary)
+i(111783),	-- Irontree Bow - item does not seem to exist in game - from what I could find, this item was never in game but shares the same name and model of another item
 -- Guns
 -- Wands
 -- Two-Handed Axes
