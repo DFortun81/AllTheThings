@@ -17,116 +17,116 @@ _.Instances =
 								}),	
 							}),	
 							cr(77803, e(1138, {	-- Railmaster Rocketspark
-								i(110051),
-								i(109835),
-								i(109834),
-								i(109833),
-								i(109832),
-								i(109831),
-								i(109843),
-								i(109842),
-								i(109830),
-								i(109841),
-								i(109829),
-								i(109840),
-								i(109828),
-								i(109827),
-								i(109826),
-								i(109839),
-								i(109838),
-								i(109825),
-								i(109837),
-								i(109824),
-								i(109836)
+								i(110051),	-- Overseer's Final Word
+								i(109829),	-- Belt of Burning Focus
+								i(109842),	-- Blackwater Belt
+								i(109830),	-- Bloodfeather Girdle
+								i(109824),	-- Cord of Arcane Mystery
+								i(109826),	-- Cord of Swirling Light
+								i(109831),	-- Crystalbinder Belt
+								i(109828),	-- Felflame Belt
+								i(109825),	-- Frost-Touched Cord
+								i(109839),	-- Goldsteel Belt
+								i(109840),	-- Gutcrusher Greatbelt
+								i(109837),	-- Incarnadine Girdle
+								i(109836),	-- Lavalink Girdle
+								i(109832),	-- Leafmender Girdle
+								i(109827),	-- Lightbinder Girdle
+								i(109843),	-- Morningscale Waistguard
+								i(109841),	-- Rivet-Sealed Waistplate
+								i(109835),	-- Rockhide Links
+								i(109834),	-- Sharpeye Belt
+								i(109833),	-- Streamslither Belt
+								i(109838),	-- Verdant Plate Belt
 							})),
 							cr(79545, e(1163, {	-- Nitrogg Thundertower
-								i(110052),
-								i(109899),
-								i(109887),
-								i(109898),
-								i(109897),
-								i(109896),
-								i(109886),
-								i(109885),
-								i(109895),
-								i(109894),
-								i(109884),
-								i(109893),
-								i(109892),
-								i(109903),
-								i(109891),
-								i(109902),
-								i(109890),
-								i(109889),
-								i(109901),
-								i(109888),
-								i(109900)
+								i(110052),	-- Scepter of Brutality
+								i(109898),	-- Blackwater Wrap								
+								i(109885),	-- Bloodfeather Chestwrap
+								i(109884),	-- Chestguard of Burning Focus
+								i(109886),	-- Crystalbinder Chestguard
+								i(109903),	-- Felflame Robes
+								i(109900),	-- Frost-Touched Robes
+								i(109894),	-- Goldsteel Chestguard
+								i(109895),	-- Gutcrusher Chestplate
+								i(109892),	-- Incarnadine Breastplate
+								i(109890),	-- Lavalink Ringmail
+								i(109897),	-- Leafmender Robes
+								i(109902),	-- Lightbinder Robes
+								i(109891),	-- Morningscale Chestguard
+								i(109896),	-- Rivet-Sealed Breastplate
+								i(109899),	-- Robes of Arcane Mystery
+								i(109901),	-- Robes of Swirling Light
+								i(109889),	-- Rockhide Ringmail
+								i(109888),	-- Sharpeye Chestguard
+								i(109887),	-- Streamslither Chestguard
+								i(109893),	-- Verdant Plate Chest
 							})),
 							cr(80005, e(1133, {	-- Skylord Tovra
-								i(110054),
-								i(110053),
-								i(109873),
-								i(109874),
-								i(109883),
-								i(109872),
-								i(109882),
-								i(109871),
-								i(109881),
-								i(109880),
-								i(109870),
-								i(109879),
-								i(109869),
-								i(109878),
-								i(109868),
-								i(109867),
-								i(109877),
-								i(109866),
-								i(109876),
-								i(109865),
-								i(109875),
-								i(109864),
-								i(109861),
-								i(109860),
-								i(109859),
-								i(109858),
-								i(109857),
-								i(109856),
-								i(109855),
-								i(109844),
-								i(109854),
-								i(109853),
-								i(109852),
-								i(109851),
-								i(109850),
-								i(109849),
-								i(109848),
-								i(109863),
-								i(109862),
-								i(109847),
-								i(109846),
-								i(109845),
-								i(109819),
-								i(109808),
-								i(109818),
-								i(109807),
-								i(109817),
-								i(109806),
-								i(109816),
-								i(109815),
-								i(109805),
-								i(109809),
-								i(109814),
-								i(109804),
-								i(109813),
-								i(109823),
-								i(109812),
-								i(109811),
-								i(109821),
-								i(109820),
-								i(109810),
-								i(109822)
-							}))
-						}
+								i(110054),	-- Thunderlord Flamestaff
+								i(110053),	-- Arrowbreaker Greatshield
+								i(109882),	-- Blackwater Wristguards
+								i(109869),	-- Bloodfeather Bracers
+								i(109864),	-- Bracers of Arcane Mystery
+								i(109868),	-- Bracers of Burning Focus
+								i(109866),	-- Bracers of Swirling Light
+								i(109870),	-- Crystalbinder Wristguards
+								i(109881),	-- Felflame Bracers
+								i(109865),	-- Frost-Touched Wristwraps
+								i(109878),	-- Goldsteel Bindings
+								i(109879),	-- Gutcrusher Bracers
+								i(109876),	-- Incarnadine Bracers
+								i(109875),	-- Lavalink Bracers
+								i(109871),	-- Leafmender Wraps
+								i(109867),	-- Lightbinder Wristwraps
+								i(109883),	-- Morningscale Bracers
+								i(109880),	-- Rivet-Sealed Bracers
+								i(109874),	-- Rockhide Wristguards
+								i(109873),	-- Sharpeye Bracers
+								i(109872),	-- Streamslither Bracers
+								i(109877),	-- Verdant Plate Wristguards
+								i(109862),	-- Blackwater Grips
+								i(109849),	-- Bloodfeather Grips
+								i(109850),	-- Crystalbinder Gloves
+								i(109861),	-- Felflame Grips
+								i(109845),	-- Frost-Touched Gloves
+								i(109848),	-- Gauntlets of Burning Focus
+								i(109844),	-- Gloves of Arcane Mystery
+								i(109846),	-- Gloves of Swirling Light
+								i(109858),	-- Goldsteel Gloves
+								i(109859),	-- Gutcrusher Gauntlets
+								i(109856),	-- Incarnadine Gauntlets
+								i(109855),	-- Lavalink Grips
+								i(109851),	-- Leafmender Grips
+								i(109847),	-- Lightbinder Gloves
+								i(109863),	-- Morningscale Gauntlet
+								i(109860),	-- Rivet-Sealed Crushers
+								i(109854),	-- Rockhide Gloves
+								i(109853),	-- Sharpeye Gauntlets
+								i(109852),	-- Streamslither Gauntlets
+								i(109857),	-- Verdant Plate Grips
+								i(109823),	-- Blackwater Leggings
+								i(109810),	-- Bloodfeather Leggings
+								i(109811),	-- Crystalbinder Legwraps
+								i(109808),	-- Felflame Legwraps
+								i(109805),	-- Frost-Touched Legwraps
+								i(109820),	-- Goldsteel Legplates
+								i(109821),	-- Gutcrusher Legplates
+								i(109818),	-- Incarnadine Legplates
+								i(109816),	-- Lavalink Legguards
+								i(109812),	-- Leafmender Legwraps
+								i(109806),	-- Leggings of Swirling Light
+								i(109809),	-- Legguards of Burning Focus
+								i(109807),	-- Lightbinder Leggings
+								i(109817),	-- Morningscale Leggings
+								i(109822),	-- Rivet-Sealed Legplates
+								i(109815),	-- Rockhide Leggings
+								i(109814),	-- Sharpeye Legguards
+								i(109813),	-- Streamslither Legguards
+								i(109804),	-- Trousers of Arcane Mystery
+								i(109819),	-- Verdant Plate Legguards
+							})),
+						},
 					}),
 					d(2, {		-- Heroic
 						["ids"] = { 524 }, -- Heroic
@@ -137,232 +137,232 @@ _.Instances =
 								}),	
 							}),
 							cr(77803, e(1138, {	-- Railmaster Rocketspark
-								i(110051),
-								i(109824),
-								i(109833),
-								i(109832),
-								i(109843),
-								i(109842),
-								i(109831),
-								i(109841),
-								i(109840),
-								i(109830),
-								i(109829),
-								i(109839),
-								i(109828),
-								i(109838),
-								i(109827),
-								i(109837),
-								i(109826),
-								i(109836),
-								i(109825),
-								i(109835),
-								i(109834)
+								i(110051),	-- Overseer's Final Word
+								i(109829),	-- Belt of Burning Focus
+								i(109842),	-- Blackwater Belt
+								i(109830),	-- Bloodfeather Girdle
+								i(109824),	-- Cord of Arcane Mystery
+								i(109826),	-- Cord of Swirling Light
+								i(109831),	-- Crystalbinder Belt
+								i(109828),	-- Felflame Belt
+								i(109825),	-- Frost-Touched Cord
+								i(109839),	-- Goldsteel Belt
+								i(109840),	-- Gutcrusher Greatbelt
+								i(109837),	-- Incarnadine Girdle
+								i(109836),	-- Lavalink Girdle
+								i(109832),	-- Leafmender Girdle
+								i(109827),	-- Lightbinder Girdle
+								i(109843),	-- Morningscale Waistguard
+								i(109841),	-- Rivet-Sealed Waistplate
+								i(109835),	-- Rockhide Links
+								i(109834),	-- Sharpeye Belt
+								i(109833),	-- Streamslither Belt
+								i(109838),	-- Verdant Plate Belt
 							})),
 							cr(79545, e(1163, {	-- Nitrogg Thundertower
-								i(110052),
-								i(109899),
-								i(109898),
-								i(109887),
-								i(109886),
-								i(109897),
-								i(109896),
-								i(109885),
-								i(109895),
-								i(109884),
-								i(109894),
-								i(109893),
-								i(109903),
-								i(109892),
-								i(109891),
-								i(109902),
-								i(109890),
-								i(109889),
-								i(109901),
-								i(109888),
-								i(109900)
+								i(110052),	-- Scepter of Brutality
+								i(109898),	-- Blackwater Wrap								
+								i(109885),	-- Bloodfeather Chestwrap
+								i(109884),	-- Chestguard of Burning Focus
+								i(109886),	-- Crystalbinder Chestguard
+								i(109903),	-- Felflame Robes
+								i(109900),	-- Frost-Touched Robes
+								i(109894),	-- Goldsteel Chestguard
+								i(109895),	-- Gutcrusher Chestplate
+								i(109892),	-- Incarnadine Breastplate
+								i(109890),	-- Lavalink Ringmail
+								i(109897),	-- Leafmender Robes
+								i(109902),	-- Lightbinder Robes
+								i(109891),	-- Morningscale Chestguard
+								i(109896),	-- Rivet-Sealed Breastplate
+								i(109899),	-- Robes of Arcane Mystery
+								i(109901),	-- Robes of Swirling Light
+								i(109889),	-- Rockhide Ringmail
+								i(109888),	-- Sharpeye Chestguard
+								i(109887),	-- Streamslither Chestguard
+								i(109893),	-- Verdant Plate Chest
 							})),
 							cr(80005, e(1133, {	-- Skylord Tovra
-								i(110054),
-								i(110053),
-								i(109876),
-								i(109883),
-								i(109874),
-								i(109873),
-								i(109882),
-								i(109881),
-								i(109872),
-								i(109880),
-								i(109875),
-								i(109879),
-								i(109878),
-								i(109871),
-								i(109870),
-								i(109877),
-								i(109869),
-								i(109868),
-								i(109867),
-								i(109866),
-								i(109865),
-								i(109864),
-								i(109862),
-								i(109861),
-								i(109860),
-								i(109859),
-								i(109858),
-								i(109857),
-								i(109856),
-								i(109844),
-								i(109855),
-								i(109854),
-								i(109853),
-								i(109852),
-								i(109851),
-								i(109850),
-								i(109849),
-								i(109848),
-								i(109847),
-								i(109863),
-								i(109846),
-								i(109845),
-								i(109821),
-								i(109820),
-								i(109810),
-								i(109819),
-								i(109812),
-								i(109822),
-								i(109818),
-								i(109811),
-								i(109809),
-								i(109817),
-								i(109808),
-								i(109816),
-								i(109807),
-								i(109815),
-								i(109814),
-								i(109806),
-								i(109813),
-								i(109805),
-								i(109804),
-								i(109823)
-							}))
-						}
+								i(110054),	-- Thunderlord Flamestaff
+								i(110053),	-- Arrowbreaker Greatshield
+								i(109882),	-- Blackwater Wristguards
+								i(109869),	-- Bloodfeather Bracers
+								i(109864),	-- Bracers of Arcane Mystery
+								i(109868),	-- Bracers of Burning Focus
+								i(109866),	-- Bracers of Swirling Light
+								i(109870),	-- Crystalbinder Wristguards
+								i(109881),	-- Felflame Bracers
+								i(109865),	-- Frost-Touched Wristwraps
+								i(109878),	-- Goldsteel Bindings
+								i(109879),	-- Gutcrusher Bracers
+								i(109876),	-- Incarnadine Bracers
+								i(109875),	-- Lavalink Bracers
+								i(109871),	-- Leafmender Wraps
+								i(109867),	-- Lightbinder Wristwraps
+								i(109883),	-- Morningscale Bracers
+								i(109880),	-- Rivet-Sealed Bracers
+								i(109874),	-- Rockhide Wristguards
+								i(109873),	-- Sharpeye Bracers
+								i(109872),	-- Streamslither Bracers
+								i(109877),	-- Verdant Plate Wristguards
+								i(109862),	-- Blackwater Grips
+								i(109849),	-- Bloodfeather Grips
+								i(109850),	-- Crystalbinder Gloves
+								i(109861),	-- Felflame Grips
+								i(109845),	-- Frost-Touched Gloves
+								i(109848),	-- Gauntlets of Burning Focus
+								i(109844),	-- Gloves of Arcane Mystery
+								i(109846),	-- Gloves of Swirling Light
+								i(109858),	-- Goldsteel Gloves
+								i(109859),	-- Gutcrusher Gauntlets
+								i(109856),	-- Incarnadine Gauntlets
+								i(109855),	-- Lavalink Grips
+								i(109851),	-- Leafmender Grips
+								i(109847),	-- Lightbinder Gloves
+								i(109863),	-- Morningscale Gauntlet
+								i(109860),	-- Rivet-Sealed Crushers
+								i(109854),	-- Rockhide Gloves
+								i(109853),	-- Sharpeye Gauntlets
+								i(109852),	-- Streamslither Gauntlets
+								i(109857),	-- Verdant Plate Grips
+								i(109823),	-- Blackwater Leggings
+								i(109810),	-- Bloodfeather Leggings
+								i(109811),	-- Crystalbinder Legwraps
+								i(109808),	-- Felflame Legwraps
+								i(109805),	-- Frost-Touched Legwraps
+								i(109820),	-- Goldsteel Legplates
+								i(109821),	-- Gutcrusher Legplates
+								i(109818),	-- Incarnadine Legplates
+								i(109816),	-- Lavalink Legguards
+								i(109812),	-- Leafmender Legwraps
+								i(109806),	-- Leggings of Swirling Light
+								i(109809),	-- Legguards of Burning Focus
+								i(109807),	-- Lightbinder Leggings
+								i(109817),	-- Morningscale Leggings
+								i(109822),	-- Rivet-Sealed Legplates
+								i(109815),	-- Rockhide Leggings
+								i(109814),	-- Sharpeye Legguards
+								i(109813),	-- Streamslither Legguards
+								i(109804),	-- Trousers of Arcane Mystery
+								i(109819),	-- Verdant Plate Legguards
+							})),
+						},
 					}),
 					d(23, {		-- Mythic
 						["ids"] = { 642 }, -- Mythic
 						["groups"] = {
 							cr(77803, e(1138, {	-- Railmaster Rocketspark
-								i(110051),
-								i(109833),
-								i(109832),
-								i(109831),
-								i(109830),
-								i(109824),
-								i(109829),
-								i(109843),
-								i(109842),
-								i(109841),
-								i(109828),
-								i(109840),
-								i(109827),
-								i(109826),
-								i(109839),
-								i(109838),
-								i(109825),
-								i(109837),
-								i(109836),
-								i(109835),
-								i(109834)
+								i(110051),	-- Overseer's Final Word
+								i(109829),	-- Belt of Burning Focus
+								i(109842),	-- Blackwater Belt
+								i(109830),	-- Bloodfeather Girdle
+								i(109824),	-- Cord of Arcane Mystery
+								i(109826),	-- Cord of Swirling Light
+								i(109831),	-- Crystalbinder Belt
+								i(109828),	-- Felflame Belt
+								i(109825),	-- Frost-Touched Cord
+								i(109839),	-- Goldsteel Belt
+								i(109840),	-- Gutcrusher Greatbelt
+								i(109837),	-- Incarnadine Girdle
+								i(109836),	-- Lavalink Girdle
+								i(109832),	-- Leafmender Girdle
+								i(109827),	-- Lightbinder Girdle
+								i(109843),	-- Morningscale Waistguard
+								i(109841),	-- Rivet-Sealed Waistplate
+								i(109835),	-- Rockhide Links
+								i(109834),	-- Sharpeye Belt
+								i(109833),	-- Streamslither Belt
+								i(109838),	-- Verdant Plate Belt
 							})),
 							cr(79545, e(1163, {	-- Nitrogg Thundertower
-								i(110052),
-								i(109899),
-								i(109898),
-								i(109897),
-								i(109887),
-								i(109886),
-								i(109896),
-								i(109885),
-								i(109895),
-								i(109884),
-								i(109894),
-								i(109893),
-								i(109903),
-								i(109902),
-								i(109892),
-								i(109891),
-								i(109890),
-								i(109901),
-								i(109889),
-								i(109888),
-								i(109900)
+								i(110052),	-- Scepter of Brutality
+								i(109898),	-- Blackwater Wrap								
+								i(109885),	-- Bloodfeather Chestwrap
+								i(109884),	-- Chestguard of Burning Focus
+								i(109886),	-- Crystalbinder Chestguard
+								i(109903),	-- Felflame Robes
+								i(109900),	-- Frost-Touched Robes
+								i(109894),	-- Goldsteel Chestguard
+								i(109895),	-- Gutcrusher Chestplate
+								i(109892),	-- Incarnadine Breastplate
+								i(109890),	-- Lavalink Ringmail
+								i(109897),	-- Leafmender Robes
+								i(109902),	-- Lightbinder Robes
+								i(109891),	-- Morningscale Chestguard
+								i(109896),	-- Rivet-Sealed Breastplate
+								i(109899),	-- Robes of Arcane Mystery
+								i(109901),	-- Robes of Swirling Light
+								i(109889),	-- Rockhide Ringmail
+								i(109888),	-- Sharpeye Chestguard
+								i(109887),	-- Streamslither Chestguard
+								i(109893),	-- Verdant Plate Chest
 							})),
 							cr(80005, e(1133, {	-- Skylord Tovra
-								i(110054),
-								i(110053),
-								i(109876),
-								i(109874),
-								i(109873),
-								i(109883),
-								i(109882),
-								i(109872),
-								i(109881),
-								i(109875),
-								i(109871),
-								i(109880),
-								i(109879),
-								i(109870),
-								i(109869),
-								i(109878),
-								i(109868),
-								i(109877),
-								i(109867),
-								i(109866),
-								i(109865),
-								i(109864),
-								i(109862),
-								i(109861),
-								i(109860),
-								i(109859),
-								i(109858),
-								i(109857),
-								i(109856),
-								i(109844),
-								i(109855),
-								i(109854),
-								i(109853),
-								i(109852),
-								i(109851),
-								i(109850),
-								i(109849),
-								i(109848),
-								i(109847),
-								i(109863),
-								i(109846),
-								i(109845),
-								i(109810),
-								i(109812),
-								i(109821),
-								i(109811),
-								i(109809),
-								i(109820),
-								i(109819),
-								i(109818),
-								i(109823),
-								i(109822),
-								i(109808),
-								i(109817),
-								i(109807),
-								i(109816),
-								i(109806),
-								i(109815),
-								i(109814),
-								i(109805),
-								i(109813),
-								i(109804)
-							}))
-						}
-					})
+								i(110054),	-- Thunderlord Flamestaff
+								i(110053),	-- Arrowbreaker Greatshield
+								i(109882),	-- Blackwater Wristguards
+								i(109869),	-- Bloodfeather Bracers
+								i(109864),	-- Bracers of Arcane Mystery
+								i(109868),	-- Bracers of Burning Focus
+								i(109866),	-- Bracers of Swirling Light
+								i(109870),	-- Crystalbinder Wristguards
+								i(109881),	-- Felflame Bracers
+								i(109865),	-- Frost-Touched Wristwraps
+								i(109878),	-- Goldsteel Bindings
+								i(109879),	-- Gutcrusher Bracers
+								i(109876),	-- Incarnadine Bracers
+								i(109875),	-- Lavalink Bracers
+								i(109871),	-- Leafmender Wraps
+								i(109867),	-- Lightbinder Wristwraps
+								i(109883),	-- Morningscale Bracers
+								i(109880),	-- Rivet-Sealed Bracers
+								i(109874),	-- Rockhide Wristguards
+								i(109873),	-- Sharpeye Bracers
+								i(109872),	-- Streamslither Bracers
+								i(109877),	-- Verdant Plate Wristguards
+								i(109862),	-- Blackwater Grips
+								i(109849),	-- Bloodfeather Grips
+								i(109850),	-- Crystalbinder Gloves
+								i(109861),	-- Felflame Grips
+								i(109845),	-- Frost-Touched Gloves
+								i(109848),	-- Gauntlets of Burning Focus
+								i(109844),	-- Gloves of Arcane Mystery
+								i(109846),	-- Gloves of Swirling Light
+								i(109858),	-- Goldsteel Gloves
+								i(109859),	-- Gutcrusher Gauntlets
+								i(109856),	-- Incarnadine Gauntlets
+								i(109855),	-- Lavalink Grips
+								i(109851),	-- Leafmender Grips
+								i(109847),	-- Lightbinder Gloves
+								i(109863),	-- Morningscale Gauntlet
+								i(109860),	-- Rivet-Sealed Crushers
+								i(109854),	-- Rockhide Gloves
+								i(109853),	-- Sharpeye Gauntlets
+								i(109852),	-- Streamslither Gauntlets
+								i(109857),	-- Verdant Plate Grips
+								i(109823),	-- Blackwater Leggings
+								i(109810),	-- Bloodfeather Leggings
+								i(109811),	-- Crystalbinder Legwraps
+								i(109808),	-- Felflame Legwraps
+								i(109805),	-- Frost-Touched Legwraps
+								i(109820),	-- Goldsteel Legplates
+								i(109821),	-- Gutcrusher Legplates
+								i(109818),	-- Incarnadine Legplates
+								i(109816),	-- Lavalink Legguards
+								i(109812),	-- Leafmender Legwraps
+								i(109806),	-- Leggings of Swirling Light
+								i(109809),	-- Legguards of Burning Focus
+								i(109807),	-- Lightbinder Leggings
+								i(109817),	-- Morningscale Leggings
+								i(109822),	-- Rivet-Sealed Legplates
+								i(109815),	-- Rockhide Leggings
+								i(109814),	-- Sharpeye Legguards
+								i(109813),	-- Streamslither Legguards
+								i(109804),	-- Trousers of Arcane Mystery
+								i(109819),	-- Verdant Plate Legguards
+							})),
+						},
+					}),
 				},
 				["Lvl"] = 100,
 				["mapID"] = 993
