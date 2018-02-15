@@ -3798,9 +3798,6 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 				print(format(L("ITEM_ID_ADDED_MISSING"), "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r", "???"));
 			end
 		end
-		
-		-- If the item isn't in the list, then don't bother refreshing the data.
-		-- app:RefreshData(true, true);
 	end
 end
 function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
@@ -4300,11 +4297,21 @@ local function CreateSettingsMenu()
 		self.PlayFanfare:SetScript("OnClick", function(self)
 			SetDataMember("PlayFanfare", self:GetChecked());
 		end);
+		self.PlayFanfare:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new collectable item.\n\nThis is feature can very addicting.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
 	
 		self.PlayRemoveSound = CreateFrame("CheckButton", name .. "-PlayRemoveSound", self, "InterfaceOptionsCheckButtonTemplate");
 		CreateCheckBox(self.PlayRemoveSound, self, "Play Remove Sound", 300, -70, GetDataMember("PlayRemoveSound", true));
 		self.PlayRemoveSound:SetScript("OnClick", function(self)
 			SetDataMember("PlayRemoveSound", self:GetChecked());
+		end);
+		self.PlayRemoveSound:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
+			GameTooltip:Show();
 		end);
 		
 		self.AutoMiniList = CreateFrame("CheckButton", name .. "-AutoMiniList", self, "InterfaceOptionsCheckButtonTemplate");
@@ -4316,14 +4323,8 @@ local function CreateSettingsMenu()
 			end
 		end);	
 		
-		self.AutoRefreshCollections = CreateFrame("CheckButton", name .. "-AutoRefreshCollections", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.AutoRefreshCollections, self, "Auto Refresh Collections", 300, -110, GetDataMember("AutoRefreshCollections"));
-		self.AutoRefreshCollections:SetScript("OnClick", function(self)
-			SetDataMember("AutoRefreshCollections", self:GetChecked());
-		end);		
-		
 		self.RequirePersonalLootFilter = CreateFrame("CheckButton", name .. "-RequirePersonalLootFilter", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -130, GetDataMember("RequirePersonalLootFilter"));
+		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -110, GetDataMember("RequirePersonalLootFilter"));
 		self.RequirePersonalLootFilter:SetScript("OnClick", function(self)
 			SetDataMember("RequirePersonalLootFilter", self:GetChecked());
 			if self:GetChecked() then
@@ -5822,7 +5823,7 @@ function app:GetDataCache()
 			app.autoRefreshedCollections = true;
 			local version = GetAddOnMetadata("AllTheThings", "Version");
 			local lastTime = GetDataMember("RefreshedCollectionsAlready");
-			if not lastTime or (lastTime ~= version and GetDataMember("AutoRefreshCollections")) then
+			if not lastTime or (lastTime ~= version) then
 				SetDataMember("RefreshedCollectionsAlready", version);
 				SetDataMember("CollectedSources", {});	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 				RefreshCollections();
@@ -6129,7 +6130,6 @@ app.events.VARIABLES_LOADED = function()
 	
 	GetDataMember("EnableTooltipInformation", true);
 	GetDataMember("DisplayTooltipInformationInCombat", false);
-	GetDataMember("AutoRefreshCollections", false);
 	GetDataMember("ShowSharedAppearances", true);
 	GetDataMember("ShowSources", true);
 	GetDataMember("ShowContents", true);
