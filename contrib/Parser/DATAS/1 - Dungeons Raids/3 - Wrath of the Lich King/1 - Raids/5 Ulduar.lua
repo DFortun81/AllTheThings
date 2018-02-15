@@ -637,6 +637,9 @@ _.Instances =
 							i(45501),
 						})),
 						cr(33288, e(1649, {	-- Yogg-Saron
+							ach(12388, {	-- Alone in the Darkness
+								i(45693)	-- Mimiron's Head
+							}),	
 							ach(12387, {	-- One Light in the Darkness
 								i(46068),
 								i(46095),
@@ -645,9 +648,6 @@ _.Instances =
 								i(45537),
 								i(45536),
 								i(45533),
-							}),
-							ach(12388, {		-- Alone in the Darkness
-								i(45693)	-- Mimiron's Head
 							}),							
 							i(46016),
 							i(46025),
@@ -1178,6 +1178,9 @@ _.Instances =
 							i(156221--[[The General's Heart]]),
 						})),
 						cr(33288, e(1649--[[Yogg-Saron]], {
+							ach(12388, {		-- Alone in the Darkness
+								i(45693)	-- Mimiron's Head
+							}),	
 							--i(45038--[[Fragment of Val'anyr]]),
 							i(138801--[[Illusion: Blood Draining]]),
 							--i(45087--[[Runed Orb]]),
