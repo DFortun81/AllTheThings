@@ -4314,27 +4314,16 @@ local function CreateSettingsMenu()
 			if self:GetChecked() then
 				OpenMiniListForCurrentZone();
 			end
-		end);
-		
-		self.AutoRefreshSaves = CreateFrame("CheckButton", name .. "-AutoRefreshSaves", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.AutoRefreshSaves, self, "Auto Refresh Saves", 300, -110, GetDataMember("AutoRefreshSaves"));
-		self.AutoRefreshSaves:SetScript("OnClick", function(self)
-		SetDataMember("AutoRefreshSaves", self:GetChecked());
-			if self:GetChecked() then
-				app:RegisterEvent("BOSS_KILL");
-			else
-				app:UnregisterEvent("BOSS_KILL");
-			end
-		end);		
+		end);	
 		
 		self.AutoRefreshCollections = CreateFrame("CheckButton", name .. "-AutoRefreshCollections", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.AutoRefreshCollections, self, "Auto Refresh Collections", 300, -130, GetDataMember("AutoRefreshCollections"));
+		CreateCheckBox(self.AutoRefreshCollections, self, "Auto Refresh Collections", 300, -110, GetDataMember("AutoRefreshCollections"));
 		self.AutoRefreshCollections:SetScript("OnClick", function(self)
 			SetDataMember("AutoRefreshCollections", self:GetChecked());
 		end);		
 		
 		self.RequirePersonalLootFilter = CreateFrame("CheckButton", name .. "-RequirePersonalLootFilter", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -150, GetDataMember("RequirePersonalLootFilter"));
+		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -130, GetDataMember("RequirePersonalLootFilter"));
 		self.RequirePersonalLootFilter:SetScript("OnClick", function(self)
 			SetDataMember("RequirePersonalLootFilter", self:GetChecked());
 			if self:GetChecked() then
@@ -5969,6 +5958,7 @@ SlashCmdList["AllTheThings"] = function(msg)
 end
 
 -- Register Events required at the start
+app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
@@ -6046,7 +6036,6 @@ app.events.VARIABLES_LOADED = function()
 	if GetDataMember("ItemDB") then SetDataMember("ItemDB", nil); end
 	
 	-- Register for Dynamic Events and Assign Filters
-	if GetDataMember("AutoRefreshSaves", true) then app:RegisterEvent("BOSS_KILL"); end
 	if GetDataMember("IgnoreAllFilters", false) then
 		app.GroupFilter = app.NoFilter;
 	else
@@ -6178,9 +6167,7 @@ end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
 	app.Spec = GetLootSpecialization();
-	if GetDataMember("AutoRefreshSaves") then
-		app:RefreshData(false, true);
-	end
+	app:RefreshData(false, true);
 	RefreshSaves();
 	RefreshLocation();
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(app.DisplayName, {
