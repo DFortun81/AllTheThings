@@ -1731,7 +1731,7 @@ local function RefreshSources(groups)
 			if group.toyID and not GetDataSubMember("CollectedToys", group.toyID) and PlayerHasToy(group.toyID) then
 				SetDataSubMember("CollectedToys", group.toyID, 1);
 			end
-			if group.groups then RefreshSources(group.groups); end
+			RefreshSources(group.groups);
 		end
 	end
 end
@@ -1777,11 +1777,17 @@ local function SetCompletionistMode(completionistMode, fromSettings)
 	SetDataMember("CollectedSources", {});	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 	if completionistMode then
 		app.ItemSourceFilter = app.FilterItemSource;
+		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
+		app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
 	else
 		if GetDataMember("MainOnly") then
 			app.ItemSourceFilter = app.FilterItemSourceUniqueOnlyMain;
+			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelperOnlyMain;
+			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelperOnlyMain;
 		else
 			app.ItemSourceFilter = app.FilterItemSourceUnique;
+			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelper;
+			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelper;
 		end
 	end
 	RefreshCollections();
@@ -3309,7 +3315,7 @@ end
 function app.FilterItemSource(sourceInfo)
 	return sourceInfo.isCollected;
 end
-function app.FilterItemSourceUnique(sourceInfo)
+function app.FilterItemSourceUnique(sourceInfo, allSources)
 	if sourceInfo.isCollected then
 		-- NOTE: This makes it so that the loop isn't necessary.
 		return true;
@@ -3321,7 +3327,7 @@ function app.FilterItemSourceUnique(sourceInfo)
 			if item.classes then
 				if item.races then
 					-- If the first item is ALSO race locked...
-					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
@@ -3353,7 +3359,7 @@ function app.FilterItemSourceUnique(sourceInfo)
 					end
 				else
 					-- Not additionally race locked.
-					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
@@ -3388,7 +3394,7 @@ function app.FilterItemSourceUnique(sourceInfo)
 			else
 				if item.races then
 					-- If the first item is race locked...
-					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
@@ -3417,7 +3423,7 @@ function app.FilterItemSourceUnique(sourceInfo)
 					end
 				else
 					-- Not race nor class locked.
-					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
@@ -3459,7 +3465,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
 			if item.classes then
 				if item.races then
 					-- If the first item is ALSO race locked...
-					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
@@ -3491,7 +3497,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
 					end
 				else
 					-- Not additionally race locked.
-					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
@@ -3526,7 +3532,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
 			else
 				if item.races then
 					-- If the first item is race locked...
-					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
@@ -3555,7 +3561,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
 					end
 				else
 					-- Not race nor class locked.
-					for i, sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
@@ -3595,6 +3601,472 @@ app.UnobtainableItemFilter = app.NoFilter;
 app.SeasonalFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.RequireTrackableFilter = app.Filter;
+
+-- Processing Functions (Coroutines)
+local UpdateGroup, UpdateGroups;
+local function BuildGroups(parent, groups)
+	if groups then
+		-- Iterate through the groups
+		for key, group in ipairs(groups) do
+			-- Set the group's parent
+			group.parent = parent;
+			
+			-- Build the groups
+			BuildGroups(group, group.groups);
+		end
+	end
+end
+local function ProcessGroup(data, parent, indent, back)
+	if parent.visible then
+		if parent.mapID and parent.mapID == GetTempDataMember("MapID") then
+			parent.back = 1;
+		else 
+			parent.back = back or parent.back;
+		end
+		parent.indent = indent;
+		tinsert(data, parent);
+		if parent.groups and parent.expanded then
+			indent = indent + 1;
+			back = parent.back * 0.5;
+			for j, group in ipairs(parent.groups) do
+				ProcessGroup(data, group, indent, back);
+			end
+		end
+	end
+end
+UpdateGroup = function(parent, group)
+	--[[
+	-- Uncomment this section for Harvesting
+	if group.s and group.s < 1 then
+		-- The source ID will need to be harvested.
+		table.insert(GetTempDataMember("Missing"), group);
+	end
+	]]--
+	
+	-- Determine if this user can enter the instance or acquire the item.
+	if app.GroupRequirementsFilter(group) then
+		-- Check if this is a group
+		if group.groups then
+			-- If this item is collectable, then mark it as such.
+			if group.collectable then
+				-- An item is a special case where it may have both an appearance and a set of items
+				group.progress = group.collected and 1 or 0;
+				group.total = 1;
+			elseif group.s and group.s < 1 then
+				-- This item is missing its source ID. :(
+				group.progress = 0;
+				group.total = 1;
+			else
+				-- Default to 0 for both
+				group.progress = 0;
+				group.total = 0;
+			end
+			
+			-- Update the subgroups recursively...
+			UpdateGroups(group, group.groups);
+			
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				-- Increment the parent group's totals.
+				parent.total = (parent.total or 0) + group.total;
+				parent.progress = (parent.progress or 0) + group.progress;
+				
+				-- If this group is trackable, then we should show it.
+				if app.RequireTrackableFilter(group) then
+					group.visible = not group.saved or app.GroupVisibilityFilter(group) or GetDataMember("ShowCompletedGroups");
+				else
+					group.visible = app.GroupVisibilityFilter(group); -- group.total > 0 and 
+				end
+			else
+				-- Hide this group. We aren't filtering for it.
+				group.visible = false;
+			end
+		else
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if group.collectable then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + 1;
+					
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					if group.collected then
+						group.visible = app.CollectedItemVisibilityFilter(group);
+						parent.progress = (parent.progress or 0) + 1;
+					else
+						-- Otherwise, use the "Show Missing Items" filter.
+						group.visible = app.MissingItemVisibilityFilter(group);
+					end
+				elseif group.trackable then
+					-- If this group is trackable, then we should show it.
+					if app.RequireTrackableFilter(group) then
+						group.visible = not group.saved or GetDataMember("ShowCompletedGroups");
+					else
+						-- Hide this group. We aren't filtering for it.
+						group.visible = false;
+					end
+				else
+					-- Show this group.
+					group.visible = true;
+				end
+			else
+				-- Hide this group. We aren't filtering for it.
+				group.visible = false;
+			end
+		end
+	else
+		-- This group doesn't meet requirements.
+		group.visible = false;
+	end
+end
+UpdateGroups = function(parent, groups)
+	if groups then
+		-- Iterate through the groups
+		for key, group in ipairs(groups) do
+			-- Update the group
+			UpdateGroup(parent, group);
+		end
+	end
+end
+function UpdateParentProgress(group)
+	group.progress = group.progress + 1;
+	
+	-- Continue on to this object's parent.
+	if group.parent then
+		if group.visible then
+			-- If we were initially visible, then update the parent.
+			UpdateParentProgress(group.parent);
+			
+			-- If this group is trackable, then we should show it.
+			if app.RequireTrackableFilter(group) then
+				group.visible = not group.saved or app.GroupVisibilityFilter(group) or GetDataMember("ShowCompletedGroups");
+			else
+				group.visible = app.GroupVisibilityFilter(group);
+			end
+		end
+	end
+end
+
+-- Helper Methods
+-- The following Helper Methods are used when you obtain a new appearance.
+function app.CompletionistItemCollectionHelper(sourceID, oldState)
+	-- Search ATT for the related sources.
+	local searchResults = SearchForSourceID(sourceID);
+	if searchResults and #searchResults > 0 then
+		-- Show the collection message.
+		if GetDataMember("ShowNotifications", true) then
+			local firstMatch = searchResults[1];
+			print(format(L("ITEM_ID_ADDED"), firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
+		end
+		
+		-- Attempt to cleanly refresh the data.
+		local fresh = false;
+		for i,result in ipairs(searchResults) do
+			if result.visible and result.parent and result.parent.total then
+				if result.total then
+					-- This is an item that has a relative set of groups
+					UpdateParentProgress(result);
+					
+					-- If this is NOT a group...
+					if not result.groups then
+						-- If we've collected the item, use the "Show Collected Items" filter.
+						result.visible = app.CollectedItemVisibilityFilter(result);
+					end
+				else	
+					UpdateParentProgress(result.parent);
+					
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					result.visible = app.CollectedItemVisibilityFilter(result);
+				end
+				fresh = true;
+			end
+		end
+		
+		-- If the data is fresh, don't force a refresh.
+		app:RefreshData(fresh, true);
+	else
+		-- Show the collection message.
+		if GetDataMember("ShowNotifications", true) then
+			-- Use the Blizzard API... We don't have this item in the addon.
+			-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
+			-- So this may show green items where an epic was obtained. (particularly with Legion drops)
+			-- This is okay since items of this type share their appearance regardless of the power of the item.
+			local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+			if sourceInfo then
+				local name, link = GetItemInfo(sourceInfo.itemID);
+				print(format(L("ITEM_ID_ADDED_MISSING"), link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
+			else
+				print(format(L("ITEM_ID_ADDED_MISSING"), "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r", "???"));
+			end
+		end
+		
+		-- If the item isn't in the list, then don't bother refreshing the data.
+		-- app:RefreshData(true, true);
+	end
+end
+function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
+	-- Get the source info for this source ID.
+	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+	if sourceInfo then
+		-- Go through all of the shared appearances and see if we're "unlocked" any of them.
+		local unlockedSourceIDs, allSources = {}, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
+		for i, otherSourceID in ipairs(allSources) do
+			-- If this isn't the source we already did work on and we haven't already completed it
+			if otherSourceID ~= sourceID and not GetDataSubMember("CollectedSources", otherSourceID) then
+				local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
+				if otherSourceInfo and filter(otherSourceInfo, allSources) then
+					SetDataSubMember("CollectedSources", otherSourceID, otherSourceInfo.isCollected and 1 or 2);
+					tinsert(unlockedSourceIDs, otherSourceID);
+				end
+			end
+		end
+		
+		-- Attempt to cleanly refresh the data.
+		local fresh, searchResults = false, nil;
+		if #unlockedSourceIDs > 0 then
+			for i, otherSourceID in ipairs(unlockedSourceIDs) do
+				-- Search ATT for this source ID.
+				searchResults = SearchForSourceID(otherSourceID);
+				if searchResults and #searchResults > 0 then
+					for j,result in ipairs(searchResults) do
+						if result.visible and result.parent and result.parent.total then
+							if result.total then
+								-- This is an item that has a relative set of groups
+								UpdateParentProgress(result);
+								
+								-- If this is NOT a group...
+								if not result.groups then
+									-- If we've collected the item, use the "Show Collected Items" filter.
+									result.visible = app.CollectedItemVisibilityFilter(result);
+								end
+							else	
+								UpdateParentProgress(result.parent);
+								
+								-- If we've collected the item, use the "Show Collected Items" filter.
+								result.visible = app.CollectedItemVisibilityFilter(result);
+							end
+							fresh = true;
+						end
+					end
+				end
+			end
+		end
+		
+		-- Search for the item that actually was unlocked.
+		searchResults = SearchForSourceID(sourceID);
+		if searchResults and #searchResults > 0 then
+			if oldState == 0 then
+				for i,result in ipairs(searchResults) do
+					if result.visible and result.parent and result.parent.total then
+						if result.total then
+							-- This is an item that has a relative set of groups
+							UpdateParentProgress(result);
+							
+							-- If this is NOT a group...
+							if not result.groups then
+								-- If we've collected the item, use the "Show Collected Items" filter.
+								result.visible = app.CollectedItemVisibilityFilter(result);
+							end
+						else	
+							UpdateParentProgress(result.parent);
+							
+							-- If we've collected the item, use the "Show Collected Items" filter.
+							result.visible = app.CollectedItemVisibilityFilter(result);
+						end
+						fresh = true;
+					end
+				end
+			end
+			
+			-- Show the collection message.
+			if GetDataMember("ShowNotifications", true) then
+				local firstMatch = searchResults[1];
+				print(format(L(#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"), 
+					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, #unlockedSourceIDs));
+			end
+		else
+			-- Show the collection message.
+			if GetDataMember("ShowNotifications", true) then
+				-- Use the Blizzard API... We don't have this item in the addon.
+				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
+				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
+				-- This is okay since items of this type share their appearance regardless of the power of the item.
+				local name, link = GetItemInfo(sourceInfo.itemID);
+				print(format(L(#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"), 
+					link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, #unlockedSourceIDs));
+			end
+		end
+		
+		-- If the data is fresh, don't force a refresh.
+		app:RefreshData(fresh, true);
+	end
+end
+function app.UniqueModeItemCollectionHelper(sourceID, oldState)
+	return app.UniqueModeItemCollectionHelperBase(sourceID, oldState, app.FilterItemSourceUnique);
+end
+function app.UniqueModeItemCollectionHelperOnlyMain(sourceID, oldState)
+	return app.UniqueModeItemCollectionHelperBase(sourceID, oldState, app.FilterItemSourceUniqueOnlyMain);
+end
+app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
+
+function app.CompletionistItemRemovalHelper(sourceID, oldState)
+	-- Search ATT for the related sources.
+	local searchResults = SearchForSourceID(sourceID);
+	if searchResults and #searchResults > 0 then
+		-- Show the collection message.
+		if GetDataMember("ShowNotifications", true) then
+			local firstMatch = searchResults[1];
+			print(format(L("ITEM_ID_ADDED"), firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
+		end
+		
+		-- Attempt to cleanly refresh the data.
+		local fresh = false;
+		for i,result in ipairs(searchResults) do
+			if result.visible and result.parent and result.parent.total then
+				if result.total then
+					-- This is an item that has a relative set of groups
+					UpdateParentProgress(result);
+					
+					-- If this is NOT a group...
+					if not result.groups then
+						-- If we've collected the item, use the "Show Collected Items" filter.
+						result.visible = app.CollectedItemVisibilityFilter(result);
+					end
+				else	
+					UpdateParentProgress(result.parent);
+					
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					result.visible = app.CollectedItemVisibilityFilter(result);
+				end
+				fresh = true;
+			end
+		end
+		
+		-- If the data is fresh, don't force a refresh.
+		app:RefreshData(fresh, true);
+	else
+		-- Show the collection message.
+		if GetDataMember("ShowNotifications", true) then
+			-- Use the Blizzard API... We don't have this item in the addon.
+			-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
+			-- So this may show green items where an epic was obtained. (particularly with Legion drops)
+			-- This is okay since items of this type share their appearance regardless of the power of the item.
+			local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+			if sourceInfo then
+				local name, link = GetItemInfo(sourceInfo.itemID);
+				print(format(L("ITEM_ID_ADDED_MISSING"), link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
+			else
+				print(format(L("ITEM_ID_ADDED_MISSING"), "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r", "???"));
+			end
+		end
+		
+		-- If the item isn't in the list, then don't bother refreshing the data.
+		-- app:RefreshData(true, true);
+	end
+end
+function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
+	-- Get the source info for this source ID.
+	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+	if sourceInfo then
+		-- Go through all of the shared appearances and see if we're "unlocked" any of them.
+		local unlockedSourceIDs, allSources = {}, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
+		for i, otherSourceID in ipairs(allSources) do
+			-- If this isn't the source we already did work on and we haven't already completed it
+			if otherSourceID ~= sourceID and not GetDataSubMember("CollectedSources", otherSourceID) then
+				local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
+				if otherSourceInfo and filter(otherSourceInfo, allSources) then
+					SetDataSubMember("CollectedSources", otherSourceID, otherSourceInfo.isCollected and 1 or 2);
+					tinsert(unlockedSourceIDs, otherSourceID);
+				end
+			end
+		end
+		
+		-- Attempt to cleanly refresh the data.
+		local fresh, searchResults = false, nil;
+		if #unlockedSourceIDs > 0 then
+			for i, otherSourceID in ipairs(unlockedSourceIDs) do
+				-- Search ATT for this source ID.
+				searchResults = SearchForSourceID(otherSourceID);
+				if searchResults and #searchResults > 0 then
+					for j,result in ipairs(searchResults) do
+						if result.visible and result.parent and result.parent.total then
+							if result.total then
+								-- This is an item that has a relative set of groups
+								UpdateParentProgress(result);
+								
+								-- If this is NOT a group...
+								if not result.groups then
+									-- If we've collected the item, use the "Show Collected Items" filter.
+									result.visible = app.CollectedItemVisibilityFilter(result);
+								end
+							else	
+								UpdateParentProgress(result.parent);
+								
+								-- If we've collected the item, use the "Show Collected Items" filter.
+								result.visible = app.CollectedItemVisibilityFilter(result);
+							end
+							fresh = true;
+						end
+					end
+				end
+			end
+		end
+		
+		-- Search for the item that actually was unlocked.
+		searchResults = SearchForSourceID(sourceID);
+		if searchResults and #searchResults > 0 then
+			if oldState == 0 then
+				for i,result in ipairs(searchResults) do
+					if result.visible and result.parent and result.parent.total then
+						if result.total then
+							-- This is an item that has a relative set of groups
+							UpdateParentProgress(result);
+							
+							-- If this is NOT a group...
+							if not result.groups then
+								-- If we've collected the item, use the "Show Collected Items" filter.
+								result.visible = app.CollectedItemVisibilityFilter(result);
+							end
+						else	
+							UpdateParentProgress(result.parent);
+							
+							-- If we've collected the item, use the "Show Collected Items" filter.
+							result.visible = app.CollectedItemVisibilityFilter(result);
+						end
+						fresh = true;
+					end
+				end
+			end
+			
+			-- Show the collection message.
+			if GetDataMember("ShowNotifications", true) then
+				local firstMatch = searchResults[1];
+				print(format(L(#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"), 
+					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, #unlockedSourceIDs));
+			end
+		else
+			-- Show the collection message.
+			if GetDataMember("ShowNotifications", true) then
+				-- Use the Blizzard API... We don't have this item in the addon.
+				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
+				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
+				-- This is okay since items of this type share their appearance regardless of the power of the item.
+				local name, link = GetItemInfo(sourceInfo.itemID);
+				print(format(L(#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"), 
+					link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, #unlockedSourceIDs));
+			end
+		end
+		
+		-- If the data is fresh, don't force a refresh.
+		app:RefreshData(fresh, true);
+	end
+end
+function app.UniqueModeItemRemovalHelper(sourceID, oldState)
+	return app.UniqueModeItemRemovalHelperBase(sourceID, oldState, app.FilterItemSourceUnique);
+end
+function app.UniqueModeItemRemovalHelperOnlyMain(sourceID, oldState)
+	return app.UniqueModeItemRemovalHelperBase(sourceID, oldState, app.FilterItemSourceUniqueOnlyMain);
+end
+app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
 
 local function MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
@@ -4985,144 +5457,6 @@ CreateRow = function(self)
 	ClearRowData(row);
 end
 
--- Processing Functions (Coroutines)
-local UpdateGroup, UpdateGroups;
-local function BuildGroups(parent, groups)
-	if groups then
-		-- Iterate through the groups
-		for key, group in ipairs(groups) do
-			-- Set the group's parent
-			group.parent = parent;
-			
-			-- Build the groups
-			BuildGroups(group, group.groups);
-		end
-	end
-end
-local function ProcessGroup(data, parent, indent, back)
-	if parent.visible then
-		if parent.mapID and parent.mapID == GetTempDataMember("MapID") then
-			parent.back = 1;
-		else 
-			parent.back = back or parent.back;
-		end
-		parent.indent = indent;
-		tinsert(data, parent);
-		if parent.groups and parent.expanded then
-			indent = indent + 1;
-			back = parent.back * 0.5;
-			for j, group in ipairs(parent.groups) do
-				ProcessGroup(data, group, indent, back);
-			end
-		end
-	end
-end
-UpdateGroup = function(parent, group)
-	--[[
-	-- Uncomment this section for Harvesting
-	if group.s and group.s < 1 then
-		-- The source ID will need to be harvested.
-		table.insert(GetTempDataMember("Missing"), group);
-	end
-	]]--
-	
-	-- Determine if this user can enter the instance or acquire the item.
-	if app.GroupRequirementsFilter(group) then
-		-- Check if this is a group
-		if group.groups then
-			-- If this item is collectable, then mark it as such.
-			if group.collectable then
-				-- An item is a special case where it may have both an appearance and a set of items
-				group.progress = group.collected and 1 or 0;
-				group.total = 1;
-			elseif group.s and group.s < 1 then
-				-- This item is missing its source ID. :(
-				group.progress = 0;
-				group.total = 1;
-			else
-				-- Default to 0 for both
-				group.progress = 0;
-				group.total = 0;
-			end
-			
-			-- Update the subgroups recursively...
-			UpdateGroups(group, group.groups);
-			
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
-				-- Increment the parent group's totals.
-				parent.total = (parent.total or 0) + group.total;
-				parent.progress = (parent.progress or 0) + group.progress;
-				
-				-- If this group is trackable, then we should show it.
-				if app.RequireTrackableFilter(group) then
-					group.visible = not group.saved or app.GroupVisibilityFilter(group) or GetDataMember("ShowCompletedGroups");
-				else
-					group.visible = app.GroupVisibilityFilter(group); -- group.total > 0 and 
-				end
-			else
-				-- Hide this group. We aren't filtering for it.
-				group.visible = false;
-			end
-		else
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
-				if group.collectable then
-					-- Increment the parent group's totals.
-					parent.total = (parent.total or 0) + 1;
-					
-					-- If we've collected the item, use the "Show Collected Items" filter.
-					if group.collected then
-						group.visible = app.CollectedItemVisibilityFilter(group);
-						parent.progress = (parent.progress or 0) + 1;
-					else
-						-- Otherwise, use the "Show Missing Items" filter.
-						group.visible = app.MissingItemVisibilityFilter(group);
-					end
-				elseif group.trackable then
-					-- If this group is trackable, then we should show it.
-					if app.RequireTrackableFilter(group) then
-						group.visible = not group.saved or GetDataMember("ShowCompletedGroups");
-					else
-						-- Hide this group. We aren't filtering for it.
-						group.visible = false;
-					end
-				else
-					-- Show this group.
-					group.visible = true;
-				end
-			else
-				-- Hide this group. We aren't filtering for it.
-				group.visible = false;
-			end
-		end
-	else
-		-- This group doesn't meet requirements.
-		group.visible = false;
-	end
-end
-UpdateGroups = function(parent, groups)
-	if groups then
-		-- Iterate through the groups
-		for key, group in ipairs(groups) do
-			-- Update the group
-			UpdateGroup(parent, group);
-		end
-	end
-end
-function UpdateParent(group)
-
-end
-function UpdateParents(groups)
-	if groups then
-		-- Iterate through the groups
-		for key, group in ipairs(groups) do
-			-- Update the group's parent
-			UpdateParent(group);
-		end
-	end
-end
-
 -- Collection Window Creation
 app.Windows = {};
 local function OnScrollBarMouseWheel(self, delta)
@@ -5750,8 +6084,18 @@ app.events.VARIABLES_LOADED = function()
 	end
 	if GetDataMember("CompletionistMode", not GetDataMember("UniqueAppearances", false)) then
 		app.ItemSourceFilter = app.FilterItemSource;
+		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
+		app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
 	else
-		app.ItemSourceFilter = app.FilterItemSourceUnique;
+		if GetDataMember("MainOnly") then
+			app.ItemSourceFilter = app.FilterItemSourceUniqueOnlyMain;
+			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelperOnlyMain;
+			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelperOnlyMain;
+		else
+			app.ItemSourceFilter = app.FilterItemSourceUnique;
+			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelper;
+			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelperOnlyMain;
+		end
 	end
 	if GetDataMember("FilterItemsByClass", true) then
 		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
@@ -5905,54 +6249,13 @@ end
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	if sourceID then
 		-- Cache the previous state. This will help keep lag under control.
-		local oldState = GetDataSubMember("CollectedSources", sourceID);
-		SetDataSubMember("CollectedSources", sourceID, 1);
+		local oldState = GetDataSubMember("CollectedSources", sourceID) or 0;
 		
-		-- If this was the first time this source ID was "learned", do some work.
-		if not oldState or oldState == 0 then
-			-- Search ATT for the related sources.
-			--local attSourceInfo = SearchForSourceID(sourceID);
-			--if attSourceInfo and #attSourceInfo > 0 then
-				-- This allows for a quick refresh (New Algorithm)
-				
-			--end
-		
-			local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-			
-			-- If the user is a Completionist
-			if GetDataMember("CompletionistMode") then
-				if GetDataMember("ShowNotifications", true) then
-					-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
-					-- So this may show green items where an epic was obtained. (particularly with Legion drops)
-					-- This is okay since items of this type share their appearance regardless of the power of the item.
-					local name, link = GetItemInfo(sourceInfo.itemID);
-					print(format(L("ITEM_ID_ADDED"), link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
-				end
-			else
-				local shared = 0;
-				local categoryID, appearanceID, canEnchant, texture, isCollected, itemLink = C_TransmogCollection_GetAppearanceSourceInfo(sourceID);
-				if categoryID then
-					for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(appearanceID)) do
-						if not GetDataSubMember("CollectedSources", otherSourceID) then
-							if C_TransmogCollection_GetSourceInfo(otherSourceID).categoryID == categoryID then
-								SetDataSubMember("CollectedSources", otherSourceID, 2);
-								shared = shared + 1;
-							end
-						end
-					end
-				end
-				
-				if GetDataMember("ShowNotifications", true) then
-					-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
-					-- So this may show green items where an epic was obtained. (particularly with Legion drops)
-					-- This is okay since items of this type share their appearance regardless of the power of the item.
-					local name, link = GetItemInfo(sourceInfo.itemID);
-					print(format(L(shared > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"), link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, shared));
-				end
-			end
-			
-			-- Refresh the Data and Celebrate!
-			app:RefreshData(false, true);
+		-- Only do work if we weren't already learned.
+		-- We check here because Blizzard likes to double notify for items with timers.
+		if oldState ~= 1 then
+			SetDataSubMember("CollectedSources", sourceID, 1);
+			app.ActiveItemCollectionHelper(sourceID, oldState);
 			PlayFanfare();
 			wipe(searchCache);
 		end
