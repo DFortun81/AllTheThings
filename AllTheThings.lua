@@ -4321,7 +4321,12 @@ local function CreateSettingsMenu()
 			if self:GetChecked() then
 				OpenMiniListForCurrentZone();
 			end
-		end);	
+		end);
+		self.AutoMiniList:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones.\n\nDrag the window and rescale it where you want it to appear.\n\nSome people don't like this feature, but when you are solo farming, this feature is extremely useful.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
 		
 		self.RequirePersonalLootFilter = CreateFrame("CheckButton", name .. "-RequirePersonalLootFilter", self, "InterfaceOptionsCheckButtonTemplate");
 		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -110, GetDataMember("RequirePersonalLootFilter"));
@@ -4333,6 +4338,11 @@ local function CreateSettingsMenu()
 				app.PersonalLootFilter = app.NoFilter;
 			end
 			app:RefreshData(false, true);
+		end);
+		self.RequirePersonalLootFilter:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you only want to see items that Blizzard has listed as usable for your current specialization.\n\nWARNING: This will mean that a lot of items you can transmog and/or collect on your current character will be hidden in the listings.\n\nWARNING #2: This feature is EXTREMELY SLOW as it currently uses the Blizzard API. User discretion is advised. We do NOT recommend turning this feature on.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
 		end);
 		
 		self.EnableTooltipInformation = CreateFrame("CheckButton", name .. "-EnableTooltipInformation", self, "InterfaceOptionsCheckButtonTemplate");
