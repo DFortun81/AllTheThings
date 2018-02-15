@@ -4202,17 +4202,15 @@ local function CreateSettingsMenu()
 					app.Minimap:Hide();
 				end
 			end);
-		
-		-- This creates the ShowNotifications checkBox --
-		self.ShowNotifications = CreateFrame("CheckButton", name .. "-ShowNotifications", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowNotifications, self, "Show Collection Notifications", 15, -70, GetDataMember("ShowNotifications", true));
-		self.ShowNotifications:SetScript("OnClick", function(self)
-			SetDataMember("ShowNotifications", self:GetChecked());
+		self.ShowMinimapButton:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
 		end);
 		
 		-- This creates the showCompletedGroups checkBox --
 		self.ShowCompletedGroups = CreateFrame("CheckButton", name .. "-ShowCompletedGroups", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCompletedGroups, self, "Show Completed Groups", 15, -90, GetDataMember("ShowCompletedGroups"));
+		CreateCheckBox(self.ShowCompletedGroups, self, "Show Sections I have Completed", 15, -70, GetDataMember("ShowCompletedGroups"));
 		self.ShowCompletedGroups:SetScript("OnClick", function(self)
 			SetDataMember("ShowCompletedGroups", self:GetChecked());
 			if self:GetChecked() then
@@ -4222,11 +4220,15 @@ local function CreateSettingsMenu()
 			end
 			app:RefreshData();
 		end);
-	
+		self.ShowCompletedGroups:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
 
 		-- This creates the showCollectedItems checkBox -- 
 		self.ShowCollectedItems = CreateFrame("CheckButton", name .. "-ShowCollectedItems", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCollectedItems, self, "Show Collected Items", 15, -110, GetDataMember("ShowCollectedItems"));
+		CreateCheckBox(self.ShowCollectedItems, self, "Show Things I have Collected", 15, -90, GetDataMember("ShowCollectedItems"));
 		self.ShowCollectedItems:SetScript("OnClick", function(self)
 			SetDataMember("ShowCollectedItems", self:GetChecked());
 			if self:GetChecked() then
@@ -4236,10 +4238,15 @@ local function CreateSettingsMenu()
 			end
 			app:RefreshData();
 		end);
+		self.ShowCollectedItems:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see collected Items, Mounts, Toys, Pets, Illusions, etc. in the list.\n\nIf an item is relative to a completed section, it will not appear in the list unless you have 'Show Sections I have Completed' enabled.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
 		
 		-- This creates the "show missing items" checkBox --
 		self.ShowMissingItems = CreateFrame("CheckButton", name .. "-ShowMissingItems", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowMissingItems, self, "Show Missing Items", 15, -130, GetDataMember("ShowMissingItems"));
+		CreateCheckBox(self.ShowMissingItems, self, "Show Things I am Missing", 15, -110, GetDataMember("ShowMissingItems"));
 		self.ShowMissingItems:SetScript("OnClick", function(self)
 			SetDataMember("ShowMissingItems", self:GetChecked());
 			if self:GetChecked() then
@@ -4249,11 +4256,16 @@ local function CreateSettingsMenu()
 			end
 			app:RefreshData();
 		end);
+		self.ShowMissingItems:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see missing Items, Mounts, Toys, Pets, Illusions, etc. in the list. (based on Filters)\n\nThis is provided for debugging purposes.\n\nWe do NOT recommend turning this off.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
 		
 		
 		-- This creates the completionst Mode checkBox --
 		self.CompletionistMode = CreateFrame("CheckButton", name .. "-CompletionistMode", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.CompletionistMode, self, "|CFFADD8E6Completionist Mode|r", 25, -150, GetDataMember("CompletionistMode")); 
+		CreateCheckBox(self.CompletionistMode, self, "|CFFADD8E6Completionist Mode|r", 25, -140, GetDataMember("CompletionistMode")); 
 		self.CompletionistMode:SetScript("OnClick", function(self)
 			SetCompletionistMode(self:GetChecked(), true);
 			if self:GetChecked() then
@@ -4275,7 +4287,7 @@ local function CreateSettingsMenu()
 
 		-- This creates the "I only care about my main" checkBox --
 		self.MainOnly = CreateFrame("CheckButton", name .. "-MainOnly", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.MainOnly, self, L("I_ONLY_CARE_ABOUT_MY_MAIN"), 35, -170, GetDataMember("MainOnly")); 
+		CreateCheckBox(self.MainOnly, self, L("I_ONLY_CARE_ABOUT_MY_MAIN"), 35, -160, GetDataMember("MainOnly")); 
 		self.MainOnly:SetScript("OnClick", function(self)
 			SetDataMember("MainOnly", self:GetChecked());
 			SetCompletionistMode(GetDataMember("CompletionistMode"));
@@ -4291,9 +4303,20 @@ local function CreateSettingsMenu()
 			self.MainOnly:Show();
 		end
 
+		-- This creates the ShowNotifications checkBox --
+		self.ShowNotifications = CreateFrame("CheckButton", name .. "-ShowNotifications", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.ShowNotifications, self, "Notify me when I Collect Things", 300, -50, GetDataMember("ShowNotifications", true));
+		self.ShowNotifications:SetScript("OnClick", function(self)
+			SetDataMember("ShowNotifications", self:GetChecked());
+		end);
+		self.ShowNotifications:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
 		
 		self.PlayFanfare = CreateFrame("CheckButton", name .. "-PlayFanfare", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.PlayFanfare, self, "Play Collection Fanfare", 300, -50, GetDataMember("PlayFanfare", true));
+		CreateCheckBox(self.PlayFanfare, self, "Play Fanfare when I Collect Things", 300, -70, GetDataMember("PlayFanfare", true));
 		self.PlayFanfare:SetScript("OnClick", function(self)
 			SetDataMember("PlayFanfare", self:GetChecked());
 		end);
@@ -4304,7 +4327,7 @@ local function CreateSettingsMenu()
 		end);
 	
 		self.PlayRemoveSound = CreateFrame("CheckButton", name .. "-PlayRemoveSound", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.PlayRemoveSound, self, "Play Remove Sound", 300, -70, GetDataMember("PlayRemoveSound", true));
+		CreateCheckBox(self.PlayRemoveSound, self, "Play a Warning when I Remove Things", 300, -90, GetDataMember("PlayRemoveSound", true));
 		self.PlayRemoveSound:SetScript("OnClick", function(self)
 			SetDataMember("PlayRemoveSound", self:GetChecked());
 		end);
@@ -4315,7 +4338,7 @@ local function CreateSettingsMenu()
 		end);
 		
 		self.AutoMiniList = CreateFrame("CheckButton", name .. "-AutoMiniList", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.AutoMiniList, self, "Auto Mini List", 300, -90, GetDataMember("AutoMiniList", true));
+		CreateCheckBox(self.AutoMiniList, self, "Show the Mini List Automatically", 300, -110, GetDataMember("AutoMiniList", true));
 		self.AutoMiniList:SetScript("OnClick", function(self)
 			SetDataMember("AutoMiniList", self:GetChecked());
 			if self:GetChecked() then
@@ -4324,12 +4347,12 @@ local function CreateSettingsMenu()
 		end);
 		self.AutoMiniList:SetScript("onEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones.\n\nDrag the window and rescale it where you want it to appear.\n\nSome people don't like this feature, but when you are solo farming, this feature is extremely useful.", nil, nil, nil, nil, true);
+			GameTooltip:SetText ("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones.\n\nDrag the window and rescale it where you want it to appear.\n\nSome people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
 		
 		self.RequirePersonalLootFilter = CreateFrame("CheckButton", name .. "-RequirePersonalLootFilter", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -110, GetDataMember("RequirePersonalLootFilter"));
+		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -130, GetDataMember("RequirePersonalLootFilter"));
 		self.RequirePersonalLootFilter:SetScript("OnClick", function(self)
 			SetDataMember("RequirePersonalLootFilter", self:GetChecked());
 			if self:GetChecked() then
