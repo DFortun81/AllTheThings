@@ -123,7 +123,7 @@ _.Instances =
 								i(109927),	-- Mistwoven Windcloak
 								i(109915),	-- Rigid Scale Cloak
 								i(109928),	-- Skullcracker Cloak
-								i(109918),	-- Soot-Scarred Longcloak								
+								i(109918),	-- Soot-Scarred Longcloak
 								i(109917),	-- Three-Clefthoof Cape
 								i(109799),	-- Blackwater Boots
 								i(109788),	-- Bloodfeather Treads
