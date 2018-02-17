@@ -389,10 +389,10 @@ _.Zones =
 					qg(45442, q( 28085)),	-- Trouble at Highperch
 --]]					
 					qg(39963, qh(25489, { -- Two If By Boat
-						i( 63563),
-						i( 63564),
-						i( 63565),
-						i(131431),
+						i( 63563),	-- Maloof's Spare Boots
+						i( 63564),	-- Floating Belt
+						i( 63565),	-- Bracers of Desperate Need
+						i(131431),	-- Maloof's Spare Treads
 					})),
 					qg(40885, qa(25627, { -- Two-Tusk Takedown
 						i(63624),
