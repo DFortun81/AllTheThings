@@ -398,9 +398,14 @@ _.Zones =
 					qg(39893, qh(25356)),	-- To the Summit
 					qg( 8115, qh(25338)),	-- Treant Muisek
 					qg(39847, qh(25349)),	-- Twisted Sisters
-					qg(39992, qa(25488)),	-- Two If By Boat
-					qg( 7776, qh(25339)),	-- Vengeance on the Northspring
 --]]					
+					qg(39992, qa(25488, {	-- Two If By Boat
+						i( 63559),	-- Maloof's Spare Boots
+						i( 63560),	-- Floating Belt
+						i( 63561),	-- Bracers of Desperate Need
+						i(131430),	-- Maloof's Spare Treads
+					})),
+--					qg( 7776, qh(25339)),	-- Vengeance on the Northspring					
 					qg(40131, q( 25368,  {  -- Verinias the Twisted
 						i( 54924),
 						i( 54925),
