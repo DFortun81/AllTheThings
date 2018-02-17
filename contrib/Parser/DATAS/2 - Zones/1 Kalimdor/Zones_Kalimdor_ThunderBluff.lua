@@ -275,8 +275,8 @@ _.Zones =
 					qg( 3978, qh( 2965)),	-- Portents of Uldum
 --]]					
 					qg( 4943, qh(27292, { -- Return to Krog
-						i(33267),
-						i(33259),
+						i( 33267),	-- Fleshripper
+						i( 33259),	-- Crimson Barbut
 						i(156977),	-- Serrated Gladius 
 					})),
 --[[					

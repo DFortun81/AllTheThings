@@ -295,14 +295,6 @@ _.Zones =
 						i(156977),	-- Serrated Gladius 
 					})),
 --					qg( 5086, qa(27235)),	-- Renn McGill
-					q(27292, { -- Return to Krog
-						["groups"] = {
-							i(33267), -- Fleshripper
-							i(156977), -- Serrated Gladius
-							i(33259), -- Crimson Barbut
-						},
-						["qg"] = 4943,
-					}),
 --[[					qg(23569, qa(27236)),	-- Secondhand Diving Gear
 					qg(23797, q( 27348)),	-- Secure the Cargo!
 					qg( 4926, qh(27295)),	-- Seek Out Tabetha
