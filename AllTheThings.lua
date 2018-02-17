@@ -228,7 +228,7 @@ app.print = function(msg, ...)
 	DEFAULT_CHAT_FRAME:AddMessage(app.DisplayName .. ": " .. (msg or "nil"), ...);
 end
 local function L(name, ...)
-	return name and app.LL[name];
+	return name and app.LL and app.LL[name];
 end
 local function SetLocale(loc)
 	loc = loc or app.Locale or "enUS";
@@ -4988,7 +4988,7 @@ local function SetRowData(self, data)
 			end
 		end
 		if data.saved then
-			if data.parent and data.parent.locks then
+			if data.parent and data.parent.locks or data.daily then
 				self.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known");
 			else
 				self.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known_green");
@@ -5124,55 +5124,116 @@ end
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
-		if reference.groups then
-			if button == "LeftButton" then
-				if IsShiftKeyDown() then
-					RefreshCollections(reference);
-					return true;
-				end
-				if IsModifiedClick("DRESSUP") then
-					local link = reference.link or reference.silentLink;
-					if link and IsDressableItem(link) and DressUpVisual(link) then return true; end
-				end
-				if self.index > 0 then
-					-- Expand Functionality
-					if IsAltKeyDown() then
-						ExpandGroupsRecursively(reference, not reference.expanded);
-					else
-						reference.expanded = not reference.expanded;
+		-- Determine if this is a TODO list or a regular list.
+		local todo = self:GetParent().todo;
+		if todo then
+			-- TODO List
+			print("TODO!!!");
+		else
+			-- Regular List
+			if reference.groups then
+				if button == "LeftButton" then
+					if IsShiftKeyDown() then
+						RefreshCollections(reference);
+						return true;
 					end
-					app:UpdateWindows();
+					if IsModifiedClick("DRESSUP") then
+						local link = reference.link or reference.silentLink;
+						if link and IsDressableItem(link) and DressUpVisual(link) then return true; end
+					end
+					if self.index > 0 then
+						-- Expand Functionality
+						if IsAltKeyDown() then
+							ExpandGroupsRecursively(reference, not reference.expanded);
+						else
+							reference.expanded = not reference.expanded;
+						end
+						app:UpdateWindows();
+					else
+						-- Allow the First Frame to move the parent.
+						local owner = self:GetParent():GetParent();
+						self:SetScript("OnMouseUp", function(self)
+							self:SetScript("OnMouseUp", nil);
+							StopMovingOrSizing(owner);
+						end);
+						StartMovingOrSizing(owner, true);
+					end
 				else
-					-- Allow the First Frame to move the parent.
-					local owner = self:GetParent():GetParent();
-					self:SetScript("OnMouseUp", function(self)
-						self:SetScript("OnMouseUp", nil);
-						StopMovingOrSizing(owner);
-					end);
-					StartMovingOrSizing(owner, true);
+					if IsShiftKeyDown() and Atr_SearchAH then
+						Atr_SearchAH (app.DisplayName, SearchForMissingItems(reference));
+						return true;
+					end
+					if self.index > 0 then
+						-- Pop Out Functionality! :O
+						local popout = app:GetWindow(self.ref.parent.text .. self.ref.text);
+						popout.data = setmetatable({}, { __index = self.ref });
+						ExpandGroupsRecursively(popout.data, true);
+						--ExportData(popout.data);
+						popout:Toggle(true);
+					else
+						-- Configuration Functionality!
+						ShowInterfaceOptions();
+					end
 				end
 			else
-				if IsShiftKeyDown() and Atr_SearchAH then
-					Atr_SearchAH (app.DisplayName, SearchForMissingItems(reference));
-					return true;
+				local link = reference.link or reference.silentLink;
+				if link then
+					if HandleModifiedItemClick(link) then return true; end
+					if IsModifiedClick("DRESSUP") then return DressUpVisual(link) or app.print(link or self.Label:GetText()); end
+					if button == "RightButton" then
+						-- Pop Out Functionality! :O
+						local popout = app:GetWindow(self.ref.parent.text .. self.ref.text);
+						if self.ref.s then
+							-- This is an item that has an appearance
+							local mainItem = setmetatable({ ["groups"] = {} }, { __index = self.ref });
+							local sourceInfo = C_TransmogCollection_GetSourceInfo(self.ref.s);
+							if sourceInfo then
+								-- Go through all of the shared appearances and see if we're "unlocked" any of them.
+								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+									-- If this isn't the source we already did work on and we haven't already completed it
+									if otherSourceID ~= self.ref.s then
+										local attSearch = SearchForSourceIDVeryQuickly(otherSourceID);
+										if attSearch then
+											tinsert(mainItem.groups, setmetatable({}, { __index = attSearch })); 
+										else
+											local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
+											if otherSourceInfo then
+												local newItem = app.CreateItem(otherSourceInfo.itemID);
+												if otherSourceInfo.isCollected then
+													SetDataSubMember("CollectedSources", otherSourceID, 1);
+													newItem.collected = true;
+												end
+												newItem.s = otherSource;
+												tinsert(mainItem.groups, newItem);
+											end
+										end
+									end
+								end
+							end
+							popout.data = {
+								["text"] = "Shared Appearances",
+								["description"] = "The items in this list are shared appearances for the following item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
+								["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
+								["visible"] = true,
+								["expanded"] = true,
+								["groups"] = { mainItem }
+							};
+						else
+							-- This is a standalone item
+							popout.data = {
+								["text"] = "Standalone Item",
+								["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
+								["visible"] = true,
+								["expanded"] = true,
+								["groups"] = { setmetatable({}, { __index = self.ref }) }
+							};
+						end
+						BuildGroups(popout.data, popout.data.groups);
+						UpdateGroups(popout.data, popout.data.groups, 1);
+						ExpandGroupsRecursively(popout.data, true);
+						popout:Toggle(true);
+					end
 				end
-				if self.index > 0 then
-					-- Pop Out Functionality! :O
-					local popout = app:GetWindow(self.ref.parent.text .. self.ref.text);
-					popout.data = setmetatable({}, { __index = self.ref });
-					ExpandGroupsRecursively(popout.data, true);
-					--ExportData(popout.data);
-					popout:Toggle(true);
-				else
-					-- Configuration Functionality!
-					ShowInterfaceOptions();
-				end
-			end
-		else
-			local link = reference.link or reference.silentLink;
-			if link then
-				if HandleModifiedItemClick(link) then return true; end
-				if IsModifiedClick("DRESSUP") then return DressUpVisual(link) or app.print(link or self.Label:GetText()); end
 			end
 		end
 	end
@@ -5417,6 +5478,7 @@ CreateRow = function(self)
 	local row = CreateFrame("Button", nil, self);
 	row:SetHeight(self.rowHeight);
 	row.index = #self.rows;
+	row.todo = self.todo;
 	if row.index == 0 then
 		-- This means relative to the parent.
 		row:SetPoint("TOPLEFT");
@@ -5522,7 +5584,7 @@ function app:ToggleWindow(suffix)
 	local window = app.Windows[suffix];
 	if window then ToggleWindow(window); end
 end
-local function UpdateWindow(self)
+local function UpdateWindow(self, force)
 	-- If this window doesn't have data, do nothing.
 	if not self.data then return; end
 	if not self.rowData then
@@ -5530,7 +5592,7 @@ local function UpdateWindow(self)
 	else
 		wipe(self.rowData);
 	end
-	if self.data and self:IsVisible() then
+	if self.data and (force or self:IsVisible()) then
 		self.data.expanded = true;
 		if self.data.baseIndent and self.data.groups then
 			-- This is Mini Listed Data
@@ -5880,7 +5942,7 @@ function app:RefreshData(lazy, safely)
 		app:UpdateWindows();
 	end);
 end
-function app:GetWindow(suffix)
+function app:GetWindow(suffix, todo)
 	local window = app.Windows[suffix];
 	if not window then
 		-- Create the window instance.
@@ -5904,7 +5966,18 @@ function app:GetWindow(suffix)
 		window:SetMinResize(32, 32);
 		window:SetSize(300, 300);
 		window:SetUserPlaced(true);
-		window.data = {};
+		window.data = {
+			['text'] = suffix,
+			['icon'] = "Interface\\Icons\\Ability_Spy.blp", 
+			['visible'] = true, 
+			['expanded'] = true,
+			['groups'] = {
+				{
+					['text'] = "No data linked to listing.", 
+					['visible'] = true
+				}
+			}
+		};
 		window:Hide();
 		
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
@@ -5943,8 +6016,10 @@ function app:GetWindow(suffix)
 		container.rowHeight = select(2, GameFontNormal:GetFont()) + 4;
 		window.Container = container;
 		container.rows = {};
+		container.todo = todo;
 		scrollbar:SetValue(1);
 		container:Show();
+		UpdateWindow(window, true);
 	end
 	return window;
 end
