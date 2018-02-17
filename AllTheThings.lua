@@ -4155,6 +4155,64 @@ local function CreateMinimapButton()
 	button:Show();
 	return button;
 end
+local function CreateMiniListForGroup(group)
+	-- Pop Out Functionality! :O
+	local popout = app:GetWindow((group.parent and group.parent.text or "") .. group.text);
+	if group.s then
+		-- This is an item that has an appearance
+		local mainItem = setmetatable({ ["groups"] = {} }, { __index = group });
+		local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
+		if sourceInfo then
+			-- Go through all of the shared appearances and see if we're "unlocked" any of them.
+			for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+				-- If this isn't the source we already did work on and we haven't already completed it
+				if otherSourceID ~= group.s then
+					local attSearch = SearchForSourceIDVeryQuickly(otherSourceID);
+					if attSearch then
+						tinsert(mainItem.groups, setmetatable({}, { __index = attSearch })); 
+					else
+						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
+						if otherSourceInfo then
+							local newItem = app.CreateItem(otherSourceInfo.itemID);
+							if otherSourceInfo.isCollected then
+								SetDataSubMember("CollectedSources", otherSourceID, 1);
+								newItem.collected = true;
+							end
+							newItem.s = otherSource;
+							newItem.description = "|CFFFF0000This sourceID was not found in the ATT database. It might be invalid.|r";
+							tinsert(mainItem.groups, newItem);
+						end
+					end
+				end
+			end
+		end
+		popout.data = {
+			["text"] = "Shared Appearances",
+			["description"] = "The items in this list are shared appearances for the following item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
+			["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
+			["visible"] = true,
+			["expanded"] = true,
+			["groups"] = { mainItem }
+		};
+	elseif group.groups then
+		-- This is already a container with accurate numbers.
+		popout.data = setmetatable({}, { __index = group });
+	else
+		-- This is a standalone item
+		popout.data = {
+			["text"] = "Standalone Item",
+			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
+			["visible"] = true,
+			["expanded"] = true,
+			["groups"] = { setmetatable({}, { __index = group }) }
+		};
+	end
+	BuildGroups(popout.data, popout.data.groups);
+	UpdateGroups(popout.data, popout.data.groups, 1);
+	ExpandGroupsRecursively(popout.data, true);
+	--ExportData(popout.data);
+	popout:Toggle(true);
+end
 local function CreateSettingsMenu()
 
 	-- function that creates a new settingFrame --
@@ -5180,60 +5238,7 @@ local function RowOnClick(self, button)
 				if link then
 					if HandleModifiedItemClick(link) then return true; end
 					if IsModifiedClick("DRESSUP") then return DressUpVisual(link) or app.print(link or self.Label:GetText()); end
-					if button == "RightButton" then
-						-- Pop Out Functionality! :O
-						local popout = app:GetWindow(self.ref.parent.text .. self.ref.text);
-						if self.ref.s then
-							-- This is an item that has an appearance
-							local mainItem = setmetatable({ ["groups"] = {} }, { __index = self.ref });
-							local sourceInfo = C_TransmogCollection_GetSourceInfo(self.ref.s);
-							if sourceInfo then
-								-- Go through all of the shared appearances and see if we're "unlocked" any of them.
-								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									-- If this isn't the source we already did work on and we haven't already completed it
-									if otherSourceID ~= self.ref.s then
-										local attSearch = SearchForSourceIDVeryQuickly(otherSourceID);
-										if attSearch then
-											tinsert(mainItem.groups, setmetatable({}, { __index = attSearch })); 
-										else
-											local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
-											if otherSourceInfo then
-												local newItem = app.CreateItem(otherSourceInfo.itemID);
-												if otherSourceInfo.isCollected then
-													SetDataSubMember("CollectedSources", otherSourceID, 1);
-													newItem.collected = true;
-												end
-												newItem.s = otherSource;
-												newItem.description = "|CFFFF0000This sourceID was not found in the ATT database. It might be invalid.|r";
-												tinsert(mainItem.groups, newItem);
-											end
-										end
-									end
-								end
-							end
-							popout.data = {
-								["text"] = "Shared Appearances",
-								["description"] = "The items in this list are shared appearances for the following item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
-								["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
-								["visible"] = true,
-								["expanded"] = true,
-								["groups"] = { mainItem }
-							};
-						else
-							-- This is a standalone item
-							popout.data = {
-								["text"] = "Standalone Item",
-								["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
-								["visible"] = true,
-								["expanded"] = true,
-								["groups"] = { setmetatable({}, { __index = self.ref }) }
-							};
-						end
-						BuildGroups(popout.data, popout.data.groups);
-						UpdateGroups(popout.data, popout.data.groups, 1);
-						ExpandGroupsRecursively(popout.data, true);
-						popout:Toggle(true);
-					end
+					if button == "RightButton" then CreateMiniListForGroup(self.ref); end
 				end
 			end
 		end
@@ -6064,8 +6069,16 @@ SlashCmdList["RELOADUI"] = ReloadUI;
 SLASH_AllTheThings1 = "/allthethings";
 SLASH_AllTheThings2 = "/things";
 SLASH_AllTheThings3 = "/att";
-SlashCmdList["AllTheThings"] = function(msg)
-	ToggleMainList();
+SlashCmdList["AllTheThings"] = function(cmd)
+	if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
+		ToggleMainList();
+	elseif cmd == "mini" or cmd == "minilist" then
+		ToggleMiniListForCurrentZone();
+	else
+		-- Search for the Item Link in the database
+		local listing, group = SearchForCachedItemLink(cmd);
+		if group and #group > 0 then CreateMiniListForGroup(group[1]); end
+	end
 end
 
 -- Register Events required at the start
