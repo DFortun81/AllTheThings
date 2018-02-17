@@ -5204,6 +5204,7 @@ local function RowOnClick(self, button)
 													newItem.collected = true;
 												end
 												newItem.s = otherSource;
+												newItem.description = "|CFFFF0000This sourceID was not found in the ATT database. It might be invalid.|r";
 												tinsert(mainItem.groups, newItem);
 											end
 										end
