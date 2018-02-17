@@ -3727,7 +3727,7 @@ UpdateGroups = function(parent, groups)
 		end
 	end
 end
-function UpdateParentProgress(group)
+local function UpdateParentProgress(group)
 	group.progress = group.progress + 1;
 	
 	-- Continue on to this object's parent.
@@ -4184,6 +4184,7 @@ local function CreateSettingsMenu()
 	end
 	
 	local name = app:GetName();  -- should probably be outside this function cant be the only place app:getName() gets used
+	local lastFilter;
 	
 	-- This creates the main window in the options --
 	local mainFrame = CreateFrame("FRAME", name .. "-Settings", UIParent);
@@ -4689,7 +4690,7 @@ local function CreateSettingsMenu()
 				self:SetChecked(false);
 				app:RefreshData();
 			end);
-			local lastFilter = itemClassFilter;
+			lastFilter = itemClassFilter;
 			for j, filter in ipairs(filters) do
 				local itemFilter = CreateFrame("CheckButton", itemClassFilter:GetName() .. "-" .. filter, self, "InterfaceOptionsCheckButtonTemplate");
 				itemFilter:SetPoint("LEFT", self, "LEFT", 20, 0);

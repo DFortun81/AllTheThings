@@ -2,19 +2,19 @@
 	<Binding name="ALLTHETHINGS_OPENMAINLIST" header="ALLTHETHINGS" category="ADDONS">
 		AllTheThings.OpenMainList();
 	</Binding>
-	<Binding name="ALLTHETHINGS_OPENMINILIST" header="ALLTHETHINGS" category="ADDONS">
+	<Binding name="ALLTHETHINGS_OPENMINILIST" category="ADDONS">
 		AllTheThings.OpenMiniListForCurrentZone();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" header="ALLTHETHINGS" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" category="ADDONS">
 		AllTheThings.ToggleMainList();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEMINILIST" header="ALLTHETHINGS" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLEMINILIST" category="ADDONS">
 		AllTheThings.ToggleMiniListForCurrentZone();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" header="ALLTHETHINGS" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" category="ADDONS">
 		AllTheThings.ToggleCompletionistMode();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEDEBUGMODE" header="ALLTHETHINGS" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLEDEBUGMODE" category="ADDONS">
 		AllTheThings.ToggleDebugMode();
 	</Binding>
 </Bindings>
