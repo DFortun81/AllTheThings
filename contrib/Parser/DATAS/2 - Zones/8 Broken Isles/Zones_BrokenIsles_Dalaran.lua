@@ -2339,11 +2339,13 @@ _.Zones =
 					}),
 					n(108825, {	-- Conjurer Margoss
 						["groups"] = {
-							i(142532),	-- Crate of Bobbers: Murloc Head Toy
-							i(142531),	-- Crate of Bobbers: Squeaky Duck Toy
-							i(138810),	-- Sting Ray Pup Pet
-							i(143842),	-- Trashy Pet
-							i(138811),	-- Brinedeep Bottom Feeder Mount
+							i(138777, { -- Drowned Mana
+								i(138811),	-- Brinedeep Bottom Feeder Mount
+								i(142532),	-- Crate of Bobbers: Murloc Head Toy
+								i(142531),	-- Crate of Bobbers: Squeaky Duck Toy
+								i(138810),	-- Sting Ray Pup
+								i(143842),	-- Trashy
+							}),
 						},
 						["requiredSkill"] = 356,
 					}),
