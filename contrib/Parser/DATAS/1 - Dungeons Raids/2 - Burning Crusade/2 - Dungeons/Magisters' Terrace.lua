@@ -11,6 +11,7 @@ _.Instances =
 					d(1, {		-- Normal
 						e(530, { -- Selin Fireheart
 							["groups"] = {
+								i(35275), 		-- Orb of Sin'dorei
 								i(34604),		-- Jaded Crystal Dagger
 								i(34699),		-- Sun-Forged Cleaver
 								i(34601),		-- Shoulderplates of Everlasting Pain
@@ -25,6 +26,7 @@ _.Instances =
 						}),
 						e(531, { -- Vexallus
 							["groups"] = {
+								i(35275), 		-- Orb of Sin'dorei
 								i(34608),		-- Rod of the Blazing Light
 								i(34606),		-- Edge of Oppression
 								i(34703),		-- Landro's Dancing Blade
@@ -38,6 +40,7 @@ _.Instances =
 						}),
 						e(532, { -- Priestess Delrissa
 							["groups"] = {
+								i(35275), 		-- Orb of Sin'dorei
 								i(34790),		-- Battle-Mace of the High Priestess
 								i(34788),		-- Duskhallow Mantle
 								i(34792),		-- Cloak of the Betrayed
@@ -48,6 +51,7 @@ _.Instances =
 						}),
 						e(533, { -- Kael'thas Sunstrider
 							["groups"] = {
+								i(35275), 		-- Orb of Sin'dorei
 								i(35504),		-- Phoenix Hatchling
 								i(34794),		-- Axe of Shattered Dreams
 								i(34797),		-- Sun-Infused Focus Staff
@@ -77,6 +81,7 @@ _.Instances =
 						["groups"] = {
 							e(530, { -- Selin Fireheart
 								["groups"] = {
+									i(35275), 		-- Orb of Sin'dorei
 									i(34604),		-- Jaded Crystal Dagger
 									i(34699),		-- Sun-Forged Cleaver
 									i(34601),		-- Shoulderplates of Everlasting Pain
@@ -91,7 +96,7 @@ _.Instances =
 							}),
 							e(531, { -- Vexallus
 								["groups"] = {
-									i(35275), -- Orb of Sin'dorei
+									i(35275), 		-- Orb of Sin'dorei
 									i(34608),		-- Rod of the Blazing Light
 									i(34606),		-- Edge of Oppression
 									i(34703),		-- Landro's Dancing Blade
@@ -105,7 +110,7 @@ _.Instances =
 							}),
 							e(532, { -- Priestess Delrissa
 								["groups"] = {
-									i(35275), -- Orb of Sin'dorei
+									i(35275), 		-- Orb of Sin'dorei
 									i(34790),		-- Battle-Mace of the High Priestess
 									i(34788),		-- Duskhallow Mantle
 									i(34792),		-- Cloak of the Betrayed

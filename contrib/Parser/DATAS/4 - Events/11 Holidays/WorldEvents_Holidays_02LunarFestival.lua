@@ -39,6 +39,10 @@ _.WorldEvents =
 							un(17, i(21100, {-- Coin of Ancestry
 								un(17, i(74611)),	-- Festival Lantern
 								un(17, i(74610)),	-- Lunar Lantern
+								un(17, i(151355)), 	-- Crown of Courage
+								un(17, i(151353)), 	-- Crown of Dark Blossoms
+								un(17, i(151352)), 	-- Crown of Good Fortune								
+								un(17, i(151354)), 	-- Crown of Prosperity								
 								un(17, i(21541)),	-- Festive Black Pant Suit
 								un(17, i(21544)),	-- Festive Blue Pant Suit
 								un(17, i(21157)),	-- Festive Green Dress
@@ -48,10 +52,6 @@ _.WorldEvents =
 							})),
 						}),
 					}),
-					un(17, i(151352)), 	-- Crown of Good Fortune
-					un(17, i(151353)), 	-- Crown of Dark Blossoms
-					un(17, i(151354)), 	-- Crown of Prosperity
-					un(17, i(151355)), 	-- Crown of Courage
 				},
 				["achievementID"] = 913, -- To Honor One's Elders
 				["u"] = 17,
