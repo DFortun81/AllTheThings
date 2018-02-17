@@ -83,6 +83,11 @@ _.Instances =
 								i(37614),	-- Gauntlets of the Plundering Geist
 								i(35611),	-- Gloves of the Blood Prince
 							})),
+							cr(30258, e(583, {	-- Amanitar
+								i(43284),	-- Amanitar Skullbow
+								i(43287),	-- Silken Bridge Handwraps
+								i(43286),	-- Legguards of Swarming Attacks
+							})),
 							cr(29310, e(582, {	-- Jedoga Shadowseeker
 								ig(21524), 	-- Red Winter Hat
 								i(43281),	-- Edge of Oblivion
@@ -91,11 +96,6 @@ _.Instances =
 								i(43278),	-- Cloak of the Darkcaster
 								i(43283),	-- Subterranean Waterfall Shroud
 								i(43279),	-- Battlechest of the Twilight Cult
-							})),
-							cr(30258, e(583, {	-- Amanitar
-								i(43284),	-- Amanitar Skullbow
-								i(43287),	-- Silken Bridge Handwraps
-								i(43286),	-- Legguards of Swarming Attacks
 							})),
 							cr(29311, e(584, {	-- Herald Volazj
 								i(37617),	-- Staff of Sinister Claws
@@ -130,14 +130,6 @@ _.Instances =
 								i(127625),	-- Gauntlets of the Plundering Geist
 								i(127612),	-- Gloves of the Blood Prince
 							})),
-							cr(29310, e(582, {	-- Jedoga Shadowseeker
-								i(127640),	-- Edge of Oblivion
-								i(127647),	-- Ice-Rimed Chopper
-								i(127610),	-- Talisman of Scourge Command
-								i(127639),	-- Faceguard of the Hammer Clan
-								i(127637),	-- Cloak of the Darkcaster
-								i(127638),	-- Battlechest of the Twilight Cult
-							})),
 							cr(30258, e(583, {	-- Amanitar
 								i(127643),	-- Amanitar Skullbow
 								i(127613),	-- Mantle of Echoing Bats
@@ -147,6 +139,14 @@ _.Instances =
 								i(127614),	-- Pyramid Embossed Belt
 								i(127645),	-- Legguards of Swarming Attacks
 								i(127615),	-- Volazj's Sabatons
+							})),
+							cr(29310, e(582, {	-- Jedoga Shadowseeker
+								i(127640),	-- Edge of Oblivion
+								i(127647),	-- Ice-Rimed Chopper
+								i(127610),	-- Talisman of Scourge Command
+								i(127639),	-- Faceguard of the Hammer Clan
+								i(127637),	-- Cloak of the Darkcaster
+								i(127638),	-- Battlechest of the Twilight Cult
 							})),
 							cr(29311, e(584, {	-- Herald Volazj
 								i(127628),	-- Staff of Sinister Claws
