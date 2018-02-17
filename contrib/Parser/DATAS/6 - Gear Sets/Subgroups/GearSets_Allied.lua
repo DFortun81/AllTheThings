@@ -37,6 +37,7 @@ _.GearSets =
 				["groups"] = {
 					i(156690),	-- Ren'dorei Helm
 					i(156691),	-- Ren'dorei Pauldrons
+					i(158917),	-- Ren'dorei Cloak
 					i(156692),	-- Ren'dorei Mantle
 					i(157758),	-- Ren'dorei Tabard
 					i(156697),	-- Ren'dorei Bracers
