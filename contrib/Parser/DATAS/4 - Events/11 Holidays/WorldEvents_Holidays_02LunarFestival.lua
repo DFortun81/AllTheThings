@@ -274,9 +274,8 @@ _.WorldEvents =
 					n(-2, { -- Vendors
 						n(15909, { -- Fariel Starsong <Coin of Ancestry Collector>
 							un(17, i(21100, {-- Coin of Ancestry
-								un(17, i(143828)),	-- Dragon Body Costume
 								un(17, i(143827)),	-- Dragon Head Costume
-								un(17, i(143829)),	-- Dragon Tail Costume
+								un(17, i(143828)),	-- Dragon Body Costume
 								un(17, i(89999)),	-- Everlasting Alliance Firework
 								un(17, i(90000)),	-- Everlasting Horde Firework
 								un(17, i(44916, {	-- Pattern: Festival Dress
