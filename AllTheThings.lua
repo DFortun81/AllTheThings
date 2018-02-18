@@ -3267,12 +3267,7 @@ function app.FilterItemClass_RequireItemFilter(f)
 end
 function app.FilterItemClass_RequirePersonalLoot(item)
 	local specs = item.specs;
-	if specs then
-		for i, v in ipairs(specs) do
-			if v == app.Spec then return true; end
-		end
-		return false;
-	end
+	if specs then return #specs > 0; end
 	return true;
 end
 function app.FilterItemClass_RequireRaces(races)
