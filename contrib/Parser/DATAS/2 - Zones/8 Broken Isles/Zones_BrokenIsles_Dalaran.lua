@@ -1939,8 +1939,14 @@ _.Zones =
 						i(147778), -- Enchanter's Illusion - Demonic Tyranny
 						i(139775), -- Alliance Enthusiast
 						i(142379), -- Dutiful Squire
-						i(149443), -- Fierce Gladiator's Tabard
-						i(149445), -- Fierce Gladiator's Cloak
+						un(14, i(147337)), -- Cruel Gladiator's Tabard Season 3 No Longer Obtainable
+						un(14, i(147360)), -- Cruel Gladiator's Cloak Season 3 No Longer Obtainable
+						un(14, i(147339)), -- Ferocious Gladiator's Tabard Season 4 No Longer Obtainable
+						un(14, i(147364)), -- Ferocious Gladiator's Cloak Season 4 No Longer Obtainable
+						un(14, i(149443)), -- Fierce Gladiator's Tabard Season 5 No Longer Obtainable
+						un(14, i(149445)), -- Fierce Gladiator's Cloak Season 5 No Longer Obtainable
+						i(149447), -- Dominant Gladiator's Tabard Season 6
+						i(149449), -- Dominant Gladiator's Cloak Season 6
 						gssh(1391, { -- Elite
 							["groups"] = {
 								-- Legion Season 1 & 2
@@ -3642,8 +3648,14 @@ _.Zones =
 						i(147778), -- Enchanter's Illusion - Demonic Tyranny
 						i(142380), -- Dutiful Gruntling
 						i(139776), -- Horde Fanatic
-						i(149442), -- Fierce Gladiator's Tabard
-						i(149444), -- Fierce Gladiator's Cloak
+						un(14, i(147336)), -- Cruel Gladiator's Tabard Season 3 No Longer Obtainable
+						un(14, i(147357)), -- Cruel Gladiator's Cloak Season 3 No Longer Obtainable
+						un(14, i(147338)), -- Ferocious Gladiator's Tabard Season 4 No Longer Obtainable
+						un(14, i(147363)), -- Ferocious Gladiator's Cloak Season 4 No Longer Obtainable
+						un(14, i(149442)), -- Fierce Gladiator's Tabard Season 5 No Longer Obtainable
+						un(14, i(149444)), -- Fierce Gladiator's Cloak Season 5 No Longer Obtainable
+						i(149446), -- Dominant Gladiator's Tabard Season 6 
+						i(149448), -- Dominant Gladiator's Cloak Season 6
 						gssh(1391, { -- Elite
 							["groups"] = {
 								-- LEGION SEASON 1 & 2
