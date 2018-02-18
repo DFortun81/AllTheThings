@@ -2370,6 +2370,3 @@ u(147641, 14);  -- Cruel Gladiator's Scaled Armor
 u(147642, 14);  -- Cruel Gladiator's Scaled Armor
 u(147643, 14);  -- Cruel Gladiator's Silk Armor
 u(147644, 14);  -- Cruel Gladiator's Silk Armor
-
-
-
