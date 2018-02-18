@@ -146,33 +146,45 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+					
+					
 					qh(29090, {	-- A Burning Threat
 						["groups"] = {
 						},
 						["qg"] = 52192,	-- Brogor
 					}),
+					
+					
 					qh(  891, {	-- A Captain's Vengeance
 						["groups"] = {
 						},
 						["qg"] = 3339,	-- Captain Thalo'thas Brightsun
 					}),
+					
+					
 					qh(13988, {	-- A Growing Problem
 						["groups"] = {
 						},
 						["qg"] = 3448,	-- Tonga Runetotem
 						["sourceQuestID"] = { 870 },	-- The Forgotten Pools
 					}),
+					
+					
 					qh(13992, {	-- A Little Diversion
 						["groups"] = {
 						},
 						["qg"] = 34613,	-- Ta'jari
 					}),
+					
+					
 					qh(  880, {	-- Altered Beings (rewarded "Mysteries of the Oases" criteria, unsure if this is static or can be rewarded by quests when done in a different order)
 						["groups"] = {
 						},
 						["qg"] = 34626,	-- Jerrik Highmountain
 						["sourceQuestID"] = { 13988 },	-- A Growing Problem
 					}),
+					
+					
 					qh(14042, { -- Ammo Kerblammo
 						["groups"] = {
 							i(59558),	-- Gouging Staff
@@ -180,24 +192,32 @@ _.Zones =
 						},
 						["sourceQuestID"] = { 14038 }	-- Love it or Limpet
 					}),
+					
+					
 					qh(14049, {	-- A Most Unusual Map
 						["groups"] = {
 						},
 						["qg"] = 3467,	-- Baron Longshore
 						["sourceQuestID"] = { 14046 },	-- The Baron's Demands
 					}),
+					
+					
 					qh(13970, {	-- Animal Services
 						["groups"] = {
 						},
 						["qg"] = 34547,	-- Grol'dom Kodo
 						["sourceQuestID"] = { 13969 },	-- Grol'dom's Missing Kodo
 					}),
+					
+					
 					qh(13963, {	-- By Hook Or By Crook
 						["groups"] = {
 						},
 						["qg"] = 34513,	-- Togrik
 						["sourceQuestID"] = { 13961 },	-- Drag it Out of Them
 					}),
+					
+					
 					qh(  855, {	-- Centuar Bracers
 						["groups"] = {
 							i( 59583),	-- Marauding Belt
@@ -206,16 +226,22 @@ _.Zones =
 						},
 						["qg"] = 3389,	-- Regthar Deathgate
 					}),
+					
+					
 					qh(14034, {	-- Club Foote
 						["groups"] = {
 						},
 						["qg"] = 3391,	-- Gazlowe
 					}),
+
+					
 					qh(29086, {	-- Competition Schmompetition
 						["groups"] = {
 						},
 						["qg"] = 3442,	-- Sputtervalve
 					}),
+					
+					
 					qh(  899, {	-- Consumed by Hatred
 						["groups"] = {
 							i( 59539),	-- Mankrik's Old Wedding Garments
@@ -225,6 +251,8 @@ _.Zones =
 						},
 						["qg"] = 3432,	-- Mankrik
 					}),
+					
+					
 					qh( 4021, {	-- Counterattack!
 						["groups"] = {
 							i(59591),	-- Shield of the Barrens
@@ -234,12 +262,16 @@ _.Zones =
 						["sourceQuestID"] = { 852 },	-- Hezrul Bloodmark
 						},
 					}),
+					
+					
 					qh(13975, {	-- Crossroads Caravan Delivery
 						["groups"] = {
 						},
 						["qg"] = 34578,	-- Rocco Whipshank
 						["sourceQuestID"] = { 13949 },	-- Crossroads Caravan Pickup
 					}),
+					
+					
 					qh(13949, { -- Crossroads Caravan Pickup
 						["groups"] = {
 							i( 59536),	-- Bloodeye Belt
@@ -250,43 +282,59 @@ _.Zones =
 						["qg"] = 34258,	-- Halga Bloodeye
 						["sourceQuestID"] = { 5041 },	-- Supplies for the Crossroads
 					}),
+					
+					
 					qh(14073, {	-- Deathgate's Reinforcements
 						["groups"] = {
 						},
 						["qg"] = 3429,	-- Thork
 						["sourceQuestID"] = { 851 },	-- Verog the Dervish
 					}),
+					
+					
 					qdg(qh(26878, {	-- Disciples of Naralex
 						["groups"] = {
 						},
 						["qg"] = 3448,	-- Tonga Runetotem
 					})),
+					
+					
 					qh(13961, {	-- Drag it Out of Them
 						["groups"] = {
 						},
 						["qg"] = 34513,	-- Togrik
 					}),
+					
+					
 					qh(  881, {	-- Echeyakee
 						["groups"] = {
 						},
 						["qg"] = 3338,	-- Sergra Darkthorn
 						["sourceQuestID"] = { 903 },	-- Hunting the Huntress
 					}),
+					
+					
 					qh(14045, {	-- Find Baron Longshore
 						["groups"] = {
 						},
 						["qg"] = 3391,	-- Gazlowe
 					}),
+					
+					
 					qh(14072, {	-- Flushing Out Verog
 						["groups"] = {
 						},
 						["qg"] = 34638,	-- Shoe
 					}),
+					
+					
 					qh(  848, {	-- Fungal Spores
 						["groups"] = {
 						},
 						["qg"] = 3390,	-- Apothecary Helbrim
 					}),
+					
+					
 					qh(14050, { -- Gazlowe's Fortune
 						["groups"] = {
 							i( 59560),	-- Bling Cane
@@ -297,24 +345,32 @@ _.Zones =
 						["qg"] = 3391,	-- Gazlowe
 						["sourceQuestID"] = { 14049 },	-- A Most Unusual Map
 					}),
+					
+					
 					qh(14056, {	-- Glomp is Sitting On It
 						["groups"] = {
 						},
 						["qg"] = 34749,	-- Tony Two-Tusk
 						["sourceQuestID"] = { 14052 },	-- Take it up With Tony
 					}),
+					
+					
 					qh(13969, {	-- Grol'dom's Missing Kodo
 						["groups"] = {
 						},
 						["qg"] = 5907,	-- Kranal Fiss
 						["sourceQuestID"] = { 13963 },	-- By Hook or By Crook
 					}),
+					
+					
 					qh(14057, {	-- Guns. We Need Guns.
 						["groups"] = {
 						},
 						["qg"] = 34749,	-- Tony Two-Tusk
 						["sourceQuestID"] = { 14056 },	-- Glomp is Sitting On It
 					}),
+					
+					
 					qh(  852, {	-- Hezrul Bloodmark
 						["groups"] = {
 							i( 59585),	-- Lushwater Cloak
@@ -325,27 +381,37 @@ _.Zones =
 						["qg"] = 3389,	-- Regthar Deathgate
 						["sourceQuestID"] = { 14073 },	-- Deathgate's Reinforcements
 					}),
+					
+					
 					qh(  903, {	-- Hunting the Huntress
 						["groups"] = {
 						},
 						["qg"] = 3338,	-- Sergra Darkthorn
 					}),
+					
+					
 					qh(29088, {	-- Hyena Extermination
 						["groups"] = {
 						},
 						["qg"] = 34698,	-- Nozzlepot
 					}),
+					
+					
 					qh(  858, {	-- Ignition
 						["groups"] = {
 						},
 						["qg"] = 3439,	-- Wizzlecrank's Shredder
 					}),
+					
+					
 					qh(  871, {	-- In Defense of Far Watch
 						["groups"] = {
 						},
 						["qg"] = 3337,	-- Kargal Battlescar
 						["breadcrumbQuestID"] = { 28494 },	-- Warchief's Command: Northern Barrens!
 					}),
+					
+					
 					qh(13998, {	-- In Fungus We Trust
 						["groups"] = {
 							i( 59545),	-- Fuzzy Gloves
@@ -355,6 +421,8 @@ _.Zones =
 						["qg"] = 3390,	-- Apothecary Helbrim
 						["sourceQuestID"] = {  },	-- 
 					}),
+					
+					
 					qh(  905, {	-- Into the Raptor's Den
 						["groups"] = {
 							i(59549),	-- Sunscale Cloak
@@ -363,12 +431,16 @@ _.Zones =
 						["qg"] = 3338,	-- Sergra Darkthorn
 						["sourceQuestID"] = { 881 },	-- Echeyakee
 					}),
+					
+
 					qh(14066, {	-- Investigate the Wreckage
 						["groups"] = {
 						},
 						["qg"] = 3464,	-- Gazrog
 						["breadcrumbQuestID"] = { 13991 },	-- The Purloined Payroll
 					}),
+					
+					
 					q(   865, {	-- It's Gotta be the Horn
 						["groups"] = {
 							i( 59580),	-- Sharp Poker
@@ -378,11 +450,15 @@ _.Zones =
 						["qg"] = 3446,	-- Mebok Mizzyrix
 						},
 					}),
+					
+					
 					qh(13995, {	-- King of Centaur Mountain
 						["groups"] = {
 						},
 						["qg"] = 34634,	-- Gorgal Angerscar
 					}),
+					
+					
 					qh(  850, {	-- Kolkar Leaders
 						["groups"] = {
 							i( 59551),	-- Tangled Thread Gloves
@@ -392,12 +468,16 @@ _.Zones =
 						},
 						["qg"] = 34841,	-- Telar Highstrider
 					}),
+					
+					
 					qh(14038, {	-- Love it or Limpet
 						["groups"] = {
 						},
 						["qg"] = 3391,	-- Gazlowe
 						["sourceQuestID"] = { 14034 },	-- Club Foote
 					}),
+					
+					
 					qh(29015, { -- Miner's Fortune
 						["groups"] = {
 							i( 59570),	-- Bargain Gloves
@@ -408,6 +488,8 @@ _.Zones =
 						["qg"] = 34674,	-- Brak Blusterpipe
 						["sourceQuestID"] = { 14004 },	-- Return to Samophlanger
 					}),
+					
+					
 					qh(14063, { -- Mutiny, Mon!
 						["groups"] = {
 							i( 59573),	-- Bachelor's Dagger
@@ -419,23 +501,31 @@ _.Zones =
 						["qg"] = 34749,	-- Tony Two-Tusk
 						["sourceQuestID"] = { 14057 },	-- Guns.  We Need Guns.
 					}),
+					
+					
 					qh(29027, {	-- Nugget Slugs
 						["groups"] = {
 						},
 						["qg"] = 9316,	-- Wenikee Boltbucket
 						["sourceQuestID"] = { 29026 },	-- Wenikee Boltbucket
 					}),
+					
+					
 					qh(  844, {	-- Plainstrider Menace
 						["groups"] = {
 						},
 						["qg"] = 34258,	-- Halga Bloodeye
 					}),
+				
+					
 					qh(26769, {	-- Raging River Ride
 						["groups"] = {
 						},
 						["qg"] = 3391,	-- Gazlowe
 						["sourceQuestID"] = { 14050 },	-- Gazlowe's Fortune
 					}),
+
+					
 					qh(14006, { -- Read the Manual
 						["groups"] = {
 							i(59547),	-- Out-of-Date Manual
@@ -444,17 +534,23 @@ _.Zones =
 						["qg"] = 3442,	-- Sputtervalve
 						["sourceQuestID"] = { 14004 },	-- Return to Samophlanger
 					}),
+					
+					
 					qh(14004, {	-- Return to Samophlanger
 						["groups"] = {
 						},
 						["qg"] = 9316,	-- Wenikee Boltbucket
 						["sourceQuestID"] = { 29027 },	-- Nugget Slugs
 					}),
+					
+					
 					qh(29021, {	-- Samophlange
 						["groups"] = {
 						},
 						["qg"] = 3442,	-- Sputtervalve
 					}),
+					
+					
 					o(  4141, {	-- Control Console
 						["groups"] = {
 							qh(29022),	-- Samophlange
@@ -477,12 +573,16 @@ _.Zones =
 							["sourceQuestID"] = { 29023 },	-- Samophlange
 						}),
 					}),
+					
+					
 					qh(14003, {	-- Samophlange Repair
 						["groups"] = {
 						},
 						["qg"] = 3442,	-- Sputtervalve
 						["sourceQuestID"] = { 29024 },	-- Samophlange
 					}),
+					
+					
 					qh(29089, { -- Sludge Beast!
 						["groups"] = {
 						i( 69220),	-- 
@@ -491,33 +591,45 @@ _.Zones =
 						},
 						["sourceQuestID"] = { 29087 },	-- Sludge Investigation
 					}),
+					
+					
 					qh(29087, {	-- Sludge Investigation
 						["groups"] = {
 						},
 						["qg"] = 34698,	-- Nozzlepot
 					}),
+					
+					
 					qh(  887, {	-- Southsea Freebooters
 						["groups"] = {
 						},
 						["qg"] = 3453,	-- Wharfmaster Dizzywig
 					}),
+					
+					
 					qh( 5041, {	-- Supplies for the Crossroads
 						["groups"] = {
 						},
 						["qg"] = 34258,	-- Halga Bloodeye
 						["sourceQuestID"] = { 871 },	-- In Defense of Far Watch
 					}),
+					
+					
 					qh(14052, {	-- Take it up with Tony
 						["groups"] = {
 						},
 						["qg"] = 3453,	-- Wharfmaster Dizzywig
 					}),
+					
+					
 					qh(14046, {	-- The Baron's Demands
 						["groups"] = {
 						},
 						["qg"] = 3467,	-- Baron Longshore
 						["sourceQuestID"] = { 14045 },	-- Find Baron Longshore
 					}),
+					
+					
 					qh(  863, {	-- The Escape
 						["groups"] = {
 							i( 59577),	-- Sputtervalve Gun
@@ -528,6 +640,8 @@ _.Zones =
 						["qg"] = 3439,	-- Wizzlecrank's Shredder
 						["sourceQuestID"] = { 858 },	-- Ignition
 					}),
+					
+					
 					qh(  872, {	-- The Far Watch Offensive
 						["groups"] = {
 							i( 59542),	-- Thornweaver Leggings
@@ -538,16 +652,22 @@ _.Zones =
 						["qg"] = 3337,	-- Kargal Battlescar
 						["sourceQuestID"] = { 871 },	-- In Defense of Far Watch
 					}),
+					
+					
 					qh(  870, {	-- The Forgotten Pools
 						["groups"] = {
 						},
 						["qg"] = 3448,	-- Tonga Runetotem
 					}),
+					
+					
 					qh(13973, {	-- The Grol'dom Militia
 						["groups"] = {
 						},
 						["qg"] = 34560,	-- Una Wolfclaw
 					}),
+					
+					
 					qh(13971, { -- The Kodo's Return
 						["groups"] = {
 							i(59531),	-- Far Watch Musket
@@ -556,18 +676,35 @@ _.Zones =
 						["qg"] = 34547,	-- Grol'dom Kodo
 						["sourceQuestID"] = { 13970 },	-- Animal Services
 					}),
+					
+					
 					qh(13991, {	-- The Purloined Payroll
 						["groups"] = {
 						},
 						["qg"] = 3338,	-- Sergra Darkthorn
 						["sourceQuestID"] = { 905 },	-- Into the Raptor's Den
 					}),
+					
+					
+					qh(29094, { -- The Short Way Home
+						["groups"] = {
+							i( 69217),	-- Test Pilot Britches
+							i( 69223),	-- Emergency Hatchet
+							i(131709),	-- Passenger Pantaloons
+						},
+						["qg"] = 3442,	-- Sputtervalve
+						["sourceQuestID"] = { 29086, 29015 },	-- Competition, Schmompetition & Miner's Fortune
+					}),
+					
+					
 					qh(  877, {	-- The Stagnant Oasis
 						["groups"] = {
 						},
 						["qg"] = 34626,	-- Jerrik Highmountain
 						["sourceQuestID"] = { 13988 },	-- A Growing Problem
 					}),
+					
+					
 					qh(14067, { -- The Stolen Silver
 						["groups"] = {
 							i( 59554),	-- Silver-Edged Blade
@@ -576,6 +713,8 @@ _.Zones =
 						},
 						["sourceQuestID"] = { 869 }	-- To Track a Thief
 					}),
+					
+					
 					qh(13968, { -- The Tortusk Takedown
 						["groups"] = {
 							i( 59533),	-- Wand of Separation
@@ -586,11 +725,15 @@ _.Zones =
 						["qg"] = 34513,	-- Togrik
 						["sourceQuestID"] = { 13963 },	-- By Hook or by Crook
 					}),
+					
+					
 					qh(  845, {	-- The Zhevra
 						["groups"] = {
 						},
 						["qg"] = 3338,	-- Sergra Darkthorn
 					}),
+					
+					
 					qh(13878, { -- Through Fire and Flames
 						["groups"] = {
 							i( 59529),	-- Flame Retardant Sheet
@@ -599,11 +742,15 @@ _.Zones =
 						},
 						["qg"] = 34284,	-- Dorak
 					}),
+					
+					
 					qh(  869, {	-- To Track a Thief
 						["groups"] = {
 						},
 						["sourceQuestID"] = { 14066 },	-- Investigate the Wreckage
 					}),
+					
+					
 					qh(  851, { -- Verog the Dervish (add'l QG 3389, looks like it switched in Cata)
 						["groups"] = {
 							i( 59566),	-- Robe of Shame
@@ -613,6 +760,8 @@ _.Zones =
 						["qg"] = 34638,	-- Shoe
 						["sourceQuestID"] = { 14072 },	-- 
 					}),
+				
+					
 					o(  3972, {	-- WANTED
 						q(895, { -- WANTED: Cap'n Garvey
 							i( 49560),	-- Proof of Death
@@ -623,18 +772,28 @@ _.Zones =
 							i(131226),	-- Retainer Tunic
 						}),
 					}),
+				
+				
 					qh(29026, {	-- Wenikee Boltbucket
 						["groups"] = {
 						},
 						["qg"] = 34674,	-- Brak Blusterpipe
 						["sourceQuestID"] = { 14003 },	-- Samophlange Repair
 					}),
+				
+				
 					qh(13999, {	-- Who's Shroomin' Who?
 						["groups"] = {
 						},
 						["qg"] = 3390,	-- Apothecary Helbrim
 						["sourceQuestID"] = { 13998 },	-- In Fungus we Trust
 					}),
+				
+				
+				
+				
+				
+				
 --[[
 						["groups"] = {
 						},
@@ -642,6 +801,9 @@ _.Zones =
 						["sourceQuestID"] = {  },	-- 
 					}),
 --]]
+				
+				
+				
 --[[				
 					qg(115287, q(45540)),	-- A Call from the Caverns (QG in Broken Isles Dalaran)
 					qg(  620, q(  3861)),	-- CLUCK!
@@ -707,13 +869,8 @@ _.Zones =
 					qg( 3446, qh(  866)),	-- Root Samples
 					qg( 3449, qh(  876)),	-- Serena Bloodfeather
 --]]					
-					qg( 3442, qh(29094, { -- The Short Way Home
-						i( 69217),
-						i( 69223),
-						i(131709),
-					})),
 --[[					
-					qg(34698, qh(28877)),	-- They Call Him Swiftdagger. He Kills Harpies.
+--					qh(28877),	-- They Call Him Swiftdagger. He Kills Harpies. (REMOVED and replaced with "The Short Way Home")
 					qg( 8582, qh(13620)),	-- To Dinah, at Once!
 					qg( 3429, qh(28876)),	-- To the Mor'shan Rampart
 					qg( 8582, qh(13712)),	-- To the Rescue!
