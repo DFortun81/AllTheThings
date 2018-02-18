@@ -945,6 +945,18 @@ local function GetMountExtraInfo(spellID)	-- NOTE: MountID is ACTUALLY the Spell
 	local mountID = GetMountInfoCache()[spellID];
 	if mountID then return C_MountJournal_GetMountInfoExtraByID(mountID); end
 end
+local function GetProgressText(data)
+	if data.total and data.total > 0 then
+		return GetProgressColorText(data.progress, data.total);
+	elseif data.trackable then
+		return GetCompletionIcon(data.saved);
+	elseif data.collectable then
+		return GetCollectionIcon(data.collected);
+	elseif data.groups and not data.expanded then
+		return "+++";
+	end
+	return "---";
+end
 local function GetRawSourceDataCache()
 	local cache = GetTempDataMember("RAW_DATA_CACHE");
 	if not cache then
@@ -1092,6 +1104,16 @@ local function SearchForItemIDQuickly(itemID)
 		return SearchForItemIDRecursivelyQuickly(group, itemID);
 	end
 end
+local function SearchForMapID(mapID)
+	if mapID then
+		return app:GetDataCache() and fieldCache["mapID"][mapID];
+	end
+end
+local function SearchForQuestID(questID)
+	if questID then
+		return app:GetDataCache() and fieldCache["questID"][questID];
+	end
+end
 local function SearchForSourceIDRecursively(group, sourceID)
 	if group.s == sourceID then
 		-- OH BOY, WE FOUND IT!
@@ -1117,8 +1139,7 @@ local function SearchForSourceIDRecursively(group, sourceID)
 end
 local function SearchForSourceID(sourceID)
 	if sourceID and sourceID > 0 then
-		local group = app:GetDataCache();
-		return group and fieldCache["s"][sourceID];
+		return app:GetDataCache() and fieldCache["s"][sourceID];
 	end
 end
 local function SearchForSourceIDRecursivelyQuickly(group, sourceID)
@@ -3270,6 +3291,17 @@ function app.FilterItemClass_RequirePersonalLoot(item)
 	if specs then return #specs > 0; end
 	return true;
 end
+function app.FilterItemClass_RequirePersonalLootCurrentSpec(item)
+    local specs = item.specs;
+    if specs then
+        for i, v in ipairs(specs) do
+            if v == app.Spec then return true; end
+        end
+        return false;
+    end
+    return true;
+end
+
 function app.FilterItemClass_RequireRaces(races)
 	if races then
 		for key,value in pairs(races) do
@@ -4422,6 +4454,22 @@ local function CreateSettingsMenu()
 			GameTooltip:Show();
 		end);
 		
+		self.ShowLootSpecializationRequirements = CreateFrame("CheckButton", name .. "-ShowLootSpecializationRequirements", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.ShowLootSpecializationRequirements, self, "Show Loot Specialization Icons", 300, -150, GetDataMember("ShowLootSpecializationRequirements"));
+		self.ShowLootSpecializationRequirements:SetScript("OnClick", function(self)
+			SetDataMember("ShowLootSpecializationRequirements", self:GetChecked());
+			app:UpdateWindows();
+		end);
+		self.ShowLootSpecializationRequirements:SetScript("onEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see loot specialization icons indicating which specializations for your class must be used in order to obtain an item when running a dungeon in Personal Loot mode.\n\nNOTE: Rare spawns are generally not Personal Loot required.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
+		
+		
+		
+		-- Middle Left
 		self.EnableTooltipInformation = CreateFrame("CheckButton", name .. "-EnableTooltipInformation", self, "InterfaceOptionsCheckButtonTemplate");
 		CreateCheckBox(self.EnableTooltipInformation, self, "Enable Tooltip Information", 15, -190, GetDataMember("EnableTooltipInformation"));
 		self.EnableTooltipInformation:SetScript("OnClick", function(self)
@@ -5058,22 +5106,16 @@ local function SetRowData(self, data)
 			relative = "RIGHT";
 			x = 4;
 		end
-		if data.total and data.total > 0 then
-			self.Summary:SetText(GetProgressColorText(data.progress, data.total));
-			self.Summary:Show();
-		elseif data.trackable then
-			self.Summary:SetText(GetCompletionIcon(data.saved));
-			self.Summary:Show();
-		elseif data.collectable then
-			self.Summary:SetText(GetCollectionIcon(data.collected));
-			self.Summary:Show();
-		elseif data.groups and not data.expanded then
-			self.Summary:SetText("+++");
-			self.Summary:Show();
-		else
-			self.Summary:SetText("---");
-			self.Summary:Show();
+		local summary = GetProgressText(data);
+		local specs = GetDataMember("ShowLootSpecializationRequirements") and data.specs;
+		if specs and #specs > 0 then
+			for i,spec in ipairs(specs) do
+				local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+				if class == app.Class then summary = "|T" .. icon .. ":0|t " .. summary; end
+			end
 		end
+		self.Summary:SetText(summary);
+		self.Summary:Show();
 		self.Label:SetPoint("LEFT", leftmost, relative, x, 0);
 		if self.Summary and self.Summary:IsShown() then
 			self.Label:SetPoint("RIGHT", self.Summary, "LEFT", 0, 0);
@@ -6248,6 +6290,7 @@ app.events.VARIABLES_LOADED = function()
 	
 	GetDataMember("EnableTooltipInformation", true);
 	GetDataMember("DisplayTooltipInformationInCombat", false);
+	GetDataMember("ShowLootSpecializationRequirements", true);
 	GetDataMember("ShowSharedAppearances", true);
 	GetDataMember("ShowSources", true);
 	GetDataMember("ShowContents", true);
