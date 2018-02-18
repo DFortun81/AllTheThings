@@ -739,14 +739,27 @@ END OF MICRO-HOLIDAY --]]
 					}), 
 					n(-93, {		-- Silithus (The Wound)
 						["groups"] = {
+							n(132591, {	-- Ogmot the Mad
+								["groups"] = {},
+								["questID"] = 50334,
+							}),
 							n(132578, {	-- Qroshekx
-								i(156851),	-- Silithid Mini-Tank
+								["groups"] = {
+									dr(11, i(156851)),	-- Silithid Mini-Tank
+								},
+								["questID"] = 50225,
 							}),
 							n(132580, {	-- Ssinkrix
-								i(156851),	-- Silithid Mini-Tank
+								["groups"] = {
+									dr(10, i(156851)),	-- Silithid Mini-Tank
+								},
+								["questID"] = 50223,
 							}),
 							n(132584, {	-- Xaarshej
-								i(156851),	-- Silithid Mini-Tank
+								["groups"] = {
+									dr(9, i(156851)),	-- Silithid Mini-Tank
+								},
+								["questID"] = 50224,
 							}),
 						},
 						["Lvl"] = 110,
