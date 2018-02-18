@@ -6,52 +6,52 @@ _.Zones =
 	m(13, { 	-- Kalimdor		
 		m(241, { 	-- Moonglade
 			["groups"] = {
-				n(-3, { 	-- Holidays
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(8868, { -- Elune's Blessing
-									i(21540), -- Elune's Lantern
-								}),
+				n(-47, {     -- Lunar Festival
+					["groups"] = {
+						n(-17, { 	-- Quests
+							q(8868, { -- Elune's Blessing
+								i(21540),	-- Elune's Lantern
+								--i(21640),	-- Lunar Festival Fireworks Pack
+								--i(7912),	-- Solid Stone x3
 							}),
-							n(-2, { -- Vendors
-								n(15909, { -- Fariel Starsong <Coin of Ancestry Collector>
-									un(17, i(21100, {-- Coin of Ancestry
-										un(17, i(143827)),	-- Dragon Head Costume
-										un(17, i(143828)),	-- Dragon Body Costume
-										un(17, i(143829)),	-- Dragon Tail Costume
-										un(17, i(89999)),	-- Everlasting Alliance Firework
-										un(17, i(90000)),	-- Everlasting Horde Firework
-										un(17, i(44916, {	-- Pattern: Festival Dress
-											un(17, i(151771)), -- Festival Dress
-										})),
-										un(17, i(44917, {	-- Pattern: Festival Suit
-											un(17, i(151772)), -- Festival Suit
-										})),
+						}),
+						n(-2, { -- Vendors
+							n(15909, { -- Fariel Starsong <Coin of Ancestry Collector>
+								un(17, i(21100, {-- Coin of Ancestry
+									un(17, i(143827)),	-- Dragon Head Costume
+									un(17, i(143828)),	-- Dragon Body Costume
+									un(17, i(143829)),	-- Dragon Tail Costume
+									un(17, i(89999)),	-- Everlasting Alliance Firework
+									un(17, i(90000)),	-- Everlasting Horde Firework
+									un(17, i(44916, {	-- Pattern: Festival Dress
+										un(17, i(151771)), -- Festival Dress
 									})),
-								}),
-								n(15864, { -- Valadar Starsong <Coin of Ancestry Collector>
-									un(17, i(21100, {-- Coin of Ancestry
-										un(17, i(74611)),	-- Festival Lantern
-										un(17, i(74610)),	-- Lunar Lantern
-										un(17, i(151355)), 	-- Crown of Courage
-										un(17, i(151353)), 	-- Crown of Dark Blossoms
-										un(17, i(151352)), 	-- Crown of Good Fortune								
-										un(17, i(151354)), 	-- Crown of Prosperity								
-										un(17, i(21541)),	-- Festive Black Pant Suit
-										un(17, i(21544)),	-- Festive Blue Pant Suit
-										un(17, i(21157)),	-- Festive Green Dress
-										un(17, i(21538)),	-- Festive Pink Dress
-										un(17, i(21539)),	-- Festive Purple Dress
-										un(17, i(21543)),	-- Festive Teal Pant Suit
+									un(17, i(44917, {	-- Pattern: Festival Suit
+										un(17, i(151772)), -- Festival Suit
 									})),
-								}),
+								})),
 							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
---[[					
+							n(15864, { -- Valadar Starsong <Coin of Ancestry Collector>
+								un(17, i(21100, {-- Coin of Ancestry
+									un(17, i(74611)),	-- Festival Lantern
+									un(17, i(74610)),	-- Lunar Lantern
+									un(17, i(151355)), 	-- Crown of Courage
+									un(17, i(151353)), 	-- Crown of Dark Blossoms
+									un(17, i(151352)), 	-- Crown of Good Fortune								
+									un(17, i(151354)), 	-- Crown of Prosperity								
+									un(17, i(21541)),	-- Festive Black Pant Suit
+									un(17, i(21544)),	-- Festive Blue Pant Suit
+									un(17, i(21157)),	-- Festive Green Dress
+									un(17, i(21538)),	-- Festive Pink Dress
+									un(17, i(21539)),	-- Festive Purple Dress
+									un(17, i(21543)),	-- Festive Teal Pant Suit
+								})),
+							}),
+						}),
+					},
+					["achievementID"] = 913, -- To Honor One's Elders
+				}),
+					--[[					
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -116,8 +116,7 @@ _.Zones =
 						["achievementID"] = 1691, -- Merrymaker
 						["u"] = 29,
 					}),		
---]]				
-				}),				
+--]]							
 				n(-25, { 	-- Pet Battle
 					p(478), -- Forest Moth
 					p(378), -- Rabbit

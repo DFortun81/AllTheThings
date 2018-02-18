@@ -10,10 +10,29 @@ _.Zones =
 					n(-47, { 		-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15579, q(  8677)),	-- Darkhorn the Elder
-								qg(15895, q(  8867)),	-- Lunar Fireworks
-								qg(15891, qh( 8873)),	-- The Lunar Festival
-								qg(15895, q(  8883)),	-- Valadar Starsong
+								q(8677, {	-- Darkhorn the Elder		
+									["groups"] = {		
+										-- i(21100),	-- Coin of Ancestry
+										-- i(21746, {	-- Lucky Red Envelope
+											--i(21745),
+											--i(21744),
+										--}),	
+									},		
+									["description"] = "Location: 52.23, 60",		
+									["qg"] = 15579,	-- Elder Darkhorn	
+								}),
+								q(8873, {	-- The Lunar Festival
+									["groups"] = {
+										q(8867, { -- Lunar Fireworks
+											["groups"] = {
+												-- i(21711), -- Lunar Festival Invitation
+											},
+											["qg"] = 15895, -- Lunar Festival Harbinger
+											["breadcrumbQuestID"] = { 15891 }, -- The Lunar Festival
+										}),
+									},
+									["qg"] = 15891, -- Lunar Festival Herald
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
