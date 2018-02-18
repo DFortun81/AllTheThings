@@ -8,17 +8,17 @@ _.Instances =
 		["groups"] = {
 			c(716, { 	-- Eye of Azshara
 				["groups"] = {
+					n(-17, {	-- Quests 		
+						q(42213, {
+							i(140622),
+							i(140623),
+							i(140624),
+							i(140625),
+						}),	
+					}),	
 					d(1, {		-- Normal
 						["ids"] = { 1826 }, -- Normal
 						["groups"] = {
-							n(-17, {	-- Quests 		
-								q(42213, {
-									i(140622),
-									i(140623),
-									i(140624),
-									i(140625),
-								}),	
-							}),	
 							cr(91784, e(1480, {	-- Warlord Parjesh
 								i(134240),
 								i(137360),

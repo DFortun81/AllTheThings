@@ -8,15 +8,15 @@ _.Instances =
 		["groups"] = {
 			c(762, { 	-- Darkheart Thicket
 				["groups"] = {
-					d(1, {		-- Normal
-						n(-17, {	-- Quests 				
-							q(40890, {
-								i(130001),
-								i(129985),
-								i(129993),
-								i(130012),
-							}),	
+					n(-17, {	-- Quests 				
+						q(40890, {
+							i(130001),
+							i(129985),
+							i(129993),
+							i(130012),
 						}),	
+					}),	
+					d(1, {		-- Normal
 						cr(96512, e(1654, {	-- Archdruid Glaidalis
 							i(139086),
 							i(139058),
