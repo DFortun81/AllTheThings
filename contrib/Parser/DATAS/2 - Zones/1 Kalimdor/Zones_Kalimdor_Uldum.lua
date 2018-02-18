@@ -10,8 +10,28 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(55211, q( 29742)),	-- Menkhaf the Elder
-								qg(55210, q( 29741)),	-- Sekhemi the Elder
+								q(29742, {	-- Menkhaf the Elder		
+									["groups"] = {		
+										-- i(21100),	-- Coin of Ancestry
+										-- i(21746, {	-- Lucky Red Envelope
+											--i(21745),
+											--i(21744),
+										--}),	
+									},		
+									["description"] = "Location: 65.4, 18.6",		
+									["qg"] = 55211,	-- Elder Menkhaf	
+								}),			
+								q(29741, {	-- Sekhemi the Elder		
+									["groups"] = {		
+										-- i(21100),	-- Coin of Ancestry
+										-- i(21746, {	-- Lucky Red Envelope
+											--i(21745),
+											--i(21744),
+										--}),	
+									},		
+									["description"] = "Location: 31.6, 63",		
+									["qg"] = 55210,	-- Elder Sekhemi	
+								}),			
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
