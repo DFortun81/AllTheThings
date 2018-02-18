@@ -10,8 +10,28 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(55227, q(29740)),	-- Evershade the Elder
-								qg(55224, q(29739)),	-- Windsong the Elder
+								q(29740, {	-- Evershade the Elder		
+									["groups"] = {		
+										-- i(21100),	-- Coin of Ancestry
+										-- i(21746, {	-- Lucky Red Envelope
+											--i(21745),
+											--i(21744),
+										--}),	
+									},		
+									["description"] = "Location: 62.6, 22.8",		
+									["qg"] = 55227,	-- Elder Evershade	
+								}),			
+								q(29739, {	-- Windsong the Elder		
+									["groups"] = {		
+										-- i(21100),	-- Coin of Ancestry
+										-- i(21746, {	-- Lucky Red Envelope
+											--i(21745),
+											--i(21744),
+										--}),	
+									},		
+									["description"] = "Location: 26.6, 62",		
+									["qg"] = 55224,	-- Elder Windsong	
+								}),			
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

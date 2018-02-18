@@ -1046,16 +1046,27 @@ _.Zones =
 				}),
 				m(615, {	-- Shimmering Expanse
 					["groups"] = {			
---[[				
 						n(-3, { 	-- Holidays					
 							n(-47, {     -- Lunar Festival
 								["groups"] = {
 									n(-17, { 	-- Quests
+										q(29738, {	-- Moonlance the Elder		
+											["groups"] = {		
+												-- i(21100),	-- Coin of Ancestry
+												-- i(21746, {	-- Lucky Red Envelope
+													--i(21745),
+													--i(21744),
+												--}),	
+											},		
+											["description"] = "Location: 57.2, 86.2",		
+											["qg"] = 55228,	-- Elder Moonlance	
+										}),			
 									}),
 								},
 								["achievementID"] = 913, -- To Honor One's Elders
 								["u"] = 17,
 							}),
+							--[[
 							n(-50, {     -- Love is in the Air
 								["groups"] = {
 									n(-17, { 	-- Quests
@@ -1119,9 +1130,9 @@ _.Zones =
 								},
 								["achievementID"] = 1691, -- Merrymaker
 								["u"] = 29,
-							}),						
-						}),				
---]]												
+							}),	
+						--]]	
+						}),		
 						n(-17, { -- Quests
 --[[						
 							qg(, qa(25582)),	-- A Better Vantage

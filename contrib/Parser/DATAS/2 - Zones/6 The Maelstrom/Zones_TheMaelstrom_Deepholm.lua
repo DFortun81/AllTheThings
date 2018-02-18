@@ -6,16 +6,38 @@ _.Zones =
 	m(751, { 	-- The Maelstrom
 		m(640, {	-- Deepholm
 			["groups"] = {		
---[[				
 				n(-3, { 	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
+								q(29734, {	-- Deepforge the Elder		
+									["groups"] = {		
+										-- i(21100),	-- Coin of Ancestry
+										-- i(21746, {	-- Lucky Red Envelope
+											--i(21745),
+											--i(21744),
+										--}),	
+									},		
+									["description"] = "Location: 27.6, 69.2",		
+									["qg"] = 55216,	-- Elder Deepforge
+								}),			
+								q(29735, {	-- Stonebrand the Elder		
+									["groups"] = {		
+										-- i(21100),	-- Coin of Ancestry
+										-- i(21746, {	-- Lucky Red Envelope
+											--i(21745),
+											--i(21744),
+										--}),	
+									},		
+									["description"] = "Location: 49.6, 54.8",
+									["qg"] = 55217, -- Elder Stonebrand
+								}),			
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+					--[[
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -79,9 +101,9 @@ _.Zones =
 						},
 						["achievementID"] = 1691, -- Merrymaker
 						["u"] = 29,
-					}),						
-				}),				
---]]				
+					}),
+				--]]
+				}),	
 				n(-25, { -- Pet Battle
 					p(838), -- Amethyst Shale Hatchling
 					p(559), -- Crimson Geode
