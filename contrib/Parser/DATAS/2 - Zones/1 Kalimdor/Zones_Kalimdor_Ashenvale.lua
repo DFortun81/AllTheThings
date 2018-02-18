@@ -473,7 +473,7 @@ _.Zones =
 					qg(33294, qh(13619, {	-- Final Report
 						["groups"] = {
 						},
-						["sourceQuestID"] = {13618},
+						["sourceQuestID"] = {13618},	-- Find Gorat!
 					})),
 					qg( 3847, qa(26463, {	-- Finding Teronis
 						["groups"] = {
