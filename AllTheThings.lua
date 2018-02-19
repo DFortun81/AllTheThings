@@ -606,7 +606,7 @@ local function GetCachedSearchResults(search, method, ...)
 							if not GetDataMember("ShowAllSources") then break; end
 							
 							count = count + 1;
-							if count > 25 then
+							if count > 9 then -- Shows 15 sources (Take # you want minus 1 and input)
 								count = #group - count;
 								if count > 1 then
 									tinsert(temp, "And " .. count .. " other sources...");
