@@ -6,17 +6,27 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(21, {		-- Silverpine Forest
 			["groups"] = {				
---[[
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15561, q(  8645)),	-- Obsidian the Elder
+								q(8645, {	-- Obsidian the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 45, 41.2",			
+									["qg"] = 15561,	-- Elder Obsidian		
+								}),				
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+					--[[
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -86,9 +96,9 @@ _.Zones =
 						},
 						["achievementID"] = 1691, -- Merrymaker
 						["u"] = 29,
-					}),										
+					}),
+				--]]
 				}),
---]]
 				n(-25, { 	-- Pet Battle
 					p(455),		-- Blighted Squirrel
 					p(628),		-- Infected Fawn
