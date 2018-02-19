@@ -11,7 +11,19 @@ _.Zones =
 						n(-17, { 	-- Quests
 							q(8868, { -- Elune's Blessing
 								i(21540),	-- Elune's Lantern
-								--i(21640),	-- Lunar Festival Fireworks Pack
+								--[[
+								i(21640, {	-- Lunar Festival Fireworks Pack
+									i(21558),	-- Small Blue Rocket x4
+									i(21559),	-- Small Green Rocket x4
+									i(21557),	-- Small Red Rocket x4
+									i(21561),	-- Small White Rocket x4
+									i(21562),	-- Small Yellow Rocket x4
+									i(21589),	-- Large Blue Rocket
+									i(21590),	-- Large Green Rocket 
+									i(21592),	-- Large Red Rocket
+									i(21593),	-- Large White Rocket
+									i(21595),	-- Large Yello Rocket
+								--]]
 								--i(7912),	-- Solid Stone x3
 							}),
 						}),

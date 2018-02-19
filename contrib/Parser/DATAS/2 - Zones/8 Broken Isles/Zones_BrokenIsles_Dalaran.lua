@@ -213,7 +213,6 @@ _.Zones =
 				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
-						p(1915),	-- Blind Rat
 						p(1778),	-- Dust Bunny
 						qg(98725, qa(   45540)),	-- A Call from the Caverns
 						qg(115287, qh(  45540)),	-- A Call from the Caverns
@@ -224,7 +223,13 @@ _.Zones =
 					},
 					["description"] = "In order to see this battle pet you must first obtain the buff |cFFFFD700Spring Cleaning|r, which is a 15 minute buff..  Multiple people can click the rug.  If there are none present you can realm hop until you find one. You obtain this buff by clicking on a |cFFFFD700Dusty Rug|r.  The rug can spawn in one of five locations:\n\n|cFFFFFFFFBarber Shop|r - Upper Level (|cFFFFFFFF52.52, 30.31|r),\n\n|cFFFFFFFFBreanni's Shop|r - Behind the counter (|cFFFFFFFF58.9, 38.3|r),\n\n|cFFFFFFFFFilthy  Animal [Horde]|r - Outside the building on top of the sewer gate to the right before you enter. (|cFFFFFFFF64.15, 37.9|r)\n\n|cFFFFFFFFGreyfang Enclave [Alliance]|r - Behind the Paladin Portal\n\n|cFFFFFFFFLegerdemain Lounge|r - Top Floor",
 				}),
-				n(-17, { 	-- Quests	
+				n(-17, { 	-- Quests
+					q(44400, {	-- Assault on Violet Hold: Purple Pain
+						i(141359),
+						i(141358),
+						i(141357),
+						i(141356),
+					}),
 --[[					
 					n(-34, {	-- World Quests
 						q( 42442),	-- Fight Night: Amalia
@@ -2439,23 +2444,6 @@ _.Zones =
 						i(54437), -- Tiny Green Ragdoll Toy
 						i(44606), -- Toy Train Set Toy
 						i(45057), -- Wind-Up Train Wreck Toy
-					}),
-					n(97363, { -- K'huta <Portals and Jujus>
-						i(128625, { -- Formula: Leylight Brazier
-							i(128536), -- Leylight Brazier
-						}),
-					}),
-					n(97364, { 	-- Laura Malley <Creatures>
-						i(137932, { -- Recipe: Flaming Hoop
-							i(129961), -- Toy
-						}),
-						i(137934, { -- Recipe: Leather Pet Leash
-							i(129958), -- Toy
-						}),
-						i(136904), -- Sewer-Pipe Jelly Pet
-						i(139412, { -- Young Mutant War Turtles
-							p(1912),
-						}),
 					}),
 					a(n(119485, { -- Lieutenant Dorgen <Legion Combatant>
 					})),
@@ -4889,14 +4877,124 @@ _.Zones =
 						i(141713),	-- Arcadian War Turtle Mount
 					}),
 				}),
-				n(-17, {	-- Quests
-					q(44400, {	-- Assault on Violet Hold: Purple Pain
-						i(141359),
-						i(141358),
-						i(141357),
-						i(141356),
-					})
-				})
+				n(-213, {	-- The Underbelly
+					n(-4, {	-- Achievements
+						ach(11066, { -- Underbelly Tycoon
+							i(138387), -- Ratstallion
+						}),
+					}),
+					n(-25, { -- Pet Battle
+						["groups"] = {
+							p(1915),	-- Blind Rat
+						},
+					}),
+					n(-17, { --  Quests
+						["groups"] = {
+							--[[ STUCK RETRIEVING DATA
+							q(43473, { -- Experimental Potion: Test Subjects Needed
+								["groups"] = {
+								},
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							q(43475, { -- Experimental Potion: Test Subjects Needed
+								["groups"] = {
+								},
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							q(43478, { -- Experimental Potion: Test Subjects Needed
+								["groups"] = {
+								},
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							--]]
+							q(43474, { -- Experimental Potion: Test Subjects Needed
+								["groups"] = {
+								},
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							q(43476, { -- Experimental Potion: Test Subjects Needed
+								["groups"] = {
+								},
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							q(43477, { -- Experimental Potion: Test Subjects Needed
+								["groups"] = {
+								},
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+						},
+					}),
+					n(-2, {	-- Vendors
+						n(97363, { -- K'huta <Portals and Jujus>
+							--currency(1149, { -- Sightless Eyes
+								i(128625, { -- Formula: Leylight Brazier
+									i(128536), -- Leylight Brazier
+								}),
+							}),	
+						}),
+						n(97364, { 	-- Laura Malley <Creatures>
+							--currency(1149, { -- Sightless Eyes
+								i(137932, { -- Recipe: Flaming Hoop
+									i(129961), -- Flaming Hoop
+								}),
+								i(137934, { -- Recipe: Leather Pet Leash
+									i(129958), -- Leather Pet Leash
+								}),
+								i(136904), -- Sewer-Pipe Jelly Pet
+								i(139412, { -- Young Mutant War Turtles
+									p(1912), -- Young Mutant Warturtle
+								}),
+							--}),
+						}),
+						n(107760, { -- Strap Bucklebolt <Belts>
+							--currency(1149, { -- Sightless Eyes
+								i(137901, { -- Recipe: Battlebound Girdle Rank 2
+									i(128898),	-- Battlebound Girdle
+								}),
+								i(137913, { -- Recipe: Battlebound Girdle Rank 3
+									i(128898),	-- Battlebound Girdle
+								}),
+								i(123949, { -- Recipe: Demonsteel Waistguard Rank 3
+									i(123916),	-- Demonsteel Waistguard
+								}),
+								i(137885, { -- Recipe: Dreadleather Belt Rank 2
+									i(128890),	-- Dreadleather Belt
+								}),
+								i(137893, { -- Recipe: Dreadleather Belt Rank 3
+									i(128890),	-- Dreadleather Belt
+								}),
+								i(137917, { -- Recipe: Gravenscale Girdle Rank 2
+									i(128906),	-- Gravenscale Girdle
+								}),
+								i(137925, {	-- Recipe: Gravenscale Girdle Rank 3
+									i(128906),	-- Gravenscale Girdle
+								}),
+								i(137966, { -- Pattern: Imbued Silkweave Cinch Rank 2
+									i(127001),	-- Imbued Silkweave Cinch
+								}),
+								i(137974, { -- Pattern: Imbued Silkweave Cinch Rank 3
+									i(127001),	-- Imbued Silkweave Cinch
+								}),
+								i(123929, { -- Recipe: Leystone Waistguard Rank 2
+									i(123897),	-- Leystone Waistguard
+								}),
+								i(123937, { -- Recipe: Leystone Waistguard Rank 3
+									i(123897),	-- Leystone Waistguard
+								}),
+								i(137954, { -- Pattern: Silkweave Cinch Rank 2
+									i(126993),	-- Silkweave Cinch
+								}),
+								i(137962, { -- Pattern: Silkweave Cinch Rank 3
+									i(126993),	-- Silkweave Cinch
+								}),
+								i(137869, { -- Recipe: Warhide Belt Rank 2
+									i(128882),	-- Warhide Belt
+								}),
+								i(137881, { -- Recipe: Warhide Belt Rank 3
+									i(128882),	-- Warhide Belt
+								}),
+					}),
+				}),	
 			},
 			["Lvl"] = 1,	
 			["icon"] = "Interface\\Icons\\Spell_arcane_teleportdalaranbrokenisles",
