@@ -1214,48 +1214,29 @@ local function SearchForItemLink(link)
 						]]--
 						
 						if GetDataMember("ShowSharedAppearances") then
-							if GetDataMember("ShowUnobtainableAppearanceInformation") then 
-								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									local otherATTSource = SearchForSourceIDQuickly(otherSourceID);
-									if otherATTSource then
-										local text;
-										otherATTSource = otherATTSource[1];
-										local link = otherATTSource.link;
-										if not link then 
-											link = RETRIEVING_DATA;
-											working = true;
-										end
-										if otherATTSource.u then
-											local texture = L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[otherATTSource.u or 1][1]];
-											if texture then
-												text = "|T" .. texture .. ":0|t";
-											else
-												text = "   ";
-											end
+							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+								local otherATTSource = SearchForSourceIDQuickly(otherSourceID);
+								if otherATTSource then
+									local text;
+									otherATTSource = otherATTSource[1];
+									local link = otherATTSource.link;
+									if not link then 
+										link = RETRIEVING_DATA;
+										working = true;
+									end
+									if otherATTSource.u then
+										local texture = L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[otherATTSource.u or 1][1]];
+										if texture then
+											text = "|T" .. texture .. ":0|t";
 										else
 											text = "   ";
 										end
-										text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherATTSource.collected);
-										tinsert(listing, text);
 									else
-										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-										if otherSource then
-											local text;
-											local link = select(2, GetItemInfo(otherSource.itemID));
-											if not link then 
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											text = "   " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherSource.isCollected);
-											if otherSource.isCollected then
-												SetDataSubMember("CollectedSources", otherSourceID, 1);
-											end
-											tinsert(listing, text);
-										end
+										text = "   ";
 									end
-								end
-							else
-								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+									text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherATTSource.collected);
+									tinsert(listing, text);
+								else
 									local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
 									if otherSource then
 										local text;
@@ -1937,7 +1918,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 												if first then first = nil; self:AddLine("Contains:"); end
 												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON"));
 											end
-										elseif j.collectable or (j.trackable and app.RequireTrackableFilter(j)) then
+										elseif j.collectable or (j.trackable and app.ShowIncompleteQuests(j)) then
 											if first then first = nil; self:AddLine("Contains:"); end
 											if j.dr then
 												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON"));
@@ -2706,7 +2687,7 @@ app.BaseItem = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectable" then
-			return t.s;-- or (t.questID and GetDataMember("RequireTrackableFilter"));
+			return t.s;-- or (t.questID and GetDataMember("ShowIncompleteQuests"));
 		elseif key == "collected" then
 			return t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s);-- or t.saved;
 		elseif key == "text" then
@@ -3034,10 +3015,10 @@ app.BaseQuest = {
 			return "Interface\\Icons\\Achievement_Quests_Completed_08";
 		elseif key == "trackable" then
 			return true;
-		--elseif key == "collectable" then
-		--	return GetDataMember("RequireTrackableFilter");
-		--elseif key == "collected" then
-		--	return t.saved;
+		elseif key == "collectable" then
+			return not t.daily and GetDataMember("TreatIncompleteQuestsAsCollectible");
+		elseif key == "collected" then
+			return t.collectable and t.saved;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID);
 		else
@@ -3627,7 +3608,7 @@ app.RequireBindingFilter = app.NoFilter;
 app.UnobtainableItemFilter = app.NoFilter;
 app.SeasonalFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
-app.RequireTrackableFilter = app.Filter;
+app.ShowIncompleteQuests = app.Filter;
 
 -- Processing Functions (Coroutines)
 local UpdateGroup, UpdateGroups;
@@ -3699,7 +3680,7 @@ UpdateGroup = function(parent, group)
 				parent.progress = (parent.progress or 0) + group.progress;
 				
 				-- If this group is trackable, then we should show it.
-				if app.RequireTrackableFilter(group) then
+				if app.ShowIncompleteQuests(group) then
 					group.visible = not group.saved or app.GroupVisibilityFilter(group) or GetDataMember("ShowCompletedGroups");
 				else
 					group.visible = app.GroupVisibilityFilter(group); -- group.total > 0 and 
@@ -3725,7 +3706,7 @@ UpdateGroup = function(parent, group)
 					end
 				elseif group.trackable then
 					-- If this group is trackable, then we should show it.
-					if app.RequireTrackableFilter(group) then
+					if app.ShowIncompleteQuests(group) then
 						group.visible = not group.saved or GetDataMember("ShowCompletedGroups");
 					else
 						-- Hide this group. We aren't filtering for it.
@@ -3764,7 +3745,7 @@ local function UpdateParentProgress(group)
 			UpdateParentProgress(group.parent);
 			
 			-- If this group is trackable, then we should show it.
-			if app.RequireTrackableFilter(group) then
+			if app.ShowIncompleteQuests(group) then
 				group.visible = not group.saved or app.GroupVisibilityFilter(group) or GetDataMember("ShowCompletedGroups");
 			else
 				group.visible = app.GroupVisibilityFilter(group);
@@ -4267,6 +4248,14 @@ local function CreateSettingsMenu()
 		self.Label:SetText(text);
 		self.Label:SetWidth(250);
 	end
+	local function CreateIDCheckBox(self, filter, name, x, y)
+		self[filter] = CreateFrame("CheckButton", name .. "-" .. filter, self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self[filter], self, name, x, y, GetDataMember(filter));
+		self[filter]:SetScript("OnClick", function(self)
+			SetDataMember(filter, self:GetChecked());
+			wipe(searchCache);
+		end);
+	end
 	
 	local name = app:GetName();  -- should probably be outside this function cant be the only place app:getName() gets used
 	local lastFilter;
@@ -4275,9 +4264,116 @@ local function CreateSettingsMenu()
 	local mainFrame = CreateFrame("FRAME", name .. "-Settings", UIParent);
 	CreateSettingFrame(mainFrame, L("TITLE_OPTIONS"));
 	local function createMainFrame(self)
-		-- This creates the Show MiniMap checkBox --
+		-- This creates the Completionist Mode Checkbox --
+		self.CompletionistMode = CreateFrame("CheckButton", name .. "-CompletionistMode", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.CompletionistMode, self, "|CFFADD8E6Completionist Mode|r", 15, -50, GetDataMember("CompletionistMode")); 
+		self.CompletionistMode:SetScript("OnClick", function(self)
+			SetCompletionistMode(self:GetChecked(), true);
+			if self:GetChecked() then
+				mainFrame.MainOnly:Hide();
+			else
+				mainFrame.MainOnly:Show();
+			end
+		end);
+		self.CompletionistMode:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Turn this setting off if you want ATT to *pretend* that you've earned shared appearances for items that qualify for the same unlock requirements.\n\nItems 'Collected' through this mode will be marked with an asterisk (*). This means that you haven't collected that specific source of the appearance yet.\n\nCompletionist Mode is Hardcore.\nDebug Completionist Mode is for the truly Insane.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+			if self:GetChecked() then
+				mainFrame.MainOnly:Hide();
+			else
+				mainFrame.MainOnly:Show();
+			end
+		end);
+
+		-- This creates the "I only care about my main" Checkbox --
+		self.MainOnly = CreateFrame("CheckButton", name .. "-MainOnly", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.MainOnly, self, L("I_ONLY_CARE_ABOUT_MY_MAIN"), 25, -70, GetDataMember("MainOnly")); 
+		self.MainOnly:SetScript("OnClick", function(self)
+			SetDataMember("MainOnly", self:GetChecked());
+			SetCompletionistMode(GetDataMember("CompletionistMode"));
+		end);
+		self.MainOnly:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a " .. GetClassInfo(app.ClassIndex) .. "-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that appearance for your current class. (Shift + Click will refresh this data for your alts if you decide to earn appearances on them.)", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		if GetDataMember("CompletionistMode") then
+			self.MainOnly:Hide();
+		else
+			self.MainOnly:Show();
+		end
+		
+		-- This creates the "Show Completed Groups" Checkbox --
+		self.ShowCompletedGroups = CreateFrame("CheckButton", name .. "-ShowCompletedGroups", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.ShowCompletedGroups, self, "Show Completed Groups", 15, -90, GetDataMember("ShowCompletedGroups"));
+		self.ShowCompletedGroups:SetScript("OnClick", function(self)
+			SetDataMember("ShowCompletedGroups", self:GetChecked());
+			if self:GetChecked() then
+				app.GroupVisibilityFilter = app.NoFilter;
+			else
+				app.GroupVisibilityFilter = app.FilterGroupsByCompletion;
+			end
+			app:RefreshData();
+		end);
+		self.ShowCompletedGroups:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+
+		-- This creates the "Show Collected Things" Checkbox -- 
+		self.ShowCollectedItems = CreateFrame("CheckButton", name .. "-ShowCollectedItems", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.ShowCollectedItems, self, "Show Collected Things", 15, -110, GetDataMember("ShowCollectedItems"));
+		self.ShowCollectedItems:SetScript("OnClick", function(self)
+			SetDataMember("ShowCollectedItems", self:GetChecked());
+			if self:GetChecked() then
+				app.CollectedItemVisibilityFilter = app.NoFilter;
+			else
+				app.CollectedItemVisibilityFilter = app.Filter;
+			end
+			app:RefreshData();
+		end);
+		self.ShowCollectedItems:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see collected Items, Mounts, Toys, Pets, Illusions, etc. in the list.\n\nIf an item is relative to a completed group, it will not appear in the list unless you have 'Show Completed Groups' enabled.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
+		-- This creates the "Show Incomplete Quests" Checkbox --
+		self.ShowIncompleteQuests = CreateFrame("CheckButton", name .. "-ShowIncompleteQuests", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.ShowIncompleteQuests, self, "Show Incomplete Quests", 15, -130, GetDataMember("ShowIncompleteQuests"));
+		self.ShowIncompleteQuests:SetScript("OnClick", function(self)
+			SetDataMember("ShowIncompleteQuests", self:GetChecked());
+			if self:GetChecked() then
+				app.ShowIncompleteQuests = app.FilterItemTrackable;
+			else
+				app.ShowIncompleteQuests = app.Filter;
+			end
+			app:RefreshData();
+		end);
+		self.ShowIncompleteQuests:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see items, objects, NPCs, and headers associated with incomplete quests that don't necessarily have anything you can collect as a result of completing them.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
+		-- This creates the "Treat Incomplete Quests as Collectible" Checkbox --
+		self.TreatIncompleteQuestsAsCollectible = CreateFrame("CheckButton", name .. "-TreatIncompleteQuestsAsCollectible", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.TreatIncompleteQuestsAsCollectible, self, "Treat as Collectible", 25, -150, GetDataMember("TreatIncompleteQuestsAsCollectible"));
+		self.TreatIncompleteQuestsAsCollectible:SetScript("OnClick", function(self)
+			SetDataMember("TreatIncompleteQuestsAsCollectible", self:GetChecked());
+			app:RefreshData();
+		end);
+		self.TreatIncompleteQuestsAsCollectible:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to track non-Daily Quests as Collectible Things.\n\nThis means that quests will naturally appear in the listing and will add to the total once you complete them on your character.\n\nNOTE: Quests are not usually Account-Wide, so if you are trying to collect ALL THE THINGS on ALL OF YOUR CHARACTERS, you might want to disable this option.\n\nIt can be very useful when questing through a zone, though.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
+		-- This creates the "Show Minimap Button" Checkbox --
 		self.ShowMinimapButton = CreateFrame("CheckButton", name .. "-ShowMinimapButton", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowMinimapButton, self, "Show Minimap Button", 15, -50, GetDataMember("ShowMinimapButton"));
+		CreateCheckBox(self.ShowMinimapButton, self, "Show the Minimap Button", 300, -50, GetDataMember("ShowMinimapButton"));
 		self.ShowMinimapButton:SetScript("OnClick", function(self)
 				local checked = self:GetChecked();
 				SetDataMember("ShowMinimapButton", checked);
@@ -4288,157 +4384,81 @@ local function CreateSettingsMenu()
 					app.Minimap:Hide();
 				end
 			end);
-		self.ShowMinimapButton:SetScript("onEnter", function(self)
+		self.ShowMinimapButton:SetScript("OnEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
 			GameTooltip:SetText ("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
 		
-		-- This creates the showCompletedGroups checkBox --
-		self.ShowCompletedGroups = CreateFrame("CheckButton", name .. "-ShowCompletedGroups", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCompletedGroups, self, "Show Completed Groups", 15, -70, GetDataMember("ShowCompletedGroups"));
-		self.ShowCompletedGroups:SetScript("OnClick", function(self)
-			SetDataMember("ShowCompletedGroups", self:GetChecked());
-			if self:GetChecked() then
-				app.GroupVisibilityFilter = app.NoFilter;
-			else
-				app.GroupVisibilityFilter = app.FilterGroupsByCompletion;
-			end
-			app:RefreshData();
-		end);
-		self.ShowCompletedGroups:SetScript("onEnter", function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-
-		-- This creates the showCollectedItems checkBox -- 
-		self.ShowCollectedItems = CreateFrame("CheckButton", name .. "-ShowCollectedItems", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCollectedItems, self, "Show Collected Things", 15, -90, GetDataMember("ShowCollectedItems"));
-		self.ShowCollectedItems:SetScript("OnClick", function(self)
-			SetDataMember("ShowCollectedItems", self:GetChecked());
-			if self:GetChecked() then
-				app.CollectedItemVisibilityFilter = app.NoFilter;
-			else
-				app.CollectedItemVisibilityFilter = app.Filter;
-			end
-			app:RefreshData();
-		end);
-		self.ShowCollectedItems:SetScript("onEnter", function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see collected Items, Mounts, Toys, Pets, Illusions, etc. in the list.\n\nIf an item is relative to a completed group, it will not appear in the list unless you have 'Show Completed Groups' enabled.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-		
-		-- This creates the "show missing items" checkBox --
-		self.ShowMissingItems = CreateFrame("CheckButton", name .. "-ShowMissingItems", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowMissingItems, self, "Show Missing Things", 15, -110, GetDataMember("ShowMissingItems"));
-		self.ShowMissingItems:SetScript("OnClick", function(self)
-			SetDataMember("ShowMissingItems", self:GetChecked());
-			if self:GetChecked() then
-				app.MissingItemVisibilityFilter = app.NoFilter;
-			else
-				app.MissingItemVisibilityFilter = app.Filter;
-			end
-			app:RefreshData();
-		end);
-		self.ShowMissingItems:SetScript("onEnter", function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see missing Items, Mounts, Toys, Pets, Illusions, etc. in the list. (based on Filters)\n\nThis is provided for debugging purposes.\n\nWe do NOT recommend turning this off.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-		
-		
-		-- This creates the completionst Mode checkBox --
-		self.CompletionistMode = CreateFrame("CheckButton", name .. "-CompletionistMode", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.CompletionistMode, self, "|CFFADD8E6Completionist Mode|r", 25, -140, GetDataMember("CompletionistMode")); 
-		self.CompletionistMode:SetScript("OnClick", function(self)
-			SetCompletionistMode(self:GetChecked(), true);
-			if self:GetChecked() then
-				mainFrame.MainOnly:Hide();
-			else
-				mainFrame.MainOnly:Show();
-			end
-		end);
-		self.CompletionistMode:SetScript("onEnter", function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Turn this setting off if you want ATT to *pretend* that you've earned shared appearances for items that qualify for the same unlock requirements.\n\nItems 'Collected' through this mode will be marked with an asterisk (*). This means that you haven't collected that specific source of the appearance yet.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-			if self:GetChecked() then
-				mainFrame.MainOnly:Hide();
-			else
-				mainFrame.MainOnly:Show();
-			end
-		end);
-
-		-- This creates the "I only care about my main" checkBox --
-		self.MainOnly = CreateFrame("CheckButton", name .. "-MainOnly", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.MainOnly, self, L("I_ONLY_CARE_ABOUT_MY_MAIN"), 35, -160, GetDataMember("MainOnly")); 
-		self.MainOnly:SetScript("OnClick", function(self)
-			SetDataMember("MainOnly", self:GetChecked());
-			SetCompletionistMode(GetDataMember("CompletionistMode"));
-		end);
-		self.MainOnly:SetScript("onEnter", function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a " .. GetClassInfo(app.ClassIndex) .. "-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that appearance for your current class. (Shift + Click will refresh this data for your alts if you decide to earn appearances on them.)", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-		if GetDataMember("CompletionistMode") then
-			self.MainOnly:Hide();
-		else
-			self.MainOnly:Show();
-		end
-
-		-- This creates the ShowNotifications checkBox --
-		self.ShowNotifications = CreateFrame("CheckButton", name .. "-ShowNotifications", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowNotifications, self, "Notify me when I Collect Things", 300, -50, GetDataMember("ShowNotifications", true));
-		self.ShowNotifications:SetScript("OnClick", function(self)
-			SetDataMember("ShowNotifications", self:GetChecked());
-		end);
-		self.ShowNotifications:SetScript("onEnter", function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-		
-		self.PlayFanfare = CreateFrame("CheckButton", name .. "-PlayFanfare", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.PlayFanfare, self, "Play Fanfare when I Collect Things", 300, -70, GetDataMember("PlayFanfare", true));
-		self.PlayFanfare:SetScript("OnClick", function(self)
-			SetDataMember("PlayFanfare", self:GetChecked());
-		end);
-		self.PlayFanfare:SetScript("onEnter", function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new collectable item.\n\nThis is feature can very addicting.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-	
-		self.PlayRemoveSound = CreateFrame("CheckButton", name .. "-PlayRemoveSound", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.PlayRemoveSound, self, "Play a Warning when I Remove Things", 300, -90, GetDataMember("PlayRemoveSound", true));
-		self.PlayRemoveSound:SetScript("OnClick", function(self)
-			SetDataMember("PlayRemoveSound", self:GetChecked());
-		end);
-		self.PlayRemoveSound:SetScript("onEnter", function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-		
+		-- This creates the "Show the Mini List Automatically" Checkbox --
 		self.AutoMiniList = CreateFrame("CheckButton", name .. "-AutoMiniList", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.AutoMiniList, self, "Show the Mini List Automatically", 300, -110, GetDataMember("AutoMiniList", true));
+		CreateCheckBox(self.AutoMiniList, self, "Show the Mini List Automatically", 300, -70, GetDataMember("AutoMiniList", true));
 		self.AutoMiniList:SetScript("OnClick", function(self)
 			SetDataMember("AutoMiniList", self:GetChecked());
 			if self:GetChecked() then
 				OpenMiniListForCurrentZone();
 			end
 		end);
-		self.AutoMiniList:SetScript("onEnter", function(self)
+		self.AutoMiniList:SetScript("OnEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
 			GameTooltip:SetText ("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones.\n\nDrag the window and rescale it where you want it to appear.\n\nSome people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
 		
+		-- This creates the "Notify me when I Collect Things" Checkbox --
+		self.ShowNotifications = CreateFrame("CheckButton", name .. "-ShowNotifications", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.ShowNotifications, self, "Notify me when I Collect Things", 300, -90, GetDataMember("ShowNotifications", true));
+		self.ShowNotifications:SetScript("OnClick", function(self)
+			SetDataMember("ShowNotifications", self:GetChecked());
+		end);
+		self.ShowNotifications:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
+		self.PlayFanfare = CreateFrame("CheckButton", name .. "-PlayFanfare", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.PlayFanfare, self, "Play Fanfare when I Collect Things", 300, -110, GetDataMember("PlayFanfare", true));
+		self.PlayFanfare:SetScript("OnClick", function(self)
+			SetDataMember("PlayFanfare", self:GetChecked());
+		end);
+		self.PlayFanfare:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new collectable item.\n\nThis is feature can very addicting.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	
+		self.PlayRemoveSound = CreateFrame("CheckButton", name .. "-PlayRemoveSound", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.PlayRemoveSound, self, "Play a Warning when I Remove Things", 300, -130, GetDataMember("PlayRemoveSound", true));
+		self.PlayRemoveSound:SetScript("OnClick", function(self)
+			SetDataMember("PlayRemoveSound", self:GetChecked());
+		end);
+		self.PlayRemoveSound:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
+		
+		
+		
+		CreateIDCheckBox(self, "ShowLootSpecializations", "Show Loot Specializations", 15, -490);
+		
+		self.ShowLootSpecializationRequirements = CreateFrame("CheckButton", name .. "-ShowLootSpecializationRequirements", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.ShowLootSpecializationRequirements, self, "Show Loot Specialization Icons", 300, -150, GetDataMember("ShowLootSpecializationRequirements"));
+		self.ShowLootSpecializationRequirements:SetScript("OnClick", function(self)
+			SetDataMember("ShowLootSpecializationRequirements", self:GetChecked());
+			app:UpdateWindows();
+		end);
+		self.ShowLootSpecializationRequirements:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see loot specialization icons in the listing indicating which specializations for your class must be used in order to obtain an item when running a dungeon in Personal Loot mode.\n\nNOTE: Rare spawns are generally not Personal Loot required.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+			
+		
 		self.RequirePersonalLootFilter = CreateFrame("CheckButton", name .. "-RequirePersonalLootFilter", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -130, GetDataMember("RequirePersonalLootFilter"));
+		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -170, GetDataMember("RequirePersonalLootFilter"));
 		self.RequirePersonalLootFilter:SetScript("OnClick", function(self)
 			SetDataMember("RequirePersonalLootFilter", self:GetChecked());
 			if self:GetChecked() then
@@ -4448,24 +4468,11 @@ local function CreateSettingsMenu()
 			end
 			app:RefreshData(false, true);
 		end);
-		self.RequirePersonalLootFilter:SetScript("onEnter", function(self)
+		self.RequirePersonalLootFilter:SetScript("OnEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
 			GameTooltip:SetText ("Enable this option if you only want to see items that Blizzard has listed as usable for your current specialization.\n\nWARNING: This will mean that a lot of items you can transmog and/or collect on your current character will be hidden in the listings.\n\nWARNING #2: This feature is EXTREMELY SLOW as it currently uses the Blizzard API. User discretion is advised. We do NOT recommend turning this feature on.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-		
-		self.ShowLootSpecializationRequirements = CreateFrame("CheckButton", name .. "-ShowLootSpecializationRequirements", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowLootSpecializationRequirements, self, "Show Loot Specialization Icons", 300, -150, GetDataMember("ShowLootSpecializationRequirements"));
-		self.ShowLootSpecializationRequirements:SetScript("OnClick", function(self)
-			SetDataMember("ShowLootSpecializationRequirements", self:GetChecked());
-			app:UpdateWindows();
-		end);
-		self.ShowLootSpecializationRequirements:SetScript("onEnter", function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see loot specialization icons indicating which specializations for your class must be used in order to obtain an item when running a dungeon in Personal Loot mode.\n\nNOTE: Rare spawns are generally not Personal Loot required.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-		
 		
 		
 		
@@ -4519,6 +4526,8 @@ local function CreateSettingsMenu()
 			wipe(searchCache);
 		end);
 		
+		
+		
 		self.IgnoreAllFilters = CreateFrame("CheckButton", name .. "-IgnoreAllFilters", self, "InterfaceOptionsCheckButtonTemplate");
 		CreateCheckBox(self.IgnoreAllFilters, self, "Ignore All Filters (Debug Mode)", 15, -520, GetDataMember("IgnoreAllFilters"));
 		self.IgnoreAllFilters:SetScript("OnClick", function(self)
@@ -4538,7 +4547,7 @@ local function CreateSettingsMenu()
 			end
 			app:RefreshData(false, true);
 		end);
-		self.IgnoreFiltersOnNonBindingItems:SetScript("onEnter", function(self)
+		self.IgnoreFiltersOnNonBindingItems:SetScript("OnEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
 			GameTooltip:SetText ("This ignores all filters for any items that are Bind on Equip or Bind on Account. Turn off if you only want to see BOE or BOA items for your filter settings.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
@@ -4548,43 +4557,66 @@ local function CreateSettingsMenu()
 
 
 		-- Tooltip Information Details
-		local function CreateIDCheckBox(filter, name, x, y)
-			self[filter] = CreateFrame("CheckButton", name .. "-" .. filter, self, "InterfaceOptionsCheckButtonTemplate");
-			CreateCheckBox(self[filter], self, name, x, y, GetDataMember(filter));
-			self[filter]:SetScript("OnClick", function(self)
-				SetDataMember(filter, self:GetChecked());
-				wipe(searchCache);
-			end);
-		end
 		
-		CreateIDCheckBox("ShowItemID", "Show Item ID", 15, -330);
-		CreateIDCheckBox("ShowItemString", "Show Item String", 15, -350);
-		CreateIDCheckBox("ShowSourceID", "Show Source ID", 15, -370);
-		CreateIDCheckBox("ShowVisualID", "Show Visual ID", 15, -390);
 		
-		CreateIDCheckBox("ShowDescriptions", "Show Descriptions", 15, -410);
-		CreateIDCheckBox("ShowModels", "Show Models", 15, -430);
-		CreateIDCheckBox("ShowMapID", "Show Map ID", 15, -450);
-		CreateIDCheckBox("ShowUnobtainableAppearanceInformation", "Show Unobtainable Icons", 15, -470);
-		CreateIDCheckBox("ShowLootSpecializations", "Show Loot Specializations", 15, -490);
 		
-		CreateIDCheckBox("ShowAchievementID", "Show Achievement ID", 300, -190);
-		CreateIDCheckBox("ShowArtifactID", "Show Artifact ID", 300, -210);
-		CreateIDCheckBox("ShowCreatureID", "Show Creature ID", 300, -230);
-		CreateIDCheckBox("ShowDifficultyID", "Show Difficulty ID", 300, -250);
-		CreateIDCheckBox("ShowEncounterID", "Show Encounter ID", 300, -270);
-		CreateIDCheckBox("ShowFactionID", "Show Faction ID", 300, -290);
-		CreateIDCheckBox("ShowFilterID", "Show Filter ID", 300, -310);
-		CreateIDCheckBox("ShowIllusionID", "Show Illusion ID", 300, -330);
-		CreateIDCheckBox("ShowInstanceID", "Show Instance ID", 300, -350);
-		CreateIDCheckBox("ShowMusicRollID", "Show Music Roll ID", 300, -370);
-		CreateIDCheckBox("ShowObjectID", "Show Object ID", 300, -390);
-		CreateIDCheckBox("ShowQuestID", "Show Quest ID", 300, -410);
-		CreateIDCheckBox("ShowSpeciesID", "Show Species ID", 300, -430);
-		CreateIDCheckBox("ShowSpellID", "Show Spell ID", 300, -450);
-		CreateIDCheckBox("ShowTierID", "Show Tier ID", 300, -470);
+		CreateIDCheckBox(self, "ShowDescriptions", "Show Descriptions", 15, -410);
+		CreateIDCheckBox(self, "ShowModels", "Show Models", 15, -430);
+		
+		
 	end
 	createMainFrame(mainFrame);
+	
+	
+	
+	-- This creates the filter window in the options --
+	local debugFrame = CreateFrame("FRAME", name .."-Debugging", mainFrame);
+	debugFrame.parent = mainFrame.name;
+	CreateSettingFrame(debugFrame, "Debugging");
+	local function CreateDebugFrame(self)
+		-- This creates the list of Object ID descriptors.
+		CreateIDCheckBox(self, "ShowAchievementID", "Show Achievement ID", 15, -50);
+		CreateIDCheckBox(self, "ShowArtifactID", "Show Artifact ID", 15, -70);
+		CreateIDCheckBox(self, "ShowCreatureID", "Show Creature ID", 15, -90);
+		CreateIDCheckBox(self, "ShowDifficultyID", "Show Difficulty ID", 15, -110);
+		CreateIDCheckBox(self, "ShowEncounterID", "Show Encounter ID", 15, -130);
+		CreateIDCheckBox(self, "ShowFactionID", "Show Faction ID", 15, -150);
+		CreateIDCheckBox(self, "ShowFilterID", "Show Filter ID", 15, -170);
+		CreateIDCheckBox(self, "ShowIllusionID", "Show Illusion ID", 15, -190);
+		CreateIDCheckBox(self, "ShowInstanceID", "Show Instance ID", 15, -210);
+		CreateIDCheckBox(self, "ShowItemID", "Show Item ID", 15, -230);
+		CreateIDCheckBox(self, "ShowItemString", "Show Item String", 15, -250);
+		CreateIDCheckBox(self, "ShowMapID", "Show Map ID", 15, -270);
+		CreateIDCheckBox(self, "ShowMusicRollID", "Show Music Roll ID", 15, -290);
+		CreateIDCheckBox(self, "ShowObjectID", "Show Object ID", 15, -310);
+		CreateIDCheckBox(self, "ShowQuestID", "Show Quest ID", 15, -330);
+		CreateIDCheckBox(self, "ShowSourceID", "Show Source ID", 15, -350);
+		CreateIDCheckBox(self, "ShowSpeciesID", "Show Species ID", 15, -370);
+		CreateIDCheckBox(self, "ShowSpellID", "Show Spell ID", 15, -390);
+		CreateIDCheckBox(self, "ShowTierID", "Show Tier ID", 15, -410);
+		CreateIDCheckBox(self, "ShowVisualID", "Show Visual ID", 15, -430);
+		
+		-- This creates the "Show Uncollected Things" checkBox --
+		self.ShowUncollectedThings = CreateFrame("CheckButton", name .. "-ShowUncollectedThings", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.ShowUncollectedThings, self, "Show Uncollected Things", 300, -50, GetDataMember("ShowUncollectedThings"));
+		self.ShowUncollectedThings:SetScript("OnClick", function(self)
+			SetDataMember("ShowUncollectedThings", self:GetChecked());
+			if self:GetChecked() then
+				app.MissingItemVisibilityFilter = app.NoFilter;
+			else
+				app.MissingItemVisibilityFilter = app.Filter;
+			end
+			app:RefreshData();
+		end);
+		self.ShowUncollectedThings:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see missing Items, Mounts, Toys, Pets, Illusions, etc. in the list. (based on Filters)\n\nThis is provided for debugging purposes.\n\nWe do NOT recommend turning this off.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
+	end
+	CreateDebugFrame(debugFrame);
+	
 	
 	
 	-- This creates the filter window in the options --
@@ -4886,18 +4918,6 @@ local function CreateSettingsMenu()
 				app:RefreshData();
 			end);
 		end
-			
-		self.RequireTrackableFilter = CreateFrame("CheckButton", name .. "-RequireTrackableFilter", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.RequireTrackableFilter, self, "Track Quest Completion", 15, -240, GetDataMember("RequireTrackableFilter"));
-		self.RequireTrackableFilter:SetScript("OnClick", function(self)
-			SetDataMember("RequireTrackableFilter", self:GetChecked());
-			if self:GetChecked() then
-				app.RequireTrackableFilter = app.FilterItemTrackable;
-			else
-				app.RequireTrackableFilter = app.Filter;
-			end
-			app:RefreshData();
-		end);
 				
 		-- "Non-Equipment Types" (Part 2)
 		lastFilter = self.dummy;
@@ -4918,9 +4938,9 @@ local function CreateSettingsMenu()
 		end
 	end
 	CreateFilterFrame(filtersFrame);
-
-
-
+	
+	
+	
 	-- This Creates the FAQ window in the options --
 	local faqFrame = CreateFrame("FRAME", name .."-Frame", mainFrame);
 	faqFrame.parent = mainFrame.name;
@@ -6223,7 +6243,7 @@ app.events.VARIABLES_LOADED = function()
 	else
 		app.CollectedItemVisibilityFilter = app.Filter;
 	end
-	if GetDataMember("ShowMissingItems", true) then
+	if GetDataMember("ShowUncollectedThings", true) then
 		app.MissingItemVisibilityFilter = app.NoFilter;
 	else
 		app.MissingItemVisibilityFilter = app.Filter;
@@ -6232,7 +6252,7 @@ app.events.VARIABLES_LOADED = function()
 		app.Minimap = CreateMinimapButton(); -- NOTE: Create this if they turn it on.
 		app.Minimap:Show();
 	end
-	if GetDataMember("CompletionistMode", not GetDataMember("UniqueAppearances", false)) then
+	if GetDataMember("CompletionistMode", true) then
 		app.ItemSourceFilter = app.FilterItemSource;
 		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
 		app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
@@ -6282,44 +6302,44 @@ app.events.VARIABLES_LOADED = function()
 	else
 		app.RequiredSkillFilter = app.NoFilter;
 	end
-	if GetDataMember("RequireTrackableFilter", false) then
-		app.RequireTrackableFilter = app.FilterItemTrackable;
+	if GetDataMember("ShowIncompleteQuests", false) then
+		app.ShowIncompleteQuests = app.FilterItemTrackable;
 	else
-		app.RequireTrackableFilter = app.Filter;
+		app.ShowIncompleteQuests = app.Filter;
 	end
 	
 	GetDataMember("EnableTooltipInformation", true);
 	GetDataMember("DisplayTooltipInformationInCombat", false);
 	GetDataMember("ShowLootSpecializationRequirements", true);
+	GetDataMember("TreatIncompleteQuestsAsCollectible", false);
 	GetDataMember("ShowSharedAppearances", true);
 	GetDataMember("ShowSources", true);
 	GetDataMember("ShowContents", true);
 	
 	-- Tooltip Settings
-	GetDataMember("ShowAchievementID", true);
-	GetDataMember("ShowArtifactID", true);
-	GetDataMember("ShowCreatureID", false);
-	GetDataMember("ShowDifficultyID", true);
-	GetDataMember("ShowEncounterID", true);
-	GetDataMember("ShowFactionID", true);
-	GetDataMember("ShowIllusionID", true);
-	GetDataMember("ShowInstanceID", true);
-	GetDataMember("ShowMusicRollID", true);
-	GetDataMember("ShowObjectID", true);
-	GetDataMember("ShowSpeciesID", true);
-	GetDataMember("ShowSpellID", true);
-	GetDataMember("ShowTierID", true);
 	GetDataMember("ShowDescriptions", true);
 	GetDataMember("ShowModels", true);
-	GetDataMember("ShowMapID", true);
-	GetDataMember("ShowSpeciesID", true);
-	GetDataMember("ShowQuestID", true);
+	
+	GetDataMember("ShowAchievementID", false);
+	GetDataMember("ShowArtifactID", false);
+	GetDataMember("ShowCreatureID", false);
+	GetDataMember("ShowDifficultyID", false);
+	GetDataMember("ShowEncounterID", false);
+	GetDataMember("ShowFactionID", false);
 	GetDataMember("ShowFilterID", false);
-	GetDataMember("ShowItemID", true);
+	GetDataMember("ShowIllusionID", false);
+	GetDataMember("ShowInstanceID", false);
+	GetDataMember("ShowItemID", false);
 	GetDataMember("ShowItemString", false);
+	GetDataMember("ShowMapID", false);
+	GetDataMember("ShowMusicRollID", false);
+	GetDataMember("ShowObjectID", false);
+	GetDataMember("ShowQuestID", false);
 	GetDataMember("ShowSourceID", false);
+	GetDataMember("ShowSpeciesID", false);
+	GetDataMember("ShowSpellID", false);
+	GetDataMember("ShowTierID", false);
 	GetDataMember("ShowVisualID", false);
-	GetDataMember("ShowUnobtainableAppearanceInformation", false);
 	
 	-- Create the Settings Menu and show version information
 	app.print(format(L("LOADING"), GetAddOnMetadata("AllTheThings", "Version")));
