@@ -211,12 +211,12 @@ _.Zones =
 					}),
 					na(31579, { -- Arcanist Adurin <Legacy Justice Quartermaster>
 						i(40637, { -- Mantle of the Lost Conqueror (Paladin, Priest, Warlock)
-							i(40448), -- Valorous Mantle of Faith
-							i(40457), -- Valorous Shoulderpads of Faith
-							i(40422), -- Valorous Plagueheart Shoulderpads
-							i(40572), -- Valorous Redemption Shoulderguards
-							i(40583), -- Valorous Redemption Shoulderplates
-							i(40577), -- Valorous Redemption Spaulders
+							i(40459), -- Valorous Mantle of Faith
+							i(40450), -- Valorous Shoulderpads of Faith
+							i(40424), -- Valorous Plagueheart Shoulderpads
+							i(40584), -- Valorous Redemption Shoulderguards
+							i(40578), -- Valorous Redemption Shoulderplates
+							i(40573), -- Valorous Redemption Spaulders
 						}), 
 						i(40638, { -- Mantle of the Lost Protector (Hunter, Shaman, Warrior)
 							i(40507), -- Valorous Crypstalker Spaulders
@@ -2355,12 +2355,12 @@ _.Zones =
 					}),
 					nh(31581, { -- Magister Brasael <Legacy Justice Quartermaster>
 						i(40637, { -- Mantle of the Lost Conqueror (Paladin, Priest, Warlock)
-							i(40448), -- Valorous Mantle of Faith
-							i(40457), -- Valorous Shoulderpads of Faith
-							i(40422), -- Valorous Plagueheart Shoulderpads
-							i(40572), -- Valorous Redemption Shoulderguards
-							i(40583), -- Valorous Redemption Shoulderplates
-							i(40577), -- Valorous Redemption Spaulders
+							i(40459), -- Valorous Mantle of Faith
+							i(40450), -- Valorous Shoulderpads of Faith
+							i(40424), -- Valorous Plagueheart Shoulderpads
+							i(40584), -- Valorous Redemption Shoulderguards
+							i(40578), -- Valorous Redemption Shoulderplates
+							i(40573), -- Valorous Redemption Spaulders
 						}), 
 						i(40638, { -- Mantle of the Lost Protector (Hunter, Shaman, Warrior)
 							i(40507), -- Valorous Crypstalker Spaulders
