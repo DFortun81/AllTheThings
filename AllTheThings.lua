@@ -4296,7 +4296,7 @@ local function CreateSettingsMenu()
 		
 		-- This creates the showCompletedGroups checkBox --
 		self.ShowCompletedGroups = CreateFrame("CheckButton", name .. "-ShowCompletedGroups", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCompletedGroups, self, "Show Sections I have Completed", 15, -70, GetDataMember("ShowCompletedGroups"));
+		CreateCheckBox(self.ShowCompletedGroups, self, "Show Completed Groups", 15, -70, GetDataMember("ShowCompletedGroups"));
 		self.ShowCompletedGroups:SetScript("OnClick", function(self)
 			SetDataMember("ShowCompletedGroups", self:GetChecked());
 			if self:GetChecked() then
@@ -4314,7 +4314,7 @@ local function CreateSettingsMenu()
 
 		-- This creates the showCollectedItems checkBox -- 
 		self.ShowCollectedItems = CreateFrame("CheckButton", name .. "-ShowCollectedItems", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCollectedItems, self, "Show Things I have Collected", 15, -90, GetDataMember("ShowCollectedItems"));
+		CreateCheckBox(self.ShowCollectedItems, self, "Show Collected Things", 15, -90, GetDataMember("ShowCollectedItems"));
 		self.ShowCollectedItems:SetScript("OnClick", function(self)
 			SetDataMember("ShowCollectedItems", self:GetChecked());
 			if self:GetChecked() then
@@ -4326,13 +4326,13 @@ local function CreateSettingsMenu()
 		end);
 		self.ShowCollectedItems:SetScript("onEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see collected Items, Mounts, Toys, Pets, Illusions, etc. in the list.\n\nIf an item is relative to a completed section, it will not appear in the list unless you have 'Show Sections I have Completed' enabled.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.", nil, nil, nil, nil, true);
+			GameTooltip:SetText ("Enable this option if you want to see collected Items, Mounts, Toys, Pets, Illusions, etc. in the list.\n\nIf an item is relative to a completed group, it will not appear in the list unless you have 'Show Completed Groups' enabled.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
 		
 		-- This creates the "show missing items" checkBox --
 		self.ShowMissingItems = CreateFrame("CheckButton", name .. "-ShowMissingItems", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowMissingItems, self, "Show Things I am Missing", 15, -110, GetDataMember("ShowMissingItems"));
+		CreateCheckBox(self.ShowMissingItems, self, "Show Missing Things", 15, -110, GetDataMember("ShowMissingItems"));
 		self.ShowMissingItems:SetScript("OnClick", function(self)
 			SetDataMember("ShowMissingItems", self:GetChecked());
 			if self:GetChecked() then
