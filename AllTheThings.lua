@@ -294,15 +294,15 @@ local function ConvertColorRgbToHsv(r, g, b)
   return {h=h,s=s,v=v}
 end
 local red, green = ConvertColorRgbToHsv(1,0,0), ConvertColorRgbToHsv(0,1,0);
-local progress_colors = setmetatable({}, {
+local progress_colors = setmetatable({[1] = "FF00FFFF"}, {
 	__index = function(t, p)
 		local h;
 		p = tonumber(p);
 		if abs(red.h - green.h) > 180 then
-		local angle = (360 - abs(red.h - green.h)) * p;
-		if red.h < green.h then
-			h = floor(red.h - angle);
-			if h < 0 then h = 360 + h end
+			local angle = (360 - abs(red.h - green.h)) * p;
+			if red.h < green.h then
+				h = floor(red.h - angle);
+				if h < 0 then h = 360 + h end
 			else
 				h = floor(red.h + angle);
 				if h > 360 then h = h - 360 end
