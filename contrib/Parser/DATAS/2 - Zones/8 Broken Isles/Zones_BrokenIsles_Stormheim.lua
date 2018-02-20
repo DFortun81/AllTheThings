@@ -1095,6 +1095,19 @@ _.Zones =
 						},
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
+					n(-3309, { -- Wardbreaker Set
+						["groups"] = {
+							i(136728),	-- Wardbreaker Helm
+							i(136730),	-- Wardbreaker Pauldrons
+							i(136725),	-- Wardbreaker Chestplate
+							i(136732),	-- Wardbreaker Vambraces
+							i(136726),	-- Wardbreaker Gauntlets
+							i(136727),	-- Wardbreaker Girdle
+							i(136729),	-- Wardbreaker Legplates
+							i(136731),	-- Wardbreaker Warboots
+						},
+						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+					}),
 				}),				
 				m(1022, {	-- Helheim
 					["groups"] = {

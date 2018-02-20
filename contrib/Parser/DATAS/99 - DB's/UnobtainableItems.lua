@@ -1618,7 +1618,6 @@ u(4090, 15);	-- Mug O' Hurt
 u(4696, 15);	-- Lapidis Tankard of Tidesippe
 u(5197, 15);	-- Cookie's Tenderizer
 u(6360, 15);	-- Steelscale Crushfish
-u(10501, 15); 	-- Catseye Ultra Goggles
 u(11930, 15);	-- The Emperor's New Cape
 u(12584, 15);	-- Grand Marshal's Longsword
 u(12731, 15);	-- Pristine Hide of the Beast

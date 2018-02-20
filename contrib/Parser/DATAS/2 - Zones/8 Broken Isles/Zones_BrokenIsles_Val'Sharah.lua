@@ -954,7 +954,8 @@ _.Zones =
 				}),
 				n(-34, { -- World Quests
 					n(-322, { -- Cloak
-						i(121307), -- Nightmare Shroud
+						i(139074),	-- Dreamwalker's Cloak
+						i(121307),	-- Nightmare Shroud
 					}),
 					n(-3245, { -- Night Dreamer Set
 						["groups"] = {

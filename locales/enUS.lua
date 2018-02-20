@@ -1131,7 +1131,7 @@ AllTheThings.Locales.enUS = {
 		[-3306] = "Moonshatter Set",
 		[-3307] = "Nightsfall Set",
 		[-3308] = "Rockbound Set",
-		[-3309] = "If you see this contact Lucetia please",
+		[-3309] = "Wardbreaker Set",
 -- Garrison Mission Table Sets
 		[-3310] = "Tormented Set",
 		[-3311] = "Munificent Set",

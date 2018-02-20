@@ -357,6 +357,7 @@ _.Zones =
 					i(139929), -- Saberguard Belt
 					i(139938), -- Bladedancer's Pantaloons
 					i(139935), -- Leyman's Boots
+					i(136744), -- Shadow Stalker Shoulders
 				}),
 				n(-45, { -- Mail
 					i(139967), -- Headgear of the Scorned
@@ -375,6 +376,7 @@ _.Zones =
 					i(134163), -- Biteestone Girthcord
 					i(134168), -- Bitestone Kilt
 					i(134166), -- Biteestone Boots
+					i(136758), -- Isle Watcher's Leggings
 				}),
 				n(-46, { -- Plate
 					i(140003), -- Helm of the Disillusioned Guard
