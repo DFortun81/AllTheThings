@@ -924,7 +924,6 @@ _.Zones =
 					}), 
 					n(91892, { 		-- Thane Irglov the Merciless
 						["groups"] = {
-							i(129133), 
 							i(129113)	-- Faintly Glowing Flagon of Mead
 						},
 						["questID"] = 38424,	
