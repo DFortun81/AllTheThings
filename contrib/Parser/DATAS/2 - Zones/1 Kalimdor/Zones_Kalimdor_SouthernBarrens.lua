@@ -155,6 +155,14 @@ _.Zones =
 					}),
 					
 					
+					qa(24944, {	-- Back in the Fight
+						["groups"] = {
+						},
+						["qg"] = 38804,	-- Tolliver Houndstooth
+						["sourceQuestID"] = { 24941 },	-- Langridge Shot
+					}),
+					
+					
 					qh(24529, {	-- Bad to Worse
 						["groups"] = {
 						},
@@ -332,10 +340,25 @@ _.Zones =
 					}),
 					
 					
+					qa(24941, {	-- Langridge Shot
+						["groups"] = {
+						},
+						["qg"] = 38620,	-- Thomas Paxton
+					}),
+					
+					
 					q( 24571, {	-- Lashvine Seeds
 						["groups"] = {
 						},
 						["qg"] = 38314,	-- Muyoh
+					}),
+					
+					
+					qa(24948, {	-- Lifting the Siege
+						["groups"] = {
+						},
+						["qg"] = 38620,	-- Thomas Paxton
+						["sourceQuestID"] = { 24943 },	-- Re-Take the Courtyard
 					}),
 					
 					
@@ -405,6 +428,45 @@ _.Zones =
 					}),
 					
 					
+					qa(24934, {	-- Repel Boarders!
+						["groups"] = {
+						},
+						["qg"] = 38619,	-- Admiral Aubrey
+						["sourceQuestID"] = { 24921 },	-- Report to Aubrey
+					}),
+					
+					
+					qa(24921, {	-- Report to Aubrey
+						["groups"] = {
+						},
+						["qg"] = 38623,	-- Dockmaster Lewis
+						["breadcrumbQuestID"] = { 28551, 28550 },	-- Hero's Call: Southern Barrens! (same quest name, different IDs)
+					}),
+					
+					
+					qa(24943, {	-- Re-Take the Courtyard
+						["groups"] = {
+							i( 53283),	-- Paxton's Belt
+							i( 53297),	-- Spoils of the Courtyard
+							i( 53294),	-- Seized Rangeroar Cloak
+							i(131386),	-- Seized Rageroar Belt
+						},
+						["qg"] = 38620,	-- Thomas Paxton
+						["sourceQuestID"] = { 24941 },	-- Langridge Shot
+					}),
+					
+					
+					qa(24939, {	-- Run Out the Guns
+						["groups"] = {
+						i( 53282),
+						i( 53268),
+						i(131385),
+						},
+						["qg"] = 3454,	-- Cannoneer Smythe
+						["sourceQuestID"] = { 24938 },	-- The Guns of Northwatch
+					}),
+					
+					
 					qh(24747, {	-- Sabotage! (awarded "Spearhead" criteria)
 						["groups"] = {
 							i( 53255),	-- Stonespire Shoulders
@@ -413,6 +475,13 @@ _.Zones =
 						},
 						["qg"] = 38140,	-- Weezil Slipshadow
 						["sourceQuestID"] = { 24685 },	-- Dwarf Fortress
+					}),
+					
+					
+					qa(25002, {	-- Scavenged
+						["groups"] = {
+						},
+						["qg"] = 38878,	-- Mangled Body
 					}),
 					
 					
@@ -433,6 +502,16 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 37138,	-- Onatay
+					}),
+					
+					
+					qa(24956, {	-- Silencing Rageroar
+						["groups"] = {
+							i(53266),	-- Boots of the Fallen Brother
+							i(53289),	-- Rageroar Trophy
+						},
+						["qg"] = 38804,	-- Tolliver Houndstooth
+						["sourceQuestID"] = { 24944 }	-- Back in the Fight
 					}),
 					
 					
@@ -501,6 +580,21 @@ _.Zones =
 					}),
 					
 					
+					qa(25000, {	-- Teegan's People
+						["groups"] = {
+						},
+						["qg"] = 38621,	-- Jeffrey Long
+					}),
+					
+					
+					qa(25036, {	-- Teegan's Troubles
+						["groups"] = {
+						},
+						["qg"] = 38620,	-- Thomas Paxton
+						["sourceQuestID"] = { 24948 },	-- Lifting the Siege
+					}),
+					
+					
 					qh(24637, {	-- The Butcher of Taurajo
 						["groups"] = {
 							i( 53226),  -- Battlescar Monnion
@@ -517,6 +611,14 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 37834,	-- Tauna Skychaser
+					}),
+					
+					
+					qa(24938, {	-- The Guns of Northwatch
+						["groups"] = {
+						},
+						["qg"] = 38619,	-- Admiral Aubrey
+						["sourceQuestID"] = { 24934 },	-- Repel Boarders!
 					}),
 					
 					
@@ -573,7 +675,7 @@ _.Zones =
 					}),
 				
 				
-				
+--]]				
 				
 
 				
@@ -601,20 +703,16 @@ _.Zones =
 					
 					
 					
---[[				
+				
 					qg(39118, qa(25183)),	-- ...And Bury the Rest
 					qg(38871, qa(25022)),	-- A Failure to Communicate
 					qg(37835, qa(25084)),	-- A Growing Threat
---]]
 					qg(38323, qa(25045,  {  -- A Line in the Dirt
 						i( 53301),
 						i( 53291),
 						i( 53275),
 						i(131399),
 					})),
---[[					
-					qg(38804, qa(24944)),	-- Back in the Fight
---]]					
 					qg(39218, qa(25153,  {  -- Bael'dun Rescue
 						i( 53264),
 						i( 53306),
@@ -628,12 +726,10 @@ _.Zones =
 						i( 53285),
 						i(131400),
 					})),
---[[
 					qg(38378, qa(24863)),	-- Breaking the Siege
 					qg(39083, qa(25081)),	-- Claim the Battlescar
 					qg(38323, qa(25057)),	-- Clap 'Em In Irons
-					qg(39118, qa(25104)),	-- Digsite Status
---]]					
+					qg(39118, qa(25104)),	-- Digsite Status					
 					qg(38986, qa(25044,  {  -- Diplomacy By Another Means
 						i( 53265),
 						i( 53292),
@@ -644,31 +740,23 @@ _.Zones =
 						i( 53271),
 						i( 53280),
 						i(131602),
-					})),
---[[					
-					qg(38323, qa(25043)),	-- Fields of Blood
---]]					
+					})),					
+					qg(38323, qa(25043)),	-- Fields of Blood					
 					qg(38873, qa(25008,  {  -- Filthy Animals
 						i( 53276),
 						i(131395),
-					})),
---[[					
-					qg(39085, qa(25086)),	-- Firestone Point
---]]					
+					})),					
+					qg(39085, qa(25086)),	-- Firestone Point					
 					qg(38380, qa(25186,  {  -- Futile Resistance
 						i( 53273),
 						i( 53295),
 						i(131407),
-					})),
---[[					
+					})),				
 					qg(39155, qa(25106)),	-- Hands Off Me Dig!
 					qg(39188, qa(25151)),	-- He Needs Ale!
 					qg(39118, qa(25182)),	-- Kill 'em All!
-					qg(38620, qa(24941)),	-- Langridge Shot
-					qg(38620, qa(24948)),	-- Lifting the Siege
 					qg(39003, qa(25041)),	-- Lion's Pride
-					qg(38871, qa(25015)),	-- Make 'em Squeal
---]]					
+					qg(38871, qa(25015)),	-- Make 'em Squeal				
 					qg(37835, qa(25085,  {  -- Mangletooth
 						i(53288),
 						i(53290),
@@ -681,50 +769,22 @@ _.Zones =
 						i( 53284),
 						i(131397),
 					})),
---[[					
 					qg(39155, qa(25120)),	-- Marley's Final Flight
 					qg(38323, qa(25074)),	-- Meet Me at Triumph
---]]					
 					qg(39154, qa(25102,  {  -- No Bull
 						i( 53298),
 						i( 53278),
 						i( 53277),
 						i(131401),
 					})),
---[[					
 					qg(39084, qa(25075)),	-- Pick-a-Part
 					qg(39084, qa(25079)),	-- Powder Play
---]]					
-					qg(38620, qa(24943,  {  -- Re-Take the Courtyard
-						i( 53283),
-						i( 53297),
-						i( 53294),
-						i(131386),
-					})),
---[[					
 					qg(39119, qa(26687)),	-- Reinforcements From Theramore
-					qg(38619, qa(24934)),	-- Repel Boarders!
-					qg(38623, qa(24921)),	-- Report to Aubrey
 					qg(39083, qa(25087)),	-- Report to Twinbraid
---]]					
-					qg( 3454, qa(24939,  {  -- Run Out the Guns
-						i( 53282),
-						i( 53268),
-						i(131385),
-					})),
 --					qg(38378, qa(24862)),	-- Running the Gauntlet
---					qg(38878, qa(25002)),	-- Scavenged
-					qg(38804, qa(24956,  {  -- Silencing Rageroar
-						i(53266),
-						i(53289),
-					})),
---[[					
 					qg(38383, qa(25191)),	-- Survey the Destruction
-					qg(38621, qa(25000)),	-- Teegan's People
-					qg(38620, qa(25036)),	-- Teegan's Troubles
 					qg(39322, qa(25197)),	-- The Admiral Won't Back Down
 					qg(39188, qa(25175)),	-- The Bad News
---]]					
 					o(202598, {	-- Big Nasty Plunger
 						qa(25185,  {  -- The Deed Is Done
 							i( 53305),
@@ -732,8 +792,6 @@ _.Zones =
 							i(131406),
 						}),
 					}),
---[[					
-					qg(38619, qa(24938)),	-- The Guns of Northwatch
 					qg(38986, qa(25059)),	-- The Taurajo Briefs
 					qg(38871, qa(25034)),	-- To the Front!
 --					q( 24568),	-- To the Walls! (LEGACY)
@@ -741,7 +799,6 @@ _.Zones =
 					qg(38152, qa(25174)),	-- Twinbraid Needs to Know
 					qg(39220, qa(25163)),	-- Who Did This?
 					qg(39085, qa(25082)),	-- Working the Bugs Out
---]]					
 					qg(38871, qa(25027,  {  -- You Flicked a Fine Vine to Leaf Me
 						i( 53302),
 						i( 53287),
