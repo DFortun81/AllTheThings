@@ -215,34 +215,34 @@ _.Instances =
 									i(95725),
 									i(94835),
 									i(95720),
-									i(95888, {		-- Leggings of the Crackling Conqueror
-										i(95913),
-										i(95918),
-										i(95923),
-										i(95927),
-										i(95932),
-										i(95983),
+									i(95888, {	-- Leggings of the Crackling Conqueror
+										i(95913),	-- Lightning Emperor's Legplates
+										i(95918),	-- Lightning Emperor's Greaves
+										i(95923),	-- Lightning Emperor's Legguards
+										i(95927),	-- Legwraps of the Exorcist
+										i(95932),	-- Leggings of the Exorcist
+										i(95983),	-- Leggings of the Thousandfold Hells
 									}),
-									i(95889, {		-- Leggings of the Crackling Protector
-										i(95318),
-										i(95323),
-										i(95333),
-										i(95338),
-										i(95258),
-										i(95268),
-										i(95272),
-										i(95278),
-										i(95313),
+									i(95889, {	-- Leggings of the Crackling Protector
+										i(95948),	-- Legguards of the Witch Doctor
+										i(95953),	-- Kilt of the Witch Doctor
+										i(95989),	-- Legplates of the Last Mogu
+										i(95994),	-- Legguards of the Last Mogu
+										i(95885),	-- Saurok Stalker's Legguards
+										i(95898),	-- Fire-Charm Leggings
+										i(95902),	-- Fire-Charm Legwraps
+										i(95908),	-- Fire-Chaarm Legguards
+										i(95943),	-- Legwraps of the Witch Doctor
 									}),
-									i(95887, {		-- Leggings of the Crackling Vanquisher
-										i(95892),
-										i(95938),
-										i(95828),
-										i(95833),
-										i(95838),
-										i(95842),
-										i(95847),
-										i(95853),
+									i(95887, {	-- Leggings of the Crackling Vanquisher
+										i(95892),	-- Leggings of the Chromatic Hydra
+										i(95938),	-- Nine-Tailed Legguards
+										i(95828),	-- Greaves of the All-Consuming Maw
+										i(95833),	-- Legguards of the All-Consuming Maw
+										i(95838),	-- Legguards of the Haunted Forest
+										i(95842),	-- Legwraps of the Haunted Forest
+										i(95847),	-- Leggings of the Haunted Forest
+										i(95853),	-- Breeches of the Haunted Forest
 									}),
 								})),
 							}),
