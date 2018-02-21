@@ -4202,6 +4202,77 @@ local function CreateMiniListForGroup(group)
 			["expanded"] = true,
 			["groups"] = { mainItem }
 		};
+	elseif group.questID then
+		-- This is a quest object. Let's show prereqs and breadcrumbs.
+		local mainQuest = setmetatable({ ["collectable"] = true }, { __index = group });
+		local groups = { mainQuest };
+		
+		-- Show Quest Prereqs
+		if mainQuest.sourceQuestID then
+			local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuestID;
+			while sourceQuests and #sourceQuests > 0 do
+				subSourceQuests = {}; prereqs = {};
+				for i,sourceQuestID in ipairs(sourceQuests) do
+					sourceQuest = SearchForField("questID", sourceQuestID);
+					if sourceQuest and #sourceQuest > 0 then
+						-- Only care about the first search result.
+						sourceQuest = setmetatable({ ["collectable"] = true }, { __index = sourceQuest[1] });
+						if sourceQuest.sourceQuestID and #sourceQuest.sourceQuestID > 0 then
+							-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
+							for j, subSourceQuestID in ipairs(sourceQuest.sourceQuestID) do
+								subSourceQuests[subSourceQuestID] = true;
+							end
+						end
+					else
+						-- Create a Quest Object.
+						sourceQuest = app.CreateQuest(sourceQuestID);
+						sourceQuest.collectable = true;
+					end
+					tinsert(prereqs, sourceQuest);
+				end
+				
+				-- Convert the subSourceQuests table into an array
+				sourceQuests = {};
+				if #prereqs > 0 then
+					for sourceQuestID,i in pairs(subSourceQuests) do
+						tinsert(sourceQuests, tonumber(sourceQuestID));
+					end
+					
+					-- Insert the header for the source quest
+					if #prereqs > 1 then
+						tinsert(prereqs, {
+							["text"] = "Upon Completion",
+							["description"] = "The above quests need to be completed before being able to complete the quest(s) listed below.",
+							["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+							["visible"] = true,
+							["expanded"] = true,
+							["groups"] = groups
+						});
+					else
+						local prereq = prereqs[1];
+						if prereq.groups then
+							for i,group in ipairs(prereq.groups) do
+								tinsert(groups, 1, group);
+							end
+						end
+						prereq["groups"] = groups;
+					end
+					groups = prereqs;
+				end
+			end
+		else
+			
+		end
+		popout.data = {
+			["text"] = "Quest Chain Requirements",
+			["description"] = "The following quests need to be completed before being able to complete the final quest.",
+			["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+			["progress"] = 0,
+			["total"] = 0,
+			["visible"] = true,
+			["expanded"] = true,
+			["groups"] = groups
+		};
 	elseif group.groups then
 		-- This is already a container with accurate numbers.
 		popout.data = setmetatable({}, { __index = group });
@@ -5279,12 +5350,7 @@ local function RowOnClick(self, button)
 						return true;
 					end
 					if self.index > 0 then
-						-- Pop Out Functionality! :O
-						local popout = app:GetWindow(self.ref.parent.text .. self.ref.text);
-						popout.data = setmetatable({}, { __index = self.ref });
-						ExpandGroupsRecursively(popout.data, true);
-						--ExportData(popout.data);
-						popout:Toggle(true);
+						CreateMiniListForGroup(self.ref);
 					else
 						-- Configuration Functionality!
 						ShowInterfaceOptions();
@@ -5470,18 +5536,11 @@ local function RowOnEnter(self)
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuestID then
-			GameTooltip:AddLine("Prerequisite Quests");
-			local sourceQuests = {};
 			for i,sourceQuestID in ipairs(reference.sourceQuestID) do
-				local sourceQuest = SearchForField("questID", sourceQuestID);
-				if #sourceQuest > 0 then
-					-- Only care about the first search result.
-					sourceQuest = sourceQuest[1];
-				else
-					-- Create a Quest Object.
-					sourceQuest = app.CreateQuest(sourceQuestID);
+				if not IsQuestFlaggedCompleted(sourceQuestID) then
+					GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
+					break;
 				end
-				GameTooltip:AddDoubleLine("  " .. (sourceQuest.text or RETRIEVING_DATA), GetCompletionIcon(sourceQuest.saved));
 			end
 		end
 		
