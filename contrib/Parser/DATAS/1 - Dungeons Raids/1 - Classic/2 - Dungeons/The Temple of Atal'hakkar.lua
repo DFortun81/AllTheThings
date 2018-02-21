@@ -14,66 +14,6 @@ _.Instances =
 						qg(46077, q(27633)),	-- The Blood God Hakkar
 						qg(46071, q(27913)),	-- The Heart of the Temple
 					}),				
-					cr(8443, e(457, { 	-- Avatar of Hakkar
-						i(10844),	-- Spire of Hakkar
-						i(10838),	-- Might of Hakkar
-						i(10843),	-- Featherskin Cape
-						i(12462),	-- Embrace of the Wind Serpent
-						i(10845),	-- Warrior's Embrace
-						i(10842),	-- Windscale Sarong
-						i(10846),	-- Bloodshot Greaves
-					})),
-					cr(5710, e(458, { 	-- Jammal'an the Prophet
-						i(10803),	-- Blade of the Wretched
-						i(10805),	-- Eater of the Dead
-						i(10804),	-- Fist of the Damned
-						i(12465),	-- Nightfall Drape
-						i(10806),	-- Vestments of the Atal'ai Prophet
-						i(10808),	-- Gloves of the Atal'ai Prophet
-						i(10807),	-- Kilt of the Atal'ai Prophet
-					})),
-					e(459, { 			-- Wardens of the Dream
-						n(5721, {	-- Dreamscythe
-							i(12463), 	-- Drakefang Butcher
-							i(12243), 	-- Smoldering Claw
-							i(10797), 	-- Firebreather
-							i(10796),	-- Drakestone
-							i(12464),	-- Bloodfire Talons
-							i(12466),	-- Dawnspire Cord
-						}),
-						n(5722, { 	-- Hazzas
-							i(12463), 	-- Drakefang Butcher
-							i(12243), 	-- Smoldering Claw
-							i(10797), 	-- Firebreather
-							i(10796),	-- Drakestone
-							i(12464),	-- Bloodfire Talons
-							i(12466),	-- Dawnspire Cord
-						}),
-						n(5719, { 	-- Morphaz 
-							i(12463), 	-- Drakefang Butcher
-							i(12243), 	-- Smoldering Claw
-							i(10797), 	-- Firebreather
-							i(10796),	-- Drakestone
-							i(12464),	-- Bloodfire Talons
-							i(12466),	-- Dawnspire Cord
-						}),						
-						n(5720, { 	-- Weaver
-							i(12463), 	-- Drakefang Butcher
-							i(12243), 	-- Smoldering Claw
-							i(10797), 	-- Firebreather
-							i(10796),	-- Drakestone
-							i(12464),	-- Bloodfire Talons
-							i(12466),	-- Dawnspire Cord
-						}),												
-					}),
-					cr(5709, e(463, { 	-- Shade of Erankikus
-						i(10828), -- Dire Nail
-						i(10847), -- Dragon's Call
-						i(10837), -- Tooth of Eranikus
-						i(10836), -- Rod of Corrosion
-						i(10835), -- Crest of Supremacy
-						i(10833), -- Horns of Eranikus
-					})),
 					n(0, {				-- Zone Drop
 						n(5270, { 	-- Atal'ai Corpse Eater 
 							dr(0.01, i(10627)),	-- Bludgeon of the Grinning Dog
@@ -186,6 +126,66 @@ _.Instances =
 							dr(0.01, i(10623)),	-- Winter's Bite
 						}),
 					}),
+					cr(8443, e(457, { 	-- Avatar of Hakkar
+						i(10844),	-- Spire of Hakkar
+						i(10838),	-- Might of Hakkar
+						i(10843),	-- Featherskin Cape
+						i(12462),	-- Embrace of the Wind Serpent
+						i(10845),	-- Warrior's Embrace
+						i(10842),	-- Windscale Sarong
+						i(10846),	-- Bloodshot Greaves
+					})),
+					cr(5710, e(458, { 	-- Jammal'an the Prophet
+						i(10803),	-- Blade of the Wretched
+						i(10805),	-- Eater of the Dead
+						i(10804),	-- Fist of the Damned
+						i(12465),	-- Nightfall Drape
+						i(10806),	-- Vestments of the Atal'ai Prophet
+						i(10808),	-- Gloves of the Atal'ai Prophet
+						i(10807),	-- Kilt of the Atal'ai Prophet
+					})),
+					e(459, { 			-- Wardens of the Dream
+						n(5721, {	-- Dreamscythe
+							i(12463), 	-- Drakefang Butcher
+							i(12243), 	-- Smoldering Claw
+							i(10797), 	-- Firebreather
+							i(10796),	-- Drakestone
+							i(12464),	-- Bloodfire Talons
+							i(12466),	-- Dawnspire Cord
+						}),
+						n(5722, { 	-- Hazzas
+							i(12463), 	-- Drakefang Butcher
+							i(12243), 	-- Smoldering Claw
+							i(10797), 	-- Firebreather
+							i(10796),	-- Drakestone
+							i(12464),	-- Bloodfire Talons
+							i(12466),	-- Dawnspire Cord
+						}),
+						n(5719, { 	-- Morphaz 
+							i(12463), 	-- Drakefang Butcher
+							i(12243), 	-- Smoldering Claw
+							i(10797), 	-- Firebreather
+							i(10796),	-- Drakestone
+							i(12464),	-- Bloodfire Talons
+							i(12466),	-- Dawnspire Cord
+						}),						
+						n(5720, { 	-- Weaver
+							i(12463), 	-- Drakefang Butcher
+							i(12243), 	-- Smoldering Claw
+							i(10797), 	-- Firebreather
+							i(10796),	-- Drakestone
+							i(12464),	-- Bloodfire Talons
+							i(12466),	-- Dawnspire Cord
+						}),												
+					}),
+					cr(5709, e(463, { 	-- Shade of Erankikus
+						i(10828), -- Dire Nail
+						i(10847), -- Dragon's Call
+						i(10837), -- Tooth of Eranikus
+						i(10836), -- Rod of Corrosion
+						i(10835), -- Crest of Supremacy
+						i(10833), -- Horns of Eranikus
+					})),
 					nld({				-- Legacy
 						["groups"] = {
 							nlq({	-- Legacy Quests
