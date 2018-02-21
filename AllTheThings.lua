@@ -4286,9 +4286,11 @@ local function CreateMiniListForGroup(group)
 		popout.data = {
 			["text"] = "Standalone Item",
 			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
+			["groups"] = { setmetatable({ }, { __index = group }) },
 			["visible"] = true,
 			["expanded"] = true,
-			["groups"] = { setmetatable({ }, { __index = group }) }
+			["progress"] = 0,
+			["total"] = 0,
 		};
 	end
 	BuildGroups(popout.data, popout.data.groups);
