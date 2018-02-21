@@ -1258,8 +1258,8 @@ local function SearchForItemLink(link)
 						if GetDataMember("ShowVisualID") then tinsert(listing, L("VISUAL_ID") .. "/" .. tostring(sourceInfo.visualID)); end
 						if GetDataMember("ShowSourceID") then tinsert(listing, L("SOURCE_ID") .. "/" .. sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected)); end
 					end
-				elseif GetDataMember("ShowSources") then
-					if GetDataMember("ShowAllSources") then
+				else
+					if GetDataMember("ShowSources") and GetDataMember("ShowAllSources") then
 						group = SearchForItemID(itemID);
 					else
 						group = SearchForItemIDQuickly(itemID);
@@ -1838,7 +1838,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 		
 		-- If the user has Show Collection Progress turned on.
 		local count = group and #group or 0;
-		if count > 0 and self:NumLines() > 0 and GetDataMember("ShowCollected", true) then
+		if count > 0 and self:NumLines() > 0 and GetDataMember("ShowProgress") then
 			-- Determine if this group is composed of multiple sections
 			if count > 1 then
 				-- Build the group data (merge into one group)
@@ -1908,43 +1908,45 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 				if group.groups then
 					if group.total and group.total > 0 then
 						rightSide:SetText(GetProgressColorText(group.progress, group.total));
-						local first = true;
-						for i,j in ipairs(group.groups) do
-							if app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
-								if j.groups then
-									if not j.total or j.total < 1 then 
+						if GetDataMember("ShowContents") then
+							local first = true;
+							for i,j in ipairs(group.groups) do
+								if app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
+									if j.groups then
+										if not j.total or j.total < 1 then 
+											if j.collected then
+												if GetDataMember("ShowCollectedItems") then
+													if first then first = nil; self:AddLine("Contains:"); end
+													self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON"));
+												end
+											elseif j.collectable or (j.trackable and app.ShowIncompleteQuests(j)) then
+												if first then first = nil; self:AddLine("Contains:"); end
+												if j.dr then
+													self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON"));
+												else
+													self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("NOT_COLLECTED_ICON"));
+												end
+											end
+										else
+											local percent = j.progress / j.total;
+											if percent < 1 or GetDataMember("ShowCompletedGroups")  then 
+												if first then first = nil; self:AddLine("Contains:"); end
+												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), GetProgressColorText(j.progress, j.total));
+											end
+										end
+									else
 										if j.collected then
 											if GetDataMember("ShowCollectedItems") then
 												if first then first = nil; self:AddLine("Contains:"); end
 												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON"));
 											end
-										elseif j.collectable or (j.trackable and app.ShowIncompleteQuests(j)) then
+										else
 											if first then first = nil; self:AddLine("Contains:"); end
 											if j.dr then
 												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON"));
 											else
 												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("NOT_COLLECTED_ICON"));
 											end
-										end
-									else
-										local percent = j.progress / j.total;
-										if percent < 1 or GetDataMember("ShowCompletedGroups")  then 
-											if first then first = nil; self:AddLine("Contains:"); end
-											self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), GetProgressColorText(j.progress, j.total));
-										end
-									end
-								else
-									if j.collected then
-										if GetDataMember("ShowCollectedItems") then
-											if first then first = nil; self:AddLine("Contains:"); end
-											self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON"));
-										end
-									else
-										if first then first = nil; self:AddLine("Contains:"); end
-										if j.dr then
-											self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON"));
-										else
-											self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("NOT_COLLECTED_ICON"));
 										end
 									end
 								end
@@ -1978,7 +1980,7 @@ end
 local function AttachTooltip(self)
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
-		if (not InCombatLockdown() or GetDataMember("DisplayTooltipInformationInCombat")) and GetDataMember("EnableTooltipInformation") then
+		if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
 			--for i,j in pairs(self) do
 			--	self:AddDoubleLine(tostring(i), tostring(j));
 			--end
@@ -4496,9 +4498,10 @@ local function CreateSettingsMenu()
 			GameTooltip:Show();
 		end);
 		
+		
 		-- This creates the "Notify me when I Collect Things" Checkbox --
 		self.ShowNotifications = CreateFrame("CheckButton", name .. "-ShowNotifications", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowNotifications, self, "Notify me when I Collect Things", 300, -90, GetDataMember("ShowNotifications", true));
+		CreateCheckBox(self.ShowNotifications, self, "Notify me when I Collect Things", 300, -110, GetDataMember("ShowNotifications", true));
 		self.ShowNotifications:SetScript("OnClick", function(self)
 			SetDataMember("ShowNotifications", self:GetChecked());
 		end);
@@ -4508,8 +4511,9 @@ local function CreateSettingsMenu()
 			GameTooltip:Show();
 		end);
 		
+		-- This creates the "Play Fanfare when I Collect Things" Checkbox --
 		self.PlayFanfare = CreateFrame("CheckButton", name .. "-PlayFanfare", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.PlayFanfare, self, "Play Fanfare when I Collect Things", 300, -110, GetDataMember("PlayFanfare", true));
+		CreateCheckBox(self.PlayFanfare, self, "Play Fanfare when I Collect Things", 300, -130, GetDataMember("PlayFanfare", true));
 		self.PlayFanfare:SetScript("OnClick", function(self)
 			SetDataMember("PlayFanfare", self:GetChecked());
 		end);
@@ -4518,9 +4522,10 @@ local function CreateSettingsMenu()
 			GameTooltip:SetText ("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new collectable item.\n\nThis is feature can very addicting.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	
+		
+		-- This creates the "Play a Warning when I Remove Things" Checkbox --
 		self.PlayRemoveSound = CreateFrame("CheckButton", name .. "-PlayRemoveSound", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.PlayRemoveSound, self, "Play a Warning when I Remove Things", 300, -130, GetDataMember("PlayRemoveSound", true));
+		CreateCheckBox(self.PlayRemoveSound, self, "Play a Warning when I Remove Things", 300, -150, GetDataMember("PlayRemoveSound", true));
 		self.PlayRemoveSound:SetScript("OnClick", function(self)
 			SetDataMember("PlayRemoveSound", self:GetChecked());
 		end);
@@ -4533,10 +4538,10 @@ local function CreateSettingsMenu()
 		
 		
 		
-		CreateIDCheckBox(self, "ShowLootSpecializations", "Show Loot Specializations", 15, -490);
+		CreateIDCheckBox(self, "ShowLootSpecializations", "Show Loot Specializations", 300, -190);
 		
 		self.ShowLootSpecializationRequirements = CreateFrame("CheckButton", name .. "-ShowLootSpecializationRequirements", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowLootSpecializationRequirements, self, "Show Loot Specialization Icons", 300, -150, GetDataMember("ShowLootSpecializationRequirements"));
+		CreateCheckBox(self.ShowLootSpecializationRequirements, self, "Show Loot Specialization Icons", 300, -210, GetDataMember("ShowLootSpecializationRequirements"));
 		self.ShowLootSpecializationRequirements:SetScript("OnClick", function(self)
 			SetDataMember("ShowLootSpecializationRequirements", self:GetChecked());
 			app:UpdateWindows();
@@ -4549,7 +4554,7 @@ local function CreateSettingsMenu()
 			
 		
 		self.RequirePersonalLootFilter = CreateFrame("CheckButton", name .. "-RequirePersonalLootFilter", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -170, GetDataMember("RequirePersonalLootFilter"));
+		CreateCheckBox(self.RequirePersonalLootFilter, self, "Only Show Personal Loot (VERY SLOW)", 300, -230, GetDataMember("RequirePersonalLootFilter"));
 		self.RequirePersonalLootFilter:SetScript("OnClick", function(self)
 			SetDataMember("RequirePersonalLootFilter", self:GetChecked());
 			if self:GetChecked() then
@@ -4568,53 +4573,95 @@ local function CreateSettingsMenu()
 		
 		
 		-- Middle Left
+		-- This creates the "Enable Tooltip Information" Checkbox --
 		self.EnableTooltipInformation = CreateFrame("CheckButton", name .. "-EnableTooltipInformation", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.EnableTooltipInformation, self, "Enable Tooltip Information", 15, -190, GetDataMember("EnableTooltipInformation"));
+		CreateCheckBox(self.EnableTooltipInformation, self, "|CFFADD8E6Enable Tooltip Information|r", 15, -210, GetDataMember("EnableTooltipInformation"));
 		self.EnableTooltipInformation:SetScript("OnClick", function(self)
 			SetDataMember("EnableTooltipInformation", self:GetChecked());
 			wipe(searchCache);
 		end);
+		self.EnableTooltipInformation:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
 
-		self.DisplayTooltipInformationInCombat = CreateFrame("CheckButton", name .. "-DisplayTooltipInformationInCombat", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.DisplayTooltipInformationInCombat, self, "Display In Combat", 25, -210, GetDataMember("DisplayTooltipInformationInCombat"));
-		self.DisplayTooltipInformationInCombat:SetScript("OnClick", function(self)
-			SetDataMember("DisplayTooltipInformationInCombat", self:GetChecked());
+		-- This creates the "Display In Combat" Checkbox --
+		self.DisplayTooltipsInCombat = CreateFrame("CheckButton", name .. "-DisplayTooltipsInCombat", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.DisplayTooltipsInCombat, self, "Display In Combat", 25, -230, GetDataMember("DisplayTooltipsInCombat"));
+		self.DisplayTooltipsInCombat:SetScript("OnClick", function(self)
+			SetDataMember("DisplayTooltipsInCombat", self:GetChecked());
 			wipe(searchCache);
 		end);
-		
-		self.ShowCollected = CreateFrame("CheckButton", name .. "-ShowCollected", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCollected, self, "Show Collection Progress", 15, -230, GetDataMember("ShowCollected", true));
-		self.ShowCollected:SetScript("OnClick", function(self)
-			SetDataMember("ShowCollected", self:GetChecked());
-			wipe(searchCache);
+		self.DisplayTooltipsInCombat:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
 		end);
 		
+		-- This creates the "Show Collection Progress" Checkbox --
+		self.ShowProgress = CreateFrame("CheckButton", name .. "-ShowProgress", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.ShowProgress, self, "Show Collection Progress", 25, -250, GetDataMember("ShowProgress"));
+		self.ShowProgress:SetScript("OnClick", function(self)
+			SetDataMember("ShowProgress", self:GetChecked());
+			wipe(searchCache);
+		end);
+		self.ShowProgress:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see your progress towards completing or collecting an Item, Mount, Pet, Title, Music Roll, or Completing a Quest, Tier Token, etc at the Top Right of the tooltip.\n\nWe recommend that you keep this setting turned on.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
+		-- This creates the "Summarize Contents" Checkbox --
 		self.ShowContents = CreateFrame("CheckButton", name .. "-ShowContents", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowContents, self, "Show Container Details", 25, -250, GetDataMember("ShowContents", true));
+		CreateCheckBox(self.ShowContents, self, "Summarize Contents", 35, -270, GetDataMember("ShowContents"));
 		self.ShowContents:SetScript("OnClick", function(self)
 			SetDataMember("ShowContents", self:GetChecked());
 			wipe(searchCache);
 		end);
+		self.ShowContents:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to quickly determine if an item can be used to collect something else.\n\nFor example, you can use Tier Tokens to collect Tier Sets Pieces for your character. With this setting turned on, it will list all of those items in the tooltip of the Tier Token.\n\nWe recommend that you keep this setting turned on.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
 		
+		-- This creates the "Show Shared Appearances" Checkbox --
 		self.ShowSharedAppearances = CreateFrame("CheckButton", name .. "-ShowSharedAppearances", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowSharedAppearances, self, "Show Shared Appearances", 15, -270, GetDataMember("ShowSharedAppearances"));
+		CreateCheckBox(self.ShowSharedAppearances, self, "Show Shared Appearances", 25, -290, GetDataMember("ShowSharedAppearances"));
 		self.ShowSharedAppearances:SetScript("OnClick", function(self)
 			SetDataMember("ShowSharedAppearances", self:GetChecked());
 			wipe(searchCache);
 		end);
+		self.ShowSharedAppearances:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
 		
+		-- This creates the "Show Database Locations" Checkbox --
 		self.ShowSources = CreateFrame("CheckButton", name .. "-ShowSources", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowSources, self, "Show " .. app.DisplayName .. " Sources", 15, -290, GetDataMember("ShowSources"));
+		CreateCheckBox(self.ShowSources, self, "Show Database Locations", 25, -310, GetDataMember("ShowSources"));
 		self.ShowSources:SetScript("OnClick", function(self)
 			SetDataMember("ShowSources", self:GetChecked());
 			wipe(searchCache);
-		end);	
-
+		end);
+		self.ShowSources:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option to see where you can obtain any item in the game through ATT.\n\nIf you encounter a collectible item other than a ring, trinket, or necklace that does not have at least 1 entry in ATT, you should immediately report it to our Discord.\n\nWe recommend that you keep this setting turned on.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
+		-- This creates the "Show More Locations" Checkbox --
 		self.ShowAllSources = CreateFrame("CheckButton", name .. "-ShowAllSources", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowAllSources, self, "Show All Sources", 25, -310, GetDataMember("ShowAllSources"));
+		CreateCheckBox(self.ShowAllSources, self, "Show More Locations", 35, -330, GetDataMember("ShowAllSources"));
 		self.ShowAllSources:SetScript("OnClick", function(self)
 			SetDataMember("ShowAllSources", self:GetChecked());
 			wipe(searchCache);
+		end);
+		self.ShowAllSources:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see more than one database location summary in the tooltip.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
 		end);
 		
 		
@@ -5059,51 +5106,8 @@ local function CreateSettingsMenu()
 		self.text:SetWidth(550);
 	end
 	CreateFaqFrame(faqFrame);
-
-
-
-
-
-
-	-- This creates the filter window in the options --
---[[ Moving these to the main settings page for now.
-	local tooltipFrame = CreateFrame("FRAME", name .. "-Tooltip", mainFrame);
-	tooltipFrame.parent = mainFrame.name;
-	CreateSettingFrame(tooltipFrame, "Tooltip Settings");
-	local function CreateTooltipFrame(self)
-		self.ShowSharedAppearances = CreateFrame("CheckButton", name .. "-ShowSharedAppearances", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowSharedAppearances, self, "Show Shared Appearances", 15, -40, GetDataMember("ShowSharedAppearances"));
-		self.ShowSharedAppearances:SetScript("OnClick", function(self)
-			SetDataMember("ShowSharedAppearances", self:GetChecked());
-			wipe(searchCache);
-		end);
-		
-		self.ShowSources = CreateFrame("CheckButton", name .. "-ShowSources", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowSources, self, "Show " .. app.DisplayName .. " Sources", 15, -60, GetDataMember("ShowSources"));
-		self.ShowSources:SetScript("OnClick", function(self)
-			SetDataMember("ShowSources", self:GetChecked());
-			wipe(searchCache);
-		end);	
-
-		self.ShowAllSources = CreateFrame("CheckButton", name .. "-ShowAllSources", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowAllSources, self, "Show All Sources", 25, -80, GetDataMember("ShowAllSources"));
-		self.ShowAllSources:SetScript("OnClick", function(self)
-			SetDataMember("ShowAllSources", self:GetChecked());
-			wipe(searchCache);
-		end);
-		
-		self.ShowCollected = CreateFrame("CheckButton", name .. "-ShowCollected", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCollected, self, "Show Collected", 25, -100, GetDataMember("ShowCollected", true));
-		self.ShowCollected:SetScript("OnClick", function(self)
-			SetDataMember("ShowCollected", self:GetChecked());
-			wipe(searchCache);
-		end);
-		
-	end
-	CreateTooltipFrame(tooltipFrame);
---]]	
 	
-		
+	
 	-- about frame --
 	local aboutFrame = CreateFrame("FRAME", name .. "-About", mainFrame);
 	aboutFrame.parent = mainFrame.name;	
@@ -5119,8 +5123,6 @@ local function CreateSettingsMenu()
 		self.test:SetWidth(550);
 	end
 	createAboutFrame(aboutFrame);
-
-	
 end
 
 -- Row Helper Functions
@@ -5428,7 +5430,7 @@ local function RowOnEnter(self)
 		end
 		
 		-- Miscellaneous fields
-		if GetDataMember("ShowCollected", true) then
+		if GetDataMember("ShowProgress") then
 			local style = GameTooltip:NumLines() < 1;
 			if style then
 				if not reference.total or reference.total < 1 then
@@ -6386,15 +6388,15 @@ app.events.VARIABLES_LOADED = function()
 		app.ShowIncompleteQuests = app.Filter;
 	end
 	
-	GetDataMember("EnableTooltipInformation", true);
-	GetDataMember("DisplayTooltipInformationInCombat", false);
+	-- Tooltip Settings
 	GetDataMember("ShowLootSpecializationRequirements", true);
 	GetDataMember("TreatIncompleteQuestsAsCollectible", false);
+	GetDataMember("EnableTooltipInformation", true);
+	GetDataMember("DisplayTooltipsInCombat", true);
 	GetDataMember("ShowSharedAppearances", true);
 	GetDataMember("ShowSources", true);
 	GetDataMember("ShowContents", true);
-	
-	-- Tooltip Settings
+	GetDataMember("ShowProgress", true);
 	GetDataMember("ShowDescriptions", true);
 	GetDataMember("ShowModels", true);
 	
