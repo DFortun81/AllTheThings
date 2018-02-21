@@ -128,6 +128,24 @@ _.Zones =
 					}),
 				}),			
 				n(-3, { 	-- Holidays					
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, {     -- Quests
+								q(8643, {    -- Highpeak the Elder            
+									["groups"] = {            
+										-- i(21100),    -- Coin of Ancestry    
+										-- i(21746, {    -- Lucky Red Envelope    
+											--i(21745),    -- Elder's Moonstone
+											--i(21744),    -- Lucky Rocket Cluster
+										--}),        
+									},            
+									["description"] = "Location: 40, 48",            
+									["qg"] = 15559,    -- Elder Highpeak        
+								}),                            
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+					}),
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -149,12 +167,29 @@ _.Zones =
 					p(417), 	-- Rat
 				}),
 				n(-17, { 	-- Quests
---[[
-					qg(, qa(26486)),	-- 99 Bottles of Booze on the Beach
-					qg(, qa(26547)),	-- A Mangy Threat
-					qg(, qa(26523)),	-- All That Skitters
-					qg(, qh(26310)),	-- All That Skitters
+					
+					
+					
+					
+					
+					
+					
+					
+					
+--[[					
+					["groups"] = {
+					},
+					["qg"] = ,	-- 
+					["sourceQuestID"] = {  }	-- 
 --]]
+					
+					
+					
+					
+					qa(26486),	-- 99 Bottles of Booze on the Beach
+					qa(26547),	-- A Mangy Threat
+					qa(26523),	-- All That Skitters
+					qh(26310),	-- All That Skitters
 					qg(43200, qa(26641, { -- Can't Make An Omelette Without...
 						i( 59260),
 						i( 59262),
@@ -171,12 +206,10 @@ _.Zones =
 						i(131519),
 						i(131520),
 					})),
---[[
 					qh(28971),	-- Candy Bucket
 					qh(12387),	-- Candy Bucket
 					qa(12351),	-- Candy Bucket
 					qa(28970),	-- Candy Bucket
---]]
 					qg(43156, qa(26524, { -- Dark Vessels
 						i( 59252),
 						--i(59253), -- Not transmoggable
@@ -193,11 +226,10 @@ _.Zones =
 						--i(131510), -- Not transmoggable
 						i(131511),
 					})),
---[[
-					qg(, qh(26384)),	-- Darkcleric Marnal
-					qg(, q( 31910)),	-- David Kosse
-					qg(, qh(26307)),	-- Death to the Vilebranch
-					qg(, qa(26498)),	-- Death to the Vilebranch
+					qh(26384),	-- Darkcleric Marnal
+					q( 31910),	-- David Kosse
+					qh(26307),	-- Death to the Vilebranch
+					qa(26498),	-- Death to the Vilebranch
 					qh(11749),	-- Desecrate this Fire!
 					qa(11732),	-- Desecrate this Fire!
 					qa(11766),	-- Desecrate this Fire!
@@ -207,8 +239,7 @@ _.Zones =
 					qh(11581),	-- Desecrate this Fire!
 					qh(11745),	-- Desecrate this Fire!
 					qa(11755),	-- Desecrate this Fire!
-					qg(, qa(26496)),	-- Down with the Vilebranch
---]]
+					qa(26496),	-- Down with the Vilebranch
 					qg(43156, qa(26521, { -- Faces of Evil
 						i(59249),
 						i(59251),
@@ -217,7 +248,7 @@ _.Zones =
 						i(59288),
 						i(59290),
 					})),
---					qg(, q(   485)),	-- Find OOX-09/HL!
+					 q(   485),	-- Find OOX-09/HL!
 					qg(14740, qh(26210, { -- Gammerita, Mon!
 						i( 59274),
 						i( 59275),
@@ -231,15 +262,13 @@ _.Zones =
 						i( 59245),
 						i(131536),
 					})),
---[[
-					qg(, q( 26527)),	-- Gryphon Master Talonaxe
-					qg(, qa(26518)),	-- Heads Up
-					qg(, qh(26366)),	-- Heads Up
-					qg(, qa(26542)),	-- Hero's Call: The Hinterlands!
-					qg(, q(  8643)),	-- Highpeak the Elder
-					qg(, qh(11860)),	-- Honor the Flame
-					qg(, qa(11826)),	-- Honor the Flame
---]]
+					q( 26527),	-- Gryphon Master Talonaxe
+					qa(26518),	-- Heads Up
+					qh(26366),	-- Heads Up
+					qa(26542),	-- Hero's Call: The Hinterlands!
+					q(  8643),	-- Highpeak the Elder
+					qh(11860),	-- Honor the Flame
+					qa(11826),	-- Honor the Flame
 					qg(43156, qa(26526, { -- Hunt the Keeper
 						i( 59256),
 						i( 59257),
@@ -256,11 +285,9 @@ _.Zones =
 						i(131518),
 						i(156945),	-- Talon Hatchet 
 					})),
---[[
-					qg(, qh(26224)),	-- Hunt the Savages
-					qg(, qa(27625)),	-- In Defense of Quel'Danil
-					qg(, qa(11964)),	-- Incense for the Summer Scorchlings
---]]
+					qh(26224),	-- Hunt the Savages
+					qa(27625),	-- In Defense of Quel'Danil
+					qa(11964),	-- Incense for the Summer Scorchlings
 					qg(43157, qa(26516, { -- It's Ours Now
 						i( 59246),
 						i( 59247),
@@ -271,13 +298,11 @@ _.Zones =
 						i( 59292),
 						i(131509),
 					})),
---[[
-					qg(, qh(26212)),	-- Lard Lost His Lunch
-					qg(, qh(26367)),	-- Ongo'longo's Revenge
-					qg(, qa(26515)),	-- Ongo'longo's Revenge
-					qg(, qa(26548)),	-- Out to the Front
-					qg(, qa(11882)),	-- Playing with Fire
---]]
+					qh(26212),	-- Lard Lost His Lunch
+					qh(26367),	-- Ongo'longo's Revenge
+					qa(26515),	-- Ongo'longo's Revenge
+					qa(26548),	-- Out to the Front
+					qa(11882),	-- Playing with Fire
 					qg(43109, qa(26490, { -- Prime Slime
 						i( 59239),
 						i( 59240),
@@ -292,20 +317,16 @@ _.Zones =
 						i(131501),
 						i(156946), -- Goopy Mallet
 					})),
---[[
-					qg(, qh(26225)),	-- Pupellyverbos Port
-					qg(, qa(27725)),	-- Quel'Danil Lodge
---]]
+					qh(26225),	-- Pupellyverbos Port
+					qa(27725),	-- Quel'Danil Lodge
 					qg( 5636, qa(26546, { -- Razonbeak Friends
 						i( 59236),
 						i( 59237),
 						i( 59238),
 						i(131553),
 					})),
---[[
-					qg(, q(   836)),	-- Rescue OOX-09/HL!
-					qg(, qh(26430)),	-- Revantusk Village
---]]
+					q(   836),	-- Rescue OOX-09/HL!
+					qh(26430),	-- Revantusk Village
 					qg(43298, qa(26532, { -- Shadra the Venom Queen
 						i( 59269),
 						i( 59270),
@@ -328,32 +349,29 @@ _.Zones =
 					qg(14740, qh(26211, {	-- Snapjaws, Mon!
 						un(15, i(19022)),	-- Nat Pagle's Extreme Angler FC-5000
 					})),
---[[
-					qg(, qh(26267)),	-- Skulk Rock Clean-Up
-					qg(, qa(26491)),	-- Skulk Rock Clean-Up
-					qg(, qa(26492)),	-- Skulk Rock Supplies
-					qg(, qh(26268)),	-- Skulk Rock Supplies
-					
-					qg(, qh(26223)),	-- Stalking the Stalkers
-					qg(, qh(26306)),	-- Start Taking Back
-					qg(, qa(26643)),	-- Starvation Diet
-					qg(, qh(26387)),	-- Starvation Diet
-					qg(, qh(26240)),	-- Stomp To My Beat
-					qg(, qa(26517)),	-- Summit of Fate
-					qg(, qh(26363)),	-- Summit of Fate
-					qg(, qh(26558)),	-- Summoning Shadra
-					qg(, qa(26531)),	-- Summoning Shadra
-					qg(, qa(28505)),	-- The Battle for Andorhal
-					qg(, qh(28508)),	-- The Battle for Andorhal
-					qg(, qh(26381)),	-- The Eye of Shadra
-					qg(, qa(26528)),	-- The Eye of Shadra
-					qg(, qh(26432)),	-- The Fall of Jintha'Alor
-					qg(, qa(26529)),	-- The Fang of Shadra
-					qg(, qh(26406)),	-- The Fang of Shadra
-					qg(, q( 26282)),	-- The Favor of Akil'darah
-					qg(, qa(27626)),	-- The Highvale Documents
-					qg(, qh(26238)),	-- The Savage Dwarves
---]]
+					qh(26267),	-- Skulk Rock Clean-Up
+					qa(26491),	-- Skulk Rock Clean-Up
+					qa(26492),	-- Skulk Rock Supplies
+					qh(26268),	-- Skulk Rock Supplies
+					qh(26223),	-- Stalking the Stalkers
+					qh(26306),	-- Start Taking Back
+					qa(26643),	-- Starvation Diet
+					qh(26387),	-- Starvation Diet
+					qh(26240),	-- Stomp To My Beat
+					qa(26517),	-- Summit of Fate
+					qh(26363),	-- Summit of Fate
+					qh(26558),	-- Summoning Shadra
+					qa(26531),	-- Summoning Shadra
+					qa(28505),	-- The Battle for Andorhal
+					qh(28508),	-- The Battle for Andorhal
+					qh(26381),	-- The Eye of Shadra
+					qa(26528),	-- The Eye of Shadra
+					qh(26432),	-- The Fall of Jintha'Alor
+					qa(26529),	-- The Fang of Shadra
+					qh(26406),	-- The Fang of Shadra
+					q( 26282),	-- The Favor of Akil'darah
+					qa(27626),	-- The Highvale Documents
+					qh(26238),	-- The Savage Dwarves
 					qg(43200, qa(26530, { -- The Shell of Shadra
 						i( 59265),
 						i( 59266),
@@ -370,7 +388,7 @@ _.Zones =
 						i(131524),
 						i(131525),
 					})),
---					qg(, qa(26462)),	-- The Wicked Revantusk
+					qa(26462),	-- The Wicked Revantusk
 					qg(42613, qh(26263, { -- Thornar Thunderclash
 						i( 59280),
 						i( 59281),
@@ -378,14 +396,12 @@ _.Zones =
 						i( 59283),
 						i(131498),
 					})),
---[[
-					qg(, qh(26368)),	-- Venomous Secrets
-					qg(, qa(26525)),	-- Venomous Secrets
-					qg(, qa(26497)),	-- Vilebranch Scum
-					qg(, qh(28574)),	-- Warchief's Command: The Hinterlands!					
---]]					
+					qh(26368),	-- Venomous Secrets
+					qa(26525),	-- Venomous Secrets
+					qa(26497),	-- Vilebranch Scum
+					qh(28574),	-- Warchief's Command: The Hinterlands!					
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(8215, { 	-- Grimungous
 						dr(04.0, i(  7412)),	-- Infiltrator Gloves
 						dr(04.0, i(  6609)),	-- Sage's Cloth
@@ -795,7 +811,7 @@ _.Zones =
 						dr(01.0, i(  7369)),	-- Elder's Robe					
 					}), 
 				}),
-				n(-2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					a(n(12040, {	-- Brannik Ironbelly <Armorsmith>
 						i(12258),	-- Serpent Clasp Belt
 						i(12257),	-- Heavy Notched Belt
