@@ -4621,24 +4621,7 @@ local function CreateSettingsMenu()
 		
 		
 		
-		self.IgnoreFiltersOnNonBindingItems = CreateFrame("CheckButton", name .. "-IgnoreFiltersOnNonBindingItems", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.IgnoreFiltersOnNonBindingItems, self, "Ignore All Filters for BoE / BoA Items", 300, -520, GetDataMember("IgnoreFiltersOnNonBindingItems"));
-		self.IgnoreFiltersOnNonBindingItems:SetChecked(GetDataMember("IgnoreFiltersOnNonBindingItems"));
-		self.IgnoreFiltersOnNonBindingItems:SetScript("OnClick", function(self)
-			SetDataMember("IgnoreFiltersOnNonBindingItems", self:GetChecked());
-			if self:GetChecked() then
-				app.ItemBindFilter = app.FilterItemBind;
-			else
-				app.ItemBindFilter = app.Filter;
-			end
-			app:RefreshData(false, true);
-		end);
-		self.IgnoreFiltersOnNonBindingItems:SetScript("OnEnter", function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("This ignores all filters for any items that are Bind on Equip or Bind on Account. Turn off if you only want to see BOE or BOA items for your filter settings.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-
+		
 
 
 
@@ -4888,7 +4871,27 @@ local function CreateSettingsMenu()
 			end
 			app:RefreshData();
 		end);
-	
+		
+		self.IgnoreFiltersOnNonBindingItems = CreateFrame("CheckButton", name .. "-IgnoreFiltersOnNonBindingItems", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.IgnoreFiltersOnNonBindingItems, self, "Ignore All Filters for BoE / BoA Items", 300, -110, GetDataMember("IgnoreFiltersOnNonBindingItems"));
+		self.IgnoreFiltersOnNonBindingItems:SetChecked(GetDataMember("IgnoreFiltersOnNonBindingItems"));
+		self.IgnoreFiltersOnNonBindingItems:SetScript("OnClick", function(self)
+			SetDataMember("IgnoreFiltersOnNonBindingItems", self:GetChecked());
+			if self:GetChecked() then
+				app.ItemBindFilter = app.FilterItemBind;
+			else
+				app.ItemBindFilter = app.Filter;
+			end
+			app:RefreshData(false, true);
+		end);
+		self.IgnoreFiltersOnNonBindingItems:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("This ignores all filters for any items that are Bind on Equip or Bind on Account. Turn off if you only want to see BOE or BOA items for your filter settings.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+
+		
+		
 		local itemFilters = GetPersonalDataMember("ItemFilters");
 		-- "Armor Types" and "Non-Equipment Types"
 		local itemFilterNames = L("FILTER_ID_TYPES");
