@@ -941,6 +941,20 @@ _.Zones =
 					}),
 				}),
 				h(n(-17, { 	-- Quests
+					qa(27400, {	-- Mastering the Arcane
+						["groups"] = {
+							i(65468),	-- Staff of the Arcane Path
+						},
+						["qg"] = 47246,	-- Ureda
+						["classes"] = { 8 },	-- Mage
+					}),
+					qa(28458, {	-- The Pyromancer's Grimoire
+						["groups"] = {
+							i(65620),	-- Hood of the Arcane Path
+						},
+						["qg"] = 47246,	-- Ureda
+						["classes"] = { 8 },	-- Mage
+					}),
 --[[				
 					qdg(qg(3353, qh( 28457, {	-- A Dangerous Alliance
 						["groups"] = {
