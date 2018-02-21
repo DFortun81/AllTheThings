@@ -4342,9 +4342,21 @@ local function CreateSettingsMenu()
 	local mainFrame = CreateFrame("FRAME", name .. "-Settings", UIParent);
 	CreateSettingFrame(mainFrame, L("TITLE_OPTIONS"));
 	local function createMainFrame(self)
+		-- This creates the Debug Mode Checkbox --
+		self.IgnoreAllFilters = CreateFrame("CheckButton", name .. "-IgnoreAllFilters", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.IgnoreAllFilters, self, "|Cff15abffDebug Mode|r (Ignore All Filters)", 15, -50, GetDataMember("IgnoreAllFilters"));
+		self.IgnoreAllFilters:SetScript("OnClick", function(self)
+			SetDebugMode(self:GetChecked());
+		end);
+		self.IgnoreAllFilters:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you want to see every item in the ATT database. This will disable all of the item filters for armor and weapons in addition to toys, mounts, pets, music rolls, and titles.\n\nThis is provided mostly for debugging purposes, but many users utilize this filter to measure overall account completion.\n\nDebug Mode is for users that want all of the appearances in the game.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
 		-- This creates the Completionist Mode Checkbox --
 		self.CompletionistMode = CreateFrame("CheckButton", name .. "-CompletionistMode", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.CompletionistMode, self, "|CFFADD8E6Completionist Mode|r", 15, -50, GetDataMember("CompletionistMode")); 
+		CreateCheckBox(self.CompletionistMode, self, "|CFFADD8E6Completionist Mode|r", 15, -70, GetDataMember("CompletionistMode")); 
 		self.CompletionistMode:SetScript("OnClick", function(self)
 			SetCompletionistMode(self:GetChecked(), true);
 			if self:GetChecked() then
@@ -4355,7 +4367,7 @@ local function CreateSettingsMenu()
 		end);
 		self.CompletionistMode:SetScript("OnEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Turn this setting off if you want ATT to *pretend* that you've earned shared appearances for items that qualify for the same unlock requirements.\n\nItems 'Collected' through this mode will be marked with an asterisk (*). This means that you haven't collected that specific source of the appearance yet.\n\nCompletionist Mode is Hardcore.\nDebug Completionist Mode is for the truly Insane.", nil, nil, nil, nil, true);
+			GameTooltip:SetText ("Turn this setting off if you want ATT to *pretend* that you've earned shared appearances for items that qualify for the same unlock requirements.\n\nItems 'Collected' through this mode will be marked with an asterisk (*). This means that you haven't collected that specific source of the appearance yet.\n\nCompletionist Mode is Hardcore.\nDebug Completionist Mode is for the Truly Insane.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 			if self:GetChecked() then
 				mainFrame.MainOnly:Hide();
@@ -4366,7 +4378,7 @@ local function CreateSettingsMenu()
 
 		-- This creates the "I only care about my main" Checkbox --
 		self.MainOnly = CreateFrame("CheckButton", name .. "-MainOnly", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.MainOnly, self, L("I_ONLY_CARE_ABOUT_MY_MAIN"), 25, -70, GetDataMember("MainOnly")); 
+		CreateCheckBox(self.MainOnly, self, L("I_ONLY_CARE_ABOUT_MY_MAIN"), 25, -90, GetDataMember("MainOnly")); 
 		self.MainOnly:SetScript("OnClick", function(self)
 			SetDataMember("MainOnly", self:GetChecked());
 			SetCompletionistMode(GetDataMember("CompletionistMode"));
@@ -4384,7 +4396,7 @@ local function CreateSettingsMenu()
 		
 		-- This creates the "Show Completed Groups" Checkbox --
 		self.ShowCompletedGroups = CreateFrame("CheckButton", name .. "-ShowCompletedGroups", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCompletedGroups, self, "Show Completed Groups", 15, -90, GetDataMember("ShowCompletedGroups"));
+		CreateCheckBox(self.ShowCompletedGroups, self, "Show Completed Groups", 15, -110, GetDataMember("ShowCompletedGroups"));
 		self.ShowCompletedGroups:SetScript("OnClick", function(self)
 			SetDataMember("ShowCompletedGroups", self:GetChecked());
 			if self:GetChecked() then
@@ -4402,7 +4414,7 @@ local function CreateSettingsMenu()
 
 		-- This creates the "Show Collected Things" Checkbox -- 
 		self.ShowCollectedItems = CreateFrame("CheckButton", name .. "-ShowCollectedItems", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCollectedItems, self, "Show Collected Things", 15, -110, GetDataMember("ShowCollectedItems"));
+		CreateCheckBox(self.ShowCollectedItems, self, "Show Collected Things", 15, -130, GetDataMember("ShowCollectedItems"));
 		self.ShowCollectedItems:SetScript("OnClick", function(self)
 			SetDataMember("ShowCollectedItems", self:GetChecked());
 			if self:GetChecked() then
@@ -4420,7 +4432,7 @@ local function CreateSettingsMenu()
 		
 		-- This creates the "Show Incomplete Quests" Checkbox --
 		self.ShowIncompleteQuests = CreateFrame("CheckButton", name .. "-ShowIncompleteQuests", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowIncompleteQuests, self, "Show Incomplete Quests", 15, -130, GetDataMember("ShowIncompleteQuests"));
+		CreateCheckBox(self.ShowIncompleteQuests, self, "Show Incomplete Quests", 15, -150, GetDataMember("ShowIncompleteQuests"));
 		self.ShowIncompleteQuests:SetScript("OnClick", function(self)
 			SetDataMember("ShowIncompleteQuests", self:GetChecked());
 			if self:GetChecked() then
@@ -4438,7 +4450,7 @@ local function CreateSettingsMenu()
 		
 		-- This creates the "Treat Incomplete Quests as Collectible" Checkbox --
 		self.TreatIncompleteQuestsAsCollectible = CreateFrame("CheckButton", name .. "-TreatIncompleteQuestsAsCollectible", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.TreatIncompleteQuestsAsCollectible, self, "Treat as Collectible", 25, -150, GetDataMember("TreatIncompleteQuestsAsCollectible"));
+		CreateCheckBox(self.TreatIncompleteQuestsAsCollectible, self, "Treat as Collectible", 25, -170, GetDataMember("TreatIncompleteQuestsAsCollectible"));
 		self.TreatIncompleteQuestsAsCollectible:SetScript("OnClick", function(self)
 			SetDataMember("TreatIncompleteQuestsAsCollectible", self:GetChecked());
 			app:RefreshData();
@@ -4448,6 +4460,7 @@ local function CreateSettingsMenu()
 			GameTooltip:SetText ("Enable this option if you want to track non-Daily Quests as Collectible Things.\n\nThis means that quests will naturally appear in the listing and will add to the total once you complete them on your character.\n\nNOTE: Quests are not usually Account-Wide, so if you are trying to collect ALL THE THINGS on ALL OF YOUR CHARACTERS, you might want to disable this option.\n\nIt can be very useful when questing through a zone, though.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
+		
 		
 		-- This creates the "Show Minimap Button" Checkbox --
 		self.ShowMinimapButton = CreateFrame("CheckButton", name .. "-ShowMinimapButton", self, "InterfaceOptionsCheckButtonTemplate");
@@ -4606,12 +4619,7 @@ local function CreateSettingsMenu()
 		
 		
 		
-		self.IgnoreAllFilters = CreateFrame("CheckButton", name .. "-IgnoreAllFilters", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.IgnoreAllFilters, self, "Ignore All Filters (Debug Mode)", 15, -520, GetDataMember("IgnoreAllFilters"));
-		self.IgnoreAllFilters:SetScript("OnClick", function(self)
-			SetDebugMode(self:GetChecked());
-		end);
-		lastFilter = self.IgnoreAllFilters;
+		
 		
 		self.IgnoreFiltersOnNonBindingItems = CreateFrame("CheckButton", name .. "-IgnoreFiltersOnNonBindingItems", self, "InterfaceOptionsCheckButtonTemplate");
 		CreateCheckBox(self.IgnoreFiltersOnNonBindingItems, self, "Ignore All Filters for BoE / BoA Items", 300, -520, GetDataMember("IgnoreFiltersOnNonBindingItems"));
