@@ -558,7 +558,15 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(29071)),	-- Make Haste to Stormwind!
 					qg(, qa(27268)),	-- Make Haste to the Cathedral
 					qg(, qa(38206)),	-- Making the Rounds
-					qg(, qa(27354)),	-- Mastering the Arcane
+					--]]
+					qa(27354, {	-- Mastering the Arcane
+						["groups"] = {
+							i(65467),	-- Staff of the Royal Wizard
+						},
+						["qg"] = 331,	-- Maginor Dumas
+						["classes"] = { 8 },	-- Mage
+					}),
+					--[[
 					qg(, qa(28258)),	-- Meet with Ander Germaine
 					qg(, qa(28259)),	-- Meet with Demisette Cloyce
 					qg(, qa(28287)),	-- Meet with Farseer Umbrua
@@ -681,7 +689,15 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(29548)),	-- The Mission
 					qg(, qa(47253)),	-- The Originals
 					qg(, qa(  543)),	-- The Perenolde Tiara
-					qg(, qa(28398)),	-- The Pyromancer's Grimoire
+					--]]
+					qa(28398, {	-- The Pyromancer's Grimoire
+						["groups"] = {
+							i(65620),	-- Hood of the Royal Wizard
+						},
+						["qg"] = 331,	-- Maginor Dumas
+						["classes"] = { 8 },	-- Mage
+					}),
+					--[[
 					qg(, qa(31975)),	-- The Returning Champion
 					qg(, qa(31976)),	-- The Returning Champion
 					qg(, qh(40786)),	-- The Smoldering Ember
