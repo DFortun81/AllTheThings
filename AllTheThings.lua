@@ -294,7 +294,7 @@ local function ConvertColorRgbToHsv(r, g, b)
   return {h=h,s=s,v=v}
 end
 local red, green = ConvertColorRgbToHsv(1,0,0), ConvertColorRgbToHsv(0,1,0);
-local progress_colors = setmetatable({[1] = "FF00FFFF"}, {
+local progress_colors = setmetatable({[1] = "ff15abff"}, {
 	__index = function(t, p)
 		local h;
 		p = tonumber(p);
@@ -4280,7 +4280,7 @@ local function CreateMiniListForGroup(group)
 		};
 	elseif group.groups then
 		-- This is already a container with accurate numbers.
-		popout.data = setmetatable({}, { __index = group });
+		popout.data = setmetatable({ ["progress"] = 0, ["total"] = 0 }, { __index = group });
 	else
 		-- This is a standalone item
 		popout.data = {
@@ -4288,7 +4288,7 @@ local function CreateMiniListForGroup(group)
 			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
 			["visible"] = true,
 			["expanded"] = true,
-			["groups"] = { setmetatable({}, { __index = group }) }
+			["groups"] = { setmetatable({ }, { __index = group }) }
 		};
 	end
 	BuildGroups(popout.data, popout.data.groups);
