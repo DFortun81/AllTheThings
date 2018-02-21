@@ -277,9 +277,9 @@ _.WorldEvents =
 								un(17, i(143827)),	-- Dragon Head Costume
 								un(17, i(143828)),	-- Dragon Body Costume
 								un(17, i(143829)),	-- Dragon Tail Costume
-								un(17, i( 89999)),	-- Everlasting Alliance Firework
-								un(17, i( 90000)),	-- Everlasting Horde Firework
-								un(17, i( 44916, {	-- Pattern: Festival Dress
+								un(17, i(89999)),	-- Everlasting Alliance Firework
+								un(17, i(90000)),	-- Everlasting Horde Firework
+								un(17, i(44916, {	-- Pattern: Festival Dress
 									un(17, i(151771)), -- Festival Dress
 								})),
 								un(17, i(44917, {	-- Pattern: Festival Suit
@@ -289,18 +289,18 @@ _.WorldEvents =
 						}),
 						n(15864, { -- Valadar Starsong <Coin of Ancestry Collector>
 							un(17, i(21100, {-- Coin of Ancestry
-								un(17, i( 74611)),	-- Festival Lantern
-								un(17, i( 74610)),	-- Lunar Lantern
+								un(17, i(74611)),	-- Festival Lantern
+								un(17, i(74610)),	-- Lunar Lantern
 								un(17, i(151355)), 	-- Crown of Courage
 								un(17, i(151353)), 	-- Crown of Dark Blossoms
 								un(17, i(151352)), 	-- Crown of Good Fortune								
 								un(17, i(151354)), 	-- Crown of Prosperity								
-								un(17, i( 21541)),	-- Festive Black Pant Suit
-								un(17, i( 21544)),	-- Festive Blue Pant Suit
-								un(17, i( 21157)),	-- Festive Green Dress
-								un(17, i( 21538)),	-- Festive Pink Dress
-								un(17, i( 21539)),	-- Festive Purple Dress
-								un(17, i( 21543)),	-- Festive Teal Pant Suit
+								un(17, i(21541)),	-- Festive Black Pant Suit
+								un(17, i(21544)),	-- Festive Blue Pant Suit
+								un(17, i(21157)),	-- Festive Green Dress
+								un(17, i(21538)),	-- Festive Pink Dress
+								un(17, i(21539)),	-- Festive Purple Dress
+								un(17, i(21543)),	-- Festive Teal Pant Suit
 							})),
 						}),
 					}),
