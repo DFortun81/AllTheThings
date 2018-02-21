@@ -4216,19 +4216,26 @@ local function CreateMiniListForGroup(group)
 					sourceQuest = SearchForField("questID", sourceQuestID);
 					if sourceQuest and #sourceQuest > 0 then
 						-- Only care about the first search result.
-						sourceQuest = setmetatable({ ["collectable"] = true }, { __index = sourceQuest[1] });
-						if sourceQuest.sourceQuestID and #sourceQuest.sourceQuestID > 0 then
-							-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
-							for j, subSourceQuestID in ipairs(sourceQuest.sourceQuestID) do
-								subSourceQuests[subSourceQuestID] = true;
+						if app.GroupFilter(sourceQuest[1]) then
+							sourceQuest = setmetatable({ ["collectable"] = true }, { __index = sourceQuest[1] });
+							if sourceQuest.sourceQuestID and #sourceQuest.sourceQuestID > 0 then
+								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
+								for j, subSourceQuestID in ipairs(sourceQuest.sourceQuestID) do
+									subSourceQuests[subSourceQuestID] = true;
+								end
 							end
+						else
+							sourceQuest = nil;
 						end
 					else
 						-- Create a Quest Object.
-						sourceQuest = app.CreateQuest(sourceQuestID);
-						sourceQuest.collectable = true;
+						sourceQuest = app.CreateQuest(sourceQuestID, { ["visible"] = true, ["collectable"] = true });
 					end
-					tinsert(prereqs, sourceQuest);
+					
+					-- If the quest was valid, attach it.
+					if sourceQuest then
+						tinsert(prereqs, sourceQuest);
+					end
 				end
 				
 				-- Convert the subSourceQuests table into an array
@@ -4260,8 +4267,6 @@ local function CreateMiniListForGroup(group)
 					groups = prereqs;
 				end
 			end
-		else
-			
 		end
 		popout.data = {
 			["text"] = "Quest Chain Requirements",
@@ -5750,13 +5755,14 @@ local function UpdateWindow(self, force)
 				tinsert(self.rowData, self.data);
 			end
 			tinsert(self.rowData, {
-				["text"] = "No items matching your filters found.",
-				["description"] = GetDataMember("CompletionistMode") and 
-					"Congratulations! You have collected ALL OF THE THINGS that have been implemented for this section. If you find something on WoWHead that you're missing, please report it to the ALL THE THINGS Discord!" or
-					"You have collected all of the things that share appearances from this section. There may be additional items if you disable Completionist Mode and are up to the challenge...",
+				["text"] = "No entries matching your filters were found.",
+				["description"] = GetDataMember("ShowCompletedGroups") and 
+					"If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
+					or "Toggle 'Show Completed Groups' in the options menu to review your accomplishments.\n\nIf you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
 				["indent"] = 1,
+				["collectable"] = 1,
 				["collected"] = 1,
-				["back"] = 1
+				["back"] = 0.7
 			});
 		end
 		
