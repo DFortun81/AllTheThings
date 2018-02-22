@@ -628,7 +628,7 @@ _.Zones =
 											i(153290), -- Krokul Mining Pick
 											--q(49006, {	-- Krokul Flute Unlocked
 											--	["itemID"] = 152964,	 -- Krokul Flute
-											--	["collectable"] = true
+											--	["collectible"] = true
 											--})
 										}),
 										n(121589, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings

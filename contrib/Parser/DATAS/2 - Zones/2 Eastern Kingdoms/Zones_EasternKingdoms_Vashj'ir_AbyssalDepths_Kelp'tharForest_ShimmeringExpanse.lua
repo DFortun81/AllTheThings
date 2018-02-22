@@ -498,7 +498,7 @@ _.Zones =
 						}),
 						--[[
 						n(-16, { -- Rares
-							n(49913, { -- Lady La-La: Does not drop collectable loot.
+							n(49913, { -- Lady La-La: Does not drop collectible loot.
 							}),
 						}),
 						]]--
@@ -1460,9 +1460,9 @@ _.Zones =
 								dr(100, i(134022))	-- Burgy Blackheart's Handsome Hat
 							}), 
 							--[[
-							n(51071, { -- Captain Florence: Does not drop collectable loot.
+							n(51071, { -- Captain Florence: Does not drop collectible loot.
 							}),
-							n(51079, { -- Captain Foulwind: Does not drop collectable loot.
+							n(51079, { -- Captain Foulwind: Does not drop collectible loot.
 							}),
 							--]]
 						}),

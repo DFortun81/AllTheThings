@@ -52,7 +52,7 @@ _.Instances =
 														q(24916, {	-- Jaina's Locket
 															i(52251, {	-- Jaina's Locket
 																["ignoreSource"] = true,
-																["collectable"] = false
+																["collectible"] = false
 															})
 														})
 													})
