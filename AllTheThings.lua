@@ -950,7 +950,7 @@ local function GetProgressText(data)
 		return GetProgressColorText(data.progress, data.total);
 	elseif data.trackable then
 		return GetCompletionIcon(data.saved);
-	elseif data.collectable then
+	elseif data.collectible then
 		return GetCollectionIcon(data.collected);
 	elseif data.groups and not data.expanded then
 		return "+++";
@@ -1844,8 +1844,8 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 				-- Build the group data (merge into one group)
 				local merged = { groups = {}, total = 0, progress = 0 };
 				for i,g in ipairs(group) do
-					if g.collectable then
-						merged.collectable = g.collectable;
+					if g.collectible then
+						merged.collectible = g.collectible;
 						merged.collected = g.collected;
 					end
 					if g.trackable then
@@ -1867,7 +1867,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 						o = merged.groups[i];
 						key = o.key;
 						value = o[key];
-						if o.collectable or o.total then
+						if o.collectible or o.total then
 							found = false;
 							for j=i-1,1,-1 do
 								if merged.groups[j][key] == value then
@@ -1888,7 +1888,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 						if s.total then
 							merged.total = merged.total + s.total;
 							merged.progress = merged.progress + s.progress;
-						elseif s.collectable and app.GroupFilter(s) then
+						elseif s.collectible and app.GroupFilter(s) then
 							merged.total = merged.total + 1;
 							if s.collected then
 								merged.progress = merged.progress + 1;
@@ -1919,7 +1919,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 													if first then first = nil; self:AddLine("Contains:"); end
 													self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON"));
 												end
-											elseif j.collectable or (j.trackable and app.ShowIncompleteQuests(j)) then
+											elseif j.collectible or (j.trackable and app.ShowIncompleteQuests(j)) then
 												if first then first = nil; self:AddLine("Contains:"); end
 												if j.dr then
 													self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON"));
@@ -1956,7 +1956,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 						rightSide:SetText("---");
 					end
 				else
-					if group.collectable then
+					if group.collectible then
 						rightSide:SetText(GetCollectionText(group.collected));
 					elseif group.trackable then
 						rightSide:SetText(GetCompletionText(group.saved));
@@ -2181,7 +2181,7 @@ app.BaseArtifact = {
 	__index = function(t, key)
 		if key == "key" then
 			return "artifactID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
 			return select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID));
@@ -2392,7 +2392,7 @@ app.BaseFaction = {
 	__index = function(t, key)
 		if key == "key" then
 			return "factionID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
 			return t.standing == 8;
@@ -2445,7 +2445,7 @@ app.BaseFollower = {
 	__index = function(t, key)
 		if key == "key" then
 			return "followerID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
 			return C_Garrison.IsFollowerCollected(t.followerID);
@@ -2476,7 +2476,7 @@ app.BaseHeirloom = {
 	__index = function(t, key)
 		if key == "key" then
 			return "heirloomID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
 			return C_Heirloom.PlayerHasHeirloom(t.heirloomID);
@@ -2503,7 +2503,7 @@ app.BaseIllusion = {
 	__index = function(t, key)
 		if key == "key" then
 			return "illusionID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
 			return GetDataSubMember("CollectedIllusions", t.illusionID);
@@ -2575,7 +2575,7 @@ app.CreateGearSet = function(id, t)
 end
 app.BaseGearSource = {
 	__index = function(t, key)
-		if key == "collectable" then
+		if key == "collectible" then
 			return true;
 		elseif key == "info" then
 			return C_TransmogCollection_GetSourceInfo(t.s);
@@ -2688,7 +2688,7 @@ app.BaseItem = {
 	__index = function(t, key)
 		if key == "key" then
 			return "itemID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return t.s;-- or (t.questID and GetDataMember("ShowIncompleteQuests"));
 		elseif key == "collected" then
 			return t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s);-- or t.saved;
@@ -2764,7 +2764,7 @@ app.BaseMount = {
 	__index = function(t, key)
 		if key == "key" then
 			return "mountID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
 			if GetDataSubMember("CollectedMounts", t.mountID) then return true; end
@@ -2803,7 +2803,7 @@ app.BaseMusicRoll = {
 	__index = function(t, key)
 		if key == "key" then
 			return "musicRollID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
 			return IsQuestFlaggedCompleted(t.musicRollID);
@@ -3017,10 +3017,10 @@ app.BaseQuest = {
 			return "Interface\\Icons\\Achievement_Quests_Completed_08";
 		elseif key == "trackable" then
 			return true;
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return not t.daily and GetDataMember("TreatIncompleteQuestsAsCollectible");
 		elseif key == "collected" then
-			return t.collectable and t.saved;
+			return t.collectible and t.saved;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID);
 		else
@@ -3059,7 +3059,7 @@ app.BaseSpecies = {
 	__index = function(t, key)
 		if key == "key" then
 			return "speciesID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
 			if select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
@@ -3109,7 +3109,7 @@ app.BaseTitle = {
 	__index = function(t, key)
 		if key == "key" then
 			return "titleID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return true;
 		elseif key == "f" then
 			return 110;
@@ -3170,7 +3170,7 @@ app.BaseToy = {
 	__index = function(t, key)
 		if key == "key" then
 			return "toyID";
-		elseif key == "collectable" then
+		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
 			return GetDataSubMember("CollectedToys", t.toyID);
@@ -3657,8 +3657,8 @@ UpdateGroup = function(parent, group)
 	if app.GroupRequirementsFilter(group) then
 		-- Check if this is a group
 		if group.groups then
-			-- If this item is collectable, then mark it as such.
-			if group.collectable then
+			-- If this item is collectible, then mark it as such.
+			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
 				group.progress = group.collected and 1 or 0;
 				group.total = 1;
@@ -3694,7 +3694,7 @@ UpdateGroup = function(parent, group)
 		else
 			-- If the 'can equip' filter says true
 			if app.GroupFilter(group) then
-				if group.collectable then
+				if group.collectible then
 					-- Increment the parent group's totals.
 					parent.total = (parent.total or 0) + 1;
 					
@@ -4206,7 +4206,7 @@ local function CreateMiniListForGroup(group)
 		};
 	elseif group.questID then
 		-- This is a quest object. Let's show prereqs and breadcrumbs.
-		local mainQuest = setmetatable({ ["collectable"] = true }, { __index = group });
+		local mainQuest = setmetatable({ ["collectible"] = true }, { __index = group });
 		local groups = { mainQuest };
 		
 		-- Show Quest Prereqs
@@ -4219,7 +4219,7 @@ local function CreateMiniListForGroup(group)
 					if sourceQuest and #sourceQuest > 0 then
 						-- Only care about the first search result.
 						if app.GroupFilter(sourceQuest[1]) then
-							sourceQuest = setmetatable({ ["collectable"] = true }, { __index = sourceQuest[1] });
+							sourceQuest = setmetatable({ ["collectible"] = true }, { __index = sourceQuest[1] });
 							if sourceQuest.sourceQuestID and #sourceQuest.sourceQuestID > 0 then
 								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
 								for j, subSourceQuestID in ipairs(sourceQuest.sourceQuestID) do
@@ -4231,7 +4231,7 @@ local function CreateMiniListForGroup(group)
 						end
 					else
 						-- Create a Quest Object.
-						sourceQuest = app.CreateQuest(sourceQuestID, { ["visible"] = true, ["collectable"] = true });
+						sourceQuest = app.CreateQuest(sourceQuestID, { ["visible"] = true, ["collectible"] = true });
 					end
 					
 					-- If the quest was valid, attach it.
@@ -4519,7 +4519,7 @@ local function CreateSettingsMenu()
 		end);
 		self.PlayFanfare:SetScript("OnEnter", function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new collectable item.\n\nThis is feature can very addicting.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
+			GameTooltip:SetText ("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new collectible item.\n\nThis feature can very addicting.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
 		
@@ -5434,7 +5434,7 @@ local function RowOnEnter(self)
 			local style = GameTooltip:NumLines() < 1;
 			if style then
 				if not reference.total or reference.total < 1 then
-					if reference.collectable then
+					if reference.collectible then
 						GameTooltip:AddDoubleLine(self.Label:GetText(), GetCollectionText(reference.collected));
 					elseif reference.trackable then
 						GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
@@ -5449,7 +5449,7 @@ local function RowOnEnter(self)
 				end
 			else
 				if not reference.total or reference.total < 1 then
-					if reference.collectable then
+					if reference.collectible then
 						GameTooltipTextRight1:SetText(GetCollectionText(reference.collected));
 					elseif reference.trackable then
 						GameTooltipTextRight1:SetText(GetCompletionText(reference.saved));
@@ -5775,7 +5775,7 @@ local function UpdateWindow(self, force)
 					"If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
 					or "Toggle 'Show Completed Groups' in the options menu to review your accomplishments.\n\nIf you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
 				["indent"] = 1,
-				["collectable"] = 1,
+				["collectible"] = 1,
 				["collected"] = 1,
 				["back"] = 0.7
 			});

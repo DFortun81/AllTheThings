@@ -718,7 +718,7 @@ _.Zones =
 											--q(49006, {	-- Krokul Flute Unlocked
 											--	["itemID"] = 152964,	 -- Krokul Flute
 											--	["ignoreSource"] = true,
-											--	["collectable"] = true,
+											--	["collectible"] = true,
 											--}),
 										}),
 										n(121589, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings
