@@ -501,7 +501,7 @@ _.Zones =
 							}),
 						  }),
 						  q(42170,  {  -- The Dreamweavers
-							i(151464, {	-- Dreamweaver Provisions
+							i(157822, {	-- Dreamweaver Provisions
 							  i(130167), -- Thistleleaf Adventurer
 							}),
 						  }),
