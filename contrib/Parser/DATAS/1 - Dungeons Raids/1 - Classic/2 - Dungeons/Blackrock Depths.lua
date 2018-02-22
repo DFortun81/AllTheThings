@@ -12,7 +12,20 @@ _.Instances =
 						["groups"] = {
 							n(-47, {     		-- Lunar Festival
 								["groups"] = {
-									qg(15549, q(8619)),	-- Morndeep the Elder
+									n(-17, {	-- Quests				
+										q(8619, {	-- Morndeep the Elder			
+											["groups"] = {			
+												-- i(21100),	-- Coin of Ancestry	
+												-- i(21746, {	-- Lucky Red Envelope	
+													--i(21745),	-- Elder's Moonstone
+													--i(21744),	-- Lucky Rocket Cluster
+												--}),		
+											},			
+											["description"] = "Location: 50.6, 63.2",			
+											["qg"] = 15549,	-- Elder Morndeep		
+											["u"] = 17,	-- Lunar Festival Holiday Filter		
+										}),				
+									}),					
 								},
 								["achievementID"] = 913, -- To Honor One's Elders
 								["u"] = 17,
