@@ -36,7 +36,6 @@ _.Zones =
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
 					}),					
 					n(-50, { 		-- Love is in the Air
 						["groups"] = {

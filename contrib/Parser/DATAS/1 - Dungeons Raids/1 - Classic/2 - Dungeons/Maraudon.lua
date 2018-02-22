@@ -8,6 +8,25 @@ _.Instances =
 		["groups"] = {
 			c(232, { 	-- Maraudon
 				["groups"] = {
+					n(-47, {	-- Lunar Festival						
+						["groups"] = {						
+							n(-17, {	-- Quests				
+								q(8635, {	-- Splitrock the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 51.5, 93.7",			
+									["qg"] = 15556,	-- Elder Splitrock		
+									["u"] = 17,	-- Lunar Festival Holiday Filter		
+								}),				
+							}),					
+						},						
+						["achievementID"] = 913, -- To Honor One's Elders						
+					}),							
 					n(-17, {	-- Quests 			
 						q(27692, {	-- Prince Theradras
 							i(131682),	-- Boots of Endless Vitality

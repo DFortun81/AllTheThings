@@ -8,6 +8,25 @@ _.Instances =
 		["groups"] = {
 			c(241, { 	-- Zul'Farrak
 				["groups"] = {
+					n(-47, {	-- Lunar Festival						
+						["groups"] = {						
+							n(-17, {	-- Quests				
+								q(8676, {	-- Wildmane the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 34.4, 39.6",			
+									["qg"] = 15578,	-- Elder Wildmane
+									["u"] = 17,	-- Lunar Festival Holiday Filter
+								}),				
+							}),					
+						},						
+						["achievementID"] = 913, -- To Honor One's Elders						
+					}),							
 					n(-17, { 			-- Quests 
 						n(7407, { -- Chief Engineer Bildewhizzle
 							q(27070,{ -- A Fool's Errand
