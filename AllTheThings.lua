@@ -282,14 +282,14 @@ GameTooltipModel.TrySetModel = function(self, reference)
 						model:Show();
 					end
 				else
-					scale = (1 + ratio) * scale;
+					scale = (1 + (ratio * 0.5)) * scale;
 					for i=1,count do
 						model = self.Models[i];
 						model:SetDisplayInfo(displayInfos[i]);
 						model:SetCamDistanceScale(scale);
 						model:SetRotation(rotation);
 						fi = math.floor(i / 2);
-						model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.3));
+						model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
 						model:Show();
 					end
 				end
