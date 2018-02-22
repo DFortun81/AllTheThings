@@ -50,34 +50,7 @@ local PlayerHasToy = _G["PlayerHasToy"];
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
-
--- Game Tooltip Icon
-local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
-GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-GameTooltipIcon:SetSize(96, 96);
-GameTooltipIcon.icon = GameTooltipIcon:CreateTexture(nil, "ARTWORK");
-GameTooltipIcon.icon:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon:Show();
-GameTooltipIcon.icon.Background = GameTooltipIcon:CreateTexture(nil, "BACKGROUND");
-GameTooltipIcon.icon.Background:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon.Background:Show();
-GameTooltipIcon.icon.Border = GameTooltipIcon:CreateTexture(nil, "BORDER");
-GameTooltipIcon.icon.Border:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon.Border:Show();
-GameTooltipIcon:Hide();
-
--- Model is used to display the model of an NPC/Encounter.
-local GameTooltipModel = CreateFrame("FRAME", "ATTGameTooltipModel", GameTooltip);
-GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-GameTooltipModel:SetSize(128, 128);
-GameTooltipModel:SetBackdrop(backdrop);
-GameTooltipModel:SetBackdropBorderColor(1, 1, 1, 1);
-GameTooltipModel:SetBackdropColor(0, 0, 0, 1);
-GameTooltipModel.Model = CreateFrame("DressUpModel", nil, GameTooltipModel);
-GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4)
-GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4)
-GameTooltipModel.Model:SetRotation(MODELFRAME_DEFAULT_ROTATION);
-GameTooltipModel:Hide();
+local MAX_CREATURES_PER_ENCOUNTER = 9;
 
 -- Data Lib
 local AllTheThingsTempData = {}; 	-- For temporary data.
@@ -221,6 +194,159 @@ local function GetTempDataSubSubMember(member, submember, subsubmember, default)
 	end
 	return AllTheThingsTempData[member][submember][subsubmember];
 end
+
+-- Game Tooltip Icon
+local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
+GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+GameTooltipIcon:SetSize(96, 96);
+GameTooltipIcon.icon = GameTooltipIcon:CreateTexture(nil, "ARTWORK");
+GameTooltipIcon.icon:SetAllPoints(GameTooltipIcon);
+GameTooltipIcon.icon:Show();
+GameTooltipIcon.icon.Background = GameTooltipIcon:CreateTexture(nil, "BACKGROUND");
+GameTooltipIcon.icon.Background:SetAllPoints(GameTooltipIcon);
+GameTooltipIcon.icon.Background:Show();
+GameTooltipIcon.icon.Border = GameTooltipIcon:CreateTexture(nil, "BORDER");
+GameTooltipIcon.icon.Border:SetAllPoints(GameTooltipIcon);
+GameTooltipIcon.icon.Border:Show();
+GameTooltipIcon:Hide();
+
+-- Model is used to display the model of an NPC/Encounter.
+local GameTooltipModel, model, fi = CreateFrame("FRAME", "ATTGameTooltipModel", GameTooltip);
+GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+GameTooltipModel:SetSize(128, 128);
+GameTooltipModel:SetBackdrop(backdrop);
+GameTooltipModel:SetBackdropBorderColor(1, 1, 1, 1);
+GameTooltipModel:SetBackdropColor(0, 0, 0, 1);
+GameTooltipModel.Models = {};
+GameTooltipModel.Model = CreateFrame("DressUpModel", nil, GameTooltipModel);
+GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4)
+GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4)
+GameTooltipModel.Model:SetRotation(MODELFRAME_DEFAULT_ROTATION);
+GameTooltipModel.Model:Hide();
+for i=1,MAX_CREATURES_PER_ENCOUNTER do
+	model = CreateFrame("DressUpModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
+	model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4);
+	model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4);
+	model:SetCamDistanceScale(1.7);
+	model:SetDisplayInfo(987);
+	model:SetRotation(MODELFRAME_DEFAULT_ROTATION);
+	fi = math.floor(i / 2);
+	model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - 0.3);
+	model:SetDepth(i);
+	model:Hide();
+	tinsert(GameTooltipModel.Models, model);
+end
+GameTooltipModel.HideAllModels = function(self)
+	for i=1,MAX_CREATURES_PER_ENCOUNTER do
+		GameTooltipModel.Models[i]:Hide();
+	end
+	GameTooltipModel.Model:Hide();
+end
+GameTooltipModel.SetCreatureID = function(self, creatureID)
+	GameTooltipModel.HideAllModels(self);
+	if creatureID < 0 then
+		self.Model:SetDisplayInfo(math.abs(creatureID));
+		self.Model:Show();
+	else
+		self.Model:SetUnit("none");
+		self.Model:SetCreature(creatureID);
+		if not self.Model:GetModelFileID() then
+			Push(app, "SetCreatureID", function()
+				if self.lastModel == creatureID then
+					self:SetCreatureID(creatureID);
+				end
+			end);
+		end
+	end
+	self:Show();
+end
+GameTooltipModel.TrySetModel = function(self, reference)
+	GameTooltipModel.HideAllModels(self);
+	if GetDataMember("ShowModels") then
+		self.lastModel = reference;
+		local displayInfos = reference.displayInfo;
+		if displayInfos then
+			local rotation = reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
+			local scale = reference.modelScale or 1;
+			local count = #displayInfos;
+			if count > 1 then
+				count = math.floor(count, MAX_CREATURES_PER_ENCOUNTER);
+				local ratio = count / MAX_CREATURES_PER_ENCOUNTER;
+				if count < 3 then
+					for i=1,count do
+						model = self.Models[i];
+						model:SetDisplayInfo(displayInfos[i]);
+						model:SetCamDistanceScale(scale);
+						model:SetRotation(rotation);
+						model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
+						model:Show();
+					end
+				else
+					scale = (1 + ratio) * scale;
+					for i=1,count do
+						model = self.Models[i];
+						model:SetDisplayInfo(displayInfos[i]);
+						model:SetCamDistanceScale(scale);
+						model:SetRotation(rotation);
+						fi = math.floor(i / 2);
+						model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.3));
+						model:Show();
+					end
+				end
+			else
+				self.Model:SetRotation(rotation);
+				self.Model:SetCamDistanceScale(scale);
+				self.Model:SetDisplayInfo(displayInfos[1]);
+				self.Model:Show();
+			end
+			self:Show();
+			return true;
+		end
+		
+		if reference.displayID then
+			self.Model:SetRotation(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+			self.Model:SetCamDistanceScale(reference.modelScale or 1);
+			self.Model:SetDisplayInfo(reference.displayID);
+			self.Model:Show();
+			self:Show();
+			return true;
+		elseif reference.creatureID then
+			self.Model:SetRotation(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+			self.Model:SetCamDistanceScale(reference.modelScale or 1);
+			self:SetCreatureID(reference.creatureID);
+			self.Model:Show();
+			return true;
+		elseif reference.model then
+			self.Model:SetRotation(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+			self.Model:SetCamDistanceScale(reference.modelScale or 1);
+			self.Model:SetUnit("none");
+			self.Model:SetModel(reference.model);
+			self.Model:Show();
+			self:Show();
+			return true;
+		elseif reference.atlas then
+			GameTooltipIcon:SetSize(64,64);
+			GameTooltipIcon.icon:SetAtlas(reference.atlas);
+			GameTooltipIcon:Show();
+			if reference["atlas-background"] then
+				GameTooltipIcon.icon.Background:SetAtlas(reference["atlas-background"]);
+				GameTooltipIcon.icon.Background:Show();
+			end
+			if reference["atlas-border"] then
+				GameTooltipIcon.icon.Border:SetAtlas(reference["atlas-border"]);
+				GameTooltipIcon.icon.Border:Show();
+				if reference["atlas-color"] then
+					local swatches = reference["atlas-color"];
+					GameTooltipIcon.icon.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
+				else
+					GameTooltipIcon.icon.Border:SetVertexColor(1, 1, 1, 1.0);
+				end
+			end
+			return true;
+		end
+	end
+end
+GameTooltipModel:Hide();
 
 -- Localization Lib
 app.Locales = {};
@@ -441,14 +567,10 @@ end
 AllTheThings.GetSourceID = GetSourceID;
 local function SetPortraitIcon(self, data, x)
 	self.lastData = data;
-	if data.icon then
+	if data.texCoords then
 		self:SetWidth(self:GetHeight());
 		self:SetTexture(data.icon);
-		if data.texCoords then
-			self:SetTexCoord(unpack(data.texCoords));
-		else
-			self:SetTexCoord(0, 1, 0, 1);
-		end
+		self:SetTexCoord(unpack(data.texCoords));
 		return true;
 	elseif GetDataMember("ShowModels") then
 		if data.displayID then
@@ -487,64 +609,13 @@ local function SetPortraitIcon(self, data, x)
 			return true;
 		end
 	end
-end
-GameTooltipModel.SetCreatureID = function(self, creatureID)
-	if creatureID < 0 then
-		self.Model:SetDisplayInfo(math.abs(creatureID));
-	else
-		self.Model:SetUnit("none");
-		self.Model:SetCreature(creatureID);
-		if not self.Model:GetModelFileID() then
-			Push(app, "SetCreatureID", function()
-				if self.lastModel == creatureID then
-					self:SetCreatureID(creatureID);
-				end
-			end);
-		end
-	end
-	self:Show();
-end
-GameTooltipModel.TrySetModel = function(self, reference)
-	if GetDataMember("ShowModels") then
-		self.lastModel = reference;
-		if reference.displayID then
-			self.Model:SetRotation(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetDisplayInfo(reference.displayID);
-			self:Show();
-			return true;
-		elseif reference.creatureID then
-			self.Model:SetRotation(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self:SetCreatureID(reference.creatureID);
-			return true;
-		elseif reference.model then
-			self.Model:SetRotation(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetUnit("none");
-			self.Model:SetModel(reference.model);
-			self:Show();
-			return true;
-		elseif reference.atlas then
-			GameTooltipIcon:SetSize(64,64);
-			GameTooltipIcon.icon:SetAtlas(reference.atlas);
-			GameTooltipIcon:Show();
-			if reference["atlas-background"] then
-				GameTooltipIcon.icon.Background:SetAtlas(reference["atlas-background"]);
-				GameTooltipIcon.icon.Background:Show();
-			end
-			if reference["atlas-border"] then
-				GameTooltipIcon.icon.Border:SetAtlas(reference["atlas-border"]);
-				GameTooltipIcon.icon.Border:Show();
-				if reference["atlas-color"] then
-					local swatches = reference["atlas-color"];
-					GameTooltipIcon.icon.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
-				else
-					GameTooltipIcon.icon.Border:SetVertexColor(1, 1, 1, 1.0);
-				end
-			end
-			return true;
-		end
+	
+	-- Fallback to a traditional icon.
+	if data.icon then
+		self:SetWidth(self:GetHeight());
+		self:SetTexture(data.icon);
+		self:SetTexCoord(0, 1, 0, 1);
+		return true;
 	end
 end
 
@@ -2354,6 +2425,19 @@ app.BaseEncounter = {
 		elseif key == "displayID" then
 			-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
 			return select(4, EJ_GetCreatureInfo(t.index, t.encounterID));
+		elseif key == "displayInfo" then
+			local displayInfos, displayInfo = {};
+			for i=1,MAX_CREATURES_PER_ENCOUNTER do
+				displayInfo = select(4, EJ_GetCreatureInfo(i, t.encounterID));
+				if displayInfo then
+					tinsert(displayInfos, displayInfo);
+				else
+					break;
+				end
+			end
+			return displayInfos;
+		elseif key == "icon" then
+			return "Interface\\Icons\\INV_Misc_Head_Human_01";
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
@@ -2858,7 +2942,10 @@ app.BaseNPC = {
 		elseif key == "link" then
 			return (t.achievementID and GetAchievementLink(t.achievementID));
 		elseif key == "icon" then
-			return L("NPC_ID_ICONS")[t.npcID] or (t.achievementID and select(10, GetAchievementInfo(t.achievementID)));
+			return L("NPC_ID_ICONS")[t.npcID] 
+				or (t.achievementID and select(10, GetAchievementInfo(t.achievementID))) 
+				or (t.parent and t.parent.npcID == -2 and "Interface\\Icons\\Achievement_Character_Human_Male")
+				or "Interface\\Icons\\INV_Misc_Head_Human_01";
 		elseif key == "creatureID" then
 			return t.npcID > 0 and t.npcID;
 		elseif key == "trackable" then
@@ -2893,7 +2980,7 @@ app.BaseObject = {
 			rawset(t, "text", name);
 			return name;
 		elseif key == "icon" then
-			return L("OBJECT_ID_ICONS")[t.objectID];
+			return L("OBJECT_ID_ICONS")[t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
