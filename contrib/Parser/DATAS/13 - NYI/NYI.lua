@@ -3,6 +3,7 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	un(1, i(24137)), -- PH Plate Ramparts Reward
 	un(1, i(33964)), -- Helm of the Stormcaller - Never Added
 	un(3, i(19160)), -- Contest Winner's Tabard   [NOTE: Temporarily here until we get groups working with un/u tag again}
 	un(1, i(2664)),	-- Spinner Fang
