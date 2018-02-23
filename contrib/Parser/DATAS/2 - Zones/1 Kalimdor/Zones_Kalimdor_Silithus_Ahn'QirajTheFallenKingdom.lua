@@ -10,8 +10,28 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15599, q( 8719)),	-- Bladesing the Elder
-								qg(15570, q( 8654)),	-- Primestone the Elder
+								q(8719, {	-- Bladesing the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 53, 35.5",			
+									["qg"] = 15599,	-- Elder Bladesing		
+								}),
+								q(8654, {	-- Primestone the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 30.8, 13.3",			
+									["qg"] = 15570,	-- Elder Primestone		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

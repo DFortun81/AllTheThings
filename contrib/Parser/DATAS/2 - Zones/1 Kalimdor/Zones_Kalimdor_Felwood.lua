@@ -6,16 +6,27 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(182, {	-- Felwood
 			["groups"] = {	
---[[
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
+								q(8723, {	-- Nightwind the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 38.3, 52.9",			
+									["qg"] = 15603,	-- Elder Nightwind		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+--[[
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -79,9 +90,9 @@ _.Zones =
 						},
 						["achievementID"] = 1691, -- Merrymaker
 						["u"] = 29,
-					}),		
-				}),
---]]									
+					}),
+--]]
+				}),									
 				n(-25, { -- Pet Battle
 					desc(p(500), "Can be found around Shatter Scar Vale near Infernal Sentries."), -- Minfernal
 					p(497), -- Tainted Cockroach

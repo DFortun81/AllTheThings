@@ -133,7 +133,25 @@ _.Zones =
 					}),
 				}),
 				n(-3, { 	-- Holidays
---					qg(15605, q(  8725)),	-- Riversong the Elder
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+								q(8725, {	-- Riversong the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 35.6, 48.9",			
+									["qg"] = 15605,	-- Elder Riversong		
+								}),
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+						["u"] = 17,
+					}),
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests

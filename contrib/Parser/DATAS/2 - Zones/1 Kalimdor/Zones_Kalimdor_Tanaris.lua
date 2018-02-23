@@ -10,8 +10,28 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15586, q(  8684)),	-- Dreamseer the Elder
-								qg(15573, q(  8671)),	-- Ragetotem the Elder
+								q(8684, {	-- Dreamseer the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 51.3, 27.8",			
+									["qg"] = 15586,	-- Elder Dreamseer		
+								}),
+								q(8671, {	-- Ragetotem the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 37.2, 79.1",			
+									["qg"] = 15573,	-- Elder Ragetotem		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

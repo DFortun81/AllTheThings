@@ -10,7 +10,17 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15595, q(  8715)),	-- Bladeleaf the Elder
+								q(8715, {	-- Bladeleaf the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 57, 53",			
+									["qg"] = 15595,	-- Elder Bladeleaf		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

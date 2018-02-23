@@ -10,6 +10,17 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
+								q(8718, {	-- Bladeswift the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 39.1, 31.9",			
+									["qg"] = 15598,	-- Elder Bladeswift		
+								}),
 								qg(15895, q( 8867)),	-- Lunar Fireworks (QG also in The Exodar, Shattrath City, Vale of Eternal Blossoms, Silvermoon City, Dalaran, Undercity, Ironforge, Orgrimmar, Thunderbluff, and Elwynn Forest)
 								qg(15892, qa( 8871)),	-- The Lunar Festival (QG in Stormwind)
 								qg(15891, qh( 8873)),	-- The Lunar Festival (QG in Orgrimmar)
@@ -190,7 +201,6 @@ _.Zones =
 						["races"] = {4},
 					})),
 					qp185(qg( 4210, qa(29316))),	-- Back to Basics
-					qg(15598, q(  8718)),	-- Bladeswift the Elder
 					qg(42936, qa(26383, {	-- Breaking Waves of Change (breadcrumb quest for 13518, not available if 26385, 28490 are completed)
 						["groups"] = {
 						},

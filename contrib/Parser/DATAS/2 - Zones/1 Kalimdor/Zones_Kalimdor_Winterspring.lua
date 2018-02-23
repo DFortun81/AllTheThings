@@ -10,8 +10,28 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15606, q(  8726)),	-- Brightspear the Elder
-								qg(15574, q(  8672)),	-- Stonespire the Elder
+								q(8726, {	-- Brightspear the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 53.2, 56.8",			
+									["qg"] = 15606,	-- Elder Brightspear		
+								}),
+								q(8672, {	-- Stonespire the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 60.1, 49.9",			
+									["qg"] = 15574,	-- Elder Stonespire		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

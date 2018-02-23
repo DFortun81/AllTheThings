@@ -10,8 +10,28 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15604, q(  8724)),	-- Morningdew the Elder
-								qg(15584, q(  8682)),	-- Skyseer the Elder
+								q(8724, {	-- Morningdew the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 77.1, 75.6",			
+									["qg"] = 15604,	-- Elder Morningdew		
+								}),
+								q(8682, {	-- Skyseer the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 46.4, 51",			
+									["qg"] = 15584,	-- Elder Skyseer		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

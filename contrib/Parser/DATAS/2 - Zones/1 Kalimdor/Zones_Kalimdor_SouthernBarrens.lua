@@ -10,7 +10,17 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15588, q(  8686)),	-- High Mountain the Elder
+								q(8686, {	-- High Mountain the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),
+									},			
+									["description"] = "Location: 41.5, 47.5",			
+									["qg"] = 15588,	-- Elder High Mountain		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
