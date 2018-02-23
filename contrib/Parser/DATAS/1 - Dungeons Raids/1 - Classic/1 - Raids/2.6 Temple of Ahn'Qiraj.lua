@@ -8,6 +8,305 @@ _.Instances =
 		["groups"] = {
 			c(744, { 	-- Temple of Ahn'Qiraj
 				["groups"] = {
+					n(-17, { -- Quests
+						n(15502, { -- Andorgos <Brood of Malygos>
+							q(8592, {	-- Tiara of the Oracle	
+								i(21348),	-- Tiara of the Oracle
+							}),		
+							q(8594, {	-- Mantle of the Oracle	
+								i(21350),	-- Mantle of the Oracle
+							}),		
+							q(8632, {	-- Enigma Circlet	
+								i(21347),	-- Enigma Circlet
+							}),		
+							q(8625, {	-- Enigma Shoulderpads	
+								i(21345),	-- Enigma Shoulderpads
+							}),		
+							q(8662, {	-- Dooomcaller's Circlet	
+								i(21337),	-- Dooomcaller's Circlet
+							}),		
+							q(8664, {	-- Doomcaller's Mantle	
+								i(21335),	-- Doomcaller's Mantle
+							}),		
+							q(8667, {	-- Genesis Helm	
+								i(21353),	-- Genesis Helm
+							}),		
+							q(8669, {	-- Genesis Shoulderpads	
+								i(21354),	-- Genesis Shoulderpads
+							}),		
+							q(8639, {	-- Deathdealer's Helm	
+								i(21360),	-- Deathdealer's Helm
+							}),		
+							q(8641, {	-- Deathdealer's Spaulders	
+								i(21361),	-- Deathdealer's Spaulders
+							}),		
+							q(8657, {	-- Striker's Diadem	
+								i(21366),	-- Striker's Diadem
+							}),		
+							q(8659, {	-- Striker's Pauldrons	
+								i(21367),	-- Striker's Pauldrons
+							}),		
+							q(8623, {	-- Stormcaller's Diadem	
+								i(21372),	-- Stormcaller's Diadem
+							}),		
+							q(8602, {	-- Stormcaller's Pauldrons	
+								i(21376),	-- Stormcaller's Pauldrons
+							}),		
+							q(8628, {	-- Avenger's Crown	
+								i(21387),	-- Avenger's Crown
+							}),		
+							q(8630, {	-- Avenger's Pauldrons	
+								i(21391),	-- Avenger's Pauldrons
+							}),		
+							q(8561, {	-- Conqueror's Crown	
+								i(21329),	-- Conqueror's Crown
+							}),		
+							q(8544, {	-- Conqueror's Spaulders	
+								i(21330),	-- Conqueror's Spaulders
+							}),		
+						}),
+						n(15380, { -- Arygos
+							["groups"] = {
+								i(21232, {	-- Imperial Qiraji Armaments
+									q(8789, {	-- Imperial Qiraji Armaments
+										i(21242),	-- Blessed Qiraji War Axe
+										i(21272),	-- Blessed Qiraji Musket
+										i(21244),	-- Blessed Qiraji Pugio
+										i(21269),	-- Blessed Qiraji Bulwark
+									}),
+								}),
+							},
+							["description"] = "Turn in your Imperial Qiraji Armaments along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose."
+						}),
+						n(15379, {	-- Caelestrasz
+							q(8802, {-- The Savior of Kalimdor
+								i(21710),	-- Cloak of the Fallen God
+							}),
+						}),
+						n(15503, { -- Kandrostrasz
+							q(8593, {	-- Trousers of the Oracle	
+								i(21352),	-- Trousers of the Oracle
+							}),		
+							q(8596, {	-- Footwraps of the Oracle	
+								i(21349),	-- Footwraps of the Oracle
+							}),		
+							q(8631, {	-- Enigma Leggings	
+								i(21346),	-- Enigma Leggings
+							}),		
+							q(8634, {	-- Enigma Boots	
+								i(21344),	-- Enigma Boots
+							}),		
+							q(8663, {	-- Dooomcaller's Trousers	
+								i(21336),	-- Dooomcaller's Trousers
+							}),		
+							q(8660, {	-- Doomcaller's Footwraps	
+								i(21338),	-- Doomcaller's Footwraps
+							}),		
+							q(8668, {	-- Genesis Trousers	
+								i(21356),	-- Genesis Trousers
+							}),		
+							q(8665, {	-- Genesis Boots	
+								i(21355),	-- Genesis Boots
+							}),		
+							q(8640, {	-- Deathdealer's Leggings	
+								i(21362),	-- Deathdealer's Leggings
+							}),		
+							q(8637, {	-- Deathdealer's Boots	
+								i(21359),	-- Deathdealer's Boots
+							}),		
+							q(8658, {	-- Striker's Leggings	
+								i(21368),	-- Striker's Leggings
+							}),		
+							q(8626, {	-- Striker's Footguards	
+								i(21365),	-- Striker's Footguards
+							}),		
+							q(8624, {	-- Stormcaller's Leggings	
+								i(21375),	-- Stormcaller's Leggings
+							}),		
+							q(8621, {	-- Stormcaller's Footguards	
+								i(21373),	-- Stormcaller's Footguards
+							}),		
+							q(8629, {	-- Avenger's Legguards	
+								i(21390),	-- Avenger's Legguards
+							}),		
+							q(8655, {	-- Avenger's Greaves	
+								i(21388),	-- Avenger's Greaves
+							}),		
+							q(8560, {	-- Conqueror's Legguards	
+								i(21332),	-- Conqueror's Legguards
+							}),		
+							q(8559, {	-- Conqueror's Greaves	
+								i(21333),	-- Conqueror's Greaves
+							}),		
+						}),
+						n(15378, { -- Merithra of the Dream
+							["groups"] = {
+								i(21237, {	-- Imperial Qiraji Regalia
+									q(8790, {	-- Imperial Qiraji Regalia
+										i(21273),	-- Blessed Qiraji Acolyte Staff
+										i(21275),	-- Blessed Qiraji Augur Staff
+										i(21268),	-- Blessed Qiraji War Hammer
+									}),
+								}),
+							},
+							["description"] = "Turn in your Imperial Qiraji Regalia along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose."
+						}),
+						n(15504, { -- Vethsera
+							q(8603, {	-- Vestments of the Oracle	
+								i(21351),	-- Vestments of the Oracle
+							}),		
+							q(8633, {	-- Enigma Robes	
+								i(21343),	-- Enigma Robes
+							}),		
+							q(8661, {	-- Dooomcaller's Robes	
+								i(21334),	-- Dooomcaller's Robes
+							}),		
+							q(8666, {	-- Genesis Vest	
+								i(21357),	-- Genesis Vest
+							}),		
+							q(8638, {	-- Deathdealer's Vest	
+								i(21364),	-- Deathdealer's Vest
+							}),		
+							q(8656, {	-- Striker's Hauberk	
+								i(21370),	-- Striker's Hauberk
+							}),		
+							q(8622, {	-- Stormcaller's Hauberk	
+								i(21374),	-- Stormcaller's Hauberk
+							}),		
+							q(8627, {	-- Avenger's Breastplate	
+								i(21389),	-- Avenger's Breastplate
+							}),		
+							q(8562, {	-- Conqueror's Breastplate	
+								i(21331),	-- Conqueror's Breastplate
+							}),	
+						}),
+					}),
+					n(0, {		-- Zone Drop
+						n(15264, {	-- Anubisath Sentinel	
+							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(0.5, i(21837)),	-- Anubisath Warhammer
+							dr(0.5, i(21838)),	-- Garb of Royal Ascension
+							dr(0.5, i(21888)),	-- Gloves of the Immortal
+							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
+						}),		
+						n(15277, {	-- Anubisath Defender	
+							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
+							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
+						}),		
+						n(15311, {	-- Anubisath Warder	
+							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
+							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
+						}),		
+						n(15262, {	-- Obsidian Eradicator	
+							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(0.5, i(21837)),	-- Anubisath Warhammer
+							dr(0.5, i(21838)),	-- Garb of Royal Ascension
+							dr(0.5, i(21888)),	-- Gloves of the Immortal
+							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
+						}),		
+						n(15312, {	-- Obisidan Nullifier	
+							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
+							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
+						}),		
+						n(15247, {	-- Qiraji Brainwasher	
+							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(0.5, i(21837)),	-- Anubisath Warhammer
+							dr(0.5, i(21838)),	-- Garb of Royal Ascension
+							dr(0.5, i(21888)),	-- Gloves of the Immortal
+							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
+						}),		
+						n(15252, {	-- Qiraji Champion	
+							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
+							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
+						}),		
+						n(15249, {	-- Qiraji Lasher	
+							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(0.5, i(21837)),	-- Anubisath Warhammer
+							dr(0.5, i(21838)),	-- Garb of Royal Ascension
+							dr(0.5, i(21888)),	-- Gloves of the Immortal
+							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
+						}),		
+						n(15246, {	-- Qiraji Mindslayer	
+							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
+							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
+						}),		
+						n(15250, {	-- Qiraji Slayer	
+							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(0.5, i(21837)),	-- Anubisath Warhammer
+							dr(0.5, i(21838)),	-- Garb of Royal Ascension
+							dr(0.5, i(21888)),	-- Gloves of the Immortal
+							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
+						}),		
+						n(15233, {	-- Vekniss Guardian	
+							dr(0.5, i(21837)),	-- Anubisath Warhammer
+							dr(0.5, i(21838)),	-- Garb of Royal Ascension
+							dr(0.5, i(21888)),	-- Gloves of the Immortal
+							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
+						}),		
+						n(15240, {	-- Vekniss Hive Crawler	
+							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
+							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
+						}),		
+						n(15229, {	-- Vekniss Soldier	
+							dr(0.5, i(21837)),	-- Anubisath Warhammer
+							dr(0.5, i(21838)),	-- Garb of Royal Ascension
+							dr(0.5, i(21888)),	-- Gloves of the Immortal
+							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
+						}),		
+						n(15235, {	-- Vekniss Stinger	
+							dr(0.5, i(21837)),	-- Anubisath Warhammer
+							dr(0.5, i(21838)),	-- Garb of Royal Ascension
+							dr(0.5, i(21888)),	-- Gloves of the Immortal
+							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
+						}),		
+						n(15230, {	-- Vekniss Warrior	
+							dr(0.5, i(21837)),	-- Anubisath Warhammer
+							dr(0.5, i(21838)),	-- Garb of Royal Ascension
+							dr(0.5, i(21888)),	-- Gloves of the Immortal
+							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
+						}),		
+						n(15236, {	-- Vekniss Wasp	
+							dr(0.5, i(21837)),	-- Anubisath Warhammer
+							dr(0.5, i(21838)),	-- Garb of Royal Ascension
+							dr(0.5, i(21888)),	-- Gloves of the Immortal
+							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
+						}),	
+					}),
 					e(1543, {	-- The Prophet Skeram
 						["groups"] = {
 							i(21703),
@@ -374,305 +673,6 @@ _.Instances =
 							i(21582),
 						},
 						["creatureID"] = 15727,
-					}),
-					n(-17, { -- Quests
-						n(15502, { -- Andorgos <Brood of Malygos>
-							q(8592, {	-- Tiara of the Oracle	
-								i(21348),	-- Tiara of the Oracle
-							}),		
-							q(8594, {	-- Mantle of the Oracle	
-								i(21350),	-- Mantle of the Oracle
-							}),		
-							q(8632, {	-- Enigma Circlet	
-								i(21347),	-- Enigma Circlet
-							}),		
-							q(8625, {	-- Enigma Shoulderpads	
-								i(21345),	-- Enigma Shoulderpads
-							}),		
-							q(8662, {	-- Dooomcaller's Circlet	
-								i(21337),	-- Dooomcaller's Circlet
-							}),		
-							q(8664, {	-- Doomcaller's Mantle	
-								i(21335),	-- Doomcaller's Mantle
-							}),		
-							q(8667, {	-- Genesis Helm	
-								i(21353),	-- Genesis Helm
-							}),		
-							q(8669, {	-- Genesis Shoulderpads	
-								i(21354),	-- Genesis Shoulderpads
-							}),		
-							q(8639, {	-- Deathdealer's Helm	
-								i(21360),	-- Deathdealer's Helm
-							}),		
-							q(8641, {	-- Deathdealer's Spaulders	
-								i(21361),	-- Deathdealer's Spaulders
-							}),		
-							q(8657, {	-- Striker's Diadem	
-								i(21366),	-- Striker's Diadem
-							}),		
-							q(8659, {	-- Striker's Pauldrons	
-								i(21367),	-- Striker's Pauldrons
-							}),		
-							q(8623, {	-- Stormcaller's Diadem	
-								i(21372),	-- Stormcaller's Diadem
-							}),		
-							q(8602, {	-- Stormcaller's Pauldrons	
-								i(21376),	-- Stormcaller's Pauldrons
-							}),		
-							q(8628, {	-- Avenger's Crown	
-								i(21387),	-- Avenger's Crown
-							}),		
-							q(8630, {	-- Avenger's Pauldrons	
-								i(21391),	-- Avenger's Pauldrons
-							}),		
-							q(8561, {	-- Conqueror's Crown	
-								i(21329),	-- Conqueror's Crown
-							}),		
-							q(8544, {	-- Conqueror's Spaulders	
-								i(21330),	-- Conqueror's Spaulders
-							}),		
-						}),
-						n(15380, { -- Arygos
-							["groups"] = {
-								i(21232, {	-- Imperial Qiraji Armaments
-									q(8789, {	-- Imperial Qiraji Armaments
-										i(21242),	-- Blessed Qiraji War Axe
-										i(21272),	-- Blessed Qiraji Musket
-										i(21244),	-- Blessed Qiraji Pugio
-										i(21269),	-- Blessed Qiraji Bulwark
-									}),
-								}),
-							},
-							["description"] = "Turn in your Imperial Qiraji Armaments along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose."
-						}),
-						n(15379, {	-- Caelestrasz
-							q(8802, {-- The Savior of Kalimdor
-								i(21710),	-- Cloak of the Fallen God
-							}),
-						}),
-						n(15503, { -- Kandrostrasz
-							q(8593, {	-- Trousers of the Oracle	
-								i(21352),	-- Trousers of the Oracle
-							}),		
-							q(8596, {	-- Footwraps of the Oracle	
-								i(21349),	-- Footwraps of the Oracle
-							}),		
-							q(8631, {	-- Enigma Leggings	
-								i(21346),	-- Enigma Leggings
-							}),		
-							q(8634, {	-- Enigma Boots	
-								i(21344),	-- Enigma Boots
-							}),		
-							q(8663, {	-- Dooomcaller's Trousers	
-								i(21336),	-- Dooomcaller's Trousers
-							}),		
-							q(8660, {	-- Doomcaller's Footwraps	
-								i(21338),	-- Doomcaller's Footwraps
-							}),		
-							q(8668, {	-- Genesis Trousers	
-								i(21356),	-- Genesis Trousers
-							}),		
-							q(8665, {	-- Genesis Boots	
-								i(21355),	-- Genesis Boots
-							}),		
-							q(8640, {	-- Deathdealer's Leggings	
-								i(21362),	-- Deathdealer's Leggings
-							}),		
-							q(8637, {	-- Deathdealer's Boots	
-								i(21359),	-- Deathdealer's Boots
-							}),		
-							q(8658, {	-- Striker's Leggings	
-								i(21368),	-- Striker's Leggings
-							}),		
-							q(8626, {	-- Striker's Footguards	
-								i(21365),	-- Striker's Footguards
-							}),		
-							q(8624, {	-- Stormcaller's Leggings	
-								i(21375),	-- Stormcaller's Leggings
-							}),		
-							q(8621, {	-- Stormcaller's Footguards	
-								i(21373),	-- Stormcaller's Footguards
-							}),		
-							q(8629, {	-- Avenger's Legguards	
-								i(21390),	-- Avenger's Legguards
-							}),		
-							q(8655, {	-- Avenger's Greaves	
-								i(21388),	-- Avenger's Greaves
-							}),		
-							q(8560, {	-- Conqueror's Legguards	
-								i(21332),	-- Conqueror's Legguards
-							}),		
-							q(8559, {	-- Conqueror's Greaves	
-								i(21333),	-- Conqueror's Greaves
-							}),		
-						}),
-						n(15378, { -- Merithra of the Dream
-							["groups"] = {
-								i(21237, {	-- Imperial Qiraji Regalia
-									q(8790, {	-- Imperial Qiraji Regalia
-										i(21273),	-- Blessed Qiraji Acolyte Staff
-										i(21275),	-- Blessed Qiraji Augur Staff
-										i(21268),	-- Blessed Qiraji War Hammer
-									}),
-								}),
-							},
-							["description"] = "Turn in your Imperial Qiraji Regalia along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose."
-						}),
-						n(15504, { -- Vethsera
-							q(8603, {	-- Vestments of the Oracle	
-								i(21351),	-- Vestments of the Oracle
-							}),		
-							q(8633, {	-- Enigma Robes	
-								i(21343),	-- Enigma Robes
-							}),		
-							q(8661, {	-- Dooomcaller's Robes	
-								i(21334),	-- Dooomcaller's Robes
-							}),		
-							q(8666, {	-- Genesis Vest	
-								i(21357),	-- Genesis Vest
-							}),		
-							q(8638, {	-- Deathdealer's Vest	
-								i(21364),	-- Deathdealer's Vest
-							}),		
-							q(8656, {	-- Striker's Hauberk	
-								i(21370),	-- Striker's Hauberk
-							}),		
-							q(8622, {	-- Stormcaller's Hauberk	
-								i(21374),	-- Stormcaller's Hauberk
-							}),		
-							q(8627, {	-- Avenger's Breastplate	
-								i(21389),	-- Avenger's Breastplate
-							}),		
-							q(8562, {	-- Conqueror's Breastplate	
-								i(21331),	-- Conqueror's Breastplate
-							}),	
-						}),
-					}),
-					n(0, {		-- Zone Drop
-						n(15264, {	-- Anubisath Sentinel	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15277, {	-- Anubisath Defender	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
-							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15311, {	-- Anubisath Warder	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
-							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15262, {	-- Obsidian Eradicator	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15312, {	-- Obisidan Nullifier	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
-							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15247, {	-- Qiraji Brainwasher	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15252, {	-- Qiraji Champion	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
-							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15249, {	-- Qiraji Lasher	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15246, {	-- Qiraji Mindslayer	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
-							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15250, {	-- Qiraji Slayer	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15233, {	-- Vekniss Guardian	
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15240, {	-- Vekniss Hive Crawler	
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
-							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15229, {	-- Vekniss Soldier	
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15235, {	-- Vekniss Stinger	
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15230, {	-- Vekniss Warrior	
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15236, {	-- Vekniss Wasp	
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),	
 					}),
 				},
 				["isRaid"] = true,
