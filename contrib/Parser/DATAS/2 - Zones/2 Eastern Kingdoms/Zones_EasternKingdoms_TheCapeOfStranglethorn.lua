@@ -7,15 +7,27 @@ _.Zones =
 		m(673, {	-- The Cape of Stranglethorn
 			["groups"] = {			
 				n(-3, { 	-- Holidays					
---[[					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
+								q(8674, {	-- Winterhoof the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 39.9, 72.5",			
+									["qg"] = 15576,	-- Elder Winterhoof		
+								}),
+
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+--[[
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -24,7 +36,7 @@ _.Zones =
 						["achievementID"] = 1693,    -- Fool For Love
 						["u"] = 18,
 					}),
---]]					
+--]]
 					n(-51, {     -- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests

@@ -9,6 +9,24 @@ _.Instances =
 			c(236, {    -- Stratholme
 				["groups"] = {
 					q(35563, {	-- Main Gate
+						n(-47, {	-- Lunar Festival						
+							["groups"] = {						
+								n(-17, {	-- Quests				
+									q(8727, {	-- Farwhisper the Elder			
+										["groups"] = {			
+											-- i(21100),	-- Coin of Ancestry	
+											-- i(21746, {	-- Lucky Red Envelope	
+												--i(21745),	-- Elder's Moonstone
+												--i(21744),	-- Lucky Rocket Cluster
+											--}),		
+										},			
+										["description"] = "Location: 79.8, 21.8",			
+										["qg"] = 15607,	-- Elder Farwhisper		
+									}),
+								}),					
+							},						
+							["achievementID"] = 913, -- To Honor One's Elders						
+						}),
 						n(-17, {	-- Quests
 							q(27208, {	-- The Dreadlord Balnazzar
 								i(65998),	-- Balnazzar's Hide

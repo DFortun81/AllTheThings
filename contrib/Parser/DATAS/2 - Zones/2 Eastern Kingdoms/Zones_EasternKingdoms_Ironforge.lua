@@ -6,12 +6,21 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(341, { 	-- Ironforge
 			["groups"] = {
-				n(-3, { 	-- Holidays
---[[				
+				n(-3, { 	-- Holidays				
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15871, q(  8866)),	-- Bronzebeard the Elder							
+								q(8866, {	-- Bronzebeard the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 29, 16",			
+									["qg"] = 15871,	-- Elder Bronzebeard		
+								}),
 								qg(15895, q(  8867)),	-- Lunar Fireworks
 								qg(15892, qa( 8870)),	-- The Lunar Festival
 								qg(15895, q(  8883)),	-- Valadar Starsong
@@ -20,7 +29,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
---]]
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 --[[						

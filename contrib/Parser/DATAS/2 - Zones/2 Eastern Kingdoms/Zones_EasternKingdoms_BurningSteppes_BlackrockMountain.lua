@@ -10,8 +10,28 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15585, q(  8683)),	-- Dawnstrider the Elder
-								qg(15557, q(  8636)),	-- Rumblerock the Elder
+								q(8683, {	-- Dawnstrider the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 53.6, 24.5",			
+									["qg"] = 15585,	-- Elder Dawnstrider		
+								}),
+								q(8636, {	-- Rumblerock the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 70.1, 45.4",			
+									["qg"] = 15557,	-- Elder Rumblerock		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

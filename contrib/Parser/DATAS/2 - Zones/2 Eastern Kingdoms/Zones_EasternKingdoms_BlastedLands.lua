@@ -72,7 +72,17 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15563, q(  8647)),	-- Bellowrage the Elder
+								q(8647, {	-- Bellowrage the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 54.3, 49.5",			
+									["qg"] = 15563,	-- Elder Bellowrage		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
