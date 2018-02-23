@@ -6,16 +6,60 @@ _.Zones =
 	m(485, { 	-- Northrend
 		m(495, { 	-- The Storm Peaks
 			["groups"] = {							
-				n(-3, { 	-- Holidays					
---[[				
+				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
+								q(13015, {	-- Fargal the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 28.8, 73.6",			
+									["qg"] = 30359,	-- Elder Fargal		
+								}),
+								q(13028, {	-- Graymane the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 41, 84.6",			
+									["qg"] = 30370,	-- Elder Graymane		
+								}),
+								q(13032, {	-- Muraco the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 64.6, 51.3",			
+									["qg"] = 30374,	-- Elder Muraco		
+								}),
+								q(13020, {	-- Stonebeard the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 31.2, 37.6",			
+									["qg"] = 30375,	-- Elder Stonebeard		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+--[[
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests

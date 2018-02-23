@@ -6,16 +6,27 @@ _.Zones =
 	m(485, { 	-- Northrend
 		m(496, {	-- Zul'Drak
 			["groups"] = {							
-				n(-3, { 	-- Holidays					
---[[					
+				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
+								q(13027, {	-- Tauros the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 58.8, 56",			
+									["qg"] = 30369,	-- Elder Tauros		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+--[[
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests

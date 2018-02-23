@@ -6,16 +6,38 @@ _.Zones =
 	m(485, { 	-- Northrend
 		m(493, { 	-- Sholazar Basin
 			["groups"] = {			
-				n(-3, { 	-- Holidays					
---[[					
+				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
+								q(13018, {	-- Sandrene the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 49.8, 63.6",			
+									["qg"] = 30362,	-- Elder Sandrene		
+								}),
+								q(13024, {	-- Wanikaya the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 63.8, 49",			
+									["qg"] = 30365,	-- Elder Wanikaya		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+--[[
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
