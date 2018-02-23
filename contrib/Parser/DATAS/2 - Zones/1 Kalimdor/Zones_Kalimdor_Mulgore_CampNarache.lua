@@ -10,7 +10,17 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15575, q(  8673)),	-- Bloodhoof the Elder
+								q(8673, {	-- Bloodhoof the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 48.3, 53.4",			
+									["qg"] = 15575,	-- Elder Bloodhoof		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

@@ -137,8 +137,28 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15581, q(  8679)),	-- Grimtotem the Elder
-								qg(15587, q(  8685)),	-- Mistwalker the Elder
+								q(8679, {	-- Grimtotem the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 76.7, 37.9",			
+									["qg"] = 15581,	-- Elder Grimtotem		
+								}),
+								q(8685, {	-- Mistwalker the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 62, 31",			
+									["qg"] = 15587,	-- Elder Mistwalker		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

@@ -10,7 +10,17 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15572, q(  8670)),	-- Runetotem the Elder
+								q(8670, {	-- Runetotem the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 53.2, 43.6",			
+									["qg"] = 15572,	-- Elder Runetotem		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

@@ -10,7 +10,17 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15583, q(  8681)),	-- Thunderhorn the Elder
+								q(8681, {	-- Thunderhorn the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 50.4, 76.1",			
+									["qg"] = 15583,	-- Elder Thunderhorn		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

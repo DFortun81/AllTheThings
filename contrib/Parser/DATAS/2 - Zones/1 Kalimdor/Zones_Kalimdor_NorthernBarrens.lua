@@ -10,8 +10,28 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15597, q(  8717)),	-- Moonwarden the Elder
-								qg(15582, q(  8680)),	-- Windtotem the Elder
+								q(8717, {	-- Moonwarden the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 48.5, 59.3",			
+									["qg"] = 15597,	-- Elder Moonwarden		
+								}),
+								q(8680, {	-- Windtotem the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 68.4, 70",			
+									["qg"] = 15582,	-- Elder Windtotem		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

@@ -50,6 +50,25 @@ _.Zones =
 					}),	
 				}),
 				n(-3, { 	-- Holidays
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+								q(8720, {	-- Skygleam the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 64.7, 79.3",			
+									["qg"] = 15600,	-- Elder Skygleam		
+								}),
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+						["u"] = 17,
+					}),
 					h(n(-54, {     -- Midsummer Fire Festival (Horde)
 						["groups"] = {
 							n(-17, { 	-- Quests

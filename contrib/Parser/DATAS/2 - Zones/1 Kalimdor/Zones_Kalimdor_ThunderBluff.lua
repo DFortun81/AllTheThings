@@ -15,7 +15,17 @@ _.Zones =
 								qg(15891, qh( 8874)),	-- The Lunar Festival
 								qg(15891, qh( 8875)),	-- The Lunar Festival
 								qg(15895, q(  8883)),	-- Valadar Starsong
-								qg(15580, q( 8678)),	-- Wheathoof the Elder	
+								q(8678, {	-- Wheathoof the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 73, 23.3",			
+									["qg"] = 15580,	-- Elder Wheathoof		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
