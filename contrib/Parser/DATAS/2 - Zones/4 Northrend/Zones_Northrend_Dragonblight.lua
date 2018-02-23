@@ -6,16 +6,49 @@ _.Zones =
 	m(485, { 	-- Northrend
 		m(488, { 	-- Dragonblight
 			["groups"] = {							
-				n(-3, { 	-- Holidays					
---[[					
+				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
+								q(13014, {	-- Morthie the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 29.8, 55.8",			
+									["qg"] = 30358,	-- Elder Morthie		
+								}),
+								q(13031, {	-- Skywarden the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 35, 48.4",			
+									["qg"] = 30373,	-- Elder Skywarden		
+								}),
+								q(13019, {	-- Thoim the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 48.8, 78.2",			
+									["qg"] = 30363,	-- Elder Thoim		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+--[[
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests

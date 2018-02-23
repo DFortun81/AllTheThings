@@ -8,6 +8,25 @@ _.Instances =
 		["groups"] = {
 			c(277, { 	-- Halls of Stone
 				["groups"] = {
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+								q(13066, {	-- Yurauk the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 29.6, 61.6",			
+									["qg"] = 30535,	-- Elder Yurauk		
+								}),
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+						["u"] = 17,
+					}),
 					d(1, {		-- Normal
 						n(0, {		-- Zone Drop
 							i(35681),	-- Unrelenting Blade

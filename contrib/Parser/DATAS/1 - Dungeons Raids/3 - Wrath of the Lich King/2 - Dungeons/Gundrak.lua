@@ -8,6 +8,25 @@ _.Instances =
 		["groups"] = {
 			c(274, { 	-- Gundrak
 				["groups"] = {
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+								q(13065, {	-- Ohanzee the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 46.6, 61.8",			
+									["qg"] = 30537,	-- Elder Ohanzee		
+								}),
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+						["u"] = 17,
+					}),
 					d(1, {		-- Normal
 						n(0, {		-- Zone Drop
 							i(35593),	-- Steel Bear Trap Bracers

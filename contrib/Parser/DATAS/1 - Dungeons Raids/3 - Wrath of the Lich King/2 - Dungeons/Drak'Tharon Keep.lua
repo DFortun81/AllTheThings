@@ -8,6 +8,25 @@ _.Instances =
 		["groups"] = {
 			c(273, { 	-- Drak'Tharon Keep
 				["groups"] = {
+					n(-47, {     -- Lunar Festival
+						["groups"] = {
+							n(-17, { 	-- Quests
+								q(13023, {	-- Kilias the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 68.6, 79",			
+									["qg"] = 30534,	-- Elder Kilias		
+								}),
+							}),
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+						["u"] = 17,
+					}),
 					n(-17, {	-- Quests 	
 						q(12238,{ 	-- Cleansing Drak'Tharon
 							i(40755), 	-- Enticing Sabatons
