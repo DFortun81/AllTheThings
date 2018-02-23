@@ -10,7 +10,17 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15569, q(  8653)),	-- Goldwell the Elder
+								q(8653, {	-- Goldwell the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 53.9, 49.9",			
+									["qg"] = 15569,	-- Elder Goldwell		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
@@ -68,7 +78,7 @@ _.Zones =
 							n(-17, { 	-- Quests
 								qh(11742),	-- Desecrate this Fire!
 								qg(25895, qa(11813)),	-- Honor the Flame
-								qg(25962, qa( 11882)),	-- Playing with Fire
+								qg(25962, qa(11882)),	-- Playing with Fire
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden

@@ -10,8 +10,28 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15566, q(  8650)),	-- Snowcrown the Elder
-								qg(15592, q(  8688)),	-- Windrun the Elder
+								q(8650, {	-- Snowcrown the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 75, 54",			
+									["qg"] = 15566,	-- Elder Snowcrown		
+								}),
+								q(8688, {	-- Windrun the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 35.6, 68.8",			
+									["qg"] = 15592,	-- Elder Windrun		
+								}),
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders

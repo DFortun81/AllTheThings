@@ -10,10 +10,30 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15562, q(  8646)),	-- Hammershout the Elder
+								q(8646, {	-- Hammershout the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 34.2, 50.6",			
+									["qg"] = 15562,	-- Elder Hammershout		
+								}),
 								qg(15895, q(  8867)),	-- Lunar Fireworks
 								qg(15892, qa( 8871)),	-- The Lunar Festival
-								qg(15565, q(  8649)),	-- Stormbrow the Elder
+								q(8649, {	-- Stormbrow the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 39.8, 63.7",			
+									["qg"] = 15565,	-- Elder Stormbrow		
+								}),
 								qg(15895, q(  8883)),	-- Valadar Starsong
 							}),
 						},

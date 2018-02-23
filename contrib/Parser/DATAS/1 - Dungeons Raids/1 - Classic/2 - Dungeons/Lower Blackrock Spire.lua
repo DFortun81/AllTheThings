@@ -8,6 +8,24 @@ _.Instances =
 		["groups"] = {
 			c(229, { 	-- Lower Blackrock Spire
 				["groups"] = {
+					n(-47, {	-- Lunar Festival						
+						["groups"] = {						
+							n(-17, {	-- Quests				
+								q(8644, {	-- Stonefort the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 61.9, 40.5",			
+									["qg"] = 15560,	-- Elder Stonefort		
+								}),
+							}),					
+						},						
+						["achievementID"] = 913, -- To Honor One's Elders						
+					}),
 					n(-17, {	-- Quests 			
 						q(27440, {	-- Trolls, Ogres, and Orcs, Oh My!
 							i(65933),	-- Highlord's Chestpiece
