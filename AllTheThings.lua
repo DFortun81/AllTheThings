@@ -45,12 +45,61 @@ local GetItemInfoInstant = _G["GetItemInfoInstant"];
 local GetItemSpecInfo = _G["GetItemSpecInfo"];
 local GetTitleName = _G["GetTitleName"];
 local IsDressableItem = _G["IsDressableItem"];
-local IsQuestFlaggedCompleted = _G["IsQuestFlaggedCompleted"];
+--local IsQuestFlaggedCompleted = _G["IsQuestFlaggedCompleted"];
 local PlayerHasToy = _G["PlayerHasToy"];
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
+
+-- Coroutine Helper Functions
+app.refreshing = {};
+local function OnUpdate(self)
+	for i=#self.__stack,1,-1 do
+		if not self.__stack[i][1]() then
+			table.remove(self.__stack, i);
+			if #self.__stack < 1 then
+				self:SetScript("OnUpdate", nil);
+			end
+		end
+	end
+end
+local function Push(self, name, method)
+	if not self.__stack then
+		self.__stack = {};
+		self:SetScript("OnUpdate", OnUpdate);
+	elseif #self.__stack < 1 then 
+		self:SetScript("OnUpdate", OnUpdate);
+	end
+	--print("Push->" .. name);
+	table.insert(self.__stack, { method, name });
+end
+local function StartCoroutine(name, method)
+	if method and not app.refreshing[name] then
+		-- Lock out during PVP
+		local inInstance, instanceType = IsInInstance();
+		if inInstance and (instanceType == "pvp" or instanceType == "arena") then
+			--print("PVPing, skipping " .. name);
+			app:GetWindow("CurrentInstance"):Hide();
+			return nil;
+		end
+		
+		local instance = coroutine.create(method);
+		app.refreshing[name] = true;
+		Push(app, name, function()
+			-- Check the status of the coroutine
+			if instance and coroutine.status(instance) ~= "dead" then
+				local ok, err = coroutine.resume(instance);
+				if ok then return true;	-- This means more work is required.
+				else
+					-- Show the error. Returning nothing is the same as canceling the work.
+					print(err);
+				end
+			end
+			app.refreshing[name] = nil;
+		end);
+	end
+end
 
 -- Data Lib
 local AllTheThingsTempData = {}; 	-- For temporary data.
@@ -452,55 +501,6 @@ local function GetProgressColorText(progress, total)
 end
 CS:Hide();
 
--- Coroutine Helper Functions
-app.refreshing = {};
-local function OnUpdate(self)
-	for i=#self.__stack,1,-1 do
-		if not self.__stack[i][1]() then
-			table.remove(self.__stack, i);
-			if #self.__stack < 1 then
-				self:SetScript("OnUpdate", nil);
-			end
-		end
-	end
-end
-local function Push(self, name, method)
-	if not self.__stack then
-		self.__stack = {};
-		self:SetScript("OnUpdate", OnUpdate);
-	elseif #self.__stack < 1 then 
-		self:SetScript("OnUpdate", OnUpdate);
-	end
-	--print("Push->" .. name);
-	table.insert(self.__stack, { method, name });
-end
-local function StartCoroutine(name, method)
-	if method and not app.refreshing[name] then
-		-- Lock out during PVP
-		local inInstance, instanceType = IsInInstance();
-		if inInstance and (instanceType == "pvp" or instanceType == "arena") then
-			--print("PVPing, skipping " .. name);
-			app:GetWindow("CurrentInstance"):Hide();
-			return nil;
-		end
-		
-		local instance = coroutine.create(method);
-		app.refreshing[name] = true;
-		Push(app, name, function()
-			-- Check the status of the coroutine
-			if instance and coroutine.status(instance) ~= "dead" then
-				local ok, err = coroutine.resume(instance);
-				if ok then return true;	-- This means more work is required.
-				else
-					-- Show the error. Returning nothing is the same as canceling the work.
-					print(err);
-				end
-			end
-			app.refreshing[name] = nil;
-		end);
-	end
-end
-
 -- Source ID Harvesting Lib
 local SourceIDs = {};
 local DressUpModel = CreateFrame('DressUpModel');
@@ -632,6 +632,17 @@ local function SetPortraitIcon(self, data, x)
 		self:SetTexCoord(0, 1, 0, 1);
 		return true;
 	end
+end
+
+-- Quest Completion Lib
+local DirtyQuests = {};
+local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
+  --print("Completed Quest ID #" .. key);
+  DirtyQuests[key] = true;
+  rawset(t, key, value);
+end});
+local IsQuestFlaggedCompleted = function(questID)
+	return questID and CompletedQuests[questID];
 end
 
 -- Quest Name Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
@@ -2409,7 +2420,7 @@ app.BaseEncounter = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
-			if t.questID and IsQuestFlaggedCompleted(t.questID) then
+			if IsQuestFlaggedCompleted(t.questID) then
 				return true;
 			end
 			--[[
@@ -2768,7 +2779,7 @@ app.BaseItem = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
-			return t.questID and IsQuestFlaggedCompleted(t.questID);
+			return IsQuestFlaggedCompleted(t.questID);
 		elseif key == "itemModID" then
 			return 1;
 		elseif key == "name" then
@@ -2919,7 +2930,7 @@ app.BaseNPC = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
-			if t.questID and IsQuestFlaggedCompleted(t.questID) then
+			if IsQuestFlaggedCompleted(t.questID) then
 				return true;
 			end
 			--[[
@@ -2952,7 +2963,7 @@ app.BaseObject = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
-			return t.questID and IsQuestFlaggedCompleted(t.questID);
+			return IsQuestFlaggedCompleted(t.questID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -4129,6 +4140,40 @@ function app.UniqueModeItemRemovalHelperOnlyMain(sourceID, oldState)
 end
 app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
 
+function app.QuestCompletionHelper(questID)
+	-- Search ATT for the related quests.
+	local searchResults = SearchForQuestID(questID);
+	if searchResults and #searchResults > 0 then
+		-- Attempt to cleanly refresh the data.
+		local fresh = false;
+		for i,result in ipairs(searchResults) do
+			if result.visible and result.parent and result.parent.total then
+				if result.total then
+					-- This is an item that has a relative set of groups
+					UpdateParentProgress(result);
+					
+					-- If this is NOT a group...
+					if not result.groups and result.collectible then
+						-- If we've collected the item, use the "Show Collected Items" filter.
+						result.visible = app.CollectedItemVisibilityFilter(result);
+					end
+				else	
+					UpdateParentProgress(result.parent);
+					
+					if result.collectible then
+						-- If we've collected the item, use the "Show Collected Items" filter.
+						result.visible = app.CollectedItemVisibilityFilter(result);
+					end
+				end
+				fresh = true;
+			end
+		end
+		
+		-- If the data is fresh, don't force a refresh.
+		app:RefreshData(fresh, true);
+	end
+end
+
 local function MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
 		-- Right Button opens the Options menu.
@@ -4224,7 +4269,7 @@ local function CreateMiniListForGroup(group)
 	local popout = app:GetWindow((group.parent and group.parent.text or "") .. group.text);
 	if group.s then
 		-- This is an item that has an appearance
-		local mainItem = setmetatable({ ["groups"] = {} }, { __index = group });
+		local mainItem = setmetatable({ ["groups"] = {}, ['hideText'] = true }, { __index = group });
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
 		if sourceInfo then
 			-- Go through all of the shared appearances and see if we're "unlocked" any of them.
@@ -4233,7 +4278,9 @@ local function CreateMiniListForGroup(group)
 				if otherSourceID ~= group.s then
 					local attSearch = SearchForSourceIDQuickly(otherSourceID);
 					if attSearch then
-						tinsert(mainItem.groups, setmetatable({}, { __index = attSearch })); 
+						local newItem = setmetatable({ ['hideText'] = true }, { __index = attSearch });
+						CacheFields(newItem);
+						tinsert(mainItem.groups, newItem); 
 					else
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 						if otherSourceInfo then
@@ -4250,6 +4297,7 @@ local function CreateMiniListForGroup(group)
 				end
 			end
 		end
+		CacheFields(mainItem);
 		popout.data = {
 			["text"] = "Shared Appearances",
 			["description"] = "The items in this list are shared appearances for the following item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
@@ -4260,8 +4308,9 @@ local function CreateMiniListForGroup(group)
 		};
 	elseif group.questID then
 		-- This is a quest object. Let's show prereqs and breadcrumbs.
-		local mainQuest = setmetatable({ ["collectible"] = true }, { __index = group });
+		local mainQuest = setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = group });
 		local groups = { mainQuest };
+		CacheFields(mainQuest);
 		
 		-- Show Quest Prereqs
 		if mainQuest.sourceQuestID then
@@ -4273,7 +4322,7 @@ local function CreateMiniListForGroup(group)
 					if sourceQuest and #sourceQuest > 0 then
 						-- Only care about the first search result.
 						if app.GroupFilter(sourceQuest[1]) then
-							sourceQuest = setmetatable({ ["collectible"] = true }, { __index = sourceQuest[1] });
+							sourceQuest = setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = sourceQuest[1] });
 							if sourceQuest.sourceQuestID and #sourceQuest.sourceQuestID > 0 then
 								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
 								for j, subSourceQuestID in ipairs(sourceQuest.sourceQuestID) do
@@ -4290,6 +4339,7 @@ local function CreateMiniListForGroup(group)
 					
 					-- If the quest was valid, attach it.
 					if sourceQuest then
+						CacheFields(sourceQuest);
 						tinsert(prereqs, sourceQuest);
 					end
 				end
@@ -4339,10 +4389,12 @@ local function CreateMiniListForGroup(group)
 		popout.data = setmetatable({ ["progress"] = 0, ["total"] = 0 }, { __index = group });
 	else
 		-- This is a standalone item
+		local newItem = setmetatable({ ['hideText'] = true }, { __index = group });
+		CacheFields(newItem);
 		popout.data = {
 			["text"] = "Standalone Item",
 			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
-			["groups"] = { setmetatable({ }, { __index = group }) },
+			["groups"] = { newItem },
 			["visible"] = true,
 			["expanded"] = true,
 			["progress"] = 0,
@@ -5292,6 +5344,24 @@ local function SetRowData(self, data)
 		self:Show();
 	else
 		self:Hide();
+	end
+end
+local function UpdateRowProgress(group)
+	if group.collectible then
+		group.progress = group.collected and 1 or 0;
+		group.total = 1;
+	else
+		group.progress = 0;
+		group.total = 0;
+	end
+	if group.groups then
+		for i,subgroup in ipairs(group.groups) do
+			UpdateRowProgress(subgroup);
+			if subgroup.total then
+				group.progress = group.progress + subgroup.progress;
+				group.total = group.total + subgroup.total;
+			end
+		end
 	end
 end
 local function UpdateVisibleRowData(self)
@@ -6551,7 +6621,10 @@ app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
+	GetQuestsCompleted(CompletedQuests);
+	wipe(DirtyQuests);
 	app:RefreshData(false, true);
+	app:RegisterEvent("QUEST_LOG_UPDATE");
 	RefreshSaves();
 	RefreshLocation();
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(app.DisplayName, {
@@ -6604,6 +6677,13 @@ app.events.COMPANION_LEARNED = function(...)
 end
 app.events.COMPANION_UNLEARNED = function(...)
 	app:RefreshData(false, true);
+end
+app.events.QUEST_LOG_UPDATE = function()
+	GetQuestsCompleted(CompletedQuests);
+	for questID,completed in pairs(DirtyQuests) do
+		app.QuestCompletionHelper(tonumber(questID));
+	end
+	wipe(DirtyQuests);
 end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not GetDataSubMember("CollectedToys", itemID) then
