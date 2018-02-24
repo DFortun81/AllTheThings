@@ -694,7 +694,7 @@ local function GetCachedSearchResults(search, method, ...)
 					local count = 0;
 					local abbrevs = L("ABBREVIATIONS");
 					for i,j in ipairs(group) do
-						if j.parent and j.parent.parent then
+						if not j.hideText and j.parent and j.parent.parent then
 							local text = BuildSourceText(j, 0, j.qg);
 							for source,replacement in pairs(abbrevs) do
 								text = string.gsub(text, source,replacement);
