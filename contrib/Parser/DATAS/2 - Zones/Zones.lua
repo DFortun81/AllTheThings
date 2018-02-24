@@ -466,6 +466,8 @@ _.Zones =
 				}),
 			}),
 			m(1033, {	-- Suramar
+				n(-214, { -- Nightborne Home
+				}),
 				n(-7, { 	-- World Bosses
 				}),
 			}),

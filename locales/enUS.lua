@@ -409,6 +409,7 @@ AllTheThings.Locales.enUS = {
 		[-210] = "Interface\\Icons\\achievement_alliedrace_nightborne",			-- Nightborne
 		[-212] = "Interface\\WorldMap\\TreasureChest_64",						-- Treasure Chest
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",		-- The Underbelly
+		[-214] = "Interface\\Icons\\achievement_alliedrace_nightborne",			-- Nightborne
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-318] = "Interface\\Icons\\garrison_purplearmor",						-- Armor
@@ -828,6 +829,7 @@ AllTheThings.Locales.enUS = {
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
+		[-214] = GetSpellInfo(262061).." "..HOME,								-- Nightborne Home
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",

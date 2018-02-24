@@ -5,7 +5,21 @@ _.Zones =
 {
 	m(1007, { 	-- The Broken Isles
 		m(1033, {	-- Suramar
-			["groups"] = {				
+			["groups"] = {
+				n(-214, { -- Nightborne Home
+					["groups"] = {
+						n(-17, { -- Quests
+							q(49933, { -- For the Horde
+								["groups"] = {
+									--i(157028), -- Letter from Lady Sylvanas Windrunner
+									i(157759), -- Shal'dorei Tabard
+								},
+								["qg"] = 131326, -- First Arcanist Thalyssra
+							}),
+						}),	
+					},
+					["races"]  = { 27 }, -- Nightborne
+				}),
 				n(-7, { 	-- World Bosses
 					["groups"] = {
 						cr(109943, e(1790, { -- Ana-Mouz 
