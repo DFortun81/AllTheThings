@@ -694,8 +694,9 @@ local function GetCachedSearchResults(search, method, ...)
 					local count = 0;
 					local abbrevs = L("ABBREVIATIONS");
 					for i,j in ipairs(group) do
-						if not j.hideText and j.parent and j.parent.parent then
+						if not j.hideText and j.parent and j.parent.parent and (GetDataMember("ShowCompleteSourceLocations") or (not j.collected and not j.parent.saved)) then
 							local text = BuildSourceText(j, 0, j.qg);
+							--print(text .. tostring(j.parent.questID or 0) .. ", " .. tostring(j.parent.saved or 0));
 							for source,replacement in pairs(abbrevs) do
 								text = string.gsub(text, source,replacement);
 							end
@@ -4329,19 +4330,17 @@ local function CreateMiniListForGroup(group)
 									subSourceQuests[subSourceQuestID] = true;
 								end
 							end
+							CacheFields(sourceQuest);
 						else
 							sourceQuest = nil;
 						end
 					else
 						-- Create a Quest Object.
-						sourceQuest = app.CreateQuest(sourceQuestID, { ["visible"] = true, ["collectible"] = true });
+						sourceQuest = app.CreateQuest(sourceQuestID, { ["visible"] = true, ["collectible"] = true, ['hideText'] = true });
 					end
 					
 					-- If the quest was valid, attach it.
-					if sourceQuest then
-						CacheFields(sourceQuest);
-						tinsert(prereqs, sourceQuest);
-					end
+					if sourceQuest then tinsert(prereqs, sourceQuest); end
 				end
 				
 				-- Convert the subSourceQuests table into an array
@@ -4757,9 +4756,22 @@ local function CreateSettingsMenu()
 			GameTooltip:Show();
 		end);
 		
+		-- This creates the "Show Completed Locations" Checkbox --
+		self.ShowCompleteSourceLocations = CreateFrame("CheckButton", name .. "-ShowCompleteSourceLocations", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.ShowCompleteSourceLocations, self, "Show Completed Locations", 35, -330, GetDataMember("ShowCompleteSourceLocations"));
+		self.ShowCompleteSourceLocations:SetScript("OnClick", function(self)
+			SetDataMember("ShowCompleteSourceLocations", self:GetChecked());
+			wipe(searchCache);
+		end);
+		self.ShowCompleteSourceLocations:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
 		-- This creates the "Show More Locations" Checkbox --
 		self.ShowAllSources = CreateFrame("CheckButton", name .. "-ShowAllSources", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowAllSources, self, "Show More Locations", 35, -330, GetDataMember("ShowAllSources"));
+		CreateCheckBox(self.ShowAllSources, self, "Show More Locations", 35, -350, GetDataMember("ShowAllSources"));
 		self.ShowAllSources:SetScript("OnClick", function(self)
 			SetDataMember("ShowAllSources", self:GetChecked());
 			wipe(searchCache);
@@ -4769,11 +4781,6 @@ local function CreateSettingsMenu()
 			GameTooltip:SetText ("Enable this option if you want to see more than one database location summary in the tooltip.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-		
-		
-		
-		
-		
 		
 
 
@@ -6583,6 +6590,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Tooltip Settings
 	GetDataMember("ShowLootSpecializationRequirements", true);
 	GetDataMember("TreatIncompleteQuestsAsCollectible", false);
+	GetDataMember("ShowCompleteSourceLocations", true);
 	GetDataMember("EnableTooltipInformation", true);
 	GetDataMember("DisplayTooltipsInCombat", true);
 	GetDataMember("ShowSharedAppearances", true);
