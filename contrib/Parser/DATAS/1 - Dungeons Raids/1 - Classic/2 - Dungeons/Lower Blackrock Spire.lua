@@ -33,6 +33,122 @@ _.Instances =
 							i(65981),	-- War Master's Pauldrons
 						}),
 					}),
+					n(0, {		-- Zone Drop
+						n(9259, {	-- Firebrand Grunt
+							i(15749, {	-- Pattern: Volcanic Breastplate
+								i(15053),	-- Volcanic Breastplate
+							}),
+							nld({     -- Legacy
+								i(16680), 	-- Beaststalker's Belt
+								i(16735),	-- Bracers of Valor
+								i(16713),	-- Shadowcraft Belt
+							}),																				
+						}),
+						n(9260, {	-- Firebrand Legionnaire
+							i(15775, {	-- Pattern: Volcanic Shoulders
+								i(15055), 	-- Volcanic Shoulders
+							}),
+							nld({     -- Legacy
+								i(16680), 	-- Beaststalker's Belt
+								i(16735),	-- Bracers of Valor
+								i(16713),	-- Shadowcraft Belt
+							}),																				
+						}),
+						n(9264, {	-- Firebrand Pyromancer
+							i(14513, {	-- Pattern: Robe of the Archmage
+								i(14152),	-- Robe of the Archmage
+							}),
+							nld({     -- Legacy
+								i(16673), 	-- Cord of Elements
+								i(16683),	-- Magister's Bindings
+							}),																				
+						}),
+						n(9257, {	-- Scarshield Warlock
+							["groups"] = {	
+								nld({     -- Legacy
+									i(16673), 	-- Cord of Elements
+									i(16703),	-- Dreadmist Bracers
+								}),																				
+								n(10263, {	-- Burning Felguard
+									["groups"] = {	
+										i(13181),	-- Demonskin Gloves
+										i(13182),	-- Phase Blade
+									},
+									["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
+								}),
+							},
+							["description"] = "DO NOT KILL this mob if trying to get the Burning Felguard to spawn.",
+						}),
+						n(9216, { 	-- Spirestone Warlord
+							i(13260)	-- Wind Dancer Boots
+						}),
+						nld({     -- Legacy
+							n(9693, { 	-- Bloodaxe Evoker
+								i(16673), 	-- Cord of Elements
+								i(16683),	-- Magister's Bindings
+							}),
+							n(9692, {	-- Bloodaxe Raider
+								i(16680), 	-- Beaststalker's Belt
+								i(16716),	-- Wildheart Belt
+							}),
+							n(9717, { 	-- Bloodaxe Summoner
+								i(16696), 	-- Devout Belt
+								i(16703),	-- Dreadmist Bracers
+							}),
+							n(9716, { 	-- Bloodaxe Warmonger
+								i(16735),	-- Bracers of Valor
+								i(16713),	-- Shadowcraft Belt
+							}),
+							n(9261, { 	-- Firebrand Darkweaver
+								i(16696), 	-- Devout Belt
+								i(16703),	-- Dreadmist Bracers
+							}),
+							n(9263, { 	-- Firebrand Dreadweaver
+								i(16696), 	-- Devout Belt
+								i(16703),	-- Dreadmist Bracers
+							}),
+							n(9262, {	-- Firebrand Invoker
+								i(16673), 	-- Cord of Elements
+								i(16683),	-- Magister's Bindings
+							}),
+							n(9097, { 	-- Scarshield Legionnaire
+								i(16735),	-- Bracers of Valor
+								i(16713),	-- Shadowcraft Belt
+							}),
+							n(9258, { 	-- Scarshield Raider
+								i(16680), 	-- Beaststalker's Belt
+								i(16716),	-- Wildheart Belt
+							}),
+							n(9098, { 	-- Scarshield Spellbinder
+								i(16696), 	-- Devout Belt
+								i(16683),	-- Magister's Bindings
+							}),				
+							n(9267, { 	-- Smolderthorn Axe Thrower
+								i(16735),	-- Bracers of Valor
+							}),
+							n(9268, { 	-- Smolderthorn Berserker
+								i(16736),	-- Belt of Valor
+							}),
+							n(9241, { 	-- Smolderthorn Headhunter
+								i(16680), 	-- Beaststalker's Belt
+							}),
+							n(9239, { 	-- Smolderthorn Mystic
+								i(16685),	-- Magister's Belt
+							}),
+							n(9269, { 	-- Smolderthorn Seer
+								i(16703),	-- Dreadmist Bracers
+							}),
+							n(9265, { 	-- Smolderthorn Shadow Hunter
+								i(16713),	-- Shadowcraft Belt
+							}),
+							n(9240, { 	-- Smolderthorn Shadow Priest
+								i(16696), 	-- Devout Belt
+							}),
+							n(9266, { 	-- Smolderthorn Witch Doctor
+								i(16673), 	-- Cord of Elements
+							}),
+						}),																				
+					}),
 					n(9218, {	-- Spirestone Battle Lord (Rare)
 						["groups"] = {	
 							dr(51, i(13284)),	-- Swiftdart Battleboots
@@ -173,122 +289,6 @@ _.Instances =
 							i(12790),	-- Arcanite Champion
 						}),
 					})),
-					n(0, {		-- Zone Drop
-						n(9259, {	-- Firebrand Grunt
-							i(15749, {	-- Pattern: Volcanic Breastplate
-								i(15053),	-- Volcanic Breastplate
-							}),
-							nld({     -- Legacy
-								i(16680), 	-- Beaststalker's Belt
-								i(16735),	-- Bracers of Valor
-								i(16713),	-- Shadowcraft Belt
-							}),																				
-						}),
-						n(9260, {	-- Firebrand Legionnaire
-							i(15775, {	-- Pattern: Volcanic Shoulders
-								i(15055), 	-- Volcanic Shoulders
-							}),
-							nld({     -- Legacy
-								i(16680), 	-- Beaststalker's Belt
-								i(16735),	-- Bracers of Valor
-								i(16713),	-- Shadowcraft Belt
-							}),																				
-						}),
-						n(9264, {	-- Firebrand Pyromancer
-							i(14513, {	-- Pattern: Robe of the Archmage
-								i(14152),	-- Robe of the Archmage
-							}),
-							nld({     -- Legacy
-								i(16673), 	-- Cord of Elements
-								i(16683),	-- Magister's Bindings
-							}),																				
-						}),
-						n(9257, {	-- Scarshield Warlock
-							["groups"] = {	
-								nld({     -- Legacy
-									i(16673), 	-- Cord of Elements
-									i(16703),	-- Dreadmist Bracers
-								}),																				
-								n(10263, {	-- Burning Felguard
-									["groups"] = {	
-										i(13181),	-- Demonskin Gloves
-										i(13182),	-- Phase Blade
-									},
-									["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
-								}),
-							},
-							["description"] = "DO NOT KILL this mob if trying to get the Burning Felguard to spawn.",
-						}),
-						n(9216, { 	-- Spirestone Warlord
-							i(13260)	-- Wind Dancer Boots
-						}),
-						nld({     -- Legacy
-							n(9693, { 	-- Bloodaxe Evoker
-								i(16673), 	-- Cord of Elements
-								i(16683),	-- Magister's Bindings
-							}),
-							n(9692, {	-- Bloodaxe Raider
-								i(16680), 	-- Beaststalker's Belt
-								i(16716),	-- Wildheart Belt
-							}),
-							n(9717, { 	-- Bloodaxe Summoner
-								i(16696), 	-- Devout Belt
-								i(16703),	-- Dreadmist Bracers
-							}),
-							n(9716, { 	-- Bloodaxe Warmonger
-								i(16735),	-- Bracers of Valor
-								i(16713),	-- Shadowcraft Belt
-							}),
-							n(9261, { 	-- Firebrand Darkweaver
-								i(16696), 	-- Devout Belt
-								i(16703),	-- Dreadmist Bracers
-							}),
-							n(9263, { 	-- Firebrand Dreadweaver
-								i(16696), 	-- Devout Belt
-								i(16703),	-- Dreadmist Bracers
-							}),
-							n(9262, {	-- Firebrand Invoker
-								i(16673), 	-- Cord of Elements
-								i(16683),	-- Magister's Bindings
-							}),
-							n(9097, { 	-- Scarshield Legionnaire
-								i(16735),	-- Bracers of Valor
-								i(16713),	-- Shadowcraft Belt
-							}),
-							n(9258, { 	-- Scarshield Raider
-								i(16680), 	-- Beaststalker's Belt
-								i(16716),	-- Wildheart Belt
-							}),
-							n(9098, { 	-- Scarshield Spellbinder
-								i(16696), 	-- Devout Belt
-								i(16683),	-- Magister's Bindings
-							}),				
-							n(9267, { 	-- Smolderthorn Axe Thrower
-								i(16735),	-- Bracers of Valor
-							}),
-							n(9268, { 	-- Smolderthorn Berserker
-								i(16736),	-- Belt of Valor
-							}),
-							n(9241, { 	-- Smolderthorn Headhunter
-								i(16680), 	-- Beaststalker's Belt
-							}),
-							n(9239, { 	-- Smolderthorn Mystic
-								i(16685),	-- Magister's Belt
-							}),
-							n(9269, { 	-- Smolderthorn Seer
-								i(16703),	-- Dreadmist Bracers
-							}),
-							n(9265, { 	-- Smolderthorn Shadow Hunter
-								i(16713),	-- Shadowcraft Belt
-							}),
-							n(9240, { 	-- Smolderthorn Shadow Priest
-								i(16696), 	-- Devout Belt
-							}),
-							n(9266, { 	-- Smolderthorn Witch Doctor
-								i(16673), 	-- Cord of Elements
-							}),
-						}),																				
-					}),
 				},
 				["Lvl"] = 48,
 				["mapID"] = 721

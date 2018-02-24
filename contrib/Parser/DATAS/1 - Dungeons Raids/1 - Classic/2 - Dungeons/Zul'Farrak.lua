@@ -27,7 +27,7 @@ _.Instances =
 						},						
 						["achievementID"] = 913, -- To Honor One's Elders						
 					}),							
-					n(-17, { 			-- Quests 
+					n(-17, {	-- Quests 
 						n(7407, { -- Chief Engineer Bildewhizzle
 							q(27070,{ -- A Fool's Errand
 								i(65954), -- Belt of the Deep
@@ -53,6 +53,33 @@ _.Instances =
 						}),
 						n(44929, { -- Tran'rek
 							q(27076), -- Breaking and Entering
+						}),
+					}),
+					n(0,   {	-- Zone Drop
+						n(5649, { -- Sandfury Blood Drinker
+							dr(0.1, i(142402, {	-- Plans: Light Earthforged Blade
+								i(30071), -- Light Earthforged Blade
+							})),
+						}),
+						n(5648, { -- Sandfury Shadowcaster
+							dr(0.3, i(142402, {	-- Plans: Light Earthforged Blade
+								i(30071), -- Light Earthforged Blade
+							})),
+						}),
+						n(7246, { -- Sandfury Shadowhunter
+							dr(0.4, i(142402, {	-- Plans: Light Earthforged Blade
+								i(30071), -- Light Earthforged Blade
+							})),
+						}),
+						n(7247, { -- Sandfury Soul Eater
+							dr(0.1, i(142402, {	-- Plans: Light Earthforged Blade
+								i(30071), -- Light Earthforged Blade
+							})),
+						}),
+						n(5650, { -- Sandfury Witch Doctor
+							dr(0.1, i(142402, {	-- Plans: Light Earthforged Blade
+								i(30071), -- Light Earthforged Blade
+							})),
 						}),
 					}),
 					n(10080, {			-- Sandarr Dunereaver
@@ -120,34 +147,7 @@ _.Instances =
 						i(9467), 	-- Gahz'rilla Fang
 						i(151455), 	-- Gahz'rilla Scale Cloak
 						i(9469), 	-- Gahz'rilla Scale Armor
-					})),
-					n(0, {				-- Zone Drop
-						n(5649, { -- Sandfury Blood Drinker
-							dr(0.1, i(142402, {	-- Plans: Light Earthforged Blade
-								i(30071), -- Light Earthforged Blade
-							})),
-						}),
-						n(5648, { -- Sandfury Shadowcaster
-							dr(0.3, i(142402, {	-- Plans: Light Earthforged Blade
-								i(30071), -- Light Earthforged Blade
-							})),
-						}),
-						n(7246, { -- Sandfury Shadowhunter
-							dr(0.4, i(142402, {	-- Plans: Light Earthforged Blade
-								i(30071), -- Light Earthforged Blade
-							})),
-						}),
-						n(7247, { -- Sandfury Soul Eater
-							dr(0.1, i(142402, {	-- Plans: Light Earthforged Blade
-								i(30071), -- Light Earthforged Blade
-							})),
-						}),
-						n(5650, { -- Sandfury Witch Doctor
-							dr(0.1, i(142402, {	-- Plans: Light Earthforged Blade
-								i(30071), -- Light Earthforged Blade
-							})),
-						}),
-					}),					
+					})),				
 				},
 				["Lvl"] = 39,
 				["mapID"] = 686

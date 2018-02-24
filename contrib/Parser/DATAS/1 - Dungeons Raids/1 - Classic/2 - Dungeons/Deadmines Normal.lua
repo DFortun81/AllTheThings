@@ -58,6 +58,29 @@ _.Instances =
 							h(q(27844)), -- Traitors
 						}),					
 					}),
+					n(0, { -- Zone Drop
+						n(48417, { -- Defias Blood Wizard
+							dr(0.01, i(8492)), -- Parrot Cage (Green Wing Macaw)
+							dr(0.01, i(1951)), -- Blackwater Cutlass
+						}),
+						n(48420, { -- Defias Digger
+							dr(1.90, i(1926)), -- Weighted Sap
+						}),
+						n(48419, { -- Defias Miner
+							dr(2.00, i(1930)),	-- Stonemason Cloak
+						}),
+						n(48421, { 	-- Defias Overseer
+							dr(2.00, i(10401)), -- Blackened Defias Gloves
+							dr(2.00, i(10400)), -- Blackened Defias Leggings
+						}),
+						n(48522, {	-- Defias Pirate
+							dr(5.00, i(1951)), -- Blackwater Cutlass
+							dr(3.00, i(8492)), -- Parrot Cage (Green Wing Macaw)
+						}),
+						n(48521, { -- Defias Squallshaper
+							dr(5.00, i(1951)), -- Blackwater Cutlass
+						}),
+					}),
 					d(1, {		-- Normal
 						nlq({ 	-- Legacy Quests
 							qa(214, { 	-- Red Silk Bandanas
@@ -113,29 +136,6 @@ _.Instances =
 							i(5193),		-- Cape of the Brotherhood
 							i(5202),		-- Corsair's Overshirt
 						})),
-						n(0, { -- Zone Drop
-							n(48417, { -- Defias Blood Wizard
-								dr(0.01, i(8492)), -- Parrot Cage (Green Wing Macaw)
-								dr(0.01, i(1951)), -- Blackwater Cutlass
-							}),
-							n(48420, { -- Defias Digger
-								dr(1.90, i(1926)), -- Weighted Sap
-							}),
-							n(48419, { -- Defias Miner
-								dr(2.00, i(1930)),	-- Stonemason Cloak
-							}),
-							n(48421, { 	-- Defias Overseer
-								dr(2.00, i(10401)), -- Blackened Defias Gloves
-								dr(2.00, i(10400)), -- Blackened Defias Leggings
-							}),
-							n(48522, {	-- Defias Pirate
-								dr(5.00, i(1951)), -- Blackwater Cutlass
-								dr(3.00, i(8492)), -- Parrot Cage (Green Wing Macaw)
-							}),
-							n(48521, { -- Defias Squallshaper
-								dr(5.00, i(1951)), -- Blackwater Cutlass
-							}),
-						}),
 						nld({ 	-- Legacy
 							["groups"] = {
 								n(643, { 	-- Sneed

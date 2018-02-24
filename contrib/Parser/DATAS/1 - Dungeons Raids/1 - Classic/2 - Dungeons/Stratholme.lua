@@ -40,6 +40,55 @@ _.Instances =
 								}),
 							}),
 						}),
+						n(0, {		-- Zone Drop
+							i(18743),	-- Gracious Cape
+							i(17061),	-- Juno's Shadow
+							i(18741),	-- Morlune's Bracer
+							i(18744),	-- Plaguebat Fur Gloves
+							i(18736),	-- Plaguehound Leggings
+							i(18745),	-- Sacred Cloth Leggings
+							i(18742),	-- Stratholme Militia Shoulderguard
+							i(142337, {	-- Plans: Blight
+								i(7959),	-- Blight
+							}),
+							nld({	-- Legacy
+								n(10425, { 	-- Crimson Battle Mage
+									i(16685),	-- Magister's Belt
+								}),
+								n(10419, { 	-- Crimson Conjuror
+									i(16697), 	-- Devout Bracers
+									i(16702),	-- Dreadmist Belt
+									i(16685),	-- Magister's Belt
+								}),
+								n(10421, { 	-- Crimson Defender
+									i(16681),	-- Beaststalker's Bindings
+								}),
+								n(10424, { 	-- Crimson Gallant
+									i(16723),	-- Lightforge Belt
+								}),
+								n(10418, { 	-- Crimson Guardsman
+									i(16723),	-- Lightforge Belt
+								}),
+								n(10420, { 	-- Crimson Initiate
+									i(16697), 	-- Devout Bracers
+								}),
+								n(10426, { 	-- Crimson Inquisitor
+									i(16714),	-- Wildheart Bracers
+								}),
+								n(10423, { 	-- Crimson Priest
+									i(16697), 	-- Devout Bracers
+								}),
+								n(10422, { 	-- Crimson Sorcerer
+									i(16685),	-- Magister's Belt
+								}),
+								n(10414, { 	-- Patchwork Horror
+									i(16736),	-- Belt of Valor
+								}),
+								n(11043, { 	-- Risen Monk
+									i(16671), 	-- Bindings of Elements
+								}),
+							}),
+						}),
 						n(10393, {			-- Skul
 							["groups"] = {
 								dr(31, i(13395)),	-- Skul's Fingerbone Claws
@@ -117,55 +166,6 @@ _.Instances =
 								i(14154),	-- Truefaith Vestments
 							}),
 						})),
-						n(0, {		-- Zone Drop
-							i(18743),	-- Gracious Cape
-							i(17061),	-- Juno's Shadow
-							i(18741),	-- Morlune's Bracer
-							i(18744),	-- Plaguebat Fur Gloves
-							i(18736),	-- Plaguehound Leggings
-							i(18745),	-- Sacred Cloth Leggings
-							i(18742),	-- Stratholme Militia Shoulderguard
-							i(142337, {	-- Plans: Blight
-								i(7959),	-- Blight
-							}),
-							nld({	-- Legacy
-								n(10425, { 	-- Crimson Battle Mage
-									i(16685),	-- Magister's Belt
-								}),
-								n(10419, { 	-- Crimson Conjuror
-									i(16697), 	-- Devout Bracers
-									i(16702),	-- Dreadmist Belt
-									i(16685),	-- Magister's Belt
-								}),
-								n(10421, { 	-- Crimson Defender
-									i(16681),	-- Beaststalker's Bindings
-								}),
-								n(10424, { 	-- Crimson Gallant
-									i(16723),	-- Lightforge Belt
-								}),
-								n(10418, { 	-- Crimson Guardsman
-									i(16723),	-- Lightforge Belt
-								}),
-								n(10420, { 	-- Crimson Initiate
-									i(16697), 	-- Devout Bracers
-								}),
-								n(10426, { 	-- Crimson Inquisitor
-									i(16714),	-- Wildheart Bracers
-								}),
-								n(10423, { 	-- Crimson Priest
-									i(16697), 	-- Devout Bracers
-								}),
-								n(10422, { 	-- Crimson Sorcerer
-									i(16685),	-- Magister's Belt
-								}),
-								n(10414, { 	-- Patchwork Horror
-									i(16736),	-- Belt of Valor
-								}),
-								n(11043, { 	-- Risen Monk
-									i(16671), 	-- Bindings of Elements
-								}),
-							}),
-						}),
 						n(-40, {	-- Legacy
 							["groups"] = {
 								n(14684, { 	-- Balzaphon
@@ -203,6 +203,60 @@ _.Instances =
 								},
 								["classes"] = {2},
 								["races"] = {10},
+							}),
+						}),
+						n(0, {      -- Zone Drop
+							i(18743),   -- Gracious Cape
+							i(17061),   -- Juno's Shadow
+							i(18741),   -- Morlune's Bracer
+							i(18744),   -- Plaguebat Fur Gloves
+							i(18736),   -- Plaguehound Leggings
+							i(18745),   -- Sacred Cloth Leggings
+							i(18742),   -- Stratholme Militia Shoulderguard
+							i(142337, {	-- Plans: Blight
+								i(7959),	-- Blight
+							}),
+							nld({	-- Legacy
+								n(10416, { 	-- Bile Spewer
+									i(16736),	-- Belt of Valor
+								}),
+								n(10413, { 	-- Crypt Beast
+									i(16671), 	-- Bindings of Elements
+								}),
+								n(10407, { 	-- Fleshflayer Ghoul
+									i(16681),	-- Beaststalker's Bindings
+								}),
+								n(10406, { 	-- Ghoul Ravener
+									i(16681),	-- Beaststalker's Bindings
+								}),
+								n(10405, { 	-- Plague Ghoul
+									i(16710),	-- Shadowcraft Bracers
+								}),
+								n(10408, { 	-- Rockwing Gargoyle
+									i(16723),	-- Lightforge Belt
+								}),
+								n(10409, { 	-- Rockwing Screecher
+									i(16723),	-- Lightforge Belt
+								}),
+								n(10463, {	-- Shrieking Banshee
+									i(16714),	-- Wildheart Bracers
+								}),
+								n(10400, { 	-- Thuzadin Necromancer
+									i(16697), 	-- Devout Bracers
+									i(16702),	-- Dreadmist Belt
+									i(16685),	-- Magister's Belt
+								}),
+								n(10398, { 	-- Thuzadin Shadowcaster
+									i(16697), 	-- Devout Bracers
+									i(16702),	-- Dreadmist Belt
+									i(16685),	-- Magister's Belt
+								}),
+								n(10417, { 	-- Venom Belcher
+									i(16736),	-- Belt of Valor
+								}),
+								n(10464, { 	-- Wailing Banshee
+									i(16714),	-- Wildheart Bracers
+								}),
 							}),
 						}),
 						n(10809, {	-- Stonespine
@@ -275,60 +329,6 @@ _.Instances =
 							i(13344),	-- Dracorian Gauntlets
 							i(22410),	-- Gauntlets of Deftness
 						})),
-						n(0, {      -- Zone Drop
-							i(18743),   -- Gracious Cape
-							i(17061),   -- Juno's Shadow
-							i(18741),   -- Morlune's Bracer
-							i(18744),   -- Plaguebat Fur Gloves
-							i(18736),   -- Plaguehound Leggings
-							i(18745),   -- Sacred Cloth Leggings
-							i(18742),   -- Stratholme Militia Shoulderguard
-							i(142337, {	-- Plans: Blight
-								i(7959),	-- Blight
-							}),
-							nld({	-- Legacy
-								n(10416, { 	-- Bile Spewer
-									i(16736),	-- Belt of Valor
-								}),
-								n(10413, { 	-- Crypt Beast
-									i(16671), 	-- Bindings of Elements
-								}),
-								n(10407, { 	-- Fleshflayer Ghoul
-									i(16681),	-- Beaststalker's Bindings
-								}),
-								n(10406, { 	-- Ghoul Ravener
-									i(16681),	-- Beaststalker's Bindings
-								}),
-								n(10405, { 	-- Plague Ghoul
-									i(16710),	-- Shadowcraft Bracers
-								}),
-								n(10408, { 	-- Rockwing Gargoyle
-									i(16723),	-- Lightforge Belt
-								}),
-								n(10409, { 	-- Rockwing Screecher
-									i(16723),	-- Lightforge Belt
-								}),
-								n(10463, {	-- Shrieking Banshee
-									i(16714),	-- Wildheart Bracers
-								}),
-								n(10400, { 	-- Thuzadin Necromancer
-									i(16697), 	-- Devout Bracers
-									i(16702),	-- Dreadmist Belt
-									i(16685),	-- Magister's Belt
-								}),
-								n(10398, { 	-- Thuzadin Shadowcaster
-									i(16697), 	-- Devout Bracers
-									i(16702),	-- Dreadmist Belt
-									i(16685),	-- Magister's Belt
-								}),
-								n(10417, { 	-- Venom Belcher
-									i(16736),	-- Belt of Valor
-								}),
-								n(10464, { 	-- Wailing Banshee
-									i(16714),	-- Wildheart Bracers
-								}),
-							}),
-						}),
 					})
 				},
 				["Lvl"] = 37,

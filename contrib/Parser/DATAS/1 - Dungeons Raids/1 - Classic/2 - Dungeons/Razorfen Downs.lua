@@ -16,44 +16,6 @@ _.Instances =
 							i(65951),	-- Razorfen Spaulders
 						}),
 					}),
-					cr(74412, e(1142, {	-- Aarux
-						i(10776),	-- Silky Spider Cape
-						i(10775),	-- Carapace of Tuten'kash
-						i(10777),	-- Arachnid Gloves
-					})),
-					n(75813, {			-- Sah'rhee
-						["groups"] = {
-							dr(22, i(10766)),	-- Plaguerot Sprig 
-							dr(21, i(10768)),	-- Boar Champion's Belt
-							dr(20, i(10767)),	-- Savage Boar's Guard
-							dr(20, i(10758)),	-- X'caliboar
-							dr(17, i(10760)),	-- Swine Fists
-						},
-						["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you click the body to start this optional boss."
-					}),
-					cr(74347, e(433, {	-- Mordresh Fire Eye
-						i(10770),	-- Mordresh's Lifeless Skull
-						i(10771),	-- Deathmage Sash
-					})),
-					cr(74435, e(1143, {	-- Mushlump
-						i(10772),	-- Glutton's Cleaver
-						i(10774),	-- Fleshhide Shoulders
-					})),
-					cr(74875, e(1146, {	-- Death Speaker Blackthorn
-						i(10758),	-- X'caliboar
-						i(10766),	-- Plaguerot Sprig
-						i(10767),	-- Savage Boar's Guard
-						i(10760),	-- Swine Fists
-						i(10768),	-- Boar Champion's Belt
-						i(151454),	-- Splinterbone Sabatons
-					})),
-					cr(74434, e(1141, {	-- Amnennar the Coldbringer
-						i(10761),	-- Coldrage Dagger
-						i(10763),	-- Icemetal Barbute
-						i(10764),	-- Deathchill Armor
-						i(10762),	-- Robes of the Lich
-						i(10765),	-- Bonefingers
-					})),
 					n(0, {				-- Zone Drop
 						n(74947, {	-- Boneflayer Ghoul
 							dr(0.03, i(10570)),	-- Manslayer
@@ -122,6 +84,44 @@ _.Instances =
 							dr(0.01, i(10584)),	-- Stormgale Fists
 						}),
 					}),
+					cr(74412, e(1142, {	-- Aarux
+						i(10776),	-- Silky Spider Cape
+						i(10775),	-- Carapace of Tuten'kash
+						i(10777),	-- Arachnid Gloves
+					})),
+					n(75813, {			-- Sah'rhee
+						["groups"] = {
+							dr(22, i(10766)),	-- Plaguerot Sprig 
+							dr(21, i(10768)),	-- Boar Champion's Belt
+							dr(20, i(10767)),	-- Savage Boar's Guard
+							dr(20, i(10758)),	-- X'caliboar
+							dr(17, i(10760)),	-- Swine Fists
+						},
+						["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you click the body to start this optional boss."
+					}),
+					cr(74347, e(433, {	-- Mordresh Fire Eye
+						i(10770),	-- Mordresh's Lifeless Skull
+						i(10771),	-- Deathmage Sash
+					})),
+					cr(74435, e(1143, {	-- Mushlump
+						i(10772),	-- Glutton's Cleaver
+						i(10774),	-- Fleshhide Shoulders
+					})),
+					cr(74875, e(1146, {	-- Death Speaker Blackthorn
+						i(10758),	-- X'caliboar
+						i(10766),	-- Plaguerot Sprig
+						i(10767),	-- Savage Boar's Guard
+						i(10760),	-- Swine Fists
+						i(10768),	-- Boar Champion's Belt
+						i(151454),	-- Splinterbone Sabatons
+					})),
+					cr(74434, e(1141, {	-- Amnennar the Coldbringer
+						i(10761),	-- Coldrage Dagger
+						i(10763),	-- Icemetal Barbute
+						i(10764),	-- Deathchill Armor
+						i(10762),	-- Robes of the Lich
+						i(10765),	-- Bonefingers
+					})),
 				},
 				["Lvl"] = 35,
 				["mapID"] = 760

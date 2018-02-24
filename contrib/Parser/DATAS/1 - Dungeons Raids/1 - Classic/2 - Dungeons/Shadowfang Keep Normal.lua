@@ -69,52 +69,6 @@ _.Instances =
 							})),
 							qg(47293, qh(27974)), 	-- This Land is Our Land
 						}),
-						cr(46962, e(96, { 	-- Baron Ashbury
-							i(6323), 	-- Baron's Scepter
-							i(6314), 	-- Wolfmaster Cape
-							i(6324), 	-- Robes of Arugal
-						})),
-						n(3864, {  			-- Fel Steed
-							dr(21, i(6341)), 	-- Eerie Stable Lantern
-						}),
-						cr(3887, e(97, { 	-- Baron Silverlaine
-							i(5254),	-- Rugged Spaulders
-							i(132568),	-- Shadowfang Pauldrons
-							i(5943),	-- Rift Bracers
-							i(132567),	-- Blindwatcher's Chain
-							i(6319),	-- Girdle of the Blindwatcher
-						})),
-						cr(4278, e(98, { 	-- Commander Springvale
-							i(3191),	-- Arced War Axe
-							i(6320),	-- Commander's Crest
-							i(151069),	-- Breastplate of the Stilled Heart
-							i(151070),	-- Gloves of the Greymane Wall
-							i(151067),	-- Boots of Lingering Sorrow
-							i(151068),	-- Boots of the Predator
-						})),
-						n(3872, { 			-- Deathsworn Captain
-							["groups"] = {
-								dr(45, i(6641)),	-- Haunting Blade
-								dr(44, i(6642)),	-- Phantom Armor
-							},
-							["description"] = "This is a rare that is not always present.",
-						}),
-						cr(46963, e(99, { 	-- Lord Walden
-							i(1292),	-- Butcher's Cleaver
-							i(6341), 	-- Eerie Stable Lantern
-							i(6642),	-- Phantom Armor
-							i(3230),	-- Black Wolf Bracers
-							i(132566),	-- Dark Lupine Wraps
-						})),
-						cr(46964, e(100, { 	-- Lord Godfrey
-							i(6641),	-- Haunting Blade
-							i(6318),	-- Odo's Ley Staff
-							i(6220),	-- Meteor Shard
-							i(151072),	-- Worgen Hunter's Helm
-							i(3748),	-- Feline Mantle
-							i(151071),	-- Gloves of the Uplifted Cup
-							i(151073),	-- Greaves of the Misguided
-						})),
 						n(0, {				-- Zone Drop
 							n(47134, {	-- Corpse Eater	
 								dr(0.02, i(3194)),	-- Black Malice
@@ -272,6 +226,52 @@ _.Instances =
 								dr(0.02, i(1484)),	-- Witching Stave
 							}),		
 						}),
+						cr(46962, e(96, { 	-- Baron Ashbury
+							i(6323), 	-- Baron's Scepter
+							i(6314), 	-- Wolfmaster Cape
+							i(6324), 	-- Robes of Arugal
+						})),
+						n(3864, {  			-- Fel Steed
+							dr(21, i(6341)), 	-- Eerie Stable Lantern
+						}),
+						cr(3887, e(97, { 	-- Baron Silverlaine
+							i(5254),	-- Rugged Spaulders
+							i(132568),	-- Shadowfang Pauldrons
+							i(5943),	-- Rift Bracers
+							i(132567),	-- Blindwatcher's Chain
+							i(6319),	-- Girdle of the Blindwatcher
+						})),
+						cr(4278, e(98, { 	-- Commander Springvale
+							i(3191),	-- Arced War Axe
+							i(6320),	-- Commander's Crest
+							i(151069),	-- Breastplate of the Stilled Heart
+							i(151070),	-- Gloves of the Greymane Wall
+							i(151067),	-- Boots of Lingering Sorrow
+							i(151068),	-- Boots of the Predator
+						})),
+						n(3872, { 			-- Deathsworn Captain
+							["groups"] = {
+								dr(45, i(6641)),	-- Haunting Blade
+								dr(44, i(6642)),	-- Phantom Armor
+							},
+							["description"] = "This is a rare that is not always present.",
+						}),
+						cr(46963, e(99, { 	-- Lord Walden
+							i(1292),	-- Butcher's Cleaver
+							i(6341), 	-- Eerie Stable Lantern
+							i(6642),	-- Phantom Armor
+							i(3230),	-- Black Wolf Bracers
+							i(132566),	-- Dark Lupine Wraps
+						})),
+						cr(46964, e(100, { 	-- Lord Godfrey
+							i(6641),	-- Haunting Blade
+							i(6318),	-- Odo's Ley Staff
+							i(6220),	-- Meteor Shard
+							i(151072),	-- Worgen Hunter's Helm
+							i(3748),	-- Feline Mantle
+							i(151071),	-- Gloves of the Uplifted Cup
+							i(151073),	-- Greaves of the Misguided
+						})),
 					}),
 					n(-40, { 	-- Legacy
 						["groups"] = {
