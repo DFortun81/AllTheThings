@@ -30,27 +30,110 @@ _.Zones =
 				qh(49930),	-- The Call for Allies
 				qg(126065, qh(50239, {	-- A Choice for Allies
 					nh(-209, {	-- Highmountain Tauren
-						qg(125285, qh(48066)),	-- A Feast for Our Kin
-						qg(129914, qh(48067)),	-- Shadow Over Thunder Bluff
-						qg(130773, qh(49756)),	-- Dark Forces
-						qg(130773, qh(48079)),	-- Return to Highmountain
-						qg(105085, qh(41884)),	-- Dark Tales
-						qg(125454, qh(41764)),	-- Walking in Their Footsteps
-						qg(125454, qh(48185)),	-- Shadow of the Sepulcher
-						qg(125459, qh(41799)),	-- Minions of the Darkness
-						qg(125459, qh(48190)),	-- Huln's Mountain
-						qg(125466, qh(41800)),	-- Servants of the Darkness
-						qg(125466, qh(48434)),	-- How Fares Ebonhorne?
-						qg(108434, qh(41815)),	-- Curse of the Necrodark
-						qg(130423, qh(41840)),	-- Ice and Shadow
-						qg(97662, qh(41882)),	-- Whispers of the Darkness
-						qg(105213, qh(41841)),	-- The Final Ward
-						qg(105213, qh(48403)),	-- The Darkness
-						qg(126134, qh(48433, {	-- Together We Are the Horde!
-							ach(12245, {	-- Allied Races: Highmountain Tauren
-								h(i(155662)),	-- Highmountain Thunderhoof
-							}),
-						})),
+						q(48066, { -- A Feast for Our Kin
+							["groups"] = {
+							},
+							["qg"] = 125285, -- Baine Bloodhoof <High Chieftain>
+						}),
+						q(48067, { -- Shadow Over Thunder Bluff
+							["groups"] = {
+							},
+							["qg"] = 129914, -- Baine Bloodhoof <High Chieftain>
+							["sourceQuestID"] = { 48066 }, --A Feast for Our Kin
+						}),
+						q(49756, { -- Dark Forces
+							["groups"] = {
+							},
+							["qg"] = 130773, -- Baine Bloodhoof <High Chieftain>
+							["sourceQuestID"] = { 48067 }, -- Shadow Over Thunder Bluff
+						}),
+						q(48079, { -- Return to Highmountain
+							["groups"] = {
+							},
+							["qg"] = 130773, -- Baine Bloodhoof <High Chieftain>
+							["sourceQuestID"] = { 49756 }, -- Dark Forces
+						}),
+						q(41884, { -- Dark Tales
+							["groups"] = {
+							},
+							["qg"] = 105085, -- Spiritwalker Graysky
+							["sourceQuestID"] = { 48079 }, -- Return to Highmountain
+						}),
+						q(41764, { -- Walking in Their Footsteps
+							["groups"] = {
+							},
+							["qg"] = 125454, -- Spiritwalker Graysky
+							["sourceQuestID"] = { 41884 }, -- Dark Tales
+						}),
+						q(48185, { -- Shadow of the Sepulcher
+							["groups"] = {
+							},
+							["qg"] = 125454, -- Spiritwalker Graysky
+							["sourceQuestID"] = { 41764 }, -- Walking in Their Footsteps
+						}),
+						q(41799, { -- Minions of the Darkness
+							["groups"] = {
+							},
+							["qg"] = 125459, -- Spiritwalker Graysky
+							["sourceQuestID"] = { 48185 }, -- Shadows of the Sepulcher
+						}),
+						q(48190, { -- Huln's Mountain
+							["groups"] = {
+							},
+							["qg"] = 125459, -- Spiritwalker Graysky
+							["sourceQuestID"] = { 41799 }, -- Minions of the Darkness
+						}),
+						q(41800, { -- Servants of the Darkness
+							["groups"] = {
+							},
+							["qg"] = 125466, -- Spiritwalker Graysky
+							["sourceQuestID"] = { 48190 }, -- Huln's Mountain
+						}),
+						q(48434, { -- How Fares Ebonhorn?
+							["groups"] = {
+							},
+							["qg"] = 125466, -- Spiritwalker Graysky
+							["sourceQuestID"] = { 41800 }, -- Servants of the Darkness
+						}),
+						q(41815, { -- Curse of the Necrodark
+							["groups"] = {
+							},
+							["qg"] = 108434, -- Mayla Highmountain
+							["sourceQuestID"] = { 48434 }, -- How Fares Ebonhorn?
+						}),
+						q(41840, { -- Ice and Shadow
+							["groups"] = {
+							},
+							["qg"] = 130423, -- Baine Bloodhoof <High Chieftain>
+							["sourceQuestID"] = { 41815 }, -- Curse of the Necrodark
+						}),
+						q(41882, { -- Whispers of the Darnkess
+							["groups"] = {
+							},
+							["qg"] = 97662, -- Jale Rivermane
+							["sourceQuestID"] = { 41840 }, -- Ice and Shadow
+						}),
+						q(41841, { -- The Final Ward
+							["groups"] = {
+							},
+							["qg"] = 105213, -- Spiritwalker Ebonhorn
+							["sourceQuestID"] = { 41882 }, -- Whispers of the Darkness
+						}),
+						q(48403, { -- The Darkness
+							["groups"] = {
+							},
+							["qg"] = 105213, -- Spiritwalker Ebonhorn
+							["sourceQuestID"] = { 41841 }, -- The Final Ward
+						}),
+						q(48433, { -- Together We Are the Horde!
+							["groups"] = {
+								ach(12245, { -- Allied Races: Highmountain Tauren
+									i(155662), -- Highmountain Thunderhoof
+								}),
+							},
+							["qg"] = 126134, -- Baine Bloodhoof <High Chieftain>
+							["sourceQuestID"] = { 48403 }, -- The Darkness
+						}),
 					}),
 					nh(-210, {	-- Nightborne
 						qg(126062, qh(49973)),	-- Thalyssra's Estate
