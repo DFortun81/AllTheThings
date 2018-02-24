@@ -48,11 +48,10 @@ AllTheThings.Locales.enUS = {
 	["ITEM_ID_REMOVED_SHARED"] = "%s (%d) [+%d] were removed from your collection.";
 
 	-- Tooltip Text
-	["LEFT_CLICK_TO_EXPAND"] = "|cff3399ffLeft Click to Expand/Collapse|r";
-	["LEFT_CLICK_TO_MOVE"] = "|cff3399ffLeft Click and Drag to Move|r";
-	["SHIFT_LEFT_CLICK"] = "|cff3399ffShift + Click to Refresh Collections|r";
-	["RIGHT_CLICK_TO_CONFIGURE"] = "|cff3399ffRight Click to Configure Filters|r";
-	["RIGHT_CLICK_TO_POPOUT"] = "|cff3399ffRight Click to Pop Out to Mini List|r";
+	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Refresh Collections|r";
+	["OTHER_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Refresh Collections|r";
+	["TOP_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Search the Auction House|r";
+	["OTHER_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Search the Auction House|r";
 	["ACHIEVEMENT"] = "Achievement";
 	["ACHIEVEMENT_ID"] = "Achievement ID";
 	["ARTIFACT"] = "Artifact";
