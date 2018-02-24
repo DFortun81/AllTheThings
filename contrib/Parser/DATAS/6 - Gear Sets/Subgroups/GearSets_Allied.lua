@@ -62,6 +62,18 @@ _.GearSets =
 				},
 				["races"] = { 30 },
 			}),
+			cl(9, { -- Warlock
+				["groups"] = {
+					un(15, i(157652)), -- Shadow-Binder's Spire
+					un(15, i(157734)), -- Felburner's Robe
+					un(15, i(157737)), -- Felburner's Wristwraps
+					un(15, i(157731)), -- Felburner's Handwraps
+					un(15, i(157736)), -- Felburner's Cord
+					un(15, i(157733)), -- Felburner's Leggings
+					un(15, i(157730)), -- Felburner's Sandals
+				},
+				["classes"] = { 9 }, -- Warlock
+			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_level_110",
 	}),	
