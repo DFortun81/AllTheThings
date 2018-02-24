@@ -9,6 +9,15 @@ _.Instances =
 			c(246, { 	-- Scholomance
 				["groups"] = {
 					d(1, {		-- Normal
+						n(0, { 		-- Zone Drop
+							i(18702), 	-- Belt of the Ordained
+							i(14536),	-- Bonebrace Hauberk
+							i(18697),	-- Coldstone Slippers
+							i(7752),	-- Dreamslayer
+							i(18699), 	-- Icy Tomb Spaulders
+							i(18700), 	-- Malefic Bracers
+							i(18698), 	-- Tattered Leather Hood
+						}),
 						cr(58633, e(659, { 	-- Instructor Chillheart
 							n(58664, {	-- Instructor Chillheart's Phylactery
 								i(88339),	-- Gravetouch Greatsword
@@ -44,15 +53,6 @@ _.Instances =
 							i(88356),	-- Tombstone Gauntlets
 							i(88359),	-- Incineration Belt
 						})),
-						n(0, { 		-- Zone Drop
-							i(18702), 	-- Belt of the Ordained
-							i(14536),	-- Bonebrace Hauberk
-							i(18697),	-- Coldstone Slippers
-							i(7752),	-- Dreamslayer
-							i(18699), 	-- Icy Tomb Spaulders
-							i(18700), 	-- Malefic Bracers
-							i(18698), 	-- Tattered Leather Hood
-						}),
 					}),
 					n(-40, { -- Legacy
 						["groups"] = {

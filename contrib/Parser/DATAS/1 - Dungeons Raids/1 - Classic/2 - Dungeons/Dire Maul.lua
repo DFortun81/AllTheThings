@@ -47,6 +47,35 @@ _.Instances =
 									}),
 								}),
 							}),
+							n(0, {				-- Zone Drop
+								n(13196, {		-- Phase Lasher
+									dr(0.4, i(18295)),	-- Phasing Boots
+								}),
+								n(11454, {		-- Wildspawn Betrayer
+									dr(0., i(18296)),	-- Marksman Bands
+									dr(0.2, i(18298)),	-- Unbridled Leggings
+								}),
+								n(11455, {		-- Wildspawn Felsworn
+									dr(0.3, i(18298)),	-- Unbridled Leggings
+									dr(0.15, i(18296)),	-- Marksman Bands
+								}),
+								n(11457, {		-- Wildspawn Hellcaller
+									dr(0.14, i(18296)),	-- Marksman Bands
+									dr(0.12, i(18298)),	-- Unbridled Leggings
+								}),
+								n(11452, {		-- Wildspawn Rogue
+									dr(0.17, i(18296)),	-- Marksman Bands
+									dr(0.15, i(18298)),	-- Unbridled Leggings
+								}),
+								n(11451, {		-- Wildspawn Satyr
+									dr(0.6, i(18296)),	-- Marksman Bands
+									dr(0.17, i(18298)),	-- Unbridled Leggings
+								}),
+								n(11456, {		-- Wildspawn Shadowstalker
+									dr(0.2, i(18296)),	-- Marksman Bands
+									dr(0.2, i(18298)),	-- Unbridled Leggings
+								}),
+							}),
 							cr(14327, e(404, {	-- Lethtendris
 								i(18311),			-- Quel'dorei Channeling Rod
 								i(18301),			-- Lethtendris' Wand
@@ -86,35 +115,6 @@ _.Instances =
 								i(18327),			-- Whipvine Cord
 								i(18318),			-- Merciful Greaves
 							})),
-							n(0, {				-- Zone Drop
-								n(13196, {		-- Phase Lasher
-									dr(0.4, i(18295)),	-- Phasing Boots
-								}),
-								n(11454, {		-- Wildspawn Betrayer
-									dr(0., i(18296)),	-- Marksman Bands
-									dr(0.2, i(18298)),	-- Unbridled Leggings
-								}),
-								n(11455, {		-- Wildspawn Felsworn
-									dr(0.3, i(18298)),	-- Unbridled Leggings
-									dr(0.15, i(18296)),	-- Marksman Bands
-								}),
-								n(11457, {		-- Wildspawn Hellcaller
-									dr(0.14, i(18296)),	-- Marksman Bands
-									dr(0.12, i(18298)),	-- Unbridled Leggings
-								}),
-								n(11452, {		-- Wildspawn Rogue
-									dr(0.17, i(18296)),	-- Marksman Bands
-									dr(0.15, i(18298)),	-- Unbridled Leggings
-								}),
-								n(11451, {		-- Wildspawn Satyr
-									dr(0.6, i(18296)),	-- Marksman Bands
-									dr(0.17, i(18298)),	-- Unbridled Leggings
-								}),
-								n(11456, {		-- Wildspawn Shadowstalker
-									dr(0.2, i(18296)),	-- Marksman Bands
-									dr(0.2, i(18298)),	-- Unbridled Leggings
-								}),
-							}),
 						},
 					}),
 					n(-13, {	-- Gordok Commons [North - Ogres]
@@ -341,6 +341,45 @@ _.Instances =
 									}),
 								}),
 							}),
+							n(0, {				-- Zone Drop
+								n(11480, {	-- Arcane Aberration
+									dr(0.4, i(18337)),	-- Orphic Bracers
+									dr(0.3, i(18338)),	-- Wand of Arcane Potency
+								}),
+								n(14399, {	-- Arcane Torrent
+									dr(0.3, i(18337)),	-- Orphic Bracers
+									dr(0.3, i(18338)),	-- Wand of Arcane Potency
+								}),
+								n(11471, {	-- Eldreth Apparition
+									dr(0.2, i(18339)),	-- Eidolon Cloak
+								}),
+								n(11475, {	-- Eldreth Phantasm
+									dr(0.3, i(18339)),	-- Eidolon Cloak
+								}),
+								n(11473, {	-- Eldreth Spectre
+									dr(0.2, i(18339)),	-- Eidolon Cloak
+								}),
+								n(11472, {	-- Eldreth Spirit
+									dr(0.2, i(18339)),	-- Eidolon Cloak
+								}),
+								n(11459, {	-- Ironbark Protector
+									dr(0.3, i(18344)),	-- Stonebark Gauntlets
+								}),
+								n(11483, {	-- Mana Remnant
+									dr(0.4, i(18338)),	-- Wand of Arcane Potency
+									dr(0.3, i(18337)),	-- Orphic Bracers
+								}),
+								n(14303, {	-- Petrified Guardian
+									dr(0.16, i(18344)),	-- Stonebark Gauntlets
+								}),
+								n(11458, {	-- Petrified Treant
+									dr(0.14, i(18344)),	-- Stonebark Gauntlets
+								}),
+								n(11484, {	-- Residual Monstrosity
+									dr(0.3, i(18338)),	-- Wand of Arcane Potency
+									dr(0.2, i(18337)),	-- Orphic Bracers
+								}),
+							}),
 							cr(11488, e(407, {	-- Illyanna Ravenoak
 								i(18347),			-- Well Balanced Axe
 								i(18383),			-- Force Imbued Gauntlets
@@ -402,45 +441,6 @@ _.Instances =
 									i(18487, { -- Pattern: Mooncloth Robe
 										i(18486), -- Mooncloth Robe
 									}),
-								}),
-							}),
-							n(0, {				-- Zone Drop
-								n(11480, {	-- Arcane Aberration
-									dr(0.4, i(18337)),	-- Orphic Bracers
-									dr(0.3, i(18338)),	-- Wand of Arcane Potency
-								}),
-								n(14399, {	-- Arcane Torrent
-									dr(0.3, i(18337)),	-- Orphic Bracers
-									dr(0.3, i(18338)),	-- Wand of Arcane Potency
-								}),
-								n(11471, {	-- Eldreth Apparition
-									dr(0.2, i(18339)),	-- Eidolon Cloak
-								}),
-								n(11475, {	-- Eldreth Phantasm
-									dr(0.3, i(18339)),	-- Eidolon Cloak
-								}),
-								n(11473, {	-- Eldreth Spectre
-									dr(0.2, i(18339)),	-- Eidolon Cloak
-								}),
-								n(11472, {	-- Eldreth Spirit
-									dr(0.2, i(18339)),	-- Eidolon Cloak
-								}),
-								n(11459, {	-- Ironbark Protector
-									dr(0.3, i(18344)),	-- Stonebark Gauntlets
-								}),
-								n(11483, {	-- Mana Remnant
-									dr(0.4, i(18338)),	-- Wand of Arcane Potency
-									dr(0.3, i(18337)),	-- Orphic Bracers
-								}),
-								n(14303, {	-- Petrified Guardian
-									dr(0.16, i(18344)),	-- Stonebark Gauntlets
-								}),
-								n(11458, {	-- Petrified Treant
-									dr(0.14, i(18344)),	-- Stonebark Gauntlets
-								}),
-								n(11484, {	-- Residual Monstrosity
-									dr(0.3, i(18338)),	-- Wand of Arcane Potency
-									dr(0.2, i(18337)),	-- Orphic Bracers
 								}),
 							}),
 						},

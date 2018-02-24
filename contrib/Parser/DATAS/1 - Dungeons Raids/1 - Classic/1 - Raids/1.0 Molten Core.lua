@@ -8,279 +8,6 @@ _.Instances =
 		["groups"] = {
 			c(741, { 	-- Molten Core
 				["groups"] = {
-					cr(12118, e(1519, { -- Lucifron
-						i(18878),	-- Sorcerous Dagger
-						i(17077),	-- Crimson Shocker
-						i(18870),	-- Helm of the Lifegiver
-						i(19145),	-- Robe of Volatle Power
-						i(19146),	-- Wristguards of Stability
-						i(16805),	-- Felheart Gloves (Warlock)
-						i(16863),	-- Gauntlets of Might (Warrior)
-						i(18861),	-- Flamewaker Legplates
-						i(18872),	-- Manastorm Leggings
-						i(18875),	-- Salamander Scale Pants
-						i(16800),	-- Arcanist Boots (Mage)
-						i(16829),	-- Cenarion Boots (Druid)
-						i(16837),	-- Earthfury Boots (Shaman)
-						i(16859),	-- Lawbringer Boots (Paladin)
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),						
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
-					})),
-					cr(11982, e(1520, { -- Magmadar
-						i(93034),	-- Blazing Rune (Pet)
-						i(17073),	-- Earthshaker
-						i(18822),	-- Obsidian Edged Blade
-						i(18202),	-- Eskhandar's Left Claw
-						i(18203),	-- Eskhandar's Right Claw
-						i(17069),	-- Striker's Mark
-						i(19142),	-- Fire Runed Grimoire
-						i(18829),	-- Deep Earth Spaulders
-						i(18823),	-- Aged Core Leather Gloves
-						i(19143),	-- Flameguard Gauntlets
-						i(19136),	-- Mana Igniting Cord
-						i(16796),	-- Arcanist's Leggings (Mage)
-						i(16835),	-- Cenarion Leggings (Druid)
-						i(16843),	-- Earthfury Leggings (Shaman)
-						i(16810),	-- Felheart Pants (Warlock)
-						i(18861),	-- Flamewaker Legplates
-						i(16847),	-- Giantstalker's Leggings (Hunter)
-						i(16855),	-- Lawbringer Legplates (Paladin)
-						i(16867),	-- Legplates of Might (Warrior)
-						i(16822),	-- Nightslayer Pants (Rogue)
-						i(16814),	-- Pants of Prophecy (Priest)
-						i(18824),	-- Magma Tempered Boots
-						i(19144),	-- Sabatons of the Flamewalker
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
-					})),
-					cr(12259, e(1521, { -- Gehennas
-						i(18878),	-- Sorcerous Dagger
-						i(17077),	-- Crimson Shocker
-						i(18870),	-- Helm of the Lifegiver
-						i(19145),	-- Robe of Volatile Power
-						i(19146),	-- Wristguards of Stability
-						i(16839),	-- Earthfury Gauntlets (Shaman)
-						i(16812),	-- Gloves of Prophecy (Priest)
-						i(16860),	-- Lawbringer Gauntlets (Paladin)
-						i(16826),	-- Nightslayer Gloves (Rogue)
-						i(18861),	-- Flamewaker Legplates
-						i(18872),	-- Manastorm Leggings
-						i(18875),	-- Salamander Scale Pants
-						i(16849),	-- Giantstalker's Boots (Hunter)
-						i(16862),	-- Sabatons of Might (Warrior)
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
-					})),
-					cr(12057, e(1522, { -- Garr
-						i(18564, {	-- Bindings of the Windseeker (Right)
-							un(15, i(19019)),	-- Thunderfury, Blessed Blade of the Windseeker
-						}),
-						i(18822),	-- Obsidian Edged Blade
-						i(17105),	-- Aurastone Hammer
-						i(18832),	-- Brutality Blade
-						i(17071),	-- Gutgore Ripper
-						i(17066),	-- Drillborer Disk
-						i(19142),	-- Fire Runed Grimoire
-						i(16795),	-- Arcanist Crown (Mage)
-						i(16834),	-- Cenarion Helm (Druid)
-						i(16813),	-- Circlet of Prophecy (Priest)
-						i(16842),	-- Earthfury Helmet (Shaman)
-						i(16808),	-- Felheart Horns (Warlock)
-						i(16846),	-- Giantstalker's Helmet (Hunter)
-						i(16866),	-- Helm of Might (Warrior)
-						i(16854),	-- Lawbringer Helm (Paladin)
-						i(16821),	-- Nightslayer Cover (Rogue)
-						i(18829),	-- Deep Earth Spaulders
-						i(18823),	-- Aged Core Leather Gloves
-						i(19143),	-- Flameguard Gauntlets
-						i(19136),	-- Mana Igniting Cord
-						i(18861),	-- Flamewaker Legplates
-						i(18824),	-- Magma Tempered Boots
-						i(19144),	-- Sabatons of the Flamewalker
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
-					})),
-					cr(12264, e(1523, { -- Shazzrah
-						i(18878),	-- Sorcerous Dagger
-						i(17077),	-- Crimson Shocker
-						i(18870),	-- Helm of the Lifegiver
-						i(19145),	-- Robe of Volatile Power
-						i(19146),	-- Wristguards of Stability
-						i(16801),	-- Arcanist Gloves (Mage)
-						i(16831),	-- Cenarion Gloves (Druid)
-						i(16852),	-- Giantstalker's Gloves (Hunter)
-						i(18861),	-- Flamewaker Legplates
-						i(18872),	-- Manastorm Leggings
-						i(18875),	-- Salamander Scale Pants
-						i(16811),	-- Boots of Prophecy (Priest)
-						i(16803),	-- Felheart Slippers (Warlock)
-						i(16824),	-- Nightslayer Boots (Rogue)
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
-					})),
-					cr(12056, e(1524, { -- Baron Geddon
-						i(18563, {	-- Bindings of the Windseeker (Left)
-							un(15, i(19019)),	-- Thunderfury, Blessed Blade of the Windseeker
-						}),
-						i(18822),	-- Obsidian Edged Blade
-						i(19142),	-- Fire Runed Grimoire
-						i(16797),	-- Arcanist Mantle (Mage)
-						i(16836),	-- Cenarion Spaulders (Druid)
-						i(18829),	-- Deep Earth Spaulders
-						i(16844),	-- Earthfury Epaulets (Shaman)
-						i(16807),	-- Felheart Shoulder Pads (Warlock)
-						i(16856),	-- Lawbringer Spaulders (Paladin)
-						i(18823),	-- Aged Core Leather Gloves
-						i(19143),	-- Flameguard Gauntlets
-						i(19136),	-- Mana Igniting Cord
-						i(18861),	-- Flamewaker Legplates
-						i(18824),	-- Magma Tempered Boots
-						i(19144),	-- Sabatons of the Flamewalker
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
-					})),
-					cr(12098, e(1525, { -- Sulfuron Harbinger
-						i(93033),	-- Mark of Flame (Pet)
-						i(17074, {	-- Shadowstrike
-							i(17223),	-- Thunderstrike
-						}),
-						i(18878),	-- Sorcerous Dagger
-						i(17077),	-- Crimson Shocker
-						i(18870),	-- Helm of the Lifegiver
-						i(16848),	-- Giantstalker's Epaulets (Hunter)
-						i(16816),	-- Mantle of Prophecy (Priest)
-						i(16823),	-- Nightslayer Shoulder Pads (Rogue)
-						i(16868),	-- Pauldrons of Might (Warrior)
-						i(19145),	-- Robe of Volatile Power
-						i(19146),	-- Wristguards of Stability
-						i(18861),	-- Flamewaker Legplates
-						i(18872),	-- Manastorm Leggings
-						i(18875),	-- Salamander Scale Pants
-					})),
-					cr(11988, e(1526, { -- Golemagg the Incinerator
-						i(93035),	-- Core of Hardened Ash (Pet)
-						i(18822),	-- Obsidian Edged Blade 
-						i(18842),	-- Staff of Dominance
-						i(17103),	-- Azuresong Mageblade
-						i(17072),	-- Blastershot Launcher
-						i(19142),	-- Fire Runed Grimoire
-						i(18829),	-- Deep Earth Spaulders
-						i(16798),	-- Arcanist Robes (Mage)
-						i(16865),	-- Breastplate of Might (Warrior)
-						i(16833),	-- Cenarion Vestments (Druid)
-						i(16841),	-- Earthfury Vestments (Shaman)
-						i(16809),	-- Felheart Robes (Warlock)
-						i(16845),	-- Giantstalker's Breastplate (Hunter)
-						i(16853),	-- Lawbringer Chestguard (Paladin)
-						i(16820),	-- Nightslayer Chestpiece (Rogue)
-						i(16815),	-- Robes of Prophecy (Priest)
-						i(18823),	-- Aged Core Leather Gloves
-						i(19143),	-- Flameguard Gauntlets
-						i(19136),	-- Mana Igniting Cord
-						i(18861),	-- Flamewaker Legplates
-						i(18824),	-- Magma Tempered Boots
-						i(19144),	-- Sabatons of the Flamewalker
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
-					})),
-					cr(12018, e(1527, { -- Majordomo Executus
-						i(18803),	-- Finkle's Lava Dredger
-						i(18805),	-- Core Hound Tooth
-						i(19139),	-- Fireguard Shoulders
-						i(18810),	-- Wild Growth Spaulders
-						i(18811),	-- Fireproof Cloak
-						i(18812),	-- Wristguards of True Flight
-						i(18808),	-- Gloves of the Hypnotic Flame
-						i(18809),	-- Sash of Whispered Secrets
-						i(18806),	-- Core Forged Greaves
-					})),
-					cr(11502, e(1528, { -- Ragnaros
-						ach(8820, { -- 10th Anniversary
-							["groups"] = {
-								ach(9550, { -- Boldly, You Sought the Power of Ragnaros
-									un(9, i(115484)), -- Core Hound Chain
-									un(3, i(115301)), -- Molten Corgi
-									un(3, i(118942)), -- Crown of Power
-									un(3, i(118941)), -- Crown of Woe
-									un(3, i(118939)), -- Crown of Destruction
-									un(3, i(118940)), -- Crown of Desolation
-								}),
-								un(31, i(118572)), -- Illusion: Flames of Ragnaros
-								un(7, i(118574)), -- Hatespark the Tiny
-							},
-							["u"] = 12,
-						}),
-						i(17204, {	-- Eye of Sulfuras
-							un(15, i(17182)), 	-- Sulfuras, Hand of Ragnaros
-						}),
-						i(138833),	-- Illusion: Flametongue (Shaman)
-						i(17076),	-- Bonereaver's Edge
-						i(17104),	-- Spinal Reaper
-						i(18816),	-- Perdition's Blade
-						i(17106),	-- Malistar's Defender
-						i(18817),	-- Crown of Destruction
-						i(17102),	-- Cloak of the Shrouded Mists
-						i(17107),	-- Dragon Blood's Cloak
-						i(19137),	-- Onslaught Girdle
-						i(16909),	-- Bloodfang Pants (Rogue)
-						i(16938),	-- Dragonstalker's Legguards (Hunter)
-						i(16954),	-- Judgment Legplates (Paladin)
-						i(16922),	-- Leggings of Transcendence (Priest)
-						i(16946),	-- Legplates of Ten Storms (Shaman)
-						i(16962),	-- Legplates of Wrath (Warrior)
-						i(16930),	-- Nemesis Leggings (Warlock)
-						i(16915),	-- Netherwind Pants (Mage)
-						i(16901),	-- Stormrage Legguards (Druid)
-					})),
 					n(0, {				-- Zone Drop
 						n(11673, { -- Ancient Core Hound
 							dr(1.7, i(16828)),	-- Cenarion Belt (Druid)
@@ -583,6 +310,279 @@ _.Instances =
 							dr(0.2, i(16817)),	-- Girdle of Prophecy (Priest)
 						}),						
 					}),
+					cr(12118, e(1519, { -- Lucifron
+						i(18878),	-- Sorcerous Dagger
+						i(17077),	-- Crimson Shocker
+						i(18870),	-- Helm of the Lifegiver
+						i(19145),	-- Robe of Volatle Power
+						i(19146),	-- Wristguards of Stability
+						i(16805),	-- Felheart Gloves (Warlock)
+						i(16863),	-- Gauntlets of Might (Warrior)
+						i(18861),	-- Flamewaker Legplates
+						i(18872),	-- Manastorm Leggings
+						i(18875),	-- Salamander Scale Pants
+						i(16800),	-- Arcanist Boots (Mage)
+						i(16829),	-- Cenarion Boots (Druid)
+						i(16837),	-- Earthfury Boots (Shaman)
+						i(16859),	-- Lawbringer Boots (Paladin)
+						i(18265, {	-- Pattern: Flarecore Wraps
+							i(18263),	-- Flarecore Wraps
+						}),
+						i(18292, {	-- Schematic: Core Marksman Rifle
+							i(18282),	-- Core Marksman Rifle
+						}),						
+						i(18291, {	-- Schematic: Force Reactive Disc
+							i(18168),	-- Force Reactive Disc
+						}),	
+					})),
+					cr(11982, e(1520, { -- Magmadar
+						i(93034),	-- Blazing Rune (Pet)
+						i(17073),	-- Earthshaker
+						i(18822),	-- Obsidian Edged Blade
+						i(18202),	-- Eskhandar's Left Claw
+						i(18203),	-- Eskhandar's Right Claw
+						i(17069),	-- Striker's Mark
+						i(19142),	-- Fire Runed Grimoire
+						i(18829),	-- Deep Earth Spaulders
+						i(18823),	-- Aged Core Leather Gloves
+						i(19143),	-- Flameguard Gauntlets
+						i(19136),	-- Mana Igniting Cord
+						i(16796),	-- Arcanist's Leggings (Mage)
+						i(16835),	-- Cenarion Leggings (Druid)
+						i(16843),	-- Earthfury Leggings (Shaman)
+						i(16810),	-- Felheart Pants (Warlock)
+						i(18861),	-- Flamewaker Legplates
+						i(16847),	-- Giantstalker's Leggings (Hunter)
+						i(16855),	-- Lawbringer Legplates (Paladin)
+						i(16867),	-- Legplates of Might (Warrior)
+						i(16822),	-- Nightslayer Pants (Rogue)
+						i(16814),	-- Pants of Prophecy (Priest)
+						i(18824),	-- Magma Tempered Boots
+						i(19144),	-- Sabatons of the Flamewalker
+						i(18265, {	-- Pattern: Flarecore Wraps
+							i(18263),	-- Flarecore Wraps
+						}),
+						i(18292, {	-- Schematic: Core Marksman Rifle
+							i(18282),	-- Core Marksman Rifle
+						}),
+						i(18291, {	-- Schematic: Force Reactive Disc
+							i(18168),	-- Force Reactive Disc
+						}),	
+					})),
+					cr(12259, e(1521, { -- Gehennas
+						i(18878),	-- Sorcerous Dagger
+						i(17077),	-- Crimson Shocker
+						i(18870),	-- Helm of the Lifegiver
+						i(19145),	-- Robe of Volatile Power
+						i(19146),	-- Wristguards of Stability
+						i(16839),	-- Earthfury Gauntlets (Shaman)
+						i(16812),	-- Gloves of Prophecy (Priest)
+						i(16860),	-- Lawbringer Gauntlets (Paladin)
+						i(16826),	-- Nightslayer Gloves (Rogue)
+						i(18861),	-- Flamewaker Legplates
+						i(18872),	-- Manastorm Leggings
+						i(18875),	-- Salamander Scale Pants
+						i(16849),	-- Giantstalker's Boots (Hunter)
+						i(16862),	-- Sabatons of Might (Warrior)
+						i(18265, {	-- Pattern: Flarecore Wraps
+							i(18263),	-- Flarecore Wraps
+						}),
+						i(18292, {	-- Schematic: Core Marksman Rifle
+							i(18282),	-- Core Marksman Rifle
+						}),
+						i(18291, {	-- Schematic: Force Reactive Disc
+							i(18168),	-- Force Reactive Disc
+						}),	
+					})),
+					cr(12057, e(1522, { -- Garr
+						i(18564, {	-- Bindings of the Windseeker (Right)
+							un(15, i(19019)),	-- Thunderfury, Blessed Blade of the Windseeker
+						}),
+						i(18822),	-- Obsidian Edged Blade
+						i(17105),	-- Aurastone Hammer
+						i(18832),	-- Brutality Blade
+						i(17071),	-- Gutgore Ripper
+						i(17066),	-- Drillborer Disk
+						i(19142),	-- Fire Runed Grimoire
+						i(16795),	-- Arcanist Crown (Mage)
+						i(16834),	-- Cenarion Helm (Druid)
+						i(16813),	-- Circlet of Prophecy (Priest)
+						i(16842),	-- Earthfury Helmet (Shaman)
+						i(16808),	-- Felheart Horns (Warlock)
+						i(16846),	-- Giantstalker's Helmet (Hunter)
+						i(16866),	-- Helm of Might (Warrior)
+						i(16854),	-- Lawbringer Helm (Paladin)
+						i(16821),	-- Nightslayer Cover (Rogue)
+						i(18829),	-- Deep Earth Spaulders
+						i(18823),	-- Aged Core Leather Gloves
+						i(19143),	-- Flameguard Gauntlets
+						i(19136),	-- Mana Igniting Cord
+						i(18861),	-- Flamewaker Legplates
+						i(18824),	-- Magma Tempered Boots
+						i(19144),	-- Sabatons of the Flamewalker
+						i(18265, {	-- Pattern: Flarecore Wraps
+							i(18263),	-- Flarecore Wraps
+						}),
+						i(18292, {	-- Schematic: Core Marksman Rifle
+							i(18282),	-- Core Marksman Rifle
+						}),
+						i(18291, {	-- Schematic: Force Reactive Disc
+							i(18168),	-- Force Reactive Disc
+						}),	
+					})),
+					cr(12264, e(1523, { -- Shazzrah
+						i(18878),	-- Sorcerous Dagger
+						i(17077),	-- Crimson Shocker
+						i(18870),	-- Helm of the Lifegiver
+						i(19145),	-- Robe of Volatile Power
+						i(19146),	-- Wristguards of Stability
+						i(16801),	-- Arcanist Gloves (Mage)
+						i(16831),	-- Cenarion Gloves (Druid)
+						i(16852),	-- Giantstalker's Gloves (Hunter)
+						i(18861),	-- Flamewaker Legplates
+						i(18872),	-- Manastorm Leggings
+						i(18875),	-- Salamander Scale Pants
+						i(16811),	-- Boots of Prophecy (Priest)
+						i(16803),	-- Felheart Slippers (Warlock)
+						i(16824),	-- Nightslayer Boots (Rogue)
+						i(18265, {	-- Pattern: Flarecore Wraps
+							i(18263),	-- Flarecore Wraps
+						}),
+						i(18292, {	-- Schematic: Core Marksman Rifle
+							i(18282),	-- Core Marksman Rifle
+						}),
+						i(18291, {	-- Schematic: Force Reactive Disc
+							i(18168),	-- Force Reactive Disc
+						}),	
+					})),
+					cr(12056, e(1524, { -- Baron Geddon
+						i(18563, {	-- Bindings of the Windseeker (Left)
+							un(15, i(19019)),	-- Thunderfury, Blessed Blade of the Windseeker
+						}),
+						i(18822),	-- Obsidian Edged Blade
+						i(19142),	-- Fire Runed Grimoire
+						i(16797),	-- Arcanist Mantle (Mage)
+						i(16836),	-- Cenarion Spaulders (Druid)
+						i(18829),	-- Deep Earth Spaulders
+						i(16844),	-- Earthfury Epaulets (Shaman)
+						i(16807),	-- Felheart Shoulder Pads (Warlock)
+						i(16856),	-- Lawbringer Spaulders (Paladin)
+						i(18823),	-- Aged Core Leather Gloves
+						i(19143),	-- Flameguard Gauntlets
+						i(19136),	-- Mana Igniting Cord
+						i(18861),	-- Flamewaker Legplates
+						i(18824),	-- Magma Tempered Boots
+						i(19144),	-- Sabatons of the Flamewalker
+						i(18265, {	-- Pattern: Flarecore Wraps
+							i(18263),	-- Flarecore Wraps
+						}),
+						i(18292, {	-- Schematic: Core Marksman Rifle
+							i(18282),	-- Core Marksman Rifle
+						}),
+						i(18291, {	-- Schematic: Force Reactive Disc
+							i(18168),	-- Force Reactive Disc
+						}),	
+					})),
+					cr(12098, e(1525, { -- Sulfuron Harbinger
+						i(93033),	-- Mark of Flame (Pet)
+						i(17074, {	-- Shadowstrike
+							i(17223),	-- Thunderstrike
+						}),
+						i(18878),	-- Sorcerous Dagger
+						i(17077),	-- Crimson Shocker
+						i(18870),	-- Helm of the Lifegiver
+						i(16848),	-- Giantstalker's Epaulets (Hunter)
+						i(16816),	-- Mantle of Prophecy (Priest)
+						i(16823),	-- Nightslayer Shoulder Pads (Rogue)
+						i(16868),	-- Pauldrons of Might (Warrior)
+						i(19145),	-- Robe of Volatile Power
+						i(19146),	-- Wristguards of Stability
+						i(18861),	-- Flamewaker Legplates
+						i(18872),	-- Manastorm Leggings
+						i(18875),	-- Salamander Scale Pants
+					})),
+					cr(11988, e(1526, { -- Golemagg the Incinerator
+						i(93035),	-- Core of Hardened Ash (Pet)
+						i(18822),	-- Obsidian Edged Blade 
+						i(18842),	-- Staff of Dominance
+						i(17103),	-- Azuresong Mageblade
+						i(17072),	-- Blastershot Launcher
+						i(19142),	-- Fire Runed Grimoire
+						i(18829),	-- Deep Earth Spaulders
+						i(16798),	-- Arcanist Robes (Mage)
+						i(16865),	-- Breastplate of Might (Warrior)
+						i(16833),	-- Cenarion Vestments (Druid)
+						i(16841),	-- Earthfury Vestments (Shaman)
+						i(16809),	-- Felheart Robes (Warlock)
+						i(16845),	-- Giantstalker's Breastplate (Hunter)
+						i(16853),	-- Lawbringer Chestguard (Paladin)
+						i(16820),	-- Nightslayer Chestpiece (Rogue)
+						i(16815),	-- Robes of Prophecy (Priest)
+						i(18823),	-- Aged Core Leather Gloves
+						i(19143),	-- Flameguard Gauntlets
+						i(19136),	-- Mana Igniting Cord
+						i(18861),	-- Flamewaker Legplates
+						i(18824),	-- Magma Tempered Boots
+						i(19144),	-- Sabatons of the Flamewalker
+						i(18265, {	-- Pattern: Flarecore Wraps
+							i(18263),	-- Flarecore Wraps
+						}),
+						i(18292, {	-- Schematic: Core Marksman Rifle
+							i(18282),	-- Core Marksman Rifle
+						}),
+						i(18291, {	-- Schematic: Force Reactive Disc
+							i(18168),	-- Force Reactive Disc
+						}),	
+					})),
+					cr(12018, e(1527, { -- Majordomo Executus
+						i(18803),	-- Finkle's Lava Dredger
+						i(18805),	-- Core Hound Tooth
+						i(19139),	-- Fireguard Shoulders
+						i(18810),	-- Wild Growth Spaulders
+						i(18811),	-- Fireproof Cloak
+						i(18812),	-- Wristguards of True Flight
+						i(18808),	-- Gloves of the Hypnotic Flame
+						i(18809),	-- Sash of Whispered Secrets
+						i(18806),	-- Core Forged Greaves
+					})),
+					cr(11502, e(1528, { -- Ragnaros
+						ach(8820, { -- 10th Anniversary
+							["groups"] = {
+								ach(9550, { -- Boldly, You Sought the Power of Ragnaros
+									un(9, i(115484)), -- Core Hound Chain
+									un(3, i(115301)), -- Molten Corgi
+									un(3, i(118942)), -- Crown of Power
+									un(3, i(118941)), -- Crown of Woe
+									un(3, i(118939)), -- Crown of Destruction
+									un(3, i(118940)), -- Crown of Desolation
+								}),
+								un(31, i(118572)), -- Illusion: Flames of Ragnaros
+								un(7, i(118574)), -- Hatespark the Tiny
+							},
+							["u"] = 12,
+						}),
+						i(17204, {	-- Eye of Sulfuras
+							un(15, i(17182)), 	-- Sulfuras, Hand of Ragnaros
+						}),
+						i(138833),	-- Illusion: Flametongue (Shaman)
+						i(17076),	-- Bonereaver's Edge
+						i(17104),	-- Spinal Reaper
+						i(18816),	-- Perdition's Blade
+						i(17106),	-- Malistar's Defender
+						i(18817),	-- Crown of Destruction
+						i(17102),	-- Cloak of the Shrouded Mists
+						i(17107),	-- Dragon Blood's Cloak
+						i(19137),	-- Onslaught Girdle
+						i(16909),	-- Bloodfang Pants (Rogue)
+						i(16938),	-- Dragonstalker's Legguards (Hunter)
+						i(16954),	-- Judgment Legplates (Paladin)
+						i(16922),	-- Leggings of Transcendence (Priest)
+						i(16946),	-- Legplates of Ten Storms (Shaman)
+						i(16962),	-- Legplates of Wrath (Warrior)
+						i(16930),	-- Nemesis Leggings (Warlock)
+						i(16915),	-- Netherwind Pants (Mage)
+						i(16901),	-- Stormrage Legguards (Druid)
+					})),
 				},
 				["isRaid"] = true,
 				["sharedLockout"] = 1,

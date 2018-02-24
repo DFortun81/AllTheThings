@@ -51,53 +51,6 @@ _.Instances =
 							}),
 						}),
 					}),	
-					cr(74446, e(368, { 	-- Ghamoo-Ra
-						i(151433),	-- Thick Shellplate Shoulders
-						i(6907),	-- Tortoise Armor
-						i(6908),	-- Ghamoo-Ra's Bind
-						i(151432),	-- Twilight Turtleskin Leggings
-					})),
-					cr(74476, e(436, { 	-- Domina <Mistress of Shadows>
-						i(11121),	-- Darkwater Talwar
-						i(3078),	-- Naga Heartpiercer
-						i(132554),	-- Deadly Serpentine Grips
-						i(888),		-- Naga Battle Gloves
-						i(151435),	-- Domina's Deathmaw Greaves
-						i(151434),	-- Foul Shadowsleet Slippers
-					})),
-					cr(74565, e(426, { 	-- Subjugator Kor'ul
-						i(6905),	-- Reef Axe
-						i(6906),	-- Algae Fists
-					})),
-					cr(74505, e(1145, { -- Thruk
-						i(120164),	-- Thruk's Heavy Duty Fishing Pole
-						i(120165),	-- Thruk's Fillet Knife
-						i(120163),	-- Thruk's Fishing Rod
-					})),
-					cr(75410, e(447, { 	-- Guardian of the Deep
-						i(6904),	-- Bite of Serra'kis
-						i(132555),	-- Serra'kis Scale Wraps
-						i(6902),	-- Bands of Serra'kis
-						i(6901),	-- Glowing Thresher Cape
-					})),
-					cr(74988, e(1144, { -- Executioner Gore
-						i(120167),	-- Bloody Twilight Cloak
-						i(120166),	-- Gorestained Garb
-					})),
-					cr(74728, e(437, { 	-- Twilight Lord Bathiel
-						i(1155),	-- Rod of the Sleepwalker
-						i(151440),	-- Blackfathom Ascendant's Helm
-						i(151439),	-- Bathiel's Scale Spaulders
-						i(6903),	-- Gaze Dreamer Pants
-						i(151438),	-- Hungering Deepwater Treads
-					})),
-					cr(75408, e(444, { 	-- Aku'mai
-						i(6909),	-- Strike of the Hydra
-						i(6911),	-- Moss Cinch
-						i(132553),	-- Algae-Twined Waistcord
-						i(6910),	-- Leech Pants
-						i(151441),	-- Aku'mai Worshipper's Greatboots
-					})),
 					n(0, {				-- Zone Drop
 						n(74721, {	-- Blindlight Bilefin	
 							dr(2.0, i(2271)),	-- Staff of the Blessed Seer
@@ -260,6 +213,53 @@ _.Instances =
 							dr(0.01, i(1454)),	-- Axe of the Enforcer
 						}),
 					}),
+					cr(74446, e(368, { 	-- Ghamoo-Ra
+						i(151433),	-- Thick Shellplate Shoulders
+						i(6907),	-- Tortoise Armor
+						i(6908),	-- Ghamoo-Ra's Bind
+						i(151432),	-- Twilight Turtleskin Leggings
+					})),
+					cr(74476, e(436, { 	-- Domina <Mistress of Shadows>
+						i(11121),	-- Darkwater Talwar
+						i(3078),	-- Naga Heartpiercer
+						i(132554),	-- Deadly Serpentine Grips
+						i(888),		-- Naga Battle Gloves
+						i(151435),	-- Domina's Deathmaw Greaves
+						i(151434),	-- Foul Shadowsleet Slippers
+					})),
+					cr(74565, e(426, { 	-- Subjugator Kor'ul
+						i(6905),	-- Reef Axe
+						i(6906),	-- Algae Fists
+					})),
+					cr(74505, e(1145, { -- Thruk
+						i(120164),	-- Thruk's Heavy Duty Fishing Pole
+						i(120165),	-- Thruk's Fillet Knife
+						i(120163),	-- Thruk's Fishing Rod
+					})),
+					cr(75410, e(447, { 	-- Guardian of the Deep
+						i(6904),	-- Bite of Serra'kis
+						i(132555),	-- Serra'kis Scale Wraps
+						i(6902),	-- Bands of Serra'kis
+						i(6901),	-- Glowing Thresher Cape
+					})),
+					cr(74988, e(1144, { -- Executioner Gore
+						i(120167),	-- Bloody Twilight Cloak
+						i(120166),	-- Gorestained Garb
+					})),
+					cr(74728, e(437, { 	-- Twilight Lord Bathiel
+						i(1155),	-- Rod of the Sleepwalker
+						i(151440),	-- Blackfathom Ascendant's Helm
+						i(151439),	-- Bathiel's Scale Spaulders
+						i(6903),	-- Gaze Dreamer Pants
+						i(151438),	-- Hungering Deepwater Treads
+					})),
+					cr(75408, e(444, { 	-- Aku'mai
+						i(6909),	-- Strike of the Hydra
+						i(6911),	-- Moss Cinch
+						i(132553),	-- Algae-Twined Waistcord
+						i(6910),	-- Leech Pants
+						i(151441),	-- Aku'mai Worshipper's Greatboots
+					})),
 				},
 				["Lvl"] = 15,
 				["mapID"] = 688

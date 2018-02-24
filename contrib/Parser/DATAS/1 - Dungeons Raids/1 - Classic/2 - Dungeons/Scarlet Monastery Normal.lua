@@ -113,6 +113,27 @@ _.Instances =
 								}),
 							}),
 						}),
+						n(0, {		-- Zone Drop
+							i(7759),	-- Archon Chestpiece
+							i(7728),	-- Beguiler's Robes
+							i(7729),	-- Chesterfall Musket
+							i(7730),	-- Cobalt Crusher
+							i(7736),	-- Fight Club
+							i(7755),	-- Flintrock Shoulders
+							i(7754),	-- Harbinger Boots
+							i(10329),	-- Scarlet Belt
+							i(10332),	-- Scarlet Boots
+							i(10328),	-- Scarlet Chestpiece
+							i(10331),	-- Scarlet Gauntlets
+							i(10333),	-- Scarlet Wristguards
+							i(7761),	-- Steelclaw Reaver
+							i(5819),	-- Sunblaze Coif
+							i(1992),	-- Swampchill Fetish
+							i(8226),	-- The Butcher
+							i(7760),	-- Warchief Kilt
+							i(7727),	-- Watchman Pauldrons
+							i(7757),	-- Windweaver Staff
+						}),
 						cr(59789, e(688, {	-- Thalnos the Soulrender
 							i(88284),	-- Forgotten Bloodmage Mantle
 							i(88288),	-- Soulrender Greatcloak
@@ -136,27 +157,6 @@ _.Instances =
 							i(88295),	-- Dashing Strike Treads
 							i(132549),	-- Deft Strike Treads
 						})),
-						n(0, {		-- Zone Drop
-							i(7759),	-- Archon Chestpiece
-							i(7728),	-- Beguiler's Robes
-							i(7729),	-- Chesterfall Musket
-							i(7730),	-- Cobalt Crusher
-							i(7736),	-- Fight Club
-							i(7755),	-- Flintrock Shoulders
-							i(7754),	-- Harbinger Boots
-							i(10329),	-- Scarlet Belt
-							i(10332),	-- Scarlet Boots
-							i(10328),	-- Scarlet Chestpiece
-							i(10331),	-- Scarlet Gauntlets
-							i(10333),	-- Scarlet Wristguards
-							i(7761),	-- Steelclaw Reaver
-							i(5819),	-- Sunblaze Coif
-							i(1992),	-- Swampchill Fetish
-							i(8226),	-- The Butcher
-							i(7760),	-- Warchief Kilt
-							i(7727),	-- Watchman Pauldrons
-							i(7757),	-- Windweaver Staff
-						}),
 						nld({     -- Legacy
 							["groups"] = {
 								n(-85, {	-- Graveyard
