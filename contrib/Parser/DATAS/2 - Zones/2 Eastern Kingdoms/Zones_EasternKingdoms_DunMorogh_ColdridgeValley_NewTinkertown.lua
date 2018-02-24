@@ -286,8 +286,7 @@ _.Zones =
 							i(131612),
 						}),
 					}),
---[[					
-					qg(  786, qa(24490)),	-- A Trip to Ironforge
+--[[
 					qg(  658, qa(24471)),	-- Aid for the Wounded
 --]]
 					qg( 1267, qa(  384, {	-- Beer Basted Boar Ribs 
@@ -319,7 +318,6 @@ _.Zones =
 					qg(41786, qa(25978)),	-- Entombed in Ice
 					qg( 1378, qa(  318)),	-- Evershine
 					qg(41853, qa(26078)),	-- Extinguish the Fires
-					qg( 6782, qa(24491)),	-- Follow that Gyro-Copter!
 					qg(40950, qa(  313)),	-- Forced to Watch from Afar (add'l QG 1377, may have changed in Cata)
 					qg( 1261, qa( 7673)),	-- Frost Ram Exchange
 					qg(40950, qa(25724)),	-- Frostmane Aggression
@@ -343,7 +341,6 @@ _.Zones =
 						["races"] = {3,7}, -- Dwarf, Gnome
 					})),
 					qg(15011, qa( 8149)),	-- Honoring a Hero
-					qg(  786, qa(  218)),	-- Ice and Fire
 --					q(25285),	-- In and Out (REMOVED)
 --					q(43284),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
 --					q(42803),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
@@ -436,7 +433,6 @@ _.Zones =
 					})),
 --[[					
 					qg( 1252, qa(  291)),	-- The Reports
-					qg(  786, qa(  182)),	-- The Troll Menace
 					qg(41363, qa(25839)),	-- The Ultrasafe Personnel Launcher
 					qg(50601, qa(28868)),	-- The View from Down Here
 					qg( 1254, q(   432)),	-- Those Blasted Troggs!
@@ -519,9 +515,10 @@ _.Zones =
 							p(378), 	-- Rabbit
 							p(440), 	-- Snow Cub
 						}),
---[[
+--[[]]--
 						n(-17, {	-- Quests					
 							qg( 8416, qa( 3361)),	-- A Refugee's Quandary
+							qg(  786, qa(24490)),	-- A Trip to Ironforge
 							qg(37087, qa(24475)),	-- All the Other Stuff
 							qg(37087, qa(24496, {	-- Arcane Rune
 								["groups"] = {
@@ -549,8 +546,10 @@ _.Zones =
 								["classes"] = {4}, -- Rogue
 							})),
 							qg(37087, qa(24474)),	-- First Things First: We're Gonna Need Some Beer
+							qg( 6782, qa(24491)),	-- Follow that Gyro-Copter!
 							qg(37081, qa(24470)),	-- Give 'em What-For
 							qg(37081, qa(24469)),	-- Hold the Line!
+							qg(  786, qa(  218)),	-- Ice and Fire
 							qg(63285, qa(31151, {	-- Kick, Punch, It's All in the Mind
 								["groups"] = {
 								},
@@ -559,6 +558,7 @@ _.Zones =
 							qg(37081, qa(24473)),	-- Lockdown in Anvilmar
 							qg( 1104, qa(24486)),	-- Make Hay While the Sun Shines
 							qg(37113, qa(24492)),	-- Pack Your Bags
+							qg(  786, qa(  182)),	-- The Troll Menace
 							qg( 1354, qa(24489)),	-- Trolling for Information
 							qg(37087, qa(24487)),	-- Whitebeard Needs Ye
 							qg(  837, qa(24533, {	-- Words of Power
@@ -568,7 +568,7 @@ _.Zones =
 								["classes"] = {5}, -- Priest
 							})),
 						}),
---]]						
+--[[]]--
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
 					["description"] = "|cff66ccffColdridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.|r",
