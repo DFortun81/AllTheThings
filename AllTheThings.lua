@@ -806,6 +806,34 @@ local containsAny = function(arr, otherArr)
 	end
 end
 
+-- Note Lib
+local function SetNote(key, id, note)
+	wipe(searchCache);
+	SetDataSubSubMember("Notes", key, id, note);
+end
+local function GetNoteForGroup(group)
+	if group then
+		local key = group.key;
+		if key then
+			return GetDataSubSubMember("Notes", key, group[key]);
+		else
+			return GetDataSubMember("Notes", BuildSourceTextForChat(group));
+		end
+	end
+end
+local function SetNoteForGroup(group, note)
+	if group then
+		wipe(searchCache);
+		local key = group.key;
+		if key then
+			SetDataSubSubMember("Notes", key, group[key], note);
+		else
+			SetDataSubMember("Notes", BuildSourceTextForChat(group), note);
+		end
+	end
+end
+AllTheThings.SetNote = SetNote;
+
 -- Item Information Lib
 local function SortGearSetInformation(a,b)
 	local first = a.uiOrder - b.uiOrder;
@@ -1145,7 +1173,7 @@ local function SearchForItemIDRecursively(group, itemID)
 					-- Merge!
 					tinsert(first, g[1]);
 				else
-					-- Cool! (This should be the most common occurance)
+					-- Cool! (This should be the most common occurrence)
 					first = g;
 				end
 			end
@@ -1160,100 +1188,25 @@ local function SearchForItemID(itemID)
 		return SearchForItemIDRecursively(group, itemID);
 	end
 end
-local function SearchForItemIDRecursivelyQuickly(group, itemID)
-	if group.itemID == itemID then
-		-- OH BOY, WE FOUND IT!
-		return { group };
-	end
-	if group.groups then
-		-- Go through the sub groups and determine if any of them have a response.
-		local first = nil;
-		for i, subgroup in ipairs(group.groups) do
-			local g = SearchForItemIDRecursively(subgroup, itemID);
-			if g then
-				if first then
-					-- Merge!
-					tinsert(first, g[1]);
-				else
-					-- Cool! (This should be the most common occurance)
-					first = g;
-				end
-			end
-		end
-		return first;
-	end
-end
-local function SearchForItemIDQuickly(itemID)
-	local group = app:GetDataCache();
-	if group and itemID and itemID > 0 then
-		if fieldCache["itemID"] then return fieldCache["itemID"][itemID]; end
-		return SearchForItemIDRecursivelyQuickly(group, itemID);
-	end
-end
 local function SearchForMapID(mapID)
-	if mapID then
-		return app:GetDataCache() and fieldCache["mapID"][mapID];
+	if mapID and app:GetDataCache() then
+		return fieldCache["mapID"][mapID];
 	end
 end
 local function SearchForQuestID(questID)
-	if questID then
-		return app:GetDataCache() and fieldCache["questID"][questID];
-	end
-end
-local function SearchForSourceIDRecursively(group, sourceID)
-	if group.s == sourceID then
-		-- OH BOY, WE FOUND IT!
-		return { group };
-	end
-	if group.groups then
-		-- Go through the sub groups and determine if any of them have a response.
-		local first = nil;
-		for i, subgroup in ipairs(group.groups) do
-			local g = SearchForSourceIDRecursively(subgroup, sourceID);
-			if g then
-				if first then
-					-- Merge!
-					tinsert(first, g[1]);
-				else
-					-- Cool! (This should be the most common occurance)
-					first = g;
-				end
-			end
-		end
-		return first;
+	if questID and app:GetDataCache() then
+		return fieldCache["questID"][questID];
 	end
 end
 local function SearchForSourceID(sourceID)
-	if sourceID and sourceID > 0 then
-		return app:GetDataCache() and fieldCache["s"][sourceID];
-	end
-end
-local function SearchForSourceIDRecursivelyQuickly(group, sourceID)
-	if group.s == sourceID then
-		-- OH BOY, WE FOUND IT!
-		return { group };
-	end
-	if group.groups then
-		-- Go through the sub groups and determine if any of them have a response.
-		for i, subgroup in ipairs(group.groups) do
-			local g = SearchForSourceIDRecursivelyQuickly(subgroup, sourceID);
-			if g then return g; end
-		end
+	if sourceID and sourceID > 0 and app:GetDataCache() then
+		return fieldCache["s"][sourceID];
 	end
 end
 local function SearchForSourceIDQuickly(sourceID)
-	if sourceID and sourceID > 0 then
-		local group = app:GetDataCache();
-		return group and fieldCache["s"][sourceID];
-	end
-end
-local function SearchForSourceIDVeryQuickly(sourceID)
-	if sourceID and sourceID > 0 then
-		local group = app:GetDataCache();
-		if group then
-			group = fieldCache["s"][sourceID];
-			if group and #group > 0 then return group[1]; end
-		end
+	if sourceID and sourceID > 0 and app:GetDataCache() then
+		local group = fieldCache["s"][sourceID];
+		if group and #group > 0 then return group[1]; end
 	end
 end
 local function SearchForItemLink(link)
@@ -1278,12 +1231,7 @@ local function SearchForItemLink(link)
 				local sourceID = GetSourceID(link);
 				if sourceID then
 					important = true;
-					if GetDataMember("ShowAllSources") then
-						group = SearchForSourceID(sourceID) or SearchForItemID(itemID);
-					else
-						group = SearchForSourceIDQuickly(sourceID) or SearchForItemIDQuickly(itemID);
-					end
-					
+					group = SearchForSourceID(sourceID) or SearchForItemID(itemID);
 					if group and #group > 0 then
 						if group[1].u and group[1].u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
 							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE"));
@@ -1301,7 +1249,7 @@ local function SearchForItemLink(link)
 						
 						if GetDataMember("ShowSharedAppearances") then
 							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-								local otherATTSource = SearchForSourceIDQuickly(otherSourceID);
+								local otherATTSource = SearchForSourceID(otherSourceID);
 								if otherATTSource then
 									local text;
 									otherATTSource = otherATTSource[1];
@@ -1345,12 +1293,7 @@ local function SearchForItemLink(link)
 						if GetDataMember("ShowSourceID") then tinsert(listing, L("SOURCE_ID") .. "/" .. sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected)); end
 					end
 				else
-					if GetDataMember("ShowSources") and GetDataMember("ShowAllSources") then
-						group = SearchForItemID(itemID);
-					else
-						group = SearchForItemIDQuickly(itemID);
-					end
-					
+					group = SearchForItemID(itemID);
 					if group and #group > 0 then
 						if group[1].u and group[1].u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
 							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE"));
@@ -1361,27 +1304,36 @@ local function SearchForItemLink(link)
 				
 				if GetDataMember("ShowItemID") and itemID > 0 then tinsert(listing, L("ITEM_ID") .. "/" .. itemID); end
 				if GetDataMember("ShowItemString") then tinsert(listing, itemString); end
-				if group and #group > 0 and GetDataMember("ShowLootSpecializations", true) then
-					local specs = group[1].specs;
-					if specs and group[1].s then
-						if #specs > 0 then
-							local spec_label = "";
-							local atleastone = false;
-							for key, specID in ipairs(specs) do
-								local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-								if class == app.Class then
-									spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
-									atleastone = true;
+				if group and #group > 0 then
+					if GetDataMember("ShowLootSpecializations", true) then
+						local specs = group[1].specs;
+						if specs and group[1].s then
+							if #specs > 0 then
+								local spec_label = "";
+								local atleastone = false;
+								for key, specID in ipairs(specs) do
+									local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
+									if class == app.Class then
+										spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
+										atleastone = true;
+									end
 								end
-							end
-							if atleastone then
-								tinsert(listing, " /" .. spec_label);
+								if atleastone then
+									tinsert(listing, " /" .. spec_label);
+								else
+									tinsert(listing, " /Not available in Personal Loot.");
+								end
 							else
 								tinsert(listing, " /Not available in Personal Loot.");
 							end
-						else
-							tinsert(listing, " /Not available in Personal Loot.");
 						end
+					end
+					
+					-- If there is a note for this item, show it.
+					local note = GetNoteForGroup(group[1]);
+					if note then
+						tinsert(listing, "Custom Note:");
+						tinsert(listing, "|cffffffff" .. note .. "|r");
 					end
 				end
 				
@@ -1419,7 +1371,7 @@ local function SearchForMissingItems(group)
 	return arr; 
 end
 AllTheThings.SearchForItemID = SearchForItemID;
-AllTheThings.SearchForSourceID = SearchForSourceIDQuickly;
+AllTheThings.SearchForSourceID = SearchForSourceID;
 AllTheThings.SearchForItemLink = SearchForItemLink;
 AllTheThings.SearchForCachedItemLink = SearchForCachedItemLink;
 AllTheThings.SearchForField = SearchForField;
@@ -1905,6 +1857,7 @@ AllTheThings.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 AllTheThings.ToggleCompletionistMode = ToggleCompletionistMode;
 AllTheThings.ToggleDebugMode = ToggleDebugMode;
 AllTheThings.ToggleMainList = ToggleMainList;
+
 
 -- Tooltip Hooks
 local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
@@ -3386,7 +3339,6 @@ function app.FilterItemClass_RequirePersonalLootCurrentSpec(item)
     end
     return true;
 end
-
 function app.FilterItemClass_RequireRaces(races)
 	if races then
 		for key,value in pairs(races) do
@@ -3433,7 +3385,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 		return true;
 	else
 		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
-		local item = SearchForSourceIDVeryQuickly(sourceInfo.sourceID);
+		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
 		if item then
 			-- If the first item is class locked...
 			if item.classes then
@@ -3443,7 +3395,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and item.f == otherItem.f then
 									if otherItem.classes then
 										-- If this item is class locked...
@@ -3475,7 +3427,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and item.f == otherItem.f then
 									if otherItem.classes then
 										-- If this item is class locked...
@@ -3510,7 +3462,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and item.f == otherItem.f then
 									if otherItem.classes then
 										-- If this item is class locked...
@@ -3539,7 +3491,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and item.f == otherItem.f then
 									if otherItem.classes then
 										-- If this item is class locked...
@@ -3571,7 +3523,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
 		return true;
 	else
 		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
-		local item = SearchForSourceIDVeryQuickly(sourceInfo.sourceID);
+		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
 		if item then
 			-- If the first item is class locked...
 			if item.classes then
@@ -3581,7 +3533,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and item.f == otherItem.f then
 									if otherItem.classes then
 										-- If this item is class locked...
@@ -3613,7 +3565,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and item.f == otherItem.f then
 									if otherItem.classes then
 										-- If this item is class locked...
@@ -3648,7 +3600,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and item.f == otherItem.f then
 									if otherItem.classes then
 										-- If this item is class locked...
@@ -3677,7 +3629,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDVeryQuickly(sourceID);
+								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and item.f == otherItem.f then
 									-- Check for class and race locks...
 									if app.FilterItemClass_RequireClasses(otherItem.classes) and app.FilterItemClass_RequireRaces(otherItem.races) then
@@ -4279,7 +4231,7 @@ local function CreateMiniListForGroup(group)
 			for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				-- If this isn't the source we already did work on and we haven't already completed it
 				if otherSourceID ~= group.s then
-					local attSearch = SearchForSourceIDVeryQuickly(otherSourceID);
+					local attSearch = SearchForSourceIDQuickly(otherSourceID);
 					if attSearch then
 						tinsert(mainItem.groups, setmetatable({}, { __index = attSearch })); 
 					else
@@ -5562,6 +5514,13 @@ local function RowOnEnter(self)
 				local link = reference.link;
 				if link then pcall(GameTooltip.SetHyperlink, GameTooltip, link); end
 			end
+			
+			-- If there is a note for this item, show it.
+			local note = GetNoteForGroup(reference);
+			if note then
+				GameTooltip:AddLine("Custom Note:");
+				GameTooltip:AddLine(note, 1, 1, 1);
+			end
 		end
 		
 		-- Miscellaneous fields
@@ -6355,6 +6314,30 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		if group and #group > 0 then CreateMiniListForGroup(group[1]); end
 	end
 end
+
+SLASH_AllTheThingsNote1 = "/attnote";
+SlashCmdList["AllTheThingsNote"] = function(cmd)
+	cmd = cmd or "";
+	if cmd == "clear" then
+		local originalMapID = GetCurrentMapAreaID();
+		SetMapToCurrentZone();
+		SetNote("mapID", GetCurrentMapAreaID(), nil);
+		SetMapByID(originalMapID);
+		return nil;
+	elseif cmd ~= "" then
+		local originalMapID = GetCurrentMapAreaID();
+		SetMapToCurrentZone();
+		SetNote("mapID", GetCurrentMapAreaID(), cmd);
+		SetMapByID(originalMapID);
+		return nil;
+	end
+	
+	-- Print out help
+	print("|cff15abff/attnote|r - Usage:");
+	print("|cff15abff/attnote|r |cffff9333clear|r - Clear the note for the current map.");
+	print("|cff15abff/attnote|r |cffff9333<note>|r - Write a note for the current map.");
+end
+
 
 -- Register Events required at the start
 app:RegisterEvent("BOSS_KILL");
