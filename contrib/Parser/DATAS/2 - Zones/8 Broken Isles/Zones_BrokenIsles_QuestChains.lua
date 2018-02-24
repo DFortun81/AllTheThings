@@ -111,13 +111,13 @@ _.Zones =
 							["groups"] = {
 							},
 							["qg"] = 97662, -- Jale Rivermane
-							["sourceQuestID"] = { 41840 }, -- Ice and Shadow
+							["sourceQuestID"] = { 41815 }, -- Curse of the Necrodark
 						}),
 						q(41841, { -- The Final Ward
 							["groups"] = {
 							},
 							["qg"] = 105213, -- Spiritwalker Ebonhorn
-							["sourceQuestID"] = { 41882 }, -- Whispers of the Darkness
+							["sourceQuestID"] = { 41840, 41882 }, -- Ice and Shadow / Whispers of the Darkness
 						}),
 						q(48403, { -- The Darkness
 							["groups"] = {
