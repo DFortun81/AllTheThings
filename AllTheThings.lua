@@ -817,7 +817,7 @@ local function GetNoteForGroup(group)
 		if key then
 			return GetDataSubSubMember("Notes", key, group[key]);
 		else
-			return GetDataSubMember("Notes", BuildSourceTextForChat(group));
+			return GetDataSubMember("Notes", BuildSourceTextForChat(group, 0));
 		end
 	end
 end
@@ -828,7 +828,7 @@ local function SetNoteForGroup(group, note)
 		if key then
 			SetDataSubSubMember("Notes", key, group[key], note);
 		else
-			SetDataSubMember("Notes", BuildSourceTextForChat(group), note);
+			SetDataSubMember("Notes", BuildSourceTextForChat(group, 0), note);
 		end
 	end
 end
@@ -5514,13 +5514,6 @@ local function RowOnEnter(self)
 				local link = reference.link;
 				if link then pcall(GameTooltip.SetHyperlink, GameTooltip, link); end
 			end
-			
-			-- If there is a note for this item, show it.
-			local note = GetNoteForGroup(reference);
-			if note then
-				GameTooltip:AddLine("Custom Note:");
-				GameTooltip:AddLine(note, 1, 1, 1);
-			end
 		end
 		
 		-- Miscellaneous fields
@@ -5698,6 +5691,14 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine(L((self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"), 1, 1, 1);
 			else
 				GameTooltip:AddLine(L((self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"), 1, 1, 1);
+			end
+		end
+		if not reference.itemID then
+			-- If there is a note for this item, show it.
+			local note = GetNoteForGroup(reference);
+			if note then
+				GameTooltip:AddLine("Custom Note:");
+				GameTooltip:AddLine(note, 1, 1, 1);
 			end
 		end
 		GameTooltip:Show();
