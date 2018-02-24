@@ -545,6 +545,21 @@ local function BuildSourceText(group, l, flag)
 	end
 	return group.text or "*";
 end
+local function BuildSourceTextForChat(group, l)
+	if group.parent then
+		if l < 1 then
+			if group.dr then
+				return BuildSourceTextForChat(group.parent, l + 1) .. "/ |c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
+			else
+				return BuildSourceTextForChat(group.parent, l + 1);
+			end
+		else
+			return BuildSourceTextForChat(group.parent, l + 1) .. " -> " .. (group.text or "*");
+		end
+		return group.text or "*";
+	end
+	return "ATT";
+end
 local function GetSourceID(itemLink)
     if IsDressableItem(itemLink) then
 		local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
@@ -1382,12 +1397,12 @@ local function SearchForCachedItemLink(itemLink)
 	return GetCachedSearchResults(itemLink, SearchForItemLink, itemLink);
 end
 local function SearchForMissingItemsRecursively(group, listing)
-	if app.FilterItemClass(group) then
-		if (not group.collected or (group.total and (group.progress < group.total))) and (not group.b or group.b == 2) then
+	if group.visible then
+		if not group.collected and group.collectible and (not group.b or group.b == 2) then
 			local name = group.name;
 			if name then listing[name] = 1; end
 		end
-		if group.groups then
+		if group.groups and group.expanded then
 			-- Go through the sub groups and determine if any of them have a response.
 			for i, subgroup in ipairs(group.groups) do
 				SearchForMissingItemsRecursively(subgroup, listing);
@@ -3264,13 +3279,13 @@ app.BaseToy = {
 		elseif key == "f" then
 			return 102;
 		elseif key == "text" then
-			return C_ToyBox_GetToyLink(t.toyID); --select(2, C_ToyBox_GetToyInfo(t.itemID));
+			return C_ToyBox_GetToyLink(t.toyID);
 		elseif key == "link" then
 			return C_ToyBox_GetToyLink(t.toyID);
 		elseif key == "icon" then
 			return select(3, C_ToyBox_GetToyInfo(t.toyID));
 		elseif key == "name" then
-			return t.text;
+			return select(2, C_ToyBox_GetToyInfo(t.itemID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5417,60 +5432,93 @@ end
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
-		-- Determine if this is a TODO list or a regular list.
-		local todo = self:GetParent().todo;
-		if todo then
-			-- TODO List
-			print("TODO!!!");
-		else
-			-- Regular List
-			if reference.groups then
-				if button == "LeftButton" then
-					if IsShiftKeyDown() then
-						RefreshCollections(reference);
-						return true;
-					end
-					if IsModifiedClick("DRESSUP") then
-						local link = reference.link or reference.silentLink;
-						if link and IsDressableItem(link) and DressUpVisual(link) then return true; end
-					end
-					if self.index > 0 then
-						-- Expand Functionality
-						if IsAltKeyDown() then
-							ExpandGroupsRecursively(reference, not reference.expanded);
-						else
-							reference.expanded = not reference.expanded;
+		if IsShiftKeyDown() then
+			-- If we're at the Auction House
+			if AuctionFrame and AuctionFrame:IsShown() then
+				-- Auctionator Support
+				if Atr_SearchAH then
+					if reference.groups and #reference.groups > 0 then
+						local missingItems = SearchForMissingItems(reference);					
+						if #missingItems > 0 then
+							Atr_SelectPane(3);
+							Atr_SearchAH(app.DisplayName, missingItems);
+							return true;
 						end
-						app:UpdateWindows();
+						app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
 					else
-						-- Allow the First Frame to move the parent.
-						local owner = self:GetParent():GetParent();
-						self:SetScript("OnMouseUp", function(self)
-							self:SetScript("OnMouseUp", nil);
-							StopMovingOrSizing(owner);
-						end);
-						StartMovingOrSizing(owner, true);
+						local name = reference.name;
+						if name then
+							Atr_SelectPane(3);
+							--Atr_SearchAH(name, { name });
+							Atr_SetSearchText (name);
+							Atr_Search_Onclick ();
+							return true;
+						end
+						app.print("Only Bind on Equip items can be found using this search.");
 					end
+					return true;
 				else
-					if IsShiftKeyDown() and Atr_SearchAH then
-						Atr_SearchAH (app.DisplayName, SearchForMissingItems(reference));
+					if reference.groups and #reference.groups > 0 and not reference.link then
+						app.print("Group-based searches are only supported using Auctionator.");
 						return true;
-					end
-					if self.index > 0 then
-						CreateMiniListForGroup(self.ref);
 					else
-						-- Configuration Functionality!
-						ShowInterfaceOptions();
+						-- Attempt to search manually with the link.
+						local link = reference.link or reference.silentLink;
+						if link and HandleModifiedItemClick(link) then
+							AuctionFrameBrowse_Search();
+							return true;
+						end
 					end
 				end
 			else
+				-- Not at the Auction House
+				-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 				local link = reference.link or reference.silentLink;
-				if link then
-					if HandleModifiedItemClick(link) then return true; end
-					if IsModifiedClick("DRESSUP") then return DressUpVisual(link) or app.print(link or self.Label:GetText()); end
-					if button == "RightButton" then CreateMiniListForGroup(self.ref); end
-				end
+				if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
+				
+				-- Default behaviour is to Refresh Collections.
+				RefreshCollections(reference);
+				return true;
 			end
+		end
+		
+		-- Control Click Expands the Groups
+		if IsControlKeyDown() then
+			-- If this reference has a link, then attempt to preview the appearance.
+			local link = reference.link or reference.silentLink;
+			if link and HandleModifiedItemClick(link) then return true; end
+			
+			-- If this reference is anything else, expand the groups.
+			if reference.groups then
+				if self.index < 1 and #reference.groups > 0 then
+					ExpandGroupsRecursively(reference, not reference.groups[1].expanded);
+				else
+					ExpandGroupsRecursively(reference, not reference.expanded);
+				end
+				app:UpdateWindows();
+				return true;
+			end
+		end
+		
+		-- All non-Shift Right Clicks open a mini list or the settings.
+		if button == "RightButton" then
+			if self.index > 0 then
+				CreateMiniListForGroup(self.ref);
+			else
+				-- Open the Settings Menu
+				ShowInterfaceOptions();
+			end
+		elseif self.index > 0 then
+			reference.expanded = not reference.expanded;
+			app:UpdateWindows();
+		else
+			-- Allow the First Frame to move the parent.
+			local owner = self:GetParent():GetParent();
+			self:SetScript("OnMouseUp", function(self)
+				self:SetScript("OnMouseUp", nil);
+				StopMovingOrSizing(owner);
+			end);
+			StartMovingOrSizing(owner, true);
 		end
 	end
 end
@@ -5686,9 +5734,12 @@ local function RowOnEnter(self)
 		end
 		
 		if reference.groups then
-			GameTooltip:AddLine(L((self.index > 0 and "LEFT_CLICK_TO_EXPAND") or "LEFT_CLICK_TO_MOVE"), 1, 1, 1);
-			GameTooltip:AddLine(L("SHIFT_LEFT_CLICK"), 1, 1, 1);
-			GameTooltip:AddLine(L((self.index > 0 and "RIGHT_CLICK_TO_POPOUT") or "RIGHT_CLICK_TO_CONFIGURE"), 1, 1, 1);
+			-- If we're at the Auction House
+			if AuctionFrame and AuctionFrame:IsShown() then
+				GameTooltip:AddLine(L((self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"), 1, 1, 1);
+			else
+				GameTooltip:AddLine(L((self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"), 1, 1, 1);
+			end
 		end
 		GameTooltip:Show();
 	end
