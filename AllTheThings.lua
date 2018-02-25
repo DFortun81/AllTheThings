@@ -4307,6 +4307,8 @@ local function CreateMiniListForGroup(group)
 			["expanded"] = true,
 			["groups"] = { mainItem }
 		};
+		BuildGroups(popout.data, popout.data.groups);
+		UpdateGroups(popout.data, popout.data.groups, 1);
 	elseif group.questID then
 		-- This is a quest object. Let's show prereqs and breadcrumbs.
 		local mainQuest = setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = group });
@@ -4383,9 +4385,11 @@ local function CreateMiniListForGroup(group)
 			["expanded"] = true,
 			["groups"] = groups
 		};
+		BuildGroups(popout.data, popout.data.groups);
+		UpdateGroups(popout.data, popout.data.groups, 1);
 	elseif group.groups then
 		-- This is already a container with accurate numbers.
-		popout.data = setmetatable({ ["progress"] = 0, ["total"] = 0 }, { __index = group });
+		popout.data = setmetatable({}, { __index = group });
 	else
 		-- This is a standalone item
 		local newItem = setmetatable({ ['hideText'] = true }, { __index = group });
@@ -4399,9 +4403,9 @@ local function CreateMiniListForGroup(group)
 			["progress"] = 0,
 			["total"] = 0,
 		};
+		BuildGroups(popout.data, popout.data.groups);
+		UpdateGroups(popout.data, popout.data.groups, 1);
 	end
-	BuildGroups(popout.data, popout.data.groups);
-	UpdateGroups(popout.data, popout.data.groups, 1);
 	ExpandGroupsRecursively(popout.data, true);
 	--ExportData(popout.data);
 	popout:Toggle(true);
