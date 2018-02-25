@@ -3836,8 +3836,18 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		
 		-- Attempt to cleanly refresh the data.
 		local fresh = false;
+		
+		-- Mark all results as marked. This prevents a double +1 on parents.
 		for i,result in ipairs(searchResults) do
 			if result.visible and result.parent and result.parent.total then
+				result.marked = true;
+			end
+		end
+		
+		-- Only unmark and +1 marked search results.
+		for i,result in ipairs(searchResults) do
+			if result.marked then
+				result.marked = nil;
 				if result.total then
 					-- This is an item that has a relative set of groups
 					UpdateParentProgress(result);
