@@ -172,11 +172,19 @@ _.Zones =
 					q( 10997),	-- Even Gronn Have Standards
 					q( 10830),	-- Exorcising the Trees
 					qa( 10797),	-- Favor of the Gronn
-					qh( 10489),	-- Felling an Ancient Tree
 					q( 10819),	-- Felsworn Gas Mask
 					q( 10911),	-- Fire At Will!
 					qa( 10581),	-- Follow the Breadcrumbs
 --]]					
+					qh(10489, {	-- Felling an Ancient Tree
+						["groups"] = {
+							i(31485),	-- Dark Deed Leggings
+							i(31486),	-- Bear-Strength Harness
+							i(31487),	-- Wild Horned Helm
+							i(31488),	-- Boots of the Ancient-Killer
+						},
+						["description"] = "Wanted Poster",
+					}),
 					q(10771,  {  	-- From the Ashes
 						i(31414),
 						i(31416),
