@@ -4156,9 +4156,14 @@ function app.QuestCompletionHelper(questID)
 	local searchResults = SearchForQuestID(questID);
 	if searchResults and #searchResults > 0 then
 		-- Attempt to cleanly refresh the data.
-		local fresh = false;
 		for i,result in ipairs(searchResults) do
 			if result.visible and result.parent and result.parent.total then
+				result.marked = true;
+			end
+		end
+		for i,result in ipairs(searchResults) do
+			if result.marked then
+				result.marked = nil;
 				if result.total then
 					-- This is an item that has a relative set of groups
 					UpdateParentProgress(result);
@@ -4176,12 +4181,11 @@ function app.QuestCompletionHelper(questID)
 						result.visible = app.CollectedItemVisibilityFilter(result);
 					end
 				end
-				fresh = true;
 			end
 		end
 		
-		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true);
+		-- Don't force a full refresh.
+		app:RefreshData(true, true);
 	end
 end
 
