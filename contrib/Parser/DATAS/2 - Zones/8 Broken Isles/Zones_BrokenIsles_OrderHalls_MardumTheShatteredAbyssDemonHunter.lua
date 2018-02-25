@@ -588,9 +588,10 @@ _.Zones =
 							}),
 							n(112407, { -- Falara Nightsong <Illidari Provisioner>
 								["groups"] = {
-									i(147537), -- A Tiny Set of Warglaives Toy
-									i(143727), -- Champion's Salute Toy
-									gs(548, { -- Battlegear of the Shattered Abyss
+									i(147537), 	-- A Tiny Set of Warglaives Toy
+									i(143727), 	-- Champion's Salute Toy
+									i(140560),	-- Warglaive of the Fel Hammer
+									gs(548, { 	-- Battlegear of the Shattered Abyss
 										i(139718), -- Head
 										i(139720), -- Shoulders
 										i(139715), -- Chest
