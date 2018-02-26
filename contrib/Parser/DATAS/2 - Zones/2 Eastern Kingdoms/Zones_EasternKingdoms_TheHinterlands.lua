@@ -149,13 +149,38 @@ _.Zones =
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								o(187559, {	-- Horde Bonfire (Hinterlands)
-									qa(11755),	-- Desecrate this Fire!
+								qa(11784),	-- Desecrate this Fire!  (these appear to be the same quest/fire - on wowhead, this one displays only in Hinterlands and the other displays in all bonfire zones - need to check when Midsummer is active)
+--								qa(11755),	-- Desecrate this Fire!
+								qa(11826, {	-- Honor the Flame
+									["groups"] = {
+									},
+									["qg"] = 25908,	-- The Hinterlands Flame Warden
 								}),
-								qg(25962, qa(11882)),	-- Playing with Fire
+								qh(11860, {	-- Honor the Flame
+									["groups"] = {
+									},
+									["qg"] = 25944,	-- The Hinterlands Flame Keeper
+								}),
+								qa(11882, {	-- Playing with Fire
+									["groups"] = {
+									},
+									["qg"] = 25962,	-- Fire Eater
+								}),
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
+					}),
+					n(-58, {	-- Hallow's End
+						["groups"] = {
+							n(-17, {	-- Quests
+								qa(12351),	-- Candy Bucket
+								qa(28970),	-- Candy Bucket
+								qh(12387),	-- Candy Bucket
+								qh(28971),	-- Candy Bucket
+							}),
+						},
+						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["u"] = 26,
 					}),
 				}),								
 				n(-25, { 	-- Pet Battle
@@ -165,31 +190,408 @@ _.Zones =
 					p(446), 	-- Jade Oozeling
 					p(450), 	-- Maggot
 					p(417), 	-- Rat
+					q(31910),	-- David Kosse (DAILY)				
 				}),
 				n(-17, { 	-- Quests
 					
 					
 					
+					qa(26486, {	-- 99 Bottles of Booze on the Beach
+						["groups"] = {
+						},
+						["qg"] = 43109,	-- Dron Blastbrew
+					}),
 					
 					
+					qh(26310, {	-- All That Skitters
+						["groups"] = {
+						},
+						["qg"] = 42622,	-- Eliza Darkgrin
+					}),
 					
+					
+					qa(26547, {	-- A Mangy Threat
+						["groups"] = {
+						},
+						["qg"] = 5636,	-- Gryphon Master Talonaxe
+						["breadcrumbQuestID"] = { 26542 },	-- Hero's Call: The Hinterlands!
+					}),
+					
+					
+					qh(26382, {	-- Can't Make An Omelette Without...
+						["groups"] = {
+							i( 59298),	-- Surlis' Mantle
+							i( 59299),	-- Apothecary Leggings
+							i( 59300),	-- Shadraspawn Belt
+							i( 59301),	-- Legguards of Caution
+							i(131519),	-- Apothecary Chain Pants
+							i(131520),	-- Shadraspawn Waistguard
+						},
+						["qg"] = 42896,	-- Apothecary Surlis
+					}),
+					
+					
+					qh(26384, {	-- Darkcleric Marnal
+						["groups"] = {
+						},
+						["qg"] = 42622,	-- Eliza Darkgrin
+						["sourceQuestID"] = { 26369 },	-- Hunt the Keeper
+					}),
+					
+					
+					qh(26309, { -- Dark Vessels
+						["groups"] = {
+							i( 59294),	-- Sandals of Tainted Blood
+--							i( 59295),	-- Not transmoggable
+							i( 59296),	-- Spider Venom Leggings
+							i( 59297),	-- Dark Vessel Breastplate
+--							i(131510),	-- Not transmoggable
+							i(131511),	-- Spider Venom Legguards
+						},
+						["qg"] = 42622,	-- Eliza Darkgrin
+						["sourceQuestID"] = { 26310 },	-- All That Skitters
+					}),
+					
+					
+					qh(26307, {	-- Death to the Vilebranch
+						["groups"] = {
+						},
+						["qg"] = 42642,	-- Death to the Vilebranch
+						["sourceQuestID"] = { 26306 },	-- Start Taking Back
+					}),
+					
+					
+					qh(26357, { -- Faces of Evil
+						["groups"] = {
+							i(59288),	-- Vile Branch
+							i(59290),	-- Jintha'Alor Axe
+						},
+						["qg"] = 42624,	-- Kotonga
+					}),
+					
+					
+					q(   485, { -- Find OOX-09/HL!
+						["groups"] = {
+							q(836, { -- Rescue OOX-09/HL!
+								i(9645), -- Gnomish Inventor Boots
+								i(9646), -- Gnomish Water Sinking Device
+							}),
+						},
+						["description"] = "This beacon is found in Hinterlands.",
+					}),
+					
+					
+					qh(26210, {	-- Gammerita, Mon!
+						["groups"] = {
+							i( 59274),	-- Katoom's Mask
+							i( 59275),	-- Stomachache Belt
+							i( 59276),	-- Snapjaw Bracers
+							i(131495),	-- Stomachache Cinch
+						},
+						["qg"] = 14740,	-- Katoom the Angler
+					}),
+				
+				
+					qa(26483, {	-- Gan'dranda
+						["groups"] = {
+							i( 59242),	-- Ironsight Crossbow
+							i( 59243),	-- Theresa's Bracers
+							i( 59244),	-- Stormfeather Boots
+							i( 59245),	-- Head Kickers
+							i(131536),	-- Stormfeather Treads
+						},
+						["qg"] = 43108,	-- Kerr Ironsight
+					}),
+				
+				
+					qh(26366, {	-- Heads Up
+						["groups"] = {
+						},
+						["qg"] = 42642,	-- Primal Torntusk
+					}),
+				
+				
+					qh(26369, {	-- Hunt the Keeper (awarded Hinterlands Quests achievement)
+						["groups"] = {
+							i( 59284),	-- Unkeeper Blade
+							i( 59285),	-- Leggings of Secret Rituals
+							i( 59286),	-- Gloves of Strange Words
+							i( 59287),	-- Tablet-Bearer's Pauldrons
+							i(131518),	-- Gauntlets of Strange Words
+							i(156945),	-- Talon Hatchet 
+						},
+						["qg"] = 42642,	-- Primal Torntusk
+						["sourceQuestID"] = { 26363 },	-- Summit of Fate
+					}),
+				
+				
+					qh(26224, {	-- Hunt the Savages
+						["groups"] = {
+						},
+						["qg"] = 14741,	-- Huntsman Markhor
+						["sourceQuestID"] = { 26223 },	-- Stalking the Stalkers
+					}),
+				
+				
+					qh(26308, { -- It's Ours Now
+						["groups"] = {
+							i( 59291),	-- Blood Drinker Staff
+							i( 59292),	-- Soul Eater Shoulderguard
+							i(131509),	-- Soul Eater Pauldrons
+						},
+						["qg"] = 42642,	-- Primal Torntusk
+						["sourceQuestID"] = { 26307 },	-- Death to the Vilebranch
+					}),
+				
+				
+					qh(26212, {	-- Lard Lost His Lunch
+						["groups"] = {
+						},
+						["qg"] = 14731,	-- Lard
+					}),
+				
+				
+					qh(26367, {	-- Ongo'longo's Revenge
+						["groups"] = {
+						},
+						["qg"] = 42642,	-- Primal Torntusk
+						["sourceQuestID"] = { 26307 },	-- Death to the Vilebranch
+					}),
+				
+				
+					qa(26548, {	-- Out to the Front
+						["groups"] = {
+						},
+						["qg"] = 5636,	-- Gryphon Master Talonaxe
+						["sourceQuestID"] = { 26547, 26546 },	-- A Mangy Threat & Razorbeak Friends
+					}),
+				
+				
+					qh(26283, { -- Prime Slime
+						["groups"] = {
+							i( 59277),	-- Research Assistant's Wand
+							i( 59278),	-- Slime Hunter Headguard
+							i( 59279),	-- Skulk Rock Belt
+							i(131501),	-- Slime Hunter Headgear
+							i(156946),	-- Goopy Mallet
+						},
+						["qg"] = 42612,	-- Malcolm Fendelson
+						["sourceQuestID"] = { 26238, 26263 },	-- The Savage Dwarves & Thornar Thunderclash						
+					}),
+				
+				
+					qh(26225, {	-- Pupellyverbos Port
+						["groups"] = {
+						},
+						["qg"] = 42464,	-- Grognard
+					}),
+					
+					
+					qa(26546, {	-- Razorbeak Friends
+						["groups"] = {
+							i( 59236),	-- Gryphon-Down Scarf
+							i( 59237),	-- Gryphon Master's Belt
+							i( 59238),	-- Talon Axe
+							i(131553),	-- Gryphon Master's Chain
+						},
+						["qg"] = 5636,	-- Gryphon Master Talonaxe
+					}),
+					
+					
+					qh(26419, {	-- Shadra the Venom Queen (awarded "Hiri'watha" criteria, even though I had already completed the zone achievement ???)
+						["groups"] = {
+							i( 59306),	-- Darkcleric's Veil
+							i( 59307),	-- Virulent Headguard
+							i( 59308),	-- Venomous Headcover
+							i( 59309),	-- Poisoner's Helm
+							i(131526),	-- Virulent Headpiece
+							i(131527),	-- Venomous Headgear
+						},
+						["qg"] = 43299,	-- Deathstalker Lookout
+						["sourceQuestID"] = { 26558 },	-- Summoning Shadra
+					}),
+					
+					
+					qh(26267, {	-- Skulk Rock Clean-Up
+						["groups"] = {
+						},
+						["qg"] = 42613,	-- Elder Torntusk
+						["sourceQuestID"] = { 26238, 26263 },	-- The Savage Dwarves & Thornar Thunderclash
+					}),
+					
+					
+					qh(26268, {	-- Skulk Rock Supplies
+						["groups"] = {
+						},
+						["qg"] = 42613,	-- Elder Torntusk
+						["sourceQuestID"] = { 26238, 26263 },	-- The Savage Dwarves & Thornar Thunderclash
+					}),
+					
+					
+					qa(26485, {	-- Snapjaws, Lad!
+						["groups"] = {
+							un(15, i(19022)),	-- Nat Pagle's Extreme Angler FC-5000
+						},
+						["qg"] = 43109,	-- Dron Blastbrew
+					}),
+					
+					
+					qh(26211, {	-- Snapjaws, Mon!
+						["groups"] = {
+							un(15, i(19022)),	-- Nat Pagle's Extreme Angler FC-5000
+						},
+						["qg"] = 14740,	-- Katoom the Angler
+					}),
+					
+					
+					qh(26223, {	-- Stalking the Stalkers
+						["groups"] = {
+						},
+						["qg"] = 14741,	-- Huntsman Markhor
+					}),
+					
+					
+					qh(26306, {	-- Start Taking Back
+						["groups"] = {
+						},
+						["qg"] = 42642,	-- Primal Torntusk
+						["breadcrumbQuestID"] = { 26432 },	-- The Fall of Jintha'Alor
+					}),
+					
+					
+					qh(26387, {	-- Starvation Diet
+						["groups"] = {
+						},
+						["qg"] = 42896,	-- Apothecary Surlis
+						["sourceQuestID"] = { 26382 },	-- Can't Make an Omelette Without...
+					}),
+					
+					
+					qh(26240, {	-- Stomp To My Beat
+						["groups"] = {
+						},
+						["qg"] = 14739,	-- Mystic Yayo'jin
+					}),
+					
+					
+					qh(26363, {	-- Summit of Fate
+						["groups"] = {
+						},
+						["qg"] = 42642,	-- Primal Torntusk
+						["sourceQuestID"] = { 26308, 26367 },	-- It's Ours Now & Ongo'longo's Revenge
+					}),
+					
+					
+					qh(26558, {	-- Summoning Shadra
+						["groups"] = {
+						},
+						["qg"] = 42898,	-- Darkcleric Marnal
+						["sourceQuestID"] = { 26418 },	-- The Shell of Shadra
+					}),
+					
+					
+					qa(28505, {	-- The Battle for Andorhal
+						["groups"] = {
+						},
+						["qg"] = 5636,	-- Gryphon Master Talonaxe
+						["Lvl"] = 35,
+					}),
+					
+					
+					qh(28508, {	-- The Battle for Andorhal (can't be picked up if you have "Warchief's Command: Western Plaguelands")
+						["groups"] = {
+						},
+						["qg"] = 42898,	-- Darkcleric Marnal
+						["Lvl"] = 35,
+					}),
+					
+					
+					qh(26381, {	-- The Eye of Shadra
+						["groups"] = {
+						},
+						["qg"] = 42898,	-- Darkcleric Marnal
+					}),
+					
+					
+					qh(26432, {	-- The Fall of Jintha'Alor
+						["groups"] = {
+						},
+						["qg"] = 42613,	-- Elder Torntusk
+						["sourceQuestID"] = { 26267, 26268 },	-- Skulk Rock Clean-Up & Skulk Rock Supplies
+					}),
+					
+					
+					qh(26406, {	-- The Fang of Shadra
+						["groups"] = {
+						},
+						["qg"] = 42898,	-- Darkcleric Marnal
+						["sourceQuestID"] = { 26381 },	-- The Eye of Shadra
+					}),
+					
+					
+					qh(26238, {	-- The Savage Dwarves
+						["groups"] = {
+						},
+						["qg"] = 42613,	-- Elder Torntusk
+						["breadcrumbQuestID"] = { 28574 },	-- Warchief's Command: The Hinterlands!
+					}),
+					
+					
+					qh(26418, {	-- The Shell of Shadra
+						["groups"] = {
+							i( 59302),	-- Gown of the Last Priestess
+							i( 59303),	-- Gwenyth's Bracers
+							i( 59304),	-- Gloves of Fanatical Zealotry
+							i( 59305),	-- Greataxe of the Hinterlands
+							i(131524),	-- Gwenyth's Wristguards
+							i(131525),	-- Grips of Fanatical Zealotry
+						},
+						["qg"] = 42898,	-- Darkcleric Marnal
+						["sourceQuestID"] = { 26406 },	-- The Fang of Shadra
+					}),
+					
+					
+					qa(26462, {	-- The Wicked Revantusk
+						["groups"] = {
+						},
+						["qg"] = 43108,	-- Kerr Ironsight
+					}),
+					
+					
+					qh(26263, {	-- Thornar Thunderclash
+						["groups"] = {
+							i( 59280),	-- Voice Stealer
+							i( 59281),	-- Elder's Wristwraps
+							i( 59282),	-- Encroaching Treads
+							i( 59283),	-- Revantusk Boots
+							i(131498),	-- Encroaching Boots
+						},
+						["qg"] = 42613,	-- Elder Torntusk
+					}),
+					
+					
+					qh(26368, {	-- Venomous Secrets
+						["groups"] = {
+						},
+						["qg"] = 42622,	-- Eliza Darkgrin
+						["sourceQuestID"] = { 26309 },	-- Dark Vessels
+					}),
+
 					
 					
 					
 --[[					
-					["groups"] = {
-					},
-					["qg"] = ,	-- 
-					["sourceQuestID"] = {  }	-- 
+						["groups"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuestID"] = {  },	-- 
+					}),
 --]]
 					
 					
 					
 					
-					qa(26486),	-- 99 Bottles of Booze on the Beach
-					qa(26547),	-- A Mangy Threat
 					qa(26523),	-- All That Skitters
-					qh(26310),	-- All That Skitters
 					qg(43200, qa(26641, { -- Can't Make An Omelette Without...
 						i( 59260),
 						i( 59262),
@@ -198,18 +600,6 @@ _.Zones =
 						i(131570),
 						i(131571),
 					})),
-					qg(42896, qh(26382, { -- Can't Make An Omelette Without...
-						i( 59298),
-						i( 59299),
-						i( 59300),
-						i( 59301),
-						i(131519),
-						i(131520),
-					})),
-					qh(28971),	-- Candy Bucket
-					qh(12387),	-- Candy Bucket
-					qa(12351),	-- Candy Bucket
-					qa(28970),	-- Candy Bucket
 					qg(43156, qa(26524, { -- Dark Vessels
 						i( 59252),
 						--i(59253), -- Not transmoggable
@@ -218,57 +608,15 @@ _.Zones =
 						--i(131544), -- Not transmoggable
 						i(131545),
 					})),
-					qg(42622, qh(26309, { -- Dark Vessels
-						i( 59294),
-						--i(59295), -- Not transmoggable
-						i( 59296),
-						i( 59297),
-						--i(131510), -- Not transmoggable
-						i(131511),
-					})),
-					qh(26384),	-- Darkcleric Marnal
-					q( 31910),	-- David Kosse
-					qh(26307),	-- Death to the Vilebranch
 					qa(26498),	-- Death to the Vilebranch
-					qh(11749),	-- Desecrate this Fire!
-					qa(11732),	-- Desecrate this Fire!
-					qa(11766),	-- Desecrate this Fire!
-					qa(11786),	-- Desecrate this Fire!
-					qa(11580),	-- Desecrate this Fire!
-					qa(11784),	-- Desecrate this Fire!
-					qh(11581),	-- Desecrate this Fire!
-					qh(11745),	-- Desecrate this Fire!
-					qa(11755),	-- Desecrate this Fire!
 					qa(26496),	-- Down with the Vilebranch
 					qg(43156, qa(26521, { -- Faces of Evil
 						i(59249),
 						i(59251),
-					})),
-					qg(42624, qh(26357, { -- Faces of Evil
-						i(59288),
-						i(59290),
-					})),
-					 q(   485),	-- Find OOX-09/HL!
-					qg(14740, qh(26210, { -- Gammerita, Mon!
-						i( 59274),
-						i( 59275),
-						i( 59276),
-						i(131495),
-					})),
-					qg(43108, qa(26483, { -- Gan'dranda
-						i( 59242),
-						i( 59243),
-						i( 59244),
-						i( 59245),
-						i(131536),
-					})),
-					q( 26527),	-- Gryphon Master Talonaxe
+					})),  
+--					q( 26527),	-- Gryphon Master Talonaxe (NEVER IMPLEMENTED?)
 					qa(26518),	-- Heads Up
-					qh(26366),	-- Heads Up
 					qa(26542),	-- Hero's Call: The Hinterlands!
-					q(  8643),	-- Highpeak the Elder
-					qh(11860),	-- Honor the Flame
-					qa(11826),	-- Honor the Flame
 					qg(43156, qa(26526, { -- Hunt the Keeper
 						i( 59256),
 						i( 59257),
@@ -277,15 +625,6 @@ _.Zones =
 						i(131546),
 						i(156945),	-- Talon Hatchet
 					})),
-					qg(42642, qh(26369, { -- Hunt the Keeper
-						i( 59284),
-						i( 59285),
-						i( 59286),
-						i( 59287),
-						i(131518),
-						i(156945),	-- Talon Hatchet 
-					})),
-					qh(26224),	-- Hunt the Savages
 					qa(27625),	-- In Defense of Quel'Danil
 					qa(11964),	-- Incense for the Summer Scorchlings
 					qg(43157, qa(26516, { -- It's Ours Now
@@ -293,15 +632,7 @@ _.Zones =
 						i( 59247),
 						i(131542),
 					})),
-					qg(42642, qh(26308, { -- It's Ours Now
-						i( 59291),
-						i( 59292),
-						i(131509),
-					})),
-					qh(26212),	-- Lard Lost His Lunch
-					qh(26367),	-- Ongo'longo's Revenge
 					qa(26515),	-- Ongo'longo's Revenge
-					qa(26548),	-- Out to the Front
 					qa(11882),	-- Playing with Fire
 					qg(43109, qa(26490, { -- Prime Slime
 						i( 59239),
@@ -310,23 +641,7 @@ _.Zones =
 						i(131537),
 						i(156946), -- Goopy Mallet
 					})),
-					qg(42612, qh(26283, { -- Prime Slime
-						i( 59277),
-						i( 59278),
-						i( 59279),
-						i(131501),
-						i(156946), -- Goopy Mallet
-					})),
-					qh(26225),	-- Pupellyverbos Port
 					qa(27725),	-- Quel'Danil Lodge
-					qg( 5636, qa(26546, { -- Razonbeak Friends
-						i( 59236),
-						i( 59237),
-						i( 59238),
-						i(131553),
-					})),
-					q(   836),	-- Rescue OOX-09/HL!
-					qh(26430),	-- Revantusk Village
 					qg(43298, qa(26532, { -- Shadra the Venom Queen
 						i( 59269),
 						i( 59270),
@@ -335,43 +650,15 @@ _.Zones =
 						i(131549),
 						i(131550),
 					})),
-					qg(43299, qh(26419, { -- Shadra the Venom Queen
-						i( 59306),
-						i( 59307),
-						i( 59308),
-						i( 59309),
-						i(131526),
-						i(131527),
-					})),
-					qg(43109, qa(26485, {	-- Snapjaws, Lad!
-						un(15, i(19022)),	-- Nat Pagle's Extreme Angler FC-5000
-					})),
-					qg(14740, qh(26211, {	-- Snapjaws, Mon!
-						un(15, i(19022)),	-- Nat Pagle's Extreme Angler FC-5000
-					})),
-					qh(26267),	-- Skulk Rock Clean-Up
 					qa(26491),	-- Skulk Rock Clean-Up
 					qa(26492),	-- Skulk Rock Supplies
-					qh(26268),	-- Skulk Rock Supplies
-					qh(26223),	-- Stalking the Stalkers
-					qh(26306),	-- Start Taking Back
 					qa(26643),	-- Starvation Diet
-					qh(26387),	-- Starvation Diet
-					qh(26240),	-- Stomp To My Beat
 					qa(26517),	-- Summit of Fate
-					qh(26363),	-- Summit of Fate
-					qh(26558),	-- Summoning Shadra
 					qa(26531),	-- Summoning Shadra
-					qa(28505),	-- The Battle for Andorhal
-					qh(28508),	-- The Battle for Andorhal
-					qh(26381),	-- The Eye of Shadra
 					qa(26528),	-- The Eye of Shadra
-					qh(26432),	-- The Fall of Jintha'Alor
 					qa(26529),	-- The Fang of Shadra
-					qh(26406),	-- The Fang of Shadra
-					q( 26282),	-- The Favor of Akil'darah
+--					q( 26282),	-- The Favor of Akil'darah (NEVER IMPLEMENTED?)
 					qa(27626),	-- The Highvale Documents
-					qh(26238),	-- The Savage Dwarves
 					qg(43200, qa(26530, { -- The Shell of Shadra
 						i( 59265),
 						i( 59266),
@@ -380,26 +667,8 @@ _.Zones =
 						i(131547),
 						i(131548),
 					})),
-					qg(42898, qh(26418, { -- The Shell of Shadra
-						i( 59302),
-						i( 59303),
-						i( 59304),
-						i( 59305),
-						i(131524),
-						i(131525),
-					})),
-					qa(26462),	-- The Wicked Revantusk
-					qg(42613, qh(26263, { -- Thornar Thunderclash
-						i( 59280),
-						i( 59281),
-						i( 59282),
-						i( 59283),
-						i(131498),
-					})),
-					qh(26368),	-- Venomous Secrets
 					qa(26525),	-- Venomous Secrets
 					qa(26497),	-- Vilebranch Scum
-					qh(28574),	-- Warchief's Command: The Hinterlands!					
 				}),
 				n(-16, {	-- Rares
 					n(8215, { 	-- Grimungous
