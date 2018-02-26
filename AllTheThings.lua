@@ -18,7 +18,7 @@ app.DisplayName = "AllTheThings";
 app:SetScript("OnEvent", HandleEvents);
 app:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 app:SetSize(1, 1);
-app:Hide();
+app:Show();
 
 -- ReloadUI slash command (for ease of use)
 SLASH_RELOADUI1 = "/reloadui";
@@ -66,7 +66,6 @@ local function OnUpdate(self)
 			table.remove(self.__stack, i);
 			if #self.__stack < 1 then
 				self:SetScript("OnUpdate", nil);
-				self:Hide();
 			end
 		end
 	end
@@ -80,7 +79,6 @@ local function Push(self, name, method)
 	end
 	--print("Push->" .. name);
 	table.insert(self.__stack, { method, name });
-	self:Show();
 end
 local function StartCoroutine(name, method)
 	if method and not app.refreshing[name] then
