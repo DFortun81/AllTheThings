@@ -6,6 +6,7 @@
 AllTheThings = CreateFrame("FRAME", "AllTheThings", UIParent);
 local function HandleEvents(self, e, ...) (self.events[e] or tostringall)(...); end
 local app = AllTheThings;	-- Create a local (non global) reference
+app.refreshDataForce = true;
 app.events = {};
 local backdrop = {
 	bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
@@ -18,6 +19,11 @@ app:SetScript("OnEvent", HandleEvents);
 app:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 app:SetSize(1, 1);
 app:Hide();
+
+-- ReloadUI slash command (for ease of use)
+SLASH_RELOADUI1 = "/reloadui";
+SLASH_RELOADUI2 = "/rl";
+SlashCmdList["RELOADUI"] = ReloadUI;
 
 -- Performance Cache 
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
@@ -60,6 +66,7 @@ local function OnUpdate(self)
 			table.remove(self.__stack, i);
 			if #self.__stack < 1 then
 				self:SetScript("OnUpdate", nil);
+				app:Hide();
 			end
 		end
 	end
@@ -73,6 +80,7 @@ local function Push(self, name, method)
 	end
 	--print("Push->" .. name);
 	table.insert(self.__stack, { method, name });
+	app:Show();
 end
 local function StartCoroutine(name, method)
 	if method and not app.refreshing[name] then
@@ -677,6 +685,38 @@ end })
 
 -- Search Caching
 local searchCache = {};
+
+local constructor = function(id, t, typeID)
+	if not t then
+		return { [typeID] = id };
+	end
+	if not t.groups and t[1] then
+		t = { ["groups"] = t, [typeID] = id };
+	else
+		t[typeID] = id;
+	end
+	return t;
+end
+local createInstance = function(template, prototype)
+	return setmetatable(template, prototype);
+end
+local contains = function(arr, value)
+	for i,value2 in ipairs(arr) do
+		if value2 == value then return true; end
+	end
+end
+local containsAny = function(arr, otherArr)
+	for i, v in ipairs(arr) do
+		for j, w in ipairs(otherArr) do
+			if v == w then return true; end
+		end
+	end
+end
+local containsValue = function(dict, value)
+	for key,value2 in pairs(dict) do
+		if value2 == value then return true; end
+	end
+end
 local function GetCachedSearchResults(search, method, ...)
 	if search then
 		local now = time();
@@ -790,30 +830,15 @@ local function CacheFields(group)
 	CacheFieldID(group, "spellID");
 	CacheSubFieldID(group, "itemID", "toyID");
 	CacheFieldID(group, "toyID");
+	if group.classes and not containsValue(group.classes, app.ClassIndex) then
+		group.nmc = true;	-- "Not My Class"
+	end
+	if group.races and not containsValue(group.races, app.RaceIndex) then
+		group.nmr = true;	-- "Not My Race"
+	end
 	if group.groups then
 		for i,subgroup in ipairs(group.groups) do
 			CacheFields(subgroup);
-		end
-	end
-end
-local constructor = function(id, t, typeID)
-	if not t then
-		return { [typeID] = id };
-	end
-	if not t.groups and t[1] then
-		t = { ["groups"] = t, [typeID] = id };
-	else
-		t[typeID] = id;
-	end
-	return t;
-end
-local createInstance = function(template, prototype)
-	return setmetatable(template, prototype);
-end
-local containsAny = function(arr, otherArr)
-	for i, v in ipairs(arr) do
-		for j, w in ipairs(otherArr) do
-			if v == w then return true; end
 		end
 	end
 end
@@ -1021,56 +1046,6 @@ local function GetGearSetCache()
 	end
 	return db;
 end
-local function GetMountInfoCache()
-	local cache = GetTempDataMember("MOUNT_CACHE", {});
-	--SetDataMember("MOUNT_CACHE", cache);
-	local spellID_MountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID");
-	if not spellID_MountID then
-		local numMounts = C_MountJournal.GetNumMounts();
-		if numMounts < 1 then return {}; end
-		
-		-- Detect how many mounts there are. If 0, Blizzard isn't ready yet.
-		local mountIDs = C_MountJournal.GetMountIDs();
-		if #mountIDs < 1 then return {}; end
-		
-		-- Let's build the spellID_MountID and mount cache.
-		local listedMounts = GetTempDataMember("MOUNT_CACHE_LISTED", {});
-		local temp = GetTempDataMember("COMPANION_PET_SOURCE_TYPES", {});
-		local got = GetDataMember("CollectedMounts", {});
-		if #temp < 1 then
-			for i=1,C_PetJournal.GetNumPetSources() do
-				local t = { ["text"] = _G["BATTLE_PET_SOURCE_"..i], ["groups"] = {} };
-				temp[i] = t;
-				tinsert(cache, t);
-			end
-		end
-		spellID_MountID = {};
-		for i,mountID in ipairs(mountIDs) do
-			-- The 2nd value in the list is the spellID for the mount.
-			local creatureName, spellID, icon, active, isUsable, sourceType, isFavorite, isFactionSpecific, faction, hideOnChar, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID then
-				spellID_MountID[spellID] = mountID;
-				if isCollected then got[spellID] = 1; end
-				if not (hideOnChar or listedMounts[spellID]) then
-					listedMounts[spellID] = true;
-					if temp[sourceType or 1] then tinsert(temp[sourceType or 1].groups, setmetatable({ ["mountID"] = spellID }, app.BaseMount));
-					else tinsert(cache, setmetatable({ ["mountID"] = spellID }, app.BaseMount)); end
-				end
-			end
-		end
-		
-		-- Assign to the temporary data container.
-		SetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", spellID_MountID);
-	end
-	return spellID_MountID;
-end
-local function GetMountInfo(spellID)	-- NOTE: MountID is ACTUALLY the SpellID. Addon developers: Do not confuse this as I did, mountID can be different per spec/faction.
-	return C_MountJournal_GetMountInfoByID(GetMountInfoCache()[spellID]);
-end
-local function GetMountExtraInfo(spellID)	-- NOTE: MountID is ACTUALLY the SpellID. Addon developers: Do not confuse this as I did, mountID can be different per spec/faction.
-	local mountID = GetMountInfoCache()[spellID];
-	if mountID then return C_MountJournal_GetMountInfoExtraByID(mountID); end
-end
 local function GetProgressText(data)
 	if data.total and data.total > 0 then
 		return GetProgressColorText(data.progress, data.total);
@@ -1194,10 +1169,8 @@ local function SearchForItemIDRecursively(group, itemID)
 	end
 end
 local function SearchForItemID(itemID)
-	local group = app:GetDataCache();
-	if group and itemID and itemID > 0 then
-		if fieldCache["itemID"] then return fieldCache["itemID"][itemID]; end
-		return SearchForItemIDRecursively(group, itemID);
+	if itemID and itemID > 0 and app:GetDataCache() then
+		return fieldCache["itemID"][itemID];
 	end
 end
 local function SearchForMapID(mapID)
@@ -1642,9 +1615,8 @@ local function RefreshLocationCoroutine()
 	end
 end
 local function RefreshLocation()
-	if GetDataMember("AutoMiniList", true) or app:GetWindow("CurrentInstance"):IsVisible() then
+	if GetDataMember("AutoMiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
 		StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
-		app:Show();
 	end
 end
 local function RefreshSavesCoroutine()
@@ -1803,8 +1775,11 @@ local function RefreshCollections(groups)
 		end
 		
 		-- Refresh Mounts / Pets
-		SetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", nil);
-		GetMountInfoCache();
+		local collectedMounts = GetDataMember("CollectedMounts", {});
+		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+			if spellID and isCollected then collectedMounts[spellID] = 1; end
+		end
 		
 		-- Wait a frame before harvesting item collection status.
 		coroutine.yield();
@@ -1859,7 +1834,7 @@ end
 local function ToggleDebugMode()
 	SetDebugMode(not GetDataMember("IgnoreAllFilters"));
 end
-AllTheThings.RefreshCollections = RefreshCollections; -- To expose this to external users.
+AllTheThings.RefreshCollections = RefreshCollections;
 AllTheThings.RefreshLocation = RefreshLocation;
 AllTheThings.RefreshSaves = RefreshSaves;
 AllTheThings.OpenMainList = OpenMainList;
@@ -2841,17 +2816,19 @@ app.BaseMount = {
 		elseif key == "text" then
 			return select(1, GetSpellLink(t.mountID)) or select(1, GetSpellInfo(t.mountID)) or ("Spell #" .. t.mountID);
 		elseif key == "description" then
-			return select(2, GetMountExtraInfo(t.mountID));
+			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID];
+			if mountID then return select(2, C_MountJournal_GetMountInfoExtraByID(mountID)); end
 		elseif key == "link" then
 			return select(1, GetSpellLink(t.mountID));
 		elseif key == "icon" then
 			return select(3, GetSpellInfo(t.mountID));
 		elseif key == "displayID" then
-			return select(1, GetMountExtraInfo(t.mountID));
+			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID];
+			if mountID then return select(1, C_MountJournal_GetMountInfoExtraByID(mountID)); end
 		elseif key == "spellID" then
 			return t.mountID;
 		elseif key == "name" then
-			return GetMountInfo(t.mountID);
+			return C_MountJournal_GetMountInfoByID(GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID]);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3020,7 +2997,7 @@ app.CreatePetType = function(id, t)
 end
 
 -- Profession Lib
-local SkillIDToSpellID = {
+local SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
 	[794] = 158762,	-- Arch
 	[164] = 2018,	-- Blacksmithing
@@ -3035,8 +3012,7 @@ local SkillIDToSpellID = {
 	[186] = 2575,	-- Mining
 	[393] = 8613,	-- Skinning
 	[197] = 3908,	-- Tailoring
-};
-setmetatable(SkillIDToSpellID, {__index = function(t,k) return(106727) end})
+}, {__index = function(t,k) return(106727) end})
 app.BaseProfession = {
 	__index = function(t, key)
 		if key == "key" then
@@ -3316,18 +3292,16 @@ function app.FilterItemClass(item)
 	return app.ItemBindFilter(item)
 		or (app.FilterItemClass_RequireItemFilter(item.f)
 			and app.RequireBindingFilter(item.b)
-			and app.ClassRequirementFilter(item.classes)
-			and app.RaceRequirementFilter(item.races)
+			and app.ClassRequirementFilter(item)
+			and app.RaceRequirementFilter(item)
 			and app.UnobtainableItemFilter(item.u)
 		        and app.SeasonalFilter(item.u)
 			and app.PersonalLootFilter(item)
 			and app.RequiredSkillFilter(item.requiredSkill));
 end
-function app.FilterItemClass_RequireClasses(classes)
-	if classes then
-		for key,value in pairs(classes) do
-			if value == app.ClassIndex then return true; end
-		end
+function app.FilterItemClass_RequireClasses(item)
+	if item.classes then
+		return not item.nmc;--contains(item.classes, app.ClassIndex);
 	else
 		return true;
 	end
@@ -3351,25 +3325,23 @@ function app.FilterItemClass_RequirePersonalLootCurrentSpec(item)
     end
     return true;
 end
-function app.FilterItemClass_RequireRaces(races)
-	if races then
-		for key,value in pairs(races) do
-			if value == app.RaceIndex then return true; end
-		end
+function app.FilterItemClass_RequireRaces(item)
+	if item.races then
+		return not item.nmr;--contains(item.races, app.RaceIndex);
 	else
 		return true;
 	end
 end
 function app.FilterItemClass_UnobtainableItem(u)
 	if u and L("UNOBTAINABLE_ITEM_REASONS")[u][1] < 5 then
-	   return GetDataMember("UnobtainableItemFilters") and GetDataMember("UnobtainableItemFilters")[u]
+	   return GetDataSubMember("UnobtainableItemFilters", u);
 	else
 		return true;
 	end
 end
 function app.FilterItemClass_SeasonalItem(u)
    if u and L("UNOBTAINABLE_ITEM_REASONS")[u][1] > 4 then
-      return GetDataMember("SeasonalFilters") and GetDataMember("SeasonalFilters")[u]
+      return GetDataSubMember("SeasonalFilters", u);
    else
       return true
    end
@@ -3796,9 +3768,7 @@ UpdateGroup = function(parent, group)
 end
 UpdateGroups = function(parent, groups)
 	if groups then
-		-- Iterate through the groups
 		for key, group in ipairs(groups) do
-			-- Update the group
 			UpdateGroup(parent, group);
 		end
 	end
@@ -4196,7 +4166,7 @@ local function MinimapButtonOnClick(self, button)
 	else
 		-- Left Button
 		if IsShiftKeyDown() then
-			RefreshCollections(app:GetDataCache());
+			RefreshCollections();
 		elseif IsAltKeyDown() or IsControlKeyDown() then
 			ToggleMiniListForCurrentZone();
 		else
@@ -5893,16 +5863,13 @@ local function SetWindowVisibility(self, show)
 	if show then
 		self:Show();
 		self:Update();
-		app:Show();
 	else
 		self:Hide();
 		for i, self in pairs(app.Windows) do
 			if self:IsVisible() then
-				app:Show();
 				return;
 			end
 		end
-		app:Hide();
 	end
 	
 	-- Return that at least one window is visible...
@@ -5984,10 +5951,13 @@ local function UpdateWindowColor(self, suffix)
 	self:SetBackdropBorderColor(1, 1, 1, 1);
 	self:SetBackdropColor(0, 0, 0, 1);
 end
-function app:UpdateWindows()
+function app:UpdateWindows(force)
 	local anyUpdated = false;
-	for i, window in pairs(app.Windows) do
-		if window:Update() then anyUpdated = true; end
+	for name, window in pairs(app.Windows) do
+		if window:Update(force) then
+			--print(name .. ": Updated");
+			anyUpdated = true;
+		end
 	end
 	return anyUpdated;
 end
@@ -6010,7 +5980,6 @@ function app:GetDataCache()
 				end
 			end
 		});
-		allData.groups = {};
 		allData.expanded = true;
 		allData.icon = L("LOGO_TINY");
 		allData.preview = L("LOGO_LARGE");
@@ -6021,10 +5990,6 @@ function app:GetDataCache()
 		allData.total = 0;
 		local groups, db = {};
 		allData.groups = groups;
-		
-		-- Cache the player's faction.
-		local englishFaction, localizedFaction = UnitFactionGroup("player");
-		local isHorde = englishFaction == "Horde";
 		
 		-- Dungeons & Raids
 		db = {};
@@ -6110,7 +6075,7 @@ function app:GetDataCache()
 		
 		-- Mounts
 		if app.Mounts then
-			db = app.CreateAchievement(isHorde and 10355 or 10356, app.Mounts);
+			db = app.CreateAchievement(app.Faction == "Horde" and 10355 or 10356, app.Mounts);
 			db.f = 100;
 			db.expanded = false;
 			db.text = MOUNTS; -- L("MOUNTS");
@@ -6171,9 +6136,8 @@ function app:GetDataCache()
 		]]--
 		
 		-- Mounts (Dynamic)
-		GetMountInfoCache();
 		--[[
-		db = app.CreateAchievement(isHorde and 10355 or 10356, GetTempDataMember("MOUNT_CACHE"));
+		db = app.CreateAchievement(app.Faction == "Horde" and 10355 or 10356, GetTempDataMember("MOUNT_CACHE"));
 		db.f = 100;
 		db.expanded = false;
 		db.text = "Mounts (Dynamic)";
@@ -6231,40 +6195,17 @@ function app:GetDataCache()
 		missingData.expanded = false;
 		missingData.text = "Missing Sources (Total # Ignores Filters)";
 		missingData.description = L("SOURCE_ID_MISSING");
-		missingData.rows = GetTempDataMember("Missing", {});
+		missingData.rows = GetTempDataMember("Missing");
 		table.insert(groups, missingData);
 		app.refreshDataForce = true;
-		CacheFields(allData);
-	end
-	if app.refreshDataForce then
-		app.refreshDataForce = nil;
-		allData.progress = 0;
-		allData.total = 0;
-		wipe(GetTempDataMember("Missing"));
-		app.missingData.groups = nil;
 		BuildGroups(allData, allData.groups);
-		UpdateGroups(allData, allData.groups, 1);
-		app.missingData.groups = app.missingData.rows;
-		app.missingData.total = #app.missingData.rows;
-		app.missingData.progress = 0;
-		app.missingData.visible = app.missingData.total > 0;
 		app:GetWindow("Prime").data = allData;
-		
-		-- NOTE: The auto refresh only happens once.
-		if not app.autoRefreshedCollections then
-			app.autoRefreshedCollections = true;
-			local version = GetAddOnMetadata("AllTheThings", "Version");
-			local lastTime = GetDataMember("RefreshedCollectionsAlready");
-			if not lastTime or (lastTime ~= version) then
-				SetDataMember("RefreshedCollectionsAlready", version);
-				SetDataMember("CollectedSources", {});	-- This option causes a caching issue, so we have to purge the Source ID data cache.
-				RefreshCollections();
-			end
-		end
+		CacheFields(allData);
 	end
 	return allData;
 end
 function app:RefreshData(lazy, safely)
+	--print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(safely or false) .. ")");
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	StartCoroutine("RefreshData", function()
 		-- This method can be triggered by an event, if so, we want to safely wait for combat to end.
@@ -6274,8 +6215,23 @@ function app:RefreshData(lazy, safely)
 		end
 		
 		-- Send an Update to the Windows to Rebuild their Row Data
-		app:GetDataCache();
-		app:UpdateWindows();
+		if app.refreshDataForce then
+			app.refreshDataForce = nil;
+			local allData = app:GetDataCache();
+			allData.progress = 0;
+			allData.total = 0;
+			wipe(GetTempDataMember("Missing"));
+			app.missingData.groups = nil;
+			UpdateGroups(allData, allData.groups, 1);
+			app.missingData.groups = app.missingData.rows;
+			app.missingData.total = #app.missingData.rows;
+			app.missingData.progress = 0;
+			app.missingData.visible = app.missingData.total > 0;
+			--print(tostring(allData.progress or 0) .. " / " .. tostring(allData.total or 0));
+			
+			-- Forcibly update the windows.
+			app:UpdateWindows(true);
+		end
 	end);
 end
 function app:GetWindow(suffix, todo)
@@ -6390,11 +6346,6 @@ WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnShow", AttachTooltip);
 -- hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
--- ReloadUI slash command (for ease of use)
-SLASH_RELOADUI1 = "/reloadui";
-SLASH_RELOADUI2 = "/rl";
-SlashCmdList["RELOADUI"] = ReloadUI;
-
 -- Slash Command List
 SLASH_AllTheThings1 = "/allthethings";
 SLASH_AllTheThings2 = "/things";
@@ -6493,6 +6444,7 @@ app.events.VARIABLES_LOADED = function()
 	local name, realm = UnitName("player");
 	local _, id = GetClassInfo(classIndex);
 	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
+	app.Faction = UnitFactionGroup("player");
 	
 	-- Load in the Presets if they exist for this character.
 	-- Default values should fallback to their presets.
@@ -6512,6 +6464,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Check to see if we have a leftover ItemDB cache
 	if GetDataMember("Items") then SetDataMember("Items", nil); end
 	if GetDataMember("ItemDB") then SetDataMember("ItemDB", nil); end
+	SetTempDataMember("Missing", {});
 	
 	-- Register for Dynamic Events and Assign Filters
 	if GetDataMember("IgnoreAllFilters", false) then
@@ -6617,6 +6570,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowProgress", true);
 	GetDataMember("ShowDescriptions", true);
 	GetDataMember("ShowModels", true);
+	GetDataMember("AutoMiniList", true);
 	
 	GetDataMember("ShowAchievementID", false);
 	GetDataMember("ShowArtifactID", false);
@@ -6638,21 +6592,13 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowSpellID", false);
 	GetDataMember("ShowTierID", false);
 	GetDataMember("ShowVisualID", false);
-	
-	-- Create the Settings Menu and show version information
-	app.print(format(L("LOADING"), GetAddOnMetadata("AllTheThings", "Version")));
 	CreateSettingsMenu();
 end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
-	GetQuestsCompleted(CompletedQuests);
-	wipe(DirtyQuests);
-	app:RefreshData(false, true);
-	app:RegisterEvent("QUEST_LOG_UPDATE");
-	RefreshSaves();
-	RefreshLocation();
+	app:GetDataCache();
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(app.DisplayName, {
 		type = "launcher",
 		icon = L("LOGO_SMALL"),
@@ -6663,6 +6609,81 @@ app.events.PLAYER_LOGIN = function()
 end
 app.events.SCENARIO_UPDATE = RefreshLocation;
 app.events.ZONE_CHANGED_NEW_AREA = RefreshLocation;
+app.events.PET_JOURNAL_LIST_UPDATE = function()
+	local spellID_MountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID");
+	if not spellID_MountID then
+		-- Detect how many pets there are. If 0, Blizzard isn't ready yet.
+		if C_PetJournal.GetNumPets() < 1 then return {}; end
+		
+		-- Detect how many mounts there are. If 0, Blizzard isn't ready yet.
+		local mountIDs = C_MountJournal.GetMountIDs();
+		if #mountIDs < 1 then return {}; end
+		
+		--[[
+		-- Let's build the dynamic mount cache.
+		local cache = GetTempDataMember("MOUNT_CACHE", {});
+		local listedMounts = GetTempDataMember("MOUNT_CACHE_LISTED", {});
+		local temp = GetTempDataMember("COMPANION_PET_SOURCE_TYPES", {});
+		if #temp < 1 then
+			for i=1,C_PetJournal.GetNumPetSources() do
+				local t = { ["text"] = _G["BATTLE_PET_SOURCE_"..i], ["groups"] = {} };
+				temp[i] = t;
+				tinsert(cache, t);
+			end
+		end
+		for i,mountID in ipairs(mountIDs) do
+			-- The 2nd value in the list is the spellID for the mount.
+			local creatureName, spellID, icon, active, isUsable, sourceType, isFavorite, isFactionSpecific, faction, hideOnChar, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+			if spellID and not (hideOnChar or listedMounts[spellID]) then
+				listedMounts[spellID] = true;
+				if temp[sourceType or 1] then tinsert(temp[sourceType or 1].groups, setmetatable({ ["mountID"] = spellID }, app.BaseMount));
+				else tinsert(cache, setmetatable({ ["mountID"] = spellID }, app.BaseMount)); end
+			end
+		end
+		SetDataMember("MOUNT_CACHE", cache);
+		]]--
+		
+		-- Harvest the Spell IDs for Conversion.
+		spellID_MountID = {};
+		local collectedMounts = GetDataMember("CollectedMounts", {});
+		for i,mountID in ipairs(mountIDs) do
+			-- The 2nd value in the list is the spellID for the mount.
+			local creatureName, spellID, icon, active, isUsable, sourceType, isFavorite, isFactionSpecific, faction, hideOnChar, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+			if spellID then
+				spellID_MountID[spellID] = mountID;
+				if isCollected then collectedMounts[spellID] = 1; end
+			end
+		end
+		
+		-- Assign to the temporary data container.
+		SetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", spellID_MountID);
+		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
+		
+		-- Mark all previously completed quests.
+		local version = GetAddOnMetadata("AllTheThings", "Version");
+		app.print(format(L("LOADING"), version));
+		GetQuestsCompleted(CompletedQuests);
+		wipe(DirtyQuests);
+		app:RegisterEvent("QUEST_LOG_UPDATE");
+		RefreshLocation();
+		RefreshSaves();
+		
+		-- NOTE: The auto refresh only happens once.
+		if not app.autoRefreshedCollections then
+			app.autoRefreshedCollections = true;
+			local lastTime = GetDataMember("RefreshedCollectionsAlready");
+			if not lastTime or (lastTime ~= version) then
+				SetDataMember("RefreshedCollectionsAlready", version);
+				SetDataMember("CollectedSources", {});	-- This option causes a caching issue, so we have to purge the Source ID data cache.
+				RefreshCollections();
+				return spellID_MountID;
+			end
+		end
+		app:RefreshData(false, true);
+		return spellID_MountID;
+	end
+	return {};
+end
 app.events.PLAYER_LOOT_SPEC_UPDATED = function()
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
@@ -6696,7 +6717,6 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	RefreshSaves();
 end
 app.events.COMPANION_LEARNED = function(...)
-	GetMountInfoCache();
 	app:RefreshData(false, true);
 	PlayFanfare();
 	wipe(searchCache);
@@ -6780,13 +6800,4 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		PlayRemoveSound();
 		wipe(searchCache);
 	end
-end
-
--- Pet Journal fix
-local count = 0;
-app.events.PET_JOURNAL_LIST_UPDATE = function(...)
-	GetMountInfoCache();
-	app:RefreshData(false, true);
-	count = count + 1;
-	if count > 3 then app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE"); end
 end
