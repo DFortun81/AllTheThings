@@ -175,7 +175,7 @@ _.Zones =
 				n(-16, { 	-- Rares
 					n(91871, { 		-- Argosh the Destroyer
 						["groups"] = {		
-							dr(91871, i(127326)), -- Fel Destroyer Crossbow 
+							dr(34, i(127326)), -- Fel Destroyer Crossbow 
 						},
 						["questID"] = 38430,	
 					}),
