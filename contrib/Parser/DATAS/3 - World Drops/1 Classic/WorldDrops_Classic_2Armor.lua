@@ -537,7 +537,7 @@ _.WorldDrops =
 					i(3429),	-- Guardsman Belt
 					i(4436),	-- Jewel-Encrusted Sash
 					i(4463),	-- Beaded Raptor Collar
-					i(4785),	-- Brimstone Belt
+					un(7, i(4785)),	-- Brimstone Belt
 					i(4786),	-- Wise Man's Belt
 					i(4827),	-- Wizard's Belt
 					i(4828),	-- Nightwind Belt
