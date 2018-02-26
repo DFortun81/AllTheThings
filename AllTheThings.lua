@@ -5251,6 +5251,7 @@ local function SetRowData(self, data)
 				self:GetParent().processingLinks = true;
 				text = RETRIEVING_DATA;
 			end
+		--[[
 		elseif data.s and data.s < 1 then
 			-- If it doesn't, the source ID will need to be harvested.
 			local s, dressable = GetSourceID(text);
@@ -5280,6 +5281,7 @@ local function SetRowData(self, data)
 			else
 				data.s = nil;
 			end
+			]]--
 		end
 		local leftmost = self;
 		local relative = "LEFT";
