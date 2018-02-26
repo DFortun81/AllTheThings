@@ -66,7 +66,7 @@ local function OnUpdate(self)
 			table.remove(self.__stack, i);
 			if #self.__stack < 1 then
 				self:SetScript("OnUpdate", nil);
-				app:Hide();
+				self:Hide();
 			end
 		end
 	end
@@ -80,21 +80,21 @@ local function Push(self, name, method)
 	end
 	--print("Push->" .. name);
 	table.insert(self.__stack, { method, name });
-	app:Show();
+	self:Show();
 end
 local function StartCoroutine(name, method)
 	if method and not app.refreshing[name] then
-		-- Lock out during PVP
-		local inInstance, instanceType = IsInInstance();
-		if inInstance and (instanceType == "pvp" or instanceType == "arena") then
-			--print("PVPing, skipping " .. name);
-			app:GetWindow("CurrentInstance"):Hide();
-			return nil;
-		end
-		
 		local instance = coroutine.create(method);
 		app.refreshing[name] = true;
 		Push(app, name, function()
+			-- Lock out during PVP
+			local inInstance, instanceType = IsInInstance();
+			if inInstance and (instanceType == "pvp" or instanceType == "arena") then
+				--print("PVPing, skipping " .. name);
+				app:GetWindow("CurrentInstance"):Hide();
+				return true;
+			end
+		
 			-- Check the status of the coroutine
 			if instance and coroutine.status(instance) ~= "dead" then
 				local ok, err = coroutine.resume(instance);
@@ -6398,7 +6398,6 @@ app:RegisterEvent("TOYS_UPDATED");
 app:RegisterEvent("SCENARIO_UPDATE");
 app:RegisterEvent("COMPANION_LEARNED");
 app:RegisterEvent("COMPANION_UNLEARNED");
-app:RegisterEvent("PET_JOURNAL_LIST_UPDATE");
 app:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
@@ -6601,25 +6600,13 @@ app.events.PLAYER_LOGIN = function()
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
 	app:GetDataCache();
-	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(app.DisplayName, {
-		type = "launcher",
-		icon = L("LOGO_SMALL"),
-		OnClick = MinimapButtonOnClick,
-		OnEnter = MinimapButtonOnEnter,
-		OnLeave = MinimapButtonOnLeave,
-	})
-end
-app.events.SCENARIO_UPDATE = RefreshLocation;
-app.events.ZONE_CHANGED_NEW_AREA = RefreshLocation;
-app.events.PET_JOURNAL_LIST_UPDATE = function()
-	local spellID_MountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID");
-	if not spellID_MountID then
+	Push(app, "WaitOnMountData", function()
 		-- Detect how many pets there are. If 0, Blizzard isn't ready yet.
-		if C_PetJournal.GetNumPets() < 1 then return {}; end
+		if C_PetJournal.GetNumPets() < 1 then return true; end
 		
 		-- Detect how many mounts there are. If 0, Blizzard isn't ready yet.
 		local mountIDs = C_MountJournal.GetMountIDs();
-		if #mountIDs < 1 then return {}; end
+		if #mountIDs < 1 then return true; end
 		
 		--[[
 		-- Let's build the dynamic mount cache.
@@ -6646,7 +6633,7 @@ app.events.PET_JOURNAL_LIST_UPDATE = function()
 		]]--
 		
 		-- Harvest the Spell IDs for Conversion.
-		spellID_MountID = {};
+		local spellID_MountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", {});
 		local collectedMounts = GetDataMember("CollectedMounts", {});
 		for i,mountID in ipairs(mountIDs) do
 			-- The 2nd value in the list is the spellID for the mount.
@@ -6678,14 +6665,21 @@ app.events.PET_JOURNAL_LIST_UPDATE = function()
 				SetDataMember("RefreshedCollectionsAlready", version);
 				SetDataMember("CollectedSources", {});	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 				RefreshCollections();
-				return spellID_MountID;
+				return nil;
 			end
 		end
 		app:RefreshData(false, true);
-		return spellID_MountID;
-	end
-	return {};
+	end);
+	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(app.DisplayName, {
+		type = "launcher",
+		icon = L("LOGO_SMALL"),
+		OnClick = MinimapButtonOnClick,
+		OnEnter = MinimapButtonOnEnter,
+		OnLeave = MinimapButtonOnLeave,
+	})
 end
+app.events.SCENARIO_UPDATE = RefreshLocation;
+app.events.ZONE_CHANGED_NEW_AREA = RefreshLocation;
 app.events.PLAYER_LOOT_SPEC_UPDATED = function()
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
