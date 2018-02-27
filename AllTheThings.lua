@@ -3614,7 +3614,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
 								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and item.f == otherItem.f then
 									-- Check for class and race locks...
-									if app.FilterItemClass_RequireClasses(otherItem.classes) and app.FilterItemClass_RequireRaces(otherItem.races) then
+									if app.FilterItemClass_RequireClasses(otherItem) and app.FilterItemClass_RequireRaces(otherItem) then
 										return true; -- Okay, fine. You are this class. Enjoy your +1, cheater. D:
 									end
 								end
