@@ -1783,7 +1783,14 @@ local function RefreshCollections(groups)
 		coroutine.yield();
 		
 		-- Harvest Item Collections that are used by the addon.
-		RefreshSources((groups or app:GetDataCache()).groups, 1);
+		app:GetDataCache();
+		if groups then
+			RefreshSources(groups.groups, 1);
+		else
+			-- Refresh both the primary and unsorted data caches.
+			RefreshSources(app:GetWindow("Prime").data.groups, 1);
+			RefreshSources(app:GetWindow("Unsorted").data.groups, 1);
+		end
 		
 		-- Refresh the Collection Windows!
 		app:RefreshData(false, true);
