@@ -6113,9 +6113,34 @@ function app:GetDataCache()
 			app.Toys = nil;
 		end
 		
-		--[[
+		-- The Main Window's Data
+		local missingData = {};
+		app.missingData = missingData;
+		missingData.visible = true;
+		missingData.expanded = false;
+		missingData.text = "Missing Sources (Total # Ignores Filters)";
+		missingData.description = L("SOURCE_ID_MISSING");
+		missingData.rows = GetTempDataMember("Missing");
+		table.insert(groups, missingData);
+		app.refreshDataForce = true;
+		BuildGroups(allData, allData.groups);
+		app:GetWindow("Prime").data = allData;
+		CacheFields(allData);
+		
+		-- Now build the hidden "Unsorted" Window's Data
+		allData = {};
+		allData.expanded = true;
+		allData.icon = L("LOGO_TINY");
+		allData.preview = L("LOGO_LARGE");
+		allData.text = app.DisplayName .. ": Unsorted";
+		allData.description = "This data hasn't been implemented yet.";
+		allData.visible = true;
+		allData.progress = 0;
+		allData.total = 0;
+		local groups, db = {};
+		allData.groups = groups;
+		
 		-- Never Implemented
-		-- Uncomment when harvesting
 		if app.NeverImplemented then
 			db = {};
 			db.expanded = false;
@@ -6124,7 +6149,6 @@ function app:GetDataCache()
 			table.insert(groups, db);
 			app.NeverImplemented = nil;
 		end
-		--]]
 		
 		-- Illusions (Dynamic)
 		--[[
@@ -6178,7 +6202,6 @@ function app:GetDataCache()
 		]]--
 		
 		-- Unsorted
-		--[[
 		if app.Unsorted then
 			db = {};
 			db.groups = app.Unsorted;
@@ -6187,19 +6210,9 @@ function app:GetDataCache()
 			table.insert(groups, db);
 			app.Unsorted = nil;
 		end
-		]]--
-		
-		local missingData = {};
-		app.missingData = missingData;
-		missingData.visible = true;
-		missingData.expanded = false;
-		missingData.text = "Missing Sources (Total # Ignores Filters)";
-		missingData.description = L("SOURCE_ID_MISSING");
-		missingData.rows = GetTempDataMember("Missing");
-		table.insert(groups, missingData);
-		app.refreshDataForce = true;
 		BuildGroups(allData, allData.groups);
-		app:GetWindow("Prime").data = allData;
+		UpdateGroups(allData, allData.groups, 1);
+		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
 	end
 	return allData;
@@ -6318,6 +6331,7 @@ end
 
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime");
+app:GetWindow("Unsorted");
 app:GetWindow("CurrentInstance");
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
