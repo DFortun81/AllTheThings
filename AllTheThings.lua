@@ -6244,6 +6244,8 @@ function app:RefreshData(lazy, safely)
 			
 			-- Forcibly update the windows.
 			app:UpdateWindows(true);
+		else
+			app:UpdateWindows();
 		end
 	end);
 end
