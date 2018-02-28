@@ -8,81 +8,219 @@ _.Instances =
 		["groups"] = {
 			c(228, { 	-- Blackrock Depths		
 				["groups"] = {
-					n(-3, { -- World Events
+					n(-47, {	-- Lunar Festival
 						["groups"] = {
-							n(-47, {     		-- Lunar Festival
+							n(-17, {	-- Quests				
+								q(8619, {	-- Morndeep the Elder			
+									["groups"] = {			
+										-- i(21100),	-- Coin of Ancestry	
+										-- i(21746, {	-- Lucky Red Envelope	
+											--i(21745),	-- Elder's Moonstone
+											--i(21744),	-- Lucky Rocket Cluster
+										--}),		
+									},			
+									["description"] = "Location: 50.6, 63.2 [Ring of Law]",			
+									["qg"] = 15549,	-- Elder Morndeep		
+									["u"] = 17,	-- Lunar Festival Holiday Filter		
+								}),				
+							}),					
+						},
+						["achievementID"] = 913, -- To Honor One's Elders
+					}),
+					n(-56, {	-- Brewfest
+						["groups"] = {
+							n(23872, { 	-- Coren Direbrew
 								["groups"] = {
-									n(-17, {	-- Quests				
-										q(8619, {	-- Morndeep the Elder			
-											["groups"] = {			
-												-- i(21100),	-- Coin of Ancestry	
-												-- i(21746, {	-- Lucky Red Envelope	
-													--i(21745),	-- Elder's Moonstone
-													--i(21744),	-- Lucky Rocket Cluster
-												--}),		
-											},			
-											["description"] = "Location: 50.6, 63.2",			
-											["qg"] = 15549,	-- Elder Morndeep		
-											["u"] = 17,	-- Lunar Festival Holiday Filter		
-										}),				
-									}),					
-								},
-								["achievementID"] = 913, -- To Honor One's Elders
-								["u"] = 17,
-							}),
-							n(-56, {     		-- Brewfest
-								["groups"] = {
-									n(23872, { 	-- Coren Direbrew
+									a(i(38280, {	-- Direbrew's Dire Brew
+										qa(12491),		-- Direbrew's Dire Brew
+									})),
+									h(i(38281, {	-- Direbrew's Dire Brew
+										qh(12492),		-- Direbrew's Dire Brew
+									})),
+									i(117393, { 	-- Keg-Shaped Treasure Chest
 										["groups"] = {
-											a(i(38280, {	-- Direbrew's Dire Brew
-												qa(12491),		-- Direbrew's Dire Brew
-											})),
-											h(i(38281, {	-- Direbrew's Dire Brew
-												qh(12492),		-- Direbrew's Dire Brew
-											})),
-											i(117393, { 	-- Keg-Shaped Treasure Chest
-												["groups"] = {
-													un(24, i(117378)), 	-- Direbrew's Bloodied Shanker
-													un(24, i(150922)), 	-- Terrific Tankard O'Terror
-													un(24, i(117379)), 	-- Tremendous Tankard O'Terror
-													un(24, i(37828)), 	-- Great Brewfest Kodo
-													un(24, i(33977)), 	-- Swift Brewfest Ram
-													nld({    -- Legacy
-														un(2, i(71331)), 	-- Direbrew's Bloodied Shanker
-														un(2, i(107217)), 	-- Direbrew's Bloodied Shanker
-														un(2, i(48663)), 	-- Tankard O' Terror
-														un(2, i(71332)), 	-- Tremendous Tankard O'Terror
-														un(2, i(107218)), 	-- Tremendous Tankard O'Terror
-													}),														
-												},
-												["Lvl"] = 98,
-											}),
-											i(149752, {		-- Keg-Shaped Treasure Box
-												["groups"] = {
-													un(24, i(117378)), 	-- Direbrew's Bloodied Shanker
-													un(24, i(150922)), 	-- Terrific Tankard O'Terror
-													un(24, i(117379)), 	-- Tremendous Tankard O'Terror
-													un(24, i(37828)), 	-- Great Brewfest Kodo
-													un(24, i(33977)), 	-- Swift Brewfest Ram
-													nld({    -- Legacy
-														un(2, i(71331)), 	-- Direbrew's Bloodied Shanker
-														un(2, i(107217)), 	-- Direbrew's Bloodied Shanker
-														un(2, i(48663)), 	-- Tankard O' Terror
-														un(2, i(71332)), 	-- Tremendous Tankard O'Terror
-														un(2, i(107218)), 	-- Tremendous Tankard O'Terror
-													}),	
-												},
-												["Lvl"] = 46,
-											}),
+											un(24, i(117378)), 	-- Direbrew's Bloodied Shanker
+											un(24, i(150922)), 	-- Terrific Tankard O'Terror
+											un(24, i(117379)), 	-- Tremendous Tankard O'Terror
+											un(24, i(37828)), 	-- Great Brewfest Kodo
+											un(24, i(33977)), 	-- Swift Brewfest Ram
+											nld({    -- Legacy
+												un(2, i(71331)), 	-- Direbrew's Bloodied Shanker
+												un(2, i(107217)), 	-- Direbrew's Bloodied Shanker
+												un(2, i(48663)), 	-- Tankard O' Terror
+												un(2, i(71332)), 	-- Tremendous Tankard O'Terror
+												un(2, i(107218)), 	-- Tremendous Tankard O'Terror
+											}),														
 										},
-										["description"] = "|cff66ccffYou can only loot the keg once per day per toon by running it through the Dungeon queue on your first run.|r",	
-										["u"] = 24,
+										["Lvl"] = 98,
+									}),
+									i(149752, {		-- Keg-Shaped Treasure Box
+										["groups"] = {
+											un(24, i(117378)), 	-- Direbrew's Bloodied Shanker
+											un(24, i(150922)), 	-- Terrific Tankard O'Terror
+											un(24, i(117379)), 	-- Tremendous Tankard O'Terror
+											un(24, i(37828)), 	-- Great Brewfest Kodo
+											un(24, i(33977)), 	-- Swift Brewfest Ram
+											un(2, i(71331)), 	-- Direbrew's Bloodied Shanker
+											un(2, i(107217)), 	-- Direbrew's Bloodied Shanker
+											un(2, i(48663)), 	-- Tankard O' Terror
+											un(2, i(71332)), 	-- Tremendous Tankard O'Terror
+											un(2, i(107218)), 	-- Tremendous Tankard O'Terror
+										},
+										["Lvl"] = 46,
 									}),
 								},
-								["achievementID"] = 1683, -- Brewmaster
-								["u"] = 24,
+								["description"] = "|cff66ccffYou can only loot the keg once per day per toon by running it through the Dungeon queue on your first run.|r",	
 							}),
 						},
+						["achievementID"] = 1683, -- Brewmaster
+					}),
+					n(-17, { -- Quests
+						n(-75, { -- Detention Block
+							qa(27565, { -- Into the Prison [Alliance]
+								["groups"] = {
+								},
+								["qg"] = 45892, -- Jalinda Sprig
+							}),
+							qh(27579, { -- Into the Prison [Horde]
+								["groups"] = {
+								},
+								["qg"] = 45821, -- Tha'trak Proudtusk
+							}),
+							q(27603, { -- The Sealed Gate
+								["groups"] = {
+								},
+								["qg"] = 45849, -- Tinkee Steamboil
+							}),
+							q(27596, { -- The Heart of the Mountain
+								["groups"] = {
+								},
+								["qg"] = 45850, -- Maxwort Uberglint
+							}),
+							qa(27568, { -- Infiltrating Shadowforge City [Alliance]
+								["groups"] = {
+								},
+								["qg"] = 45891, -- Oralius
+							}),
+							qh(27582, { -- Infiltrating Shadowforge City [Horde]
+								["groups"] = {
+								},
+								["qg"] = 45839, -- Galamav the Marksman
+							}),
+							qa(27567, { -- Twilight?! No! [Alliance]
+								["groups"] = {
+								},
+								["qg"] = 45898, -- Kevin Dawson
+								["sourceQuestID"] = { 27565 }, -- Into the Prison [Alliance]
+							}),
+							qh(27581, { -- Twilight?! No! [Horde]
+								["groups"] = {
+								},
+								["qg"] = 45818, -- Lexlort
+								["sourceQuestID"] = { 27579 }, -- Into the Prison [Horde]
+							}),
+							qa(27569, { -- Dark Iron Tacticians
+								["groups"] = {
+								},
+								["qg"] = 45894, -- Prospector Seymour
+								["sourceQuestID"] = { 27568 }, -- Infilitrating Shadowforge City [Alliance]
+							}),
+							qh(27585, { -- The 109th Division
+								["groups"] = {
+								},
+								["qg"] = 45820, -- Razal'blade
+								["sourceQuestID"] = { 27582 }, -- Infiltrating Shadowforge City [Horde]
+							}),
+						}),
+						n(-76, { -- Shadowforge City
+							qa(27571, { -- The Grim Guzzler [Alliance]
+								["groups"] = {
+								},
+								["qg"] = 45888, -- Mayara Brightwing
+								["sourceQuestID"] = { 27569 }, -- Dark Iron Tacticians
+							}),
+							qh(27589, { -- The Grim Guzzler [Horde]
+								["groups"] = {
+								},
+								["qg"] = 45817, -- Hierophant Theodora Mulvadania
+								["sourceQuestID"] = { 27585 }, -- The 109th Division
+							}),
+							qa(27573, { -- The Dark Iron Pact [Alliance]
+								["groups"] = {
+								},
+								["qg"] = 45899, -- Mountaineer Orfus
+								["sourceQuestID"] = { 27571 }, -- The Grim Guzzler [Alliance]
+							}),
+							qh(27591, { -- The Dark Iron Pact [Horde]
+								["groups"] = {
+								},
+								["qg"] = 45824, --  Thunderheart
+								["sourceQuestID"] = { 27589 }, -- The Grim Guzzler [Horde]
+							}),
+							qa(27578, { -- Morgan's Fruition
+								["groups"] = {
+									i(65956), -- Maxwell's Cloak
+									i(65932), -- Thaurissan's Breastplatee
+									i(65980), -- Dark Iron Band
+								},
+								["qg"] = 45890,   -- Marshal Maxwell
+								["sourceQuestID"] = { 27573 }, -- The Dark Iron Pact [Alliance]
+							}),
+							qh(27593, { -- Rebirth of the K.E.F
+								["groups"] = {
+									i(65956), -- Maxwell's Cloak
+									i(65932), -- Thaurissan's Breastplatee
+									i(65980), -- Dark Iron Band
+								},
+								["qg"] = 45840, -- Warlord Goretooth
+								["sourceQuestID"] = { 27591 },  -- The Dark Iron Pact [Horde]
+							}),
+						}),
+						--[[ TEMPORARILY DISABLED
+							DETENTION BLOCK
+							o(207304, {			-- Adventure Board 
+								qa(28068),				-- Adventurers Wanted: Blackrock Depths
+							}),
+							o(207303, {			-- Adventure Board
+								qh(28069),				-- Adventurers Wanted: Blackrock Depths
+							}),
+							qc7(qg(20407, qa(28401,{ 	-- Slaves of the Firelord
+								i(65640), 		-- Mask of the Farseer
+								i(65622), 		-- Headcover of the Farseer
+							}))),
+							qc7(qg(3344, qh(28465,{		-- Slaves of the Firelord (alternate questgiver 72939)
+								i(65643), 		-- Mask of the Speaker
+								i(65630), 		-- Headcover of the Speaker
+							}))),
+							nlq({			-- Legacy Quests
+								q(4024, {		-- A Taste of Flame
+									un(34, i(12066)),	-- Shaleskin Cape
+									un(34, i(12083)),	-- Valconian Sash
+									un(34, i(12082)),	-- Wyrmhide Spaulders
+								}),
+								qa(4242, {		-- Abandoned Hope
+									un(34, i(12018)),	-- Conservator Helm
+									un(34, i(12021)),	-- Shieldplate Sabatons
+									un(34, i(12041)),	-- Windshear Leggings
+								}),
+								qh(3907, {		-- Disharmony of Fire
+									un(34, i(12112)),	-- Crypt Demon Bracers
+									un(34, i(12114)),	-- Nightfall Gloves
+									un(34, i(12115)),	-- Stalwart Clutch
+									un(34, i(12113)),	-- Sunborne Cape
+								}),
+								qa(4263, {		-- Incendius!
+									un(34, i(12112)),	-- Crypt Demon Bracers
+									un(34, i(12114)),	-- Nightfall Gloves
+									un(34, i(12115)),	-- Stalwart Clutch
+									un(34, i(12113)),	-- Sunborne Cape 
+								}),
+								qa(4322, {		-- Jail Break!
+									un(34, i(12061)),	-- Blade of Reckoning
+									un(34, i(12062)),	-- Skilled Fighting Blade
+								}),
+							}),
+						--]]	
 					}),
 					n(0, { 		-- Zone Drop
 						n(8892, {	-- Anvilrage Footman
@@ -187,60 +325,121 @@ _.Instances =
 							dr(0.01, i(12527)),	-- Ribsplitter
 							dr(0.01, i(12550)),	-- Runed Golem Shackles
 						}),
-					}),
-					n(-75, { 	-- Detention Block
-						n(-17, {			-- Quests 		
-							o(207304, {			-- Adventure Board 
-								qa(28068),				-- Adventurers Wanted: Blackrock Depths
+						n(-76, { -- Shadowforge City
+							n(8903, { 	-- Anvilrage Captain
+								dr(1.8, i(15781, {	-- Pattern: Black Dragonscale Leggings
+									i(15052), 	-- Black Dragonscale Leggings
+								})),
+								dr(0.02, i(12546)),	-- Aristocratic Cuffs
+								dr(0.02, i(12542)),	-- Funeral Pyre Vestment
+								dr(0.01, i(12552)),	-- Blisterbane Wrap
+								dr(0.01, i(12535)),	-- Doomforged Straightedge
+								dr(0.01, i(12528)),	-- The Judge's Gavel
 							}),
-							o(207303, {			-- Adventure Board
-								qh(28069),				-- Adventurers Wanted: Blackrock Depths
+							n(8898, { 	-- Anvilrage Marshal
+								dr(1.5, i(15770, {	-- Pattern: Black Dragonscale Shoulders
+									i(15051),	-- Black Dragonscale Shoulders
+								})),
+								dr(0.02, i(12546)), -- Aristocratic Cuffs
+								dr(0.02, i(12549)),	-- Braincage
+								dr(0.02, i(12542)),	-- Funeral Pyre Vestment
+								dr(0.02, i(12528)),	-- The Judge's Gavel
+								dr(0.01, i(12552)),	-- Blisterbane Wrap
+								dr(0.01, i(12535)),	-- Doomforged Straightedge
+								dr(0.01, i(12527)),	-- Ribsplitter
+								dr(0.01, i(12550)),	-- Runed Golem Shackles
 							}),
-							qg(45891, qa(27568)),		-- Infiltrating Shadowforge City
-							qg(45839, qh(27582)),		-- Infiltrating Shadowforge City
-							qg(45892, qa(27565)),		-- Into the Prison
-							qg(45821, qh(27579)),		-- Into the Prison
-							qc7(qg(20407, qa(28401,{ 	-- Slaves of the Firelord
-								i(65640), 		-- Mask of the Farseer
-								i(65622), 		-- Headcover of the Farseer
-							}))),
-							qc7(qg(3344, qh(28465,{		-- Slaves of the Firelord (alternate questgiver 72939)
-								i(65643), 		-- Mask of the Speaker
-								i(65630), 		-- Headcover of the Speaker
-							}))),
-							qg(45850, q(27596)),		-- The Heart of the Mountain
-							qg(45849, q(27603)),		-- The Sealed Gate
-							qg(45898, qa(27567)),		-- Twilight?! No!
-							qg(45818, qh(27581)),		-- Twilight?! No!
-							nlq({			-- Legacy Quests
-								q(4024, {		-- A Taste of Flame
-									un(34, i(12066)),	-- Shaleskin Cape
-									un(34, i(12083)),	-- Valconian Sash
-									un(34, i(12082)),	-- Wyrmhide Spaulders
-								}),
-								qa(4242, {		-- Abandoned Hope
-									un(34, i(12018)),	-- Conservator Helm
-									un(34, i(12021)),	-- Shieldplate Sabatons
-									un(34, i(12041)),	-- Windshear Leggings
-								}),
-								qh(3907, {		-- Disharmony of Fire
-									un(34, i(12112)),	-- Crypt Demon Bracers
-									un(34, i(12114)),	-- Nightfall Gloves
-									un(34, i(12115)),	-- Stalwart Clutch
-									un(34, i(12113)),	-- Sunborne Cape
-								}),
-								qa(4263, {		-- Incendius!
-									un(34, i(12112)),	-- Crypt Demon Bracers
-									un(34, i(12114)),	-- Nightfall Gloves
-									un(34, i(12115)),	-- Stalwart Clutch
-									un(34, i(12113)),	-- Sunborne Cape 
-								}),
-								qa(4322, {		-- Jail Break!
-									un(34, i(12061)),	-- Blade of Reckoning
-									un(34, i(12062)),	-- Skilled Fighting Blade
-								}),
+							n(9541, {	-- Blackbreath Crony
+								dr(0.02, i(12552)),	-- Blisterbane Wrap
+								dr(0.02, i(12550)),	-- Runed Golem Shackles
+								dr(0.01, i(12555)),	-- Battlechaser's Greaves
+								dr(0.01, i(12549)),	-- Braincage
+								dr(0.01, i(12535)),	-- Doomforged Straightedge
+								dr(0.01, i(12527)),	-- Ribsplitter
+								dr(0.01, i(12531)),	-- Searing Needle
+								dr(0.01, i(12528)),	-- The Judge's Gavel
+							}),
+							n(8899, { 	-- Doomforge Dragoon
+								dr(0.03, i(12546)),	-- Aristocratic Cuffs
+								dr(0.03, i(12542)),	-- Funeral Pyre Vestment
+								dr(0.02, i(12549)),	-- Braincage
+								dr(0.02, i(12550)),	-- Runed Golem Shackles
+								dr(0.02, i(12528)),	-- The Judge's Gavel
+								dr(0.01, i(12555)), -- Battlechaser's Greaves
+								dr(0.01, i(12552)), -- Blisterbane Wrap
+								dr(0.01, i(12547)),	-- Mar Alom's Grip
+								dr(0.01, i(12531)),	-- Searing Needle
+								dr(0.01, i(12535)),	-- Doomforged Straightedge
+								dr(0.01, i(12527)),	-- Ribsplitter
+								dr(0.01, i(12532)),	-- Spire of the Stoneshaper
+							}),
+							n(8911, { 	-- Fireguard Destroyer
+								dr(0.07, i(12531)),	-- Searing Needle
+								dr(0.02, i(12546)),	-- Aristocratic Cuffs
+								dr(0.02, i(12549)),	-- Braincage
+								dr(0.02, i(12542)),	-- Funeral Pyre Vestment
+								dr(0.02, i(12550)),	-- Runed Golem Shackles
+								dr(0.02, i(12528)),	-- The Judge's Gavel
+								dr(0.01, i(12552)),	-- Blisterbane Wrap
+								dr(0.01, i(12535)),	-- Doomforged Straightedge
+								dr(0.01, i(12547)),	-- Mar Alom's Grip
+								dr(0.01, i(12527)),	-- Ribsplitter
+								dr(0.01, i(12551)),	-- Stoneshield Cloak
+							}),
+							n(9554, {	-- Hammered Patron
+								dr(3, i(11611, {	-- Plans: Dark Iron Sunderer
+									i(11607), 				-- Dark Iron Sunderer
+								})),
+								dr(0.03, i(12542)),	-- Funeral Pyre Vestment
+								dr(0.01, i(12550)),	-- Runed Golem Shcakles
+								dr(0.01, i(12531)),	-- Searing Needle
+								dr(0.01, i(12528)),	-- The Judge's Gavel
+							}),
+							n(8908, { 	-- Molten War Golem
+								dr(0.04, i(12550)),	-- Runed Golem Shackles
+								dr(0.02, i(12546)),	-- Aristocratic Cuffs
+								dr(0.02, i(12555)),	-- Battlechaser's Greaves
+								dr(0.02, i(12549)),	-- Braincage
+								dr(0.01, i(12552)),	-- Blisterbane Wrap
+								dr(0.01, i(12535)),	-- Doomforged Straightedge
+								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
+								dr(0.01, i(12547)),	-- Mar Alom's Grip
+								dr(0.01, i(12527)),	-- Ribsplitter
+								dr(0.01, i(12531)),	-- Searing Needle
+								dr(0.01, i(12532)),	-- Spire of the Stoneshaper
+								dr(0.01, i(12551)),	-- Stoneshield Cloak
+								dr(0.01, i(12528)),	-- The Judge's Gavel
+							}),
+							n(8906, { 	-- Ragereaver Golem
+								dr(0.02, i(12546)),	-- Aristocratic Cuffs
+								dr(0.02, i(12535)),	-- Doomforged Straightedge
+								dr(0.01, i(12549)),	-- Braincage
+								dr(0.01, i(12550)),	-- Runed Golem Shackles
+								dr(0.01, i(12531)),	-- Searing Needle
+								dr(0.01, i(12532)),	-- Spire of the Stoneshaper
+							}),
+							n(10043, {	-- Ribbly's Crony
+								dr(3, i(11611, {	-- Plans: Dark Iron Sunderer
+									i(11607), 				-- Dark Iron Sunderer
+								})),
+								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
+							}),
+							n(8920, { 	-- Weapon Technician
+								dr(2, i(18661, {	-- Schematic: World Enlarger
+									i(18660), -- World Enlarger Toy
+								})),
+							}),
+							n(8907, { 	-- Wrath Hammer Construct
+								dr(0.03, i(12546)),	-- Aristocratic Cuffs
+								dr(0.02, i(12528)),	-- The Judge's Gavel
+								dr(0.01, i(12555)),	-- Battlechaser's Greaves
+								dr(0.01, i(12535)),	-- Doomforged Straightedge
+								dr(0.01, i(12527)),	-- Ribsplitter
+								dr(0.01, i(12531)),	-- Searing Needle
 							}),
 						}),
+					}),
+					n(-75, { 	-- Detention Block
 						cr(9018, e(369, {	-- High Interrogator Gerstahn
 							i(11625), 	-- Enthralled Sphere
 							i(11626), 	-- Blackveil Cape
@@ -375,6 +574,7 @@ _.Instances =
 						}),
 					}),
 					n(-76, { 	-- Shadowforge City
+						--[[ TEMPORARILY DISABLED
 						n(-17, {			-- Quests 		
 							qc1(qg(914, qa(28393,{		-- A Dangerous Alliance
 								i(65618), 		-- Faceguard of the Crown
@@ -384,7 +584,7 @@ _.Instances =
 								i(65625), 		-- Faceguard of the Horde
 								i(65642), 		-- Headguard of the Horde
 							}))),
-							qg(45894, q(27569)),		-- Dark Iron Tacticians
+							
 							qr(qg(12944, q(6646))),		-- Favor Amongst the Brotherhood, Blood of the Mountain
 							qr(qg(12944, q(6645))),		-- Favor Amongst the Brotherhood, Core Leather
 							qr(qg(12944, q(6642))),		-- Favor Amongst the Brotherhood, Dark Iron Ore
@@ -405,7 +605,7 @@ _.Instances =
 							qc9(qg(3326, qh(28459, {	-- Stones of Binding (Alternate qg 88705)
 								i(65627), 		-- Horns of the Left Hand Path
 							}))),
-							qg(45820, qh(27585)),		-- The 109th Division 
+							
 							qc11(qg(12042, q(28343, {	-- The Breath of Cenarius
 								i(65617), 		-- Headdress of the Verdant Circle
 								i(65638), 		-- Headdress of the Green Circle
@@ -416,16 +616,12 @@ _.Instances =
 							qc4(qg(47233, qh(28463, {	-- The Dark Iron Army
 								i(65629), 		-- Facemask of the Shattered Hand	
 							}))),
-							qg(45899, qa(27573)),		-- The Dark Iron Pact
-							qg(45824, qh(27591)),		-- The Dark Iron Pact
 							qc3(qg(44247, qa(28394, {	-- The Golem Lord's Creations
 								i(65619), 		-- Helm of the Crown
 							}))),
 							qc3(qg(3352, qh(28461, {	-- The Golem Lord's Creations
 								i(65628), 		-- Helm of the Great Hunter
 							}))),
-							qg(45888, qa(27571)),		-- The Grim Guzzler
-							qg(45817, qh(27589)),		-- The Grim Guzzler
 							qc8(qg(331, qa(28398, {		-- The Pyromancer's Grimoire
 								i(65620), 		-- Hood of the Royal Wizard
 							}))),
@@ -513,7 +709,7 @@ _.Instances =
 								}),
 							}),
 						}),
-												
+						--]]						
 						cr(9024, e(373, {	-- Pyromancer Loregrain
 							i(11750), 	-- Kindling Stave
 							i(11748), 	-- Pyric Caduceus
@@ -823,119 +1019,6 @@ _.Instances =
 							i(12553), 	-- Swiftwalker Boots
 							i(12554), 	-- Hands of the Exalted Herald
 						})),
-						n(0, { 	-- Zone Drop
-							n(8903, { 	-- Anvilrage Captain
-								dr(1.8, i(15781, {	-- Pattern: Black Dragonscale Leggings
-									i(15052), 	-- Black Dragonscale Leggings
-								})),
-								dr(0.02, i(12546)),	-- Aristocratic Cuffs
-								dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.01, i(12552)),	-- Blisterbane Wrap
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12528)),	-- The Judge's Gavel
-							}),
-							n(8898, { 	-- Anvilrage Marshal
-								dr(1.5, i(15770, {	-- Pattern: Black Dragonscale Shoulders
-									i(15051),	-- Black Dragonscale Shoulders
-								})),
-								dr(0.02, i(12546)), -- Aristocratic Cuffs
-								dr(0.02, i(12549)),	-- Braincage
-								dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.02, i(12528)),	-- The Judge's Gavel
-								dr(0.01, i(12552)),	-- Blisterbane Wrap
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12550)),	-- Runed Golem Shackles
-							}),
-							n(9541, {	-- Blackbreath Crony
-								dr(0.02, i(12552)),	-- Blisterbane Wrap
-								dr(0.02, i(12550)),	-- Runed Golem Shackles
-								dr(0.01, i(12555)),	-- Battlechaser's Greaves
-								dr(0.01, i(12549)),	-- Braincage
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12528)),	-- The Judge's Gavel
-							}),
-							n(8899, { 	-- Doomforge Dragoon
-								dr(0.03, i(12546)),	-- Aristocratic Cuffs
-								dr(0.03, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.02, i(12549)),	-- Braincage
-								dr(0.02, i(12550)),	-- Runed Golem Shackles
-								dr(0.02, i(12528)),	-- The Judge's Gavel
-								dr(0.01, i(12555)), -- Battlechaser's Greaves
-								dr(0.01, i(12552)), -- Blisterbane Wrap
-								dr(0.01, i(12547)),	-- Mar Alom's Grip
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12532)),	-- Spire of the Stoneshaper
-							}),
-							n(8911, { 	-- Fireguard Destroyer
-								dr(0.07, i(12531)),	-- Searing Needle
-								dr(0.02, i(12546)),	-- Aristocratic Cuffs
-								dr(0.02, i(12549)),	-- Braincage
-								dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.02, i(12550)),	-- Runed Golem Shackles
-								dr(0.02, i(12528)),	-- The Judge's Gavel
-								dr(0.01, i(12552)),	-- Blisterbane Wrap
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12547)),	-- Mar Alom's Grip
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12551)),	-- Stoneshield Cloak
-							}),
-							n(9554, {	-- Hammered Patron
-								dr(3, i(11611, {	-- Plans: Dark Iron Sunderer
-									i(11607), 				-- Dark Iron Sunderer
-								})),
-								dr(0.03, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.01, i(12550)),	-- Runed Golem Shcakles
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12528)),	-- The Judge's Gavel
-							}),
-							n(8908, { 	-- Molten War Golem
-								dr(0.04, i(12550)),	-- Runed Golem Shackles
-								dr(0.02, i(12546)),	-- Aristocratic Cuffs
-								dr(0.02, i(12555)),	-- Battlechaser's Greaves
-								dr(0.02, i(12549)),	-- Braincage
-								dr(0.01, i(12552)),	-- Blisterbane Wrap
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.01, i(12547)),	-- Mar Alom's Grip
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12532)),	-- Spire of the Stoneshaper
-								dr(0.01, i(12551)),	-- Stoneshield Cloak
-								dr(0.01, i(12528)),	-- The Judge's Gavel
-							}),
-							n(8906, { 	-- Ragereaver Golem
-								dr(0.02, i(12546)),	-- Aristocratic Cuffs
-								dr(0.02, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12549)),	-- Braincage
-								dr(0.01, i(12550)),	-- Runed Golem Shackles
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12532)),	-- Spire of the Stoneshaper
-							}),
-							n(10043, {	-- Ribbly's Crony
-								dr(3, i(11611, {	-- Plans: Dark Iron Sunderer
-									i(11607), 				-- Dark Iron Sunderer
-								})),
-								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
-							}),
-							n(8920, { 	-- Weapon Technician
-								dr(2, i(18661, {	-- Schematic: World Enlarger
-									i(18660), -- World Enlarger Toy
-								})),
-							}),
-							n(8907, { 	-- Wrath Hammer Construct
-								dr(0.03, i(12546)),	-- Aristocratic Cuffs
-								dr(0.02, i(12528)),	-- The Judge's Gavel
-								dr(0.01, i(12555)),	-- Battlechaser's Greaves
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12531)),	-- Searing Needle
-							}),
-						}),
 					}),					
 				},
 				["Lvl"] = 42,
