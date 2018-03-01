@@ -44,15 +44,14 @@ _.Instances =
 											un(24, i(117379)), 	-- Tremendous Tankard O'Terror
 											un(24, i(37828)), 	-- Great Brewfest Kodo
 											un(24, i(33977)), 	-- Swift Brewfest Ram
-											nld({    -- Legacy
-												un(2, i(71331)), 	-- Direbrew's Bloodied Shanker
-												un(2, i(107217)), 	-- Direbrew's Bloodied Shanker
-												un(2, i(48663)), 	-- Tankard O' Terror
-												un(2, i(71332)), 	-- Tremendous Tankard O'Terror
-												un(2, i(107218)), 	-- Tremendous Tankard O'Terror
-											}),														
+											un(2, i(71331)), 	-- Direbrew's Bloodied Shanker
+											un(2, i(107217)), 	-- Direbrew's Bloodied Shanker
+											un(2, i(48663)), 	-- Tankard O' Terror
+											un(2, i(71332)), 	-- Tremendous Tankard O'Terror
+											un(2, i(107218)), 	-- Tremendous Tankard O'Terror
 										},
 										["Lvl"] = 98,
+										["u"] = 24, -- Brewfest Filter
 									}),
 									i(149752, {		-- Keg-Shaped Treasure Box
 										["groups"] = {
@@ -68,6 +67,7 @@ _.Instances =
 											un(2, i(107218)), 	-- Tremendous Tankard O'Terror
 										},
 										["Lvl"] = 46,
+										["u"] = 24, -- Brewfest Filter
 									}),
 								},
 								["description"] = "|cff66ccffYou can only loot the keg once per day per toon by running it through the Dungeon queue on your first run.|r",	
