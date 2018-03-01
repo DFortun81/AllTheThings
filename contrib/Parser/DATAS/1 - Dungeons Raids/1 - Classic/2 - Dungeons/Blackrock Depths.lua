@@ -51,7 +51,7 @@ _.Instances =
 											un(2, i(107218)), 	-- Tremendous Tankard O'Terror
 										},
 										["Lvl"] = 98,
-										["u"] = 24, -- Brewfest Filter
+										["u"] = 24,
 									}),
 									i(149752, {		-- Keg-Shaped Treasure Box
 										["groups"] = {
@@ -67,7 +67,7 @@ _.Instances =
 											un(2, i(107218)), 	-- Tremendous Tankard O'Terror
 										},
 										["Lvl"] = 46,
-										["u"] = 24, -- Brewfest Filter
+										["u"] = 24,
 									}),
 								},
 								["description"] = "|cff66ccffYou can only loot the keg once per day per toon by running it through the Dungeon queue on your first run.|r",	
