@@ -50,14 +50,15 @@ _.WorldEvents =
 							{
 								["groups"] = {
 									un(24, i(71331)), 	-- Direbrew's Bloodied Shanker
-									un(24, i(107217)), 	-- Direbrew's Bloodied Shanker
+									un(2, i(107217)), 	-- Direbrew's Bloodied Shanker
 									un(24, i(117378)), 	-- Direbrew's Bloodied Shanker
 									un(24, i(150922)), 	-- Terrific Tankard O'Terror
-									un(24, i(71332)), 	-- Tremendous Tankard O'Terror
-									un(24, i(107218)), 	-- Tremendous Tankard O'Terror
+									un(2, i(71332)), 	-- Tremendous Tankard O'Terror
+									un(2, i(107218)), 	-- Tremendous Tankard O'Terror
 									un(24, i(117379)), 	-- Tremendous Tankard O'Terror
 									un(24, i(37828)), 	-- Great Brewfest Ram
 									un(24, i(33977)), 	-- Swift Brewfest Ram
+									un(2, i(48663)), 	-- Tankard O' Terror
 								},
 								["itemID"] = 117393,
 								["Lvl"] = 98,
@@ -65,14 +66,9 @@ _.WorldEvents =
 							{
 								["groups"] = {
 									un(24, i(71331)), 	-- Direbrew's Bloodied Shanker
-									un(24, i(107217)), 	-- Direbrew's Bloodied Shanker
 									un(24, i(117378)), 	-- Direbrew's Bloodied Shanker
 									un(24, i(150922)), 	-- Terrific Tankard O'Terror
-									un(24, i(71332)), 	-- Tremendous Tankard O'Terror
-									un(24, i(107218)), 	-- Tremendous Tankard O'Terror
 									un(24, i(117379)), 	-- Tremendous Tankard O'Terror
-									un(24, i(37828)), 	-- Great Brewfest Ram
-									un(24, i(33977)), 	-- Swift Brewfest Ram
 								},
 								["itemID"] = 149752,
 								["Lvl"] = 46,

@@ -388,6 +388,7 @@ i(70104),	-- Not Found???
 -- Warglaives
 -- Cosmetic
 
-
+un(24, i(117393)), -- Keg-Shaped Treasure Chest [TEMP FIX]
+un(24, i(149752)), -- Keg-Shaped Treasure Chest [TEMP FIX]
 
 };

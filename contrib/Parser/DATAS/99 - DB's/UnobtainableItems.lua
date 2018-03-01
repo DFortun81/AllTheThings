@@ -912,7 +912,6 @@ u(69892, 2); 	-- Ripped Sandstorm Cloak
 u(69893, 2); 	-- Bloodsoaked Skullforge Reaver
 u(71325, 2); 	-- The Horseman's Sinister Saber (i365)
 u(71326, 2); 	-- The Horseman's Horrific Helm (i365)
-u(71331, 2);  	-- Direbrew's Bloodied Shanker
 u(79131, 2); 	-- Burnished Warden Staff
 u(87569, 2); 	-- The Horseman's Horrific Hood (i470)
 u(87570, 2); 	-- The Horseman's Sinister Slicer (i470)
@@ -989,7 +988,6 @@ u(105690, 2); 	-- Hellscream's War Staff
 u(105691, 2); 	-- Hellscream's Doomblade
 u(105692, 2); 	-- Hellscream's Decapitator
 u(105693, 2); 	-- Hellscream's Shield Wall
-u(107217, 2);  	-- Direbrew's Bloodied Shanker
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 --                          4 This item is purchaseable from a vendor provided you meet certain qualifications.                           --
@@ -1407,12 +1405,9 @@ u(20720, 7);	-- Dark Whisper Blade 						(Chest of Spoils - Quest Scepter of the
 u(20722, 7); 	-- Crystal Slugthrower 						(Chest of Spoils - Quest Scepter of the Council - Silithus)
 u(38513, 7);	-- Boarhide Leggings 				(36) 	(Gruff Swiftbite - Elwynn Forest)
 u(45052, 7);	-- Gruffscale Leggings 						(Gruff - Ungoro Crater)
-u(48663, 7);	-- Tankard O' Terror						(Coren Direbrew - BRD)
 u(66540, 7); 	-- Miniature Winter Veil Tree				(You're A Mean One Quest -- Ironforge)
-u(71332, 7);  	-- Tremendous Tankard O' Terror				(Coren Direbrew - BRD)
 u(72068, 7);	-- Guardian Cub								(Former Store Cageable Pet)
 u(93625, 7); 	-- Miniature Winter Veil Tree				(You're A Mean One Quest -- Ironforge)
-u(107218, 7);  	-- Tremendous Tankard O' Terror				(Coren Direbrew - BRD)
 u(117371, 7);	-- Winter Veil Tree							(Stolen Presents)
 u(118574, 7);	-- Hatespark the Tiny						(Wow anniversary molten core)
 u(120952, 7);	-- Slarkhide 								(Added in WOD only to Big Crate of Salvage)
@@ -1826,7 +1821,6 @@ u(52489, 15);	-- Rhinestone Sunglasses
 u(52653, 15); 	-- Unidentified Cooking Utensil
 u(56836, 15); 	-- Overflowing Purple Brewfest Stein
 u(68194, 15);	-- Oggleflint's Inspirer
-u(71331, 15); 	-- Direbrew's Bloodied Shanker
 u(84660, 15);	-- Pandaren Fishing Pole
 u(84661, 15);	-- Dragon Fishing Pole
 u(85777, 15);	-- Ancient Pandaren Mining Pick
@@ -1835,11 +1829,9 @@ u(86559, 15);	-- Frying Pan
 u(87213, 15); 	-- Mist-Piercing Goggles
 u(88535, 15);	-- Sharpened Tuskarr Pole
 u(88710, 15);	-- Nat's Hat
-u(107217, 15);  -- Direbrew's Bloodied Shanker
 u(116825, 15);	-- Savage Fishing Pole
 u(116826, 15);	-- Draenic Fishing Pole
 u(116913, 15);	-- Peon's Mining Pick
-u(117378, 15);  -- Direbrew's Bloodied Shanker
 u(120164, 15);	-- Thruk's Heavy Duty Fishing Pole (staff)
 u(130064, 15);	-- Deadeye Monocle
 u(153290, 15);  -- Krokul Mining Pick
