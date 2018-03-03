@@ -36,12 +36,6 @@ _.Instances =
 								i(65999), -- Pauldrons of Zul'Farrak
 							}),	
 						}),
-						n(15578, { -- Elder Wildmane
-							["groups"] = {
-								q(8676), -- Wildmane the Elder
-							},
-							["u"] = 17,
-						}),
 						n(40712, { -- Mazoga's Spirit
 							q(25556), -- Into Zul'Farrak [Optional Breadcrumb]
 							q(27068,{ -- Chief Ukorz Sandscalp
