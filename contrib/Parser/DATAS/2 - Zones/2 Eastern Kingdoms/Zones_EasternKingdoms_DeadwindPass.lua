@@ -36,9 +36,16 @@ _.Zones =
 					qg(113986, q( 44421)),	-- Anomalous Anomalies
 					qg( 18253, q( 11031)),	-- Archmage No More
 					qg( 18253, q( 11033)),	-- Assassin No More
---					q(30093),	-- Assassinate Creed (starts in scenario?)
 					qg(113986, q( 44500)),	-- Author! Author!
---					q(30109),	-- Blood of the Betrayer (starts in scenario?)
+--]]
+					ql(q(30109, {	-- Blood of the Betrayer (UNTESTED, NEEDS CONFIRMATION)
+						["groups"] = {
+						},
+						["qg"] = 57770,	-- Zazzo Twinklefingers
+						["classes"] = { 4 },	-- Rogue
+						["sourceQuestID"] = { 30108 },	-- Our Man in Karazhan
+					})),
+--[[
 					qg(114550, qa(40717)),	-- Calling of the Council
 					qg(114631, qa(44684)),	-- Corruption Runs Deep
 					qg(114631, qa(44764)),	-- Demon in Disguise
@@ -181,6 +188,17 @@ _.Zones =
 						["classes"] = {9},
 						})),
 					}),
+--]]					
+					ql(q(30113, {	-- Victory in the Depths (UNTESTED, NEEDS CONFIRMATION)
+						["groups"] = {
+							i(77947),	-- The Sleeper
+							i(77948),	-- The Dreamer
+						},
+						["qg"] = 57770,	-- Zazzo Twinklefingers
+						["classes"] = { 4 },	-- Rogue
+						["sourceQuestID"] = { 30109 },	-- Blood of the Betrayer
+					})),
+--[[
 					o(258978, {	-- Waterlogged Tome
 						q(44487),	-- Waterlogged Tome
 					}),

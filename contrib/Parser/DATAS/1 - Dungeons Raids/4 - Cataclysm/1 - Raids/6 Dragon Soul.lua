@@ -219,13 +219,28 @@ _.Instances =
 								})),
 							}),	
 						},
-						["description"] = "The droprates are really really low. Spend the time you would otherwise waste in here complaining about it on the forums instead.\n\n - Crieve"
+						["description"] = "The droprates are really really low. Spend the time you would otherwise waste in here complaining about it on the forums instead.\n\n - Crieve",
 					}),
 					d(1, {	-- Normal
 						["ignoreBonus"] = true,
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
-							n(0, { 				-- Zone Drop
+							n(-17, {	-- Quests
+								ql(q(29802, {	-- A Hidden Message
+									["groups"] = {
+									},
+									["qg"] = 55476,	-- Lord Afrasastrasz
+									["classes"] = { 4 },	-- Rogue
+									["sourceQuestID"] = { 29801 },	-- Proving Your Worth
+								})),
+								ql(q(29801, {	-- Proving Your Worth
+									["groups"] = {
+									},
+									["qg"] = 55476,	-- Lord Afrasastrasz
+									["classes"] = { 4 },	-- Rogue									
+								})),
+							}),
+							n(  0, {	-- Zone Drop
 								i(78879),
 								i(78884),
 								i(78882),
@@ -504,6 +519,21 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
+							n(-17, {	-- Quests
+								ql(q(29802, {	-- A Hidden Message
+									["groups"] = {
+									},
+									["qg"] = 55476,	-- Lord Afrasastrasz
+									["classes"] = { 4 },	-- Rogue
+									["sourceQuestID"] = { 29801 },	-- Proving Your Worth
+								})),
+								ql(q(29801, {	-- Proving Your Worth
+									["groups"] = {
+									},
+									["qg"] = 55476,	-- Lord Afrasastrasz
+									["classes"] = { 4 },	-- Rogue									
+								})),
+							}),
 							n(0, { 				-- Zone Drop
 								i(78879),
 								i(78884),

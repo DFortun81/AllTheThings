@@ -306,11 +306,6 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13712},
 					})),
-					qg(40895, qa(25640, {	-- Bombs Away: Windshear Mine!
-						["groups"] = {
-						},
-						["sourceQuestID"] = {25622},
-					})),
 					qg(34359, qh(13943, {	-- Breathing Room
 						["groups"] = {
 							i(56667),
@@ -324,14 +319,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuestID"] = {13977},
-					})),
-					qg(40895, qa(25622, {	-- Burn, Baby, Burn!
-						["groups"] = {
-							i(57426),
-							i(57427),
-							i(57425),
-						},
-						["sourceQuestID"] = {25621},
 					})),
 					qg( 3996, qa(13965, {	-- Check in on the Edunes (breadcrumb quest for 13976)
 						["groups"] = {
@@ -499,11 +486,6 @@ _.Zones =
 						["sourceQuestID"] = {13623},
 					})),
 					qg(12818, qh( 6482)),	-- Freedom to Ruul (No Prereq)
-					qg(40895, qa(25729, {	-- Gerenzo the Traitor
-						["groups"] = {
-						},
-						["sourceQuestID"] = {25652},
-					})),
 					qg(34239, qa(13877, {	-- Go With The Flow
 						["groups"] = {
 						},
@@ -851,7 +833,11 @@ _.Zones =
 					o(195134, { 			-- The Bomb (No Prereq)
 						qa(13981),		-- They Set Them Up The Bomb!
 					}),
-					qg(34354, qa(13913)),	-- They Took Our Gnomes (No Prereq)
+					qg(34354, qa(13913, {	-- They Took Our Gnomes
+						["groups"] = {
+						},
+						["breadcrumbQuestID"] = { 28539 },	-- Hero's Call: Stonetalon Mountains!
+					})),
 					qg(34596, qh(13980, {	-- They're Out There!
 						["groups"] = {
 							i(56692),

@@ -659,9 +659,15 @@ _.Zones =
 					qg(, q( 27378)),	-- The Worldbreaker
 					qg(, qa(28234)),	-- They Took Me Pants!
 					qg(, qh(28166)),	-- Thog's Nightlight
-					qg(, q( 29934)),	-- To Ravenholdt
-					qg(, q( 27299)),	-- Torn Ground
 --]]
+					ql(q(29934, {	-- To Ravenholdt
+						["groups"] = {
+						},
+						["qg"] = 55488,	-- Corastrasza
+						["classes"] = { 4 },	-- Rogue
+						["sourceQuestID"] = { 29802 },	-- A Hidden Message
+					})),
+--					qg(, q( 27299)),	-- Torn Ground
 					qg(46318, qh(27747,  {  -- Total War
 						i(63816),
 						i(63815),

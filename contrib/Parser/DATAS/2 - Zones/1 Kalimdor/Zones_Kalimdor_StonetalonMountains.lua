@@ -118,51 +118,585 @@ _.Zones =
 					qg(66137, qh(31862)),	-- Zonya the Sadist
 				}),
 				n(-17, { 	-- Quests
---[[				
+				
+				
+					qh(26002, {	-- Alliance Attack Plans
+						["groups"] = {
+						},
+						["qg"] = 40901,	-- Blastgineer Fuzzwhistle
+						["sourceQuestID"] = { 26001 },	-- The Missing Blastgineer
+					}),
+				
+				
+					qh(26073, {	-- All's Quiet on the Southern Front
+						["groups"] = {
+						},
+						["qg"] = 3995,	-- Witch Doctor Jin'Zil
+						["sourceQuestID"] = { 26067 },	-- Jin'Zil's Blessing
+					}),
+				
+				
+					qh(26047, {	-- And That's Why They Call Them Peons...
+						["groups"] = {
+						},
+						["qg"] = 41992,	-- Blastgineer Igore
+						["sourceQuestID"] = { 26044 },	-- Where Are the Parts?
+					}),
+				
+				
+					qa(25766, {	-- Arcane Legacy
+						["groups"] = {
+						},
+						["qg"] = 40899,	-- Arcanist Valdurian
+						["sourceQuestID"] = { 25669 },	-- Rumble in the Lumber...Mill
+					}),
+				
+				
+					qh(26010, {	-- Ashes to Ashes (awarded "A Short-Lived Victory" criteria)
+						["groups"] = {
+							i( 57479),	-- Flamethrower's Gloves
+							i( 57478),	-- Vest of Ashes
+							i(131464),	-- Tunic of Ashes
+						},
+						["qg"] = 41023,	-- Overlord Krom'gar
+						["sourceQuestID"] = { 26004 },	-- Krom'gar Fortress
+					}),
+				
+				
+					qh(25999, {	-- Barrier to Entry
+						["groups"] = {
+							i( 57471),	-- Elf-Killer Breastplate
+							i( 57470),	-- Incinerator's Gauntlets
+							i( 57469),	-- Saurboz's Leggings
+							i(131463),	-- Saurboz's Handwraps
+						},
+						["qg"] = 34341,	-- Saurboz
+						["sourceQuestID"] = { 25945 },	-- We're Here to Do One Thing, Maybe Two...
+					}),
+					
+					
+					qh(26074, {	-- Beginning of the End
+						["groups"] = {
+						},
+						["qg"] = 41023,	-- Overlord Krom'gar
+						["sourceQuestID"] = { 26073 },	-- All's Quiet on the Southern Front
+					}),
+					
+					
+					qh(26098, {	-- Betrayal at the Grove
+						["groups"] = {
+						},
+						["qg"] = 42091,	-- Orthus Cliffwalker
+						["sourceQuestID"] = { 26097 },	-- Proof of Lies
+					}),
+					
+					
+					qh(26046, {	-- Between a Rock and a Hard Place
+						["groups"] = {
+						},
+						["qg"] = 41990,	-- Scout Utvoch
+						["sourceQuestID"] = { 26044 },	-- Where Are the Parts?
+					}),
+					
+					
+					o(203186, {	-- STAY OUT!
+					--[[
+						qa(25730,  {  -- BEWARE OF CRAGJAW!
+							["groups"] = {
+								i( 57429),	-- Fisherman's Belt
+								i( 57430),	-- Irongoat Legguards
+								i( 57428),	-- Fish Stunner
+								i(131879),	-- Fisherman's Links
+							},
+							["sourceQuestID"] = {  },	-- 
+						}),
+					--]]
+						qh(26043,  {  -- BEWARE OF CRAGJAW!
+							["groups"] = {
+								i( 57482),	-- Anara's Belt
+								i( 57481),	-- Fisherman's Gloves
+								i(131471),	-- Anara's Cord
+							},
+							["sourceQuestID"] = { 26004 },	-- Krom'gar Fortress
+						}),
+					}),
+					
+					
+					qa(25640, {	-- Bombs Away: Windshear Mine!
+						["groups"] = {
+						},
+						["sourceQuestID"] = {25622},	-- Burn, Baby, Burn!
+					}),
+					
+					
+					qa(25622, {	-- Burn, Baby, Burn!
+						["groups"] = {
+							i(57426),	-- Xakxak's Lab Frock
+							i(57427),	-- Vonderful Bracers
+							i(57425),	-- Gyromatic Axe
+						},
+						["sourceQuestID"] = {25621},	-- Field Test: Gnomecorder
+					}),
+					
+					
+					qa(25767, {	-- Capturing Memories
+						["groups"] = {
+						},
+						["qg"] = 40900,	-- Neophyte Starcrest
+						["sourceQuestID"] = { 25669 },	-- Rumble in the Lumber...Mill
+					}),
+					
+					
+					qa(25652, {	-- Commandeer That Balloon!
+						["groups"] = {
+							i(57420),	-- Commandeered Gloves
+							i(57418),	-- Stonetalon Defender's Staff
+							i(57419),	-- Wand of Bought Time
+						},
+						["qg"] = 40879,	-- Boog the "Gear Whisperer"
+						["sourceQuestID"] = { 25650 },	-- Orders from High Command
+					}),
+					
+					
+					qh(26061, {	-- Da Voodoo: Ram Horns
+						["groups"] = {
+						},
+						["qg"] = 3995,	-- Witch Doctor Jin'Zil
+						["sourceQuestID"] = { 26059 },	-- Eyes and Ears: Malaka'jin
+					}),
+					
+					
+					qh(26062, {	-- Da Voodoo: Resonite Crystal
+						["groups"] = {
+						},
+						["qg"] = 3995,	-- Witch Doctor Jin'Zil
+						["sourceQuestID"] = { 26061, 26060 },	-- Da Voodoo: Ram Horns & Da Voodoo: Stormer Heart
+					}),
+					
+					
+					qh(26060, {	-- Da Voodoo: Stormer Heart
+						["groups"] = {
+						},
+						["qg"] = 3995,	-- Witch Doctor Jin'Zil
+						["sourceQuestID"] = { 26059 },	-- Eyes and Ears: Malaka'jin
+					}),
+					
+					
+					qa(25642, {	-- Don't Look Them in the Eyes
+						["groups"] = {
+						},
+						["qg"] = 40879,	-- Boog the "Gear Whisperer"
+						["sourceQuestID"] = { 25640 },	-- Bombs Away: Windshear Mine!
+					}),
+					
+					
+					qh(26026, {	-- Dream of a Better Tomorrow
+						["groups"] = {
+						},
+						["qg"] = 40907,	-- Clarissa
+						["sourceQuestID"] = { 26004 },	-- Krom'gar Fortress
+					}),
+					
+					
+					qh(26011, {	-- Enemy of the Horde: Marshal Paltrow
+						["groups"] = {
+						},
+						["qg"] = 40903,	-- Spy-Mistress Anara
+						["sourceQuestID"] = { 26004 },	-- Krom'gar Fortress
+					}),
+					
+					
+					qh(26059, {	-- Eyes and Ears: Malaka'jin
+						["groups"] = {
+						},
+						["qg"] = 41023,	-- Overlord Krom'gar
+						["sourceQuestID"] = { 26058 },	-- In Defense of Krom'gar Fortress
+					}),
+					
+					
+					qh(26064, {	-- Fight On Their Stomachs
+						["groups"] = {
+						},
+						["qg"] = 3411,	-- Denni'ka
+						["sourceQuestID"] = { 26059 },	-- Eyes and Ears: Malaka'jin
+					}),
+					
+					
+					qh(26077, {	-- Final Delivery
+						["groups"] = {
+						},
+						["qg"] = 42033,	-- Jibbly Rakit
+						["sourceQuestID"] = { 26076 },	-- Spy Infestation
+					}),
+					
+					
+					qa(25662, {	-- Free Our Sisters
+						["groups"] = {
+						},
+						["qg"] = 40896,	-- Lord Fallowmere
+						["sourceQuestID"] = { 25652 },	-- Commandeer That Balloon!
+					}),
+					
+					
+					qa(25729, {	-- Gerenzo the Traitor
+						["groups"] = {
+						},
+						["sourceQuestID"] = {25652},	-- Commandeer That Balloon!
+						["description"] = "To start this quest, go to the end of the small bridge at 64.5 43.8 and it will auto-prompt.  To reach it, you will have to fly or walk up the mountain path that starts at 67.9 46.4.",
+					}),
+					
+					
+					qa(25739, {	-- If the Horde Don't Get You...
+						["groups"] = {
+						},
+						["qg"] = 40897,	-- Northwatch Captain Kosak
+						["sourceQuestID"] = { 25669 },	-- Rumble in the Lumber...Mill
+					}),
+					
+					
+					qh(26045, {	-- I Got Your Parts Right Here...
+						["groups"] = {
+						},
+						["qg"] = 41991,	-- Sergeant Dontrag
+						["sourceQuestID"] = { 26044 },	-- Where Are the Parts?
+					}),
+					
+					
+					n(40905, {	-- Windshear Overseer
+						["groups"] = {
+							i(55181, {	-- Illegible Orc Letter
+								qa(25647),	-- Illegible Orc Letter
+							}),
+						},
+						["sourceQuestID"] = { 25640 },	-- Bombs Away: Windshear Mine
+					}),
+					
+					
+					qh(26058, {	-- In Defense of Krom'gar Fortress (awarded "Legionnaire" criteria)
+						["groups"] = {
+						},
+						["qg"] = 40902,	-- Chief Blastgineer Bombguts
+						["sourceQuestID"] = { 26048 },	-- Spare Parts Up in Here!
+					}),
+					
+					
+					qh(26099, {	-- Is This Justice?
+						["groups"] = {
+						},
+						["qg"] = 42039,	-- High Chieftain Cliffwalker
+						["sourceQuestID"] = { 26098 },	-- Betrayal at the Grove
+					}),
+					
+					
+					qh(26067, {	-- Jin'Zil's Blessing (awarded "Da Voodoo" criteria)
+						["groups"] = {
+						},
+						["qg"] = 3995,	-- Witch Doctor Jin'Zil
+						["sourceQuestID"] = { 26062 },	-- Da Voodoo: Resonite Crystal
+					}),
+					
+					
+					qa(25673, {	-- Just Ask Alice
+						["groups"] = {
+						},
+						["qg"] = 40908,	-- Alice
+						["sourceQuestID"] = { 25652 },	-- Commandeer That Balloon?
+					}),
+					
+					
+					qh(26068, {	-- Kobold Fury!
+						["groups"] = {
+							i( 57507),	-- Kobold-Wrangler Leggings
+							i( 57506),	-- Unearthed Cloak
+							i( 57508),	-- Devo's Handaxe
+							i(131476),	-- Kobold-Wrangler Legguards
+						},
+						["qg"] = 42023,	-- Subjugator Devo
+						["sourceQuestID"] = { 26066 },	-- Reinforcements...
+					}),
+					
+					
+					qh(26004, {	-- Krom'gar Fortress
+						["groups"] = {
+						},
+						["qg"] = 34341,	-- Saurboz
+						["sourceQuestID"] = { 26002 },	-- Alliance Attack Plans
+					}),
+					
+					
+					qh(26003, {	-- Lessons from the Lost Isles
+						["groups"] = {
+						},
+						["qg"] = 40926,	-- Kilag Gorefang
+						["sourceQuestID"] = { 25999 },	-- Barrier to Entry
+					}),
+					
+					
+					qh(26101, {	-- Might Makes Right
+						["groups"] = {
+						},
+						["qg"] = 41023,	-- Overlord Krom'gar
+						["sourceQuestID"] = { 26100 },	-- The General is Dead
+					}),
+					
+					
+					qh(28084, {	-- Might of the Krom'gar
+						["groups"] = {
+						},
+						["qg"] = 42028,	-- Krom'gar Quartermaster
+						["sourceQuestID"] = { 26004 },	-- Krom'gar Fortress
+					}),
+					
+					
+					qa(25649, {	-- Minx'll Fix It
+						["groups"] = {
+						},
+						["qg"] = 40879,	-- Boog the "Gear Whisperer"
+						["sourceQuestID"] = { 25647 },	-- Illegible Orc Letter
+					}),
+					
+					
+					qh(26028, {	-- Mr. D's Wild Ride
+						["groups"] = {
+						},
+						["qg"] = 40907,	-- Clarissa
+						["sourceQuestID"] = { 26026 },	-- Dream of a Better Tomorrow
+					}),
+					
+					
+					qa(25728, {	-- Mr. P's Wild Ride
+						["groups"] = {
+						},
+						["qg"] = 40908,	-- Alice
+						["sourceQuestID"] = { 25673 },	-- Just Ask Alice
+					}),
+					
+					
+					qh(26134, {	-- Nothing Left for You Here (breadcrumb quest for Desolace)
+						["groups"] = {
+						},
+						["qg"] = 42039,	-- High Chieftain Cliffwalker
+						["sourceQuestID"] = { 26115 },	-- To Be Horde...
+					}),
+					
+					
+					qh(26069, {	-- Nura Pathfinder (breadcrumb quest for Southern Barrens)
+						["groups"] = {
+						},
+						["qg"] = 3995,	-- Witch Doctor Jin'Zil
+						["breadcrumbQuestID"] = { 26059 },	-- Eyes and Ears: Malaka'jin
+					}),
+					
+					
+--[[ 				n(41937, {	-- Marshal Paltrow
+						i(56474, {	-- Orders from Base Camp
+							qh(26016),	-- Orders from Base Camp (I didn't receive this while questing - Wholly has it marked as REMOVED)
+						}),
+					}), --]]					
+					
+					
+					qa(25650, {	-- Orders from High Command
+						["groups"] = {
+						},
+						["qg"] = 40881,	-- Minx
+						["sourceQuestID"] = { 25649 },	-- Minx'll Fix It
+					}),
+					
+					
+					qa(25741, {	-- Preparations for the Future
+						["groups"] = {
+						},
+						["qg"] = 40898,	-- Alithia Fallowmere
+						["sourceQuestID"] = { 25669 },	-- Rumble in the Lumber...Mill
+					}),
+					
+					
+					qh(26097, {	-- Proof of Lies
+						["groups"] = {
+						},
+						["qg"] = 42039,	-- High Chieftain Cliffwalker
+						["sourceQuestID"] = { 26082 },	-- To Battlescar!
+					}),
+					
+					
+					qh(26066, {	-- Reinforcements...
+						["groups"] = {
+						},
+						["qg"] = 42023,	-- Subjugator Devo
+						["sourceQuestID"] = { 26061, 26060 },	-- Da Voodoo: Ram Horns & Da Voodoo: Stormer Heart
+					}),
+					
+					
+					qh(26020, {	-- Report to Bombgutz
+						["groups"] = {
+						},
+						["qg"] = 41023,	-- Overlord Krom'gar
+						["sourceQuestID"] = { 26010 },	-- Ashes to Ashes
+					}),
+					
+					
+					qa(25615, {	-- Return to Stardust 
+						["groups"] = {
+							i( 57415),	-- Stardust Belt
+							i( 57416),	-- Hippogryph Down Belt
+							i( 57417),	-- Clear Path Boots
+							i(131877),	-- Stardust Waistcord
+						},
+						["qg"] = 39256,	-- Kalen Trueshot
+						["sourceQuestID"] = { 25614 },	-- The Only Way Down is in a Body Bag
+					}),
+					
+					
+					qa(25669, {	-- Rumble in the Lumber... Mill
+						["groups"] = {
+							i( 57432),	-- Thwarter's Boots
+							i( 57433),	-- Windshear Axe
+							i( 57431),	-- Strategy Guide
+							i(131880),	-- Thwarter's Footguards
+						},
+						["qg"] = 41071,	-- Huntress Illiona
+						["sourceQuestID"] = { 25662 },	-- Free Our Sisters
+					}),
+					
+					
+					qh(26009, {	-- Seek and Destroy
+						["groups"] = {
+						},
+						["qg"] = 41023,	-- Overlord Krom'gar
+						["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
+						["sourceQuestID"] = { 26004 },	-- Krom'gar Fortress
+					}),
+					
+					
+					qh(26048, {	-- Spare Parts Up In Here!
+						["groups"] = {
+							i( 57491),	-- Spare Part Leggings
+							i( 57490),	-- Blastgineer's Belt
+							i(131472),	-- Blastgineer's Waistband
+						},
+						["qg"] = 41991,	-- Sergeant Dontrag
+						["sourceQuestID"] = { 26047, 26046, 26045 },	--  And That's Why They Call Them Peons..., Between a Rock and a Hard Place, & I Got Your Parts Right Here
+					}),
+					
+					
+					qh(26076, {	-- Spy Infestation
+						["groups"] = {
+							i(57499),	-- Infested Breastplate
+							i(57498),	-- Bow of Invisible Aim
+						},
+						["qg"] = 42033,	-- Jibbly Rakit
+						["sourceQuestID"] = { 26075 },	-- The Turd Problem
+					}),
+					
+					
+					qh(26100, {	-- The General is Dead
+						["groups"] = {
+						},
+						["qg"] = 42047,	-- Masha Cliffwalker
+						["sourceQuestID"] = { 26099 },	-- Is This Justice?
+					}),
+					
+					
+					qh(26001, {	-- The Missing Blastgineer
+						["groups"] = {
+						},
+						["qg"] = 34341,	-- Saurboz
+						["sourceQuestID"] = { 25999 },	-- Barrier to Entry
+					}),
+				
+				
+					qa(25614, {	-- The Only Way Down is in a Body Bag
+						["groups"] = {
+						},
+						["qg"] = 39256,	-- Kalen Trueshot
+						["sourceQuestID"] = { 25613 },	-- Do Yourself a Favor
+					}),
+				
+				
+					qh(26063, {	-- The Queen and Her Court
+						["groups"] = {
+							i(57493),	-- Darn Legguards
+							i(57492),	-- Talongrip Dagger
+						},
+						["qg"] = 11821,	-- Darn Talongrip
+					}),
+				
+				
+					qh(26075, {	-- The Turd Problem
+						["groups"] = {
+						},
+						["qg"] = 42033,	-- Jibbly Rakit
+						["sourceQuestID"] = { 26074 },	-- Beginning of the End
+					}),
+				
+				
+					qh(26082, {	-- To Battlescar!
+						["groups"] = {
+							i(57497),	-- Grebo's Crossbow
+							i(57496),	-- Wand of Destructive Talent
+							i(57495),	-- Shield of Battlescar Valley
+							i(57494),	-- Rampaging Staff
+						},
+						["qg"] = 42050,	-- General Grebo
+						["sourceQuestID"] = { 26077 },	-- Final Delivery
+					}),
+				
+				
+					qh(26115, {	-- To Be Horde...
+						["groups"] = {
+							i( 57512),	-- Cliffwalker Boots
+							i( 57511),	-- Belt of the Grieving Father
+							i( 57510),	-- Masha's Armbands
+							i(131486),	-- Cinch of the Grieving Father
+						},
+						["qg"] = 42106,	-- Overlord Krom'gar
+						["sourceQuestID"] = { 26101 },	-- Might Makes Right
+					}),
+				
+				
+					qa(25646, {	-- Windshear Mine Cleanup (awarded "Clearing a Path" criteria)
+						["groups"] = {
+							i( 57422),	-- Quiet Slippers
+							i( 57423),	-- Overseer's Gloves
+							i(131878),	-- Overseer's Handguards
+						},
+						["qg"] = 40973,	-- Sentinal Heliana
+						["sourceQuestID"] = { 25640 },	-- Bombs Away: Windshear Mine
+					}),
+				
+				
+					qh(26044, {	-- Where Are the Parts?
+						["groups"] = {
+						},
+						["qg"] = 40902,	-- Chief Blastgineer Bombgutz
+						["sourceQuestID"] = { 26020 },	-- Report to Bombgutz
+					}),
+				
+				
+--[[
+						["groups"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuestID"] = {  },	-- 
+					}),
+--]]
+				
+				
+				
+				
+
+				
+				
 					qg(41278, qa(25837)),	-- A Proper Peace Offerin'
 					qg(41277, qa(25821)),	-- A Special Kind of Job
 					qg(41229, qa(25852)),	-- All's Clear
-					qg( 3995, qh(26073)),	-- All's Quiet on the Southern Front
-					qg(40901, qh(26002)),	-- Alliance Attack Plans
-					qg(41992, qh(26047)),	-- And That's Why They Call Them Peons...
-					qg(40899, qa(25766)),	-- Arcane Legacy
---]]					
 					qg(41229, qa(25822,  {  -- Armaments for War
 						i( 57449),
 						i( 57448),
 						i(131447),
 					})),			
---					qg(41487, qa(25930)),	-- Ascending the Vale
-					qg(41023, qh(26010,  {  -- Ashes to Ashes
-						i( 57479),
-						i( 57478),
-						i(131464),
-					})),
---					qg(41488, qa(25914)),	-- Back to the Depths!
-					qg(34341, qh(25999,  {  -- Barrier to Entry
-						i( 57471),
-						i( 57470),
-						i( 57469),
-						i(131463),
-					})),
---[[
-					qg(41023, qh(26074)),	-- Beginning of the End
-					qg(42091, qh(26098)),	-- Betrayal at the Grove
-					qg(41990, qh(26046)),	-- Between a Rock and a Hard Place
---]]					
-					o(203186, {	-- STAY OUT!
-						qa(25730,  {  -- BEWARE OF CRAGJAW!
-							i( 57429),
-							i( 57430),
-							i( 57428),
-							i(131879),
-						}),
-						qh(26043,  {  -- BEWARE OF CRAGJAW!
-							i( 57482),
-							i( 57481),
-							i(131471),
-						}),
-					}),					
+					qg(41487, qa(25930)),	-- Ascending the Vale
+					qg(41488, qa(25914)),	-- Back to the Depths!
 					qg(40896, qa(25768,  {  -- Bombs Away: Mirkfallon Post!
 						i(57435),
 						i(57436),
@@ -176,111 +710,37 @@ _.Zones =
 						i( 57464),
 						i(131457),
 					})),
---					qg(40900, qa(25767)),	-- Capturing Memories
-					qg(40879, qa(25652,  {  -- Commandeer That Balloon!
-						i(57420),
-						i(57418),
-						i(57419),
-					})),
---[[
-					qg( 3995, qh(26061)),	-- Da Voodoo: Ram Horns
-					qg( 3995, qh(26062)),	-- Da Voodoo: Resonite Crystal
-					qg( 3995, qh(26060)),	-- Da Voodoo: Stormer Heart
---]]					
 					qg(11858, qa(25851,  {  -- Dances with Grimtotem
 						i( 57468),
 						i( 57467),
 						i( 57466),
 						i(131449),
 					})),
---[[					
 					qg(41229, qa(25834)),	-- Death by Proxy
-					qg(40879, qa(25642)),	-- Don't Look Them in the Eyes
 					qg(11858, qa(25848)),	-- Downfall
-					qg(40907, qh(26026)),	-- Dream of a Better Tomorrow
-					qg(40903, qh(26011)),	-- Enemy of the Horde: Marshal Paltrow
-					qg(41023, qh(26059)),	-- Eyes and Ears: Malaka'jin
 					qg(40899, qa(25769)),	-- Fallowmere Beckons
-					qg( 3411, qh(26064)),	-- Fight On Their Stomachs
-					qg(42033, qh(26077)),	-- Final Delivery
-					qg(40896, qa(25662)),	-- Free Our Sisters
 					qg(41233, qa(25875)),	-- Gnome on the Inside
 					qg(11858, qa(25847)),	-- Grimtotem Supremacy
 					qg(41229, qa(25846)),	-- Grundig Darkcloud, Chieftain of the Grimtotem
 					qg(41487, qa(25938)),	-- Help for Desolace (QG in Stonetalon Mountains)
 					qg(41638, qa(25935)),	-- Hungry Pups
-					qg(41991, qh(26045)),	-- I Got Your Parts Right Here...
-					qg(40897, qa(25739)),	-- If the Horde Don't Get You...
-					n(40905, {	-- Windshear Overseer
-						i(55181, {	-- Illegible Orc Letter
-							qa(25647),	-- Illegible Orc Letter
-						}),
-					}),
-					qg(40902, qh(26058)),	-- In Defense of Krom'gar Fortress
-					qg(42039, qh(26099)),	-- Is This Justice?
---]]					
 					qg(41277, qa(25808,  {  -- Is This Thing On?
 						i(57447),
 						i(57446),
 						i(57445),
 						i(57444),
 					})),
---[[					
 					qg(41434, qa(25876)),	-- It's Up There!
-					qg( 3995, qh(26067)),	-- Jin'Zil's Blessing
-					qg(40908, qa(25673)),	-- Just Ask Alice
---]]					
-					qg(42023, qh(26068,  {  -- Kobold Fury!
-						i( 57507),
-						i( 57506),
-						i( 57508),
-						i(131476),
-					})),
---[[					
-					qg(34341, qh(26004)),	-- Krom'gar Fortress
 					qg(41482, qa(25891)),	-- Last Ditch Effort
 					qg(41282, qa(25809)),	-- Leave No Man Behind!
-					qg(40926, qh(26003)),	-- Lessons from the Lost Isles
-					qg(41023, qh(26101)),	-- Might Makes Right
-					qg(42028, qh(28084)),	-- Might of the Krom'gar
-					qg(40879, qa(25649)),	-- Minx'll Fix It
-					qg(40907, qh(26028)),	-- Mr. D's Wild Ride
-					qg(40908, qa(25728)),	-- Mr. P's Wild Ride
---]]					
 					qg(41434, qa(25877,  {  -- No Time for Goodbyes!
 						i( 57440),
 						i( 57439),
 						i( 57438),
 						i(131453),
 					})),
---[[					
-					qg(42039, qh(26134)),	-- Nothing Left for You Here
-					qg( 3995, qh(26069)),	-- Nura Pathfinder
-					n(41937, {	-- Marshal Paltrow
-						i(56474, {	-- Orders from Base Camp
-							qh(26016),	-- Orders from Base Camp
-						}),
-					}),
-					qg(40881, qa(25650)),	-- Orders from High Command
-					qg(40898, qa(25741)),	-- Preparations for the Future
-					qg(42039, qh(26097)),	-- Proof of Lies
 					qg(41488, qa(25913)),	-- Putting Them to Rest
-					qg(42023, qh(26066)),	-- Reinforcements...
-					qg(41023, qh(26020)),	-- Report to Bombgutz
---]]					
-					qg(39256, qa(25615, {	-- Return to Stardust 
-						i( 57415),
-						i( 57416),
-						i( 57417),
-						i(131877),
-					})),
-					qg(39256, qa(25669,  {  -- Rumble in the Lumber... Mill
-						i( 57432),
-						i( 57433),
-						i( 57431),
-						i(131880),
-					})),
---					qg(41071, qa(25844)),	-- Sating the Savage Beast					
+					qg(41071, qa(25844)),	-- Sating the Savage Beast					
 					qg(41278, qa(25889,  {  -- Save the Children!
 						i( 57460),
 						i( 57459),
@@ -292,7 +752,6 @@ _.Zones =
 						i( 57451),
 						i(131454),
 					})),
---					qg(41023, qh(26009)),	-- Seek and Destroy
 					qg(41486, qa(25912,  {  -- Seen Better Days
 						i( 57457),
 						i( 57456),
@@ -303,57 +762,16 @@ _.Zones =
 					qg(41276, qa(25811,  {  -- Shuttin Her Down
 						i(57443),
 					})),
-					qg(41991, qh(26048,  {  -- Spare Parts Up In Here!
-						i( 57491),
-						i( 57490),
-						i(131472),
-					})),
-					qg(42033, qh(26076,  {  -- Spy Infestation
-						i(57499),
-						i(57498),
-					})),
---[[					
 					qg(40897, qa(25765)),	-- Tell 'Em Koko Sent You
 					qg(41350, qa(25845)),	-- Terms of Service
 					qg(41482, qa(25925)),	-- Thal'darah's Vengeance
 					qg(41229, qa(25793)),	-- The Deep Reaches
-					qg(42047, qh(26100)),	-- The General is Dead
 					qg(41441, qa(25879)),	-- The Lumbering Oaf Problem
-					qg(34341, qh(26001)),	-- The Missing Blastgineer
-					qg(39256, qa(25614)),	-- The Only Way Down is in a Body Bag
---]]					
-					qg(11821, qh(26063,  {  -- The Queen and Her Court
-						i(57493),
-						i(57492),
-					})),
---[[					
-					qg(42033, qh(26075)),	-- The Turd Problem
 					qg(41229, qa(25823)),	-- The Unrelenting Horde
 					qg(41277, qa(25806)),	-- They Put the Assass in... Never Mind
 					qg(40896, qa(25671)),	-- Thinning the Horde
---]]					
-					qg(42050, qh(26082,  {  -- To Battlescar!
-						i(57497),
-						i(57496),
-						i(57495),
-						i(57494),
-					})),
-					qg(42106, qh(26115,  {  -- To Be Horde...
-						i( 57512),
-						i( 57511),
-						i( 57510),
-						i(131486),
-					})),
---[[					
 					qg(41233, qa(25880)),	-- Warn Master Thal'darah
-					qg(40902, qh(26044)),	-- Where Are the Parts?
---]]					
-					qg(40973, qa(25646,  {  -- Windshear Mine Cleanup
-						i( 57422),
-						i( 57423),
-						i(131878),
-					})),
---					qg(41664, qa(25934)),	-- World First: Gnomegen
+					qg(41664, qa(25934)),	-- World First: Gnomegen
 				}),
 				n(-16, { -- Rares	
 					n(50812, { 		-- Arae
