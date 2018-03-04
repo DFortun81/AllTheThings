@@ -443,7 +443,7 @@ _.Zones =
 					qg(40894, qa(25613, {	-- Do Yourself a Favor
 						["groups"] = {
 						},
-						["sourceQuestID"] = {13913, 25607, 13979},
+						["sourceQuestID"] = {13913, 25607},
 					})),
 					qg(33187, qa(13594, {	-- Don't Forget the Horde (No Prereq)
 						["groups"] = {
