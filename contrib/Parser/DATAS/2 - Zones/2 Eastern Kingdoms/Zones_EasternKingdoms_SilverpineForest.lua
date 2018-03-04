@@ -893,6 +893,13 @@ _.Zones =
 							["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
 							["sourceQuestID"] = { 27405 },	-- Fall Back!
 						}),
+						ql(q(30093, {	-- Assassinate Creed
+							["groups"] = {
+							},
+							["qg"] = 57770,	-- Zazzo Twinklefingers
+							["classes"] = { 4 },	-- Rogue
+							["sourceQuestID"] = { 30092 },	-- Our Man in Gilneas
+						})),
 						qh(27349, {	-- Break in Communications: Dreadwatch Outpost
 							["groups"] = {
 							},
@@ -951,6 +958,15 @@ _.Zones =
 							},
 							["sourceQuestID"] = { 27405 },	-- Fall Back!
 						}),
+						ql(q(30106, {	-- The Deed is Done
+							["groups"] = {
+								i(77945),	-- Fear
+								i(77946),	-- Vengeance
+							},
+							["qg"] = 57770,	-- Zazzo Twinklefingers
+							["classes"] = { 4 },	-- Rogue
+							["sourceQuestID"] = { 30093 },	-- Assassinate Creed
+						})),						
 						qh(27345, {	-- The F.C.D.
 							["groups"] = {
 							},
