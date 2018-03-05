@@ -255,9 +255,9 @@ _.Zones =
 							i(59591),	-- Shield of the Barrens
 							i(59592),	-- Suppressor's Wand
 							i(59593),	-- Deathgate Shield
+						},
 						["qg"] = 3389,	-- Regthar Deathgate
 						["sourceQuestID"] = { 852 },	-- Hezrul Bloodmark
-						},
 					}),
 					qh(13975, {	-- Crossroads Caravan Delivery
 						["groups"] = {

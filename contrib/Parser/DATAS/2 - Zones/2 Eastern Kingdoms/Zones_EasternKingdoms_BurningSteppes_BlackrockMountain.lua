@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(29, {		-- Burning Steppes
 			["groups"] = {							
-				n(-3, { 	-- Holidays										
+				n( -3, { 	-- Holidays										
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -121,7 +121,169 @@ _.Zones =
 					qg(66520, q( 31914)),	-- Durin Darkhammer
 				}),
 				n(-17, { 	-- Quests
+					
+				
+				
+					qh(28420, {	-- A Future Project
+						["groups"] = {
+						},
+						["qg"] = 48559,	-- Ariok
+						["sourceQuestID"] = { 28418 },	-- Burning Vengeance
+					}),
+				
+				
+					qh(28427, {	-- A Needle in a Hellhole
+						["groups"] = {
+						},
+						["qg"] = 48568,	-- Eitrigg
+						["sourceQuestID"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
+					}),
+				
+				
+					qh(28431, {	-- A Perfect Costume
+						["groups"] = {
+						},
+						["qg"] = 48001,	-- Thelaron Direneedle
+						["races"] = { 8, 10, 27 },	-- Troll, Blood Elf, Nightborne
+						["sourceQuestID"] = { 28427 },	-- A Needle in a Hellhole
+					}),
+				
+				
+					qh(28418, {	-- Burning Vengeance
+						["groups"] = {
+						},
+						["qg"] = 48559,	-- Ariok
+						["breadcrumbQuestID"] = { 28667 },	-- Warchief's Command: Burning Steppes!
+					}),
+				
+				
+					qh(28426, {	-- Chiselgrip, the Heart of the Steppes
+						["groups"] = {
+							i(64514),	-- Oreknuckle Gun
+							i(64513),	-- Unburdened Pauldrons
+							i(64512),	-- Black Tooth Helm
+							i(64511),	-- Vest of Welcome
+						},
+						["qg"] = 48559,	-- Ariok
+						["sourceQuestID"] = { 28425 },	-- Return to Ariok
+					}),
+				
+				
+					qh(28417, { -- Done Nothing Wrong
+						["groups"] = {
+							i( 64499),	-- Hatchlings' Protector
+							i( 64498),	-- Whelp Keeper's Staff
+							i(156964),	-- Clutch Rearrangement Tool
+						},
+						["qg"] = 47779,	-- Mouton Flamestar
+					}),
+				
+				
+					qh(28433, {	-- Grunt Work
+						["groups"] = {
+						},
+						["qg"] = 48085,	-- Quartermaster Kaoshin
+						["sourceQuestID"] = { 28432 },	-- Into the Black Tooth Hovel
+					}),
+				
+				
+					qh(28432, {	-- Into the Black Tooth Hovel *****
+						["groups"] = {
+						},
+						["qg"] = 48568,	-- Eitrigg
+						["sourceQuestID"] = { 28431 },	-- A Perfect Costume *****
+					}),
+				
+				
+					qh(28421, { -- Mud Hunter
+						["groups"] = {
+							i(64506),	-- Obsidian-Flecked Cowl
+						},
+						["qg"] = 48559,	-- Ariok
+						["sourceQuestID"] = { 28418 },	-- Burning Vengeance						
+					}),
+				
+				
+					q( 28225, {	-- Prove Yer Allegiance
+						["groups"] = {
+						},
+						["qg"] = 48033,	-- Stebben Oreknuckle
+						["sourceQuestID"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
+					}),
+				
+				
+					qh(28425, {	-- Return to Ariok
+						["groups"] = {
+						},
+						["qg"] = 14437,	-- Gorzeeki Wildeyes
+						["sourceQuestID"] = { 28424, 28423 },	-- Shadow Boxing & Warlocks Have the Neatest Stuff
+					}),
+				
+				
+					q( 28226, {	-- Scrapped Golems
+						["groups"] = {
+						},
+						["qg"] = 48033,	-- Stebben Oreknuckle
+						["sourceQuestID"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
+					}),
+				
+				
+					qh(28424, {	-- Shadow Boxing
+						["groups"] = {
+						},
+						["qg"] = 14437,	-- Gorzeeki Wildeyes
+						["sourceQuestID"] = { 28422 },	-- The Sand the Cider, and the Orb
+					}),
+				
+				
+					qh(28419, { -- Stocking Up
+						["groups"] = {
+							i( 64502),	-- Sharp Scorpid Barb
+							i(156965),	-- Enchanted Scorpid Tail
+						},
+						["qg"] = 48559,	-- Ariok
+						["sourceQuestID"] = { 28418 },	-- Burning Vengeance
+					}),
+				
+				
+					qh(28434, {	-- Strategic Cuts
+						["groups"] = {
+						},
+						["sourceQuestID"] = { 28433 },	-- Grunt Work (procs after accepting)
+					}),
+				
+				
+					qh(28422, {	-- The Sand, the Cider, and the Orb
+						["groups"] = {
+						},
+						["qg"] = 48559,	-- Ariok
+						["sourceQuestID"] = { 28420, 28421, 28419 },	-- A Future Project, Mud Hunter, & Stocking Up
+					}),
+				
+				
+					qh(28423, {	-- Warlocks Have the Neatest Stuff
+						["groups"] = {
+						},
+						["qg"] = 14437,	-- Gorzeeki Wildeyes
+						["sourceQuestID"] = { 28422 },	-- The Sand, the Cider, and the Orb
+					}),
+				
+				
+				
 --[[				
+						["groups"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuestID"] = {  },	-- 
+					}),
+--]]					
+				
+				
+				
+				
+				
+				
+
 					qg(48306, qa(28316)),	-- A Deal With a Dragon (secondary QG ID 48346)
 					qg(48565, qh(28448)),	-- A Deal With a Dragon (secondary QG ID 48567)
 					qg(48569, qh(28451)),	-- A Delivery for Neeralak
@@ -130,7 +292,6 @@ _.Zones =
 					qg(48569, qh(28450)),	-- A Delivery for Thorg'izog
 					qg(48569, qh(28452)),	-- A Delivery for Xi'lun
 					qg(48307, qa(28319)),	-- A Delivery for Xi'lun
---]]					
 					i(142344, {	-- Broken Axe Blade
 						["groups"] = {
 							q(44926, {	-- A Familiar Axe to Grind
@@ -144,12 +305,9 @@ _.Zones =
 						["requiredSkill"] = 164, -- Blacksmithing
 						["description"] = "The Broken Axe Blade is dropped by the mobs in and around Blackrock Stronghold in Burning Steppes.|r",
 					}),					
---[[					
 					qg(47811, qa(28178)),	-- A Future Project
-					qg(48559, qh(28420)),	-- A Future Project
 					qg(48307, qa(28313)),	-- A Heap of Delicious Worg
 					qg(48569, qh(28445)),	-- A Heap of Delicious Worg
-					qg(48568, qh(28427)),	-- A Needle in a Hellhole
 					qg(48109, qa(28254)),	-- A Needle in a Hellhole
 					qg(48001, qa(28205, {	-- A Perfect Costume
 						["groups"] = {
@@ -160,11 +318,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["races"] = {2,5},
-					})),
-					qg(48001, qh(28431, {	-- A Perfect Costume
-						["groups"] = {
-						},
-						["races"] = {8,10},
 					})),
 					qg(48001, qa(28202, {	-- A Perfect Costume
 						["groups"] = {
@@ -209,14 +362,6 @@ _.Zones =
 					qg(48565, qh(28446)),	-- Blood Tour (secondary QG ID 48567)
 					qg(47811, qa(28174)),	-- Burning Vengeance (for players who did not complete Redridge Keeshan questline)
 					qg(47811, qa(28416)),	-- Burning Vengeance (for players who completed Redridge Keeshan questline)
-					qg(48559, qh(28418)),	-- Burning Vengeance
---]]					
-					qg(48559, qh(28426, { -- Chiselgrip, the Heart of the Steppes
-						i(64514),
-						i(64513),
-						i(64512),
-						i(64511),
-					})),
 					qg(47811, qa(28184, { -- Chiselgrip, the Heart of the Steppes
 						i(64510),
 						i(64509),
@@ -227,15 +372,8 @@ _.Zones =
 						i(64496),
 						i(64495),
 					})),
-					qg(47779, qh(28417, { -- Done Nothing Wrong
-						i(64499),
-						i(64498),
-						i(156964), -- Clutch Rearrangement Tool
-					})),
---[[					
 					qg(48306, qa(28315)),	-- Draconic Vanguard (secondary QG ID 48346)
 					qg(48565, qh(28447)),	-- Draconic Vanguard (secondary QG ID 48567)
---]]					
 					qg(48110, qa(28286, { -- Enough Damage For One Day
 						i(64537),
 						i(64536),
@@ -248,7 +386,6 @@ _.Zones =
 						i(64540),
 						i(64539),
 					})),
---[[					
 					qg(48568, qh(28442)),	-- Flame Crest
 					qdg(qg( 9563, qa(27469))),	-- Friends on The Other Side
 					qdg(qg(56899, qh(27469))),	-- Friends on The Other Side
@@ -256,23 +393,18 @@ _.Zones =
 					qg(48109, qa(28265)),	-- General Thorg'izog
 					qg(48307, qa(28321)),	-- Glory Amidst Chaos
 					qg(48569, qh(28455)),	-- Glory Amidst Chaos
---]]					
 					qg(48033, q(28227, { -- Golem Training
 						i(64524),
 						i(64523),
 						i(64522),
 						i(64521),
 					})),
---[[					
-					qg(48085, qh(28433)),	-- Grunt Work
 					qg(48085, qa(28245)),	-- Grunt Work
 					qg(48133, qa(28278)),	-- I Am the Law and I Am the Lash
 					qg(48133, qh(28439)),	-- I Am the Law and I Am the Lash
 					qg(48109, qa(28239)),	-- Into the Black Tooth Hovel
-					qg(48568, qh(28432)),	-- Into the Black Tooth Hovel
 					qg(48307, qa(28312)),	-- Latent Demons of the Land
 					qg(48569, qh(28444)),	-- Latent Demons of the Land
---]]					
 					qa(28327, { -- Locked and Loaded
 						["groups"] = {
 							i(64563),
@@ -291,16 +423,11 @@ _.Zones =
 						},
 						["description"] = "This quest is automatically offered after finishing the three 'A Delivery for...' quests.",
 					}),
---[[					
 					qg(48110, qa(28310)),	-- Morgan's Vigil
 					qg(14625, qa(28514)),	-- Mouton Flamestar
 					qg(14625, qh(28515)),	-- Mouton Flamestar
---]]					
 					qg(47811, qa(28179, { -- Mud Hunter
 						i(64505),
-					})),
-					qg(48559, qh(28421, { -- Mud Hunter
-						i(64506),
 					})),
 					qg(10260, qh(28491, { -- Not Fireflies, Flameflies
 						i(64558),
@@ -326,35 +453,20 @@ _.Zones =
 						},
 						["description"] = "This quest is automatically offered after finishing 'A Deal with a Dragon.'",
 					}),
---[[					
-					qg(48033, q( 28225)),	-- Prove Yer Allegiance
-					qg(14437, qh(28425)),	-- Return to Ariok
 					qg(14437, qa(28183)),	-- Return to Keeshan
-					qg(48033, q( 28226)),	-- Scrapped Golems
---]]					
 					qg( 9177, qa(28415, { -- SEVEN! YUP!
 						i(64554),
 						i(64553),
 						i(64552),
 						i(66080), -- PET! Tiny Flamefly
 					})),
---[[					
-					qg(14437, qh(28424)),	-- Shadow Boxing
 					qg(14437, qa(28182)),	-- Shadow Boxing
---]]					
 					qg(47811, qa(28177, { -- Stocking Up
 						i(64501),
 						i(157011), -- Envenomed Scorpid Tail
 						i(156965), -- Enchanted Scorpid Tail 
 					})),
-					qg(48559, qh(28419, { -- Stocking Up
-						i(64502),
-						i(156965), -- Enchanted Scorpid Tail
-					})),
---[[					
-					qg(48568, qh(28434)),	-- Strategic Cuts
 					qg(48110, qa(28246)),	-- Strategic Cuts
---]]					
 					qg(48110, qa(28253, { -- Taking the Horn For Ourselves
 						i(64517),
 						i(64516),
@@ -365,14 +477,11 @@ _.Zones =
 						i(64519),
 						i(64518),
 					})),
---[[					
 					qg(10260, qh(28570)),	-- The Bogpaddle Bullet
 					qg( 9177, qa(28569)),	-- The Bogpaddle Bullet
 					qg(48085, qh(28435)),	-- The Kodocaller's Horn
 					qg(48085, qa(28252)),	-- The Kodocaller's Horn
 					qg(47811, qa(28180)),	-- The Sand, the Cider, and the Orb
-					qg(48559, qh(28422)),	-- The Sand, the Cider, and the Orb
---]]					
 					qg(48307, qa(28322, { -- The Spoils of War
 						i(64574),
 						i(64573),
@@ -397,10 +506,7 @@ _.Zones =
 						i(64526),
 						i(64525),
 					})),
---[[					
 					qg(14437, qa(28181)),	-- Warlocks Have the Neatest Stuff
-					qg(14437, qh(28423)),	-- Warlocks Have the Neatest Stuff
---]]					
 				}),
 				n(-16, { 	-- Rares	
 					n(50725, { 	-- Azelisk
@@ -879,7 +985,7 @@ _.Zones =
 						dr(01.0, i( 10072)),	-- Righteous Gloves					
 					}), 
 				}),
-				n(-2, {	-- Vendors
+				n( -2, {	-- Vendors
 					n(115805, {	-- Hoddruc Bladebender
 						["groups"]	= {
 							i(142346, {	-- Plans: Bleakwood Hew
