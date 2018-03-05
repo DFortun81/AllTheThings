@@ -767,7 +767,7 @@ END OF MICRO-HOLIDAY --]]
 								["groups"] = {
 									dr(11, i(156851)),	-- Silithid Mini-Tank
 								},
-								["questID"] = 50225,
+								["questID"] = 50255,
 							}),
 							n(132580, {	-- Ssinkrix
 								["groups"] = {
