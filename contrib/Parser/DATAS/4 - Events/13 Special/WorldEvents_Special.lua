@@ -51,57 +51,57 @@ _.WorldEvents =
 						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-60 range.|r",		
 						["Lvl"] = 15,		
 					}),	
-			--[[
-			   i(51999, { -- Satchel of Helpful Goods 15-25
-				["groups"] = {
-				   
-				},
-				["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-25 range.|r",
-			   }),
-			   i(52000, { -- Satchel of Helpful Goods 24-34
-				["groups"] = {
-				   i(51973), -- Enumerated Handwraps
-				   i(51965), -- Vigorous Handguards
-				   --i(51980), -- Earthbound Handgrips; Probably unobtainable.
-				   i(143581), -- Earthbound Grips
-				},
-				["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 24-34 range.|r",
-			   }),
-			   i(67248, { -- Satchel of Helpful Goods 35-39
-				["groups"] = {
-				   i(51974), -- Enumerated Shoulderpads
-				   i(51966), -- Vigorous Spaulders;     These two share name, possible
-				   i(51998), -- Vigorous Spaulders;      one is now unobtainable.
-				   i(51976), -- Earthbound Shoulderguards
-				   i(51997), -- Stalwart Spaulders
-				   i(143583), -- Stalwart Grips
-				   i(51984), -- Stalwart Shoulderpads
-				},
-				["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 35-39 range.|r",
-			   }),
-			   i(52001, { -- Satchel of Helpful Goods 40-45
-				["groups"] = {
-				   i(51974), -- Enumerated Shoulderpads
-				   i(51966), -- Vigorous Spaulders
-				   i(51976), -- Earthbound Shoulderguards
-				   i(51984), -- Stalwart Shoulderpads
-				},
-				["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 40-45 range.|r",
-			   }),
-			   i(52002, { -- Satchel of Helpful Goods 46-55
-				["groups"] = {
-				   i(51972), -- Enumerated Bracers
-				   i(51967), -- Enumerated Sandals
-				   i(51962), -- Vigorous Bracers
-				   i(51963), -- Vigorous Stompers
-				   i(51982), -- Earthbound Boots
-				   i(51981), -- Earthbound Wristguards
-				   i(51989), -- Stalwart Bands
-				   i(51990), -- Stalwart Treads
-				},
-				["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 46-55 range.|r",
-			   }),
-			   i(52003, { -- Satchel of Helpful Goods 56-60
+			
+					un(2, i(51999, { -- Satchel of Helpful Goods 15-25
+						["groups"] = {
+						   
+						},
+						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-25 range.|r",
+					   })),
+					un(2, i(52000, { -- Satchel of Helpful Goods 24-34
+						["groups"] = {
+						   i(51973), -- Enumerated Handwraps
+						   i(51965), -- Vigorous Handguards
+						   --i(51980), -- Earthbound Handgrips; Probably unobtainable.
+						   i(143581), -- Earthbound Grips
+						},
+						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 24-34 range.|r",
+					   })),
+					un(2, i(67248, { -- Satchel of Helpful Goods 35-39
+						["groups"] = {
+						   i(51974), -- Enumerated Shoulderpads
+						   i(51966), -- Vigorous Spaulders;     These two share name, possible
+						   i(51998), -- Vigorous Spaulders;      one is now unobtainable.
+						   i(51976), -- Earthbound Shoulderguards
+						   i(51997), -- Stalwart Spaulders
+						   i(143583), -- Stalwart Grips
+						   i(51984), -- Stalwart Shoulderpads
+						},
+						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 35-39 range.|r",
+					   })),
+					un(2, i(52001, { -- Satchel of Helpful Goods 40-45
+						["groups"] = {
+						   i(51974), -- Enumerated Shoulderpads
+						   i(51966), -- Vigorous Spaulders
+						   i(51976), -- Earthbound Shoulderguards
+						   i(51984), -- Stalwart Shoulderpads
+						},
+						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 40-45 range.|r",
+					   })),
+					un(2, i(52002, { -- Satchel of Helpful Goods 46-55
+						["groups"] = {
+						   i(51972), -- Enumerated Bracers
+						   i(51967), -- Enumerated Sandals
+						   i(51962), -- Vigorous Bracers
+						   i(51963), -- Vigorous Stompers
+						   i(51982), -- Earthbound Boots
+						   i(51981), -- Earthbound Wristguards
+						   i(51989), -- Stalwart Bands
+						   i(51990), -- Stalwart Treads
+						},
+						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 46-55 range.|r",
+					   }),
+			  un(2,  i(52003, { -- Satchel of Helpful Goods 56-60
 				["groups"] = {
 				   i(51993), -- Turbulent Cloak
 				   i(51971), -- Enumerated Belt
@@ -110,7 +110,7 @@ _.WorldEvents =
 				   i(51985), -- Stalwart Belt
 				},
 				["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 56-60 range.|r",
-			   }),
+			   })),
 			   i(52004, { -- Satchel of Helpful Goods 60-64
 				["groups"] = {
 				   i(51970), -- Enumerated Gloves
@@ -270,7 +270,6 @@ _.WorldEvents =
 				["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.|r", -- Again, saying 89 because at level 90 you can no longer queue for this.
 			   }),
 			},
-				--]]
 				},
 				["icon"] = "Interface\\Icons\\inv_misc_bag_15",
 			}),
