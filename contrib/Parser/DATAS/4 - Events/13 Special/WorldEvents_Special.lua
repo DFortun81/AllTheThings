@@ -153,7 +153,7 @@ _.WorldEvents =
 				   i(112356), -- Ice-Encrusted Plate Leggings
 				   i(112354), -- Ice-Encrusted Plate Legguards
 				},
-				["description"] = "|cff66ccffRewarded for completing a random Wratch of the Lich King dungeon in the level 70-74 range.|r",
+				["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 70-74 range.|r",
 			   }),
 			   i(114641, { -- Icy Satchel of Helpful Goods 75-80
 				["groups"] = {
@@ -168,7 +168,7 @@ _.WorldEvents =
 				   i(113692), -- Ice-Encrusted Gauntlets
 				   i(113691), -- Ice-Encrusted Gloves
 				},
-				["description"] = "|cff66ccffRewarded for completing a random Wratch of the Lich King dungeon in the level 75-80 range.|r",
+				["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.|r",
 			   }),
 			   i(114648, { -- Scorched Satchel of Helpful Goods 80-83
 				["groups"] = {
