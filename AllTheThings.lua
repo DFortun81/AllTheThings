@@ -1700,8 +1700,14 @@ local function RefreshSavesCoroutine()
 			end
 			
 			-- Create the lock for this difficulty
-			local lock = { ["id"] = id, ["reset"] = reset, ["encounters"] = {}};
-			locks[difficulty] = lock;
+			local lock = locks[difficulty];
+			if not lock then
+				lock = { ["id"] = id, ["reset"] = reset, ["encounters"] = {}};
+				locks[difficulty] = lock;
+			else
+				lock.id = id;
+				lock.reset = reset;
+			end
 			
 			-- Create the pseudo "shared" lock
 			local shared = locks["shared"];
@@ -1724,7 +1730,11 @@ local function RefreshSavesCoroutine()
 				-- Check Encounter locks
 				for encounterIter=1,numEncounters do
 					local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-					table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+					if not lock.encounters[encounterIter] then
+						table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+					elseif isKilled then
+						lock.encounters[encounterIter].isKilled = true;
+					end
 					if not shared.encounters[encounterIter] then
 						table.insert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
 					elseif isKilled then
