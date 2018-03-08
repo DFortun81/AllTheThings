@@ -621,7 +621,7 @@ _.Zones =
 						["groups"] = {	
 							dr(35, i(111534)),	-- The Bone Crawler's Carapace 
 						},
-						["questID"] = 37361,						
+						["questID"] = 34361,						
 					}),
 					o(220641, { 	-- Thunderlord Cache
 						["groups"] = {
