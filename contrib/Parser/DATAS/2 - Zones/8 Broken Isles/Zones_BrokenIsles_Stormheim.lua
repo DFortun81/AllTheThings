@@ -6,7 +6,7 @@ _.Zones =
 	m(1007, { 	-- The Broken Isles
 		m(1017, {	-- Stormheim
 			["groups"] = {				
-				n(-7, { 	-- World Bosses
+				n(-7, { -- World Bosses
 					["groups"] = {
 						cr(107544, e(1749, { -- Nithogg 
 							["groups"] = {
@@ -108,7 +108,7 @@ _.Zones =
 					}),						
 				}),				
 --]]				
-				n(-25, { 	-- Pet Battle
+				n(-25, { -- Pet Battle
 					p(1708), 	-- Albatross Chick
 					p(1743), 	-- Black-Footed Fox Kit
 					p(380), 	-- Bucktooth Flapper
@@ -140,160 +140,534 @@ _.Zones =
 						["description"] = "1. Buy Pungent Vrykul Gamalost from Steward Dayton in Stormheim.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy new Direbeak Hatchling pet!|r",
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(169, { -- Emissary Quests
+					q(42234, { -- The Valarjar
+						i(157824, { -- Valarjar Cache
+							["groups"] = {
+								n(-322, { -- Cloak
+									i(134202), -- Stormsky Cloak
+								}),
+								n(-3242, { -- Bonespeaker Set
+									["groups"] = {
+										i(134216),	-- Bonespeaker Cowl
+										i(134221),	-- Bonespeaker Mantle
+										i(134219),	-- Bonespeaker Robes
+										i(134222),	-- Bonespeaker Bracers
+										i(134217),	-- Bonespeaker Gloves
+										i(134215),	-- Bonespeaker Cinch
+										i(134218),	-- Bonespeaker Leggings
+										i(134220),	-- Bonespeaker Sandals
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
+								}),
+								n(-3266, { -- Biornskin Set
+									["groups"] = {
+										i(134196),	-- Biornskin Hood
+										i(134198),	-- Biornskin Shoulderpads
+										i(134197),	-- Biornskin Vest
+										i(134192),	-- Biornskin Bracer
+										i(134195),	-- Biornskin Gloves
+										i(134199),	-- Biornskin Belt
+										i(134194),	-- Biornskin Leggings
+										i(134193),	-- Biornskin Moccasins
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+								}),
+								n(-3278, { -- Tideskorn Set
+									["groups"] = {
+										i(134211),	-- Tideskorn Coif
+										i(134213),	-- Tideskorn Mantle
+										i(134214),	-- Tideskorn Vest
+										i(134208),	-- Tideskorn Bracers
+										i(134209),	-- Tideskorn Gauntlets
+										i(134207),	-- Tideskorn Cinch
+										i(134212),	-- Tideskorn Leggings
+										i(134210),	-- Tideskorn Sabatons
+									},
+									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
+								}),
+								n(-3302, { -- Skoldiir Set
+									["groups"] = {
+										i(134182),	-- Skoldiir Helm
+										i(134184),	-- Skoldiir Shoulderguards
+										i(134179),	-- Skoldiir Breastplate
+										i(134186),	-- Skoldiir Bracers
+										i(134180),	-- Skoldiir Gauntlets
+										i(134181),	-- Skoldiir Waistplate
+										i(134183),	-- Skoldiir Legguards
+										i(134185),	-- Skoldiir Sabatons
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+								}),
+								n(-3309, { -- Wardbreaker Set
+									["groups"] = {
+										i(136728),	-- Wardbreaker Helm
+										i(136730),	-- Wardbreaker Pauldrons
+										i(136725),	-- Wardbreaker Chestplate
+										i(136732),	-- Wardbreaker Vambraces
+										i(136726),	-- Wardbreaker Gauntlets
+										i(136727),	-- Wardbreaker Girdle
+										i(136729),	-- Wardbreaker Legplates
+										i(136731),	-- Wardbreaker Warboots
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+								}),
+							},
+						}),
+						un(2, i(154905, { -- Valarjar Cache
+							["groups"] = {
+								n(-322, { -- Cloak
+									i(134202), -- Stormsky Cloak
+								}),
+								n(-3242, { -- Bonespeaker Set
+									["groups"] = {
+										i(134216),	-- Bonespeaker Cowl
+										i(134221),	-- Bonespeaker Mantle
+										i(134219),	-- Bonespeaker Robes
+										i(134222),	-- Bonespeaker Bracers
+										i(134217),	-- Bonespeaker Gloves
+										i(134215),	-- Bonespeaker Cinch
+										i(134218),	-- Bonespeaker Leggings
+										i(134220),	-- Bonespeaker Sandals
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
+								}),
+								n(-3266, { -- Biornskin Set
+									["groups"] = {
+										i(134196),	-- Biornskin Hood
+										i(134198),	-- Biornskin Shoulderpads
+										i(134197),	-- Biornskin Vest
+										i(134192),	-- Biornskin Bracer
+										i(134195),	-- Biornskin Gloves
+										i(134199),	-- Biornskin Belt
+										i(134194),	-- Biornskin Leggings
+										i(134193),	-- Biornskin Moccasins
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+								}),
+								n(-3278, { -- Tideskorn Set
+									["groups"] = {
+										i(134211),	-- Tideskorn Coif
+										i(134213),	-- Tideskorn Mantle
+										i(134214),	-- Tideskorn Vest
+										i(134208),	-- Tideskorn Bracers
+										i(134209),	-- Tideskorn Gauntlets
+										i(134207),	-- Tideskorn Cinch
+										i(134212),	-- Tideskorn Leggings
+										i(134210),	-- Tideskorn Sabatons
+									},
+									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
+								}),
+								n(-3302, { -- Skoldiir Set
+									["groups"] = {
+										i(134182),	-- Skoldiir Helm
+										i(134184),	-- Skoldiir Shoulderguards
+										i(134179),	-- Skoldiir Breastplate
+										i(134186),	-- Skoldiir Bracers
+										i(134180),	-- Skoldiir Gauntlets
+										i(134181),	-- Skoldiir Waistplate
+										i(134183),	-- Skoldiir Legguards
+										i(134185),	-- Skoldiir Sabatons
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+								}),
+								n(-3309, { -- Wardbreaker Set
+									["groups"] = {
+										i(136728),	-- Wardbreaker Helm
+										i(136730),	-- Wardbreaker Pauldrons
+										i(136725),	-- Wardbreaker Chestplate
+										i(136732),	-- Wardbreaker Vambraces
+										i(136726),	-- Wardbreaker Gauntlets
+										i(136727),	-- Wardbreaker Girdle
+										i(136729),	-- Wardbreaker Legplates
+										i(136731),	-- Wardbreaker Warboots
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+								}),
+							},
+						})),
+						un(2, i(151466, { -- Valarjar Cache
+							["groups"] = {
+								n(-322, { -- Cloak
+									i(134202), -- Stormsky Cloak
+								}),
+								n(-3242, { -- Bonespeaker Set
+									["groups"] = {
+										i(134216),	-- Bonespeaker Cowl
+										i(134221),	-- Bonespeaker Mantle
+										i(134219),	-- Bonespeaker Robes
+										i(134222),	-- Bonespeaker Bracers
+										i(134217),	-- Bonespeaker Gloves
+										i(134215),	-- Bonespeaker Cinch
+										i(134218),	-- Bonespeaker Leggings
+										i(134220),	-- Bonespeaker Sandals
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
+								}),
+								n(-3266, { -- Biornskin Set
+									["groups"] = {
+										i(134196),	-- Biornskin Hood
+										i(134198),	-- Biornskin Shoulderpads
+										i(134197),	-- Biornskin Vest
+										i(134192),	-- Biornskin Bracer
+										i(134195),	-- Biornskin Gloves
+										i(134199),	-- Biornskin Belt
+										i(134194),	-- Biornskin Leggings
+										i(134193),	-- Biornskin Moccasins
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+								}),
+								n(-3278, { -- Tideskorn Set
+									["groups"] = {
+										i(134211),	-- Tideskorn Coif
+										i(134213),	-- Tideskorn Mantle
+										i(134214),	-- Tideskorn Vest
+										i(134208),	-- Tideskorn Bracers
+										i(134209),	-- Tideskorn Gauntlets
+										i(134207),	-- Tideskorn Cinch
+										i(134212),	-- Tideskorn Leggings
+										i(134210),	-- Tideskorn Sabatons
+									},
+									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
+								}),
+								n(-3302, { -- Skoldiir Set
+									["groups"] = {
+										i(134182),	-- Skoldiir Helm
+										i(134184),	-- Skoldiir Shoulderguards
+										i(134179),	-- Skoldiir Breastplate
+										i(134186),	-- Skoldiir Bracers
+										i(134180),	-- Skoldiir Gauntlets
+										i(134181),	-- Skoldiir Waistplate
+										i(134183),	-- Skoldiir Legguards
+										i(134185),	-- Skoldiir Sabatons
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+								}),
+								n(-3309, { -- Wardbreaker Set
+									["groups"] = {
+										i(136728),	-- Wardbreaker Helm
+										i(136730),	-- Wardbreaker Pauldrons
+										i(136725),	-- Wardbreaker Chestplate
+										i(136732),	-- Wardbreaker Vambraces
+										i(136726),	-- Wardbreaker Gauntlets
+										i(136727),	-- Wardbreaker Girdle
+										i(136729),	-- Wardbreaker Legplates
+										i(136731),	-- Wardbreaker Warboots
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+								}),
+							},
+						})),
+						un(2, i(146749, { -- Valarjar Cache
+							["groups"] = {
+								n(-322, { -- Cloak
+									i(134202), -- Stormsky Cloak
+								}),
+								n(-3242, { -- Bonespeaker Set
+									["groups"] = {
+										i(134216),	-- Bonespeaker Cowl
+										i(134221),	-- Bonespeaker Mantle
+										i(134219),	-- Bonespeaker Robes
+										i(134222),	-- Bonespeaker Bracers
+										i(134217),	-- Bonespeaker Gloves
+										i(134215),	-- Bonespeaker Cinch
+										i(134218),	-- Bonespeaker Leggings
+										i(134220),	-- Bonespeaker Sandals
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
+								}),
+								n(-3266, { -- Biornskin Set
+									["groups"] = {
+										i(134196),	-- Biornskin Hood
+										i(134198),	-- Biornskin Shoulderpads
+										i(134197),	-- Biornskin Vest
+										i(134192),	-- Biornskin Bracer
+										i(134195),	-- Biornskin Gloves
+										i(134199),	-- Biornskin Belt
+										i(134194),	-- Biornskin Leggings
+										i(134193),	-- Biornskin Moccasins
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+								}),
+								n(-3278, { -- Tideskorn Set
+									["groups"] = {
+										i(134211),	-- Tideskorn Coif
+										i(134213),	-- Tideskorn Mantle
+										i(134214),	-- Tideskorn Vest
+										i(134208),	-- Tideskorn Bracers
+										i(134209),	-- Tideskorn Gauntlets
+										i(134207),	-- Tideskorn Cinch
+										i(134212),	-- Tideskorn Leggings
+										i(134210),	-- Tideskorn Sabatons
+									},
+									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
+								}),
+								n(-3302, { -- Skoldiir Set
+									["groups"] = {
+										i(134182),	-- Skoldiir Helm
+										i(134184),	-- Skoldiir Shoulderguards
+										i(134179),	-- Skoldiir Breastplate
+										i(134186),	-- Skoldiir Bracers
+										i(134180),	-- Skoldiir Gauntlets
+										i(134181),	-- Skoldiir Waistplate
+										i(134183),	-- Skoldiir Legguards
+										i(134185),	-- Skoldiir Sabatons
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+								}),
+								n(-3309, { -- Wardbreaker Set
+									["groups"] = {
+										i(136728),	-- Wardbreaker Helm
+										i(136730),	-- Wardbreaker Pauldrons
+										i(136725),	-- Wardbreaker Chestplate
+										i(136732),	-- Wardbreaker Vambraces
+										i(136726),	-- Wardbreaker Gauntlets
+										i(136727),	-- Wardbreaker Girdle
+										i(136729),	-- Wardbreaker Legplates
+										i(136731),	-- Wardbreaker Warboots
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+								}),
+							},
+						})),
+						un(2, i(137562, { -- Valarjar Cache
+							["groups"] = {
+								n(-322, { -- Cloak
+									i(134202), -- Stormsky Cloak
+								}),
+								n(-3242, { -- Bonespeaker Set
+									["groups"] = {
+										i(134216),	-- Bonespeaker Cowl
+										i(134221),	-- Bonespeaker Mantle
+										i(134219),	-- Bonespeaker Robes
+										i(134222),	-- Bonespeaker Bracers
+										i(134217),	-- Bonespeaker Gloves
+										i(134215),	-- Bonespeaker Cinch
+										i(134218),	-- Bonespeaker Leggings
+										i(134220),	-- Bonespeaker Sandals
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
+								}),
+								n(-3266, { -- Biornskin Set
+									["groups"] = {
+										i(134196),	-- Biornskin Hood
+										i(134198),	-- Biornskin Shoulderpads
+										i(134197),	-- Biornskin Vest
+										i(134192),	-- Biornskin Bracer
+										i(134195),	-- Biornskin Gloves
+										i(134199),	-- Biornskin Belt
+										i(134194),	-- Biornskin Leggings
+										i(134193),	-- Biornskin Moccasins
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+								}),
+								n(-3278, { -- Tideskorn Set
+									["groups"] = {
+										i(134211),	-- Tideskorn Coif
+										i(134213),	-- Tideskorn Mantle
+										i(134214),	-- Tideskorn Vest
+										i(134208),	-- Tideskorn Bracers
+										i(134209),	-- Tideskorn Gauntlets
+										i(134207),	-- Tideskorn Cinch
+										i(134212),	-- Tideskorn Leggings
+										i(134210),	-- Tideskorn Sabatons
+									},
+									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
+								}),
+								n(-3302, { -- Skoldiir Set
+									["groups"] = {
+										i(134182),	-- Skoldiir Helm
+										i(134184),	-- Skoldiir Shoulderguards
+										i(134179),	-- Skoldiir Breastplate
+										i(134186),	-- Skoldiir Bracers
+										i(134180),	-- Skoldiir Gauntlets
+										i(134181),	-- Skoldiir Waistplate
+										i(134183),	-- Skoldiir Legguards
+										i(134185),	-- Skoldiir Sabatons
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+								}),
+								n(-3309, { -- Wardbreaker Set
+									["groups"] = {
+										i(136728),	-- Wardbreaker Helm
+										i(136730),	-- Wardbreaker Pauldrons
+										i(136725),	-- Wardbreaker Chestplate
+										i(136732),	-- Wardbreaker Vambraces
+										i(136726),	-- Wardbreaker Gauntlets
+										i(136727),	-- Wardbreaker Girdle
+										i(136729),	-- Wardbreaker Legplates
+										i(136731),	-- Wardbreaker Warboots
+									},
+									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+								}),
+							},
+						})),
+					}),
+					n(-206, { -- Paragon
+						q(46746, { -- Supplies from the Valarjar
+							i(152106, { -- Valarjar Strongbox
+								i(147805), -- Valarjar Stormwing
+							}),
+							un(2, i(146901, { -- Valarjar Strongbox
+								i(147805), -- Valarjar Stormwing
+							})),
+						}),
+					}),
+				}),
+				n(-17, { -- Quests
 --[[					
 					n(-34, {	-- World Quests					
-						q( 43964),	-- A Jarl's Feast
-						q( 42067),	-- All Howl, No Bite
-						q( 41948),	-- All Pets Go to Heaven
-						q( 45439),	-- An Invasion of... Murlocs?
-						q( 43951),	-- An Overdue Debt
-						q( 41443),	-- Ancient Leystone Deposits
-						q( 41451),	-- Assault on Hrydshal
-						q( 45839),	-- Assault on Stormheim
-						q( 46008),	-- Balnazoth
-						q( 45072),	-- Barrels o' Fun
-						q( 41935),	-- Beasts of Burden
-						q( 46010),	-- Bonecrusher Korgolath
-						q( 41534),	-- Brambly Fjarnskaggl
-						q( 41490),	-- Brimstone Destroyer
-						q( 41489),	-- Brimstone Destroyer
-						q( 41488),	-- Brimstone Destroyer
-						q( 41938),	-- Brothers of Skovald
-						q( 46011),	-- Colossal Infernal
-						q( 46216),	-- Congealed Corruption
-						q( 46179),	-- Crushing the Legion
-						q( 41950),	-- Cry More Thunder!
-						q( 43745),	-- Culling the Storm
-						q( 42820),	-- DANGER: Aegir Wavecrusher
-						q( 42861),	-- DANGER: Boulderfall, the Eroded
-						q( 42864),	-- DANGER: Captain Dargun
-						q( 42785),	-- DANGER: Den Mother Ylva
-						q( 42806),	-- DANGER: Fjorlag, the Grave's Chill
-						q( 42798),	-- DANGER: Huntress Estrid
-						q( 42964),	-- DANGER: Lagertha
-						q( 42963),	-- DANGER: Rulf Bonesnapper
-						q( 42991),	-- DANGER: Runeseer Sigvid
-						q( 42953),	-- DANGER: Soulbinder Halldora
-						q( 41444),	-- Dark Leystone Deposits
-						q( 43710),	-- Dark Runes
-						q( 41459),	-- Dense Leystone Outcropping
-						q( 44893),	-- Direbeak Swarm!
-						q( 41794),	-- Drakestalker
-						q( 42173),	-- Electrosnack
-						q( 43772),	-- Enigmatic
-						q( 45786),	-- Feast of the Hounds
-						q( 46012),	-- Fel Commander Urgoz
-						q( 41570),	-- Felhide
-						q( 41569),	-- Felhide
-						q( 41568),	-- Felhide
-						q( 41521),	-- Felwort
-						q( 41520),	-- Felwort					
-						q( 41519),	-- Felwort
-						q( 46013),	-- Firecaller Rok'duun
-						q( 41296),	-- Fjarnskaggl Cluster
-						q( 41547),	-- Fjarnskaggl Cluster
-						q( 41299),	-- Flourishing Fjarnskaggl
-						q( 46014),	-- Gelthrog
-						q( 41427),	-- Get Vrekt
-						q( 42004),	-- Ghostship
-						q( 44923),	-- Helarjar Landing: Vrekt
-						q( 41614),	-- Huge Stormrays
-						q( 41275),	-- Huge Stormrays
-						q( 41615),	-- Huge Stormrays
-						q( 46015),	-- Idra'zuul
-						q( 41944),	-- Jarrun's Ladder
-						q( 43769),	-- Ley Race
-						q( 41505),	-- Leystone Basilisks
-						q( 41506),	-- Leystone Basilisks
-						q( 41507),	-- Leystone Basilisks
-						q( 45049),	-- Like the Wind
-						q( 41274),	-- Lively Stormrays
-						q( 41603),	-- Lively Stormrays
-						q( 41602),	-- Lively Stormrays
-						q( 46016),	-- Magdrezoth
-						q( 40278),	-- My Beasts's Bidding
-						q( 44943),	-- Now That's Just Clawful!
-						q( 41958),	-- Oh, Ominitron
-						q( 43752),	-- Oh, Ship!
-						q( 43751),	-- Oh, Ship!
-						q( 41340),	-- Perfect Storm Drake Scale
-						q( 43786),	-- Pesty Nests
-						q( 41535),	-- Prickly Fjarnskaggl
-						q( 41460),	-- Primal Leystone Outcropping
-						q( 41536),	-- Pungent Fjarnskaggl
-						q( 41925),	-- Razing Hel
-						q( 42177),	-- Reclaiming Morheim
-						q( 41926),	-- Returning Champion
-						q( 42176),	-- Rise of Skovald
-						q( 41276),	-- Rocket Boot Fishing
-						q( 41927),	-- Ruining the Runewood
-						q( 43722),	-- Sacred Bones
-						q( 42270),	-- Scourge of the Skies
-						q( 46017),	-- Shel'drozul
-						q( 42178),	-- Shock Absorber
-						q( 41300),	-- Singed Fjarnskaggl
-						q( 41555),	-- Slab of Bacon
-						q( 41556),	-- Slab of Bacon
-						q( 41261),	-- Slab of Bacon
-						q( 41278),	-- Slippery Stormrays
-						q( 41343),	-- Solid Crabshell Fragment
-						q( 45390),	-- Souls of the Vrykul
-						q( 43827),	-- Stormwing the Portals
-						q( 41445),	-- Stormy Leystone Deposits
-						q( 41442),	-- Striking Leystone Deposits
-						q( 41298),	-- Supplies Needed: Fjarnskaggl
-						q( 41317),	-- Supplies Needed: Leystone
-						q( 41345),	-- Supplies Needed: Stormscales
-						q( 41984),	-- The Creeping Mists
-						q( 41949),	-- The Drekirjar Return
-						q( 43721),	-- The Helarjar Have Surfaced
-						q( 42013),	-- The Helmouth
-						q( 43771),	-- The Magic of Flight
-						q( 42269),	-- The Soultakers
-						q( 46264),	-- Their Eyes Are Upon Us
-						q( 46021),	-- Thel'draz
-						q( 41342),	-- Thick Bear Hide
-						q( 42182),	-- To Battle!
-						q( 42183),	-- To Battle!
-						q( 41930),	-- Valor Calls
-						q( 43963),	-- Vampirates!
-						q( 41666),	-- Vantus Rune Work Order: Nythendra
-						q( 43454),	-- WANTED: Egyl the Enduring
-						q( 43620),	-- WANTED: Egyl the Enduring
-						q( 43434),	-- WANTED: Fathnyr
-						q( 43621),	-- WANTED: Fathnyr
-						q( 43436),	-- WANTED: Glimar Ironfist
-						q( 43622),	-- WANTED: Glimar Ironfist
-						q( 43453),	-- WANTED: Hannval the Butcher
-						q( 43623),	-- WANTED: Hannval the Butcher
-						q( 43452),	-- WANTED: Isel the Hammer
-						q( 43624),	-- WANTED: Isel the Hammer
-						q( 43438),	-- WANTED: Nameless King
-						q( 43625),	-- WANTED: Nameless King
-						q( 43437),	-- WANTED: Thane Irglov
-						q( 43626),	-- WANTED: Thane Irglov
-						q( 43450),	-- WANTED: Tiptog the Lost
-						q( 43627),	-- WANTED: Tiptog the Lost
-						q( 43451),	-- WANTED: Urgev the Flayer
-						q( 43628),	-- WANTED: Urgev the Flayer
-						q( 43599),	-- Warden Tower Assault: Blackhawk's Bulwark
-						q( 43598),	-- Warden Tower Assault: Blackhawk's Bulwark
-						q( 43601),	-- Warden Tower Assault: Whisperwind's Citadel
-						q( 43600),	-- Warden Tower Assault: Whisperwind's Citadel
-						q( 41497),	-- Wild Leystone Seams
-						q( 41297),	-- Work Order: Fjarnskaggl
-						q( 41678),	-- Work Order: Gunpack
-						q( 41313),	-- Work Order: Leystone
-						q( 41636),	-- Work Order: Leystone Breastplate
-						q( 41654),	-- Work Order: Queen's Opal Loop
-						q( 41648),	-- Work Order: Silkweave Bracers
-						q( 41660),	-- Work Order: Skaggldrynk
-						q( 41277),	-- Work Order: Stormrays
-						q( 41344),	-- Work Order: Stormscales
-						q( 41642),	-- Work Order: Warhide Footpads
-						q( 41672),	-- Work Order: Word of Haste
-						q( 41936),	-- You Have Been Challenged					
+						q(43964),	-- A Jarl's Feast
+						q(42067),	-- All Howl, No Bite
+						q(41948),	-- All Pets Go to Heaven
+						q(45439),	-- An Invasion of... Murlocs?
+						q(43951),	-- An Overdue Debt
+						q(41443),	-- Ancient Leystone Deposits
+						q(41451),	-- Assault on Hrydshal
+						q(45839),	-- Assault on Stormheim
+						q(46008),	-- Balnazoth
+						q(45072),	-- Barrels o' Fun
+						q(41935),	-- Beasts of Burden
+						q(46010),	-- Bonecrusher Korgolath
+						q(41534),	-- Brambly Fjarnskaggl
+						q(41490),	-- Brimstone Destroyer
+						q(41489),	-- Brimstone Destroyer
+						q(41488),	-- Brimstone Destroyer
+						q(41938),	-- Brothers of Skovald
+						q(46011),	-- Colossal Infernal
+						q(46216),	-- Congealed Corruption
+						q(46179),	-- Crushing the Legion
+						q(41950),	-- Cry More Thunder!
+						q(43745),	-- Culling the Storm
+						q(42820),	-- DANGER: Aegir Wavecrusher
+						q(42861),	-- DANGER: Boulderfall, the Eroded
+						q(42864),	-- DANGER: Captain Dargun
+						q(42785),	-- DANGER: Den Mother Ylva
+						q(42806),	-- DANGER: Fjorlag, the Grave's Chill
+						q(42798),	-- DANGER: Huntress Estrid
+						q(42964),	-- DANGER: Lagertha
+						q(42963),	-- DANGER: Rulf Bonesnapper
+						q(42991),	-- DANGER: Runeseer Sigvid
+						q(42953),	-- DANGER: Soulbinder Halldora
+						q(41444),	-- Dark Leystone Deposits
+						q(43710),	-- Dark Runes
+						q(41459),	-- Dense Leystone Outcropping
+						q(44893),	-- Direbeak Swarm!
+						q(41794),	-- Drakestalker
+						q(42173),	-- Electrosnack
+						q(43772),	-- Enigmatic
+						q(45786),	-- Feast of the Hounds
+						q(46012),	-- Fel Commander Urgoz
+						q(41570),	-- Felhide
+						q(41569),	-- Felhide
+						q(41568),	-- Felhide
+						q(41521),	-- Felwort
+						q(41520),	-- Felwort					
+						q(41519),	-- Felwort
+						q(46013),	-- Firecaller Rok'duun
+						q(41296),	-- Fjarnskaggl Cluster
+						q(41547),	-- Fjarnskaggl Cluster
+						q(41299),	-- Flourishing Fjarnskaggl
+						q(46014),	-- Gelthrog
+						q(41427),	-- Get Vrekt
+						q(42004),	-- Ghostship
+						q(44923),	-- Helarjar Landing: Vrekt
+						q(41614),	-- Huge Stormrays
+						q(41275),	-- Huge Stormrays
+						q(41615),	-- Huge Stormrays
+						q(46015),	-- Idra'zuul
+						q(41944),	-- Jarrun's Ladder
+						q(43769),	-- Ley Race
+						q(41505),	-- Leystone Basilisks
+						q(41506),	-- Leystone Basilisks
+						q(41507),	-- Leystone Basilisks
+						q(45049),	-- Like the Wind
+						q(41274),	-- Lively Stormrays
+						q(41603),	-- Lively Stormrays
+						q(41602),	-- Lively Stormrays
+						q(46016),	-- Magdrezoth
+						q(40278),	-- My Beasts's Bidding
+						q(44943),	-- Now That's Just Clawful!
+						q(41958),	-- Oh, Ominitron
+						q(43752),	-- Oh, Ship!
+						q(43751),	-- Oh, Ship!
+						q(41340),	-- Perfect Storm Drake Scale
+						q(43786),	-- Pesty Nests
+						q(41535),	-- Prickly Fjarnskaggl
+						q(41460),	-- Primal Leystone Outcropping
+						q(41536),	-- Pungent Fjarnskaggl
+						q(41925),	-- Razing Hel
+						q(42177),	-- Reclaiming Morheim
+						q(41926),	-- Returning Champion
+						q(42176),	-- Rise of Skovald
+						q(41276),	-- Rocket Boot Fishing
+						q(41927),	-- Ruining the Runewood
+						q(43722),	-- Sacred Bones
+						q(42270),	-- Scourge of the Skies
+						q(46017),	-- Shel'drozul
+						q(42178),	-- Shock Absorber
+						q(41300),	-- Singed Fjarnskaggl
+						q(41555),	-- Slab of Bacon
+						q(41556),	-- Slab of Bacon
+						q(41261),	-- Slab of Bacon
+						q(41278),	-- Slippery Stormrays
+						q(41343),	-- Solid Crabshell Fragment
+						q(45390),	-- Souls of the Vrykul
+						q(43827),	-- Stormwing the Portals
+						q(41445),	-- Stormy Leystone Deposits
+						q(41442),	-- Striking Leystone Deposits
+						q(41298),	-- Supplies Needed: Fjarnskaggl
+						q(41317),	-- Supplies Needed: Leystone
+						q(41345),	-- Supplies Needed: Stormscales
+						q(41984),	-- The Creeping Mists
+						q(41949),	-- The Drekirjar Return
+						q(43721),	-- The Helarjar Have Surfaced
+						q(42013),	-- The Helmouth
+						q(43771),	-- The Magic of Flight
+						q(42269),	-- The Soultakers
+						q(46264),	-- Their Eyes Are Upon Us
+						q(46021),	-- Thel'draz
+						q(41342),	-- Thick Bear Hide
+						q(42182),	-- To Battle!
+						q(42183),	-- To Battle!
+						q(41930),	-- Valor Calls
+						q(43963),	-- Vampirates!
+						q(41666),	-- Vantus Rune Work Order: Nythendra
+						q(43454),	-- WANTED: Egyl the Enduring
+						q(43620),	-- WANTED: Egyl the Enduring
+						q(43434),	-- WANTED: Fathnyr
+						q(43621),	-- WANTED: Fathnyr
+						q(43436),	-- WANTED: Glimar Ironfist
+						q(43622),	-- WANTED: Glimar Ironfist
+						q(43453),	-- WANTED: Hannval the Butcher
+						q(43623),	-- WANTED: Hannval the Butcher
+						q(43452),	-- WANTED: Isel the Hammer
+						q(43624),	-- WANTED: Isel the Hammer
+						q(43438),	-- WANTED: Nameless King
+						q(43625),	-- WANTED: Nameless King
+						q(43437),	-- WANTED: Thane Irglov
+						q(43626),	-- WANTED: Thane Irglov
+						q(43450),	-- WANTED: Tiptog the Lost
+						q(43627),	-- WANTED: Tiptog the Lost
+						q(43451),	-- WANTED: Urgev the Flayer
+						q(43628),	-- WANTED: Urgev the Flayer
+						q(43599),	-- Warden Tower Assault: Blackhawk's Bulwark
+						q(43598),	-- Warden Tower Assault: Blackhawk's Bulwark
+						q(43601),	-- Warden Tower Assault: Whisperwind's Citadel
+						q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
+						q(41497),	-- Wild Leystone Seams
+						q(41297),	-- Work Order: Fjarnskaggl
+						q(41678),	-- Work Order: Gunpack
+						q(41313),	-- Work Order: Leystone
+						q(41636),	-- Work Order: Leystone Breastplate
+						q(41654),	-- Work Order: Queen's Opal Loop
+						q(41648),	-- Work Order: Silkweave Bracers
+						q(41660),	-- Work Order: Skaggldrynk
+						q(41277),	-- Work Order: Stormrays
+						q(41344),	-- Work Order: Stormscales
+						q(41642),	-- Work Order: Warhide Footpads
+						q(41672),	-- Work Order: Word of Haste
+						q(41936),	-- You Have Been Challenged					
 					}),
 --]]
 					ach(10790, { -- Vrykul Story, Bro
@@ -366,18 +740,18 @@ _.Zones =
 								i(129305),
 							}),
 						}),
-						q( 39775),	-- Stormforged Grapple Launcher
+						q(39775),	-- Stormforged Grapple Launcher
 						crit(3, { -- The Trial of Might
 							qa( 38210),	-- The Ancient Trials
 							qh( 38459),	-- The Ancient Trials
-							q( 38331),	-- Havi's Test
-							q( 39590),	-- Ahead of the Game
-							q( 39595),	-- Blood and Gold
-							q( 39591),	-- A Trial of Valor
-							q( 39592),	-- A Trial of Will
-							q( 39593),	-- The Shattered Watcher
-							q( 39594),	-- A Trial of Might
-							q( 39597),	-- The Blessing of the Watchers
+							q(38331),	-- Havi's Test
+							q(39590),	-- Ahead of the Game
+							q(39595),	-- Blood and Gold
+							q(39591),	-- A Trial of Valor
+							q(39592),	-- A Trial of Will
+							q(39593),	-- The Shattered Watcher
+							q(39594),	-- A Trial of Might
+							q(39597),	-- The Blessing of the Watchers
 						}),
 						crit(4, { -- The Trial of Will
 							qa( 38473),	-- Will of the Thorignir
@@ -428,27 +802,27 @@ _.Zones =
 								i(129326),
 								i(129327),
 							}),
-							q( 38414),	-- Heart of a Dragon
-							q( 40568),	-- Fury of the Storm
-							q( 39652),	-- Where Dragons Rule
-							q( 38624),	-- Cry Thunder!
+							q(38414),	-- Heart of a Dragon
+							q(40568),	-- Fury of the Storm
+							q(39652),	-- Where Dragons Rule
+							q(38624),	-- Cry Thunder!
 						}),
 						crit(5, { -- The Trial of Valor
-							q( 39803),	-- The Trials Continue
-							q( 39804),	-- Speaking of Bones
-							q( 39796),	-- To Haustvald
-							q( 38778),	-- Turn the Keys
-							q( 39788),	-- The Runewood's Revenge
+							q(39803),	-- The Trials Continue
+							q(39804),	-- Speaking of Bones
+							q(39796),	-- To Haustvald
+							q(38778),	-- Turn the Keys
+							q(39788),	-- The Runewood's Revenge
 							q(38808,  {  -- Bjornharta
 								i(129335),
 								i(129336),
 								i(129337),
 								i(129338),
 							}),
-							q( 38810),	-- The Dreaming Fungus
-							q( 38811),	-- Judgment Day
-							q( 39791),	-- Lay Them to Rest
-							q( 38816),	-- Breaking the Bonespeakers
+							q(38810),	-- The Dreaming Fungus
+							q(38811),	-- Judgment Day
+							q(39791),	-- Lay Them to Rest
+							q(38816),	-- Breaking the Bonespeakers
 							q(38817,  {  -- Regal Remains
 								i(129229),
 								i(129231),
@@ -459,9 +833,9 @@ _.Zones =
 								i(132756),
 								i(132758),
 							}),
-							q( 38823),	-- The Runes that Bind
-							q( 38815),	-- Waking the Shieldmaiden
-							q( 38818),	-- The Final Judgment
+							q(38823),	-- The Runes that Bind
+							q(38815),	-- Waking the Shieldmaiden
+							q(38818),	-- The Final Judgment
 						}),
 						crit(6, { -- To Helheim and Back
 							q(39837), -- An Unworthy Task
@@ -476,7 +850,7 @@ _.Zones =
 							q(39853), -- Victory is Eternal
 							q(39855), -- Paid in Lifeblood
 						}),
-						q( 40078),	-- A Heavy Burden
+						q(40078),	-- A Heavy Burden
 						crit(7, { -- Secrets of the Shieldmaidens
 							qa( 39059),	-- To Catch a Banshee
 							qa( 39060),	-- Combustible Contagion
@@ -493,7 +867,7 @@ _.Zones =
 							}),
 							qa( 39062),	-- To Skold-Ashil
 							qa( 39063),	-- Shielded Secrets
-							q( 39405),	-- Stories of Battle
+							q(39405),	-- Stories of Battle
 							qa( 39092),	-- Becoming the Ascendant
 							qa(39122,  {  -- Ending the New Beginning
 								i(129346),
@@ -528,15 +902,15 @@ _.Zones =
 							}),
 						}),
 						crit(8, { -- The Champion of Stormheim
-							q( 40001),	-- Knocking on Valor's Door
-							q( 40002),	-- A Familiar Fate
-							q( 40003),	-- Stem the Tide
-							q( 40004),	-- Break the Spine
-							q( 40005),	-- Stormheim's Salvation
+							q(40001),	-- Knocking on Valor's Door
+							q(40002),	-- A Familiar Fate
+							q(40003),	-- Stem the Tide
+							q(40004),	-- Break the Spine
+							q(40005),	-- Stormheim's Salvation
 						}),
 					}),
 					ach(10877, { -- Pillars of Creation
-						q( 40072),	-- Halls of Valor: Securing the Aegis
+						q(40072),	-- Halls of Valor: Securing the Aegis
 						q(43349, { -- The Aegis of Aggramar
 							i(130016), -- Valor-Bound Legplates
 							i(129989), -- Valor-Bound Trousers
@@ -558,21 +932,21 @@ _.Zones =
 					}),
 					n(-168, { -- Other Quests
 						sz(10668,4,  { -- Dreygrot
-							q( 42635),	-- The Mystery of Dreyrgrot
-							q( 42639),	-- A Stone of Blood
-							q( 42640),	-- The Value of Knowledge
+							q(42635),	-- The Mystery of Dreyrgrot
+							q(42639),	-- A Stone of Blood
+							q(42640),	-- The Value of Knowledge
 							q(42641,  {  -- What the Bonespeakers Buried
 								i(129360),
 								i(129358),
 								i(129359),
 								i(129357),
 							}),
-							q( 42645),	-- Spilling Bad Blood
+							q(42645),	-- Spilling Bad Blood
 						}),
 						sz(10668,16, { -- Storm's Reach
-							q( 42444),	-- Plight of the Blackfeather
-							q( 42445),	-- Nithogg's Tribute
-							q( 42446),	-- Singed Feathers
+							q(42444),	-- Plight of the Blackfeather
+							q(42445),	-- Nithogg's Tribute
+							q(42446),	-- Singed Feathers
 							q(42447,  {  -- Dances With Ravenbears
 								i(129361),
 								i(129363),
@@ -585,17 +959,17 @@ _.Zones =
 							}),
 						}),
 						sz(10668,17, { -- Talonrest
-							q( 39789),	-- Eating Into Our Business
-							q( 39793),	-- Only the Finest
-							q( 39787),	-- Rigging the Wager
-							q( 39786),	-- A Stone Cold Gamble
-							q( 39792),	-- A Stack of Racks
-							q( 42483),	-- Put It All on Red
+							q(39789),	-- Eating Into Our Business
+							q(39793),	-- Only the Finest
+							q(39787),	-- Rigging the Wager
+							q(39786),	-- A Stone Cold Gamble
+							q(39792),	-- A Stack of Racks
+							q(42483),	-- Put It All on Red
 						}),
 						sz(10668,18, { -- Tideskorn Harbor
-							q( 39984),	-- Remnants of the Past
-							q( 40046),	-- Scavenging the Shallows
-							q( 43595),	-- To Honor the Fallen
+							q(39984),	-- Remnants of the Past
+							q(40046),	-- Scavenging the Shallows
+							q(43595),	-- To Honor the Fallen
 							q(40044,  {  -- Shadows in the Mists
 								i(129350),
 								i(132773),
@@ -612,7 +986,7 @@ _.Zones =
 	
 						}),
 						n(-169, { -- Emissary Quests
-							q( 42234),-- {	-- The Valarjar
+							q(42234),-- {	-- The Valarjar
 								--i(154905, {	-- Valarjar Cache
 								--}),
 							q(46746, {	-- Supplies From the Valarjar
@@ -638,154 +1012,154 @@ _.Zones =
 					}),
 				  
 				--[[ These quests will be organized soon™
-					q( 44720),	-- A Call to Action
-					qart(qg(117394, q( 45534))),	-- A Common Enemy
-					q( 40614),	-- A Feast Fit for Odyn
-					q( 40078),	-- A Heavy Burden
-					q( 40120),	-- A Murky Fate
-					q( 44771),	-- A Threat Rises
-					q( 40265),	-- A Touch of Magic
-					q( 38442),	-- A Worthy Challenger
-					q( 39903),	-- An Enchanting Home
-					q( 40052),	-- Ancient Vrykul Mastered
-					q( 41162),	-- And Into the Fel Fire
-					q( 45482),	-- Arcane: Fate of the Tideskorn
-					q( 46006),	-- Arkuthaz
-					q( 47051),	-- Assassination: Fate of the Tideskorn
-					q( 38939),	-- Assault on Skold-Ashil
-					q( 39119),	-- Assault on Skold-Ashil
-					q( 38374),	-- Assault the Drekirjar
-					q( 43560),	-- Audience with the Windlord
-					q( 42398),	-- Awakening the Senses
-					q( 42025),	-- Bareback Brawl
-					q( 42397),	-- Baron and the Huntsman
-					q( 46110),	-- Battle for Stormheim
-					q( 43558),	-- Bindings of the Windlord
-					q( 42391),	-- Bite of the Beast
-					q( 40857),	-- Bits and Pieces
-					q( 42650),	-- Break the Bonds
-					q( 40867),	-- Bubble Baubles
-					q( 42389),	-- Calling Hilaire Home
-					q( 42411),	-- Champion: Beastmaster Hilaire
-					q( 42412),	-- Champion: Huntsman Blake
-					q( 41788),	-- Coercing a Confession
-					q( 40540),	-- Come at Me, Brul
-					q( 41157),	-- Corrupted Studies
-					q( 41166),	-- Dark Secrets
-					q( 44177),	-- Dark Secrets and Shady Deals
-					q( 41169),	-- Darkheart Thicket: Through the Fog
-					q( 47767),	-- Death Metal Knight
-					q( 41165),	-- Deciphering Demonology
-					q( 39125),	-- Demon Destroyer
-					q( 47049),	-- Demonology: Fate of the Tideskorn
-					q( 40110),	-- Disrupt the Inkbinders
-					q( 40149),	-- Drakol'nir Must Die
-					q( 39998),	-- Drive Back the Tideskorn
-					q( 47050),	-- Enhancement: Fate of the Tideskorn
+					q(44720),	-- A Call to Action
+					qart(qg(117394, q(45534))),	-- A Common Enemy
+					q(40614),	-- A Feast Fit for Odyn
+					q(40078),	-- A Heavy Burden
+					q(40120),	-- A Murky Fate
+					q(44771),	-- A Threat Rises
+					q(40265),	-- A Touch of Magic
+					q(38442),	-- A Worthy Challenger
+					q(39903),	-- An Enchanting Home
+					q(40052),	-- Ancient Vrykul Mastered
+					q(41162),	-- And Into the Fel Fire
+					q(45482),	-- Arcane: Fate of the Tideskorn
+					q(46006),	-- Arkuthaz
+					q(47051),	-- Assassination: Fate of the Tideskorn
+					q(38939),	-- Assault on Skold-Ashil
+					q(39119),	-- Assault on Skold-Ashil
+					q(38374),	-- Assault the Drekirjar
+					q(43560),	-- Audience with the Windlord
+					q(42398),	-- Awakening the Senses
+					q(42025),	-- Bareback Brawl
+					q(42397),	-- Baron and the Huntsman
+					q(46110),	-- Battle for Stormheim
+					q(43558),	-- Bindings of the Windlord
+					q(42391),	-- Bite of the Beast
+					q(40857),	-- Bits and Pieces
+					q(42650),	-- Break the Bonds
+					q(40867),	-- Bubble Baubles
+					q(42389),	-- Calling Hilaire Home
+					q(42411),	-- Champion: Beastmaster Hilaire
+					q(42412),	-- Champion: Huntsman Blake
+					q(41788),	-- Coercing a Confession
+					q(40540),	-- Come at Me, Brul
+					q(41157),	-- Corrupted Studies
+					q(41166),	-- Dark Secrets
+					q(44177),	-- Dark Secrets and Shady Deals
+					q(41169),	-- Darkheart Thicket: Through the Fog
+					q(47767),	-- Death Metal Knight
+					q(41165),	-- Deciphering Demonology
+					q(39125),	-- Demon Destroyer
+					q(47049),	-- Demonology: Fate of the Tideskorn
+					q(40110),	-- Disrupt the Inkbinders
+					q(40149),	-- Drakol'nir Must Die
+					q(39998),	-- Drive Back the Tideskorn
+					q(47050),	-- Enhancement: Fate of the Tideskorn
 					qh( 38308),	-- Eyes in the Overlook
-					q( 40542),	-- Eyes of Nashal
-					q( 40544),	-- Eyes of Nashal
-					q( 40543),	-- Eyes of Nashal
-					q( 45527),	-- Eyir's Forgiveness
-					q( 41167),	-- Fel Fragments
-					q( 41785),	-- Finding Fizzlebang
-					q( 41158),	-- Fragments of the Fjords
-					q( 38607),	-- Gates of Valhallas
-					q( 38670),	-- Goredome 2
-					q( 40615),	-- Halls of Valor: Odyn's Blessing
-					q( 39904),	-- Halls of Valor: Revenge of the Enchantress
-					q( 38974),	-- Halls of Valor: The Right Question
-					q( 38974),	-- Halls of Valor: The Right Question
-					q( 44721),	-- Helya's Conquest
-					q( 42393),	-- Homecoming
-					q( 44577),	-- Honor the Flame
-					q( 38625),	-- Hook & Sinker
-					q( 38630),	-- Horde Kill Squad (Alliance Only)
-					q( 38712),	-- Houndmaster Ely
-					q( 44922),	-- Inside the Winter Storm
-					q( 44940),	-- Inside the Winter Storm
-					q( 40865),	-- It's Not Rocket Science
-					q( 46949),	-- Jorvild the Trusted
-					q( 40166),	-- Leying with Murlocs
-					q( 38785),	-- Living Leystone Sample
-					q( 38774),	-- Lost Ettin
-					q( 41793),	-- Lulubelle on Loan
-					q( 38422),	-- Makrura Wave Event
-					q( 42735),	-- Malace in Vrykul Land
-					q( 40613),	-- Maw of Souls: Retrieving the Svalnguard
-					q( 40147),	-- Mother's Prized Knife
-					q( 40546),	-- Mysteries of Nature
-					q( 39944),	-- Mysterious Messages
-					q( 44116),	-- Mystery at Citrine Bay
-					q( 40672),	-- Neltharion's Lair: Presentation is Key
-					q( 39947),	-- Not So Complex?
-					q( 41164),	-- One Step Closer
-					q( 41161),	-- Out of the Frying Pan
-					q( 46798),	-- Paragon of the Valarjar
-					q( 43528),	-- Planning the Assault
-					q( 43898),	-- Preparing to Move
-					q( 41159),	-- Process of Elimination
-					q( 42399),	-- Ready to Work
-					q( 40148),	-- Red-Eyed Revenge
-					q( 38794),	-- Rethu's Sacrifice
-					q( 47052),	-- Retribution: Fate of the Tideskorn
-					q( 39946),	-- Right Tool for the Job
-					q( 38803),	-- Rin'thissa
-					q( 40111),	-- Rout the Bilgefin Invaders
-					q( 42736),	-- Rune Ruination
-					q( 42738),	-- Rune Ruination: Runelord Ragnar
-					q( 42739),	-- Rune Ruination: Runesage Floki
-					q( 42737),	-- Rune Ruination: Runeskeld Rollo
-					q( 39945),	-- Runes Within the Ruins
-					q( 44155),	-- Searching For Clues
-					q( 40603),	-- Seeking the Valkyra
-					q( 40146),	-- Seymour and Agnes
-					q( 40404),	-- Show Legion Portal
+					q(40542),	-- Eyes of Nashal
+					q(40544),	-- Eyes of Nashal
+					q(40543),	-- Eyes of Nashal
+					q(45527),	-- Eyir's Forgiveness
+					q(41167),	-- Fel Fragments
+					q(41785),	-- Finding Fizzlebang
+					q(41158),	-- Fragments of the Fjords
+					q(38607),	-- Gates of Valhallas
+					q(38670),	-- Goredome 2
+					q(40615),	-- Halls of Valor: Odyn's Blessing
+					q(39904),	-- Halls of Valor: Revenge of the Enchantress
+					q(38974),	-- Halls of Valor: The Right Question
+					q(38974),	-- Halls of Valor: The Right Question
+					q(44721),	-- Helya's Conquest
+					q(42393),	-- Homecoming
+					q(44577),	-- Honor the Flame
+					q(38625),	-- Hook & Sinker
+					q(38630),	-- Horde Kill Squad (Alliance Only)
+					q(38712),	-- Houndmaster Ely
+					q(44922),	-- Inside the Winter Storm
+					q(44940),	-- Inside the Winter Storm
+					q(40865),	-- It's Not Rocket Science
+					q(46949),	-- Jorvild the Trusted
+					q(40166),	-- Leying with Murlocs
+					q(38785),	-- Living Leystone Sample
+					q(38774),	-- Lost Ettin
+					q(41793),	-- Lulubelle on Loan
+					q(38422),	-- Makrura Wave Event
+					q(42735),	-- Malace in Vrykul Land
+					q(40613),	-- Maw of Souls: Retrieving the Svalnguard
+					q(40147),	-- Mother's Prized Knife
+					q(40546),	-- Mysteries of Nature
+					q(39944),	-- Mysterious Messages
+					q(44116),	-- Mystery at Citrine Bay
+					q(40672),	-- Neltharion's Lair: Presentation is Key
+					q(39947),	-- Not So Complex?
+					q(41164),	-- One Step Closer
+					q(41161),	-- Out of the Frying Pan
+					q(46798),	-- Paragon of the Valarjar
+					q(43528),	-- Planning the Assault
+					q(43898),	-- Preparing to Move
+					q(41159),	-- Process of Elimination
+					q(42399),	-- Ready to Work
+					q(40148),	-- Red-Eyed Revenge
+					q(38794),	-- Rethu's Sacrifice
+					q(47052),	-- Retribution: Fate of the Tideskorn
+					q(39946),	-- Right Tool for the Job
+					q(38803),	-- Rin'thissa
+					q(40111),	-- Rout the Bilgefin Invaders
+					q(42736),	-- Rune Ruination
+					q(42738),	-- Rune Ruination: Runelord Ragnar
+					q(42739),	-- Rune Ruination: Runesage Floki
+					q(42737),	-- Rune Ruination: Runeskeld Rollo
+					q(39945),	-- Runes Within the Ruins
+					q(44155),	-- Searching For Clues
+					q(40603),	-- Seeking the Valkyra
+					q(40146),	-- Seymour and Agnes
+					q(40404),	-- Show Legion Portal
 					qh( 38357),	-- Side Effects May Include Mild Undeath
-					q( 41787),	-- Someone Else's Mess
-					q( 42194),	-- Stolen Honor
-					q( 41039),	-- Stolen Knowledge
-					q( 40131),	-- Stonehide Leather Sample
-					q( 42749),	-- Strange Bedfellows
+					q(41787),	-- Someone Else's Mess
+					q(42194),	-- Stolen Honor
+					q(41039),	-- Stolen Knowledge
+					q(40131),	-- Stonehide Leather Sample
+					q(42749),	-- Strange Bedfellows
 					qa( 38036),	-- Supplies From the Skies
-					q( 42651),	-- Svergan's Promise
-					q( 38424),	-- Thane's Mead Hall
-					q( 41163),	-- The Apocalypse Bringer
-					q( 42431),	-- The Brood of Nithogg
-					q( 40541),	-- The Charge Within
-					q( 45524),	-- The Forgotten Heir
-					q( 46340),	-- The Gates Are Closed
-					q( 41802),	-- The Gates of Valor
-					q( 42193),	-- The Gjallarhorn
-					q( 41849),	-- The Iron Fist
-					q( 45999),	-- The Legion Assault
-					q( 46002),	-- The Legion Assault - Viewed
-					q( 40608),	-- The Mark
-					q( 41850),	-- The Master of Swords
-					q( 41038),	-- The Mead Master
-					q( 38685),	-- The Nameless King
-					q( 44775),	-- The Peak of Bones
-					q( 41168),	-- The Purple Hills of Mac'Aree
-					q( 41170),	-- The Relic Renewed
-					q( 45486),	-- The Reluctant Queen					
-					q( 40866),	-- The Shell, You Say?
-					q( 45406),	-- The Storm's Fury
-					q( 44117),	-- Time Flies When Yer Havin' Rum!
-					q( 45522),	-- To Silence the Bonespeakers
-					q( 45523),	-- To Tame the Drekirjar
-					q( 44729),	-- Trial of Valor: Odyn's Favor
-					q( 45525),	-- Unanswered Questions
-					q( 40143),	-- Unfinished Treatise on the Properties of Stormscale
-					q( 38642),	-- Vrykul Longboat
-					q( 38472),	-- Whitewater Typhoon
-					q( 40868),	-- Wibbly-Wobbly, Timey-Wimey
-					q( 38626),	-- Worg Pack
-					q( 38627),	-- Worgen Stalkers (Horde Only)
+					q(42651),	-- Svergan's Promise
+					q(38424),	-- Thane's Mead Hall
+					q(41163),	-- The Apocalypse Bringer
+					q(42431),	-- The Brood of Nithogg
+					q(40541),	-- The Charge Within
+					q(45524),	-- The Forgotten Heir
+					q(46340),	-- The Gates Are Closed
+					q(41802),	-- The Gates of Valor
+					q(42193),	-- The Gjallarhorn
+					q(41849),	-- The Iron Fist
+					q(45999),	-- The Legion Assault
+					q(46002),	-- The Legion Assault - Viewed
+					q(40608),	-- The Mark
+					q(41850),	-- The Master of Swords
+					q(41038),	-- The Mead Master
+					q(38685),	-- The Nameless King
+					q(44775),	-- The Peak of Bones
+					q(41168),	-- The Purple Hills of Mac'Aree
+					q(41170),	-- The Relic Renewed
+					q(45486),	-- The Reluctant Queen					
+					q(40866),	-- The Shell, You Say?
+					q(45406),	-- The Storm's Fury
+					q(44117),	-- Time Flies When Yer Havin' Rum!
+					q(45522),	-- To Silence the Bonespeakers
+					q(45523),	-- To Tame the Drekirjar
+					q(44729),	-- Trial of Valor: Odyn's Favor
+					q(45525),	-- Unanswered Questions
+					q(40143),	-- Unfinished Treatise on the Properties of Stormscale
+					q(38642),	-- Vrykul Longboat
+					q(38472),	-- Whitewater Typhoon
+					q(40868),	-- Wibbly-Wobbly, Timey-Wimey
+					q(38626),	-- Worg Pack
+					q(38627),	-- Worgen Stalkers (Horde Only)
 					qh( 38361),	-- Wrath of the Blightcaller
 					SOON™
 					--]]
 				}),
-				n(-16, { 	-- Rares
+				n(-16, { -- Rares
 					n(91874, { 		-- Bladesquall
 						["groups"] = {	
 							i(129048),
@@ -983,7 +1357,7 @@ _.Zones =
 				--	n(100224, { 	-- Vrykul Earthmaiden Spirit	}), 
 --]]
 				}),
-				n(-2, { 	-- Vendors
+				n(-2, { -- Vendors
 					n(120458, { -- Corbyn
 						["groups"] = {
 							ach(11725, { -- Fisherfriend of the Isles
@@ -1108,7 +1482,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
 				}),				
-				m(1022, {	-- Helheim
+				m(1022, { -- Helheim
 					["groups"] = {
 						n(-16, { -- Rares
 				--			n(92040, { -- Fenri trinket }), 

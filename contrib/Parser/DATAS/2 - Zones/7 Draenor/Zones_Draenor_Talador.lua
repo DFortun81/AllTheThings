@@ -103,112 +103,112 @@ _.Zones =
 --[[				
 					qa( 34802),	-- A Pilgrimage Gone Awry
 					qh( 34801),	-- A Pilgrimage Gone Awry
-					q( 34935),	-- After Wall Greeting
+					q(34935),	-- After Wall Greeting
 					qh( 34632),	-- An Audience With The Archmage
 					qa( 34631),	-- An Audience With The Archmage
 					qa( 34096),	-- An Eye for a Spy
 					qh( 33728),	-- An Eye for a Spy
-					q( 37837),	-- An Inside Job
+					q(37837),	-- An Inside Job
 					qh( 34414),	-- An'dure The Giant
 					qa( 34415),	-- An'dure The Giant
 					qa( 33944),	-- And the Elekk Too?!
 					qa( 33967),	-- Antivenin
-					q( 33971),	-- Antivenin
-					q( 33964),	-- Arak Flowerpicker
+					q(33971),	-- Antivenin
+					q(33964),	-- Arak Flowerpicker
 					qh( 34401),	-- Arcane Essence
 					qa( 34403),	-- Arcane Essence
 					qh( 34972),	-- Armor Up
 					qa( 34982),	-- Armor Up
-					q( 34560),	-- Armory
-					q( 34568),	-- Armory
-					q( 37304),	-- Armory
-					q( 37301),	-- Armory
-					q( 33874),	-- Aruumel's Rest
-					q( 34639),	-- Aruuna's Desolation
-					q( 34685),	-- As the Smoke Rises
+					q(34560),	-- Armory
+					q(34568),	-- Armory
+					q(37304),	-- Armory
+					q(37301),	-- Armory
+					q(33874),	-- Aruumel's Rest
+					q(34639),	-- Aruuna's Desolation
+					q(34685),	-- As the Smoke Rises
 					qa( 34558),	-- At Your Command
 					qh( 34566),	-- At Your Command
-					q( 34793),	-- Auchenai Defenders Greeting
-					q( 33761),	-- Barum's Notes
-					q( 36014),	-- Blackhand's Secret
-					q( 33977),	-- Blessing of the Wolf
-					q( 34328),	-- Blessing of the Wolf Selected
-					q( 36636),	-- Blueprint Read
+					q(34793),	-- Auchenai Defenders Greeting
+					q(33761),	-- Barum's Notes
+					q(36014),	-- Blackhand's Secret
+					q(33977),	-- Blessing of the Wolf
+					q(34328),	-- Blessing of the Wolf Selected
+					q(36636),	-- Blueprint Read
 					qa( 36996),	-- Boar Training: Gezz'ran
 					qh( 37033),	-- Boar Training: Gezz'ran
-					q( 34164),	-- Book Burning
+					q(34164),	-- Book Burning
 					qa( 34097),	-- Born to Shred
 					qh( 33729),	-- Born to Shred
-					q( 37836),	-- Breaking Badness
-					q( 33979),	-- Buffeting Galefury
-					q( 34329),	-- Buffeting Galefury Selected
-					q( 36856),	-- Burning Missive
-					q( 36849),	-- Burning Missive
-					q( 36850),	-- Burning Missive
-					q( 36851),	-- Burning Missive
-					q( 36852),	-- Burning Missive
-					q( 36853),	-- Burning Missive
-					q( 36854),	-- Burning Missive
-					q( 36855),	-- Burning Missive
-					q( 33740),	-- Burning Sky
-					q( 39019),	-- Call of the Archmage
-					q( 39018),	-- Call of the Archmage
+					q(37836),	-- Breaking Badness
+					q(33979),	-- Buffeting Galefury
+					q(34329),	-- Buffeting Galefury Selected
+					q(36856),	-- Burning Missive
+					q(36849),	-- Burning Missive
+					q(36850),	-- Burning Missive
+					q(36851),	-- Burning Missive
+					q(36852),	-- Burning Missive
+					q(36853),	-- Burning Missive
+					q(36854),	-- Burning Missive
+					q(36855),	-- Burning Missive
+					q(33740),	-- Burning Sky
+					q(39019),	-- Call of the Archmage
+					q(39018),	-- Call of the Archmage
 					qa( 34406),	-- Caught In The Chaos
-					q( 34326),	-- Changing the Tide
+					q(34326),	-- Changing the Tide
 					qh( 34751),	-- Clear!
 					qa( 34761),	-- Clear!
 					qh( 37051),	-- Clefthoof Training: Gezz'ran
 					qa( 36986),	-- Clefthoof Training: Gezz'ran
 					qa( 34707),	-- Come Together
 					qh( 34706),	-- Come Together
-					q( 35044),	-- Cordana Summon
-					q( 34667),	-- Court of Souls
+					q(35044),	-- Cordana Summon
+					q(34667),	-- Court of Souls
 					qa( 34609),	-- Creating the Ink
 					qh( 34634),	-- Creating the Ink
 					qh( 34404),	-- Crystals of Unusual Power
-					q( 33873),	-- Cure of Aruunem
+					q(33873),	-- Cure of Aruunem
 					qa( 34091),	-- Decommissioned Mission
 					qh( 33720),	-- Decommissioned Mission
-					q( 34092),	-- Desperate Measures
-					q( 34564),	-- Destination: Unknown
+					q(34092),	-- Desperate Measures
+					q(34564),	-- Destination: Unknown
 					qa( 34154),	-- Destination: Unknown
-					q( 34920),	-- Destroy Ward
-					q( 33917),	-- Disrupting the Flow
-					q( 33927),	-- Draenei Camp Explosion Tracker
-					q( 34580),	-- Draenor Flowerpicker
-					q( 34581),	-- Draenor Flowerpicker Note Found
-					q( 37300),	-- Drafting Table Interact
-					q( 37311),	-- Drafting Table Interact
+					q(34920),	-- Destroy Ward
+					q(33917),	-- Disrupting the Flow
+					q(33927),	-- Draenei Camp Explosion Tracker
+					q(34580),	-- Draenor Flowerpicker
+					q(34581),	-- Draenor Flowerpicker Note Found
+					q(37300),	-- Drafting Table Interact
+					q(37311),	-- Drafting Table Interact
 					qa( 34959),	-- Dreadpiston
 					qh( 34950),	-- Dreadpiston
 					qa( 34976),	-- Dropping Bombs
 					qh( 34840),	-- Dropping Bombs
-					q( 34895),	-- Dropping Bombs Tracking
-					q( 34983),	-- Dropping Bombs Tracking
-					q( 35047),	-- Dropping Bombs Tracking
+					q(34895),	-- Dropping Bombs Tracking
+					q(34983),	-- Dropping Bombs Tracking
+					q(35047),	-- Dropping Bombs Tracking
 					qh( 34879),	-- Dropping In
 					qa( 34913),	-- Dropping In
 					qh( 34712),	-- Due Cause to Celebrate
 					qa( 34711),	-- Due Cause to Celebrate
-					q( 36426),	-- Dueling Orbs
-					q( 33872),	-- Dust of the Dead
-					q( 33974),	-- Dying Wish
-					q( 33973),	-- Dying Wish
-					q( 35997),	-- Empire's Fall
+					q(36426),	-- Dueling Orbs
+					q(33872),	-- Dust of the Dead
+					q(33974),	-- Dying Wish
+					q(33973),	-- Dying Wish
+					q(35997),	-- Empire's Fall
 					qh( 36255),	-- Enchanted Highmaul Bracer
-					q( 34831),	-- Encounter Mushroom
+					q(34831),	-- Encounter Mushroom
 					qh( 33730),	-- Engineering Her Demise
 					qa( 34098),	-- Engineering Her Demise
 					qa( 34709),	-- Every Bit Counts
 					qh( 34710),	-- Every Bit Counts
-					q( 36010),	-- Flamebender's Tome
-					q( 36640),	-- Followers Obtained
+					q(36010),	-- Flamebender's Tome
+					q(36640),	-- Followers Obtained
 					qa( 36353),	-- For Old Times' Sake
-					q( 33581),	-- Forbidden Knowledge
+					q(33581),	-- Forbidden Knowledge
 					qa( 34612),	-- Forming the Scroll
 					qh( 34635),	-- Forming the Scroll
-					q( 34400),	-- Frenzied Manafeeders
-					q( 33961),	-- Frostfire Flowerpicker
+					q(34400),	-- Frenzied Manafeeders
+					q(33961),	-- Frostfire Flowerpicker
 					qh( 34335),	-- Garrison Campaign: Crows In The Field
 					qa( 38421),	-- Garrison Campaign: Onslaught at Auchindoun
 					qh( 38415),	-- Garrison Campaign: Onslaught at Auchindoun
@@ -218,30 +218,30 @@ _.Zones =
 					qh( 34579),	-- Gas Guzzlers
 					qa( 34777),	-- Gatekeepers of Auchindoun
 					qh( 34776),	-- Gatekeepers of Auchindoun
-					q( 34835),	-- Gather Energy
+					q(34835),	-- Gather Energy
 					qh( 34636),	-- Gathering the Spark
 					qa( 34619),	-- Gathering the Spark
 					qh( 33721),	-- Gazlowe's Solution
-					q( 34834),	-- General Commentary
+					q(34834),	-- General Commentary
 					qh( 34837),	-- Going to the Gordunni
 					qa( 34578),	-- Going to the Gordunni
-					q( 33966),	-- Gorgrond Flowerpicker
-					q( 33727),	-- Heal Up
-					q( 36009),	-- Heart of the Fury
+					q(33966),	-- Gorgrond Flowerpicker
+					q(33727),	-- Heal Up
+					q(36009),	-- Heart of the Fury
 					qh( 36589),	-- Heavy Arms
-					q( 34163),	-- Hiding in the Shadows
+					q(34163),	-- Hiding in the Shadows
 					qa( 34407),	-- Holding the Line
 					qh( 34418),	-- Holding the Line
-					q( 44571),	-- Honor the Flame
-					q( 36006),	-- Hunter: Hunted
+					q(44571),	-- Honor the Flame
+					q(36006),	-- Hunter: Hunted
 					qa( 35045),	-- In Ared's Memory
 					qa( 34089),	-- In Short Supply
 					qh( 33735),	-- In Short Supply
-					q( 34934),	-- Initial Defenders
+					q(34934),	-- Initial Defenders
 					qa( 34157),	-- Into the Heart of Madness
-					q( 33970),	-- Into the Hollow
+					q(33970),	-- Into the Hollow
 					qa( 33958),	-- Into the Hollow
-					q( 33988),	-- Invasion of the Soul Eaters
+					q(33988),	-- Invasion of the Soul Eaters
 					qh( 34576),	-- Iridium Recovery
 					qa( 34573),	-- Iridium Recovery
 					qh( 33736),	-- Iron Them Out
@@ -251,36 +251,36 @@ _.Zones =
 					qh( 34949),	-- Joining the Ranks
 					qa( 34993),	-- Joining the Ranks
 					qa( 33882),	-- Just Peachicky
-					q( 34691),	-- Just the Beginning
+					q(34691),	-- Just the Beginning
 					qa( 34448),	-- Kaelynara Sunchaser
 					qh( 34447),	-- Kaelynara Sunchaser
-					q( 34821),	-- Khadgar Summon
+					q(34821),	-- Khadgar Summon
 					qa( 34963),	-- Khadgar's Plan
 					qh( 34962),	-- Khadgar's Plan
-					q( 34906),	-- Krelas Summoned
-					q( 33582),	-- Kura's Vengeance
-					q( 37421),	-- Kuuro's Claim
-					q( 35998),	-- Legacy of the Sorcerer Kings
+					q(34906),	-- Krelas Summoned
+					q(33582),	-- Kura's Vengeance
+					q(37421),	-- Kuuro's Claim
+					q(35998),	-- Legacy of the Sorcerer Kings
 					qa( 34452),	-- Light's Rest
 					qh( 34766),	-- Logistical Nightmare
-					q( 34561),	-- Mage Tower
-					q( 37302),	-- Mage Tower
-					q( 37303),	-- Mage Tower
-					q( 34567),	-- Mage Tower
-					q( 35051),	-- Mage Tower Complete
+					q(34561),	-- Mage Tower
+					q(37302),	-- Mage Tower
+					q(37303),	-- Mage Tower
+					q(34567),	-- Mage Tower
+					q(35051),	-- Mage Tower Complete
 					qa( 34815),	-- Making Acquaintances
 					qh( 34814),	-- Making Acquaintances
-					q( 36013),	-- Might of the Elemental Lords
-					q( 35237),	-- Mor'gran Logworks
-					q( 34772),	-- Morkeths Cage
-					q( 34946),	-- Morkurk Greeting
-					q( 37838),	-- My Garona
-					q( 34464),	-- Mysterious Boots
-					q( 34465),	-- Mysterious Hat
-					q( 34463),	-- Mysterious Ring
-					q( 34466),	-- Mysterious Staff
-					q( 33963),	-- Nagrand Flowerpicker
-					q( 34013),	-- Never Forget
+					q(36013),	-- Might of the Elemental Lords
+					q(35237),	-- Mor'gran Logworks
+					q(34772),	-- Morkeths Cage
+					q(34946),	-- Morkurk Greeting
+					q(37838),	-- My Garona
+					q(34464),	-- Mysterious Boots
+					q(34465),	-- Mysterious Hat
+					q(34463),	-- Mysterious Ring
+					q(34466),	-- Mysterious Staff
+					q(33963),	-- Nagrand Flowerpicker
+					q(34013),	-- Never Forget
 					qh( 35238),	-- New Owner					
 					qa( 35239),	-- New Owner
 					qh( 35537),	-- News from Spires of Arak
@@ -289,93 +289,93 @@ _.Zones =
 					qh( 34874),	-- Next Steps
 					qa( 33530),	-- Nightmare in the Tomb
 					qa( 34804),	-- Not In Your House
-					q( 34677),	-- NOT USED
+					q(34677),	-- NOT USED
 					qa( 35227),	-- Ogre Diplomacy
 					qh( 34122),	-- Ogre Diplomacy
-					q( 33980),	-- Ogrish Fortitude
-					q( 34330),	-- Ogrish Fortitude Selected
+					q(33980),	-- Ogrish Fortitude
+					q(34330),	-- Ogrish Fortitude Selected
 					qh( 35226),	-- Old Friends, New Enemies
 					qa( 36801),	-- One Step Ahead
 					qh( 34683),	-- One Step Ahead
-					q( 37834),	-- Orb of Dominion
+					q(37834),	-- Orb of Dominion
 					qa( 34911),	-- Orbs of Power
 					qh( 34889),	-- Orbs of Power
-					q( 35236),	-- Orunai Coast
+					q(35236),	-- Orunai Coast
 					qa( 34571),	-- Out of Jovite
 					qh( 34577),	-- Out of Jovite
-					q( 34234),	-- Payback
-					q( 36296),	-- Phylarch the Evergreen
-					q( 33734),	-- Pieces of Us
-					q( 34904),	-- Portal Vision
-					q( 36004),	-- Power Unleashed
+					q(34234),	-- Payback
+					q(36296),	-- Phylarch the Evergreen
+					q(33734),	-- Pieces of Us
+					q(34904),	-- Portal Vision
+					q(36004),	-- Power Unleashed
 					qa( 34458),	-- Powering the Defenses
-					q( 35249),	-- Powering the Defenses
-					q( 36017),	-- Prisoner of the Mind
+					q(35249),	-- Powering the Defenses
+					q(36017),	-- Prisoner of the Mind
 					qa( 34978),	-- Prized Repossessions
 					qh( 34858),	-- Prized Repossessions
-					q( 34872),	-- Prized Repossessions Tracking
-					q( 34985),	-- Prized Repossessions Tracking
-					q( 34833),	-- Prune Ancient
+					q(34872),	-- Prized Repossessions Tracking
+					q(34985),	-- Prized Repossessions Tracking
+					q(34833),	-- Prune Ancient
 					qa( 34979),	-- Punching Through
 					qh( 34855),	-- Punching Through
-					q( 34986),	-- Punching Through Tracking
-					q( 34873),	-- Punching Through Tracking
-					q( 33578),	-- Pyrophobia
+					q(34986),	-- Punching Through Tracking
+					q(34873),	-- Punching Through Tracking
+					q(33578),	-- Pyrophobia
 					qa( 35683),	-- Reclaiming the City
 					qh( 35684),	-- Reclaiming the City
 					qa( 36918),	-- Requisition a Riverbeast
 					qh( 36945),	-- Requisition a Riverbeast
-					q( 34508),	-- Restalaan, Captain of the Guard
+					q(34508),	-- Restalaan, Captain of the Guard
 					qa( 35254),	-- Retribution for the Light
 					qh( 34144),	-- Retribution for the Light
-					q( 36012),	-- Reverse Piracy
+					q(36012),	-- Reverse Piracy
 					qa( 37005),	-- Riverbeast Training: Gezz'ran
 					qh( 37071),	-- Riverbeast Training: Gezz'ran
-					q( 33732),	-- Sabotage Siege Weapons
+					q(33732),	-- Sabotage Siege Weapons
 					qa( 37191),	-- Sanketsu, The Burning Blade
 					qh( 37192),	-- Sanketsu, The Burning Blade
 					qa( 34240),	-- Scheduled Pickup
 					qh( 34242),	-- Scheduled Pickup
-					q( 34503),	-- Screaming Telmor Citizen
+					q(34503),	-- Screaming Telmor Citizen
 					qh( 38416),	-- Secrets of the Sargerei
 					qa( 38562),	-- Secrets of the Sargerei
-					q( 35192),	-- See Reinforcements Teleport
+					q(35192),	-- See Reinforcements Teleport
 					qh( 34721),	-- Seek Out the Seer
 					qa( 33871),	-- Seek Out the Seer
 					qh( 34803),	-- Send Them Running
-					q( 34969),	-- Serena Summoned
-					q( 33962),	-- Shadowmoon Flowerpicker
+					q(34969),	-- Serena Summoned
+					q(33962),	-- Shadowmoon Flowerpicker
 					qa( 33884),	-- Sher'KHAAAAAAANNNN!
 					qh( 34948),	-- Shredder Manual
 					qa( 34947),	-- Shredder Manual
 					qa( 35685),	-- Socrethar's Demise
 					qh( 35687),	-- Socrethar's Demise
-					q( 34053),	-- SoL Conversation Tracker
-					q( 36522),	-- Solidarity in Death
-					q( 36942),	-- Soulbinder Aedraa
+					q(34053),	-- SoL Conversation Tracker
+					q(36522),	-- Solidarity in Death
+					q(36942),	-- Soulbinder Aedraa
 					qa( 34701),	-- Speaker for the Dead
-					q( 33978),	-- Spirit of the Wolf
-					q( 34456),	-- Spirit of the Wolf
-					q( 34331),	-- Spirit of the Wolf Selected
+					q(33978),	-- Spirit of the Wolf
+					q(34456),	-- Spirit of the Wolf
+					q(34331),	-- Spirit of the Wolf Selected
 					qh( 34451),	-- Sunsworn Camp
 					qh( 34860),	-- Supply Recovery
 					qa( 34977),	-- Supply Recovery
-					q( 34871),	-- Supply Recovery Tracking
-					q( 34984),	-- Supply Recovery Tracking
-					q( 36937),	-- Talador - Bladefury Treasure - Burning Blade Cache
-					q( 33960),	-- Talador Flowerpicker
+					q(34871),	-- Supply Recovery Tracking
+					q(34984),	-- Supply Recovery Tracking
+					q(36937),	-- Talador - Bladefury Treasure - Burning Blade Cache
+					q(33960),	-- Talador Flowerpicker
 					qa( 36974),	-- Talbuk Training: Gezz'ran
 					qh( 37096),	-- Talbuk Training: Gezz'ran
-					q( 33965),	-- Tanaan Flowerpicker
-					q( 37208),	-- Taralune
-					q( 34472),	-- Temporal Juxtaposition
+					q(33965),	-- Tanaan Flowerpicker
+					q(37208),	-- Taralune
+					q(34472),	-- Temporal Juxtaposition
 					qa( 34090),	-- Thaelin's Quick Fix
 					qa( 34099),	-- The Battle for Shattrath
 					qh( 33731),	-- The Battle for Shattrath
 					qa( 37183),	-- The Critical Path
 					qa( 34676),	-- The Critical Path
-					q( 37841),	-- The Final Assault
-					q( 33976),	-- The Final Piece
+					q(37841),	-- The Final Assault
+					q(33976),	-- The Final Piece
 					qh( 34890),	-- The Final Step
 					qa( 34912),	-- The Final Step
 					qh( 34878),	-- The Foot of the Fortress
@@ -386,34 +386,34 @@ _.Zones =
 					qh( 34870),	-- The Lord of the Gordunni
 					qh( 34971),	-- The Only Way to Travel
 					qa( 34981),	-- The Only Way to Travel
-					q( 33580),	-- The Purge of Veil Shadar
+					q(33580),	-- The Purge of Veil Shadar
 					qa( 34563),	-- The Quarry Quandary
 					qh( 34569),	-- The Quarry Quandary
 					qh( 38417),	-- The Sargerei Menace
 					qa( 38565),	-- The Sargerei Menace
-					q( 36005),	-- The Scrying Game
-					q( 37835),	-- The Shadow War
-					q( 36027),	-- The Staff of Archmage Vargoth
+					q(36005),	-- The Scrying Game
+					q(37835),	-- The Shadow War
+					q(36027),	-- The Staff of Archmage Vargoth
 					qh( 36518),	-- The True Path
 					qa( 36519),	-- The True Path
-					q( 36016),	-- The Unbroken Circle
-					q( 36843),	-- They Came From Above
+					q(36016),	-- The Unbroken Circle
+					q(36843),	-- They Came From Above
 					qh( 33931),	-- This Is Not a Quest
 					qh( 36864),	-- Three Feet Under
 					qa( 34087),	-- Through the Looking Glass
 					qh( 33754),	-- Through the Looking Glass
-					q( 37964),	-- To Gul'dan!
+					q(37964),	-- To Gul'dan!
 					qa( 36512),	-- Together We Are Strong
 					qa( 34088),	-- Too Many Irons in the Fire
 					qh( 33722),	-- Too Many Irons in the Fire
-					q( 36007),	-- Touch of the Kirin-Tor
-					q( 33981),	-- Touched by Fire
-					q( 34332),	-- Touched by Fire Selected
-					q( 33982),	-- Touched by Ice
-					q( 34333),	-- Touched by Ice Selected
-					q( 34562),	-- Trigger Teron'gor Defense Spawns
-					q( 34399),	-- Trouble In The Mine
-					q( 34047),	-- Tuurem Explosion Tracker
+					q(36007),	-- Touch of the Kirin-Tor
+					q(33981),	-- Touched by Fire
+					q(34332),	-- Touched by Fire Selected
+					q(33982),	-- Touched by Ice
+					q(34333),	-- Touched by Ice Selected
+					q(34562),	-- Trigger Teron'gor Defense Spawns
+					q(34399),	-- Trouble In The Mine
+					q(34047),	-- Tuurem Explosion Tracker
 					qh( 35102),	-- Unleashed Steel
 					qh( 34888),	-- Vicious Viziers
 					qa( 34910),	-- Vicious Viziers
@@ -427,15 +427,15 @@ _.Zones =
 					qh( 34108),	-- Wanted: Kil'uun
 					qh( 34106),	-- Wanted: Ra'tok the Hammer
 					qa( 34105),	-- Wanted: Ra'tok the Hammer
-					q( 34523),	-- Warlock Speaking to Gul'dan
+					q(34523),	-- Warlock Speaking to Gul'dan
 					qa( 34351),	-- We Must Construct Additional Pylons
-					q( 36018),	-- We're Not Finished...
-					q( 33579),	-- What the Draenei Found
+					q(36018),	-- We're Not Finished...
+					q(33579),	-- What the Draenei Found
 					qa( 34909),	-- While We're in the Neighborhood
 					qh( 34887),	-- While We're in the Neighborhood
 					qa( 34773),	-- Why Is The Brew Gone?
-					q( 37422),	-- Zangarra
-					q( 34660),	-- Zorkra's Fall
+					q(37422),	-- Zangarra
+					q(34660),	-- Zorkra's Fall
 --]]					
 					q(33874,  {  -- Aruumel's Rest
 						i(113035),

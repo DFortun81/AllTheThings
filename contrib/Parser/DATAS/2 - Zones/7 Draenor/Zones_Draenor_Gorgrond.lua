@@ -131,10 +131,10 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q( 36037),	-- A Centurion Without a Cause
+					q(36037),	-- A Centurion Without a Cause
 					qh( 33593),	-- A Flare for the Dramatic
-					q( 34339),	-- A Goren's Feast
-					q( 35210),	-- A Great Escape
+					q(34339),	-- A Goren's Feast
+					q(35210),	-- A Great Escape
 					qh( 36482),	-- A Green Ogron?
 					qa( 36523),	-- A Green Ogron?
 					qh( 35030),	-- A Grim Harvest
@@ -147,70 +147,70 @@ _.Zones =
 					qa( 35225),	-- A Heavy Helping Hand
 					qa( 34704),	-- A Rediscovered Legend
 					qh( 34697),	-- A Rediscovered Legend
-					q( 36250),	-- Active Choice: Lumber Mill
-					q( 36249),	-- Active Choice: Lumber Mill
-					q( 36251),	-- Active Choice: Sparring Arena
-					q( 36252),	-- Active Choice: Sparring Arena
-					q( 36473),	-- Affliction Ridge
+					q(36250),	-- Active Choice: Lumber Mill
+					q(36249),	-- Active Choice: Lumber Mill
+					q(36251),	-- Active Choice: Sparring Arena
+					q(36252),	-- Active Choice: Sparring Arena
+					q(36473),	-- Affliction Ridge
 					qh( 38574),	-- All Hands on Deck
 					qa( 38259),	-- All Hands on Deck
 					qa( 36437),	-- Ambassador to the Ancient
 					qh( 33685),	-- Ambassador to the Ancient
-					q( 34336),	-- Ambushing the Enemy
-					q( 39309),	-- Arcane Orb
-					q( 39310),	-- Artillery Strike
-					q( 35037),	-- Bad at Breaking
+					q(34336),	-- Ambushing the Enemy
+					q(39309),	-- Arcane Orb
+					q(39310),	-- Artillery Strike
+					q(35037),	-- Bad at Breaking
 					qh( 35016),	-- Basic Skulltaking
-					q( 35870),	-- Basilisk Butcher
+					q(35870),	-- Basilisk Butcher
 					qh( 33662),	-- Beatface vs. Boulder
 					qa( 36438),	-- Beatface vs. Boulder
 					qh( 36944),	-- Besting a Boar
 					qa( 36913),	-- Besting a Boar
-					q( 34347),	-- Bladefury's Orders
+					q(34347),	-- Bladefury's Orders
 					qa( 36995),	-- Boar Training: Riplash
 					qh( 37032),	-- Boar Training: Riplash
-					q( 39308),	-- Bodyguard
-					q( 36603),	-- Brimstone Springs
+					q(39308),	-- Bodyguard
+					q(36603),	-- Brimstone Springs
 					qa( 35205),	-- Burn the Bodies
 					qa( 35206),	-- Bushwhacker
 					qh( 35432),	-- Bushwhacker
-					q( 39306),	-- Call to Arms
-					q( 35730),	-- Cauterizing Wounds
+					q(39306),	-- Call to Arms
+					q(35730),	-- Cauterizing Wounds
 					qa( 35702),	-- Chains of Iron
 					qh( 35136),	-- Chains of Iron
-					q( 35508),	-- Chapter I: Plant Food
+					q(35508),	-- Chapter I: Plant Food
 					qa( 35654),	-- Chapter I: Plant Food
-					q( 35527),	-- Chapter II: The Harvest
+					q(35527),	-- Chapter II: The Harvest
 					qa( 35651),	-- Chapter II: The Harvest
-					q( 35524),	-- Chapter III: Ritual of the Charred
+					q(35524),	-- Chapter III: Ritual of the Charred
 					qa( 35650),	-- Chapter III: Ritual of the Charred
 					qh( 35027),	-- Clearing the Way
 					qh( 37050),	-- Clefthoof Training: Riplash
 					qa( 36985),	-- Clefthoof Training: Riplash
 					qa( 35207),	-- Coalpart's Revenge
-					q( 34224),	-- Creature Treasure: Bloodcleave
-					q( 34412),	-- Creature Treasure: Gnarljaw
-					q( 34222),	-- Creature Treasure: Iron Horde Blacksmith
-					q( 34225),	-- Creature Treasure: Iron Horde Slacker
-					q( 34223),	-- Creature Treasure: Iron Horde Stable Master
-					q( 34411),	-- Creature Treasure: King Slime
+					q(34224),	-- Creature Treasure: Bloodcleave
+					q(34412),	-- Creature Treasure: Gnarljaw
+					q(34222),	-- Creature Treasure: Iron Horde Blacksmith
+					q(34225),	-- Creature Treasure: Iron Horde Slacker
+					q(34223),	-- Creature Treasure: Iron Horde Stable Master
+					q(34411),	-- Creature Treasure: King Slime
 					qh( 35433),	-- Cut Them Down
 					qh( 35430),	-- Cutter
-					q( 37201),	-- Cymre Brightblade
+					q(37201),	-- Cymre Brightblade
 					qa( 35208),	-- Dark Iron Down
-					q( 39287),	-- Deathtalon
+					q(39287),	-- Deathtalon
 					qa( 35212),	-- Deeproot
 					qa( 38254),	-- Derailment
 					qh( 38570),	-- Derailment
-					q( 39289),	-- Doomroller
+					q(39289),	-- Doomroller
 					qh( 35501),	-- Doomshot
 					qh( 35507),	-- Down the Goren Hole
 					qa( 35229),	-- Down the Goren Hole
-					q( 40105),	-- Drakum
-					q( 36504),	-- Evermorn Springs
+					q(40105),	-- Drakum
+					q(36504),	-- Evermorn Springs
 					qh( 33563),	-- Eye Candy
-					q( 35139),	-- Eye in the Sky
-					q( 35128),	-- Fair Warning
+					q(35139),	-- Eye in the Sky
+					q(35128),	-- Fair Warning
 					qh( 36344),	-- Feeding An Army
 					qa( 36272),	-- Feeding An Army
 					qa( 36134),	-- Garrison Campaign: Awakening
@@ -218,64 +218,64 @@ _.Zones =
 					qh( 34335),	-- Garrison Campaign: Crows In The Field
 					qa( 34409),	-- Garrison Campaign: Crows In The Field
 					qh( 36832),	-- Get the Xuk Outta Here!
-					q( 34699),	-- Getting Gladiators
-					q( 40106),	-- Gondar
+					q(34699),	-- Getting Gladiators
+					q(40106),	-- Gondar
 					qh( 33544),	-- Goren, Goren, Gone!
 					qh( 35506),	-- Growing Wood
 					qa( 35652),	-- Growing Wood
-					q( 40074),	-- Guk
+					q(40074),	-- Guk
 					qa( 36210),	-- Hard Shell
 					qa( 36595),	-- He Drew Aggro...culture
 					qh( 35040),	-- Heart of the Fen
 					qa( 35659),	-- Heart of the Fen
-					q( 34340),	-- Heating Up
-					q( 44573),	-- Honor the Flame
+					q(34340),	-- Heating Up
+					q(44573),	-- Honor the Flame
 					qh( 38572),	-- Hook, Line, and... Sink Him!					
 					qa( 38256),	-- Hook, Line, and... Sink Him!
-					q( 34279),	-- I Am Blook
+					q(34279),	-- I Am Blook
 					qa( 35828),	-- I Drew Aggro...culture
-					q( 35218),	-- Iron Horde Orders
+					q(35218),	-- Iron Horde Orders
 					qa( 36508),	-- Is This One of Yours?
 					qh( 35036),	-- Is This One of Yours?
 					qa( 35235),	-- Iyu
 					qh( 35510),	-- Iyu
-					q( 36571),	-- Iyun Weald
+					q(36571),	-- Iyun Weald
 					qh( 36460),	-- Just Another Stick in the Wall
 					qa( 35233),	-- Just In Case
 					qh( 35511),	-- Kaz the Shrieker
-					q( 34702),	-- Krav'ogra
-					q( 33706),	-- Laying Dionor to Rest
-					q( 36443),	-- Laying Dionor to Rest
+					q(34702),	-- Krav'ogra
+					q(33706),	-- Laying Dionor to Rest
+					q(36443),	-- Laying Dionor to Rest
 					qh( 35129),	-- Leave Every Soldier Behind
 					qa( 36223),	-- Leave Every Soldier Behind
-					q( 35505),	-- Lost Lumberjack
+					q(35505),	-- Lost Lumberjack
 					qa( 36368),	-- Lost Lumberjack
 					qa( 35055),	-- Lost Mole Machines
-					q( 34992),	-- Lumber Mill
-					q( 35049),	-- Lumber Mill
+					q(34992),	-- Lumber Mill
+					q(35049),	-- Lumber Mill
 					qa( 36828),	-- Lumber, I Hardly Knew 'Er
-					q( 34413),	-- Lumberstruck
+					q(34413),	-- Lumberstruck
 					qa( 36833),	-- May I Be of Service?
-					q( 39307),	-- Mechasuit
+					q(39307),	-- Mechasuit
 					qa( 35644),	-- Mercy for the Living
-					q( 36563),	-- Mistcreep Mire
+					q(36563),	-- Mistcreep Mire
 					qh( 35399),	-- Mossy Fate
-					q( 40107),	-- Mudlump
+					q(40107),	-- Mudlump
 					qa( 35642),	-- Mysterious Pod
 					qh( 35021),	-- Mysterious Pod
-					q( 34463),	-- Mysterious Ring
-					q( 34700),	-- Nazgrel
-					q( 34012),	-- Need More Teeth
+					q(34463),	-- Mysterious Ring
+					q(34700),	-- Nazgrel
+					q(34012),	-- Need More Teeth
 					qa( 36495),	-- News from Talador
 					qh( 36494),	-- News from Talador
-					q( 35934),	-- Nisha's Vengeance
+					q(35934),	-- Nisha's Vengeance
 					qh( 38573),	-- Nothing Remains
 					qa( 38258),	-- Nothing Remains
-					q( 35026),	-- On the Mend
-					q( 35946),	-- Peckers the Majestic
+					q(35026),	-- On the Mend
+					q(35946),	-- Peckers the Majestic
 					qh( 36812),	-- Penny For Your Thoughts
 					qh( 36434),	-- Penny From Heaven
-					q( 36296),	-- Phylarch the Evergreen
+					q(36296),	-- Phylarch the Evergreen
 					qa( 36436),	-- Plant Pruning
 					qh( 33689),	-- Plant Pruning
 					qh( 35429),	-- Pollen Power
@@ -306,17 +306,17 @@ _.Zones =
 					qh( 36097),	-- Proof of Strength: Ravager Claw
 					qh( 36101),	-- Proof of Strength: Wasp Stinger
 					qa( 36098),	-- Proof of Strength: Wasp Stinger
-					q( 40073),	-- Pugg
+					q(40073),	-- Pugg
 					qa( 35686),	-- Rage and Wisdom
 					qh( 35880),	-- Rage and Wisdom
 					qa( 35666),	-- Rangari in the Red
 					qh( 33694),	-- Reagents from Rakthoth
 					qa( 36441),	-- Reclaiming Property
 					qa( 35050),	-- Rescue Rangari
-					q( 33633),	-- Rooter the Ravenous
-					q( 40075),	-- Rukdug
+					q(33633),	-- Rooter the Ravenous
+					q(40075),	-- Rukdug
 					qa( 36440),	-- Saberon Population Reduction
-					q( 33705),	-- Sacking the Saberon Stronghold
+					q(33705),	-- Sacking the Saberon Stronghold
 					qa( 35633),	-- Scout Forensics
 					qh( 35536),	-- Secrets of the Botani
 					qa( 35664),	-- Seedbearers of Bad News
@@ -327,13 +327,13 @@ _.Zones =
 					qa( 36439),	-- Shredder vs. Saberon
 					qh( 35017),	-- Skulltaker's Revenge
 					qh( 35667),	-- Skulltakers in Crimson Fen
-					q( 34698),	-- Slave Hunters
-					q( 40104),	-- Smashum Grabb
-					q( 36476),	-- South Gronn Canyon
-					q( 35064),	-- Sparring Arena					
-					q( 35149),	-- Sparring Arena
+					q(34698),	-- Slave Hunters
+					q(40104),	-- Smashum Grabb
+					q(36476),	-- South Gronn Canyon
+					q(35064),	-- Sparring Arena					
+					q(35149),	-- Sparring Arena
 					qh( 33661),	-- Steamscar "Reagents"
-					q( 36566),	-- Stonemaul Arena
+					q(36566),	-- Stonemaul Arena
 					qa( 36575),	-- Strike While the Iron is Hot
 					qh( 36574),	-- Strike While the Iron is Hot
 					qa( 36576),	-- Strike While the Iron is Hot
@@ -344,20 +344,20 @@ _.Zones =
 					qh( 33695),	-- Taking the Death Bloom
 					qa( 36973),	-- Talbuk Training: Riplash
 					qh( 37095),	-- Talbuk Training: Riplash
-					q( 39128),	-- Tanaan Vignette
+					q(39128),	-- Tanaan Vignette
 					qa( 35708),	-- Tangleheart
-					q( 36564),	-- Tangleheart
+					q(36564),	-- Tangleheart
 					qh( 35707),	-- Tangleheart
-					q( 39288),	-- Terrorfist
-					q( 34703),	-- The Axe of Kor'gall
+					q(39288),	-- Terrorfist
+					q(34703),	-- The Axe of Kor'gall
 					qh( 34341),	-- The Beating Heart
 					qa( 34410),	-- The Beating Heart
 					qa( 34030),	-- The Captive Engineer
 					qa( 36208),	-- The Crystal Shard
-					q( 34338),	-- The Descent
+					q(34338),	-- The Descent
 					qa( 35883),	-- The Fists of Vaandaam
-					q( 34337),	-- The Giant Cauldron
-					q( 35925),	-- The Gronn Strategy
+					q(34337),	-- The Giant Cauldron
+					q(35925),	-- The Gronn Strategy
 					qh( 35400),	-- The Infested
 					qa( 35214),	-- The Infested
 					qh( 35882),	-- The Interest of Bruto
@@ -366,7 +366,7 @@ _.Zones =
 					qh( 35434),	-- The Life Spring
 					qh( 35058),	-- The Mysterious Flask
 					qa( 34029),	-- The Prototype
-					q( 36500),	-- The Razorbloom
+					q(36500),	-- The Razorbloom
 					qa( 35213),	-- The Razorbloom
 					qh( 36474),	-- The Razorbloom
 					qh( 33660),	-- The Sacking of the Saberon
@@ -379,9 +379,9 @@ _.Zones =
 					qa( 33533),	-- The Secrets of Gorgrond
 					qa( 37945),	-- The Silent Skull: Taking from the Taker
 					qh( 37996),	-- The Silent Skull: Taking from the Taker
-					q( 37942),	-- The Silent Skull: The First Reagent
-					q( 37943),	-- The Silent Skull: The Second Reagent
-					q( 37944),	-- The Silent Skull: The Third Reagent
+					q(37942),	-- The Silent Skull: The First Reagent
+					q(37943),	-- The Silent Skull: The Second Reagent
+					q(37944),	-- The Silent Skull: The Third Reagent
 					qh( 35152),	-- The Sparring Arena
 					qa( 35137),	-- The Sparring Arena
 					qa( 38255),	-- The Train Gang
@@ -390,7 +390,7 @@ _.Zones =
 					qa( 35215),	-- The Voice of Iyu
 					qa( 34028),	-- These Look Familiar...
 					qh( 36488),	-- Thieving Dwarves
-					q( 37941),	-- Treasure Contract: The Infected Orc
+					q(37941),	-- Treasure Contract: The Infected Orc
 					qh( 36108),	-- Trophy Hunter of Gorgrond
 					qa( 36107),	-- Trophy Hunter of Gorgrond
 					qh( 36503),	-- Trophy of Glory: Biolante
@@ -409,8 +409,8 @@ _.Zones =
 					qa( 35820),	-- Trophy of Glory: Khargax the Devourer
 					qa( 35817),	-- Trophy of Glory: Roardan the Sky Terror
 					qh( 35818),	-- Trophy of Glory: Roardan the Sky Terror
-					q( 36480),	-- Valley of Destruction
-					q( 39290),	-- Vengeance
+					q(36480),	-- Valley of Destruction
+					q(39290),	-- Vengeance
 					qa( 35640),	-- Vengeance for the Fallen
 					qa( 35834),	-- Wake of the Genesaur
 					qh( 35487),	-- We Burn the Dead
@@ -425,7 +425,7 @@ _.Zones =
 					qa( 36209),	-- What's Under There?
 					qa( 35234),	-- Will of the Genesaur
 					qh( 35509),	-- Will of the Genesaur
-					q( 35653),	-- Wood is Wood
+					q(35653),	-- Wood is Wood
 					qh( 35041),	-- Xuk It!
 					qh( 35202),	-- Xuk Me, Right?
 					qh( 35151),	-- Your Base, Your Choice

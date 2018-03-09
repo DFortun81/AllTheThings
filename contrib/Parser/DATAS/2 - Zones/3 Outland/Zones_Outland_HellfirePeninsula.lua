@@ -118,7 +118,7 @@ _.Zones =
 --[[					
 					qh(  9410),	-- A Spirit Guide
 					qh(  9401),	-- A Strange Weapon
-					q( 10367),	-- A Traitor Among Us
+					q(10367),	-- A Traitor Among Us
 					qa( 29689),	-- Advancing the Campaign
 					qh( 29688),	-- Advancing the Campaign
 					qa(  9383),	-- An Ambitious Plan
@@ -130,7 +130,7 @@ _.Zones =
 					qh( 10286),	-- Arelion's Secret
 					qh( 10120),	-- Arrival in Outland
 					qa( 10288),	-- Arrival in Outland
-					q( 10369),	-- Arzeth's Demise
+					q(10369),	-- Arzeth's Demise
 					qa(  9543),	-- Atonement
 --]]					
 					q(9418,  {  -- Avruu's Orb
@@ -142,10 +142,10 @@ _.Zones =
 						i(30857),
 					}),
 --[[					
-					q( 45415),	-- Between Worlds
+					q(45415),	-- Between Worlds
 					qh(  9397),	-- Birds of a Feather
-					q( 11516),	-- Blast the Gateway
-					q( 11515),	-- Blood for Blood
+					q(11516),	-- Blast the Gateway
+					q(11515),	-- Blood for Blood
 					qa( 47025),	-- Blood: Aid of the Illidari
 					qh( 10250),	-- Bloody Vengeance
 					qh( 10538),	-- Boiling Blood
@@ -179,15 +179,15 @@ _.Zones =
 						i(28063),
 					}),
 --[[					
-					q( 45414),	-- Confirming Suspicions
-					q( 10134),	-- Crimson Crystal Clue
+					q(45414),	-- Confirming Suspicions
+					q(10134),	-- Crimson Crystal Clue
 					qa(  9399),	-- Cruel Taskmasters
 					qh( 10136),	-- Cruel's Intentions
 					qa( 10484),	-- Cursed Talismans
 					qa( 45843),	-- Dark Omens
 					qa(  9398),	-- Deadly Predators
 					qh( 10229),	-- Decipher the Tome
-					q(  9372),	-- Demonic Contamination
+					q(9372),	-- Demonic Contamination
 					qh( 11747),	-- Desecrate this Fire!
 					qa( 11732),	-- Desecrate this Fire!
 					qh( 11749),	-- Desecrate this Fire!
@@ -262,7 +262,7 @@ _.Zones =
 					}),
 --[[					
 					qa(  9563),	-- Gaining Mirren's Trust
-					q( 45413),	-- Gathering Information
+					q(45413),	-- Gathering Information
 					qa( 10382),	-- Go to the Front
 					qa( 10762),	-- Grand Master Dumphry
 --]]					
@@ -275,7 +275,7 @@ _.Zones =
 					}),
 --[[					
 					qa( 47023),	-- Guardian: Aid of the Illidari
-					q(  9361),	-- Helboar, the Other White Meat
+					q(9361),	-- Helboar, the Other White Meat
 					qa( 10106),	-- Hellfire Fortifications
 					qh( 13409),	-- Hellfire Fortifications
 					qh( 10110),	-- Hellfire Fortifications
@@ -294,7 +294,7 @@ _.Zones =
 					qa( 11818),	-- Honor the Flame
 					qh( 11851),	-- Honor the Flame
 					qa( 10764),	-- Hotter than Hell					
-					q( 10238),	-- How to Serve Goblins
+					q(10238),	-- How to Serve Goblins
 --]]					
 					qh(10086,  {  -- I Work... For The Horde!
 						i(29931),
@@ -318,7 +318,7 @@ _.Zones =
 					qh( 10213),	-- Investigate the Crash
 					qa( 10140),	-- Journey to Honor Hold
 					qh( 10289),	-- Journey to Thrallmar
-					q( 10159),	-- Keep Thornfang Hill Clear!
+					q(10159),	-- Keep Thornfang Hill Clear!
 					qa( 10160),	-- Know your Enemy
 --]]					
 					qa(10078,  {  -- Laying Waste to the Unwanted
@@ -341,7 +341,7 @@ _.Zones =
 						i(25502),
 						i(25504),
 					}),
---					q(  9373),	-- Missing Missive
+--					q(9373),	-- Missing Missive
 					qh(10129,  {  -- Mission: Gateways Murketh and Shaadraz
 						i(29942),
 						i(29937),
@@ -366,7 +366,7 @@ _.Zones =
 						i(29929),
 						i(29944),
 					}),
-					q( 10403),	-- Naladu
+					q(10403),	-- Naladu
 					q(10351,  {  -- Natural Remedies
 						i(28074),
 						i(28075),
@@ -374,8 +374,8 @@ _.Zones =
 						i(28070),
 					}),
 --[[					
-					q( 31922),	-- Nicki Tinytech
-					q( 10236),	-- Outland Sucks!
+					q(31922),	-- Nicki Tinytech
+					q(10236),	-- Outland Sucks!
 					qa( 10400),	-- Overlord
 					qa( 11882),	-- Playing with Fire
 					qh( 11915),	-- Playing with Fire
@@ -383,7 +383,7 @@ _.Zones =
 					qa( 45412),	-- Protection: Aid of the Illidari
 					qa( 47022),	-- Protection: Aid of the Illidari
 					qa(  9385),	-- Rampaging Ravagers
-					q(  9349),	-- Ravager Egg Roundup
+					q(9349),	-- Ravager Egg Roundup
 					qh( 10291),	-- Report to Nazgrel
 					qh( 10875),	-- Report to Nazgrel
 					qh( 10103),	-- Report to Zurai
@@ -391,13 +391,13 @@ _.Zones =
 					qa(  9423),	-- Return to Obadei
 					qa( 10346),	-- Return to the Abyssal Shelf
 					qh( 10347),	-- Return to the Abyssal Shelf
-					q(  9732),	-- Return to the Marsh
+					q(9732),	-- Return to the Marsh
 					qh( 10388),	-- Return to Thrallmar
 					qa(  9430),	-- Sha'naar Relics
 					qh( 14065),	-- Sharing a Bountiful Feast
 					qa( 10340),	-- Shatter Point
-					q( 10629),	-- Shizz Work
-					q(  9356),	-- Smooth as Butter
+					q(10629),	-- Shizz Work
+					q(9356),	-- Smooth as Butter
 --]]					
 					qh(9387,  {  -- Source of the Corruption
 						i(25915),
@@ -413,7 +413,7 @@ _.Zones =
 					qa(  9417),	-- The Arakkoa Threat
 					qh(  9400),	-- The Assassin
 					qh( 10230),	-- The Battle Horn
-					q(  9912),	-- The Cenarion Expedition
+					q(9912),	-- The Cenarion Expedition
 --]]					
 					qh(9370,  {  -- The Cleansing Must Be Stopped
 						i(25501),
@@ -423,8 +423,8 @@ _.Zones =
 						i(31715),
 					}),
 --[[					
-					q( 10368),	-- The Dreghood Elders
-					q( 10349),	-- The Earthbinder
+					q(10368),	-- The Dreghood Elders
+					q(10349),	-- The Earthbinder
 					qa( 10935),	-- The Exorcism of Colonel Jules
 					qh( 10813),	-- The Eyes of Grillok
 					qh( 11003),	-- The Fall of Magtheridon
@@ -457,7 +457,7 @@ _.Zones =
 						i(25983),
 					}),
 --[[					
-					q( 11526),	-- The Missing Magistrix
+					q(11526),	-- The Missing Magistrix
 					qh( 10287),	-- The Mistress Revealed
 --]]					
 					qa(10142,  {  -- The Path of Anguish
@@ -494,7 +494,7 @@ _.Zones =
 					qa( 46314),	-- Vengeance: Seeking Kor'vas
 					qh( 10393),	-- Vile Plans
 					qh( 10294),	-- Void Ridge
-					q(  9351),	-- Voidwalkers Gone Wild
+					q(9351),	-- Voidwalkers Gone Wild
 --]]					
 					qh(9466,  { -- Wanted: Blacktalon the Savage
 						i(25483),
@@ -505,7 +505,7 @@ _.Zones =
 					qh( 10809),	-- Wanted: Worg Master Kruush					
 					qh( 28705),	-- Warchief's Command: Outland!
 					qa( 10485),	-- Warlord of the Bleeding Hollow
-					q(  9724),	-- Warning the Cenarion Circle
+					q(9724),	-- Warning the Cenarion Circle
 --]]
 					qa(10055,  {  -- Waste Not, Want Not
 						i(29931),

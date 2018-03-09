@@ -93,20 +93,20 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q(  9914),	-- A Head Full of Ivory
+					q(9914),	-- A Head Full of Ivory
 					qa(  9792),	-- A Message to Telaar
 					qa( 11042),	-- A Mystifying Vision
-					q(  9800),	-- A Rare Bean
+					q(9800),	-- A Rare Bean
 					qh( 10102),	-- A Secret Revealed
 					qh( 11037),	-- A Strange Vision
 					qh( 10085),	-- A Visit With The Ancestors
 					qh( 10044),	-- A Visit With the Greatmother
-					q( 10669),	-- Against All Odds
-					q( 10668),	-- Against the Illidari
-					q( 10641),	-- Against the Legion
-					q(  9804),	-- Agitated Spirits of Skysong
-					q( 10640),	-- Altruis
-					q( 10689),	-- Altruis
+					q(10669),	-- Against All Odds
+					q(10668),	-- Against the Illidari
+					q(10641),	-- Against the Legion
+					q(9804),	-- Agitated Spirits of Skysong
+					q(10640),	-- Altruis
+					q(10689),	-- Altruis
 --]]					
 					qh(9907,  {  -- An Audacious Advance
 						i(25622),
@@ -114,7 +114,7 @@ _.Zones =
 						i(25624),
 					}),
 --[[					
-					q(  9928),	-- Armaments for Deception
+					q(9928),	-- Armaments for Deception
 					qh(  9891),	-- Because Kilrath is a Coward
 --]]					
 					qh(9916,  {  -- Bleeding Hollow Supply Crates
@@ -122,8 +122,8 @@ _.Zones =
 						i(25629),
 					}),
 --[[					
-					q(  9805),	-- Blessing of Incineratus
-					q(  9932),	-- Body of Evidence
+					q(9805),	-- Blessing of Incineratus
+					q(9932),	-- Body of Evidence
 --]]					
 					q(10111,  {  -- Bring Me The Egg!
 						i(28030),
@@ -131,7 +131,7 @@ _.Zones =
 						i(28031),
 					}),
 --[[					
-					q(  9999),	-- Buying Time
+					q(9999),	-- Buying Time
 					qh( 12392),	-- Candy Bucket
 					qa( 12357),	-- Candy Bucket
 --]]					
@@ -147,8 +147,8 @@ _.Zones =
 						i(25589),
 					}),
 --[[					
-					q(  9789),	-- Clefthoof Mastery
-					q(  9850),	-- Clefthoof Mastery
+					q(9789),	-- Clefthoof Mastery
+					q(9850),	-- Clefthoof Mastery
 --]]					
 					qa(9924,  {  -- Corki's Gone Missing Again
 						i(25631),
@@ -156,7 +156,7 @@ _.Zones =
 					}),
 --[[					
 					qa(  9954),	-- Corki's Ransom
-					q( 29571),	-- Defending the Wilds
+					q(29571),	-- Defending the Wilds
 					qa( 11732),	-- Desecrate this Fire!
 					qa( 11755),	-- Desecrate this Fire!
 					qh( 11750),	-- Desecrate this Fire!
@@ -170,7 +170,7 @@ _.Zones =
 					qh( 10107),	-- Diplomatic Measures
 					qa( 10108),	-- Diplomatic Measures
 					qa(  9917),	-- Do My Eyes Deceive Me
-					q(  9821),	-- Eating Damnation
+					q(9821),	-- Eating Damnation
 					qh( 11503),	-- Enemies, Old and New
 					qh( 36946),	-- Entangling an Elekk
 					qa( 36915),	-- Entangling an Elekk
@@ -191,8 +191,8 @@ _.Zones =
 						i(25544),
 					}),
 --[[					
-					q( 13800),	-- Get My Keys!
-					q(  9853),	-- Gurok the Usurper
+					q(13800),	-- Get My Keys!
+					q(9853),	-- Gurok the Usurper
 					qa(  9982),	-- He Called Himself Altruis...
 					qh(  9983),	-- He Called Himself Altruis...
 --]]					
@@ -206,21 +206,21 @@ _.Zones =
 					qa( 39197),	-- Hero's Call: Nagrand
 					qh( 11821),	-- Honor the Flame
 					qh( 11854),	-- Honor the Flame
-					q( 10109),	-- I Must Have Them!
-					q(  9897),	-- I'm Saved!
-					q( 10646),	-- Illidan's Pupil
+					q(10109),	-- I Must Have Them!
+					q(9897),	-- I'm Saved!
+					q(10646),	-- Illidan's Pupil
 					qa( 11502),	-- In Defense of Halaa
 					qa( 11964),	-- Incense for the Summer Scorchlings
-					q( 10010),	-- It's Just That Easy?
+					q(10010),	-- It's Just That Easy?
 					qa( 10954),	-- Jheel is at Aeris Landing!
 					qh( 11048),	-- Kroghan's Report
-					q( 10253),	-- Levixus the Soul Caller
+					q(10253),	-- Levixus the Soul Caller
 					qh( 10045),	-- Material Components
-					q(  9925),	-- Matters of Security
-					q(  9886),	-- Membership Benefits
-					q(  9885),	-- Membership Benefits
-					q(  9884),	-- Membership Benefits
-					q(  9887),	-- Membership Benefits
+					q(9925),	-- Matters of Security
+					q(9886),	-- Membership Benefits
+					q(9885),	-- Membership Benefits
+					q(9884),	-- Membership Benefits
+					q(9887),	-- Membership Benefits
 					qh(  9906),	-- Message in a Battle
 --]]
 					qh(9934,  {  -- Message to Garadar
@@ -234,9 +234,9 @@ _.Zones =
 --[[					
 					qh(  9944),	-- Missing Mag'hari Procession
 					qa(  9920),	-- Mo'mor the Breaker
-					q(  9883),	-- More Crystal Fragments
-					q(  9915),	-- More Heads Full of Ivory
-					q(  9892),	-- More Obsidian Warbeads
+					q(9883),	-- More Crystal Fragments
+					q(9915),	-- More Heads Full of Ivory
+					q(9892),	-- More Obsidian Warbeads
 					qa( 10477),	-- More Warbeads
 					qh( 10478),	-- More Warbeads!
 --]]					
@@ -260,9 +260,9 @@ _.Zones =
 						i(25584),
 					}),
 --[[					
-					q( 31924),	-- Narrok
+					q(31924),	-- Narrok
 					qa(  9918),	-- Not On My Watch!
-					q(  9893),	-- Obsidian Warbeads
+					q(9893),	-- Obsidian Warbeads
 					qh(  9865),	-- Once Were Warriors
 --]]					
 					qa(9873,  {  -- Ortor My Old Friend...
@@ -275,15 +275,15 @@ _.Zones =
 					qh( 10074),	-- Oshu'gun Crystal Powder
 					qa( 10077),	-- Oshu'gun Crystal Powder					
 					qh( 10075),	-- Oshu'gun Crystal Powder
-					q( 10004),	-- Patience and Understanding
+					q(10004),	-- Patience and Understanding
 					qh( 10479),	-- Proving Your Strength
 					qh(  9797),	-- Reinforcements for Garadar
-					q( 10650),	-- Return to the Aldor
+					q(10650),	-- Return to the Aldor
 					qh( 10170),	-- Return to the Greatmother
-					q( 10691),	-- Return to the Scryers
-					q(  9931),	-- Returning the Favor
-					q(  9927),	-- Ruthless Cunning
-					q(  9849),	-- Shattering the Veil
+					q(10691),	-- Return to the Scryers
+					q(9931),	-- Returning the Favor
+					q(9927),	-- Ruthless Cunning
+					q(9849),	-- Shattering the Veil
 --]]					
 					qa(9878,  {  -- Solving the Problem
 						i(25577),
@@ -292,14 +292,14 @@ _.Zones =
 					}),
 --[[					
 					qh(  9910),	-- Standards and Practices
-					q(  9882),	-- Stealing from Thieves
+					q(9882),	-- Stealing from Thieves
 --]]					
 					qa(9874,  {  -- Stopping the Spread
 						i(25570),
 						i(25568),
 						i(25569),
 					}),
---					q(  9991),	-- Survey the Land
+--					q(9991),	-- Survey the Land
 					q(9859,  {  -- Talbuk Mastery
 						i(25543),
 						i(25636),
@@ -312,18 +312,18 @@ _.Zones =
 						i(28175),
 					}),
 --[[					
-					q(  9857),	-- Talbuk Mastery
-					q(  9858),	-- Talbuk Mastery
+					q(9857),	-- Talbuk Mastery
+					q(9858),	-- Talbuk Mastery
 					qh( 10082),	-- The Agitated Ancestors
-					q( 10649),	-- The Book of Fel Names
-					q(  9913),	-- The Consortium Needs You!
-					q(  9861),	-- The Howling Wind
+					q(10649),	-- The Book of Fel Names
+					q(9913),	-- The Consortium Needs You!
+					q(9861),	-- The Howling Wind
 					qh(  9888),	-- The Impotent Leader
 					qh( 10171),	-- The Inconsolable Chieftain
-					q( 10001),	-- The Master Planner
-					q( 10251),	-- The Master's Grand Design?
+					q(10001),	-- The Master Planner
+					q(10251),	-- The Master's Grand Design?
 					qh(  9864),	-- The Missing War Party
-					q( 11880),	-- The Multiphase Survey
+					q(11880),	-- The Multiphase Survey
 					qh( 10114),	-- The Nesingwary Safari
 					qa( 10113),	-- The Nesingwary Safari
 --]]					
@@ -332,10 +332,10 @@ _.Zones =
 						i(25780),
 					}),
 --[[					
-					q(  9962),	-- The Ring of Blood: Brokentoe
-					q(  9970),	-- The Ring of Blood: Rokdar the Sundered Lord
-					q(  9972),	-- The Ring of Blood: Skra'gath
-					q(  9967),	-- The Ring of Blood: The Blue Brothers
+					q(9962),	-- The Ring of Blood: Brokentoe
+					q(9970),	-- The Ring of Blood: Rokdar the Sundered Lord
+					q(9972),	-- The Ring of Blood: Skra'gath
+					q(9967),	-- The Ring of Blood: The Blue Brothers
 --]]					
 					q(9977,  {  -- The Ring of Blood: The Final Challenge
 						i(25762),
@@ -346,7 +346,7 @@ _.Zones =
 						i(25759),
 					}),
 --[[					
-					q(  9973),	-- The Ring of Blood: The Warmaul Champion
+					q(9973),	-- The Ring of Blood: The Warmaul Champion
 					qa(  9921),	-- The Ruins of Burning Blade
 --]]					
 					q(9810,  {  -- The Spirit Polluted
@@ -357,7 +357,7 @@ _.Zones =
 --[[					
 					qa(  9869),	-- The Throne of the Elements
 					qh(  9870),	-- The Throne of the Elements
-					q(  9819),	-- The Tortured Earth
+					q(9819),	-- The Tortured Earth
 					qa(  9879),	-- The Totem of Kar'dash
 					qh(  9868),	-- The Totem of Kar'dash
 --]]					
@@ -371,7 +371,7 @@ _.Zones =
 						i(25639),
 					}),
 --[[					
-					q(  9818),	-- The Underneath
+					q(9818),	-- The Underneath
 					qh( 10172),	-- There Is No Hope
 					qh( 10081),	-- To Meet Mother Kashur
 --]]					
@@ -381,7 +381,7 @@ _.Zones =
 						i(25569),
 					}),
 --[[					
-					q( 10252),	-- Vision of the Dead
+					q(10252),	-- Vision of the Dead
 					qa( 11044),	-- Visions of Destruction
 					qh( 10953),	-- Visit the Throne of the Elements
 --]]					
@@ -402,12 +402,12 @@ _.Zones =
 					qh(  9939),	-- Wanted: Zorbo the Advisor
 					qh(  9945),	-- War on the Warmaul
 					qh( 39196),	-- Warchief's Command: Nagrand
-					q( 39189),	-- Warchief's Command: Nagrand
+					q(39189),	-- Warchief's Command: Nagrand
 					qh( 10168),	-- What the Soul Sees
 					qh( 10101),	-- When Spirits Speak
-					q( 13799),	-- Where Are My Keys?
-					q(  9854),	-- Windroc Mastery
-					q(  9855),	-- Windroc Mastery
+					q(13799),	-- Where Are My Keys?
+					q(9854),	-- Windroc Mastery
+					q(9855),	-- Windroc Mastery
 --]]					
 					q(9856,  {  -- Windroc Mastery
 						i(25595),

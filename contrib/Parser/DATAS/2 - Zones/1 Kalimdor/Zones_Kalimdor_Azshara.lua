@@ -113,7 +113,7 @@ _.Zones =
 					qg(36077, qh(14371)),	-- A Gigantic Snack
 					qg(36379, qh(24458)),	-- A Hello to Arms
 					qg(35142, qh(14131)),	-- A Little Pick-me-up
-					qg( 8586, qh(14432)),	-- A Pale Brew
+					qg(8586, qh(14432)),	-- A Pale Brew
 					qart(qg(116048, q(46177))),	-- A Portal Away
 					qg(35085, qh(14197)),	-- A Quota to Meet
 					qg(35087, qh(14201)),	-- A Thousand Stories in the Sand
@@ -141,7 +141,7 @@ _.Zones =
 					qg(36903, qh(24430)),	-- Blacken the Skies
 					qg(36919, qh(24434)),	-- Commando Drop
 					qg(35086, qh(14146)),	-- Defend the Gates!
-					qg( 8586, qh(14433)),	-- Diplomacy by Another Means
+					qg(8586, qh(14433)),	-- Diplomacy by Another Means
 --]]					
 					qg(35088, qh(14423, {	-- Dozercism
 						i(53447),
@@ -287,7 +287,7 @@ _.Zones =
 							qh(14127),	-- Return of the Highborne?
 							}),
 					}),
-					qg( 8576, qh(14128)),	-- Return of the Highborne?
+					qg(8576, qh(14128)),	-- Return of the Highborne?
 					qg(36785, qh(14476)),	-- Rigged to Blow
 					qg(35086, qh(14129)),	-- Runaway Shredder!
 					o(195676, {	-- Secret Lab Squawkbox
@@ -312,7 +312,7 @@ _.Zones =
 						i(53441),
 						i(131339),
 					})),				
---					qg(15600, q(  8720)),	-- Skygleam the Elder
+--					qg(15600, q(8720)),	-- Skygleam the Elder
 					qg(42643, qh(26361, {	-- Smoot's Samophlange
 						["groups"] = {
 							i(63876),
@@ -329,14 +329,14 @@ _.Zones =
 					qg(35142, qh(14132)),	-- That's Just Rude!
 					qart(qg(115791, q(44924))),	-- The Archmage Accosted
 --]]					
-					qg( 8586, qh(14435, {	-- The Blackmaw Doublecross
+					qg(8586, qh(14435, {	-- The Blackmaw Doublecross
 						i(53450),
 						i(53409),
 						i(53431),
 						i(131359),
 					})),
 --[[					
-					qg( 8586, qh( 14431)),	-- The Blackmaw Scar
+					qg(8586, qh( 14431)),	-- The Blackmaw Scar
 					qg(35086, qh( 14134)),	-- The Captain's Logs
 --]]					
 					qg(36730, qh(24439, {	-- The Conquest of Azshara
@@ -344,7 +344,7 @@ _.Zones =
 						i(53451),
 						i(53442),
 					})),
-					qg( 8576, qh(14117, {	-- The Eyes of Ashenvale
+					qg(8576, qh(14117, {	-- The Eyes of Ashenvale
 						i(53416),
 						i(53448),
 						i(131333),
@@ -372,7 +372,7 @@ _.Zones =
 					qg(42640, qh(28849)),	-- Twilight Skies
 					qg(50367, qh(26388)),	-- Twilight Skies
 					qg(35086, qh(14135)),	-- Up a Tree
-					qg( 8576, qh(14118)),	-- Venison for the Troops
+					qg(8576, qh(14118)),	-- Venison for the Troops
 					qg(35142, qh(14345)),	-- Wash Out
 					qg(36372, qh(14389)),	-- Wasn't It Obvious?
 					qg(35754, qh(14263)),	-- Waste of Thyme
@@ -393,9 +393,9 @@ _.Zones =
 						i(131341),
 					})),
 --[[ removed quests
-					q( 9364),			-- Fragmented Magic (removed with Cataclysm, Mage-only)
-					q( 43301),			-- Invasion: Azshara (from Legion pre-launch)
-					q( 14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)					
+					q(9364),			-- Fragmented Magic (removed with Cataclysm, Mage-only)
+					q(43301),			-- Invasion: Azshara (from Legion pre-launch)
+					q(14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)					
 --]]					
 				}),
 				n(-16, { 	-- Rares	

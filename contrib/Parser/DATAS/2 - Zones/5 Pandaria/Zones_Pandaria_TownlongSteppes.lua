@@ -40,145 +40,145 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[
-					q( 31065),	-- Buried Beneath
-					q( 32434),	-- Burning Pandaren Spirit
-					q( 32043),	-- Candy Bucket
-					q( 31120),	-- Cheng Bo!
-					q( 31032),	-- Choking the Skies
-					q( 31123),	-- Chose Arms Warrior
-					q( 31124),	-- Chose Brewmaster
-					q( 31050),	-- Chose Fire Mage
-					q( 31051),	-- Chose Frost Mage
-					q( 31052),	-- Chose Priest
-					q( 31122),	-- Chose Prot Warrior
-					q( 30898),	-- Cutting the Swarm
-					q( 31043),	-- Dark Arts
+					q(31065),	-- Buried Beneath
+					q(32434),	-- Burning Pandaren Spirit
+					q(32043),	-- Candy Bucket
+					q(31120),	-- Cheng Bo!
+					q(31032),	-- Choking the Skies
+					q(31123),	-- Chose Arms Warrior
+					q(31124),	-- Chose Brewmaster
+					q(31050),	-- Chose Fire Mage
+					q(31051),	-- Chose Frost Mage
+					q(31052),	-- Chose Priest
+					q(31122),	-- Chose Prot Warrior
+					q(30898),	-- Cutting the Swarm
+					q(31043),	-- Dark Arts
 					qa( 31382),	-- Defense At Niuzao Temple
 					qh( 31383),	-- Defense At Niuzao Temple
-					q( 31199),	-- Destroy the Siege Weapons!
-					q( 30979),	-- Devastation Below
-					q( 30778),	-- Dust to Dust
-					q( 31041),	-- Egg Rescue!
-					q( 30970),	-- Enraged By Hatred
-					q( 30953),	-- Fallen Sentinels
-					q( 30932),	-- Father's Footsteps
-					q( 30769),	-- First Assault
-					q( 31201),	-- Friends, Not Food!
-					q( 31200),	-- Fumigation
-					q( 30785),	-- Gao-Ran Battlefront
-					q( 30927),	-- Give Them Peace
-					q( 30788),	-- Golgoss
-					q( 30790),	-- Golgoss Hungers
-					q( 31991),	-- Grand Master Zusshi
-					q( 31048),	-- Grave Consequences
-					q( 30977),	-- Grounded Welcome
-					q( 30783),	-- Hatred Becomes Us
-					q( 30980),	-- Heroes of the Shado-Pan
-					q( 32497),	-- Honor the Flame
-					q( 32501),	-- Honor the Flame
-					q( 30978),	-- Hostile Skies
-					q( 31045),	-- Illusions Of The Past
-					q( 30895),	-- Improvised Ammunition
-					q( 30958),	-- In Battle's Shadow
-					q( 30777),	-- In Search of Suna
-					q( 30899),	-- In Skilled Hands
-					q( 31049),	-- In Sprite Of Everything
-					q( 30897),	-- In the Wrong Hands
-					q( 30972),	-- Joining the Fight
-					q( 30976),	-- Joining the Hunt
-					q( 30776),	-- Jung Duk
-					q( 31063),	-- Lao-Chin and Serevex
-					q( 30781),	-- Last Toll of the Yaungol
-					q( 31046),	-- Little Hatchlings
-					q( 30793),	-- Mists' Opportunity
-					q( 31266),	-- Mogu Incursions
-					q( 30931),	-- My Father's Crossbow
-					q( 30768),	-- My Husband...
-					q( 30922),	-- Natural Antiseptic
-					q( 30925),	-- Niuzao's Price
-					q( 31064),	-- Nurong and Rothek
-					q( 31042),	-- Onyx Hearts
-					q( 30792),	-- Orbiss Fades
-					q( 30955),	-- Paying Tribute
-					q( 30771),	-- Perfect Pitch
-					q( 30930),	-- Pick a Yak
-					q( 30773),	-- Pitching In
-					q( 30974),	-- Raising Spirits
-					q( 30774),	-- Ranger Rescue
-					q( 31809),	-- Remnants of Anger
-					q( 30960),	-- Returning from the Pass
-					q( 31061),	-- Riding the Storm
-					q( 30894),	-- Rummaging Through the Remains
-					q( 30770),	-- Running Rampant
-					q( 30772),	-- Seeing Red
-					q( 30933),	-- Seeking Father
-					q( 30923),	-- Set the Mantid Back
-					q( 30779),	-- Slaying the Scavengers
-					q( 31116),	-- Spirit Dust
-					q( 30782),	-- Spiteful Spirits
-					q( 31040),	-- Spiteful Sprites
-					q( 31196),	-- Sra'vess Wetwork
-					q( 31277),	-- Surprise Attack!
-					q( 30971),	-- Taking Stock
-					q( 30981),	-- Taoshi and Korvexxis
-					q( 31204),	-- Target of Opportunity: Sra'thik Hivelord
-					q( 31203),	-- Target of Opportunity: Sra'thik Swarmlord
+					q(31199),	-- Destroy the Siege Weapons!
+					q(30979),	-- Devastation Below
+					q(30778),	-- Dust to Dust
+					q(31041),	-- Egg Rescue!
+					q(30970),	-- Enraged By Hatred
+					q(30953),	-- Fallen Sentinels
+					q(30932),	-- Father's Footsteps
+					q(30769),	-- First Assault
+					q(31201),	-- Friends, Not Food!
+					q(31200),	-- Fumigation
+					q(30785),	-- Gao-Ran Battlefront
+					q(30927),	-- Give Them Peace
+					q(30788),	-- Golgoss
+					q(30790),	-- Golgoss Hungers
+					q(31991),	-- Grand Master Zusshi
+					q(31048),	-- Grave Consequences
+					q(30977),	-- Grounded Welcome
+					q(30783),	-- Hatred Becomes Us
+					q(30980),	-- Heroes of the Shado-Pan
+					q(32497),	-- Honor the Flame
+					q(32501),	-- Honor the Flame
+					q(30978),	-- Hostile Skies
+					q(31045),	-- Illusions Of The Past
+					q(30895),	-- Improvised Ammunition
+					q(30958),	-- In Battle's Shadow
+					q(30777),	-- In Search of Suna
+					q(30899),	-- In Skilled Hands
+					q(31049),	-- In Sprite Of Everything
+					q(30897),	-- In the Wrong Hands
+					q(30972),	-- Joining the Fight
+					q(30976),	-- Joining the Hunt
+					q(30776),	-- Jung Duk
+					q(31063),	-- Lao-Chin and Serevex
+					q(30781),	-- Last Toll of the Yaungol
+					q(31046),	-- Little Hatchlings
+					q(30793),	-- Mists' Opportunity
+					q(31266),	-- Mogu Incursions
+					q(30931),	-- My Father's Crossbow
+					q(30768),	-- My Husband...
+					q(30922),	-- Natural Antiseptic
+					q(30925),	-- Niuzao's Price
+					q(31064),	-- Nurong and Rothek
+					q(31042),	-- Onyx Hearts
+					q(30792),	-- Orbiss Fades
+					q(30955),	-- Paying Tribute
+					q(30771),	-- Perfect Pitch
+					q(30930),	-- Pick a Yak
+					q(30773),	-- Pitching In
+					q(30974),	-- Raising Spirits
+					q(30774),	-- Ranger Rescue
+					q(31809),	-- Remnants of Anger
+					q(30960),	-- Returning from the Pass
+					q(31061),	-- Riding the Storm
+					q(30894),	-- Rummaging Through the Remains
+					q(30770),	-- Running Rampant
+					q(30772),	-- Seeing Red
+					q(30933),	-- Seeking Father
+					q(30923),	-- Set the Mantid Back
+					q(30779),	-- Slaying the Scavengers
+					q(31116),	-- Spirit Dust
+					q(30782),	-- Spiteful Spirits
+					q(31040),	-- Spiteful Sprites
+					q(31196),	-- Sra'vess Wetwork
+					q(31277),	-- Surprise Attack!
+					q(30971),	-- Taking Stock
+					q(30981),	-- Taoshi and Korvexxis
+					q(31204),	-- Target of Opportunity: Sra'thik Hivelord
+					q(31203),	-- Target of Opportunity: Sra'thik Swarmlord
 					qh( 31393),	-- Temple of the White Tiger
 					qa( 31392),	-- Temple of the White Tiger
-					q( 30900),	-- Terror of the Dread Wastes
-					q( 30959),	-- The Big Guns
-					q( 31197),	-- The Bigger They Come...
-					q( 31127),	-- The Challenger's Ring: Chao the Voice
-					q( 31220),	-- The Challenger's Ring: Hawkmaster Nurong
-					q( 31128),	-- The Challenger's Ring: Lao-Chin the Iron Belly
-					q( 31038),	-- The Challenger's Ring: Snow Blossom
-					q( 31221),	-- The Challenger's Ring: Tenwu of the Red Smoke
-					q( 31104),	-- The Challenger's Ring: Yalia Sagewhisper
-					q( 31118),	-- The Deadtalker Cipher
-					q( 30815),	-- The Death of Me
-					q( 30893),	-- The Endless Swarm
-					q( 31119),	-- The Enemy of My Enemy... Is Still My Enemy!
-					q( 30775),	-- The Exile
-					q( 30963),	-- The Field Armorer
-					q( 31039),	-- The Mogu Menace
-					q( 31106),	-- The Mogu Menace
-					q( 31105),	-- The Mogu Menace
-					q( 30921),	-- The Motives of the Mantid
-					q( 30957),	-- The Overwhelming Swarm
-					q( 30784),	-- The Point of No Return
-					q( 30890),	-- The Restless Watch
-					q( 31688),	-- The Search for Restless Leng
-					q( 30968),	-- The Sha of Hatred
+					q(30900),	-- Terror of the Dread Wastes
+					q(30959),	-- The Big Guns
+					q(31197),	-- The Bigger They Come...
+					q(31127),	-- The Challenger's Ring: Chao the Voice
+					q(31220),	-- The Challenger's Ring: Hawkmaster Nurong
+					q(31128),	-- The Challenger's Ring: Lao-Chin the Iron Belly
+					q(31038),	-- The Challenger's Ring: Snow Blossom
+					q(31221),	-- The Challenger's Ring: Tenwu of the Red Smoke
+					q(31104),	-- The Challenger's Ring: Yalia Sagewhisper
+					q(31118),	-- The Deadtalker Cipher
+					q(30815),	-- The Death of Me
+					q(30893),	-- The Endless Swarm
+					q(31119),	-- The Enemy of My Enemy... Is Still My Enemy!
+					q(30775),	-- The Exile
+					q(30963),	-- The Field Armorer
+					q(31039),	-- The Mogu Menace
+					q(31106),	-- The Mogu Menace
+					q(31105),	-- The Mogu Menace
+					q(30921),	-- The Motives of the Mantid
+					q(30957),	-- The Overwhelming Swarm
+					q(30784),	-- The Point of No Return
+					q(30890),	-- The Restless Watch
+					q(31688),	-- The Search for Restless Leng
+					q(30968),	-- The Sha of Hatred
 					qa( 31386),	-- The Shado-Pan Offensive
 					qh( 31388),	-- The Shado-Pan Offensive
-					q( 30956),	-- The Siege Swells
+					q(30956),	-- The Siege Swells
 					qh( 32680),	-- The Storm Gathers
 					qa( 32681),	-- The Storm Gathers
-					q( 30975),	-- The Taking of Dusklight Bridge
-					q( 30926),	-- The Terrible Truth
-					q( 31656),	-- The Threat in the South
-					q( 30787),	-- The Torches
-					q( 30952),	-- The Unending Siege
-					q( 30924),	-- The Wisdom of Niuzao
-					q( 30896),	-- Thieves and Troublemakers
-					q( 31687),	-- Thinning the Sik'thik
-					q( 31110),	-- Through the Portal
+					q(30975),	-- The Taking of Dusklight Bridge
+					q(30926),	-- The Terrible Truth
+					q(31656),	-- The Threat in the South
+					q(30787),	-- The Torches
+					q(30952),	-- The Unending Siege
+					q(30924),	-- The Wisdom of Niuzao
+					q(30896),	-- Thieves and Troublemakers
+					q(31687),	-- Thinning the Sik'thik
+					q(31110),	-- Through the Portal
 					qh( 32678),	-- Thunder Calls
 					qa( 32679),	-- Thunder Calls
-					q( 30780),	-- Totemic Research
-					q( 31053),	-- Tracking Event: Started Shado-Pan Dailies
-					q( 30889),	-- Trap Setting
-					q( 30891),	-- Treatment for the Troops
+					q(30780),	-- Totemic Research
+					q(31053),	-- Tracking Event: Started Shado-Pan Dailies
+					q(30889),	-- Trap Setting
+					q(30891),	-- Treatment for the Troops
 					qa( 31387),	-- Understanding The Shado-Pan
 					qh( 31389),	-- Understanding The Shado-Pan
-					q( 31125),	-- Unlocked Chao
-					q( 31126),	-- Unlocked Lao-Chen
-					q( 31054),	-- Unlocked Yalia Sagewhisper
-					q( 30887),	-- Unwelcome Intruders
-					q( 30973),	-- Up In Flames
-					q( 31117),	-- Uruk!
-					q( 30827),	-- What Lies Beneath
-					q( 31062),	-- When The Dead Speak
+					q(31125),	-- Unlocked Chao
+					q(31126),	-- Unlocked Lao-Chen
+					q(31054),	-- Unlocked Yalia Sagewhisper
+					q(30887),	-- Unwelcome Intruders
+					q(30973),	-- Up In Flames
+					q(31117),	-- Uruk!
+					q(30827),	-- What Lies Beneath
+					q(31062),	-- When The Dead Speak
 --]]
 					q(31032,  {  	-- Choking the Skies
 						i(88589), 		-- TOY! Cremating Torch

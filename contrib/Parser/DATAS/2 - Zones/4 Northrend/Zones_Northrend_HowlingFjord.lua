@@ -106,12 +106,12 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q( 11476),	-- A Carver and a Croaker
+					q(11476),	-- A Carver and a Croaker
 					qh( 11282),	-- A Lesson in Fear
-					q( 11568),	-- A Return to Resting
+					q(11568),	-- A Return to Resting
 					qh( 11272),	-- A Score to Settle
 					qh( 11305),	-- A Tailor-Made Formula
-					q( 11473),	-- A Traitor Among Us
+					q(11473),	-- A Traitor Among Us
 					qa( 11330),	-- Absholutely... Thish Will Work!
 					qh( 12481),	-- Adding Injury to Insult
 					qh( 12482),	-- Against Nifflevar
@@ -125,11 +125,11 @@ _.Zones =
 					qh( 11397),	-- And You Thought Murlocs Smelled Bad!
 					qa( 11344),	-- Anguish of Nifflevar
 					qh( 11306),	-- Apply Heat and Stir
-					q( 11457),	-- Arming Kamagua
-					q( 11458),	-- Avenge Iskaal
+					q(11457),	-- Arming Kamagua
+					q(11458),	-- Avenge Iskaal
 					qh( 11283),	-- Baleheim Bodycount
 					qh( 11285),	-- Baleheim Must Burn!
-					q( 31931),	-- Beegle Blastfuse
+					q(31931),	-- Beegle Blastfuse
 					qh( 11301),	-- Brains! Brains! Brains!
 					qa( 11153),	-- Break the Blockade
 					qh( 11399),	-- Bring Down Those Shields
@@ -144,14 +144,14 @@ _.Zones =
 					qh( 13464),	-- Candy Bucket
 					qa( 13433),	-- Candy Bucket
 					qh( 13465),	-- Candy Bucket
-					q( 13452),	-- Candy Bucket
+					q(13452),	-- Candy Bucket
 					qa( 13268),	-- Cloth Scavenging
 					qh( 13269),	-- Cloth Scavenging
-					q(  3861),	-- CLUCK!
-					q( 11479),	-- "Crowleg" Dan
+					q(3861),	-- CLUCK!
+					q(11479),	-- "Crowleg" Dan
 					qa( 11443),	-- Daggercap Divin'
 					qa( 11218),	-- Danger! Explosives!
-					q( 11467),	-- Dead Man's Debt
+					q(11467),	-- Dead Man's Debt
 					qa( 11235),	-- Dealing With Gjalerbron
 					qh( 11263),	-- Dealing With Gjalerbron
 					qa( 11359),	-- Demolishing Megalith
@@ -171,27 +171,27 @@ _.Zones =
 					qh( 11280),	-- Draconis Gastritis
 					qa( 11290),	-- Dragonflayer Battle Plans
 					qa( 11429),	-- Drop It then Rock It!
-					q( 11507),	-- Elder Atuik and Kamagua
+					q(11507),	-- Elder Atuik and Kamagua
 					qa( 11406),	-- Everything Must Be Ready
 					qa( 11416),	-- Eyes of the Eagle
 					qh( 11417),	-- Eyes of the Eagle
 					qa( 11468),	-- Falcon Versus Hawk
-					q( 11456),	-- Feeding the Survivors
+					q(11456),	-- Feeding the Survivors
 					qh( 11307),	-- Field Test
 					qh( 11287),	-- Find Sage Mistwalker
-					q( 11434),	-- Forgotten Treasure
+					q(11434),	-- Forgotten Treasure
 					qa( 11251),	-- Fresh Legs
 					qh( 29609),	-- Friends in Dalaran
-					q( 11464),	-- Gambling Debt
+					q(11464),	-- Gambling Debt
 					qh( 12181),	-- Give it a Name
 					qh( 11266),	-- Gjalerbron Attack Plans
 					qa( 11237),	-- Gjalerbron Attack Plans
 					qh( 11279),	-- Green Eggs and Whelps
-					q( 11508),	-- Grezzix Spindlesnap
+					q(11508),	-- Grezzix Spindlesnap
 					qa( 11246),	-- Gruesome, But Necessary
 					qh( 11257),	-- Gruesome, But Necessary
 					qh( 11232),	-- Guide Our Sights
-					q( 11289),	-- Guided by Honor
+					q(11289),	-- Guided by Honor
 					qa( 11430),	-- Harpoon Master Yavus
 					qh( 11271),	-- Hasty Preparations
 					qa( 11228),	-- Hell Has Frozen Over...
@@ -213,8 +213,8 @@ _.Zones =
 					qa( 11421),	-- It Goes to 11...
 					qa( 11395),	-- It's a Scourge Device
 					qh( 11398),	-- It's a Scourge Device
-					q( 11466),	-- Jack Likes His Drink
-					q( 11428),	-- Keeper Witherleaf
+					q(11466),	-- Jack Likes His Drink
+					q(11428),	-- Keeper Witherleaf
 					qh( 11297),	-- Keeping Watch on the Interlopers
 					qh( 11233),	-- Landing the Killing Blow
 					qa( 11240),	-- Leader of the Deranged
@@ -229,13 +229,13 @@ _.Zones =
 					qa( 11349),	-- Mastering the Runes
 					qh( 11351),	-- Mastering the Runes
 					qa( 11427),	-- Meet Lieutenant Icehammer...
-					q( 11480),	-- Meet Number Two
+					q(11480),	-- Meet Number Two
 					qh( 11281),	-- Mimicking Nature's Call
 					qa( 11202),	-- Mission: Eternal Flame
 					qa( 11328),	-- Mission: Forsaken Intel
 					qa( 11327),	-- Mission: Package Retrieval
 					qa( 11332),	-- Mission: Plague This!
-					q( 11527),	-- Mutiny on the Mercy
+					q(11527),	-- Mutiny on the Mercy
 					qa( 11175),	-- My Daughter
 					qa( 11236),	-- Necro Overlord Mezhen
 					qh( 11264),	-- Necro Overlord Mezhen
@@ -262,14 +262,14 @@ _.Zones =
 					qa( 11199),	-- Report to Scout Knowles
 					qh( 11221),	-- Reports from the Field
 					qa( 11244),	-- Rescuing the Rescuers
-					q( 11572),	-- Return to Atuik
+					q(11572),	-- Return to Atuik
 					qa( 11278),	-- Return to Valgarde
 					qh( 11296),	-- Rivenwood Captives
-					q( 11182),	-- Root Causes
+					q(11182),	-- Root Causes
 					qa( 11154),	-- Scare the Guano Out of Them!
-					q( 11510),	-- "Scoodles"
+					q(11510),	-- "Scoodles"
 					qa( 11176),	-- See to the Operations
-					q( 11319),	-- Seeds of the Blacksouled Keepers
+					q(11319),	-- Seeds of the Blacksouled Keepers
 					qa( 11224),	-- Send Them Packing
 					qh( 11424),	-- Shield Hill
 					qa( 11155),	-- Shoveltusk Soup Again?
@@ -277,47 +277,47 @@ _.Zones =
 					qh( 11433),	-- Sleeping Giants
 					qa( 11432),	-- Sleeping Giants
 					qh( 11253),	-- Sniff Out the Enemy
-					q( 11529),	-- Sorlof's Booty
-					q( 11316),	-- Spawn of the Twisted Glade
+					q(11529),	-- Sorlof's Booty
+					q(11316),	-- Spawn of the Twisted Glade
 					qh( 11168),	-- Spiking the Mix
-					q( 11313),	-- Spirits of the Ice
+					q(11313),	-- Spirits of the Ice
 					qa( 11391),	-- Steel Gate Patrol
 					qa( 11249),	-- Stop the Ascension!
 					qh( 11260),	-- Stop the Ascension!
-					q( 11509),	-- Street "Cred"
+					q(11509),	-- Street "Cred"
 					qa( 11300),	-- Stunning Defeat at the Ring
 					qh( 11311),	-- Suppressing the Elements
-					q( 11469),	-- Swabbin' Soap
+					q(11469),	-- Swabbin' Soap
 					qh( 11170),	-- Test at Sea
 					qh( 11303),	-- The Ambush
-					q( 11567),	-- The Ancient Armor of the Kvaldir
+					q(11567),	-- The Ancient Armor of the Kvaldir
 					qh( 11286),	-- The Artifacts of Steel Gate
 					qa( 11346),	-- The Book of Runes
 					qh( 11350),	-- The Book of Runes
 					qa( 11322),	-- The Cleansing
 					qh( 11317),	-- The Cleansing
-					q( 11157),	-- The Clutches of Evil
+					q(11157),	-- The Clutches of Evil
 					qh( 11261),	-- The Conqueror of Skorn!
-					q( 11504),	-- The Dead Rise!
+					q(11504),	-- The Dead Rise!
 					qa( 11495),	-- The Delicate Sound of Thunder
 					qa( 11277),	-- The Depths of Depravity
 					qh( 11254),	-- The Dragonskin Map
 					qa( 11343),	-- The Echo of Ymiron
-					q( 42005),	-- The End of the Saga
+					q(42005),	-- The End of the Saga
 					qh( 11423),	-- The Enemy's Legacy
 					qa( 11302),	-- The Enigmatic Frost Nymphs					
 					qa( 11448),	-- The Explorers' League Outpost
-					q( 11314),	-- The Fallen Sisters
-					q( 11455),	-- The Fragrance of Money
+					q(11314),	-- The Fallen Sisters
+					q(11455),	-- The Fragrance of Money
 					qa( 11238),	-- The Frost Wyrm and its Master
 					qh( 11267),	-- The Frost Wyrm and its Master
 					qh( 11312),	-- The Frozen Glade
-					q( 11512),	-- The Frozen Heart of Isuldof
+					q(11512),	-- The Frozen Heart of Isuldof
 					qa( 11273),	-- The Human League
-					q( 11471),	-- The Jig is Up
+					q(11471),	-- The Jig is Up
 					qa( 11358),	-- The Lodestone
 					qh( 11366),	-- The Lodestone
-					q( 11519),	-- The Lost Shield of the Aesirites
+					q(11519),	-- The Lost Shield of the Aesirites
 					qa( 12794),	-- The Magical Kingdom of Dalaran
 					qh( 12791),	-- The Magical Kingdom of Dalaran
 					qh( 11167),	-- The New Plague
@@ -328,25 +328,25 @@ _.Zones =
 					qa( 11299),	-- The Ring of Judgment
 					qh( 11352),	-- The Rune of Command
 					qa( 11348),	-- The Rune of Command
-					q( 11530),	-- The Shield of the Aesirites
-					q( 11288),	-- The Shining Light
+					q(11530),	-- The Shield of the Aesirites
+					q(11288),	-- The Shining Light
 					qh( 11453),	-- The Slumbering King
-					q( 11511),	-- The Staff of Storm's Fury
+					q(11511),	-- The Staff of Storm's Fury
 					qh( 11268),	-- The Walking Dead
-					q( 11472),	-- The Way to His Heart...
+					q(11472),	-- The Way to His Heart...
 					qh( 11229),	-- The Windrunner Fleet
 					qa( 11284),	-- The Yeti Next Door
 					qa( 11470),	-- There Exists No Honor Among Birds
 					qh( 11308),	-- Time for Cleanup
-					q( 42002),	-- To Northrend
+					q(42002),	-- To Northrend
 					qh( 12182),	-- To Venomspite!
 					qa( 11291),	-- To Westguard Keep!
 					qa( 11475),	-- Tools to Get the Job Done
 					qa( 11245),	-- Towers of Certain Doom
 					qh( 11259),	-- Towers of Certain Doom
 					qh( 11241),	-- Trail of Fire
-					q( 12118),	-- Travel to Moa'ki Harbor
-					q( 11422),	-- Trident of the Son
+					q(12118),	-- Travel to Moa'ki Harbor
+					q(11422),	-- Trident of the Son
 					qa( 11460),	-- Trust is Earned
 					qa( 11188),	-- Two Wrongs...
 					qh( 11270),	-- War is Hell
@@ -356,10 +356,10 @@ _.Zones =
 					qa( 11484),	-- We Have the Technology
 					qh( 11298),	-- What's in That Brew?
 					qa( 11393),	-- Where is Explorer Jaren?
-					q( 11315),	-- Wild Vines
+					q(11315),	-- Wild Vines
 					qa( 11331),	-- You Tell Him ...Hic!
 					qa( 11274),	-- Zedd's Probably Dead
-					q( 11459),	-- Zeh'gehn Sez
+					q(11459),	-- Zeh'gehn Sez
 --]]
 					qh(11282,  {  -- A Lesson in Fear
 						i(35868),

@@ -96,14 +96,14 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q( 10914),	-- A Hero Is Needed
-					q( 10112),	-- A Personal Favor
-					q( 11029),	-- A Shabby Disguise
-					q( 10210),	-- A'dal
-					q( 10664),	-- Additional Materials
-					q( 11885),	-- Adversarial Blood
-					q( 11024),	-- An Ally in Lower City
-					q( 10913),	-- An Improper Burial
+					q(10914),	-- A Hero Is Needed
+					q(10112),	-- A Personal Favor
+					q(11029),	-- A Shabby Disguise
+					q(10210),	-- A'dal
+					q(10664),	-- Additional Materials
+					q(11885),	-- Adversarial Blood
+					q(11024),	-- An Ally in Lower City
+					q(10913),	-- An Improper Burial
 					qh( 10013),	-- An Unseen Hand
 					qh( 10000),	-- An Unwelcome Presence
 					qh( 10201),	-- And Now, the Moment of Truth
@@ -111,23 +111,23 @@ _.Zones =
 					qh(  9997),	-- Attack on Firewing Point
 					qa(  9996),	-- Attack on Firewing Point
 --]]					
-					q( 11666, {	-- Bait Bandits
+					q(11666, {	-- Bait Bandits
 						i(34863,  {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 					}),	
 --[[					
-					q( 10676),	-- Bane of the Illidari
+					q(10676),	-- Bane of the Illidari
 					qh(  9891),	-- Because Kilrath is a Coward
-					q( 10878),	-- Before Darkness Falls
-					q(  9978),	-- By Any Means Necessary
-					q( 10880),	-- Cabal Orders
+					q(10878),	-- Before Darkness Falls
+					q(9978),	-- By Any Means Necessary
+					q(10880),	-- Cabal Orders
 					qa( 12356),	-- Candy Bucket
 					qh( 12391),	-- Candy Bucket
-					q(  9971),	-- Clues in the Thicket
+					q(9971),	-- Clues in the Thicket
 					qa( 10104),	-- Concerns About Tuurem
-					q( 11028),	-- Countdown to Doom
-					q( 10009),	-- Crackin' Some Skulls
+					q(11028),	-- Countdown to Doom
+					q(10009),	-- Crackin' Some Skulls
 --]]					
 					q(11665,  {  -- Crocolisks in the City
 						["groups"] = {
@@ -152,8 +152,8 @@ _.Zones =
 					qa( 11755),	-- Desecrate this Fire!
 					qa( 11766),	-- Desecrate this Fire!
 					qh( 11745),	-- Desecrate this Fire!
-					q( 10922),	-- Digging Through Bones
-					q( 11520),	-- Discovering Your Roots
+					q(10922),	-- Digging Through Bones
+					q(11520),	-- Discovering Your Roots
 					qh(  9889),	-- Don't Kill the Fat One
 					qa( 29583),	-- Eckert the Mad
 --]]
@@ -167,34 +167,34 @@ _.Zones =
 						i(25917),
 						i(25916),
 					}),
---					q( 11085),	-- Escape from Skettis
+--					q(11085),	-- Escape from Skettis
 					q(10887,  {  -- Escaping the Tomb
 						i(31733),
 						i(31734),
 						i(31731),
 						i(31732),
 					}),
---					q( 29595),	-- Everything Will Be Alright
+--					q(29595),	-- Everything Will Be Alright
 					q(10923,  {  -- Evil Draws Near
 						i(31816),
 						i(31817),
 					}),
 --[[					
-					q( 10228),	-- Ezekiel
+					q(10228),	-- Ezekiel
 					qa( 10012),	-- Fel Orc Plans
 --]]					
-					q( 11669, {	-- Felblood Fillet
+					q(11669, {	-- Felblood Fillet
 						i(34863,  {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 					}),	
 --[[					
-					q( 11008),	-- Fires Over Skettis
-					q( 10920),	-- For the Fallen
-					q( 10665),	-- Fresh from the Mechanar
-					q( 10929),	-- Fumping
+					q(11008),	-- Fires Over Skettis
+					q(10920),	-- For the Fallen
+					q(10665),	-- Fresh from the Mechanar
+					q(10929),	-- Fumping
 					qh( 29582),	-- Grek's Crazy Night
-					q( 11056),	-- Hazzik's Bargain
+					q(11056),	-- Hazzik's Bargain
 --]]					
 					q(10031,  {  -- Helping the Lost Find Their Way
 						i(25948),
@@ -206,12 +206,12 @@ _.Zones =
 					qa( 39188),	-- Hero's Call: Terokkar Forest
 					qa( 11825),	-- Honor the Flame
 					qh( 11858),	-- Honor the Flame
-					q( 11093),	-- Hungry Nether Rays
-					q( 10227),	-- I See Dead Draenei
+					q(11093),	-- Hungry Nether Rays
+					q(10227),	-- I See Dead Draenei
 					qa( 11964),	-- Incense for the Summer Scorchlings
-					q(  9990),	-- Investigate Tuurem
-					q( 11021),	-- Ishaal's Almanac
-					q( 10010),	-- It's Just That Easy?
+					q(9990),	-- Investigate Tuurem
+					q(11021),	-- Ishaal's Almanac
+					q(10010),	-- It's Just That Easy?
 --]]					
 					q(9951,  {  -- It's Watching You!
 						i(28028),
@@ -249,9 +249,9 @@ _.Zones =
 --[[					
 					qh( 10027),	-- Magical Disturbances
 					qa( 10026),	-- Magical Disturbances
-					q( 10852),	-- Missing Friends
-					q( 10918),	-- More Feathers
-					q( 11006),	-- More Shadow Dust
+					q(10852),	-- Missing Friends
+					q(10918),	-- More Feathers
+					q(11006),	-- More Shadow Dust
 					qh( 10105),	-- News for Rakoria
 					qh(  9796),	-- News from Zangarmarsh
 					qh(  9993),	-- Olemba Seed Oil
@@ -266,36 +266,36 @@ _.Zones =
 						i(31745),
 					}),
 --[[					
-					q( 10037),	-- Rather Be Fishin'
-					q( 10030),	-- Recover the Bones
-					q( 11521),	-- Rediscovering Your Roots
+					q(10037),	-- Rather Be Fishin'
+					q(10030),	-- Recover the Bones
+					q(11521),	-- Rediscovering Your Roots
 					qh( 10448),	-- Report to Stonebreaker Camp
 					qa( 10444),	-- Report to the Allerian Post
-					q( 10926),	-- Return to Sha'tari Base Camp
-					q( 10889),	-- Return to Shattrath
+					q(10926),	-- Return to Sha'tari Base Camp
+					q(10889),	-- Return to Shattrath
 					qa( 10863),	-- Secrets of the Arakkoa
-					q( 11005),	-- Secrets of the Talonpriests
-					q( 10849),	-- Seek Out Kirrik
+					q(11005),	-- Secrets of the Talonpriests
+					q(10849),	-- Seek Out Kirrik
 -]]					
-					q( 11668, {	-- Shrimpin' Ain't Easy
+					q(11668, {	-- Shrimpin' Ain't Easy
 						i(34863,  {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 					}),	
 --[[					
-					q( 10898),	-- Skywing
+					q(10898),	-- Skywing
 					qa( 10038),	-- Speak with Private Weeks
-					q( 10908),	-- Speak with Rilak the Redeemed
+					q(10908),	-- Speak with Rilak the Redeemed
 					qh( 10039),	-- Speak with Scout Neftis
 					qh( 11506),	-- Spirits of Auchindoun					
 					qa( 11505),	-- Spirits of Auchindoun
-					q(  9968),	-- Strange Energy
+					q(9968),	-- Strange Energy
 					qa(  9986),	-- Stymying the Arakkoa
 					qh(  9987),	-- Stymying the Arakkoa
 					qh(  9890),	-- Success!
 					qh( 10862),	-- Surrender to the Horde
-					q( 10873),	-- Taken in the Night
-					q( 10670),	-- Tear of the Earthmother
+					q(10873),	-- Taken in the Night
+					q(10670),	-- Tear of the Earthmother
 --]]					
 					q(11073,  {  -- Terokk's Downfall
 						i(32831),
@@ -312,14 +312,14 @@ _.Zones =
 						i(31758),
 						i(31759),
 					}),
---					q( 10877),	-- The Dread Relic
+--					q(10877),	-- The Dread Relic
 					qa(10022,  {  -- The Elusive Ironjaw
 						i(25974),
 						i(25976),
 						i(25977),
 						i(25975),
 					}),
---					q( 10847),	-- The Eyes of Skettis
+--					q(10847),	-- The Eyes of Skettis
 					q(10915,  {  -- The Fallen Exarch
 						i(31798),
 						i(31797),
@@ -342,24 +342,24 @@ _.Zones =
 --[[					
 					qh( 10003),	-- The Firewing Liaison
 					qa( 10002),	-- The Firewing Liaison
-					q( 14172),	-- The Grateful Dead
-					q( 14173),	-- The Grateful Dead
+					q(14172),	-- The Grateful Dead
+					q(14173),	-- The Grateful Dead
 					qh( 10663),	-- The Hermit Smith
 					qa( 10662),	-- The Hermit Smith
 					qh(  9888),	-- The Impotent Leader
-					q( 10896),	-- The Infested Protectors
-					q( 10666),	-- The Lexicon Demonica
+					q(10896),	-- The Infested Protectors
+					q(10666),	-- The Lexicon Demonica
 --]]					
-					q( 11667, { -- The One That Got Away
+					q(11667, { -- The One That Got Away
 						i(34863,  {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 					}),	
 --[[					
-					q( 10917),	-- The Outcast's Plight
-					q( 10881),	-- The Shadow Tomb
-					q( 10879),	-- The Skettis Offensive
-					q( 10840),	-- The Tomb of Lights
+					q(10917),	-- The Outcast's Plight
+					q(10881),	-- The Shadow Tomb
+					q(10879),	-- The Skettis Offensive
+					q(10840),	-- The Tomb of Lights
 					qa( 10869),	-- Thin the Flock
 --]]					
 					qa(10007,  {  -- Thinning the Ranks
@@ -369,11 +369,11 @@ _.Zones =
 					}),
 --[[					
 					qa( 10016),	-- Timber Worg Tails
-					q( 11098),	-- To Skettis!
-					q( 11074),	-- Tokens of the Descendants
+					q(11098),	-- To Skettis!
+					q(11074),	-- Tokens of the Descendants
 					qh( 10036),	-- Torgos!
 					qa( 10035),	-- Torgos!
-					q( 10667),	-- Underworld Loam
+					q(10667),	-- Underworld Loam
 					qa(  9998),	-- Unruly Neighbors
 --]]					
 					q(10861,  {  -- Veil Lithic: Preemptive Strike
@@ -391,8 +391,8 @@ _.Zones =
 						i(25965),
 					}),
 --[[					
-					q( 10839),	-- Veil Skith: Darkstone of Terokk
-					q( 10842),	-- Vengeful Souls
+					q(10839),	-- Veil Skith: Darkstone of Terokk
+					q(10842),	-- Vengeful Souls
 					qa( 10028),	-- Vessels of Power
 					qh( 10018),	-- Vestments of the Wolf Spirit
 					qh( 10034),	-- Wanted: Bonelashers Dead!
@@ -417,11 +417,11 @@ _.Zones =
 --[[					
 					qa(  9961),	-- What's Wrong at Cenarion Thicket?
 					qh(  9960),	-- What's Wrong at Cenarion Thicket?
-					q(  9957),	-- What's Wrong at Cenarion Thicket?
+					q(9957),	-- What's Wrong at Cenarion Thicket?
 					qa( 10040),	-- Who Are They?
 					qh( 10041),	-- Who Are They?
-					q(  9979),	-- Wind Trader Lathrai
-					q( 11004),	-- World of Shadows	
+					q(9979),	-- Wind Trader Lathrai
+					q(11004),	-- World of Shadows	
 --]]
 				}),	
 				n(-16, { 	-- Rares

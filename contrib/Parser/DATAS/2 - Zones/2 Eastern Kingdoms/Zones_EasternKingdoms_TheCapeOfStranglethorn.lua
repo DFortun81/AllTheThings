@@ -165,9 +165,9 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[
-					qg(, q( 26602)),	-- A Dish Best Served Huge
-					qg(, q( 40847)),	-- A Friendly Accord
-					qg(, q( 26600)),	-- A Giant's Feast
+					qg(, q(26602)),	-- A Dish Best Served Huge
+					qg(, q(40847)),	-- A Friendly Accord
+					qg(, q(26600)),	-- A Giant's Feast
 					qg(, qh(29400)),	-- A Season for Celebration
 					qg(, qa(29074)),	-- A Season for Celebration
 --]]					
@@ -183,9 +183,9 @@ _.Zones =
 					qg(, qa(26821)),	-- Airwyn Bantamflax
 					qg(, qa(26819)),	-- Akiris by the Bundle
 					qg(, qh(26487)),	-- Akiris by the Bundle
-					qg(, q( 26617)),	-- An Old Sea Dog
+					qg(, q(26617)),	-- An Old Sea Dog
 --]]					
-					qg( 7406, q(  3721, { -- An OOX of Your Own
+					qg(7406, q(3721, { -- An OOX of Your Own
 						["groups"] = {
 							q(351, { -- Find OOX-17/TN!
 								["groups"] = {
@@ -219,47 +219,47 @@ _.Zones =
 						["description"] = "Must have completed 'Rescue OOX/FE!' 'Rescue OOX 17/TN!' and 'Rescue OOX-09/HL!'"
 					})),
 --[[					
-					qg(, q(  8194)),	-- Apprentice Angler
-					qg(14508, q(  7838)),	-- Arena Grandmaster
-					qg(, q(  7810)),	-- Arena Master
-					qg(, q( 26644)),	-- Attracting Attention
+					qg(, q(8194)),	-- Apprentice Angler
+					qg(14508, q(7838)),	-- Arena Grandmaster
+					qg(, q(7810)),	-- Arena Master
+					qg(, q(26644)),	-- Attracting Attention
 --]]					
-					qg( 2546, q(  4621, {	-- Avast Ye, Admiral!
+					qg(2546, q(4621, {	-- Avast Ye, Admiral!
 						i(12185),	-- Bloodsail Admiral's Hat
 					})),
-					qg( 2545, q(  1036)),	-- Avast Ye, Scallywag
+					qg(2545, q(1036)),	-- Avast Ye, Scallywag
 					qg(44084, qa(26809, { -- Backdoor Dealings
-						i( 61531),
-						i( 61532),
+						i(61531),
+						i(61532),
 						i(131606),
 					})),
 					qg(43098, qh(26550, { -- Backdoor Dealings
-						i( 61534),
-						i( 61535),
+						i(61534),
+						i(61535),
 						i(131554),
 					})),
 --[[					
-					qg(, q( 31851)),	-- Bill Buckler
-					qg(, q( 31728)),	-- Bill Buckler
-					qg(, q( 26610)),	-- Bloodsail Treachery
+					qg(, q(31851)),	-- Bill Buckler
+					qg(, q(31728)),	-- Bill Buckler
+					qg(, q(26610)),	-- Bloodsail Treachery
 --]]
-					qg( 2496, q( 26703, { -- Bloodsail's End
-						i( 61630),
-						i( 61632),
+					qg(2496, q(26703, { -- Bloodsail's End
+						i(61630),
+						i(61632),
 						i(131586),
-						i( 61628),
+						i(61628),
 					})),
 --[[					
 					qg(, qh( 29252)),	-- Booty Bay's Interests
 					qg(, qh( 29251)),	-- Booty Bay's Interests
 					qg(, qa( 29153)),	-- Booty Bay's Interests
 					qg(, qa( 29154)),	-- Booty Bay's Interests
-					qg(, q(  26718)),	-- Breadcrumb to Badlands
+					qg(, q(26718)),	-- Breadcrumb to Badlands
 					qg(, qh( 11446)),	-- Brewfest!
-					qg(, q(  26665)),	-- Call of Booty
-					q(  12397),	-- Candy Bucket
+					qg(, q(26665)),	-- Call of Booty
+					q(12397),	-- Candy Bucket
 					qh( 28969),	-- Candy Bucket
-					qg(, q(  26635)),	-- Cannonball Swim
+					qg(, q(26635)),	-- Cannonball Swim
 					qg(, qh( 26495)),	-- Chabal
 					qg(, qa( 11356)),	-- Costumed Orphan Matron
 					qg(, qa( 26826)),	-- Dask "The Flask" Gobfizzle
@@ -275,57 +275,57 @@ _.Zones =
 					qh( 11581),	-- Desecrate this Fire!
 					qh( 11761),	-- Desecrate this Fire!
 --]]					
-					qg( 2496, q(  26612, { -- Details of the Attack
-						i( 61570),
-						i( 61572),
-						i( 61574),
-						i( 61576),
+					qg(2496, q(26612, { -- Details of the Attack
+						i(61570),
+						i(61572),
+						i(61574),
+						i(61576),
 						i(131563),
 					})),
 --[[					
 					qg(, qh(26592)),	-- Diffractory Chromascope
-					qg(, q( 26678)),	-- Doublerum
-					qg(, q(  9272)),	-- Dressing the Part
+					qg(, q(26678)),	-- Doublerum
+					qg(, q(9272)),	-- Dressing the Part
 --]]
-					qg( 2547, q( 26649, { -- Drive-By Piracy
-						i( 61592),
-						i( 61594),
-						i( 61596),
-						i( 61598),
+					qg(2547, q(26649, { -- Drive-By Piracy
+						i(61592),
+						i(61594),
+						i(61596),
+						i(61598),
 						i(131573),
 					})),
 --[[					
 					qg(, qa(26810)),	-- Eliminate the Outcast
 					qg(, qh(26551)),	-- Eliminate the Outcast
-					qg(, q( 38399)),	-- Fencing the Rose
-					qg(, q( 26839)),	-- Get Away From It All!
-					qg(, q( 26624)),	-- Getting In With the Bloodsail
+					qg(, q(38399)),	-- Fencing the Rose
+					qg(, q(26839)),	-- Get Away From It All!
+					qg(, q(26624)),	-- Getting In With the Bloodsail
 --]]
 					qg(44100, qa(26822, { -- Good-Fer-Nothin' Slither-Dogs
-						i( 61526),
-						i( 61527),
+						i(61526),
+						i(61527),
 						i(131611),
 					})),
 --[[					
-					qg(, q(  8193)),	-- Grand Prize
-					qg(, q( 26605)),	-- Grubby Little Paws
-					qg(, q( 26452)),	-- Gurubashi Challenge
-					qg(, q( 26451)),	-- Gurubashi Challenge: Free-For-All Arena Combat
+					qg(, q(8193)),	-- Grand Prize
+					qg(, q(26605)),	-- Grubby Little Paws
+					qg(, q(26452)),	-- Gurubashi Challenge
+					qg(, q(26451)),	-- Gurubashi Challenge: Free-For-All Arena Combat
 					qg(, qa(28702)),	-- Hero's Call: The Cape of Stranglethorn!
 --]]
 					qa(26814, { -- High Priest Venoxis (quest chain starts with Akiris by the Bundle, not sure how specific quest is obtained)
-						i( 61550),
-						i( 61551),
+						i(61550),
+						i(61551),
 						i(131607),
 					}),
 					qh(26555, { -- High Priest Venoxis (quest chain starts with Chabal, not sure how specific quest is obtained)
-						i( 61553),
-						i( 61554),
+						i(61553),
+						i(61554),
 						i(131555),
 					}),
 --[[					
-					qg(, q( 26553)),	-- High Priestess Jeklik
-					qg(, q( 26812)),	-- High Priestess Jeklik
+					qg(, q(26553)),	-- High Priestess Jeklik
+					qg(, q(26812)),	-- High Priestess Jeklik
 					qg(, qa(11832)),	-- Honor the Flame
 					qg(, qh(11837)),	-- Honor the Flame
 					qg(, qh(26435)),	-- I'm A Huge Liar and a Fraud
@@ -334,32 +334,32 @@ _.Zones =
 						i(61522),
 					})),
 					qg(43095, qh(26450, { -- If They're Just Going to Leave Them Lying Around...
-						i( 61517),
-						i( 61518),
-						i( 61519),
-						i( 61520),
+						i(61517),
+						i(61518),
+						i(61519),
+						i(61520),
 						i(131530),
 						i(131531),
 					})),
 --					qg(, qh(26489)),	-- It's You!!
-					qg( 2493, q( 26614, { -- Keep An Eye Out
+					qg(2493, q(26614, { -- Keep An Eye Out
 						i(4114),
 					})),
-					qg( 2501, q( 26595, { -- Kill-Collect
-						i( 61538),
-						i( 61540),
-						i( 61542),
+					qg(2501, q(26595, { -- Kill-Collect
+						i(61538),
+						i(61540),
+						i(61542),
 						i(131558),
 						i(131559),
 					})),
 --[[					
 					qg(, qh(26534)),	-- Let's See What You've Got, Zanzil
-					qg(, q( 26630)),	-- Looks Like a Tauren Pirate to Me
+					qg(, q(26630)),	-- Looks Like a Tauren Pirate to Me
 					qg(, qa(29152)),	-- Making Contact
 					qg(, qh(29250)),	-- Making Contact
 --]]
 					o(204450, {	-- Captain Stillwater's Charts
-						q( 26664, { -- Making Mutiny
+						q(26664, { -- Making Mutiny
 							i(61614),
 							i(61616),
 							i(61618),
@@ -368,26 +368,26 @@ _.Zones =
 --[[					
 					qg(, qh(11357)),	-- Masked Orphan Matron
 					qg(, qa(26808)),	-- Maywiki
-					qg(, q( 26603)),	-- Message in a Bottle
+					qg(, q(26603)),	-- Message in a Bottle
 					qg(, qh(26494)),	-- Mixmaster Jasper
 --]]
-					qg( 2500, q( 26601, { -- Mok'rash the Cleaver
-						i( 61564),
-						i( 61566),
-						i( 61568),
+					qg(2500, q(26601, { -- Mok'rash the Cleaver
+						i(61564),
+						i(61566),
+						i(61568),
 						i(131561),
 					})),
-					qg( 2634, q( 26606, { -- Mukla's Demise
-						i( 61586),
-						i( 61588),
-						i( 61588),
+					qg(2634, q(26606, { -- Mukla's Demise
+						i(61586),
+						i(61588),
+						i(61588),
 						i(131562),
 					})),
---					qg(, q( 26647)),	-- Ol' Blasty
-					qg(43556, q( 26648, { -- Our Mortal Enemies
-						i( 61600),
-						i( 61604),
-						i( 61606),
+--					qg(, q(26647)),	-- Ol' Blasty
+					qg(43556, q(26648, { -- Our Mortal Enemies
+						i(61600),
+						i(61604),
+						i(61606),
 						i(131572),
 						i(156952),	-- Adversarial Blackjack
 					})),
@@ -396,93 +396,93 @@ _.Zones =
 					qg(, qa(14022)),	-- Pilgrim's Bounty
 					qg(, qh(14036)),	-- Pilgrim's Bounty
 					qg(, qa(11882)),	-- Playing with Fire
-					qg(, q( 26813)),	-- Plunging Into Zul'Gurub
-					qg(, q( 26554)),	-- Plunging Into Zul'Gurub
+					qg(, q(26813)),	-- Plunging Into Zul'Gurub
+					qg(, q(26554)),	-- Plunging Into Zul'Gurub
 --]]
 					qg(44083, qa(26818, { -- Plush Pelts
-						i( 61513),
-						i( 61514),
-						i( 61515),
-						i( 61516),
+						i(61513),
+						i(61514),
+						i(61515),
+						i(61516),
 						i(131609),
 						i(131610),
 					})),
---					qg(, q( 26695)),	-- Prepare for Takeoff
+--					qg(, q(26695)),	-- Prepare for Takeoff
 					qg(43096, qh(26434, { -- Primal Reagents of Power
-						i( 61529),
-						i( 61530),
+						i(61529),
+						i(61530),
 						i(131529),
 					})),	
 --[[					
-					qg(, q( 26604)),	-- Protecting Her Royal Highness Poobah
-					qg(, q(  8225)),	-- Rare Fish - Brownell's Blue Striped Racer
-					qg(, q(  8224)),	-- Rare Fish - Dezian Queenfish
-					qg(, q(  8221)),	-- Rare Fish - Keefer's Angelfish
+					qg(, q(26604)),	-- Protecting Her Royal Highness Poobah
+					qg(, q(8225)),	-- Rare Fish - Brownell's Blue Striped Racer
+					qg(, q(8224)),	-- Rare Fish - Dezian Queenfish
+					qg(, q(8221)),	-- Rare Fish - Keefer's Angelfish
 --]]
 					qg(44099, qa(26816, { -- Recipe for Disaster
-						i( 61543),
-						i( 61544),
-						i( 61545),
+						i(61543),
+						i(61544),
+						i(61545),
 						i(131608),
 					})),
 					qg(43097, qh(26535, { -- Recipe for Disaster
-						i( 61546),
-						i( 61547),
-						i( 61548),
+						i(61546),
+						i(61547),
+						i(61548),
 						i(131551),
 					})),
 --[[					
 					qg(, qa(26824)),	-- Results: Inconclusive
-					qg(, q( 26594)),	-- Return to MacKinley
-					qg(, q( 26679)),	-- Return to Revilgaz
-					qg(, q( 26593)),	-- Scaring Shaky
-					qg(, q( 32435)),	-- Second Place
-					qg(, q( 26629)),	-- Seeing Where Your Loyalties Lie
-					qg(, q( 26698)),	-- Seeking Seahorn
-					qg(, q( 26663)),	-- Sinking From Within
+					qg(, q(26594)),	-- Return to MacKinley
+					qg(, q(26679)),	-- Return to Revilgaz
+					qg(, q(26593)),	-- Scaring Shaky
+					qg(, q(32435)),	-- Second Place
+					qg(, q(26629)),	-- Seeing Where Your Loyalties Lie
+					qg(, q(26698)),	-- Seeking Seahorn
+					qg(, q(26663)),	-- Sinking From Within
 --]]
-					qg( 2486, q( 26597, { -- Stranglethorn Fever
-						i( 61556),
-						i( 61558),
-						i( 61560),
+					qg(2486, q(26597, { -- Stranglethorn Fever
+						i(61556),
+						i(61558),
+						i(61560),
 						i(131560),
 					})),
---					qg(, q( 44765)),	-- Stranglethorn Fishing Extravaganza
-					qg( 2548, q( 26633, { -- Swabbing Duty
-						i( 61578),
-						i( 61580),
-						i( 61582),
-						i( 61584),
+--					qg(, q(44765)),	-- Stranglethorn Fishing Extravaganza
+					qg(2548, q(26633, { -- Swabbing Duty
+						i(61578),
+						i(61580),
+						i(61582),
+						i(61584),
 						i(131567),
 						i(131568),
 					})),
 --[[
-					qg(, q( 26634)),	-- The Bane of Many A Pirate
-					qg(, q( 26611)),	-- The Baron Must Be Told
+					qg(, q(26634)),	-- The Bane of Many A Pirate
+					qg(, q(26611)),	-- The Baron Must Be Told
 					qg(, qh(28750)),	-- The Battle for Andorhal
 					qg(, qa(28749)),	-- The Battle for Andorhal
-					qg(, q( 26609)),	-- The Bloodsail Buccaneers
-					qg(, q( 26662)),	-- The Brashtide Crew
+					qg(, q(26609)),	-- The Bloodsail Buccaneers
+					qg(, q(26662)),	-- The Brashtide Crew
 					qg(48808, qa(26596)),	-- The Call of Kalimdor
 					qg(48797, qh(26696)),	-- The Call of Kalimdor
 --]]
-					qg( 2500, q( 26599, { -- The Captain's Chest
+					qg(2500, q(26599, { -- The Captain's Chest
 						i(11469),
 					})),
 --[[
-					qg(, q( 26700)),	-- The Damsel's (Bad) Luck
-					qg(, q( 26650)),	-- The Damsel's Luck
-					qg(, q( 40849)),	-- The Dreadblades
-					qg(, q( 26837)),	-- The Explorers' League Digsite
+					qg(, q(26700)),	-- The Damsel's (Bad) Luck
+					qg(, q(26650)),	-- The Damsel's Luck
+					qg(, q(40849)),	-- The Dreadblades
+					qg(, q(26837)),	-- The Explorers' League Digsite
 --]]
-					qg( 2496, q( 26697, { -- The Final Voyage of the Brashtide
-						i( 61608),
-						i( 61612),
+					qg(2496, q(26697, { -- The Final Voyage of the Brashtide
+						i(61608),
+						i(61612),
 						i(157000), -- Fuse-Cutter Knife
 					})),
 --[[					
 					qg(, qa(47709)),	-- The Great Gnomeregan Race
-					qg(, q( 26598)),	-- The Heart of Mokk
+					qg(, q(26598)),	-- The Heart of Mokk
 					qg(, qh(26590)),	-- The Holy Water of Clarity
 					qg(, qh(26433)),	-- The Holy Water of Clarity
 					qg(, qa(11970)),	-- The Master of Summer Lore
@@ -492,25 +492,25 @@ _.Zones =
 						i(61524),
 					})),
 --[[					
-					qg(, q( 32436)),	-- Third Place
-					qg(, q( 26811)),	-- Through the Troll Hole
-					qg(, q( 26552)),	-- Through the Troll Hole
+					qg(, q(32436)),	-- Third Place
+					qg(, q(26811)),	-- Through the Troll Hole
+					qg(, q(26552)),	-- Through the Troll Hole
 					qg(, qa(26805)),	-- To the Cape!
 					qg(, qa(26823)),	-- Too Big For His Britches
-					qg(, q(  9259)),	-- Traitor to the Bloodsail
+					qg(, q(9259)),	-- Traitor to the Bloodsail
 --]]
-					qg( 2487, q( 26699, { -- Turning the Brashtide
-						i( 61620),
-						i( 61622),
-						i( 61624),
+					qg(2487, q(26699, { -- Turning the Brashtide
+						i(61620),
+						i(61622),
+						i(61624),
 						i(131585),
 					})),
 --[[					
-					qg(, q( 26613)),	-- Up to Snuff
+					qg(, q(26613)),	-- Up to Snuff
 					qg(, qh(28704)),	-- Warchief's Command: The Cape of Stranglethorn!
-					qg(, q(  8674)),	-- Winterhoof the Elder
-					qg(, q( 42758)),	-- You're Gonna Need A Bigger Boat!
-					qg(, q( 26631)),	-- Your First Day as a Pirate
+					qg(, q(8674)),	-- Winterhoof the Elder
+					qg(, q(42758)),	-- You're Gonna Need A Bigger Boat!
+					qg(, q(26631)),	-- Your First Day as a Pirate
 					qg(, qa(26815)),	-- Zanzil's Secret
 					qg(, qh(26533)),	-- Zanzil's Secret	
 --]]					
@@ -541,206 +541,206 @@ _.Zones =
 						["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM\nThose are the times the chest spawns.\nNote: The spawn times are SERVER time, not local time.",
 					}),
 					n(14491, { 	-- Kurmokk
-						dr(04.0, i(  7409)),	-- Infiltrator Boots
-						dr(03.0, i(  9836)),	-- Banded Armor
-						dr(03.0, i(  9847)),	-- Conjurer's Cloak
-						dr(03.0, i(  7354)),	-- Elder's Boots
-						dr(03.0, i(  7413)),	-- Infiltrator Cap
-						dr(03.0, i(  7408)),	-- Infiltrator Shoulders
-						dr(03.0, i(  7420)),	-- Phalanx Headguard
-						dr(03.0, i(  7423)),	-- Phalanx Leggings
-						dr(03.0, i(  7424)),	-- Phalanx Spaulders
-						dr(03.0, i(  9867)),	-- Renegade Cloak
-						dr(03.0, i(  9833)),	-- Scaled Leather Leggings
-						dr(02.0, i(  9825)),	-- Durable Pants
-						dr(02.0, i(  7366)),	-- Elder's Gloves
-						dr(02.0, i(  7367)),	-- Elder's Mantle
-						dr(02.0, i(  7421)),	-- Phalanx Gauntlets
-						dr(02.0, i( 10406)),	-- Scaled Leather Headband
-						dr(02.0, i(  9835)),	-- Scaled Leather Tunic
-						dr(01.9, i(  9826)),	-- Durable Robe
-						dr(01.9, i(  9824)),	-- Durable Shoulders
-						dr(01.9, i(  7422)),	-- Phalanx Girdle
-						dr(01.9, i(  6609)),	-- Sage's Cloth
-						dr(01.8, i(  6610)),	-- Sage's Robe
-						dr(01.7, i( 10289)),	-- Durable Hat
-						dr(01.6, i(  7368)),	-- Elder's Pants
-						dr(01.5, i(  9857)),	-- Archer's Bracers
-						dr(01.5, i(  7417)),	-- Phalanx Boots
-						dr(01.5, i(  6616)),	-- Sage's Pants
-						dr(01.4, i(  9855)),	-- Archer's Belt
-						dr(01.4, i(  9842)),	-- Banded Pauldrons
-						dr(01.4, i(  9853)),	-- Conjurer's Cinch
-						dr(01.3, i( 10409)),	-- Banded Boots
-						dr(01.3, i( 10408)),	-- Banded Helm
-						dr(01.3, i(  9819)),	-- Durable Tunic
-						dr(01.3, i(  7406)),	-- Infiltrator Cord
-						dr(01.3, i(  7412)),	-- Infiltrator Gloves
-						dr(01.3, i(  9868)),	-- Renegade Gauntlets
-						dr(01.3, i(  7438)),	-- Twilight Belt
-						dr(01.2, i(  9841)),	-- Banded Leggings
-						dr(01.2, i(  7407)),	-- Infiltrator Armor
-						dr(01.2, i(  7460)),	-- Knight's Cloak
-						dr(01.1, i(  9860)),	-- Archer's Cloak
-						dr(01.1, i(  9845)),	-- Conjurer's Shoes
-						dr(01.1, i(  7357)),	-- Elder's Hat
-						dr(01.1, i(  9865)),	-- Renegade Bracers
-						dr(01.1, i(  9834)),	-- Scaled Leather Shoulders
-						dr(01.0, i(  7414)),	-- Infiltrator Pants
+						dr(04.0, i(7409)),	-- Infiltrator Boots
+						dr(03.0, i(9836)),	-- Banded Armor
+						dr(03.0, i(9847)),	-- Conjurer's Cloak
+						dr(03.0, i(7354)),	-- Elder's Boots
+						dr(03.0, i(7413)),	-- Infiltrator Cap
+						dr(03.0, i(7408)),	-- Infiltrator Shoulders
+						dr(03.0, i(7420)),	-- Phalanx Headguard
+						dr(03.0, i(7423)),	-- Phalanx Leggings
+						dr(03.0, i(7424)),	-- Phalanx Spaulders
+						dr(03.0, i(9867)),	-- Renegade Cloak
+						dr(03.0, i(9833)),	-- Scaled Leather Leggings
+						dr(02.0, i(9825)),	-- Durable Pants
+						dr(02.0, i(7366)),	-- Elder's Gloves
+						dr(02.0, i(7367)),	-- Elder's Mantle
+						dr(02.0, i(7421)),	-- Phalanx Gauntlets
+						dr(02.0, i(10406)),	-- Scaled Leather Headband
+						dr(02.0, i(9835)),	-- Scaled Leather Tunic
+						dr(01.9, i(9826)),	-- Durable Robe
+						dr(01.9, i(9824)),	-- Durable Shoulders
+						dr(01.9, i(7422)),	-- Phalanx Girdle
+						dr(01.9, i(6609)),	-- Sage's Cloth
+						dr(01.8, i(6610)),	-- Sage's Robe
+						dr(01.7, i(10289)),	-- Durable Hat
+						dr(01.6, i(7368)),	-- Elder's Pants
+						dr(01.5, i(9857)),	-- Archer's Bracers
+						dr(01.5, i(7417)),	-- Phalanx Boots
+						dr(01.5, i(6616)),	-- Sage's Pants
+						dr(01.4, i(9855)),	-- Archer's Belt
+						dr(01.4, i(9842)),	-- Banded Pauldrons
+						dr(01.4, i(9853)),	-- Conjurer's Cinch
+						dr(01.3, i(10409)),	-- Banded Boots
+						dr(01.3, i(10408)),	-- Banded Helm
+						dr(01.3, i(9819)),	-- Durable Tunic
+						dr(01.3, i(7406)),	-- Infiltrator Cord
+						dr(01.3, i(7412)),	-- Infiltrator Gloves
+						dr(01.3, i(9868)),	-- Renegade Gauntlets
+						dr(01.3, i(7438)),	-- Twilight Belt
+						dr(01.2, i(9841)),	-- Banded Leggings
+						dr(01.2, i(7407)),	-- Infiltrator Armor
+						dr(01.2, i(7460)),	-- Knight's Cloak
+						dr(01.1, i(9860)),	-- Archer's Cloak
+						dr(01.1, i(9845)),	-- Conjurer's Shoes
+						dr(01.1, i(7357)),	-- Elder's Hat
+						dr(01.1, i(9865)),	-- Renegade Bracers
+						dr(01.1, i(9834)),	-- Scaled Leather Shoulders
+						dr(01.0, i(7414)),	-- Infiltrator Pants
 					}), 
 					n(2541, { 	-- Lord Sakrasis
-						dr(05.0, i(  9828)),	-- Scaled Leather Boots
-						dr(05.0, i(  9832)),	-- Scaled Leather Gloves
-						dr(04.0, i(  9839)),	-- Banded Gauntlets
-						dr(04.0, i(  9820)),	-- Durable Boots
-						dr(04.0, i(  7411)),	-- Infiltrator Cloak
-						dr(04.0, i( 10288)),	-- Sage's Circlet
-						dr(03.0, i(  9840)),	-- Banded Girdle
-						dr(03.0, i(  6607)),	-- Dervish Leggings
-						dr(03.0, i( 10404)),	-- Durable Belt
-						dr(03.0, i(  9823)),	-- Durable Gloves
-						dr(03.0, i(  7355)),	-- Elder's Bracers
-						dr(03.0, i(  7370)),	-- Elder's Sash
-						dr(03.0, i(  7410)),	-- Infiltrator Bracers
-						dr(03.0, i(  7416)),	-- Phalanx Bracers
-						dr(03.0, i(  6617)),	-- Sage's Mantle
-						dr(02.0, i(  9837)),	-- Banded Bracers
-						dr(02.0, i(  6603)),	-- Dervish Tunic
-						dr(02.0, i(  9821)),	-- Durable Bracers
-						dr(02.0, i(  7356)),	-- Elder's Cloak
-						dr(02.0, i(  7419)),	-- Phalanx Cloak
-						dr(02.0, i(  9827)),	-- Scaled Leather Belt
-						dr(01.6, i(  7413)),	-- Infiltrator Cap
-						dr(01.4, i(  6610)),	-- Sage's Robe
-						dr(01.3, i(  9842)),	-- Banded Pauldrons
-						dr(01.2, i(  7412)),	-- Infiltrator Gloves
-						dr(01.2, i(  7422)),	-- Phalanx Girdle
-						dr(01.1, i(  7366)),	-- Elder's Gloves
-						dr(01.1, i(  7424)),	-- Phalanx Spaulders
-						dr(01.1, i(  6616)),	-- Sage's Pants
-						dr(01.1, i(  9835)),	-- Scaled Leather Tunic
-						dr(01.0, i( 10289)),	-- Durable Hat
-						dr(01.0, i(  7406)),	-- Infiltrator Cord
+						dr(05.0, i(9828)),	-- Scaled Leather Boots
+						dr(05.0, i(9832)),	-- Scaled Leather Gloves
+						dr(04.0, i(9839)),	-- Banded Gauntlets
+						dr(04.0, i(9820)),	-- Durable Boots
+						dr(04.0, i(7411)),	-- Infiltrator Cloak
+						dr(04.0, i(10288)),	-- Sage's Circlet
+						dr(03.0, i(9840)),	-- Banded Girdle
+						dr(03.0, i(6607)),	-- Dervish Leggings
+						dr(03.0, i(10404)),	-- Durable Belt
+						dr(03.0, i(9823)),	-- Durable Gloves
+						dr(03.0, i(7355)),	-- Elder's Bracers
+						dr(03.0, i(7370)),	-- Elder's Sash
+						dr(03.0, i(7410)),	-- Infiltrator Bracers
+						dr(03.0, i(7416)),	-- Phalanx Bracers
+						dr(03.0, i(6617)),	-- Sage's Mantle
+						dr(02.0, i(9837)),	-- Banded Bracers
+						dr(02.0, i(6603)),	-- Dervish Tunic
+						dr(02.0, i(9821)),	-- Durable Bracers
+						dr(02.0, i(7356)),	-- Elder's Cloak
+						dr(02.0, i(7419)),	-- Phalanx Cloak
+						dr(02.0, i(9827)),	-- Scaled Leather Belt
+						dr(01.6, i(7413)),	-- Infiltrator Cap
+						dr(01.4, i(6610)),	-- Sage's Robe
+						dr(01.3, i(9842)),	-- Banded Pauldrons
+						dr(01.2, i(7412)),	-- Infiltrator Gloves
+						dr(01.2, i(7422)),	-- Phalanx Girdle
+						dr(01.1, i(7366)),	-- Elder's Gloves
+						dr(01.1, i(7424)),	-- Phalanx Spaulders
+						dr(01.1, i(6616)),	-- Sage's Pants
+						dr(01.1, i(9835)),	-- Scaled Leather Tunic
+						dr(01.0, i(10289)),	-- Durable Hat
+						dr(01.0, i(7406)),	-- Infiltrator Cord
 						nld({     -- Legacy
 							i(5028),	-- Lord Sakrasis' Scepter	
 						}),
 					}), 
 					n(14490, { 	-- Rippa
-						dr(04.0, i(  7533)),	-- Cabalist Cloak
-						dr(04.0, i(  9907)),	-- Royal Boots
-						dr(04.0, i(  9908)),	-- Royal Cape
-						dr(03.0, i(  9932)),	-- Brigade Circlet
-						dr(03.0, i(  7486)),	-- Captain's Breastplate
-						dr(03.0, i(  7544)),	-- Champion's Cape
-						dr(03.0, i(  7524)),	-- Gossamer Cape
-						dr(03.0, i(  9906)),	-- Royal Sash
-						dr(03.0, i(  9917)),	-- Tracker's Boots
-						dr(03.0, i(  9920)),	-- Tracker's Gloves
-						dr(03.0, i(  9925)),	-- Tracker's Wristguards
-						dr(02.0, i(  9930)),	-- Brigade Gauntlets
-						dr(02.0, i(  9970)),	-- Embossed Plate Leggings
-						dr(02.0, i(  9286)),	-- Field Plate Armor
-						dr(02.0, i(  9291)),	-- Field Plate Leggings
-						dr(02.0, i(  7469)),	-- Regal Leggings
-						dr(02.0, i(  9916)),	-- Tracker's Belt
-						dr(01.8, i(  9934)),	-- Brigade Pauldrons
-						dr(01.8, i(  9909)),	-- Royal Bands
-						dr(01.7, i(  9910)),	-- Royal Gloves
-						dr(01.6, i(  9926)),	-- Brigade Boots
-						dr(01.6, i(  9969)),	-- Embossed Plate Helmet
-						dr(01.5, i(  9966)),	-- Embossed Plate Armor
-						dr(01.4, i(  7487)),	-- Captain's Leggings
-						dr(01.4, i(  7478)),	-- Ranger Leggings
-						dr(01.3, i(  7531)),	-- Cabalist Boots
-						dr(01.3, i(  9971)),	-- Embossed Plate Pauldrons
-						dr(01.3, i(  9874)),	-- Sorcerer Drape
-						dr(01.2, i(  9931)),	-- Brigade Girdle
-						dr(01.2, i(  7491)),	-- Captain's Shoulderguards
-						dr(01.2, i(  9887)),	-- Huntsman's Armor
-						dr(01.2, i(  9919)),	-- Tracker's Cloak
-						dr(01.1, i(  9884)),	-- Sorcerer Robe
-						dr(01.0, i(  9933)),	-- Brigade Leggings
-						dr(01.0, i(  7535)),	-- Cabalist Belt
-						dr(01.0, i(  9967)),	-- Embossed Plate Gauntlets
-						dr(01.0, i( 10090)),	-- Gothic Plate Helmet
-						dr(01.0, i(  9959)),	-- Warmonger's Cloak
+						dr(04.0, i(7533)),	-- Cabalist Cloak
+						dr(04.0, i(9907)),	-- Royal Boots
+						dr(04.0, i(9908)),	-- Royal Cape
+						dr(03.0, i(9932)),	-- Brigade Circlet
+						dr(03.0, i(7486)),	-- Captain's Breastplate
+						dr(03.0, i(7544)),	-- Champion's Cape
+						dr(03.0, i(7524)),	-- Gossamer Cape
+						dr(03.0, i(9906)),	-- Royal Sash
+						dr(03.0, i(9917)),	-- Tracker's Boots
+						dr(03.0, i(9920)),	-- Tracker's Gloves
+						dr(03.0, i(9925)),	-- Tracker's Wristguards
+						dr(02.0, i(9930)),	-- Brigade Gauntlets
+						dr(02.0, i(9970)),	-- Embossed Plate Leggings
+						dr(02.0, i(9286)),	-- Field Plate Armor
+						dr(02.0, i(9291)),	-- Field Plate Leggings
+						dr(02.0, i(7469)),	-- Regal Leggings
+						dr(02.0, i(9916)),	-- Tracker's Belt
+						dr(01.8, i(9934)),	-- Brigade Pauldrons
+						dr(01.8, i(9909)),	-- Royal Bands
+						dr(01.7, i(9910)),	-- Royal Gloves
+						dr(01.6, i(9926)),	-- Brigade Boots
+						dr(01.6, i(9969)),	-- Embossed Plate Helmet
+						dr(01.5, i(9966)),	-- Embossed Plate Armor
+						dr(01.4, i(7487)),	-- Captain's Leggings
+						dr(01.4, i(7478)),	-- Ranger Leggings
+						dr(01.3, i(7531)),	-- Cabalist Boots
+						dr(01.3, i(9971)),	-- Embossed Plate Pauldrons
+						dr(01.3, i(9874)),	-- Sorcerer Drape
+						dr(01.2, i(9931)),	-- Brigade Girdle
+						dr(01.2, i(7491)),	-- Captain's Shoulderguards
+						dr(01.2, i(9887)),	-- Huntsman's Armor
+						dr(01.2, i(9919)),	-- Tracker's Cloak
+						dr(01.1, i(9884)),	-- Sorcerer Robe
+						dr(01.0, i(9933)),	-- Brigade Leggings
+						dr(01.0, i(7535)),	-- Cabalist Belt
+						dr(01.0, i(9967)),	-- Embossed Plate Gauntlets
+						dr(01.0, i(10090)),	-- Gothic Plate Helmet
+						dr(01.0, i(9959)),	-- Warmonger's Cloak
 					}), 
 					n(1552, { 	-- Scale Belly
-						dr(05.0, i(  7370)),	-- Elder's Sash
-						dr(04.0, i(  9837)),	-- Banded Bracers
-						dr(04.0, i(  7410)),	-- Infiltrator Bracers
-						dr(04.0, i(  9828)),	-- Scaled Leather Boots
-						dr(03.0, i(  9839)),	-- Banded Gauntlets
-						dr(03.0, i(  9840)),	-- Banded Girdle
-						dr(03.0, i(  6603)),	-- Dervish Tunic
-						dr(03.0, i( 10404)),	-- Durable Belt
-						dr(03.0, i(  9820)),	-- Durable Boots
-						dr(03.0, i(  9823)),	-- Durable Gloves
-						dr(03.0, i(  7355)),	-- Elder's Bracers
-						dr(03.0, i(  7356)),	-- Elder's Cloak
-						dr(03.0, i(  7411)),	-- Infiltrator Cloak
-						dr(03.0, i(  7416)),	-- Phalanx Bracers
-						dr(03.0, i( 10288)),	-- Sage's Circlet
-						dr(03.0, i(  9827)),	-- Scaled Leather Belt
-						dr(03.0, i(  9832)),	-- Scaled Leather Gloves
-						dr(02.0, i(  6607)),	-- Dervish Leggings
-						dr(02.0, i(  9821)),	-- Durable Bracers
-						dr(02.0, i(  7357)),	-- Elder's Hat
-						dr(02.0, i(  7419)),	-- Phalanx Cloak
-						dr(02.0, i(  6617)),	-- Sage's Mantle
-						dr(01.5, i(  9833)),	-- Scaled Leather Leggings
-						dr(01.4, i(  9834)),	-- Scaled Leather Shoulders
-						dr(01.2, i(  9857)),	-- Archer's Bracers
-						dr(01.2, i(  9842)),	-- Banded Pauldrons
-						dr(01.2, i(  7366)),	-- Elder's Gloves
-						dr(01.2, i(  9867)),	-- Renegade Cloak
-						dr(01.1, i(  9841)),	-- Banded Leggings
-						dr(01.1, i(  7406)),	-- Infiltrator Cord
-						dr(01.1, i(  7412)),	-- Infiltrator Gloves
-						dr(01.0, i(  9853)),	-- Conjurer's Cinch
-						dr(01.0, i(  7422)),	-- Phalanx Girdle
+						dr(05.0, i(7370)),	-- Elder's Sash
+						dr(04.0, i(9837)),	-- Banded Bracers
+						dr(04.0, i(7410)),	-- Infiltrator Bracers
+						dr(04.0, i(9828)),	-- Scaled Leather Boots
+						dr(03.0, i(9839)),	-- Banded Gauntlets
+						dr(03.0, i(9840)),	-- Banded Girdle
+						dr(03.0, i(6603)),	-- Dervish Tunic
+						dr(03.0, i(10404)),	-- Durable Belt
+						dr(03.0, i(9820)),	-- Durable Boots
+						dr(03.0, i(9823)),	-- Durable Gloves
+						dr(03.0, i(7355)),	-- Elder's Bracers
+						dr(03.0, i(7356)),	-- Elder's Cloak
+						dr(03.0, i(7411)),	-- Infiltrator Cloak
+						dr(03.0, i(7416)),	-- Phalanx Bracers
+						dr(03.0, i(10288)),	-- Sage's Circlet
+						dr(03.0, i(9827)),	-- Scaled Leather Belt
+						dr(03.0, i(9832)),	-- Scaled Leather Gloves
+						dr(02.0, i(6607)),	-- Dervish Leggings
+						dr(02.0, i(9821)),	-- Durable Bracers
+						dr(02.0, i(7357)),	-- Elder's Hat
+						dr(02.0, i(7419)),	-- Phalanx Cloak
+						dr(02.0, i(6617)),	-- Sage's Mantle
+						dr(01.5, i(9833)),	-- Scaled Leather Leggings
+						dr(01.4, i(9834)),	-- Scaled Leather Shoulders
+						dr(01.2, i(9857)),	-- Archer's Bracers
+						dr(01.2, i(9842)),	-- Banded Pauldrons
+						dr(01.2, i(7366)),	-- Elder's Gloves
+						dr(01.2, i(9867)),	-- Renegade Cloak
+						dr(01.1, i(9841)),	-- Banded Leggings
+						dr(01.1, i(7406)),	-- Infiltrator Cord
+						dr(01.1, i(7412)),	-- Infiltrator Gloves
+						dr(01.0, i(9853)),	-- Conjurer's Cinch
+						dr(01.0, i(7422)),	-- Phalanx Girdle
 						nld({     -- Legacy
 							i(4478),	-- Iridescent Scale Leggings	
 							i(1604),	-- Chromatic Sword								
 						}),						
 					}), 
 					n(14492, { 	-- Verifonix
-						dr(28.0, i(  9867)),	-- Renegade Cloak
-						dr(04.0, i(  7423)),	-- Phalanx Leggings
-						dr(03.0, i(  9860)),	-- Archer's Cloak
-						dr(03.0, i(  9853)),	-- Conjurer's Cinch
-						dr(03.0, i(  7357)),	-- Elder's Hat
-						dr(03.0, i(  7460)),	-- Knight's Cloak
-						dr(02.0, i(  9857)),	-- Archer's Bracers
-						dr(02.0, i(  9826)),	-- Durable Robe
-						dr(02.0, i(  9819)),	-- Durable Tunic
-						dr(02.0, i(  7368)),	-- Elder's Pants
-						dr(02.0, i(  7414)),	-- Infiltrator Pants
-						dr(02.0, i(  7417)),	-- Phalanx Boots
-						dr(02.0, i(  9865)),	-- Renegade Bracers
-						dr(01.6, i(  7461)),	-- Knight's Bracers
-						dr(01.5, i(  9861)),	-- Archer's Gloves
-						dr(01.4, i(  9836)),	-- Banded Armor
-						dr(01.4, i(  7418)),	-- Phalanx Breastplate
-						dr(01.2, i(  9845)),	-- Conjurer's Shoes
-						dr(01.2, i(  9825)),	-- Durable Pants
-						dr(01.2, i(  7367)),	-- Elder's Mantle
-						dr(01.2, i(  7424)),	-- Phalanx Spaulders
-						dr(01.2, i(  9868)),	-- Renegade Gauntlets
-						dr(01.2, i(  9833)),	-- Scaled Leather Leggings
-						dr(01.1, i(  9855)),	-- Archer's Belt
-						dr(01.1, i(  9846)),	-- Conjurer's Bracers
-						dr(01.1, i(  7353)),	-- Elder's Padded Armor
-						dr(01.1, i(  7369)),	-- Elder's Robe
-						dr(01.1, i(  7407)),	-- Infiltrator Armor
-						dr(01.1, i(  7409)),	-- Infiltrator Boots
-						dr(01.1, i(  9835)),	-- Scaled Leather Tunic
-						dr(01.0, i(  9847)),	-- Conjurer's Cloak
-						dr(01.0, i(  7354)),	-- Elder's Boots
-						dr(01.0, i(  7413)),	-- Infiltrator Cap
-						dr(01.0, i(  7408)),	-- Infiltrator Shoulders
-						dr(01.0, i(  9869)),	-- Renegade Belt
-						dr(01.0, i(  7436)),	-- Twilight Cape
+						dr(28.0, i(9867)),	-- Renegade Cloak
+						dr(04.0, i(7423)),	-- Phalanx Leggings
+						dr(03.0, i(9860)),	-- Archer's Cloak
+						dr(03.0, i(9853)),	-- Conjurer's Cinch
+						dr(03.0, i(7357)),	-- Elder's Hat
+						dr(03.0, i(7460)),	-- Knight's Cloak
+						dr(02.0, i(9857)),	-- Archer's Bracers
+						dr(02.0, i(9826)),	-- Durable Robe
+						dr(02.0, i(9819)),	-- Durable Tunic
+						dr(02.0, i(7368)),	-- Elder's Pants
+						dr(02.0, i(7414)),	-- Infiltrator Pants
+						dr(02.0, i(7417)),	-- Phalanx Boots
+						dr(02.0, i(9865)),	-- Renegade Bracers
+						dr(01.6, i(7461)),	-- Knight's Bracers
+						dr(01.5, i(9861)),	-- Archer's Gloves
+						dr(01.4, i(9836)),	-- Banded Armor
+						dr(01.4, i(7418)),	-- Phalanx Breastplate
+						dr(01.2, i(9845)),	-- Conjurer's Shoes
+						dr(01.2, i(9825)),	-- Durable Pants
+						dr(01.2, i(7367)),	-- Elder's Mantle
+						dr(01.2, i(7424)),	-- Phalanx Spaulders
+						dr(01.2, i(9868)),	-- Renegade Gauntlets
+						dr(01.2, i(9833)),	-- Scaled Leather Leggings
+						dr(01.1, i(9855)),	-- Archer's Belt
+						dr(01.1, i(9846)),	-- Conjurer's Bracers
+						dr(01.1, i(7353)),	-- Elder's Padded Armor
+						dr(01.1, i(7369)),	-- Elder's Robe
+						dr(01.1, i(7407)),	-- Infiltrator Armor
+						dr(01.1, i(7409)),	-- Infiltrator Boots
+						dr(01.1, i(9835)),	-- Scaled Leather Tunic
+						dr(01.0, i(9847)),	-- Conjurer's Cloak
+						dr(01.0, i(7354)),	-- Elder's Boots
+						dr(01.0, i(7413)),	-- Infiltrator Cap
+						dr(01.0, i(7408)),	-- Infiltrator Shoulders
+						dr(01.0, i(9869)),	-- Renegade Belt
+						dr(01.0, i(7436)),	-- Twilight Cape
 					}), 
 					n(0, { 		-- Zone Drop
 						i(2955),	-- First Mate Hat

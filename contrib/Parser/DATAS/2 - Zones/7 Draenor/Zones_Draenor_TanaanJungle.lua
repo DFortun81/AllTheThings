@@ -45,11 +45,11 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q( 38428),	-- A Fel Puppy Of My Own
+					q(38428),	-- A Fel Puppy Of My Own
 					qh( 39510),	-- A Little Wetwork
 					qa( 39568),	-- A Little Wetwork
-					q( 38578),	-- A Message of Terrible Import
-					q( 40235),	-- Abrogator Arbitrator
+					q(38578),	-- A Message of Terrible Import
+					q(40235),	-- Abrogator Arbitrator
 					qh( 37940),	-- Assault on Ironhold Harbor
 					qa( 37891),	-- Assault on Ironhold Harbor
 					qa( 38440),	-- Assault on The Fel Forge
@@ -67,7 +67,7 @@ _.Zones =
 					qh( 39511),	-- Blood of Fallen Brothers
 					qh( 39509),	-- Bloodied Blades of Zeth'Gol
 					qa( 39567),	-- Bloodied Blades of Zeth'Gol
-					q( 38462),	-- Breaching the Barrier
+					q(38462),	-- Breaching the Barrier
 					qa( 39569),	-- Breaking Their Fel Bonds
 					qa( 39313),	-- Bring the Reinforcements
 					qh( 39315),	-- Bring the Reinforcements
@@ -75,13 +75,13 @@ _.Zones =
 					qa( 39586),	-- Bringing Down the Iron Horde
 					qh( 38001),	-- Commander in the Field!
 					qa( 38446),	-- Commander in the Field!
-					q( 38223),	-- Dark Ascension
+					q(38223),	-- Dark Ascension
 					qa( 39581),	-- Demonslayer of Tanaan
 					qh( 39519),	-- Demonslayer of Tanaan
 					qa( 39571),	-- Disarming Sha'naar
 					qh( 39513),	-- Disarming Sha'naar
-					q( 38270),	-- Finding the Killer
-					q( 38271),	-- Following the Bloody Path
+					q(38270),	-- Finding the Killer
+					q(38271),	-- Following the Bloody Path
 					qa( 38267),	-- Friends Above
 					qh( 38269),	-- Friends Above
 					qa( 37687),	-- Garrison Campaign: In the Shadows
@@ -94,48 +94,48 @@ _.Zones =
 					qh( 38458),	-- Garrison Campaign: The Warlock
 					qh( 39175),	-- Gems of the Apexis
 					qa( 39195),	-- Gems of the Apexis
-					q( 38213),	-- Get a Clue
-					q( 39015),	-- Grumpy
+					q(38213),	-- Get a Clue
+					q(39015),	-- Grumpy
 					qh( 39514),	-- Harnessing Their Power
 					qa( 39573),	-- Harnessing Their Power
 					qh( 39604),	-- I Sunk Your Battleship
 					qa( 39601),	-- I Sunk Your Battleship
-					q( 39129),	-- Ill Tempered
+					q(39129),	-- Ill Tempered
 					qh( 37934),	-- In, Through, and Beyond!
 					qa( 38444),	-- In, Through, and Beyond!
 					qh( 38599),	-- Infrastructure Improvements
 					qa( 37839),	-- Light Be With You
-					q( 39176),	-- Mastery Of Taladite
+					q(39176),	-- Mastery Of Taladite
 					qh( 37890),	-- Obstacle Course
 					qa( 38436),	-- Obstacle Course
-					q( 39395),	-- Oronok's Offer
+					q(39395),	-- Oronok's Offer
 					qa( 39574),	-- Pressing the Attack
 					qh( 39526),	-- Pressing the Attack
-					q( 39177),	-- Ruined Construct
-					q( 39565),	-- Rumble in the Jungle
+					q(39177),	-- Ruined Construct
+					q(39565),	-- Rumble in the Jungle
 					qa( 39570),	-- Secrets of the Shadow Council
 					qh( 39512),	-- Secrets of the Shadow Council
 					qa( 38603),	-- Setting the Signal
 					qh( 39423),	-- Shipyard Report
 					qa( 39422),	-- Shipyard Report
-					q( 38273),	-- Spirits of the Bleeding Hollow
-					q( 34366),	-- Tanaan 01: Front of the Portal
+					q(38273),	-- Spirits of the Bleeding Hollow
+					q(34366),	-- Tanaan 01: Front of the Portal
 					qa( 38445),	-- The Assault Base
 					qh( 37935),	-- The Assault Base					
 					qa( 38581),	-- The Battle for the West
 					qh( 38577),	-- The Battle for the West
-					q( 38272),	-- The Bleeding Hollow
+					q(38272),	-- The Bleeding Hollow
 					qh( 38463),	-- The Cipher of Damnation
 					qa( 39394),	-- The Cipher of Damnation
-					q( 38274),	-- The Eye of Kilrogg
+					q(38274),	-- The Eye of Kilrogg
 					qa( 38435),	-- The Invasion of Tanaan
 					qh( 37889),	-- The Invasion of Tanaan
 					qh( 35058),	-- The Mysterious Flask
 					qh( 39529),	-- Tooth and Claw
 					qa( 39582),	-- Tooth and Claw
-					q( 39432),	-- Unknowable Power
-					q( 39433),	-- Unseen Influence
-					q( 40237),	-- Work Work Stoppage
+					q(39432),	-- Unknowable Power
+					q(39433),	-- Unseen Influence
+					q(40237),	-- Work Work Stoppage
 					qh( 38989),	-- Your Orders, General?
 					qa( 38996),	-- Your Orders, General?	
 --]]					

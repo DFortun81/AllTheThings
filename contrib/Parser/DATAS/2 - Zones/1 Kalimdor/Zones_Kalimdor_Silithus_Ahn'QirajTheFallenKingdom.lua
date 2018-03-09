@@ -88,7 +88,7 @@ _.Zones =
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
-								q( 12401),	-- Candy Bucket
+								q(12401),	-- Candy Bucket
 							}),
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
@@ -144,9 +144,9 @@ _.Zones =
 						}),
 					}),
 					qwe(qg(117434, qa(45732))),	-- Crocolisk Tails
-					qwe(qg(117432, q( 45640))),	-- Crocolisk Tails (probably Horde-only)
+					qwe(qg(117432, q(45640))),	-- Crocolisk Tails (probably Horde-only)
 					qwe(qg(117434, qa(45730))),	-- Crunchy Spider Legs
-					qwe(qg(117432, q( 45638))),	-- Crunchy Spider Legs (probably Horde-only)
+					qwe(qg(117432, q(45638))),	-- Crunchy Spider Legs (probably Horde-only)
 					n(117670, {	-- Baron Kazum
 						i(143886, {	-- Diamondine Sigil of Kazum
 							qwe(qa(45761)),	-- Diamondine Sigil of Kazum
@@ -165,8 +165,8 @@ _.Zones =
 					}),
 					qwe(qg(117432, qh(45643))),	-- Lean Shanks
 					qwe(qg(117434, qa(45735))),	-- Lean Shanks
---					qwe(q( 45739)),	-- Lesser Wind Stones (WORLD QUEST)
---					qwe(q( 45656)),	-- Lesser Wind Stones (WORLD QUEST)
+--					qwe(q(45739)),	-- Lesser Wind Stones (WORLD QUEST)
+--					qwe(q(45656)),	-- Lesser Wind Stones (WORLD QUEST)
 					n(117663, {	-- The Duke of Fathoms
 						i(143873, {	-- Pearl of Fathoms
 							qwe(qh(45748)),	-- Pearl of Fathoms
@@ -188,9 +188,9 @@ _.Zones =
 						}),
 					}),
 					qwe(qg(117434, qa(45729))),	-- Sandworm Meat
-					qwe(q(  45637)),	-- Sandworm Meat (probably Horde-only)
---					qwe(q( 45740)),	-- Silithyst (WORLD QUEST)
---					qwe(q( 45657)),	-- Silithyst (WORLD QUEST)
+					qwe(q(45637)),	-- Sandworm Meat (probably Horde-only)
+--					qwe(q(45740)),	-- Silithyst (WORLD QUEST)
+--					qwe(q(45657)),	-- Silithyst (WORLD QUEST)
 					n(117665, {	-- The Duke of Zephyrs
 						i(143883, {	-- Song of Zephyrs
 							qwe(qa(45758)),	-- Song of Zephyrs
@@ -213,7 +213,7 @@ _.Zones =
 END OF MICRO-HOLIDAY --]]
 
 --[[
-					qg(15194, q( 8287)),	-- A Terrible Purpose
+					qg(15194, q(8287)),	-- A Terrible Purpose
 					qg(14347, q(43002, {	-- Blessed Blade of the Windseeker
 						["groups"] = {
 						},
@@ -222,7 +222,7 @@ END OF MICRO-HOLIDAY --]]
 --]]					
 					n(13136, {	-- Hive'Ashi Drone
 						i(20461, {	-- Brann Bronzebeard's Lost Letter
-							q( 8308,  {  -- Brann Bronzebeard's Lost Letter
+							q(8308,  {  -- Brann Bronzebeard's Lost Letter
 								["groups"] = {
 									i(20723),
 								},
@@ -231,23 +231,23 @@ END OF MICRO-HOLIDAY --]]
 						}),
 					}),
 --[[					
-					qg(15171, q(  8310)),	-- Breaking the Code
+					qg(15171, q(8310)),	-- Breaking the Code
 					qg(50587, qh(28865)),	-- Call of the Warmatron 
-					qg(15189, q(  8277)),	-- Deadly Desert Venom
-					qg(15181, q(  8304)),	-- Dearest Natalia
+					qg(15189, q(8277)),	-- Deadly Desert Venom
+					qg(15181, q(8304)),	-- Dearest Natalia
 					qp185(qg(15174, q(8307))),	-- Desert Recipe
-					qg(15306, q(  8319)),	-- Encrypted Twilight Texts
-					ql(qg(14347, q(  7785))),	-- Examine the Vessel
-					qg(15170, q(  8309)),	-- Glyph Chasing
+					qg(15306, q(8319)),	-- Encrypted Twilight Texts
+					ql(qg(14347, q(7785))),	-- Examine the Vessel
+					qg(15170, q(8309)),	-- Glyph Chasing
 --]]					
-					qg(15184, q(  8306,  {  -- Into The Maw of Madness
+					qg(15184, q(8306,  {  -- Into The Maw of Madness
 						i(20724),
 					})),
 --[[					
-					qp185(qg(15174, q( 8317))),	-- Kitchen Assistance
+					qp185(qg(15174, q(8317))),	-- Kitchen Assistance
 					qg(50588, qa(28867)),	-- Nethergarde Needs You!
-					qg(15189, q(  8278)),	-- Noggle's Last Hope
-					qg(15190, q(  8282)),	-- Noggle's Lost Satchel
+					qg(15189, q(8278)),	-- Noggle's Last Hope
+					qg(15190, q(8282)),	-- Noggle's Lost Satchel
 					qg(17081, qh( 9416)),	-- Report to General Kirika
 					qg(17082, qa( 9415)),	-- Report to Marshal Bluewall
 --]]					
@@ -259,12 +259,12 @@ END OF MICRO-HOLIDAY --]]
 						}),
 					}),
 --[[					
-					qg(15306, q(  8318)),	-- Secret Communication
-					qg(15191, q(  8280)),	-- Securing the Supply Lines
+					qg(15306, q(8318)),	-- Secret Communication
+					qg(15191, q(8280)),	-- Securing the Supply Lines
 					qp185(qg(180503, q(8313))),	-- Sharing the Knowledge
-					qg(15191, q(  8281)),	-- Stepping Up Security
+					qg(15191, q(8281)),	-- Stepping Up Security
 --]]					
-					qg(15194, q(  8324,  {  -- Still Believing
+					qg(15194, q(8324,  {  -- Still Believing
 						["groups"] = {
 							i(20469, {
 								i(20548, {
@@ -290,15 +290,15 @@ END OF MICRO-HOLIDAY --]]
 						["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in and has a chance to contain one or more of the recipes. Quest is repeatable.|r", 
 					})),
 --[[
-					qg(15183, q(  8285)),	-- The Deserter
-					qg(15194, q(  8279)),	-- The Twilight Lexicon
-					qg(15183, q(  8284)),	-- The Twilight Mystery
+					qg(15183, q(8285)),	-- The Deserter
+					qg(15194, q(8279)),	-- The Twilight Lexicon
+					qg(15183, q(8284)),	-- The Twilight Mystery
 					ql(qg(14347, q(7786))),	-- Thunderaan the Windseeker
-					qg(15194, q(  8323)),	-- True Believers
-					qg(15270, q(  8320)),	-- Twilight Geolords
-					qg(15170, q(  8314)),	-- Unraveling the Mystery
+					qg(15194, q(8323)),	-- True Believers
+					qg(15270, q(8320)),	-- Twilight Geolords
+					qg(15170, q(8314)),	-- Unraveling the Mystery
 --]]					
-					qg(15270, q(  8321,  {  -- Vyral the Vile
+					qg(15270, q(8321,  {  -- Vyral the Vile
 						i(20650),
 					})),
 					o(180448, {	-- Wanted Poster: Deathclasp

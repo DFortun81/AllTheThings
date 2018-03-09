@@ -148,14 +148,14 @@ _.Instances =
 								})),
 								cr(125075, e(1983, { -- Varimathras
 									ig(139300), -- Finely-Tailored Green Holiday Hat (HOLIDAY - Winter's Veil)
-									i( 151995), -- Robes of the Forsaken Dreadlord
-									i( 151979), -- Vest of Unfathomable Anguish
-									i( 151954), -- Blood-Drenched Bindings
-									i( 152281), -- Varimathras' Shattered Manacles
-									i( 151991), -- Belt of Fractured Sanity									
-									i( 151942), -- Cord of Surging Hysteria
-									i( 152015), -- Greaves of Mercurial Alliegance									
-									i( 151997), -- Nathrezim Shade-Walkers
+									i(151995), -- Robes of the Forsaken Dreadlord
+									i(151979), -- Vest of Unfathomable Anguish
+									i(151954), -- Blood-Drenched Bindings
+									i(152281), -- Varimathras' Shattered Manacles
+									i(151991), -- Belt of Fractured Sanity									
+									i(151942), -- Cord of Surging Hysteria
+									i(152015), -- Greaves of Mercurial Alliegance									
+									i(151997), -- Nathrezim Shade-Walkers
 								})),
 								cr(122468, e(1986, { -- The Coven of Shivarra
 									i(152129), -- Bearmantle Shoulders

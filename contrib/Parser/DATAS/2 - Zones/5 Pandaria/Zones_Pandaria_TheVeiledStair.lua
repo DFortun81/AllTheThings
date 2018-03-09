@@ -13,14 +13,14 @@ _.Zones =
 				}),
 				n(-17, { -- Quests
 --[[				
-					q( 32026),	-- Candy Bucket
-					q( 31287),	-- Educating Saurok
-					q( 31286),	-- Robbing Robbers of Robbers
-					q( 31611),	-- The Kun-Lai Kicker
+					q(32026),	-- Candy Bucket
+					q(31287),	-- Educating Saurok
+					q(31286),	-- Robbing Robbers of Robbers
+					q(31611),	-- The Kun-Lai Kicker
 					qa( 31254),	-- The Road to Kun-Lai
 					qh( 31255),	-- The Road to Kun-Lai
-					q( 38936),	-- The Road to Kun-Lai
-					q( 31285),	-- The Spring Drifter	
+					q(38936),	-- The Road to Kun-Lai
+					q(31285),	-- The Spring Drifter	
 --]]					
 					nlq({ 	-- Legacy Quests
 						q(33104, { -- A Pandaren Legend

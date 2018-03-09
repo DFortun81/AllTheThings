@@ -118,27 +118,27 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q( 12735),	-- A Cleansing Song
-					q( 12581),	-- A Hero's Burden
-					q( 12758),	-- A Hero's Headgear
-					q( 12607),	-- A Mammoth Undertaking
-					q( 12536),	-- A Rough Ride
-					q( 12804),	-- A Steak Fit for a Hunter
-					q( 12691),	-- A Timeworn Coffer
-					q( 12696),	-- Aerial Surveillance
-					q( 12699),	-- An Embarrassing Incident
-					q( 12561),	-- An Issue of Trust
-					q( 12543),	-- An Offering for Soo-rahm
-					q( 12704),	-- Appeasing the Great Rain Stone
-					q( 12574),	-- Back So Soon?
-					q( 12797),	-- Back Through the Waygate
-					q( 12683),	-- Burning to Help
-					q( 12950),	-- Candy Bucket
-					q( 12702),	-- Chicken Party!
-					q( 12569),	-- Crocolisk Mastery: The Ambush
-					q( 12560),	-- Crocolisk Mastery: The Plan
-					q( 12551),	-- Crocolisk Mastery: The Trial
-					q( 12608),	-- Cultist Incursion
+					q(12735),	-- A Cleansing Song
+					q(12581),	-- A Hero's Burden
+					q(12758),	-- A Hero's Headgear
+					q(12607),	-- A Mammoth Undertaking
+					q(12536),	-- A Rough Ride
+					q(12804),	-- A Steak Fit for a Hunter
+					q(12691),	-- A Timeworn Coffer
+					q(12696),	-- Aerial Surveillance
+					q(12699),	-- An Embarrassing Incident
+					q(12561),	-- An Issue of Trust
+					q(12543),	-- An Offering for Soo-rahm
+					q(12704),	-- Appeasing the Great Rain Stone
+					q(12574),	-- Back So Soon?
+					q(12797),	-- Back Through the Waygate
+					q(12683),	-- Burning to Help
+					q(12950),	-- Candy Bucket
+					q(12702),	-- Chicken Party!
+					q(12569),	-- Crocolisk Mastery: The Ambush
+					q(12560),	-- Crocolisk Mastery: The Plan
+					q(12551),	-- Crocolisk Mastery: The Trial
+					q(12608),	-- Cultist Incursion
 					qa( 11786),	-- Desecrate this Fire!
 					qh( 13442),	-- Desecrate this Fire!
 					qa( 11580),	-- Desecrate this Fire!
@@ -149,94 +149,94 @@ _.Zones =
 					qh( 11581),	-- Desecrate this Fire!
 					qh( 11745),	-- Desecrate this Fire!
 					qh( 11749),	-- Desecrate this Fire!
-					q( 12549),	-- Dreadsaber Mastery: Becoming a Predator
-					q( 12558),	-- Dreadsaber Mastery: Ready to Pounce
-					q( 12550),	-- Dreadsaber Mastery: Stalking the Prey
-					q( 12688),	-- Engineering a Disaster
-					q( 12617),	-- Exterminate the Intruders
-					q( 12532),	-- Flown the Coop!
-					q( 12803),	-- Force of Nature
-					q( 12576),	-- Forced Hand
-					q( 12570),	-- Fortunate Misunderstandings
-					q( 12582),	-- Frenzyheart Champion
-					q( 12621),	-- Freya's Pact
-					q( 12572),	-- Gods like Shiny Things
-					q( 12689),	-- Hand of the Oracles
-					q( 12523),	-- Have a Part, Give a Part
-					q( 12577),	-- Home Time!
+					q(12549),	-- Dreadsaber Mastery: Becoming a Predator
+					q(12558),	-- Dreadsaber Mastery: Ready to Pounce
+					q(12550),	-- Dreadsaber Mastery: Stalking the Prey
+					q(12688),	-- Engineering a Disaster
+					q(12617),	-- Exterminate the Intruders
+					q(12532),	-- Flown the Coop!
+					q(12803),	-- Force of Nature
+					q(12576),	-- Forced Hand
+					q(12570),	-- Fortunate Misunderstandings
+					q(12582),	-- Frenzyheart Champion
+					q(12621),	-- Freya's Pact
+					q(12572),	-- Gods like Shiny Things
+					q(12689),	-- Hand of the Oracles
+					q(12523),	-- Have a Part, Give a Part
+					q(12577),	-- Home Time!
 					qa( 13486),	-- Honor the Flame
 					qh( 13494),	-- Honor the Flame
-					q( 12539),	-- Hoofing It
-					q( 12595),	-- In Search of Bigger Game
+					q(12539),	-- Hoofing It
+					q(12595),	-- In Search of Bigger Game
 					qa( 11964),	-- Incense for the Summer Scorchlings
-					q( 12624),	-- It Could Be Anywhere!
-					q( 12540),	-- Just Following Orders
-					q( 12703),	-- Kartak's Rampage
-					q( 12589),	-- Kick, What Kick?
-					q( 12651),	-- Lakeside Landing
-					q( 12579),	-- Lifeblood of the Mosswalker Shrine
-					q( 12537),	-- Lightning Definitely Strikes Twice
-					q( 12571),	-- Make the Bad Snake Go Away
-					q( 12573),	-- Making Peace
-					q( 12761),	-- Mastery of the Crystals
-					q( 12535),	-- Mischief in the Making
-					q( 12658),	-- My Pet Roc
-					q( 12522),	-- Need an Engine, Take an Engine
-					q( 12528),	-- Playing Along
+					q(12624),	-- It Could Be Anywhere!
+					q(12540),	-- Just Following Orders
+					q(12703),	-- Kartak's Rampage
+					q(12589),	-- Kick, What Kick?
+					q(12651),	-- Lakeside Landing
+					q(12579),	-- Lifeblood of the Mosswalker Shrine
+					q(12537),	-- Lightning Definitely Strikes Twice
+					q(12571),	-- Make the Bad Snake Go Away
+					q(12573),	-- Making Peace
+					q(12761),	-- Mastery of the Crystals
+					q(12535),	-- Mischief in the Making
+					q(12658),	-- My Pet Roc
+					q(12522),	-- Need an Engine, Take an Engine
+					q(12528),	-- Playing Along
 					qa( 11882),	-- Playing with Fire
 					qh( 11915),	-- Playing with Fire
-					q( 12614),	-- Post-partum Aggression
-					q( 12762),	-- Power of the Great Ones
-					q( 12613),	-- Powering the Waygate - The Makers' Overlook
-					q( 12559),	-- Powering the Waygate - The Makers' Perch
-					q( 12681),	-- Reagent Agent
-					q( 12546),	-- Reclamation
-					q( 12671),	-- Reconnaissance Flight
-					q( 12734),	-- Rejek: First Blood
-					q( 12695),	-- Return of the Friendly Dryskin
-					q( 12692),	-- Return of the Lich Hunter
-					q( 12611),	-- Returned Sevenfold
-					q( 12526),	-- Rhino Mastery: The Chase
-					q( 12556),	-- Rhino Mastery: The Kill
-					q( 12520),	-- Rhino Mastery: The Test
-					q( 12805),	-- Salvaging Life's Strength
-					q( 13018),	-- Sandrene the Elder
-					q( 12760),	-- Secret Strength of the Frenzyheart
-					q( 12605),	-- Securing the Bait
-					q( 12603),	-- Sharpening Your Talons
-					q( 39209),	-- Sholazar Basin
-					q( 39212),	-- Sholazar Basin
-					q( 12634),	-- Some Make Lemonade, Some Make Liquor
-					q( 12737),	-- Song of Fecundity
-					q( 12736),	-- Song of Reflection
-					q( 12726),	-- Song of Wind and Water
-					q( 12644),	-- Still At It
-					q( 12741),	-- Strength of the Tempest
-					q( 12578),	-- The Angry Gorloc
-					q( 12529),	-- The Ape Hunter's Slave
-					q( 12544),	-- The Bones of Nozronn
-					q( 12548),	-- The Etymidian
-					q( 12612),	-- The Fallen Pillar
-					q( 12592),	-- The Great Hunter's Challenge					
-					q( 12732),	-- The Heartblood's Strength
-					q( 12620),	-- The Lifewarden's Wrath
-					q( 12575),	-- The Lost Mistwhisper Treasure
-					q( 12538),	-- The Mist Isn't Listening
-					q( 12580),	-- The Mosswalker Savior
-					q( 12654),	-- The Part-time Hunter
-					q( 12534),	-- The Sapphire Queen
-					q( 12645),	-- The Taste Test
-					q( 12531),	-- The Underground Menace
-					q( 12533),	-- The Wasp Hunter's Apprentice
-					q( 12759),	-- Tools of War
-					q( 12530),	-- Tormenting the Softknuckles
-					q( 12524),	-- Venture Co. Misadventure
-					q( 13024),	-- Wanikaya the Elder
-					q( 12660),	-- Weapons of Destruction
-					q( 12489),	-- Welcome to Sholazar Basin
-					q( 12521),	-- Where in the World is Hemet Nesingwary?
-					q( 12705),	-- Will of the Titans
-					q( 12525),	-- Wipe That Grin Off His Face	
+					q(12614),	-- Post-partum Aggression
+					q(12762),	-- Power of the Great Ones
+					q(12613),	-- Powering the Waygate - The Makers' Overlook
+					q(12559),	-- Powering the Waygate - The Makers' Perch
+					q(12681),	-- Reagent Agent
+					q(12546),	-- Reclamation
+					q(12671),	-- Reconnaissance Flight
+					q(12734),	-- Rejek: First Blood
+					q(12695),	-- Return of the Friendly Dryskin
+					q(12692),	-- Return of the Lich Hunter
+					q(12611),	-- Returned Sevenfold
+					q(12526),	-- Rhino Mastery: The Chase
+					q(12556),	-- Rhino Mastery: The Kill
+					q(12520),	-- Rhino Mastery: The Test
+					q(12805),	-- Salvaging Life's Strength
+					q(13018),	-- Sandrene the Elder
+					q(12760),	-- Secret Strength of the Frenzyheart
+					q(12605),	-- Securing the Bait
+					q(12603),	-- Sharpening Your Talons
+					q(39209),	-- Sholazar Basin
+					q(39212),	-- Sholazar Basin
+					q(12634),	-- Some Make Lemonade, Some Make Liquor
+					q(12737),	-- Song of Fecundity
+					q(12736),	-- Song of Reflection
+					q(12726),	-- Song of Wind and Water
+					q(12644),	-- Still At It
+					q(12741),	-- Strength of the Tempest
+					q(12578),	-- The Angry Gorloc
+					q(12529),	-- The Ape Hunter's Slave
+					q(12544),	-- The Bones of Nozronn
+					q(12548),	-- The Etymidian
+					q(12612),	-- The Fallen Pillar
+					q(12592),	-- The Great Hunter's Challenge					
+					q(12732),	-- The Heartblood's Strength
+					q(12620),	-- The Lifewarden's Wrath
+					q(12575),	-- The Lost Mistwhisper Treasure
+					q(12538),	-- The Mist Isn't Listening
+					q(12580),	-- The Mosswalker Savior
+					q(12654),	-- The Part-time Hunter
+					q(12534),	-- The Sapphire Queen
+					q(12645),	-- The Taste Test
+					q(12531),	-- The Underground Menace
+					q(12533),	-- The Wasp Hunter's Apprentice
+					q(12759),	-- Tools of War
+					q(12530),	-- Tormenting the Softknuckles
+					q(12524),	-- Venture Co. Misadventure
+					q(13024),	-- Wanikaya the Elder
+					q(12660),	-- Weapons of Destruction
+					q(12489),	-- Welcome to Sholazar Basin
+					q(12521),	-- Where in the World is Hemet Nesingwary?
+					q(12705),	-- Will of the Titans
+					q(12525),	-- Wipe That Grin Off His Face	
 --]]					
 					q(12691,  {  -- A Timeworn Coffer
 						i(39348),

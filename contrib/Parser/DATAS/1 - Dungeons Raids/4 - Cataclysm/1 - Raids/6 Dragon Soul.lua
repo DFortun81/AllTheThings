@@ -240,7 +240,7 @@ _.Instances =
 									["classes"] = { 4 },	-- Rogue									
 								})),
 							}),
-							n(  0, {	-- Zone Drop
+							n(0, {	-- Zone Drop
 								i(78879),
 								i(78884),
 								i(78882),

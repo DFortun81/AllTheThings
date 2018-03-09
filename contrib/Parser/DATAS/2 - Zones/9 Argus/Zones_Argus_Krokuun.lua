@@ -50,216 +50,216 @@ _.Zones =
 						["groups"] = {
 --[[							
 							n(-34, {	-- World Quests
-								q( 48285),	-- Aerial Superiority
-								q( 49043),	-- Baneglow
-								q( 47705),	-- Behind Legion Lines
-								q( 47724),	-- Besieged
-								q( 47561),	-- Blistermaw
-								q( 47496),	-- Bunker Buster
-								q( 47624),	-- Bury It
-								q( 47456),	-- Calming the Void
-								q( 48511),	-- Commander Endaxis
-								q( 48509),	-- Commander Sathrenael
-								q( 48510),	-- Commander Vecaya
-								q( 48286),	-- Crystal Methods
-								q( 49045),	-- Deathscreech
-								q( 47720),	-- Eternal Vengeance
-								q( 49042),	-- Foulclaw
-								q( 47566),	-- Gar'zoth
-								q( 49046),	-- Gnasher
-								q( 48287),	-- Harvesters of Sorrow
-								q( 48592),	-- Holding the Spire
-								q( 48282),	-- Imp Mother Laglath
-								q( 47507),	-- Khazaduum
-								q( 47551),	-- Lessons of Fire and Pain
-								q( 47707),	-- Melting Down
-								q( 47552),	-- Mistress Il'thendra
-								q( 48502),	-- Naroua, King of the Forest							
-								q( 48467),	-- Puscilla
-								q( 48284),	-- Reap the Fields
-								q( 49044),	-- Retch
-								q( 47646),	-- Rope Around
-								q( 49041),	-- Ruinhoof
-								q( 47542),	-- Siegemaster Voraan
-								q( 48512),	-- Sister Subversia
-								q( 47563),	-- Spirits of the Fallen
-								q( 48338),	-- Supplies Needed: Astral Glory
-								q( 48358),	-- Supplies Needed: Empyrium
-								q( 48360),	-- Supplies Needed: Fiendish Leather
-								q( 48374),	-- Supplies Needed: Lightweave Cloth
-								q( 47728),	-- Talestra the Vile
-								q( 48192),	-- Tar Spitter
-								q( 47953),	-- Tereck the Selector
-								q( 47712),	-- The Devastator
-								q( 47625),	-- The Ritual We Share
-								q( 48091),	-- Vagath the Betrayed
-								q( 47288),	-- Valuable Fossils
-								q( 48466),	-- Ven'orn
-								q( 48465),	-- Vrax'thul
-								q( 48615),	-- War Never Changes
-								q( 48614),	-- Woeful Implications
-								q( 48337),	-- Work Order: Astral Glory
-								q( 48349),	-- Work Order: Empyrium
-								q( 48359),	-- Work Order: Fiendish Leather
-								q( 48363),	-- Work Order: Florid Malachite
-								q( 48364),	-- Work Order: Hesselian
-								q( 48318),	-- Work Order: Lightblood Elixirs
-								q( 48373),	-- Work Order: Lightweave Cloth
-								q( 48323),	-- Work Order: Tears of the Naaru
+								q(48285),	-- Aerial Superiority
+								q(49043),	-- Baneglow
+								q(47705),	-- Behind Legion Lines
+								q(47724),	-- Besieged
+								q(47561),	-- Blistermaw
+								q(47496),	-- Bunker Buster
+								q(47624),	-- Bury It
+								q(47456),	-- Calming the Void
+								q(48511),	-- Commander Endaxis
+								q(48509),	-- Commander Sathrenael
+								q(48510),	-- Commander Vecaya
+								q(48286),	-- Crystal Methods
+								q(49045),	-- Deathscreech
+								q(47720),	-- Eternal Vengeance
+								q(49042),	-- Foulclaw
+								q(47566),	-- Gar'zoth
+								q(49046),	-- Gnasher
+								q(48287),	-- Harvesters of Sorrow
+								q(48592),	-- Holding the Spire
+								q(48282),	-- Imp Mother Laglath
+								q(47507),	-- Khazaduum
+								q(47551),	-- Lessons of Fire and Pain
+								q(47707),	-- Melting Down
+								q(47552),	-- Mistress Il'thendra
+								q(48502),	-- Naroua, King of the Forest							
+								q(48467),	-- Puscilla
+								q(48284),	-- Reap the Fields
+								q(49044),	-- Retch
+								q(47646),	-- Rope Around
+								q(49041),	-- Ruinhoof
+								q(47542),	-- Siegemaster Voraan
+								q(48512),	-- Sister Subversia
+								q(47563),	-- Spirits of the Fallen
+								q(48338),	-- Supplies Needed: Astral Glory
+								q(48358),	-- Supplies Needed: Empyrium
+								q(48360),	-- Supplies Needed: Fiendish Leather
+								q(48374),	-- Supplies Needed: Lightweave Cloth
+								q(47728),	-- Talestra the Vile
+								q(48192),	-- Tar Spitter
+								q(47953),	-- Tereck the Selector
+								q(47712),	-- The Devastator
+								q(47625),	-- The Ritual We Share
+								q(48091),	-- Vagath the Betrayed
+								q(47288),	-- Valuable Fossils
+								q(48466),	-- Ven'orn
+								q(48465),	-- Vrax'thul
+								q(48615),	-- War Never Changes
+								q(48614),	-- Woeful Implications
+								q(48337),	-- Work Order: Astral Glory
+								q(48349),	-- Work Order: Empyrium
+								q(48359),	-- Work Order: Fiendish Leather
+								q(48363),	-- Work Order: Florid Malachite
+								q(48364),	-- Work Order: Hesselian
+								q(48318),	-- Work Order: Lightblood Elixirs
+								q(48373),	-- Work Order: Lightweave Cloth
+								q(48323),	-- Work Order: Tears of the Naaru
 							}),							
-							q( 47220),	-- A Beacon in the Dark
-							q( 48075),	-- A Colorful Key
-							q( 48076),	-- A Crowning Achievement
-							q( 48081),	-- A Floating Ruin
-							q( 40238),	-- A Grim Equation
-							q( 48041),	-- A Larger Cut
-							q( 48500),	-- A Moment of Respite
-							q( 47691),	-- A Non-Prophet Organization
-							q( 48483),	-- A Stranger's Plea
-							q( 46842),	-- A Strike at the Heart
-							q( 47990),	-- A Touch of Fel
-							q( 47219),	-- A Vessel Made Ready
-							q( 47856),	-- Across the Universe
-							q( 46938),	-- Alone in the Abyss
-							q( 47967),	-- An Argus Roper
-							q( 48559),	-- An Offering of Light
-							q( 48560),	-- An Offering of Shadow
-							q( 48035),	-- Angling For a Better Strike
-							q( 48642),	-- Argussian Reach
-							q( 47184),	-- Arkhaan's Peril
-							q( 47183),	-- Arkhaan's Plan
-							q( 47101),	-- Arkhaan's Prayers
-							q( 48231),	-- Armor of the Triumvirate
-							q( 48639),	-- Army of the Light
-							q( 48016),	-- Ascending Alchemy
-							q( 48039),	-- Balancing the Break
-							q( 48654),	-- Beneath Oronaar
-							q( 47526),	-- Bringing the Big Guns
-							q( 47988),	-- Chaos Theory
-							q( 48605),	-- Commander's Downfall
-							q( 47066),	-- Consecrating Ground
-							q( 47882),	-- Conservation of Magic
-							q( 48078),	-- Counterbalancing
-							q( 46213),	-- Crystals Not Included
-							q( 47991),	-- Dark Machinations
-							q( 47992),	-- Dawn of Justice
-							q( 46818),	-- Defenseless and Afraid
-							q( 47891),	-- Dire News
-							q( 48038),	-- Don't Just Pick At It
-							q( 48455),	-- Duskcloak Problem
-							q( 48055),	-- Empyrial Strength
-							q( 48034),	-- Empyrium Deposit Chunk
-							q( 48037),	-- Empyrium Seam Chunk
-							q( 49143),	-- Essence of the Light Mother
-							q( 48278),	-- Fate of the Life-Binder
-							q( 48601),	-- Felfire Shattering
-							q( 47508),	-- Fire At Will
-							q( 47853),	-- Flanking Maneuvers
-							q( 47134),	-- Foiling the Legion's Jailbreak
-							q( 47135),	-- For Their Own Good
-							q( 48803),	-- Forging a Key to the Past
-							q( 47994),	-- Forming a Bond
-							q( 48230),	-- Fragment of the Past
-							q( 46839),	-- From Darkness
-							q( 48799),	-- Fuel of a Doomed World
-							q( 48636),	-- Fueling the Antoran Campaign
-							q( 48634),	-- Further Supplying Krokuun
-							q( 47431),	-- Gathering Light
-							q( 47989),	-- Heralds of Apocalypse
-							q( 48448),	-- Hindering the Legion War Machine
-							q( 47104),	-- Imprisoned Inquisitor
-							q( 47554),	-- Intercepting the Legion's Plans
-							q( 48440),	-- Into the Night
-							q( 49293),	-- Invasion Onslaught
-							q( 48513),	-- Invasion Point Offensive
-							q( 47688),	-- Invasive Species
-							q( 46834),	-- Khazaduum, First of His Name
-							q( 47653),	-- Light's Return
-							q( 47754),	-- Lightly Roasted
-							q( 48002),	-- Limited Supplies
-							q( 47771),	-- Locating the Longshot
-							q( 47182),	-- Long Overdue
-							q( 48074),	-- Looming Over Me
-							q( 47993),	-- Lord of the Spire
-							q( 46815),	-- Mac'Aree, Jewel of Argus
-							q( 48442),	-- Nath'raxas Hold: Preparations
-							q( 48443),	-- Nath'raxas Hold: Rescue Mission
-							q( 47686),	-- Not-So-Humble Beginnings
-							q( 48042),	-- Order of Operations
-							q( 47995),	-- Overt Ops
-							q( 46297),	-- Overwhelming Power
-							q( 48974),	-- Paragon of the Army of the Light
-							q( 48036),	-- Precision Perfected
-							q( 47987),	-- Preventive Measures
-							q( 46840),	-- Prisoners No More
-							q( 48271),	-- Recovering the Pieces
-							q( 48446),	-- Relics of the Ancient Eredar
-							q( 48441),	-- Remnants of Darkfall Ridge
-							q( 46816),	-- Rendezvous
-							q( 46843),	-- Return to the Vindicaar
-							q( 47589),	-- Righteous Fury
-							q( 47986),	-- Scars of the Past
-							q( 47416),	-- Shadow of the Triumvirate
-							q( 48447),	-- Shadowguard Dispersion
-							q( 47641),	-- Signs of Resistance
-							q( 48929),	-- Sizing Up The Opposition
-							q( 47473),	-- Sizing Up The Opposition
-							q( 47217),	-- Sources of Darkness
-							q( 47892),	-- Storming the Citadel
-							q( 48453),	-- Strike Back
-							q( 48542),	-- Strike Back
-							q( 48976),	-- Supplies From the Argussian Reach
-							q( 48977),	-- Supplies From the Army of the Light
-							q( 48910),	-- Supplying Krokuun
-							q( 48912),	-- Supplying the Antoran Campaign
-							q( 48040),	-- Tainted Scraps
-							q( 48600),	-- Take the Edge Off
-							q( 48345),	-- Talgath's Forces
-							q( 47541),	-- The Best Prevention
-							q( 48864),	-- The Broken Blacksmith
-							q( 48199),	-- The Burning Heart
-							q( 47743),	-- The Child of Light and Shadow
-							q( 47002),	-- The Crown of the Triumvirate
-							q( 47690),	-- The Defiler's Legacy
-							q( 48027),	-- The Glory of Argus
-							q( 48506),	-- The Hand of Fate
+							q(47220),	-- A Beacon in the Dark
+							q(48075),	-- A Colorful Key
+							q(48076),	-- A Crowning Achievement
+							q(48081),	-- A Floating Ruin
+							q(40238),	-- A Grim Equation
+							q(48041),	-- A Larger Cut
+							q(48500),	-- A Moment of Respite
+							q(47691),	-- A Non-Prophet Organization
+							q(48483),	-- A Stranger's Plea
+							q(46842),	-- A Strike at the Heart
+							q(47990),	-- A Touch of Fel
+							q(47219),	-- A Vessel Made Ready
+							q(47856),	-- Across the Universe
+							q(46938),	-- Alone in the Abyss
+							q(47967),	-- An Argus Roper
+							q(48559),	-- An Offering of Light
+							q(48560),	-- An Offering of Shadow
+							q(48035),	-- Angling For a Better Strike
+							q(48642),	-- Argussian Reach
+							q(47184),	-- Arkhaan's Peril
+							q(47183),	-- Arkhaan's Plan
+							q(47101),	-- Arkhaan's Prayers
+							q(48231),	-- Armor of the Triumvirate
+							q(48639),	-- Army of the Light
+							q(48016),	-- Ascending Alchemy
+							q(48039),	-- Balancing the Break
+							q(48654),	-- Beneath Oronaar
+							q(47526),	-- Bringing the Big Guns
+							q(47988),	-- Chaos Theory
+							q(48605),	-- Commander's Downfall
+							q(47066),	-- Consecrating Ground
+							q(47882),	-- Conservation of Magic
+							q(48078),	-- Counterbalancing
+							q(46213),	-- Crystals Not Included
+							q(47991),	-- Dark Machinations
+							q(47992),	-- Dawn of Justice
+							q(46818),	-- Defenseless and Afraid
+							q(47891),	-- Dire News
+							q(48038),	-- Don't Just Pick At It
+							q(48455),	-- Duskcloak Problem
+							q(48055),	-- Empyrial Strength
+							q(48034),	-- Empyrium Deposit Chunk
+							q(48037),	-- Empyrium Seam Chunk
+							q(49143),	-- Essence of the Light Mother
+							q(48278),	-- Fate of the Life-Binder
+							q(48601),	-- Felfire Shattering
+							q(47508),	-- Fire At Will
+							q(47853),	-- Flanking Maneuvers
+							q(47134),	-- Foiling the Legion's Jailbreak
+							q(47135),	-- For Their Own Good
+							q(48803),	-- Forging a Key to the Past
+							q(47994),	-- Forming a Bond
+							q(48230),	-- Fragment of the Past
+							q(46839),	-- From Darkness
+							q(48799),	-- Fuel of a Doomed World
+							q(48636),	-- Fueling the Antoran Campaign
+							q(48634),	-- Further Supplying Krokuun
+							q(47431),	-- Gathering Light
+							q(47989),	-- Heralds of Apocalypse
+							q(48448),	-- Hindering the Legion War Machine
+							q(47104),	-- Imprisoned Inquisitor
+							q(47554),	-- Intercepting the Legion's Plans
+							q(48440),	-- Into the Night
+							q(49293),	-- Invasion Onslaught
+							q(48513),	-- Invasion Point Offensive
+							q(47688),	-- Invasive Species
+							q(46834),	-- Khazaduum, First of His Name
+							q(47653),	-- Light's Return
+							q(47754),	-- Lightly Roasted
+							q(48002),	-- Limited Supplies
+							q(47771),	-- Locating the Longshot
+							q(47182),	-- Long Overdue
+							q(48074),	-- Looming Over Me
+							q(47993),	-- Lord of the Spire
+							q(46815),	-- Mac'Aree, Jewel of Argus
+							q(48442),	-- Nath'raxas Hold: Preparations
+							q(48443),	-- Nath'raxas Hold: Rescue Mission
+							q(47686),	-- Not-So-Humble Beginnings
+							q(48042),	-- Order of Operations
+							q(47995),	-- Overt Ops
+							q(46297),	-- Overwhelming Power
+							q(48974),	-- Paragon of the Army of the Light
+							q(48036),	-- Precision Perfected
+							q(47987),	-- Preventive Measures
+							q(46840),	-- Prisoners No More
+							q(48271),	-- Recovering the Pieces
+							q(48446),	-- Relics of the Ancient Eredar
+							q(48441),	-- Remnants of Darkfall Ridge
+							q(46816),	-- Rendezvous
+							q(46843),	-- Return to the Vindicaar
+							q(47589),	-- Righteous Fury
+							q(47986),	-- Scars of the Past
+							q(47416),	-- Shadow of the Triumvirate
+							q(48447),	-- Shadowguard Dispersion
+							q(47641),	-- Signs of Resistance
+							q(48929),	-- Sizing Up The Opposition
+							q(47473),	-- Sizing Up The Opposition
+							q(47217),	-- Sources of Darkness
+							q(47892),	-- Storming the Citadel
+							q(48453),	-- Strike Back
+							q(48542),	-- Strike Back
+							q(48976),	-- Supplies From the Argussian Reach
+							q(48977),	-- Supplies From the Army of the Light
+							q(48910),	-- Supplying Krokuun
+							q(48912),	-- Supplying the Antoran Campaign
+							q(48040),	-- Tainted Scraps
+							q(48600),	-- Take the Edge Off
+							q(48345),	-- Talgath's Forces
+							q(47541),	-- The Best Prevention
+							q(48864),	-- The Broken Blacksmith
+							q(48199),	-- The Burning Heart
+							q(47743),	-- The Child of Light and Shadow
+							q(47002),	-- The Crown of the Triumvirate
+							q(47690),	-- The Defiler's Legacy
+							q(48027),	-- The Glory of Argus
+							q(48506),	-- The Hand of Fate
 							qa( 47221),	-- The Hand of Fate
-							q( 48507),	-- The Hand of Fate
+							q(48507),	-- The Hand of Fate
 							qh( 47835),	-- The Hand of Fate
-							q( 48029),	-- The Heart of It
-							q( 47652),	-- The Light Mother
-							q( 47883),	-- The Longest Vigil
-							q( 47102),	-- The Mysterious Missive
-							q( 49224),	-- The Netherlight Crucible
-							q( 46941),	-- The Path Forward
-							q( 48261),	-- The Power to Reforge
-							q( 49445),	-- The Prime Exchange
-							q( 46732),	-- The Prophet's Gambit
-							q( 47180),	-- The Pulsing Madness
-							q( 48445),	-- The Ruins of Oronaar
-							q( 47238),	-- The Seat of the Triumvirate
-							q( 48107),	-- The Sigil of Awakening
-							q( 47889),	-- The Speaker Calls
-							q( 48273),	-- The Speaker Listens
-							q( 48277),	-- The Speaker Seeks
-							q( 47224),	-- The Vindicaar
-							q( 47287),	-- The Vindicaar Matrix Core
-							q( 48460),	-- The Wranglers
-							q( 48069),	-- The Wrench Calls
-							q( 46841),	-- Threat Reduction
-							q( 47203),	-- Throwing Shade
-							q( 48013),	-- Tracking the Trackers
-							q( 47627),	-- Vengeance
-							q( 48280),	-- Visions of Another
-							q( 48272),	-- Visions of Fear
-							q( 47890),	-- Visions of Torment
-							q( 48344),	-- We Have a Problem
-							q( 47855),	-- What Might Have Been
-							q( 48461),	-- Where They Least Expect It
-							q( 40761),	-- Whispers from Oronaar
-							q( 48544),	-- Woah, Nelly!
-							q( 47854),	-- Wrath of the High Exarch
-							q( 48028),	-- Youthful Resistance
+							q(48029),	-- The Heart of It
+							q(47652),	-- The Light Mother
+							q(47883),	-- The Longest Vigil
+							q(47102),	-- The Mysterious Missive
+							q(49224),	-- The Netherlight Crucible
+							q(46941),	-- The Path Forward
+							q(48261),	-- The Power to Reforge
+							q(49445),	-- The Prime Exchange
+							q(46732),	-- The Prophet's Gambit
+							q(47180),	-- The Pulsing Madness
+							q(48445),	-- The Ruins of Oronaar
+							q(47238),	-- The Seat of the Triumvirate
+							q(48107),	-- The Sigil of Awakening
+							q(47889),	-- The Speaker Calls
+							q(48273),	-- The Speaker Listens
+							q(48277),	-- The Speaker Seeks
+							q(47224),	-- The Vindicaar
+							q(47287),	-- The Vindicaar Matrix Core
+							q(48460),	-- The Wranglers
+							q(48069),	-- The Wrench Calls
+							q(46841),	-- Threat Reduction
+							q(47203),	-- Throwing Shade
+							q(48013),	-- Tracking the Trackers
+							q(47627),	-- Vengeance
+							q(48280),	-- Visions of Another
+							q(48272),	-- Visions of Fear
+							q(47890),	-- Visions of Torment
+							q(48344),	-- We Have a Problem
+							q(47855),	-- What Might Have Been
+							q(48461),	-- Where They Least Expect It
+							q(40761),	-- Whispers from Oronaar
+							q(48544),	-- Woah, Nelly!
+							q(47854),	-- Wrath of the High Exarch
+							q(48028),	-- Youthful Resistance
 --]]
 							i(152204, { -- Glowing Key Fragment
 								q(48231, { -- Armor of the Triumvirate

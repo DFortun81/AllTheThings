@@ -43,18 +43,18 @@ _.Zones =
 					qa( 32247),	-- A King Among Men
 					qa( 32248),	-- A Little Patience
 					qh( 32413),	-- A Return to Krasarang
-					q( 30695),	-- Ahead on the Way
+					q(30695),	-- Ahead on the Way
 					qh( 32127),	-- All Dead, All Dead
 					qh( 32167),	-- Ancient's Fall
 					qa( 32170),	-- Ancient's Fall
 					qa( 32452),	-- And Then There Were Goblins
 					qa( 32315),	-- Anduin's Plea
 					qh( 32128),	-- Another One Bites the Dust
-					q( 30089),	-- Apply Directly to the Forehead
-					q( 30613),	-- Armored Carp
+					q(30089),	-- Apply Directly to the Forehead
+					q(30613),	-- Armored Carp
 					qa( 32148),	-- Attack! Move!
-					q( 30672),	-- Balance
-					q( 30674),	-- Balance Without Violence
+					q(30672),	-- Balance
+					q(30674),	-- Balance Without Violence
 					qa( 32166),	-- Beastmaster's Hunt: The Crab
 					qh( 32163),	-- Beastmaster's Hunt: The Crab
 					qh( 32161),	-- Beastmaster's Hunt: The Crane
@@ -70,70 +70,70 @@ _.Zones =
 					qh( 32214),	-- Bilgewater Infiltrators
 					qh( 30124),	-- Blind Them!
 					qa( 30384),	-- Blind Them!
-					q( 30270),	-- Blinding the Riverblades
-					q( 30084),	-- Borderlands
+					q(30270),	-- Blinding the Riverblades
+					q(30084),	-- Borderlands
 					qa( 32401),	-- Breath of Darkest Shadow
-					q( 30754),	-- Bright Bait
+					q(30754),	-- Bright Bait
 					qh( 32236),	-- Bug Off!
-					q( 30668),	-- Build Your Own Raft
-					q( 30675),	-- Buried Hozen Treasure
+					q(30668),	-- Build Your Own Raft
+					q(30675),	-- Buried Hozen Treasure
 					qa( 32154),	-- Burn Out!
 					qh( 32047),	-- Candy Bucket
-					q( 32034),	-- Candy Bucket
+					q(32034),	-- Candy Bucket
 					qh( 32020),	-- Candy Bucket
-					q( 32036),	-- Candy Bucket
+					q(32036),	-- Candy Bucket
 					qa( 31378),	-- Challenge At The Temple of the Red Crane
 					qh( 31379),	-- Challenge At The Temple of the Red Crane
-					q( 30740),	-- Champion of Chi-Ji
-					q( 30716),	-- Chasing Hope
-					q( 30082),	-- Cheer Up, Yi-Mo
-					q( 30352),	-- Crane Mastery
-					q( 31262),	-- Crane Mastery: Needlebeak
+					q(30740),	-- Champion of Chi-Ji
+					q(30716),	-- Chasing Hope
+					q(30082),	-- Cheer Up, Yi-Mo
+					q(30352),	-- Crane Mastery
+					q(31262),	-- Crane Mastery: Needlebeak
 					qh( 32251),	-- Dagger in the Dark
 					qa( 32414),	-- Darnassus Attacked?
 					qh( 32123),	-- Death on Two Legs
-					q( 30730),	-- Dextrous Izissha
+					q(30730),	-- Dextrous Izissha
 					qa( 32446),	-- Dis-Assembly Required
 					qh( 32108),	-- Domination Point
 					qa( 32145),	-- Don't Lose Your Head
 					qh( 32351),	-- Echoes of Thunder
-					q( 30725),	-- Ellia Ravenmane
-					q( 30739),	-- Ellia Ravenmane: Redemption
-					q( 30727),	-- Ellia Ravenmane: Rematch
-					q( 30732),	-- Ellia Ravenmane: Revenge
+					q(30725),	-- Ellia Ravenmane
+					q(30739),	-- Ellia Ravenmane: Redemption
+					q(30727),	-- Ellia Ravenmane: Rematch
+					q(30732),	-- Ellia Ravenmane: Revenge
 					qh( 32168),	-- End of an Elder
 					qa( 32171),	-- End of an Elder
-					q( 31486),	-- Everything I Know About Cooking
+					q(31486),	-- Everything I Know About Cooking
 					qa( 32347),	-- Eviction Notice
-					q( 30728),	-- Fat Long-Fat
-					q( 30737),	-- Fat Long-Fat: Rematch
-					q( 36608),	-- Finding Nat Pagle
-					q( 30080),	-- Finding Yi-Mo
-					q( 30588),	-- Fishing for a Bruising
+					q(30728),	-- Fat Long-Fat
+					q(30737),	-- Fat Long-Fat: Rematch
+					q(36608),	-- Finding Nat Pagle
+					q(30080),	-- Finding Yi-Mo
+					q(30588),	-- Fishing for a Bruising
 					qh( 32235),	-- Flash! Aaaaaahhhh!
-					q( 31443),	-- Flying Tiger Gourami
+					q(31443),	-- Flying Tiger Gourami
 					qh( 30174),	-- For Family
 					qh( 30163),	-- For the Tribe
 					qh( 32329),	-- Get My Results!
-					q( 30717),	-- Gifts of the Great Crane
+					q(30717),	-- Gifts of the Great Crane
 					qa( 30465),	-- Going on the Offensive
 					qa( 30363),	-- Going on the Offensive
 					qh( 30464),	-- Going West
 					qh( 30132),	-- Going West
 					qh( 32130),	-- Good Luck, Have Fun
-					q( 31954),	-- Grand Master Mo'ruk
+					q(31954),	-- Grand Master Mo'ruk
 					qa( 32146),	-- Hammer to Fall
 					qh( 32134),	-- Hard Counter
 					qa( 32382),	-- He's In Deep
 					qh( 30130),	-- Herbal Remedies
 					qh( 32135),	-- Hero Killer
 					qa( 32153),	-- Hero Killer
-					q( 32499),	-- Honor the Flame
-					q( 30376),	-- Hope Springs Eternal
-					q( 30734),	-- Huck Wheelbarrow
-					q( 30658),	-- Huff & Puff
+					q(32499),	-- Honor the Flame
+					q(30376),	-- Hope Springs Eternal
+					q(30734),	-- Huck Wheelbarrow
+					q(30658),	-- Huff & Puff
 					qa( 30348),	-- Immortality?
-					q( 30273),	-- In the House of the Red Crane
+					q(30273),	-- In the House of the Red Crane
 					qh( 32326),	-- Insertion
 					qh( 30133),	-- Into the Wilds
 					qh( 30461),	-- Into the Wilds
@@ -142,71 +142,71 @@ _.Zones =
 					qh( 32344),	-- It Is A Mystery
 					qa( 32119),	-- It Is A Mystery
 					qa( 32156),	-- It's Only Right
-					q( 30586),	-- Jagged Abalone
-					q( 30729),	-- Julia Bates
-					q( 30753),	-- Jumping the Shark
+					q(30586),	-- Jagged Abalone
+					q(30729),	-- Julia Bates
+					q(30753),	-- Jumping the Shark
 					qh( 29875),	-- Kang Bramblestaff
 					qa( 29874),	-- Kang Bramblestaff
-					q( 29873),	-- Ken-Ken
+					q(29873),	-- Ken-Ken
 					qh( 32348),	-- Kick 'em While They're Down
 					qh( 32199),	-- Krasarang Steampot
-					q( 30731),	-- Kuo-Na Quillpaw
+					q(30731),	-- Kuo-Na Quillpaw
 					qh( 32120),	-- Legacy of Ogudei
 					qh( 30131),	-- Life
-					q( 30678),	-- Like Bombing Fish In A Barrel
+					q(30678),	-- Like Bombing Fish In A Barrel
 					qa( 32109),	-- Lion's Landing
 					qa( 30351),	-- Lotus Tea
-					q( 30081),	-- Materia Medica
+					q(30081),	-- Materia Medica
 					qh( 32249),	-- Meet the Scout
 					qa( 32246),	-- Meet the Scout
-					q( 31446),	-- Mimic Octopus
-					q( 30735),	-- Mindel Sunspeaker
-					q( 30726),	-- Minh Do-Tan
-					q( 30691),	-- Misery
+					q(31446),	-- Mimic Octopus
+					q(30735),	-- Mindel Sunspeaker
+					q(30726),	-- Minh Do-Tan
+					q(30691),	-- Misery
 					qh( 32197),	-- Mystery Meatloaf
 					qa( 30354),	-- No Sister Left Behind
 					qa( 32122),	-- Ogudei's Lieutenants
 					qh( 32343),	-- Ogudei's Lieutenants
 					qa( 32346),	-- Oi Ain't Afraid o' No Ghosts!
-					q( 30667),	-- Particular Plumage
-					q( 30763),	-- Piranha!
+					q(30667),	-- Particular Plumage
+					q(30763),	-- Piranha!
 					qh( 30179),	-- Poisoned!
 					qh( 32141),	-- Power Metal
 					qh( 32237),	-- Precious Resource
 					qa( 32116),	-- Priorities, People!
-					q( 30353),	-- Profit Mastery
-					q( 31260),	-- Profit Mastery: Chasheen
-					q( 30169),	-- Raid Leader Slovan
+					q(30353),	-- Profit Mastery
+					q(31260),	-- Profit Mastery: Chasheen
+					q(30169),	-- Raid Leader Slovan
 					qh( 30230),	-- Re-Reclaim
 					qa( 30355),	-- Re-Reclaim
 					qa( 32149),	-- Resource Gathering
 					qh( 32256),	-- Rise Of An Empire
 					qh( 32137),	-- Runnin' On Empty
-					q( 30698),	-- Scavenger Hunt
+					q(30698),	-- Scavenger Hunt
 					qh( 30121),	-- Search Party
-					q( 30083),	-- Securing the Province
+					q(30083),	-- Securing the Province
 					qa( 32451),	-- Send A Message
 					qh( 32133),	-- Sentry Wards
 					qa( 30356),	-- Sever Their Supply Line
-					q( 30271),	-- Sha Can Awe
+					q(30271),	-- Sha Can Awe
 					qa( 32115),	-- Shackles of the Past
-					q( 30584),	-- Shocking!
-					q( 30677),	-- Shuttle Service
+					q(30584),	-- Shocking!
+					q(30677),	-- Shuttle Service
 					qa( 32152),	-- Siege Damage
 					qh( 30123),	-- Skitterer Stew
-					q( 30700),	-- Snapclaw
+					q(30700),	-- Snapclaw
 					qh( 32284),	-- Someone You Should See
-					q( 31444),	-- Spinefish Alpha
+					q(31444),	-- Spinefish Alpha
 					qa( 30350),	-- Squirmy Delight
 					qh( 32139),	-- Stacked!
 					qh( 32221),	-- Storming the Beach
-					q( 30272),	-- Striking the Rain
-					q( 30718),	-- Students of Chi-Ji
-					q( 30666),	-- Sudden, Unexpected Crocolisk Aggression
+					q(30272),	-- Striking the Rain
+					q(30718),	-- Students of Chi-Ji
+					q(30666),	-- Sudden, Unexpected Crocolisk Aggression
 					qa( 32150),	-- Supply Block
 					qh( 32118),	-- Taking Advantage
 					qh( 32126),	-- Tear It Up
-					q( 30091),	-- Tears of Pandaria
+					q(30091),	-- Tears of Pandaria
 					qh( 31370),	-- The Anglers
 					qa( 31369),	-- The Anglers
 					qa( 30274),	-- The Arcanic Oubliette
@@ -214,7 +214,7 @@ _.Zones =
 					qh( 32398),	-- The Bell Speaks
 					qa( 32380),	-- The Best Around
 					qa( 32332),	-- The First Riddle: Mercy
-					q( 31058),	-- The Funky Monkey Brew
+					q(31058),	-- The Funky Monkey Brew
 					qa( 36882),	-- The Great Angler Returns
 					qh( 36609),	-- The Great Angler Returns
 					qh( 30229),	-- The Greater Danger
@@ -227,14 +227,14 @@ _.Zones =
 					qh( 32363),	-- The Kun-Lai Expedition
 					qa( 32370),	-- The Kun-Lai Expedition
 					qa( 30359),	-- The Lord Reclaimer
-					q( 30669),	-- The Lorewalker on the Lake
+					q(30669),	-- The Lorewalker on the Lake
 					qa( 30344),	-- The Lost Dynasty
 					qh( 30175),	-- The Mantid
 					qa( 30361),	-- The Mantid
 					qh( 32250),	-- The Might of the Warchief
 					qh( 30129),	-- The Mogu Agenda
 					qa( 32321),	-- The Monkey King
-					q( 30268),	-- The Murksweats
+					q(30268),	-- The Murksweats
 					qa( 32157),	-- The Only Good Goblin...
 					qh( 30128),	-- The Pools of Youth
 					qa( 30347),	-- The Pools of Youth
@@ -253,22 +253,22 @@ _.Zones =
 					qa( 32334),	-- The Third Riddle: Strength
 					qh( 32450),	-- The Time Is Now!
 					qa( 30445),	-- The Waters of Youth
-					q( 30738),	-- Thelonius
-					q( 30168),	-- Thieving Raiders
+					q(30738),	-- Thelonius
+					q(30168),	-- Thieving Raiders
 					qh( 30127),	-- Threat from Dojan
 					qa( 30349),	-- Threat from Dojan
 					qh( 32190),	-- To Mogujia
 					qa( 32193),	-- To Mogujia
 					qh( 32376),	-- To the Valley!
 					qa( 32151),	-- Tower Defense
-					q( 30694),	-- Tread Lightly
-					q( 30733),	-- Tukka-Tuk
+					q(30694),	-- Tread Lightly
+					q(30733),	-- Tukka-Tuk
 					qa( 32158),	-- Two Step Program
 					qa( 32144),	-- Under Pressure
 					qh( 32238),	-- Universal Remote-Explode
-					q( 30269),	-- Unsafe Passage
+					q(30269),	-- Unsafe Passage
 					qh( 32328),	-- Victorious Return
-					q( 30701),	-- Viseclaw Soup
+					q(30701),	-- Viseclaw Soup
 					qh( 32222),	-- Wanted: Chief Engineer Cogwrench
 					qh( 32223),	-- Wanted: Lieutenant Ethan Jacobson
 					qa( 30360),	-- Warn Stoneplow
@@ -277,18 +277,18 @@ _.Zones =
 					qa( 32142),	-- We Will Rock You
 					qh( 32345),	-- We're Not Monsters!
 					qa( 32423),	-- What Had To Be Done
-					q( 30585),	-- What Lurks Below
-					q( 30079),	-- What's Eating Zhu's Watch?
+					q(30585),	-- What Lurks Below
+					q(30079),	-- What's Eating Zhu's Watch?
 					qa( 30346),	-- Where are the Pools
-					q( 30598),	-- Who Knew Fish Liked Eggs?
-					q( 30088),	-- Why So Serious?
-					q( 30671),	-- Wisdom Has A Price
+					q(30598),	-- Who Knew Fish Liked Eggs?
+					q(30088),	-- Why So Serious?
+					q(30671),	-- Wisdom Has A Price
 					qh( 32136),	-- Work Order: Fuel
 					qh( 32140),	-- Work Order: Iron
 					qh( 32138),	-- Work Order: Lumber
 					qh( 32132),	-- Worker Harassment
-					q( 30736),	-- Yan Quillpaw
-					q( 30090),	-- Zhu's Despair
+					q(30736),	-- Yan Quillpaw
+					q(30090),	-- Zhu's Despair
 --]]
 					q(30695,  {  	-- Ahead on the Way
 						i(81552),
@@ -539,15 +539,15 @@ _.Zones =
 					}),
 					o(213651, { 	-- Equipment Locker
 						["groups"] = {
-							dr(20.0, i( 86122)),	-- Plankwalking Greaves
-							dr(19.0, i( 86115)),	-- Swashbuckling Boots
-							dr(18.0, i( 86117)),	-- Seafarer's Treads of Precision
-							dr(16.0, i( 86116)),	-- Agile Seafarer's Jackboots
-							dr(09.0, i( 86123)),	-- Seafarer's Sturdy Boots
-							dr(08.0, i( 86118)),	-- Seafaring Advisor's Slippers
-							dr(05.0, i( 86119)),	-- Seafarer's Boots of Meditation
-							dr(04.0, i( 86120)),	-- Seafaring Sabatons of Meditation
-							dr(00.9, i( 86121)),	-- Radiant Seafarer's Boots
+							dr(20.0, i(86122)),	-- Plankwalking Greaves
+							dr(19.0, i(86115)),	-- Swashbuckling Boots
+							dr(18.0, i(86117)),	-- Seafarer's Treads of Precision
+							dr(16.0, i(86116)),	-- Agile Seafarer's Jackboots
+							dr(09.0, i(86123)),	-- Seafarer's Sturdy Boots
+							dr(08.0, i(86118)),	-- Seafaring Advisor's Slippers
+							dr(05.0, i(86119)),	-- Seafarer's Boots of Meditation
+							dr(04.0, i(86120)),	-- Seafaring Sabatons of Meditation
+							dr(00.9, i(86121)),	-- Radiant Seafarer's Boots
 						},
 						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 						["modelScale"] = 1.5,

@@ -85,8 +85,8 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q( 10420),	-- A Cleansing Light
-					q( 10020),	-- A Cure for Zahlia
+					q(10420),	-- A Cleansing Light
+					q(10020),	-- A Cure for Zahlia
 --]]
 					q(10112,  {  -- A Personal Favor
 						i(25927),
@@ -98,14 +98,14 @@ _.Zones =
 					qh( 10102),	-- A Secret Revealed
 					qa(  9365),	-- A Thief's Reward
 					qh(  9339),	-- A Thief's Reward
-					q( 47663),	-- A Timely Summons from Shattrath
-					q( 10210),	-- A'dal
+					q(47663),	-- A Timely Summons from Shattrath
+					q(10210),	-- A'dal
 					qa( 11451),	-- Alicia's Poem
-					q( 10551),	-- Allegiance to the Aldor
-					q( 10552),	-- Allegiance to the Scryers
-					q( 11024),	-- An Ally in Lower City
-					q( 10419),	-- Arcane Tomes
-					q( 11038),	-- Assist Exarch Orelis
+					q(10551),	-- Allegiance to the Aldor
+					q(10552),	-- Allegiance to the Scryers
+					q(11024),	-- An Ally in Lower City
+					q(10419),	-- Arcane Tomes
+					q(11038),	-- Assist Exarch Orelis
 					qh( 10167),	-- Auchindoun...
 					qa( 10966),	-- Back to the Orphanage
 					qh( 10967),	-- Back to the Orphanage
@@ -115,14 +115,14 @@ _.Zones =
 						i(31405),
 					}),
 --[[					
-					q( 10509),	-- Bound for Glory
+					q(10509),	-- Bound for Glory
 					qh( 11446),	-- Brewfest!
-					q( 10180),	-- Can't Stay Away
-					q( 12404),	-- Candy Bucket
+					q(10180),	-- Can't Stay Away
+					q(12404),	-- Candy Bucket
 					qh( 11046),	-- Chief Apothecary Hildagard
 					qa( 10943),	-- Children's Week
 					qh( 10942),	-- Children's Week
-					q( 10211),	-- City of Light
+					q(10211),	-- City of Light
 --]]
 					q(44863,  {  -- Clearing the Air
 						i(142279,  {  -- Plans: Windforged Rapier
@@ -137,9 +137,9 @@ _.Zones =
 					}),
 --[[					
 					qa( 11356),	-- Costumed Orphan Matron
-					q( 11028),	-- Countdown to Doom
-					q( 10009),	-- Crackin' Some Skulls
-					q( 11481),	-- Crisis at the Sunwell
+					q(11028),	-- Countdown to Doom
+					q(10009),	-- Crackin' Some Skulls
+					q(11481),	-- Crisis at the Sunwell
 					qh( 29667),	-- Culling the Herd
 --]]					
 					q(10409,  {  -- Deathblow to the Legion - Aldor 
@@ -149,8 +149,8 @@ _.Zones =
 						i(30371),
 					}),
 --[[					
-					q( 47523),	-- Disturbance Detected: Black Temple
-					q( 11482),	-- Duty Calls
+					q(47523),	-- Disturbance Detected: Black Temple
+					q(11482),	-- Duty Calls
 --]]					
 					q(41160,  {  -- Earth to Earth
 						i(142284,  {  -- Plans: Stoneforged Claymore
@@ -164,12 +164,12 @@ _.Zones =
 						}),
 					}),
 --[[					
-					q( 10949),	-- Entry Into the Black Temple
-					q( 10228),	-- Ezekiel
-					q( 10421),	-- Fel Armaments
-					q( 10412),	-- Firewing Signets
-					q( 11875),	-- Gaining the Advantage
-					q( 29675),	-- Hey There Dalliah
+					q(10949),	-- Entry Into the Black Temple
+					q(10228),	-- Ezekiel
+					q(10421),	-- Fel Armaments
+					q(10412),	-- Firewing Signets
+					q(11875),	-- Gaining the Advantage
+					q(29675),	-- Hey There Dalliah
 --]]					
 					q(10704,  {  -- How to Break Into the Arcatraz - Dungeon Quest
 						i(31465),
@@ -182,11 +182,11 @@ _.Zones =
 					qh( 11966),	-- Incense for the Festival Scorchlings
 					qa( 11964),	-- Incense for the Summer Scorchlings
 					qa( 29092),	-- Inform the Elder
-					q( 12012),	-- Inform the Elder
-					q(  9990),	-- Investigate Tuurem
-					q( 10554),	-- Ishanah
-					q( 10410),	-- Ishanah's Help
-					q( 10010),	-- It's Just That Easy?
+					q(12012),	-- Inform the Elder
+					q(9990),	-- Investigate Tuurem
+					q(10554),	-- Ishanah
+					q(10410),	-- Ishanah's Help
+					q(10010),	-- It's Just That Easy?
 --]]					
 					q(11109, {	-- Jorus the Cobalt Netherwing Drake
 						["groups"] = {
@@ -195,11 +195,11 @@ _.Zones =
 						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
 					}),
 --[[					
-					q( 11007),	-- Kael'thas and the Verdant Sphere
-					q( 11108),	-- Lord Illidan Stormrage
-					q( 29659),	-- Lost Treasure
-					q(  8867),	-- Lunar Fireworks
-					q( 11514),	-- Maintaining the Sunwell Portal
+					q(11007),	-- Kael'thas and the Verdant Sphere
+					q(11108),	-- Lord Illidan Stormrage
+					q(29659),	-- Lost Treasure
+					q(8867),	-- Lunar Fireworks
+					q(11514),	-- Maintaining the Sunwell Portal
 --]]					
 					q(11110, {	-- Malfas the Purple Netherwing Drake
 						["groups"] = {
@@ -208,13 +208,13 @@ _.Zones =
 						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
 					}),
 --[[					
-					q( 11380),	-- Manalicious
-					q( 10325),	-- Marks of Kil'jaeden
-					q( 10653),	-- Marks of Sargeras
+					q(11380),	-- Manalicious
+					q(10325),	-- Marks of Kil'jaeden
+					q(10653),	-- Marks of Sargeras
 					qh( 11357),	-- Masked Orphan Matron
-					q( 29681),	-- Maximum Security Breakout
-					q( 10983),	-- Mog'dorg the Wizened
-					q( 10025),	-- More Basilisk Eyes
+					q(29681),	-- Maximum Security Breakout
+					q(10983),	-- Mog'dorg the Wizened
+					q(10025),	-- More Basilisk Eyes
 --]]					
 					q(10918,  {  -- More Feathers
 						["groups"] = {
@@ -232,13 +232,13 @@ _.Zones =
 						["description"] = "|cff66ccffRepeatable until Honored with Lower City|r",					
 					}),
 --[[					
-					q( 10415),	-- More Firewing Signets
-					q( 10326),	-- More Marks of Kil'jaeden
-					q( 10654),	-- More Marks of Sargeras
-					q( 10658),	-- More Sunfury Signets
-					q( 10019),	-- More Venom Sacs
-					q( 31925),	-- Morulu The Elder
-					q( 10547),	-- Of Thistleheads and Eggs...
+					q(10415),	-- More Firewing Signets
+					q(10326),	-- More Marks of Kil'jaeden
+					q(10654),	-- More Marks of Sargeras
+					q(10658),	-- More Sunfury Signets
+					q(10019),	-- More Venom Sacs
+					q(31925),	-- Morulu The Elder
+					q(10547),	-- Of Thistleheads and Eggs...
 --]]					
 					q(11111, {	-- Onyxien the Onyx Netherwing Drake
 						["groups"] = {
@@ -247,24 +247,24 @@ _.Zones =
 						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
 					}),
 --[[					
-					q( 10004),	-- Patience and Understanding
+					q(10004),	-- Patience and Understanding
 					qa( 14022),	-- Pilgrim's Bounty
 					qh( 14036),	-- Pilgrim's Bounty
 					qa( 11882),	-- Playing with Fire
-					q( 10037),	-- Rather Be Fishin'
-					q( 11517),	-- Report to Nasuun
-					q( 11534),	-- Report to Nasuun
-					q( 11039),	-- Report to Spymaster Thalodien
-					q( 10021),	-- Restoring the Light
-					q( 10889),	-- Return to Shattrath
-					q( 11377),	-- Revenge is Tasty
+					q(10037),	-- Rather Be Fishin'
+					q(11517),	-- Report to Nasuun
+					q(11534),	-- Report to Nasuun
+					q(11039),	-- Report to Spymaster Thalodien
+					q(10021),	-- Restoring the Light
+					q(10889),	-- Return to Shattrath
+					q(11377),	-- Revenge is Tasty
 					qh( 29660),	-- Saving the Botanica
 					qa( 10863),	-- Secrets of the Arakkoa
-					q( 10849),	-- Seek Out Kirrik
-					q( 10414),	-- Single Firewing Signet
-					q( 10327),	-- Single Mark of Kil'jaeden
-					q( 10655),	-- Single Mark of Sargeras
-					q( 10659),	-- Single Sunfury Signet
+					q(10849),	-- Seek Out Kirrik
+					q(10414),	-- Single Firewing Signet
+					q(10327),	-- Single Mark of Kil'jaeden
+					q(10655),	-- Single Mark of Sargeras
+					q(10659),	-- Single Sunfury Signet
 --]]					
 					q(10898,  {  -- Skywing
 						i(31766),
@@ -273,9 +273,9 @@ _.Zones =
 						i(31760),  --PET!
 					}),
 --[[					
-					q( 11381),	-- Soup for the Soul
-					q( 10908),	-- Speak with Rilak the Redeemed
-					q( 10984),	-- Speak with the Ogre
+					q(11381),	-- Soup for the Soul
+					q(10908),	-- Speak with Rilak the Redeemed
+					q(10984),	-- Speak with the Ogre
 --]]					
 					q(10280,  {  -- Special Delivery to Shattrath City
 						i(30258),
@@ -291,16 +291,16 @@ _.Zones =
 					qh( 11933),	-- Stealing the Exodar's Flame
 					qa(  9326),	-- Stealing the Undercity's Flame
 					qa(  9325),	-- Stealing Thunder Bluff's Flame
-					q( 10017),	-- Strained Supplies
-					q( 11954),	-- Striking Back
-					q( 11917),	-- Striking Back
-					q( 11947),	-- Striking Back
-					q( 11948),	-- Striking Back
-					q( 11952),	-- Striking Back
-					q( 11953),	-- Striking Back
-					q( 11877),	-- Sunfury Attack Plans
-					q( 10656),	-- Sunfury Signets
-					q( 11379),	-- Super Hot Stew
+					q(10017),	-- Strained Supplies
+					q(11954),	-- Striking Back
+					q(11917),	-- Striking Back
+					q(11947),	-- Striking Back
+					q(11948),	-- Striking Back
+					q(11952),	-- Striking Back
+					q(11953),	-- Striking Back
+					q(11877),	-- Sunfury Attack Plans
+					q(10656),	-- Sunfury Signets
+					q(11379),	-- Super Hot Stew
 --]]					
 					q(11112, {	-- Suraku the Azure Netherwing Drake
 						["groups"] = {
@@ -310,12 +310,12 @@ _.Zones =
 					}),
 --[[					
 					qh( 10862),	-- Surrender to the Horde
-					q( 10416),	-- Synthesis of Power
-					q( 13082),	-- The Boon of A'dal
-					q( 10550),	-- The Bundle of Bloodthistle
-					q( 29658),	-- The Calculator
-					q( 10847),	-- The Eyes of Skettis
-					q( 10948),	-- The Hostage Soul
+					q(10416),	-- Synthesis of Power
+					q(13082),	-- The Boon of A'dal
+					q(10550),	-- The Bundle of Bloodthistle
+					q(29658),	-- The Calculator
+					q(10847),	-- The Eyes of Skettis
+					q(10948),	-- The Hostage Soul
 					qa(  8871),	-- The Lunar Festival
 					qh(  8875),	-- The Lunar Festival
 					qa(  8872),	-- The Lunar Festival
@@ -323,8 +323,8 @@ _.Zones =
 					qh(  8873),	-- The Lunar Festival
 					qh(  8874),	-- The Lunar Festival
 					qa( 11970),	-- The Master of Summer Lore
-					q( 10251),	-- The Master's Grand Design?
-					q( 11880),	-- The Multiphase Survey
+					q(10251),	-- The Master's Grand Design?
+					q(11880),	-- The Multiphase Survey
 --]]					
 					q(10917,  {  -- The Outcast's Plight
 						i(31800,  {  -- Outcasts Cache
@@ -339,19 +339,19 @@ _.Zones =
 						}),
 					}),
 --[[					
-					q( 10879),	-- The Skettis Offensive
+					q(10879),	-- The Skettis Offensive
 					qh( 11971),	-- The Spinner of Summer Tales
-					q( 40168),	-- The Swirling Vial
-					q( 10883),	-- The Tempest Key
-					q( 13081),	-- The Will of the Naaru
-					q( 11096),	-- Threat from Above
-					q( 11098),	-- To Skettis!
-					q( 13430),	-- Trial of the Naaru: Magtheridon
-					q( 10888),	-- Trial of the Naaru: Magtheridon
-					q( 10884),	-- Trial of the Naaru: Mercy
-					q( 10885),	-- Trial of the Naaru: Strength
-					q( 10886),	-- Trial of the Naaru: Tenacity
-					q( 29642),	-- Trouble at Auchindoun
+					q(40168),	-- The Swirling Vial
+					q(10883),	-- The Tempest Key
+					q(13081),	-- The Will of the Naaru
+					q(11096),	-- Threat from Above
+					q(11098),	-- To Skettis!
+					q(13430),	-- Trial of the Naaru: Magtheridon
+					q(10888),	-- Trial of the Naaru: Magtheridon
+					q(10884),	-- Trial of the Naaru: Mercy
+					q(10885),	-- Trial of the Naaru: Strength
+					q(10886),	-- Trial of the Naaru: Tenacity
+					q(29642),	-- Trouble at Auchindoun
 --]]					
 					q(10507,  {  -- Turning Point - Scryer 
 						i(30375),
@@ -361,9 +361,9 @@ _.Zones =
 						i(30859),
 					}),
 --[[					
-					q( 29674),	-- Unbound Darkness
-					q( 11886),	-- Unusual Activity
-					q(  8883),	-- Valadar Starsong
+					q(29674),	-- Unbound Darkness
+					q(11886),	-- Unusual Activity
+					q(8883),	-- Valadar Starsong
 --]]					
 					q(11113, {	-- Voranaku the Violet Netherwing Drake
 						["groups"] = {
@@ -372,19 +372,19 @@ _.Zones =
 						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
 					}),
 --[[					
-					q( 10553),	-- Voren'thal the Seer
-					q( 10024),	-- Voren'thal's Visions
-					q( 11389),	-- Wanted: Arcatraz Sentinels
-					q( 11371),	-- Wanted: Coilfang Myrmidons
-					q( 11376),	-- Wanted: Malicious Instructors
-					q( 11383),	-- Wanted: Rift Lords
-					q( 11364),	-- Wanted: Shattered Hand Centurions
-					q( 11500),	-- Wanted: Sisters of Torment
-					q( 11385),	-- Wanted: Sunseeker Channelers
-					q( 11387),	-- Wanted: Tempest-Forge Destroyers
-					q( 10231),	-- What Book? I Don't See Any Book.
-					q(  9979),	-- Wind Trader Lathrai
-					q( 29657),	-- With Great Power, Comes Great Responsibility
+					q(10553),	-- Voren'thal the Seer
+					q(10024),	-- Voren'thal's Visions
+					q(11389),	-- Wanted: Arcatraz Sentinels
+					q(11371),	-- Wanted: Coilfang Myrmidons
+					q(11376),	-- Wanted: Malicious Instructors
+					q(11383),	-- Wanted: Rift Lords
+					q(11364),	-- Wanted: Shattered Hand Centurions
+					q(11500),	-- Wanted: Sisters of Torment
+					q(11385),	-- Wanted: Sunseeker Channelers
+					q(11387),	-- Wanted: Tempest-Forge Destroyers
+					q(10231),	-- What Book? I Don't See Any Book.
+					q(9979),	-- Wind Trader Lathrai
+					q(29657),	-- With Great Power, Comes Great Responsibility
 					qa( 11045),	-- Zorus the Judicator
 --]]					
 					q(11114, {	-- Zoya the Veridian Netherwing Drake

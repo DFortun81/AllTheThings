@@ -356,15 +356,15 @@ _.Zones =
 					}),	
 --[[					
 					qh( 34899),	-- A Choice to Make
-					q( 34894),	-- A Rare Bloom
-					q( 37125),	-- A Rare Find
-					q( 33928),	-- A Wrong of Earth and Fire
-					q( 36711),	-- Abu'gar
-					q( 34679),	-- Alliance Stables Tracking Event
-					q( 34680),	-- Alliance Workshop Tracking Event
+					q(34894),	-- A Rare Bloom
+					q(37125),	-- A Rare Find
+					q(33928),	-- A Wrong of Earth and Fire
+					q(36711),	-- Abu'gar
+					q(34679),	-- Alliance Stables Tracking Event
+					q(34680),	-- Alliance Workshop Tracking Event
 					qh( 35095),	-- Along the Riverside
 					qa( 36193),	-- An Act of Kindness
-					q( 34943),	-- An Old Friend
+					q(34943),	-- An Old Friend
 --]]					
 					qh(35171,  {  	-- And Justice for Thrall
 						i(118154),
@@ -373,11 +373,11 @@ _.Zones =
 						i(118157),
 					}),
 --[[					
-					q( 37210),	-- Aogexon's Fang
-					q( 37211),	-- Bergruu's Horn
+					q(37210),	-- Aogexon's Fang
+					q(37211),	-- Bergruu's Horn
 					qa( 36274),	-- Bigger Trap, Better Rewards
 					qh( 36346),	-- Bigger Trap, Better Rewards
-					q( 39299),	-- Black Marketeering
+					q(39299),	-- Black Marketeering
 					qh( 35143),	-- Blood of the Burning Blade
 					qa( 36998),	-- Boar Training: Cruel Ogres
 					qh( 37035),	-- Boar Training: Cruel Ogres
@@ -394,8 +394,8 @@ _.Zones =
 					qa( 37001),	-- Boar Training: Thundercall
 					qh( 37038),	-- Boar Training: Thundercall
 					qh( 35922),	-- Bread and Circuses
-					q( 35973),	-- Brokyo Beatdown
-					q( 37082),	-- Call of the Gladiator
+					q(35973),	-- Brokyo Beatdown
+					q(37082),	-- Call of the Gladiator
 					qh( 34965),	-- Called to the Throne
 --]]					
 					qh(34868,  {  	-- Challenge of the Masters
@@ -420,17 +420,17 @@ _.Zones =
 					qa( 36994),	-- Clefthoof Training: The Garn
 					qa( 36991),	-- Clefthoof Training: Thundercall
 					qh( 37056),	-- Clefthoof Training: Thundercall
-					q( 39057),	-- Command of the Seas
+					q(39057),	-- Command of the Seas
 					qh( 35170),	-- Consumed by Vengeance
-					q( 39003),	-- Cooking the Books
+					q(39003),	-- Cooking the Books
 					qh( 35144),	-- Dark Binding
-					q( 39004),	-- Darkness Incarnate
-					q( 37221),	-- Dekorhan's Tusk
-					q( 37222),	-- Direhoof's Hide
-					q( 35083),	-- Disrupt the Rituals
-					q( 37511),	-- Dizzy Sparkshift
+					q(39004),	-- Darkness Incarnate
+					q(37221),	-- Dekorhan's Tusk
+					q(37222),	-- Direhoof's Hide
+					q(35083),	-- Disrupt the Rituals
+					q(37511),	-- Dizzy Sparkshift
 					qh( 37840),	-- Draenor's Blessing
-					q( 34881),	-- Earth, Wind and Fire...and Water
+					q(34881),	-- Earth, Wind and Fire...and Water
 					qh( 37063),	-- Elekk Training: Cruel Ogres
 					qa( 37015),	-- Elekk Training: Cruel Ogres
 					qh( 37064),	-- Elekk Training: Darkwing Roc
@@ -446,49 +446,49 @@ _.Zones =
 					qa( 37018),	-- Elekk Training: Thundercall
 					qh( 37066),	-- Elekk Training: Thundercall
 					qh( 34891),	-- Elemental Attunement
-					q( 36221),	-- Entry Fee
-					q( 35596),	-- Feline Friends Forever
-					q( 37083),	-- Fight, Kill, Salute!
-					q( 35147),	-- Fragments of the Past
-					q( 37223),	-- Gagrog's Skull
+					q(36221),	-- Entry Fee
+					q(35596),	-- Feline Friends Forever
+					q(37083),	-- Fight, Kill, Salute!
+					q(35147),	-- Fragments of the Past
+					q(37223),	-- Gagrog's Skull
 					qa( 35837),	-- Garrison Campaign: Deep Recon
 					qh( 35843),	-- Garrison Campaign: Deep Recon
 					qa( 35985),	-- Garrison Campaign: The Broken Precipice
 					qh( 36117),	-- Garrison Campaign: The Broken Precipice
-					q( 36219),	-- Garrison Campaign: The Ring of Blood
-					q( 36280),	-- Garrison Campaign: The Ring of Blood
-					q( 36281),	-- Garrison Campaign: The Ring of Blood
-					q( 36282),	-- Garrison Campaign: The Ring of Blood
-					q( 34515),	-- Gobnapped
-					q( 35024),	-- Golmash Hellscream
-					q( 35945),	-- Greblin Fastfizzle
-					q( 34893),	-- Guardians of the Plateau
-					q( 34932),	-- Guise of the Deceiver
-					q( 37799),	-- Gutrek's Cleaver: The Final Piece
-					q( 37797),	-- Gutrek's Cleaver: The First Piece
-					q( 37798),	-- Gutrek's Cleaver: The Second Piece
+					q(36219),	-- Garrison Campaign: The Ring of Blood
+					q(36280),	-- Garrison Campaign: The Ring of Blood
+					q(36281),	-- Garrison Campaign: The Ring of Blood
+					q(36282),	-- Garrison Campaign: The Ring of Blood
+					q(34515),	-- Gobnapped
+					q(35024),	-- Golmash Hellscream
+					q(35945),	-- Greblin Fastfizzle
+					q(34893),	-- Guardians of the Plateau
+					q(34932),	-- Guise of the Deceiver
+					q(37799),	-- Gutrek's Cleaver: The Final Piece
+					q(37797),	-- Gutrek's Cleaver: The First Piece
+					q(37798),	-- Gutrek's Cleaver: The Second Piece
 					qh( 37992),	-- Gutrek's Cleaver: The Spirit Forge
 					qa( 37811),	-- Gutrek's Cleaver: The Spirit Forge
-					q( 37202),	-- Hemet Nesingwary Visitor Tracking Event
-					q( 35379),	-- Hemet's Happy Hunting Grounds
-					q( 44572),	-- Honor the Flame
-					q( 34812),	-- Horde Stables Tracking Event
-					q( 34813),	-- Horde Workshop Tracking Event
-					q( 36220),	-- How Tough Are You?
+					q(37202),	-- Hemet Nesingwary Visitor Tracking Event
+					q(35379),	-- Hemet's Happy Hunting Grounds
+					q(44572),	-- Honor the Flame
+					q(34812),	-- Horde Stables Tracking Event
+					q(34813),	-- Horde Workshop Tracking Event
+					q(36220),	-- How Tough Are You?
 					qh( 34915),	-- I Help Ya Kill Dem
 					qa( 35840),	-- Intercepting the Orders
 					qh( 35846),	-- Intercepting the Orders
-					q( 34723),	-- Ironfist Harbor
+					q(34723),	-- Ironfist Harbor
 					qa( 37839),	-- Light Be With You
 					qh( 35098),	-- Lok-rath is Secured
 					qh( 35167),	-- Lost in Nagrand
-					q( 39697),	-- Master vs. Commander
+					q(39697),	-- Master vs. Commander
 					qh( 34866),	-- Meet Me in the Cavern
 					qh( 34808),	-- More Lazy Peons
-					q( 37224),	-- Mu'gra's Head
-					q( 34516),	-- My Precious!
-					q( 34466),	-- Mysterious Staff
-					q( 34518),	-- Nagrand Corral
+					q(37224),	-- Mu'gra's Head
+					q(34516),	-- My Precious!
+					q(34466),	-- Mysterious Staff
+					q(34518),	-- Nagrand Corral
 					qh( 37516),	-- News for Nixxie
 					qa( 37517),	-- News for Nixxie
 --]]					
@@ -500,14 +500,14 @@ _.Zones =
 					}),
 --[[					
 					qh( 35157),	-- Obtaining Ogre Offensive Orders
-					q( 35972),	-- Ogre Onslaught
+					q(35972),	-- Ogre Onslaught
 					qh( 36290),	-- Out of the Shadows
 					qa( 36289),	-- Out of the Shadows
-					q( 36296),	-- Phylarch the Evergreen
+					q(36296),	-- Phylarch the Evergreen
 					qh( 35845),	-- Plans of War
 					qa( 35839),	-- Plans of War
-					q( 36004),	-- Power Unleashed
-					q( 35970),	-- Preservation Capitalization
+					q(36004),	-- Power Unleashed
+					q(35970),	-- Preservation Capitalization
 					qa( 35841),	-- Putting Down the Packleader
 					qh( 35842),	-- Putting Down the Packleader
 --]]					
@@ -523,10 +523,10 @@ _.Zones =
 						i(120430),
 					}),
 --[[					
-					q( 34665),	-- Ring of Trials: Captain Boomspark
-					q( 34662),	-- Ring of Trials: Crushmaul
-					q( 34664),	-- Ring of Trials: Hol'yelaa
-					q( 34663),	-- Ring of Trials: Raketalon
+					q(34665),	-- Ring of Trials: Captain Boomspark
+					q(34662),	-- Ring of Trials: Crushmaul
+					q(34664),	-- Ring of Trials: Hol'yelaa
+					q(34663),	-- Ring of Trials: Raketalon
 --]]					
 					q(34666,  {  	-- Ring of Trials: Roakk the Zealot
 						i(114708),
@@ -558,8 +558,8 @@ _.Zones =
 					}),
 --[[					
 					qh( 34917),	-- Shields Up!
-					q( 35084),	-- Silence the Call
-					q( 37280),	-- Snarlpaw Ledge
+					q(35084),	-- Silence the Call
+					q(37280),	-- Snarlpaw Ledge
 					qh( 34794),	-- Taking the Fight to Nagrand
 					qa( 34674),	-- Taking the Fight to Nagrand
 					qa( 37184),	-- Taking the Fight to Nagrand
@@ -579,7 +579,7 @@ _.Zones =
 					qa( 36979),	-- Talbuk Training: Thundercall
 					qh( 37101),	-- Talbuk Training: Thundercall
 					qh( 34914),	-- Target of Opportunity: Telaar
-					q( 37206),	-- Tarr the Terrible
+					q(37206),	-- Tarr the Terrible
 					qh( 35096),	-- Terms of Surrender
 					qh( 34849),	-- The Blade Itself
 --]]					
@@ -590,9 +590,9 @@ _.Zones =
 						i(114690),
 					}),
 --[[					
-					q( 37286),	-- The Bloodshed Never Ends
+					q(37286),	-- The Bloodshed Never Ends
 					qh( 35232),	-- The Call of Oshu'gun
-					q( 36222),	-- The Champion of Blood
+					q(36222),	-- The Champion of Blood
 --]]					
 					qh(35317,  {  	-- The Dark Heart of Oshu'gun
 						i(118124),
@@ -605,16 +605,16 @@ _.Zones =
 						i(118130),
 					}),
 --[[					
-					q( 37318),	-- The Dead Do Not Forget...
-					q( 34941),	-- The Debt We Share
+					q(37318),	-- The Dead Do Not Forget...
+					q(34941),	-- The Debt We Share
 					qh( 34964),	-- The Farseer Awaits
-					q( 37841),	-- The Final Assault
+					q(37841),	-- The Final Assault
 					qh( 34826),	-- The Friend of My Enemy
 					qa( 34747),	-- The Honor of a Blademaster
 					qh( 34770),	-- The Honor of a Blademaster
 					qh( 34795),	-- The Might of the Warsong
-					q( 39278),	-- The Missing Manifest
-					q( 35087),	-- The Nether Approaches
+					q(39278),	-- The Missing Manifest
+					q(35087),	-- The Nether Approaches
 					qh( 35145),	-- The Pale Threat
 --]]					
 					qh(35097,  {  	-- The Pride of Lok-rath
@@ -636,22 +636,22 @@ _.Zones =
 						i(118146),
 					}),
 --[[					
-					q( 37835),	-- The Shadow War
-					q( 35086),	-- The Void March
+					q(37835),	-- The Shadow War
+					q(35086),	-- The Void March
 					qh( 35844),	-- The Warlord's Council
 					qa( 35838),	-- The Warlord's Council
 					qh( 35271),	-- The Warsong Threat
 					qa( 35386),	-- The Warsong Threat
-					q( 37981),	-- The World Famous Ring of Blood!
-					q( 37225),	-- Thek'talon's Talon
+					q(37981),	-- The World Famous Ring of Blood!
+					q(37225),	-- Thek'talon's Talon
 					qh( 34818),	-- They Call Him Lantresor of the Blade
-					q( 34514),	-- They've Got The Goods!
-					q( 35085),	-- Through the Nether
-					q( 37788),	-- Treasure Contract: Gutrek's Cleaver
+					q(34514),	-- They've Got The Goods!
+					q(35085),	-- Through the Nether
+					q(37788),	-- Treasure Contract: Gutrek's Cleaver
 					qh( 35150),	-- Trouble at the Overwatch
-					q( 37520),	-- Vileclaw's Claw
-					q( 34513),	-- WANTED: Razorpaw!
-					q( 39000),	-- We Don't Need No Library Card
+					q(37520),	-- Vileclaw's Claw
+					q(34513),	-- WANTED: Razorpaw!
+					q(39000),	-- We Don't Need No Library Card
 					qa( 37022),	-- Wolf Training: Cruel Ogres
 					qh( 37105),	-- Wolf Training: Cruel Ogres
 					qa( 37023),	-- Wolf Training: Darkwing Roc
@@ -668,7 +668,7 @@ _.Zones =
 					qa( 37025),	-- Wolf Training: Thundercall
 					qa( 36914),	-- Wrangling a Wolf
 					qh( 36950),	-- Wrangling a Wolf
-					q( 37226),	-- Xelganak's Stinger
+					q(37226),	-- Xelganak's Stinger
 --]]					
 				}),	
 				n(-16, { 	-- Rares

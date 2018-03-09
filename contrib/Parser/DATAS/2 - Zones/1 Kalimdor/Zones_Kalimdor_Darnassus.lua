@@ -21,14 +21,14 @@ _.Zones =
 									["description"] = "Location: 39.1, 31.9",			
 									["qg"] = 15598,	-- Elder Bladeswift		
 								}),
-								qg(15895, q( 8867)),	-- Lunar Fireworks (QG also in The Exodar, Shattrath City, Vale of Eternal Blossoms, Silvermoon City, Dalaran, Undercity, Ironforge, Orgrimmar, Thunderbluff, and Elwynn Forest)
+								qg(15895, q(8867)),	-- Lunar Fireworks (QG also in The Exodar, Shattrath City, Vale of Eternal Blossoms, Silvermoon City, Dalaran, Undercity, Ironforge, Orgrimmar, Thunderbluff, and Elwynn Forest)
 								qg(15892, qa( 8871)),	-- The Lunar Festival (QG in Stormwind)
 								qg(15891, qh( 8873)),	-- The Lunar Festival (QG in Orgrimmar)
 								qg(15891, qh( 8874)),	-- The Lunar Festival (QG in Undercity)
 								qg(15891, qh( 8875)),	-- The Lunar Festival (QG in Thunder Bluff)
 								qg(15892, qa( 8872)),	-- The Lunar Festival
 								qg(15892, qa( 8870)),	-- The Lunar Festival (QG in Ironforge)
-								qg(15895, q(  8883)),	-- Valadar Starsong (QG also in The Exodar, Shattrath City, Vale of Eternal Blossoms, Elwynn Forest, Dalaran, Silvermoon City, Undercity, Ironforge, Orgrimmar, and Thunder Bluff)
+								qg(15895, q(8883)),	-- Valadar Starsong (QG also in The Exodar, Shattrath City, Vale of Eternal Blossoms, Elwynn Forest, Dalaran, Silvermoon City, Undercity, Ironforge, Orgrimmar, and Thunder Bluff)
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
@@ -37,10 +37,10 @@ _.Zones =
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(37675, q( 24635)),	-- A Cloudlet of Classy Cologne (QG also in The Exodar, Silvermoon City, Thunder Bluff, Orgrimmar, Stormwind City, Ironforge, and Undercity)
+								qg(37675, q(24635)),	-- A Cloudlet of Classy Cologne (QG also in The Exodar, Silvermoon City, Thunder Bluff, Orgrimmar, Stormwind City, Ironforge, and Undercity)
 								qg(38039, qa(24610)),	-- A Gift for the High Priestess of Elune
-								qg(37675, q( 24629)),	-- A Perfect Puff of Perfume (QG also in The Exodar, Silvermoon City, Thunder Bluff, Orgrimmar, Stormwind City, Ironforge, and Undercity)
-								qg(37675, q( 24636)),	-- Bonbon Blitz (add'l QGs in The Exodar, Silvermoon City, Thunder Bluff, Orgrimmar, Stormwind City, Ironforge, and Undercity)
+								qg(37675, q(24629)),	-- A Perfect Puff of Perfume (QG also in The Exodar, Silvermoon City, Thunder Bluff, Orgrimmar, Stormwind City, Ironforge, and Undercity)
+								qg(37675, q(24636)),	-- Bonbon Blitz (add'l QGs in The Exodar, Silvermoon City, Thunder Bluff, Orgrimmar, Stormwind City, Ironforge, and Undercity)
 								qg(38293, qa(24804)),	-- Uncommon Scents (QG is also in The Exodar, Ironforge, and Stormwind City)
 							}),
 							n(-2, { 	-- Vendors
@@ -95,12 +95,12 @@ _.Zones =
 										qh(9332),	-- Stealing Darnassus's Flame
 									}),
 								}),
-								qg(26221, q( 11954)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(26221, q( 11917)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(26221, q( 11947)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(26221, q( 11948)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(26221, q( 11952)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(26221, q( 11953)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
+								qg(26221, q(11954)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
+								qg(26221, q(11917)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
+								qg(26221, q(11947)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
+								qg(26221, q(11948)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
+								qg(26221, q(11952)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
+								qg(26221, q(11953)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
 								qg(19173, qa(11970)),	-- The Master of Summer Lore (add'l QGs listed below)
 									--[[ 20102 The Cape of Stranglethorn, Shattrath City, Netherstorm, Winterspring, Tanaris, Northern Barrens, The Storm Peaks
 									19148 and 19172 Isle of Thunder, Ironforge
@@ -109,7 +109,7 @@ _.Zones =
 									--]]
 								qg(25975, qa(11657)),	-- Torch Catching (QG also in The Exodar, Ironforge, and Stormwind City)
 								qg(25975, qa(11731)),	-- Torch Tossing (QG also in The Exodar, Ironforge, and Stormwind City)
-								qg(26221, q( 11886)),	-- Unusual Activity (QG also in Shattrath City, Silvermoon City, The Exodar, Tirisfal Glades, Thunder Bluff, Undercity, Orgrimmar, Stormwind City, and Ironforge)
+								qg(26221, q(11886)),	-- Unusual Activity (QG also in Shattrath City, Silvermoon City, The Exodar, Tirisfal Glades, Thunder Bluff, Undercity, Orgrimmar, Stormwind City, and Ironforge)
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
@@ -146,7 +146,7 @@ _.Zones =
 									19172 and 19148 Isle of Thunder, Ironforge
 									18927 Stormwind City
 									--]]
-								qg( 6735, qa( 8357)),	-- Dancing for Marzipan
+								qg(6735, qa( 8357)),	-- Dancing for Marzipan
 							}),
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
@@ -178,8 +178,8 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 --[[				
-					qp129(qg( 4156, qa(29325))),	-- A Slippery Snack
-					qg( 4087, qa(27225, {	-- A Summons from Ander Germaine (breadcrumb quest for 27337)
+					qp129(qg(4156, qa(29325))),	-- A Slippery Snack
+					qg(4087, qa(27225, {	-- A Summons from Ander Germaine (breadcrumb quest for 27337)
 						["groups"] = {
 						},
 						["classes"] = {1},
@@ -189,18 +189,18 @@ _.Zones =
 						},
 						["classes"] = {7},
 					})),
-					qg( 4217, qa(27273, {	-- An Invitation from Moonglade (breadcrumb quest for 27356)
+					qg(4217, qa(27273, {	-- An Invitation from Moonglade (breadcrumb quest for 27356)
 						["groups"] = {
 						},
 						["classes"] = {11},
 					})),
-					qp129(qg( 4156, qa(29359))),	-- An Old Favorite
-					qg( 7316, qa( 6342, {	-- An Unexpected Gift
+					qp129(qg(4156, qa(29359))),	-- An Old Favorite
+					qg(7316, qa( 6342, {	-- An Unexpected Gift
 						["groups"] = {
 						},
 						["races"] = {4},
 					})),
-					qp185(qg( 4210, qa(29316))),	-- Back to Basics
+					qp185(qg(4210, qa(29316))),	-- Back to Basics
 					qg(42936, qa(26383, {	-- Breaking Waves of Change (breadcrumb quest for 13518, not available if 26385, 28490 are completed)
 						["groups"] = {
 						},
@@ -213,7 +213,7 @@ _.Zones =
 					})),
 					qg(67940, qa(32414)),	-- Darnassus Attacked? (QG in Krasarang Wilds)
 --]]					
-					qg( 7999, qa(27362, {	-- Favored of Elune
+					qg(7999, qa(27362, {	-- Favored of Elune
 						["groups"] = {
 							i(65483),
 						},
@@ -221,7 +221,7 @@ _.Zones =
 						["races"] = {4},
 					})),
 --[[					
-					qp129(qg( 4156, qa(29321))),	-- Happy as a Clam Digger
+					qp129(qg(4156, qa(29321))),	-- Happy as a Clam Digger
 					o(207321, {	-- Hero's Call Board (Darnassus)	
 						qa(29391),	-- Guardians of Hyjal: Call of the Ancients
 						qa(29387),	-- Guardians of Hyjal: Firelands Invasion!
@@ -247,7 +247,7 @@ _.Zones =
 						qa(28544),	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
 						qa(29156),	-- The Troll Incursion
 					}),					
-					qg( 3515, qa(14039)),	-- Home of the Kaldorei
+					qg(3515, qa(14039)),	-- Home of the Kaldorei
 					qg(50690, qa(27271, {	-- Journey to the Wizard's Sanctum (breadcrumb quest for 27354)
 						["groups"] = {
 						},
@@ -264,7 +264,7 @@ _.Zones =
 						},
 						["classes"] = {2},
 					})),
-					qg( 4214, qa(27267, {	-- Make Contact with SI:7 (breadcrumb quest for 27351)
+					qg(4214, qa(27267, {	-- Make Contact with SI:7 (breadcrumb quest for 27351)
 						["groups"] = {
 						},
 						["classes"] = {4},
@@ -274,7 +274,7 @@ _.Zones =
 						},
 						["classes"] = {5},
 					})),
-					qg( 4087, qa(28258, {	-- Meet with Ander Germaine (breadcrumb quest for 28393)
+					qg(4087, qa(28258, {	-- Meet with Ander Germaine (breadcrumb quest for 28393)
 						["groups"] = {
 						},
 						["classes"] = {1},
@@ -294,7 +294,7 @@ _.Zones =
 						},
 						["classes"] = {2},
 					})),
-					qg( 4214, qa(28262, {	-- Meet with Lord Tony Romano (breadcrumb quest for 28406)
+					qg(4214, qa(28262, {	-- Meet with Lord Tony Romano (breadcrumb quest for 28406)
 						["groups"] = {
 						},
 						["classes"] = {4},
@@ -304,26 +304,26 @@ _.Zones =
 						},
 						["classes"] = {8},
 					})),
-					qg( 4138, qa(28260, {	-- Meet with Wulf Hansreim (breadcrumb quest for 28394)
+					qg(4138, qa(28260, {	-- Meet with Wulf Hansreim (breadcrumb quest for 28394)
 						["groups"] = {
 						},
 						["classes"] = {3},
 					})),
-					qg( 4217, q( 28289, {	-- Moonglade Calls (breadcrumb quest for 28343)
+					qg(4217, q(28289, {	-- Moonglade Calls (breadcrumb quest for 28343)
 						["groups"] = {
 						},
 						["classes"] = {11},
 					})),
-					qp165(qg( 6034, qa( 1582))),	-- Moonglow Vest
-					qp185(qg( 4210, qa(29314))),	-- Remembering the Ancestors
+					qp165(qg(6034, qa( 1582))),	-- Moonglow Vest
+					qp185(qg(4210, qa(29314))),	-- Remembering the Ancestors
 					qg(40552, qa( 6343, {	-- Return to Nyoma
 						["groups"] = {
 						},
 						["races"] = {4},
 					})),
-					qp185(qg( 4210, qa(29318))),	-- Ribs for the Sentinels
-					qp185(qg( 4210, qa(29357))),	-- Spice Bread Aplenty
-					qp129(qg( 4156, qa(29323))),	-- Stocking Up
+					qp185(qg(4210, qa(29318))),	-- Ribs for the Sentinels
+					qp185(qg(4210, qa(29357))),	-- Spice Bread Aplenty
+					qp129(qg(4156, qa(29323))),	-- Stocking Up
 					qg(46908, qa(27846, {	-- The Grateful Dead (HOLIDAY: day of the dead)
 						["groups"] = {
 						},
@@ -334,8 +334,8 @@ _.Zones =
 						},
 						["races"] = {4},
 					})),
-					qp185(qg( 4210, qa(29313))),	-- The Secret to Perfect Kimchi
-					qp129(qg( 4156, qa(29324))),	-- The Sister's Pendant
+					qp185(qg(4210, qa(29313))),	-- The Secret to Perfect Kimchi
+					qp129(qg(4156, qa(29324))),	-- The Sister's Pendant
 					qg(11401, qa(27269, {	-- The Temple of the Moon (breadcrumb quest for 27362)
 						["groups"] = {
 						},
@@ -343,7 +343,7 @@ _.Zones =
 						["classes"] = {5},
 					})),
 					desc(qg(68651, qa(32460)), "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up."),	-- Tracking the Thieves
-					qg( 4138, qa(27266, {	-- Wulf Calls (breadcrumb quest for 27344)
+					qg(4138, qa(27266, {	-- Wulf Calls (breadcrumb quest for 27344)
 						["groups"] = {
 						},
 						["classes"] = {3},

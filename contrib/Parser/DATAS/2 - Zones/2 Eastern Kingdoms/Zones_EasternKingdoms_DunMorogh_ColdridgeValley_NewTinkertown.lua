@@ -274,33 +274,33 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					qg( 1374, qa(  319)),	-- A Favor for Evershine
+					qg(1374, qa(  319)),	-- A Favor for Evershine
 					qg(41298, qa(25882)),	-- A Hand at the Ranch
 --]]
 					o(2059, {	-- A Dwarven Corpse
 						qa(26855, { -- A Pilot's Revenge
-							i( 57560),
-							i( 57566),
-							i( 57562),
-							i( 57563),
+							i(57560),
+							i(57566),
+							i(57562),
+							i(57563),
 							i(131612),
 						}),
 					}),
 --[[
-					qg(  658, qa(24471)),	-- Aid for the Wounded
+					qg(658, qa(24471)),	-- Aid for the Wounded
 --]]
-					qg( 1267, qa(  384, {	-- Beer Basted Boar Ribs 
+					qg(1267, qa(  384, {	-- Beer Basted Boar Ribs 
 						i(2889),	-- Recipe: Beer Basted Boar Ribs
 					})),
 --[[					
-					qg( 1261, qa( 7674)),	-- Black Ram Exchange
+					qg(1261, qa( 7674)),	-- Black Ram Exchange
 					qg(42933, qa(26380)),	-- Bound for Kharanos
 					qg(40950, qa(25667)),	-- Culling the Wendigos
 --]]
 					qg(41786, qa(25997, { -- Dark Iron Scheming
-						i( 57575),
-						i( 57576),
-						i( 57578),
+						i(57575),
+						i(57576),
+						i(57578),
 						i(131462),
 					})),
 --[[					
@@ -310,32 +310,32 @@ _.Zones =
 						},
 						["races"] = {7},
 					})),
---					q( 43291),	-- Defend (REMOVED, pre-Legion invasions)
+--					q(43291),	-- Defend (REMOVED, pre-Legion invasions)
 					qg(41853, qa(26112)),	-- Demanding Answers
---					q( 43283),	-- Demon Commander (REMOVED, pre-Legion invasions)
-					qg( 1373, qa(  308)),	-- Distracting Jarven
+--					q(43283),	-- Demon Commander (REMOVED, pre-Legion invasions)
+					qg(1373, qa(  308)),	-- Distracting Jarven
 					qg(41298, qa(25840)),	-- Eliminate the Resistance
 					qg(41786, qa(25978)),	-- Entombed in Ice
-					qg( 1378, qa(  318)),	-- Evershine
+					qg(1378, qa(  318)),	-- Evershine
 					qg(41853, qa(26078)),	-- Extinguish the Fires
 					qg(40950, qa(  313)),	-- Forced to Watch from Afar (add'l QG 1377, may have changed in Cata)
-					qg( 1261, qa( 7673)),	-- Frost Ram Exchange
+					qg(1261, qa( 7673)),	-- Frost Ram Exchange
 					qg(40950, qa(25724)),	-- Frostmane Aggression
 					qg(41786, qa(25998)),	-- Get to the Airfield
 --]]					
 					qg(41853, qa(26102, { -- Grimaxe's Demise
-						i( 57579),
-						i( 57580),
-						i( 57581),
-						i( 57582),
+						i(57579),
+						i(57580),
+						i(57581),
+						i(57582),
 						i(131483),
 						i(131484),
 					})),
 --[[					
---					q(   403),	-- Guarded Thunderbrew Barrel (REMOVED with Cata)
+--					q(403),	-- Guarded Thunderbrew Barrel (REMOVED with Cata)
 					qg(41578, qa(25933)),	-- Help for the Quarry
 					qg(40950, qa(25838)),	-- Help from Steelgrill's Depot
-					qg( 1699, qa( 6387, {	-- Honor Students
+					qg(1699, qa( 6387, {	-- Honor Students
 						["groups"] = {
 						},
 						["races"] = {3,7}, -- Dwarf, Gnome
@@ -357,35 +357,35 @@ _.Zones =
 					}),
 --					qa(14084),	-- Learn to Ride in Dun Morogh (REMOVED)
 --					qa(14083),	-- Learn to Ride in Dun Morogh (REMOVED)
---					q( 25289),	-- One Step Forward... (REMOVED with Cata)
---					q( 24462),	-- Operation Item Get (REMOVED with Cata)
-					qg( 1269, qa(  412)),	-- Operation Recombobulation
+--					q(25289),	-- One Step Forward... (REMOVED with Cata)
+--					q(24462),	-- Operation Item Get (REMOVED with Cata)
+					qg(1269, qa(  412)),	-- Operation Recombobulation
 					qg(40951, qa(25668)),	-- Pilfered Supplies
-					qg(45966, q( 27670, {	-- Pinned Down
+					qg(45966, q(27670, {	-- Pinned Down
 						["groups"] = {
 						},
 						["races"] = {7,9}, -- Gnome, Goblin
 					})),
---					q( 25295),	-- Press Fire (REMOVED)
+--					q(25295),	-- Press Fire (REMOVED)
 --]]
 					qg(50631, qa(25937, { -- Priceless Treasures
-						i( 57571),
-						i( 57572),
-						i( 57574),
+						i(57571),
+						i(57572),
+						i(57574),
 						i(131459),
 					})),
 --[[					
-					qg( 1265, qa(  314)),	-- Protecting the Herd
+					qg(1265, qa(  314)),	-- Protecting the Herd
 					qg(40950, qa(25792)),	-- Pushing Forward
 					qg(41853, qa(26085)),	-- Rallying the Defenders
-					qg( 1261, qa(25905)),	-- Rams on the Lam
---					q( 43292),	-- Repel (REMOVED, pre-Legion invasions)
-					qg(45966, q( 28167, {	-- Report to Carvo Blastbolt
+					qg(1261, qa(25905)),	-- Rams on the Lam
+--					q(43292),	-- Repel (REMOVED, pre-Legion invasions)
+					qg(45966, q(28167, {	-- Report to Carvo Blastbolt
 						["groups"] = {
 						},
 						["races"] = {7,9}, -- Gnome, Goblin
 					})),
-					qg( 1374, qa(  320)),	-- Return to Bellowfiz
+					qg(1374, qa(  320)),	-- Return to Bellowfiz
 					o(270, {	-- Unguarded Thunder Ale Barrel
 						qa(  311),	-- Return to Marleth
 					}),
@@ -394,12 +394,12 @@ _.Zones =
 						},
 						["races"] = {3,7}, -- Dwarf, Gnome
 					})),
-					qg(47250, q( 27671, {	-- See to the Survivors
+					qg(47250, q(27671, {	-- See to the Survivors
 						["groups"] = {
 						},
 						["races"] = {7,9}, -- Gnome, Goblin
 					})),
-					qg( 1378, qa(  317, {	-- Stocking Jetsteam
+					qg(1378, qa(  317, {	-- Stocking Jetsteam
 						["groups"] = {
 						},
 						["races"] = {3,7}, -- Dwarf, Gnome
@@ -416,33 +416,33 @@ _.Zones =
 						},
 						["races"] = {3}, -- Dwarf
 					})),
-					qg( 1374, qa(  315)),	-- The Perfect Stout
-					qg(  926, qa(24528, {	-- The Power of the Light
+					qg(1374, qa(  315)),	-- The Perfect Stout
+					qg(926, qa(24528, {	-- The Power of the Light
 						["groups"] = {
 						},
 						["classes"] = {2}, -- Paladin
 						["races"] = {3}, -- Dwarf
 					})),
 --]]					
-					qg( 1977, qa(  433, { 	-- The Public Servant
-						i( 57570),
-						i( 57568),
-						i( 57569),
+					qg(1977, qa(  433, { 	-- The Public Servant
+						i(57570),
+						i(57568),
+						i(57569),
 						i(131208),
 						i(131209),
 					})),
 --[[					
-					qg( 1252, qa(  291)),	-- The Reports
+					qg(1252, qa(  291)),	-- The Reports
 					qg(41363, qa(25839)),	-- The Ultrasafe Personnel Launcher
 					qg(50601, qa(28868)),	-- The View from Down Here
-					qg( 1254, q(   432)),	-- Those Blasted Troggs!
+					qg(1254, q(432)),	-- Those Blasted Troggs!
 					qg(46255, qa(27674, {	-- To the Surface
 						["groups"] = {
 						},
 						["races"] = {7}, -- Gnome
 					})),
-					qg( 1872, qa(  400)),	-- Tools for Steelgrill
-					qg( 1977, qa(25986)),	-- Trouble at the Lake
+					qg(1872, qa(  400)),	-- Tools for Steelgrill
+					qg(1977, qa(25986)),	-- Trouble at the Lake
 					qg(47250, qa(28169, {	-- Withdraw to the Loading Room!
 						["groups"] = {
 						},
@@ -453,31 +453,31 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares	
 					n(1130, { 	-- Bjarn
-						dr(01.4, i(  6337)),	-- Infantry Leggings
-						dr(01.2, i(  6269)),	-- Pioneer Trousers					
+						dr(01.4, i(6337)),	-- Infantry Leggings
+						dr(01.2, i(6269)),	-- Pioneer Trousers					
 						nld({     -- Legacy
 							i(3283),	-- Battle Chain Tunic
 						}),					
 					}),
 					n(1119, { 	-- Hammerspine
-						dr(20.0, i( 68743)),	-- Imbued Infantry Cloak
-						dr(18.0, i( 68744)),	-- Imbued Pioneer Cloak
-						dr(03.0, i(  6337)),	-- Infantry Leggings
-						dr(03.0, i(  6269)),	-- Pioneer Trousers
-						dr(02.0, i(  6267)),	-- Disciple's Pants
-						dr(02.0, i( 68749)),	-- Imbued Disciple's Bracers
-						dr(02.0, i( 68748)),	-- Imbued Disciple's Cloak
-						dr(02.0, i( 68750)),	-- Imbued Pioneer Belt
-						dr(01.9, i( 68751)),	-- Imbued Pioneer Bracers
-						dr(01.8, i( 68753)),	-- Imbued Infantry Bracers
-						dr(01.7, i( 68747)),	-- Imbued Disciple's Sash
-						dr(01.5, i( 68759)),	-- Imbued Gypsy Cloak
-						dr(01.5, i( 68752)),	-- Imbued Infantry Belt
-						dr(01.2, i( 68755)),	-- Imbued Disciple's Gloves
-						dr(01.2, i( 68757)),	-- Imbued Pioneer Gloves
-						dr(01.1, i( 68761)),	-- Imbued Infantry Boots
-						dr(01.0, i( 68754)),	-- Imbued Disciple's Boots
-						dr(01.0, i( 68760)),	-- Imbued Infantry Gauntlets					
+						dr(20.0, i(68743)),	-- Imbued Infantry Cloak
+						dr(18.0, i(68744)),	-- Imbued Pioneer Cloak
+						dr(03.0, i(6337)),	-- Infantry Leggings
+						dr(03.0, i(6269)),	-- Pioneer Trousers
+						dr(02.0, i(6267)),	-- Disciple's Pants
+						dr(02.0, i(68749)),	-- Imbued Disciple's Bracers
+						dr(02.0, i(68748)),	-- Imbued Disciple's Cloak
+						dr(02.0, i(68750)),	-- Imbued Pioneer Belt
+						dr(01.9, i(68751)),	-- Imbued Pioneer Bracers
+						dr(01.8, i(68753)),	-- Imbued Infantry Bracers
+						dr(01.7, i(68747)),	-- Imbued Disciple's Sash
+						dr(01.5, i(68759)),	-- Imbued Gypsy Cloak
+						dr(01.5, i(68752)),	-- Imbued Infantry Belt
+						dr(01.2, i(68755)),	-- Imbued Disciple's Gloves
+						dr(01.2, i(68757)),	-- Imbued Pioneer Gloves
+						dr(01.1, i(68761)),	-- Imbued Infantry Boots
+						dr(01.0, i(68754)),	-- Imbued Disciple's Boots
+						dr(01.0, i(68760)),	-- Imbued Infantry Gauntlets					
 					}), 
 					nld({     -- Legacy
 						n(1271, { 	-- Old Icebeard
@@ -517,8 +517,8 @@ _.Zones =
 						}),
 --[[]]--
 						n(-17, {	-- Quests					
-							qg( 8416, qa( 3361)),	-- A Refugee's Quandary
-							qg(  786, qa(24490)),	-- A Trip to Ironforge
+							qg(8416, qa( 3361)),	-- A Refugee's Quandary
+							qg(786, qa(24490)),	-- A Trip to Ironforge
 							qg(37087, qa(24475)),	-- All the Other Stuff
 							qg(37087, qa(24496, {	-- Arcane Rune
 								["groups"] = {
@@ -527,7 +527,7 @@ _.Zones =
 								["classes"] = {8},
 							})),
 							qg(37087, qa(24493)),	-- Don't Forget About Us
-							qg( 1104, qa(24477)),	-- Dwarven Artifacts
+							qg(1104, qa(24477)),	-- Dwarven Artifacts
 							qg(37087, qa(31150, {	-- Elegant Rune
 								["groups"] = {
 								},
@@ -539,29 +539,29 @@ _.Zones =
 								["races"] = {3,7}, -- Dwarf, Gnome
 								["classes"] = {4}, -- Rogue
 							})),
-							qg(  916, qa(24532, {	-- Evisceratin' the Enemy
+							qg(916, qa(24532, {	-- Evisceratin' the Enemy
 								["groups"] = {
 								},
 								["races"] = {3}, -- Dwarf
 								["classes"] = {4}, -- Rogue
 							})),
 							qg(37087, qa(24474)),	-- First Things First: We're Gonna Need Some Beer
-							qg( 6782, qa(24491)),	-- Follow that Gyro-Copter!
+							qg(6782, qa(24491)),	-- Follow that Gyro-Copter!
 							qg(37081, qa(24470)),	-- Give 'em What-For
 							qg(37081, qa(24469)),	-- Hold the Line!
-							qg(  786, qa(  218)),	-- Ice and Fire
+							qg(786, qa(  218)),	-- Ice and Fire
 							qg(63285, qa(31151, {	-- Kick, Punch, It's All in the Mind
 								["groups"] = {
 								},
 								["classes"] = {10},	-- Monk
 							})),
 							qg(37081, qa(24473)),	-- Lockdown in Anvilmar
-							qg( 1104, qa(24486)),	-- Make Hay While the Sun Shines
+							qg(1104, qa(24486)),	-- Make Hay While the Sun Shines
 							qg(37113, qa(24492)),	-- Pack Your Bags
-							qg(  786, qa(  182)),	-- The Troll Menace
-							qg( 1354, qa(24489)),	-- Trolling for Information
+							qg(786, qa(  182)),	-- The Troll Menace
+							qg(1354, qa(24489)),	-- Trolling for Information
 							qg(37087, qa(24487)),	-- Whitebeard Needs Ye
-							qg(  837, qa(24533, {	-- Words of Power
+							qg(837, qa(24533, {	-- Words of Power
 								["groups"] = {
 								},
 								["races"] = {3}, -- Dwarf
@@ -592,22 +592,22 @@ _.Zones =
 						n(-17, { 	-- Quests
 							["groups"] = {
 --[[							
-								qg(42553, q( 26205, {	-- A Job for the Multi-Bot
+								qg(42553, q(26205, {	-- A Job for the Multi-Bot
 									["groups"] = {
 									},
 									["races"] = {7},
 								})),
-								qg(42317, q( 26566, {	-- A Triumph of Gnomish Ingenuity
+								qg(42317, q(26566, {	-- A Triumph of Gnomish Ingenuity
 									["groups"] = {
 									},
 									["races"] = {7},
 								})),
-								qg(42317, q( 26331, {	-- Crushcog's Minions
+								qg(42317, q(26331, {	-- Crushcog's Minions
 									["groups"] = {
 									},
 									["races"] = {7,9},
 								})),
-								qg(42630, q( 26265, {	-- Dealing with the Fallout
+								qg(42630, q(26265, {	-- Dealing with the Fallout
 									["groups"] = {
 									},
 									["races"] = {7,9},
@@ -657,13 +657,13 @@ _.Zones =
 									["races"] = {7}, -- Gnome
 									["classes"] = {1}, -- Warrior
 								})),
-								qg(  460, qa(26424, {	-- Meet the High Tinker	
+								qg(460, qa(26424, {	-- Meet the High Tinker	
 									["groups"] = {
 									},
 									["races"] = {7}, -- Gnome
 									["classes"] = {9}, -- Warlock
 								})),
-								qg(103614, q( 41218, {	-- Meet the High Tinker
+								qg(103614, q(41218, {	-- Meet the High Tinker
 									["groups"] = {
 									},
 									["races"] = {7,9}, -- Gnome, Goblin
@@ -694,7 +694,7 @@ _.Zones =
 									},
 									["races"] = {7}, -- Gnome
 								})),
-								qg(42553, q( 26222, {	-- Scrounging for Parts
+								qg(42553, q(26222, {	-- Scrounging for Parts
 									["groups"] = {
 									},
 									["races"] = {7}, -- Gnome
@@ -714,7 +714,7 @@ _.Zones =
 									},
 									["classes"] = {4}, -- Rogue
 								})),
-								qg(42317, q( 26208, {	-- The Fight Continues
+								qg(42317, q(26208, {	-- The Fight Continues
 									["groups"] = {
 									},
 									["races"] = {7,9}, -- Gnome, Goblin
@@ -769,7 +769,7 @@ _.Zones =
 									},
 									["races"] = {7}, -- Gnome
 								})),
-								qg(42611, q( 26264, {	-- What's Left Behind
+								qg(42611, q(26264, {	-- What's Left Behind
 									["groups"] = {
 									},
 									["races"] = {7,9}, -- Gnome, Goblin
@@ -794,14 +794,14 @@ _.Zones =
 						}),
 						n(-16, { 	-- Rares
 							 n(107431, { -- Weaponized Rabbot
-								i( 10135),	-- High Councillor's Tunic
-								i(  9840),	-- Banded Girdle
-								i(  9821),	-- Durable Bracers
-								i(  9819),	-- Durable Tunic
-								i(  6536),	-- Willow Vest
-								i(  9795),	-- Ivycloth Gloves
-								i( 10266),	-- Masterwork Breastplate
-								i(  6269),	-- Pioneer Trousers
+								i(10135),	-- High Councillor's Tunic
+								i(9840),	-- Banded Girdle
+								i(9821),	-- Durable Bracers
+								i(9819),	-- Durable Tunic
+								i(6536),	-- Willow Vest
+								i(9795),	-- Ivycloth Gloves
+								i(10266),	-- Masterwork Breastplate
+								i(6269),	-- Pioneer Trousers
 							}),
 							nld({ 	-- Legacy
 								n(8503, { -- Gibblewilt

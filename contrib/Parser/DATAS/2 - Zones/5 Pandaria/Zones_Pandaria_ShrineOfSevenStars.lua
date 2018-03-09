@@ -281,7 +281,7 @@ n(-3, { 	-- Holidays
 					qa( 31512),	-- A Witness to History
 					qa( 32315),	-- Anduin's Plea
 					qa( 32052),	-- Candy Bucket
-					q( 31486),	-- Everything I Know About Cooking
+					q(31486),	-- Everything I Know About Cooking
 					qa( 32316),	-- Heart Of The Alliance
 --]]					
 					qa(32900,  {  -- Heroic Deeds

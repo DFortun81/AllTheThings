@@ -439,7 +439,7 @@ _.Instances =
 							cr(15990, e(1615, {	-- Kel'Thuzad
 								["groups"] = {
 									i(122197),	-- Music Roll: Wrath of the Lich King (ACHIEVEMENT! NOT IN DJ)
-									i( 40616, { -- Helm of the Lost Conqueror
+									i(40616, { -- Helm of the Lost Conqueror
 										i(39635),	-- Heroes' Redemption Helm
 										i(39628),	-- Heroes' Redemption Headpiece
 										i(39640),	-- Heroes' Redemption Faceguard
@@ -464,15 +464,15 @@ _.Instances =
 										i(39545),	-- Heroes' Dreamwalker Cover
 										i(39561),	-- Heroes' Bonescythe Helmet
 									}),
-									i( 39417),	-- Death's Bite
-									i( 39422),	-- Staff of the Plaguehound
-									i( 39420),	-- Anarchy
-									i( 39423),	-- Hammer of the Astral Plane
-									i( 39416),	-- Kel'Thuzad's Reach
-									i( 39424),	-- The Soulblade
-									i( 39419),	-- Nerubian Conqueror
-									i( 39426),	-- Wand of the Archlich
-									i( 39425),	-- Cloak of the Dying
+									i(39417),	-- Death's Bite
+									i(39422),	-- Staff of the Plaguehound
+									i(39420),	-- Anarchy
+									i(39423),	-- Hammer of the Astral Plane
+									i(39416),	-- Kel'Thuzad's Reach
+									i(39424),	-- The Soulblade
+									i(39419),	-- Nerubian Conqueror
+									i(39426),	-- Wand of the Archlich
+									i(39425),	-- Cloak of the Dying
 								},
 								["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects."
 							})),
@@ -1057,7 +1057,7 @@ _.Instances =
 							cr(15990, e(1615, {	-- Kel'Thuzad
 								["groups"] = {
 									i(122197),	-- Music Roll: Wrath of the Lich King (ACHIEVEMENT!  NOT IN DJ)
-									i( 40631, { -- Crown of the Lost Conqueror
+									i(40631, { -- Crown of the Lost Conqueror
 										i(40576),	-- Valorous Redemption Helm
 										i(40571),	-- Valorous Redemption Headpiece
 										i(40581),	-- Valorous Redemption Faceguard
@@ -1065,7 +1065,7 @@ _.Instances =
 										i(40447),	-- Valorous Crown of Faith
 										i(40456),	-- Valorous Circlet of Faith
 									}),
-									i( 40632, { -- Crown of the Lost Protector
+									i(40632, { -- Crown of the Lost Protector
 										i(40516),	-- Valorous Earthshatter Helm
 										i(40510),	-- Valorous Earthshatter Headpiece
 										i(40521),	-- Valorous Earthshatter Faceguard
@@ -1073,7 +1073,7 @@ _.Instances =
 										i(40546),	-- Valorous Dreadnaught Greathelm
 										i(40505),	-- Valorous Cryptstalker Headpiece
 									}),
-									i( 40633, { -- Crown of the Lost Vanquisher
+									i(40633, { -- Crown of the Lost Vanquisher
 										i(40554),	-- Valorous Scourgeborne Helmet
 										i(40565),	-- Valorous Scourgeborne Faceguard
 										i(40416),	-- Valorous Frostfire Circlet
@@ -1082,19 +1082,19 @@ _.Instances =
 										i(40467),	-- Valorous Dreamwalker Cover
 										i(40499),	-- Valorous Bonescythe Helmet
 									}),								
-									i( 40384),	-- Betrayer of Humanity
-									i( 40388),	-- Journey's End
-									i( 40383),	-- Calamity's Grasp
-									i( 40402),	-- Last Laugh
-									i( 40386),	-- Sinister Revenge
-									i( 40396),	-- The Turning Tide
-									i( 40395),	-- Torch of the Holy Fire
-									i( 40385),	-- Envoy of Mortality
-									i( 40401),	-- Voice of Reason
-									i( 40400),	-- Wall of Terror
-									i( 40405),	-- Cape of the Unworthy Wizard
-									i( 40403),	-- Drape of the Deadly Foe
-									i( 40398),	-- Leggings of Mortal Arrogance
+									i(40384),	-- Betrayer of Humanity
+									i(40388),	-- Journey's End
+									i(40383),	-- Calamity's Grasp
+									i(40402),	-- Last Laugh
+									i(40386),	-- Sinister Revenge
+									i(40396),	-- The Turning Tide
+									i(40395),	-- Torch of the Holy Fire
+									i(40385),	-- Envoy of Mortality
+									i(40401),	-- Voice of Reason
+									i(40400),	-- Wall of Terror
+									i(40405),	-- Cape of the Unworthy Wizard
+									i(40403),	-- Drape of the Deadly Foe
+									i(40398),	-- Leggings of Mortal Arrogance
 								},
 								["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects."
 							})),

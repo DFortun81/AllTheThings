@@ -25,136 +25,136 @@ _.Zones =
 							p(479), -- Elfin Rabbit
 						}),
 						n(-17, { -- Quests
-							q( 44057),	-- A "Noble" Event
-							q( 42586),	-- A Glade Defense
-							q( 43409),	-- A Hero's Weapon
-							q( 42046),	-- A New Beginning
-							q( 45180),	-- An Island of War
-							q( 46026),	-- An Urgent Warning
-							q( 44237),	-- Ancients of War
-							q( 43980),	-- Another Weapon of Old
-							q( 41332),	-- Ascending The Circle
-							q( 42588),	-- Branching Out
-							q( 42038),	-- Champion: Broll Bearmantle
-							q( 42047),	-- Champion: Hamuul Runetotem
-							q( 42048),	-- Champion: Mylune
-							q( 42096),	-- Champion: Naralex
-							q( 42056),	-- Champion: Remulos
-							q( 42039),	-- Champion: Sylendra Gladesong
-							q( 46044),	-- Champion: Thisalee Crow
-							q( 40650),	-- Champion: Zen'tabra
-							q( 41689),	-- Cleansing the Mother Tree
-							q( 44275),	-- Court of Stars
-							q( 44273),	-- Darkheart Thicket
-							q( 44272),	-- Darkheart Thicket
-							q( 44076),	-- Darkheart Thicket: Essence of Regrowth
-							q( 43403),	-- Defending the Isles
-							q( 46318),	-- Defense of Aviana
-							q( 47075),	-- Delivering Lost Knowledge
-							q( 45173),	-- Desperate Times
-							q( 42031),	-- Dire Growth
-							q( 40654),	-- Druids of the Claw
-							q( 42051),	-- Enter Nightmare
-							q( 44235),	-- Essence of Fate
-							q( 44236),	-- Essence of Fate
-							q( 44270),	-- Eye of Azshara
-							q( 44271),	-- Eye of Azshara
-							q( 44077),	-- Eye of Azshara: Essence of Balance
-							q( 42365),	-- Focusing the Energies
-							q( 46786),	-- Further Advancement
-							q( 46154),	-- Furthering Knowledge
-							q( 42037),	-- Gathering the Dreamweavers
-							q( 45425),	-- Grovebound
-							q( 42516),	-- Growing Power
-							q( 44075),	-- Halls of Valor: Essence of Ferocity
-							q( 42036),	-- Idol of the Wilds
-							q( 43906),	-- Into the Nightmare: Fall of Cenarius
-							q( 43904),	-- Into the Nightmare: Fall of Cenarius
-							q( 43902),	-- Into the Nightmare: Fall of Cenarius
-							q( 43908),	-- Into the Nightmare: Fall of Cenarius
-							q( 43546),	-- Into the Nightmare: Il'gynoth
-							q( 43547),	-- Into the Nightmare: Il'gynoth
-							q( 43548),	-- Into the Nightmare: Il'gynoth
-							q( 43549),	-- Into the Nightmare: Il'gynoth
-							q( 43909),	-- Into the Nightmare: Xavius
-							q( 43905),	-- Into the Nightmare: Xavius
-							q( 43903),	-- Into the Nightmare: Xavius
-							q( 43907),	-- Into the Nightmare: Xavius
-							q( 46027),	-- Investigate the Broken Shore
-							q( 41449),	-- Join the Dreamer
-							q( 40653),	-- Making Trails
-							q( 42033),	-- Malorne's Refuge
-							q( 44266),	-- Maw of Souls
-							q( 44267),	-- Maw of Souls
-							q( 40649),	-- Meet with Mylune
-							q( 41468),	-- Mistress of the Claw
-							q( 44431),	-- More Weapons of Old
-							q( 45426),	-- Nature's Advance
-							q( 41422),	-- Necessary Preparations
-							q( 44264),	-- Neltharion's Lair
-							q( 44265),	-- Neltharion's Lair
-							q( 43554),	-- Neltharion's Lair
-							q( 44074),	-- Neltharion's Lair: Essence of Tenacity
-							q( 44269),	-- Odyn's Challenge
-							q( 44268),	-- Odyn's Challenge
-							q( 43509),	-- Odyn's Challenge
-							q( 42049),	-- Powering the Portal
-							q( 41690),	-- Reconvene
-							q( 42585),	-- Recruiting the Troops
-							q( 44917),	-- Return to Karazhan: The Tower of Power
-							q( 42583),	-- Rise, Champions
-							q( 42032),	-- Sampling the Nightmare
-							q( 42584),	-- Sister Lilith
-							q( 41255),	-- Sowing The Seed
-							q( 44869),	-- Talon Terror
-							q( 46317),	-- Talon's Call
-							q( 44263),	-- The Arcway
-							q( 40900),	-- The Burden Borne
-							q( 42055),	-- The Demi-God's Return
-							q( 41918),	-- The Dreamer Returns
-							q( 42432),	-- The Emerald Nightmare: The Emerald Nightmare
-							q( 42430),	-- The Fangs of Ashamane
-							q( 44232),	-- The Grove Provides
-							q( 44277),	-- The Lord of Black Rook Hold
-							q( 44276),	-- The Lord of Black Rook Hold
-							q( 43911),	-- The Nighthold: Elisande
-							q( 43920),	-- The Nighthold: Elisande
-							q( 43917),	-- The Nighthold: Elisande
-							q( 43914),	-- The Nighthold: Elisande
-							q( 43918),	-- The Nighthold: Gul'dan
-							q( 43921),	-- The Nighthold: Gul'dan
-							q( 43912),	-- The Nighthold: Gul'dan
-							q( 43915),	-- The Nighthold: Gul'dan							
-							q( 43913),	-- The Nighthold: High Botanist Tel'arn
-							q( 43910),	-- The Nighthold: High Botanist Tel'arn
-							q( 43916),	-- The Nighthold: High Botanist Tel'arn
-							q( 43919),	-- The Nighthold: High Botanist Tel'arn
-							q( 43891),	-- The Nighthold: Vaults
-							q( 43889),	-- The Nighthold: Vaults
-							q( 43890),	-- The Nighthold: Vaults
-							q( 43882),	-- The Nighthold: Vaults
-							q( 43501),	-- The Power Within
-							q( 43496),	-- The Power Within
-							q( 46674),	-- The Preservation of Nature
-							q( 43991),	-- The Protectors
+							q(44057),	-- A "Noble" Event
+							q(42586),	-- A Glade Defense
+							q(43409),	-- A Hero's Weapon
+							q(42046),	-- A New Beginning
+							q(45180),	-- An Island of War
+							q(46026),	-- An Urgent Warning
+							q(44237),	-- Ancients of War
+							q(43980),	-- Another Weapon of Old
+							q(41332),	-- Ascending The Circle
+							q(42588),	-- Branching Out
+							q(42038),	-- Champion: Broll Bearmantle
+							q(42047),	-- Champion: Hamuul Runetotem
+							q(42048),	-- Champion: Mylune
+							q(42096),	-- Champion: Naralex
+							q(42056),	-- Champion: Remulos
+							q(42039),	-- Champion: Sylendra Gladesong
+							q(46044),	-- Champion: Thisalee Crow
+							q(40650),	-- Champion: Zen'tabra
+							q(41689),	-- Cleansing the Mother Tree
+							q(44275),	-- Court of Stars
+							q(44273),	-- Darkheart Thicket
+							q(44272),	-- Darkheart Thicket
+							q(44076),	-- Darkheart Thicket: Essence of Regrowth
+							q(43403),	-- Defending the Isles
+							q(46318),	-- Defense of Aviana
+							q(47075),	-- Delivering Lost Knowledge
+							q(45173),	-- Desperate Times
+							q(42031),	-- Dire Growth
+							q(40654),	-- Druids of the Claw
+							q(42051),	-- Enter Nightmare
+							q(44235),	-- Essence of Fate
+							q(44236),	-- Essence of Fate
+							q(44270),	-- Eye of Azshara
+							q(44271),	-- Eye of Azshara
+							q(44077),	-- Eye of Azshara: Essence of Balance
+							q(42365),	-- Focusing the Energies
+							q(46786),	-- Further Advancement
+							q(46154),	-- Furthering Knowledge
+							q(42037),	-- Gathering the Dreamweavers
+							q(45425),	-- Grovebound
+							q(42516),	-- Growing Power
+							q(44075),	-- Halls of Valor: Essence of Ferocity
+							q(42036),	-- Idol of the Wilds
+							q(43906),	-- Into the Nightmare: Fall of Cenarius
+							q(43904),	-- Into the Nightmare: Fall of Cenarius
+							q(43902),	-- Into the Nightmare: Fall of Cenarius
+							q(43908),	-- Into the Nightmare: Fall of Cenarius
+							q(43546),	-- Into the Nightmare: Il'gynoth
+							q(43547),	-- Into the Nightmare: Il'gynoth
+							q(43548),	-- Into the Nightmare: Il'gynoth
+							q(43549),	-- Into the Nightmare: Il'gynoth
+							q(43909),	-- Into the Nightmare: Xavius
+							q(43905),	-- Into the Nightmare: Xavius
+							q(43903),	-- Into the Nightmare: Xavius
+							q(43907),	-- Into the Nightmare: Xavius
+							q(46027),	-- Investigate the Broken Shore
+							q(41449),	-- Join the Dreamer
+							q(40653),	-- Making Trails
+							q(42033),	-- Malorne's Refuge
+							q(44266),	-- Maw of Souls
+							q(44267),	-- Maw of Souls
+							q(40649),	-- Meet with Mylune
+							q(41468),	-- Mistress of the Claw
+							q(44431),	-- More Weapons of Old
+							q(45426),	-- Nature's Advance
+							q(41422),	-- Necessary Preparations
+							q(44264),	-- Neltharion's Lair
+							q(44265),	-- Neltharion's Lair
+							q(43554),	-- Neltharion's Lair
+							q(44074),	-- Neltharion's Lair: Essence of Tenacity
+							q(44269),	-- Odyn's Challenge
+							q(44268),	-- Odyn's Challenge
+							q(43509),	-- Odyn's Challenge
+							q(42049),	-- Powering the Portal
+							q(41690),	-- Reconvene
+							q(42585),	-- Recruiting the Troops
+							q(44917),	-- Return to Karazhan: The Tower of Power
+							q(42583),	-- Rise, Champions
+							q(42032),	-- Sampling the Nightmare
+							q(42584),	-- Sister Lilith
+							q(41255),	-- Sowing The Seed
+							q(44869),	-- Talon Terror
+							q(46317),	-- Talon's Call
+							q(44263),	-- The Arcway
+							q(40900),	-- The Burden Borne
+							q(42055),	-- The Demi-God's Return
+							q(41918),	-- The Dreamer Returns
+							q(42432),	-- The Emerald Nightmare: The Emerald Nightmare
+							q(42430),	-- The Fangs of Ashamane
+							q(44232),	-- The Grove Provides
+							q(44277),	-- The Lord of Black Rook Hold
+							q(44276),	-- The Lord of Black Rook Hold
+							q(43911),	-- The Nighthold: Elisande
+							q(43920),	-- The Nighthold: Elisande
+							q(43917),	-- The Nighthold: Elisande
+							q(43914),	-- The Nighthold: Elisande
+							q(43918),	-- The Nighthold: Gul'dan
+							q(43921),	-- The Nighthold: Gul'dan
+							q(43912),	-- The Nighthold: Gul'dan
+							q(43915),	-- The Nighthold: Gul'dan							
+							q(43913),	-- The Nighthold: High Botanist Tel'arn
+							q(43910),	-- The Nighthold: High Botanist Tel'arn
+							q(43916),	-- The Nighthold: High Botanist Tel'arn
+							q(43919),	-- The Nighthold: High Botanist Tel'arn
+							q(43891),	-- The Nighthold: Vaults
+							q(43889),	-- The Nighthold: Vaults
+							q(43890),	-- The Nighthold: Vaults
+							q(43882),	-- The Nighthold: Vaults
+							q(43501),	-- The Power Within
+							q(43496),	-- The Power Within
+							q(46674),	-- The Preservation of Nature
+							q(43991),	-- The Protectors
 							qart(qg(103778, q(40783))),	-- The Scythe of Elune
-							q( 40651),	-- The Seed of Ages
-							q( 42428),	-- The Shrine of Ashamane
-							q( 42040),	-- The Way to Nordrassil
-							q( 45172),	-- To Battle!
-							q( 40645),	-- To The Dreamgrove
-							q( 41782),	-- To The Hills
-							q( 43556),	-- Vault of the Wardens
-							q( 44260),	-- Vault of the Wardens
-							q( 44261),	-- Vault of the Wardens
-							q( 44259),	-- Violet Hold
-							q( 44058),	-- Volpin the Elusive
-							q( 40646),	-- Weapons of Legend
-							q( 44443),	-- Weapons of the Ancients
-							q( 41413),	-- What Could Go Wrong?
-							q( 45179),	-- Win the Crowd
-							q( 40652),	-- Word on the Winds
-							q( 46319),	-- You Can't Take the Sky from Me											
+							q(40651),	-- The Seed of Ages
+							q(42428),	-- The Shrine of Ashamane
+							q(42040),	-- The Way to Nordrassil
+							q(45172),	-- To Battle!
+							q(40645),	-- To The Dreamgrove
+							q(41782),	-- To The Hills
+							q(43556),	-- Vault of the Wardens
+							q(44260),	-- Vault of the Wardens
+							q(44261),	-- Vault of the Wardens
+							q(44259),	-- Violet Hold
+							q(44058),	-- Volpin the Elusive
+							q(40646),	-- Weapons of Legend
+							q(44443),	-- Weapons of the Ancients
+							q(41413),	-- What Could Go Wrong?
+							q(45179),	-- Win the Crowd
+							q(40652),	-- Word on the Winds
+							q(46319),	-- You Can't Take the Sky from Me											
 							--[[
 							q(46319, { -- You Can't Take the Sky from Me
 								["groups"] = {

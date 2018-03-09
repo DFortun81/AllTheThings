@@ -10,8 +10,8 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15895, q(  8867)),	-- Lunar Fireworks
-								qg(15895, q(  8883)),	-- Valadar Starsong
+								qg(15895, q(8867)),	-- Lunar Fireworks
+								qg(15895, q(8883)),	-- Valadar Starsong
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
@@ -20,10 +20,10 @@ _.Zones =
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(37675, q( 24635)),	-- A Cloudlet of Classy Cologne
+								qg(37675, q(24635)),	-- A Cloudlet of Classy Cologne
 								qg(38040, qa(24611)),	-- A Gift for the Prophet
-								qg(37675, q( 24629)),	-- A Perfect Puff of Perfume
-								qg(37675, q( 24636)),	-- Bonbon Blitz
+								qg(37675, q(24629)),	-- A Perfect Puff of Perfume
+								qg(37675, q(24636)),	-- Bonbon Blitz
 								qg(38293, qa(24804)),	-- Uncommon Scents
 							}),
 							n(-2, { 	-- Vendors
@@ -71,16 +71,16 @@ _.Zones =
 								}),
 								qg(25975, qa(11924)),	-- More Torch Catching
 								qg(25975, qa(11921)),	-- More Torch Tossing
-								qg(26221, q( 11917)),	-- Striking Back (16)
-								qg(26221, q( 11947)),	-- Striking Back (29)
-								qg(26221, q( 11948)),	-- Striking Back (39)
-								qg(26221, q( 11952)),	-- Striking Back (49)
-								qg(26221, q( 11953)),	-- Striking Back (56)
-								qg(26221, q( 11954)),	-- Striking Back (64)
+								qg(26221, q(11917)),	-- Striking Back (16)
+								qg(26221, q(11947)),	-- Striking Back (29)
+								qg(26221, q(11948)),	-- Striking Back (39)
+								qg(26221, q(11952)),	-- Striking Back (49)
+								qg(26221, q(11953)),	-- Striking Back (56)
+								qg(26221, q(11954)),	-- Striking Back (64)
 								qg(19171, qa(11970)),	-- The Master of Summer Lore
 								qg(25975, qa(11657)),	-- Torch Catching
 								qg(25975, qa(11731)),	-- Torch Tossing
-								qg(26221, q( 11886)),	-- Unusual Activity
+								qg(26221, q(11886)),	-- Unusual Activity
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden

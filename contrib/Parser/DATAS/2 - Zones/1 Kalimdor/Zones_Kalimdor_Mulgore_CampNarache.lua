@@ -157,20 +157,20 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[
-					qg( 3079, qh( 6361, {	-- A Bundle of Hides
+					qg(3079, qh( 6361, {	-- A Bundle of Hides
 						["groups"] = {
 						},
 						["races"]= {6},
 					})),
 --]]					
-					qg( 3233, qh(  833,  { -- A Sacred Burial
-						i( 57237),
-						i( 57228),
-						i( 57212),
+					qg(3233, qh(  833,  { -- A Sacred Burial
+						i(57237),
+						i(57228),
+						i(57212),
 						i(131217),
 					})),
 --[[
-					qg( 2985, qh(  743)),	-- Dangers of the Windfury
+					qg(2985, qh(  743)),	-- Dangers of the Windfury
 --					qh(14436),	-- Dwarven Digging (LEGACY)
 --					qh(14439),	-- Journey into Thunder Bluff (LEGACY - removed per wowhead comments)
 					qg(37024, qh(24550, {	-- Journey into Thunder Bluff
@@ -185,20 +185,20 @@ _.Zones =
 						["races"]= {6},
 					}),
 --					qh(14087),	-- Learn to Ride in Mulgore LEGACY, replaced with previous quest)
-					qg( 3055, qh(26188)),	-- Mazzranache
+					qg(3055, qh(26188)),	-- Mazzranache
 					qg(36644, qh(24459)),	-- Morin Cloudstalker
-					qg( 3685, qh( 7663)),	-- New Kodo - Green
-					qg( 3685, qh( 7662)),	-- New Kodo - Teal
-					qg( 2948, qh(20440, {	-- Poison Water
+					qg(3685, qh( 7663)),	-- New Kodo - Green
+					qg(3685, qh( 7662)),	-- New Kodo - Teal
+					qg(2948, qh(20440, {	-- Poison Water
 						["groups"] = {
 						},
 						["races"]= {6},
 					})),
 --]]					
-					qg( 2987, qh(  744,  {  -- Preparation for Ceremony
-						i( 57211),
-						i( 57227),
-						i( 57236),
+					qg(2987, qh(  744,  {  -- Preparation for Ceremony
+						i(57211),
+						i(57227),
+						i(57236),
 						i(131212),
 					})),
 --[[					
@@ -207,25 +207,25 @@ _.Zones =
 						},
 						["races"]= {6},
 					})),
-					qg( 2948, qh(24457, {	-- Rite of Vision
+					qg(2948, qh(24457, {	-- Rite of Vision
 						["groups"] = {
 						},
 						["races"]= {6},
 					})),
-					qg( 3054, qh(20441, {	-- Rite of Vision
+					qg(3054, qh(20441, {	-- Rite of Vision
 						["groups"] = {
 						},
 						["races"]= {6},
 					})),
-					qg( 3233, qh(  773, {	-- Rite of Wisdom
+					qg(3233, qh(  773, {	-- Rite of Wisdom
 						["groups"] = {
 						},
 						["races"]= {6},
 					})),
 					qg(36644, qh(14438)),	-- Sharing the Land
-					qg( 2988, qh(26180)),	-- Supervisor Fizsprocket
+					qg(2988, qh(26180)),	-- Supervisor Fizsprocket
 --					qh(  765),	-- Supervisor Fizsprocket (LEGACY - replaced with previous quest)
-					qg( 2947, qh(  761)),	-- Swoop Hunting
+					qg(2947, qh(  761)),	-- Swoop Hunting
 --]]					
 					n(3056, {	-- Ghost Howl
 						i(4854, {	-- Demon Scarred Cloak
@@ -239,35 +239,35 @@ _.Zones =
 						}),
 					}),
 --[[					
-					qg( 3052, qh(  861, {	-- The Hunter's Way
+					qg(3052, qh(  861, {	-- The Hunter's Way
 						["groups"] = {
 						},
 						["races"]= {6,8,10},
 					})),
-					qg( 2988, qh(  749)),	-- The Ravaged Caravan
+					qg(2988, qh(  749)),	-- The Ravaged Caravan
 					o(2908, {	-- Sealed Supply Crate
 						qh(  751),	-- The Ravaged Caravan
 					}),
 					qg(36644, qh(14491)),	-- The Restless Earth
-					qg( 2988, qh(26179)),	-- The Venture Co.
+					qg(2988, qh(26179)),	-- The Venture Co.
 --					qh(  764),	-- The Venture Co. (LEGACY - replaced with previous quest)
-					qg( 2948, qh(24456, {	-- Thunderhorn Cleansing
+					qg(2948, qh(24456, {	-- Thunderhorn Cleansing
 						["groups"] = {
 						},
 						["races"]= {6},
 					})),
-					qg( 2948, qh(24441, {	-- Thunderhorn Totem
+					qg(2948, qh(24441, {	-- Thunderhorn Totem
 						["groups"] = {
 						},
 						["races"]= {6},
 					})),
 --]]					
-					qg(37024, q( 24524,  {  -- Wildmane Cleansing
+					qg(37024, q(24524,  {  -- Wildmane Cleansing
 						["groups"] = {
-							i( 57238),
-							i( 57229),
-							i( 57240),
-							i( 57213),
+							i(57238),
+							i(57229),
+							i(57240),
+							i(57213),
 							i(131373),
 						},
 						["races"] = {6},
@@ -278,13 +278,13 @@ _.Zones =
 						},
 						["races"]= {6},
 					})),
-					qg( 2948, qh(24440, {	-- Winterhoof Cleansing
+					qg(2948, qh(24440, {	-- Winterhoof Cleansing
 						["groups"] = {
 						},
 						["races"]= {6},
 					})),
 --]]					
---					qg(14822, q(  7945)),	-- Your Fortune Awaits You... (QG in Darkmoon Faire, POSSIBLY LEGACY - some comments on wowhead on these quests say they haven't been available since new DMF)
+--					qg(14822, q(7945)),	-- Your Fortune Awaits You... (QG in Darkmoon Faire, POSSIBLY LEGACY - some comments on wowhead on these quests say they haven't been available since new DMF)
 					nld({ 	-- Legacy
 						["groups"] = {
 							qh(765,  {  -- Supervisor Fizsprocket
@@ -376,17 +376,17 @@ _.Zones =
 						}),
 						n(-17, { -- Quests
 							qg(36694, qh(14461)),	-- Feed of Evil
-							qg( 2980, qh(14458)),	-- Go to Adana
-							qg( 2981, qh(24861)),	-- Last Rites, First Rites
-							qg( 2980, qh(24852)),	-- Our Tribe, Imprisoned
+							qg(2980, qh(14458)),	-- Go to Adana
+							qg(2981, qh(24861)),	-- Last Rites, First Rites
+							qg(2980, qh(24852)),	-- Our Tribe, Imprisoned
 							qg(36694, qh(14456)),	-- Rite of Courage
 							qg(36694, qh(14460)),	-- Rite of Honor
-							qg( 2980, qh(14452)),	-- Rite of Strength
+							qg(2980, qh(14452)),	-- Rite of Strength
 							qg(36803, qh(24215)),	-- Rite of the Winds
-							qg( 2981, qh(23733)),	-- Rites of the Earthmother
+							qg(2981, qh(23733)),	-- Rites of the Earthmother
 							qg(36694, qh(14455)),	-- Stop the Thorncallers
 							qg(36694, qh(14459)),	-- The Battleboars
-							qg( 2981, qh(14449)),	-- The First Step
+							qg(2981, qh(14449)),	-- The First Step
 							qg(63327, qh(31166, {	-- Tiger Palm
 								["groups"] = {
 								},

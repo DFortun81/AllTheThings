@@ -141,26 +141,26 @@ _.Zones =
 				}),
 --[[				
 				n(-17, { 	-- Quests
-					q( 24635),	-- A Cloudlet of Classy Cologne
+					q(24635),	-- A Cloudlet of Classy Cologne
 					qh( 38397),	-- A Curious Oddity
 					qh( 29431),	-- A Friend in Need
 					qh( 24613),	-- A Gift for the Banshee Queen
 					qh( 27283),	-- A Journey to Moonglade
-					q( 24629),	-- A Perfect Puff of Perfume
+					q(24629),	-- A Perfect Puff of Perfume
 					qh( 42985),	-- A Royal Audience
 					qh( 29400),	-- A Season for Celebration
 					qh(  9339),	-- A Thief's Reward
 					qh( 29377),	-- A Time to Break Down
 					qh( 29376),	-- A Time to Build Up
 					qh( 27277),	-- An Audience with Ureda
-					q( 24636),	-- Bonbon Blitz
+					q(24636),	-- Bonbon Blitz
 					qh( 11446),	-- Brewfest!
 					qh( 12368),	-- Candy Bucket
 					qh(  8354),	-- Chicken Clucking for a Mint
 					qh( 29375),	-- Clean Up in Undercity
 					qh( 38395),	-- Completionism
 					qh( 27334),	-- Dark Cleric Cecille
-					q(  8648),	-- Darkcore the Elder
+					q(8648),	-- Darkcore the Elder
 					qh( 31037),	-- Enemies Below
 					qh(  9812),	-- Envoy to the Horde
 					qh(  9621),	-- Envoy to the Horde
@@ -176,14 +176,14 @@ _.Zones =
 					qh(  8312),	-- Hallow's End Treats for Spoops!
 					qh( 11966),	-- Incense for the Festival Scorchlings
 					qa( 29092),	-- Inform the Elder
-					q( 12012),	-- Inform the Elder
+					q(12012),	-- Inform the Elder
 					qh( 36499),	-- Iron Horde Invasion
 					qh( 27335),	-- Journey to Orgrimmar
 					qh(  9180),	-- Journey to Undercity
 					qh( 27282),	-- Kranosh's Behest
 					qh( 29320),	-- Like Pike?
 					qh( 29332),	-- Lily, Oh Lily
-					q(  8867),	-- Lunar Fireworks
+					q(8867),	-- Lunar Fireworks
 					qh( 11357),	-- Masked Orphan Matron
 					qh( 28323),	-- Meet with Brother Silverhallow
 					qh( 28304),	-- Meet with Dark Cleric Cecille
@@ -200,7 +200,7 @@ _.Zones =
 					qh(  9813),	-- Meeting the Orcs
 					qh(  6322),	-- Michael Garrett
 					qh( 29361),	-- Moat Monster!
-					q( 28289),	-- Moonglade Calls
+					q(28289),	-- Moonglade Calls
 					qh( 11925),	-- More Torch Catching
 					qh( 11926),	-- More Torch Tossing
 					qh( 38306),	-- Mystery Notebook
@@ -223,12 +223,12 @@ _.Zones =
 					qh(  9330),	-- Stealing Stormwind's Flame
 					qh( 11933),	-- Stealing the Exodar's Flame
 					qh( 29374),	-- Stink Bombs Away!
-					q( 11954),	-- Striking Back
-					q( 11917),	-- Striking Back
-					q( 11947),	-- Striking Back
-					q( 11948),	-- Striking Back
-					q( 11952),	-- Striking Back
-					q( 11953),	-- Striking Back
+					q(11954),	-- Striking Back
+					q(11917),	-- Striking Back
+					q(11947),	-- Striking Back
+					q(11948),	-- Striking Back
+					q(11952),	-- Striking Back
+					q(11953),	-- Striking Back
 					qh( 29319),	-- Tadpole Terror
 					qh( 29427),	-- The Collector's Agent
 					qh( 14174),	-- The Grateful Dead
@@ -244,7 +244,7 @@ _.Zones =
 					qh(  9813),	-- Meeting the Orcs
 					qh(  6322),	-- Michael Garrett
 					qh( 29361),	-- Moat Monster!
-					qg(52319, q( 28289, {	-- Moonglade Calls
+					qg(52319, q(28289, {	-- Moonglade Calls
 						["groups"] = {
 						},
 						["classes"] = {11},
@@ -271,12 +271,12 @@ _.Zones =
 					qh(  9330),	-- Stealing Stormwind's Flame
 					qh( 11933),	-- Stealing the Exodar's Flame
 					qh( 29374),	-- Stink Bombs Away!
-					q( 11954),	-- Striking Back
-					q( 11917),	-- Striking Back
-					q( 11947),	-- Striking Back
-					q( 11948),	-- Striking Back
-					q( 11952),	-- Striking Back
-					q( 11953),	-- Striking Back
+					q(11954),	-- Striking Back
+					q(11917),	-- Striking Back
+					q(11947),	-- Striking Back
+					q(11948),	-- Striking Back
+					q(11952),	-- Striking Back
+					q(11953),	-- Striking Back
 					qh( 29319),	-- Tadpole Terror
 					qh( 29427),	-- The Collector's Agent
 					qh( 14174),	-- The Grateful Dead

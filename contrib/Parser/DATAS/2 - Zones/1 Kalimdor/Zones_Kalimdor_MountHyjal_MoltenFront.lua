@@ -66,7 +66,7 @@ _.Zones =
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(51682, q( 29030)),	-- Honor the Flame
+								qg(51682, q(29030)),	-- Honor the Flame
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
@@ -133,8 +133,8 @@ _.Zones =
 						i(57332),
 					})),
 --[[					
-					qg( 39406, q(25494)),	-- A Champion's Collar
-					qg( 41006, q(25758)),	-- A Gap in Their Armor
+					qg(39406, q(25494)),	-- A Champion's Collar
+					qg(41006, q(25758)),	-- A Gap in Their Armor
 					qg(106250, q(42046), {	-- A New Beginning
 						["groups"] = {
 						},
@@ -201,17 +201,17 @@ _.Zones =
 						i(57277),
 					})),
 --[[					
-					qg(40834, q( 25599)),	-- Cindermaul, the Portal Master
+					qg(40834, q(25599)),	-- Cindermaul, the Portal Master
 					qg(39432, qh(25277)),	-- Cleaning House
 					qg(39433, qa(25278)),	-- Cleaning House
-					qg(40289, q( 25597)),	-- Commander Jarod Shadowsong
-					qg(106204, q( 42045, {	-- Communing With Malorne (QG in Emerald Dreamway)
+					qg(40289, q(25597)),	-- Commander Jarod Shadowsong
+					qg(106204, q(42045, {	-- Communing With Malorne (QG in Emerald Dreamway)
 						["groups"] = {
 						},
 						["classes"]= {11},
 					})),
 --]]					
-					qg(40834, q( 25577, { -- Crushing the Cores
+					qg(40834, q(25577, { -- Crushing the Cores
 						i(57358),
 						i(57357),
 						i(57359),
@@ -320,15 +320,15 @@ _.Zones =
 					})),
 --[[					
 					qg(39433, qa(25271)),	-- Goldrinn's Ferocity
-					qg(39933, q( 29066)),	-- Good News... and Bad News (breadcrumb quest after Black Heart of Flame - put QG as NPC that ends that quest)
-					qg(39413, q( 25315)),	-- Graduation Speech
-					qg(39406, q( 25496)),	-- Grudge Match
-					qg(52838, q( 29389)),	-- Guardians of Hyjal: Firelands Invasion!
-					qg(39429, q( 25255)),	-- Harrying the Hunters
-					qg(39858, q( 25507)),	-- Hell's Shells
+					qg(39933, q(29066)),	-- Good News... and Bad News (breadcrumb quest after Black Heart of Flame - put QG as NPC that ends that quest)
+					qg(39413, q(25315)),	-- Graduation Speech
+					qg(39406, q(25496)),	-- Grudge Match
+					qg(52838, q(29389)),	-- Guardians of Hyjal: Firelands Invasion!
+					qg(39429, q(25255)),	-- Harrying the Hunters
+					qg(39858, q(25507)),	-- Hell's Shells
 					qg(39432, qh(25270)),	-- Howling Mad
 --]]					
-					qg(41497, q( 25901, { -- Hyjal Recycling Program
+					qg(41497, q(25901, { -- Hyjal Recycling Program
 						i(57347),
 						i(57345),
 					})),
@@ -341,22 +341,22 @@ _.Zones =
 						i(57384),
 					})),
 --[[					
-					qg(40278, q( 25370)),	-- Inciting the Elements
-					qg(54312, q( 29335)),	-- Into Slashing Winds
+					qg(40278, q(25370)),	-- Inciting the Elements
+					qg(54312, q(29335)),	-- Into Slashing Winds
 					qg(39432, qh(25624)),	-- Into the Maw!
 					qg(39622, qh(25617)),	-- Into the Maw!
 					qg(39433, qa(25623)),	-- Into the Maw!
 					qg(39627, qa(25618)),	-- Into the Maw!
-					qg(39927, q( 25940)),	-- Last Stand at Whistling Grove (add'l QG 39928)
-					qg(52838, q( 29200)),	-- Leyara
+					qg(39927, q(25940)),	-- Last Stand at Whistling Grove (add'l QG 39928)
+					qg(52838, q(29200)),	-- Leyara
 					qg(39432, qh(25355)),	-- Lightning in a Bottle
 					qg(39433, qa(25353)),	-- Lightning in a Bottle					
-					qg(115749, q( 44921), {	-- Lone Wolf
+					qg(115749, q(44921), {	-- Lone Wolf
 						["groups"] = {
 						},
 						["classes"]= {11},
 					}),
-					qg(41507, q( 25881)),	-- Lost Wardens
+					qg(41507, q(25881)),	-- Lost Wardens
 --]]					
 					qg(39433, qa(25273, { -- Lycanthoth the Corruptor
 						i(57379),
@@ -403,21 +403,21 @@ _.Zones =
 						i(57350),
 					})),
 --[[					
-					qg(41492, q( 25886)),	-- Pressing the Advantage
-					qg(40289, q( 25317)),	-- Protect the World Tree
-					qg(52671, q( 29101)),	-- Punting Season
-					qg(52669, q( 29149)),	-- Rage Against the Flames
-					qg(52669, q( 29127)),	-- Rage Against the Flames
-					qg(52669, q( 29123)),	-- Rage Against the Flames
-					qg(52669, q( 29163)),	-- Rage Against the Flames
-					qg(40837, q( 25576)),	-- Rage of the Wolf Ancient
-					qg(52986, q( 29248)),	-- Releasing the Pressure
-					qg(52986, q( 29246)),	-- Relieving the Pain
+					qg(41492, q(25886)),	-- Pressing the Advantage
+					qg(40289, q(25317)),	-- Protect the World Tree
+					qg(52671, q(29101)),	-- Punting Season
+					qg(52669, q(29149)),	-- Rage Against the Flames
+					qg(52669, q(29127)),	-- Rage Against the Flames
+					qg(52669, q(29123)),	-- Rage Against the Flames
+					qg(52669, q(29163)),	-- Rage Against the Flames
+					qg(40837, q(25576)),	-- Rage of the Wolf Ancient
+					qg(52986, q(29248)),	-- Releasing the Pressure
+					qg(52986, q(29246)),	-- Relieving the Pain
 					qg(40834, qh(25612)),	-- Return from the Firelands
 					qg(40834, qa(25611)),	-- Return from the Firelands
-					qg(40096, q( 25424)),	-- Return to Alysra
+					qg(40096, q(25424)),	-- Return to Alysra
 --]]					
-					qg(40578, q( 25832, { -- Return to Aviana
+					qg(40578, q(25832, { -- Return to Aviana
 						i(57273),
 						i(57272),
 						i(57271),
@@ -445,7 +445,7 @@ _.Zones =
 						i(57307),
 						i(57306),
 					})),
---					qg(52669, q( 29166)),	-- Supplies for the Other Side
+--					qg(52669, q(29166)),	-- Supplies for the Other Side
 					qg(39433, qa(25352, { -- Sweeping the Shelf
 						i(57372),
 						i(57371),
@@ -459,8 +459,8 @@ _.Zones =
 						i(57369),
 					})),
 				--[[
-					qg(106299, q( 44869)),	-- Talon Terror (QG in The Dreamgrove)
-					qg(41504, q( 25653)),	-- The Ancients are With Us
+					qg(106299, q(44869)),	-- Talon Terror (QG in The Dreamgrove)
+					qg(41504, q(25653)),	-- The Ancients are With Us
 					qg(40772, qa(27398)),	-- The Battle Is Won, The War Goes On
 					qg(40772, qh(27399)),	-- The Battle Is Won, The War Goes On
 --]]					
@@ -470,13 +470,13 @@ _.Zones =
 						i(57354),
 					})),
 --[[					
-					qg(52669, q( 29165)),	-- The Call of the Pack
-					qg(38917, q( 25320)),	-- The Captured Scout
+					qg(52669, q(29165)),	-- The Call of the Pack
+					qg(38917, q(25320)),	-- The Captured Scout
 					o(203207, {	-- Codex of Shadows
-						q( 25763),	-- The Codex of Shadows
+						q(25763),	-- The Codex of Shadows
 					}),
 --]]					
-					qg(39925, q( 25460, { -- The Earth Rises
+					qg(39925, q(25460, { -- The Earth Rises
 						i(57283),
 						i(57282),
 						i(57281),
@@ -519,30 +519,30 @@ _.Zones =
 						i(57304),
 					})),
 --[[					
-					qg(40289, q( 25584)),	-- The Return of the Ancients
-					qg(52838, q( 29198)),	-- The Sanctuary Must Not Fall
-					qg(40772, q( 25549)),	-- The Sanctum of the Prophets
+					qg(40289, q(25584)),	-- The Return of the Ancients
+					qg(52838, q(29198)),	-- The Sanctuary Must Not Fall
+					qg(40772, q(25549)),	-- The Sanctum of the Prophets
 					qg(39627, qa(25280)),	-- The Shrine Reclaimed
 					qg(39622, qh(25279)),	-- The Shrine Reclaimed
-					qg(41498, q( 25915)),	-- The Strength of Tortolla
+					qg(41498, q(25915)),	-- The Strength of Tortolla
 --]]					
-					qg(41504, q( 25906, { -- The Third Flamegate
+					qg(41504, q(25906, { -- The Third Flamegate
 						i(57343),
 						i(57342),
 						i(57344),
 					})),
 --[[					
-					qg(41498, q( 25910)),	-- The Time for Mercy has Passed
+					qg(41498, q(25910)),	-- The Time for Mercy has Passed
 					o(207359, {	-- Pure Twilight Egg
-						q( 25644),	-- The Twilight Egg
+						q(25644),	-- The Twilight Egg
 					}),
 					qg(39427, qa(25268)),	-- The Voice of Goldrinn
 					qg(39429, qh(25269)),	-- The Voice of Lo'Gosh
-					qg(41006, q( 25655)),	-- The Wormwing Problem
-					qg(49444, q( 28732)),	-- This Can Only Mean One Thing...
-					qg(52671, q( 29161)),	-- Those Bears Up There
+					qg(41006, q(25655)),	-- The Wormwing Problem
+					qg(49444, q(28732)),	-- This Can Only Mean One Thing...
+					qg(52671, q(29161)),	-- Those Bears Up There
 --]]					
-					qg(40139, q( 25325, { -- Through the Dream
+					qg(40139, q(25325, { -- Through the Dream
 						i(57285),
 						i(57284),
 						i(57286),
@@ -978,7 +978,7 @@ _.Zones =
 							qg(52824, q(29205)),	-- The Forlorn Spire
 							qg(52824, q(29141)),	-- The Harder They Fall
 							o(208535, { -- Dried Acorn
-								q( 29245),	-- The Mysterious Seed
+								q(29245),	-- The Mysterious Seed
 							}),
 							qg(52135, q(29214)),	-- The Shadow Wardens
 							qg(52824, q(29204)),	-- The Warden's Charge
@@ -991,25 +991,25 @@ _.Zones =
 						n(-16, { -- Rares
 							o(207496, { -- Dark Iron Treasure Chest
 								["groups"] = {
-									i( 67121),	-- Chestguard of the Caring Ursine
-									i( 66920),	-- Cyu's Ornate Wand
-									i( 66965),	-- Drape of Fiery Dreams
-									i( 66966),	-- Elekk-Horn Waistguard
-									i( 66989),	-- Endwyn's Flickering Gauntlets
-									i( 66992),	-- Harbinger's Breastplate
-									i( 67122),	-- Helm of Holy Visions
-									i( 66971),	-- Highland Padded Leggings
-									i( 66968),	-- Lhakaz's Swiftblade
-									i( 67120),	-- Mace of Apotheosis
-									i( 67057),	-- Oath-Bound Gauntlets
-									i( 66919),	-- Robes of Whispering Sands
-									i( 67069),	-- Shade of Death
-									i( 67123),	-- Sinman's Helm of Succor
-									i( 66993),	-- Sorrow's End
-									i( 67115),	-- Soulheart Bindings
-									i( 66976),	-- Spaulders of the Savage Beast
-									i( 67071),	-- Staff of Old Woes
-									i( 67117),	-- Woundsealer Spaulders								
+									i(67121),	-- Chestguard of the Caring Ursine
+									i(66920),	-- Cyu's Ornate Wand
+									i(66965),	-- Drape of Fiery Dreams
+									i(66966),	-- Elekk-Horn Waistguard
+									i(66989),	-- Endwyn's Flickering Gauntlets
+									i(66992),	-- Harbinger's Breastplate
+									i(67122),	-- Helm of Holy Visions
+									i(66971),	-- Highland Padded Leggings
+									i(66968),	-- Lhakaz's Swiftblade
+									i(67120),	-- Mace of Apotheosis
+									i(67057),	-- Oath-Bound Gauntlets
+									i(66919),	-- Robes of Whispering Sands
+									i(67069),	-- Shade of Death
+									i(67123),	-- Sinman's Helm of Succor
+									i(66993),	-- Sorrow's End
+									i(67115),	-- Soulheart Bindings
+									i(66976),	-- Spaulders of the Savage Beast
+									i(67071),	-- Staff of Old Woes
+									i(67117),	-- Woundsealer Spaulders								
 								},
 								["modelScale"] = 1.5,
 								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",

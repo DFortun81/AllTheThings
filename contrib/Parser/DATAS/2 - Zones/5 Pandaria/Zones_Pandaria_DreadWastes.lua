@@ -35,154 +35,154 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[
-					q( 31178),	-- A Bloody Delight
-					q( 31066),	-- A Cry From Darkness
-					q( 32616),	-- A Large Pile of Giant Dinosaur Bones
-					q( 31268),	-- A Little Brain Work
-					q( 32617),	-- A Mountain of Giant Dinosaur Bones
-					q( 31730),	-- A Not So Friendly Request
-					q( 31210),	-- A Shade of Dread
-					q( 31661),	-- A Source of Terrifying Power
-					q( 31176),	-- A Strange Appetite
-					q( 31008),	-- Amber Arms
-					q( 31019),	-- Amber Is Life
-					q( 31232),	-- An Ancient Empire
-					q( 31676),	-- Ancient Vengeance
-					q( 31271),	-- Bad Genes
-					q( 31018),	-- Beneath the Heart of Fear
-					q( 31847),	-- Better Dead than Dread
-					q( 31895),	-- Better Off Dread
-					q( 31090),	-- Better With Age
-					q( 31681),	-- Better With Age
-					q( 31084),	-- Bind the Glamour
-					q( 31086),	-- Blood of Ancients
-					q( 31069),	-- Bound With Shade
-					q( 31073),	-- Bound With Wood
-					q( 31238),	-- Brain Food
-					q( 31682),	-- By the Sea, Nevermore
-					q( 31089),	-- By the Sea, Nevermore
-					q( 32024),	-- Candy Bucket
-					q( 32023),	-- Candy Bucket
-					q( 31107),	-- Citizens of a New Empire
-					q( 31108),	-- Concentrated Fear
-					q( 31441),	-- Corruption Runs Deep
-					q( 31680),	-- Crime and Punishment
-					q( 31088),	-- Crime and Punishment
-					q( 31109),	-- Culling the Swarm
-					q( 31070),	-- Daggers of the Great Ones
-					q( 31458),	-- Damage Control
-					q( 31216),	-- Dark Skies
-					q( 31209),	-- Dark Wings, Dark Things
-					q( 31009),	-- Dead Zone
-					q( 31237),	-- Debugging the Terrace
-					q( 31186),	-- Dog Food
-					q( 31000),	-- Dread Space
-					q( 31886),	-- Dread Space
-					q( 31231),	-- Dreadspinner Extermination
-					q( 31439),	-- Dropping Our Signal
-					q( 31111),	-- Eradicating the Zan'thik
-					q( 31077),	-- Evie Stormstout
-					q( 31087),	-- Extending Our Coverage
-					q( 31679),	-- Extending Our Coverage
-					q( 31465),	-- Extracting Answers
-					q( 31001),	-- Falling Down
-					q( 31398),	-- Falling to Pieces
-					q( 31129),	-- Fate of the Stormstouts
-					q( 31076),	-- Fate of the Stormstouts
-					q( 31509),	-- Fear Takes Root
-					q( 31092),	-- Feed or Be Eaten
-					q( 31020),	-- Feeding the Beast
-					q( 31080),	-- Fiery Wings
-					q( 31177),	-- Fine Dining
-					q( 31085),	-- Fires and Fears of Old
-					q( 32439),	-- Flowing Pandaren Spirit
-					q( 31494),	-- Free From Her Clutches
-					q( 31181),	-- Fresh Pots
-					q( 31727),	-- Gambling Problem
-					q( 32613),	-- Giant Dinosaur Bone
-					q( 31957),	-- Grand Master Shu
-					q( 33235),	-- Great Turtle Meat
-					q( 31082),	-- Great Vessel of Salvation
-					q( 31078),	-- Han Stormstout
-					q( 33236),	-- Heavy Yak Flank
-					q( 32497),	-- Honor the Flame
-					q( 31071),	-- I Bring Us Great Shame
-					q( 31010),	-- In Her Clutch
-					q( 31081),	-- Incantations Fae and Primal
-					q( 31272),	-- Infection
-					q( 31133),	-- Kor'thik Aggression
-					q( 31024),	-- Kunchong Treats
-					q( 31598),	-- Kypa'rak's Core
-					q( 31022),	-- Kypari Zar
-					q( 31021),	-- Living Amber
-					q( 32615),	-- Many More Giant Dinosaur Bones
-					q( 31354),	-- Mazu's Bounty
-					q( 31265),	-- Mazu's Breath
-					q( 33234),	-- Meaty Crane Leg
-					q( 31183),	-- Meet the Cap'n
-					q( 31507),	-- Meltdown
-					q( 31267),	-- Mistblade Destruction
-					q( 32614),	-- More Giant Dinosaur Bones
-					q( 31002),	-- Nope
-					q( 31235),	-- Nope Nope Nope
-					q( 31660),	-- Not Fit to Swarm
-					q( 31184),	-- Old Age and Treachery
-					q( 31187),	-- On the Crab
-					q( 32030),	-- Once in a Hundred Lifetimes
-					q( 31504),	-- Ordnance Disposal
-					q( 31782),	-- Overthrone
-					q( 31004),	-- Preserved in Amber
-					q( 33239),	-- Pristine Firestorm Egg
-					q( 31083),	-- Promises of Gold
-					q( 31003),	-- Psycho Mantid
-					q( 31234),	-- Putting An Eye Out
-					q( 31510),	-- Quiet Now
-					q( 31808),	-- Rampage Against the Machine
-					q( 31189),	-- Reeltime Strategy
-					q( 31023),	-- Relics of the Swarm
-					q( 31072),	-- Rending Daggers
-					q( 31091),	-- Reunited
-					q( 31068),	-- Sacred Recipe
-					q( 31496),	-- Sampling the Empire's Finest
-					q( 31233),	-- Sap Tapping
-					q( 31603),	-- Seeds of Fear
-					q( 31506),	-- Shackles of Manipulation
-					q( 31612),	-- Shadow of the Empire
-					q( 31188),	-- Shark Week
-					q( 31503),	-- Shortcut to Ruin
-					q( 31175),	-- Skeer the Bloodseeker
-					q( 31487),	-- Sonic Disruption
-					q( 31508),	-- Specimen Request
-					q( 31075),	-- Sunset Kings
-					q( 31606),	-- The Dissector Wakens
-					q( 31007),	-- The Dread Clutches
-					q( 31689),	-- The Dreadsworn
-					q( 31959),	-- The Empress' Gambit
-					q( 31270),	-- The Fight Against Fear
-					q( 31067),	-- The Heavens Hum With War
-					q( 31079),	-- The Horror Comes A-Rising
+					q(31178),	-- A Bloody Delight
+					q(31066),	-- A Cry From Darkness
+					q(32616),	-- A Large Pile of Giant Dinosaur Bones
+					q(31268),	-- A Little Brain Work
+					q(32617),	-- A Mountain of Giant Dinosaur Bones
+					q(31730),	-- A Not So Friendly Request
+					q(31210),	-- A Shade of Dread
+					q(31661),	-- A Source of Terrifying Power
+					q(31176),	-- A Strange Appetite
+					q(31008),	-- Amber Arms
+					q(31019),	-- Amber Is Life
+					q(31232),	-- An Ancient Empire
+					q(31676),	-- Ancient Vengeance
+					q(31271),	-- Bad Genes
+					q(31018),	-- Beneath the Heart of Fear
+					q(31847),	-- Better Dead than Dread
+					q(31895),	-- Better Off Dread
+					q(31090),	-- Better With Age
+					q(31681),	-- Better With Age
+					q(31084),	-- Bind the Glamour
+					q(31086),	-- Blood of Ancients
+					q(31069),	-- Bound With Shade
+					q(31073),	-- Bound With Wood
+					q(31238),	-- Brain Food
+					q(31682),	-- By the Sea, Nevermore
+					q(31089),	-- By the Sea, Nevermore
+					q(32024),	-- Candy Bucket
+					q(32023),	-- Candy Bucket
+					q(31107),	-- Citizens of a New Empire
+					q(31108),	-- Concentrated Fear
+					q(31441),	-- Corruption Runs Deep
+					q(31680),	-- Crime and Punishment
+					q(31088),	-- Crime and Punishment
+					q(31109),	-- Culling the Swarm
+					q(31070),	-- Daggers of the Great Ones
+					q(31458),	-- Damage Control
+					q(31216),	-- Dark Skies
+					q(31209),	-- Dark Wings, Dark Things
+					q(31009),	-- Dead Zone
+					q(31237),	-- Debugging the Terrace
+					q(31186),	-- Dog Food
+					q(31000),	-- Dread Space
+					q(31886),	-- Dread Space
+					q(31231),	-- Dreadspinner Extermination
+					q(31439),	-- Dropping Our Signal
+					q(31111),	-- Eradicating the Zan'thik
+					q(31077),	-- Evie Stormstout
+					q(31087),	-- Extending Our Coverage
+					q(31679),	-- Extending Our Coverage
+					q(31465),	-- Extracting Answers
+					q(31001),	-- Falling Down
+					q(31398),	-- Falling to Pieces
+					q(31129),	-- Fate of the Stormstouts
+					q(31076),	-- Fate of the Stormstouts
+					q(31509),	-- Fear Takes Root
+					q(31092),	-- Feed or Be Eaten
+					q(31020),	-- Feeding the Beast
+					q(31080),	-- Fiery Wings
+					q(31177),	-- Fine Dining
+					q(31085),	-- Fires and Fears of Old
+					q(32439),	-- Flowing Pandaren Spirit
+					q(31494),	-- Free From Her Clutches
+					q(31181),	-- Fresh Pots
+					q(31727),	-- Gambling Problem
+					q(32613),	-- Giant Dinosaur Bone
+					q(31957),	-- Grand Master Shu
+					q(33235),	-- Great Turtle Meat
+					q(31082),	-- Great Vessel of Salvation
+					q(31078),	-- Han Stormstout
+					q(33236),	-- Heavy Yak Flank
+					q(32497),	-- Honor the Flame
+					q(31071),	-- I Bring Us Great Shame
+					q(31010),	-- In Her Clutch
+					q(31081),	-- Incantations Fae and Primal
+					q(31272),	-- Infection
+					q(31133),	-- Kor'thik Aggression
+					q(31024),	-- Kunchong Treats
+					q(31598),	-- Kypa'rak's Core
+					q(31022),	-- Kypari Zar
+					q(31021),	-- Living Amber
+					q(32615),	-- Many More Giant Dinosaur Bones
+					q(31354),	-- Mazu's Bounty
+					q(31265),	-- Mazu's Breath
+					q(33234),	-- Meaty Crane Leg
+					q(31183),	-- Meet the Cap'n
+					q(31507),	-- Meltdown
+					q(31267),	-- Mistblade Destruction
+					q(32614),	-- More Giant Dinosaur Bones
+					q(31002),	-- Nope
+					q(31235),	-- Nope Nope Nope
+					q(31660),	-- Not Fit to Swarm
+					q(31184),	-- Old Age and Treachery
+					q(31187),	-- On the Crab
+					q(32030),	-- Once in a Hundred Lifetimes
+					q(31504),	-- Ordnance Disposal
+					q(31782),	-- Overthrone
+					q(31004),	-- Preserved in Amber
+					q(33239),	-- Pristine Firestorm Egg
+					q(31083),	-- Promises of Gold
+					q(31003),	-- Psycho Mantid
+					q(31234),	-- Putting An Eye Out
+					q(31510),	-- Quiet Now
+					q(31808),	-- Rampage Against the Machine
+					q(31189),	-- Reeltime Strategy
+					q(31023),	-- Relics of the Swarm
+					q(31072),	-- Rending Daggers
+					q(31091),	-- Reunited
+					q(31068),	-- Sacred Recipe
+					q(31496),	-- Sampling the Empire's Finest
+					q(31233),	-- Sap Tapping
+					q(31603),	-- Seeds of Fear
+					q(31506),	-- Shackles of Manipulation
+					q(31612),	-- Shadow of the Empire
+					q(31188),	-- Shark Week
+					q(31503),	-- Shortcut to Ruin
+					q(31175),	-- Skeer the Bloodseeker
+					q(31487),	-- Sonic Disruption
+					q(31508),	-- Specimen Request
+					q(31075),	-- Sunset Kings
+					q(31606),	-- The Dissector Wakens
+					q(31007),	-- The Dread Clutches
+					q(31689),	-- The Dreadsworn
+					q(31959),	-- The Empress' Gambit
+					q(31270),	-- The Fight Against Fear
+					q(31067),	-- The Heavens Hum With War
+					q(31079),	-- The Horror Comes A-Rising
 					qa( 31390),	-- The Klaxxi
 					qh( 31391),	-- The Klaxxi
-					q( 31006),	-- The Klaxxi Council
-					q( 31359),	-- The Kunchong Whisperer
-					q( 31190),	-- The Mariner's Revenge
-					q( 31599),	-- The Matriarch's Maw
-					q( 31211),	-- The Poisoned Mind
-					q( 31026),	-- The Root of the Problem
-					q( 31269),	-- The Scale-Lord
-					q( 31179),	-- The Scent of Blood
-					q( 31656),	-- The Threat in the South
-					q( 31677),	-- The Warlord's Ashes
-					q( 31609),	-- The Wrath of Shek'zeer
-					q( 31605),	-- The Zan'thik Dig
-					q( 33238),	-- Thick Tiger Haunch
-					q( 31208),	-- Venomous Intent
-					q( 31505),	-- Vess-Guard Duty
-					q( 31005),	-- Wakening Sickness
-					q( 31185),	-- Walking Dog
-					q( 31502),	-- Wing Clip
-					q( 31074),	-- Wood and Shade
-					q( 31182),	-- You Otter Know
+					q(31006),	-- The Klaxxi Council
+					q(31359),	-- The Kunchong Whisperer
+					q(31190),	-- The Mariner's Revenge
+					q(31599),	-- The Matriarch's Maw
+					q(31211),	-- The Poisoned Mind
+					q(31026),	-- The Root of the Problem
+					q(31269),	-- The Scale-Lord
+					q(31179),	-- The Scent of Blood
+					q(31656),	-- The Threat in the South
+					q(31677),	-- The Warlord's Ashes
+					q(31609),	-- The Wrath of Shek'zeer
+					q(31605),	-- The Zan'thik Dig
+					q(33238),	-- Thick Tiger Haunch
+					q(31208),	-- Venomous Intent
+					q(31505),	-- Vess-Guard Duty
+					q(31005),	-- Wakening Sickness
+					q(31185),	-- Walking Dog
+					q(31502),	-- Wing Clip
+					q(31074),	-- Wood and Shade
+					q(31182),	-- You Otter Know
 --]]
 					q(31008,  {  	-- Amber Arms
 						i(88122),
@@ -638,71 +638,71 @@ _.Zones =
 				}),
 				n(-2, {		-- Vendors
 					n(64599, {	-- Ambersmith Zikk <Klaxxi Quartermaster>
-						i( 89093),	-- Kovok's Riven Legguards
-						i( 89089),	-- Wind-Reaver Greaves
-						i( 89056),	-- Klaxxi Lash of the Consumer
-						i( 89057),	-- Klaxxi Lash of the Doubter
-						i( 89058),	-- Klaxxi Lash of the Winnower
-						i( 89059),	-- Klaxxi Lash of the Precursor
-						i( 89060),	-- Klaxxi Lash of the Borrower
-						i( 89061),	-- Klaxxi Lash of the Harbinger
-						i( 89062),	-- Klaxxi Lash of the Orator
-						i( 89063),	-- Klaxxi Lash of the Seeker
-						i( 89087),	-- Poisoncrafter's Kilt
-						i( 89088),	-- Leggings of the Poisoned Soul
-						i( 89090),	-- Dreadsworn Slayer Legs
-						i( 89091),	-- Swarmkeeper's Leggings
-						i( 89092),	-- Locust Swarm Legguards
-						i( 89055),	-- Klaxxi Lash of the Rescinder
-						i( 89094),	-- Ambersmith Legplates
-						i( 89095),	-- Legguards of the Unscathed
-						i( 89400),	-- Amber Sledge of Klaxxi'vess
-						i( 89392),	-- Amber Spine of Klaxxi'vess
-						i( 89394),	-- Amber Spear of Klaxxi'vess
-						i( 89395),	-- Amber Scythe of Klaxxi'vess
-						i( 89396),	-- Amber Espada of Klaxxi'vess
-						i( 89397),	-- Amber Saber of Klaxxi'vess
-						i( 89398),	-- Amber Flammard of Klaxxi'vess
-						i( 89399),	-- Amber Sprayer of Klaxxi'vess
-						i( 89393),	-- Amber Slicer of Klaxxi'vess
-						i( 89644),	-- Sudden Insight Bracers
-						i( 89645),	-- Cruel Mercy Bracers
-						i( 89646),	-- Runoff Wristguards
-						i( 89647),	-- Entombed Traitor's Wristguards
-						i( 89650),	-- Emperor's Riding Gloves
-						i( 89651),	-- Krompf's Fine-Tuning Gloves
-						i( 89670),	-- Inner Serenity Chestplate
-						i( 89671),	-- Chestplate of the Stone Lion
-						i( 89798),	-- Klaxxi Tabard
-						i( 85262),	-- Reins of the Amber Scorpion Mount
-						i( 83787, {	-- Plans: Ghost Reaver's Breastplate
+						i(89093),	-- Kovok's Riven Legguards
+						i(89089),	-- Wind-Reaver Greaves
+						i(89056),	-- Klaxxi Lash of the Consumer
+						i(89057),	-- Klaxxi Lash of the Doubter
+						i(89058),	-- Klaxxi Lash of the Winnower
+						i(89059),	-- Klaxxi Lash of the Precursor
+						i(89060),	-- Klaxxi Lash of the Borrower
+						i(89061),	-- Klaxxi Lash of the Harbinger
+						i(89062),	-- Klaxxi Lash of the Orator
+						i(89063),	-- Klaxxi Lash of the Seeker
+						i(89087),	-- Poisoncrafter's Kilt
+						i(89088),	-- Leggings of the Poisoned Soul
+						i(89090),	-- Dreadsworn Slayer Legs
+						i(89091),	-- Swarmkeeper's Leggings
+						i(89092),	-- Locust Swarm Legguards
+						i(89055),	-- Klaxxi Lash of the Rescinder
+						i(89094),	-- Ambersmith Legplates
+						i(89095),	-- Legguards of the Unscathed
+						i(89400),	-- Amber Sledge of Klaxxi'vess
+						i(89392),	-- Amber Spine of Klaxxi'vess
+						i(89394),	-- Amber Spear of Klaxxi'vess
+						i(89395),	-- Amber Scythe of Klaxxi'vess
+						i(89396),	-- Amber Espada of Klaxxi'vess
+						i(89397),	-- Amber Saber of Klaxxi'vess
+						i(89398),	-- Amber Flammard of Klaxxi'vess
+						i(89399),	-- Amber Sprayer of Klaxxi'vess
+						i(89393),	-- Amber Slicer of Klaxxi'vess
+						i(89644),	-- Sudden Insight Bracers
+						i(89645),	-- Cruel Mercy Bracers
+						i(89646),	-- Runoff Wristguards
+						i(89647),	-- Entombed Traitor's Wristguards
+						i(89650),	-- Emperor's Riding Gloves
+						i(89651),	-- Krompf's Fine-Tuning Gloves
+						i(89670),	-- Inner Serenity Chestplate
+						i(89671),	-- Chestplate of the Stone Lion
+						i(89798),	-- Klaxxi Tabard
+						i(85262),	-- Reins of the Amber Scorpion Mount
+						i(83787, {	-- Plans: Ghost Reaver's Breastplate
 							i(82975),	-- Ghost Reaver's Breastplate
 						}),
-						i( 83788, {	-- Plans: Ghost Reaver's Gauntlets
+						i(83788, {	-- Plans: Ghost Reaver's Gauntlets
 							i(82976),	-- Ghost Reaver's Gauntlets
 						}),
-						i( 83789, {	-- Plans: Living Steel Breastplate
+						i(83789, {	-- Plans: Living Steel Breastplate
 							i(82977),	-- Living Steel Breastplate
 						}),
-						i( 83790, {	-- Plans: Living Steel Gauntlets
+						i(83790, {	-- Plans: Living Steel Gauntlets
 							i(82978),	-- Living Steel Gauntlets
 						}),
-						i( 83791, {	-- Plans: Breastplate of Ancient Steel
+						i(83791, {	-- Plans: Breastplate of Ancient Steel
 							i(82979),	-- Breastplate of Ancient Steel
 						}),
-						i( 83792, {	-- Plans: Gauntlets of Ancient Steel
+						i(83792, {	-- Plans: Gauntlets of Ancient Steel
 							i(82980),	-- Gauntlets of Ancient Steel
 						}),
-						i( 84197, {	-- Plans: Masterwork Forgewire Axe
+						i(84197, {	-- Plans: Masterwork Forgewire Axe
 							i(82970),	-- Masterwork Forgewire Axe
 						}),
-						i( 84198, {	-- Plans: Masterwork Ghost Shard
+						i(84198, {	-- Plans: Masterwork Ghost Shard
 							i(82974),	-- Masterwork Ghost Shard
 						}),
-						i( 84217, {	-- Plans: Masterwork Phantasmal Hammer
+						i(84217, {	-- Plans: Masterwork Phantasmal Hammer
 							i(82972),	-- Masterwork Phantasmal Hammer
 						}),
-						i( 84218, {	-- Plans: Masterwork Spiritblade Decimator
+						i(84218, {	-- Plans: Masterwork Spiritblade Decimator
 							i(82973),	-- Masterwork Spiritblade Decimator
 						}),
 					}),

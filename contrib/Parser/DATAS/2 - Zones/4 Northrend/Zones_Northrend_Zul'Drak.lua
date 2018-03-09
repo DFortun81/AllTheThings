@@ -106,34 +106,34 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q( 12912),	-- A Great Storm Approaches
-					q( 12555),	-- A Tangled Skein
-					q( 12647),	-- An End to the Suffering
-					q( 12631),	-- An Invitation, of Sorts...
-					q( 12504),	-- Argent Crusade, We Are Leaving!
-					q( 12653),	-- Back to Har'koa
-					q( 12713),	-- Betrayal
-					q( 12567),	-- Blessing of Zim'Abwa
-					q( 12656),	-- Blessing of Zim'Rhuk
-					q( 12618),	-- Blessing of Zim'Torga
-					q( 12684),	-- Blood of a Dead God
-					q( 12627),	-- Breaking Through Jin'Alai
-					q( 12662),	-- Bringing Down Heb'Jin
-					q( 12632),	-- But First My Offspring
-					q( 12940),	-- Candy Bucket
-					q( 12941),	-- Candy Bucket
-					q( 12610),	-- Clipping Their Wings
-					q( 12638),	-- Close Call
-					q( 12606),	-- Cocooned!
-					q( 12604),	-- Congratulations!
-					q( 12730),	-- Convocation at Zol'Heb
-					q( 12583),	-- Crashed Sprayer
-					q( 12599),	-- Creature Comforts
-					q( 12894),	-- Crusader Forward Camp
-					q( 12664),	-- Dark Horizon
-					q( 12633),	-- Darkness Calling
-					q( 12552),	-- Death to the Necromagi
-					q( 12503),	-- Defend the Stand
+					q(12912),	-- A Great Storm Approaches
+					q(12555),	-- A Tangled Skein
+					q(12647),	-- An End to the Suffering
+					q(12631),	-- An Invitation, of Sorts...
+					q(12504),	-- Argent Crusade, We Are Leaving!
+					q(12653),	-- Back to Har'koa
+					q(12713),	-- Betrayal
+					q(12567),	-- Blessing of Zim'Abwa
+					q(12656),	-- Blessing of Zim'Rhuk
+					q(12618),	-- Blessing of Zim'Torga
+					q(12684),	-- Blood of a Dead God
+					q(12627),	-- Breaking Through Jin'Alai
+					q(12662),	-- Bringing Down Heb'Jin
+					q(12632),	-- But First My Offspring
+					q(12940),	-- Candy Bucket
+					q(12941),	-- Candy Bucket
+					q(12610),	-- Clipping Their Wings
+					q(12638),	-- Close Call
+					q(12606),	-- Cocooned!
+					q(12604),	-- Congratulations!
+					q(12730),	-- Convocation at Zol'Heb
+					q(12583),	-- Crashed Sprayer
+					q(12599),	-- Creature Comforts
+					q(12894),	-- Crusader Forward Camp
+					q(12664),	-- Dark Horizon
+					q(12633),	-- Darkness Calling
+					q(12552),	-- Death to the Necromagi
+					q(12503),	-- Defend the Stand
 					qa( 11755),	-- Desecrate this Fire!
 					qh( 13449),	-- Desecrate this Fire!
 					qa( 11766),	-- Desecrate this Fire!
@@ -144,115 +144,115 @@ _.Zones =
 					qh( 11581),	-- Desecrate this Fire!
 					qa( 13458),	-- Desecrate this Fire!
 					qa( 11786),	-- Desecrate this Fire!
-					q( 12710),	-- Disclosure
-					q( 12648),	-- Dressing Down
-					q( 13556),	-- Eggs for Dubra'Jin
-					q( 12708),	-- Enchanted Tiki Warriors
-					q( 12652),	-- Feedin' Da Goolz
-					q( 12792),	-- First Things First
-					q( 12668),	-- Foundation for Revenge
-					q( 12690),	-- Fuel for the Fire
-					q( 12527),	-- Gluttonous Lurkers
-					q( 31934),	-- Gutretch
-					q( 12914),	-- Gymer's Salvation
-					q( 12677),	-- Hazardous Materials
-					q( 12674),	-- Hell Hath a Fury
-					q( 12709),	-- Hexed Caches
+					q(12710),	-- Disclosure
+					q(12648),	-- Dressing Down
+					q(13556),	-- Eggs for Dubra'Jin
+					q(12708),	-- Enchanted Tiki Warriors
+					q(12652),	-- Feedin' Da Goolz
+					q(12792),	-- First Things First
+					q(12668),	-- Foundation for Revenge
+					q(12690),	-- Fuel for the Fire
+					q(12527),	-- Gluttonous Lurkers
+					q(31934),	-- Gutretch
+					q(12914),	-- Gymer's Salvation
+					q(12677),	-- Hazardous Materials
+					q(12674),	-- Hell Hath a Fury
+					q(12709),	-- Hexed Caches
 					qh( 13500),	-- Honor the Flame
 					qa( 13492),	-- Honor the Flame
-					q( 12665),	-- I Sense a Disturbance
-					q( 12902),	-- In Search Of Answers
-					q( 12661),	-- Infiltrating Voltarus
-					q( 12789),	-- Into the Breach!
-					q( 12673),	-- It Rolls Downhill
-					q( 29836),	-- Just Checkin'
-					q( 12630),	-- Kickin' Nass and Takin' Manes
-					q( 12557),	-- Lab Work
-					q( 12512),	-- Leave No One Behind
-					q( 12904),	-- Light Won't Grant Me Vengeance
-					q( 12901),	-- Making Something Out Of Nothing
-					q( 12554),	-- Malas the Corrupter
-					q( 12508),	-- Mopping Up
-					q( 12514),	-- Mushroom Mixer
-					q( 12646),	-- My Prophet, My Enemy
-					q( 12637),	-- Near Miss
-					q( 12505),	-- New Orders for Sergeant Stackhammer
-					q( 12675),	-- One Last Thing
-					q( 12883),	-- Orders From Drakuru
-					q( 12916),	-- Our Only Hope
-					q( 12596),	-- Pa'Troll
-					q( 12740),	-- Parachutes for the Argent Crusade
+					q(12665),	-- I Sense a Disturbance
+					q(12902),	-- In Search Of Answers
+					q(12661),	-- Infiltrating Voltarus
+					q(12789),	-- Into the Breach!
+					q(12673),	-- It Rolls Downhill
+					q(29836),	-- Just Checkin'
+					q(12630),	-- Kickin' Nass and Takin' Manes
+					q(12557),	-- Lab Work
+					q(12512),	-- Leave No One Behind
+					q(12904),	-- Light Won't Grant Me Vengeance
+					q(12901),	-- Making Something Out Of Nothing
+					q(12554),	-- Malas the Corrupter
+					q(12508),	-- Mopping Up
+					q(12514),	-- Mushroom Mixer
+					q(12646),	-- My Prophet, My Enemy
+					q(12637),	-- Near Miss
+					q(12505),	-- New Orders for Sergeant Stackhammer
+					q(12675),	-- One Last Thing
+					q(12883),	-- Orders From Drakuru
+					q(12916),	-- Our Only Hope
+					q(12596),	-- Pa'Troll
+					q(12740),	-- Parachutes for the Argent Crusade
 					qa( 11882),	-- Playing with Fire
-					q( 12650),	-- Plundering Their Own
-					q( 12510),	-- Precious Elemental Fluids
-					q( 12666),	-- Preparations for the Underworld
-					q( 12584),	-- Pure Evil
-					q( 12721),	-- Rampage
+					q(12650),	-- Plundering Their Own
+					q(12510),	-- Precious Elemental Fluids
+					q(12666),	-- Preparations for the Underworld
+					q(12584),	-- Pure Evil
+					q(12721),	-- Rampage
 					qa( 12770),	-- Reallocating Resources
-					q( 12635),	-- Relics of the Snow Leopard Goddess
-					q( 12663),	-- Reunited
-					q( 12676),	-- Sabotage
-					q( 12659),	-- Scalps!
-					q( 12640),	-- Sealing the Rifts
-					q( 12667),	-- Seek the Wind Serpent Goddess
-					q( 12672),	-- Setting the Stage
+					q(12635),	-- Relics of the Snow Leopard Goddess
+					q(12663),	-- Reunited
+					q(12676),	-- Sabotage
+					q(12659),	-- Scalps!
+					q(12640),	-- Sealing the Rifts
+					q(12667),	-- Seek the Wind Serpent Goddess
+					q(12672),	-- Setting the Stage
 					qh( 12763),	-- Shifting Priorities
-					q( 12643),	-- Silver Lining
-					q( 12799),	-- Siphoning the Spirits
-					q( 12553),	-- Skimmer Spinnerets
-					q( 12793),	-- Smoke on the Horizon
-					q( 12669),	-- So Far, So Bad
-					q( 12597),	-- Something for the Pain
-					q( 12642),	-- Spirit of Rhunok
-					q( 12609),	-- Stocking the Shelves
-					q( 12507),	-- Strange Mojo					
-					q( 12649),	-- Suit Up!
-					q( 13549),	-- Tails Up
-					q( 12795),	-- Taking a Stand
-					q( 13027),	-- Tauros the Elder
-					q( 12903),	-- That's What Friends Are For...
-					q( 12934),	-- The Amphitheater of Anguish: From Beyond!
-					q( 12936),	-- The Amphitheater of Anguish: Korrak the Bloodrager!
-					q( 12933),	-- The Amphitheater of Anguish: Magnataur!
-					q( 12935),	-- The Amphitheater of Anguish: Tuskarrmageddon!
-					q( 12932),	-- The Amphitheater of Anguish: Yggdras!
-					q( 12565),	-- The Blessing of Zim'Abwa
-					q( 12655),	-- The Blessing of Zim'Rhuk
-					q( 12615),	-- The Blessing of Zim'Torga
-					q( 12948),	-- The Champion of Anguish
-					q( 12974),	-- The Champion's Call!
-					q( 12562),	-- The Drakkari Do Not Need Water Elementals!
-					q( 12884),	-- The Ebon Watch
-					q( 12639),	-- The Frozen Earth
-					q( 12729),	-- The Gods Have Spoken
-					q( 12712),	-- The Key of Warlord Zol'Maz
-					q( 12622),	-- The Leaders at Jin'Alai
-					q( 12796),	-- The Magical Kingdom of Dalaran
-					q( 12919),	-- The Storm King's Vengeance
-					q( 12598),	-- Throwing Down
-					q( 12628),	-- To Speak With Har'koa
-					q( 12623),	-- To the Witch Doctor
-					q( 12516),	-- Too Much of a Good Thing
-					q( 12587),	-- Troll Patrol
-					q( 12588),	-- Troll Patrol: Can You Dig It?
-					q( 12594),	-- Troll Patrol: Couldn't Care Less
-					q( 12585),	-- Troll Patrol: Creature Comforts
-					q( 12568),	-- Troll Patrol: Done to Death
-					q( 12502),	-- Troll Patrol: High Standards
-					q( 12509),	-- Troll Patrol: Intestinal Fortitude
-					q( 12564),	-- Troll Patrol: Something for the Pain
-					q( 12541),	-- Troll Patrol: The Alchemist's Apprentice
-					q( 12591),	-- Troll Patrol: Throwing Down
-					q( 12519),	-- Troll Patrol: Whatdya Want, a Medal?
-					q( 12861),	-- Trolls Is Gone Crazy!
-					q( 12506),	-- Trouble at the Altar of Sseratus
-					q( 29833),	-- Unfinished Business
-					q( 12857),	-- Wanted: Ragemane's Flipper
-					q( 12707),	-- Wooly Justice
-					q( 12629),	-- You Can Run, But You Can't Hide
-					q( 12685),	-- You Reap What You Sow
-					q( 12686),	-- Zero Tolerance
-					q( 39208),	-- Zul'Drak	
+					q(12643),	-- Silver Lining
+					q(12799),	-- Siphoning the Spirits
+					q(12553),	-- Skimmer Spinnerets
+					q(12793),	-- Smoke on the Horizon
+					q(12669),	-- So Far, So Bad
+					q(12597),	-- Something for the Pain
+					q(12642),	-- Spirit of Rhunok
+					q(12609),	-- Stocking the Shelves
+					q(12507),	-- Strange Mojo					
+					q(12649),	-- Suit Up!
+					q(13549),	-- Tails Up
+					q(12795),	-- Taking a Stand
+					q(13027),	-- Tauros the Elder
+					q(12903),	-- That's What Friends Are For...
+					q(12934),	-- The Amphitheater of Anguish: From Beyond!
+					q(12936),	-- The Amphitheater of Anguish: Korrak the Bloodrager!
+					q(12933),	-- The Amphitheater of Anguish: Magnataur!
+					q(12935),	-- The Amphitheater of Anguish: Tuskarrmageddon!
+					q(12932),	-- The Amphitheater of Anguish: Yggdras!
+					q(12565),	-- The Blessing of Zim'Abwa
+					q(12655),	-- The Blessing of Zim'Rhuk
+					q(12615),	-- The Blessing of Zim'Torga
+					q(12948),	-- The Champion of Anguish
+					q(12974),	-- The Champion's Call!
+					q(12562),	-- The Drakkari Do Not Need Water Elementals!
+					q(12884),	-- The Ebon Watch
+					q(12639),	-- The Frozen Earth
+					q(12729),	-- The Gods Have Spoken
+					q(12712),	-- The Key of Warlord Zol'Maz
+					q(12622),	-- The Leaders at Jin'Alai
+					q(12796),	-- The Magical Kingdom of Dalaran
+					q(12919),	-- The Storm King's Vengeance
+					q(12598),	-- Throwing Down
+					q(12628),	-- To Speak With Har'koa
+					q(12623),	-- To the Witch Doctor
+					q(12516),	-- Too Much of a Good Thing
+					q(12587),	-- Troll Patrol
+					q(12588),	-- Troll Patrol: Can You Dig It?
+					q(12594),	-- Troll Patrol: Couldn't Care Less
+					q(12585),	-- Troll Patrol: Creature Comforts
+					q(12568),	-- Troll Patrol: Done to Death
+					q(12502),	-- Troll Patrol: High Standards
+					q(12509),	-- Troll Patrol: Intestinal Fortitude
+					q(12564),	-- Troll Patrol: Something for the Pain
+					q(12541),	-- Troll Patrol: The Alchemist's Apprentice
+					q(12591),	-- Troll Patrol: Throwing Down
+					q(12519),	-- Troll Patrol: Whatdya Want, a Medal?
+					q(12861),	-- Trolls Is Gone Crazy!
+					q(12506),	-- Trouble at the Altar of Sseratus
+					q(29833),	-- Unfinished Business
+					q(12857),	-- Wanted: Ragemane's Flipper
+					q(12707),	-- Wooly Justice
+					q(12629),	-- You Can Run, But You Can't Hide
+					q(12685),	-- You Reap What You Sow
+					q(12686),	-- Zero Tolerance
+					q(39208),	-- Zul'Drak	
 --]]					
 					q(12555,  {  -- A Tangled Skein
 						i(39806),

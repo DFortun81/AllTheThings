@@ -277,131 +277,131 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						n(-17, { 	-- Quests
-							q( 41767),	-- A Daring Rescue
-							qart(qg(101097, q( 44089))),	-- A Greater Arsenal
-							q( 43414),	-- A Hero's Weapon
-							q( 44099),	-- A Mutual Friend
-							q( 45180),	-- An Island of War
-							q( 41759),	-- An Unlikely Ally
-							q( 45989),	-- An Urgent Warning
-							q( 45021),	-- Answers Unknown
-							q( 42098),	-- Black Rook Hold: An Unclaimed Soul
-							q( 46237),	-- Bloodbringer's Missive
-							q( 41784),	-- Borrowed Time
-							q( 44228),	-- Champion Armaments
-							q( 41750),	-- Champion: Calydus
-							q( 41756),	-- Champion: Eredar Twins
-							q( 41753),	-- Champion: Jubeka Shadowbreaker
-							q( 46316),	-- Champion: Kanrethad Ebonlocke
-							q( 46047),	-- Champion: Kanrethad Ebonlocke
-							q( 41751),	-- Champion: Kira Iresoul
-							q( 41755),	-- Champion: Lulubelle Fizzlebang
-							q( 41748),	-- Champion: Ritssyn Flamescowl
-							q( 41754),	-- Champion: Shinfel Blightsworn
-							q( 41752),	-- Champion: Zinnin Smythe
-							q( 44275),	-- Court of Stars
-							q( 46020),	-- Crystal Containment
-							q( 42125),	-- Dark Whispers
-							q( 44273),	-- Darkheart Thicket
-							q( 44272),	-- Darkheart Thicket
-							q( 40218),	-- Debt Repaid
-							q( 47076),	-- Delivering Lost Knowledge
-							q( 45173),	-- Desperate Times
-							q( 42100),	-- Empowering the Soul
-							q( 44270),	-- Eye of Azshara
-							q( 44271),	-- Eye of Azshara
-							q( 46239),	-- Fel to the Core
-							q( 41785),	-- Finding Fizzlebang
-							q( 43100),	-- Finding the Scepter
-							q( 46784),	-- Further Advancement
-							q( 46150),	-- Furthering Knowledge
+							q(41767),	-- A Daring Rescue
+							qart(qg(101097, q(44089))),	-- A Greater Arsenal
+							q(43414),	-- A Hero's Weapon
+							q(44099),	-- A Mutual Friend
+							q(45180),	-- An Island of War
+							q(41759),	-- An Unlikely Ally
+							q(45989),	-- An Urgent Warning
+							q(45021),	-- Answers Unknown
+							q(42098),	-- Black Rook Hold: An Unclaimed Soul
+							q(46237),	-- Bloodbringer's Missive
+							q(41784),	-- Borrowed Time
+							q(44228),	-- Champion Armaments
+							q(41750),	-- Champion: Calydus
+							q(41756),	-- Champion: Eredar Twins
+							q(41753),	-- Champion: Jubeka Shadowbreaker
+							q(46316),	-- Champion: Kanrethad Ebonlocke
+							q(46047),	-- Champion: Kanrethad Ebonlocke
+							q(41751),	-- Champion: Kira Iresoul
+							q(41755),	-- Champion: Lulubelle Fizzlebang
+							q(41748),	-- Champion: Ritssyn Flamescowl
+							q(41754),	-- Champion: Shinfel Blightsworn
+							q(41752),	-- Champion: Zinnin Smythe
+							q(44275),	-- Court of Stars
+							q(46020),	-- Crystal Containment
+							q(42125),	-- Dark Whispers
+							q(44273),	-- Darkheart Thicket
+							q(44272),	-- Darkheart Thicket
+							q(40218),	-- Debt Repaid
+							q(47076),	-- Delivering Lost Knowledge
+							q(45173),	-- Desperate Times
+							q(42100),	-- Empowering the Soul
+							q(44270),	-- Eye of Azshara
+							q(44271),	-- Eye of Azshara
+							q(46239),	-- Fel to the Core
+							q(41785),	-- Finding Fizzlebang
+							q(43100),	-- Finding the Scepter
+							q(46784),	-- Further Advancement
+							q(46150),	-- Furthering Knowledge
 							qh( 44254),	-- Gazing Into Oblivion
-							q( 46240),	-- Give Me Fuel, Give Me Fire
-							q( 46238),	-- If You Build It
-							q( 42603),	-- Information at Any Cost
-							q( 45794),	-- Informing the Council
-							q( 43908),	-- Into the Nightmare: Fall of Cenarius
-							q( 43904),	-- Into the Nightmare: Fall of Cenarius
-							q( 43902),	-- Into the Nightmare: Fall of Cenarius
-							q( 43906),	-- Into the Nightmare: Fall of Cenarius
-							q( 43549),	-- Into the Nightmare: Il'gynoth
-							q( 43548),	-- Into the Nightmare: Il'gynoth
-							q( 43546),	-- Into the Nightmare: Il'gynoth
-							q( 43547),	-- Into the Nightmare: Il'gynoth
-							q( 43905),	-- Into the Nightmare: Xavius
-							q( 43907),	-- Into the Nightmare: Xavius
-							q( 43903),	-- Into the Nightmare: Xavius
-							q( 43909),	-- Into the Nightmare: Xavius
-							q( 45990),	-- Investigate the Broken Shore
-							q( 42103),	-- Let it Feed
-							q( 41793),	-- Lulubelle on Loan
-							q( 41769),	-- Mad Ernie the Alchemist
-							q( 44267),	-- Maw of Souls
-							q( 44266),	-- Maw of Souls
-							q( 44265),	-- Neltharion's Lair
-							q( 43554),	-- Neltharion's Lair
-							q( 44264),	-- Neltharion's Lair
-							q( 44268),	-- Odyn's Challenge
-							q( 43509),	-- Odyn's Challenge
-							q( 44269),	-- Odyn's Challenge
-							q( 42102),	-- One Who's Worthy
-							q( 40821),	-- Power Overwhelming
-							q( 40823),	-- Rebuilding the Council
-							q( 41798),	-- Recruiting More Troops
-							q( 41797),	-- Recruiting The Troops
-							q( 44917),	-- Return to Karazhan: The Tower of Power
-							q( 42608),	-- Rise, Champions
-							q( 42517),	-- Ritual of Doom
-							q( 42128),	-- Ritual Reagents
-							q( 43254),	-- Ritual Ruination
-							q( 43895),	-- Sealing Fate: Gold
-							q( 42097),	-- Searching the Archives
-							q( 41796),	-- Selecting a Sixth
-							q( 41768),	-- Soul Beacon
-							q( 41795),	-- Summoning the Sisters
-							q( 42601),	-- Tech It Up A Notch
-							q( 44263),	-- The Arcway
-							q( 46242),	-- The Dreadlord's Calling
-							q( 40731),	-- The Heart of the Dreadscar
-							q( 44276),	-- The Lord of Black Rook Hold
-							q( 44277),	-- The Lord of Black Rook Hold
+							q(46240),	-- Give Me Fuel, Give Me Fire
+							q(46238),	-- If You Build It
+							q(42603),	-- Information at Any Cost
+							q(45794),	-- Informing the Council
+							q(43908),	-- Into the Nightmare: Fall of Cenarius
+							q(43904),	-- Into the Nightmare: Fall of Cenarius
+							q(43902),	-- Into the Nightmare: Fall of Cenarius
+							q(43906),	-- Into the Nightmare: Fall of Cenarius
+							q(43549),	-- Into the Nightmare: Il'gynoth
+							q(43548),	-- Into the Nightmare: Il'gynoth
+							q(43546),	-- Into the Nightmare: Il'gynoth
+							q(43547),	-- Into the Nightmare: Il'gynoth
+							q(43905),	-- Into the Nightmare: Xavius
+							q(43907),	-- Into the Nightmare: Xavius
+							q(43903),	-- Into the Nightmare: Xavius
+							q(43909),	-- Into the Nightmare: Xavius
+							q(45990),	-- Investigate the Broken Shore
+							q(42103),	-- Let it Feed
+							q(41793),	-- Lulubelle on Loan
+							q(41769),	-- Mad Ernie the Alchemist
+							q(44267),	-- Maw of Souls
+							q(44266),	-- Maw of Souls
+							q(44265),	-- Neltharion's Lair
+							q(43554),	-- Neltharion's Lair
+							q(44264),	-- Neltharion's Lair
+							q(44268),	-- Odyn's Challenge
+							q(43509),	-- Odyn's Challenge
+							q(44269),	-- Odyn's Challenge
+							q(42102),	-- One Who's Worthy
+							q(40821),	-- Power Overwhelming
+							q(40823),	-- Rebuilding the Council
+							q(41798),	-- Recruiting More Troops
+							q(41797),	-- Recruiting The Troops
+							q(44917),	-- Return to Karazhan: The Tower of Power
+							q(42608),	-- Rise, Champions
+							q(42517),	-- Ritual of Doom
+							q(42128),	-- Ritual Reagents
+							q(43254),	-- Ritual Ruination
+							q(43895),	-- Sealing Fate: Gold
+							q(42097),	-- Searching the Archives
+							q(41796),	-- Selecting a Sixth
+							q(41768),	-- Soul Beacon
+							q(41795),	-- Summoning the Sisters
+							q(42601),	-- Tech It Up A Notch
+							q(44263),	-- The Arcway
+							q(46242),	-- The Dreadlord's Calling
+							q(40731),	-- The Heart of the Dreadscar
+							q(44276),	-- The Lord of Black Rook Hold
+							q(44277),	-- The Lord of Black Rook Hold
 							qa( 46241),	-- The Minions of Hel'nurath
-							q( 40729),	-- The New Blood
-							q( 43914),	-- The Nighthold: Elisande
-							q( 43911),	-- The Nighthold: Elisande
-							q( 43920),	-- The Nighthold: Elisande
-							q( 43917),	-- The Nighthold: Elisande
-							q( 43912),	-- The Nighthold: Gul'dan
-							q( 43915),	-- The Nighthold: Gul'dan
-							q( 43921),	-- The Nighthold: Gul'dan
-							q( 43918),	-- The Nighthold: Gul'dan
-							q( 43913),	-- The Nighthold: High Botanist Tel'arn
-							q( 43919),	-- The Nighthold: High Botanist Tel'arn
-							q( 43916),	-- The Nighthold: High Botanist Tel'arn
-							q( 43910),	-- The Nighthold: High Botanist Tel'arn
-							q( 43890),	-- The Nighthold: Vaults
-							q( 43889),	-- The Nighthold: Vaults
-							q( 43882),	-- The Nighthold: Vaults
-							q( 43891),	-- The Nighthold: Vaults
-							q( 40824),	-- The Path of the Dreadscar
-							q( 41156),	-- The Power Possessed
-							q( 40712),	-- The Power Possessed
-							q( 40684),	-- The Tome of Blighted Implements
-							q( 43984),	-- The Tome Opens Again
-							q( 46243),	-- The Wrathsteed of Xoroth
-							q( 45172),	-- To Battle!
-							q( 45027),	-- To the Broken Shore
-							q( 42602),	-- Troops in the Field
+							q(40729),	-- The New Blood
+							q(43914),	-- The Nighthold: Elisande
+							q(43911),	-- The Nighthold: Elisande
+							q(43920),	-- The Nighthold: Elisande
+							q(43917),	-- The Nighthold: Elisande
+							q(43912),	-- The Nighthold: Gul'dan
+							q(43915),	-- The Nighthold: Gul'dan
+							q(43921),	-- The Nighthold: Gul'dan
+							q(43918),	-- The Nighthold: Gul'dan
+							q(43913),	-- The Nighthold: High Botanist Tel'arn
+							q(43919),	-- The Nighthold: High Botanist Tel'arn
+							q(43916),	-- The Nighthold: High Botanist Tel'arn
+							q(43910),	-- The Nighthold: High Botanist Tel'arn
+							q(43890),	-- The Nighthold: Vaults
+							q(43889),	-- The Nighthold: Vaults
+							q(43882),	-- The Nighthold: Vaults
+							q(43891),	-- The Nighthold: Vaults
+							q(40824),	-- The Path of the Dreadscar
+							q(41156),	-- The Power Possessed
+							q(40712),	-- The Power Possessed
+							q(40684),	-- The Tome of Blighted Implements
+							q(43984),	-- The Tome Opens Again
+							q(46243),	-- The Wrathsteed of Xoroth
+							q(45172),	-- To Battle!
+							q(45027),	-- To the Broken Shore
+							q(42602),	-- Troops in the Field
 							qart(qg(101097, q(40495))),	-- Ulthalesh, the Deadwind Harvester
-							q( 44227),	-- Unleashing our Wrath
-							q( 44682),	-- Unparalleled Power
-							q( 44260),	-- Vault of the Wardens
-							q( 44261),	-- Vault of the Wardens
-							q( 42660),	-- Vault of the Wardens: Matters of the Heart
-							q( 44259),	-- Violet Hold
-							q( 44258),	-- Violet Hold
-							q( 44058),	-- Volpin the Elusive
-							q( 45179),	-- Win the Crowd							
+							q(44227),	-- Unleashing our Wrath
+							q(44682),	-- Unparalleled Power
+							q(44260),	-- Vault of the Wardens
+							q(44261),	-- Vault of the Wardens
+							q(42660),	-- Vault of the Wardens: Matters of the Heart
+							q(44259),	-- Violet Hold
+							q(44258),	-- Violet Hold
+							q(44058),	-- Volpin the Elusive
+							q(45179),	-- Win the Crowd							
 							q(46243, { -- The Wrathsteed of Xoroth
 								["groups"] = {
 									{ ["mountID"] = 232412 }, -- Netherlord's Chaotic Wrathsteed

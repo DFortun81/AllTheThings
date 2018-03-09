@@ -13,7 +13,7 @@ _.Zones =
 						qg(36140, qa(14347)),	-- Hold the Line
 						qg(36616, qa(14434)),	-- Rut'theran Village
 						qg(36140, qa(14348)),	-- You Can't Take 'Em Alone
---						q( 14220),	-- This Is the End (REMOVED in Beta)
+--						q(14220),	-- This Is the End (REMOVED in Beta)
 					},
 					["races"] = {22},
 				}),
@@ -34,8 +34,8 @@ _.Zones =
 							qg(37195, qa(24627)),	-- At Our Doorstep
 --]]							
 							qg(37874, qa(24592, { -- Betrayal at Tempest's Reach
-								i( 55002),	-- Blue-Bloodied Boots
-								i( 55003),	-- Greymane Cloak
+								i(55002),	-- Blue-Bloodied Boots
+								i(55003),	-- Greymane Cloak
 								i(131378),	-- Blue-Bloodied Treads
 							})),
 --[[							
@@ -86,17 +86,17 @@ _.Zones =
 							qg(34850, qa(14078)),	-- Lockdown!
 --]]							
 							qg(37822, qa(24616, { -- Losing Your Tail
-								i( 54999),	-- Seryl's Robes
-								i( 55000),	-- Hightailing Leggings
-								i( 55001),	-- Hotfoot Boots
+								i(54999),	-- Seryl's Robes
+								i(55000),	-- Hightailing Leggings
+								i(55001),	-- Hotfoot Boots
 								i(131380),	-- Hightailing Greaves
 							})),
 --							qg(35378, qa(14214)),	-- Message to Greymane
 							qg(37195, qa(24593, { -- Neither Human Nor Beast
-								i( 52942),	-- Staff of Earned Tranquility
-								i( 66439),	-- Cry of the Wolf
-								i( 66660),	-- Hammer of Controlled Fury
-								i( 66876),	-- Sharp Edge of Balance
+								i(52942),	-- Staff of Earned Tranquility
+								i(66439),	-- Cry of the Wolf
+								i(66660),	-- Hammer of Controlled Fury
+								i(66876),	-- Sharp Edge of Balance
 								i(133697),	-- Sharpened Wolf's Touch
 								i(156985),	-- Staff of Deserved Tranquility 
 							})),
@@ -112,9 +112,9 @@ _.Zones =
 							qg(37783, qa(24676)),	-- Push Them Out
 --]]							
 							qg(37102, qa(24501, { -- Queen-Sized Troubles
-								i( 54996),	-- Rygna-Silk Leggings
-								i( 54997),	-- Arachnophobe's Breastplate
-								i( 54998),	-- Braided Gossamer Armbands
+								i(54996),	-- Rygna-Silk Leggings
+								i(54997),	-- Arachnophobe's Breastplate
+								i(54998),	-- Braided Gossamer Armbands
 								i(131369),	-- Arachnophobe's Chain Shirt
 							})),
 --[[							
@@ -192,8 +192,8 @@ _.Zones =
 							qg(37065, qa(24483)),	-- Stormglen
 --]]							
 							qg(37065, qa(24468, { -- Stranded at the Marsh
-								i( 54994),	-- Paramedic Bracers
-								i( 54995),	-- Hailwood Chestpiece
+								i(54994),	-- Paramedic Bracers
+								i(54995),	-- Hailwood Chestpiece
 								i(131368),	-- First Responder's Bindings
 							})),
 --[[							

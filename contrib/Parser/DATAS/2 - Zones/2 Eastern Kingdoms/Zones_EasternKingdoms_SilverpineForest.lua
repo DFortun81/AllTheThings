@@ -124,10 +124,10 @@ _.Zones =
 					}),
 					qh(27510, {	-- A Wolf in Bear's Clothing
 						["groups"] = {
-							i( 62884),	-- "Bear" Hide Boots
+							i(62884),	-- "Bear" Hide Boots
 							i(131678),	-- Inconspicuous Footguards
-							i( 62883),	-- Inconspicuous Pantaloons
-							i( 62885),	-- Unmistakable Gloves
+							i(62883),	-- Inconspicuous Pantaloons
+							i(62885),	-- Unmistakable Gloves
 						},
 						["qg"] = 45631,	-- High Warlord Cromush
 						["sourceQuestID"] = { 27484 },	-- Only One May Enter
@@ -146,10 +146,10 @@ _.Zones =
 					}),
 					qh(27601, { -- Cities in Dust
 						["groups"] = {
-							i( 62897),	-- Bracers of the Most Trusted
+							i(62897),	-- Bracers of the Most Trusted
 							i(131680),	-- Belt of Absolute Allegiance
-							i( 62896),	-- Belt of Beginnings
-							i( 62895),	-- Slippers of Unturned Loyalties
+							i(62896),	-- Belt of Beginnings
+							i(62895),	-- Slippers of Unturned Loyalties
 						},
 						["qg"] = 45617,	-- Lady Sylvanas Windrunner
 						["questSourceID"] = { 27594 }	-- On Her Majesty's Secret Service
@@ -173,10 +173,10 @@ _.Zones =
 					}),
 					qh(27094, {	-- Deeper into Darkness
 						["groups"] = {
-							i( 62850),	-- Drunken Style Bracers
+							i(62850),	-- Drunken Style Bracers
 							i(131640),	-- Rear Guard Bands
-							i( 62851),	-- Rear Guard Britches
-							i( 62849),	-- Skitterweb Glovelettes
+							i(62851),	-- Rear Guard Britches
+							i(62849),	-- Skitterweb Glovelettes
 						},
 						["sourceQuestID"] = { 27095 },	-- Skitterweb Menace
 					}),
@@ -217,10 +217,10 @@ _.Zones =
 					}),
 					qh(27226, {	-- Hair of the Dog
 						["groups"] = {
-							i( 62846),	-- Ale-Soaked Robes
+							i(62846),	-- Ale-Soaked Robes
 							i(131660),	-- Cord of the Sepulcher
-							i( 62847),	-- Sea Dog Belt
-							i( 62848),	-- Treads of the Sepulcher
+							i(62847),	-- Sea Dog Belt
+							i(62848),	-- Treads of the Sepulcher
 						},
 						["qg"] = 44917,	-- Warlord Torok
 						["sourceQuestID"] = { 27098 },	-- Lordaeron
@@ -231,7 +231,7 @@ _.Zones =
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuestID"] = { 27098 },	-- Lordaeron
 					}),
-					n( 45896, {	-- Marsh Crocolisk				
+					n(45896, {	-- Marsh Crocolisk				
 						["groups"] = {
 							i(61505, {	-- Partially Digested Head
 								qh(27574),	-- I Never Forget a Face
@@ -242,9 +242,9 @@ _.Zones =
 					qh(26998, {	-- Iterating Upon Success
 						["groups"] = {
 							i(131629),	-- Maggot-Ridden Greaves
-							i( 62835),	-- Maggot-Ridden Leggings
-							i( 62836),	-- Muckdweller Spear
-							i( 62834),	-- T'veen's Cloak
+							i(62835),	-- Maggot-Ridden Leggings
+							i(62836),	-- Muckdweller Spear
+							i(62834),	-- T'veen's Cloak
 						},
 						["qg"] = 44784,	-- High Apothecary Shana T'veen
 						["sourceQuestID"] = { 26992, 26995 },	-- Agony Abounds / Guts and Gore
@@ -286,10 +286,10 @@ _.Zones =
 					}),
 					qh(27195, {	-- Nowhere to Run
 						["groups"] = {
-							i( 62855),	-- Britches of Desperate Measures
-							i( 62854),	-- Mace of Calculated Loss
+							i(62855),	-- Britches of Desperate Measures
+							i(62854),	-- Mace of Calculated Loss
 							i(131652),	-- Trousers of Desperate Measures
-							i( 62856),	-- Underestimated Crossbow
+							i(62856),	-- Underestimated Crossbow
 						},
 						["qg"] = 45228,	-- Master Forteski
 						["sourceQuestID"] = { 27194 },	-- Cornered and Crushed
@@ -387,9 +387,9 @@ _.Zones =
 					}),
 					qh(27069, {	-- Steel Thunder
 						["groups"] = {
-							i( 62841),	-- Bloodfang Vest
-							i( 62840),	-- Sober Pup Wristbands
-							i( 62842),	-- Steel Thunder Belt
+							i(62841),	-- Bloodfang Vest
+							i(62840),	-- Sober Pup Wristbands
+							i(62842),	-- Steel Thunder Belt
 							i(131636),	-- Steel Thunder Chestbrace
 						},
 						["qg"] = 44916,	-- Admiral Hatcher
@@ -425,8 +425,8 @@ _.Zones =
 					o(205350, {	-- Horde Communication Panel
 						qh(27232, { 	-- The Waters Run Red...
 						["groups"] = {
-							i( 62853),	-- Blood Offering Platter
-							i( 62852),	-- Sabots of Red Waters
+							i(62853),	-- Blood Offering Platter
+							i(62852),	-- Sabots of Red Waters
 							i(131661),	-- Treads of Red Waters
 						},
 						["sourceQuestID"] = { 27231 },	-- Reinforcements from Fenris						
@@ -466,10 +466,10 @@ _.Zones =
 					o(205143, {	-- Abandoned Outhouse
 						qh(27045, { 	-- Waiting to Exsanguinate
 							["groups"] = {
-								i( 62833),	-- Cloak of Courage
+								i(62833),	-- Cloak of Courage
 								i(131634),	-- Grasps of the Survivor
-								i( 62831),	-- Treads of the Survivor
-								i( 62832),	-- Yorick's Bequest
+								i(62831),	-- Treads of the Survivor
+								i(62832),	-- Yorick's Bequest
 							},
 							["sourceQuestID"] = { 27039 },	-- Dangerous Intentions
 						}),
@@ -921,15 +921,15 @@ _.Zones =
 						}),
 						qh(27342, {	-- In Time, All Will Be Revealed
 							["groups"] = {
-								i( 62862),	-- Belmont's Bracers
-								i( 62861),	-- Wolfsbane Vest
-								i( 62860),	-- Watched Watcher's Slippers
+								i(62862),	-- Belmont's Bracers
+								i(62861),	-- Wolfsbane Vest
+								i(62860),	-- Watched Watcher's Slippers
 								i(131665),	-- Wolfsbane Harness
 							},
 							["qg"] = 45312,	-- Deathstalker Commander Belmont
 							["sourceQuestID"] = { 27290 },	-- To Forsaken Forward Command
 						}),
-						n( 45301, {	-- Korok the Colossus
+						n(45301, {	-- Korok the Colossus
 							i(60956, {	-- Korok's Second Head
 								qh(27322, { 	-- Korok the Colossus
 									["groups"] = {
@@ -975,9 +975,9 @@ _.Zones =
 						}),
 						qh(27438, {	-- The Great Escape (awards "Ruins of Gilneas" criteria for zone achievement)
 							["groups"] = {
-								i( 62874),	-- Treads of the True Plan
-								i( 62873),	-- Godfrey's Belt
-								i( 62872),	-- Cloak of Secret Purpose
+								i(62874),	-- Treads of the True Plan
+								i(62873),	-- Godfrey's Belt
+								i(62872),	-- Cloak of Secret Purpose
 								i(131677),	-- Godfrey's Waistband
 							},
 							["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
@@ -985,9 +985,9 @@ _.Zones =
 						}),
 						qh(27360, {	-- Vengeance for Our Soldiers
 							["groups"] = {
-								i( 62871),	-- War Blood Cloak
-								i( 62870),	-- Rutsak Carriers
-								i( 62869),	-- Submariner Killer
+								i(62871),	-- War Blood Cloak
+								i(62870),	-- Rutsak Carriers
+								i(62869),	-- Submariner Killer
 								i(131667),	-- War Blood Gloves
 							},
 							["qg"] = 45389,	-- Captain Rutsak
