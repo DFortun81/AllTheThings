@@ -10,11 +10,11 @@ _.Zones =
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(15895, q(  8867)),	-- Lunar Fireworks
+								qg(15895, q(8867)),	-- Lunar Fireworks
 								qg(15891, qh( 8873)),	-- The Lunar Festival
 								qg(15891, qh( 8874)),	-- The Lunar Festival
 								qg(15891, qh( 8875)),	-- The Lunar Festival
-								qg(15895, q(  8883)),	-- Valadar Starsong
+								qg(15895, q(8883)),	-- Valadar Starsong
 								q(8678, {	-- Wheathoof the Elder			
 									["groups"] = {			
 										-- i(21100),	-- Coin of Ancestry	
@@ -34,10 +34,10 @@ _.Zones =
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(37675, q( 24635)),	-- A Cloudlet of Classy Cologne
+								qg(37675, q(24635)),	-- A Cloudlet of Classy Cologne
 								qg(38044, qh(24614)),	-- A Gift for the High Chieftain
-								qg(37675, q( 24629)),	-- A Perfect Puff of Perfume
-								qg(37675, q( 24636)),	-- Bonbon Blitz
+								qg(37675, q(24629)),	-- A Perfect Puff of Perfume
+								qg(37675, q(24636)),	-- Bonbon Blitz
 								qg(38295, qh(24805)),	-- Uncommon Scents
 							}),
 							n(-2, { -- Vendors
@@ -96,16 +96,16 @@ _.Zones =
 										qa( 9325),	-- Stealing Thunder Bluff's Flame
 									}),
 								}),
-								qg(26221, q( 11917)),	-- Striking Back (16)
-								qg(26221, q( 11947)),	-- Striking Back (29)
-								qg(26221, q( 11948)),	-- Striking Back (39)
-								qg(26221, q( 11952)),	-- Striking Back (49)
-								qg(26221, q( 11953)),	-- Striking Back (56)
-								qg(26221, q( 11954)),	-- Striking Back (64)
+								qg(26221, q(11917)),	-- Striking Back (16)
+								qg(26221, q(11947)),	-- Striking Back (29)
+								qg(26221, q(11948)),	-- Striking Back (39)
+								qg(26221, q(11952)),	-- Striking Back (49)
+								qg(26221, q(11953)),	-- Striking Back (56)
+								qg(26221, q(11954)),	-- Striking Back (64)
 								qg(19176, qh(11971)),	-- The Spinner of Summer Tales
 								qg(26113, qh(11923)),	-- Torch Catching
 								qg(26113, qh(11922)),	-- Torch Tossing
-								qg(26221, q( 11886)),	-- Unusual Activity
+								qg(26221, q(11886)),	-- Unusual Activity
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
@@ -125,7 +125,7 @@ _.Zones =
 							n(-17, { 	-- Quests
 								qg(19176, qh(29400)),	-- A Season for Celebration
 								qh(12367),	-- Candy Bucket
-								qg( 6746, qh( 8360)),	-- Dancing for Marzipan
+								qg(6746, qh( 8360)),	-- Dancing for Marzipan
 								qg(19176, qh(11357)),	-- Masked Orphan Matron
 							}),
 						},
@@ -173,12 +173,12 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					qg( 3034, qh(27283, {	-- A Journey to Moonglade
+					qg(3034, qh(27283, {	-- A Journey to Moonglade
 						["groups"] = {
 						},
 						["classes"] = {11},
 					})),
-					qg( 3047, qh(27277, {	-- An Audience with Ureda
+					qg(3047, qh(27277, {	-- An Audience with Ureda
 						["groups"] = {
 						},
 						["classes"] = {8},
@@ -186,13 +186,13 @@ _.Zones =
 					qp185(qg(3026, qh(29364))),	-- Corn Mash
 					qg(34679, qh(14041)),	-- Cranberry Chutney
 					qp129(qg(3028, qh(29349))),	-- Craving Crayfish
-					qg( 3045, qh(27334, {	-- Dark Cleric Cecille
+					qg(3045, qh(27334, {	-- Dark Cleric Cecille
 						["groups"] = {
 						},
 						["classes"] = {5},
 						["races"] = {5},
 					})),
-					qg( 3441, qh( 1205)),	-- Deadmire
+					qg(3441, qh( 1205)),	-- Deadmire
 					qdg(qg(36648, qh(31036))),	-- Enemies Below
 					qg(43795, qh(27304, {	-- Follow the Sun
 						["groups"] = {
@@ -200,12 +200,12 @@ _.Zones =
 						["classes"] = {2},
 					})),
 					qp393(qg(3050, qh(  768))),	-- Gathering Leather
-					qg( 3042, qh(27281, {	-- Grezz Ragefist
+					qg(3042, qh(27281, {	-- Grezz Ragefist
 						["groups"] = {
 						},
 						["classes"] = {1},
 					})),
-					qg( 3039, qh(27278, {	-- Grimshot's Call
+					qg(3039, qh(27278, {	-- Grimshot's Call
 						["groups"] = {
 						},
 						["classes"] = {3},
@@ -223,14 +223,14 @@ _.Zones =
 						["classes"] = {9},
 					})),
 					qp185(qg(3026, qh(29362))),	-- "Magic" Mushrooms
-					qg( 3045, qh(28323)),	-- Meet with Brother Silverhallow
-					qg( 3045, qh(28304, {	-- Meet with Dark Cleric Cecille
+					qg(3045, qh(28323)),	-- Meet with Brother Silverhallow
+					qg(3045, qh(28304, {	-- Meet with Dark Cleric Cecille
 						["groups"] = {
 						},
 						["classes"] = {5},
 						["races"] = {5},
 					})),
-					qg( 3042, qh(28290, {	-- Meet with Grezz Ragefist
+					qg(3042, qh(28290, {	-- Meet with Grezz Ragefist
 						["groups"] = {
 						},
 						["classes"] = {1},
@@ -246,7 +246,7 @@ _.Zones =
 						["classes"] = {2},
 						["races"] = {10},
 					})),
-					qg( 3039, qh(28297, {	-- Meet with Ormak Grimshot
+					qg(3039, qh(28297, {	-- Meet with Ormak Grimshot
 						["groups"] = {
 						},
 						["classes"] = {3},
@@ -262,18 +262,18 @@ _.Zones =
 						},
 						["classes"] = {7},
 					})),
-					qg( 30458, qh(28307, {	-- Meet with Tyelis
+					qg(30458, qh(28307, {	-- Meet with Tyelis
 						["groups"] = {
 						},
 						["classes"] = {5},
 						["races"] = {10},
 					})),
-					qg( 3047, qh(28300, {	-- Meet with Ureda
+					qg(3047, qh(28300, {	-- Meet with Ureda
 						["groups"] = {
 						},
 						["classes"] = {8},
 					})),
-					qg( 3034, q( 28289, {	-- Moonglade Calls
+					qg(3034, q(28289, {	-- Moonglade Calls
 						["groups"] = {
 						},
 						["classes"] = {11},
@@ -282,15 +282,15 @@ _.Zones =
 					qp185(qg(3026, qh(29365))),	-- Perfectly Picked Portions
 					qp185(qg(3026, qh(29358))),	-- Pining for Nuts
 					qp129(qg(3028, qh(29345))),	-- Pond Predators
-					qg( 3978, qh( 2965)),	-- Portents of Uldum
+					qg(3978, qh( 2965)),	-- Portents of Uldum
 --]]					
-					qg( 4943, qh(27292, { -- Return to Krog
-						i( 33267),	-- Fleshripper
-						i( 33259),	-- Crimson Barbut
+					qg(4943, qh(27292, { -- Return to Krog
+						i(33267),	-- Fleshripper
+						i(33259),	-- Crimson Barbut
 						i(156977),	-- Serrated Gladius 
 					})),
 --[[					
-					qg( 2995, qh( 6364, {	-- Return to Varg
+					qg(2995, qh( 6364, {	-- Return to Varg
 						["groups"] = {
 						},
 						["races"]= {6},
@@ -312,8 +312,8 @@ _.Zones =
 						["classes"] = {5},
 						["races"] = {8},
 					})),
-					qp129(qg( 3028, qh(29354))),	-- Shiny Baubles
-					qg( 8359, qh( 6363, {	-- Tal the Wind Rider Master
+					qp129(qg(3028, qh(29354))),	-- Shiny Baubles
+					qg(8359, qh( 6363, {	-- Tal the Wind Rider Master
 						["groups"] = {
 						},
 						["races"]= {6},
@@ -326,12 +326,12 @@ _.Zones =
 					qg(34480, qh(14176)),	-- The Grateful Dead (HOLIDAY - Day of the Dead)
 					qp129(qg(3028, qh(29348))),	-- The Race to Restock
 					qp129(qg(3028, qh(29346))),	-- The Ring's the Thing
-					qg( 3045, qh(27331, {	-- The Seer's Call
+					qg(3045, qh(27331, {	-- The Seer's Call
 						["groups"] = {
 						},
 						["classes"] = {5},
 					})),
-					qg( 5543, qh(  264)),	-- Until Death Do Us Part
+					qg(5543, qh(  264)),	-- Until Death Do Us Part
 					qg(36648, qh(26397, {	-- Walk With The Earth Mother					
 						["groups"] = {
 						},

@@ -116,24 +116,24 @@ _.Zones =
 					qa( 33120),	-- A Curse Upon the Woods
 					qa( 33077),	-- A Grandmother's Remedy
 					qa( 33075),	-- A Hero's Welcome
-					q( 33266),	-- A Light in the Dark - Tracking Quest
+					q(33266),	-- A Light in the Dark - Tracking Quest
 					qa( 33419),	-- A Matter of Life and Death
 					qa( 39665),	-- A True Naval Commander
 					qa( 33795),	-- Across the Stars
-					q( 33910),	-- Aklana Rescue
+					q(33910),	-- Aklana Rescue
 					qa( 33082),	-- Ancestor's Memory
-					q( 35626),	-- Apprentice Artificer Andren
+					q(35626),	-- Apprentice Artificer Andren
 					qa( 35614),	-- Artificer Romuul
 					qa( 36948),	-- Auctioning for Parts
 					qa( 35014),	-- Blademoon Bloom
-					q( 34504),	-- Bloodthorn Cave
+					q(34504),	-- Bloodthorn Cave
 					qa( 34995),	-- Botani Beatdown
 					qa( 33111),	-- Bounty: Twisted Ancient
 					qa( 36271),	-- Breaking into the Trap Game
 					qa( 33331),	-- Captured Critters
 					qa( 33062),	-- Catching His Eye
 					qa( 33586),	-- Chasing Shadows
-					q( 37114),	-- Choluna
+					q(37114),	-- Choluna
 					qa( 34779),	-- Circle the Wagon
 					qa( 33269),	-- Cleaning Up Gul'var
 					qa( 33135),	-- Cleaning Up Gul'var
@@ -142,28 +142,28 @@ _.Zones =
 					qa( 33905),	-- Closing the Door
 					qa( 33788),	-- Cooking With Unstable Herbs
 					qa( 33786),	-- Crippled Caravan
-					q( 39721),	-- Culling the Crew
+					q(39721),	-- Culling the Crew
 					qh( 37994),	-- Dark Grimoire: Breaching the Barrier
 					qa( 37885),	-- Dark Grimoire: Breaching the Barrier
 					qh( 37884),	-- Dark Grimoire: The Final Ingredient
-					q( 37882),	-- Dark Grimoire: The First Ingredient
-					q( 37883),	-- Dark Grimoire: The Second Ingredient
+					q(37882),	-- Dark Grimoire: The First Ingredient
+					q(37883),	-- Dark Grimoire: The Second Ingredient
 					qa( 34043),	-- Darkest Night
 					qa( 33837),	-- Darkness Falls
 					qa( 34781),	-- Defenstrations
 					qa( 39404),	-- Destroying the Competition
 					qa( 37979),	-- Dream of Argus: The Crystal Reborn
 					qh( 37997),	-- Dream of Argus: The Crystal Reborn
-					q( 37978),	-- Dream of Argus: The Final Fragment
-					q( 37976),	-- Dream of Argus: The First Fragment
-					q( 37977),	-- Dream of Argus: The Second Fragment
+					q(37978),	-- Dream of Argus: The Final Fragment
+					q(37976),	-- Dream of Argus: The First Fragment
+					q(37977),	-- Dream of Argus: The Second Fragment
 					qa( 36189),	-- Easing into Lumberjacking
 					qa( 34786),	-- Engorged Goren
 					qa( 39666),	-- Equipping Our Fleet
 					qa( 33081),	-- Escape From Shaz'gul
 					qa( 34787),	-- Exarch Maladaar
 					qa( 33814),	-- Fast Expansion
-					q( 33323),	-- Finale - Tracking Quest
+					q(33323),	-- Finale - Tracking Quest
 					qa( 34582),	-- Finding a Foothold
 					qa( 35617),	-- Fiona
 					qa( 33787),	-- Fiona's Solution
@@ -176,7 +176,7 @@ _.Zones =
 					qa( 37332),	-- Fungal Bundle
 					qa( 33271),	-- Game of Thorns
 					qa( 35015),	-- Gestating Genesaur
-					q( 35618),	-- Gidwin Goldbraids
+					q(35618),	-- Gidwin Goldbraids
 					qa( 33461),	-- Gloomshade Game Hunter
 					qa( 33263),	-- Gloomshade Grove
 					qa( 33080),	-- Going Undercover
@@ -190,7 +190,7 @@ _.Zones =
 					qa( 33072),	-- Into Twilight
 					qa( 34780),	-- Invisible Ramparts
 					qa( 35176),	-- Keeping it Together
-					q( 33782),	-- Keeping the Balance					
+					q(33782),	-- Keeping the Balance					
 					qa( 34584),	-- Looking for Lumber
 					qa( 34876),	-- Loola's Lost Love
 					qa( 37087),	-- Lost in Transition
@@ -223,7 +223,7 @@ _.Zones =
 					qa( 34806),	-- Prune the Podlings
 					qa( 34646),	-- Qiana Moonshadow
 					qa( 34585),	-- Quakefist
-					q( 35628),	-- Rangari Chel
+					q(35628),	-- Rangari Chel
 					qa( 34897),	-- Rangari Roundup
 					qa( 34616),	-- Ravenous Ravens
 					qa( 34996),	-- Rotting Riverbeasts
@@ -248,9 +248,9 @@ _.Zones =
 					qh( 37093),	-- Talbuk Training: Great-Tusk
 					qh( 36917),	-- Taming a Talbuk
 					qa( 36911),	-- Taming a Talbuk
-					q( 35621),	-- Tarenar Sunstrike
+					q(35621),	-- Tarenar Sunstrike
 					qa( 33084),	-- The Big Haul
-					q( 34076),	-- The Burial Fields
+					q(34076),	-- The Burial Fields
 					qa( 33076),	-- The Clarity Elixir
 					qa( 34676),	-- The Critical Path
 					qa( 37183),	-- The Critical Path
@@ -258,29 +258,29 @@ _.Zones =
 					qa( 34054),	-- The Dark Side of the Moon
 					qa( 33078),	-- The Dark that Blinds Us
 					qa( 33256),	-- The Defense of Karabor
-					q( 33079),	-- The Demons Among Us - Alliance
+					q(33079),	-- The Demons Among Us - Alliance
 					qa( 34782),	-- The Exarch Council
 					qa( 33059),	-- The Fate of Karabor
 					qa( 33794),	-- The Great Salvation
-					q( 34496),	-- The Hills of Valuun
+					q(34496),	-- The Hills of Valuun
 					qa( 37322),	-- The Prophet's Final Message
 					qa( 33255),	-- The Righteous March
-					q( 34728),	-- The Shimmer Moor
+					q(34728),	-- The Shimmer Moor
 					qa( 35459),	-- The Southern Wilds
 					qa( 35450),	-- The Southern Wilds
 					qa( 35444),	-- The Southern Wilds
 					qa( 34790),	-- The Sting
 					qa( 34792),	-- The Traitor's True Name
 					qa( 33070),	-- Think of the Children!
-					q( 37113),	-- Thisalee Crow
+					q(37113),	-- Thisalee Crow
 					qa( 33116),	-- To Catch a Shadow
-					q( 37973),	-- Treasure Contract: The Artificer
+					q(37973),	-- Treasure Contract: The Artificer
 					qa( 36195),	-- Tree-i-cide
-					q( 34077),	-- Trouble to the South
+					q(34077),	-- Trouble to the South
 					qa( 35552),	-- Trust No One
 					qa( 36192),	-- Turning Timber into Profit
 					qa( 39067),	-- Upgrading The Fleet
-					q( 35629),	-- Vindicator Onaala
+					q(35629),	-- Vindicator Onaala
 					qa( 33834),	-- Wanted: Kliaa's Stinger
 					qa( 33833),	-- Wanted: Kuu'rat's Tusks
 					qa( 33836),	-- Wanted: Maa'run's Hoof

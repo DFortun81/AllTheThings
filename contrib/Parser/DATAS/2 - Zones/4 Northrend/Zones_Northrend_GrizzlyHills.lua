@@ -128,24 +128,24 @@ _.Zones =
 --[[				
 					qa( 12138),	-- ... Or Maybe We Don't
 					qh( 12198),	-- ... Or Maybe We Don't
-					q( 12279),	-- A Bear of an Appetite
+					q(12279),	-- A Bear of an Appetite
 					qa( 12220),	-- A Dark Influence
 					qh( 12176),	-- A Minor Substitution
 					qa( 12160),	-- A Name from the Past
 					qa( 12246),	-- A Possible Link
 					qh( 12229),	-- A Possible Link
 					qh( 12257),	-- A Show of Strength
-					q( 12411),	-- A Sister's Pledge
+					q(12411),	-- A Sister's Pledge
 					qa( 12310),	-- A Swift Response
 					qa( 12294),	-- A Tentative Pact
-					q( 12434),	-- Always Seeking Solvent
-					q( 12446),	-- Always Seeking Solvent
+					q(12434),	-- Always Seeking Solvent
+					q(12446),	-- Always Seeking Solvent
 					qa( 12295),	-- An Exercise in Diplomacy
 					qh( 12074),	-- An Expedient Ally
 					qh( 12165),	-- An Intriguing Plan
-					q( 12330),	-- Anatoly Will Talk
+					q(12330),	-- Anatoly Will Talk
 					qh( 12413),	-- Attack on Silverbrook
-					q( 13013),	-- Beldak the Elder
+					q(13013),	-- Beldak the Elder
 					qa( 12154),	-- Blackout
 					qh( 12170),	-- Blackriver Brawl
 					qa( 12444),	-- Blackriver Skirmish
@@ -157,8 +157,8 @@ _.Zones =
 					qh( 12947),	-- Candy Bucket
 					qa( 12128),	-- Check Up on Raegar
 					qa( 12247),	-- Children of Ursoc
-					q( 12137),	-- Chill Out, Mon
-					q( 12238),	-- Cleansing Drak'Tharon
+					q(12137),	-- Chill Out, Mon
+					q(12238),	-- Cleansing Drak'Tharon
 					qa( 12293),	-- Close the Deal
 					qh( 12315),	-- Crush Captain Brightwater!
 					qh( 12202),	-- Cultivating an Image
@@ -179,84 +179,84 @@ _.Zones =
 					qh( 12241),	-- Destroy the Sapling
 					qa( 12227),	-- Doing Your Duty
 					qa( 12314),	-- Down With Captain Zorna!
-					q( 12120),	-- Drak'aguul's Mallet
-					q( 12082),	-- Dun-da-Dun-tah!
+					q(12120),	-- Drak'aguul's Mallet
+					q(12082),	-- Dun-da-Dun-tah!
 					qa( 12217),	-- Eagle Eyes
 					qa( 12308),	-- Escape from Silverbrook
 					qh( 12453),	-- Eyes Above
-					q( 41783),	-- Fallen Offerings
-					q( 12329),	-- Fate and Coincidence
-					q( 11984),	-- Filling the Cages
-					q( 11981),	-- Find Kurun!
-					q( 12099),	-- Free at Last
+					q(41783),	-- Fallen Offerings
+					q(12329),	-- Fate and Coincidence
+					q(11984),	-- Filling the Cages
+					q(11981),	-- Find Kurun!
+					q(12099),	-- Free at Last
 					qh( 12196),	-- From the Ground Up
-					q( 12081),	-- Gavrock
+					q(12081),	-- Gavrock
 					qh( 12208),	-- Good Troll Hunting
 					qh( 12424),	-- Gorgonna
 					qh( 12175),	-- Gray Worg Hides
-					q( 13129),	-- Head Games
-					q( 12042),	-- Heart of the Ancients
+					q(13129),	-- Head Games
+					q(12042),	-- Heart of the Ancients
 					qa( 39207),	-- Hero's Call: Grizzly Hills
 					qa( 12158),	-- Hollowstone Mine
 					qa( 13489),	-- Honor the Flame
 					qh( 13497),	-- Honor the Flame
-					q( 12164),	-- Hour of the Worg
+					q(12164),	-- Hour of the Worg
 					qh( 12204),	-- In the Name of Loken
-					q( 11985),	-- Into the Breach
-					q( 12116),	-- It Takes Guts....
-					q( 12152),	-- Jin'arrak's End
+					q(11985),	-- Into the Breach
+					q(12116),	-- It Takes Guts....
+					q(12152),	-- Jin'arrak's End
 					qh( 12177),	-- Jun'ik's Coverup
 					qa( 12226),	-- Just Passing Through
 					qh( 12284),	-- Keep 'Em on Their Heels
 					qh( 12317),	-- Keep Them at Bay
 					qa( 12316),	-- Keep Them at Bay!
 					qa( 12289),	-- Kick 'Em While They're Down
-					q( 12094),	-- Latent Power
+					q(12094),	-- Latent Power
 					qa( 12296),	-- Life or Death
 					qa( 12292),	-- Local Support
 					qh( 12203),	-- Loken's Orders
 					qa( 12183),	-- Looking the Part
-					q( 13025),	-- Lunaro the Elder
+					q(13025),	-- Lunaro the Elder
 					qh( 12280),	-- Making Repairs
 					qh( 12423),	-- Mikhail's Journal
 					qa( 12225),	-- Mmm... Amberseeds!
 					qa( 12414),	-- Mounting Up
 					qa( 12027),	-- Mr. Floppy's Perilous Adventure
 					qh( 12412),	-- My Enemy's Friend
-					q( 12802),	-- My Heart is in Your Hands
-					q( 12113),	-- Nice to Meat You
+					q(12802),	-- My Heart is in Your Hands
+					q(12113),	-- Nice to Meat You
 					qa( 12299),	-- Northern Hospitality
 					qh( 12451),	-- Onward to Camp Oneqwah
-					q( 12327),	-- Out of Body Experience
+					q(12327),	-- Out of Body Experience
 					qh( 12288),	-- Overwhelmed!
 					qa( 12268),	-- Pieces Parts
 					qa( 11882),	-- Playing with Fire
 					qh( 12073),	-- Pounding the Iron
 					qa( 12185),	-- Put on Your Best Face for Loken
-					q( 11982),	-- Raining Down Destruction
-					q( 12070),	-- Rallying the Troops
+					q(11982),	-- Raining Down Destruction
+					q(12070),	-- Rallying the Troops
 					qa( 12770),	-- Reallocating Resources
 					qa( 12212),	-- Replenishing the Storehouse
 					qa( 12109),	-- Report to Gryan Stoutmantle... Again
 					qh( 12432),	-- Riding the Red Rocket
 					qa( 12437),	-- Riding the Red Rocket
-					q( 12093),	-- Runes of Compulsion
+					q(12093),	-- Runes of Compulsion
 					qh( 12425),	-- Ruuna the Blind
 					qa( 12161),	-- Ruuna the Blind
-					q( 12328),	-- Ruuna's Request
-					q( 12007),	-- Sacrifices Must be Made
-					q( 12134),	-- Sasha's Hunt
-					q( 12190),	-- Say Hello to My Little Friend
-					q( 12484),	-- Scourgekabob
-					q( 12037),	-- Search and Rescue
-					q( 12038),	-- Seared Scourge
-					q( 12029),	-- Seared Scourge
+					q(12328),	-- Ruuna's Request
+					q(12007),	-- Sacrifices Must be Made
+					q(12134),	-- Sasha's Hunt
+					q(12190),	-- Say Hello to My Little Friend
+					q(12484),	-- Scourgekabob
+					q(12037),	-- Search and Rescue
+					q(12038),	-- Seared Scourge
+					q(12029),	-- Seared Scourge
 					qa( 12222),	-- Secrets of the Flamebinders
-					q( 12121),	-- See You on the Other Side
+					q(12121),	-- See You on the Other Side
 					qh( 12433),	-- Seeking Solvent
 					qa( 12443),	-- Seeking Solvent
 					qh( 12763),	-- Shifting Priorities
-					q( 12483),	-- Shimmercap Stew
+					q(12483),	-- Shimmercap Stew
 					qh( 12270),	-- Shred the Alliance
 					qa( 12244),	-- Shredder Repair
 					qh( 12324),	-- Smoke 'Em Out
@@ -264,7 +264,7 @@ _.Zones =
 					qa( 11998),	-- Softening the Blow
 					qa( 12159),	-- Souls at Unrest
 					qa( 12014),	-- Steady as a Rock?
-					q( 11991),	-- Subject to Interpretation
+					q(11991),	-- Subject to Interpretation
 					qh( 12436),	-- Supplemental Income
 					qh( 12422),	-- Tactical Clemency
 					qa( 12216),	-- Take Their Rear!
@@ -280,10 +280,10 @@ _.Zones =
 					qa( 11986),	-- The Damaged Journal
 					qh( 12026),	-- The Damaged Journal
 					qh( 12213),	-- The Darkness Beneath
-					q( 41918),	-- The Dreamer Returns
+					q(41918),	-- The Dreamer Returns
 					qa( 12219),	-- The Failed World Tree
 					qa( 12010),	-- The Fate of Orlond
-					q( 41790),	-- The First Trial of Ursol
+					q(41790),	-- The First Trial of Ursol
 					qh( 12256),	-- The Flamebinders' Secrets
 					qa( 12511),	-- The Hills Have Us
 					qh( 12415),	-- The Horse Hollerer
@@ -295,23 +295,23 @@ _.Zones =
 					qa( 11988),	-- The Runic Keystone
 					qh( 12058),	-- The Runic Prophecies
 					qa( 11993),	-- The Runic Prophecies
-					q( 41791),	-- The Second Trial of Ursol
+					q(41791),	-- The Second Trial of Ursol
 					qa( 12255),	-- The Thane of Voldrune
 					qh( 12259),	-- The Thane of Voldrune
-					q( 41792),	-- The Third Trial of Ursol
+					q(41792),	-- The Third Trial of Ursol
 					qh( 12195),	-- The Unexpected 'Guest'
 					qa( 12215),	-- Them or Us!
-					q( 12114),	-- Therapy
+					q(12114),	-- Therapy
 					qa( 12223),	-- Thinning the Ranks
 					qh( 12487),	-- To Conquest Hold, But Be Careful!
-					q( 41782),	-- To The Hills
+					q(41782),	-- To The Hills
 					qa( 12210),	-- Troll Season!
-					q( 11989),	-- Truce?
+					q(11989),	-- Truce?
 					qa( 12003),	-- Uncovering the Tunnels
 					qh( 12236),	-- Ursoc, the Bear God
 					qa( 12249),	-- Ursoc, the Bear God
-					q( 11990),	-- Vial of Visions
-					q( 12068),	-- Voices From the Dust
+					q(11990),	-- Vial of Visions
+					q(12068),	-- Voices From the Dust
 					qh( 12207),	-- Vordrassil's Fall
 					qa( 12248),	-- Vordrassil's Sapling
 					qh( 12242),	-- Vordrassil's Seeds
@@ -319,8 +319,8 @@ _.Zones =
 					qh( 39206),	-- Warchief's Command: Grizzly Hills
 					qa( 12131),	-- We Have the Power
 					qh( 12197),	-- We Have the Power
-					q( 40647),	-- When Dreams Become Nightmares
-					q( 13030),	-- Whurain the Elder
+					q(40647),	-- When Dreams Become Nightmares
+					q(13030),	-- Whurain the Elder
 					qa( 12130),	-- Why Fabricate When You Can Appropriate?
 					qa( 12307),	-- Wolfsbane Root
 					qa( 12302),	-- Words of Warning		

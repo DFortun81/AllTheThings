@@ -48,111 +48,111 @@ _.Zones =
 --[[
 					n(-17, { 	-- Quests						
 						n(-34, {	-- World Quests
-							q( 48832),	-- Admiral Rel'var
-							q( 48837),	-- All-Seer Xanarian
-							q( 48931),	-- Behemoths Awakened
-							q( 49054),	-- Bloat
-							q( 48867),	-- Chief Alchemist Munculus
-							q( 48637),	-- Cleansing Fire
-							q( 48831),	-- Commander Texlaz
-							q( 48777),	-- Den of Fiends
-							q( 49055),	-- Earseeker
-							q( 48780),	-- Gladius
-							q( 48835),	-- Houndmaster Kerrax
-							q( 48830),	-- Inquisitor Vethroz
-							q( 48828),	-- Lieutenant Xakaar
-							q( 48983),	-- Mining Regulation
-							q( 49057),	-- Minixis
-							q( 48875),	-- Mix It Up
-							q( 48783),	-- Nobody Expects Them
-							q( 49058),	-- One-of-Many
-							q( 49056),	-- Pilfer
-							q( 48833),	-- Ritual Completion
-							q( 48958),	-- Ritual Interruption
-							q( 48526),	-- Scuttled
-							q( 48662),	-- Short Fuses
-							q( 48514),	-- Slumbering Behemoths
-							q( 48691),	-- Soul Chain
-							q( 48358),	-- Supplies Needed: Empyrium
-							q( 48360),	-- Supplies Needed: Fiendish Leather
-							q( 48374),	-- Supplies Needed: Lightweave Cloth
-							q( 48640),	-- The Immortal Squadron
-							q( 48870),	-- The Many-Faced Devourer
-							q( 48952),	-- Throw Them a Bone
-							q( 48827),	-- Varga
-							q( 48866),	-- Void Warden Valsuran
-							q( 49053),	-- Watcher
-							q( 48836),	-- Watcher Aival
-							q( 48624),	-- Who Let The Dogs Out?
-							q( 48349),	-- Work Order: Empyrium
-							q( 48359),	-- Work Order: Fiendish Leather
-							q( 48363),	-- Work Order: Florid Malachite
-							q( 48364),	-- Work Order: Hasselian
-							q( 48373),	-- Work Order: Lightweave Cloth
-							q( 48834),	-- Worldsplitter Skuul
-							q( 48829),	-- Wrath-Lord Yarez
+							q(48832),	-- Admiral Rel'var
+							q(48837),	-- All-Seer Xanarian
+							q(48931),	-- Behemoths Awakened
+							q(49054),	-- Bloat
+							q(48867),	-- Chief Alchemist Munculus
+							q(48637),	-- Cleansing Fire
+							q(48831),	-- Commander Texlaz
+							q(48777),	-- Den of Fiends
+							q(49055),	-- Earseeker
+							q(48780),	-- Gladius
+							q(48835),	-- Houndmaster Kerrax
+							q(48830),	-- Inquisitor Vethroz
+							q(48828),	-- Lieutenant Xakaar
+							q(48983),	-- Mining Regulation
+							q(49057),	-- Minixis
+							q(48875),	-- Mix It Up
+							q(48783),	-- Nobody Expects Them
+							q(49058),	-- One-of-Many
+							q(49056),	-- Pilfer
+							q(48833),	-- Ritual Completion
+							q(48958),	-- Ritual Interruption
+							q(48526),	-- Scuttled
+							q(48662),	-- Short Fuses
+							q(48514),	-- Slumbering Behemoths
+							q(48691),	-- Soul Chain
+							q(48358),	-- Supplies Needed: Empyrium
+							q(48360),	-- Supplies Needed: Fiendish Leather
+							q(48374),	-- Supplies Needed: Lightweave Cloth
+							q(48640),	-- The Immortal Squadron
+							q(48870),	-- The Many-Faced Devourer
+							q(48952),	-- Throw Them a Bone
+							q(48827),	-- Varga
+							q(48866),	-- Void Warden Valsuran
+							q(49053),	-- Watcher
+							q(48836),	-- Watcher Aival
+							q(48624),	-- Who Let The Dogs Out?
+							q(48349),	-- Work Order: Empyrium
+							q(48359),	-- Work Order: Fiendish Leather
+							q(48363),	-- Work Order: Florid Malachite
+							q(48364),	-- Work Order: Hasselian
+							q(48373),	-- Work Order: Lightweave Cloth
+							q(48834),	-- Worldsplitter Skuul
+							q(48829),	-- Wrath-Lord Yarez
 						}),						
-						q( 48075),	-- A Colorful Key
-						q( 48076),	-- A Crowning Achievement
-						q( 48041),	-- A Larger Cut
-						q( 48035),	-- Angling For a Better Strike
-						q( 48642),	-- Argussian Reach
-						q( 48639),	-- Army of the Light
-						q( 48039),	-- Balancing the Break
-						q( 49007),	-- Commander on Deck!
-						q( 48605),	-- Commander's Downfall
-						q( 48078),	-- Counterbalancing
-						q( 47891),	-- Dire News
-						q( 48038),	-- Don't Just Pick At It
-						q( 48055),	-- Empyrial Strength
-						q( 48034),	-- Empyrium Deposit Chunk
-						q( 48037),	-- Empyrium Seam Chunk
-						q( 48601),	-- Felfire Shattering
-						q( 47134),	-- Foiling the Legion's Jailbreak
-						q( 47994),	-- Forming a Bond
-						q( 49030),	-- Fragments of the Abyss
-						q( 48799),	-- Fuel of a Doomed World
-						q( 48636),	-- Fueling the Antoran Campaign
-						q( 48448),	-- Hindering the Legion War Machine
-						q( 48964),	-- Immortal Ace
-						q( 47104),	-- Imprisoned Inquisitor
-						q( 49189),	-- Intact Demon Eyes
-						q( 49029),	-- Invasion of Space
-						q( 49293),	-- Invasion Onslaught
-						q( 48513),	-- Invasion Point Offensive
-						q( 47182),	-- Long Overdue
-						q( 48074),	-- Looming Over Me
-						q( 49191),	-- Many More Intact Demon Eyes
+						q(48075),	-- A Colorful Key
+						q(48076),	-- A Crowning Achievement
+						q(48041),	-- A Larger Cut
+						q(48035),	-- Angling For a Better Strike
+						q(48642),	-- Argussian Reach
+						q(48639),	-- Army of the Light
+						q(48039),	-- Balancing the Break
+						q(49007),	-- Commander on Deck!
+						q(48605),	-- Commander's Downfall
+						q(48078),	-- Counterbalancing
+						q(47891),	-- Dire News
+						q(48038),	-- Don't Just Pick At It
+						q(48055),	-- Empyrial Strength
+						q(48034),	-- Empyrium Deposit Chunk
+						q(48037),	-- Empyrium Seam Chunk
+						q(48601),	-- Felfire Shattering
+						q(47134),	-- Foiling the Legion's Jailbreak
+						q(47994),	-- Forming a Bond
+						q(49030),	-- Fragments of the Abyss
+						q(48799),	-- Fuel of a Doomed World
+						q(48636),	-- Fueling the Antoran Campaign
+						q(48448),	-- Hindering the Legion War Machine
+						q(48964),	-- Immortal Ace
+						q(47104),	-- Imprisoned Inquisitor
+						q(49189),	-- Intact Demon Eyes
+						q(49029),	-- Invasion of Space
+						q(49293),	-- Invasion Onslaught
+						q(48513),	-- Invasion Point Offensive
+						q(47182),	-- Long Overdue
+						q(48074),	-- Looming Over Me
+						q(49191),	-- Many More Intact Demon Eyes
 						qa(49190),	-- More Intact Demon Eyes
-						q( 38805),	-- Ondri
-						q( 48042),	-- Order of Operations
-						q( 49031),	-- Out With The Inquisitors
-						q( 48973),	-- Paragon of Argussian Reach
-						q( 48974),	-- Paragon of the Army of the Light
-						q( 48036),	-- Precision Perfected
-						q( 48201),	-- Reinforce Light's Purchase
-						q( 48202),	-- Reinforce the Veiled Den
-						q( 46843),	-- Return to the Vindicaar
-						q( 48200),	-- Securing a Foothold
-						q( 47473),	-- Sizing Up The Opposition
-						q( 48929),	-- Sizing Up The Opposition
-						q( 47892),	-- Storming the Citadel
-						q( 48976),	-- Supplies From the Argussian Reach
-						q( 48977),	-- Supplies From the Army of the Light
-						q( 48912),	-- Supplying the Antoran Campaign
-						q( 48040),	-- Tainted Scraps
-						q( 48600),	-- Take the Edge Off
-						q( 49027),	-- Targets of Opportunity: Terminus
-						q( 48199),	-- The Burning Heart
-						q( 48203),	-- The Burning Throne
-						q( 49014),	-- The Burning Throne
-						q( 49445),	-- The Prime Exchange
-						q( 47889),	-- The Speaker Calls
-						q( 47287),	-- The Vindicaar Matrix Core
-						q( 48069),	-- The Wrench Calls
-						q( 48344),	-- We Have a Problem
-						q( 48461),	-- Where They Least Expect It
-						q( 49200),	-- Yet More Intact Demon Eyes
+						q(38805),	-- Ondri
+						q(48042),	-- Order of Operations
+						q(49031),	-- Out With The Inquisitors
+						q(48973),	-- Paragon of Argussian Reach
+						q(48974),	-- Paragon of the Army of the Light
+						q(48036),	-- Precision Perfected
+						q(48201),	-- Reinforce Light's Purchase
+						q(48202),	-- Reinforce the Veiled Den
+						q(46843),	-- Return to the Vindicaar
+						q(48200),	-- Securing a Foothold
+						q(47473),	-- Sizing Up The Opposition
+						q(48929),	-- Sizing Up The Opposition
+						q(47892),	-- Storming the Citadel
+						q(48976),	-- Supplies From the Argussian Reach
+						q(48977),	-- Supplies From the Army of the Light
+						q(48912),	-- Supplying the Antoran Campaign
+						q(48040),	-- Tainted Scraps
+						q(48600),	-- Take the Edge Off
+						q(49027),	-- Targets of Opportunity: Terminus
+						q(48199),	-- The Burning Heart
+						q(48203),	-- The Burning Throne
+						q(49014),	-- The Burning Throne
+						q(49445),	-- The Prime Exchange
+						q(47889),	-- The Speaker Calls
+						q(47287),	-- The Vindicaar Matrix Core
+						q(48069),	-- The Wrench Calls
+						q(48344),	-- We Have a Problem
+						q(48461),	-- Where They Least Expect It
+						q(49200),	-- Yet More Intact Demon Eyes
 					}),
 --]]					
 					n(-16, { 	-- Rares

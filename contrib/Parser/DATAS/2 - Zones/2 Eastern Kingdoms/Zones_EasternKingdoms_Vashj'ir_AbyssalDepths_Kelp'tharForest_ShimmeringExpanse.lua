@@ -92,13 +92,13 @@ _.Zones =
 							qg(41670, qh(25980, {  	-- A Standard Day for Azrajar
 								i(59636),
 							})),
-							qg(42197, q( 26143, {  	-- All that Rises
+							qg(42197, q(26143, {  	-- All that Rises
 								i(59609),
 								i(59608),
 								i(59610),
 							})),
 --[[
-							qg(, q( 26142)),   	-- Ascend No More!
+							qg(, q(26142)),   	-- Ascend No More!
 							qg(, qa(26181)),		-- Back to Darkbreak Cove
 							qg(, qh(26182)),  	-- Back to Tenebrous Cavern
 							qg(, qa(26103)),  	-- Bio-Fuel
@@ -117,7 +117,7 @@ _.Zones =
 							})),
 --[[							
 							qg(, qa(26018)),		-- Coldlights Out
-							qg(, q( 26140)),		-- Communing with the Ancient
+							qg(, q(26140)),		-- Communing with the Ancient
 --]]
 							qg(41600, qa(26193, {  	-- Defending the Rift
 								i(59604),
@@ -134,7 +134,7 @@ _.Zones =
 							qg(, qa(26132)),		-- Fiends from the Netherworld
 							qg(, qh(26133)),		-- Fiends from the Netherworld
 --]]
-							qg(41640, q( 26065,  {  	-- Free Wil'hai
+							qg(41640, q(26065,  {  	-- Free Wil'hai
 								i(59628),
 								i(59627),
 							})),
@@ -154,9 +154,9 @@ _.Zones =
 							})),
 --[[
 							qg(, qh(26090)),		-- I Brought You This Egg
-							qg(, q( 26072)),		-- Into the Totem
+							qg(, q(26072)),		-- Into the Totem
 --]]
-							qg(41600, q( 26111, {  	-- ... It Will Come
+							qg(41600, q(26111, {  	-- ... It Will Come
 								i(59618),
 							})),
 							qg(41910, qa(26080, {  	-- One Last Favor
@@ -198,10 +198,10 @@ _.Zones =
 								i(59629),
 							})),
 --[[
-							qg(, q( 26141)),		-- Runestones of Binding
-							qg(, q( 26096)),		-- Scalding Shrooms
-							qg(, q( 26124)),		-- Secure Seabrush (Drop-Quest - Alliance Sea-Scout - 42114)
-							qg(, q( 26125)), 		-- Secure Seabrush (given by questgiver -- either or with quest with same name????)
+							qg(, q(26141)),		-- Runestones of Binding
+							qg(, q(26096)),		-- Scalding Shrooms
+							qg(, q(26124)),		-- Secure Seabrush (Drop-Quest - Alliance Sea-Scout - 42114)
+							qg(, q(26125)), 		-- Secure Seabrush (given by questgiver -- either or with quest with same name????)
 							qg(, qa(25950)),		-- Sira'Kess Slaying
 							qg(, qh(25974)),		-- Sira'Kess Slaying
 							qg(, qa(26014)),		-- The Brothers Digsong
@@ -223,8 +223,8 @@ _.Zones =
 							qg(, qh(25982)),		-- Those Aren't Masks
 							qg(, qa(25975)),		-- Treasure Reclamation
 							qg(, qh(25976)),		-- Treasure Reclamation
-							qg(, q( 26154)),		-- Twilight Extermination
-							qg(, q( 26130)),		-- Unplug L'ghorek
+							qg(, q(26154)),		-- Twilight Extermination
+							qg(, q(26130)),		-- Unplug L'ghorek
 --]]
 						}),
 						n(-16, { -- Rares
@@ -345,12 +345,12 @@ _.Zones =
 --]]												
 						n(-17, { -- Quests
 --[[
-							qg(, q( 25732)),		-- A Bone To Pick
-							qg(, q( 25388)),		-- A Case of Crabs
-							qg(, q( 25638)),		-- A Desperate Plea
-							qg(, q( 25390)),		-- A Girl's Best Friend
-							qg(, q( 25389)),		-- A Taste For Tail
-							qg(, q( 25598)),		-- Ain't Too Proud to Beg
+							qg(, q(25732)),		-- A Bone To Pick
+							qg(, q(25388)),		-- A Case of Crabs
+							qg(, q(25638)),		-- A Desperate Plea
+							qg(, q(25390)),		-- A Girl's Best Friend
+							qg(, q(25389)),		-- A Taste For Tail
+							qg(, q(25598)),		-- Ain't Too Proud to Beg
 --]]
 							qg(40690, qa(25558, {  	-- All or Nothing (secondary QG ID 40737)
 								i(59804),
@@ -358,13 +358,13 @@ _.Zones =
 								i(59802),
 							})),
 --[[
-							qg(, q( 27687)),		-- An Opened Can of Whoop Gnash
+							qg(, q(27687)),		-- An Opened Can of Whoop Gnash
 --							qa(25497),		-- Back in the Saddle (In beta never added to game)
-							qg(, q( 25477)),		-- Better Late Than Dead
+							qg(, q(25477)),		-- Better Late Than Dead
 --]]
 							n(41183, {	-- Gilblingle
 								i(54639, {	-- Waterlogged Journal
-									q( 25503, {  	-- Blackfin's Booty
+									q(25503, {  	-- Blackfin's Booty
 										i(59781),
 										i(59780),
 										i(59779),
@@ -380,20 +380,20 @@ _.Zones =
 							qg(, qh(25948)),		-- Bring It On!
 							qg(, qa(25357)),		-- Buy Us Some Time
 							qg(, qh(25942)),		-- Buy Us Some Time
-							qg(, q( 25602)),		-- Can't Start a Fire Without a Spark
---							q( 25413),		-- Change of Plans (In beta never added to game)
+							qg(, q(25602)),		-- Can't Start a Fire Without a Spark
+--							q(25413),		-- Change of Plans (In beta never added to game)
 --]]
-							qg(41344, q( 25884, {  	-- Come Hell or High Water
+							qg(41344, q(25884, {  	-- Come Hell or High Water
 								i(59778),
 								i(59777),
 								i(59776),
 							})),
 --[[
-							qg(, q( 25657)),		-- Dah, Nunt.. Dah, Nunt...
+							qg(, q(25657)),		-- Dah, Nunt.. Dah, Nunt...
 							qg(, qa(25824)),		-- Debriefing
 							qg(, qh(26007)),		-- Debriefing
 --]]
-							qg(46458, q( 25743, {  	-- Decisions, Decisions
+							qg(46458, q(25743, {  	-- Decisions, Decisions
 								i(59787),
 								i(59786),
 								i(59785),
@@ -409,10 +409,10 @@ _.Zones =
 								i(59771),
 							})),
 --[[
-							qg(, q( 25670)),		-- DUN-dun-DUN-dun-DUN-dun
+							qg(, q(25670)),		-- DUN-dun-DUN-dun-DUN-dun
 							qg(, qh(25947)),		-- Finders, Keepers
 --							q(25666),		-- Getting Your Hands Dirty (In beta never added to game)
-							qg(, q( 25587)),		-- Gimme Shelter
+							qg(, q(25587)),		-- Gimme Shelter
 --]]
 							qg(41711, qh(25944, {  	-- Girding Our Loins
 								i(59806),
@@ -420,31 +420,31 @@ _.Zones =
 								i(59807),
 							})),
 --[[
-							qg(, q( 27685)),		-- Good Deed Left Undone
+							qg(, q(27685)),		-- Good Deed Left Undone
 							qg(, qh(25946)),		-- Helm's Deep
-							qg(, q( 25883)),		-- How Disarming
+							qg(, q(25883)),		-- How Disarming
 --]]
 							n(40276, {	-- Sabreclaw Skitterer
 								i(54345, {	-- Crumpled Treasure Map
-									q( 25467, {  	-- Kliklak's Craw
+									q(25467, {  	-- Kliklak's Craw
 										i(59798),
 									}),
 								}),
 							}),
 							n(41017, {	-- Gilblin Collector
 								i(55186, {	-- Lady La-La's Necklace
-									q( 25419, {  	-- Lady La-La's Medallion
+									q(25419, {  	-- Lady La-La's Medallion
 										i(59784),
 										i(59783),
 									}),
 								}),
 							}),
 --[[
-							qg(, q( 25358)),		-- Nerve Tonic
-							qg(, q( 25651)),		-- Oh, the Insanity!
-							qg(, q( 25547)),		-- On Our Own Terms
-							qg(, q( 27729)),		-- Once More, With Eeling
-							qg(, q( 25459)),		-- Ophidophobia
+							qg(, q(25358)),		-- Nerve Tonic
+							qg(, q(25651)),		-- Oh, the Insanity!
+							qg(, q(25547)),		-- On Our Own Terms
+							qg(, q(27729)),		-- Once More, With Eeling
+							qg(, q(25459)),		-- Ophidophobia
 							qg(, qh(27668)),		-- Pay Attention!
 							qg(, qa(25281)),		-- Pay It Forward
 							qg(, qh(25936)),		-- Pay It Forward
@@ -461,26 +461,26 @@ _.Zones =
 							qg(, qh(25941)),		-- Rest For the Weary
 							qg(, qa(24432)),		-- Sea Legs
 							qg(, qh(25929)),		-- Sea Legs
---							q( 35738),		-- Shallow End of the Gene Pool (In beta never added to game.)
---							q( 25498),		-- Shark Bait (In beta never added to game.)
-							qg(, q( 27699)),		-- Shark Weak
+--							q(35738),		-- Shallow End of the Gene Pool (In beta never added to game.)
+--							q(25498),		-- Shark Bait (In beta never added to game.)
+							qg(, q(27699)),		-- Shark Weak
 							qg(, qa(25812)),		-- Spelunking
 							qg(, qh(26000)),		-- Spelunking
---							q( 25636),		-- Starve a Fever, Feed a Cold (In beta never added to game.)
+--							q(25636),		-- Starve a Fever, Feed a Cold (In beta never added to game.)
 							qg(, qa(25564)),		-- Stormwind Elite Aquatic and Land Forces
---							q( 25737),		-- Tenuous Negotiatons (In beta never added to game.)
+--							q(25737),		-- Tenuous Negotiatons (In beta never added to game.)
 --]]
-							qg(41248, q( 25371, {  	-- The Abyssal Ride
+							qg(41248, q(25371, {  	-- The Abyssal Ride
 								i(54465),
 							})),
 							n(39918, {	-- Clacksnap Pincer
 								i(53053, {	--Tattered Treasure Map
-									q( 25377, {  	-- The Horde's Hoard
+									q(25377, {  	-- The Horde's Hoard
 										i(59788),
 									}),
 								}),
 							}),
---							qg(, q( 27708)),		-- The Warden's Time
+--							qg(, q(27708)),		-- The Warden's Time
 							qg(39887, qa(25545, {  	-- To Arms!
 								i(59809),
 								i(59808),
@@ -489,9 +489,9 @@ _.Zones =
 --[[
 							qg(, qa(25546)),		-- Traveling on Our Stomachs
 							qg(, qh(25943)),		-- Traveling on Our Stomachs
-							qg(, q( 25794)),		-- Undersea Sanctuary
-							qg(, q( 25887)),		-- Wake of Destruction
---							q( 25742),		-- What? This Old Thing? (In beta never added to game.)
+							qg(, q(25794)),		-- Undersea Sanctuary
+							qg(, q(25887)),		-- Wake of Destruction
+--							q(25742),		-- What? This Old Thing? (In beta never added to game.)
 							qg(, qa(25585)),		-- What? What? In My Gut...?
 							qg(, qh(26040)),		-- What? What? In My Gut...?
 --]]
@@ -1140,14 +1140,14 @@ _.Zones =
 							qg(, qa(26005)),	-- A Breath of Fresh Air
 							qg(, qh(26006)),	-- A Breath of Fresh Air
 --]]
-							qg(39876, q( 25215,  {  -- A Distracting Scent
+							qg(39876, q(25215,  {  -- A Distracting Scent
 								i(59764),
 								i(59763),
 								i(59762),
 							})),
 							n(40510, {	-- Fathom-Lord Zin'jatar
 								i(54614, {	-- Luminescent Pearl
-									q( 25442,  {  -- A Pearl of Wisdom
+									q(25442,  {  -- A Pearl of Wisdom
 										i(59752),
 										i(59751),
 										i(59750),
@@ -1156,7 +1156,7 @@ _.Zones =
 							}),
 --[[
 							qg(, qa(25535)),	-- A Powerful Need To Eat
-							qg(, q( 25471)),	-- Across the Great Divide
+							qg(, q(25471)),	-- Across the Great Divide
 --]]
 							qg(40644, qa(25581,  {  -- An Occupation of Time
 								i(59716),
@@ -1170,10 +1170,10 @@ _.Zones =
 							})),
 --[[
 							qg(, qa(25537)),	-- Art of Attraction
-							qg(, q( 25860)),	-- At All Costs
-							qg(, q( 25456)),	-- Back in One Piece
+							qg(, q(25860)),	-- At All Costs
+							qg(, q(25456)),	-- Back in One Piece
 --]]
-							qg(39226, q( 25164,  {  -- Backed Into a Corner
+							qg(39226, q(25164,  {  -- Backed Into a Corner
 								i(59767),
 								i(59766),
 								i(59765),
@@ -1188,16 +1188,16 @@ _.Zones =
 							qg(, qa(25919)),	-- Body Blows
 							qg(, qh(25990)),	-- Breaking Through
 							qg(, qa(25916)),	-- Breaking Through
-							qg(, q( 25658)),	-- Built to Last
-							qg(, q( 25858)),	-- By Her Lady's Word
+							qg(, q(25658)),	-- Built to Last
+							qg(, q(25858)),	-- By Her Lady's Word
 							qa(28983),	-- Candy Bucket
 							qh(28984),	-- Candy Bucket
-							q( 28982),	-- Candy Bucket
+							q(28982),	-- Candy Bucket
 							qg(, qh(25989)),	-- Capture the Crab
 							qg(, qa(25909)),	-- Capture the Crab
 							qg(, qa(25579)),	-- Caught Off-Guard
 							qg(, qh(25952)),	-- Caught Off-Guard
-							qg(, q( 25863)),	-- Chosen Burden
+							qg(, q(25863)),	-- Chosen Burden
 							qg(, qa(25539)),	-- Clamming Up
 							qg(, qa(25748)),	-- Clear Goals
 							qg(, qh(25959)),	-- Clear Goals
@@ -1213,7 +1213,7 @@ _.Zones =
 								i(59682),
 								i(59684),
 							})),
-							qg(40227, q( 25360,  {  -- Crabby Patrons
+							qg(40227, q(25360,  {  -- Crabby Patrons
 								i(59761),
 								i(59760),
 								i(59759),
@@ -1227,27 +1227,27 @@ _.Zones =
 							qg(, qh(25592)),	-- Deep Attraction
 							qg(, qa(25893)),	-- Desperate Plan
 							qg(, qh(25968)),	-- Desperate Plan
-							qg(, q( 25896)),	-- Devout Assembly
-							qg(, q( 25219)),	-- Don't be Shellfish
+							qg(, q(25896)),	-- Devout Assembly
+							qg(, q(25219)),	-- Don't be Shellfish
 							qg(, qh(25964)),	-- Fallen But Not Forgotten
 							qg(, qa(25753)),	-- Fallen But Not Forgotten
 --]]
-							qg(40221, q( 25440,  {  -- Fathom-Lord Zin'jatar
+							qg(40221, q(25440,  {  -- Fathom-Lord Zin'jatar
 								i(59755),
 								i(59754),
 								i(59753),
 							})),
 --[[
-							qg(, q( 25951)),	-- Final Judgment
+							qg(, q(25951)),	-- Final Judgment
 							qg(, qa(26219)),	-- Full Circle
 							qg(, qh(26221)),	-- Full Circle
 							qg(, qa(25754)),	-- Gauging Success
 							qg(, qh(25965)),	-- Gauging Success
-							qg(, q( 25629)),	-- Her Lady's Hand
+							qg(, q(25629)),	-- Her Lady's Hand
 							qg(, qh(25972)),	-- Honor and Privilege
 							qg(, qa(25898)),	-- Honor and Privilege
-							qg(, q( 29030)),	-- Honor the Flame
-							qg(, q( 29031)),	-- Honor the Flame
+							qg(, q(29030)),	-- Honor the Flame
+							qg(, q(29031)),	-- Honor the Flame
 --]]
 							qg(41541, qa(25918,  {  -- Hopelessly Gearless
 								i(59746),
@@ -1264,10 +1264,10 @@ _.Zones =
 							qg(, qa(25747)),	-- Looking Forward
 							qg(, qa(25892)),	-- Losing Ground
 							qg(, qh(25967)),	-- Losing Ground
-							qg(, q( 25900)),	-- Making Contact
-							qg(, q( 29738)),	-- Moonlance the Elder
-							qg(, q( 25890)),	-- Nespirah
-							qg(, q( 25859)),	-- No Trespass Forgiven
+							qg(, q(25900)),	-- Making Contact
+							qg(, q(29738)),	-- Moonlance the Elder
+							qg(, q(25890)),	-- Nespirah
+							qg(, q(25859)),	-- No Trespass Forgiven
 --]]
 							qg(40642, qa(25749,  {  -- Not Entirely Unprepared
 								i(59704),
@@ -1279,7 +1279,7 @@ _.Zones =
 								i(59700),
 								i(59699),
 							})),
---							qg(, q( 25659),	-- Not Soon Forgotten
+--							qg(, q(25659),	-- Not Soon Forgotten
 							qg(40639, qa(25538,  {  -- Odor Coater
 								i(59734),
 								i(59733),
@@ -1330,13 +1330,13 @@ _.Zones =
 --[[
 							qg(, qh(25962)),	-- Properly Inspired
 							qg(, qa(25751)),	-- Properly Inspired
-							qg(, q( 25619)),	-- Reoccupation
-							qg(, q( 25221)),	-- Rundown
-							qg(, q( 25861)),	-- Setting An Example
+							qg(, q(25619)),	-- Reoccupation
+							qg(, q(25221)),	-- Rundown
+							qg(, q(25861)),	-- Setting An Example
 							qg(, qh(25593)),	-- Shelled Salvation
-							qg(, q( 25222)),	-- Silver Tide Hollow
-							qg(, q( 25907)),	-- Slave Labor
-							qg(, q( 25220)),	-- Slippery Threat
+							qg(, q(25222)),	-- Silver Tide Hollow
+							qg(, q(25907)),	-- Slave Labor
+							qg(, q(25220)),	-- Slippery Threat
 --]]
 							qg(40919, qh(25595,  {  -- Something Edible
 								i(59724),
@@ -1351,7 +1351,7 @@ _.Zones =
 --[[
 							qg(, qh(25994)),	-- Still Valuable
 							qg(, qa(25920)),	-- Still Valuable
-							qg(, q( 25862)),	-- Stolen Property
+							qg(, q(25862)),	-- Stolen Property
 --]]
 							qg(40643, qa(25752,  {  -- Swift Action
 								i(59663),
@@ -1372,26 +1372,26 @@ _.Zones =
 --[[
 							qg(, qh(27394)),	-- The Call of the Blade
 							qg(, qa(27393)),	-- The Call of the Blade
-							qg(, q( 26191)),	-- The Culmination of Our Efforts
-							qg(, q( 25216)),	-- The Great Sambino
-							qg(, q( 25334)),	-- The Looming Threat
-							qg(, q( 25620)),	-- The Revered Lady							
-							qg(, q( 43644)),	-- To the Deeps
-							qg(, q( 25637)),	-- To the Fathom-Lord's Call
-							qg(, q( 25359)),	-- Toshe's Vengeance
+							qg(, q(26191)),	-- The Culmination of Our Efforts
+							qg(, q(25216)),	-- The Great Sambino
+							qg(, q(25334)),	-- The Looming Threat
+							qg(, q(25620)),	-- The Revered Lady							
+							qg(, q(43644)),	-- To the Deeps
+							qg(, q(25637)),	-- To the Fathom-Lord's Call
+							qg(, q(25359)),	-- Toshe's Vengeance
 --]]
-							qg(39882, q( 25217,  {  -- Totem Modification
+							qg(39882, q(25217,  {  -- Totem Modification
 								i(59756),
 								i(59758),
 								i(59757),
 							})),
 --[[
-							qg(, q( 25218)),	-- Undersea Inflation
+							qg(, q(25218)),	-- Undersea Inflation
 							qg(, qh(25971)),	-- Unfurling Plan
 							qg(, qa(25897)),	-- Unfurling Plan
 							qg(, qa(25583)),	-- Upon the Scene of Battle
 							qg(, qh(25956)),	-- Upon the Scene of Battle
-							qg(, q( 25439)),	-- Vengeful Heart
+							qg(, q(25439)),	-- Vengeful Heart
 --]]
 							qg(40919, qh(26135,  {  -- Visions of the Past: Rise from the Deep
 								i(59667),
@@ -1420,10 +1420,10 @@ _.Zones =
 								i(59688),
 							})),
 --[[
-							qg(, q( 25441)),	-- Vortex
+							qg(, q(25441)),	-- Vortex
 							qg(, qa(25922)),	-- Waking the Beast
 							qg(, qh(25996)),	-- Waking the Beast
-							qg(, q( 43645)),	-- Wavespeaker's Trail
+							qg(, q(43645)),	-- Wavespeaker's Trail
 							qg(, qa(25917)),	-- We Are Not Alone
 							qg(, qh(25991)),	-- We Are Not Alone
 --]]

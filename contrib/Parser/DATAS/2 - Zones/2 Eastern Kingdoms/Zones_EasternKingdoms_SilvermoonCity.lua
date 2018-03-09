@@ -123,13 +123,13 @@ _.Zones =
 				}),
 --[[				
 				n(-17, { 	-- Quests
-					q( 24635),	-- A Cloudlet of Classy Cologne
+					q(24635),	-- A Cloudlet of Classy Cologne
 					qh(24615),	-- A Gift for the Regent Lord of Quel'Thalas
-					q( 24629),	-- A Perfect Puff of Perfume
+					q(24629),	-- A Perfect Puff of Perfume
 					qh( 9339),	-- A Thief's Reward
 					qh( 9627),	-- Allegiance to the Horde
 					qh(27277),	-- An Audience with Ureda
-					q( 24636),	-- Bonbon Blitz
+					q(24636),	-- Bonbon Blitz
 					qh(12369),	-- Candy Bucket
 					qh(12370),	-- Candy Bucket
 					qh(27334),	-- Dark Cleric Cecille
@@ -142,11 +142,11 @@ _.Zones =
 					qh(27278),	-- Grimshot's Call
 					qh( 9328),	-- Hero of the Sin'dorei
 					qh(11966),	-- Incense for the Festival Scorchlings
-					q( 12012),	-- Inform the Elder
+					q(12012),	-- Inform the Elder
 					qa(29092),	-- Inform the Elder
 					qh(27335),	-- Journey to Orgrimmar
 					qh(27282),	-- Kranosh's Behest
-					q(  8867),	-- Lunar Fireworks
+					q(8867),	-- Lunar Fireworks
 					qh(28323),	-- Meet with Brother Silverhallow
 					qh(28304),	-- Meet with Dark Cleric Cecille
 					qh(28298),	-- Meet with Gordul
@@ -169,12 +169,12 @@ _.Zones =
 					qh( 9331),	-- Stealing Ironforge's Flame
 					qh( 9330),	-- Stealing Stormwind's Flame
 					qh(11933),	-- Stealing the Exodar's Flame
-					q( 11954),	-- Striking Back
-					q( 11917),	-- Striking Back
-					q( 11947),	-- Striking Back
-					q( 11948),	-- Striking Back
-					q( 11952),	-- Striking Back
-					q( 11953),	-- Striking Back
+					q(11954),	-- Striking Back
+					q(11917),	-- Striking Back
+					q(11947),	-- Striking Back
+					q(11948),	-- Striking Back
+					q(11952),	-- Striking Back
+					q(11953),	-- Striking Back
 					qh(27280),	-- The Earthbreaker Calls
 					qa( 8871),	-- The Lunar Festival
 					qh( 8874),	-- The Lunar Festival
@@ -187,8 +187,8 @@ _.Zones =
 					qh(11923),	-- Torch Catching
 					qh(11922),	-- Torch Tossing
 					qh(24805),	-- Uncommon Scents
-					q( 11886),	-- Unusual Activity
-					q(  8883),	-- Valadar Starsong
+					q(11886),	-- Unusual Activity
+					q(8883),	-- Valadar Starsong
 					qh(28572),	-- Warchief's Command: Arathi Highlands!
 					qh(28580),	-- Warchief's Command: Badlands!
 					qh(28667),	-- Warchief's Command: Burning Steppes!

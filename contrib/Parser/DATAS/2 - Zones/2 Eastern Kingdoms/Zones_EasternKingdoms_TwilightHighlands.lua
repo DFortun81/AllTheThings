@@ -134,16 +134,16 @@ _.Zones =
 				}),				
 				n(-17, { 	-- Quests
 --					qg(, qa(28001)),	-- A Coward's Due
-					qg(46513, q( 27745,  {  -- A Fiery Reunion
+					qg(46513, q(27745,  {  -- A Fiery Reunion
 						i(63711),
 						i(63710),
 						i(63709),
 					})),
 --[[					
-					qg(, q( 28191)),	-- A Fitting End
-					qg(, q( 29802)),	-- A Hidden Message
+					qg(, q(28191)),	-- A Fitting End
+					qg(, q(29802)),	-- A Hidden Message
 --]]
-					qg(46513, q( 27742,  {  -- A Little on the Side
+					qg(46513, q(27742,  {  -- A Little on the Side
 						i(63713),
 						i(63712),
 					})),
@@ -160,7 +160,7 @@ _.Zones =
 						i(68014),
 					})),
 --[[
-					qg(, q( 28171)),	-- And the Sky Streaked Red
+					qg(, q(28171)),	-- And the Sky Streaked Red
 					qg(, qh(28873)),	-- Another Maw to Feed
 --]]
 					qg(45167, qa(27537,  {  -- Any Portal in a Storm
@@ -179,14 +179,14 @@ _.Zones =
 					qg(, qh(27712)),	-- Back to the Elementium Depths
 					qg(, qh(28041)),	-- Bait and Throttle
 --]]
-					qg(49810, q( 28758,  {  -- Battle of Life and Death
+					qg(49810, q(28758,  {  -- Battle of Life and Death
 						i(63760),
 					})),
 --[[
 					qg(, qa(28864)),	-- Beer Run
 					qg(, qa(27514)),	-- Bird Down! Bird Down!
 --]]
-					qg(47902, q( 28173,  {  -- Blackout
+					qg(47902, q(28173,  {  -- Blackout
 						i(63759),
 						i(63758),
 						i(63757),
@@ -201,7 +201,7 @@ _.Zones =
 					qg(, qh(27584)),	-- Blood in the Surf
 					qg(, qh(27611)),	-- Blood on the Sand
 --]]
-					qg(45528, q( 27509,  {  -- Breach in the Defenses
+					qg(45528, q(27509,  {  -- Breach in the Defenses
 						i(63780),
 						i(63775),
 					})),
@@ -264,7 +264,7 @@ _.Zones =
 						i(63740),
 						i(63739),
 					})),
---					qg(, q( 29736)),	-- Darkfeather the Elder
+--					qg(, q(29736)),	-- Darkfeather the Elder
 					qg(43581, qh(26622,  {  -- Death to Mor'ghor
 						i(63884),
 						i(63883),
@@ -282,7 +282,7 @@ _.Zones =
 					qa(11755),	-- Desecrate this Fire!
 					qh(28943),	-- Desecrate this Fire!
 					qa(28944),	-- Desecrate this Fire!
-					qg(, q( 27377)),	-- Devoured
+					qg(, q(27377)),	-- Devoured
 --]]					
 					qg(45675, qh(27689,  {  -- Distract Them for Me
 						i(63729),
@@ -301,7 +301,7 @@ _.Zones =
 						i(63834),
 					})),
 --					qg(, qa(27643)),	-- Donnelly Dunwald
-					qg(45522, q( 27505,  {  -- Draconic Mending
+					qg(45522, q(27505,  {  -- Draconic Mending
 						i(63777),
 						i(63779),
 						i(63778),
@@ -331,10 +331,10 @@ _.Zones =
 					qg(, qh(28091)),	-- Easy Pickings
 					qg(, qa(28103)),	-- Easy Pickings
 					qg(, qh(26538)),	-- Emergency Aid
-					qg(, q( 27507)),	-- Encroaching Twilight
-					qg(, q( 28712)),	-- Enter the Dragon Queen
+					qg(, q(27507)),	-- Encroaching Twilight
+					qg(, q(28712)),	-- Enter the Dragon Queen
 					qg(, qa(27644)),	-- Eoin Dunwald
-					qg(, q( 27504)),	-- Even Dragons Bleed
+					qg(, q(27504)),	-- Even Dragons Bleed
 --]]					
 					qg(48993, qh(28589,  {  -- Everything But the Kitchen Sink
 						i(63864),
@@ -344,7 +344,7 @@ _.Zones =
 --[[
 					qg(, qa(28244)),	-- Eye Spy
 					qg(, qh(27955)),	-- Eye Spy
-					qg(, q( 27508)),	-- Far from the Nest
+					qg(, q(27508)),	-- Far from the Nest
 --]]
 					qg(48010, qa(27752,  {  -- Fight Like a Wildhammer
 						i(63819),
@@ -361,11 +361,11 @@ _.Zones =
 						i(63853),
 					})),
 --[[
-					qg(, q( 27661)),	-- Fire the Cannon
+					qg(, q(27661)),	-- Fire the Cannon
 					qg(, qa(27809)),	-- Firebeard Bellows
-					qg(, q( 29737)),	-- Firebeard the Elder
+					qg(, q(29737)),	-- Firebeard the Elder
 					qg(, qa(27621)),	-- Firebeard's Patrol
-					qg(, q( 28176)),	-- Following the Young Home
+					qg(, q(28176)),	-- Following the Young Home
 --]]
 					qg(45669, qa(27608,  {  -- Four Heads are Better than None
 						i(63747),
@@ -384,7 +384,7 @@ _.Zones =
 					})),
 --[[					
 					qg(, qh(27783)),	-- Garona Needs You
-					qg(, q( 31974)),	-- Goz Banefury
+					qg(, q(31974)),	-- Goz Banefury
 					qg(, qa(27657)),	-- Help from the Earthcaller
 					qg(, qh(27658)),	-- Help from the Earthcaller
 					qg(, qh(28594)),	-- Highbank, Crybank
@@ -397,7 +397,7 @@ _.Zones =
 					qg(, qh(28043)),	-- How to Maim Your Dragon
 					qg(, qh(28092)),	-- If The Key Fits
 					qg(, qa(28108)),	-- If The Key Fits
-					qg(, q( 27564)),	-- In Defense of the Redoubt
+					qg(, q(27564)),	-- In Defense of the Redoubt
 --]]
 					qg(43581, qh(26621,  {  -- Insurrection
 						i(63889),
@@ -428,7 +428,7 @@ _.Zones =
 					})),
 --[[
 					qg(, qa(28281)),	-- Last Stand at Thundermar
-					qg(, q( 27506)),	-- Life from Death
+					qg(, q(27506)),	-- Life from Death
 					qg(, qh(26549)),	-- Madness
 --]]
 					qg(46591, qa(28216,  {  -- Magmalord Falthazar
@@ -534,7 +534,7 @@ _.Zones =
 					})),
 --[[					
 					qg(, qh(28147)),	-- Purple is Your Color
-					qg(, q( 27300)),	-- Pushing Back
+					qg(, q(27300)),	-- Pushing Back
 --]]
 					qg(49439, qh(28584,  {  -- Quality Construction
 						i(63858),
@@ -546,14 +546,14 @@ _.Zones =
 					qg(, qa(28377)),	-- Rescue at Glopgut's Hollow
 					qg(, qh(26840)),	-- Return to the Highlands
 					qg(, qa(27515)),	-- Roots'll Do 'Er
-					qg(, q( 27744)),	-- Rune Ruination
+					qg(, q(27744)),	-- Rune Ruination
 					qg(, qa(27177)),	-- Salvage Operation
 					qg(, qh(26798)),	-- Saurfang Will be Pleased
 					qg(, qh(27610)),	-- Scouting the Shore
 					qg(, qa(27341)),	-- Scouting the Shore
 					qg(, qh(26786)),	-- Securing the Beach Head
 					qg(, qh(27586)),	-- Shells on the Sea Shore
-					qg(, q( 28175)),	-- Shining Through the Dark
+					qg(, q(28175)),	-- Shining Through the Dark
 					qg(, qa(27433)),	-- Shredderectomy
 					qg(, qa(27490)),	-- SI:7 Drop
 --]]
@@ -564,10 +564,10 @@ _.Zones =
 					})),
 --[[
 					qg(, qa(27642)),	-- Sifting Through The Wreckage
-					qg(, q( 27499)),	-- Signal the Attack
+					qg(, q(27499)),	-- Signal the Attack
 					qg(, qa(27588)),	-- Signal the Attack
 					qg(, qh(27590)),	-- Signal the Attack
-					qg(, q( 27302)),	-- Simple Solutions
+					qg(, q(27302)),	-- Simple Solutions
 --]]
 					qg(45171, qa(27200,  {  -- Siren's Song
 						i(63905),
@@ -602,22 +602,22 @@ _.Zones =
 					qg(, qa(28409)),	-- Something Brewed
 					qg(, qa(28411)),	-- Something Stewed
 					qg(, qa(28410)),	-- Something Stolen					
-					qg(, q( 27660)),	-- Spirit of the Loch
+					qg(, q(27660)),	-- Spirit of the Loch
 					qg(, qh(26539)),	-- Stalled Negotiations
 					qg(, qa(27808)),	-- Stubborn as a Doyle
 					qg(, qa(28280)),	-- Tear Them From the Sky!
 					qg(, qa(28211)),	-- Tempered in Elemental Flame
 					qg(, qa(28346)),	-- The Bachelor
 					qg(, qa(28407)),	-- The Bachelorette
-					qg(, q( 27866)),	-- The Crucible of Carnage: Calder's Creation!
-					qg(, q( 31206)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
-					qg(, q( 27862)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
-					qg(, q( 27861)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
-					qg(, q( 27863)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
+					qg(, q(27866)),	-- The Crucible of Carnage: Calder's Creation!
+					qg(, q(31206)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
+					qg(, q(27862)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
+					qg(, q(27861)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
+					qg(, q(27863)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
 					qg(, qa(27864)),	-- The Crucible of Carnage: The Deadly Dragonmaw!
-					qg(, q( 27867)),	-- The Crucible of Carnage: The Earl of Evisceration!
+					qg(, q(27867)),	-- The Crucible of Carnage: The Earl of Evisceration!
 --]]
-					qg(46935, q( 27868,  {  -- The Crucible of Carnage: The Twilight Terror!
+					qg(46935, q(27868,  {  -- The Crucible of Carnage: The Twilight Terror!
 						i(63790),
 						i(63792),
 						i(63788),
@@ -646,17 +646,17 @@ _.Zones =
 						i(63871),
 					})),
 --[[
-					qg(, q( 27376)),	-- The Maw of Iso'rath
+					qg(, q(27376)),	-- The Maw of Iso'rath
 					qg(, qa(27374)),	-- The Maw of Madness
 					qg(, qh(27583)),	-- The Northern Flank
 					qg(, qa(27804)),	-- The Only Homes We Have
 					qg(, qa(27538)),	-- The Perfect Poultice
 					qg(, qa(27811)),	-- The Scent of Battle
 					qg(, qh(27607)),	-- The Southern Flank
-					qg(, q( 27379)),	-- The Terrors of Iso'rath
+					qg(, q(27379)),	-- The Terrors of Iso'rath
 					qg(, qa(27545)),	-- The Way is Open
 					qg(, qh(27375)),	-- The Weeping Wound
-					qg(, q( 27378)),	-- The Worldbreaker
+					qg(, q(27378)),	-- The Worldbreaker
 					qg(, qa(28234)),	-- They Took Me Pants!
 					qg(, qh(28166)),	-- Thog's Nightlight
 --]]
@@ -667,7 +667,7 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuestID"] = { 29802 },	-- A Hidden Message
 					})),
---					qg(, q( 27299)),	-- Torn Ground
+--					qg(, q(27299)),	-- Torn Ground
 					qg(46318, qh(27747,  {  -- Total War
 						i(63816),
 						i(63815),
@@ -683,8 +683,8 @@ _.Zones =
 						i(63868),
 					})),
 --[[					
-					qg(, q( 27662)),	-- Unbinding
-					qg(, q( 27301)),	-- Unbroken
+					qg(, q(27662)),	-- Unbinding
+					qg(, q(27301)),	-- Unbroken
 					qg(, qh(27503)),	-- Up to the Citadel
 					qg(, qa(27502)),	-- Up to the Citadel
 					qg(, qa(28248)),	-- Victors' Point
@@ -709,7 +709,7 @@ _.Zones =
 					qg(, qa(27803)),	-- Welcome Relief
 					qg(, qa(28596)),	-- Welcome to Highbank!
 					qg(, qa(27641)),	-- While Meeting The Family
-					qg(, q( 27743)),	-- While We're Here
+					qg(, q(27743)),	-- While We're Here
 					qg(, qh(28149)),	-- Whispers in the Wind
 					qg(, qa(28655)),	-- Wild, Wild, Wildhammer Wedding
 					qg(, qh(28588)),	-- Wildhammer Infestation

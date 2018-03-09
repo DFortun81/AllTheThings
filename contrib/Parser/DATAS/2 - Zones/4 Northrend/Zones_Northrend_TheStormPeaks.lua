@@ -148,46 +148,46 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q( 44767),	-- A Celestial Invitation
-					q( 12908),	-- A Certain Prisoner
-					q( 12921),	-- A Change of Scenery
-					q( 12993),	-- A Colossal Threat
-					q( 12820),	-- A Delicate Touch
-					q( 12823),	-- A Flawless Plan
-					q( 12976),	-- A Monument to the Fallen
-					q( 13009),	-- A New Beginning
+					q(44767),	-- A Celestial Invitation
+					q(12908),	-- A Certain Prisoner
+					q(12921),	-- A Change of Scenery
+					q(12993),	-- A Colossal Threat
+					q(12820),	-- A Delicate Touch
+					q(12823),	-- A Flawless Plan
+					q(12976),	-- A Monument to the Fallen
+					q(13009),	-- A New Beginning
 					qa( 29074),	-- A Season for Celebration
 					qh( 29400),	-- A Season for Celebration
-					q( 12956),	-- A Spark of Hope
-					q( 12925),	-- Aberrations
+					q(12956),	-- A Spark of Hope
+					q(12925),	-- Aberrations
 					qa( 12871),	-- Aid from the Explorers' League
-					q( 12828),	-- Ample Inspiration
+					q(12828),	-- Ample Inspiration
 					qa( 12875),	-- An Experienced Guide
 					qa( 12870),	-- Ancient Relics
 					qh( 12882),	-- Ancient Relics
-					q( 12979),	-- Armor of Darkness
+					q(12979),	-- Armor of Darkness
 					qa( 12867),	-- Baby Stealers
-					q( 13424),	-- Back to the Pit
-					q( 12967),	-- Battling the Elements
-					q( 12832),	-- Bitter Departure
-					q( 12977),	-- Blowing Hodir's Horn
+					q(13424),	-- Back to the Pit
+					q(12967),	-- Battling the Elements
+					q(12832),	-- Bitter Departure
+					q(12977),	-- Blowing Hodir's Horn
 					qh( 11446),	-- Brewfest!
 					qa( 13448),	-- Candy Bucket
 					qh( 13471),	-- Candy Bucket
-					q( 13462),	-- Candy Bucket
-					q( 13461),	-- Candy Bucket
+					q(13462),	-- Candy Bucket
+					q(13461),	-- Candy Bucket
 					qh( 13548),	-- Candy Bucket
 					qh( 12920),	-- Catching up with Brann
 					qh( 13055),	-- Cave Medicine
 					qh( 13058),	-- Changing the Wind's Course
-					q( 12818),	-- Clean Up
-					q( 12856),	-- Cold Hearted
+					q(12818),	-- Clean Up
+					q(12856),	-- Cold Hearted
 					qa( 11356),	-- Costumed Orphan Matron
 					qh( 12927),	-- Data Mining
 					qa( 12860),	-- Data Mining
-					q( 13063),	-- Deemed Worthy
-					q( 13423),	-- Defending Your Title
-					q( 12824),	-- Demolitionist Extraordinaire
+					q(13063),	-- Deemed Worthy
+					q(13423),	-- Defending Your Title
+					q(12824),	-- Demolitionist Extraordinaire
 					qa( 11580),	-- Desecrate this Fire!
 					qh( 11745),	-- Desecrate this Fire!
 					qh( 11581),	-- Desecrate this Fire!
@@ -198,113 +198,113 @@ _.Zones =
 					qa( 13455),	-- Desecrate this Fire!
 					qa( 11755),	-- Desecrate this Fire!
 					qh( 11749),	-- Desecrate this Fire!
-					q( 12988),	-- Destroy the Forges!
-					q( 12906),	-- Discipline
+					q(12988),	-- Destroy the Forges!
+					q(12906),	-- Discipline
 					qh( 13038),	-- Distortions in Time
 					qh( 13000),	-- Emergency Measures
-					q( 12844),	-- Equipment Recovery
-					q( 13420),	-- Everfrost
-					q( 12907),	-- Examples to be Made
-					q( 12836),	-- Expression of Gratitude
-					q( 12978),	-- Facing the Storm
-					q( 13015),	-- Fargal the Elder
+					q(12844),	-- Equipment Recovery
+					q(13420),	-- Everfrost
+					q(12907),	-- Examples to be Made
+					q(12836),	-- Expression of Gratitude
+					q(12978),	-- Facing the Storm
+					q(13015),	-- Fargal the Elder
 					qa( 12986),	-- Fate of the Titans
-					q( 13046),	-- Feeding Arngrim
+					q(13046),	-- Feeding Arngrim
 					qa( 12874),	-- Fervor of the Frostborn
-					q( 12931),	-- Fighting Back
-					q( 12985),	-- Forging a Head
-					q( 12924),	-- Forging an Alliance
+					q(12931),	-- Fighting Back
+					q(12985),	-- Forging a Head
+					q(12924),	-- Forging an Alliance
 					qh( 13285),	-- Forging the Keystone
 					qa( 12879),	-- Fury of the Frostborn King
 					qh( 13273),	-- Going After the Core
-					q( 12851),	-- Going Bearback
-					q( 13028),	-- Graymane the Elder
-					q( 12991),	-- Hit Them Where it Hurts
-					q( 13559),	-- Hodir's Tribute
+					q(12851),	-- Going Bearback
+					q(13028),	-- Graymane the Elder
+					q(12991),	-- Hit Them Where it Hurts
+					q(13559),	-- Hodir's Tribute
 					qh( 13498),	-- Honor the Flame
 					qa( 13490),	-- Honor the Flame
-					q( 12981),	-- Hot and Cold
-					q( 12890),	-- If Size Mattered...
-					q( 12975),	-- In Memoriam
-					q( 12997),	-- Into the Pit
-					q( 12969),	-- Is That Your Goblin?
-					q( 13011),	-- Jormuttar is Soo Fat...
-					q( 12819),	-- Just Around the Corner
-					q( 12822),	-- Know No Fear
-					q( 13010),	-- Krolmir, Hammer of Storms
-					q( 12846),	-- Leave No Goblin Behind
-					q( 13062),	-- Lok'lira's Parting Gift
-					q( 13035),	-- Loken's Lackeys
+					q(12981),	-- Hot and Cold
+					q(12890),	-- If Size Mattered...
+					q(12975),	-- In Memoriam
+					q(12997),	-- Into the Pit
+					q(12969),	-- Is That Your Goblin?
+					q(13011),	-- Jormuttar is Soo Fat...
+					q(12819),	-- Just Around the Corner
+					q(12822),	-- Know No Fear
+					q(13010),	-- Krolmir, Hammer of Storms
+					q(12846),	-- Leave No Goblin Behind
+					q(13062),	-- Lok'lira's Parting Gift
+					q(13035),	-- Loken's Lackeys
 					qa( 12865),	-- Loyal Companions
-					q( 12853),	-- Luxurious Getaway!
-					q( 13422),	-- Maintaining Discipline
-					q( 12900),	-- Making a Harness
+					q(12853),	-- Luxurious Getaway!
+					q(13422),	-- Maintaining Discipline
+					q(12900),	-- Making a Harness
 					qh( 11357),	-- Masked Orphan Matron
 					qh( 13037),	-- Memories of Stormhoof
-					q( 12915),	-- Mending Fences
-					q( 12905),	-- Mildred the Cruel
+					q(12915),	-- Mending Fences
+					q(12905),	-- Mildred the Cruel
 					qa( 12864),	-- Missing Scouts
-					q( 12987),	-- Mounting Hodir's Helm
-					q( 12829),	-- Moving In
-					q( 13032),	-- Muraco the Elder
+					q(12987),	-- Mounting Hodir's Helm
+					q(12829),	-- Moving In
+					q(13032),	-- Muraco the Elder
 					qh( 12928),	-- Norgannon's Shell					
 					qa( 12872),	-- Norgannon's Shell
-					q( 12942),	-- Off With Their Black Wings
+					q(12942),	-- Off With Their Black Wings
 					qa( 12863),	-- Offering Thanks
 					qa( 12854),	-- On Brann's Trail
-					q( 12831),	-- Only Partly Forgotten
-					q( 12821),	-- Opening the Backdoor
-					q( 12830),	-- Ore Repossession
-					q( 12833),	-- Overstock
+					q(12831),	-- Only Partly Forgotten
+					q(12821),	-- Opening the Backdoor
+					q(12830),	-- Ore Repossession
+					q(12833),	-- Overstock
 					qh( 12926),	-- Pieces of the Puzzle
 					qa( 12858),	-- Pieces to the Puzzle
 					qa( 14022),	-- Pilgrim's Bounty
 					qh( 14036),	-- Pilgrim's Bounty
 					qa( 11882),	-- Playing with Fire
-					q( 13006),	-- Polishing the Helm
-					q( 13061),	-- Prepare for Glory
+					q(13006),	-- Polishing the Helm
+					q(13061),	-- Prepare for Glory
 					qa( 12869),	-- Pushed Too Far
-					q( 13001),	-- Raising Hodir's Spear
-					q( 12930),	-- Rare Earth
-					q( 12827),	-- Reclaimed Rations
-					q( 12937),	-- Relief for the Fallen
-					q( 13421),	-- Remember Everfrost!
-					q( 12888),	-- SCRAP-E
-					q( 13064),	-- Sibling Rivalry
+					q(13001),	-- Raising Hodir's Spear
+					q(12930),	-- Rare Earth
+					q(12827),	-- Reclaimed Rations
+					q(12937),	-- Relief for the Fallen
+					q(13421),	-- Remember Everfrost!
+					q(12888),	-- SCRAP-E
+					q(13064),	-- Sibling Rivalry
 					qa( 12868),	-- Sirana Iceshriek
-					q( 12957),	-- Slaves of the Stormforged
-					q( 12826),	-- Slightly Unstable
+					q(12957),	-- Slaves of the Stormforged
+					q(12826),	-- Slightly Unstable
 					qa( 12855),	-- Sniffing Out the Perpetrator
 					qh( 12910),	-- Sniffing Out the Perpetrator
 					qh( 12913),	-- Speak Orcish, Man!
 					qh( 12917),	-- Speaking with the Wind's Voice
 					qa( 13484),	-- Spring Collectors
 					qh( 13483),	-- Spring Gatherers
-					q( 12994),	-- Spy Hunter
+					q(12994),	-- Spy Hunter
 					qa( 12866),	-- Stemming the Aggressors
-					q( 13020),	-- Stonebeard the Elder
-					q( 29863),	-- Stormherald Eljrrin
-					q( 12971),	-- Taking on All Challengers
-					q( 13051),	-- Territorial Trespass
-					q( 13425),	-- The Aberrations Must Die
-					q( 12980),	-- The Armor's Secrets
+					q(13020),	-- Stonebeard the Elder
+					q(29863),	-- Stormherald Eljrrin
+					q(12971),	-- Taking on All Challengers
+					q(13051),	-- Territorial Trespass
+					q(13425),	-- The Aberrations Must Die
+					q(12980),	-- The Armor's Secrets
 					qa( 12973),	-- The Brothers Bronzebeard
-					q( 13417),	-- The Brothers Bronzebeard
+					q(13417),	-- The Brothers Bronzebeard
 					qh( 13274),	-- The Core's Keeper
-					q( 12841),	-- The Crone's Bargain
-					q( 12964),	-- The Dark Ore
-					q( 12886),	-- The Drakkensryd
-					q( 13005),	-- The Earthen Oath
+					q(12841),	-- The Crone's Bargain
+					q(12964),	-- The Dark Ore
+					q(12886),	-- The Drakkensryd
+					q(13005),	-- The Earthen Oath
 					qh( 12929),	-- The Earthen of Ulduar
 					qa( 12885),	-- The Exiles of Ulduar
 					qa( 12873),	-- The Frostborn King
-					q( 12965),	-- The Gifts of Loken
-					q( 12998),	-- The Heart of the Storm
+					q(12965),	-- The Gifts of Loken
+					q(12998),	-- The Heart of the Storm
 					qh( 13049),	-- The Hero's Arms
 					qa( 12878),	-- The Hidden Relic
-					q( 12970),	-- The Hyldsmeet
-					q( 13007),	-- The Iron Colossus
-					q( 12983),	-- The Last of Her Kind
+					q(12970),	-- The Hyldsmeet
+					q(13007),	-- The Iron Colossus
+					q(12983),	-- The Last of Her Kind
 					qa( 13415),	-- The Library Console
 					qh( 13416),	-- The Library Console
 					qa( 12877),	-- The Lonesome Watcher
@@ -313,29 +313,29 @@ _.Zones =
 					qh( 12895),	-- The Missing Bronzebeard
 					qh( 13054),	-- The Missing Tracker
 					qh( 12909),	-- The Nose Knows
-					q( 12889),	-- The Prototype Console
-					q( 13047),	-- The Reckoning
-					q( 12922),	-- The Refiner's Fire
-					q( 13843),	-- The Scrapbot Construction Kit
-					q( 12989),	-- The Slithering Darkness
+					q(12889),	-- The Prototype Console
+					q(13047),	-- The Reckoning
+					q(12922),	-- The Refiner's Fire
+					q(13843),	-- The Scrapbot Construction Kit
+					q(12989),	-- The Slithering Darkness
 					qh( 11971),	-- The Spinner of Summer Tales
-					q( 13057),	-- The Terrace of the Makers
-					q( 12996),	-- The Warm-Up
+					q(13057),	-- The Terrace of the Makers
+					q(12996),	-- The Warm-Up
 					qh( 13034),	-- The Witness and the Hero
 					qh( 13056),	-- There's Always Time for Revenge
-					q( 12843),	-- They Took Our Men!
-					q( 13003),	-- Thrusting Hodir's Spear
+					q(12843),	-- They Took Our Men!
+					q(13003),	-- Thrusting Hodir's Spear
 					qa( 12876),	-- Unwelcome Guests
-					q( 12984),	-- Valduran the Stormborn
-					q( 12953),	-- Valkyrion Must Burn
-					q( 13050),	-- Veranus
+					q(12984),	-- Valduran the Stormborn
+					q(12953),	-- Valkyrion Must Burn
+					q(13050),	-- Veranus
 					qa( 12862),	-- When All Else Fails
 					qh( 13060),	-- When All Else Fails
 					qh( 13048),	-- Where Time Went Wrong
 					qh( 13426),	-- Xarantaur, the Witness
-					q( 12966),	-- You Can't Miss Him
-					q( 12972),	-- You'll Need a Bear
-					q( 12968),	-- Yulda's Folly	
+					q(12966),	-- You Can't Miss Him
+					q(12972),	-- You'll Need a Bear
+					q(12968),	-- Yulda's Folly	
 --]]					
 					q(12820,  {  -- A Delicate Touch
 						i(42787),

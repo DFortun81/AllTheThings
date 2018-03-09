@@ -137,37 +137,37 @@ _.Zones =
 				}),
 --[[
 				n(-17, { 	-- Quests	
---					qg(, q( 29298)),	-- A Smoke-Stained Locket (ends in Moonglade, starts from quest item mailed after Hyjal/Molten Front, so not sure what zone this quest should be in)
+--					qg(, q(29298)),	-- A Smoke-Stained Locket (ends in Moonglade, starts from quest item mailed after Hyjal/Molten Front, so not sure what zone this quest should be in)
 					qart(qg(101061, q(40643), {	-- A Summons From Moonglade (QG in Broken Isles Dalaran)
 						["groups"] = {
 						},
 						["classes"]= {11},
 					})),
-					qg(39865, q( 25316)),	-- As Hyjal Burns
-					qart(qg(101064, q( 41106), {	-- Call of the Wilds
+					qg(39865, q(25316)),	-- As Hyjal Burns
+					qart(qg(101064, q(41106), {	-- Call of the Wilds
 						["groups"] = {
 						},
 						["classes"]= {11},
 					})),
-					qg(11832, q( 13074)),	-- Hope Within the Emerald Nightmare
-					qg(120032, q( 45498), {	-- Let Sleeping Dogs Lie
+					qg(11832, q(13074)),	-- Hope Within the Emerald Nightmare
+					qg(120032, q(45498), {	-- Let Sleeping Dogs Lie
 						["groups"] = {
 						},
 						["classes"]= {11},
 					}),
-					qg(122134, q( 47430)),	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
-					qg(115750, q( 45426), {	-- Nature's Advance
+					qg(122134, q(47430)),	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
+					qg(115750, q(45426), {	-- Nature's Advance
 						["groups"] = {
 						},
 						["classes"]= {11},
 					}),
-					qg(120032, q( 45528), {	-- The Befouled Barrows
+					qg(120032, q(45528), {	-- The Befouled Barrows
 						["groups"] = {
 						},
 						["classes"]= {11},
 					}),
-					qg(11832, q( 13075)),	-- The Boon of Remulos
-					qdg(qg(12042, q( 28343)), {	-- The Breath of Cenarius
+					qg(11832, q(13075)),	-- The Boon of Remulos
+					qdg(qg(12042, q(28343)), {	-- The Breath of Cenarius
 						["groups"] = {
 						},
 						["classes"]= {11},
@@ -187,26 +187,26 @@ _.Zones =
 						},
 						["classes"]= {11},
 					}),
-					qg(120041, q( 46924), {	-- The Wolf's Tale (QG location unknown, possibly in the Dreamgrove as that's where previous quest in the line ends)
+					qg(120041, q(46924), {	-- The Wolf's Tale (QG location unknown, possibly in the Dreamgrove as that's where previous quest in the line ends)
 						["groups"] = {
 						},
 						["classes"]= {11},
 					}),
-					qart(qg(103875, q( 40645), {	-- To The Dreamgrove
+					qart(qg(103875, q(40645), {	-- To The Dreamgrove
 						["groups"] = {
 						},
 						["classes"]= {11},
 					})),
-					qg(11801, q( 29303)),	-- Tragedy and Family
-					qg(11801, q( 29302)),	-- Unlocking the Secrets Within		
+					qg(11801, q(29303)),	-- Tragedy and Family
+					qg(11801, q(29302)),	-- Unlocking the Secrets Within		
 					q(40962),	-- Dark Waters (LEGACY - quest awarded the Reins of the Grove Warden)
 					n(91331, {	-- Archimonde
 						i(133762, {	-- Remnant of Chaos
-							q( 40904),	-- Shadow of the Defiler (LEGACY - started in HFC and began questline that rewarded Grove Warden)
+							q(40904),	-- Shadow of the Defiler (LEGACY - started in HFC and began questline that rewarded Grove Warden)
 						}),
 					}),
-					q( 8446),	-- Shrouded in Nightmare (LEGACY - item that began quest dropped from original Dragons of Nightmare)
-					q( 8447),	-- Waking Legends (LEGACY - same as above)
+					q(8446),	-- Shrouded in Nightmare (LEGACY - item that began quest dropped from original Dragons of Nightmare)
+					q(8447),	-- Waking Legends (LEGACY - same as above)
 				}),
 --]]				
 				n(-2, {		-- Vendors

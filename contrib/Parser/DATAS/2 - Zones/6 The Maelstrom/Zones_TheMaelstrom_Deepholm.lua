@@ -130,172 +130,172 @@ _.Zones =
 				}),				
 				n(-17, { -- Quests
 --[[				
-					q( 26581),	-- A Head Full of Wind
-					q( 41900),	-- A Promise of Earth
+					q(26581),	-- A Head Full of Wind
+					q(41900),	-- A Promise of Earth
 					qh( 39746),	-- A Ring Unbroken
-					q( 26871),	-- A Rock Amongst Many
-					q( 26835),	-- A Slight Problem
-					q( 42995),	-- A Taste For Blood
-					q( 26857),	-- Abyssion's Minions
-					q( 26248),	-- All Our Friends Are Dead
-					q( 26411),	-- Apply and Flash Dry
-					q( 26750),	-- At the Stonemother's Call
-					q( 26752),	-- Audience with the Stonemother
-					q( 26591),	-- Battlefront Triage
-					q( 28488),	-- Beneath the Surface
-					q( 26766),	-- Big Game, Big Bait
-					q( 26256),	-- Bleed the Bloodshaper
-					q( 26861),	-- Block the Gates
-					q( 26259),	-- Blood of the Earthwarder
-					q( 31973),	-- Bordin Steadyfist
-					q( 27936),	-- Bring Down the Avalanche
-					q( 27935),	-- Bring Down the Avalanche
+					q(26871),	-- A Rock Amongst Many
+					q(26835),	-- A Slight Problem
+					q(42995),	-- A Taste For Blood
+					q(26857),	-- Abyssion's Minions
+					q(26248),	-- All Our Friends Are Dead
+					q(26411),	-- Apply and Flash Dry
+					q(26750),	-- At the Stonemother's Call
+					q(26752),	-- Audience with the Stonemother
+					q(26591),	-- Battlefront Triage
+					q(28488),	-- Beneath the Surface
+					q(26766),	-- Big Game, Big Bait
+					q(26256),	-- Bleed the Bloodshaper
+					q(26861),	-- Block the Gates
+					q(26259),	-- Blood of the Earthwarder
+					q(31973),	-- Bordin Steadyfist
+					q(27936),	-- Bring Down the Avalanche
+					q(27935),	-- Bring Down the Avalanche
 					qa( 29020),	-- Candy Bucket
 					qh( 29019),	-- Candy Bucket
-					q( 26246),	-- Captain's Log
-					q( 41747),	-- Champion: Avalanchion
-					q( 26440),	-- Clingy
-					q( 26632),	-- Close Escort
-					q( 42936),	-- Clutch Play
-					q( 42971),	-- Controlling the Elements
-					q( 26313),	-- Core of Our Troubles
-					q( 26585),	-- Corruption Destruction
-					q( 26312),	-- Crumbling Defenses
-					q( 26258),	-- Deathwing's Fall
+					q(26246),	-- Captain's Log
+					q(41747),	-- Champion: Avalanchion
+					q(26440),	-- Clingy
+					q(26632),	-- Close Escort
+					q(42936),	-- Clutch Play
+					q(42971),	-- Controlling the Elements
+					q(26313),	-- Core of Our Troubles
+					q(26585),	-- Corruption Destruction
+					q(26312),	-- Crumbling Defenses
+					q(26258),	-- Deathwing's Fall
 					qh( 27041),	-- Decryption Made Easy
 					qa( 27040),	-- Decryption Made Easy
-					q( 29734),	-- Deepforge the Elder
-					q( 27123),	-- Deepholm, Realm of Earth
-					q( 26869),	-- Depth of the Depths
-					q( 26247),	-- Diplomacy First
-					q( 26656),	-- Don't. Stop. Moving.
-					q( 26578),	-- Doomshrooms
-					q( 26834),	-- Down Into the Chasm
-					q( 29329),	-- Elemental Bonds: Patience
-					q( 27136),	-- Elemental Energy
-					q( 27933),	-- Elemental Ore
-					q( 26436),	-- Entrenched
-					q( 26410),	-- Explosive Bonding Compound
-					q( 26580),	-- Familiar Intruders
-					q( 27046),	-- Fear of Boring
+					q(29734),	-- Deepforge the Elder
+					q(27123),	-- Deepholm, Realm of Earth
+					q(26869),	-- Depth of the Depths
+					q(26247),	-- Diplomacy First
+					q(26656),	-- Don't. Stop. Moving.
+					q(26578),	-- Doomshrooms
+					q(26834),	-- Down Into the Chasm
+					q(29329),	-- Elemental Bonds: Patience
+					q(27136),	-- Elemental Energy
+					q(27933),	-- Elemental Ore
+					q(26436),	-- Entrenched
+					q(26410),	-- Explosive Bonding Compound
+					q(26580),	-- Familiar Intruders
+					q(27046),	-- Fear of Boring
 					qh( 27043),	-- Fight Fire and Water and Air with...
 					qa( 27042),	-- Fight Fire and Water and Air with...
-					q( 26564),	-- Fixer Upper
+					q(26564),	-- Fixer Upper
 					qh( 27008),	-- Fly Over
 					qa( 27006),	-- Fly Over
-					q( 26658),	-- Fragile Values
-					q( 27050),	-- Fungal Fury
-					q( 26792),	-- Fungal Monstrosities
-					q( 28390),	-- Glop, Son of Glop
-					q( 26579),	-- Gone Soft
-					q( 26245),	-- Gunship Down
-					q( 26657),	-- Hard Falls
-					q( 26376),	-- Hatred Runs Deep
-					q( 29030),	-- Honor the Flame
-					q( 29036),	-- Honor the Flame
-					q( 26315),	-- Imposing Confrontation
-					q( 26438),	-- Intervention
-					q( 29337),	-- Into Constant Earth
-					q( 28866),	-- Into the Stonecore
-					qg(53738, q( 29338)),	-- Into Unrelenting Flame
-					q( 26755),	-- Keep Them off the Front
-					q( 26375),	-- Loose Stones
-					q( 26710),	-- Lost In The Deeps
-					q( 42989),	-- Ma'haat the Indomitable
-					q( 26437),	-- Making Things Crystal Clear
-					q( 27102),	-- Maziel's Ascendancy
-					q( 27101),	-- Maziel's Revelation
-					q( 27047),	-- Motes
-					q( 26770),	-- Mystic Masters
-					q( 42937),	-- Needlerock Beatdown
-					q( 26314),	-- On Even Ground
-					q( 26250),	-- On Second Thought, Take One Prisoner
-					q( 27934),	-- One With the Ground
-					q( 26828),	-- Our Part of the Bargain
-					q( 28869),	-- Pebble
-					q( 26507),	-- Petrified Delicacies
-					q( 26439),	-- Putting the Pieces Together
-					q( 26415),	-- Questflag for Captain's Log
-					q( 26261),	-- Question the Slaves
-					q( 27010),	-- Quicksilver Submersion
-					q( 26827),	-- Rallying the Earthen Ring
-					q( 26762),	-- Reactivate the Constructs
-					q( 26836),	-- Rescue the Stonefather... and Flint
-					q( 26659),	-- Resonating Blow
-					q( 43003),	-- Return to Janai
-					q( 26255),	-- Return to the Temple of Earth
-					q( 26575),	-- Rock Bottom
-					q( 26328),	-- Rocky Relations
-					q( 26577),	-- Rocky Upheaval
-					q( 27126),	-- Rush Delivery
-					q( 26501),	-- Sealing the Way
-					q( 26584),	-- Shaken and Stirred					
-					q( 26537),	-- Shatter Them!
-					q( 27007),	-- Silvermarsh Rendezvous
-					q( 26441),	-- So Big, So Round...
-					q( 27049),	-- Soft Rock
-					q( 26254),	-- Some Spraining to Do
-					q( 27135),	-- Something that Burns
-					q( 26791),	-- Sprout No More
-					q( 26576),	-- Steady Hand
-					q( 42935),	-- Stone Drake Rescue
-					q( 29735),	-- Stonebrand the Elder
-					q( 26499),	-- Stonefather's Boon
-					q( 26413),	-- Take Him to the Earthcaller
-					q( 26251),	-- Take No Prisoners
-					q( 26771),	-- Testing the Trap
+					q(26658),	-- Fragile Values
+					q(27050),	-- Fungal Fury
+					q(26792),	-- Fungal Monstrosities
+					q(28390),	-- Glop, Son of Glop
+					q(26579),	-- Gone Soft
+					q(26245),	-- Gunship Down
+					q(26657),	-- Hard Falls
+					q(26376),	-- Hatred Runs Deep
+					q(29030),	-- Honor the Flame
+					q(29036),	-- Honor the Flame
+					q(26315),	-- Imposing Confrontation
+					q(26438),	-- Intervention
+					q(29337),	-- Into Constant Earth
+					q(28866),	-- Into the Stonecore
+					qg(53738, q(29338)),	-- Into Unrelenting Flame
+					q(26755),	-- Keep Them off the Front
+					q(26375),	-- Loose Stones
+					q(26710),	-- Lost In The Deeps
+					q(42989),	-- Ma'haat the Indomitable
+					q(26437),	-- Making Things Crystal Clear
+					q(27102),	-- Maziel's Ascendancy
+					q(27101),	-- Maziel's Revelation
+					q(27047),	-- Motes
+					q(26770),	-- Mystic Masters
+					q(42937),	-- Needlerock Beatdown
+					q(26314),	-- On Even Ground
+					q(26250),	-- On Second Thought, Take One Prisoner
+					q(27934),	-- One With the Ground
+					q(26828),	-- Our Part of the Bargain
+					q(28869),	-- Pebble
+					q(26507),	-- Petrified Delicacies
+					q(26439),	-- Putting the Pieces Together
+					q(26415),	-- Questflag for Captain's Log
+					q(26261),	-- Question the Slaves
+					q(27010),	-- Quicksilver Submersion
+					q(26827),	-- Rallying the Earthen Ring
+					q(26762),	-- Reactivate the Constructs
+					q(26836),	-- Rescue the Stonefather... and Flint
+					q(26659),	-- Resonating Blow
+					q(43003),	-- Return to Janai
+					q(26255),	-- Return to the Temple of Earth
+					q(26575),	-- Rock Bottom
+					q(26328),	-- Rocky Relations
+					q(26577),	-- Rocky Upheaval
+					q(27126),	-- Rush Delivery
+					q(26501),	-- Sealing the Way
+					q(26584),	-- Shaken and Stirred					
+					q(26537),	-- Shatter Them!
+					q(27007),	-- Silvermarsh Rendezvous
+					q(26441),	-- So Big, So Round...
+					q(27049),	-- Soft Rock
+					q(26254),	-- Some Spraining to Do
+					q(27135),	-- Something that Burns
+					q(26791),	-- Sprout No More
+					q(26576),	-- Steady Hand
+					q(42935),	-- Stone Drake Rescue
+					q(29735),	-- Stonebrand the Elder
+					q(26499),	-- Stonefather's Boon
+					q(26413),	-- Take Him to the Earthcaller
+					q(26251),	-- Take No Prisoners
+					q(26771),	-- Testing the Trap
 					qh( 28293),	-- That's No Pyramid!
 					qa( 28292),	-- That's No Pyramid!
-					q( 26249),	-- The Admiral's Cabin
-					q( 27932),	-- The Axe of Earthly Sundering
-					q( 26971),	-- The Binding
-					q( 26244),	-- The Earth Claims All
+					q(26249),	-- The Admiral's Cabin
+					q(27932),	-- The Axe of Earthly Sundering
+					q(26971),	-- The Binding
+					q(26244),	-- The Earth Claims All
 					qh( 41335),	-- The Elements Call...
 					qa( 27952),	-- The Explorers
-					q( 26260),	-- The Forgemaster's Log
-					q( 41775),	-- The Great Stonemother
+					q(26260),	-- The Forgemaster's Log
+					q(41775),	-- The Great Stonemother
 					qh( 40224),	-- The Hammer in the Deep
-					q( 27937),	-- The Hero Returns
-					q( 27203),	-- The Maelstrom
-					q( 27938),	-- The Middle Fragment
-					q( 27931),	-- The Quaking Fields
+					q(27937),	-- The Hero Returns
+					q(27203),	-- The Maelstrom
+					q(27938),	-- The Middle Fragment
+					q(27931),	-- The Quaking Fields
 					qh( 27953),	-- The Reliquary
-					q( 28391),	-- The Restless Brood
-					q( 42068),	-- The Return of Twilight
-					q( 26829),	-- The Stone March
-					q( 26709),	-- The Stone Throne
-					q( 42933),	-- The Troggs that Fel to Earth
-					q( 26831),	-- The Twilight Flight
-					q( 42065),	-- The Twilight Master
-					q( 27061),	-- The Twilight Overlook
+					q(28391),	-- The Restless Brood
+					q(42068),	-- The Return of Twilight
+					q(26829),	-- The Stone March
+					q(26709),	-- The Stone Throne
+					q(42933),	-- The Troggs that Fel to Earth
+					q(26831),	-- The Twilight Flight
+					q(42065),	-- The Twilight Master
+					q(27061),	-- The Twilight Overlook
 					qh( 27005),	-- The Twilight Plot
 					qa( 27004),	-- The Twilight Plot
-					q( 26326),	-- The Very Earth Beneath Our Feet
-					q( 26243),	-- The World Pillar
-					q( 26876),	-- The World Pillar Fragment
+					q(26326),	-- The Very Earth Beneath Our Feet
+					q(26243),	-- The World Pillar
+					q(26876),	-- The World Pillar Fragment
 					qh( 27059),	-- The Wrong Sequence
 					qa( 27058),	-- The Wrong Sequence
-					q( 26832),	-- Therazane's Mercy
-					q( 27051),	-- Through Persistence
-					q( 26502),	-- Thunder Stones
-					q( 26768),	-- To Catch a Dragon
-					q( 26484),	-- To Stonehearth's Aid
-					q( 26625),	-- Troggzor the Earthinator
-					q( 36587),	-- Twilight Gate Tracking
-					q( 27100),	-- Twilight Research
-					q( 27048),	-- Underground Economy
-					q( 26875),	-- Undying Twilight
-					q( 26582),	-- Unnatural Causes
-					q( 26377),	-- Unsolid Ground
-					q( 26426),	-- Violent Gale
-					q( 28824),	-- Wayward Child
-					q( 26500),	-- We're Surrounded
+					q(26832),	-- Therazane's Mercy
+					q(27051),	-- Through Persistence
+					q(26502),	-- Thunder Stones
+					q(26768),	-- To Catch a Dragon
+					q(26484),	-- To Stonehearth's Aid
+					q(26625),	-- Troggzor the Earthinator
+					q(36587),	-- Twilight Gate Tracking
+					q(27100),	-- Twilight Research
+					q(27048),	-- Underground Economy
+					q(26875),	-- Undying Twilight
+					q(26582),	-- Unnatural Causes
+					q(26377),	-- Unsolid Ground
+					q(26426),	-- Violent Gale
+					q(28824),	-- Wayward Child
+					q(26500),	-- We're Surrounded
 					qh( 42932),	-- What the Stonemother Knows
 					qh( 42931),	-- Where the Hammer Falls
-					q( 26409),	-- Where's Goldmine?
-					q( 26427),	-- Without a Captain or Crew
-					q( 26833),	-- Word In Stone
-					q( 26583),	-- Wrath of the Fungalmancer					
+					q(26409),	-- Where's Goldmine?
+					q(26427),	-- Without a Captain or Crew
+					q(26833),	-- Word In Stone
+					q(26583),	-- Wrath of the Fungalmancer					
 					a(q(27727, { -- Hero's Call: Deepholm!
 						a(q(27203, { -- The Maelstrom
 						})),

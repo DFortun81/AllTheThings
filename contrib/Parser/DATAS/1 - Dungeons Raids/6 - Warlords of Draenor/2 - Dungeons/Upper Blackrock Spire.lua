@@ -122,7 +122,7 @@ _.Instances =
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
 							})),
-							n( 77927, {	-- Son of the Beast
+							n(77927, {	-- Son of the Beast
 								i(120340),	-- Son of the Beast's Bloody Paw
 							}),
 							cr(76585, e(1229, {	-- Ragewing the Untamed
@@ -337,7 +337,7 @@ _.Instances =
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
 							})),
-							n( 77927, {	-- Son of the Beast
+							n(77927, {	-- Son of the Beast
 								i(120340),	-- Son of the Beast's Bloody Paw
 							}),
 							cr(76585, e(1229, {	-- Ragewing the Untamed
@@ -547,7 +547,7 @@ _.Instances =
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
 							})),
-							n( 77927, {	-- Son of the Beast
+							n(77927, {	-- Son of the Beast
 								i(120340),	-- Son of the Beast's Bloody Paw
 							}),
 							cr(76585, e(1229, {	-- Ragewing the Untamed

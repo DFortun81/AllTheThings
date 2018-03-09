@@ -102,7 +102,7 @@ _.Zones =
 									qh(12383),	-- Candy Bucket
 								}),
 								o(190104, {	-- Candy Bucket
-									q( 12398),	-- Candy Bucket
+									q(12398),	-- Candy Bucket
 								}),
 							}),
 						},
@@ -138,126 +138,126 @@ _.Zones =
 					qg(66436, qh(31905)),	-- Grazzle the Great
 				}),
 				n(-17, { 	-- Quests
-					qg( 4794, qa(1258, { --... and Bugs
+					qg(4794, qa(1258, { --... and Bugs
 						i(57843),
 						i(57844),
 					})),
 --[[					
 					qg(23951, qa(27214)),	-- A Disturbing Development (breadcrumb quest for 27234)
-					qg( 4944, qa(27425)),	-- A Grim Connection
-					qg( 4926, qh(26682)),	-- A Shambling Threat
+					qg(4944, qa(27425)),	-- A Grim Connection
+					qg(4926, qh(26682)),	-- A Shambling Threat
 --]]					
 					qg(23568, qa(27427, { -- Arms of the Grimtotems
 						i(33268),
 						i(57837),
 					})),
-					qg( 4502, qh(1168, { -- Army of the Black Dragon
+					qg(4502, qh(1168, { -- Army of the Black Dragon
 						i(10702),
 						i(9706),
 					})),
 --[[					
-					qg(23579, q( 27408)),	-- Banner of the Stonemaul
-					qg(23579, q( 27407)),	-- Bloodfen Feathers
+					qg(23579, q(27408)),	-- Banner of the Stonemaul
+					qg(23579, q(27407)),	-- Bloodfen Feathers
 					qg(23951, qa(27247)),	-- Captain Vimes
 --]]					
-					qg(23570, q( 27413, {  -- Catch a Dragon by the Tail
-						i( 33235),
-						i( 33241),
+					qg(23570, q(27413, {  -- Catch a Dragon by the Tail
+						i(33235),
+						i(33241),
 						i(131672),
 					})),
-					qg( 4500, qh(27418, { -- Challenge Overlord Mok'Morokk
-						i( 57846),
-						i( 57847),
-						i( 57850),
+					qg(4500, qh(27418, { -- Challenge Overlord Mok'Morokk
+						i(57846),
+						i(57847),
+						i(57850),
 						i(131675),
 						i(156999),	-- Mok'Morokk's Headcracker
 					})),
-					qg(23579, q( 27411, { -- Challenge to the Black Dragonflight
+					qg(23579, q(27411, { -- Challenge to the Black Dragonflight
 						i(33231),
 						i(57828),
 						i(33256),
 					})),
---					qg( 4791, qh(11213)),	-- Check Up on Tabetha
-					qg(23843, q( 27190, {  -- Cleansing Witch Hill
-						i( 33229),
-						i( 33257),
-						i( 33245),
+--					qg(4791, qh(11213)),	-- Check Up on Tabetha
+					qg(23843, q(27190, {  -- Cleansing Witch Hill
+						i(33229),
+						i(33257),
+						i(33245),
 						i(131650),
 					})),
 --					qg(23568, qa(27426)),	-- Confirming the Suspicion
-					qg(23797, q( 27347, {  -- Corrosion Prevention
-						i( 33233),
-						i( 33239),
-						i( 33255),
-						i( 57840),
+					qg(23797, q(27347, {  -- Corrosion Prevention
+						i(33233),
+						i(33239),
+						i(33255),
+						i(57840),
 						i(131666),
 					})),
 --[[					
-					qg( 4948, qa(27286)),	-- Daelin's Men
-					qg( 4926, qh(25051)),	-- Darkmist Extermination
+					qg(4948, qa(27286)),	-- Daelin's Men
+					qg(4926, qh(25051)),	-- Darkmist Extermination
 					qg(23892, qa(27218)),	-- Dastardly Denizens of the Deep
-					qg( 5086, qa(27234)),	-- Defias in Dustwallow?
-					qg(23797, q( 11208)),	-- Delivery for Drazzit
+					qg(5086, qa(27234)),	-- Defias in Dustwallow?
+					qg(23797, q(11208)),	-- Delivery for Drazzit
 --]]					
-					qg(23600, q( 27340, { -- Direhorn Raiders
-						i( 33240),
-						i( 33261),
-						i( 57831),
+					qg(23600, q(27340, { -- Direhorn Raiders
+						i(33240),
+						i(33261),
+						i(57831),
 						i(131664),
 					})),
 --[[					
 					qg(23566, qa(27212)),	-- Discrediting the Deserters
-					qg( 6546, q( 11211)),	-- Help for Mudsprocket
-					qg( 4791, qh(11215)),	-- Help Mudsprocket
+					qg(6546, q(11211)),	-- Help for Mudsprocket
+					qg(4791, qh(11215)),	-- Help Mudsprocket
 --]]					
-					qg( 4792, q( 27191, {  -- Hungry as an Ogre!
-						i(  9518),
-						i(  9519),
+					qg(4792, q(27191, {  -- Hungry as an Ogre!
+						i(9518),
+						i(9519),
 						i(131651),
 					})),
-					qg( 4501, qh(27414, { -- Identifying the Brood
-						i( 57833),
-						i( 57838),
-						i( 57839),
+					qg(4501, qh(27414, { -- Identifying the Brood
+						i(57833),
+						i(57838),
+						i(57839),
 						i(131673),
 					})),
 --[[					
-					qg( 4944, qa(27249)),	-- Inspecting the Ruins
-					qg( 4926, qh(27253)),	-- Inspecting the Ruins
+					qg(4944, qa(27249)),	-- Inspecting the Ruins
+					qg(4926, qh(27253)),	-- Inspecting the Ruins
 					qg(23896, qa(27219)),	-- Is it Real?
 					qg(23569, qa(27238)),	-- Jaina Must Know
 --]]					
-					qg( 4792, q( 27186, {  -- Jarl Needs a Blade
-						i(  5016),
-						i( 57835),
+					qg(4792, q(27186, {  -- Jarl Needs a Blade
+						i(5016),
+						i(57835),
 						i(131649),
 					})),
---					qg( 4792, q( 27184)),	-- Jarl Needs Eyes
-					qg( 6546, qh(27297, { -- Justice Dispensed
+--					qg(4792, q(27184)),	-- Jarl Needs Eyes
+					qg(6546, qh(27297, { -- Justice Dispensed
 						i(33271),
 						i(57829),
 						i(156976),	-- Staff of Memory 
 					})),
 --[[					
-					qg( 6546, qa(27430)),	-- Justice for the Hyals
+					qg(6546, qa(27430)),	-- Justice for the Hyals
 					qg(21042, qh(27260)),	-- Lieutenant Paval Reethe
-					qg( 4944, qa(27264)),	-- Lieutenant Paval Reethe
+					qg(4944, qa(27264)),	-- Lieutenant Paval Reethe
 					qg(21042, qa(27263)),	-- Lieutenant Paval Reethe
 --]]					
-					qg( 4792, q( 27183, {  -- Marsh Frog Legs
-						i( 57834),
-						i( 57845),
+					qg(4792, q(27183, {  -- Marsh Frog Legs
+						i(57834),
+						i(57845),
 						i(131648),
 					})),
 --					qg(23951, qa(27248)),	-- Mission to Mudsprocket
-					qg( 4926, qh(27294, { -- More than Coincidence
+					qg(4926, qh(27294, { -- More than Coincidence
 						i(57852),
 					})),
 --[[					
-					qg( 4794, qa(1204)),	-- Mudrock Soup and Bugs
+					qg(4794, qa(1204)),	-- Mudrock Soup and Bugs
 					qp129(qg(12919, q(13826))),	-- Nat Pagle, Angler Extreme
 --]]					
-					qp129(qg(12919, q( 6607, {   -- Nat Pagle, Angler Extreme
+					qp129(qg(12919, q(6607, {   -- Nat Pagle, Angler Extreme
 						i(45858)	-- Nat's Lucky Fishing Pole
 					}))),
 --[[					
@@ -265,49 +265,49 @@ _.Zones =
 					qg(39697, qh(25292)),	-- Next of Kin
 					qg(12919, qa(27221)),	-- Oh, It's Real
 --]]					
-					qg( 4500, qh(27424, { -- Overlord Mok'Morokk's Concern
-						i( 57848),
-						i( 57854),
+					qg(4500, qh(27424, { -- Overlord Mok'Morokk's Concern
+						i(57848),
+						i(57854),
 						i(131676),
 					})),
-					qg( 4944, qa(27291, { -- Peace at Last
+					qg(4944, qa(27291, { -- Peace at Last
 						i(33271),
 						i(57829),
 						i(156976),	-- Staff of Memory 
 					})),
 --[[					
 					qg(23723, qa(27245)),	-- Prisoners of the Grimtotems
-					qg( 4968, qa(27240)),	-- Proof of Treachery
+					qg(4968, qa(27240)),	-- Proof of Treachery
 					qg(23566, qa(27211)),	-- Propaganda War
 --]]					
-					qg( 4983, qh(27261, { -- Questioning Reethe
+					qg(4983, qh(27261, { -- Questioning Reethe
 						i(6797),
 						i(6798),
 					})),
 --[[					
 					qg(23723, qa(27242)),	-- Raptor Captor
-					qg( 6546, qh(27296)),	-- Raze Direhorn Post!
-					qg( 6546, qa(27429)),	-- Raze Direhorn Post!
+					qg(6546, qh(27296)),	-- Raze Direhorn Post!
+					qg(6546, qa(27429)),	-- Raze Direhorn Post!
 --]]					
 					qg(23569, qa(27237, { -- Recover the Cargo!
 						i(33267),
 						i(33259),
 						i(156977),	-- Serrated Gladius 
 					})),
---					qg( 5086, qa(27235)),	-- Renn McGill
+--					qg(5086, qa(27235)),	-- Renn McGill
 --[[					qg(23569, qa(27236)),	-- Secondhand Diving Gear
-					qg(23797, q( 27348)),	-- Secure the Cargo!
-					qg( 4926, qh(27295)),	-- Seek Out Tabetha
+					qg(23797, q(27348)),	-- Secure the Cargo!
+					qg(4926, qh(27295)),	-- Seek Out Tabetha
 					o(205332, {	-- Wanted Poster
 						qh(27229),	-- SMASH BROODQUEEN
 					}),
-					qg(23579, q( 27410)),	-- Spirits of Stonemaul Hold
-					qg( 4880, qa( 1222)),	-- Stinky's Escape
-					qg( 4880, qh( 1270)),	-- Stinky's Escape
+					qg(23579, q(27410)),	-- Spirits of Stonemaul Hold
+					qg(4880, qa( 1222)),	-- Stinky's Escape
+					qg(4880, qh( 1270)),	-- Stinky's Escape
 --]]					
-					qg( 4968, qa(27239, { -- Survey Alcaz Island
-						i( 57851),
-						i( 33250),
+					qg(4968, qa(27239, { -- Survey Alcaz Island
+						i(57851),
+						i(33250),
 						i(131253),
 					})),
 --[[					
@@ -316,67 +316,67 @@ _.Zones =
 						qa(27262),	-- Suspicious Hoofprints
 					}),
 					qg(23568, qa(27428)),	-- Tabetha's Assistance
-					qg( 4921, qa(11212)),	-- Tabetha's Farm
+					qg(4921, qa(11212)),	-- Tabetha's Farm
 --]]					
 					qg(23905, qa(27222, { -- Take Down Tethyr!
-						i( 57842),
-						i( 33247),
-						i( 57849),
+						i(57842),
+						i(33247),
+						i(57849),
 						i(131659),
 					})),
 --[[					
-					qg( 4926, qh(27306)),	-- Talk to Ogron					
+					qg(4926, qh(27306)),	-- Talk to Ogron					
 					o(20992, {	-- Black Shield
 						qh(27254),	-- The Black Shield
 						qa(27252),	-- The Black Shield
 					}),
-					qg( 4844, qa(27284)),	-- The Black Shield
-					qg( 4941, qa(27285)),	-- The Black Shield
-					qg( 4926, qh(27255)),	-- The Black Shield
-					qg( 5087, qh(27256)),	-- The Black Shield
-					qg( 4926, qh(27258)),	-- The Black Shield
-					qg( 5087, qh(27257)),	-- The Black Shield
-					qg( 4500, qh(27417)),	-- The Brood of Onyxia
-					qg( 4501, qh(27416)),	-- The Brood of Onyxia
+					qg(4844, qa(27284)),	-- The Black Shield
+					qg(4941, qa(27285)),	-- The Black Shield
+					qg(4926, qh(27255)),	-- The Black Shield
+					qg(5087, qh(27256)),	-- The Black Shield
+					qg(4926, qh(27258)),	-- The Black Shield
+					qg(5087, qh(27257)),	-- The Black Shield
+					qg(4500, qh(27417)),	-- The Brood of Onyxia
+					qg(4501, qh(27416)),	-- The Brood of Onyxia
 --]]					
-					qg( 4501, qh(27415, { -- The Brood of Onyxia
-						i( 57836),
+					qg(4501, qh(27415, { -- The Brood of Onyxia
+						i(57836),
 						i(131674),
 					})),
 --[[					
-					qg( 5089, qa(27288)),	-- The Deserters
-					qg( 4944, qa(27287)),	-- The Deserters
+					qg(5089, qa(27288)),	-- The Deserters
+					qg(4944, qa(27287)),	-- The Deserters
 --]]					
 					qg(23566, qa(27213, { -- The End of the Deserters
-						i( 57832),
-						i( 33249),
-						i( 57853),
+						i(57832),
+						i(33249),
+						i(57853),
 						i(131657),
 						i(131658),
 					})),
 --[[					
-					qg(23579, q( 27409)),	-- The Essence of Enmity
-					qg( 4926, qh(27293)),	-- The Grimtotem Plot
-					qg(23601, q( 27336)),	-- The Grimtotem Weapon
+					qg(23579, q(27409)),	-- The Essence of Enmity
+					qg(4926, qh(27293)),	-- The Grimtotem Plot
+					qg(23601, q(27336)),	-- The Grimtotem Weapon
 					qg(23835, qa(27215)),	-- The Hermit of Swamplight Manor (breadcrumb quest for 27183)
-					qg( 4501, qh(27182)),	-- The Hermit of Witch Hill (breadcrumb quest for 27183)
+					qg(4501, qh(27182)),	-- The Hermit of Witch Hill (breadcrumb quest for 27183)
 					o(20985, {	-- Loose Dirt
 						qh(27244),	-- The Lost Report
 						qa(27246),	-- The Orc Report
 					}),
 --]]					
 					qg(23601, q(27339, { -- The Reagent Thief
-						i( 33260),
-						i( 33273),
-						i( 33244),
+						i(33260),
+						i(33273),
+						i(33244),
 						i(131663),
 					})),
 --[[					
-					qg( 4791, qh( 1202)),	-- The Theramore Docks
-					qg(23843, q( 27189)),	-- The Witch's Bane
-					qg(23600, q( 27346)),	-- The Zeppelin Crash
-					qg( 4791, qh( 1201)),	-- Theramore Spies
-					qg( 4921, qa(27251)),	-- They Call Him Smiling Jim (breadcrumb quest for 27249)
+					qg(4791, qh( 1202)),	-- The Theramore Docks
+					qg(23843, q(27189)),	-- The Witch's Bane
+					qg(23600, q(27346)),	-- The Zeppelin Crash
+					qg(4791, qh( 1201)),	-- Theramore Spies
+					qg(4921, qa(27251)),	-- They Call Him Smiling Jim (breadcrumb quest for 27249)
 					qg(23835, qa(27216)),	-- This Old Lighthouse
 					qg(23892, qa(27217)),	-- Thresher Oil
 					qg(40345, qa(25479)),	-- To New Thalanaar (breadcrumb quest for 25486, not available if 25481,28503 are completed)
@@ -386,23 +386,23 @@ _.Zones =
 					qg(12939, qa( 6624)),	-- Triage
 --]]					
 					qg(17095, qh(9437, { -- Twilight of the Dawn Runner
-						i( 33250),
-						i( 57851),
+						i(33250),
+						i(57851),
 						i(131253),
 					})),
 					qg(23723, qa(27243, { -- Unleash the Raptors
-						i( 33266),
-						i( 33248),
+						i(33266),
+						i(33248),
 						i(131662),
 					})),
 					o(186426, {	-- Wanted Poster
 						q(27412, { -- WANTED: Goreclaw the Ravenous
-							i( 33258),
-							i( 33242),
+							i(33258),
+							i(33242),
 							i(131671),
 						}),
 					}),
---					qg(23843, q( 27188)),	-- What's Haunting Witch Hill?						
+--					qg(23843, q(27188)),	-- What's Haunting Witch Hill?						
 				}),
 				n(-16, { 	-- Rares	
 					n(50784, { 		-- Anith

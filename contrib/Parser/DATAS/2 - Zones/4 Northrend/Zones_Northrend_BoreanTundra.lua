@@ -144,30 +144,30 @@ _.Zones =
 					qh( 11641),	-- A Courageous Strike
 					qa( 11604),	-- A Deserter
 					qa( 12141),	-- A Diplomatic Mission
-					q( 11620),	-- A Father's Words
-					q( 46049),	-- A Gift From Your Tadpole
+					q(11620),	-- A Father's Words
+					q(46049),	-- A Gift From Your Tadpole
 					qa( 11726),	-- A Little Bit of Spice
-					q( 11864),	-- A Mission Statement
+					q(11864),	-- A Mission Statement
 					qh( 11675),	-- A Proper Death
-					q( 11671),	-- A Race Against Time
+					q(11671),	-- A Race Against Time
 					qa( 11789),	-- A Soldier in Need
 					qh( 11719),	-- A Suitable Test Subject
-					q( 46062),	-- A Tadpole's Request
+					q(46062),	-- A Tadpole's Request
 					qa( 11727),	-- A Time for Heroes
-					q( 11623),	-- A Visit to the Curator
-					q( 13128),	-- A Wing and a Prayer
-					q( 11590),	-- Abduction
-					q( 13414),	-- Aces High!
-					q( 13413),	-- Aces High!
+					q(11623),	-- A Visit to the Curator
+					q(13128),	-- A Wing and a Prayer
+					q(11590),	-- Abduction
+					q(13414),	-- Aces High!
+					q(13413),	-- Aces High!
 					qh( 11930),	-- Across Transborea
-					q( 46061),	-- Adopt a Tadpole
-					q( 29285),	-- Alignment
+					q(46061),	-- Adopt a Tadpole
+					q(29285),	-- Alignment
 					qa( 29608),	-- Allies in Dalaran
-					q( 13033),	-- Arp the Elder
-					q( 29269),	-- At One
+					q(13033),	-- Arp the Elder
+					q(29269),	-- At One
 					qa( 11701),	-- Back to the Airstrip
-					q( 11951),	-- Bait and Switch
-					q( 11918),	-- Basic Training
+					q(11951),	-- Bait and Switch
+					q(11918),	-- Basic Training
 					qh( 11633),	-- Blending In
 					qh( 11627),	-- Boiling Point
 					qh( 11898),	-- Breaking Through
@@ -176,9 +176,9 @@ _.Zones =
 					qh( 11608),	-- Bury Those Cockroaches!
 					qa( 11938),	-- Buying Some Time
 					qa( 11965),	-- Call to Arms!
-					q( 11867),	-- Can't Get Ear-nough...
+					q(11867),	-- Can't Get Ear-nough...
 					qh( 13468),	-- Candy Bucket
-					q( 13460),	-- Candy Bucket
+					q(13460),	-- Candy Bucket
 					qh( 13467),	-- Candy Bucket
 					qh( 13501),	-- Candy Bucket
 					qa( 13437),	-- Candy Bucket
@@ -187,18 +187,18 @@ _.Zones =
 					qh( 11906),	-- Cleaning Up the Pools
 					qa( 13265),	-- Cloth Scavenging
 					qh( 13270),	-- Cloth Scavenging
-					q( 13412),	-- Corastrasza
+					q(13412),	-- Corastrasza
 					qh( 11711),	-- Coward Delivery... Under 30 Minutes or it's Free
 					qa( 11932),	-- Cowards and Fools
-					q( 11931),	-- Cracking the Code
-					q( 12471),	-- Cruelty of the Kvaldir
+					q(11931),	-- Cracking the Code
+					q(12471),	-- Cruelty of the Kvaldir
 					qa( 11790),	-- Cultists Among Us
 					qa( 11920),	-- Cultists Among Us
 					qh( 11602),	-- Cutting Off the Source
 					qh( 11688),	-- Damned Filthy Swine
 					qa( 11889),	-- Death From Above
 					qh( 11909),	-- Defeat the Gearmaster
-					q( 29234),	-- Delegation
+					q(29234),	-- Delegation
 					qa( 11723),	-- Deploy the Shake-n-Quake!
 					qa( 11580),	-- Desecrate this Fire!
 					qh( 11745),	-- Desecrate this Fire!
@@ -212,17 +212,17 @@ _.Zones =
 					qa( 11786),	-- Desecrate this Fire!
 					qa( 11645),	-- Dirty, Stinkin' Snobolds!
 					qa( 11707),	-- Distress Call
-					q( 11682),	-- Dragonspeak
-					q( 11919),	-- Drake Hunt
-					q( 11940),	-- Drake Hunt
-					q( 11866),	-- Ears of Our Enemies
-					q( 29240),	-- Emergency Extraction
+					q(11682),	-- Dragonspeak
+					q(11919),	-- Drake Hunt
+					q(11940),	-- Drake Hunt
+					q(11866),	-- Ears of Our Enemies
+					q(29240),	-- Emergency Extraction
 					qa( 11795),	-- Emergency Protocol: Section 8.2, Paragraph C
 					qa( 11796),	-- Emergency Protocol: Section 8.2, Paragraph D
 					qh( 11887),	-- Emergency Supplies
 					qa( 11792),	-- Enemies of the Light
 					qa( 11672),	-- Enlistment Day
-					q( 11570),	-- Escape from the Winterfin Caverns
+					q(11570),	-- Escape from the Winterfin Caverns
 					qh( 11664),	-- Escaping the Mist
 					qh( 11683),	-- Fallen Necropolis
 					qh( 11635),	-- Farseer Grimwalker's Spirit
@@ -230,26 +230,26 @@ _.Zones =
 					qh( 11678),	-- Find Bristlehorn
 					qa( 11725),	-- Finding Pilot Tailspin
 					qa( 11956),	-- Finding the Phylactery
-					q( 46051),	-- FLAG - March of the Tadpoles Bit 01
-					q( 46052),	-- FLAG - March of the Tadpoles Bit 02
-					q( 46053),	-- FLAG - March of the Tadpoles Bit 03
-					q( 46054),	-- FLAG - March of the Tadpoles Bit 04
-					q( 46055),	-- FLAG - March of the Tadpoles Bit 05
+					q(46051),	-- FLAG - March of the Tadpoles Bit 01
+					q(46052),	-- FLAG - March of the Tadpoles Bit 02
+					q(46053),	-- FLAG - March of the Tadpoles Bit 03
+					q(46054),	-- FLAG - March of the Tadpoles Bit 04
+					q(46055),	-- FLAG - March of the Tadpoles Bit 05
 					qh( 11705),	-- Foolish Endeavors
 					qh( 29609),	-- Friends in Dalaran
 					qa( 11904),	-- Fruits of Our Labor
 					qa( 11715),	-- Fueling the Project
 					qa( 11793),	-- Further Investigation
-					q( 11619),	-- Gamel the Cruel
+					q(11619),	-- Gamel the Cruel
 					qh( 11721),	-- Gammothra the Tormentor
 					qa( 11673),	-- Get Me Outa Here!
 					qh( 11703),	-- Get to Getry
 					qa( 11873),	-- Give Fizzcrank the News
-					q( 11563),	-- Grmmurggll Mrllggrl Glrggl!!!
+					q(11563),	-- Grmmurggll Mrllggrl Glrggl!!!
 					qa( 11653),	-- Hah... You're Not So Big Now!
-					q( 11617),	-- Hampering Their Escape
-					q( 11869),	-- Happy as a Clam
-					q( 11936),	-- Hatching a Plan
+					q(11617),	-- Hampering Their Escape
+					q(11869),	-- Happy as a Clam
+					q(11936),	-- Hatching a Plan
 					qh( 13095),	-- Have They No Shame?
 					qa( 13094),	-- Have They No Shame?
 					qh( 29308),	-- Heart of Flame
@@ -257,12 +257,12 @@ _.Zones =
 					qh( 11916),	-- Hellscream's Champion
 					qh( 11585),	-- Hellscream's Vigil
 					qh( 11586),	-- Hellscream's Vigil
-					q( 11876),	-- Help Those That Cannot Help Themselves
+					q(11876),	-- Help Those That Cannot Help Themselves
 					qa( 28709),	-- Hero's Call: Northrend!
 					qa( 13485),	-- Honor the Flame
 					qh( 13493),	-- Honor the Flame
 					qh( 11660),	-- Horn of the Ancient Mariner
-					q( 11562),	-- I'm Being Blackmailed By My Cleaner
+					q(11562),	-- I'm Being Blackmailed By My Cleaner
 					qa( 11699),	-- I'm Stuck in this Damned Cage... But Not For Long!
 					qa( 11603),	-- In Wine, Truth
 					qh( 11655),	-- Into the Mist
@@ -270,17 +270,17 @@ _.Zones =
 					qa( 11903),	-- It's Time for Action
 					qa( 11650),	-- Just a Few More Things...
 					qh( 11637),	-- Kaganishu
-					q( 11613),	-- Karuk's Oath
-					q( 11879),	-- Kaw the Mammoth Destroyer
-					q( 11914),	-- Keep the Secret Safe
-					q( 11946),	-- Keristrasza
-					q( 11569),	-- Keymaster Urmgrgl
-					q( 11878),	-- Khu'nok Will Know
+					q(11613),	-- Karuk's Oath
+					q(11879),	-- Kaw the Mammoth Destroyer
+					q(11914),	-- Keep the Secret Safe
+					q(11946),	-- Keristrasza
+					q(11569),	-- Keymaster Urmgrgl
+					q(11878),	-- Khu'nok Will Know
 					qa( 11704),	-- King Mrgl-Mrgl
 					qh( 11702),	-- King Mrgl-Mrgl
 					qa( 12019),	-- Last Rites
-					q( 11610),	-- Leading the Ancestors Home
-					q( 11571),	-- Learning to Communicate
+					q(11610),	-- Leading the Ancestors Home
+					q(11571),	-- Learning to Communicate
 					qa( 11788),	-- Lefty Loosey, Righty Tighty
 					qa( 11700),	-- Let Bixie Know
 					qh( 11881),	-- Load'er Up!
@@ -295,140 +295,140 @@ _.Zones =
 					qa( 11698),	-- Might As Well Wipe Out the Scourge
 					qa( 11901),	-- Military? What Military?
 					qh( 11643),	-- Mobu's Pneumatic Tank Transjigamarig
-					q( 11576),	-- Monitoring the Rift: Cleftcliff Anomaly
-					q( 11582),	-- Monitoring the Rift: Sundered Chasm
-					q( 12728),	-- Monitoring the Rift: Winterfin Cavern
+					q(11576),	-- Monitoring the Rift: Cleftcliff Anomaly
+					q(11582),	-- Monitoring the Rift: Sundered Chasm
+					q(12728),	-- Monitoring the Rift: Winterfin Cavern
 					qh( 11649),	-- Motes of the Enraged
-					q( 11950),	-- Muahit's Wisdom
-					q( 11967),	-- Mustering the Reds
-					q( 11884),	-- Nedar, Lord of Rhinos...
+					q(11950),	-- Muahit's Wisdom
+					q(11967),	-- Mustering the Reds
+					q(11884),	-- Nedar, Lord of Rhinos...
 					qh( 11615),	-- Nerub'ar Secrets
 					qh( 11647),	-- Neutralizing the Cauldrons
 					qa( 11575),	-- Nick of Time
-					q( 29239),	-- Nordrassil's Bough
+					q(29239),	-- Nordrassil's Bough
 					qh( 11709),	-- Nork Bloodfrenzy's Charge
-					q( 13016),	-- Northal the Elder
+					q(13016),	-- Northal the Elder
 					qh( 13090),	-- Northern Cooking
 					qa( 13088),	-- Northern Cooking
-					q( 11871),	-- Not On Our Watch
-					q( 11949),	-- Not Without a Fight!
+					q(11871),	-- Not On Our Watch
+					q(11949),	-- Not Without a Fight!
 					qa( 11791),	-- Notify Arlos
-					q( 11912),	-- Nuts for Berries
+					q(11912),	-- Nuts for Berries
 					qa( 11693),	-- Oh Great... Plagued Magnataur!
-					q( 11560),	-- Oh Noes, the Tadpoles!
-					q( 29193),	-- On a Wing and a Prayer
+					q(11560),	-- Oh Noes, the Tadpoles!
+					q(29193),	-- On a Wing and a Prayer
 					qa( 11962),	-- One Last Delivery
 					qh( 11661),	-- Orabus the Helmsman
-					q( 13029),	-- Pamuya the Elder
+					q(13029),	-- Pamuya the Elder
 					qh( 11894),	-- Patching Up
 					qh( 11606),	-- Patience is a Virtue that We Don't Need
 					qa( 11902),	-- Pernicious Evidence
-					q( 11609),	-- Picking Up the Pieces
+					q(11609),	-- Picking Up the Pieces
 					qa( 11658),	-- Plan B
 					qa( 11882),	-- Playing with Fire
 					qa( 11897),	-- Plug the Sinkholes
 					qh( 11717),	-- Pollen from the Source
-					q( 11905),	-- Postponing the Inevitable
-					q( 11945),	-- Preparing for the Worst
-					q( 11587),	-- Prison Break
-					q( 11973),	-- Prisoner of War
+					q(11905),	-- Postponing the Inevitable
+					q(11945),	-- Preparing for the Worst
+					q(11587),	-- Prison Break
+					q(11973),	-- Prisoner of War
 					qh( 11594),	-- Put Them to Rest
-					q( 11941),	-- Puzzling...
-					q( 11911),	-- Quickening
+					q(11941),	-- Puzzling...
+					q(11911),	-- Quickening
 					qa( 11697),	-- Rats, Tinky Went into the Necropolis!
 					qa( 11712),	-- Re-Cursive
-					q( 11900),	-- Reading the Meters
-					q( 11612),	-- Reclaiming the Quarry
+					q(11900),	-- Reading the Meters
+					q(11612),	-- Reclaiming the Quarry
 					qa( 11908),	-- Reference Material
-					q( 11679),	-- Reforging the Key
+					q(11679),	-- Reforging the Key
 					qh( 11618),	-- Reinforcements Incoming...
 					qh( 11591),	-- Report to Steeljaw's Caravan
 					qa( 12035),	-- Repurposed Technology
-					q( 11681),	-- Rescuing Evanor
+					q(11681),	-- Rescuing Evanor
 					qh( 11638),	-- Return My Remains
 					qh( 11629),	-- Return to the Spirit Talker
 					qh( 11689),	-- Return with the Bad News
 					qh( 11639),	-- Revenge Upon Magmoth
 					qh( 11888),	-- Ride to Taunka'le Village
 					qh( 11674),	-- Sage Highmesa is Missing
-					q( 11957),	-- Saragosa's End
-					q( 13012),	-- Sardis the Elder
+					q(11957),	-- Saragosa's End
+					q(13012),	-- Sardis the Elder
 					qh( 11684),	-- Scouting the Sinkholes
 					qa( 11713),	-- Scouting the Sinkholes
-					q( 11910),	-- Secrets of the Ancients
+					q(11910),	-- Secrets of the Ancients
 					qh( 11662),	-- Seek Out Karuk!
-					q( 11663),	-- Sharing Intelligence
+					q(11663),	-- Sharing Intelligence
 					qh( 11659),	-- Shatter the Orbs!
 					qh( 11628),	-- Shrouds of the Scourge
 					qh( 11899),	-- Souls of the Decursed
-					q( 11961),	-- Spirits Watch Over Us
-					q( 11969),	-- Springing the Trap
+					q(11961),	-- Spirits Watch Over Us
+					q(11969),	-- Springing the Trap
 					qh( 11677),	-- Stop the Plague
-					q( 11564),	-- Succulent Orca Stew
+					q(11564),	-- Succulent Orca Stew
 					qh( 11644),	-- Super Strong Metal Plates!
-					q( 11566),	-- Surrender... Not!
+					q(11566),	-- Surrender... Not!
 					qa( 11944),	-- Surrounded!
 					qa( 11913),	-- Take No Chances
 					qh( 11611),	-- Taken by the Scourge
 					qh( 11598),	-- Taking Back Mightstone Quarry
-					q( 11680),	-- Taking Wing
+					q(11680),	-- Taking Wing
 					qh( 11642),	-- Tank Ain't Gonna Fix Itself
 					qh( 11651),	-- Tanks a lot...
 					qa( 11599),	-- Thassarian, My Brother
 					qa( 12088),	-- Thassarian, the Death Knight
-					q( 11870),	-- The Abandoned Reach
-					q( 11648),	-- The Art of Persuasion
-					q( 11892),	-- The Assassination of Harold Lane
+					q(11870),	-- The Abandoned Reach
+					q(11648),	-- The Art of Persuasion
+					q(11892),	-- The Assassination of Harold Lane
 					qh( 11630),	-- The Bad Earth
-					q( 11646),	-- The Borean Inquisition
-					q( 11943),	-- The Cell
+					q(11646),	-- The Borean Inquisition
+					q(11943),	-- The Cell
 					qh( 11706),	-- The Collapse
-					q( 11868),	-- The Culler Cometh
+					q(11868),	-- The Culler Cometh
 					qh( 11595),	-- The Defense of Warsong Hold
 					qh( 11596),	-- The Defense of Warsong Hold
 					qh( 11597),	-- The Defense of Warsong Hold
 					qh( 11687),	-- The Doctor and the Lich-Lord
-					q( 11626),	-- The Emissary
+					q(11626),	-- The Emissary
 					qh( 11929),	-- The Fall of Taunka'le Village
 					qa( 11798),	-- The Gearmaster
 					qh( 11685),	-- The Heart of the Elements
-					q( 11605),	-- The Honored Ancestors
+					q(11605),	-- The Honored Ancestors
 					qh( 11593),	-- The Honored Dead
 					qh( 11695),	-- The Horn of Elemental Fury
 					qa( 11794),	-- The Hunt is On
 					qh( 11720),	-- The Invasion of Gammoth
 					qa( 11600),	-- The Late William Allerton
 					qa( 12157),	-- The Lost Courier
-					q( 11607),	-- The Lost Spirits
+					q(11607),	-- The Lost Spirits
 					qa( 12794),	-- The Magical Kingdom of Dalaran
 					qh( 12791),	-- The Magical Kingdom of Dalaran
 					qa( 11708),	-- The Mechagnomes
-					q( 11872),	-- The Nefarious Clam Master...
+					q(11872),	-- The Nefarious Clam Master...
 					qh( 11652),	-- The Plains of Nasam
 					qh( 11893),	-- The Power of the Elements
 					qa( 11797),	-- The Siege
 					qh( 11624),	-- The Sky Will Know
 					qa( 12086),	-- The Son of Karkut
-					q( 11565),	-- The Spare Suit
+					q(11565),	-- The Spare Suit
 					qh( 11654),	-- The Spire of Blood
-					q( 13124),	-- The Struggle Persists
+					q(13124),	-- The Struggle Persists
 					qh( 11907),	-- The Sub-Chieftains
-					q( 11968),	-- The Tides Turn
-					q( 11625),	-- The Trident of Naz'jan
+					q(11968),	-- The Tides Turn
+					q(11625),	-- The Trident of Naz'jan
 					qa( 11729),	-- The Ultrasonic Screwdriver
 					qh( 11686),	-- The Warsong Farms
-					q( 46064),	-- The Ways of the World
+					q(46064),	-- The Ways of the World
 					qh( 11716),	-- The Wondrous Bloodspore
-					q( 11561),	-- Them!
+					q(11561),	-- Them!
 					qa( 11694),	-- There's Something Going On In Those Caves
-					q( 29194),	-- Through a Glass, Darkly
-					q( 29270),	-- Time Grows Short
+					q(29194),	-- Through a Glass, Darkly
+					q(29270),	-- Time Grows Short
 					qh( 12486),	-- To Bor'gorok Outpost, Quickly!
 					qh( 11574),	-- Too Close For Comfort
-					q( 12117),	-- Travel to Moa'ki Harbor
-					q( 11733),	-- Traversing the Rift
+					q(12117),	-- Travel to Moa'ki Harbor
+					q(11733),	-- Traversing the Rift
 					qh( 11722),	-- Trophies of Gammoth
-					q( 11865),	-- Unfit for Death
+					q(11865),	-- Unfit for Death
 					qh( 11614),	-- Untold Truths
 					qh( 11714),	-- Vermin Extermination
 					qh( 11631),	-- Vision of Air
@@ -440,7 +440,7 @@ _.Zones =
 					qh( 11632),	-- What the Cold Wind Brings...
 					qa( 11710),	-- What's the Matter with the Transmatter?
 					qh( 11634),	-- Wind Master To'bor
-					q( 11559),	-- Winterfin Commerce
+					q(11559),	-- Winterfin Commerce
 					qa(11927),	-- Word on the Street
 					qh(11640),	-- Words of Power
 					qa(11942),	-- Words of Power

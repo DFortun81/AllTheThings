@@ -163,270 +163,270 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[
-					q( 30581),	-- ... and the Pot, Too!
+					q(30581),	-- ... and the Pot, Too!
 					qh( 31395),	-- A Celestial Experience
 					qa( 31394),	-- A Celestial Experience
-					q( 30746),	-- A Fair Trade
-					q( 30820),	-- A Funeral
+					q(30746),	-- A Fair Trade
+					q(30820),	-- A Funeral
 					qh( 32352),	-- A Gathering Storm
-					q( 30808),	-- A Grummle's Luck
+					q(30808),	-- A Grummle's Luck
 					qa( 32377),	-- A Kor'kron In Our Midst
-					q( 30715),	-- A Line Unbroken
-					q( 30599),	-- A Monkey Idol
-					q( 30751),	-- A Terrible Sacrifice
+					q(30715),	-- A Line Unbroken
+					q(30599),	-- A Monkey Idol
+					q(30751),	-- A Terrible Sacrifice
 					qh( 31511),	-- A Witness to History
 					qa( 31512),	-- A Witness to History
-					q( 30596),	-- A Zandalari Troll?
-					q( 30615),	-- A Zandalari Troll?
+					q(30596),	-- A Zandalari Troll?
+					q(30615),	-- A Zandalari Troll?
 					qa( 30508),	-- Admiral Taylor has Awakened
 					qa( 30506),	-- Admiral Taylor has Awakened
 					qa( 30507),	-- Admiral Taylor has Awakened
-					q( 30459),	-- All of the Arrows
-					q( 30796),	-- An End to Everything
+					q(30459),	-- All of the Arrows
+					q(30796),	-- An End to Everything
 					qh( 32191),	-- Ancient Guardians
 					qa( 32315),	-- Anduin's Plea
-					q( 30491),	-- At the Yak Wash
-					q( 30492),	-- Back in Yak
+					q(30491),	-- At the Yak Wash
+					q(30492),	-- Back in Yak
 					qh( 31253),	-- Back to Eastwind Rest
 					qa( 31252),	-- Back to Westwind Rest
 					qa( 32194),	-- Bad Blood
 					qh( 30656),	-- Barrels of Fun
 					qa( 30651),	-- Barrels of Fun
-					q( 31834),	-- Begin Your Training: Master Cheng
+					q(31834),	-- Begin Your Training: Master Cheng
 					qh( 31251),	-- Best Meals Anywhere!
-					q( 31847),	-- Better Dead than Dread
-					q( 31695),	-- Beyond the Wall
+					q(31847),	-- Better Dead than Dread
+					q(31695),	-- Beyond the Wall
 					qh( 32192),	-- Bloodlines
 					qa( 30583),	-- Blue Dwarf Needs Food Badly
-					q( 30604),	-- Breaking Broketooth
-					q( 30798),	-- Breaking the Emperor's Shield
+					q(30604),	-- Breaking Broketooth
+					q(30798),	-- Breaking the Emperor's Shield
 					qh( 32399),	-- Breath of Darkest Shadow
 					qa( 32401),	-- Breath of Darkest Shadow
-					q( 30605),	-- Bros Before Hozen
+					q(30605),	-- Bros Before Hozen
 					qa( 32383),	-- Bugging Out
-					q( 30807),	-- By the Falls, For the Fallen
-					q( 30457),	-- Call Out Their Leader
-					q( 32041),	-- Candy Bucket
+					q(30807),	-- By the Falls, For the Fallen
+					q(30457),	-- Call Out Their Leader
+					q(32041),	-- Candy Bucket
 					qh( 32040),	-- Candy Bucket
-					q( 32051),	-- Candy Bucket
+					q(32051),	-- Candy Bucket
 					qa( 32042),	-- Candy Bucket
-					q( 32037),	-- Candy Bucket
-					q( 32039),	-- Candy Bucket
+					q(32037),	-- Candy Bucket
+					q(32039),	-- Candy Bucket
 					qa( 30514),	-- Challenge Accepted
 					qh( 30515),	-- Challenge Accepted
-					q( 30802),	-- Chasing the Storm
-					q( 30816),	-- Checking In
+					q(30802),	-- Chasing the Storm
+					q(30816),	-- Checking In
 					qh( 31459),	-- Cho's Missive
 					qa( 31460),	-- Cho's Missive
-					q( 46347),	-- Clean-up on Aisle Sha
-					q( 30828),	-- Cleansing the Mere
+					q(46347),	-- Clean-up on Aisle Sha
+					q(30828),	-- Cleansing the Mere
 					qh( 32378),	-- Clearing a Path
-					q( 30487),	-- Comin' Round the Mountain
-					q( 31944),	-- Complete Your Training: The Final Test
-					q( 31517),	-- Contending With Bullies
-					q( 31837),	-- Continue Your Training: Master Cheng
-					q( 31839),	-- Continue Your Training: Master Hsu
-					q( 31835),	-- Continue Your Training: Master Kistane
-					q( 31838),	-- Continue Your Training: Master Tsang
-					q( 31833),	-- Continue Your Training: Master Woo
-					q( 31836),	-- Continue Your Training: Master Yoon
+					q(30487),	-- Comin' Round the Mountain
+					q(31944),	-- Complete Your Training: The Final Test
+					q(31517),	-- Contending With Bullies
+					q(31837),	-- Continue Your Training: Master Cheng
+					q(31839),	-- Continue Your Training: Master Hsu
+					q(31835),	-- Continue Your Training: Master Kistane
+					q(31838),	-- Continue Your Training: Master Tsang
+					q(31833),	-- Continue Your Training: Master Woo
+					q(31836),	-- Continue Your Training: Master Yoon
 					qa( 30593),	-- Deanimate the Reanimated
 					qh( 30594),	-- Deanimate the Reanimated
-					q( 30991),	-- Do a Barrel Roll!
+					q(30991),	-- Do a Barrel Roll!
 					qh( 30513),	-- Eastwind Rest
 					qh( 32351),	-- Echoes of Thunder
-					q( 30794),	-- Emergency Care
-					q( 31011),	-- Enemies At Our Door
-					q( 30468),	-- Enraged Vengeance
-					q( 31279),	-- Everything I Know About Cooking
-					q( 30571),	-- Farmhand Freedom
-					q( 30834),	-- Father and Child Reunion
+					q(30794),	-- Emergency Care
+					q(31011),	-- Enemies At Our Door
+					q(30468),	-- Enraged Vengeance
+					q(31279),	-- Everything I Know About Cooking
+					q(30571),	-- Farmhand Freedom
+					q(30834),	-- Father and Child Reunion
 					qh( 32319),	-- Find Thrall!
-					q( 30992),	-- Finish This!
-					q( 30935),	-- Fisherman's Tale
-					q( 30967),	-- Free the Dissenters
-					q( 30489),	-- Fresh Needle Scent
+					q(30992),	-- Finish This!
+					q(30935),	-- Fisherman's Tale
+					q(30967),	-- Free the Dissenters
+					q(30489),	-- Fresh Needle Scent
 					qh( 30509),	-- General Nazgrim has Awakened
 					qh( 30510),	-- General Nazgrim has Awakened
 					qh( 30511),	-- General Nazgrim has Awakened
-					q( 30824),	-- Gourmet Kafa
-					q( 30743),	-- Gourmet Kafa
-					q( 31956),	-- Grand Master Yon
-					q( 30610),	-- Grummle! Grummle! Grummle!
-					q( 30943),	-- Handle With Care
+					q(30824),	-- Gourmet Kafa
+					q(30743),	-- Gourmet Kafa
+					q(31956),	-- Grand Master Yon
+					q(30610),	-- Grummle! Grummle! Grummle!
+					q(30943),	-- Handle With Care
 					qa( 32397),	-- He Won't Even Miss It
 					qa( 32382),	-- He's In Deep
 					qa( 32316),	-- Heart Of The Alliance
-					q( 30460),	-- Hit Medicine
-					q( 30681),	-- Holed Up
-					q( 30680),	-- Holed Up
-					q( 30673),	-- Holed Up
-					q( 30682),	-- Holed Up
-					q( 32500),	-- Honor the Flame
-					q( 32497),	-- Honor the Flame
-					q( 30723),	-- Honor, Even in Death
-					q( 30607),	-- Hozen Love Their Keys
+					q(30460),	-- Hit Medicine
+					q(30681),	-- Holed Up
+					q(30680),	-- Holed Up
+					q(30673),	-- Holed Up
+					q(30682),	-- Holed Up
+					q(32500),	-- Honor the Flame
+					q(32497),	-- Honor the Flame
+					q(30723),	-- Honor, Even in Death
+					q(30607),	-- Hozen Love Their Keys
 					qa( 30652),	-- In Tents Channeling
 					qh( 30657),	-- In Tents Channeling
-					q( 30601),	-- Instant Courage
-					q( 31031),	-- Into the Monastery
-					q( 30944),	-- It Takes A Village
-					q( 30797),	-- It Was Almost Alive
-					q( 30805),	-- Justice
-					q( 30825),	-- Kota Blend
-					q( 30744),	-- Kota Blend
-					q( 30994),	-- Lao-Chin's Gambit
+					q(30601),	-- Instant Courage
+					q(31031),	-- Into the Monastery
+					q(30944),	-- It Takes A Village
+					q(30797),	-- It Was Almost Alive
+					q(30805),	-- Justice
+					q(30825),	-- Kota Blend
+					q(30744),	-- Kota Blend
+					q(30994),	-- Lao-Chin's Gambit
 					qh( 32379),	-- Legacy of the Korune
-					q( 30801),	-- Lessons from History
-					q( 46349),	-- Lilies for Ryuli
-					q( 30942),	-- Make A Fighter Out of Me
+					q(30801),	-- Lessons from History
+					q(46349),	-- Lilies for Ryuli
+					q(30942),	-- Make A Fighter Out of Me
 					qh( 32368),	-- Memory Wine
 					qa( 32371),	-- Memory Wine
 					qh( 30620),	-- Mogu?! Oh No-gu!
 					qa( 30619),	-- Mogu?! Oh No-gu!
 					qh( 31457),	-- Muskpaw Ranch
 					qa( 31456),	-- Muskpaw Ranch
-					q( 30768),	-- My Husband...
-					q( 30467),	-- My Son...
-					q( 30600),	-- No Pack Left Behind
-					q( 30750),	-- Off the Wall!
-					q( 30614),	-- Oil Stop
-					q( 30683),	-- One Traveler's Misfortune
+					q(30768),	-- My Husband...
+					q(30467),	-- My Son...
+					q(30600),	-- No Pack Left Behind
+					q(30750),	-- Off the Wall!
+					q(30614),	-- Oil Stop
+					q(30683),	-- One Traveler's Misfortune
 					qa( 30650),	-- Pandaren Prisoners
 					qh( 30655),	-- Pandaren Prisoners
-					q( 30999),	-- Path Less Traveled
-					q( 32816),	-- Path of the Last Emperor
-					q( 31844),	-- Practice Makes Perfect: Master Cheng
-					q( 31840),	-- Practice Makes Perfect: Master Cheng
-					q( 31846),	-- Practice Makes Perfect: Master Hsu
-					q( 31842),	-- Practice Makes Perfect: Master Kistane
-					q( 31845),	-- Practice Makes Perfect: Master Tsang
-					q( 31841),	-- Practice Makes Perfect: Master Woo
-					q( 31843),	-- Practice Makes Perfect: Master Yoon
-					q( 30819),	-- Preparing the Remains
-					q( 30766),	-- Profiting off of the Past
-					q( 30595),	-- Profiting off of the Past
-					q( 31228),	-- Prophet Khar'zul
-					q( 30710),	-- Provoking the Trolls
-					q( 30765),	-- Regaining Honor
+					q(30999),	-- Path Less Traveled
+					q(32816),	-- Path of the Last Emperor
+					q(31844),	-- Practice Makes Perfect: Master Cheng
+					q(31840),	-- Practice Makes Perfect: Master Cheng
+					q(31846),	-- Practice Makes Perfect: Master Hsu
+					q(31842),	-- Practice Makes Perfect: Master Kistane
+					q(31845),	-- Practice Makes Perfect: Master Tsang
+					q(31841),	-- Practice Makes Perfect: Master Woo
+					q(31843),	-- Practice Makes Perfect: Master Yoon
+					q(30819),	-- Preparing the Remains
+					q(30766),	-- Profiting off of the Past
+					q(30595),	-- Profiting off of the Past
+					q(31228),	-- Prophet Khar'zul
+					q(30710),	-- Provoking the Trolls
+					q(30765),	-- Regaining Honor
 					qh( 32318),	-- Regeneration Takes Time
-					q( 31809),	-- Remnants of Anger
-					q( 30469),	-- Repossession
-					q( 30618),	-- Resupplying One Keg
-					q( 46342),	-- Return to the Broken Peak
-					q( 30946),	-- Revelations
-					q( 30617),	-- Roadside Assistance
+					q(31809),	-- Remnants of Anger
+					q(30469),	-- Repossession
+					q(30618),	-- Resupplying One Keg
+					q(46342),	-- Return to the Broken Peak
+					q(30946),	-- Revelations
+					q(30617),	-- Roadside Assistance
 					qh( 31256),	-- Round 'Em Up
 					qa( 30575),	-- Round 'Em Up
-					q( 30879),	-- Round 1: Brewmaster Chani
-					q( 30880),	-- Round 1: The Streetfighter
-					q( 30881),	-- Round 2: Clever Ashyo & Ken-Ken
-					q( 30882),	-- Round 2: Kang Bramblestaff
-					q( 30885),	-- Round 3: Master Boom Boom
-					q( 30883),	-- Round 3: The Wrestler
-					q( 30902),	-- Round 4: Master Windfur
-					q( 30907),	-- Round 4: The P.U.G.
-					q( 30684),	-- Seeker's Folly
-					q( 31306),	-- Seeker's Folly
-					q( 30742),	-- Shut it Down
-					q( 30823),	-- Shut it Down
-					q( 46344),	-- Smelly's Luckydo
+					q(30879),	-- Round 1: Brewmaster Chani
+					q(30880),	-- Round 1: The Streetfighter
+					q(30881),	-- Round 2: Clever Ashyo & Ken-Ken
+					q(30882),	-- Round 2: Kang Bramblestaff
+					q(30885),	-- Round 3: Master Boom Boom
+					q(30883),	-- Round 3: The Wrestler
+					q(30902),	-- Round 4: Master Windfur
+					q(30907),	-- Round 4: The P.U.G.
+					q(30684),	-- Seeker's Folly
+					q(31306),	-- Seeker's Folly
+					q(30742),	-- Shut it Down
+					q(30823),	-- Shut it Down
+					q(46344),	-- Smelly's Luckydo
 					qh( 32284),	-- Someone You Should See
-					q( 30795),	-- Staying Connected
-					q( 30800),	-- Stealing Their Thunder King
+					q(30795),	-- Staying Connected
+					q(30800),	-- Stealing Their Thunder King
 					qa( 31392),	-- Temple of the White Tiger
 					qh( 31393),	-- Temple of the White Tiger
-					q( 31207),	-- The Arena of Annihilation
+					q(31207),	-- The Arena of Annihilation
 					qa( 32400),	-- The Bell Speaks
 					qh( 32398),	-- The Bell Speaks
-					q( 30603),	-- The Broketooth Ravage
-					q( 30821),	-- The Burlap Grind
-					q( 30747),	-- The Burlap Grind
-					q( 30592),	-- The Burlap Trail: To Burlap Waystation
-					q( 30692),	-- The Burlap Trail: To Kota Basecamp
-					q( 43338),	-- The Codex of Ra
-					q( 43334),	-- The Coming Storm
-					q( 30665),	-- The Defense of Shado-Pan Fallback
+					q(30603),	-- The Broketooth Ravage
+					q(30821),	-- The Burlap Grind
+					q(30747),	-- The Burlap Grind
+					q(30592),	-- The Burlap Trail: To Burlap Waystation
+					q(30692),	-- The Burlap Trail: To Kota Basecamp
+					q(43338),	-- The Codex of Ra
+					q(43334),	-- The Coming Storm
+					q(30665),	-- The Defense of Shado-Pan Fallback
 					qa( 32394),	-- The Divine Bell
 					qh( 32392),	-- The Divine Bell
-					q( 30855),	-- The Fall of Shai Hu
-					q( 30804),	-- The Fearmaster
+					q(30855),	-- The Fall of Shai Hu
+					q(30804),	-- The Fearmaster
 					qa( 32332),	-- The First Riddle: Mercy
 					qa( 32335),	-- The Greatest Prank
 					qa( 32355),	-- The Harmonic Mallet
 					qh( 32244),	-- The Korune
 					qa( 32370),	-- The Kun-Lai Expedition
 					qh( 32363),	-- The Kun-Lai Expedition
-					q( 31611),	-- The Kun-Lai Kicker
-					q( 30582),	-- The Late Mrs. Muskpaw
-					q( 30612),	-- The Leader Hozen
+					q(31611),	-- The Kun-Lai Kicker
+					q(30582),	-- The Late Mrs. Muskpaw
+					q(30612),	-- The Leader Hozen
 					qa( 31452),	-- The Missing Merchant
 					qh( 31451),	-- The Missing Merchant
-					q( 30488),	-- The Missing Muskpaw
+					q(30488),	-- The Missing Muskpaw
 					qa( 32321),	-- The Monkey King
 					qa( 30660),	-- The Ordo Warbringer
 					qh( 30661),	-- The Ordo Warbringer
 					qh( 30663),	-- The Ordo Warbringer
 					qa( 30662),	-- The Ordo Warbringer
-					q( 31856),	-- The Peak of Serenity - Begin Your Training
-					q( 31989),	-- The Peak of Serenity - Complete Your Training
-					q( 31859),	-- The Peak of Serenity - Continue Your Training
-					q( 31860),	-- The Peak of Serenity - Continue Your Training
-					q( 31855),	-- The Peak of Serenity - Continue Your Training
-					q( 31857),	-- The Peak of Serenity - Continue Your Training
-					q( 31861),	-- The Peak of Serenity - Continue Your Training
-					q( 31858),	-- The Peak of Serenity - Continue Your Training
-					q( 30602),	-- The Rabbitsfoot
-					q( 30480),	-- The Ritual
-					q( 46348),	-- The River to Ban-Lu
+					q(31856),	-- The Peak of Serenity - Begin Your Training
+					q(31989),	-- The Peak of Serenity - Complete Your Training
+					q(31859),	-- The Peak of Serenity - Continue Your Training
+					q(31860),	-- The Peak of Serenity - Continue Your Training
+					q(31855),	-- The Peak of Serenity - Continue Your Training
+					q(31857),	-- The Peak of Serenity - Continue Your Training
+					q(31861),	-- The Peak of Serenity - Continue Your Training
+					q(31858),	-- The Peak of Serenity - Continue Your Training
+					q(30602),	-- The Rabbitsfoot
+					q(30480),	-- The Ritual
+					q(46348),	-- The River to Ban-Lu
 					qh( 31255),	-- The Road to Kun-Lai
-					q( 38936),	-- The Road to Kun-Lai
+					q(38936),	-- The Road to Kun-Lai
 					qa( 31254),	-- The Road to Kun-Lai
 					qa( 32393),	-- The Ruins of Korune
 					qh( 32391),	-- The Ruins of Korune
-					q( 30806),	-- The Scent of Life
+					q(30806),	-- The Scent of Life
 					qa( 32333),	-- The Second Riddle: Fellowship
 					qh( 31453),	-- The Shado-Pan
 					qa( 31455),	-- The Shado-Pan
-					q( 46346),	-- The Shadow of Ban-Lu
+					q(46346),	-- The Shadow of Ban-Lu
 					qa( 32455),	-- The Silence
-					q( 30608),	-- The Snackrifice
+					q(30608),	-- The Snackrifice
 					qa( 32243),	-- The Source of Korune Power
-					q( 31285),	-- The Spring Drifter
+					q(31285),	-- The Spring Drifter
 					qa( 32334),	-- The Third Riddle: Strength
-					q( 30799),	-- The Tomb of Shadows
-					q( 30829),	-- The Tongue of Ba-Shon
-					q( 31492),	-- The Torch of Strength
-					q( 46343),	-- The Trail of Ban-Lu
-					q( 46350),	-- The Trial of Ban-Lu
-					q( 31518),	-- The Vale of Eternal Blossoms
-					q( 30496),	-- The Waterspeaker's Staff
-					q( 30621),	-- They Stole My Luck!
-					q( 30606),	-- Thumping Knucklethump
-					q( 32441),	-- Thundering Pandaren Spirit
+					q(30799),	-- The Tomb of Shadows
+					q(30829),	-- The Tongue of Ba-Shon
+					q(31492),	-- The Torch of Strength
+					q(46343),	-- The Trail of Ban-Lu
+					q(46350),	-- The Trial of Ban-Lu
+					q(31518),	-- The Vale of Eternal Blossoms
+					q(30496),	-- The Waterspeaker's Staff
+					q(30621),	-- They Stole My Luck!
+					q(30606),	-- Thumping Knucklethump
+					q(32441),	-- Thundering Pandaren Spirit
 					qh( 32448),	-- Ties with the Past
 					qa( 32193),	-- To Mogujia
 					qh( 32190),	-- To Mogujia
 					qh( 32376),	-- To the Valley!
-					q( 30724),	-- To the Wall!
-					q( 30699),	-- To Winter's Blossom
-					q( 30616),	-- Traffic Issues
+					q(30724),	-- To the Wall!
+					q(30699),	-- To Winter's Blossom
+					q(30616),	-- Traffic Issues
 					qh( 32384),	-- Trapping the Leader
 					qa( 31380),	-- Trial At The Temple of the White Tiger
 					qh( 31381),	-- Trial At The Temple of the White Tiger
-					q( 30826),	-- Trouble Brewing
-					q( 30745),	-- Trouble Brewing
+					q(30826),	-- Trouble Brewing
+					q(30745),	-- Trouble Brewing
 					qa( 30569),	-- Trouble on the Farmstead
 					qh( 30570),	-- Trouble on the Farmstead
-					q( 30670),	-- Turnabout
-					q( 30752),	-- Unbelievable!
-					q( 30611),	-- Unleash The Yeti!
-					q( 30690),	-- Unmasking the Yaungol
+					q(30670),	-- Turnabout
+					q(30752),	-- Unbelievable!
+					q(30611),	-- Unleash The Yeti!
+					q(30690),	-- Unmasking the Yaungol
 					qa( 30512),	-- Westwind Rest
-					q( 30945),	-- What's Yours Is Mine
-					q( 30993),	-- Where are My Reinforcements?
-					q( 30490),	-- Yakity Yak
-					q( 30587),	-- Yakity Yak
+					q(30945),	-- What's Yours Is Mine
+					q(30993),	-- Where are My Reinforcements?
+					q(30490),	-- Yakity Yak
+					q(30587),	-- Yakity Yak
 --]]
 					q(30820,  {  	-- A Funeral
 						i(82496),
@@ -1251,292 +1251,292 @@ _.Zones =
 						i(91761),	-- Malevolent Gladiator's Slicer
 						i(91484),	-- Malevolent Gladiator's Spellblade
 						i(91535),	-- Malevolent Gladiator's Staff
-						i( 91618),	-- Malevolent Gladiator's Copperskin Tunic
-						i( 91626),	-- Malevolent Gladiator's Scaled Legguards
-						i( 91454),	-- Malevolent Gladiator's Cape of Prowess
-						i( 91462),	-- Malevolent Gladiator's Cord of Cruelty
-						i( 91464),	-- Malevolent Gladiator's Cord of Accuracy
-						i( 91466),	-- Malevolent Gladiator's Cord of Meditation
-						i( 91468),	-- Malevolent Gladiator's Treads of Cruelty
-						i( 91470),	-- Malevolent Gladiator's Treads of Alacrity
-						i( 91472),	-- Malevolent Gladiator's Treads of Meditation
-						i( 91474),	-- Malevolent Gladiator's Cuffs of Accuracy
-						i( 91475),	-- Malevolent Gladiator's Cuffs of Prowess
-						i( 91476),	-- Malevolent Gladiator's Cuffs of Meditation
-						i( 91477),	-- Malevolent Gladiator's Drape of Cruelty
-						i( 91478),	-- Malevolent Gladiator's Drape of Prowess
-						i( 91479),	-- Malevolent Gladiator's Drape of Meditation
-						i( 91500),	-- Malevolent Gladiator's Dreadplate Chestpiece
-						i( 91502),	-- Malevolent Gladiator's Dreadplate Gauntlets
-						i( 91504),	-- Malevolent Gladiator's Dreadplate Helm
-						i( 91506),	-- Malevolent Gladiator's Dreadplate Legguards
-						i( 91508),	-- Malevolent Gladiator's Dreadplate Shoulders
-						i( 91510),	-- Malevolent Gladiator's Dragonhide Gloves
-						i( 91512),	-- Malevolent Gladiator's Dragonhide Helm
-						i( 91514),	-- Malevolent Gladiator's Dragonhide Legguards
-						i( 91516),	-- Malevolent Gladiator's Dragonhide Robes
-						i( 91518),	-- Malevolent Gladiator's Dragonhide Spaulders
-						i( 91520),	-- Malevolent Gladiator's Belt of Meditation
-						i( 91522),	-- Malevolent Gladiator's Footguards of Meditation
-						i( 91524),	-- Malevolent Gladiator's Bindings of Meditation
-						i( 91525),	-- Malevolent Gladiator's Kodohide Gloves
-						i( 91527),	-- Malevolent Gladiator's Kodohide Helm
-						i( 91529),	-- Malevolent Gladiator's Kodohide Legguards
-						i( 91531),	-- Malevolent Gladiator's Kodohide Robes
-						i( 91533),	-- Malevolent Gladiator's Kodohide Spaulders
-						i( 91537),	-- Malevolent Gladiator's Belt of Cruelty
-						i( 91539),	-- Malevolent Gladiator's Footguards of Alacrity
-						i( 91541),	-- Malevolent Gladiator's Bindings of Prowess
-						i( 91542),	-- Malevolent Gladiator's Wyrmhide Gloves
-						i( 91544),	-- Malevolent Gladiator's Wyrmhide Helm
-						i( 91546),	-- Malevolent Gladiator's Wyrmhide Legguards
-						i( 91548),	-- Malevolent Gladiator's Wyrmhide Robes
-						i( 91550),	-- Malevolent Gladiator's Wyrmhide Spaulders
-						i( 91565),	-- Malevolent Gladiator's Links of Cruelty
-						i( 91567),	-- Malevolent Gladiator's Links of Accuracy
-						i( 91569),	-- Malevolent Gladiator's Sabatons of Cruelty
-						i( 91571),	-- Malevolent Gladiator's Sabatons of Alacrity
-						i( 91573),	-- Malevolent Gladiator's Wristguards of Alacrity
-						i( 91574),	-- Malevolent Gladiator's Wristguards of Accuracy
-						i( 91575),	-- Malevolent Gladiator's Chain Armor
-						i( 91577),	-- Malevolent Gladiator's Chain Gauntlets
-						i( 91579),	-- Malevolent Gladiator's Chain Helm
-						i( 91581),	-- Malevolent Gladiator's Chain Leggings
-						i( 91583),	-- Malevolent Gladiator's Chain Spaulders
-						i( 91585),	-- Malevolent Gladiator's Silk Handguards
-						i( 91587),	-- Malevolent Gladiator's Silk Cowl
-						i( 91589),	-- Malevolent Gladiator's Silk Trousers
-						i( 91591),	-- Malevolent Gladiator's Silk Robe
-						i( 91593),	-- Malevolent Gladiator's Silk Amice
-						i( 91595),	-- Malevolent Gladiator's Waistband of Cruelty
-						i( 91597),	-- Malevolent Gladiator's Boots of Alacrity
-						i( 91599),	-- Malevolent Gladiator's Armwraps of Accuracy
-						i( 91600),	-- Malevolent Gladiator's Ironskin Gloves
-						i( 91602),	-- Malevolent Gladiator's Ironskin Helm
-						i( 91604),	-- Malevolent Gladiator's Ironskin Legguards
-						i( 91606),	-- Malevolent Gladiator's Ironskin Spaulders
-						i( 91608),	-- Malevolent Gladiator's Ironskin Tunic
-						i( 91610),	-- Malevolent Gladiator's Copperskin Gloves
-						i( 91612),	-- Malevolent Gladiator's Copperskin Helm
-						i( 91614),	-- Malevolent Gladiator's Copperskin Legguards
-						i( 91616),	-- Malevolent Gladiator's Copperskin Spaulders
-						i( 91453),	-- Malevolent Gladiator's Cape of Cruelty
-						i( 91620),	-- Malevolent Gladiator's Scaled Chestpiece
-						i( 91622),	-- Malevolent Gladiator's Scaled Gauntlets
-						i( 91624),	-- Malevolent Gladiator's Scaled Helm
-						i( 91628),	-- Malevolent Gladiator's Scaled Shoulders
-						i( 91630),	-- Malevolent Gladiator's Clasp of Cruelty
-						i( 91632),	-- Malevolent Gladiator's Clasp of Meditation
-						i( 91634),	-- Malevolent Gladiator's Greaves of Alacrity
-						i( 91636),	-- Malevolent Gladiator's Greaves of Meditation
-						i( 91638),	-- Malevolent Gladiator's Bracers of Prowess
-						i( 91639),	-- Malevolent Gladiator's Bracers of Meditation
-						i( 91640),	-- Malevolent Gladiator's Ornamented Chestguard
-						i( 91642),	-- Malevolent Gladiator's Ornamented Gloves
-						i( 91644),	-- Malevolent Gladiator's Ornamented Headcover
-						i( 91646),	-- Malevolent Gladiator's Ornamented Legplates
-						i( 91648),	-- Malevolent Gladiator's Ornamented Spaulders
-						i( 91650),	-- Malevolent Gladiator's Girdle of Accuracy
-						i( 91652),	-- Malevolent Gladiator's Girdle of Prowess
-						i( 91654),	-- Malevolent Gladiator's Warboots of Cruelty
-						i( 91656),	-- Malevolent Gladiator's Warboots of Alacrity
-						i( 91658),	-- Malevolent Gladiator's Armplates of Proficiency
-						i( 91659),	-- Malevolent Gladiator's Armplates of Alacrity
-						i( 91662),	-- Malevolent Gladiator's Mooncloth Gloves
-						i( 91664),	-- Malevolent Gladiator's Mooncloth Helm
-						i( 91666),	-- Malevolent Gladiator's Mooncloth Leggings
-						i( 91668),	-- Malevolent Gladiator's Mooncloth Robe
-						i( 91670),	-- Malevolent Gladiator's Mooncloth Mantle
-						i( 91672),	-- Malevolent Gladiator's Satin Gloves
-						i( 91674),	-- Malevolent Gladiator's Satin Hood
-						i( 91676),	-- Malevolent Gladiator's Satin Leggings
-						i( 91678),	-- Malevolent Gladiator's Satin Robe
-						i( 91680),	-- Malevolent Gladiator's Satin Mantle
-						i( 91688),	-- Malevolent Gladiator's Waistband of Accuracy
-						i( 91690),	-- Malevolent Gladiator's Boots of Cruelty
-						i( 91692),	-- Malevolent Gladiator's Armwraps of Alacrity
-						i( 91693),	-- Malevolent Gladiator's Leather Tunic
-						i( 91695),	-- Malevolent Gladiator's Leather Gloves
-						i( 91697),	-- Malevolent Gladiator's Leather Helm
-						i( 91699),	-- Malevolent Gladiator's Leather Legguards
-						i( 91701),	-- Malevolent Gladiator's Leather Spaulders
-						i( 91703),	-- Malevolent Gladiator's Waistguard of Meditation
-						i( 91705),	-- Malevolent Gladiator's Footguards of Alacrity
-						i( 91707),	-- Malevolent Gladiator's Footguards of Meditation
-						i( 91709),	-- Malevolent Gladiator's Armbands of Prowess
-						i( 91710),	-- Malevolent Gladiator's Armbands of Meditation
-						i( 91711),	-- Malevolent Gladiator's Ringmail Armor
-						i( 91713),	-- Malevolent Gladiator's Ringmail Gauntlets
-						i( 91715),	-- Malevolent Gladiator's Ringmail Helm
-						i( 91717),	-- Malevolent Gladiator's Ringmail Leggings
-						i( 91719),	-- Malevolent Gladiator's Ringmail Spaulders
-						i( 91721),	-- Malevolent Gladiator's Linked Armor
-						i( 91723),	-- Malevolent Gladiator's Linked Gauntlets
-						i( 91725),	-- Malevolent Gladiator's Linked Helm
-						i( 91727),	-- Malevolent Gladiator's Linked Leggings
-						i( 91729),	-- Malevolent Gladiator's Linked Spaulders
-						i( 91731),	-- Malevolent Gladiator's Waistguard of Cruelty
-						i( 91733),	-- Malevolent Gladiator's Mail Armor
-						i( 91735),	-- Malevolent Gladiator's Mail Gauntlets
-						i( 91737),	-- Malevolent Gladiator's Mail Helm
-						i( 91739),	-- Malevolent Gladiator's Mail Leggings
-						i( 91741),	-- Malevolent Gladiator's Mail Spaulders
-						i( 91764),	-- Malevolent Gladiator's Cloak of Alacrity
-						i( 91765),	-- Malevolent Gladiator's Cloak of Prowess
-						i( 91773),	-- Malevolent Gladiator's Felweave Handguards
-						i( 91775),	-- Malevolent Gladiator's Felweave Cowl
-						i( 91777),	-- Malevolent Gladiator's Felweave Trousers
-						i( 91779),	-- Malevolent Gladiator's Felweave Raiment
-						i( 91781),	-- Malevolent Gladiator's Felweave Amice
-						i( 91783),	-- Malevolent Gladiator's Plate Chestpiece
-						i( 91785),	-- Malevolent Gladiator's Plate Gauntlets
-						i( 91787),	-- Malevolent Gladiator's Plate Helm
-						i( 91789),	-- Malevolent Gladiator's Plate Legguards
-						i( 91791),	-- Malevolent Gladiator's Plate Shoulders
+						i(91618),	-- Malevolent Gladiator's Copperskin Tunic
+						i(91626),	-- Malevolent Gladiator's Scaled Legguards
+						i(91454),	-- Malevolent Gladiator's Cape of Prowess
+						i(91462),	-- Malevolent Gladiator's Cord of Cruelty
+						i(91464),	-- Malevolent Gladiator's Cord of Accuracy
+						i(91466),	-- Malevolent Gladiator's Cord of Meditation
+						i(91468),	-- Malevolent Gladiator's Treads of Cruelty
+						i(91470),	-- Malevolent Gladiator's Treads of Alacrity
+						i(91472),	-- Malevolent Gladiator's Treads of Meditation
+						i(91474),	-- Malevolent Gladiator's Cuffs of Accuracy
+						i(91475),	-- Malevolent Gladiator's Cuffs of Prowess
+						i(91476),	-- Malevolent Gladiator's Cuffs of Meditation
+						i(91477),	-- Malevolent Gladiator's Drape of Cruelty
+						i(91478),	-- Malevolent Gladiator's Drape of Prowess
+						i(91479),	-- Malevolent Gladiator's Drape of Meditation
+						i(91500),	-- Malevolent Gladiator's Dreadplate Chestpiece
+						i(91502),	-- Malevolent Gladiator's Dreadplate Gauntlets
+						i(91504),	-- Malevolent Gladiator's Dreadplate Helm
+						i(91506),	-- Malevolent Gladiator's Dreadplate Legguards
+						i(91508),	-- Malevolent Gladiator's Dreadplate Shoulders
+						i(91510),	-- Malevolent Gladiator's Dragonhide Gloves
+						i(91512),	-- Malevolent Gladiator's Dragonhide Helm
+						i(91514),	-- Malevolent Gladiator's Dragonhide Legguards
+						i(91516),	-- Malevolent Gladiator's Dragonhide Robes
+						i(91518),	-- Malevolent Gladiator's Dragonhide Spaulders
+						i(91520),	-- Malevolent Gladiator's Belt of Meditation
+						i(91522),	-- Malevolent Gladiator's Footguards of Meditation
+						i(91524),	-- Malevolent Gladiator's Bindings of Meditation
+						i(91525),	-- Malevolent Gladiator's Kodohide Gloves
+						i(91527),	-- Malevolent Gladiator's Kodohide Helm
+						i(91529),	-- Malevolent Gladiator's Kodohide Legguards
+						i(91531),	-- Malevolent Gladiator's Kodohide Robes
+						i(91533),	-- Malevolent Gladiator's Kodohide Spaulders
+						i(91537),	-- Malevolent Gladiator's Belt of Cruelty
+						i(91539),	-- Malevolent Gladiator's Footguards of Alacrity
+						i(91541),	-- Malevolent Gladiator's Bindings of Prowess
+						i(91542),	-- Malevolent Gladiator's Wyrmhide Gloves
+						i(91544),	-- Malevolent Gladiator's Wyrmhide Helm
+						i(91546),	-- Malevolent Gladiator's Wyrmhide Legguards
+						i(91548),	-- Malevolent Gladiator's Wyrmhide Robes
+						i(91550),	-- Malevolent Gladiator's Wyrmhide Spaulders
+						i(91565),	-- Malevolent Gladiator's Links of Cruelty
+						i(91567),	-- Malevolent Gladiator's Links of Accuracy
+						i(91569),	-- Malevolent Gladiator's Sabatons of Cruelty
+						i(91571),	-- Malevolent Gladiator's Sabatons of Alacrity
+						i(91573),	-- Malevolent Gladiator's Wristguards of Alacrity
+						i(91574),	-- Malevolent Gladiator's Wristguards of Accuracy
+						i(91575),	-- Malevolent Gladiator's Chain Armor
+						i(91577),	-- Malevolent Gladiator's Chain Gauntlets
+						i(91579),	-- Malevolent Gladiator's Chain Helm
+						i(91581),	-- Malevolent Gladiator's Chain Leggings
+						i(91583),	-- Malevolent Gladiator's Chain Spaulders
+						i(91585),	-- Malevolent Gladiator's Silk Handguards
+						i(91587),	-- Malevolent Gladiator's Silk Cowl
+						i(91589),	-- Malevolent Gladiator's Silk Trousers
+						i(91591),	-- Malevolent Gladiator's Silk Robe
+						i(91593),	-- Malevolent Gladiator's Silk Amice
+						i(91595),	-- Malevolent Gladiator's Waistband of Cruelty
+						i(91597),	-- Malevolent Gladiator's Boots of Alacrity
+						i(91599),	-- Malevolent Gladiator's Armwraps of Accuracy
+						i(91600),	-- Malevolent Gladiator's Ironskin Gloves
+						i(91602),	-- Malevolent Gladiator's Ironskin Helm
+						i(91604),	-- Malevolent Gladiator's Ironskin Legguards
+						i(91606),	-- Malevolent Gladiator's Ironskin Spaulders
+						i(91608),	-- Malevolent Gladiator's Ironskin Tunic
+						i(91610),	-- Malevolent Gladiator's Copperskin Gloves
+						i(91612),	-- Malevolent Gladiator's Copperskin Helm
+						i(91614),	-- Malevolent Gladiator's Copperskin Legguards
+						i(91616),	-- Malevolent Gladiator's Copperskin Spaulders
+						i(91453),	-- Malevolent Gladiator's Cape of Cruelty
+						i(91620),	-- Malevolent Gladiator's Scaled Chestpiece
+						i(91622),	-- Malevolent Gladiator's Scaled Gauntlets
+						i(91624),	-- Malevolent Gladiator's Scaled Helm
+						i(91628),	-- Malevolent Gladiator's Scaled Shoulders
+						i(91630),	-- Malevolent Gladiator's Clasp of Cruelty
+						i(91632),	-- Malevolent Gladiator's Clasp of Meditation
+						i(91634),	-- Malevolent Gladiator's Greaves of Alacrity
+						i(91636),	-- Malevolent Gladiator's Greaves of Meditation
+						i(91638),	-- Malevolent Gladiator's Bracers of Prowess
+						i(91639),	-- Malevolent Gladiator's Bracers of Meditation
+						i(91640),	-- Malevolent Gladiator's Ornamented Chestguard
+						i(91642),	-- Malevolent Gladiator's Ornamented Gloves
+						i(91644),	-- Malevolent Gladiator's Ornamented Headcover
+						i(91646),	-- Malevolent Gladiator's Ornamented Legplates
+						i(91648),	-- Malevolent Gladiator's Ornamented Spaulders
+						i(91650),	-- Malevolent Gladiator's Girdle of Accuracy
+						i(91652),	-- Malevolent Gladiator's Girdle of Prowess
+						i(91654),	-- Malevolent Gladiator's Warboots of Cruelty
+						i(91656),	-- Malevolent Gladiator's Warboots of Alacrity
+						i(91658),	-- Malevolent Gladiator's Armplates of Proficiency
+						i(91659),	-- Malevolent Gladiator's Armplates of Alacrity
+						i(91662),	-- Malevolent Gladiator's Mooncloth Gloves
+						i(91664),	-- Malevolent Gladiator's Mooncloth Helm
+						i(91666),	-- Malevolent Gladiator's Mooncloth Leggings
+						i(91668),	-- Malevolent Gladiator's Mooncloth Robe
+						i(91670),	-- Malevolent Gladiator's Mooncloth Mantle
+						i(91672),	-- Malevolent Gladiator's Satin Gloves
+						i(91674),	-- Malevolent Gladiator's Satin Hood
+						i(91676),	-- Malevolent Gladiator's Satin Leggings
+						i(91678),	-- Malevolent Gladiator's Satin Robe
+						i(91680),	-- Malevolent Gladiator's Satin Mantle
+						i(91688),	-- Malevolent Gladiator's Waistband of Accuracy
+						i(91690),	-- Malevolent Gladiator's Boots of Cruelty
+						i(91692),	-- Malevolent Gladiator's Armwraps of Alacrity
+						i(91693),	-- Malevolent Gladiator's Leather Tunic
+						i(91695),	-- Malevolent Gladiator's Leather Gloves
+						i(91697),	-- Malevolent Gladiator's Leather Helm
+						i(91699),	-- Malevolent Gladiator's Leather Legguards
+						i(91701),	-- Malevolent Gladiator's Leather Spaulders
+						i(91703),	-- Malevolent Gladiator's Waistguard of Meditation
+						i(91705),	-- Malevolent Gladiator's Footguards of Alacrity
+						i(91707),	-- Malevolent Gladiator's Footguards of Meditation
+						i(91709),	-- Malevolent Gladiator's Armbands of Prowess
+						i(91710),	-- Malevolent Gladiator's Armbands of Meditation
+						i(91711),	-- Malevolent Gladiator's Ringmail Armor
+						i(91713),	-- Malevolent Gladiator's Ringmail Gauntlets
+						i(91715),	-- Malevolent Gladiator's Ringmail Helm
+						i(91717),	-- Malevolent Gladiator's Ringmail Leggings
+						i(91719),	-- Malevolent Gladiator's Ringmail Spaulders
+						i(91721),	-- Malevolent Gladiator's Linked Armor
+						i(91723),	-- Malevolent Gladiator's Linked Gauntlets
+						i(91725),	-- Malevolent Gladiator's Linked Helm
+						i(91727),	-- Malevolent Gladiator's Linked Leggings
+						i(91729),	-- Malevolent Gladiator's Linked Spaulders
+						i(91731),	-- Malevolent Gladiator's Waistguard of Cruelty
+						i(91733),	-- Malevolent Gladiator's Mail Armor
+						i(91735),	-- Malevolent Gladiator's Mail Gauntlets
+						i(91737),	-- Malevolent Gladiator's Mail Helm
+						i(91739),	-- Malevolent Gladiator's Mail Leggings
+						i(91741),	-- Malevolent Gladiator's Mail Spaulders
+						i(91764),	-- Malevolent Gladiator's Cloak of Alacrity
+						i(91765),	-- Malevolent Gladiator's Cloak of Prowess
+						i(91773),	-- Malevolent Gladiator's Felweave Handguards
+						i(91775),	-- Malevolent Gladiator's Felweave Cowl
+						i(91777),	-- Malevolent Gladiator's Felweave Trousers
+						i(91779),	-- Malevolent Gladiator's Felweave Raiment
+						i(91781),	-- Malevolent Gladiator's Felweave Amice
+						i(91783),	-- Malevolent Gladiator's Plate Chestpiece
+						i(91785),	-- Malevolent Gladiator's Plate Gauntlets
+						i(91787),	-- Malevolent Gladiator's Plate Helm
+						i(91789),	-- Malevolent Gladiator's Plate Legguards
+						i(91791),	-- Malevolent Gladiator's Plate Shoulders
 					}),
 					nh(75690, { -- Lok'nor Bloodfist
-						i( 84438),	-- Dreadful Gladiator's Armplates of Proficiency
-						i( 84345),	-- Dreadful Gladiator's Cape of Cruelty
-						i( 84353),	-- Dreadful Gladiator's Cord of Cruelty
-						i( 84354),	-- Dreadful Gladiator's Cord of Accuracy
-						i( 84355),	-- Dreadful Gladiator's Cord of Meditation
-						i( 84356),	-- Dreadful Gladiator's Treads of Cruelty
-						i( 84357),	-- Dreadful Gladiator's Treads of Alacrity
-						i( 84358),	-- Dreadful Gladiator's Treads of Meditation
-						i( 84359),	-- Dreadful Gladiator's Cuffs of Accuracy
-						i( 84360),	-- Dreadful Gladiator's Cuffs of Prowess
-						i( 84361),	-- Dreadful Gladiator's Cuffs of Meditation
-						i( 84362),	-- Dreadful Gladiator's Drape of Prowess
-						i( 84363),	-- Dreadful Gladiator's Drape of Cruelty
-						i( 84364),	-- Dreadful Gladiator's Drape of Meditation
-						i( 84372),	-- Dreadful Gladiator's Dreadplate Chestpiece
-						i( 84373),	-- Dreadful Gladiator's Dreadplate Gauntlets
-						i( 84374),	-- Dreadful Gladiator's Dreadplate Helm
-						i( 84375),	-- Dreadful Gladiator's Dreadplate Legguards
-						i( 84376),	-- Dreadful Gladiator's Dreadplate Shoulders
-						i( 84377),	-- Dreadful Gladiator's Dragonhide Gloves
-						i( 84378),	-- Dreadful Gladiator's Dragonhide Helm
-						i( 84379),	-- Dreadful Gladiator's Dragonhide Legguards
-						i( 84380),	-- Dreadful Gladiator's Dragonhide Robes
-						i( 84381),	-- Dreadful Gladiator's Dragonhide Spaulders
-						i( 84382),	-- Dreadful Gladiator's Belt of Meditation
-						i( 84383),	-- Dreadful Gladiator's Footguards of Meditation
-						i( 84384),	-- Dreadful Gladiator's Bindings of Meditation
-						i( 84385),	-- Dreadful Gladiator's Kodohide Gloves
-						i( 84386),	-- Dreadful Gladiator's Kodohide Helm
-						i( 84387),	-- Dreadful Gladiator's Kodohide Legguards
-						i( 84388),	-- Dreadful Gladiator's Kodohide Robes
-						i( 84389),	-- Dreadful Gladiator's Kodohide Spaulders
-						i( 84390),	-- Dreadful Gladiator's Belt of Cruelty
-						i( 84391),	-- Dreadful Gladiator's Footguards of Alacrity
-						i( 84392),	-- Dreadful Gladiator's Bindings of Prowess
-						i( 84393),	-- Dreadful Gladiator's Wyrmhide Gloves
-						i( 84394),	-- Dreadful Gladiator's Wyrmhide Helm
-						i( 84395),	-- Dreadful Gladiator's Wyrmhide Legguards
-						i( 84396),	-- Dreadful Gladiator's Wyrmhide Robes
-						i( 84397),	-- Dreadful Gladiator's Wyrmhide Spaulders
-						i( 84402),	-- Dreadful Gladiator's Links of Cruelty
-						i( 84403),	-- Dreadful Gladiator's Links of Accuracy
-						i( 84404),	-- Dreadful Gladiator's Sabatons of Cruelty
-						i( 84405),	-- Dreadful Gladiator's Sabatons of Alacrity
-						i( 84406),	-- Dreadful Gladiator's Wristguards of Alacrity
-						i( 84407),	-- Dreadful Gladiator's Wristguards of Accuracy
-						i( 84408),	-- Dreadful Gladiator's Chain Armor
-						i( 84409),	-- Dreadful Gladiator's Chain Gauntlets
-						i( 84410),	-- Dreadful Gladiator's Chain Helm
-						i( 84411),	-- Dreadful Gladiator's Chain Leggings
-						i( 84412),	-- Dreadful Gladiator's Chain Spaulders
-						i( 84413),	-- Dreadful Gladiator's Silk Handguards
-						i( 84414),	-- Dreadful Gladiator's Silk Cowl
-						i( 84415),	-- Dreadful Gladiator's Silk Trousers
-						i( 84416),	-- Dreadful Gladiator's Silk Robe
-						i( 84417),	-- Dreadful Gladiator's Silk Amice
-						i( 84418),	-- Dreadful Gladiator's Scaled Chestpiece
-						i( 84419),	-- Dreadful Gladiator's Scaled Gauntlets
-						i( 84420),	-- Dreadful Gladiator's Scaled Helm
-						i( 84421),	-- Dreadful Gladiator's Scaled Legguards
-						i( 84422),	-- Dreadful Gladiator's Scaled Shoulders
-						i( 84423),	-- Dreadful Gladiator's Clasp of Cruelty
-						i( 84424),	-- Dreadful Gladiator's Clasp of Meditation
-						i( 84425),	-- Dreadful Gladiator's Greaves of Alacrity
-						i( 84426),	-- Dreadful Gladiator's Greaves of Meditation
-						i( 84427),	-- Dreadful Gladiator's Bracers of Prowess
-						i( 84428),	-- Dreadful Gladiator's Bracers of Meditation
-						i( 84429),	-- Dreadful Gladiator's Ornamented Chestguard
-						i( 84430),	-- Dreadful Gladiator's Ornamented Gloves
-						i( 84431),	-- Dreadful Gladiator's Ornamented Headcover
-						i( 84432),	-- Dreadful Gladiator's Ornamented Legplates
-						i( 84433),	-- Dreadful Gladiator's Ornamented Spaulders
-						i( 84434),	-- Dreadful Gladiator's Girdle of Accuracy
-						i( 84435),	-- Dreadful Gladiator's Girdle of Prowess
-						i( 84436),	-- Dreadful Gladiator's Warboots of Cruelty
-						i( 84437),	-- Dreadful Gladiator's Warboots of Alacrity
-						i( 84346),	-- Dreadful Gladiator's Cape of Prowess
-						i( 84439),	-- Dreadful Gladiator's Armplates of Alacrity
-						i( 84440),	-- Dreadful Gladiator's Mooncloth Gloves
-						i( 84441),	-- Dreadful Gladiator's Mooncloth Helm
-						i( 84442),	-- Dreadful Gladiator's Mooncloth Leggings
-						i( 84443),	-- Dreadful Gladiator's Mooncloth Robe
-						i( 84444),	-- Dreadful Gladiator's Mooncloth Mantle
-						i( 84445),	-- Dreadful Gladiator's Satin Gloves
-						i( 84446),	-- Dreadful Gladiator's Satin Hood
-						i( 84447),	-- Dreadful Gladiator's Satin Leggings
-						i( 84448),	-- Dreadful Gladiator's Satin Robe
-						i( 84449),	-- Dreadful Gladiator's Satin Mantle
-						i( 84456),	-- Dreadful Gladiator's Waistband of Cruelty
-						i( 84457),	-- Dreadful Gladiator's Waistband of Accuracy
-						i( 84458),	-- Dreadful Gladiator's Boots of Cruelty
-						i( 84459),	-- Dreadful Gladiator's Boots of Alacrity
-						i( 84460),	-- Dreadful Gladiator's Armwraps of Alacrity
-						i( 84461),	-- Dreadful Gladiator's Armwraps of Accuracy
-						i( 84462),	-- Dreadful Gladiator's Leather Tunic
-						i( 84463),	-- Dreadful Gladiator's Leather Gloves
-						i( 84464),	-- Dreadful Gladiator's Leather Helm
-						i( 84465),	-- Dreadful Gladiator's Leather Legguards
-						i( 84466),	-- Dreadful Gladiator's Leather Spaulders
-						i( 84467),	-- Dreadful Gladiator's Waistguard of Meditation
-						i( 84468),	-- Dreadful Gladiator's Footguards of Alacrity
-						i( 84469),	-- Dreadful Gladiator's Footguards of Meditation
-						i( 84470),	-- Dreadful Gladiator's Armbands of Prowess
-						i( 84471),	-- Dreadful Gladiator's Armbands of Meditation
-						i( 84472),	-- Dreadful Gladiator's Ringmail Armor
-						i( 84473),	-- Dreadful Gladiator's Ringmail Gauntlets
-						i( 84474),	-- Dreadful Gladiator's Ringmail Helm
-						i( 84475),	-- Dreadful Gladiator's Ringmail Leggings
-						i( 84476),	-- Dreadful Gladiator's Ringmail Spaulders
-						i( 84477),	-- Dreadful Gladiator's Linked Armor
-						i( 84478),	-- Dreadful Gladiator's Linked Gauntlets
-						i( 84479),	-- Dreadful Gladiator's Linked Helm
-						i( 84480),	-- Dreadful Gladiator's Linked Leggings
-						i( 84481),	-- Dreadful Gladiator's Linked Spaulders
-						i( 84482),	-- Dreadful Gladiator's Waistguard of Cruelty
-						i( 84483),	-- Dreadful Gladiator's Mail Armor
-						i( 84484),	-- Dreadful Gladiator's Mail Gauntlets
-						i( 84485),	-- Dreadful Gladiator's Mail Helm
-						i( 84486),	-- Dreadful Gladiator's Mail Leggings
-						i( 84487),	-- Dreadful Gladiator's Mail Spaulders
-						i( 84491),	-- Dreadful Gladiator's Cloak of Alacrity
-						i( 84492),	-- Dreadful Gladiator's Cloak of Prowess
-						i( 84499),	-- Dreadful Gladiator's Felweave Handguards
-						i( 84500),	-- Dreadful Gladiator's Felweave Cowl
-						i( 84501),	-- Dreadful Gladiator's Felweave Trousers
-						i( 84502),	-- Dreadful Gladiator's Felweave Raiment
-						i( 84503),	-- Dreadful Gladiator's Felweave Amice
-						i( 84504),	-- Dreadful Gladiator's Plate Chestpiece
-						i( 84505),	-- Dreadful Gladiator's Plate Gauntlets
-						i( 84506),	-- Dreadful Gladiator's Plate Helm
-						i( 84507),	-- Dreadful Gladiator's Plate Legguards
-						i( 84508),	-- Dreadful Gladiator's Plate Shoulders
-						i( 84543),	-- Dreadful Gladiator's Ironskin Gloves
-						i( 84544),	-- Dreadful Gladiator's Ironskin Helm
-						i( 84545),	-- Dreadful Gladiator's Ironskin Legguards
-						i( 84546),	-- Dreadful Gladiator's Ironskin Tunic
-						i( 84547),	-- Dreadful Gladiator's Ironskin Spaulders
-						i( 84548),	-- Dreadful Gladiator's Copperskin Gloves
-						i( 84549),	-- Dreadful Gladiator's Copperskin Helm
-						i( 84550),	-- Dreadful Gladiator's Copperskin Legguards
-						i( 84551),	-- Dreadful Gladiator's Copperskin Tunic
-						i( 84552),	-- Dreadful Gladiator's Copperskin Spaulders
+						i(84438),	-- Dreadful Gladiator's Armplates of Proficiency
+						i(84345),	-- Dreadful Gladiator's Cape of Cruelty
+						i(84353),	-- Dreadful Gladiator's Cord of Cruelty
+						i(84354),	-- Dreadful Gladiator's Cord of Accuracy
+						i(84355),	-- Dreadful Gladiator's Cord of Meditation
+						i(84356),	-- Dreadful Gladiator's Treads of Cruelty
+						i(84357),	-- Dreadful Gladiator's Treads of Alacrity
+						i(84358),	-- Dreadful Gladiator's Treads of Meditation
+						i(84359),	-- Dreadful Gladiator's Cuffs of Accuracy
+						i(84360),	-- Dreadful Gladiator's Cuffs of Prowess
+						i(84361),	-- Dreadful Gladiator's Cuffs of Meditation
+						i(84362),	-- Dreadful Gladiator's Drape of Prowess
+						i(84363),	-- Dreadful Gladiator's Drape of Cruelty
+						i(84364),	-- Dreadful Gladiator's Drape of Meditation
+						i(84372),	-- Dreadful Gladiator's Dreadplate Chestpiece
+						i(84373),	-- Dreadful Gladiator's Dreadplate Gauntlets
+						i(84374),	-- Dreadful Gladiator's Dreadplate Helm
+						i(84375),	-- Dreadful Gladiator's Dreadplate Legguards
+						i(84376),	-- Dreadful Gladiator's Dreadplate Shoulders
+						i(84377),	-- Dreadful Gladiator's Dragonhide Gloves
+						i(84378),	-- Dreadful Gladiator's Dragonhide Helm
+						i(84379),	-- Dreadful Gladiator's Dragonhide Legguards
+						i(84380),	-- Dreadful Gladiator's Dragonhide Robes
+						i(84381),	-- Dreadful Gladiator's Dragonhide Spaulders
+						i(84382),	-- Dreadful Gladiator's Belt of Meditation
+						i(84383),	-- Dreadful Gladiator's Footguards of Meditation
+						i(84384),	-- Dreadful Gladiator's Bindings of Meditation
+						i(84385),	-- Dreadful Gladiator's Kodohide Gloves
+						i(84386),	-- Dreadful Gladiator's Kodohide Helm
+						i(84387),	-- Dreadful Gladiator's Kodohide Legguards
+						i(84388),	-- Dreadful Gladiator's Kodohide Robes
+						i(84389),	-- Dreadful Gladiator's Kodohide Spaulders
+						i(84390),	-- Dreadful Gladiator's Belt of Cruelty
+						i(84391),	-- Dreadful Gladiator's Footguards of Alacrity
+						i(84392),	-- Dreadful Gladiator's Bindings of Prowess
+						i(84393),	-- Dreadful Gladiator's Wyrmhide Gloves
+						i(84394),	-- Dreadful Gladiator's Wyrmhide Helm
+						i(84395),	-- Dreadful Gladiator's Wyrmhide Legguards
+						i(84396),	-- Dreadful Gladiator's Wyrmhide Robes
+						i(84397),	-- Dreadful Gladiator's Wyrmhide Spaulders
+						i(84402),	-- Dreadful Gladiator's Links of Cruelty
+						i(84403),	-- Dreadful Gladiator's Links of Accuracy
+						i(84404),	-- Dreadful Gladiator's Sabatons of Cruelty
+						i(84405),	-- Dreadful Gladiator's Sabatons of Alacrity
+						i(84406),	-- Dreadful Gladiator's Wristguards of Alacrity
+						i(84407),	-- Dreadful Gladiator's Wristguards of Accuracy
+						i(84408),	-- Dreadful Gladiator's Chain Armor
+						i(84409),	-- Dreadful Gladiator's Chain Gauntlets
+						i(84410),	-- Dreadful Gladiator's Chain Helm
+						i(84411),	-- Dreadful Gladiator's Chain Leggings
+						i(84412),	-- Dreadful Gladiator's Chain Spaulders
+						i(84413),	-- Dreadful Gladiator's Silk Handguards
+						i(84414),	-- Dreadful Gladiator's Silk Cowl
+						i(84415),	-- Dreadful Gladiator's Silk Trousers
+						i(84416),	-- Dreadful Gladiator's Silk Robe
+						i(84417),	-- Dreadful Gladiator's Silk Amice
+						i(84418),	-- Dreadful Gladiator's Scaled Chestpiece
+						i(84419),	-- Dreadful Gladiator's Scaled Gauntlets
+						i(84420),	-- Dreadful Gladiator's Scaled Helm
+						i(84421),	-- Dreadful Gladiator's Scaled Legguards
+						i(84422),	-- Dreadful Gladiator's Scaled Shoulders
+						i(84423),	-- Dreadful Gladiator's Clasp of Cruelty
+						i(84424),	-- Dreadful Gladiator's Clasp of Meditation
+						i(84425),	-- Dreadful Gladiator's Greaves of Alacrity
+						i(84426),	-- Dreadful Gladiator's Greaves of Meditation
+						i(84427),	-- Dreadful Gladiator's Bracers of Prowess
+						i(84428),	-- Dreadful Gladiator's Bracers of Meditation
+						i(84429),	-- Dreadful Gladiator's Ornamented Chestguard
+						i(84430),	-- Dreadful Gladiator's Ornamented Gloves
+						i(84431),	-- Dreadful Gladiator's Ornamented Headcover
+						i(84432),	-- Dreadful Gladiator's Ornamented Legplates
+						i(84433),	-- Dreadful Gladiator's Ornamented Spaulders
+						i(84434),	-- Dreadful Gladiator's Girdle of Accuracy
+						i(84435),	-- Dreadful Gladiator's Girdle of Prowess
+						i(84436),	-- Dreadful Gladiator's Warboots of Cruelty
+						i(84437),	-- Dreadful Gladiator's Warboots of Alacrity
+						i(84346),	-- Dreadful Gladiator's Cape of Prowess
+						i(84439),	-- Dreadful Gladiator's Armplates of Alacrity
+						i(84440),	-- Dreadful Gladiator's Mooncloth Gloves
+						i(84441),	-- Dreadful Gladiator's Mooncloth Helm
+						i(84442),	-- Dreadful Gladiator's Mooncloth Leggings
+						i(84443),	-- Dreadful Gladiator's Mooncloth Robe
+						i(84444),	-- Dreadful Gladiator's Mooncloth Mantle
+						i(84445),	-- Dreadful Gladiator's Satin Gloves
+						i(84446),	-- Dreadful Gladiator's Satin Hood
+						i(84447),	-- Dreadful Gladiator's Satin Leggings
+						i(84448),	-- Dreadful Gladiator's Satin Robe
+						i(84449),	-- Dreadful Gladiator's Satin Mantle
+						i(84456),	-- Dreadful Gladiator's Waistband of Cruelty
+						i(84457),	-- Dreadful Gladiator's Waistband of Accuracy
+						i(84458),	-- Dreadful Gladiator's Boots of Cruelty
+						i(84459),	-- Dreadful Gladiator's Boots of Alacrity
+						i(84460),	-- Dreadful Gladiator's Armwraps of Alacrity
+						i(84461),	-- Dreadful Gladiator's Armwraps of Accuracy
+						i(84462),	-- Dreadful Gladiator's Leather Tunic
+						i(84463),	-- Dreadful Gladiator's Leather Gloves
+						i(84464),	-- Dreadful Gladiator's Leather Helm
+						i(84465),	-- Dreadful Gladiator's Leather Legguards
+						i(84466),	-- Dreadful Gladiator's Leather Spaulders
+						i(84467),	-- Dreadful Gladiator's Waistguard of Meditation
+						i(84468),	-- Dreadful Gladiator's Footguards of Alacrity
+						i(84469),	-- Dreadful Gladiator's Footguards of Meditation
+						i(84470),	-- Dreadful Gladiator's Armbands of Prowess
+						i(84471),	-- Dreadful Gladiator's Armbands of Meditation
+						i(84472),	-- Dreadful Gladiator's Ringmail Armor
+						i(84473),	-- Dreadful Gladiator's Ringmail Gauntlets
+						i(84474),	-- Dreadful Gladiator's Ringmail Helm
+						i(84475),	-- Dreadful Gladiator's Ringmail Leggings
+						i(84476),	-- Dreadful Gladiator's Ringmail Spaulders
+						i(84477),	-- Dreadful Gladiator's Linked Armor
+						i(84478),	-- Dreadful Gladiator's Linked Gauntlets
+						i(84479),	-- Dreadful Gladiator's Linked Helm
+						i(84480),	-- Dreadful Gladiator's Linked Leggings
+						i(84481),	-- Dreadful Gladiator's Linked Spaulders
+						i(84482),	-- Dreadful Gladiator's Waistguard of Cruelty
+						i(84483),	-- Dreadful Gladiator's Mail Armor
+						i(84484),	-- Dreadful Gladiator's Mail Gauntlets
+						i(84485),	-- Dreadful Gladiator's Mail Helm
+						i(84486),	-- Dreadful Gladiator's Mail Leggings
+						i(84487),	-- Dreadful Gladiator's Mail Spaulders
+						i(84491),	-- Dreadful Gladiator's Cloak of Alacrity
+						i(84492),	-- Dreadful Gladiator's Cloak of Prowess
+						i(84499),	-- Dreadful Gladiator's Felweave Handguards
+						i(84500),	-- Dreadful Gladiator's Felweave Cowl
+						i(84501),	-- Dreadful Gladiator's Felweave Trousers
+						i(84502),	-- Dreadful Gladiator's Felweave Raiment
+						i(84503),	-- Dreadful Gladiator's Felweave Amice
+						i(84504),	-- Dreadful Gladiator's Plate Chestpiece
+						i(84505),	-- Dreadful Gladiator's Plate Gauntlets
+						i(84506),	-- Dreadful Gladiator's Plate Helm
+						i(84507),	-- Dreadful Gladiator's Plate Legguards
+						i(84508),	-- Dreadful Gladiator's Plate Shoulders
+						i(84543),	-- Dreadful Gladiator's Ironskin Gloves
+						i(84544),	-- Dreadful Gladiator's Ironskin Helm
+						i(84545),	-- Dreadful Gladiator's Ironskin Legguards
+						i(84546),	-- Dreadful Gladiator's Ironskin Tunic
+						i(84547),	-- Dreadful Gladiator's Ironskin Spaulders
+						i(84548),	-- Dreadful Gladiator's Copperskin Gloves
+						i(84549),	-- Dreadful Gladiator's Copperskin Helm
+						i(84550),	-- Dreadful Gladiator's Copperskin Legguards
+						i(84551),	-- Dreadful Gladiator's Copperskin Tunic
+						i(84552),	-- Dreadful Gladiator's Copperskin Spaulders
 --[[
 						i(138719),	-- Ensemble: Dreadful Gladiator's Dragonhide Armor
 						i(138714),	-- Ensemble: Dreadful Gladiator's Plate Armor
@@ -1622,9 +1622,9 @@ _.Zones =
 						i(99979),	-- Tyrannical Gladiator's Slicer
 						i(99967),	-- Tyrannical Gladiator's Spellblade
 						i(99968),	-- Tyrannical Gladiator's Staff
-						i( 99994),	-- Tyrannical Gladiator's Treads of Alacrity
-						i( 99996),	-- Tyrannical Gladiator's Satin Leggings
-						i( 99998),	-- Tyrannical Gladiator's Satin Robe
+						i(99994),	-- Tyrannical Gladiator's Treads of Alacrity
+						i(99996),	-- Tyrannical Gladiator's Satin Leggings
+						i(99998),	-- Tyrannical Gladiator's Satin Robe
 						i(100001),	-- Tyrannical Gladiator's Footguards of Meditation
 						i(100004),	-- Tyrannical Gladiator's Armbands of Meditation
 						i(100009),	-- Tyrannical Gladiator's Ironskin Spaulders
@@ -1759,11 +1759,11 @@ _.Zones =
 						i(100165),	-- Tyrannical Gladiator's Scaled Helm
 						i(100166),	-- Tyrannical Gladiator's Scaled Legguards
 						i(100167),	-- Tyrannical Gladiator's Mail Leggings
-						i( 99988),	-- Tyrannical Gladiator's Wyrmhide Robes
-						i( 99989),	-- Tyrannical Gladiator's Mooncloth Gloves
-						i( 99991),	-- Tyrannical Gladiator's Links of Cruelty
-						i( 99992),	-- Tyrannical Gladiator's Plate Gauntlets
-						i( 99993),	-- Tyrannical Gladiator's Plate Helm
+						i(99988),	-- Tyrannical Gladiator's Wyrmhide Robes
+						i(99989),	-- Tyrannical Gladiator's Mooncloth Gloves
+						i(99991),	-- Tyrannical Gladiator's Links of Cruelty
+						i(99992),	-- Tyrannical Gladiator's Plate Gauntlets
+						i(99993),	-- Tyrannical Gladiator's Plate Helm
 					}),
 					nh(78461, { -- Shonn Su
 						i(144250, { -- Arsenal: Prideful Gladiator's Weapons [ Horde / Tested ]

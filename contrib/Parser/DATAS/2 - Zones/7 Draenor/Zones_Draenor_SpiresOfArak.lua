@@ -120,102 +120,102 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q( 34756),	-- A Charming Deception
-					q( 34883),	-- A Feast of Shadows
-					q( 35671),	-- A Gathering of Shadows
-					q( 37296),	-- A Lack of Wasps
+					q(34756),	-- A Charming Deception
+					q(34883),	-- A Feast of Shadows
+					q(35671),	-- A Gathering of Shadows
+					q(37296),	-- A Lack of Wasps
 					qa( 35339),	-- A Parting Favor
 					qa( 35353),	-- A Piece of the Puzzle
-					q( 35245),	-- A Sentimental Relic
-					q( 36059),	-- A Worthy Vessel
-					q( 34657),	-- Adherents of the Sun God
+					q(35245),	-- A Sentimental Relic
+					q(36059),	-- A Worthy Vessel
+					q(34657),	-- Adherents of the Sun God
 					qa( 35482),	-- Admiral Taylor
-					q( 36183),	-- Admiral Taylor
-					q( 35636),	-- All Due Respect
+					q(36183),	-- Admiral Taylor
+					q(35636),	-- All Due Respect
 					qh( 35738),	-- All Natural
 					qa( 35739),	-- All Natural
 					qh( 37993),	-- Amulet of Rukhmar: The Apexis Device
 					qa( 37852),	-- Amulet of Rukhmar: The Apexis Device
-					q( 37851),	-- Amulet of Rukhmar: The Final Key
+					q(37851),	-- Amulet of Rukhmar: The Final Key
 					qh( 37849),	-- Amulet of Rukhmar: The First Key
-					q( 37850),	-- Amulet of Rukhmar: The Second Key
-					q( 35874),	-- Apparatus
-					q( 36951),	-- Arakkoa Exodus
-					q( 34653),	-- Arakkoa Exodus
+					q(37850),	-- Amulet of Rukhmar: The Second Key
+					q(35874),	-- Apparatus
+					q(36951),	-- Arakkoa Exodus
+					q(34653),	-- Arakkoa Exodus
 					qa( 35926),	-- Assassin's Mark
 					qh( 35924),	-- Assassin's Mark
 					qh( 35907),	-- Attempted Murder
 					qa( 35915),	-- Attempted Murder
-					q( 34886),	-- Baby Bird
-					q( 34942),	-- Back from Beyond
+					q(34886),	-- Baby Bird
+					q(34942),	-- Back from Beyond
 					qa( 35719),	-- Back on Track
 					qh( 35718),	-- Back on Track
-					q( 35000),	-- Banished From the Sky
+					q(35000),	-- Banished From the Sky
 					qh( 37326),	-- Befriending the Locals
 					qa( 37327),	-- Befriending the Locals
-					q( 34830),	-- Behind the Veil
+					q(34830),	-- Behind the Veil
 					qh( 35705),	-- Best Deals Anywhere
-					q( 34882),	-- Blades in the Dark
+					q(34882),	-- Blades in the Dark
 					qa( 36997),	-- Boar Training: Bulbapore
 					qh( 37034),	-- Boar Training: Bulbapore
-					q( 35009),	-- Call of the Raven Mother
-					q( 37177),	-- Call of the Talon King
+					q(35009),	-- Call of the Raven Mother
+					q(37177),	-- Call of the Talon King
 					qa( 37287),	-- Cleaning House
-					q( 35081),	-- Clearing Out Before Cleaning Up
+					q(35081),	-- Clearing Out Before Cleaning Up
 					qh( 37052),	-- Clefthoof Training: Bulbapore
 					qa( 36987),	-- Clefthoof Training: Bulbapore
-					q( 35634),	-- Control is King
-					q( 34921),	-- Cult of the Ravenspeakers
-					q( 36428),	-- Curing With Force
-					q( 34939),	-- Declawing The Bloodmane
-					q( 35077),	-- Defungination
-					q( 34805),	-- Echo Hunters
-					q( 36425),	-- Egg Punt
+					q(35634),	-- Control is King
+					q(34921),	-- Cult of the Ravenspeakers
+					q(36428),	-- Curing With Force
+					q(34939),	-- Declawing The Bloodmane
+					q(35077),	-- Defungination
+					q(34805),	-- Echo Hunters
+					q(36425),	-- Egg Punt
 					qa( 36023),	-- Extrinsic Motivation
 					qh( 36022),	-- Extrinsic Motivation
-					q( 37417),	-- Feast of the Spires
-					q( 37416),	-- Feast of the Spires
-					q( 36384),	-- Field Trial
-					q( 35298),	-- Flame On
-					q( 36111),	-- Flight Home
-					q( 36112),	-- Flight Home
-					q( 36577),	-- Flying Machine Completed
-					q( 35285),	-- Follow that Hotrod!
+					q(37417),	-- Feast of the Spires
+					q(37416),	-- Feast of the Spires
+					q(36384),	-- Field Trial
+					q(35298),	-- Flame On
+					q(36111),	-- Flight Home
+					q(36112),	-- Flight Home
+					q(36577),	-- Flying Machine Completed
+					q(35285),	-- Follow that Hotrod!
 					qa( 36353),	-- For Old Times' Sake
 					qa( 36029),	-- Gardul Venomshiv
 					qh( 36028),	-- Gardul Venomshiv
-					q( 35001),	-- Gaze of the Raven God
-					q( 35082),	-- Getting the Crew Back Together
-					q( 35260),	-- Hardly Working
-					q( 34999),	-- Hatred Undying
-					q( 34656),	-- Hidden in Plain Sight
-					q( 44570),	-- Honor the Flame
+					q(35001),	-- Gaze of the Raven God
+					q(35082),	-- Getting the Crew Back Together
+					q(35260),	-- Hardly Working
+					q(34999),	-- Hatred Undying
+					q(34656),	-- Hidden in Plain Sight
+					q(44570),	-- Honor the Flame
 					qa( 35549),	-- Honoring a Hero
-					q( 35273),	-- Hot Seat
+					q(35273),	-- Hot Seat
 					qa( 35782),	-- I See Dead Arakkoa
 					qh( 35766),	-- I See Dead Arakkoa
 					qa( 35329),	-- I See Dead People
-					q( 35322),	-- I See Dead People
-					q( 34898),	-- Ikky
-					q( 34838),	-- Ikky's Egg
-					q( 35290),	-- Inn
-					q( 35283),	-- Inn
-					q( 37315),	-- Inn
-					q( 37313),	-- Inn
+					q(35322),	-- I See Dead People
+					q(34898),	-- Ikky
+					q(34838),	-- Ikky's Egg
+					q(35290),	-- Inn
+					q(35283),	-- Inn
+					q(37315),	-- Inn
+					q(37313),	-- Inn
 					qh( 35275),	-- Inspecting the Troops
 					qa( 35276),	-- Inspecting the Troops
-					q( 34828),	-- Ishaal's Orb
-					q( 36062),	-- Kimzee Pinchwhistle
-					q( 35028),	-- Krikka and Vakora Tracking
-					q( 35201),	-- Krixel
-					q( 34827),	-- Last of the Talonpriests
-					q( 35258),	-- Legacy of the Apexis
-					q( 37168),	-- Leorajh, the Enlightened
-					q( 35013),	-- Lithic's Gift
-					q( 36184),	-- Mother Lode
-					q( 34885),	-- Mother of Thorns
-					q( 36071),	-- Nagrand - Treasure 055 - Waterlogged Satchel
-					q( 34829),	-- New Neighbors
+					q(34828),	-- Ishaal's Orb
+					q(36062),	-- Kimzee Pinchwhistle
+					q(35028),	-- Krikka and Vakora Tracking
+					q(35201),	-- Krixel
+					q(34827),	-- Last of the Talonpriests
+					q(35258),	-- Legacy of the Apexis
+					q(37168),	-- Leorajh, the Enlightened
+					q(35013),	-- Lithic's Gift
+					q(36184),	-- Mother Lode
+					q(34885),	-- Mother of Thorns
+					q(36071),	-- Nagrand - Treasure 055 - Waterlogged Satchel
+					q(34829),	-- New Neighbors
 					qh( 36607),	-- News from Nagrand
 					qa( 36606),	-- News from Nagrand
 					qa( 36601),	-- News from Nagrand
@@ -228,85 +228,85 @@ _.Zones =
 					qh( 37330),	-- Not Here, Not Now
 					qh( 37292),	-- Not In Your Army
 					qa( 35293),	-- Old Friends
-					q( 36085),	-- On Ebon Wings
+					q(36085),	-- On Ebon Wings
 					qh( 35272),	-- One of Our Own
 					qa( 35274),	-- One of Our Own
-					q( 34658),	-- Orders From On High
+					q(34658),	-- Orders From On High
 					qa( 35286),	-- Orders, Commander?
 					qh( 35277),	-- Orders, Commander?
 					qh( 35697),	-- Peace Offering
 					qa( 35699),	-- Peace Offering
-					q( 36296),	-- Phylarch the Evergreen
+					q(36296),	-- Phylarch the Evergreen
 					qa( 36861),	-- Pinchwhistle Gearworks
 					qa( 35619),	-- Pinchwhistle Gearworks
 					qh( 35620),	-- Pinchwhistle Gearworks
 					qh( 36862),	-- Pinchwhistle Gearworks
-					q( 35257),	-- Power Unearthed
-					q( 35211),	-- Preventing the Worst
+					q(35257),	-- Power Unearthed
+					q(35211),	-- Preventing the Worst
 					qa( 35408),	-- Prime the Cannons
 					qa( 35407),	-- Punishable by Death
-					q( 34938),	-- Ralshiara's Demise
-					q( 35007),	-- Rendezvous with the Ritualists
-					q( 36724),	-- Reshad Tracking
-					q( 35611),	-- Return to Veil Terokk
-					q( 35733),	-- Rites of the Talonpriests
-					q( 35003),	-- Ritual Severance
+					q(34938),	-- Ralshiara's Demise
+					q(35007),	-- Rendezvous with the Ritualists
+					q(36724),	-- Reshad Tracking
+					q(35611),	-- Return to Veil Terokk
+					q(35733),	-- Rites of the Talonpriests
+					q(35003),	-- Ritual Severance
 					qa( 37006),	-- Riverbeast Training: Bulbapore
 					qh( 37072),	-- Riverbeast Training: Bulbapore
-					q( 36798),	-- Rooby Roo
+					q(36798),	-- Rooby Roo
 					qh( 35879),	-- Safety Measures
 					qa( 35878),	-- Safety Measures
 					qa( 35380),	-- Second in Command
-					q( 35004),	-- Servants of a Dead God
-					q( 35012),	-- Sethe, the Dead God
-					q( 35261),	-- Shot-Caller
-					q( 35089),	-- Skimming Off the Top
-					q( 35259),	-- Sol Sisters
-					q( 35002),	-- Sons of Sethe
-					q( 35079),	-- Spore-be-Gone
-					q( 35091),	-- Sporicide
+					q(35004),	-- Servants of a Dead God
+					q(35012),	-- Sethe, the Dead God
+					q(35261),	-- Shot-Caller
+					q(35089),	-- Skimming Off the Top
+					q(35259),	-- Sol Sisters
+					q(35002),	-- Sons of Sethe
+					q(35079),	-- Spore-be-Gone
+					q(35091),	-- Sporicide
 					qa( 37281),	-- Standing United
 					qh( 37276),	-- Standing United
 					qa( 35716),	-- Sticky Situation
 					qh( 35706),	-- Sticky Situation
 					qh( 35550),	-- Surviving in a Savage Land
-					q( 35668),	-- Syth's Secret					
+					q(35668),	-- Syth's Secret					
 					qh( 37097),	-- Talbuk Training: Bulbapore
 					qa( 36975),	-- Talbuk Training: Bulbapore
-					q( 37144),	-- Talon Guard Kurekk
-					q( 34998),	-- Talon Watch
-					q( 37141),	-- Talonpriest Ishaal
-					q( 35895),	-- Terokk's Fall
-					q( 35896),	-- The Avatar of Terokk
-					q( 34923),	-- The Bloodmane
-					q( 34659),	-- The Crone
+					q(37144),	-- Talon Guard Kurekk
+					q(34998),	-- Talon Watch
+					q(37141),	-- Talonpriest Ishaal
+					q(35895),	-- Terokk's Fall
+					q(35896),	-- The Avatar of Terokk
+					q(34923),	-- The Bloodmane
+					q(34659),	-- The Crone
 					qh( 35797),	-- The Ebon Hunter
 					qa( 35835),	-- The Ebon Hunter
-					q( 34924),	-- The Egg Thieves
-					q( 35011),	-- The False Talon King
-					q( 35010),	-- The High Ravenspeaker
-					q( 36790),	-- The Initiate's Revenge
-					q( 34884),	-- The Kaliri Whisperer
-					q( 35897),	-- The Missing Piece
-					q( 35080),	-- The Mother Lode
+					q(34924),	-- The Egg Thieves
+					q(35011),	-- The False Talon King
+					q(35010),	-- The High Ravenspeaker
+					q(36790),	-- The Initiate's Revenge
+					q(34884),	-- The Kaliri Whisperer
+					q(35897),	-- The Missing Piece
+					q(35080),	-- The Mother Lode
 					qa( 35959),	-- The Power of Poison
 					qh( 35947),	-- The Power of Poison
-					q( 35090),	-- The Right Parts for the Job
-					q( 34655),	-- The Shadows of Skettis
-					q( 35734),	-- The Talon King
+					q(35090),	-- The Right Parts for the Job
+					q(34655),	-- The Shadows of Skettis
+					q(35734),	-- The Talon King
 					qa( 35713),	-- The Tinkertoss Twins
-					q( 35649),	-- The Writhing Mire
+					q(35649),	-- The Writhing Mire
 					qh( 36864),	-- Three Feet Under
-					q( 34991),	-- To the... Rescue?
-					q( 37316),	-- Trading Post
-					q( 37314),	-- Trading Post
-					q( 35284),	-- Trading Post
-					q( 35291),	-- Trading Post
-					q( 37848),	-- Treasure Contract: Amulet of Rukhmar
-					q( 35627),	-- Treasure: Basket of Arakkoa Goods
-					q( 36179),	-- Unwanted Pests
-					q( 37207),	-- Vesharr
-					q( 36316),	-- Victory is Within Reach
+					q(34991),	-- To the... Rescue?
+					q(37316),	-- Trading Post
+					q(37314),	-- Trading Post
+					q(35284),	-- Trading Post
+					q(35291),	-- Trading Post
+					q(37848),	-- Treasure Contract: Amulet of Rukhmar
+					q(35627),	-- Treasure: Basket of Arakkoa Goods
+					q(36179),	-- Unwanted Pests
+					q(37207),	-- Vesharr
+					q(36316),	-- Victory is Within Reach
 					qa( 35674),	-- Wanted: Keeho's Severed Paw
 					qh( 35669),	-- Wanted: Keeho's Severed Paw
 					qa( 35675),	-- Wanted: Spineslicer's Husk
@@ -316,8 +316,8 @@ _.Zones =
 					qa( 36048),	-- We Have Him Now
 					qh( 36047),	-- We Have Him Now
 					qh( 35295),	-- What's Theirs is Ours
-					q( 35704),	-- When All Is Aligned
-					q( 34922),	-- Words of the Raven Mother	
+					q(35704),	-- When All Is Aligned
+					q(34922),	-- Words of the Raven Mother	
 --]]					
 					q(34883,  {  -- A Feast of Shadows
 						i(114723),

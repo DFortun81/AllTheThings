@@ -50,18 +50,18 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests 
 					qg(17599, qa( 9624, { 	-- A Favorite Treat
-						i( 26018),	-- Elekk Handler's Leathers
-						i( 26031),	-- Elekk Rider's Plate
+						i(26018),	-- Elekk Handler's Leathers
+						i(26031),	-- Elekk Rider's Plate
 						i(131264),	-- Elekk Tender's Chain
-						i( 26004),	-- Farmhand's Vest
+						i(26004),	-- Farmhand's Vest
 					})),
 --					desc(qg(17421, qa(9550)), "The map that begins this quest is rewarded when you complete the 'Artifacts of the Blacksilt' quest."),	-- A Map to Where?
 					qg(17586, qa( 9634, { 	-- Alien Predators
-						i( 26051),	-- 2 Stone Sledgehammer
-						i( 26053),	-- Elekk Handler's Blade
+						i(26051),	-- 2 Stone Sledgehammer
+						i(26053),	-- Elekk Handler's Blade
 						i(156993),	-- Long-Reach Elekk Prod
-						i( 26049),	-- Old Elekk Prod
-						i( 27389),	-- Surplus Bastard Sword
+						i(26049),	-- Old Elekk Prod
+						i(27389),	-- Surplus Bastard Sword
 					})),
 --[[
 					qg(17421, qa( 9549)),	-- Artifacts of the Blacksilt
@@ -80,13 +80,13 @@ _.Zones =
 					qg(17434, qa( 9629, { 	-- Catch and Release
 						i(131265),	-- Analyst's Gloves
 						i(120951),	-- Protective Field Grips
-						i( 26022),	-- Researcher's Gloves
-						i( 26008),	-- Scholar's Gloves
+						i(26022),	-- Researcher's Gloves
+						i(26008),	-- Scholar's Gloves
 					})),
 					qg(17986, qa(9761, { 	-- Clearing the Way
-						i( 26035),	-- Corin's Handguards
-						i( 26009),	-- Flutter Silk Handwraps
-						i( 26023),	-- Ravager Hide Gloves
+						i(26035),	-- Corin's Handguards
+						i(26009),	-- Flutter Silk Handwraps
+						i(26023),	-- Ravager Hide Gloves
 						i(131273),	-- Ravager Scale Grips
 					})),
 --					qg(17642, qa( 9643)),	-- Constrictor Vines
@@ -96,16 +96,16 @@ _.Zones =
 					})),
 --[[
 					qg(17926, qa( 9741)),	-- Critters of the Void
-					n( 17496, {	-- Cruelfin
+					n(17496, {	-- Cruelfin
 						i(23870, {	-- Red Crystal Pendant
 							qa(9576),	-- Cruelfin's Necklace
 						}),
 					}),
 --]]
 					qg(17642, qa(9647, {	-- Culling the Flutterers
-						i( 26013),	-- Cincture of Woven Reeds
-						i( 26026),	-- Ornately Tooled Belt
-						i( 26038),	-- Segmented Girdle
+						i(26013),	-- Cincture of Woven Reeds
+						i(26026),	-- Ornately Tooled Belt
+						i(26038),	-- Segmented Girdle
 						i(131266),	-- Ornate Wire Cinch
 					})),
 --[[
@@ -156,23 +156,23 @@ _.Zones =
 					qg(17433, qa( 9567)),	-- Know Thine Enemy
 --]]
 					qg(17423, qa( 9581, {	-- Learning from the Crystals
-						i( 26006),	-- Crystal-Flecked Pants
-						i( 26032),	-- Crystal-Studded Legguards
-						i( 26020),	-- Shard-Covered Leggings
+						i(26006),	-- Crystal-Flecked Pants
+						i(26032),	-- Crystal-Studded Legguards
+						i(26020),	-- Shard-Covered Leggings
 						i(131262),	-- Shard-Linked Greaves
 					})),
 --					qg(17844, qa( 9746)),	-- Limits of Physical Exhaustion
 					qg(17663, qa( 9648, {	-- Mac'Aree Mushroom Menagerie
-						i( 26028),	-- Jessera's Fungus Lined Bands
+						i(26028),	-- Jessera's Fungus Lined Bands
 						i(131267),	-- Jessera's Fungus Lined Bindings
-						i( 26040),	-- Jessera's Fungus Lined Bracers
-						i( 26014),	-- Jessera's Fungus Lined Cuffs
+						i(26040),	-- Jessera's Fungus Lined Bracers
+						i(26014),	-- Jessera's Fungus Lined Cuffs
 					})),
 					qg(17843, qa( 9711, {	-- Matis the Cruel
 						i(131272),	-- Vindicator's Chain Leggings
-						i( 26033),	-- Vindicator's Iron Legguards
-						i( 26021),	-- Vindicator's Leather Chaps
-						i( 26007),	-- Vindicator's Woolies
+						i(26033),	-- Vindicator's Iron Legguards
+						i(26021),	-- Vindicator's Leather Chaps
+						i(26007),	-- Vindicator's Woolies
 					})),
 --[[
 					qg(17684, qa( 9642)),	-- More Irradiated Crystal Shards
@@ -234,7 +234,7 @@ _.Zones =
 					qg(17423, qa( 9584)),	-- The Second Sample
 					qg(17844, qa( 9740)),	-- The Sun Gate
 --]]
-					qg(17468, q(  9762, {	--  The Unwritten Prophecy - Wowhead incorrectly states any Alliance can get this quest. It's still Draenei only.
+					qg(17468, q(9762, {	--  The Unwritten Prophecy - Wowhead incorrectly states any Alliance can get this quest. It's still Draenei only.
 						["groups"] = {
 							i(24344),	-- Tabard of the Hand
 						},
@@ -262,9 +262,9 @@ _.Zones =
 --]]
 					qg(17663, qa( 9649, {	-- Ysera's Tears
 						i(131268),	-- Jessera's Fungus Lined Chainmail
-						i( 26030),	-- Jessera's Fungus Lined Hauberk
-						i( 26005),	-- Jessera's Fungus Lined Tunic
-						i( 26019),	-- Jessera's Fungus Lined Vest
+						i(26030),	-- Jessera's Fungus Lined Hauberk
+						i(26005),	-- Jessera's Fungus Lined Tunic
+						i(26019),	-- Jessera's Fungus Lined Vest
 					})),
 				}),
 				n(-16, { 	-- Rares

@@ -123,8 +123,8 @@ _.Zones =
 					qa( 13702),	-- A Champion Rises
 					qh( 13738),	-- A Champion Rises
 					qa( 13734),	-- A Champion Rises
-					q( 13070),	-- A Cold Front Approaches
-					q( 13072),	-- A Hero Remains
+					q(13070),	-- A Cold Front Approaches
+					q(13072),	-- A Hero Remains
 					qa( 14074),	-- A Leg Up
 					qh( 14143),	-- A Leg Up
 					qa( 20439),	-- A Meeting With The Magister
@@ -132,7 +132,7 @@ _.Zones =
 					qh( 13263),	-- A Short Fuse
 					qh( 24556),	-- A Suitable Disguise
 					qa( 20438),	-- A Suitable Disguise
-					q( 13068),	-- A Tale of Valor
+					q(13068),	-- A Tale of Valor
 					qa( 13689),	-- A Valiant Of Darnassus
 					qa( 13688),	-- A Valiant Of Gnomeregan
 					qa( 13685),	-- A Valiant Of Ironforge
@@ -159,7 +159,7 @@ _.Zones =
 					qh( 24801),	-- A Victory For The Sunreavers
 					qh( 24798),	-- A Victory For The Sunreavers
 					qh( 24800),	-- A Victory For The Sunreavers
-					q( 13152),	-- A Visit to the Doctor
+					q(13152),	-- A Visit to the Doctor
 					qa( 13390),	-- A Voice in the Dark
 					qh( 13271),	-- A Voice in the Dark
 					qa( 13600),	-- A Worthy Weapon
@@ -176,14 +176,14 @@ _.Zones =
 					qh( 13779),	-- A Worthy Weapon
 					qa( 13294),	-- Against the Giants
 					qh( 13277),	-- Against the Giants
-					q( 13174),	-- Amidst the Confusion
+					q(13174),	-- Amidst the Confusion
 					qh( 13814),	-- Among the Champions
 					qa( 13790),	-- Among the Champions
 					qa( 13793),	-- Among the Champions
 					qh( 13811),	-- Among the Champions
-					q( 13374),	-- Amped for Revolt!
+					q(13374),	-- Amped for Revolt!
 					qh( 24451),	-- An Audience With The Arcanist
-					q( 13169),	-- An Undead's Best Friend
+					q(13169),	-- An Undead's Best Friend
 					qh( 13363),	-- Argent Aid
 					qa( 13395),	-- Army of the Damned
 					qh( 13236),	-- Army of the Damned
@@ -202,26 +202,26 @@ _.Zones =
 					qa( 13847),	-- At The Enemy's Gates
 					qh( 13857),	-- At The Enemy's Gates
 					qh( 13230),	-- Avenge Me!
-					q( 13142),	-- Banshee's Revenge
+					q(13142),	-- Banshee's Revenge
 					qh( 13279),	-- Basic Chemistry
 					qa( 13295),	-- Basic Chemistry
-					q( 13213),	-- Battle at Valhalas
-					q( 13217),	-- Battle at Valhalas: Carnage!
-					q( 13214),	-- Battle at Valhalas: Fallen Heroes
-					q( 13219),	-- Battle at Valhalas: Final Challenge
-					q( 13215),	-- Battle at Valhalas: Khit'rix the Dark Master
-					q( 13218),	-- Battle at Valhalas: Thane Deathblow
-					q( 13216),	-- Battle at Valhalas: The Return of Sigrid Iceborn
+					q(13213),	-- Battle at Valhalas
+					q(13217),	-- Battle at Valhalas: Carnage!
+					q(13214),	-- Battle at Valhalas: Fallen Heroes
+					q(13219),	-- Battle at Valhalas: Final Challenge
+					q(13215),	-- Battle at Valhalas: Khit'rix the Dark Master
+					q(13218),	-- Battle at Valhalas: Thane Deathblow
+					q(13216),	-- Battle at Valhalas: The Return of Sigrid Iceborn
 					qh( 13863),	-- Battle Before The Citadel
 					qh( 13862),	-- Battle Before The Citadel
 					qa( 13864),	-- Battle Before The Citadel
 					qa( 13861),	-- Battle Before The Citadel
-					q( 24442),	-- Battle Plans Of The Kvaldir
+					q(24442),	-- Battle Plans Of The Kvaldir
 					qa( 13335),	-- Before the Gate of Horror
 					qh( 13329),	-- Before the Gate of Horror
-					q( 13106),	-- Blackwatch
+					q(13106),	-- Blackwatch
 					qh( 13313),	-- Blinding the Eyes in the Sky
-					q( 12810),	-- Blood in the Water
+					q(12810),	-- Blood in the Water
 					qh( 13330),	-- Blood of the Chosen
 					qa( 13336),	-- Blood of the Chosen
 					qh( 13307),	-- Bloodspattered Banners
@@ -230,77 +230,77 @@ _.Zones =
 					qa( 13291),	-- Borrowed Technology
 					qa( 14076),	-- Breakfast Of Champions
 					qh( 14092),	-- Breakfast Of Champions
-					q( 13211),	-- By Fire Be Purged
+					q(13211),	-- By Fire Be Purged
 					qh( 13355),	-- Cannot Reproduce
 					qa( 13320),	-- Cannot Reproduce
 					qa( 13333),	-- Capture More Dispatches
 					qh( 13354),	-- Chain of Command
 					qa( 13319),	-- Chain of Command
-					q( 13846),	-- Contributin' To The Cause
+					q(13846),	-- Contributin' To The Cause
 					qa( 13298),	-- Coprous the Defiled
 					qh( 13278),	-- Coprous the Defiled
 					qh( 13349),	-- Cradle of the Frostbrood
-					q( 12992),	-- Crush Dem Vrykuls!
-					q( 13040),	-- Curing The Incurable
-					q( 13120),	-- Death's Gaze
-					q( 14105),	-- Deathspeaker Kharos
-					q( 13042),	-- Deep in the Bowels of The Underhalls
-					q( 13039),	-- Defending The Vanguard
-					q( 13119),	-- Destroying the Altars
+					q(12992),	-- Crush Dem Vrykuls!
+					q(13040),	-- Curing The Incurable
+					q(13120),	-- Death's Gaze
+					q(14105),	-- Deathspeaker Kharos
+					q(13042),	-- Deep in the Bowels of The Underhalls
+					q(13039),	-- Defending The Vanguard
+					q(13119),	-- Destroying the Altars
 					qh( 13305),	-- Do Your Worst
 					qa( 13394),	-- Do Your Worst
 					qh( 13352),	-- Drag and Drop
 					qa( 13318),	-- Drag and Drop
 					qh( 13353),	-- Drag and Drop
 					qa( 13323),	-- Drag and Drop
-					q( 14101),	-- Drottinn Hrothgar
-					q( 13794),	-- Eadric the Pure
-					q( 12982),	-- Ebon Blade Prisoners
-					q( 12955),	-- Eliminate the Competition
+					q(14101),	-- Drottinn Hrothgar
+					q(13794),	-- Eadric the Pure
+					q(12982),	-- Ebon Blade Prisoners
+					q(12955),	-- Eliminate the Competition
 					qh( 13259),	-- Establishing Superiority
 					qa( 13386),	-- Exploiting an Opening
 					qa( 13393),	-- Field Repairs
 					qh( 13304),	-- Field Repairs
-					q( 13133),	-- Find the Ancient Hero
+					q(13133),	-- Find the Ancient Hero
 					qa( 13232),	-- Finish Me!
-					q( 12893),	-- Free Your Mind
-					q( 12813),	-- From Their Corpses, Rise!
-					q( 13171),	-- From Whence They Came
+					q(12893),	-- Free Your Mind
+					q(12813),	-- From Their Corpses, Rise!
+					q(13171),	-- From Whence They Came
 					qa( 13396),	-- Futility
 					qh( 13348),	-- Futility
-					q( 13146),	-- Generosity Abounds
-					q( 14108),	-- Get Kraken!
-					q( 12949),	-- Get the Key
+					q(13146),	-- Generosity Abounds
+					q(14108),	-- Get Kraken!
+					q(12949),	-- Get the Key
 					qa( 13314),	-- Get the Message
 					qh( 13293),	-- Get to Ymirheim!
 					qa( 13296),	-- Get to Ymirheim!
 					qh( 13238),	-- Good For Something?
 					qa( 14090),	-- Gormok Wants His Snobolds
 					qh( 14141),	-- Gormok Wants His Snobolds
-					q( 31935),	-- Grand Master Payne
-					q( 31928),	-- Grand Master Payne
-					q( 13212),	-- He's Gone to Pieces
-					q( 13036),	-- Honor Above All Else
-					q( 12939),	-- Honor Challenge
-					q( 13170),	-- Honor is for the Weak
-					q( 13074),	-- Hope Within the Emerald Nightmare
-					q( 13080),	-- Hope Yet Remains
-					q( 12891),	-- I Have an Idea, But First...
+					q(31935),	-- Grand Master Payne
+					q(31928),	-- Grand Master Payne
+					q(13212),	-- He's Gone to Pieces
+					q(13036),	-- Honor Above All Else
+					q(12939),	-- Honor Challenge
+					q(13170),	-- Honor is for the Weak
+					q(13074),	-- Hope Within the Emerald Nightmare
+					q(13080),	-- Hope Yet Remains
+					q(12891),	-- I Have an Idea, But First...
 					qh( 13229),	-- I'm Not Dead Yet!
 					qa( 13221),	-- I'm Not Dead Yet!
-					q( 13138),	-- I'm Smelting... Smelting!
-					q( 14095),	-- Identifying the Remains
+					q(13138),	-- I'm Smelting... Smelting!
+					q(14095),	-- Identifying the Remains
 					qa( 12896),	-- If He Cannot Be Turned
 					qh( 12897),	-- If He Cannot Be Turned
-					q( 13044),	-- If There Are Survivors...
-					q( 12840),	-- In Strict Confidence
-					q( 12838),	-- Intelligence Gathering
-					q( 13139),	-- Into The Frozen Heart Of Northrend
-					q( 13045),	-- Into The Wild Green Yonder
-					q( 13135),	-- It Could Kill Us All					
+					q(13044),	-- If There Are Survivors...
+					q(12840),	-- In Strict Confidence
+					q(12838),	-- Intelligence Gathering
+					q(13139),	-- Into The Frozen Heart Of Northrend
+					q(13045),	-- Into The Wild Green Yonder
+					q(13135),	-- It Could Kill Us All					
 					qh( 12892),	-- It's All Fun and Games
 					qa( 12887),	-- It's All Fun and Games
-					q( 13136),	-- Jagged Shards
+					q(13136),	-- Jagged Shards
 					qh( 13340),	-- Joining the Assault
 					qa( 13341),	-- Joining the Assault
 					qa( 24522),	-- Journey To The Sunwell
@@ -308,18 +308,18 @@ _.Zones =
 					qh( 13227),	-- Judgment Day Comes!
 					qa( 13226),	-- Judgment Day Comes!
 					qh( 13331),	-- Keeping the Alliance Blind
-					q( 13144),	-- Killing Two Scourge With One Skeleton
+					q(13144),	-- Killing Two Scourge With One Skeleton
 					qa( 13280),	-- King of the Mountain
 					qh( 13283),	-- King of the Mountain
 					qh( 13362),	-- Knowledge is a Terrible Burden
 					qa( 13401),	-- Knowledge is a Terrible Burden
 					qh( 13677),	-- Learning The Reins
 					qa( 13625),	-- Learning The Reins
-					q( 12995),	-- Leave Our Mark
-					q( 12951),	-- Let the Baron Know
+					q(12995),	-- Leave Our Mark
+					q(12951),	-- Let the Baron Know
 					qa( 13482),	-- Let's Get Out of Here
 					qh( 13481),	-- Let's Get Out of Here!
-					q( 13083),	-- Light Within the Darkness
+					q(13083),	-- Light Within the Darkness
 					qh( 13234),	-- Make Them Pay!
 					qa( 13828),	-- Mastery Of Melee
 					qh( 13829),	-- Mastery Of Melee
@@ -327,15 +327,15 @@ _.Zones =
 					qa( 13837),	-- Mastery Of The Charge
 					qh( 13838),	-- Mastery Of The Shield-Breaker
 					qa( 13835),	-- Mastery Of The Shield-Breaker
-					q( 13147),	-- Matchmaker
-					q( 13308),	-- Mind Tricks
-					q( 14102),	-- Mistcaller Yngvar
+					q(13147),	-- Matchmaker
+					q(13308),	-- Mind Tricks
+					q(14102),	-- Mistcaller Yngvar
 					qh( 13366),	-- Need More Info
 					qa( 13345),	-- Need More Info
 					qa( 13297),	-- Neutralizing the Plague
 					qh( 13281),	-- Neutralizing the Plague
-					q( 13143),	-- New Recruit
-					q( 12815),	-- No Fly Zone
+					q(13143),	-- New Recruit
+					q(12815),	-- No Fly Zone
 					qa( 13233),	-- No Mercy!
 					qa( 13350),	-- No Rest For The Wicked
 					qa( 13346),	-- No Rest For The Wicked
@@ -345,27 +345,27 @@ _.Zones =
 					qh( 13358),	-- Not a Bug
 					qa( 13344),	-- Not a Bug
 					qh( 13365),	-- Not a Bug
-					q( 13137),	-- Not-So-Honorable Combat
-					q( 13105),	-- Once More Unto The Breach, Hero
-					q( 13104),	-- Once More Unto The Breach, Hero
+					q(13137),	-- Not-So-Honorable Combat
+					q(13105),	-- Once More Unto The Breach, Hero
+					q(13104),	-- Once More Unto The Breach, Hero
 					qh( 13258),	-- Opportunity
 					qh( 13224),	-- Orgrim's Hammer
-					q( 14104),	-- Ornolf The Scarred
-					q( 13184),	-- Outliving Usefulness
-					q( 13168),	-- Parting Gifts
+					q(14104),	-- Ornolf The Scarred
+					q(13184),	-- Outliving Usefulness
+					q(13168),	-- Parting Gifts
 					qh( 13237),	-- Poke and Prod
 					qa( 13287),	-- Poke and Prod
 					qa( 13418),	-- Preparations for War
 					qh( 13419),	-- Preparations for War
-					q( 13176),	-- Preparing the Delivery
-					q( 13220),	-- Putting Olakin Back Together Again
+					q(13176),	-- Preparing the Delivery
+					q(13220),	-- Putting Olakin Back Together Again
 					qh( 13306),	-- Raise the Barricades
 					qa( 13332),	-- Raise the Barricades
-					q( 13092),	-- Reading the Bones
-					q( 13093),	-- Reading the Bones
+					q(13092),	-- Reading the Bones
+					q(13093),	-- Reading the Bones
 					qh( 24559),	-- Reforging The Sword
 					qa( 24461),	-- Reforging The Sword
-					q( 13175),	-- Regaining Control
+					q(13175),	-- Regaining Control
 					qh( 14136),	-- Rescue at Sea
 					qa( 14152),	-- Rescue at Sea
 					qa( 13321),	-- Retest Now
@@ -376,28 +376,28 @@ _.Zones =
 					qh( 24558),	-- Return To Myralion Sunblaze
 					qh( 13282),	-- Return to the Surface
 					qa( 13392),	-- Return to the Surface
-					q( 13059),	-- Revenge for the Vargul
-					q( 13008),	-- Scourge Tactics
-					q( 12847),	-- Second Chances
+					q(13059),	-- Revenge for the Vargul
+					q(13008),	-- Scourge Tactics
+					q(12847),	-- Second Chances
 					qa( 13387),	-- Securing the Perimeter
-					q( 13172),	-- Seeds of Chaos
+					q(13172),	-- Seeds of Chaos
 					qa( 13388),	-- Set it Off!
-					q( 12943),	-- Shadow Vault Decree
+					q(12943),	-- Shadow Vault Decree
 					qh( 13328),	-- Shatter the Shards
 					qa( 13339),	-- Shatter the Shards
-					q( 13069),	-- Shoot 'Em Up
+					q(13069),	-- Shoot 'Em Up
 					qa( 13397),	-- Sindragosa's Fall
 					qa( 13300),	-- Slaves to Saronite
 					qh( 13302),	-- Slaves to Saronite
 					qh( 13351),	-- Sneak Preview
 					qa( 13315),	-- Sneak Preview
-					q( 13134),	-- Spill Their Blood
+					q(13134),	-- Spill Their Blood
 					qa( 14080),	-- Stop The Aggressors
 					qh( 14140),	-- Stop The Aggressors
-					q( 13160),	-- Stunning View
-					q( 14448),	-- Takes One to Know One
+					q(13160),	-- Stunning View
+					q(14448),	-- Takes One to Know One
 					qh( 13260),	-- Takes One to Know One
-					q( 14447),	-- Takes One to Know One					
+					q(14447),	-- Takes One to Know One					
 					qh( 13810),	-- Taking Battle To The Enemy
 					qa( 13789),	-- Taking Battle To The Enemy
 					qa( 13791),	-- Taking Battle To The Enemy
@@ -408,30 +408,30 @@ _.Zones =
 					qa( 13288),	-- That's Abominable!
 					qa( 13289),	-- That's Abominable!
 					qh( 13276),	-- That's Abominable!
-					q( 12852),	-- The Admiral Revealed
-					q( 13125),	-- The Air Stands Still
+					q(12852),	-- The Admiral Revealed
+					q(13125),	-- The Air Stands Still
 					qa( 13667),	-- The Argent Tournament
 					qh( 13668),	-- The Argent Tournament
-					q( 13091),	-- The Art of Being a Water Terror
+					q(13091),	-- The Art of Being a Water Terror
 					qh( 13680),	-- The Aspirant's Challenge
 					qa( 13679),	-- The Aspirant's Challenge
 					qa( 14443),	-- The Battered Hilt
 					qh( 24554),	-- The Battered Hilt
-					q( 13141),	-- The Battle For Crusaders' Pinnacle
+					q(13141),	-- The Battle For Crusaders' Pinnacle
 					qh( 13634),	-- The Black Knight of Silverpine?
 					qa( 13633),	-- The Black Knight of Westfall?
-					q( 14016),	-- The Black Knight's Curse
-					q( 13664),	-- The Black Knight's Fall
-					q( 14017),	-- The Black Knight's Fate
-					q( 13663),	-- The Black Knight's Orders
-					q( 12999),	-- The Bone Witch
-					q( 13082),	-- The Boon of A'dal
-					q( 13079),	-- The Boon of Alexstrasza
-					q( 13075),	-- The Boon of Remulos
+					q(14016),	-- The Black Knight's Curse
+					q(13664),	-- The Black Knight's Fall
+					q(14017),	-- The Black Knight's Fate
+					q(13663),	-- The Black Knight's Orders
+					q(12999),	-- The Bone Witch
+					q(13082),	-- The Boon of A'dal
+					q(13079),	-- The Boon of Alexstrasza
+					q(13075),	-- The Boon of Remulos
 					qa( 13231),	-- The Broken Front
 					qh( 13228),	-- The Broken Front
-					q( 13157),	-- The Crusaders' Pinnacle
-					q( 12938),	-- The Duke
+					q(13157),	-- The Crusaders' Pinnacle
+					q(12938),	-- The Duke
 					qh( 13770),	-- The Edge Of Winter
 					qh( 13675),	-- The Edge Of Winter
 					qa( 13754),	-- The Edge Of Winter
@@ -444,10 +444,10 @@ _.Zones =
 					qa( 13743),	-- The Edge Of Winter
 					qh( 13775),	-- The Edge Of Winter
 					qa( 13616),	-- The Edge Of Winter
-					q( 13164),	-- The Fate of Bloodbane
-					q( 14107),	-- The Fate Of The Fallen
-					q( 13235),	-- The Flesh Giant Champion
-					q( 12839),	-- The Grand (Admiral's) Plan
+					q(13164),	-- The Fate of Bloodbane
+					q(14107),	-- The Fate Of The Fallen
+					q(13235),	-- The Flesh Giant Champion
+					q(12839),	-- The Grand (Admiral's) Plan
 					qh( 13767),	-- The Grand Melee
 					qa( 13665),	-- The Grand Melee
 					qh( 13772),	-- The Grand Melee
@@ -466,34 +466,34 @@ _.Zones =
 					qa( 13400),	-- The Hunter and the Prince
 					qa( 13337),	-- The Ironwall Rampart
 					qh( 13312),	-- The Ironwall Rampart
-					q( 13073),	-- The Keeper's Favor
-					q( 13086),	-- The Last Line Of Defense
+					q(13073),	-- The Keeper's Favor
+					q(13086),	-- The Last Line Of Defense
 					qh( 14144),	-- The Light's Mercy
 					qa( 14077),	-- The Light's Mercy
-					q( 13118),	-- The Purging Of Scourgeholme
+					q(13118),	-- The Purging Of Scourgeholme
 					qh( 24564),	-- The Purification of Quel'Delar
 					qh( 24596),	-- The Purification of Quel'Delar
 					qh( 24598),	-- The Purification of Quel'Delar
 					qa( 24553),	-- The Purification of Quel'Delar
 					qh( 24594),	-- The Purification of Quel'Delar
 					qa( 24595),	-- The Purification of Quel'Delar
-					q( 13110),	-- The Restless Dead
-					q( 13163),	-- The Rider of Blood
-					q( 13162),	-- The Rider of Frost
-					q( 13161),	-- The Rider of the Unholy
-					q( 13140),	-- The Runesmiths of Malykriss
-					q( 13795),	-- The Scourgebane
-					q( 13122),	-- The Scourgestone
-					q( 13641),	-- The Seer's Crystal
+					q(13110),	-- The Restless Dead
+					q(13163),	-- The Rider of Blood
+					q(13162),	-- The Rider of Frost
+					q(13161),	-- The Rider of the Unholy
+					q(13140),	-- The Runesmiths of Malykriss
+					q(13795),	-- The Scourgebane
+					q(13122),	-- The Scourgestone
+					q(13641),	-- The Seer's Crystal
 					qh( 12899),	-- The Shadow Vault
 					qa( 12898),	-- The Shadow Vault
 					qa( 13225),	-- The Skybreaker
 					qa( 13292),	-- The Solution Solution
-					q( 13130),	-- The Stone That Started A Revolution
-					q( 13643),	-- The Stories Dead Men Tell
-					q( 12807),	-- The Story Thus Far...
-					q( 13043),	-- The Sum is Greater than the Parts
-					q( 13077),	-- The Touch of an Aspect
+					q(13130),	-- The Stone That Started A Revolution
+					q(13643),	-- The Stories Dead Men Tell
+					q(12807),	-- The Story Thus Far...
+					q(13043),	-- The Sum is Greater than the Parts
+					q(13077),	-- The Touch of an Aspect
 					qa( 13725),	-- The Valiant's Challenge
 					qh( 13726),	-- The Valiant's Challenge
 					qa( 13723),	-- The Valiant's Challenge
@@ -514,28 +514,28 @@ _.Zones =
 					qa( 13717),	-- The Valiant's Charge
 					qa( 13716),	-- The Valiant's Charge
 					qa( 13715),	-- The Valiant's Charge
-					q( 13145),	-- The Vile Hold
-					q( 13081),	-- The Will of the Naaru
-					q( 13654),	-- There's Something About the Squire
+					q(13145),	-- The Vile Hold
+					q(13081),	-- The Will of the Naaru
+					q(13654),	-- There's Something About the Squire
 					qa( 13788),	-- Threat From Above
 					qh( 13812),	-- Threat From Above
 					qh( 13809),	-- Threat From Above
 					qa( 13682),	-- Threat From Above
-					q( 13121),	-- Through the Eye
+					q(13121),	-- Through the Eye
 					qh( 13360),	-- Time for Answers
 					qa( 13399),	-- Time for Answers
 					qa( 13391),	-- Time to Hide
 					qh( 13275),	-- Time to Hide
-					q( 13076),	-- Time Yet Remains
+					q(13076),	-- Time Yet Remains
 					qa( 13403),	-- Tirion's Gambit
 					qh( 13364),	-- Tirion's Gambit
 					qa( 13402),	-- Tirion's Help
-					q( 12806),	-- To the Rise with all Due Haste!
+					q(12806),	-- To the Rise with all Due Haste!
 					qa( 13671),	-- Training In The Field
 					qh( 13676),	-- Training In The Field
 					qa( 13672),	-- Up To The Challenge
 					qh( 13678),	-- Up To The Challenge
-					q( 13085),	-- Vaelen Has Returned
+					q(13085),	-- Vaelen Has Returned
 					qa( 13706),	-- Valiant Of Darnassus
 					qa( 13704),	-- Valiant Of Gnomeregan
 					qa( 13703),	-- Valiant Of Ironforge
@@ -546,20 +546,20 @@ _.Zones =
 					qa( 13705),	-- Valiant Of The Exodar
 					qh( 13709),	-- Valiant Of Thunder Bluff
 					qh( 13710),	-- Valiant Of Undercity
-					q( 13084),	-- Vandalizing Jotunheim
-					q( 13155),	-- Vereth the Cunning
-					q( 13071),	-- Vile Like Fire!
+					q(13084),	-- Vandalizing Jotunheim
+					q(13155),	-- Vereth the Cunning
+					q(13071),	-- Vile Like Fire!
 					qh( 13239),	-- Volatility
 					qh( 13261),	-- Volatility
-					q( 13381),	-- Watts My Target
+					q(13381),	-- Watts My Target
 					qa( 14112),	-- What Do You Feed a Yeti, Anyway?
 					qh( 14145),	-- What Do You Feed a Yeti, Anyway?
 					qh( 24555),	-- What The Dragons Know
 					qa( 14444),	-- What The Dragons Know
-					q( 13117),	-- Where Are They Coming From?
+					q(13117),	-- Where Are They Coming From?
 					qa( 13398),	-- Where Dragons Fell
 					qh( 13359),	-- Where Dragons Fell
-					q( 12814),	-- You'll Need a Gryphon
+					q(12814),	-- You'll Need a Gryphon
 					qh( 14142),	-- You've Really Done It This Time, Kul
 					qa( 14096),	-- You've Really Done It This Time, Kul
 					qa( 13290),	-- Your Attention, Please	
@@ -966,221 +966,221 @@ _.Zones =
 				n(-363, {	-- The Argent Tournament
 					n(-2, {
 						a(n(35573, { -- Arcanist Asarina <Legacy Justice Quartermaster>
-							i( 47702),	-- Pauldrons of the Cavalier
-							i( 47658),	-- Brimstone Igniter
-							i( 47674),	-- Helm of Thunderous Rampage
-							i( 47677),	-- Faceplate of the Honorbound
-							i( 47681),	-- Heaume of the Restless Watch
-							i( 47685),	-- Helm of the Brooding Dragon
-							i( 47686),	-- Helm of Inner Warmth
-							i( 47689),	-- Hood of Lethal Intent
-							i( 47690),	-- Helm of Abundant Growth
-							i( 47693),	-- Hood of Fiery Aftermath
-							i( 47694),	-- Helm of Clouded Sight
-							i( 47697),	-- Pauldrons of Trembling Rage
-							i( 47698),	-- Shoulderplates of Enduring Order
-							i( 47704),	-- Epaulets of the Devourer
-							i( 47707),	-- Mantle of the Groundbreaker
-							i( 47708),	-- Duskstalker Shoulderpads
-							i( 47712),	-- Shoulders of the Fateful Accord
-							i( 47713),	-- Mantle of Catastrophic Emanation
-							i( 47715),	-- Pauldrons of Revered Mortality
-							i( 41038),	-- Furious Gladiator's Ringmail Spaulders
-							i( 41044),	-- Furious Gladiator's Mail Spaulders
-							i( 41081),	-- Furious Gladiator's Linked Armor
-							i( 41087),	-- Furious Gladiator's Chain Armor
-							i( 41137),	-- Furious Gladiator's Linked Gauntlets
-							i( 41143),	-- Furious Gladiator's Chain Gauntlets
-							i( 41151),	-- Furious Gladiator's Linked Helm
-							i( 41157),	-- Furious Gladiator's Chain Helm
-							i( 41199),	-- Furious Gladiator's Linked Leggings
-							i( 41205),	-- Furious Gladiator's Chain Leggings
-							i( 41211),	-- Furious Gladiator's Linked Spaulders
-							i( 41217),	-- Furious Gladiator's Chain Spaulders
-							i( 41275),	-- Furious Gladiator's Kodohide Spaulders
-							i( 41281),	-- Furious Gladiator's Wyrmhide Spaulders
-							i( 41287),	-- Furious Gladiator's Kodohide Gloves
-							i( 41293),	-- Furious Gladiator's Wyrmhide Gloves
-							i( 41298),	-- Furious Gladiator's Kodohide Legguards
-							i( 41304),	-- Furious Gladiator's Wyrmhide Legguards
-							i( 41310),	-- Furious Gladiator's Kodohide Robes
-							i( 41316),	-- Furious Gladiator's Wyrmhide Robes
-							i( 41321),	-- Furious Gladiator's Kodohide Helm
-							i( 41327),	-- Furious Gladiator's Wyrmhide Helm
-							i( 41650),	-- Furious Gladiator's Leather Tunic
-							i( 41655),	-- Furious Gladiator's Leather Legguards
-							i( 41661),	-- Furious Gladiator's Dragonhide Robes
-							i( 41667),	-- Furious Gladiator's Dragonhide Legguards
-							i( 40788),	-- Furious Gladiator's Scaled Chestpiece
-							i( 41678),	-- Furious Gladiator's Dragonhide Helm
-							i( 41683),	-- Furious Gladiator's Leather Spaulders
-							i( 41715),	-- Furious Gladiator's Dragonhide Spaulders
-							i( 41767),	-- Furious Gladiator's Leather Gloves
-							i( 41773),	-- Furious Gladiator's Dragonhide Gloves
-							i( 41854),	-- Furious Gladiator's Mooncloth Hood
-							i( 41859),	-- Furious Gladiator's Mooncloth Robe
-							i( 41864),	-- Furious Gladiator's Mooncloth Leggings
-							i( 41869),	-- Furious Gladiator's Mooncloth Mantle
-							i( 41874),	-- Furious Gladiator's Mooncloth Gloves
-							i( 41915),	-- Furious Gladiator's Satin Hood
-							i( 41921),	-- Furious Gladiator's Satin Robe
-							i( 41927),	-- Furious Gladiator's Satin Leggings
-							i( 41934),	-- Furious Gladiator's Satin Mantle
-							i( 41940),	-- Furious Gladiator's Satin Gloves
-							i( 41946),	-- Furious Gladiator's Silk Cowl
-							i( 41953),	-- Furious Gladiator's Silk Raiment
-							i( 41959),	-- Furious Gladiator's Silk Trousers
-							i( 41965),	-- Furious Gladiator's Silk Amice
-							i( 41971),	-- Furious Gladiator's Silk Handguards
-							i( 41993),	-- Furious Gladiator's Felweave Cowl
-							i( 41998),	-- Furious Gladiator's Felweave Raiment
-							i( 42005),	-- Furious Gladiator's Felweave Trousers
-							i( 42011),	-- Furious Gladiator's Felweave Amice
-							i( 42017),	-- Furious Gladiator's Felweave Handguards
-							i( 40787),	-- Furious Gladiator's Dreadplate Chestpiece
-							i( 40789),	-- Furious Gladiator's Plate Chestpiece
-							i( 40807),	-- Furious Gladiator's Plate Gauntlets
-							i( 40808),	-- Furious Gladiator's Scaled Gauntlets
-							i( 40809),	-- Furious Gladiator's Dreadplate Gauntlets
-							i( 40826),	-- Furious Gladiator's Plate Helm
-							i( 40827),	-- Furious Gladiator's Dreadplate Helm
-							i( 40828),	-- Furious Gladiator's Scaled Helm
-							i( 40847),	-- Furious Gladiator's Plate Legguards
-							i( 40848),	-- Furious Gladiator's Dreadplate Legguards
-							i( 40849),	-- Furious Gladiator's Scaled Legguards
-							i( 40866),	-- Furious Gladiator's Plate Shoulders
-							i( 40868),	-- Furious Gladiator's Dreadplate Shoulders
-							i( 40869),	-- Furious Gladiator's Scaled Shoulders
-							i( 40907),	-- Furious Gladiator's Ornamented Chestguard
-							i( 40927),	-- Furious Gladiator's Ornamented Gloves
-							i( 40933),	-- Furious Gladiator's Ornamented Headcover
-							i( 40939),	-- Furious Gladiator's Ornamented Legplates
-							i( 40963),	-- Furious Gladiator's Ornamented Spaulders
-							i( 40992),	-- Furious Gladiator's Ringmail Armor
-							i( 40993),	-- Furious Gladiator's Mail Armor
-							i( 41001),	-- Furious Gladiator's Ringmail Gauntlets
-							i( 41007),	-- Furious Gladiator's Mail Gauntlets
-							i( 41013),	-- Furious Gladiator's Ringmail Helm
-							i( 41019),	-- Furious Gladiator's Mail Helm
-							i( 41027),	-- Furious Gladiator's Ringmail Leggings
-							i( 41033),	-- Furious Gladiator's Mail Leggings
-							i( 41672),	-- Furious Gladiator's Leather Helm
+							i(47702),	-- Pauldrons of the Cavalier
+							i(47658),	-- Brimstone Igniter
+							i(47674),	-- Helm of Thunderous Rampage
+							i(47677),	-- Faceplate of the Honorbound
+							i(47681),	-- Heaume of the Restless Watch
+							i(47685),	-- Helm of the Brooding Dragon
+							i(47686),	-- Helm of Inner Warmth
+							i(47689),	-- Hood of Lethal Intent
+							i(47690),	-- Helm of Abundant Growth
+							i(47693),	-- Hood of Fiery Aftermath
+							i(47694),	-- Helm of Clouded Sight
+							i(47697),	-- Pauldrons of Trembling Rage
+							i(47698),	-- Shoulderplates of Enduring Order
+							i(47704),	-- Epaulets of the Devourer
+							i(47707),	-- Mantle of the Groundbreaker
+							i(47708),	-- Duskstalker Shoulderpads
+							i(47712),	-- Shoulders of the Fateful Accord
+							i(47713),	-- Mantle of Catastrophic Emanation
+							i(47715),	-- Pauldrons of Revered Mortality
+							i(41038),	-- Furious Gladiator's Ringmail Spaulders
+							i(41044),	-- Furious Gladiator's Mail Spaulders
+							i(41081),	-- Furious Gladiator's Linked Armor
+							i(41087),	-- Furious Gladiator's Chain Armor
+							i(41137),	-- Furious Gladiator's Linked Gauntlets
+							i(41143),	-- Furious Gladiator's Chain Gauntlets
+							i(41151),	-- Furious Gladiator's Linked Helm
+							i(41157),	-- Furious Gladiator's Chain Helm
+							i(41199),	-- Furious Gladiator's Linked Leggings
+							i(41205),	-- Furious Gladiator's Chain Leggings
+							i(41211),	-- Furious Gladiator's Linked Spaulders
+							i(41217),	-- Furious Gladiator's Chain Spaulders
+							i(41275),	-- Furious Gladiator's Kodohide Spaulders
+							i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
+							i(41287),	-- Furious Gladiator's Kodohide Gloves
+							i(41293),	-- Furious Gladiator's Wyrmhide Gloves
+							i(41298),	-- Furious Gladiator's Kodohide Legguards
+							i(41304),	-- Furious Gladiator's Wyrmhide Legguards
+							i(41310),	-- Furious Gladiator's Kodohide Robes
+							i(41316),	-- Furious Gladiator's Wyrmhide Robes
+							i(41321),	-- Furious Gladiator's Kodohide Helm
+							i(41327),	-- Furious Gladiator's Wyrmhide Helm
+							i(41650),	-- Furious Gladiator's Leather Tunic
+							i(41655),	-- Furious Gladiator's Leather Legguards
+							i(41661),	-- Furious Gladiator's Dragonhide Robes
+							i(41667),	-- Furious Gladiator's Dragonhide Legguards
+							i(40788),	-- Furious Gladiator's Scaled Chestpiece
+							i(41678),	-- Furious Gladiator's Dragonhide Helm
+							i(41683),	-- Furious Gladiator's Leather Spaulders
+							i(41715),	-- Furious Gladiator's Dragonhide Spaulders
+							i(41767),	-- Furious Gladiator's Leather Gloves
+							i(41773),	-- Furious Gladiator's Dragonhide Gloves
+							i(41854),	-- Furious Gladiator's Mooncloth Hood
+							i(41859),	-- Furious Gladiator's Mooncloth Robe
+							i(41864),	-- Furious Gladiator's Mooncloth Leggings
+							i(41869),	-- Furious Gladiator's Mooncloth Mantle
+							i(41874),	-- Furious Gladiator's Mooncloth Gloves
+							i(41915),	-- Furious Gladiator's Satin Hood
+							i(41921),	-- Furious Gladiator's Satin Robe
+							i(41927),	-- Furious Gladiator's Satin Leggings
+							i(41934),	-- Furious Gladiator's Satin Mantle
+							i(41940),	-- Furious Gladiator's Satin Gloves
+							i(41946),	-- Furious Gladiator's Silk Cowl
+							i(41953),	-- Furious Gladiator's Silk Raiment
+							i(41959),	-- Furious Gladiator's Silk Trousers
+							i(41965),	-- Furious Gladiator's Silk Amice
+							i(41971),	-- Furious Gladiator's Silk Handguards
+							i(41993),	-- Furious Gladiator's Felweave Cowl
+							i(41998),	-- Furious Gladiator's Felweave Raiment
+							i(42005),	-- Furious Gladiator's Felweave Trousers
+							i(42011),	-- Furious Gladiator's Felweave Amice
+							i(42017),	-- Furious Gladiator's Felweave Handguards
+							i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
+							i(40789),	-- Furious Gladiator's Plate Chestpiece
+							i(40807),	-- Furious Gladiator's Plate Gauntlets
+							i(40808),	-- Furious Gladiator's Scaled Gauntlets
+							i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
+							i(40826),	-- Furious Gladiator's Plate Helm
+							i(40827),	-- Furious Gladiator's Dreadplate Helm
+							i(40828),	-- Furious Gladiator's Scaled Helm
+							i(40847),	-- Furious Gladiator's Plate Legguards
+							i(40848),	-- Furious Gladiator's Dreadplate Legguards
+							i(40849),	-- Furious Gladiator's Scaled Legguards
+							i(40866),	-- Furious Gladiator's Plate Shoulders
+							i(40868),	-- Furious Gladiator's Dreadplate Shoulders
+							i(40869),	-- Furious Gladiator's Scaled Shoulders
+							i(40907),	-- Furious Gladiator's Ornamented Chestguard
+							i(40927),	-- Furious Gladiator's Ornamented Gloves
+							i(40933),	-- Furious Gladiator's Ornamented Headcover
+							i(40939),	-- Furious Gladiator's Ornamented Legplates
+							i(40963),	-- Furious Gladiator's Ornamented Spaulders
+							i(40992),	-- Furious Gladiator's Ringmail Armor
+							i(40993),	-- Furious Gladiator's Mail Armor
+							i(41001),	-- Furious Gladiator's Ringmail Gauntlets
+							i(41007),	-- Furious Gladiator's Mail Gauntlets
+							i(41013),	-- Furious Gladiator's Ringmail Helm
+							i(41019),	-- Furious Gladiator's Mail Helm
+							i(41027),	-- Furious Gladiator's Ringmail Leggings
+							i(41033),	-- Furious Gladiator's Mail Leggings
+							i(41672),	-- Furious Gladiator's Leather Helm
 						})),
 						a(n(35579, { -- Aspirant Forudir <Triumphant Armor Vendor>
 							gs(350, { -- Kel'Thuzad's Regalia -- gs is wrong
-								i( 47783),	-- Kel'Thuzad's Gloves of Conquest
-								i( 47784),	-- Kel'Thuzad's Hood of Conquest
-								i( 47785),	-- Kel'Thuzad's Leggings of Conquest
-								i( 47786),	-- Kel'Thuzad's Robe of Conquest
-								i( 47787),	-- Kel'Thuzad's Shoulderpads of Conquest
+								i(47783),	-- Kel'Thuzad's Gloves of Conquest
+								i(47784),	-- Kel'Thuzad's Hood of Conquest
+								i(47785),	-- Kel'Thuzad's Leggings of Conquest
+								i(47786),	-- Kel'Thuzad's Robe of Conquest
+								i(47787),	-- Kel'Thuzad's Shoulderpads of Conquest
 							}),
 							gs(723, { -- Khadgar's Regalia -- gs is wrong
-								i( 47752),	-- Khadgar's Gauntlets of Conquest
-								i( 47748),	-- Khadgar's Hood of Conquest
-								i( 47750),	-- Khadgar's Leggings of Conquest
-								i( 47749),	-- Khadgar's Robe of Conquest
-								i( 47751),	-- Khadgar's Shoulderpads of Conquest
+								i(47752),	-- Khadgar's Gauntlets of Conquest
+								i(47748),	-- Khadgar's Hood of Conquest
+								i(47750),	-- Khadgar's Leggings of Conquest
+								i(47749),	-- Khadgar's Robe of Conquest
+								i(47751),	-- Khadgar's Shoulderpads of Conquest
 							}),
 							gs(675, { -- Malfurion's Garb -- gs is wrong
-								i( 48158),	-- Malfurion's Cover of Conquest
-								i( 48162),	-- Malfurion's Gloves of Conquest
-								i( 48213),	-- Malfurion's Handgrips of Conquest
-								i( 48132),	-- Malfurion's Handguards of Conquest
-								i( 48214),	-- Malfurion's Headguard of Conquest
-								i( 48102),	-- Malfurion's Headpiece of Conquest
-								i( 48130),	-- Malfurion's Leggings of Conquest
-								i( 48215),	-- Malfurion's Legguards of Conquest
-								i( 48161),	-- Malfurion's Mantle of Conquest
-								i( 48216),	-- Malfurion's Raiments of Conquest
-								i( 48129),	-- Malfurion's Robe of Conquest
-								i( 48217),	-- Malfurion's Shoulderpads of Conquest
-								i( 48131),	-- Malfurion's Spaulders of Conquest
-								i( 48160),	-- Malfurion's Trousers of Conquest
-								i( 48159),	-- Malfurion's Vestments of Conquest							
+								i(48158),	-- Malfurion's Cover of Conquest
+								i(48162),	-- Malfurion's Gloves of Conquest
+								i(48213),	-- Malfurion's Handgrips of Conquest
+								i(48132),	-- Malfurion's Handguards of Conquest
+								i(48214),	-- Malfurion's Headguard of Conquest
+								i(48102),	-- Malfurion's Headpiece of Conquest
+								i(48130),	-- Malfurion's Leggings of Conquest
+								i(48215),	-- Malfurion's Legguards of Conquest
+								i(48161),	-- Malfurion's Mantle of Conquest
+								i(48216),	-- Malfurion's Raiments of Conquest
+								i(48129),	-- Malfurion's Robe of Conquest
+								i(48217),	-- Malfurion's Shoulderpads of Conquest
+								i(48131),	-- Malfurion's Spaulders of Conquest
+								i(48160),	-- Malfurion's Trousers of Conquest
+								i(48159),	-- Malfurion's Vestments of Conquest							
 							}),
 							gs(826, { -- Nobundo's Garb -- gs is wrong
-								i( 48341),	-- Nobundo's Chestguard of Conquest
-								i( 48343),	-- Nobundo's Faceguard of Conquest
-								i( 48312),	-- Nobundo's Gloves of Conquest
-								i( 48342),	-- Nobundo's Grips of Conquest
-								i( 48284),	-- Nobundo's Handguards of Conquest
-								i( 48310),	-- Nobundo's Hauberk of Conquest
-								i( 48280),	-- Nobundo's Headpiece of Conquest
-								i( 48313),	-- Nobundo's Helm of Conquest
-								i( 48314),	-- Nobundo's Kilt of Conquest
-								i( 48282),	-- Nobundo's Legguards of Conquest
-								i( 48345),	-- Nobundo's Shoulderguards of Conquest
-								i( 48315),	-- Nobundo's Shoulderpads of Conquest
-								i( 48283),	-- Nobundo's Spaulders of Conquest
-								i( 48281),	-- Nobundo's Tunic of Conquest
-								i( 48344),	-- Nobundo's War-Kilt of Conquest								
+								i(48341),	-- Nobundo's Chestguard of Conquest
+								i(48343),	-- Nobundo's Faceguard of Conquest
+								i(48312),	-- Nobundo's Gloves of Conquest
+								i(48342),	-- Nobundo's Grips of Conquest
+								i(48284),	-- Nobundo's Handguards of Conquest
+								i(48310),	-- Nobundo's Hauberk of Conquest
+								i(48280),	-- Nobundo's Headpiece of Conquest
+								i(48313),	-- Nobundo's Helm of Conquest
+								i(48314),	-- Nobundo's Kilt of Conquest
+								i(48282),	-- Nobundo's Legguards of Conquest
+								i(48345),	-- Nobundo's Shoulderguards of Conquest
+								i(48315),	-- Nobundo's Shoulderpads of Conquest
+								i(48283),	-- Nobundo's Spaulders of Conquest
+								i(48281),	-- Nobundo's Tunic of Conquest
+								i(48344),	-- Nobundo's War-Kilt of Conquest								
 							}),	
 							gs(691, { -- Thassarian's Battlegear -- gs is wrong
-								i( 48474),	-- Thassarian's Battleplate of Conquest
-								i( 48531),	-- Thassarian's Chestguard of Conquest
-								i( 48529),	-- Thassarian's Faceguard of Conquest
-								i( 48480),	-- Thassarian's Gauntlets of Conquest
-								i( 48537),	-- Thassarian's Handguards of Conquest
-								i( 48472),	-- Thassarian's Helmet of Conquest
-								i( 48533),	-- Thassarian's Legguards of Conquest
-								i( 48476),	-- Thassarian's Legplates of Conquest
-								i( 48535),	-- Thassarian's Pauldrons of Conquest
-								i( 48478),	-- Thassarian's Shoulderplates of Conquest
+								i(48474),	-- Thassarian's Battleplate of Conquest
+								i(48531),	-- Thassarian's Chestguard of Conquest
+								i(48529),	-- Thassarian's Faceguard of Conquest
+								i(48480),	-- Thassarian's Gauntlets of Conquest
+								i(48537),	-- Thassarian's Handguards of Conquest
+								i(48472),	-- Thassarian's Helmet of Conquest
+								i(48533),	-- Thassarian's Legguards of Conquest
+								i(48476),	-- Thassarian's Legplates of Conquest
+								i(48535),	-- Thassarian's Pauldrons of Conquest
+								i(48478),	-- Thassarian's Shoulderplates of Conquest
 							}),
 							gs(641, { -- Tyralyon's Garb -- gs is wrong
-								i( 48602),	-- Turalyon's Battleplate of Conquest
-								i( 48632),	-- Turalyon's Breastplate of Conquest
-								i( 48634),	-- Turalyon's Faceguard of Conquest
-								i( 48603),	-- Turalyon's Gauntlets of Conquest
-								i( 48574),	-- Turalyon's Gloves of Conquest
-								i( 48568),	-- Turalyon's Greaves of Conquest
-								i( 48633),	-- Turalyon's Handguards of Conquest
-								i( 48564),	-- Turalyon's Headpiece of Conquest
-								i( 48604),	-- Turalyon's Helm of Conquest
-								i( 48635),	-- Turalyon's Legguards of Conquest
-								i( 48605),	-- Turalyon's Legplates of Conquest
-								i( 48636),	-- Turalyon's Shoulderguards of Conquest
-								i( 48606),	-- Turalyon's Shoulderplates of Conquest
-								i( 48572),	-- Turalyon's Spaulders of Conquest
-								i( 48566),	-- Turalyon's Tunic of Conquest
+								i(48602),	-- Turalyon's Battleplate of Conquest
+								i(48632),	-- Turalyon's Breastplate of Conquest
+								i(48634),	-- Turalyon's Faceguard of Conquest
+								i(48603),	-- Turalyon's Gauntlets of Conquest
+								i(48574),	-- Turalyon's Gloves of Conquest
+								i(48568),	-- Turalyon's Greaves of Conquest
+								i(48633),	-- Turalyon's Handguards of Conquest
+								i(48564),	-- Turalyon's Headpiece of Conquest
+								i(48604),	-- Turalyon's Helm of Conquest
+								i(48635),	-- Turalyon's Legguards of Conquest
+								i(48605),	-- Turalyon's Legplates of Conquest
+								i(48636),	-- Turalyon's Shoulderguards of Conquest
+								i(48606),	-- Turalyon's Shoulderplates of Conquest
+								i(48572),	-- Turalyon's Spaulders of Conquest
+								i(48566),	-- Turalyon's Tunic of Conquest
 							}),
 							gs(707, { -- VanCleef's Battlegear -- gs is wrong
-								i( 48219),	-- VanCleef's Breastplate of Conquest
-								i( 48222),	-- VanCleef's Gauntlets of Conquest
-								i( 48218),	-- VanCleef's Helmet of Conquest
-								i( 48220),	-- VanCleef's Legplates of Conquest
-								i( 48221),	-- VanCleef's Pauldrons of Conquest
+								i(48219),	-- VanCleef's Breastplate of Conquest
+								i(48222),	-- VanCleef's Gauntlets of Conquest
+								i(48218),	-- VanCleef's Helmet of Conquest
+								i(48220),	-- VanCleef's Legplates of Conquest
+								i(48221),	-- VanCleef's Pauldrons of Conquest
 							}),	
 							gs(657, { -- Velen's Regalia -- gs is wrong
-								i( 48073),	-- Velen's Circlet of Conquest
-								i( 47914),	-- Velen's Cowl of Conquest
-								i( 47982),	-- Velen's Gloves of Conquest
-								i( 48072),	-- Velen's Handwraps of Conquest
-								i( 47980),	-- Velen's Leggings of Conquest
-								i( 48076),	-- Velen's Mantle of Conquest
-								i( 48074),	-- Velen's Pants of Conquest
-								i( 48075),	-- Velen's Raiments of Conquest
-								i( 47936),	-- Velen's Robe of Conquest
-								i( 47981),	-- Velen's Shoulderpads of Conquest
+								i(48073),	-- Velen's Circlet of Conquest
+								i(47914),	-- Velen's Cowl of Conquest
+								i(47982),	-- Velen's Gloves of Conquest
+								i(48072),	-- Velen's Handwraps of Conquest
+								i(47980),	-- Velen's Leggings of Conquest
+								i(48076),	-- Velen's Mantle of Conquest
+								i(48074),	-- Velen's Pants of Conquest
+								i(48075),	-- Velen's Raiments of Conquest
+								i(47936),	-- Velen's Robe of Conquest
+								i(47981),	-- Velen's Shoulderpads of Conquest
 							}),
 							gs(841, { -- Windrunner's Battlegear -- gs is wrong
-								i( 48254),	-- Windrunner's Handguards of Conquest
-								i( 48250),	-- Windrunner's Headpiece of Conquest
-								i( 48252),	-- Windrunner's Legguards of Conquest
-								i( 48253),	-- Windrunner's Spaulders of Conquest
-								i( 48251),	-- Windrunner's Tunic of Conquest
+								i(48254),	-- Windrunner's Handguards of Conquest
+								i(48250),	-- Windrunner's Headpiece of Conquest
+								i(48252),	-- Windrunner's Legguards of Conquest
+								i(48253),	-- Windrunner's Spaulders of Conquest
+								i(48251),	-- Windrunner's Tunic of Conquest
 							}),
 							gs(738, { -- Wrynn's Battlegear -- gs is wrong
-								i( 48372),	-- Wrynn's Battleplate of Conquest
-								i( 48436),	-- Wrynn's Breastplate of Conquest
-								i( 48375),	-- Wrynn's Gauntlets of Conquest
-								i( 48429),	-- Wrynn's Greathelm of Conquest
-								i( 48449),	-- Wrynn's Handguards of Conquest
-								i( 48371),	-- Wrynn's Helmet of Conquest
-								i( 48445),	-- Wrynn's Legguards of Conquest
-								i( 48373),	-- Wrynn's Legplates of Conquest
-								i( 48448),	-- Wrynn's Pauldrons of Conquest
-								i( 48374),	-- Wrynn's Shoulderplates of Conquest
+								i(48372),	-- Wrynn's Battleplate of Conquest
+								i(48436),	-- Wrynn's Breastplate of Conquest
+								i(48375),	-- Wrynn's Gauntlets of Conquest
+								i(48429),	-- Wrynn's Greathelm of Conquest
+								i(48449),	-- Wrynn's Handguards of Conquest
+								i(48371),	-- Wrynn's Helmet of Conquest
+								i(48445),	-- Wrynn's Legguards of Conquest
+								i(48373),	-- Wrynn's Legplates of Conquest
+								i(48448),	-- Wrynn's Pauldrons of Conquest
+								i(48374),	-- Wrynn's Shoulderplates of Conquest
 							}),			
 						})),
 						h(n(35580, { -- Aspirant Naradiel <Triumphant Armor Vendor>
@@ -1423,120 +1423,120 @@ _.Zones =
 						})),
 						a(n(35575, { -- Champion Isimode <Triumphant Armor Vendor>
 							gs(350, { -- Kel'Thuzad's Regalia -- gs is wrong
-								i( 47788),	-- Kel'Thuzad's Gloves of Triumph
-								i( 47789),	-- Kel'Thuzad's Hood of Triumph
-								i( 47790),	-- Kel'Thuzad's Leggings of Triumph
-								i( 47791),	-- Kel'Thuzad's Robe of Triumph
-								i( 47792),	-- Kel'Thuzad's Shoulderpads of Triumph
+								i(47788),	-- Kel'Thuzad's Gloves of Triumph
+								i(47789),	-- Kel'Thuzad's Hood of Triumph
+								i(47790),	-- Kel'Thuzad's Leggings of Triumph
+								i(47791),	-- Kel'Thuzad's Robe of Triumph
+								i(47792),	-- Kel'Thuzad's Shoulderpads of Triumph
 							}),
 							gs(723, { -- Khadgar's Regalia -- gs is wrong
-								i( 47762),	-- Khadgar's Gauntlets of Triumph
-								i( 47761),	-- Khadgar's Hood of Triumph
-								i( 47760),	-- Khadgar's Leggings of Triumph
-								i( 47759),	-- Khadgar's Robe of Triumph
-								i( 47758),	-- Khadgar's Shoulderpads of Triumph
+								i(47762),	-- Khadgar's Gauntlets of Triumph
+								i(47761),	-- Khadgar's Hood of Triumph
+								i(47760),	-- Khadgar's Leggings of Triumph
+								i(47759),	-- Khadgar's Robe of Triumph
+								i(47758),	-- Khadgar's Shoulderpads of Triumph
 
 							}),
 							gs(675, { -- Malfurion's Garb -- gs is wrong
-								i( 48171),	-- Malfurion's Cover of Triumph
-								i( 48172),	-- Malfurion's Gloves of Triumph
-								i( 48203),	-- Malfurion's Handgrips of Triumph
-								i( 48142),	-- Malfurion's Handguards of Triumph
-								i( 48204),	-- Malfurion's Headguard of Triumph
-								i( 48141),	-- Malfurion's Headpiece of Triumph
-								i( 48140),	-- Malfurion's Leggings of Triumph
-								i( 48205),	-- Malfurion's Legguards of Triumph
-								i( 48168),	-- Malfurion's Mantle of Triumph
-								i( 48206),	-- Malfurion's Raiments of Triumph
-								i( 48139),	-- Malfurion's Robe of Triumph
-								i( 48207),	-- Malfurion's Shoulderpads of Triumph
-								i( 48138),	-- Malfurion's Spaulders of Triumph
-								i( 48170),	-- Malfurion's Trousers of Triumph
-								i( 48169),	-- Malfurion's Vestments of Triumph						
+								i(48171),	-- Malfurion's Cover of Triumph
+								i(48172),	-- Malfurion's Gloves of Triumph
+								i(48203),	-- Malfurion's Handgrips of Triumph
+								i(48142),	-- Malfurion's Handguards of Triumph
+								i(48204),	-- Malfurion's Headguard of Triumph
+								i(48141),	-- Malfurion's Headpiece of Triumph
+								i(48140),	-- Malfurion's Leggings of Triumph
+								i(48205),	-- Malfurion's Legguards of Triumph
+								i(48168),	-- Malfurion's Mantle of Triumph
+								i(48206),	-- Malfurion's Raiments of Triumph
+								i(48139),	-- Malfurion's Robe of Triumph
+								i(48207),	-- Malfurion's Shoulderpads of Triumph
+								i(48138),	-- Malfurion's Spaulders of Triumph
+								i(48170),	-- Malfurion's Trousers of Triumph
+								i(48169),	-- Malfurion's Vestments of Triumph						
 							}),
 							gs(826, { -- Nobundo's Garb -- gs is wrong
-								i( 48355),	-- Nobundo's Chestguard of Triumph
-								i( 48353),	-- Nobundo's Faceguard of Triumph
-								i( 48324),	-- Nobundo's Gloves of Triumph
-								i( 48354),	-- Nobundo's Grips of Triumph
-								i( 48293),	-- Nobundo's Handguards of Triumph
-								i( 48325),	-- Nobundo's Hauberk of Triumph
-								i( 48292),	-- Nobundo's Headpiece of Triumph
-								i( 48323),	-- Nobundo's Helm of Triumph
-								i( 48322),	-- Nobundo's Kilt of Triumph
-								i( 48291),	-- Nobundo's Legguards of Triumph
-								i( 48351),	-- Nobundo's Shoulderguards of Triumph
-								i( 48321),	-- Nobundo's Shoulderpads of Triumph
-								i( 48290),	-- Nobundo's Spaulders of Triumph
-								i( 48294),	-- Nobundo's Tunic of Triumph
-								i( 48352),	-- Nobundo's War-Kilt of Triumph								
+								i(48355),	-- Nobundo's Chestguard of Triumph
+								i(48353),	-- Nobundo's Faceguard of Triumph
+								i(48324),	-- Nobundo's Gloves of Triumph
+								i(48354),	-- Nobundo's Grips of Triumph
+								i(48293),	-- Nobundo's Handguards of Triumph
+								i(48325),	-- Nobundo's Hauberk of Triumph
+								i(48292),	-- Nobundo's Headpiece of Triumph
+								i(48323),	-- Nobundo's Helm of Triumph
+								i(48322),	-- Nobundo's Kilt of Triumph
+								i(48291),	-- Nobundo's Legguards of Triumph
+								i(48351),	-- Nobundo's Shoulderguards of Triumph
+								i(48321),	-- Nobundo's Shoulderpads of Triumph
+								i(48290),	-- Nobundo's Spaulders of Triumph
+								i(48294),	-- Nobundo's Tunic of Triumph
+								i(48352),	-- Nobundo's War-Kilt of Triumph								
 							}),	
 							gs(691, { -- Thassarian's Battlegear -- gs is wrong
-								i( 48490),	-- Thassarian's Battleplate of Triumph
-								i( 48547),	-- Thassarian's Chestguard of Triumph
-								i( 48545),	-- Thassarian's Faceguard of Triumph
-								i( 48489),	-- Thassarian's Gauntlets of Triumph
-								i( 48546),	-- Thassarian's Handguards of Triumph
-								i( 48488),	-- Thassarian's Helmet of Triumph
-								i( 48544),	-- Thassarian's Legguards of Triumph
-								i( 48487),	-- Thassarian's Legplates of Triumph
-								i( 48543),	-- Thassarian's Pauldrons of Triumph
-								i( 48486),	-- Thassarian's Shoulderplates of Triumph
+								i(48490),	-- Thassarian's Battleplate of Triumph
+								i(48547),	-- Thassarian's Chestguard of Triumph
+								i(48545),	-- Thassarian's Faceguard of Triumph
+								i(48489),	-- Thassarian's Gauntlets of Triumph
+								i(48546),	-- Thassarian's Handguards of Triumph
+								i(48488),	-- Thassarian's Helmet of Triumph
+								i(48544),	-- Thassarian's Legguards of Triumph
+								i(48487),	-- Thassarian's Legplates of Triumph
+								i(48543),	-- Thassarian's Pauldrons of Triumph
+								i(48486),	-- Thassarian's Shoulderplates of Triumph
 							}),
 							gs(641, { -- Tyralyon's Garb -- gs is wrong
-								i( 48616),	-- Turalyon's Battleplate of Triumph
-								i( 48642),	-- Turalyon's Breastplate of Triumph
-								i( 48644),	-- Turalyon's Faceguard of Triumph
-								i( 48615),	-- Turalyon's Gauntlets of Triumph
-								i( 48583),	-- Turalyon's Gloves of Triumph
-								i( 48581),	-- Turalyon's Greaves of Triumph
-								i( 48643),	-- Turalyon's Handguards of Triumph
-								i( 48582),	-- Turalyon's Headpiece of Triumph
-								i( 48614),	-- Turalyon's Helm of Triumph
-								i( 48645),	-- Turalyon's Legguards of Triumph
-								i( 48613),	-- Turalyon's Legplates of Triumph
-								i( 48646),	-- Turalyon's Shoulderguards of Triumph
-								i( 48612),	-- Turalyon's Shoulderplates of Triumph
-								i( 48580),	-- Turalyon's Spaulders of Triumph
-								i( 48584),	-- Turalyon's Tunic of Triumph
+								i(48616),	-- Turalyon's Battleplate of Triumph
+								i(48642),	-- Turalyon's Breastplate of Triumph
+								i(48644),	-- Turalyon's Faceguard of Triumph
+								i(48615),	-- Turalyon's Gauntlets of Triumph
+								i(48583),	-- Turalyon's Gloves of Triumph
+								i(48581),	-- Turalyon's Greaves of Triumph
+								i(48643),	-- Turalyon's Handguards of Triumph
+								i(48582),	-- Turalyon's Headpiece of Triumph
+								i(48614),	-- Turalyon's Helm of Triumph
+								i(48645),	-- Turalyon's Legguards of Triumph
+								i(48613),	-- Turalyon's Legplates of Triumph
+								i(48646),	-- Turalyon's Shoulderguards of Triumph
+								i(48612),	-- Turalyon's Shoulderplates of Triumph
+								i(48580),	-- Turalyon's Spaulders of Triumph
+								i(48584),	-- Turalyon's Tunic of Triumph
 							}),
 							gs(707, { -- VanCleef's Battlegear -- gs is wrong
-								i( 48232),	-- VanCleef's Breastplate of Triumph
-								i( 48231),	-- VanCleef's Gauntlets of Triumph
-								i( 48230),	-- VanCleef's Helmet of Triumph
-								i( 48229),	-- VanCleef's Legplates of Triumph
-								i( 48228),	-- VanCleef's Pauldrons of Triumph
+								i(48232),	-- VanCleef's Breastplate of Triumph
+								i(48231),	-- VanCleef's Gauntlets of Triumph
+								i(48230),	-- VanCleef's Helmet of Triumph
+								i(48229),	-- VanCleef's Legplates of Triumph
+								i(48228),	-- VanCleef's Pauldrons of Triumph
 							}),	
 							gs(657, { -- Velen's Regalia -- gs is wrong
-								i( 48085),	-- Velen's Circlet of Triumph
-								i( 48035),	-- Velen's Cowl of Triumph
-								i( 48037),	-- Velen's Gloves of Triumph
-								i( 48086),	-- Velen's Handwraps of Triumph
-								i( 48033),	-- Velen's Leggings of Triumph
-								i( 48082),	-- Velen's Mantle of Triumph
-								i( 48084),	-- Velen's Pants of Triumph
-								i( 48083),	-- Velen's Raiments of Triumph
-								i( 48031),	-- Velen's Robe of Triumph
-								i( 48029),	-- Velen's Shoulderpads of Triumph
+								i(48085),	-- Velen's Circlet of Triumph
+								i(48035),	-- Velen's Cowl of Triumph
+								i(48037),	-- Velen's Gloves of Triumph
+								i(48086),	-- Velen's Handwraps of Triumph
+								i(48033),	-- Velen's Leggings of Triumph
+								i(48082),	-- Velen's Mantle of Triumph
+								i(48084),	-- Velen's Pants of Triumph
+								i(48083),	-- Velen's Raiments of Triumph
+								i(48031),	-- Velen's Robe of Triumph
+								i(48029),	-- Velen's Shoulderpads of Triumph
 							}),
 							gs(841, { -- Windrunner's Battlegear -- gs is wrong
-								i( 48263),	-- Windrunner's Handguards of Triumph
-								i( 48262),	-- Windrunner's Headpiece of Triumph
-								i( 48261),	-- Windrunner's Legguards of Triumph
-								i( 48260),	-- Windrunner's Spaulders of Triumph
-								i( 48264),	-- Windrunner's Tunic of Triumph
+								i(48263),	-- Windrunner's Handguards of Triumph
+								i(48262),	-- Windrunner's Headpiece of Triumph
+								i(48261),	-- Windrunner's Legguards of Triumph
+								i(48260),	-- Windrunner's Spaulders of Triumph
+								i(48264),	-- Windrunner's Tunic of Triumph
 							}),
 							gs(738, { -- Wrynn's Battlegear -- gs is wrong
-								i( 48385),	-- Wrynn's Battleplate of Triumph
-								i( 48451),	-- Wrynn's Breastplate of Triumph
-								i( 48384),	-- Wrynn's Gauntlets of Triumph
-								i( 48433),	-- Wrynn's Greathelm of Triumph
-								i( 48453),	-- Wrynn's Handguards of Triumph
-								i( 48383),	-- Wrynn's Helmet of Triumph
-								i( 48447),	-- Wrynn's Legguards of Triumph
-								i( 48382),	-- Wrynn's Legplates of Triumph
-								i( 48455),	-- Wrynn's Pauldrons of Triumph
-								i( 48381),	-- Wrynn's Shoulderplates of Triumph
+								i(48385),	-- Wrynn's Battleplate of Triumph
+								i(48451),	-- Wrynn's Breastplate of Triumph
+								i(48384),	-- Wrynn's Gauntlets of Triumph
+								i(48433),	-- Wrynn's Greathelm of Triumph
+								i(48453),	-- Wrynn's Handguards of Triumph
+								i(48383),	-- Wrynn's Helmet of Triumph
+								i(48447),	-- Wrynn's Legguards of Triumph
+								i(48382),	-- Wrynn's Legplates of Triumph
+								i(48455),	-- Wrynn's Pauldrons of Triumph
+								i(48381),	-- Wrynn's Shoulderplates of Triumph
 							}),			
 						})),
 						a(n(33307, { -- Corporal Arthur Flew <Stormwind Quartermaster>
@@ -1741,105 +1741,105 @@ _.Zones =
 							i(45181),	-- Wrap of the Everliving Tree
 						})),
 						h(n(35574, { -- Magistrix Iruvia <Legacy Justice Quartermaster>
-							i( 47658),	-- Brimstone Igniter
-							i( 47684),	-- Coif of the Brooding Dragon
-							i( 47709),	-- Duskstalker Pauldrons
-							i( 47710),	-- Epaulets of the Fateful Accord
-							i( 47675),	-- Faceplate of Thunderous Rampage
-							i( 41087),	-- Furious Gladiator's Chain Armor
-							i( 41143),	-- Furious Gladiator's Chain Gauntlets
-							i( 41157),	-- Furious Gladiator's Chain Helm
-							i( 41205),	-- Furious Gladiator's Chain Leggings
-							i( 41217),	-- Furious Gladiator's Chain Spaulders
-							i( 41773),	-- Furious Gladiator's Dragonhide Gloves
-							i( 41678),	-- Furious Gladiator's Dragonhide Helm
-							i( 41667),	-- Furious Gladiator's Dragonhide Legguards
-							i( 41661),	-- Furious Gladiator's Dragonhide Robes
-							i( 41715),	-- Furious Gladiator's Dragonhide Spaulders
-							i( 40787),	-- Furious Gladiator's Dreadplate Chestpiece
-							i( 40809),	-- Furious Gladiator's Dreadplate Gauntlets
-							i( 40827),	-- Furious Gladiator's Dreadplate Helm
-							i( 40848),	-- Furious Gladiator's Dreadplate Legguards
-							i( 40868),	-- Furious Gladiator's Dreadplate Shoulders
-							i( 42011),	-- Furious Gladiator's Felweave Amice
-							i( 41993),	-- Furious Gladiator's Felweave Cowl
-							i( 42017),	-- Furious Gladiator's Felweave Handguards
-							i( 41998),	-- Furious Gladiator's Felweave Raiment
-							i( 42005),	-- Furious Gladiator's Felweave Trousers
-							i( 41287),	-- Furious Gladiator's Kodohide Gloves
-							i( 41321),	-- Furious Gladiator's Kodohide Helm
-							i( 41298),	-- Furious Gladiator's Kodohide Legguards
-							i( 41310),	-- Furious Gladiator's Kodohide Robes
-							i( 41275),	-- Furious Gladiator's Kodohide Spaulders
-							i( 41767),	-- Furious Gladiator's Leather Gloves
-							i( 41672),	-- Furious Gladiator's Leather Helm
-							i( 41655),	-- Furious Gladiator's Leather Legguards
-							i( 41683),	-- Furious Gladiator's Leather Spaulders
-							i( 41650),	-- Furious Gladiator's Leather Tunic
-							i( 41081),	-- Furious Gladiator's Linked Armor
-							i( 41137),	-- Furious Gladiator's Linked Gauntlets
-							i( 41151),	-- Furious Gladiator's Linked Helm
-							i( 41199),	-- Furious Gladiator's Linked Leggings
-							i( 41211),	-- Furious Gladiator's Linked Spaulders
-							i( 40993),	-- Furious Gladiator's Mail Armor
-							i( 41007),	-- Furious Gladiator's Mail Gauntlets
-							i( 41019),	-- Furious Gladiator's Mail Helm
-							i( 41033),	-- Furious Gladiator's Mail Leggings
-							i( 41044),	-- Furious Gladiator's Mail Spaulders
-							i( 41874),	-- Furious Gladiator's Mooncloth Gloves
-							i( 41854),	-- Furious Gladiator's Mooncloth Hood
-							i( 41864),	-- Furious Gladiator's Mooncloth Leggings
-							i( 41869),	-- Furious Gladiator's Mooncloth Mantle
-							i( 41859),	-- Furious Gladiator's Mooncloth Robe
-							i( 40907),	-- Furious Gladiator's Ornamented Chestguard
-							i( 40927),	-- Furious Gladiator's Ornamented Gloves
-							i( 40933),	-- Furious Gladiator's Ornamented Headcover
-							i( 40939),	-- Furious Gladiator's Ornamented Legplates
-							i( 40963),	-- Furious Gladiator's Ornamented Spaulders
-							i( 40789),	-- Furious Gladiator's Plate Chestpiece
-							i( 40807),	-- Furious Gladiator's Plate Gauntlets
-							i( 40826),	-- Furious Gladiator's Plate Helm
-							i( 40847),	-- Furious Gladiator's Plate Legguards
-							i( 40866),	-- Furious Gladiator's Plate Shoulders
-							i( 40992),	-- Furious Gladiator's Ringmail Armor
-							i( 41001),	-- Furious Gladiator's Ringmail Gauntlets
-							i( 41013),	-- Furious Gladiator's Ringmail Helm
-							i( 41027),	-- Furious Gladiator's Ringmail Leggings
-							i( 41038),	-- Furious Gladiator's Ringmail Spaulders
-							i( 41940),	-- Furious Gladiator's Satin Gloves
-							i( 41915),	-- Furious Gladiator's Satin Hood
-							i( 41927),	-- Furious Gladiator's Satin Leggings
-							i( 41934),	-- Furious Gladiator's Satin Mantle
-							i( 41921),	-- Furious Gladiator's Satin Robe
-							i( 40788),	-- Furious Gladiator's Scaled Chestpiece
-							i( 40808),	-- Furious Gladiator's Scaled Gauntlets
-							i( 40828),	-- Furious Gladiator's Scaled Helm
-							i( 40849),	-- Furious Gladiator's Scaled Legguards
-							i( 40869),	-- Furious Gladiator's Scaled Shoulders
-							i( 41965),	-- Furious Gladiator's Silk Amice
-							i( 41946),	-- Furious Gladiator's Silk Cowl
-							i( 41971),	-- Furious Gladiator's Silk Handguards
-							i( 41953),	-- Furious Gladiator's Silk Raiment
-							i( 41959),	-- Furious Gladiator's Silk Trousers
-							i( 41293),	-- Furious Gladiator's Wyrmhide Gloves
-							i( 41327),	-- Furious Gladiator's Wyrmhide Helm
-							i( 41304),	-- Furious Gladiator's Wyrmhide Legguards
-							i( 41316),	-- Furious Gladiator's Wyrmhide Robes
-							i( 41281),	-- Furious Gladiator's Wyrmhide Spaulders
-							i( 47687),	-- Headguard of Inner Warmth
-							i( 47678),	-- Headplate of the Honorbound
-							i( 47682),	-- Helm of the Restless Watch
-							i( 47695),	-- Hood of Clouded Sight
-							i( 47692),	-- Hood of Smoldering Aftermath
-							i( 47716),	-- Mantle of Revered Mortality
-							i( 47691),	-- Mask of Abundant Growth
-							i( 47688),	-- Mask of Lethal Intent
-							i( 47714),	-- Pauldrons of Catastrophic Emanation
-							i( 47705),	-- Pauldrons of the Devourer
-							i( 47699),	-- Shoulderguards of Enduring Order
-							i( 47701),	-- Shoulderplates of the Cavalier
-							i( 47696),	-- Shoulderplates of Trembling Rage
-							i( 47706),	-- Shoulders of the Groundbreaker
+							i(47658),	-- Brimstone Igniter
+							i(47684),	-- Coif of the Brooding Dragon
+							i(47709),	-- Duskstalker Pauldrons
+							i(47710),	-- Epaulets of the Fateful Accord
+							i(47675),	-- Faceplate of Thunderous Rampage
+							i(41087),	-- Furious Gladiator's Chain Armor
+							i(41143),	-- Furious Gladiator's Chain Gauntlets
+							i(41157),	-- Furious Gladiator's Chain Helm
+							i(41205),	-- Furious Gladiator's Chain Leggings
+							i(41217),	-- Furious Gladiator's Chain Spaulders
+							i(41773),	-- Furious Gladiator's Dragonhide Gloves
+							i(41678),	-- Furious Gladiator's Dragonhide Helm
+							i(41667),	-- Furious Gladiator's Dragonhide Legguards
+							i(41661),	-- Furious Gladiator's Dragonhide Robes
+							i(41715),	-- Furious Gladiator's Dragonhide Spaulders
+							i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
+							i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
+							i(40827),	-- Furious Gladiator's Dreadplate Helm
+							i(40848),	-- Furious Gladiator's Dreadplate Legguards
+							i(40868),	-- Furious Gladiator's Dreadplate Shoulders
+							i(42011),	-- Furious Gladiator's Felweave Amice
+							i(41993),	-- Furious Gladiator's Felweave Cowl
+							i(42017),	-- Furious Gladiator's Felweave Handguards
+							i(41998),	-- Furious Gladiator's Felweave Raiment
+							i(42005),	-- Furious Gladiator's Felweave Trousers
+							i(41287),	-- Furious Gladiator's Kodohide Gloves
+							i(41321),	-- Furious Gladiator's Kodohide Helm
+							i(41298),	-- Furious Gladiator's Kodohide Legguards
+							i(41310),	-- Furious Gladiator's Kodohide Robes
+							i(41275),	-- Furious Gladiator's Kodohide Spaulders
+							i(41767),	-- Furious Gladiator's Leather Gloves
+							i(41672),	-- Furious Gladiator's Leather Helm
+							i(41655),	-- Furious Gladiator's Leather Legguards
+							i(41683),	-- Furious Gladiator's Leather Spaulders
+							i(41650),	-- Furious Gladiator's Leather Tunic
+							i(41081),	-- Furious Gladiator's Linked Armor
+							i(41137),	-- Furious Gladiator's Linked Gauntlets
+							i(41151),	-- Furious Gladiator's Linked Helm
+							i(41199),	-- Furious Gladiator's Linked Leggings
+							i(41211),	-- Furious Gladiator's Linked Spaulders
+							i(40993),	-- Furious Gladiator's Mail Armor
+							i(41007),	-- Furious Gladiator's Mail Gauntlets
+							i(41019),	-- Furious Gladiator's Mail Helm
+							i(41033),	-- Furious Gladiator's Mail Leggings
+							i(41044),	-- Furious Gladiator's Mail Spaulders
+							i(41874),	-- Furious Gladiator's Mooncloth Gloves
+							i(41854),	-- Furious Gladiator's Mooncloth Hood
+							i(41864),	-- Furious Gladiator's Mooncloth Leggings
+							i(41869),	-- Furious Gladiator's Mooncloth Mantle
+							i(41859),	-- Furious Gladiator's Mooncloth Robe
+							i(40907),	-- Furious Gladiator's Ornamented Chestguard
+							i(40927),	-- Furious Gladiator's Ornamented Gloves
+							i(40933),	-- Furious Gladiator's Ornamented Headcover
+							i(40939),	-- Furious Gladiator's Ornamented Legplates
+							i(40963),	-- Furious Gladiator's Ornamented Spaulders
+							i(40789),	-- Furious Gladiator's Plate Chestpiece
+							i(40807),	-- Furious Gladiator's Plate Gauntlets
+							i(40826),	-- Furious Gladiator's Plate Helm
+							i(40847),	-- Furious Gladiator's Plate Legguards
+							i(40866),	-- Furious Gladiator's Plate Shoulders
+							i(40992),	-- Furious Gladiator's Ringmail Armor
+							i(41001),	-- Furious Gladiator's Ringmail Gauntlets
+							i(41013),	-- Furious Gladiator's Ringmail Helm
+							i(41027),	-- Furious Gladiator's Ringmail Leggings
+							i(41038),	-- Furious Gladiator's Ringmail Spaulders
+							i(41940),	-- Furious Gladiator's Satin Gloves
+							i(41915),	-- Furious Gladiator's Satin Hood
+							i(41927),	-- Furious Gladiator's Satin Leggings
+							i(41934),	-- Furious Gladiator's Satin Mantle
+							i(41921),	-- Furious Gladiator's Satin Robe
+							i(40788),	-- Furious Gladiator's Scaled Chestpiece
+							i(40808),	-- Furious Gladiator's Scaled Gauntlets
+							i(40828),	-- Furious Gladiator's Scaled Helm
+							i(40849),	-- Furious Gladiator's Scaled Legguards
+							i(40869),	-- Furious Gladiator's Scaled Shoulders
+							i(41965),	-- Furious Gladiator's Silk Amice
+							i(41946),	-- Furious Gladiator's Silk Cowl
+							i(41971),	-- Furious Gladiator's Silk Handguards
+							i(41953),	-- Furious Gladiator's Silk Raiment
+							i(41959),	-- Furious Gladiator's Silk Trousers
+							i(41293),	-- Furious Gladiator's Wyrmhide Gloves
+							i(41327),	-- Furious Gladiator's Wyrmhide Helm
+							i(41304),	-- Furious Gladiator's Wyrmhide Legguards
+							i(41316),	-- Furious Gladiator's Wyrmhide Robes
+							i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
+							i(47687),	-- Headguard of Inner Warmth
+							i(47678),	-- Headplate of the Honorbound
+							i(47682),	-- Helm of the Restless Watch
+							i(47695),	-- Hood of Clouded Sight
+							i(47692),	-- Hood of Smoldering Aftermath
+							i(47716),	-- Mantle of Revered Mortality
+							i(47691),	-- Mask of Abundant Growth
+							i(47688),	-- Mask of Lethal Intent
+							i(47714),	-- Pauldrons of Catastrophic Emanation
+							i(47705),	-- Pauldrons of the Devourer
+							i(47699),	-- Shoulderguards of Enduring Order
+							i(47701),	-- Shoulderplates of the Cavalier
+							i(47696),	-- Shoulderplates of Trembling Rage
+							i(47706),	-- Shoulders of the Groundbreaker
 						})),
 						n(33595, { -- Mera Mistrunner <Cooking Supplies>
 							i(134020),	-- Chef's Hat

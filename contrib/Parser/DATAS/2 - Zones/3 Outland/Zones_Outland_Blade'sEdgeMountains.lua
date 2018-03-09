@@ -107,29 +107,29 @@ _.Zones =
 					}),
 --[[					
 					qa( 10795),	-- A Date with Dorgok
-					q( 10506),	-- A Dire Situation
-					q( 11061),	-- A Father's Duty
-					q( 11079),	-- A Fel Whip For Gahk
-					q( 11091),	-- A Special Thank You
-					q( 10682),	-- A Time for Negotiation...
-					q( 11058),	-- An Apexis Relic
-					q( 11119),	-- Assault on Bash'ir Landing!
-					q( 11051),	-- Banish More Demons
-					q( 11026),	-- Banish the Demons
+					q(10506),	-- A Dire Situation
+					q(11061),	-- A Father's Duty
+					q(11079),	-- A Fel Whip For Gahk
+					q(11091),	-- A Special Thank You
+					q(10682),	-- A Time for Negotiation...
+					q(11058),	-- An Apexis Relic
+					q(11119),	-- Assault on Bash'ir Landing!
+					q(11051),	-- Banish More Demons
+					q(11026),	-- Banish the Demons
 					qh( 10783),	-- Baron Sablemane
 					qa( 10818),	-- Baron Sablemane Has Requested Your Presence
 					qh( 10749),	-- Baron Sablemane's Poison
 					qh( 10545),	-- Bladespire Kegger
-					q( 11023),	-- Bomb Them Again!
-					q( 11010),	-- Bombing Run
-					q( 11102),	-- Bombing Run
+					q(11023),	-- Bomb Them Again!
+					q(11010),	-- Bombing Run
+					q(11102),	-- Bombing Run
 					qa( 11043),	-- Building a Better Gryphon
 					qa( 12359),	-- Candy Bucket
 					qh( 12394),	-- Candy Bucket
-					q( 12406),	-- Candy Bucket
+					q(12406),	-- Candy Bucket
 					qa( 12358),	-- Candy Bucket
 					qh( 12393),	-- Candy Bucket
-					q( 10567),	-- Creating the Pendant
+					q(10567),	-- Creating the Pendant
 --]]					
 					qa(10796,  {  	-- Crush the Bloodmaul Camp!
 						i(31537),
@@ -145,7 +145,7 @@ _.Zones =
 					}),
 --[[					
 					qa( 10608),	-- Crystal Clear
-					q( 10753),	-- Culling the Wild
+					q(10753),	-- Culling the Wild
 --]]
 					qa(10632,  {  	-- Cutting Your Teeth
 						i(31446),
@@ -154,9 +154,9 @@ _.Zones =
 						i(157549),	-- Vibro Knuckles 
 					}),
 --[[					
-					q( 10810),	-- Damaged Mask
-					q( 10910),	-- Death's Door
-					q( 10820),	-- Deceive thy Enemy
+					q(10810),	-- Damaged Mask
+					q(10910),	-- Death's Door
+					q(10820),	-- Deceive thy Enemy
 					qh( 11581),	-- Desecrate this Fire!
 					qh( 11736),	-- Desecrate this Fire!
 					qh( 11745),	-- Desecrate this Fire!
@@ -167,13 +167,13 @@ _.Zones =
 					qa( 11732),	-- Desecrate this Fire!
 					qa( 11580),	-- Desecrate this Fire!
 					qa( 11766),	-- Desecrate this Fire!
-					q( 10719),	-- Did You Get The Note?
+					q(10719),	-- Did You Get The Note?
 					qh( 10487),	-- Dust from the Drakes
-					q( 10997),	-- Even Gronn Have Standards
-					q( 10830),	-- Exorcising the Trees
+					q(10997),	-- Even Gronn Have Standards
+					q(10830),	-- Exorcising the Trees
 					qa( 10797),	-- Favor of the Gronn
-					q( 10819),	-- Felsworn Gas Mask
-					q( 10911),	-- Fire At Will!
+					q(10819),	-- Felsworn Gas Mask
+					q(10911),	-- Fire At Will!
 					qa( 10581),	-- Follow the Breadcrumbs
 --]]					
 					qh(10489, {	-- Felling an Ancient Tree
@@ -198,7 +198,7 @@ _.Zones =
 						i(31442),
 					}),
 --[[					
-					q( 10512),	-- Getting the Bladespire Tanked
+					q(10512),	-- Getting the Bladespire Tanked
 					qa( 10800),	-- Goodnight, Gronn
 --]]					
 					qa(10802,  {  	-- Gorgrom the Dragon-Eater
@@ -213,16 +213,16 @@ _.Zones =
 					}),
 --[[					
 					qa( 10517),	-- Gorr'Dim, Your Time Has Come...
-					q( 10998),	-- Grim(oire) Business
+					q(10998),	-- Grim(oire) Business
 					qh( 10543),	-- Grimnok and Korgaah, I Am For You!
-					q( 10995),	-- Grulloc Has Two Skulls
-					q( 11059),	-- Guardian of the Monument
-					q( 10904),	-- Harvesting the Fel Ammunition
+					q(10995),	-- Grulloc Has Two Skulls
+					q(11059),	-- Guardian of the Monument
+					q(10904),	-- Harvesting the Fel Ammunition
 					qa( 39199),	-- Hero's Call: Blade's Edge Mountains
 					qh( 11843),	-- Honor the Flame
 					qa( 11807),	-- Honor the Flame
 					qh( 10865),	-- Inform Leoroxx!
-					q( 11513),	-- Intercepting the Mana Cells
+					q(11513),	-- Intercepting the Mana Cells
 					qh( 10715),	-- Into the Churning Gulch
 					qa( 10799),	-- Into the Churning Gulch
 --]]					
@@ -233,17 +233,17 @@ _.Zones =
 						i(31432),
 					}),
 --[[					
-					q( 11000),	-- Into the Soulgrinder
+					q(11000),	-- Into the Soulgrinder
 					qa( 10801),	-- It's a Trap!
 					qh( 10785),	-- It's a Trap!
 					qh( 10928),	-- Killing the Crawlers
 					qa( 10927),	-- Killing the Crawlers
-					q( 10770),	-- Little Embers
-					q( 10893),	-- Longtail is the Lynchpin
-					q( 10996),	-- Maggoc's Treasure Chest
-					q( 11514),	-- Maintaining the Sunwell Portal
-					q( 10555),	-- Malaise
-					q( 10456),	-- Marauding Wolves
+					q(10770),	-- Little Embers
+					q(10893),	-- Longtail is the Lynchpin
+					q(10996),	-- Maggoc's Treasure Chest
+					q(11514),	-- Maintaining the Sunwell Portal
+					q(10555),	-- Malaise
+					q(10456),	-- Marauding Wolves
 					qa( 10805),	-- Massacre at Gruul's Lair
 --]]					
 					q(10748,  {  	-- Maxnar Must Die!
@@ -253,17 +253,17 @@ _.Zones =
 						i(31520),
 					}),
 --[[					
-					q( 10722),	-- Meeting at the Blackwing Coven
-					q( 10983),	-- Mog'dorg the Wizened
-					q( 10989),	-- Mog'dorg the Wizened
+					q(10722),	-- Meeting at the Blackwing Coven
+					q(10983),	-- Mog'dorg the Wizened
+					q(10989),	-- Mog'dorg the Wizened
 					qh( 10860),	-- Mok'Nathal Treats
 					qa( 10671),	-- More than a Pound of Flesh
-					q( 10812),	-- Mystery Mask
-					q( 10981),	-- Nexus-Prince Shaffar's Personal Chamber
+					q(10812),	-- Mystery Mask
+					q(10981),	-- Nexus-Prince Shaffar's Personal Chamber
 					qa(  9794),	-- No Time for Curiosity
-					q( 11009),	-- Ogre Heaven
+					q(11009),	-- Ogre Heaven
 					qh( 10714),	-- On Spirit's Wings
-					q( 11030),	-- Our Boy Wants To Be A Skyguard Ranger
+					q(11030),	-- Our Boy Wants To Be A Skyguard Ranger
 					qh( 11036),	-- Out of This World Produce!					
 					qa( 11040),	-- Parts for the Rocket-Chief
 					qa( 10798),	-- Pay the Baron a Visit
@@ -276,7 +276,7 @@ _.Zones =
 						i(31436),
 					}),
 --[[					
-					q( 10717),	-- Poaching from Poachers
+					q(10717),	-- Poaching from Poachers
 					qh( 10724),	-- Prisoner of the Bladespire
 --]]					
 					qa(10457,  {  	-- Protecting Our Own
@@ -292,7 +292,7 @@ _.Zones =
 						i(31484),
 					}),
 --[[					
-					q( 10975),	-- Purging the Chambers of Bash'ir
+					q(10975),	-- Purging the Chambers of Bash'ir
 					qh( 10709),	-- Reunion
 --]]
 					qa(10657, {  	-- Ride the Lightning
@@ -304,7 +304,7 @@ _.Zones =
 --[[					
 					qa( 10620),	-- Ridgespine Menace
 					qh( 10615),	-- Ruuan Weald
-					q( 10556),	-- Scratches
+					q(10556),	-- Scratches
 --]]					
 					qa(10675,  {  	-- Show Them Gnome Mercy!
 						i(31456),
@@ -349,9 +349,9 @@ _.Zones =
 						i(31714),
 					}),
 --[[					
-					q( 10974),	-- Stasis Chambers of Bash'ir
-					q( 10977),	-- Stasis Chambers of the Mana-Tombs
-					q( 10511),	-- Strange Brew
+					q(10974),	-- Stasis Chambers of Bash'ir
+					q(10977),	-- Stasis Chambers of the Mana-Tombs
+					q(10511),	-- Strange Brew
 					qa( 10711),	-- Test Flight: Razaan's Landing
 					qa( 10712),	-- Test Flight: Ruuan Weald
 					qa( 10710),	-- Test Flight: The Singing Ridge
@@ -372,8 +372,8 @@ _.Zones =
 						i(31480),
 					}),
 --[[					
-					q( 10502),	-- The Bloodmaul Ogres
-					q( 11025),	-- The Crystals
+					q(10502),	-- The Bloodmaul Ogres
+					q(11025),	-- The Crystals
 --]]					
 					qa(10690,  {  	-- The Den Mother
 						i(31423),
@@ -382,13 +382,13 @@ _.Zones =
 					}),
 --[[					
 					qh( 10486),	-- The Encroaching Wilderness
-					q( 10455),	-- The Encroaching Wilderness
-					q( 10982),	-- The Eye of Haramad
-					q( 10912),	-- The Hound-Master
-					q( 10976),	-- The Mark of the Nexus-King
+					q(10455),	-- The Encroaching Wilderness
+					q(10982),	-- The Eye of Haramad
+					q(10912),	-- The Hound-Master
+					q(10976),	-- The Mark of the Nexus-King
 					qh(  9795),	-- The Ogre Threat
-					q( 11080),	-- The Relic's Emanation
-					q( 11062),	-- The Skyguard Outpost
+					q(11080),	-- The Relic's Emanation
+					q(11062),	-- The Skyguard Outpost
 					qh( 10720),	-- The Smallest Creatures
 					qh( 10618),	-- The Softest Wings
 					qh( 10718),	-- The Spirits Have Voices
@@ -402,8 +402,8 @@ _.Zones =
 --[[					
 					qh( 10851),	-- The Totems of My Enemy
 					qa( 10516),	-- The Trappings of a Vindicator
-					q( 11057),	-- The Trouble Below
-					q( 10825),	-- The Truth Unorbed
+					q(11057),	-- The Trouble Below
+					q(10825),	-- The Truth Unorbed
 --]]					
 					qh(10867,  {  	-- There Can Be Only One Response
 						i(31687),
@@ -414,9 +414,9 @@ _.Zones =
 --[[					
 					qh( 10542),	-- They Stole Me Hookah and Me Brews!
 					qh( 10524),	-- Thunderlord Clan Artifacts
-					q( 11078),	-- To Rule The Skies
+					q(11078),	-- To Rule The Skies
 					qa( 10674),	-- Trapping the Light Fantastic
-					q( 10829),	-- Treebole Must Know
+					q(10829),	-- Treebole Must Know
 					qh( 10566),	-- Trial and Error
 					qh( 10846),	-- Understanding the Mok'Nathal
 					qh( 10525),	-- Vision Guide
@@ -443,9 +443,9 @@ _.Zones =
 					}),
 --[[					
 					qh( 10614),	-- Whispers on the Wind
-					q( 11066),	-- Wrangle More Aether Rays!
-					q( 11065),	-- Wrangle Some Aether Rays!
-					q( 10894),	-- Wyrmskull Watcher
+					q(11066),	-- Wrangle More Aether Rays!
+					q(11065),	-- Wrangle Some Aether Rays!
+					q(10894),	-- Wyrmskull Watcher
 --]]					
 					q(10821,  {  	-- You're Fired!
 						i(31793),

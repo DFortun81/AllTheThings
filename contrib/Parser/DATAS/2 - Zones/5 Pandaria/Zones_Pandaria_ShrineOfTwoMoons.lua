@@ -283,7 +283,7 @@ n(-3, { 	-- Holidays
 					qh( 31511),	-- A Witness to History
 					qh( 32242),	-- Buried Secrets
 					qh( 32022),	-- Candy Bucket
-					q( 31279),	-- Everything I Know About Cooking
+					q(31279),	-- Everything I Know About Cooking
 --]]					
 					qh(32901,  {  -- Heroic Deeds
 						["groups"] = {

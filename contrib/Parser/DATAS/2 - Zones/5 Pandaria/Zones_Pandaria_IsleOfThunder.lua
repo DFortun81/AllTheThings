@@ -268,8 +268,8 @@ _.Zones =
 					qh( 32506),	-- A Wing to Fly On
 					qa( 32571),	-- A Wing to Fly On
 					qa( 32558),	-- All In the Family
-					q( 32260),	-- Alliance Quest Choice: PvE
-					q( 32261),	-- Alliance Quest Choice: PvP
+					q(32260),	-- Alliance Quest Choice: PvE
+					q(32261),	-- Alliance Quest Choice: PvP
 					qa( 32706),	-- Allies in the Shadows
 					qh( 32709),	-- Allies in the Shadows
 					qh( 32293),	-- Among the Bones
@@ -284,7 +284,7 @@ _.Zones =
 						}),
 					}),
 --[[					
-					q( 32471),	-- Apple Crushing [PH]
+					q(32471),	-- Apple Crushing [PH]
 					qh( 32218),	-- Ashes of the Enemy
 					qa( 32525),	-- Ashes of the Enemy
 					qh( 32288),	-- Bolstering the Defenses
@@ -299,15 +299,15 @@ _.Zones =
 					qh( 32641),	-- Champions of the Thunder King
 					qh( 32265),	-- Charged Moganite
 					qa( 32627),	-- Charged Moganite
-					q( 32721),	-- Choose Your Assignment
-					q( 32720),	-- Choose Your Assignment
+					q(32721),	-- Choose Your Assignment
+					q(32720),	-- Choose Your Assignment
 					qh( 32561),	-- Competing Magic
 					qa( 32579),	-- Competing Magic
 					qa( 32576),	-- Competing Magic
 					qh( 32520),	-- Competing Magic
 					qa( 32551),	-- Compy Stomp
 					qh( 32282),	-- Compy Stomp
-					q( 32727),	-- Contributed to Server Percentage Daily Tracking Quest
+					q(32727),	-- Contributed to Server Percentage Daily Tracking Quest
 					qa( 11356),	-- Costumed Orphan Matron
 					qh( 32200),	-- Dangers of Za'Tual
 					qa( 32543),	-- Dangers of Za'Tual
@@ -318,12 +318,12 @@ _.Zones =
 					qh( 32278),	-- Decisive Action
 					qa( 32639),	-- Deconstruction
 					qh( 32302),	-- Desconstruction
-					q( 32492),	-- Destroy Cauldrons
+					q(32492),	-- Destroy Cauldrons
 					qh( 32298),	-- Dino Might
 					qa( 32554),	-- Dino Might
 					qh( 32297),	-- Direhorn or Devilsaur
 					qa( 32553),	-- Direhorn vs Devilsaur
-					q( 32468),	-- Disarming Axe Throwers [PH]
+					q(32468),	-- Disarming Axe Throwers [PH]
 					qh( 32300),	-- Disarming Irony
 					qh( 32565),	-- Encroaching Force
 					qa( 32585),	-- Encroaching Force
@@ -341,9 +341,9 @@ _.Zones =
 					qa( 32587),	-- Forge Ahead!
 					qa( 32724),	-- Forge Ahead!
 					qh( 32292),	-- Forge Ahead!
-					q( 32472),	-- Frighten Pterodactyls [PH]
-					q( 32205),	-- Gather Scout Reports
-					q( 32570),	-- Gather Scout Reports
+					q(32472),	-- Frighten Pterodactyls [PH]
+					q(32205),	-- Gather Scout Reports
+					q(32570),	-- Gather Scout Reports
 					qh( 32201),	-- Grave Circumstances
 					qa( 32527),	-- Grave Circumstances
 					qa( 32540),	-- Harbingers of the Loa
@@ -352,8 +352,8 @@ _.Zones =
 					qh( 32215),	-- Heinous Sacrifice
 					qh( 32304),	-- High Recognition
 					qa( 32631),	-- High Recognition
-					q( 32259),	-- Horde Quest Choice: PvE
-					q( 32258),	-- Horde Quest Choice: PvP
+					q(32259),	-- Horde Quest Choice: PvE
+					q(32258),	-- Horde Quest Choice: PvP
 					qh( 32730),	-- Ihgaluk Crag
 					qa( 32732),	-- Ihgaluk Crag
 					qh( 32562),	-- Imposing Threat
@@ -363,7 +363,7 @@ _.Zones =
 					qa( 24510),	-- Inside the Frozen Citadel
 					qa( 32528),	-- Into the Crypts
 					qh( 32226),	-- Into the Crypts
-					q( 32622),	-- Intro Flight
+					q(32622),	-- Intro Flight
 					qh( 32299),	-- Just Some Light Clean-Up Work
 					qa( 32546),	-- Just Some Light Clean-Up Work
 					qa( 32560),	-- Keep It Secret
@@ -371,10 +371,10 @@ _.Zones =
 					qh( 32491),	-- Left To Rot
 					qa( 32548),	-- Left To Rot
 					qh( 32589),	-- Life Blood
-					q( 32621),	-- Lightning Steel
+					q(32621),	-- Lightning Steel
 					qh( 32283),	-- Loa-saur					
 					qa( 32552),	-- Loa-saur
-					q( 32626),	-- Loot Room Key Tracking Quest
+					q(32626),	-- Loot Room Key Tracking Quest
 					qh( 32303),	-- Made for War
 					qa( 32632),	-- Made for War
 					qh( 32266),	-- Mana Manifestations
@@ -391,29 +391,29 @@ _.Zones =
 					qa( 32637),	-- Overpowered
 					qh( 32305),	-- Overpowered
 					qa( 14022),	-- Pilgrim's Bounty
-					q( 32470),	-- Plundering Profferings [PH]
+					q(32470),	-- Plundering Profferings [PH]
 					qh( 32494),	-- Power Play
 					qa( 32541),	-- Preventing a Future Threat
 					qh( 32227),	-- Preventing a Future Threat
 					qa( 32544),	-- Pterrible Ptorment
 					qh( 32216),	-- Pterrible Ptorment
-					q( 32695),	-- Quest Reward Summary: PvE Stage 0-2
-					q( 32701),	-- Quest Reward Summary: PvE Stage 0-2
-					q( 32703),	-- Quest Reward Summary: PvE Stage 3
-					q( 32697),	-- Quest Reward Summary: PvE Stage 3
-					q( 32704),	-- Quest Reward Summary: PvE Stage 4-5
-					q( 32698),	-- Quest Reward Summary: PvE Stage 4-5
-					q( 32694),	-- Quest Reward Summary: PvP Stage 1-5
-					q( 32700),	-- Quest Reward Summary: PvP Stage 1-5
+					q(32695),	-- Quest Reward Summary: PvE Stage 0-2
+					q(32701),	-- Quest Reward Summary: PvE Stage 0-2
+					q(32703),	-- Quest Reward Summary: PvE Stage 3
+					q(32697),	-- Quest Reward Summary: PvE Stage 3
+					q(32704),	-- Quest Reward Summary: PvE Stage 4-5
+					q(32698),	-- Quest Reward Summary: PvE Stage 4-5
+					q(32694),	-- Quest Reward Summary: PvP Stage 1-5
+					q(32700),	-- Quest Reward Summary: PvP Stage 1-5
 					qa( 32608),	-- Raiding the Vault
 					qh( 32677),	-- Raiding the Vault
 					qa( 32582),	-- Raining Bones
 					qh( 32294),	-- Raining Bones
-					q( 32610),	-- Rare Boss Tracking Quest
-					q( 32609),	-- Rare Chest Tracking Quest
-					q( 32611),	-- Rare Drop Tracking Quest
+					q(32610),	-- Rare Boss Tracking Quest
+					q(32609),	-- Rare Chest Tracking Quest
+					q(32611),	-- Rare Drop Tracking Quest
 --]]					
-					q( 32307, {	-- Reader for the Dead Tongue
+					q(32307, {	-- Reader for the Dead Tongue
 						["groups"] = {
 						},
 						["classes"] = {9},
@@ -422,13 +422,13 @@ _.Zones =
 --[[					
 					qh( 32224),	-- Rise No More!
 					qa( 32532),	-- Rise No More!
-					q( 32467),	-- Sacrificial Prevention [PH]
+					q(32467),	-- Sacrificial Prevention [PH]
 					qa( 32550),	-- Saur Loser
 					qh( 32207),	-- Saur Loser
 					qh( 32209),	-- Save Our Scouts!
-					q( 32707),	-- Secrets in the Isle of Thunder
+					q(32707),	-- Secrets in the Isle of Thunder
 					qa( 32599),	-- Securing A Future
-					q( 32708),	-- Setting the Trap
+					q(32708),	-- Setting the Trap
 					qh( 32507),	-- Skin of the Saurok
 					qa( 32549),	-- Skin of the Saurok
 					qh( 32220),	-- Soul Surrender
@@ -461,7 +461,7 @@ _.Zones =
 					qa( 32731),	-- The Court of Bones
 					qa( 32547),	-- The Creeping Carpet of Ihgaluk
 					qh( 32489),	-- The Creeping Carpet of Ihgaluk
-					q( 32505),	-- The Crumbled Chamberlain
+					q(32505),	-- The Crumbled Chamberlain
 					qh( 32279),	-- The Fall of Shan Bu
 					qa( 32656),	-- The Fall of Shan Bu
 					qa( 11970),	-- The Master of Summer Lore
@@ -482,11 +482,11 @@ _.Zones =
 					qh( 32206),	-- This Just Won't Do
 					qh( 32678),	-- Thunder Calls					
 					qa( 32679),	-- Thunder Calls
-					q( 32629),	-- Thunderwing Captured Tracking Quest
+					q(32629),	-- Thunderwing Captured Tracking Quest
 					qa( 32652),	-- To the Skies!
 					qh( 32277),	-- To the Skies!
-					q( 32296),	-- Treasures of the Thunder King
-					q( 32469),	-- Urging on Hatchlings [PH]
+					q(32296),	-- Treasures of the Thunder King
+					q(32469),	-- Urging on Hatchlings [PH]
 					qh( 32233),	-- Very Disarming
 					qh( 32232),	-- What's Inside Counts
 					qa( 32733),	-- Za'Tual

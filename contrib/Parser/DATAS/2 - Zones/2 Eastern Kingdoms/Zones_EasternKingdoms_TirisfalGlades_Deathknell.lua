@@ -190,7 +190,7 @@ _.Zones =
 --[[					
 					qg(, qh(25010)),	-- A Deadly New Ally
 					qg(, qh(29431)),	-- A Friend in Need
-					qg(, q( 40706)),	-- A Legend You Can Hold
+					qg(, q(40706)),	-- A Legend You Can Hold
 --]]					
 					qg(11057, qh(25013, { -- A Little Oomph
 						i(57167),	-- Night Web Gloves
@@ -208,14 +208,14 @@ _.Zones =
 					qg(, qh(26930)),	-- After the Crusade
 					qg(, qh(24993)),	-- Annihilate the Worgen
 					qg(, qh(25009)),	-- At War With The Scarlet Crusade
-					qg(, q( 40710)),	-- Blade in Twilight
+					qg(, q(40710)),	-- Blade in Twilight
 					qh(28972),	-- Candy Bucket
 					qh(12363),	-- Candy Bucket
 					qg(, qh(29375)),	-- Clean Up in Undercity
-					qg(, q(  3861)),	-- CLUCK!
+					qg(, q(3861)),	-- CLUCK!
 					qg(, qh(24990)),	-- Darkhound Pounding
 --]]
-					qg( 1500, qh(25029, { -- Deaths in the Family
+					qg(1500, qh(25029, { -- Deaths in the Family
 						i(3446),	-- Darkwood Staff
 						i(3440),	-- Bonecracker
 					})),
@@ -238,9 +238,9 @@ _.Zones =
 --]]
 					qg(11055, qh(26931, { -- Foxes and Hounds
 						["groups"] = {
-							i( 62161),	-- Bullmastiff Vest
-							i( 62163),	-- Fox Hunter's Rifle
-							i( 62162),	-- Territorial Helm
+							i(62161),	-- Bullmastiff Vest
+							i(62163),	-- Fox Hunter's Rifle
+							i(62162),	-- Territorial Helm
 							i(131622),	-- Whitetail Fox Tunic
 						},
 						["Lvl"] = 34
@@ -250,7 +250,7 @@ _.Zones =
 					qg(, qh(24991)),	-- Garren's Haunt
 					qg(, qh(25038)),	-- Gordo's Task
 					qg(, qh(31578)),	-- Got one!
-					qg(, q(  8652)),	-- Graveborn the Elder
+					qg(, q(8652)),	-- Graveborn the Elder
 					qg(, qh(24997)),	-- Graverobbers
 					qg(, qh(25056)),	-- Grisly Grizzlies
 					qg(, qh( 8312)),	-- Hallow's End Treats for Spoops!
@@ -259,7 +259,7 @@ _.Zones =
 					qg(, qh(24996)),	-- Holland's Experiment
 					qg(, qh(11862)),	-- Honor the Flame
 					qg(, qh(11966)),	-- Incense for the Festival Scorchlings
-					qg(, q( 12012)),	-- Inform the Elder
+					qg(, q(12012)),	-- Inform the Elder
 					qg(, qa(29092)),	-- Inform the Elder
 					qg(, qh(24977)),	-- Johaan's Experiment
 					qg(, qh(26934)),	-- Latent Disease
@@ -279,7 +279,7 @@ _.Zones =
 					qg(, qh(14036)),	-- Pilgrim's Bounty
 					qg(, qh(24999)),	-- Planting the Seed of Fear
 					qg(, qh(11915)),	-- Playing with Fire
-					qg(, q( 40705)),	-- Priestly Matters
+					qg(, q(40705)),	-- Priestly Matters
 					qg(, qh(14040)),	-- Pumpkin Pie
 					qg(, qh(24978)),	-- Reaping the Reapers
 					qg(, qh( 6324)),	-- Return to Morris
@@ -299,12 +299,12 @@ _.Zones =
 					qg(, qh(29374)),	-- Stink Bombs Away!
 					qg(, qh(11219)),	-- Stop the Fires!
 					qg(, qh(26979)),	-- Strange New Faces
-					qg(, q( 11954)),	-- Striking Back
-					qg(, q( 11917)),	-- Striking Back
-					qg(, q( 11947)),	-- Striking Back
-					qg(, q( 11948)),	-- Striking Back
-					qg(, q( 11952)),	-- Striking Back
-					qg(, q( 11953)),	-- Striking Back
+					qg(, q(11954)),	-- Striking Back
+					qg(, q(11917)),	-- Striking Back
+					qg(, q(11947)),	-- Striking Back
+					qg(, q(11948)),	-- Striking Back
+					qg(, q(11952)),	-- Striking Back
+					qg(, q(11953)),	-- Striking Back
 					qg(, qh( 6321)),	-- Supplying Brill
 					qg(, qh(25012)),	-- Take to the Skies
 					qg(, qh(26920)),	-- The Battle for Andorhal
@@ -315,18 +315,18 @@ _.Zones =
 					qg(, qh(25006)),	-- The Grasp Weakens
 					qg(, qh(14174)),	-- The Grateful Dead
 					qg(, qh(25030)),	-- The Haunted Mills
-					qg(, q( 41625)),	-- The Light's Wrath
+					qg(, q(41625)),	-- The Light's Wrath
 					qg(, qh(26952)),	-- The Menders' Stead
 					qg(, qh(25004)),	-- The Mills Overrun
 					qg(, qh(24982)),	-- The New Forsaken
 					qg(, qh(24980)),	-- The Scarlet Palisade
 					qg(, qh(11971)),	-- The Spinner of Summer Tales
-					qg(, q( 41957)),	-- The Vindicator's Plea
+					qg(, q(41957)),	-- The Vindicator's Plea
 					qg(, qh(25011)),	-- To Bigger and Better Things
 					qg(, qh(11923)),	-- Torch Catching
 					qg(, qh(11922)),	-- Torch Tossing
 					qg(, qh(14044)),	-- Undersupplied in the Undercity
-					qg(, q( 11886)),	-- Unusual Activity
+					qg(, q(11886)),	-- Unusual Activity
 					qg(, qh(24976)),	-- Variety is the Spice of Death
 					qg(, qh(26926)),	-- Victory, For Now
 					qg(, qh(26964)),	-- Warchief's Command: Silverpine Forest!

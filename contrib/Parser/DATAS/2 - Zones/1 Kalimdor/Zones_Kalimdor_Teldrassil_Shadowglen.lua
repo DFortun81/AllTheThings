@@ -159,59 +159,59 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					qg( 2078, qa(  475)),	-- A Troubling Breeze
-					qg( 2083, qa(  997)),	-- Denalan's Earth
+					qg(2078, qa(  475)),	-- A Troubling Breeze
+					qg(2083, qa(  997)),	-- Denalan's Earth
 --]]					
-					qg( 7317, qa( 2561,  {  -- Druid of the Claw
-						i( 9598),
+					qg(7317, qa( 2561,  {  -- Druid of the Claw
+						i(9598),
 						i(18957),
 					})),
 --[[					
 					qp171(qg(2083, qa(1581))),	-- Elixirs for the Bladeleafs
-					qg( 3567, qa( 2459)),	-- Ferocitas the Dream Eater
-					qg( 2107, qa(  476)),	-- Gnarlpine Corruption
-					qg( 3515, qa(14039)),	-- Home of the Kaldorei
+					qg(3567, qa( 2459)),	-- Ferocitas the Dream Eater
+					qg(2107, qa(  476)),	-- Gnarlpine Corruption
+					qg(3515, qa(14039)),	-- Home of the Kaldorei
 					qg(68651, qa(32416)),	-- Jaina's Resolution
 --]]					
 					qg(3568, qa(  938,  {	-- Mist
-						i(  5590),
-						i( 54871),
-						i(  5593),
+						i(5590),
+						i(54871),
+						i(5593),
 						i(131230),
 					})),
 --[[					
-					qg( 3517, qa(  923)),	-- Mossy Tumors
-					qg( 2083, qa(13946)),	-- Nature's Reprisal
+					qg(3517, qa(  923)),	-- Mossy Tumors
+					qg(2083, qa(13946)),	-- Nature's Reprisal
 --]]					
-					qg( 2080, qa( 2499,  {  -- Oakenscowl
+					qg(2080, qa( 2499,  {  -- Oakenscowl
 						i(5458),
 						i(5589),
 					})),
 --[[					
-					qg( 2080, qa(  941)),	-- Planting the Heart
-					qg( 2080, qa(  922)),	-- Rellian Greenspyre
-					qg( 4265, qa( 6344, {	-- Reminders of Home
+					qg(2080, qa(  941)),	-- Planting the Heart
+					qg(2080, qa(  922)),	-- Rellian Greenspyre
+					qg(4265, qa( 6344, {	-- Reminders of Home
 						["groups"] = {
 						},
 						["races"] = {4},
 					})),
-					qg( 2081, qa(13945)),	-- Resident Danger
-					qg( 2083, qa(  489)),	-- Seek Redemption!
+					qg(2081, qa(13945)),	-- Resident Danger
+					qg(2083, qa(  489)),	-- Seek Redemption!
 					qg(49480, qa(28728)),	-- Signs of Things to Come
-					qg( 7313, qa( 2518)),	-- Tears of the Moon
-					qg( 3515, qa( 7383)),	-- Teldrassil: The Burden of the Kaldorei
-					qg( 3515, qa(  933)),	-- Teldrassil: The Coming Dawn
-					qg( 3515, qa(  929, {	-- Teldrassil: The Refusal of the Aspects
+					qg(7313, qa( 2518)),	-- Tears of the Moon
+					qg(3515, qa( 7383)),	-- Teldrassil: The Burden of the Kaldorei
+					qg(3515, qa(  933)),	-- Teldrassil: The Coming Dawn
+					qg(3515, qa(  929, {	-- Teldrassil: The Refusal of the Aspects
 						["groups"] = {
 						},
 						["races"] = {4},
 					})),
 					qg(68077, qh(32327)),	-- The Darnassus Mission
-					qg( 3567, qa( 2438)),	-- The Emerald Dreamcatcher
+					qg(3567, qa( 2438)),	-- The Emerald Dreamcatcher
 --]]					
-					qg( 3519, qa(  937,  {  -- The Enchanted Glade
-						i( 54872),
-						i(  5591),
+					qg(3519, qa(  937,  {  -- The Enchanted Glade
+						i(54872),
+						i(5591),
 						i(131229),
 					})),
 --[[					
@@ -228,42 +228,42 @@ _.Zones =
 							qa(927),	-- The Moss-twined Heart
 						}),
 					}),
-					qg( 2078, qa(  483)),	-- The Relics of Wakening
-					qg( 2151, qa(  487)),	-- The Road to Darnassus
+					qg(2078, qa(  483)),	-- The Relics of Wakening
+					qg(2151, qa(  487)),	-- The Road to Darnassus
 					o(6752, {	-- Strange Fronded Plant
 						qa(931),	-- The Shimmering Frond
 					}),
-					qg( 7317, qa( 2541)),	-- The Sleeping Druid
+					qg(7317, qa( 2541)),	-- The Sleeping Druid
 					o(7510, {	-- Sprouted Frond
 						qa(2399),	-- The Sprouted Fronds
 					}),
 --]]					
-					qg( 1992, qa(14005,  {	-- The Vengeance of Elune
+					qg(1992, qa(14005,  {	-- The Vengeance of Elune
 						i(131821),
-						i( 49546),
-						i( 49449),
-						i( 49448),
-						i( 49562),
+						i(49546),
+						i(49449),
+						i(49448),
+						i(49562),
 						i(131822),
 					})),
-					qg( 1992, qa(  935,  {  -- The Waters of Teldrassil
-						i( 54873),
-						i( 54874),
+					qg(1992, qa(  935,  {  -- The Waters of Teldrassil
+						i(54873),
+						i(54874),
 						i(131861),
-						i(  5595),
-						i(  5596),
+						i(5595),
+						i(5596),
 						i(156992), -- Carved Ashwood Stick
 					})),
 --[[					
-					qg( 2080, qa(  918)),	-- Timberling Seeds
-					qg( 2080, qa(  919)),	-- Timberling Sprouts
+					qg(2080, qa(  918)),	-- Timberling Seeds
+					qg(2080, qa(  919)),	-- Timberling Sprouts
 					qg(40553, qa(6341, {	-- To Darnassus
 						["groups"] = {
 						},
 						["races"] = {4},
 					})),
-					qg( 3567, qa(  932)),	-- Twisted Hatred
-					qg( 2078, qa(  486)),	-- Ursal the Mauler
+					qg(3567, qa(  932)),	-- Twisted Hatred
+					qg(2078, qa(  486)),	-- Ursal the Mauler
 					qg(68077, qh(32328)),	-- Victorious Return
 					qg(49480, qa(28727, {	-- Vile Touch
 						["groups"] = {
@@ -275,7 +275,7 @@ _.Zones =
 						},
 						["races"] = {4},
 					})),
-					qg( 2150, qa(  488)),	-- Zenn's Bidding					
+					qg(2150, qa(  488)),	-- Zenn's Bidding					
 --]]
 				}),				
 				n(-16, { 	-- Rares
@@ -329,23 +329,23 @@ _.Zones =
 							p(447), -- Fawn
 						}),
 						n(-17, {	-- Quests
-							qg( 2079, qa(28734)),	-- A Favor for Melithar
-							qg( 2077, qa(31168, {	-- Calligraphed Sigil
+							qg(2079, qa(28734)),	-- A Favor for Melithar
+							qg(2077, qa(31168, {	-- Calligraphed Sigil
 								["groups"] = {
 								},
 								["races"] = {4, 22},
 								["classes"] = {10},
 							})),
-							qg( 2077, qa(28715)),	-- Demonic Thieves
-							qg( 6780, qa( 2159)),	-- Dolanaar Delivery
-							qg( 2077, qa( 3118, {	-- Encrypted Sigil
+							qg(2077, qa(28715)),	-- Demonic Thieves
+							qg(6780, qa( 2159)),	-- Dolanaar Delivery
+							qg(2077, qa( 3118, {	-- Encrypted Sigil
 								["groups"] = {
 								},
 								["races"] = {4},
 								["classes"] = {4},
 							})),
-							qg( 2079, qa(28714)),	-- Fel Moss Corruption
-							qg( 2077, qa( 3119, {	-- Hallowed Sigil
+							qg(2079, qa(28714)),	-- Fel Moss Corruption
+							qg(2077, qa( 3119, {	-- Hallowed Sigil
 								["groups"] = {
 								},
 								["races"] = {4},
@@ -367,12 +367,12 @@ _.Zones =
 								},
 								["races"] = {4},
 							})),
-							qg( 2079, qa(28723, {	-- Priestess of the Moon (add'l QGs 3593, 3594, 3595, 3596, 3597, 43006)
+							qg(2079, qa(28723, {	-- Priestess of the Moon (add'l QGs 3593, 3594, 3595, 3596, 3597, 43006)
 								["groups"] = {
 								},
 								["races"] = {4},
 							})),
-							qg( 2077, qa( 3116, {	-- Simple Sigil (add'l QG 2079)
+							qg(2077, qa( 3116, {	-- Simple Sigil (add'l QG 2079)
 								["groups"] = {
 								},
 								["races"] = {4, 22},
@@ -383,12 +383,12 @@ _.Zones =
 								},
 								["races"] = {4},
 							})),
-							qg( 3514, qa(28731, {	-- Teldrassil: Passing Awareness
+							qg(3514, qa(28731, {	-- Teldrassil: Passing Awareness
 								["groups"] = {
 								},
 								["races"] = {4},
 							})),
-							qg( 2079, qa(28713)),	-- The Balance of Nature
+							qg(2079, qa(28713)),	-- The Balance of Nature
 							qg(49479, qa(28725, {	-- The Woodland Protector
 								["groups"] = {
 								},

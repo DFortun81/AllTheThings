@@ -147,42 +147,42 @@ _.Zones =
 --[[					
 					qg(40556, qh(25518)),	-- Bar Fight!
 					qg(40554, qa(25517)),	-- Bar Fight!
---					q( 45808),	-- Beach Ball Bash (WORLD QUEST)
+--					q(45808),	-- Beach Ball Bash (WORLD QUEST)
 --]]
-					qg(47580, q( 28136, { -- Behind You!
+					qg(47580, q(28136, { -- Behind You!
 						i(63659),
 						i(63660),
 						i(63661),
 						i(63662),
 					})),
 --[[					
---					q( 45806),	-- Boat Tour (WORLD QUEST)
-					qg(47580, q( 28127)),	-- Break Them Out
+--					q(45806),	-- Boat Tour (WORLD QUEST)
+					qg(47580, q(28127)),	-- Break Them Out
 					qg(120244, q(45725, {	-- Breaking Chains
 						["groups"] = {
 						},
 						["classes"] = {7},
 					})),
-					qg(41060, q( 25672)),	-- Carcass Collection
+					qg(41060, q(25672)),	-- Carcass Collection
 --]]					
 					qg(40475, qa(25542, { -- Circle the Wagons... er, Boats
-						i( 63550),
-						i( 63551),
-						i( 63552),
-						i( 63553),
+						i(63550),
+						i(63551),
+						i(63552),
+						i(63553),
 						i(131434),
 					})),
 					qg(40487, qh(25543, { -- Circle the Wagons... er, Boats
-						i( 63554),
-						i( 63555),
-						i( 63556),
-						i( 63557),
+						i(63554),
+						i(63555),
+						i(63556),
+						i(63557),
 						i(131435),
 					})),
 --[[					
 					qg(40475, qa(25561)),	-- Circle the Wagons... er, Boats
 					qg(40487, qh(25562)),	-- Circle the Wagons... er, Boats
-					qg(47580, q( 28139)),	-- Codemaster's Code
+					qg(47580, q(28139)),	-- Codemaster's Code
 --]]					
 					qg(45277, qa(27312, { -- Darkcloud Grimtotem
 						i(63592),
@@ -195,7 +195,7 @@ _.Zones =
 						i(63598),
 					})),
 --[[					
-					qg(47471, q( 28087)),	-- Death to all Trappers!
+					qg(47471, q(28087)),	-- Death to all Trappers!
 					qg(41184, qh(25799)),	-- Defend the Drill
 					qg(41190, qa(25798)),	-- Defend the Drill
 --]]					
@@ -214,17 +214,17 @@ _.Zones =
 					qg(40028, qh(25505)),	-- Do Me a Favor?
 --]]					
 					qg(40475, qa(25515, { -- Down in the Deeps
-						i( 63542),
-						i( 63543),
-						i( 63544),
-						i( 63545),
+						i(63542),
+						i(63543),
+						i(63544),
+						i(63545),
 						i(131432),
 					})),
 					qg(40487, qh(25516, { -- Down in the Deeps
-						i( 63546),
-						i( 63547),
-						i( 63548),
-						i( 63549),
+						i(63546),
+						i(63547),
+						i(63548),
+						i(63549),
 						i(131433),
 					})),
 --[[					
@@ -234,12 +234,12 @@ _.Zones =
 					qg(41184, qh(25779)),	-- Fake Gold for Black Gold
 					qg(41184, qh(25775)),	-- Fool's Gold
 					qg(41190, qa(25774)),	-- Fool's Gold
-					qg(47745, q( 28157)),	-- Four Twilight Elements
+					qg(47745, q(28157)),	-- Four Twilight Elements
 					qg(40028, qh(25836)),	-- Free Freewind Post
 					qg(40027, qa(25835)),	-- Free Freewind Post
-					qg(47471, q( 28086)),	-- Free the Pridelings
-					qg(47383, q( 28047)),	-- Freezing the Pipes
---					q( 45807),	-- Garbage Fishing (WORLD QUEST)
+					qg(47471, q(28086)),	-- Free the Pridelings
+					qg(47383, q(28047)),	-- Freezing the Pipes
+--					q(45807),	-- Garbage Fishing (WORLD QUEST)
 					qg(41184, qh(25757)),	-- Get Koalbeard!
 					qg(41190, qa(25756)),	-- Get Zherin!
 					qg(41190, qa(25813)),	-- Go Blow that Horn
@@ -276,8 +276,8 @@ _.Zones =
 --[[					
 					qg(41446, qh(25870)),	-- Grimtotem in the Post
 					qg(41392, qa(25869)),	-- Grimtotem in the Post
---					q( 45809),	-- Grog, Rum, and Ale (WORLD QUEST)
-					qg(41058, q( 25660)),	-- Haunted
+--					q(45809),	-- Grog, Rum, and Ale (WORLD QUEST)
+					qg(41058, q(25660)),	-- Haunted
 					qg(45271, qh(25874)),	-- Horn of the Traitor
 					qg(45271, qa(25873)),	-- Horn of the Traitor
 					o(202975, {	-- Submerged Outhouse
@@ -286,9 +286,9 @@ _.Zones =
 					}),
 --]]					
 					qg(45442, qa(27329, { -- Invoking the Serpent
-						i( 63640),
-						i( 63641),
-						i( 63642),
+						i(63640),
+						i(63641),
+						i(63642),
 						i(157025), -- Windserpent Fang 
 					})),
 					qg(45442, qh(27330, { -- Invoking the Serpent
@@ -302,24 +302,24 @@ _.Zones =
 					qg(40028, qh(25745)),	-- Negotiations
 					qg(45278, qh(27311)),	-- No Weapons For You!
 					qg(45277, qa(27310)),	-- No Weapons For You!
---					q( 28601),	-- Old Puttery (REMOVED?  no info on wowhead)
-					qg(47471, q( 28124)),	-- On to the Bulwark
+--					q(28601),	-- Old Puttery (REMOVED?  no info on wowhead)
+					qg(47471, q(28124)),	-- On to the Bulwark
 					qg(40487, qh(25533)),	-- Pirate Accuracy Increasing
 					qg(40475, qa(25532)),	-- Pirate Accuracy Increasing
 					qg(40487, qh(25586)),	-- Quiet the Cannons
 					qg(40475, qa(25585)),	-- Quiet the Cannons
-					qg(47471, q( 28088)),	-- Release Heartrazor
+					qg(47471, q(28088)),	-- Release Heartrazor
 					qg(41444, qa(25871)),	-- Save the Sentinel
-					qg(120244, q( 45724, {	-- Snakes and Stones
+					qg(120244, q(45724, {	-- Snakes and Stones
 						["groups"] = {
 						},
 						["classes"] = {7},
 					})),
 --]]					
-					qg(47580, q( 28125, { -- Something to Wear
-						i( 63656),
-						i( 63657),
-						i( 63658),
+					qg(47580, q(28125, { -- Something to Wear
+						i(63656),
+						i(63657),
+						i(63658),
 						i(157019), -- Lakota's Gavel 
 					})),
 --[[					
@@ -362,13 +362,13 @@ _.Zones =
 					qg(41421, qh(25872)),	-- The Brave and the Bold
 					qg(45278, qh(27358)),	-- The Captive Bride
 					qg(45277, qa(27357)),	-- The Captive Bride
-					qg(120244, q( 45723, {	-- The Crone's Wrath
+					qg(120244, q(45723, {	-- The Crone's Wrath
 						["groups"] = {
 						},
 						["classes"] = {7},
 					})),
 --]]					
-					qg(47745, q( 28159, { -- The Doomstone
+					qg(47745, q(28159, { -- The Doomstone
 						i(63663),
 						i(63664),
 						i(63665),
@@ -377,13 +377,13 @@ _.Zones =
 --[[					
 					qg(45277, qa(27325)),	-- The Drums of War
 					qg(45278, qh(27326)),	-- The Drums of War					
-					qg(47580, q( 28140)),	-- The Elder Crone
---					q( 45810),	-- The Gnomes Stole Our Bombs! (WORLD QUEST)
---					q( 45811),	-- The Goblins Stole Our Bombs! (WORLD QUEST)
---					q( 28045),	-- The Greatest Flavor in the World! (WORLD QUEST)
+					qg(47580, q(28140)),	-- The Elder Crone
+--					q(45810),	-- The Gnomes Stole Our Bombs! (WORLD QUEST)
+--					q(45811),	-- The Goblins Stole Our Bombs! (WORLD QUEST)
+--					q(28045),	-- The Greatest Flavor in the World! (WORLD QUEST)
 					qg(39895, qh(25487)),	-- The Grimtotem are Coming
 --]]					
-					qg(41060, q( 25704, { -- The Mad Magus
+					qg(41060, q(25704, { -- The Mad Magus
 						i(63588),
 						i(63589),
 						i(63590),
@@ -393,7 +393,7 @@ _.Zones =
 					qg(48208, qh(27317)),	-- The Rattle of Bones
 					qg(48208, qa(27316)),	-- The Rattle of Bones
 --]]					
-					qg(47471, q( 28098, { -- The Twilight Skymaster
+					qg(47471, q(28098, { -- The Twilight Skymaster
 						i(63652),
 						i(63653),
 						i(63654),
@@ -402,16 +402,16 @@ _.Zones =
 --[[					
 					qg(45278, qh(27321)),	-- The Writ of History
 					qg(45277, qa(27320)),	-- The Writ of History
-					q( 28142),	-- To the Withering (UNKNOWN QG)
-					q( 28143),	-- To the Withering (UNKNOWN QG)
+					q(28142),	-- To the Withering (UNKNOWN QG)
+					q(28143),	-- To the Withering (UNKNOWN QG)
 					qg(41421, qh(27276)),	-- Together Again
 					qg(41444, qa(27275)),	-- Together Again
-					qg(45442, q( 28085)),	-- Trouble at Highperch
+					qg(45442, q(28085)),	-- Trouble at Highperch
 --]]					
 					qg(39963, qh(25489, { -- Two If By Boat
-						i( 63563),	-- Maloof's Spare Boots
-						i( 63564),	-- Floating Belt
-						i( 63565),	-- Bracers of Desperate Need
+						i(63563),	-- Maloof's Spare Boots
+						i(63564),	-- Floating Belt
+						i(63565),	-- Bracers of Desperate Need
 						i(131431),	-- Maloof's Spare Treads
 					})),
 					qg(40885, qa(25627, { -- Two-Tusk Takedown
@@ -426,12 +426,12 @@ _.Zones =
 						i(63630),
 						i(63631),
 					})),
---					qg(47745, q( 28158)),	-- Unbound
-					qg(47383, q( 28051, { -- We All Scream for Ice Cream... and then Die!
-						i( 63583),
-						i( 63584),
-						i( 63585),
-						i( 63586),
+--					qg(47745, q(28158)),	-- Unbound
+					qg(47383, q(28051, { -- We All Scream for Ice Cream... and then Die!
+						i(63583),
+						i(63584),
+						i(63585),
+						i(63586),
 						i(157017), -- Deep-Sea Retrieval Hook 
 						i(157018), -- Oversized Mixing Agitator
 					})),
@@ -441,7 +441,7 @@ _.Zones =
 					qg(40556, qh(25596)),	-- Where's Synge?
 					qg(40554, qa(25590)),	-- Where's Wizzle?
 --]]					
-					qg(41060, q( 25661, { -- With a Little Help...
+					qg(41060, q(25661, { -- With a Little Help...
 						i(63617),
 						i(63618),
 						i(63619),

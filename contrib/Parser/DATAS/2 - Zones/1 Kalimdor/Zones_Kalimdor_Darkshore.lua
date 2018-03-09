@@ -174,7 +174,7 @@ _.Zones =
 						qa(13831),	-- A Troubling Prescription
 					}),
 --]]					
-					qg( 3694, qa(13542, {	-- Against the Wind
+					qg(3694, qa(13542, {	-- Against the Wind
 						i(52593),
 						i(52617),
 						i(131283),
@@ -199,7 +199,7 @@ _.Zones =
 					qg(32977, qa(13521)),	-- Buzzbox 413
 					qg(32977, qa(13528)),	-- Buzzbox 723
 --]]					
-					qg( 6887, qa(13558, {	-- Call Down the Thunder
+					qg(6887, qa(13558, {	-- Call Down the Thunder
 						i(52596),
 						i(52622),
 						i(131285),
@@ -210,7 +210,7 @@ _.Zones =
 					})),
 --[[					
 					qg(32967, qa(13545)),	-- Cleansing the Afflicted
-					qg( 6887, qa(13547)),	-- Coaxing the Spirits
+					qg(6887, qa(13547)),	-- Coaxing the Spirits
 					qg(34301, qa(13881)),	-- Consumed
 --]]					
 					qg(32965, qa(13507, {	-- Denying Manpower
@@ -221,9 +221,9 @@ _.Zones =
 					n(32862, {	-- Jor'kil the Soulripper
 						i(46318, {	-- Hellscream's Missive
 							qa(13591, {	-- Disturbing Connections
-								i( 55128),
-								i( 55129),
-								i( 52675),
+								i(55128),
+								i(55129),
+								i(52675),
 								i(131292),
 							}),
 						}),
@@ -233,7 +233,7 @@ _.Zones =
 					qg(33178, qa(13515)),	-- Ending the Threat
 					qg(34340, qa(13909)),	-- Got Some Flotsam?
 					qg(33048, qa(13599)),	-- Grimclaw's Return
---					qg(32912, q( 26379)),	-- In Aid of the Refugees (I believe the next quest is the one active in-game - there's no quest info on wowhead for this one)
+--					qg(32912, q(26379)),	-- In Aid of the Refugees (I believe the next quest is the one active in-game - there's no quest info on wowhead for this one)
 					qg(32912, qa(13601)),	-- In Aid of the Refugees
 					qg(34301, qa(13885)),	-- In Defense of Darkshore
 --]]					
@@ -297,7 +297,7 @@ _.Zones =
 					qg(33048, qa(13568)),	-- Spirit of the Moonstalker
 					qg(33048, qa(13567)),	-- Spirit of the Stag
 					qg(33048, qa(13597)),	-- Spirit of the Thistle Bear
-					qg(15601, q(  8721)),	-- Starweave the Elder
+					qg(15601, q(8721)),	-- Starweave the Elder
 					qg(34402, qa(13948)),	-- Stepping Up Surveillance
 --]]					
 					qg(32963, qa(13512, {	-- Strategic Strikes
@@ -310,14 +310,14 @@ _.Zones =
 					qg(33112, qa(13585)),	-- Sworn to Protect
 --]]					
 					qg(34343, qa(13911, {	-- The Absent-Minded Prospector
-						i( 52592),
-						i( 52600),
+						i(52592),
+						i(52600),
 						i(131318),
 					})),
 --					qg(33176, qa(13514)),	-- The Ancients' Ire
 					qg(34422, qa(13897, {	-- The Battle for Darkshore
-						i( 52616),
-						i( 52655),
+						i(52616),
+						i(52655),
 						i(131316),
 					})),
 --[[					
@@ -337,15 +337,15 @@ _.Zones =
 					})),
 --					qg(34402, qa(13899)),	-- The Darkscale Warlord
 					qg(32967, qa(13546, {	-- The Defiler
-						i( 52606),
-						i( 52647),
-						i( 52651),
+						i(52606),
+						i(52647),
+						i(52651),
 						i(131284),
 					})),
 					qg(34301, qa(13891, {	-- The Devourer of Darkshore
-						i( 52618),
-						i( 52660),
-						i( 52628),
+						i(52618),
+						i(52660),
+						i(52628),
 						i(131315),
 					})),
 --					qg(33091, qa(13586)),	-- The Emerald Dream
@@ -369,26 +369,26 @@ _.Zones =
 					qg(33091, qa(13577)),	-- The Last Wildkin
 --]]					
 					qg(34041, qa(13844, {	-- The Looting of Althalaxx
-						i( 52623),
-						i( 52607),
-						i( 52591),
+						i(52623),
+						i(52607),
+						i(52591),
 						i(131305),
 					})),
 					qg(34423, qa(13900, {	-- The Offering to Azshara
-						i( 52588),
-						i( 52610),
-						i( 52630),
+						i(52588),
+						i(52610),
+						i(52630),
 						i(131317),
 					})),
 					qg(33048, qa(13569, {	-- The Ritual Bond
-						i( 52615),
-						i( 55126),
-						i( 52664),
+						i(52615),
+						i(55126),
+						i(52664),
 						i(131288),
 					})),
 					qg(34301, qa(13882, {	-- The Seeds of Life
-						i( 52590),
-						i( 52612),
+						i(52590),
+						i(52612),
 						i(131311),
 					})),
 --[[					
@@ -404,12 +404,12 @@ _.Zones =
 						i(52657),
 					})),
 					qg(32912, qa(13519, {	-- The Twilight's Hammer
-						i( 52627),
-						i( 52605),
+						i(52627),
+						i(52605),
 						i(131280),
 					})),
 					qg(33166, qa(13587, {	-- The Waking Nightmare
-						i( 52614),
+						i(52614),
 						i(131824),
 					})),
 --[[					
@@ -433,7 +433,7 @@ _.Zones =
 					qg(33048, qa(13598)),	-- Unsavory Remedies
 					qg(32963, qa(13509)),	-- War Supplies
 					qg(33250, qa(13525)),	-- What's Happening to the Blackwood Furbolg? (breadcrumb quest for 13526)
-					n( 48764, {	-- Telarius Voidstrider
+					n(48764, {	-- Telarius Voidstrider
 						i(64450, {	-- Writings of the Dark Herald							
 							qa(28529),	-- Writings of the Void
 						}),

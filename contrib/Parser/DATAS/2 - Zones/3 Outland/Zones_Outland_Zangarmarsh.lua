@@ -101,13 +101,13 @@ _.Zones =
 --[[					
 					qh(  9899),	-- A Job Undone
 					qa(  9792),	-- A Message to Telaar
-					q(  9702),	-- A Question of Gluttony
+					q(9702),	-- A Question of Gluttony
 --]]					
 					qh(9847,  {  -- A Spirit Ally?
 						i(25621),
 						i(31770),
 					}),
---					q(  9728),	-- A Warm Welcome
+--					q(9728),	-- A Warm Welcome
 					qa(9783,  {  -- An Unnatural Drought
 						i(25599),
 						i(25598),
@@ -117,8 +117,8 @@ _.Zones =
 --[[					
 					qh(  9845),	-- Angling to Beat the Competition
 					qa(  9835),	-- Ango'rosh Encroachment
-					q(  9718),	-- As the Crow Flies
-					q(  9720),	-- Balance Must Be Preserved
+					q(9718),	-- As the Crow Flies
+					q(9720),	-- Balance Must Be Preserved
 --]]					
 					qa(9896,  {  -- Blacksting's Bane
 						i(31786),
@@ -127,13 +127,13 @@ _.Zones =
 						i(31789),
 					}),
 --[[					
-					q(  9785),	-- Blessings of the Ancients
+					q(9785),	-- Blessings of the Ancients
 					qh(  9814),	-- Burstcap Mushrooms, Mon!
 					qa( 12355),	-- Candy Bucket
 					qh( 12390),	-- Candy Bucket
-					q( 12403),	-- Candy Bucket
+					q(12403),	-- Candy Bucket
 					qa( 12354),	-- Candy Bucket
-					q( 29566),	-- Checking Up
+					q(29566),	-- Checking Up
 					qa( 10104),	-- Concerns About Tuurem
 					qa( 10115),	-- Daggerfen Deviance
 					qa( 11732),	-- Desecrate this Fire!
@@ -147,7 +147,7 @@ _.Zones =
 					qa( 11755),	-- Desecrate this Fire!
 					qa( 11580),	-- Desecrate this Fire!
 					qa(  9790),	-- Diaphanous Wings
-					q(  9716),	-- Disturbance at Umbrafen Lake
+					q(9716),	-- Disturbance at Umbrafen Lake
 --]]					
 					q(9731,  {  -- Drain Schematics
 						i(27730),
@@ -158,8 +158,8 @@ _.Zones =
 						i(157548),	-- Warden's Longbow 
 					}),
 --[[					
-					q(  9708),	-- Familiar Fungi
-					q(  9806),	-- Fertile Spores
+					q(9708),	-- Familiar Fungi
+					q(9806),	-- Fertile Spores
 --]]
 					q(9729,  {  -- Fhwoor Smash!
 						i(25537),
@@ -169,7 +169,7 @@ _.Zones =
 --[[					
 					qa(  9777),	-- Fulgor Spores
 					qa(  9801),	-- Gathering the Reagents
-					q(  9808),	-- Glowcap Mushrooms
+					q(9808),	-- Glowcap Mushrooms
 --]]
 					qh(9816,  {  -- Have You Ever Seen One of These?
 						i(25611),
@@ -180,7 +180,7 @@ _.Zones =
 					qh( 10945),	-- Hch'uu and the Mushroom People
 					qa( 39181),	-- Hero's Call: Zangarmarsh
 					qa( 11829),	-- Honor the Flame
-					q(  9784),	-- Identify Plant Parts
+					q(9784),	-- Identify Plant Parts
 					qa(  9787),	-- Idols of the Feralfen
 					qh(  9822),	-- Impending Attack
 --]]					
@@ -221,12 +221,12 @@ _.Zones =
 						i(31660),
 					}),
 --[[					
-					q(  9807),	-- More Fertile Spores
-					q(  9809),	-- More Glowcaps
-					q(  9742),	-- More Spore Sacs
-					q(  9744),	-- More Tendrils!
+					q(9807),	-- More Fertile Spores
+					q(9809),	-- More Glowcaps
+					q(9742),	-- More Spore Sacs
+					q(9744),	-- More Tendrils!
 					qa(  9834),	-- Natural Armor
-					q(  9743),	-- Natural Enemies
+					q(9743),	-- Natural Enemies
 					qh( 10105),	-- News for Rakoria
 					qh(  9796),	-- News from Zangarmarsh
 					qh(  9773),	-- No More Mushrooms!
@@ -245,15 +245,15 @@ _.Zones =
 						i(27752),
 					}),
 --[[					
-					q(  9727),	-- Now That We're Still Friends...
-					q(  9701),	-- Observing the Sporelings
+					q(9727),	-- Now That We're Still Friends...
+					q(9701),	-- Observing the Sporelings
 --]]					
 					qa(9839,  {  -- Overlord Gorefist
 						i(25618),
 						i(31770),
 					}),
 --[[					
-					q(  9802),	-- Plants of Zangarmarsh
+					q(9802),	-- Plants of Zangarmarsh
 					qa( 11882),	-- Playing with Fire
 					qh( 11915),	-- Playing with Fire
 --]]					
@@ -264,7 +264,7 @@ _.Zones =
 						i(25925),
 					}),
 --[[					
-					q( 31923),	-- Ras'an
+					q(31923),	-- Ras'an
 					qh(  9797),	-- Reinforcements for Garadar
 					qh(  9775),	-- Report to Shadow Hunter Denjai
 					qh( 10103),	-- Report to Zurai
@@ -274,7 +274,7 @@ _.Zones =
 						i(25523),
 						i(25522),
 					}),
---					q(  9894),	-- Safeguarding the Watchers
+--					q(9894),	-- Safeguarding the Watchers
 					q(10096,  {  -- Saving the Sporeloks
 						i(27717),
 						i(31657),
@@ -287,7 +287,7 @@ _.Zones =
 					}),
 --[[					
 					qh(  9846),	-- Spirits of the Feralfen
-					q(  9919),	-- Sporeggar
+					q(9919),	-- Sporeggar
 --]]					
 					q(9709,  {  -- Stealing Back the Mushrooms
 						i(25525),
@@ -298,14 +298,14 @@ _.Zones =
 --[[					
 					qa(  9830),	-- Stinger Venom
 					qh(  9841),	-- Stinging the Stingers
-					q( 29616),	-- Storming the Steamvault
+					q(29616),	-- Storming the Steamvault
 					qa( 11531),	-- Strange Engine Part
 					qh(  9903),	-- The Biggest of Them All
 					qa(  9786),	-- The Boha'mu Ruins
-					q(  9912),	-- The Cenarion Expedition
-					q(  9911),	-- The Count of the Marshes
+					q(9912),	-- The Cenarion Expedition
+					q(9911),	-- The Count of the Marshes
 					qa(  9782),	-- The Dead Mire
-					q(  9895),	-- The Dying Balance
+					q(9895),	-- The Dying Balance
 					qa(  9793),	-- The Fate of Tuurem
 					qh(  9795),	-- The Ogre Threat					
 					qa(  9776),	-- The Orebor Harborage
@@ -316,7 +316,7 @@ _.Zones =
 						i(27754),
 						i(157547), -- Keen Marshfang Shanker
 					}),
---					q(  9739),	-- The Sporelings' Plight
+--					q(9739),	-- The Sporelings' Plight
 					qa(9902,  {  -- The Terror of Marshlight Lake
 						i(25924),
 						i(25923),
@@ -324,14 +324,14 @@ _.Zones =
 						i(25925),
 					}),
 --[[					
-					q(  9747),	-- The Umbrafen Tribe
+					q(9747),	-- The Umbrafen Tribe
 					qa(  9636),	-- The Zapthrottle Mote Extractor!
 					qh(  9635),	-- The Zapthrottle Mote Extractor!
 					qh(  9769),	-- There's No Explanation for Fashion
 					qh(  9774),	-- Thick Hydra Scales
 					qa(  9781),	-- Too Many Mouths to Feed
 					qa(  9780),	-- Umbrafen Eel Filets
-					q(  9875),	-- Uncatalogued Species
+					q(9875),	-- Uncatalogued Species
 					qa(  9901),	-- Unfinished Business
 --]]					
 					qh(9823,  {  -- Us or Them
@@ -343,10 +343,10 @@ _.Zones =
 					qh( 10117),	-- Wanted: Chieftain Mummaki
 					qh( 39196),	-- Warchief's Command: Nagrand
 					qh( 39180),	-- Warchief's Command: Zangarmarsh
-					q(  9778),	-- Warden Hamoot
-					q(  9724),	-- Warning the Cenarion Circle
-					q(  9697),	-- Watcher Leesa'oh
-					q(  9957),	-- What's Wrong at Cenarion Thicket?
+					q(9778),	-- Warden Hamoot
+					q(9724),	-- Warning the Cenarion Circle
+					q(9697),	-- Watcher Leesa'oh
+					q(9957),	-- What's Wrong at Cenarion Thicket?
 					qh(  9828),	-- Withered Basidium
 					qa(  9827),	-- Withered Basidium
 					qa( 10355),	-- Withered Flesh		

@@ -231,55 +231,55 @@ _.Zones =
 					}),
 --[[					
 					n(-34, {	-- World Quests
-						q( 42442),	-- Fight Night: Amalia
-						q( 40299),	-- Fight Night: Bodhi Sunwayver
-						q( 41881),	-- Fight Night: Heliosus
-						q( 41886),	-- Fight Night: Rats!
-						q( 40298),	-- Fight Night: Sir Galveston
-						q( 42062),	-- Fight Night: Stitches Jr. Jr.
-						q( 40277),	-- Fight Night: Tiffany Nelson
-						q( 46136),	-- Gemcutter Needed
-						q( 46134),	-- Gemcutter Needed
-						q( 46139),	-- Gemcutter Needed
-						q( 46135),	-- Gemcutter Needed
-						q( 46138),	-- Gemcutter Needed
-						q( 46137),	-- Gemcutter Needed
-						q( 41668),	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
-						q( 41662),	-- Work Order: Ancient Rejuvenation Potions
-						q( 41656),	-- Work Order: Azsunite Loop
-						q( 41680),	-- Work Order: Failure Detection Pylon
-						q( 41638),	-- Work Order: Leystone Gauntlets
-						q( 41650),	-- Work Order: Silkweave Hood
-						q( 41644),	-- Work Order: Warhide Gloves
-						q( 41674),	-- Work Order: Word of Intellect
+						q(42442),	-- Fight Night: Amalia
+						q(40299),	-- Fight Night: Bodhi Sunwayver
+						q(41881),	-- Fight Night: Heliosus
+						q(41886),	-- Fight Night: Rats!
+						q(40298),	-- Fight Night: Sir Galveston
+						q(42062),	-- Fight Night: Stitches Jr. Jr.
+						q(40277),	-- Fight Night: Tiffany Nelson
+						q(46136),	-- Gemcutter Needed
+						q(46134),	-- Gemcutter Needed
+						q(46139),	-- Gemcutter Needed
+						q(46135),	-- Gemcutter Needed
+						q(46138),	-- Gemcutter Needed
+						q(46137),	-- Gemcutter Needed
+						q(41668),	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
+						q(41662),	-- Work Order: Ancient Rejuvenation Potions
+						q(41656),	-- Work Order: Azsunite Loop
+						q(41680),	-- Work Order: Failure Detection Pylon
+						q(41638),	-- Work Order: Leystone Gauntlets
+						q(41650),	-- Work Order: Silkweave Hood
+						q(41644),	-- Work Order: Warhide Gloves
+						q(41674),	-- Work Order: Word of Intellect
 					}),
 --]]					
-					qp202(qg(93539, q( 40871))),	-- 'Locke and Load
-					qart(qg(102478, q( 41541, {	-- A Beastly Expedition 
+					qp202(qg(93539, q(40871))),	-- 'Locke and Load
+					qart(qg(102478, q(41541, {	-- A Beastly Expedition 
 						["groups"] = {
 						},
 						["classes"] = {3},
 					}))),
-					qw(qg(111246, q( 44164))),	-- A Burning Path Through Time
-					qg(114946, q( 44720)),	-- A Call to Action 
-					qp165(qg(98931, q( 40206))),	-- A Debt Paid
+					qw(qg(111246, q(44164))),	-- A Burning Path Through Time
+					qg(114946, q(44720)),	-- A Call to Action 
+					qp165(qg(98931, q(40206))),	-- A Debt Paid
 					qart(qg(93775, qh( 41052, {	-- A Desperate Plea
 						["groups"] = {
 						},
 						["classes"] = {1},
 					}))),					
-					qp171(qg(92458, q( 39329))),	-- A Dormant Burner
-					qg(90417, q( 44009, {	-- A Falling Star
+					qp171(qg(92458, q(39329))),	-- A Dormant Burner
+					qg(90417, q(44009, {	-- A Falling Star
 						["groups"] = {
 						},
 						["classes"] = {1,3,4,5,6,7,8,9,10,11,12},
 					})),							
-					qc2(qg(90417, q( 44257))),	-- A Falling Star		
-					qp755(qg(93527, q( 40524))),	-- A Familiar Ring to It
-					qc2(qg(92183, q( 46083))),	-- A Few Things First
-					qc2(qg(117438, q( 45645))),	-- A Fool's Errand
-					qp171(qg(92458, q( 39339))),	-- A Fragile Crucible
-					qw(qg(111246, q( 44166))),	-- A Frozen Path Through Time
+					qc2(qg(90417, q(44257))),	-- A Falling Star		
+					qp755(qg(93527, q(40524))),	-- A Familiar Ring to It
+					qc2(qg(92183, q(46083))),	-- A Few Things First
+					qc2(qg(117438, q(45645))),	-- A Fool's Errand
+					qp171(qg(92458, q(39339))),	-- A Fragile Crucible
+					qw(qg(111246, q(44166))),	-- A Frozen Path Through Time
 					qart(qg(90418, qa( 45865, {	-- A Gift From the Six
 						["groups"] = {
 						},
@@ -315,272 +315,272 @@ _.Zones =
 						},
 --						["classes"] = {}, -- need info
 					}))),										
-					qart(qg(105081, q( 41632, {	-- A Gift of Time
+					qart(qg(105081, q(41632, {	-- A Gift of Time
 						["groups"] = {
 						},
 						["classes"] = {5},
 					}))),	
-					qp185(qg(101846, q( 40990))),	-- A Good Recipe List
-					qp202(qg(93539, q( 48056))),	-- A Harsh Mistress
-					qc9(qg(112693, q( 44099))),	-- A Mutual Friend (need to figure out where black harvest acolyte spawns)
-					q( 39390),	-- A Mysterious Text
-					q( 38951),	-- A Needle Need
-					q( 41189),	-- A New Lead
-					q( 42006),	-- A New Threat
-					q( 41626),	-- A New Threat
-					q( 40715),	-- A Pact of Necessity
-					q( 44178),	-- A Particularly Potent Potion
-					q( 40562),	-- A Personal Touch
-					qart(q( 40930, {	-- Apocalypse
+					qp185(qg(101846, q(40990))),	-- A Good Recipe List
+					qp202(qg(93539, q(48056))),	-- A Harsh Mistress
+					qc9(qg(112693, q(44099))),	-- A Mutual Friend (need to figure out where black harvest acolyte spawns)
+					q(39390),	-- A Mysterious Text
+					q(38951),	-- A Needle Need
+					q(41189),	-- A New Lead
+					q(42006),	-- A New Threat
+					q(41626),	-- A New Threat
+					q(40715),	-- A Pact of Necessity
+					q(44178),	-- A Particularly Potent Potion
+					q(40562),	-- A Personal Touch
+					qart(q(40930, {	-- Apocalypse
 						["groups"] = {
 						},
 						["classes"] = {6}, -- Death Knight
 					})),
-					q( 46177),	-- A Portal Away
+					q(46177),	-- A Portal Away
 					qh( 39746),	-- A Ring Unbroken
 					qa( 38035),	-- A Royal Summons
-					q( 43441),	-- A Second Weapon
-					q( 44167),	-- A Shattered Path Through Time
-					q( 44252),	-- A Sheath For Every Blade
-					q( 45799),	-- A Shrouded Path Through Time
-					q( 42866),	-- A Sign From The Sky
-					q( 37448),	-- A Simple Plan
-					q( 40017),	-- A Slip of the Hand
-					q( 38564),	-- A Sweet Bargain
-					q( 44159),	-- A Ticket for Marin
-					q( 47663),	-- A Timely Summons from Shattrath
-					q( 49472),	-- A Titanic Effort
-					q( 49473),	-- A Titanic Effort
+					q(43441),	-- A Second Weapon
+					q(44167),	-- A Shattered Path Through Time
+					q(44252),	-- A Sheath For Every Blade
+					q(45799),	-- A Shrouded Path Through Time
+					q(42866),	-- A Sign From The Sky
+					q(37448),	-- A Simple Plan
+					q(40017),	-- A Slip of the Hand
+					q(38564),	-- A Sweet Bargain
+					q(44159),	-- A Ticket for Marin
+					q(47663),	-- A Timely Summons from Shattrath
+					q(49472),	-- A Titanic Effort
+					q(49473),	-- A Titanic Effort
 					qa( 45841),	-- A Triumphant Report
-					q( 40840),	-- A Worthy Blade
-					q( 41183),	-- Academic Exploration
-					q( 38953),	-- Advanced Needlework
-					q( 44449),	-- Advanced Quenching
-					q( 40196),	-- Adventuring Anxieties
-					q( 39942),	-- Aethrem Crystal
-					q( 40013),	-- Aethril Sample
+					q(40840),	-- A Worthy Blade
+					q(41183),	-- Academic Exploration
+					q(38953),	-- Advanced Needlework
+					q(44449),	-- Advanced Quenching
+					q(40196),	-- Adventuring Anxieties
+					q(39942),	-- Aethrem Crystal
+					q(40013),	-- Aethril Sample
 					qa( 47041),	-- Affliction: The Twisted Twin
-					q( 44406),	-- Aggra's Guidance
-					q( 42001),	-- Aluneth, Greatstaff of the Magna
-					q( 40863),	-- Always the Last Thing
-					q( 39961),	-- An Embarrassing Revelation
-					q( 40019),	-- An Empathetic Herb
-					q( 39903),	-- An Enchanting Home
-					q( 43153),	-- An Eye for a Scepter
-					q( 40530),	-- An Eye for Detail
+					q(44406),	-- Aggra's Guidance
+					q(42001),	-- Aluneth, Greatstaff of the Magna
+					q(40863),	-- Always the Last Thing
+					q(39961),	-- An Embarrassing Revelation
+					q(40019),	-- An Empathetic Herb
+					q(39903),	-- An Enchanting Home
+					q(43153),	-- An Eye for a Scepter
+					q(40530),	-- An Eye for Detail
 					qa( 42814),	-- An Important Mission
 					qa( 46065),	-- An Impossible Foe
-					q( 39333),	-- An Imprecise Burette
-					q( 39950),	-- An Odd Trinket
-					q( 40267),	-- An Unexpected Message
-					q( 40157),	-- An Unseemly Task
-					q( 38710),	-- An Urgent Gathering
-					q( 45437),	-- An Urgent Situation
-					q( 45991),	-- An Urgent Warning
-					q( 39328),	-- Ancient Knowledge
-					q( 40052),	-- Ancient Vrykul Mastered
-					q( 44034),	-- Another Worthy Blade
-					q( 45482),	-- Arcane: Fate of the Tideskorn
+					q(39333),	-- An Imprecise Burette
+					q(39950),	-- An Odd Trinket
+					q(40267),	-- An Unexpected Message
+					q(40157),	-- An Unseemly Task
+					q(38710),	-- An Urgent Gathering
+					q(45437),	-- An Urgent Situation
+					q(45991),	-- An Urgent Warning
+					q(39328),	-- Ancient Knowledge
+					q(40052),	-- Ancient Vrykul Mastered
+					q(44034),	-- Another Worthy Blade
+					q(45482),	-- Arcane: Fate of the Tideskorn
 					qa( 42423),	-- Archmage Vargoth's Retreat
-					q( 46730),	-- Armies of Legionfall
-					q( 46000),	-- Arming Dalaran
-					qg(105467, q( 44914, {	-- Arms: The Thieving Apprentice (QG in Dalaran, second QG ID 115081, both QGs are Archmage Kalec)
+					q(46730),	-- Armies of Legionfall
+					q(46000),	-- Arming Dalaran
+					qg(105467, q(44914, {	-- Arms: The Thieving Apprentice (QG in Dalaran, second QG ID 115081, both QGs are Archmage Kalec)
 						["groups"] = {
 						},
 						["classes"] = {1},
 					})),
 --[[ commented out until we get COORDINATES.
-					qg(105081, q( 44914, {	-- Arms: The Thieving Apprentice (QG in Dalaran, second QG ID 115467, both QGs are Archmage Kalec)
+					qg(105081, q(44914, {	-- Arms: The Thieving Apprentice (QG in Dalaran, second QG ID 115467, both QGs are Archmage Kalec)
 						["groups"] = {
 						},
 						["classes"] = {1},
 					})),
 --]]					
-					q( 41804),	-- Ask and You Shall Receive					
-					q( 40247),	-- Asking a Favor
-					q( 41803),	-- Asking a Favor
-					q( 41006),	-- Assassinate That Guy
-					q( 47051),	-- Assassination: Fate of the Tideskorn
-					q( 46734),	-- Assault on Broken Shore
-					q( 40878),	-- Assault on Violet Hold: Cheating Death
-					q( 38965),	-- Assault on Violet Hold: Into the Hold
-					q( 44400),	-- Assault on Violet Hold: Purple Pain
-					q( 43487),	-- Assault on Violet Hold: The Fel Lexicon
+					q(41804),	-- Ask and You Shall Receive					
+					q(40247),	-- Asking a Favor
+					q(41803),	-- Asking a Favor
+					q(41006),	-- Assassinate That Guy
+					q(47051),	-- Assassination: Fate of the Tideskorn
+					q(46734),	-- Assault on Broken Shore
+					q(40878),	-- Assault on Violet Hold: Cheating Death
+					q(38965),	-- Assault on Violet Hold: Into the Hold
+					q(44400),	-- Assault on Violet Hold: Purple Pain
+					q(43487),	-- Assault on Violet Hold: The Fel Lexicon
 					qa( 44782),	-- Away From Prying Eyes
-					q( 40545),	-- Aww Scrap!
-					q( 44766),	-- Backup Plan
+					q(40545),	-- Aww Scrap!
+					q(44766),	-- Backup Plan
 					qa( 47037),	-- Balance: The Twisted Twin
 					qa( 46327),	-- Bargaining with Shadows
 					qh( 40241),	-- Battle Bonds
 					qa( 40200),	-- Battle Bonds
-					q( 41408),	-- Battle: Pandaren Cuisine - Elling Trias
-					q( 41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
-					q( 41406),	-- Battle: Pandaren Cuisine - Torg Slowflame
-					q( 41400),	-- Battle: Pandaren Cuisine!
+					q(41408),	-- Battle: Pandaren Cuisine - Elling Trias
+					q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
+					q(41406),	-- Battle: Pandaren Cuisine - Torg Slowflame
+					q(41400),	-- Battle: Pandaren Cuisine!
 					qa( 47018),	-- Beast Mastery: Rumblings Near Feltotem
-					q( 39343),	-- Bendy Glass Tubes
-					q( 45415),	-- Between Worlds
-					q( 43259),	-- Beware of the Crooked Tree
-					q( 40857),	-- Bits and Pieces
-					q( 40181),	-- Black Rook Bandit
-					q( 39349),	-- Black Rook Hold: Heavy, But Helpful
-					q( 42678),	-- Black Rook Hold: Into Black Rook Hold
-					q( 40559),	-- Black Rook Hold: The Raven's Wisdom
-					q( 40710),	-- Blade in Twilight
-					q( 43468),	-- Blood for the Wolfe
-					q( 43488),	-- Blood of Our Enemy
-					q( 44760),	-- Blood On Your Hands
+					q(39343),	-- Bendy Glass Tubes
+					q(45415),	-- Between Worlds
+					q(43259),	-- Beware of the Crooked Tree
+					q(40857),	-- Bits and Pieces
+					q(40181),	-- Black Rook Bandit
+					q(39349),	-- Black Rook Hold: Heavy, But Helpful
+					q(42678),	-- Black Rook Hold: Into Black Rook Hold
+					q(40559),	-- Black Rook Hold: The Raven's Wisdom
+					q(40710),	-- Blade in Twilight
+					q(43468),	-- Blood for the Wolfe
+					q(43488),	-- Blood of Our Enemy
+					q(44760),	-- Blood On Your Hands
 					qa( 47025),	-- Blood: Aid of the Illidari
-					q( 46119),	-- Boon of the Builder
+					q(46119),	-- Boon of the Builder
 					qa( 47024),	-- Brewmaster: Aid of the Illidari
-					q( 44004),	-- Bringer of the Light
-					q( 40062),	-- Bulging Nightmare Pod
-					q( 41121),	-- By Any Means
-					q( 39051),	-- By Any Means
+					q(44004),	-- Bringer of the Light
+					q(40062),	-- Bulging Nightmare Pod
+					q(41121),	-- By Any Means
+					q(39051),	-- By Any Means
 					qa( 39645),	-- Calibration Experts
 					qh( 39345),	-- Calibration Experts
-					q( 39047),	-- Call of the Illidari
-					q( 39261),	-- Call of the Illidari
-					q( 40392),	-- Call of the Marksman
-					q( 40832),	-- Call of The Uncrowned
-					q( 43055),	-- Candy Bucket
+					q(39047),	-- Call of the Illidari
+					q(39261),	-- Call of the Illidari
+					q(40392),	-- Call of the Marksman
+					q(40832),	-- Call of The Uncrowned
+					q(43055),	-- Candy Bucket
 					qa( 43056),	-- Candy Bucket
 					qh( 43057),	-- Candy Bucket
-					q( 41750),	-- Champion: Calydus
-					q( 44181),	-- Champion: Fleet Admiral Tethys
-					q( 43262),	-- Champion: Garona Halforcen
+					q(41750),	-- Champion: Calydus
+					q(44181),	-- Champion: Fleet Admiral Tethys
+					q(43262),	-- Champion: Garona Halforcen
 					qh( 46058),	-- Champion: Lilian Voss
-					q( 44183),	-- Champion: Lord Jorach Ravenholdt
-					q( 44180),	-- Champion: Marin Noggenfogger
-					q( 43724),	-- Champion: Master Mathias Shaw
-					q( 43723),	-- Champion: Taoshi
+					q(44183),	-- Champion: Lord Jorach Ravenholdt
+					q(44180),	-- Champion: Marin Noggenfogger
+					q(43724),	-- Champion: Master Mathias Shaw
+					q(43723),	-- Champion: Taoshi
 					qa( 46059),	-- Champion: Tess Greymane
-					q( 46724),	-- Champion: The Great Akazamzarak
-					q( 42800),	-- Champion: Valeera Sanguinar
-					q( 43261),	-- Champion: Vanessa VanCleef
-					q( 39347),	-- Channeling Our Efforts
-					q( 40026),	-- Chase the Culprit
-					q( 38506),	-- Chicken Scratch
-					q( 48021),	-- Chromie
+					q(46724),	-- Champion: The Great Akazamzarak
+					q(42800),	-- Champion: Valeera Sanguinar
+					q(43261),	-- Champion: Vanessa VanCleef
+					q(39347),	-- Channeling Our Efforts
+					q(40026),	-- Chase the Culprit
+					q(38506),	-- Chicken Scratch
+					q(48021),	-- Chromie
 					qh( 42539),	-- Cloak and Dagger
-					q( 39883),	-- Cloaked in Tradition
-					q( 41921),	-- Closing In
+					q(39883),	-- Cloaked in Tradition
+					q(41921),	-- Closing In
 					qh( 42503),	-- Codebreaker
-					q( 47605),	-- Coins of Air
-					q( 40540),	-- Come at Me, Brul
-					q( 45414),	-- Confirming Suspicions
-					q( 38946),	-- Consult the Locals
-					q( 43841),	-- Convincin' Old Yancey
-					q( 44275),	-- Court of Stars
-					q( 40882),	-- Court of Stars: Revamping the Recoil
-					q( 43486),	-- Cracking the Codex
-					q( 43394),	-- Crossing Legion Lines
-					q( 45239),	-- Cubic Coalescing
-					q( 45159),	-- Cubic Conundrum
-					q( 45160),	-- Cubic Currents
-					q( 44488),	-- Cursed Tome
-					q( 39891),	-- Cursed, But Convenient
-					q( 45125),	-- Dabbling in the Demonic
-					q( 42477),	-- Daio the Decrepit
+					q(47605),	-- Coins of Air
+					q(40540),	-- Come at Me, Brul
+					q(45414),	-- Confirming Suspicions
+					q(38946),	-- Consult the Locals
+					q(43841),	-- Convincin' Old Yancey
+					q(44275),	-- Court of Stars
+					q(40882),	-- Court of Stars: Revamping the Recoil
+					q(43486),	-- Cracking the Codex
+					q(43394),	-- Crossing Legion Lines
+					q(45239),	-- Cubic Coalescing
+					q(45159),	-- Cubic Conundrum
+					q(45160),	-- Cubic Currents
+					q(44488),	-- Cursed Tome
+					q(39891),	-- Cursed, But Convenient
+					q(45125),	-- Dabbling in the Demonic
+					q(42477),	-- Daio the Decrepit
 					qa( 45843),	-- Dark Omens
-					q( 44177),	-- Dark Secrets and Shady Deals
-					q( 42125),	-- Dark Whispers
-					q( 44272),	-- Darkheart Thicket
-					q( 44273),	-- Darkheart Thicket
-					q( 41889),	-- Dazed of the Past
-					q( 46293),	-- Deadmines, Part Three?
-					q( 42680),	-- Deciphering the Letter
-					q( 40996),	-- Delegation
-					q( 47079),	-- Delivering Lost Knowledge
-					q( 40211),	-- Demon Flesh
-					q( 39957),	-- Demon Ink
-					q( 43384),	-- Demonic Runes
-					q( 47049),	-- Demonology: Fate of the Tideskorn
-					q( 45173),	-- Desperate Times
-					q( 40016),	-- Desperation Breeds Ingenuity
+					q(44177),	-- Dark Secrets and Shady Deals
+					q(42125),	-- Dark Whispers
+					q(44272),	-- Darkheart Thicket
+					q(44273),	-- Darkheart Thicket
+					q(41889),	-- Dazed of the Past
+					q(46293),	-- Deadmines, Part Three?
+					q(42680),	-- Deciphering the Letter
+					q(40996),	-- Delegation
+					q(47079),	-- Delivering Lost Knowledge
+					q(40211),	-- Demon Flesh
+					q(39957),	-- Demon Ink
+					q(43384),	-- Demonic Runes
+					q(47049),	-- Demonology: Fate of the Tideskorn
+					q(45173),	-- Desperate Times
+					q(40016),	-- Desperation Breeds Ingenuity
 					qa( 45560),	-- Destruction: Rumblings Near Feltotem
 					qa( 47020),	-- Discipline: Rumblings Near Feltotem
-					q( 46723),	-- Down the Rabbit Hole
-					q( 41220),	-- Down to Azsuna
-					q( 46103),	-- Dread Infiltrators
-					q( 40018),	-- Dreamleaf Sample
-					q( 42911),	-- Drowned Mana
+					q(46723),	-- Down the Rabbit Hole
+					q(41220),	-- Down to Azsuna
+					q(46103),	-- Dread Infiltrators
+					q(40018),	-- Dreamleaf Sample
+					q(42911),	-- Drowned Mana
 					qa( 45123),	-- Elemental: The Folly of Levia Laurence
-					q( 39907),	-- Elven Enchantments
-					q( 44171),	-- Emissary of War
+					q(39907),	-- Elven Enchantments
+					q(44171),	-- Emissary of War
 					qa( 46035),	-- End of the Risen Threat
-					q( 40854),	-- Endless Possibilities
-					q( 44412),	-- Enemies Everywhere
-					q( 38505),	-- Engineers: Not COMPLETELY Useless
-					q( 47050),	-- Enhancement: Fate of the Tideskorn
-					q( 41807),	-- Establishing a Connection
-					q( 42869),	-- Eternal Vigil
-					q( 43945),	-- Expanding Your Horizons
-					q( 43474),	-- Experimental Potion: Test Subjects Needed
-					q( 43478),	-- Experimental Potion: Test Subjects Needed
-					q( 43475),	-- Experimental Potion: Test Subjects Needed
-					q( 43476),	-- Experimental Potion: Test Subjects Needed
-					q( 43473),	-- Experimental Potion: Test Subjects Needed
-					q( 43477),	-- Experimental Potion: Test Subjects Needed
-					q( 48065),	-- Extraterrestrial Exploration
-					q( 44271),	-- Eye of Azshara
-					q( 44270),	-- Eye of Azshara
-					q( 43378),	-- Eye of Azshara: Looking Through the Lens
-					q( 39331),	-- Eye of Azshara: Put a Cork in It
-					q( 38961),	-- Eye of Azshara: The Depraved Nightfallen
-					q( 42213),	-- Eye of Azshara: The Tidestone of Golganneth
-					q( 40523),	-- Facet-nating Friends
-					q( 43852),	-- Fancy Lads and Buccaneers
-					q( 41924),	-- Fangs of the Devourer
+					q(40854),	-- Endless Possibilities
+					q(44412),	-- Enemies Everywhere
+					q(38505),	-- Engineers: Not COMPLETELY Useless
+					q(47050),	-- Enhancement: Fate of the Tideskorn
+					q(41807),	-- Establishing a Connection
+					q(42869),	-- Eternal Vigil
+					q(43945),	-- Expanding Your Horizons
+					q(43474),	-- Experimental Potion: Test Subjects Needed
+					q(43478),	-- Experimental Potion: Test Subjects Needed
+					q(43475),	-- Experimental Potion: Test Subjects Needed
+					q(43476),	-- Experimental Potion: Test Subjects Needed
+					q(43473),	-- Experimental Potion: Test Subjects Needed
+					q(43477),	-- Experimental Potion: Test Subjects Needed
+					q(48065),	-- Extraterrestrial Exploration
+					q(44271),	-- Eye of Azshara
+					q(44270),	-- Eye of Azshara
+					q(43378),	-- Eye of Azshara: Looking Through the Lens
+					q(39331),	-- Eye of Azshara: Put a Cork in It
+					q(38961),	-- Eye of Azshara: The Depraved Nightfallen
+					q(42213),	-- Eye of Azshara: The Tidestone of Golganneth
+					q(40523),	-- Facet-nating Friends
+					q(43852),	-- Fancy Lads and Buccaneers
+					q(41924),	-- Fangs of the Devourer
 					qh( 42244),	-- Fate of the Queen's Reprisal
 					qa( 40794),	-- Fate of the Queen's Reprisal
-					q( 41167),	-- Fel Fragments
+					q(41167),	-- Fel Fragments
 					qa( 45127),	-- Fel-Crossed Lovers
-					q( 44486),	-- Fel-Ravaged Tome
-					q( 40156),	-- Felhide Sample
-					q( 38795),	-- Felslate Deposit Sample
-					q( 38796),	-- Felslate Seam Sample
-					q( 38524),	-- Felsmith Nal'ryssa
-					q( 41035),	-- Felstorm's Plea
+					q(44486),	-- Fel-Ravaged Tome
+					q(40156),	-- Felhide Sample
+					q(38795),	-- Felslate Deposit Sample
+					q(38796),	-- Felslate Seam Sample
+					q(38524),	-- Felsmith Nal'ryssa
+					q(41035),	-- Felstorm's Plea
 					qa( 45627),	-- Feltotem's Fall
-					q( 40041),	-- Felwort Analysis
-					q( 40040),	-- Felwort Sample
+					q(40041),	-- Felwort Analysis
+					q(40040),	-- Felwort Sample
 					qa( 47059),	-- Feral: The Folly of Levia Laurence
-					q( 39881),	-- Fey Enchantments
-					q( 45615),	-- Finders Keepers
-					q( 42452),	-- Finding Ebonchill
-					q( 43100),	-- Finding the Scepter
-					q( 42501),	-- Finishing the Job
-					q( 40869),	-- Fire and Forget
-					q( 42189),	-- Fire Mage - Flavor Event 01
-					q( 42192),	-- Fire Mage - Flavor Event 02
-					q( 42212),	-- Fire Mage - Flavor Event 03
+					q(39881),	-- Fey Enchantments
+					q(45615),	-- Finders Keepers
+					q(42452),	-- Finding Ebonchill
+					q(43100),	-- Finding the Scepter
+					q(42501),	-- Finishing the Job
+					q(40869),	-- Fire and Forget
+					q(42189),	-- Fire Mage - Flavor Event 01
+					q(42192),	-- Fire Mage - Flavor Event 02
+					q(42212),	-- Fire Mage - Flavor Event 03
 					qa( 47055),	-- Fire: The Folly of Levia Laurence
 					qa( 41778),	-- Firing Up the Forge
-					q( 41010),	-- Fish Frenzy
-					q( 39932),	-- Fish Ink
-					q( 40065),	-- Fjarnsk
-					q( 40033),	-- Fjarnskaggl
-					q( 40029),	-- Fjarnskaggl Sample
-					q( 39430),	-- Flasking for a Favor
-					q( 38563),	-- Flower-Pickers and Potion-Quaffers
-					q( 42424),	-- Following In His Footsteps
-					q( 45917),	-- Following the Scent
+					q(41010),	-- Fish Frenzy
+					q(39932),	-- Fish Ink
+					q(40065),	-- Fjarnsk
+					q(40033),	-- Fjarnskaggl
+					q(40029),	-- Fjarnskaggl Sample
+					q(39430),	-- Flasking for a Favor
+					q(38563),	-- Flower-Pickers and Potion-Quaffers
+					q(42424),	-- Following In His Footsteps
+					q(45917),	-- Following the Scent
 					qh( 44203),	-- For the Cause
 					qa( 44202),	-- For the Cause
-					q( 39763),	-- For Whom the Fel Tolls
-					q( 39337),	-- Forlorn Filter
-					q( 40024),	-- Foxflower Sample
-					q( 41158),	-- Fragments of the Fjords
-					q( 40176),	-- From Head to Toe
-					q( 38518),	-- From One Master to Another
-					qg(105467, q( 47046, {	-- Frost: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Frost DK only)
+					q(39763),	-- For Whom the Fel Tolls
+					q(39337),	-- Forlorn Filter
+					q(40024),	-- Foxflower Sample
+					q(41158),	-- Fragments of the Fjords
+					q(40176),	-- From Head to Toe
+					q(38518),	-- From One Master to Another
+					qg(105467, q(47046, {	-- Frost: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Frost DK only)
 						["groups"] = {
 						},
 						["classes"] = {6},					 
 					})),
 --[[ commented out until we get COORDINATES.					
-					qg(105081, q( 47046, {	-- Frost: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115467, Frost DK only)
+					qg(105081, q(47046, {	-- Frost: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115467, Frost DK only)
 						["groups"] = {
 						},
 						["classes"] = {6},				
@@ -588,28 +588,28 @@ _.Zones =
 				}),
 --]]
 					qa( 45182),	-- Frost: The Twisted Twin
-					q( 39332),	-- Furbolg Firewater
-					q( 46779),	-- Further Advancement
-					q( 46148),	-- Furthering Knowledge
+					q(39332),	-- Furbolg Firewater
+					q(46779),	-- Further Advancement
+					q(46148),	-- Furthering Knowledge
 					qa( 47056),	-- Fury: The Folly of Levia Laurence
-					q( 45413),	-- Gathering Information
-					q( 39325),	-- Get Your Mix On
-					q( 40193),	-- Getting the Kinks Out
-					q( 40144),	-- Glielle
-					q( 41177),	-- Goblin Archaeology
-					q( 44337),	-- Goddess Watch Over You
-					q( 44338),	-- Goddess Watch Over You
-					q( 39344),	-- Going Underground
-					q( 46744),	-- Greater Power for Greater Threats
-					q( 42175),	-- Growing Power
+					q(45413),	-- Gathering Information
+					q(39325),	-- Get Your Mix On
+					q(40193),	-- Getting the Kinks Out
+					q(40144),	-- Glielle
+					q(41177),	-- Goblin Archaeology
+					q(44337),	-- Goddess Watch Over You
+					q(44338),	-- Goddess Watch Over You
+					q(39344),	-- Going Underground
+					q(46744),	-- Greater Power for Greater Threats
+					q(42175),	-- Growing Power
 					qa( 47023),	-- Guardian: Aid of the Illidari
-					q( 40561),	-- Halls of Valor: Jewel of the Heavens
-					q( 39348),	-- Halls of Valor: The Prime Ingredient
-					q( 40877),	-- Halls of Valor: Trigger Happy
-					q( 39953),	-- Halls of Valor: Vision of Valor
-					q( 38948),	-- Hard Times
-					q( 40190),	-- Hardening the Hide
-					q( 38501),	-- Hatecoil Hammerwork
+					q(40561),	-- Halls of Valor: Jewel of the Heavens
+					q(39348),	-- Halls of Valor: The Prime Ingredient
+					q(40877),	-- Halls of Valor: Trigger Happy
+					q(39953),	-- Halls of Valor: Vision of Valor
+					q(38948),	-- Hard Times
+					q(40190),	-- Hardening the Hide
+					q(38501),	-- Hatecoil Hammerwork
 					qg(105467, q(47043, {	-- Havoc: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Havoc DH only)
 						["groups"] = {
 						},
@@ -622,244 +622,244 @@ _.Zones =
 						["classes"] = {12},					 
 					})),
 --]]	
-					q( 39830),	-- Hellfire Citadel: Hellfire and Brimstone
-					q( 39876),	-- Helping the Hunters
-					q( 40870),	-- Here Comes the BOOM!
-					q( 40539),	-- Hidden Intentions
+					q(39830),	-- Hellfire Citadel: Hellfire and Brimstone
+					q(39876),	-- Helping the Hunters
+					q(40870),	-- Here Comes the BOOM!
+					q(40539),	-- Hidden Intentions
 					qh( 46178),	-- Hiding In Plain Sight
 					qa( 46089),	-- Hiding In Plain Sight
-					q( 47607),	-- High Fash-Djinn
-					q( 41186),	-- History of Highmountain
+					q(47607),	-- High Fash-Djinn
+					q(41186),	-- History of Highmountain
 					qa( 47006),	-- Holy: The Bradensbrook Investigation
 					qa( 46078),	-- Holy: The Bradensbrook Investigation
-					q( 40950),	-- Honoring Success
-					q( 42774),	-- Hope Prevails
-					q( 41966),	-- House Call
-					q( 41009),	-- Hunter to Hunter
-					q( 40952),	-- Hunter to Hunter
-					q( 47595),	-- I Don't Need Them, But I'll Take Them
-					q( 47594),	-- I'll Take Those, Thanks!
-					q( 40136),	-- Immaculate Stonehide Leather
-					q( 40151),	-- Immaculate Stormscale
+					q(40950),	-- Honoring Success
+					q(42774),	-- Hope Prevails
+					q(41966),	-- House Call
+					q(41009),	-- Hunter to Hunter
+					q(40952),	-- Hunter to Hunter
+					q(47595),	-- I Don't Need Them, But I'll Take Them
+					q(47594),	-- I'll Take Those, Thanks!
+					q(40136),	-- Immaculate Stonehide Leather
+					q(40151),	-- Immaculate Stormscale
 					qa( 44821),	-- In Dire Need
-					q( 40132),	-- In One Piece
-					q( 45570),	-- In Safer Hands
-					q( 44663),	-- In the Blink of an Eye
-					q( 44184),	-- In the Blink of an Eye
-					q( 44448),	-- In the House of Light and Shadow
-					q( 47604),	-- In the Land of Magic
-					q( 42081),	-- In With the New
-					q( 38807),	-- Infernal Brimstone Analysis
-					q( 38806),	-- Infernal Brimstone Sample
-					q( 39790),	-- Infernal Brimstone Theory
-					q( 40995),	-- Injection of Power
-					q( 40038),	-- Insane Ramblings
-					q( 43904),	-- Into the Nightmare: Fall of Cenarius
-					q( 43908),	-- Into the Nightmare: Fall of Cenarius
-					q( 43902),	-- Into the Nightmare: Fall of Cenarius
-					q( 43906),	-- Into the Nightmare: Fall of Cenarius
-					q( 43546),	-- Into the Nightmare: Il'gynoth
-					q( 43547),	-- Into the Nightmare: Il'gynoth
-					q( 43549),	-- Into the Nightmare: Il'gynoth
-					q( 43548),	-- Into the Nightmare: Il'gynoth
-					q( 43907),	-- Into the Nightmare: Xavius
-					q( 43905),	-- Into the Nightmare: Xavius
-					q( 43903),	-- Into the Nightmare: Xavius
-					q( 43909),	-- Into the Nightmare: Xavius
-					q( 45992),	-- Investigate the Broken Shore
-					q( 40865),	-- It's Not Rocket Science
-					q( 40879),	-- It's On With Automatons
-					q( 40556),	-- Jabrul Needs You
+					q(40132),	-- In One Piece
+					q(45570),	-- In Safer Hands
+					q(44663),	-- In the Blink of an Eye
+					q(44184),	-- In the Blink of an Eye
+					q(44448),	-- In the House of Light and Shadow
+					q(47604),	-- In the Land of Magic
+					q(42081),	-- In With the New
+					q(38807),	-- Infernal Brimstone Analysis
+					q(38806),	-- Infernal Brimstone Sample
+					q(39790),	-- Infernal Brimstone Theory
+					q(40995),	-- Injection of Power
+					q(40038),	-- Insane Ramblings
+					q(43904),	-- Into the Nightmare: Fall of Cenarius
+					q(43908),	-- Into the Nightmare: Fall of Cenarius
+					q(43902),	-- Into the Nightmare: Fall of Cenarius
+					q(43906),	-- Into the Nightmare: Fall of Cenarius
+					q(43546),	-- Into the Nightmare: Il'gynoth
+					q(43547),	-- Into the Nightmare: Il'gynoth
+					q(43549),	-- Into the Nightmare: Il'gynoth
+					q(43548),	-- Into the Nightmare: Il'gynoth
+					q(43907),	-- Into the Nightmare: Xavius
+					q(43905),	-- Into the Nightmare: Xavius
+					q(43903),	-- Into the Nightmare: Xavius
+					q(43909),	-- Into the Nightmare: Xavius
+					q(45992),	-- Investigate the Broken Shore
+					q(40865),	-- It's Not Rocket Science
+					q(40879),	-- It's On With Automatons
+					q(40556),	-- Jabrul Needs You
 					qa( 45906),	-- Jarod's Gift
-					q( 40036),	-- Jeweled Spade Handle
+					q(40036),	-- Jeweled Spade Handle
 					qa( 45836),	-- Jorach's Calling
 					qh( 46326),	-- Jorach's Calling
-					q( 38907),	-- Keepers of the Hammer
-					q( 44555),	-- Khadgar's Discovery
-					q( 39985),	-- Khadgar's Discovery
+					q(38907),	-- Keepers of the Hammer
+					q(44555),	-- Khadgar's Discovery
+					q(39985),	-- Khadgar's Discovery
 					qa( 45905),	-- Kruul's Gift
-					q( 40538),	-- Lapidary Lessons
-					q( 40137),	-- Leather for Ske'rit
-					q( 40177),	-- Leather Lady
-					q( 40199),	-- Leather Legwork
-					q( 46074),	-- Leather to Legendary
-					q( 38959),	-- Left Behind
-					q( 39702),	-- Legend of Black Rook Hold
-					q( 47032),	-- Legion Threat: Azshara
+					q(40538),	-- Lapidary Lessons
+					q(40137),	-- Leather for Ske'rit
+					q(40177),	-- Leather Lady
+					q(40199),	-- Leather Legwork
+					q(46074),	-- Leather to Legendary
+					q(38959),	-- Left Behind
+					q(39702),	-- Legend of Black Rook Hold
+					q(47032),	-- Legion Threat: Azshara
 					qa( 47030),	-- Legion Threat: Dalaran Infiltration
 					qa( 47031),	-- Legion Threat: Highmountain
-					q( 47033),	-- Legion Threat: Suramar
+					q(47033),	-- Legion Threat: Suramar
 					qa( 47035),	-- Legion Threat: The Missing Mage
 					qa( 47034),	-- Legion Threat: The Necromancer
 					qa( 47027),	-- Legion Threat: Val'sharah
-					q( 40997),	-- Lethal Efficiency
-					q( 39330),	-- Ley Hunting
-					q( 38500),	-- Leysmithing Mastery
-					q( 38777),	-- Leystone Deposit Sample
-					q( 38523),	-- Leystone Hoofplates
-					q( 38784),	-- Leystone Seam Sample
-					q( 44153),	-- Light's Charge
-					q( 39340),	-- Lining the Crucible
-					q( 38960),	-- Lining Them Up
-					q( 40187),	-- Links in the Chain
-					q( 38797),	-- Living Felslate Sample
-					q( 38785),	-- Living Leystone Sample
-					q( 42168),	-- Looking into the Darkness
-					q( 41368),	-- Lost Mail
-					q( 41411),	-- Lost Mail
-					q( 47606),	-- Loyalty Is Its Own Reward
-					q( 40960),	-- Luminous Pearl
-					q( 39986),	-- Magic Message
-					q( 40180),	-- Mail Men
-					q( 40819),	-- Making Arrangements
-					q( 41120),	-- Making Arrangements
-					q( 40534),	-- Making the Cut
-					q( 40533),	-- Making the Cut
-					q( 40532),	-- Making the Cut
+					q(40997),	-- Lethal Efficiency
+					q(39330),	-- Ley Hunting
+					q(38500),	-- Leysmithing Mastery
+					q(38777),	-- Leystone Deposit Sample
+					q(38523),	-- Leystone Hoofplates
+					q(38784),	-- Leystone Seam Sample
+					q(44153),	-- Light's Charge
+					q(39340),	-- Lining the Crucible
+					q(38960),	-- Lining Them Up
+					q(40187),	-- Links in the Chain
+					q(38797),	-- Living Felslate Sample
+					q(38785),	-- Living Leystone Sample
+					q(42168),	-- Looking into the Darkness
+					q(41368),	-- Lost Mail
+					q(41411),	-- Lost Mail
+					q(47606),	-- Loyalty Is Its Own Reward
+					q(40960),	-- Luminous Pearl
+					q(39986),	-- Magic Message
+					q(40180),	-- Mail Men
+					q(40819),	-- Making Arrangements
+					q(41120),	-- Making Arrangements
+					q(40534),	-- Making the Cut
+					q(40533),	-- Making the Cut
+					q(40532),	-- Making the Cut
 					qa( 38206),	-- Making the Rounds
 					qa( 47039),	-- Marksmanship: The Twisted Twin
-					q( 39954),	-- Mass Milling Techniques
-					q( 48376),	-- Mass Primal Obliterum
-					q( 44267),	-- Maw of Souls
-					q( 39350),	-- Maw of Souls: A Hope in Helheim
-					q( 43253),	-- Maw of Souls: Ancient Vrykul Legends
-					q( 40560),	-- Maw of Souls: Spiriting Away
+					q(39954),	-- Mass Milling Techniques
+					q(48376),	-- Mass Primal Obliterum
+					q(44267),	-- Maw of Souls
+					q(39350),	-- Maw of Souls: A Hope in Helheim
+					q(43253),	-- Maw of Souls: Ancient Vrykul Legends
+					q(40560),	-- Maw of Souls: Spiriting Away
 					qh( 46827),	-- Meld Into the Shadows
 					qa( 46260),	-- Meld Into the Shadows
-					q( 45185),	-- Message from the Shadows
-					q( 38952),	-- Meticulous Precision
-					q( 39326),	-- Missing Shipments
+					q(45185),	-- Message from the Shadows
+					q(38952),	-- Meticulous Precision
+					q(39326),	-- Missing Shipments
 					qa( 47005),	-- Mistweaver: The Bradensbrook Investigation
-					q( 40864),	-- Modular Modifications
-					q( 40215),	-- Mounting Made Easy
-					q( 42594),	-- Move Like No Other
-					q( 39944),	-- Mysterious Messages
-					q( 44116),	-- Mystery at Citrine Bay
-					q( 38515),	-- Nature Provides
+					q(40864),	-- Modular Modifications
+					q(40215),	-- Mounting Made Easy
+					q(42594),	-- Move Like No Other
+					q(39944),	-- Mysterious Messages
+					q(44116),	-- Mystery at Citrine Bay
+					q(38515),	-- Nature Provides
 					qa( 45909),	-- Navarrogg's Gift
-					q( 40384),	-- Needs of the Hunters
-					q( 44265),	-- Neltharion's Lair
-					q( 44264),	-- Neltharion's Lair
-					q( 43554),	-- Neltharion's Lair
-					q( 39335),	-- Neltharion's Lair: Potent Powder
-					q( 42185),	-- Never Hunt Alone
-					q( 42502),	-- No Sanctuary
-					q( 42730),	-- Noggenfogger's Reasonable Request
-					q( 38522),	-- Not Just Weapons and Armor
-					q( 46722),	-- Nothing Up My Sleeve
-					q( 44269),	-- Odyn's Challenge
-					q( 44268),	-- Odyn's Challenge
-					q( 43509),	-- Odyn's Challenge
-					q( 43250),	-- Off to Court
-					q( 45644),	-- Oh Doloria, My Sweet Doloria
-					q( 41263),	-- Oh! So Powerful!
-					q( 40881),	-- Oil Rags to Riches
-					q( 39920),	-- On Azure Wings
-					q( 40953),	-- On Eagle's Wings
-					q( 39949),	-- Once a Scribe Like You
-					q( 44215),	-- One More Thing...
-					q( 45193),	-- One Step Behind
-					q( 41164),	-- One Step Closer
-					q( 40991),	-- Opening the Test Kitchen
-					q( 40855),	-- Our Man in Azsuna
-					q( 40056),	-- Our New Allies
-					q( 39934),	-- Our New Allies
-					q( 41967),	-- Out of the Darkness
-					q( 41161),	-- Out of the Frying Pan
+					q(40384),	-- Needs of the Hunters
+					q(44265),	-- Neltharion's Lair
+					q(44264),	-- Neltharion's Lair
+					q(43554),	-- Neltharion's Lair
+					q(39335),	-- Neltharion's Lair: Potent Powder
+					q(42185),	-- Never Hunt Alone
+					q(42502),	-- No Sanctuary
+					q(42730),	-- Noggenfogger's Reasonable Request
+					q(38522),	-- Not Just Weapons and Armor
+					q(46722),	-- Nothing Up My Sleeve
+					q(44269),	-- Odyn's Challenge
+					q(44268),	-- Odyn's Challenge
+					q(43509),	-- Odyn's Challenge
+					q(43250),	-- Off to Court
+					q(45644),	-- Oh Doloria, My Sweet Doloria
+					q(41263),	-- Oh! So Powerful!
+					q(40881),	-- Oil Rags to Riches
+					q(39920),	-- On Azure Wings
+					q(40953),	-- On Eagle's Wings
+					q(39949),	-- Once a Scribe Like You
+					q(44215),	-- One More Thing...
+					q(45193),	-- One Step Behind
+					q(41164),	-- One Step Closer
+					q(40991),	-- Opening the Test Kitchen
+					q(40855),	-- Our Man in Azsuna
+					q(40056),	-- Our New Allies
+					q(39934),	-- Our New Allies
+					q(41967),	-- Out of the Darkness
+					q(41161),	-- Out of the Frying Pan
 					qa( 47058),	-- Outlaw: The Folly of Levia Laurence
-					q( 40183),	-- Over Your Head
-					q( 39718),	-- Paradise Lost
-					q( 37666),	-- Picking a Fight
-					q( 40201),	-- Playthings
-					q( 40821),	-- Power Overwhelming
-					q( 41542),	-- Preparation for the Hunt
-					q( 48375),	-- Primal Obliterum
+					q(40183),	-- Over Your Head
+					q(39718),	-- Paradise Lost
+					q(37666),	-- Picking a Fight
+					q(40201),	-- Playthings
+					q(40821),	-- Power Overwhelming
+					q(41542),	-- Preparation for the Hunt
+					q(48375),	-- Primal Obliterum
 					qa( 47022),	-- Protection: Aid of the Illidari
 					qa( 45412),	-- Protection: Aid of the Illidari
-					q( 43470),	-- Pruning the Garden
+					q(43470),	-- Pruning the Garden
 					qa( 45910),	-- Raest's Gift
-					q( 40015),	-- Ragged Strips of Silk
-					q( 40535),	-- Raising the Drogbar
-					q( 40030),	-- Ram's-Horn Trowel
-					q( 40198),	-- Rats!
-					q( 40823),	-- Rebuilding the Council
-					q( 45251),	-- Redundancy
-					q( 41540),	-- Rendezvous with the Courier
-					q( 40419),	-- Rescue Mission
+					q(40015),	-- Ragged Strips of Silk
+					q(40535),	-- Raising the Drogbar
+					q(40030),	-- Ram's-Horn Trowel
+					q(40198),	-- Rats!
+					q(40823),	-- Rebuilding the Council
+					q(45251),	-- Redundancy
+					q(41540),	-- Rendezvous with the Courier
+					q(40419),	-- Rescue Mission
 					qa( 47004),	-- Restoration: The Bradensbrook Investigation
 					qa( 47003),	-- Restoration: The Bradensbrook Investigation
-					q( 40860),	-- Resupplying the Line
-					q( 47052),	-- Retribution: Fate of the Tideskorn
-					q( 46290),	-- Return of the Archmage
-					q( 42074),	-- Return of the Light
-					q( 39338),	-- Return the Filter
-					q( 41806),	-- Return to Jace
-					q( 45238),	-- Return to Karazhan: Cubic Cynosure
-					q( 44917),	-- Return to Karazhan: The Tower of Power
-					q( 41221),	-- Return to Mardum
-					q( 41033),	-- Return to Mardum
+					q(40860),	-- Resupplying the Line
+					q(47052),	-- Retribution: Fate of the Tideskorn
+					q(46290),	-- Return of the Archmage
+					q(42074),	-- Return of the Light
+					q(39338),	-- Return the Filter
+					q(41806),	-- Return to Jace
+					q(45238),	-- Return to Karazhan: Cubic Cynosure
+					q(44917),	-- Return to Karazhan: The Tower of Power
+					q(41221),	-- Return to Mardum
+					q(41033),	-- Return to Mardum
 					qa( 42815),	-- Return to the Broken Shore
 					qh( 38904),	-- Return to the Broken Shore
-					q( 43007),	-- Return to the Chamber of Shadows
-					q( 40994),	-- Right Tools for the Job
-					q( 39905),	-- Ringing True
-					q( 42663),	-- Rise, Champions
-					q( 42608),	-- Rise, Champions
-					q( 42139),	-- Rise, Champions
-					q( 42128),	-- Ritual Reagents
-					q( 43254),	-- Ritual Ruination
-					q( 39951),	-- Roseate Essence
-					q( 45192),	-- Runes of Rending
-					q( 38947),	-- Runic Catgut
-					q( 39952),	-- Sallow Essence
-					q( 40152),	-- Scales for Ske'rit
-					q( 44204),	-- Seal their Fates
-					q( 47864),	-- Sealing Fate: Additional Marks of Honor
-					q( 43894),	-- Sealing Fate: Extraneous Order Resources
-					q( 43895),	-- Sealing Fate: Gold
-					q( 43897),	-- Sealing Fate: Immense Fortune of Gold
-					q( 47851),	-- Sealing Fate: Marks of Honor
-					q( 43892),	-- Sealing Fate: Order Resources
-					q( 43896),	-- Sealing Fate: Piles of Gold
-					q( 47865),	-- Sealing Fate: Piles of Marks of Honor
-					q( 43893),	-- Sealing Fate: Stashed Order Resources
-					q( 38966),	-- Secret Silkweaving Methods
-					q( 45187),	-- Secrets in the Underbelly
-					q( 38507),	-- Secrets of Leysmithing
-					q( 42872),	-- Securing the Way
-					q( 42000),	-- Seeker of Truth
-					q( 42770),	-- Seeking Guidance
-					q( 45630),	-- Servant to No One
-					q( 38955),	-- Sew Far, Sew Good
-					q( 38944),	-- Sew It Begins
-					q( 40146),	-- Seymour and Agnes
+					q(43007),	-- Return to the Chamber of Shadows
+					q(40994),	-- Right Tools for the Job
+					q(39905),	-- Ringing True
+					q(42663),	-- Rise, Champions
+					q(42608),	-- Rise, Champions
+					q(42139),	-- Rise, Champions
+					q(42128),	-- Ritual Reagents
+					q(43254),	-- Ritual Ruination
+					q(39951),	-- Roseate Essence
+					q(45192),	-- Runes of Rending
+					q(38947),	-- Runic Catgut
+					q(39952),	-- Sallow Essence
+					q(40152),	-- Scales for Ske'rit
+					q(44204),	-- Seal their Fates
+					q(47864),	-- Sealing Fate: Additional Marks of Honor
+					q(43894),	-- Sealing Fate: Extraneous Order Resources
+					q(43895),	-- Sealing Fate: Gold
+					q(43897),	-- Sealing Fate: Immense Fortune of Gold
+					q(47851),	-- Sealing Fate: Marks of Honor
+					q(43892),	-- Sealing Fate: Order Resources
+					q(43896),	-- Sealing Fate: Piles of Gold
+					q(47865),	-- Sealing Fate: Piles of Marks of Honor
+					q(43893),	-- Sealing Fate: Stashed Order Resources
+					q(38966),	-- Secret Silkweaving Methods
+					q(45187),	-- Secrets in the Underbelly
+					q(38507),	-- Secrets of Leysmithing
+					q(42872),	-- Securing the Way
+					q(42000),	-- Seeker of Truth
+					q(42770),	-- Seeking Guidance
+					q(45630),	-- Servant to No One
+					q(38955),	-- Sew Far, Sew Good
+					q(38944),	-- Sew It Begins
+					q(40146),	-- Seymour and Agnes
 					qa( 47042),	-- Shadow: The Twisted Twin
-					q( 47592),	-- Shine Bright Like a Diamond
-					q( 40880),	-- Short Circuit
-					q( 42017),	-- Shrine of the Truthguard
-					q( 39847),	-- Sign This
-					q( 40140),	-- Ske'rit's Leather Handbook
-					q( 40155),	-- Ske'rit's Scale-Skinning Suggestions
-					q( 39958),	-- Skin Deep
-					q( 39931),	-- Smashing Herbs
-					q( 38949),	-- So You Think You Can Sew
-					q( 40558),	-- Socket to Me
-					q( 39874),	-- Some Enchanted Evening
-					q( 47148),	-- Something Different
-					q( 40014),	-- Spayed by the Spade
-					q( 44581),	-- Spicing Things Up
-					q( 43829),	-- Spy vs. Spy
-					q( 40034),	-- Starlight Rosedust
-					q( 41574),	-- Stolen Thunder
-					q( 40131),	-- Stonehide Leather Sample
+					q(47592),	-- Shine Bright Like a Diamond
+					q(40880),	-- Short Circuit
+					q(42017),	-- Shrine of the Truthguard
+					q(39847),	-- Sign This
+					q(40140),	-- Ske'rit's Leather Handbook
+					q(40155),	-- Ske'rit's Scale-Skinning Suggestions
+					q(39958),	-- Skin Deep
+					q(39931),	-- Smashing Herbs
+					q(38949),	-- So You Think You Can Sew
+					q(40558),	-- Socket to Me
+					q(39874),	-- Some Enchanted Evening
+					q(47148),	-- Something Different
+					q(40014),	-- Spayed by the Spade
+					q(44581),	-- Spicing Things Up
+					q(43829),	-- Spy vs. Spy
+					q(40034),	-- Starlight Rosedust
+					q(41574),	-- Stolen Thunder
+					q(40131),	-- Stonehide Leather Sample
 					qa( 44700),	-- Stormheim
 					qh( 39864),	-- Stormheim
 					qa( 39735),	-- Stormheim
 					qh( 44701),	-- Stormheim
-					q( 40179),	-- Stormheim Savagery
-					q( 40141),	-- Stormscale Sample
-					q( 44411),	-- Strange Humming Crystal
-					q( 38499),	-- Strange New Ores
+					q(40179),	-- Stormheim Savagery
+					q(40141),	-- Stormscale Sample
+					q(44411),	-- Strange Humming Crystal
+					q(38499),	-- Strange New Ores
 					qg(105467, q(47048, {	-- Subtlety: The Thieving Apprentice (QG in Dalaran, additional QG 115081 Archmage Kalec, Subtlety Rogue only)
 						["groups"] = {
 						},
@@ -884,224 +884,224 @@ _.Zones =
 						["classes"] = {3},					 
 					})),
 --]]					
-					q( 40531),	-- Swift Vengeance
-					q( 38957),	-- Taking Inspiration
+					q(40531),	-- Swift Vengeance
+					q(38957),	-- Taking Inspiration
 					qa( 43726),	-- Tales of the Broken Isles
-					q( 40184),	-- Tauren Tanning
-					q( 42703),	-- Technical Wizardry
-					q( 40025),	-- Teeny Bite Marks
-					q( 39346),	-- Testing the Calibration
-					q( 39334),	-- Thanks for Flasking
-					q( 40039),	-- Tharillon's Fall
-					q( 45916),	-- The Acolyte Imperiled
-					q( 43349),	-- The Aegis of Aggramar
-					q( 42593),	-- The Arcane Way
-					q( 44263),	-- The Arcway
-					q( 44172),	-- The Arena Calls
-					q( 43373),	-- The Best and Brightest
-					q( 43014),	-- The Big Bad Wolfe
-					q( 44041),	-- The Bloody Truth
-					q( 39817),	-- The Brimstone's Secret
-					q( 42377),	-- The Brother's Trail
-					q( 39943),	-- The Burdens of Hunting
-					q( 40714),	-- The Call To War
-					q( 39933),	-- The Card Shark
-					q( 41114),	-- The Champion's Return
-					q( 40142),	-- The Core of the Stormscale
+					q(40184),	-- Tauren Tanning
+					q(42703),	-- Technical Wizardry
+					q(40025),	-- Teeny Bite Marks
+					q(39346),	-- Testing the Calibration
+					q(39334),	-- Thanks for Flasking
+					q(40039),	-- Tharillon's Fall
+					q(45916),	-- The Acolyte Imperiled
+					q(43349),	-- The Aegis of Aggramar
+					q(42593),	-- The Arcane Way
+					q(44263),	-- The Arcway
+					q(44172),	-- The Arena Calls
+					q(43373),	-- The Best and Brightest
+					q(43014),	-- The Big Bad Wolfe
+					q(44041),	-- The Bloody Truth
+					q(39817),	-- The Brimstone's Secret
+					q(42377),	-- The Brother's Trail
+					q(39943),	-- The Burdens of Hunting
+					q(40714),	-- The Call To War
+					q(39933),	-- The Card Shark
+					q(41114),	-- The Champion's Return
+					q(40142),	-- The Core of the Stormscale
 					qa( 42416),	-- The Council is in Session
-					q( 47000),	-- The Council's Call
-					q( 49474),	-- The Cursed Shard
-					q( 40961),	-- The Dalaran Fountain
-					q( 42476),	-- The Deadwind Site
-					q( 40849),	-- The Dreadblades
-					q( 41036),	-- The Dreadlord's Prize
-					q( 39427),	-- The Eagle Spirit's Blessing
-					q( 40042),	-- The Emerald Nightmare: Felwort Mastery
-					q( 39351),	-- The Emerald Nightmare: Rage Fire
-					q( 40159),	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
-					q( 42005),	-- The End of the Saga
-					q( 45420),	-- The Eye of Aman'Thul
-					q( 38901),	-- The Felsmiths
-					q( 44375),	-- The Final Blade
-					q( 38963),	-- The Final Lesson?
-					q( 40202),	-- The Final Lessons
-					q( 40839),	-- The Final Shadow
+					q(47000),	-- The Council's Call
+					q(49474),	-- The Cursed Shard
+					q(40961),	-- The Dalaran Fountain
+					q(42476),	-- The Deadwind Site
+					q(40849),	-- The Dreadblades
+					q(41036),	-- The Dreadlord's Prize
+					q(39427),	-- The Eagle Spirit's Blessing
+					q(40042),	-- The Emerald Nightmare: Felwort Mastery
+					q(39351),	-- The Emerald Nightmare: Rage Fire
+					q(40159),	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
+					q(42005),	-- The End of the Saga
+					q(45420),	-- The Eye of Aman'Thul
+					q(38901),	-- The Felsmiths
+					q(44375),	-- The Final Blade
+					q(38963),	-- The Final Lesson?
+					q(40202),	-- The Final Lessons
+					q(40839),	-- The Final Shadow
 					qa( 11997),	-- The Frozen Flame
-					q( 46340),	-- The Gates Are Closed
-					q( 40035),	-- The Gentlest Touch
-					q( 46273),	-- The Giver of Quests
-					q( 45904),	-- The God-Queen's Gift
-					q( 14166),	-- The Grateful Dead
-					q( 41112),	-- The Great Akazamzarak
-					q( 46071),	-- The Hammer of Dalaran
-					q( 42454),	-- The Hammer of Khaz'goroth
-					q( 40731),	-- The Heart of the Dreadscar
+					q(46340),	-- The Gates Are Closed
+					q(40035),	-- The Gentlest Touch
+					q(46273),	-- The Giver of Quests
+					q(45904),	-- The God-Queen's Gift
+					q(14166),	-- The Grateful Dead
+					q(41112),	-- The Great Akazamzarak
+					q(46071),	-- The Hammer of Dalaran
+					q(42454),	-- The Hammer of Khaz'goroth
+					q(40731),	-- The Heart of the Dreadscar
 					qa( 45416),	-- The Highlord's Return
-					q( 38513),	-- The Highmountain Smiths
-					q( 38888),	-- The Highmountain Tauren
-					q( 41119),	-- The Hunt
-					q( 39247),	-- The Hunt
-					q( 41415),	-- The Hunter's Call
+					q(38513),	-- The Highmountain Smiths
+					q(38888),	-- The Highmountain Tauren
+					q(41119),	-- The Hunt
+					q(39247),	-- The Hunt
+					q(41415),	-- The Hunter's Call
 					qa( 45902),	-- The Imp Mother's Gift
-					q( 37689),	-- The Imposter
-					q( 39948),	-- The Ink Flows
-					q( 43179),	-- The Kirin Tor of Dalaran
-					q( 39729),	-- The Knowledge of Black Rook
-					q( 39875),	-- The Last Few
-					q( 40938),	-- The Light and the Void
-					q( 41625),	-- The Light's Wrath
-					q( 39733),	-- The Lone Mountain
-					q( 44276),	-- The Lord of Black Rook Hold
-					q( 44277),	-- The Lord of Black Rook Hold
-					q( 42479),	-- The Mage Hunter
+					q(37689),	-- The Imposter
+					q(39948),	-- The Ink Flows
+					q(43179),	-- The Kirin Tor of Dalaran
+					q(39729),	-- The Knowledge of Black Rook
+					q(39875),	-- The Last Few
+					q(40938),	-- The Light and the Void
+					q(41625),	-- The Light's Wrath
+					q(39733),	-- The Lone Mountain
+					q(44276),	-- The Lord of Black Rook Hold
+					q(44277),	-- The Lord of Black Rook Hold
+					q(42479),	-- The Mage Hunter
 					qa( 46200),	-- The Matter Resolved... For Now...
-					q( 38502),	-- The Methods of the Nightfallen
-					q( 40032),	-- The Missing Page
-					q( 40858),	-- The Missing Pieces
-					q( 42231),	-- The Mysterious Paladin
-					q( 47603),	-- The Mysterious, Magnificent Al'Abas
-					q( 40197),	-- The Necessary Materials
-					q( 40729),	-- The New Blood
-					q( 42011),	-- The Nexus Vault
-					q( 41631),	-- The Nexus Vault
-					q( 45207),	-- The Nightborne Apprentice
-					q( 38967),	-- The Nightborne Connection
-					q( 45177),	-- The Nighthold
-					q( 43917),	-- The Nighthold: Elisande
-					q( 43914),	-- The Nighthold: Elisande
-					q( 43911),	-- The Nighthold: Elisande
-					q( 43920),	-- The Nighthold: Elisande
-					q( 43912),	-- The Nighthold: Gul'dan
-					q( 43918),	-- The Nighthold: Gul'dan
-					q( 43921),	-- The Nighthold: Gul'dan
-					q( 43915),	-- The Nighthold: Gul'dan
-					q( 43919),	-- The Nighthold: High Botanist Tel'arn
-					q( 43916),	-- The Nighthold: High Botanist Tel'arn
-					q( 43910),	-- The Nighthold: High Botanist Tel'arn
-					q( 43882),	-- The Nighthold: Vaults
-					q( 43890),	-- The Nighthold: Vaults
-					q( 43889),	-- The Nighthold: Vaults
-					q( 43891),	-- The Nighthold: Vaults
-					q( 41113),	-- The Only Way to Travel
-					q( 38962),	-- The Path to Suramar City
-					q( 40028),	-- The Pied Picker
+					q(38502),	-- The Methods of the Nightfallen
+					q(40032),	-- The Missing Page
+					q(40858),	-- The Missing Pieces
+					q(42231),	-- The Mysterious Paladin
+					q(47603),	-- The Mysterious, Magnificent Al'Abas
+					q(40197),	-- The Necessary Materials
+					q(40729),	-- The New Blood
+					q(42011),	-- The Nexus Vault
+					q(41631),	-- The Nexus Vault
+					q(45207),	-- The Nightborne Apprentice
+					q(38967),	-- The Nightborne Connection
+					q(45177),	-- The Nighthold
+					q(43917),	-- The Nighthold: Elisande
+					q(43914),	-- The Nighthold: Elisande
+					q(43911),	-- The Nighthold: Elisande
+					q(43920),	-- The Nighthold: Elisande
+					q(43912),	-- The Nighthold: Gul'dan
+					q(43918),	-- The Nighthold: Gul'dan
+					q(43921),	-- The Nighthold: Gul'dan
+					q(43915),	-- The Nighthold: Gul'dan
+					q(43919),	-- The Nighthold: High Botanist Tel'arn
+					q(43916),	-- The Nighthold: High Botanist Tel'arn
+					q(43910),	-- The Nighthold: High Botanist Tel'arn
+					q(43882),	-- The Nighthold: Vaults
+					q(43890),	-- The Nighthold: Vaults
+					q(43889),	-- The Nighthold: Vaults
+					q(43891),	-- The Nighthold: Vaults
+					q(41113),	-- The Only Way to Travel
+					q(38962),	-- The Path to Suramar City
+					q(40028),	-- The Pied Picker
 					qh( 46322),	-- The Pirate's Bay
 					qa( 45833),	-- The Pirate's Bay
 					qh( 39959),	-- The Plot Thickens
 					qa( 39955),	-- The Plot Thickens
-					q( 40712),	-- The Power Possessed
-					q( 41156),	-- The Power Possessed
-					q( 40816),	-- The Power to Survive
-					q( 40814),	-- The Power to Survive
-					q( 39342),	-- The Price of the Black Market
-					q( 49445),	-- The Prime Exchange
-					q( 40989),	-- The Prodigal Sous Chef
-					q( 39681),	-- The Properties of Leystone
-					q( 43249),	-- The Raven's Eye
-					q( 41171),	-- The Reliquary Calls
-					q( 38958),	-- The Right Color
-					q( 41192),	-- The Right Path
-					q( 43013),	-- The School of Roguery
+					q(40712),	-- The Power Possessed
+					q(41156),	-- The Power Possessed
+					q(40816),	-- The Power to Survive
+					q(40814),	-- The Power to Survive
+					q(39342),	-- The Price of the Black Market
+					q(49445),	-- The Prime Exchange
+					q(40989),	-- The Prodigal Sous Chef
+					q(39681),	-- The Properties of Leystone
+					q(43249),	-- The Raven's Eye
+					q(41171),	-- The Reliquary Calls
+					q(38958),	-- The Right Color
+					q(41192),	-- The Right Path
+					q(43013),	-- The School of Roguery
 					qa( 39566),	-- The Search for Knowledge
-					q( 38376),	-- The Search for the Highlord
-					q( 41919),	-- The Shadows Reveal
-					q( 42120),	-- The Silver Hand
-					q( 40716),	-- The Sixth
-					q( 40037),	-- The Spade's Blade
-					q( 40385),	-- The Spear in the Shadow
-					q( 47793),	-- The Spoiled Sample
-					q( 40890),	-- The Tears of Elune
-					q( 41124),	-- The Tirisgarde Reborn
-					q( 40684),	-- The Tome of Blighted Implements
-					q( 43984),	-- The Tome Opens Again
-					q( 39731),	-- The Tranquil Forest
+					q(38376),	-- The Search for the Highlord
+					q(41919),	-- The Shadows Reveal
+					q(42120),	-- The Silver Hand
+					q(40716),	-- The Sixth
+					q(40037),	-- The Spade's Blade
+					q(40385),	-- The Spear in the Shadow
+					q(47793),	-- The Spoiled Sample
+					q(40890),	-- The Tears of Elune
+					q(41124),	-- The Tirisgarde Reborn
+					q(40684),	-- The Tome of Blighted Implements
+					q(43984),	-- The Tome Opens Again
+					q(39731),	-- The Tranquil Forest
 					qa( 42504),	-- The Unseen Blade
 					qh( 42627),	-- The Unseen Blade
-					q( 44174),	-- The Very Best
-					q( 41957),	-- The Vindicator's Plea
+					q(44174),	-- The Very Best
+					q(41957),	-- The Vindicator's Plea
 					qh( 38307),	-- The Warchief Beckons
-					q( 42422),	-- The Wardens
-					q( 38950),	-- The Wayward Tailor
+					q(42422),	-- The Wardens
+					q(38950),	-- The Wayward Tailor
 					qa( 45188),	-- The Wisdom of the Council
-					q( 44175),	-- The World Awaits
-					q( 43479),	-- The World is Not Enough
-					q( 48069),	-- The Wrench Calls
-					q( 39327),	-- There's a Scribe for That
-					q( 38945),	-- This Should Be Simple... Right?
-					q( 44310),	-- Thrice the Power					
-					q( 42684),	-- Throwing SI:7 Off the Trail
-					q( 39878),	-- Thunder Struck
+					q(44175),	-- The World Awaits
+					q(43479),	-- The World is Not Enough
+					q(48069),	-- The Wrench Calls
+					q(39327),	-- There's a Scribe for That
+					q(38945),	-- This Should Be Simple... Right?
+					q(44310),	-- Thrice the Power					
+					q(42684),	-- Throwing SI:7 Off the Trail
+					q(39878),	-- Thunder Struck
 					qa( 46127),	-- Thwarting the Twins
-					q( 46128),	-- Time for a Recharge
-					q( 43331),	-- Time to Collect
-					q( 40210),	-- Time Well Spent
-					q( 45172),	-- To Battle!
-					q( 40547),	-- To Dalaran, With Love
-					q( 42002),	-- To Northrend
+					q(46128),	-- Time for a Recharge
+					q(43331),	-- Time to Collect
+					q(40210),	-- Time Well Spent
+					q(45172),	-- To Battle!
+					q(40547),	-- To Dalaran, With Love
+					q(42002),	-- To Northrend
 					qa( 46810),	-- To the Forge It Goes...
 					qh( 46946),	-- To the Forge It Goes...
-					q( 40182),	-- Too Good To Pass Up
-					q( 40988),	-- Too Many Cooks
-					q( 48457),	-- Tracking Quest
-					q( 39987),	-- Trail of Echoes
-					q( 41922),	-- Traitor!
-					q( 43535),	-- Translation: Danger!
-					q( 40529),	-- Truly Outrageous
-					q( 39861),	-- Tying Up Loose Ends
-					q( 40495),	-- Ulthalesh, the Deadwind Harvester
-					q( 37494),	-- Under Cover of Darkness
-					q( 40143),	-- Unfinished Treatise on the Properties of Stormscale
+					q(40182),	-- Too Good To Pass Up
+					q(40988),	-- Too Many Cooks
+					q(48457),	-- Tracking Quest
+					q(39987),	-- Trail of Echoes
+					q(41922),	-- Traitor!
+					q(43535),	-- Translation: Danger!
+					q(40529),	-- Truly Outrageous
+					q(39861),	-- Tying Up Loose Ends
+					q(40495),	-- Ulthalesh, the Deadwind Harvester
+					q(37494),	-- Under Cover of Darkness
+					q(40143),	-- Unfinished Treatise on the Properties of Stormscale
 					qa( 47057),	-- Unholy: The Folly of Levia Laurence
-					q( 43341),	-- Uniting the Isles
-					q( 45727),	-- Uniting the Isles
-					q( 41125),	-- Unlocked Potential
-					q( 47791),	-- Unsettled Power
-					q( 47790),	-- Unsettled Power
-					q( 41180),	-- Unspeakable Power
+					q(43341),	-- Uniting the Isles
+					q(45727),	-- Uniting the Isles
+					q(41125),	-- Unlocked Potential
+					q(47791),	-- Unsettled Power
+					q(47790),	-- Unsettled Power
+					q(41180),	-- Unspeakable Power
 					qa( 43929),	-- Vantus Mastery
-					q( 43556),	-- Vault of the Wardens
-					q( 44260),	-- Vault of the Wardens
-					q( 44261),	-- Vault of the Wardens
-					q( 39341),	-- Vault of the Wardens: Demon's Bile
-					q( 43379),	-- Velen's Vision
-					q( 40249),	-- Vengeance Will Be Ours
-					q( 41863),	-- Vengeance Will Be Ours
+					q(43556),	-- Vault of the Wardens
+					q(44260),	-- Vault of the Wardens
+					q(44261),	-- Vault of the Wardens
+					q(39341),	-- Vault of the Wardens: Demon's Bile
+					q(43379),	-- Velen's Vision
+					q(40249),	-- Vengeance Will Be Ours
+					q(41863),	-- Vengeance Will Be Ours
 					qa( 46314),	-- Vengeance: Seeking Kor'vas
-					q( 40178),	-- Vestment Opportunity
-					q( 44259),	-- Violet Hold
-					q( 44058),	-- Volpin the Elusive
-					q( 40031),	-- Vrykul Herblore
-					q( 47591),	-- Wanna Buy a Lamp?
-					q( 44487),	-- Waterlogged Tome
-					q( 38576),	-- We Meet at Light's Hope
-					q( 39336),	-- We Need More Powder!
-					q( 40408),	-- Weapons of Legend
-					q( 40618),	-- Weapons of Legend
+					q(40178),	-- Vestment Opportunity
+					q(44259),	-- Violet Hold
+					q(44058),	-- Volpin the Elusive
+					q(40031),	-- Vrykul Herblore
+					q(47591),	-- Wanna Buy a Lamp?
+					q(44487),	-- Waterlogged Tome
+					q(38576),	-- We Meet at Light's Hope
+					q(39336),	-- We Need More Powder!
+					q(40408),	-- Weapons of Legend
+					q(40618),	-- Weapons of Legend
 					qg(106655, qh(48054)),	-- Weigh Anchor (Blacksmithing)
 					qa( 48053),	-- Weigh Anchor
-					q( 44115),	-- Welcome to Legion!
-					q( 40415),	-- Well Spent Time
-					q( 43015),	-- What Winstone Suggests
-					q( 45813),	-- Where Art Thou, My Sweet
-					q( 43469),	-- Where In the World is Mathias?
+					q(44115),	-- Welcome to Legion!
+					q(40415),	-- Well Spent Time
+					q(43015),	-- What Winstone Suggests
+					q(45813),	-- Where Art Thou, My Sweet
+					q(43469),	-- Where In the World is Mathias?
 					qa( 45190),	-- Where it's Thinnest
-					q( 38956),	-- Where's Lyndras Again?
-					q( 38964),	-- Where's Lyndras Now?
-					q( 39605),	-- Where's Lyndras: Downward Spiral
-					q( 39667),	-- Where's Lyndras: Leyflame Larceny
+					q(38956),	-- Where's Lyndras Again?
+					q(38964),	-- Where's Lyndras Now?
+					q(39605),	-- Where's Lyndras: Downward Spiral
+					q(39667),	-- Where's Lyndras: Leyflame Larceny
 					qh( 39602),	-- Where's Lyndras: Sewer Sleuthing
-					q( 38954),	-- Where's Lyndras?
-					q( 46206),	-- Whispers of a Frightened World
-					q( 47330),	-- Whispers of a Frightened World
-					q( 46835),	-- Whispers of a Frightened World Tracking
-					q( 40868),	-- Wibbly-Wobbly, Timey-Wimey
-					q( 45179),	-- Win the Crowd
+					q(38954),	-- Where's Lyndras?
+					q(46206),	-- Whispers of a Frightened World
+					q(47330),	-- Whispers of a Frightened World
+					q(46835),	-- Whispers of a Frightened World Tracking
+					q(40868),	-- Wibbly-Wobbly, Timey-Wimey
+					q(45179),	-- Win the Crowd
 					qa( 47019),	-- Windwalker: Rumblings Near Feltotem
-					q( 40064),	-- Woody Seed Cluster
-					q( 44195),	-- Workorders for Armaments
-					q( 41174),	-- Worth Its Weight
-					q( 45908),	-- Xylem's Gift
-					q( 44006),	-- Your Fullest Potential														
+					q(40064),	-- Woody Seed Cluster
+					q(44195),	-- Workorders for Armaments
+					q(41174),	-- Worth Its Weight
+					q(45908),	-- Xylem's Gift
+					q(44006),	-- Your Fullest Potential														
 				}),	
 				n(-16, { 	-- Rares 
 					o(244965, { -- Sheddle's Chest
@@ -1832,104 +1832,104 @@ _.Zones =
 						}),	
 					})),
 					n(96979, { 	-- Bragund Brightlink <Mail Armor Merchant>
-						i( 50993),	-- Band of the Night Raven
-						i( 50980),	-- Blizzard Keeper's Mitts
-						i( 50979),	-- Logsplitters
-						i( 50971),	-- Mail of the Geyser
-						i( 50970),	-- Longstrider's Vest
-						i( 50992),	-- Waistband of Despair
-						i( 46212),	-- Conqueror's Worldbreaker Faceguard
-						i( 46211),	-- Conqueror's Worldbreaker Shoulderpads
-						i( 46210),	-- Conqueror's Worldbreaker Kilt
-						i( 46209),	-- Conqueror's Worldbreaker Helm
-						i( 46208),	-- Conqueror's Worldbreaker War-Kilt
-						i( 46207),	-- Conqueror's Worldbreaker Gloves
-						i( 46206),	-- Conqueror's Worldbreaker Hauberk
-						i( 46205),	-- Conqueror's Worldbreaker Chestguard
-						i( 46204),	-- Conqueror's Worldbreaker Spaulders
-						i( 46203),	-- Conqueror's Worldbreaker Shoulderguards
-						i( 45827),	-- Belt of the Ardent Marksman
-						i( 46201),	-- Conqueror's Worldbreaker Headpiece
-						i( 46200),	-- Conqueror's Worldbreaker Grips
-						i( 46199),	-- Conqueror's Worldbreaker Handguards
-						i( 46198),	-- Conqueror's Worldbreaker Tunic
-						i( 46145),	-- Conqueror's Scourgestalker Spaulders
-						i( 46144),	-- Conqueror's Scourgestalker Legguards
-						i( 46143),	-- Conqueror's Scourgestalker Headpiece
-						i( 46142),	-- Conqueror's Scourgestalker Handguards
-						i( 46141),	-- Conqueror's Scourgestalker Tunic
-						i( 45845),	-- Leggings of the Weary Mystic
-						i( 45844),	-- Leggings of the Tireless Sentry
-						i( 45837),	-- Gloves of Augury
-						i( 45836),	-- Gloves of Unerring Aim
-						i( 45828),	-- Windchill Binding
-						i( 46202),	-- Conqueror's Worldbreaker Legguards
-						i( 45363),	-- Valorous Scourgestalker Spaulders
-						i( 45416),	-- Valorous Worldbreaker War-Kilt
-						i( 45415),	-- Valorous Worldbreaker Shoulderguards
-						i( 45414),	-- Valorous Worldbreaker Grips
-						i( 45413),	-- Valorous Worldbreaker Chestguard
-						i( 45412),	-- Valorous Worldbreaker Faceguard
-						i( 45411),	-- Valorous Worldbreaker Hauberk
-						i( 45410),	-- Valorous Worldbreaker Shoulderpads
-						i( 45409),	-- Valorous Worldbreaker Kilt
-						i( 45408),	-- Valorous Worldbreaker Helm
-						i( 45406),	-- Valorous Worldbreaker Gloves
-						i( 45405),	-- Valorous Worldbreaker Tunic
-						i( 45404),	-- Valorous Worldbreaker Spaulders
-						i( 45403),	-- Valorous Worldbreaker Legguards
-						i( 45360),	-- Valorous Scourgestalker Handguards
-						i( 45361),	-- Valorous Scourgestalker Headpiece
-						i( 45362),	-- Valorous Scourgestalker Legguards
-						i( 45402),	-- Valorous Worldbreaker Headpiece				
-						i( 45364),	-- Valorous Scourgestalker Tunic
-						i( 45401),	-- Valorous Worldbreaker Handguards
-						i( 40515),	-- Valorous Earthshatter Gloves
-						i( 40506),	-- Valorous Cryptstalker Legguards
-						i( 40737),	-- Pigmented Clan Bindings
-						i( 40736),	-- Armguard of the Tower Archer
-						i( 40524),	-- Valorous Earthshatter Shoulderguards
-						i( 40523),	-- Valorous Earthshatter Chestguard
-						i( 40522),	-- Valorous Earthshatter War-Kilt
-						i( 40521),	-- Valorous Earthshatter Faceguard
-						i( 40520),	-- Valorous Earthshatter Grips
-						i( 40518),	-- Valorous Earthshatter Shoulderpads
-						i( 40517),	-- Valorous Earthshatter Kilt
-						i( 40516),	-- Valorous Earthshatter Helm
-						i( 40746),	-- Pack-Ice Striders
-						i( 40514),	-- Valorous Earthshatter Hauberk
-						i( 40513),	-- Valorous Earthshatter Spaulders
-						i( 40512),	-- Valorous Earthshatter Legguards
-						i( 40510),	-- Valorous Earthshatter Headpiece
-						i( 40509),	-- Valorous Earthshatter Handguards
-						i( 40508),	-- Valorous Earthshatter Tunic
-						i( 40507),	-- Valorous Cryptstalker Spaulders
-						i( 40747),	-- Treads of Coastal Wandering
-						i( 40505),	-- Valorous Cryptstalker Headpiece
-						i( 40504),	-- Valorous Cryptstalker Handguards
-						i( 40503),	-- Valorous Cryptstalker Tunic
-						i( 40692),	-- Vereesa's Silver Chain Belt
-						i( 39579),	-- Heroes' Cryptstalker Tunic
-						i( 40693),	-- Beadwork Belt of Shamanic Vision
-						i( 39604),	-- Heroes' Earthshatter Shoulderguards
-						i( 39603),	-- Heroes' Earthshatter War-Kilt
-						i( 39602),	-- Heroes' Earthshatter Faceguard
-						i( 39601),	-- Heroes' Earthshatter Grips
-						i( 39597),	-- Heroes' Earthshatter Chestguard
-						i( 39596),	-- Heroes' Earthshatter Shoulderpads
-						i( 39595),	-- Heroes' Earthshatter Kilt
-						i( 39594),	-- Heroes' Earthshatter Helm
-						i( 39593),	-- Heroes' Earthshatter Gloves
-						i( 39592),	-- Heroes' Earthshatter Hauberk
-						i( 39591),	-- Heroes' Earthshatter Handguards
-						i( 39590),	-- Heroes' Earthshatter Spaulders
-						i( 39589),	-- Heroes' Earthshatter Legguards
-						i( 39588),	-- Heroes' Earthshatter Tunic
-						i( 39583),	-- Heroes' Earthshatter Headpiece
-						i( 39582),	-- Heroes' Cryptstalker Handguards
-						i( 39581),	-- Heroes' Cryptstalker Spaulders
-						i( 39580),	-- Heroes' Cryptstalker Legguards
-						i( 39578),	-- Heroes' Cryptstalker Headpiece
+						i(50993),	-- Band of the Night Raven
+						i(50980),	-- Blizzard Keeper's Mitts
+						i(50979),	-- Logsplitters
+						i(50971),	-- Mail of the Geyser
+						i(50970),	-- Longstrider's Vest
+						i(50992),	-- Waistband of Despair
+						i(46212),	-- Conqueror's Worldbreaker Faceguard
+						i(46211),	-- Conqueror's Worldbreaker Shoulderpads
+						i(46210),	-- Conqueror's Worldbreaker Kilt
+						i(46209),	-- Conqueror's Worldbreaker Helm
+						i(46208),	-- Conqueror's Worldbreaker War-Kilt
+						i(46207),	-- Conqueror's Worldbreaker Gloves
+						i(46206),	-- Conqueror's Worldbreaker Hauberk
+						i(46205),	-- Conqueror's Worldbreaker Chestguard
+						i(46204),	-- Conqueror's Worldbreaker Spaulders
+						i(46203),	-- Conqueror's Worldbreaker Shoulderguards
+						i(45827),	-- Belt of the Ardent Marksman
+						i(46201),	-- Conqueror's Worldbreaker Headpiece
+						i(46200),	-- Conqueror's Worldbreaker Grips
+						i(46199),	-- Conqueror's Worldbreaker Handguards
+						i(46198),	-- Conqueror's Worldbreaker Tunic
+						i(46145),	-- Conqueror's Scourgestalker Spaulders
+						i(46144),	-- Conqueror's Scourgestalker Legguards
+						i(46143),	-- Conqueror's Scourgestalker Headpiece
+						i(46142),	-- Conqueror's Scourgestalker Handguards
+						i(46141),	-- Conqueror's Scourgestalker Tunic
+						i(45845),	-- Leggings of the Weary Mystic
+						i(45844),	-- Leggings of the Tireless Sentry
+						i(45837),	-- Gloves of Augury
+						i(45836),	-- Gloves of Unerring Aim
+						i(45828),	-- Windchill Binding
+						i(46202),	-- Conqueror's Worldbreaker Legguards
+						i(45363),	-- Valorous Scourgestalker Spaulders
+						i(45416),	-- Valorous Worldbreaker War-Kilt
+						i(45415),	-- Valorous Worldbreaker Shoulderguards
+						i(45414),	-- Valorous Worldbreaker Grips
+						i(45413),	-- Valorous Worldbreaker Chestguard
+						i(45412),	-- Valorous Worldbreaker Faceguard
+						i(45411),	-- Valorous Worldbreaker Hauberk
+						i(45410),	-- Valorous Worldbreaker Shoulderpads
+						i(45409),	-- Valorous Worldbreaker Kilt
+						i(45408),	-- Valorous Worldbreaker Helm
+						i(45406),	-- Valorous Worldbreaker Gloves
+						i(45405),	-- Valorous Worldbreaker Tunic
+						i(45404),	-- Valorous Worldbreaker Spaulders
+						i(45403),	-- Valorous Worldbreaker Legguards
+						i(45360),	-- Valorous Scourgestalker Handguards
+						i(45361),	-- Valorous Scourgestalker Headpiece
+						i(45362),	-- Valorous Scourgestalker Legguards
+						i(45402),	-- Valorous Worldbreaker Headpiece				
+						i(45364),	-- Valorous Scourgestalker Tunic
+						i(45401),	-- Valorous Worldbreaker Handguards
+						i(40515),	-- Valorous Earthshatter Gloves
+						i(40506),	-- Valorous Cryptstalker Legguards
+						i(40737),	-- Pigmented Clan Bindings
+						i(40736),	-- Armguard of the Tower Archer
+						i(40524),	-- Valorous Earthshatter Shoulderguards
+						i(40523),	-- Valorous Earthshatter Chestguard
+						i(40522),	-- Valorous Earthshatter War-Kilt
+						i(40521),	-- Valorous Earthshatter Faceguard
+						i(40520),	-- Valorous Earthshatter Grips
+						i(40518),	-- Valorous Earthshatter Shoulderpads
+						i(40517),	-- Valorous Earthshatter Kilt
+						i(40516),	-- Valorous Earthshatter Helm
+						i(40746),	-- Pack-Ice Striders
+						i(40514),	-- Valorous Earthshatter Hauberk
+						i(40513),	-- Valorous Earthshatter Spaulders
+						i(40512),	-- Valorous Earthshatter Legguards
+						i(40510),	-- Valorous Earthshatter Headpiece
+						i(40509),	-- Valorous Earthshatter Handguards
+						i(40508),	-- Valorous Earthshatter Tunic
+						i(40507),	-- Valorous Cryptstalker Spaulders
+						i(40747),	-- Treads of Coastal Wandering
+						i(40505),	-- Valorous Cryptstalker Headpiece
+						i(40504),	-- Valorous Cryptstalker Handguards
+						i(40503),	-- Valorous Cryptstalker Tunic
+						i(40692),	-- Vereesa's Silver Chain Belt
+						i(39579),	-- Heroes' Cryptstalker Tunic
+						i(40693),	-- Beadwork Belt of Shamanic Vision
+						i(39604),	-- Heroes' Earthshatter Shoulderguards
+						i(39603),	-- Heroes' Earthshatter War-Kilt
+						i(39602),	-- Heroes' Earthshatter Faceguard
+						i(39601),	-- Heroes' Earthshatter Grips
+						i(39597),	-- Heroes' Earthshatter Chestguard
+						i(39596),	-- Heroes' Earthshatter Shoulderpads
+						i(39595),	-- Heroes' Earthshatter Kilt
+						i(39594),	-- Heroes' Earthshatter Helm
+						i(39593),	-- Heroes' Earthshatter Gloves
+						i(39592),	-- Heroes' Earthshatter Hauberk
+						i(39591),	-- Heroes' Earthshatter Handguards
+						i(39590),	-- Heroes' Earthshatter Spaulders
+						i(39589),	-- Heroes' Earthshatter Legguards
+						i(39588),	-- Heroes' Earthshatter Tunic
+						i(39583),	-- Heroes' Earthshatter Headpiece
+						i(39582),	-- Heroes' Cryptstalker Handguards
+						i(39581),	-- Heroes' Cryptstalker Spaulders
+						i(39580),	-- Heroes' Cryptstalker Legguards
+						i(39578),	-- Heroes' Cryptstalker Headpiece
 					}),
 					n(96479, { 	-- Breanni <Pet Supplies>
 						i(44822), -- Albino Snake Pet
@@ -2246,106 +2246,106 @@ _.Zones =
 						i(45057), -- Wind-Up Train Wreck Toy
 					}),
 					n(96976, { 	-- Cloth Merchant <Cloth Armor Merchant>
-						i( 51258),	-- Sanctified Crimson Acolyte Pants
-						i( 51284),	-- Sanctified Bloodmage Shoulderpads
-						i( 51281),	-- Sanctified Bloodmage Hood
-						i( 51280),	-- Sanctified Bloodmage Gloves
-						i( 51264),	-- Sanctified Crimson Acolyte Shoulderpads
-						i( 51263),	-- Sanctified Crimson Acolyte Robe
-						i( 51262),	-- Sanctified Crimson Acolyte Leggings
-						i( 51261),	-- Sanctified Crimson Acolyte Hood
-						i( 51260),	-- Sanctified Crimson Acolyte Gloves
-						i( 51259),	-- Sanctified Crimson Acolyte Raiments
-						i( 51282),	-- Sanctified Bloodmage Leggings
-						i( 51257),	-- Sanctified Crimson Acolyte Mantle
-						i( 51256),	-- Sanctified Crimson Acolyte Handwraps
-						i( 51255),	-- Sanctified Crimson Acolyte Cowl
-						i( 51234),	-- Sanctified Dark Coven Shoulderpads
-						i( 51233),	-- Sanctified Dark Coven Robe
-						i( 51232),	-- Sanctified Dark Coven Leggings
-						i( 51231),	-- Sanctified Dark Coven Hood
-						i( 51230),	-- Sanctified Dark Coven Gloves
-						i( 51283),	-- Sanctified Bloodmage Robe
-						i( 51155),	-- Sanctified Bloodmage Shoulderpads
-						i( 51208),	-- Sanctified Dark Coven Hood
-						i( 51207),	-- Sanctified Dark Coven Leggings
-						i( 51206),	-- Sanctified Dark Coven Robe
-						i( 51205),	-- Sanctified Dark Coven Shoulderpads
-						i( 51184),	-- Sanctified Crimson Acolyte Cowl
-						i( 51183),	-- Sanctified Crimson Acolyte Handwraps
-						i( 51182),	-- Sanctified Crimson Acolyte Mantle
-						i( 51181),	-- Sanctified Crimson Acolyte Pants
-						i( 51180),	-- Sanctified Crimson Acolyte Raiments
-						i( 51179),	-- Sanctified Crimson Acolyte Gloves
-						i( 51178),	-- Sanctified Crimson Acolyte Hood
-						i( 51177),	-- Sanctified Crimson Acolyte Leggings
-						i( 51176),	-- Sanctified Crimson Acolyte Robe
-						i( 51175),	-- Sanctified Crimson Acolyte Shoulderpads
-						i( 51159),	-- Sanctified Bloodmage Gloves
-						i( 51158),	-- Sanctified Bloodmage Hood
-						i( 51157),	-- Sanctified Bloodmage Leggings
-						i( 51156),	-- Sanctified Bloodmage Robe
-						i( 51209),	-- Sanctified Dark Coven Gloves
-						i( 50240),	-- Dark Coven Gloves
-						i( 50241),	-- Dark Coven Hood
-						i( 50242),	-- Dark Coven Leggings
-						i( 50243),	-- Dark Coven Robe
-						i( 50244),	-- Dark Coven Shoulderpads
-						i( 50275),	-- Bloodmage Gloves
-						i( 50276),	-- Bloodmage Hood
-						i( 50277),	-- Bloodmage Leggings
-						i( 50278),	-- Bloodmage Robe
-						i( 50279),	-- Bloodmage Shoulderpads
-						i( 50391),	-- Crimson Acolyte Handwraps
-						i( 50392),	-- Crimson Acolyte Cowl
-						i( 50393),	-- Crimson Acolyte Pants
-						i( 50394),	-- Crimson Acolyte Raiments
-						i( 50396),	-- Crimson Acolyte Mantle
-						i( 50765),	-- Crimson Acolyte Hood
-						i( 50766),	-- Crimson Acolyte Gloves
-						i( 50767),	-- Crimson Acolyte Shoulderpads
-						i( 50768),	-- Crimson Acolyte Robe
-						i( 50769),	-- Crimson Acolyte Leggings
-						a(i( 47914)),	-- Velen's Cowl of Conquest
-						a(i( 47749)),	-- Khadgar's Robe of Conquest
-						h(i( 48100)),	-- Zabra's Raiments of Conquest
-						h(i( 48099)),	-- Zabra's Pants of Conquest
-						h(i( 48098)),	-- Zabra's Circlet of Conquest
-						h(i( 48097)),	-- Zabra's Handwraps of Conquest
-						a(i( 48076)),	-- Velen's Mantle of Conquest
-						a(i( 48075)),	-- Velen's Raiments of Conquest
-						a(i( 48074)),	-- Velen's Pants of Conquest
-						a(i( 48073)),	-- Velen's Circlet of Conquest
-						a(i( 48072)),	-- Velen's Handwraps of Conquest
-						h(i( 48071)),	-- Zabra's Shoulderpads of Conquest
-						h(i( 48070)),	-- Zabra's Robe of Conquest
-						h(i( 48069)),	-- Zabra's Leggings of Conquest
-						h(i( 48068)),	-- Zabra's Cowl of Conquest
-						h(i( 48067)),	-- Zabra's Gloves of Conquest
-						a(i( 47982)),	-- Velen's Gloves of Conquest
-						a(i( 47981)),	-- Velen's Shoulderpads of Conquest
-						a(i( 47980)),	-- Velen's Leggings of Conquest
-						a(i( 47936)),	-- Velen's Robe of Conquest
-						h(i( 48101)),	-- Zabra's Mantle of Conquest
-						h(i( 47802)),	-- Gul'dan's Gloves of Conquest
-						h(i( 47801)),	-- Gul'dan's Hood of Conquest
-						h(i( 47800)),	-- Gul'dan's Leggings of Conquest
-						h(i( 47799)),	-- Gul'dan's Robe of Conquest
-						h(i( 47798)),	-- Gul'dan's Shoulderpads of Conquest
-						a(i( 47787)),	-- Kel'Thuzad's Shoulderpads of Conquest
-						a(i( 47786)),	-- Kel'Thuzad's Robe of Conquest
-						a(i( 47785)),	-- Kel'Thuzad's Leggings of Conquest
-						a(i( 47784)),	-- Kel'Thuzad's Hood of Conquest
-						a(i( 47783)),	-- Kel'Thuzad's Gloves of Conquest
-						h(i( 47777)),	-- Sunstrider's Shoulderpads of Conquest
-						h(i( 47776)),	-- Sunstrider's Robe of Conquest
-						h(i( 47775)),	-- Sunstrider's Leggings of Conquest
-						h(i( 47774)),	-- Sunstrider's Hood of Conquest
-						h(i( 47773)),	-- Sunstrider's Gauntlets of Conquest
-						a(i( 47752)),	-- Khadgar's Gauntlets of Conquest
-						a(i( 47751)),	-- Khadgar's Shoulderpads of Conquest
-						a(i( 47750)),	-- Khadgar's Leggings of Conquest
-						a(i( 47748)),	-- Khadgar's Hood of Conquest
+						i(51258),	-- Sanctified Crimson Acolyte Pants
+						i(51284),	-- Sanctified Bloodmage Shoulderpads
+						i(51281),	-- Sanctified Bloodmage Hood
+						i(51280),	-- Sanctified Bloodmage Gloves
+						i(51264),	-- Sanctified Crimson Acolyte Shoulderpads
+						i(51263),	-- Sanctified Crimson Acolyte Robe
+						i(51262),	-- Sanctified Crimson Acolyte Leggings
+						i(51261),	-- Sanctified Crimson Acolyte Hood
+						i(51260),	-- Sanctified Crimson Acolyte Gloves
+						i(51259),	-- Sanctified Crimson Acolyte Raiments
+						i(51282),	-- Sanctified Bloodmage Leggings
+						i(51257),	-- Sanctified Crimson Acolyte Mantle
+						i(51256),	-- Sanctified Crimson Acolyte Handwraps
+						i(51255),	-- Sanctified Crimson Acolyte Cowl
+						i(51234),	-- Sanctified Dark Coven Shoulderpads
+						i(51233),	-- Sanctified Dark Coven Robe
+						i(51232),	-- Sanctified Dark Coven Leggings
+						i(51231),	-- Sanctified Dark Coven Hood
+						i(51230),	-- Sanctified Dark Coven Gloves
+						i(51283),	-- Sanctified Bloodmage Robe
+						i(51155),	-- Sanctified Bloodmage Shoulderpads
+						i(51208),	-- Sanctified Dark Coven Hood
+						i(51207),	-- Sanctified Dark Coven Leggings
+						i(51206),	-- Sanctified Dark Coven Robe
+						i(51205),	-- Sanctified Dark Coven Shoulderpads
+						i(51184),	-- Sanctified Crimson Acolyte Cowl
+						i(51183),	-- Sanctified Crimson Acolyte Handwraps
+						i(51182),	-- Sanctified Crimson Acolyte Mantle
+						i(51181),	-- Sanctified Crimson Acolyte Pants
+						i(51180),	-- Sanctified Crimson Acolyte Raiments
+						i(51179),	-- Sanctified Crimson Acolyte Gloves
+						i(51178),	-- Sanctified Crimson Acolyte Hood
+						i(51177),	-- Sanctified Crimson Acolyte Leggings
+						i(51176),	-- Sanctified Crimson Acolyte Robe
+						i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
+						i(51159),	-- Sanctified Bloodmage Gloves
+						i(51158),	-- Sanctified Bloodmage Hood
+						i(51157),	-- Sanctified Bloodmage Leggings
+						i(51156),	-- Sanctified Bloodmage Robe
+						i(51209),	-- Sanctified Dark Coven Gloves
+						i(50240),	-- Dark Coven Gloves
+						i(50241),	-- Dark Coven Hood
+						i(50242),	-- Dark Coven Leggings
+						i(50243),	-- Dark Coven Robe
+						i(50244),	-- Dark Coven Shoulderpads
+						i(50275),	-- Bloodmage Gloves
+						i(50276),	-- Bloodmage Hood
+						i(50277),	-- Bloodmage Leggings
+						i(50278),	-- Bloodmage Robe
+						i(50279),	-- Bloodmage Shoulderpads
+						i(50391),	-- Crimson Acolyte Handwraps
+						i(50392),	-- Crimson Acolyte Cowl
+						i(50393),	-- Crimson Acolyte Pants
+						i(50394),	-- Crimson Acolyte Raiments
+						i(50396),	-- Crimson Acolyte Mantle
+						i(50765),	-- Crimson Acolyte Hood
+						i(50766),	-- Crimson Acolyte Gloves
+						i(50767),	-- Crimson Acolyte Shoulderpads
+						i(50768),	-- Crimson Acolyte Robe
+						i(50769),	-- Crimson Acolyte Leggings
+						a(i(47914)),	-- Velen's Cowl of Conquest
+						a(i(47749)),	-- Khadgar's Robe of Conquest
+						h(i(48100)),	-- Zabra's Raiments of Conquest
+						h(i(48099)),	-- Zabra's Pants of Conquest
+						h(i(48098)),	-- Zabra's Circlet of Conquest
+						h(i(48097)),	-- Zabra's Handwraps of Conquest
+						a(i(48076)),	-- Velen's Mantle of Conquest
+						a(i(48075)),	-- Velen's Raiments of Conquest
+						a(i(48074)),	-- Velen's Pants of Conquest
+						a(i(48073)),	-- Velen's Circlet of Conquest
+						a(i(48072)),	-- Velen's Handwraps of Conquest
+						h(i(48071)),	-- Zabra's Shoulderpads of Conquest
+						h(i(48070)),	-- Zabra's Robe of Conquest
+						h(i(48069)),	-- Zabra's Leggings of Conquest
+						h(i(48068)),	-- Zabra's Cowl of Conquest
+						h(i(48067)),	-- Zabra's Gloves of Conquest
+						a(i(47982)),	-- Velen's Gloves of Conquest
+						a(i(47981)),	-- Velen's Shoulderpads of Conquest
+						a(i(47980)),	-- Velen's Leggings of Conquest
+						a(i(47936)),	-- Velen's Robe of Conquest
+						h(i(48101)),	-- Zabra's Mantle of Conquest
+						h(i(47802)),	-- Gul'dan's Gloves of Conquest
+						h(i(47801)),	-- Gul'dan's Hood of Conquest
+						h(i(47800)),	-- Gul'dan's Leggings of Conquest
+						h(i(47799)),	-- Gul'dan's Robe of Conquest
+						h(i(47798)),	-- Gul'dan's Shoulderpads of Conquest
+						a(i(47787)),	-- Kel'Thuzad's Shoulderpads of Conquest
+						a(i(47786)),	-- Kel'Thuzad's Robe of Conquest
+						a(i(47785)),	-- Kel'Thuzad's Leggings of Conquest
+						a(i(47784)),	-- Kel'Thuzad's Hood of Conquest
+						a(i(47783)),	-- Kel'Thuzad's Gloves of Conquest
+						h(i(47777)),	-- Sunstrider's Shoulderpads of Conquest
+						h(i(47776)),	-- Sunstrider's Robe of Conquest
+						h(i(47775)),	-- Sunstrider's Leggings of Conquest
+						h(i(47774)),	-- Sunstrider's Hood of Conquest
+						h(i(47773)),	-- Sunstrider's Gauntlets of Conquest
+						a(i(47752)),	-- Khadgar's Gauntlets of Conquest
+						a(i(47751)),	-- Khadgar's Shoulderpads of Conquest
+						a(i(47750)),	-- Khadgar's Leggings of Conquest
+						a(i(47748)),	-- Khadgar's Hood of Conquest
 					}),
 					n(108825, {	-- Conjurer Margoss
 						["groups"] = {
@@ -2372,28 +2372,28 @@ _.Zones =
 					}),
 					n(96812, { 	-- Elizabeth Ross <Tabard Vendor>
 						["groups"] = {
-							i( 31404),	-- Green Trophy Tabard of the Illidari
-							i( 31405),	-- Purple Trophy Tabard of the Illidari
-							i( 40643),	-- Tabard of the Achiever
-							i( 43300),	-- Loremaster's Colors
-							i( 43349),	-- Tabard of Brute Force
-							i( 35279),	-- Tabard of Summer Skies
-							i( 35280),	-- Tabard of Summer Flames
-							i( 25549),	-- Blood Knight Tabard
-							i( 22999),	-- Tabard of the Argent Dawn
-							i( 31778),	-- Lower City Tabard
-							i( 31775),	-- Sporeggar Tabard
-							i( 31776),	-- Consortium Tabard
-							i( 31777),	-- Keepers of Time Tabard
-							i( 31779),	-- Aldor Tabard
-							i( 31780),	-- Scryers Tabard
-							i( 31781),	-- Sha'tar Tabard
-							i( 31804),	-- Cenarion Expedition Tabard
-							i( 32445),	-- Skyguard Tabard
-							i( 32828),	-- Ogri'la Tabard
-							i( 35221),	-- Tabard of the Shattered Sun
-							i( 43348),	-- Tabard of the Explorer
-							i(  5976),	-- Guild Tabard
+							i(31404),	-- Green Trophy Tabard of the Illidari
+							i(31405),	-- Purple Trophy Tabard of the Illidari
+							i(40643),	-- Tabard of the Achiever
+							i(43300),	-- Loremaster's Colors
+							i(43349),	-- Tabard of Brute Force
+							i(35279),	-- Tabard of Summer Skies
+							i(35280),	-- Tabard of Summer Flames
+							i(25549),	-- Blood Knight Tabard
+							i(22999),	-- Tabard of the Argent Dawn
+							i(31778),	-- Lower City Tabard
+							i(31775),	-- Sporeggar Tabard
+							i(31776),	-- Consortium Tabard
+							i(31777),	-- Keepers of Time Tabard
+							i(31779),	-- Aldor Tabard
+							i(31780),	-- Scryers Tabard
+							i(31781),	-- Sha'tar Tabard
+							i(31804),	-- Cenarion Expedition Tabard
+							i(32445),	-- Skyguard Tabard
+							i(32828),	-- Ogri'la Tabard
+							i(35221),	-- Tabard of the Shattered Sun
+							i(43348),	-- Tabard of the Explorer
+							i(5976),	-- Guild Tabard
 							{			-- Competitor's Tabard
 							["itemID"] = 36941,
 							["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
@@ -3519,106 +3519,106 @@ _.Zones =
 						}),	
 					})),
 					n(96980, { 	-- Matilda Brightlink <Mail Armor Merchant>
-						a(i( 48250)),	-- Windrunner's Headpiece of Conquest
-						a(i( 48251)),	-- Windrunner's Tunic of Conquest
-						a(i( 48252)),	-- Windrunner's Legguards of Conquest
-						a(i( 48253)),	-- Windrunner's Spaulders of Conquest
-						a(i( 48254)),	-- Windrunner's Handguards of Conquest
-						h(i( 48275)),	-- Windrunner's Tunic of Conquest
-						h(i( 48276)),	-- Windrunner's Handguards of Conquest
-						h(i( 48277)),	-- Windrunner's Headpiece of Conquest
-						h(i( 48278)),	-- Windrunner's Legguards of Conquest
-						h(i( 48279)),	-- Windrunner's Spaulders of Conquest
-						a(i( 48280)),	-- Nobundo's Headpiece of Conquest
-						a(i( 48281)),	-- Nobundo's Tunic of Conquest
-						a(i( 48282)),	-- Nobundo's Legguards of Conquest
-						a(i( 48283)),	-- Nobundo's Spaulders of Conquest
-						a(i( 48284)),	-- Nobundo's Handguards of Conquest
-						h(i( 48295)),	-- Thrall's Tunic of Conquest
-						h(i( 48296)),	-- Thrall's Handguards of Conquest
-						h(i( 48297)),	-- Thrall's Headpiece of Conquest
-						h(i( 48298)),	-- Thrall's Legguards of Conquest
-						h(i( 48299)),	-- Thrall's Spaulders of Conquest
-						a(i( 48310)),	-- Nobundo's Hauberk of Conquest
-						a(i( 48312)),	-- Nobundo's Gloves of Conquest
-						a(i( 48313)),	-- Nobundo's Helm of Conquest
-						a(i( 48314)),	-- Nobundo's Kilt of Conquest
-						a(i( 48315)),	-- Nobundo's Shoulderpads of Conquest
-						h(i( 48336)),	-- Thrall's Hauberk of Conquest
-						h(i( 48337)),	-- Thrall's Gloves of Conquest
-						h(i( 48338)),	-- Thrall's Helm of Conquest
-						h(i( 48339)),	-- Thrall's Kilt of Conquest
-						h(i( 48340)),	-- Thrall's Shoulderpads of Conquest
-						a(i( 48341)),	-- Nobundo's Chestguard of Conquest
-						a(i( 48342)),	-- Nobundo's Grips of Conquest
-						a(i( 48343)),	-- Nobundo's Faceguard of Conquest
-						a(i( 48344)),	-- Nobundo's War-Kilt of Conquest
-						a(i( 48345)),	-- Nobundo's Shoulderguards of Conquest
-						h(i( 48366)),	-- Thrall's Chestguard of Conquest
-						h(i( 48367)),	-- Thrall's Grips of Conquest
-						h(i( 48368)),	-- Thrall's Faceguard of Conquest
-						h(i( 48369)),	-- Thrall's War-Kilt of Conquest
-						h(i( 48370)),	-- Thrall's Shoulderguards of Conquest
-						i( 50114),	-- Ahn'Kahar Blood Hunter's Handguards
-						i( 50115),	-- Ahn'Kahar Blood Hunter's Headpiece
-						i( 50116),	-- Ahn'Kahar Blood Hunter's Legguards
-						i( 50117),	-- Ahn'Kahar Blood Hunter's Spaulders
-						i( 50118),	-- Ahn'Kahar Blood Hunter's Tunic
-						i( 50830),	-- Frost Witch's Chestguard
-						i( 50831),	-- Frost Witch's Grips
-						i( 50832),	-- Frost Witch's Faceguard
-						i( 50833),	-- Frost Witch's War-Kilt
-						i( 50834),	-- Frost Witch's Shoulderguards
-						i( 50835),	-- Frost Witch's Tunic
-						i( 50836),	-- Frost Witch's Handguards
-						i( 50837),	-- Frost Witch's Headpiece
-						i( 50838),	-- Frost Witch's Legguards
-						i( 50839),	-- Frost Witch's Spaulders
-						i( 50841),	-- Frost Witch's Hauberk
-						i( 50842),	-- Frost Witch's Gloves
-						i( 50843),	-- Frost Witch's Helm
-						i( 50844),	-- Frost Witch's Kilt
-						i( 50845),	-- Frost Witch's Shoulderpads
-						i( 51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
-						i( 51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
-						i( 51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
-						i( 51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
-						i( 51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
-						i( 51190),	-- Sanctified Frost Witch's Tunic
-						i( 51191),	-- Sanctified Frost Witch's Handguards
-						i( 51192),	-- Sanctified Frost Witch's Headpiece
-						i( 51193),	-- Sanctified Frost Witch's Legguards
-						i( 51194),	-- Sanctified Frost Witch's Spaulders
-						i( 51195),	-- Sanctified Frost Witch's Chestguard
-						i( 51196),	-- Sanctified Frost Witch's Grips
-						i( 51197),	-- Sanctified Frost Witch's Faceguard
-						i( 51198),	-- Sanctified Frost Witch's War-Kilt
-						i( 51199),	-- Sanctified Frost Witch's Shoulderguards
-						i( 51200),	-- Sanctified Frost Witch's Hauberk
-						i( 51201),	-- Sanctified Frost Witch's Gloves
-						i( 51202),	-- Sanctified Frost Witch's Helm
-						i( 51203),	-- Sanctified Frost Witch's Kilt
-						i( 51204),	-- Sanctified Frost Witch's Shoulderpads
-						i( 51235),	-- Sanctified Frost Witch's Shoulderpads
-						i( 51236),	-- Sanctified Frost Witch's Kilt
-						i( 51237),	-- Sanctified Frost Witch's Helm
-						i( 51238),	-- Sanctified Frost Witch's Gloves
-						i( 51239),	-- Sanctified Frost Witch's Hauberk
-						i( 51240),	-- Sanctified Frost Witch's Shoulderguards
-						i( 51241),	-- Sanctified Frost Witch's War-Kilt
-						i( 51242),	-- Sanctified Frost Witch's Faceguard
-						i( 51243),	-- Sanctified Frost Witch's Grips
-						i( 51244),	-- Sanctified Frost Witch's Chestguard
-						i( 51245),	-- Sanctified Frost Witch's Spaulders
-						i( 51246),	-- Sanctified Frost Witch's Legguards
-						i( 51247),	-- Sanctified Frost Witch's Headpiece
-						i( 51248),	-- Sanctified Frost Witch's Handguards
-						i( 51249),	-- Sanctified Frost Witch's Tunic
-						i( 51285),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
-						i( 51286),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
-						i( 51287),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
-						i( 51288),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
-						i( 51289),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
+						a(i(48250)),	-- Windrunner's Headpiece of Conquest
+						a(i(48251)),	-- Windrunner's Tunic of Conquest
+						a(i(48252)),	-- Windrunner's Legguards of Conquest
+						a(i(48253)),	-- Windrunner's Spaulders of Conquest
+						a(i(48254)),	-- Windrunner's Handguards of Conquest
+						h(i(48275)),	-- Windrunner's Tunic of Conquest
+						h(i(48276)),	-- Windrunner's Handguards of Conquest
+						h(i(48277)),	-- Windrunner's Headpiece of Conquest
+						h(i(48278)),	-- Windrunner's Legguards of Conquest
+						h(i(48279)),	-- Windrunner's Spaulders of Conquest
+						a(i(48280)),	-- Nobundo's Headpiece of Conquest
+						a(i(48281)),	-- Nobundo's Tunic of Conquest
+						a(i(48282)),	-- Nobundo's Legguards of Conquest
+						a(i(48283)),	-- Nobundo's Spaulders of Conquest
+						a(i(48284)),	-- Nobundo's Handguards of Conquest
+						h(i(48295)),	-- Thrall's Tunic of Conquest
+						h(i(48296)),	-- Thrall's Handguards of Conquest
+						h(i(48297)),	-- Thrall's Headpiece of Conquest
+						h(i(48298)),	-- Thrall's Legguards of Conquest
+						h(i(48299)),	-- Thrall's Spaulders of Conquest
+						a(i(48310)),	-- Nobundo's Hauberk of Conquest
+						a(i(48312)),	-- Nobundo's Gloves of Conquest
+						a(i(48313)),	-- Nobundo's Helm of Conquest
+						a(i(48314)),	-- Nobundo's Kilt of Conquest
+						a(i(48315)),	-- Nobundo's Shoulderpads of Conquest
+						h(i(48336)),	-- Thrall's Hauberk of Conquest
+						h(i(48337)),	-- Thrall's Gloves of Conquest
+						h(i(48338)),	-- Thrall's Helm of Conquest
+						h(i(48339)),	-- Thrall's Kilt of Conquest
+						h(i(48340)),	-- Thrall's Shoulderpads of Conquest
+						a(i(48341)),	-- Nobundo's Chestguard of Conquest
+						a(i(48342)),	-- Nobundo's Grips of Conquest
+						a(i(48343)),	-- Nobundo's Faceguard of Conquest
+						a(i(48344)),	-- Nobundo's War-Kilt of Conquest
+						a(i(48345)),	-- Nobundo's Shoulderguards of Conquest
+						h(i(48366)),	-- Thrall's Chestguard of Conquest
+						h(i(48367)),	-- Thrall's Grips of Conquest
+						h(i(48368)),	-- Thrall's Faceguard of Conquest
+						h(i(48369)),	-- Thrall's War-Kilt of Conquest
+						h(i(48370)),	-- Thrall's Shoulderguards of Conquest
+						i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
+						i(50115),	-- Ahn'Kahar Blood Hunter's Headpiece
+						i(50116),	-- Ahn'Kahar Blood Hunter's Legguards
+						i(50117),	-- Ahn'Kahar Blood Hunter's Spaulders
+						i(50118),	-- Ahn'Kahar Blood Hunter's Tunic
+						i(50830),	-- Frost Witch's Chestguard
+						i(50831),	-- Frost Witch's Grips
+						i(50832),	-- Frost Witch's Faceguard
+						i(50833),	-- Frost Witch's War-Kilt
+						i(50834),	-- Frost Witch's Shoulderguards
+						i(50835),	-- Frost Witch's Tunic
+						i(50836),	-- Frost Witch's Handguards
+						i(50837),	-- Frost Witch's Headpiece
+						i(50838),	-- Frost Witch's Legguards
+						i(50839),	-- Frost Witch's Spaulders
+						i(50841),	-- Frost Witch's Hauberk
+						i(50842),	-- Frost Witch's Gloves
+						i(50843),	-- Frost Witch's Helm
+						i(50844),	-- Frost Witch's Kilt
+						i(50845),	-- Frost Witch's Shoulderpads
+						i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
+						i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
+						i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
+						i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
+						i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
+						i(51190),	-- Sanctified Frost Witch's Tunic
+						i(51191),	-- Sanctified Frost Witch's Handguards
+						i(51192),	-- Sanctified Frost Witch's Headpiece
+						i(51193),	-- Sanctified Frost Witch's Legguards
+						i(51194),	-- Sanctified Frost Witch's Spaulders
+						i(51195),	-- Sanctified Frost Witch's Chestguard
+						i(51196),	-- Sanctified Frost Witch's Grips
+						i(51197),	-- Sanctified Frost Witch's Faceguard
+						i(51198),	-- Sanctified Frost Witch's War-Kilt
+						i(51199),	-- Sanctified Frost Witch's Shoulderguards
+						i(51200),	-- Sanctified Frost Witch's Hauberk
+						i(51201),	-- Sanctified Frost Witch's Gloves
+						i(51202),	-- Sanctified Frost Witch's Helm
+						i(51203),	-- Sanctified Frost Witch's Kilt
+						i(51204),	-- Sanctified Frost Witch's Shoulderpads
+						i(51235),	-- Sanctified Frost Witch's Shoulderpads
+						i(51236),	-- Sanctified Frost Witch's Kilt
+						i(51237),	-- Sanctified Frost Witch's Helm
+						i(51238),	-- Sanctified Frost Witch's Gloves
+						i(51239),	-- Sanctified Frost Witch's Hauberk
+						i(51240),	-- Sanctified Frost Witch's Shoulderguards
+						i(51241),	-- Sanctified Frost Witch's War-Kilt
+						i(51242),	-- Sanctified Frost Witch's Faceguard
+						i(51243),	-- Sanctified Frost Witch's Grips
+						i(51244),	-- Sanctified Frost Witch's Chestguard
+						i(51245),	-- Sanctified Frost Witch's Spaulders
+						i(51246),	-- Sanctified Frost Witch's Legguards
+						i(51247),	-- Sanctified Frost Witch's Headpiece
+						i(51248),	-- Sanctified Frost Witch's Handguards
+						i(51249),	-- Sanctified Frost Witch's Tunic
+						i(51285),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
+						i(51286),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
+						i(51287),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
+						i(51288),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
+						i(51289),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
 					}),
 					n(92489, { 	-- Mei Francis <Exotic Mounts>
 						h(i(25475)), -- Blue Wind Rider
@@ -3660,202 +3660,202 @@ _.Zones =
 						i(40699),	-- Handbook of Obscure Remedies
 					}),
 					n(96975, { 	-- Paldesse <Cloth Armor Merchant>	
-						i( 50997),	-- Circle of Ossus
-						i( 50984),	-- Gloves of Ambivalence
-						i( 50983),	-- Gloves of False Gestures
-						i( 50975),	-- Ermine Coronation Robes
-						i( 50974),	-- Meteor Chaser's Raiment
-						i( 50996),	-- Belt of Omission
-						i( 46197),	-- Conqueror's Cowl of Sanctification
-						i( 46195),	-- Conqueror's Leggings of Sanctification
-						i( 46193),	-- Conqueror's Robe of Sanctification
-						i( 46190),	-- Conqueror's Shoulderpads of Sanctification
-						i( 46188),	-- Conqueror's Gloves of Sanctification
-						i( 46172),	-- Conqueror's Circlet of Sanctification
-						i( 46170),	-- Conqueror's Pants of Sanctification
-						i( 46168),	-- Conqueror's Raiments of Sanctification
-						i( 45831),	-- Sash of Potent Incantations
-						i( 46163),	-- Conqueror's Handwraps of Sanctification
-						i( 46140),	-- Conqueror's Deathbringer Hood
-						i( 46139),	-- Conqueror's Deathbringer Leggings
-						i( 46137),	-- Conqueror's Deathbringer Robe
-						i( 46136),	-- Conqueror's Deathbringer Shoulderpads
-						i( 46135),	-- Conqueror's Deathbringer Gloves
-						i( 46134),	-- Conqueror's Kirin Tor Shoulderpads
-						i( 46133),	-- Conqueror's Kirin Tor Leggings
-						i( 46132),	-- Conqueror's Kirin Tor Gauntlets
-						i( 46130),	-- Conqueror's Kirin Tor Tunic
-						i( 46129),	-- Conqueror's Kirin Tor Hood
-						i( 45848),	-- Legwraps of the Master Conjurer
-						i( 45840),	-- Touch of the Occult
-						i( 46165),	-- Conqueror's Mantle of Sanctification
-						i( 46131),	-- Valorous Kirin Tor Gauntlets
-						i( 45368),	-- Valorous Kirin Tor Tunic
-						i( 45422),	-- Valorous Deathbringer Shoulderpads
-						i( 45421),	-- Valorous Deathbringer Robe
-						i( 45420),	-- Valorous Deathbringer Leggings
-						i( 45419),	-- Valorous Deathbringer Gloves
-						i( 45417),	-- Valorous Deathbringer Hood
-						i( 45395),	-- Valorous Raiments of Sanctification
-						i( 45394),	-- Valorous Pants of Sanctification
-						i( 45393),	-- Valorous Mantle of Sanctification
-						i( 45392),	-- Valorous Handwraps of Sanctification
-						i( 45391),	-- Valorous Circlet of Sanctification
-						i( 45390),	-- Valorous Shoulderpads of Sanctification
-						i( 45389),	-- Valorous Robe of Sanctification
-						i( 45388),	-- Valorous Leggings of Sanctification
-						i( 45387),	-- Valorous Gloves of Sanctification
-						i( 45365),	-- Valorous Kirin Tor Hood
-						i( 45367),	-- Valorous Kirin Tor Leggings
-						i( 45386),	-- Valorous Cowl of Sanctification
-						i( 45369),	-- Valorous Kirin Tor Shoulderpads
-						i( 40447),	-- Valorous Crown of Faith
-						i( 40418),	-- Valorous Frostfire Robe
-						i( 40740),	-- Wraps of the Astral Traveler
-						i( 40459),	-- Valorous Mantle of Faith
-						i( 40458),	-- Valorous Raiments of Faith
-						i( 40457),	-- Valorous Pants of Faith
-						i( 40456),	-- Valorous Circlet of Faith
-						i( 40454),	-- Valorous Handwraps of Faith
-						i( 40450),	-- Valorous Shoulderpads of Faith
-						i( 40449),	-- Valorous Robe of Faith
-						i( 40448),	-- Valorous Leggings of Faith
-						i( 40750),	-- Xintor's Expeditionary Boots
-						i( 40445),	-- Valorous Gloves of Faith
-						i( 40424),	-- Valorous Plagueheart Shoulderpads
-						i( 40423),	-- Valorous Plagueheart Robe
-						i( 40422),	-- Valorous Plagueheart Leggings
-						i( 40421),	-- Valorous Plagueheart Circlet
-						i( 40420),	-- Valorous Plagueheart Gloves
-						i( 40419),	-- Valorous Frostfire Shoulderpads
-						i( 40751),	-- Slippers of the Holy Light
-						i( 40417),	-- Valorous Frostfire Leggings
-						i( 40416),	-- Valorous Frostfire Circlet
-						i( 40415),	-- Valorous Frostfire Gloves
-						i( 40696),	-- Plush Sash of Guzbah
-						i( 39492),	-- Heroes' Frostfire Robe
-						i( 40697),	-- Elegant Temple Gardens' Girdle
-						i( 39530),	-- Heroes' Handwraps of Faith
-						i( 39529),	-- Heroes' Mantle of Faith
-						i( 39528),	-- Heroes' Pants of Faith
-						i( 39523),	-- Heroes' Raiments of Faith
-						i( 39521),	-- Heroes' Circlet of Faith
-						i( 39519),	-- Heroes' Gloves of Faith
-						i( 39518),	-- Heroes' Shoulderpads of Faith
-						i( 39517),	-- Heroes' Leggings of Faith
-						i( 39515),	-- Heroes' Robe of Faith
-						i( 39514),	-- Heroes' Crown of Faith
-						i( 39500),	-- Heroes' Plagueheart Gloves
-						i( 39499),	-- Heroes' Plagueheart Shoulderpads
-						i( 39498),	-- Heroes' Plagueheart Leggings
-						i( 39497),	-- Heroes' Plagueheart Robe
-						i( 39496),	-- Heroes' Plagueheart Circlet
-						i( 39495),	-- Heroes' Frostfire Gloves
-						i( 39494),	-- Heroes' Frostfire Shoulderpads
-						i( 39493),	-- Heroes' Frostfire Leggings
-						i( 39491),	-- Heroes' Frostfire Circlet
+						i(50997),	-- Circle of Ossus
+						i(50984),	-- Gloves of Ambivalence
+						i(50983),	-- Gloves of False Gestures
+						i(50975),	-- Ermine Coronation Robes
+						i(50974),	-- Meteor Chaser's Raiment
+						i(50996),	-- Belt of Omission
+						i(46197),	-- Conqueror's Cowl of Sanctification
+						i(46195),	-- Conqueror's Leggings of Sanctification
+						i(46193),	-- Conqueror's Robe of Sanctification
+						i(46190),	-- Conqueror's Shoulderpads of Sanctification
+						i(46188),	-- Conqueror's Gloves of Sanctification
+						i(46172),	-- Conqueror's Circlet of Sanctification
+						i(46170),	-- Conqueror's Pants of Sanctification
+						i(46168),	-- Conqueror's Raiments of Sanctification
+						i(45831),	-- Sash of Potent Incantations
+						i(46163),	-- Conqueror's Handwraps of Sanctification
+						i(46140),	-- Conqueror's Deathbringer Hood
+						i(46139),	-- Conqueror's Deathbringer Leggings
+						i(46137),	-- Conqueror's Deathbringer Robe
+						i(46136),	-- Conqueror's Deathbringer Shoulderpads
+						i(46135),	-- Conqueror's Deathbringer Gloves
+						i(46134),	-- Conqueror's Kirin Tor Shoulderpads
+						i(46133),	-- Conqueror's Kirin Tor Leggings
+						i(46132),	-- Conqueror's Kirin Tor Gauntlets
+						i(46130),	-- Conqueror's Kirin Tor Tunic
+						i(46129),	-- Conqueror's Kirin Tor Hood
+						i(45848),	-- Legwraps of the Master Conjurer
+						i(45840),	-- Touch of the Occult
+						i(46165),	-- Conqueror's Mantle of Sanctification
+						i(46131),	-- Valorous Kirin Tor Gauntlets
+						i(45368),	-- Valorous Kirin Tor Tunic
+						i(45422),	-- Valorous Deathbringer Shoulderpads
+						i(45421),	-- Valorous Deathbringer Robe
+						i(45420),	-- Valorous Deathbringer Leggings
+						i(45419),	-- Valorous Deathbringer Gloves
+						i(45417),	-- Valorous Deathbringer Hood
+						i(45395),	-- Valorous Raiments of Sanctification
+						i(45394),	-- Valorous Pants of Sanctification
+						i(45393),	-- Valorous Mantle of Sanctification
+						i(45392),	-- Valorous Handwraps of Sanctification
+						i(45391),	-- Valorous Circlet of Sanctification
+						i(45390),	-- Valorous Shoulderpads of Sanctification
+						i(45389),	-- Valorous Robe of Sanctification
+						i(45388),	-- Valorous Leggings of Sanctification
+						i(45387),	-- Valorous Gloves of Sanctification
+						i(45365),	-- Valorous Kirin Tor Hood
+						i(45367),	-- Valorous Kirin Tor Leggings
+						i(45386),	-- Valorous Cowl of Sanctification
+						i(45369),	-- Valorous Kirin Tor Shoulderpads
+						i(40447),	-- Valorous Crown of Faith
+						i(40418),	-- Valorous Frostfire Robe
+						i(40740),	-- Wraps of the Astral Traveler
+						i(40459),	-- Valorous Mantle of Faith
+						i(40458),	-- Valorous Raiments of Faith
+						i(40457),	-- Valorous Pants of Faith
+						i(40456),	-- Valorous Circlet of Faith
+						i(40454),	-- Valorous Handwraps of Faith
+						i(40450),	-- Valorous Shoulderpads of Faith
+						i(40449),	-- Valorous Robe of Faith
+						i(40448),	-- Valorous Leggings of Faith
+						i(40750),	-- Xintor's Expeditionary Boots
+						i(40445),	-- Valorous Gloves of Faith
+						i(40424),	-- Valorous Plagueheart Shoulderpads
+						i(40423),	-- Valorous Plagueheart Robe
+						i(40422),	-- Valorous Plagueheart Leggings
+						i(40421),	-- Valorous Plagueheart Circlet
+						i(40420),	-- Valorous Plagueheart Gloves
+						i(40419),	-- Valorous Frostfire Shoulderpads
+						i(40751),	-- Slippers of the Holy Light
+						i(40417),	-- Valorous Frostfire Leggings
+						i(40416),	-- Valorous Frostfire Circlet
+						i(40415),	-- Valorous Frostfire Gloves
+						i(40696),	-- Plush Sash of Guzbah
+						i(39492),	-- Heroes' Frostfire Robe
+						i(40697),	-- Elegant Temple Gardens' Girdle
+						i(39530),	-- Heroes' Handwraps of Faith
+						i(39529),	-- Heroes' Mantle of Faith
+						i(39528),	-- Heroes' Pants of Faith
+						i(39523),	-- Heroes' Raiments of Faith
+						i(39521),	-- Heroes' Circlet of Faith
+						i(39519),	-- Heroes' Gloves of Faith
+						i(39518),	-- Heroes' Shoulderpads of Faith
+						i(39517),	-- Heroes' Leggings of Faith
+						i(39515),	-- Heroes' Robe of Faith
+						i(39514),	-- Heroes' Crown of Faith
+						i(39500),	-- Heroes' Plagueheart Gloves
+						i(39499),	-- Heroes' Plagueheart Shoulderpads
+						i(39498),	-- Heroes' Plagueheart Leggings
+						i(39497),	-- Heroes' Plagueheart Robe
+						i(39496),	-- Heroes' Plagueheart Circlet
+						i(39495),	-- Heroes' Frostfire Gloves
+						i(39494),	-- Heroes' Frostfire Shoulderpads
+						i(39493),	-- Heroes' Frostfire Leggings
+						i(39491),	-- Heroes' Frostfire Circlet
 					}),
 					n(96978, { 	-- Rafael Langrom <Leather Armor Merchant>
-						a(i( 48102)),	-- Malfurion's Headpiece of Conquest
-						a(i( 48129)),	-- Malfurion's Robe of Conquest
-						a(i( 48130)),	-- Malfurion's Leggings of Conquest
-						a(i( 48131)),	-- Malfurion's Spaulders of Conquest
-						a(i( 48132)),	-- Malfurion's Handguards of Conquest
-						h(i( 48153)),	-- Runetotem's Handguards of Conquest
-						h(i( 48154)),	-- Runetotem's Headpiece of Conquest
-						h(i( 48155)),	-- Runetotem's Leggings of Conquest
-						h(i( 48156)),	-- Runetotem's Robe of Conquest
-						h(i( 48157)),	-- Runetotem's Spaulders of Conquest
-						a(i( 48158)),	-- Malfurion's Cover of Conquest
-						a(i( 48159)),	-- Malfurion's Vestments of Conquest
-						a(i( 48160)),	-- Malfurion's Trousers of Conquest
-						a(i( 48161)),	-- Malfurion's Mantle of Conquest
-						a(i( 48162)),	-- Malfurion's Gloves of Conquest
-						h(i( 48183)),	-- Runetotem's Gloves of Conquest
-						h(i( 48184)),	-- Runetotem's Cover of Conquest
-						h(i( 48185)),	-- Runetotem's Trousers of Conquest
-						h(i( 48186)),	-- Runetotem's Vestments of Conquest
-						h(i( 48187)),	-- Runetotem's Mantle of Conquest
-						h(i( 48188)),	-- Runetotem's Headguard of Conquest
-						h(i( 48189)),	-- Runetotem's Raiments of Conquest
-						h(i( 48190)),	-- Runetotem's Legguards of Conquest
-						h(i( 48191)),	-- Runetotem's Shoulderpads of Conquest
-						h(i( 48192)),	-- Runetotem's Handgrips of Conquest
-						a(i( 48213)),	-- Malfurion's Handgrips of Conquest
-						a(i( 48214)),	-- Malfurion's Headguard of Conquest
-						a(i( 48215)),	-- Malfurion's Legguards of Conquest
-						a(i( 48216)),	-- Malfurion's Raiments of Conquest
-						a(i( 48217)),	-- Malfurion's Shoulderpads of Conquest
-						a(i( 48218)),	-- VanCleef's Helmet of Conquest
-						a(i( 48219)),	-- VanCleef's Breastplate of Conquest
-						a(i( 48220)),	-- VanCleef's Legplates of Conquest
-						a(i( 48221)),	-- VanCleef's Pauldrons of Conquest
-						a(i( 48222)),	-- VanCleef's Gauntlets of Conquest
-						h(i( 48243)),	-- Garona's Breastplate of Conquest
-						h(i( 48244)),	-- Garona's Gauntlets of Conquest
-						h(i( 48245)),	-- Garona's Helmet of Conquest
-						h(i( 48246)),	-- Garona's Legplates of Conquest
-						h(i( 48247)),	-- Garona's Pauldrons of Conquest
-						i( 50087),	-- Shadowblade Breastplate
-						i( 50088),	-- Shadowblade Gauntlets
-						i( 50089),	-- Shadowblade Helmet
-						i( 50090),	-- Shadowblade Legplates
-						i( 50105),	-- Shadowblade Pauldrons
-						i( 50106),	-- Lasherweave Robes
-						i( 50107),	-- Lasherweave Gauntlets
-						i( 50108),	-- Lasherweave Helmet
-						i( 50109),	-- Lasherweave Legplates
-						i( 50113),	-- Lasherweave Pauldrons
-						i( 50819),	-- Lasherweave Mantle
-						i( 50820),	-- Lasherweave Trousers
-						i( 50821),	-- Lasherweave Cover
-						i( 50822),	-- Lasherweave Gloves
-						i( 50823),	-- Lasherweave Vestment
-						i( 50824),	-- Lasherweave Shoulderpads
-						i( 50825),	-- Lasherweave Legguards
-						i( 50826),	-- Lasherweave Headguard
-						i( 50827),	-- Lasherweave Handgrips
-						i( 50828),	-- Lasherweave Raiment
-						i( 51135),	-- Sanctified Lasherweave Pauldrons
-						i( 51136),	-- Sanctified Lasherweave Legplates
-						i( 51137),	-- Sanctified Lasherweave Helmet
-						i( 51138),	-- Sanctified Lasherweave Gauntlets
-						i( 51139),	-- Sanctified Lasherweave Robes
-						i( 51140),	-- Sanctified Lasherweave Shoulderpads
-						i( 51141),	-- Sanctified Lasherweave Raiment
-						i( 51142),	-- Sanctified Lasherweave Legguards
-						i( 51143),	-- Sanctified Lasherweave Headguard
-						i( 51144),	-- Sanctified Lasherweave Handgrips
-						i( 51145),	-- Sanctified Lasherweave Vestment
-						i( 51146),	-- Sanctified Lasherweave Trousers
-						i( 51147),	-- Sanctified Lasherweave Mantle
-						i( 51148),	-- Sanctified Lasherweave Gloves
-						i( 51149),	-- Sanctified Lasherweave Cover
-						i( 51185),	-- Sanctified Shadowblade Pauldrons
-						i( 51186),	-- Sanctified Shadowblade Legplates
-						i( 51187),	-- Sanctified Shadowblade Helmet
-						i( 51188),	-- Sanctified Shadowblade Gauntlets
-						i( 51189),	-- Sanctified Shadowblade Breastplate
-						i( 51250),	-- Sanctified Shadowblade Breastplate
-						i( 51251),	-- Sanctified Shadowblade Gauntlets
-						i( 51252),	-- Sanctified Shadowblade Helmet
-						i( 51253),	-- Sanctified Shadowblade Legplates
-						i( 51254),	-- Sanctified Shadowblade Pauldrons
-						i( 51290),	-- Sanctified Lasherweave Cover
-						i( 51291),	-- Sanctified Lasherweave Gloves
-						i( 51292),	-- Sanctified Lasherweave Mantle
-						i( 51293),	-- Sanctified Lasherweave Trousers
-						i( 51294),	-- Sanctified Lasherweave Vestment
-						i( 51295),	-- Sanctified Lasherweave Handgrips
-						i( 51296),	-- Sanctified Lasherweave Headguard
-						i( 51297),	-- Sanctified Lasherweave Legguards
-						i( 51298),	-- Sanctified Lasherweave Raiment
-						i( 51299),	-- Sanctified Lasherweave Shoulderpads
-						i( 51300),	-- Sanctified Lasherweave Robes
-						i( 51301),	-- Sanctified Lasherweave Gauntlets
-						i( 51302),	-- Sanctified Lasherweave Helmet
-						i( 51303),	-- Sanctified Lasherweave Legplates
-						i( 51304),	-- Sanctified Lasherweave Pauldrons
+						a(i(48102)),	-- Malfurion's Headpiece of Conquest
+						a(i(48129)),	-- Malfurion's Robe of Conquest
+						a(i(48130)),	-- Malfurion's Leggings of Conquest
+						a(i(48131)),	-- Malfurion's Spaulders of Conquest
+						a(i(48132)),	-- Malfurion's Handguards of Conquest
+						h(i(48153)),	-- Runetotem's Handguards of Conquest
+						h(i(48154)),	-- Runetotem's Headpiece of Conquest
+						h(i(48155)),	-- Runetotem's Leggings of Conquest
+						h(i(48156)),	-- Runetotem's Robe of Conquest
+						h(i(48157)),	-- Runetotem's Spaulders of Conquest
+						a(i(48158)),	-- Malfurion's Cover of Conquest
+						a(i(48159)),	-- Malfurion's Vestments of Conquest
+						a(i(48160)),	-- Malfurion's Trousers of Conquest
+						a(i(48161)),	-- Malfurion's Mantle of Conquest
+						a(i(48162)),	-- Malfurion's Gloves of Conquest
+						h(i(48183)),	-- Runetotem's Gloves of Conquest
+						h(i(48184)),	-- Runetotem's Cover of Conquest
+						h(i(48185)),	-- Runetotem's Trousers of Conquest
+						h(i(48186)),	-- Runetotem's Vestments of Conquest
+						h(i(48187)),	-- Runetotem's Mantle of Conquest
+						h(i(48188)),	-- Runetotem's Headguard of Conquest
+						h(i(48189)),	-- Runetotem's Raiments of Conquest
+						h(i(48190)),	-- Runetotem's Legguards of Conquest
+						h(i(48191)),	-- Runetotem's Shoulderpads of Conquest
+						h(i(48192)),	-- Runetotem's Handgrips of Conquest
+						a(i(48213)),	-- Malfurion's Handgrips of Conquest
+						a(i(48214)),	-- Malfurion's Headguard of Conquest
+						a(i(48215)),	-- Malfurion's Legguards of Conquest
+						a(i(48216)),	-- Malfurion's Raiments of Conquest
+						a(i(48217)),	-- Malfurion's Shoulderpads of Conquest
+						a(i(48218)),	-- VanCleef's Helmet of Conquest
+						a(i(48219)),	-- VanCleef's Breastplate of Conquest
+						a(i(48220)),	-- VanCleef's Legplates of Conquest
+						a(i(48221)),	-- VanCleef's Pauldrons of Conquest
+						a(i(48222)),	-- VanCleef's Gauntlets of Conquest
+						h(i(48243)),	-- Garona's Breastplate of Conquest
+						h(i(48244)),	-- Garona's Gauntlets of Conquest
+						h(i(48245)),	-- Garona's Helmet of Conquest
+						h(i(48246)),	-- Garona's Legplates of Conquest
+						h(i(48247)),	-- Garona's Pauldrons of Conquest
+						i(50087),	-- Shadowblade Breastplate
+						i(50088),	-- Shadowblade Gauntlets
+						i(50089),	-- Shadowblade Helmet
+						i(50090),	-- Shadowblade Legplates
+						i(50105),	-- Shadowblade Pauldrons
+						i(50106),	-- Lasherweave Robes
+						i(50107),	-- Lasherweave Gauntlets
+						i(50108),	-- Lasherweave Helmet
+						i(50109),	-- Lasherweave Legplates
+						i(50113),	-- Lasherweave Pauldrons
+						i(50819),	-- Lasherweave Mantle
+						i(50820),	-- Lasherweave Trousers
+						i(50821),	-- Lasherweave Cover
+						i(50822),	-- Lasherweave Gloves
+						i(50823),	-- Lasherweave Vestment
+						i(50824),	-- Lasherweave Shoulderpads
+						i(50825),	-- Lasherweave Legguards
+						i(50826),	-- Lasherweave Headguard
+						i(50827),	-- Lasherweave Handgrips
+						i(50828),	-- Lasherweave Raiment
+						i(51135),	-- Sanctified Lasherweave Pauldrons
+						i(51136),	-- Sanctified Lasherweave Legplates
+						i(51137),	-- Sanctified Lasherweave Helmet
+						i(51138),	-- Sanctified Lasherweave Gauntlets
+						i(51139),	-- Sanctified Lasherweave Robes
+						i(51140),	-- Sanctified Lasherweave Shoulderpads
+						i(51141),	-- Sanctified Lasherweave Raiment
+						i(51142),	-- Sanctified Lasherweave Legguards
+						i(51143),	-- Sanctified Lasherweave Headguard
+						i(51144),	-- Sanctified Lasherweave Handgrips
+						i(51145),	-- Sanctified Lasherweave Vestment
+						i(51146),	-- Sanctified Lasherweave Trousers
+						i(51147),	-- Sanctified Lasherweave Mantle
+						i(51148),	-- Sanctified Lasherweave Gloves
+						i(51149),	-- Sanctified Lasherweave Cover
+						i(51185),	-- Sanctified Shadowblade Pauldrons
+						i(51186),	-- Sanctified Shadowblade Legplates
+						i(51187),	-- Sanctified Shadowblade Helmet
+						i(51188),	-- Sanctified Shadowblade Gauntlets
+						i(51189),	-- Sanctified Shadowblade Breastplate
+						i(51250),	-- Sanctified Shadowblade Breastplate
+						i(51251),	-- Sanctified Shadowblade Gauntlets
+						i(51252),	-- Sanctified Shadowblade Helmet
+						i(51253),	-- Sanctified Shadowblade Legplates
+						i(51254),	-- Sanctified Shadowblade Pauldrons
+						i(51290),	-- Sanctified Lasherweave Cover
+						i(51291),	-- Sanctified Lasherweave Gloves
+						i(51292),	-- Sanctified Lasherweave Mantle
+						i(51293),	-- Sanctified Lasherweave Trousers
+						i(51294),	-- Sanctified Lasherweave Vestment
+						i(51295),	-- Sanctified Lasherweave Handgrips
+						i(51296),	-- Sanctified Lasherweave Headguard
+						i(51297),	-- Sanctified Lasherweave Legguards
+						i(51298),	-- Sanctified Lasherweave Raiment
+						i(51299),	-- Sanctified Lasherweave Shoulderpads
+						i(51300),	-- Sanctified Lasherweave Robes
+						i(51301),	-- Sanctified Lasherweave Gauntlets
+						i(51302),	-- Sanctified Lasherweave Helmet
+						i(51303),	-- Sanctified Lasherweave Legplates
+						i(51304),	-- Sanctified Lasherweave Pauldrons
 					}),
 					n(93521, { 	-- Ranid Glowergold <Leatherworking & Skinning Supplies>
 						["groups"] = {
@@ -4195,104 +4195,104 @@ _.Zones =
 						i(40703),	-- Grasscutter
 					}),
 					n(96977, { 	-- Valerie Langrom <Leather Armor Merchant>
-						i( 50995),	-- Vengeful Noose
-						i( 50982),	-- Cat Burglar's Grips
-						i( 50981),	-- Gloves of the Great Horned Owl
-						i( 50973),	-- Vestments of Spruce and Fir
-						i( 50972),	-- Shadow Seeker's Tunic
-						i( 50994),	-- Belt of Petrified Ivy
-						i( 46196),	-- Conqueror's Nightsong Mantle
-						i( 46194),	-- Conqueror's Nightsong Vestments
-						i( 46192),	-- Conqueror's Nightsong Trousers
-						i( 46191),	-- Conqueror's Nightsong Cover
-						i( 46189),	-- Conqueror's Nightsong Gloves
-						i( 46187),	-- Conqueror's Nightsong Spaulders
-						i( 46186),	-- Conqueror's Nightsong Robe
-						i( 46185),	-- Conqueror's Nightsong Leggings
-						i( 46184),	-- Conqueror's Nightsong Headpiece
-						i( 46183),	-- Conqueror's Nightsong Handguards
-						i( 45829),	-- Belt of the Twilight Assassin
-						i( 46160),	-- Conqueror's Nightsong Legguards
-						i( 46159),	-- Conqueror's Nightsong Raiments
-						i( 46158),	-- Conqueror's Nightsong Handgrips
-						i( 46157),	-- Conqueror's Nightsong Shoulderpads
-						i( 46127),	-- Conqueror's Terrorblade Pauldrons
-						i( 46126),	-- Conqueror's Terrorblade Legplates
-						i( 46125),	-- Conqueror's Terrorblade Helmet
-						i( 46124),	-- Conqueror's Terrorblade Gauntlets
-						i( 46123),	-- Conqueror's Terrorblade Breastplate
-						i( 45847),	-- Wildstrider Legguards
-						i( 45846),	-- Leggings of Wavering Shadow
-						i( 45839),	-- Grips of the Secret Grove
-						i( 45838),	-- Gloves of the Blind Stalker
-						i( 45830),	-- Belt of the Living Thicket
-						i( 46161),	-- Conqueror's Nightsong Headguard
-						i( 45348),	-- Valorous Nightsong Robe
-						i( 46313),	-- Valorous Nightsong Cover
-						i( 45400),	-- Valorous Terrorblade Pauldrons
-						i( 45399),	-- Valorous Terrorblade Legplates
-						i( 45398),	-- Valorous Terrorblade Helmet
-						i( 45397),	-- Valorous Terrorblade Gauntlets
-						i( 45396),	-- Valorous Terrorblade Breastplate
-						i( 45359),	-- Valorous Nightsong Shoulderpads
-						i( 45358),	-- Valorous Nightsong Raiments
-						i( 45357),	-- Valorous Nightsong Legguards
-						i( 45356),	-- Valorous Nightsong Headguard
-						i( 45355),	-- Valorous Nightsong Handgrips
-						i( 45354),	-- Valorous Nightsong Vestments
-						i( 45353),	-- Valorous Nightsong Trousers
-						i( 45345),	-- Valorous Nightsong Handguards
-						i( 45346),	-- Valorous Nightsong Headpiece
-						i( 45347),	-- Valorous Nightsong Leggings
-						i( 45352),	-- Valorous Nightsong Mantle
-						i( 45349),	-- Valorous Nightsong Spaulders
-						i( 45351),	-- Valorous Nightsong Gloves
-						i( 40472),	-- Valorous Dreamwalker Handgrips
-						i( 40463),	-- Valorous Dreamwalker Robe
-						i( 40739),	-- Bands of the Great Tree
-						i( 40738),	-- Wristwraps of the Cutthroat
-						i( 40502),	-- Valorous Bonescythe Pauldrons
-						i( 40500),	-- Valorous Bonescythe Legplates
-						i( 40499),	-- Valorous Bonescythe Helmet
-						i( 40496),	-- Valorous Bonescythe Gauntlets
-						i( 40495),	-- Valorous Bonescythe Breastplate
-						i( 40494),	-- Valorous Dreamwalker Shoulderpads
-						i( 40493),	-- Valorous Dreamwalker Legguards
-						i( 40473),	-- Valorous Dreamwalker Headguard
-						i( 40748),	-- Boots of Captain Ellis
-						i( 40471),	-- Valorous Dreamwalker Raiments
-						i( 40470),	-- Valorous Dreamwalker Mantle
-						i( 40469),	-- Valorous Dreamwalker Vestments
-						i( 40468),	-- Valorous Dreamwalker Trousers
-						i( 40467),	-- Valorous Dreamwalker Cover
-						i( 40466),	-- Valorous Dreamwalker Gloves
-						i( 40465),	-- Valorous Dreamwalker Spaulders
-						i( 40749),	-- Rainey's Chewed Boots
-						i( 40462),	-- Valorous Dreamwalker Leggings
-						i( 40461),	-- Valorous Dreamwalker Headpiece
-						i( 40460),	-- Valorous Dreamwalker Handguards
-						i( 40694),	-- Jorach's Crocolisk Skin Belt
-						i( 39538),	-- Heroes' Dreamwalker Robe
-						i( 40695),	-- Vine Belt of the Woodland Dryad
-						i( 39565),	-- Heroes' Bonescythe Pauldrons
-						i( 39564),	-- Heroes' Bonescythe Legplates
-						i( 39561),	-- Heroes' Bonescythe Helmet
-						i( 39560),	-- Heroes' Bonescythe Gauntlets
-						i( 39558),	-- Heroes' Bonescythe Breastplate
-						i( 39557),	-- Heroes' Dreamwalker Handgrips
-						i( 39556),	-- Heroes' Dreamwalker Shoulderpads
-						i( 39555),	-- Heroes' Dreamwalker Legguards
-						i( 39554),	-- Heroes' Dreamwalker Raiments
-						i( 39553),	-- Heroes' Dreamwalker Headguard
-						i( 39548),	-- Heroes' Dreamwalker Mantle
-						i( 39547),	-- Heroes' Dreamwalker Vestments
-						i( 39546),	-- Heroes' Dreamwalker Trousers
-						i( 39545),	-- Heroes' Dreamwalker Cover
-						i( 39544),	-- Heroes' Dreamwalker Gloves
-						i( 39543),	-- Heroes' Dreamwalker Handguards
-						i( 39542),	-- Heroes' Dreamwalker Spaulders
-						i( 39539),	-- Heroes' Dreamwalker Leggings
-						i( 39531),	-- Heroes' Dreamwalker Headpiece
+						i(50995),	-- Vengeful Noose
+						i(50982),	-- Cat Burglar's Grips
+						i(50981),	-- Gloves of the Great Horned Owl
+						i(50973),	-- Vestments of Spruce and Fir
+						i(50972),	-- Shadow Seeker's Tunic
+						i(50994),	-- Belt of Petrified Ivy
+						i(46196),	-- Conqueror's Nightsong Mantle
+						i(46194),	-- Conqueror's Nightsong Vestments
+						i(46192),	-- Conqueror's Nightsong Trousers
+						i(46191),	-- Conqueror's Nightsong Cover
+						i(46189),	-- Conqueror's Nightsong Gloves
+						i(46187),	-- Conqueror's Nightsong Spaulders
+						i(46186),	-- Conqueror's Nightsong Robe
+						i(46185),	-- Conqueror's Nightsong Leggings
+						i(46184),	-- Conqueror's Nightsong Headpiece
+						i(46183),	-- Conqueror's Nightsong Handguards
+						i(45829),	-- Belt of the Twilight Assassin
+						i(46160),	-- Conqueror's Nightsong Legguards
+						i(46159),	-- Conqueror's Nightsong Raiments
+						i(46158),	-- Conqueror's Nightsong Handgrips
+						i(46157),	-- Conqueror's Nightsong Shoulderpads
+						i(46127),	-- Conqueror's Terrorblade Pauldrons
+						i(46126),	-- Conqueror's Terrorblade Legplates
+						i(46125),	-- Conqueror's Terrorblade Helmet
+						i(46124),	-- Conqueror's Terrorblade Gauntlets
+						i(46123),	-- Conqueror's Terrorblade Breastplate
+						i(45847),	-- Wildstrider Legguards
+						i(45846),	-- Leggings of Wavering Shadow
+						i(45839),	-- Grips of the Secret Grove
+						i(45838),	-- Gloves of the Blind Stalker
+						i(45830),	-- Belt of the Living Thicket
+						i(46161),	-- Conqueror's Nightsong Headguard
+						i(45348),	-- Valorous Nightsong Robe
+						i(46313),	-- Valorous Nightsong Cover
+						i(45400),	-- Valorous Terrorblade Pauldrons
+						i(45399),	-- Valorous Terrorblade Legplates
+						i(45398),	-- Valorous Terrorblade Helmet
+						i(45397),	-- Valorous Terrorblade Gauntlets
+						i(45396),	-- Valorous Terrorblade Breastplate
+						i(45359),	-- Valorous Nightsong Shoulderpads
+						i(45358),	-- Valorous Nightsong Raiments
+						i(45357),	-- Valorous Nightsong Legguards
+						i(45356),	-- Valorous Nightsong Headguard
+						i(45355),	-- Valorous Nightsong Handgrips
+						i(45354),	-- Valorous Nightsong Vestments
+						i(45353),	-- Valorous Nightsong Trousers
+						i(45345),	-- Valorous Nightsong Handguards
+						i(45346),	-- Valorous Nightsong Headpiece
+						i(45347),	-- Valorous Nightsong Leggings
+						i(45352),	-- Valorous Nightsong Mantle
+						i(45349),	-- Valorous Nightsong Spaulders
+						i(45351),	-- Valorous Nightsong Gloves
+						i(40472),	-- Valorous Dreamwalker Handgrips
+						i(40463),	-- Valorous Dreamwalker Robe
+						i(40739),	-- Bands of the Great Tree
+						i(40738),	-- Wristwraps of the Cutthroat
+						i(40502),	-- Valorous Bonescythe Pauldrons
+						i(40500),	-- Valorous Bonescythe Legplates
+						i(40499),	-- Valorous Bonescythe Helmet
+						i(40496),	-- Valorous Bonescythe Gauntlets
+						i(40495),	-- Valorous Bonescythe Breastplate
+						i(40494),	-- Valorous Dreamwalker Shoulderpads
+						i(40493),	-- Valorous Dreamwalker Legguards
+						i(40473),	-- Valorous Dreamwalker Headguard
+						i(40748),	-- Boots of Captain Ellis
+						i(40471),	-- Valorous Dreamwalker Raiments
+						i(40470),	-- Valorous Dreamwalker Mantle
+						i(40469),	-- Valorous Dreamwalker Vestments
+						i(40468),	-- Valorous Dreamwalker Trousers
+						i(40467),	-- Valorous Dreamwalker Cover
+						i(40466),	-- Valorous Dreamwalker Gloves
+						i(40465),	-- Valorous Dreamwalker Spaulders
+						i(40749),	-- Rainey's Chewed Boots
+						i(40462),	-- Valorous Dreamwalker Leggings
+						i(40461),	-- Valorous Dreamwalker Headpiece
+						i(40460),	-- Valorous Dreamwalker Handguards
+						i(40694),	-- Jorach's Crocolisk Skin Belt
+						i(39538),	-- Heroes' Dreamwalker Robe
+						i(40695),	-- Vine Belt of the Woodland Dryad
+						i(39565),	-- Heroes' Bonescythe Pauldrons
+						i(39564),	-- Heroes' Bonescythe Legplates
+						i(39561),	-- Heroes' Bonescythe Helmet
+						i(39560),	-- Heroes' Bonescythe Gauntlets
+						i(39558),	-- Heroes' Bonescythe Breastplate
+						i(39557),	-- Heroes' Dreamwalker Handgrips
+						i(39556),	-- Heroes' Dreamwalker Shoulderpads
+						i(39555),	-- Heroes' Dreamwalker Legguards
+						i(39554),	-- Heroes' Dreamwalker Raiments
+						i(39553),	-- Heroes' Dreamwalker Headguard
+						i(39548),	-- Heroes' Dreamwalker Mantle
+						i(39547),	-- Heroes' Dreamwalker Vestments
+						i(39546),	-- Heroes' Dreamwalker Trousers
+						i(39545),	-- Heroes' Dreamwalker Cover
+						i(39544),	-- Heroes' Dreamwalker Gloves
+						i(39543),	-- Heroes' Dreamwalker Handguards
+						i(39542),	-- Heroes' Dreamwalker Spaulders
+						i(39539),	-- Heroes' Dreamwalker Leggings
+						i(39531),	-- Heroes' Dreamwalker Headpiece
 					}),
 					nh(120687, { -- Violet Shadowmend <Gladiator Quartermaster>
 						gssh(1414, { -- Gladiator

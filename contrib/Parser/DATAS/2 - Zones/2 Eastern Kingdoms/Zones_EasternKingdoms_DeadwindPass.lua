@@ -9,7 +9,7 @@ _.Zones =
 				n(-25, { 	-- Pet Battle
 					p(1160), 	-- Arcane Eye
 					p(439), 	-- Restless Shadeling
-					qg(66522, q( 31915, {	-- Grand Master Lydia Accoste (non-daily)
+					qg(66522, q(31915, {	-- Grand Master Lydia Accoste (non-daily)
 						i(89125, {	-- Sack of Pet Supplies
 							i(89139),	-- TOY! Chain Pet Leash
 							i(37460),	-- TOY! Rope Pet Leash
@@ -33,10 +33,10 @@ _.Zones =
 						},
 						["classes"] = {6},
 					}))),
-					qg(113986, q( 44421)),	-- Anomalous Anomalies
-					qg( 18253, q( 11031)),	-- Archmage No More
-					qg( 18253, q( 11033)),	-- Assassin No More
-					qg(113986, q( 44500)),	-- Author! Author!
+					qg(113986, q(44421)),	-- Anomalous Anomalies
+					qg(18253, q(11031)),	-- Archmage No More
+					qg(18253, q(11033)),	-- Assassin No More
+					qg(113986, q(44500)),	-- Author! Author!
 --]]
 					ql(q(30109, {	-- Blood of the Betrayer (UNTESTED, NEEDS CONFIRMATION)
 						["groups"] = {
@@ -49,68 +49,68 @@ _.Zones =
 					qg(114550, qa(40717)),	-- Calling of the Council
 					qg(114631, qa(44684)),	-- Corruption Runs Deep
 					qg(114631, qa(44764)),	-- Demon in Disguise
-					qart(qg(100729, q( 40604, {	-- Disturbing the Past
+					qart(qg(100729, q(40604, {	-- Disturbing the Past
 						["groups"] = {
 						},
 						["classes"] = {9},
 					}))),
-					qart(qg(100729, q( 40835, {	-- Disturbing the Past
+					qart(qg(100729, q(40835, {	-- Disturbing the Past
 						["groups"] = {
 						},
 						["classes"] = {11},
 					}))),
-					qart(qg(100729, q( 40932, {	-- Disturbing the Past
+					qart(qg(100729, q(40932, {	-- Disturbing the Past
 						["groups"] = {
 						},
 						["classes"] = {6},
 					}))),
-					qg(114310, q( 44557)),	-- Finite Numbers
-					qart(qg(100323, q( 40931, {	-- Following the Curse
+					qg(114310, q(44557)),	-- Finite Numbers
+					qart(qg(100323, q(40931, {	-- Following the Curse
 						["groups"] = {
 						},
 						["classes"] = {6},
 					}))),
-					qart(qg(100323, q( 40588, {	-- Following the Curse
+					qart(qg(100323, q(40588, {	-- Following the Curse
 						["groups"] = {
 						},
 						["classes"] = {9},
 					}))),
-					qart(qg(100323, q( 40834, {	-- Following the Curse
+					qart(qg(100323, q(40834, {	-- Following the Curse
 						["groups"] = {
 						},
 						["classes"] = {11},
 					}))),
 					qdg(qg(114310, q(44734))),	-- Fragments of the Past
-					qg(101547, q( 40755)),	-- Hiding in the Stacks
-					qg(114310, q( 44683)),	-- Holding the Lines
+					qg(101547, q(40755)),	-- Hiding in the Stacks
+					qg(114310, q(44683)),	-- Holding the Lines
 					qdg(qg(18255, q(45296, {	-- No Bones About It
 					     ["groups"] = {
 						 },
 						 ["description"] = "This quest is offered after completion of 'Return to Karazhan: Clearing Out the Cobwebs.'",
 					}))),
-					qg(18253, q( 10731)),	-- Path of the Violet Assassin
-					qg(18253, q( 10729)),	-- Path of the Violet Mage
-					qg(18253, q( 10732)),	-- Path of the Violet Protector
-					qg(18253, q( 10730)),	-- Path of the Violet Restorer
-					qg(18253, q( 11032)),	-- Protector No More
+					qg(18253, q(10731)),	-- Path of the Violet Assassin
+					qg(18253, q(10729)),	-- Path of the Violet Mage
+					qg(18253, q(10732)),	-- Path of the Violet Protector
+					qg(18253, q(10730)),	-- Path of the Violet Restorer
+					qg(18253, q(11032)),	-- Protector No More
 					qg(114310, q(44685)),	-- Reclaiming the Ramparts
-					qg(18253, q( 11034)),	-- Restorer No More
-					qdg(qg(18255, q( 45291))),	-- Return to Karazhan: Book Wyrms
-					qdg(qg(18255, q( 45295))),	-- Return to Karazhan: Clearing Out the Cobwebs
-					qdg(qg(18255, q( 45294))),	-- Return to Karazhan: High Stress Hiatus
+					qg(18253, q(11034)),	-- Restorer No More
+					qdg(qg(18255, q(45291))),	-- Return to Karazhan: Book Wyrms
+					qdg(qg(18255, q(45295))),	-- Return to Karazhan: Clearing Out the Cobwebs
+					qdg(qg(18255, q(45294))),	-- Return to Karazhan: High Stress Hiatus
 					qdg(qg(114310, q(44735))),	-- Return to Karazhan: In the Eye of the Beholder					
 					n(114312, {	-- Moroes
 						["groups"] = {
 							i(142246, {	-- Broken Pocket Watch
-								qdg(q( 44803, {	-- Return to Karazhan: Master of the House
+								qdg(q(44803, {	-- Return to Karazhan: Master of the House
 									qdg(q(44865)),	-- Butler to the Great
 								})),
 							}),
 						},
 						["description"] = "This questline rewards Moroes as a Class Champion.|r",
 					}),
-					qdg(qg(18255, q( 45293))),	-- Return to Karazhan: New Shoes
-					qdg(qg(18255, q( 45292))),	-- Return to Karazhan: Rebooting the Cleaner
+					qdg(qg(18255, q(45293))),	-- Return to Karazhan: New Shoes
+					qdg(qg(18255, q(45292))),	-- Return to Karazhan: Rebooting the Cleaner
 					qart(qg(101282, q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
 						["groups"] = {
 						},
@@ -156,13 +156,13 @@ _.Zones =
 						},
 						["classes"] = {11},
 					}))),
-					qg(113655, q( 42970)),	-- The Diamond King
+					qg(113655, q(42970)),	-- The Diamond King
 					qart(qg(100729, q(40611, {	-- The Fate of Deadwind
 						["groups"] = {
 						},
 						["classes"] = {9},
 					}))),
-					qg(114310, q( 44733)),	-- The Power of Corruption
+					qg(114310, q(44733)),	-- The Power of Corruption
 					qart(qg(101282, q(40712, {	-- The Power Possessed (map blank
 						["groups"] = {
 						},

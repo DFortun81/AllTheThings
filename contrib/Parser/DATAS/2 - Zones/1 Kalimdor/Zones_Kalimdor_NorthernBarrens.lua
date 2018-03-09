@@ -94,7 +94,7 @@ _.Zones =
 							n(-17, { 	-- Quests
 								qg(20102, qh(29400)),	-- A Season for Celebration
 								qg(20102, qa(29074)),	-- A Season for Celebration
-								q( 12396),	-- Candy Bucket
+								q(12396),	-- Candy Bucket
 								qh(12374),	-- Candy Bucket
 								qh(29002),	-- Candy Bucket
 								qh(29003),	-- Candy Bucket
@@ -147,7 +147,7 @@ _.Zones =
 							i(89587),	-- PET! Porcupette
 						}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
 					})),					
-					qg(116781, q( 45423, {	-- Wailing Critters
+					qg(116781, q(45423, {	-- Wailing Critters
 						i(122457),	-- Ultimate Battle-Training Stone
 					})),
 					ach(11765, { -- Pet Battle Challenge: Wailing Caverns
@@ -220,8 +220,8 @@ _.Zones =
 					}),
 					qh(  855, {	-- Centuar Bracers
 						["groups"] = {
-							i( 59583),	-- Marauding Belt
-							i( 59584),	-- Foolhardy Bracers
+							i(59583),	-- Marauding Belt
+							i(59584),	-- Foolhardy Bracers
 							i(131221),	-- Marauding Cord
 						},
 						["qg"] = 3389,	-- Regthar Deathgate
@@ -231,7 +231,7 @@ _.Zones =
 						},
 						["qg"] = 3391,	-- Gazlowe
 					}),
-					q(  3861, {	-- CLUCK!
+					q(3861, {	-- CLUCK!
 						["groups"] = {
 						},
 						["qg"] = 620,	-- Chicken
@@ -243,9 +243,9 @@ _.Zones =
 					}),
 					qh(  899, {	-- Consumed by Hatred
 						["groups"] = {
-							i( 59539),	-- Mankrik's Old Wedding Garments
-							i( 59540),	-- Quilboar Skin Gloves
-							i( 59541),	-- Mankrik's Boar Slicer
+							i(59539),	-- Mankrik's Old Wedding Garments
+							i(59540),	-- Quilboar Skin Gloves
+							i(59541),	-- Mankrik's Boar Slicer
 							i(131227),	-- Quilboar Linked Gauntlets
 						},
 						["qg"] = 3432,	-- Mankrik
@@ -267,9 +267,9 @@ _.Zones =
 					}),
 					qh(13949, { -- Crossroads Caravan Pickup
 						["groups"] = {
-							i( 59536),	-- Bloodeye Belt
-							i( 59537),	-- Kranal's Vest
-							i( 59538),	-- Caravan Escort's Gloves
+							i(59536),	-- Bloodeye Belt
+							i(59537),	-- Kranal's Vest
+							i(59538),	-- Caravan Escort's Gloves
 							i(131324),	-- Kranal's Chestplate
 						},
 						["qg"] = 34258,	-- Halga Bloodeye
@@ -281,7 +281,7 @@ _.Zones =
 						["qg"] = 3429,	-- Thork
 						["sourceQuestID"] = { 851 },	-- Verog the Dervish
 					}),
---					q( 43289)),	-- Defend (LEGACY - pre-Legion invasions)
+--					q(43289)),	-- Defend (LEGACY - pre-Legion invasions)
 					qh(29112, {	-- Demon Seed
 						["groups"] = {
 							i(69219),	-- Sacrificial Blade
@@ -346,9 +346,9 @@ _.Zones =
 					}),
 					qh(14050, { -- Gazlowe's Fortune
 						["groups"] = {
-							i( 59560),	-- Bling Cane
-							i( 59561),	-- Vest of Fortune
-							i( 59562),	-- Dividend Leggings
+							i(59560),	-- Bling Cane
+							i(59561),	-- Vest of Fortune
+							i(59562),	-- Dividend Leggings
 							i(131329),	-- Hauberk of Fortune
 						},
 						["qg"] = 3391,	-- Gazlowe
@@ -362,8 +362,8 @@ _.Zones =
 					}),
 					qh(13621, {	-- Gorat's Vengeance
 						["group"] = {
-							i( 56644),	-- Gorat's Bequest
-							i( 56645),	-- Kadrak's Breastplate
+							i(56644),	-- Gorat's Bequest
+							i(56645),	-- Kadrak's Breastplate
 							i(131295),	-- Gorat's Spaulders of Satisfaction
 						},
 						["qg"] = 33263,	-- Dinah Halfmoon
@@ -401,9 +401,9 @@ _.Zones =
 					}),
 					qh(  852, {	-- Hezrul Bloodmark
 						["groups"] = {
-							i( 59585),	-- Lushwater Cloak
-							i( 59586),	-- Gloves of Unfocused Rage
-							i( 59587),	-- Fractured Belt
+							i(59585),	-- Lushwater Cloak
+							i(59586),	-- Gloves of Unfocused Rage
+							i(59587),	-- Fractured Belt
 							i(131220),	-- Hands of Unfocused Rage
 						},
 						["qg"] = 3389,	-- Regthar Deathgate
@@ -432,8 +432,8 @@ _.Zones =
 					}),
 					qh(13998, {	-- In Fungus We Trust
 						["groups"] = {
-							i( 59545),	-- Fuzzy Gloves
-							i( 59546),	-- Ointment-Coated Bracers
+							i(59545),	-- Fuzzy Gloves
+							i(59546),	-- Ointment-Coated Bracers
 							i(131328),	-- Ointment-Coated Handwraps
 						},
 						["qg"] = 3390,	-- Apothecary Helbrim
@@ -447,19 +447,19 @@ _.Zones =
 						["qg"] = 3338,	-- Sergra Darkthorn
 						["sourceQuestID"] = { 881 },	-- Echeyakee
 					}),
---					q( 43282),	-- Invasion: Northern Barrens (LEGACY - pre-Legion invasions)
---					q( 42236),	-- Invasion: Northern Barrens (LEGACY - pre-Legion invasions)
+--					q(43282),	-- Invasion: Northern Barrens (LEGACY - pre-Legion invasions)
+--					q(42236),	-- Invasion: Northern Barrens (LEGACY - pre-Legion invasions)
 					qh(14066, {	-- Investigate the Wreckage
 						["groups"] = {
 						},
 						["qg"] = 3464,	-- Gazrog
 						["breadcrumbQuestID"] = { 13991 },	-- The Purloined Payroll
 					}),
-					q(   865, {	-- It's Gotta be the Horn
+					q(865, {	-- It's Gotta be the Horn
 						["groups"] = {
-							i( 59580),	-- Sharp Poker
-							i( 59581),	-- Smart Shoes
-							i( 59582),	-- Shrewd Crossbow
+							i(59580),	-- Sharp Poker
+							i(59581),	-- Smart Shoes
+							i(59582),	-- Shrewd Crossbow
 							i(131223),	-- Smart Sandals
 						["qg"] = 3446,	-- Mebok Mizzyrix
 						},
@@ -471,9 +471,9 @@ _.Zones =
 					}),
 					qh(  850, {	-- Kolkar Leaders
 						["groups"] = {
-							i( 59551),	-- Tangled Thread Gloves
-							i( 59552),	-- Belt of the Forgotten Pool
-							i( 59553),	-- Highstrider Boots
+							i(59551),	-- Tangled Thread Gloves
+							i(59552),	-- Belt of the Forgotten Pool
+							i(59553),	-- Highstrider Boots
 							i(131218),	-- Cord of the Forgotten Pool
 						},
 						["qg"] = 34841,	-- Telar Highstrider
@@ -497,9 +497,9 @@ _.Zones =
 					}), --]]
 					qh(29015, { -- Miner's Fortune
 						["groups"] = {
-							i( 59570),	-- Bargain Gloves
-							i( 59571),	-- Irregular Belt
-							i( 59572),	-- Misshapen Boots
+							i(59570),	-- Bargain Gloves
+							i(59571),	-- Irregular Belt
+							i(59572),	-- Misshapen Boots
 							i(131706),	-- Slightly Dented Belt
 						},
 						["qg"] = 34674,	-- Brak Blusterpipe
@@ -507,10 +507,10 @@ _.Zones =
 					}),
 					qh(29111, { -- Mor'shan Caravan Delivery
 						["groups"] = {
-							i( 69221),	-- Mor'shan Caravaneer's Leggings
-							i( 69216),	-- Wild Rider's Gloves
+							i(69221),	-- Mor'shan Caravaneer's Leggings
+							i(69216),	-- Wild Rider's Gloves
 							i(131710),	-- Wild Rider's Mail Gauntlets
-							i( 69222),	-- Kadrak's Axe
+							i(69222),	-- Kadrak's Axe
 						},
 						["qg"] = 52207,	-- Nagala Whipshank
 						["sourceQuestID"] = { 29112 }	-- Demon Seed
@@ -535,10 +535,10 @@ _.Zones =
 					}),
 					qh(14063, { -- Mutiny, Mon!
 						["groups"] = {
-							i( 59573),	-- Bachelor's Dagger
-							i( 59574),	-- Conspirator's Slippers
-							i( 59575),	-- Uninsured Bracers
-							i( 59576),	-- Mutineer's Cloak
+							i(59573),	-- Bachelor's Dagger
+							i(59574),	-- Conspirator's Slippers
+							i(59575),	-- Uninsured Bracers
+							i(59576),	-- Mutineer's Cloak
 							i(131330),	-- Uninsured Armguards
 						},
 						["qg"] = 34749,	-- Tony Two-Tusk
@@ -584,7 +584,7 @@ _.Zones =
 						["qg"] = 3442,	-- Sputtervalve
 						["sourceQuestID"] = { 14004 },	-- Return to Samophlanger
 					}),
---					q( 43290),	-- Repel (LEGACY - pre-Legion invasions)
+--					q(43290),	-- Repel (LEGACY - pre-Legion invasions)
 					qh(29095, {	-- Report to Thork
 						["groups"] = {
 						},
@@ -593,9 +593,9 @@ _.Zones =
 					}),
 					qh(13613, {	-- Rescue the Fallen
 						["groups"] = {
-							i( 56633),	-- Leggings of the Traveling Medic
-							i( 56634),	-- Halfmoon Gloves
-							i( 56635),	-- First Responder's Pauldrons
+							i(56633),	-- Leggings of the Traveling Medic
+							i(56634),	-- Halfmoon Gloves
+							i(56635),	-- First Responder's Pauldrons
 							i(131294),	-- Battlefield Medic Handguards
 						},
 						["qg"] = 33263,	-- Dinah Halfmoon
@@ -624,23 +624,23 @@ _.Zones =
 						},
 						["qg"] = 3442,	-- Sputtervalve
 					}),
-					o(  4141, {	-- Control Console
+					o(4141, {	-- Control Console
 						["groups"] = {
 							qh(29022),	-- Samophlange
 						},
 						["sourceQuestID"] = { 29021 },	-- Samophlange
 					}),
-					o(  4141, {	-- Control Console
+					o(4141, {	-- Control Console
 						["groups"] = {
 							qh(29023),	-- Samophlange
 						},
 						["sourceQuestID"] = { 29022 },	-- Samophlange
 					}),
-					o(  4141, {	-- Control Console
+					o(4141, {	-- Control Console
 						qh(29024, { -- Samophlange
 							["groups"] = {
-								i( 59568),	-- Painstakingly Crafted Belt
-								i( 59569),	-- Clean Room Boots
+								i(59568),	-- Painstakingly Crafted Belt
+								i(59569),	-- Clean Room Boots
 								i(131707),	-- Dusty Treads
 							},
 							["sourceQuestID"] = { 29023 },	-- Samophlange
@@ -659,8 +659,8 @@ _.Zones =
 					}),
 					qh(29089, { -- Sludge Beast!
 						["groups"] = {
-						i( 69220),	-- Nozzlepot's Vest
-						i( 69218),	-- Sludge Fen Cloak
+						i(69220),	-- Nozzlepot's Vest
+						i(69218),	-- Sludge Fen Cloak
 						i(131708),	-- Sludge Encrusted Vest
 						},
 						["sourceQuestID"] = { 29087 },	-- Sludge Investigation
@@ -694,9 +694,9 @@ _.Zones =
 					}),
 					qh(  863, {	-- The Escape
 						["groups"] = {
-							i( 59577),	-- Sputtervalve Gun
-							i( 59578),	-- Bracers of Angry Mutterings
-							i( 59579),	-- Nozzlepot Leggings
+							i(59577),	-- Sputtervalve Gun
+							i(59578),	-- Bracers of Angry Mutterings
+							i(59579),	-- Nozzlepot Leggings
 							i(131222),	-- Nozzlepot Legwraps
 						},
 						["qg"] = 3439,	-- Wizzlecrank's Shredder
@@ -704,9 +704,9 @@ _.Zones =
 					}),
 					qh(  872, {	-- The Far Watch Offensive
 						["groups"] = {
-							i( 59542),	-- Thornweaver Leggings
-							i( 59543),	-- Pigman Belt
-							i( 59544),	-- Kargal's Breastplate
+							i(59542),	-- Thornweaver Leggings
+							i(59543),	-- Pigman Belt
+							i(59544),	-- Kargal's Breastplate
 							i(131224),	-- Pigman Waistband
 						},
 						["qg"] = 3337,	-- Kargal Battlescar
@@ -738,8 +738,8 @@ _.Zones =
 					}),
 					qh(29094, { -- The Short Way Home
 						["groups"] = {
-							i( 69217),	-- Test Pilot Britches
-							i( 69223),	-- Emergency Hatchet
+							i(69217),	-- Test Pilot Britches
+							i(69223),	-- Emergency Hatchet
 							i(131709),	-- Passenger Pantaloons
 						},
 						["qg"] = 3442,	-- Sputtervalve
@@ -753,17 +753,17 @@ _.Zones =
 					}),
 					qh(14067, { -- The Stolen Silver
 						["groups"] = {
-							i( 59554),	-- Silver-Edged Blade
-							i( 59555),	-- Silver-Trim Leggings
+							i(59554),	-- Silver-Edged Blade
+							i(59555),	-- Silver-Trim Leggings
 							i(131331),	-- Silver-Trim Greaves
 						},
 						["sourceQuestID"] = { 869 }	-- To Track a Thief
 					}),
 					qh(13968, { -- The Tortusk Takedown
 						["groups"] = {
-							i( 59533),	-- Wand of Separation
-							i( 59534),	-- Boar Hunter's Shoes
-							i( 59535),	-- Togrik's Legguards
+							i(59533),	-- Wand of Separation
+							i(59534),	-- Boar Hunter's Shoes
+							i(59535),	-- Togrik's Legguards
 							i(131325),	-- Boar Hunter's Treads
 						},
 						["qg"] = 34513,	-- Togrik
@@ -777,8 +777,8 @@ _.Zones =
 					}),
 					qh(13878, { -- Through Fire and Flames
 						["groups"] = {
-							i( 59529),	-- Flame Retardant Sheet
-							i( 59530),	-- Wolf Tender's Boots
+							i(59529),	-- Flame Retardant Sheet
+							i(59530),	-- Wolf Tender's Boots
 							i(131310),	-- Wolf Tender's Footwraps
 						},
 						["qg"] = 34284,	-- Dorak
@@ -803,28 +803,28 @@ _.Zones =
 					}),
 					qh(  851, { -- Verog the Dervish (add'l QG 3389, looks like it switched in Cata)
 						["groups"] = {
-							i( 59566),	-- Robe of Shame
-							i( 59567),	-- Murderous Bracers
+							i(59566),	-- Robe of Shame
+							i(59567),	-- Murderous Bracers
 							i(131219),	-- Murderous Cuffs
 						},
 						["qg"] = 34638,	-- Shoe
 						["sourceQuestID"] = { 14072 },	-- 
 					}),
-					o(  3972, {	-- WANTED
+					o(3972, {	-- WANTED
 						q(895, { -- WANTED: Cap'n Garvey
-							i( 49560),	-- Proof of Death
-							i( 49543),	-- Seaworthy Leggings
-							i( 49548),	-- Gazlowe's Gloves
-							i( 49446),	-- Retainer Vest
+							i(49560),	-- Proof of Death
+							i(49543),	-- Seaworthy Leggings
+							i(49548),	-- Gazlowe's Gloves
+							i(49446),	-- Retainer Vest
 							i(131225),	-- Gazlowe's Grips
 							i(131226),	-- Retainer Tunic
 						}),
 					}),
 					qh(14068, {	-- Waptor Twapping
 						["groups"] = {
-							i( 59563),	-- Waptor Thwapper
-							i( 59564),	-- Waptor Skin Boots
-							i( 59565),	-- Waptor Scale Bweastpwate
+							i(59563),	-- Waptor Thwapper
+							i(59564),	-- Waptor Skin Boots
+							i(59565),	-- Waptor Scale Bweastpwate
 							i(131332),	-- Waptor Tweads
 						},
 						["qg"] = 34828,	-- Kala'ma

@@ -19,7 +19,7 @@ _.Zones =
 					qa( 35638),	-- A Few Artifact Fragments
 					qh( 36063),	-- A Few Artifact Fragments
 					qa( 35867),	-- A Few Artifact Fragments
-					q( 35866),	-- A Few Artifact Fragments
+					q(35866),	-- A Few Artifact Fragments
 					qa( 35871),	-- A Few Artifact Fragments
 					qa( 35689),	-- A Few Artifact Fragments
 					qh( 36030),	-- A Few Artifact Fragments
@@ -34,25 +34,25 @@ _.Zones =
 					qa( 35691),	-- A TON of Artifact Fragments
 					qh( 36065),	-- A TON of Artifact Fragments
 					qa( 35869),	-- A TON of Artifact Fragments
-					q( 37478),	-- Amphitheater of Annihilation
-					q( 45180),	-- An Island of War
-					q( 37476),	-- Ashmaul Burial Grounds
+					q(37478),	-- Amphitheater of Annihilation
+					q(45180),	-- An Island of War
+					q(37476),	-- Ashmaul Burial Grounds
 					qa( 36624),	-- Ashran Appearance
 					qh( 36706),	-- Ashran Appearance
-					q( 39292),	-- Ashran Dominance
+					q(39292),	-- Ashran Dominance
 					qh( 38923),	-- Ashran Dominance
 					qa( 38925),	-- Ashran Dominance
-					q( 39263),	-- Ashran Excavation
+					q(39263),	-- Ashran Excavation
 					qa( 35937),	-- Blood Elf Ear
-					q( 39264),	-- Bonus Objective: Ashran Excavation
-					q( 37479),	-- Bonus Objective: Kill Alliance Leaders
-					q( 37480),	-- Bonus Objective: Kill Alliance Leaders
-					q( 37481),	-- Bonus Objective: Kill Horde Leaders
-					q( 37482),	-- Bonus Objective: Kill Horde Leaders
-					q( 37299),	-- Bonus Objective: Kill Stormshield Priests
-					q( 37298),	-- Bonus Objective: Kill Warspear Priests
-					q( 37477),	-- Brute's Rise
-					q( 35578),	-- Building an Ancient of War
+					q(39264),	-- Bonus Objective: Ashran Excavation
+					q(37479),	-- Bonus Objective: Kill Alliance Leaders
+					q(37480),	-- Bonus Objective: Kill Alliance Leaders
+					q(37481),	-- Bonus Objective: Kill Horde Leaders
+					q(37482),	-- Bonus Objective: Kill Horde Leaders
+					q(37299),	-- Bonus Objective: Kill Stormshield Priests
+					q(37298),	-- Bonus Objective: Kill Warspear Priests
+					q(37477),	-- Brute's Rise
+					q(35578),	-- Building an Ancient of War
 					qh( 36709),	-- Burning Beauty
 					qh( 37484),	-- Captain's Whistle
 					qa( 37483),	-- Captian's Whistle
@@ -64,7 +64,7 @@ _.Zones =
 					qh( 36041),	-- Draenei Tail
 					qh( 36034),	-- Dwarf Spine
 					qa( 35927),	-- Forsaken Brains
-					q( 36492),	-- Garrison Pet Battle
+					q(36492),	-- Garrison Pet Battle
 					qa( 35938),	-- Goblin Nose
 					qa( 36626),	-- Host Howell
 					qh( 36042),	-- Human Bone Chip
@@ -72,9 +72,9 @@ _.Zones =
 					qh( 36708),	-- Inspiring Ashran
 					qa( 36123),	-- Into The Wilderness
 					qh( 36228),	-- Into The Wilderness
-					q( 37297),	-- Kill Jeron Emberfall
-					q( 37295),	-- Kill Rylai Crestfall
-					q( 37475),	-- Molten Quarry
+					q(37297),	-- Kill Jeron Emberfall
+					q(37295),	-- Kill Rylai Crestfall
+					q(37475),	-- Molten Quarry
 					qa( 35940),	-- Orc Tooth
 					qa( 35942),	-- Pandaren Hide
 					qh( 36038),	-- Pandaren Hide
@@ -83,18 +83,18 @@ _.Zones =
 					qh( 36197),	-- Reporting For Duty
 					qa( 36130),	-- Reporting For Duty
 					qa( 37288),	-- Resources in Ashran
-					q( 36055),	-- Sealing Fate: Apexis Crystals
-					q( 37458),	-- Sealing Fate: Extended Honor
-					q( 36056),	-- Sealing Fate: Garrison Resources
-					q( 36054),	-- Sealing Fate: Gold
-					q( 37452),	-- Sealing Fate: Heap of Apexis Crystals
-					q( 36057),	-- Sealing Fate: Honor
-					q( 37455),	-- Sealing Fate: Immense Fortune of Gold
-					q( 37459),	-- Sealing Fate: Monumental Honor
-					q( 37453),	-- Sealing Fate: Mountain of Apexis Crystals
-					q( 37454),	-- Sealing Fate: Piles of Gold
-					q( 37456),	-- Sealing Fate: Stockpiled Garrison Resources
-					q( 37457),	-- Sealing Fate: Tremendous Garrison Resources
+					q(36055),	-- Sealing Fate: Apexis Crystals
+					q(37458),	-- Sealing Fate: Extended Honor
+					q(36056),	-- Sealing Fate: Garrison Resources
+					q(36054),	-- Sealing Fate: Gold
+					q(37452),	-- Sealing Fate: Heap of Apexis Crystals
+					q(36057),	-- Sealing Fate: Honor
+					q(37455),	-- Sealing Fate: Immense Fortune of Gold
+					q(37459),	-- Sealing Fate: Monumental Honor
+					q(37453),	-- Sealing Fate: Mountain of Apexis Crystals
+					q(37454),	-- Sealing Fate: Piles of Gold
+					q(37456),	-- Sealing Fate: Stockpiled Garrison Resources
+					q(37457),	-- Sealing Fate: Tremendous Garrison Resources
 					qh( 36033),	-- Severed Night Elf Head
 					qa( 39096),	-- Slay Them All!
 					qh( 39090),	-- Slay Them All!
@@ -104,7 +104,7 @@ _.Zones =
 					qh( 35243),	-- The Dark Lady's Gift
 					qh( 36227),	-- The Road of Glory
 					qa( 36125),	-- The Road of Glory
-					q( 38008),	-- The Road of Glory
+					q(38008),	-- The Road of Glory
 					qa( 35941),	-- Troll Feet
 					qh( 36040),	-- Tuft of Gnome Hair
 					qa( 36133),	-- Uncovering the Artifact Fragments				

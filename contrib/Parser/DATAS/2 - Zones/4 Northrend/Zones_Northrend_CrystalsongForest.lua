@@ -106,7 +106,7 @@ _.Zones =
 					qa( 13491),	-- Honor the Flame
 					qh( 13499),	-- Honor the Flame
 					qa( 11964),	-- Incense for the Summer Scorchlings
-					q( 31932),	-- Nearly Headless Jacob
+					q(31932),	-- Nearly Headless Jacob
 					qa( 11882),	-- Playing with Fire				
 				}),
 --]]				

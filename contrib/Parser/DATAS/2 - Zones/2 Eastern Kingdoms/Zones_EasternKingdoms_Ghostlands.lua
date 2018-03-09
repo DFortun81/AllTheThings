@@ -103,10 +103,10 @@ _.Zones =
 					}),
 					qh( 9315, {	-- Anok'suten
 							["groups"] = {
-								i( 24341),	-- Fortified Oven Mitts
-								i( 24339),	-- Stung
-								i( 24340),	-- Vandril's Hand Me Down Pants
-								i( 28149),	-- Tranquillien Breeches
+								i(24341),	-- Fortified Oven Mitts
+								i(24339),	-- Stung
+								i(24340),	-- Vandril's Hand Me Down Pants
+								i(28149),	-- Tranquillien Breeches
 								i(131251)	-- Mix-Match Linked Pants
 							},
 							["qg"] = 16601,	-- Dying Blood Elf
@@ -133,9 +133,9 @@ _.Zones =
 					}),
 					qh( 9277, {	-- Assault on Zeb'Nowa
 						["groups"] = {
-							i( 23406),	-- Sentry Bracers
-							i( 23407),	-- Supple Cotton Bracers
-							i( 23408),	-- Farstrider Bracers
+							i(23406),	-- Sentry Bracers
+							i(23407),	-- Supple Cotton Bracers
+							i(23408),	-- Farstrider Bracers
 							i(131249),	-- Farstrider Cuffs
 						},
 						["qg"] = 16463,	-- Farstrider Solanna
@@ -181,20 +181,20 @@ _.Zones =
 					}),
 					qh( 9159, {	-- Curbing the Plague
 						["groups"] = {
-							i( 28141),	-- Ranger's Sash
-							i( 28142),	-- Farstrider's Belt
-							i( 28143),	-- Rusted Plate Girdle
+							i(28141),	-- Ranger's Sash
+							i(28142),	-- Farstrider's Belt
+							i(28143),	-- Rusted Plate Girdle
 							i(131244),	-- Farstrider's Chain
-							i( 23415)	-- Survival Knife
+							i(23415)	-- Survival Knife
 						},
 						["qg"] = 16202,	-- Farstrider Sedina
 						["sourceQuestID"] = { 9158 },	-- Bearers of the Plague
 					}),
 					qh( 9170, {	-- Dar'Khan's Lieutenants
 						["groups"] = {
-							i( 22996),	-- Reforged Quel'dorei Crest
-							i( 22997),	-- Ley-Keeper's Wand
-							i( 22998),	-- Ghostclaw Leggings
+							i(22996),	-- Reforged Quel'dorei Crest
+							i(22997),	-- Ley-Keeper's Wand
+							i(22998),	-- Ghostclaw Leggings
 							i(131245),	-- Scourge Lieutenant Breeches
 							i(156942),	-- Spiky Legbone 
 						},
@@ -230,9 +230,9 @@ _.Zones =
 					}),
 					qh( 9212, {	-- Escape from the Catacombs
 						["groups"] = {
-							i( 23412),	-- Troll Kickers (Plate)
-							i( 23413),	-- Troll Kickers (Cloth)
-							i( 23414),	-- Troll Kickers (Leather)
+							i(23412),	-- Troll Kickers (Plate)
+							i(23413),	-- Troll Kickers (Cloth)
+							i(23414),	-- Troll Kickers (Leather)
 							i(131248),	-- Troll Kickers (Mail)
 						},
 						["qg"] = 16295,	-- Ranger Lilatha
@@ -317,9 +317,9 @@ _.Zones =
 					})),
 					qh( 9146, {	-- Report to Captain Helios
 						["groups"] = {
-							i( 23405),	-- Farstrider's Tunic
-							i( 28144),	-- Troll Handler Gloves
-							i( 28153),	-- Farstrider's Shield
+							i(23405),	-- Farstrider's Tunic
+							i(28144),	-- Troll Handler Gloves
+							i(28153),	-- Farstrider's Shield
 							i(131242),	-- Farstrider's Chainmail
 						},
 						["qg"] = 16219,	-- Ranger Valanna
@@ -327,9 +327,9 @@ _.Zones =
 					}),
 					qh( 9172, {	-- Report to Magister Kaendris
 						["groups"] = {
-							i( 28154),	-- Red Silk Trousers
-							i( 28157),	-- Black Leather Jerkin
-							i( 28161),	-- Tranquillien	Plate Leggings
+							i(28154),	-- Red Silk Trousers
+							i(28157),	-- Black Leather Jerkin
+							i(28161),	-- Tranquillien	Plate Leggings
 							i(131246),	-- Dark Chain Shirt
 						},
 						["qg"] = 16203,	-- Ranger Vynna
@@ -432,10 +432,10 @@ _.Zones =
 					}),									--]]
 					qh( 9167, {	-- The Traitor's Destruction
 						["groups"] = {
-							i( 22980),	-- Staff of the Sun
-							i( 22982),	-- Farstrider's Longbow
-							i( 22984),	-- Dawnblade
-							i( 22995),	-- Sindorei Warblade
+							i(22980),	-- Staff of the Sun
+							i(22982),	-- Farstrider's Longbow
+							i(22984),	-- Dawnblade
+							i(22995),	-- Sindorei Warblade
 							i(156941),	-- Staff of Radiance
 						},
 						["qg"] = 16239,	-- Magister Kaendris
@@ -463,9 +463,9 @@ _.Zones =
 					}),
 					qh( 9199, {	-- Troll Juju
 						["groups"] = {
-							i( 28156),	-- Rotting Handwraps
-							i( 28159),	-- Undertaker's Gloves
-							i( 28163),	-- Maltendis' Handguards
+							i(28156),	-- Rotting Handwraps
+							i(28159),	-- Undertaker's Gloves
+							i(28163),	-- Maltendis' Handguards
 							i(131247)	-- Gravedigger's Grips
 						},
 						["qg"] = 16464,	-- Apothecary Venustus
@@ -502,10 +502,10 @@ _.Zones =
 					}),
 					qh( 9140, {	-- Windrunner Village
 						["groups"] = {
-							i( 23402),	-- Arcanist's Dagger
-							i( 28151),	-- Arcanist's Wand
-							i( 23403),	-- Salvaged Plate Leggings
-							i( 23404),	-- Padded Running Shoes
+							i(23402),	-- Arcanist's Dagger
+							i(28151),	-- Arcanist's Wand
+							i(23403),	-- Salvaged Plate Leggings
+							i(23404),	-- Padded Running Shoes
 							i(131241),	-- Relinked Chain Boots
 						},
 						["qg"] = 16197,	-- Arcanist Vandril

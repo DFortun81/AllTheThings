@@ -9,127 +9,127 @@ _.Zones =
 				m(1044, { -- The Wandering Isle -- Monk
 					["groups"] = {
 						n(-17, { -- Quests
-							q( 44057),	-- A "Noble" Event
-							q( 45440),	-- A Brewing Situation
-							q( 43359),	-- A Hero's Weapon
-							q( 40793),	-- A Matter of Planning
-							q( 41086),	-- A Peaceful World
-							q( 45771),	-- A Time for Everything
-							q( 41911),	-- Amaranthine Hops
-							q( 43054),	-- An Ample Stockpile
-							q( 45180),	-- An Island of War
-							q( 46024),	-- An Urgent Warning
-							q( 41907),	-- Appropriations
-							q( 41854),	-- Brick By Brick
-							q( 41946),	-- Building Our Troops
-							q( 41739),	-- Champion: Aegira
-							q( 45790),	-- Champion: Almai
-							q( 41736),	-- Champion: Angus Ironfist
-							q( 41115),	-- Champion: Chen Stormstout
-							q( 41737),	-- Champion: Hiro
-							q( 40704),	-- Champion: Li Li Stormstout
-							q( 41738),	-- Champion: Sylara Steelsong
-							q( 41734),	-- Champion: Taran Zhu
-							q( 41735),	-- Champion: The Monkey King
-							q( 44275),	-- Court of Stars
-							q( 44272),	-- Darkheart Thicket
-							q( 44273),	-- Darkheart Thicket
-							q( 47069),	-- Delivering Lost Knowledge
-							q( 45173),	-- Desperate Times
-							q( 44239),	-- Echo of a Celestial
-							q( 44271),	-- Eye of Azshara
-							q( 41910),	-- Freya's Spring
-							q( 46785),	-- Further Advancement
-							q( 43062),	-- Further Training
-							q( 46157),	-- Furthering Knowledge
-							q( 42186),	-- Growing Power
-							q( 41059),	-- Halls of Valor: Odyn's Cauldron
-							q( 43060),	-- Highmountain Salmon
-							q( 46320),	-- Hope For a Cure
-							q( 32442),	-- Impending Danger
-							q( 44249),	-- Inner Sanctuary
-							q( 40570),	-- Into The Heavens
-							q( 43904),	-- Into the Nightmare: Fall of Cenarius
-							q( 43908),	-- Into the Nightmare: Fall of Cenarius
-							q( 43906),	-- Into the Nightmare: Fall of Cenarius
-							q( 43902),	-- Into the Nightmare: Fall of Cenarius
-							q( 43548),	-- Into the Nightmare: Il'gynoth
-							q( 43547),	-- Into the Nightmare: Il'gynoth
-							q( 43546),	-- Into the Nightmare: Il'gynoth
-							q( 43549),	-- Into the Nightmare: Il'gynoth
-							q( 43905),	-- Into the Nightmare: Xavius
-							q( 43909),	-- Into the Nightmare: Xavius
-							q( 43907),	-- Into the Nightmare: Xavius
-							q( 43903),	-- Into the Nightmare: Xavius
-							q( 46025),	-- Investigate the Broken Shore
-							q( 46353),	-- Master Who?
-							q( 43553),	-- Maw of Souls
-							q( 44267),	-- Maw of Souls
-							q( 44238),	-- Meditations on Fate
-							q( 44265),	-- Neltharion's Lair
-							q( 44264),	-- Neltharion's Lair
-							q( 43554),	-- Neltharion's Lair
-							q( 45442),	-- Not Felling Well
-							q( 44268),	-- Odyn's Challenge
-							q( 44269),	-- Odyn's Challenge
-							q( 43509),	-- Odyn's Challenge
-							q( 40633),	-- Off To Adventure!
-							q( 45404),	-- Panic at the Brewery
-							q( 40636),	-- Prepare To Strike
-							q( 40698),	-- Purity of Form
-							q( 41733),	-- Rebuilding the Order
-							q( 41905),	-- Report from Tian Monastery
-							q( 44917),	-- Return to Karazhan: The Tower of Power
-							q( 46342),	-- Return to the Broken Peak
-							q( 42187),	-- Rise, Champions
-							q( 42210),	-- Scrolls of Knowledge
-							q( 43061),	-- Silkweave Bandages
-							q( 43058),	-- Spiced Rib Roast
-							q( 41087),	-- Storm Brew
-							q( 45459),	-- Storming the Legion
-							q( 42191),	-- Tech It Up A Notch
-							q( 44263),	-- The Arcway
-							q( 40516),	-- The Dawning Bit
-							q( 40236),	-- The Dawning Light
-							q( 41728),	-- The Defense of Tian Monastery
-							q( 41003),	-- The Emperor's Gift
-							q( 40795),	-- The Fight Begins
-							q( 41732),	-- The Hand of Keletress
-							q( 41849),	-- The Iron Fist
-							q( 40569),	-- The Legend of the Sands
-							q( 43545),	-- The Lord of Black Rook Hold
-							q( 44276),	-- The Lord of Black Rook Hold
-							q( 44277),	-- The Lord of Black Rook Hold
-							q( 41038),	-- The Mead Master
-							q( 43911),	-- The Nighthold: Elisande
-							q( 43914),	-- The Nighthold: Elisande
-							q( 43920),	-- The Nighthold: Elisande
-							q( 43917),	-- The Nighthold: Elisande
-							q( 43912),	-- The Nighthold: Gul'dan
-							q( 43921),	-- The Nighthold: Gul'dan
-							q( 43918),	-- The Nighthold: Gul'dan
-							q( 43919),	-- The Nighthold: High Botanist Tel'arn							
-							q( 43910),	-- The Nighthold: High Botanist Tel'arn
-							q( 43916),	-- The Nighthold: High Botanist Tel'arn
-							q( 43890),	-- The Nighthold: Vaults
-							q( 43882),	-- The Nighthold: Vaults
-							q( 43889),	-- The Nighthold: Vaults
-							q( 43496),	-- The Power Within
-							q( 43501),	-- The Power Within
-							q( 46341),	-- The Tale of Ban-Lu
-							q( 42765),	-- The Trial at the Temple
-							q( 46350),	-- The Trial of Ban-Lu
-							q( 42762),	-- The Wanderer's Companion
-							q( 43319),	-- The Way of the Tiger
-							q( 44424),	-- Three Paths, Three Weapons
-							q( 41945),	-- Tianji of the Ox
-							q( 45172),	-- To Battle!
-							q( 41909),	-- Tracking the Tideskorn
-							q( 43973),	-- Two Paths, Two Weapons
-							q( 43556),	-- Vault of the Wardens
-							q( 44261),	-- Vault of the Wardens
-							q( 44259),	-- Violet Hold
-							q( 45179),	-- Win the Crowd										
+							q(44057),	-- A "Noble" Event
+							q(45440),	-- A Brewing Situation
+							q(43359),	-- A Hero's Weapon
+							q(40793),	-- A Matter of Planning
+							q(41086),	-- A Peaceful World
+							q(45771),	-- A Time for Everything
+							q(41911),	-- Amaranthine Hops
+							q(43054),	-- An Ample Stockpile
+							q(45180),	-- An Island of War
+							q(46024),	-- An Urgent Warning
+							q(41907),	-- Appropriations
+							q(41854),	-- Brick By Brick
+							q(41946),	-- Building Our Troops
+							q(41739),	-- Champion: Aegira
+							q(45790),	-- Champion: Almai
+							q(41736),	-- Champion: Angus Ironfist
+							q(41115),	-- Champion: Chen Stormstout
+							q(41737),	-- Champion: Hiro
+							q(40704),	-- Champion: Li Li Stormstout
+							q(41738),	-- Champion: Sylara Steelsong
+							q(41734),	-- Champion: Taran Zhu
+							q(41735),	-- Champion: The Monkey King
+							q(44275),	-- Court of Stars
+							q(44272),	-- Darkheart Thicket
+							q(44273),	-- Darkheart Thicket
+							q(47069),	-- Delivering Lost Knowledge
+							q(45173),	-- Desperate Times
+							q(44239),	-- Echo of a Celestial
+							q(44271),	-- Eye of Azshara
+							q(41910),	-- Freya's Spring
+							q(46785),	-- Further Advancement
+							q(43062),	-- Further Training
+							q(46157),	-- Furthering Knowledge
+							q(42186),	-- Growing Power
+							q(41059),	-- Halls of Valor: Odyn's Cauldron
+							q(43060),	-- Highmountain Salmon
+							q(46320),	-- Hope For a Cure
+							q(32442),	-- Impending Danger
+							q(44249),	-- Inner Sanctuary
+							q(40570),	-- Into The Heavens
+							q(43904),	-- Into the Nightmare: Fall of Cenarius
+							q(43908),	-- Into the Nightmare: Fall of Cenarius
+							q(43906),	-- Into the Nightmare: Fall of Cenarius
+							q(43902),	-- Into the Nightmare: Fall of Cenarius
+							q(43548),	-- Into the Nightmare: Il'gynoth
+							q(43547),	-- Into the Nightmare: Il'gynoth
+							q(43546),	-- Into the Nightmare: Il'gynoth
+							q(43549),	-- Into the Nightmare: Il'gynoth
+							q(43905),	-- Into the Nightmare: Xavius
+							q(43909),	-- Into the Nightmare: Xavius
+							q(43907),	-- Into the Nightmare: Xavius
+							q(43903),	-- Into the Nightmare: Xavius
+							q(46025),	-- Investigate the Broken Shore
+							q(46353),	-- Master Who?
+							q(43553),	-- Maw of Souls
+							q(44267),	-- Maw of Souls
+							q(44238),	-- Meditations on Fate
+							q(44265),	-- Neltharion's Lair
+							q(44264),	-- Neltharion's Lair
+							q(43554),	-- Neltharion's Lair
+							q(45442),	-- Not Felling Well
+							q(44268),	-- Odyn's Challenge
+							q(44269),	-- Odyn's Challenge
+							q(43509),	-- Odyn's Challenge
+							q(40633),	-- Off To Adventure!
+							q(45404),	-- Panic at the Brewery
+							q(40636),	-- Prepare To Strike
+							q(40698),	-- Purity of Form
+							q(41733),	-- Rebuilding the Order
+							q(41905),	-- Report from Tian Monastery
+							q(44917),	-- Return to Karazhan: The Tower of Power
+							q(46342),	-- Return to the Broken Peak
+							q(42187),	-- Rise, Champions
+							q(42210),	-- Scrolls of Knowledge
+							q(43061),	-- Silkweave Bandages
+							q(43058),	-- Spiced Rib Roast
+							q(41087),	-- Storm Brew
+							q(45459),	-- Storming the Legion
+							q(42191),	-- Tech It Up A Notch
+							q(44263),	-- The Arcway
+							q(40516),	-- The Dawning Bit
+							q(40236),	-- The Dawning Light
+							q(41728),	-- The Defense of Tian Monastery
+							q(41003),	-- The Emperor's Gift
+							q(40795),	-- The Fight Begins
+							q(41732),	-- The Hand of Keletress
+							q(41849),	-- The Iron Fist
+							q(40569),	-- The Legend of the Sands
+							q(43545),	-- The Lord of Black Rook Hold
+							q(44276),	-- The Lord of Black Rook Hold
+							q(44277),	-- The Lord of Black Rook Hold
+							q(41038),	-- The Mead Master
+							q(43911),	-- The Nighthold: Elisande
+							q(43914),	-- The Nighthold: Elisande
+							q(43920),	-- The Nighthold: Elisande
+							q(43917),	-- The Nighthold: Elisande
+							q(43912),	-- The Nighthold: Gul'dan
+							q(43921),	-- The Nighthold: Gul'dan
+							q(43918),	-- The Nighthold: Gul'dan
+							q(43919),	-- The Nighthold: High Botanist Tel'arn							
+							q(43910),	-- The Nighthold: High Botanist Tel'arn
+							q(43916),	-- The Nighthold: High Botanist Tel'arn
+							q(43890),	-- The Nighthold: Vaults
+							q(43882),	-- The Nighthold: Vaults
+							q(43889),	-- The Nighthold: Vaults
+							q(43496),	-- The Power Within
+							q(43501),	-- The Power Within
+							q(46341),	-- The Tale of Ban-Lu
+							q(42765),	-- The Trial at the Temple
+							q(46350),	-- The Trial of Ban-Lu
+							q(42762),	-- The Wanderer's Companion
+							q(43319),	-- The Way of the Tiger
+							q(44424),	-- Three Paths, Three Weapons
+							q(41945),	-- Tianji of the Ox
+							q(45172),	-- To Battle!
+							q(41909),	-- Tracking the Tideskorn
+							q(43973),	-- Two Paths, Two Weapons
+							q(43556),	-- Vault of the Wardens
+							q(44261),	-- Vault of the Wardens
+							q(44259),	-- Violet Hold
+							q(45179),	-- Win the Crowd										
 							q(46350, { -- The Trial of Ban-Lu
 								["groups"] = {
 									{ ["mountID"] = 229385 }, -- Ban-Lu, Grandmaster's Companion

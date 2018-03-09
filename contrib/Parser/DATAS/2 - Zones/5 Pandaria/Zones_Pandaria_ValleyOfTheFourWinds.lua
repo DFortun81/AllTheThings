@@ -69,337 +69,337 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[
-					q( 31329),	-- A Beautiful Brooch
-					q( 30400),	-- A Blue Feather for Chee Chee
-					q( 30382),	-- A Blue Feather for Ella
-					q( 30419),	-- A Blue Feather for Farmer Fung
-					q( 30425),	-- A Blue Feather for Fish
-					q( 30388),	-- A Blue Feather for Gina
-					q( 30412),	-- A Blue Feather for Haohan
-					q( 30437),	-- A Blue Feather for Jogu
-					q( 30394),	-- A Blue Feather for Old Hillpaw
-					q( 30406),	-- A Blue Feather for Sho
-					q( 30431),	-- A Blue Feather for Tina
-					q( 30275),	-- A Crocolisk Tale
-					q( 30402),	-- A Dish for Chee Chee
-					q( 30386),	-- A Dish for Ella
-					q( 30421),	-- A Dish for Farmer Fung
-					q( 30427),	-- A Dish for Fish
-					q( 30390),	-- A Dish for Gina
-					q( 30414),	-- A Dish for Haohan
-					q( 30439),	-- A Dish for Jogu
-					q( 30396),	-- A Dish for Old Hillpaw
-					q( 30408),	-- A Dish for Sho
-					q( 30433),	-- A Dish for Tina
-					q( 30471),	-- A Gift For Chee Chee
-					q( 30474),	-- A Gift For Ella
-					q( 30473),	-- A Gift For Fish
-					q( 30475),	-- A Gift For Fung
-					q( 30479),	-- A Gift For Gina
-					q( 30477),	-- A Gift For Haohan
-					q( 30478),	-- A Gift For Jogu
-					q( 30476),	-- A Gift For Old Hillpaw
-					q( 30472),	-- A Gift For Sho
-					q( 30470),	-- A Gift For Tina
-					q( 30252),	-- A Helping Hand
-					q( 30399),	-- A Jade Cat for Chee Chee
-					q( 30381),	-- A Jade Cat for Ella
-					q( 30418),	-- A Jade Cat for Farmer Fung
-					q( 30424),	-- A Jade Cat for Fish
-					q( 30387),	-- A Jade Cat for Gina
-					q( 30411),	-- A Jade Cat for Haohan
-					q( 30436),	-- A Jade Cat for Jogu
-					q( 30393),	-- A Jade Cat for Old Hillpaw
-					q( 30405),	-- A Jade Cat for Sho
-					q( 30430),	-- A Jade Cat for Tina
-					q( 29918),	-- A Lesson in Bravery
-					q( 30398),	-- A Lovely Apple for Chee Chee
-					q( 30189),	-- A Lovely Apple for Ella
-					q( 30417),	-- A Lovely Apple for Farmer Fung
-					q( 30423),	-- A Lovely Apple for Fish
-					q( 30380),	-- A Lovely Apple for Gina
-					q( 30410),	-- A Lovely Apple for Haohan
-					q( 30435),	-- A Lovely Apple for Jogu
-					q( 30392),	-- A Lovely Apple for Old Hillpaw
-					q( 30404),	-- A Lovely Apple for Sho
-					q( 30429),	-- A Lovely Apple for Tina
-					q( 30401),	-- A Marsh Lily for Chee Chee
-					q( 30383),	-- A Marsh Lily for Ella
-					q( 30420),	-- A Marsh Lily for Farmer Fung
-					q( 30426),	-- A Marsh Lily for Fish
-					q( 30389),	-- A Marsh Lily for Gina
-					q( 30413),	-- A Marsh Lily for Haohan
-					q( 30438),	-- A Marsh Lily for Jogu
-					q( 30395),	-- A Marsh Lily for Old Hillpaw
-					q( 30407),	-- A Marsh Lily for Sho
-					q( 30432),	-- A Marsh Lily for Tina
-					q( 29915),	-- A Neighbor's Duty
-					q( 29877),	-- A Poor Grasp of the Basics
-					q( 31672),	-- A Pumpkin-y Perfume
-					q( 30397),	-- A Ruby Shard for Chee Chee
-					q( 30160),	-- A Ruby Shard for Ella
-					q( 30416),	-- A Ruby Shard for Farmer Fung
-					q( 30422),	-- A Ruby Shard for Fish
-					q( 30379),	-- A Ruby Shard for Gina
-					q( 30409),	-- A Ruby Shard for Haohan
-					q( 30434),	-- A Ruby Shard for Jogu
-					q( 30391),	-- A Ruby Shard for Old Hillpaw
-					q( 30403),	-- A Ruby Shard for Sho
-					q( 30428),	-- A Ruby Shard for Tina
-					q( 30534),	-- A Second Hand
-					q( 29908),	-- A Seemingly Endless Nuisance
-					q( 32189),	-- A Shabby New Face
-					q( 29988),	-- A Taste For Eggs
-					q( 31325),	-- A Very Nice Necklace
-					q( 31341),	-- A Wolf In Sheep's Clothing
-					q( 31538),	-- A Worthy Brew
-					q( 31471),	-- Agile as a Tiger
-					q( 31328),	-- An Exquisite Earring
-					q( 29577),	-- Ashyo's Vision
-					q( 29914),	-- Back to the Sty
-					q( 30172),	-- Barreling Along
-					q( 30077),	-- Barrels, Man
-					q( 29757),	-- Bottletoads
-					q( 29952),	-- Broken Dreams
-					q( 31323),	-- Buy A Fish A Brewery?
-					q( 31320),	-- Buy A Fish A Drink?
-					q( 31322),	-- Buy A Fish A Keg?
-					q( 31321),	-- Buy A Fish A Round?
-					q( 32046),	-- Candy Bucket
-					q( 32048),	-- Candy Bucket
-					q( 33022),	-- Catch and Carry
-					q( 30318),	-- Chasing the Chicken
-					q( 29907),	-- Chen and Li Li
-					q( 30046),	-- Chen's Resolution
-					q( 32045),	-- Children of the Water
-					q( 30329),	-- Cindergut Peppers
-					q( 30078),	-- Cleaning House
-					q( 30075),	-- Clear the Way
-					q( 29871),	-- Clever Ashyo
-					q( 29947),	-- Crouching Carrot, Hidden Turnip
-					q( 30049),	-- Doesn't Hold Water
-					q( 31537),	-- Ella's Taste Test
-					q( 31477),	-- Endurance
-					q( 30054),	-- Enough is Ookin' Enough
-					q( 29982),	-- Evacuation Orders
-					q( 31279),	-- Everything I Know About Cooking
-					q( 31486),	-- Everything I Know About Cooking
-					q( 30517),	-- Farmer Fung's Vote I: Yak Attack
-					q( 30518),	-- Farmer Fung's Vote II: On the Loose
-					q( 31947),	-- Farmer Fung's Vote III: Crazy For Cabbage
-					q( 30332),	-- Fatty Goatsteak
-					q( 29986),	-- Fog Wards
-					q( 30182),	-- Fox Mastery
-					q( 30050),	-- Gardener Fran and the Watering Can
-					q( 32035),	-- Got Silk?
-					q( 30028),	-- Grain Recovery
-					q( 31955),	-- Grand Master Nishi
-					q( 29919),	-- Great Minds Drink Alike
-					q( 30516),	-- Growing the Farm I: A Little Problem
-					q( 30260),	-- Growing the Farm I: The Weeds
-					q( 30524),	-- Growing the Farm II: Knock on Wood
-					q( 30523),	-- Growing the Farm II: The Broken Wagon
-					q( 30529),	-- Growing the Farm III: The Mossy Boulder
-					q( 29758),	-- Guess Whose Back
-					q( 30521),	-- Haohan's Vote I: Bungalow Break-In
-					q( 30522),	-- Haohan's Vote II: The Real Culprits
-					q( 30525),	-- Haohan's Vote III: Pure Poison
-					q( 30527),	-- Haohan's Vote IV: Melons For Felons
-					q( 30528),	-- Haohan's Vote V: Chief Yip-Yip
-					q( 31480),	-- Have a Drink
-					q( 32018),	-- His Name Was... Stormstout
-					q( 38935),	-- His Name Was... Stormstout
-					q( 32502),	-- Honor the Flame
-					q( 32497),	-- Honor the Flame
-					q( 30053),	-- Hop Hunting
-					q( 30376),	-- Hope Springs Eternal
-					q( 32682),	-- Inherit the Earth
-					q( 30085),	-- Into the Brewery
-					q( 33024),	-- Is That A Real Measurement?
+					q(31329),	-- A Beautiful Brooch
+					q(30400),	-- A Blue Feather for Chee Chee
+					q(30382),	-- A Blue Feather for Ella
+					q(30419),	-- A Blue Feather for Farmer Fung
+					q(30425),	-- A Blue Feather for Fish
+					q(30388),	-- A Blue Feather for Gina
+					q(30412),	-- A Blue Feather for Haohan
+					q(30437),	-- A Blue Feather for Jogu
+					q(30394),	-- A Blue Feather for Old Hillpaw
+					q(30406),	-- A Blue Feather for Sho
+					q(30431),	-- A Blue Feather for Tina
+					q(30275),	-- A Crocolisk Tale
+					q(30402),	-- A Dish for Chee Chee
+					q(30386),	-- A Dish for Ella
+					q(30421),	-- A Dish for Farmer Fung
+					q(30427),	-- A Dish for Fish
+					q(30390),	-- A Dish for Gina
+					q(30414),	-- A Dish for Haohan
+					q(30439),	-- A Dish for Jogu
+					q(30396),	-- A Dish for Old Hillpaw
+					q(30408),	-- A Dish for Sho
+					q(30433),	-- A Dish for Tina
+					q(30471),	-- A Gift For Chee Chee
+					q(30474),	-- A Gift For Ella
+					q(30473),	-- A Gift For Fish
+					q(30475),	-- A Gift For Fung
+					q(30479),	-- A Gift For Gina
+					q(30477),	-- A Gift For Haohan
+					q(30478),	-- A Gift For Jogu
+					q(30476),	-- A Gift For Old Hillpaw
+					q(30472),	-- A Gift For Sho
+					q(30470),	-- A Gift For Tina
+					q(30252),	-- A Helping Hand
+					q(30399),	-- A Jade Cat for Chee Chee
+					q(30381),	-- A Jade Cat for Ella
+					q(30418),	-- A Jade Cat for Farmer Fung
+					q(30424),	-- A Jade Cat for Fish
+					q(30387),	-- A Jade Cat for Gina
+					q(30411),	-- A Jade Cat for Haohan
+					q(30436),	-- A Jade Cat for Jogu
+					q(30393),	-- A Jade Cat for Old Hillpaw
+					q(30405),	-- A Jade Cat for Sho
+					q(30430),	-- A Jade Cat for Tina
+					q(29918),	-- A Lesson in Bravery
+					q(30398),	-- A Lovely Apple for Chee Chee
+					q(30189),	-- A Lovely Apple for Ella
+					q(30417),	-- A Lovely Apple for Farmer Fung
+					q(30423),	-- A Lovely Apple for Fish
+					q(30380),	-- A Lovely Apple for Gina
+					q(30410),	-- A Lovely Apple for Haohan
+					q(30435),	-- A Lovely Apple for Jogu
+					q(30392),	-- A Lovely Apple for Old Hillpaw
+					q(30404),	-- A Lovely Apple for Sho
+					q(30429),	-- A Lovely Apple for Tina
+					q(30401),	-- A Marsh Lily for Chee Chee
+					q(30383),	-- A Marsh Lily for Ella
+					q(30420),	-- A Marsh Lily for Farmer Fung
+					q(30426),	-- A Marsh Lily for Fish
+					q(30389),	-- A Marsh Lily for Gina
+					q(30413),	-- A Marsh Lily for Haohan
+					q(30438),	-- A Marsh Lily for Jogu
+					q(30395),	-- A Marsh Lily for Old Hillpaw
+					q(30407),	-- A Marsh Lily for Sho
+					q(30432),	-- A Marsh Lily for Tina
+					q(29915),	-- A Neighbor's Duty
+					q(29877),	-- A Poor Grasp of the Basics
+					q(31672),	-- A Pumpkin-y Perfume
+					q(30397),	-- A Ruby Shard for Chee Chee
+					q(30160),	-- A Ruby Shard for Ella
+					q(30416),	-- A Ruby Shard for Farmer Fung
+					q(30422),	-- A Ruby Shard for Fish
+					q(30379),	-- A Ruby Shard for Gina
+					q(30409),	-- A Ruby Shard for Haohan
+					q(30434),	-- A Ruby Shard for Jogu
+					q(30391),	-- A Ruby Shard for Old Hillpaw
+					q(30403),	-- A Ruby Shard for Sho
+					q(30428),	-- A Ruby Shard for Tina
+					q(30534),	-- A Second Hand
+					q(29908),	-- A Seemingly Endless Nuisance
+					q(32189),	-- A Shabby New Face
+					q(29988),	-- A Taste For Eggs
+					q(31325),	-- A Very Nice Necklace
+					q(31341),	-- A Wolf In Sheep's Clothing
+					q(31538),	-- A Worthy Brew
+					q(31471),	-- Agile as a Tiger
+					q(31328),	-- An Exquisite Earring
+					q(29577),	-- Ashyo's Vision
+					q(29914),	-- Back to the Sty
+					q(30172),	-- Barreling Along
+					q(30077),	-- Barrels, Man
+					q(29757),	-- Bottletoads
+					q(29952),	-- Broken Dreams
+					q(31323),	-- Buy A Fish A Brewery?
+					q(31320),	-- Buy A Fish A Drink?
+					q(31322),	-- Buy A Fish A Keg?
+					q(31321),	-- Buy A Fish A Round?
+					q(32046),	-- Candy Bucket
+					q(32048),	-- Candy Bucket
+					q(33022),	-- Catch and Carry
+					q(30318),	-- Chasing the Chicken
+					q(29907),	-- Chen and Li Li
+					q(30046),	-- Chen's Resolution
+					q(32045),	-- Children of the Water
+					q(30329),	-- Cindergut Peppers
+					q(30078),	-- Cleaning House
+					q(30075),	-- Clear the Way
+					q(29871),	-- Clever Ashyo
+					q(29947),	-- Crouching Carrot, Hidden Turnip
+					q(30049),	-- Doesn't Hold Water
+					q(31537),	-- Ella's Taste Test
+					q(31477),	-- Endurance
+					q(30054),	-- Enough is Ookin' Enough
+					q(29982),	-- Evacuation Orders
+					q(31279),	-- Everything I Know About Cooking
+					q(31486),	-- Everything I Know About Cooking
+					q(30517),	-- Farmer Fung's Vote I: Yak Attack
+					q(30518),	-- Farmer Fung's Vote II: On the Loose
+					q(31947),	-- Farmer Fung's Vote III: Crazy For Cabbage
+					q(30332),	-- Fatty Goatsteak
+					q(29986),	-- Fog Wards
+					q(30182),	-- Fox Mastery
+					q(30050),	-- Gardener Fran and the Watering Can
+					q(32035),	-- Got Silk?
+					q(30028),	-- Grain Recovery
+					q(31955),	-- Grand Master Nishi
+					q(29919),	-- Great Minds Drink Alike
+					q(30516),	-- Growing the Farm I: A Little Problem
+					q(30260),	-- Growing the Farm I: The Weeds
+					q(30524),	-- Growing the Farm II: Knock on Wood
+					q(30523),	-- Growing the Farm II: The Broken Wagon
+					q(30529),	-- Growing the Farm III: The Mossy Boulder
+					q(29758),	-- Guess Whose Back
+					q(30521),	-- Haohan's Vote I: Bungalow Break-In
+					q(30522),	-- Haohan's Vote II: The Real Culprits
+					q(30525),	-- Haohan's Vote III: Pure Poison
+					q(30527),	-- Haohan's Vote IV: Melons For Felons
+					q(30528),	-- Haohan's Vote V: Chief Yip-Yip
+					q(31480),	-- Have a Drink
+					q(32018),	-- His Name Was... Stormstout
+					q(38935),	-- His Name Was... Stormstout
+					q(32502),	-- Honor the Flame
+					q(32497),	-- Honor the Flame
+					q(30053),	-- Hop Hunting
+					q(30376),	-- Hope Springs Eternal
+					q(32682),	-- Inherit the Earth
+					q(30085),	-- Into the Brewery
+					q(33024),	-- Is That A Real Measurement?
 					qa( 30624),	-- It Does You No Good In The Keg
 					qh( 30653),	-- It Does You No Good In The Keg
-					q( 31942),	-- It's Melon Time
-					q( 31313),	-- Just A Folk Story
+					q(31942),	-- It's Melon Time
+					q(31313),	-- Just A Folk Story
 					qa( 29874),	-- Kang Bramblestaff
 					qh( 29875),	-- Kang Bramblestaff
-					q( 29873),	-- Ken-Ken
-					q( 30074),	-- Knocking on the Door
-					q( 29944),	-- Leaders Among Breeders
-					q( 30535),	-- Learn and Grow I: Seeds
-					q( 30254),	-- Learn and Grow II: Tilling and Planting
-					q( 30255),	-- Learn and Grow III: Tending Crops
-					q( 30256),	-- Learn and Grow IV: Harvesting
-					q( 30257),	-- Learn and Grow V: Halfhill Market
-					q( 31945),	-- Learn and Grow VI: Gina's Vote
-					q( 29949),	-- Legacy
-					q( 30048),	-- Li Li and the Grain
-					q( 29950),	-- Li Li's Day Off
-					q( 29872),	-- Lin Tenderpaw
-					q( 30526),	-- Lost and Lonely
-					q( 31338),	-- Lost Sheepie
-					q( 31339),	-- Lost Sheepie... Again
-					q( 29909),	-- Low Turnip Turnout
-					q( 29917),	-- Lupello
-					q( 31531),	-- Mission: Aerial Threat
-					q( 31529),	-- Mission: Culling The Vermin
-					q( 31532),	-- Mission: Predator of the Cliffs
-					q( 31530),	-- Mission: The Hozen Dozen
-					q( 30322),	-- Money Matters
-					q( 30058),	-- Mothallus!
-					q( 29951),	-- Muddy Water
-					q( 30258),	-- Mung-Mung's Vote I: A Hozen's Problem
-					q( 30259),	-- Mung-Mung's Vote II: Rotten to the Core
-					q( 31946),	-- Mung-Mung's Vote III: The Great Carrot Caper
-					q( 30181),	-- Mushan Mastery
-					q( 30184),	-- Mushan Mastery: Darkhide
-					q( 30519),	-- Nana's Vote I: Nana's Secret Recipe
-					q( 31948),	-- Nana's Vote II: The Sacred Springs
-					q( 31949),	-- Nana's Vote III: Witchberry Julep
-					q( 32685),	-- No Fishing Pole Necessary!
-					q( 33146),	-- Noodle Time
-					q( 33358),	-- Noodle Time: Bonus
-					q( 30324),	-- Not in Chee-Chee's Backyard
-					q( 31340),	-- Oh Sheepie...
-					q( 31314),	-- Old Man Thistle's Treasure
-					q( 32198),	-- One Magical, Flying Kingdom's Trash...
-					q( 30030),	-- Out of Sprite
-					q( 30186),	-- Parental Mastery
-					q( 30319),	-- Pest Problems
-					q( 29916),	-- Piercing Talons and Slavering Jaws
-					q( 29911),	-- Practically Perfect Produce
-					q( 31536),	-- Preserving Freshness
-					q( 29910),	-- Rampaging Rodents
-					q( 31302),	-- Ready for Greatness
-					q( 31673),	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
-					q( 31535),	-- Replenishing the Pantry
-					q( 30626),	-- Retreat!
-					q( 33021),	-- Secrets Lost, Forever?
-					q( 30057),	-- Seeing Orange
-					q( 30337),	-- Simian Sabotage
-					q( 29600),	-- Snap Judgment
-					q( 31281),	-- So You Want to Be a Chef...
-					q( 31941),	-- Squash Those Foul Odors
-					q( 32038),	-- Stag Mastery
-					q( 30183),	-- Stalker Mastery
-					q( 30335),	-- Stalling the Ravage
-					q( 30334),	-- Stealing is Bad... Re-Stealing is OK
-					q( 29981),	-- Stemming the Swarm
-					q( 30117),	-- Stoneplow Thirsts
-					q( 30055),	-- Stormstout's Hops
-					q( 31467),	-- Strong as a Tiger
-					q( 30625),	-- Students No More
-					q( 29940),	-- Taking a Crop
-					q( 30031),	-- Taste Test
+					q(29873),	-- Ken-Ken
+					q(30074),	-- Knocking on the Door
+					q(29944),	-- Leaders Among Breeders
+					q(30535),	-- Learn and Grow I: Seeds
+					q(30254),	-- Learn and Grow II: Tilling and Planting
+					q(30255),	-- Learn and Grow III: Tending Crops
+					q(30256),	-- Learn and Grow IV: Harvesting
+					q(30257),	-- Learn and Grow V: Halfhill Market
+					q(31945),	-- Learn and Grow VI: Gina's Vote
+					q(29949),	-- Legacy
+					q(30048),	-- Li Li and the Grain
+					q(29950),	-- Li Li's Day Off
+					q(29872),	-- Lin Tenderpaw
+					q(30526),	-- Lost and Lonely
+					q(31338),	-- Lost Sheepie
+					q(31339),	-- Lost Sheepie... Again
+					q(29909),	-- Low Turnip Turnout
+					q(29917),	-- Lupello
+					q(31531),	-- Mission: Aerial Threat
+					q(31529),	-- Mission: Culling The Vermin
+					q(31532),	-- Mission: Predator of the Cliffs
+					q(31530),	-- Mission: The Hozen Dozen
+					q(30322),	-- Money Matters
+					q(30058),	-- Mothallus!
+					q(29951),	-- Muddy Water
+					q(30258),	-- Mung-Mung's Vote I: A Hozen's Problem
+					q(30259),	-- Mung-Mung's Vote II: Rotten to the Core
+					q(31946),	-- Mung-Mung's Vote III: The Great Carrot Caper
+					q(30181),	-- Mushan Mastery
+					q(30184),	-- Mushan Mastery: Darkhide
+					q(30519),	-- Nana's Vote I: Nana's Secret Recipe
+					q(31948),	-- Nana's Vote II: The Sacred Springs
+					q(31949),	-- Nana's Vote III: Witchberry Julep
+					q(32685),	-- No Fishing Pole Necessary!
+					q(33146),	-- Noodle Time
+					q(33358),	-- Noodle Time: Bonus
+					q(30324),	-- Not in Chee-Chee's Backyard
+					q(31340),	-- Oh Sheepie...
+					q(31314),	-- Old Man Thistle's Treasure
+					q(32198),	-- One Magical, Flying Kingdom's Trash...
+					q(30030),	-- Out of Sprite
+					q(30186),	-- Parental Mastery
+					q(30319),	-- Pest Problems
+					q(29916),	-- Piercing Talons and Slavering Jaws
+					q(29911),	-- Practically Perfect Produce
+					q(31536),	-- Preserving Freshness
+					q(29910),	-- Rampaging Rodents
+					q(31302),	-- Ready for Greatness
+					q(31673),	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
+					q(31535),	-- Replenishing the Pantry
+					q(30626),	-- Retreat!
+					q(33021),	-- Secrets Lost, Forever?
+					q(30057),	-- Seeing Orange
+					q(30337),	-- Simian Sabotage
+					q(29600),	-- Snap Judgment
+					q(31281),	-- So You Want to Be a Chef...
+					q(31941),	-- Squash Those Foul Odors
+					q(32038),	-- Stag Mastery
+					q(30183),	-- Stalker Mastery
+					q(30335),	-- Stalling the Ravage
+					q(30334),	-- Stealing is Bad... Re-Stealing is OK
+					q(29981),	-- Stemming the Swarm
+					q(30117),	-- Stoneplow Thirsts
+					q(30055),	-- Stormstout's Hops
+					q(31467),	-- Strong as a Tiger
+					q(30625),	-- Students No More
+					q(29940),	-- Taking a Crop
+					q(30031),	-- Taste Test
 					qa( 31392),	-- Temple of the White Tiger
 					qh( 31393),	-- Temple of the White Tiger
-					q( 29992),	-- Tenderpaw By Name, Tender Paw By Reputation
-					q( 31670),	-- That Dangling Carrot
-					q( 31938),	-- The "Earth-Slasher" Master Plow
-					q( 31936),	-- The "Jinyu Princess" Irrigation System
-					q( 31534),	-- The Beginner's Brew
-					q( 31669),	-- The Cabbage Test
-					q( 30047),	-- The Chen Taste Test
-					q( 30073),	-- The Emperor
-					q( 29912),	-- The Fabulous Miss Fanny
-					q( 30076),	-- The Fanciest Water
-					q( 30056),	-- The Farmer's Daughter
-					q( 29581),	-- The Golden Dream
-					q( 30628),	-- The Gratitude of Stoneplow
-					q( 30051),	-- The Great Water Hunt
-					q( 31315),	-- The Heartland Legacy
-					q( 29983),	-- The Hidden Master
-					q( 30336),	-- The Kunzen Hunter-Chief
-					q( 30326),	-- The Kunzen Legend-Chief
-					q( 30333),	-- The Lesser of Two Evils
-					q( 30623),	-- The Mantidote
-					q( 29913),	-- The Meat They'll Eat
-					q( 30331),	-- The Mile-High Grub
-					q( 30059),	-- The Moth Rebellion
-					q( 31312),	-- The Old Map
-					q( 31674),	-- The Pink Turnip Challenge
-					q( 30032),	-- The Quest for Better Barley
+					q(29992),	-- Tenderpaw By Name, Tender Paw By Reputation
+					q(31670),	-- That Dangling Carrot
+					q(31938),	-- The "Earth-Slasher" Master Plow
+					q(31936),	-- The "Jinyu Princess" Irrigation System
+					q(31534),	-- The Beginner's Brew
+					q(31669),	-- The Cabbage Test
+					q(30047),	-- The Chen Taste Test
+					q(30073),	-- The Emperor
+					q(29912),	-- The Fabulous Miss Fanny
+					q(30076),	-- The Fanciest Water
+					q(30056),	-- The Farmer's Daughter
+					q(29581),	-- The Golden Dream
+					q(30628),	-- The Gratitude of Stoneplow
+					q(30051),	-- The Great Water Hunt
+					q(31315),	-- The Heartland Legacy
+					q(29983),	-- The Hidden Master
+					q(30336),	-- The Kunzen Hunter-Chief
+					q(30326),	-- The Kunzen Legend-Chief
+					q(30333),	-- The Lesser of Two Evils
+					q(30623),	-- The Mantidote
+					q(29913),	-- The Meat They'll Eat
+					q(30331),	-- The Mile-High Grub
+					q(30059),	-- The Moth Rebellion
+					q(31312),	-- The Old Map
+					q(31674),	-- The Pink Turnip Challenge
+					q(30032),	-- The Quest for Better Barley
 					qh( 31255),	-- The Road to Kun-Lai
 					qa( 31254),	-- The Road to Kun-Lai
-					q( 30627),	-- The Savior of Stoneplow
-					q( 30086),	-- The Search for the Hidden Master
-					q( 33027),	-- The Secret Ingredient Is...
-					q( 31474),	-- The Soup of Contemplation
-					q( 31476),	-- The Spirit of Cooking
-					q( 30622),	-- The Swarm Begins
-					q( 30328),	-- The Thousand-Year Dumpling
+					q(30627),	-- The Savior of Stoneplow
+					q(30086),	-- The Search for the Hidden Master
+					q(33027),	-- The Secret Ingredient Is...
+					q(31474),	-- The Soup of Contemplation
+					q(31476),	-- The Spirit of Cooking
+					q(30622),	-- The Swarm Begins
+					q(30328),	-- The Thousand-Year Dumpling
 					qh( 31374),	-- The Tillers
 					qa( 31372),	-- The Tillers
-					q( 30330),	-- The Truffle Shuffle
-					q( 29946),	-- The Warren-Mother
-					q( 31675),	-- The White Turnip Treatment
-					q( 33026),	-- These Aren't Your Fatty Goatsteaks
-					q( 32019),	-- They Call Him... Stormstout
-					q( 30323),	-- They Don't Even Wear Them
-					q( 29985),	-- They Will Be Mist
-					q( 29948),	-- Thieves to the Core
-					q( 31937),	-- "Thunder King" Pest Repellers
-					q( 31326),	-- Tina's Tasteful Tiara
-					q( 31521),	-- To Be a Master
-					q( 30185),	-- Tortoise Mastery
-					q( 31153),	-- Tracking Event - Saved Diaani
-					q( 31154),	-- Tracking Event - Saved Zuulo
-					q( 30531),	-- Tracking Event: Finished First Expansion
-					q( 30533),	-- Tracking Event: Finished Second Expansion
-					q( 30574),	-- Tracking Event: Finished Third Expansion
-					q( 30530),	-- Tracking Event: Started First Expansion
-					q( 30532),	-- Tracking Event: Started Second Expansion
-					q( 30573),	-- Tracking Event: Started Third Expansion
-					q( 30564),	-- Tracking Event: Talked to Dog at Farm
-					q( 31960),	-- Tracking Event: Vote #1 Complete
-					q( 31961),	-- Tracking Event: Vote #2 Complete
-					q( 31962),	-- Tracking Event: Vote #3 Complete
-					q( 31963),	-- Tracking Event: Vote #4 Complete
-					q( 31964),	-- Tracking Event: Vote #5 Complete
-					q( 31965),	-- Tracking Event: Vote #6 Complete
-					q( 33900),	-- Tracking Quest: Activated Arkonite 3
-					q( 33901),	-- Tracking Quest: Activated Arkonite 4
-					q( 33903),	-- Tracking Quest: Romuul & Yrel Leave for Teluuna
-					q( 33899),	-- Tracking Quest: Turn on the Holograms
-					q( 29990),	-- Training and Discipline
-					q( 29984),	-- Unyielding Fists: Trial of Bamboo
-					q( 29989),	-- Unyielding Fists: Trial of Stone
-					q( 29987),	-- Unyielding Fists: Trial of Wood
+					q(30330),	-- The Truffle Shuffle
+					q(29946),	-- The Warren-Mother
+					q(31675),	-- The White Turnip Treatment
+					q(33026),	-- These Aren't Your Fatty Goatsteaks
+					q(32019),	-- They Call Him... Stormstout
+					q(30323),	-- They Don't Even Wear Them
+					q(29985),	-- They Will Be Mist
+					q(29948),	-- Thieves to the Core
+					q(31937),	-- "Thunder King" Pest Repellers
+					q(31326),	-- Tina's Tasteful Tiara
+					q(31521),	-- To Be a Master
+					q(30185),	-- Tortoise Mastery
+					q(31153),	-- Tracking Event - Saved Diaani
+					q(31154),	-- Tracking Event - Saved Zuulo
+					q(30531),	-- Tracking Event: Finished First Expansion
+					q(30533),	-- Tracking Event: Finished Second Expansion
+					q(30574),	-- Tracking Event: Finished Third Expansion
+					q(30530),	-- Tracking Event: Started First Expansion
+					q(30532),	-- Tracking Event: Started Second Expansion
+					q(30573),	-- Tracking Event: Started Third Expansion
+					q(30564),	-- Tracking Event: Talked to Dog at Farm
+					q(31960),	-- Tracking Event: Vote #1 Complete
+					q(31961),	-- Tracking Event: Vote #2 Complete
+					q(31962),	-- Tracking Event: Vote #3 Complete
+					q(31963),	-- Tracking Event: Vote #4 Complete
+					q(31964),	-- Tracking Event: Vote #5 Complete
+					q(31965),	-- Tracking Event: Vote #6 Complete
+					q(33900),	-- Tracking Quest: Activated Arkonite 3
+					q(33901),	-- Tracking Quest: Activated Arkonite 4
+					q(33903),	-- Tracking Quest: Romuul & Yrel Leave for Teluuna
+					q(33899),	-- Tracking Quest: Turn on the Holograms
+					q(29990),	-- Training and Discipline
+					q(29984),	-- Unyielding Fists: Trial of Bamboo
+					q(29989),	-- Unyielding Fists: Trial of Stone
+					q(29987),	-- Unyielding Fists: Trial of Wood
 					qh( 30241),	-- Warn Stoneplow
 					qa( 30360),	-- Warn Stoneplow
-					q( 30317),	-- Water, Water Everywhere
-					q( 30267),	-- Watery Woes
-					q( 31479),	-- Way of the Brew
-					q( 31311),	-- Way of the Grill
-					q( 31478),	-- Way of the Oven
-					q( 31472),	-- Way of the Pot
-					q( 31475),	-- Way of the Steamer
-					q( 31470),	-- Way of the Wok
-					q( 30029),	-- Wee Little Shenanigans
-					q( 30052),	-- Weed War
-					q( 30321),	-- Weed War II
-					q( 30325),	-- Where It Counts
-					q( 30072),	-- Where Silk Comes From
-					q( 31943),	-- Which Berries? Witchberries.
-					q( 31671),	-- Why Not Scallions?
+					q(30317),	-- Water, Water Everywhere
+					q(30267),	-- Watery Woes
+					q(31479),	-- Way of the Brew
+					q(31311),	-- Way of the Grill
+					q(31478),	-- Way of the Oven
+					q(31472),	-- Way of the Pot
+					q(31475),	-- Way of the Steamer
+					q(31470),	-- Way of the Wok
+					q(30029),	-- Wee Little Shenanigans
+					q(30052),	-- Weed War
+					q(30321),	-- Weed War II
+					q(30325),	-- Where It Counts
+					q(30072),	-- Where Silk Comes From
+					q(31943),	-- Which Berries? Witchberries.
+					q(31671),	-- Why Not Scallions?
 					qh( 32642),	-- Work Order: Dominance Offensive I
 					qh( 32643),	-- Work Order: Dominance Offensive II
-					q( 32647),	-- Work Order: Golden Lotus I
-					q( 32648),	-- Work Order: Golden Lotus II
+					q(32647),	-- Work Order: Golden Lotus I
+					q(32648),	-- Work Order: Golden Lotus II
 					qa( 32944),	-- Work Order: Kirin Tor Offensive I
 					qa( 32945),	-- Work Order: Kirin Tor Offensive II
 					qa( 32645),	-- Work Order: Operation: Shieldwall I
 					qa( 32646),	-- Work Order: Operation: Shieldwall II
-					q( 32649),	-- Work Order: Shado-Pan I
-					q( 32650),	-- Work Order: Shado-Pan II
+					q(32649),	-- Work Order: Shado-Pan I
+					q(32650),	-- Work Order: Shado-Pan II
 					qh( 32942),	-- Work Order: Sunreaver Onslaught I
 					qh( 32943),	-- Work Order: Sunreaver Onslaught II
-					q( 32653),	-- Work Order: The August Celestials I
-					q( 32657),	-- Work Order: The August Celestials II
-					q( 32658),	-- Work Order: The Klaxxi I
-					q( 32659),	-- Work Order: The Klaxxi II
-					q( 29945),	-- Yellow and Red Make Orange
-					q( 30327),	-- You Have to Burn the Ropes
-					q( 32684),	-- You Want Fish?
+					q(32653),	-- Work Order: The August Celestials I
+					q(32657),	-- Work Order: The August Celestials II
+					q(32658),	-- Work Order: The Klaxxi I
+					q(32659),	-- Work Order: The Klaxxi II
+					q(29945),	-- Yellow and Red Make Orange
+					q(30327),	-- You Have to Burn the Ropes
+					q(32684),	-- You Want Fish?
 --]]
 					q(31820,  {		-- A Present for Teacher
 						["groups"] = {
@@ -1510,148 +1510,148 @@ _.Zones =
 						i(91761),	-- Malevolent Gladiator's Slicer
 						i(91484),	-- Malevolent Gladiator's Spellblade
 						i(91535),	-- Malevolent Gladiator's Staff
-						i( 91618),	-- Malevolent Gladiator's Copperskin Tunic
-						i( 91626),	-- Malevolent Gladiator's Scaled Legguards
-						i( 91454),	-- Malevolent Gladiator's Cape of Prowess
-						i( 91462),	-- Malevolent Gladiator's Cord of Cruelty
-						i( 91464),	-- Malevolent Gladiator's Cord of Accuracy
-						i( 91466),	-- Malevolent Gladiator's Cord of Meditation
-						i( 91468),	-- Malevolent Gladiator's Treads of Cruelty
-						i( 91470),	-- Malevolent Gladiator's Treads of Alacrity
-						i( 91472),	-- Malevolent Gladiator's Treads of Meditation
-						i( 91474),	-- Malevolent Gladiator's Cuffs of Accuracy
-						i( 91475),	-- Malevolent Gladiator's Cuffs of Prowess
-						i( 91476),	-- Malevolent Gladiator's Cuffs of Meditation
-						i( 91477),	-- Malevolent Gladiator's Drape of Cruelty
-						i( 91478),	-- Malevolent Gladiator's Drape of Prowess
-						i( 91479),	-- Malevolent Gladiator's Drape of Meditation
-						i( 91500),	-- Malevolent Gladiator's Dreadplate Chestpiece
-						i( 91502),	-- Malevolent Gladiator's Dreadplate Gauntlets
-						i( 91504),	-- Malevolent Gladiator's Dreadplate Helm
-						i( 91506),	-- Malevolent Gladiator's Dreadplate Legguards
-						i( 91508),	-- Malevolent Gladiator's Dreadplate Shoulders
-						i( 91510),	-- Malevolent Gladiator's Dragonhide Gloves
-						i( 91512),	-- Malevolent Gladiator's Dragonhide Helm
-						i( 91514),	-- Malevolent Gladiator's Dragonhide Legguards
-						i( 91516),	-- Malevolent Gladiator's Dragonhide Robes
-						i( 91518),	-- Malevolent Gladiator's Dragonhide Spaulders
-						i( 91520),	-- Malevolent Gladiator's Belt of Meditation
-						i( 91522),	-- Malevolent Gladiator's Footguards of Meditation
-						i( 91524),	-- Malevolent Gladiator's Bindings of Meditation
-						i( 91525),	-- Malevolent Gladiator's Kodohide Gloves
-						i( 91527),	-- Malevolent Gladiator's Kodohide Helm
-						i( 91529),	-- Malevolent Gladiator's Kodohide Legguards
-						i( 91531),	-- Malevolent Gladiator's Kodohide Robes
-						i( 91533),	-- Malevolent Gladiator's Kodohide Spaulders
-						i( 91537),	-- Malevolent Gladiator's Belt of Cruelty
-						i( 91539),	-- Malevolent Gladiator's Footguards of Alacrity
-						i( 91541),	-- Malevolent Gladiator's Bindings of Prowess
-						i( 91542),	-- Malevolent Gladiator's Wyrmhide Gloves
-						i( 91544),	-- Malevolent Gladiator's Wyrmhide Helm
-						i( 91546),	-- Malevolent Gladiator's Wyrmhide Legguards
-						i( 91548),	-- Malevolent Gladiator's Wyrmhide Robes
-						i( 91550),	-- Malevolent Gladiator's Wyrmhide Spaulders
-						i( 91565),	-- Malevolent Gladiator's Links of Cruelty
-						i( 91567),	-- Malevolent Gladiator's Links of Accuracy
-						i( 91569),	-- Malevolent Gladiator's Sabatons of Cruelty
-						i( 91571),	-- Malevolent Gladiator's Sabatons of Alacrity
-						i( 91573),	-- Malevolent Gladiator's Wristguards of Alacrity
-						i( 91574),	-- Malevolent Gladiator's Wristguards of Accuracy
-						i( 91575),	-- Malevolent Gladiator's Chain Armor
-						i( 91577),	-- Malevolent Gladiator's Chain Gauntlets
-						i( 91579),	-- Malevolent Gladiator's Chain Helm
-						i( 91581),	-- Malevolent Gladiator's Chain Leggings
-						i( 91583),	-- Malevolent Gladiator's Chain Spaulders
-						i( 91585),	-- Malevolent Gladiator's Silk Handguards
-						i( 91587),	-- Malevolent Gladiator's Silk Cowl
-						i( 91589),	-- Malevolent Gladiator's Silk Trousers
-						i( 91591),	-- Malevolent Gladiator's Silk Robe
-						i( 91593),	-- Malevolent Gladiator's Silk Amice
-						i( 91595),	-- Malevolent Gladiator's Waistband of Cruelty
-						i( 91597),	-- Malevolent Gladiator's Boots of Alacrity
-						i( 91599),	-- Malevolent Gladiator's Armwraps of Accuracy
-						i( 91600),	-- Malevolent Gladiator's Ironskin Gloves
-						i( 91602),	-- Malevolent Gladiator's Ironskin Helm
-						i( 91604),	-- Malevolent Gladiator's Ironskin Legguards
-						i( 91606),	-- Malevolent Gladiator's Ironskin Spaulders
-						i( 91608),	-- Malevolent Gladiator's Ironskin Tunic
-						i( 91610),	-- Malevolent Gladiator's Copperskin Gloves
-						i( 91612),	-- Malevolent Gladiator's Copperskin Helm
-						i( 91614),	-- Malevolent Gladiator's Copperskin Legguards
-						i( 91616),	-- Malevolent Gladiator's Copperskin Spaulders
-						i( 91453),	-- Malevolent Gladiator's Cape of Cruelty
-						i( 91620),	-- Malevolent Gladiator's Scaled Chestpiece
-						i( 91622),	-- Malevolent Gladiator's Scaled Gauntlets
-						i( 91624),	-- Malevolent Gladiator's Scaled Helm
-						i( 91628),	-- Malevolent Gladiator's Scaled Shoulders
-						i( 91630),	-- Malevolent Gladiator's Clasp of Cruelty
-						i( 91632),	-- Malevolent Gladiator's Clasp of Meditation
-						i( 91634),	-- Malevolent Gladiator's Greaves of Alacrity
-						i( 91636),	-- Malevolent Gladiator's Greaves of Meditation
-						i( 91638),	-- Malevolent Gladiator's Bracers of Prowess
-						i( 91639),	-- Malevolent Gladiator's Bracers of Meditation
-						i( 91640),	-- Malevolent Gladiator's Ornamented Chestguard
-						i( 91642),	-- Malevolent Gladiator's Ornamented Gloves
-						i( 91644),	-- Malevolent Gladiator's Ornamented Headcover
-						i( 91646),	-- Malevolent Gladiator's Ornamented Legplates
-						i( 91648),	-- Malevolent Gladiator's Ornamented Spaulders
-						i( 91650),	-- Malevolent Gladiator's Girdle of Accuracy
-						i( 91652),	-- Malevolent Gladiator's Girdle of Prowess
-						i( 91654),	-- Malevolent Gladiator's Warboots of Cruelty
-						i( 91656),	-- Malevolent Gladiator's Warboots of Alacrity
-						i( 91658),	-- Malevolent Gladiator's Armplates of Proficiency
-						i( 91659),	-- Malevolent Gladiator's Armplates of Alacrity
-						i( 91662),	-- Malevolent Gladiator's Mooncloth Gloves
-						i( 91664),	-- Malevolent Gladiator's Mooncloth Helm
-						i( 91666),	-- Malevolent Gladiator's Mooncloth Leggings
-						i( 91668),	-- Malevolent Gladiator's Mooncloth Robe
-						i( 91670),	-- Malevolent Gladiator's Mooncloth Mantle
-						i( 91672),	-- Malevolent Gladiator's Satin Gloves
-						i( 91674),	-- Malevolent Gladiator's Satin Hood
-						i( 91676),	-- Malevolent Gladiator's Satin Leggings
-						i( 91678),	-- Malevolent Gladiator's Satin Robe
-						i( 91680),	-- Malevolent Gladiator's Satin Mantle
-						i( 91688),	-- Malevolent Gladiator's Waistband of Accuracy
-						i( 91690),	-- Malevolent Gladiator's Boots of Cruelty
-						i( 91692),	-- Malevolent Gladiator's Armwraps of Alacrity
-						i( 91693),	-- Malevolent Gladiator's Leather Tunic
-						i( 91695),	-- Malevolent Gladiator's Leather Gloves
-						i( 91697),	-- Malevolent Gladiator's Leather Helm
-						i( 91699),	-- Malevolent Gladiator's Leather Legguards
-						i( 91701),	-- Malevolent Gladiator's Leather Spaulders
-						i( 91703),	-- Malevolent Gladiator's Waistguard of Meditation
-						i( 91705),	-- Malevolent Gladiator's Footguards of Alacrity
-						i( 91707),	-- Malevolent Gladiator's Footguards of Meditation
-						i( 91709),	-- Malevolent Gladiator's Armbands of Prowess
-						i( 91710),	-- Malevolent Gladiator's Armbands of Meditation
-						i( 91711),	-- Malevolent Gladiator's Ringmail Armor
-						i( 91713),	-- Malevolent Gladiator's Ringmail Gauntlets
-						i( 91715),	-- Malevolent Gladiator's Ringmail Helm
-						i( 91717),	-- Malevolent Gladiator's Ringmail Leggings
-						i( 91719),	-- Malevolent Gladiator's Ringmail Spaulders
-						i( 91721),	-- Malevolent Gladiator's Linked Armor
-						i( 91723),	-- Malevolent Gladiator's Linked Gauntlets
-						i( 91725),	-- Malevolent Gladiator's Linked Helm
-						i( 91727),	-- Malevolent Gladiator's Linked Leggings
-						i( 91729),	-- Malevolent Gladiator's Linked Spaulders
-						i( 91731),	-- Malevolent Gladiator's Waistguard of Cruelty
-						i( 91733),	-- Malevolent Gladiator's Mail Armor
-						i( 91735),	-- Malevolent Gladiator's Mail Gauntlets
-						i( 91737),	-- Malevolent Gladiator's Mail Helm
-						i( 91739),	-- Malevolent Gladiator's Mail Leggings
-						i( 91741),	-- Malevolent Gladiator's Mail Spaulders
-						i( 91764),	-- Malevolent Gladiator's Cloak of Alacrity
-						i( 91765),	-- Malevolent Gladiator's Cloak of Prowess
-						i( 91773),	-- Malevolent Gladiator's Felweave Handguards
-						i( 91775),	-- Malevolent Gladiator's Felweave Cowl
-						i( 91777),	-- Malevolent Gladiator's Felweave Trousers
-						i( 91779),	-- Malevolent Gladiator's Felweave Raiment
-						i( 91781),	-- Malevolent Gladiator's Felweave Amice
-						i( 91783),	-- Malevolent Gladiator's Plate Chestpiece
-						i( 91785),	-- Malevolent Gladiator's Plate Gauntlets
-						i( 91787),	-- Malevolent Gladiator's Plate Helm
-						i( 91789),	-- Malevolent Gladiator's Plate Legguards
-						i( 91791),	-- Malevolent Gladiator's Plate Shoulders
+						i(91618),	-- Malevolent Gladiator's Copperskin Tunic
+						i(91626),	-- Malevolent Gladiator's Scaled Legguards
+						i(91454),	-- Malevolent Gladiator's Cape of Prowess
+						i(91462),	-- Malevolent Gladiator's Cord of Cruelty
+						i(91464),	-- Malevolent Gladiator's Cord of Accuracy
+						i(91466),	-- Malevolent Gladiator's Cord of Meditation
+						i(91468),	-- Malevolent Gladiator's Treads of Cruelty
+						i(91470),	-- Malevolent Gladiator's Treads of Alacrity
+						i(91472),	-- Malevolent Gladiator's Treads of Meditation
+						i(91474),	-- Malevolent Gladiator's Cuffs of Accuracy
+						i(91475),	-- Malevolent Gladiator's Cuffs of Prowess
+						i(91476),	-- Malevolent Gladiator's Cuffs of Meditation
+						i(91477),	-- Malevolent Gladiator's Drape of Cruelty
+						i(91478),	-- Malevolent Gladiator's Drape of Prowess
+						i(91479),	-- Malevolent Gladiator's Drape of Meditation
+						i(91500),	-- Malevolent Gladiator's Dreadplate Chestpiece
+						i(91502),	-- Malevolent Gladiator's Dreadplate Gauntlets
+						i(91504),	-- Malevolent Gladiator's Dreadplate Helm
+						i(91506),	-- Malevolent Gladiator's Dreadplate Legguards
+						i(91508),	-- Malevolent Gladiator's Dreadplate Shoulders
+						i(91510),	-- Malevolent Gladiator's Dragonhide Gloves
+						i(91512),	-- Malevolent Gladiator's Dragonhide Helm
+						i(91514),	-- Malevolent Gladiator's Dragonhide Legguards
+						i(91516),	-- Malevolent Gladiator's Dragonhide Robes
+						i(91518),	-- Malevolent Gladiator's Dragonhide Spaulders
+						i(91520),	-- Malevolent Gladiator's Belt of Meditation
+						i(91522),	-- Malevolent Gladiator's Footguards of Meditation
+						i(91524),	-- Malevolent Gladiator's Bindings of Meditation
+						i(91525),	-- Malevolent Gladiator's Kodohide Gloves
+						i(91527),	-- Malevolent Gladiator's Kodohide Helm
+						i(91529),	-- Malevolent Gladiator's Kodohide Legguards
+						i(91531),	-- Malevolent Gladiator's Kodohide Robes
+						i(91533),	-- Malevolent Gladiator's Kodohide Spaulders
+						i(91537),	-- Malevolent Gladiator's Belt of Cruelty
+						i(91539),	-- Malevolent Gladiator's Footguards of Alacrity
+						i(91541),	-- Malevolent Gladiator's Bindings of Prowess
+						i(91542),	-- Malevolent Gladiator's Wyrmhide Gloves
+						i(91544),	-- Malevolent Gladiator's Wyrmhide Helm
+						i(91546),	-- Malevolent Gladiator's Wyrmhide Legguards
+						i(91548),	-- Malevolent Gladiator's Wyrmhide Robes
+						i(91550),	-- Malevolent Gladiator's Wyrmhide Spaulders
+						i(91565),	-- Malevolent Gladiator's Links of Cruelty
+						i(91567),	-- Malevolent Gladiator's Links of Accuracy
+						i(91569),	-- Malevolent Gladiator's Sabatons of Cruelty
+						i(91571),	-- Malevolent Gladiator's Sabatons of Alacrity
+						i(91573),	-- Malevolent Gladiator's Wristguards of Alacrity
+						i(91574),	-- Malevolent Gladiator's Wristguards of Accuracy
+						i(91575),	-- Malevolent Gladiator's Chain Armor
+						i(91577),	-- Malevolent Gladiator's Chain Gauntlets
+						i(91579),	-- Malevolent Gladiator's Chain Helm
+						i(91581),	-- Malevolent Gladiator's Chain Leggings
+						i(91583),	-- Malevolent Gladiator's Chain Spaulders
+						i(91585),	-- Malevolent Gladiator's Silk Handguards
+						i(91587),	-- Malevolent Gladiator's Silk Cowl
+						i(91589),	-- Malevolent Gladiator's Silk Trousers
+						i(91591),	-- Malevolent Gladiator's Silk Robe
+						i(91593),	-- Malevolent Gladiator's Silk Amice
+						i(91595),	-- Malevolent Gladiator's Waistband of Cruelty
+						i(91597),	-- Malevolent Gladiator's Boots of Alacrity
+						i(91599),	-- Malevolent Gladiator's Armwraps of Accuracy
+						i(91600),	-- Malevolent Gladiator's Ironskin Gloves
+						i(91602),	-- Malevolent Gladiator's Ironskin Helm
+						i(91604),	-- Malevolent Gladiator's Ironskin Legguards
+						i(91606),	-- Malevolent Gladiator's Ironskin Spaulders
+						i(91608),	-- Malevolent Gladiator's Ironskin Tunic
+						i(91610),	-- Malevolent Gladiator's Copperskin Gloves
+						i(91612),	-- Malevolent Gladiator's Copperskin Helm
+						i(91614),	-- Malevolent Gladiator's Copperskin Legguards
+						i(91616),	-- Malevolent Gladiator's Copperskin Spaulders
+						i(91453),	-- Malevolent Gladiator's Cape of Cruelty
+						i(91620),	-- Malevolent Gladiator's Scaled Chestpiece
+						i(91622),	-- Malevolent Gladiator's Scaled Gauntlets
+						i(91624),	-- Malevolent Gladiator's Scaled Helm
+						i(91628),	-- Malevolent Gladiator's Scaled Shoulders
+						i(91630),	-- Malevolent Gladiator's Clasp of Cruelty
+						i(91632),	-- Malevolent Gladiator's Clasp of Meditation
+						i(91634),	-- Malevolent Gladiator's Greaves of Alacrity
+						i(91636),	-- Malevolent Gladiator's Greaves of Meditation
+						i(91638),	-- Malevolent Gladiator's Bracers of Prowess
+						i(91639),	-- Malevolent Gladiator's Bracers of Meditation
+						i(91640),	-- Malevolent Gladiator's Ornamented Chestguard
+						i(91642),	-- Malevolent Gladiator's Ornamented Gloves
+						i(91644),	-- Malevolent Gladiator's Ornamented Headcover
+						i(91646),	-- Malevolent Gladiator's Ornamented Legplates
+						i(91648),	-- Malevolent Gladiator's Ornamented Spaulders
+						i(91650),	-- Malevolent Gladiator's Girdle of Accuracy
+						i(91652),	-- Malevolent Gladiator's Girdle of Prowess
+						i(91654),	-- Malevolent Gladiator's Warboots of Cruelty
+						i(91656),	-- Malevolent Gladiator's Warboots of Alacrity
+						i(91658),	-- Malevolent Gladiator's Armplates of Proficiency
+						i(91659),	-- Malevolent Gladiator's Armplates of Alacrity
+						i(91662),	-- Malevolent Gladiator's Mooncloth Gloves
+						i(91664),	-- Malevolent Gladiator's Mooncloth Helm
+						i(91666),	-- Malevolent Gladiator's Mooncloth Leggings
+						i(91668),	-- Malevolent Gladiator's Mooncloth Robe
+						i(91670),	-- Malevolent Gladiator's Mooncloth Mantle
+						i(91672),	-- Malevolent Gladiator's Satin Gloves
+						i(91674),	-- Malevolent Gladiator's Satin Hood
+						i(91676),	-- Malevolent Gladiator's Satin Leggings
+						i(91678),	-- Malevolent Gladiator's Satin Robe
+						i(91680),	-- Malevolent Gladiator's Satin Mantle
+						i(91688),	-- Malevolent Gladiator's Waistband of Accuracy
+						i(91690),	-- Malevolent Gladiator's Boots of Cruelty
+						i(91692),	-- Malevolent Gladiator's Armwraps of Alacrity
+						i(91693),	-- Malevolent Gladiator's Leather Tunic
+						i(91695),	-- Malevolent Gladiator's Leather Gloves
+						i(91697),	-- Malevolent Gladiator's Leather Helm
+						i(91699),	-- Malevolent Gladiator's Leather Legguards
+						i(91701),	-- Malevolent Gladiator's Leather Spaulders
+						i(91703),	-- Malevolent Gladiator's Waistguard of Meditation
+						i(91705),	-- Malevolent Gladiator's Footguards of Alacrity
+						i(91707),	-- Malevolent Gladiator's Footguards of Meditation
+						i(91709),	-- Malevolent Gladiator's Armbands of Prowess
+						i(91710),	-- Malevolent Gladiator's Armbands of Meditation
+						i(91711),	-- Malevolent Gladiator's Ringmail Armor
+						i(91713),	-- Malevolent Gladiator's Ringmail Gauntlets
+						i(91715),	-- Malevolent Gladiator's Ringmail Helm
+						i(91717),	-- Malevolent Gladiator's Ringmail Leggings
+						i(91719),	-- Malevolent Gladiator's Ringmail Spaulders
+						i(91721),	-- Malevolent Gladiator's Linked Armor
+						i(91723),	-- Malevolent Gladiator's Linked Gauntlets
+						i(91725),	-- Malevolent Gladiator's Linked Helm
+						i(91727),	-- Malevolent Gladiator's Linked Leggings
+						i(91729),	-- Malevolent Gladiator's Linked Spaulders
+						i(91731),	-- Malevolent Gladiator's Waistguard of Cruelty
+						i(91733),	-- Malevolent Gladiator's Mail Armor
+						i(91735),	-- Malevolent Gladiator's Mail Gauntlets
+						i(91737),	-- Malevolent Gladiator's Mail Helm
+						i(91739),	-- Malevolent Gladiator's Mail Leggings
+						i(91741),	-- Malevolent Gladiator's Mail Spaulders
+						i(91764),	-- Malevolent Gladiator's Cloak of Alacrity
+						i(91765),	-- Malevolent Gladiator's Cloak of Prowess
+						i(91773),	-- Malevolent Gladiator's Felweave Handguards
+						i(91775),	-- Malevolent Gladiator's Felweave Cowl
+						i(91777),	-- Malevolent Gladiator's Felweave Trousers
+						i(91779),	-- Malevolent Gladiator's Felweave Raiment
+						i(91781),	-- Malevolent Gladiator's Felweave Amice
+						i(91783),	-- Malevolent Gladiator's Plate Chestpiece
+						i(91785),	-- Malevolent Gladiator's Plate Gauntlets
+						i(91787),	-- Malevolent Gladiator's Plate Helm
+						i(91789),	-- Malevolent Gladiator's Plate Legguards
+						i(91791),	-- Malevolent Gladiator's Plate Shoulders
 					}),
 					n(64395, { --	Nam Ironpaw <Stockmaster>
 						i(88801),	-- Flippable Table

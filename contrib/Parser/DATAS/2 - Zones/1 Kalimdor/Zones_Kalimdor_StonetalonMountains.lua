@@ -156,8 +156,8 @@ _.Zones =
 					}),
 					qa(25822, {	-- Armaments for War
 						["groups"] = {
-							i( 57449),	-- Diplomat's Chestguard
-							i( 57448),	-- Basecamp Leggings
+							i(57449),	-- Diplomat's Chestguard
+							i(57448),	-- Basecamp Leggings
 							i(131447),	-- Basecamp Breeches
 						},
 						["qg"] = 41229,	-- Force Commander Valen
@@ -171,8 +171,8 @@ _.Zones =
 					}),
 					qh(26010, {	-- Ashes to Ashes (awarded "A Short-Lived Victory" criteria)
 						["groups"] = {
-							i( 57479),	-- Flamethrower's Gloves
-							i( 57478),	-- Vest of Ashes
+							i(57479),	-- Flamethrower's Gloves
+							i(57478),	-- Vest of Ashes
 							i(131464),	-- Tunic of Ashes
 						},
 						["qg"] = 41023,	-- Overlord Krom'gar
@@ -192,9 +192,9 @@ _.Zones =
 					}),
 					qh(25999, {	-- Barrier to Entry
 						["groups"] = {
-							i( 57471),	-- Elf-Killer Breastplate
-							i( 57470),	-- Incinerator's Gauntlets
-							i( 57469),	-- Saurboz's Leggings
+							i(57471),	-- Elf-Killer Breastplate
+							i(57470),	-- Incinerator's Gauntlets
+							i(57469),	-- Saurboz's Leggings
 							i(131463),	-- Saurboz's Handwraps
 						},
 						["qg"] = 34341,	-- Saurboz
@@ -221,17 +221,17 @@ _.Zones =
 					o(203186, {	-- STAY OUT!
 						qa(25730,  {  -- BEWARE OF CRAGJAW!
 							["groups"] = {
-								i( 57429),	-- Fisherman's Belt
-								i( 57430),	-- Irongoat Legguards
-								i( 57428),	-- Fish Stunner
+								i(57429),	-- Fisherman's Belt
+								i(57430),	-- Irongoat Legguards
+								i(57428),	-- Fish Stunner
 								i(131879),	-- Fisherman's Links
 							},
 							["sourceQuestID"] = { 25621 },	-- Field Test: Gnomecorder (may be available earlier, but definitely has a prereq)
 						}),
 						qh(26043,  {  -- BEWARE OF CRAGJAW!
 							["groups"] = {
-								i( 57482),	-- Anara's Belt
-								i( 57481),	-- Fisherman's Gloves
+								i(57482),	-- Anara's Belt
+								i(57481),	-- Fisherman's Gloves
 								i(131471),	-- Anara's Cord
 							},
 							["sourceQuestID"] = { 26004 },	-- Krom'gar Fortress
@@ -239,9 +239,9 @@ _.Zones =
 					}),
 					qa(25768, {	-- Bombs Away: Mirkfallon Post!
 						["groups"] = {
-							i( 57435),	-- Oil-Stained Bracers
-							i( 57436),	-- Well Oiled Helm
-							i( 57437),	-- Barus' Backup Sword
+							i(57435),	-- Oil-Stained Bracers
+							i(57436),	-- Well Oiled Helm
+							i(57437),	-- Barus' Backup Sword
 							i(131881),	-- Barus' Armbands
 						},
 						["qg"] = 40896,	-- Lord Fallowmere
@@ -254,10 +254,10 @@ _.Zones =
 					}),
 					qa(25931, {	-- Brood of Seldarria (awarded "Seldarria" criteria)
 						["groups"] = {
-							i( 57463),	-- Brood-Killer Shoulderguard
-							i( 57462),	-- Goldrinn Acolyte's Cowl
-							i( 57461),	-- Egg Smasher
-							i( 57464),	-- Hierophant's Blessed Hands
+							i(57463),	-- Brood-Killer Shoulderguard
+							i(57462),	-- Goldrinn Acolyte's Cowl
+							i(57461),	-- Egg Smasher
+							i(57464),	-- Hierophant's Blessed Hands
 							i(131457),	-- Brood-Killer Amice
 						},
 						["sourceQuestID"] = { 25930 },	-- Ascending the Vale
@@ -287,9 +287,9 @@ _.Zones =
 					}),
 					qa(25851, {	-- Dances with Grimtotem (rewarded "An Unconventional Ally" criteria and overall "Stonetalon Mountain Quests" achievement, although there were more quests available afterward)
 						["groups"] = {
-							i( 57468),	-- Valen's Cloak
-							i( 57467),	-- Fancy Footwork
-							i( 57466),	-- Negotiator's Armbands
+							i(57468),	-- Valen's Cloak
+							i(57467),	-- Fancy Footwork
+							i(57466),	-- Negotiator's Armbands
 							i(131449),	-- Valen's Treads
 						},
 						["qg"] = 11858,	-- Grundig Darkcloud
@@ -420,7 +420,7 @@ _.Zones =
 						["qg"] = 41991,	-- Sergeant Dontrag
 						["sourceQuestID"] = { 26044 },	-- Where Are the Parts?
 					}),
-					n( 40905, {	-- Windshear Overseer
+					n(40905, {	-- Windshear Overseer
 						["groups"] = {
 							i(55181, {	-- Illegible Orc Letter
 								qa(25647),	-- Illegible Orc Letter
@@ -469,9 +469,9 @@ _.Zones =
 					}),
 					qh(26068, {	-- Kobold Fury!
 						["groups"] = {
-							i( 57507),	-- Kobold-Wrangler Leggings
-							i( 57506),	-- Unearthed Cloak
-							i( 57508),	-- Devo's Handaxe
+							i(57507),	-- Kobold-Wrangler Leggings
+							i(57506),	-- Unearthed Cloak
+							i(57508),	-- Devo's Handaxe
 							i(131476),	-- Kobold-Wrangler Legguards
 						},
 						["qg"] = 42023,	-- Subjugator Devo
@@ -539,9 +539,9 @@ _.Zones =
 					}),
 					qa(25877, {	-- No Time for Goodbyes!
 						["groups"] = {
-							i( 57440),	-- Shoulderguards of Warning
-							i( 57439),	-- Messenger's Chestpiece
-							i( 57438),	-- News Bearer Gloves
+							i(57440),	-- Shoulderguards of Warning
+							i(57439),	-- Messenger's Chestpiece
+							i(57438),	-- News Bearer Gloves
 							i(131453),	-- Messenger's Vest
 						},
 						["qg"] = 41434,	-- "Goblin" Pump Controller
@@ -553,7 +553,7 @@ _.Zones =
 						["qg"] = 3995,	-- Witch Doctor Jin'Zil
 						["breadcrumbQuestID"] = { 26059 },	-- Eyes and Ears: Malaka'jin
 					}),
---[[ 				n( 41937, {	-- Marshal Paltrow
+--[[ 				n(41937, {	-- Marshal Paltrow
 						i(56474, {	-- Orders from Base Camp
 							qh(26016),	-- Orders from Base Camp (I didn't receive this while questing - Wholly has it marked as REMOVED)
 						}),
@@ -596,9 +596,9 @@ _.Zones =
 					}),
 					qa(25615, {	-- Return to Stardust 
 						["groups"] = {
-							i( 57415),	-- Stardust Belt
-							i( 57416),	-- Hippogryph Down Belt
-							i( 57417),	-- Clear Path Boots
+							i(57415),	-- Stardust Belt
+							i(57416),	-- Hippogryph Down Belt
+							i(57417),	-- Clear Path Boots
 							i(131877),	-- Stardust Waistcord
 						},
 						["qg"] = 39256,	-- Kalen Trueshot
@@ -606,9 +606,9 @@ _.Zones =
 					}),
 					qa(25669, {	-- Rumble in the Lumber... Mill
 						["groups"] = {
-							i( 57432),	-- Thwarter's Boots
-							i( 57433),	-- Windshear Axe
-							i( 57431),	-- Strategy Guide
+							i(57432),	-- Thwarter's Boots
+							i(57433),	-- Windshear Axe
+							i(57431),	-- Strategy Guide
 							i(131880),	-- Thwarter's Footguards
 						},
 						["qg"] = 41071,	-- Huntress Illiona
@@ -622,8 +622,8 @@ _.Zones =
 					}),
 					qa(25889, {	-- Save the Children!
 						["groups"] = {
-							i( 57460),	-- Breastplate of Rescue
-							i( 57459),	-- Headguard of the Innocent
+							i(57460),	-- Breastplate of Rescue
+							i(57459),	-- Headguard of the Innocent
 							i(131455),	-- Helm of the Innocent
 						},
 						["qg"] = 41482,	-- Master Thal'darah
@@ -631,9 +631,9 @@ _.Zones =
 					}),
 					qa(25878, {	-- Schemin' That Sabotage
 						["groups"] = {
-							i( 57453),	-- Yvonia's Pauldrons
-							i( 57452),	-- Shield of Control
-							i( 57451),	-- Sabotage Leggings
+							i(57453),	-- Yvonia's Pauldrons
+							i(57452),	-- Shield of Control
+							i(57451),	-- Sabotage Leggings
 							i(131454),	-- Yvonia's Spaulders
 						},
 						["qg"] = 41441,	-- Scout Mistress Yvonia
@@ -648,10 +648,10 @@ _.Zones =
 					}),
 					qa(25912, {	-- Seen Better Days
 						["groups"] = {
-							i( 57457),	-- Legguards of Winding Ways
-							i( 57456),	-- Headguard of Solace
-							i( 57455),	-- Sareth'na's Mantle
-							i( 57454),	-- Elune-Blessed Bow
+							i(57457),	-- Legguards of Winding Ways
+							i(57456),	-- Headguard of Solace
+							i(57455),	-- Sareth'na's Mantle
+							i(57454),	-- Elune-Blessed Bow
 							i(131456),	-- Cowl of Solace
 						},
 						["qg"] = 41486,	-- Elder Sareth'na
@@ -666,8 +666,8 @@ _.Zones =
 					}),
 					qh(26048, {	-- Spare Parts Up In Here!
 						["groups"] = {
-							i( 57491),	-- Spare Part Leggings
-							i( 57490),	-- Blastgineer's Belt
+							i(57491),	-- Spare Part Leggings
+							i(57490),	-- Blastgineer's Belt
 							i(131472),	-- Blastgineer's Waistband
 						},
 						["qg"] = 41991,	-- Sergeant Dontrag
@@ -773,9 +773,9 @@ _.Zones =
 					}),
 					qh(26115, {	-- To Be Horde...
 						["groups"] = {
-							i( 57512),	-- Cliffwalker Boots
-							i( 57511),	-- Belt of the Grieving Father
-							i( 57510),	-- Masha's Armbands
+							i(57512),	-- Cliffwalker Boots
+							i(57511),	-- Belt of the Grieving Father
+							i(57510),	-- Masha's Armbands
 							i(131486),	-- Cinch of the Grieving Father
 						},
 						["qg"] = 42106,	-- Overlord Krom'gar
@@ -789,8 +789,8 @@ _.Zones =
 					}),
 					qa(25646, {	-- Windshear Mine Cleanup (awarded "Clearing a Path" criteria)
 						["groups"] = {
-							i( 57422),	-- Quiet Slippers
-							i( 57423),	-- Overseer's Gloves
+							i(57422),	-- Quiet Slippers
+							i(57423),	-- Overseer's Gloves
 							i(131878),	-- Overseer's Handguards
 						},
 						["qg"] = 40973,	-- Sentinal Heliana

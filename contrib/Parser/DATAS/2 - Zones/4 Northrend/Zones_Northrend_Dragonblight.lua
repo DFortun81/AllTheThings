@@ -128,13 +128,13 @@ _.Zones =
 --[[					
 					qa( 12439),	-- A Disturbance In The West
 					qh( 12274),	-- A Fall From Grace
-					q( 42007),	-- A Forgotten Enemy
-					q( 41627),	-- A Forgotten Enemy
+					q(42007),	-- A Forgotten Enemy
+					q(41627),	-- A Forgotten Enemy
 					qh( 12085),	-- A Letter for Home
 					qa( 12067),	-- A Letter for Home
 					qh( 12240),	-- A Means to an End
-					q( 41626),	-- A New Threat
-					q( 42006),	-- A New Threat
+					q(41626),	-- A New Threat
+					q(42006),	-- A New Threat
 					qa( 12321),	-- A Righteous Sermon
 					qa( 12055),	-- A Strange Device
 					qh( 12059),	-- A Strange Device
@@ -144,18 +144,18 @@ _.Zones =
 					qh( 12140),	-- All Hail Roanauk!
 					qa( 12473),	-- An End And A Beginning
 					qh( 12040),	-- An Enemy in Arthas
-					q( 12631),	-- An Invitation, of Sorts...
-					q( 43388),	-- Apostate Liberation
-					q( 12077),	-- Apply This Twice A Day
-					q( 26013),	-- Assault on the Sanctum
-					q( 12083),	-- Atop the Woodlands
+					q(12631),	-- An Invitation, of Sorts...
+					q(43388),	-- Apostate Liberation
+					q(12077),	-- Apply This Twice A Day
+					q(26013),	-- Assault on the Sanctum
+					q(12083),	-- Atop the Woodlands
 					qh( 12084),	-- Atop the Woodlands
 					qh( 12071),	-- Attack by Air!
 					qa( 12172),	-- Attunement to Dalaran
 					qh( 12173),	-- Attunement to Dalaran
 					qh( 12496),	-- Audience With The Dragon Queen
 					qa( 12495),	-- Audience With The Dragon Queen
-					q( 12006),	-- Avenge this Atrocity!
+					q(12006),	-- Avenge this Atrocity!
 					qh( 12304),	-- Beachfront Property
 					qh( 12039),	-- Black Blood of Yogg-Saron
 					qh( 12072),	-- Blightbeasts be Damned!
@@ -166,8 +166,8 @@ _.Zones =
 					qa( 13439),	-- Candy Bucket
 					qa( 13438),	-- Candy Bucket
 					qh( 13470),	-- Candy Bucket
-					q( 13456),	-- Candy Bucket
-					q( 13459),	-- Candy Bucket
+					q(13456),	-- Candy Bucket
+					q(13459),	-- Candy Bucket
 					qh( 13469),	-- Candy Bucket
 					qh( 12145),	-- Canyon Chase
 					qa( 12143),	-- Canyon Chase
@@ -175,13 +175,13 @@ _.Zones =
 					qa( 12466),	-- Chasing Icestorm: The 7th Legion Front
 					qa( 12467),	-- Chasing Icestorm: Thel'zan's Phylactery
 					qh( 12100),	-- Containing the Rot
-					q( 12032),	-- Conversing With the Depths
-					q( 12264),	-- Culling the Damned
-					q( 12454),	-- Cycle of Life
-					q( 13078),	-- Dahlia's Tears
-					q( 12633),	-- Darkness Calling
-					q( 12372),	-- Defending Wyrmrest Temple
-					q( 12265),	-- Defiling the Defilers
+					q(12032),	-- Conversing With the Depths
+					q(12264),	-- Culling the Damned
+					q(12454),	-- Cycle of Life
+					q(13078),	-- Dahlia's Tears
+					q(12633),	-- Darkness Calling
+					q(12372),	-- Defending Wyrmrest Temple
+					q(12265),	-- Defiling the Defilers
 					qa( 11766),	-- Desecrate this Fire!
 					qa( 11732),	-- Desecrate this Fire!
 					qa( 11755),	-- Desecrate this Fire!
@@ -195,27 +195,27 @@ _.Zones =
 					qh( 12147),	-- Disturbing Implications
 					qa( 12146),	-- Disturbing Implications
 					qh( 12285),	-- Do Unto Others
-					q( 12030),	-- Elder Mana'loa
+					q(12030),	-- Elder Mana'loa
 					qh( 12200),	-- Emerald Dragon Tears
-					q( 12013),	-- End Arcanimus
+					q(12013),	-- End Arcanimus
 					qa( 12472),	-- Finality
 					qa( 12309),	-- Find Durkon!
 					qh( 12243),	-- Fire Upon the Waters
 					qa( 12237),	-- Flight of the Wintergarde Defender
-					q( 12031),	-- Freedom for the Lingering
+					q(12031),	-- Freedom for the Lingering
 					qh( 12214),	-- Fresh Remounts
 					qh( 12036),	-- From the Depths of Azjol-Nerub
 					qa( 12478),	-- Frostmourne Cavern
 					qh( 12303),	-- Funding the War Effort
 					qa( 12119),	-- Gaining an Audience
 					qh( 12122),	-- Gaining an Audience
-					q( 12497),	-- Galakrond and the Scourge
-					q( 12049),	-- Hard to Swallow
-					q( 12052),	-- Harp on This!
+					q(12497),	-- Galakrond and the Scourge
+					q(12049),	-- Hard to Swallow
+					q(12052),	-- Harp on This!
 					qh( 12448),	-- Heated Battle
-					q( 12416),	-- Heated Battle
+					q(12416),	-- Heated Battle
 					qa( 39204),	-- Hero's Call: Dragonblight
-					q( 13385),	-- Heroic Judgment at the Eye of Eternity
+					q(13385),	-- Heroic Judgment at the Eye of Eternity
 					qa( 12174),	-- High Commander Halford Wyrmbane
 					qa( 12298),	-- High Commander Halford Wyrmbane
 					qa( 13487),	-- Honor the Flame
@@ -226,173 +226,173 @@ _.Zones =
 					qh( 12125),	-- In Service of Blood
 					qh( 12127),	-- In Service of Frost
 					qh( 12126),	-- In Service of the Unholy
-					q( 12123),	-- Informing the Queen
+					q(12123),	-- Informing the Queen
 					qh( 12124),	-- Informing the Queen
 					qa( 12325),	-- Into Hostile Territory
-					q( 12789),	-- Into the Breach!
+					q(12789),	-- Into the Breach!
 					qh( 11978),	-- Into the Fold
-					q( 13384),	-- Judgment at the Eye of Eternity
+					q(13384),	-- Judgment at the Eye of Eternity
 					qa( 12167),	-- Kill the Cultists
 					qh( 12115),	-- Koltira and the Language of Death
 					qa( 12277),	-- Leave Nothing to Chance
-					q( 11958),	-- Let Nothing Go To Waste
+					q(11958),	-- Let Nothing Go To Waste
 					qh( 12211),	-- Let Them Not Rise!
-					q( 12050),	-- Lumber Hack
+					q(12050),	-- Lumber Hack
 					qh( 12056),	-- Marked for Death: High Cultist Zangus
 					qh( 12209),	-- Materiel Plunder
-					q( 12017),	-- Meat on the Hook
+					q(12017),	-- Meat on the Hook
 					qh( 12033),	-- Message from the West
-					q( 12076),	-- Messy Business
-					q( 12149),	-- Mighty Magnataur
-					q( 13014),	-- Morthie the Elder
+					q(12076),	-- Messy Business
+					q(12149),	-- Mighty Magnataur
+					q(13014),	-- Morthie the Elder
 					qa( 12464),	-- My Old Enemy
-					q( 12470),	-- Mystery of the Infinite
-					q( 13343),	-- Mystery of the Infinite, Redux
+					q(12470),	-- Mystery of the Infinite
+					q(13343),	-- Mystery of the Infinite, Redux
 					qa( 12319),	-- Mystery of the Tome
 					qa( 12235),	-- Naxxramas and the Fall of Wintergarde
 					qh( 12234),	-- Need to Know
-					q( 12267),	-- Neltharion's Flame
+					q(12267),	-- Neltharion's Flame
 					qh( 12245),	-- No Mercy for the Captured
-					q( 12262),	-- No One to Save You
-					q( 12261),	-- No Place to Run
+					q(12262),	-- No One to Save You
+					q(12261),	-- No Place to Run
 					qa( 12269),	-- Not In Our Mine
-					q( 12043),	-- Nozzlerust Defense
+					q(12043),	-- Nozzlerust Defense
 					qa( 12171),	-- Of Traitors and Treason
 					qa( 12297),	-- Of Traitors and Treason
-					q( 31933),	-- Okrut Dragonwaste
-					q( 12498),	-- On Ruby Wings
-					q( 12148),	-- One of a Kind
-					q( 43386),	-- Onslaught Envoy
+					q(31933),	-- Okrut Dragonwaste
+					q(12498),	-- On Ruby Wings
+					q(12148),	-- One of a Kind
+					q(43386),	-- Onslaught Envoy
 					qa( 12287),	-- Orik Trueheart and the Forgotten Shore
 					qa( 12305),	-- Parting Thoughts
 					qa( 12142),	-- Pest Control
 					qh( 12144),	-- Pest Control
-					q( 26178),	-- Planning for the Future
-					q( 11960),	-- Planning for the Future
+					q(26178),	-- Planning for the Future
+					q(11960),	-- Planning for the Future
 					qa( 11882),	-- Playing with Fire
 					qa( 12463),	-- Plunderbeard Must Be Found!
 					qa( 12465),	-- Plunderbeard's Journal
-					q( 47904),	-- Preserve the True Future
+					q(47904),	-- Preserve the True Future
 					qh( 12005),	-- Prevent the Accord
-					q( 12004),	-- Prevent the Accord
+					q(12004),	-- Prevent the Accord
 					qh( 11980),	-- Pride of the Horde
 					qh( 12061),	-- Projections and Plans
-					q( 12060),	-- Projections and Plans
-					q( 12080),	-- Really Big Worm
-					q( 12150),	-- Reclusive Runemaster
-					q( 12435),	-- Report to Lord Afrasastrasz
+					q(12060),	-- Projections and Plans
+					q(12080),	-- Really Big Worm
+					q(12150),	-- Reclusive Runemaster
+					q(12435),	-- Report to Lord Afrasastrasz
 					qh( 12461),	-- Report to the Ruby Dragonshrine
 					qa( 12460),	-- Report to the Ruby Dragonshrine
 					qa( 12253),	-- Rescue from Town Square
 					qh( 12069),	-- Return of the High Chief
 					qh( 12500),	-- Return To Angrathar
 					qa( 12499),	-- Return To Angrathar
-					q( 12469),	-- Return to Sender
+					q(12469),	-- Return to Sender
 					qh( 12104),	-- Return to Soar
 					qh( 12449),	-- Return to the Earth
-					q( 12417),	-- Return to the Earth
+					q(12417),	-- Return to the Earth
 					qa( 12251),	-- Return to the High Commander
-					q( 47545),	-- Rewind
+					q(47545),	-- Rewind
 					qa( 12000),	-- Rifle the Bodies
 					qh( 11999),	-- Rifle the Bodies
 					qh( 12097),	-- Sarathstra, Scourge of the North
-					q( 43387),	-- Scarlet Redemption
+					q(43387),	-- Scarlet Redemption
 					qa( 12455),	-- Scattered To The Wind
 					qh( 12048),	-- Scourge Armaments
 					qh( 12106),	-- Search Indu'le Village
-					q( 12098),	-- Search Indu'le Village
+					q(12098),	-- Search Indu'le Village
 					qa( 12312),	-- Secrets of the Scourge
-					q( 12458),	-- Seeds of the Lashers
-					q( 12045),	-- Shaved Ice
-					q( 12011),	-- Signs of Big Watery Trouble
-					q( 13031),	-- Skywarden the Elder
-					q( 11959),	-- Slay Loguhn
-					q( 12075),	-- Slim Pickings
-					q( 12046),	-- Soft Packaging
-					q( 12047),	-- Something That Doesn't Melt
+					q(12458),	-- Seeds of the Lashers
+					q(12045),	-- Shaved Ice
+					q(12011),	-- Signs of Big Watery Trouble
+					q(13031),	-- Skywarden the Elder
+					q(11959),	-- Slay Loguhn
+					q(12075),	-- Slim Pickings
+					q(12046),	-- Soft Packaging
+					q(12047),	-- Something That Doesn't Melt
 					qh( 12767),	-- Speak with your Ambassador
 					qa( 12766),	-- Speak with your Ambassador
-					q( 12028),	-- Spiritual Insight
+					q(12028),	-- Spiritual Insight
 					qh( 12218),	-- Spread the Good Word
 					qh( 12230),	-- Stealing from the Siegesmiths
 					qa( 12326),	-- Steamtank Surprise
-					q( 12112),	-- Stiff Negotiations
-					q( 12044),	-- Stocking Up
-					q( 12079),	-- Stomping Grounds
+					q(12112),	-- Stiff Negotiations
+					q(12044),	-- Stocking Up
+					q(12079),	-- Stomping Grounds
 					qh( 12063),	-- Strength of Icemist
 					qa( 12092),	-- Strengthen the Ancients
 					qh( 12096),	-- Strengthen the Ancients
-					q( 12266),	-- Tales of Destruction
-					q( 12459),	-- That Which Creates Can Also Destroy
-					q( 12016),	-- The Bait
-					q( 12263),	-- The Best of Intentions
+					q(12266),	-- Tales of Destruction
+					q(12459),	-- That Which Creates Can Also Destroy
+					q(12016),	-- The Bait
+					q(12263),	-- The Best of Intentions
 					qa( 12272),	-- The Bleeding Ore
-					q( 13079),	-- The Boon of Alexstrasza
-					q( 12542),	-- The Call Of The Crusade
+					q(13079),	-- The Boon of Alexstrasza
+					q(12542),	-- The Call Of The Crusade
 					qa( 12457),	-- The Chain Gun And You
-					q( 12545),	-- The Cleansing Of Jintha'kalar
-					q( 47543),	-- The Day That Chromie Dies
-					q( 47906),	-- The Deaths of Chromie
+					q(12545),	-- The Cleansing Of Jintha'kalar
+					q(47543),	-- The Day That Chromie Dies
+					q(47906),	-- The Deaths of Chromie
 					qa( 12275),	-- The Demo-gnome
 					qh( 12273),	-- The Denouncement
 					qh( 12110),	-- The End of the Line
-					q( 12107),	-- The End of the Line
-					q( 13187),	-- The Faceless Ones
+					q(12107),	-- The End of the Line
+					q(13187),	-- The Faceless Ones
 					qa( 12258),	-- The Fate of the Dead
-					q( 12419),	-- The Fate of the Ruby Dragonshrine
+					q(12419),	-- The Fate of the Ruby Dragonshrine
 					qa( 12168),	-- The Favor of Zangus
 					qh( 12057),	-- The Flesh-Bound Tome
 					qh( 12066),	-- The Focus on the Beach
-					q( 12065),	-- The Focus on the Beach
+					q(12065),	-- The Focus on the Beach
 					qa( 12291),	-- The Forgotten Tale
 					qh( 12221),	-- The Forsaken Blight
 					qh( 12188),	-- The Forsaken Blight and You: How Not to Die
 					qh( 12101),	-- The Good Doctor...
-					q( 13375),	-- The Heroic Key to the Focusing Iris
+					q(13375),	-- The Heroic Key to the Focusing Iris
 					qa( 12169),	-- The High Cultist
 					qh( 12488),	-- The High Executor Needs You
 					qa( 12511),	-- The Hills Have Us
-					q( 13372),	-- The Key to the Focusing Iris
+					q(13372),	-- The Key to the Focusing Iris
 					qh( 12224),	-- The Kor'kron Vanguard!
 					qa( 12166),	-- The Liquid Fire of Elune
 					qa( 12157),	-- The Lost Courier
 					qh( 12041),	-- The Lost Empire
 					qa( 12794),	-- The Magical Kingdom of Dalaran
 					qh( 12791),	-- The Magical Kingdom of Dalaran
-					q( 47550),	-- The Many Advantages of Being a Time Dragon
+					q(47550),	-- The Many Advantages of Being a Time Dragon
 					qh( 12053),	-- The Might of the Horde
 					qa( 12290),	-- The Murkweed Elixir
 					qa( 12311),	-- The Noble's Crypt
-					q( 12447),	-- The Obsidian Dragonshrine
+					q(12447),	-- The Obsidian Dragonshrine
 					qa( 12477),	-- The Path of Redemption
 					qh( 12260),	-- The Perfect Dissemblance
-					q( 12456),	-- The Plume of Alystros
+					q(12456),	-- The Plume of Alystros
 					qh( 12132),	-- The Power to Destroy
 					qa( 12476),	-- The Return of the Crusade?
 					qh( 12271),	-- The Rod of Compulsion
 					qa( 12276),	-- The Search for Slinkin
 					qh( 12239),	-- The Spy in New Hearthglen
-					q( 12768),	-- The Steward of Wyrmrest Temple
+					q(12768),	-- The Steward of Wyrmrest Temple
 					qh( 12769),	-- The Steward of Wyrmrest Temple
 					qh( 11979),	-- The Taunka and the Tauren
-					q( 13077),	-- The Touch of an Aspect
+					q(13077),	-- The Touch of an Aspect
 					qh( 12136),	-- The Translated Tome
 					qa( 12301),	-- The Truth Shall Set Us Free
 					qh( 12283),	-- The Truth Will Out
-					q( 26034),	-- The Twilight Destroyer
-					q( 13019),	-- Thoim the Elder
+					q(26034),	-- The Twilight Destroyer
+					q(13019),	-- Thoim the Elder
 					qh( 12450),	-- Through Fields of Flame
-					q( 12418),	-- Through Fields of Flame
+					q(12418),	-- Through Fields of Flame
 					qh( 12487),	-- To Conquest Hold, But Be Careful!
 					qh( 12095),	-- To Dragon's Fall
 					qa( 12474),	-- To Fordragon Hold!
 					qa( 12440),	-- To Stars' Rest!
 					qh( 12182),	-- To Venomspite!
 					qh( 12252),	-- Torture the Torturer
-					q( 12118),	-- Travel to Moa'ki Harbor
-					q( 12117),	-- Travel to Moa'ki Harbor
-					q( 26012),	-- Trouble at Wyrmrest
-					q( 12009),	-- Tua'kea's Crab Traps
+					q(12118),	-- Travel to Moa'ki Harbor
+					q(12117),	-- Travel to Moa'ki Harbor
+					q(26012),	-- Trouble at Wyrmrest
+					q(12009),	-- Tua'kea's Crab Traps
 					qa( 12320),	-- Understanding the Language of Death
 					qa( 12281),	-- Understanding the Scourge War Machine
 					qh( 12034),	-- Victory Nears...
@@ -403,12 +403,12 @@ _.Zones =
 					qh( 12089),	-- Wanted: Magister Keldonus
 					qa( 12442),	-- Wanted: Onslaught Commander Iustus
 					qh( 12205),	-- Wanted: The Scarlet Onslaught
-					q( 12151),	-- Wanton Warlord
+					q(12151),	-- Wanton Warlord
 					qh( 39203),	-- Warchief's Command: Dragonblight
 					qa( 12475),	-- What Secrets Men Hide
 					qh( 12111),	-- Where the Wild Things Roam
 					qh( 12254),	-- Without a Prayer
-					q( 12078),	-- Worm Wrangler
+					q(12078),	-- Worm Wrangler
 					qh( 11996),	-- Your Presence is Required at Agmar's Hammer
 					qa( 11995),	-- Your Presence is Required at Stars' Rest
 --]]					

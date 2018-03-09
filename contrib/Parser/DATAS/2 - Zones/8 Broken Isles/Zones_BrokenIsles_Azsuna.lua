@@ -1299,175 +1299,175 @@ _.Zones =
 				n(-17, { 	-- Quests
 --[[					
 					n(-34, {	-- World Quests
-						q( 42119),	-- A Cleansing Cocktail
-						q( 42024),	-- A Friend of My Enemy
-						q( 43803),	-- A Giant Murloc Problem
-						q( 42014),	-- A Tainted Vintage
-						q( 44784),	-- Advanced Wanding
-						q( 41545),	-- Aethril Cluster
-						q( 41286),	-- Aethril Cluster
-						q( 42652),	-- Ancient Exemplars
-						q( 43805),	-- Aquatic Assassination
-						q( 41290),	-- Aqueous Aethril
-						q( 45838),	-- Assault on Azsuna
-						q( 42165),	-- Azsuna Specimens
-						q( 45069),	-- Barrels o' Fun
-						q( 45203),	-- Battle for the Ruins
-						q( 44894),	-- Bloodgazer Swarm!
-						q( 41495),	-- Brilliant Leystone Seams
-						q( 41481),	-- Brimstone Destroyer
-						q( 41483),	-- Brimstone Destroyer
-						q( 41482),	-- Brimstone Destroyer
-						q( 41529),	-- Bushy Aethril
-						q( 41438),	-- Charged Leystone Deposits
-						q( 46168),	-- Commander Vorlax
-						q( 43091),	-- DANGER: Arcanor Prime
-						q( 44189),	-- DANGER: Bestrix
-						q( 43121),	-- DANGER: Chief Treasurer Jabrill
-						q( 44187),	-- DANGER: Cinderwing
-						q( 43175),	-- DANGER: Deepclaw
-						q( 43059),	-- DANGER: Fjordun
-						q( 43079),	-- DANGER: Immolian
-						q( 44190),	-- DANGER: Jade Darkhaven
-						q( 44191),	-- DANGER: Karthax
-						q( 43798),	-- DANGER: Kosumoth the Hungering
-						q( 44192),	-- DANGER: Lysanis Shadesoul
-						q( 43098),	-- DANGER: Marblub the Massive
-						q( 43027),	-- DANGER: Mortiferous
-						q( 44193),	-- DANGER: Sea King Tidross
-						q( 43063),	-- DANGER: Stormfeather
-						q( 43072),	-- DANGER: The Whisperer
-						q( 44194),	-- DANGER: Torrentius
-						q( 43040),	-- DANGER: Valakar the Thirsty
-						q( 42146),	-- Dazed and Confused and Adorable
-						q( 44287),	-- DEADLY: Withered J'im
-						q( 44054),	-- Demonicide
-						q( 42276),	-- Disgusting, but Useful
-						q( 46169),	-- Dro'zek
-						q( 43328),	-- Enigmatic
-						q( 44049),	-- Evil Has Many Legs
-						q( 42027),	-- Faronaar in Chaos
-						q( 42026),	-- Faronaar in Ruin
-						q( 41323),	-- Fatty Lion Seal Skin
-						q( 46161),	-- Felcaller Thalezra
-						q( 41564),	-- Felhide
-						q( 41562),	-- Felhide
-						q( 41563),	-- Felhide
-						q( 44044),	-- Felled Experiment
-						q( 41514),	-- Felwort
-						q( 41515),	-- Felwort
-						q( 41513),	-- Felwort
-						q( 41437),	-- Fine Leystone Deposits
-						q( 41289),	-- Flourishing Aethril
-						q( 46166),	-- Garthulak the Crusher
-						q( 41455),	-- Gleaming Leystone Outcropping
-						q( 41434),	-- Glowing Leystone Deposits
-						q( 43804),	-- Hate the Hatecoil
-						q( 42624),	-- Heads of the Fleet
-						q( 44737),	-- Helarjar Landing: Grey Shoals
-						q( 42154),	-- Help a Whelp
-						q( 41611),	-- Huge Cursed Queenfish
-						q( 41610),	-- Huge Cursed Queenfish
-						q( 41265),	-- Huge Cursed Queenfish
-						q( 42277),	-- Interlopers!
-						q( 42021),	-- Investigation at Mak'rana
-						q( 41528),	-- Iridescent Aethril
-						q( 46165),	-- Kazruul
-						q( 46167),	-- Kozrum
-						q( 42101),	-- Language of the Lost
-						q( 42211),	-- Leodrath's Kin
-						q( 43325),	-- Ley Race
-						q( 42172),	-- Leyhollow Infestation
-						q( 41498),	-- Leystone Basilisks
-						q( 41501),	-- Leystone Basilisks
-						q( 41500),	-- Leyworms
-						q( 45046),	-- Like the Wind
-						q( 41527),	-- Lively Aethril
-						q( 41598),	-- Lively Cursed Queenfish
-						q( 41599),	-- Lively Cursed Queenfish
-						q( 41264),	-- Lively Cursed Queenfish
-						q( 41454),	-- Luminous Leystone Outcropping
-						q( 46164),	-- Mal'serus
-						q( 44786),	-- Midterm: Rune Aptitude
-						q( 42105),	-- Mixology Mix-up
-						q( 44048),	-- Nagana Happen
-						q( 42275),	-- Not On My Watch
-						q( 46116),	-- On Unhallowed Grounds
-						q( 41896),	-- Operation Murloc Freedom
-						q( 42623),	-- Piracy Doesn't Pay
-						q( 41268),	-- Queen Queenfish
-						q( 41266),	-- Raft Fishing
-						q( 42108),	-- Rally the Nightwatchers
-						q( 42123),	-- Reclaiming Llothien
-						q( 45058),	-- Release the Wardens!
-						q( 43776),	-- Scouting
-						q( 43765),	-- Scouting
-						q( 43801),	-- Shell Out Some Pain
-						q( 41324),	-- Silky Prowler Fur
-						q( 42063),	-- Size Doesn't Matter
-						q( 41551),	-- Slab of Bacon
-						q( 41259),	-- Slab of Bacon
-						q( 41552),	-- Slab of Bacon
-						q( 41435),	-- Smooth Leystone Deposits
-						q( 41582),	-- Smooth Sunrunner Hide
-						q( 44847),	-- Straight From the Source
-						q( 46162),	-- Subjugator Val'rek
-						q( 43192),	-- Terror of the Deep
-						q( 46170),	-- Thar'gokk
-						q( 46163),	-- Thaz'gul
-						q( 42022),	-- The Broken Academy
-						q( 46146),	-- The Burning Shores
-						q( 42711),	-- The Eternal Mages
-						q( 44050),	-- The Felsworn Must Fall
-						q( 43327),	-- The Magic of Flight
-						q( 45134),	-- The Soul Harvesters
-						q( 42148),	-- The Wine's Gone Bad
-						q( 42112),	-- The Withered Return
-						q( 42018),	-- Those Beyond Redemption
-						q( 42019),	-- Tip the Scales
-						q( 42506),	-- Tomes of Yore
-						q( 42159),	-- Training with the Nightwatchers
-						q( 42511),	-- Twisted Souls
-						q( 41322),	-- Unscratched Hippogryph Scale
-						q( 42160),	-- Unwelcome Visitors
-						q( 41663),	-- Vantus Rune Work Order: Elerethe Renferal
-						q( 42636),	-- WANTED: Arcanist Shal'iman
-						q( 43605),	-- WANTED: Arcanist Shal'iman
-						q( 42620),	-- WANTED: Arcavellus
-						q( 43606),	-- WANTED: Arcavellus
-						q( 43426),	-- WANTED: Brogozog
-						q( 43607),	-- WANTED: Brogozog
-						q( 43430),	-- WANTED: Captain Volo'ren
-						q( 43608),	-- WANTED: Captain Volo'ren
-						q( 43428),	-- WANTED: Doomlord Kazrok
-						q( 43609),	-- WANTED: Doomlord Kazrok
-						q( 43427),	-- WANTED: Infernal Lord
-						q( 43610),	-- WANTED: Infernal Lord
-						q( 42631),	-- WANTED: Inquisitor Tivos
-						q( 43611),	-- WANTED: Inquisitor Tivos
-						q( 43432),	-- WANTED: Normantis the Deposed
-						q( 43612),	-- WANTED: Normantis the Deposed
-						q( 43429),	-- WANTED: Syphonus
-						q( 43613),	-- WANTED: Syphonus
-						q( 42633),	-- WANTED: Vorthax
-						q( 43614),	-- WANTED: Vorthax
-						q( 43431),	-- WANTED: Warbringer Mox'na
-						q( 43615),	-- WANTED: Warbringer Mox'na
-						q( 43802),	-- Watery Graves
-						q( 46263),	-- Weaving Fel Webs
-						q( 42274),	-- Won't Anyone Think of the Whelps?
-						q( 41287),	-- Work Order: Aethril
-						q( 41651),	-- Work Order: Azsunite Pendant
-						q( 41639),	-- Work Order: Battlebound Spaulders
-						q( 41675),	-- Work Order: Blink-Trigger Headgun
-						q( 41267),	-- Work Order: Cursed Queenfish
-						q( 41657),	-- Work Order: Draughts of Raw Magic
-						q( 41311),	-- Work Order: Leystone
-						q( 41633),	-- Work Order: Leystone Greaves
-						q( 41645),	-- Work Order: Silkweave Epaulets
-						q( 41326),	-- Work Order: Stormscales
-						q( 41669),	-- Work Order: Word of Critical Strike
-						q( 44788),	-- Work Study: Bestiaries of Azsuna
+						q(42119),	-- A Cleansing Cocktail
+						q(42024),	-- A Friend of My Enemy
+						q(43803),	-- A Giant Murloc Problem
+						q(42014),	-- A Tainted Vintage
+						q(44784),	-- Advanced Wanding
+						q(41545),	-- Aethril Cluster
+						q(41286),	-- Aethril Cluster
+						q(42652),	-- Ancient Exemplars
+						q(43805),	-- Aquatic Assassination
+						q(41290),	-- Aqueous Aethril
+						q(45838),	-- Assault on Azsuna
+						q(42165),	-- Azsuna Specimens
+						q(45069),	-- Barrels o' Fun
+						q(45203),	-- Battle for the Ruins
+						q(44894),	-- Bloodgazer Swarm!
+						q(41495),	-- Brilliant Leystone Seams
+						q(41481),	-- Brimstone Destroyer
+						q(41483),	-- Brimstone Destroyer
+						q(41482),	-- Brimstone Destroyer
+						q(41529),	-- Bushy Aethril
+						q(41438),	-- Charged Leystone Deposits
+						q(46168),	-- Commander Vorlax
+						q(43091),	-- DANGER: Arcanor Prime
+						q(44189),	-- DANGER: Bestrix
+						q(43121),	-- DANGER: Chief Treasurer Jabrill
+						q(44187),	-- DANGER: Cinderwing
+						q(43175),	-- DANGER: Deepclaw
+						q(43059),	-- DANGER: Fjordun
+						q(43079),	-- DANGER: Immolian
+						q(44190),	-- DANGER: Jade Darkhaven
+						q(44191),	-- DANGER: Karthax
+						q(43798),	-- DANGER: Kosumoth the Hungering
+						q(44192),	-- DANGER: Lysanis Shadesoul
+						q(43098),	-- DANGER: Marblub the Massive
+						q(43027),	-- DANGER: Mortiferous
+						q(44193),	-- DANGER: Sea King Tidross
+						q(43063),	-- DANGER: Stormfeather
+						q(43072),	-- DANGER: The Whisperer
+						q(44194),	-- DANGER: Torrentius
+						q(43040),	-- DANGER: Valakar the Thirsty
+						q(42146),	-- Dazed and Confused and Adorable
+						q(44287),	-- DEADLY: Withered J'im
+						q(44054),	-- Demonicide
+						q(42276),	-- Disgusting, but Useful
+						q(46169),	-- Dro'zek
+						q(43328),	-- Enigmatic
+						q(44049),	-- Evil Has Many Legs
+						q(42027),	-- Faronaar in Chaos
+						q(42026),	-- Faronaar in Ruin
+						q(41323),	-- Fatty Lion Seal Skin
+						q(46161),	-- Felcaller Thalezra
+						q(41564),	-- Felhide
+						q(41562),	-- Felhide
+						q(41563),	-- Felhide
+						q(44044),	-- Felled Experiment
+						q(41514),	-- Felwort
+						q(41515),	-- Felwort
+						q(41513),	-- Felwort
+						q(41437),	-- Fine Leystone Deposits
+						q(41289),	-- Flourishing Aethril
+						q(46166),	-- Garthulak the Crusher
+						q(41455),	-- Gleaming Leystone Outcropping
+						q(41434),	-- Glowing Leystone Deposits
+						q(43804),	-- Hate the Hatecoil
+						q(42624),	-- Heads of the Fleet
+						q(44737),	-- Helarjar Landing: Grey Shoals
+						q(42154),	-- Help a Whelp
+						q(41611),	-- Huge Cursed Queenfish
+						q(41610),	-- Huge Cursed Queenfish
+						q(41265),	-- Huge Cursed Queenfish
+						q(42277),	-- Interlopers!
+						q(42021),	-- Investigation at Mak'rana
+						q(41528),	-- Iridescent Aethril
+						q(46165),	-- Kazruul
+						q(46167),	-- Kozrum
+						q(42101),	-- Language of the Lost
+						q(42211),	-- Leodrath's Kin
+						q(43325),	-- Ley Race
+						q(42172),	-- Leyhollow Infestation
+						q(41498),	-- Leystone Basilisks
+						q(41501),	-- Leystone Basilisks
+						q(41500),	-- Leyworms
+						q(45046),	-- Like the Wind
+						q(41527),	-- Lively Aethril
+						q(41598),	-- Lively Cursed Queenfish
+						q(41599),	-- Lively Cursed Queenfish
+						q(41264),	-- Lively Cursed Queenfish
+						q(41454),	-- Luminous Leystone Outcropping
+						q(46164),	-- Mal'serus
+						q(44786),	-- Midterm: Rune Aptitude
+						q(42105),	-- Mixology Mix-up
+						q(44048),	-- Nagana Happen
+						q(42275),	-- Not On My Watch
+						q(46116),	-- On Unhallowed Grounds
+						q(41896),	-- Operation Murloc Freedom
+						q(42623),	-- Piracy Doesn't Pay
+						q(41268),	-- Queen Queenfish
+						q(41266),	-- Raft Fishing
+						q(42108),	-- Rally the Nightwatchers
+						q(42123),	-- Reclaiming Llothien
+						q(45058),	-- Release the Wardens!
+						q(43776),	-- Scouting
+						q(43765),	-- Scouting
+						q(43801),	-- Shell Out Some Pain
+						q(41324),	-- Silky Prowler Fur
+						q(42063),	-- Size Doesn't Matter
+						q(41551),	-- Slab of Bacon
+						q(41259),	-- Slab of Bacon
+						q(41552),	-- Slab of Bacon
+						q(41435),	-- Smooth Leystone Deposits
+						q(41582),	-- Smooth Sunrunner Hide
+						q(44847),	-- Straight From the Source
+						q(46162),	-- Subjugator Val'rek
+						q(43192),	-- Terror of the Deep
+						q(46170),	-- Thar'gokk
+						q(46163),	-- Thaz'gul
+						q(42022),	-- The Broken Academy
+						q(46146),	-- The Burning Shores
+						q(42711),	-- The Eternal Mages
+						q(44050),	-- The Felsworn Must Fall
+						q(43327),	-- The Magic of Flight
+						q(45134),	-- The Soul Harvesters
+						q(42148),	-- The Wine's Gone Bad
+						q(42112),	-- The Withered Return
+						q(42018),	-- Those Beyond Redemption
+						q(42019),	-- Tip the Scales
+						q(42506),	-- Tomes of Yore
+						q(42159),	-- Training with the Nightwatchers
+						q(42511),	-- Twisted Souls
+						q(41322),	-- Unscratched Hippogryph Scale
+						q(42160),	-- Unwelcome Visitors
+						q(41663),	-- Vantus Rune Work Order: Elerethe Renferal
+						q(42636),	-- WANTED: Arcanist Shal'iman
+						q(43605),	-- WANTED: Arcanist Shal'iman
+						q(42620),	-- WANTED: Arcavellus
+						q(43606),	-- WANTED: Arcavellus
+						q(43426),	-- WANTED: Brogozog
+						q(43607),	-- WANTED: Brogozog
+						q(43430),	-- WANTED: Captain Volo'ren
+						q(43608),	-- WANTED: Captain Volo'ren
+						q(43428),	-- WANTED: Doomlord Kazrok
+						q(43609),	-- WANTED: Doomlord Kazrok
+						q(43427),	-- WANTED: Infernal Lord
+						q(43610),	-- WANTED: Infernal Lord
+						q(42631),	-- WANTED: Inquisitor Tivos
+						q(43611),	-- WANTED: Inquisitor Tivos
+						q(43432),	-- WANTED: Normantis the Deposed
+						q(43612),	-- WANTED: Normantis the Deposed
+						q(43429),	-- WANTED: Syphonus
+						q(43613),	-- WANTED: Syphonus
+						q(42633),	-- WANTED: Vorthax
+						q(43614),	-- WANTED: Vorthax
+						q(43431),	-- WANTED: Warbringer Mox'na
+						q(43615),	-- WANTED: Warbringer Mox'na
+						q(43802),	-- Watery Graves
+						q(46263),	-- Weaving Fel Webs
+						q(42274),	-- Won't Anyone Think of the Whelps?
+						q(41287),	-- Work Order: Aethril
+						q(41651),	-- Work Order: Azsunite Pendant
+						q(41639),	-- Work Order: Battlebound Spaulders
+						q(41675),	-- Work Order: Blink-Trigger Headgun
+						q(41267),	-- Work Order: Cursed Queenfish
+						q(41657),	-- Work Order: Draughts of Raw Magic
+						q(41311),	-- Work Order: Leystone
+						q(41633),	-- Work Order: Leystone Greaves
+						q(41645),	-- Work Order: Silkweave Epaulets
+						q(41326),	-- Work Order: Stormscales
+						q(41669),	-- Work Order: Word of Critical Strike
+						q(44788),	-- Work Study: Bestiaries of Azsuna
 					}),
 --]]					
 					ach(10763, { -- Azsuna Matata
@@ -1500,7 +1500,7 @@ _.Zones =
 								i(132948),
 								i(132947),
 							}),
-							q( 36920, {	-- From Within
+							q(36920, {	-- From Within
 								["groups"] = {
 								},
 								["classes"] = {1,2,3,4,5,6,7,8,9,10,11},
@@ -1714,7 +1714,7 @@ _.Zones =
 							q(39907), -- Elven Enchantments
 						}),
 						n(-183, { -- Engineering
-							qp202(qg(102196, q( 40876))),	-- 'Locke, Stock and Barrel
+							qp202(qg(102196, q(40876))),	-- 'Locke, Stock and Barrel
 						}),
 						n(-184, { -- Herbalism
 							q(40013), -- Aethril Sample
@@ -1795,224 +1795,224 @@ _.Zones =
 						}),
 					}),
         --[[ These quests will be organized soon™
-					q( 41173),	-- A Beacon of Hope
-					q( 46205),	-- A Conduit No More
-					q( 42434),	-- A Covert Operation
-					q( 44876),	-- A Dance With Dragons
-					q( 40195),	-- A Daring Rescue
-					q( 40206),	-- A Debt Paid
-					q( 40524),	-- A Familiar Ring to It
-					q( 39390),	-- A Mysterious Text
-					q( 38951),	-- A Needle Need
-					q( 37492),	-- A Rather Long Walk
-					q( 37965),	-- A Tainted Vintage
-					q( 43514),	-- A Vainglorious Past
-					q( 41183),	-- Academic Exploration
-					q( 38953),	-- Advanced Needlework
-					q( 41759),	-- An Unlikely Ally
-					q( 41162),	-- And Into the Fel Fire
-					q( 45021),	-- Answers Unknown
-					q( 46199),	-- Battle for Azsuna
-					q( 47193),	-- Battle for Azsuna
-					q( 47194),	-- Battle for Highmountain
-					q( 47195),	-- Battle for Stormheim
-					q( 47196),	-- Battle for Val'sharah
-					q( 40188),	-- Best Served Cold
-					q( 40857),	-- Bits and Pieces
-					q( 42450),	-- Brawlgoth
-					q( 43193),	-- Calamitous Intent
-					q( 40766),	-- Charfeather
-					q( 42221),	-- Chief Bitterbrine										
-					q( 44673),	-- Commander Soraax
-					q( 38946),	-- Consult the Locals
-					q( 40060),	-- Containing the Demon Within
-					q( 40063),	-- Control is Key
-					q( 41157),	-- Corrupted Studies
-					q( 42420),	-- Court of Farondis
-					q( 46020),	-- Crystal Containment
-					q( 39891),	-- Cursed, But Convenient
-					q( 41166),	-- Dark Secrets
-					q( 41169),	-- Darkheart Thicket: Through the Fog
-					q( 41165),	-- Deciphering Demonology
-					q( 40058),	-- Defense Symbology
-					q( 41172),	-- Echoes of My Ancestors
-					q( 41178),	-- Explosive Results
-					q( 43378),	-- Eye of Azshara: Looking Through the Lens
-					q( 40208),	-- Eye of Azshara: Scales of the Sea
-					q( 38961),	-- Eye of Azshara: The Depraved Nightfallen
-					q( 37526),	-- Farondis Murder Flag
-					q( 38014),	-- Feasting on the Dragon
-					q( 41167),	-- Fel Fragments
+					q(41173),	-- A Beacon of Hope
+					q(46205),	-- A Conduit No More
+					q(42434),	-- A Covert Operation
+					q(44876),	-- A Dance With Dragons
+					q(40195),	-- A Daring Rescue
+					q(40206),	-- A Debt Paid
+					q(40524),	-- A Familiar Ring to It
+					q(39390),	-- A Mysterious Text
+					q(38951),	-- A Needle Need
+					q(37492),	-- A Rather Long Walk
+					q(37965),	-- A Tainted Vintage
+					q(43514),	-- A Vainglorious Past
+					q(41183),	-- Academic Exploration
+					q(38953),	-- Advanced Needlework
+					q(41759),	-- An Unlikely Ally
+					q(41162),	-- And Into the Fel Fire
+					q(45021),	-- Answers Unknown
+					q(46199),	-- Battle for Azsuna
+					q(47193),	-- Battle for Azsuna
+					q(47194),	-- Battle for Highmountain
+					q(47195),	-- Battle for Stormheim
+					q(47196),	-- Battle for Val'sharah
+					q(40188),	-- Best Served Cold
+					q(40857),	-- Bits and Pieces
+					q(42450),	-- Brawlgoth
+					q(43193),	-- Calamitous Intent
+					q(40766),	-- Charfeather
+					q(42221),	-- Chief Bitterbrine										
+					q(44673),	-- Commander Soraax
+					q(38946),	-- Consult the Locals
+					q(40060),	-- Containing the Demon Within
+					q(40063),	-- Control is Key
+					q(41157),	-- Corrupted Studies
+					q(42420),	-- Court of Farondis
+					q(46020),	-- Crystal Containment
+					q(39891),	-- Cursed, But Convenient
+					q(41166),	-- Dark Secrets
+					q(41169),	-- Darkheart Thicket: Through the Fog
+					q(41165),	-- Deciphering Demonology
+					q(40058),	-- Defense Symbology
+					q(41172),	-- Echoes of My Ancestors
+					q(41178),	-- Explosive Results
+					q(43378),	-- Eye of Azshara: Looking Through the Lens
+					q(40208),	-- Eye of Azshara: Scales of the Sea
+					q(38961),	-- Eye of Azshara: The Depraved Nightfallen
+					q(37526),	-- Farondis Murder Flag
+					q(38014),	-- Feasting on the Dragon
+					q(41167),	-- Fel Fragments
 					qa( 45127),	-- Fel-Crossed Lovers
-					q( 42069),	-- Felbats
-					q( 42171),	-- Final Exit
-					q( 40527),	-- Finishing Touches
-					q( 40528),	-- Finishing Touches
-					q( 40526),	-- Finishing Touches
-					q( 45848),	-- Fit For a Pirate
-					q( 41175),	-- Fit for an Elven Queen
-					q( 45917),	-- Following the Scent
-					q( 41158),	-- Fragments of the Fjords
-					q( 40525),	-- Getting the Band Back Together
-					q( 40193),	-- Getting the Kinks Out
-					q( 40144),	-- Glielle
-					q( 41177),	-- Goblin Archaeology
-					q( 40872),	-- Going Out With a Bang
-					q( 40875),	-- Going to Waste
-					q( 38948),	-- Hard Times
-					q( 39876),	-- Helping the Hunters
-					q( 44574),	-- Honor the Flame
-					q( 43561),	-- I Believe I Can Fly!
-					q( 40874),	-- I'd Do It Myself, But...
-					q( 39877),	-- In the Loop
-					q( 45794),	-- Informing the Council
-					q( 37908),	-- Inquisitor Ernstenbok
-					q( 39936),	-- Inscription of the Body
-					q( 39389),	-- It Hungers for Blood
-					q( 40856),	-- It'll Cost You
-					q( 40556),	-- Jabrul Needs You
+					q(42069),	-- Felbats
+					q(42171),	-- Final Exit
+					q(40527),	-- Finishing Touches
+					q(40528),	-- Finishing Touches
+					q(40526),	-- Finishing Touches
+					q(45848),	-- Fit For a Pirate
+					q(41175),	-- Fit for an Elven Queen
+					q(45917),	-- Following the Scent
+					q(41158),	-- Fragments of the Fjords
+					q(40525),	-- Getting the Band Back Together
+					q(40193),	-- Getting the Kinks Out
+					q(40144),	-- Glielle
+					q(41177),	-- Goblin Archaeology
+					q(40872),	-- Going Out With a Bang
+					q(40875),	-- Going to Waste
+					q(38948),	-- Hard Times
+					q(39876),	-- Helping the Hunters
+					q(44574),	-- Honor the Flame
+					q(43561),	-- I Believe I Can Fly!
+					q(40874),	-- I'd Do It Myself, But...
+					q(39877),	-- In the Loop
+					q(45794),	-- Informing the Council
+					q(37908),	-- Inquisitor Ernstenbok
+					q(39936),	-- Inscription of the Body
+					q(39389),	-- It Hungers for Blood
+					q(40856),	-- It'll Cost You
+					q(40556),	-- Jabrul Needs You
 					qh( 46326),	-- Jorach's Calling
 					qa( 45836),	-- Jorach's Calling
-					q( 38443),	-- Journey to the Repose
-					q( 40873),	-- Keep Yer Powder Dry
-					q( 42214),	-- Knocked for a Loop
-					q( 42689),	-- Knowing Our Enemy
-					q( 38959),	-- Left Behind
-					q( 42691),	-- Leyworm Lure
-					q( 38960),	-- Lining Them Up
-					q( 40187),	-- Links in the Chain
-					q( 38785),	-- Living Leystone Sample
-					q( 45073),	-- Loot and Plunder!
-					q( 43519),	-- Lucid Strength
-					q( 38952),	-- Meticulous Precision
-					q( 43462),	-- Mother Ozram
-					q( 43374),	-- Murloc Mind Control
-					q( 40189),	-- Naga Know-How
-					q( 41181),	-- Narrowing Down
-					q( 39921),	-- Neltharion's Lair: Rod of Azure
-					q( 37928),	-- Normantis the Deposed
-					q( 44873),	-- Oculeth Ex Machina
-					q( 39920),	-- On Azure Wings
-					q( 41164),	-- One Step Closer
-					q( 40059),	-- Opposites Repel
-					q( 39937),	-- Opposites Repel
-					q( 40855),	-- Our Man in Azsuna
-					q( 39934),	-- Our New Allies
-					q( 40056),	-- Our New Allies
-					q( 41161),	-- Out of the Frying Pan										
-					q( 39718),	-- Paradise Lost
-					q( 46794),	-- Paragon of the Court
-					q( 46800),	-- Paragon of the Wardens
-					q( 37495),	-- Plunder the Cove
-					q( 42435),	-- Prepare To Be Assimilated
-					q( 39906),	-- Prepping For Battle
-					q( 45795),	-- Presence of Power
-					q( 37728),	-- Presentation is Everything
-					q( 38061),	-- Pridelord Meowl
-					q( 43376),	-- Problem Salver
-					q( 41159),	-- Process of Elimination
-					q( 41771),	-- Recharging the Blade
-					q( 40194),	-- Reclaimed Cargo
-					q( 43523),	-- Repaid Debt
-					q( 36811),	-- Retake Faronaar
-					q( 38791),	-- Rethu's Horn
-					q( 38792),	-- Rethu's Lesson
-					q( 38794),	-- Rethu's Sacrifice
-					q( 38803),	-- Rin'thissa
-					q( 39905),	-- Ringing True
-					q( 39940),	-- Runes of Power
-					q( 38947),	-- Runic Catgut
-					q( 43527),	-- Saving the Guard
-					q( 40207),	-- Scales of the Arcane
-					q( 40209),	-- Scales of the Earth
-					q( 40133),	-- Scrap of Pants
-					q( 39939),	-- Scribal Knowledge
-					q( 39914),	-- Sentinel's Final Duty
-					q( 38955),	-- Sew Far, Sew Good
-					q( 46795),	-- Ship - Azsuna
-					q( 46808),	-- Ship - Highmountain
-					q( 46801),	-- Ship - Val'sharah
-					q( 40310),	-- Shipwrecked Captive
-					q( 42220),	-- Shipwrecked Sailors
-					q( 42268),	-- Shipwrecked Sailors
-					q( 41176),	-- Sifting Through the Rubble
-					q( 38949),	-- So You Think You Can Sew
-					q( 45175),	-- Soul Prism of the Illidari
-					q( 45025),	-- Stealing the Source of Power
-					q( 40131),	-- Stonehide Leather Sample
-					q( 40141),	-- Stormscale Sample
-					q( 40048),	-- Strings of the Puppet Masters
-					q( 41288),	-- Supplies Needed: Aethril
-					q( 41315),	-- Supplies Needed: Leystone
-					q( 41327),	-- Supplies Needed: Stormscales
-					q( 38957),	-- Taking Inspiration
-					q( 43518),	-- Tempering Darkness
-					q( 39142),	-- Testing a Theory
-					q( 40327),	-- Testing the Metal
-					q( 39918),	-- The Absent Priestess
-					q( 41163),	-- The Apocalypse Bringer
-					q( 44875),	-- The Art of Flow
-					q( 43373),	-- The Best and Brightest
-					q( 37466),	-- The Broken Academy
-					q( 39943),	-- The Burdens of Hunting
-					q( 39910),	-- The Druid's Debt
-					q( 43520),	-- The Emerald Nightmare: In Nightmares
-					q( 45028),	-- The Fate of Kanrethad										
-					q( 38963),	-- The Final Lesson?
-					q( 41802),	-- The Gates of Valor
-					q( 45174),	-- The Hunt for Illidan Stormrage
-					q( 41185),	-- The Keys to Success
-					q( 40859),	-- The Latest Fashion: Headguns!
-					q( 37727),	-- The Magister of Mixology
-					q( 40858),	-- The Missing Pieces
-					q( 42407),	-- The Nature of the Beast
+					q(38443),	-- Journey to the Repose
+					q(40873),	-- Keep Yer Powder Dry
+					q(42214),	-- Knocked for a Loop
+					q(42689),	-- Knowing Our Enemy
+					q(38959),	-- Left Behind
+					q(42691),	-- Leyworm Lure
+					q(38960),	-- Lining Them Up
+					q(40187),	-- Links in the Chain
+					q(38785),	-- Living Leystone Sample
+					q(45073),	-- Loot and Plunder!
+					q(43519),	-- Lucid Strength
+					q(38952),	-- Meticulous Precision
+					q(43462),	-- Mother Ozram
+					q(43374),	-- Murloc Mind Control
+					q(40189),	-- Naga Know-How
+					q(41181),	-- Narrowing Down
+					q(39921),	-- Neltharion's Lair: Rod of Azure
+					q(37928),	-- Normantis the Deposed
+					q(44873),	-- Oculeth Ex Machina
+					q(39920),	-- On Azure Wings
+					q(41164),	-- One Step Closer
+					q(40059),	-- Opposites Repel
+					q(39937),	-- Opposites Repel
+					q(40855),	-- Our Man in Azsuna
+					q(39934),	-- Our New Allies
+					q(40056),	-- Our New Allies
+					q(41161),	-- Out of the Frying Pan										
+					q(39718),	-- Paradise Lost
+					q(46794),	-- Paragon of the Court
+					q(46800),	-- Paragon of the Wardens
+					q(37495),	-- Plunder the Cove
+					q(42435),	-- Prepare To Be Assimilated
+					q(39906),	-- Prepping For Battle
+					q(45795),	-- Presence of Power
+					q(37728),	-- Presentation is Everything
+					q(38061),	-- Pridelord Meowl
+					q(43376),	-- Problem Salver
+					q(41159),	-- Process of Elimination
+					q(41771),	-- Recharging the Blade
+					q(40194),	-- Reclaimed Cargo
+					q(43523),	-- Repaid Debt
+					q(36811),	-- Retake Faronaar
+					q(38791),	-- Rethu's Horn
+					q(38792),	-- Rethu's Lesson
+					q(38794),	-- Rethu's Sacrifice
+					q(38803),	-- Rin'thissa
+					q(39905),	-- Ringing True
+					q(39940),	-- Runes of Power
+					q(38947),	-- Runic Catgut
+					q(43527),	-- Saving the Guard
+					q(40207),	-- Scales of the Arcane
+					q(40209),	-- Scales of the Earth
+					q(40133),	-- Scrap of Pants
+					q(39939),	-- Scribal Knowledge
+					q(39914),	-- Sentinel's Final Duty
+					q(38955),	-- Sew Far, Sew Good
+					q(46795),	-- Ship - Azsuna
+					q(46808),	-- Ship - Highmountain
+					q(46801),	-- Ship - Val'sharah
+					q(40310),	-- Shipwrecked Captive
+					q(42220),	-- Shipwrecked Sailors
+					q(42268),	-- Shipwrecked Sailors
+					q(41176),	-- Sifting Through the Rubble
+					q(38949),	-- So You Think You Can Sew
+					q(45175),	-- Soul Prism of the Illidari
+					q(45025),	-- Stealing the Source of Power
+					q(40131),	-- Stonehide Leather Sample
+					q(40141),	-- Stormscale Sample
+					q(40048),	-- Strings of the Puppet Masters
+					q(41288),	-- Supplies Needed: Aethril
+					q(41315),	-- Supplies Needed: Leystone
+					q(41327),	-- Supplies Needed: Stormscales
+					q(38957),	-- Taking Inspiration
+					q(43518),	-- Tempering Darkness
+					q(39142),	-- Testing a Theory
+					q(40327),	-- Testing the Metal
+					q(39918),	-- The Absent Priestess
+					q(41163),	-- The Apocalypse Bringer
+					q(44875),	-- The Art of Flow
+					q(43373),	-- The Best and Brightest
+					q(37466),	-- The Broken Academy
+					q(39943),	-- The Burdens of Hunting
+					q(39910),	-- The Druid's Debt
+					q(43520),	-- The Emerald Nightmare: In Nightmares
+					q(45028),	-- The Fate of Kanrethad										
+					q(38963),	-- The Final Lesson?
+					q(41802),	-- The Gates of Valor
+					q(45174),	-- The Hunt for Illidan Stormrage
+					q(41185),	-- The Keys to Success
+					q(40859),	-- The Latest Fashion: Headguns!
+					q(37727),	-- The Magister of Mixology
+					q(40858),	-- The Missing Pieces
+					q(42407),	-- The Nature of the Beast
 					qh( 46322),	-- The Pirate's Bay
 					qa( 45833),	-- The Pirate's Bay
-					q( 43501),	-- The Power Within
-					q( 43505),	-- The Power Within
-					q( 43503),	-- The Power Within
-					q( 43496),	-- The Power Within
-					q( 39935),	-- The Price of Power
-					q( 40057),	-- The Price of Power
-					q( 41168),	-- The Purple Hills of Mac'Aree
-					q( 41170),	-- The Relic Renewed
-					q( 41171),	-- The Reliquary Calls
-					q( 37660),	-- The Scythe of Souls
-					q( 41770),	-- The Skies Above
-					q( 42422),	-- The Wardens
-					q( 38950),	-- The Wayward Tailor
-					q( 43581),	-- The Wisdom of Patience
-					q( 42887),	-- This Is Retribution
-					q( 37963),	-- Those Beyond Redemption
-					q( 40210),	-- Time Well Spent
-					q( 43942),	-- Timeworn Artifact
-					q( 37779),	-- Tip the Scales
-					q( 40547),	-- To Dalaran, With Love
-					q( 42886),	-- To Faronaar
-					q( 43489),	-- To Felblaze Ingress
-					q( 40061),	-- To Know Your Enemy
-					q( 42406),	-- To Tame the Beast
-					q( 45027),	-- To the Broken Shore
-					q( 47064),	-- Tracking Quest
-					q( 44081),	-- Treacherous Leyrunners
-					q( 37649),	-- Treasure: Offerings for the Giants
-					q( 45176),	-- Trial of Valor: The Once and Future Lord of Shadows
-					q( 41184),	-- Tried and True
-					q( 39916),	-- Turnabout Betrayal
-					q( 44874),	-- Unbeleyvable
-					q( 41182),	-- Uncovering the Orb of Sciallax
-					q( 40145),	-- Under Down
-					q( 45126),	-- Unlikely Seduction
-					q( 41180),	-- Unspeakable Power
-					q( 40130),	-- Washed Clean					
-					q( 42166),	-- What Is Going On Here?
-					q( 41179),	-- What Once Was Lost
+					q(43501),	-- The Power Within
+					q(43505),	-- The Power Within
+					q(43503),	-- The Power Within
+					q(43496),	-- The Power Within
+					q(39935),	-- The Price of Power
+					q(40057),	-- The Price of Power
+					q(41168),	-- The Purple Hills of Mac'Aree
+					q(41170),	-- The Relic Renewed
+					q(41171),	-- The Reliquary Calls
+					q(37660),	-- The Scythe of Souls
+					q(41770),	-- The Skies Above
+					q(42422),	-- The Wardens
+					q(38950),	-- The Wayward Tailor
+					q(43581),	-- The Wisdom of Patience
+					q(42887),	-- This Is Retribution
+					q(37963),	-- Those Beyond Redemption
+					q(40210),	-- Time Well Spent
+					q(43942),	-- Timeworn Artifact
+					q(37779),	-- Tip the Scales
+					q(40547),	-- To Dalaran, With Love
+					q(42886),	-- To Faronaar
+					q(43489),	-- To Felblaze Ingress
+					q(40061),	-- To Know Your Enemy
+					q(42406),	-- To Tame the Beast
+					q(45027),	-- To the Broken Shore
+					q(47064),	-- Tracking Quest
+					q(44081),	-- Treacherous Leyrunners
+					q(37649),	-- Treasure: Offerings for the Giants
+					q(45176),	-- Trial of Valor: The Once and Future Lord of Shadows
+					q(41184),	-- Tried and True
+					q(39916),	-- Turnabout Betrayal
+					q(44874),	-- Unbeleyvable
+					q(41182),	-- Uncovering the Orb of Sciallax
+					q(40145),	-- Under Down
+					q(45126),	-- Unlikely Seduction
+					q(41180),	-- Unspeakable Power
+					q(40130),	-- Washed Clean					
+					q(42166),	-- What Is Going On Here?
+					q(41179),	-- What Once Was Lost
 					qa( 44758),	-- What's the Cache?
 					qh( 46323),	-- What's the Cache?
-					q( 37930),	-- Whelp? That Happened.
-					q( 38956),	-- Where's Lyndras Again?
-					q( 38954),	-- Where's Lyndras?
-					q( 41174),	-- Worth Its Weight
+					q(37930),	-- Whelp? That Happened.
+					q(38956),	-- Where's Lyndras Again?
+					q(38954),	-- Where's Lyndras?
+					q(41174),	-- Worth Its Weight
           SOON™
           --]]
 				}),

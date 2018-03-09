@@ -40,12 +40,12 @@ _.Zones =
 					n(-50, { 		-- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(37675, q( 24635)),	-- A Cloudlet of Classy Cologne
+								qg(37675, q(24635)),	-- A Cloudlet of Classy Cologne
 								qg(37172, qh(24576)),	-- A Friendly Chat...
 -- COORDINATES					qg(38328, qh(24576)),	-- A Friendly Chat...
 								qg(38042, qh(24612)),	-- A Gift for High Overlord Saurfang
-								qg(37675, q( 24629)),	-- A Perfect Puff of Perfume
-								qg(37675, q( 24636)),	-- Bonbon Blitz
+								qg(37675, q(24629)),	-- A Perfect Puff of Perfume
+								qg(37675, q(24636)),	-- Bonbon Blitz
 								qg(37172, qh(24638)),	-- Crushing the Crown (5)
 								qg(37172, qh(24645)),	-- Crushing the Crown (14)
 								qg(37172, qh(24647)),	-- Crushing the Crown (23)
@@ -130,18 +130,18 @@ _.Zones =
 										qa( 9324),	-- Stealing Orgrimmar's Flame
 									}),
 								}),
-								qg(26221, q( 11917)),	-- Striking Back (16)
-								qg(26221, q( 11947)),	-- Striking Back (29)
-								qg(26221, q( 11948)),	-- Striking Back (39)
-								qg(26221, q( 11952)),	-- Striking Back (49)
-								qg(26221, q( 11953)),	-- Striking Back (56)
-								qg(26221, q( 11954)),	-- Striking Back (64)
+								qg(26221, q(11917)),	-- Striking Back (16)
+								qg(26221, q(11947)),	-- Striking Back (29)
+								qg(26221, q(11948)),	-- Striking Back (39)
+								qg(26221, q(11952)),	-- Striking Back (49)
+								qg(26221, q(11953)),	-- Striking Back (56)
+								qg(26221, q(11954)),	-- Striking Back (64)
 								qg(19175, qh(11971)),	-- The Spinner of Summer Tales
 -- COORDINATES					qg(19176, qh(11971)),	-- The Spinner of Summer Tales
 -- COORDINATES					qg(19177, qh(11971)),	-- The Spinner of Summer Tales
 								qg(26113, qh(11923)),	-- Torch Catching
 								qg(26113, qh(11922)),	-- Torch Tossing
-								qg(26221, q( 11886)),	-- Unusual Activity
+								qg(26221, q(11886)),	-- Unusual Activity
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
@@ -319,7 +319,7 @@ _.Zones =
 -- COORDINATES					qg(19176, qh(29400)),	-- A Season for Celebration
 -- COORDINATES					qg(19177, qh(29400)),	-- A Season for Celebration
 								qh(12366),	-- Candy Bucket
-								qg( 6929, qh( 8359)),	-- Flexing for Nougat
+								qg(6929, qh( 8359)),	-- Flexing for Nougat
 								qg(11814, qh( 8358)),	-- Incoming Gumdrop
 								qg(19175, qh(11357)),	-- Masked Orphan Matron
 -- COORDINATES					qg(19176, qh(11357)),	-- Masked Orphan Matron
@@ -453,9 +453,9 @@ _.Zones =
 								qg(13420, q(6961)), 	-- Greatfather Winter is Here!
 								qg(13417, qh(7061)),	-- The Feast of Winter Veil
 								qg(13418, qh(8799)),	-- The Hero of the Day
-								qg( 9550, qh(6964)),	-- The Reason for the Season
+								qg(9550, qh(6964)),	-- The Reason for the Season
 								qg(13444, q(6962)), 	-- Treats for Great-father Winter
-								qg(13418, q( 6983, { 	-- You're A Mean One
+								qg(13418, q(6983, { 	-- You're A Mean One
 									["groups"] = {
 										i(73792, {  -- Stolen Present
 											["groups"] = {
@@ -978,7 +978,7 @@ COORDINATES			qg(44726, qh( 27283, {	-- A Journey to Moonglade
 						["classes"] = {11},
 					})),				
 					ql(qg(52382, qh( 29129))),	-- A Legendary Engagement
-					qdg(qg( 3352, qh( 27395, {	-- A Marksman's Weapon
+					qdg(qg(3352, qh( 27395, {	-- A Marksman's Weapon
 						["groups"] = {
 						},
 						["classes"] = {3},
@@ -1006,7 +1006,7 @@ COORDINATES			qg(44726, qh( 27283, {	-- A Journey to Moonglade
 						},
 						["classes"] = {2},
 					}))),
-					qg( 3216, qh(25264)),	-- Ak'Zeloth
+					qg(3216, qh(25264)),	-- Ak'Zeloth
 					qg(54870, qh(31853)),	-- All Aboard!
 					qg(14720, qh( 9627, {	-- Allegiance to the Horde
 						["groups"] = {
@@ -1016,7 +1016,7 @@ COORDINATES			qg(44726, qh( 27283, {	-- A Journey to Moonglade
 					
 Legacy				qh( 1432),	-- Alliance Relations
 Legacy				qh( 1431),	-- Alliance Relations
-Legacy				q(  1433),	-- Alliance Relations
+Legacy				q(1433),	-- Alliance Relations
 Legacy				qh( 1436),	-- Alliance Relations 					
 					qg(97296, qh( 40976, {	-- Audience with the Warchief
 						["groups"] = {
@@ -1045,7 +1045,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qp129(qg(43239, qh(26543))),	-- Clammy Hands
 					qg(15116, qh( 8228)),	-- Could I get a Fishing Flier?
 					qp185(qg(42506, qh(26226))),	-- Crawfish Creole
-					qg( 6929, qh( 6385, {	-- Doras the Wind Rider Master
+					qg(6929, qh( 6385, {	-- Doras the Wind Rider Master
 						["groups"] = {
 						},
 						["races"] = {2,6,8},
@@ -1057,11 +1057,11 @@ Legacy				qh( 1436),	-- Alliance Relations
 					})),
 --[[					
 					qp755(qg(50482, qh(25162))),	-- Elemental Goo
-					qp171(qg( 3347, q( 29481))),	-- Elixir Master
+					qp171(qg(3347, q(29481))),	-- Elixir Master
 					qdg(qg(14720, qh(31034))),	-- Enemies Below (add'l QGs 39605 and 86832, probably changed)
 					qp185(qg(42506, qh(26235))),	-- Even Thieves Get Hungry
 					qp185(qg(42506, qh(26220))),	-- Everything Is Better with Bacon
-					qg( 3310, qh(26804, {	-- Flight to Razor Hill					
+					qg(3310, qh(26804, {	-- Flight to Razor Hill					
 						["groups"] = {
 						},
 						["races"] = {9},
@@ -1074,18 +1074,18 @@ Legacy				qh( 1436),	-- Alliance Relations
 						})),
 					}),
 					
-					qp202(qg(11017, q( 29477))),	-- Gnomish Engineering
-					qp202(qg(11017, q( 29475))),	-- Goblin Engineering
+					qp202(qg(11017, q(29477))),	-- Gnomish Engineering
+					qp202(qg(11017, q(29475))),	-- Goblin Engineering
 					qp356(qg(45540, qh( 6623))),	-- Horde Trauma
 --]]					
-					qp164(qg( 7790, qh( 2754, {	-- Horns of Frenzy
+					qp164(qg(7790, qh( 2754, {	-- Horns of Frenzy
 						i(7980, { 	-- Plans: Barbaric Iron Helm
 							i(7915),	-- Barbaric Iron Helm
 						}),
 					}))),
 --[[					
 					desc(qh( 32674), "This quest is automatically offered to Horde players upon reaching level 60."),	-- I Believe You Can Fly (despite this quest, you can learn flying anywhere - not sure if it should be included?)
-					qg(95234, q( 44663)),	-- In the Blink of an Eye
+					qg(95234, q(44663)),	-- In the Blink of an Eye
 --					qh(47251),	-- Interesting Times (LEGACY - 13th anniversary, quest was received via mail and ended in Org)
 --]]					
 					qp164(qg(7790, qh( 2755, {	-- Joys of Omosh
@@ -1117,33 +1117,33 @@ Legacy				qh( 1436),	-- Alliance Relations
 					}))),
 					qg(47571, qh(28296)),	-- Meetup with the Caravan
 					qg(54141, qh(29415)),	-- Missing Heirlooms
-					qg( 3144, qh( 26803, {	-- Missing Reports
+					qg(3144, qh( 26803, {	-- Missing Reports
 						["groups"] = {
 						},
 						["races"] = {9},
 					})),	
-					qg(44978, q( 28289, {	-- Moonglade Calls (add'l QG 44726)
+					qg(44978, q(28289, {	-- Moonglade Calls (add'l QG 44726)
 						["groups"] = {
 						},
 						["classes"] = {11},
 					})),
 					qp755(qg(50482, qh(25158))),	-- Nibbler! No!
 					qp129(qg(43239, qh(26556))),	-- No Dumping Allowed
-					qdg(qg( 3412, qh( 2950))),	-- Nogg's Ring Redo
+					qdg(qg(3412, qh( 2950))),	-- Nogg's Ring Redo
 					qg(43062, qh(26417)),	-- Northern Stranglethorn: The Fallen Empire
 					qp755(qg(50482, qh(25161))),	-- Ogrezonians in the Mood
 --]]					
-					qp164(qg( 7790, qh( 2752, {	-- On Iron Pauldrons
+					qp164(qg(7790, qh( 2752, {	-- On Iron Pauldrons
 						i(7978, { 	-- Plans: Barbaric Iron Shoulders
 							i(7913),	-- Barbaric Iron Shoulders
 						}),
 					}))),
 --[[
-					qp171(qg( 3347, q( 29067))),	-- Potion Master
+					qp171(qg(3347, q(29067))),	-- Potion Master
 					qg(35068, qh(26642)),	-- Preserving the Barrens
 --					qg(95234, qh(44092)),	-- Protect the Home Front (LEGACY - pre-Legion)
 					qg(14720, qh(25275)),	-- Report to the Labor Captain (QG in Orgrimmar, additional QGs 39605 and 86832, previous Horde leaders)
-					qg( 3310, qh( 6386, {	-- Return to Razor Hill
+					qg(3310, qh( 6386, {	-- Return to Razor Hill
 						["groups"] = {
 						},
 						["races"] = {2,8},
@@ -1151,7 +1151,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qg(14720, qh( 26840)),	-- Return to the Highlands (add'l QGs 39605 and 86832, previous Horde leaders)
 					qg(14720, qh( 28909)),	-- Sauranok Will Point the Way (add'l QGs 39605 and 86832, previous Horde leaders)
 					qg(44024, qh( 26798)),	-- Saurfang Will be Pleased
-					qg(88705, q(  32317)),	-- Seeking the Soulstones
+					qg(88705, q(32317)),	-- Seeking the Soulstones
 					qdg(qg(72939, qh(28465, {	-- Slaves of the Firelord (add'l QG 3344)
 						["groups"] = {
 						},
@@ -1178,7 +1178,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						},
 						["classes"] = {9},
 					}))),
-					qdg(qg( 3344, qh(27397, {	-- Terga's Task
+					qdg(qg(3344, qh(27397, {	-- Terga's Task
 						["groups"] = {
 						},
 						["classes"] = {7},
@@ -1203,7 +1203,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qg(55382, qh( 7926)),	-- The Darkmoon Faire (HOLIDAY/WORLD EVENT - DARKMOON FAIRE; add'l QG 55382)
 					qdg(qg(52382, qh(30094))),	-- The End Time
 					qg(45244, qh(28805)),	-- The Eye of the Storm
-					qdg(qg( 3352, qh(28461, {	-- The Golem Lord's Creations
+					qdg(qg(3352, qh(28461, {	-- The Golem Lord's Creations
 						["groups"] = {
 						},
 						["classes"] = {3},
@@ -1221,7 +1221,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(19366),	-- Master Dragonslayer's Orb
 					})),
 		--[[			
-					qg(45244, q( 27203)),	-- The Maelstrom
+					qg(45244, q(27203)),	-- The Maelstrom
 --					qh(47254),	-- The Originals (LEGACY - 13th anniversary)
 					qdg(qg(47246, qh(28458, {	-- The Pyromancer's Grimoire
 						["groups"] = {
@@ -1252,7 +1252,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["classes"] = {9},
 					}))),
 --]]					
-					qg(14720, q( 26830, {  -- Traitor's Bait (add'l QGs 39605 and 86832, previous Horde leaders)
+					qg(14720, q(26830, {  -- Traitor's Bait (add'l QGs 39605 and 86832, previous Horde leaders)
 						i(63916),	-- Belt of Mystical Betrayal
 						i(63914),	-- Mindsliced Chestguard
 						i(63913),	-- Twilight-Heart Shoulderplates
@@ -1311,7 +1311,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						qh( 4494),	-- March of the Silithid
 						desc(qh(29612), "Players who have completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
 						desc(qh(29611),	"Players who have not completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
-						desc(q( 34398),	"If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest."),	-- The Dark Portal
+						desc(q(34398),	"If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest."),	-- The Dark Portal
 						qh(43926),	-- The Legion Returns
 						qh(29157),	-- The Zandalari Menace
 						qh(28493),	-- Warchief's Command: Ashenvale!
@@ -1344,7 +1344,7 @@ COORDINATES			o(206116, { 	-- Warchief's Command Board (Org)
 						qh( 4494),	-- March of the Silithid
 						desc(qh(29612), "Players who have completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
 						desc(qh(29611),	"Players who have not completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
-						desc(q( 34398),	"If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest."),	-- The Dark Portal
+						desc(q(34398),	"If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest."),	-- The Dark Portal
 						qh(43926),	-- The Legion Returns
 						qh(29157),	-- The Zandalari Menace
 						qh( 28493),	-- Warchief's Command: Ashenvale!
@@ -1382,8 +1382,8 @@ COORDINATES			o(206116, { 	-- Warchief's Command Board (Org)
 						["races"] = {10},
 					}))),
 					qg(14720, qh(26324)),	-- Where Is My Warfleet? (QG High Overlord Saurfang in Orgrimmar, additional QGs 39605 Garrosh Hellscream and 86832 Vol'jin)
-					qg( 3362, qh( 7660)),	-- Wolf Swapping - Arctic Wolf
-					qg( 3362, qh( 7661)),	-- Wolf Swapping - Red Wolf
+					qg(3362, qh( 7660)),	-- Wolf Swapping - Arctic Wolf
+					qg(3362, qh( 7661)),	-- Wolf Swapping - Red Wolf
 					qp129(qg(3332, qh( 6608))),	-- You Too Good.	
 --]]					
 					nlq({	-- Legacy Quests
@@ -1611,138 +1611,138 @@ COORDINATES			o(206116, { 	-- Warchief's Command Board (Org)
 						i(70216),	-- Ruthless Gladiator's Spellblade
 						i(70228),	-- Ruthless Gladiator's Staff
 						i(70234),	-- Ruthless Gladiator's Touch of Defeat
-						i( 70244),	-- Ruthless Gladiator's Dreadplate Chestpiece
-						i( 70245),	-- Ruthless Gladiator's Dreadplate Gauntlets
-						i( 70246),	-- Ruthless Gladiator's Dreadplate Helm
-						i( 70247),	-- Ruthless Gladiator's Dreadplate Legguards
-						i( 70248),	-- Ruthless Gladiator's Dreadplate Shoulders
-						i( 70249),	-- Ruthless Gladiator's Scaled Chestpiece
-						i( 70250),	-- Ruthless Gladiator's Scaled Gauntlets
-						i( 70251),	-- Ruthless Gladiator's Scaled Helm
-						i( 70252),	-- Ruthless Gladiator's Scaled Legguards
-						i( 70253),	-- Ruthless Gladiator's Scaled Shoulders
-						i( 70254),	-- Ruthless Gladiator's Plate Chestpiece
-						i( 70255),	-- Ruthless Gladiator's Plate Gauntlets
-						i( 70256),	-- Ruthless Gladiator's Plate Helm
-						i( 70257),	-- Ruthless Gladiator's Plate Legguards
-						i( 70258),	-- Ruthless Gladiator's Plate Shoulders
-						i( 70259),	-- Ruthless Gladiator's Chain Armor
-						i( 70260),	-- Ruthless Gladiator's Chain Gauntlets
-						i( 70261),	-- Ruthless Gladiator's Chain Helm
-						i( 70262),	-- Ruthless Gladiator's Chain Leggings
-						i( 70263),	-- Ruthless Gladiator's Chain Spaulders
-						i( 70264),	-- Ruthless Gladiator's Ringmail Armor
-						i( 70265),	-- Ruthless Gladiator's Ringmail Gauntlets
-						i( 70266),	-- Ruthless Gladiator's Ringmail Helm
-						i( 70267),	-- Ruthless Gladiator's Ringmail Leggings
-						i( 70268),	-- Ruthless Gladiator's Ringmail Spaulders
-						i( 70269),	-- Ruthless Gladiator's Linked Armor
-						i( 70270),	-- Ruthless Gladiator's Linked Gauntlets
-						i( 70271),	-- Ruthless Gladiator's Linked Helm
-						i( 70272),	-- Ruthless Gladiator's Linked Leggings
-						i( 70273),	-- Ruthless Gladiator's Linked Spaulders
-						i( 70274),	-- Ruthless Gladiator's Mail Armor
-						i( 70275),	-- Ruthless Gladiator's Mail Gauntlets
-						i( 70276),	-- Ruthless Gladiator's Mail Helm
-						i( 70277),	-- Ruthless Gladiator's Mail Leggings
-						i( 70278),	-- Ruthless Gladiator's Mail Spaulders
-						i( 70279),	-- Ruthless Gladiator's Dragonhide Gloves
-						i( 70280),	-- Ruthless Gladiator's Dragonhide Helm
-						i( 70281),	-- Ruthless Gladiator's Dragonhide Legguards
-						i( 70282),	-- Ruthless Gladiator's Dragonhide Robes
-						i( 70283),	-- Ruthless Gladiator's Dragonhide Spaulders
-						i( 70284),	-- Ruthless Gladiator's Kodohide Gloves
-						i( 70285),	-- Ruthless Gladiator's Kodohide Helm
-						i( 70286),	-- Ruthless Gladiator's Kodohide Legguards
-						i( 70287),	-- Ruthless Gladiator's Kodohide Robes
-						i( 70288),	-- Ruthless Gladiator's Kodohide Spaulders
-						i( 70289),	-- Ruthless Gladiator's Wyrmhide Gloves
-						i( 70290),	-- Ruthless Gladiator's Wyrmhide Helm
-						i( 70291),	-- Ruthless Gladiator's Wyrmhide Legguards
-						i( 70292),	-- Ruthless Gladiator's Wyrmhide Robes
-						i( 70293),	-- Ruthless Gladiator's Wyrmhide Spaulders
-						i( 70294),	-- Ruthless Gladiator's Leather Tunic
-						i( 70295),	-- Ruthless Gladiator's Leather Gloves
-						i( 70296),	-- Ruthless Gladiator's Leather Helm
-						i( 70297),	-- Ruthless Gladiator's Leather Legguards
-						i( 70298),	-- Ruthless Gladiator's Leather Spaulders
-						i( 70299),	-- Ruthless Gladiator's Silk Handguards
-						i( 70300),	-- Ruthless Gladiator's Silk Cowl
-						i( 70301),	-- Ruthless Gladiator's Silk Trousers
-						i( 70302),	-- Ruthless Gladiator's Silk Robe
-						i( 70303),	-- Ruthless Gladiator's Silk Amice
-						i( 70304),	-- Ruthless Gladiator's Mooncloth Gloves
-						i( 70305),	-- Ruthless Gladiator's Mooncloth Helm
-						i( 70306),	-- Ruthless Gladiator's Mooncloth Leggings
-						i( 70307),	-- Ruthless Gladiator's Mooncloth Robe
-						i( 70308),	-- Ruthless Gladiator's Mooncloth Mantle
-						i( 70309),	-- Ruthless Gladiator's Satin Gloves
-						i( 70310),	-- Ruthless Gladiator's Satin Hood
-						i( 70311),	-- Ruthless Gladiator's Satin Leggings
-						i( 70312),	-- Ruthless Gladiator's Satin Robe
-						i( 70313),	-- Ruthless Gladiator's Satin Mantle
-						i( 70314),	-- Ruthless Gladiator's Felweave Handguards
-						i( 70315),	-- Ruthless Gladiator's Felweave Cowl
-						i( 70316),	-- Ruthless Gladiator's Felweave Trousers
-						i( 70317),	-- Ruthless Gladiator's Felweave Raiment
-						i( 70318),	-- Ruthless Gladiator's Felweave Amice
-						i( 70319),	-- Ruthless Gladiator's Clasp of Cruelty
-						i( 70320),	-- Ruthless Gladiator's Girdle of Cruelty
-						i( 70321),	-- Ruthless Gladiator's Warboots of Cruelty
-						i( 70322),	-- Ruthless Gladiator's Armplates of Alacrity
-						i( 70323),	-- Ruthless Gladiator's Warboots of Alacrity
-						i( 70324),	-- Ruthless Gladiator's Greaves of Alacrity
-						i( 70325),	-- Ruthless Gladiator's Bracers of Prowess
-						i( 70326),	-- Ruthless Gladiator's Girdle of Prowess
-						i( 70327),	-- Ruthless Gladiator's Armplates of Proficiency
-						i( 70328),	-- Ruthless Gladiator's Waistguard of Meditation
-						i( 70329),	-- Ruthless Gladiator's Sabatons of Meditation
-						i( 70330),	-- Ruthless Gladiator's Armbands of Meditation
-						i( 70331),	-- Ruthless Gladiator's Waistguard of Cruelty
-						i( 70332),	-- Ruthless Gladiator's Clasp of Meditation
-						i( 70333),	-- Ruthless Gladiator's Greaves of Meditation
-						i( 70334),	-- Ruthless Gladiator's Bracers of Meditation
-						i( 70335),	-- Ruthless Gladiator's Sabatons of Cruelty
-						i( 70336),	-- Ruthless Gladiator's Links of Cruelty
-						i( 70337),	-- Ruthless Gladiator's Sabatons of Alacrity
-						i( 70338),	-- Ruthless Gladiator's Wristguards of Alacrity
-						i( 70339),	-- Ruthless Gladiator's Links of Accuracy
-						i( 70340),	-- Ruthless Gladiator's Wristguards of Accuracy
-						i( 70341),	-- Ruthless Gladiator's Sabatons of Alacrity
-						i( 70342),	-- Ruthless Gladiator's Armbands of Prowess
-						i( 70343),	-- Ruthless Gladiator's Belt of Meditation
-						i( 70344),	-- Ruthless Gladiator's Footguards of Meditation
-						i( 70345),	-- Ruthless Gladiator's Bindings of Meditation
-						i( 70346),	-- Ruthless Gladiator's Belt of Cruelty
-						i( 70347),	-- Ruthless Gladiator's Waistband of Cruelty
-						i( 70348),	-- Ruthless Gladiator's Boots of Cruelty
-						i( 70349),	-- Ruthless Gladiator's Waistband of Accuracy
-						i( 70350),	-- Ruthless Gladiator's Armwraps of Accuracy
-						i( 70351),	-- Ruthless Gladiator's Boots of Alacrity
-						i( 70352),	-- Ruthless Gladiator's Armwraps of Alacrity
-						i( 70353),	-- Ruthless Gladiator's Ornamented Chestguard
-						i( 70354),	-- Ruthless Gladiator's Ornamented Gloves
-						i( 70355),	-- Ruthless Gladiator's Ornamented Headcover
-						i( 70356),	-- Ruthless Gladiator's Ornamented Legplates
-						i( 70357),	-- Ruthless Gladiator's Ornamented Spaulders
-						i( 70358),	-- Ruthless Gladiator's Footguards of Alacrity
-						i( 70359),	-- Ruthless Gladiator's Bindings of Prowess
-						i( 70360),	-- Ruthless Gladiator's Cord of Cruelty
-						i( 70361),	-- Ruthless Gladiator's Treads of Cruelty
-						i( 70362),	-- Ruthless Gladiator's Cord of Accuracy
-						i( 70363),	-- Ruthless Gladiator's Cuffs of Accuracy
-						i( 70364),	-- Ruthless Gladiator's Treads of Alacrity
-						i( 70365),	-- Ruthless Gladiator's Cuffs of Prowess
-						i( 70366),	-- Ruthless Gladiator's Cuffs of Meditation
-						i( 70367),	-- Ruthless Gladiator's Treads of Meditation
-						i( 70368),	-- Ruthless Gladiator's Cord of Meditation
-						i( 70383),	-- Ruthless Gladiator's Cloak of Alacrity
-						i( 70384),	-- Ruthless Gladiator's Cloak of Prowess
-						i( 70385),	-- Ruthless Gladiator's Cape of Prowess
-						i( 70386),	-- Ruthless Gladiator's Cape of Cruelty
-						i( 70387),	-- Ruthless Gladiator's Drape of Diffusion
-						i( 70388),	-- Ruthless Gladiator's Drape of Prowess
-						i( 70389),	-- Ruthless Gladiator's Drape of Meditation
+						i(70244),	-- Ruthless Gladiator's Dreadplate Chestpiece
+						i(70245),	-- Ruthless Gladiator's Dreadplate Gauntlets
+						i(70246),	-- Ruthless Gladiator's Dreadplate Helm
+						i(70247),	-- Ruthless Gladiator's Dreadplate Legguards
+						i(70248),	-- Ruthless Gladiator's Dreadplate Shoulders
+						i(70249),	-- Ruthless Gladiator's Scaled Chestpiece
+						i(70250),	-- Ruthless Gladiator's Scaled Gauntlets
+						i(70251),	-- Ruthless Gladiator's Scaled Helm
+						i(70252),	-- Ruthless Gladiator's Scaled Legguards
+						i(70253),	-- Ruthless Gladiator's Scaled Shoulders
+						i(70254),	-- Ruthless Gladiator's Plate Chestpiece
+						i(70255),	-- Ruthless Gladiator's Plate Gauntlets
+						i(70256),	-- Ruthless Gladiator's Plate Helm
+						i(70257),	-- Ruthless Gladiator's Plate Legguards
+						i(70258),	-- Ruthless Gladiator's Plate Shoulders
+						i(70259),	-- Ruthless Gladiator's Chain Armor
+						i(70260),	-- Ruthless Gladiator's Chain Gauntlets
+						i(70261),	-- Ruthless Gladiator's Chain Helm
+						i(70262),	-- Ruthless Gladiator's Chain Leggings
+						i(70263),	-- Ruthless Gladiator's Chain Spaulders
+						i(70264),	-- Ruthless Gladiator's Ringmail Armor
+						i(70265),	-- Ruthless Gladiator's Ringmail Gauntlets
+						i(70266),	-- Ruthless Gladiator's Ringmail Helm
+						i(70267),	-- Ruthless Gladiator's Ringmail Leggings
+						i(70268),	-- Ruthless Gladiator's Ringmail Spaulders
+						i(70269),	-- Ruthless Gladiator's Linked Armor
+						i(70270),	-- Ruthless Gladiator's Linked Gauntlets
+						i(70271),	-- Ruthless Gladiator's Linked Helm
+						i(70272),	-- Ruthless Gladiator's Linked Leggings
+						i(70273),	-- Ruthless Gladiator's Linked Spaulders
+						i(70274),	-- Ruthless Gladiator's Mail Armor
+						i(70275),	-- Ruthless Gladiator's Mail Gauntlets
+						i(70276),	-- Ruthless Gladiator's Mail Helm
+						i(70277),	-- Ruthless Gladiator's Mail Leggings
+						i(70278),	-- Ruthless Gladiator's Mail Spaulders
+						i(70279),	-- Ruthless Gladiator's Dragonhide Gloves
+						i(70280),	-- Ruthless Gladiator's Dragonhide Helm
+						i(70281),	-- Ruthless Gladiator's Dragonhide Legguards
+						i(70282),	-- Ruthless Gladiator's Dragonhide Robes
+						i(70283),	-- Ruthless Gladiator's Dragonhide Spaulders
+						i(70284),	-- Ruthless Gladiator's Kodohide Gloves
+						i(70285),	-- Ruthless Gladiator's Kodohide Helm
+						i(70286),	-- Ruthless Gladiator's Kodohide Legguards
+						i(70287),	-- Ruthless Gladiator's Kodohide Robes
+						i(70288),	-- Ruthless Gladiator's Kodohide Spaulders
+						i(70289),	-- Ruthless Gladiator's Wyrmhide Gloves
+						i(70290),	-- Ruthless Gladiator's Wyrmhide Helm
+						i(70291),	-- Ruthless Gladiator's Wyrmhide Legguards
+						i(70292),	-- Ruthless Gladiator's Wyrmhide Robes
+						i(70293),	-- Ruthless Gladiator's Wyrmhide Spaulders
+						i(70294),	-- Ruthless Gladiator's Leather Tunic
+						i(70295),	-- Ruthless Gladiator's Leather Gloves
+						i(70296),	-- Ruthless Gladiator's Leather Helm
+						i(70297),	-- Ruthless Gladiator's Leather Legguards
+						i(70298),	-- Ruthless Gladiator's Leather Spaulders
+						i(70299),	-- Ruthless Gladiator's Silk Handguards
+						i(70300),	-- Ruthless Gladiator's Silk Cowl
+						i(70301),	-- Ruthless Gladiator's Silk Trousers
+						i(70302),	-- Ruthless Gladiator's Silk Robe
+						i(70303),	-- Ruthless Gladiator's Silk Amice
+						i(70304),	-- Ruthless Gladiator's Mooncloth Gloves
+						i(70305),	-- Ruthless Gladiator's Mooncloth Helm
+						i(70306),	-- Ruthless Gladiator's Mooncloth Leggings
+						i(70307),	-- Ruthless Gladiator's Mooncloth Robe
+						i(70308),	-- Ruthless Gladiator's Mooncloth Mantle
+						i(70309),	-- Ruthless Gladiator's Satin Gloves
+						i(70310),	-- Ruthless Gladiator's Satin Hood
+						i(70311),	-- Ruthless Gladiator's Satin Leggings
+						i(70312),	-- Ruthless Gladiator's Satin Robe
+						i(70313),	-- Ruthless Gladiator's Satin Mantle
+						i(70314),	-- Ruthless Gladiator's Felweave Handguards
+						i(70315),	-- Ruthless Gladiator's Felweave Cowl
+						i(70316),	-- Ruthless Gladiator's Felweave Trousers
+						i(70317),	-- Ruthless Gladiator's Felweave Raiment
+						i(70318),	-- Ruthless Gladiator's Felweave Amice
+						i(70319),	-- Ruthless Gladiator's Clasp of Cruelty
+						i(70320),	-- Ruthless Gladiator's Girdle of Cruelty
+						i(70321),	-- Ruthless Gladiator's Warboots of Cruelty
+						i(70322),	-- Ruthless Gladiator's Armplates of Alacrity
+						i(70323),	-- Ruthless Gladiator's Warboots of Alacrity
+						i(70324),	-- Ruthless Gladiator's Greaves of Alacrity
+						i(70325),	-- Ruthless Gladiator's Bracers of Prowess
+						i(70326),	-- Ruthless Gladiator's Girdle of Prowess
+						i(70327),	-- Ruthless Gladiator's Armplates of Proficiency
+						i(70328),	-- Ruthless Gladiator's Waistguard of Meditation
+						i(70329),	-- Ruthless Gladiator's Sabatons of Meditation
+						i(70330),	-- Ruthless Gladiator's Armbands of Meditation
+						i(70331),	-- Ruthless Gladiator's Waistguard of Cruelty
+						i(70332),	-- Ruthless Gladiator's Clasp of Meditation
+						i(70333),	-- Ruthless Gladiator's Greaves of Meditation
+						i(70334),	-- Ruthless Gladiator's Bracers of Meditation
+						i(70335),	-- Ruthless Gladiator's Sabatons of Cruelty
+						i(70336),	-- Ruthless Gladiator's Links of Cruelty
+						i(70337),	-- Ruthless Gladiator's Sabatons of Alacrity
+						i(70338),	-- Ruthless Gladiator's Wristguards of Alacrity
+						i(70339),	-- Ruthless Gladiator's Links of Accuracy
+						i(70340),	-- Ruthless Gladiator's Wristguards of Accuracy
+						i(70341),	-- Ruthless Gladiator's Sabatons of Alacrity
+						i(70342),	-- Ruthless Gladiator's Armbands of Prowess
+						i(70343),	-- Ruthless Gladiator's Belt of Meditation
+						i(70344),	-- Ruthless Gladiator's Footguards of Meditation
+						i(70345),	-- Ruthless Gladiator's Bindings of Meditation
+						i(70346),	-- Ruthless Gladiator's Belt of Cruelty
+						i(70347),	-- Ruthless Gladiator's Waistband of Cruelty
+						i(70348),	-- Ruthless Gladiator's Boots of Cruelty
+						i(70349),	-- Ruthless Gladiator's Waistband of Accuracy
+						i(70350),	-- Ruthless Gladiator's Armwraps of Accuracy
+						i(70351),	-- Ruthless Gladiator's Boots of Alacrity
+						i(70352),	-- Ruthless Gladiator's Armwraps of Alacrity
+						i(70353),	-- Ruthless Gladiator's Ornamented Chestguard
+						i(70354),	-- Ruthless Gladiator's Ornamented Gloves
+						i(70355),	-- Ruthless Gladiator's Ornamented Headcover
+						i(70356),	-- Ruthless Gladiator's Ornamented Legplates
+						i(70357),	-- Ruthless Gladiator's Ornamented Spaulders
+						i(70358),	-- Ruthless Gladiator's Footguards of Alacrity
+						i(70359),	-- Ruthless Gladiator's Bindings of Prowess
+						i(70360),	-- Ruthless Gladiator's Cord of Cruelty
+						i(70361),	-- Ruthless Gladiator's Treads of Cruelty
+						i(70362),	-- Ruthless Gladiator's Cord of Accuracy
+						i(70363),	-- Ruthless Gladiator's Cuffs of Accuracy
+						i(70364),	-- Ruthless Gladiator's Treads of Alacrity
+						i(70365),	-- Ruthless Gladiator's Cuffs of Prowess
+						i(70366),	-- Ruthless Gladiator's Cuffs of Meditation
+						i(70367),	-- Ruthless Gladiator's Treads of Meditation
+						i(70368),	-- Ruthless Gladiator's Cord of Meditation
+						i(70383),	-- Ruthless Gladiator's Cloak of Alacrity
+						i(70384),	-- Ruthless Gladiator's Cloak of Prowess
+						i(70385),	-- Ruthless Gladiator's Cape of Prowess
+						i(70386),	-- Ruthless Gladiator's Cape of Cruelty
+						i(70387),	-- Ruthless Gladiator's Drape of Diffusion
+						i(70388),	-- Ruthless Gladiator's Drape of Prowess
+						i(70389),	-- Ruthless Gladiator's Drape of Meditation
 					}),
 					n(3364, {	-- Borya <Tailoring Supplies>
 						i(10317, {	-- Pattern: Pink Mageweave Shirt
@@ -2054,215 +2054,215 @@ COORDINATES			o(206116, { 	-- Warchief's Command Board (Org)
 						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
 					})),
 					n(46555, {	-- Gunra <Justice Quartermaster>
-						i( 71523),	-- Immolation Handguards
-						i( 71608),	-- Shoulderguards of the Molten Giant
-						i( 71477),	-- Elementium Deathplate Gauntlets
-						i( 71478),	-- Elementium Deathplate Helmet
-						i( 71479),	-- Elementium Deathplate Greaves
-						i( 71480),	-- Elementium Deathplate Pauldrons
-						i( 71481),	-- Elementium Deathplate Chestguard
-						i( 71482),	-- Elementium Deathplate Handguards
-						i( 71483),	-- Elementium Deathplate Faceguard
-						i( 71484),	-- Elementium Deathplate Legguards
-						i( 71485),	-- Elementium Deathplate Shoulderguards
-						i( 71486),	-- Obsidian Arborweave Raiment
-						i( 71487),	-- Obsidian Arborweave Grips
-						i( 71488),	-- Obsidian Arborweave Headpiece
-						i( 71489),	-- Obsidian Arborweave Legguards
-						i( 71490),	-- Obsidian Arborweave Spaulders
-						i( 71491),	-- Obsidian Arborweave Handwraps
-						i( 71492),	-- Obsidian Arborweave Helm
-						i( 71493),	-- Obsidian Arborweave Legwraps
-						i( 71494),	-- Obsidian Arborweave Tunic
-						i( 71495),	-- Obsidian Arborweave Mantle
-						i( 71496),	-- Obsidian Arborweave Gloves
-						i( 71497),	-- Obsidian Arborweave Cover
-						i( 71498),	-- Obsidian Arborweave Leggings
-						i( 71499),	-- Obsidian Arborweave Vestment
-						i( 71500),	-- Obsidian Arborweave Shoulderwraps
-						i( 71501),	-- Flamewaker's Tunic
-						i( 71502),	-- Flamewaker's Gloves
-						i( 71503),	-- Flamewaker's Headguard
-						i( 71504),	-- Flamewaker's Legguards
-						i( 71505),	-- Flamewaker's Spaulders
-						i( 71507),	-- Firehawk Gloves
-						i( 71508),	-- Firehawk Hood
-						i( 71509),	-- Firehawk Leggings
-						i( 71510),	-- Firehawk Robes
-						i( 71511),	-- Firehawk Mantle
-						i( 71512),	-- Immolation Battleplate
-						i( 71513),	-- Immolation Gauntlets
-						i( 71514),	-- Immolation Helmet
-						i( 71515),	-- Immolation Legplates
-						i( 71516),	-- Immolation Pauldrons
-						i( 71517),	-- Immolation Breastplate
-						i( 71518),	-- Immolation Gloves
-						i( 71519),	-- Immolation Headguard
-						i( 71520),	-- Immolation Greaves
-						i( 71521),	-- Immolation Mantle
-						i( 71522),	-- Immolation Chestguard
-						i( 71476),	-- Elementium Deathplate Breastplate
-						i( 71524),	-- Immolation Faceguard
-						i( 71525),	-- Immolation Legguards
-						i( 71526),	-- Immolation Shoulderguards
-						i( 71527),	-- Handwraps of the Cleansing Flame
-						i( 71528),	-- Cowl of the Cleansing Flame
-						i( 71529),	-- Legwraps of the Cleansing Flame
-						i( 71530),	-- Robes of the Cleansing Flame
-						i( 71531),	-- Mantle of the Cleansing Flame
-						i( 71532),	-- Gloves of the Cleansing Flame
-						i( 71533),	-- Hood of the Cleansing Flame
-						i( 71534),	-- Leggings of the Cleansing Flame
-						i( 71535),	-- Vestment of the Cleansing Flame
-						i( 71536),	-- Shoulderwraps of the Cleansing Flame
-						i( 71537),	-- Dark Phoenix Tunic
-						i( 71538),	-- Dark Phoenix Gloves
-						i( 71539),	-- Dark Phoenix Helmet
-						i( 71540),	-- Dark Phoenix Legguards
-						i( 71541),	-- Dark Phoenix Spaulders
-						i( 71542),	-- Erupting Volcanic Tunic
-						i( 71543),	-- Erupting Volcanic Handwraps
-						i( 71544),	-- Erupting Volcanic Faceguard
-						i( 71545),	-- Erupting Volcanic Legwraps
-						i( 71546),	-- Erupting Volcanic Mantle
-						i( 71547),	-- Erupting Volcanic Cuirass
-						i( 71548),	-- Erupting Volcanic Grips
-						i( 71549),	-- Erupting Volcanic Helmet
-						i( 71550),	-- Erupting Volcanic Legguards
-						i( 71551),	-- Erupting Volcanic Spaulders
-						i( 71552),	-- Erupting Volcanic Hauberk
-						i( 71553),	-- Erupting Volcanic Gloves
-						i( 71554),	-- Erupting Volcanic Headpiece
-						i( 71555),	-- Erupting Volcanic Kilt
-						i( 71556),	-- Erupting Volcanic Shoulderwraps
-						i( 71594),	-- Balespider's Handwraps
-						i( 71595),	-- Balespider's Hood
-						i( 71596),	-- Balespider's Leggings
-						i( 71597),	-- Balespider's Robes
-						i( 71598),	-- Balespider's Mantle
-						i( 71599),	-- Helmet of the Molten Giant
-						i( 71600),	-- Battleplate of the Molten Giant
-						i( 71601),	-- Gauntlets of the Molten Giant
-						i( 71602),	-- Legplates of the Molten Giant
-						i( 71603),	-- Pauldrons of the Molten Giant
-						i( 71604),	-- Chestguard of the Molten Giant
-						i( 71605),	-- Handguards of the Molten Giant
-						i( 71606),	-- Faceguard of the Molten Giant
-						i( 71607),	-- Legguards of the Molten Giant
-						i( 71285),	-- Balespider's Mantle
-						i( 71286),	-- Firehawk Gloves
-						i( 71287),	-- Firehawk Hood
-						i( 71288),	-- Firehawk Leggings
-						i( 71289),	-- Firehawk Robes
-						i( 71290),	-- Firehawk Mantle
-						i( 71291),	-- Erupting Volcanic Hauberk
-						i( 71292),	-- Erupting Volcanic Gloves
-						i( 71293),	-- Erupting Volcanic Headpiece
-						i( 71294),	-- Erupting Volcanic Kilt
-						i( 70937),	-- Bracers of Regal Force
-						i( 71296),	-- Erupting Volcanic Tunic
-						i( 71297),	-- Erupting Volcanic Handwraps
-						i( 71298),	-- Erupting Volcanic Faceguard
-						i( 71299),	-- Erupting Volcanic Legwraps
-						i( 71300),	-- Erupting Volcanic Mantle
-						i( 71301),	-- Erupting Volcanic Cuirass
-						i( 71302),	-- Erupting Volcanic Grips
-						i( 71303),	-- Erupting Volcanic Helmet
-						i( 71304),	-- Erupting Volcanic Legguards
-						i( 71305),	-- Erupting Volcanic Spaulders
-						i( 70941),	-- Shoulderguards of the Molten Giant
-						i( 70942),	-- Legguards of the Molten Giant
-						i( 70943),	-- Handguards of the Molten Giant
-						i( 70944),	-- Faceguard of the Molten Giant
-						i( 70945),	-- Chestguard of the Molten Giant
-						i( 70946),	-- Immolation Shoulderguards
-						i( 70947),	-- Immolation Legguards
-						i( 70948),	-- Immolation Faceguard
-						i( 70949),	-- Immolation Handguards
-						i( 70950),	-- Immolation Chestguard
-						i( 70951),	-- Elementium Deathplate Shoulderguards
-						i( 70952),	-- Elementium Deathplate Legguards
-						i( 70953),	-- Elementium Deathplate Handguards
-						i( 70954),	-- Elementium Deathplate Faceguard
-						i( 70955),	-- Elementium Deathplate Chestguard
-						i( 71045),	-- Dark Phoenix Tunic
-						i( 71046),	-- Dark Phoenix Gloves
-						i( 71047),	-- Dark Phoenix Helmet
-						i( 71048),	-- Dark Phoenix Legguards
-						i( 71049),	-- Dark Phoenix Spaulders
-						i( 71050),	-- Flamewaker's Gloves
-						i( 71051),	-- Flamewaker's Headguard
-						i( 71052),	-- Flamewaker's Legguards
-						i( 71053),	-- Flamewaker's Spaulders
-						i( 71054),	-- Flamewaker's Tunic
-						i( 71058),	-- Elementium Deathplate Breastplate
-						i( 71059),	-- Elementium Deathplate Gauntlets
-						i( 71060),	-- Elementium Deathplate Helmet
-						i( 71061),	-- Elementium Deathplate Greaves
-						i( 71062),	-- Elementium Deathplate Pauldrons
-						i( 71063),	-- Immolation Battleplate
-						i( 71064),	-- Immolation Gauntlets
-						i( 71065),	-- Immolation Helmet
-						i( 71066),	-- Immolation Legplates
-						i( 71067),	-- Immolation Pauldrons
-						i( 71068),	-- Battleplate of the Molten Giant
-						i( 71069),	-- Gauntlets of the Molten Giant
-						i( 71070),	-- Helmet of the Molten Giant
-						i( 71071),	-- Legplates of the Molten Giant
-						i( 71072),	-- Pauldrons of the Molten Giant
-						i( 71091),	-- Immolation Breastplate
-						i( 71092),	-- Immolation Gloves
-						i( 71093),	-- Immolation Headguard
-						i( 71094),	-- Immolation Greaves
-						i( 71095),	-- Immolation Mantle
-						i( 71097),	-- Obsidian Arborweave Grips
-						i( 71098),	-- Obsidian Arborweave Headpiece
-						i( 71099),	-- Obsidian Arborweave Legguards
-						i( 71100),	-- Obsidian Arborweave Raiment
-						i( 71101),	-- Obsidian Arborweave Spaulders
-						i( 71102),	-- Obsidian Arborweave Handwraps
-						i( 71103),	-- Obsidian Arborweave Helm
-						i( 71104),	-- Obsidian Arborweave Legwraps
-						i( 71105),	-- Obsidian Arborweave Tunic
-						i( 71106),	-- Obsidian Arborweave Mantle
-						i( 71107),	-- Obsidian Arborweave Gloves
-						i( 71108),	-- Obsidian Arborweave Cover
-						i( 71109),	-- Obsidian Arborweave Leggings
-						i( 71110),	-- Obsidian Arborweave Vestment
-						i( 71111),	-- Obsidian Arborweave Shoulderwraps
-						i( 71130),	-- Flamebinder Bracers
-						i( 71150, {	-- Scorchvine Wand
+						i(71523),	-- Immolation Handguards
+						i(71608),	-- Shoulderguards of the Molten Giant
+						i(71477),	-- Elementium Deathplate Gauntlets
+						i(71478),	-- Elementium Deathplate Helmet
+						i(71479),	-- Elementium Deathplate Greaves
+						i(71480),	-- Elementium Deathplate Pauldrons
+						i(71481),	-- Elementium Deathplate Chestguard
+						i(71482),	-- Elementium Deathplate Handguards
+						i(71483),	-- Elementium Deathplate Faceguard
+						i(71484),	-- Elementium Deathplate Legguards
+						i(71485),	-- Elementium Deathplate Shoulderguards
+						i(71486),	-- Obsidian Arborweave Raiment
+						i(71487),	-- Obsidian Arborweave Grips
+						i(71488),	-- Obsidian Arborweave Headpiece
+						i(71489),	-- Obsidian Arborweave Legguards
+						i(71490),	-- Obsidian Arborweave Spaulders
+						i(71491),	-- Obsidian Arborweave Handwraps
+						i(71492),	-- Obsidian Arborweave Helm
+						i(71493),	-- Obsidian Arborweave Legwraps
+						i(71494),	-- Obsidian Arborweave Tunic
+						i(71495),	-- Obsidian Arborweave Mantle
+						i(71496),	-- Obsidian Arborweave Gloves
+						i(71497),	-- Obsidian Arborweave Cover
+						i(71498),	-- Obsidian Arborweave Leggings
+						i(71499),	-- Obsidian Arborweave Vestment
+						i(71500),	-- Obsidian Arborweave Shoulderwraps
+						i(71501),	-- Flamewaker's Tunic
+						i(71502),	-- Flamewaker's Gloves
+						i(71503),	-- Flamewaker's Headguard
+						i(71504),	-- Flamewaker's Legguards
+						i(71505),	-- Flamewaker's Spaulders
+						i(71507),	-- Firehawk Gloves
+						i(71508),	-- Firehawk Hood
+						i(71509),	-- Firehawk Leggings
+						i(71510),	-- Firehawk Robes
+						i(71511),	-- Firehawk Mantle
+						i(71512),	-- Immolation Battleplate
+						i(71513),	-- Immolation Gauntlets
+						i(71514),	-- Immolation Helmet
+						i(71515),	-- Immolation Legplates
+						i(71516),	-- Immolation Pauldrons
+						i(71517),	-- Immolation Breastplate
+						i(71518),	-- Immolation Gloves
+						i(71519),	-- Immolation Headguard
+						i(71520),	-- Immolation Greaves
+						i(71521),	-- Immolation Mantle
+						i(71522),	-- Immolation Chestguard
+						i(71476),	-- Elementium Deathplate Breastplate
+						i(71524),	-- Immolation Faceguard
+						i(71525),	-- Immolation Legguards
+						i(71526),	-- Immolation Shoulderguards
+						i(71527),	-- Handwraps of the Cleansing Flame
+						i(71528),	-- Cowl of the Cleansing Flame
+						i(71529),	-- Legwraps of the Cleansing Flame
+						i(71530),	-- Robes of the Cleansing Flame
+						i(71531),	-- Mantle of the Cleansing Flame
+						i(71532),	-- Gloves of the Cleansing Flame
+						i(71533),	-- Hood of the Cleansing Flame
+						i(71534),	-- Leggings of the Cleansing Flame
+						i(71535),	-- Vestment of the Cleansing Flame
+						i(71536),	-- Shoulderwraps of the Cleansing Flame
+						i(71537),	-- Dark Phoenix Tunic
+						i(71538),	-- Dark Phoenix Gloves
+						i(71539),	-- Dark Phoenix Helmet
+						i(71540),	-- Dark Phoenix Legguards
+						i(71541),	-- Dark Phoenix Spaulders
+						i(71542),	-- Erupting Volcanic Tunic
+						i(71543),	-- Erupting Volcanic Handwraps
+						i(71544),	-- Erupting Volcanic Faceguard
+						i(71545),	-- Erupting Volcanic Legwraps
+						i(71546),	-- Erupting Volcanic Mantle
+						i(71547),	-- Erupting Volcanic Cuirass
+						i(71548),	-- Erupting Volcanic Grips
+						i(71549),	-- Erupting Volcanic Helmet
+						i(71550),	-- Erupting Volcanic Legguards
+						i(71551),	-- Erupting Volcanic Spaulders
+						i(71552),	-- Erupting Volcanic Hauberk
+						i(71553),	-- Erupting Volcanic Gloves
+						i(71554),	-- Erupting Volcanic Headpiece
+						i(71555),	-- Erupting Volcanic Kilt
+						i(71556),	-- Erupting Volcanic Shoulderwraps
+						i(71594),	-- Balespider's Handwraps
+						i(71595),	-- Balespider's Hood
+						i(71596),	-- Balespider's Leggings
+						i(71597),	-- Balespider's Robes
+						i(71598),	-- Balespider's Mantle
+						i(71599),	-- Helmet of the Molten Giant
+						i(71600),	-- Battleplate of the Molten Giant
+						i(71601),	-- Gauntlets of the Molten Giant
+						i(71602),	-- Legplates of the Molten Giant
+						i(71603),	-- Pauldrons of the Molten Giant
+						i(71604),	-- Chestguard of the Molten Giant
+						i(71605),	-- Handguards of the Molten Giant
+						i(71606),	-- Faceguard of the Molten Giant
+						i(71607),	-- Legguards of the Molten Giant
+						i(71285),	-- Balespider's Mantle
+						i(71286),	-- Firehawk Gloves
+						i(71287),	-- Firehawk Hood
+						i(71288),	-- Firehawk Leggings
+						i(71289),	-- Firehawk Robes
+						i(71290),	-- Firehawk Mantle
+						i(71291),	-- Erupting Volcanic Hauberk
+						i(71292),	-- Erupting Volcanic Gloves
+						i(71293),	-- Erupting Volcanic Headpiece
+						i(71294),	-- Erupting Volcanic Kilt
+						i(70937),	-- Bracers of Regal Force
+						i(71296),	-- Erupting Volcanic Tunic
+						i(71297),	-- Erupting Volcanic Handwraps
+						i(71298),	-- Erupting Volcanic Faceguard
+						i(71299),	-- Erupting Volcanic Legwraps
+						i(71300),	-- Erupting Volcanic Mantle
+						i(71301),	-- Erupting Volcanic Cuirass
+						i(71302),	-- Erupting Volcanic Grips
+						i(71303),	-- Erupting Volcanic Helmet
+						i(71304),	-- Erupting Volcanic Legguards
+						i(71305),	-- Erupting Volcanic Spaulders
+						i(70941),	-- Shoulderguards of the Molten Giant
+						i(70942),	-- Legguards of the Molten Giant
+						i(70943),	-- Handguards of the Molten Giant
+						i(70944),	-- Faceguard of the Molten Giant
+						i(70945),	-- Chestguard of the Molten Giant
+						i(70946),	-- Immolation Shoulderguards
+						i(70947),	-- Immolation Legguards
+						i(70948),	-- Immolation Faceguard
+						i(70949),	-- Immolation Handguards
+						i(70950),	-- Immolation Chestguard
+						i(70951),	-- Elementium Deathplate Shoulderguards
+						i(70952),	-- Elementium Deathplate Legguards
+						i(70953),	-- Elementium Deathplate Handguards
+						i(70954),	-- Elementium Deathplate Faceguard
+						i(70955),	-- Elementium Deathplate Chestguard
+						i(71045),	-- Dark Phoenix Tunic
+						i(71046),	-- Dark Phoenix Gloves
+						i(71047),	-- Dark Phoenix Helmet
+						i(71048),	-- Dark Phoenix Legguards
+						i(71049),	-- Dark Phoenix Spaulders
+						i(71050),	-- Flamewaker's Gloves
+						i(71051),	-- Flamewaker's Headguard
+						i(71052),	-- Flamewaker's Legguards
+						i(71053),	-- Flamewaker's Spaulders
+						i(71054),	-- Flamewaker's Tunic
+						i(71058),	-- Elementium Deathplate Breastplate
+						i(71059),	-- Elementium Deathplate Gauntlets
+						i(71060),	-- Elementium Deathplate Helmet
+						i(71061),	-- Elementium Deathplate Greaves
+						i(71062),	-- Elementium Deathplate Pauldrons
+						i(71063),	-- Immolation Battleplate
+						i(71064),	-- Immolation Gauntlets
+						i(71065),	-- Immolation Helmet
+						i(71066),	-- Immolation Legplates
+						i(71067),	-- Immolation Pauldrons
+						i(71068),	-- Battleplate of the Molten Giant
+						i(71069),	-- Gauntlets of the Molten Giant
+						i(71070),	-- Helmet of the Molten Giant
+						i(71071),	-- Legplates of the Molten Giant
+						i(71072),	-- Pauldrons of the Molten Giant
+						i(71091),	-- Immolation Breastplate
+						i(71092),	-- Immolation Gloves
+						i(71093),	-- Immolation Headguard
+						i(71094),	-- Immolation Greaves
+						i(71095),	-- Immolation Mantle
+						i(71097),	-- Obsidian Arborweave Grips
+						i(71098),	-- Obsidian Arborweave Headpiece
+						i(71099),	-- Obsidian Arborweave Legguards
+						i(71100),	-- Obsidian Arborweave Raiment
+						i(71101),	-- Obsidian Arborweave Spaulders
+						i(71102),	-- Obsidian Arborweave Handwraps
+						i(71103),	-- Obsidian Arborweave Helm
+						i(71104),	-- Obsidian Arborweave Legwraps
+						i(71105),	-- Obsidian Arborweave Tunic
+						i(71106),	-- Obsidian Arborweave Mantle
+						i(71107),	-- Obsidian Arborweave Gloves
+						i(71108),	-- Obsidian Arborweave Cover
+						i(71109),	-- Obsidian Arborweave Leggings
+						i(71110),	-- Obsidian Arborweave Vestment
+						i(71111),	-- Obsidian Arborweave Shoulderwraps
+						i(71130),	-- Flamebinder Bracers
+						i(71150, {	-- Scorchvine Wand
 							i(71617, {	-- Crystallized Firestone
 								i(71579),	-- Scorchvine Wand
 							}),
 						}),
-						i( 71151, {	-- Trail of Embers
+						i(71151, {	-- Trail of Embers
 							i(71617, {	-- Crystallized Firestone
 								i(71575),	-- Trail of Embers
 							}),
 						}),
-						i( 71260),	-- Bracers of Imperious Truths
-						i( 71261),	-- Gigantiform Bracers
-						i( 71262),	-- Smolderskull Bindings
-						i( 71263),	-- Bracers of Misting Ash
-						i( 71264),	-- Bracers of Forked Lightning
-						i( 71265),	-- Emberflame Bracers
-						i( 71266),	-- Firesoul Wristguards
-						i( 71271),	-- Handwraps of the Cleansing Flame
-						i( 71272),	-- Cowl of the Cleansing Flame
-						i( 71273),	-- Legwraps of the Cleansing Flame
-						i( 71274),	-- Robes of the Cleansing Flame
-						i( 71275),	-- Mantle of the Cleansing Flame
-						i( 71276),	-- Gloves of the Cleansing Flame
-						i( 71277),	-- Hood of the Cleansing Flame
-						i( 71278),	-- Leggings of the Cleansing Flame
-						i( 71279),	-- Vestment of the Cleansing Flame
-						i( 71280),	-- Shoulderwraps of the Cleansing Flame
-						i( 71281),	-- Balespider's Handwraps
-						i( 71282),	-- Balespider's Hood
-						i( 71283),	-- Balespider's Leggings
-						i( 71284),	-- Balespider's Robes
-						i( 71295),	-- Erupting Volcanic Shoulderwraps												
+						i(71260),	-- Bracers of Imperious Truths
+						i(71261),	-- Gigantiform Bracers
+						i(71262),	-- Smolderskull Bindings
+						i(71263),	-- Bracers of Misting Ash
+						i(71264),	-- Bracers of Forked Lightning
+						i(71265),	-- Emberflame Bracers
+						i(71266),	-- Firesoul Wristguards
+						i(71271),	-- Handwraps of the Cleansing Flame
+						i(71272),	-- Cowl of the Cleansing Flame
+						i(71273),	-- Legwraps of the Cleansing Flame
+						i(71274),	-- Robes of the Cleansing Flame
+						i(71275),	-- Mantle of the Cleansing Flame
+						i(71276),	-- Gloves of the Cleansing Flame
+						i(71277),	-- Hood of the Cleansing Flame
+						i(71278),	-- Leggings of the Cleansing Flame
+						i(71279),	-- Vestment of the Cleansing Flame
+						i(71280),	-- Shoulderwraps of the Cleansing Flame
+						i(71281),	-- Balespider's Handwraps
+						i(71282),	-- Balespider's Hood
+						i(71283),	-- Balespider's Leggings
+						i(71284),	-- Balespider's Robes
+						i(71295),	-- Erupting Volcanic Shoulderwraps												
 					}),
 					n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
 						i(12256),	-- Cindercloth Leggings
@@ -2271,352 +2271,352 @@ COORDINATES			o(206116, { 	-- Warchief's Command Board (Org)
 						i(136925),	-- Corgi Pup Pet
 					}),
 					n(46556, {	-- Jamus'Vaz <Valor Quartermaster>
-						i( 78704),	-- Spiritwalker's Legguards
-						i( 78666),	-- Spiritwalker's Gloves
-						i( 78658),	-- Colossal Dragonplate Chestguard
-						i( 78659),	-- Necrotic Boneplate Breastplate
-						i( 78660),	-- Deep Earth Robes
-						i( 78661),	-- Wyrmstalker's Tunic
-						i( 78662),	-- Deep Earth Vestment
-						i( 78663),	-- Necrotic Boneplate Chestguard
-						i( 78664),	-- Blackfang Battleweave Tunic
-						i( 78665),	-- Deep Earth Raiment
-						i( 78667),	-- Spiritwalker's Grips
-						i( 78668),	-- Colossal Dragonplate Gauntlets
-						i( 78669),	-- Colossal Dragonplate Handguards
-						i( 78670),	-- Necrotic Boneplate Gauntlets
-						i( 78671),	-- Time Lord's Gloves
-						i( 78672),	-- Spiritwalker's Handwraps
-						i( 78673),	-- Gloves of Radiant Glory
-						i( 78674),	-- Wyrmstalker's Gloves
-						i( 78675),	-- Gauntlets of Radiant Glory
-						i( 78676),	-- Deep Earth Gloves
-						i( 78677),	-- Handguards of Radiant Glory
-						i( 78678),	-- Necrotic Boneplate Handguards
-						i( 78679),	-- Blackfang Battleweave Gloves
-						i( 78680),	-- Deep Earth Handwraps
-						i( 78681),	-- Gloves of the Faceless Shroud
-						i( 78682),	-- Gloves of Dying Light
-						i( 78683),	-- Handwraps of Dying Light
-						i( 78684),	-- Deep Earth Grips
-						i( 78685),	-- Spiritwalker's Headpiece
-						i( 78686),	-- Spiritwalker's Helmet
-						i( 78687),	-- Necrotic Boneplate Helmet
-						i( 78688),	-- Colossal Dragonplate Helmet
-						i( 78689),	-- Colossal Dragonplate Faceguard
-						i( 78690),	-- Deep Earth Helm
-						i( 78691),	-- Spiritwalker's Faceguard
-						i( 78692),	-- Headguard of Radiant Glory
-						i( 78693),	-- Helmet of Radiant Glory
-						i( 78694),	-- Deep Earth Headpiece
-						i( 78695),	-- Faceguard of Radiant Glory
-						i( 78696),	-- Deep Earth Cover
-						i( 78697),	-- Necrotic Boneplate Faceguard
-						i( 78698),	-- Wyrmstalker's Headguard
-						i( 78699),	-- Blackfang Battleweave Helmet
-						i( 78700),	-- Cowl of Dying Light
-						i( 78701),	-- Time Lord's Hood
-						i( 78702),	-- Hood of the Faceless Shroud
-						i( 78703),	-- Hood of Dying Light
-						i( 78657),	-- Colossal Dragonplate Battleplate
-						i( 78705),	-- Colossal Dragonplate Legguards
-						i( 78706),	-- Colossal Dragonplate Legplates
-						i( 78707),	-- Necrotic Boneplate Greaves
-						i( 78708),	-- Blackfang Battleweave Legguards
-						i( 78709),	-- Wyrmstalker's Legguards
-						i( 78710),	-- Deep Earth Legwraps
-						i( 78711),	-- Spiritwalker's Kilt
-						i( 78712),	-- Legplates of Radiant Glory
-						i( 78713),	-- Deep Earth Legguards
-						i( 78714),	-- Deep Earth Leggings
-						i( 78715),	-- Legguards of Radiant Glory
-						i( 78716),	-- Necrotic Boneplate Legguards
-						i( 78717),	-- Greaves of Radiant Glory
-						i( 78718),	-- Spiritwalker's Legwraps
-						i( 78719),	-- Legwraps of Dying Light
-						i( 78720),	-- Time Lord's Leggings
-						i( 78721),	-- Leggings of the Faceless Shroud
-						i( 78722),	-- Leggings of Dying Light
-						i( 78723),	-- Spiritwalker's Hauberk
-						i( 78724),	-- Spiritwalker's Cuirass
-						i( 78725),	-- Spiritwalker's Tunic
-						i( 78726),	-- Breastplate of Radiant Glory
-						i( 78727),	-- Battleplate of Radiant Glory
-						i( 78728),	-- Robes of Dying Light
-						i( 78729),	-- Time Lord's Robes
-						i( 78730),	-- Robes of the Faceless Shroud
-						i( 78731),	-- Robes of Dying Light
-						i( 78732),	-- Chestguard of Radiant Glory
-						i( 78733),	-- Spiritwalker's Spaulders
-						i( 78734),	-- Colossal Dragonplate Shoulderguards
-						i( 78735),	-- Colossal Dragonplate Pauldrons
-						i( 78736),	-- Necrotic Boneplate Pauldrons
-						i( 78737),	-- Wyrmstalker's Spaulders
-						i( 78738),	-- Blackfang Battleweave Spaulders
-						i( 78739),	-- Spiritwalker's Mantle
-						i( 78740),	-- Deep Earth Mantle
-						i( 78741),	-- Spiritwalker's Shoulderwraps
-						i( 78742),	-- Pauldrons of Radiant Glory
-						i( 78743),	-- Deep Earth Spaulders
-						i( 78744),	-- Deep Earth Shoulderwraps
-						i( 78745),	-- Shoulderguards of Radiant Glory
-						i( 78746),	-- Mantle of Radiant Glory
-						i( 78747),	-- Mantle of Dying Light
-						i( 78748),	-- Time Lord's Mantle
-						i( 78749),	-- Mantle of the Faceless Shroud
-						i( 78750),	-- Mantle of Dying Light
-						i( 78751),	-- Necrotic Boneplate Shoulderguards
-						i( 77078),	-- Scintillating Rods
-						i( 77079),	-- Hungermouth Wand
-						i( 77095),	-- Batwing Cloak
-						i( 77096),	-- Woundlicker Cover
-						i( 77097),	-- Dreamcrusher Drape
-						i( 77098),	-- Nanoprecise Cape
-						i( 77099),	-- Indefatigable Greatcloak
-						i( 77119),	-- Bones of the Damned
-						i( 77120),	-- Chestplate of the Unshakable Titan
-						i( 77121),	-- Lightwarper Vestments
-						i( 77122),	-- Robes of Searing Shadow
-						i( 77123),	-- Shining Carapace of Glory
-						i( 77124),	-- Dragonflayer Vest
-						i( 77125),	-- Ghostworld Chestguard
-						i( 77126),	-- Shadowbinder Chestguard
-						i( 77127),	-- Decaying Herbalist's Robes
-						i( 77146),	-- Soulgaze Cowl
-						i( 77147),	-- Hood of Hidden Flesh
-						i( 77148),	-- Nocturnal Gaze
-						i( 77149),	-- Helmet of Perpetual Rebirth
-						i( 77150),	-- Zeherah's Dragonskull Crown
-						i( 77151),	-- Wolfdream Circlet
-						i( 77153),	-- Glowing Wings of Hope
-						i( 77155),	-- Visage of Petrification
-						i( 77156),	-- Jaw of Repudiation
-						i( 77157),	-- The Hands of Gilly
-						i( 77159),	-- Clockwinder's Immaculate Gloves
-						i( 77160),	-- Fungus-Born Gloves
-						i( 77161),	-- Lightfinger Handwraps
-						i( 77162),	-- Arrowflick Gauntlets
-						i( 77163),	-- Gloves of Ghostly Dreams
-						i( 77164),	-- Gleaming Grips of Mending
-						i( 77165),	-- Grimfist Crushers
-						i( 77166),	-- Gauntlets of Feathery Blows
-						i( 77169),	-- Silver Sabatons of Fury
-						i( 77170),	-- Kneebreaker Boots
-						i( 77171),	-- Bladeshatter Treads
-						i( 77172),	-- Boots of Fungoid Growth
-						i( 77173),	-- Rooftop Griptoes
-						i( 77174),	-- Sabatons of the Graceful Spirit
-						i( 77175),	-- Boneshard Boots
-						i( 77176),	-- Kavan's Forsaken Treads
-						i( 77177),	-- Splinterfoot Sandals
-						i( 77179),	-- Tentacular Belt
-						i( 77180),	-- Belt of Hidden Keys
-						i( 77181),	-- Belt of Universal Curing
-						i( 77182),	-- Cord of Dragon Sinew
-						i( 77183),	-- Girdle of Shamanic Fury
-						i( 77184),	-- Blinding Girdle of Truth
-						i( 77185),	-- Demonbone Waistguard
-						i( 77186),	-- Forgesmelter Waistplate
-						i( 77187),	-- Vestal's Irrepressible Girdle
-						i( 77316),	-- Flashing Bracers of Warmth
-						i( 77317),	-- Heartcrusher Wristplates
-						i( 77318),	-- Bracers of Unrelenting Excellence
-						i( 77319),	-- Bracers of the Spectral Wolf
-						i( 77320),	-- Luminescent Bracers
-						i( 77321),	-- Dragonbelly Bracers
-						i( 77322),	-- Bracers of Manifold Pockets
-						i( 77323),	-- Bracers of the Black Dream
-						i( 77324),	-- Chronoboost Bracers
-						i( 76212),	-- Time Lord's Gloves
-						i( 76214),	-- Time Lord's Leggings
-						i( 76215),	-- Time Lord's Robes
-						i( 76216),	-- Time Lord's Mantle
-						i( 76339),	-- Mantle of the Faceless Shroud
-						i( 76340),	-- Robes of the Faceless Shroud
-						i( 76341),	-- Leggings of the Faceless Shroud
-						i( 76342),	-- Hood of the Faceless Shroud
-						i( 76343),	-- Gloves of the Faceless Shroud
-						i( 76213),	-- Time Lord's Hood
-						i( 76344),	-- Mantle of Dying Light
-						i( 76345),	-- Robes of Dying Light
-						i( 76346),	-- Leggings of Dying Light
-						i( 76347),	-- Hood of Dying Light
-						i( 76348),	-- Gloves of Dying Light
-						i( 76357),	-- Handwraps of Dying Light
-						i( 76358),	-- Cowl of Dying Light
-						i( 76359),	-- Legwraps of Dying Light
-						i( 76360),	-- Robes of Dying Light
-						i( 76361),	-- Mantle of Dying Light
-						i( 76749),	-- Deep Earth Handwraps
-						i( 76750),	-- Deep Earth Helm
-						i( 76751),	-- Deep Earth Legwraps
-						i( 76752),	-- Deep Earth Robes
-						i( 76753),	-- Deep Earth Mantle
-						i( 76756),	-- Spiritwalker's Tunic
-						i( 76757),	-- Spiritwalker's Handwraps
-						i( 76758),	-- Spiritwalker's Faceguard
-						i( 76759),	-- Spiritwalker's Legwraps
-						i( 76760),	-- Spiritwalker's Mantle
-						i( 76765),	-- Breastplate of Radiant Glory
-						i( 76766),	-- Gloves of Radiant Glory
-						i( 76767),	-- Headguard of Radiant Glory
-						i( 76768),	-- Greaves of Radiant Glory
-						i( 76769),	-- Mantle of Radiant Glory
-						i( 76874),	-- Battleplate of Radiant Glory
-						i( 76875),	-- Gauntlets of Radiant Glory
-						i( 76876),	-- Helmet of Radiant Glory
-						i( 76877),	-- Legplates of Radiant Glory
-						i( 76878),	-- Pauldrons of Radiant Glory
-						i( 76974),	-- Necrotic Boneplate Breastplate
-						i( 76975),	-- Necrotic Boneplate Gauntlets
-						i( 76976),	-- Necrotic Boneplate Helmet
-						i( 76977),	-- Necrotic Boneplate Greaves
-						i( 76978),	-- Necrotic Boneplate Pauldrons
-						i( 76983),	-- Colossal Dragonplate Helmet
-						i( 76984),	-- Colossal Dragonplate Battleplate
-						i( 76985),	-- Colossal Dragonplate Gauntlets
-						i( 76986),	-- Colossal Dragonplate Legplates
-						i( 76987),	-- Colossal Dragonplate Pauldrons
-						i( 76988),	-- Colossal Dragonplate Chestguard
-						i( 76989),	-- Colossal Dragonplate Handguards
-						i( 76990),	-- Colossal Dragonplate Faceguard
-						i( 76991),	-- Colossal Dragonplate Legguards
-						i( 76992),	-- Colossal Dragonplate Shoulderguards
-						i( 77003),	-- Chestguard of Radiant Glory
-						i( 77004),	-- Handguards of Radiant Glory
-						i( 77005),	-- Faceguard of Radiant Glory
-						i( 77006),	-- Legguards of Radiant Glory
-						i( 77007),	-- Shoulderguards of Radiant Glory
-						i( 77008),	-- Necrotic Boneplate Chestguard
-						i( 77009),	-- Necrotic Boneplate Handguards
-						i( 77010),	-- Necrotic Boneplate Faceguard
-						i( 77011),	-- Necrotic Boneplate Legguards
-						i( 77012),	-- Necrotic Boneplate Shoulderguards
-						i( 77013),	-- Deep Earth Raiment
-						i( 77014),	-- Deep Earth Grips
-						i( 77015),	-- Deep Earth Headpiece
-						i( 77016),	-- Deep Earth Legguards
-						i( 77017),	-- Deep Earth Spaulders
-						i( 77018),	-- Deep Earth Gloves
-						i( 77019),	-- Deep Earth Cover
-						i( 77020),	-- Deep Earth Leggings
-						i( 77021),	-- Deep Earth Vestment
-						i( 77022),	-- Deep Earth Shoulderwraps
-						i( 77023),	-- Blackfang Battleweave Tunic
-						i( 77024),	-- Blackfang Battleweave Gloves
-						i( 77025),	-- Blackfang Battleweave Helmet
-						i( 77026),	-- Blackfang Battleweave Legguards
-						i( 77027),	-- Blackfang Battleweave Spaulders
-						i( 77028),	-- Wyrmstalker's Tunic
-						i( 77029),	-- Wyrmstalker's Gloves
-						i( 77030),	-- Wyrmstalker's Headguard
-						i( 77031),	-- Wyrmstalker's Legguards
-						i( 77032),	-- Wyrmstalker's Spaulders
-						i( 77035),	-- Spiritwalker's Shoulderwraps
-						i( 77036),	-- Spiritwalker's Kilt
-						i( 77037),	-- Spiritwalker's Headpiece
-						i( 77038),	-- Spiritwalker's Gloves
-						i( 77039),	-- Spiritwalker's Hauberk
-						i( 77040),	-- Spiritwalker's Cuirass
-						i( 77041),	-- Spiritwalker's Grips
-						i( 77042),	-- Spiritwalker's Helmet
-						i( 77043),	-- Spiritwalker's Legguards
-						i( 77044),	-- Spiritwalker's Spaulders
-						i( 78799),	-- Spiritwalker's Legguards
-						i( 78752),	-- Colossal Dragonplate Battleplate
-						i( 78754),	-- Necrotic Boneplate Breastplate
-						i( 78755),	-- Deep Earth Robes
-						i( 78756),	-- Wyrmstalker's Tunic
-						i( 78757),	-- Deep Earth Vestment
-						i( 78758),	-- Necrotic Boneplate Chestguard
-						i( 78759),	-- Blackfang Battleweave Tunic
-						i( 78760),	-- Deep Earth Raiment
-						i( 78761),	-- Spiritwalker's Gloves
-						i( 78762),	-- Spiritwalker's Grips
-						i( 78763),	-- Colossal Dragonplate Gauntlets
-						i( 78764),	-- Colossal Dragonplate Handguards
-						i( 78765),	-- Necrotic Boneplate Gauntlets
-						i( 78766),	-- Time Lord's Gloves
-						i( 78767),	-- Spiritwalker's Handwraps
-						i( 78768),	-- Gloves of Radiant Glory
-						i( 78769),	-- Wyrmstalker's Gloves
-						i( 78770),	-- Gauntlets of Radiant Glory
-						i( 78771),	-- Deep Earth Gloves
-						i( 78772),	-- Handguards of Radiant Glory
-						i( 78773),	-- Necrotic Boneplate Handguards
-						i( 78774),	-- Blackfang Battleweave Gloves
-						i( 78775),	-- Deep Earth Handwraps
-						i( 78776),	-- Gloves of the Faceless Shroud
-						i( 78777),	-- Gloves of Dying Light
-						i( 78778),	-- Handwraps of Dying Light
-						i( 78779),	-- Deep Earth Grips
-						i( 78780),	-- Spiritwalker's Headpiece
-						i( 78781),	-- Spiritwalker's Helmet
-						i( 78782),	-- Necrotic Boneplate Helmet
-						i( 78783),	-- Colossal Dragonplate Helmet
-						i( 78784),	-- Colossal Dragonplate Faceguard
-						i( 78785),	-- Deep Earth Helm
-						i( 78786),	-- Spiritwalker's Faceguard
-						i( 78787),	-- Headguard of Radiant Glory
-						i( 78788),	-- Helmet of Radiant Glory
-						i( 78789),	-- Deep Earth Headpiece
-						i( 78790),	-- Faceguard of Radiant Glory
-						i( 78791),	-- Deep Earth Cover
-						i( 78792),	-- Necrotic Boneplate Faceguard
-						i( 78793),	-- Wyrmstalker's Headguard
-						i( 78794),	-- Blackfang Battleweave Helmet
-						i( 78795),	-- Cowl of Dying Light
-						i( 78796),	-- Time Lord's Hood
-						i( 78797),	-- Hood of the Faceless Shroud
-						i( 78798),	-- Hood of Dying Light
-						i( 78753),	-- Colossal Dragonplate Chestguard
-						i( 78800),	-- Colossal Dragonplate Legguards
-						i( 78801),	-- Colossal Dragonplate Legplates
-						i( 78802),	-- Necrotic Boneplate Greaves
-						i( 78803),	-- Blackfang Battleweave Legguards
-						i( 78804),	-- Wyrmstalker's Legguards
-						i( 78805),	-- Deep Earth Legwraps
-						i( 78806),	-- Spiritwalker's Kilt
-						i( 78807),	-- Legplates of Radiant Glory
-						i( 78808),	-- Deep Earth Legguards
-						i( 78809),	-- Deep Earth Leggings
-						i( 78810),	-- Legguards of Radiant Glory
-						i( 78811),	-- Necrotic Boneplate Legguards
-						i( 78812),	-- Greaves of Radiant Glory
-						i( 78813),	-- Spiritwalker's Legwraps
-						i( 78814),	-- Legwraps of Dying Light
-						i( 78815),	-- Time Lord's Leggings
-						i( 78816),	-- Leggings of the Faceless Shroud
-						i( 78817),	-- Leggings of Dying Light
-						i( 78818),	-- Spiritwalker's Hauberk
-						i( 78819),	-- Spiritwalker's Cuirass
-						i( 78820),	-- Spiritwalker's Tunic
-						i( 78821),	-- Breastplate of Radiant Glory
-						i( 78822),	-- Battleplate of Radiant Glory
-						i( 78823),	-- Robes of Dying Light
-						i( 78824),	-- Time Lord's Robes
-						i( 78825),	-- Robes of the Faceless Shroud
-						i( 78826),	-- Robes of Dying Light
-						i( 78827),	-- Chestguard of Radiant Glory
-						i( 78828),	-- Spiritwalker's Spaulders
-						i( 78829),	-- Colossal Dragonplate Shoulderguards
-						i( 78830),	-- Colossal Dragonplate Pauldrons
-						i( 78831),	-- Necrotic Boneplate Pauldrons
-						i( 78832),	-- Wyrmstalker's Spaulders
-						i( 78833),	-- Blackfang Battleweave Spaulders
-						i( 78834),	-- Spiritwalker's Mantle
-						i( 78835),	-- Deep Earth Mantle
-						i( 78836),	-- Spiritwalker's Shoulderwraps
-						i( 78837),	-- Pauldrons of Radiant Glory
-						i( 78838),	-- Deep Earth Spaulders
-						i( 78839),	-- Deep Earth Shoulderwraps
-						i( 78840),	-- Shoulderguards of Radiant Glory
-						i( 78841),	-- Mantle of Radiant Glory
-						i( 78842),	-- Mantle of Dying Light
-						i( 78843),	-- Time Lord's Mantle
-						i( 78844),	-- Mantle of the Faceless Shroud
-						i( 78845),	-- Mantle of Dying Light
-						i( 78846),	-- Necrotic Boneplate Shoulderguards
+						i(78704),	-- Spiritwalker's Legguards
+						i(78666),	-- Spiritwalker's Gloves
+						i(78658),	-- Colossal Dragonplate Chestguard
+						i(78659),	-- Necrotic Boneplate Breastplate
+						i(78660),	-- Deep Earth Robes
+						i(78661),	-- Wyrmstalker's Tunic
+						i(78662),	-- Deep Earth Vestment
+						i(78663),	-- Necrotic Boneplate Chestguard
+						i(78664),	-- Blackfang Battleweave Tunic
+						i(78665),	-- Deep Earth Raiment
+						i(78667),	-- Spiritwalker's Grips
+						i(78668),	-- Colossal Dragonplate Gauntlets
+						i(78669),	-- Colossal Dragonplate Handguards
+						i(78670),	-- Necrotic Boneplate Gauntlets
+						i(78671),	-- Time Lord's Gloves
+						i(78672),	-- Spiritwalker's Handwraps
+						i(78673),	-- Gloves of Radiant Glory
+						i(78674),	-- Wyrmstalker's Gloves
+						i(78675),	-- Gauntlets of Radiant Glory
+						i(78676),	-- Deep Earth Gloves
+						i(78677),	-- Handguards of Radiant Glory
+						i(78678),	-- Necrotic Boneplate Handguards
+						i(78679),	-- Blackfang Battleweave Gloves
+						i(78680),	-- Deep Earth Handwraps
+						i(78681),	-- Gloves of the Faceless Shroud
+						i(78682),	-- Gloves of Dying Light
+						i(78683),	-- Handwraps of Dying Light
+						i(78684),	-- Deep Earth Grips
+						i(78685),	-- Spiritwalker's Headpiece
+						i(78686),	-- Spiritwalker's Helmet
+						i(78687),	-- Necrotic Boneplate Helmet
+						i(78688),	-- Colossal Dragonplate Helmet
+						i(78689),	-- Colossal Dragonplate Faceguard
+						i(78690),	-- Deep Earth Helm
+						i(78691),	-- Spiritwalker's Faceguard
+						i(78692),	-- Headguard of Radiant Glory
+						i(78693),	-- Helmet of Radiant Glory
+						i(78694),	-- Deep Earth Headpiece
+						i(78695),	-- Faceguard of Radiant Glory
+						i(78696),	-- Deep Earth Cover
+						i(78697),	-- Necrotic Boneplate Faceguard
+						i(78698),	-- Wyrmstalker's Headguard
+						i(78699),	-- Blackfang Battleweave Helmet
+						i(78700),	-- Cowl of Dying Light
+						i(78701),	-- Time Lord's Hood
+						i(78702),	-- Hood of the Faceless Shroud
+						i(78703),	-- Hood of Dying Light
+						i(78657),	-- Colossal Dragonplate Battleplate
+						i(78705),	-- Colossal Dragonplate Legguards
+						i(78706),	-- Colossal Dragonplate Legplates
+						i(78707),	-- Necrotic Boneplate Greaves
+						i(78708),	-- Blackfang Battleweave Legguards
+						i(78709),	-- Wyrmstalker's Legguards
+						i(78710),	-- Deep Earth Legwraps
+						i(78711),	-- Spiritwalker's Kilt
+						i(78712),	-- Legplates of Radiant Glory
+						i(78713),	-- Deep Earth Legguards
+						i(78714),	-- Deep Earth Leggings
+						i(78715),	-- Legguards of Radiant Glory
+						i(78716),	-- Necrotic Boneplate Legguards
+						i(78717),	-- Greaves of Radiant Glory
+						i(78718),	-- Spiritwalker's Legwraps
+						i(78719),	-- Legwraps of Dying Light
+						i(78720),	-- Time Lord's Leggings
+						i(78721),	-- Leggings of the Faceless Shroud
+						i(78722),	-- Leggings of Dying Light
+						i(78723),	-- Spiritwalker's Hauberk
+						i(78724),	-- Spiritwalker's Cuirass
+						i(78725),	-- Spiritwalker's Tunic
+						i(78726),	-- Breastplate of Radiant Glory
+						i(78727),	-- Battleplate of Radiant Glory
+						i(78728),	-- Robes of Dying Light
+						i(78729),	-- Time Lord's Robes
+						i(78730),	-- Robes of the Faceless Shroud
+						i(78731),	-- Robes of Dying Light
+						i(78732),	-- Chestguard of Radiant Glory
+						i(78733),	-- Spiritwalker's Spaulders
+						i(78734),	-- Colossal Dragonplate Shoulderguards
+						i(78735),	-- Colossal Dragonplate Pauldrons
+						i(78736),	-- Necrotic Boneplate Pauldrons
+						i(78737),	-- Wyrmstalker's Spaulders
+						i(78738),	-- Blackfang Battleweave Spaulders
+						i(78739),	-- Spiritwalker's Mantle
+						i(78740),	-- Deep Earth Mantle
+						i(78741),	-- Spiritwalker's Shoulderwraps
+						i(78742),	-- Pauldrons of Radiant Glory
+						i(78743),	-- Deep Earth Spaulders
+						i(78744),	-- Deep Earth Shoulderwraps
+						i(78745),	-- Shoulderguards of Radiant Glory
+						i(78746),	-- Mantle of Radiant Glory
+						i(78747),	-- Mantle of Dying Light
+						i(78748),	-- Time Lord's Mantle
+						i(78749),	-- Mantle of the Faceless Shroud
+						i(78750),	-- Mantle of Dying Light
+						i(78751),	-- Necrotic Boneplate Shoulderguards
+						i(77078),	-- Scintillating Rods
+						i(77079),	-- Hungermouth Wand
+						i(77095),	-- Batwing Cloak
+						i(77096),	-- Woundlicker Cover
+						i(77097),	-- Dreamcrusher Drape
+						i(77098),	-- Nanoprecise Cape
+						i(77099),	-- Indefatigable Greatcloak
+						i(77119),	-- Bones of the Damned
+						i(77120),	-- Chestplate of the Unshakable Titan
+						i(77121),	-- Lightwarper Vestments
+						i(77122),	-- Robes of Searing Shadow
+						i(77123),	-- Shining Carapace of Glory
+						i(77124),	-- Dragonflayer Vest
+						i(77125),	-- Ghostworld Chestguard
+						i(77126),	-- Shadowbinder Chestguard
+						i(77127),	-- Decaying Herbalist's Robes
+						i(77146),	-- Soulgaze Cowl
+						i(77147),	-- Hood of Hidden Flesh
+						i(77148),	-- Nocturnal Gaze
+						i(77149),	-- Helmet of Perpetual Rebirth
+						i(77150),	-- Zeherah's Dragonskull Crown
+						i(77151),	-- Wolfdream Circlet
+						i(77153),	-- Glowing Wings of Hope
+						i(77155),	-- Visage of Petrification
+						i(77156),	-- Jaw of Repudiation
+						i(77157),	-- The Hands of Gilly
+						i(77159),	-- Clockwinder's Immaculate Gloves
+						i(77160),	-- Fungus-Born Gloves
+						i(77161),	-- Lightfinger Handwraps
+						i(77162),	-- Arrowflick Gauntlets
+						i(77163),	-- Gloves of Ghostly Dreams
+						i(77164),	-- Gleaming Grips of Mending
+						i(77165),	-- Grimfist Crushers
+						i(77166),	-- Gauntlets of Feathery Blows
+						i(77169),	-- Silver Sabatons of Fury
+						i(77170),	-- Kneebreaker Boots
+						i(77171),	-- Bladeshatter Treads
+						i(77172),	-- Boots of Fungoid Growth
+						i(77173),	-- Rooftop Griptoes
+						i(77174),	-- Sabatons of the Graceful Spirit
+						i(77175),	-- Boneshard Boots
+						i(77176),	-- Kavan's Forsaken Treads
+						i(77177),	-- Splinterfoot Sandals
+						i(77179),	-- Tentacular Belt
+						i(77180),	-- Belt of Hidden Keys
+						i(77181),	-- Belt of Universal Curing
+						i(77182),	-- Cord of Dragon Sinew
+						i(77183),	-- Girdle of Shamanic Fury
+						i(77184),	-- Blinding Girdle of Truth
+						i(77185),	-- Demonbone Waistguard
+						i(77186),	-- Forgesmelter Waistplate
+						i(77187),	-- Vestal's Irrepressible Girdle
+						i(77316),	-- Flashing Bracers of Warmth
+						i(77317),	-- Heartcrusher Wristplates
+						i(77318),	-- Bracers of Unrelenting Excellence
+						i(77319),	-- Bracers of the Spectral Wolf
+						i(77320),	-- Luminescent Bracers
+						i(77321),	-- Dragonbelly Bracers
+						i(77322),	-- Bracers of Manifold Pockets
+						i(77323),	-- Bracers of the Black Dream
+						i(77324),	-- Chronoboost Bracers
+						i(76212),	-- Time Lord's Gloves
+						i(76214),	-- Time Lord's Leggings
+						i(76215),	-- Time Lord's Robes
+						i(76216),	-- Time Lord's Mantle
+						i(76339),	-- Mantle of the Faceless Shroud
+						i(76340),	-- Robes of the Faceless Shroud
+						i(76341),	-- Leggings of the Faceless Shroud
+						i(76342),	-- Hood of the Faceless Shroud
+						i(76343),	-- Gloves of the Faceless Shroud
+						i(76213),	-- Time Lord's Hood
+						i(76344),	-- Mantle of Dying Light
+						i(76345),	-- Robes of Dying Light
+						i(76346),	-- Leggings of Dying Light
+						i(76347),	-- Hood of Dying Light
+						i(76348),	-- Gloves of Dying Light
+						i(76357),	-- Handwraps of Dying Light
+						i(76358),	-- Cowl of Dying Light
+						i(76359),	-- Legwraps of Dying Light
+						i(76360),	-- Robes of Dying Light
+						i(76361),	-- Mantle of Dying Light
+						i(76749),	-- Deep Earth Handwraps
+						i(76750),	-- Deep Earth Helm
+						i(76751),	-- Deep Earth Legwraps
+						i(76752),	-- Deep Earth Robes
+						i(76753),	-- Deep Earth Mantle
+						i(76756),	-- Spiritwalker's Tunic
+						i(76757),	-- Spiritwalker's Handwraps
+						i(76758),	-- Spiritwalker's Faceguard
+						i(76759),	-- Spiritwalker's Legwraps
+						i(76760),	-- Spiritwalker's Mantle
+						i(76765),	-- Breastplate of Radiant Glory
+						i(76766),	-- Gloves of Radiant Glory
+						i(76767),	-- Headguard of Radiant Glory
+						i(76768),	-- Greaves of Radiant Glory
+						i(76769),	-- Mantle of Radiant Glory
+						i(76874),	-- Battleplate of Radiant Glory
+						i(76875),	-- Gauntlets of Radiant Glory
+						i(76876),	-- Helmet of Radiant Glory
+						i(76877),	-- Legplates of Radiant Glory
+						i(76878),	-- Pauldrons of Radiant Glory
+						i(76974),	-- Necrotic Boneplate Breastplate
+						i(76975),	-- Necrotic Boneplate Gauntlets
+						i(76976),	-- Necrotic Boneplate Helmet
+						i(76977),	-- Necrotic Boneplate Greaves
+						i(76978),	-- Necrotic Boneplate Pauldrons
+						i(76983),	-- Colossal Dragonplate Helmet
+						i(76984),	-- Colossal Dragonplate Battleplate
+						i(76985),	-- Colossal Dragonplate Gauntlets
+						i(76986),	-- Colossal Dragonplate Legplates
+						i(76987),	-- Colossal Dragonplate Pauldrons
+						i(76988),	-- Colossal Dragonplate Chestguard
+						i(76989),	-- Colossal Dragonplate Handguards
+						i(76990),	-- Colossal Dragonplate Faceguard
+						i(76991),	-- Colossal Dragonplate Legguards
+						i(76992),	-- Colossal Dragonplate Shoulderguards
+						i(77003),	-- Chestguard of Radiant Glory
+						i(77004),	-- Handguards of Radiant Glory
+						i(77005),	-- Faceguard of Radiant Glory
+						i(77006),	-- Legguards of Radiant Glory
+						i(77007),	-- Shoulderguards of Radiant Glory
+						i(77008),	-- Necrotic Boneplate Chestguard
+						i(77009),	-- Necrotic Boneplate Handguards
+						i(77010),	-- Necrotic Boneplate Faceguard
+						i(77011),	-- Necrotic Boneplate Legguards
+						i(77012),	-- Necrotic Boneplate Shoulderguards
+						i(77013),	-- Deep Earth Raiment
+						i(77014),	-- Deep Earth Grips
+						i(77015),	-- Deep Earth Headpiece
+						i(77016),	-- Deep Earth Legguards
+						i(77017),	-- Deep Earth Spaulders
+						i(77018),	-- Deep Earth Gloves
+						i(77019),	-- Deep Earth Cover
+						i(77020),	-- Deep Earth Leggings
+						i(77021),	-- Deep Earth Vestment
+						i(77022),	-- Deep Earth Shoulderwraps
+						i(77023),	-- Blackfang Battleweave Tunic
+						i(77024),	-- Blackfang Battleweave Gloves
+						i(77025),	-- Blackfang Battleweave Helmet
+						i(77026),	-- Blackfang Battleweave Legguards
+						i(77027),	-- Blackfang Battleweave Spaulders
+						i(77028),	-- Wyrmstalker's Tunic
+						i(77029),	-- Wyrmstalker's Gloves
+						i(77030),	-- Wyrmstalker's Headguard
+						i(77031),	-- Wyrmstalker's Legguards
+						i(77032),	-- Wyrmstalker's Spaulders
+						i(77035),	-- Spiritwalker's Shoulderwraps
+						i(77036),	-- Spiritwalker's Kilt
+						i(77037),	-- Spiritwalker's Headpiece
+						i(77038),	-- Spiritwalker's Gloves
+						i(77039),	-- Spiritwalker's Hauberk
+						i(77040),	-- Spiritwalker's Cuirass
+						i(77041),	-- Spiritwalker's Grips
+						i(77042),	-- Spiritwalker's Helmet
+						i(77043),	-- Spiritwalker's Legguards
+						i(77044),	-- Spiritwalker's Spaulders
+						i(78799),	-- Spiritwalker's Legguards
+						i(78752),	-- Colossal Dragonplate Battleplate
+						i(78754),	-- Necrotic Boneplate Breastplate
+						i(78755),	-- Deep Earth Robes
+						i(78756),	-- Wyrmstalker's Tunic
+						i(78757),	-- Deep Earth Vestment
+						i(78758),	-- Necrotic Boneplate Chestguard
+						i(78759),	-- Blackfang Battleweave Tunic
+						i(78760),	-- Deep Earth Raiment
+						i(78761),	-- Spiritwalker's Gloves
+						i(78762),	-- Spiritwalker's Grips
+						i(78763),	-- Colossal Dragonplate Gauntlets
+						i(78764),	-- Colossal Dragonplate Handguards
+						i(78765),	-- Necrotic Boneplate Gauntlets
+						i(78766),	-- Time Lord's Gloves
+						i(78767),	-- Spiritwalker's Handwraps
+						i(78768),	-- Gloves of Radiant Glory
+						i(78769),	-- Wyrmstalker's Gloves
+						i(78770),	-- Gauntlets of Radiant Glory
+						i(78771),	-- Deep Earth Gloves
+						i(78772),	-- Handguards of Radiant Glory
+						i(78773),	-- Necrotic Boneplate Handguards
+						i(78774),	-- Blackfang Battleweave Gloves
+						i(78775),	-- Deep Earth Handwraps
+						i(78776),	-- Gloves of the Faceless Shroud
+						i(78777),	-- Gloves of Dying Light
+						i(78778),	-- Handwraps of Dying Light
+						i(78779),	-- Deep Earth Grips
+						i(78780),	-- Spiritwalker's Headpiece
+						i(78781),	-- Spiritwalker's Helmet
+						i(78782),	-- Necrotic Boneplate Helmet
+						i(78783),	-- Colossal Dragonplate Helmet
+						i(78784),	-- Colossal Dragonplate Faceguard
+						i(78785),	-- Deep Earth Helm
+						i(78786),	-- Spiritwalker's Faceguard
+						i(78787),	-- Headguard of Radiant Glory
+						i(78788),	-- Helmet of Radiant Glory
+						i(78789),	-- Deep Earth Headpiece
+						i(78790),	-- Faceguard of Radiant Glory
+						i(78791),	-- Deep Earth Cover
+						i(78792),	-- Necrotic Boneplate Faceguard
+						i(78793),	-- Wyrmstalker's Headguard
+						i(78794),	-- Blackfang Battleweave Helmet
+						i(78795),	-- Cowl of Dying Light
+						i(78796),	-- Time Lord's Hood
+						i(78797),	-- Hood of the Faceless Shroud
+						i(78798),	-- Hood of Dying Light
+						i(78753),	-- Colossal Dragonplate Chestguard
+						i(78800),	-- Colossal Dragonplate Legguards
+						i(78801),	-- Colossal Dragonplate Legplates
+						i(78802),	-- Necrotic Boneplate Greaves
+						i(78803),	-- Blackfang Battleweave Legguards
+						i(78804),	-- Wyrmstalker's Legguards
+						i(78805),	-- Deep Earth Legwraps
+						i(78806),	-- Spiritwalker's Kilt
+						i(78807),	-- Legplates of Radiant Glory
+						i(78808),	-- Deep Earth Legguards
+						i(78809),	-- Deep Earth Leggings
+						i(78810),	-- Legguards of Radiant Glory
+						i(78811),	-- Necrotic Boneplate Legguards
+						i(78812),	-- Greaves of Radiant Glory
+						i(78813),	-- Spiritwalker's Legwraps
+						i(78814),	-- Legwraps of Dying Light
+						i(78815),	-- Time Lord's Leggings
+						i(78816),	-- Leggings of the Faceless Shroud
+						i(78817),	-- Leggings of Dying Light
+						i(78818),	-- Spiritwalker's Hauberk
+						i(78819),	-- Spiritwalker's Cuirass
+						i(78820),	-- Spiritwalker's Tunic
+						i(78821),	-- Breastplate of Radiant Glory
+						i(78822),	-- Battleplate of Radiant Glory
+						i(78823),	-- Robes of Dying Light
+						i(78824),	-- Time Lord's Robes
+						i(78825),	-- Robes of the Faceless Shroud
+						i(78826),	-- Robes of Dying Light
+						i(78827),	-- Chestguard of Radiant Glory
+						i(78828),	-- Spiritwalker's Spaulders
+						i(78829),	-- Colossal Dragonplate Shoulderguards
+						i(78830),	-- Colossal Dragonplate Pauldrons
+						i(78831),	-- Necrotic Boneplate Pauldrons
+						i(78832),	-- Wyrmstalker's Spaulders
+						i(78833),	-- Blackfang Battleweave Spaulders
+						i(78834),	-- Spiritwalker's Mantle
+						i(78835),	-- Deep Earth Mantle
+						i(78836),	-- Spiritwalker's Shoulderwraps
+						i(78837),	-- Pauldrons of Radiant Glory
+						i(78838),	-- Deep Earth Spaulders
+						i(78839),	-- Deep Earth Shoulderwraps
+						i(78840),	-- Shoulderguards of Radiant Glory
+						i(78841),	-- Mantle of Radiant Glory
+						i(78842),	-- Mantle of Dying Light
+						i(78843),	-- Time Lord's Mantle
+						i(78844),	-- Mantle of the Faceless Shroud
+						i(78845),	-- Mantle of Dying Light
+						i(78846),	-- Necrotic Boneplate Shoulderguards
 					}),
 					n(3322, { -- Kaja <Bow & Rifle Vendor>
 						i(11307),	-- Massive Longbow
@@ -2829,405 +2829,405 @@ COORDINATES			o(206116, { 	-- Warchief's Command Board (Org)
 						}),
 					}),
 					n(52033, {	-- Rogoc <Bloodthirsty Gladiator>
-						i( 64782),	-- Bloodthirsty Gladiator's Links of Cruelty
-						i( 64681),	-- Bloodthirsty Gladiator's Armbands of Meditation
-						i( 64683),	-- Bloodthirsty Gladiator's Armplates of Alacrity
-						i( 64684),	-- Bloodthirsty Gladiator's Armplates of Proficiency
-						i( 64685),	-- Bloodthirsty Gladiator's Armwraps of Accuracy
-						i( 64686),	-- Bloodthirsty Gladiator's Armwraps of Alacrity
-						i( 64696),	-- Bloodthirsty Gladiator's Belt of Cruelty
-						i( 64697),	-- Bloodthirsty Gladiator's Belt of Meditation
-						i( 64698),	-- Bloodthirsty Gladiator's Bindings of Meditation
-						i( 64699),	-- Bloodthirsty Gladiator's Bindings of Prowess
-						i( 64702),	-- Bloodthirsty Gladiator's Boots of Alacrity
-						i( 64703),	-- Bloodthirsty Gladiator's Boots of Cruelty
-						i( 64704),	-- Bloodthirsty Gladiator's Bracers of Meditation
-						i( 64705),	-- Bloodthirsty Gladiator's Bracers of Prowess
-						i( 64706),	-- Bloodthirsty Gladiator's Cape of Cruelty
-						i( 64707),	-- Bloodthirsty Gladiator's Cape of Prowess
-						i( 64708),	-- Bloodthirsty Gladiator's Chain Armor
-						i( 64709),	-- Bloodthirsty Gladiator's Chain Gauntlets
-						i( 64710),	-- Bloodthirsty Gladiator's Chain Helm
-						i( 64711),	-- Bloodthirsty Gladiator's Chain Leggings
-						i( 64712),	-- Bloodthirsty Gladiator's Chain Spaulders
-						i( 64715),	-- Bloodthirsty Gladiator's Clasp of Cruelty
-						i( 64716),	-- Bloodthirsty Gladiator's Clasp of Meditation
-						i( 64718),	-- Bloodthirsty Gladiator's Cloak of Alacrity
-						i( 64719),	-- Bloodthirsty Gladiator's Cloak of Prowess
-						i( 64720),	-- Bloodthirsty Gladiator's Cord of Accuracy
-						i( 64721),	-- Bloodthirsty Gladiator's Cord of Cruelty
-						i( 64722),	-- Bloodthirsty Gladiator's Cord of Meditation
-						i( 64723),	-- Bloodthirsty Gladiator's Cuffs of Accuracy
-						i( 64724),	-- Bloodthirsty Gladiator's Cuffs of Meditation
-						i( 64725),	-- Bloodthirsty Gladiator's Cuffs of Prowess
-						i( 64727),	-- Bloodthirsty Gladiator's Dragonhide Gloves
-						i( 64728),	-- Bloodthirsty Gladiator's Dragonhide Helm
-						i( 64729),	-- Bloodthirsty Gladiator's Dragonhide Legguards
-						i( 64730),	-- Bloodthirsty Gladiator's Dragonhide Robes
-						i( 64731),	-- Bloodthirsty Gladiator's Dragonhide Spaulders
-						i( 64732),	-- Bloodthirsty Gladiator's Drape of Diffusion
-						i( 64733),	-- Bloodthirsty Gladiator's Drape of Meditation
-						i( 64734),	-- Bloodthirsty Gladiator's Drape of Prowess
-						i( 64735),	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
-						i( 64736),	-- Bloodthirsty Gladiator's Dreadplate Gauntlets
-						i( 64737),	-- Bloodthirsty Gladiator's Dreadplate Helm
-						i( 64738),	-- Bloodthirsty Gladiator's Dreadplate Legguards
-						i( 64739),	-- Bloodthirsty Gladiator's Dreadplate Shoulders
-						i( 64745),	-- Bloodthirsty Gladiator's Felweave Amice
-						i( 64746),	-- Bloodthirsty Gladiator's Felweave Cowl
-						i( 64747),	-- Bloodthirsty Gladiator's Felweave Handguards
-						i( 64748),	-- Bloodthirsty Gladiator's Felweave Raiment
-						i( 64749),	-- Bloodthirsty Gladiator's Felweave Trousers
-						i( 64750),	-- Bloodthirsty Gladiator's Footguards of Alacrity
-						i( 64751),	-- Bloodthirsty Gladiator's Footguards of Meditation
-						i( 64753),	-- Bloodthirsty Gladiator's Girdle of Cruelty
-						i( 64754),	-- Bloodthirsty Gladiator's Girdle of Prowess
-						i( 64756),	-- Bloodthirsty Gladiator's Greaves of Alacrity
-						i( 64757),	-- Bloodthirsty Gladiator's Greaves of Meditation
-						i( 64764),	-- Bloodthirsty Gladiator's Kodohide Gloves
-						i( 64765),	-- Bloodthirsty Gladiator's Kodohide Helm
-						i( 64766),	-- Bloodthirsty Gladiator's Kodohide Legguards
-						i( 64767),	-- Bloodthirsty Gladiator's Kodohide Robes
-						i( 64768),	-- Bloodthirsty Gladiator's Kodohide Spaulders
-						i( 64769),	-- Bloodthirsty Gladiator's Leather Gloves
-						i( 64770),	-- Bloodthirsty Gladiator's Leather Helm
-						i( 64771),	-- Bloodthirsty Gladiator's Leather Legguards
-						i( 64772),	-- Bloodthirsty Gladiator's Leather Spaulders
-						i( 64773),	-- Bloodthirsty Gladiator's Leather Tunic
-						i( 64776),	-- Bloodthirsty Gladiator's Linked Armor
-						i( 64777),	-- Bloodthirsty Gladiator's Linked Gauntlets
-						i( 64778),	-- Bloodthirsty Gladiator's Linked Helm
-						i( 64779),	-- Bloodthirsty Gladiator's Linked Leggings
-						i( 64780),	-- Bloodthirsty Gladiator's Linked Spaulders
-						i( 64781),	-- Bloodthirsty Gladiator's Links of Accuracy
-						i( 64682),	-- Bloodthirsty Gladiator's Armbands of Prowess
-						i( 64784),	-- Bloodthirsty Gladiator's Mail Armor
-						i( 64785),	-- Bloodthirsty Gladiator's Mail Gauntlets
-						i( 64786),	-- Bloodthirsty Gladiator's Mail Helm
-						i( 64787),	-- Bloodthirsty Gladiator's Mail Leggings
-						i( 64788),	-- Bloodthirsty Gladiator's Mail Spaulders
-						i( 64795),	-- Bloodthirsty Gladiator's Mooncloth Gloves
-						i( 64796),	-- Bloodthirsty Gladiator's Mooncloth Helm
-						i( 64797),	-- Bloodthirsty Gladiator's Mooncloth Leggings
-						i( 64798),	-- Bloodthirsty Gladiator's Mooncloth Mantle
-						i( 64799),	-- Bloodthirsty Gladiator's Mooncloth Robe
-						i( 64802),	-- Bloodthirsty Gladiator's Ornamented Chestguard
-						i( 64803),	-- Bloodthirsty Gladiator's Ornamented Gloves
-						i( 64804),	-- Bloodthirsty Gladiator's Ornamented Headcover
-						i( 64805),	-- Bloodthirsty Gladiator's Ornamented Legplates
-						i( 64806),	-- Bloodthirsty Gladiator's Ornamented Spaulders
-						i( 64811),	-- Bloodthirsty Gladiator's Plate Chestpiece
-						i( 64812),	-- Bloodthirsty Gladiator's Plate Gauntlets
-						i( 64813),	-- Bloodthirsty Gladiator's Plate Helm
-						i( 64814),	-- Bloodthirsty Gladiator's Plate Legguards
-						i( 64815),	-- Bloodthirsty Gladiator's Plate Shoulders
-						i( 64827),	-- Bloodthirsty Gladiator's Ringmail Armor
-						i( 64828),	-- Bloodthirsty Gladiator's Ringmail Gauntlets
-						i( 64829),	-- Bloodthirsty Gladiator's Ringmail Helm
-						i( 64830),	-- Bloodthirsty Gladiator's Ringmail Leggings
-						i( 64831),	-- Bloodthirsty Gladiator's Ringmail Spaulders
-						i( 64834),	-- Bloodthirsty Gladiator's Sabatons of Alacrity
-						i( 64835),	-- Bloodthirsty Gladiator's Sabatons of Alacrity
-						i( 64836),	-- Bloodthirsty Gladiator's Sabatons of Cruelty
-						i( 64837),	-- Bloodthirsty Gladiator's Sabatons of Meditation
-						i( 64838),	-- Bloodthirsty Gladiator's Satin Gloves
-						i( 64839),	-- Bloodthirsty Gladiator's Satin Hood
-						i( 64840),	-- Bloodthirsty Gladiator's Satin Leggings
-						i( 64841),	-- Bloodthirsty Gladiator's Satin Mantle
-						i( 64842),	-- Bloodthirsty Gladiator's Satin Robe
-						i( 64843),	-- Bloodthirsty Gladiator's Scaled Chestpiece
-						i( 64844),	-- Bloodthirsty Gladiator's Scaled Gauntlets
-						i( 64845),	-- Bloodthirsty Gladiator's Scaled Helm
-						i( 64846),	-- Bloodthirsty Gladiator's Scaled Legguards
-						i( 64847),	-- Bloodthirsty Gladiator's Scaled Shoulders
-						i( 64853),	-- Bloodthirsty Gladiator's Silk Amice
-						i( 64854),	-- Bloodthirsty Gladiator's Silk Cowl
-						i( 64855),	-- Bloodthirsty Gladiator's Silk Handguards
-						i( 64856),	-- Bloodthirsty Gladiator's Silk Robe
-						i( 64857),	-- Bloodthirsty Gladiator's Silk Trousers
-						i( 64862),	-- Bloodthirsty Gladiator's Treads of Alacrity
-						i( 64863),	-- Bloodthirsty Gladiator's Treads of Cruelty
-						i( 64864),	-- Bloodthirsty Gladiator's Treads of Meditation
-						i( 64865),	-- Bloodthirsty Gladiator's Waistband of Accuracy
-						i( 64866),	-- Bloodthirsty Gladiator's Waistband of Cruelty
-						i( 64867),	-- Bloodthirsty Gladiator's Waistguard of Cruelty
-						i( 64868),	-- Bloodthirsty Gladiator's Waistguard of Meditation
-						i( 64869),	-- Bloodthirsty Gladiator's Warboots of Alacrity
-						i( 64870),	-- Bloodthirsty Gladiator's Warboots of Cruelty
-						i( 64872),	-- Bloodthirsty Gladiator's Wristguards of Accuracy
-						i( 64873),	-- Bloodthirsty Gladiator's Wristguards of Alacrity
-						i( 64874),	-- Bloodthirsty Gladiator's Wyrmhide Gloves
-						i( 64875),	-- Bloodthirsty Gladiator's Wyrmhide Helm
-						i( 64876),	-- Bloodthirsty Gladiator's Wyrmhide Legguards
-						i( 64877),	-- Bloodthirsty Gladiator's Wyrmhide Robes
-						i( 64878),	-- Bloodthirsty Gladiator's Wyrmhide Spaulders					
+						i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
+						i(64681),	-- Bloodthirsty Gladiator's Armbands of Meditation
+						i(64683),	-- Bloodthirsty Gladiator's Armplates of Alacrity
+						i(64684),	-- Bloodthirsty Gladiator's Armplates of Proficiency
+						i(64685),	-- Bloodthirsty Gladiator's Armwraps of Accuracy
+						i(64686),	-- Bloodthirsty Gladiator's Armwraps of Alacrity
+						i(64696),	-- Bloodthirsty Gladiator's Belt of Cruelty
+						i(64697),	-- Bloodthirsty Gladiator's Belt of Meditation
+						i(64698),	-- Bloodthirsty Gladiator's Bindings of Meditation
+						i(64699),	-- Bloodthirsty Gladiator's Bindings of Prowess
+						i(64702),	-- Bloodthirsty Gladiator's Boots of Alacrity
+						i(64703),	-- Bloodthirsty Gladiator's Boots of Cruelty
+						i(64704),	-- Bloodthirsty Gladiator's Bracers of Meditation
+						i(64705),	-- Bloodthirsty Gladiator's Bracers of Prowess
+						i(64706),	-- Bloodthirsty Gladiator's Cape of Cruelty
+						i(64707),	-- Bloodthirsty Gladiator's Cape of Prowess
+						i(64708),	-- Bloodthirsty Gladiator's Chain Armor
+						i(64709),	-- Bloodthirsty Gladiator's Chain Gauntlets
+						i(64710),	-- Bloodthirsty Gladiator's Chain Helm
+						i(64711),	-- Bloodthirsty Gladiator's Chain Leggings
+						i(64712),	-- Bloodthirsty Gladiator's Chain Spaulders
+						i(64715),	-- Bloodthirsty Gladiator's Clasp of Cruelty
+						i(64716),	-- Bloodthirsty Gladiator's Clasp of Meditation
+						i(64718),	-- Bloodthirsty Gladiator's Cloak of Alacrity
+						i(64719),	-- Bloodthirsty Gladiator's Cloak of Prowess
+						i(64720),	-- Bloodthirsty Gladiator's Cord of Accuracy
+						i(64721),	-- Bloodthirsty Gladiator's Cord of Cruelty
+						i(64722),	-- Bloodthirsty Gladiator's Cord of Meditation
+						i(64723),	-- Bloodthirsty Gladiator's Cuffs of Accuracy
+						i(64724),	-- Bloodthirsty Gladiator's Cuffs of Meditation
+						i(64725),	-- Bloodthirsty Gladiator's Cuffs of Prowess
+						i(64727),	-- Bloodthirsty Gladiator's Dragonhide Gloves
+						i(64728),	-- Bloodthirsty Gladiator's Dragonhide Helm
+						i(64729),	-- Bloodthirsty Gladiator's Dragonhide Legguards
+						i(64730),	-- Bloodthirsty Gladiator's Dragonhide Robes
+						i(64731),	-- Bloodthirsty Gladiator's Dragonhide Spaulders
+						i(64732),	-- Bloodthirsty Gladiator's Drape of Diffusion
+						i(64733),	-- Bloodthirsty Gladiator's Drape of Meditation
+						i(64734),	-- Bloodthirsty Gladiator's Drape of Prowess
+						i(64735),	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
+						i(64736),	-- Bloodthirsty Gladiator's Dreadplate Gauntlets
+						i(64737),	-- Bloodthirsty Gladiator's Dreadplate Helm
+						i(64738),	-- Bloodthirsty Gladiator's Dreadplate Legguards
+						i(64739),	-- Bloodthirsty Gladiator's Dreadplate Shoulders
+						i(64745),	-- Bloodthirsty Gladiator's Felweave Amice
+						i(64746),	-- Bloodthirsty Gladiator's Felweave Cowl
+						i(64747),	-- Bloodthirsty Gladiator's Felweave Handguards
+						i(64748),	-- Bloodthirsty Gladiator's Felweave Raiment
+						i(64749),	-- Bloodthirsty Gladiator's Felweave Trousers
+						i(64750),	-- Bloodthirsty Gladiator's Footguards of Alacrity
+						i(64751),	-- Bloodthirsty Gladiator's Footguards of Meditation
+						i(64753),	-- Bloodthirsty Gladiator's Girdle of Cruelty
+						i(64754),	-- Bloodthirsty Gladiator's Girdle of Prowess
+						i(64756),	-- Bloodthirsty Gladiator's Greaves of Alacrity
+						i(64757),	-- Bloodthirsty Gladiator's Greaves of Meditation
+						i(64764),	-- Bloodthirsty Gladiator's Kodohide Gloves
+						i(64765),	-- Bloodthirsty Gladiator's Kodohide Helm
+						i(64766),	-- Bloodthirsty Gladiator's Kodohide Legguards
+						i(64767),	-- Bloodthirsty Gladiator's Kodohide Robes
+						i(64768),	-- Bloodthirsty Gladiator's Kodohide Spaulders
+						i(64769),	-- Bloodthirsty Gladiator's Leather Gloves
+						i(64770),	-- Bloodthirsty Gladiator's Leather Helm
+						i(64771),	-- Bloodthirsty Gladiator's Leather Legguards
+						i(64772),	-- Bloodthirsty Gladiator's Leather Spaulders
+						i(64773),	-- Bloodthirsty Gladiator's Leather Tunic
+						i(64776),	-- Bloodthirsty Gladiator's Linked Armor
+						i(64777),	-- Bloodthirsty Gladiator's Linked Gauntlets
+						i(64778),	-- Bloodthirsty Gladiator's Linked Helm
+						i(64779),	-- Bloodthirsty Gladiator's Linked Leggings
+						i(64780),	-- Bloodthirsty Gladiator's Linked Spaulders
+						i(64781),	-- Bloodthirsty Gladiator's Links of Accuracy
+						i(64682),	-- Bloodthirsty Gladiator's Armbands of Prowess
+						i(64784),	-- Bloodthirsty Gladiator's Mail Armor
+						i(64785),	-- Bloodthirsty Gladiator's Mail Gauntlets
+						i(64786),	-- Bloodthirsty Gladiator's Mail Helm
+						i(64787),	-- Bloodthirsty Gladiator's Mail Leggings
+						i(64788),	-- Bloodthirsty Gladiator's Mail Spaulders
+						i(64795),	-- Bloodthirsty Gladiator's Mooncloth Gloves
+						i(64796),	-- Bloodthirsty Gladiator's Mooncloth Helm
+						i(64797),	-- Bloodthirsty Gladiator's Mooncloth Leggings
+						i(64798),	-- Bloodthirsty Gladiator's Mooncloth Mantle
+						i(64799),	-- Bloodthirsty Gladiator's Mooncloth Robe
+						i(64802),	-- Bloodthirsty Gladiator's Ornamented Chestguard
+						i(64803),	-- Bloodthirsty Gladiator's Ornamented Gloves
+						i(64804),	-- Bloodthirsty Gladiator's Ornamented Headcover
+						i(64805),	-- Bloodthirsty Gladiator's Ornamented Legplates
+						i(64806),	-- Bloodthirsty Gladiator's Ornamented Spaulders
+						i(64811),	-- Bloodthirsty Gladiator's Plate Chestpiece
+						i(64812),	-- Bloodthirsty Gladiator's Plate Gauntlets
+						i(64813),	-- Bloodthirsty Gladiator's Plate Helm
+						i(64814),	-- Bloodthirsty Gladiator's Plate Legguards
+						i(64815),	-- Bloodthirsty Gladiator's Plate Shoulders
+						i(64827),	-- Bloodthirsty Gladiator's Ringmail Armor
+						i(64828),	-- Bloodthirsty Gladiator's Ringmail Gauntlets
+						i(64829),	-- Bloodthirsty Gladiator's Ringmail Helm
+						i(64830),	-- Bloodthirsty Gladiator's Ringmail Leggings
+						i(64831),	-- Bloodthirsty Gladiator's Ringmail Spaulders
+						i(64834),	-- Bloodthirsty Gladiator's Sabatons of Alacrity
+						i(64835),	-- Bloodthirsty Gladiator's Sabatons of Alacrity
+						i(64836),	-- Bloodthirsty Gladiator's Sabatons of Cruelty
+						i(64837),	-- Bloodthirsty Gladiator's Sabatons of Meditation
+						i(64838),	-- Bloodthirsty Gladiator's Satin Gloves
+						i(64839),	-- Bloodthirsty Gladiator's Satin Hood
+						i(64840),	-- Bloodthirsty Gladiator's Satin Leggings
+						i(64841),	-- Bloodthirsty Gladiator's Satin Mantle
+						i(64842),	-- Bloodthirsty Gladiator's Satin Robe
+						i(64843),	-- Bloodthirsty Gladiator's Scaled Chestpiece
+						i(64844),	-- Bloodthirsty Gladiator's Scaled Gauntlets
+						i(64845),	-- Bloodthirsty Gladiator's Scaled Helm
+						i(64846),	-- Bloodthirsty Gladiator's Scaled Legguards
+						i(64847),	-- Bloodthirsty Gladiator's Scaled Shoulders
+						i(64853),	-- Bloodthirsty Gladiator's Silk Amice
+						i(64854),	-- Bloodthirsty Gladiator's Silk Cowl
+						i(64855),	-- Bloodthirsty Gladiator's Silk Handguards
+						i(64856),	-- Bloodthirsty Gladiator's Silk Robe
+						i(64857),	-- Bloodthirsty Gladiator's Silk Trousers
+						i(64862),	-- Bloodthirsty Gladiator's Treads of Alacrity
+						i(64863),	-- Bloodthirsty Gladiator's Treads of Cruelty
+						i(64864),	-- Bloodthirsty Gladiator's Treads of Meditation
+						i(64865),	-- Bloodthirsty Gladiator's Waistband of Accuracy
+						i(64866),	-- Bloodthirsty Gladiator's Waistband of Cruelty
+						i(64867),	-- Bloodthirsty Gladiator's Waistguard of Cruelty
+						i(64868),	-- Bloodthirsty Gladiator's Waistguard of Meditation
+						i(64869),	-- Bloodthirsty Gladiator's Warboots of Alacrity
+						i(64870),	-- Bloodthirsty Gladiator's Warboots of Cruelty
+						i(64872),	-- Bloodthirsty Gladiator's Wristguards of Accuracy
+						i(64873),	-- Bloodthirsty Gladiator's Wristguards of Alacrity
+						i(64874),	-- Bloodthirsty Gladiator's Wyrmhide Gloves
+						i(64875),	-- Bloodthirsty Gladiator's Wyrmhide Helm
+						i(64876),	-- Bloodthirsty Gladiator's Wyrmhide Legguards
+						i(64877),	-- Bloodthirsty Gladiator's Wyrmhide Robes
+						i(64878),	-- Bloodthirsty Gladiator's Wyrmhide Spaulders					
 					}),
 					n(58155, {	-- Rugok <Legacy Justice Quartermaster>
-						i( 65226),	-- Reinforced Sapphirium Faceguard
-						i( 65202),	-- Stormrider's Vestment
-						i( 65272),	-- Earthen Legguards
-						i( 65271),	-- Earthen Faceguard
-						i( 65270),	-- Earthen Handguards
-						i( 65269),	-- Earthen Chestguard
-						i( 65268),	-- Earthen Pauldrons
-						i( 65267),	-- Earthen Legplates
-						i( 65266),	-- Earthen Helmet
-						i( 65265),	-- Earthen Gauntlets
-						i( 65264),	-- Earthen Battleplate
-						i( 65263),	-- Shadowflame Mantle
-						i( 65262),	-- Shadowflame Robes
-						i( 65261),	-- Shadowflame Leggings
-						i( 65260),	-- Shadowflame Hood
-						i( 65259),	-- Shadowflame Handwraps
-						i( 65258),	-- Shoulderwraps of the Raging Elements
-						i( 65257),	-- Kilt of the Raging Elements
-						i( 65256),	-- Headpiece of the Raging Elements
-						i( 65255),	-- Gloves of the Raging Elements
-						i( 65254),	-- Hauberk of the Raging Elements
-						i( 65253),	-- Spaulders of the Raging Elements
-						i( 65252),	-- Legguards of the Raging Elements
-						i( 65251),	-- Helmet of the Raging Elements
-						i( 65250),	-- Grips of the Raging Elements
-						i( 65249),	-- Cuirass of the Raging Elements
-						i( 65248),	-- Mantle of the Raging Elements
-						i( 65247),	-- Legwraps of the Raging Elements
-						i( 65246),	-- Faceguard of the Raging Elements
-						i( 65245),	-- Handwraps of the Raging Elements
-						i( 65244),	-- Tunic of the Raging Elements
-						i( 65243),	-- Wind Dancer's Spaulders
-						i( 65242),	-- Wind Dancer's Legguards
-						i( 65241),	-- Wind Dancer's Helmet
-						i( 65240),	-- Wind Dancer's Gloves
-						i( 65239),	-- Wind Dancer's Tunic
-						i( 65238),	-- Mercurial Shoulderwraps
-						i( 65237),	-- Mercurial Vestment
-						i( 65236),	-- Mercurial Leggings
-						i( 65235),	-- Mercurial Hood
-						i( 65234),	-- Mercurial Gloves
-						i( 65233),	-- Mercurial Mantle
-						i( 65232),	-- Mercurial Robes
-						i( 65231),	-- Mercurial Legwraps
-						i( 65230),	-- Mercurial Cowl
-						i( 65229),	-- Mercurial Handwraps
-						i( 65228),	-- Reinforced Sapphirium Shoulderguards
-						i( 65227),	-- Reinforced Sapphirium Legguards
-						i( 65273),	-- Earthen Shoulderguards
-						i( 65225),	-- Reinforced Sapphirium Handguards
-						i( 65224),	-- Reinforced Sapphirium Chestguard
-						i( 65223),	-- Reinforced Sapphirium Mantle
-						i( 65222),	-- Reinforced Sapphirium Greaves
-						i( 65221),	-- Reinforced Sapphirium Headguard
-						i( 65220),	-- Reinforced Sapphirium Gloves
-						i( 65219),	-- Reinforced Sapphirium Breastplate
-						i( 65218),	-- Reinforced Sapphirium Pauldrons
-						i( 65217),	-- Reinforced Sapphirium Legplates
-						i( 65216),	-- Reinforced Sapphirium Helmet
-						i( 65215),	-- Reinforced Sapphirium Gauntlets
-						i( 65214),	-- Reinforced Sapphirium Battleplate
-						i( 65213),	-- Firelord's Mantle
-						i( 65212),	-- Firelord's Robes
-						i( 65211),	-- Firelord's Leggings
-						i( 65210),	-- Firelord's Hood
-						i( 65209),	-- Firelord's Gloves
-						i( 65208),	-- Lightning-Charged Spaulders
-						i( 65207),	-- Lightning-Charged Legguards
-						i( 65206),	-- Lightning-Charged Headguard
-						i( 65205),	-- Lightning-Charged Gloves
-						i( 65204),	-- Lightning-Charged Tunic
-						i( 65203),	-- Stormrider's Shoulderwraps
-						i( 65179),	-- Magma Plated Battleplate
-						i( 65180),	-- Magma Plated Gauntlets
-						i( 65181),	-- Magma Plated Helmet
-						i( 65182),	-- Magma Plated Legplates
-						i( 65183),	-- Magma Plated Pauldrons
-						i( 65184),	-- Magma Plated Chestguard
-						i( 65185),	-- Magma Plated Handguards
-						i( 65186),	-- Magma Plated Faceguard
-						i( 65187),	-- Magma Plated Legguards
-						i( 65188),	-- Magma Plated Shoulderguards
-						i( 65189),	-- Stormrider's Grips
-						i( 65190),	-- Stormrider's Headpiece
-						i( 65191),	-- Stormrider's Legguards
-						i( 65192),	-- Stormrider's Raiment
-						i( 65193),	-- Stormrider's Spaulders
-						i( 65194),	-- Stormrider's Handwraps
-						i( 65195),	-- Stormrider's Helm
-						i( 65196),	-- Stormrider's Legwraps
-						i( 65197),	-- Stormrider's Robes
-						i( 65198),	-- Stormrider's Mantle
-						i( 65199),	-- Stormrider's Gloves
-						i( 65200),	-- Stormrider's Cover
-						i( 65201),	-- Stormrider's Leggings
-						i( 60321),	-- Legguards of the Raging Elements
-						i( 60250),	-- Shadowflame Leggings
-						i( 60251),	-- Shadowflame Robes
-						i( 60252),	-- Shadowflame Mantle
-						i( 60253),	-- Mercurial Shoulderwraps
-						i( 60254),	-- Mercurial Vestment
-						i( 60255),	-- Mercurial Leggings
-						i( 60256),	-- Mercurial Hood
-						i( 60257),	-- Mercurial Gloves
-						i( 60258),	-- Mercurial Cowl
-						i( 60259),	-- Mercurial Robes
-						i( 60261),	-- Mercurial Legwraps
-						i( 60262),	-- Mercurial Mantle
-						i( 60275),	-- Mercurial Handwraps
-						i( 60276),	-- Stormrider's Robes
-						i( 60277),	-- Stormrider's Helm
-						i( 60278),	-- Stormrider's Legwraps
-						i( 60279),	-- Stormrider's Mantle
-						i( 60280),	-- Stormrider's Handwraps
-						i( 60281),	-- Stormrider's Vestment
-						i( 60282),	-- Stormrider's Cover
-						i( 60283),	-- Stormrider's Leggings
-						i( 60284),	-- Stormrider's Shoulderwraps
-						i( 60285),	-- Stormrider's Gloves
-						i( 60286),	-- Stormrider's Headpiece
-						i( 60287),	-- Stormrider's Raiment
-						i( 60288),	-- Stormrider's Legguards
-						i( 60289),	-- Stormrider's Spaulders
-						i( 60290),	-- Stormrider's Grips
-						i( 60298),	-- Wind Dancer's Gloves
-						i( 60299),	-- Wind Dancer's Helmet
-						i( 60300),	-- Wind Dancer's Legguards
-						i( 60301),	-- Wind Dancer's Tunic
-						i( 60302),	-- Wind Dancer's Spaulders
-						i( 60303),	-- Lightning-Charged Headguard
-						i( 60304),	-- Lightning-Charged Tunic
-						i( 60305),	-- Lightning-Charged Legguards
-						i( 60306),	-- Lightning-Charged Spaulders
-						i( 60307),	-- Lightning-Charged Gloves
-						i( 60308),	-- Faceguard of the Raging Elements
-						i( 60309),	-- Tunic of the Raging Elements
-						i( 60310),	-- Legwraps of the Raging Elements
-						i( 60311),	-- Mantle of the Raging Elements
-						i( 60312),	-- Handwraps of the Raging Elements
-						i( 60313),	-- Hauberk of the Raging Elements
-						i( 60314),	-- Gloves of the Raging Elements
-						i( 60315),	-- Headpiece of the Raging Elements
-						i( 60316),	-- Kilt of the Raging Elements
-						i( 60317),	-- Shoulderwraps of the Raging Elements
-						i( 60318),	-- Cuirass of the Raging Elements
-						i( 60319),	-- Grips of the Raging Elements
-						i( 60320),	-- Helmet of the Raging Elements
-						i( 60322),	-- Spaulders of the Raging Elements
-						i( 60323),	-- Earthen Battleplate
-						i( 60324),	-- Earthen Legplates
-						i( 60325),	-- Earthen Helmet
-						i( 60326),	-- Earthen Gauntlets
-						i( 60327),	-- Earthen Pauldrons
-						i( 60328),	-- Earthen Faceguard
-						i( 60329),	-- Earthen Chestguard
-						i( 60330),	-- Earthen Legguards
-						i( 60331),	-- Earthen Shoulderguards
-						i( 60332),	-- Earthen Handguards
-						i( 60339),	-- Magma Plated Battleplate
-						i( 60340),	-- Magma Plated Gauntlets
-						i( 60341),	-- Magma Plated Helmet
-						i( 60342),	-- Magma Plated Legplates
-						i( 60343),	-- Magma Plated Pauldrons
-						i( 60344),	-- Reinforced Sapphirium Battleplate
-						i( 60345),	-- Reinforced Sapphirium Gauntlets
-						i( 60346),	-- Reinforced Sapphirium Helmet
-						i( 60347),	-- Reinforced Sapphirium Legplates
-						i( 60348),	-- Reinforced Sapphirium Pauldrons
-						i( 60349),	-- Magma Plated Chestguard
-						i( 60350),	-- Magma Plated Handguards
-						i( 60351),	-- Magma Plated Faceguard
-						i( 60352),	-- Magma Plated Legguards
-						i( 60353),	-- Magma Plated Shoulderguards
-						i( 60354),	-- Reinforced Sapphirium Chestguard
-						i( 60355),	-- Reinforced Sapphirium Handguards
-						i( 60356),	-- Reinforced Sapphirium Faceguard
-						i( 60357),	-- Reinforced Sapphirium Legguards
-						i( 60358),	-- Reinforced Sapphirium Shoulderguards
-						i( 60359),	-- Reinforced Sapphirium Headguard
-						i( 60360),	-- Reinforced Sapphirium Breastplate
-						i( 60361),	-- Reinforced Sapphirium Greaves
-						i( 60362),	-- Reinforced Sapphirium Mantle
-						i( 60363),	-- Reinforced Sapphirium Gloves
-						i( 58190),	-- Floating Web
-						i( 58191),	-- Viewless Wings
-						i( 58192),	-- Gray Hair Cloak
-						i( 58193),	-- Haunt of Flies
-						i( 58194),	-- Heavenly Breeze
-						i( 58195),	-- Woe Breeder's Boots
-						i( 58197),	-- Rock Furrow Boots
-						i( 58198),	-- Eternal Pathfinders
-						i( 58199),	-- Moccasins of Verdurous Glooms
-						i( 58481),	-- Boots of the Perilous Seas
-						i( 58482),	-- Treads of Fleeting Joy
-						i( 58484),	-- Fading Violet Sandals
-						i( 58485),	-- Melodious Slippers
-						i( 58486),	-- Slippers of Moving Waters
-						i( 60243),	-- Firelord's Hood
-						i( 60244),	-- Firelord's Robes
-						i( 60245),	-- Firelord's Leggings
-						i( 60246),	-- Firelord's Mantle
-						i( 60247),	-- Firelord's Gloves
-						i( 60248),	-- Shadowflame Handwraps
-						i( 60249),	-- Shadowflame Hood
-						i( 58107),	-- Legguards of the Gentle
-						i( 57913),	-- Beech Green Belt
-						i( 57915),	-- Belt of Barred Clouds
-						i( 57916),	-- Belt of the Dim Forest
-						i( 57917),	-- Belt of the Still Stream
-						i( 57918),	-- Sash of Musing
-						i( 57914),	-- Girdle of the Mountains
-						i( 58163),	-- Gloves of Purification
-						i( 58162),	-- Summer Song Shoulderwraps
-						i( 58161),	-- Mask of New Snow
-						i( 58160),	-- Leggings of Charity
-						i( 58159),	-- Musk Rose Robes
-						i( 58158),	-- Gloves of the Painless Midnight
-						i( 58157),	-- Meadow Mantle
-						i( 58155),	-- Cowl of Pleasant Gloom
-						i( 58154),	-- Pensive Legwraps
-						i( 58153),	-- Robes of Embalmed Darkness
-						i( 58152),	-- Blessed Hands of Elune
-						i( 58151),	-- Somber Shawl
-						i( 58150),	-- Cluster of Stars
-						i( 58140),	-- Leggings of Late Blooms
-						i( 58139),	-- Chestguard of Forgetfulness
-						i( 58138),	-- Sticky Fingers
-						i( 58134),	-- Embrace of the Night
-						i( 58133),	-- Mask of Vines
-						i( 58132),	-- Leggings of the Burrowing Mole
-						i( 58131),	-- Tunic of Sinking Envy
-						i( 58130),	-- Gleaning Gloves
-						i( 58129),	-- Seafoam Mantle
-						i( 58128),	-- Helm of the Inward Eye
-						i( 58127),	-- Leggings of Soothing Silence
-						i( 58126),	-- Vest of the Waking Dream
-						i( 58125),	-- Gloves of the Passing Night
-						i( 58124),	-- Wrap of the Valley Glades
-						i( 58123),	-- Willow Mask
-						i( 58122),	-- Hillside Striders
-						i( 58121),	-- Vest of the True Companion
-						i( 58110),	-- Gloves of Curious Conscience
-						i( 58109),	-- Pauldrons of the Forlorn
-						i( 58108),	-- Crown of the Blazing Sun
-						i( 57919),	-- Thatch Eave Vines
-						i( 58106),	-- Chestguard of Dancing Waves
-						i( 58105),	-- Numbing Handguards
-						i( 58104),	-- Sunburnt Pauldrons
-						i( 58103),	-- Helm of the Proud
-						i( 58102),	-- Greaves of Splendor
-						i( 58101),	-- Chestplate of the Steadfast
-						i( 58100),	-- Pauldrons of the High Requiem
-						i( 58099),	-- Reaping Gauntlets
-						i( 58098),	-- Helm of Easeful Death
-						i( 58097),	-- Greaves of Gallantry
-						i( 58096),	-- Breastplate of Raging Fury
-						i( 57929),	-- Dawnblaze Blade
-						i( 57928),	-- Windslicer
-						i( 57927),	-- Throat Slasher
-						i( 57926),	-- Shield of the Four Grey Towers
-						i( 57925),	-- Shield of the Mists
-						i( 57924),	-- Apple-Bent Bough
-						i( 57923),	-- Hermit's Lamp
-						i( 57922),	-- Belt of the Falling Rain
-						i( 57921),	-- Incense Infused Cummerbund					
+						i(65226),	-- Reinforced Sapphirium Faceguard
+						i(65202),	-- Stormrider's Vestment
+						i(65272),	-- Earthen Legguards
+						i(65271),	-- Earthen Faceguard
+						i(65270),	-- Earthen Handguards
+						i(65269),	-- Earthen Chestguard
+						i(65268),	-- Earthen Pauldrons
+						i(65267),	-- Earthen Legplates
+						i(65266),	-- Earthen Helmet
+						i(65265),	-- Earthen Gauntlets
+						i(65264),	-- Earthen Battleplate
+						i(65263),	-- Shadowflame Mantle
+						i(65262),	-- Shadowflame Robes
+						i(65261),	-- Shadowflame Leggings
+						i(65260),	-- Shadowflame Hood
+						i(65259),	-- Shadowflame Handwraps
+						i(65258),	-- Shoulderwraps of the Raging Elements
+						i(65257),	-- Kilt of the Raging Elements
+						i(65256),	-- Headpiece of the Raging Elements
+						i(65255),	-- Gloves of the Raging Elements
+						i(65254),	-- Hauberk of the Raging Elements
+						i(65253),	-- Spaulders of the Raging Elements
+						i(65252),	-- Legguards of the Raging Elements
+						i(65251),	-- Helmet of the Raging Elements
+						i(65250),	-- Grips of the Raging Elements
+						i(65249),	-- Cuirass of the Raging Elements
+						i(65248),	-- Mantle of the Raging Elements
+						i(65247),	-- Legwraps of the Raging Elements
+						i(65246),	-- Faceguard of the Raging Elements
+						i(65245),	-- Handwraps of the Raging Elements
+						i(65244),	-- Tunic of the Raging Elements
+						i(65243),	-- Wind Dancer's Spaulders
+						i(65242),	-- Wind Dancer's Legguards
+						i(65241),	-- Wind Dancer's Helmet
+						i(65240),	-- Wind Dancer's Gloves
+						i(65239),	-- Wind Dancer's Tunic
+						i(65238),	-- Mercurial Shoulderwraps
+						i(65237),	-- Mercurial Vestment
+						i(65236),	-- Mercurial Leggings
+						i(65235),	-- Mercurial Hood
+						i(65234),	-- Mercurial Gloves
+						i(65233),	-- Mercurial Mantle
+						i(65232),	-- Mercurial Robes
+						i(65231),	-- Mercurial Legwraps
+						i(65230),	-- Mercurial Cowl
+						i(65229),	-- Mercurial Handwraps
+						i(65228),	-- Reinforced Sapphirium Shoulderguards
+						i(65227),	-- Reinforced Sapphirium Legguards
+						i(65273),	-- Earthen Shoulderguards
+						i(65225),	-- Reinforced Sapphirium Handguards
+						i(65224),	-- Reinforced Sapphirium Chestguard
+						i(65223),	-- Reinforced Sapphirium Mantle
+						i(65222),	-- Reinforced Sapphirium Greaves
+						i(65221),	-- Reinforced Sapphirium Headguard
+						i(65220),	-- Reinforced Sapphirium Gloves
+						i(65219),	-- Reinforced Sapphirium Breastplate
+						i(65218),	-- Reinforced Sapphirium Pauldrons
+						i(65217),	-- Reinforced Sapphirium Legplates
+						i(65216),	-- Reinforced Sapphirium Helmet
+						i(65215),	-- Reinforced Sapphirium Gauntlets
+						i(65214),	-- Reinforced Sapphirium Battleplate
+						i(65213),	-- Firelord's Mantle
+						i(65212),	-- Firelord's Robes
+						i(65211),	-- Firelord's Leggings
+						i(65210),	-- Firelord's Hood
+						i(65209),	-- Firelord's Gloves
+						i(65208),	-- Lightning-Charged Spaulders
+						i(65207),	-- Lightning-Charged Legguards
+						i(65206),	-- Lightning-Charged Headguard
+						i(65205),	-- Lightning-Charged Gloves
+						i(65204),	-- Lightning-Charged Tunic
+						i(65203),	-- Stormrider's Shoulderwraps
+						i(65179),	-- Magma Plated Battleplate
+						i(65180),	-- Magma Plated Gauntlets
+						i(65181),	-- Magma Plated Helmet
+						i(65182),	-- Magma Plated Legplates
+						i(65183),	-- Magma Plated Pauldrons
+						i(65184),	-- Magma Plated Chestguard
+						i(65185),	-- Magma Plated Handguards
+						i(65186),	-- Magma Plated Faceguard
+						i(65187),	-- Magma Plated Legguards
+						i(65188),	-- Magma Plated Shoulderguards
+						i(65189),	-- Stormrider's Grips
+						i(65190),	-- Stormrider's Headpiece
+						i(65191),	-- Stormrider's Legguards
+						i(65192),	-- Stormrider's Raiment
+						i(65193),	-- Stormrider's Spaulders
+						i(65194),	-- Stormrider's Handwraps
+						i(65195),	-- Stormrider's Helm
+						i(65196),	-- Stormrider's Legwraps
+						i(65197),	-- Stormrider's Robes
+						i(65198),	-- Stormrider's Mantle
+						i(65199),	-- Stormrider's Gloves
+						i(65200),	-- Stormrider's Cover
+						i(65201),	-- Stormrider's Leggings
+						i(60321),	-- Legguards of the Raging Elements
+						i(60250),	-- Shadowflame Leggings
+						i(60251),	-- Shadowflame Robes
+						i(60252),	-- Shadowflame Mantle
+						i(60253),	-- Mercurial Shoulderwraps
+						i(60254),	-- Mercurial Vestment
+						i(60255),	-- Mercurial Leggings
+						i(60256),	-- Mercurial Hood
+						i(60257),	-- Mercurial Gloves
+						i(60258),	-- Mercurial Cowl
+						i(60259),	-- Mercurial Robes
+						i(60261),	-- Mercurial Legwraps
+						i(60262),	-- Mercurial Mantle
+						i(60275),	-- Mercurial Handwraps
+						i(60276),	-- Stormrider's Robes
+						i(60277),	-- Stormrider's Helm
+						i(60278),	-- Stormrider's Legwraps
+						i(60279),	-- Stormrider's Mantle
+						i(60280),	-- Stormrider's Handwraps
+						i(60281),	-- Stormrider's Vestment
+						i(60282),	-- Stormrider's Cover
+						i(60283),	-- Stormrider's Leggings
+						i(60284),	-- Stormrider's Shoulderwraps
+						i(60285),	-- Stormrider's Gloves
+						i(60286),	-- Stormrider's Headpiece
+						i(60287),	-- Stormrider's Raiment
+						i(60288),	-- Stormrider's Legguards
+						i(60289),	-- Stormrider's Spaulders
+						i(60290),	-- Stormrider's Grips
+						i(60298),	-- Wind Dancer's Gloves
+						i(60299),	-- Wind Dancer's Helmet
+						i(60300),	-- Wind Dancer's Legguards
+						i(60301),	-- Wind Dancer's Tunic
+						i(60302),	-- Wind Dancer's Spaulders
+						i(60303),	-- Lightning-Charged Headguard
+						i(60304),	-- Lightning-Charged Tunic
+						i(60305),	-- Lightning-Charged Legguards
+						i(60306),	-- Lightning-Charged Spaulders
+						i(60307),	-- Lightning-Charged Gloves
+						i(60308),	-- Faceguard of the Raging Elements
+						i(60309),	-- Tunic of the Raging Elements
+						i(60310),	-- Legwraps of the Raging Elements
+						i(60311),	-- Mantle of the Raging Elements
+						i(60312),	-- Handwraps of the Raging Elements
+						i(60313),	-- Hauberk of the Raging Elements
+						i(60314),	-- Gloves of the Raging Elements
+						i(60315),	-- Headpiece of the Raging Elements
+						i(60316),	-- Kilt of the Raging Elements
+						i(60317),	-- Shoulderwraps of the Raging Elements
+						i(60318),	-- Cuirass of the Raging Elements
+						i(60319),	-- Grips of the Raging Elements
+						i(60320),	-- Helmet of the Raging Elements
+						i(60322),	-- Spaulders of the Raging Elements
+						i(60323),	-- Earthen Battleplate
+						i(60324),	-- Earthen Legplates
+						i(60325),	-- Earthen Helmet
+						i(60326),	-- Earthen Gauntlets
+						i(60327),	-- Earthen Pauldrons
+						i(60328),	-- Earthen Faceguard
+						i(60329),	-- Earthen Chestguard
+						i(60330),	-- Earthen Legguards
+						i(60331),	-- Earthen Shoulderguards
+						i(60332),	-- Earthen Handguards
+						i(60339),	-- Magma Plated Battleplate
+						i(60340),	-- Magma Plated Gauntlets
+						i(60341),	-- Magma Plated Helmet
+						i(60342),	-- Magma Plated Legplates
+						i(60343),	-- Magma Plated Pauldrons
+						i(60344),	-- Reinforced Sapphirium Battleplate
+						i(60345),	-- Reinforced Sapphirium Gauntlets
+						i(60346),	-- Reinforced Sapphirium Helmet
+						i(60347),	-- Reinforced Sapphirium Legplates
+						i(60348),	-- Reinforced Sapphirium Pauldrons
+						i(60349),	-- Magma Plated Chestguard
+						i(60350),	-- Magma Plated Handguards
+						i(60351),	-- Magma Plated Faceguard
+						i(60352),	-- Magma Plated Legguards
+						i(60353),	-- Magma Plated Shoulderguards
+						i(60354),	-- Reinforced Sapphirium Chestguard
+						i(60355),	-- Reinforced Sapphirium Handguards
+						i(60356),	-- Reinforced Sapphirium Faceguard
+						i(60357),	-- Reinforced Sapphirium Legguards
+						i(60358),	-- Reinforced Sapphirium Shoulderguards
+						i(60359),	-- Reinforced Sapphirium Headguard
+						i(60360),	-- Reinforced Sapphirium Breastplate
+						i(60361),	-- Reinforced Sapphirium Greaves
+						i(60362),	-- Reinforced Sapphirium Mantle
+						i(60363),	-- Reinforced Sapphirium Gloves
+						i(58190),	-- Floating Web
+						i(58191),	-- Viewless Wings
+						i(58192),	-- Gray Hair Cloak
+						i(58193),	-- Haunt of Flies
+						i(58194),	-- Heavenly Breeze
+						i(58195),	-- Woe Breeder's Boots
+						i(58197),	-- Rock Furrow Boots
+						i(58198),	-- Eternal Pathfinders
+						i(58199),	-- Moccasins of Verdurous Glooms
+						i(58481),	-- Boots of the Perilous Seas
+						i(58482),	-- Treads of Fleeting Joy
+						i(58484),	-- Fading Violet Sandals
+						i(58485),	-- Melodious Slippers
+						i(58486),	-- Slippers of Moving Waters
+						i(60243),	-- Firelord's Hood
+						i(60244),	-- Firelord's Robes
+						i(60245),	-- Firelord's Leggings
+						i(60246),	-- Firelord's Mantle
+						i(60247),	-- Firelord's Gloves
+						i(60248),	-- Shadowflame Handwraps
+						i(60249),	-- Shadowflame Hood
+						i(58107),	-- Legguards of the Gentle
+						i(57913),	-- Beech Green Belt
+						i(57915),	-- Belt of Barred Clouds
+						i(57916),	-- Belt of the Dim Forest
+						i(57917),	-- Belt of the Still Stream
+						i(57918),	-- Sash of Musing
+						i(57914),	-- Girdle of the Mountains
+						i(58163),	-- Gloves of Purification
+						i(58162),	-- Summer Song Shoulderwraps
+						i(58161),	-- Mask of New Snow
+						i(58160),	-- Leggings of Charity
+						i(58159),	-- Musk Rose Robes
+						i(58158),	-- Gloves of the Painless Midnight
+						i(58157),	-- Meadow Mantle
+						i(58155),	-- Cowl of Pleasant Gloom
+						i(58154),	-- Pensive Legwraps
+						i(58153),	-- Robes of Embalmed Darkness
+						i(58152),	-- Blessed Hands of Elune
+						i(58151),	-- Somber Shawl
+						i(58150),	-- Cluster of Stars
+						i(58140),	-- Leggings of Late Blooms
+						i(58139),	-- Chestguard of Forgetfulness
+						i(58138),	-- Sticky Fingers
+						i(58134),	-- Embrace of the Night
+						i(58133),	-- Mask of Vines
+						i(58132),	-- Leggings of the Burrowing Mole
+						i(58131),	-- Tunic of Sinking Envy
+						i(58130),	-- Gleaning Gloves
+						i(58129),	-- Seafoam Mantle
+						i(58128),	-- Helm of the Inward Eye
+						i(58127),	-- Leggings of Soothing Silence
+						i(58126),	-- Vest of the Waking Dream
+						i(58125),	-- Gloves of the Passing Night
+						i(58124),	-- Wrap of the Valley Glades
+						i(58123),	-- Willow Mask
+						i(58122),	-- Hillside Striders
+						i(58121),	-- Vest of the True Companion
+						i(58110),	-- Gloves of Curious Conscience
+						i(58109),	-- Pauldrons of the Forlorn
+						i(58108),	-- Crown of the Blazing Sun
+						i(57919),	-- Thatch Eave Vines
+						i(58106),	-- Chestguard of Dancing Waves
+						i(58105),	-- Numbing Handguards
+						i(58104),	-- Sunburnt Pauldrons
+						i(58103),	-- Helm of the Proud
+						i(58102),	-- Greaves of Splendor
+						i(58101),	-- Chestplate of the Steadfast
+						i(58100),	-- Pauldrons of the High Requiem
+						i(58099),	-- Reaping Gauntlets
+						i(58098),	-- Helm of Easeful Death
+						i(58097),	-- Greaves of Gallantry
+						i(58096),	-- Breastplate of Raging Fury
+						i(57929),	-- Dawnblaze Blade
+						i(57928),	-- Windslicer
+						i(57927),	-- Throat Slasher
+						i(57926),	-- Shield of the Four Grey Towers
+						i(57925),	-- Shield of the Mists
+						i(57924),	-- Apple-Bent Bough
+						i(57923),	-- Hermit's Lamp
+						i(57922),	-- Belt of the Falling Rain
+						i(57921),	-- Incense Infused Cummerbund					
 					}),
 					n(69978, {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
 						i(146639, { -- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
@@ -3264,170 +3264,170 @@ COORDINATES			o(206116, { 	-- Warchief's Command Board (Org)
 								i(73477),	-- Cataclysmic Gladiator's Decapitator
 							},
 						}),
-						i( 73562),	-- Cataclysmic Gladiator's Bracers of Prowess
-						i( 73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
-						i( 73479),	-- Cataclysmic Gladiator's Plate Legguards
-						i( 73480),	-- Cataclysmic Gladiator's Plate Helm
-						i( 73481),	-- Cataclysmic Gladiator's Plate Gauntlets
-						i( 73482),	-- Cataclysmic Gladiator's Plate Chestpiece
-						i( 73483),	-- Cataclysmic Gladiator's Felweave Amice
-						i( 73484),	-- Cataclysmic Gladiator's Felweave Raiment
-						i( 73485),	-- Cataclysmic Gladiator's Felweave Trousers
-						i( 73486),	-- Cataclysmic Gladiator's Felweave Cowl
-						i( 73487),	-- Cataclysmic Gladiator's Felweave Handguards
-						i( 73494),	-- Cataclysmic Gladiator's Cloak of Prowess
-						i( 73495),	-- Cataclysmic Gladiator's Cloak of Alacrity
-						i( 73502),	-- Cataclysmic Gladiator's Mail Spaulders
-						i( 73503),	-- Cataclysmic Gladiator's Mail Leggings
-						i( 73504),	-- Cataclysmic Gladiator's Mail Helm
-						i( 73505),	-- Cataclysmic Gladiator's Mail Gauntlets
-						i( 73506),	-- Cataclysmic Gladiator's Mail Armor
-						i( 73507),	-- Cataclysmic Gladiator's Waistguard of Cruelty
-						i( 73508),	-- Cataclysmic Gladiator's Linked Spaulders
-						i( 73509),	-- Cataclysmic Gladiator's Linked Leggings
-						i( 73510),	-- Cataclysmic Gladiator's Linked Helm
-						i( 73511),	-- Cataclysmic Gladiator's Linked Gauntlets
-						i( 73512),	-- Cataclysmic Gladiator's Linked Armor
-						i( 73513),	-- Cataclysmic Gladiator's Ringmail Spaulders
-						i( 73514),	-- Cataclysmic Gladiator's Ringmail Leggings
-						i( 73515),	-- Cataclysmic Gladiator's Ringmail Helm
-						i( 73516),	-- Cataclysmic Gladiator's Ringmail Gauntlets
-						i( 73517),	-- Cataclysmic Gladiator's Ringmail Armor
-						i( 73518),	-- Cataclysmic Gladiator's Armbands of Meditation
-						i( 73519),	-- Cataclysmic Gladiator's Armbands of Prowess
-						i( 73520),	-- Cataclysmic Gladiator's Sabatons of Meditation
-						i( 73521),	-- Cataclysmic Gladiator's Sabatons of Alacrity
-						i( 73522),	-- Cataclysmic Gladiator's Waistguard of Meditation
-						i( 73523),	-- Cataclysmic Gladiator's Leather Spaulders
-						i( 73524),	-- Cataclysmic Gladiator's Leather Legguards
-						i( 73525),	-- Cataclysmic Gladiator's Leather Helm
-						i( 73526),	-- Cataclysmic Gladiator's Leather Gloves
-						i( 73527),	-- Cataclysmic Gladiator's Leather Tunic
-						i( 73528),	-- Cataclysmic Gladiator's Armwraps of Accuracy
-						i( 73529),	-- Cataclysmic Gladiator's Armwraps of Alacrity
-						i( 73530),	-- Cataclysmic Gladiator's Boots of Alacrity
-						i( 73531),	-- Cataclysmic Gladiator's Boots of Cruelty
-						i( 73532),	-- Cataclysmic Gladiator's Waistband of Accuracy
-						i( 73533),	-- Cataclysmic Gladiator's Waistband of Cruelty
-						i( 73540),	-- Cataclysmic Gladiator's Satin Mantle
-						i( 73541),	-- Cataclysmic Gladiator's Satin Robe
-						i( 73542),	-- Cataclysmic Gladiator's Satin Leggings
-						i( 73543),	-- Cataclysmic Gladiator's Satin Hood
-						i( 73544),	-- Cataclysmic Gladiator's Satin Gloves
-						i( 73545),	-- Cataclysmic Gladiator's Mooncloth Mantle
-						i( 73546),	-- Cataclysmic Gladiator's Mooncloth Robe
-						i( 73547),	-- Cataclysmic Gladiator's Mooncloth Leggings
-						i( 73548),	-- Cataclysmic Gladiator's Mooncloth Helm
-						i( 73549),	-- Cataclysmic Gladiator's Mooncloth Gloves
-						i( 73550),	-- Cataclysmic Gladiator's Armplates of Alacrity
-						i( 73551),	-- Cataclysmic Gladiator's Armplates of Proficiency
-						i( 73553),	-- Cataclysmic Gladiator's Warboots of Cruelty
-						i( 73554),	-- Cataclysmic Gladiator's Girdle of Prowess
-						i( 73555),	-- Cataclysmic Gladiator's Girdle of Cruelty
-						i( 73556),	-- Cataclysmic Gladiator's Ornamented Spaulders
-						i( 73557),	-- Cataclysmic Gladiator's Ornamented Legplates
-						i( 73558),	-- Cataclysmic Gladiator's Ornamented Headcover
-						i( 73559),	-- Cataclysmic Gladiator's Ornamented Gloves
-						i( 73560),	-- Cataclysmic Gladiator's Ornamented Chestguard
-						i( 73561),	-- Cataclysmic Gladiator's Bracers of Meditation
-						i( 73478),	-- Cataclysmic Gladiator's Plate Shoulders
-						i( 73563),	-- Cataclysmic Gladiator's Greaves of Meditation
-						i( 73564),	-- Cataclysmic Gladiator's Greaves of Alacrity
-						i( 73565),	-- Cataclysmic Gladiator's Clasp of Meditation
-						i( 73566),	-- Cataclysmic Gladiator's Clasp of Cruelty
-						i( 73567),	-- Cataclysmic Gladiator's Scaled Shoulders
-						i( 73568),	-- Cataclysmic Gladiator's Scaled Legguards
-						i( 73569),	-- Cataclysmic Gladiator's Scaled Helm
-						i( 73570),	-- Cataclysmic Gladiator's Scaled Gauntlets
-						i( 73571),	-- Cataclysmic Gladiator's Scaled Chestpiece
-						i( 73572),	-- Cataclysmic Gladiator's Silk Amice
-						i( 73573),	-- Cataclysmic Gladiator's Silk Robe
-						i( 73574),	-- Cataclysmic Gladiator's Silk Trousers
-						i( 73575),	-- Cataclysmic Gladiator's Silk Cowl
-						i( 73576),	-- Cataclysmic Gladiator's Silk Handguards
-						i( 73580),	-- Cataclysmic Gladiator's Chain Spaulders
-						i( 73581),	-- Cataclysmic Gladiator's Chain Leggings
-						i( 73582),	-- Cataclysmic Gladiator's Chain Helm
-						i( 73583),	-- Cataclysmic Gladiator's Chain Gauntlets
-						i( 73584),	-- Cataclysmic Gladiator's Chain Armor
-						i( 73585),	-- Cataclysmic Gladiator's Wristguards of Accuracy
-						i( 73586),	-- Cataclysmic Gladiator's Wristguards of Alacrity
-						i( 73587),	-- Cataclysmic Gladiator's Sabatons of Alacrity
-						i( 73588),	-- Cataclysmic Gladiator's Sabatons of Cruelty
-						i( 73589),	-- Cataclysmic Gladiator's Links of Accuracy
-						i( 73590),	-- Cataclysmic Gladiator's Links of Cruelty
-						i( 73595),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
-						i( 73596),	-- Cataclysmic Gladiator's Wyrmhide Robes
-						i( 73597),	-- Cataclysmic Gladiator's Wyrmhide Legguards
-						i( 73598),	-- Cataclysmic Gladiator's Wyrmhide Helm
-						i( 73599),	-- Cataclysmic Gladiator's Wyrmhide Gloves
-						i( 73600),	-- Cataclysmic Gladiator's Bindings of Prowess
-						i( 73601),	-- Cataclysmic Gladiator's Footguards of Alacrity
-						i( 73602),	-- Cataclysmic Gladiator's Belt of Cruelty
-						i( 73603),	-- Cataclysmic Gladiator's Kodohide Spaulders
-						i( 73604),	-- Cataclysmic Gladiator's Kodohide Robes
-						i( 73605),	-- Cataclysmic Gladiator's Kodohide Legguards
-						i( 73606),	-- Cataclysmic Gladiator's Kodohide Helm
-						i( 73607),	-- Cataclysmic Gladiator's Kodohide Gloves
-						i( 73608),	-- Cataclysmic Gladiator's Bindings of Meditation
-						i( 73609),	-- Cataclysmic Gladiator's Footguards of Meditation
-						i( 73610),	-- Cataclysmic Gladiator's Belt of Meditation
-						i( 73611),	-- Cataclysmic Gladiator's Dragonhide Spaulders
-						i( 73612),	-- Cataclysmic Gladiator's Dragonhide Robes
-						i( 73613),	-- Cataclysmic Gladiator's Dragonhide Legguards
-						i( 73614),	-- Cataclysmic Gladiator's Dragonhide Helm
-						i( 73615),	-- Cataclysmic Gladiator's Dragonhide Gloves
-						i( 73616),	-- Cataclysmic Gladiator's Dreadplate Shoulders
-						i( 73617),	-- Cataclysmic Gladiator's Dreadplate Legguards
-						i( 73618),	-- Cataclysmic Gladiator's Dreadplate Helm
-						i( 73619),	-- Cataclysmic Gladiator's Dreadplate Gauntlets
-						i( 73620),	-- Cataclysmic Gladiator's Dreadplate Chestpiece
-						i( 73628),	-- Cataclysmic Gladiator's Drape of Meditation
-						i( 73629),	-- Cataclysmic Gladiator's Drape of Diffusion
-						i( 73630),	-- Cataclysmic Gladiator's Drape of Prowess
-						i( 73631),	-- Cataclysmic Gladiator's Cuffs of Meditation
-						i( 73632),	-- Cataclysmic Gladiator's Cuffs of Prowess
-						i( 73633),	-- Cataclysmic Gladiator's Cuffs of Accuracy
-						i( 73634),	-- Cataclysmic Gladiator's Treads of Meditation
-						i( 73635),	-- Cataclysmic Gladiator's Treads of Alacrity
-						i( 73636),	-- Cataclysmic Gladiator's Treads of Cruelty
-						i( 73637),	-- Cataclysmic Gladiator's Cord of Meditation
-						i( 73638),	-- Cataclysmic Gladiator's Cord of Accuracy
-						i( 73639),	-- Cataclysmic Gladiator's Cord of Cruelty
-						i( 73646),	-- Cataclysmic Gladiator's Cape of Prowess
-						i( 73647),	-- Cataclysmic Gladiator's Cape of Cruelty
-						i( 88170),	-- Cataclysmic Gladiator's Ornamented Battlerobe
-						i( 73457),	-- Cataclysmic Gladiator's Energy Staff
-						i( 73458),	-- Cataclysmic Gladiator's Redoubt
-						i( 73459),	-- Cataclysmic Gladiator's Gavel
-						i( 73460),	-- Cataclysmic Gladiator's Rifle
-						i( 73461),	-- Cataclysmic Gladiator's Shiv
-						i( 73462),	-- Cataclysmic Gladiator's Staff
-						i( 73463),	-- Cataclysmic Gladiator's Heavy Crossbow
-						i( 73464),	-- Cataclysmic Gladiator's Touch of Defeat
-						i( 73465),	-- Cataclysmic Gladiator's Reprieve
-						i( 73466),	-- Cataclysmic Gladiator's Battle Staff
-						i( 73467),	-- Cataclysmic Gladiator's Spellblade
-						i( 73468),	-- Cataclysmic Gladiator's Barrier
-						i( 73469),	-- Cataclysmic Gladiator's Endgame
-						i( 73470),	-- Cataclysmic Gladiator's Longbow
-						i( 73472),	-- Cataclysmic Gladiator's Quickblade
-						i( 73473),	-- Cataclysmic Gladiator's Pummeler
-						i( 73447),	-- Cataclysmic Gladiator's Slicer
-						i( 73474),	-- Cataclysmic Gladiator's Cleaver
-						i( 73475),	-- Cataclysmic Gladiator's Greatsword
-						i( 73476),	-- Cataclysmic Gladiator's Bonegrinder
-						i( 73477),	-- Cataclysmic Gladiator's Decapitator
-						i( 73446),	-- Cataclysmic Gladiator's Shield Wall
-						i( 73448),	-- Cataclysmic Gladiator's Bonecracker
-						i( 73449),	-- Cataclysmic Gladiator's Hacker
-						i( 73450),	-- Cataclysmic Gladiator's Baton of Light
-						i( 73451),	-- Cataclysmic Gladiator's Slasher
-						i( 73452),	-- Cataclysmic Gladiator's Right Render
-						i( 73453),	-- Cataclysmic Gladiator's Fleshslicer
-						i( 73454),	-- Cataclysmic Gladiator's Ripper
-						i( 73455),	-- Cataclysmic Gladiator's Shanker
-						i( 73456),	-- Cataclysmic Gladiator's Pike
+						i(73562),	-- Cataclysmic Gladiator's Bracers of Prowess
+						i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
+						i(73479),	-- Cataclysmic Gladiator's Plate Legguards
+						i(73480),	-- Cataclysmic Gladiator's Plate Helm
+						i(73481),	-- Cataclysmic Gladiator's Plate Gauntlets
+						i(73482),	-- Cataclysmic Gladiator's Plate Chestpiece
+						i(73483),	-- Cataclysmic Gladiator's Felweave Amice
+						i(73484),	-- Cataclysmic Gladiator's Felweave Raiment
+						i(73485),	-- Cataclysmic Gladiator's Felweave Trousers
+						i(73486),	-- Cataclysmic Gladiator's Felweave Cowl
+						i(73487),	-- Cataclysmic Gladiator's Felweave Handguards
+						i(73494),	-- Cataclysmic Gladiator's Cloak of Prowess
+						i(73495),	-- Cataclysmic Gladiator's Cloak of Alacrity
+						i(73502),	-- Cataclysmic Gladiator's Mail Spaulders
+						i(73503),	-- Cataclysmic Gladiator's Mail Leggings
+						i(73504),	-- Cataclysmic Gladiator's Mail Helm
+						i(73505),	-- Cataclysmic Gladiator's Mail Gauntlets
+						i(73506),	-- Cataclysmic Gladiator's Mail Armor
+						i(73507),	-- Cataclysmic Gladiator's Waistguard of Cruelty
+						i(73508),	-- Cataclysmic Gladiator's Linked Spaulders
+						i(73509),	-- Cataclysmic Gladiator's Linked Leggings
+						i(73510),	-- Cataclysmic Gladiator's Linked Helm
+						i(73511),	-- Cataclysmic Gladiator's Linked Gauntlets
+						i(73512),	-- Cataclysmic Gladiator's Linked Armor
+						i(73513),	-- Cataclysmic Gladiator's Ringmail Spaulders
+						i(73514),	-- Cataclysmic Gladiator's Ringmail Leggings
+						i(73515),	-- Cataclysmic Gladiator's Ringmail Helm
+						i(73516),	-- Cataclysmic Gladiator's Ringmail Gauntlets
+						i(73517),	-- Cataclysmic Gladiator's Ringmail Armor
+						i(73518),	-- Cataclysmic Gladiator's Armbands of Meditation
+						i(73519),	-- Cataclysmic Gladiator's Armbands of Prowess
+						i(73520),	-- Cataclysmic Gladiator's Sabatons of Meditation
+						i(73521),	-- Cataclysmic Gladiator's Sabatons of Alacrity
+						i(73522),	-- Cataclysmic Gladiator's Waistguard of Meditation
+						i(73523),	-- Cataclysmic Gladiator's Leather Spaulders
+						i(73524),	-- Cataclysmic Gladiator's Leather Legguards
+						i(73525),	-- Cataclysmic Gladiator's Leather Helm
+						i(73526),	-- Cataclysmic Gladiator's Leather Gloves
+						i(73527),	-- Cataclysmic Gladiator's Leather Tunic
+						i(73528),	-- Cataclysmic Gladiator's Armwraps of Accuracy
+						i(73529),	-- Cataclysmic Gladiator's Armwraps of Alacrity
+						i(73530),	-- Cataclysmic Gladiator's Boots of Alacrity
+						i(73531),	-- Cataclysmic Gladiator's Boots of Cruelty
+						i(73532),	-- Cataclysmic Gladiator's Waistband of Accuracy
+						i(73533),	-- Cataclysmic Gladiator's Waistband of Cruelty
+						i(73540),	-- Cataclysmic Gladiator's Satin Mantle
+						i(73541),	-- Cataclysmic Gladiator's Satin Robe
+						i(73542),	-- Cataclysmic Gladiator's Satin Leggings
+						i(73543),	-- Cataclysmic Gladiator's Satin Hood
+						i(73544),	-- Cataclysmic Gladiator's Satin Gloves
+						i(73545),	-- Cataclysmic Gladiator's Mooncloth Mantle
+						i(73546),	-- Cataclysmic Gladiator's Mooncloth Robe
+						i(73547),	-- Cataclysmic Gladiator's Mooncloth Leggings
+						i(73548),	-- Cataclysmic Gladiator's Mooncloth Helm
+						i(73549),	-- Cataclysmic Gladiator's Mooncloth Gloves
+						i(73550),	-- Cataclysmic Gladiator's Armplates of Alacrity
+						i(73551),	-- Cataclysmic Gladiator's Armplates of Proficiency
+						i(73553),	-- Cataclysmic Gladiator's Warboots of Cruelty
+						i(73554),	-- Cataclysmic Gladiator's Girdle of Prowess
+						i(73555),	-- Cataclysmic Gladiator's Girdle of Cruelty
+						i(73556),	-- Cataclysmic Gladiator's Ornamented Spaulders
+						i(73557),	-- Cataclysmic Gladiator's Ornamented Legplates
+						i(73558),	-- Cataclysmic Gladiator's Ornamented Headcover
+						i(73559),	-- Cataclysmic Gladiator's Ornamented Gloves
+						i(73560),	-- Cataclysmic Gladiator's Ornamented Chestguard
+						i(73561),	-- Cataclysmic Gladiator's Bracers of Meditation
+						i(73478),	-- Cataclysmic Gladiator's Plate Shoulders
+						i(73563),	-- Cataclysmic Gladiator's Greaves of Meditation
+						i(73564),	-- Cataclysmic Gladiator's Greaves of Alacrity
+						i(73565),	-- Cataclysmic Gladiator's Clasp of Meditation
+						i(73566),	-- Cataclysmic Gladiator's Clasp of Cruelty
+						i(73567),	-- Cataclysmic Gladiator's Scaled Shoulders
+						i(73568),	-- Cataclysmic Gladiator's Scaled Legguards
+						i(73569),	-- Cataclysmic Gladiator's Scaled Helm
+						i(73570),	-- Cataclysmic Gladiator's Scaled Gauntlets
+						i(73571),	-- Cataclysmic Gladiator's Scaled Chestpiece
+						i(73572),	-- Cataclysmic Gladiator's Silk Amice
+						i(73573),	-- Cataclysmic Gladiator's Silk Robe
+						i(73574),	-- Cataclysmic Gladiator's Silk Trousers
+						i(73575),	-- Cataclysmic Gladiator's Silk Cowl
+						i(73576),	-- Cataclysmic Gladiator's Silk Handguards
+						i(73580),	-- Cataclysmic Gladiator's Chain Spaulders
+						i(73581),	-- Cataclysmic Gladiator's Chain Leggings
+						i(73582),	-- Cataclysmic Gladiator's Chain Helm
+						i(73583),	-- Cataclysmic Gladiator's Chain Gauntlets
+						i(73584),	-- Cataclysmic Gladiator's Chain Armor
+						i(73585),	-- Cataclysmic Gladiator's Wristguards of Accuracy
+						i(73586),	-- Cataclysmic Gladiator's Wristguards of Alacrity
+						i(73587),	-- Cataclysmic Gladiator's Sabatons of Alacrity
+						i(73588),	-- Cataclysmic Gladiator's Sabatons of Cruelty
+						i(73589),	-- Cataclysmic Gladiator's Links of Accuracy
+						i(73590),	-- Cataclysmic Gladiator's Links of Cruelty
+						i(73595),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
+						i(73596),	-- Cataclysmic Gladiator's Wyrmhide Robes
+						i(73597),	-- Cataclysmic Gladiator's Wyrmhide Legguards
+						i(73598),	-- Cataclysmic Gladiator's Wyrmhide Helm
+						i(73599),	-- Cataclysmic Gladiator's Wyrmhide Gloves
+						i(73600),	-- Cataclysmic Gladiator's Bindings of Prowess
+						i(73601),	-- Cataclysmic Gladiator's Footguards of Alacrity
+						i(73602),	-- Cataclysmic Gladiator's Belt of Cruelty
+						i(73603),	-- Cataclysmic Gladiator's Kodohide Spaulders
+						i(73604),	-- Cataclysmic Gladiator's Kodohide Robes
+						i(73605),	-- Cataclysmic Gladiator's Kodohide Legguards
+						i(73606),	-- Cataclysmic Gladiator's Kodohide Helm
+						i(73607),	-- Cataclysmic Gladiator's Kodohide Gloves
+						i(73608),	-- Cataclysmic Gladiator's Bindings of Meditation
+						i(73609),	-- Cataclysmic Gladiator's Footguards of Meditation
+						i(73610),	-- Cataclysmic Gladiator's Belt of Meditation
+						i(73611),	-- Cataclysmic Gladiator's Dragonhide Spaulders
+						i(73612),	-- Cataclysmic Gladiator's Dragonhide Robes
+						i(73613),	-- Cataclysmic Gladiator's Dragonhide Legguards
+						i(73614),	-- Cataclysmic Gladiator's Dragonhide Helm
+						i(73615),	-- Cataclysmic Gladiator's Dragonhide Gloves
+						i(73616),	-- Cataclysmic Gladiator's Dreadplate Shoulders
+						i(73617),	-- Cataclysmic Gladiator's Dreadplate Legguards
+						i(73618),	-- Cataclysmic Gladiator's Dreadplate Helm
+						i(73619),	-- Cataclysmic Gladiator's Dreadplate Gauntlets
+						i(73620),	-- Cataclysmic Gladiator's Dreadplate Chestpiece
+						i(73628),	-- Cataclysmic Gladiator's Drape of Meditation
+						i(73629),	-- Cataclysmic Gladiator's Drape of Diffusion
+						i(73630),	-- Cataclysmic Gladiator's Drape of Prowess
+						i(73631),	-- Cataclysmic Gladiator's Cuffs of Meditation
+						i(73632),	-- Cataclysmic Gladiator's Cuffs of Prowess
+						i(73633),	-- Cataclysmic Gladiator's Cuffs of Accuracy
+						i(73634),	-- Cataclysmic Gladiator's Treads of Meditation
+						i(73635),	-- Cataclysmic Gladiator's Treads of Alacrity
+						i(73636),	-- Cataclysmic Gladiator's Treads of Cruelty
+						i(73637),	-- Cataclysmic Gladiator's Cord of Meditation
+						i(73638),	-- Cataclysmic Gladiator's Cord of Accuracy
+						i(73639),	-- Cataclysmic Gladiator's Cord of Cruelty
+						i(73646),	-- Cataclysmic Gladiator's Cape of Prowess
+						i(73647),	-- Cataclysmic Gladiator's Cape of Cruelty
+						i(88170),	-- Cataclysmic Gladiator's Ornamented Battlerobe
+						i(73457),	-- Cataclysmic Gladiator's Energy Staff
+						i(73458),	-- Cataclysmic Gladiator's Redoubt
+						i(73459),	-- Cataclysmic Gladiator's Gavel
+						i(73460),	-- Cataclysmic Gladiator's Rifle
+						i(73461),	-- Cataclysmic Gladiator's Shiv
+						i(73462),	-- Cataclysmic Gladiator's Staff
+						i(73463),	-- Cataclysmic Gladiator's Heavy Crossbow
+						i(73464),	-- Cataclysmic Gladiator's Touch of Defeat
+						i(73465),	-- Cataclysmic Gladiator's Reprieve
+						i(73466),	-- Cataclysmic Gladiator's Battle Staff
+						i(73467),	-- Cataclysmic Gladiator's Spellblade
+						i(73468),	-- Cataclysmic Gladiator's Barrier
+						i(73469),	-- Cataclysmic Gladiator's Endgame
+						i(73470),	-- Cataclysmic Gladiator's Longbow
+						i(73472),	-- Cataclysmic Gladiator's Quickblade
+						i(73473),	-- Cataclysmic Gladiator's Pummeler
+						i(73447),	-- Cataclysmic Gladiator's Slicer
+						i(73474),	-- Cataclysmic Gladiator's Cleaver
+						i(73475),	-- Cataclysmic Gladiator's Greatsword
+						i(73476),	-- Cataclysmic Gladiator's Bonegrinder
+						i(73477),	-- Cataclysmic Gladiator's Decapitator
+						i(73446),	-- Cataclysmic Gladiator's Shield Wall
+						i(73448),	-- Cataclysmic Gladiator's Bonecracker
+						i(73449),	-- Cataclysmic Gladiator's Hacker
+						i(73450),	-- Cataclysmic Gladiator's Baton of Light
+						i(73451),	-- Cataclysmic Gladiator's Slasher
+						i(73452),	-- Cataclysmic Gladiator's Right Render
+						i(73453),	-- Cataclysmic Gladiator's Fleshslicer
+						i(73454),	-- Cataclysmic Gladiator's Ripper
+						i(73455),	-- Cataclysmic Gladiator's Shanker
+						i(73456),	-- Cataclysmic Gladiator's Pike
 					}),
 					n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
 						i(64908),	-- Shroud of Orgrimmar

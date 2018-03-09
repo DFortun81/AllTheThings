@@ -95,9 +95,9 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q( 10197),	-- A Convincing Disguise
-					q( 10380),	-- A Dark Pact
-					q( 10202),	-- A Defector
+					q(10197),	-- A Convincing Disguise
+					q(10380),	-- A Dark Pact
+					q(10202),	-- A Defector
 --]]					
 					q(10185,  {  -- A Fate Worse Than Death
 						i(29955),
@@ -106,18 +106,18 @@ _.Zones =
 						i(29959),
 					}),
 --[[					
-					q( 10508),	-- A Gift for Voren'thal
-					q( 10262),	-- A Heap of Ethereals
-					q( 10314),	-- A Lingering Suspicion
-					q( 10970),	-- A Mission of Mercy
+					q(10508),	-- A Gift for Voren'thal
+					q(10262),	-- A Heap of Ethereals
+					q(10314),	-- A Lingering Suspicion
+					q(10970),	-- A Mission of Mercy
 					qa( 11042),	-- A Mystifying Vision
-					q( 10270),	-- A Not-So-Modest Proposal
-					q( 10272),	-- A Promising Start
+					q(10270),	-- A Not-So-Modest Proposal
+					q(10272),	-- A Promising Start
 					qh( 29400),	-- A Season for Celebration
 					qa( 29074),	-- A Season for Celebration
 					qh( 11037),	-- A Strange Vision
-					q( 10973),	-- A Thousand Worlds
-					q( 10305),	-- Abjurist Belmara
+					q(10973),	-- A Thousand Worlds
+					q(10305),	-- Abjurist Belmara
 --]]					
 					q(10381,  {  -- Aldor No More
 						i(30382),
@@ -126,9 +126,9 @@ _.Zones =
 						i(30380),
 					}),
 --[[					
-					q( 10436),	-- All Clear!
-					q( 10268),	-- An Audience with the Prince
-					q( 10308),	-- Another Heap of Ethereals
+					q(10436),	-- All Clear!
+					q(10268),	-- An Audience with the Prince
+					q(10308),	-- Another Heap of Ethereals
 --]]					
 					q(10176,  {  -- Ar'kelos the Guardian
 						i(29777),
@@ -141,11 +141,11 @@ _.Zones =
 						i(30517),
 					}),
 --[[					
-					q( 11038),	-- Assist Exarch Orelis
-					q( 10263),	-- Assisting the Consortium
-					q( 10264),	-- Assisting the Consortium
-					q( 10246),	-- Attack on Manaforge Coruu
-					q( 10245),	-- B'naar Console Transcription
+					q(11038),	-- Assist Exarch Orelis
+					q(10263),	-- Assisting the Consortium
+					q(10264),	-- Assisting the Consortium
+					q(10246),	-- Attack on Manaforge Coruu
+					q(10245),	-- B'naar Console Transcription
 --]]					
 					q(10249,  {  -- Back to the Chief!
 						i(30019),
@@ -154,11 +154,11 @@ _.Zones =
 						i(134021),  -- TOY!
 					}),
 --[[					
-					q( 10182),	-- Battle-Mage Dathric
-					q( 10652),	-- Behind Enemy Lines
-					q( 10204),	-- Bloodgem Crystals
-					q( 10924),	-- Bloody Imp-ossible!
-					q( 10509),	-- Bound for Glory
+					q(10182),	-- Battle-Mage Dathric
+					q(10652),	-- Behind Enemy Lines
+					q(10204),	-- Bloodgem Crystals
+					q(10924),	-- Bloody Imp-ossible!
+					q(10509),	-- Bound for Glory
 --]]					
 					q(10701,  {  -- Breaking Down Netherock
 						i(31314),
@@ -174,21 +174,21 @@ _.Zones =
 						i(30398),
 					}),
 --[[					
-					q( 12407),	-- Candy Bucket
-					q( 12408),	-- Candy Bucket
-					q( 10422),	-- Captain Tyralius
-					q( 10257),	-- Capturing the Keystone
-					q( 10319),	-- Capturing the Phylactery
-					q( 10307),	-- Cohlien Frostweaver
-					q( 10306),	-- Conjurer Luminrath
-					q( 10265),	-- Consortium Crystal Collection
+					q(12407),	-- Candy Bucket
+					q(12408),	-- Candy Bucket
+					q(10422),	-- Captain Tyralius
+					q(10257),	-- Capturing the Keystone
+					q(10319),	-- Capturing the Phylactery
+					q(10307),	-- Cohlien Frostweaver
+					q(10306),	-- Conjurer Luminrath
+					q(10265),	-- Consortium Crystal Collection
 					qa( 11356),	-- Costumed Orphan Matron
-					q( 10427),	-- Creatures of the Eco-Domes
-					q( 11481),	-- Crisis at the Sunwell
-					q( 10174),	-- Curse of the Violet Tower
-					q( 10432),	-- Damning Evidence
-					q( 10418),	-- Deal With the Saboteurs
-					q( 10317),	-- Dealing with the Foreman
+					q(10427),	-- Creatures of the Eco-Domes
+					q(11481),	-- Crisis at the Sunwell
+					q(10174),	-- Curse of the Violet Tower
+					q(10432),	-- Damning Evidence
+					q(10418),	-- Deal With the Saboteurs
+					q(10317),	-- Dealing with the Foreman
 --]]					
 					q(10318,  {  -- Dealing with the Overmaster
 						i(30003),
@@ -230,15 +230,15 @@ _.Zones =
 						i(29782),
 						i(29783),
 					}),
---					q( 10424),	-- Diagnosis: Critical
+--					q(10424),	-- Diagnosis: Critical
 					q(10439,  {  -- Dimensuis the All-Devouring
 						i(30297),
 						i(30299),
 						i(30298),
 					}),
 --[[					
-					q( 10241),	-- Distraction at Manaforge B'naar
-					q( 10247),	-- Doctor Vomisa, Ph.T.
+					q(10241),	-- Distraction at Manaforge B'naar
+					q(10247),	-- Doctor Vomisa, Ph.T.
 --]]
 					q(10223,  {  -- Down With Daellis
 						i(29792),
@@ -251,8 +251,8 @@ _.Zones =
 						i(30514),
 					}),
 --[[					
-					q( 10311),	-- Drijya Needs Your Help
-					q( 10411),	-- Electro-Shock Goodness!
+					q(10311),	-- Drijya Needs Your Help
+					q(10411),	-- Electro-Shock Goodness!
 --]]
 					q(10226,  {  -- Elemental Power Extraction
 						i(30264),
@@ -267,19 +267,19 @@ _.Zones =
 						i(30334),
 					}),
 --[[					
-					q( 10224),	-- Essence for the Engines
-					q( 10384),	-- Ethereum Data
-					q( 10972),	-- Ethereum Prisoner I.D. Catalogue
-					q( 10971),	-- Ethereum Secrets
-					q( 10855),	-- Fel Reavers, No Thanks!
-					q( 10256),	-- Finding the Keymaster
-					q( 10426),	-- Flora of the Eco-Domes
-					q( 10281),	-- Formal Introductions
-					q( 10276),	-- Full Triangle
-					q( 10271),	-- Getting Down to Business
-					q( 10333),	-- Help Mama Wheeler
+					q(10224),	-- Essence for the Engines
+					q(10384),	-- Ethereum Data
+					q(10972),	-- Ethereum Prisoner I.D. Catalogue
+					q(10971),	-- Ethereum Secrets
+					q(10855),	-- Fel Reavers, No Thanks!
+					q(10256),	-- Finding the Keymaster
+					q(10426),	-- Flora of the Eco-Domes
+					q(10281),	-- Formal Introductions
+					q(10276),	-- Full Triangle
+					q(10271),	-- Getting Down to Business
+					q(10333),	-- Help Mama Wheeler
 					qa( 39202),	-- Hero's Call: Netherstorm
-					q( 10193),	-- High Value Targets
+					q(10193),	-- High Value Targets
 --]]					
 					q(10293,  {  -- Hitting the Motherlode
 						i(29813),
@@ -287,9 +287,9 @@ _.Zones =
 --[[					
 					qa( 11830),	-- Honor the Flame
 					qh( 11835),	-- Honor the Flame
-					q( 10232),	-- In A Scrap With The Legion
-					q( 10290),	-- In Search of Farahlite
-					q( 10331),	-- Indispensable Tools
+					q(10232),	-- In A Scrap With The Legion
+					q(10290),	-- In Search of Farahlite
+					q(10331),	-- Indispensable Tools
 --]]					
 					q(10198,  {  -- Information Gathering - Scryer
 						i(30397),
@@ -298,15 +298,15 @@ _.Zones =
 						i(30386),
 					}),
 --[[					
-					q( 10203),	-- Invaluable Asset Zapping
-					q( 10410),	-- Ishanah's Help
+					q(10203),	-- Invaluable Asset Zapping
+					q(10410),	-- Ishanah's Help
 --]]					
 					q(10309,  {  -- It's a Fel Reaver, But with Heart
 						i(30268),
 						i(30270),
 						i(30269),
 					}),
---					q( 10433),	-- Keeping Up Appearances					
+--					q(10433),	-- Keeping Up Appearances					
 					q(10341,  {  -- Kick Them While They're Down - Scryer
 						i(30395),
 						i(30394),
@@ -314,17 +314,17 @@ _.Zones =
 						i(30522),
 					}),
 --[[					
-					q( 10192),	-- Krasus's Compendium
-					q( 10184),	-- Malevolent Remnants
-					q( 10189),	-- Manaforge B'naar
+					q(10192),	-- Krasus's Compendium
+					q(10184),	-- Malevolent Remnants
+					q(10189),	-- Manaforge B'naar
 --]]					
 					q(10191,  {  -- Mark V is Alive!
 						i(30226),
 						i(30252),
 					}),
 --[[					
-					q( 10325),	-- Marks of Kil'jaeden
-					q( 10653),	-- Marks of Sargeras
+					q(10325),	-- Marks of Kil'jaeden
+					q(10653),	-- Marks of Sargeras
 					qh( 11357),	-- Masked Orphan Matron
 --]]					
 					q(10332,  {  -- Master Smith Rhonsus
@@ -340,13 +340,13 @@ _.Zones =
 						i(30521),
 					}),
 --[[					
-					q( 10326),	-- More Marks of Kil'jaeden
-					q( 10654),	-- More Marks of Sargeras
-					q( 10243),	-- Naaru Technology
-					q( 10334),	-- Needs More Cowbell
-					q( 10850),	-- Nether Gas In a Fel Fire Engine
-					q( 10315),	-- Neutralizing the Nethermancers
-					q( 10348),	-- New Opportunities
+					q(10326),	-- More Marks of Kil'jaeden
+					q(10654),	-- More Marks of Sargeras
+					q(10243),	-- Naaru Technology
+					q(10334),	-- Needs More Cowbell
+					q(10850),	-- Nether Gas In a Fel Fire Engine
+					q(10315),	-- Neutralizing the Nethermancers
+					q(10348),	-- New Opportunities
 --]]					
 					q(10408,  {  -- Nexus-King Salhadaar
 						i(30011),
@@ -356,11 +356,11 @@ _.Zones =
 						i(30009),
 					}),
 --[[					
-					q( 10183),	-- Off To Area 52
-					q( 10438),	-- On Nethery Wings
-					q( 10234),	-- One Demon's Trash...
+					q(10183),	-- Off To Area 52
+					q(10438),	-- On Nethery Wings
+					q(10234),	-- One Demon's Trash...
 					qh( 11036),	-- Out of This World Produce!
-					q( 10431),	-- Outside Assistance
+					q(10431),	-- Outside Assistance
 					qa( 11040),	-- Parts for the Rocket-Chief
 --]]					
 					q(10206,  {  -- Pick Your Part
@@ -371,14 +371,14 @@ _.Zones =
 					qa( 14022),	-- Pilgrim's Bounty
 					qh( 14036),	-- Pilgrim's Bounty
 					qa( 11882),	-- Playing with Fire
-					q( 10239),	-- Potential Energy Source
-					q( 10385),	-- Potential for Brain Damage = High
-					q( 10300),	-- Rebuilding the Staff
-					q( 10190),	-- Recharging the Batteries
-					q( 10437),	-- Recipe for Destruction
-					q( 10225),	-- Report to Engineering
-					q( 11039),	-- Report to Spymaster Thalodien
-					q( 10266),	-- Request for Assistance
+					q(10239),	-- Potential Energy Source
+					q(10385),	-- Potential for Brain Damage = High
+					q(10300),	-- Rebuilding the Staff
+					q(10190),	-- Recharging the Batteries
+					q(10437),	-- Recipe for Destruction
+					q(10225),	-- Report to Engineering
+					q(11039),	-- Report to Spymaster Thalodien
+					q(10266),	-- Request for Assistance
 --]]					
 					q(10435,  {  -- Retrieving the Goods
 						i(30284),
@@ -386,22 +386,22 @@ _.Zones =
 						i(30285),
 						i(30286),
 					}),
---					q( 10200),	-- Return to Thalodien
+--					q(10200),	-- Return to Thalodien
 					q(10267,  {  -- Rightful Repossession
 						i(30273),
 						i(30272),
 						i(30271),
 					}),
 --[[					
-					q( 10417),	-- Run a Diagnostic!
-					q( 10405),	-- S-A-B-O-T-A-G-E
+					q(10417),	-- Run a Diagnostic!
+					q(10405),	-- S-A-B-O-T-A-G-E
 --]]					
 					q(10310,  {  -- Sabotage the Warp-Gate!
 						i(29978),
 						i(29980),
 						i(29979),
 					}),
---					q( 10316),	-- Searching for Evidence
+--					q(10316),	-- Searching for Evidence
 					q(10274,  {  -- Securing the Celestial Ridge
 						i(29808),
 						i(29810),
@@ -409,22 +409,22 @@ _.Zones =
 						i(29812),
 					}),
 --[[					
-					q( 10342),	-- Securing the Shaleskin Shale
-					q( 10969),	-- Seek Out Ameer
-					q( 10323),	-- Shutting Down Manaforge Ara
-					q( 10365),	-- Shutting Down Manaforge Ara
-					q( 10329),	-- Shutting Down Manaforge B'naar
-					q( 10299),	-- Shutting Down Manaforge B'naar
-					q( 10321),	-- Shutting Down Manaforge Coruu
-					q( 10330),	-- Shutting Down Manaforge Coruu
-					q( 10322),	-- Shutting Down Manaforge Duro
-					q( 10338),	-- Shutting Down Manaforge Duro
-					q( 10327),	-- Single Mark of Kil'jaeden
-					q( 10655),	-- Single Mark of Sargeras
-					q( 10407),	-- Socrethar's Shadow
-					q( 10280),	-- Special Delivery to Shattrath City
-					q( 10974),	-- Stasis Chambers of Bash'ir
-					q( 10194),	-- Stealth Flight
+					q(10342),	-- Securing the Shaleskin Shale
+					q(10969),	-- Seek Out Ameer
+					q(10323),	-- Shutting Down Manaforge Ara
+					q(10365),	-- Shutting Down Manaforge Ara
+					q(10329),	-- Shutting Down Manaforge B'naar
+					q(10299),	-- Shutting Down Manaforge B'naar
+					q(10321),	-- Shutting Down Manaforge Coruu
+					q(10330),	-- Shutting Down Manaforge Coruu
+					q(10322),	-- Shutting Down Manaforge Duro
+					q(10338),	-- Shutting Down Manaforge Duro
+					q(10327),	-- Single Mark of Kil'jaeden
+					q(10655),	-- Single Mark of Sargeras
+					q(10407),	-- Socrethar's Shadow
+					q(10280),	-- Special Delivery to Shattrath City
+					q(10974),	-- Stasis Chambers of Bash'ir
+					q(10194),	-- Stealth Flight
 --]]					
 					q(10440,  {  -- Success!
 						i(30290),
@@ -432,9 +432,9 @@ _.Zones =
 						i(30520),
 					}),
 --[[					
-					q( 10209),	-- Summoner Kanthin's Prize
-					q( 11877),	-- Sunfury Attack Plans
-					q( 10328),	-- Sunfury Briefings
+					q(10209),	-- Summoner Kanthin's Prize
+					q(11877),	-- Sunfury Attack Plans
+					q(10328),	-- Sunfury Briefings
 --]]					
 					q(10335,  {  -- Surveying the Ruins
 						i(30255),
@@ -447,7 +447,7 @@ _.Zones =
 						i(31703),
 						i(31699),
 					}),
---					q( 10430),	-- Testing the Prototype
+--					q(10430),	-- Testing the Prototype
 					q(10199,  {  -- That Little Extra Kick
 						i(29999),
 						i(30002),
@@ -455,11 +455,11 @@ _.Zones =
 						i(30000),
 					}),
 --[[					
-					q( 10312),	-- The Annals of Kirin'Var
-					q( 10173),	-- The Archmage's Staff
-					q( 10856),	-- The Best Defense
-					q( 10434),	-- The Dynamic Duo
-					q( 10339),	-- The Ethereum
+					q(10312),	-- The Annals of Kirin'Var
+					q(10173),	-- The Archmage's Staff
+					q(10856),	-- The Best Defense
+					q(10434),	-- The Dynamic Duo
+					q(10339),	-- The Ethereum
 --]]					
 					q(10345,  {  -- The Flesh Lies...
 						i(30352),
@@ -472,7 +472,7 @@ _.Zones =
 					}),
 --[[					
 					qa( 11970),	-- The Master of Summer Lore
-					q( 10336),	-- The Minions of Culuthas
+					q(10336),	-- The Minions of Culuthas
 --]]					
 					q(10188,  {  -- The Sigil of Krasus
 						i(29771),
@@ -482,13 +482,13 @@ _.Zones =
 					}),
 --[[					
 					qh( 11971),	-- The Spinner of Summer Tales
-					q( 10222),	-- The Sunfury Garrison
-					q( 10343),	-- The Unending Invasion
-					q( 10423),	-- To the Stormspire
-					q( 10233),	-- Torching Sunfury Hold
-					q( 10269),	-- Triangulation Point One
-					q( 10275),	-- Triangulation Point Two
-					q( 10273),	-- Troublesome Distractions
+					q(10222),	-- The Sunfury Garrison
+					q(10343),	-- The Unending Invasion
+					q(10423),	-- To the Stormspire
+					q(10233),	-- Torching Sunfury Hold
+					q(10269),	-- Triangulation Point One
+					q(10275),	-- Triangulation Point Two
+					q(10273),	-- Troublesome Distractions
 --]]					
 					q(10507,  {  -- Turning Point - Scryer
 						i(30375),
@@ -497,7 +497,7 @@ _.Zones =
 						i(30374),
 						i(30859),
 					}),
---					q( 10301),	-- Unlocking the Compendium
+--					q(10301),	-- Unlocking the Compendium
 					q(10261,  {  -- Wanted: Annihilator Servo!
 						i(30295),
 						i(30296),
@@ -505,14 +505,14 @@ _.Zones =
 					}),
 --[[					
 					qh( 39201),	-- Warchief's Command: Netherstorm
-					q( 10237),	-- Warn Area 52!
+					q(10237),	-- Warn Area 52!
 --]]					
 					q(10205,  {  -- Warp-Raider Nesaad
 						i(30266),
 						i(30265),
 						i(30267),
 					}),
---					q( 10429),	-- When Nature Goes Too Far
+--					q(10429),	-- When Nature Goes Too Far
 					q(10337,  {  -- When the Cows Come Home
 						i(29804),
 						i(29806),
@@ -520,7 +520,7 @@ _.Zones =
 						i(30400),
 						i(30523),
 					}),
---					q( 10248),	-- You, Robot
+--					q(10248),	-- You, Robot
 					q(10186,  {  -- You're Hired!
 						i(30225),
 						i(30224),
@@ -630,182 +630,182 @@ _.Zones =
 								i(35110),	-- Brutal Gladiator's Waraxe
 							},
 						}),
-						i( 35077),	-- Brutal Gladiator's Ringmail Armor
-						i( 35085),	-- Brutal Gladiator's Satin Leggings
-						i( 34991),	-- Brutal Gladiator's Chain Gauntlets
-						i( 34992),	-- Brutal Gladiator's Chain Helm
-						i( 34993),	-- Brutal Gladiator's Chain Leggings
-						i( 34994),	-- Brutal Gladiator's Chain Spaulders
-						i( 34998),	-- Brutal Gladiator's Dragonhide Gloves
-						i( 34999),	-- Brutal Gladiator's Dragonhide Helm
-						i( 35000),	-- Brutal Gladiator's Dragonhide Legguards
-						i( 35001),	-- Brutal Gladiator's Dragonhide Spaulders
-						i( 35002),	-- Brutal Gladiator's Dragonhide Tunic
-						i( 35003),	-- Brutal Gladiator's Dreadweave Gloves
-						i( 35004),	-- Brutal Gladiator's Dreadweave Hood
-						i( 35005),	-- Brutal Gladiator's Dreadweave Leggings
-						i( 35006),	-- Brutal Gladiator's Dreadweave Mantle
-						i( 35007),	-- Brutal Gladiator's Dreadweave Robe
-						i( 35008),	-- Brutal Gladiator's Endgame
-						i( 35009),	-- Brutal Gladiator's Felweave Amice
-						i( 35010),	-- Brutal Gladiator's Felweave Cowl
-						i( 35011),	-- Brutal Gladiator's Felweave Handguards
-						i( 35012),	-- Brutal Gladiator's Felweave Raiment
-						i( 35013),	-- Brutal Gladiator's Felweave Trousers
-						i( 35016),	-- Brutal Gladiator's Grimoire
-						i( 35022),	-- Brutal Gladiator's Kodohide Gloves
-						i( 35023),	-- Brutal Gladiator's Kodohide Helm
-						i( 35024),	-- Brutal Gladiator's Kodohide Legguards
-						i( 35025),	-- Brutal Gladiator's Kodohide Spaulders
-						i( 35026),	-- Brutal Gladiator's Kodohide Tunic
-						i( 35027),	-- Brutal Gladiator's Lamellar Chestpiece
-						i( 35028),	-- Brutal Gladiator's Lamellar Gauntlets
-						i( 35029),	-- Brutal Gladiator's Lamellar Helm
-						i( 35030),	-- Brutal Gladiator's Lamellar Legguards
-						i( 35031),	-- Brutal Gladiator's Lamellar Shoulders
-						i( 35032),	-- Brutal Gladiator's Leather Gloves
-						i( 35033),	-- Brutal Gladiator's Leather Helm
-						i( 35034),	-- Brutal Gladiator's Leather Legguards
-						i( 35035),	-- Brutal Gladiator's Leather Spaulders
-						i( 35036),	-- Brutal Gladiator's Leather Tunic
-						i( 35042),	-- Brutal Gladiator's Linked Armor
-						i( 35043),	-- Brutal Gladiator's Linked Gauntlets
-						i( 35044),	-- Brutal Gladiator's Linked Helm
-						i( 35045),	-- Brutal Gladiator's Linked Leggings
-						i( 35046),	-- Brutal Gladiator's Linked Spaulders
-						i( 35048),	-- Brutal Gladiator's Mail Armor
-						i( 35049),	-- Brutal Gladiator's Mail Gauntlets
-						i( 35050),	-- Brutal Gladiator's Mail Helm
-						i( 35051),	-- Brutal Gladiator's Mail Leggings
-						i( 35052),	-- Brutal Gladiator's Mail Spaulders
-						i( 35053),	-- Brutal Gladiator's Mooncloth Gloves
-						i( 35054),	-- Brutal Gladiator's Mooncloth Hood
-						i( 35055),	-- Brutal Gladiator's Mooncloth Leggings
-						i( 35056),	-- Brutal Gladiator's Mooncloth Mantle
-						i( 35057),	-- Brutal Gladiator's Mooncloth Robe
-						i( 35059),	-- Brutal Gladiator's Ornamented Chestguard
-						i( 35060),	-- Brutal Gladiator's Ornamented Gloves
-						i( 35061),	-- Brutal Gladiator's Ornamented Headcover
-						i( 35062),	-- Brutal Gladiator's Ornamented Legplates
-						i( 35063),	-- Brutal Gladiator's Ornamented Spaulders
-						i( 35066),	-- Brutal Gladiator's Plate Chestpiece
-						i( 35067),	-- Brutal Gladiator's Plate Gauntlets
-						i( 35068),	-- Brutal Gladiator's Plate Helm
-						i( 35069),	-- Brutal Gladiator's Plate Legguards
-						i( 35070),	-- Brutal Gladiator's Plate Shoulders
-						i( 35073),	-- Brutal Gladiator's Redoubt
-						i( 35074),	-- Brutal Gladiator's Reprieve
-						i( 34990),	-- Brutal Gladiator's Chain Armor
-						i( 35078),	-- Brutal Gladiator's Ringmail Gauntlets
-						i( 35079),	-- Brutal Gladiator's Ringmail Helm
-						i( 35080),	-- Brutal Gladiator's Ringmail Leggings
-						i( 35081),	-- Brutal Gladiator's Ringmail Spaulders
-						i( 35083),	-- Brutal Gladiator's Satin Gloves
-						i( 35084),	-- Brutal Gladiator's Satin Hood
-						i( 34986),	-- Brutal Gladiator's Barrier
-						i( 35086),	-- Brutal Gladiator's Satin Mantle
-						i( 35087),	-- Brutal Gladiator's Satin Robe
-						i( 35088),	-- Brutal Gladiator's Scaled Chestpiece
-						i( 35089),	-- Brutal Gladiator's Scaled Gauntlets
-						i( 35090),	-- Brutal Gladiator's Scaled Helm
-						i( 35091),	-- Brutal Gladiator's Scaled Legguards
-						i( 35092),	-- Brutal Gladiator's Scaled Shoulders
-						i( 35094),	-- Brutal Gladiator's Shield Wall
-						i( 35096),	-- Brutal Gladiator's Silk Amice
-						i( 35097),	-- Brutal Gladiator's Silk Cowl
-						i( 35098),	-- Brutal Gladiator's Silk Handguards
-						i( 35099),	-- Brutal Gladiator's Silk Raiment
-						i( 35100),	-- Brutal Gladiator's Silk Trousers
-						i( 35111),	-- Brutal Gladiator's Wyrmhide Gloves
-						i( 35112),	-- Brutal Gladiator's Wyrmhide Helm
-						i( 35113),	-- Brutal Gladiator's Wyrmhide Legguards
-						i( 35114),	-- Brutal Gladiator's Wyrmhide Spaulders
-						i( 35115),	-- Brutal Gladiator's Wyrmhide Tunic
-						i( 35136),	-- Guardian's Chain Sabatons
-						i( 35137),	-- Guardian's Dragonhide Boots
-						i( 35138),	-- Guardian's Dreadweave Stalkers
-						i( 35139),	-- Guardian's Kodohide Boots
-						i( 35140),	-- Guardian's Lamellar Greaves
-						i( 35141),	-- Guardian's Leather Boots
-						i( 35142),	-- Guardian's Linked Sabatons
-						i( 35143),	-- Guardian's Mail Sabatons
-						i( 35144),	-- Guardian's Mooncloth Slippers
-						i( 35145),	-- Guardian's Ornamented Greaves
-						i( 35146),	-- Guardian's Plate Greaves
-						i( 35147),	-- Guardian's Ringmail Sabatons
-						i( 35148),	-- Guardian's Scaled Greaves
-						i( 35149),	-- Guardian's Silk Footguards
-						i( 35150),	-- Guardian's Wyrmhide Boots
-						i( 35151),	-- Guardian's Chain Girdle
-						i( 35152),	-- Guardian's Dragonhide Belt
-						i( 35153),	-- Guardian's Dreadweave Belt
-						i( 35154),	-- Guardian's Kodohide Belt
-						i( 35155),	-- Guardian's Lamellar Belt
-						i( 35156),	-- Guardian's Leather Belt
-						i( 35157),	-- Guardian's Linked Girdle
-						i( 35158),	-- Guardian's Mail Girdle
-						i( 35159),	-- Guardian's Mooncloth Belt
-						i( 35160),	-- Guardian's Ornamented Belt
-						i( 35161),	-- Guardian's Plate Belt
-						i( 35162),	-- Guardian's Ringmail Girdle
-						i( 35163),	-- Guardian's Scaled Belt
-						i( 35164),	-- Guardian's Silk Belt
-						i( 35165),	-- Guardian's Wyrmhide Belt
-						i( 40440),	-- Brutal Gladiator's Dreadplate Chestpiece
-						i( 40441),	-- Brutal Gladiator's Dreadplate Gauntlets
-						i( 40442),	-- Brutal Gladiator's Dreadplate Helm
-						i( 40443),	-- Brutal Gladiator's Dreadplate Legguards
-						i( 40444),	-- Brutal Gladiator's Dreadplate Shoulders
-						i( 41591),	-- Sergeant's Reinforced Cape
-						i( 41592),	-- The Gladiator's Resolution
-						i( 44429),	-- Volanthius Shroud
-						i( 44431),	-- Cloak of Certain Reprieve
-						i( 34996),	-- Brutal Gladiator's Cleaver
-						i( 34997),	-- Brutal Gladiator's Decapitator
-						i( 35093),	-- Brutal Gladiator's Shanker
-						i( 35071),	-- Brutal Gladiator's Pummeler
-						i( 35095),	-- Brutal Gladiator's Shiv
-						i( 35072),	-- Brutal Gladiator's Quickblade
-						i( 35037),	-- Brutal Gladiator's Slasher
-						i( 35038),	-- Brutal Gladiator's Fleshslicer
-						i( 35075),	-- Brutal Gladiator's Rifle
-						i( 35076),	-- Brutal Gladiator's Ripper
-						i( 35101),	-- Brutal Gladiator's Slicer
-						i( 35102),	-- Brutal Gladiator's Spellblade
-						i( 35103),	-- Brutal Gladiator's Staff
-						i( 35107),	-- Brutal Gladiator's Touch of Defeat
-						i( 35109),	-- Brutal Gladiator's War Staff
-						i( 35110),	-- Brutal Gladiator's Waraxe
-						i( 34987),	-- Brutal Gladiator's Battle Staff
-						i( 34988),	-- Brutal Gladiator's Bonecracker
-						i( 35058),	-- Brutal Gladiator's Mutilator
-						i( 35014),	-- Brutal Gladiator's Gavel
-						i( 35015),	-- Brutal Gladiator's Greatsword
-						i( 35166),	-- Guardian's Chain Bracers
-						i( 35167),	-- Guardian's Dragonhide Bracers
-						i( 35168),	-- Guardian's Dreadweave Cuffs
-						i( 35169),	-- Guardian's Kodohide Bracers
-						i( 35170),	-- Guardian's Lamellar Bracers
-						i( 35171),	-- Guardian's Leather Bracers
-						i( 35172),	-- Guardian's Linked Bracers
-						i( 35173),	-- Guardian's Mail Bracers
-						i( 35174),	-- Guardian's Mooncloth Cuffs
-						i( 35175),	-- Guardian's Ornamented Bracers
-						i( 35176),	-- Guardian's Plate Bracers
-						i( 35177),	-- Guardian's Ringmail Bracers
-						i( 35178),	-- Guardian's Scaled Bracers
-						i( 35179),	-- Guardian's Silk Cuffs
-						i( 35180),	-- Guardian's Wyrmhide Bracers
-						i( 36737),	-- Brutal Gladiator's Hatchet
-						i( 35082),	-- Brutal Gladiator's Salvation
-						i( 34989),	-- Brutal Gladiator's Bonegrinder
-						i( 35047),	-- Brutal Gladiator's Longbow
-						i( 35017),	-- Brutal Gladiator's Hacker
-						i( 35064),	-- Brutal Gladiator's Painsaw
-						i( 35065),	-- Brutal Gladiator's Piercing Touch
-						i( 35018),	-- Brutal Gladiator's Heavy Crossbow
-						i( 34985),	-- Brutal Gladiator's Baton of Light
-						i( 34995),	-- Brutal Gladiator's Chopper	
+						i(35077),	-- Brutal Gladiator's Ringmail Armor
+						i(35085),	-- Brutal Gladiator's Satin Leggings
+						i(34991),	-- Brutal Gladiator's Chain Gauntlets
+						i(34992),	-- Brutal Gladiator's Chain Helm
+						i(34993),	-- Brutal Gladiator's Chain Leggings
+						i(34994),	-- Brutal Gladiator's Chain Spaulders
+						i(34998),	-- Brutal Gladiator's Dragonhide Gloves
+						i(34999),	-- Brutal Gladiator's Dragonhide Helm
+						i(35000),	-- Brutal Gladiator's Dragonhide Legguards
+						i(35001),	-- Brutal Gladiator's Dragonhide Spaulders
+						i(35002),	-- Brutal Gladiator's Dragonhide Tunic
+						i(35003),	-- Brutal Gladiator's Dreadweave Gloves
+						i(35004),	-- Brutal Gladiator's Dreadweave Hood
+						i(35005),	-- Brutal Gladiator's Dreadweave Leggings
+						i(35006),	-- Brutal Gladiator's Dreadweave Mantle
+						i(35007),	-- Brutal Gladiator's Dreadweave Robe
+						i(35008),	-- Brutal Gladiator's Endgame
+						i(35009),	-- Brutal Gladiator's Felweave Amice
+						i(35010),	-- Brutal Gladiator's Felweave Cowl
+						i(35011),	-- Brutal Gladiator's Felweave Handguards
+						i(35012),	-- Brutal Gladiator's Felweave Raiment
+						i(35013),	-- Brutal Gladiator's Felweave Trousers
+						i(35016),	-- Brutal Gladiator's Grimoire
+						i(35022),	-- Brutal Gladiator's Kodohide Gloves
+						i(35023),	-- Brutal Gladiator's Kodohide Helm
+						i(35024),	-- Brutal Gladiator's Kodohide Legguards
+						i(35025),	-- Brutal Gladiator's Kodohide Spaulders
+						i(35026),	-- Brutal Gladiator's Kodohide Tunic
+						i(35027),	-- Brutal Gladiator's Lamellar Chestpiece
+						i(35028),	-- Brutal Gladiator's Lamellar Gauntlets
+						i(35029),	-- Brutal Gladiator's Lamellar Helm
+						i(35030),	-- Brutal Gladiator's Lamellar Legguards
+						i(35031),	-- Brutal Gladiator's Lamellar Shoulders
+						i(35032),	-- Brutal Gladiator's Leather Gloves
+						i(35033),	-- Brutal Gladiator's Leather Helm
+						i(35034),	-- Brutal Gladiator's Leather Legguards
+						i(35035),	-- Brutal Gladiator's Leather Spaulders
+						i(35036),	-- Brutal Gladiator's Leather Tunic
+						i(35042),	-- Brutal Gladiator's Linked Armor
+						i(35043),	-- Brutal Gladiator's Linked Gauntlets
+						i(35044),	-- Brutal Gladiator's Linked Helm
+						i(35045),	-- Brutal Gladiator's Linked Leggings
+						i(35046),	-- Brutal Gladiator's Linked Spaulders
+						i(35048),	-- Brutal Gladiator's Mail Armor
+						i(35049),	-- Brutal Gladiator's Mail Gauntlets
+						i(35050),	-- Brutal Gladiator's Mail Helm
+						i(35051),	-- Brutal Gladiator's Mail Leggings
+						i(35052),	-- Brutal Gladiator's Mail Spaulders
+						i(35053),	-- Brutal Gladiator's Mooncloth Gloves
+						i(35054),	-- Brutal Gladiator's Mooncloth Hood
+						i(35055),	-- Brutal Gladiator's Mooncloth Leggings
+						i(35056),	-- Brutal Gladiator's Mooncloth Mantle
+						i(35057),	-- Brutal Gladiator's Mooncloth Robe
+						i(35059),	-- Brutal Gladiator's Ornamented Chestguard
+						i(35060),	-- Brutal Gladiator's Ornamented Gloves
+						i(35061),	-- Brutal Gladiator's Ornamented Headcover
+						i(35062),	-- Brutal Gladiator's Ornamented Legplates
+						i(35063),	-- Brutal Gladiator's Ornamented Spaulders
+						i(35066),	-- Brutal Gladiator's Plate Chestpiece
+						i(35067),	-- Brutal Gladiator's Plate Gauntlets
+						i(35068),	-- Brutal Gladiator's Plate Helm
+						i(35069),	-- Brutal Gladiator's Plate Legguards
+						i(35070),	-- Brutal Gladiator's Plate Shoulders
+						i(35073),	-- Brutal Gladiator's Redoubt
+						i(35074),	-- Brutal Gladiator's Reprieve
+						i(34990),	-- Brutal Gladiator's Chain Armor
+						i(35078),	-- Brutal Gladiator's Ringmail Gauntlets
+						i(35079),	-- Brutal Gladiator's Ringmail Helm
+						i(35080),	-- Brutal Gladiator's Ringmail Leggings
+						i(35081),	-- Brutal Gladiator's Ringmail Spaulders
+						i(35083),	-- Brutal Gladiator's Satin Gloves
+						i(35084),	-- Brutal Gladiator's Satin Hood
+						i(34986),	-- Brutal Gladiator's Barrier
+						i(35086),	-- Brutal Gladiator's Satin Mantle
+						i(35087),	-- Brutal Gladiator's Satin Robe
+						i(35088),	-- Brutal Gladiator's Scaled Chestpiece
+						i(35089),	-- Brutal Gladiator's Scaled Gauntlets
+						i(35090),	-- Brutal Gladiator's Scaled Helm
+						i(35091),	-- Brutal Gladiator's Scaled Legguards
+						i(35092),	-- Brutal Gladiator's Scaled Shoulders
+						i(35094),	-- Brutal Gladiator's Shield Wall
+						i(35096),	-- Brutal Gladiator's Silk Amice
+						i(35097),	-- Brutal Gladiator's Silk Cowl
+						i(35098),	-- Brutal Gladiator's Silk Handguards
+						i(35099),	-- Brutal Gladiator's Silk Raiment
+						i(35100),	-- Brutal Gladiator's Silk Trousers
+						i(35111),	-- Brutal Gladiator's Wyrmhide Gloves
+						i(35112),	-- Brutal Gladiator's Wyrmhide Helm
+						i(35113),	-- Brutal Gladiator's Wyrmhide Legguards
+						i(35114),	-- Brutal Gladiator's Wyrmhide Spaulders
+						i(35115),	-- Brutal Gladiator's Wyrmhide Tunic
+						i(35136),	-- Guardian's Chain Sabatons
+						i(35137),	-- Guardian's Dragonhide Boots
+						i(35138),	-- Guardian's Dreadweave Stalkers
+						i(35139),	-- Guardian's Kodohide Boots
+						i(35140),	-- Guardian's Lamellar Greaves
+						i(35141),	-- Guardian's Leather Boots
+						i(35142),	-- Guardian's Linked Sabatons
+						i(35143),	-- Guardian's Mail Sabatons
+						i(35144),	-- Guardian's Mooncloth Slippers
+						i(35145),	-- Guardian's Ornamented Greaves
+						i(35146),	-- Guardian's Plate Greaves
+						i(35147),	-- Guardian's Ringmail Sabatons
+						i(35148),	-- Guardian's Scaled Greaves
+						i(35149),	-- Guardian's Silk Footguards
+						i(35150),	-- Guardian's Wyrmhide Boots
+						i(35151),	-- Guardian's Chain Girdle
+						i(35152),	-- Guardian's Dragonhide Belt
+						i(35153),	-- Guardian's Dreadweave Belt
+						i(35154),	-- Guardian's Kodohide Belt
+						i(35155),	-- Guardian's Lamellar Belt
+						i(35156),	-- Guardian's Leather Belt
+						i(35157),	-- Guardian's Linked Girdle
+						i(35158),	-- Guardian's Mail Girdle
+						i(35159),	-- Guardian's Mooncloth Belt
+						i(35160),	-- Guardian's Ornamented Belt
+						i(35161),	-- Guardian's Plate Belt
+						i(35162),	-- Guardian's Ringmail Girdle
+						i(35163),	-- Guardian's Scaled Belt
+						i(35164),	-- Guardian's Silk Belt
+						i(35165),	-- Guardian's Wyrmhide Belt
+						i(40440),	-- Brutal Gladiator's Dreadplate Chestpiece
+						i(40441),	-- Brutal Gladiator's Dreadplate Gauntlets
+						i(40442),	-- Brutal Gladiator's Dreadplate Helm
+						i(40443),	-- Brutal Gladiator's Dreadplate Legguards
+						i(40444),	-- Brutal Gladiator's Dreadplate Shoulders
+						i(41591),	-- Sergeant's Reinforced Cape
+						i(41592),	-- The Gladiator's Resolution
+						i(44429),	-- Volanthius Shroud
+						i(44431),	-- Cloak of Certain Reprieve
+						i(34996),	-- Brutal Gladiator's Cleaver
+						i(34997),	-- Brutal Gladiator's Decapitator
+						i(35093),	-- Brutal Gladiator's Shanker
+						i(35071),	-- Brutal Gladiator's Pummeler
+						i(35095),	-- Brutal Gladiator's Shiv
+						i(35072),	-- Brutal Gladiator's Quickblade
+						i(35037),	-- Brutal Gladiator's Slasher
+						i(35038),	-- Brutal Gladiator's Fleshslicer
+						i(35075),	-- Brutal Gladiator's Rifle
+						i(35076),	-- Brutal Gladiator's Ripper
+						i(35101),	-- Brutal Gladiator's Slicer
+						i(35102),	-- Brutal Gladiator's Spellblade
+						i(35103),	-- Brutal Gladiator's Staff
+						i(35107),	-- Brutal Gladiator's Touch of Defeat
+						i(35109),	-- Brutal Gladiator's War Staff
+						i(35110),	-- Brutal Gladiator's Waraxe
+						i(34987),	-- Brutal Gladiator's Battle Staff
+						i(34988),	-- Brutal Gladiator's Bonecracker
+						i(35058),	-- Brutal Gladiator's Mutilator
+						i(35014),	-- Brutal Gladiator's Gavel
+						i(35015),	-- Brutal Gladiator's Greatsword
+						i(35166),	-- Guardian's Chain Bracers
+						i(35167),	-- Guardian's Dragonhide Bracers
+						i(35168),	-- Guardian's Dreadweave Cuffs
+						i(35169),	-- Guardian's Kodohide Bracers
+						i(35170),	-- Guardian's Lamellar Bracers
+						i(35171),	-- Guardian's Leather Bracers
+						i(35172),	-- Guardian's Linked Bracers
+						i(35173),	-- Guardian's Mail Bracers
+						i(35174),	-- Guardian's Mooncloth Cuffs
+						i(35175),	-- Guardian's Ornamented Bracers
+						i(35176),	-- Guardian's Plate Bracers
+						i(35177),	-- Guardian's Ringmail Bracers
+						i(35178),	-- Guardian's Scaled Bracers
+						i(35179),	-- Guardian's Silk Cuffs
+						i(35180),	-- Guardian's Wyrmhide Bracers
+						i(36737),	-- Brutal Gladiator's Hatchet
+						i(35082),	-- Brutal Gladiator's Salvation
+						i(34989),	-- Brutal Gladiator's Bonegrinder
+						i(35047),	-- Brutal Gladiator's Longbow
+						i(35017),	-- Brutal Gladiator's Hacker
+						i(35064),	-- Brutal Gladiator's Painsaw
+						i(35065),	-- Brutal Gladiator's Piercing Touch
+						i(35018),	-- Brutal Gladiator's Heavy Crossbow
+						i(34985),	-- Brutal Gladiator's Baton of Light
+						i(34995),	-- Brutal Gladiator's Chopper	
 					}),
 					n(19536, {	-- Dealer Jadyan <Exotic Weapons>
 						i(29371),	-- Nexus-Claw
@@ -827,105 +827,105 @@ _.Zones =
 					}),
 					n(40209, {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 						["groups"] = {
-							i( 77670),	-- Replica Field Marshal's Dragonhide Breastplate
-							i( 77692),	-- Replica Field Marshal's Satin Mantle
-							i( 77710),	-- Replica Field Marshal's Coronal
-							i( 77709),	-- Replica Field Marshal's Dreadweave Shoulders
-							i( 77701),	-- Replica Field Marshal's Leather Chestpiece
-							i( 77700),	-- Replica Field Marshal's Leather Mask
-							i( 77697),	-- Replica Field Marshal's Leather Epaulets
-							i( 77695),	-- Replica Field Marshal's Headdress
-							i( 77694),	-- Replica Field Marshal's Satin Vestments
-							i( 77712),	-- Replica Field Marshal's Dreadweave Robe
-							i( 77682),	-- Replica Field Marshal's Coronet
-							i( 77679),	-- Replica Field Marshal's Silk Spaulders
-							i( 77678),	-- Replica Field Marshal's Silk Vestments
-							i( 77671),	-- Replica Field Marshal's Dragonhide Helmet
-							i( 77667),	-- Replica Field Marshal's Dragonhide Spaulders
-							i( 77683),	-- Replica Marshal's Silk Footwraps
-							i( 77711),	-- Replica Marshal's Dreadweave Leggings
-							i( 77708),	-- Replica Marshal's Dreadweave Boots
-							i( 77742),	-- Replica Lieutenant Commander's Dragonhide Headguard
-							i( 77713),	-- Replica Marshal's Dreadweave Gloves
-							i( 77666),	-- Replica Marshal's Dragonhide Gauntlets
-							i( 77784),	-- Replica Lieutenant Commander's Silk Cowl
-							i( 77668),	-- Replica Marshal's Dragonhide Legguards
-							i( 77669),	-- Replica Marshal's Dragonhide Boots
-							i( 77850),	-- Replica Lieutenant Commander's Dreadweave Spaulders
-							i( 77844),	-- Replica Lieutenant Commander's Dreadweave Cowl
-							i( 77820),	-- Replica Lieutenant Commander's Leather Helm
-							i( 77699),	-- Replica Marshal's Leather Footguards
-							i( 77680),	-- Replica Marshal's Silk Leggings
-							i( 77681),	-- Replica Marshal's Silk Gloves
-							i( 77800),	-- Replica Lieutenant Commander's Satin Hood
-							i( 77748),	-- Replica Lieutenant Commander's Dragonhide Shoulders
-							i( 77690),	-- Replica Marshal's Satin Sandals
-							i( 77691),	-- Replica Marshal's Satin Pants
-							i( 77801),	-- Replica Lieutenant Commander's Satin Mantle
-							i( 77693),	-- Replica Marshal's Satin Gloves
-							i( 77698),	-- Replica Marshal's Leather Handgrips
-							i( 77813),	-- Replica Lieutenant Commander's Leather Shoulders
-							i( 77696),	-- Replica Marshal's Leather Leggings
-							i( 77812),	-- Replica Knight-Captain's Leather Legguards
-							i( 77811),	-- Replica Knight-Captain's Leather Chestpiece
-							i( 77799),	-- Replica Knight-Captain's Satin Tunic
-							i( 77797),	-- Replica Knight-Captain's Satin Legguards
-							i( 77785),	-- Replica Knight-Captain's Silk Tunic
-							i( 77745),	-- Replica Knight-Captain's Dragonhide Leggings
-							i( 77847),	-- Replica Knight-Captain's Dreadweave Legguards
-							i( 77848),	-- Replica Knight-Captain's Dreadweave Tunic
-							i( 77777),	-- Replica Knight-Captain's Silk Legguards
-							i( 77720),	-- Replica Knight-Lieutenant's Dragonhide Grips
+							i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
+							i(77692),	-- Replica Field Marshal's Satin Mantle
+							i(77710),	-- Replica Field Marshal's Coronal
+							i(77709),	-- Replica Field Marshal's Dreadweave Shoulders
+							i(77701),	-- Replica Field Marshal's Leather Chestpiece
+							i(77700),	-- Replica Field Marshal's Leather Mask
+							i(77697),	-- Replica Field Marshal's Leather Epaulets
+							i(77695),	-- Replica Field Marshal's Headdress
+							i(77694),	-- Replica Field Marshal's Satin Vestments
+							i(77712),	-- Replica Field Marshal's Dreadweave Robe
+							i(77682),	-- Replica Field Marshal's Coronet
+							i(77679),	-- Replica Field Marshal's Silk Spaulders
+							i(77678),	-- Replica Field Marshal's Silk Vestments
+							i(77671),	-- Replica Field Marshal's Dragonhide Helmet
+							i(77667),	-- Replica Field Marshal's Dragonhide Spaulders
+							i(77683),	-- Replica Marshal's Silk Footwraps
+							i(77711),	-- Replica Marshal's Dreadweave Leggings
+							i(77708),	-- Replica Marshal's Dreadweave Boots
+							i(77742),	-- Replica Lieutenant Commander's Dragonhide Headguard
+							i(77713),	-- Replica Marshal's Dreadweave Gloves
+							i(77666),	-- Replica Marshal's Dragonhide Gauntlets
+							i(77784),	-- Replica Lieutenant Commander's Silk Cowl
+							i(77668),	-- Replica Marshal's Dragonhide Legguards
+							i(77669),	-- Replica Marshal's Dragonhide Boots
+							i(77850),	-- Replica Lieutenant Commander's Dreadweave Spaulders
+							i(77844),	-- Replica Lieutenant Commander's Dreadweave Cowl
+							i(77820),	-- Replica Lieutenant Commander's Leather Helm
+							i(77699),	-- Replica Marshal's Leather Footguards
+							i(77680),	-- Replica Marshal's Silk Leggings
+							i(77681),	-- Replica Marshal's Silk Gloves
+							i(77800),	-- Replica Lieutenant Commander's Satin Hood
+							i(77748),	-- Replica Lieutenant Commander's Dragonhide Shoulders
+							i(77690),	-- Replica Marshal's Satin Sandals
+							i(77691),	-- Replica Marshal's Satin Pants
+							i(77801),	-- Replica Lieutenant Commander's Satin Mantle
+							i(77693),	-- Replica Marshal's Satin Gloves
+							i(77698),	-- Replica Marshal's Leather Handgrips
+							i(77813),	-- Replica Lieutenant Commander's Leather Shoulders
+							i(77696),	-- Replica Marshal's Leather Leggings
+							i(77812),	-- Replica Knight-Captain's Leather Legguards
+							i(77811),	-- Replica Knight-Captain's Leather Chestpiece
+							i(77799),	-- Replica Knight-Captain's Satin Tunic
+							i(77797),	-- Replica Knight-Captain's Satin Legguards
+							i(77785),	-- Replica Knight-Captain's Silk Tunic
+							i(77745),	-- Replica Knight-Captain's Dragonhide Leggings
+							i(77847),	-- Replica Knight-Captain's Dreadweave Legguards
+							i(77848),	-- Replica Knight-Captain's Dreadweave Tunic
+							i(77777),	-- Replica Knight-Captain's Silk Legguards
+							i(77720),	-- Replica Knight-Lieutenant's Dragonhide Grips
 							i(120993),	-- Replica Knight-Lieutenant's Leather Clasp
 							i(120992),	-- Replica Knight-Lieutenant's Dragonhide Belt
 							i(120996),	-- Replica Knight-Lieutenant's Dreadweave Wrap
 							i(120995),	-- Replica Knight-Lieutenant's Satin Belt
 							i(120994),	-- Replica Knight-Lieutenant's Silk Cinch
-							i( 77733),	-- Replica Knight-Lieutenant's Dreadweave Handwraps
-							i( 77732),	-- Replica Knight-Lieutenant's Dreadweave Walkers
-							i( 77731),	-- Replica Knight-Lieutenant's Leather Grips
-							i( 77730),	-- Replica Knight-Lieutenant's Leather Walkers
-							i( 77729),	-- Replica Knight-Lieutenant's Satin Walkers
-							i( 77728),	-- Replica Knight-Lieutenant's Satin Handwraps
-							i( 77725),	-- Replica Knight-Lieutenant's Silk Handwraps
-							i( 77724),	-- Replica Knight-Lieutenant's Silk Walkers
-							i( 77721),	-- Replica Knight-Lieutenant's Dragonhide Treads
-							i( 77599),	-- Replica Knight-Lieutenant's Dragonhide Footwraps
-							i( 77598),	-- Replica Lieutenant Commander's Dragonhide Epaulets
-							i( 77651),	-- Replica Knight-Lieutenant's Dreadweave Boots
-							i( 77650),	-- Replica Knight-Lieutenant's Dreadweave Gloves
-							i( 77649),	-- Replica Knight-Captain's Dreadweave Leggings
-							i( 77648),	-- Replica Knight-Captain's Dreadweave Robe
-							i( 77647),	-- Replica Lieutenant Commander's Dreadweave Mantle
-							i( 77600),	-- Replica Lieutenant Commander's Dragonhide Shroud
-							i( 77639),	-- Replica Sergeant Major's Leather Armsplints
-							i( 77638),	-- Replica Knight-Captain's Leather Legguards
-							i( 77637),	-- Replica Knight-Lieutenant's Leather Boots
-							i( 77636),	-- Replica Lieutenant Commander's Leather Spaulders
-							i( 77635),	-- Replica Lieutenant Commander's Leather Veil
-							i( 77634),	-- Replica Knight-Lieutenant's Leather Gauntlets
-							i( 77633),	-- Replica Knight-Captain's Leather Armor
-							i( 77632),	-- Replica Knight-Lieutenant's Satin Boots
-							i( 77631),	-- Replica Lieutenant Commander's Satin Amice
-							i( 77630),	-- Replica Knight-Captain's Satin Robes
-							i( 77652),	-- Replica Lieutenant Commander's Headguard
-							i( 77629),	-- Replica Lieutenant Commander's Diadem
-							i( 77628),	-- Replica Knight-Captain's Satin Leggings
-							i( 77627),	-- Replica Knight-Lieutenant's Satin Gloves
-							i( 77620),	-- Replica Sergeant Major's Silk Cuffs
-							i( 77619),	-- Replica Lieutenant Commander's Crown
-							i( 77618),	-- Replica Knight-Captain's Silk Leggings
-							i( 77617),	-- Replica Knight-Lieutenant's Silk Gloves
-							i( 77616),	-- Replica Knight-Lieutenant's Silk Boots
-							i( 77615),	-- Replica Lieutenant Commander's Silk Spaulders
-							i( 77614),	-- Replica Knight-Captain's Silk Raiment
-							i( 77601),	-- Replica Knight-Captain's Dragonhide Leggings
-							i( 77604),	-- Replica Sergeant Major's Dragonhide Armsplints
-							i( 77603),	-- Replica Knight-Lieutenant's Dragonhide Gloves
-							i( 77602),	-- Replica Knight-Captain's Dragonhide Tunic
-							i( 77605),	-- Replica Sergeant Major's Dragonhide Armsplints
-							i( 77640),	-- Replica Sergeant Major's Leather Armsplints
-							i( 77787),	-- Replica Sergeant Major's Silk Cuffs
+							i(77733),	-- Replica Knight-Lieutenant's Dreadweave Handwraps
+							i(77732),	-- Replica Knight-Lieutenant's Dreadweave Walkers
+							i(77731),	-- Replica Knight-Lieutenant's Leather Grips
+							i(77730),	-- Replica Knight-Lieutenant's Leather Walkers
+							i(77729),	-- Replica Knight-Lieutenant's Satin Walkers
+							i(77728),	-- Replica Knight-Lieutenant's Satin Handwraps
+							i(77725),	-- Replica Knight-Lieutenant's Silk Handwraps
+							i(77724),	-- Replica Knight-Lieutenant's Silk Walkers
+							i(77721),	-- Replica Knight-Lieutenant's Dragonhide Treads
+							i(77599),	-- Replica Knight-Lieutenant's Dragonhide Footwraps
+							i(77598),	-- Replica Lieutenant Commander's Dragonhide Epaulets
+							i(77651),	-- Replica Knight-Lieutenant's Dreadweave Boots
+							i(77650),	-- Replica Knight-Lieutenant's Dreadweave Gloves
+							i(77649),	-- Replica Knight-Captain's Dreadweave Leggings
+							i(77648),	-- Replica Knight-Captain's Dreadweave Robe
+							i(77647),	-- Replica Lieutenant Commander's Dreadweave Mantle
+							i(77600),	-- Replica Lieutenant Commander's Dragonhide Shroud
+							i(77639),	-- Replica Sergeant Major's Leather Armsplints
+							i(77638),	-- Replica Knight-Captain's Leather Legguards
+							i(77637),	-- Replica Knight-Lieutenant's Leather Boots
+							i(77636),	-- Replica Lieutenant Commander's Leather Spaulders
+							i(77635),	-- Replica Lieutenant Commander's Leather Veil
+							i(77634),	-- Replica Knight-Lieutenant's Leather Gauntlets
+							i(77633),	-- Replica Knight-Captain's Leather Armor
+							i(77632),	-- Replica Knight-Lieutenant's Satin Boots
+							i(77631),	-- Replica Lieutenant Commander's Satin Amice
+							i(77630),	-- Replica Knight-Captain's Satin Robes
+							i(77652),	-- Replica Lieutenant Commander's Headguard
+							i(77629),	-- Replica Lieutenant Commander's Diadem
+							i(77628),	-- Replica Knight-Captain's Satin Leggings
+							i(77627),	-- Replica Knight-Lieutenant's Satin Gloves
+							i(77620),	-- Replica Sergeant Major's Silk Cuffs
+							i(77619),	-- Replica Lieutenant Commander's Crown
+							i(77618),	-- Replica Knight-Captain's Silk Leggings
+							i(77617),	-- Replica Knight-Lieutenant's Silk Gloves
+							i(77616),	-- Replica Knight-Lieutenant's Silk Boots
+							i(77615),	-- Replica Lieutenant Commander's Silk Spaulders
+							i(77614),	-- Replica Knight-Captain's Silk Raiment
+							i(77601),	-- Replica Knight-Captain's Dragonhide Leggings
+							i(77604),	-- Replica Sergeant Major's Dragonhide Armsplints
+							i(77603),	-- Replica Knight-Lieutenant's Dragonhide Gloves
+							i(77602),	-- Replica Knight-Captain's Dragonhide Tunic
+							i(77605),	-- Replica Sergeant Major's Dragonhide Armsplints
+							i(77640),	-- Replica Sergeant Major's Leather Armsplints
+							i(77787),	-- Replica Sergeant Major's Silk Cuffs
 						},
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 					}),
@@ -1657,405 +1657,405 @@ _.Zones =
 						i(33764),	-- Vengeful Gladiator's Touch of Defeat
 						i(33766),	-- Vengeful Gladiator's War Staff
 						i(34014),	-- Vengeful Gladiator's Waraxe
-						i( 33748),	-- Vengeful Gladiator's Satin Robe
-						i( 33664),	-- Vengeful Gladiator's Chain Armor
-						i( 33665),	-- Vengeful Gladiator's Chain Gauntlets
-						i( 33666),	-- Vengeful Gladiator's Chain Helm
-						i( 33667),	-- Vengeful Gladiator's Chain Leggings
-						i( 33668),	-- Vengeful Gladiator's Chain Spaulders
-						i( 33671),	-- Vengeful Gladiator's Dragonhide Gloves
-						i( 33672),	-- Vengeful Gladiator's Dragonhide Helm
-						i( 33673),	-- Vengeful Gladiator's Dragonhide Legguards
-						i( 33674),	-- Vengeful Gladiator's Dragonhide Spaulders
-						i( 33675),	-- Vengeful Gladiator's Dragonhide Tunic
-						i( 33676),	-- Vengeful Gladiator's Dreadweave Gloves
-						i( 33677),	-- Vengeful Gladiator's Dreadweave Hood
-						i( 33678),	-- Vengeful Gladiator's Dreadweave Leggings
-						i( 33679),	-- Vengeful Gladiator's Dreadweave Mantle
-						i( 33680),	-- Vengeful Gladiator's Dreadweave Robe
-						i( 33682),	-- Vengeful Gladiator's Felweave Amice
-						i( 33683),	-- Vengeful Gladiator's Felweave Cowl
-						i( 33684),	-- Vengeful Gladiator's Felweave Handguards
-						i( 33685),	-- Vengeful Gladiator's Felweave Raiment
-						i( 33686),	-- Vengeful Gladiator's Felweave Trousers
-						i( 33690),	-- Vengeful Gladiator's Kodohide Gloves
-						i( 33691),	-- Vengeful Gladiator's Kodohide Helm
-						i( 33692),	-- Vengeful Gladiator's Kodohide Legguards
-						i( 33693),	-- Vengeful Gladiator's Kodohide Spaulders
-						i( 33694),	-- Vengeful Gladiator's Kodohide Tunic
-						i( 33695),	-- Vengeful Gladiator's Lamellar Chestpiece
-						i( 33696),	-- Vengeful Gladiator's Lamellar Gauntlets
-						i( 33697),	-- Vengeful Gladiator's Lamellar Helm
-						i( 33698),	-- Vengeful Gladiator's Lamellar Legguards
-						i( 33699),	-- Vengeful Gladiator's Lamellar Shoulders
-						i( 33700),	-- Vengeful Gladiator's Leather Gloves
-						i( 33701),	-- Vengeful Gladiator's Leather Helm
-						i( 33702),	-- Vengeful Gladiator's Leather Legguards
-						i( 33703),	-- Vengeful Gladiator's Leather Spaulders
-						i( 33704),	-- Vengeful Gladiator's Leather Tunic
-						i( 33706),	-- Vengeful Gladiator's Linked Armor
-						i( 33707),	-- Vengeful Gladiator's Linked Gauntlets
-						i( 33708),	-- Vengeful Gladiator's Linked Helm
-						i( 33709),	-- Vengeful Gladiator's Linked Leggings
-						i( 33710),	-- Vengeful Gladiator's Linked Spaulders
-						i( 33711),	-- Vengeful Gladiator's Mail Armor
-						i( 33712),	-- Vengeful Gladiator's Mail Gauntlets
-						i( 33713),	-- Vengeful Gladiator's Mail Helm
-						i( 33714),	-- Vengeful Gladiator's Mail Leggings
-						i( 33715),	-- Vengeful Gladiator's Mail Spaulders
-						i( 33717),	-- Vengeful Gladiator's Mooncloth Gloves
-						i( 33718),	-- Vengeful Gladiator's Mooncloth Hood
-						i( 33719),	-- Vengeful Gladiator's Mooncloth Leggings
-						i( 33720),	-- Vengeful Gladiator's Mooncloth Mantle
-						i( 33721),	-- Vengeful Gladiator's Mooncloth Robe
-						i( 33722),	-- Vengeful Gladiator's Ornamented Chestguard
-						i( 33723),	-- Vengeful Gladiator's Ornamented Gloves
-						i( 33724),	-- Vengeful Gladiator's Ornamented Headcover
-						i( 33725),	-- Vengeful Gladiator's Ornamented Legplates
-						i( 33726),	-- Vengeful Gladiator's Ornamented Spaulders
-						i( 33728),	-- Vengeful Gladiator's Plate Chestpiece
-						i( 33729),	-- Vengeful Gladiator's Plate Gauntlets
-						i( 33730),	-- Vengeful Gladiator's Plate Helm
-						i( 33731),	-- Vengeful Gladiator's Plate Legguards
-						i( 33732),	-- Vengeful Gladiator's Plate Shoulders
-						i( 33738),	-- Vengeful Gladiator's Ringmail Armor
-						i( 33739),	-- Vengeful Gladiator's Ringmail Gauntlets
-						i( 33740),	-- Vengeful Gladiator's Ringmail Helm
-						i( 33741),	-- Vengeful Gladiator's Ringmail Leggings
-						i( 33742),	-- Vengeful Gladiator's Ringmail Spaulders
-						i( 33744),	-- Vengeful Gladiator's Satin Gloves
-						i( 33745),	-- Vengeful Gladiator's Satin Hood
-						i( 33746),	-- Vengeful Gladiator's Satin Leggings
-						i( 33747),	-- Vengeful Gladiator's Satin Mantle
-						i( 33749),	-- Vengeful Gladiator's Scaled Chestpiece
-						i( 33750),	-- Vengeful Gladiator's Scaled Gauntlets
-						i( 33751),	-- Vengeful Gladiator's Scaled Helm
-						i( 33752),	-- Vengeful Gladiator's Scaled Legguards
-						i( 33753),	-- Vengeful Gladiator's Scaled Shoulders
-						i( 33757),	-- Vengeful Gladiator's Silk Amice
-						i( 33758),	-- Vengeful Gladiator's Silk Cowl
-						i( 33759),	-- Vengeful Gladiator's Silk Handguards	
-						i( 33760),	-- Vengeful Gladiator's Silk Raiment
-						i( 33761),	-- Vengeful Gladiator's Silk Trousers
-						i( 33767),	-- Vengeful Gladiator's Wyrmhide Gloves
-						i( 33768),	-- Vengeful Gladiator's Wyrmhide Helm
-						i( 33769),	-- Vengeful Gladiator's Wyrmhide Legguards
-						i( 33770),	-- Vengeful Gladiator's Wyrmhide Spaulders
-						i( 33771),	-- Vengeful Gladiator's Wyrmhide Tunic
-						i( 33811),	-- Vindicator's Plate Belt
-						i( 33812),	-- Vindicator's Plate Greaves
-						i( 34540),	-- Vengeful Gladiator's Battle Staff
-						i( 34530),	-- Vengeful Gladiator's Rifle
-						i( 33877),	-- Vindicator's Chain Girdle
-						i( 33878),	-- Vindicator's Chain Sabatons
-						i( 33879),	-- Vindicator's Dragonhide Belt
-						i( 33880),	-- Vindicator's Dragonhide Boots
-						i( 34529),	-- Vengeful Gladiator's Longbow
-						i( 33882),	-- Vindicator's Dreadweave Belt
-						i( 34066),	-- Vengeful Gladiator's Piercing Touch
-						i( 33884),	-- Vindicator's Dreadweave Stalkers
-						i( 33885),	-- Vindicator's Kodohide Belt
-						i( 33886),	-- Vindicator's Kodohide Boots
-						i( 34059),	-- Vengeful Gladiator's Baton of Light
-						i( 33888),	-- Vindicator's Lamellar Belt
-						i( 34033),	-- Vengeful Gladiator's Grimoire
-						i( 33890),	-- Vindicator's Lamellar Greaves
-						i( 33891),	-- Vindicator's Leather Belt
-						i( 33892),	-- Vindicator's Leather Boots
-						i( 34016),	-- Vengeful Gladiator's Slasher
-						i( 34015),	-- Vengeful Gladiator's Chopper
-						i( 33895),	-- Vindicator's Linked Girdle
-						i( 33896),	-- Vindicator's Linked Sabatons
-						i( 34014),	-- Vengeful Gladiator's Waraxe
-						i( 33898),	-- Vindicator's Mail Girdle
-						i( 33899),	-- Vindicator's Mail Sabatons
-						i( 33900),	-- Vindicator's Mooncloth Belt
-						i( 33916),	-- Vindicator's Wyrmhide Boots
-						i( 33902),	-- Vindicator's Mooncloth Slippers
-						i( 33903),	-- Vindicator's Ornamented Belt
-						i( 33915),	-- Vindicator's Wyrmhide Belt
-						i( 33905),	-- Vindicator's Ornamented Greaves
-						i( 33914),	-- Vindicator's Silk Footguards
-						i( 33907),	-- Vindicator's Ringmail Girdle
-						i( 33908),	-- Vindicator's Ringmail Sabatons
-						i( 33909),	-- Vindicator's Scaled Belt
-						i( 33912),	-- Vindicator's Silk Belt
-						i( 33911),	-- Vindicator's Scaled Greaves
-						i( 33876),	-- Vindicator's Chain Bracers
-						i( 33910),	-- Vindicator's Scaled Bracers
-						i( 33906),	-- Vindicator's Ringmail Bracers
-						i( 33904),	-- Vindicator's Ornamented Bracers
-						i( 33901),	-- Vindicator's Mooncloth Cuffs
-						i( 33917),	-- Vindicator's Wyrmhide Bracers
-						i( 33897),	-- Vindicator's Mail Bracers
-						i( 33894),	-- Vindicator's Linked Bracers
-						i( 33893),	-- Vindicator's Leather Bracers
-						i( 33889),	-- Vindicator's Lamellar Bracers
-						i( 33887),	-- Vindicator's Kodohide Bracers
-						i( 33883),	-- Vindicator's Dreadweave Cuffs
-						i( 33881),	-- Vindicator's Dragonhide Bracers
-						i( 33913),	-- Vindicator's Silk Cuffs
-						i( 33813),	-- Vindicator's Plate Bracers
+						i(33748),	-- Vengeful Gladiator's Satin Robe
+						i(33664),	-- Vengeful Gladiator's Chain Armor
+						i(33665),	-- Vengeful Gladiator's Chain Gauntlets
+						i(33666),	-- Vengeful Gladiator's Chain Helm
+						i(33667),	-- Vengeful Gladiator's Chain Leggings
+						i(33668),	-- Vengeful Gladiator's Chain Spaulders
+						i(33671),	-- Vengeful Gladiator's Dragonhide Gloves
+						i(33672),	-- Vengeful Gladiator's Dragonhide Helm
+						i(33673),	-- Vengeful Gladiator's Dragonhide Legguards
+						i(33674),	-- Vengeful Gladiator's Dragonhide Spaulders
+						i(33675),	-- Vengeful Gladiator's Dragonhide Tunic
+						i(33676),	-- Vengeful Gladiator's Dreadweave Gloves
+						i(33677),	-- Vengeful Gladiator's Dreadweave Hood
+						i(33678),	-- Vengeful Gladiator's Dreadweave Leggings
+						i(33679),	-- Vengeful Gladiator's Dreadweave Mantle
+						i(33680),	-- Vengeful Gladiator's Dreadweave Robe
+						i(33682),	-- Vengeful Gladiator's Felweave Amice
+						i(33683),	-- Vengeful Gladiator's Felweave Cowl
+						i(33684),	-- Vengeful Gladiator's Felweave Handguards
+						i(33685),	-- Vengeful Gladiator's Felweave Raiment
+						i(33686),	-- Vengeful Gladiator's Felweave Trousers
+						i(33690),	-- Vengeful Gladiator's Kodohide Gloves
+						i(33691),	-- Vengeful Gladiator's Kodohide Helm
+						i(33692),	-- Vengeful Gladiator's Kodohide Legguards
+						i(33693),	-- Vengeful Gladiator's Kodohide Spaulders
+						i(33694),	-- Vengeful Gladiator's Kodohide Tunic
+						i(33695),	-- Vengeful Gladiator's Lamellar Chestpiece
+						i(33696),	-- Vengeful Gladiator's Lamellar Gauntlets
+						i(33697),	-- Vengeful Gladiator's Lamellar Helm
+						i(33698),	-- Vengeful Gladiator's Lamellar Legguards
+						i(33699),	-- Vengeful Gladiator's Lamellar Shoulders
+						i(33700),	-- Vengeful Gladiator's Leather Gloves
+						i(33701),	-- Vengeful Gladiator's Leather Helm
+						i(33702),	-- Vengeful Gladiator's Leather Legguards
+						i(33703),	-- Vengeful Gladiator's Leather Spaulders
+						i(33704),	-- Vengeful Gladiator's Leather Tunic
+						i(33706),	-- Vengeful Gladiator's Linked Armor
+						i(33707),	-- Vengeful Gladiator's Linked Gauntlets
+						i(33708),	-- Vengeful Gladiator's Linked Helm
+						i(33709),	-- Vengeful Gladiator's Linked Leggings
+						i(33710),	-- Vengeful Gladiator's Linked Spaulders
+						i(33711),	-- Vengeful Gladiator's Mail Armor
+						i(33712),	-- Vengeful Gladiator's Mail Gauntlets
+						i(33713),	-- Vengeful Gladiator's Mail Helm
+						i(33714),	-- Vengeful Gladiator's Mail Leggings
+						i(33715),	-- Vengeful Gladiator's Mail Spaulders
+						i(33717),	-- Vengeful Gladiator's Mooncloth Gloves
+						i(33718),	-- Vengeful Gladiator's Mooncloth Hood
+						i(33719),	-- Vengeful Gladiator's Mooncloth Leggings
+						i(33720),	-- Vengeful Gladiator's Mooncloth Mantle
+						i(33721),	-- Vengeful Gladiator's Mooncloth Robe
+						i(33722),	-- Vengeful Gladiator's Ornamented Chestguard
+						i(33723),	-- Vengeful Gladiator's Ornamented Gloves
+						i(33724),	-- Vengeful Gladiator's Ornamented Headcover
+						i(33725),	-- Vengeful Gladiator's Ornamented Legplates
+						i(33726),	-- Vengeful Gladiator's Ornamented Spaulders
+						i(33728),	-- Vengeful Gladiator's Plate Chestpiece
+						i(33729),	-- Vengeful Gladiator's Plate Gauntlets
+						i(33730),	-- Vengeful Gladiator's Plate Helm
+						i(33731),	-- Vengeful Gladiator's Plate Legguards
+						i(33732),	-- Vengeful Gladiator's Plate Shoulders
+						i(33738),	-- Vengeful Gladiator's Ringmail Armor
+						i(33739),	-- Vengeful Gladiator's Ringmail Gauntlets
+						i(33740),	-- Vengeful Gladiator's Ringmail Helm
+						i(33741),	-- Vengeful Gladiator's Ringmail Leggings
+						i(33742),	-- Vengeful Gladiator's Ringmail Spaulders
+						i(33744),	-- Vengeful Gladiator's Satin Gloves
+						i(33745),	-- Vengeful Gladiator's Satin Hood
+						i(33746),	-- Vengeful Gladiator's Satin Leggings
+						i(33747),	-- Vengeful Gladiator's Satin Mantle
+						i(33749),	-- Vengeful Gladiator's Scaled Chestpiece
+						i(33750),	-- Vengeful Gladiator's Scaled Gauntlets
+						i(33751),	-- Vengeful Gladiator's Scaled Helm
+						i(33752),	-- Vengeful Gladiator's Scaled Legguards
+						i(33753),	-- Vengeful Gladiator's Scaled Shoulders
+						i(33757),	-- Vengeful Gladiator's Silk Amice
+						i(33758),	-- Vengeful Gladiator's Silk Cowl
+						i(33759),	-- Vengeful Gladiator's Silk Handguards	
+						i(33760),	-- Vengeful Gladiator's Silk Raiment
+						i(33761),	-- Vengeful Gladiator's Silk Trousers
+						i(33767),	-- Vengeful Gladiator's Wyrmhide Gloves
+						i(33768),	-- Vengeful Gladiator's Wyrmhide Helm
+						i(33769),	-- Vengeful Gladiator's Wyrmhide Legguards
+						i(33770),	-- Vengeful Gladiator's Wyrmhide Spaulders
+						i(33771),	-- Vengeful Gladiator's Wyrmhide Tunic
+						i(33811),	-- Vindicator's Plate Belt
+						i(33812),	-- Vindicator's Plate Greaves
+						i(34540),	-- Vengeful Gladiator's Battle Staff
+						i(34530),	-- Vengeful Gladiator's Rifle
+						i(33877),	-- Vindicator's Chain Girdle
+						i(33878),	-- Vindicator's Chain Sabatons
+						i(33879),	-- Vindicator's Dragonhide Belt
+						i(33880),	-- Vindicator's Dragonhide Boots
+						i(34529),	-- Vengeful Gladiator's Longbow
+						i(33882),	-- Vindicator's Dreadweave Belt
+						i(34066),	-- Vengeful Gladiator's Piercing Touch
+						i(33884),	-- Vindicator's Dreadweave Stalkers
+						i(33885),	-- Vindicator's Kodohide Belt
+						i(33886),	-- Vindicator's Kodohide Boots
+						i(34059),	-- Vengeful Gladiator's Baton of Light
+						i(33888),	-- Vindicator's Lamellar Belt
+						i(34033),	-- Vengeful Gladiator's Grimoire
+						i(33890),	-- Vindicator's Lamellar Greaves
+						i(33891),	-- Vindicator's Leather Belt
+						i(33892),	-- Vindicator's Leather Boots
+						i(34016),	-- Vengeful Gladiator's Slasher
+						i(34015),	-- Vengeful Gladiator's Chopper
+						i(33895),	-- Vindicator's Linked Girdle
+						i(33896),	-- Vindicator's Linked Sabatons
+						i(34014),	-- Vengeful Gladiator's Waraxe
+						i(33898),	-- Vindicator's Mail Girdle
+						i(33899),	-- Vindicator's Mail Sabatons
+						i(33900),	-- Vindicator's Mooncloth Belt
+						i(33916),	-- Vindicator's Wyrmhide Boots
+						i(33902),	-- Vindicator's Mooncloth Slippers
+						i(33903),	-- Vindicator's Ornamented Belt
+						i(33915),	-- Vindicator's Wyrmhide Belt
+						i(33905),	-- Vindicator's Ornamented Greaves
+						i(33914),	-- Vindicator's Silk Footguards
+						i(33907),	-- Vindicator's Ringmail Girdle
+						i(33908),	-- Vindicator's Ringmail Sabatons
+						i(33909),	-- Vindicator's Scaled Belt
+						i(33912),	-- Vindicator's Silk Belt
+						i(33911),	-- Vindicator's Scaled Greaves
+						i(33876),	-- Vindicator's Chain Bracers
+						i(33910),	-- Vindicator's Scaled Bracers
+						i(33906),	-- Vindicator's Ringmail Bracers
+						i(33904),	-- Vindicator's Ornamented Bracers
+						i(33901),	-- Vindicator's Mooncloth Cuffs
+						i(33917),	-- Vindicator's Wyrmhide Bracers
+						i(33897),	-- Vindicator's Mail Bracers
+						i(33894),	-- Vindicator's Linked Bracers
+						i(33893),	-- Vindicator's Leather Bracers
+						i(33889),	-- Vindicator's Lamellar Bracers
+						i(33887),	-- Vindicator's Kodohide Bracers
+						i(33883),	-- Vindicator's Dreadweave Cuffs
+						i(33881),	-- Vindicator's Dragonhide Bracers
+						i(33913),	-- Vindicator's Silk Cuffs
+						i(33813),	-- Vindicator's Plate Bracers
 						i(147670),	-- Vindicator's Leather Wristguards			
 					}),
 					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate>
 						["groups"] = {
-							i( 77718),	-- Replica Field Marshal's Plate Shoulderguards
-							i( 77673),	-- Replica Field Marshal's Chain Spaulders
-							i( 77714),	-- Replica Field Marshal's Plate Armor
-							i( 77707),	-- Replica Field Marshal's Mail Armor
-							i( 77705),	-- Replica Field Marshal's Mail Spaulders
-							i( 77704),	-- Replica Field Marshal's Mail Helm
-							i( 77715),	-- Replica Field Marshal's Plate Helm
-							i( 77674),	-- Replica Field Marshal's Chain Breastplate
-							i( 77676),	-- Replica Field Marshal's Chain Helm
-							i( 77687),	-- Replica Field Marshal's Lamellar Chestplate
-							i( 77688),	-- Replica Field Marshal's Lamellar Faceguard
-							i( 77689),	-- Replica Field Marshal's Lamellar Pauldrons
-							i( 77645),	-- Replica Lieutenant Commander's Mail Pauldrons
-							i( 77719),	-- Replica Marshal's Plate Boots
-							i( 77763),	-- Replica Lieutenant Commander's Chain Helm
-							i( 77703),	-- Replica Marshal's Mail Gauntlets
-							i( 77702),	-- Replica Marshal's Mail Boots
-							i( 77664),	-- Replica Lieutenant Commander's Lamellar Headguard
-							i( 77665),	-- Replica Lieutenant Commander's Lamellar Shoulders
-							i( 77672),	-- Replica Marshal's Chain Boots
-							i( 77867),	-- Replica Lieutenant Commander's Plate Helmet
-							i( 77762),	-- Replica Lieutenant Commander's Chain Shoulders
-							i( 77675),	-- Replica Marshal's Chain Legguards
-							i( 77706),	-- Replica Marshal's Mail Leggings
-							i( 77717),	-- Replica Marshal's Plate Legguards
-							i( 77684),	-- Replica Marshal's Lamellar Boots
-							i( 77685),	-- Replica Marshal's Lamellar Gloves
-							i( 77686),	-- Replica Marshal's Lamellar Legplates
-							i( 77677),	-- Replica Marshal's Chain Grips
-							i( 77642),	-- Replica Lieutenant Commander's Mail Headguard
-							i( 77859),	-- Replica Lieutenant Commander's Plate Shoulders
-							i( 77716),	-- Replica Marshal's Plate Gauntlets
-							i( 77662),	-- Replica Knight-Captain's Lamellar Breastplate
-							i( 77661),	-- Replica Knight-Captain's Lamellar Leggings
-							i( 77643),	-- Replica Knight-Captain's Mail Legguards
-							i( 77641),	-- Replica Knight-Captain's Mail Hauberk
-							i( 77761),	-- Replica Knight-Captain's Chain Hauberk
-							i( 77769),	-- Replica Knight-Captain's Chain Legguards
-							i( 77858),	-- Replica Knight-Captain's Plate Hauberk
-							i( 77864),	-- Replica Knight-Captain's Plate Leggings
-							i( 77644),	-- Replica Knight-Lieutenant's Mail Greaves
+							i(77718),	-- Replica Field Marshal's Plate Shoulderguards
+							i(77673),	-- Replica Field Marshal's Chain Spaulders
+							i(77714),	-- Replica Field Marshal's Plate Armor
+							i(77707),	-- Replica Field Marshal's Mail Armor
+							i(77705),	-- Replica Field Marshal's Mail Spaulders
+							i(77704),	-- Replica Field Marshal's Mail Helm
+							i(77715),	-- Replica Field Marshal's Plate Helm
+							i(77674),	-- Replica Field Marshal's Chain Breastplate
+							i(77676),	-- Replica Field Marshal's Chain Helm
+							i(77687),	-- Replica Field Marshal's Lamellar Chestplate
+							i(77688),	-- Replica Field Marshal's Lamellar Faceguard
+							i(77689),	-- Replica Field Marshal's Lamellar Pauldrons
+							i(77645),	-- Replica Lieutenant Commander's Mail Pauldrons
+							i(77719),	-- Replica Marshal's Plate Boots
+							i(77763),	-- Replica Lieutenant Commander's Chain Helm
+							i(77703),	-- Replica Marshal's Mail Gauntlets
+							i(77702),	-- Replica Marshal's Mail Boots
+							i(77664),	-- Replica Lieutenant Commander's Lamellar Headguard
+							i(77665),	-- Replica Lieutenant Commander's Lamellar Shoulders
+							i(77672),	-- Replica Marshal's Chain Boots
+							i(77867),	-- Replica Lieutenant Commander's Plate Helmet
+							i(77762),	-- Replica Lieutenant Commander's Chain Shoulders
+							i(77675),	-- Replica Marshal's Chain Legguards
+							i(77706),	-- Replica Marshal's Mail Leggings
+							i(77717),	-- Replica Marshal's Plate Legguards
+							i(77684),	-- Replica Marshal's Lamellar Boots
+							i(77685),	-- Replica Marshal's Lamellar Gloves
+							i(77686),	-- Replica Marshal's Lamellar Legplates
+							i(77677),	-- Replica Marshal's Chain Grips
+							i(77642),	-- Replica Lieutenant Commander's Mail Headguard
+							i(77859),	-- Replica Lieutenant Commander's Plate Shoulders
+							i(77716),	-- Replica Marshal's Plate Gauntlets
+							i(77662),	-- Replica Knight-Captain's Lamellar Breastplate
+							i(77661),	-- Replica Knight-Captain's Lamellar Leggings
+							i(77643),	-- Replica Knight-Captain's Mail Legguards
+							i(77641),	-- Replica Knight-Captain's Mail Hauberk
+							i(77761),	-- Replica Knight-Captain's Chain Hauberk
+							i(77769),	-- Replica Knight-Captain's Chain Legguards
+							i(77858),	-- Replica Knight-Captain's Plate Hauberk
+							i(77864),	-- Replica Knight-Captain's Plate Leggings
+							i(77644),	-- Replica Knight-Lieutenant's Mail Greaves
 							i(120977),	-- Replica Knight-Lieutenant's Plate Waistguard
-							i( 77646),	-- Replica Knight-Lieutenant's Mail Vices
-							i( 77735),	-- Replica Knight-Lieutenant's Plate Greaves
-							i( 77734),	-- Replica Knight-Lieutenant's Plate Gauntlets
-							i( 77727),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
-							i( 77726),	-- Replica Knight-Lieutenant's Lamellar Sabatons
-							i( 77723),	-- Replica Knight-Lieutenant's Chain Greaves
-							i( 77722),	-- Replica Knight-Lieutenant's Chain Vices
+							i(77646),	-- Replica Knight-Lieutenant's Mail Vices
+							i(77735),	-- Replica Knight-Lieutenant's Plate Greaves
+							i(77734),	-- Replica Knight-Lieutenant's Plate Gauntlets
+							i(77727),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
+							i(77726),	-- Replica Knight-Lieutenant's Lamellar Sabatons
+							i(77723),	-- Replica Knight-Lieutenant's Chain Greaves
+							i(77722),	-- Replica Knight-Lieutenant's Chain Vices
 							i(120983),	-- Replica Knight-Lieutenant's Chain Belt
 							i(120982),	-- Replica Knight-Lieutenant's Mail Links
 							i(120981),	-- Replica Knight-Lieutenant's Lamellar Girdle
-							i( 77625),	-- Replica Knight-Lieutenant's Lamellar Sabatons
-							i( 77607),	-- Replica Lieutenant Commander's Chain Pauldrons
-							i( 77659),	-- Replica Sergeant Major's Plate Wristguards
-							i( 77658),	-- Replica Knight-Lieutenant's Plate Boots
-							i( 77657),	-- Replica Lieutenant Commander's Plate Pauldrons
-							i( 77656),	-- Replica Lieutenant Commander's Plate Helm
-							i( 77655),	-- Replica Knight-Captain's Plate Leggings
-							i( 77654),	-- Replica Knight-Captain's Plate Chestguard
-							i( 77653),	-- Replica Knight-Lieutenant's Plate Gauntlets
-							i( 77626),	-- Replica Knight-Captain's Lamellar Breastplate
-							i( 77608),	-- Replica Knight-Captain's Chain Hauberk
-							i( 77624),	-- Replica Lieutenant Commander's Lamellar Headguard
-							i( 77623),	-- Replica Knight-Captain's Lamellar Leggings
-							i( 77622),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
-							i( 77621),	-- Replica Lieutenant Commander's Lamellar Shoulders
-							i( 77612),	-- Replica Sergeant Major's Chain Armguards
-							i( 77611),	-- Replica Knight-Captain's Chain Leggings
-							i( 77610),	-- Replica Knight-Lieutenant's Chain Gauntlets
-							i( 77609),	-- Replica Lieutenant Commander's Chain Helmet
-							i( 77606),	-- Replica Knight-Lieutenant's Chain Boots
-							i( 77660),	-- Replica Sergeant Major's Plate Wristguards					
+							i(77625),	-- Replica Knight-Lieutenant's Lamellar Sabatons
+							i(77607),	-- Replica Lieutenant Commander's Chain Pauldrons
+							i(77659),	-- Replica Sergeant Major's Plate Wristguards
+							i(77658),	-- Replica Knight-Lieutenant's Plate Boots
+							i(77657),	-- Replica Lieutenant Commander's Plate Pauldrons
+							i(77656),	-- Replica Lieutenant Commander's Plate Helm
+							i(77655),	-- Replica Knight-Captain's Plate Leggings
+							i(77654),	-- Replica Knight-Captain's Plate Chestguard
+							i(77653),	-- Replica Knight-Lieutenant's Plate Gauntlets
+							i(77626),	-- Replica Knight-Captain's Lamellar Breastplate
+							i(77608),	-- Replica Knight-Captain's Chain Hauberk
+							i(77624),	-- Replica Lieutenant Commander's Lamellar Headguard
+							i(77623),	-- Replica Knight-Captain's Lamellar Leggings
+							i(77622),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
+							i(77621),	-- Replica Lieutenant Commander's Lamellar Shoulders
+							i(77612),	-- Replica Sergeant Major's Chain Armguards
+							i(77611),	-- Replica Knight-Captain's Chain Leggings
+							i(77610),	-- Replica Knight-Lieutenant's Chain Gauntlets
+							i(77609),	-- Replica Lieutenant Commander's Chain Helmet
+							i(77606),	-- Replica Knight-Lieutenant's Chain Boots
+							i(77660),	-- Replica Sergeant Major's Plate Wristguards					
 						},
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 					}),
 					n(54648, {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
 						["groups"] = {
-							i( 77897),	-- Replica Warlord's Lamellar Pauldrons
-							i( 77880),	-- Replica Warlord's Chain Shoulders
-							i( 77923),	-- Replica Warlord's Plate Shoulders
-							i( 77914),	-- Replica Warlord's Mail Armor
-							i( 77913),	-- Replica Warlord's Mail Helm
-							i( 77910),	-- Replica Warlord's Mail Spaulders
-							i( 77924),	-- Replica Warlord's Plate Armor
-							i( 77927),	-- Replica Warlord's Plate Headpiece
-							i( 77894),	-- Replica Warlord's Lamellar Faceguard
-							i( 77892),	-- Replica Warlord's Lamellar Chestplate
-							i( 77883),	-- Replica Warlord's Chain Helmet
-							i( 77882),	-- Replica Warlord's Chain Chestpiece
-							i( 77896),	-- Replica General's Lamellar Legplates
-							i( 77911),	-- Replica General's Mail Boots
-							i( 77926),	-- Replica General's Plate Leggings
-							i( 77922),	-- Replica General's Plate Boots
-							i( 77765),	-- Replica Champion's Chain Helm
-							i( 77831),	-- Replica Champion's Mail Pauldrons
-							i( 77832),	-- Replica Champion's Mail Headguard
-							i( 77895),	-- Replica General's Lamellar Gloves
-							i( 77766),	-- Replica Champion's Chain Shoulders
-							i( 77893),	-- Replica General's Lamellar Boots
-							i( 77915),	-- Replica General's Mail Leggings
-							i( 77885),	-- Replica General's Chain Gloves
-							i( 77884),	-- Replica General's Chain Boots
-							i( 77925),	-- Replica General's Plate Gauntlets
-							i( 77871),	-- Replica Champion's Lamellar Headguard
-							i( 77881),	-- Replica General's Chain Legguards
-							i( 77912),	-- Replica General's Mail Gauntlets
-							i( 77872),	-- Replica Champion's Lamellar Shoulders
-							i( 77868),	-- Replica Champion's Plate Shoulders
-							i( 77869),	-- Replica Champion's Plate Helm
-							i( 77866),	-- Replica Legionnaire's Plate Leggings
-							i( 77829),	-- Replica Legionnaire's Mail Legguards
-							i( 77873),	-- Replica Legionnaire's Lamellar Breastplate
-							i( 77865),	-- Replica Legionnaire's Plate Hauberk
-							i( 77834),	-- Replica Legionnaire's Mail Hauberk
-							i( 77663),	-- Replica Legionnaire's Lamellar Leggings
-							i( 77760),	-- Replica Legionnaire's Chain Legguards
-							i( 77768),	-- Replica Legionnaire's Chain Hauberk
-							i( 77764),	-- Replica Blood Guard's Chain Vices
+							i(77897),	-- Replica Warlord's Lamellar Pauldrons
+							i(77880),	-- Replica Warlord's Chain Shoulders
+							i(77923),	-- Replica Warlord's Plate Shoulders
+							i(77914),	-- Replica Warlord's Mail Armor
+							i(77913),	-- Replica Warlord's Mail Helm
+							i(77910),	-- Replica Warlord's Mail Spaulders
+							i(77924),	-- Replica Warlord's Plate Armor
+							i(77927),	-- Replica Warlord's Plate Headpiece
+							i(77894),	-- Replica Warlord's Lamellar Faceguard
+							i(77892),	-- Replica Warlord's Lamellar Chestplate
+							i(77883),	-- Replica Warlord's Chain Helmet
+							i(77882),	-- Replica Warlord's Chain Chestpiece
+							i(77896),	-- Replica General's Lamellar Legplates
+							i(77911),	-- Replica General's Mail Boots
+							i(77926),	-- Replica General's Plate Leggings
+							i(77922),	-- Replica General's Plate Boots
+							i(77765),	-- Replica Champion's Chain Helm
+							i(77831),	-- Replica Champion's Mail Pauldrons
+							i(77832),	-- Replica Champion's Mail Headguard
+							i(77895),	-- Replica General's Lamellar Gloves
+							i(77766),	-- Replica Champion's Chain Shoulders
+							i(77893),	-- Replica General's Lamellar Boots
+							i(77915),	-- Replica General's Mail Leggings
+							i(77885),	-- Replica General's Chain Gloves
+							i(77884),	-- Replica General's Chain Boots
+							i(77925),	-- Replica General's Plate Gauntlets
+							i(77871),	-- Replica Champion's Lamellar Headguard
+							i(77881),	-- Replica General's Chain Legguards
+							i(77912),	-- Replica General's Mail Gauntlets
+							i(77872),	-- Replica Champion's Lamellar Shoulders
+							i(77868),	-- Replica Champion's Plate Shoulders
+							i(77869),	-- Replica Champion's Plate Helm
+							i(77866),	-- Replica Legionnaire's Plate Leggings
+							i(77829),	-- Replica Legionnaire's Mail Legguards
+							i(77873),	-- Replica Legionnaire's Lamellar Breastplate
+							i(77865),	-- Replica Legionnaire's Plate Hauberk
+							i(77834),	-- Replica Legionnaire's Mail Hauberk
+							i(77663),	-- Replica Legionnaire's Lamellar Leggings
+							i(77760),	-- Replica Legionnaire's Chain Legguards
+							i(77768),	-- Replica Legionnaire's Chain Hauberk
+							i(77764),	-- Replica Blood Guard's Chain Vices
 							i(120991),	-- Replica Blood Guard's Chain Belt
-							i( 77833),	-- Replica Blood Guard's Mail Vices
-							i( 77830),	-- Replica Blood Guard's Mail Greaves
-							i( 77863),	-- Replica Blood Guard's Plate Gauntlets
-							i( 77767),	-- Replica Blood Guard's Chain Greaves
-							i( 77862),	-- Replica Blood Guard's Plate Greaves
-							i( 77928),	-- Replica Blood Guard's Lamellar Sabatons
-							i( 77929),	-- Replica Blood Guard's Lamellar Gauntlets
+							i(77833),	-- Replica Blood Guard's Mail Vices
+							i(77830),	-- Replica Blood Guard's Mail Greaves
+							i(77863),	-- Replica Blood Guard's Plate Gauntlets
+							i(77767),	-- Replica Blood Guard's Chain Greaves
+							i(77862),	-- Replica Blood Guard's Plate Greaves
+							i(77928),	-- Replica Blood Guard's Lamellar Sabatons
+							i(77929),	-- Replica Blood Guard's Lamellar Gauntlets
 							i(120976),	-- Replica Blood Guard's Plate Waistguard
 							i(120980),	-- Replica Blood Guard's Lamellar Girdle
 							i(120990),	-- Replica Blood Guard's Mail Links
-							i( 77861),	-- Replica First Sergeant's Plate Bracers
-							i( 77828),	-- Replica Blood Guard's Mail Walkers
-							i( 77827),	-- Replica Champion's Mail Helm
-							i( 77826),	-- Replica Champion's Mail Shoulders
-							i( 77860),	-- Replica Blood Guard's Plate Gloves
-							i( 77824),	-- Replica Legionnaire's Mail Chestpiece
-							i( 77823),	-- Replica Blood Guard's Mail Grips
-							i( 77857),	-- Replica Legionnaire's Plate Legguards
-							i( 77856),	-- Replica Champion's Plate Pauldrons
-							i( 77759),	-- Replica Champion's Chain Headguard
-							i( 77758),	-- Replica Legionnaire's Chain Leggings
-							i( 77757),	-- Replica Legionnaire's Chain Breastplate
-							i( 77756),	-- Replica Blood Guard's Chain Gauntlets
-							i( 77755),	-- Replica Blood Guard's Chain Boots
-							i( 77855),	-- Replica Champion's Plate Headguard
-							i( 77854),	-- Replica Legionnaire's Plate Armor
-							i( 77853),	-- Replica Blood Guard's Plate Boots
-							i( 77835),	-- Replica First Sergeant's Mail Wristguards
-							i( 77754),	-- Replica Champion's Chain Pauldrons
-							i( 77825),	-- Replica Legionnaire's Mail Leggings				
+							i(77861),	-- Replica First Sergeant's Plate Bracers
+							i(77828),	-- Replica Blood Guard's Mail Walkers
+							i(77827),	-- Replica Champion's Mail Helm
+							i(77826),	-- Replica Champion's Mail Shoulders
+							i(77860),	-- Replica Blood Guard's Plate Gloves
+							i(77824),	-- Replica Legionnaire's Mail Chestpiece
+							i(77823),	-- Replica Blood Guard's Mail Grips
+							i(77857),	-- Replica Legionnaire's Plate Legguards
+							i(77856),	-- Replica Champion's Plate Pauldrons
+							i(77759),	-- Replica Champion's Chain Headguard
+							i(77758),	-- Replica Legionnaire's Chain Leggings
+							i(77757),	-- Replica Legionnaire's Chain Breastplate
+							i(77756),	-- Replica Blood Guard's Chain Gauntlets
+							i(77755),	-- Replica Blood Guard's Chain Boots
+							i(77855),	-- Replica Champion's Plate Headguard
+							i(77854),	-- Replica Legionnaire's Plate Armor
+							i(77853),	-- Replica Blood Guard's Plate Boots
+							i(77835),	-- Replica First Sergeant's Mail Wristguards
+							i(77754),	-- Replica Champion's Chain Pauldrons
+							i(77825),	-- Replica Legionnaire's Mail Leggings				
 						},
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 					}),
 					n(58152, {	-- Tini Smalls <Classic Horde Cloth & Leather>
 						["groups"] = {
-							i( 77900),	-- Replica Warlord's Satin Cowl
-							i( 77874),	-- Replica Warlord's Dragonhide Helmet
-							i( 77919),	-- Replica Warlord's Dreadweave Robe
-							i( 77917),	-- Replica Warlord's Dreadweave Hood
-							i( 77909),	-- Replica Warlord's Leather Helm
-							i( 77908),	-- Replica Warlord's Leather Breastplate
-							i( 77907),	-- Replica Warlord's Leather Spaulders
-							i( 77901),	-- Replica Warlord's Satin Robes
-							i( 77920),	-- Replica Warlord's Dreadweave Mantle
-							i( 77899),	-- Replica Warlord's Satin Mantle
-							i( 77890),	-- Replica Warlord's Silk Amice
-							i( 77889),	-- Replica Warlord's Silk Raiment
-							i( 77886),	-- Replica Warlord's Silk Cowl
-							i( 77878),	-- Replica Warlord's Dragonhide Epaulets
-							i( 77876),	-- Replica Warlord's Dragonhide Hauberk
-							i( 77921),	-- Replica General's Dreadweave Pants
-							i( 77903),	-- Replica General's Satin Boots
-							i( 77902),	-- Replica General's Satin Leggings
-							i( 77916),	-- Replica General's Dreadweave Gloves
-							i( 77752),	-- Replica Champion's Dragonhide Headguard
-							i( 77746),	-- Replica Champion's Dragonhide Shoulders
-							i( 77796),	-- Replica Champion's Satin Mantle
-							i( 77918),	-- Replica General's Dreadweave Boots
-							i( 77898),	-- Replica General's Satin Gloves
-							i( 77891),	-- Replica General's Silk Trousers
-							i( 77778),	-- Replica Champion's Silk Cowl
-							i( 77779),	-- Replica Champion's Silk Mantle
-							i( 77888),	-- Replica General's Silk Boots
-							i( 77887),	-- Replica General's Silk Handguards
-							i( 77815),	-- Replica Champion's Leather Helm
-							i( 77795),	-- Replica Champion's Satin Hood
-							i( 77819),	-- Replica Champion's Leather Shoulders
-							i( 77879),	-- Replica General's Dragonhide Gloves
-							i( 77906),	-- Replica General's Leather Legguards
-							i( 77877),	-- Replica General's Dragonhide Leggings
-							i( 77905),	-- Replica General's Leather Mitts
-							i( 77875),	-- Replica General's Dragonhide Boots
-							i( 77904),	-- Replica General's Leather Treads
-							i( 77845),	-- Replica Champion's Dreadweave Cowl
-							i( 77846),	-- Replica Champion's Dreadweave Spaulders
-							i( 77781),	-- Replica Legionnaire's Silk Tunic
-							i( 77782),	-- Replica Legionnaire's Silk Legguards
-							i( 77798),	-- Replica Legionnaire's Satin Legguards
-							i( 77802),	-- Replica Legionnaire's Satin Tunic
-							i( 77818),	-- Replica Legionnaire's Leather Legguards
-							i( 77749),	-- Replica Legionnaire's Dragonhide Chestpiece
-							i( 77852),	-- Replica Legionnaire's Dreadweave Legguards
-							i( 77744),	-- Replica Legionnaire's Dragonhide Leggings
-							i( 77821),	-- Replica Legionnaire's Leather Chestpiece
-							i( 77851),	-- Replica Legionnaire's Dreadweave Tunic
-							i( 77750),	-- Replica Blood Guard's Dragonhide Grips
-							i( 77803),	-- Replica Blood Guard's Satin Handwraps
-							i( 77804),	-- Replica Blood Guard's Satin Walkers
+							i(77900),	-- Replica Warlord's Satin Cowl
+							i(77874),	-- Replica Warlord's Dragonhide Helmet
+							i(77919),	-- Replica Warlord's Dreadweave Robe
+							i(77917),	-- Replica Warlord's Dreadweave Hood
+							i(77909),	-- Replica Warlord's Leather Helm
+							i(77908),	-- Replica Warlord's Leather Breastplate
+							i(77907),	-- Replica Warlord's Leather Spaulders
+							i(77901),	-- Replica Warlord's Satin Robes
+							i(77920),	-- Replica Warlord's Dreadweave Mantle
+							i(77899),	-- Replica Warlord's Satin Mantle
+							i(77890),	-- Replica Warlord's Silk Amice
+							i(77889),	-- Replica Warlord's Silk Raiment
+							i(77886),	-- Replica Warlord's Silk Cowl
+							i(77878),	-- Replica Warlord's Dragonhide Epaulets
+							i(77876),	-- Replica Warlord's Dragonhide Hauberk
+							i(77921),	-- Replica General's Dreadweave Pants
+							i(77903),	-- Replica General's Satin Boots
+							i(77902),	-- Replica General's Satin Leggings
+							i(77916),	-- Replica General's Dreadweave Gloves
+							i(77752),	-- Replica Champion's Dragonhide Headguard
+							i(77746),	-- Replica Champion's Dragonhide Shoulders
+							i(77796),	-- Replica Champion's Satin Mantle
+							i(77918),	-- Replica General's Dreadweave Boots
+							i(77898),	-- Replica General's Satin Gloves
+							i(77891),	-- Replica General's Silk Trousers
+							i(77778),	-- Replica Champion's Silk Cowl
+							i(77779),	-- Replica Champion's Silk Mantle
+							i(77888),	-- Replica General's Silk Boots
+							i(77887),	-- Replica General's Silk Handguards
+							i(77815),	-- Replica Champion's Leather Helm
+							i(77795),	-- Replica Champion's Satin Hood
+							i(77819),	-- Replica Champion's Leather Shoulders
+							i(77879),	-- Replica General's Dragonhide Gloves
+							i(77906),	-- Replica General's Leather Legguards
+							i(77877),	-- Replica General's Dragonhide Leggings
+							i(77905),	-- Replica General's Leather Mitts
+							i(77875),	-- Replica General's Dragonhide Boots
+							i(77904),	-- Replica General's Leather Treads
+							i(77845),	-- Replica Champion's Dreadweave Cowl
+							i(77846),	-- Replica Champion's Dreadweave Spaulders
+							i(77781),	-- Replica Legionnaire's Silk Tunic
+							i(77782),	-- Replica Legionnaire's Silk Legguards
+							i(77798),	-- Replica Legionnaire's Satin Legguards
+							i(77802),	-- Replica Legionnaire's Satin Tunic
+							i(77818),	-- Replica Legionnaire's Leather Legguards
+							i(77749),	-- Replica Legionnaire's Dragonhide Chestpiece
+							i(77852),	-- Replica Legionnaire's Dreadweave Legguards
+							i(77744),	-- Replica Legionnaire's Dragonhide Leggings
+							i(77821),	-- Replica Legionnaire's Leather Chestpiece
+							i(77851),	-- Replica Legionnaire's Dreadweave Tunic
+							i(77750),	-- Replica Blood Guard's Dragonhide Grips
+							i(77803),	-- Replica Blood Guard's Satin Handwraps
+							i(77804),	-- Replica Blood Guard's Satin Walkers
 							i(120984),	-- Replica Blood Guard's Dragonhide Belt
 							i(120988),	-- Replica Blood Guard's Satin Waistwrap
 							i(120987),	-- Replica Blood Guard's Silk Cinch
 							i(120986),	-- Replica Blood Guard's Dreadweave Wrap
-							i( 77747),	-- Replica Blood Guard's Dragonhide Treads
-							i( 77783),	-- Replica Blood Guard's Silk Handwraps
-							i( 77773),	-- Replica Blood Guard's Silk Walkers
-							i( 77843),	-- Replica Blood Guard's Dreadweave Walkers
+							i(77747),	-- Replica Blood Guard's Dragonhide Treads
+							i(77783),	-- Replica Blood Guard's Silk Handwraps
+							i(77773),	-- Replica Blood Guard's Silk Walkers
+							i(77843),	-- Replica Blood Guard's Dreadweave Walkers
 							i(120985),	-- Replica Blood Guard's Leather Clasp
-							i( 77816),	-- Replica Blood Guard's Leather Walkers
-							i( 77849),	-- Replica Blood Guard's Dreadweave Handwraps
-							i( 77817),	-- Replica Blood Guard's Leather Grips
-							i( 77791),	-- Replica Blood Guard's Satin Gloves
-							i( 77842),	-- Replica Champion's Dreadweave Shoulders
-							i( 77840),	-- Replica Blood Guard's Dreadweave Gloves
-							i( 77839),	-- Replica Blood Guard's Dreadweave Boots
-							i( 77838),	-- Replica Legionnaire's Dreadweave Leggings
-							i( 77837),	-- Replica Champion's Dreadweave Hood
-							i( 77738),	-- Replica Legionnaire's Dragonhide Breastplate
-							i( 77737),	-- Replica Champion's Dragonhide Spaulders
-							i( 77814),	-- Replica First Sergeant's Leather Armguards
-							i( 77810),	-- Replica Blood Guard's Leather Vices
-							i( 77809),	-- Replica Blood Guard's Leather Treads
-							i( 77808),	-- Replica Legionnaire's Leather Hauberk
-							i( 77807),	-- Replica Legionnaire's Leather Leggings
-							i( 77806),	-- Replica Champion's Leather Mantle
-							i( 77805),	-- Replica Champion's Leather Headguard
-							i( 77794),	-- Replica Legionnaire's Satin Trousers
-							i( 77793),	-- Replica Legionnaire's Satin Vestments
-							i( 77792),	-- Replica Champion's Satin Cowl
-							i( 77841),	-- Replica Legionnaire's Dreadweave Robe
-							i( 77790),	-- Replica Blood Guard's Satin Boots
-							i( 77789),	-- Replica Champion's Satin Shoulderpads
-							i( 77739),	-- Replica Champion's Dragonhide Helm
-							i( 77786),	-- Replica First Sergeant's Silk Cuffs
-							i( 77776),	-- Replica Champion's Silk Hood
-							i( 77775),	-- Replica Blood Guard's Silk Gloves
-							i( 77774),	-- Replica Legionnaire's Silk Pants
-							i( 77772),	-- Replica Champion's Silk Shoulderpads
-							i( 77771),	-- Replica Blood Guard's Silk Footwraps
-							i( 77770),	-- Replica Legionnaire's Silk Robes
-							i( 77740),	-- Replica Legionnaire's Dragonhide Trousers
-							i( 77743),	-- Replica First Sergeant's Dragonhide Armguards
-							i( 77741),	-- Replica Blood Guard's Dragonhide Gauntlets
-							i( 77736),	-- Replica Blood Guard's Dragonhide Boots
-							i( 77753),	-- Replica First Sergeant's Dragonhide Armguards
-							i( 77788),	-- Replica First Sergeant's Silk Cuffs
-							i( 77822),  -- Replica First Sergeant's Leather Armguards
+							i(77816),	-- Replica Blood Guard's Leather Walkers
+							i(77849),	-- Replica Blood Guard's Dreadweave Handwraps
+							i(77817),	-- Replica Blood Guard's Leather Grips
+							i(77791),	-- Replica Blood Guard's Satin Gloves
+							i(77842),	-- Replica Champion's Dreadweave Shoulders
+							i(77840),	-- Replica Blood Guard's Dreadweave Gloves
+							i(77839),	-- Replica Blood Guard's Dreadweave Boots
+							i(77838),	-- Replica Legionnaire's Dreadweave Leggings
+							i(77837),	-- Replica Champion's Dreadweave Hood
+							i(77738),	-- Replica Legionnaire's Dragonhide Breastplate
+							i(77737),	-- Replica Champion's Dragonhide Spaulders
+							i(77814),	-- Replica First Sergeant's Leather Armguards
+							i(77810),	-- Replica Blood Guard's Leather Vices
+							i(77809),	-- Replica Blood Guard's Leather Treads
+							i(77808),	-- Replica Legionnaire's Leather Hauberk
+							i(77807),	-- Replica Legionnaire's Leather Leggings
+							i(77806),	-- Replica Champion's Leather Mantle
+							i(77805),	-- Replica Champion's Leather Headguard
+							i(77794),	-- Replica Legionnaire's Satin Trousers
+							i(77793),	-- Replica Legionnaire's Satin Vestments
+							i(77792),	-- Replica Champion's Satin Cowl
+							i(77841),	-- Replica Legionnaire's Dreadweave Robe
+							i(77790),	-- Replica Blood Guard's Satin Boots
+							i(77789),	-- Replica Champion's Satin Shoulderpads
+							i(77739),	-- Replica Champion's Dragonhide Helm
+							i(77786),	-- Replica First Sergeant's Silk Cuffs
+							i(77776),	-- Replica Champion's Silk Hood
+							i(77775),	-- Replica Blood Guard's Silk Gloves
+							i(77774),	-- Replica Legionnaire's Silk Pants
+							i(77772),	-- Replica Champion's Silk Shoulderpads
+							i(77771),	-- Replica Blood Guard's Silk Footwraps
+							i(77770),	-- Replica Legionnaire's Silk Robes
+							i(77740),	-- Replica Legionnaire's Dragonhide Trousers
+							i(77743),	-- Replica First Sergeant's Dragonhide Armguards
+							i(77741),	-- Replica Blood Guard's Dragonhide Gauntlets
+							i(77736),	-- Replica Blood Guard's Dragonhide Boots
+							i(77753),	-- Replica First Sergeant's Dragonhide Armguards
+							i(77788),	-- Replica First Sergeant's Silk Cuffs
+							i(77822),  -- Replica First Sergeant's Leather Armguards
 						},
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 					}),

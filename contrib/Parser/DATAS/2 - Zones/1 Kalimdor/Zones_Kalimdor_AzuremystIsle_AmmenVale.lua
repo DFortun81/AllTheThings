@@ -105,7 +105,7 @@ _.Zones =
 								o(190037, {	-- Candy Bucket
 									qa(12333),	-- Candy Bucket
 								}),
-								qg( 24519, qa( 12135)),	-- "Let the Fires Come!" (QG and quest also in Elwynn Forest and Dun Morogh)
+								qg(24519, qa( 12135)),	-- "Let the Fires Come!" (QG and quest also in Elwynn Forest and Dun Morogh)
 								o(186887, {	-- Large Jack-o'-Lantern (QG also in Dun Morogh, Elwynn Forest, Eversong Woods, and Tirisfal Glades)
 									qa(12133),	-- Smash the Pumpkin
 									}),
@@ -197,16 +197,16 @@ _.Zones =
 						},
 						["classes"] = {11},
 					})),
-					n( 17591, {	-- Blood Elf Bandit
+					n(17591, {	-- Blood Elf Bandit
 						i(23910, {	-- Blood Elf Communications
 							qa( 9616),	-- Bandits!
 							}),
 					}),
 --]]					
 					qg(17442, qa( 9560, { 	-- Beasts of the Apocalypse!
-						i( 24108),
-						i( 24107),
-						i( 24109),
+						i(24108),
+						i(24107),
+						i(24109),
 						i(131257),
 					})),
 --[[					
@@ -230,7 +230,7 @@ _.Zones =
 						qa(9566),	-- Blood Crystals
 					}),
 					qg(17445, qa( 9573)),	-- Chieftain Oomooroo
-					qg(  620, q(  3861)),	-- CLUCK!
+					qg(620, q(3861)),	-- CLUCK!
 					qg(17116, qa( 9623)),	-- Coming of Age
 					qg(17246, qa( 9512)),	-- Cookie's Jumbo Gumbo
 					qg(17240, qa( 9602)),	-- Deliver Them From Evil...
@@ -239,9 +239,9 @@ _.Zones =
 					n(17475, {	-- Murgurgula
 						i(23850, {	-- Gurf's Dignity
 							qa( 9564, {	-- Gurf's Dignity
-								i( 24440),
-								i( 24439),
-								i( 24438),
+								i(24440),
+								i(24439),
+								i(24438),
 								i(131258),
 							}),
 						}),
@@ -282,7 +282,7 @@ _.Zones =
 					qg(17440, qa( 9565)),	-- Search Stillpine Hold
 					qg(17240, qa( 9537)),	-- Show Gnomercy
 					qg(17114, qa( 9559)),	-- Stillpine Hold
-					n( 17202, {	-- Infected Nightstalker Runt
+					n(17202, {	-- Infected Nightstalker Runt
 						i(23678, {	-- Faintly Glowing Crystal
 							q(9455),	-- Strange Findings
 						}),

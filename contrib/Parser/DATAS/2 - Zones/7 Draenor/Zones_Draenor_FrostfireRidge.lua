@@ -105,33 +105,33 @@ _.Zones =
 					qh( 34228),	-- A Clew of Worms
 					qh( 34067),	-- A Collection of Coils
 					qh( 34264),	-- A Collection of Coils
-					q( 33957),	-- A Gift for Raa'la
+					q(33957),	-- A Gift for Raa'la
 					qh( 34592),	-- A Gronnling Problem
 					qh( 33125),	-- A Proper Parting
 					qh( 33815),	-- A Song of Frost and Fire
 					qh( 39676),	-- A True Naval Commander
-					q( 35346),	-- Abatha, the Alchemist
+					q(35346),	-- Abatha, the Alchemist
 					qh( 34280),	-- All is Revealed
-					q( 35292),	-- Ang'kra, the Alchemist
+					q(35292),	-- Ang'kra, the Alchemist
 					qh( 33344),	-- Armed and Dangerous
 					qh( 32804),	-- Articles of the Fallen
-					q( 34321),	-- Ashes Of The Past
+					q(34321),	-- Ashes Of The Past
 					qh( 34070),	-- At the End of Your Rope
 					qh( 37014),	-- Auctioning for Parts
 					qh( 33473),	-- Back to Bladespire Citadel
 					qh( 34375),	-- Back to Work
-					q( 33443),	-- Barrier Destroyed
-					q( 39783),	-- Battle Pet - Terky
+					q(33443),	-- Barrier Destroyed
+					q(39783),	-- Battle Pet - Terky
 					qh( 34730),	-- Blood Oath of Lokra
 					qh( 34729),	-- Blood Oath of Na'Shra
 					qh( 36345),	-- Breaking into the Trap Game
 					qh( 34073),	-- Burn Them Down
 					qa( 36916),	-- Capturing a Clefthoof
 					qh( 36912),	-- Capturing a Clefthoof
-					q( 33456),	-- Catapult Vision
-					q( 33458),	-- Catapult Vision
-					q( 33457),	-- Catapult Vision
-					q( 35252),	-- Chest Reward Tracking Quest
+					q(33456),	-- Catapult Vision
+					q(33458),	-- Catapult Vision
+					q(33457),	-- Catapult Vision
+					q(35252),	-- Chest Reward Tracking Quest
 					qh( 37049),	-- Clefthoof Training: Rakkiri
 					qa( 36984),	-- Clefthoof Training: Rakkiri
 					qh( 33546),	-- Deeds Left Undone
@@ -142,33 +142,33 @@ _.Zones =
 					qh( 36137),	-- Easing into Lumberjacking
 					qh( 34292),	-- Eliminate the Shadow Council
 					qh( 34293),	-- Eliminate the Shadow Council
-					q( 34063),	-- Enemies Above
+					q(34063),	-- Enemies Above
 					qh( 32994),	-- Enfilade
-					q( 34473),	-- Envoy's Log
+					q(34473),	-- Envoy's Log
 					qh( 39675),	-- Equipping Our Fleet
 					qh( 34378),	-- Establish Your Garrison
 					qh( 34230),	-- Eye Need That
-					q( 34325),	-- Flames Of The Earth
+					q(34325),	-- Flames Of The Earth
 					qh( 34364),	-- For the Horde!
-					q( 34505),	-- Forbidden Glacier
+					q(34505),	-- Forbidden Glacier
 					qh( 33807),	-- Free Our Brothers and Sisters
-					q( 34501),	-- Frostbite Hollow
+					q(34501),	-- Frostbite Hollow
 					qh( 34346),	-- Frosted Fury
-					q( 34714),	-- Frostfire Ridge: (RRP) - Treasure - Pale Leather Cache
+					q(34714),	-- Frostfire Ridge: (RRP) - Treasure - Pale Leather Cache
 					qh( 32783),	-- Ga'nar's Vengeance
-					q( 37544),	-- Garrison Follower: Greatmother Geyah
-					q( 37545),	-- Garrison Follower: Kal'gor the Honorable
+					q(37544),	-- Garrison Follower: Greatmother Geyah
+					q(37545),	-- Garrison Follower: Kal'gor the Honorable
 					qh( 34093),	-- Getting the Points
 					qh( 34069),	-- Getting the Points
 					qh( 33784),	-- Gormaul Tower
 					qh( 33408),	-- Great Balls of Fire!
-					q( 33145),	-- Grimfrost Hill
+					q(33145),	-- Grimfrost Hill
 					qh( 37995),	-- Gronnsbane: The Blessing of Beasts
 					qa( 37919),	-- Gronnsbane: The Blessing of Beasts
 					qa( 37917),	-- Gronnsbane: The Blessing of Fire
-					q( 37918),	-- Gronnsbane: The Blessing of Frost
+					q(37918),	-- Gronnsbane: The Blessing of Frost
 					qh( 37916),	-- Gronnsbane: The Broken Spear
-					q( 39651),	-- Grumpus
+					q(39651),	-- Grumpus
 					qh( 33132),	-- Gut Guttra
 					qh( 34291),	-- Have a Heart
 					qh( 33816),	-- Honor Has Its Rewards
@@ -187,7 +187,7 @@ _.Zones =
 					qh( 37060),	-- Lost in Transition
 					qh( 34344),	-- Lurkers
 					qh( 33955),	-- Missing Pack
-					q( 34079),	-- Mission Successful
+					q(34079),	-- Mission Successful
 					qh( 33412),	-- Mopping Up
 					qh( 33657),	-- Moving In
 					qh( 32992),	-- Moving Target
@@ -214,7 +214,7 @@ _.Zones =
 					qh( 33013),	-- Of Fire and Thunder
 					qh( 34402),	-- Of Wolves and Warriors
 					qh( 32981),	-- Only the Winner
-					q( 36296),	-- Phylarch the Evergreen
+					q(36296),	-- Phylarch the Evergreen
 					qh( 33470),	-- Pool of Visions
 					qh( 34345),	-- Poulticide
 					qh( 34380),	-- Rally the Frostwolves
@@ -225,7 +225,7 @@ _.Zones =
 					qa( 37092),	-- Scraps of Iron
 					qh( 37043),	-- Scraps of Iron
 					qh( 32989),	-- Securing the South
-					q( 34733),	-- Services of Dagg
+					q(34733),	-- Services of Dagg
 					qh( 36142),	-- Sharper Blades, Bigger Timber
 					qh( 39242),	-- Ship Shape
 					qh( 39241),	-- Shipbuilding
@@ -238,7 +238,7 @@ _.Zones =
 					qh( 37094),	-- Talbuk Training: Rakkiri
 					qh( 34072),	-- Tar Get of Opportunity
 					qh( 34124),	-- The Battle of Thunder Pass
-					q( 34588),	-- The Bounty of Bladespire
+					q(34588),	-- The Bounty of Bladespire
 					qh( 33410),	-- The Butcher of Bladespire
 					qh( 33454),	-- The Cure
 					qh( 35243),	-- The Dark Lady's Gift
@@ -257,7 +257,7 @@ _.Zones =
 					qh( 34960),	-- The Land Provides
 					qh( 34102),	-- The Mark of Defiance
 					qh( 33828),	-- The Master Siegesmith
-					q( 34377),	-- The Portal Home
+					q(34377),	-- The Portal Home
 					qh( 34348),	-- The Real Prey
 					qh( 36427),	-- The Rise and Fall of Barov Industries: Alexi Barov
 					qa( 36429),	-- The Rise and Fall of Barov Industries: Weldon Barov
@@ -268,8 +268,8 @@ _.Zones =
 					qh( 33526),	-- These Colors Don't Run
 					qh( 32929),	-- They Rely on Numbers
 					qh( 32990),	-- They Who Held Fast
-					q( 33441),	-- Thrall Vision
-					q( 33462),	-- Thunderlord for a Day
+					q(33441),	-- Thrall Vision
+					q(33462),	-- Thunderlord for a Day
 					qh( 34295),	-- To Capture Gul'dan
 					qh( 32796),	-- To the Garrison
 					qh( 33622),	-- To the Slaughter

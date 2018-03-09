@@ -108,16 +108,16 @@ _.Zones =
 					qa( 32315),	-- Anduin's Plea
 					qh( 31377),	-- Attack At The Temple of the Jade Serpent
 					qa( 31376),	-- Attack At The Temple of the Jade Serpent
-					q( 32603),	-- Beasts of Fable
-					q( 32604),	-- Beasts of Fable Book I
-					q( 32868),	-- Beasts of Fable Book II
-					q( 32869),	-- Beasts of Fable Book III
-					q( 31847),	-- Better Dead than Dread
-					q( 31895),	-- Better Off Dread
-					q( 31055),	-- Between a Saurok and a Hard Place
-					q( 30266),	-- Bloodied Skies
+					q(32603),	-- Beasts of Fable
+					q(32604),	-- Beasts of Fable Book I
+					q(32868),	-- Beasts of Fable Book II
+					q(32869),	-- Beasts of Fable Book III
+					q(31847),	-- Better Dead than Dread
+					q(31895),	-- Better Off Dread
+					q(31055),	-- Between a Saurok and a Hard Place
+					q(30266),	-- Bloodied Skies
 					qh( 32242),	-- Buried Secrets
-					q( 32044),	-- Candy Bucket
+					q(32044),	-- Candy Bucket
 					qa( 32052),	-- Candy Bucket
 					qh( 32022),	-- Candy Bucket
 					qh( 31379),	-- Challenge At The Temple of the Red Crane
@@ -134,84 +134,84 @@ _.Zones =
 					qh( 32503),	-- Desecrate this Fire!
 					qh( 11745),	-- Desecrate this Fire!
 					qa( 11755),	-- Desecrate this Fire!
-					q( 31886),	-- Dread Space
-					q( 31000),	-- Dread Space
-					q( 31486),	-- Everything I Know About Cooking
-					q( 31279),	-- Everything I Know About Cooking
-					q( 31001),	-- Falling Down
-					q( 31094),	-- Fish Tales
-					q( 32602),	-- Gods and Monsters
-					q( 31951),	-- Grand Master Aki
-					q( 31958),	-- Grand Master Aki
+					q(31886),	-- Dread Space
+					q(31000),	-- Dread Space
+					q(31486),	-- Everything I Know About Cooking
+					q(31279),	-- Everything I Know About Cooking
+					q(31001),	-- Falling Down
+					q(31094),	-- Fish Tales
+					q(32602),	-- Gods and Monsters
+					q(31951),	-- Grand Master Aki
+					q(31958),	-- Grand Master Aki
 					qa( 32316),	-- Heart Of The Alliance
-					q( 31097),	-- Heart of the Mantid Swarm
+					q(31097),	-- Heart of the Mantid Swarm
 					qa( 32510),	-- Honor the Flame
 					qh( 32509),	-- Honor the Flame
-					q( 31093),	-- Hozen in the Mist
+					q(31093),	-- Hozen in the Mist
 					qa( 11964),	-- Incense for the Summer Scorchlings
 					qh( 33232),	-- Journey to the Timeless Isle
 					qa( 33231),	-- Journey to the Timeless Isle
-					q(  8867),	-- Lunar Fireworks
-					q( 30243),	-- Mantid Under Fire
+					q(8867),	-- Lunar Fireworks
+					q(30243),	-- Mantid Under Fire
 					qh( 32249),	-- Meet the Scout
 					qa( 32246),	-- Meet the Scout
-					q( 31002),	-- Nope
-					q( 32428),	-- Pandaren Spirit Tamer
-					q( 32687),	-- Pristine Ancient Sap Feeder
-					q( 31802),	-- Pristine Apothecary Tins
-					q( 32686),	-- Pristine Banner of the Mantid Empire
-					q( 31793),	-- Pristine Branding Iron
-					q( 31800),	-- Pristine Carved Bronze Mirror
-					q( 31791),	-- Pristine Edicts of the Thunder King
-					q( 31799),	-- Pristine Empty Keg
-					q( 31796),	-- Pristine Game Board
-					q( 31801),	-- Pristine Gold-Inlaid Figurine
-					q( 31792),	-- Pristine Iron Amulet
-					q( 32693),	-- Pristine Kypari Sap Container
-					q( 31786),	-- Pristine Manacles of Rebellion
-					q( 32691),	-- Pristine Mantid Lamp
-					q( 31794),	-- Pristine Mogu Coin
-					q( 31787),	-- Pristine Mogu Runestone
-					q( 31805),	-- Pristine Monument Ledger
-					q( 31795),	-- Pristine Pandaren Tea Set
-					q( 31803),	-- Pristine Pearl of Yu'lon
-					q( 31789),	-- Pristine Petrified Bone Whip
-					q( 32692),	-- Pristine Pollen Collector
-					q( 32688),	-- Pristine Praying Mantid
-					q( 32690),	-- Pristine Remains of a Paragon
-					q( 32689),	-- Pristine Sound Beacon				
-					q( 31804),	-- Pristine Standard of Niuzao
-					q( 31788),	-- Pristine Terracotta Arm
-					q( 31790),	-- Pristine Thunder King Insignia
-					q( 31797),	-- Pristine Twin Stein Set
-					q( 31798),	-- Pristine Walking Cane
+					q(31002),	-- Nope
+					q(32428),	-- Pandaren Spirit Tamer
+					q(32687),	-- Pristine Ancient Sap Feeder
+					q(31802),	-- Pristine Apothecary Tins
+					q(32686),	-- Pristine Banner of the Mantid Empire
+					q(31793),	-- Pristine Branding Iron
+					q(31800),	-- Pristine Carved Bronze Mirror
+					q(31791),	-- Pristine Edicts of the Thunder King
+					q(31799),	-- Pristine Empty Keg
+					q(31796),	-- Pristine Game Board
+					q(31801),	-- Pristine Gold-Inlaid Figurine
+					q(31792),	-- Pristine Iron Amulet
+					q(32693),	-- Pristine Kypari Sap Container
+					q(31786),	-- Pristine Manacles of Rebellion
+					q(32691),	-- Pristine Mantid Lamp
+					q(31794),	-- Pristine Mogu Coin
+					q(31787),	-- Pristine Mogu Runestone
+					q(31805),	-- Pristine Monument Ledger
+					q(31795),	-- Pristine Pandaren Tea Set
+					q(31803),	-- Pristine Pearl of Yu'lon
+					q(31789),	-- Pristine Petrified Bone Whip
+					q(32692),	-- Pristine Pollen Collector
+					q(32688),	-- Pristine Praying Mantid
+					q(32690),	-- Pristine Remains of a Paragon
+					q(32689),	-- Pristine Sound Beacon				
+					q(31804),	-- Pristine Standard of Niuzao
+					q(31788),	-- Pristine Terracotta Arm
+					q(31790),	-- Pristine Thunder King Insignia
+					q(31797),	-- Pristine Twin Stein Set
+					q(31798),	-- Pristine Walking Cane
 					qh( 33249),	-- Proving Grounds
 					qa( 33248),	-- Proving Grounds
-					q( 31288),	-- Research Project: The Mogu Dynasties
-					q( 31289),	-- Research Project: The Pandaren Empire
+					q(31288),	-- Research Project: The Mogu Dynasties
+					q(31289),	-- Research Project: The Pandaren Empire
 					qh( 32256),	-- Rise Of An Empire
-					q( 30261),	-- Roll Club: Serpent's Spine
-					q( 32601),	-- Rumbles of Thunder
+					q(30261),	-- Roll Club: Serpent's Spine
+					q(32601),	-- Rumbles of Thunder
 					qa( 32683),	-- So You Want to Be a Blacksmith...
 					qh( 32726),	-- So You Want to Be a Blacksmith...
-					q( 30242),	-- Survival Ring: Blades
-					q( 30240),	-- Survival Ring: Flame
+					q(30242),	-- Survival Ring: Blades
+					q(30240),	-- Survival Ring: Flame
 					qh( 31370),	-- The Anglers
 					qa( 31369),	-- The Anglers
-					q( 31103),	-- The Ballad of Liu Lang
-					q( 30306),	-- The Battle Ring
-					q( 43338),	-- The Codex of Ra
-					q( 43334),	-- The Coming Storm
-					q( 30277),	-- The Crumbling Hall
-					q( 31095),	-- The Dark Heart of the Mogu
-					q( 36881),	-- The Dark Portal
+					q(31103),	-- The Ballad of Liu Lang
+					q(30306),	-- The Battle Ring
+					q(43338),	-- The Codex of Ra
+					q(43334),	-- The Coming Storm
+					q(30277),	-- The Crumbling Hall
+					q(31095),	-- The Dark Heart of the Mogu
+					q(36881),	-- The Dark Portal
 					qa( 31384),	-- The Golden Lotus
 					qh( 31385),	-- The Golden Lotus
-					q( 31876),	-- The Inkmasters of the Arboretum
-					q( 32806),	-- The King and the Council
+					q(31876),	-- The Inkmasters of the Arboretum
+					q(32806),	-- The King and the Council
 					qa( 31390),	-- The Klaxxi
 					qh( 31391),	-- The Klaxxi
-					q( 31016),	-- The Lorewalkers
+					q(31016),	-- The Lorewalkers
 					qa( 31367),	-- The Lorewalkers
 					qh( 31368),	-- The Lorewalkers
 					qa(  8871),	-- The Lunar Festival
@@ -222,32 +222,32 @@ _.Zones =
 					qa(  8870),	-- The Lunar Festival
 					qa( 31373),	-- The Order of the Cloud Serpent
 					qh( 31375),	-- The Order of the Cloud Serpent
-					q( 31102),	-- The Seven Burdens of Shaohao
+					q(31102),	-- The Seven Burdens of Shaohao
 					qh( 31388),	-- The Shado-Pan Offensive
 					qa( 31386),	-- The Shado-Pan Offensive
-					q( 31100),	-- The Song of the Yaungol
-					q( 31656),	-- The Threat in the South
-					q( 30280),	-- The Thunder Below
+					q(31100),	-- The Song of the Yaungol
+					q(31656),	-- The Threat in the South
+					q(30280),	-- The Thunder Below
 					qa( 31372),	-- The Tillers
 					qh( 31374),	-- The Tillers
-					q( 39771),	-- The Voice of Thunder
-					q( 32807),	-- The Warchief and the Darkness
-					q( 32600),	-- The Zandalari Prophecy
+					q(39771),	-- The Voice of Thunder
+					q(32807),	-- The Warchief and the Darkness
+					q(32600),	-- The Zandalari Prophecy
 					qa( 32679),	-- Thunder Calls
 					qh( 32678),	-- Thunder Calls
 					qa( 31380),	-- Trial At The Temple of the White Tiger
 					qh( 31381),	-- Trial At The Temple of the White Tiger
-					q( 31291),	-- Uncovering the Past
+					q(31291),	-- Uncovering the Past
 					qa( 31387),	-- Understanding The Shado-Pan
 					qh( 31389),	-- Understanding The Shado-Pan
-					q(  8883),	-- Valadar Starsong
+					q(8883),	-- Valadar Starsong
 					qh( 32257),	-- Voice of the Gods
 					qh( 33133),	-- Warforged Seals
 					qa( 33134),	-- Warforged Seals
-					q( 31096),	-- What is Worth Fighting For
-					q( 32863),	-- What We've Been Training For
-					q( 33138),	-- Why Do We Fight?
-					q( 31015),	-- Your Private Collection
+					q(31096),	-- What is Worth Fighting For
+					q(32863),	-- What We've Been Training For
+					q(33138),	-- Why Do We Fight?
+					q(31015),	-- Your Private Collection
 				}),
 --]]
 				n(-16, { 	-- Rares

@@ -94,156 +94,156 @@ _.Zones =
 							["questID"] = 44707,
 						}),
 						n(-17, { -- Quests
-							q( 44057),	-- A "Noble" Event
-							q( 42810),	-- A Final Offer
-							q( 43412),	-- A Hero's Weapon
-							q( 42733),	-- A Very Special Kind of Fuel
-							q( 42682),	-- Additional Accoutrements
-							q( 45180),	-- An Island of War
-							q( 46159),	-- An Urgent Message
-							q( 45993),	-- An Urgent Warning
-							q( 41803),	-- Asking a Favor
-							q( 40247),	-- Asking a Favor
-							q( 42801),	-- Back in Black
-							q( 42679),	-- Broken Warriors
-							q( 44223),	-- Champion Armaments
-							q( 42653),	-- Champion: Akama
-							q( 43184),	-- Champion: Allari the Souleater
-							q( 42690),	-- Champion: Altruis the Sufferer
-							q( 42697),	-- Champion: Asha Ravensong
-							q( 42777),	-- Champion: Belath Dawnblade
-							q( 43185),	-- Champion: Jace Darkweaver
-							q( 42695),	-- Champion: Kayn Sunfury
-							q( 42673),	-- Champion: Kor'vas Bloodthorn
-							q( 45391),	-- Champion: Lady S'theno
-							q( 42701),	-- Champion: Matron Mother Malevolence
-							q( 42664),	-- Champion: Shade of Akama
-							q( 42634),	-- Confrontation at the Black Temple
-							q( 42921),	-- Confrontation at the Black Temple
-							q( 44275),	-- Court of Stars
-							q( 41064),	-- Cursed Forge of the Nathrezim
-							q( 44273),	-- Darkheart Thicket
-							q( 44272),	-- Darkheart Thicket
-							q( 42732),	-- Deadlier Warglaives
-							q( 42787),	-- Deal With It Personally
-							q( 45339),	-- Defense of the Fel Hammer
-							q( 47078),	-- Delivering Lost Knowledge
-							q( 42683),	-- Demonic Improvements
-							q( 45173),	-- Desperate Times
-							q( 41069),	-- Direct Our Wrath
-							q( 41099),	-- Direct Our Wrath
-							q( 43552),	-- Eye of Azshara
-							q( 44270),	-- Eye of Azshara
-							q( 44271),	-- Eye of Azshara
-							q( 44226),	-- Fate Favors Us
-							q( 46780),	-- Further Advancement
-							q( 46152),	-- Furthering Knowledge
-							q( 42808),	-- Green Adepts
-							q( 43186),	-- I Am the Slayer!
-							q( 42510),	-- Immortal Soul
-							q( 44383),	-- In Pursuit of Power
-							q( 44379),	-- In Pursuit of Power
-							q( 42665),	-- Into Our Ranks
-							q( 39741),	-- Into Our Ranks
-							q( 43906),	-- Into the Nightmare: Fall of Cenarius
-							q( 43908),	-- Into the Nightmare: Fall of Cenarius
-							q( 43902),	-- Into the Nightmare: Fall of Cenarius
-							q( 43904),	-- Into the Nightmare: Fall of Cenarius
-							q( 43548),	-- Into the Nightmare: Il'gynoth
-							q( 43547),	-- Into the Nightmare: Il'gynoth
-							q( 43549),	-- Into the Nightmare: Il'gynoth
-							q( 43546),	-- Into the Nightmare: Il'gynoth
-							q( 43907),	-- Into the Nightmare: Xavius
-							q( 43909),	-- Into the Nightmare: Xavius
-							q( 43903),	-- Into the Nightmare: Xavius
-							q( 45994),	-- Investigate the Broken Shore
-							q( 42754),	-- Jump-Capable
-							q( 42132),	-- Last, But Not Least
-							q( 42522),	-- Leader of the Illidari
-							q( 46333),	-- Livin' on the Ledge
-							q( 42681),	-- Loramus, Is That You?
-							q( 40819),	-- Making Arrangements
-							q( 41120),	-- Making Arrangements
-							q( 42735),	-- Malace in Vrykul Land
-							q( 44266),	-- Maw of Souls
-							q( 44267),	-- Maw of Souls
-							q( 42594),	-- Move Like No Other
-							q( 43554),	-- Neltharion's Lair
-							q( 44264),	-- Neltharion's Lair
-							q( 44265),	-- Neltharion's Lair
-							q( 44269),	-- Odyn's Challenge
-							q( 44268),	-- Odyn's Challenge
-							q( 44694),	-- One Battle at a Time
-							q( 44214),	-- One More Thing...
-							q( 45329),	-- Operation: Portals
-							q( 42669),	-- Preparations for Invasion
-							q( 46266),	-- Return of the Slayer
-							q( 44917),	-- Return to Karazhan: The Tower of Power
-							q( 41033),	-- Return to Mardum
-							q( 41221),	-- Return to Mardum
-							q( 42666),	-- Return to the Fel Hammer
-							q( 44087),	-- Return to the Fel Hammer
-							q( 42670),	-- Rise, Champions
-							q( 42671),	-- Rise, Champions
-							q( 45330),	-- Scouting Party
-							q( 42802),	-- Securing Mardum
-							q( 41062),	-- Spoils of Victory
-							q( 41070),	-- Spoils of Victory
-							q( 45301),	-- Taking Charge
-							q( 42593),	-- The Arcane Way
-							q( 44263),	-- The Arcway
-							q( 37447),	-- The Blood of Demons
-							q( 42775),	-- The Crux of the Plan							
-							q( 39247),	-- The Hunt
-							q( 41119),	-- The Hunt
-							q( 41066),	-- The Hunter's Gaze
-							q( 42809),	-- The Invasion of Niskara
-							q( 42920),	-- The Invasion of Niskara
-							q( 44276),	-- The Lord of Black Rook Hold
-							q( 44277),	-- The Lord of Black Rook Hold
-							q( 43914),	-- The Nighthold: Elisande
-							q( 43920),	-- The Nighthold: Elisande
-							q( 43911),	-- The Nighthold: Elisande
-							q( 43917),	-- The Nighthold: Elisande
-							q( 43912),	-- The Nighthold: Gul'dan
-							q( 43915),	-- The Nighthold: Gul'dan
-							q( 43921),	-- The Nighthold: Gul'dan
-							q( 43918),	-- The Nighthold: Gul'dan
-							q( 43910),	-- The Nighthold: High Botanist Tel'arn
-							q( 43913),	-- The Nighthold: High Botanist Tel'arn
-							q( 43916),	-- The Nighthold: High Botanist Tel'arn
-							q( 43890),	-- The Nighthold: Vaults
-							q( 43882),	-- The Nighthold: Vaults
-							q( 43889),	-- The Nighthold: Vaults
-							q( 43891),	-- The Nighthold: Vaults
-							q( 43501),	-- The Power Within
-							q( 43496),	-- The Power Within
-							q( 42677),	-- Things Gaardoun Needs
-							q( 44161),	-- Things Gaardoun Needs
-							q( 41096),	-- Time is of the Essence
-							q( 41067),	-- Time is of the Essence
-							q( 45172),	-- To Battle!
-							q( 46334),	-- To Fel and Back
-							q( 42776),	-- Two Worthies
-							q( 41060),	-- Unbridled Power
-							q( 41037),	-- Unbridled Power
-							q( 42131),	-- Unexpected Visitors
-							q( 44224),	-- Unleashing our Wrath
-							q( 44261),	-- Vault of the Wardens
-							q( 44260),	-- Vault of the Wardens
-							q( 43556),	-- Vault of the Wardens
-							q( 42752),	-- Vault of the Wardens: Vault Break-In
-							q( 42753),	-- Vault of the Wardens: Vault Break-In
-							q( 40249),	-- Vengeance Will Be Ours
-							q( 41863),	-- Vengeance Will Be Ours
-							q( 44258),	-- Violet Hold
-							q( 44259),	-- Violet Hold
+							q(44057),	-- A "Noble" Event
+							q(42810),	-- A Final Offer
+							q(43412),	-- A Hero's Weapon
+							q(42733),	-- A Very Special Kind of Fuel
+							q(42682),	-- Additional Accoutrements
+							q(45180),	-- An Island of War
+							q(46159),	-- An Urgent Message
+							q(45993),	-- An Urgent Warning
+							q(41803),	-- Asking a Favor
+							q(40247),	-- Asking a Favor
+							q(42801),	-- Back in Black
+							q(42679),	-- Broken Warriors
+							q(44223),	-- Champion Armaments
+							q(42653),	-- Champion: Akama
+							q(43184),	-- Champion: Allari the Souleater
+							q(42690),	-- Champion: Altruis the Sufferer
+							q(42697),	-- Champion: Asha Ravensong
+							q(42777),	-- Champion: Belath Dawnblade
+							q(43185),	-- Champion: Jace Darkweaver
+							q(42695),	-- Champion: Kayn Sunfury
+							q(42673),	-- Champion: Kor'vas Bloodthorn
+							q(45391),	-- Champion: Lady S'theno
+							q(42701),	-- Champion: Matron Mother Malevolence
+							q(42664),	-- Champion: Shade of Akama
+							q(42634),	-- Confrontation at the Black Temple
+							q(42921),	-- Confrontation at the Black Temple
+							q(44275),	-- Court of Stars
+							q(41064),	-- Cursed Forge of the Nathrezim
+							q(44273),	-- Darkheart Thicket
+							q(44272),	-- Darkheart Thicket
+							q(42732),	-- Deadlier Warglaives
+							q(42787),	-- Deal With It Personally
+							q(45339),	-- Defense of the Fel Hammer
+							q(47078),	-- Delivering Lost Knowledge
+							q(42683),	-- Demonic Improvements
+							q(45173),	-- Desperate Times
+							q(41069),	-- Direct Our Wrath
+							q(41099),	-- Direct Our Wrath
+							q(43552),	-- Eye of Azshara
+							q(44270),	-- Eye of Azshara
+							q(44271),	-- Eye of Azshara
+							q(44226),	-- Fate Favors Us
+							q(46780),	-- Further Advancement
+							q(46152),	-- Furthering Knowledge
+							q(42808),	-- Green Adepts
+							q(43186),	-- I Am the Slayer!
+							q(42510),	-- Immortal Soul
+							q(44383),	-- In Pursuit of Power
+							q(44379),	-- In Pursuit of Power
+							q(42665),	-- Into Our Ranks
+							q(39741),	-- Into Our Ranks
+							q(43906),	-- Into the Nightmare: Fall of Cenarius
+							q(43908),	-- Into the Nightmare: Fall of Cenarius
+							q(43902),	-- Into the Nightmare: Fall of Cenarius
+							q(43904),	-- Into the Nightmare: Fall of Cenarius
+							q(43548),	-- Into the Nightmare: Il'gynoth
+							q(43547),	-- Into the Nightmare: Il'gynoth
+							q(43549),	-- Into the Nightmare: Il'gynoth
+							q(43546),	-- Into the Nightmare: Il'gynoth
+							q(43907),	-- Into the Nightmare: Xavius
+							q(43909),	-- Into the Nightmare: Xavius
+							q(43903),	-- Into the Nightmare: Xavius
+							q(45994),	-- Investigate the Broken Shore
+							q(42754),	-- Jump-Capable
+							q(42132),	-- Last, But Not Least
+							q(42522),	-- Leader of the Illidari
+							q(46333),	-- Livin' on the Ledge
+							q(42681),	-- Loramus, Is That You?
+							q(40819),	-- Making Arrangements
+							q(41120),	-- Making Arrangements
+							q(42735),	-- Malace in Vrykul Land
+							q(44266),	-- Maw of Souls
+							q(44267),	-- Maw of Souls
+							q(42594),	-- Move Like No Other
+							q(43554),	-- Neltharion's Lair
+							q(44264),	-- Neltharion's Lair
+							q(44265),	-- Neltharion's Lair
+							q(44269),	-- Odyn's Challenge
+							q(44268),	-- Odyn's Challenge
+							q(44694),	-- One Battle at a Time
+							q(44214),	-- One More Thing...
+							q(45329),	-- Operation: Portals
+							q(42669),	-- Preparations for Invasion
+							q(46266),	-- Return of the Slayer
+							q(44917),	-- Return to Karazhan: The Tower of Power
+							q(41033),	-- Return to Mardum
+							q(41221),	-- Return to Mardum
+							q(42666),	-- Return to the Fel Hammer
+							q(44087),	-- Return to the Fel Hammer
+							q(42670),	-- Rise, Champions
+							q(42671),	-- Rise, Champions
+							q(45330),	-- Scouting Party
+							q(42802),	-- Securing Mardum
+							q(41062),	-- Spoils of Victory
+							q(41070),	-- Spoils of Victory
+							q(45301),	-- Taking Charge
+							q(42593),	-- The Arcane Way
+							q(44263),	-- The Arcway
+							q(37447),	-- The Blood of Demons
+							q(42775),	-- The Crux of the Plan							
+							q(39247),	-- The Hunt
+							q(41119),	-- The Hunt
+							q(41066),	-- The Hunter's Gaze
+							q(42809),	-- The Invasion of Niskara
+							q(42920),	-- The Invasion of Niskara
+							q(44276),	-- The Lord of Black Rook Hold
+							q(44277),	-- The Lord of Black Rook Hold
+							q(43914),	-- The Nighthold: Elisande
+							q(43920),	-- The Nighthold: Elisande
+							q(43911),	-- The Nighthold: Elisande
+							q(43917),	-- The Nighthold: Elisande
+							q(43912),	-- The Nighthold: Gul'dan
+							q(43915),	-- The Nighthold: Gul'dan
+							q(43921),	-- The Nighthold: Gul'dan
+							q(43918),	-- The Nighthold: Gul'dan
+							q(43910),	-- The Nighthold: High Botanist Tel'arn
+							q(43913),	-- The Nighthold: High Botanist Tel'arn
+							q(43916),	-- The Nighthold: High Botanist Tel'arn
+							q(43890),	-- The Nighthold: Vaults
+							q(43882),	-- The Nighthold: Vaults
+							q(43889),	-- The Nighthold: Vaults
+							q(43891),	-- The Nighthold: Vaults
+							q(43501),	-- The Power Within
+							q(43496),	-- The Power Within
+							q(42677),	-- Things Gaardoun Needs
+							q(44161),	-- Things Gaardoun Needs
+							q(41096),	-- Time is of the Essence
+							q(41067),	-- Time is of the Essence
+							q(45172),	-- To Battle!
+							q(46334),	-- To Fel and Back
+							q(42776),	-- Two Worthies
+							q(41060),	-- Unbridled Power
+							q(41037),	-- Unbridled Power
+							q(42131),	-- Unexpected Visitors
+							q(44224),	-- Unleashing our Wrath
+							q(44261),	-- Vault of the Wardens
+							q(44260),	-- Vault of the Wardens
+							q(43556),	-- Vault of the Wardens
+							q(42752),	-- Vault of the Wardens: Vault Break-In
+							q(42753),	-- Vault of the Wardens: Vault Break-In
+							q(40249),	-- Vengeance Will Be Ours
+							q(41863),	-- Vengeance Will Be Ours
+							q(44258),	-- Violet Hold
+							q(44259),	-- Violet Hold
 							qa( 43557),	-- Violet Hold
-							q( 44058),	-- Volpin the Elusive
-							q( 45385),	-- We Must be Prepared!
-							q( 45179),	-- Win the Crowd
-							q( 42731),	-- Working With the Wardens
-							q( 44213),	-- You Will Be Prepared!										
+							q(44058),	-- Volpin the Elusive
+							q(45385),	-- We Must be Prepared!
+							q(45179),	-- Win the Crowd
+							q(42731),	-- Working With the Wardens
+							q(44213),	-- You Will Be Prepared!										
 							q(46334, { -- To Fel and Back
 								["groups"] = {
 									{ ["mountID"] = 229417 }, -- Slayer's Felbroken Shrieker

@@ -9,141 +9,141 @@ _.Zones =
 				m(1072, { -- Trueshot Lodge -- Hunter
 					["groups"] = {
 						n(-17, { -- Quests
-							qart(qg(107317, q( 41541, {	-- A Beastly Expedition 
+							qart(qg(107317, q(41541, {	-- A Beastly Expedition 
 								["groups"] = {
 								},
 								["classes"] = {3},
 							}))),
 --[[ waiting on Coordinates							
-							qart(qg(107973, q( 41541, {	-- A Beastly Expedition 
+							qart(qg(107973, q(41541, {	-- A Beastly Expedition 
 								["groups"] = {
 								},
 								["classes"] = {3},
 							}))),
 --]]							
-							q( 41541),	-- A Beastly Expedition
-							q( 43423),	-- A Hero's Weapon
-							q( 43370),	-- A New Invention
-							q( 40957),	-- A Strong Right Hand
-							q( 42436),	-- Aiding Our Allies
-							q( 41053),	-- Altar of the Eternal Hunt
-							q( 45180),	-- An Island of War
-							q( 46022),	-- An Urgent Warning
-							q( 42404),	-- Assisting the Archmage
-							q( 42656),	-- Azure Weaponry
-							q( 42397),	-- Baron and the Huntsman
-							q( 40392),	-- Call of the Marksman
-							q( 42389),	-- Calling Hilaire Home
-							q( 42415),	-- Champion: Halduron Brightwing
-							q( 42409),	-- Champion: Loren Stormhoof
-							q( 44043),	-- Continuing the Legend
-							q( 44275),	-- Court of Stars
-							q( 45392),	-- Dark Memento
-							q( 43551),	-- Darkheart Thicket
-							q( 44273),	-- Darkheart Thicket
-							q( 44272),	-- Darkheart Thicket
-							q( 42654),	-- Darkheart Thicket: Nightmare Oak
-							q( 47073),	-- Delivering Lost Knowledge
-							q( 45173),	-- Desperate Times
-							q( 45551),	-- Devastating Effects
-							q( 44270),	-- Eye of Azshara
-							q( 44271),	-- Eye of Azshara
-							q( 46783),	-- Further Advancement
-							q( 46149),	-- Furthering Knowledge
-							q( 42403),	-- Highmountain Hunters
-							q( 42393),	-- Homecoming
-							q( 42659),	-- In Defense of Dalaran
-							q( 42405),	-- Informing Our Allies
-							q( 41047),	-- Infused with Power
-							q( 43908),	-- Into the Nightmare: Fall of Cenarius
-							q( 43902),	-- Into the Nightmare: Fall of Cenarius
-							q( 43906),	-- Into the Nightmare: Fall of Cenarius
-							q( 43904),	-- Into the Nightmare: Fall of Cenarius
-							q( 43549),	-- Into the Nightmare: Il'gynoth
-							q( 43548),	-- Into the Nightmare: Il'gynoth
-							q( 43546),	-- Into the Nightmare: Il'gynoth
-							q( 43547),	-- Into the Nightmare: Il'gynoth
-							q( 43909),	-- Into the Nightmare: Xavius
-							q( 43907),	-- Into the Nightmare: Xavius
-							q( 43903),	-- Into the Nightmare: Xavius
-							q( 43905),	-- Into the Nightmare: Xavius
-							q( 46023),	-- Investigate the Broken Shore
-							q( 42689),	-- Knowing Our Enemy
-							q( 44680),	-- Leading by Example
-							q( 42385),	-- Lending a Hand
-							q( 42523),	-- Making Contact
-							q( 43553),	-- Maw of Souls
-							q( 44266),	-- Maw of Souls
-							q( 44267),	-- Maw of Souls
-							q( 42657),	-- Meeting in Moonclaw Vale
-							q( 42400),	-- Missing Mages
-							q( 44264),	-- Neltharion's Lair
-							q( 43554),	-- Neltharion's Lair
-							q( 44265),	-- Neltharion's Lair
-							q( 40955),	-- Oath of Service
-							q( 43509),	-- Odyn's Challenge
-							q( 44269),	-- Odyn's Challenge
-							q( 44268),	-- Odyn's Challenge
-							q( 40953),	-- On Eagle's Wings
-							q( 44366),	-- One Last Adventure
-							q( 42655),	-- Ore Under the Sea
-							q( 44090),	-- Pledge of Loyalty
-							q( 41542),	-- Preparation for the Hunt
-							q( 42399),	-- Ready to Work
-							q( 42134),	-- Recruiting More Troops
-							q( 42390),	-- Recruiting Rexxar
-							q( 42524),	-- Recruiting The Troops
-							q( 41540),	-- Rendezvous with the Courier
-							q( 42402),	-- Requesting Reinforcements
-							q( 42408),	-- Required Reagents
-							q( 44917),	-- Return to Karazhan: The Tower of Power
-							q( 42519),	-- Rise, Champions
-							q( 42133),	-- Same Day Delivery
-							q( 42384),	-- Scouting Reports
-							q( 42395),	-- Signaling Trouble
-							q( 40958),	-- Tactical Matters
-							q( 42526),	-- Tech It Up A Notch
-							q( 44263),	-- The Arcway
-							q( 40959),	-- The Campaign Begins
-							q( 44276),	-- The Lord of Black Rook Hold
-							q( 43545),	-- The Lord of Black Rook Hold
-							q( 44277),	-- The Lord of Black Rook Hold
-							q( 43182),	-- The Missing Vessel
-							q( 42407),	-- The Nature of the Beast
-							q( 43911),	-- The Nighthold: Elisande
-							q( 43914),	-- The Nighthold: Elisande
-							q( 43917),	-- The Nighthold: Elisande
-							q( 43920),	-- The Nighthold: Elisande
-							q( 43912),	-- The Nighthold: Gul'dan
-							q( 43921),	-- The Nighthold: Gul'dan
-							q( 43918),	-- The Nighthold: Gul'dan
-							q( 43915),	-- The Nighthold: Gul'dan
-							q( 43910),	-- The Nighthold: High Botanist Tel'arn
-							q( 43916),	-- The Nighthold: High Botanist Tel'arn						
-							q( 43913),	-- The Nighthold: High Botanist Tel'arn
-							q( 43919),	-- The Nighthold: High Botanist Tel'arn
-							q( 43889),	-- The Nighthold: Vaults
-							q( 43890),	-- The Nighthold: Vaults
-							q( 43891),	-- The Nighthold: Vaults
-							q( 43882),	-- The Nighthold: Vaults
-							q( 43496),	-- The Power Within
-							q( 43501),	-- The Power Within
-							q( 42401),	-- The Scent of Magic
-							q( 40385),	-- The Spear in the Shadow
-							q( 40954),	-- The Unseen Path
-							q( 45172),	-- To Battle!
-							q( 42525),	-- Troops in the Field
-							q( 44211),	-- Unseen Armaments
-							q( 44212),	-- Unseen Fate
-							q( 42394),	-- Unseen Protection
-							q( 42388),	-- Urgent Summons
-							q( 44260),	-- Vault of the Wardens
-							q( 44261),	-- Vault of the Wardens
-							q( 44258),	-- Violet Hold
-							q( 44259),	-- Violet Hold
-							q( 44058),	-- Volpin the Elusive
-							q( 44233),	-- Walk This Way
-							q( 45179),	-- Win the Crowd
+							q(41541),	-- A Beastly Expedition
+							q(43423),	-- A Hero's Weapon
+							q(43370),	-- A New Invention
+							q(40957),	-- A Strong Right Hand
+							q(42436),	-- Aiding Our Allies
+							q(41053),	-- Altar of the Eternal Hunt
+							q(45180),	-- An Island of War
+							q(46022),	-- An Urgent Warning
+							q(42404),	-- Assisting the Archmage
+							q(42656),	-- Azure Weaponry
+							q(42397),	-- Baron and the Huntsman
+							q(40392),	-- Call of the Marksman
+							q(42389),	-- Calling Hilaire Home
+							q(42415),	-- Champion: Halduron Brightwing
+							q(42409),	-- Champion: Loren Stormhoof
+							q(44043),	-- Continuing the Legend
+							q(44275),	-- Court of Stars
+							q(45392),	-- Dark Memento
+							q(43551),	-- Darkheart Thicket
+							q(44273),	-- Darkheart Thicket
+							q(44272),	-- Darkheart Thicket
+							q(42654),	-- Darkheart Thicket: Nightmare Oak
+							q(47073),	-- Delivering Lost Knowledge
+							q(45173),	-- Desperate Times
+							q(45551),	-- Devastating Effects
+							q(44270),	-- Eye of Azshara
+							q(44271),	-- Eye of Azshara
+							q(46783),	-- Further Advancement
+							q(46149),	-- Furthering Knowledge
+							q(42403),	-- Highmountain Hunters
+							q(42393),	-- Homecoming
+							q(42659),	-- In Defense of Dalaran
+							q(42405),	-- Informing Our Allies
+							q(41047),	-- Infused with Power
+							q(43908),	-- Into the Nightmare: Fall of Cenarius
+							q(43902),	-- Into the Nightmare: Fall of Cenarius
+							q(43906),	-- Into the Nightmare: Fall of Cenarius
+							q(43904),	-- Into the Nightmare: Fall of Cenarius
+							q(43549),	-- Into the Nightmare: Il'gynoth
+							q(43548),	-- Into the Nightmare: Il'gynoth
+							q(43546),	-- Into the Nightmare: Il'gynoth
+							q(43547),	-- Into the Nightmare: Il'gynoth
+							q(43909),	-- Into the Nightmare: Xavius
+							q(43907),	-- Into the Nightmare: Xavius
+							q(43903),	-- Into the Nightmare: Xavius
+							q(43905),	-- Into the Nightmare: Xavius
+							q(46023),	-- Investigate the Broken Shore
+							q(42689),	-- Knowing Our Enemy
+							q(44680),	-- Leading by Example
+							q(42385),	-- Lending a Hand
+							q(42523),	-- Making Contact
+							q(43553),	-- Maw of Souls
+							q(44266),	-- Maw of Souls
+							q(44267),	-- Maw of Souls
+							q(42657),	-- Meeting in Moonclaw Vale
+							q(42400),	-- Missing Mages
+							q(44264),	-- Neltharion's Lair
+							q(43554),	-- Neltharion's Lair
+							q(44265),	-- Neltharion's Lair
+							q(40955),	-- Oath of Service
+							q(43509),	-- Odyn's Challenge
+							q(44269),	-- Odyn's Challenge
+							q(44268),	-- Odyn's Challenge
+							q(40953),	-- On Eagle's Wings
+							q(44366),	-- One Last Adventure
+							q(42655),	-- Ore Under the Sea
+							q(44090),	-- Pledge of Loyalty
+							q(41542),	-- Preparation for the Hunt
+							q(42399),	-- Ready to Work
+							q(42134),	-- Recruiting More Troops
+							q(42390),	-- Recruiting Rexxar
+							q(42524),	-- Recruiting The Troops
+							q(41540),	-- Rendezvous with the Courier
+							q(42402),	-- Requesting Reinforcements
+							q(42408),	-- Required Reagents
+							q(44917),	-- Return to Karazhan: The Tower of Power
+							q(42519),	-- Rise, Champions
+							q(42133),	-- Same Day Delivery
+							q(42384),	-- Scouting Reports
+							q(42395),	-- Signaling Trouble
+							q(40958),	-- Tactical Matters
+							q(42526),	-- Tech It Up A Notch
+							q(44263),	-- The Arcway
+							q(40959),	-- The Campaign Begins
+							q(44276),	-- The Lord of Black Rook Hold
+							q(43545),	-- The Lord of Black Rook Hold
+							q(44277),	-- The Lord of Black Rook Hold
+							q(43182),	-- The Missing Vessel
+							q(42407),	-- The Nature of the Beast
+							q(43911),	-- The Nighthold: Elisande
+							q(43914),	-- The Nighthold: Elisande
+							q(43917),	-- The Nighthold: Elisande
+							q(43920),	-- The Nighthold: Elisande
+							q(43912),	-- The Nighthold: Gul'dan
+							q(43921),	-- The Nighthold: Gul'dan
+							q(43918),	-- The Nighthold: Gul'dan
+							q(43915),	-- The Nighthold: Gul'dan
+							q(43910),	-- The Nighthold: High Botanist Tel'arn
+							q(43916),	-- The Nighthold: High Botanist Tel'arn						
+							q(43913),	-- The Nighthold: High Botanist Tel'arn
+							q(43919),	-- The Nighthold: High Botanist Tel'arn
+							q(43889),	-- The Nighthold: Vaults
+							q(43890),	-- The Nighthold: Vaults
+							q(43891),	-- The Nighthold: Vaults
+							q(43882),	-- The Nighthold: Vaults
+							q(43496),	-- The Power Within
+							q(43501),	-- The Power Within
+							q(42401),	-- The Scent of Magic
+							q(40385),	-- The Spear in the Shadow
+							q(40954),	-- The Unseen Path
+							q(45172),	-- To Battle!
+							q(42525),	-- Troops in the Field
+							q(44211),	-- Unseen Armaments
+							q(44212),	-- Unseen Fate
+							q(42394),	-- Unseen Protection
+							q(42388),	-- Urgent Summons
+							q(44260),	-- Vault of the Wardens
+							q(44261),	-- Vault of the Wardens
+							q(44258),	-- Violet Hold
+							q(44259),	-- Violet Hold
+							q(44058),	-- Volpin the Elusive
+							q(44233),	-- Walk This Way
+							q(45179),	-- Win the Crowd
 							q(46337, { -- Night of the Wilds
 								["groups"] = {
 									{ ["mountID"] = 229386 }, -- Huntmaster's Loyal Wolfhawk

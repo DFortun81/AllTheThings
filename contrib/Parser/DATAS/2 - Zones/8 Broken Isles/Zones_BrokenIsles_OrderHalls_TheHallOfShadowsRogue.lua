@@ -69,25 +69,25 @@ _.Zones =
 							["spellid"] = 921,
 						}),						
 						n(-17, { -- Quests
-							qc4(qg(101513, q( 45571))),	-- A Bit of Espionage 
-							qc4(qg(101513, q( 43958))),	-- A Body of Evidence 
-							qc4(qg(98100, q( 43485))),	-- A Burning Distraction 
-							qart(qg(94159, q( 40847, {	-- A Friendly Accord 
+							qc4(qg(101513, q(45571))),	-- A Bit of Espionage 
+							qc4(qg(101513, q(43958))),	-- A Body of Evidence 
+							qc4(qg(98100, q(43485))),	-- A Burning Distraction 
+							qart(qg(94159, q(40847, {	-- A Friendly Accord 
 								["groups"] = {
 								},
 								["classes"] = {4},
 							}))),								
-							qart(qg(113362, q( 43422, {	-- A Hero's Weapon 
+							qart(qg(113362, q(43422, {	-- A Hero's Weapon 
 								["groups"] = {
 								},
 								["classes"] = {4},
 							}))),	
-							qart(qg(98102, q( 41920, {	-- A Matter of Finesse 
+							qart(qg(98102, q(41920, {	-- A Matter of Finesse 
 								["groups"] = {
 								},
 								["classes"] = {4},
 							}))),						
-							qc4(qg(98092, q( 42140))),	-- A More Wretched Hive of Scum and Villainy 
+							qc4(qg(98092, q(42140))),	-- A More Wretched Hive of Scum and Villainy 
 							qa(46089, { -- The Sunken Vault
 								["groups"] = {
 									i(143493), -- Razor-Lined Reins of Dark Potent

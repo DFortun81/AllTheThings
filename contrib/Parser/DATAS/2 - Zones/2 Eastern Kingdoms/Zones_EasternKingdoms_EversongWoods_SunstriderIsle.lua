@@ -43,12 +43,12 @@ _.Zones =
 									i(151806),	-- Elegant Dress
 									i(116258),	-- Mystical Spring Bouquet
 									i(141532),	-- Noblegarden Bunny
-									i( 74283),	-- Pink Spring Circlet
-									i( 44803),	-- Spring Circlet
-									i( 44794),	-- Spring Rabbit's Foot
-									i( 44800),	-- Spring Robes
-									i( 72145),	-- Swift Springstrider
-									i(  6833),	-- White Tuxedo Shirt
+									i(74283),	-- Pink Spring Circlet
+									i(44803),	-- Spring Circlet
+									i(44794),	-- Spring Rabbit's Foot
+									i(44800),	-- Spring Robes
+									i(72145),	-- Swift Springstrider
+									i(6833),	-- White Tuxedo Shirt
 								})),
 							}),
 						},
@@ -270,9 +270,9 @@ _.Zones =
 					}),
 					qh( 9148, {	-- Delivery to Tranquillien
 						["groups"] = {
-							i( 28146),	-- Courier's Wraps
-							i( 28147),	-- Tranquillien Scout's Bracers
-							i( 28148),	-- Bronze Plate Bracers
+							i(28146),	-- Courier's Wraps
+							i(28147),	-- Tranquillien Scout's Bracers
+							i(28148),	-- Bronze Plate Bracers
 							i(131243),	-- Tranquillien Ranger's Cuffs
 						},
 						["qg"] = 16183,	-- Courier Dawnstrider
@@ -355,7 +355,7 @@ _.Zones =
 						},
 						["qg"] = 16210,	-- Magistrix Landra Dawnstrider
 					}),
-					n( 15409, {	-- Old Whitebark
+					n(15409, {	-- Old Whitebark
 						i(23228, {	-- Old Whitebark's Pendant
 							qh(8474),	-- Old Whitebark's Pendant
 						}),
@@ -576,34 +576,34 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares	
 					n(16854, { -- Eldinarcus
-						dr(3, { i(   2957), }),	-- Warrior's Tunic
-						dr(2, { i(   2961), }),	-- Burnt Leather Vest
-						dr(1.7, { i( 2957), }),	-- Journeyman's Vest
-						dr(1.5, { i( 2962), }),	-- Burnt Leather Breeches
-						dr(1.5, { i( 2958), }),	-- Journeyman's Pants
-						dr(1.4, { i( 7108), }),	-- Infantry Shield
-						dr(1.4, { i( 2966), }),	-- Warrior's Pants
-						dr(1.3, { i( 6511), }),	-- Journeyman's Robe
+						dr(3, { i(2957), }),	-- Warrior's Tunic
+						dr(2, { i(2961), }),	-- Burnt Leather Vest
+						dr(1.7, { i(2957), }),	-- Journeyman's Vest
+						dr(1.5, { i(2962), }),	-- Burnt Leather Breeches
+						dr(1.5, { i(2958), }),	-- Journeyman's Pants
+						dr(1.4, { i(7108), }),	-- Infantry Shield
+						dr(1.4, { i(2966), }),	-- Warrior's Pants
+						dr(1.3, { i(6511), }),	-- Journeyman's Robe
 						dr(1.2, { i(15932), }),	-- Disciple's Stein
-						dr(1.2, { i( 9753), }),	-- Gypsy Buckler
+						dr(1.2, { i(9753), }),	-- Gypsy Buckler
 						dr(1.1, { i(15925), }),	-- Journeyman's Stave
-						dr(1.1, { i( 6268), }),	-- Pioneer Tunic
-						dr(0.8, { i( 6267), }),	-- Disciple's Pants
-						dr(0.8, { i( 6337), }),	-- Infantry Leggings
-						dr(0.8, { i( 6336), }),	-- Infantry Tunic
-						dr(0.8, { i( 6269), }),	-- Pioneer Trousers
+						dr(1.1, { i(6268), }),	-- Pioneer Tunic
+						dr(0.8, { i(6267), }),	-- Disciple's Pants
+						dr(0.8, { i(6337), }),	-- Infantry Leggings
+						dr(0.8, { i(6336), }),	-- Infantry Tunic
+						dr(0.8, { i(6269), }),	-- Pioneer Trousers
 					}),
 					n(16855, { -- Tregla
-						dr(3, { i(   2962), }),	-- Burnt Leather Breeches
-						dr(3, { i(   2958), }),	-- Journeyman's Pants
-						dr(2, { i(   2966), }),	-- Warrior's Pants
+						dr(3, { i(2962), }),	-- Burnt Leather Breeches
+						dr(3, { i(2958), }),	-- Journeyman's Pants
+						dr(2, { i(2966), }),	-- Warrior's Pants
 						dr(1.3, { i(15932), }),	-- Disciple's Stein
 						dr(1.3, { i(15925), }),	-- Journeyman's Stave
-						dr(1.1, { i( 7108), }),	-- Infantry Shield
-						dr(1.1, { i( 2957), }),	-- Warrior's Tunic
-						dr(1, { i(   2961), }),	-- Burnt Leather Vest
-						dr(0.9, { i( 6267), }),	-- Disciple's Pants
-						dr(0.9, { i( 9753), }),	-- Gypsy Buckler
+						dr(1.1, { i(7108), }),	-- Infantry Shield
+						dr(1.1, { i(2957), }),	-- Warrior's Tunic
+						dr(1, { i(2961), }),	-- Burnt Leather Vest
+						dr(0.9, { i(6267), }),	-- Disciple's Pants
+						dr(0.9, { i(9753), }),	-- Gypsy Buckler
 					}), 
 				}),
 				nh(-2, { 	-- Vendors
@@ -672,7 +672,7 @@ _.Zones =
 								["qg"] = 15295,	-- Well Watcher Solanian
 								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
 							}),
-							n( 15298, {	-- Tainted Arcane Wraith
+							n(15298, {	-- Tainted Arcane Wraith
 								i(20483, {	-- Tainted Arcane Sliver
 									qh(8338),	-- Tainted Arcane Sliver
 								}),
@@ -698,7 +698,7 @@ _.Zones =
 --[[						It appears these four quests were replaced with newer versions.
 							qg(15296, qh( 8336)),	-- A Fistful of Slivers
 							qg(15295, qh( 8330)),	-- Solanian's Belongings
-							qg(15295, q(  8345)),	-- The Shrine of Dath'Remar
+							qg(15295, q(8345)),	-- The Shrine of Dath'Remar
 							qg(15297, qh( 8346)),	-- Thirst Unending
 --]]
 						}),						

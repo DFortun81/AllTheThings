@@ -51,133 +51,133 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[
-					q( 29619),	-- A Courteous Guest
-					q( 30149),	-- A Feast for the Senses
-					q( 29756),	-- A Humble Offering
+					q(29619),	-- A Courteous Guest
+					q(30149),	-- A Feast for the Senses
+					q(29756),	-- A Humble Offering
 					qh( 31132),	-- A Mile in My Shoes
-					q( 30011),	-- A New Vision
+					q(30011),	-- A New Vision
 					qa( 29903),	-- A Perfect Match
-					q( 29627),	-- A Proper Weapon
-					q( 29629),	-- A Steady Hand
-					q( 29628),	-- A Strong Back
-					q( 31707),	-- A Tangled Web
-					q( 29636),	-- A Test of Endurance
-					q( 31539),	-- A Thing of Beauty
-					q( 33250),	-- A Time-Lost Treasure
-					q( 31544),	-- A Tribute to the Dead
+					q(29627),	-- A Proper Weapon
+					q(29629),	-- A Steady Hand
+					q(29628),	-- A Strong Back
+					q(31707),	-- A Tangled Web
+					q(29636),	-- A Test of Endurance
+					q(31539),	-- A Thing of Beauty
+					q(33250),	-- A Time-Lost Treasure
+					q(31544),	-- A Tribute to the Dead
 					qa( 31130),	-- A Visit with Lorewalker Cho
 					qh( 29827),	-- Acid Rain
-					q( 29925),	-- All We Can Spare
-					q( 29576),	-- An Air of Worry
+					q(29925),	-- All We Can Spare
+					q(29576),	-- An Air of Worry
 					qa( 29900),	-- An Ancient Legend
 					qa( 30565),	-- An Unexpected Advantage
-					q( 29749),	-- An Urgent Plea
+					q(29749),	-- An Urgent Plea
 					qa( 29560),	-- Ancient Power
-					q( 29630),	-- And a Heavy Fist
+					q(29630),	-- And a Heavy Fist
 					qa( 29901),	-- Anduin's Decision
-					q( 41907),	-- Appropriations
-					q( 30065),	-- Arrows of Fortune
+					q(41907),	-- Appropriations
+					q(30065),	-- Arrows of Fortune
 					qh( 31775),	-- Assault on the Airstrip
 					qh( 31377),	-- Attack At The Temple of the Jade Serpent
 					qa( 31376),	-- Attack At The Temple of the Jade Serpent
-					q( 29624),	-- Attention
-					q( 29753),	-- Back to Nature
-					q( 30135),	-- Beating the Odds
-					q( 29632),	-- Becoming Battle-Ready
-					q( 30063),	-- Behind the Masks
+					q(29624),	-- Attention
+					q(29753),	-- Back to Nature
+					q(30135),	-- Beating the Odds
+					q(29632),	-- Becoming Battle-Ready
+					q(30063),	-- Behind the Masks
 					qh( 29941),	-- Beyond the Horizon
 					qa( 29904),	-- Bigger Fish to Fry
-					q( 30567),	-- Blanche's Boomer Brew
+					q(30567),	-- Blanche's Boomer Brew
 					qa( 29892),	-- Body
 					qh( 29939),	-- Boom Bait
 					qh( 29967),	-- Boom Goes the Doonamite!
 					qa( 29889),	-- Borrowed Brew
-					q( 29747),	-- Break the Cycle
-					q( 29631),	-- Burning Bright
+					q(29747),	-- Break the Cycle
+					q(29631),	-- Burning Bright
 					qh( 29966),	-- Burning Down the House
-					q( 29926),	-- Calamity Jade
-					q( 32027),	-- Candy Bucket
+					q(29926),	-- Calamity Jade
+					q(32027),	-- Candy Bucket
 					qa( 32049),	-- Candy Bucket
-					q( 32029),	-- Candy Bucket
+					q(32029),	-- Candy Bucket
 					qa( 32033),	-- Candy Bucket
-					q( 32021),	-- Candy Bucket
-					q( 32032),	-- Candy Bucket
-					q( 32031),	-- Candy Bucket
+					q(32021),	-- Candy Bucket
+					q(32032),	-- Candy Bucket
+					q(32031),	-- Candy Bucket
 					qh( 32050),	-- Candy Bucket
 					qh( 32028),	-- Candy Bucket
 					qh( 31261),	-- Captain Jack's Dead
 					qa( 29906),	-- Carp Diem
-					q( 30151),	-- Catch!
-					q( 30138),	-- Choosing the One
+					q(30151),	-- Catch!
+					q(30138),	-- Choosing the One
 					qh( 31777),	-- Choppertunity
 					qa( 29552),	-- Critical Condition
 					qh( 29765),	-- Cryin' My Eyes Out
-					q( 31701),	-- Dark Huntress
+					q(31701),	-- Dark Huntress
 					qh( 30015),	-- Dawn's Blossom
-					q( 29578),	-- Defiance
-					q( 41730),	-- Desperate Strike
-					q( 30158),	-- Disarming the Enemy
-					q( 29717),	-- Down Kitty!
-					q( 30137),	-- Egg Collection
+					q(29578),	-- Defiance
+					q(41730),	-- Desperate Strike
+					q(30158),	-- Disarming the Enemy
+					q(29717),	-- Down Kitty!
+					q(30137),	-- Egg Collection
 					qa( 31319),	-- Emergency Response
 					qh( 30504),	-- Emergency Response
-					q( 30157),	-- Emptier Nests
-					q( 30136),	-- Empty Nests
+					q(30157),	-- Emptier Nests
+					q(30136),	-- Empty Nests
 					qa( 31736),	-- Envoy of the Alliance
-					q( 31486),	-- Everything I Know About Cooking
-					q( 31279),	-- Everything I Know About Cooking
-					q( 30004),	-- Everything In Its Place
+					q(31486),	-- Everything I Know About Cooking
+					q(31279),	-- Everything I Know About Cooking
+					q(30004),	-- Everything In Its Place
 					qh( 31771),	-- Face to Face With Consequence
 					qa( 29762),	-- Family Heirlooms
 					qh( 31167),	-- Family Tree
-					q( 30156),	-- Feeding Time
-					q( 29993),	-- Find the Boy
+					q(30156),	-- Feeding Time
+					q(29993),	-- Find the Boy
 					qa( 29890),	-- Finding Your Center
 					qh( 31767),	-- Finish Them!
 					qh( 31768),	-- Fire Is Always the Answer
-					q( 30068),	-- Flames of the Void
-					q( 30145),	-- Flight Training: Full Speed Ahead
-					q( 30187),	-- Flight Training: In Due Course
-					q( 30144),	-- Flight Training: Ring Round-Up
-					q( 29639),	-- Flying Colors
-					q( 29647),	-- Flying Colors
-					q( 29646),	-- Flying Colors
+					q(30068),	-- Flames of the Void
+					q(30145),	-- Flight Training: Full Speed Ahead
+					q(30187),	-- Flight Training: In Due Course
+					q(30144),	-- Flight Training: Ring Round-Up
+					q(29639),	-- Flying Colors
+					q(29647),	-- Flying Colors
+					q(29646),	-- Flying Colors
 					qh( 29815),	-- Forensic Science
 					qa( 31742),	-- Fractured Forces
-					q( 30147),	-- Fragments of the Past
+					q(30147),	-- Fragments of the Past
 					qa( 29559),	-- Freeing Our Brothers
 					qh( 29937),	-- Furious Fowl
-					q( 43062),	-- Further Training
+					q(43062),	-- Further Training
 					qh( 30484),	-- Gauging Our Progress
 					qa( 30498),	-- Get Back Here!
 					qh( 30499),	-- Get Back Here!
-					q( 29920),	-- Getting Permission
-					q( 31953),	-- Grand Master Hyuna
+					q(29920),	-- Getting Permission
+					q(31953),	-- Grand Master Hyuna
 					qh( 29968),	-- Green-ish Energy
-					q( 29626),	-- Groundskeeper Wu
+					q(29626),	-- Groundskeeper Wu
 					qh( 29943),	-- Guerrillas in our Midst
 					qa( 30568),	-- Helping the Cause
-					q( 30066),	-- Hidden Power
-					q( 32018),	-- His Name Was... Stormstout
-					q( 32497),	-- Honor the Flame
-					q( 32498),	-- Honor the Flame
+					q(30066),	-- Hidden Power
+					q(32018),	-- His Name Was... Stormstout
+					q(32497),	-- Honor the Flame
+					q(32498),	-- Honor the Flame
 					qa( 29556),	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
 					qa( 29893),	-- Hue
-					q( 29634),	-- Husshun, the Wizened
-					q( 29928),	-- I Have No Jade And I Must Scream
+					q(29634),	-- Husshun, the Wizened
+					q(29928),	-- I Have No Jade And I Must Scream
 					qh( 31134),	-- If These Stones Could Speak
 					qa( 29922),	-- In Search of Wisdom
 					qa( 31542),	-- Incarnadine Ink
-					q( 31691),	-- Inscribed Crane Staff
-					q( 31692),	-- Inscribed Serpent Staff
-					q( 31690),	-- Inscribed Tiger Staff
+					q(31691),	-- Inscribed Crane Staff
+					q(31692),	-- Inscribed Serpent Staff
+					q(31690),	-- Inscribed Tiger Staff
 					qh( 29936),	-- Instant Messaging
 					qh( 29690),	-- Into the Mists
-					q( 30142),	-- It's A...
-					q( 30502),	-- Jaded Heart
+					q(30142),	-- It's A...
+					q(30502),	-- Jaded Heart
 					qa( 29562),	-- Jailbreak
-					q( 42957),	-- Journey to the East
-					q( 30148),	-- Just a Flesh Wound
+					q(42957),	-- Journey to the East
+					q(30148),	-- Just a Flesh Wound
 					qh( 29924),	-- Kill Kher Shan
 					qa( 31740),	-- Koukou's Rampage
 					qa( 29759),	-- Kung Din
@@ -185,55 +185,55 @@ _.Zones =
 					qh( 30485),	-- Last Piece of the Puzzle
 					qh( 29822),	-- Lay of the Land
 					qa( 29905),	-- Let Them Burn
-					q( 30005),	-- Lighting Up the Sky
-					q( 31709),	-- Lingering Doubt
-					q( 30495),	-- Love's Labor
-					q( 31703),	-- Madcap Mayhem
-					q( 29927),	-- Mann's Man
-					q( 29670),	-- Maul Gormal
+					q(30005),	-- Lighting Up the Sky
+					q(31709),	-- Lingering Doubt
+					q(30495),	-- Love's Labor
+					q(31703),	-- Madcap Mayhem
+					q(29927),	-- Mann's Man
+					q(29670),	-- Maul Gormal
 					qh( 29821),	-- Missed Me By... That Much!
-					q( 31712),	-- Monkey Mischief
+					q(31712),	-- Monkey Mischief
 					qh( 29743),	-- Monstrosity
-					q( 30001),	-- Moth-Ridden
-					q( 30648),	-- Moving On
+					q(30001),	-- Moth-Ridden
+					q(30648),	-- Moving On
 					qh( 31999),	-- Nazgrim's Command
-					q( 31705),	-- Needle Me Not
+					q(31705),	-- Needle Me Not
 					qa( 30069),	-- No Plan Survives Contact with the Enemy
-					q( 31702),	-- On The Prowl
+					q(31702),	-- On The Prowl
 					qa( 31745),	-- Onward and Inward
-					q( 31784),	-- Onyx To Goodness
-					q( 29580),	-- Orchard-Supplied Hardware
+					q(31784),	-- Onyx To Goodness
+					q(29580),	-- Orchard-Supplied Hardware
 					qh( 29935),	-- Orders are Orders
-					q( 30002),	-- Pages of History
+					q(30002),	-- Pages of History
 					qh( 31765),	-- Paint it Red!
 					qh( 31152),	-- Peering Into the Past
-					q( 29755),	-- Pei-Back
-					q( 29623),	-- Perfection
+					q(29755),	-- Pei-Back
+					q(29623),	-- Perfection
 					qa( 31738),	-- Pillaging Peons
-					q( 31704),	-- Pooped
-					q( 31716),	-- Pooped
-					q( 31543),	-- Portrait of a Lady
+					q(31704),	-- Pooped
+					q(31716),	-- Pooped
+					q(31543),	-- Portrait of a Lady
 					qa( 29891),	-- Potency
-					q( 30159),	-- Preservation
+					q(30159),	-- Preservation
 					qh( 31978),	-- Priorities!
 					qa( 31739),	-- Priorities!
 					qh( 31772),	-- Priorities!
 					qh( 31773),	-- Prowler Problems
-					q( 29882),	-- Quill of Stingers
-					q( 29579),	-- Rally the Survivors
-					q( 41733),	-- Rebuilding the Order
+					q(29882),	-- Quill of Stingers
+					q(29579),	-- Rally the Survivors
+					q(41733),	-- Rebuilding the Order
 					qh( 29694),	-- Regroup!
-					q( 30500),	-- Residual Fallout
+					q(30500),	-- Residual Fallout
 					qa( 29899),	-- Rest in Peace
-					q( 30155),	-- Restoring the Balance
-					q( 31811),	-- Riding the Skies
-					q( 30188),	-- Riding the Skies
-					q( 31810),	-- Riding the Skies
-					q( 29751),	-- Ritual Artifacts
+					q(30155),	-- Restoring the Balance
+					q(31811),	-- Riding the Skies
+					q(30188),	-- Riding the Skies
+					q(31810),	-- Riding the Skies
+					q(29751),	-- Ritual Artifacts
 					qa( 29885),	-- Road Rations
 					qa( 29898),	-- Sacred Waters
-					q( 31714),	-- Saving the Serpents
-					q( 30064),	-- Saving the Sutras
+					q(31714),	-- Saving the Serpents
+					q(30064),	-- Saving the Sutras
 					qh( 29730),	-- Scouting Report: Hostile Natives
 					qh( 29824),	-- Scouting Report: Like Jinyu in a Barrel
 					qh( 29731),	-- Scouting Report: On the Right Track
@@ -241,121 +241,121 @@ _.Zones =
 					qh( 29804),	-- Seein' Red
 					qa( 29888),	-- Seek Out the Lorewalker
 					qh( 31774),	-- Seeking Zin'jun
-					q( 31708),	-- Serpent's Scale
+					q(31708),	-- Serpent's Scale
 					qa( 31541),	-- Set in Jade
-					q( 29995),	-- Shrine of the Dawn
+					q(29995),	-- Shrine of the Dawn
 					qa( 29725),	-- SI:7 Report: Fire From the Sky
 					qa( 29726),	-- SI:7 Report: Hostile Natives
 					qa( 29733),	-- SI:7 Report: Lost in the Woods
 					qa( 29727),	-- SI:7 Report: Take No Prisoners
 					qh( 29942),	-- Silly Wikket, Slickies are for Hozen
-					q( 29748),	-- Simulacrumble
-					q( 31194),	-- Slitherscale Suppression
-					q( 41729),	-- Slowing the Spread
+					q(29748),	-- Simulacrumble
+					q(31194),	-- Slitherscale Suppression
+					q(41729),	-- Slowing the Spread
 					qa( 31743),	-- Smoke Before Fire
-					q( 30146),	-- Snack Time
+					q(30146),	-- Snack Time
 					qa( 29894),	-- Spirits of the Water
-					q( 29585),	-- Spitfire
-					q( 31699),	-- Sprite Fright
+					q(29585),	-- Spitfire
+					q(31699),	-- Sprite Fright
 					qa( 31540),	-- Staves for Tian Monastery
 					qh( 31121),	-- Stay a While, and Listen
-					q( 41731),	-- Storm, Earth, and Fire
+					q(41731),	-- Storm, Earth, and Fire
 					qh( 31776),	-- Strongarm Tactics
 					qh( 30466),	-- Sufficient Motivation
 					qh( 29879),	-- Swallowed Whole
-					q( 30150),	-- Sweet as Honey
+					q(30150),	-- Sweet as Honey
 					qa( 31392),	-- Temple of the White Tiger
 					qh( 31393),	-- Temple of the White Tiger
 					qh( 29933),	-- The Bees' Knees
-					q( 31713),	-- The Big Brew-haha
-					q( 31715),	-- The Big Kah-Oona
+					q(31713),	-- The Big Brew-haha
+					q(31715),	-- The Big Kah-Oona
 					qa( 31737),	-- The Cost of War
-					q( 30006),	-- The Darkness Around Us
+					q(30006),	-- The Darkness Around Us
 					qh( 31779),	-- The Darkness Within
-					q( 41728),	-- The Defense of Tian Monastery
-					q( 29716),	-- The Double Hozen Dare
-					q( 30154),	-- The Easiest Way To A Serpent's Heart
+					q(41728),	-- The Defense of Tian Monastery
+					q(29716),	-- The Double Hozen Dare
+					q(30154),	-- The Easiest Way To A Serpent's Heart
 					qa( 29887),	-- The Elder's Instruments
 					qa( 30070),	-- The Fall of Ga'trul
 					qh( 31769),	-- The Final Blow!
-					q( 29620),	-- The Great Banquet
-					q( 41732),	-- The Hand of Keletress
-					q( 29618),	-- The High Elder
-					q( 31876),	-- The Inkmasters of the Arboretum
-					q( 30000),	-- The Jade Serpent
-					q( 29723),	-- The Jade Witch
-					q( 29998),	-- The Librarian's Quandary
+					q(29620),	-- The Great Banquet
+					q(41732),	-- The Hand of Keletress
+					q(29618),	-- The High Elder
+					q(31876),	-- The Inkmasters of the Arboretum
+					q(30000),	-- The Jade Serpent
+					q(29723),	-- The Jade Witch
+					q(29998),	-- The Librarian's Quandary
 					qa( 29553),	-- The Missing Admiral
 					qa( 29548),	-- The Mission
-					q( 42868),	-- The Monkey King's Challenge
+					q(42868),	-- The Monkey King's Challenge
 					qa( 31373),	-- The Order of the Cloud Serpent
 					qh( 31375),	-- The Order of the Cloud Serpent
 					qa( 29558),	-- The Path of War
 					qa( 29883),	-- The Pearlfin Situation
-					q( 29881),	-- The Perfect Color
-					q( 42768),	-- The Riddle of Purity
-					q( 42766),	-- The Riddle of the Barrel
-					q( 42767),	-- The Riddle of the Land
-					q( 29999),	-- The Rider's Bind
-					q( 30139),	-- The Rider's Journey
-					q( 30141),	-- The Rider's Journey
-					q( 30140),	-- The Rider's Journey
+					q(29881),	-- The Perfect Color
+					q(42768),	-- The Riddle of Purity
+					q(42766),	-- The Riddle of the Barrel
+					q(42767),	-- The Riddle of the Land
+					q(29999),	-- The Rider's Bind
+					q(30139),	-- The Rider's Journey
+					q(30141),	-- The Rider's Journey
+					q(30140),	-- The Rider's Journey
 					qa( 31735),	-- The Right Tool For The Job
 					qa( 31254),	-- The Road to Kun-Lai
 					qh( 31255),	-- The Road to Kun-Lai
-					q( 29637),	-- The Rumpus
+					q(29637),	-- The Rumpus
 					qh( 29971),	-- The Scouts Return
-					q( 29997),	-- The Scryer's Dilemma
-					q( 31303),	-- The Seal is Broken
-					q( 31711),	-- The Seed of Doubt
-					q( 29931),	-- The Serpent's Heart
-					q( 30067),	-- The Shadow of Doubt
-					q( 31700),	-- The Shoe Is On The Other Foot
-					q( 29865),	-- The Silkwood Road
-					q( 30152),	-- The Sky Race
-					q( 29586),	-- The Splintered Path
-					q( 29745),	-- The Sprites' Plight
-					q( 29932),	-- The Temple of the Jade Serpent
-					q( 29866),	-- The Threads that Stick
-					q( 31717),	-- The Trainer's Challenge: Ace Longpaw
-					q( 31718),	-- The Trainer's Challenge: Big Bao
-					q( 31719),	-- The Trainer's Challenge: Ningna Darkwheel
-					q( 31721),	-- The Trainer's Challenge: Qua-Ro Whitebrow
-					q( 31720),	-- The Trainer's Challenge: Suchi the Sweet
-					q( 42765),	-- The Trial at the Temple
-					q( 42762),	-- The Wanderer's Companion
-					q( 29752),	-- The Wayward Dead
+					q(29997),	-- The Scryer's Dilemma
+					q(31303),	-- The Seal is Broken
+					q(31711),	-- The Seed of Doubt
+					q(29931),	-- The Serpent's Heart
+					q(30067),	-- The Shadow of Doubt
+					q(31700),	-- The Shoe Is On The Other Foot
+					q(29865),	-- The Silkwood Road
+					q(30152),	-- The Sky Race
+					q(29586),	-- The Splintered Path
+					q(29745),	-- The Sprites' Plight
+					q(29932),	-- The Temple of the Jade Serpent
+					q(29866),	-- The Threads that Stick
+					q(31717),	-- The Trainer's Challenge: Ace Longpaw
+					q(31718),	-- The Trainer's Challenge: Big Bao
+					q(31719),	-- The Trainer's Challenge: Ningna Darkwheel
+					q(31721),	-- The Trainer's Challenge: Qua-Ro Whitebrow
+					q(31720),	-- The Trainer's Challenge: Suchi the Sweet
+					q(42765),	-- The Trial at the Temple
+					q(42762),	-- The Wanderer's Companion
+					q(29752),	-- The Wayward Dead
 					qa( 29555),	-- The White Pawn
-					q( 32019),	-- They Call Him... Stormstout
-					q( 30143),	-- They Grow Like Weeds
+					q(32019),	-- They Call Him... Stormstout
+					q(30143),	-- They Grow Like Weeds
 					qh( 31112),	-- They're So Thorny!
-					q( 31698),	-- Thinning The Pack
-					q( 29617),	-- Tian Monastery
-					q( 31710),	-- Tiny Treats
-					q( 29754),	-- To Bridge Earth and Sky
+					q(31698),	-- Thinning The Pack
+					q(29617),	-- Tian Monastery
+					q(31710),	-- Tiny Treats
+					q(29754),	-- To Bridge Earth and Sky
 					qh( 31766),	-- Touching Ground
 					qa( 31733),	-- Touching Ground
-					q( 41909),	-- Tracking the Tideskorn
-					q( 29929),	-- Trapped!
+					q(41909),	-- Tracking the Tideskorn
+					q(29929),	-- Trapped!
 					qa( 31741),	-- Twinspire Keep
-					q( 29587),	-- Unbound
+					q(29587),	-- Unbound
 					qa( 31744),	-- Unfair Trade
 					qa( 31732),	-- Unleash Hell
 					qh( 31778),	-- Unreliable Allies
-					q( 29750),	-- Vessels of the Spirit
-					q( 31613),	-- Volatile Greenstone Brew
-					q( 31706),	-- Weeping Widows
-					q( 31230),	-- Welcome to Dawn's Blossom
+					q(29750),	-- Vessels of the Spirit
+					q(31613),	-- Volatile Greenstone Brew
+					q(31706),	-- Weeping Widows
+					q(31230),	-- Welcome to Dawn's Blossom
 					qa( 31734),	-- Welcome Wagons
 					qh( 31239),	-- What's in a Name Name?
-					q( 29930),	-- What's Mined Is Yours
-					q( 32440),	-- Whispering Pandaren Spirit
+					q(29930),	-- What's Mined Is Yours
+					q(32440),	-- Whispering Pandaren Spirit
 					qh( 31241),	-- Wicked Wikkets
-					q( 30134),	-- Wild Things
-					q( 29635),	-- Xiao, the Eater
+					q(30134),	-- Wild Things
+					q(29635),	-- Xiao, the Eater
 					qh( 31770),	-- You're Either With Us Or...
-					q( 29622),	-- Your Training Starts Now
-					q( 29633),	-- Zhi-Zhi, the Dextrous
+					q(29622),	-- Your Training Starts Now
+					q(29633),	-- Zhi-Zhi, the Dextrous
 --]]
 					qh(29827, { 	-- Acid Rain
 						i(90310),
