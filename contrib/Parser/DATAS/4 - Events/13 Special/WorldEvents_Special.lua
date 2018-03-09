@@ -112,12 +112,16 @@ _.WorldEvents =
 					})),
 					i(156682, { -- Otherworldy Satchel of Helpful Goods
 						i(51969), -- Enumerated Shoulders
+						i(51972), -- Enumerated Bracers
 						i(51970), -- Enumerated Gloves
 						i(51961), -- Vigorous Shoulderguards
+						i(51962),	-- Vigorous Bracers
 						i(51960), -- Vigorous Gloves
 						i(51975), -- Earthbound Shoulders
+						i(51981), -- Earthbound Wristguards
 						i(51979), -- Earthbound Grips
 						i(51983), -- Stalwart Shoulderguards
+						i(51989), -- Stalwart Bands
 						i(51987), -- Stalwart Grips
 					}),
 					i(156688, { -- Icy Satchel of Helpful Goods
