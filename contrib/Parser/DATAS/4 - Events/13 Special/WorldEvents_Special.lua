@@ -110,7 +110,50 @@ _.WorldEvents =
 						},
 						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 56-60 range.|r",
 					})),
-					i(52004, { -- Satchel of Helpful Goods 60-64
+					i(156682, { -- Otherworldy Satchel of Helpful Goods
+						i(51969), -- Enumerated Shoulders
+						i(51970), -- Enumerated Gloves
+						i(51961), -- Vigorous Shoulderguards
+						i(51960), -- Vigorous Gloves
+						i(51975), -- Earthbound Shoulders
+						i(51979), -- Earthbound Grips
+						i(51983), -- Stalwart Shoulderguards
+						i(51987), -- Stalwart Grips
+					}),
+					i(156688, { -- Icy Satchel of Helpful Goods
+						i(113685), -- Coldblood Longcloak
+						i(113683), -- Coldwrap Cloak
+						i(113684), -- Icecrust Cloak
+						i(112348), -- Snow-Coated Cloth Cap
+						i(113758), -- Snow-Coated Cloth Gloves
+						i(112367), -- Snow-Coated Cloth Belt
+						i(112355), -- Snow-Coated Cloth Leggings
+						i(112352), -- Winterfrost Leather Cap
+						i(112351), -- Winterfrost Leather Helm
+						i(113690), -- Winterfrost Leather Gloves
+						i(113689), -- Winterfrost Leather Knuckledusters
+						i(112365), -- Winterfrost Leather Belt
+						i(112366), -- Winterfrost Leather Girdle
+						i(112360), -- Winterfrost Leather Leggings
+						i(112359), -- Winterfrost Leather Waders
+						i(112349), -- Icefall Chain Helm
+						i(112350), -- Icefall Mail Helm
+						i(113694), -- Icefall Chain Gloves
+						i(113693), -- Icefall Mail Gloves
+						i(112364), -- Icefall Mail Girdle
+						i(112363), -- Icefall Chain Belt
+						i(112358), -- Icefall Chain Leggings
+						i(112357), -- Icefall Mail Leggings
+						i(112347), -- Ice-Encrusted Plate Helm
+						i(112346), -- Ice-Encrusted Plate Headguard
+						i(113692), -- Ice-Encrusted Gauntlets
+						i(113691), -- Ice-Encrusted Gloves
+						i(112361), -- Ice-Encrusted Plate Belt
+						i(112362), -- Ice-Encrusted Plate Girdle
+						i(112356), -- Ice-Encrusted Plate Leggings
+						i(112354), -- Ice-Encrusted Plate Legguards
+					}),
+					un(2, i(52004, { -- Satchel of Helpful Goods 60-64
 						["groups"] = {
 						   i(51970), -- Enumerated Gloves
 						   i(51960), -- Vigorous Gloves
@@ -118,8 +161,8 @@ _.WorldEvents =
 						   i(51987), -- Stalwart Grips
 						},
 						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 60-64 range.|r",
-					}),
-					i(52005, { -- Satchel of Helpful Goods 65-70
+					})),
+					un(2, i(52005, { -- Satchel of Helpful Goods 65-70
 						["groups"] = {
 						   i(51969), -- Enumerated Shoulders
 						   i(51961), -- Vigorous Shoulderguards
@@ -127,8 +170,8 @@ _.WorldEvents =
 						   i(51983), -- Stalwart Shoulderguards
 						},
 						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 65-70 range.|r",
-					}),
-					i(114634, { -- Icy Satchel of Helpful Goods 70-74
+					})),
+					un(2, i(114634, { -- Icy Satchel of Helpful Goods 70-74
 						["groups"] = {
 						   i(112367), -- Snow-Coated Cloth Belt
 						   i(112348), -- Snow-Coated Cloth Cap
@@ -153,8 +196,8 @@ _.WorldEvents =
 						   i(112354), -- Ice-Encrusted Plate Legguards
 						},
 						["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 70-74 range.|r",
-					}),
-					i(114641, { -- Icy Satchel of Helpful Goods 75-80
+					})),
+					un(2, i(114641, { -- Icy Satchel of Helpful Goods 75-80
 						["groups"] = {
 						   i(113685), -- Coldblood Longcloak
 						   i(113683), -- Coldwrap Cloak
@@ -168,33 +211,33 @@ _.WorldEvents =
 						   i(113691), -- Ice-Encrusted Gloves
 						},
 						["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.|r",
-					}),
+					})),
 					i(114648, { -- Scorched Satchel of Helpful Goods 80-83
-				["groups"] = {
-				   i(113760), -- Smoldercloth Bracers
-				   i(113759), -- Smoldercloth Cap
-				   i(113786), -- Smoldercloth Slippers
-				   i(113769), -- Ravaged Leather Boots
-				   i(113705), -- Ravaged Leather Bracers
-				   i(113698), -- Ravaged Leather Cap
-				   i(113700), -- Ravaged Leather Helm
-				   i(113768), -- Ravaged Leather Slippers
-				   i(113706), -- Ravaged Leather Wristguards
-				   i(113774), -- Sparkmail Boots
-				   i(113703), -- Sparkmail Bracers
-				   i(113699), -- Sparkmail Headguard
-				   i(113697), -- Sparkmail Helm
-				   i(113775), -- Sparkmail Sabatons
-				   i(113704), -- Sparkmail Wristguards
-				   i(113780), -- Emberspark Plate Boots
-				   i(113701), -- Emberspark Plate Bracers
-				   i(113696), -- Emberspark Plate Headguard
-				   i(113695), -- Emberspark Plate Helm
-				   i(113781), -- Emberspark Plate Sabatons
-				   i(113702), -- Emberspark Plate Wristguards
-				},
-				["description"] = "|cff66ccffRewarded for completing a random Cataclysm dungeon in the level 80-84 range.|r",
-			   }),
+						["groups"] = {
+						   i(113760), -- Smoldercloth Bracers
+						   i(113759), -- Smoldercloth Cap
+						   i(113786), -- Smoldercloth Slippers
+						   i(113769), -- Ravaged Leather Boots
+						   i(113705), -- Ravaged Leather Bracers
+						   i(113698), -- Ravaged Leather Cap
+						   i(113700), -- Ravaged Leather Helm
+						   i(113768), -- Ravaged Leather Slippers
+						   i(113706), -- Ravaged Leather Wristguards
+						   i(113774), -- Sparkmail Boots
+						   i(113703), -- Sparkmail Bracers
+						   i(113699), -- Sparkmail Headguard
+						   i(113697), -- Sparkmail Helm
+						   i(113775), -- Sparkmail Sabatons
+						   i(113704), -- Sparkmail Wristguards
+						   i(113780), -- Emberspark Plate Boots
+						   i(113701), -- Emberspark Plate Bracers
+						   i(113696), -- Emberspark Plate Headguard
+						   i(113695), -- Emberspark Plate Helm
+						   i(113781), -- Emberspark Plate Sabatons
+						   i(113702), -- Emberspark Plate Wristguards
+						},
+						["description"] = "|cff66ccffRewarded for completing a random Cataclysm dungeon in the level 80-84 range.|r",
+					   }),
 					i(114655, { -- Scorched Satchel of Helpful Goods 84-85
 						["groups"] = {
 						   i(113763), -- Smoldercloth Gloves
