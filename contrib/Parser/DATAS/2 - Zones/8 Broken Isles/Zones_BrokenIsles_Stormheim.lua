@@ -140,7 +140,7 @@ _.Zones =
 						["description"] = "1. Buy Pungent Vrykul Gamalost from Steward Dayton in Stormheim.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy new Direbeak Hatchling pet!|r",
 					}),
 				}),
-				n(169, { -- Emissary Quests
+				n(-169, { -- Emissary Quests
 					q(42234, { -- The Valarjar
 						i(157824, { -- Valarjar Cache
 							["groups"] = {
