@@ -146,8 +146,442 @@ _.Zones =
 						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling pet!|r",
 					}),	
 				}),
-				n(-17, { 	-- Quests
---[[					
+				
+				n(-169, { -- Emissary Quests
+					q(42233, { -- Highmountain Tribes
+						i(157823, { -- Highmountain Tribute
+							n(-322, { -- Cloak
+								i(134158), -- Trembling Mightstone Drape
+								i(139112), -- Tribal Unification Cloak
+							}),
+							n(-3249, { -- Sunfrost Set
+								["groups"] = {
+									i(139124),	-- Sunfrost Aurora
+									i(139129),	-- Sunfrost Mantle
+									i(139127),	-- Sunfrost Robes
+									i(139130),	-- Sunfrost Wristwraps
+									i(139125),	-- Sunfrost Handwraps
+									i(139123),	-- Sunfrost Waistcord
+									i(139126),	-- Sunfrost Leggings
+									i(139128),	-- Sunfrost Slippers
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
+							}),
+							n(-3263, { -- Rivermane Set
+								["groups"] = {
+									i(139108),	-- Rivermane Hood
+									i(139110),	-- Rivermane Shoulders
+									i(139109),	-- Rivermane Robe
+									i(139104),	-- Rivermane Wraps
+									i(139107),	-- Rivermane Gloves
+									i(139111),	-- Rivermane Cord
+									i(139106),	-- Rivermane Kilt
+									i(139105),	-- Rivermane Sandals
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
+							}),
+							n(-3270, { -- Steelgazer Set
+								["groups"] = {
+									i(134152),	-- Steelgazer Hide Hood
+									i(134154),	-- Steelgazer Hide Mantle
+									i(134153),	-- Steelgazer Hide Jerkin
+									i(134148),	-- Steelgazer Hide Bracers
+									i(134151),	-- Steelgazer Hide Gloves
+									i(134155),	-- Steelgazer Hide Belt
+									i(134150),	-- Steelgazer Hide Leggings
+									i(134149),	-- Steelgazer Hide Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+							}),
+							n(-3275, { -- Skyhorn Set
+								["groups"] = {
+									i(139119),	-- Skyhorn Headgear
+									i(139121),	-- Skyhorn Mantle
+									i(139122),	-- Skyhorn Vest
+									i(139116),	-- Skyhorn Bindings
+									i(139117),	-- Skyhorn Gloves
+									i(139115),	-- Skyhorn Cinch
+									i(139120),	-- Skyhorn Legguards
+									i(139118),	-- Skyhorn Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
+							}),
+							n(-3300, { -- Greystone Set
+								["groups"] = {
+									i(139096),	-- Greystone Helm
+									i(139098),	-- Greystone Pauldrons
+									i(139093),	-- Greystone Chestpiece
+									i(139100),	-- Greystone Wristplates
+									i(139094),	-- Greystone Gauntlets
+									i(139095),	-- Greystone Belt
+									i(139097),	-- Greystone Legplates
+									i(139099),	-- Greystone Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+							}),
+							n(-3308, { -- Rockbound Set
+								["groups"] = {
+									i(134138),	-- Rockbound Helm
+									i(134140),	-- Rockbound Pauldrons
+									i(134135),	-- Rockbound Chestguard
+									i(134142),	-- Rockbound Wristguard
+									i(134136),	-- Rockbound Gauntlets
+									i(134137),	-- Rockbound Girdle
+									i(134139),	-- Rockbound Legguards
+									i(134141),	-- Rockbound Sabatons
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+							}),
+						}),
+						un(2, i(137561, { -- Highmountain Tribute
+							n(-322, { -- Cloak
+								i(134158), -- Trembling Mightstone Drape
+								i(139112), -- Tribal Unification Cloak
+							}),
+							n(-3249, { -- Sunfrost Set
+								["groups"] = {
+									i(139124),	-- Sunfrost Aurora
+									i(139129),	-- Sunfrost Mantle
+									i(139127),	-- Sunfrost Robes
+									i(139130),	-- Sunfrost Wristwraps
+									i(139125),	-- Sunfrost Handwraps
+									i(139123),	-- Sunfrost Waistcord
+									i(139126),	-- Sunfrost Leggings
+									i(139128),	-- Sunfrost Slippers
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
+							}),
+							n(-3263, { -- Rivermane Set
+								["groups"] = {
+									i(139108),	-- Rivermane Hood
+									i(139110),	-- Rivermane Shoulders
+									i(139109),	-- Rivermane Robe
+									i(139104),	-- Rivermane Wraps
+									i(139107),	-- Rivermane Gloves
+									i(139111),	-- Rivermane Cord
+									i(139106),	-- Rivermane Kilt
+									i(139105),	-- Rivermane Sandals
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
+							}),
+							n(-3270, { -- Steelgazer Set
+								["groups"] = {
+									i(134152),	-- Steelgazer Hide Hood
+									i(134154),	-- Steelgazer Hide Mantle
+									i(134153),	-- Steelgazer Hide Jerkin
+									i(134148),	-- Steelgazer Hide Bracers
+									i(134151),	-- Steelgazer Hide Gloves
+									i(134155),	-- Steelgazer Hide Belt
+									i(134150),	-- Steelgazer Hide Leggings
+									i(134149),	-- Steelgazer Hide Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+							}),
+							n(-3275, { -- Skyhorn Set
+								["groups"] = {
+									i(139119),	-- Skyhorn Headgear
+									i(139121),	-- Skyhorn Mantle
+									i(139122),	-- Skyhorn Vest
+									i(139116),	-- Skyhorn Bindings
+									i(139117),	-- Skyhorn Gloves
+									i(139115),	-- Skyhorn Cinch
+									i(139120),	-- Skyhorn Legguards
+									i(139118),	-- Skyhorn Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
+							}),
+							n(-3300, { -- Greystone Set
+								["groups"] = {
+									i(139096),	-- Greystone Helm
+									i(139098),	-- Greystone Pauldrons
+									i(139093),	-- Greystone Chestpiece
+									i(139100),	-- Greystone Wristplates
+									i(139094),	-- Greystone Gauntlets
+									i(139095),	-- Greystone Belt
+									i(139097),	-- Greystone Legplates
+									i(139099),	-- Greystone Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+							}),
+							n(-3308, { -- Rockbound Set
+								["groups"] = {
+									i(134138),	-- Rockbound Helm
+									i(134140),	-- Rockbound Pauldrons
+									i(134135),	-- Rockbound Chestguard
+									i(134142),	-- Rockbound Wristguard
+									i(134136),	-- Rockbound Gauntlets
+									i(134137),	-- Rockbound Girdle
+									i(134139),	-- Rockbound Legguards
+									i(134141),	-- Rockbound Sabatons
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+							}),
+						})),
+						un(2, i(154904, { -- Highmountain Tribute
+							n(-322, { -- Cloak
+								i(134158), -- Trembling Mightstone Drape
+								i(139112), -- Tribal Unification Cloak
+							}),
+							n(-3249, { -- Sunfrost Set
+								["groups"] = {
+									i(139124),	-- Sunfrost Aurora
+									i(139129),	-- Sunfrost Mantle
+									i(139127),	-- Sunfrost Robes
+									i(139130),	-- Sunfrost Wristwraps
+									i(139125),	-- Sunfrost Handwraps
+									i(139123),	-- Sunfrost Waistcord
+									i(139126),	-- Sunfrost Leggings
+									i(139128),	-- Sunfrost Slippers
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
+							}),
+							n(-3263, { -- Rivermane Set
+								["groups"] = {
+									i(139108),	-- Rivermane Hood
+									i(139110),	-- Rivermane Shoulders
+									i(139109),	-- Rivermane Robe
+									i(139104),	-- Rivermane Wraps
+									i(139107),	-- Rivermane Gloves
+									i(139111),	-- Rivermane Cord
+									i(139106),	-- Rivermane Kilt
+									i(139105),	-- Rivermane Sandals
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
+							}),
+							n(-3270, { -- Steelgazer Set
+								["groups"] = {
+									i(134152),	-- Steelgazer Hide Hood
+									i(134154),	-- Steelgazer Hide Mantle
+									i(134153),	-- Steelgazer Hide Jerkin
+									i(134148),	-- Steelgazer Hide Bracers
+									i(134151),	-- Steelgazer Hide Gloves
+									i(134155),	-- Steelgazer Hide Belt
+									i(134150),	-- Steelgazer Hide Leggings
+									i(134149),	-- Steelgazer Hide Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+							}),
+							n(-3275, { -- Skyhorn Set
+								["groups"] = {
+									i(139119),	-- Skyhorn Headgear
+									i(139121),	-- Skyhorn Mantle
+									i(139122),	-- Skyhorn Vest
+									i(139116),	-- Skyhorn Bindings
+									i(139117),	-- Skyhorn Gloves
+									i(139115),	-- Skyhorn Cinch
+									i(139120),	-- Skyhorn Legguards
+									i(139118),	-- Skyhorn Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
+							}),
+							n(-3300, { -- Greystone Set
+								["groups"] = {
+									i(139096),	-- Greystone Helm
+									i(139098),	-- Greystone Pauldrons
+									i(139093),	-- Greystone Chestpiece
+									i(139100),	-- Greystone Wristplates
+									i(139094),	-- Greystone Gauntlets
+									i(139095),	-- Greystone Belt
+									i(139097),	-- Greystone Legplates
+									i(139099),	-- Greystone Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+							}),
+							n(-3308, { -- Rockbound Set
+								["groups"] = {
+									i(134138),	-- Rockbound Helm
+									i(134140),	-- Rockbound Pauldrons
+									i(134135),	-- Rockbound Chestguard
+									i(134142),	-- Rockbound Wristguard
+									i(134136),	-- Rockbound Gauntlets
+									i(134137),	-- Rockbound Girdle
+									i(134139),	-- Rockbound Legguards
+									i(134141),	-- Rockbound Sabatons
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+							}),
+						})),
+						un(2, i(146748, { -- Highmountain Tribute
+							n(-322, { -- Cloak
+								i(134158), -- Trembling Mightstone Drape
+								i(139112), -- Tribal Unification Cloak
+							}),
+							n(-3249, { -- Sunfrost Set
+								["groups"] = {
+									i(139124),	-- Sunfrost Aurora
+									i(139129),	-- Sunfrost Mantle
+									i(139127),	-- Sunfrost Robes
+									i(139130),	-- Sunfrost Wristwraps
+									i(139125),	-- Sunfrost Handwraps
+									i(139123),	-- Sunfrost Waistcord
+									i(139126),	-- Sunfrost Leggings
+									i(139128),	-- Sunfrost Slippers
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
+							}),
+							n(-3263, { -- Rivermane Set
+								["groups"] = {
+									i(139108),	-- Rivermane Hood
+									i(139110),	-- Rivermane Shoulders
+									i(139109),	-- Rivermane Robe
+									i(139104),	-- Rivermane Wraps
+									i(139107),	-- Rivermane Gloves
+									i(139111),	-- Rivermane Cord
+									i(139106),	-- Rivermane Kilt
+									i(139105),	-- Rivermane Sandals
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
+							}),
+							n(-3270, { -- Steelgazer Set
+								["groups"] = {
+									i(134152),	-- Steelgazer Hide Hood
+									i(134154),	-- Steelgazer Hide Mantle
+									i(134153),	-- Steelgazer Hide Jerkin
+									i(134148),	-- Steelgazer Hide Bracers
+									i(134151),	-- Steelgazer Hide Gloves
+									i(134155),	-- Steelgazer Hide Belt
+									i(134150),	-- Steelgazer Hide Leggings
+									i(134149),	-- Steelgazer Hide Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+							}),
+							n(-3275, { -- Skyhorn Set
+								["groups"] = {
+									i(139119),	-- Skyhorn Headgear
+									i(139121),	-- Skyhorn Mantle
+									i(139122),	-- Skyhorn Vest
+									i(139116),	-- Skyhorn Bindings
+									i(139117),	-- Skyhorn Gloves
+									i(139115),	-- Skyhorn Cinch
+									i(139120),	-- Skyhorn Legguards
+									i(139118),	-- Skyhorn Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
+							}),
+							n(-3300, { -- Greystone Set
+								["groups"] = {
+									i(139096),	-- Greystone Helm
+									i(139098),	-- Greystone Pauldrons
+									i(139093),	-- Greystone Chestpiece
+									i(139100),	-- Greystone Wristplates
+									i(139094),	-- Greystone Gauntlets
+									i(139095),	-- Greystone Belt
+									i(139097),	-- Greystone Legplates
+									i(139099),	-- Greystone Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+							}),
+							n(-3308, { -- Rockbound Set
+								["groups"] = {
+									i(134138),	-- Rockbound Helm
+									i(134140),	-- Rockbound Pauldrons
+									i(134135),	-- Rockbound Chestguard
+									i(134142),	-- Rockbound Wristguard
+									i(134136),	-- Rockbound Gauntlets
+									i(134137),	-- Rockbound Girdle
+									i(134139),	-- Rockbound Legguards
+									i(134141),	-- Rockbound Sabatons
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+							}),
+						})),
+						un(2, i(151465, { -- Highmountain Tribute
+							n(-322, { -- Cloak
+								i(134158), -- Trembling Mightstone Drape
+								i(139112), -- Tribal Unification Cloak
+							}),
+							n(-3249, { -- Sunfrost Set
+								["groups"] = {
+									i(139124),	-- Sunfrost Aurora
+									i(139129),	-- Sunfrost Mantle
+									i(139127),	-- Sunfrost Robes
+									i(139130),	-- Sunfrost Wristwraps
+									i(139125),	-- Sunfrost Handwraps
+									i(139123),	-- Sunfrost Waistcord
+									i(139126),	-- Sunfrost Leggings
+									i(139128),	-- Sunfrost Slippers
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
+							}),
+							n(-3263, { -- Rivermane Set
+								["groups"] = {
+									i(139108),	-- Rivermane Hood
+									i(139110),	-- Rivermane Shoulders
+									i(139109),	-- Rivermane Robe
+									i(139104),	-- Rivermane Wraps
+									i(139107),	-- Rivermane Gloves
+									i(139111),	-- Rivermane Cord
+									i(139106),	-- Rivermane Kilt
+									i(139105),	-- Rivermane Sandals
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
+							}),
+							n(-3270, { -- Steelgazer Set
+								["groups"] = {
+									i(134152),	-- Steelgazer Hide Hood
+									i(134154),	-- Steelgazer Hide Mantle
+									i(134153),	-- Steelgazer Hide Jerkin
+									i(134148),	-- Steelgazer Hide Bracers
+									i(134151),	-- Steelgazer Hide Gloves
+									i(134155),	-- Steelgazer Hide Belt
+									i(134150),	-- Steelgazer Hide Leggings
+									i(134149),	-- Steelgazer Hide Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+							}),
+							n(-3275, { -- Skyhorn Set
+								["groups"] = {
+									i(139119),	-- Skyhorn Headgear
+									i(139121),	-- Skyhorn Mantle
+									i(139122),	-- Skyhorn Vest
+									i(139116),	-- Skyhorn Bindings
+									i(139117),	-- Skyhorn Gloves
+									i(139115),	-- Skyhorn Cinch
+									i(139120),	-- Skyhorn Legguards
+									i(139118),	-- Skyhorn Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
+							}),
+							n(-3300, { -- Greystone Set
+								["groups"] = {
+									i(139096),	-- Greystone Helm
+									i(139098),	-- Greystone Pauldrons
+									i(139093),	-- Greystone Chestpiece
+									i(139100),	-- Greystone Wristplates
+									i(139094),	-- Greystone Gauntlets
+									i(139095),	-- Greystone Belt
+									i(139097),	-- Greystone Legplates
+									i(139099),	-- Greystone Boots
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+							}),
+							n(-3308, { -- Rockbound Set
+								["groups"] = {
+									i(134138),	-- Rockbound Helm
+									i(134140),	-- Rockbound Pauldrons
+									i(134135),	-- Rockbound Chestguard
+									i(134142),	-- Rockbound Wristguard
+									i(134136),	-- Rockbound Gauntlets
+									i(134137),	-- Rockbound Girdle
+									i(134139),	-- Rockbound Legguards
+									i(134141),	-- Rockbound Sabatons
+								},
+								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+							}),
+						})),
+					}),
+					n(-206, { -- Paragon
+						q(46743, {	-- Supplies From Highmountain
+							i(152104, { -- Highmountain Supplies
+								i(147807), -- Highmountain Elderhorn
+							}),
+							un(2, i(146899, { -- Highmountain Supplies
+								i(147807), -- Highmountain Elderhorn
+							})),
+						}),
+					}),
+				}),
+				--[[					
 					n(-34, {	-- World Quests					
 						q( 43985),	-- A Dark Tide
 						q( 45840),	-- Assault on Highmountain
@@ -318,608 +752,609 @@ _.Zones =
 						q( 46279),	-- Zargrom
 					}),
 --]]					
-					ach(10059, { -- Ain't No Mountain High Enough
-            crit(1, { -- The Rivermane Tribe
-              q( 39733),	-- The Lone Mountain
-              q( 38907),	-- Keepers of the Hammer
-              q( 38911),	-- The Rivermane Tribe
-              q( 39490),	-- Infestation
-              q( 39491,  {  	-- Ormgul the Pestilent
-                i(121657),
-                i(121659),
-                i(121658),
-                i(121656),
-              }),
-              q( 39272),	-- Poisoned Crops
-              q( 39496),	-- The Flow of the River
-              q( 39614),	-- Fish Out of Water
-              q( 39316),	-- Trapped Tauren
-              q( 39277,  {  	-- Spray and Prey
-                i(130291),
-                i(130292),
-                i(130293),
-                i(130294),
-                i(141637),
-                i(141636),
-                i(141635),
-                i(141634),
-              }),
-              q( 39661),	-- Lifespring Cavern
-              q( 39488),	-- Balance of Elements
-              q( 39489),	-- Invading Spelunkers
-              q( 39487),	-- Crystal Fury
-            }),
-            crit(2, { -- Riverbend
-              q( 39498),	-- High Water
-              q( 42104),	-- The Underking Comes
-              q( 39025),	-- Grasp of the Underking
-              q( 39026),	-- The Drogbar
-              q( 39043),	-- Bitestone Enclave
-              q( 39027,  {  	-- Dargrul and the Hammer
-                i(130287),
-                i(130288),
-                i(130289),
-                i(130290),
-              }),
-              q( 38909),	-- Get to High Ground
-            }),
-            crit(3, { -- The Skyhorn Tribe
-              q( 38913),	-- The Skyhorn Tribe
-              q( 39318),	-- Nursing the Wounds
-              q( 38910),	-- Rocs vs Eagles
-              q( 39321,  {  	-- The Three
-                i(121665),
-                i(121667),
-                i(121666),
-                i(121664),
-                i(130303),
-                i(130304),
-                i(130305),
-                i(130306),
-              }),
-              q( 39429),	-- Assaulting the Haglands
-              q( 39322),	-- The Witchqueen
-              q( 39387),	-- The Skies of Highmountain
-                
-            }),
-            crit(4, { -- The Bloodtotem Tribe
-              q( 38912),	-- The Bloodtotem Tribe
-              q( 39372),	-- Witch of the Wood
-              q( 39373),	-- Hags of a Feather
-              q( 39873),	-- I Have a Bad Feeling About This
-              q( 39374),	-- An Audience with Torok
-              q( 39455),	-- Cave of the Blood Trial
-              q( 39860,  {  	-- Rite of Blood
-                i(121669),
-                i(121671),
-                i(121670),
-                i(121668),
-              }),
-              q( 39381),	-- Rock Troll in a Hard Place
-              q( 39391),	-- Pet Rocks					
-              q( 39425),	-- Stonedark Crystal
-              q( 39588),	-- They Will Pay With Blood
-              q( 39426),	-- Blood Debt
-              q( 40229),	-- Step into the Dark
-              q( 39456),	-- Unexpected Allies
-            }),
-            crit(5, { -- Huln's War
-              q( 40515),	-- A Walk With the Spirits
-              q( 40167),	-- The Story of Huln
-              q( 40520),	-- To See the Past
-              q( 39983),	-- Huln's War - The Arrival
-              q( 40112),	-- Huln's War - Malorne's Favored
-              q( 39988),	-- Huln's War - Stormrage
-              q( 39990),	-- Huln's War - Reinforcements
-              q( 40388),	-- Huln's War - Shadowsong
-							q( 39992,  {  -- Huln's War - The Nathrezim
-                i(130282),
+					n(-17, { 	-- Quests
+						ach(10059, { -- Ain't No Mountain High Enough
+							crit(1, { -- The Rivermane Tribe
+							  q( 39733),	-- The Lone Mountain
+							  q( 38907),	-- Keepers of the Hammer
+							  q( 38911),	-- The Rivermane Tribe
+							  q( 39490),	-- Infestation
+							  q( 39491,  {  	-- Ormgul the Pestilent
+								i(121657),
+								i(121659),
+								i(121658),
+								i(121656),
+							  }),
+							  q( 39272),	-- Poisoned Crops
+							  q( 39496),	-- The Flow of the River
+							  q( 39614),	-- Fish Out of Water
+							  q( 39316),	-- Trapped Tauren
+							  q( 39277,  {  	-- Spray and Prey
+								i(130291),
+								i(130292),
+								i(130293),
+								i(130294),
+								i(141637),
+								i(141636),
+								i(141635),
+								i(141634),
+							  }),
+							  q( 39661),	-- Lifespring Cavern
+							  q( 39488),	-- Balance of Elements
+							  q( 39489),	-- Invading Spelunkers
+							  q( 39487),	-- Crystal Fury
 							}),
-            }),
-            crit(6, { -- Secrets of Highmountain
-              q( 38916),	-- Secrets of Highmountain
-              q( 39575),	-- The Path of Huln
-              q( 40219),	-- In Defiance of Deathwing
-              q( 39578,  {  	-- Titanic Showdown
-                i(121662),
-                i(121660),
-                i(121663),
-                i(121661),
-              }),
-              q( 39577),	-- An Ancient Secret
-              q( 39579),	-- The Backdoor
-              q( 39580),	-- The High Chieftain
-            }),
-            crit(7, { -- Battle of Snowblind Mesa
-              q( 38915),	-- Battle of Snowblind Mesa
-              q( 39776),	-- Battle Worms
-              q( 39777),	-- Buy Us Time
-              q( 39862),	-- The Siegebrul
-              q( 42088),	-- Evacuate Snowmane
-              q( 42512),	-- Highmountain Stands
-              q( 40594),	-- Justice Rains from Above
-              q( 39780,  {  	-- The Underking
-                i(121675),
-                i(121673),
-                i(121676),
-                i(121674),
-                i(130269),
-                i(130270),
-                i(130271),
-                i(130272),
-              }),
-              q( 39781), -- Neltharion's Lair: Death to the Underking
-              q( 42454, { -- The Hammer of Khaz'goroth
-                i(141007), -- Earthguard Handwraps
-                i(141009), -- Earthguard Gloves
-                i(141008), -- Earthguard Grips
-                i(141010), -- Earthguard Gauntlets
-              }),
-            }),
-          }),
-        	ach(10877, { -- Pillars of Creation
-            q( 39781), -- Neltharion's Lair: Death to the Underking
-            q( 42454, { -- The Hammer of Khaz'goroth
-              i(141007), -- Earthguard Handwraps
-              i(141009), -- Earthguard Gloves
-              i(141008), -- Earthguard Grips
-              i(141010), -- Earthguard Gauntlets
-            }),
-					}),  
-          n(-38, {     -- Professions
-            n(-191, { -- Archaeology
-              q( 41189),	-- A New Lead              
-            }),
-            n(-189, { -- Skinning
-              q(40134, {	-- Highmountain Hides
-                ["groups"] = { i(130064) },	-- Deadeye Monocle
-                ["requiredSkill"] = 393
-              }),
-            }),
-          }),
-          ach(10994, { -- Class Campaign
-            cl(2, { -- Paladin
-              q( 45561),	-- Seek Me Out
-              q( 45562),	-- Kneel and Be Squired!
-              q( 45565),	-- Further Training
-              q( 45566),	-- A Knight's Belongings
-              q( 45567),	-- My Kingdom for a Horse
-              q( 45568),	-- They Stole Excaliberto!
-              q( 45644),	-- Oh Doloria, My Sweet Doloria
-              q( 45645),	-- A Fool's Errand
-            }),
-            cl(5, { -- Priest
-              q( 45343),	-- A Curious Contagion
-              q( 45344),	-- Sampling the Source
-              q( 45346),	-- Shambling Specimens
-              q( 45345),	-- Mischievous Sprites
-              q( 45347),	-- Crafting a Cure
-              q( 45348),	-- Safekeeping
-              q( 45342),	-- Administering Aid
-            }),
-          }),
-          ach(11609, { -- Power Unbound
-            q( 45841),	-- A Triumphant Report
-          }),
-					n(-168, {    -- Other Quests
-						sz(10667,6 , { -- Pinerock Basin
-              q( 40217),	-- An Offering of Ammo
-              q( 39859),	-- Note-Eating Goats
-              q( 40216),	-- A Hunter at Heart
-              q( 40170),	-- Amateur Hour
-              q( 39123),	-- Lion Stalkin'
-              q( 39867),	-- I'm Not Lion!
-              q( 39124),	-- Moose Shootin'
-              q( 39178),	-- Moose on the Loose
-              q( 39392),	-- Bear Huntin'
-              q( 40228,  {  	-- Scout It Out
-                i(121672),
-                i(121655),
-                i(121654),
-                i(121653),
-                i(130276),
-                i(130277),
-                i(130278),
-                i(130279),
-              }),
-              q( 40244),	-- That Guy in the Costume
-              q( 39764),	-- Shiny, But Deadly
-              q( 39773),	-- The Soulkeeper's Fate
-              q( 39774,  {  	-- Demon Detainment
-                i(132090),
-                i(132089),
-                i(132088),
-                i(132087),
-              }),
-            }),
-            sz(10667,9 , { -- Shipwreck Cove
-              q( 40045),	-- Nature vs. Nurture
-              q( 40047),	-- I'll Huff, I'll Puff...
-              q( 40049),	-- Slime Time
-              q( 40102),	-- Murlocs: The Next Generation
-              q( 40230,  {  	-- Oh, the Clawdacity!
-                i(132116),
-                i(132113),
-                i(132112),
-                i(132110),
-                i(132111),
-                i(132114),
-                i(132115),
-                i(132117),
-              }),
-            }),
-            sz(10667,11 , { -- Stonehoof Watch
-              q( 39386),	-- Procuring a Prototype
-              q( 39670),	-- Critter Scatter Shot
-              q( 40000),	-- A True Hunter
-              q( 39656,  {  	-- Wolf Pack Attack
-                i(131933), 		-- TOY! Critter Hand Cannon
-              }),	
-              q( 39417),	-- Rating Razik
-            }),
-            sz(10667,10 , { -- Skyhorn
-              q( 39765),	-- Wax On, Wax Off
-              q( 39768),	-- Candle to the Grave
-              q( 39769),	-- The Gates of Wax
-              q( 40339),	-- Candle of Command
-              q( 40345),	-- Burn the Candle at Both Ends
-              q( 39772,  {  	-- Can't Hold a Candle To You
-                i(130286),
-                i(130285),
-                i(130284),
-                i(130283),
-              }),
-              q(40071,  {  	-- Tamer Takedown
-                i(121681),
-                i(121684),
-                i(121683),
-                i(121682),
-              }),
-              q( 40069),	-- Fledgling Worm Guts
-              q( 42425),	-- Going Down, Going Up
-              q(39305,  {  	-- Empty Nest
-                i(129277), 		-- PET! Skyhorn Nestling
-              }),
-            }),
-            sz(10667,1, { -- Bloodhunt Highlands
-              q( 39440),	-- You Lift, Brul?
-              q( 39437),	-- Deep in the Cavern
-              q( 39438,  {  	-- Guhruhlruhlruh
-                i(130296),
-                i(130295),
-                i(130297),
-                i(130298),
-                i(130313),
-                i(130314),
-                i(130315),
-                i(130316),
-              }),
-              q( 39439),	-- Stonedark Relics                
-            }),
-            sz(10667,7, { -- Riverbend
-              q( 39323),	-- Moozy's Sojourn
-              q(39572,  {  	-- Moozy's Adventure
-                i(121724),
-              }),
-            }),
-            sz(10667,13, { -- Thunder Totem
-              q( 39133),	-- No Time to Talk
-              q(39134,  {  	-- Wrathshard
-                i(121678),
-                i(121680),
-                i(121679),
-                i(121677),
-                i(130299),
-                i(130300),
-                i(130301),
-                i(130302),
-              }),
-            }),
-            ach(11186, { -- Tehd & Marius' Excellent Adventure
-              q(44055,  {  	-- They Have a Pitlord
-                i(140726),
-                i(140728),
-                i(140724),
-                i(140727),
-                i(140723),
-                i(140722),
-                i(140725),
-                i(140721),
-              }),
-            }),
-          }),
-        --[[ These quests will be organized soon™
-					q( 43423),	-- A Hero's Weapon
-					q( 43370),	-- A New Invention
-					q( 40957),	-- A Strong Right Hand
-          q( 42436),	-- Aiding Our Allies
-					q( 40312),	-- A Timely Opportunity REMOVED
-					q( 45766),	-- Albino Elderhorn
-					q( 39646),	-- Albino Elderhorn
-					q( 41053),	-- Altar of the Eternal Hunt
-					q( 40413),	-- Amateur Hunters
-					q( 45180),	-- An Island of War
-					q( 46022),	-- An Urgent Warning
-					q( 42505),	-- Arcanist Shal'iman
-					q( 41823),	-- Ashes to Ashes
-					q( 42404),	-- Assisting the Archmage
-					q( 42656),	-- Azure Weaponry
-					q( 42397),	-- Baron and the Huntsman
-					q( 46182),	-- Battle for Highmountain
-					q( 47018),	-- Beast Mastery: Rumblings Near Feltotem
-					q( 43961),	-- Bestrix
-					q( 42930),	-- Big Gamy Ribs										
-					q( 42417),	-- Bilebrain
-					q( 39991),	-- Blessing of Cenarius
-					q( 40773),	-- Bloodshard
-					q( 41842),	-- Bottom of the Food Chain
-					q( 40243),	-- Break Weapon Racks
-					q( 40405),	-- Bristlemaul
-					q( 39235),	-- Buba
-					q( 44311),	-- Burning Plate of the Worldbreaker Available
-					q( 44312),	-- Burning Plate of the Worldbreaker Denied
-					q( 40392),	-- Call of the Marksman
-					q( 42389),	-- Calling Hilaire Home
-					q( 42622),	-- Ceremonial Drums
-					q( 41042),	-- Champion Chomper
-					q( 42414),	-- Champion: Addie Fizzlebog
-					q( 42415),	-- Champion: Halduron Brightwing
-					q( 42413),	-- Champion: Hemet Nesingwary
-					q( 42409),	-- Champion: Loren Stormhoof
-					q( 42410),	-- Champion: Rexxar
-					q( 43960),	-- Cinderwing
-					q( 40192),	-- Claw of the Land
-					q( 39883),	-- Cloaked in Tradition
-					q( 44043),	-- Continuing the Legend
-					q( 45350),	-- Countering the Contagion
-					q( 42699),	-- Coura, Master of Arcana
-					q( 44275),	-- Court of Stars
-					q( 39994),	-- Crab Rider Grmlrml
-					q( 41190),	-- Crystal Eyes
-					q( 41241),	-- Cursed Queenfish Needed
-					q( 45392),	-- Dark Memento
-					q( 43551),	-- Darkheart Thicket
-					q( 44272),	-- Darkheart Thicket
-					q( 44273),	-- Darkheart Thicket
-					q( 42654),	-- Darkheart Thicket: Nightmare Oak
-					q( 39274),	-- Defend the Riverlands
-					q( 47073),	-- Delivering Lost Knowledge
-					q( 38534),	-- Demonsteel Armguards
-					q( 38538),	-- Demonsteel Boots
-					q( 38542),	-- Demonsteel Breastplate
-					q( 38539),	-- Demonsteel Gauntlets
-					q( 38541),	-- Demonsteel Greaves
-					q( 38540),	-- Demonsteel Helm
-					q( 38537),	-- Demonsteel Pauldrons
-					q( 38536),	-- Demonsteel Waistguard										
-					q( 45173),	-- Desperate Times
-					q( 45796),	-- Destroying the Nest
-					q( 45560),	-- Destruction: Rumblings Near Feltotem
-					q( 45551),	-- Devastating Effects
-					q( 40414),	-- Devouring Darkness
-					q( 47020),	-- Discipline: Rumblings Near Feltotem
-					q( 41191),	-- Drogbar Deception
-					q( 40186),	-- Drogbar Durability
-					q( 40070),	-- Eagle Egg Recovery
-					q( 39576),	-- Echoes of Deathwing
-					q( 40204),	-- Evolution of the Past
-					q( 44270),	-- Eye of Azshara
-					q( 44271),	-- Eye of Azshara
-					q( 39762),	-- Feltotem Warlock
-					q( 39430),	-- Flasking for a Favor
-					q( 41822),	-- Following his Hoofsteps
-					q( 38518),	-- From One Master to Another
-					q( 46783),	-- Further Advancement
-					q( 46149),	-- Furthering Knowledge
-					q( 41987),	-- Garn
-					q( 38519),	-- Grayheft
-					q( 41833),	-- Grmlrml's Last Ride
-					q( 40347),	-- Gurbog da Basher
-					q( 39436),	-- Haglands Treasure
-					q( 39827),	-- Haglands Treasure
-					q( 40190),	-- Hardening the Hide
-					q( 41094),	-- Hatchlings of the Talon
-					q( 39419),	-- Hex-a-Gone
-					q( 40134),	-- Highmountain Hides
-					q( 42403),	-- Highmountain Hunters
-					q( 42929),	-- Highmountain Salmon
-					q( 42233),	-- Highmountain Tribes
-					q( 41186),	-- History of Highmountain
-					q( 45572),	-- Holding Our Ground
-					q( 42393),	-- Homecoming
-					q( 44576),	-- Honor the Flame
-					q( 42286),	-- Houndmaster Stroxis
-					q( 40136),	-- Immaculate Stonehide Leather
-					q( 42659),	-- In Defense of Dalaran
-					q( 42405),	-- Informing Our Allies
-					q( 41047),	-- Infused with Power
-					q( 42376),	-- Inquisitor Tivos
-					q( 43908),	-- Into the Nightmare: Fall of Cenarius
-					q( 43904),	-- Into the Nightmare: Fall of Cenarius
-					q( 43906),	-- Into the Nightmare: Fall of Cenarius
-					q( 43902),	-- Into the Nightmare: Fall of Cenarius										
-					q( 43548),	-- Into the Nightmare: Il'gynoth
-					q( 43549),	-- Into the Nightmare: Il'gynoth
-					q( 43547),	-- Into the Nightmare: Il'gynoth
-					q( 43546),	-- Into the Nightmare: Il'gynoth
-					q( 43907),	-- Into the Nightmare: Xavius
-					q( 43909),	-- Into the Nightmare: Xavius
-					q( 43905),	-- Into the Nightmare: Xavius
-					q( 43903),	-- Into the Nightmare: Xavius
-					q( 46023),	-- Investigate the Broken Shore
-					q( 39699),	-- Ironhorn Leysmithing
-					q( 43957),	-- Jade Darkhaven
-					q( 42204),	-- Jorhuttam
-					q( 43815),	-- Karthax
-					q( 39989),	-- Keepers of the Hammer
-					q( 38907),	-- Keepers of the Hammer
-					q( 42689),	-- Knowing Our Enemy
-					q( 41193),	-- Laying to Rest
-					q( 44680),	-- Leading by Example
-					q( 44059),	-- Legion Attacks
-					q( 42385),	-- Lending a Hand
-					q( 38531),	-- Leystone Mastery
-					q( 38785),	-- Living Leystone Sample
-					q( 40406),	-- Luggut the Eggeater
-					q( 43956),	-- Lysanis Shadesoul
-					q( 42523),	-- Making Contact
-					q( 43553),	-- Maw of Souls
-					q( 44266),	-- Maw of Souls
-					q( 44267),	-- Maw of Souls
-					q( 38532),	-- Maw of Souls: Hammered By The Storm
-					q( 42657),	-- Meeting in Moonclaw Vale
-					q( 40242),	-- Mellok, Son of Torok
-					q( 42400),	-- Missing Mages
-					q( 42590),	-- Moozy's Reunion
-					q( 42596),	-- Mountainstrider Round-Up
-					q( 43554),	-- Neltharion's Lair
-					q( 44265),	-- Neltharion's Lair
-					q( 44264),	-- Neltharion's Lair
-					q( 39781),	-- Neltharion's Lair
-					q( 41188),	-- Neltharion's Lair: Misdirected
-					q( 39533),	-- Nogginclobber Arena
-					q( 40955),	-- Oath of Service
-					q( 43509),	-- Odyn's Challenge
-					q( 44268),	-- Odyn's Challenge
-					q( 44269),	-- Odyn's Challenge
-					q( 40953),	-- On Eagle's Wings
-					q( 44366),	-- One Last Adventure
-					q( 42655),	-- Ore Under the Sea
-					q( 39435),	-- Oubdob da Smasher
-					q( 42381),	-- Ox'iloth
-					q( 46796),	-- Paragon of Highmountain
-					q( 44090),	-- Pledge of Loyalty
-					q( 41542),	-- Preparation for the Hunt
-					q( 40850),	-- Prisoners of Greystone
-					q( 42700),	-- Quin'el, Master of Chillwind
-					q( 42399),	-- Ready to Work
-					q( 42134),	-- Recruiting More Troops
-					q( 42390),	-- Recruiting Rexxar
-					q( 42524),	-- Recruiting The Troops
-					q( 41540),	-- Rendezvous with the Courier
-					q( 42402),	-- Requesting Reinforcements
-					q( 42408),	-- Required Reagents
-					q( 40205),	-- Respect for the Past
-					q( 38793),	-- Rethu's Experience
-					q( 38791),	-- Rethu's Horn
-					q( 38789),	-- Rethu's Journal
-					q( 38792),	-- Rethu's Lesson
-					q( 38790),	-- Rethu's Pick
-					q( 38794),	-- Rethu's Sacrifice
-					q( 44917),	-- Return to Karazhan: The Tower of Power
-					q( 42202),	-- Revenge, Served Cold
-					q( 38803),	-- Rin'thissa
-					q( 42519),	-- Rise, Champions
-					q( 41837),	-- Rockaway Bully
-					q( 42133),	-- Same Day Delivery
-					q( 42384),	-- Scouting Reports
-					q( 40133),	-- Scrap of Pants
-					q( 44039),	-- Sea King Tidross
---					q( 38914),	-- Secrets of Highmountain REMOVED
-					q( 42698),	-- Selia, Master of Balefire
-					q( 40050),	-- Shipwreck Cove
-					q( 40185),	-- Shoulder the Burden
-					q( 39317),	-- Siege of Crawliac
-					q( 42395),	-- Signaling Trouble
-					q( 42928),	-- Silkweave Bandages
-					q( 41817),	-- Skull of the Taskmaster
-					q( 39465),	-- Skywhisker Taskmaster
-					q( 40175),	-- Sleeping Bear
-					q( 40681),	-- Snarf
-					q( 40191),	-- Stamped Stories
-					q( 46145),	-- Sterile Surroundings
-					q( 40141),	-- Stormscale Sample
-					q( 40203),	-- Strength of the Past
-					q( 39879),	-- Strong Like the Earth
-					q( 46743),	-- Supplies From Highmountain
-					q( 41187),	-- Surveying Student
-					q( 43335),	-- Survival Skills
-					q( 42392),	-- Survive the Night
-					q( 40958),	-- Tactical Matters
-					q( 40184),	-- Tauren Tanning
-					q( 42526),	-- Tech It Up A Notch
-					q( 39334),	-- Thanks for Flasking
-					q( 44263),	-- The Arcway
-					q( 38833),	-- The Art of Demonsteel
-					q( 45564),	-- The Burning Birds
-					q( 40959),	-- The Campaign Begins
-					q( 41829),	-- The Darkfeather Scout
-					q( 39427),	-- The Eagle Spirit's Blessing
-					q( 45587),	-- The Feltotem Menace
-					q( 40202),	-- The Final Lessons
-					q( 38530),	-- The Firmament Stone
-					q( 40135),	-- The Freedom to Roam
-					q( 38513),	-- The Highmountain Smiths
-					q( 38888),	-- The Highmountain Tauren
-					q( 38787),	-- The Legend of Rethu Ironhorn
-					q( 44276),	-- The Lord of Black Rook Hold
-					q( 44277),	-- The Lord of Black Rook Hold
-					q( 43545),	-- The Lord of Black Rook Hold
-					q( 43182),	-- The Missing Vessel
-					q( 44671),	-- The Muscle
-					q( 42407),	-- The Nature of the Beast
-					q( 43911),	-- The Nighthold: Elisande
-					q( 43920),	-- The Nighthold: Elisande
-					q( 43917),	-- The Nighthold: Elisande
-					q( 43914),	-- The Nighthold: Elisande
-					q( 43921),	-- The Nighthold: Gul'dan
-					q( 43915),	-- The Nighthold: Gul'dan
-					q( 43912),	-- The Nighthold: Gul'dan
-					q( 43918),	-- The Nighthold: Gul'dan
-					q( 43910),	-- The Nighthold: High Botanist Tel'arn
-					q( 43919),	-- The Nighthold: High Botanist Tel'arn
-					q( 43916),	-- The Nighthold: High Botanist Tel'arn
-					q( 43913),	-- The Nighthold: High Botanist Tel'arn
-					q( 43889),	-- The Nighthold: Vaults
-					q( 43882),	-- The Nighthold: Vaults
-					q( 43890),	-- The Nighthold: Vaults
-					q( 43891),	-- The Nighthold: Vaults
-					q( 43496),	-- The Power Within
-					q( 43501),	-- The Power Within
-					q( 41192),	-- The Right Path
-					q( 42401),	-- The Scent of Magic
-					q( 40316),	-- The Screeching Crag
-					q( 40385),	-- The Spear in the Shadow
-					q( 45726),	-- The Tainted Marsh
-					q( 40954),	-- The Unseen Path
-					q( 44055),	-- They Have A Pitlord
-					q( 39878),	-- Thunder Struck					
-					q( 45172),	-- To Battle!
-					q( 45349),	-- To the Broken Shore
-					q( 42110),	-- To the Summit!
-					q( 44035),	-- Torrentius
-					q( 47065),	-- Tracking Quest
-					q( 39606),	-- Treasures of Deathwing
-					q( 38533),	-- Tribal Knowledge
-					q( 42525),	-- Troops in the Field
-					q( 40423),	-- Unethical Adventurers
-					q( 44211),	-- Unseen Armaments
-					q( 44212),	-- Unseen Fate
-					q( 42394),	-- Unseen Protection
-					q( 42388),	-- Urgent Summons
-					q( 44261),	-- Vault of the Wardens
-					q( 44260),	-- Vault of the Wardens
-					q( 42373),	-- Vengeance for the Stonedark
-					q( 45575),	-- Village of the Corruptors
-					q( 44259),	-- Violet Hold
-					q( 44258),	-- Violet Hold
-					q( 44058),	-- Volpin the Elusive
-					q( 42280),	-- Vorthax
-					q( 44233),	-- Walk This Way
-					q( 41820),	-- Walk Without Rhythm
-					q( 39880),	-- Waste Not
-					q( 40415),	-- Well Spent Time
-					q( 38786),	-- Where Respect is Due
-					q( 41832),	-- White Water Terror
-					q( 45179),	-- Win the Crowd
-					q( 47019),	-- Windwalker: Rumblings Near Feltotem
-					q( 41825),	-- Winged Menace
-					q( 41761),	-- Winter Moose Roundup
-					q( 39371),	-- Witches of the Sky
-					q( 38559),	-- Worthy of the Stone
-					q( 38514),	-- You Are Not Worthy
-          SOON™
-          --]]
+							crit(2, { -- Riverbend
+							  q( 39498),	-- High Water
+							  q( 42104),	-- The Underking Comes
+							  q( 39025),	-- Grasp of the Underking
+							  q( 39026),	-- The Drogbar
+							  q( 39043),	-- Bitestone Enclave
+							  q( 39027,  {  	-- Dargrul and the Hammer
+								i(130287),
+								i(130288),
+								i(130289),
+								i(130290),
+							  }),
+							  q( 38909),	-- Get to High Ground
+							}),
+							crit(3, { -- The Skyhorn Tribe
+							  q( 38913),	-- The Skyhorn Tribe
+							  q( 39318),	-- Nursing the Wounds
+							  q( 38910),	-- Rocs vs Eagles
+							  q( 39321,  {  	-- The Three
+								i(121665),
+								i(121667),
+								i(121666),
+								i(121664),
+								i(130303),
+								i(130304),
+								i(130305),
+								i(130306),
+							  }),
+							  q( 39429),	-- Assaulting the Haglands
+							  q( 39322),	-- The Witchqueen
+							  q( 39387),	-- The Skies of Highmountain
+								
+							}),
+							crit(4, { -- The Bloodtotem Tribe
+							  q( 38912),	-- The Bloodtotem Tribe
+							  q( 39372),	-- Witch of the Wood
+							  q( 39373),	-- Hags of a Feather
+							  q( 39873),	-- I Have a Bad Feeling About This
+							  q( 39374),	-- An Audience with Torok
+							  q( 39455),	-- Cave of the Blood Trial
+							  q( 39860,  {  	-- Rite of Blood
+								i(121669),
+								i(121671),
+								i(121670),
+								i(121668),
+							  }),
+							  q( 39381),	-- Rock Troll in a Hard Place
+							  q( 39391),	-- Pet Rocks					
+							  q( 39425),	-- Stonedark Crystal
+							  q( 39588),	-- They Will Pay With Blood
+							  q( 39426),	-- Blood Debt
+							  q( 40229),	-- Step into the Dark
+							  q( 39456),	-- Unexpected Allies
+							}),
+							crit(5, { -- Huln's War
+							  q( 40515),	-- A Walk With the Spirits
+							  q( 40167),	-- The Story of Huln
+							  q( 40520),	-- To See the Past
+							  q( 39983),	-- Huln's War - The Arrival
+							  q( 40112),	-- Huln's War - Malorne's Favored
+							  q( 39988),	-- Huln's War - Stormrage
+							  q( 39990),	-- Huln's War - Reinforcements
+							  q( 40388),	-- Huln's War - Shadowsong
+											q( 39992,  {  -- Huln's War - The Nathrezim
+								i(130282),
+											}),
+							}),
+							crit(6, { -- Secrets of Highmountain
+							  q( 38916),	-- Secrets of Highmountain
+							  q( 39575),	-- The Path of Huln
+							  q( 40219),	-- In Defiance of Deathwing
+							  q( 39578,  {  	-- Titanic Showdown
+								i(121662),
+								i(121660),
+								i(121663),
+								i(121661),
+							  }),
+							  q( 39577),	-- An Ancient Secret
+							  q( 39579),	-- The Backdoor
+							  q( 39580),	-- The High Chieftain
+							}),
+							crit(7, { -- Battle of Snowblind Mesa
+							  q( 38915),	-- Battle of Snowblind Mesa
+							  q( 39776),	-- Battle Worms
+							  q( 39777),	-- Buy Us Time
+							  q( 39862),	-- The Siegebrul
+							  q( 42088),	-- Evacuate Snowmane
+							  q( 42512),	-- Highmountain Stands
+							  q( 40594),	-- Justice Rains from Above
+							  q( 39780,  {  	-- The Underking
+								i(121675),
+								i(121673),
+								i(121676),
+								i(121674),
+								i(130269),
+								i(130270),
+								i(130271),
+								i(130272),
+							  }),
+							  q( 39781), -- Neltharion's Lair: Death to the Underking
+							  q( 42454, { -- The Hammer of Khaz'goroth
+								i(141007), -- Earthguard Handwraps
+								i(141009), -- Earthguard Gloves
+								i(141008), -- Earthguard Grips
+								i(141010), -- Earthguard Gauntlets
+							  }),
+							}),
+						}),
+						ach(10877, { -- Pillars of Creation
+							q( 39781), -- Neltharion's Lair: Death to the Underking
+							q( 42454, { -- The Hammer of Khaz'goroth
+							  i(141007), -- Earthguard Handwraps
+							  i(141009), -- Earthguard Gloves
+							  i(141008), -- Earthguard Grips
+							  i(141010), -- Earthguard Gauntlets
+							}),
+						}),  
+						n(-38, {     -- Professions
+							n(-191, { -- Archaeology
+							  q( 41189),	-- A New Lead              
+							}),
+							n(-189, { -- Skinning
+							  q(40134, {	-- Highmountain Hides
+								["groups"] = { i(130064) },	-- Deadeye Monocle
+								["requiredSkill"] = 393
+							  }),
+							}),
+						}),
+						ach(10994, { -- Class Campaign
+							cl(2, { -- Paladin
+							  q( 45561),	-- Seek Me Out
+							  q( 45562),	-- Kneel and Be Squired!
+							  q( 45565),	-- Further Training
+							  q( 45566),	-- A Knight's Belongings
+							  q( 45567),	-- My Kingdom for a Horse
+							  q( 45568),	-- They Stole Excaliberto!
+							  q( 45644),	-- Oh Doloria, My Sweet Doloria
+							  q( 45645),	-- A Fool's Errand
+							}),
+							cl(5, { -- Priest
+							  q( 45343),	-- A Curious Contagion
+							  q( 45344),	-- Sampling the Source
+							  q( 45346),	-- Shambling Specimens
+							  q( 45345),	-- Mischievous Sprites
+							  q( 45347),	-- Crafting a Cure
+							  q( 45348),	-- Safekeeping
+							  q( 45342),	-- Administering Aid
+							}),
+						}),
+						ach(11609, { -- Power Unbound
+							q( 45841),	-- A Triumphant Report
+						}),
+						n(-168, {    -- Other Quests
+							sz(10667,6 , { -- Pinerock Basin
+								q( 40217),	-- An Offering of Ammo
+								q( 39859),	-- Note-Eating Goats
+								q( 40216),	-- A Hunter at Heart
+								q( 40170),	-- Amateur Hour
+								q( 39123),	-- Lion Stalkin'
+								q( 39867),	-- I'm Not Lion!
+								q( 39124),	-- Moose Shootin'
+								q( 39178),	-- Moose on the Loose
+								q( 39392),	-- Bear Huntin'
+								q( 40228,  {  	-- Scout It Out
+									i(121672),
+									i(121655),
+									i(121654),
+									i(121653),
+									i(130276),
+									i(130277),
+									i(130278),
+									i(130279),
+								}),
+								q( 40244),	-- That Guy in the Costume
+								q( 39764),	-- Shiny, But Deadly
+								q( 39773),	-- The Soulkeeper's Fate
+								q( 39774,  {  	-- Demon Detainment
+									i(132090),
+									i(132089),
+									i(132088),
+									i(132087),
+								}),
+							}),
+							sz(10667,9 , { -- Shipwreck Cove
+								q( 40045),	-- Nature vs. Nurture
+								q( 40047),	-- I'll Huff, I'll Puff...
+								q( 40049),	-- Slime Time
+								q( 40102),	-- Murlocs: The Next Generation
+								q( 40230,  {  	-- Oh, the Clawdacity!
+									i(132116),
+									i(132113),
+									i(132112),
+									i(132110),
+									i(132111),
+									i(132114),
+									i(132115),
+									i(132117),
+								}),
+							}),
+							sz(10667,11 , { -- Stonehoof Watch
+								q( 39386),	-- Procuring a Prototype
+								q( 39670),	-- Critter Scatter Shot
+								q( 40000),	-- A True Hunter
+								q( 39656,  {  	-- Wolf Pack Attack
+									i(131933), 		-- TOY! Critter Hand Cannon
+								}),	
+								q( 39417),	-- Rating Razik
+							}),
+							sz(10667,10 , { -- Skyhorn
+								q( 39765),	-- Wax On, Wax Off
+								q( 39768),	-- Candle to the Grave
+								q( 39769),	-- The Gates of Wax
+								q( 40339),	-- Candle of Command
+								q( 40345),	-- Burn the Candle at Both Ends
+								q( 39772,  {  	-- Can't Hold a Candle To You
+									i(130286),
+									i(130285),
+									i(130284),
+									i(130283),
+								}),
+								q(40071,  {  	-- Tamer Takedown
+									i(121681),
+									i(121684),
+									i(121683),
+									i(121682),
+								}),
+								q( 40069),	-- Fledgling Worm Guts
+								q( 42425),	-- Going Down, Going Up
+								q(39305,  {  	-- Empty Nest
+									i(129277), 		-- PET! Skyhorn Nestling
+								}),
+							}),
+							sz(10667,1, { -- Bloodhunt Highlands
+							  q( 39440),	-- You Lift, Brul?
+							  q( 39437),	-- Deep in the Cavern
+							  q( 39438,  {  	-- Guhruhlruhlruh
+								i(130296),
+								i(130295),
+								i(130297),
+								i(130298),
+								i(130313),
+								i(130314),
+								i(130315),
+								i(130316),
+							  }),
+							  q( 39439),	-- Stonedark Relics                
+							}),
+							sz(10667,7, { -- Riverbend
+							  q( 39323),	-- Moozy's Sojourn
+							  q(39572,  {  	-- Moozy's Adventure
+								i(121724),
+							  }),
+							}),
+							sz(10667,13, { -- Thunder Totem
+							  q( 39133),	-- No Time to Talk
+							  q(39134,  {  	-- Wrathshard
+								i(121678),
+								i(121680),
+								i(121679),
+								i(121677),
+								i(130299),
+								i(130300),
+								i(130301),
+								i(130302),
+							  }),
+							}),
+							ach(11186, { -- Tehd & Marius' Excellent Adventure
+							  q(44055,  {  	-- They Have a Pitlord
+								i(140726),
+								i(140728),
+								i(140724),
+								i(140727),
+								i(140723),
+								i(140722),
+								i(140725),
+								i(140721),
+							  }),
+							}),
+						  }),
+						--[[ These quests will be organized soon™
+									q( 43423),	-- A Hero's Weapon
+									q( 43370),	-- A New Invention
+									q( 40957),	-- A Strong Right Hand
+						  q( 42436),	-- Aiding Our Allies
+									q( 40312),	-- A Timely Opportunity REMOVED
+									q( 45766),	-- Albino Elderhorn
+									q( 39646),	-- Albino Elderhorn
+									q( 41053),	-- Altar of the Eternal Hunt
+									q( 40413),	-- Amateur Hunters
+									q( 45180),	-- An Island of War
+									q( 46022),	-- An Urgent Warning
+									q( 42505),	-- Arcanist Shal'iman
+									q( 41823),	-- Ashes to Ashes
+									q( 42404),	-- Assisting the Archmage
+									q( 42656),	-- Azure Weaponry
+									q( 42397),	-- Baron and the Huntsman
+									q( 46182),	-- Battle for Highmountain
+									q( 47018),	-- Beast Mastery: Rumblings Near Feltotem
+									q( 43961),	-- Bestrix
+									q( 42930),	-- Big Gamy Ribs										
+									q( 42417),	-- Bilebrain
+									q( 39991),	-- Blessing of Cenarius
+									q( 40773),	-- Bloodshard
+									q( 41842),	-- Bottom of the Food Chain
+									q( 40243),	-- Break Weapon Racks
+									q( 40405),	-- Bristlemaul
+									q( 39235),	-- Buba
+									q( 44311),	-- Burning Plate of the Worldbreaker Available
+									q( 44312),	-- Burning Plate of the Worldbreaker Denied
+									q( 40392),	-- Call of the Marksman
+									q( 42389),	-- Calling Hilaire Home
+									q( 42622),	-- Ceremonial Drums
+									q( 41042),	-- Champion Chomper
+									q( 42414),	-- Champion: Addie Fizzlebog
+									q( 42415),	-- Champion: Halduron Brightwing
+									q( 42413),	-- Champion: Hemet Nesingwary
+									q( 42409),	-- Champion: Loren Stormhoof
+									q( 42410),	-- Champion: Rexxar
+									q( 43960),	-- Cinderwing
+									q( 40192),	-- Claw of the Land
+									q( 39883),	-- Cloaked in Tradition
+									q( 44043),	-- Continuing the Legend
+									q( 45350),	-- Countering the Contagion
+									q( 42699),	-- Coura, Master of Arcana
+									q( 44275),	-- Court of Stars
+									q( 39994),	-- Crab Rider Grmlrml
+									q( 41190),	-- Crystal Eyes
+									q( 41241),	-- Cursed Queenfish Needed
+									q( 45392),	-- Dark Memento
+									q( 43551),	-- Darkheart Thicket
+									q( 44272),	-- Darkheart Thicket
+									q( 44273),	-- Darkheart Thicket
+									q( 42654),	-- Darkheart Thicket: Nightmare Oak
+									q( 39274),	-- Defend the Riverlands
+									q( 47073),	-- Delivering Lost Knowledge
+									q( 38534),	-- Demonsteel Armguards
+									q( 38538),	-- Demonsteel Boots
+									q( 38542),	-- Demonsteel Breastplate
+									q( 38539),	-- Demonsteel Gauntlets
+									q( 38541),	-- Demonsteel Greaves
+									q( 38540),	-- Demonsteel Helm
+									q( 38537),	-- Demonsteel Pauldrons
+									q( 38536),	-- Demonsteel Waistguard										
+									q( 45173),	-- Desperate Times
+									q( 45796),	-- Destroying the Nest
+									q( 45560),	-- Destruction: Rumblings Near Feltotem
+									q( 45551),	-- Devastating Effects
+									q( 40414),	-- Devouring Darkness
+									q( 47020),	-- Discipline: Rumblings Near Feltotem
+									q( 41191),	-- Drogbar Deception
+									q( 40186),	-- Drogbar Durability
+									q( 40070),	-- Eagle Egg Recovery
+									q( 39576),	-- Echoes of Deathwing
+									q( 40204),	-- Evolution of the Past
+									q( 44270),	-- Eye of Azshara
+									q( 44271),	-- Eye of Azshara
+									q( 39762),	-- Feltotem Warlock
+									q( 39430),	-- Flasking for a Favor
+									q( 41822),	-- Following his Hoofsteps
+									q( 38518),	-- From One Master to Another
+									q( 46783),	-- Further Advancement
+									q( 46149),	-- Furthering Knowledge
+									q( 41987),	-- Garn
+									q( 38519),	-- Grayheft
+									q( 41833),	-- Grmlrml's Last Ride
+									q( 40347),	-- Gurbog da Basher
+									q( 39436),	-- Haglands Treasure
+									q( 39827),	-- Haglands Treasure
+									q( 40190),	-- Hardening the Hide
+									q( 41094),	-- Hatchlings of the Talon
+									q( 39419),	-- Hex-a-Gone
+									q( 40134),	-- Highmountain Hides
+									q( 42403),	-- Highmountain Hunters
+									q( 42929),	-- Highmountain Salmon
+									q( 42233),	-- Highmountain Tribes
+									q( 41186),	-- History of Highmountain
+									q( 45572),	-- Holding Our Ground
+									q( 42393),	-- Homecoming
+									q( 44576),	-- Honor the Flame
+									q( 42286),	-- Houndmaster Stroxis
+									q( 40136),	-- Immaculate Stonehide Leather
+									q( 42659),	-- In Defense of Dalaran
+									q( 42405),	-- Informing Our Allies
+									q( 41047),	-- Infused with Power
+									q( 42376),	-- Inquisitor Tivos
+									q( 43908),	-- Into the Nightmare: Fall of Cenarius
+									q( 43904),	-- Into the Nightmare: Fall of Cenarius
+									q( 43906),	-- Into the Nightmare: Fall of Cenarius
+									q( 43902),	-- Into the Nightmare: Fall of Cenarius										
+									q( 43548),	-- Into the Nightmare: Il'gynoth
+									q( 43549),	-- Into the Nightmare: Il'gynoth
+									q( 43547),	-- Into the Nightmare: Il'gynoth
+									q( 43546),	-- Into the Nightmare: Il'gynoth
+									q( 43907),	-- Into the Nightmare: Xavius
+									q( 43909),	-- Into the Nightmare: Xavius
+									q( 43905),	-- Into the Nightmare: Xavius
+									q( 43903),	-- Into the Nightmare: Xavius
+									q( 46023),	-- Investigate the Broken Shore
+									q( 39699),	-- Ironhorn Leysmithing
+									q( 43957),	-- Jade Darkhaven
+									q( 42204),	-- Jorhuttam
+									q( 43815),	-- Karthax
+									q( 39989),	-- Keepers of the Hammer
+									q( 38907),	-- Keepers of the Hammer
+									q( 42689),	-- Knowing Our Enemy
+									q( 41193),	-- Laying to Rest
+									q( 44680),	-- Leading by Example
+									q( 44059),	-- Legion Attacks
+									q( 42385),	-- Lending a Hand
+									q( 38531),	-- Leystone Mastery
+									q( 38785),	-- Living Leystone Sample
+									q( 40406),	-- Luggut the Eggeater
+									q( 43956),	-- Lysanis Shadesoul
+									q( 42523),	-- Making Contact
+									q( 43553),	-- Maw of Souls
+									q( 44266),	-- Maw of Souls
+									q( 44267),	-- Maw of Souls
+									q( 38532),	-- Maw of Souls: Hammered By The Storm
+									q( 42657),	-- Meeting in Moonclaw Vale
+									q( 40242),	-- Mellok, Son of Torok
+									q( 42400),	-- Missing Mages
+									q( 42590),	-- Moozy's Reunion
+									q( 42596),	-- Mountainstrider Round-Up
+									q( 43554),	-- Neltharion's Lair
+									q( 44265),	-- Neltharion's Lair
+									q( 44264),	-- Neltharion's Lair
+									q( 39781),	-- Neltharion's Lair
+									q( 41188),	-- Neltharion's Lair: Misdirected
+									q( 39533),	-- Nogginclobber Arena
+									q( 40955),	-- Oath of Service
+									q( 43509),	-- Odyn's Challenge
+									q( 44268),	-- Odyn's Challenge
+									q( 44269),	-- Odyn's Challenge
+									q( 40953),	-- On Eagle's Wings
+									q( 44366),	-- One Last Adventure
+									q( 42655),	-- Ore Under the Sea
+									q( 39435),	-- Oubdob da Smasher
+									q( 42381),	-- Ox'iloth
+									q( 46796),	-- Paragon of Highmountain
+									q( 44090),	-- Pledge of Loyalty
+									q( 41542),	-- Preparation for the Hunt
+									q( 40850),	-- Prisoners of Greystone
+									q( 42700),	-- Quin'el, Master of Chillwind
+									q( 42399),	-- Ready to Work
+									q( 42134),	-- Recruiting More Troops
+									q( 42390),	-- Recruiting Rexxar
+									q( 42524),	-- Recruiting The Troops
+									q( 41540),	-- Rendezvous with the Courier
+									q( 42402),	-- Requesting Reinforcements
+									q( 42408),	-- Required Reagents
+									q( 40205),	-- Respect for the Past
+									q( 38793),	-- Rethu's Experience
+									q( 38791),	-- Rethu's Horn
+									q( 38789),	-- Rethu's Journal
+									q( 38792),	-- Rethu's Lesson
+									q( 38790),	-- Rethu's Pick
+									q( 38794),	-- Rethu's Sacrifice
+									q( 44917),	-- Return to Karazhan: The Tower of Power
+									q( 42202),	-- Revenge, Served Cold
+									q( 38803),	-- Rin'thissa
+									q( 42519),	-- Rise, Champions
+									q( 41837),	-- Rockaway Bully
+									q( 42133),	-- Same Day Delivery
+									q( 42384),	-- Scouting Reports
+									q( 40133),	-- Scrap of Pants
+									q( 44039),	-- Sea King Tidross
+				--					q( 38914),	-- Secrets of Highmountain REMOVED
+									q( 42698),	-- Selia, Master of Balefire
+									q( 40050),	-- Shipwreck Cove
+									q( 40185),	-- Shoulder the Burden
+									q( 39317),	-- Siege of Crawliac
+									q( 42395),	-- Signaling Trouble
+									q( 42928),	-- Silkweave Bandages
+									q( 41817),	-- Skull of the Taskmaster
+									q( 39465),	-- Skywhisker Taskmaster
+									q( 40175),	-- Sleeping Bear
+									q( 40681),	-- Snarf
+									q( 40191),	-- Stamped Stories
+									q( 46145),	-- Sterile Surroundings
+									q( 40141),	-- Stormscale Sample
+									q( 40203),	-- Strength of the Past
+									q( 39879),	-- Strong Like the Earth
+									q( 46743),	-- Supplies From Highmountain
+									q( 41187),	-- Surveying Student
+									q( 43335),	-- Survival Skills
+									q( 42392),	-- Survive the Night
+									q( 40958),	-- Tactical Matters
+									q( 40184),	-- Tauren Tanning
+									q( 42526),	-- Tech It Up A Notch
+									q( 39334),	-- Thanks for Flasking
+									q( 44263),	-- The Arcway
+									q( 38833),	-- The Art of Demonsteel
+									q( 45564),	-- The Burning Birds
+									q( 40959),	-- The Campaign Begins
+									q( 41829),	-- The Darkfeather Scout
+									q( 39427),	-- The Eagle Spirit's Blessing
+									q( 45587),	-- The Feltotem Menace
+									q( 40202),	-- The Final Lessons
+									q( 38530),	-- The Firmament Stone
+									q( 40135),	-- The Freedom to Roam
+									q( 38513),	-- The Highmountain Smiths
+									q( 38888),	-- The Highmountain Tauren
+									q( 38787),	-- The Legend of Rethu Ironhorn
+									q( 44276),	-- The Lord of Black Rook Hold
+									q( 44277),	-- The Lord of Black Rook Hold
+									q( 43545),	-- The Lord of Black Rook Hold
+									q( 43182),	-- The Missing Vessel
+									q( 44671),	-- The Muscle
+									q( 42407),	-- The Nature of the Beast
+									q( 43911),	-- The Nighthold: Elisande
+									q( 43920),	-- The Nighthold: Elisande
+									q( 43917),	-- The Nighthold: Elisande
+									q( 43914),	-- The Nighthold: Elisande
+									q( 43921),	-- The Nighthold: Gul'dan
+									q( 43915),	-- The Nighthold: Gul'dan
+									q( 43912),	-- The Nighthold: Gul'dan
+									q( 43918),	-- The Nighthold: Gul'dan
+									q( 43910),	-- The Nighthold: High Botanist Tel'arn
+									q( 43919),	-- The Nighthold: High Botanist Tel'arn
+									q( 43916),	-- The Nighthold: High Botanist Tel'arn
+									q( 43913),	-- The Nighthold: High Botanist Tel'arn
+									q( 43889),	-- The Nighthold: Vaults
+									q( 43882),	-- The Nighthold: Vaults
+									q( 43890),	-- The Nighthold: Vaults
+									q( 43891),	-- The Nighthold: Vaults
+									q( 43496),	-- The Power Within
+									q( 43501),	-- The Power Within
+									q( 41192),	-- The Right Path
+									q( 42401),	-- The Scent of Magic
+									q( 40316),	-- The Screeching Crag
+									q( 40385),	-- The Spear in the Shadow
+									q( 45726),	-- The Tainted Marsh
+									q( 40954),	-- The Unseen Path
+									q( 44055),	-- They Have A Pitlord
+									q( 39878),	-- Thunder Struck					
+									q( 45172),	-- To Battle!
+									q( 45349),	-- To the Broken Shore
+									q( 42110),	-- To the Summit!
+									q( 44035),	-- Torrentius
+									q( 47065),	-- Tracking Quest
+									q( 39606),	-- Treasures of Deathwing
+									q( 38533),	-- Tribal Knowledge
+									q( 42525),	-- Troops in the Field
+									q( 40423),	-- Unethical Adventurers
+									q( 44211),	-- Unseen Armaments
+									q( 44212),	-- Unseen Fate
+									q( 42394),	-- Unseen Protection
+									q( 42388),	-- Urgent Summons
+									q( 44261),	-- Vault of the Wardens
+									q( 44260),	-- Vault of the Wardens
+									q( 42373),	-- Vengeance for the Stonedark
+									q( 45575),	-- Village of the Corruptors
+									q( 44259),	-- Violet Hold
+									q( 44258),	-- Violet Hold
+									q( 44058),	-- Volpin the Elusive
+									q( 42280),	-- Vorthax
+									q( 44233),	-- Walk This Way
+									q( 41820),	-- Walk Without Rhythm
+									q( 39880),	-- Waste Not
+									q( 40415),	-- Well Spent Time
+									q( 38786),	-- Where Respect is Due
+									q( 41832),	-- White Water Terror
+									q( 45179),	-- Win the Crowd
+									q( 47019),	-- Windwalker: Rumblings Near Feltotem
+									q( 41825),	-- Winged Menace
+									q( 41761),	-- Winter Moose Roundup
+									q( 39371),	-- Witches of the Sky
+									q( 38559),	-- Worthy of the Stone
+									q( 38514),	-- You Are Not Worthy
+						  SOON™
+						  --]]
 				}),	
 				n(-16, { 	-- Rares
 					v(40413, { 		-- Amateur Hunters
@@ -1229,14 +1664,7 @@ _.Zones =
 					}),
 				}),
 				m(1080, {	-- Thunder Totem
-					["groups"] = {				
-						n(-17, { -- Quests
-							q(46743, {	-- Supplies From Highmountain
-								i(152104, {	 -- Highmountain Supplies
-									i(147807),  -- MOUNT! Highmountain Elderhorn
-								}),
-							}),
-						}),
+					["groups"] = {
 						n(-2, { -- Vendors
 							n(120457, { -- Akule Riverhorn
 								["groups"] = {
