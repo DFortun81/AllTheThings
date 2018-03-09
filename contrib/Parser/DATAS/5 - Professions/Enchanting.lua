@@ -33,9 +33,9 @@ profession(333, 7411, { -- Enchanting
 			q(42971, {					-- Controlling the Elements
 				sp(217649, {					-- Tome of Illusions: Elemental Lords
 					i(138792, {
-						ill(4098),			-- Windwalk
-						ill(4084),			-- Heartsong
-						ill(5867),			-- Light of the Earth-Warder
+						ill(4067),			-- Avalanche
+						ill(4099),			-- Landslide
+						ill(4074),			-- Elemental Slayer
 					}),
 				}),
 			}),
