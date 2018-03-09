@@ -222,6 +222,55 @@ _.Zones =
 					},
 					["description"] = "In order to see this battle pet you must first obtain the buff |cFFFFD700Spring Cleaning|r, which is a 15 minute buff..  Multiple people can click the rug.  If there are none present you can realm hop until you find one. You obtain this buff by clicking on a |cFFFFD700Dusty Rug|r.  The rug can spawn in one of five locations:\n\n|cFFFFFFFFBarber Shop|r - Upper Level (|cFFFFFFFF52.52, 30.31|r),\n\n|cFFFFFFFFBreanni's Shop|r - Behind the counter (|cFFFFFFFF58.9, 38.3|r),\n\n|cFFFFFFFFFilthy  Animal [Horde]|r - Outside the building on top of the sewer gate to the right before you enter. (|cFFFFFFFF64.15, 37.9|r)\n\n|cFFFFFFFFGreyfang Enclave [Alliance]|r - Behind the Paladin Portal\n\n|cFFFFFFFFLegerdemain Lounge|r - Top Floor",
 				}),
+				n(-169, { -- Emissary Quests
+					q(43179, { -- The Kirin Tor of Dalaran
+						i(157828, { -- Kirin Tor Chest
+							["groups"] = {
+								i(141349, { -- Strange Humming Crystal
+									q(44412, { -- Enemies Everywhere
+										i(141348), -- Wondrous Wisdomball
+									}),
+								}),
+							},
+						}),
+						un(2, i(154909, { -- Kirin Tor Chest
+							["groups"] = {
+								i(141349, { -- Strange Humming Crystal
+									q(44412, { -- Enemies Everywhere
+										i(141348), -- Wondrous Wisdomball
+									}),
+								}),
+							},
+						})),
+						un(2, i(151470, { -- Kirin Tor Chest
+							["groups"] = {
+								i(141349, { -- Strange Humming Crystal
+									q(44412, { -- Enemies Everywhere
+										i(141348), -- Wondrous Wisdomball
+									}),
+								}),
+							},
+						})),
+						un(2, i(146753, { -- Kirin Tor Chest
+							["groups"] = {
+								i(141349, { -- Strange Humming Crystal
+									q(44412, { -- Enemies Everywhere
+										i(141348), -- Wondrous Wisdomball
+									}),
+								}),
+							},
+						})),
+						un(2, i(141350, { -- Kirin Tor Chest
+							["groups"] = {
+								i(141349, { -- Strange Humming Crystal
+									q(44412, { -- Enemies Everywhere
+										i(141348), -- Wondrous Wisdomball
+									}),
+								}),
+							},
+						})),
+					}),
+				}),
 				n(-17, { 	-- Quests
 					q(44400, {	-- Assault on Violet Hold: Purple Pain
 						i(141359),
