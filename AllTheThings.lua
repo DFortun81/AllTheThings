@@ -566,6 +566,16 @@ local function BuildSourceTextForChat(group, l)
 	end
 	return "ATT";
 end
+local function BuildSourceTextForTSM(group, l)
+	if group.parent then
+		if l < 1 or not group.text then
+			return BuildSourceTextForTSM(group.parent, l + 1);
+		else
+			return BuildSourceTextForTSM(group.parent, l + 1) .. "`" .. group.text;
+		end
+	end
+	return app.DisplayName;
+end
 local function GetSourceID(itemLink)
     if IsDressableItem(itemLink) then
 		local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
@@ -1333,9 +1343,8 @@ local function SearchForCachedItemLink(itemLink)
 end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
-		if not group.collected and group.collectible and (not group.b or group.b == 2) then
-			local name = group.name;
-			if name then listing[name] = 1; end
+		if group.collectible and (not group.b or group.b == 0 or group.b == 2) then
+			table.insert(listing, group);
 		end
 		if group.groups and group.expanded then
 			-- Go through the sub groups and determine if any of them have a response.
@@ -1346,9 +1355,21 @@ local function SearchForMissingItemsRecursively(group, listing)
 	end
 end
 local function SearchForMissingItems(group)
-	local listing, arr = {}, {};
+	local listing = {}; 
 	SearchForMissingItemsRecursively(group, listing);
-	for key,value in pairs(listing) do
+	return listing; 
+end
+local function SearchForMissingItemNames(group)
+	-- Auctionator needs unique Item Names. Nothing else.
+	local uniqueNames = {};
+	for i,group in ipairs(SearchForMissingItems(group)) do
+		local name = group.name;
+		if name then uniqueNames[name] = 1; end
+	end
+	
+	-- Build the array of names.
+	local arr = {};
+	for key,value in pairs(uniqueNames) do
 		table.insert(arr, key);
 	end
 	return arr; 
@@ -1360,11 +1381,11 @@ AllTheThings.SearchForCachedItemLink = SearchForCachedItemLink;
 AllTheThings.SearchForField = SearchForField;
 
 -- Map Information Lib
-local function ExpandGroupsRecursively(group, expanded)
-	if group.groups and not group.itemID then
+local function ExpandGroupsRecursively(group, expanded, manual)
+	if group.groups and (not group.itemID or manual) then
 		group.expanded = expanded;
 		for i, subgroup in ipairs(group.groups) do
-			ExpandGroupsRecursively(subgroup, expanded);
+			ExpandGroupsRecursively(subgroup, expanded, manual);
 		end
 	end
 end
@@ -2022,15 +2043,20 @@ local function AttachTooltip(self)
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
 		if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
-			--for i,j in pairs(self) do
-			--	self:AddDoubleLine(tostring(i), tostring(j));
-			--end
+			--[[
+			for i,j in pairs(self) do
+				self:AddDoubleLine(tostring(i), tostring(j));
+				print(tostring(i), tostring(j));
+			end
+			]]--
 		
 			local owner = self:GetOwner();
 			if owner then
-				--for i,j in pairs(owner) do
-				--	self:AddDoubleLine(tostring(i), tostring(j));
-				--end
+				--[[
+				for i,j in pairs(owner) do
+					self:AddDoubleLine(tostring(i), tostring(j));
+				end
+				]]--
 				
 				if GetDataMember("ShowContents") then
 					-- Is this for a Unit?
@@ -2062,29 +2088,63 @@ local function AttachTooltip(self)
 						return;
 					--[[
 					else
-						local questID = owner.questID;
+						local questID = self.questID;
 						if questID then
-							--if GetDataMember("ShowQuestID") then self:AddDoubleLine(L("QUEST_ID"), tostring(questID)); end
+							print("QUEST", questID);
+							if GetDataMember("ShowQuestID") then self:AddDoubleLine(L("QUEST_ID"), tostring(questID)); end
 							AttachTooltipSearchResults(self, "questID:" .. questID, SearchForFieldAndSummarize, "questID", tonumber(questID));
-						elseif owner.pluginName and owner.mapFile and owner.coord then
-							-- HandyNotes Integration
-							local plugin = _G[owner.pluginName];
-							if plugin and plugin.nodes then
-								local node = plugin.nodes[owner.mapFile];
-								if node then
-									local coord = node[owner.coord];
-									if coord then
-										questID = tonumber(coord.questID or coord.questId or coord[1] or "0");
-										if questID > 0 and questID < 999999 then
-											--if GetDataMember("ShowQuestID") then self:AddDoubleLine(L("QUEST_ID"), tostring(questID)); end
-											AttachTooltipSearchResults(self, "questID:" .. questID, SearchForFieldAndSummarize, "questID", questID);
-											--print(coord[1], coord[2], coord[3], coord[4], coord[5], coord[6], coord[7]);
-										end
-									end
-								end
-							end
 						end
-						]]--
+					]]--
+					end
+				end
+				
+				local link = select(2, self:GetItem());
+				if link then AttachTooltipSearchResults(self, link, SearchForItemLink, link); end
+				
+				local spellID = select(3, self:GetSpell());
+				if spellID and not IsSpellKnown(spellID) then
+					AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForFieldAndSummarize, "spellID", spellID);
+				end
+			else
+				if GetDataMember("ShowContents") then
+					-- Is this for a Unit?
+					local name, target = self:GetUnit();
+					if target then
+						-- Yes it is. Awesome.
+						print(name, target);
+						target = UnitGUID(target);
+						if target then
+							print("GUID", name, target);
+							local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",target);
+							--print(name .. " is a " .. type .. " " .. target);
+							if type == "Creature" or type == "Vehicle" then
+								--print(name .. "'s NPC id is " .. npc_id)
+								if GetDataMember("ShowCreatureID") then self:AddDoubleLine(L("CREATURE_ID"), tostring(npc_id)); end
+								AttachTooltipSearchResults(self, "creatureID:" .. npc_id, SearchForFieldAndSummarizeForCurrentDifficulty, "creatureID", tonumber(npc_id));
+							--elseif type == "Vignette" then
+								--print(name .. " is a Vignette and should have its npc_id be zero (" .. npc_id .. ").")
+							--elseif type == "Player" then
+							--	if target == "Player-76-0895E23B" then
+							--		self:AddDoubleLine(app.DisplayName, "Author");
+							--	end
+							end
+							return;
+						end
+					end
+					
+					local encounterID = self.encounterID;
+					if encounterID and not self.itemID then
+						AttachTooltipForEncounter(self, encounterID);
+						return;
+					--[[
+					else
+						local questID = self.questID;
+						if questID then
+							print("QUEST", questID);
+							if GetDataMember("ShowQuestID") then self:AddDoubleLine(L("QUEST_ID"), tostring(questID)); end
+							AttachTooltipSearchResults(self, "questID:" .. questID, SearchForFieldAndSummarize, "questID", tonumber(questID));
+						end
+					]]--
 					end
 				end
 				
@@ -2779,6 +2839,21 @@ app.BaseItem = {
 			return nil;
 		elseif key == "specs" then
 			return GetItemSpecInfo(t.itemID);
+		elseif key == "tsm" then
+			local itemLink = t.itemID;
+			if itemLink then
+				if t.bonus then
+					if t.bonus > 0 then
+						return string.format("i:%d:0:1:%d", itemLink, t.bonus);
+					else
+						return string.format("i:%d", itemLink);
+					end
+				elseif t.itemModID then
+					-- NOTE: At this time, TSM3 does not support itemModID. (RIP)
+					return string.format("i:%d:%d:1:3524", itemLink, t.itemModID);
+				end
+				return string.format("i:%d", itemLink);
+			end
 		else
 			-- Something that isn't dynamic.
 			return t.item and t.item[key] or table[key];
@@ -2844,6 +2919,8 @@ app.BaseMount = {
 			return t.mountID;
 		elseif key == "name" then
 			return C_MountJournal_GetMountInfoByID(GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID]);
+		elseif key == "tsm" then
+			--if t.parent then return t.parent.itemID; end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3135,6 +3212,8 @@ app.BaseSpecies = {
 			return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 		elseif key == "name" then
 			return t.text;
+		elseif key == "tsm" then
+			return string.format("p:%d:1:3", t.speciesID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3241,7 +3320,9 @@ app.BaseToy = {
 		elseif key == "icon" then
 			return select(3, C_ToyBox_GetToyInfo(t.toyID));
 		elseif key == "name" then
-			return select(2, C_ToyBox_GetToyInfo(t.itemID));
+			return select(2, C_ToyBox_GetToyInfo(t.toyID));
+		elseif key == "tsm" then
+			return string.format("i:%d", t.toyID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5475,7 +5556,7 @@ local function RowOnClick(self, button)
 				-- Auctionator Support
 				if Atr_SearchAH then
 					if reference.groups and #reference.groups > 0 then
-						local missingItems = SearchForMissingItems(reference);					
+						local missingItems = SearchForMissingItemNames(reference);					
 						if #missingItems > 0 then
 							Atr_SelectPane(3);
 							Atr_SearchAH(app.DisplayName, missingItems);
@@ -5492,6 +5573,29 @@ local function RowOnClick(self, button)
 							return true;
 						end
 						app.print("Only Bind on Equip items can be found using this search.");
+					end
+					return true;
+				elseif TSMAPI and TSMAPI.Auction then
+					if reference.groups and #reference.groups > 0 then
+						local missingItems = SearchForMissingItems(reference);					
+						if #missingItems > 0 then
+							local itemList = {};
+							for i,group in ipairs(missingItems) do
+								local search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID or group.toyID);
+								if search then itemList[search] = BuildSourceTextForTSM(group, 0); end
+							end
+							TSMAPI.Groups:CreatePreset(itemList);
+							app.print("Updated the TSM preset.");
+							return true;
+						end
+						app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
+					else
+						-- Attempt to search manually with the link.
+						local link = reference.link or reference.silentLink;
+						if link and HandleModifiedItemClick(link) then
+							AuctionFrameBrowse_Search();
+							return true;
+						end
 					end
 					return true;
 				else
@@ -5528,9 +5632,9 @@ local function RowOnClick(self, button)
 			-- If this reference is anything else, expand the groups.
 			if reference.groups then
 				if self.index < 1 and #reference.groups > 0 then
-					ExpandGroupsRecursively(reference, not reference.groups[1].expanded);
+					ExpandGroupsRecursively(reference, not reference.groups[1].expanded, true);
 				else
-					ExpandGroupsRecursively(reference, not reference.expanded);
+					ExpandGroupsRecursively(reference, not reference.expanded, true);
 				end
 				app:UpdateWindows();
 				return true;
@@ -5654,6 +5758,7 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.Lvl then GameTooltip:AddDoubleLine(L("REQUIRES_LEVEL"), tostring(reference.Lvl)); end
+		if reference.b then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requiredSkill then
 			GameTooltip:AddDoubleLine(L("REQUIRES"), tostring(GetSpellInfo(SkillIDToSpellID[reference.requiredSkill] or 0)));
 			-- GameTooltip:AddDoubleLine(L("REQUIRE_SKILL_ID"), tostring(reference.requiredSkill));
@@ -6357,29 +6462,40 @@ app:GetWindow("Unsorted");
 app:GetWindow("CurrentInstance");
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
+GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
 GameTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefTooltip:HookScript("OnShow", AttachTooltip);
+ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
+ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
 ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
+ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
 --ShoppingTooltip1:HookScript("OnShow", AttachTooltip);
+--ShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
 --ShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
 --ShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
 --ShoppingTooltip2:HookScript("OnShow", AttachTooltip);
+--ShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
 --ShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 --ShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
+WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipCleared", ClearTooltip);
+WorldMapTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnShow", AttachTooltip);
+
 -- hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
 -- Slash Command List
