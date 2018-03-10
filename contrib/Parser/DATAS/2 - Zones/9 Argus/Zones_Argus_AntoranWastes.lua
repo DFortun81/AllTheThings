@@ -166,7 +166,7 @@ _.Zones =
 								i(152885),	--Zealous Felslinger's Handwraps
 								i(152881),	--Zealous Felslinger's Girdle
 								i(152887),	--Zealous Felslinger's Leggings
-								i(152883),	--Zealous Felslinger's Treads
+								i(152883),	--Zealous Felslinger's Boots
 							},
 							["questID"] = 48817,
 						}),
@@ -230,7 +230,7 @@ _.Zones =
 							i(152888),	--Zealous Felslinger's Epaulets
 							i(152885),	--Zealous Felslinger's Handwraps
 							i(152887),	--Zealous Felslinger's Leggings
-							i(152883),	--Zealous Felslinger's Treads
+							i(152883),	--Zealous Felslinger's Boots
 						}),
 						o(273521, {	-- Legion War Supplies
 							i(153340),	--Triumvirate High Guard's Breastplate
@@ -239,7 +239,7 @@ _.Zones =
 							i(153345),	--Triumvirate High Guard's Warboots
 							i(152888),	--Zealous Felslinger's Epaulets
 							i(152889),	--Zealous Felslinger's Cuffs
-							i(152883),	--Zealous Felslinger's Treads
+							i(152883),	--Zealous Felslinger's Boots
 						}),
 						o(273523, {	-- Legion War Supplies
 							i(153339),	--Triumvirate High Guard's Casque
@@ -272,7 +272,7 @@ _.Zones =
 							i(153345),	--Triumvirate High Guard's Warboots
 							i(152889),	--Zealous Felslinger's Cuffs
 							i(152885),	--Zealous Felslinger's Handwraps
-							i(152883),	--Zealous Felslinger's Treads
+							i(152883),	--Zealous Felslinger's Boots
 						}),
 						o(273533, {	-- Legion War Supplies
 							i(153339),	--Triumvirate High Guard's Casque
@@ -374,6 +374,14 @@ _.Zones =
 						n(127300, { -- Void Warden Valsuran
 							["groups"] = {
 								i(153319), --Ardent Vindicator's Greatmace
+								i(152886),	--Zealous Felslinger's Visage
+								i(152888),	--Zealous Felslinger's Epaulets
+								i(152884),	--Zealous Felslinger's Robe
+								i(152889),	--Zealous Felslinger's Cuffs
+								i(152885),	--Zealous Felslinger's Handwraps
+								i(152881),	--Zealous Felslinger's Girdle
+								i(152887),	--Zealous Felslinger's Leggings
+								i(152883),	--Zealous Felslinger's Boots
 							},
 							["questID"] = 48824,
 						}),
@@ -392,6 +400,14 @@ _.Zones =
 						n(127118, { -- Worldsplitter Skuul
 							["groups"] = {
 								i(153312), --Praetor's Ornamental Greatsword
+								i(152886),	--Zealous Felslinger's Visage
+								i(152888),	--Zealous Felslinger's Epaulets
+								i(152884),	--Zealous Felslinger's Robe
+								i(152889),	--Zealous Felslinger's Cuffs
+								i(152885),	--Zealous Felslinger's Handwraps
+								i(152881),	--Zealous Felslinger's Girdle
+								i(152887),	--Zealous Felslinger's Leggings
+								i(152883),	--Zealous Felslinger's Boots
 							},
 							["questID"] = 48820,
 						}),
