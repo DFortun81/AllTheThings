@@ -109,25 +109,158 @@ _.Zones =
 					p(470), 	-- Twilight Spider
 				}),
 				n(-17, { 	-- Quests
+				
+				
+				
+					qh(14197, {	-- A Quota to Meet
+						["groups"] = {
+						},
+						["qg"] = 35085,	-- Foreman Fisk
+					}),
+				
+				
+					qh(14155, {	-- Arborcide
+						["groups"] = {
+							i(53452),	-- Woodchipper Dagger
+							i(53407),	-- Chopped Off Ancient Limb
+							i(53400),	-- Arborcide Axe
+						},
+						["sourceQuestID"] = { 14146 },	-- Defend the Gates!
+					}),
+				
+				
+					qh(14161, {	-- Basilisk Bashin'
+						["groups"] = {
+						},
+						["qg"] = 35091,	-- Horzak Zignibble
+						["breadcrumbQuestID"] = { 14162 },	-- Report to Horzak
+					}),
+				
+				
+					qh(14146, {	-- Defend the Gates!
+						["groups"] = {
+						},
+						["sourceQuestID"] = { 14135 },	-- Up a Tree
+					}),
+				
+				
+					o(195431, {	-- Headquarters Radio (PRISMBREAK)
+						["groups"] = {
+							qh (14192),	-- Prismbreak
+						},
+						["sourceQuestID"] = { 14190 },	-- The Perfect Prism
+					}),
+				
+
+					o(195435, {	-- Weapons Cabinet (REFLESHIFICATION)
+						["groups"] = {
+							qh(14194, {	-- Refleshification
+								i(53449),	-- Stonifying Gun
+								i(53434),	-- Refleshified Bracers
+							}),
+						},
+						["sourceQuestID"] = { 14192 },	-- Prismbreak
+					}),
+
+				
+					qh(14162, {	-- Report to Horzak
+						["groups"] = {
+						},
+						["qg"] = 35086,	-- Labor Captain Grabbit
+						["sourceQuestID"] = { 14155 },	-- Arborcide
+					}),
+					
+					
+					n( 35095, {	-- Talrendis Scout
+						i(47039, {	-- Scout's Orders
+							qh(14127),	-- Return of the Highborne?
+						}),
+					}),
+					
+					
+					qh(14128, {	-- Return of the Highborne?
+						["groups"] = {
+						},
+						["qg"] = 8576,	-- Ag'tor Bloodfist
+						["sourceQuestID"] = { 14127 },	-- Return of the Highborne?
+					}),
+					
+				
+					qh(14129, {	-- Runaway Shredder!
+						["groups"] = {
+						},
+						["qg"] = 35086,	-- Labor Captain Grabbit
+						["breadcrumbQuestID"] = { 28496 },	-- Warchief's Command: Azshara!
+					}),
+				
+				
+					qh(14165, {	-- Stone Cold
+						["groups"] = {
+						},
+						["qg"] = 35091,	-- Horzak Zignibble
+					}),
+				
+				
+					qh(14134, {	-- The Captain's Logs
+						["groups"] = {
+						},
+						["sourceQuestID"] = { 14129 },	-- Runaway Shredder!
+					}),
+				
+				
+					qh(14117, {	-- The Eyes of Ashenvale
+						["groups"] = {
+							i( 53416),	-- Hill's Eye Wand
+							i( 53448),	-- Stolen Talrendis Boots
+							i(131333),	-- Hill Ranger Treads
+						},
+						["qg"] = 8576,	-- Ag'tor Bloodfist
+					}),
+				
+				
+					qh(14190, {	-- The Perfect Prism
+						["groups"] = {
+						},
+						["qg"] = 35091,	-- Horzak Zignibble
+						["sourceQuestID"] = { 14165 },	-- Stone Cold
+					}),
+				
+				
+					qh(14135, {	-- Up a Tree
+						["groups"] = {
+						},
+						["sourceQuestID"] = { 14134 },	-- The Captain's Logs
+					}),
+				
+				
+					qh(14118, {	-- Venison for the Troops
+						["groups"] = {
+						},
+						["qg"] = 8576,	-- Ag'tor Bloodfist
+					}),
+				
+				
+				
+				
+--[[
+						["groups"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuestID"] = {  },	-- 
+					}),
+--]]
+				
 --[[				
 					qg(36077, qh(14371)),	-- A Gigantic Snack
 					qg(36379, qh(24458)),	-- A Hello to Arms
 					qg(35142, qh(14131)),	-- A Little Pick-me-up
-					qg(8586, qh(14432)),	-- A Pale Brew
+					qg( 8586, qh(14432)),	-- A Pale Brew
 					qart(qg(116048, q(46177))),	-- A Portal Away
-					qg(35085, qh(14197)),	-- A Quota to Meet
 					qg(35087, qh(14201)),	-- A Thousand Stories in the Sand
 					qg(35142, qh(14323)),	-- Absorbent
 					qg(37142, qh(24497)),	-- Airborne Again
 					qg(36596, qh(14428)),	-- Amberwind's Journal
 					qg(36752, qh(14468)),	-- Another Warm Body
---]]					
-					qg(35195, qh(14155, {	-- Arborcide
-						i(53452),
-						i(53407),
-						i(53400),
-					})),
---[[					
 					o(196832, {	-- Upper Scrying Stone
 						q(14429),	-- Arcane De-Construction
 					}),
@@ -135,51 +268,49 @@ _.Zones =
 					qg(36077, qh(14385)),	-- Azsharite Experiment Number One
 					qg(36077, qh(14388)),	-- Azsharite Experiment Number Two
 					qg(36146, qh(14322)),	-- Bad Science! Bad!
-					qg(35091, qh(14161)),	-- Basilisk Bashin'
 					qg(204050, qh(26337)),	-- Beating the Market
 					qg(36077, qh(14377)),	-- Befriending Giants
 					qg(36903, qh(24430)),	-- Blacken the Skies
 					qg(36919, qh(24434)),	-- Commando Drop
-					qg(35086, qh(14146)),	-- Defend the Gates!
-					qg(8586, qh(14433)),	-- Diplomacy by Another Means
+					qg( 8586, qh(14433)),	-- Diplomacy by Another Means
 --]]					
 					qg(35088, qh(14423, {	-- Dozercism
-						i(53447),
-						i(53405),
-						i(53427),
-						i(131357),
+						i( 53447),	-- 
+						i( 53405),	-- 
+						i( 53427),	-- 
+						i(131357),	-- 
 					})),
 --[[					
 					qg(36210, qh(14340)),	-- Dressed to Impress
 					qg(36436, qh(14390)),	-- Easy is Boring
 --]]					
 					qg(36895, qh(14480, {	-- Extermination
-						i(53453),
-						i(53418),
+						i(53453),	-- 
+						i(53418),	-- 
 					})),
 					qg(35867, qh(24467, {	-- Fade to Black
-						i(53402),
-						i(53423),
-						i(131367),
+						i( 53402),	-- 
+						i( 53423),	-- 
+						i(131367),	-- 
 					})),
 					qg(36676, qh(14392, {	-- Farewell, Minnow
-						i(53057),				-- TOY! Faded Wizard Hat
+						i(53057),	-- TOY! Faded Wizard Hat
 					})),
 --[[					
 					qg(36920, qh(24448)),	-- Field Promotion
 					qg(36795, qh(24437)),	-- First Come, First Served
 --]]					
 					qg(36746, qh(14471, {	-- First Degree Mortar
-						i(53422),
-						i(53430),
-						i(53437),
-						i(131361),
+						i( 53422),	-- 
+						i( 53430),	-- 
+						i( 53437),	-- 
+						i(131361),	-- 
 					})),
 --					qg(35867, qh(14130)),	-- Friends Come In All Colors
 					qg(35142, qh(14324, {	-- Full of Hot Water
-						i(53445),
-						i(53438),
-						i(131346),
+						i( 53445),	-- 
+						i( 53438),	-- 
+						i(131346),	-- 
 					})),
 --[[					
 					qg(36728, qh(14475)),	-- Grounded!
@@ -187,20 +318,20 @@ _.Zones =
 --]]
 					o(196833, {	-- Lower Scrying Stone
 						qh(14430, {	-- Hacking the Construct
-							i(53426),
-							i(53414),
-							i(131358),
+							i( 53426),	-- 
+							i( 53414),	-- 
+							i(131358),	-- 
 						}),	
 					}), 
 					qg(36921, qh(24436, {	-- Halo Drops
-						i(53410),
-						i(53419),
-						i(156943), -- Hort's Motivator
+						i( 53410),	-- 
+						i( 53419),	-- 
+						i(156943),	-- Hort's Motivator
 					})),
 --					qg(36749, qh(14469)),	-- Hand-me-downs
 					qg(36894, qh(14486, {	-- Handling the Goods
-						i(53411),
-						i(53433),
+						i( 53411),
+						i( 53433),
 						i(131362),
 					})),
 --[[					
@@ -216,8 +347,8 @@ _.Zones =
 					qg(36730, qh(24433)),	-- Let Them Feast on Fear
 --]]					
 					qg(36729, qh(14464, {	-- Lightning Strike Assassination
-						i(53425),
-						i(53412),
+						i( 53425),
+						i( 53412),
 						i(131360),
 					})),
 --[[					
@@ -230,9 +361,9 @@ _.Zones =
 					qg(36077, qh(14370)),	-- Mysterious Azsharite
 --]]					
 					qg(35087, qh(14216, {	-- Mystery of the Sarcen Stone
-						i(53404),
-						i(53435),
-						i(131334),
+						i( 53404),	-- 
+						i( 53435),	-- 
+						i(131334),	-- 
 					})),
 --[[					
 					qg(35088, qh(14424)),	-- Need More Science
@@ -249,18 +380,15 @@ _.Zones =
 --[[
 					qart(qg(115791, q(44920))),	-- Order of Incantations
 					qg(42643, qh(26372)),	-- Pre-Flight Checklist
-					o(195431, {	-- Headquarters Radio
-						qh (14192),	-- Prismbreak
-					}),
 					qg(36749, qh(24453)),	-- Private Chat
 					qg(37061, qh(14297)),	-- Pro-liberation
 					qg(36728, qh(24463)),	-- Probing into Ashenvale
 					qart(qg(115791, q(44915))),	-- Professionally Good Looking
 --]]					
 					qg(36749, qh(24452, {	-- Profitability Scouting
-						i(53429),
-						i(53432),
-						i(131365),
+						i( 53429),	-- 
+						i( 53432),	-- 
+						i(131365),	-- 
 					})),
 --[[					
 					qg(36785, qh(14477)),	-- Push the Button!
@@ -269,50 +397,34 @@ _.Zones =
 					qg(42640, qh(26358)),	-- Ready the Air Force
 					qg(42641, qh(26374)),	-- Ready the Ground Troops
 					qg(42641, qh(26335)),	-- Ready the Navy
---]]					
-					o(195435, {	-- Weapons Cabinet
-						qh(14194, {	-- Refleshification
-							i(53449),
-							i(53434),
-						}),
-					}),
---[[					
 					qg(35755, qh(14250)),	-- Renewable Resource			
-					qg(35086, qh(14162)),	-- Report to Horzak
 					o(195642, {	-- Naga Power Stone
 						qh(14271),	-- Report to Twocrush
 					}), 
-					n(35095, {	-- Talrendis Scouting
-						i(47039, {	-- Scout's Orders
-							qh(14127),	-- Return of the Highborne?
-							}),
-					}),
-					qg(8576, qh(14128)),	-- Return of the Highborne?
 					qg(36785, qh(14476)),	-- Rigged to Blow
-					qg(35086, qh(14129)),	-- Runaway Shredder!
 					o(195676, {	-- Secret Lab Squawkbox
 						qh(14310),	-- Segmentation Fault: Core Dumped
 					}), 
 --]]
 					qg(35648, qh(14249, {	-- Shear Will
-						i(53439),
-						i(53413),
-						i(53436),
+						i( 53439),
+						i( 53413),
+						i( 53436),
 						i(131336),
 					})),
 					qg(36745, qh(24449, {	-- Shore Leave
-						i(53403),
-						i(53428),
-						i(53399),
-						i(53415),
+						i( 53403),
+						i( 53428),
+						i( 53399),
+						i( 53415),
 						i(131364),
 					})),
 					qg(35657, qh(14295, {	-- Sisters of the Sea
-						i(53440),
-						i(53441),
+						i( 53440),
+						i( 53441),
 						i(131339),
 					})),				
---					qg(15600, q(8720)),	-- Skygleam the Elder
+--					qg(15600, q(  8720)),	-- Skygleam the Elder
 					qg(42643, qh(26361, {	-- Smoot's Samophlange
 						["groups"] = {
 							i(63876),
@@ -324,36 +436,28 @@ _.Zones =
 					})),
 --[[					
 					qg(36745, qh(14487)),	-- Still Beating Heart
-					qg(35091, qh(14165)),	-- Stone Cold
 					qg(35088, qh(14202)),	-- Survey the Lakeshore
 					qg(35142, qh(14132)),	-- That's Just Rude!
 					qart(qg(115791, q(44924))),	-- The Archmage Accosted
 --]]					
-					qg(8586, qh(14435, {	-- The Blackmaw Doublecross
-						i(53450),
-						i(53409),
-						i(53431),
+					qg( 8586, qh(14435, {	-- The Blackmaw Doublecross
+						i( 53450),
+						i( 53409),
+						i( 53431),
 						i(131359),
 					})),
 --[[					
-					qg(8586, qh( 14431)),	-- The Blackmaw Scar
-					qg(35086, qh( 14134)),	-- The Captain's Logs
+					qg( 8586, qh( 14431)),	-- The Blackmaw Scar
 --]]					
 					qg(36730, qh(24439, {	-- The Conquest of Azshara
 						i(53443),
 						i(53451),
 						i(53442),
 					})),
-					qg(8576, qh(14117, {	-- The Eyes of Ashenvale
-						i(53416),
-						i(53448),
-						i(131333),
-					})),
 --[[					
 					o(195642, {	-- Naga Power Stone
 						qh( 14270),	-- The Keystone Shard
 					}), 
-					qg(35091, qh( 14190)),	-- The Perfect Prism
 					qg(35187, qh( 14413)),	-- The Pinnacle of Learning
 --]]					
 					qg(36379, qh(14383, {	-- The Terrible Tinkers of the Ruined Reaches
@@ -371,15 +475,13 @@ _.Zones =
 					qg(36436, qh(14391)),	-- Turning the Tables
 					qg(42640, qh(28849)),	-- Twilight Skies
 					qg(50367, qh(26388)),	-- Twilight Skies
-					qg(35086, qh(14135)),	-- Up a Tree
-					qg(8576, qh(14118)),	-- Venison for the Troops
 					qg(35142, qh(14345)),	-- Wash Out
 					qg(36372, qh(14389)),	-- Wasn't It Obvious?
 					qg(35754, qh(14263)),	-- Waste of Thyme
 --]]					
 					qg(36334, qh(14296, {	-- Watch Your Step
-						i(53406),
-						i(53421),
+						i( 53406),
+						i( 53421),
 						i(131340),
 					})),
 --[[					
@@ -388,14 +490,14 @@ _.Zones =
 					qg(36730, qh(14462)),	-- Where's My Head?
 --]]					
 					qg(36361, qh(14299, {	-- Xylem's Asylum
-						i(53420),
-						i(53401),
+						i( 53420),
+						i( 53401),
 						i(131341),
 					})),
 --[[ removed quests
-					q(9364),			-- Fragmented Magic (removed with Cataclysm, Mage-only)
-					q(43301),			-- Invasion: Azshara (from Legion pre-launch)
-					q(14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)					
+					q( 9364),			-- Fragmented Magic (removed with Cataclysm, Mage-only)
+					q( 43301),			-- Invasion: Azshara (from Legion pre-launch)
+					q( 14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)					
 --]]					
 				}),
 				n(-16, { 	-- Rares	
