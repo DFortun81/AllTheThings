@@ -109,12 +109,12 @@ _.GearSets =
 						i(129499), -- Mistdancer Staff
 						i(129502), -- Mistdancer Sword
 						i(129483), -- Mistdancer Helm
-						--i(129485), -- Mistdancer Pauldrons [Hidden Shoulders not transmoggable]
+						un(15, i(129485)), -- Mistdancer Pauldrons [Hidden Shoulders not transmoggable]
 						i(129508), -- Mistdancer Cloak of Rage
 						i(129491), -- Mistdancer Cloak of Wisdom
 						i(129480), -- Mistdancer Vest
 						i(129487), -- Mistdancer Cuffs
-						i(129482), -- Mistdancer Handguards
+						un(2, i(129482)), -- Mistdancer Handguards
 						i(129486), -- Mistdancer Cord
 						i(129484), -- Mistdancer Legguards
 						i(129481), -- Mistdancer Footpads
@@ -124,7 +124,7 @@ _.GearSets =
 				n(-150, { -- Trailseeker
 					["groups"] = {
 						i(129712), -- Trailseeker Helm
-						-- i(129714), -- Trailseeker Spaulders [Hidden Shoulders not transmoggable]
+						un(15, i(129714)), -- Trailseeker Spaulders [Hidden Shoulders not transmoggable]
 						i(129703), -- Trailseeker Cloak of Rage
 						i(129709), -- Trailseeker Vest
 						i(129716), -- Trailseeker Bracers
@@ -337,7 +337,7 @@ _.GearSets =
 						i(129499), -- Mistdancer Staff
 						i(129502), -- Mistdancer Sword
 						i(129483), -- Mistdancer Helm
-						--i(129485), -- Mistdancer Pauldrons [Hidden Shoulders not transmoggable]
+						un(15, i(129485)), -- Mistdancer Pauldrons [Hidden Shoulders not transmoggable]
 						i(129508), -- Mistdancer Cloak of Rage
 						i(129491), -- Mistdancer Cloak of Wisdom
 						i(129480), -- Mistdancer Vest
@@ -352,7 +352,7 @@ _.GearSets =
 				n(-150, { -- Trailseeker
 					["groups"] = {
 						i(129712), -- Trailseeker Helm
-						-- i(129714), -- Trailseeker Spaulders [Hidden Shoulders not transmoggable]
+						i(129714), -- Trailseeker Spaulders [Hidden Shoulders not transmoggable]
 						i(129703), -- Trailseeker Cloak of Rage
 						i(129709), -- Trailseeker Vest
 						i(129716), -- Trailseeker Bracers
