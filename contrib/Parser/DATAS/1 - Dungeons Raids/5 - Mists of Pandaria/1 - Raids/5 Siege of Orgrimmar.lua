@@ -9,7 +9,7 @@ _.Instances =
 			c(369, { 	-- Siege of Orgrimmar
 				["groups"] = {
 					d(17, {		-- LFR
-						["ignoreBonus"] = true,
+						--["ignoreBonus"] = true,
 						["groups"] = {
 							n(-1, {		-- Shared Boss Loot
 								i(104275, {	-- Twisted Treasures of the Vale
@@ -425,7 +425,7 @@ _.Instances =
 						}
 					}),
 					d(14, {		-- Normal
-						["ignoreBonus"] = true,
+						--["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {		-- Zone Drop
 								i(113224),	-- Aeth's Swiftcinder Cloak
@@ -838,7 +838,7 @@ _.Instances =
 						}
 					}),
 					d(15, {		-- Heroic
-						["ignoreBonus"] = true,
+						--["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {		-- Zone Drop
 								i(113224),	-- Aeth's Swiftcinder Cloak
@@ -1251,7 +1251,7 @@ _.Instances =
 						}
 					}),
 					d(16, {		-- Mythic
-						["ignoreBonus"] = true,
+						--["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {		-- Zone Drop
 								i(113224),	-- Aeth's Swiftcinder Cloak

@@ -2930,6 +2930,13 @@ app.BaseMount = {
 			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID];
 			if mountID then return select(2, C_MountJournal_GetMountInfoExtraByID(mountID)); end
 		elseif key == "link" then
+			if t.itemID then
+				local link = select(2, GetItemInfo(t.itemID));
+				if link then
+					t.link = link;
+					return link;
+				end
+			end
 			return select(1, GetSpellLink(t.mountID));
 		elseif key == "icon" then
 			return select(3, GetSpellInfo(t.mountID));
@@ -3234,6 +3241,14 @@ app.BaseSpecies = {
 			return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 		elseif key == "name" then
 			return t.text;
+		elseif key == "link" then
+			if t.itemID then
+				local link = select(2, GetItemInfo(t.itemID));
+				if link then
+					t.link = link;
+					return link;
+				end
+			end
 		elseif key == "tsm" then
 			return string.format("p:%d:1:3", t.speciesID);
 		else
@@ -5962,6 +5977,8 @@ local function RowOnEnter(self)
 			local link = reference.link;
 			if link then
 				GameTooltip:SetHyperlink(link);
+			elseif reference.speciesID then
+				-- Do nothing.
 			elseif not reference.artifactID then
 				GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
 				if reference and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, true); end
@@ -6031,7 +6048,7 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.Lvl then GameTooltip:AddDoubleLine(L("REQUIRES_LEVEL"), tostring(reference.Lvl)); end
-		if reference.b then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
+		--if reference.b then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requiredSkill then
 			GameTooltip:AddDoubleLine(L("REQUIRES"), tostring(GetSpellInfo(SkillIDToSpellID[reference.requiredSkill] or 0)));
 			-- GameTooltip:AddDoubleLine(L("REQUIRE_SKILL_ID"), tostring(reference.requiredSkill));
@@ -6070,9 +6087,15 @@ local function RowOnEnter(self)
 		if reference.description and GetDataMember("ShowDescriptions") then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
 		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L("MAP_ID"), tostring(reference.mapID)); end
 		if reference.dr then GameTooltip:AddDoubleLine(L("DROP_RATE"), "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
-		if not reference.itemID and not reference.speciesID and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, 1, true); end
+		if not reference.itemID then
+			if not reference.speciesID and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, 1, true); end
+			if reference.speciesID then
+				AttachTooltipSearchResults(GameTooltip, "speciesID:" .. reference.speciesID, SearchForFieldAndSummarize, "speciesID", reference.speciesID);
+			elseif reference.u then
+				GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, 1, true);
+			end
+		end
 		if reference.speciesID then
-			AttachTooltipSearchResults(GameTooltip, "speciesID:" .. reference.speciesID, SearchForFieldAndSummarize, "speciesID", reference.speciesID);
 			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
 			if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. " Collected"); end
 		end
@@ -6510,6 +6533,28 @@ function app:GetDataCache()
 			table.insert(groups, db);
 			app.Toys = nil;
 		end
+		
+		--[[
+		-- Never Implemented
+		if app.NeverImplemented then
+			db = {};
+			db.expanded = false;
+			db.groups = app.NeverImplemented;
+			db.text = "Never Implemented";
+			table.insert(groups, db);
+			app.NeverImplemented = nil;
+		end
+		
+		-- Unsorted
+		if app.Unsorted then
+			db = {};
+			db.groups = app.Unsorted;
+			db.expanded = false;
+			db.text = "Unsorted";
+			table.insert(groups, db);
+			app.Unsorted = nil;
+		end
+		--]]
 		
 		-- The Main Window's Data
 		local missingData = {};
