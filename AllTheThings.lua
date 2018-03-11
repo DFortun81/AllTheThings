@@ -26,8 +26,10 @@ function app:ShowPopupDialog(msg, callback)
 			button1 = "Yes",
 			button2 = "No",
 			timeout = 0,
+			showAlert = true,
 			whileDead = true,
 			hideOnEscape = true,
+			enterClicksFirstButton = true,
 			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
 		};
 		StaticPopupDialogs["ALL_THE_THINGS"] = popup;
@@ -5848,7 +5850,8 @@ local function RowOnClick(self, button)
 								search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID or group.toyID);
 								if search then itemList[search] = BuildSourceTextForTSM(group, 0); end
 							end
-							app:ShowPopupDialog("Running this command will update the\n" .. app.DisplayName .. " TSM Preset\nand potentially destroy your existing TSM settings by reassigning items to this Preset.\n\nWe recommend that you use a different TSM Profile exclusively for ATT when using this feature.\n\nAre you sure you want to proceed?", function()
+							app:ShowPopupDialog("Running this command can potentially destroy your existing TSM settings by reassigning items to the " .. app.DisplayName .. " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?",
+							function()
 								TSMAPI.Groups:CreatePreset(itemList);
 								app.print("Updated the preset successfully.");
 								if not TSMAPI.Operations:GetFirstByItem(search, "Shopping") then
