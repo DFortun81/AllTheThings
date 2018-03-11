@@ -1,0 +1,2351 @@
+{
+  "zoneDB": {
+    "1": {
+      "text": "Dun Morogh",
+      "Lvl": 1
+    },
+    "3": {
+      "text": "Badlands",
+      "Lvl": 40
+    },
+    "4": {
+      "text": "Blasted Lands",
+      "Lvl": 40
+    },
+    "5": {
+      "text": "- QA and DVD GLOBAL -"
+    },
+    "8": {
+      "text": "Swamp of Sorrows",
+      "Lvl": 40
+    },
+    "10": {
+      "text": "Duskwood",
+      "Lvl": 20
+    },
+    "11": {
+      "text": "Wetlands",
+      "Lvl": 25
+    },
+    "12": {
+      "text": "Elwynn Forest",
+      "Lvl": 1
+    },
+    "14": {
+      "text": "Durotar",
+      "Lvl": 1
+    },
+    "15": {
+      "text": "Dustwallow Marsh",
+      "Lvl": 35
+    },
+    "16": {
+      "text": "Azshara",
+      "Lvl": 10
+    },
+    "17": {
+      "text": "Northern Barrens",
+      "Lvl": 10
+    },
+    "25": {
+      "text": "Blackrock Mountain",
+      "Lvl": 50
+    },
+    "28": {
+      "text": "Western Plaguelands",
+      "Lvl": 35
+    },
+    "33": {
+      "text": "Northern Stranglethorn",
+      "Lvl": 25
+    },
+    "34": {
+      "text": "Echo Ridge Mine"
+    },
+    "36": {
+      "text": "Alterac Mountains",
+      "Lvl": 25
+    },
+    "38": {
+      "text": "Loch Modan",
+      "Lvl": 10
+    },
+    "40": {
+      "text": "Westfall",
+      "Lvl": 10
+    },
+    "41": {
+      "text": "Deadwind Pass",
+      "Lvl": 50
+    },
+    "44": {
+      "text": "Redridge Mountains",
+      "Lvl": 15
+    },
+    "45": {
+      "text": "Arathi Highlands",
+      "Lvl": 25
+    },
+    "46": {
+      "text": "Burning Steppes",
+      "Lvl": 40
+    },
+    "47": {
+      "text": "The Hinterlands",
+      "Lvl": 30
+    },
+    "51": {
+      "text": "Searing Gorge",
+      "Lvl": 40
+    },
+    "54": {
+      "text": "Jasperlode Mine"
+    },
+    "57": {
+      "text": "Fargodeep Mine"
+    },
+    "65": {
+      "text": "Dragonblight",
+      "Lvl": 61
+    },
+    "66": {
+      "text": "Zul'Drak",
+      "Lvl": 64
+    },
+    "67": {
+      "text": "The Storm Peaks",
+      "Lvl": 67
+    },
+    "85": {
+      "text": "Tirisfal Glades",
+      "Lvl": 1
+    },
+    "111": {
+      "text": "Jangolode Mine"
+    },
+    "113": {
+      "text": "Gold Coast Quarry"
+    },
+    "130": {
+      "text": "Silverpine Forest",
+      "Lvl": 10
+    },
+    "134": {
+      "text": "Gol'Bolar Quarry"
+    },
+    "135": {
+      "text": "Frostmane Hold"
+    },
+    "136": {
+      "text": "The Grizzled Den"
+    },
+    "139": {
+      "text": "Eastern Plaguelands",
+      "Lvl": 40
+    },
+    "141": {
+      "text": "Teldrassil",
+      "Lvl": 1
+    },
+    "148": {
+      "text": "Darkshore",
+      "Lvl": 10
+    },
+    "155": {
+      "text": "Night Web's Hollow"
+    },
+    "206": {
+      "text": "Utgarde Keep",
+      "Lvl": 58
+    },
+    "209": {
+      "text": "Shadowfang Keep",
+      "Lvl": 20
+    },
+    "210": {
+      "text": "Icecrown",
+      "Lvl": 67
+    },
+    "215": {
+      "text": "Mulgore",
+      "Lvl": 1
+    },
+    "257": {
+      "text": "Shadowthread Cave"
+    },
+    "258": {
+      "text": "Fel Rock"
+    },
+    "262": {
+      "text": "Ban'ethil Barrow Den"
+    },
+    "267": {
+      "text": "Hillsbrad Foothills",
+      "Lvl": 15
+    },
+    "331": {
+      "text": "Ashenvale",
+      "Lvl": 15
+    },
+    "357": {
+      "text": "Feralas",
+      "Lvl": 35
+    },
+    "360": {
+      "text": "The Venture Co. Mine"
+    },
+    "361": {
+      "text": "Felwood",
+      "Lvl": 40
+    },
+    "365": {
+      "text": "Burning Blade Coven"
+    },
+    "371": {
+      "text": "Dustwind Cave"
+    },
+    "394": {
+      "text": "Grizzly Hills",
+      "Lvl": 63
+    },
+    "400": {
+      "text": "Thousand Needles",
+      "Lvl": 40
+    },
+    "405": {
+      "text": "Desolace",
+      "Lvl": 30
+    },
+    "406": {
+      "text": "Stonetalon Mountains",
+      "Lvl": 20
+    },
+    "440": {
+      "text": "Tanaris",
+      "Lvl": 40
+    },
+    "457": {
+      "text": "The Veiled Sea"
+    },
+    "490": {
+      "text": "Un'Goro Crater",
+      "Lvl": 40
+    },
+    "491": {
+      "text": "Razorfen Kraul",
+      "Lvl": 32
+    },
+    "493": {
+      "text": "Moonglade",
+      "Lvl": 1
+    },
+    "495": {
+      "text": "Howling Fjord",
+      "Lvl": 58
+    },
+    "540": {
+      "text": "The Slithering Scar"
+    },
+    "616": {
+      "text": "Mount Hyjal",
+      "Lvl": 80
+    },
+    "618": {
+      "text": "Winterspring",
+      "Lvl": 40
+    },
+    "717": {
+      "text": "The Stockade",
+      "Lvl": 22
+    },
+    "718": {
+      "text": "Wailing Caverns",
+      "Lvl": 17
+    },
+    "719": {
+      "text": "Blackfathom Deeps",
+      "Lvl": 22
+    },
+    "721": {
+      "text": "Gnomeregan",
+      "Lvl": 26
+    },
+    "722": {
+      "text": "Razorfen Downs",
+      "Lvl": 37
+    },
+    "800": {
+      "text": "Coldridge Pass"
+    },
+    "817": {
+      "text": "Skull Rock"
+    },
+    "818": {
+      "text": "Palemane Rock"
+    },
+    "876": {
+      "text": "GM Island"
+    },
+    "981": {
+      "text": "The Gaping Chasm"
+    },
+    "982": {
+      "text": "The Noxious Lair"
+    },
+    "1176": {
+      "text": "Zul'Farrak",
+      "Lvl": 46
+    },
+    "1196": {
+      "text": "Utgarde Pinnacle",
+      "Lvl": 67
+    },
+    "1337": {
+      "text": "Uldaman",
+      "Lvl": 42
+    },
+    "1377": {
+      "text": "Silithus",
+      "Lvl": 40
+    },
+    "1477": {
+      "text": "Sunken Temple",
+      "Lvl": 52
+    },
+    "1497": {
+      "text": "Undercity",
+      "Lvl": 1
+    },
+    "1517": {
+      "text": "Uldaman"
+    },
+    "1519": {
+      "text": "Stormwind City",
+      "Lvl": 1
+    },
+    "1537": {
+      "text": "Ironforge",
+      "Lvl": 1
+    },
+    "1581": {
+      "text": "The Deadmines",
+      "Lvl": 15
+    },
+    "1583": {
+      "text": "Blackrock Spire",
+      "Lvl": 57
+    },
+    "1584": {
+      "text": "Blackrock Depths",
+      "Lvl": 53
+    },
+    "1637": {
+      "text": "Orgrimmar",
+      "Lvl": 1
+    },
+    "1638": {
+      "text": "Thunder Bluff",
+      "Lvl": 1
+    },
+    "1657": {
+      "text": "Darnassus",
+      "Lvl": 1
+    },
+    "1977": {
+      "text": "Zul'Gurub",
+      "Lvl": 85
+    },
+    "2017": {
+      "text": "Stratholme",
+      "Lvl": 48
+    },
+    "2100": {
+      "text": "Maraudon",
+      "Lvl": 36
+    },
+    "2159": {
+      "text": "Onyxia's Lair",
+      "Lvl": 80
+    },
+    "2257": {
+      "text": "Deeprun Tram",
+      "Lvl": 1
+    },
+    "2300": {
+      "text": "Caverns of Time"
+    },
+    "2366": {
+      "text": "The Black Morass",
+      "Lvl": 65
+    },
+    "2367": {
+      "text": "Old Hillsbrad Foothills",
+      "Lvl": 63
+    },
+    "2437": {
+      "text": "Ragefire Chasm",
+      "Lvl": 15
+    },
+    "2557": {
+      "text": "Dire Maul",
+      "Lvl": 44
+    },
+    "2597": {
+      "text": "Alterac Valley",
+      "Lvl": 20
+    },
+    "2677": {
+      "text": "Blackwing Lair",
+      "Lvl": 60
+    },
+    "2717": {
+      "text": "Molten Core",
+      "Lvl": 60
+    },
+    "2817": {
+      "text": "Crystalsong Forest",
+      "Lvl": 67
+    },
+    "3277": {
+      "text": "Warsong Gulch",
+      "Lvl": 110
+    },
+    "3358": {
+      "text": "Arathi Basin",
+      "Lvl": 110
+    },
+    "3428": {
+      "text": "Temple of Ahn'Qiraj",
+      "Lvl": 60
+    },
+    "3429": {
+      "text": "Ruins of Ahn'Qiraj",
+      "Lvl": 60
+    },
+    "3430": {
+      "text": "Eversong Woods",
+      "Lvl": 1
+    },
+    "3433": {
+      "text": "Ghostlands",
+      "Lvl": 10
+    },
+    "3446": {
+      "text": "Twilight's Run"
+    },
+    "3456": {
+      "text": "Naxxramas",
+      "Lvl": 80
+    },
+    "3457": {
+      "text": "Karazhan",
+      "Lvl": 70
+    },
+    "3483": {
+      "text": "Hellfire Peninsula",
+      "Lvl": 58
+    },
+    "3487": {
+      "text": "Silvermoon City",
+      "Lvl": 1
+    },
+    "3510": {
+      "text": "Amani Catacombs"
+    },
+    "3518": {
+      "text": "Nagrand",
+      "Lvl": 64
+    },
+    "3519": {
+      "text": "Terokkar Forest",
+      "Lvl": 62
+    },
+    "3520": {
+      "text": "Shadowmoon Valley",
+      "Lvl": 67
+    },
+    "3521": {
+      "text": "Zangarmarsh",
+      "Lvl": 60
+    },
+    "3522": {
+      "text": "Blade's Edge Mountains",
+      "Lvl": 65
+    },
+    "3523": {
+      "text": "Netherstorm",
+      "Lvl": 67
+    },
+    "3524": {
+      "text": "Azuremyst Isle",
+      "Lvl": 1
+    },
+    "3525": {
+      "text": "Bloodmyst Isle",
+      "Lvl": 10
+    },
+    "3537": {
+      "text": "Borean Tundra",
+      "Lvl": 58
+    },
+    "3557": {
+      "text": "The Exodar",
+      "Lvl": 1
+    },
+    "3562": {
+      "text": "Hellfire Ramparts",
+      "Lvl": 58
+    },
+    "3569": {
+      "text": "Tides' Hollow"
+    },
+    "3572": {
+      "text": "Stillpine Hold"
+    },
+    "3606": {
+      "text": "Hyjal Summit",
+      "Lvl": 70
+    },
+    "3607": {
+      "text": "Serpentshrine Cavern",
+      "Lvl": 70
+    },
+    "3698": {
+      "text": "Nagrand Arena",
+      "Lvl": 10
+    },
+    "3702": {
+      "text": "Blade's Edge Arena",
+      "Lvl": 110
+    },
+    "3703": {
+      "text": "Shattrath City",
+      "Lvl": 1
+    },
+    "3711": {
+      "text": "Sholazar Basin",
+      "Lvl": 66
+    },
+    "3713": {
+      "text": "The Blood Furnace",
+      "Lvl": 59
+    },
+    "3714": {
+      "text": "The Shattered Halls",
+      "Lvl": 67
+    },
+    "3715": {
+      "text": "The Steamvault",
+      "Lvl": 67
+    },
+    "3716": {
+      "text": "The Underbog",
+      "Lvl": 61
+    },
+    "3717": {
+      "text": "The Slave Pens",
+      "Lvl": 60
+    },
+    "3789": {
+      "text": "Shadow Labyrinth",
+      "Lvl": 67
+    },
+    "3790": {
+      "text": "Auchenai Crypts",
+      "Lvl": 63
+    },
+    "3791": {
+      "text": "Sethekk Halls",
+      "Lvl": 65
+    },
+    "3792": {
+      "text": "Mana-Tombs",
+      "Lvl": 62
+    },
+    "3805": {
+      "text": "Zul'Aman",
+      "Lvl": 85
+    },
+    "3820": {
+      "text": "Eye of the Storm",
+      "Lvl": 15
+    },
+    "3836": {
+      "text": "Magtheridon's Lair",
+      "Lvl": 70
+    },
+    "3845": {
+      "text": "The Eye",
+      "Lvl": 70
+    },
+    "3847": {
+      "text": "The Botanica",
+      "Lvl": 67
+    },
+    "3848": {
+      "text": "The Arcatraz",
+      "Lvl": 68
+    },
+    "3849": {
+      "text": "The Mechanar",
+      "Lvl": 67
+    },
+    "3923": {
+      "text": "Gruul's Lair",
+      "Lvl": 70
+    },
+    "3959": {
+      "text": "Black Temple",
+      "Lvl": 70
+    },
+    "3968": {
+      "text": "Ruins of Lordaeron",
+      "Lvl": 110
+    },
+    "4075": {
+      "text": "Sunwell Plateau",
+      "Lvl": 70
+    },
+    "4080": {
+      "text": "Isle of Quel'Danas",
+      "Lvl": 70
+    },
+    "4100": {
+      "text": "The Culling of Stratholme",
+      "Lvl": 68
+    },
+    "4131": {
+      "text": "Magisters' Terrace",
+      "Lvl": 68
+    },
+    "4196": {
+      "text": "Drak'Tharon Keep",
+      "Lvl": 62
+    },
+    "4197": {
+      "text": "Wintergrasp",
+      "Lvl": 67
+    },
+    "4228": {
+      "text": "The Oculus",
+      "Lvl": 67
+    },
+    "4264": {
+      "text": "Halls of Stone",
+      "Lvl": 65
+    },
+    "4265": {
+      "text": "The Nexus",
+      "Lvl": 59
+    },
+    "4272": {
+      "text": "Halls of Lightning",
+      "Lvl": 67
+    },
+    "4273": {
+      "text": "Ulduar",
+      "Lvl": 80
+    },
+    "4277": {
+      "text": "Azjol-Nerub",
+      "Lvl": 60
+    },
+    "4298": {
+      "text": "Plaguelands: The Scarlet Enclave",
+      "Lvl": 55
+    },
+    "4378": {
+      "text": "Dalaran Arena",
+      "Lvl": 110
+    },
+    "4384": {
+      "text": "Strand of the Ancients",
+      "Lvl": 50
+    },
+    "4395": {
+      "text": "Dalaran",
+      "Lvl": 1
+    },
+    "4406": {
+      "text": "The Ring of Valor",
+      "Lvl": 10
+    },
+    "4415": {
+      "text": "The Violet Hold",
+      "Lvl": 63
+    },
+    "4416": {
+      "text": "Gundrak",
+      "Lvl": 64
+    },
+    "4493": {
+      "text": "The Obsidian Sanctum",
+      "Lvl": 80
+    },
+    "4494": {
+      "text": "Ahn'kahet: The Old Kingdom",
+      "Lvl": 61
+    },
+    "4500": {
+      "text": "The Eye of Eternity",
+      "Lvl": 80
+    },
+    "4603": {
+      "text": "Vault of Archavon",
+      "Lvl": 80
+    },
+    "4706": {
+      "text": "Ruins of Gilneas",
+      "Lvl": 14
+    },
+    "4709": {
+      "text": "Southern Barrens",
+      "Lvl": 25
+    },
+    "4710": {
+      "text": "Isle of Conquest",
+      "Lvl": 55
+    },
+    "4714": {
+      "text": "Gilneas",
+      "Lvl": 1
+    },
+    "4720": {
+      "text": "The Lost Isles",
+      "Lvl": 5
+    },
+    "4722": {
+      "text": "Trial of the Crusader",
+      "Lvl": 80
+    },
+    "4723": {
+      "text": "Trial of the Champion",
+      "Lvl": 68
+    },
+    "4732": {
+      "text": "Emberstone Mine"
+    },
+    "4737": {
+      "text": "Kezan",
+      "Lvl": 1
+    },
+    "4742": {
+      "text": "Hrothgar's Landing",
+      "Lvl": 67
+    },
+    "4755": {
+      "text": "Gilneas City",
+      "Lvl": 1
+    },
+    "4766": {
+      "text": "Kaja'mine"
+    },
+    "4778": {
+      "text": "Kaja'mite Cavern"
+    },
+    "4809": {
+      "text": "The Forge of Souls",
+      "Lvl": 70
+    },
+    "4812": {
+      "text": "Icecrown Citadel",
+      "Lvl": 80
+    },
+    "4813": {
+      "text": "Pit of Saron",
+      "Lvl": 70
+    },
+    "4815": {
+      "text": "Kelp'thar Forest",
+      "Lvl": 80
+    },
+    "4817": {
+      "text": "Greymane Manor"
+    },
+    "4820": {
+      "text": "Halls of Reflection",
+      "Lvl": 70
+    },
+    "4821": {
+      "text": "Bilgewater Harbor",
+      "Lvl": 1
+    },
+    "4911": {
+      "text": "Volcanoth's Lair"
+    },
+    "4913": {
+      "text": "Spitescale Cavern"
+    },
+    "4922": {
+      "text": "Twilight Highlands",
+      "Lvl": 84
+    },
+    "4924": {
+      "text": "Gallywix Labor Mine"
+    },
+    "4926": {
+      "text": "Blackrock Caverns",
+      "Lvl": 81
+    },
+    "4945": {
+      "text": "Halls of Origination",
+      "Lvl": 84
+    },
+    "4950": {
+      "text": "Grim Batol",
+      "Lvl": 85
+    },
+    "4987": {
+      "text": "The Ruby Sanctum",
+      "Lvl": 80
+    },
+    "5004": {
+      "text": "Throne of the Tides",
+      "Lvl": 80
+    },
+    "5031": {
+      "text": "Twin Peaks",
+      "Lvl": 30
+    },
+    "5034": {
+      "text": "Uldum",
+      "Lvl": 83
+    },
+    "5035": {
+      "text": "The Vortex Pinnacle",
+      "Lvl": 82
+    },
+    "5042": {
+      "text": "Deepholm",
+      "Lvl": 82
+    },
+    "5088": {
+      "text": "The Stonecore",
+      "Lvl": 83
+    },
+    "5094": {
+      "text": "Blackwing Descent",
+      "Lvl": 85
+    },
+    "5095": {
+      "text": "Tol Barad",
+      "Lvl": 85
+    },
+    "5144": {
+      "text": "Shimmering Expanse",
+      "Lvl": 80
+    },
+    "5145": {
+      "text": "Abyssal Depths",
+      "Lvl": 80
+    },
+    "5146": {
+      "text": "Vashj'ir",
+      "Lvl": 80
+    },
+    "5287": {
+      "text": "The Cape of Stranglethorn",
+      "Lvl": 30
+    },
+    "5334": {
+      "text": "The Bastion of Twilight",
+      "Lvl": 85
+    },
+    "5339": {
+      "text": "Stranglethorn Vale",
+      "Lvl": 30
+    },
+    "5389": {
+      "text": "Tol Barad Peninsula",
+      "Lvl": 85
+    },
+    "5396": {
+      "text": "Lost City of the Tol'vir",
+      "Lvl": 84
+    },
+    "5416": {
+      "text": "The Maelstrom"
+    },
+    "5449": {
+      "text": "The Battle for Gilneas",
+      "Lvl": 110
+    },
+    "5495": {
+      "text": "Gnomeregan"
+    },
+    "5511": {
+      "text": "Scarlet Monastery Entrance"
+    },
+    "5600": {
+      "text": "Baradin Hold",
+      "Lvl": 85
+    },
+    "5638": {
+      "text": "Throne of the Four Winds",
+      "Lvl": 85
+    },
+    "5695": {
+      "text": "Ahn'Qiraj: The Fallen Kingdom"
+    },
+    "5723": {
+      "text": "Firelands",
+      "Lvl": 85
+    },
+    "5733": {
+      "text": "Molten Front",
+      "Lvl": 85
+    },
+    "5736": {
+      "text": "The Wandering Isle",
+      "Lvl": 1
+    },
+    "5785": {
+      "text": "The Jade Forest",
+      "Lvl": 80
+    },
+    "5788": {
+      "text": "Well of Eternity",
+      "Lvl": 85
+    },
+    "5789": {
+      "text": "End Time",
+      "Lvl": 85
+    },
+    "5805": {
+      "text": "Valley of the Four Winds",
+      "Lvl": 81
+    },
+    "5840": {
+      "text": "Vale of Eternal Blossoms",
+      "Lvl": 85
+    },
+    "5841": {
+      "text": "Kun-Lai Summit",
+      "Lvl": 82
+    },
+    "5842": {
+      "text": "Townlong Steppes",
+      "Lvl": 83
+    },
+    "5844": {
+      "text": "Hour of Twilight",
+      "Lvl": 85
+    },
+    "5861": {
+      "text": "Darkmoon Island",
+      "Lvl": 1
+    },
+    "5892": {
+      "text": "Dragon Soul",
+      "Lvl": 85
+    },
+    "5918": {
+      "text": "Shado-Pan Monastery",
+      "Lvl": 83
+    },
+    "5955": {
+      "text": "Greenstone Quarry"
+    },
+    "5956": {
+      "text": "Temple of the Jade Serpent",
+      "Lvl": 80
+    },
+    "5963": {
+      "text": "Stormstout Brewery",
+      "Lvl": 81
+    },
+    "5976": {
+      "text": "Gate of the Setting Sun",
+      "Lvl": 84
+    },
+    "6006": {
+      "text": "The Veiled Stair",
+      "Lvl": 87
+    },
+    "6040": {
+      "text": "Theramore's Fall (H)",
+      "Lvl": 90
+    },
+    "6051": {
+      "text": "Temple of Kotmogu",
+      "Lvl": 110
+    },
+    "6052": {
+      "text": "Scarlet Halls",
+      "Lvl": 28
+    },
+    "6066": {
+      "text": "Scholomance",
+      "Lvl": 40
+    },
+    "6067": {
+      "text": "Terrace of Endless Spring",
+      "Lvl": 90
+    },
+    "6074": {
+      "text": "Guo-Lai Halls"
+    },
+    "6084": {
+      "text": "The Deeper"
+    },
+    "6088": {
+      "text": "Knucklethump Hole"
+    },
+    "6099": {
+      "text": "Pranksters' Hollow"
+    },
+    "6101": {
+      "text": "A Brewing Storm",
+      "Lvl": 90
+    },
+    "6109": {
+      "text": "Scarlet Monastery",
+      "Lvl": 30
+    },
+    "6125": {
+      "text": "Mogu'shan Vaults",
+      "Lvl": 90
+    },
+    "6126": {
+      "text": "Silvershard Mines",
+      "Lvl": 110
+    },
+    "6134": {
+      "text": "Krasarang Wilds",
+      "Lvl": 81
+    },
+    "6137": {
+      "text": "Frostmane Hovel"
+    },
+    "6138": {
+      "text": "Dread Wastes",
+      "Lvl": 84
+    },
+    "6141": {
+      "text": "Shrine of Two Moons",
+      "Lvl": 1
+    },
+    "6142": {
+      "text": "Shrine of Seven Stars",
+      "Lvl": 1
+    },
+    "6170": {
+      "text": "Northshire",
+      "Lvl": 1
+    },
+    "6176": {
+      "text": "Coldridge Valley",
+      "Lvl": 1
+    },
+    "6182": {
+      "text": "Mogu'shan Palace",
+      "Lvl": 82
+    },
+    "6201": {
+      "text": "Tomb of Conquerors"
+    },
+    "6208": {
+      "text": "Crypt of Forgotten Kings",
+      "Lvl": 90
+    },
+    "6209": {
+      "text": "Greenstone Village",
+      "Lvl": 90
+    },
+    "6214": {
+      "text": "Siege of Niuzao Temple",
+      "Lvl": 83
+    },
+    "6219": {
+      "text": "Arena of Annihilation",
+      "Lvl": 90
+    },
+    "6296": {
+      "text": "Tol'viron Arena",
+      "Lvl": 90
+    },
+    "6297": {
+      "text": "Heart of Fear",
+      "Lvl": 90
+    },
+    "6298": {
+      "text": "Brawl'gar Arena"
+    },
+    "6309": {
+      "text": "Unga Ingoo",
+      "Lvl": 90
+    },
+    "6311": {
+      "text": "Niuzao Catacombs"
+    },
+    "6328": {
+      "text": "Assault on Zan'vess",
+      "Lvl": 90
+    },
+    "6376": {
+      "text": "The Ancient Passage"
+    },
+    "6389": {
+      "text": "Howlingwind Cavern"
+    },
+    "6419": {
+      "text": "Peak of Serenity",
+      "Lvl": 20
+    },
+    "6426": {
+      "text": "Brewmoon Festival",
+      "Lvl": 90
+    },
+    "6450": {
+      "text": "Shadowglen",
+      "Lvl": 1
+    },
+    "6451": {
+      "text": "Valley of Trials",
+      "Lvl": 1
+    },
+    "6452": {
+      "text": "Camp Narache",
+      "Lvl": 1
+    },
+    "6453": {
+      "text": "Echo Isles",
+      "Lvl": 1
+    },
+    "6454": {
+      "text": "Deathknell",
+      "Lvl": 1
+    },
+    "6455": {
+      "text": "Sunstrider Isle",
+      "Lvl": 1
+    },
+    "6456": {
+      "text": "Ammen Vale",
+      "Lvl": 1
+    },
+    "6457": {
+      "text": "New Tinkertown",
+      "Lvl": 1
+    },
+    "6466": {
+      "text": "Cavern of Endless Echoes"
+    },
+    "6500": {
+      "text": "Theramore's Fall (A)",
+      "Lvl": 90
+    },
+    "6507": {
+      "text": "Isle of Thunder",
+      "Lvl": 90
+    },
+    "6510": {
+      "text": "The Deadmines"
+    },
+    "6511": {
+      "text": "Wailing Caverns"
+    },
+    "6512": {
+      "text": "The Widow's Wail"
+    },
+    "6513": {
+      "text": "Oona Kagu"
+    },
+    "6514": {
+      "text": "Maraudon"
+    },
+    "6553": {
+      "text": "Shrine of Seven Stars",
+      "Lvl": 1
+    },
+    "6565": {
+      "text": "Dagger in the Dark",
+      "Lvl": 90
+    },
+    "6567": {
+      "text": "Battle on the High Seas",
+      "Lvl": 90
+    },
+    "6575": {
+      "text": "Lion's Landing",
+      "Lvl": 90
+    },
+    "6589": {
+      "text": "Lightning Vein Mine"
+    },
+    "6592": {
+      "text": "The Swollen Vault"
+    },
+    "6609": {
+      "text": "Ruins of Ogudei"
+    },
+    "6611": {
+      "text": "The Situation in Dalaran",
+      "Lvl": 90
+    },
+    "6613": {
+      "text": "Pursuing the Black Harvest",
+      "Lvl": 90
+    },
+    "6615": {
+      "text": "Domination Point",
+      "Lvl": 90
+    },
+    "6616": {
+      "text": "A Little Patience",
+      "Lvl": 90
+    },
+    "6619": {
+      "text": "Ruins of Korune"
+    },
+    "6622": {
+      "text": "Throne of Thunder",
+      "Lvl": 90
+    },
+    "6661": {
+      "text": "Isle of Giants",
+      "Lvl": 85
+    },
+    "6662": {
+      "text": "Talador",
+      "Lvl": 94
+    },
+    "6665": {
+      "text": "Deepwind Gorge",
+      "Lvl": 110
+    },
+    "6666": {
+      "text": "Stormsea Landing",
+      "Lvl": 90
+    },
+    "6673": {
+      "text": "To the Skies",
+      "Lvl": 90
+    },
+    "6675": {
+      "text": "The Thunder Forge",
+      "Lvl": 85
+    },
+    "6677": {
+      "text": "Fall of Shan Bu",
+      "Lvl": 90
+    },
+    "6678": {
+      "text": "Blood in the Snow",
+      "Lvl": 90
+    },
+    "6681": {
+      "text": "Lightning Vein Mine"
+    },
+    "6716": {
+      "text": "Troves of the Thunder King",
+      "Lvl": 90
+    },
+    "6719": {
+      "text": "Shadowmoon Valley",
+      "Lvl": 90
+    },
+    "6720": {
+      "text": "Frostfire Ridge",
+      "Lvl": 90
+    },
+    "6721": {
+      "text": "Gorgrond",
+      "Lvl": 92
+    },
+    "6722": {
+      "text": "Spires of Arak",
+      "Lvl": 96
+    },
+    "6723": {
+      "text": "Tanaan Jungle",
+      "Lvl": 100
+    },
+    "6731": {
+      "text": "The Secrets of Ragefire",
+      "Lvl": 90
+    },
+    "6732": {
+      "text": "The Tiger's Peak",
+      "Lvl": 110
+    },
+    "6733": {
+      "text": "Dark Heart of Pandaria",
+      "Lvl": 90
+    },
+    "6738": {
+      "text": "Siege of Orgrimmar",
+      "Lvl": 90
+    },
+    "6745": {
+      "text": "Grulloc's Grotto"
+    },
+    "6755": {
+      "text": "Nagrand",
+      "Lvl": 98
+    },
+    "6756": {
+      "text": "Faralohn",
+      "Lvl": 100
+    },
+    "6757": {
+      "text": "Timeless Isle",
+      "Lvl": 85
+    },
+    "6771": {
+      "text": "Celestial Tournament",
+      "Lvl": 90
+    },
+    "6780": {
+      "text": "Cavern of Lost Spirits"
+    },
+    "6848": {
+      "text": "Turgall's Den"
+    },
+    "6849": {
+      "text": "Sootstained Mines"
+    },
+    "6851": {
+      "text": "The Purge of Grommar",
+      "Lvl": 1
+    },
+    "6852": {
+      "text": "Proving Grounds",
+      "Lvl": 90
+    },
+    "6861": {
+      "text": "Grulloc's Lair"
+    },
+    "6863": {
+      "text": "The Secret Ingredient",
+      "Lvl": 90
+    },
+    "6864": {
+      "text": "Bladespire Citadel"
+    },
+    "6868": {
+      "text": "Hall of the Great Hunt"
+    },
+    "6874": {
+      "text": "Bloodmaul Slag Mines",
+      "Lvl": 90
+    },
+    "6875": {
+      "text": "Bladespire Throne"
+    },
+    "6885": {
+      "text": "Cragplume Cauldron"
+    },
+    "6912": {
+      "text": "Auchindoun",
+      "Lvl": 95
+    },
+    "6932": {
+      "text": "Shadowmoon Burial Grounds",
+      "Lvl": 100
+    },
+    "6939": {
+      "text": "Butcher's Rise"
+    },
+    "6941": {
+      "text": "Ashran",
+      "Lvl": 100
+    },
+    "6951": {
+      "text": "Iron Docks",
+      "Lvl": 92
+    },
+    "6960": {
+      "text": "The Battle of Thunder Pass",
+      "Lvl": 1
+    },
+    "6967": {
+      "text": "Blackrock Foundry",
+      "Lvl": 100
+    },
+    "6976": {
+      "text": "Bloodthorn Cave"
+    },
+    "6979": {
+      "text": "Tomb of Souls"
+    },
+    "6980": {
+      "text": "Shattrath City"
+    },
+    "6984": {
+      "text": "Grimrail Depot",
+      "Lvl": 100
+    },
+    "6988": {
+      "text": "Skyreach",
+      "Lvl": 97
+    },
+    "6996": {
+      "text": "Highmaul",
+      "Lvl": 100
+    },
+    "7004": {
+      "text": "Frostwall"
+    },
+    "7005": {
+      "text": "Snowfall Alcove"
+    },
+    "7025": {
+      "text": "Tanaan Jungle",
+      "Lvl": 90
+    },
+    "7042": {
+      "text": "Umbral Halls"
+    },
+    "7078": {
+      "text": "Lunarfall"
+    },
+    "7083": {
+      "text": "Defense of Karabor"
+    },
+    "7089": {
+      "text": "Tomb of Lights"
+    },
+    "7107": {
+      "text": "Tarren Mill vs Southshore",
+      "Lvl": 90
+    },
+    "7109": {
+      "text": "The Everbloom",
+      "Lvl": 100
+    },
+    "7124": {
+      "text": "The Masters' Cavern"
+    },
+    "7160": {
+      "text": "Fissure of Fury"
+    },
+    "7185": {
+      "text": "Moira's Reach"
+    },
+    "7203": {
+      "text": "The Underpale"
+    },
+    "7204": {
+      "text": "Sanctum of the Naaru"
+    },
+    "7209": {
+      "text": "Bladespire Span"
+    },
+    "7267": {
+      "text": "Vault of the Titan"
+    },
+    "7307": {
+      "text": "Upper Blackrock Spire",
+      "Lvl": 100
+    },
+    "7324": {
+      "text": "Lunarfall Excavation"
+    },
+    "7325": {
+      "text": "Lunarfall Excavation"
+    },
+    "7326": {
+      "text": "Lunarfall Excavation"
+    },
+    "7327": {
+      "text": "Frostwall Mine"
+    },
+    "7328": {
+      "text": "Frostwall Mine"
+    },
+    "7329": {
+      "text": "Frostwall Mine"
+    },
+    "7332": {
+      "text": "Stormshield",
+      "Lvl": 1
+    },
+    "7333": {
+      "text": "Warspear",
+      "Lvl": 1
+    },
+    "7334": {
+      "text": "Azsuna",
+      "Lvl": 105
+    },
+    "7343": {
+      "text": "[UNUSED]"
+    },
+    "7381": {
+      "text": "The Trial of Faith",
+      "Lvl": 100
+    },
+    "7460": {
+      "text": "Den of Secrets"
+    },
+    "7462": {
+      "text": "The Coliseum"
+    },
+    "7502": {
+      "text": "Dalaran",
+      "Lvl": 1
+    },
+    "7503": {
+      "text": "Highmountain",
+      "Lvl": 105
+    },
+    "7510": {
+      "text": "The Burning Nether"
+    },
+    "7519": {
+      "text": "Edge of Reality",
+      "Lvl": 1
+    },
+    "7534": {
+      "text": "Broken Shore",
+      "Lvl": 100
+    },
+    "7541": {
+      "text": "Stormheim",
+      "Lvl": 100
+    },
+    "7543": {
+      "text": "Broken Shore",
+      "Lvl": 110
+    },
+    "7545": {
+      "text": "Hellfire Citadel",
+      "Lvl": 100
+    },
+    "7546": {
+      "text": "Neltharion's Lair",
+      "Lvl": 98
+    },
+    "7548": {
+      "text": "Ashran Mine"
+    },
+    "7558": {
+      "text": "Val'sharah",
+      "Lvl": 105
+    },
+    "7576": {
+      "text": "Twisting Nether",
+      "Lvl": 101
+    },
+    "7578": {
+      "text": "Eye of Azshara"
+    },
+    "7588": {
+      "text": "Helheim"
+    },
+    "7622": {
+      "text": "The Breached Ossuary"
+    },
+    "7634": {
+      "text": "Feralas (copy)"
+    },
+    "7637": {
+      "text": "Suramar",
+      "Lvl": 110
+    },
+    "7638": {
+      "text": "Sanctum of Light",
+      "Lvl": 1
+    },
+    "7656": {
+      "text": "The Great Sea"
+    },
+    "7658": {
+      "text": "The Cove of Nashal",
+      "Lvl": 100
+    },
+    "7672": {
+      "text": "Halls of Valor",
+      "Lvl": 98
+    },
+    "7673": {
+      "text": "Darkheart Thicket",
+      "Lvl": 98
+    },
+    "7674": {
+      "text": "Legion Dungeon"
+    },
+    "7679": {
+      "text": "Acherus: The Ebon Hold",
+      "Lvl": 1
+    },
+    "7690": {
+      "text": "The Skyfire"
+    },
+    "7691": {
+      "text": "Small Battleground D",
+      "Lvl": 110
+    },
+    "7695": {
+      "text": "Icecrown Citadel",
+      "Lvl": 98
+    },
+    "7705": {
+      "text": "Mardum, the Shattered Abyss",
+      "Lvl": 98
+    },
+    "7731": {
+      "text": "Thunder Totem",
+      "Lvl": 1
+    },
+    "7734": {
+      "text": "Icecrown Citadel"
+    },
+    "7737": {
+      "text": "Niskara",
+      "Lvl": 98
+    },
+    "7744": {
+      "text": "Shield's Rest"
+    },
+    "7745": {
+      "text": "The Maelstrom",
+      "Lvl": 1
+    },
+    "7767": {
+      "text": "Suramar"
+    },
+    "7771": {
+      "text": "Tanaan Invasion"
+    },
+    "7777": {
+      "text": "The Violet Hold",
+      "Lvl": 1
+    },
+    "7787": {
+      "text": "Vault of the Wardens",
+      "Lvl": 110
+    },
+    "7796": {
+      "text": "Broken Shore",
+      "Lvl": 98
+    },
+    "7805": {
+      "text": "Black Rook Hold",
+      "Lvl": 110
+    },
+    "7811": {
+      "text": "The Naglfar"
+    },
+    "7812": {
+      "text": "Maw of Souls",
+      "Lvl": 110
+    },
+    "7813": {
+      "text": "Skyhold",
+      "Lvl": 1
+    },
+    "7814": {
+      "text": "Vault of the Wardens",
+      "Lvl": 99
+    },
+    "7816": {
+      "text": "Black Rook Hold Arena",
+      "Lvl": 110
+    },
+    "7822": {
+      "text": "Nagrand Arena",
+      "Lvl": 110
+    },
+    "7827": {
+      "text": "Southshore vs. Tarren Mill"
+    },
+    "7830": {
+      "text": "Helmouth Shallows"
+    },
+    "7834": {
+      "text": "Netherlight Temple",
+      "Lvl": 1
+    },
+    "7838": {
+      "text": "Azshara"
+    },
+    "7846": {
+      "text": "The Dreamgrove",
+      "Lvl": 1
+    },
+    "7855": {
+      "text": "The Arcway",
+      "Lvl": 110
+    },
+    "7856": {
+      "text": "Tanaan Jungle Flight Bounds"
+    },
+    "7875": {
+      "text": "Dreadscar Rift",
+      "Lvl": 1
+    },
+    "7877": {
+      "text": "Trueshot Lodge",
+      "Lvl": 1
+    },
+    "7879": {
+      "text": "Hall of the Guardian",
+      "Lvl": 1
+    },
+    "7884": {
+      "text": "The Silver Enclave",
+      "Lvl": 1
+    },
+    "7885": {
+      "text": "Antonidas Memorial",
+      "Lvl": 1
+    },
+    "7886": {
+      "text": "Dalaran City",
+      "Lvl": 1
+    },
+    "7887": {
+      "text": "Circle of Wills",
+      "Lvl": 1
+    },
+    "7888": {
+      "text": "The Violet Citadel",
+      "Lvl": 1
+    },
+    "7889": {
+      "text": "The Violet Citadel Spire",
+      "Lvl": 1
+    },
+    "7890": {
+      "text": "Sewer Exit Pipe",
+      "Lvl": 1
+    },
+    "7891": {
+      "text": "Sewer Exit Pipe",
+      "Lvl": 1
+    },
+    "7892": {
+      "text": "Dalaran Floating Rocks",
+      "Lvl": 1
+    },
+    "7893": {
+      "text": "Sunreaver's Sanctuary",
+      "Lvl": 1
+    },
+    "7894": {
+      "text": "Dalaran Island",
+      "Lvl": 1
+    },
+    "7895": {
+      "text": "The Violet Hold",
+      "Lvl": 1
+    },
+    "7896": {
+      "text": "Runeweaver Square",
+      "Lvl": 1
+    },
+    "7897": {
+      "text": "The Underbelly",
+      "Lvl": 1
+    },
+    "7898": {
+      "text": "The Eventide",
+      "Lvl": 1
+    },
+    "7899": {
+      "text": "Magus Commerce Exchange",
+      "Lvl": 1
+    },
+    "7900": {
+      "text": "Vargoth's Retreat",
+      "Lvl": 1
+    },
+    "7901": {
+      "text": "Violet Citadel Balcony",
+      "Lvl": 1
+    },
+    "7902": {
+      "text": "The Wandering Isle",
+      "Lvl": 1
+    },
+    "7903": {
+      "text": "Temple of Five Dawns",
+      "Lvl": 1
+    },
+    "7918": {
+      "text": "Dreadscar Rift",
+      "Lvl": 98
+    },
+    "7921": {
+      "text": "Stormheim"
+    },
+    "7945": {
+      "text": "Mardum, the Shattered Abyss",
+      "Lvl": 98
+    },
+    "7952": {
+      "text": "Kun-Lai Summit"
+    },
+    "7955": {
+      "text": "Deepholm",
+      "Lvl": 98
+    },
+    "7960": {
+      "text": "Skywall",
+      "Lvl": 98
+    },
+    "7967": {
+      "text": "Boost Experience [TEMP NAME]"
+    },
+    "7969": {
+      "text": "Karazhan",
+      "Lvl": 98
+    },
+    "7974": {
+      "text": "Ursoc's Lair",
+      "Lvl": 98
+    },
+    "7976": {
+      "text": "Tirisfal Glades"
+    },
+    "7979": {
+      "text": "Emerald Dreamway"
+    },
+    "7996": {
+      "text": "Violet Hold",
+      "Lvl": 105
+    },
+    "8000": {
+      "text": "Azsuna"
+    },
+    "8005": {
+      "text": "Terrace of Endless Spring"
+    },
+    "8006": {
+      "text": "[TEMP] Tech Test - Seamless World Transition A (JT)"
+    },
+    "8007": {
+      "text": "[TEMP] Tech Test - Seamless World Transition B (JT)"
+    },
+    "8008": {
+      "text": "Ashamane's Fall",
+      "Lvl": 110
+    },
+    "8012": {
+      "text": "Chamber of Shadows",
+      "Lvl": 1
+    },
+    "8013": {
+      "text": "[PH]Mardum Treasures"
+    },
+    "8017": {
+      "text": "Gloaming Reef",
+      "Lvl": 100
+    },
+    "8022": {
+      "text": "Mardum, the Shattered Abyss",
+      "Lvl": 99
+    },
+    "8023": {
+      "text": "The Fel Hammer",
+      "Lvl": 1
+    },
+    "8025": {
+      "text": "The Nighthold",
+      "Lvl": 110
+    },
+    "8026": {
+      "text": "The Emerald Nightmare",
+      "Lvl": 110
+    },
+    "8040": {
+      "text": "Eye of Azshara",
+      "Lvl": 98
+    },
+    "8044": {
+      "text": "Tirisfal Glades",
+      "Lvl": 98
+    },
+    "8046": {
+      "text": "The Maelstrom",
+      "Lvl": 98
+    },
+    "8053": {
+      "text": "The Greater Sea (Don't Use)"
+    },
+    "8054": {
+      "text": "Thal'dranath"
+    },
+    "8057": {
+      "text": "[TEMP] Dummy Area - Dev Test (JT)"
+    },
+    "8058": {
+      "text": "Dev Area - A"
+    },
+    "8059": {
+      "text": "Dev Area - B"
+    },
+    "8060": {
+      "text": "Dev Area - C"
+    },
+    "8061": {
+      "text": "Dev Area - D"
+    },
+    "8062": {
+      "text": "Dev Area - E"
+    },
+    "8063": {
+      "text": "Dev Area - F"
+    },
+    "8064": {
+      "text": "Dev Area - G"
+    },
+    "8079": {
+      "text": "Court of Stars",
+      "Lvl": 110
+    },
+    "8091": {
+      "text": "Nordrassil"
+    },
+    "8093": {
+      "text": "The Vortex Pinnacle"
+    },
+    "8094": {
+      "text": "The Beyond",
+      "Lvl": 98
+    },
+    "8098": {
+      "text": "Test Dungeon"
+    },
+    "8105": {
+      "text": "Niskara"
+    },
+    "8106": {
+      "text": "Abyssal Maw",
+      "Lvl": 98
+    },
+    "8124": {
+      "text": "Sword of Dawn"
+    },
+    "8125": {
+      "text": "Firelands"
+    },
+    "8142": {
+      "text": "Shadowgore Citadel",
+      "Lvl": 98
+    },
+    "8161": {
+      "text": "Ulduar",
+      "Lvl": 98
+    },
+    "8180": {
+      "text": "Malorne's Nightmare"
+    },
+    "8205": {
+      "text": "Realm of the Mage Hunter",
+      "Lvl": 98
+    },
+    "8239": {
+      "text": "Black Temple",
+      "Lvl": 98
+    },
+    "8250": {
+      "text": "Rescue Koltira",
+      "Lvl": 98
+    },
+    "8252": {
+      "text": "The Oculus",
+      "Lvl": 98
+    },
+    "8262": {
+      "text": "Temple of the Jade Serpent",
+      "Lvl": 98
+    },
+    "8265": {
+      "text": "Karazhan",
+      "Lvl": 98
+    },
+    "8275": {
+      "text": "Azuremyst Isle",
+      "Lvl": 1
+    },
+    "8276": {
+      "text": "The Veiled Sea"
+    },
+    "8277": {
+      "text": "The Exodar"
+    },
+    "8285": {
+      "text": "Scarlet Monastery"
+    },
+    "8309": {
+      "text": "Tol Barad",
+      "Lvl": 98
+    },
+    "8330": {
+      "text": "[TEMP] Placeholder Area - Level Design Land - Wind Test"
+    },
+    "8344": {
+      "text": "The Crystal Hall"
+    },
+    "8347": {
+      "text": "Sanctum of Light",
+      "Lvl": 98
+    },
+    "8392": {
+      "text": "Dalaran Sewers",
+      "Lvl": 1
+    },
+    "8406": {
+      "text": "Black Rook Hold",
+      "Lvl": 1
+    },
+    "8422": {
+      "text": "Tempest's Roar"
+    },
+    "8423": {
+      "text": "The Arcway",
+      "Lvl": 110
+    },
+    "8439": {
+      "text": "Great Dark Beyond",
+      "Lvl": 1
+    },
+    "8440": {
+      "text": "Trial of Valor",
+      "Lvl": 110
+    },
+    "8443": {
+      "text": "Return to Karazhan",
+      "Lvl": 110
+    },
+    "8445": {
+      "text": "The Great Sea"
+    },
+    "8451": {
+      "text": "Temple of the White Tiger Flight Bounds",
+      "Lvl": 98
+    },
+    "8457": {
+      "text": "Escape from the Vault"
+    },
+    "8460": {
+      "text": "Death Knight Campaign Flight Bounds"
+    },
+    "8469": {
+      "text": "The Maelstrom"
+    },
+    "8473": {
+      "text": "Dungeon Blockout"
+    },
+    "8474": {
+      "text": "Dalaran (Northrend)",
+      "Lvl": 1
+    },
+    "8479": {
+      "text": "Broken Shore DO NOT USE",
+      "Lvl": 110
+    },
+    "8482": {
+      "text": "Blade's Edge Arena"
+    },
+    "8483": {
+      "text": "The Eye of Eternity",
+      "Lvl": 98
+    },
+    "8485": {
+      "text": "Ashran"
+    },
+    "8508": {
+      "text": "Arathi Blizzard",
+      "Lvl": 1
+    },
+    "8514": {
+      "text": "Gnomeregan",
+      "Lvl": 98
+    },
+    "8518": {
+      "text": "The Eye of Eternity",
+      "Lvl": 100
+    },
+    "8520": {
+      "text": "[TEMP] Cooking Impossible"
+    },
+    "8524": {
+      "text": "Tomb of Sargeras",
+      "Lvl": 110
+    },
+    "8527": {
+      "text": "Cathedral of Eternal Night"
+    },
+    "8528": {
+      "text": "Wailing Caverns",
+      "Lvl": 110
+    },
+    "8529": {
+      "text": "Pit of Saron"
+    },
+    "8531": {
+      "text": "Stormstout Brewery",
+      "Lvl": 110
+    },
+    "8535": {
+      "text": "Dalaran (Deadwind Pass)",
+      "Lvl": 1
+    },
+    "8538": {
+      "text": "Twisting Nether",
+      "Lvl": 98
+    },
+    "8546": {
+      "text": "Cave of the Bloodtotem",
+      "Lvl": 98
+    },
+    "8549": {
+      "text": "The Maelstrom",
+      "Lvl": 110
+    },
+    "8556": {
+      "text": "Stratholme",
+      "Lvl": 100
+    },
+    "8561": {
+      "text": "The Twisting Nether",
+      "Lvl": 98
+    },
+    "8570": {
+      "text": "Val'sharah",
+      "Lvl": 110
+    },
+    "8574": {
+      "text": "Krokuun"
+    },
+    "8579": {
+      "text": "Isle of Blizzcon"
+    },
+    "8581": {
+      "text": "Assault on Broken Shore"
+    },
+    "8583": {
+      "text": "Black Rook Hold"
+    },
+    "8591": {
+      "text": "Hearthstone Tavern"
+    },
+    "8594": {
+      "text": "Halls of Valor",
+      "Lvl": 100
+    },
+    "8596": {
+      "text": "Stormheim",
+      "Lvl": 110
+    },
+    "8597": {
+      "text": "Battle for Blackrock Mountain",
+      "Lvl": 110
+    },
+    "8598": {
+      "text": "Warden Tower TEMP"
+    },
+    "8600": {
+      "text": "The Great Sea"
+    },
+    "8624": {
+      "text": "Shado-Pan Showdown",
+      "Lvl": 110
+    },
+    "8625": {
+      "text": "Azsuna",
+      "Lvl": 110
+    },
+    "8630": {
+      "text": "The Deadmines",
+      "Lvl": 110
+    },
+    "8635": {
+      "text": "The Frozen Throne"
+    },
+    "8638": {
+      "text": "Antorus, the Burning Throne",
+      "Lvl": 110
+    },
+    "8639": {
+      "text": "Test Dungeon"
+    },
+    "8640": {
+      "text": "Coldridge Valley",
+      "Lvl": 110
+    },
+    "8641": {
+      "text": "Fields of the Eternal Hunt",
+      "Lvl": 110
+    },
+    "8645": {
+      "text": "Halls of Valor",
+      "Lvl": 98
+    },
+    "8646": {
+      "text": "Highmountain",
+      "Lvl": 110
+    },
+    "8647": {
+      "text": "Gnomeregan",
+      "Lvl": 110
+    },
+    "8651": {
+      "text": "Mardum, the Shattered Abyss",
+      "Lvl": 100
+    },
+    "8656": {
+      "text": "CharacterTestSpaceArea_ECannon"
+    },
+    "8657": {
+      "text": "Hall of Communion",
+      "Lvl": 110
+    },
+    "8660": {
+      "text": "Throne of the Four Winds",
+      "Lvl": 100
+    },
+    "8672": {
+      "text": "The Ruby Sanctum",
+      "Lvl": 110
+    },
+    "8676": {
+      "text": "The Lost Glacier",
+      "Lvl": 110
+    },
+    "8700": {
+      "text": "The Exodar",
+      "Lvl": 1
+    },
+    "8701": {
+      "text": "Mac'Aree"
+    },
+    "8709": {
+      "text": "Akazamzarak's Hat"
+    },
+    "8712": {
+      "text": "The Trial of Style"
+    },
+    "8713": {
+      "text": "Animation Playground"
+    },
+    "8840": {
+      "text": "Azuremyst Isle",
+      "Lvl": 10
+    },
+    "8842": {
+      "text": "The Exodar"
+    },
+    "8899": {
+      "text": "Antoran Wastes"
+    },
+    "8910": {
+      "text": "The Seat of the Triumvirate"
+    },
+    "8911": {
+      "text": "Arcatraz",
+      "Lvl": 1
+    },
+    "8980": {
+      "text": "Endless Halls",
+      "Lvl": 1
+    },
+    "9010": {
+      "text": "Shadow of Azeroth"
+    },
+    "9012": {
+      "text": "Forge of Aeons",
+      "Lvl": 110
+    },
+    "9024": {
+      "text": "Invasion Point"
+    },
+    "9043": {
+      "text": "Silithus Brawl",
+      "Lvl": 45
+    },
+    "9051": {
+      "text": "The Deaths of Chromie",
+      "Lvl": 110
+    },
+    "9100": {
+      "text": "Invasion Point: Aurinor"
+    },
+    "9102": {
+      "text": "Invasion Point: Naigtal"
+    },
+    "9105": {
+      "text": "Vale of Eternal Blossoms"
+    },
+    "9126": {
+      "text": "Invasion Point: Cen'gar"
+    },
+    "9127": {
+      "text": "Invasion Point: Val"
+    },
+    "9128": {
+      "text": "Invasion Point: Sangua"
+    },
+    "9136": {
+      "text": "Seething Shore",
+      "Lvl": 110
+    },
+    "9180": {
+      "text": "Invasion Point: Bonich"
+    },
+    "9188": {
+      "text": "Telogrus Rift",
+      "Lvl": 110
+    },
+    "9295": {
+      "text": "Greater Invasion Point: Matron Folnuna"
+    },
+    "9296": {
+      "text": "Greater Invasion Point: Pit Lord Vilemus"
+    },
+    "9297": {
+      "text": "Greater Invasion Point: Inquisitor Meto"
+    },
+    "9298": {
+      "text": "Greater Invasion Point: Occularus"
+    },
+    "9299": {
+      "text": "Greater Invasion Point: Sotanathor"
+    },
+    "9300": {
+      "text": "Greater Invasion Point: Mistress Alluradel"
+    },
+    "9313": {
+      "text": "Silvermoon City"
+    },
+    "9318": {
+      "text": "The Sunwell",
+      "Lvl": 110
+    },
+    "9359": {
+      "text": "The Vindicaar"
+    },
+    "9386": {
+      "text": "Allied - Highmountain Tauren Unlock"
+    },
+    "9387": {
+      "text": "Allied - Lightforged Draenei Unlock"
+    },
+    "9394": {
+      "text": "Allied - Orgrimmar"
+    },
+    "9395": {
+      "text": "Allied - Stormwind"
+    },
+    "9396": {
+      "text": "Allied - Void Elf Unlock"
+    },
+    "9397": {
+      "text": "Allied - Nightborne Unlock"
+    },
+    "9415": {
+      "text": "Telogrus Rift"
+    },
+    "9463": {
+      "text": "A Dark Place",
+      "Lvl": 1
+    },
+    "9529": {
+      "text": "Alliance Airship"
+    }
+  }
+}
