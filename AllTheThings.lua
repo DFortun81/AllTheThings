@@ -4537,12 +4537,11 @@ local function ProfileHelper(option,s)
 	local profiles = GetDataMember("Profiles")
 	if option == 0 then
 		--list
-		local profiles = GetDataMember("Profiles")
 		if profiles == nil then
-			app.print("No Profiles avaiable ")
+			app.print("No Profiles available ")
 			return
 		end
-		local names = "Avaible Profiles are: "
+		local names = "Available Profiles are: "
 		for i,j in pairs(profiles) do
 			names = names .. i .. ", "
 		end
@@ -4584,25 +4583,19 @@ local function ProfileHelper(option,s)
 			return
 		end
 		
-		local itemFilters = GetPersonalDataMember("ItemFilters");
-		
-		local profile = profiles[save]
-		if profile == nil then
-			app.print("No Profile with the name: " .. save)
-			return
-		end
-			
-		for name,val in pairs(profile) do
-			if itemFilters[name]~=nil then
+		local profile = profiles[save];
+		if profile then
+			local itemFilters = GetPersonalDataMember("ItemFilters");
+			for name,val in pairs(profile) do
 				itemFilters[name] = val;
-			end
-			if app.filterFrame.filterList[name] ~= nil then
-				app.filterFrame.filterList[name]:SetChecked(val)
-			end
-			
-		end		
-		app:RefreshData();
-		
+				if app.filterFrame.filterList[name] ~= nil then
+					app.filterFrame.filterList[name]:SetChecked(val)
+				end
+			end		
+			app:RefreshData();
+		else
+			app.print("No Profile with the name: " .. save);
+		end
 	elseif option == 2 then
 		--Save
 		if save == "default" or save == "new profile" then
@@ -4610,43 +4603,27 @@ local function ProfileHelper(option,s)
 			return false
 		end
 		
-		local profiles = GetDataMember("Profiles")
-		if profiles == nil then
-			profiles = {}
-		end
-		
-		local profile = profiles[save]
-		if profile == nil then
-			profile = {}
-		end
-		
 		local itemFilters = GetPersonalDataMember("ItemFilters");
-		
+		if not profiles then
+			profiles = {};
+			SetDataMember("Profiles", profiles);
+		end
+		local profile = profiles[save];
+		if not profile then
+			profile = {};
+			profiles[save] = profile;
+		end
 		for name,filter in pairs(itemFilters) do
 			profile[name] = filter;
 		end
-		
-		profiles[save]=profile
-		
-		SetDataMember("Profiles", profiles)
 		return true
 		
 	elseif option == 3 then
-		if profiles==nil then
-			app.print("No Profile with the name: " .. save)
-			return
+		if profiles and profiles[save] then
+			profiles[save]=nil;
+		else
+			app.print("No Profile with the name: " .. save);
 		end
-		
-		local itemFilters = GetPersonalDataMember("ItemFilters");
-		
-		local profile = profiles[save]
-		if profile == nil then
-			app.print("No Profile with the name: " .. save)
-			return
-		end
-			
-		profiles[save]=nil;
-		SetDataMember("Profiles", profiles)
 	end
 end
 
