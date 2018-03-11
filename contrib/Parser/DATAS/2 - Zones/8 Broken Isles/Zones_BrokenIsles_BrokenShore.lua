@@ -82,6 +82,7 @@ _.Zones =
 					},
 					["achievementID"] = 11736, -- Assume Command
 				}),
+				--[[
 				n(-41, { 	-- Mage Tower
 					qg(117871, q(44925, {	-- Closing the Eye
 						["groups"] = {
@@ -90,8 +91,195 @@ _.Zones =
 						["description"] = "Closing the Eye is the Artifact Challenge for Havoc Demon Hunters, Frost Death Knights, Arms Warriors, Survival Hunters, and Subtlety Rogues. ",
 					})),
 				}),
+				--]]
+				n(-169, { -- Emissary Quests
+					q(48641, { -- Armies of Legionfall
+						i(157830, { -- Legionfall Spoils
+							["groups"] = {
+								i(147216, { -- Dauntless Hood
+									i(147241), -- Cloth
+									i(147242), -- Leather
+									i(147243), -- Mail
+									i(147244), -- Plate
+								}),
+								i(147218, { -- Dauntless Spaulders
+									i(147249), -- Cloth
+									i(147250), -- Leather
+									i(147251), -- Mail
+									i(147252), -- Plate
+								}),
+								i(147222, { -- Dauntless Cloak
+									i(147269) -- Cloak
+								}),
+								i(147213, { -- Dauntless Tunic
+									i(147232), -- Cloth
+									i(147229), -- Leather
+									i(147230), -- Mail
+									i(147231), -- Plate
+								}),
+								i(147212, { -- Dauntless Bracers
+									i(147225), -- Cloth
+									i(147226), -- Leather
+									i(147227), -- Mail
+									i(147228), -- Plate
+								}),
+								i(147215, { -- Dauntless Gauntlets
+									i(147237), -- Cloth
+									i(147238), -- Leather
+									i(147239), -- Mail
+									i(147240), -- Plate
+								}),
+								i(147219, { -- Dauntless Girdle
+									i(147253), -- Cloth
+									i(147254), -- Leather
+									i(147255), -- Mail
+									i(147256), -- Plate
+								}),
+								i(147217, { -- Dauntless Leggings
+									i(147245), -- Cloth
+									i(147246), -- Leather
+									i(147247), -- Mail
+									i(147248), -- Plate
+								}),
+								i(147214, { -- Dauntless Treads
+									i(147233), -- Cloth
+									i(147234), -- Leather
+									i(147235), -- Mail
+									i(147236), -- Plate
+								}),
+							},
+						}),
+						i(154910, { -- Legionfall Spoils
+							["groups"] = {
+								i(147216, { -- Dauntless Hood
+									i(147241), -- Cloth
+									i(147242), -- Leather
+									i(147243), -- Mail
+									i(147244), -- Plate
+								}),
+								i(147218, { -- Dauntless Spaulders
+									i(147249), -- Cloth
+									i(147250), -- Leather
+									i(147251), -- Mail
+									i(147252), -- Plate
+								}),
+								i(147222, { -- Dauntless Cloak
+									i(147269) -- Cloak
+								}),
+								i(147213, { -- Dauntless Tunic
+									i(147232), -- Cloth
+									i(147229), -- Leather
+									i(147230), -- Mail
+									i(147231), -- Plate
+								}),
+								i(147212, { -- Dauntless Bracers
+									i(147225), -- Cloth
+									i(147226), -- Leather
+									i(147227), -- Mail
+									i(147228), -- Plate
+								}),
+								i(147215, { -- Dauntless Gauntlets
+									i(147237), -- Cloth
+									i(147238), -- Leather
+									i(147239), -- Mail
+									i(147240), -- Plate
+								}),
+								i(147219, { -- Dauntless Girdle
+									i(147253), -- Cloth
+									i(147254), -- Leather
+									i(147255), -- Mail
+									i(147256), -- Plate
+								}),
+								i(147217, { -- Dauntless Leggings
+									i(147245), -- Cloth
+									i(147246), -- Leather
+									i(147247), -- Mail
+									i(147248), -- Plate
+								}),
+								i(147214, { -- Dauntless Treads
+									i(147233), -- Cloth
+									i(147234), -- Leather
+									i(147235), -- Mail
+									i(147236), -- Plate
+								}),
+							},
+							["u"] = 2,
+						}),
+						i(152649, { -- Legionfall Spoils
+							["groups"] = {
+								i(147216, { -- Dauntless Hood
+									i(147241), -- Cloth
+									i(147242), -- Leather
+									i(147243), -- Mail
+									i(147244), -- Plate
+								}),
+								i(147218, { -- Dauntless Spaulders
+									i(147249), -- Cloth
+									i(147250), -- Leather
+									i(147251), -- Mail
+									i(147252), -- Plate
+								}),
+								i(147222, { -- Dauntless Cloak
+									i(147269) -- Cloak
+								}),
+								i(147213, { -- Dauntless Tunic
+									i(147232), -- Cloth
+									i(147229), -- Leather
+									i(147230), -- Mail
+									i(147231), -- Plate
+								}),
+								i(147212, { -- Dauntless Bracers
+									i(147225), -- Cloth
+									i(147226), -- Leather
+									i(147227), -- Mail
+									i(147228), -- Plate
+								}),
+								i(147215, { -- Dauntless Gauntlets
+									i(147237), -- Cloth
+									i(147238), -- Leather
+									i(147239), -- Mail
+									i(147240), -- Plate
+								}),
+								i(147219, { -- Dauntless Girdle
+									i(147253), -- Cloth
+									i(147254), -- Leather
+									i(147255), -- Mail
+									i(147256), -- Plate
+								}),
+								i(147217, { -- Dauntless Leggings
+									i(147245), -- Cloth
+									i(147246), -- Leather
+									i(147247), -- Mail
+									i(147248), -- Plate
+								}),
+								i(147214, { -- Dauntless Treads
+									i(147233), -- Cloth
+									i(147234), -- Leather
+									i(147235), -- Mail
+									i(147236), -- Plate
+								}),
+							},
+							["u"] = 2,
+						}),
+					}),
+					n(-206,  { -- Paragon
+						q(46777, { -- The Bounties of Legionfall
+							i(152108, { -- Legionfall Chest
+								["groups"] = {
+									i(147841), -- Orphaned Felbat
+								},
+							}),
+							i(147361, { -- Legionfall Chest
+								["groups"] = {
+									i(147841), -- Orphaned Felbat
+								},
+								["u"] = 2,
+							}),
+						}),
+					}),
+				}),
+--[[
 				n(-17, { 	-- Quests				
---[[					
 					n(-34, {	-- World Quests
 						q(46209),	-- A Flare In The Dark
 						q(45473),	-- A Giant Problem
@@ -348,13 +536,6 @@ _.Zones =
 					qa( 47035),	-- Legion Threat: The Missing Mage
 					qa( 47034),	-- Legion Threat: The Necromancer
 					qa( 47027),	-- Legion Threat: Val'sharah
---]]					
-					q(46777, { -- Legionfall Paragon Quest
-						i(152108, { -- Legionfall chest
-							i(147841), -- Orphaned Felbat
-						}),
-					}),
---[[					
 					q(46286),	-- Legionfall Supplies
 					q(46333),	-- Livin' on the Ledge
 					qa( 47112),	-- Lost Souls
@@ -559,8 +740,8 @@ _.Zones =
 					q(46069),	-- Worthy of the Title
 					q(46256),	-- X Treasures Found, 1 Challenge Attempted
 					q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated	
---]]					
 				}),
+				--]]
 				n(-16, { 	-- Rares
 					n(119629, { -- Lord Hel'Nurath 
 						["groups"] = {
