@@ -2361,7 +2361,7 @@ app.CreateCharacterClass = function(id, t)
 end
 
 -- Difficulty Lib
-local DifficultyColors = {
+app.DifficultyColors = {
 	[1] = "ff1eff00",	--"Interface/Worldmap/Skull_64Green",
 	[2] = "ff0070dd",	--"Interface/Worldmap/Skull_64Blue",
 	[3] = "ff1eff00",	--"Interface/Worldmap/Skull_64Green",
@@ -2377,7 +2377,7 @@ local DifficultyColors = {
 	[24] = "ffe6cc80",	--"Interface/Worldmap/Skull_64Red",
 	[33] = "ffe6cc80",	--"Interface/Worldmap/Skull_64Red",
 };
-local DifficultyIcons = {
+app.DifficultyIcons = {
 	[1] = "Interface\\Addons\\AllTheThings\\assets\\Normal",	--"Interface/Worldmap/Skull_64Green",
 	[2] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",	--"Interface/Worldmap/Skull_64Blue",
 	[3] = "Interface\\Addons\\AllTheThings\\assets\\Normal",	--"Interface/Worldmap/Skull_64Green",
@@ -2402,7 +2402,7 @@ app.BaseDifficulty = {
 		elseif key == "name" then
 			return GetDifficultyInfo(t.difficultyID);
 		elseif key == "icon" then
-			return DifficultyIcons[t.difficultyID];
+			return app.DifficultyIcons[t.difficultyID];
 		elseif key == "saved" then
 			return t.locks;
 		elseif key == "locks" and t.parent then
@@ -6102,7 +6102,7 @@ local function RowOnEnter(self)
 						if key == "shared" then
 							-- Skip
 						else
-							GameTooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key), DifficultyColors[key]), date("%c", value.reset));
+							GameTooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key), app.DifficultyColors[key]), date("%c", value.reset));
 							for encounterIter,encounter in pairs(value.encounters) do
 								GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
 							end
