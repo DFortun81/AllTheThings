@@ -19,6 +19,24 @@ app:SetScript("OnEvent", HandleEvents);
 app:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 app:SetSize(1, 1);
 app:Show();
+function app:ShowPopupDialog(msg, callback)
+	local popup = StaticPopupDialogs["ALL_THE_THINGS"];
+	if not popup then
+		popup = {
+			button1 = "Yes",
+			button2 = "No",
+			timeout = 0,
+			whileDead = true,
+			hideOnEscape = true,
+			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
+		};
+		StaticPopupDialogs["ALL_THE_THINGS"] = popup;
+	end
+	popup.text = msg or "Are you sure?";
+	popup.OnAccept = callback or print;
+	StaticPopup_Hide ("ALL_THE_THINGS");
+	StaticPopup_Show ("ALL_THE_THINGS");
+end
 
 -- ReloadUI slash command (for ease of use)
 SLASH_RELOADUI1 = "/reloadui";
@@ -5825,13 +5843,19 @@ local function RowOnClick(self, button)
 					if reference.groups and #reference.groups > 0 then
 						local missingItems = SearchForMissingItems(reference);					
 						if #missingItems > 0 then
-							local itemList = {};
+							local itemList, search = {};
 							for i,group in ipairs(missingItems) do
-								local search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID or group.toyID);
+								search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID or group.toyID);
 								if search then itemList[search] = BuildSourceTextForTSM(group, 0); end
 							end
-							TSMAPI.Groups:CreatePreset(itemList);
-							app.print("Updated the TSM preset.");
+							app:ShowPopupDialog("Running this command will update the\n" .. app.DisplayName .. " TSM Preset\nand potentially destroy your existing TSM settings by reassigning items to this Preset.\n\nWe recommend that you use a different TSM Profile exclusively for ATT when using this feature.\n\nAre you sure you want to proceed?", function()
+								TSMAPI.Groups:CreatePreset(itemList);
+								app.print("Updated the preset successfully.");
+								if not TSMAPI.Operations:GetFirstByItem(search, "Shopping") then
+									print("The preset is missing a 'Shopping' Operation assignment.");
+									print("Type '/tsm operations' to create or assign one.");
+								end
+							end);
 							return true;
 						end
 						app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
