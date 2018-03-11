@@ -2994,11 +2994,12 @@ app.BaseMusicRoll = {
 		end
 	end
 };
-app.CreateMusicRoll = function(questID, itemID)
-	local t = {};
-	t.itemID = itemID;
-	t.musicRollID = questID;
-	return createInstance(t, app.BaseMusicRoll);
+app.CreateMusicRoll = function(questID, t)
+	--local t = {};
+	--t.itemID = itemID;
+	--t.musicRollID = questID;
+	--return createInstance(t, app.BaseMusicRoll);
+	return createInstance(constructor(id, t, "musicRollID"), app.BaseMusicRoll);
 end
 
 -- NPC Lib
