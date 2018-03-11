@@ -31,8 +31,8 @@ _.Instances =
 									i(47171), -- Legguards of Abandoned Fealty
 									i(47175), -- Scale Boots of the Outlander
 									i(47248), -- Treads of Dismal Fortune
-									i(47243), -- Mark of the Relentless
-									i(47213), -- Abyssal Rune
+									--TRINKET i(47243), -- Mark of the Relentless
+									--TRINKET i(47213), -- Abyssal Rune
 								},
 							}),
 							cr(35119, e(635, {	-- Eadric the Pure
@@ -40,7 +40,7 @@ _.Instances =
 								i(47509), -- Mariel's Sorrow
 								i(47500), -- Peacekeeper Blade
 								i(47497), -- Helm of the Crestfallen Challenger
-								i(47494), -- Ancient Pendant of Arathor
+								--NECK i(47494), -- Ancient Pendant of Arathor
 								i(47502), -- Majestic Silversmith Shoulderplates
 								i(47210), -- Mantle of Gnarled Overgrowth
 								i(47501), -- Kurisu's Indecision
@@ -58,16 +58,16 @@ _.Instances =
 								i(47504), -- Barkhide Treads
 								i(47201), -- Boots of Heartfelt Repentance
 								i(47199), -- Greaves of the Grand Paladin
-								i(47200), -- Signet of Purity
-								i(47213), -- Abyssal Rune
+								--RING i(47200), -- Signet of Purity
+								--TRINKET i(47213), -- Abyssal Rune
 							})),
 							cr(34928, e(636, {	-- Argent Confessor Paletress
 								i(47522), -- Marrowstrike
 								i(47500), -- Peacekeeper Blade
 								i(47217), -- Gaze of the Somber Keeper
 								i(47497), -- Helm of the Crestfallen Challenger
-								i(47494), -- Ancient Pendant of Arathor
-								i(47219), -- Brilliant Hailstone Amulet
+								--NECK i(47494), -- Ancient Pendant of Arathor
+								--NECK i(47219), -- Brilliant Hailstone Amulet
 								i(47245), -- Pauldrons of Concealed Loathing
 								i(47514), -- Regal Aurous Shoulderplates
 								i(47176), -- Breastplate of the Imperial Joust
@@ -94,8 +94,8 @@ _.Instances =
 								i(47564), -- Gaze of the Unknown
 								i(47220), -- Helm of the Violent Fray
 								i(47529), -- Mask of the Distant Memory
-								i(47562), -- Symbol of Redemption
-								i(47566), -- The Warlord's Depravity
+								--NECK i(47562), -- Symbol of Redemption
+								--NECK i(47566), -- The Warlord's Depravity
 								i(47226), -- Mantle of Inconsolable Fear
 								i(47221), -- Shoulderpads of the Infamous Knave
 								i(47232), -- Drape of the Undefeated
@@ -110,9 +110,9 @@ _.Instances =
 								i(47227), -- Girdle of the Pallid Knight
 								i(47228), -- Leggings of the Bloodless Knight
 								i(47560), -- Boots of the Crackling Flame
-								i(47222), -- Uruka's Band of Zeal
-								i(47215), -- Tears of the Vanquished
-								i(47216), -- The Black Heart
+								--RING i(47222), -- Uruka's Band of Zeal
+								--TRINKET i(47215), -- Tears of the Vanquished
+								--TRINKET i(47216), -- The Black Heart
 							})),
 						},
 					}),
@@ -136,8 +136,8 @@ _.Instances =
 									i(47171), -- Legguards of Abandoned Fealty
 									i(47175), -- Scale Boots of the Outlander
 									i(47248), -- Treads of Dismal Fortune
-									i(47243), -- Mark of the Relentless
-									i(47213), -- Abyssal Rune
+									--TRINKET i(47243), -- Mark of the Relentless
+									--TRINKET i(47213), -- Abyssal Rune
 								},
 							}),
 							cr(35119, e(635, {	-- Eadric the Pure
@@ -145,7 +145,7 @@ _.Instances =
 								i(47509), -- Mariel's Sorrow
 								i(47500), -- Peacekeeper Blade
 								i(47497), -- Helm of the Crestfallen Challenger
-								i(47494), -- Ancient Pendant of Arathor
+								--NECK i(47494), -- Ancient Pendant of Arathor
 								i(47502), -- Majestic Silversmith Shoulderplates
 								i(47210), -- Mantle of Gnarled Overgrowth
 								i(47501), -- Kurisu's Indecision
@@ -163,16 +163,16 @@ _.Instances =
 								i(47504), -- Barkhide Treads
 								i(47201), -- Boots of Heartfelt Repentance
 								i(47199), -- Greaves of the Grand Paladin
-								i(47200), -- Signet of Purity
-								i(47213), -- Abyssal Rune
+								--RING i(47200), -- Signet of Purity
+								--TRINKET i(47213), -- Abyssal Rune
 							})),
 							cr(34928, e(636, {	-- Argent Confessor Paletress
 								i(47522), -- Marrowstrike
 								i(47500), -- Peacekeeper Blade
 								i(47217), -- Gaze of the Somber Keeper
 								i(47497), -- Helm of the Crestfallen Challenger
-								i(47494), -- Ancient Pendant of Arathor
-								i(47219), -- Brilliant Hailstone Amulet
+								--NECK i(47494), -- Ancient Pendant of Arathor
+								--NECK i(47219), -- Brilliant Hailstone Amulet
 								i(47245), -- Pauldrons of Concealed Loathing
 								i(47514), -- Regal Aurous Shoulderplates
 								i(47176), -- Breastplate of the Imperial Joust
@@ -188,9 +188,9 @@ _.Instances =
 								i(47185), -- Leggings of the Haggard Apprentice
 								i(47495), -- Legplates of Relentless Onslaught
 								i(47511), -- Plated Greaves of Providence
-								i(47200), -- Signet of Purity
-								i(47213), -- Abyssal Rune
-								i(47214), -- Banner of Victory
+								--RING i(47200), -- Signet of Purity
+								--TRINKET i(47213), -- Abyssal Rune
+								--TRINKET i(47214), -- Banner of Victory
 							})),
 							cr(35451, e(637, {	-- The Black Knight
 								i(49682), -- Black Knight's Rondel
@@ -199,8 +199,8 @@ _.Instances =
 								i(47564), -- Gaze of the Unknown
 								i(47220), -- Helm of the Violent Fray
 								i(47529), -- Mask of the Distant Memory
-								i(47562), -- Symbol of Redemption
-								i(47566), -- The Warlord's Depravity
+								--NECK i(47562), -- Symbol of Redemption
+								--NECK i(47566), -- The Warlord's Depravity
 								i(47226), -- Mantle of Inconsolable Fear
 								i(47221), -- Shoulderpads of the Infamous Knave
 								i(47232), -- Drape of the Undefeated
@@ -215,9 +215,9 @@ _.Instances =
 								i(47227), -- Girdle of the Pallid Knight
 								i(47228), -- Leggings of the Bloodless Knight
 								i(47560), -- Boots of the Crackling Flame
-								i(47222), -- Uruka's Band of Zeal
-								i(47215), -- Tears of the Vanquished
-								i(47216), -- The Black Heart
+								--RING i(47222), -- Uruka's Band of Zeal
+								--TRINKET i(47215), -- Tears of the Vanquished
+								--TRINKET i(47216), -- The Black Heart
 							})),
 						},
 						["Lvl"] = 80,
