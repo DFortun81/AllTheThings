@@ -1343,7 +1343,7 @@ local function SearchForCachedItemLink(itemLink)
 end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
-		if group.collectible and (not group.b or group.b == 0 or group.b == 2) then
+		if group.collectible and (not group.b or group.b == 2 or group.b == 3) then
 			table.insert(listing, group);
 		end
 		if group.groups and group.expanded then
@@ -2903,6 +2903,8 @@ app.BaseMount = {
 			end
 		elseif key == "f" then
 			return 100;
+		elseif key == "b" then
+			return t.parent and t.parent.b;
 		elseif key == "text" then
 			return select(1, GetSpellLink(t.mountID)) or select(1, GetSpellInfo(t.mountID)) or ("Spell #" .. t.mountID);
 		elseif key == "description" then
@@ -2920,7 +2922,8 @@ app.BaseMount = {
 		elseif key == "name" then
 			return C_MountJournal_GetMountInfoByID(GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID]);
 		elseif key == "tsm" then
-			--if t.parent then return t.parent.itemID; end
+			if t.itemID then return string.format("i:%d", t.itemID); end
+			if t.parent and t.parent.itemID then return string.format("i:%d", t.parent.itemID); end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
