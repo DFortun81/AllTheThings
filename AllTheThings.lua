@@ -2847,9 +2847,9 @@ app.BaseItem = {
 					else
 						return string.format("i:%d", itemLink);
 					end
-				elseif t.itemModID then
+				--elseif t.itemModID then
 					-- NOTE: At this time, TSM3 does not support itemModID. (RIP)
-					return string.format("i:%d:%d:1:3524", itemLink, t.itemModID);
+					--return string.format("i:%d:%d:1:3524", itemLink, t.itemModID);
 				end
 				return string.format("i:%d", itemLink);
 			end
