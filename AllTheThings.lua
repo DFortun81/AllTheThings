@@ -693,7 +693,6 @@ end })
 
 -- Search Caching
 local searchCache = {};
-
 local constructor = function(id, t, typeID)
 	if not t then
 		return { [typeID] = id };
@@ -2904,7 +2903,7 @@ app.BaseMount = {
 		elseif key == "f" then
 			return 100;
 		elseif key == "b" then
-			return t.parent and t.parent.b;
+			return (t.parent and t.parent.b) or 1;
 		elseif key == "text" then
 			return select(1, GetSpellLink(t.mountID)) or select(1, GetSpellInfo(t.mountID)) or ("Spell #" .. t.mountID);
 		elseif key == "description" then
