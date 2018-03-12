@@ -293,7 +293,7 @@ pet(94124, 1178);		-- Sunreaver Micro-Sentry
 pet(94125, 1177); 		-- Living Sandling
 pet(94126, 1180);		-- Zandalari Kneebiter
 pet(94152, 1183); 		-- Son of Animus
-pet(94158, 1205);		-- Direhorn Runt
+pet(94573, 1205);		-- Direhorn Runt
 pet(94190, 1185);		-- Spectral Porcupette
 pet(94191, 1184); 		-- Stunted Direhorn
 pet(94208, 1196);		-- Sunfur Panda
