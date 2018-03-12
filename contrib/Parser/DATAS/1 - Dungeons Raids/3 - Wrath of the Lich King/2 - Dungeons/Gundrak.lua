@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			c(274, { 	-- Gundrak
 				["groups"] = {
-					n(-47, {     -- Lunar Festival
+					n(-47, { -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								q(13065, {	-- Ohanzee the Elder			
@@ -27,7 +27,65 @@ _.Instances =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					d(1, {		-- Normal
+					n(-17, { -- Quests
+						q(29844, { -- For Posterity
+							["groups"] = {
+								i(43180), -- Lion's Head Ring
+								i(43178), -- Ring of Foul Mojo
+								i(43179), -- Solid Platinum Band
+								i(43177), -- Voodoo Signet
+							},
+							["qg"] = 55738, -- Tol'mar
+						}),
+						q(29840, { -- For Posterity
+							["groups"] = {
+								i(43180), -- Lion's Head Ring
+								i(43178), -- Ring of Foul Mojo
+								i(43179), -- Solid Platinum Band
+								i(43177), -- Voodoo Signet
+							},
+							["qg"] = 55737, -- Chronicler Bah'Kini
+						}),
+						q(29834, { -- Gal'darah Must Pay
+							["groups"] = {
+								i(43164), -- Sly Mojo Sash
+								i(43165), -- Strange Voodoo Belt
+								i(43167), -- Ranger's Beelt of the Fallen Empire
+								i(43168), -- Clasp of the Fallen Demi-God
+							},
+							["qg"] = 55738, -- Tol'mar
+						}),
+						q(29835, { -- Gal'darah Must Pay
+							["groups"] = {
+								i(43164), -- Sly Mojo Sash
+								i(43165), -- Strange Voodoo Belt
+								i(43167), -- Ranger's Beelt of the Fallen Empire
+								i(43168), -- Clasp of the Fallen Demi-God
+							},
+							["qg"] = 55737, -- Chronicler Bah'Kini
+						}),
+						q(29839, { -- One of a Kind
+							["groups"] = {
+								i(43171), -- Fur-Lined Moccasins
+								i(43172), -- Rhino Hide Kneeboots
+								i(43173), -- Scaled Boots of Fallen Hope
+								i(43176), -- Slippers of the Mojo Dojo
+								i(43174), -- Trollkickers	
+							},
+							["qg"] = 55738, -- Tol'mar
+						}),	
+						q(29838, { -- One of a Kind
+							["groups"] = {
+								i(43171), -- Fur-Lined Moccasins
+								i(43172), -- Rhino Hide Kneeboots
+								i(43173), -- Scaled Boots of Fallen Hope
+								i(43176), -- Slippers of the Mojo Dojo
+								i(43174), -- Trollkickers	
+							},
+							["qg"] = 55737, -- Chronicler Bah'Kini
+						}),							
+					}),
+					d(1, { -- Normal
 						n(0, {		-- Zone Drop
 							i(35593),	-- Steel Bear Trap Bracers
 							i(35594)	-- Snowmelt Silken Cinch
@@ -70,7 +128,7 @@ _.Instances =
 							i(37640),	-- Boots of Transformation
 						}))
 					}),
-					d(2, {		-- Heroic
+					d(2, { -- Heroic
 						["Lvl"] = 80,
 						["groups"] = {
 							n(0, {		-- Zone Drop
@@ -122,7 +180,7 @@ _.Instances =
 							}))
 						}
 					}),
-					d(24, {		-- Timewalking
+					d(24, { -- Timewalking
 						["Lvl"] = 70,
 						["groups"] = {
 							cr(29304, e(592, {	-- Slad'ran
