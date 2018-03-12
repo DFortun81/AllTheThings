@@ -985,16 +985,6 @@ _.Zones =
 							}),
 	
 						}),
-						n(-169, { -- Emissary Quests
-							q(42234),-- {	-- The Valarjar
-								--i(154905, {	-- Valarjar Cache
-								--}),
-							q(46746, {	-- Supplies From the Valarjar
-								i(152106, {	 -- Valarjar Strongbox
-									i(147805),  -- MOUNT! Valarjar Stormwing
-								}),
-							}),
-						}),
 						--I don't know where these quests belong. My Horde toons haven't done anything in Legion yet.
 						qh(38317,  {  -- Masters of Disguise -  listed on Wowhead as neutral, but turns in to a Horde NPC
 							i(129093), -- TOY! Ravenbear Disguise
