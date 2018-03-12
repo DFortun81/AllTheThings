@@ -453,13 +453,13 @@ _.Zones =
 					n(-206, { -- Paragon
 						q(46748, { -- Supplies From the Nightfallen
 							i(152105, { -- Nightfallen Cache
-								i(152105), -- Leywoven Flying Carpet
+								i(143764), -- Leywoven Flying Carpet
 								i(140495, { -- Torn Invitation [Fox Mount Quest]
 									i(137573), -- Reins of the Llothien Prowler
 								}),
 							}),
 							un(2, i(146900, { -- Nightfallen Cache
-								i(152105), -- Leywoven Flying Carpet
+								i(143764), -- Leywoven Flying Carpet
 								i(140495, { -- Torn Invitation [Fox Mount Quest]
 									i(137573), -- Reins of the Llothien Prowler
 								}),
