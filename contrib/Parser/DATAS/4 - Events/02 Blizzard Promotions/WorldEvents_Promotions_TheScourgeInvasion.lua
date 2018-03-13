@@ -40,7 +40,6 @@ _.WorldEvents =
 						["icon"] = "Interface\\Icons\\inv_chest_plate10",
 					}),
 				},
-				["u"] = 12,
 			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",

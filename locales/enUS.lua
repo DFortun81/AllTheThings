@@ -458,6 +458,7 @@ AllTheThings.Locales.enUS = {
 		[-377] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",				-- Heroic
 		[-378] = "Interface\\Addons\\AllTheThings\\assets\\LFR",				-- Raid Finder
 		[-381] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",				-- Mythic
+		[-382] = "Interface\\FriendsFrame\\Battlenet-Battleneticon.blp",		-- BattleTag
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",					-- Miscellaneous
 		[-500] = "Interface\\Icons\\inv_misc_celebrationcake_01",				-- WoW Anniversary
 		[-531] = "Interface\\Icons\\achievement_general",						-- 2008 Spirit of Competition Event
@@ -904,6 +905,7 @@ AllTheThings.Locales.enUS = {
 		[-379] = PLAYER_DIFFICULTY4,											-- Flexible
 		[-380] = PLAYER_DIFFICULTY5,											-- Challenge
 		[-381] = PLAYER_DIFFICULTY6,											-- Mythic
+		[-382] = BATTLETAG,														-- BattleTag
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-491] = "Tarot Cards",

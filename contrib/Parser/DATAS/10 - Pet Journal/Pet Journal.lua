@@ -48,7 +48,7 @@ _.PetJournal =
 		p(737), 	-- Mongoose
 		p(739), 	-- Mongoose Pup
 		p(1447), 	-- Moonshell Crab
-		p(192), 	-- Mr. Chilly
+		un(2, p(192)), 	-- Mr. Chilly
 		p(164), 	-- Muckbreath
 		p(1441), 	-- Mud Jumper
 		p(198), 	-- Pengu
@@ -726,7 +726,7 @@ _.PetJournal =
 		p(225),		-- Curious Oracle Hatchling
 		p(226),		-- Curious Wolvar Hatchling
 		p(1329),	-- Dandelion Frolicker
-		p(294),		-- Deathy
+		un(16, p(294)),	-- Deathy
 		p(1979),	-- Dutiful Gruntling
 		p(1978),	-- Dutiful Squire
 		p(119),		-- Father Winter's Helper

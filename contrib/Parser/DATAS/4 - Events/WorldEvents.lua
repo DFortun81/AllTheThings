@@ -3,59 +3,61 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	n(-94, {	-- Black Market AH
+	n(-94, { -- Black Market AH
 	}),
-	n(-65, {	-- Blizzard Promotions
+	n(-65, { -- Blizzard Promotions
 		["groups"] = {
-			n(-520, {	-- Expansion Prelauch Events
+			n(-553, { -- 2006 ICoke Promotion
 			}),
-			n(-540, {	-- The Scourge Invasion
+			n(-561, { -- 2007 Worldwide Invitational
 			}),
-			n(-539, {	-- Gates of Ahn'Qiraj
+			n(-531, { -- 2008 Spirit of Competition Event
 			}),
-			n(-531, {	-- 2008 Spirit of Competition Event
+			n(-562, { -- 2008 Worldwide Invitational
 			}),
-			n(-561, {	-- 2007 Worldwide Invitational
+			n(-556, { -- Arena Tournament
 			}),
-			n(-562, {	-- 2008 Worldwide Invitational
+			n(-569, { -- Azeroth Academy Mentor Recruitment Promotion
 			}),
-			n(-545, {	-- Blizzcon
+			n(-563, { -- Azeroth's Choppers
 			}),
-			n(-534, {	-- Collector's Edition
+			n(-558, { -- Battle.net World Championship Shanghai 2012
 			}),
-			n(-546, {	-- Recruit A Friend
+			n(-382, { -- BattleTag
 			}),
-			n(-573, {	-- Scroll of Resurrection
+			n(-545, { -- Blizzcon
 			}),
-			n(-500, {	-- WoW Anniversary
+			n(-534, { -- Collector's Edition
 			}),
-			n(-538, {	-- Diablo 20th Anniversary Promotion
+			n(-538, { -- Diablo 20th Anniversary Promotion
 			}),
-			n(-574, {	-- Diablo III Annual Pass
+			n(-574, { -- Diablo III Annual Pass
 			}),
-			n(-533, {	-- Hearthstone Promotion
+			n(-554, { -- EU Fansite Promotion
 			}),
-			n(-532, {	-- Heroes of the Storm Promotion
+			n(-520, { -- Expansion Prelauch Events
 			}),
-			n(-553, {	-- 2006 ICoke Promotion
+			n(-539, { -- Gates of Ahn'Qiraj
 			}),
-			n(-569, {	-- Azeroth Academy Mentor Recruitment Promotion
+			n(-533, { -- Hearthstone Promotion
 			}),
-			n(-554, {	-- EU Fansite Promotion
+			n(-532, { -- Heroes of the Storm Promotion
 			}),
-			n(-557, {	-- Korea World Event
+			n(-555, { -- Korean Promotional Event
 			}),
-			n(-555, {	-- Korean Promotional Event
+			n(-557, { -- Korea World Event
 			}),
-			n(-563, {	-- Azeroth's Choppers
+			n(-546, { -- Recruit A Friend
 			}),
-			n(-577, {	-- World of Warcraft Movie
+			n(-573, { -- Scroll of Resurrection
 			}),
-			n(-556, {	-- Arena Tournament
+			n(-540, { -- The Scourge Invasion
 			}),
-			n(-558, {	-- Battle.net World Championship Shanghai 2012
+			n(-577, { -- World of Warcraft Movie
 			}),
-			i(19160, {	-- Contest Winner's Tabard
+			n(-500, { -- WoW Anniversary
+			}),
+			i(19160, { -- Contest Winner's Tabard
 				["groups"] = {
 				},
 				["description"] = "This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",
@@ -64,66 +66,66 @@ _.WorldEvents =
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
-	n(-496, {	-- Bizmo's Brawlpub
+	n(-496, { -- Bizmo's Brawlpub
 	}),
-	m(925, {	-- Brawlgar Arena
+	m(925, { -- Brawlgar Arena
 	}),
-	n(-543, {	-- Broken Isles: Legion Invasions
+	n(-543, { -- Broken Isles: Legion Invasions
 	}),
-	m(823, {	-- Darkmoon Island
+	m(823, { -- Darkmoon Island
 	}),
-	n(-36, {	-- In-Game Shop
+	n(-36, { -- In-Game Shop
 	}),
-	n(-32, {	-- Trading Card Game
+	n(-32, { -- Trading Card Game
 	}),
-	n(-77, {	-- Special
+	n(-77, { -- Special
 	}),
-	n(-62, {	-- Stranglethorn Fishing Extravaganza
+	n(-62, { -- Stranglethorn Fishing Extravaganza
 	}),
-	n(-173, {	-- Timewalking
-		n(-154, {	-- Burning Crusade
+	n(-173, { -- Timewalking
+		n(-154, { -- Burning Crusade
 		}),
-		n(-155, {	-- Wrath of the Lich King
+		n(-155, { -- Wrath of the Lich King
 		}),
-		n(-156, {	-- Cataclysm
+		n(-156, { -- Cataclysm
 		}),
-		n(-157, {	-- Mists of Pandaria
+		n(-157, { -- Mists of Pandaria
 		}),
 	}),
-	n(-3, { 	-- World Events (Holidays)
-		--n(-177, {	-- Mini World Events
+	n(-3, {  -- World Events (Holidays)
+		--n(-177, { -- Mini World Events
 		--}),
-		--n(-175, {	-- Monthly World Events
+		--n(-175, { -- Monthly World Events
 		--}),
-		--n(-176, {	-- Weekly World Events
+		--n(-176, { -- Weekly World Events
 		--}),
-		n(-50, {	-- Love is in the Air
+		n(-50, { -- Love is in the Air
 		}),
-		n(-47, {	-- Lunar Festival
+		n(-47, { -- Lunar Festival
 		}),
-		n(-51, {	-- Noblegarden
+		n(-51, { -- Noblegarden
 		}),
---		n(-52, {	-- Children's Week
+--		n(-52, { -- Children's Week
 --		}),
-		n(-53, {	-- Midsummer Fire Festival [Alliance]
+		n(-53, { -- Midsummer Fire Festival [Alliance]
 		}),
-		n(-54, {	-- Midsummer Fire Festival [Horde]
+		n(-54, { -- Midsummer Fire Festival [Horde]
 		}),
-		n(-63, {	-- Trial of Style
+		n(-63, { -- Trial of Style
 		}),
-		n(-55, {	-- Pirate's Day
+		n(-55, { -- Pirate's Day
 		}),
-		n(-56, {	-- Brewfest
+		n(-56, { -- Brewfest
 		}),
---		n(-57, {	-- Harvest Festival
+--		n(-57, { -- Harvest Festival
 --		}),
-		n(-58, {	-- Hallow's End
+		n(-58, { -- Hallow's End
 		}),
-		n(-59, {	-- Day of the Dead
+		n(-59, { -- Day of the Dead
 		}),
-		n(-60, {	-- Pilgrim's Bounty
+		n(-60, { -- Pilgrim's Bounty
 		}),
-		n(-61, {	-- Feast of Winter Veil
+		n(-61, { -- Feast of Winter Veil
 		}),
 	}),
 
