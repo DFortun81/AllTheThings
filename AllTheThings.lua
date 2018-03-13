@@ -1791,35 +1791,21 @@ end
 local function RefreshSaves()
 	StartCoroutine("RefreshSaves", RefreshSavesCoroutine);
 end
-local function RefreshSources(groups)
-	if groups then
-		for key, group in ipairs(groups) do
-			if group.itemID then
-				if group.s and group.s > 0 and not GetDataSubMember("CollectedSources", group.s) then
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
-					if sourceInfo and app.ItemSourceFilter(sourceInfo) then SetDataSubMember("CollectedSources", group.s, sourceInfo.isCollected and 1 or 2); end
-				end
-			end
-			if group.toyID and not GetDataSubMember("CollectedToys", group.toyID) and PlayerHasToy(group.toyID) then
-				SetDataSubMember("CollectedToys", group.toyID, 1);
-			end
-			RefreshSources(group.groups);
-		end
-	end
-end
-local function RefreshCollections(groups)
+local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
-		app.print("Refreshing " .. ((groups and groups.text) or app.DisplayName) .. " collection status...");
+		app.print("Refreshing " .. app.DisplayName .. " collection status...");
 		
 		-- Harvest Illusion Collections
+		local collectedIllusions = GetDataMember("CollectedIllusions");
 		for i,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
-			if illusion.isCollected then SetDataSubMember("CollectedIllusions", illusion.sourceID, 1); end
+			if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
 		end
 		
 		-- Harvest Title Collections
+		local collectedTitles = GetDataMember("CollectedToys");
 		for i=1,GetNumTitles(),1 do
-			if IsTitleKnown(i) then SetDataSubMember("CollectedTitles", i, 1); end
+			if IsTitleKnown(i) then collectedTitles[i] = 1; end
 		end
 		
 		-- Refresh Mounts / Pets
@@ -1834,12 +1820,22 @@ local function RefreshCollections(groups)
 		
 		-- Harvest Item Collections that are used by the addon.
 		app:GetDataCache();
-		if groups then
-			RefreshSources(groups.groups, 1);
-		else
-			-- Refresh both the primary and unsorted data caches.
-			RefreshSources(app:GetWindow("Prime").data.groups, 1);
-			RefreshSources(app:GetWindow("Unsorted").data.groups, 1);
+		
+		-- Refresh Toys from Cache
+		local collectedToys = GetDataMember("CollectedToys");
+		for id,group in pairs(fieldCache["toyID"]) do
+			if not collectedToys[id] and PlayerHasToy(id) then
+				collectedToys[id] = 1;
+			end
+		end
+		
+		-- Refresh Sources from Cache
+		local collectedSources = GetDataMember("CollectedSources");
+		for id,group in pairs(fieldCache["s"]) do
+			if not collectedSources[id] then
+				local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
+				if sourceInfo and app.ItemSourceFilter(sourceInfo) then collectedSources[id] = sourceInfo.isCollected and 1 or 2; end
+			end
 		end
 		
 		-- Refresh the Collection Windows!
