@@ -1046,11 +1046,15 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["classes"] = {12},
 					})),
 --]]					
-					qp164(qg(7790, q(2751, { -- Barbaric Battlements
-						i(7979, {		-- Plans: Barbaric Iron Breastplate
-							i(7914),		-- Barbaric Iron Breastplate
-						}),
-					}))),
+					qh(2751, { -- Barbaric Battlements
+						["groups"] = {
+							i(7979, {		-- Plans: Barbaric Iron Breastplate
+								i(7914),		-- Barbaric Iron Breastplate
+							}),
+						},
+						["qg"] = 7790,	-- Orokk Omosh
+						["requiredSkill"] = 164,	-- Blacksmithing
+					}),
 					qdg(qh(27396, {	-- Blade of the Shattered Hand
 						["groups"] = {
 							i(65487),	-- Blade of the Shattered Hand
@@ -1499,7 +1503,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					}),
 --					qg( 3362, qh( 7660)),	-- Wolf Swapping - Arctic Wolf
 --					qg( 3362, qh( 7661)),	-- Wolf Swapping - Red Wolf
-					qp129(qg(3332, qh( 6608))),	-- You Too Good.	
+--					qp129(qg(3332, qh( 6608))),	-- You Too Good.	
 --]]					
 					nlq({	-- Legacy Quests
 						q(1436,  {  	-- Alliance Relations
