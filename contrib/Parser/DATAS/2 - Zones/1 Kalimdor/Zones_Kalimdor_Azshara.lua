@@ -109,16 +109,64 @@ _.Zones =
 					p(470), 	-- Twilight Spider
 				}),
 				n(-17, { 	-- Quests
-				
-				
-				
+					qh(14323, {	-- Absorbent
+						["groups"] = {
+						},
+						["qg"] = 35142,	-- Ergll
+						["sourceQuestID"] = { 14130 },	-- Friends Come in All Colors
+					}),
+					qh(14371, {	-- A Gigantic Snack
+						["groups"] = {
+						},
+						["qg"] = 36077,	-- Assistant Greely
+						["sourceQuestID"] = { 14310 },	-- Segmentation Fault: Core Dumped
+					}),
+					qh(24458, {	-- A Hello to Arms
+						["groups"] = {
+						},
+						["qg"] = 36379,	-- Hobart Grapplehammer
+						["sourceQuestID"] = { 14388, 14383 },	-- Azsharite Experiment Number Two & The Terrible Tinkers of the Ruined Reaches
+					}),
+					qh(24497, {	-- Airborne Again
+						["groups"] = {
+						},
+						["qg"] = 37142,	-- Gurlorn
+						["sourceQuestID"] = { 14392 },	-- Farewell, Minnow
+					}),
+					qh(14131, {	-- A Little Pick-me-up
+						["groups"] = {
+						},
+						["qg"] = 35142,	-- Ergll
+						["sourceQuestID"] = { 14130 },	-- Friends Come in All Colors
+					}),
+					qh(14428, {	-- Amberwind's Journal
+						["groups"] = {
+						},
+						["qg"] = 36596,	-- Andorel Sunsworn
+					}),
+					qh(14432, {	-- A Pale Brew
+						["groups"] = {
+						},
+						["qg"] = 8586,	-- Haggrum Bloodfist
+						["sourceQuestID"] = { 14431 },	-- The Blackmaw Scar
+					}),
+					qart(q(46177, {	-- A Portal Away (UNTESTED)
+						["groups"] = {
+						},
+						["qg"] = 116048,	-- Joanna
+--						["sourceQuestID"] = {  },	-- UNKNOWN SOURCE
+					})),
 					qh(14197, {	-- A Quota to Meet
 						["groups"] = {
 						},
 						["qg"] = 35085,	-- Foreman Fisk
 					}),
-				
-				
+					qh(14468, {	-- Another Warm Body
+						["groups"] = {
+						},
+						["qg"] = 36752,	-- Private Worcester
+						["sourceQuestID"] = { 14194 },	-- Refleshification
+					}),
 					qh(14155, {	-- Arborcide
 						["groups"] = {
 							i(53452),	-- Woodchipper Dagger
@@ -127,87 +175,577 @@ _.Zones =
 						},
 						["sourceQuestID"] = { 14146 },	-- Defend the Gates!
 					}),
-				
-				
+					o(196832, {	-- Upper Scrying Stone
+						q(14429, {	-- Arcane De-Construction
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 14428 },	-- Amberwind's Journal
+						}),
+					}),
+					qh(14201, {	-- A Thousand Stories in the Sand
+						["groups"] = {
+						},
+						["qg"] = 35087,	-- Malynea Skyreaver
+						["sourceQuestID"] = { 24453 },	-- Private Chat
+					}),
+					qh(14407, {	-- Azshara Blues
+						["groups"] = {
+						},
+						["qg"] = 36999,	-- Teemo
+					}),
+					qh(14385, {	-- Azsharite Experiment Number One
+						["groups"] = {
+						},
+						["qg"] = 36077,	-- Assistant Greely
+						["sourceQuestID"] = { 14377 },	-- Befriending Giants
+					}),
+					qh(14388, {	-- Azsharite Experiment Number Two (awarded "The Rarest Substance on Azeroth" criteria)
+						["groups"] = {
+						},
+						["qg"] = 36077,	-- Assistant Greely
+						["sourceQuestID"] = { 14385 },	-- Azsharite Experiment Number One
+					}),
+					qh(14322, {	-- Bad Science! Bad!
+						["groups"] = {
+						},
+						["qg"] = 36146,	-- Twistex Happytongs
+					}),
 					qh(14161, {	-- Basilisk Bashin'
 						["groups"] = {
 						},
 						["qg"] = 35091,	-- Horzak Zignibble
 						["breadcrumbQuestID"] = { 14162 },	-- Report to Horzak
 					}),
-				
-				
+					o(204050, {	-- Foebreaker Blueprints
+						qh(26337, {	-- Beating the Market
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 26335 },	-- Ready the Navy
+						}),
+					}),
+					qh(14377, {	-- Befriending Giants
+						["groups"] = {
+						},
+						["qg"] = 36077,	-- Assistant Greely
+						["sourceQuestID"] = { 14371, 14370 },	-- A Gigantic Snack & Mysterious Azsharite
+					}),
+					qh(24430, {	-- Blacken the Skies
+						["groups"] = {
+						},
+						["qg"] = 36903,	-- Jr. Bombardier Hackel
+						["sourceQuestID"] = { 24433, 14477 },	-- Let Them Feast on Fear & Push the Button!
+					}),
+					qh(24434, {	-- Commando Drop
+						["groups"] = {
+						},
+						["qg"] = 36919,	-- Andorel Sunsworn
+					}),
 					qh(14146, {	-- Defend the Gates!
 						["groups"] = {
 						},
 						["sourceQuestID"] = { 14135 },	-- Up a Tree
 					}),
-				
-				
-					o(195431, {	-- Headquarters Radio (PRISMBREAK)
+					qh(14433, {	-- Diplomacy by Another Means
 						["groups"] = {
-							qh (14192),	-- Prismbreak
 						},
-						["sourceQuestID"] = { 14190 },	-- The Perfect Prism
+						["qg"] = 8586,	-- Haggrum Bloodfist
+						["sourceQuestID"] = { 14431 },	-- The Blackmaw Scar
 					}),
-				
-
-					o(195435, {	-- Weapons Cabinet (REFLESHIFICATION)
+					qh(14423, {	-- Dozercism
 						["groups"] = {
-							qh(14194, {	-- Refleshification
+							i( 53447),	-- Standard Issue Airborne Belt
+							i( 53405),	-- Bulldozer Vest
+							i( 53427),	-- Margene Repair Gloves
+							i(131357),	-- Heavy Mechanic's Hauberk
+						},
+						["qg"] = 35088,	-- Custer Clubnik
+						["sourceQuestID"] = { 14209 },	-- Gunk in the Trunk
+					}),
+					qh(14340, {	-- Dressed to Impress
+						["groups"] = {
+						},
+						["qg"] = 36210,	-- Sorata Firespinner
+						["sourceQuestID"] = { 14345 },	-- Wash Out
+					}),
+					qh(14390, {	-- Easy is Boring
+						["groups"] = {
+						},
+						["sourceQuestID"] = { 14389 },	-- Wasn't it Obvious?
+					}),
+					qh(14480, {	-- Extermination
+						["groups"] = {
+							i(53453),	-- Wrenchmen Belt
+							i(53418),	-- Honorary Gob Squad Shield
+						},
+						["qg"] = 36895,	-- Sergeant Zelks
+						["sourceQuestID"] = { 24448 },	-- Field Promotion
+					}),
+					qh(24467, {	-- Fade to Black
+						["groups"] = {
+							i( 53402),	-- Blue Hide Vest
+							i( 53423),	-- Kalecgos' Gift
+							i(131367),	-- Azure Scale Hauberk
+						},
+						["qg"] = 35867,	-- Kalec
+						["sourceQuestID"] = { 14391 },	-- Turning the Tables
+					}),
+					qh(14392, {	-- Farewell, Minnow (awarded "The Best Apprentice" criteria)
+						["groups"] = {
+							i(53057),	-- TOY! Faded Wizard Hat
+						},
+						["qg"] = 36676,	-- Azuregos
+						["sourceQuestID"] = { 24467, 14261, 14297 },	-- Fade to Black, Ice Cold, Pro-liberation
+					}),
+					qh(24448, {	-- Field Promotion
+						["groups"] = {
+						},
+						["qg"] = 36920,	-- Lieutenant Drex
+						["sourceQuestID"] = { 24436, 24435 },	-- Halo Drops & Mop Up
+					}),
+					qh(24437, {	-- First Come, First Served
+						["groups"] = {
+						},
+						["qg"] = 36795,	-- Ruckus
+					}),
+					qh(14471, {	-- First Degree Mortar
+						["groups"] = {
+							i( 53422),	-- Kaboom Leggings
+							i( 53430),	-- Mortar-Slinger Belt
+							i( 53437),	-- Salvoblast Tunic
+							i(131361),	-- Belt of Explosive Potential
+						},
+						["qg"] = 36746,	-- Xiz "The Eye" Salvoblast
+						["sourceQuestID"] = { 14468 },	-- Another Warm Body
+					}),
+					qh(14130, {	-- Friends Come In All Colors
+						["groups"] = {
+						},
+						["qg"] = 35867,	-- Kalec
+						["sourceQuestID"] = { 14407 },	-- Azshara Blues
+					}),
+					qh(14324, {	-- Full of Hot Water
+						["groups"] = {
+							i( 53445),	-- Spongy Vest
+							i( 53438),	-- Scalding Gloves
+							i(131346),	-- Ergll's Body Sieve
+						},
+						["sourceQuestID"] = { 14323 },	-- Absorbent
+					}),
+					qh(14475, {	-- Grounded! 
+						["groups"] = {
+						},
+						["qg"] = 36728,	-- Kroum
+					}),
+					qh(14209, {	-- Gunk in the Trunk
+						["groups"] = {
+						},
+						["qg"] = 35088,	-- Custer Clubnik
+						["sourceQuestID"] = { 14202 },	-- Survey the Lakeshore
+					}),
+					o(196833, {	-- Lower Scrying Stone
+						qh(14430, {	-- Hacking the Construct
+							["groups"] = {
+								i( 53426),	-- Mage Bracers
+								i( 53414),	-- Hacker's Leggings
+								i(131358),	-- Leggings of the Hack "Mage"
+							},
+							["sourceQuestID"] = { 14429 },	-- Arcane De-Construction
+						}),	
+					}),
+					qh(24436, {	-- Halo Drops
+						["groups"] = {
+							i( 53410),	-- Disposable Cloak
+							i( 53419),	-- Hort's Axe
+							i(156943),	-- Hort's Motivator
+						},
+						["qg"] = 36921,	-- Sergeant Hort
+						["sourceQuestID"] = { 14479 },	-- There are Many Like It
+					}),
+					qh(14486, {	-- Handling the Goods
+						["groups"] = {
+							i( 53411),	-- Eldarath Staff
+							i( 53433),	-- Quick Buck Leggings
+							i(131362),	-- Profit Boon Legguards
+						},
+						["qg"] = 36894,	-- Tora Halotrix
+						["sourceQuestID"] = { 24448 },	-- Field Promotion
+					}),
+					qh(14469, {	-- Hand-me-downs
+						["groups"] = {
+						},
+						["qg"] = 36749,	-- Commander Molotov
+						["sourceQuestID"] = { 14468 },	-- Another Warm Body
+					}),
+					qh(14484, {	-- Head of the Snake
+						["groups"] = {
+						},
+						["qg"] = 36895,	-- Sergeant Zelks
+						["sourceQuestID"] = { 24448 },	-- Field Promotion
+					}),
+					qh(14261, {	-- Ice Cold
+						["groups"] = {
+						},
+						["qg"] = 37064,	-- Feno Blastnoggin
+						["sourceQuestID"] = { 14391 },	-- Turning the Tables
+					}),
+					qart(q(45570, {	-- In Safer Hands (UNTESTED)
+						["groups"] = {
+						},
+						["qg"] = 117252,	-- Archmage Xylem
+--						["sourceQuestID"] = {  },	-- UNKNOWN SOURCE
+					})),
+					qh(14472, {	-- In The Face!
+						["groups"] = {
+						},
+						["qg"] = 36744,	-- Glix Grindlock
+						["sourceQuestID"] = { 14471, 14469, 14470 },	-- First Degree Mortar, Hand-me-Downs, Military Breakthrough
+					}),
+					qh(14267, {	-- Investigating the Sea Shrine
+						["groups"] = {
+						},
+						["qg"] = 35657,	-- Torg Twocrush
+						["sourceQuestID"] = { 14258 },	-- Mortar the Point
+					}),
+					qh(24433, {	-- Let Them Feast on Fear
+						["groups"] = {
+						},
+						["qg"] = 36730,	-- Chawg
+					}),
+					qh(14464, {	-- Lightning Strike Assassination
+						["groups"] = {
+							i( 53425),	-- Low-Altitude Parachute
+							i( 53412),	-- Gloves of Unmitigated Badassery
+							i(131360),	-- Grips of the Lightning Fast Assasin
+						},
+						["qg"] = 36729,	-- Slinky Sharpshiv
+						["sourceQuestID"] = { 14462 },	-- Where's My Head?
+					}),
+					qh(14230, {	-- Manual Labor
+						["groups"] = {
+						},
+						["qg"] = 35756,	-- Teresa Spireleaf
+						["sourceQuestID"] = { 14250, 14249, 14263 },	-- Renewable Resource, Shear Will, Waste of Thyme
+					}),
+					qh(14215, {	-- Memories of the Dead
+						["groups"] = {
+						},
+						["qg"] = 35087,	-- Malynea Skyreaver
+						["sourceQuestID"] = { 14201 },	-- A Thousand Stories in the Sand
+					}),
+					qh(14470, {	-- Military Breakthrough
+						["groups"] = {
+						},
+						["qg"] = 36744,	-- Glix Grindlock
+						["sourceQuestID"] = { 14468 },	-- Another Warm Body
+					}),
+					qh(24435, {	-- Mop Up
+						["groups"] = {
+						},
+						["qg"] = 36920,	-- Lieutenant Drex
+						["sourceQuestID"] = { 14479 },	-- There are Many Like It
+					}),
+					qh(14258, {	-- Mortar the Point
+						["groups"] = {
+						},
+						["qg"] = 35817,	-- Bombardier Captian Smooks
+					}),
+					qh(14442, {	-- My Favorite Subject (breadcrumb for "Nine's Plan")
+						["groups"] = {
+						},
+						["qg"] = 36146,	-- Twistex Happytongs
+						["sourceQuestID"] = { 14322 },	-- Bad Science!  Bad!
+					}),
+					qh(14370, {	-- Mysterious Azsharite
+						["groups"] = {
+						},
+						["qg"] = 36077,	-- Assistant Greely
+						["sourceQuestID"] = { 14310 },	-- Segmentation Fault: Core Dumped
+					}),
+					qh(14216, {	-- Mystery of the Sarcen Stone (awarded "Redirecting the Ley Lines" criteria)
+						["groups"] = {
+							i( 53404),	-- Bottom-Wader Boots
+							i( 53435),	-- Restored Mennaran Plate
+							i(131334),	-- Weighted Chain Boots
+						},
+						["sourceQuestID"] = { 14215 },	-- Memories of the Dead
+					}),
+					qh(14424, {	-- Need More Science
+						["groups"] = {
+						},
+						["qg"] = 35088,	-- Custer Clubnik
+						["sourceQuestID"] = { 14423 },	-- Dozercism
+					}),
+					qh(14408, {	-- Nine's Plan
+						["groups"] = {
+						},
+						["qg"] = 36500,	-- Subject Nine
+						["breadcrumbQuestID"] = { 14442 },	-- My Favorite Subject
+					}),
+					o(201578, { -- Wrenchman Recruitment Poster
+						qh(14478, {	-- Operation Fishgut
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 24452 },	-- Profitability Scouting
+						}),
+					}),
+--[[ commented out until we get COORDINATES.					
+					o(203755, { -- Wrenchman Recruitment Poster
+						qh(14478, {	-- Operation Fishgut
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 24452 },	-- Profitability Scouting
+						}),
+					}),
+--]]					
+					qart(q(44920, {	-- Order of Incantations (UNTESTED)
+						["groups"] = {
+						},
+						["qg"] = 115791,	-- Joanna
+--						["sourceQuestID"] = {  },	-- UNKNOWN SOURCE
+					})),
+					qh(26372, {	-- Pre-Flight Checklist (awarded "Goblin Work Ethic" criteria for "Fading into Twilight" achievement)
+						["groups"] = {
+						},
+						["qg"] = 42643,	-- Fleep
+						["sourceQuestID"] = { 26361 },	-- Smoot's Samophlange
+					}),
+					o(195431, {	-- Headquarters Radio
+						qh (14192, {	-- Prismbreak
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 14190 },	-- The Perfect Prism
+						}),
+					}),
+					qh(24453, {	-- Private Chat
+						["groups"] = {
+						},
+						["qg"] = 36749,	-- Commander Molotov
+						["sourceQuestID"] = { 24452 },	-- Profitability Scouting
+					}),
+					qh(24463, {	-- Probing into Ashenvale
+						["groups"] = {
+						},
+						["qg"] = 36728,	-- Kroum
+						["sourceQuestID"] = { 24439 },	-- The Conquest of Azshara
+					}),
+					qart(q(44915, {	-- Professionally Good Looking (UNTESTED)
+						["groups"] = {
+						},
+						["qg"] = 115791,	-- Joanna
+--						["sourceQuestID"] = {  },	-- UNKNOWN SOURCE
+					})),
+					qh(24452, {	-- Profitability Scouting
+						["groups"] = {
+							i( 53429),	-- Molotov Gloves
+							i( 53432),	-- Pricey Bracers
+							i(131365),	-- Fine-Link Gauntlets
+						},
+						["qg"] = 36749,	-- Commander Molotov
+						["sourceQuestID"] = { 14472 },	-- In the Face!
+					}),
+					qh(14297, {	-- Pro-liberation
+						["groups"] = {
+						},
+						["qg"] = 37061,	-- Jellix Fuselighter
+						["sourceQuestID"] = { 14391 },	-- Turning the Tables
+					}),
+					qh(14477, {	-- Push the Button!
+						["groups"] = {
+						},
+						["qg"] = 36785,	-- Bombardier Captain Smooks
+						["sourceQuestID"] = { 14476 },	-- Rigged to Blow
+					}),
+					o(195435, {	-- Weapons Cabinet
+						qh(14194, {	-- Refleshification
+							["groups"] = {
 								i(53449),	-- Stonifying Gun
 								i(53434),	-- Refleshified Bracers
-							}),
-						},
-						["sourceQuestID"] = { 14192 },	-- Prismbreak
+							},
+							["sourceQuestID"] = { 14192 },	-- Prismbreak
+						}),
 					}),
-
-				
 					qh(14162, {	-- Report to Horzak
 						["groups"] = {
 						},
 						["qg"] = 35086,	-- Labor Captain Grabbit
 						["sourceQuestID"] = { 14155 },	-- Arborcide
 					}),
-					
-					
 					n( 35095, {	-- Talrendis Scout
 						i(47039, {	-- Scout's Orders
 							qh(14127),	-- Return of the Highborne?
 						}),
 					}),
-					
-					
+					qh(24455, {	-- Rapid Deployment
+						["groups"] = {
+						},
+						["qg"] = 36749,	-- Commander Molotov
+						["sourceQuestID"] = { 14478 },	-- Operation Fishgut
+					}),
+					qh(14422, {	-- Raptor Raptor Rocket (awarded "Subject Nine from Space!" criteria)
+						["groups"] = {
+						},
+						["qg"] = 36500,	-- Subject Nine
+						["sourceQuestID"] = { 14408 },	-- Nine's Plan
+					}),
+					qh(26358, {	-- Ready the Air Force
+						["groups"] = {
+						},
+						["qg"] = 42640,	-- Captain Krazz
+						["sourceQuestID"] = { 26324 },	-- Where is My Warfleet?
+					}),
+					qh(26374, {	-- Ready the Ground Troops
+						["groups"] = {
+						},
+						["qg"] = 42641,	-- Warlord Krogg
+						["sourceQuestID"] = { 26324 },	-- Where is My Warfleet?
+					}),
+					qh(26335, {	-- Ready the Navy
+						["groups"] = {
+						},
+						["qg"] = 42641,	-- Warlord Krogg
+						["sourceQuestID"] = { 26324 },	-- Where is My Warfleet?
+					}),
+					qh(14250, {	-- Renewable Resource
+						["groups"] = {
+						},
+						["qg"] = 35755,	-- Tharkul Ironskull
+						["sourceQuestID"] = { 14340 },	-- Dressed to Impress
+					}),
+					o(195642, {	-- Naga Power Stone
+						qh(14271, {	-- Report to Twocrush
+							["groups"] = {	
+							},
+							["sourceQuestID"] = { 14270 },	-- The Keystone Shard
+						}),
+						qh(14270, {	-- The Keystone Shard
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 14267 },	-- Investigating the Sea Shrine
+						}),
+					}), 
 					qh(14128, {	-- Return of the Highborne?
 						["groups"] = {
 						},
 						["qg"] = 8576,	-- Ag'tor Bloodfist
 						["sourceQuestID"] = { 14127 },	-- Return of the Highborne?
 					}),
-					
-				
+					qh(14476, {	-- Rigged to Blow
+						["groups"] = {
+						},
+						["qg"] = 36785,	-- Bombardier Captain Smooks
+						["sourceQuestID"] = { 14475 },	-- Grounded!
+					}),
 					qh(14129, {	-- Runaway Shredder!
 						["groups"] = {
 						},
 						["qg"] = 35086,	-- Labor Captain Grabbit
 						["breadcrumbQuestID"] = { 28496 },	-- Warchief's Command: Azshara!
 					}),
-				
-				
+					o(195676, {	-- Secret Lab Squawkbox
+						qh(14310, {	-- Segmentation Fault: Core Dumped
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 14308 },	-- When Science Attacks
+						}),
+					}), 
+					qh(14249, {	-- Shear Will
+						["groups"] = {
+							i( 53439),	-- Scissor Blade
+							i( 53413),	-- Glued Feather Boots
+							i( 53436),	-- Robotronic Vest
+							i(131336),	-- Inter-Feather-Linked Greaves
+						},
+						["qg"] = 35648,	-- Will Robotronic
+						["sourceQuestID"] = { 14340 },	-- Dressed to Impress
+					}),
+					qh(24449, {	-- Shore Leave (rewarded "Heart of Arkkoroc" criteria)
+						["groups"] = {
+							i( 53403),	-- Bedlam Gun
+							i( 53428),	-- Merger Boots
+							i( 53399),	-- Acquisition Bracers
+							i( 53415),	-- Heart Wrapper
+							i(131364),	-- Deal Makers Bindings
+						},
+						["qg"] = 36745,	-- Captain Tork
+						["sourceQuestID"] = { 14480, 14486, 14484, 14487, 14485 },	-- Extermination, Handling the Goods, Head of the Snake, Still Beating Heart, & Ticker Required
+					}),
+					qh(14295, {	-- Sisters of the Sea (awarded "Sisters of the Sea" criteria)
+						["groups"] = {
+							i( 53440),	-- Sea Sister Vest
+							i( 53441),	-- Serpent-Crusher Gloves
+							i(131339),	-- Scaled Gloves of the Serpent
+						},
+						["qg"] = 35657,	-- Torg Twocrush
+						["sourceQuestID"] = { 14271 },	-- Report to Twocrush
+					}),
+					qh(26361, {	-- Smoot's Samophlange
+						["groups"] = {
+							i(63876),	-- Smoot-Smacking Shoulderpads
+							i(63875),	-- Waistguard of Calibrated Caliphracts
+							i(63874),	-- Legguards of Samophlangination
+							i(63877),	-- Smoot's Shredded Smock
+						},
+						["qg"] = 42643,	-- Fleep
+						["sourceQuestID"] = { 26358 },	-- Ready the Air Force
+					}),
+					qh(14487, {	-- Still Beating Heart
+						["groups"] = {
+						},
+						["qg"] = 36745,	-- Captain Tork
+						["sourceQuestID"] = { 24448 },	-- Field Promotion
+					}),
 					qh(14165, {	-- Stone Cold
 						["groups"] = {
 						},
 						["qg"] = 35091,	-- Horzak Zignibble
 					}),
-				
-				
+					qh(14202, {	-- Survey the Lakeshore
+						["groups"] = {
+						},
+						["qg"] = 35088,	-- Custer Clubnik
+						["sourceQuestID"] = { 24453 },	-- Private Chat
+					}),
+					qh(14132, {	-- That's Just Rude!
+						["groups"] = {
+						},
+						["qg"] = 35142,	-- Ergll
+						["sourceQuestID"] = { 14130 },	-- Friends Come in All Colors
+					}),
+					qart(q(44924, {	-- The Archmage Accosted (UNTESTED)
+						["groups"] = {
+						},
+						["qg"] = 115791,	-- Joanna
+						["sourceQuestID"] = { 44920 },	-- Order of Incantations
+					})),
+					qh(14435, {	-- The Blackmaw Doublecross
+						["groups"] = {
+							i( 53450),	-- Treaty Breaker Gloves
+							i( 53409),	-- Diplomatic Belt
+							i( 53431),	-- Negotiation Stompers
+							i(131359),	-- Accomodating Cinch
+						},
+						["qg"] = 8586,	-- Haggrum Bloodfist
+						["sourceQuestID"] = { 14433 },	-- Diplomacy by Another Means
+					}),
+					qh(14431, {	-- The Blackmaw Scar
+						["groups"] = {
+						},
+						["qg"] = 8586,	-- Haggrum Bloodfist
+					}),
 					qh(14134, {	-- The Captain's Logs
 						["groups"] = {
 						},
 						["sourceQuestID"] = { 14129 },	-- Runaway Shredder!
 					}),
-				
-				
+					qh(24439, {	-- The Conquest of Azshara (awarded "The Conquest of Azshara" criteria & "Azshara Quests" achievement)
+						["groups"] = {
+							i(53443),	-- Shield of Talrendis Point
+							i(53451),	-- Wind Rider Wand
+							i(53442),	-- Shield of Azsharan Conquest
+						},
+						["qg"] = 36730,	-- Chawg
+						["sourceQuestID"] = { 24430 },	-- Blacken the Skies
+					}),
 					qh(14117, {	-- The Eyes of Ashenvale
 						["groups"] = {
 							i( 53416),	-- Hill's Eye Wand
@@ -216,288 +754,152 @@ _.Zones =
 						},
 						["qg"] = 8576,	-- Ag'tor Bloodfist
 					}),
-				
-				
 					qh(14190, {	-- The Perfect Prism
 						["groups"] = {
 						},
 						["qg"] = 35091,	-- Horzak Zignibble
 						["sourceQuestID"] = { 14165 },	-- Stone Cold
 					}),
-				
-				
+					qh(14413, {	-- The Pinnacle of Learning
+						["groups"] = {
+						},
+						["qg"] = 35187,	-- Image of Archmage Xylem
+						["sourceQuestID"] = { 14230, 14226 },	-- Manual Labor & Trouble Under Foot
+					}),
+					qh(14479, {	-- There Are Many Like It
+						["groups"] = {
+						},
+						["qg"] = 36956,	-- Captain Desoto
+						["sourceQuestID"] = { 24455 },	-- Rapid Deployment
+					}),
+					qh(14383, {	-- The Terrible Tinkers of the Ruined Reaches
+						["groups"] = {
+							i(53417),	-- Hobart's Spare Hubcap
+							i(53446),	-- Spring Gadget
+						},
+						["qg"] = 36379,	-- Hobart Grapplehammer
+						["sourceQuestID"] = { 14377 },	-- Befriending Giants
+					}),
+					qh(14300, {	-- The Trial of Fire
+						["groups"] = {
+						},
+						["qg"] = 36361,	-- Image of Archmage Xylem
+						["sourceQuestID"] = { 14296 },	-- Watch Your Step
+					}),
+					qh(24478, {	-- The Trial of Frost
+						["groups"] = {
+						},
+						["qg"] = 36361,	-- Image of Archmage Xylem
+						["sourceQuestID"] = { 14296 },	-- Watch Your Step
+					}),
+					qh(24479, {	-- The Trial of Shadow
+						["groups"] = {
+						},
+						["qg"] = 36361,	-- Image of Archmage Xylem
+						["sourceQuestID"] = { 14296 },	-- Watch Your Step
+					}),
+					qh(14485, {	-- Ticker Required
+						["groups"] = {
+						},
+						["qg"] = 36895,	-- Sergeant Zelks
+						["sourceQuestID"] = { 24448 },	-- Field Promotion
+					}),
+					qh(14262, {	-- To Gut a Fish
+						["groups"] = {
+						},
+						["qg"] = 35657,	-- Torg Twocrush
+						["sourceQuestID"] = { 14258 },	-- Mortar the Point
+					}),
+					qh(14226, {	-- Trouble Under Foot
+						["groups"] = {
+						},
+						["qg"] = 35187,	-- Image of Archmage Xylem
+						["sourceQuestID"] = { 14250, 14249, 14263 },	-- Renewable Resource, Shear Will, Waste of Thyme
+					}),
+					qh(14391, {	-- Turning the Tables
+						["groups"] = {
+						},
+						["sourceQuestID"] = { 14390 },	-- Easy is Boring
+					}),
+					qh(28849, {	-- Twilight Skies
+						["groups"] = {
+						},
+						["qg"] = 42640,	-- Captain Krazz
+						["sourceQuestID"] = { 26337, 26372, 26374 },	-- Beating the Market, Pre-Flight Checklist, & Ready the Ground Troops
+					}),
+					qh(26388, {	-- Twilight Skies
+						["groups"] = {
+						},
+						["qg"] = 50367,	-- Friz Groundspin
+						["sourceQuestID"] = { 28849 },	-- Twilight Skies
+					}),
 					qh(14135, {	-- Up a Tree
 						["groups"] = {
 						},
 						["sourceQuestID"] = { 14134 },	-- The Captain's Logs
 					}),
-				
-				
 					qh(14118, {	-- Venison for the Troops
 						["groups"] = {
 						},
 						["qg"] = 8576,	-- Ag'tor Bloodfist
 					}),
-				
-				
-				
-				
---[[
+					qh(14345, {	-- Wash Out
 						["groups"] = {
 						},
-						["qg"] = ,	-- 
-						["sourceQuestID"] = {  },	-- 
+						["qg"] = 35142,	-- Ergll
+						["sourceQuestID"] = { 14131, 14324, 14132 },	-- A Little Pick-me-up, Full of Hot Water, & That's Just Rude!
 					}),
---]]
-				
---[[				
-					qg(36077, qh(14371)),	-- A Gigantic Snack
-					qg(36379, qh(24458)),	-- A Hello to Arms
-					qg(35142, qh(14131)),	-- A Little Pick-me-up
-					qg( 8586, qh(14432)),	-- A Pale Brew
-					qart(qg(116048, q(46177))),	-- A Portal Away
-					qg(35087, qh(14201)),	-- A Thousand Stories in the Sand
-					qg(35142, qh(14323)),	-- Absorbent
-					qg(37142, qh(24497)),	-- Airborne Again
-					qg(36596, qh(14428)),	-- Amberwind's Journal
-					qg(36752, qh(14468)),	-- Another Warm Body
-					o(196832, {	-- Upper Scrying Stone
-						q(14429),	-- Arcane De-Construction
-					}),
-					qg(36999, qh(14407)),	-- Azshara Blues
-					qg(36077, qh(14385)),	-- Azsharite Experiment Number One
-					qg(36077, qh(14388)),	-- Azsharite Experiment Number Two
-					qg(36146, qh(14322)),	-- Bad Science! Bad!
-					qg(204050, qh(26337)),	-- Beating the Market
-					qg(36077, qh(14377)),	-- Befriending Giants
-					qg(36903, qh(24430)),	-- Blacken the Skies
-					qg(36919, qh(24434)),	-- Commando Drop
-					qg( 8586, qh(14433)),	-- Diplomacy by Another Means
---]]					
-					qg(35088, qh(14423, {	-- Dozercism
-						i( 53447),	-- 
-						i( 53405),	-- 
-						i( 53427),	-- 
-						i(131357),	-- 
-					})),
---[[					
-					qg(36210, qh(14340)),	-- Dressed to Impress
-					qg(36436, qh(14390)),	-- Easy is Boring
---]]					
-					qg(36895, qh(14480, {	-- Extermination
-						i(53453),	-- 
-						i(53418),	-- 
-					})),
-					qg(35867, qh(24467, {	-- Fade to Black
-						i( 53402),	-- 
-						i( 53423),	-- 
-						i(131367),	-- 
-					})),
-					qg(36676, qh(14392, {	-- Farewell, Minnow
-						i(53057),	-- TOY! Faded Wizard Hat
-					})),
---[[					
-					qg(36920, qh(24448)),	-- Field Promotion
-					qg(36795, qh(24437)),	-- First Come, First Served
---]]					
-					qg(36746, qh(14471, {	-- First Degree Mortar
-						i( 53422),	-- 
-						i( 53430),	-- 
-						i( 53437),	-- 
-						i(131361),	-- 
-					})),
---					qg(35867, qh(14130)),	-- Friends Come In All Colors
-					qg(35142, qh(14324, {	-- Full of Hot Water
-						i( 53445),	-- 
-						i( 53438),	-- 
-						i(131346),	-- 
-					})),
---[[					
-					qg(36728, qh(14475)),	-- Grounded!
-					qg(35088, qh(14209)),	-- Gunk in the Trunk
---]]
-					o(196833, {	-- Lower Scrying Stone
-						qh(14430, {	-- Hacking the Construct
-							i( 53426),	-- 
-							i( 53414),	-- 
-							i(131358),	-- 
-						}),	
-					}), 
-					qg(36921, qh(24436, {	-- Halo Drops
-						i( 53410),	-- 
-						i( 53419),	-- 
-						i(156943),	-- Hort's Motivator
-					})),
---					qg(36749, qh(14469)),	-- Hand-me-downs
-					qg(36894, qh(14486, {	-- Handling the Goods
-						i( 53411),
-						i( 53433),
-						i(131362),
-					})),
---[[					
-					qg(36895, qh(14484)),	-- Head of the Snake
-					qg(37064, qh(14261)),	-- Ice Cold
-					qart(qg(117252, q(45570, {	-- In Safer Hands
+					qh(14389, {	-- Wasn't It Obvious?
 						["groups"] = {
 						},
-						["classes"] = {1,3,4,6,12},					
-					}))),
-					qg(36744, qh(14472)),	-- In The Face!
-					qg(35657, qh(14267)),	-- Investigating the Sea Shrine
-					qg(36730, qh(24433)),	-- Let Them Feast on Fear
---]]					
-					qg(36729, qh(14464, {	-- Lightning Strike Assassination
-						i( 53425),
-						i( 53412),
-						i(131360),
-					})),
---[[					
-					qg(35756, qh(14230)),	-- Manual Labor
-					qg(35087, qh(14215)),	-- Memories of the Dead
-					qg(36744, qh(14470)),	-- Military Breakthrough
-					qg(36920, qh(24435)),	-- Mop Up
-					qg(35817, qh(14258)),	-- Mortar the Point
-					qg(36146, qh(14442)),	-- My Favorite Subject
-					qg(36077, qh(14370)),	-- Mysterious Azsharite
---]]					
-					qg(35087, qh(14216, {	-- Mystery of the Sarcen Stone
-						i( 53404),	-- 
-						i( 53435),	-- 
-						i(131334),	-- 
-					})),
---[[					
-					qg(35088, qh(14424)),	-- Need More Science
-					qg(36500, qh(14408)),	-- Nine's Plan
-					o(201578, { -- Wrenchman Recruitment Poster
-						qh(14478),	-- Operation Fishgut
+						["qg"] = 36372,	-- Joanna
+						["sourceQuestID"] = { 14299 },	-- Xylem's Asylum
 					}),
---]]					
---[[ commented out until we get COORDINATES.					
-					o(203755, { -- Wrenchman Recruitment Poster
-						qh(14478),	-- Operation Fishgut
-					}),
---]]
---[[
-					qart(qg(115791, q(44920))),	-- Order of Incantations
-					qg(42643, qh(26372)),	-- Pre-Flight Checklist
-					qg(36749, qh(24453)),	-- Private Chat
-					qg(37061, qh(14297)),	-- Pro-liberation
-					qg(36728, qh(24463)),	-- Probing into Ashenvale
-					qart(qg(115791, q(44915))),	-- Professionally Good Looking
---]]					
-					qg(36749, qh(24452, {	-- Profitability Scouting
-						i( 53429),	-- 
-						i( 53432),	-- 
-						i(131365),	-- 
-					})),
---[[					
-					qg(36785, qh(14477)),	-- Push the Button!
-					qg(36749, qh(24455)),	-- Rapid Deployment
-					qg(36500, qh(14422)),	-- Raptor Raptor Rocket
-					qg(42640, qh(26358)),	-- Ready the Air Force
-					qg(42641, qh(26374)),	-- Ready the Ground Troops
-					qg(42641, qh(26335)),	-- Ready the Navy
-					qg(35755, qh(14250)),	-- Renewable Resource			
-					o(195642, {	-- Naga Power Stone
-						qh(14271),	-- Report to Twocrush
-					}), 
-					qg(36785, qh(14476)),	-- Rigged to Blow
-					o(195676, {	-- Secret Lab Squawkbox
-						qh(14310),	-- Segmentation Fault: Core Dumped
-					}), 
---]]
-					qg(35648, qh(14249, {	-- Shear Will
-						i( 53439),
-						i( 53413),
-						i( 53436),
-						i(131336),
-					})),
-					qg(36745, qh(24449, {	-- Shore Leave
-						i( 53403),
-						i( 53428),
-						i( 53399),
-						i( 53415),
-						i(131364),
-					})),
-					qg(35657, qh(14295, {	-- Sisters of the Sea
-						i( 53440),
-						i( 53441),
-						i(131339),
-					})),				
---					qg(15600, q(  8720)),	-- Skygleam the Elder
-					qg(42643, qh(26361, {	-- Smoot's Samophlange
+					qh(14263, {	-- Waste of Thyme
 						["groups"] = {
-							i(63876),
-							i(63875),
-							i(63874),
-							i(63877),
 						},
-						["description"] = "Part of the Twilight Highlands introductory quest chain.|r",
-					})),
---[[					
-					qg(36745, qh(14487)),	-- Still Beating Heart
-					qg(35088, qh(14202)),	-- Survey the Lakeshore
-					qg(35142, qh(14132)),	-- That's Just Rude!
-					qart(qg(115791, q(44924))),	-- The Archmage Accosted
---]]					
-					qg( 8586, qh(14435, {	-- The Blackmaw Doublecross
-						i( 53450),
-						i( 53409),
-						i( 53431),
-						i(131359),
-					})),
---[[					
-					qg( 8586, qh( 14431)),	-- The Blackmaw Scar
---]]					
-					qg(36730, qh(24439, {	-- The Conquest of Azshara
-						i(53443),
-						i(53451),
-						i(53442),
-					})),
---[[					
-					o(195642, {	-- Naga Power Stone
-						qh( 14270),	-- The Keystone Shard
-					}), 
-					qg(35187, qh( 14413)),	-- The Pinnacle of Learning
---]]					
-					qg(36379, qh(14383, {	-- The Terrible Tinkers of the Ruined Reaches
-						i(53417),
-						i(53446),
-					})),
---[[					
-					qg(36361, qh(14300)),	-- The Trial of Fire
-					qg(36341, qh(24478)),	-- The Trial of Frost
-					qg(36361, qh(24479)),	-- The Trial of Shadow
-					qg(36956, qh(14479)),	-- There Are Many Like It
-					qg(36895, qh(14485)),	-- Ticker Required
-					qg(35657, qh(14262)),	-- To Gut a Fish
-					qg(35187, qh(14226)),	-- Trouble Under Foot
-					qg(36436, qh(14391)),	-- Turning the Tables
-					qg(42640, qh(28849)),	-- Twilight Skies
-					qg(50367, qh(26388)),	-- Twilight Skies
-					qg(35142, qh(14345)),	-- Wash Out
-					qg(36372, qh(14389)),	-- Wasn't It Obvious?
-					qg(35754, qh(14263)),	-- Waste of Thyme
---]]					
-					qg(36334, qh(14296, {	-- Watch Your Step
-						i( 53406),
-						i( 53421),
-						i(131340),
-					})),
---[[					
-					qg(42672, qh(26294)),	-- Weapons of Mass Dysfunction
-					qg(36077, qh(14308)),	-- When Science Attacks
-					qg(36730, qh(14462)),	-- Where's My Head?
---]]					
-					qg(36361, qh(14299, {	-- Xylem's Asylum
-						i( 53420),
-						i( 53401),
-						i(131341),
-					})),
+						["qg"] = 35754,	-- Quarla Whistlebreak
+						["sourceQuestID"] = { 14340 },	-- Dressed to Impress
+					}),
+					qh(14296, {	-- Watch Your Step
+						["groups"] = {
+							i( 53406),	-- Charged Robes
+							i( 53421),	-- Juicy Bracers
+							i(131340),	-- Capacitance Bands
+						},
+						["qg"] = 36334,	-- Image of Archmage Xylem
+						["sourceQuestID"] = { 14413 },	-- The Pinnacle of Learning
+					}),
+					qh(26294, {	-- Weapons of Mass Dysfunction
+						["groups"] = {
+						},
+						["qg"] = 42672,	-- Foreman Glibbs
+						["sourceQuestID"] = { 26293 },	-- Machines of War
+					}),
+					qh(14308, {	-- When Science Attacks
+						["groups"] = {
+						},
+						["qg"] = 36077,	-- Assistant Greely
+						["breadcrumbQuestID"] = { 14424 },	-- Need More Science
+					}),
+					qh(14462, {	-- Where's My Head?
+						["groups"] = {
+						},
+						["qg"] = 36730,	-- Chawg
+					}),
+					qh(14299, {	-- Xylem's Asylum
+						["groups"] = {
+							i( 53420),	-- Joanna's Sash
+							i( 53401),	-- Asylum Shoes
+							i(131341),	-- Asylum Boots
+						},
+						["qg"] = 36361,	-- Image of Archmage Xylem
+						["sourceQuestID"] = { 14300, 24478, 24479 },	-- The Trial of Fire, The Trial of Frost, & The Trial of Shadow
+					}),
 --[[ removed quests
-					q( 9364),			-- Fragmented Magic (removed with Cataclysm, Mage-only)
-					q( 43301),			-- Invasion: Azshara (from Legion pre-launch)
-					q( 14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)					
+					q( 9364),	-- Fragmented Magic (removed with Cataclysm, Mage-only)
+					q(43301),	-- Invasion: Azshara (from Legion pre-launch)
+					q(14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)					
 --]]					
 				}),
 				n(-16, { 	-- Rares	
@@ -707,7 +1109,7 @@ _.Zones =
 					}),						
 	--				n(107477, { 	-- N.U.T.Z. -- mob to tame			}),
 				}),
-				n(-2, {	-- Vendors
+				n(-2, {		-- Vendors
 					n(36375, {	-- Tex Vortacoil <Reagents>
 						i(68806),	-- Kalytha's Haunted Locket Toy
 					}),

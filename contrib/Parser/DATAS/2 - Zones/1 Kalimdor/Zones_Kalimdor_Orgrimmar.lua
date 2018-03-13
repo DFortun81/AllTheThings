@@ -940,31 +940,37 @@ _.Zones =
 					}),
 				}),
 				h(n(-17, { 	-- Quests
-					qa(27400, {	-- Mastering the Arcane
+					qdg(qh(27400, {	-- Mastering the Arcane
 						["groups"] = {
 							i(65468),	-- Staff of the Arcane Path
 						},
 						["qg"] = 47246,	-- Ureda
 						["classes"] = { 8 },	-- Mage
-					}),
-					qa(28458, {	-- The Pyromancer's Grimoire
+					})),
+					qdg(qh(28458, {	-- The Pyromancer's Grimoire
 						["groups"] = {
 							i(65620),	-- Hood of the Arcane Path
 						},
 						["qg"] = 47246,	-- Ureda
 						["classes"] = { 8 },	-- Mage
-					}),
+					})),
+					qdg(qh(28457, {	-- A Dangerous Alliance
+						["groups"] = {
+							i(65625),	-- Faceguard of the Horde
+							i(65642),	-- Headguard of the Horde
+						},
+						["qg"] = 3353,	-- Grezz Ragefist
+						["classes"] = { 1 },	-- Warrior
+					})),
+					qdg(qh(27365, {	-- A Fitting Weapon
+						["groups"] = {
+							i(65494),	-- Broadaxe of the Horde
+							i(65495),	-- Greataxe of the Horde
+						},
+						["qg"] = 3353,	-- Grezz Ragefist
+						["classes"] = { 1 },	-- Warrior
+					})),
 --[[				
-					qdg(qg(3353, qh( 28457, {	-- A Dangerous Alliance
-						["groups"] = {
-						},
-						["classes"] = {1},
-					}))),
-					qdg(qg(3353, qh( 27365, {	-- A Fitting Weapon
-						["groups"] = {
-						},
-						["classes"] = {1},
-					}))),
 					qp129(qg(43239, qh( 26588))),	-- A Furious Catch
 					qp129(qg(43239, qh( 26572))),	-- A Golden Opportunity
 					qg(44978, qh( 27283, {	-- A Journey to Moonglade
@@ -978,46 +984,62 @@ COORDINATES			qg(44726, qh( 27283, {	-- A Journey to Moonglade
 						["classes"] = {11},
 					})),				
 					ql(qg(52382, qh( 29129))),	-- A Legendary Engagement
-					qdg(qg(3352, qh( 27395, {	-- A Marksman's Weapon
+--]]
+					qdg(qh( 27395, {	-- A Marksman's Weapon
 						["groups"] = {
+							i(65466),	-- Bow of the Great Hunter
 						},
-						["classes"] = {3},
-					}))),
-					qp755(qg(50482, qh( 25160))),	-- A Present for Lila
-					qg(44735, qh( 27435, {	-- A Seer's Staff
+						["qg"] = 3352,	-- Ormak Grimshot
+						["classes"] = { 3 },	-- Hunter
+					})),
+--					qp755(qg(50482, qh( 25160))),	-- A Present for Lila
+					qdg(q(27435, {	-- A Seer's Staff
 						["groups"] = {
+							i(65484),	-- Staff of the Earthmother
 						},
-						["races"] = {6,9},
+						["qg"] = 44735,	-- Seer Liwatha
+						["races"] = { 6, 9 },	-- Tauren, Goblin
+						["classes"] = { 5 },	-- Priest
 					})), 
-					qg(45347, qh( 27441, {	-- A Seer's Staff
+					qdg(q(27441, {	-- A Seer's Staff
+						["groups"] = {
+							i(65481),	-- Staff of Golden Worship
+						},
+						["qg"] = 45347,	-- Brother Silverhallow
+						["races"] = { 9 },	-- Goblin
+						["classes"] = { 5 },	-- Priest
+					})),
+--					qp129(qg(43239, qh( 26557))),	-- A Staggering Effort
+					qh(32309, {	-- A Tale of Six Masters
 						["groups"] = {
 						},
-						["races"] = {9},
-					})),
-					qp129(qg(43239, qh( 26557))),	-- A Staggering Effort
-					qg(88705, qh( 32309, {	-- A Tale of Six Masters
-						["groups"] = {
-						},
-						["classes"] = {9},
-					})),
+						["qg"] = 88705,	-- Kranosh
+						["classes"] = { 9 },	-- Warlock
+					}),
 --					qh( 43461),	-- A Time to Reflect (LEGACY? 2016 anniversary event)
-					qdg(qg(44725, qh( 27403, {	-- A True Sunwalker
+					qdg(q(27403, {	-- A True Sunwalker
 						["groups"] = {
+							i(65472),	-- Mace of the Sunwalker
+							i(65473),	-- Battlehammer of the Sunwalker
+							i(65474),	-- Greatsword of the Sunwalker
 						},
-						["classes"] = {2},
-					}))),
-					qg(3216, qh(25264)),	-- Ak'Zeloth
+						["qg"] = 44725,	-- Sunwalker Atohmo
+						["races"] = { 6 },	-- Tauren
+						["classes"] = { 2 },	-- Paladin
+					})),
+					qg( 3216, qh(25264)),	-- Ak'Zeloth
 					qg(54870, qh(31853)),	-- All Aboard!
-					qg(14720, qh( 9627, {	-- Allegiance to the Horde
+					qg(14720, q(  9627, {	-- Allegiance to the Horde
 						["groups"] = {
 						},
 						["races"] = {10},
 					})),
-					
+--[[					
 Legacy				qh( 1432),	-- Alliance Relations
 Legacy				qh( 1431),	-- Alliance Relations
 Legacy				q(1433),	-- Alliance Relations
-Legacy				qh( 1436),	-- Alliance Relations 					
+Legacy				qh( 1436),	-- Alliance Relations 	
+--]]				
 					qg(97296, qh( 40976, {	-- Audience with the Warchief
 						["groups"] = {
 						},
@@ -1029,13 +1051,13 @@ Legacy				qh( 1436),	-- Alliance Relations
 							i(7914),		-- Barbaric Iron Breastplate
 						}),
 					}))),
---[[					
-					qdg(qg(47233, qh( 27396, {	-- Blade of the Shattered Hand
+					qdg(qh(27396, {	-- Blade of the Shattered Hand
 						["groups"] = {
+							i(65487),	-- Blade of the Shattered Hand
 						},
-						["classes"] = {4},
-					}))),
---]]					
+						["qg"] = 47233,	-- Gordul
+						["classes"] = { 4 },	-- Rogue
+					})),
 					qg(54004, q(29401, {  	-- Blown Away
 						i(72045), -- Horde Balloon (Pet)
 					})),
@@ -1045,7 +1067,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qp129(qg(43239, qh(26543))),	-- Clammy Hands
 					qg(15116, qh( 8228)),	-- Could I get a Fishing Flier?
 					qp185(qg(42506, qh(26226))),	-- Crawfish Creole
-					qg(6929, qh( 6385, {	-- Doras the Wind Rider Master
+					qg(6929, q( 6385, {	-- Doras the Wind Rider Master
 						["groups"] = {
 						},
 						["races"] = {2,6,8},
@@ -1061,7 +1083,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qdg(qg(14720, qh(31034))),	-- Enemies Below (add'l QGs 39605 and 86832, probably changed)
 					qp185(qg(42506, qh(26235))),	-- Even Thieves Get Hungry
 					qp185(qg(42506, qh(26220))),	-- Everything Is Better with Bacon
-					qg(3310, qh(26804, {	-- Flight to Razor Hill					
+					qg(3310, q(26804, {	-- Flight to Razor Hill					
 						["groups"] = {
 						},
 						["races"] = {9},
@@ -1078,46 +1100,63 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qp202(qg(11017, q(29475))),	-- Goblin Engineering
 					qp356(qg(45540, qh( 6623))),	-- Horde Trauma
 --]]					
-					qp164(qg(7790, qh( 2754, {	-- Horns of Frenzy
-						i(7980, { 	-- Plans: Barbaric Iron Helm
-							i(7915),	-- Barbaric Iron Helm
-						}),
-					}))),
+					qh( 2754, {	-- Horns of Frenzy
+						["groups"] = {
+							i(7980, { 	-- Plans: Barbaric Iron Helm
+								i(7915),	-- Barbaric Iron Helm
+							}),
+						},
+						["qg"] = 7790,	-- Orokk Omosh
+						["requiredSkill"] = 164,	-- Blacksmithing
+					}),
 --[[					
 					desc(qh( 32674), "This quest is automatically offered to Horde players upon reaching level 60."),	-- I Believe You Can Fly (despite this quest, you can learn flying anywhere - not sure if it should be included?)
 					qg(95234, q(44663)),	-- In the Blink of an Eye
 --					qh(47251),	-- Interesting Times (LEGACY - 13th anniversary, quest was received via mail and ended in Org)
 --]]					
-					qp164(qg(7790, qh( 2755, {	-- Joys of Omosh
-						i(7982, {	-- Plans: Barbaric Iron Gloves
-							i(7917),	-- Barbaric Iron Gloves
-						}),
-					}))),
+					qh( 2755, {	-- Joys of Omosh
+						["groups"] = {
+							i(7982, {	-- Plans: Barbaric Iron Gloves
+								i(7917),	-- Barbaric Iron Gloves
+							}),
+						},
+						["qg"] = 7790,	-- Orokk Omosh
+						["requiredSkill"] = 164,	-- Blacksmithing
+					}),
 --[[
-					desc(qh(32673), "This quest is available to Goblins upon reaching level 20.", {	-- Learn To Ride
+					desc(q(32673), "This quest is available to Goblins upon reaching level 20.", {	-- Learn To Ride
 						["groups"] = {
 						},
 						["races"] = {9},
 					}),					
-					desc(qh(32669),	"This quest is available to Orcs upon reaching level 20.", {	-- Learn To Ride
+					desc(q(32669),	"This quest is available to Orcs upon reaching level 20.", {	-- Learn To Ride
 						["groups"] = {
 						},
 						["races"] = {2},
 					}),				
-					desc(qh(32667),	"This quest is available to Horde Pandaren upon reaching level 20.", {	-- Learn To Ride
+					desc(q(32667),	"This quest is available to Horde Pandaren upon reaching level 20.", {	-- Learn To Ride
 						["groups"] = {
 						},
 						["races"] = {26},
 					}),
-					qg(14720, qh(26293)),	-- Machines of War (QG in Orgrimmar, additional QGs Garrosh Hellscream 39605, Vol'jin 86832)
-					qdg(qg(47246, qh(27400, {	-- Mastering the Arcane
+--]]
+					qh(26293, {	-- Machines of War
 						["groups"] = {
 						},
-						["classes"] = {8},
-					}))),
+						["qg"] = 14720,	-- High Overlord Saurfang
+						["breadcrumbQuestID"] = { 28717 },	-- Warchief's Command: Twilight Highlands!
+					}),
+					qdg(qh(27400, {	-- Mastering the Arcane
+						["groups"] = {
+							i(65468),	-- Staff of the Arcane Path
+						},
+						["qg"] = 47246,	-- Ureda
+						["classes"] = { 8 },	-- Mage
+					})),
+--[[
 					qg(47571, qh(28296)),	-- Meetup with the Caravan
 					qg(54141, qh(29415)),	-- Missing Heirlooms
-					qg(3144, qh( 26803, {	-- Missing Reports
+					qg( 3144, q( 26803, {	-- Missing Reports
 						["groups"] = {
 						},
 						["races"] = {9},
@@ -1133,89 +1172,124 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qg(43062, qh(26417)),	-- Northern Stranglethorn: The Fallen Empire
 					qp755(qg(50482, qh(25161))),	-- Ogrezonians in the Mood
 --]]					
-					qp164(qg(7790, qh( 2752, {	-- On Iron Pauldrons
-						i(7978, { 	-- Plans: Barbaric Iron Shoulders
-							i(7913),	-- Barbaric Iron Shoulders
-						}),
-					}))),
+					qh( 2752, {	-- On Iron Pauldrons
+						["groups"] = {
+							i(7978, { 	-- Plans: Barbaric Iron Shoulders
+								i(7913),	-- Barbaric Iron Shoulders
+							}),
+						},
+						["qg"] = 7790,	-- Orokk Omosh
+						["requiredSkill"] = 164,	-- Blacksmithing
+					}),
 --[[
 					qp171(qg(3347, q(29067))),	-- Potion Master
 					qg(35068, qh(26642)),	-- Preserving the Barrens
 --					qg(95234, qh(44092)),	-- Protect the Home Front (LEGACY - pre-Legion)
 					qg(14720, qh(25275)),	-- Report to the Labor Captain (QG in Orgrimmar, additional QGs 39605 and 86832, previous Horde leaders)
-					qg(3310, qh( 6386, {	-- Return to Razor Hill
+					qg( 3310, q(  6386, {	-- Return to Razor Hill
 						["groups"] = {
 						},
 						["races"] = {2,8},
 					})),
 					qg(14720, qh( 26840)),	-- Return to the Highlands (add'l QGs 39605 and 86832, previous Horde leaders)
-					qg(14720, qh( 28909)),	-- Sauranok Will Point the Way (add'l QGs 39605 and 86832, previous Horde leaders)
+--]]
+					qh(28909, {	-- Sauranok Will Point the Way
+						["groups"] = {
+						},
+						["qg"] = 14720,	-- High Overlord Saurfang
+						["sourceQuestID"] = { 26294 },	-- Weapons of Mass Dysfunction
+					}),
+--[[
 					qg(44024, qh( 26798)),	-- Saurfang Will be Pleased
 					qg(88705, q(32317)),	-- Seeking the Soulstones
-					qdg(qg(72939, qh(28465, {	-- Slaves of the Firelord (add'l QG 3344)
+--]]
+					qdg(qh(28465, {	-- Slaves of the Firelord
+						["groups"] = {
+							i(65643),	-- Mask of the Speaker
+							i(65630),	-- Headcover of the Speaker
+						},
+						["qg"] = 72939,	-- Terga Earthbreaker (add'l QG 3344)
+						["classes"] = { 7 },	-- Shaman
+					})),
+					qdg(q( 27439, {	-- Staff of the Light
+						["groups"] = {
+							i(65478),	-- Staff of the Sunchaser
+						},
+						["qg"] = 45337,	-- Tyelis
+						["races"] = { 10 },	-- Blood Elf
+						["classes"] = { 5 },	-- Priest
+					})),	
+					qg(42506, q(26234, {	-- Stealing From Our Own
 						["groups"] = {
 						},
-						["classes"] = {7},
-					}))),
-					qdg(qg(45337, qh(27439, {	-- Staff of the Light
+						["races"] = { 8 },
+						["requiredSkill"] = 185,	-- Cooking
+					})),
+					qg(42506, q(26233, {	-- Stealing From Our Own
 						["groups"] = {
 						},
-						["classes"] = {5},
-						["races"] = {10},
-					}))),	
-					qp185(qg(42506, qh(26234, {	-- Stealing From Our Own
+						["races"] = { 2, 5, 6, 10, 9, 26 },
+						["requiredSkill"] = 185,	-- Cooking
+					})),
+					qdg(qh(28459, {	-- Stones of Binding
 						["groups"] = {
+							i(65627),	-- Horns of the Left Hand Path
 						},
-						["races"] = {8},
-					}))),
-					qp185(qg(42506, qh(26233, {	-- Stealing From Our Own
+						["qg"] = 88705,	-- Kranosh
+						["classes"] = { 9 },	-- Warlock
+					})),
+					qdg(qh(27397, {	-- Terga's Task
 						["groups"] = {
+							i(65490),	-- Battleaxe of the Speaker
+							i(65491),	-- Spell Axe of the Speaker
 						},
-						["races"] = {2,5,6,10,9,26},
-					}))),
-					qdg(qg(88705, qh(28459, {	-- Stones of Binding
+						["qg"] = 3344,	-- Kardris Dreamseeker
+						["classes"] = { 7 },	-- Shaman
+					})),
+					qdg(q( 27434, {	-- The Adept's Path
 						["groups"] = {
+							i(65469),	-- Morningstar of the Order
+							i(65470),	-- Battlemace of the Order
+							i(65471),	-- Greatmace of the Order
 						},
-						["classes"] = {9},
-					}))),
-					qdg(qg(3344, qh(27397, {	-- Terga's Task
-						["groups"] = {
-						},
-						["classes"] = {7},
-					}))),
-					qdg(qg(23128, qh(27434, {	-- The Adept's Path
-						["groups"] = {
-						},
-						["classes"] = {2},
-						["races"] = {10},
-					}))),
+						["qg"] = 23128,	-- Master Pyreanor
+						["races"] = { 10 },	-- Blood Elf
+						["classes"] = { 2 },
+					})),
 					qg(45244, qh(29440)),	-- The Call of the World-Shaman
-					qdg(qg(45339, qh(27437, {	-- The Dark Cleric's Bidding
+					qdg(q(27437, {	-- The Dark Cleric's Bidding
 						["groups"] = {
+							i(65479),	-- Staff of the Forsaken Faith
 						},
-						["classes"] = {5},
-					}))),
-					qdg(qg(47233, qh(28463, {	-- The Dark Iron Army
+						["qg"] = 45339,	-- Dark Cleric Cecille
+						["races"] = { 5 },	-- Undead
+						["classes"] = { 5 },	-- Priest
+					})),
+					qdg(qh(28463, {	-- The Dark Iron Army
 						["groups"] = {
+							i(65629),	-- Facemask of the Shattered Hand
 						},
-						["classes"] = {4},
-					}))), 
+						["qg"] = 47233,	-- Gordul
+						["classes"] = { 4 },	-- Rogue
+					})), 
 					qg(55382, qh( 7926)),	-- The Darkmoon Faire (HOLIDAY/WORLD EVENT - DARKMOON FAIRE; add'l QG 55382)
 					qdg(qg(52382, qh(30094))),	-- The End Time
 					qg(45244, qh(28805)),	-- The Eye of the Storm
-					qdg(qg(3352, qh(28461, {	-- The Golem Lord's Creations
+					qdg(qh(28461, {	-- The Golem Lord's Creations
 						["groups"] = {
+							i(65628),	-- Helm of the Great Hunter
 						},
-						["classes"] = {3},
-					}))),
+						["qg"] = 3352,	-- Ormak Grimshot
+						["classes"] = { 3 },	-- Hunter
+					})),
 --					qh(43472),	-- The Historians (LEGACY - 2016 anniversary)
-					qg(39605, qh(31013, {	-- The Horde Way
+					qg(39605, q(31013, {	-- The Horde Way
 						["groups"] = {
 						},
-						["races"] = {26},
+						["races"] = { 26 },	-- Pandaren
 					})),
 					qg(14392, qh( 7493)),	-- The Journey Has Just Begun
-					qp755(qg(50482, qh(25159))),	-- The Latest Fashion!
+--					qp755(qg(50482, qh(25159))),	-- The Latest Fashion!
 		--]]			
 					qg(14720, qh( 7784,	{	-- The Lord of Blackrock (QG listed on wowhead as 4949 but I'm assuming it's Saurfang now - would need someone w/ a Horde character to turn in Nef's head)
 						i(19366),	-- Master Dragonslayer's Orb
@@ -1223,22 +1297,26 @@ Legacy				qh( 1436),	-- Alliance Relations
 		--[[			
 					qg(45244, q(27203)),	-- The Maelstrom
 --					qh(47254),	-- The Originals (LEGACY - 13th anniversary)
-					qdg(qg(47246, qh(28458, {	-- The Pyromancer's Grimoire
-						["groups"] = {
-						},
-						["classes"] = {8},
-					}))),
-					qdg(qg(45137, qh(27436, {	-- The Shadow-Walker's Task
-						["groups"] = {
-						},
-						["classes"] = {5},
-						["races"] = {8},
-					}))),
---					qh(40786),	-- The Smoldering Ember (QG item received from final boss in TW dungeons)
 --]]
+					qdg(qh(28458, {	-- The Pyromancer's Grimoire
+						["groups"] = {
+							i(65626),	-- Hood of the Arcane Path
+						},
+						["qg"] = 47246,	-- Ureda
+						["classes"] = { 8 },	-- Mage
+					})),
+					qdg(q( 27436, {	-- The Shadow-Walker's Task
+						["groups"] = {
+							i(65485),	-- Shadow-Walker Staff
+						},
+						["qg"] = 45137,	-- Shadow-Walker Zuru
+						["races"] = { 8 },	-- Troll
+						["classes"] = { 5 },	-- Priest
+					})),
+--					qh(40786),	-- The Smoldering Ember (QG item received from final boss in TW dungeons)
 					qg(53371, qh(29309, {  	-- The Stuff of Legends
 						["groups"] = {
-							un(15, i(71086)),	-- Dragonwrath, Tarecgosa's Rest
+							un(15, i(71086)),	-- Dragonwrath, Tarecgosa's Rest (LEGENDARY!)
 						},
 						["classes"] = {5,7,8,9,10,11},
 					})),
@@ -1246,63 +1324,81 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qg(52234, qh(29220)),	-- To Bambala
 					qp185(qg(3399, qh( 6611))),	-- To Gadgetzan You Go!
 					qg(45244, qh(28816)),	-- To the Depths
-					qdg(qg(88705, qh(27402, {	-- Token of Power
-						["groups"] = {
-						},
-						["classes"] = {9},
-					}))),
 --]]					
-					qg(14720, q(26830, {  -- Traitor's Bait (add'l QGs 39605 and 86832, previous Horde leaders)
+					qdg(qh(27402, {	-- Token of Power
+						["groups"] = {
+							i(65497),	-- Staff of the Left Hand Path
+						},
+						["qg"] = 88705,	-- Kranosh
+						["classes"] = { 9 },	-- Warlock
+					})),
+					qg(14720, qh(26830, {  -- Traitor's Bait (add'l QGs 39605 and 86832, previous Horde leaders)
 						i(63916),	-- Belt of Mystical Betrayal
 						i(63914),	-- Mindsliced Chestguard
 						i(63913),	-- Twilight-Heart Shoulderplates
 						i(63912),	-- Twilight Mirrorshield
 						i(63915),	-- Vision-Tainted Treads
 					})),					
-					qp164(qg(7790, qh(2753, {	-- Trampled Under Foot
-						i(7981, {	-- Plans: Barbaric Iron Boots
-							i(7916),	-- Barbaric Iron Boots
-						}),
-					}))),
---[[					
-					qp171(qg(3347, q(29482))),	-- Transmutation Master
-					qdg(qg(45337, qh(28475, {	-- Twilight Scheming
+					qh( 2753, {	-- Trampled Under Foot
 						["groups"] = {
+							i(7981, {	-- Plans: Barbaric Iron Boots
+								i(7916),	-- Barbaric Iron Boots
+							}),
 						},
-						["classes"] = {5},
-						["races"] = {10},
-					}))),
-					qdg(qg(45347, qh(28478, {	-- Twilight Scheming
+						["qg"] = 7790,	-- Orokk Omosh
+						["requiredSkill"] = 164,	-- Blacksmithing
+					}),
+--					qp171(qg(3347, q(29482))),	-- Transmutation Master
+					qdg(q(28475, {	-- Twilight Scheming
 						["groups"] = {
+							i(65634),	-- Crown of the Sunchaser
 						},
-						["classes"] = {5},
-						["races"] = {9},
-					}))),
-					qdg(qg(45339, qh(28474, {	-- Twilight Scheming
+						["qg"] = 45337,	-- Tyelis
+						["races"] = { 10 },	-- Blood Elf
+						["classes"] = { 5 },	-- Priest
+					})),
+					qdg(q(28478, {	-- Twilight Scheming
 						["groups"] = {
+							i(65637),	-- Crown of Golden Worship
 						},
-						["classes"] = {5},
-						["races"] = {5},
-					}))),
-					qdg(qg(44735, qh(28476, {	-- Twilight Scheming
+						["qg"] = 45347,	-- Brother Silverhallow
+						["races"] = { 9 },	-- Goblin
+						["classes"] = { 5 },	-- Priest
+					})),
+					qdg(q(28474, {	-- Twilight Scheming
 						["groups"] = {
+							i(65633),	-- Crown of Forsaken Faith
 						},
-						["classes"] = {5},
-						["races"] = {6},
-					}))),
-					qdg(qg(45137, qh(28477, {	-- Twilight Scheming
+						["qg"] = 45339,	-- Dark Cleric Cecille
+						["races"] = { 5 },	-- Undead
+						["classes"] = { 5 },	-- Priest
+					})),
+					qdg(q(28476, {	-- Twilight Scheming
 						["groups"] = {
+							i(65635),	-- Crown of the Earthmother
 						},
-						["classes"] = {5},
-						["races"] = {8},
-					}))),
---]]					
-					qg(42637, q(26311,  {  -- Unfamiliar Waters
-						i(63922),	-- Awestruck Bracers
-						i(63924),	-- Blade-Dodging Girdle
-						i(63923),	-- Hauberk of Shock
-					})), 
---[[					
+						["qg"] = 44735,	-- Seer Liwatha
+						["races"] = { 6 },	-- Tauren
+						["classes"] = { 5 },	-- Priest
+					})),
+					qdg(q(28477, {	-- Twilight Scheming
+						["groups"] = {
+							i(65636),	-- Crown of the Shadow-Walker
+						},
+						["qg"] = 45137,	-- Shadow-Walker Zuru
+						["races"] = { 8 },	-- Troll
+						["classes"] = { 5 },	-- Priest
+					})),
+					qh(26311,  {  -- Unfamiliar Waters
+						["groups"] = {
+							i(63922),	-- Awestruck Bracers
+							i(63924),	-- Blade-Dodging Girdle
+							i(63923),	-- Hauberk of Shock
+						},
+						["qg"] = 42637,	-- Sauranok the Mystic
+						["sourceQuestID"] = { 28909 },	-- Sauranok Will Paint the Way
+					}), 
+--[[
 					o(206109, { 	-- Warchief's Command Board (Org)
 						qh(28790),	-- A Personal Summons
 						qh(29390),	-- Guardians of Hyjal: Call of the Ancients
@@ -1335,8 +1431,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 						qh(28526),	-- Warchief's Command: Un'Goro Crater!
 						qh(27718),	-- Warchief's Command: Vashj'ir!
 						qh(28545),	-- Warchief's Command: Winterspring!
-					}), 		
-COORDINATES			o(206116, { 	-- Warchief's Command Board (Org)
+					}),
+--]]
+--[[ COORDINATES			
+					o(206116, { 	-- Warchief's Command Board (Org)
 						qh(28790),	-- A Personal Summons
 						qh(29390),	-- Guardians of Hyjal: Call of the Ancients
 						qh(29388),	-- Guardians of Hyjal: Firelands Invasion!
@@ -1368,22 +1466,39 @@ COORDINATES			o(206116, { 	-- Warchief's Command Board (Org)
 						qh( 28526),	-- Warchief's Command: Un'Goro Crater!
 						qh( 27718),	-- Warchief's Command: Vashj'ir!
 						qh( 28545),	-- Warchief's Command: Winterspring!
-					}),					
-					qdg(qg(44725, qh(28466, {	-- Weapons of Darkness
+					}),
+--]]
+					qdg(q(28466, {	-- Weapons of Darkness
+						["groups"] = {
+							i(65631),	-- Helm of the Sunwalker
+							i(65644),	-- Faceguard of the Sunwalker
+							i(65647),	-- Headguard of the Sunwalker
+						},
+						["qg"] = 44725,	-- Sunwalker Atohmo
+						["races"] = { 6 },	-- Tauren
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuestID"] = { 28302 },	-- Meet with Sunwalker Atohmo
+					})),
+					qdg(q(28473, {	-- Weapons of Darkness
+						["groups"] = {
+							i(65632),	-- Helm of the Order
+							i(65645),	-- Faceguard of the Order
+							i(65648),	-- Headguard of the Order
+							i(25549),	-- Blood Knight Tabard
+						},
+						["qg"] = 23128,	-- Master Pyreanor
+						["races"] = { 10 },	-- Blood Elf
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuestID"] = { 28303 },	-- Meet with Master Pyreanor (unknown if breadcrumb)
+					})),
+					qh(26324, {	-- Where Is My Warfleet?
 						["groups"] = {
 						},
-						["classes"] = {2},
-						["races"] = {6},
-					}))),
-					qdg(qg(23128, qh(28473, {	-- Weapons of Darkness
-						["groups"] = {
-						},
-						["classes"] = {2},
-						["races"] = {10},
-					}))),
-					qg(14720, qh(26324)),	-- Where Is My Warfleet? (QG High Overlord Saurfang in Orgrimmar, additional QGs 39605 Garrosh Hellscream and 86832 Vol'jin)
-					qg(3362, qh( 7660)),	-- Wolf Swapping - Arctic Wolf
-					qg(3362, qh( 7661)),	-- Wolf Swapping - Red Wolf
+						["qg"] = 14720,	-- High Overlord Saurfang
+						["sourceQuestID"] = { 26311 },	-- Unfamiliar Waters
+					}),
+--					qg( 3362, qh( 7660)),	-- Wolf Swapping - Arctic Wolf
+--					qg( 3362, qh( 7661)),	-- Wolf Swapping - Red Wolf
 					qp129(qg(3332, qh( 6608))),	-- You Too Good.	
 --]]					
 					nlq({	-- Legacy Quests
