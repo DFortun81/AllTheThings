@@ -6507,6 +6507,7 @@ function app:GetDataCache()
 		end
 		
 		--[[
+		-- Uncomment for harvesting
 		-- Never Implemented
 		if app.NeverImplemented then
 			db = {};
