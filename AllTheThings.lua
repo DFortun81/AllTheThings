@@ -3421,7 +3421,7 @@ end
 function app.FilterItemClass(item)
 	return app.ItemBindFilter(item)
 		or (app.FilterItemClass_RequireItemFilter(item.f)
-			and app.RequireBindingFilter(item.b)
+			and app.RequireBindingFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)
 			and app.UnobtainableItemFilter(item.u)
@@ -3476,8 +3476,8 @@ function app.FilterItemClass_SeasonalItem(u)
       return true
    end
 end
-function app.FilterItemClass_RequireBinding(b)
-	if b and b == 2 then
+function app.FilterItemClass_RequireBinding(item)
+	if item.b and item.b == 2 then
 		return false;
 	else
 		return true;
@@ -5332,7 +5332,7 @@ local function CreateSettingsMenu()
 		
 			
 		self.FilterItemsByClass = CreateFrame("CheckButton", name .. "-FilterItemsByClass", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.FilterItemsByClass, self, "Filter Items By Class", 300, x-20, self, GetDataMember("FilterItemsByClass"));
+		CreateCheckBox(self.FilterItemsByClass, self, "Filter Items By Class", 300, x-20, GetDataMember("FilterItemsByClass"));
 		self.FilterItemsByClass:SetScript("OnClick", function(self)
 			SetDataMember("FilterItemsByClass", self:GetChecked());
 			if self:GetChecked() then
@@ -5344,10 +5344,8 @@ local function CreateSettingsMenu()
 		end);
 
 		
-		
-		
 		self.RequireBindingFilter = CreateFrame("CheckButton", name .. "-RequireBindingFilter", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.RequireBindingFilter, self, "Hide BoE Items", 300, x-40, self, GetDataMember("RequireBindingFilter"));
+		CreateCheckBox(self.RequireBindingFilter, self, "Hide BoE Items", 300, x-40, GetDataMember("RequireBindingFilter"));
 		self.RequireBindingFilter:SetScript("OnClick", function(self)
 			SetDataMember("RequireBindingFilter", self:GetChecked());
 			if self:GetChecked() then
