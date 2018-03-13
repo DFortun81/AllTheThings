@@ -25,6 +25,5 @@ _.WorldEvents =
 			}),
 		},
 		["achievementID"] = 306, -- Master Angler of Azeroth
-		["u"] = 30,
 	}),
 };
