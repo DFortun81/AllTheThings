@@ -2126,10 +2126,10 @@ local function AttachTooltip(self)
 					local name, target = self:GetUnit();
 					if target then
 						-- Yes it is. Awesome.
-						print(name, target);
+						-- print(name, target);
 						target = UnitGUID(target);
 						if target then
-							print("GUID", name, target);
+							-- print("GUID", name, target);
 							local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",target);
 							--print(name .. " is a " .. type .. " " .. target);
 							if type == "Creature" or type == "Vehicle" then
