@@ -2036,14 +2036,15 @@ _.Zones =
 					q(36845),	-- Your Second Tailoring Work Order	
 --]]					
 					qa(38356, { -- Bringing the Bass
-						i(122613, { 	-- Stash of Dusty Music Rolls
-							i(122209), 		-- Music Roll: Curse of the Worgen
-							i(122208),		-- Music Roll: Exodar
-							i(122206), 		-- Music Roll: Gnomeregan
-							i(122203), 		-- Music Roll: Ironforge
-							i(122205),		-- Music Roll: Night Song
-							i(122201),		-- Music Roll: Stormwind
-							i(122219), 		-- Music Roll: Way of the Monk
+						i(122613, { -- Stash of Dusty Music Rolls
+							i(122209), -- Music Roll: Curse of the Worgen
+							i(122208), -- Music Roll: Exodar
+							i(122206), -- Music Roll: Gnomeregan
+							i(122203), -- Music Roll: Ironforge
+							i(122205), -- Music Roll: Night Song
+							i(122201), -- Music Roll: Stormwind
+							i(122219), -- Music Roll: Way of the Monk
+							i(122207), -- Tinkertown
 						}),
 					}),									
 					qa(34583, { -- For the Alliance

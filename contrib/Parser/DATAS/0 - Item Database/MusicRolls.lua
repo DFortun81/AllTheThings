@@ -5,19 +5,22 @@ local i = function(itemID, questID)
 end
 
 -- Stash of Dusty Music Rolls
-i(122210, 38070); 		-- Music Roll: Orgrimmar
-i(122218, 38086);		-- Music Roll: Rescue the Warchief
-i(122217, 38084);		-- Music Roll: Silvermoon
-i(122216, 38082);		-- Music Roll: The Zandalari
-i(122213, 38074);		-- Music Roll: Thunder Bluff
-i(122212, 38078);		-- Music Roll: Undercity
+i(122201, 38069);		-- Music Roll: Stormwind (Unlocks Orgrimmar)
+i(122210, 38070); 		-- Music Roll: Orgrimmar (Unlocks Stormwind)
+i(122203, 38073);		-- Music Roll: Ironforge (Unlocks Thunder Bluff)
+i(122213, 38074);		-- Music Roll: Thunder Bluff (Unlocks Ironforge)
+i(122205, 38077);		-- Music Roll: Night Song (Unlocks Undercity)
+i(122212, 38078);		-- Music Roll: Undercity (Unlocks Night Song)
+i(122206, 38079);		-- Music Roll: Gnomeregan (Unlocks Zul'Gurub Voodoo)
+i(122215, 38080);		-- Music Roll: Zul'Gurub Voodoo (Unlocks Gnomeregan)
+i(122207, 38081);		-- Music Roll: Tinkertown (Unlocks The Zandalari)
+i(122216, 38082);		-- Music Roll: The Zandalari (Unlocks Tinkertown)
+i(122208, 38083);		-- Music Roll: Exodar (Unlocks Silvermoon)
+i(122217, 38084);		-- Music Roll: Silvermoon (Unlocks Exodar)
+--i(122217, 38348);		-- Music Roll: Silvermoon (Unlocks Exodar)   [Note: Not sure why it unlocks to separate ID's]
+i(122209, 38085);		-- Music Roll: Curse of the Worgen (Unlocks Rescue the Warchief)
+i(122218, 38086);		-- Music Roll: Rescue the Warchief (Unlocks Curse of the Worgen)
 i(122219, 38101);		-- Music Roll: Way of the Monk
-i(122209, 38085);		-- Music Roll: Curse of the Worgen
-i(122208, 38083);		-- Music Roll: Exodar
-i(122206, 38079);		-- Music Roll: Gnomeregan
-i(122203, 38073);		-- Music Roll: Ironforge
-i(122205, 38077);		-- Music Roll: Night Song
-i(122201, 38069);		-- Music Roll: Stormwind
 
 -- Acquired from HandyNotes_AzerothsTopToons
 i(122195, 38063);		-- [23242635] = { 38063, "Legends of Azeroth", "Inside the Blackwing Descent raid.\n\nDefeat Nefarian.\nThis is NOT a guaranteed drop." },
