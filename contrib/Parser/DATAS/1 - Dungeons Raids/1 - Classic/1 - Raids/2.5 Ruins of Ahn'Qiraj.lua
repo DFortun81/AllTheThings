@@ -11,95 +11,95 @@ _.Instances =
 					e(1537, { -- Kurinnaxx
 						["groups"] = {
 							i(20885, { -- Qiraji Martial Drape
-								q(8693, { 
-									i(21406),
+								q(8693, { 	-- Cloak of Veiled Shadows
+									i(21406),	-- Cloak of Veiled Shadows
 								}),
-								q(8557, {
-									i(21394),
+								q(8557, {	-- Drape of Unyielding Strength
+									i(21394),	-- Drape of Unyielding Strength
 								}),
-								q(8691, {
-									i(21415),
+								q(8691, {	-- Drape of Vaulted Secrets
+									i(21415),	-- Drape of Vaulted Secrets
 								}),
-								q(8689, {
-									i(21412),
+								q(8689, {	-- Shroud of Infinite Wisdom
+									i(21412),	-- Shroud of Infinite Wisdom
 								}),
 							}),	
 							i(20889, { -- Qiraji Regal Drape
-								q(8695, {
-									i(21397),
+								q(8695, {	-- Cape of Eternal Justice
+									i(21397),	-- Cape of Eternal Justice
 								}),
-								q(8690, {
-									i(21400),
+								q(8690, {	-- Cloak of the Gathering Storm
+									i(21400),	-- Cloak of the Gathering Storm
 								}),
-								q(8696, {
-									i(21403),
+								q(8696, {	-- Cloak of the Unseen Path
+									i(21403),	-- Cloak of the Unseen Path
 								}),
-								q(8692, {
-									i(21409),
+								q(8692, {	-- Cloak of Unending Life
+									i(21409),	-- Cloak of Unending Life
 								}),
-								q(8694, {
-									i(21418),
+								q(8694, {	-- Shroud of Unspoken Names
+									i(21418),	-- Shroud of Unspoken Names
 								}),
 							}),
-							i(21498),
-							i(21499),
-							i(21502),
-							i(21501),
-							i(21503),
-							i(21500),
+							i(21498),	-- Qiraji Sacrificial Dagger
+							i(21499),	-- Vestments of the Shifting Sands
+							i(21502),	-- Sand Reaver Wristguards
+							i(21501),	-- Toughened Silithis Hide Gloves
+							i(21503),	-- Belt of the Sand Reaver
+							i(21500),	-- Belt of the Inquisition
 						},
 						["creatureID"] = 15348,
 					}),
 					e(1538, { -- General Rajaxx
 						["groups"] = {
 							i(20885, { -- Qiraji Martial Drape
-								q(8693, { 
-									i(21406),
+								q(8693, { 	-- Cloak of Veiled Shadows
+									i(21406),	-- Cloak of Veiled Shadows
 								}),
-								q(8557, {
-									i(21394),
+								q(8557, {	-- Drape of Unyielding Strength
+									i(21394),	-- Drape of Unyielding Strength
 								}),
-								q(8691, {
-									i(21415),
+								q(8691, {	-- Drape of Vaulted Secrets
+									i(21415),	-- Drape of Vaulted Secrets
 								}),
-								q(8689, {
-									i(21412),
+								q(8689, {	-- Shroud of Infinite Wisdom
+									i(21412),	-- Shroud of Infinite Wisdom
 								}),
 							}),	
 							i(20889, { -- Qiraji Regal Drape
-								q(8695, {
-									i(21397),
+								q(8695, {	-- Cape of Eternal Justice
+									i(21397),	-- Cape of Eternal Justice
 								}),
-								q(8690, {
-									i(21400),
+								q(8690, {	-- Cloak of the Gathering Storm
+									i(21400),	-- Cloak of the Gathering Storm
 								}),
-								q(8696, {
-									i(21403),
+								q(8696, {	-- Cloak of the Unseen Path
+									i(21403),	-- Cloak of the Unseen Path
 								}),
-								q(8692, {
-									i(21409),
+								q(8692, {	-- Cloak of Unending Life
+									i(21409),	-- Cloak of Unending Life
 								}),
-								q(8694, {
-									i(21418),
+								q(8694, {	-- Shroud of Unspoken Names
+									i(21418),	-- Shroud of Unspoken Names
 								}),
 							}),
-							i(21492),
-							i(21496),
-							i(21494),
-							i(21495),
-							i(21497),
-							i(21493),
-							n(15385, {
-								i(21806),
-								i(21810)
+							i(21492),	-- Manslayer of the Qiraji
+							i(21496),	-- Bracers of Qiraji Command
+							i(21494),	-- Southwind's Grasp
+							i(21495),	-- Legplates of Qiraji Command
+							i(21497),	-- Boots of the Qiraji General
+							i(21493),	-- Boots of the Vanguard
+							n(15385, {	-- Colonel Zarran
+								i(21806),	-- Gavel of Qiraji Athority
+								i(21810),	-- Treads of the Wandering Nomad
 							}),
 							n(15471, {		-- Lieutenant General Andorov
 								["groups"] = {
-									i(22221, {
-										i(22191),
+									i(22221, {	-- Plans: Obsidian Mail Tunic
+										i(22191),	-- Obsidian Mail Tunic
 									}),
-									i(22219, {
-										i(22198),
+									i(22219, {	-- Plans: Jagged Obsidian Shield
+										i(22198),	-- Jagged Obsidian Shield
 									}),
 								},
 								["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed."
@@ -114,173 +114,173 @@ _.Instances =
 					e(1540, { -- Buru the Gorger
 						["groups"] = {
 							i(20885, { -- Qiraji Martial Drape
-								q(8693, { 
-									i(21406),
+								q(8693, { 	-- Cloak of Veiled Shadows
+									i(21406),	-- Cloak of Veiled Shadows
 								}),
-								q(8557, {
-									i(21394),
+								q(8557, {	-- Drape of Unyielding Strength
+									i(21394),	-- Drape of Unyielding Strength
 								}),
-								q(8691, {
-									i(21415),
+								q(8691, {	-- Drape of Vaulted Secrets
+									i(21415),	-- Drape of Vaulted Secrets
 								}),
-								q(8689, {
-									i(21412),
+								q(8689, {	-- Shroud of Infinite Wisdom
+									i(21412),	-- Shroud of Infinite Wisdom
 								}),
 							}),	
 							i(20889, { -- Qiraji Regal Drape
-								q(8695, {
-									i(21397),
+								q(8695, {	-- Cape of Eternal Justice
+									i(21397),	-- Cape of Eternal Justice
 								}),
-								q(8690, {
-									i(21400),
+								q(8690, {	-- Cloak of the Gathering Storm
+									i(21400),	-- Cloak of the Gathering Storm
 								}),
-								q(8696, {
-									i(21403),
+								q(8696, {	-- Cloak of the Unseen Path
+									i(21403),	-- Cloak of the Unseen Path
 								}),
-								q(8692, {
-									i(21409),
+								q(8692, {	-- Cloak of Unending Life
+									i(21409),	-- Cloak of Unending Life
 								}),
-								q(8694, {
-									i(21418),
+								q(8694, {	-- Shroud of Unspoken Names
+									i(21418),	-- Shroud of Unspoken Names
 								}),
 							}),
 							i(20890, { -- Qiraji Ornate Hilt 
-								q(8707, {
-									i(21413),
+								q(8707, {	-- Blade of Vaulted Secrets
+									i(21413),	-- Blade of Vaulted Secrets
 								}),
-								q(8705, {
-									i(21410),
+								q(8705, {	-- Gavel of Infinite Wisdom
+									i(21410),	-- Gavel of Infinite Wisdom
 								}),
-								q(8710, {
-									i(21416),
+								q(8710, {	-- Kris of Unspoken Names
+									i(21416),	-- Kris of Unspoken Names
 								}),
-								q(8708, {
-									i(21407),
+								q(8708, {	-- Mace of Unending Life
+									i(21407),	-- Mace of Unending Life
 								}),
 							}),
 							i(20886, { -- Qiraji Spiked Hilt
-								q(8711, {
-									i(21395),
+								q(8711, {	-- Blade of Eternal Justice
+									i(21395),	-- Blade of Eternal Justice
 								}),
-								q(8709, {
-									i(21404),
+								q(8709, {	-- Dagger of Veiled Shadows
+									i(21404),	-- Dagger of Veiled Shadows
 								}),
-								q(8706, {
-									i(21398),
+								q(8706, {	-- Hammer of the Gathering Storm
+									i(21398),	-- Hammer of the Gathering Storm
 								}),
-								q(8712, {
-									i(21401),
+								q(8712, {	-- Scythe of the Unseen Path
+									i(21401),	-- Scythe of the Unseen Path
 								}),
-								q(8558, {
-									i(21392),
+								q(8558, {	-- Sickle of Unyielding Strength
+									i(21392),	-- Sickle of Unyielding Strength
 								}),
 							}),	
-							i(21485),
-							i(21491),
-							i(21487),
-							i(21486),
-							i(21490),
-							i(21489),
+							i(21485),	-- Buru's Skull Fragment
+							i(21491),	-- Scaled Bracers of the Gorger
+							i(21487),	-- Slimy Scaled Gauntlets
+							i(21486),	-- Gloves of the Swarm
+							i(21490),	-- Slime Kickers
+							i(21489),	-- Quicksand Waders
 						},
 						["creatureID"] = 15370,
 					}),
 					n(15333, {	-- Silicate Feeder
 						["groups"] = {
-							dr(	0.3	, i(	14304	)), --	Bonecaster's Belt
-							dr(	0.3	, i(	15295	)), --	Quillfire Bow
-							dr(	0.2	, i(	14311	)), --	Celestial Bindings
-							dr(	0.2	, i(	15218	)), --	Crystal Sword
-							dr(	0.19	, i(	14295	)), --	Arachnidian Legguards
-							dr(	0.19	, i(	14802	)), --	Bloodlust Gauntlets
-							dr(	0.19	, i(	15237	)), --	Corpse Harvester
-							dr(	0.19	, i(	14671	)), --	Pridelord Boots
-							dr(	0.17	, i(	14321	)), --	Resplendent Cloak
-							dr(	0.16	, i(	15229	)), --	Blesswind Hammer
-							dr(	0.16	, i(	14674	)), --	Pridelord Girdle
-							dr(	0.15	, i(	14299	)), --	Bonecaster's Boots
-							dr(	0.14	, i(	15254	)), --	Dark Espadon
-							dr(	0.14	, i(	14855	)), --	Vanguard Gauntlets
-							dr(	0.13	, i(	21800	)), --	Silithid Husked Launcher
-							dr(	0.13	, i(	14314	)), --	Celestial Handwraps
-							dr(	0.13	, i(	15391	)), --	Jadefire Cap
-							dr(	0.13	, i(	15181	)), --	Praetorian Boots
-							dr(	0.12	, i(	15663	)), --	Impenetrable Belt
-							dr(	0.12	, i(	15217	)), --	Widow Blade
-							dr(	0.11	, i(	21803	)), --	Helm of the Holy Avenger
-							dr(	0.11	, i(	14813	)), --	Warstrike Cape
+							dr(0.3, i(14304)),	-- Bonecaster's Belt
+							dr(0.3, i(15295)),	-- Quillfire Bow
+							dr(0.2, i(14311)),	-- Celestial Bindings
+							dr(0.2, i(15218)),	-- Crystal Sword
+							dr(0.19, i(14295)),	-- Arachnidian Legguards
+							dr(0.19, i(14802)),	-- Bloodlust Gauntlets
+							dr(0.19, i(15237)),	-- Corpse Harvester
+							dr(0.19, i(14671)),	-- Pridelord Boots
+							dr(0.17, i(14321)),	-- Resplendent Cloak
+							dr(0.16, i(15229)),	-- Blesswind Hammer
+							dr(0.16, i(14674)),	-- Pridelord Girdle
+							dr(0.15, i(14299)),	-- Bonecaster's Boots
+							dr(0.14, i(15254)),	-- Dark Espadon
+							dr(0.14, i(14855)),	-- Vanguard Gauntlets
+							dr(0.13, i(21800)),	-- Silithid Husked Launcher
+							dr(0.13, i(14314)),	-- Celestial Handwraps
+							dr(0.13, i(15391)),	-- Jadefire Cap
+							dr(0.13, i(15181)),	-- Praetorian Boots
+							dr(0.12, i(15663)),	-- Impenetrable Belt
+							dr(0.12, i(15217)),	-- Widow Blade
+							dr(0.11, i(21803)),	-- Helm of the Holy Avenger
+							dr(0.11, i(14813)),	-- Warstrike Cape
 						},
 						["description"] = "These bugs are like loot pinatas. Their loot tables for random greens is insanely long and despite the individual % for each piece being low, they have an overall common drop rate for rare world drops. If you're going for 100%, we advise that you kill these guys whenever you see them."
 					}),
 					e(1541, { -- Ayamiss the Hunter
 						["groups"] = {
 							i(20885, { -- Qiraji Martial Drape
-								q(8693, { 
-									i(21406),
+								q(8693, { 	-- Cloak of Veiled Shadows
+									i(21406),	-- Cloak of Veiled Shadows
 								}),
-								q(8557, {
-									i(21394),
+								q(8557, {	-- Drape of Unyielding Strength
+									i(21394),	-- Drape of Unyielding Strength
 								}),
-								q(8691, {
-									i(21415),
+								q(8691, {	-- Drape of Vaulted Secrets
+									i(21415),	-- Drape of Vaulted Secrets
 								}),
-								q(8689, {
-									i(21412),
+								q(8689, {	-- Shroud of Infinite Wisdom
+									i(21412),	-- Shroud of Infinite Wisdom
 								}),
 							}),	
 							i(20889, { -- Qiraji Regal Drape
-								q(8695, {
-									i(21397),
+								q(8695, {	-- Cape of Eternal Justice
+									i(21397),	-- Cape of Eternal Justice
 								}),
-								q(8690, {
-									i(21400),
+								q(8690, {	-- Cloak of the Gathering Storm
+									i(21400),	-- Cloak of the Gathering Storm
 								}),
-								q(8696, {
-									i(21403),
+								q(8696, {	-- Cloak of the Unseen Path
+									i(21403),	-- Cloak of the Unseen Path
 								}),
-								q(8692, {
-									i(21409),
+								q(8692, {	-- Cloak of Unending Life
+									i(21409),	-- Cloak of Unending Life
 								}),
-								q(8694, {
-									i(21418),
+								q(8694, {	-- Shroud of Unspoken Names
+									i(21418),	-- Shroud of Unspoken Names
 								}),
 							}),
 							i(20890, { -- Qiraji Ornate Hilt 
-								q(8707, {
-									i(21413),
+								q(8707, {	-- Blade of Vaulted Secrets
+									i(21413),	-- Blade of Vaulted Secrets
 								}),
-								q(8705, {
-									i(21410),
+								q(8705, {	-- Gavel of Infinite Wisdom
+									i(21410),	-- Gavel of Infinite Wisdom
 								}),
-								q(8710, {
-									i(21416),
+								q(8710, {	-- Kris of Unspoken Names
+									i(21416),	-- Kris of Unspoken Names
 								}),
-								q(8708, {
-									i(21407),
+								q(8708, {	-- Mace of Unending Life
+									i(21407),	-- Mace of Unending Life
 								}),
 							}),
 							i(20886, { -- Qiraji Spiked Hilt
-								q(8711, {
-									i(21395),
+								q(8711, {	-- Blade of Eternal Justice
+									i(21395),	-- Blade of Eternal Justice
 								}),
-								q(8709, {
-									i(21404),
+								q(8709, {	-- Dagger of Veiled Shadows
+									i(21404),	-- Dagger of Veiled Shadows
 								}),
-								q(8706, {
-									i(21398),
+								q(8706, {	-- Hammer of the Gathering Storm
+									i(21398),	-- Hammer of the Gathering Storm
 								}),
-								q(8712, {
-									i(21401),
+								q(8712, {	-- Scythe of the Unseen Path
+									i(21401),	-- Scythe of the Unseen Path
 								}),
-								q(8558, {
-									i(21392),
+								q(8558, {	-- Sickle of Unyielding Strength
+									i(21392),	-- Sickle of Unyielding Strength
 								}),
 							}),	
-							i(21466),
-							i(21478),
-							i(21484),
-							i(21479),
-							i(21480),
-							i(21481),
+							i(21466),	-- Stinger of Ayamiss
+							i(21478),	-- Bow of Taut Sinew
+							i(21484),	-- Helm of Regrowth
+							i(21479),	-- Gauntlets of the Immovable
+							i(21480),	-- Scaled Silithid Gauntlets
+							i(21481),	-- Boots of the Desert Protector
 						},
 						["creatureID"] = 15369,
 					}),
@@ -290,98 +290,98 @@ _.Instances =
 								q(8791),	-- The Fall of Ossirian
 							}),
 							i(20890, { -- Qiraji Ornate Hilt 
-								q(8707, {
-									i(21413),
+								q(8707, {	-- Blade of Vaulted Secrets
+									i(21413),	-- Blade of Vaulted Secrets
 								}),
-								q(8705, {
-									i(21410),
+								q(8705, {	-- Gavel of Infinite Wisdom
+									i(21410),	-- Gavel of Infinite Wisdom
 								}),
-								q(8710, {
-									i(21416),
+								q(8710, {	-- Kris of Unspoken Names
+									i(21416),	-- Kris of Unspoken Names
 								}),
-								q(8708, {
-									i(21407),
+								q(8708, {	-- Mace of Unending Life
+									i(21407),	-- Mace of Unending Life
 								}),
 							}),
 							i(20886, { -- Qiraji Spiked Hilt
-								q(8711, {
-									i(21395),
+								q(8711, {	-- Blade of Eternal Justice
+									i(21395),	-- Blade of Eternal Justice
 								}),
-								q(8709, {
-									i(21404),
+								q(8709, {	-- Dagger of Veiled Shadows
+									i(21404),	-- Dagger of Veiled Shadows
 								}),
-								q(8706, {
-									i(21398),
+								q(8706, {	-- Hammer of the Gathering Storm
+									i(21398),	-- Hammer of the Gathering Storm
 								}),
-								q(8712, {
-									i(21401),
+								q(8712, {	-- Scythe of the Unseen Path
+									i(21401),	-- Scythe of the Unseen Path
 								}),
-								q(8558, {
-									i(21392),
+								q(8558, {	-- Sickle of Unyielding Strength
+									i(21392),	-- Sickle of Unyielding Strength
 								}),
 							}),	
-							i(21452),
-							i(21715),
-							i(21459),
-							i(21460),
-							i(21454),
-							i(21456),
-							i(21457),
-							i(21464),
-							i(21462),
-							i(21458),
-							i(21463),
-							i(21461),
-							i(21453),
+							i(21452),	-- Staff of the Ruins
+							i(21715),	-- Sand Polished Hammer
+							i(21459),	-- Crossbow of Imminent Doom
+							i(21460),	-- Helm of Domination
+							i(21454),	-- Runic Stone Shoulders
+							i(21456),	-- Sandstorm Cloak
+							i(21457),	-- Bracers of Brutality
+							i(21464),	-- Shackles of the Unscarred
+							i(21462),	-- Gloves of Dark Wisdom
+							i(21458),	-- Gauntlets of New Life
+							i(21463),	-- Ossirian's Binding
+							i(21461),	-- Leggings of the Black Blizzard
+							i(21453),	-- Mantle of the Horusath
 						},
 						["creatureID"] = 15339,
 					}),
 					e(1539, { -- Moam
 						["groups"] = {
 							i(20890, { -- Qiraji Ornate Hilt 
-								q(8707, {
-									i(21413),
+								q(8707, {	-- Blade of Vaulted Secrets
+									i(21413),	-- Blade of Vaulted Secrets
 								}),
-								q(8705, {
-									i(21410),
+								q(8705, {	-- Gavel of Infinite Wisdom
+									i(21410),	-- Gavel of Infinite Wisdom
 								}),
-								q(8710, {
-									i(21416),
+								q(8710, {	-- Kris of Unspoken Names
+									i(21416),	-- Kris of Unspoken Names
 								}),
-								q(8708, {
-									i(21407),
+								q(8708, {	-- Mace of Unending Life
+									i(21407),	-- Mace of Unending Life
 								}),
 							}),
 							i(20886, { -- Qiraji Spiked Hilt
-								q(8711, {
-									i(21395),
+								q(8711, {	-- Blade of Eternal Justice
+									i(21395),	-- Blade of Eternal Justice
 								}),
-								q(8709, {
-									i(21404),
+								q(8709, {	-- Dagger of Veiled Shadows
+									i(21404),	-- Dagger of Veiled Shadows
 								}),
-								q(8706, {
-									i(21398),
+								q(8706, {	-- Hammer of the Gathering Storm
+									i(21398),	-- Hammer of the Gathering Storm
 								}),
-								q(8712, {
-									i(21401),
+								q(8712, {	-- Scythe of the Unseen Path
+									i(21401),	-- Scythe of the Unseen Path
 								}),
-								q(8558, {
-									i(21392),
+								q(8558, {	-- Sickle of Unyeilding Strength
+									i(21392),	-- Sickle of Unyeilding Strength
 								}),
 							}),	
-							i(21471),
-							i(21455),
-							i(21472),
-							i(21474),
-							i(21468),
-							i(21470),
-							i(21467),
-							i(21469),
-							i(21479),
-							i(21475),
-							i(21476),
-							i(22220, {
-								i(22194),
+							i(21471),	-- Talon of Furious Concentration
+							i(21455),	-- Southwind Helm
+							i(21472),	-- Dustwind Turbin
+							i(21474),	-- Chitinous Shoulderguards
+							i(21468),	-- Mantle of Maz'Nadir
+							i(21470),	-- Cloak of the Savior
+							i(21467),	-- Thick Silithis Chestguard
+							i(21469),	-- Gauntlets of Southwind
+							i(21479),	-- Gauntlets of the Immovable
+							i(21475),	-- Legplates of the Destroyer
+							i(21476),	-- Obsidian Scaled Leggings
+							i(22220, {	-- Plans: Black Grasp of the Destroyer
+								i(22194),	-- Black Grasp of the Destroyer
 							}),
 						},
 						["creatureID"] = 15340,
