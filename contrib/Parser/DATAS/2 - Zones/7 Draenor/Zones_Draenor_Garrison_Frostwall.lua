@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(962, { 	-- Draenor
 		m(976, {	-- Frostwall other mapid's 976, 980, 981, 982,
-					-- Lucetia: MapID 990 was used and only worked in Frostfire Ridge.  Changing it to 976 should work.
+			 -- Lucetia: MapID 990 was used and only worked in Frostfire Ridge.  Changing it to 976 should work.
 			["groups"] = {						
 				nh(-3, { 	 -- Holidays					
 --[[					
@@ -96,9 +96,9 @@ _.Zones =
 									["groups"] = {
 										un(25, i(128658, { -- Spooky Supplies
 											i(128664, { -- Creepy Crawlers
-												n(96323, { 			-- Arachnis
+												n(96323, { 	 -- Arachnis
 													["groups"] = {
-														i(128794), 		-- toy
+														i(128794), -- toy
 													},
 													["questID"] = 39617,
 													["description"] = "In order to summon this rare you will need to do the dailies in your Garrison.  Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause the rare to spawn."
@@ -173,21 +173,21 @@ _.Zones =
 					}),						
 				}),								
 				nh(-4, { 	 -- Achievements
-					ach(9914, { 		-- Azeroth's Top Twenty Tunes
-						i(122700), 			-- Toy
+					ach(9914, { -- Azeroth's Top Twenty Tunes
+						i(122700), 	 -- Toy
 					}),
-					ach(10258, { 		-- Charting a Course
+					ach(10258, { -- Charting a Course
 						i(128364),
 					}),
-					ach(7274, { 		-- Learning From The Best	
-						i(86596), 			-- Toy
+					ach(7274, { -- Learning From The Best	
+						i(86596), 	 -- Toy
 					}),	
-					n(-99, { 			-- Stables
+					n(-99, { 	 -- Stables
 						ach(9706, {
-							i(116781), 		-- Mount
+							i(116781), -- Mount
 						}),
 						ach(9705, {
-							i(116668), 		-- Mount
+							i(116668), -- Mount
 						}),
 					}),
 				}),
@@ -603,7 +603,7 @@ _.Zones =
 				}),					
 				nh(-299, {   -- Missions
 					["groups"] = {
-						n(85805, { 		-- Command Table
+						n(85805, { -- Command Table
 							["groups"] = {
 								i(118529, { -- Cache of Highmaul Treasures [Normal]
 									["groups"] = {
@@ -1146,15 +1146,15 @@ _.Zones =
 									},
 									["icon"] = "Interface\\Icons\\inv_chest_cloth_reputation_c_01",
 								}),
-								i(122674), 		-- Toy
-								i(118191), 		-- Toy	
-								i(128310), 		-- Toy
-								i(128311), 		-- Mount
-								i(127748), 		-- Pet
+								i(122674), -- Toy
+								i(118191), -- Toy	
+								i(128310), -- Toy
+								i(128311), -- Mount
+								i(127748), -- Pet
 							},
 							["modelScale"] = 2.5,
 						}),
-						n(94398, { 		-- Fleet Command Table
+						n(94398, { -- Fleet Command Table
 							["groups"] = {
 								i(128391, { -- Iron Fleet Treasure Chest [Raid Finder]
 									["groups"] = {
@@ -2039,18 +2039,19 @@ _.Zones =
 					q(36844),	-- Your Second Leatherworking Work Order
 					q(36845),	-- Your Second Tailoring Work Order
 --]]
-					qh(37961, { 	-- Bringing the Bass					
-						i(122613, { 	-- Stash of Dusty Music Rolls
-							i(122210), 		-- Music Roll: Orgrimmar
-							i(122218),		-- Music Roll: Rescue the Warchief
-							i(122217), 		-- Music Roll: Silvermoon
-							i(122216), 		-- Music Roll: The Zandalari
-							i(122213),		-- Music Roll: Thunder Bluff
-							i(122212),		-- Music Roll: Undercity
-							i(122219), 		-- Music Roll: Way of the Monk
+					qh(37961, { -- Bringing the Bass					
+						i(122613, { -- Stash of Dusty Music Rolls
+							i(122210), -- Music Roll: Orgrimmar
+							i(122218), -- Music Roll: Rescue the Warchief
+							i(122217), -- Music Roll: Silvermoon
+							i(122216), -- Music Roll: The Zandalari
+							i(122213), -- Music Roll: Thunder Bluff
+							i(122212), -- Music Roll: Undercity
+							i(122219), -- Music Roll: Way of the Monk
+							i(122215), -- Music Roll: Zul'Gurub Voodoo
 						}),
 					}),							
-					qh(34364, { 		-- For the Horde
+					qh(34364, { -- For the Horde
 						i(111535),
 						i(111537),
 						i(111539),
@@ -2060,7 +2061,7 @@ _.Zones =
 						i(111540),
 						i(111542),
 					}),	
-					qh(37434, { 		-- Proving Grounds
+					qh(37434, { -- Proving Grounds
 						i(119463),
 						i(119458),
 						i(119462),
@@ -2073,136 +2074,136 @@ _.Zones =
 					n(89753, { 	-- High Overlord Saurfang
 						["groups"] = {
 							qh(37757, { 	-- Arcane Sanctum: Ko'ragh
-								i(123975, {		-- Greater Bounty Spoils
-									i(114111, {		-- Formidable Armament
-										i(115335),		-- Formidable Axe
-										i(115338),		-- Formidable Dagger
-										i(115336),		-- Formidable Greataxe
-										i(115337),		-- Formidable Longbow
-										i(115340),		-- Formidable Polearm
-										i(115342),		-- Formidable Scepter
-										i(115341),		-- Formidable Spire
-										i(115339),		-- Formidable Warmace
+								i(123975, { -- Greater Bounty Spoils
+									i(114111, { -- Formidable Armament
+										i(115335), -- Formidable Axe
+										i(115338), -- Formidable Dagger
+										i(115336), -- Formidable Greataxe
+										i(115337), -- Formidable Longbow
+										i(115340), -- Formidable Polearm
+										i(115342), -- Formidable Scepter
+										i(115341), -- Formidable Spire
+										i(115339), -- Formidable Warmace
 									}),
-									i(114088, {		-- Formidable Bracers
-										i(114554),		-- Aerial Acolyte's Bracers
-										i(114557),		-- Crimson Carapace Bracers
-										i(114556),		-- Sickened Scale Bracers
-										i(114555),		-- Yeti-Hide Bracers
+									i(114088, { -- Formidable Bracers
+										i(114554), -- Aerial Acolyte's Bracers
+										i(114557), -- Crimson Carapace Bracers
+										i(114556), -- Sickened Scale Bracers
+										i(114555), -- Yeti-Hide Bracers
 									}),
-									i(119125, {		-- Formidable Cloak
-										i(114607),		-- Bloodstained Miser's Cloak
-										i(114604),		-- Cloak of Blind Focus
-										i(114605),		-- Doomwake Drape
-										i(114606),		-- Fathom-Ripped Cape
-										i(114608),		-- Ultimate Greatcloak
+									i(119125, { -- Formidable Cloak
+										i(114607), -- Bloodstained Miser's Cloak
+										i(114604), -- Cloak of Blind Focus
+										i(114605), -- Doomwake Drape
+										i(114606), -- Fathom-Ripped Cape
+										i(114608), -- Ultimate Greatcloak
 									}),
-									i(119115, {		-- Formidable Gauntlets
-										i(114566),		-- Aerial Acolyte's Gloves
-										i(114569),		-- Crimson Carapace Gauntlets
-										i(114568),		-- Sickened Scale Gauntlets
-										i(114567),		-- Yeti-Hide Gauntlets
+									i(119115, { -- Formidable Gauntlets
+										i(114566), -- Aerial Acolyte's Gloves
+										i(114569), -- Crimson Carapace Gauntlets
+										i(114568), -- Sickened Scale Gauntlets
+										i(114567), -- Yeti-Hide Gauntlets
 									}),
-									i(119121, {		-- Formidable Girdle
-										i(114582),		-- Aerial Acolyte's Cord
-										i(114585),		-- Crimson Carapace Girdle
-										i(114584),		-- Sickened Scale Belt
-										i(114583),		-- Yeti-Hide Belt
+									i(119121, { -- Formidable Girdle
+										i(114582), -- Aerial Acolyte's Cord
+										i(114585), -- Crimson Carapace Girdle
+										i(114584), -- Sickened Scale Belt
+										i(114583), -- Yeti-Hide Belt
 									}),
-									i(119117, {		-- Formidable Hood
-										i(114570),		-- Aerial Acolyte's Hood
-										i(114573),		-- Crimson Carapace Greathelm
-										i(114572),		-- Sickened Scale Helm
-										i(114571),		-- Yeti-Hide Hood
+									i(119117, { -- Formidable Hood
+										i(114570), -- Aerial Acolyte's Hood
+										i(114573), -- Crimson Carapace Greathelm
+										i(114572), -- Sickened Scale Helm
+										i(114571), -- Yeti-Hide Hood
 									}),
-									i(119119, {		-- Formidable Leggings
-										i(114574),		-- Aerial Acolyte's Trousers
-										i(114577),		-- Crimson Carapace Legplates
-										i(114576),		-- Sickened Scale Legguards
-										i(114575),		-- Yeti-Hide Legguards
+									i(119119, { -- Formidable Leggings
+										i(114574), -- Aerial Acolyte's Trousers
+										i(114577), -- Crimson Carapace Legplates
+										i(114576), -- Sickened Scale Legguards
+										i(114575), -- Yeti-Hide Legguards
 									}),
-									i(114089, {		-- Formidable Robes
-										i(114561),		-- Aerial Acolyte's Robes
-										i(114560),		-- Crimson Carapace Breastplate
-										i(114559),		-- Sickened Scale Chestguard
-										i(114558),		-- Yeti-Hide Chestguard
+									i(114089, { -- Formidable Robes
+										i(114561), -- Aerial Acolyte's Robes
+										i(114560), -- Crimson Carapace Breastplate
+										i(114559), -- Sickened Scale Chestguard
+										i(114558), -- Yeti-Hide Chestguard
 									}),
-									i(114091, {		-- Formidable Spaulders
-										i(114578),		-- Aerial Acolyte's Mantle
-										i(114581),		-- Crimson Carapace Shoulderguard
-										i(114580),		-- Sickened Scale Spaulders
-										i(114579),		-- Yeti-Hide Spaulders
+									i(114091, { -- Formidable Spaulders
+										i(114578), -- Aerial Acolyte's Mantle
+										i(114581), -- Crimson Carapace Shoulderguard
+										i(114580), -- Sickened Scale Spaulders
+										i(114579), -- Yeti-Hide Spaulders
 									}),
-									i(114090, {		-- Formidable Treads
-										i(114562),		-- Aerial Acolyte's Sandals
-										i(114565),		-- Crimson Carapace Greaves
-										i(114564),		-- Sickened Scale Boots
-										i(114563),		-- Yeti-Hide Boots
+									i(114090, { -- Formidable Treads
+										i(114562), -- Aerial Acolyte's Sandals
+										i(114565), -- Crimson Carapace Greaves
+										i(114564), -- Sickened Scale Boots
+										i(114563), -- Yeti-Hide Boots
 									}),											
 									i(114112, { 	-- Grandiose Armament
-										i(115327),		-- Grandiose Axe
-										i(115330),		-- Grandiose Dagger
-										i(115328),		-- Grandiose Greataxe
-										i(115329),		-- Grandiose Longbow
-										i(115332),		-- Grandiose Polearm
-										i(115334),		-- Grandiose Scepter
-										i(115333),		-- Grandiose Spire
-										i(115331),		-- Grandiose Warmace
+										i(115327), -- Grandiose Axe
+										i(115330), -- Grandiose Dagger
+										i(115328), -- Grandiose Greataxe
+										i(115329), -- Grandiose Longbow
+										i(115332), -- Grandiose Polearm
+										i(115334), -- Grandiose Scepter
+										i(115333), -- Grandiose Spire
+										i(115331), -- Grandiose Warmace
 									}),
 									i(114082, { 	-- Grandiose Bracers
-										i(114494),		-- Bracers Of Determined Resolve
-										i(114493),		-- Bracers of Volatile Ice
-										i(114496),		-- Crazed Bomber's Bracers
-										i(114495),		-- Undying Bracers
+										i(114494), -- Bracers Of Determined Resolve
+										i(114493), -- Bracers of Volatile Ice
+										i(114496), -- Crazed Bomber's Bracers
+										i(114495), -- Undying Bracers
 									}),
 									i(119124, { 	-- Grandiose Cloak
-										i(114544),		-- Drape of Surging Stars
-										i(114545),		-- Hearthhealer Cloak
-										i(114543),		-- Keen-Eye Forestcloak
-										i(114547),		-- Reinforced Moonsong Cloak
-										i(114546),		-- Warmonger's Bloodcloak
+										i(114544), -- Drape of Surging Stars
+										i(114545), -- Hearthhealer Cloak
+										i(114543), -- Keen-Eye Forestcloak
+										i(114547), -- Reinforced Moonsong Cloak
+										i(114546), -- Warmonger's Bloodcloak
 									}),
 									i(119114, { 	-- Grandiose Gauntlets
-										i(114508),		-- Crazed Bomber's Gauntlets
-										i(114506),		-- Gauntlets of Determined Resolve
-										i(114505),		-- Gloves of Volatile Ice
-										i(114507),		-- Undying Gauntlets
+										i(114508), -- Crazed Bomber's Gauntlets
+										i(114506), -- Gauntlets of Determined Resolve
+										i(114505), -- Gloves of Volatile Ice
+										i(114507), -- Undying Gauntlets
 									}),
 									i(119120, { 	-- Grandiose Girdle
-										i(114522),		-- Belt of Determined Resolve
-										i(114521),		-- Cord of Volatile Ice
-										i(114524),		-- Crazed Bomber's Girdle
-										i(114523),		-- Undying Belt
+										i(114522), -- Belt of Determined Resolve
+										i(114521), -- Cord of Volatile Ice
+										i(114524), -- Crazed Bomber's Girdle
+										i(114523), -- Undying Belt
 									}),
 									i(119116, { 	-- Grandiose Hood
-										i(114512),		-- Crazed Bomber's Greathelm
-										i(114510),		-- Hood of Determined Resolve
-										i(114509),		-- Hood of Volatile Ice
-										i(114511),		-- Undying Helm
+										i(114512), -- Crazed Bomber's Greathelm
+										i(114510), -- Hood of Determined Resolve
+										i(114509), -- Hood of Volatile Ice
+										i(114511), -- Undying Helm
 									}),
 									i(119118, { 	-- Grandiose Leggings
-										i(114516),		-- Crazed Bomber's Legplates
-										i(114514),		-- Legguards of Determined Resolve
-										i(114513),		-- Trousers of Volatile Ice
-										i(114515),		-- Undying Legguards
+										i(114516), -- Crazed Bomber's Legplates
+										i(114514), -- Legguards of Determined Resolve
+										i(114513), -- Trousers of Volatile Ice
+										i(114515), -- Undying Legguards
 									}),
 									i(114083, { 	-- Grandiose Robes
-										i(114497),		-- Chestguard of Determined Resolve
-										i(114499),		-- Crazed Bomber's Breastplate
-										i(114500),		-- Robes of Volatile Ice
-										i(114498),		-- Undying Chestguard
+										i(114497), -- Chestguard of Determined Resolve
+										i(114499), -- Crazed Bomber's Breastplate
+										i(114500), -- Robes of Volatile Ice
+										i(114498), -- Undying Chestguard
 									}),
 									i(114085, { 	-- Grandiose Spaulders
-										i(114520),		-- Crazed Bomber's Shoulderguard
-										i(114517),		-- Mantle of Volatile Ice
-										i(114518),		-- Spaulders of Determined Resolve
-										i(114519),		-- Undying Spaulders
+										i(114520), -- Crazed Bomber's Shoulderguard
+										i(114517), -- Mantle of Volatile Ice
+										i(114518), -- Spaulders of Determined Resolve
+										i(114519), -- Undying Spaulders
 									}),
 									i(114084, { 	-- Grandiose Treads
-										i(114502),		-- Boots of Determined Resolve
-										i(114504),		-- Crazed Bomber's Greaves
-										i(114501),		-- Sandals of Volatile Ice
-										i(114503),		-- Undying Boots
+										i(114502), -- Boots of Determined Resolve
+										i(114504), -- Crazed Bomber's Greaves
+										i(114501), -- Sandals of Volatile Ice
+										i(114503), -- Undying Boots
 									}),
 								}),
 							}),
@@ -2223,20 +2224,20 @@ _.Zones =
 						},
 						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
 					}),
-					n(-107, { 			-- Fishing Hut
-						i(112623, {			-- Pack of Fishing Supplies
+					n(-107, { 	 -- Fishing Hut
+						i(112623, {	 -- Pack of Fishing Supplies
 							dr(1.2, i(33820)),	-- Weather-Beaten Fishing Hat
 							dr(0.8, i(44983)),	-- Strand Crawler Pet
 							dr(0.7, i(45991)),	-- Bone Fishing Pole - not moggable
 							dr(0.7, i(45992)),	-- Jeweled Fishing Pole - not Moggable
 						}),
 					}),
-					n(-152, { 			-- Garrison Campaign
+					n(-152, { 	 -- Garrison Campaign
 						q(35195, {
-							i(119134),		-- Toy
+							i(119134), -- Toy
 						}),
 						q(32985, {
-							i(119145), 		-- Toy
+							i(119145), -- Toy
 						}),
 					}),
 					n(-121, { -- Frostwall Tavern
@@ -2303,12 +2304,12 @@ _.Zones =
 							i(119039), -- Lilian's Warning Sign Toy ["isToy"] = True
 						}),
 					}),
-					n(-108, { 			-- Gem Boutique
+					n(-108, { 	 -- Gem Boutique
 						q(36380, {
-							i(115503), 		-- Toy
+							i(115503), -- Toy
 						}),
 					}),
-					n(-109, { 			-- Gladiator's Sanctum
+					n(-109, { 	 -- Gladiator's Sanctum
 						q(37083, {
 							i(120142, {
 								i(119218),
@@ -2316,47 +2317,47 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-111, { 			-- Lumber Mill
+					n(-111, { 	 -- Lumber Mill
 						q(36385, {
-							i(115506), 		-- Toy
+							i(115506), -- Toy
 						}),
 					}),
-					n(-99, { 			-- Stables
+					n(-99, { 	 -- Stables
 						qh(37041, {
-							i(116675), 		-- Mount
+							i(116675), -- Mount
 						}),
 						qh(37059, {
-							i(116656), 		-- Mount
+							i(116656), -- Mount
 						}),
 						qh(37069, {
-							i(116662), 		-- Mount
+							i(116662), -- Mount
 						}),
 						qh(37079, {
-							i(116676), 		-- Mount
+							i(116676), -- Mount
 						}),
 						qh(37104, {
-							i(116774), 		-- Mount
+							i(116774), -- Mount
 						}),
 						qh(37111, {
-							i(116784), 		-- Mount
+							i(116784), -- Mount
 						}),
 					}),
-					n(-124, { 			-- War Mill
+					n(-124, { 	 -- War Mill
 						qh(37043, {
 							i(118372),
 						}),
 					}),
 				}),			
 				nh(-16, { 	 -- Rares
-					n(-103, { 			-- Barn
-						o(239143, {			-- Glass of Warm Milk
+					n(-103, { 	 -- Barn
+						o(239143, {	 -- Glass of Warm Milk
 							["groups"] = {
-								i(120309), 		-- Pet
+								i(120309), -- Pet
 							},
 							["icon"] = "Interface\\Icons\\inv_drink_milk_01",
 						}),
 					}),
-					n(-107, { 			-- Fishing Shack
+					n(-107, { 	 -- Fishing Shack
 						i(112633, {
 							n(81171, {
 								i(46109), 	-- Mount
@@ -2665,29 +2666,29 @@ _.Zones =
 				}),
 				h(n(82717, { -- Soulare of Andorhal
 					["groups"] = {
-						i(117573), 		-- Toy
+						i(117573), -- Toy
 					},
 					["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit from Frostwall Tavern using either Magic Debuff or Wild Aggression.|r \n|cff3399ffStep 2:|r |cff66ccffDo a /tired emote and he will award the toy.|r \n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison.|r"
 				})),
 				nh(-2, {     -- Vendors
-					n(88779, { 			-- Benjamin Brode 
-						i(119210), 			-- Toy
-						i(119212), 			-- Toy
+					n(88779, { 	 -- Benjamin Brode 
+						i(119210), 	 -- Toy
+						i(119212), 	 -- Toy
 					}),
-					n(80285, { 			-- Guh - bladespire trader
+					n(80285, { 	 -- Guh - bladespire trader
 						["groups"] = {
 							i(119430),
 						},
 						["description"] = "|cff66ccffFound at 37.4,60.2 in Frostfire Ridge - Speak with him and have him visit your garrison.|r"
 					}),
-					nh(95471, { 		-- Trader Darakk
-						i(116655), 			-- Mount
-						i(116667), 			-- Mount
-						i(127864), 			-- Toy
-						i(127868), 			-- Pet
+					nh(95471, { -- Trader Darakk
+						i(116655), 	 -- Mount
+						i(116667), 	 -- Mount
+						i(127864), 	 -- Toy
+						i(127868), 	 -- Pet
 					}),
-			--[[
-					nh(76928, { 		-- Kraank -- cooking vendor
+	 --[[
+					nh(76928, { -- Kraank -- cooking vendor
 						i(122555),
 						i(122556),
 						i(122557),
@@ -2695,21 +2696,21 @@ _.Zones =
 						i(122559),
 						i(122560),
 					}),
-					nh(88228, { 		-- Sergeant Grimjaw - Garrison Quartermaster
+					nh(88228, { -- Sergeant Grimjaw - Garrison Quartermaster
 						i(141642),
 					}),
-					nh(79774, { 		-- Sergeant Grimjaw - Garrison Quartermaster
+					nh(79774, { -- Sergeant Grimjaw - Garrison Quartermaster
 						i(141642),
 					}),
-					nh(91029, { 		-- Rath'thul Moonvale (dust trader)
+					nh(91029, { -- Rath'thul Moonvale (dust trader)
 						i(122711),
 					}),
-					nh(91034, 	{		-- Calvo Klyne (fur trader)
+					nh(91034, 	{ -- Calvo Klyne (fur trader)
 						i(122716),
 						i(127724),
 						i(127742),
 					}),
-					nh(91031, {			-- Nicholas Mitrik (herb trader)
+					nh(91031, {	 -- Nicholas Mitrik (herb trader)
 						i(141642),
 						i(122599),
 						i(122600),
@@ -2729,12 +2730,12 @@ _.Zones =
 						i(128413),
 						i(128414),
 					}),	
-					nh(91033, { 		-- Zeezu - Leather Trader
+					nh(91033, { -- Zeezu - Leather Trader
 						i(122715),
 						i(127722),
 						i(127740),
 					}),
-					nh(91030, { 		-- Trixxy Volt - Ore Trader
+					nh(91030, { -- Trixxy Volt - Ore Trader
 						i(122705),
 						i(122712),
 						i(122714),
@@ -2749,9 +2750,9 @@ _.Zones =
 						i(127745),
 						i(127747),
 					}),
-					n(-102, { 			-- Alchemy Lab
-						nh(79813, { 		-- Albert de Hyde 
-							i(109558), 			-- Teaches alchemical catalyst, crescent oil, Draenic invis, living action, mana, swiftness, water breathing/walking, pure rage, secrets of draenor alchemy
+					n(-102, { 	 -- Alchemy Lab
+						nh(79813, { -- Albert de Hyde 
+							i(109558), 	 -- Teaches alchemical catalyst, crescent oil, Draenic invis, living action, mana, swiftness, water breathing/walking, pure rage, secrets of draenor alchemy
 							i(112023),
 							i(112024),
 							i(112026),
@@ -2771,14 +2772,14 @@ _.Zones =
 						}),
 					}),
 			]]--							
-					n(-104, { 			-- Barracks
-						nh(79812, { 		-- Moz'def 
-							i(122298), 			-- Toy
+					n(-104, { 	 -- Barracks
+						nh(79812, { -- Moz'def 
+							i(122298), 	 -- Toy
 						}),
 					}),
-			--[[							
+	 --[[							
 					n(-105, { 	-- Enchanter's Study
-						nh(79821, { 		-- Yukla Greenshadow 
+						nh(79821, { -- Yukla Greenshadow 
 							i(111922), -- teaches Ring/neck Breath of Crit, haste, vers, mastery -- Mark of the shattered hand, temporal crystal, luminous shard, enchanted dust, secrets of draenor enchanting
 							i(118394),
 							i(118429),
@@ -2810,7 +2811,7 @@ _.Zones =
 						}),
 					}),
 					n(-106, { 	-- Engineering Works
-						nh(79826, { 		-- Pozzlow 
+						nh(79826, { -- Pozzlow 
 							i(111921), -- Teaches Gearspring parts, ultimate gnomish army knife, goblin glider kit, mecha-blast rocket, secrets of draenor engineering, shieldtronic shield, stealthman 54
 							i(118476),
 							i(118477),
@@ -2835,22 +2836,22 @@ _.Zones =
 						}),
 					}),
 			]]--						
-					n(-107, { 			-- Fishing Shack
-						n(85984, { 			-- Nat Pagle 
-							i(114919), 			-- Pet
-							i(117404), 			-- Pet
-							i(87791), 			-- Mount
+					n(-107, { 	 -- Fishing Shack
+						n(85984, { 	 -- Nat Pagle 
+							i(114919), 	 -- Pet
+							i(117404), 	 -- Pet
+							i(87791), 	 -- Mount
 						}),	
 					}),
-					n(-121, { 			-- Frostwall Tavern
-						nh(87302, { 			-- Murg 
+					n(-121, { 	 -- Frostwall Tavern
+						nh(87302, { 	 -- Murg 
 							i(119207), 
 						}),
 					}),
-			--[[						
+	 --[[						
 					n(-108, { 	-- Gem Boutique
-						nh(79832, { 		-- Dorogarr 
-							i(115539), 			-- Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
+						nh(79832, { -- Dorogarr 
+							i(115539), 	 -- Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
 							i(116078),		
 							i(116079),
 							i(116090),
@@ -2874,9 +2875,9 @@ _.Zones =
 						}),		
 					}),
 			]]--							
-					n(-110, { 			-- Herb Garden
-						nh(81981, { 		-- Tarnon 
-							i(110721), 			-- Pet
+					n(-110, { 	 -- Herb Garden
+						nh(81981, { -- Tarnon 
+							i(110721), 	 -- Pet
 							i(118559),
 							i(118560),
 							i(118562),
@@ -2884,8 +2885,8 @@ _.Zones =
 							i(118568),
 						}),
 					}),
-					n(-112, { 			-- Menagerie
-						nh(94516, { 		-- Giada Goldleash
+					n(-112, { 	 -- Menagerie
+						nh(94516, { -- Giada Goldleash
 							i(116415, { -- Pet Charm
 								i(127704), -- Bloodthorn Hatchling
 								i(127703), -- Dusty Sporewing
@@ -2897,10 +2898,10 @@ _.Zones =
 							}),
 						}),
 					}),
-			--[[							
-					n(-114, { 			-- Scribe's Quarters
-						nh(79829, { 		-- Urgra
-							i(111923), 			-- Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
+	 --[[							
+					n(-114, { 	 -- Scribe's Quarters
+						nh(79829, { -- Urgra
+							i(111923), 	 -- Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 							i(118605),
 							i(118606),
 							i(118607),
@@ -2911,9 +2912,9 @@ _.Zones =
 							i(120265),
 						}),			
 					}),
-					n(-116, { 			-- Tailoring Emporium
-						nh(79864, { 		-- 	Warra the Weaver 
-							i(115357), 			-- Teaches Sumptious cowl,leggings, robes, hexweave cloth, secrets of draenor tailoring
+					n(-116, { 	 -- Tailoring Emporium
+						nh(79864, { -- 	Warra the Weaver 
+							i(115357), 	 -- Teaches Sumptious cowl,leggings, robes, hexweave cloth, secrets of draenor tailoring
 							i(114852),
 							i(114853),
 							i(114854),
@@ -2932,9 +2933,9 @@ _.Zones =
 							i(114871),
 						}),	
 					}),
-					n(-117, { 			-- The Forge
-						nh(79867, { 		-- Orgek Ironhand 
-							i(115356),				-- Teaches Smoldering Breastplate, Greaves, Helm, Truesteel Ingot, Secrets of Draenor Blacksmithing
+					n(-117, { 	 -- The Forge
+						nh(79867, { -- Orgek Ironhand 
+							i(115356),		 -- Teaches Smoldering Breastplate, Greaves, Helm, Truesteel Ingot, Secrets of Draenor Blacksmithing
 							i(116729),
 							i(116730),
 							i(116731),
@@ -2957,9 +2958,9 @@ _.Zones =
 							i(120262),
 						}),
 					}),
-					n(-118, { 			-- The Tannery		
-						nh(79834, { 		-- Murne Greenhoof 
-							i(115358), 			-- Teaches Journeying helm, robes, slacks -- Traveling helm, leggings, tunic, burnished leather, secrets of draenor leatherworking
+					n(-118, { 	 -- The Tannery		
+						nh(79834, { -- Murne Greenhoof 
+							i(115358), 	 -- Teaches Journeying helm, robes, slacks -- Traveling helm, leggings, tunic, burnished leather, secrets of draenor leatherworking
 							i(116325),
 							i(116326),
 							i(116327),
@@ -2989,15 +2990,15 @@ _.Zones =
 						}),		
 					}),
 			]]--							
-					n(-119, { 			-- Trading Post
-						nh(87015, { 		-- Kil'rip - Laughing Skull Quartermaster 
-							i(119160), 			-- Toy
-							i(119146), 			-- Pet
+					n(-119, { 	 -- Trading Post
+						nh(87015, { -- Kil'rip - Laughing Skull Quartermaster 
+							i(119160), 	 -- Toy
+							i(119146), 	 -- Pet
 							i(118671),
 							i(118672),
 							i(118674),
 							i(119138), 
-							i(116782), 			-- Mount
+							i(116782), 	 -- Mount
 							i(118673),
 						}),
 					}),
