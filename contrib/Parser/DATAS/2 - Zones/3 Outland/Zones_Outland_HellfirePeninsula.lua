@@ -270,6 +270,15 @@ _.Zones =
 								},
 								["qg"] = 16888, -- Mahuram Stouthoof
 							}),
+							q(10255, { -- Testing the Antidote
+								["groups"] = {
+									i(25986), -- Dreadtusk's Fury
+									i(25987), -- Helboar Carving Blade
+									i(25985), -- Cenarion Naturalist's Staff
+								},
+								["qg"] = 16991, -- Thiah Redmane
+								["sourceQuestID"] = { 9372 }, -- Demonic Contamination
+							}),
 						}),
 					}),
 					n(-168, { -- Other Quests
@@ -307,7 +316,19 @@ _.Zones =
 									i(40477), -- Insignia of the Horde
 								},
 								["qg"] = 18267, -- Battlecryer Blackeye
-								["sourceQuestID"] = { 10124 } -- Forward Base: Reaver's Fall
+								["sourceQuestID"] = { 10124 }, -- Forward Base: Reaver's Fall
+							}),
+							qh(10390, { -- Forge Camp: Mageddon
+								["groups"] = {
+								},
+								["qg"] = 3230, -- Nazgrel
+								["sourceQuestID"] = { 10388 }, -- Return to Thrallmar
+							}),
+							qh(9400, { -- The Assassin
+								["groups"] = {
+								},
+								["qg"] = 3230, -- Nazgrel
+								["sourceQuestID"] = { 10388 }, -- Return to Thrallmar
 							}),
 						}),
 						-- Need a Reaver's Fall Section, but none in achievement
@@ -516,11 +537,6 @@ _.Zones =
 							i(25915),
 						}),
 						qh( 10242),	-- Spinebreaker Post
-						q(10255,  {  -- Testing the Antidote
-							i(25986),
-							i(25987),
-							i(25985),
-						}),
 						qh( 10389),	-- The Agony and the Darkness
 						qa(  9417),	-- The Arakkoa Threat
 						qh(  9400),	-- The Assassin
