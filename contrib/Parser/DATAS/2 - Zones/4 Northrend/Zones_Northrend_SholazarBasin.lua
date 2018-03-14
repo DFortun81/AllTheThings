@@ -230,14 +230,32 @@ _.Zones =
 					q(12533),	-- The Wasp Hunter's Apprentice
 					q(12759),	-- Tools of War
 					q(12530),	-- Tormenting the Softknuckles
-					q(12524),	-- Venture Co. Misadventure
 					q(13024),	-- Wanikaya the Elder
 					q(12660),	-- Weapons of Destruction
-					q(12489),	-- Welcome to Sholazar Basin
-					q(12521),	-- Where in the World is Hemet Nesingwary?
 					q(12705),	-- Will of the Titans
-					q(12525),	-- Wipe That Grin Off His Face	
---]]					
+					--]]
+					q(12489, { -- Welcome to Sholazar Basin
+						["groups"] = {
+						},
+						["qg"] = 27987, -- Monte Muzzleshot
+						["sourceQuestID"] = { 12521 }, -- Where in the World is Hemet Nesingwary?
+					}),
+					q(12524, { -- Venture Co. Misadventure
+						["groups"] = {
+						},
+						["qg"] = 28032, -- Debaar
+						["sourceQuestID"] = { 27987 }, -- Welcome to Scholazar Basin
+					}),
+					q(12525, { -- Wipe That Grin Off His Face	
+						["groups"] = {
+							i(39332), -- Ogre-Crushing Wristguards
+							i(39376), -- Bracers of the Rejuvenated Forest
+							i(39430), -- Spitelinked Bracers
+							i(39452), -- Roaming Wristguards
+						},
+						["qg"] = 28032, -- Debaar
+						["sourceQuestID"] = { 12525 }, -- Venture Co. Misadventure
+					}),
 					q(12691,  {  -- A Timeworn Coffer
 						i(39348),
 						i(39402),
