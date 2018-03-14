@@ -1249,60 +1249,65 @@ local function SearchForItemLink(link)
 							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE"));
 							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE_PT2"));
 						end
-					end
-					
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo then
-						--[[
-						for key, value in pairs(sourceInfo) do
-							tinsert(listing, tostring(key) .. ": " .. tostring(value));
-						end
-						]]--
 						
-						if GetDataMember("ShowSharedAppearances") then
-							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-								local otherATTSource = SearchForSourceID(otherSourceID);
-								if otherATTSource then
-									local text;
-									otherATTSource = otherATTSource[1];
-									local link = otherATTSource.link;
-									if not link then 
-										link = RETRIEVING_DATA;
-										working = true;
-									end
-									if otherATTSource.u then
-										local texture = L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[otherATTSource.u or 1][1]];
-										if texture then
-											text = "|T" .. texture .. ":0|t";
-										else
-											text = "   ";
+						local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+						if sourceInfo then
+							--[[
+							for key, value in pairs(sourceInfo) do
+								tinsert(listing, tostring(key) .. ": " .. tostring(value));
+							end
+							]]--
+							
+							if GetDataMember("ShowSharedAppearances") then
+								local text;
+								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+									local otherATTSource = SearchForSourceID(otherSourceID);
+									if otherATTSource then
+										otherATTSource = otherATTSource[1];
+										
+										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+										if group[1].f == otherATTSource.f
+											and (not otherATTSource.classes or contains(otherATTSource.classes, app.ClassIndex))
+											and (not otherATTSource.races or contains(otherATTSource.races, app.RaceIndex)) then
+											local link = otherATTSource.link;
+											if not link then 
+												link = RETRIEVING_DATA;
+												working = true;
+											end
+											if otherATTSource.u then
+												local texture = L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[otherATTSource.u or 1][1]];
+												if texture then
+													text = "|T" .. texture .. ":0|t";
+												else
+													text = "   ";
+												end
+											else
+												text = "   ";
+											end
+											text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherATTSource.collected);
+											tinsert(listing, text);
 										end
 									else
-										text = "   ";
-									end
-									text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherATTSource.collected);
-									tinsert(listing, text);
-								else
-									local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-									if otherSource then
-										local text;
-										local link = select(2, GetItemInfo(otherSource.itemID));
-										if not link then 
-											link = RETRIEVING_DATA;
-											working = true;
+										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
+										if otherSource then
+											local link = select(2, GetItemInfo(otherSource.itemID));
+											if not link then 
+												link = RETRIEVING_DATA;
+												working = true;
+											end
+											text = "  !" .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherSource.isCollected);
+											if otherSource.isCollected then
+												app.CollectedSources[otherSourceID] = 1;
+											end
+											tinsert(listing, text);
 										end
-										text = "   " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherSource.isCollected);
-										if otherSource.isCollected then
-											SetDataSubMember("CollectedSources", otherSourceID, 1);
-										end
-										tinsert(listing, text);
 									end
 								end
 							end
+							
+							if GetDataMember("ShowVisualID") then tinsert(listing, L("VISUAL_ID") .. "/" .. tostring(sourceInfo.visualID)); end
+							if GetDataMember("ShowSourceID") then tinsert(listing, L("SOURCE_ID") .. "/" .. sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected)); end
 						end
-						
-						if GetDataMember("ShowVisualID") then tinsert(listing, L("VISUAL_ID") .. "/" .. tostring(sourceInfo.visualID)); end
-						if GetDataMember("ShowSourceID") then tinsert(listing, L("SOURCE_ID") .. "/" .. sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected)); end
 					end
 				else
 					group = SearchForItemID(itemID);
