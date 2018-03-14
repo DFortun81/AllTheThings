@@ -1998,7 +1998,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 						if GetDataMember("ShowContents") then
 							local first = true;
 							for i,j in ipairs(group.groups) do
-								if app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
+								if app.GroupRequirementsFilter(j) and app.GroupFilter(j) and not j.hideText then
 									if j.groups then
 										if not j.total or j.total < 1 then 
 											if j.collected then
@@ -4406,9 +4406,7 @@ local function CreateMiniListForGroup(group)
 				if otherSourceID ~= group.s then
 					local attSearch = SearchForSourceIDQuickly(otherSourceID);
 					if attSearch then
-						local newItem = setmetatable({ ['hideText'] = true }, { __index = attSearch });
-						CacheFields(newItem);
-						tinsert(mainItem.groups, newItem); 
+						tinsert(mainItem.groups, setmetatable({ ['hideText'] = true }, { __index = attSearch })); 
 					else
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 						if otherSourceInfo then
