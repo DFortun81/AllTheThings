@@ -222,8 +222,44 @@ _.Zones =
 						}),
 						crit(4, { -- Spinebreaker Post
 						}),
+						--]]
 						crit(5, { -- The Mag'har
+							qh(9400, { -- The Assassin
+								["groups"] = {
+								},
+								["qg"] = 3230, -- Nazgrel
+								["sourceQuestID"] = { 10388 }, -- Return to Thrallmar
+							}),
+							qh(9401, { -- A Strange Weapon
+								["groups"] = {
+								},
+								["qg"] = 17062, -- Fel Orc Corpse
+								["sourceQuestID"] = { 9400 }, -- The Assassin
+							}),
+							qh(9405, { -- The Warchief's Mandate
+								["groups"] = {
+								},
+								["qg"] = 3230, -- Nazgrel
+								["sourceQuestID"] = { 9401 }, -- The Warchief's Mandate
+							}),
+							qh(9410, { -- A Spirit Guide
+								["groups"] = {
+								},
+								["qg"] = 16574, -- Far Seer Regulkut
+								["sourceQuestID"] = { 9405 }, -- The Warchief's Mandate
+							}),
+							qh(9406, { -- The Mag'har
+								["groups"] = {
+									i(25510), -- Ceremonial Robes
+									i(25512), -- Tribal Hauberk
+									i(25511), -- Thunderforge Leggings
+									i(25513), -- Clefthoof Hide Mask
+								},
+								["qg"] = 16845, -- Gorkan Bloodfist
+								["sourceQuestID"] = { 9410 }, -- A Spirit Guide
+							}),
 						}),
+						--[[
 						crit(6, { -- Falcon Watch
 						}),
 						crit(7, { -- Green, But Not Orcs
@@ -318,13 +354,13 @@ _.Zones =
 								["qg"] = 18267, -- Battlecryer Blackeye
 								["sourceQuestID"] = { 10124 }, -- Forward Base: Reaver's Fall
 							}),
-							qh(10390, { -- Forge Camp: Mageddon
+							qh(10110, { -- Hellfire Fortifications
 								["groups"] = {
 								},
-								["qg"] = 3230, -- Nazgrel
-								["sourceQuestID"] = { 10388 }, -- Return to Thrallmar
+								["qg"] = 18267, -- Battlecryer Blackeye
+								["sourceQuestID"] = { 13409 }, -- Hellfire Fortifications
 							}),
-							qh(9400, { -- The Assassin
+							qh(10390, { -- Forge Camp: Mageddon
 								["groups"] = {
 								},
 								["qg"] = 3230, -- Nazgrel
@@ -358,8 +394,6 @@ _.Zones =
 							i(25782), -- Sunstrider Legguards
 							i(25781), -- Segmented Breastplate
 						}),
-						qh(  9410),	-- A Spirit Guide
-						qh(  9401),	-- A Strange Weapon
 						q(10367),	-- A Traitor Among Us
 						qa( 29689),	-- Advancing the Campaign
 						qh( 29688),	-- Advancing the Campaign
@@ -539,7 +573,6 @@ _.Zones =
 						qh( 10242),	-- Spinebreaker Post
 						qh( 10389),	-- The Agony and the Darkness
 						qa(  9417),	-- The Arakkoa Threat
-						qh(  9400),	-- The Assassin
 						qh( 10230),	-- The Battle Horn
 						q(9912),	-- The Cenarion Expedition
 						qh(9370,  {  -- The Cleansing Must Be Stopped
@@ -567,12 +600,6 @@ _.Zones =
 						qa( 10399),	-- The Heart of Darkness
 						qa( 10141),	-- The Legion Reborn
 						qa(  9558),	-- The Longbeards
-						qh(9406,  {  -- The Mag'har
-							i(25510),
-							i(25512),
-							i(25511),
-							i(25513),
-						}),
 						qa(10099,  {  -- The Mastermind
 							i(25984),
 							i(25982),
@@ -601,7 +628,6 @@ _.Zones =
 							i(25507),
 						}),
 						qa( 10093),	-- The Temple of Telhamat
-						qh(  9405),	-- The Warchief's Mandate
 						qh( 10278),	-- The Warp Rifts
 						qa( 10119),	-- Through the Dark Portal
 						qh(  9407),	-- Through the Dark Portal
