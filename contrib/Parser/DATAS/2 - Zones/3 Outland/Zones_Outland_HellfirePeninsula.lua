@@ -218,8 +218,51 @@ _.Zones =
 						--[[
 						crit(2, { -- Cruel's Intentions
 						}),
+						--]]
 						crit(3, { -- The Hand of Kargath
+							qh(10538,{	-- Boiling Blood	
+								["groups"] = {	
+								},	
+								["qg"] = 21279,	--Apothecary Albreck
+								["sourceQuestID"] = { 10242 }, -- Spinebreaker Post
+							}),
+							qh(10835, {	-- Apothecary Antonivich	
+								["groups"] = {	
+								},	
+								["qg"] = 21279,	-- Apothecary Albreck
+								["sourceQuestID"] = { 10242 },	-- Boiling Blood
+							}),		
+							qh(10864, {	-- A Burden of Souls	
+								["groups"] = {	
+								},	
+								["qg"] = 16588,	-- Apothecary Antonivich
+								["sourceQuestID"] = { 10835 },	-- Apothecary Antonivich
+							}),		
+							qh(10838, {	-- The Demonaic Scryer	
+								["groups"] = {
+									i(31715),	-- Demoniac Soul Prison
+								},	
+								["qg"] = 16588,	-- Apothecary Antonivichk
+								["sourceQuestID"] = { 10864 },	-- A Burden of Souls
+							}),		
+							qh(10875, {	-- Report to Nazgrel	
+								["groups"] = {	
+								},	
+								["qg"] = 16588,	-- Apothecary Antonivich
+								["sourceQuestID"] = { 10838 },	-- The Demonaic Scryer
+							}),		
+							qh(10876, {	-- The Foot of the Citadel	
+								["groups"] = {	
+									i(31717),	-- Shadowcast Tunic
+									i(31718),	-- Darkstorm Tunic
+									i(31719),	-- Stormstrike Vest
+									i(31720),	-- Battlemaster's Breastplate
+								},	
+								["qg"] = 3230,	-- Nazgrel
+								["sourceQuestID"] = { 10876 },	-- Report to Nazgrel
+							}),
 						}),
+						--[[
 						crit(4, { -- Spinebreaker Post
 						}),
 						--]]
@@ -325,11 +368,33 @@ _.Zones =
 								["qg"] = 16885,
 							}),
 						}),
-						sz(862, 3, { -- Falcon Watch
+						sz(862,3, { -- Falcon Watch
 							qh(10442, { -- Helping the Cenarion Post
 								["groups"] = {
 								},
 								["qg"] = 16790, -- Falconer Drenna Riverwind
+							}),
+						}),
+						sz(862,4, { -- Spinebreaker Post
+							qh(10220,{	-- Make Them Listen	
+								["groups"] = {	
+								},	
+								["qg"] = 19682,	-- Emissary Mordiba
+							}),		
+							qh(10278,{	-- The Warp Rifts	
+								["groups"] = {	
+								},	
+								["qg"] = 19683,	-- Ogath the Mad
+							}),		
+							qh(9345,{	-- Preparing the Salve	
+								["groups"] = {	
+								},	
+								["qg"] = 16858,	-- Grelag
+							}),		
+							qh(10809,{	-- Wanted: Worg Master Kruush	
+								["groups"] = {	
+								},	
+								--["qg"] = Wanted Poster,	
 							}),
 						}),
 						sz(862,11, { -- Thrallmar
@@ -386,7 +451,6 @@ _.Zones =
 						}),
 					}),
 					n(-494, { -- Miscellaneous
-						qh( 10864),	-- A Burden of Souls
 						qh(  9442),	-- A Debilitating Sickness
 						qa(  9355),	-- A Job for an Intelligent Man
 						qh(9376,  {  -- A Pilgrim's Plight
@@ -399,7 +463,6 @@ _.Zones =
 						qh( 29688),	-- Advancing the Campaign
 						qa(  9383),	-- An Ambitious Plan
 						qa( 10058),	-- An Old Gift
-						qh( 10835),	-- Apothecary Antonivich
 						qh( 10449),	-- Apothecary Zelana
 						qh(  9374),	-- Arelion's Journal
 						qh(  9472),	-- Arelion's Mistress
@@ -422,7 +485,6 @@ _.Zones =
 						q(11515),	-- Blood for Blood
 						qa( 47025),	-- Blood: Aid of the Illidari
 						qh( 10250),	-- Bloody Vengeance
-						qh( 10538),	-- Boiling Blood
 						qa( 47024),	-- Brewmaster: Aid of the Illidari
 						qh( 10391),	-- Cannons of Rage
 						qa(9427, {  -- Cleansing the Waters
@@ -523,7 +585,6 @@ _.Zones =
 						qh(  9483),	-- Life's Finer Pleasures
 						qa( 10057),	-- Looking to the Leadership
 						qh(  9396),	-- Magic of the Arakkoa
-						qh( 10220),	-- Make Them Listen
 						qa(9424,  {  -- Makuru's Vengeance
 							i(25920),
 						}),
@@ -549,13 +610,11 @@ _.Zones =
 						q(31922),	-- Nicki Tinytech
 						q(10236),	-- Outland Sucks!
 						qa( 10400),	-- Overlord
-						qh(  9345),	-- Preparing the Salve
 						qa( 45412),	-- Protection: Aid of the Illidari
 						qa( 47022),	-- Protection: Aid of the Illidari
 						qa(  9385),	-- Rampaging Ravagers
 						q(9349),	-- Ravager Egg Roundup
 						qh( 10291),	-- Report to Nazgrel
-						qh( 10875),	-- Report to Nazgrel
 						qh( 10103),	-- Report to Zurai
 						qa( 10903),	-- Return to Honor Hold
 						qa(  9423),	-- Return to Obadei
@@ -579,9 +638,6 @@ _.Zones =
 							i(25501),
 						}),
 						qa( 10395),	-- The Dark Missive
-						qh(10838,  {  -- The Demoniac Scryer
-							i(31715),
-						}),
 						q(10368),	-- The Dreghood Elders
 						qa( 10935),	-- The Exorcism of Colonel Jules
 						qh( 10813),	-- The Eyes of Grillok
@@ -590,12 +646,6 @@ _.Zones =
 						qa(9420,  {  -- The Finest Down
 							i(23587),
 						}),
-						qh(10876,  {  -- The Foot of the Citadel
-							i(31719),
-							i(31717),
-							i(31718),
-							i(31720),
-						}),	
 						qh(  9340),	-- The Great Fissure
 						qa( 10399),	-- The Heart of Darkness
 						qa( 10141),	-- The Legion Reborn
@@ -628,7 +678,6 @@ _.Zones =
 							i(25507),
 						}),
 						qa( 10093),	-- The Temple of Telhamat
-						qh( 10278),	-- The Warp Rifts
 						qa( 10119),	-- Through the Dark Portal
 						qh(  9407),	-- Through the Dark Portal
 						qa( 10936),	-- Trollbane is Looking for You
@@ -642,8 +691,7 @@ _.Zones =
 							i(25483),
 							i(25482),
 							i(25481),
-						}),
-						qh( 10809),	-- Wanted: Worg Master Kruush					
+						}),			
 						qh( 28705),	-- Warchief's Command: Outland!
 						qa( 10485),	-- Warlord of the Bleeding Hollow
 						q(9724),	-- Warning the Cenarion Circle
