@@ -615,7 +615,7 @@ local function GetSourceID(itemLink)
 	end
 	return nil, false;
 end
-AllTheThings.GetSourceID = GetSourceID;
+app.GetSourceID = GetSourceID;
 local function SetPortraitIcon(self, data, x)
 	self.lastData = data;
 	if data.texCoords then
@@ -761,7 +761,7 @@ local function GetCachedSearchResults(search, method, ...)
 					local count = 0;
 					local abbrevs = L("ABBREVIATIONS");
 					for i,j in ipairs(group) do
-						if not j.hideText and j.parent and j.parent.parent and (GetDataMember("ShowCompleteSourceLocations") or (not j.collected and not j.parent.saved)) then
+						if j.parent and not j.parent.hideText and j.parent.parent and (GetDataMember("ShowCompleteSourceLocations") or (not j.collected and not j.parent.saved)) then
 							local text = BuildSourceText(j, 0, j.qg);
 							--print(text .. tostring(j.parent.questID or 0) .. ", " .. tostring(j.parent.saved or 0));
 							for source,replacement in pairs(abbrevs) do
@@ -808,7 +808,7 @@ local function GetCachedSearchResults(search, method, ...)
 end
 
 -- Lua Constructor Lib
-local fieldCache, fieldCache_f, firldCache_g = {};
+local fieldCache = {};
 fieldCache["creatureID"] = {};
 fieldCache["encounterID"] = {};
 fieldCache["objectID"] = {};
@@ -821,9 +821,9 @@ fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
 fieldCache["toyID"] = {};
 local function CacheFieldID(group, field)
-	firldCache_g = group[field];
+	local firldCache_g = group[field];
 	if firldCache_g then
-		fieldCache_f = fieldCache[field][firldCache_g];
+		local fieldCache_f = fieldCache[field][firldCache_g];
 		if not fieldCache_f then
 			fieldCache_f = {};
 			fieldCache[field][firldCache_g] = fieldCache_f;
@@ -832,9 +832,9 @@ local function CacheFieldID(group, field)
 	end
 end
 local function CacheSubFieldID(group, field, subfield)
-	firldCache_g = group[subfield];
+	local firldCache_g = group[subfield];
 	if firldCache_g then
-		fieldCache_f = fieldCache[field][firldCache_g];
+		local fieldCache_f = fieldCache[field][firldCache_g];
 		if not fieldCache_f then
 			fieldCache_f = {};
 			fieldCache[field][firldCache_g] = fieldCache_f;
@@ -896,7 +896,7 @@ local function SetNoteForGroup(group, note)
 		end
 	end
 end
-AllTheThings.SetNote = SetNote;
+app.SetNote = SetNote;
 
 -- Item Information Lib
 local function SortGearSetInformation(a,b)
@@ -1398,11 +1398,11 @@ local function SearchForMissingItemNames(group)
 	end
 	return arr; 
 end
-AllTheThings.SearchForItemID = SearchForItemID;
-AllTheThings.SearchForSourceID = SearchForSourceID;
-AllTheThings.SearchForItemLink = SearchForItemLink;
-AllTheThings.SearchForCachedItemLink = SearchForCachedItemLink;
-AllTheThings.SearchForField = SearchForField;
+app.SearchForItemID = SearchForItemID;
+app.SearchForSourceID = SearchForSourceID;
+app.SearchForItemLink = SearchForItemLink;
+app.SearchForCachedItemLink = SearchForCachedItemLink;
+app.SearchForField = SearchForField;
 
 -- Map Information Lib
 local function ExpandGroupsRecursively(group, expanded, manual)
@@ -1849,6 +1849,7 @@ local function RefreshCollections()
 		
 		-- Refresh the Collection Windows!
 		app:RefreshData(false, true);
+		collectgarbage();
 		
 		-- Report success.
 		app.print("Done refreshing collections.");
@@ -4435,11 +4436,17 @@ local function CreateMiniListForGroup(group)
 		};
 		BuildGroups(popout.data, popout.data.groups);
 		UpdateGroups(popout.data, popout.data.groups, 1);
+		mainItem.visible = true;
 	elseif group.questID then
 		-- This is a quest object. Let's show prereqs and breadcrumbs.
-		local mainQuest = setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = group });
+		local mainQuest = setmetatable({ ['collectible'] = true, ['hideText'] = true }, { __index = group });
+		if group.groups then
+			mainQuest.groups = {};
+			for i,subgroup in ipairs(group.groups) do
+				table.insert(mainQuest.groups, setmetatable({ ['hideText'] = true }, { __index = subgroup }));
+			end
+		end
 		local groups = { mainQuest };
-		CacheFields(mainQuest);
 		
 		-- Show Quest Prereqs
 		if mainQuest.sourceQuestID then
@@ -4451,20 +4458,19 @@ local function CreateMiniListForGroup(group)
 					if sourceQuest and #sourceQuest > 0 then
 						-- Only care about the first search result.
 						if app.GroupFilter(sourceQuest[1]) then
-							sourceQuest = setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = sourceQuest[1] });
+							sourceQuest = setmetatable({ ['collectible'] = true, ['visible'] = true, ['hideText'] = true }, { __index = sourceQuest[1] });
 							if sourceQuest.sourceQuestID and #sourceQuest.sourceQuestID > 0 then
 								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
 								for j, subSourceQuestID in ipairs(sourceQuest.sourceQuestID) do
 									subSourceQuests[subSourceQuestID] = true;
 								end
 							end
-							CacheFields(sourceQuest);
 						else
 							sourceQuest = nil;
 						end
 					else
 						-- Create a Quest Object.
-						sourceQuest = app.CreateQuest(sourceQuestID, { ["visible"] = true, ["collectible"] = true, ['hideText'] = true });
+						sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
 					end
 					
 					-- If the quest was valid, attach it.
@@ -4486,7 +4492,8 @@ local function CreateMiniListForGroup(group)
 							["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 							["visible"] = true,
 							["expanded"] = true,
-							["groups"] = groups
+							["groups"] = groups,
+							["hideText"] = true
 						});
 					else
 						local prereq = prereqs[1];
@@ -4509,16 +4516,18 @@ local function CreateMiniListForGroup(group)
 			["total"] = 0,
 			["visible"] = true,
 			["expanded"] = true,
-			["groups"] = groups
+			["groups"] = groups,
+			["hideText"] = true
 		};
 		BuildGroups(popout.data, popout.data.groups);
 		UpdateGroups(popout.data, popout.data.groups, 1);
+		CacheFields(popout.data);
 	elseif group.groups then
 		-- This is already a container with accurate numbers.
-		popout.data = setmetatable({}, { __index = group });
+		popout.data = setmetatable({ ['visible'] = true }, { __index = group });
 	else
 		-- This is a standalone item
-		local newItem = setmetatable({ ['hideText'] = true }, { __index = group });
+		local newItem = setmetatable({ ['visible'] = true, ['hideText'] = true }, { __index = group });
 		CacheFields(newItem);
 		popout.data = {
 			["text"] = "Standalone Item",
@@ -4531,6 +4540,7 @@ local function CreateMiniListForGroup(group)
 		};
 		BuildGroups(popout.data, popout.data.groups);
 		UpdateGroups(popout.data, popout.data.groups, 1);
+		newItem.visible = true;
 	end
 	ExpandGroupsRecursively(popout.data, true);
 	--ExportData(popout.data);
