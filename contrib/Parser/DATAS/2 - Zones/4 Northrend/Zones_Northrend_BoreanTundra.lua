@@ -130,6 +130,11 @@ _.Zones =
 --]]				
 				}),								
 				n(-25, { 	-- Pet Battle
+					i(22780, { -- White Murloc Egg
+						["groups"] = {
+						},
+						["description"] = "This is contained in the White Murloc Egg located at 56, 88 and is located at the back of the room, not the table.",
+					}),
 					p(641), 	-- Arctic Hare
 					p(639), 	-- Borean Marmot
 					p(1165), 	-- Nexus Whelpling
