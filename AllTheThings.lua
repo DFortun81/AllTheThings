@@ -1295,7 +1295,7 @@ local function SearchForItemLink(link)
 												link = RETRIEVING_DATA;
 												working = true;
 											end
-											text = "  !" .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherSource.isCollected);
+											text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherSource.isCollected);
 											if otherSource.isCollected then
 												app.CollectedSources[otherSourceID] = 1;
 											end
@@ -4394,7 +4394,7 @@ local function CreateMinimapButton()
 end
 local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
-	local popout = app:GetWindow((group.parent and group.parent.text or "") .. group.text);
+	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
 	if group.s then
 		-- This is an item that has an appearance
 		local mainItem = setmetatable({ ["groups"] = {}, ['hideText'] = true }, { __index = group });
