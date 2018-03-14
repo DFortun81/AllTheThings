@@ -259,7 +259,7 @@ _.Zones =
 									i(31720),	-- Battlemaster's Breastplate
 								},	
 								["qg"] = 3230,	-- Nazgrel
-								["sourceQuestID"] = { 10876 },	-- Report to Nazgrel
+								["sourceQuestID"] = { 10875 },	-- Report to Nazgrel
 							}),
 						}),
 						--[[
