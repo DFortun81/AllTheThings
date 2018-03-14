@@ -1895,16 +1895,16 @@ end
 local function ToggleDebugMode()
 	SetDebugMode(not GetDataMember("IgnoreAllFilters"));
 end
-AllTheThings.RefreshCollections = RefreshCollections;
-AllTheThings.RefreshLocation = RefreshLocation;
-AllTheThings.RefreshSaves = RefreshSaves;
-AllTheThings.OpenMainList = OpenMainList;
-AllTheThings.OpenMiniList = OpenMiniList;
-AllTheThings.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
-AllTheThings.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
-AllTheThings.ToggleCompletionistMode = ToggleCompletionistMode;
-AllTheThings.ToggleDebugMode = ToggleDebugMode;
-AllTheThings.ToggleMainList = ToggleMainList;
+app.RefreshCollections = RefreshCollections;
+app.RefreshLocation = RefreshLocation;
+app.RefreshSaves = RefreshSaves;
+app.OpenMainList = OpenMainList;
+app.OpenMiniList = OpenMiniList;
+app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
+app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
+app.ToggleCompletionistMode = ToggleCompletionistMode;
+app.ToggleDebugMode = ToggleDebugMode;
+app.ToggleMainList = ToggleMainList;
 
 
 -- Tooltip Hooks
