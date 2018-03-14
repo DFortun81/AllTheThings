@@ -10,6 +10,7 @@ _.Zones =
 					q(40077, { -- The Invasion Begins
 						["groups"] = {
 							i(128953),	-- Treads of Illidari Supremacy
+							i(133317),	-- Treads of Illidari Supremacy
 						},
 						["qg"] = 93011, -- Kayn Sunfury
 					}),
@@ -40,6 +41,7 @@ _.Zones =
 					q(38759, { -- Set Them Free
 						["groups"] = {
 							i(128952),	-- Torment Ender's Chestguard
+							i(133312),	-- Torment Ender's Chestguard
 						},
 						["qg"] = 94410, -- Allari the Souleater
 						["sourceQuestID"] = { 40378 }, -- Enter the Illidar: Ashtongue
@@ -59,6 +61,7 @@ _.Zones =
 					q(38765, { -- Enter the Illidari: Shivarra
 						["groups"] = {
 							i(128951),	-- Leggings of Sacrifice
+							i(133316),	-- Leggings of Sacrifice
 						},
 						["qg"] = 93759, -- Jace Darkweaver
 						["sourceQuestID"] = { 39050 }, -- Meeting With the Queen
@@ -84,6 +87,7 @@ _.Zones =
 					q(38819, { -- Their Numbers Are Legion
 						["groups"] = {
 							i(128950),	-- Demon-Rend Shoulderblades
+							i(133311),	-- Demon-Rend Shoulderblades
 						},
 						["qg"] = 96420, -- Cyana Nightglaive
 						["sourceQuestID"] = { 39495 }, -- Hidden No More
@@ -103,6 +107,7 @@ _.Zones =
 					q(40222, {	-- The Imp Mother's Tome			
 						["groups"] = {			
 							i(128954),	-- Power Handler's Gloves	
+							i(133314),	-- Power Handler's Gloves	
 						},			
 						["qg"] = 98711, -- Kor'vas Bloodthorn			
 						["sourceQuestID"] = { 38819, 38727, 38725 }, -- Their Numbers Are Legion / Stop the Bombardment / Into the Foul Creche			
@@ -133,7 +138,8 @@ _.Zones =
 					}),				
 					q(38728, {	-- The Keystone			
 						["groups"] = {			
-							i(128955),	-- The Brood Queen's Veil	
+							i(128955),	-- The Brood Queen's Veil
+							i(133310),	-- The Brood Queen's Veil
 						},			
 						["qg"] = 97297, -- Cyana Nightglaive			
 						["sourceQuestID"] = { 39663 }, -- On Felbat Wings			
@@ -243,8 +249,8 @@ _.Zones =
 					}),
 					n(97370, { 	-- General Volroth
 						["groups"] = {	
-							a(i(128947)), -- Pit Lord's Cuffs
-							h(i(133313)), -- Pit Lord's Cuffs
+							i(128947), -- Pit Lord's Cuffs
+							i(133313), -- Pit Lord's Cuffs
 						},
 						["questID"] = 40234,
 					}),
@@ -266,7 +272,10 @@ _.Zones =
 						n(-17, { -- Quests
 							q(38672, {	-- Breaking Out
 								["groups"] = {
+									i(132243), -- Fel-Etched Glaive
+									i(128956), -- Fel-Etched Glaive
 								},			
+								["description"] = "Maiev upgrades your uncommon Illidari Glaives to these two glaives.",
 								["qg"] = 92718, -- Maiev Shadowsong
 								["sourceQuestID"] = { 38729 }, -- Return to the Black Temple
 							}),
@@ -326,8 +335,8 @@ _.Zones =
 							}),
 							q(39685, { -- Frozen in Time
 								["groups"] = {
-									a(i(128949)), -- Infernal Firecord Sash
-									h(i(133315)), -- Infernal Firecord Sash
+									i(128949), -- Infernal Firecord Sash
+									i(133315), -- Infernal Firecord Sash
 								},
 								["qg"] = 97643, -- Kor'vas Bloodthorn
 								["sourceQuestID"] = { 39682 }, -- Grand Theft Felbat
@@ -340,8 +349,8 @@ _.Zones =
 							}),
 							q(40373, { -- A New Direction
 								["groups"] = {
-									a(i(138970)), -- Helm of Reaffirmed Purpose
-									h(i(141650)), -- Helm of Reaffirmed Purpose
+									i(138970), -- Helm of Reaffirmed Purpose
+									i(141650), -- Helm of Reaffirmed Purpose
 								},
 								["qg"] = 97644, -- Kor'vas Bloodthorn
 								["sourceQuestID"] = { 39686 }, -- All The Way Up

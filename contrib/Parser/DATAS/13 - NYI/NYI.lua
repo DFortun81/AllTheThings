@@ -3,6 +3,10 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	i(150715), -- Illidari Warglaive
+	i(142526), -- Glaive of the Fallen
+	i(134110), -- Hidden Helm
+	un(1, i(44972)), -- Alarming Clockbot (NOT IN USE)
 	un(1, i(24137)), -- PH Plate Ramparts Reward
 	un(1, i(33964)), -- Helm of the Stormcaller - Never Added
 	un(3, i(19160)), -- Contest Winner's Tabard   [NOTE: Temporarily here until we get groups working with un/u tag again}
@@ -373,8 +377,13 @@ i(150749),	-- Moonglow Water
 i(150750),	-- Moonkissed Antidote
 i(21213),	-- Preserved Holly
 i(128510),	-- Exquisite Costume Set: "Edwin VanCleef"
+i(37816),	-- Preserved Brewfest Hops
+i(116828),	-- Exquisite Costume Set: "The Lich King"
+i(128643),	-- Exquisite Costume Set: "Deathwing"
+i(138990),	-- Exquisite Costume Set: "Grommash"
+i(151268),	-- Exquisite Costume Set: "Xavius"
+i(147884),	-- Tranquil Mechanical Yeti Costume
 -- Crossbows
--- Shirt
 -- Tabard
 -- Mounts
 i(37011),	-- Magic Broom
@@ -387,4 +396,18 @@ i(151626),	-- Sapphire Qiraji Resonating Crystal
 i(70104),	-- Not Found???
 -- Warglaives
 -- Cosmetic
+
+-----------------------
+-- TRASH GREYS/WHITES -
+-----------------------
+-- Toy
+i(105914), -- Danger Detector Boots
+i(105915), -- Danger Detector Harness
+-- Shirt
+i(53869), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
+i(60619), -- No Shirt
+i(63074), -- "Behind You!" Shirt
+i(129294), -- Bonespeaker Tatoos
+i(137118), -- The Crone's Shirt
+i(137552), -- Purple Shirt
 };

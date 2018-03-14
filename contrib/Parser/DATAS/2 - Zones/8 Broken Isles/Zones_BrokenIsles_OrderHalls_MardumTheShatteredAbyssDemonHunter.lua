@@ -564,6 +564,22 @@ _.Zones =
 						}),
 						n(-2, { --  Vendors
 							n(116621, { --Demissya Gladestrider <Illidari Provisioner's Assistant>
+								i(112458), -- Illidari Warglaive
+								i(129181), -- Illidari Warglaive
+								i(112450), -- Illidari Blindfold
+								i(112461), -- Illidari Chain
+								i(112456), -- Illidari Shoulders
+								i(112462), -- Illidari Drape
+								i(112454), -- Illidari Robe
+								i(112452), -- Illidari Bracers
+								i(112455), -- Illidari Gloves
+								i(112453), -- Illidari Belt
+								i(112451), -- Illidari Leggings
+								i(112457), -- Illidari Boots
+								i(112459), -- Illidari Ring
+								i(112460), -- Illidari Band
+								i(123959), -- Demon Trophy
+								i(123960), -- Charm of Demonic 
 								i(133320), -- Illidari Blindfold
 								i(133318), -- Illidari Shoulders
 								i(112462), -- Illidari Drape
@@ -574,17 +590,23 @@ _.Zones =
 								i(133319), -- Illidari Leggings
 								i(133324), -- Illidari Boots
 								i(128955), -- The Brood Queen's Veil
+								i(133310), -- The Brood Queen's Veil
 								i(138970), -- Helm of Reaffirmed Purpose
+								i(141650), -- Helm of Reaffirmed Purpose
 								i(128950), -- Demon-Rend Shoulderblades
-								i(128944), -- Vora's Silk Drape
+								i(133311), -- Demon-Rend Shoulderblades
 								i(128952), -- Torment Ender's Chestguard
+								i(133312), -- Torment Ender's Chestguard
 								i(128947), -- Pit Lord's Cuffs
-								i(128954), -- Power Handler's Gloves
-								i(128949), -- Infernal Firecord Sash
+								i(133313), -- Pit Lord's Cuffs
+								i(128954), -- Power Handler's Gloves	
+								i(133314), -- Power Handler's Gloves
+								i(128949),  -- Infernal Firecord Sash
+								i(133315), -- Infernal Firecord Sash
 								i(128951), -- Leggings of Sacrifice
+								i(133316), -- Leggings of Sacrifice
 								i(128953), -- Treads of Illidari Supremacy
-								i(132243), -- Fel-Etched Glaive
-								i(128956), -- Fel-Etched Glaive
+								i(133317), -- Treads of Illidari 
 							}),
 							n(112407, { -- Falara Nightsong <Illidari Provisioner>
 								["groups"] = {

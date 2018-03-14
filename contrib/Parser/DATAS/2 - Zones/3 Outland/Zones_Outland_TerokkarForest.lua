@@ -86,6 +86,11 @@ _.Zones =
 --]]				
 				}),								
 				n(-25, { 	-- Pet Battle
+					i(27445, { -- Magical Crawdad Box
+						["groups"] = {
+						},
+						["description"] = "This is obtained by fishing in Highland Mixed School.",
+					}),
 					p(514), -- Flayer Youngling
 					p(417), -- Rat
 					p(397), -- Skunk

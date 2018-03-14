@@ -1156,6 +1156,9 @@ _.Zones =
 						}),
 						n(94398, { -- Fleet Command Table
 							["groups"] = {
+								ach(10255, { -- Petty Officer
+									i(128363), -- Captain's Hat
+								}),
 								i(128391, { -- Iron Fleet Treasure Chest [Raid Finder]
 									["groups"] = {
 										i(128194),	-- Snarlwood Recurve Bow

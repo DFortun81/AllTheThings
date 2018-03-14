@@ -67,7 +67,6 @@ _.WorldEvents =
 								["icon"] = "Interface\\Icons\\inv_chest_plate19",
 							}),
 						},
-						["u"] = 12,
 						["icon"] = "Interface\\Icons\\expansionicon_wrathofthelichking",
 					}),
 					n(-523, { -- Cataclysm
