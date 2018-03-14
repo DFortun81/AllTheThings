@@ -305,9 +305,36 @@ _.Zones =
 						--[[
 						crit(6, { -- Falcon Watch
 						}),
-						crit(7, { -- Green, But Not Orcs
-						}),
 						--]]
+						crit(7, { -- Green, But Not Orcs [Missing Rest that procs achieve]
+							q(10236, {	-- Outland Sucks!	
+								["groups"] = {	
+								},	
+								["qg"] = 16915,	-- Foreman Razelcraz
+								["sourceQuestID"] = { 0 },	-- 
+							}),		
+							q(10238, {	-- How to Serve Goblins	
+								["groups"] = {	
+								},	
+								["qg"] = 16915,	-- Foreman Razelcraz
+								["sourceQuestID"] = { 10236 },	-- Outland Sucks!
+							}),		
+							q(10629, {	-- Shizz Work	
+								["groups"] = {	
+								},	
+								["qg"] = 16915,	-- Foreman Razelcraz
+								["sourceQuestID"] = { 10238 },	-- How to Serve Goblins
+							}),		
+							q(10630, {	-- Beneath Thrallmar	
+								["groups"] = {
+									i(30856),	-- Underworld Helm
+									i(30855),	-- Shatterstone Pick
+									i(30857),	-- Deep Core Lantern
+								},	
+								["qg"] = 16915,	-- Foreman Razelcraz
+								["sourceQuestID"] = { 10629 },	-- Shizz Work
+							}),		
+						}),
 						crit(8, { -- Cenarion Post
 							i(29476, { -- Crimson Crystal Shard
 								q(10134, { -- Crimson Crystal Clue
@@ -474,11 +501,6 @@ _.Zones =
 						q(9418,  {  -- Avruu's Orb
 							i(25489),
 						}),
-						q(10630,  {  -- Beneath Thrallmar
-							i(30856),
-							i(30855),
-							i(30857),
-						}),
 						q(45415),	-- Between Worlds
 						qh(  9397),	-- Birds of a Feather
 						q(11516),	-- Blast the Gateway
@@ -558,8 +580,7 @@ _.Zones =
 						}),
 						qa( 11818),	-- Honor the Flame
 						qh( 11851),	-- Honor the Flame
-						qa( 10764),	-- Hotter than Hell					
-						q(10238),	-- How to Serve Goblins
+						qa( 10764),	-- Hotter than Hell	
 						qa( 10483),	-- Ill Omens
 						q(10161,  {  -- In Case of Emergency...
 							i(25981),
@@ -608,7 +629,6 @@ _.Zones =
 						}),
 						q(10403),	-- Naladu
 						q(31922),	-- Nicki Tinytech
-						q(10236),	-- Outland Sucks!
 						qa( 10400),	-- Overlord
 						qa( 45412),	-- Protection: Aid of the Illidari
 						qa( 47022),	-- Protection: Aid of the Illidari
@@ -624,7 +644,6 @@ _.Zones =
 						qa(  9430),	-- Sha'naar Relics
 						qh( 14065),	-- Sharing a Bountiful Feast
 						qa( 10340),	-- Shatter Point
-						q(10629),	-- Shizz Work
 						q(9356),	-- Smooth as Butter
 						qh(9387,  {  -- Source of the Corruption
 							i(25915),
