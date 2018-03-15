@@ -515,20 +515,28 @@ profession(197, 3908, { -- Tailoring
 		i(82403),	-- Windwool Boots
 	}),
 	n(-158, { -- Warlords of Draenor
-		WOD_CRAFTED_ITEM(114810),	-- Hexweave Cowl
-		WOD_CRAFTED_ITEM(114828),	-- Sumptuous Cowl
-		WOD_CRAFTED_ITEM(114809),	-- Hexweave Mantle
-		WOD_CRAFTED_ITEM(114819),	-- Brilliant Hexweave Cloak
-		WOD_CRAFTED_ITEM(114818),	-- Nimble Hexweave Cloak
-		WOD_CRAFTED_ITEM(114817),	-- Powerful Hexweave Cloak
-		WOD_CRAFTED_ITEM(114813),	-- Hexweave Robe
-		WOD_CRAFTED_ITEM(114829),	-- Sumptuous Robes
-		WOD_CRAFTED_ITEM(114814),	-- Hexweave Bracers
-		WOD_CRAFTED_ITEM(114812),	-- Hexweave Gloves
-		WOD_CRAFTED_ITEM(114816),	-- Hexweave Belt
-		WOD_CRAFTED_ITEM(114811),	-- Hexweave Leggings
-		WOD_CRAFTED_ITEM(114831),	-- Sumptuous Leggings
-		WOD_CRAFTED_ITEM(114815),	-- Hexweave Slippers
+		n(-322, {	-- Cloak
+			i(128012, { -- Hexweave Essence
+				WOD_CRAFTED_ITEM(114819),	-- Brilliant Hexweave Cloak
+				WOD_CRAFTED_ITEM(114818),	-- Nimble Hexweave Cloak
+				WOD_CRAFTED_ITEM(114817),	-- Powerful Hexweave Cloak
+			}),
+		}),
+		n(-43, { -- Cloth
+			i(114828),	-- Sumptuous Cowl
+			i(114829),	-- Sumptuous Robes
+			i(114831),	-- Sumptuous Leggings
+			i(128012, { -- Hexweave Essence
+				WOD_CRAFTED_ITEM(114810),	-- Hexweave Cowl
+				WOD_CRAFTED_ITEM(114809),	-- Hexweave Mantle
+				WOD_CRAFTED_ITEM(114813),	-- Hexweave Robe
+				WOD_CRAFTED_ITEM(114814),	-- Hexweave Bracers
+				WOD_CRAFTED_ITEM(114812),	-- Hexweave Gloves
+				WOD_CRAFTED_ITEM(114816),	-- Hexweave Belt
+				WOD_CRAFTED_ITEM(114811),	-- Hexweave Leggings
+				WOD_CRAFTED_ITEM(114815),	-- Hexweave Slippers
+			}),
+		}),
 	}),
 	n(-159, { -- Legion
 		i(126998),	-- Imbued Silkweave Hood
