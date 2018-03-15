@@ -15,21 +15,20 @@
 -- 15 This item has a Source ID, but apparently cannot be used for transmog and will likely be unlearnable. (This probably needs to be moved to another file, not technically unobtainable, more unlearnable)
 -- 16 These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.
 
-if not AllTheThingsAD then AllTheThingsAD = {}; end
-if not AllTheThingsAD.Items then AllTheThingsAD.Items = {}; end
+if not _.ItemDB then _.ItemDB = {}; end
 local u = function(itemID, unobtainable)
-	local item = AllTheThingsAD.Items[itemID];
+	local item = _.ItemDB[itemID];
 	if not item then
 		item = {};
-		AllTheThingsAD.Items[itemID] = item;
+		_.ItemDB[itemID] = item;
 	end
 	item.u = unobtainable;
 end
 local ub = function(itemID, bonusID, unobtainable)
-	local item = AllTheThingsAD.Items[itemID];
+	local item = _.ItemDB[itemID];
 	if not item then
 		item = {};
-		AllTheThingsAD.Items[itemID] = item;
+		_.ItemDB[itemID] = item;
 	end
 	if not item.v then item.v = {}; end
 	item.v[bonusID] = { ["u"] = unobtainable };
