@@ -758,30 +758,30 @@ profession(164, 2018, { -- Blacksmithing
 	}),
 	n(-158, { -- Warlords of Draenor
 		n(-319, { -- Weapons
-			i(128016, {					-- Steelforged Essence
-				WOD_CRAFTED_ITEM(116647),	-- Steelforged Shield
-				WOD_CRAFTED_ITEM(120261),	-- Steelforged Aegis
-				WOD_CRAFTED_ITEM(116453),	-- Steelforged Greataxe
-				WOD_CRAFTED_ITEM(116454),	-- Steelforged Saber
-				WOD_CRAFTED_ITEM(116644),	-- Steelforged Dagger
-				WOD_CRAFTED_ITEM(116646),	-- Steelforged Hammer
-				WOD_CRAFTED_ITEM(120259),	-- Steelforged Axe
-			})
+			i(128016, { -- Steelforged Essence
+				WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
+				WOD_CRAFTED_ITEM(120261), -- Steelforged Aegis
+				WOD_CRAFTED_ITEM(116453), -- Steelforged Greataxe
+				WOD_CRAFTED_ITEM(116454), -- Steelforged Saber
+				WOD_CRAFTED_ITEM(116644), -- Steelforged Dagger
+				WOD_CRAFTED_ITEM(116646), -- Steelforged Hammer
+				WOD_CRAFTED_ITEM(120259), -- Steelforged Axe
+			}),
 		}),
 		n(-46,{ -- Plate
-			i(128015, {					-- Truesteel Essence
-				WOD_CRAFTED_ITEM(114230),	-- Truesteel Helm
-				WOD_CRAFTED_ITEM(114231),	-- Truesteel Pauldrons
-				WOD_CRAFTED_ITEM(114232),	-- Truesteel Breastplate
-				WOD_CRAFTED_ITEM(114236),	-- Truesteel Armguards
-				WOD_CRAFTED_ITEM(114237),	-- Truesteel Gauntlets
-				WOD_CRAFTED_ITEM(114233),	-- Truesteel Waistguard
-				WOD_CRAFTED_ITEM(114234),	-- Truesteel Greaves
-				WOD_CRAFTED_ITEM(114235),	-- Truesteel Boots
-				WOD_CRAFTED_ITEM(116426),	-- Smoldering Helm
-				WOD_CRAFTED_ITEM(116427),	-- Smoldering Breastplate
-				WOD_CRAFTED_ITEM(116425),	-- Smoldering Greaves
-			})
+			i(116426), -- Smoldering Helm
+			i(116427), -- Smoldering Breastplate
+			i(116425), -- Smoldering Greaves
+			i(128015, { -- Truesteel Essence
+				WOD_CRAFTED_ITEM(114230), -- Truesteel Helm
+				WOD_CRAFTED_ITEM(114231), -- Truesteel Pauldrons
+				WOD_CRAFTED_ITEM(114232), -- Truesteel Breastplate
+				WOD_CRAFTED_ITEM(114236), -- Truesteel Armguards
+				WOD_CRAFTED_ITEM(114237), -- Truesteel Gauntlets
+				WOD_CRAFTED_ITEM(114233), -- Truesteel Waistguard
+				WOD_CRAFTED_ITEM(114234), -- Truesteel Greaves
+				WOD_CRAFTED_ITEM(114235), -- Truesteel Boots
+			}),
 		}),
 	}),
 	n(-159, { -- Legion

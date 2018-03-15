@@ -842,35 +842,41 @@ profession(165, 2108, { -- Leatherworking
 	}),
 	n(-158, { 	-- Warlords of Draenor
 		n(-322, { 	-- Cloak
-			WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
-			WOD_CRAFTED_ITEM(116174),	-- Nimble Burnished Cloak
-			WOD_CRAFTED_ITEM(116171),	-- Powerful Burnished Cloak
+			i(128014, { -- Burnished Essence
+				WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
+				WOD_CRAFTED_ITEM(116174),	-- Nimble Burnished Cloak
+				WOD_CRAFTED_ITEM(116171),	-- Powerful Burnished Cloak
+			}),
 		}),
 		n(-44, { 	-- Leather
-			WOD_CRAFTED_ITEM(116164),	-- Journeying Helm
-			WOD_CRAFTED_ITEM(116165),	-- Journeying Robes
-			WOD_CRAFTED_ITEM(116166),	-- Journeying Slacks
-			WOD_CRAFTED_ITEM(116182),	-- Supple Boots
-			WOD_CRAFTED_ITEM(116181),	-- Supple Bracers
-			WOD_CRAFTED_ITEM(116179),	-- Supple Gloves
-			WOD_CRAFTED_ITEM(116177),	-- Supple Helm
-			WOD_CRAFTED_ITEM(116178),	-- Supple Leggings
-			WOD_CRAFTED_ITEM(116176),	-- Supple Shoulderguards
-			WOD_CRAFTED_ITEM(116180),	-- Supple Vest
-			WOD_CRAFTED_ITEM(116183),	-- Supple Waistguard
+			i(116164),	-- Journeying Helm
+			i(116165),	-- Journeying Robes
+			i(116166),	-- Journeying Slacks
+			i(128014, { -- Burnished Essence
+				WOD_CRAFTED_ITEM(116182),	-- Supple Boots
+				WOD_CRAFTED_ITEM(116181),	-- Supple Bracers
+				WOD_CRAFTED_ITEM(116179),	-- Supple Gloves
+				WOD_CRAFTED_ITEM(116177),	-- Supple Helm
+				WOD_CRAFTED_ITEM(116178),	-- Supple Leggings
+				WOD_CRAFTED_ITEM(116176),	-- Supple Shoulderguards
+				WOD_CRAFTED_ITEM(116180),	-- Supple Vest
+				WOD_CRAFTED_ITEM(116183),	-- Supple Waistguard
+			}),
 		}),
 		n(-45, { 	-- Mail
-			WOD_CRAFTED_ITEM(116167),	-- Traveling Helm
-			WOD_CRAFTED_ITEM(116169),	-- Traveling Leggings
-			WOD_CRAFTED_ITEM(116168),	-- Traveling Tunic
-			WOD_CRAFTED_ITEM(116194),	-- Wayfaring Belt
-			WOD_CRAFTED_ITEM(116193),	-- Wayfaring Boots
-			WOD_CRAFTED_ITEM(116192),	-- Wayfaring Bracers
-			WOD_CRAFTED_ITEM(116190),	-- Wayfaring Gloves
-			WOD_CRAFTED_ITEM(116188),	-- Wayfaring Helm
-			WOD_CRAFTED_ITEM(116189),	-- Wayfaring Leggings
-			WOD_CRAFTED_ITEM(116187),	-- Wayfaring Shoulderguards
-			WOD_CRAFTED_ITEM(116191),	-- Wayfaring Tunic
+			i(116167),	-- Traveling Helm
+			i(116169),	-- Traveling Leggings
+			i(116168),	-- Traveling Tunic
+			i(128014, { -- Burnished Essence
+				WOD_CRAFTED_ITEM(116194),	-- Wayfaring Belt
+				WOD_CRAFTED_ITEM(116193),	-- Wayfaring Boots
+				WOD_CRAFTED_ITEM(116192),	-- Wayfaring Bracers
+				WOD_CRAFTED_ITEM(116190),	-- Wayfaring Gloves
+				WOD_CRAFTED_ITEM(116188),	-- Wayfaring Helm
+				WOD_CRAFTED_ITEM(116189),	-- Wayfaring Leggings
+				WOD_CRAFTED_ITEM(116187),	-- Wayfaring Shoulderguards
+				WOD_CRAFTED_ITEM(116191),	-- Wayfaring Tunic
+			}),
 		}),
 	}),
 	n(-159, { 	-- Legion

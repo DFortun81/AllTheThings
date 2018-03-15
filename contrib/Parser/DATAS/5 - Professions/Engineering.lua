@@ -238,11 +238,13 @@ profession(202, 4036, { -- Engineering
 		i(77538),	-- Specialized Retinal Armor
 	}),
 	n(-158, { -- Warlords of Draenor
-		WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
-		WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades
-		WOD_CRAFTED_ITEM(109171),	-- Night-Vision Mechshades
-		WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades
-		WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
+		i(128011, { -- Linkgrease Locksprocket
+			WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
+			WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades
+			WOD_CRAFTED_ITEM(109171),	-- Night-Vision Mechshades
+			WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades
+			WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
+		}),
 	}),
 	n(-159, { -- Legion
 		i(132500),	-- Blink-Trigger Headgun
