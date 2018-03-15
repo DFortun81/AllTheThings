@@ -235,7 +235,7 @@ _.Zones =
 					n(5840, {	-- Dark Iron Steamsmith
 						["groups"] = {
 							dr(3, i(10463, { -- Pattern: Shadoweave Mask
-								desc(i(10025, "Required for the |cff3399ffLucid Nightmare|r riddle mount."))	-- Shadoweave Mask
+								desc(i(10025), "Required for the |cff3399ffLucid Nightmare|r riddle mount.")	-- Shadoweave Mask
 							}))
 						},
 						["description"] = "As of 7.3, these mobs can now drop |cff3399ffPattern: Shadoweave Mask|r which is required for the |cff3399ffLucid Nightmare|r riddle mount."
