@@ -489,7 +489,7 @@ _.Zones =
 							["questID"] = 48719,
 						}),
 					}),
-					n(-90, { 	-- Shadowguard Incursion
+					sz(12069,9, { 	-- Shadowguard Incursion
 						["groups"] = {
 							i(152204, { -- Glowing Key Fragment
 								q(48231, { -- Armor of the Triumvirate
