@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(71, { 	-- Grim Batol
+			inst(71, { 	-- Grim Batol
 				["groups"] = {
 					d(1, {		-- Normal
 						n(-17, {	-- Quests 				

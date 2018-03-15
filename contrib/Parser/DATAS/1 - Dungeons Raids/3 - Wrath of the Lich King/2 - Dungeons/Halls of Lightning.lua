@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(275, { 	-- Halls of Lightning
+			inst(275, { 	-- Halls of Lightning
 				["groups"] = {
 					d(1, {		-- Normal
 						n(0, {		-- Zone Drop

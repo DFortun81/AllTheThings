@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(273, { 	-- Drak'Tharon Keep
+			inst(273, { 	-- Drak'Tharon Keep
 				["groups"] = {
 					n(-47, {     -- Lunar Festival
 						["groups"] = {

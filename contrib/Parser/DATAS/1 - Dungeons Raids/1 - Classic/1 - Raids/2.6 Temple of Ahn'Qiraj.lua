@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(744, { 	-- Temple of Ahn'Qiraj
+			inst(744, { 	-- Temple of Ahn'Qiraj
 				["groups"] = {
 					n(-17, { -- Quests
 						n(15502, { -- Andorgos <Brood of Malygos>

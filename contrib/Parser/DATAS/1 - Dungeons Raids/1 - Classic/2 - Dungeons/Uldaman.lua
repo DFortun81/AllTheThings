@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(239, { 	-- Uldaman
+			inst(239, { 	-- Uldaman
 				["groups"] = {
 					n(-17, {	-- Quests 			
 						o(131474, {	-- The Discs of Norgannon

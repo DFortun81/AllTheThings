@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(762, { 	-- Darkheart Thicket
+			inst(762, { 	-- Darkheart Thicket
 				["groups"] = {
 					n(-17, {	-- Quests 				
 						q(40890, {

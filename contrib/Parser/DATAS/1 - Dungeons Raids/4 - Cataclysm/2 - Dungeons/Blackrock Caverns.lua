@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(66, { 	-- Blackrock Caverns
+			inst(66, { 	-- Blackrock Caverns
 				["groups"] = {
 					n(-17, {	-- Quests
 						n(49476, { -- Finkle Einhorn

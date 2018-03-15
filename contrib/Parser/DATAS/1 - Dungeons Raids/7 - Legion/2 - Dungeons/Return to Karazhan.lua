@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(860, { 	-- Return to Karazhan
+			inst(860, { 	-- Return to Karazhan
 				["groups"] = {
 					d(2, {		-- Heroic
 						["ids"] = { 1726 }, -- Heroic

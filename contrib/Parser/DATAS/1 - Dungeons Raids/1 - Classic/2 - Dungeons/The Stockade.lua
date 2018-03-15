@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(238, { 	-- The Stockade
+			inst(238, { 	-- The Stockade
 				["groups"] = {
 					n(-17, {			-- Quests 
 						qg(46410, qa(27737)),	-- By Fire Be Saved!

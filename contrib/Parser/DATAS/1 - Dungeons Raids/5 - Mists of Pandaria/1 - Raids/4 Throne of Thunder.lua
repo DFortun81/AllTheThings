@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(362, { 	-- Throne of Thunder
+			inst(362, { 	-- Throne of Thunder
 				["groups"] = {
 					d(7, {		-- LFR
 						["ignoreBonus"] = true,

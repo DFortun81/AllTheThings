@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(247, { 	-- Auchenai Crypts
+			inst(247, { 	-- Auchenai Crypts
 				["groups"] = {
 					n(18497, {
 						i(23605, {

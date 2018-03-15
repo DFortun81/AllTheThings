@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(250, { 	-- Mana Tombs
+			inst(250, { 	-- Mana Tombs
 				["groups"] = {
 					model(20468, n(18314, {
 						i(23615, {

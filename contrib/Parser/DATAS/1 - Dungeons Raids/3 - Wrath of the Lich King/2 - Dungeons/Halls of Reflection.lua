@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(276, { 	-- Halls of Reflection
+			inst(276, { 	-- Halls of Reflection
 				["groups"] = {
 					n(-17, {	-- Quests 	
 						a(q(24711)),	-- Frostmourne, No actual awards.

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(246, { 	-- Scholomance
+			inst(246, { 	-- Scholomance
 				["groups"] = {
 					d(1, {		-- Normal
 						n(0, { 		-- Zone Drop

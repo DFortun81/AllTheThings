@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(457, { 	-- Blackrock Foundry
+			inst(457, { 	-- Blackrock Foundry
 				["groups"] = {
 					d(17, {		-- LFR
 						["ids"] = { 3524 }, 

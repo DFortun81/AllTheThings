@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(302, { 	-- Stormstout Brewery
+			inst(302, { 	-- Stormstout Brewery
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 3543 }, -- Normal

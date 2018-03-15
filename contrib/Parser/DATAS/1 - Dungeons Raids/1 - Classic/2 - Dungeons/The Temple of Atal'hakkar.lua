@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(237, { 	-- The Temple of Atal'hakkar
+			inst(237, { 	-- The Temple of Atal'hakkar
 				["groups"] = {
 					n(-47, {	-- Lunar Festival						
 						["groups"] = {						

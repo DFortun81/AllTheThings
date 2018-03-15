@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(65, { 	-- Throne of the Tides
+			inst(65, { 	-- Throne of the Tides
 				["groups"] = {
 					d(1, {		-- Normal
 						n(-17, {	-- Quests 				

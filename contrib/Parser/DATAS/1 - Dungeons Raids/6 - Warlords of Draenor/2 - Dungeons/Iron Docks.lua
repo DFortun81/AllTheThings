@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(558, { 	-- Iron Docks
+			inst(558, { 	-- Iron Docks
 				["groups"] = {
 					d(1, {		-- Normal
 						["itemModID"] = 18,

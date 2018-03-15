@@ -6,7 +6,7 @@ _.Instances =
 {
 	{
 		["groups"] = {
-			c(945, { -- Seat of the Triumvirate
+			inst(945, { -- Seat of the Triumvirate
 				["groups"] = {
 					i(152204, { -- Glowing Key Fragment
 						q(48231, { -- Armor of the Triumvirate

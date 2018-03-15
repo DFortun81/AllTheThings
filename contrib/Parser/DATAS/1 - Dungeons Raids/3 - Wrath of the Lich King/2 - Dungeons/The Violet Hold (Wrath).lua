@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(283, { 	-- The Violet Hold (Wrath)
+			inst(283, { 	-- The Violet Hold (Wrath)
 				["groups"] = {
 					n(-17, {	-- Quests
 						q(29829),	-- Discretion is Key

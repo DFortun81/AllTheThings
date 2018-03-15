@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(280, { 	-- The Forge of Souls
+			inst(280, { 	-- The Forge of Souls
 				["groups"] = {
 					n(-17, {	-- Quests 	
 						a(q(24499)),	-- Echoes of Tortured Souls, No actual awards.

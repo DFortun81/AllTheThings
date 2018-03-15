@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(77, { 	-- Zul'Aman
+			inst(77, { 	-- Zul'Aman
 				["groups"] = {
 					n(-17, {	-- Quests 
 						qg(23761, q(11165)),	-- A Troll Among Trolls

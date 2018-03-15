@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(67, { 	-- The Stonecore
+			inst(67, { 	-- The Stonecore
 				["groups"] = {
 					d(1, {		-- Normal
 						n(-17, {	-- Quests 				

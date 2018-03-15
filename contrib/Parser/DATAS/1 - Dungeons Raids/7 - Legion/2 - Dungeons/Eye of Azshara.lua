@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(716, { 	-- Eye of Azshara
+			inst(716, { 	-- Eye of Azshara
 				["groups"] = {
 					n(-17, {	-- Quests 		
 						q(42213, {

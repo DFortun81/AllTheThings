@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(279, { 	-- The Culling of Stratholme
+			inst(279, { 	-- The Culling of Stratholme
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						i(37117),	-- King's Square Bracers

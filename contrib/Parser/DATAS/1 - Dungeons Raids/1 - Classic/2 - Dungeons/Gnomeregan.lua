@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(231, { 	-- Gnomeregan
+			inst(231, { 	-- Gnomeregan
 				["groups"] = {
 					n(-17, {			-- Quests 			
 						qg(44018, qa(26944)),	-- Exploring Gnomeregan

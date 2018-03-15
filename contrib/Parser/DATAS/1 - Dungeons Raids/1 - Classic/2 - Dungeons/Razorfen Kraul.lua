@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(234, { 	-- Razorfen Kraul
+			inst(234, { 	-- Razorfen Kraul
 				["groups"] = {
 					n(-17, {			-- Quests 			
 						q(26905,{	-- Agamaggan's Charge

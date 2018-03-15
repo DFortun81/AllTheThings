@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(747, { 	-- Magtheridon's Lair
+			inst(747, { 	-- Magtheridon's Lair
 				["groups"] = {
 					cr(17257, e(1566, {
 							a(i(32385, {	-- Magtheridon's Head (Alliance)

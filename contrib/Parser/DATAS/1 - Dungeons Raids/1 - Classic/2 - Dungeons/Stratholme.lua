@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(236, {    -- Stratholme
+			inst(236, {    -- Stratholme
 				["groups"] = {
 					q(35563, {	-- Main Gate
 						n(-47, {	-- Lunar Festival						

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(253, { 	-- Shadow Labyrinth
+			inst(253, { 	-- Shadow Labyrinth
 				["groups"] = {
 					d(1, {		-- Normal
 						["groups"] = {

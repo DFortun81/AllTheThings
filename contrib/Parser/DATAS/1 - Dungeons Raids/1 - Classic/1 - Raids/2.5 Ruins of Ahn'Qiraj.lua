@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(743, { 	-- Ruins of Ahn'Qiraj
+			inst(743, { 	-- Ruins of Ahn'Qiraj
 				["groups"] = {
 					e(1537, { -- Kurinnaxx
 						["groups"] = {

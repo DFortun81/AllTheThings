@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(745, { 	-- Karazhan (Raid)
+			inst(745, { 	-- Karazhan (Raid)
 				["groups"] = {
 					n(-2, {		-- Vendors
 						n(16388, {  -- Koren

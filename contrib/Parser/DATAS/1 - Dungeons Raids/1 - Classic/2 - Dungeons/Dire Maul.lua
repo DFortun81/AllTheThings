@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(230, { 	-- Dire Maul
+			inst(230, { 	-- Dire Maul
 				["groups"] = {
 					n(-12, {	-- Warpwood Quarter [East - Demon]
 						["groups"] = {

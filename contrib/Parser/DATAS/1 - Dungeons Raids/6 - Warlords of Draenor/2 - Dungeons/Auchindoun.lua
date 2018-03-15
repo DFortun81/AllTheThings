@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(547, { 	-- Auchindoun
+			inst(547, { 	-- Auchindoun
 				["groups"] = {
 					d(1, {		-- Normal
 						["groups"] = {

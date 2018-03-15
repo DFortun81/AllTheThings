@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(249, { 	-- Magisters' Terrace
+			inst(249, { 	-- Magisters' Terrace
 				["groups"] = {
 					d(1, {		-- Normal
 						e(530, { -- Selin Fireheart

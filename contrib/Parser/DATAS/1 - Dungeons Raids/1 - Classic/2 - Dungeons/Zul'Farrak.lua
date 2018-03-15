@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(241, { 	-- Zul'Farrak
+			inst(241, { 	-- Zul'Farrak
 				["groups"] = {
 					n(-47, {	-- Lunar Festival						
 						["groups"] = {						

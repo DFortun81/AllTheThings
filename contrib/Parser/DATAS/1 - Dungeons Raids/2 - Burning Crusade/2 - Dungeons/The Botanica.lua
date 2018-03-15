@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(257, { 	-- The Botanica
+			inst(257, { 	-- The Botanica
 				["groups"] = {
 					model(17819, n(18422, {
 						i(24172, {

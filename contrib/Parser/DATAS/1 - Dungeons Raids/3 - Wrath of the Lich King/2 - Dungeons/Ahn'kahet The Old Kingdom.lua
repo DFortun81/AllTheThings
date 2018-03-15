@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(271, { 	-- Ahn'kahet: The Old Kingdom
+			inst(271, { 	-- Ahn'kahet: The Old Kingdom
 				["groups"] = {
 					n(-17, {	-- Quests 	
 						q(13187,{ 	-- The Faceless Ones

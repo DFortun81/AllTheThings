@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(248, { 	-- Hellfire Ramparts
+			inst(248, { 	-- Hellfire Ramparts
 				["groups"] = {
 					d(1, {		-- Normal
 						n(-17, {	-- Quests 				

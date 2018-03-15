@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(741, { 	-- Molten Core
+			inst(741, { 	-- Molten Core
 				["groups"] = {
 					n(0, {				-- Zone Drop
 						n(11673, { -- Ancient Core Hound

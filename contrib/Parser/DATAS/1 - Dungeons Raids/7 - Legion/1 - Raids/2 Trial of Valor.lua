@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(861, { 	-- Trial of Valor
+			inst(861, { 	-- Trial of Valor
 				["groups"] = {
 					n(-17, {	-- Quests 			
 						q(45088, {

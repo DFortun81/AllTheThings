@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(477, { 	-- Highmaul
+			inst(477, { 	-- Highmaul
 				["groups"] = {
 					d(17, {		-- LFR
 						ach(8986, { 	-- The Walled City	

@@ -7,7 +7,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(559, { 	-- Upper Blackrock Spire
+			inst(559, { 	-- Upper Blackrock Spire
 				["groups"] = {
 					nlq({ -- Legacy Quests
 						q(27445, { 	-- General Drakkisath, Hand of Nefarian

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(277, { 	-- Halls of Stone
+			inst(277, { 	-- Halls of Stone
 				["groups"] = {
 					n(-47, {     -- Lunar Festival
 						["groups"] = {

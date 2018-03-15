@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(73, { 	-- Blackwing Descent
+			inst(73, { 	-- Blackwing Descent
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						i(59466),	-- Ironstar's Impenetrable Cover

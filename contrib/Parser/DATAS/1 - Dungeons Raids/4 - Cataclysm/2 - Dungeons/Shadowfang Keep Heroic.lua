@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(64, { 	-- Shadowfang Keep
+			inst(64, { 	-- Shadowfang Keep
 				["groups"] = {
 					d(2, {		-- Heroic
 						["Lvl"] = 85,

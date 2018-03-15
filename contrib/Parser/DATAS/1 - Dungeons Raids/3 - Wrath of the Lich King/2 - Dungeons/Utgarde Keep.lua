@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(285, { 	-- Utgarde Keep
+			inst(285, { 	-- Utgarde Keep
 				["groups"] = {
 					n(-47, {     -- Lunar Festival
 						["groups"] = {

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(75, { 	-- Baradin Hold
+			inst(75, { 	-- Baradin Hold
 				["groups"] = {
 					e(139, { -- Argaloth
 						["groups"] = {

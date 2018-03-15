@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(742, { 	-- Blackwing Lair
+			inst(742, { 	-- Blackwing Lair
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						i(19436),	-- Cloak of Draconic Might

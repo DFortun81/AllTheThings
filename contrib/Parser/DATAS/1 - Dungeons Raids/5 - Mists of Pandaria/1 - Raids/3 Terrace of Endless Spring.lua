@@ -82,7 +82,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(320, { 	-- Terrace of Endless Spring
+			inst(320, { 	-- Terrace of Endless Spring
 				["groups"] = {
 					d(7, {		-- LFR
 						["ignoreBonus"] = true,

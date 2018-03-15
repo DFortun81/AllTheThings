@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(76, { 	-- Zul'Gurub
+			inst(76, { 	-- Zul'Gurub
 				["groups"] = {
 					nlq({ -- Legacy Quests
 						q(8201, { -- A Collection of Heads

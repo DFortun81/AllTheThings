@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(800, { 	-- Court of Stars
+			inst(800, { 	-- Court of Stars
 				["groups"] = {
 					d(2, {		-- Heroic
 						["ids"] = { 1726 }, -- Heroic

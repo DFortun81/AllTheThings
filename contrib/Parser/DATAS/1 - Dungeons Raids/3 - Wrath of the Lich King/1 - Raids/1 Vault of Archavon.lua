@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(753, { 	-- Vault of Archavon
+			inst(753, { 	-- Vault of Archavon
 				["groups"] = {
 					d(3, {
 						e(1599, { -- Koralon the Flame Watcher

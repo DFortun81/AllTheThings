@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(282, { 	-- The Oculus
+			inst(282, { 	-- The Oculus
 				["groups"] = {
 					n(-17, {	-- Quests
 						q(13126),	-- A Unified Front

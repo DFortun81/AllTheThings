@@ -79,7 +79,7 @@ _.Zones =
 						}),
 						n(93787, { -- Scouting Map
 							["groups"] = {
-								c(768, { -- The Emerald Nightmare
+								inst(768, { -- The Emerald Nightmare
 									["groups"] = {
 										i(139484, { -- Cache of Nightmarish Treasures
 											["groups"] = {

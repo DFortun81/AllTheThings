@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(707, { 	-- Vault of the Wardens
+			inst(707, { 	-- Vault of the Wardens
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 1826 }, -- Normal

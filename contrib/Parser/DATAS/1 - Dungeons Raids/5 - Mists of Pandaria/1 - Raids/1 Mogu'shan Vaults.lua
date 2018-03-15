@@ -82,7 +82,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(317, { 	-- Mogu'shan Vaults
+			inst(317, { 	-- Mogu'shan Vaults
 				["groups"] = {
 					d(7, {		-- LFR	
 						["ignoreBonus"] = true,

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(226, { 	-- Ragefire Chasm
+			inst(226, { 	-- Ragefire Chasm
 				["groups"] = {
 					n(-17, {	-- Quests
 						qg(61716, qh(30969)), -- A New Enemy

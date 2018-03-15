@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(740, { 	-- Black Rook Hold
+			inst(740, { 	-- Black Rook Hold
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 1826 }, -- Normal
