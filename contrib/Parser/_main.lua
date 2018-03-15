@@ -1,7 +1,4 @@
 AllTheThings = {};
-AllTheThingsAD = {};
-AllTheThingsAD.Items = {};
-app = AllTheThings;
 _ = AllTheThings;
 
 -- Used by the Harvester
@@ -55,194 +52,7 @@ local DifficultyDB = {
 };
 ALLIANCE_ONLY = { 1, 3, 4, 7, 11, 22, 25, 29, 30 };
 HORDE_ONLY = { 2, 5, 6, 8, 9, 10, 26, 27, 28 };
-WOD_CRAFTED_ITEM = function(id)
-	return 
-	{
-		["itemID"] = id,
-		["bonus"] = 525,
-		["groups"] = {
-			{
-				["itemID"] = id,
-				["bonus"] = 558,
-				["groups"] = {
-					{
-						["itemID"] = id,
-						["bonus"] = 559,
-						["groups"] = {
-							{
-								["itemID"] = id,
-								["bonus"] = 594,
-								["groups"] = {
-									{
-										["itemID"] = id,
-										["bonus"] = 619,
-										["groups"] = {
-											{
-												["itemID"] = id,
-												["bonus"] = 620,
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	};
-end
-
--- Construct a commonly formatted object.
-struct = function(field, id, t)
-	if not t then t = {};
-	elseif not t.groups then t = { ["groups"] = t }; end
-	t[field] = id;
-	return t;
-end
-
--- SHORTCUTS for Object Class Types
-artifact = function(id, t)								-- Create an ARTIFACT Object
-	return struct("artifactID", id, t);
-end
-ach = function(id, t)									-- Create an ACHIEVEMENT Object
-	return struct("achievementID", id, t);
-end
-battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
-	return struct("speciesID", id, t);
-end
-p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
-pet = p;												-- Create a BATTLE PET Object (alternative shortcut)
-battlepetability = function(id, t)						-- Create a BATTLE PET ABILITY Object
-	return struct("petAbilityID", id, t);
-end
-pa = battlepetability;									-- Create a BATTLE PET ABILITY Object (alternative shortcut)
-battlepettype = function(id, t)							-- Create a BATTLE PET TYPE Object
-	return struct("petTypeID", id, t);
-end
-pt = battlepettype;										-- Create a BATTLE PET TYPE Object (alternative shortcut)
-cl = function(id, t)									-- Create a CHARACTER CLASS Object
-	return struct("classID", id, t);
-end
-creature = function(id, t)								-- Create a CREATURE Object
-	return struct("creatureID", id, t);
-end
-cr = creature;											-- Create a CREATURE Object (alternative shortcut)
-d = function(id, t)										-- Create a DIFFICULTY Object
-	t = struct("difficultyID", id, t);
-	local db = DifficultyDB[id];
-	if db then t.itemModID = db.itemModID; end
-	return t;
-end
-e = function(id, t)										-- Create an ENCOUNTER Object
-	return struct("encounterID", id, t);
-end
-faction = function(id, t)								-- Create an FACTION Object
-	return struct("factionID", id, t);
-end
-follower = function(id, t)								-- Create an FOLLOWER Object
-	return struct("followerID", id, t);
-end
-gs = function(id, t)									-- Create a GEAR SET Object (IE: "Vestments of Prophecy")
-	return struct("setID", id, t);
-end
-gsh = function(id, t)									-- Create a GEAR SET HEADER Object (IE: "Season 1")
-	return struct("setHeaderID", id, t);
-end
-gssh = function(id, t)									-- Create a GEAR SET SUB HEADER Object (IE: "Gladiator")
-	return struct("setSubHeaderID", id, t);
-end
-heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
-	return struct("heirloomID", id, t);
-end
-inst = function(id, t)									-- Create an INSTANCE Object
-	return struct("instanceID", id, t);
-end
-item = function(id, t)									-- Create an ITEM Object
-	return struct("itemID", id, t);
-end
-i = item;												-- Create an ITEM Object (alternative shortcut)
-ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
-	t = struct("itemID", id, t);
-	t.ignoreBonus = true;
-	return t;
-end
-ill = function(id, t)									-- Create an ILLUSION Object
-	return struct("illusionID", id, t);
-end
-map = function(id, t)									-- Create a MAP Object
-	return struct("mapID", id, t);
-end
-m = map;												-- Create a MAP Object (alternative shortcut)
-npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
-	return struct("npcID", id, t);
-end
-n = npc;												-- Create an NPC Object (alternative shortcut)
-obj = function(id, t)									-- Create a WORLD OBJECT Object (an interactable, non-NPC object out in the world - like a chest)
-	return struct("objectID", id, t);
-end
-o = obj;												-- Create a WORLD OBJECT Object (alternative shortcut)
-prof = function(skillID, spellID, t)					-- Create a PROFESSION Object
-	t = struct("professionID", spellID, t);
-	t.requiredSkill = skillID;
-	return t;
-end
-profession = function(skillID, spellID, t)				-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, spellID, t);
-	_.Professions = { p };
-	return p;
-end
-quest = function(id, t)									-- Create a QUEST Object
-	return struct("questID", id, t);
-end
-q = quest;												-- Create a QUEST Object (alternative shortcut)
-race = function(id, t)									-- Create a RACE Object
-	return struct("raceID", id, t);
-end
-spell = function(id, t)									-- Create a SPELL Object
-	return struct("spellID", id, t);
-end
-sp = spell;												-- Create a SPELL Object (alternative shortcut)
-title = function(id, t)									-- Create a TITLE Object
-	return struct("titleID", id, t);
-end
-v = function(id, t)										-- Create a VIGNETTE Object
-	return struct("vignetteID", id, t);
-end
-
--- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
-a = function(t) t.races = ALLIANCE_ONLY; return t; end			-- Flag as Alliance Only
-desc = function(t, description)									-- Add a description to an object.
-	t.description = description;
-	return t;
-end
-dr = function(dropRate, t)										-- Add a Drop Rate to an object.
-	if t and t.itemID then
-		t.dr = dropRate;
-		return t;
-	else
-		--print("YOU CAN'T APPLY A DROP RATE TO A NON-OBJECT");
-		return {
-			["bubble"] = { "dr" }, -- This will tell the parser to "bubble up" the "dr" field to all of the items in the group.
-			["dr"] = dropRate,
-			["groups"] = t
-		};
-	end
-end
-h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
-lvl = function(lvl, t) t.lvl = id; return t; end				-- Add a Level Requirement to an object.
-qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object 
-qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
-qg = function(id, t) t.qg = id; return t; end					-- Add a Quest Giver to an object.
-style = function(s, t) t.style = s; return t; end				-- Stylize an object.
-un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
-
-
-
--- BEGIN UNFINISHED SECTION:
-
--- Item Lib
-app.ItemClassInfo = {
+ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]
 		"Herb Bag", -- [2]
@@ -457,7 +267,196 @@ app.ItemClassInfo = {
 		["class"] = "Consumable",
 	},
 };
+WOD_CRAFTED_ITEM = function(id)
+	return 
+	{
+		["itemID"] = id,
+		["bonus"] = 525,
+		["groups"] = {
+			{
+				["itemID"] = id,
+				["bonus"] = 558,
+				["groups"] = {
+					{
+						["itemID"] = id,
+						["bonus"] = 559,
+						["groups"] = {
+							{
+								["itemID"] = id,
+								["bonus"] = 594,
+								["groups"] = {
+									{
+										["itemID"] = id,
+										["bonus"] = 619,
+										["groups"] = {
+											{
+												["itemID"] = id,
+												["bonus"] = 620,
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	};
+end
 
+-- Construct a commonly formatted object.
+struct = function(field, id, t)
+	if not t then t = {};
+	elseif not t.groups and t[1] then
+		t = { ["groups"] = t };
+	end
+	if type(t) == "string" then
+		print(t);
+	end
+	t[field] = id;
+	return t;
+end
+
+-- SHORTCUTS for Object Class Types
+artifact = function(id, t)								-- Create an ARTIFACT Object
+	return struct("artifactID", id, t);
+end
+ach = function(id, t)									-- Create an ACHIEVEMENT Object
+	return struct("achievementID", id, t);
+end
+battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
+	return struct("speciesID", id, t);
+end
+p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
+pet = p;												-- Create a BATTLE PET Object (alternative shortcut)
+battlepetability = function(id, t)						-- Create a BATTLE PET ABILITY Object
+	return struct("petAbilityID", id, t);
+end
+pa = battlepetability;									-- Create a BATTLE PET ABILITY Object (alternative shortcut)
+battlepettype = function(id, t)							-- Create a BATTLE PET TYPE Object
+	return struct("petTypeID", id, t);
+end
+pt = battlepettype;										-- Create a BATTLE PET TYPE Object (alternative shortcut)
+cl = function(id, t)									-- Create a CHARACTER CLASS Object
+	return struct("classID", id, t);
+end
+creature = function(id, t)								-- Create a CREATURE Object
+	return struct("creatureID", id, t);
+end
+cr = creature;											-- Create a CREATURE Object (alternative shortcut)
+d = function(id, t)										-- Create a DIFFICULTY Object
+	t = struct("difficultyID", id, t);
+	local db = DifficultyDB[id];
+	if db then t.itemModID = db.itemModID; end
+	return t;
+end
+e = function(id, t)										-- Create an ENCOUNTER Object
+	return struct("encounterID", id, t);
+end
+faction = function(id, t)								-- Create an FACTION Object
+	return struct("factionID", id, t);
+end
+follower = function(id, t)								-- Create an FOLLOWER Object
+	return struct("followerID", id, t);
+end
+gs = function(id, t)									-- Create a GEAR SET Object (IE: "Vestments of Prophecy")
+	return struct("setID", id, t);
+end
+gsh = function(id, t)									-- Create a GEAR SET HEADER Object (IE: "Season 1")
+	return struct("setHeaderID", id, t);
+end
+gssh = function(id, t)									-- Create a GEAR SET SUB HEADER Object (IE: "Gladiator")
+	return struct("setSubHeaderID", id, t);
+end
+heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
+	return struct("heirloomID", id, t);
+end
+inst = function(id, t)									-- Create an INSTANCE Object
+	return struct("instanceID", id, t);
+end
+item = function(id, t)									-- Create an ITEM Object
+	return struct("itemID", id, t);
+end
+i = item;												-- Create an ITEM Object (alternative shortcut)
+ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
+	t = struct("itemID", id, t);
+	t.ignoreBonus = true;
+	return t;
+end
+ill = function(id, t)									-- Create an ILLUSION Object
+	return struct("illusionID", id, t);
+end
+map = function(id, t)									-- Create a MAP Object
+	return struct("mapID", id, t);
+end
+m = map;												-- Create a MAP Object (alternative shortcut)
+npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
+	return struct("npcID", id, t);
+end
+n = npc;												-- Create an NPC Object (alternative shortcut)
+obj = function(id, t)									-- Create a WORLD OBJECT Object (an interactable, non-NPC object out in the world - like a chest)
+	return struct("objectID", id, t);
+end
+o = obj;												-- Create a WORLD OBJECT Object (alternative shortcut)
+prof = function(skillID, spellID, t)					-- Create a PROFESSION Object
+	t = struct("professionID", spellID, t);
+	t.requiredSkill = skillID;
+	return t;
+end
+profession = function(skillID, spellID, t)				-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
+	local p = prof(skillID, spellID, t);
+	_.Professions = { p };
+	return p;
+end
+quest = function(id, t)									-- Create a QUEST Object
+	return struct("questID", id, t);
+end
+q = quest;												-- Create a QUEST Object (alternative shortcut)
+race = function(id, t)									-- Create a RACE Object
+	return struct("raceID", id, t);
+end
+spell = function(id, t)									-- Create a SPELL Object
+	return struct("spellID", id, t);
+end
+sp = spell;												-- Create a SPELL Object (alternative shortcut)
+title = function(id, t)									-- Create a TITLE Object
+	return struct("titleID", id, t);
+end
+v = function(id, t)										-- Create a VIGNETTE Object
+	return struct("vignetteID", id, t);
+end
+
+-- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
+a = function(t) t.races = ALLIANCE_ONLY; return t; end			-- Flag as Alliance Only
+desc = function(t, description)									-- Add a description to an object.
+	t.description = description;
+	return t;
+end
+dr = function(dropRate, t)										-- Add a Drop Rate to an object.
+	if t and t.itemID then
+		t.dr = dropRate;
+		return t;
+	else
+		--print("YOU CAN'T APPLY A DROP RATE TO A NON-OBJECT");
+		return {
+			["bubble"] = { "dr" }, -- This will tell the parser to "bubble up" the "dr" field to all of the items in the group.
+			["dr"] = dropRate,
+			["groups"] = t
+		};
+	end
+end
+h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
+lvl = function(lvl, t) t.lvl = id; return t; end				-- Add a Level Requirement to an object.
+qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object 
+qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
+qg = function(id, t) t.qg = id; return t; end					-- Add a Quest Giver to an object.
+style = function(s, t) t.style = s; return t; end				-- Stylize an object.
+un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
+
+
+
+-- BEGIN UNFINISHED SECTION:
 bi = function(bonusID, t)
 	if type(bonusID) == "table" then
 		t.ids = bonusID;

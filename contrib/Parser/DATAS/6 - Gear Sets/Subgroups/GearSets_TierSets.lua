@@ -1769,11 +1769,11 @@ Notation of what is missing from Blizzard's localization
 								i(39496),	-- Heroes' Plagueheart Circlet	
 								i(39499),	-- Heroes' Plagueheart Shoulderpads	
 								i(39497),	-- Heroes' Plagueheart Robe	
-								i(),	-- 	
+								--i(),	-- 	
 								i(39500),	-- Heroes' Plagueheart Gloves	
-								i(),	-- 	
+								--i(),	-- 	
 								i(39498),	-- Heroes' Plagueheart Leggings	
-								i(),	-- 	
+								--i(),	-- 	
 										
 							},			
 							["classes"] = { 9 },			
@@ -1940,21 +1940,21 @@ Notation of what is missing from Blizzard's localization
 									i(39625),	-- Heroes' Scourgeborne Faceguard
 									i(39627),	-- Heroes' Scourgeborne Pauldrons
 									i(39623),	-- Heroes' Scourgeborne Chestguard
-									i(),	-- 
+									--i(),	-- 
 									i(39624),	-- Heroes' Scourgeborne Handguards
-									i(),	-- 
+									--i(),	-- 
 									i(39626),	-- Heroes' Scourgeborne Legguards
-									i(),	-- 
+									--i(),	-- 
 								}),		
 								n(-9954, {	-- Frost / Unholy	
 									i(39619),	-- Heroes' Scourgeborne Helmet
 									i(39621),	-- Heroes' Scourgeborne Shoulderplates
 									i(39617),	-- Heroes' Scourgeborne Battleplate
-									i(),	-- 
+									--i(),	-- 
 									i(39618),	-- Heroes' Scourgeborne Gauntlets
-									i(),	-- 
+									--i(),	-- 
 									i(39620),	-- Heroes' Scourgeborne Legplates
-									i(),	-- 
+									--i(),	-- 
 								}),		
 							},			
 							["classes"] = { 6 },			
