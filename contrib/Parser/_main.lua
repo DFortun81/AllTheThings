@@ -2,6 +2,7 @@ AllTheThings = {};
 AllTheThingsAD = {};
 AllTheThingsAD.Items = {};
 app = AllTheThings;
+_ = AllTheThings;
 
 -- Used by the Harvester
 function Harvest(things)
@@ -107,9 +108,26 @@ end
 ach = function(id, t)									-- Create an ACHIEVEMENT Object
 	return struct("achievementID", id, t);
 end
+battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
+	return struct("speciesID", id, t);
+end
+p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
+pet = p;												-- Create a BATTLE PET Object (alternative shortcut)
+battlepetability = function(id, t)						-- Create a BATTLE PET ABILITY Object
+	return struct("petAbilityID", id, t);
+end
+pa = battlepetability;									-- Create a BATTLE PET ABILITY Object (alternative shortcut)
+battlepettype = function(id, t)							-- Create a BATTLE PET TYPE Object
+	return struct("petTypeID", id, t);
+end
+pt = battlepettype;										-- Create a BATTLE PET TYPE Object (alternative shortcut)
 cl = function(id, t)									-- Create a CHARACTER CLASS Object
 	return struct("classID", id, t);
 end
+creature = function(id, t)								-- Create a CREATURE Object
+	return struct("creatureID", id, t);
+end
+cr = creature;											-- Create a CREATURE Object (alternative shortcut)
 d = function(id, t)										-- Create a DIFFICULTY Object
 	t = struct("difficultyID", id, t);
 	local db = DifficultyDB[id];
@@ -125,6 +143,15 @@ end
 follower = function(id, t)								-- Create an FOLLOWER Object
 	return struct("followerID", id, t);
 end
+gs = function(id, t)									-- Create a GEAR SET Object (IE: "Vestments of Prophecy")
+	return struct("setID", id, t);
+end
+gsh = function(id, t)									-- Create a GEAR SET HEADER Object (IE: "Season 1")
+	return struct("setHeaderID", id, t);
+end
+gssh = function(id, t)									-- Create a GEAR SET SUB HEADER Object (IE: "Gladiator")
+	return struct("setSubHeaderID", id, t);
+end
 heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
 	return struct("heirloomID", id, t);
 end
@@ -139,6 +166,48 @@ ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
 	t = struct("itemID", id, t);
 	t.ignoreBonus = true;
 	return t;
+end
+ill = function(id, t)									-- Create an ILLUSION Object
+	return struct("illusionID", id, t);
+end
+map = function(id, t)									-- Create a MAP Object
+	return struct("mapID", id, t);
+end
+m = map;												-- Create a MAP Object (alternative shortcut)
+npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
+	return struct("npcID", id, t);
+end
+n = npc;												-- Create an NPC Object (alternative shortcut)
+obj = function(id, t)									-- Create a WORLD OBJECT Object (an interactable, non-NPC object out in the world - like a chest)
+	return struct("objectID", id, t);
+end
+o = obj;												-- Create a WORLD OBJECT Object (alternative shortcut)
+prof = function(skillID, spellID, t)					-- Create a PROFESSION Object
+	t = struct("professionID", spellID, t);
+	t.requiredSkill = skillID;
+	return t;
+end
+profession = function(skillID, spellID, t)				-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
+	local p = prof(skillID, spellID, t);
+	_.Professions = { p };
+	return p;
+end
+quest = function(id, t)									-- Create a QUEST Object
+	return struct("questID", id, t);
+end
+q = quest;												-- Create a QUEST Object (alternative shortcut)
+race = function(id, t)									-- Create a RACE Object
+	return struct("raceID", id, t);
+end
+spell = function(id, t)									-- Create a SPELL Object
+	return struct("spellID", id, t);
+end
+sp = spell;												-- Create a SPELL Object (alternative shortcut)
+title = function(id, t)									-- Create a TITLE Object
+	return struct("titleID", id, t);
+end
+v = function(id, t)										-- Create a VIGNETTE Object
+	return struct("vignetteID", id, t);
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
@@ -161,113 +230,16 @@ dr = function(dropRate, t)										-- Add a Drop Rate to an object.
 	end
 end
 h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
+lvl = function(lvl, t) t.lvl = id; return t; end				-- Add a Level Requirement to an object.
+qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object 
+qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
+qg = function(id, t) t.qg = id; return t; end					-- Add a Quest Giver to an object.
+style = function(s, t) t.style = s; return t; end				-- Stylize an object.
+un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
--- NPC Lib
-app.CreateNPC = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.npcID = id;
-	return t;
-end
 
--- Object Lib (as in "World Object")
-app.CreateObject = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.objectID = id;
-	return t;
-end
 
--- Quest Lib
-app.CreateQuest = function(id, t)
-	if not t then t = {};
-	elseif not t.groups and t[1] then t = { ["groups"] = t }; end
-	t.questID = id;
-	return t;
-end
-
--- Illusion Lib
-app.CreateIllusion = function(id, t)
-	if not t then t = {}; end
-	t.illusionID = id;
-	return t;
-end
-
--- Gear Set Lib
-app.CreateGearSet = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.setID = id;
-	return t;
-end
-app.CreateGearSource = function(id)
-	return { s = id};
-end
-app.CreateGearSetHeader = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.setHeaderID = id;
-	return t;
-end
-app.CreateGearSetSubHeader = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.setSubHeaderID = id;
-	return t;
-end
-
--- Map Lib
-app.CreateMap = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.mapID = id;
-	return t;
-end
-
-app.CreatePetAbility = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.petAbilityID = id;
-	return t;
-end
-
-app.CreatePetType = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.petTypeID = id;
-	return t;
-end
-
--- Profession Lib
-app.CreateProfession = function(skillID, spellID, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.requiredSkill = skillID;
-	t.professionID = spellID;
-	return t;
-end
-
--- Spell Lib
-app.CreateSpell = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.spellID = id;
-	return t;
-end
-
--- Title Lib
-app.CreateTitle = function(id, t)
-	if not t then t = {};
-	elseif not t.groups then t = { ["groups"] = t }; end
-	t.titleID = id;
-	return t;
-end
-
--- Vignette Lib
-app.CreateVignette = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.vignetteID = id;
-	return t;
-end
-
---[[
--- Race Class Lib
-app.CreateCharacterRace = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.raceID = id;
-	return t;
-end
---]]
+-- BEGIN UNFINISHED SECTION:
 
 -- Item Lib
 app.ItemClassInfo = {
@@ -486,24 +458,12 @@ app.ItemClassInfo = {
 	},
 };
 
--- HEADERS! These are global now.
-_ = AllTheThings;
-
-
-
 bi = function(bonusID, t)
 	if type(bonusID) == "table" then
 		t.ids = bonusID;
 	else
 		t.ids = { bonusID };
 	end
-	return t;
-end
---race = _.CreateCharacterRace;
-cr = function(creatureID, t)
-	if not t then t = {};
-    elseif not t.groups then t = { ["groups"] = t }; end
-	t.creatureID = creatureID;
 	return t;
 end
 crit = function(criteriaID, t)           -- Create an Achievement Criteria Object (localized automatically)
@@ -526,12 +486,6 @@ tcat = function(itemSubClass, t) -- Create a Transmog Weapon Category Object (lo
   return t;
 end
 
-
-ill = _.CreateIllusion;										-- Create a standalone Illusion Object (localized automatically) - NOTE: You should attach illusionID to an item unless it is standalone
-gs = _.CreateGearSet;										-- Create a Gear Set (localized automatically) -- IE: "Vestments of Prophecy"
-gsh = _.CreateGearSetHeader;								-- Create a Gear Set Header (localized automatically) -- IE: "Season 1"
-gssh = _.CreateGearSetSubHeader;							-- Create a Gear Set Sub Header (localized automatically) -- IE: "Gladiator"
-m = _.CreateMap;											-- Create a Map Object (localized automatically)
 mi = function(id, t)										-- Create a Mission Object (not fully implemented yet)
     if not t then t = {};
     elseif not t.groups then t = { ["groups"] = t }; end
@@ -542,234 +496,190 @@ model = function(displayID, t)
 	t.displayID = displayID;
 	return t;
 end
---lvl = function(lvl)
---	if not t then t = {}; end
---	t.Lvl = lvl
---	return t;
---end	
-n = _.CreateNPC;											-- Create an NPC Object
 na = function(id, t) return a(n(id,t)); end					-- Alliance Only NPC Object 
 nh = function(id, t) return h(n(id,t)); end					-- Horde Only NPC Object
 nld = function(t) return n(-40, t); end						-- Legacy dungeon items header
 nlq = function(t) return n(-39, t); end						-- Legacy dungeon quests header
-o = _.CreateObject;											-- Create a World Object (localized MANUALLY! (for now))
-p = function(speciesID, t)									-- Create a Pet / Species Object (localized automatically)
-	if not t then t = {};
-	elseif t.groups then t.groups = nil; end
-	t.speciesID = speciesID;
-	return t;
-end
-prof = _.CreateProfession;									-- Create a Profession Object (localized automatically)
-profession = function(skillID, spellID, t)					-- Create a Profession Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, spellID, t);
-	_.Professions = { p };
-	return p;
-end
-pa = _.CreatePetAbility;									-- Create a Pet Ability Object (localized automatically)
-pt = _.CreatePetType;										-- Create a Pet Type Object (localized automatically)
-q = _.CreateQuest;											-- Create a Quest Object (localized automatically)
-qa = function(id, t) return a(q(id,t)); end					-- Alliance Only Quest Object 
-qh = function(id, t) return h(q(id,t)); end					-- Horde Only Quest Object
-qg = function(id, t)										-- Adds NPC Quest Giver to Quest Object
-	t.qg = id;
-	return t;
-end
+
 -- Specific Quest Type Shortcuts [Blame Daktar for long list! :) ]
-qart = function(t, description, icon)						-- Gives a quest the Artifact Description
+qart = function(t)						-- Gives a quest the Artifact Description
 	t.description = "This is an artifact quest.";
 	t.icon = "Interface\\Minimap\\TrapInactive_HammerGold";
 	return t;
 end
-qc1 = function(t, description, icon)						-- Gives a quest the Warrior Description
+qc1 = function(t)						-- Gives a quest the Warrior Description
 	t.description = "This quest is for the class Warrior only.";
 	t.icon = "Interface\\Icons\\ClassIcon_Warrior";
 	return t;
 end
-qc2 = function(t, description, icon)						-- Gives a quest the Paladin Description
+qc2 = function(t)						-- Gives a quest the Paladin Description
 	t.description = "This quest is for the class Paladin only.";
 	t.icon = "Interface\\Icons\\ClassIcon_Paladin";
 	return t;
 end
-qc3 = function(t, description, icon)						-- Gives a quest the Hunter Description
+qc3 = function(t)						-- Gives a quest the Hunter Description
 	t.description = "This quest is for the class Hunter only.";
 	t.icon = "Interface\\Icons\\ClassIcon_Hunter";
 	return t;
 end
-qc4 = function(t, description, icon)						-- Gives a quest the Rogue Description
+qc4 = function(t)						-- Gives a quest the Rogue Description
 	t.description = "This quest is for the class Rogue only.";
 	t.icon = "Interface\\Icons\\ClassIcon_Rogue";
 	return t;
 end
-qc5 = function(t, description, icon)						-- Gives a quest the Priest Description
+qc5 = function(t)						-- Gives a quest the Priest Description
 	t.description = "This quest is for the class Priest only.";
 	t.icon = "Interface\\Icons\\ClassIcon_Priest";
 	return t;
 end
-qc6 = function(t, description, icon)						-- Gives a quest the Death Knight Description
+qc6 = function(t)						-- Gives a quest the Death Knight Description
 	t.description = "This quest is for the class Death Knight only.";
 	t.icon = "Interface\\Icons\\ClassIcon_DeathKnight";
 	return t;
 end
-qc7 = function(t, description, icon)						-- Gives a quest the Shaman Description
+qc7 = function(t)						-- Gives a quest the Shaman Description
 	t.description = "This quest is for the class Shaman only.";
 	t.icon = "Interface\\Icons\\ClassIcon_Shaman";
 	return t;
 end
-qc8 = function(t, description, icon)						-- Gives a quest the Mage Description
+qc8 = function(t)						-- Gives a quest the Mage Description
 	t.description = "This quest is for the class Mage only.";
 	t.icon = "Interface\\Icons\\ClassIcon_Mage";
 	return t;
 end
-qc9 = function(t, description, icon)						-- Gives a quest the Warlock Description
+qc9 = function(t)						-- Gives a quest the Warlock Description
 	t.description = "This quest is for the class Warlock only.";
 	t.icon = "Interface\\Icons\\ClassIcon_Warlock";
 	return t;
 end
-qc10 = function(t, description, icon)						-- Gives a quest the Monk Description
+qc10 = function(t)						-- Gives a quest the Monk Description
 	t.description = "This quest is for the class Monk only.";
 	t.icon = "Interface\\Icons\\ClassIcon_Monk";
 	return t;
 end
-qc11 = function(t, description, icon)						-- Gives a quest the Druid Description
+qc11 = function(t)						-- Gives a quest the Druid Description
 	t.description = "This quest is for the class Druid only.";
 	t.icon = "Interface\\Icons\\ClassIcon_Druid";
 	return t;
 end
-qc12 = function(t, description, icon)						-- Gives a quest the Demon Hunter Description
+qc12 = function(t)						-- Gives a quest the Demon Hunter Description
 	t.description = "This quest is for the class Demon Hunter only.";
 	t.icon = "Interface\\Icons\\ClassIcon_DemonHunter";
 	return t;
 end
-qd = function(t, description, icon)							-- Gives a quest the Daily Description
+qd = function(t)							-- Gives a quest the Daily Description
 	t.description = "This quest is a daily.";
 	t.icon = "Interface\\GossipFrame\\DailyQuestIcon";
 	return t;
 end
-qdg = function(t, description, icon)						-- Gives a quest the Dungeon Description
+qdg = function(t)						-- Gives a quest the Dungeon Description
 	t.description = "Can only be done in dungeons.";
 	t.icon = "Interface\\Minimap\\Dungeon_Icon";
 	return t;
 end
-ql = function(t, description, icon)							-- Gives a quest the Legendary Description
+ql = function(t)							-- Gives a quest the Legendary Description
 	t.description = "This quest is part of a legendary quest line.";
 	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_odyn";
 	return t;
 end
-qp171 = function(t, description, icon)						-- Gives a quest the Alchemy Description
+qp171 = function(t)						-- Gives a quest the Alchemy Description
 	t.description = "This quest requires the Alchemy profession.";
 	t.icon = "Interface\\Icons\\trade_alchemy";
 	return t;
 end
-qp794 = function(t, description, icon)						-- Gives a quest the Archaeology Description
+qp794 = function(t)						-- Gives a quest the Archaeology Description
 	t.description = "This quest requires the Archaeology profession.";
 	t.icon = "Interface\\Icons\\trade_archaeology";
 	return t;
 end
-qp164 = function(t, description, icon)						-- Gives a quest the Blacksmithing Description
+qp164 = function(t)						-- Gives a quest the Blacksmithing Description
 	t.description = "This quest requires the Blacksmithing profession.";
 	t.icon = "Interface\\Icons\\trade_blacksmithing";
 	return t;
 end
-qp185 = function(t, description, icon)						-- Gives a quest the Cooking Description
+qp185 = function(t)						-- Gives a quest the Cooking Description
 	t.description = "This quest requires the Cooking profession.";
 	t.icon = "Interface\\Icons\\inv_misc_food_15";
 	return t;
 end
-qp333 = function(t, description, icon)						-- Gives a quest the Enchanting Description
+qp333 = function(t)						-- Gives a quest the Enchanting Description
 	t.description = "This quest requires the Enchanting profession.";
 	t.icon = "Interface\\Icons\\trade_engraving";
 	return t;
 end
-qp202 = function(t, description, icon)						-- Gives a quest the Engineering Description
+qp202 = function(t)						-- Gives a quest the Engineering Description
 	t.description = "This quest requires the Engineering profession.";
 	t.icon = "Interface\\Icons\\trade_engineering";
 	return t;
 end
-qp129 = function(t, description, icon)						-- Gives a quest the Fishing Description
+qp129 = function(t)						-- Gives a quest the Fishing Description
 	t.description = "This quest requires the Fishing profession.";
 	t.icon = "Interface\\Icons\\spell_holy_sealofsacrifice";
 	return t;
 end
-qp356 = function(t, description, icon)						-- Gives a quest the First Aid Description
+qp356 = function(t)						-- Gives a quest the First Aid Description
 	t.description = "This quest requires the First Aid profession.";
 	t.icon = "Interface\\Icons\\trade_fishing";
 	return t;
 end
-qp182 = function(t, description, icon)						-- Gives a quest the Herbalism Description
+qp182 = function(t)						-- Gives a quest the Herbalism Description
 	t.description = "This quest requires the Herbalism profession.";
 	t.icon = "Interface\\Icons\\spell_nature_naturetouchgrow";
 	return t;
 end
-qp773 = function(t, description, icon)						-- Gives a quest the Inscription Description
+qp773 = function(t)						-- Gives a quest the Inscription Description
 	t.description = "This quest requires the Inscription profession.";
 	t.icon = "Interface\\Icons\\inv_inscription_tradeskill01";
 	return t;
 end
-qp755 = function(t, description, icon)						-- Gives a quest the Jewelcrafting Description
+qp755 = function(t)						-- Gives a quest the Jewelcrafting Description
 	t.description = "This quest requires the Jewelcrafting profession.";
 	t.icon = "Interface\\Icons\\inv_misc_gem_01";
 	return t;
 end
-qp165 = function(t, description, icon)						-- Gives a quest the Leatherworking Description
+qp165 = function(t)						-- Gives a quest the Leatherworking Description
 	t.description = "This quest requires the Leatherworking profession.";
 	t.icon = "Interface\\Icons\\inv_misc_armorkit_17";
 	return t;
 end
-qp186 = function(t, description, icon)						-- Gives a quest the Mining Description
+qp186 = function(t)						-- Gives a quest the Mining Description
 	t.description = "This quest requires the Mining profession.";
 	t.icon = "Interface\\Icons\\trade_mining";
 	return t;
 end
-qp393 = function(t, description, icon)						-- Gives a quest the Skinning Description
+qp393 = function(t)						-- Gives a quest the Skinning Description
 	t.description = "This quest requires the Skinning profession.";
 	t.icon = "Interface\\Icons\\inv_misc_pelt_wolf_01";
 	return t;
 end
-qp197 = function(t, description, icon)						-- Gives a quest the Tailoring Description
+qp197 = function(t)						-- Gives a quest the Tailoring Description
 	t.description = "This quest requires the Tailoring profession.";
 	t.icon = "Interface\\Icons\\trade_tailoring";
 	return t;
 end
-qpvp = function(t, description, icon)						-- Gives a quest the PvP Description
+qpvp = function(t)						-- Gives a quest the PvP Description
 	t.description = "This quest is a PvP quest.";
 	t.icon = "Interface\\PVPFrame\\Icons\\prestige-icon-3";
 	return t;
 end
-qraid = function(t, description, icon)						-- Gives a quest the Raid Description
+qraid = function(t)						-- Gives a quest the Raid Description
 	t.description = "This quest can only be completed in raids.";
 	t.icon = "Interface\\Minimap\\Raid_Icon";
 	return t;
 end
-qr = function(t, description, icon)							-- Gives a quest the Repeatable Description
+qr = function(t)							-- Gives a quest the Repeatable Description
 	t.description = "This quest is repeatable.";
 	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_azure";
 	return t;
 end
-qw = function(t, description, icon)							
+qw = function(t)							
 	t.description = "This is a weekly quest.";
 	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_tomb";
 	return t;
 end
-qwe = function(t, description, icon)						-- Gives a quest the World Event Description
+qwe = function(t)						-- Gives a quest the World Event Description
 	t.description = "This quest requires a specific world event to be active.";
 	t.icon = "Interface\\Worldmap\\QuestionMark_Gold_64Grey";
 	return t;
 end
 -- End Specific Quest Types
-
-sp = _.CreateSpell;											-- Create a Spell Object (localized automatically)
-style = function(s, t)										-- Stylize an object.
-	if not t then t = {}; end
-	t.style = s;
-	return t;
-end
-title = _.CreateTitle;										-- Create a Title Object (localized automatically)
-un = function(u, t) 										-- Mark an object unobtainable where u is the type.
-	if not t then t = {}; end
-	t.u = u;
-	return t;
-end
-v = _.CreateVignette;										-- Create a Vignette Object (localized automatically)
-
-
-
