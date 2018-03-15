@@ -103,31 +103,16 @@ function Harvest(things)
 	end
 end
 
--- Tier Lib
-app.TierDB = {
-	[1] = { texture = [[Interface\Glues\Common\Glues-WoW-ClassicLogo]] },
-	[2] = { texture = [[Interface\Glues\Common\Glues-WoW-BCLogo]] },
-	[3] = { texture = [[Interface\Glues\Common\Glues-WoW-WotLKLogo]] },
-	[4] = { texture = [[Interface\Glues\Common\Glues-WoW-CCLogo]] },
-	[5] = { texture = [[Interface\Glues\Common\Glues-WoW-MPLogo]] },
-	[6] = { texture = [[Interface\Glues\Common\GLUES-WOW-WODLOGO]] },
-	[7] = { atlas = "Glues-WoW-LegionLogo" },
-};
-app.CreateTier = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.tierID = id;
-	return t;
-end
-
--- Instance Lib
-InstanceDB = {};
-app.CreateInstance = function(id, t)
+-- SHORTCUTS for Object Class Types
+--InstanceDB = {};
+c = function(id, t)										-- Create an INSTANCE Object
 	if not t.groups then t = { ["groups"] = t }; end
 	t.instanceID = id;
-	InstanceDB[id] = t;
+	--InstanceDB[id] = t;
 	return t;
 end
-app.CreateItem = function(id, t)
+inst = c;												-- Create an INSTANCE Object (alternative shortcut)
+i = function(id, t)										-- Create an ITEM Object
 	if not t then
 		item = { ["itemID"] = id };
 		if t then item.groups = t; end
@@ -137,6 +122,7 @@ app.CreateItem = function(id, t)
 	t.itemID = id;
 	return t;
 end
+item = i;												-- Create an ITEM Object (alternative shortcut)
 app.CreateItemIgnoreBonusID = function(id, t)
 	item = { ["itemID"] = id, ["ignoreBonus"] = true };
 	if t then item.groups = t; end
@@ -554,7 +540,6 @@ bi = function(bonusID, t)
 	end
 	return t;
 end
-c = _.CreateInstance;										-- Create an Instance Object (localized automatically)
 cl = _.CreateCharacterClass;
 --race = _.CreateCharacterRace;
 cr = function(creatureID, t)
@@ -605,7 +590,6 @@ faction = _.CreateFaction;									-- Create a Faction Object (localized automat
 follower = _.CreateFollower;								-- Create a Follower Object (localized automatically)
 h = function(t) t.races = HORDE_ONLY; return t; end			-- Flag as Horde Only
 heir = _.CreateHeirloom;									-- Create an Heirloom. (NOTE: You should only use this if not an appearance)
-i = _.CreateItem;											-- Create an Item Object (localized automatically)
 ill = _.CreateIllusion;										-- Create a standalone Illusion Object (localized automatically) - NOTE: You should attach illusionID to an item unless it is standalone
 ig = _.CreateItemIgnoreBonusID;								-- Create an Item that Ignores Bonus IDs
 gs = _.CreateGearSet;										-- Create a Gear Set (localized automatically) -- IE: "Vestments of Prophecy"
