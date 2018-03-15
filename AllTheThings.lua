@@ -533,6 +533,7 @@ local DressUpModel = CreateFrame('DressUpModel');
 local NPCModelHarvester = CreateFrame('DressUpModel', nil, OffScreenFrame);
 local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
     ["INVTYPE_HEAD"] = {1},
+	["INVTYPE_NECK"] = {2},
     ["INVTYPE_SHOULDER"] = {3},
     ["INVTYPE_BODY"] = {4},
     ["INVTYPE_CHEST"] = {5},
@@ -542,6 +543,8 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
     ["INVTYPE_FEET"] = {8},
     ["INVTYPE_WRIST"] = {9},
     ["INVTYPE_HAND"] = {10},
+	["INVTYPE_RING"] = {11},
+	["INVTYPE_TRINKET"] = {12},
     ["INVTYPE_CLOAK"] = {15},
     ["INVTYPE_WEAPON"] = {16, 17},
     ["INVTYPE_SHIELD"] = {17},
@@ -2281,7 +2284,7 @@ app.CreateAchievementCriteria = function(id, t)
 end
 
 local transmogSlotIcons = { "axe_17", "axe_09", "weapon_bow_05", "weapon_rifle_01", "mace_02", "hammer_16", "spear_04", "sword_04", "sword_07", "weapon_glave_01", "staff_27", nil, nil, "misc_monsterclaw_02", nil, "weapon_shortblade_01", nil, nil, "weapon_crossbow_01","wand_02", "shield_06", "helmet_03", "shoulder_05", "misc_cape_11", "chest_chain", "shirt_grey_01", "misc_tournaments_tabard_gnome", "bracer_07", "gauntlets_24", "belt_24", "pants_09", "boots_09", "misc_orb_01" }
-local transmogArmorSlots = { INVTYPE_HEAD, INVTYPE_SHOULDER, INVTYPE_CLOAK, INVTYPE_CHEST, INVTYPE_BODY, INVTYPE_TABARD, INVTYPE_WRIST, INVTYPE_HAND, INVTYPE_WAIST, INVTYPE_LEGS, INVTYPE_FEET, INVTYPE_HOLDABLE };
+local transmogArmorSlots = { INVTYPE_HEAD, INVTYPE_NECK, INVTYPE_SHOULDER, INVTYPE_CLOAK, INVTYPE_CHEST, INVTYPE_BODY, INVTYPE_TABARD, INVTYPE_WRIST, INVTYPE_HAND, INVTYPE_WAIST, INVTYPE_LEGS, INVTYPE_FEET, INVTYPE_RING, INVTYPE_TRINKET, INVTYPE_HOLDABLE };
 app.BaseTransmogCategory = {
   __index = function(t, key)
     if key == "text" then
