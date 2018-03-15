@@ -8,6 +8,10 @@ contrib/Harvesters/RAW_itemDB.json
 contrib/Harvesters/RAW_npcDB.json
 contrib/Harvesters/RAW_zoneDB.json
 contrib/Harvesters/zoneDB.json
+contrib/Parser/Parser.exe.config
+contrib/Parser/Parser.pdb
+contrib/Parser/Parser V2.exe.config
+contrib/Parser/Parser V2.pdb
 AllTheThings.iml
 .idea/workspace.xml
 .idea/modules.xml
