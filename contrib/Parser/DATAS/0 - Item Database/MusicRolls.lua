@@ -1,7 +1,6 @@
-local app = AllTheThings;
-app.ItemDB = {};
+_.ItemDB = {};
 local i = function(itemID, questID)
-	app.ItemDB[itemID] = { ["musicRollID"] = questID };
+	_.ItemDB[itemID] = { ["musicRollID"] = questID };
 end
 
 -- Stash of Dusty Music Rolls

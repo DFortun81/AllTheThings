@@ -1,8 +1,7 @@
-local app = AllTheThings;
-app.ItemDB = {};
+_.ItemDB = {};
 local t = function(itemID)
 	local item = { ["isToy"] = true, ["ignoreBonus"] = true };
-	app.ItemDB[itemID] = item;
+	_.ItemDB[itemID] = item;
     return item;
 end
 
