@@ -289,6 +289,12 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13890},
 					})),
+					i(16408, { -- Befouled Water Glove
+						["groups"] = {
+							qh(1918), -- The Befouled Element
+						},
+						["qg"] = 12759, -- Tideress
+					}),
 					qg(12757, qh(  216)),	-- Between a Rock and a Thistlefur (No Prereq)
 					qdg(qg(34122, qh(26894))),	-- Blackfathom Deeps (No Prereq)
 					qdg(qg(3845, qa(26897))),	-- Blackfathom Deeps (No Prereq)
@@ -536,6 +542,15 @@ _.Zones =
 						},
 						["sourceQuestID"] = {13792},
 					})),
+					qh(824, { -- Je'neu of the Earthen Ring
+						["groups"] = {
+							i(16659),	-- Deftkin Belt
+							i(16660),	-- Driftmire Shield
+							i(16661),	-- Soft Willow Cape
+						},
+						["qg"] = 12737, -- Mastok Wrilehiss
+						["sourceQuestID"] = { 1918 }, -- Befouled Water Globe
+					}),
 					qg(34122, qh(13890, {	-- Keep the Fires Burning (No Prereq)
 						i(56715),
 						i(56716),

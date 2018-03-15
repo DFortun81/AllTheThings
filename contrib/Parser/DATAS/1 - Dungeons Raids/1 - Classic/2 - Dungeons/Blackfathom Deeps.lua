@@ -29,11 +29,6 @@ _.Instances =
 								un(34, i(16886)),	-- Outlaw Sabre
 								un(34, i(16887)),	-- Witch's Finger
 							}),
-							qh(824, {	-- Je'neu of the Earthen Ring
-								un(34, i(16659)),	-- Deftkin Belt
-								un(34, i(16660)),	-- Driftmire Shield
-								un(34, i(16661)),	-- Soft Willow Cape
-							}),
 							qa(26885, {	-- Knowledge in the Deeps
 								un(34, i(56660)),	-- Dusk-Stained Cloak
 								un(34, i(56658)),	-- Eventide Bow
