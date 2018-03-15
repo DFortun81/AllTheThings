@@ -3,38 +3,58 @@ AllTheThingsAD = {};
 AllTheThingsAD.Items = {};
 app = AllTheThings;
 
+-- Used by the Harvester
+function Harvest(things)
+	if not AllTheThingsAD then AllTheThingsAD = {}; end
+	if not AllTheThingsAD.Items then
+		AllTheThingsAD.Items = things;
+	else
+		local thing;
+		for i,j in pairs(things) do
+			thing = AllTheThingsAD.Items[i];
+			if not thing then
+				thing = {};
+				thing.m = {};
+				thing.v = {};
+				AllTheThingsAD.Items[i] = thing;
+			else
+				if not thing.m then thing.m = {} end
+				if not thing.v then thing.v = {} end
+			end
+			if j.m then
+				for l,m in pairs(j.m) do
+					thing.m[l] = m;
+				end
+			end
+			if j.v then
+				for l,m in pairs(j.v) do
+					thing.v[l] = m;
+				end
+			end
+		end
+	end
+end
+
+-- Helper Tables
+local DifficultyDB = {
+	[1] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 1 },
+	[2] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 2 },
+	[3] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 1 },
+	[4] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 1 },
+	[5] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 1 },
+	[6] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 1 },
+	[7] = { icon = "Interface/Worldmap/Skull_64Grey", itemModID = 1 },
+	[14] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 3 },
+	[15] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 5 },
+	[16] = { icon = "Interface/Worldmap/Skull_64Purple", itemModID = 6 },
+	[17] = { icon = "Interface/Worldmap/Skull_64Grey", itemModID = 4 },
+	[23] = { icon = "Interface/Worldmap/Skull_64Purple", itemModID = 23 },
+	[24] = { icon = "Interface/Worldmap/Skull_64Red", itemModID = 22 },
+	[33] = { icon = "Interface/Worldmap/Skull_64Red", itemModID = 22 },
+};
+ALLIANCE_ONLY = { 1, 3, 4, 7, 11, 22, 25, 29, 30 };
+HORDE_ONLY = { 2, 5, 6, 8, 9, 10, 26, 27, 28 };
 WOD_CRAFTED_ITEM = function(id)
-	--[[
-	return i(id, {
-		["ids"] = { 525 },
-		["groups"] = {
-			i(id, {
-				["ids"] = { 558 },
-				["groups"] = {
-					i(id, {
-						["ids"] = { 559 },
-						["groups"] = {
-							i(id, {
-								["ids"] = { 594 },
-								["groups"] = {
-									i(id, {
-										["ids"] = { 619 },
-										["groups"] = {
-											i(id, {
-												["ids"] = { 620 },
-												["groups"] = { } -- Yes, this needs to be like this.
-											})
-										}
-									})
-								}
-							})
-						}
-					})
-				}
-			})
-		}
-	});
-	]]--
 	return 
 	{
 		["itemID"] = id,
@@ -72,121 +92,75 @@ WOD_CRAFTED_ITEM = function(id)
 	};
 end
 
-function Harvest(things)
-	if not AllTheThingsAD then AllTheThingsAD = {}; end
-	if not AllTheThingsAD.Items then
-		AllTheThingsAD.Items = things;
-	else
-		local thing;
-		for i,j in pairs(things) do
-			thing = AllTheThingsAD.Items[i];
-			if not thing then
-				thing = {};
-				thing.m = {};
-				thing.v = {};
-				AllTheThingsAD.Items[i] = thing;
-			else
-				if not thing.m then thing.m = {} end
-				if not thing.v then thing.v = {} end
-			end
-			if j.m then
-				for l,m in pairs(j.m) do
-					thing.m[l] = m;
-				end
-			end
-			if j.v then
-				for l,m in pairs(j.v) do
-					thing.v[l] = m;
-				end
-			end
-		end
-	end
+-- Construct a commonly formatted object.
+struct = function(field, id, t)
+	if not t then t = {};
+	elseif not t.groups then t = { ["groups"] = t }; end
+	t[field] = id;
+	return t;
 end
 
 -- SHORTCUTS for Object Class Types
-inst = function(id, t)									-- Create an INSTANCE Object
-	if not t.groups then t = { ["groups"] = t }; end
-	t.instanceID = id;
-	return t;
+artifact = function(id, t)								-- Create an ARTIFACT Object
+	return struct("artifactID", id, t);
 end
-i = function(id, t)										-- Create an ITEM Object
-	if not t then
-		item = { ["itemID"] = id };
-		if t then item.groups = t; end
-		return item;
-	end
-	if not t.groups then t = { ["groups"] = t }; end
-	t.itemID = id;
-	return t;
+ach = function(id, t)									-- Create an ACHIEVEMENT Object
+	return struct("achievementID", id, t);
 end
-item = i;												-- Create an ITEM Object (alternative shortcut)
-app.CreateItemIgnoreBonusID = function(id, t)
-	item = { ["itemID"] = id, ["ignoreBonus"] = true };
-	if t then item.groups = t; end
-	return item;
+cl = function(id, t)									-- Create a CHARACTER CLASS Object
+	return struct("classID", id, t);
 end
-
--- Character Class Lib
-app.CreateCharacterClass = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.classID = id;
-	return t;
-end
-
--- Difficulty Lib
-local DifficultyDB = {
-	[1] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 1 },
-	[2] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 2 },
-	[3] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 1 },
-	[4] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 1 },
-	[5] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 1 },
-	[6] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 1 },
-	[7] = { icon = "Interface/Worldmap/Skull_64Grey", itemModID = 1 },
-	[14] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 3 },
-	[15] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 5 },
-	[16] = { icon = "Interface/Worldmap/Skull_64Purple", itemModID = 6 },
-	[17] = { icon = "Interface/Worldmap/Skull_64Grey", itemModID = 4 },
-	[23] = { icon = "Interface/Worldmap/Skull_64Purple", itemModID = 23 },
-	[24] = { icon = "Interface/Worldmap/Skull_64Red", itemModID = 22 },
-	[33] = { icon = "Interface/Worldmap/Skull_64Red", itemModID = 22 },
-};
-app.CreateDifficulty = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
+d = function(id, t)										-- Create a DIFFICULTY Object
+	t = struct("difficultyID", id, t);
 	local db = DifficultyDB[id];
 	if db then t.itemModID = db.itemModID; end
-	t.difficultyID = id;
+	return t;
+end
+e = function(id, t)										-- Create an ENCOUNTER Object
+	return struct("encounterID", id, t);
+end
+faction = function(id, t)								-- Create an FACTION Object
+	return struct("factionID", id, t);
+end
+follower = function(id, t)								-- Create an FOLLOWER Object
+	return struct("followerID", id, t);
+end
+heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
+	return struct("heirloomID", id, t);
+end
+inst = function(id, t)									-- Create an INSTANCE Object
+	return struct("instanceID", id, t);
+end
+item = function(id, t)									-- Create an ITEM Object
+	return struct("itemID", id, t);
+end
+i = item;												-- Create an ITEM Object (alternative shortcut)
+ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
+	t = struct("itemID", id, t);
+	t.ignoreBonus = true;
 	return t;
 end
 
--- Encounter Lib
-app.CreateEncounter = function(id, t)
-	if not t.groups then t = { ["groups"] = t }; end
-	t.encounterID = id;
+-- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
+a = function(t) t.races = ALLIANCE_ONLY; return t; end			-- Flag as Alliance Only
+desc = function(t, description)									-- Add a description to an object.
+	t.description = description;
 	return t;
 end
-
--- Faction Lib
-app.CreateFaction = function(id, t)
-	if not t then t = {};
-	elseif not t.groups then t = { ["groups"] = t }; end
-	t.factionID = id;
-	return t;
+dr = function(dropRate, t)										-- Add a Drop Rate to an object.
+	if t and t.itemID then
+		t.dr = dropRate;
+		return t;
+	else
+		--print("YOU CAN'T APPLY A DROP RATE TO A NON-OBJECT");
+		return {
+			["bubble"] = { "dr" }, -- This will tell the parser to "bubble up" the "dr" field to all of the items in the group.
+			["dr"] = dropRate,
+			["groups"] = t
+		};
+	end
 end
-
--- Follower Lib
-app.CreateFollower = function(id, t)
-	if not t then t = {};
-	elseif not t.groups then t = { ["groups"] = t }; end
-	t.followerID = id;
-	return t;
-end
-
--- Heirloom Lib
-app.CreateHeirloom = function(itemID)
-	local t = {};
-	t.heirloomID = itemID;
-	return t;
-end
+h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
 
 -- NPC Lib
 app.CreateNPC = function(id, t)
@@ -514,21 +488,9 @@ app.ItemClassInfo = {
 
 -- HEADERS! These are global now.
 _ = AllTheThings;
-ALLIANCE_ONLY = { 1, 3, 4, 7, 11, 22, 25, 29, 30 };
-HORDE_ONLY = { 2, 5, 6, 8, 9, 10, 26, 27, 28 };
-a = function(t) t.races = ALLIANCE_ONLY; return t; end		-- Flag as Alliance Only
-artifact = function(artifactID, t)							-- Create an Artifact Object (localized automatically)
-	if not t then t = {};
-	elseif t.groups then t.groups = nil; end
-	t.artifactID = artifactID;
-	return t;
-end
-ach = function(id, t)										-- Create an Achievement Object (localized automatically)
-	if not t then t = {};
-    elseif not t.groups then t = { ["groups"] = t }; end
-    t.achievementID = id;
-    return t;
-end
+
+
+
 bi = function(bonusID, t)
 	if type(bonusID) == "table" then
 		t.ids = bonusID;
@@ -537,7 +499,6 @@ bi = function(bonusID, t)
 	end
 	return t;
 end
-cl = _.CreateCharacterClass;
 --race = _.CreateCharacterRace;
 cr = function(creatureID, t)
 	if not t then t = {};
@@ -565,30 +526,8 @@ tcat = function(itemSubClass, t) -- Create a Transmog Weapon Category Object (lo
   return t;
 end
 
-d = _.CreateDifficulty;										-- Create a Difficulty Object (localized automatically)
-desc = function(t, description)								-- Add a description to an object.
-	t.description = description;
-	return t;
-end
-dr = function(dropRate, t)
-	if t and t.itemID then
-		t.dr = dropRate;
-		return t;
-	else
-		return {
-			["bubble"] = { "dr" }, -- This will tell the parser to "bubble up" the "dr" field to all of the items in the group.
-			["dr"] = dropRate,
-			["groups"] = t
-		};
-	end
-end
-e = _.CreateEncounter;										-- Create an Encounter Object (localized automatically)
-faction = _.CreateFaction;									-- Create a Faction Object (localized automatically)
-follower = _.CreateFollower;								-- Create a Follower Object (localized automatically)
-h = function(t) t.races = HORDE_ONLY; return t; end			-- Flag as Horde Only
-heir = _.CreateHeirloom;									-- Create an Heirloom. (NOTE: You should only use this if not an appearance)
+
 ill = _.CreateIllusion;										-- Create a standalone Illusion Object (localized automatically) - NOTE: You should attach illusionID to an item unless it is standalone
-ig = _.CreateItemIgnoreBonusID;								-- Create an Item that Ignores Bonus IDs
 gs = _.CreateGearSet;										-- Create a Gear Set (localized automatically) -- IE: "Vestments of Prophecy"
 gsh = _.CreateGearSetHeader;								-- Create a Gear Set Header (localized automatically) -- IE: "Season 1"
 gssh = _.CreateGearSetSubHeader;							-- Create a Gear Set Sub Header (localized automatically) -- IE: "Gladiator"
