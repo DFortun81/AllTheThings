@@ -3,18 +3,17 @@ _ = AllTheThings;
 
 -- Used by the Harvester
 function Harvest(things)
-	if not AllTheThingsAD then AllTheThingsAD = {}; end
-	if not AllTheThingsAD.Items then
-		AllTheThingsAD.Items = things;
+	if not _.ItemDB then
+		_.ItemDB = things;
 	else
 		local thing;
 		for i,j in pairs(things) do
-			thing = AllTheThingsAD.Items[i];
+			thing = _.ItemDB[i];
 			if not thing then
 				thing = {};
 				thing.m = {};
 				thing.v = {};
-				AllTheThingsAD.Items[i] = thing;
+				_.ItemDB[i] = thing;
 			else
 				if not thing.m then thing.m = {} end
 				if not thing.v then thing.v = {} end
