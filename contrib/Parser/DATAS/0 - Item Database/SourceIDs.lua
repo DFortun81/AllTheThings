@@ -1,10 +1,9 @@
-local app = AllTheThings;
-app.ItemDB = {};
+_.ItemDB = {};
 local i = function(itemID, modID, s)
-	app.ItemDB[itemID] = { ["m"] = { [modID] = s } };
+	_.ItemDB[itemID] = { ["m"] = { [modID] = s } };
 end
 local ib = function(itemID, bonusID, s)
-	app.ItemDB[itemID] = { ["v"] = { [bonusID] = s } };
+	_.ItemDB[itemID] = { ["v"] = { [bonusID] = s } };
 end
 i(120163, 1, 67918);	-- Thruk's Fishing Rod
 i(7509, 1, 2859);		-- Manaweave Robe (Ghostlands)

@@ -1,7 +1,6 @@
-local app = AllTheThings;
-app.ItemDB = {};
+_.ItemDB = {};
 local i = function(itemID, f)
-	app.ItemDB[itemID] = { ["f"] = f };
+	_.ItemDB[itemID] = { ["f"] = f };
 end
 -- Held in Off-hand (1)
 i(34484, 1);	-- Old Ironjaw

@@ -1,8 +1,7 @@
-local app = AllTheThings;
-app.ItemDB = {};
+_.ItemDB = {};
 local i = function(itemID, mountID)
 	local item = { ["mountID"] = mountID };
-	app.ItemDB[itemID] = item;
+	_.ItemDB[itemID] = item;
 	return item;
 end
 
