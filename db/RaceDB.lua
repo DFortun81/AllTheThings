@@ -1,8 +1,7 @@
 -------------------------------------------------
 --   R A C E   D A T A B A S E   M O D U L E   --
 -------------------------------------------------
-local a = AllTheThings;
-a.RaceDB = {
+AllTheThings.RaceDB = {
 	["Human"] = 1,
 	["Orc"] = 2,
 	["Dwarf"] = 3,
