@@ -1,8 +1,7 @@
 -------------------------------------
 --   P R E S E T S   M O D U L E   --
 -------------------------------------
-local a = AllTheThings;
-a.Presets = {
+AllTheThings.Presets = {
 	["DEATHKNIGHT"] = {
 		true, -- [1]
 		true, -- [2]
