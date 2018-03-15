@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(184, { 	-- End Time
+			inst(184, { 	-- End Time
 				["groups"] = {
 					n(-17, {	-- Quests
 						n(57864, { -- Alurmi

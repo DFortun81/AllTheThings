@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(227, { 	-- Blackfathom Deeps
+			inst(227, { 	-- Blackfathom Deeps
 				["groups"] = {
 					n(-17, {			-- Quests 
 						qg(3845, qa(26897)),	-- Blackfathom Deeps

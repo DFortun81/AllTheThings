@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(760, { 	-- Onyxia's Lair
+			inst(760, { 	-- Onyxia's Lair
 				["groups"] = {
 					d(1, {	-- Normal (Legacy)
 						["groups"] = {

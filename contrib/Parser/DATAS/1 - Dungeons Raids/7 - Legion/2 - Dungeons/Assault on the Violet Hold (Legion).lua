@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(777, { 	-- Assault of Violet Hold (Legion)
+			inst(777, { 	-- Assault of Violet Hold (Legion)
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 1826 }, -- Normal

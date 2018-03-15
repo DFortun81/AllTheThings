@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(63, { 	-- Deadmines
+			inst(63, { 	-- Deadmines
 				["groups"] = {
 					n(-17, {	-- Quests
 						n(115818, { -- Captain Bramblebeard

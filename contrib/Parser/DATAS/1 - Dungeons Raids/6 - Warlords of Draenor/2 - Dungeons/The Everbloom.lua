@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(556, { 	-- The Everbloom
+			inst(556, { 	-- The Everbloom
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 522 }, -- Normal

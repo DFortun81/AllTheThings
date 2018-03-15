@@ -104,14 +104,11 @@ function Harvest(things)
 end
 
 -- SHORTCUTS for Object Class Types
---InstanceDB = {};
-c = function(id, t)										-- Create an INSTANCE Object
+inst = function(id, t)									-- Create an INSTANCE Object
 	if not t.groups then t = { ["groups"] = t }; end
 	t.instanceID = id;
-	--InstanceDB[id] = t;
 	return t;
 end
-inst = c;												-- Create an INSTANCE Object (alternative shortcut)
 i = function(id, t)										-- Create an ITEM Object
 	if not t then
 		item = { ["itemID"] = id };

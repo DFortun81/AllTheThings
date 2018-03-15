@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(78, { 	-- Firelands
+			inst(78, { 	-- Firelands
 				["groups"] = {
 					n(-17, { 	-- Quests
 						desc(qh( 29452), "This quest is auto accepted upon killing a Molten Giant."),	-- Your Time Has Come

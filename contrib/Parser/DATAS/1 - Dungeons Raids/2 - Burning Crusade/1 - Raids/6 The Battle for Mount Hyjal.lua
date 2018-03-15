@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(750, { 	-- The Battle for Mount Hyjal
+			inst(750, { 	-- The Battle for Mount Hyjal
 				["groups"] = {
 					n(-2, {		-- Vendors
 						n(23381, { -- Tydormu

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(369, { 	-- Siege of Orgrimmar
+			inst(369, { 	-- Siege of Orgrimmar
 				["groups"] = {
 					d(17, {		-- LFR
 						--["ignoreBonus"] = true,

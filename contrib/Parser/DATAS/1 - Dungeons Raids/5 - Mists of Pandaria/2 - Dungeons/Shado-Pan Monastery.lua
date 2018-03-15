@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(312, { 	-- Shado-Pan Monastery
+			inst(312, { 	-- Shado-Pan Monastery
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 3543 }, -- Normal

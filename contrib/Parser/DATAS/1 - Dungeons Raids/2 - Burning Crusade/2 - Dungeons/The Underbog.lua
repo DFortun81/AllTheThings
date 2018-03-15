@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(262, { 	-- The Underbog
+			inst(262, { 	-- The Underbog
 				["groups"] = {
 					d(1, {		-- Normal
 						cr(17770, e(576, {	-- Hungarfen

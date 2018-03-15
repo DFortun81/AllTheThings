@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(69, { 	-- Lost City of the Tol'vir
+			inst(69, { 	-- Lost City of the Tol'vir
 				["groups"] = {
 					n(-17, {	-- Quests
 						n(50038,  { -- Captain Hadan

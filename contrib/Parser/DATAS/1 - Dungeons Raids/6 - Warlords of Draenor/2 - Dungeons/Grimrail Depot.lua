@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(536, { 	-- Grimrail Depot
+			inst(536, { 	-- Grimrail Depot
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 522 }, -- Normal

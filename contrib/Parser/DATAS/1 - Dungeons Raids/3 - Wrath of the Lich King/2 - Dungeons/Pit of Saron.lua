@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(278, { 	-- Pit of Saron
+			inst(278, { 	-- Pit of Saron
 				["groups"] = {
 					n(-17, {	-- Quests 	
 						a(q(24710)),	-- Deliverance from the Pit, No actual awards.

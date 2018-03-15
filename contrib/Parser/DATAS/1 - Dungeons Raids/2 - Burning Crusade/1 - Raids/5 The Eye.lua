@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(749, { 	-- The Eye
+			inst(749, { 	-- The Eye
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						i(30024),	-- Mantle of the Elven Kings

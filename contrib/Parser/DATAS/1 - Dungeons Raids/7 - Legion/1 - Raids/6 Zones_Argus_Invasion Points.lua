@@ -6,7 +6,7 @@ _.Instances =
 {
 	{
 		["groups"] = {
-			c(959, { -- Invasion Points
+			inst(959, { -- Invasion Points
 				["groups"] = {
 					{
 					["groups"] = {

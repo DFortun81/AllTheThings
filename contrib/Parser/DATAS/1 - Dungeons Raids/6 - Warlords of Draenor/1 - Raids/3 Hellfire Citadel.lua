@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(669, { 	-- Hellfire Citadel
+			inst(669, { 	-- Hellfire Citadel
 				["groups"] = {
 					d(17, {		-- LFR
 						["ids"] = { 3524 }, 

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(311, { 	-- Scarlet Halls
+			inst(311, { 	-- Scarlet Halls
 				["groups"] = {
 					d(2, {		-- Heroic
 						["groups"] = {

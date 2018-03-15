@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(255, { 	-- The Black Morass
+			inst(255, { 	-- The Black Morass
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						i(25730, {

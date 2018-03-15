@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(476, { 	-- Skyreach
+			inst(476, { 	-- Skyreach
 				["groups"] = {
 					d(1, {		-- Normal
 						["groups"] = {

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(259, { 	-- The Shattered Halls
+			inst(259, { 	-- The Shattered Halls
 				["groups"] = {
 					d(1, {		-- Normal
 						n(-17, {	-- Quests 					

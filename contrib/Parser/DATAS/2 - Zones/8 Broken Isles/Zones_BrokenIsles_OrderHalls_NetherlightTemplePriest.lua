@@ -10,7 +10,7 @@ _.Zones =
 					["groups"] =  {
 						n(102589, { -- Command Map
 							["groups"] = {
-								c(768, { -- The Emerald Nightmare
+								inst(768, { -- The Emerald Nightmare
 									["groups"] = {
 										i(139484, { -- Cache of Nightmarish Treasures
 											["groups"] = {

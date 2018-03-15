@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(751, { 	-- The Black Temple
+			inst(751, { 	-- The Black Temple
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						i(32590),	-- Nethervoid Cloak

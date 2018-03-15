@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(754, { 	-- Naxxramas
+			inst(754, { 	-- Naxxramas
 				["groups"] = {
 					d(3, {	-- 10-Man
 						n(0, {		-- Zone Drop

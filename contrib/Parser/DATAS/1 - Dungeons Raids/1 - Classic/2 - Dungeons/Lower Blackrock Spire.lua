@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(229, { 	-- Lower Blackrock Spire
+			inst(229, { 	-- Lower Blackrock Spire
 				["groups"] = {
 					n(-47, {	-- Lunar Festival						
 						["groups"] = {						

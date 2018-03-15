@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(256, { 	-- The Blood Furnace
+			inst(256, { 	-- The Blood Furnace
 				["groups"] = {
 					d(1, {		-- Normal
 						n(-17, {	-- Quests 					

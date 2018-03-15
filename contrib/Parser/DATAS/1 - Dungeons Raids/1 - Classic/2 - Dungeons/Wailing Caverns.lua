@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(240, { 	-- Wailing Caverns
+			inst(240, { 	-- Wailing Caverns
 				["groups"] = {
 					n(-17, {	-- Quests 	
 						q(26870, { -- Cleansing the Caverns

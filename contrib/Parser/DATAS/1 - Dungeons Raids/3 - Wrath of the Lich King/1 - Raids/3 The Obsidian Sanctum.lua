@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(755, { 	-- The Obsidian Sanctum
+			inst(755, { 	-- The Obsidian Sanctum
 				["groups"] = {
 					d(3, {
 						cr(28860, e(1616, {

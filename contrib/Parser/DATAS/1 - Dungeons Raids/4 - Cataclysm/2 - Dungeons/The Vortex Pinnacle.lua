@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(68, { 	-- The Vortex Pinnacle
+			inst(68, { 	-- The Vortex Pinnacle
 				["groups"] = {
 					n(-17, {	-- Quests 
 						n(49943, { -- Itesh

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(252, { 	-- Sethekk Halls
+			inst(252, { 	-- Sethekk Halls
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						i(25731, {

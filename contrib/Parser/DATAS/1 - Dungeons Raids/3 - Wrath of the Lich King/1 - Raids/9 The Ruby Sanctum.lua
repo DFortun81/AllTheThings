@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(761, { 	-- The Ruby Sanctum
+			inst(761, { 	-- The Ruby Sanctum
 				["groups"] = {
 					d(3, {
 						cr(39863, e(1652, {

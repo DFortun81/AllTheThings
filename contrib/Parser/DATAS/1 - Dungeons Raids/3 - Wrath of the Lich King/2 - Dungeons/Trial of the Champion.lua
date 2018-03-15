@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(284, { 	-- Trial of the Champion
+			inst(284, { 	-- Trial of the Champion
 				["groups"] = {
 					n(-17, {	-- Quests
 						q(29851),	-- Champion of the Tournament

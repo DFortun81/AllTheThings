@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(759, { 	-- Ulduar
+			inst(759, { 	-- Ulduar
 				["groups"] = {
 					d(14, {
 						n(0, {		-- Zone Drop

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(311, { 	-- Scarlet Halls
+			inst(311, { 	-- Scarlet Halls
 				["groups"] = {
 					d(1, {		-- Normal
 						cr(59303, e(660, {	-- Houndmaster Braun

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(385, { 	-- Bloodmaul Slag Mines
+			inst(385, { 	-- Bloodmaul Slag Mines
 				["groups"] = {
 					d(1, {		-- Normal
 						["itemModID"] = 17,

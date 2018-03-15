@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(233, { 	-- Razorfen Downs
+			inst(233, { 	-- Razorfen Downs
 				["groups"] = {
 					n(-17, {			-- Quests 			
 						q(33514,{	-- The Ritual

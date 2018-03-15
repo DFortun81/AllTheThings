@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(321, { 	-- Mogu'shan Palace
+			inst(321, { 	-- Mogu'shan Palace
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 3541 },	-- Normal

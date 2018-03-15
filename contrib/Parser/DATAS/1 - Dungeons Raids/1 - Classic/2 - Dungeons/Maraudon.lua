@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(232, { 	-- Maraudon
+			inst(232, { 	-- Maraudon
 				["groups"] = {
 					n(-47, {	-- Lunar Festival						
 						["groups"] = {						

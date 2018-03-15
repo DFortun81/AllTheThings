@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(752, { 	-- Sunwell Plateau
+			inst(752, { 	-- Sunwell Plateau
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						n(-15, { -- Recipes

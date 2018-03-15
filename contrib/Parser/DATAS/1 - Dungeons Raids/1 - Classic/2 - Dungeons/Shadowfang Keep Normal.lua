@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(64, { 	-- Shadowfang Keep
+			inst(64, { 	-- Shadowfang Keep
 				["groups"] = {
 					n(-50, { -- Love Is In the Air
 						["groups"] = {

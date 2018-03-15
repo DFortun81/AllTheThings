@@ -6,7 +6,7 @@ _.Instances =
 {
 	{
 		["groups"] = {
-			c(946, { -- Antorus, the Burning Throne
+			inst(946, { -- Antorus, the Burning Throne
 				["groups"] = {
 					d(17, {-- Looking For Raid
 						["ids"] = { 3524 }, -- May need to be changed

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(72, { 	-- The Bastion of Twilight
+			inst(72, { 	-- The Bastion of Twilight
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						i(60211),	-- Bracers of the Dark Pool

@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(757, { 	-- Trial of the Crusader
+			inst(757, { 	-- Trial of the Crusader
 				["groups"] = {
 					d(3, {	-- 10 Player
 						cr(34796, e(1618, { -- Northrend Beasts  (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)

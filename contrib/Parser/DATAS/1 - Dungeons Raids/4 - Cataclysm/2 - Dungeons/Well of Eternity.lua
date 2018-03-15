@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(185, { 	-- Well of Eternity
+			inst(185, { 	-- Well of Eternity
 				["groups"] = {
 					n(-17, {	-- Quests 			
 						q(30104, {

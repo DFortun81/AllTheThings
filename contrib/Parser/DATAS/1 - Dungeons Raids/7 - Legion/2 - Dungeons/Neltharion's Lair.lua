@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(767, { 	-- Neltharion's Lair
+			inst(767, { 	-- Neltharion's Lair
 				["groups"] = {
 					n(-17, {	-- Quests 				
 						q(42454, {

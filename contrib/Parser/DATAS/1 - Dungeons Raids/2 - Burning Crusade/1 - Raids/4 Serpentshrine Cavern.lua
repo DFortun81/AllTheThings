@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(748, { 	-- Serpentshrine Cavern
+			inst(748, { 	-- Serpentshrine Cavern
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						i(30027),	-- Boots of Courage Unending

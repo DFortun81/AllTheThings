@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(727, { 	-- Maw of Souls
+			inst(727, { 	-- Maw of Souls
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 1826 }, -- Normal

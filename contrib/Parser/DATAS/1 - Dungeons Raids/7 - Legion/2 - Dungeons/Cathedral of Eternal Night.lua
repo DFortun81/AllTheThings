@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(900, { 	-- Cathedral of Eternal Night
+			inst(900, { 	-- Cathedral of Eternal Night
 				["groups"] = {
 					d(2, {		-- Heroic
 						["ids"] = { 1726 }, -- Heroic

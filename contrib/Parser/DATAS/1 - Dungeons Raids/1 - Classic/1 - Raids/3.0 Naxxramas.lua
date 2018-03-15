@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(754, { 	-- Naxxramas
+			inst(754, { 	-- Naxxramas
 				["groups"] = {
 					nlq({ 	-- Legacy Quests
 						i(22726, { -- Splinter of Atiesh

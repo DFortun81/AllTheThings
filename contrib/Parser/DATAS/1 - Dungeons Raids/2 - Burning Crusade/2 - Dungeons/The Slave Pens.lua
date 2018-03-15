@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(260, { 	-- The Slave Pens
+			inst(260, { 	-- The Slave Pens
 				["groups"] = {
 					n(-3, { -- Holiday
 						["groups"] = {

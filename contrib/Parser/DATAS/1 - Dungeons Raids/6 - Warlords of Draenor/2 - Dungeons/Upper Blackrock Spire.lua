@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(559, { 	-- Upper Blackrock Spire
+			inst(559, { 	-- Upper Blackrock Spire
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 522 }, -- Normal

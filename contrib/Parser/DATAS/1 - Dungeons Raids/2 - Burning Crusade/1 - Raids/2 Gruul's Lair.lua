@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(746, { 	-- Gruul's Lair
+			inst(746, { 	-- Gruul's Lair
 				["groups"] = {
 					e(1564, {
 						["groups"] = {

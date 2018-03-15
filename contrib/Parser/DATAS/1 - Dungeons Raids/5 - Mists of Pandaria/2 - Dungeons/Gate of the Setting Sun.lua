@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(303, { 	-- Gate of the Setting Sun
+			inst(303, { 	-- Gate of the Setting Sun
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 3541 },	-- Normal

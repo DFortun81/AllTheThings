@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			c(537, { 	-- Shadowmoon Burial Grounds
+			inst(537, { 	-- Shadowmoon Burial Grounds
 				["groups"] = {
 					d(1, {		-- Normal
 						cr(75509, e(1139, {	-- Sadana Bloodfury

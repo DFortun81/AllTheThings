@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(261, { 	-- The Steamvault
+			inst(261, { 	-- The Steamvault
 				["groups"] = {
 					d(1, {		-- Normal
 						cr(17797, e(573, {	-- Hydromancer Thespia

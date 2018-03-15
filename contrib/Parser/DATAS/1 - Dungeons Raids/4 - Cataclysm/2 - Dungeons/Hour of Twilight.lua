@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(186, { 	-- Hour of Twilight
+			inst(186, { 	-- Hour of Twilight
 				["groups"] = {
 					n(-17, {	-- Quests 			
 						q(30105, {

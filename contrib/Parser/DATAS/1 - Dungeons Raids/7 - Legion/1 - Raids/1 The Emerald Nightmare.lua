@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(768, { 	-- The Emerald Nightmare
+			inst(768, { 	-- The Emerald Nightmare
 				["groups"] = {
 					d(17, {		-- LFR
 						["ids"] = { 3379 }, 

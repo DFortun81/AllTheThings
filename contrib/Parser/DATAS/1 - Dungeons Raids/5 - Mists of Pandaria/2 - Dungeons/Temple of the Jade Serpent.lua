@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(313, { 	-- Temple of the Jade Serpent
+			inst(313, { 	-- Temple of the Jade Serpent
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 3543 }, -- Normal

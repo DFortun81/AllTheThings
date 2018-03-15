@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(74, { 	-- Throne of the Four Winds
+			inst(74, { 	-- Throne of the Four Winds
 				["groups"] = {
 					d(1, {	-- Normal
 						["difficulties"] = { 3, 4 },

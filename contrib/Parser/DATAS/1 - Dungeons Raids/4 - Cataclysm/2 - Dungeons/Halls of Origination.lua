@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(70, { 	-- Halls of Origination
+			inst(70, { 	-- Halls of Origination
 				["groups"] = {
 					n(-17, {	-- Quests 
 						n(39908, { -- Bran Bronzebeard

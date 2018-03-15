@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(254, { 	-- The Arcatraz
+			inst(254, { 	-- The Arcatraz
 				["groups"] = {
 					model(19945, n(20900, {
 						i(23606, {

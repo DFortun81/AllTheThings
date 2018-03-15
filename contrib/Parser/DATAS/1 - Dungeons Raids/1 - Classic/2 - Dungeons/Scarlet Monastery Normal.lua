@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			c(316, { 	-- Scarlet Monastery
+			inst(316, { 	-- Scarlet Monastery
 				["groups"] = {
 					d(1, {		-- Normal
 						n(-3, { 			-- Holiday

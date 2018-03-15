@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(756, { 	-- The Eye of Eternity
+			inst(756, { 	-- The Eye of Eternity
 				["groups"] = {
 					d(3, {
 						cr(28859, e(1617, {

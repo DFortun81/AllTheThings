@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(246, { 	-- Scholomance
+			inst(246, { 	-- Scholomance
 				["groups"] = {
 					d(2, {		-- Heroic
 						["ids"] = { 524 }, -- Heroic

@@ -82,7 +82,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(330, { 	-- Heart of Fear
+			inst(330, { 	-- Heart of Fear
 				["groups"] = {
 					d(7, {		-- LFR		-- Looking for Raid
 						["ignoreBonus"] = true,

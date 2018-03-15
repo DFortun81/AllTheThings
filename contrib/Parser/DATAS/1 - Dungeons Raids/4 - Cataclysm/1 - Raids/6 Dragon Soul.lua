@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(187, { 	-- Dragon Soul
+			inst(187, { 	-- Dragon Soul
 				["groups"] = {
 					d(7, {		-- LFR
 						["ignoreBonus"] = true,

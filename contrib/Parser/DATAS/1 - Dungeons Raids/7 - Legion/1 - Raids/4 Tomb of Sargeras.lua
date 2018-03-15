@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			c(875, { 	-- Tomb of Sargeras
+			inst(875, { 	-- Tomb of Sargeras
 				["groups"] = {
 					d(17, {		-- LFR
 						["ids"] = { 3379 }, 

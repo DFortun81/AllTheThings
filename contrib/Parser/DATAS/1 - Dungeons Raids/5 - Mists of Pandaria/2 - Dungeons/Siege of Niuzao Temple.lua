@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Mists of Pandaria
 		["groups"] = {
-			c(324, { 	-- Siege of Niuzao Temple
+			inst(324, { 	-- Siege of Niuzao Temple
 				["groups"] = {
 					d(1, {		-- Normal
 						["ids"] = { 3543 }, -- Normal

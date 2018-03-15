@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(251, { 	-- Old Hillsbrad Foothills
+			inst(251, { 	-- Old Hillsbrad Foothills
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						i(25729, { -- Pattern: Stylin' Adventure Hat

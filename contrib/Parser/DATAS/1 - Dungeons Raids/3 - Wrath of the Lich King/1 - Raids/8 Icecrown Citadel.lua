@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Wrath of the Lich King
 		["groups"] = {
-			c(758, { 	-- Icecrown Citadel
+			inst(758, { 	-- Icecrown Citadel
 				["groups"] = {
 					n(-17, { -- Quests
 						n(37120, {	-- Highlord Darion Mograine

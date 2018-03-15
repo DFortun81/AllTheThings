@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(76, { 	-- Zul'Gurub
+			inst(76, { 	-- Zul'Gurub
 				["groups"] = {
 					n(-17, {	-- Quests 			
 						qg(53151, qa(29155, {	-- A Shiny Reward

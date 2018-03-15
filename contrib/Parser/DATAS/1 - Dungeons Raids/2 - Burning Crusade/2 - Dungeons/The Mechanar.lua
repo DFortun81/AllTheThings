@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Burning Crusade
 		["groups"] = {
-			c(258, {	-- The Mechanar
+			inst(258, {	-- The Mechanar
 				["groups"] = {
 					model(17916, n(19168, {
 						i(21906, { -- Pattern: Arcanoweave Boots

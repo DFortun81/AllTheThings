@@ -6,7 +6,7 @@ _.Instances =
 {
 	{ -- Cataclysm
 		["groups"] = {
-			c(63, { 	-- Deadmines
+			inst(63, { 	-- Deadmines
 				["groups"] = {
 					d(2, {		-- Heroic
 						["Lvl"] = 85,
