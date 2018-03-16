@@ -531,9 +531,9 @@ _.Zones =
 				n(-16, { 	-- Rares	
 					n(18697, { -- Chief Engineer Lorthander
 						i(31201),
-					}), 
-					n(18698, { -- Ever-Core the Punisher -- Drops Ring
-					}), 
+					}),
+--					n(18698, { -- Ever-Core the Punisher -- Drops Ring
+--					}), 
 					n(20932, { -- Nuramoc
 						i(31210),
 						i(31212),
