@@ -74,24 +74,6 @@ _.WorldEvents =
 	}),
 	m(823, { -- Darkmoon Island
 	}),
-	n(-36, { -- In-Game Shop
-	}),
-	n(-32, { -- Trading Card Game
-	}),
-	n(-77, { -- Special
-	}),
-	n(-62, { -- Stranglethorn Fishing Extravaganza
-	}),
-	n(-173, { -- Timewalking
-		n(-154, { -- Burning Crusade
-		}),
-		n(-155, { -- Wrath of the Lich King
-		}),
-		n(-156, { -- Cataclysm
-		}),
-		n(-157, { -- Mists of Pandaria
-		}),
-	}),
 	n(-3, {  -- World Events (Holidays)
 		--n(-177, { -- Mini World Events
 		--}),
@@ -128,5 +110,22 @@ _.WorldEvents =
 		n(-61, { -- Feast of Winter Veil
 		}),
 	}),
-
+	n(-36, { -- In-Game Shop
+	}),
+	n(-32, { -- Trading Card Game
+	}),
+	n(-77, { -- Special
+	}),
+	n(-62, { -- Stranglethorn Fishing Extravaganza
+	}),
+	n(-173, { -- Timewalking
+		n(-154, { -- Burning Crusade
+		}),
+		n(-155, { -- Wrath of the Lich King
+		}),
+		n(-156, { -- Cataclysm
+		}),
+		n(-157, { -- Mists of Pandaria
+		}),
+	}),
 };
