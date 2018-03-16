@@ -24,15 +24,6 @@ local u = function(itemID, unobtainable)
 	end
 	item.u = unobtainable;
 end
-local ub = function(itemID, bonusID, unobtainable)
-	local item = _.ItemDB[itemID];
-	if not item then
-		item = {};
-		_.ItemDB[itemID] = item;
-	end
-	if not item.v then item.v = {}; end
-	item.v[bonusID] = { ["u"] = unobtainable };
-end
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------
