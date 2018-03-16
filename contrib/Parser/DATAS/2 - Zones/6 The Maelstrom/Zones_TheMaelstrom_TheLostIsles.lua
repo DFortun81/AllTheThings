@@ -8,46 +8,126 @@ _.Zones =
 			["groups"] = {		
 				n(-17, { -- Quests
 					["groups"] = {
---[[					
+						qh(14239, { -- Don't Go Into the Light!
+							["groups"] = {
+							},
+							["qg"] = 36608, -- Doc Zapnozzle
+							["sourceQuestID"] = { 14126 }, -- Life Savings
+						}),
+						qh(14001, { -- Goblin Escape Pods
+							["groups"] = {
+							},
+							["qg"] = 36600, -- Geargrinder Gizmo
+							["sourceQuestID"] = { 14239 }, -- Don't Go Into the Light!
+						}),
+						qh(14014, { -- Get Our Stuff Back!
+							["groups"] = {
+							},
+							["qg"] = 35650, -- Sassy Hardwrench
+							["sourceQuestID"] = { 14001 }, -- Goblin Escape Pods
+						}),
+						qh(14473, { -- It's Our Problem Now
+							["groups"] = {
+							},
+							["qg"] = 35786, -- Maxx Avalanche
+							["sourceQuestID"] = { 14001 }, -- Goblin Escape Pods
+						}),
+						qh(14019, { -- Monkey Business
+							["groups"] = {
+							},
+							["qg"] = 35758, -- Bamm Megabomb
+							["sourceQuestID"] = { 14001 }, -- Goblin Escape Pods
+						}),
+						qh(14248, { -- Help Wanted
+							["groups"] = {
+							},
+							["qg"] = 35650, -- Sassy Hardwrench
+							["sourceQuestID"] = { 14014, 14473, 14019 }, -- Get Our Stuff Back! / It's Our Problem Now / Monkey Business
+						}),
+						qh(14021, {  -- Miner Troubles
+							["groups"] = {
+							},
+							["qg"] = 35769, -- Foreman Dampwick
+							["sourceQuestID"] = { 14248 }, -- Help Wanted
+						}),
+						qh(14031, { -- Capturing the Unknown
+							["groups"] = {
+							},
+							["qg"] = 35769, -- Foreman Dampwick
+							["sourceQuestID"] = { 14248 }, -- Help Wanted
+						}),
+						qh(14233, { -- Orcs Can Write?
+							["groups"] = {
+							},
+							["qg"] = 35837, -- Dead Orc Scout
+							["sourceQuestID"] = { 14248 }, -- Help Wanted
+						}),
+						qh(14234, { -- The Enemy of My Enemy
+							["groups"] = {
+							},
+							["qg"] = 35650, -- Sassy Hardwrench
+							["sourceQuestID"] = { 14021, 14031, 14233 }, -- Miner Troubles / Capturing the Unknown / The Enemy of My Enemy
+						}),
+						qh(14235, { -- The Vicious Vale
+							["groups"] = {
+							},
+							["qg"] = 35875, -- Aggra
+							["sourceQuestID"] = { 14234 }, -- The Enemy of My Enemy
+						}),
+						qh(14236, { -- Weed Whacker
+							["groups"] = {
+							},
+							["qg"] = 35893, -- Kilag Gorefang
+							["sourceQuestID"] = { 14235 }, -- The Vicious Vale
+						}),
+						qh(14303, { -- Back to Aggra
+							["groups"] = {
+							},
+							["qg"] = 35893, -- Kilag Gorefang
+							["sourceQuestID"] = { 14236 }, -- Weed Whacker
+						}),
+						qh(14237, { -- Forward Movement
+							["groups"] = {
+							},
+							["qg"] = 35875, -- Aggra
+							["sourceQuestID"] = { 14303 }, -- Back to Aggra
+						}),
+						qh(14238, { -- Infrared = Infradead
+							["groups"] = {
+							},
+							["qg"] = 35917, -- Kilag Gorefang
+							["sourceQuestID"] = { 14237 }, -- Forward Movement
+						}),
+						--[[
 						qh( 24817),	-- A Goblin in Shark's Clothing
-						qh( 14303),	-- Back to Aggra
 						qh( 24858),	-- Bilgewater Cartel Represent
 						qh( 25099),	-- Borrow Bastia
 						qh( 14031),	-- Capturing the Unknown
 						qh( 24954),	-- Children of a Turtle God
 						qh( 24671),	-- Cluster Cluck
-						qh( 14239),	-- Don't Go Into the Light!
 						qh( 25214),	-- Escape Velocity
 						qh( 14445),	-- Farewell, For Now
 						qh( 25251),	-- Final Confrontation
 						qh( 14237),	-- Forward Movement
 						qh( 24925),	-- Free the Captives
 						qh( 24897),	-- Get Back to Town
-						qh( 14014),	-- Get Our Stuff Back!
 						qh( 14241),	-- Get to the Gyrochoppa!
-						qh( 14001),	-- Goblin Escape Pods
-						qh( 14474),	-- Goblin Escape Pods
 						qh( 25207),	-- Good-bye, Sweet Oil
-						qh( 14248),	-- Help Wanted
 						qh( 27139),	-- Hobart Needs You
 						qh( 14238),	-- Infrared = Infradead
 						qh( 24856),	-- Invasion Imminent!
 						qh( 24864),	-- Irresistible Pool Pony
 						qh( 14245),	-- It's a Town-In-A-Box
-						qh( 14473),	-- It's Our Problem Now
 						qh( 25110),	-- Kaja'Cola Gives You IDEAS! (TM)
 						qh( 25100),	-- Let's Ride
 						qh( 25125),	-- Light at the End of the Tunnel
 						qh( 14326),	-- Meet Me Up Top
 						qh( 25058),	-- Mine Disposal, the Goblin Way
-						qh( 14021),	-- Miner Troubles
-						qh( 14019),	-- Monkey Business
 						qh( 25122),	-- Morale Boost
 						qh( 24859),	-- Naga Hide
 						qh( 25023),	-- Old Friends
 						qh( 24937),	-- Oomlot Dealt With
 						qh( 24924),	-- Oomlot Village
-						qh( 14233),	-- Orcs Can Write?
 						qh( 14242),	-- Precious Cargo
 						qh( 25204),	-- Release the Valves
 						qh( 25024),	-- Repel the Paratroopers
@@ -58,14 +138,12 @@ _.Zones =
 						qh( 25200),	-- Shredder Shutdown
 						qh( 24868),	-- Surrender or Else!
 						qh( 24744),	-- The Biggest Egg Ever
-						qh( 14234),	-- The Enemy of My Enemy
 						qh( 25202),	-- The Fastest Way to His Heart
 						qh( 25109),	-- The Gallywix Labor Mine
 						qh( 25093),	-- The Heads of the SI:7
 						qh( 25066),	-- The Pride of Kezan
 						qh( 25213),	-- The Slave Pits
 						qh( 25201),	-- The Ultimate Footbomb Uniform
-						qh( 14235),	-- The Vicious Vale
 						qh( 25098),	-- The Warchief Wants You
 						qh( 24945),	-- Three Little Pygmies
 						qh( 25123),	-- Throw It On the Ground!
@@ -78,7 +156,6 @@ _.Zones =
 						qh( 24958),	-- Volcanoth!
 						qh( 25266),	-- Warchief's Emissary
 						qh( 14243),	-- Warchief's Revenge
-						qh( 14236),	-- Weed Whacker
 						qh( 25244),	-- What Kind of Name is Candy, Anyway?
 						qh( 25203),	-- What Kind of Name is Chip, Anyway?
 						qh( 24816),	-- Who's Top of the Food Chain Now?
