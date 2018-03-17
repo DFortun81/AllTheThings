@@ -252,10 +252,10 @@ _.Zones =
 						}),		
 						qh(24929, { -- Send a Message		
 							["groups"] = {
-								i(52920), -- Oomiot Staff
-								i(52937), -- Pygmy Cloak
-								i(131835), -- Yngwie's Vest
-								i(52965), -- Yngwie's Tunic
+								i(52956), -- Oomlot Staff
+								i(52934), -- Pygmy Cloak
+								i(52910), -- Yngwie's Vest
+								i(131831), -- Yngwie's Tunic
 							},	
 							["qg"] = 38647, -- Izzy	
 							["sourceQuestID"] = { 24925 }, -- Free the Captives	
@@ -458,10 +458,10 @@ _.Zones =
 						}),	
 						qh(25202, { -- The Fastest Way to His Heart [Female Version]	
 							["groups"] = {
-								i(131835), -- 
-								i(52937), -- 
-								i(52920), -- 
-								i(52965), -- 
+								i(52965), -- Heartache Dagger
+								i(52937), -- Chip's Cloak
+								i(52920), -- Cardio-Extractor Gloves
+								i(131835), -- Cardio-Extractor Handguards
 							},
 							["qg"] = 38647, -- Izzy
 							["sourceQuestID"] = { 25204, 25207 }, -- Release the Valces / Good-bye, Sweet Oil
@@ -474,16 +474,20 @@ _.Zones =
 						}),	
 						qh(25214, { -- Escape Velocity	
 							["groups"] = {
-								i(52923), -- 
-								i(52968), -- 
-								i(131845), -- 
-								i(52939), -- 
+								i(52965), -- Heartache Dagger
+								i(52937), -- Chip's Cloak
+								i(52920), -- Cardio-Extractor Gloves
+								i(131835), -- Cardio-Extractor Handguards
 							},
 							["qg"] = 38120, -- Hobart Grapplehammer
 							["sourceQuestID"] = { 25213 }, -- The Slave Pits
 						}),	
 						qh(25243, { -- She Loves Me, She Loves Me NOT! [Male Version]	
 							["groups"] = {
+								i(52920), -- Cardio-Extractor Gloves
+								i(52937), -- Chip's Cloak
+								i(131835), -- Cardio-Extractor Handguards
+								i(52965), -- Heartache Dagger
 							},
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuestID"] = { 25214 }, -- Escape Velocity
