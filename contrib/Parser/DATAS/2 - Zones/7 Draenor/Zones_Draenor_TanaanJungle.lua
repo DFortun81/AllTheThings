@@ -25,7 +25,7 @@ _.Zones =
 					p(1468),	-- Bloodbeak
 					p(1586),	-- Cerulean Moth
 					p(519),		-- Fel Flame
-					p(1591),	-- Fen Crab
+					p(1581),	-- Fen Crab
 					p(483),		-- Horny Toad
 					p(417),		-- Rat
 					p(405),		-- Tree Python
