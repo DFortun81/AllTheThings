@@ -1113,21 +1113,21 @@ Notation of what is missing from Blizzard's localization
 				gs(353, {	-- Avatar Regalia			
 					["groups"] = {			
 						n(-9951, {	-- Discipline / Holy Priest Spec	
-							i(30161),	-- Hood of the Avatar
-							i(30163),	-- Wings of the Avatar
-							i(30159),	-- Shroud of the Avatar
-							i(30160),	-- Handguards of the Avatar
-							i(30036),	-- Belt  of the Long Road
-							i(30162),	-- Leggings of the Avatar
-							i(30100),	-- Soul-Strider Boots
-						}),		
-						n(-9917, {	-- Shadow Priest	
 							i(30152),	-- Cowl of the Avatar
 							i(30154),	-- Mantle of the Avatar
 							i(30150),	-- Vestments of the Avatar
 							i(30151),	-- Gloves of the Avatar
 							i(30036),	-- Belt  of the Long Road
 							i(30153),	-- Breeches of the Avatar
+							i(30100),	-- Soul-Strider Boots
+						}),		
+						n(-9917, {	-- Shadow Priest
+							i(30161),	-- Hood of the Avatar
+							i(30163),	-- Wings of the Avatar
+							i(30159),	-- Shroud of the Avatar
+							i(30160),	-- Handguards of the Avatar
+							i(30036),	-- Belt  of the Long Road
+							i(30162),	-- Leggings of the Avatar
 							i(30100),	-- Soul-Strider Boots
 						}),		
 					},			
