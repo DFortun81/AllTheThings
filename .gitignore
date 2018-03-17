@@ -12,6 +12,7 @@ contrib/Parser/Parser.exe.config
 contrib/Parser/Parser.pdb
 contrib/Parser/Parser V2.exe.config
 contrib/Parser/Parser V2.pdb
+contrib/Debugging/
 AllTheThings.iml
 .idea/workspace.xml
 .idea/modules.xml

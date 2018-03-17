@@ -17,7 +17,6 @@ i(44050, 1, 21318);		-- Mastercraft Kalu'ak Fishing Pole
 i(49888, 1, 24432); 	-- Shadow's Edge
 
 i(128827, 1, 76173);	-- Xal'atath, Blade of the Black Empire
-i(122862, 1, 74460);	-- Ebonchill
 i(20637, 1, 8133);		-- Acid Inscribed Pauldrons
 i(45858, 1, 22092);		-- Nat's Lucky Fishing Pole
 i(5197, 1, 1989);		-- Cookie's Tenderizer
