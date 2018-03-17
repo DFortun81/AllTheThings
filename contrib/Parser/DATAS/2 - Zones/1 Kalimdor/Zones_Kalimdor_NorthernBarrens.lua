@@ -361,7 +361,7 @@ _.Zones =
 						["sourceQuestID"] = { 14052 },	-- Take it up With Tony
 					}),
 					qh(13621, {	-- Gorat's Vengeance
-						["group"] = {
+						["groups"] = {
 							i(56644),	-- Gorat's Bequest
 							i(56645),	-- Kadrak's Breastplate
 							i(131295),	-- Gorat's Spaulders of Satisfaction
