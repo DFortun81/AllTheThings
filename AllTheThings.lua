@@ -1300,7 +1300,8 @@ local function SearchForItemLink(link)
 											end
 											text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherSource.isCollected);
 											if otherSource.isCollected then
-												app.CollectedSources[otherSourceID] = 1;
+												SetDataSubMember("CollectedSources", otherSourceID, 1);
+												--app.CollectedSources[otherSourceID] = 1;
 											end
 											tinsert(listing, text);
 										end
