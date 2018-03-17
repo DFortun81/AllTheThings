@@ -152,7 +152,7 @@ _.Zones =
 							i(62895),	-- Slippers of Unturned Loyalties
 						},
 						["qg"] = 45617,	-- Lady Sylvanas Windrunner
-						["questSourceID"] = { 27594 }	-- On Her Majesty's Secret Service
+						["sourceQuestID"] = { 27594 }	-- On Her Majesty's Secret Service
 					}),
 					qh(27194, {	-- Cornered and Crushed!
 						["groups"] = {
@@ -200,7 +200,7 @@ _.Zones =
 							i(62886),	-- Vest of Forsaken Necromancy
 						},
 						["qg"] = 45878,	-- Lord Godfrey
-						["questSourceID"] = { 27574 },	-- I Never Forget a Face
+						["sourceQuestID"] = { 27574 },	-- I Never Forget a Face
 						["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"
 					}),
 					qh(27073, {	-- Give 'em Hell!
@@ -455,7 +455,7 @@ _.Zones =
 							i(62889),	-- Transdimensional Cloak
 							i(62891),	-- Vessel of the Dark Lady
 						},
-						["questSourceID"] = { 27513 },	-- Transdimensional Warfare: Chapter II
+						["sourceQuestID"] = { 27513 },	-- Transdimensional Warfare: Chapter II
 					}),					
 					qh(27475, {	-- Unyielding Servitors (secondary QG ID 45626)
 						["groups"] = {
