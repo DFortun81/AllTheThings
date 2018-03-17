@@ -1,4 +1,4 @@
-IllusionDB = {
+_.IllusionDB = {
 	{
 		["visualID"] = 25,
 		["illusionID"] = 803,

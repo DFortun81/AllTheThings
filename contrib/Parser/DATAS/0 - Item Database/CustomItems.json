@@ -1,0 +1,56 @@
+{
+	"items":
+	[
+		{
+			"name": "Sun-Lute of the Phoenix King",
+			"itemID": 44924,
+			"equippable": true,
+			"quality": 4,
+			"bind": 1,
+			"class": 2,
+			"subclass": 1,
+			"iLvl": 483,
+			"inventoryType": 17,
+			"Lvl": 85
+		},
+		{
+			"name": "Enchanted Thorium Platemail (Volume I)",
+			"itemID": 18769,
+			"equippable": false,
+			"quality": 0,
+			"bind": 1,
+			"class": 15,
+			"subclass": 0,
+			"iLvl": 1,
+			"inventoryType": 0,
+			"requireSkill": 164,
+			"Lvl": 60
+		},
+		{
+			"name": "Enchanted Thorium Platemail (Volume II)",
+			"itemID": 18770,
+			"equippable": false,
+			"quality": 0,
+			"bind": 1,
+			"class": 15,
+			"subclass": 0,
+			"iLvl": 1,
+			"inventoryType": 0,
+			"requireSkill": 164,
+			"Lvl": 60
+		},
+		{
+			"name": "Enchanted Thorium Platemail (Volume III)",
+			"itemID": 18771,
+			"equippable": false,
+			"quality": 0,
+			"bind": 1,
+			"class": 15,
+			"subclass": 0,
+			"iLvl": 1,
+			"inventoryType": 0,
+			"requireSkill": 164,
+			"Lvl": 60
+		},
+	]
+}
