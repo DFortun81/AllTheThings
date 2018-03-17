@@ -8,12 +8,101 @@ _.Instances =
 		["groups"] = {
 			inst(279, { 	-- The Culling of Stratholme
 				["groups"] = {
-					n(0, {		-- Zone Drop
-						i(37117),	-- King's Square Bracers
-						i(37116),	-- Epaulets of Market Row
-						i(37115),	-- Crusader's Square Pauldrons
-					}),
 					d(1, {		-- Normal
+						n(0, {		-- Zone Drop
+							["groups"] = {
+								n(27731, { -- Acolyte
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37699), -- Festival Lane Girdle
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(28201, { -- Bile Golem
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(27734, { -- Crypt Fiend
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(28200, { -- Dark Necromancer
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(28249, { -- Devouring Ghoul
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37699), -- Festival Lane Girdle
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(27729, { -- Enraging Ghoul
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37699), -- Festival Lane Girdle
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(27742, { -- Infinite Adversary
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37699), -- Festival Lane Girdle
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(27744, { -- Infinite Agent
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(27743, { -- Infinite Hunter
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(27732, { -- Master Necromancer
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37699), -- Festival Lane Girdle
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(27736, { -- Patchwork Construct
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37699), -- Festival Lane Girdle
+										i(37117), -- King's Square Bracers
+									},
+								}),
+								n(28199, { -- Tomb Stalker
+									["groups"] = {
+										i(37115), -- Crusader's Square Pauldrons
+										i(37116), -- Epaulets of Market Row
+										i(37117), -- King's Square Bracers
+									},
+								}),
+							},
+						}),
 						cr(26529, e(611, {	-- Meathook
 							i(37081),	-- Meathook's Slicer
 							i(37679),	-- Spaulders of the Abomination
@@ -62,6 +151,100 @@ _.Instances =
 						["Lvl"] = 80,
 						["ignoreBonus"] = true,
 						["groups"] = {
+							n(0, {		-- Zone Drop
+								["groups"] = {
+									n(27731, { -- Acolyte
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37699), -- Festival Lane Girdle
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(28201, { -- Bile Golem
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(27734, { -- Crypt Fiend
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(28200, { -- Dark Necromancer
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(28249, { -- Devouring Ghoul
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37699), -- Festival Lane Girdle
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(27729, { -- Enraging Ghoul
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37699), -- Festival Lane Girdle
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(27742, { -- Infinite Adversary
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37699), -- Festival Lane Girdle
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(27744, { -- Infinite Agent
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(27743, { -- Infinite Hunter
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(27732, { -- Master Necromancer
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37699), -- Festival Lane Girdle
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(27736, { -- Patchwork Construct
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37699), -- Festival Lane Girdle
+											i(37117), -- King's Square Bracers
+										},
+									}),
+									n(28199, { -- Tomb Stalker
+										["groups"] = {
+											i(37115), -- Crusader's Square Pauldrons
+											i(37116), -- Epaulets of Market Row
+											i(37117), -- King's Square Bracers
+										},
+									}),
+								},
+							}),
 							cr(26529, e(611, {	-- Meathook
 								i(37081),	-- Meathook's Slicer
 								i(37679),	-- Spaulders of the Abomination

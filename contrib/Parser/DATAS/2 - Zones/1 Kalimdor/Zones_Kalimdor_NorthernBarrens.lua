@@ -461,8 +461,8 @@ _.Zones =
 							i(59581),	-- Smart Shoes
 							i(59582),	-- Shrewd Crossbow
 							i(131223),	-- Smart Sandals
-						["qg"] = 3446,	-- Mebok Mizzyrix
 						},
+						["qg"] = 3446,	-- Mebok Mizzyrix
 					}),
 					qh(13995, {	-- King of Centaur Mountain
 						["groups"] = {
