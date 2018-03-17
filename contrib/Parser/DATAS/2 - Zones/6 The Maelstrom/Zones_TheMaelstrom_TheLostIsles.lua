@@ -399,18 +399,19 @@ _.Zones =
 							["qg"] = 39199, -- Assistant Greely
 							["sourceQuestID"] = { 25110 }, -- Kaja'Cola Gives you IDEAS!™
 						}),	
+						--[[ NEVER IMPLEMENTED
 						qh(25124, { -- Brute Brutality	
 							["groups"] = {
 							},
 							["qg"] = 39199, -- Assistant Greely
 							["sourceQuestID"] = { 25110 }, -- Kaja'Cola Gives you IDEAS!™
 						}),	
-						
+						--]]
 						qh(25125, { -- Light at the End of the Tunnel	
 							["groups"] = {
 							},
 							["qg"] = 39199, -- Assistant Greely
-							["sourceQuestID"] = { 25122, 25123, 25124 }, -- Morale Boost / Throw It On the Ground! / Brute Brutality
+							["sourceQuestID"] = { 25122, 25123 }, -- Morale Boost / Throw It On the Ground!
 						}),	
 						qh(25184, { -- Wild Mine Cart Ride	
 							["groups"] = {
