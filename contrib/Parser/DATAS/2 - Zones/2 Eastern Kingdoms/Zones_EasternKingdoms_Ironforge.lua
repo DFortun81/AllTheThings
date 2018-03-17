@@ -228,27 +228,71 @@ _.Zones =
 							}),
 							n(-17, { 	-- Quests
 								qg(13444, qa(7025)),	-- Treats for Greatfather Winter
-								qg(13433, qa(7045, {	-- A Smokywood Pastures' Thank You
+								qa(7045, { -- A Smokywood Pastures' Thank You
 									["groups"] = {
 										i(17726, { -- Smokywood Pasture's Special Gift
-											dr(5.0, i(128649)), -- Illusion: Winter's Grasp
-											dr(0.5, i(118572)), -- Illusion: Flame of Ragnaros
-											dr(16, i(17722, {	-- Pattern: Gloves of the Greatfather
-												i(17721), -- Gloves of the Greatfather
-											})),
-											dr(16, i(17724, {	-- Pattern: Green Holiday Shirt
-												i(17723), -- Green Holiday Shirt
-											})),
-											dr(16, i(17706, {	-- Plans: Edge of Winter
-												i(17704), -- Edge of Winter
-											})),
-											dr(16, i(17720, {	-- Schematic: Snowmaster 9000
-												i(17716), -- Snowmaster 9000
-											})),
+											i(17722, {	-- Pattern: Gloves of the Greatfather
+												["groups"] = {
+													i(17721, { -- Gloves of the Greatfather
+														["groups"] = {
+														},
+														["u"] = 29,
+													}),
+												},
+												["u"] = 29,
+												["dr"] = 16,
+											}),
+											i(17724, {	-- Pattern: Green Holiday Shirt
+												["groups"] = {
+													i(17723, { -- Green Holiday Shirt
+														["groups"] = {
+														},
+														["u"] = 29,
+													}),
+												},
+												["u"] = 29,
+												["dr"] = 16,
+											}),
+											i(17706, {	-- Plans: Edge of Winter
+												["groups"] = {
+													i(17704, { -- Edge of Winter
+														["groups"] = {
+														},
+														["u"] = 29,
+													}),
+												},
+												["u"] = 29,
+												["dr"] = 16,
+											}),
+											i(17720, {	-- Schematic: Snowmaster 9000
+												["groups"] = {
+													i(17716, { -- Snowmaster 9000
+														["groups"] = {
+														},
+														["u"] = 29,
+													}),
+												},
+												["u"] = 29,
+												["dr"] = 16,
+											}),
+											i(128649, { -- Illusion: Winter's Grasp
+												["groups"] = {
+												},
+												["u"] = 29,
+												["dr"] = 5,
+											}),
+											i(118572, { -- Illusion: Flame of Ragnaros
+												["groups"] = {
+												},
+												["u"] = 29,
+												["dr"] = 0.5,
+											}),
 										}),
-										["description"] = "This quest can only be done once per year.",
 									},
-								})),
+									["description"] = "This quest can only be done once per year.",
+									["qg"] = 13433, -- Wulmort Jinglepocket
+									["sourceQuestID"] = { 7043 }, -- You're a Mean One...
+								}),
 								qg(13433, qa(7022)),	-- Greatfather Winter is Here!
 --								qg(2916, qa(7063)),	-- The Feast of Winter Veil
 								qg(1365, qa(7062)),	-- The Reason for the Season
