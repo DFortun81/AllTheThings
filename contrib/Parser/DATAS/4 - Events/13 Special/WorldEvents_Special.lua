@@ -24,9 +24,9 @@ _.WorldEvents =
 							un(2, i(51997)),	-- Stalwart Spaulders
 							i(51989),	-- Stalwart Bands
 							i(143583),	-- Stalwart Grips
-							i(51987),	-- Stalwart Grips
+							un(2, i(51987)),	-- Stalwart Grips
 							i(143582),	-- Stalwart Belt
-							i(51985),	-- Stalwart Belt
+							un(2, i(51985)),	-- Stalwart Belt
 							i(51990),	-- Stalwart Treads
 							i(51976),	-- Earthbound Shoulderguards
 							i(51976),	-- Earthbound Shoulderguards

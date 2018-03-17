@@ -124,13 +124,25 @@ _.Zones =
 							i(44820),	-- TOY! Red Ribbon Pet Leash
 						}),
 					}),	
-					qh(31872),	-- Merda Stronghoof
+					qh(31872, {	-- Merda Stronghoof
+						["groups"] = {
+						},
+						["qg"] = 66372,	-- Merda Stronghoof
+					}),
 				}),
 				n(-17, { 	-- Quests
 					qh(14195, {	-- All Becoming Clearer
 						["groups"] = {
 						},
 						["sourceQuestID"] = { 14360 },	-- Nothing a Couple of Melons Won't Fix
+					}),
+					
+					
+					q(14312, {	-- An Introduction Is In Order
+						["groups"] = {
+						},
+						["qg"] = 36052,	-- Garren Darkwind
+						["sourceQuestID"] = { 14311 },	-- Taking Part
 					}),
 					
 					
@@ -157,18 +169,23 @@ _.Zones =
 					}),
 					
 					
+					i(38567, {	-- Maraudine Prisoner Manifest
+						q(14330, {	-- Behind Closed Doors
+							["groups"] = {
+							},
+							["qg"] = 4656,	-- Maraudine Mauler
+							["sourceQuestID"] = { 14329 },	-- Not So Fast!
+						}),
+					}),
+					
+					
 					o(195497, {	-- Elune's Brazier
 --[[						qa(14359, {	-- Blessings From Above
 							["groups"] = {
 							},
 							["sourceQuestID"] = {  },	-- 
-						}),
-						qa(14358, {	-- Ten Pounds of Flesh
-							["groups"] = {
-							},
-							["sourceQuestID"] = {  },	-- 
-						}),
---]]
+						}),	--]]
+						qa(14358),	-- Ten Pounds of Flesh
 						qh(14213, {	-- Ten Pounds of Flesh
 							["groups"] = {
 							},
@@ -184,6 +201,31 @@ _.Zones =
 					}),
 					
 					
+					qh(14334, {	-- Blubbergut
+						["groups"] = {
+							i(55956),	-- Blubber-Stained Grips
+							i(55957),	-- Orca-Oiled Spaulders
+						},
+						["qg"] = 12031,	-- Mai'Lahii
+						["breadcrumbQuestID"] = { 14337 },	-- Shadowprey Village
+					}),
+					
+					
+					q(5501, {	-- Bone Collector
+						["groups"] = {
+						},
+						["qg"] = 11438,	-- Bibbly F'utzbuckle
+					}),
+					
+					
+					q(14314, {	-- Breakout!
+						["groups"] = {
+						},
+						["qg"] = 36056,	-- Khan Leh'Prah
+						["sourceQuestID"] = { 14312 },	-- An Introduction is in Order
+					}),
+					
+					
 					q(14309, { 	-- Calming the Kodo
 						["groups"] = {
 							i(55902), 	-- Kodo-Wrangler Cover
@@ -196,11 +238,66 @@ _.Zones =
 					}),
 					
 					
+					q(14316, {	-- Cenarion Property
+						["groups"] = {
+						},
+						["qg"] = 36052,	-- Garren Darkwind
+						["sourceQuestID"] = { 14312 },	-- An Introduction is in Order
+					}),
+					
+					
+					qh(14335, {	-- Chipping In (awarded "On Behalf of the Horde" criteria)
+						["groups"] = {
+							i(55960),	-- Carapace Robes
+							i(55961),	-- Ghost Walker Treads
+							i(55959),	-- Coven Battleaxe
+							i(131348),	-- Lob Stompers
+						},
+						["qg"] = 11624,	-- Taiga Wisemane
+						["sourceQuestID"] = { 14334, 5421 },	-- Blubbergut & Fish in a Bucket
+					}),
+					
+					
+					qh(14346, {	-- Cleasing Our Crevasse
+						["groups"] = {
+							i(55921),	-- Leggings of the Windy Ravine
+							i(55922),	-- Craggy Handgrips
+							i(55923),	-- Marshweaver's Wristguards
+							i(131349),	-- Windwhipped Grips
+						},
+						["qg"] = 36034,	-- Karnum Marshweaver
+					}),
+					
+					
+					q(14394, { 	-- Death to Agogridon (awarded "Uniting the Tribes" criteria and overall "Desolace Quests" achievement)
+						["groups"] = {
+							i(55915),	-- Cutlass of Agogridon
+							i(55916),	-- Soulstar Mace
+							i(55917),	-- Kolkar Cleaver
+							i(156968),	-- Kolkar Polearm
+						},
+						["qg"] = 36398,	-- Khan Leh'Prah
+						["sourceQuestID"] = { 14393 },	-- Into the Fray!
+					}),
+					
+					
 					q(14268, {	-- Deep Impact
 						["groups"] = {
 						},
 						["qg"] = 35827,	-- Valishj
 						["sourceQuestID"] = { 14264 },	-- Wetter than Wet
+					}),
+					
+					
+					q(14318, { 	-- Delicate Negotiations
+						["groups"] = {
+							i(55909), 	-- Drape of Centaur Dreams
+							i(55910), 	-- Defiant Spire Shoulderguard
+							i(55911), 	-- Stubborn Legguards
+							i(131345), 	-- Rebellious Epaulets
+						},
+						["qg"] = 36056,	-- Khan Leh'Prah
+						["sourceQuestID"] = { 14314, 14316 },	-- Breakout! & Cenarion Property
 					}),
 					
 					
@@ -211,45 +308,88 @@ _.Zones =
 					}),
 					
 					
-					n(4667, {	-- Burning Blade Shadowmage
-						i(49203, {	-- Burning Blade Ear
-							qa(14362),	-- Ears Are Burning
-						}),
-						i(49010, {	-- Burning Blade Ear
-							qh(14232),	-- Ears Are Burning
-						}),
+					q(14246, {	-- Early Adoption
+						["groups"] = {
+							i(55894),	-- Featherlight Leggings
+							i(55895),	-- Collector's Padded Gauntlets
+						},
+						["qg"] = 35661,	-- Cenarion Embassador Thunk
 					}),
-					n(4663, {	-- Burning Blade Augur
-						i(49203, {	-- Burning Blade Ear
-							qa(14362),	-- Ears Are Burning
+					
+					
+					a(i(49203, {	-- Burning Blade Ear
+						qa(14362, {	-- Ears Are Burning
+							["groups"] = {
+							},
+							["qg"] = 4665,	-- Burning Blade Adept 
 						}),
-						i(49010, {	-- Burning Blade Ear
-							qh(14232),	-- Ears Are Burning
+						qa(14362, {	-- Ears Are Burning
+							["groups"] = {
+							},
+							["qg"] = 4663,	-- Burning Blade Augur
 						}),
+						qa(14362, {	-- Ears Are Burning
+							["groups"] = {
+							},
+							["qg"] = 4666,	-- Burning Blade Felsworn
+						}),
+						qa(14362, {	-- Ears Are Burning
+							["groups"] = {
+							},
+							["qg"] = 4664,	-- Burning Blade Reaver
+						}),						
+						qa(14362, {	-- Ears Are Burning
+							["groups"] = {
+							},
+							["qg"] = 4667,	-- Burning Blade Shadowmage
+						}),
+					})),
+					
+					
+					h(i(49010, {	-- Burning Blade Ear
+						qh(14232, {	-- Ears Are Burning
+							["groups"] = {
+							},
+							["qg"] = 4665,	-- Burning Blade Adept
+						}),						
+						qh(14232, {	-- Ears Are Burning
+							["groups"] = {
+							},
+							["qg"] = 4663,	-- Burning Blade Augur
+						}),
+						qh(14232, {	-- Ears Are Burning
+							["groups"] = {
+							},
+							["qg"] = 4666,	-- Burning Blade Felsworn
+						}),
+						qh(14232, {	-- Ears Are Burning
+							["groups"] = {
+							},
+							["qg"] = 4664,	-- Burning Blade Reaver
+						}),
+						qh(14232, {	-- Ears Are Burning
+							["groups"] = {
+							},
+							["qg"] = 4667,	-- Burning Blade Shadowmage
+						}),
+					})),
+					
+					
+					qa(14354, {	-- Elune's Gifts
+						["groups"] = {
+							i(55952),	-- Gloves of Nurture
+							i(55953),	-- Shoulderguards of Protection
+						},
+						["qg"] = 5642,	-- Vahlarriel Demonslayer
+						["sourceQuestID"] = { 14387 },	-- Lay of the Land
 					}),
-					n(4666, {	-- Burning Blade Felsworn
-						i(49203, {	-- Burning Blade Ear
-							qa(14362),	-- Ears Are Burning
-						}),
-						i(49010, {	-- Burning Blade Ear
-							qh(14232),	-- Ears Are Burning
-						}),
-					}),
-					n(4664, {	-- Burning Blade Reaver
-						i(49203, {	-- Burning Blade Ear
-							qa(14362),	-- Ears Are Burning
-						}),
-						i(49010, {	-- Burning Blade Ear
-							qh(14232),	-- Ears Are Burning
-						}),
-					}),
-					n(4665, {	-- Burning Blade Adept
-						i(49203, {	-- Burning Blade Ear
-							qa(14362),	-- Ears Are Burning
-						}),
-						i(49010, {	-- Burning Blade Ear
-							qh(14232),	-- Ears Are Burning
-						}),
+					
+					
+					qa(14365, {	-- Ethel Rethor (bcrumb quest for 14256, not available if 14354 is completed)
+						["groups"] = {
+						},
+						["qg"] = 5752,	-- Corporal Melkins
+						["sourceQuestID"] = { 14354 },	-- Elune's Gifts
 					}),
 					
 					
@@ -270,6 +410,13 @@ _.Zones =
 					}),
 					
 					
+					qh( 5421, {	-- Fish in a Bucket
+						["groups"] = {
+						},
+						["qg"] = 11317,	-- Jinar'Zillen
+					}),
+					
+					
 					q(14253, { 	-- Fletch Me Some Plumage!
 						["groups"] = {
 							i(55891), 	-- Swoop-Tail Shoulders
@@ -287,11 +434,41 @@ _.Zones =
 							},
 							["sourceQuestID"] = { 14189 },	-- Translation
 						}),
-						qa(14193, {	-- Nothing a Couple of Melons Won't Fix
+						qa(14193),	-- Nothing a Couple of Melons Won't Fix
+					}),
+					
+					
+					o(195438, {	-- Cup of Elune
+						qh(14191, {	-- Furien's Footsteps
 							["groups"] = {
 							},
-							["sourceQuestID"] = {  },	-- 
+							["sourceQuestID"] = { 14189 },	-- Translation
 						}),
+						qa(14193),	-- Nothing a Couple of Melons Won't Fix
+					}),
+					
+					
+					q(6132, {	-- Get Me Out of Here!
+						["groups"] = {
+						},
+						["qg"] = 12277,	-- Melizza Brimbuzzle
+					}),
+					
+					
+					q(6134, { 	-- Ghost-o-plasm Round Up
+						["groups"] = {
+							i(15864), 	-- Condor Bracers
+							i(15865), 	-- Anchorhold Buckler
+						},
+						["qg"] = 6019,	-- Hornizz Brimbuzzle
+					}),
+					
+					
+					qh(14338, {	-- Ghost Walker Post (bcrumb quest for 14339 - unavailable if you've already picked it up)
+						["groups"] = {
+						},
+						["qg"] = 36034,	-- Karnum Marshweaver
+						["sourceQuestID"] = { 14311 },	-- Taking Part
 					}),
 					
 					
@@ -310,6 +487,15 @@ _.Zones =
 					}),
 					
 					
+					o(195600, {	-- Smouldering Stone
+						q(14254, {	-- Heavy Metal
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 14247 },	-- Stubborn Lands
+						}),
+					}),
+					
+					
 					qh(14342, {	-- Infernal Encroachment
 						["groups"] = {
 							i(55934),	-- Demonkiller Mask
@@ -317,6 +503,55 @@ _.Zones =
 							i(55935),	-- Claw-Scarred Bulwark
 						},
 						["qg"] = 5395,	-- Felgur Twocuts
+					}),
+					
+					
+					q(14393, {	-- Into the Fray!
+						["groups"] = {
+						},
+						["qg"] = 36398,	-- Khan Leh'Prah
+						["sourceQuestID"] = { 14332 },	-- Time for Change
+					}),
+					
+					
+					a(i(49220, {	-- Infernal Power Core
+						qa(14376, {	-- Jugkar's Undoing
+							["groups"] = {
+							},
+							["qg"] = 35591,	-- Lesser Infernal
+						}),
+					})),
+					
+					
+					h(i(49200, {	-- Infernal Power Core
+						qh(14344, {	-- Jugkar's Undoing
+							["groups"] = {
+							},
+							["qg"] = 35591,	-- Lesser Infernal
+						}),
+					})),
+					
+					
+					q(5561, {	-- Kodo Roundup
+						["groups"] = {
+						},
+						["qg"] = 11596,	-- Smeed Scrabblescrew
+					}),
+					
+					
+					qa(14387, {	-- Lay of the Land
+						["groups"] = {
+						},
+						["qg"] = 5396,	-- Captain Pentigast
+						["sourceQuestID"] = { 14384 },	-- Rerouted!
+					}),
+					
+					
+					qh(14343, {	-- Maurin's Concoction
+						["groups"] = {
+						},
+						["qg"] = 4498,	-- Maurin Bonesplitter
+						["sourceQuestID"] = { 14339 },	-- Delivery Device
 					}),
 					
 					
@@ -339,6 +574,14 @@ _.Zones =
 					}),
 					
 					
+					q(14327, {	-- My Word is My Bond (awarded "Karnum's Glade" criteria)
+						["groups"] = {
+						},
+						["qg"] = 36163,	-- Khan Kammah
+						["sourceQuestID"] = { 14325 },	-- Will Work For Food
+					}),
+					
+					
 					q(14251, {	-- New Beginnings
 						["groups"] = {
 						},
@@ -353,11 +596,27 @@ _.Zones =
 					}),
 					
 					
+					q(14329, {	-- Not So Fast!
+						["groups"] = {
+						},
+						["qg"] = 36185,	-- Khan Shodo
+						["sourceQuestID"] = { 14328 },	-- Three Princes
+					}),
+					
+					
 					q(14302, {	-- Official Assessment (rewarded "The Naga Threat" criteria)
 						["groups"] = {
 						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
 						["sourceQuestID"] = { 14301 },	-- Return and Report
+					}),
+					
+					
+					qa(14361, {	-- Peace of Mind
+						["groups"] = {
+						},
+						["qg"] = 5396,	-- Captain Pentigast
+						["sourceQuestID"] = { 14354 },	-- Elune's Gifts
 					}),
 					
 					
@@ -399,6 +658,14 @@ _.Zones =
 					}),
 					
 					
+					qa(14384, {	-- Rerouted!
+						["groups"] = {
+						},
+						["qg"] = 36410,	-- Officer Jankie
+						["breadcrumbQuestID"] = { 28531 },	-- Hero's Call: Desolace!
+					}),
+					
+					
 					q(14301, { 	-- Return and Report
 						["groups"] = {
 							i(55906), 	-- Balmy Wraps
@@ -429,6 +696,14 @@ _.Zones =
 					})),
 					
 					
+					qh(14337, {	-- Shadowprey Village (wowhead says not available if 6142 or 14334 is completed)
+						["groups"] = {
+						},
+						["qg"] = 36034,	-- Karnum Marshweaver
+						["sourceQuestID"] = { 14327 },	-- My Word is My Bond
+					}),
+					
+					
 					q(14257, {	-- Slitherblade Slaughter
 						["groups"] = {
 						},
@@ -443,6 +718,13 @@ _.Zones =
 						["qg"] = 11259,	-- Nataka Longhorn
 					}),
 
+					
+					q(14247, {	-- Stubborn Lands
+						["groups"] = {
+						},
+						["qg"] = 35661,	-- Cenarion Embassador Thunk
+					}),
+					
 					
 					q(14307, {	-- Stubborn Winds
 						["groups"] = {
@@ -475,14 +757,49 @@ _.Zones =
 					}),
 					
 					
+					qa( 1454, {	-- The Karnitol Shipwreck
+						["groups"] = {
+						},
+						["qg"] = 5638,	-- Kreldig Ungor
+						["sourceQuestID"] = { 14354 },	-- Elune's Gifts
+					}),
+					
+					
+					qh(26589, {	-- The Wilds of Feralas (bcrumb quest for 25210)
+						["groups"] = {
+						},
+						["qg"] = 36487,	-- Khan Shodo
+						["sourceQuestID"] = { 14394 },	-- Death to Agogridon
+					}),
+					
+					
+					q(14328, {	-- Three Princes
+						["groups"] = {
+						},
+						["qg"] = 36056,	-- Khan Leh'Prah
+						["sourceQuestID"] = { 14327 },	-- My Word is My Bond
+					}),
+					
+					
+					q(14332, { 	-- Time For Change
+						["groups"] = {
+							i(55914), 	-- Silent Footpads
+							i(55913), 	-- Emissary's Chestpiece
+							i(55912), 	-- Wrought Formal Dagger
+							i(131347), 	-- Messenger's Greaves
+						},
+						["qg"] = 36196,	-- Kherrah
+						["sourceQuestID"] = { 14330 },	-- Behind Closed Doors
+					}),
+					
+					
 					o(195517, {	-- Elune's Handmaiden
---[[						qa(14357, {	-- To the Hilt!
-							i(55942),
-							i(55943),
-							i(55944),
-							i(131350),
+						qa(14357, {	-- To the Hilt!
+							i(55942),	-- Sandals of Ritual
+							i(55943),	-- Gilt Cuirass
+							i(55944),	-- Profound Girdle
+							i(131350),	-- Gleaming Link Hauberk
 						}),
---]]						
 						qh(14219, {	-- To the Hilt!
 							["groups"] = {
 								i(55945),	-- Sandals of Ritual
@@ -511,6 +828,30 @@ _.Zones =
 					}),
 					
 					
+					o(196393, {	-- Broken Relic
+						q(14333, {	-- While You're Here
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 14330 },	-- Behind Closed Doors (may be available as early as 14328 "Three Princes" is turned in, but picked up when turning in "Behind Closed Doors")
+						}),
+					}),
+					
+					
+					q(14325, {	-- Will Work For Food
+						["groups"] = {
+						},
+						["qg"] = 36163,	-- Khan Kammah
+						["sourceQuestID"] = { 14318 },	-- Delicate Negotiations
+					}),
+					
+					
+					qa(14363, {	-- You'll Know It When You See It
+						["groups"] = {
+						},
+						["sourceQuestID"] = { 14361 },	-- Peace of Mind
+					}),
+					
+					
 					qh(14225, {	-- You'll Know It When You See It
 						["groups"] = {
 						},
@@ -527,102 +868,26 @@ _.Zones =
 						["sourceQuestID"] = {  },	-- 
 					}),
 --]]
+
+
+
 					
-					-- qh( 1432),	-- Alliance Relations (REMOVED according to wowhead comment)
 					qg(36329, qa(14380)),	-- An Impactful Discovery
-					qg(36052, q(14312)),	-- An Introduction Is In Order
-					-- qh( 1434),	-- Befouled by Satyr (REMOVED according to wowhead comment)
-					n(4656, {	-- Maraudine Mauler
-						i(38567, {	-- Maraudine Prisoner Manifest
-							q(14330),	-- Behind Closed Doors
-						}),
-					}),
-					qg(12031, qh(14334, {	-- Blubbergut
-						i(55956),
-						i(55957),
-					})),
-					qg(11625, q(5821)),	-- Bodyguard for Hire
-					qg(11438, q(5501)),	-- Bone Collector
-					qg(36056, q(14314)),	-- Breakout!
-					qg(66372, q(31870)),	-- Cassandra Kaboom
-					qg(36052, q(14316)),	-- Cenarion Property
-					qg(11624, qh(14335, {	-- Chipping In
-						i(55960),
-						i(55961),
-						i(55959),
-						i(131348),
-					})),
-					-- qh( 6142),	-- Clam Bait (REMOVED with Cata, per wowhead comment)
 					qg(36034, qa(14381, {	-- Cleansing Our Crevasse
 						i(55918),
 						i(55919),
 						i(55920),
 						i(131353),
 					})),
-					qg(36034, qh(14346, {	-- Cleasing Our Crevasse
-						i(55921),
-						i(55922),
-						i(55923),
-						i(131349),
-					})),
-					qg(36398, q(14394, { 	-- Death to Agogridon
-						i(55915),
-						i(55916),
-						i(55917),
-						i(156968),	-- Kolkar Polearm
-					})),
-					qg(36056, q(14318, { 	-- Delicate Negotiations
-						i(55909),
-						i(55910),
-						i(55911),
-						i(131345),
-					})),
-					qg(35661, q(14246, {	-- Early Adoption
-						i(55894),
-						i(55895),
-					})),
-					qg(5642, qa(14354, {	-- Elune's Gifts
-						i(55952),
-						i(55953),
-					})),
-					qg(5752, qa(14365)),	-- Ethel Rethor (bcrumb quest for 14256, not available if 14354 is completed)
-					qg(11317, qh( 5421)),	-- Fish in a Bucket
-					qg(12277, q(6132)),	-- Get Me Out of Here!
-					qg(36034, qh(14338)),	-- Ghost Walker Post (bcrumb quest for 14339)
-					qg(6019, q(6134, { 	-- Ghost-o-plasm Round Up
-						i(15864),
-						i(15865),
-					})),
-					qg(11626, q(5943)),	-- Gizelton Caravan
-					o(195600, {	-- Smouldering Stone
-						q(14254),	-- Heavy Metal
-					}),
-					qg(36329, qa(14378)),	-- Hunting Brendol
 					qg(36329, qa(14373, {	-- Infernal Encroachment
 						i(55931),
 						i(55930),
 						i(55932),
 					})),
-					qg(36398, q(14393)),	-- Into the Fray!
-					n(35591, {	-- Lesser Infernal
-						i(49220, {	-- Infernal Power Core
-							qa(14376),	-- Jugkar's Undoing
-						}),
-						i(49200, {	-- Infernal Power Core
-							qh(14344),	-- Jugkar's Undoing
-						}),
-					}),
-					qg(11596, q(5561)),	-- Kodo Roundup
-					qg(5396, qa(14387)),	-- Lay of the Land
-					qg(4498, qh(14343)),	-- Maurin's Concoction
-					qg(66372, qh(31872)),	-- Merda Stronghoof
-					qg(36163, q(14327)),	-- My Word is My Bond
-					qg(36185, q(14329)),	-- Not So Fast!
+					qg(36329, qa(14378)),	-- Hunting Brendol
 					o(195438, {	-- Cup of Elune
 						qa(14193),	-- Nothing a Couple of Melons Won't Fix
 					}),
-					qg(12340, qh( 6143)),	-- Other Fish to Fry
-					qg(5396, qa(14361)),	-- Peace of Mind
 					qg(36329, qa(14374, {	-- Portals of the Legion
 						i(55937),
 						i(55938),
@@ -632,16 +897,11 @@ _.Zones =
 					qg(5396, qa(14364, {	-- Putting Their Heads Together
 						i(55926),
 					})),
-					-- q(1467),	-- Reagents for Reclaimers Inc. (REMOVED per wowhead comments)
-					qg(36410, qa(14384)),	-- Rerouted!
 					qg(36378, qa(14379)),	-- Rock Lobstrock!
-					qg(36034, qh(14337)),	-- Shadowprey Village (not available if 6142 or 14334 is completed)
-					qg(35661, q(14247)),	-- Stubborn Lands
 					qg(36034, qa(14372)),	-- Thargad's Camp (bcrumb quest for 14373)
 					o(35251, {	-- Karnitol's Chest
 						qa( 1455),	-- The Karnitol Shipwreck
 					}),
-					qg(5638, qa( 1454)),	-- The Karnitol Shipwreck
 					qg(5638, qa( 1456, { 	-- The Karnitol Shipwreck
 						i(55949),
 						i(55950),
@@ -649,19 +909,18 @@ _.Zones =
 						i(131231),
 					})),
 					qg(36487, qa(14410)),	-- The Wilds of Feralas (bcrumb quest for 25447, not available if 28511 is completed)
-					qg(36487, qh(26589)),	-- The Wilds of Feralas (bcrumb quest for 25210)
-					qg(36056, q(14328)),	-- Three Princes
-					qg(36196, q(14332, { 	-- Time For Change
-						i(55914),
-						i(55913),
-						i(55912),
-						i(131347),
-					})),
-					o(196393, {	-- Broken Relic
-						q(14333),	-- While You're Here
-					}),
-					qg(36163, q(14325)),	-- Will Work For Food
-					qg(5396, qa(14363)),	-- You'll Know It When You See It
+					
+					
+					
+					
+					
+--[[LEGACY 			qg(12340, qh( 6143)),	-- Other Fish to Fry (REMOVED with Cata per wowhead comment)
+					qh( 1432),	-- Alliance Relations (REMOVED per wowhead comment)
+					qh( 1434),	-- Befouled by Satyr (REMOVED per wowhead comment)
+					qg(11625, q(5821)),	-- Bodyguard for Hire (REMOVED per wowhead comment)
+					qh( 6142),	-- Clam Bait (REMOVED with Cata per wowhead comment)
+					qg(11626, q(5943)),	-- Gizelton Caravan (REMOVED per wowhead comment)
+					q(1467),	-- Reagents for Reclaimers Inc. (REMOVED per wowhead comments) --]]
 				}),
 				n(-16, { 	-- Rares
 					n(14229, { 		-- Accursed Slitherblade
