@@ -305,13 +305,38 @@ WOD_CRAFTED_ITEM = function(id)
 end
 
 -- Construct a commonly formatted object.
+local bubbleUp = function(t)
+	local t2 = {};
+	for i, group in pairs(t) do
+		if type(i) ~= "number" then
+			print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
+		elseif type(group) ~= "table" then
+			print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
+		else
+			if group.bubble then
+				-- this isn't just a normal group object, merge up the contents.
+				for j,subgroup in pairs(group.groups) do
+					if type(i) ~= "number" then
+						print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
+					elseif type(group) ~= "table" then
+						print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
+					else
+						table.insert(t2, subgroup);
+					end
+				end
+			else
+				table.insert(t2, group);
+			end
+		end
+	end
+	return t2;
+end
 struct = function(field, id, t)
 	if not t then t = {};
 	elseif not t.groups and t[1] then
-		t = { ["groups"] = t };
-	end
-	if type(t) == "string" then
-		print(t);
+		t = { ["groups"] = bubbleUp(t) };
+	elseif t.groups then
+		t.groups = bubbleUp(t.groups);
 	end
 	t[field] = id;
 	return t;
@@ -438,9 +463,13 @@ dr = function(dropRate, t)										-- Add a Drop Rate to an object.
 		return t;
 	else
 		--print("YOU CAN'T APPLY A DROP RATE TO A NON-OBJECT");
+		for i,group in pairs(t) do
+			if type(group) == "table" then
+				group.dr = dropRate;
+			end
+		end
 		return {
-			["bubble"] = { "dr" }, -- This will tell the parser to "bubble up" the "dr" field to all of the items in the group.
-			["dr"] = dropRate,
+			["bubble"] = true, -- This will tell the constructor to "bubble up" the objects in t.
 			["groups"] = t
 		};
 	end
