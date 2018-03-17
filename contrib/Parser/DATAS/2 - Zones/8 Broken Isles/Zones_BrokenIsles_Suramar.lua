@@ -195,6 +195,7 @@ _.Zones =
 									},
 									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
+								i(140013), -- Night Commander's Pauldrons
 							},
 						}),
 						un(2, i(154907, { -- Nightfallen Hoard
@@ -258,6 +259,7 @@ _.Zones =
 									},
 									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
+								i(140013), -- Night Commander's Pauldrons
 							},
 						})),
 						un(2, i(151468, { -- Nightfallen Hoard
@@ -321,6 +323,7 @@ _.Zones =
 									},
 									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
+								i(140013), -- Night Commander's Pauldrons
 							},
 						})),
 						un(2, i(146751, { -- Nightfallen Hoard
@@ -384,6 +387,7 @@ _.Zones =
 									},
 									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
+								i(140013), -- Night Commander's Pauldrons
 							},
 						})),
 						un(2, i(137564, { -- Nightfallen Hoard
@@ -447,6 +451,7 @@ _.Zones =
 									},
 									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
+								i(140013), -- Night Commander's Pauldrons
 							},
 						})),
 					}),
