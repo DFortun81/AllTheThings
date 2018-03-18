@@ -24,12 +24,24 @@ _.Zones =
 								["description"] = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r"
 							}),
 						}),
-						n(-166, { 	-- Pickpocketing
+						spell(921, { 	-- Pickpocketing
 							["groups"] = {	
 								n(-161, { 	-- Toys
-									desc(i(36863), "Can be pickpocketed from Northrend humanoids."),	-- Decahedral Dwarven Dice
-									desc(i(63269), "Can be pickpocketed from Cataclysm humanoids."),	-- Loaded Gnomish Dice
-									desc(i(36862), "Can be pickpocketed from Northrend humanoids."),	-- Worn Troll Dice
+									i(36863, { -- Decahedral Dwarven Dice
+										["groups"] = {
+										},
+										["description"] = "Can be pickpocketed from Northrend humanoids.",
+									}),
+									i(63269, { -- Loaded Gnomish Dice
+										["groups"] = {
+										},
+										["description"] = "Can be pickpocketed from Cataclysm humanoids.",
+									}),
+									i(36862, { -- Worn Troll Dice
+										["groups"] = {
+										},
+										["description"] = "Can be pickpocketed from Northrend humanoids.",
+									}),
 								}),
 								n(-165, { 	-- Junkboxes
 									["groups"] = {
@@ -65,8 +77,6 @@ _.Zones =
 									["description"] = "These items have a small chance of dropping from the junkboxes.",
 								}),
 							},
-							["icon"] = "Interface\\Icons\\inv_misc_bag_11",
-							["spellid"] = 921,
 						}),						
 						n(-17, { -- Quests
 							qc4(qg(101513, q(45571))),	-- A Bit of Espionage 
