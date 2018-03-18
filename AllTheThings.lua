@@ -1363,14 +1363,9 @@ local function SearchForItemLink(link)
 										else
 											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
 											if otherSource then
-												local name, link = GetItemInfo(otherSource.itemID);
+												local name, link = GetItemInfo(string.format("item:%d:::::::::::%d:1:3524", otherSource.itemID, otherSource.itemModID));
 												if not link then 
 													link = RETRIEVING_DATA;
-													print("name:" .. (name or "???"));
-													print("link:" .. (link or "???"));
-													for key, value in pairs(otherSource) do
-														print(tostring(key) .. ": " .. tostring(value));
-													end
 													working = true;
 												end
 												text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "");
