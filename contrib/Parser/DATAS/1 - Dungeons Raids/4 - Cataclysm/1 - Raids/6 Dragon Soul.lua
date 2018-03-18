@@ -231,7 +231,7 @@ _.Instances =
 									},
 									["qg"] = 55476,	-- Lord Afrasastrasz
 									["classes"] = { 4 },	-- Rogue
-									["sourceQuestID"] = { 29801 },	-- Proving Your Worth
+									["sourceQuests"] = { 29801 },	-- Proving Your Worth
 								})),
 								ql(q(29801, {	-- Proving Your Worth
 									["groups"] = {
@@ -525,7 +525,7 @@ _.Instances =
 									},
 									["qg"] = 55476,	-- Lord Afrasastrasz
 									["classes"] = { 4 },	-- Rogue
-									["sourceQuestID"] = { 29801 },	-- Proving Your Worth
+									["sourceQuests"] = { 29801 },	-- Proving Your Worth
 								})),
 								ql(q(29801, {	-- Proving Your Worth
 									["groups"] = {

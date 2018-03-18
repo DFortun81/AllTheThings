@@ -492,7 +492,7 @@ _.Zones =
 									},
 									["description"] = "This quest can only be done once per year.",
 									["qg"] = 13418, -- Kaymard Copperpinch
-									["sourceQuestID"] = { 6983 }, -- You're a Mean One...
+									["sourceQuests"] = { 6983 }, -- You're a Mean One...
 								}),
 								qg(13420, q(6961)), 	-- Greatfather Winter is Here!
 								qg(13417, qh(7061)),	-- The Feast of Winter Veil
@@ -1245,7 +1245,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["groups"] = {
 						},
 						["qg"] = 14720,	-- High Overlord Saurfang
-						["sourceQuestID"] = { 26294 },	-- Weapons of Mass Dysfunction
+						["sourceQuests"] = { 26294 },	-- Weapons of Mass Dysfunction
 					}),
 --[[
 					qg(44024, qh( 26798)),	-- Saurfang Will be Pleased
@@ -1444,7 +1444,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 							i(63923),	-- Hauberk of Shock
 						},
 						["qg"] = 42637,	-- Sauranok the Mystic
-						["sourceQuestID"] = { 28909 },	-- Sauranok Will Paint the Way
+						["sourceQuests"] = { 28909 },	-- Sauranok Will Paint the Way
 					}), 
 --[[
 					o(206109, { 	-- Warchief's Command Board (Org)
@@ -1525,7 +1525,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["qg"] = 44725,	-- Sunwalker Atohmo
 						["races"] = { 6 },	-- Tauren
 						["classes"] = { 2 },	-- Paladin
---						["sourceQuestID"] = { 28302 },	-- Meet with Sunwalker Atohmo
+--						["sourceQuests"] = { 28302 },	-- Meet with Sunwalker Atohmo
 					})),
 					qdg(q(28473, {	-- Weapons of Darkness
 						["groups"] = {
@@ -1537,13 +1537,13 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["qg"] = 23128,	-- Master Pyreanor
 						["races"] = { 10 },	-- Blood Elf
 						["classes"] = { 2 },	-- Paladin
---						["sourceQuestID"] = { 28303 },	-- Meet with Master Pyreanor (unknown if breadcrumb)
+--						["sourceQuests"] = { 28303 },	-- Meet with Master Pyreanor (unknown if breadcrumb)
 					})),
 					qh(26324, {	-- Where Is My Warfleet?
 						["groups"] = {
 						},
 						["qg"] = 14720,	-- High Overlord Saurfang
-						["sourceQuestID"] = { 26311 },	-- Unfamiliar Waters
+						["sourceQuests"] = { 26311 },	-- Unfamiliar Waters
 					}),
 --					qg( 3362, qh( 7660)),	-- Wolf Swapping - Arctic Wolf
 --					qg( 3362, qh( 7661)),	-- Wolf Swapping - Red Wolf

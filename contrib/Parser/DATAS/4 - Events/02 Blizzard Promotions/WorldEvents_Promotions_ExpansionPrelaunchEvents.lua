@@ -153,13 +153,13 @@ _.WorldEvents =
 									["groups"] = {
 									},
 									["qg"] = 113986, -- Archmage Khadgar
-									["sourceQuestID"] = { 44182 }, -- City Under Siege
+									["sourceQuests"] = { 44182 }, -- City Under Siege
 								}),
 								q(44500, { -- Author! Author!
 									["groups"] = {
 									},
 									["qg"] = 113986, -- Archmage Khadgar
-									["sourceQuestID"] = { 44421 }, -- Author! Author!
+									["sourceQuests"] = { 44421 }, -- Author! Author!
 								}),
 								q(40717, { -- Calling of the Council
 									["groups"] = {
@@ -171,14 +171,14 @@ _.WorldEvents =
 									["groups"] = {
 									},
 									["qg"] = 114550, -- Khadgar's Upgraded Servant
-									--["sourceQuestID"] = { 
+									--["sourceQuests"] = { 
 									["races"] = { 2, 5, 6, 8, 9, 10, 26, 27, 28 }, -- Horde Races
 								}),
 								q(44182, { -- City Under Siege
 									["groups"] = {
 									},
 									["qg"] = 114561, -- Khadgar's Upgraded Servant
-									["sourceQuestID"] = { 40755 }, -- Hiding in the Stacks
+									["sourceQuests"] = { 40755 }, -- Hiding in the Stacks
 								}),
 								q(40755, { -- Hiding in the Stacks
 									["groups"] = {
@@ -188,7 +188,7 @@ _.WorldEvents =
 										i(139997), -- Gauntlets of Legion Devastation
 									},
 									["qg"] = 101547, -- Archmage Khadgar
-									["sourceQuestID"] = { 42970 }, -- The Diamond King
+									["sourceQuests"] = { 42970 }, -- The Diamond King
 								}),	
 								q(44184, { -- In the Blink of an Eye
 									["groups"] = {
@@ -196,7 +196,7 @@ _.WorldEvents =
 										-- i(143785), -- Tome of the Tranquil Mind
 									},
 									["qg"] = 114562, -- Khadgar's Upgraded Servant
-									["sourceQuestID"] = { 44500 }, -- Author! Author!
+									["sourceQuests"] = { 44500 }, -- Author! Author!
 								}),								
 								q(43301, { -- Invasion: Azshara
 									["groups"] = {
@@ -850,7 +850,7 @@ _.WorldEvents =
 									["groups"] = {
 									},
 									["qg"] = 113655, -- Brann Bronzebeard
-									["sourceQuestID"] = { 40717, 40718 }, -- Calling of the Council
+									["sourceQuests"] = { 40717, 40718 }, -- Calling of the Council
 								}),
 							}),
 							n(-2, { -- Vendors

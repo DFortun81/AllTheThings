@@ -191,7 +191,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15398,	-- Larianna Riverwind
-						["sourceQuestID"] = { 9258 },	-- The Scorched Grove
+						["sourceQuests"] = { 9258 },	-- The Scorched Grove
 					}),
 					
 					
@@ -199,7 +199,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15401,	-- Ley-Keeper Velania
-						["sourceQuestID"] = { 9119 },	-- Malfunction at the West Sanctum
+						["sourceQuests"] = { 9119 },	-- Malfunction at the West Sanctum
 					}),
 					n(15670, {	-- Grimscale Forager
 						i(21776, {	-- Captain Kelisendra's Lost Rutters							
@@ -230,25 +230,25 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15969,	-- Groundskeeper Wyllithen
-						["sourceQuestID"] = { 9394 },	-- Where's Wyllithen?
+						["sourceQuests"] = { 9394 },	-- Where's Wyllithen?
 					}),
 					qh( 8350, {	-- Completing the Delivery
 						["groups"] = {
 						},
 						["qg"] = 15301,	-- Outrunner Alarion
-						["sourceQuestID"] = { 9705 },	-- Package Recovery
+						["sourceQuests"] = { 9705 },	-- Package Recovery
 					}),
 					qh( 8487, {	-- Corrupted Soil
 						["groups"] = {
 						},
 						["qg"] = 15402,	-- Apprentice Mirveda
-						["sourceQuestID"] = { 9254 },	-- The Wayward Apprentice
+						["sourceQuests"] = { 9254 },	-- The Wayward Apprentice
 					}),
 					qh( 9352, {	-- Darnassian Intrusions
 						["groups"] = {
 						},
 						["qg"] = 15403,	-- Aeldon Sunbrand
-						["sourceQuestID"] = { 8463 },	-- Unstable Mana Crystals
+						["sourceQuests"] = { 8463 },	-- Unstable Mana Crystals
 					}),
 					qh( 8889, {	-- Deactivating the Spire
 						["groups"] = {
@@ -260,13 +260,13 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15942,	-- Ranger Sareyn
-						["sourceQuestID"] = { 9358 },	-- Ranger Sareyn
+						["sourceQuests"] = { 9358 },	-- Ranger Sareyn
 					}),
 					qh( 8895, {	-- Delivery to the North Sanctum
 						["groups"] = {
 						},
 						["qg"] = 15418,	-- Magister Jaronis
-						["sourceQuestID"] = { 8472 },	-- Major Malfunction
+						["sourceQuests"] = { 8472 },	-- Major Malfunction
 					}),
 					qh( 9148, {	-- Delivery to Tranquillien
 						["groups"] = {
@@ -276,19 +276,19 @@ _.Zones =
 							i(131243),	-- Tranquillien Ranger's Cuffs
 						},
 						["qg"] = 16183,	-- Courier Dawnstrider
-						["sourceQuestID"] = { 9147 },	-- The Fallen Courier
+						["sourceQuests"] = { 9147 },	-- The Fallen Courier
 					}),
 					qh( 9256, {	-- Fairbreeze Village
 						["groups"] = {
 						},
 						["qg"] = 15403,	-- Aeldon Sunbrand
-						["sourceQuestID"] = { 8483 },	-- The Dwarven Spy
+						["sourceQuests"] = { 8483 },	-- The Dwarven Spy
 					}),
 					qh( 9359, {	-- Farstrider Retreat
 						["groups"] = {
 						},
 						["qg"] = 15939,	-- Ranger Degolien
-						["sourceQuestID"] = { 8892 },	-- Situation at Sunsail Anchorage
+						["sourceQuests"] = { 8892 },	-- Situation at Sunsail Anchorage
 					}),
 					qh( 9402, {	-- Fetch!
 						["groups"] = {
@@ -305,7 +305,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 44036,	-- Skymaster Brightdawn
-						["sourceQuestID"] = { 9130 },	-- Goods from Silvermoon City
+						["sourceQuests"] = { 9130 },	-- Goods from Silvermoon City
 						["races"] = {10}, -- Blood Elf
 					}),
 					qh( 9130, {	-- Goods from Silvermoon City
@@ -325,7 +325,7 @@ _.Zones =
 								qh(8482),	-- Incriminating Documents
 							}),
 						},
-						["sourceQuestID"] = { 9352 },	-- Darnassian Intrusions
+						["sourceQuests"] = { 9352 },	-- Darnassian Intrusions
 					}),
 					qh(32668, {	-- Learn To Ride
 						["groups"] = {
@@ -348,7 +348,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15405,	-- Ley-Keeper Caidanis
-						["sourceQuestID"] = { 8895 },	-- Delivery to the North Sanctum
+						["sourceQuests"] = { 8895 },	-- Delivery to the North Sanctum
 					}),
 					qh( 9144, {	-- Missing in the Ghostlands (requires level 10)
 						["groups"] = {
@@ -363,7 +363,7 @@ _.Zones =
 					qh( 9705, {	-- Package Recovery
 						["groups"] = {
 						},
-						["sourceQuestID"] = { 9704 },	-- Slain by the Wretched
+						["sourceQuests"] = { 9704 },	-- Slain by the Wretched
 					}),
 					qh( 8491, {	-- Pelt Collection
 						["groups"] = {
@@ -374,7 +374,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 16362,	-- Runewarden Deryan
-						["sourceQuestID"] = { 9253 },	-- Runewarden Deryan
+						["sourceQuests"] = { 9253 },	-- Runewarden Deryan
 					}),
 					qh( 9358, {	-- Ranger Sareyn
 						["groups"] = {
@@ -388,19 +388,19 @@ _.Zones =
 						},
 						["qg"] = 15970,	-- Instructor Antheol
 						["classes"] = { 8 }, -- Mage
-						["sourceQuestID"] = { 9403 },	-- The Purest Water
+						["sourceQuests"] = { 9403 },	-- The Purest Water
 					}),
 					qh( 9255, {	-- Research Notes
 						["groups"] = {
 						},
 						["qg"] = 15402,	-- Apprentice Mirveda
-						["sourceQuestID"] = { 8488 },	-- Unexpected Results
+						["sourceQuests"] = { 8488 },	-- Unexpected Results
 					}),
 					qh( 9135, {	-- Return to Sathiel
 						["groups"] = {
 						},
 						["qg"] = 16192,	-- Skymistress Gloaming
-						["sourceQuestID"] = { 9134 },	-- Skymistress Gloaming
+						["sourceQuests"] = { 9134 },	-- Skymistress Gloaming
 						["races"] = {10}, -- Blood Elf
 					}),
 					qh( 9035, {	-- Roadside Ambush
@@ -413,7 +413,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15942,	-- Ranger Sareyn
-						["sourceQuestID"] = { 9252 },	-- Defending Fairbreeze Village
+						["sourceQuests"] = { 9252 },	-- Defending Fairbreeze Village
 					}),
 					qh( 9395, {	-- Saltheril's Haven
 						["groups"] = {
@@ -430,7 +430,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 16191,	-- Sathren Azuredawn
-						["sourceQuestID"] = { 9133 },	-- Fly to Silvermoon City
+						["sourceQuests"] = { 9133 },	-- Fly to Silvermoon City
 						["races"] = {10}, -- Blood Elf
 					}),
 					qh( 9704, {	-- Slain by the Wretched
@@ -450,13 +450,13 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15970,	-- Instructor Antheol
-						["sourceQuestID"] = { 9064 },	-- Taking the Fall
+						["sourceQuests"] = { 9064 },	-- Taking the Fall
 					}),
 					qh( 9064, {	-- Taking the Fall
 						["groups"] = {
 						},
 						["qg"] = 15945,	-- Apprentice Meledor
-						["sourceQuestID"] = { 9062 },	-- Soaked Pages
+						["sourceQuests"] = { 9062 },	-- Soaked Pages
 					}),
 					qh( 8475, {	-- The Dead Scar
 						["groups"] = {
@@ -467,7 +467,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15403,	-- Aeldon Sunbrand
-						["sourceQuestID"] = { 8482 },	-- Incriminating Documents
+						["sourceQuests"] = { 8482 },	-- Incriminating Documents
 					}),
 					qh( 9147, {	-- The Fallen Courier
 						["groups"] = {
@@ -492,20 +492,20 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 16144,	-- Lord Saltheril
-						["sourceQuestID"] = { 9395 },	-- Saltheril's Haven
+						["sourceQuests"] = { 9395 },	-- Saltheril's Haven
 					}),
 					qh( 9403, {	-- The Purest Water
 						["groups"] = {
 						},
 						["qg"]	= 15970,	-- Instructor Antheol
 						["classes"] = {8}, -- Mage
-						["sourceQuestID"] = { 9402 },	-- Fetch!
+						["sourceQuests"] = { 9402 },	-- Fetch!
 					}),
 					qh( 8885, {	-- The Ring of Mmmrrrggglll
 						["groups"] = {
 						},
 						["qg"] = 15920,	-- Hathvelion Sungaze
-						["sourceQuestID"] = { 8884 },	-- Fish Heads, Fish Heads...
+						["sourceQuests"] = { 8884 },	-- Fish Heads, Fish Heads...
 					}),
 					qh( 9258, {	-- The Scorched Grove
 						["groups"] = {
@@ -526,7 +526,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15402,	-- Apprentice Mirveda
-						["sourceQuestID"] = { 8487 },	-- Corrupted Soil
+						["sourceQuests"] = { 8487 },	-- Corrupted Soil
 					}),
 					qh( 8463, {	-- Unstable Mana Crystals
 						["groups"] = {
@@ -540,7 +540,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15399,	-- Lieutenant Dawnrunner
-						["sourceQuestID"] = { 9360 },	-- Amani Invasion
+						["sourceQuests"] = { 9360 },	-- Amani Invasion
 					}),
 					qh( 9394, {	-- Where's Wyllithen?
 						["groups"] = {
@@ -551,20 +551,20 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15398,	-- Larianna Riverwind
-						["sourceQuestID"] = { 15409 },	-- Old Whitebark's Pendant
+						["sourceQuests"] = { 15409 },	-- Old Whitebark's Pendant
 					}),
 					qh( 8890, {	-- Word from the Spire
 						["groups"] = {
 							i(23399),	-- Fallen Apprentice's Robe
 						},
 						["qg"] = 15924,	-- Apprentice Loralthalis
-						["sourceQuestID"] = { 8889 },	-- Deactivating the Spire
+						["sourceQuests"] = { 8889 },	-- Deactivating the Spire
 					}),
 					qh( 9076, {	-- Wretched Ringleader
 						["groups"] = {
 						},
 						["qg"] = 15404,	-- Velendris Whitemorn
-						["sourceQuestID"] = { 8480 },	-- Lost Armaments
+						["sourceQuests"] = { 8480 },	-- Lost Armaments
 					}),
 					qh( 8479, {	-- Zul'Marosh
 						["groups"] = {
@@ -635,25 +635,25 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 15296,	-- Arcanist Ithanas
-								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
+								["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 							}),
 							qh( 8334, {	-- Aggression
 								["groups"] = {
 								},
 								["qg"] = 15281,	-- Lanthan Perilon
-								["sourceQuestID"] = { 8327 },	-- Report to Lanthan Perilon
+								["sourceQuests"] = { 8327 },	-- Report to Lanthan Perilon
 							}),
 							qh( 8347, {	-- Aiding the Outrunners
 								["groups"] = {
 								},
 								["qg"] = 15281,	-- Lanthan Perilon
-								["sourceQuestID"] = { 8335 },	-- Felendren the Banished
+								["sourceQuests"] = { 8335 },	-- Felendren the Banished
 							}),
 							qh( 8335, {	-- Felendren the Banished
 								["groups"] = {
 								},
 								["qg"] = 15281,	-- Lanthan Perilon
-								["sourceQuestID"] = { 8334 },	-- Aggression
+								["sourceQuests"] = { 8334 },	-- Aggression
 							}),
 							qh( 8325, {	-- Reclaiming Sunstrider Isle
 								["groups"] = {
@@ -664,13 +664,13 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 15278,	-- Magistrix Erona
-								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
+								["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 							}),
 							qh(37443, {	-- Solanian's Belongings
 								["groups"] = {
 								},
 								["qg"] = 15295,	-- Well Watcher Solanian
-								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
+								["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 							}),
 							n(15298, {	-- Tainted Arcane Wraith
 								i(20483, {	-- Tainted Arcane Sliver
@@ -681,19 +681,19 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 15295,	-- Well Watcher Solanian
-								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
+								["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 							}),
 							qh(37439, {	-- Thirst Unending
 								["groups"] = {
 								},
 								["qg"] = 15297,	-- Arcanist Helion
-								["sourceQuestID"] = { 8326 },	-- Unfortunate Measures
+								["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 							}),
 							qh( 8326, {	-- Unfortunate Measures
 								["groups"] = {
 								},
 								["qg"] = 15278,	-- Magistrix Erona
-								["sourceQuestID"] = { 8325 },	-- Reclaiming Sunstrider Isle
+								["sourceQuests"] = { 8325 },	-- Reclaiming Sunstrider Isle
 							}),
 --[[						It appears these four quests were replaced with newer versions.
 							qg(15296, qh( 8336)),	-- A Fistful of Slivers

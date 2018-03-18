@@ -238,13 +238,13 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 27987, -- Monte Muzzleshot
-						["sourceQuestID"] = { 12521 }, -- Where in the World is Hemet Nesingwary?
+						["sourceQuests"] = { 12521 }, -- Where in the World is Hemet Nesingwary?
 					}),
 					q(12524, { -- Venture Co. Misadventure
 						["groups"] = {
 						},
 						["qg"] = 28032, -- Debaar
-						["sourceQuestID"] = { 27987 }, -- Welcome to Scholazar Basin
+						["sourceQuests"] = { 27987 }, -- Welcome to Scholazar Basin
 					}),
 					q(12525, { -- Wipe That Grin Off His Face	
 						["groups"] = {
@@ -254,7 +254,7 @@ _.Zones =
 							i(39452), -- Roaming Wristguards
 						},
 						["qg"] = 28032, -- Debaar
-						["sourceQuestID"] = { 12525 }, -- Venture Co. Misadventure
+						["sourceQuests"] = { 12525 }, -- Venture Co. Misadventure
 					}),
 					q(12691,  {  -- A Timeworn Coffer
 						i(39348),

@@ -58,18 +58,18 @@ _.Zones =
 						i(60724),	-- Bravo Company Shoulderguards
 						i(131589),	-- Bravo Company Spaulders
 						},
-						["sourceQuestID"] = {26694},	-- The Grand Magus Doane
+						["sourceQuests"] = {26694},	-- The Grand Magus Doane
 					})),
 					qg(43303, qa(26562, {	-- And Last But Not Least... Danforth
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26561},	-- Krakauer
+						["sourceQuests"] = {26561},	-- Krakauer
 					})),
 					qg(342, qa(26509)),	-- An Unwelcome Guest
 					qg(43461, qa(26636, {	-- Bravo Company Field Kit: Camouflage
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26616},	-- It's Never Over
+						["sourceQuests"] = {26616},	-- It's Never Over
 					})),
 					qg(43459, qa(26637, {	-- Bravo Company Field Kit: Chloroform
 						["groups"] = {
@@ -78,23 +78,23 @@ _.Zones =
 						i(131569),	-- Muckdweller Handguards
 						i(60715),	-- Vial of Chloroform
 						},
-						["sourceQuestID"] = {26616},	-- It's Never Over
+						["sourceQuests"] = {26616},	-- It's Never Over
 					})),
 					qg(43270, qa(26587, {	-- Breaking Out is Hard to Do
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26586},	-- In Search of Bravo Company
+						["sourceQuests"] = {26586},	-- In Search of Bravo Company
 					})),
 					qg(344, qa(26514, {	-- Canyon Romp
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26512},	-- Tuning the Gnomecorder
+						["sourceQuests"] = {26512},	-- Tuning the Gnomecorder
 					})),
 					qg(620, q(3861)),	-- CLUCK!
 					qg(43733, qa(26714, {	-- Darkblaze, Brood of the Worldbreaker
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26713},	-- Showdown at Stonewatch
+						["sourceQuests"] = {26713},	-- Showdown at Stonewatch
 					})),
 					qg(43611, qa(26668, {	-- Detonation
 						["groups"] = {
@@ -105,14 +105,14 @@ _.Zones =
 						i(60711),	-- Messner's Cuffs
 						i(60713),	-- Redridge Legguards
 						},
-						["sourceQuestID"] = {26651},	-- To Win a War, You Gotta Become War
+						["sourceQuests"] = {26651},	-- To Win a War, You Gotta Become War
 					})),
 					qg(379, qa(26506)),	-- Franks and Beans	
 --					qg(900, qa(26728)),	-- Hero's Call: Duskwood! (BREADCRUMB)
 					qg(43462, qa(26638, {	-- Hunting the Hunters
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26616},	-- It's Never Over
+						["sourceQuests"] = {26616},	-- It's Never Over
 					})),
 					n(446, {	-- Redridge Basher
 						["groups"] = {
@@ -120,7 +120,7 @@ _.Zones =
 							qa(26519),	-- He Who Controls the Ettins
 						}),
 					},
-						["sourceQuestID"] = {26514},	-- Canyon Romp
+						["sourceQuests"] = {26514},	-- Canyon Romp
 					}),
 					n(430, {	-- Redridge Mystic
 						["groups"] = {
@@ -128,7 +128,7 @@ _.Zones =
 							qa(26519),	-- He Who Controls the Ettins
 						}),
 					},
-						["sourceQuestID"] = {26514},	-- Canyon Romp
+						["sourceQuests"] = {26514},	-- Canyon Romp
 					}),
 					n(445, {	-- Redridge Alpha
 						["groups"] = {
@@ -136,7 +136,7 @@ _.Zones =
 							qa(26519),	-- He Who Controls the Ettins
 						}),
 						},
-						["sourceQuestID"] = {26514},	-- Canyon Romp
+						["sourceQuests"] = {26514},	-- Canyon Romp
 					}),
 					qg(43221, qa(26573, {	-- His Heart Must Be In It
 						["groups"] = {
@@ -144,32 +144,32 @@ _.Zones =
 						i(60710),	-- Troteman's Bracers
 						i(60709),	-- Vest of the Changing Heart
 						},
-						["sourceQuestID"] = {26571},	-- Weapons of War
+						["sourceQuests"] = {26571},	-- Weapons of War
 					})),
 					qg(43221, qa(26586, {	-- In Search of Bravo Company
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26568},	-- This Ain't My War
+						["sourceQuests"] = {26568},	-- This Ain't My War
 					})),
 					qg(43184, qa(26616, {	-- It's Never Over
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26607},	-- They Drew First Blood
+						["sourceQuests"] = {26607},	-- They Drew First Blood
 					})),
 					qg(43221, qa(26567, {	-- John J. Keeshan
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26545},	-- Yowler Must Die!
+						["sourceQuests"] = {26545},	-- Yowler Must Die!
 					})),
 					qg(43300, qa(26560, {	-- Jorgensen
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26587},	-- Breaking Out is Hard to Do
+						["sourceQuests"] = {26587},	-- Breaking Out is Hard to Do
 					})),
 					qg(43305, qa(26561, {	-- Krakauer
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26560},	-- Jorgensen
+						["sourceQuests"] = {26560},	-- Jorgensen
 					})),
 					qg(900, qa(26511, {	-- Lake Everstill Clean Up
 						i(60699),	-- Bailiff's Gloves
@@ -188,34 +188,34 @@ _.Zones =
 						i(60693),	-- Ventillated Leggings
 						i(131541),	-- Ventillated Vest
 						},
-						["sourceQuestID"] = {26510,26503,26505},	-- We Must Prepare! + Still Assessing the Threat + Parker's Report)
+						["sourceQuests"] = {26510,26503,26505},	-- We Must Prepare! + Still Assessing the Threat + Parker's Report)
 					})),					
 					qg(8965, qa(26508)),	-- Nida's Necklace	
 					qg(464, qa(26505, {	-- Parker's Report					
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26503},	-- Still Assessing the Threat
+						["sourceQuests"] = {26503},	-- Still Assessing the Threat
 					})),
 					qg(43458, qa(26639, {	-- Point of Contact: Brubaker
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26616},	-- It's Never Over
+						["sourceQuests"] = {26616},	-- It's Never Over
 					})),
 					qg(43458, qa(26646, {	-- Prisoners of War
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26640},	-- Unspeakable Atrocities
+						["sourceQuests"] = {26640},	-- Unspeakable Atrocities
 					})),
 --					q(33350),	-- Redridge Group Trial (NOT IMPLEMENTED?)
 					qg(382, qa(26570, {	-- Render's Army
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26568},	-- This Ain't My War
+						["sourceQuests"] = {26568},	-- This Ain't My War
 					})),
 					qg(43302, qa(26563, {	-- Return of the Bravo Company
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26562},	-- And Last But Not Least... Danforth
+						["sourceQuests"] = {26562},	-- And Last But Not Least... Danforth
 					})),
 					o(204351, {	-- Ettin Control Orb
 						["groups"] = {
@@ -226,7 +226,7 @@ _.Zones =
 							i(60702),	-- Sword of the Falling Sky
 						}),
 						},
-						["sourceQuestID"] = {26519},	-- He Who Controls the Ettins
+						["sourceQuests"] = {26519},	-- He Who Controls the Ettins
 					}),					
 					qg(43607, qa(26692, {	-- Shadowhide Extinction
 						["groups"] = {
@@ -234,12 +234,12 @@ _.Zones =
 						i(60718),	-- Shadowhide Boots
 						i(131583),	-- Shadowhide Footguards
 						},
-						["sourceQuestID"] = {26668},	-- Detonation
+						["sourceQuests"] = {26668},	-- Detonation
 					})),
 					qg(43733, qa(26713, {	-- Showdown at Stonewatch
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26708},	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
+						["sourceQuests"] = {26708},	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 					})),
 					qg(464, qa(26503, {	-- Still Assessing the Threat
 						["groups"] = {
@@ -257,12 +257,12 @@ _.Zones =
 						i(131556),	-- Lakeshire Handwraps
 						i(60706),	-- Sandals of the Neverending Bridge
 						},
-						["sourceQuestID"] = {26568},	-- This Ain't My War
+						["sourceQuests"] = {26568},	-- This Ain't My War
 					})),
 					qg(43611, qa(26693, {	-- The Dark Tower
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26668},	-- Detonation
+						["sourceQuests"] = {26668},	-- Detonation
 					})),
 					qg(43611, qa(26694, {	-- The Grand Magus Doane
 						["groups"] = {
@@ -270,44 +270,44 @@ _.Zones =
 						i(131584),	-- Treacherous Boots
 						i(60720),	-- Treacherous Treads
 						},
-						["sourceQuestID"] = {26693},	-- The Dark Tower
+						["sourceQuests"] = {26693},	-- The Dark Tower
 					})),
 					qg(43221, qa(26607, {	-- They Drew First Blood
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26563},	-- Return of the Bravo Company
+						["sourceQuests"] = {26563},	-- Return of the Bravo Company
 					})),
 					qg(344, qa(26544, {	-- They've Wised Up...
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26514},	-- Canyon Romp
+						["sourceQuests"] = {26514},	-- Canyon Romp
 					})),
 					qg(43184, qa(26568, {	-- This Ain't My War					
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26567},	-- John J. Keeshan
+						["sourceQuests"] = {26567},	-- John J. Keeshan
 					})),
 					qg(43458, qa(26651, {	-- To Win a War, You Gotta Become War
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26646},	-- Prisoners of War
+						["sourceQuests"] = {26646},	-- Prisoners of War
 					})),
 					qg(43733, qa(26726, { -- Triumphant Return
 						["groups"] = {
 						i(60727),	-- Keeshan's Bow
 						i(60726),	-- Keeshan's Dagger
 						},
-						["sourceQuestID"] = {26714},	-- Darkblaze, Brood of the Worldbreaker
+						["sourceQuests"] = {26714},	-- Darkblaze, Brood of the Worldbreaker
 					})),
 					qg(344, qa(26512, {	-- Tuning the Gnomecorder
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26510},	-- We Must Prepare!
+						["sourceQuests"] = {26510},	-- We Must Prepare!
 					})),
 					qg(43508, qa(26640, {	-- Unspeakable Atrocities
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26639},	-- Point of Contact: Brubaker
+						["sourceQuests"] = {26639},	-- Point of Contact: Brubaker
 					})),
 					o(204344, {	-- Wanted!
 						qa(26504, { -- Wanted: Redridge Gnolls
@@ -319,7 +319,7 @@ _.Zones =
 					qg(43221, qa(26571, {	-- Weapons of War
 						["groups"] = {
 						},
-						["sourceQuestID"] = {26568},	-- This Ain't My War
+						["sourceQuests"] = {26568},	-- This Ain't My War
 					})),
 					qg(344, qa(26510)),	-- We Must Prepare!
 					qg(344, qa(26545, {	-- Yowler Must Die!
@@ -329,7 +329,7 @@ _.Zones =
 						i(131552),	-- Mongrel Greaves
 						i(60704),	-- Mongrel Leggings
 						},
-						["sourceQuestID"] = {26544},	-- They've Wised Up...
+						["sourceQuests"] = {26544},	-- They've Wised Up...
 					})),					
 					nlq({ -- Legacy Quests
 						qa(116, { 		-- Dry Times

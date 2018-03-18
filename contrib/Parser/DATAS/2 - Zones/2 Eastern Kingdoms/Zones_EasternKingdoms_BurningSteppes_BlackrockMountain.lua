@@ -128,7 +128,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48559,	-- Ariok
-						["sourceQuestID"] = { 28418 },	-- Burning Vengeance
+						["sourceQuests"] = { 28418 },	-- Burning Vengeance
 					}),
 				
 				
@@ -136,7 +136,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48568,	-- Eitrigg
-						["sourceQuestID"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
+						["sourceQuests"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
 					}),
 				
 				
@@ -145,7 +145,7 @@ _.Zones =
 						},
 						["qg"] = 48001,	-- Thelaron Direneedle
 						["races"] = { 8, 10, 27 },	-- Troll, Blood Elf, Nightborne
-						["sourceQuestID"] = { 28427 },	-- A Needle in a Hellhole
+						["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 					}),
 				
 				
@@ -165,7 +165,7 @@ _.Zones =
 							i(64511),	-- Vest of Welcome
 						},
 						["qg"] = 48559,	-- Ariok
-						["sourceQuestID"] = { 28425 },	-- Return to Ariok
+						["sourceQuests"] = { 28425 },	-- Return to Ariok
 					}),
 				
 				
@@ -183,7 +183,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48085,	-- Quartermaster Kaoshin
-						["sourceQuestID"] = { 28432 },	-- Into the Black Tooth Hovel
+						["sourceQuests"] = { 28432 },	-- Into the Black Tooth Hovel
 					}),
 				
 				
@@ -191,7 +191,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48568,	-- Eitrigg
-						["sourceQuestID"] = { 28431 },	-- A Perfect Costume *****
+						["sourceQuests"] = { 28431 },	-- A Perfect Costume *****
 					}),
 				
 				
@@ -200,7 +200,7 @@ _.Zones =
 							i(64506),	-- Obsidian-Flecked Cowl
 						},
 						["qg"] = 48559,	-- Ariok
-						["sourceQuestID"] = { 28418 },	-- Burning Vengeance						
+						["sourceQuests"] = { 28418 },	-- Burning Vengeance						
 					}),
 				
 				
@@ -208,7 +208,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48033,	-- Stebben Oreknuckle
-						["sourceQuestID"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
+						["sourceQuests"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
 					}),
 				
 				
@@ -216,7 +216,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 14437,	-- Gorzeeki Wildeyes
-						["sourceQuestID"] = { 28424, 28423 },	-- Shadow Boxing & Warlocks Have the Neatest Stuff
+						["sourceQuests"] = { 28424, 28423 },	-- Shadow Boxing & Warlocks Have the Neatest Stuff
 					}),
 				
 				
@@ -224,7 +224,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48033,	-- Stebben Oreknuckle
-						["sourceQuestID"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
+						["sourceQuests"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
 					}),
 				
 				
@@ -232,7 +232,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 14437,	-- Gorzeeki Wildeyes
-						["sourceQuestID"] = { 28422 },	-- The Sand the Cider, and the Orb
+						["sourceQuests"] = { 28422 },	-- The Sand the Cider, and the Orb
 					}),
 				
 				
@@ -242,14 +242,14 @@ _.Zones =
 							i(156965),	-- Enchanted Scorpid Tail
 						},
 						["qg"] = 48559,	-- Ariok
-						["sourceQuestID"] = { 28418 },	-- Burning Vengeance
+						["sourceQuests"] = { 28418 },	-- Burning Vengeance
 					}),
 				
 				
 					qh(28434, {	-- Strategic Cuts
 						["groups"] = {
 						},
-						["sourceQuestID"] = { 28433 },	-- Grunt Work (procs after accepting)
+						["sourceQuests"] = { 28433 },	-- Grunt Work (procs after accepting)
 					}),
 				
 				
@@ -257,7 +257,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48559,	-- Ariok
-						["sourceQuestID"] = { 28420, 28421, 28419 },	-- A Future Project, Mud Hunter, & Stocking Up
+						["sourceQuests"] = { 28420, 28421, 28419 },	-- A Future Project, Mud Hunter, & Stocking Up
 					}),
 				
 				
@@ -265,7 +265,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 14437,	-- Gorzeeki Wildeyes
-						["sourceQuestID"] = { 28422 },	-- The Sand, the Cider, and the Orb
+						["sourceQuests"] = { 28422 },	-- The Sand, the Cider, and the Orb
 					}),
 				
 				
@@ -274,7 +274,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = ,	-- 
-						["sourceQuestID"] = {  },	-- 
+						["sourceQuests"] = {  },	-- 
 					}),
 --]]					
 				

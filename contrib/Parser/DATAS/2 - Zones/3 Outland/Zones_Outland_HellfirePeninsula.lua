@@ -114,19 +114,19 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 19253, -- Lieutenant General Orion
-								["sourceQuestID"] = { 49816 }, -- To Outland [Breadcrumb]
+								["sourceQuests"] = { 49816 }, -- To Outland [Breadcrumb]
 							}),
 							qh(10289, { -- Journey to Thrallmar
 								["groups"] = {
 								},
 								["qg"] = 18930, -- Vlagga Freyfeather
-								["sourceQuestID"] = { 10120 }, -- Arrival in Outlanad
+								["sourceQuests"] = { 10120 }, -- Arrival in Outlanad
 							}),
 							qh(10291, { -- Report to Nazgrel
 								["groups"] = {
 								},
 								["qg"] = 19255, -- General Krakork
-								["sourceQuestID"] = { 10289 }, -- Journey to Thrallmar
+								["sourceQuests"] = { 10289 }, -- Journey to Thrallmar
 							}),
 							qh(10086, { -- I Work... For the Horde!
 								["groups"] = {
@@ -141,7 +141,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 3230, -- Nazgrel
-								["sourceQuestID"] = { 10291 }, -- Report to Nazgrel
+								["sourceQuests"] = { 10291 }, -- Report to Nazgrel
 							}),
 							qh(10450, { -- Bonechewer Blood
 								["groups"] = {
@@ -152,7 +152,7 @@ _.Zones =
 									i(29916), -- Ironstar Repeater
 								},
 								["qg"] = 21256, -- Vurtok Axebreaker
-								["sourceQuestID"] = { 10291 }, -- Report to Nazgrel
+								["sourceQuests"] = { 10291 }, -- Report to Nazgrel
 							}),
 							qh(10087, { -- Burn It Up... For the Horde!
 								["groups"] = {
@@ -162,7 +162,7 @@ _.Zones =
 									i(29941), -- Scale Brand Breastplate
 								},
 								["qg"] = 21283, -- Megzeg Nukklebust
-								["sourceQuestID"] = { 10086 }, -- Work For the Horde
+								["sourceQuests"] = { 10086 }, -- Work For the Horde
 							}),
 							qh(10123, { -- Felspark Ravine
 								["groups"] = {
@@ -173,19 +173,19 @@ _.Zones =
 									i(29913), -- Foe Reaver
 								},
 								["qg"] = 19256, -- Sergeant Shatterskull
-								["sourceQuestID"] = { 10121 }, -- Eradicate the Burning Legion
+								["sourceQuests"] = { 10121 }, -- Eradicate the Burning Legion
 							}),
 							qh(10449, { -- Apothecary Zelana
 								["groups"] = {
 								},
 								["qg"] = 21256, -- Vurtok Axebreaker
-								["sourceQuestID"] = { 10450 }, -- Bonechewer Blood
+								["sourceQuests"] = { 10450 }, -- Bonechewer Blood
 							}),
 							qh(10124, { -- Forward Base: Reaver's Fall
 								["groups"] = {
 								},
 								["qg"] = 19256, -- Sergeeant Shatterskull
-								["sourceQuestID"] = { 10123 }, -- Felspark Ravine
+								["sourceQuests"] = { 10123 }, -- Felspark Ravine
 							}),
 							qh(10208, { -- Disrupt Their Reinforcements
 								["groups"] = {
@@ -196,7 +196,7 @@ _.Zones =
 									i(29935), -- Fore Scarred Breastplate
 								},
 								["qg"] = 19273, -- Forward Commander To'arch
-								["sourceQuestID"] = { 10124 }, -- Forward Base: Reaver's Fall
+								["sourceQuests"] = { 10124 }, -- Forward Base: Reaver's Fall
 							}),
 							qh(10129, { -- Mission: Gatewayas Murketh and Shaadraz
 								["groups"] = {
@@ -206,13 +206,13 @@ _.Zones =
 									i(29944), -- Protectorate Breastplate
 								},
 								["qg"] = 19273, -- Forwarad Commander To'arch
-								["sourceQuestID"] = { 10208 }, -- Disrupt Their Reinforcements
+								["sourceQuests"] = { 10208 }, -- Disrupt Their Reinforcements
 							}),
 							qh(10388, { -- Return to Thrallmar
 								["groups"] = {
 								},
 								["qg"] = 19273, -- Forwarad Commander To'arch
-								["sourceQuestID"] = { 10129 }, -- Mission: Gatewayas Murketh and Shaadraz 
+								["sourceQuests"] = { 10129 }, -- Mission: Gatewayas Murketh and Shaadraz 
 							}),
 						}),
 						--[[
@@ -224,32 +224,32 @@ _.Zones =
 								["groups"] = {	
 								},	
 								["qg"] = 21279,	--Apothecary Albreck
-								["sourceQuestID"] = { 10242 }, -- Spinebreaker Post
+								["sourceQuests"] = { 10242 }, -- Spinebreaker Post
 							}),
 							qh(10835, {	-- Apothecary Antonivich	
 								["groups"] = {	
 								},	
 								["qg"] = 21279,	-- Apothecary Albreck
-								["sourceQuestID"] = { 10242 },	-- Boiling Blood
+								["sourceQuests"] = { 10242 },	-- Boiling Blood
 							}),		
 							qh(10864, {	-- A Burden of Souls	
 								["groups"] = {	
 								},	
 								["qg"] = 16588,	-- Apothecary Antonivich
-								["sourceQuestID"] = { 10835 },	-- Apothecary Antonivich
+								["sourceQuests"] = { 10835 },	-- Apothecary Antonivich
 							}),		
 							qh(10838, {	-- The Demonaic Scryer	
 								["groups"] = {
 									i(31715),	-- Demoniac Soul Prison
 								},	
 								["qg"] = 16588,	-- Apothecary Antonivichk
-								["sourceQuestID"] = { 10864 },	-- A Burden of Souls
+								["sourceQuests"] = { 10864 },	-- A Burden of Souls
 							}),		
 							qh(10875, {	-- Report to Nazgrel	
 								["groups"] = {	
 								},	
 								["qg"] = 16588,	-- Apothecary Antonivich
-								["sourceQuestID"] = { 10838 },	-- The Demonaic Scryer
+								["sourceQuests"] = { 10838 },	-- The Demonaic Scryer
 							}),		
 							qh(10876, {	-- The Foot of the Citadel	
 								["groups"] = {	
@@ -259,7 +259,7 @@ _.Zones =
 									i(31720),	-- Battlemaster's Breastplate
 								},	
 								["qg"] = 3230,	-- Nazgrel
-								["sourceQuestID"] = { 10875 },	-- Report to Nazgrel
+								["sourceQuests"] = { 10875 },	-- Report to Nazgrel
 							}),
 						}),
 						--[[
@@ -271,25 +271,25 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 3230, -- Nazgrel
-								["sourceQuestID"] = { 10388 }, -- Return to Thrallmar
+								["sourceQuests"] = { 10388 }, -- Return to Thrallmar
 							}),
 							qh(9401, { -- A Strange Weapon
 								["groups"] = {
 								},
 								["qg"] = 17062, -- Fel Orc Corpse
-								["sourceQuestID"] = { 9400 }, -- The Assassin
+								["sourceQuests"] = { 9400 }, -- The Assassin
 							}),
 							qh(9405, { -- The Warchief's Mandate
 								["groups"] = {
 								},
 								["qg"] = 3230, -- Nazgrel
-								["sourceQuestID"] = { 9401 }, -- The Warchief's Mandate
+								["sourceQuests"] = { 9401 }, -- The Warchief's Mandate
 							}),
 							qh(9410, { -- A Spirit Guide
 								["groups"] = {
 								},
 								["qg"] = 16574, -- Far Seer Regulkut
-								["sourceQuestID"] = { 9405 }, -- The Warchief's Mandate
+								["sourceQuests"] = { 9405 }, -- The Warchief's Mandate
 							}),
 							qh(9406, { -- The Mag'har
 								["groups"] = {
@@ -299,7 +299,7 @@ _.Zones =
 									i(25513), -- Clefthoof Hide Mask
 								},
 								["qg"] = 16845, -- Gorkan Bloodfist
-								["sourceQuestID"] = { 9410 }, -- A Spirit Guide
+								["sourceQuests"] = { 9410 }, -- A Spirit Guide
 							}),
 						}),
 						--[[
@@ -311,19 +311,19 @@ _.Zones =
 								["groups"] = {	
 								},	
 								["qg"] = 16915,	-- Foreman Razelcraz
-								["sourceQuestID"] = { 0 },	-- 
+								["sourceQuests"] = { 0 },	-- 
 							}),		
 							q(10238, {	-- How to Serve Goblins	
 								["groups"] = {	
 								},	
 								["qg"] = 16915,	-- Foreman Razelcraz
-								["sourceQuestID"] = { 10236 },	-- Outland Sucks!
+								["sourceQuests"] = { 10236 },	-- Outland Sucks!
 							}),		
 							q(10629, {	-- Shizz Work	
 								["groups"] = {	
 								},	
 								["qg"] = 16915,	-- Foreman Razelcraz
-								["sourceQuestID"] = { 10238 },	-- How to Serve Goblins
+								["sourceQuests"] = { 10238 },	-- How to Serve Goblins
 							}),		
 							q(10630, {	-- Beneath Thrallmar	
 								["groups"] = {
@@ -332,7 +332,7 @@ _.Zones =
 									i(30857),	-- Deep Core Lantern
 								},	
 								["qg"] = 16915,	-- Foreman Razelcraz
-								["sourceQuestID"] = { 10629 },	-- Shizz Work
+								["sourceQuests"] = { 10629 },	-- Shizz Work
 							}),		
 						}),
 						crit(8, { -- Cenarion Post
@@ -347,7 +347,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 19293, -- Tola'thion
-								["sourceQuestID"] = { 10134 }, -- Crimson Crystal Clue
+								["sourceQuests"] = { 10134 }, -- Crimson Crystal Clue
 							}),
 							q(10351, { -- Natural Remedies
 								["groups"] = {
@@ -357,7 +357,7 @@ _.Zones =
 									i(28070), -- Verdant Handwraps
 								},
 								["qg"] = 19294, -- Earthbinder Galandria Nightbreeze
-								["sourceQuestID"] = { 10349 }, -- The Earthbinder
+								["sourceQuests"] = { 10349 }, -- The Earthbinder
 							}),
 							q(10132, { -- Colossal Menace
 								["groups"] = {
@@ -383,7 +383,7 @@ _.Zones =
 									i(25985), -- Cenarion Naturalist's Staff
 								},
 								["qg"] = 16991, -- Thiah Redmane
-								["sourceQuestID"] = { 9372 }, -- Demonic Contamination
+								["sourceQuests"] = { 9372 }, -- Demonic Contamination
 							}),
 						}),
 					}),
@@ -429,14 +429,14 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 21256, -- Vurtok Axebreaker
-								["sourceQuestID"] = { 10450 }, -- Bonechewer Blood
+								["sourceQuests"] = { 10450 }, -- Bonechewer Blood
 								["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 }, -- Every race but Blood Elves
 							}),
 							q(9499, { -- Falcon Watch [Breadcrumb]
 								["groups"] = {
 								},
 								["qg"] = 21256, -- Vurtok Axebreaker
-								["sourceQuestID"] = { 10450 }, -- Bonechewer Blood
+								["sourceQuests"] = { 10450 }, -- Bonechewer Blood
 								["races"] = { 10 }, -- Blood Elves
 							}),
 							qh(13409, { -- Hellfire Fortifications
@@ -444,19 +444,19 @@ _.Zones =
 									i(40477), -- Insignia of the Horde
 								},
 								["qg"] = 18267, -- Battlecryer Blackeye
-								["sourceQuestID"] = { 10124 }, -- Forward Base: Reaver's Fall
+								["sourceQuests"] = { 10124 }, -- Forward Base: Reaver's Fall
 							}),
 							qh(10110, { -- Hellfire Fortifications
 								["groups"] = {
 								},
 								["qg"] = 18267, -- Battlecryer Blackeye
-								["sourceQuestID"] = { 13409 }, -- Hellfire Fortifications
+								["sourceQuests"] = { 13409 }, -- Hellfire Fortifications
 							}),
 							qh(10390, { -- Forge Camp: Mageddon
 								["groups"] = {
 								},
 								["qg"] = 3230, -- Nazgrel
-								["sourceQuestID"] = { 10388 }, -- Return to Thrallmar
+								["sourceQuests"] = { 10388 }, -- Return to Thrallmar
 							}),
 						}),
 						-- Need a Reaver's Fall Section, but none in achievement
@@ -464,7 +464,7 @@ _.Zones =
 							["groups"] = {
 							},
 							["qg"] = 21257, -- Apothecary Zelana
-							["sourceQuestID"] = { 10449 }, -- Apothecary Zelana
+							["sourceQuests"] = { 10449 }, -- Apothecary Zelana
 						}),
 						qh(10162, { -- Mission: The Abyssal Shelf
 							["groups"] = {
@@ -474,7 +474,7 @@ _.Zones =
 								i(29936), -- Skyfire Greaves
 							},
 							["qg"] = 19273, -- Forwarad Commander To'arch
-							["sourceQuestID"] = { 10129 }, -- Mission: Gatewayas Murketh and Shaadraz
+							["sourceQuests"] = { 10129 }, -- Mission: Gatewayas Murketh and Shaadraz
 						}),
 					}),
 					n(-494, { -- Miscellaneous
