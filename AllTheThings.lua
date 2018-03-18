@@ -1262,16 +1262,62 @@ local function SearchForItemLink(link)
 							]]--
 							
 							if GetDataMember("ShowSharedAppearances") then
-								local text;
-								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									local otherATTSource = SearchForSourceID(otherSourceID);
-									if otherATTSource then
-										otherATTSource = otherATTSource[1];
-										
-										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-										if group[1].f == otherATTSource.f
-											and (not otherATTSource.classes or contains(otherATTSource.classes, app.ClassIndex))
-											and (not otherATTSource.races or contains(otherATTSource.races, app.RaceIndex)) then
+								if GetDataMember("OnlyShowRelevantSharedAppearances") then
+									-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
+									local text;
+									for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+										local otherATTSource = SearchForSourceID(otherSourceID);
+										if otherATTSource then
+											otherATTSource = otherATTSource[1];
+											
+											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+											if group[1].f == otherATTSource.f
+												and (not otherATTSource.classes or contains(otherATTSource.classes, app.ClassIndex))
+												and (not otherATTSource.races or contains(otherATTSource.races, app.RaceIndex)) then
+												local link = otherATTSource.link;
+												if not link then 
+													link = RETRIEVING_DATA;
+													working = true;
+												end
+												if otherATTSource.u then
+													local texture = L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[otherATTSource.u or 1][1]];
+													if texture then
+														text = "|T" .. texture .. ":0|t";
+													else
+														text = "   ";
+													end
+												else
+													text = "   ";
+												end
+												text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherATTSource.collected);
+												tinsert(listing, text);
+											end
+										else
+											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
+											if otherSource then
+												local link = select(2, GetItemInfo(otherSource.itemID));
+												if not link then 
+													link = RETRIEVING_DATA;
+													working = true;
+												end
+												text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherSource.isCollected);
+												if otherSource.isCollected then
+													SetDataSubMember("CollectedSources", otherSourceID, 1);
+												end
+												tinsert(listing, text);
+											end
+										end
+									end
+								else
+									-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
+									local text;
+									for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+										local otherATTSource = SearchForSourceID(otherSourceID);
+										if otherATTSource then
+											otherATTSource = otherATTSource[1];
+											
+											-- Show information about the appearance:
+											local failText = "";
 											local link = otherATTSource.link;
 											if not link then 
 												link = RETRIEVING_DATA;
@@ -1287,23 +1333,51 @@ local function SearchForItemLink(link)
 											else
 												text = "   ";
 											end
-											text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherATTSource.collected);
-											tinsert(listing, text);
-										end
-									else
-										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-										if otherSource then
-											local link = select(2, GetItemInfo(otherSource.itemID));
-											if not link then 
-												link = RETRIEVING_DATA;
-												working = true;
+											text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID) .. ")") or "");
+											
+											-- Show all of the reasons why an appearance does not meet given criteria.
+											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+											if group[1].f ~= otherATTSource.f then
+												-- This is NOT the same type. Therefore, no credit for you!
+												if #failText > 0 then failText = failText .. ", "; end
+												failText = failText .. (L("FILTER_ID_TYPES")[otherATTSource.f] or "???");
+											elseif otherATTSource.classes and not contains(otherATTSource.classes, app.ClassIndex) then
+												-- This is NOT for your class. Therefore, no credit for you!
+												if #failText > 0 then failText = failText .. ", "; end
+												-- failText = failText .. "Class Locked";
+												for i,classID in ipairs(otherATTSource.classes) do
+													if i > 1 then failText = failText .. ", "; end
+													failText = failText .. (GetClassInfo(classID) or "???");
+												end
+											elseif otherATTSource.races and not contains(otherATTSource.races, app.RaceIndex) then
+												-- This is NOT for your race. Therefore, no credit for you!
+												if #failText > 1 then failText = failText .. ", "; end
+												failText = failText .. "Race Locked";
+											else
+												-- Should be fine
 											end
-											text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherSource.isCollected);
-											if otherSource.isCollected then
-												SetDataSubMember("CollectedSources", otherSourceID, 1);
-												--app.CollectedSources[otherSourceID] = 1;
-											end
+											
+											if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
+											text = text	.. "/" .. GetCollectionIcon(otherATTSource.collected);
 											tinsert(listing, text);
+										else
+											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
+											if otherSource then
+												local name, link = GetItemInfo(otherSource.itemID);
+												if not link then 
+													link = RETRIEVING_DATA;
+													print("name:" .. (name or "???"));
+													print("link:" .. (link or "???"));
+													for key, value in pairs(otherSource) do
+														print(tostring(key) .. ": " .. tostring(value));
+													end
+													working = true;
+												end
+												text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "");
+												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
+												text = text	.. " |CFFFF0000(MISSING IN ATT)|r/" .. GetCollectionIcon(otherSource.isCollected);
+												tinsert(listing, text);
+											end
 										end
 									end
 								end
@@ -4981,9 +5055,22 @@ local function CreateSettingsMenu()
 			GameTooltip:Show();
 		end);
 		
+		-- This creates the "Only Show Relevant" Checkbox --
+		self.OnlyShowRelevantSharedAppearances = CreateFrame("CheckButton", name .. "-OnlyShowRelevantSharedAppearances", self, "InterfaceOptionsCheckButtonTemplate");
+		CreateCheckBox(self.OnlyShowRelevantSharedAppearances, self, "Only Show Relevant", 35, -310, GetDataMember("OnlyShowRelevantSharedAppearances"));
+		self.OnlyShowRelevantSharedAppearances:SetScript("OnClick", function(self)
+			SetDataMember("OnlyShowRelevantSharedAppearances", self:GetChecked());
+			wipe(searchCache);
+		end);
+		self.OnlyShowRelevantSharedAppearances:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you only want to see shared appearances that your active character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+		
 		-- This creates the "Show Database Locations" Checkbox --
 		self.ShowSources = CreateFrame("CheckButton", name .. "-ShowSources", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowSources, self, "Show Database Locations", 25, -310, GetDataMember("ShowSources"));
+		CreateCheckBox(self.ShowSources, self, "Show Database Locations", 25, -330, GetDataMember("ShowSources"));
 		self.ShowSources:SetScript("OnClick", function(self)
 			SetDataMember("ShowSources", self:GetChecked());
 			wipe(searchCache);
@@ -4996,7 +5083,7 @@ local function CreateSettingsMenu()
 		
 		-- This creates the "Show Completed Locations" Checkbox --
 		self.ShowCompleteSourceLocations = CreateFrame("CheckButton", name .. "-ShowCompleteSourceLocations", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowCompleteSourceLocations, self, "Show Completed Locations", 35, -330, GetDataMember("ShowCompleteSourceLocations"));
+		CreateCheckBox(self.ShowCompleteSourceLocations, self, "Show Completed Locations", 35, -350, GetDataMember("ShowCompleteSourceLocations"));
 		self.ShowCompleteSourceLocations:SetScript("OnClick", function(self)
 			SetDataMember("ShowCompleteSourceLocations", self:GetChecked());
 			wipe(searchCache);
@@ -5009,7 +5096,7 @@ local function CreateSettingsMenu()
 		
 		-- This creates the "Show More Locations" Checkbox --
 		self.ShowAllSources = CreateFrame("CheckButton", name .. "-ShowAllSources", self, "InterfaceOptionsCheckButtonTemplate");
-		CreateCheckBox(self.ShowAllSources, self, "Show More Locations", 35, -350, GetDataMember("ShowAllSources"));
+		CreateCheckBox(self.ShowAllSources, self, "Show More Locations", 35, -370, GetDataMember("ShowAllSources"));
 		self.ShowAllSources:SetScript("OnClick", function(self)
 			SetDataMember("ShowAllSources", self:GetChecked());
 			wipe(searchCache);
@@ -7036,6 +7123,7 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Tooltip Settings
+	GetDataMember("OnlyShowRelevantSharedAppearances", false);
 	GetDataMember("ShowLootSpecializationRequirements", true);
 	GetDataMember("TreatIncompleteQuestsAsCollectible", false);
 	GetDataMember("ShowCompleteSourceLocations", true);
