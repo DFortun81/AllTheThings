@@ -150,7 +150,6 @@ _.Zones =
 								},
 								["Lvl"] = 110,
 								["classes"] = {3},
-								["mount"] = 229386,
 							}),
 							q(44233, { -- Walk This Way
 								i(139710), -- Mask of the Unseen Path

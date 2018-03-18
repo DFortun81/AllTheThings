@@ -250,7 +250,6 @@ _.Zones =
 								},
 								["Lvl"] = 110,
 								["classes"] = {12},
-								["mount"] = 229417,
 							}),
 							q(44213, { -- You Will Be Prepared!
 								i(139718), -- Helm of the Shattered Abyss

@@ -162,7 +162,6 @@ _.Zones =
 								},
 								["Lvl"] = 110,
 								["classes"] = {8},
-								["mount"] = 229376,
 							}),
 							q(44240, { -- Orange is the New Purple
 								i(139749), -- Cowl of Tirisgarde
