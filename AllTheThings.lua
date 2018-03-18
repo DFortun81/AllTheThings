@@ -2960,7 +2960,7 @@ app.BaseItem = {
 };
 app.CreateItem  = function(id, t)
 	t = createInstance(constructor(id, t, "itemID"), app.BaseItem);
-	--if not t.s then t.s = 0; end-- uncomment this line and copy your AllTheThings.lua file from Saved Variables into the contrib folder as a new filter to harvest source IDs
+	--if not t.s and not t.ignoreSource then t.s = 0; end-- uncomment this line and copy your AllTheThings.lua file from Saved Variables into the contrib folder as a new filter to harvest source IDs
 	return t;
 end
 
@@ -5732,6 +5732,7 @@ local function SetRowData(self, data)
 					end
 					m[data.itemModID or 1] = s;
 				end
+				print("NEW SOURCE ID!", text);
 				SetDataMember("Items", SourceIDs);
 			else
 				data.s = nil;
@@ -6630,7 +6631,7 @@ function app:GetDataCache()
 			table.insert(groups, db);
 			app.Unsorted = nil;
 		end
-		--]]
+		]]--
 		
 		-- The Main Window's Data
 		local missingData = {};
