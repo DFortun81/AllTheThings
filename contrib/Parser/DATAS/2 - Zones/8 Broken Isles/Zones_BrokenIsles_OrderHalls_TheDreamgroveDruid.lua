@@ -158,7 +158,7 @@ _.Zones =
 							
 							q(46319, { -- You Can't Take the Sky from Me
 								["groups"] = {
-									{ ["itemID"] = 143638, ["mountID"] = 231437, ["collectible"] = true, ["questID"] = 46319 }, -- Moon-Kissed Feather
+									{ ["itemID"] = 143638, ["mountID"] = 231437, ["questID"] = 46319 }, -- Moon-Kissed Feather
 								},
 								["Lvl"] = 110,
 								["classes"] = {11}

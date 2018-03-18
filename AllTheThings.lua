@@ -3008,7 +3008,7 @@ app.BaseMount = {
 			return true;
 		elseif key == "collected" then
 			if GetDataSubMember("CollectedMounts", t.mountID) then return true; end
-			if IsSpellKnown(t.mountID) then
+			if IsSpellKnown(t.mountID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
 				SetDataSubMember("CollectedMounts", t.mountID, 1);
 				return true;
 			end
