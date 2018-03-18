@@ -154,8 +154,8 @@ _.Zones =
 							q(41413),	-- What Could Go Wrong?
 							q(45179),	-- Win the Crowd
 							q(40652),	-- Word on the Winds
-							q(46319),	-- You Can't Take the Sky from Me											
-							--[[
+							--q(46319),	-- You Can't Take the Sky from Me											
+							
 							q(46319, { -- You Can't Take the Sky from Me
 								["groups"] = {
 									{ ["itemID"] = 143638, ["mountID"] = 231437 }, -- Moon-Kissed Feather
@@ -163,7 +163,6 @@ _.Zones =
 								["Lvl"] = 110,
 								["classes"] = {11},
 							}),
-							--]]
 							q(44232, { -- The Grove Provides
 								i(139726), -- Hood of the Dreamgrove
 							}),
