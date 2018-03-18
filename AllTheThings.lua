@@ -4537,8 +4537,8 @@ local function CreateMiniListForGroup(group)
 			local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuests;
 			while sourceQuests and #sourceQuests > 0 do
 				subSourceQuests = {}; prereqs = {};
-				for i,sourceQuests in ipairs(sourceQuests) do
-					sourceQuest = SearchForField("questID", sourceQuests);
+				for i,sourceQuestID in ipairs(sourceQuests) do
+					sourceQuest = SearchForField("questID", sourceQuestID);
 					if sourceQuest and #sourceQuest > 0 then
 						-- Only care about the first search result.
 						if app.GroupFilter(sourceQuest[1]) then
@@ -4554,7 +4554,7 @@ local function CreateMiniListForGroup(group)
 						end
 					else
 						-- Create a Quest Object.
-						sourceQuest = app.CreateQuest(sourceQuests, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
+						sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
 					end
 					
 					-- If the quest was valid, attach it.
@@ -6218,8 +6218,8 @@ local function RowOnEnter(self)
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests then
-			for i,sourceQuests in ipairs(reference.sourceQuests) do
-				if not IsQuestFlaggedCompleted(sourceQuests) then
+			for i,sourceQuestID in ipairs(reference.sourceQuests) do
+				if not IsQuestFlaggedCompleted(sourceQuestID) then
 					GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
 					break;
 				end
