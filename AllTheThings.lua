@@ -4564,8 +4564,8 @@ local function CreateMiniListForGroup(group)
 				-- Convert the subSourceQuests table into an array
 				sourceQuests = {};
 				if #prereqs > 0 then
-					for sourceQuests,i in pairs(subSourceQuests) do
-						tinsert(sourceQuests, tonumber(sourceQuests));
+					for sourceQuestID,i in pairs(subSourceQuests) do
+						tinsert(sourceQuests, tonumber(sourceQuestID));
 					end
 					
 					-- Insert the header for the source quest
