@@ -824,6 +824,19 @@ fieldCache["s"] = {};
 fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
 fieldCache["toyID"] = {};
+local function CacheArrayFieldIDs(group, field, arrayField)
+	local firldCache_g = group[arrayField];
+	if firldCache_g then
+		for i,fieldID in ipairs(firldCache_g) do
+			local fieldCache_f = fieldCache[field][fieldID];
+			if not fieldCache_f then
+				fieldCache_f = {};
+				fieldCache[field][fieldID] = fieldCache_f;
+			end
+			tinsert(fieldCache_f, group);
+		end
+	end
+end
 local function CacheFieldID(group, field)
 	local firldCache_g = group[field];
 	if firldCache_g then
@@ -854,6 +867,7 @@ local function CacheFields(group)
 	CacheFieldID(group, "objectID");
 	CacheFieldID(group, "itemID");
 	CacheFieldID(group, "mapID");
+	CacheArrayFieldIDs(group, "mapID", "maps");
 	CacheFieldID(group, "mountID");
 	CacheFieldID(group, "questID");
 	CacheFieldID(group, "s");
