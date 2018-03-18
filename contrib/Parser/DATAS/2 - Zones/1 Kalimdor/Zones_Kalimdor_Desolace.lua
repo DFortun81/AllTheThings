@@ -138,6 +138,14 @@ _.Zones =
 					}),
 					
 					
+					qa(14380, {	-- An Impactful Discovery
+						["groups"] = {
+						},
+						["qg"] = 36329,	-- Thargad
+						["sourceQuestID"] = { 14378 },	-- Hunting Brendol
+					}),
+					
+					
 					q(14312, {	-- An Introduction Is In Order
 						["groups"] = {
 						},
@@ -180,11 +188,16 @@ _.Zones =
 					
 					
 					o(195497, {	-- Elune's Brazier
---[[						qa(14359, {	-- Blessings From Above
+						qr(qa(14359, {	-- Blessings From Above
 							["groups"] = {
 							},
-							["sourceQuestID"] = {  },	-- 
-						}),	--]]
+							["sourceQuestID"] = { 14358 },	-- Ten Pounds of Flesh
+						})),
+						qr(qh(14217, {	-- Satyrical Offerings
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 14213 },	-- Ten Pounds of Flesh
+						})),
 						qa(14358),	-- Ten Pounds of Flesh
 						qh(14213, {	-- Ten Pounds of Flesh
 							["groups"] = {
@@ -258,7 +271,7 @@ _.Zones =
 					}),
 					
 					
-					qh(14346, {	-- Cleasing Our Crevasse
+					qh(14346, {	-- Cleansing Our Crevasse
 						["groups"] = {
 							i(55921),	-- Leggings of the Windy Ravine
 							i(55922),	-- Craggy Handgrips
@@ -266,6 +279,18 @@ _.Zones =
 							i(131349),	-- Windwhipped Grips
 						},
 						["qg"] = 36034,	-- Karnum Marshweaver
+					}),
+					
+					
+					qa(14381, {	-- Cleansing Our Crevasse
+						["groups"] = {
+							i(55918),	-- Leggings of the Windy Ravine
+							i(55919),	-- Craggy Handgrips
+							i(55920),	-- Marshweaver's Wristguards
+							i(131353),	-- Windwhipped Grips
+						},
+						["qg"] = 36034,	-- Karnum Marshweaver
+						["sourceQuestID"] = { 14380 },	-- An Impactful Discovery
 					}),
 					
 					
@@ -496,6 +521,24 @@ _.Zones =
 					}),
 					
 					
+					qa(14378, {	-- Hunting Brendol
+						["groups"] = {
+						},
+						["qg"] = 36329,	-- Thargad
+						["sourceQuestID"] = { 14373, 14374 },	-- Infernal Encroachment & Portals of the Legion
+					}),
+					
+					
+					qa(14373, {	-- Infernal Encroachment
+						["groups"] = {
+							i(55931),	-- Demonkiller Mask
+							i(55930),	-- Darkblood Dagger
+							i(55932),	-- Claw-Scarred Bulwark
+						},
+						["qg"] = 36329,	-- Thargad
+					}),
+					
+					
 					qh(14342, {	-- Infernal Encroachment
 						["groups"] = {
 							i(55934),	-- Demonkiller Mask
@@ -590,9 +633,9 @@ _.Zones =
 					
 					
 					qh(14360, {	-- Nothing a Couple of Melons Won't Fix
-							["groups"] = {
-							},
-							["sourceQuestID"] = { 14191 },	-- Furien's Footsteps
+						["groups"] = {
+						},
+						["sourceQuestID"] = { 14191 },	-- Furien's Footsteps
 					}),
 					
 					
@@ -628,6 +671,17 @@ _.Zones =
 					}),
 					
 					
+					qa(14374, {	-- Portals of the Legion
+						["groups"] = {
+							i(55937),	-- Bracer of Portals
+							i(55938),	-- Spaulders of Sealing
+							i(55936),	-- Binding Staff
+							i(131352),	-- Securing Bindings
+						},
+						["qg"] = 36329,	-- Thargad
+					}),
+					
+					
 					qh(5581, {	-- Portals of the Legion
 						["groups"] = {
 							i(55940),	-- Bracer of Portals
@@ -647,6 +701,14 @@ _.Zones =
 							i(131343), 	-- Thornwoven Epaulets
 						},
 						["qg"] = 36060,	-- Botanist Ferrah
+					}),
+					
+					
+					qa(14364, {	-- Putting Their Heads Together
+						["groups"] = {
+							i(55926),	-- Skull-Scorched Cloak
+						},
+						["sourceQuestID"] = { 14363 },	-- You'll Know it When You See It
 					}),
 					
 					
@@ -689,11 +751,12 @@ _.Zones =
 					}),
 					
 					
-					qr(qh(14217, {	-- Satyrical Offerings
+					qa(14379, {	-- Rock Lobstrock!
 						["groups"] = {
 						},
-						["sourceQuestID"] = { 14213 },	-- Ten Pounds of Flesh
-					})),
+						["qg"] = 36378,	-- Dumti
+						["sourceQuestID"] = { 14373, 14374 },	-- Infernal Encroachment & Portals of the Legion
+					}),
 					
 					
 					qh(14337, {	-- Shadowprey Village (wowhead says not available if 6142 or 14334 is completed)
@@ -745,7 +808,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
-						["breadcrumbQuestID"] = { 14255 },	-- Ethel Rethor
+						["breadcrumbQuestID"] = { 14365, 14255 },	-- Ethel Rethor (A, H versions)
 					}),
 					
 					
@@ -762,6 +825,27 @@ _.Zones =
 						},
 						["qg"] = 5638,	-- Kreldig Ungor
 						["sourceQuestID"] = { 14354 },	-- Elune's Gifts
+					}),
+					
+					
+					o(35251, {	-- Karnitol's Chest
+						qa(1455, {	-- The Karnitol Shipwreck
+							["groups"] = {
+							},
+							["sourceQuestID"] = { 1454 },	-- The Karnitol Shipwreck
+						}),
+					}),
+					
+					
+					qa( 1456, {	-- The Karnitol Shipwreck (awarded "Nijel's Point" criteria)
+						["groups"] = {
+							i(55949),	-- Karnitol's Leftover Robe
+							i(55950),	-- Treads of the Seeker
+							i(55948),	-- Finder's Battleaxe
+							i(131231),	-- Claimant Treads
+						},
+						["qg"] = 5638,	-- Kreldig Ungor
+						["sourceQuestID"] = { 1455 },	-- The Karnitol Shipwreck
 					}),
 					
 					
@@ -872,42 +956,8 @@ _.Zones =
 
 
 					
-					qg(36329, qa(14380)),	-- An Impactful Discovery
-					qg(36034, qa(14381, {	-- Cleansing Our Crevasse
-						i(55918),
-						i(55919),
-						i(55920),
-						i(131353),
-					})),
-					qg(36329, qa(14373, {	-- Infernal Encroachment
-						i(55931),
-						i(55930),
-						i(55932),
-					})),
-					qg(36329, qa(14378)),	-- Hunting Brendol
-					o(195438, {	-- Cup of Elune
-						qa(14193),	-- Nothing a Couple of Melons Won't Fix
-					}),
-					qg(36329, qa(14374, {	-- Portals of the Legion
-						i(55937),
-						i(55938),
-						i(55936),
-						i(131352),
-					})),
-					qg(5396, qa(14364, {	-- Putting Their Heads Together
-						i(55926),
-					})),
-					qg(36378, qa(14379)),	-- Rock Lobstrock!
+					
 					qg(36034, qa(14372)),	-- Thargad's Camp (bcrumb quest for 14373)
-					o(35251, {	-- Karnitol's Chest
-						qa( 1455),	-- The Karnitol Shipwreck
-					}),
-					qg(5638, qa( 1456, { 	-- The Karnitol Shipwreck
-						i(55949),
-						i(55950),
-						i(55948),
-						i(131231),
-					})),
 					qg(36487, qa(14410)),	-- The Wilds of Feralas (bcrumb quest for 25447, not available if 28511 is completed)
 					
 					
