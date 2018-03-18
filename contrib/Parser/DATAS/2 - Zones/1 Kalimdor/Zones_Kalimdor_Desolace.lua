@@ -136,47 +136,35 @@ _.Zones =
 						},
 						["sourceQuests"] = { 14360 },	-- Nothing a Couple of Melons Won't Fix
 					}),
-					
-					
 					qa(14380, {	-- An Impactful Discovery
 						["groups"] = {
 						},
 						["qg"] = 36329,	-- Thargad
 						["sourceQuests"] = { 14378 },	-- Hunting Brendol
 					}),
-					
-					
 					q(14312, {	-- An Introduction Is In Order
 						["groups"] = {
 						},
 						["qg"] = 36052,	-- Garren Darkwind
 						["sourceQuests"] = { 14311 },	-- Taking Part
 					}),
-					
-					
 					q(14284, {	-- A Revenant's Vengeance
 						["groups"] = {
 						},
 						["qg"] = 35902,	-- Lord Hydronis
 						["sourceQuests"] = { 14292 },	-- The Enemy of Our Enemy
 					}),
-					
-					
 					q(14305, {	-- A Time to Reap
 						["groups"] = {
 						},
 						["qg"] = 36060,	-- Botanist Ferrah
 					}),
-					
-					
 					qh(14188, {	-- Avenge Furien!
 						["groups"] = {
 						},
 						["qg"] = 35295,	-- Cerelia
 						["sourceQuests"] = { 14184 },	-- My Time Has Passed
 					}),
-					
-					
 					i(38567, {	-- Maraudine Prisoner Manifest
 						q(14330, {	-- Behind Closed Doors
 							["groups"] = {
@@ -185,8 +173,6 @@ _.Zones =
 							["sourceQuests"] = { 14329 },	-- Not So Fast!
 						}),
 					}),
-					
-					
 					o(195497, {	-- Elune's Brazier
 						qr(qa(14359, {	-- Blessings From Above
 							["groups"] = {
@@ -205,15 +191,11 @@ _.Zones =
 							["sourceQuests"] = { 14189 },	-- Translation
 						}),
 					}),
-					
-					
 					q(14304, {	-- Blood Theory
 						["groups"] = {
 						},
 						["qg"] = 36048,	-- Thressa Amberglen
 					}),
-					
-					
 					qh(14334, {	-- Blubbergut
 						["groups"] = {
 							i(55956),	-- Blubber-Stained Grips
@@ -222,23 +204,17 @@ _.Zones =
 						["qg"] = 12031,	-- Mai'Lahii
 						["breadcrumbQuestID"] = { 14337 },	-- Shadowprey Village
 					}),
-					
-					
 					q(5501, {	-- Bone Collector
 						["groups"] = {
 						},
 						["qg"] = 11438,	-- Bibbly F'utzbuckle
 					}),
-					
-					
 					q(14314, {	-- Breakout!
 						["groups"] = {
 						},
 						["qg"] = 36056,	-- Khan Leh'Prah
 						["sourceQuests"] = { 14312 },	-- An Introduction is in Order
 					}),
-					
-					
 					q(14309, { 	-- Calming the Kodo
 						["groups"] = {
 							i(55902), 	-- Kodo-Wrangler Cover
@@ -249,16 +225,12 @@ _.Zones =
 						["qg"] = 36048,	-- Thressa Amberglen
 						["sourceQuests"] = { 14304 },	-- Blood Theory
 					}),
-					
-					
 					q(14316, {	-- Cenarion Property
 						["groups"] = {
 						},
 						["qg"] = 36052,	-- Garren Darkwind
 						["sourceQuests"] = { 14312 },	-- An Introduction is in Order
 					}),
-					
-					
 					qh(14335, {	-- Chipping In (awarded "On Behalf of the Horde" criteria)
 						["groups"] = {
 							i(55960),	-- Carapace Robes
@@ -269,8 +241,6 @@ _.Zones =
 						["qg"] = 11624,	-- Taiga Wisemane
 						["sourceQuests"] = { 14334, 5421 },	-- Blubbergut & Fish in a Bucket
 					}),
-					
-					
 					qh(14346, {	-- Cleansing Our Crevasse
 						["groups"] = {
 							i(55921),	-- Leggings of the Windy Ravine
@@ -280,8 +250,6 @@ _.Zones =
 						},
 						["qg"] = 36034,	-- Karnum Marshweaver
 					}),
-					
-					
 					qa(14381, {	-- Cleansing Our Crevasse
 						["groups"] = {
 							i(55918),	-- Leggings of the Windy Ravine
@@ -292,8 +260,6 @@ _.Zones =
 						["qg"] = 36034,	-- Karnum Marshweaver
 						["sourceQuests"] = { 14380 },	-- An Impactful Discovery
 					}),
-					
-					
 					q(14394, { 	-- Death to Agogridon (awarded "Uniting the Tribes" criteria and overall "Desolace Quests" achievement)
 						["groups"] = {
 							i(55915),	-- Cutlass of Agogridon
@@ -304,16 +270,12 @@ _.Zones =
 						["qg"] = 36398,	-- Khan Leh'Prah
 						["sourceQuests"] = { 14393 },	-- Into the Fray!
 					}),
-					
-					
 					q(14268, {	-- Deep Impact
 						["groups"] = {
 						},
 						["qg"] = 35827,	-- Valishj
 						["sourceQuests"] = { 14264 },	-- Wetter than Wet
 					}),
-					
-					
 					q(14318, { 	-- Delicate Negotiations
 						["groups"] = {
 							i(55909), 	-- Drape of Centaur Dreams
@@ -324,15 +286,11 @@ _.Zones =
 						["qg"] = 36056,	-- Khan Leh'Prah
 						["sourceQuests"] = { 14314, 14316 },	-- Breakout! & Cenarion Property
 					}),
-					
-					
 					qh(14339, {	-- Delivery Device
 						["groups"] = {
 						},
 						["qg"] = 4498,	-- Maurin Bonesplitter
 					}),
-					
-					
 					q(14246, {	-- Early Adoption
 						["groups"] = {
 							i(55894),	-- Featherlight Leggings
@@ -340,8 +298,6 @@ _.Zones =
 						},
 						["qg"] = 35661,	-- Cenarion Embassador Thunk
 					}),
-					
-					
 					a(i(49203, {	-- Burning Blade Ear
 						qa(14362, {	-- Ears Are Burning
 							["groups"] = {
@@ -369,8 +325,6 @@ _.Zones =
 							["qg"] = 4667,	-- Burning Blade Shadowmage
 						}),
 					})),
-					
-					
 					h(i(49010, {	-- Burning Blade Ear
 						qh(14232, {	-- Ears Are Burning
 							["groups"] = {
@@ -398,8 +352,6 @@ _.Zones =
 							["qg"] = 4667,	-- Burning Blade Shadowmage
 						}),
 					})),
-					
-					
 					qa(14354, {	-- Elune's Gifts
 						["groups"] = {
 							i(55952),	-- Gloves of Nurture
@@ -408,24 +360,20 @@ _.Zones =
 						["qg"] = 5642,	-- Vahlarriel Demonslayer
 						["sourceQuests"] = { 14387 },	-- Lay of the Land
 					}),
-					
-					
-					qa(14365, {	-- Ethel Rethor (bcrumb quest for 14256, not available if 14354 is completed)
+					qa(14365, {	-- Ethel Rethor
 						["groups"] = {
 						},
 						["qg"] = 5752,	-- Corporal Melkins
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 14354 },	-- Elune's Gifts
 					}),
-					
-					
-					qh(14255, {	-- Ethel Rethor (bcrumb quest for 14256)
+					qh(14255, {	-- Ethel Rethor
 						["groups"] = {
 						},
 						["qg"] = 35295,	-- Cerelia
-						["sourceQuests"] = { 14191 },	-- Furien's Footsteps
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 14189 },	-- Translation
 					}),
-					
-					
 					o(195445, {	-- Ancient Vortex Runestone
 						qh(14196, {	-- Firestarter
 							["groups"] = {
@@ -433,15 +381,11 @@ _.Zones =
 							["sourceQuests"] = { 14195 },	-- All Becoming Clearer
 						}),
 					}),
-					
-					
 					qh( 5421, {	-- Fish in a Bucket
 						["groups"] = {
 						},
 						["qg"] = 11317,	-- Jinar'Zillen
 					}),
-					
-					
 					q(14253, { 	-- Fletch Me Some Plumage!
 						["groups"] = {
 							i(55891), 	-- Swoop-Tail Shoulders
@@ -451,8 +395,6 @@ _.Zones =
 						},
 						["qg"] = 35757,	-- Bizby
 					}),
-					
-					
 					o(195433, {	-- Ancient Tablets
 						qh(14191, {	-- Furien's Footsteps
 							["groups"] = {
@@ -461,8 +403,6 @@ _.Zones =
 						}),
 						qa(14193),	-- Nothing a Couple of Melons Won't Fix
 					}),
-					
-					
 					o(195438, {	-- Cup of Elune
 						qh(14191, {	-- Furien's Footsteps
 							["groups"] = {
@@ -471,15 +411,11 @@ _.Zones =
 						}),
 						qa(14193),	-- Nothing a Couple of Melons Won't Fix
 					}),
-					
-					
 					q(6132, {	-- Get Me Out of Here!
 						["groups"] = {
 						},
 						["qg"] = 12277,	-- Melizza Brimbuzzle
 					}),
-					
-					
 					q(6134, { 	-- Ghost-o-plasm Round Up
 						["groups"] = {
 							i(15864), 	-- Condor Bracers
@@ -487,31 +423,24 @@ _.Zones =
 						},
 						["qg"] = 6019,	-- Hornizz Brimbuzzle
 					}),
-					
-					
-					qh(14338, {	-- Ghost Walker Post (bcrumb quest for 14339 - unavailable if you've already picked it up)
+					qh(14338, {	-- Ghost Walker Post
 						["groups"] = {
 						},
 						["qg"] = 36034,	-- Karnum Marshweaver
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 14311 },	-- Taking Part
 					}),
-					
-					
 					q(14260, {	-- Going Deep
 						["groups"] = {
 						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
 						["sourceQuests"] = { 14257 },	-- Slitherblade Slaughter
 					}),
-					
-					
 					q(14252, {	-- Good Gold For Bad Tail
 						["groups"] = {
 						},
 						["qg"] = 35757,	-- Bizby
 					}),
-					
-					
 					o(195600, {	-- Smouldering Stone
 						q(14254, {	-- Heavy Metal
 							["groups"] = {
@@ -519,16 +448,12 @@ _.Zones =
 							["sourceQuests"] = { 14247 },	-- Stubborn Lands
 						}),
 					}),
-					
-					
 					qa(14378, {	-- Hunting Brendol
 						["groups"] = {
 						},
 						["qg"] = 36329,	-- Thargad
 						["sourceQuests"] = { 14373, 14374 },	-- Infernal Encroachment & Portals of the Legion
 					}),
-					
-					
 					qa(14373, {	-- Infernal Encroachment
 						["groups"] = {
 							i(55931),	-- Demonkiller Mask
@@ -537,8 +462,6 @@ _.Zones =
 						},
 						["qg"] = 36329,	-- Thargad
 					}),
-					
-					
 					qh(14342, {	-- Infernal Encroachment
 						["groups"] = {
 							i(55934),	-- Demonkiller Mask
@@ -547,16 +470,12 @@ _.Zones =
 						},
 						["qg"] = 5395,	-- Felgur Twocuts
 					}),
-					
-					
 					q(14393, {	-- Into the Fray!
 						["groups"] = {
 						},
 						["qg"] = 36398,	-- Khan Leh'Prah
 						["sourceQuests"] = { 14332 },	-- Time for Change
 					}),
-					
-					
 					a(i(49220, {	-- Infernal Power Core
 						qa(14376, {	-- Jugkar's Undoing
 							["groups"] = {
@@ -564,8 +483,6 @@ _.Zones =
 							["qg"] = 35591,	-- Lesser Infernal
 						}),
 					})),
-					
-					
 					h(i(49200, {	-- Infernal Power Core
 						qh(14344, {	-- Jugkar's Undoing
 							["groups"] = {
@@ -573,31 +490,23 @@ _.Zones =
 							["qg"] = 35591,	-- Lesser Infernal
 						}),
 					})),
-					
-					
 					q(5561, {	-- Kodo Roundup
 						["groups"] = {
 						},
 						["qg"] = 11596,	-- Smeed Scrabblescrew
 					}),
-					
-					
 					qa(14387, {	-- Lay of the Land
 						["groups"] = {
 						},
 						["qg"] = 5396,	-- Captain Pentigast
 						["sourceQuests"] = { 14384 },	-- Rerouted!
 					}),
-					
-					
 					qh(14343, {	-- Maurin's Concoction
 						["groups"] = {
 						},
 						["qg"] = 4498,	-- Maurin Bonesplitter
 						["sourceQuests"] = { 14339 },	-- Delivery Device
 					}),
-					
-					
 					q(14282, { 	-- Mystery Solved
 						["groups"] = {
 							i(55896), 	-- Emblazoned Girdle
@@ -607,70 +516,52 @@ _.Zones =
 						},
 						["sourceQuests"] = { 14268 },	-- Deep Impact
 					}),
-					
-					
 					qh(14184, {	-- My Time Has Passed
 						["groups"] = {
 						},
 						["qg"] = 35286,	-- Furien
 						["breadcrumbQuestID"] = { 28548 },	-- Warchief's Command: Desolace!
 					}),
-					
-					
 					q(14327, {	-- My Word is My Bond (awarded "Karnum's Glade" criteria)
 						["groups"] = {
 						},
 						["qg"] = 36163,	-- Khan Kammah
 						["sourceQuests"] = { 14325 },	-- Will Work For Food
 					}),
-					
-					
 					q(14251, {	-- New Beginnings
 						["groups"] = {
 						},
 						["qg"] = 35757,	-- Bizby
 					}),
-					
-					
 					qh(14360, {	-- Nothing a Couple of Melons Won't Fix
 						["groups"] = {
 						},
 						["sourceQuests"] = { 14191 },	-- Furien's Footsteps
 					}),
-					
-					
 					q(14329, {	-- Not So Fast!
 						["groups"] = {
 						},
 						["qg"] = 36185,	-- Khan Shodo
 						["sourceQuests"] = { 14328 },	-- Three Princes
 					}),
-					
-					
 					q(14302, {	-- Official Assessment (rewarded "The Naga Threat" criteria)
 						["groups"] = {
 						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
 						["sourceQuests"] = { 14301 },	-- Return and Report
 					}),
-					
-					
 					qa(14361, {	-- Peace of Mind
 						["groups"] = {
 						},
 						["qg"] = 5396,	-- Captain Pentigast
 						["sourceQuests"] = { 14354 },	-- Elune's Gifts
 					}),
-					
-					
 					qh(14223, {	-- Peace of Mind
 						["groups"] = {
 						},
 						["qg"] = 35298,	-- Sorrem
-						["sourceQuests"] = { 14191 },	-- Furien's Footsteps
+						["sourceQuests"] = { 14189 },	-- Translation
 					}),
-					
-					
 					qa(14374, {	-- Portals of the Legion
 						["groups"] = {
 							i(55937),	-- Bracer of Portals
@@ -680,8 +571,6 @@ _.Zones =
 						},
 						["qg"] = 36329,	-- Thargad
 					}),
-					
-					
 					qh(5581, {	-- Portals of the Legion
 						["groups"] = {
 							i(55940),	-- Bracer of Portals
@@ -691,8 +580,6 @@ _.Zones =
 						},
 						["qg"] = 5395,	-- Felgur Twocuts
 					}),
-					
-					
 					q(14306, { 	-- Pulling Weeds
 						["groups"] = {
 							i(55899), 	-- Lasherspike Wristguards
@@ -702,32 +589,24 @@ _.Zones =
 						},
 						["qg"] = 36060,	-- Botanist Ferrah
 					}),
-					
-					
 					qa(14364, {	-- Putting Their Heads Together
 						["groups"] = {
 							i(55926),	-- Skull-Scorched Cloak
 						},
 						["sourceQuests"] = { 14363 },	-- You'll Know it When You See It
 					}),
-					
-					
 					qh(14227, {	-- Putting Their Heads Together
 						["groups"] = {
 							i(55929),	-- Skull-Scorched Cloak
 						},
 						["sourceQuests"] = { 14225 },	-- You'll Know it When You See It
 					}),
-					
-					
 					qa(14384, {	-- Rerouted!
 						["groups"] = {
 						},
 						["qg"] = 36410,	-- Officer Jankie
 						["breadcrumbQuestID"] = { 28531 },	-- Hero's Call: Desolace!
 					}),
-					
-					
 					q(14301, { 	-- Return and Report
 						["groups"] = {
 							i(55906), 	-- Balmy Wraps
@@ -740,8 +619,6 @@ _.Zones =
 						["qg"] = 35902,	-- Lord Hydronis
 						["sourceQuests"] = { 14284 },	-- A Revenant's Vengeance
 					}),
-					
-					
 					qh(14198, {	-- Rider on the Storm
 						["groups"] = {
 							i(55963),	-- Tranquility of Furien
@@ -749,85 +626,70 @@ _.Zones =
 						},
 						["sourceQuests"] = { 14196 },	-- Firestarter
 					}),
-					
-					
 					qa(14379, {	-- Rock Lobstrock!
 						["groups"] = {
 						},
 						["qg"] = 36378,	-- Dumti
 						["sourceQuests"] = { 14373, 14374 },	-- Infernal Encroachment & Portals of the Legion
 					}),
-					
-					
 					qh(14337, {	-- Shadowprey Village (wowhead says not available if 6142 or 14334 is completed)
 						["groups"] = {
 						},
 						["qg"] = 36034,	-- Karnum Marshweaver
 						["sourceQuests"] = { 14327 },	-- My Word is My Bond
 					}),
-					
-					
 					q(14257, {	-- Slitherblade Slaughter
 						["groups"] = {
 						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
 						["sourceQuests"] = { 14256 },	-- The Emerging Threat
 					}),
-					
-					
 					qh(14341, {	-- Smeed's Harnesses
 						["groups"] = {
 						},
 						["qg"] = 11259,	-- Nataka Longhorn
 					}),
-
-					
 					q(14247, {	-- Stubborn Lands
 						["groups"] = {
 						},
 						["qg"] = 35661,	-- Cenarion Embassador Thunk
 					}),
-					
-					
 					q(14307, {	-- Stubborn Winds
 						["groups"] = {
 						},
 						["qg"] = 36034,	-- Karnum Marshweaver
 					}),
-					
-					
 					q(14311, {	-- Taking Part
 						["groups"] = {
 						},
 						["qg"] = 36060,	-- Botanist Ferrah
 						["sourceQuests"] = { 14305, 14306 },	-- A Time to Reap & Pulling Weeds
 					}),
-					
-					
+					qa(14372, {	-- Thargad's Camp
+						["groups"] = {
+						},
+						["qg"] = 36034,	-- Karnum Marshweaver
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 14327 },	-- My Word is My Bond
+					}),
 					q(14256, {	-- The Emerging Threat
 						["groups"] = {
 						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
 						["breadcrumbQuestID"] = { 14365, 14255 },	-- Ethel Rethor (A, H versions)
 					}),
-					
-					
 					q(14292, {	-- The Enemy of Our Enemy
 						["groups"] = {
 						},
 						["qg"] = 35773,	-- Cenarion Researh Korrah
 						["sourceQuests"] = { 14282 },	-- Mystery Solved
 					}),
-					
-					
 					qa( 1454, {	-- The Karnitol Shipwreck
 						["groups"] = {
 						},
 						["qg"] = 5638,	-- Kreldig Ungor
 						["sourceQuests"] = { 14354 },	-- Elune's Gifts
 					}),
-					
-					
 					o(35251, {	-- Karnitol's Chest
 						qa(1455, {	-- The Karnitol Shipwreck
 							["groups"] = {
@@ -835,8 +697,6 @@ _.Zones =
 							["sourceQuests"] = { 1454 },	-- The Karnitol Shipwreck
 						}),
 					}),
-					
-					
 					qa( 1456, {	-- The Karnitol Shipwreck (awarded "Nijel's Point" criteria)
 						["groups"] = {
 							i(55949),	-- Karnitol's Leftover Robe
@@ -847,24 +707,26 @@ _.Zones =
 						["qg"] = 5638,	-- Kreldig Ungor
 						["sourceQuests"] = { 1455 },	-- The Karnitol Shipwreck
 					}),
-					
-					
-					qh(26589, {	-- The Wilds of Feralas (bcrumb quest for 25210)
+					qa(14410, {	-- The Wilds of Feralas
 						["groups"] = {
 						},
 						["qg"] = 36487,	-- Khan Shodo
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 14394 },	-- Death to Agogridon
 					}),
-					
-					
+					qh(26589, {	-- The Wilds of Feralas
+						["groups"] = {
+						},
+						["qg"] = 36487,	-- Khan Shodo
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 14394 },	-- Death to Agogridon
+					}),
 					q(14328, {	-- Three Princes
 						["groups"] = {
 						},
 						["qg"] = 36056,	-- Khan Leh'Prah
 						["sourceQuests"] = { 14327 },	-- My Word is My Bond
 					}),
-					
-					
 					q(14332, { 	-- Time For Change
 						["groups"] = {
 							i(55914), 	-- Silent Footpads
@@ -875,8 +737,6 @@ _.Zones =
 						["qg"] = 36196,	-- Kherrah
 						["sourceQuests"] = { 14330 },	-- Behind Closed Doors
 					}),
-					
-					
 					o(195517, {	-- Elune's Handmaiden
 						qa(14357, {	-- To the Hilt!
 							i(55942),	-- Sandals of Ritual
@@ -894,24 +754,18 @@ _.Zones =
 							["sourceQuests"] = { 14189 },	-- Translation
 						}),
 					}),
-					
-					
 					qh(14189, {	-- Translation
 						["groups"] = {
 						},
 						["qg"] = 35298,	-- Sorrem
 						["sourceQuests"] = { 14188 },	-- Avenge Furien!
 					}),
-					
-					
 					q(14264, {	-- Wetter Than Wet
 						["groups"] = {
 						},
 						["qg"] = 35827,	-- Valishj
 						["sourceQuests"] = { 14260 },	-- Going Deep
 					}),
-					
-					
 					o(196393, {	-- Broken Relic
 						q(14333, {	-- While You're Here
 							["groups"] = {
@@ -919,51 +773,22 @@ _.Zones =
 							["sourceQuests"] = { 14330 },	-- Behind Closed Doors (may be available as early as 14328 "Three Princes" is turned in, but picked up when turning in "Behind Closed Doors")
 						}),
 					}),
-					
-					
 					q(14325, {	-- Will Work For Food
 						["groups"] = {
 						},
 						["qg"] = 36163,	-- Khan Kammah
 						["sourceQuests"] = { 14318 },	-- Delicate Negotiations
 					}),
-					
-					
 					qa(14363, {	-- You'll Know It When You See It
 						["groups"] = {
 						},
 						["sourceQuests"] = { 14361 },	-- Peace of Mind
 					}),
-					
-					
 					qh(14225, {	-- You'll Know It When You See It
 						["groups"] = {
 						},
 						["sourceQuests"] = { 14223 },	-- Peace of Mind
 					}),
-					
-					
-					
-					
---[[
-						["groups"] = {
-						},
-						["qg"] = ,	-- 
-						["sourceQuests"] = {  },	-- 
-					}),
---]]
-
-
-
-					
-					
-					qg(36034, qa(14372)),	-- Thargad's Camp (bcrumb quest for 14373)
-					qg(36487, qa(14410)),	-- The Wilds of Feralas (bcrumb quest for 25447, not available if 28511 is completed)
-					
-					
-					
-					
-					
 --[[LEGACY 			qg(12340, qh( 6143)),	-- Other Fish to Fry (REMOVED with Cata per wowhead comment)
 					qh( 1432),	-- Alliance Relations (REMOVED per wowhead comment)
 					qh( 1434),	-- Befouled by Satyr (REMOVED per wowhead comment)
