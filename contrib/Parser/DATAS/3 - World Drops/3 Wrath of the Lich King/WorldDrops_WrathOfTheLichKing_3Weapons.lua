@@ -11,7 +11,7 @@ _.WorldDrops =
 					i(36572),	-- Dinged Cleaver
 					i(36573),	-- Primeval Adze
 					i(36574),	-- Bone Cleaver
-					i(36575),	-- Dragonflayer Hatchet
+					un(7, i(36575)),	-- Dragonflayer Hatchet [Removed from Game - Crates Only!]
 					i(36576),	-- Beaked Axe
 					i(36577),	-- Disk Axe
 					i(36578),	-- Troll Chopper
@@ -242,7 +242,7 @@ _.WorldDrops =
 					i(36451),	-- Kamagua Shield
 					i(36452),	-- Spoke Shield
 					i(36453),	-- Embossed Brazen Shield
-					i(36454),	-- Domed Buckler
+					un(7, i(36454)),	-- Domed Buckler [Removed from Game - Crates Only!]
 					i(36455),	-- Plated Bulwark
 					i(36456),	-- Icy Kite Shield
 					i(36457),	-- Ivory Shield
