@@ -158,10 +158,10 @@ _.Zones =
 							
 							q(46319, { -- You Can't Take the Sky from Me
 								["groups"] = {
-									{ ["itemID"] = 143638, ["mountID"] = 231437 }, -- Moon-Kissed Feather
+									{ ["itemID"] = 143638, ["mountID"] = 231437, ["collectible"] = true, ["questID"] = 46319 }, -- Moon-Kissed Feather
 								},
 								["Lvl"] = 110,
-								["classes"] = {11},
+								["classes"] = {11}
 							}),
 							q(44232, { -- The Grove Provides
 								i(139726), -- Hood of the Dreamgrove
