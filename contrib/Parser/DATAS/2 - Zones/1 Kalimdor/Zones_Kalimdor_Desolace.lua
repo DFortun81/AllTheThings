@@ -290,6 +290,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 4498,	-- Maurin Bonesplitter
+						["breadcrumbQuestID"] = { 14338 },	-- Ghost Walker Post
 					}),
 					q(14246, {	-- Early Adoption
 						["groups"] = {

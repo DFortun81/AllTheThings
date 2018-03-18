@@ -155,7 +155,7 @@ _.Zones =
 						["qg"] = 3418,	-- Kirge Sternhorn
 						["breadcrumbQuestID"] = { 24543 },	-- A Family Divided
 					}),
-					q(24570, {	-- Adder Subtraction
+					q( 24570, {	-- Adder Subtraction
 						["groups"] = {
 						},
 						["qg"] = 38314,	-- Muyoh
@@ -209,24 +209,30 @@ _.Zones =
 						["qg"] = 39084,	-- Mizzy Pistonhammer
 						["sourceQuests"] = { 25079 },	-- Powder Play
 					}),
-					q(24565, {	-- Biological Intervention
+					q( 24565, {	-- Biological Intervention
 						["groups"] = {
 						},
 						["qg"] = 37570,	-- Naralex
 					}),
-					n(37560, {	-- Razormane Pathfinder
-						i(49932, {	-- Carved Boar Idol
-							q(24606),	-- Blood of the Barrens
+					i( 49932, {	-- Carved Boar Idol
+						q(24606, {	-- Blood of the Barrens
+							["groups"] = {
+							},
+							["qg"] = 37560,	-- Razormane Pathfinder
 						}),
 					}),
-					n(37660, {	-- Razormane Warfrenzy
-						i(49932, {	-- Carved Boar Idol
-							q(24606),	-- Blood of the Barrens
+					i( 49932, {	-- Carved Boar Idol
+						q(24606, {	-- Blood of the Barrens
+							["groups"] = {
+							},
+							["qg"] = 37661,	-- Razormane Seer
 						}),
 					}),
-					n(37661, {	-- Razormane Seer
-						i(49932, {	-- Carved Boar Idol
-							q(24606),	-- Blood of the Barrens
+					i( 49932, {	-- Carved Boar Idol
+						q(24606, {	-- Blood of the Barrens
+							["groups"] = {
+							},
+							["qg"] = 37660,	-- Razormane Warfrenzy
 						}),
 					}),
 					qa(24863, {	-- Breaking the Siege
@@ -304,7 +310,7 @@ _.Zones =
 						["qg"] = 38140,	-- Weezil Slipshadow
 						["sourceQuests"] = { 24684 },	-- A Weezil in the Henhouse
 					}),
-					q(24653, {	-- Echoes of Agamaggan
+					q( 24653, {	-- Echoes of Agamaggan
 						["groups"] = {
 						},
 						["qg"] = 37812,	-- Mahka
@@ -430,7 +436,7 @@ _.Zones =
 						},
 						["qg"] = 38620,	-- Thomas Paxton
 					}),
-					q(24571, {	-- Lashvine Seeds
+					q( 24571, {	-- Lashvine Seeds
 						["groups"] = {
 						},
 						["qg"] = 38314,	-- Muyoh
@@ -656,7 +662,7 @@ _.Zones =
 						["qg"] = 37908,	-- Calder Gray
 						["sourceQuests"] = { 24620 },	-- Hearts-is-Hearts
 					}),
-					q(24566, {	-- Sowing a Solution
+					q( 24566, {	-- Sowing a Solution
 						["groups"] = {
 						},
 						["qg"] = 38314,	-- Muyoh
@@ -741,7 +747,7 @@ _.Zones =
 							["sourceQuests"] = { 25183 },	-- ...And Bury the Rest
 						}),
 					}),
-					q(24824, {	-- The Disturbed Earth (awarded "Firestone Point" criteria)
+					q( 24824, {	-- The Disturbed Earth (awarded "Firestone Point" criteria)
 						["groups"] = {
 						},
 						["qg"] = 37834,	-- Tauna Skychaser
@@ -752,12 +758,14 @@ _.Zones =
 						["qg"] = 38619,	-- Admiral Aubrey
 						["sourceQuests"] = { 24934 },	-- Repel Boarders!
 					}),
-					n(37216, {	-- Honor's Stand Officer
-						i(49776, {	-- Roadway Plans
-							qh(24518),	-- The Low Road
+					i( 49776, {	-- Roadway Plans
+						qh(24518, {	-- The Low Road
+							["groups"] = {
+							},
+							["qg"] = 37216,	-- Honor's Stand Officer
 						}),
 					}),
-					q(24601, {	-- The Nightmare Scar (awarded "Life from the Dream" criteria)
+					q( 24601, {	-- The Nightmare Scar (awarded "Life from the Dream" criteria)
 						["groups"] = {
 							i(53160),	-- Vest of the Nightmare Rift
 							i(53159),	-- Naralex's Slippers
@@ -774,7 +782,7 @@ _.Zones =
 						["qg"] = 38986,	-- Ambassador Gaines
 						["sourceQuests"] = { 25045, 25043 },	-- A Line in the Dirt & Fields of Blood
 					}),
-					q(24574, {	-- To Harvest Chaos
+					q( 24574, {	-- To Harvest Chaos
 						["groups"] = {
 						},
 						["qg"] = 37570,	-- Naralex
@@ -786,7 +794,7 @@ _.Zones =
 						["qg"] = 38871,	-- Corporal Teegan
 						["sourceQuests"] = { 25027 },	-- You Flicked a Fine Vine to Leaf Me
 					}),
---					q(24568),	-- To the Walls! (LEGACY)
+--					q( 24568),	-- To the Walls! (LEGACY)
 					qa(25028, {	-- Trouble From the Ground Up
 						["groups"] = {
 						},

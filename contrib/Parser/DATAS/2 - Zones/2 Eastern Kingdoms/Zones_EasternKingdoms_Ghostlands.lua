@@ -112,7 +112,7 @@ _.Zones =
 							["qg"] = 16601,	-- Dying Blood Elf
 							["sourceQuests"] = { 9327, 9329 },	-- The Forsaken (either version)
 					}),
-					qh( 9487, {	-- Arcane Reavers (UNTESTED - unsure if there are pre-req requirements)
+					q(  9487, {	-- Arcane Reavers (UNTESTED - unsure if there are pre-req requirements)
 						["groups"] = {
 						},
 						["qg"] = 16197,	-- Arcanist Vandril
@@ -121,7 +121,7 @@ _.Zones =
 						["classes"] = {8}, -- Mage
 					}),
 --					qh( 9877),	-- A Restorative Draught (LEGACY)
-					qh( 9488, {	-- A Simple Robe (UNTESTED, don't know if there are add'l prereqs)
+					q(  9488, {	-- A Simple Robe (UNTESTED, don't know if there are add'l prereqs)
 						["groups"] = {
 							i(7509)	-- Manaweave Robe
 						},
@@ -245,7 +245,7 @@ _.Zones =
 						["Lvl"] = 10,
 						["sourceQuests"] = { 9274 },	-- Spirits of the Drowned (NOTE: I was able to pick up this while I was on this quest, but it may have procced after Report to Captain Helios - when I pulled up Wholly to check what info it had, it only listed the lv. requirement, but it was not available to me at that lv. or above until somewhere around this point)
 					}),
-					qh( 9811, {	-- Friend of the Sin'dorei
+					q(  9811, {	-- Friend of the Sin'dorei
 						["groups"] = {
 						},
 						["qg"] = 16239,	-- Magister Kaendris
@@ -265,7 +265,7 @@ _.Zones =
 						["qg"] = 16213,	-- Ranger Lethvalin
 						["sourceQuests"] = { 9327, 9329 },	-- The Forsaken (either version)
 					}),
-					qh( 9328, {	-- Hero of the Sin'dorei
+					q(  9328, {	-- Hero of the Sin'dorei
 						["groups"] = {
 						},
 						["qg"] = 16239,	-- Magister Kaendris
@@ -296,7 +296,7 @@ _.Zones =
 						["qg"] = 16231,	-- Dame Auriferous
 						["sourceQuests"] = { 9138 },	-- Suncrown Village
 					}),
-					qh( 9180, {	-- Journey to Undercity
+					q(  9180, {	-- Journey to Undercity
 						["groups"] = {
 						},
 						["qg"] = 16252,	-- High Executor Mavren
@@ -389,26 +389,30 @@ _.Zones =
 						["qg"] = 16239,	-- Magister Kaendris
 						["sourceQuests"] = { 9151 },	-- The Sanctum of the Sun
 					}),
-					qh( 9327, {	-- The Forsaken
+					q(  9327, {	-- The Forsaken
 						["groups"] = {
 						},
 						["qg"] = 16197,	-- Arcanist Vandril
 						["races"] = {10} -- Blood Elf
 					}),
-					qh( 9329, {	-- The Forsaken
+					q(  9329, {	-- The Forsaken
 						["groups"] = {
 						},
 						["qg"] = 16197,	-- Arcanist Vandril					
 						["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 }, -- Horde, not Blood Elf
 					}),
-					n(16315, {	-- Deatholme Acolyte
-						i(22597, {	-- The Lady's Necklace
-							qh(9175),	-- The Lady's Necklace
+					i( 22597, {	-- The Lady's Necklace
+						qh(9175, {	-- The Lady's Necklace
+							["groups"] = {
+							},
+							["qg"] = 16315,	-- Deatholme Acolyte
 						}),
 					}),
-					n(16314, {	-- Fallen Ranger
-						i(22597, {	-- The Lady's Necklace
-							qh(9175),	-- The Lady's Necklace
+					i( 22597, {	-- The Lady's Necklace
+						qh(9175, {	-- The Lady's Necklace
+							["groups"] = {
+							},
+							["qg"] = 16314,	-- Fallen Ranger
 						}),
 					}),
 					qh( 9149, {	-- The Plagued Coast

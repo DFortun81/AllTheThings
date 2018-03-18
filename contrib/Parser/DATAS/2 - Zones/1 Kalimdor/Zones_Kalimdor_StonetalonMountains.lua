@@ -420,13 +420,13 @@ _.Zones =
 						["qg"] = 41991,	-- Sergeant Dontrag
 						["sourceQuests"] = { 26044 },	-- Where Are the Parts?
 					}),
-					n(40905, {	-- Windshear Overseer
-						["groups"] = {
-							i(55181, {	-- Illegible Orc Letter
-								qa(25647),	-- Illegible Orc Letter
-							}),
-						},
-						["sourceQuests"] = { 25640 },	-- Bombs Away: Windshear Mine
+					i( 55181, {	-- Illegible Orc Letter
+						qa(25647, {	-- Illegible Orc Letter
+							["groups"] = {
+							},
+							["qg"] = 40905,	-- Windshear Overseer
+							["sourceQuests"] = { 25640 },	-- Bombs Away: Windshear Mine
+						}),
 					}),
 					qh(26058, {	-- In Defense of Krom'gar Fortress (awarded "Legionnaire" criteria)
 						["groups"] = {
@@ -553,7 +553,7 @@ _.Zones =
 						["qg"] = 3995,	-- Witch Doctor Jin'Zil
 						["breadcrumbQuestID"] = { 26059 },	-- Eyes and Ears: Malaka'jin
 					}),
---[[ 				n(41937, {	-- Marshal Paltrow
+--[[ 				n( 41937, {	-- Marshal Paltrow
 						i(56474, {	-- Orders from Base Camp
 							qh(26016),	-- Orders from Base Camp (I didn't receive this while questing - Wholly has it marked as REMOVED)
 						}),
