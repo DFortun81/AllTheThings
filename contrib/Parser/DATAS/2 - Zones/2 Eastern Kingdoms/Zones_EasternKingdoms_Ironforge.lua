@@ -291,7 +291,7 @@ _.Zones =
 									},
 									["description"] = "This quest can only be done once per year.",
 									["qg"] = 13433, -- Wulmort Jinglepocket
-									["sourceQuestID"] = { 7043 }, -- You're a Mean One...
+									["sourceQuests"] = { 7043 }, -- You're a Mean One...
 								}),
 								qg(13433, qa(7022)),	-- Greatfather Winter is Here!
 --								qg(2916, qa(7063)),	-- The Feast of Winter Veil

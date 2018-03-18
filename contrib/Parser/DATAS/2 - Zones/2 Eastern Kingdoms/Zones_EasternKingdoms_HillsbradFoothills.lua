@@ -107,7 +107,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48218,	-- Kingslayer Orkus
-						["sourceQuestID"] = { 28096 },	-- Welcome to the Machine
+						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 						["breadcrumbQuestID"] = { 28344 },	-- Can You Smell What the Lok'tar is Cooking?
 					}),
 					qh(28237, { -- A Blight Upon the Land
@@ -116,7 +116,7 @@ _.Zones =
 							i(65675),	-- Stillwater's Dagger
 						},
 						["qg"] = 48020,	-- Master Apothecary Lydon
-						["sourceQuestID"] = { 28235 },	-- Burnside Must Fall
+						["sourceQuests"] = { 28235 },	-- Burnside Must Fall
 					}),
 					qh(28495, {	-- A Fighting Chance
 						["groups"] = {
@@ -132,7 +132,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48545,	-- High Warlord Cromush
-						["sourceQuestID"] = { 28400 },	-- Heroes of the Horde!
+						["sourceQuests"] = { 28400 },	-- Heroes of the Horde!
 					}),
 					qpvp(qa( 7081, {	-- Alterac Valley Graveyards
 						["groups"] = {
@@ -155,19 +155,19 @@ _.Zones =
 							i(131699),	-- Headland Belt
 						},
 						["qg"] = 48545,	-- High Warlord Cromush
-						["sourceQuestID"] = { 28506 },	-- March of the Stormpike
+						["sourceQuests"] = { 28506 },	-- March of the Stormpike
 					}),
 					qh(28235, {	-- Burnside Must Fall
 						["groups"] = {
 						},
 						["qg"] = 48020,	-- Master Apothecary Lydon
-						["sourceQuestID"] = { 28231, 28230 },	-- Do it for Twinkles & Protocol
+						["sourceQuests"] = { 28231, 28230 },	-- Do it for Twinkles & Protocol
 					}),
 					qh(28344, {	-- Can You Smell What the Lok'tar is Cooking?
 						["groups"] = {
 						},
 						["qg"] = 48129,	-- Helcular
-						["sourceQuestID"] = { 28332, 28331 },	-- Helcular's Command & Helcular's Rod Giveth...
+						["sourceQuests"] = { 28332, 28331 },	-- Helcular's Command & Helcular's Rod Giveth...
 					}),
 					qpvp(qa(7122, {	-- Capture a Mine
 						["groups"] = {
@@ -179,7 +179,7 @@ _.Zones =
 						},
 						["qg"] = 57777,	-- Wrathion
 						["classes"] = { 4 },	-- Rogue
-						["sourceQuestID"] = { 30106 },	-- The Deed is Done
+						["sourceQuests"] = { 30106 },	-- The Deed is Done
 					})),
 					qh(28146, {	-- Coastal Delicacies! (rewarded "Azurelode Mine" criteria)
 						["groups"] = {
@@ -190,7 +190,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 2278,	-- Melisara
-						["sourceQuestID"] = { 28556 },	-- Breaking the Hand (may be available after 28587 Aid of the Frostwolf)
+						["sourceQuests"] = { 28556 },	-- Breaking the Hand (may be available after 28587 Aid of the Frostwolf)
 					}),
 					qh(28604, { -- Deception and Trickery
 						["groups"] = {
@@ -201,18 +201,18 @@ _.Zones =
 							i(131701),	-- Bracers of Deceit
 						},
 						["qg"] = 49035,	-- Lilith
-						["sourceQuestID"] = { 28566 },	-- Decimation
+						["sourceQuests"] = { 28566 },	-- Decimation
 					}),
 					qh(28566, {	-- Decimation
 						["groups"] = {
 						},
-						["sourceQuestID"] = { 28538 },	-- Cry of the Banshee
+						["sourceQuests"] = { 28538 },	-- Cry of the Banshee
 					}),
 					qh(28156, {	-- Deep Mine Rescue
 						["groups"] = {
 						},
 						["qg"] = 47681,	-- Dumass
-						["sourceQuestID"] = { 28096 },	-- Welcome to the Machine
+						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 					}),
 --					q(43296),	-- Defend (REMOVED, from Legion pre-patch)
 --					q(43286),	-- Demon Commander (REMOVED, from Legion pre-patch)
@@ -222,7 +222,7 @@ _.Zones =
 							i(65672),	-- Crossbow of the Twice-Slain
 						},
 						["qg"] = 47781,	-- Warden Stillwater
-						["sourceQuestID"] = { 28192 },	-- No One Here Gets Out Alive
+						["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
 					}),
 					qh(28231, { -- Do it for Twinkles
 						["groups"] = {
@@ -232,13 +232,13 @@ _.Zones =
 							i(131693),	-- Amazing Chain Boots
 						},
 						["qg"] = 48021,	-- Johnny Awesome
-						["sourceQuestID"] = { 28209 },	-- Freedom for Lydon
+						["sourceQuests"] = { 28209 },	-- Freedom for Lydon
 					}),
 					qh(28605, {	-- Domination (add'l QG 2278)
 						["groups"] = {
 						},
 						["qg"] = 49035,	-- Lilith
-						["sourceQuestID"] = { 28604 },	-- Deception and Trickery
+						["sourceQuests"] = { 28604 },	-- Deception and Trickery
 					}),
 					o(206944, {	-- Shovel
 						["groups"] = {
@@ -246,19 +246,19 @@ _.Zones =
 								i(65667),	-- Shovel of Mercy
 							}),
 						},
-						["sourceQuestID"] = { 28192 },	-- No One Here Gets Out Alive
+						["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
 					}),
 					qpvp(qa(7170, {	-- Earned Reverence
 						["groups"] = {
 						},
 						["qg"] = 13841,	-- Lieutenant Haggerdin
-						["sourceQuestID"] = { 7169 },	-- Honored Among the Guard
+						["sourceQuests"] = { 7169 },	-- Honored Among the Guard
 					})),
 					qpvp(qh(7165, {	-- Earned Reverence
 						["groups"] = {
 						},
 						["qg"] = 13840,	-- Warmaster Laggrond
-						["sourceQuestID"] = { 7164 },	-- Honored Amongst the Clan
+						["sourceQuests"] = { 7164 },	-- Honored Amongst the Clan
 					})),
 					qh(28620, {	-- Eastpoint Tower
 						["groups"] = {
@@ -269,19 +269,19 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 49201,	-- Nils Beerot
-						["sourceQuestID"] = { 28620 },	-- Eastpoint Tower
+						["sourceQuests"] = { 28620 },	-- Eastpoint Tower
 					}),
 					q(28617, {	-- Flower Power
 						["groups"] = {
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
-						["sourceQuestID"] = { 28733 },	-- Basic Botany
+						["sourceQuests"] = { 28733 },	-- Basic Botany
 					}),
 					qh(28199, {	-- For Science!
 						["groups"] = {
 						},
 						["qg"] = 47899,	-- Flesh-Shaper Arnauld
-						["sourceQuestID"] = { 28192 },	-- No One Here Gets Out Alive
+						["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
 					}),
 					qh(28209, { -- Freedom for Lydon
 						["groups"] = {
@@ -290,20 +290,20 @@ _.Zones =
 							i(131692),	-- Sludge Guard Mail Vest
 						},
 						["qg"] = 47900,	-- Master Apothecary Lydon
-						["sourceQuestID"] = { 28206 },	-- Little Girl Lost
+						["sourceQuests"] = { 28206 },	-- Little Girl Lost
 					}),
 					qart(qa(11997, {	-- The Frozen Flame
 						["groups"] = {
 						},
 						["qg"] = 99415,	-- Aethas Sunreaver
 						["classes"] = { 8 },	-- Mage
-						["sourceQuestID"] = { 40270 },	-- The Path of Atonement
+						["sourceQuests"] = { 40270 },	-- The Path of Atonement
 					})),
 					q(28744, {	-- Ghouls Hate My Grains
 						["groups"] = {
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
-						["sourceQuestID"] = { 28617 },	-- Flower Power
+						["sourceQuests"] = { 28617 },	-- Flower Power
 					}),
 					qh(28114, { -- Glorious Harvest
 						["groups"] = {
@@ -313,7 +313,7 @@ _.Zones =
 							i(131689),	-- Web Encased Tunic
 						},
 						["qg"] = 47432,	-- Apothecary Underhill
-						["sourceQuestID"] = { 28096 },	-- Welcome to the Machine
+						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 					}),
 					qh(28325, {	-- Green Living
 						["groups"] = {
@@ -341,7 +341,7 @@ _.Zones =
 							i(131697),	-- Gauntlets of the Hero
 						},
 						["qg"] = 48503,	-- Kingslayer Orkus
-						["sourceQuestID"] = { 28397 },	-- They Will Never Expect This...
+						["sourceQuests"] = { 28397 },	-- They Will Never Expect This...
 					}),
 					qpvp(qh(8272, { -- Hero of the Frostwolf
 						["groups"] = {
@@ -351,7 +351,7 @@ _.Zones =
 							i(20648),	-- Cold Forged Hammer
 						},
 						["qg"] = 13817,	-- Voggah Deathgrip
-						["sourceQuestID"] = { 7142 },	-- The Battle for Alterac
+						["sourceQuests"] = { 7142 },	-- The Battle for Alterac
 					})),
 					qpvp(qa(8271, { -- Hero of the Stormpike
 						["groups"] = {
@@ -361,19 +361,19 @@ _.Zones =
 							i(20648),	-- Cold Forged Hammer
 						},
 						["qg"] = 13816,	-- Prospecter Stonechewer
-						["sourceQuestID"] = { 7141 },	-- The Battle of Alterac
+						["sourceQuests"] = { 7141 },	-- The Battle of Alterac
 					})),
 					qpvp(qa(7169, {	-- Honored Amongst the Guard
 						["groups"] = {
 						},
 						["qg"] = 13841,	-- Lieutenant Haggerdin
-						["sourceQuestID"] = { 7168 },	-- Rise and be Recognized
+						["sourceQuests"] = { 7168 },	-- Rise and be Recognized
 					})),
 					qpvp(qh(7164, {	-- Honored Amongst the Clan
 						["groups"] = {
 						},
 						["qg"] = 13840,	-- Warmaster Laggrond
-						["sourceQuestID"] = { 7163 },	-- Rise and be Recognized
+						["sourceQuests"] = { 7163 },	-- Rise and be Recognized
 					})),
 					qh(28138, { -- Human Infestation
 						["groups"] = {
@@ -393,7 +393,7 @@ _.Zones =
 					qh(28603, {	-- Infiltration
 						["groups"] = {
 						},
-						["sourceQuestID"] = { 28566 },	-- Decimation
+						["sourceQuests"] = { 28566 },	-- Decimation
 					}),
 --					q(43285),	-- Invasion: Hillsbrad Foothills (REMOVED, from Legion pre-patch)
 --					q(42805),	-- Invasion: Hillsbrad Foothills (REMOVED, from Legion pre-patch)
@@ -410,7 +410,7 @@ _.Zones =
 							i(131695),	-- Orkus' Riding Spaulders
 						},
 						["qg"] = 48218,	-- Kingslayer Orkus
-						["sourceQuestID"] = { 28348 },	-- Stormpike Rendezvous
+						["sourceQuests"] = { 28348 },	-- Stormpike Rendezvous
 					}),
 					q(28748, { -- Lawn of the Dead
 						["groups"] = {
@@ -420,19 +420,19 @@ _.Zones =
 							i(66067),	-- Singing Sunflower (PET!)
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
-						["sourceQuestID"] = { 28747 },	-- Someone Setup the Pumpkin Bomb
+						["sourceQuests"] = { 28747 },	-- Someone Setup the Pumpkin Bomb
 					}),
 					qpvp(qa(7171, {	-- Legendary Heroes
 						["groups"] = {
 						},
 						["qg"] = 13841,	-- Lieutenant Haggerdin
-						["sourceQuestID"] = { 7170 },	-- Earned Reverence
+						["sourceQuests"] = { 7170 },	-- Earned Reverence
 					})),
 					qpvp(qh(7166, {	-- Legendary Heroes
 						["groups"] = {
 						},
 						["qg"] = 13840,	-- Warmaster Laggrond
-						["sourceQuestID"] = { 7165 },	-- Earned Reverence
+						["sourceQuests"] = { 7165 },	-- Earned Reverence
 					})),
 					n(45728, {	-- Arcane Remnant
 						["groups"] = {
@@ -440,26 +440,26 @@ _.Zones =
 								qh(27480),	-- Ley Energies
 							}),
 						},
-						["sourceQuestID"] = { 27483 },
+						["sourceQuests"] = { 27483 },
 						["description"] = "This quest is part of a chain that begins in Silverpine Forest.  The quest counts towards Loremaster, but not the Hillsbrad or Silverpine zone quest achievements.",
 					}),
 					qh(28206, {	-- Little Girl Lost
 						["groups"] = {
 						},
 						["qg"] = 47781,	-- Warden Stillwater
-						["sourceQuestID"] = { 28196 },	-- The Battle for Hillsbrad
+						["sourceQuests"] = { 28196 },	-- The Battle for Hillsbrad
 					}),
 					qh(28506, {	-- March of the Stormpike
 						["groups"] = {
 						},
 						["qg"] = 48545,	-- High Warlord Cromush
-						["sourceQuestID"] = { 28600 },	-- Matters of Loyalty
+						["sourceQuests"] = { 28600 },	-- Matters of Loyalty
 					}),
 					qh(28600, {	-- Matters of Loyalty
 						["groups"] = {
 						},
 						["qg"] = 13817,	-- Voggah Deathgrip
-						["sourceQuestID"] = { 28587 },	-- Aid of the Frostwolf
+						["sourceQuests"] = { 28587 },	-- Aid of the Frostwolf
 					}),
 					n(47759, {	-- Muckgill
 						i(63090, {	-- MuckGill's Flipper
@@ -474,27 +474,27 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 47781,	-- Warden Stillwater
-						["sourceQuestID"] = { 28168 },	-- Trouble at the Sludge Fields
+						["sourceQuests"] = { 28168 },	-- Trouble at the Sludge Fields
 					}),
 					ql(q(30092, {	-- Our Man in Gilneas
 						["groups"] = {
 						},
 						["qg"] = 57777,	-- Wrathion
 						["classes"] = { 4 },	-- Rogue
-						["sourceQuestID"] = { 29847 },	-- To Catch a Thief
+						["sourceQuests"] = { 29847 },	-- To Catch a Thief
 					})),
 					ql(q(30108, {	-- Our Man in Karazhan (UNTESTED, NEEDS CONFIRMATION)
 						["groups"] = {
 						},
 						["qg"] = 57777,	-- Wrathion
 						["classes"] = { 4 },	-- Rogue
-						["sourceQuestID"] = { 30107 },	-- Cluster Clutch
+						["sourceQuests"] = { 30107 },	-- Cluster Clutch
 					})),				
 					qh(28115, {	-- Past Their Prime
 						["groups"] = {
 						},
 						["qg"] = 47432,	-- Apothecary Underhill
-						["sourceQuestID"] = { 28096 },	-- Welcome to the Machine
+						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 					}),
 					ql(q(30118, {	-- Patricide (UNTESTED, NEEDS CONFIRMATION)
 						["groups"] = {
@@ -503,7 +503,7 @@ _.Zones =
 						},
 						["qg"] = 57777,	-- Wrathion
 						["classes"] = { 4 },	-- Rogue
-						["sourceQuestID"] = { 30116 },	-- Sharpening Your Fangs
+						["sourceQuests"] = { 30116 },	-- Sharpening Your Fangs
 					})),
 					n(2371, {	-- Daggerspine Siren
 						i(63686, {	-- Daggerspine Attack Plans
@@ -545,7 +545,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48020,	-- Master Apothecary Lydon
-						["sourceQuestID"] = { 28209 },	-- Freedom for Lydon
+						["sourceQuests"] = { 28209 },	-- Freedom for Lydon
 					}),
 					qpvp(qa(7162, {	-- Proving Grounds
 						["groups"] = {
@@ -563,20 +563,20 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 13841,	-- Lieutenant Haggerdin
-						["sourceQuestID"] = { 7162 },	-- Proving Grounds
+						["sourceQuests"] = { 7162 },	-- Proving Grounds
 					})),
 					qpvp(qh(7163, {	-- Rise and Be Recognized
 						["groups"] = {
 						},
 						["qg"] = 13840,	-- Warmaster Laggrond
-						["sourceQuestID"] = { 7161 },	-- Proving Grounds
+						["sourceQuests"] = { 7161 },	-- Proving Grounds
 					})),
 					ql(q(30116, {	-- Sharpening Your Fangs (UNTESTED, NEEDS CONFIRMATION)
 						["groups"] = {
 						},
 						["qg"] = 57777,	-- Wrathion
 						["classes"] = { 4 },	-- Rogue
-						["sourceQuestID"] = { 30113 },	-- Victory in the Depths
+						["sourceQuests"] = { 30113 },	-- Victory in the Depths
 					})),
 					qh(28636, { -- Silence of the Dwarves
 						["groups"] = {
@@ -586,13 +586,13 @@ _.Zones =
 							i(131703),	-- Foreboding Bracers
 						},
 						["qg"] = 49240,	-- Captain Ironhill's Ghost
-						["sourceQuestID"] = { 28635 },	-- A Haunting in Hillsbrad
+						["sourceQuests"] = { 28635 },	-- A Haunting in Hillsbrad
 					}),
 					q(28747, {	-- Someone Setup the Pumpkin Bomb
 						["groups"] = {
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
-						["sourceQuestID"] = { 28744 },	-- Ghouls Hate My Grains
+						["sourceQuests"] = { 28744 },	-- Ghouls Hate My Grains
 					}),
 					qh(28489, { -- Stagwiches
 						["groups"] = {
@@ -608,13 +608,13 @@ _.Zones =
 							i(131702),	-- Nuke Resistant Gauntlets
 						},
 						["qg"] = 48545,	-- High Warlord Cromush
-						["sourceQuestID"] = { 28556, 28605 },	-- Breaking the Hand & Domination
+						["sourceQuests"] = { 28556, 28605 },	-- Breaking the Hand & Domination
 					}),
 					qh(28348, {	-- Stormpike Rendezvous
 						["groups"] = {
 						},
 						["qg"] = 48218,	-- Kingslayer Orkus
-						["sourceQuestID"] = { 28345 },	-- *Gurgle* HELP! *Gurgle*
+						["sourceQuests"] = { 28345 },	-- *Gurgle* HELP! *Gurgle*
 					}),
 					qh(28324, {	-- Studies in Lethality
 						["groups"] = {
@@ -635,7 +635,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
-						["sourceQuestID"] = { 28748 },	-- Lawn of the Dead
+						["sourceQuests"] = { 28748 },	-- Lawn of the Dead
 					}),
 					n(47789, {	-- Clerk Horrace Whitesteed
 						["groups"] = {
@@ -643,7 +643,7 @@ _.Zones =
 								qh(28196),	-- The Battle for Hillsbrad
 							}),
 						},
-						["sourceQuestID"] = { 28192 },	-- No One Here Gets Out Alive
+						["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
 					}),
 					qpvp(qa(7141, {	-- The Battle of Alterac
 						["groups"] = {
@@ -653,24 +653,24 @@ _.Zones =
 					qh(28645, {	-- The Durnholde Challenge: Bloodvenom
 						["groups"] = {
 						},
-						["sourceQuestID"] = { 28644 },	-- The Durnholde Challenge: Teracula
+						["sourceQuests"] = { 28644 },	-- The Durnholde Challenge: Teracula
 					}),
 					qh(28647, { -- The Durnholde Challenge: D-1000
 						["groups"] = {
 							i(65707),	-- Discontinuer's Hammer
 							i(65687),	-- Axe of the Judgment Day
 						},
-						["sourceQuestID"] = { 28646 },	-- The Durnholde Challenge: Infernus
+						["sourceQuests"] = { 28646 },	-- The Durnholde Challenge: Infernus
 					}),
 					qh(28646, {	-- The Durnholde Challenge: Infernus
 						["groups"] = {
 						},
-						["sourceQuestID"] = { 28645 },	-- The Durnholde Challenge: Bloodvenom
+						["sourceQuests"] = { 28645 },	-- The Durnholde Challenge: Bloodvenom
 					}),
 					qh(28644, {	-- The Durnholde Challenge: Teracula
 						["groups"] = {
 						},
-						["sourceQuestID"] = { 28643 },	-- The Durnholde Challenge: Zephyrus
+						["sourceQuests"] = { 28643 },	-- The Durnholde Challenge: Zephyrus
 					}),
 					qh(28643, {	-- The Durnholde Challenge: Zephyrus
 						["groups"] = {
@@ -693,19 +693,19 @@ _.Zones =
 						},
 						["qg"] = 99398,	-- Archmage Modera
 						["classes"] = { 8 },	-- Mage
-						["sourceQuestID"] = { 40267 },	-- An Unexpected Message
+						["sourceQuests"] = { 40267 },	-- An Unexpected Message
 					})),
 					qh(28375, {	-- The Road to Purgation
 						["groups"] = {
 						},
 						["qg"] = 48218,	-- Kingslayer Orkus
-						["sourceQuestID"] = { 28354 },	-- Kasha Will Fly Again
+						["sourceQuests"] = { 28354 },	-- Kasha Will Fly Again
 					}),
 					qh(28397, {	-- They Will Never Expect This...
 						["groups"] = {
 						},
 						["qg"] = 48470,	-- Kingslayer Orkus
-						["sourceQuestID"] = { 28375 },	-- The Road to Purgation
+						["sourceQuests"] = { 28375 },	-- The Road to Purgation
 					}),
 					qh(28144, {	-- Thieving Little Monsters!
 						["groups"] = {
@@ -717,7 +717,7 @@ _.Zones =
 						},
 						["qg"] = 56375,	-- Mostrasz
 						["classes"] = { 4 },	-- Rogue
-						["sourceQuestID"] = { 29934 },	-- To Ravenholdt
+						["sourceQuests"] = { 29934 },	-- To Ravenholdt
 					})),
 					qpvp(qa(7102, {	-- Towers and Bunkers
 						["groups"] = {
@@ -731,25 +731,25 @@ _.Zones =
 							i(65679),	-- Hinott's Outer Robe
 							i(131694),	-- Slime Resistant Bracer
 						},
-						["sourceQuestID"] = { 28329 },	-- Angry Scrubbing Bubbles
+						["sourceQuests"] = { 28329 },	-- Angry Scrubbing Bubbles
 					}),
 					qh(28111, {	-- Trouble at Azurelode
 						["groups"] = {
 						},
 						["qg"] = 2215,	-- High Executor Darthalia
-						["sourceQuestID"] = { 28096 },	-- Welcome to the Machine
+						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 					}),
 					qh(28251, {	-- Trouble at Southshore
 						["groups"] = {
 						},
 						["qg"] = 47900,	-- Master Apothecary Lydon
-						["sourceQuestID"] = { 28237 },	-- A Blight Upon the Land
+						["sourceQuests"] = { 28237 },	-- A Blight Upon the Land
 					}),
 					qh(28168, {	-- Trouble at the Sludge Fields
 						["groups"] = {
 						},
 						["qg"] = 47554,	-- Captain Keyton
-						["sourceQuestID"] = { 28146, 28144 },	-- Coastal Delicacies & Thieving Little Monsters
+						["sourceQuests"] = { 28146, 28144 },	-- Coastal Delicacies & Thieving Little Monsters
 					}),
 --					q(28752),	-- Unstoppable Onslaught (REMOVED in Beta)
 					o(207279, {	-- Warchief's Command Board

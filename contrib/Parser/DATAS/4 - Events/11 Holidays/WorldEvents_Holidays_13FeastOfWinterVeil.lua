@@ -235,7 +235,7 @@ _.WorldEvents =
 								},
 								["description"] = "This quest can only be done once per year.",
 								["qg"] = 13418, -- Kaymard Copperpinch
-								["sourceQuestID"] = { 6983 }, -- You're a Mean One...
+								["sourceQuests"] = { 6983 }, -- You're a Mean One...
 							}),
 							h(q(6961)), -- Greatfather Winter is Here!
 							h(q(6983, { -- You're A Mean One
@@ -426,7 +426,7 @@ _.WorldEvents =
 								},
 								["description"] = "This quest can only be done once per year.",
 								["qg"] = 13433, -- Wulmort Jinglepocket
-								["sourceQuestID"] = { 7043 }, -- You're a Mean One...
+								["sourceQuests"] = { 7043 }, -- You're a Mean One...
 							}),
 							a(q(7022)), -- Greatfather Winter is Here!
 							a(q(7043, { -- You're A Mean One

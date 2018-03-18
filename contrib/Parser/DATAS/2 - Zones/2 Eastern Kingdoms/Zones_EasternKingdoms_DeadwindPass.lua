@@ -43,7 +43,7 @@ _.Zones =
 						},
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["classes"] = { 4 },	-- Rogue
-						["sourceQuestID"] = { 30108 },	-- Our Man in Karazhan
+						["sourceQuests"] = { 30108 },	-- Our Man in Karazhan
 					})),
 --[[
 					qg(114550, qa(40717)),	-- Calling of the Council
@@ -196,7 +196,7 @@ _.Zones =
 						},
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["classes"] = { 4 },	-- Rogue
-						["sourceQuestID"] = { 30109 },	-- Blood of the Betrayer
+						["sourceQuests"] = { 30109 },	-- Blood of the Betrayer
 					})),
 --[[
 					o(258978, {	-- Waterlogged Tome

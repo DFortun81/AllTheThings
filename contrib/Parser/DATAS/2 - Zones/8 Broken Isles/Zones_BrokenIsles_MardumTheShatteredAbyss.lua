@@ -18,25 +18,25 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 98229, -- Kayn Sunfury
-						["sourceQuestID"] = { 40077 }, -- Treads of Illidari Supremacy
+						["sourceQuests"] = { 40077 }, -- Treads of Illidari Supremacy
 					}),
 					q(39279, { -- Assault on Mardum
 						["groups"] = {
 						},
 						["description"] = "This is a bonus objective.",
-						["sourceQuestID"] = { 40077 }, -- Treads of Illidari Supremacy
+						["sourceQuests"] = { 40077 }, -- Treads of Illidari Supremacy
 					}),
 					q(40379, { -- Enter the Illidari: Coilskar
 						["groups"] = {
 						},
 						["qg"] = 100982, -- Sevis Brightflame
-						["sourceQuestID"] = { 40378 }, -- Enter the Illidar: Ashtongue
+						["sourceQuests"] = { 40378 }, -- Enter the Illidar: Ashtongue
 					}),
 					q(39049, { -- Eye On the Prize
 						["groups"] = {
 						},
 						["qg"] = 94410, -- Allari the Souleater
-						["sourceQuestID"] = { 40378 }, -- Enter the Illidar: Ashtongue
+						["sourceQuests"] = { 40378 }, -- Enter the Illidar: Ashtongue
 					}),
 					q(38759, { -- Set Them Free
 						["groups"] = {
@@ -44,19 +44,19 @@ _.Zones =
 							i(133312),	-- Torment Ender's Chestguard
 						},
 						["qg"] = 94410, -- Allari the Souleater
-						["sourceQuestID"] = { 40378 }, -- Enter the Illidar: Ashtongue
+						["sourceQuests"] = { 40378 }, -- Enter the Illidar: Ashtongue
 					}),
 					q(39050, { -- Meeting With the Queen
 						["groups"] = {
 						},
 						["qg"] = 93759, -- Jace Darkweaver
-						["sourceQuestID"] = { 40379, 39049, 38759 }, -- Enter the Illidari: Coilskar / Eye on the Prize / Set Them Free
+						["sourceQuests"] = { 40379, 39049, 38759 }, -- Enter the Illidari: Coilskar / Eye on the Prize / Set Them Free
 					}),
 					q(38766, { -- Before We're Overrun
 						["groups"] = {
 						},
 						["qg"] = 93759, -- Jace Darkweaver
-						["sourceQuestID"] = { 39050 }, -- Meeting With the Queen
+						["sourceQuests"] = { 39050 }, -- Meeting With the Queen
 					}),
 					q(38765, { -- Enter the Illidari: Shivarra
 						["groups"] = {
@@ -64,25 +64,25 @@ _.Zones =
 							i(133316),	-- Leggings of Sacrifice
 						},
 						["qg"] = 93759, -- Jace Darkweaver
-						["sourceQuestID"] = { 39050 }, -- Meeting With the Queen
+						["sourceQuests"] = { 39050 }, -- Meeting With the Queen
 					}),
 					q(38813, { -- Orders for Your Captains
 						["groups"] = {
 						},
 						["qg"] = 93127, -- Kayn Sunfury
-						["sourceQuestID"] = { 38766, 38765 }, -- Before We're Overrun / Enter the Illidari: Shivarra
+						["sourceQuests"] = { 38766, 38765 }, -- Before We're Overrun / Enter the Illidari: Shivarra
 					}),
 					q(39262, { -- Give Me Sight Beyond Sight
 						["groups"] = {
 						},
 						["qg"] = 93127, -- Kayn Sunfury
-						["sourceQuestID"] = { 38813 }, -- Orders For Your Captains
+						["sourceQuests"] = { 38813 }, -- Orders For Your Captains
 					}),
 					q(39495, { -- Hidden No More
 						["groups"] = {
 						},
 						["qg"] = 96436, -- Jace Darkweaver
-						["sourceQuestID"] = { 39262 }, -- Give Me Sight Beyond Sight
+						["sourceQuests"] = { 39262 }, -- Give Me Sight Beyond Sight
 					}),
 					q(38819, { -- Their Numbers Are Legion
 						["groups"] = {
@@ -90,19 +90,19 @@ _.Zones =
 							i(133311),	-- Demon-Rend Shoulderblades
 						},
 						["qg"] = 96420, -- Cyana Nightglaive
-						["sourceQuestID"] = { 39495 }, -- Hidden No More
+						["sourceQuests"] = { 39495 }, -- Hidden No More
 					}),
 					q(38727, { -- Stop the Bombardment
 						["groups"] = {
 						},
 						["qg"] = 93127, -- Kayn Sunfury
-						["sourceQuestID"] = { 39495 }, -- Hidden No More
+						["sourceQuests"] = { 39495 }, -- Hidden No More
 					}),
 					q(38725, { -- Into the Foul Creche
 						["groups"] = {
 						},
 						["qg"] = 96655, -- Allari the Souleater
-						["sourceQuestID"] = { 39495 }, -- Hidden No More
+						["sourceQuests"] = { 39495 }, -- Hidden No More
 					}),
 					q(40222, {	-- The Imp Mother's Tome			
 						["groups"] = {			
@@ -110,31 +110,31 @@ _.Zones =
 							i(133314),	-- Power Handler's Gloves	
 						},			
 						["qg"] = 98711, -- Kor'vas Bloodthorn			
-						["sourceQuestID"] = { 38819, 38727, 38725 }, -- Their Numbers Are Legion / Stop the Bombardment / Into the Foul Creche			
+						["sourceQuests"] = { 38819, 38727, 38725 }, -- Their Numbers Are Legion / Stop the Bombardment / Into the Foul Creche			
 					}),				
 					q(40051, {	-- Fel Secrets			
 						["groups"] = {
 						},			
 						["qg"] = 99045, -- Kor'vas Bloodthorn			
-						["sourceQuestID"] = { 40222 }, -- The Imp Mother's Tome			
+						["sourceQuests"] = { 40222 }, -- The Imp Mother's Tome			
 					}),				
 					q(39515, {	-- Vengeance Will Be Mine! [Only if you choose Vengeance Spec]			
 						["groups"] = {	
 						},			
 						["qg"] = 93127, -- Kayn Sunfury			
-						["sourceQuestID"] = { 40051 }, -- Fel Secrets			
+						["sourceQuests"] = { 40051 }, -- Fel Secrets			
 					}),				
 					q(39516, {	-- Cry Havoc and Let Slip the Illidari! [Only if you choose Havoc Spec]			
 						["groups"] = {
 						},			
 						["qg"] = 93127, -- Kayn Sunfury			
-						["sourceQuestID"] = { 40051 }, -- Fel Secrets			
+						["sourceQuests"] = { 40051 }, -- Fel Secrets			
 					}),				
 					q(39663, {	-- On Felbat Wings			
 						["groups"] = {
 						},			
 						["qg"] = 93127, -- Kayn Sunfury			
-						["sourceQuestID"] = { 39515, 39516 }, -- Vengeance Will Be Mine! /  Cry Havoc and Let Slip the Illidari!			
+						["sourceQuests"] = { 39515, 39516 }, -- Vengeance Will Be Mine! /  Cry Havoc and Let Slip the Illidari!			
 					}),				
 					q(38728, {	-- The Keystone			
 						["groups"] = {			
@@ -142,14 +142,14 @@ _.Zones =
 							i(133310),	-- The Brood Queen's Veil
 						},			
 						["qg"] = 97297, -- Cyana Nightglaive			
-						["sourceQuestID"] = { 39663 }, -- On Felbat Wings			
+						["sourceQuests"] = { 39663 }, -- On Felbat Wings			
 					}),				
 					q(38729, {	-- Return to the Black Temple			
 						["groups"] = {
 							i(132243), -- Fel-Etched Glaive
 						},			
 						["qg"] = 97303, -- Kayn Sunfury			
-						["sourceQuestID"] = { 38728 }, -- The Keystone			
+						["sourceQuests"] = { 38728 }, -- The Keystone			
 					}),
 				}),
 				n(-212, { -- Treasure Chest
@@ -277,61 +277,61 @@ _.Zones =
 								},			
 								["description"] = "Maiev upgrades your uncommon Illidari Glaives to these two glaives.",
 								["qg"] = 92718, -- Maiev Shadowsong
-								["sourceQuestID"] = { 38729 }, -- Return to the Black Temple
+								["sourceQuests"] = { 38729 }, -- Return to the Black Temple
 							}),
 							q(39742, {	-- Vault of the Wardens
 								["groups"] = {
 								},
 								["description"] = "This is a bonus objective.",
-								["sourceQuestID"] = { 38672 }, -- Breaking Out
+								["sourceQuests"] = { 38672 }, -- Breaking Out
 							}),	
 							q(38689, {	-- Fel Infusion
 								["groups"] = {
 								},
 								["qg"] = 92986, -- Altruis the Sufferer
-								["sourceQuestID"] = { 38672 }, -- Breaking Out
+								["sourceQuests"] = { 38672 }, -- Breaking Out
 							}),	
 							q(38690, {	-- Rise of the Illidari
 								["groups"] = {
 								},
 								["qg"] = 92980, -- Kayn Sunfury
-								["sourceQuestID"] = { 38672 }, -- Breaking Out
+								["sourceQuests"] = { 38672 }, -- Breaking Out
 							}),	
 							q(38723, {	-- Stop Gul'dan! [Havoc Version]
 								["groups"] = {
 								},
 								["qg"] = 92718, -- Maiev Shadowsong
-								["sourceQuestID"] = { 38672, 38672 }, -- Fel Infusion / Rise of the Illidari
+								["sourceQuests"] = { 38672, 38672 }, -- Fel Infusion / Rise of the Illidari
 							}),	
 							q(40253, {	-- Stop Gul'dan! [Vengeance Version]
 								["groups"] = {
 								},
 								["qg"] = 92718, -- Maiev Shadowsong
-								["sourceQuestID"] = { 38672, 38672 }, -- Fel Infusion / Rise of the Illidari
+								["sourceQuests"] = { 38672, 38672 }, -- Fel Infusion / Rise of the Illidari
 							}),	
 							q(39682, { -- Grand Theft Felbat
 								["groups"] = {
 								},
 								["qg"] = 96665, -- Kayn Sunfury
-								["sourceQuestID"] = { 38723, 40253 }, -- Stop Gul'dan!
+								["sourceQuests"] = { 38723, 40253 }, -- Stop Gul'dan!
 							}),
 							q(39683, { -- Forged in Fire [Havoc Only]
 								["groups"] = {
 								},
 								["qg"] = 96675, -- Allari the Souleater
-								["sourceQuestID"] = { 39682 }, -- Grand Theft Felbat
+								["sourceQuests"] = { 39682 }, -- Grand Theft Felbat
 							}),
 							q(40254, { -- Forged in Fire [Vengeance Only]
 								["groups"] = {
 								},
 								["qg"] = 96675, -- Allari the Souleater
-								["sourceQuestID"] = { 39682 }, -- Grand Theft Felbat
+								["sourceQuests"] = { 39682 }, -- Grand Theft Felbat
 							}),
 							q(39684, { -- Beam Me Up
 								["groups"] = {
 								},
 								["qg"] = 97643, -- Kor'vas Bloodthorn
-								["sourceQuestID"] = { 39682 }, -- Grand Theft Felbat
+								["sourceQuests"] = { 39682 }, -- Grand Theft Felbat
 							}),
 							q(39685, { -- Frozen in Time
 								["groups"] = {
@@ -339,13 +339,13 @@ _.Zones =
 									i(133315), -- Infernal Firecord Sash
 								},
 								["qg"] = 97643, -- Kor'vas Bloodthorn
-								["sourceQuestID"] = { 39682 }, -- Grand Theft Felbat
+								["sourceQuests"] = { 39682 }, -- Grand Theft Felbat
 							}),
 							q(39686, { -- All The Way Up
 								["groups"] = {
 								},
 								["qg"] = 96675, -- Allari the Souleater
-								["sourceQuestID"] = { 39683, 40254, 39684, 39685 }, -- Forged in Fire / Beam Me Up / Frozen in Time
+								["sourceQuests"] = { 39683, 40254, 39684, 39685 }, -- Forged in Fire / Beam Me Up / Frozen in Time
 							}),
 							q(40373, { -- A New Direction
 								["groups"] = {
@@ -353,49 +353,49 @@ _.Zones =
 									i(141650), -- Helm of Reaffirmed Purpose
 								},
 								["qg"] = 97644, -- Kor'vas Bloodthorn
-								["sourceQuestID"] = { 39686 }, -- All The Way Up
+								["sourceQuests"] = { 39686 }, -- All The Way Up
 							}),
 							q(39688, { -- Between Us and Freedom / Nightelf [Havoc]
 								["groups"] = {
 								},
 								["qg"] = 97644, -- Kor'vas Bloodthorn
 								["races"] = { 4 }, -- Night Elf
-								["sourceQuestID"] = { 40373 }, -- A New Direction
+								["sourceQuests"] = { 40373 }, -- A New Direction
 							}),
 							q(40255, { -- Between Us and Freedom / Night Elf [Vengeance]
 								["groups"] = {
 								},
 								["qg"] = 97644, -- Kor'vas Bloodthorn
 								["races"] = { 4 }, -- Night Elf
-								["sourceQuestID"] = { 40373 }, -- A New Direction
+								["sourceQuests"] = { 40373 }, -- A New Direction
 							}),
 							q(39694, { -- Between Us and Freedom / Blood Elf [Havoc]
 								["groups"] = {
 								},
 								["qg"] = 97644, -- Kor'vas Bloodthorn
 								["races"] = { 10 }, -- Blood Elf
-								["sourceQuestID"] = { 40373 }, -- A New Direction
+								["sourceQuests"] = { 40373 }, -- A New Direction
 							}),
 							q(40256, { -- Between Us and Freedom / Blood Elf [Vengeance]
 								["groups"] = {
 								},
 								["qg"] = 97644, -- Kor'vas Bloodthorn
 								["races"] = { 10 }, -- Blood Elf
-								["sourceQuestID"] = { 40373 }, -- A New Direction
+								["sourceQuests"] = { 40373 }, -- A New Direction
 							}),
 							q(39690, { -- Illidari, We Are Leaving / Horde
 								["groups"] = {
 								},
 								["qg"] = 97978, -- Archmage Khadgar
 								["races"] = { 10 }, -- Blood Elf
-								["sourceQuestID"] = { 39688, 40255, 39694, 40256 }, -- Between Us and Freedom
+								["sourceQuests"] = { 39688, 40255, 39694, 40256 }, -- Between Us and Freedom
 							}),
 							q(39689, { -- Illidari, We Are Leaving / Alliance
 								["groups"] = {
 								},
 								["qg"] = 97978, -- Archmage Khadgar
 								["races"] = { 4 }, -- Night Elf
-								["sourceQuestID"] = { 39688, 40255, 39694, 40256 }, -- Between Us and Freedom
+								["sourceQuests"] = { 39688, 40255, 39694, 40256 }, -- Between Us and Freedom
 							}),
 						}),
 						n(-16, { -- Rares

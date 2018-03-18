@@ -111,25 +111,25 @@ _.Instances =
 								["groups"] = {
 								},
 								["qg"] = 45898, -- Kevin Dawson
-								["sourceQuestID"] = { 27565 }, -- Into the Prison [Alliance]
+								["sourceQuests"] = { 27565 }, -- Into the Prison [Alliance]
 							}),
 							qh(27581, { -- Twilight?! No! [Horde]
 								["groups"] = {
 								},
 								["qg"] = 45818, -- Lexlort
-								["sourceQuestID"] = { 27579 }, -- Into the Prison [Horde]
+								["sourceQuests"] = { 27579 }, -- Into the Prison [Horde]
 							}),
 							qa(27569, { -- Dark Iron Tacticians
 								["groups"] = {
 								},
 								["qg"] = 45894, -- Prospector Seymour
-								["sourceQuestID"] = { 27568 }, -- Infilitrating Shadowforge City [Alliance]
+								["sourceQuests"] = { 27568 }, -- Infilitrating Shadowforge City [Alliance]
 							}),
 							qh(27585, { -- The 109th Division
 								["groups"] = {
 								},
 								["qg"] = 45820, -- Razal'blade
-								["sourceQuestID"] = { 27582 }, -- Infiltrating Shadowforge City [Horde]
+								["sourceQuests"] = { 27582 }, -- Infiltrating Shadowforge City [Horde]
 							}),
 						}),
 						n(-76, { -- Shadowforge City
@@ -137,25 +137,25 @@ _.Instances =
 								["groups"] = {
 								},
 								["qg"] = 45888, -- Mayara Brightwing
-								["sourceQuestID"] = { 27569 }, -- Dark Iron Tacticians
+								["sourceQuests"] = { 27569 }, -- Dark Iron Tacticians
 							}),
 							qh(27589, { -- The Grim Guzzler [Horde]
 								["groups"] = {
 								},
 								["qg"] = 45817, -- Hierophant Theodora Mulvadania
-								["sourceQuestID"] = { 27585 }, -- The 109th Division
+								["sourceQuests"] = { 27585 }, -- The 109th Division
 							}),
 							qa(27573, { -- The Dark Iron Pact [Alliance]
 								["groups"] = {
 								},
 								["qg"] = 45899, -- Mountaineer Orfus
-								["sourceQuestID"] = { 27571 }, -- The Grim Guzzler [Alliance]
+								["sourceQuests"] = { 27571 }, -- The Grim Guzzler [Alliance]
 							}),
 							qh(27591, { -- The Dark Iron Pact [Horde]
 								["groups"] = {
 								},
 								["qg"] = 45824, --  Thunderheart
-								["sourceQuestID"] = { 27589 }, -- The Grim Guzzler [Horde]
+								["sourceQuests"] = { 27589 }, -- The Grim Guzzler [Horde]
 							}),
 							qa(27578, { -- Morgan's Fruition
 								["groups"] = {
@@ -164,7 +164,7 @@ _.Instances =
 									i(65980), -- Dark Iron Band
 								},
 								["qg"] = 45890,   -- Marshal Maxwell
-								["sourceQuestID"] = { 27573 }, -- The Dark Iron Pact [Alliance]
+								["sourceQuests"] = { 27573 }, -- The Dark Iron Pact [Alliance]
 							}),
 							qh(27593, { -- Rebirth of the K.E.F
 								["groups"] = {
@@ -173,7 +173,7 @@ _.Instances =
 									i(65980), -- Dark Iron Band
 								},
 								["qg"] = 45840, -- Warlord Goretooth
-								["sourceQuestID"] = { 27591 },  -- The Dark Iron Pact [Horde]
+								["sourceQuests"] = { 27591 },  -- The Dark Iron Pact [Horde]
 							}),
 						}),
 						--[[ TEMPORARILY DISABLED

@@ -4451,20 +4451,20 @@ local function CreateMiniListForGroup(group)
 		local groups = { mainQuest };
 		
 		-- Show Quest Prereqs
-		if mainQuest.sourceQuestID then
-			local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuestID;
+		if mainQuest.sourceQuests then
+			local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuests;
 			while sourceQuests and #sourceQuests > 0 do
 				subSourceQuests = {}; prereqs = {};
-				for i,sourceQuestID in ipairs(sourceQuests) do
-					sourceQuest = SearchForField("questID", sourceQuestID);
+				for i,sourceQuests in ipairs(sourceQuests) do
+					sourceQuest = SearchForField("questID", sourceQuests);
 					if sourceQuest and #sourceQuest > 0 then
 						-- Only care about the first search result.
 						if app.GroupFilter(sourceQuest[1]) then
 							sourceQuest = setmetatable({ ['collectible'] = true, ['visible'] = true, ['hideText'] = true }, { __index = sourceQuest[1] });
-							if sourceQuest.sourceQuestID and #sourceQuest.sourceQuestID > 0 then
+							if sourceQuest.sourceQuests and #sourceQuest.sourceQuests > 0 then
 								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
-								for j, subSourceQuestID in ipairs(sourceQuest.sourceQuestID) do
-									subSourceQuests[subSourceQuestID] = true;
+								for j, subsourceQuests in ipairs(sourceQuest.sourceQuests) do
+									subSourceQuests[subsourceQuests] = true;
 								end
 							end
 						else
@@ -4472,7 +4472,7 @@ local function CreateMiniListForGroup(group)
 						end
 					else
 						-- Create a Quest Object.
-						sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
+						sourceQuest = app.CreateQuest(sourceQuests, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
 					end
 					
 					-- If the quest was valid, attach it.
@@ -4482,8 +4482,8 @@ local function CreateMiniListForGroup(group)
 				-- Convert the subSourceQuests table into an array
 				sourceQuests = {};
 				if #prereqs > 0 then
-					for sourceQuestID,i in pairs(subSourceQuests) do
-						tinsert(sourceQuests, tonumber(sourceQuestID));
+					for sourceQuests,i in pairs(subSourceQuests) do
+						tinsert(sourceQuests, tonumber(sourceQuests));
 					end
 					
 					-- Insert the header for the source quest
@@ -6121,9 +6121,9 @@ local function RowOnEnter(self)
 		end
 		
 		-- Show Quest Prereqs
-		if reference.sourceQuestID then
-			for i,sourceQuestID in ipairs(reference.sourceQuestID) do
-				if not IsQuestFlaggedCompleted(sourceQuestID) then
+		if reference.sourceQuests then
+			for i,sourceQuests in ipairs(reference.sourceQuests) do
+				if not IsQuestFlaggedCompleted(sourceQuests) then
 					GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
 					break;
 				end

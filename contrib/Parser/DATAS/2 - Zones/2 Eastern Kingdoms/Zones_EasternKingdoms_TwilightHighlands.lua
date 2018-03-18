@@ -665,7 +665,7 @@ _.Zones =
 						},
 						["qg"] = 55488,	-- Corastrasza
 						["classes"] = { 4 },	-- Rogue
-						["sourceQuestID"] = { 29802 },	-- A Hidden Message
+						["sourceQuests"] = { 29802 },	-- A Hidden Message
 					})),
 --					qg(, q(27299)),	-- Torn Ground
 					qg(46318, qh(27747,  {  -- Total War
