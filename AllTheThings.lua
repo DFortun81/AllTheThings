@@ -53,6 +53,7 @@ local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByI
 local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllusionSourceInfo;
+local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
 local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
@@ -1913,10 +1914,22 @@ local function RefreshCollections()
 		
 		-- Refresh Sources from Cache
 		local collectedSources = GetDataMember("CollectedSources");
-		for id,group in pairs(fieldCache["s"]) do
-			if not collectedSources[id] then
-				local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
-				if sourceInfo and app.ItemSourceFilter(sourceInfo) then collectedSources[id] = sourceInfo.isCollected and 1 or 2; end
+		if GetDataMember("CompletionistMode") then
+			-- Completionist Mode can simply use the *fast* blizzard API.
+			for id,group in pairs(fieldCache["s"]) do
+				if not collectedSources[id] then
+					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
+						collectedSources[id] = 1;
+					end
+				end
+			end
+		else
+			-- Unique Mode requires a lot more calculation.
+			for id,group in pairs(fieldCache["s"]) do
+				if not collectedSources[id] then
+					local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
+					if sourceInfo and app.ItemSourceFilter(sourceInfo) then collectedSources[id] = sourceInfo.isCollected and 1 or 2; end
+				end
 			end
 		end
 		
@@ -2901,9 +2914,9 @@ app.BaseItem = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
-			return t.s;-- or (t.questID and GetDataMember("ShowIncompleteQuests"));
+			return t.s;
 		elseif key == "collected" then
-			return t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s);-- or t.saved;
+			return t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s);
 		elseif key == "text" then
 			return t.link;
 		elseif key == "link" then
