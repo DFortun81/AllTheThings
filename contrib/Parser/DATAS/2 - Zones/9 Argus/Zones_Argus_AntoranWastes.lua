@@ -578,7 +578,7 @@ _.Zones =
 							}),
 							n(-215, { -- Vindicaar
 								["groups"] = {
-									n(-206, { -- Emissary Quests
+									n(-169, { -- Emissary Quests
 										q(48642, { -- Argussian Reach
 											i(157831, { -- Scuffed Krokul Cache
 												["groups"] = {
@@ -1347,7 +1347,6 @@ _.Zones =
 								},
 								["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
 								["modelScale"] = 5,
-								["modelRotate"] = 180,
 							}),
 						},
 						["description"] = "These are activities that are done across all three Argus Zones",
