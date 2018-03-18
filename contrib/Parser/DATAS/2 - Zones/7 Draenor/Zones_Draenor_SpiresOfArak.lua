@@ -1150,18 +1150,28 @@ _.Zones =
 --]]				
 				}),
 				n(-2, { 	-- Vendors
-					na(82459, { -- Honest Jim
+					a(spell(170108, {	-- Smuggling Run!
 						["groups"] = {
-							i(113096), -- TOY! Bloodmane Charm
+							na(82459, { -- Honest Jim
+								["groups"] = {
+									i(113096), -- TOY! Bloodmane Charm
+								},
+								["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
+							}),
 						},
 						["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
-					}),
-					nh(84243, { -- Linny "The Skinny" Leadpockets
+					})),
+					h(spell(170097, {	-- Smuggling Run!
 						["groups"] = {
-							i(113096), -- TOY! Bloodmane Charm
+							nh(84243, { -- Linny "The Skinny" Leadpockets
+								["groups"] = {
+									i(113096), -- TOY! Bloodmane Charm
+								},
+								["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
+							}),	
 						},
 						["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
-					}),	
+					})),
 					n(82432, {	-- Miril Dumonde
 						["groups"] = {
 							i(118080),	-- Admiral Taylor's Greatsword
