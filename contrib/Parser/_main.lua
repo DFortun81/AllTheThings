@@ -453,6 +453,7 @@ end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
 a = function(t) t.races = ALLIANCE_ONLY; return t; end			-- Flag as Alliance Only
+bc = function(t) t.isBreadcrumb = true; end						-- Flag as a Breadcrumb
 desc = function(t, description)									-- Add a description to an object.
 	t.description = description;
 	return t;
