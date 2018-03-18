@@ -139,10 +139,12 @@ _.Zones =
 						},
 						["qg"] = 13777,	-- Sergeant Durgen Stormpike
 					})),
-					n(48319, {	-- Angry Blight Slime
-						qh(28329),	-- Angry Scrubbing Bubbles
+					qh(28329, {	-- Angry Scrubbing Bubbles
+						["groups"] = {
+						},
+						["qg"] = 48319,	-- Angry Blight Slime
 					}),
-					q(28733, {	-- Basic Botany
+					q( 28733, {	-- Basic Botany
 						["groups"] = {
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
@@ -271,7 +273,7 @@ _.Zones =
 						["qg"] = 49201,	-- Nils Beerot
 						["sourceQuests"] = { 28620 },	-- Eastpoint Tower
 					}),
-					q(28617, {	-- Flower Power
+					q( 28617, {	-- Flower Power
 						["groups"] = {
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
@@ -299,7 +301,7 @@ _.Zones =
 						["classes"] = { 8 },	-- Mage
 						["sourceQuests"] = { 40270 },	-- The Path of Atonement
 					})),
-					q(28744, {	-- Ghouls Hate My Grains
+					q( 28744, {	-- Ghouls Hate My Grains
 						["groups"] = {
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
@@ -434,14 +436,14 @@ _.Zones =
 						["qg"] = 13840,	-- Warmaster Laggrond
 						["sourceQuests"] = { 7165 },	-- Earned Reverence
 					})),
-					n(45728, {	-- Arcane Remnant
-						["groups"] = {
-							i(61310, {	-- Arcane Remnant
-								qh(27480),	-- Ley Energies
-							}),
-						},
-						["sourceQuests"] = { 27483 },
-						["description"] = "This quest is part of a chain that begins in Silverpine Forest.  The quest counts towards Loremaster, but not the Hillsbrad or Silverpine zone quest achievements.",
+					i( 61310, {	-- Arcane Remnant
+						qh(27480, {	-- Ley Energies
+							["groups"] = {
+							},
+							["qg"] = 45728,	-- Arcane Remnant
+							["sourceQuests"] = { 27483 },
+							["description"] = "This quest is part of a chain that begins in Silverpine Forest.  The quest counts towards Loremaster, but not the Hillsbrad or Silverpine zone quest achievements.",
+						}),
 					}),
 					qh(28206, {	-- Little Girl Lost
 						["groups"] = {
@@ -461,13 +463,14 @@ _.Zones =
 						["qg"] = 13817,	-- Voggah Deathgrip
 						["sourceQuests"] = { 28587 },	-- Aid of the Frostwolf
 					}),
-					n(47759, {	-- Muckgill
-						i(63090, {	-- MuckGill's Flipper
-							qh(28154, { -- Muckgill's Flipper or Something...
+					i( 63090, {	-- Muckgill's Flipper
+						qh(28154, {	-- Muckgill's Flipper or Something...
+							["groups"] = {
 								i(65691),	-- Floppy Shoulderguards
 								i(65669),	-- Keyton's Sash
 								i(131691),	-- Keyton's Mail Pauldrons
-							}),
+							},
+							["qg"] = 47759,	-- Muckgill
 						}),
 					}),
 					qh(28192, {	-- No One Here Gets Out Alive
@@ -505,40 +508,44 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 30116 },	-- Sharpening Your Fangs
 					})),
-					n(2371, {	-- Daggerspine Siren
-						i(63686, {	-- Daggerspine Attack Plans
-							qh(28356, { -- Preemptive Strike
+					i( 63686, {	-- Daggerspine Attack Plans
+						qh(28345, {	-- Preemptive Strike
+							["groups"] = {
 								i(65716),	-- Daggerspine Ball
 								i(65698),	-- Daggerspine Dagger
 								i(65677),	-- Preemptive Staff
-							}),
+							},
+							["qg"] = 2370,	-- Daggerspine Screamer
 						}),
 					}),
-					n(2369, {	-- Daggerspine Shorehunter
-						i(63686, {	-- Daggerspine Attack Plans
-							qh(28356, { -- Preemptive Strike
+					i( 63686, {	-- Daggerspine Attack Plans
+						qh(28345, {	-- Preemptive Strike
+							["groups"] = {
 								i(65716),	-- Daggerspine Ball
 								i(65698),	-- Daggerspine Dagger
 								i(65677),	-- Preemptive Staff
-							}),
+							},
+							["qg"] = 2371,	-- Daggerspine Siren
 						}),
 					}),
-					n(2368, {	-- Daggerspine Shorestalker
-						i(63686, {	-- Daggerspine Attack Plans
-							qh(28356, { -- Preemptive Strike
+					i( 63686, {	-- Daggerspine Attack Plans
+						qh(28345, {	-- Preemptive Strike
+							["groups"] = {
 								i(65716),	-- Daggerspine Ball
 								i(65698),	-- Daggerspine Dagger
 								i(65677),	-- Preemptive Staff
-							}),
+							},
+							["qg"] = 2369,	-- Daggerspine Shorehunter
 						}),
 					}),
-					n(2370, {	-- Daggerspine Screamer
-						i(63686, {	-- Daggerspine Attack Plans
-							qh(28356, { -- Preemptive Strike
+					i( 63686, {	-- Daggerspine Attack Plans
+						qh(28345, {	-- Preemptive Strike
+							["groups"] = {
 								i(65716),	-- Daggerspine Ball
 								i(65698),	-- Daggerspine Dagger
 								i(65677),	-- Preemptive Staff
-							}),
+							},
+							["qg"] = 2368,	-- Daggerspine Shorestalker
 						}),
 					}),
 					qh(28230, {	-- Protocol
@@ -588,7 +595,7 @@ _.Zones =
 						["qg"] = 49240,	-- Captain Ironhill's Ghost
 						["sourceQuests"] = { 28635 },	-- A Haunting in Hillsbrad
 					}),
-					q(28747, {	-- Someone Setup the Pumpkin Bomb
+					q( 28747, {	-- Someone Setup the Pumpkin Bomb
 						["groups"] = {
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
@@ -622,8 +629,10 @@ _.Zones =
 						["qg"] = 2391,	-- Serge Hinott
 						["breadcrumbQuestID"] = { 28251 },	-- Trouble at Southshore
 					}),
-					n(2373, {	-- Mudsnout Shaman
-						qh(28355),	-- Terrible Little Creatures (may be Horde-only)
+					qh(28355, {	-- Terrible Little Creatures
+						["groups"] = {
+						},
+						["qg"] = 2373,	-- Mudsnout Shaman
 					}),
 					qpvp(qh(7142, {	-- The Battle for Alterac
 						["groups"] = {
@@ -631,19 +640,18 @@ _.Zones =
 						["qg"] = 13817,	-- Voggah Deathgrip
 						["Lvl"] = 51,
 					})),
-					q(28751, {	-- Tending the Garden
+					q( 28751, {	-- Tending the Garden
 						["groups"] = {
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
 						["sourceQuests"] = { 28748 },	-- Lawn of the Dead
 					}),
-					n(47789, {	-- Clerk Horrace Whitesteed
-						["groups"] = {
-							i(63250, {	-- The Battle for Hillsbrad
-								qh(28196),	-- The Battle for Hillsbrad
-							}),
-						},
-						["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
+					i( 63250, {	-- The Battle for Hillsbrad
+						qh(28196, {	-- The Battle for Hillsbrad
+							["groups"] = {
+							},
+							["qg"] = 47789,	-- Clerk Horrace Whitesteed
+						}),
 					}),
 					qpvp(qa(7141, {	-- The Battle of Alterac
 						["groups"] = {

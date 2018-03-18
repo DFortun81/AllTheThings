@@ -8,14 +8,33 @@ _.Instances =
 		["groups"] = {
 			inst(234, { 	-- Razorfen Kraul
 				["groups"] = {
-					n(-17, {			-- Quests 			
-						q(26905,{	-- Agamaggan's Charge
-							i(65968),	-- Agamaggan-Blessed Greaves
-							i(65991),	-- Boots of the Noble Path
-							i(65944),	-- Charlga's Breastplate
-							i(65918),	-- Agamaggan's Gift
-							i(131617),	-- Razorflank's Chainmail
+					n(-17, {			-- Quests
+						q(26906, {	-- Agamaggan
+							["groups"] = {
+							},
+							["qg"] = 44402,	-- Auld Stonespire
+						}),
+						q(26905, {	-- Agamaggan's Charge
+							["groups"] = {
+								i(65968),	-- Agamaggan-Blessed Greaves
+								i(65991),	-- Boots of the Noble Path
+								i(65944),	-- Charlga's Breastplate
+								i(65918),	-- Agamaggan's Gift
+								i(131617),	-- Razorflank's Chainmail
+							},
+							["qg"] = 44415,	-- Spirit of Agamaggan
+							["sourceQuests"] = { 26906 },	-- Agamaggan
 						}),	
+						q(26901, {	-- Going, Going, Guano!
+							["groups"] = {
+							},
+							["qg"] = 44402,	-- Auld Stonespire
+						}),
+						q(26907, {	-- Take Them Down!
+							["groups"] = {
+							},
+							["qg"] = 44402,	-- Auld Stonespire
+						}),
 					}),
 					n(0, {				-- Zone Drop
 						n(74553, { 	-- Blood-Branded Razorfen

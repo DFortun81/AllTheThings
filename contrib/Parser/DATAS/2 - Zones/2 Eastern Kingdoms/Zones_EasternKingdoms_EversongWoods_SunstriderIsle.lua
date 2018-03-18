@@ -165,65 +165,67 @@ _.Zones =
 --]]					
 				}),
 				n(-17, { 	-- Quests
-					
-					
 					o(181011, {	-- Magister Duskwither's Journal
 						qh(8891),	-- Abandoned Investigations
 					}),
-					
-					
 					qh( 8476, {	-- Amani Encroachment
 						["groups"] = {
 						},
 						["qg"] = 15399,	-- Lieutenant Dawnrunner
 						["breadcrumbQuestID"] = { 9359 },	-- Farstrider Retreat
 					}),
-					
-					
-					n(15407, {	-- Chieftain Zul'Marosh
-						i(23249, {	-- Amani Invasion Plans
-							qh(9360),	-- Amani Invasion
+					i( 23249, {	-- Amani Invasion Plans
+						qh(9360, {	-- Amani Invasion
+							["groups"] = {
+							},
+							["qg"] = 15407,	-- Chieftain Zul'Marosh
 						}),
 					}),
-					
-					
 					qh( 8473, {	-- A Somber Task
 						["groups"] = {
 						},
 						["qg"] = 15398,	-- Larianna Riverwind
 						["sourceQuests"] = { 9258 },	-- The Scorched Grove
 					}),
-					
-					
 					qh( 8486, {	-- Arcane Instability
 						["groups"] = {
 						},
 						["qg"] = 15401,	-- Ley-Keeper Velania
 						["sourceQuests"] = { 9119 },	-- Malfunction at the West Sanctum
 					}),
-					n(15670, {	-- Grimscale Forager
-						i(21776, {	-- Captain Kelisendra's Lost Rutters							
-							qh(8887),	-- Captain Kelisendra's Lost Rutters
+					i( 21776, {	-- Captain Kelisendra's Lost Rutters
+						qh(8887, {	-- Captain Kelisendra's Lost Rutters
+							["groups"] = {
+							},
+							["qg"] = 15670,	-- Grimscale Forager
 						}),
 					}),
-					n(15669, {	-- Grimscale Oracle
-						i(21776, {	-- Captain Kelisendra's Lost Rutters							
-							qh(8887),	-- Captain Kelisendra's Lost Rutters
+					i( 21776, {	-- Captain Kelisendra's Lost Rutters
+						qh(8887, {	-- Captain Kelisendra's Lost Rutters
+							["groups"] = {
+							},
+							["qg"] = 15668,	-- Grimscale Murloc
 						}),
 					}),
-					n(15668, {	-- Grimscale Murloc
-						i(21776, {	-- Captain Kelisendra's Lost Rutters							
-							qh(8887),	-- Captain Kelisendra's Lost Rutters
+					i( 21776, {	-- Captain Kelisendra's Lost Rutters
+						qh(8887, {	-- Captain Kelisendra's Lost Rutters
+							["groups"] = {
+							},
+							["qg"] = 15669,	-- Grimscale Oracle
 						}),
 					}),
-					n(15950, {	-- Grimscale Seer
-						i(21776, {	-- Captain Kelisendra's Lost Rutters							
-							qh(8887),	-- Captain Kelisendra's Lost Rutters
+					i( 21776, {	-- Captain Kelisendra's Lost Rutters
+						qh(8887, {	-- Captain Kelisendra's Lost Rutters
+							["groups"] = {
+							},
+							["qg"] = 15950,	-- Grimscale Seer
 						}),
 					}),
-					n(15937, {	-- Mmmrrrggglll
-						i(21776, {	-- Captain Kelisendra's Lost Rutters							
-							qh(8887),	-- Captain Kelisendra's Lost Rutters
+					i( 21776, {	-- Captain Kelisendra's Lost Rutters
+						qh(8887, {	-- Captain Kelisendra's Lost Rutters
+							["groups"] = {
+							},
+							["qg"] = 15937,	-- Mmmrrrggglll 
 						}),
 					}),
 					qh( 8894, {	-- Cleaning up the Grounds
@@ -301,14 +303,14 @@ _.Zones =
 						},
 						["qg"] = 15920,	-- Hathvelion Sungaze
 					}),
-					qh( 9133, {	-- Fly to Silvermoon City
+					q(  9133, {	-- Fly to Silvermoon City
 						["groups"] = {
 						},
 						["qg"] = 44036,	-- Skymaster Brightdawn
 						["sourceQuests"] = { 9130 },	-- Goods from Silvermoon City
 						["races"] = {10}, -- Blood Elf
 					}),
-					qh( 9130, {	-- Goods from Silvermoon City
+					q(  9130, {	-- Goods from Silvermoon City
 						["groups"] = {
 						},
 						["qg"] = 16261,	-- Sathiel
@@ -319,15 +321,15 @@ _.Zones =
 						},
 						["qg"] = 15921,	-- Captain Kelisendra
 					}),
-					n(15968, {	-- Darnassian Scout
-						["groups"] = {
-							i(20765, {	-- Incriminating Documents
-								qh(8482),	-- Incriminating Documents
-							}),
-						},
-						["sourceQuests"] = { 9352 },	-- Darnassian Intrusions
+					i( 20765, {	-- Incriminating Documents
+						qh(8482, {	-- Incriminating Documents
+							["groups"] = {
+							},
+							["qg"] = 15968,	-- Darnassian Scout
+							["sourceQuests"] = { 9352 },	-- Darnassian Intrusions
+						}),
 					}),
-					qh(32668, {	-- Learn To Ride
+					q( 32668, {	-- Learn To Ride
 						["groups"] = {
 						},
 						["races"] = { 10 }, -- Blood Elf
@@ -355,9 +357,11 @@ _.Zones =
 						},
 						["qg"] = 16210,	-- Magistrix Landra Dawnstrider
 					}),
-					n(15409, {	-- Old Whitebark
-						i(23228, {	-- Old Whitebark's Pendant
-							qh(8474),	-- Old Whitebark's Pendant
+					i( 23228, {	-- Old Whitebark's Pendant
+						qh(8474, {	-- Old Whitebark's Pendant
+							["groups"] = {
+							},
+							["qg"] = 15409,	-- Old Whitebark
 						}),
 					}),
 					qh( 9705, {	-- Package Recovery
@@ -396,7 +400,7 @@ _.Zones =
 						["qg"] = 15402,	-- Apprentice Mirveda
 						["sourceQuests"] = { 8488 },	-- Unexpected Results
 					}),
-					qh( 9135, {	-- Return to Sathiel
+					q(  9135, {	-- Return to Sathiel
 						["groups"] = {
 						},
 						["qg"] = 16192,	-- Skymistress Gloaming
@@ -426,7 +430,7 @@ _.Zones =
 						["qg"] = 15939,	-- Ranger Degolien
 						["breadcrumbQuestID"] = { 9256 },	-- Fairbreeze Village
 					}),
-					qh( 9134, {	-- Skymistress Gloaming
+					q(  9134, {	-- Skymistress Gloaming
 						["groups"] = {
 						},
 						["qg"] = 16191,	-- Sathren Azuredawn
@@ -476,7 +480,7 @@ _.Zones =
 						["breadcrumbQuestID"] = { 9144 },	-- Missing in the Ghostlands
 					}),
 --[[					
-					qh(14171, {	-- The Grateful Dead (HOLIDAY! Day of the Dead)
+					q( 14171, {	-- The Grateful Dead (HOLIDAY! Day of the Dead)
 						["groups"] = {
 						},
 						["qg"] = 34483,	-- Cheerful Blood Elf Spirit
@@ -576,7 +580,7 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares	
 					n(16854, { -- Eldinarcus
-						dr(3, { i(2957), }),	-- Warrior's Tunic
+						dr(3, { i(2965), }),	-- Warrior's Tunic
 						dr(2, { i(2961), }),	-- Burnt Leather Vest
 						dr(1.7, { i(2957), }),	-- Journeyman's Vest
 						dr(1.5, { i(2962), }),	-- Burnt Leather Breeches

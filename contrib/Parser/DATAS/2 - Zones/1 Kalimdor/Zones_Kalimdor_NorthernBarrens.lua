@@ -231,7 +231,7 @@ _.Zones =
 						},
 						["qg"] = 3391,	-- Gazlowe
 					}),
-					q(3861, {	-- CLUCK!
+					q(  3861, {	-- CLUCK!
 						["groups"] = {
 						},
 						["qg"] = 620,	-- Chicken
@@ -281,7 +281,7 @@ _.Zones =
 						["qg"] = 3429,	-- Thork
 						["sourceQuests"] = { 851 },	-- Verog the Dervish
 					}),
---					q(43289)),	-- Defend (LEGACY - pre-Legion invasions)
+--					q( 43289)),	-- Defend (LEGACY - pre-Legion invasions)
 					qh(29112, {	-- Demon Seed
 						["groups"] = {
 							i(69219),	-- Sacrificial Blade
@@ -447,15 +447,15 @@ _.Zones =
 						["qg"] = 3338,	-- Sergra Darkthorn
 						["sourceQuests"] = { 881 },	-- Echeyakee
 					}),
---					q(43282),	-- Invasion: Northern Barrens (LEGACY - pre-Legion invasions)
---					q(42236),	-- Invasion: Northern Barrens (LEGACY - pre-Legion invasions)
+--					q( 43282),	-- Invasion: Northern Barrens (LEGACY - pre-Legion invasions)
+--					q( 42236),	-- Invasion: Northern Barrens (LEGACY - pre-Legion invasions)
 					qh(14066, {	-- Investigate the Wreckage
 						["groups"] = {
 						},
 						["qg"] = 3464,	-- Gazrog
 						["breadcrumbQuestID"] = { 13991 },	-- The Purloined Payroll
 					}),
-					q(865, {	-- It's Gotta be the Horn
+					q(   865, {	-- It's Gotta be the Horn
 						["groups"] = {
 							i(59580),	-- Sharp Poker
 							i(59581),	-- Smart Shoes
@@ -484,7 +484,7 @@ _.Zones =
 						["qg"] = 3391,	-- Gazlowe
 						["sourceQuests"] = { 14034 },	-- Club Foote
 					}),
-					qh( 6365, {	-- Meats to Orgrimmar (UNTESTED - I don't have any Orcs/Trolls)
+					q(  6365, {	-- Meats to Orgrimmar (UNTESTED - I don't have any Orcs/Trolls)
 							["groups"] = {
 							},
 							["qg"] = 3489,	-- Zargh
@@ -584,7 +584,7 @@ _.Zones =
 						["qg"] = 3442,	-- Sputtervalve
 						["sourceQuests"] = { 14004 },	-- Return to Samophlanger
 					}),
---					q(43290),	-- Repel (LEGACY - pre-Legion invasions)
+--					q( 43290),	-- Repel (LEGACY - pre-Legion invasions)
 					qh(29095, {	-- Report to Thork
 						["groups"] = {
 						},
@@ -606,7 +606,7 @@ _.Zones =
 						["qg"] = 9316,	-- Wenikee Boltbucket
 						["sourceQuests"] = { 29027 },	-- Nugget Slugs
 					}),
-					qh( 6384, {	-- Ride to Orgrimmar (UNTESTED - I don't have an Orc, Tauren, or Troll)
+					q(  6384, {	-- Ride to Orgrimmar (UNTESTED - I don't have an Orc, Tauren, or Troll)
 						["groups"] = {
 						},
 						["qg"] = 3615,	-- Devrak
@@ -624,19 +624,19 @@ _.Zones =
 						},
 						["qg"] = 3442,	-- Sputtervalve
 					}),
-					o(4141, {	-- Control Console
+					o(  4141, {	-- Control Console
 						["groups"] = {
 							qh(29022),	-- Samophlange
 						},
 						["sourceQuests"] = { 29021 },	-- Samophlange
 					}),
-					o(4141, {	-- Control Console
+					o(  4141, {	-- Control Console
 						["groups"] = {
 							qh(29023),	-- Samophlange
 						},
 						["sourceQuests"] = { 29022 },	-- Samophlange
 					}),
-					o(4141, {	-- Control Console
+					o(  4141, {	-- Control Console
 						qh(29024, { -- Samophlange
 							["groups"] = {
 								i(59568),	-- Painstakingly Crafted Belt
@@ -810,7 +810,7 @@ _.Zones =
 						["qg"] = 34638,	-- Shoe
 						["sourceQuests"] = { 14072 },	-- 
 					}),
-					o(3972, {	-- WANTED
+					o(  3972, {	-- WANTED
 						q(895, { -- WANTED: Cap'n Garvey
 							i(49560),	-- Proof of Death
 							i(49543),	-- Seaworthy Leggings

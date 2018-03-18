@@ -10,13 +10,26 @@ _.Instances =
 				["groups"] = {
 					n(-17, {	-- Quests 	
 						q(26870, { -- Cleansing the Caverns
-							i(65911), 	-- Anacondra's Robe
-							i(65985), 	-- Cleansed Pauldrons
-							i(65961), 	-- Cobrahn's Boots
-							i(131615), 	-- Cobrahn's Scale Gloves
-							i(131616), 	-- Pytha's Chain Boots
-							i(66003), 	-- Pytha's Vest
-							i(65937), 	-- Serpentis' Gloves
+							["groups"] = {
+								i(65911), 	-- Anacondra's Robe
+								i(65985), 	-- Cleansed Pauldrons
+								i(65961), 	-- Cobrahn's Boots
+								i(131615), 	-- Cobrahn's Scale Gloves
+								i(131616), 	-- Pytha's Chain Boots
+								i(66003), 	-- Pytha's Vest
+								i(65937), 	-- Serpentis' Gloves
+							},
+							["qg"] = 5768,	-- Ebru
+						}),
+						q(26872, {	-- Deviate Hides
+							["groups"] = {
+							},
+							["qg"] = 5767,	-- Nalpak
+						}),
+						q(26873, {	-- Preemptive Methods
+							["groups"] = {
+							},
+							["qg"] = 5767,	-- Nalpak
 						}),
 					}),
 					n(0, { 		-- Zone Drop		

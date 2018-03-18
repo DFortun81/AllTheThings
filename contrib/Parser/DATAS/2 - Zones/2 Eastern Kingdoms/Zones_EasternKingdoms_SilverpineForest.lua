@@ -231,13 +231,13 @@ _.Zones =
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27098 },	-- Lordaeron
 					}),
-					n(45896, {	-- Marsh Crocolisk				
-						["groups"] = {
-							i(61505, {	-- Partially Digested Head
-								qh(27574),	-- I Never Forget a Face
-							}),
-						},
-						["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"							
+					i( 61505, {	-- Partially Digested Head
+						qh(27574, {	-- I Never Forget a Face
+							["groups"] = {
+							},
+							["qg"] = 45896,	-- Marsh Crocolisk
+							["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"							
+						}),
 					}),
 					qh(26998, {	-- Iterating Upon Success
 						["groups"] = {
@@ -424,12 +424,12 @@ _.Zones =
 					}),
 					o(205350, {	-- Horde Communication Panel
 						qh(27232, { 	-- The Waters Run Red...
-						["groups"] = {
-							i(62853),	-- Blood Offering Platter
-							i(62852),	-- Sabots of Red Waters
-							i(131661),	-- Treads of Red Waters
-						},
-						["sourceQuests"] = { 27231 },	-- Reinforcements from Fenris						
+							["groups"] = {
+								i(62853),	-- Blood Offering Platter
+								i(62852),	-- Sabots of Red Waters
+								i(131661),	-- Treads of Red Waters
+							},
+							["sourceQuests"] = { 27231 },	-- Reinforcements from Fenris						
 						}),
 					}),
 					qh(27290, {	-- To Forsaken Forward Command
