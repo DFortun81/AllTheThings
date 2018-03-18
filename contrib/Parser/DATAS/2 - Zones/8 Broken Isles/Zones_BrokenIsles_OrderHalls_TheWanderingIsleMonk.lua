@@ -136,7 +136,6 @@ _.Zones =
 								},
 								["Lvl"] = 110,
 								["classes"] = {10},
-								["mount"] = 229385,
 							}),
 							q(44249, { -- Inner Sanctuary
 								i(139734), -- Grandmaster's Crown

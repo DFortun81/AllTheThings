@@ -396,7 +396,6 @@ _.Zones =
 								},
 								["Lvl"] = 110,
 								["classes"] = {5},
-								["mount"] = 229377,
 							}),
 							q(44251, { -- Power Word: Armor
 								i(139757), -- Head

@@ -408,7 +408,6 @@ _.Zones =
 								},
 								["Lvl"] = 110,
 								["classes"] = {9},
-								["mount"] = 232412,
 							}),
 							q(44254, { -- Gazing Into Oblivion
 								i(139765), -- Visage of the Black Harvest

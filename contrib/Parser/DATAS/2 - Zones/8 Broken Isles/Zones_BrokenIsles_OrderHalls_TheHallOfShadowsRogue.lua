@@ -105,7 +105,6 @@ _.Zones =
 							q(45848, { -- Fit For a Pirate
 								i(143679), -- Crackers Pet
 							}),
-							["mount"] = 229377,
 							q(44252, { -- A Sheath For Every Blade
 								i(139742), -- Mask of the Uncrowned
 							}),
