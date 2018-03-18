@@ -5666,7 +5666,7 @@ local function CreateSettingsMenu()
 		self.qSeven = "|CFFADD8E6Q) Why do I not see any mounts?  \n|r";
 		self.qSevenA = "A) There are some other mount addons that interfere with ALL THE THINGS ability to detect mount collection at startup. Please disable any you have, ReloadUI, and check to see if you now have mounts. ATT will cache the information so you are free to enable any addons you disabled.\n \n"
 		self.qEight = "|CFFADD8E6Q)What do I do if I have a suggestion, complaint, etc?\n|r";
-		self.qEightA = "A) Feel free to post at \nhttps://mods.curse.com/addons/wow/267285-all-the-things \nhttp://www.mmo-champion.com/threads/2227927-ALL-THE-THINGS-New-Transmog-Addon \nor join our discord -- https://discord.gg/VHe8JC2";
+		self.qEightA = "A) Feel free to post at \nhttps://mods.curse.com/addons/wow/267285-all-the-things \nhttp://www.mmo-champion.com/threads/2227927-ALL-THE-THINGS-New-Transmog-Addon \nor join our discord -- https://discord.gg/bV5aECp";
 		
 		self.text = self:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 		self.text:SetPoint("TOPLEFT", self.Separator, "TOPLEFT", 0, -5);
