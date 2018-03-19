@@ -496,3 +496,7 @@ t(153194); 					-- Legion Communication Orb
 t(153204);					-- All-Seer's Eye
 t(153253); 					-- S.F.E. Interceptor
 t(153293); 					-- Sightless Eye
+t(134026);					-- Honorable Pennant
+t(134031);					-- Prestigious Pennant
+t(134032);					-- Elite Pennant
+t(134034);					-- Esteemed Pennant
