@@ -6440,14 +6440,14 @@ function app:GetDataCache()
 		end
 		
 		-- PvP
-		if app.PvP then
+		if app.PVP then
 			db = {};
 			db.expanded = false;
 			db.text = STAT_CATEGORY_PVP;
 			db.icon = "Interface\\Icons\\Achievement_PVP_Legion08";
-			db.groups = app.PvP;
+			db.groups = app.PVP;
 			table.insert(groups, db);
-			app.PvP = nil;
+			app.PVP = nil;
 		end
 		
 		-- Professions

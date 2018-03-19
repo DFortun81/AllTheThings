@@ -1,7 +1,7 @@
 -----------------------------------------------
 --     P L A Y E R   V S   P L A Y E R       --
 -----------------------------------------------
-_.PvP =
+_.PVP =
 {
 	n(-216, { -- Prestige
 		ach(10991, { -- First Step into a Larger World [1]
@@ -14,8 +14,6 @@ _.PvP =
 		h(ach(10745, { -- The Prestige [1.50]
 			-- Artifact Appearance
 		})),
-		ach(10992, { -- Here We Go Again [2]
-		}),
 		ach(10993, { -- Third Time's The Charam [3]
 			i(134026), -- Honorable Pennant
 		}),
@@ -23,7 +21,7 @@ _.PvP =
 			i(140228), -- Prestigious Bronze Courser
 		}),
 		ach(11468, { -- Alive for Five [5]
-			style(0, title(464)), -- The Honorable %s
+			style(0, title(321)), -- The Honorable %s
 		}),
 		ach(11469, { -- The River Six [6]
 			-- Artifact Appearance
@@ -39,7 +37,7 @@ _.PvP =
 			i(140233), -- Prestigious Ivory Courser
 		}),
 		ach(11685, { -- Decade of Dominance [10]
-			style(0, title(465)), -- The Prestigious %s
+			style(2, title(322)), -- %s, the Prestigious
 		}),
 		ach(11686, { -- These Go To Eleven [11]
 			-- Artifact Appearance
@@ -51,7 +49,7 @@ _.PvP =
 			i(140408), -- Prestigious Azure Courser
 		}),
 		ach(11689, { -- Fourteen for the Team [14]
-			style(0, title(466)), -- The Unrelenting %s
+			style(2, title(323)), -- %s, the Unrelenting
 		}),
 		ach(11690, { -- When You're Fifteen [15]
 			-- Artifact Appearance
@@ -62,20 +60,24 @@ _.PvP =
 		ach(11692, { -- Going On Seventeen [17]
 			i(140232), -- Prestigious Forest Courser
 		}),
+		--[[ TEMPORARILY DISABLED UNTIL CORRECT TITLEID CAN BE FOUND
 		ach(11693, { -- Eighteen and Over [18]
 			style(2, title(503)), -- %s the Unstoppable Force
 		}),
+		--]]
 		ach(12109, { -- Twenty-One Arms Salute [21]
 			i(140230), -- Prestigious Royal Courser
 		}),
 		ach(12180, { -- Catching Twenty-Two [22]
-			style(2, title(468)), -- %s, Bound By Honor
+			style(2, title(325)), -- %s, Bound By Honor
 		}),
 		ach(12183, { -- Prestige Quartermaster [25]
 			i(140407), -- Prestigious Midnight Courser
 		}),
+		--[[ Not active yet
 		ach(12216, { -- Prestige 26 [26]
 			style(2, title(518)), -- %s, the Tactian
 		}),
+		--]]
 	}),
 };
