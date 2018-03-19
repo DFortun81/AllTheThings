@@ -273,10 +273,11 @@ _.Zones =
 						["sourceQuests"] = { 9167 },						
 					}),
 					o(181150, {	-- Dusty Journal
-						["groups"] = {
-							qh(9162),	-- Hints of the Past
-						},
-						["sourceQuests"] = { 9161 },	-- The Traitor's Shadow
+						qh(9162, {	-- Hints of the Past
+							["groups"] = {							
+							},
+							["sourceQuests"] = { 9161 },	-- The Traitor's Shadow
+						}),
 					}),
 					qh( 9163, {	-- Into Occupied Territory
 						["groups"] = {
@@ -493,10 +494,11 @@ _.Zones =
 						["sourceQuests"] = { 9157 },	-- Forgotten Rituals
 					}),
 					o(181147, {	-- Wanted Poster
-						["groups"] = {
-							qh(9156),	-- Wanted: Knucklerot and Luzran
-						},
-						["sourceQuests"] = { 9138 }	-- Suncrown Village
+						qh(9156, {	-- Wanted: Knucklerot and Luzran
+							["groups"] = {
+							},
+							["sourceQuests"] = { 9138 }	-- Suncrown Village
+						}),
 					}),
 					qh( 9220, {	-- War on Deatholme
 						["groups"] = {
