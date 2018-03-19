@@ -216,15 +216,15 @@ _.Zones =
 						["sourceQuests"] = {26562},	-- And Last But Not Least... Danforth
 					})),
 					o(204351, {	-- Ettin Control Orb
-						["groups"] = {
-							qa(26520, { -- Saving Foreman Oslow
+						qa(26520, { -- Saving Foreman Oslow
+							["groups"] = {
 								i(60701),	-- Leverage Bracers
 								i(131543),	-- Leverage Wriststraps
 								i(60700),	-- Solomon's Gavel
 								i(60702),	-- Sword of the Falling Sky
-							}),
-						},
-						["sourceQuests"] = {26519},	-- He Who Controls the Ettins							
+							},
+							["sourceQuests"] = {26519},	-- He Who Controls the Ettins							
+						}),
 					}),
 					qg(43607, qa(26692, {	-- Shadowhide Extinction
 						["groups"] = {

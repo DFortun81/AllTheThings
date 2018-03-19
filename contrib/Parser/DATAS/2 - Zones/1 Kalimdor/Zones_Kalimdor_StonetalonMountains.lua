@@ -219,7 +219,7 @@ _.Zones =
 						["sourceQuests"] = { 26044 },	-- Where Are the Parts?
 					}),
 					o(203186, {	-- STAY OUT!
-						qa(25730,  {  -- BEWARE OF CRAGJAW!
+						qa(25730, {  -- BEWARE OF CRAGJAW!
 							["groups"] = {
 								i(57429),	-- Fisherman's Belt
 								i(57430),	-- Irongoat Legguards
@@ -228,7 +228,7 @@ _.Zones =
 							},
 							["sourceQuests"] = { 25621 },	-- Field Test: Gnomecorder (may be available earlier, but definitely has a prereq)
 						}),
-						qh(26043,  {  -- BEWARE OF CRAGJAW!
+						qh(26043, {  -- BEWARE OF CRAGJAW!
 							["groups"] = {
 								i(57482),	-- Anara's Belt
 								i(57481),	-- Fisherman's Gloves

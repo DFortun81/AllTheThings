@@ -625,16 +625,18 @@ _.Zones =
 						["qg"] = 3442,	-- Sputtervalve
 					}),
 					o(  4141, {	-- Control Console
-						["groups"] = {
-							qh(29022),	-- Samophlange
-						},
-						["sourceQuests"] = { 29021 },	-- Samophlange
+						qh(29022, {	-- Samophlange
+							["groups"] = {
+							},
+							["sourceQuests"] = { 29021 },	-- Samophlange
+						}),
 					}),
 					o(  4141, {	-- Control Console
-						["groups"] = {
-							qh(29023),	-- Samophlange
-						},
-						["sourceQuests"] = { 29022 },	-- Samophlange
+						qh(29023, {	-- Samophlange
+							["groups"] = {
+							},
+							["sourceQuests"] = { 29022 },	-- Samophlange
+						}),
 					}),
 					o(  4141, {	-- Control Console
 						qh(29024, { -- Samophlange

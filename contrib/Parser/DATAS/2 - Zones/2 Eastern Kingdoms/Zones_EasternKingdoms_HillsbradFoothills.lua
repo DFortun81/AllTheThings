@@ -243,12 +243,12 @@ _.Zones =
 						["sourceQuests"] = { 28604 },	-- Deception and Trickery
 					}),
 					o(206944, {	-- Shovel
-						["groups"] = {
-							qh(28189, { -- Do the Right Thing
+						qh(28189, { -- Do the Right Thing
+							["groups"] = {
 								i(65667),	-- Shovel of Mercy
-							}),
-						},
-						["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
+							},
+							["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
+						}),
 					}),
 					qpvp(qa(7170, {	-- Earned Reverence
 						["groups"] = {
