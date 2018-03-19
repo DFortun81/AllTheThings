@@ -1286,9 +1286,7 @@ local function SearchForItemLink(link)
 											otherATTSource = otherATTSource[1];
 											
 											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-											if group[1].f == otherATTSource.f
-												and (not otherATTSource.classes or contains(otherATTSource.classes, app.ClassIndex))
-												and (not otherATTSource.races or contains(otherATTSource.races, app.RaceIndex)) then
+											if group[1].f == otherATTSource.f and not otherATTSource.nmc and not otherATTSource.nmr then
 												local link = otherATTSource.link;
 												if not link then 
 													link = RETRIEVING_DATA;
@@ -1356,7 +1354,7 @@ local function SearchForItemLink(link)
 												-- This is NOT the same type. Therefore, no credit for you!
 												if #failText > 0 then failText = failText .. ", "; end
 												failText = failText .. (L("FILTER_ID_TYPES")[otherATTSource.f] or "???");
-											elseif otherATTSource.classes and not contains(otherATTSource.classes, app.ClassIndex) then
+											elseif otherATTSource.nmc then
 												-- This is NOT for your class. Therefore, no credit for you!
 												if #failText > 0 then failText = failText .. ", "; end
 												-- failText = failText .. "Class Locked";
@@ -1364,7 +1362,7 @@ local function SearchForItemLink(link)
 													if i > 1 then failText = failText .. ", "; end
 													failText = failText .. (GetClassInfo(classID) or "???");
 												end
-											elseif otherATTSource.races and not contains(otherATTSource.races, app.RaceIndex) then
+											elseif otherATTSource.nmr then
 												-- This is NOT for your race. Therefore, no credit for you!
 												if #failText > 1 then failText = failText .. ", "; end
 												failText = failText .. "Race Locked";
@@ -3540,11 +3538,7 @@ function app.FilterItemClass(item)
 			and app.RequiredSkillFilter(item.requiredSkill));
 end
 function app.FilterItemClass_RequireClasses(item)
-	if item.classes then
-		return not item.nmc;--contains(item.classes, app.ClassIndex);
-	else
-		return true;
-	end
+	return not item.nmc;
 end
 function app.FilterItemClass_RequireItemFilter(f)
 	if f and not GetPersonalDataSubMember("ItemFilters", f, true) then return false; end
@@ -3566,11 +3560,7 @@ function app.FilterItemClass_RequirePersonalLootCurrentSpec(item)
     return true;
 end
 function app.FilterItemClass_RequireRaces(item)
-	if item.races then
-		return not item.nmr;--contains(item.races, app.RaceIndex);
-	else
-		return true;
-	end
+	return not item.nmr;
 end
 function app.FilterItemClass_UnobtainableItem(u)
 	if u and L("UNOBTAINABLE_ITEM_REASONS")[u][1] < 5 then
@@ -3741,127 +3731,20 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 		return false;
 	end
 end
-function app.FilterItemSourceUniqueOnlyMain(sourceInfo)
+function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	if sourceInfo.isCollected then
 		-- NOTE: This makes it so that the loop isn't necessary.
 		return true;
 	else
 		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
 		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
-		if item then
-			-- If the first item is class locked...
-			if item.classes then
-				if item.races then
-					-- If the first item is ALSO race locked...
-					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID then
-							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and item.f == otherItem.f then
-									if otherItem.classes then
-										-- If this item is class locked...
-										if containsAny(otherItem.classes, item.classes) then
-											if otherItem.races then
-												-- If this item is ALSO race locked.
-												if containsAny(otherItem.races, item.races) then
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											else
-												-- This item is not race locked.
-												-- Since the source item is race locked, but this item matches the class requirements and is not race locked, you unlock the source ID. Congrats, mate!
-												return true;
-											end
-										end
-									else
-										-- This item is not class locked.
-										-- Since this item is also not class or race locked, you unlock the source ID. Congrats, mate!
-										return true;
-									end
-								end
-							end
-						end
-					end
-				else
-					-- Not additionally race locked.
-					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID then
-							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and item.f == otherItem.f then
-									if otherItem.classes then
-										-- If this item is class locked...
-										if containsAny(otherItem.classes, item.classes) then
-											if otherItem.races then
-												-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
-											else
-												-- This item is not race locked.
-												-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
-												return true;
-											end
-										end
-									else
-										-- This item is not class locked.
-										if otherItem.races then
-											-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
-										else
-											-- This item is not race locked.
-											-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
-											return true;
-										end
-									end
-								end
-							end
-						end
-					end
-				end
-			else
-				if item.races then
-					-- If the first item is race locked...
-					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID then
-							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and item.f == otherItem.f then
-									if otherItem.classes then
-										-- If this item is class locked...
-										-- Since the item is class locked, you don't unlock this source ID despite matching the class. Sorry mate.
-									else
-										-- This item is not class locked.
-										if otherItem.races then
-											-- If this item is race locked.
-											if containsAny(otherItem.races, item.races) then
-												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-												return true;
-											end
-										else
-											-- This item is not race locked.
-											-- Since the source item is locked to the a race, but this item is not, you unlock the source ID. Congrats, mate!
-											return true;
-										end
-									end
-								end
-							end
-						end
-					end
-				else
-					-- Not race nor class locked.
-					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID then
-							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and item.f == otherItem.f then
-									-- Check for class and race locks...
-									if app.FilterItemClass_RequireClasses(otherItem) and app.FilterItemClass_RequireRaces(otherItem) then
-										return true; -- Okay, fine. You are this class. Enjoy your +1, cheater. D:
-									end
-								end
-							end
-						end
+		if item and not item.nmc and not item.nmr then
+			-- This item is for my race and class.
+			for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+				if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+					local otherItem = SearchForSourceIDQuickly(sourceID);
+					if otherItem and item.f == otherItem.f and not otherItem.nmc and not otherItem.nmr then
+						return true; -- Okay, fine. You are this class/race. Enjoy your +1, cheater. D:
 					end
 				end
 			end
