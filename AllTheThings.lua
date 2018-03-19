@@ -6439,6 +6439,17 @@ function app:GetDataCache()
 			app.WorldEvents = nil;
 		end
 		
+		-- PvP
+		if app.PvP then
+			db = {};
+			db.expanded = false;
+			db.text = STAT_CATEGORY_PVP;
+			db.icon = "Interface\\Icons\\Achievement_PVP_Legion08";
+			db.groups = app.PvP;
+			table.insert(groups, db);
+			app.PvP = nil;
+		end
+		
 		-- Professions
 		if app.Professions then
 			db = app.CreateAchievement(10583, {});
