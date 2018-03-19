@@ -2493,8 +2493,6 @@ _.Zones =
 						i(44606), -- Toy Train Set Toy
 						i(45057), -- Wind-Up Train Wreck Toy
 					}),
-					a(n(119485, { -- Lieutenant Dorgen <Legion Combatant>
-					})),
 					a(n(106930, { -- Lieutenant Surtees <Legion Gladiator>
 						gssh(1071, { -- Combatant
 							["groups"] = {
