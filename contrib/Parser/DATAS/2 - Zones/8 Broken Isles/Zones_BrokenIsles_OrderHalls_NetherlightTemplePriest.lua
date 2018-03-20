@@ -262,12 +262,68 @@ _.Zones =
 							["modelScale"] = 1.5,
 						}),
 						n(-17, { -- Quests
+							n(-100001, { -- Artifact
+								qh(40705, { -- Priestly Matters	
+									["groups"] = {
+									},
+									["qg"] = 101344, -- Hooded Priestess
+								}),	
+								qh(40706, { -- A Legend You Can Hold	
+									["groups"] = {
+									},
+									["qg"] = 101314, -- Alonsus Faol
+									["sourceQuests"] = { 40705 }, -- Priestly Matters
+								}),	
+								qh(43935, { -- A Second Legend	
+									["groups"] = {
+									},
+									["qg"] = 110564, -- Alonsus Faol
+									["sourceQuests"] = { 40706 }, -- A Legend You Can Hold
+								}),	
+								qh(44407, { -- The Third Legend	
+									["groups"] = {
+									},
+									["qg"] = 110564, -- Alonsus Faol
+									["sourceQuests"] = { 43935 }, -- A Second Legend
+								}),	
+								i(128825, { -- T'uure, Beacon of the Naaru
+									qh(41957, { -- The Vindicator's Plea	
+										["groups"] = {
+										},
+										["qg"] = 101314, -- Alonsus Faol
+										["sourceQuests"] = { 40706 }, -- A Legend You Can Hold
+									}),	
+									qh(41966, { -- House Call	
+										["groups"] = {
+										},
+										["qg"] = 105602, -- Vindicator Boros
+										["sourceQuests"] = { 41957 }, -- The Vindicator's Plea
+									}),	
+									qh(41967, { -- Out of the Darkness	
+										["groups"] = {
+										},
+										["qg"] = 105603, -- Defender Barrem
+										["sourceQuests"] = { 41966 }, -- House Call
+									}),	
+									qh(41993, { -- Salvation From On High	
+										["groups"] = {
+										},
+										["qg"] = 105684, -- Alora
+										["sourceQuests"] = { 41967 }, -- Out of the Darkness
+									}),	
+									qh(42074, { -- Return of the Light	
+										["groups"] = {
+										},
+										["qg"] = 106011, -- Jace  Darkweaver
+										["sourceQuests"] = { 41993 }, -- Salvation From On High
+									}),
+								}),
+							}),
 							q(44057),	-- A "Noble" Event
 							q(45343),	-- A Curious Contagion
 							q(41632),	-- A Gift of Time
 							q(43420),	-- A Hero's Weapon
 							q(43401),	-- A Light in the Darkness
-							q(43935),	-- A Second Legend
 							q(41019),	-- Actions on Azeroth
 							q(43797),	-- Aiding the Conclave
 							q(43395),	-- Allies of the Light
@@ -338,7 +394,6 @@ _.Zones =
 							q(43851),	-- Recruiting More Troops
 							q(43275),	-- Recruiting the Troops
 							q(43371),	-- Relieving the Front Lines
-							q(42074),	-- Return of the Light
 							q(44917),	-- Return to Karazhan: The Tower of Power
 							q(43270),	-- Rise, Champions
 							q(43393),	-- Rising Shadows
@@ -374,8 +429,6 @@ _.Zones =
 							q(43891),	-- The Nighthold: Vaults
 							q(45788),	-- The Speaker Awaits
 							q(45789),	-- The Sunken Vault
-							q(44407),	-- The Third Legend
-							q(41957),	-- The Vindicator's Plea
 							q(45172),	-- To Battle!
 							q(45349),	-- To the Broken Shore
 							q(43535),	-- Translation: Danger!
