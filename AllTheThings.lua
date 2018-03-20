@@ -1980,7 +1980,6 @@ local function RefreshMountCollection()
 		
 		-- Compare progress
 		local progress = app:GetDataCache().progress or 0;
-		print(progress, previousProgress);
 		if progress < previousProgress then
 			PlayRemoveSound();
 		elseif progress > previousProgress then
