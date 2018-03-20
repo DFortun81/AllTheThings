@@ -454,6 +454,10 @@ end
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
 a = function(t) t.races = ALLIANCE_ONLY; return t; end			-- Flag as Alliance Only
 bc = function(t) t.isBreadcrumb = true; end						-- Flag as a Breadcrumb
+classes = function(classes, t)									-- Make an object only available for a set number of classes.
+	t.classes = classes;
+	return t;
+end 
 desc = function(t, description)									-- Add a description to an object.
 	t.description = description;
 	return t;
@@ -480,6 +484,7 @@ lvl = function(lvl, t) t.lvl = id; return t; end				-- Add a Level Requirement t
 qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object 
 qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
 qg = function(id, t) t.qg = id; return t; end					-- Add a Quest Giver to an object.
+races = function(races, t) t.races = races; return t; end		-- Make an object only available for a set number of races.
 style = function(s, t) t.style = s; return t; end				-- Stylize an object.
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
