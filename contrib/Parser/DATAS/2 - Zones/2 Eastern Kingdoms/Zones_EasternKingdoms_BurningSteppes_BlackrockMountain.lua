@@ -183,7 +183,28 @@ _.Zones =
 						["sourceQuests"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
 					}),
 				
-				
+					
+					q( 28428, {	-- A Perfect Costume
+						["groups"] = {
+						},
+						["qg"] = 48001,	-- Thelaron Direneedle
+						["races"] = { 2, 5 },	-- Orc, Undead
+						["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
+					}),
+					q( 28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
+						["groups"] = {
+						},
+						["qg"] = 48001,	-- Thelaron Direneedle
+						["races"] = { 6, 26, 28 },	-- Tauren, Pandaren, Highmountain Tauren (UNCONFIRMED)
+						["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
+					}),
+					q( 28430, {	-- A Perfect Costume
+						["groups"] = {
+						},
+						["qg"] = 48001,	-- Thelaron Direneedle
+						["races"] = { 9 },	-- Goblin
+						["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
+					}),
 					q( 28431, {	-- A Perfect Costume
 						["groups"] = {
 						},
@@ -191,6 +212,22 @@ _.Zones =
 						["races"] = { 8, 10, 27 },	-- Troll, Blood Elf, Nightborne
 						["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 					}),
+				
+				
+					qh(28454, {	-- Assault on Dreadmaul Rock
+						["groups"] = {
+						},
+						["qg"] = 48565,	-- Ariok
+						["sourceQuests"] = { 28453 },	-- Locked and Loaded
+					}),
+				
+				
+					qdg(q(7848, {	-- Attunement to the Core
+						["groups"] = {
+						},
+						["qg"] = 14387,	-- Lothos Riftwalker
+						["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
+					})),
 				
 				
 					qh(28443, {	-- Blackened Ashes
@@ -281,6 +318,14 @@ _.Zones =
 					}),
 				
 				
+					qh(28455, {	-- Glory Amidst Chaos
+						["groups"] = {
+						},
+						["qg"] = 48569,	-- Eitrigg
+						["sourceQuests"] = { 28454 },	-- Assault on Dreadmaul Rock
+					}),
+				
+				
 					q( 28227, {	-- Golem Training
 						["groups"] = {
 							i(64524),	-- Chiselgrip Shield
@@ -309,11 +354,11 @@ _.Zones =
 					}),
 				
 				
-					qh(28432, {	-- Into the Black Tooth Hovel *****
+					qh(28432, {	-- Into the Black Tooth Hovel
 						["groups"] = {
 						},
 						["qg"] = 48568,	-- Eitrigg
-						["sourceQuests"] = { 28431 },	-- A Perfect Costume *****
+						["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (Horde versions)
 					}),
 				
 				
@@ -322,6 +367,17 @@ _.Zones =
 						},
 						["qg"] = 48569,	-- Eitrigg
 						["sourceQuests"] = { 28442 },	-- Flame Crest
+					}),
+				
+				
+					qh(28453, {	-- Locked and Loaded
+						["groups"] = {
+							i(64568),	-- Bracers of Misbehavior
+							i(64567),	-- Mischievous Spaulders
+							i(64566),	-- Sly Slider Gloves
+							i(64565),	-- Faux Warlock Slippers
+						},
+						["sourceQuests"] = { 28451, 28450, 28452 },	-- A Delivery for Neeralak, A Delivery for Thorg'izog, & A Delivery for Xi'lun
 					}),
 				
 				
@@ -441,6 +497,19 @@ _.Zones =
 					}),
 				
 				
+					qh(28456, {	-- The Spoils of War (awarded "Annihilation" and "Infiltration" criteria and overall Burning Steppes zone achievement)
+						["groups"] = {
+							i(64580),	-- Golem-Smasher's Grips
+							i(64579),	-- Razor-Sharp Scorpid Belt
+							i(64578),	-- Ember Worg Boots
+							i(64575),	-- Obsidian-Flecked Cape
+							i(64576),	-- Cracked Orb of Dominion
+						},
+						["qg"] = 48569,	-- Eitrigg
+						["sourceQuests"] = { 28455 },	-- Glory Amidst Chaos
+					}),
+				
+				
 					qh(28438, {	-- Trial by Magma
 						["groups"] = {
 							i(64531),	-- Bracers of Gladiatorial Combat
@@ -495,53 +564,36 @@ _.Zones =
 					qg(47811, qa(28178)),	-- A Future Project
 					qg(48307, qa(28313)),	-- A Heap of Delicious Worg
 					qg(48109, qa(28254)),	-- A Needle in a Hellhole
-					qg(48001, q( 28205, {	-- A Perfect Costume
+					qg(48001, q( 28205, {	-- A Perfect Costume (NEEDS CONFIRMATION FOR VOID ELF)
 						["groups"] = {
 						},
-						["races"] = {4},
-					})),
-					qg(48001, q( 28428, {	-- A Perfect Costume
-						["groups"] = {
-						},
-						["races"] = {2,5},
+						["races"] = { 4, 29 },	-- Night Elf, Void Elf (NEEDS CONFIRMATION)
 					})),
 					qg(48001, q( 28202, {	-- A Perfect Costume
 						["groups"] = {
 						},
-						["races"] = {3},
+						["races"] = { 3 },	-- Dwarf
 					})),
-					qg(48001, q( 28203, {	-- A Perfect Costume
+					qg(48001, q( 28203, {	-- A Perfect Costume (NEEDS CONFIRMATION FOR LIGHTFORGED DRAENEI)
 						["groups"] = {
 						},
-						["races"] = {11,22},
+						["races"] = { 11, 22 },	-- Draenei, Worgen, Lightforged Draenei (NEEDS CONFIRMATION)
 					})),
 					qg(48001, q(28204, {	-- A Perfect Costume
 						["groups"] = {
 						},
-						["races"] = {7,9},
-					})),
-					qg(48001, q(28430, {	-- A Perfect Costume
-						["groups"] = {
-						},
-						["races"] = {9},
-					})),
-					qg(48001, q(28429, {	-- A Perfect Costume
-						["groups"] = {
-						},
-						["races"] = {6,26},
+						["races"] = { 7 },	-- Gnome
 					})),
 					qg(48110, qa(28279)),	-- Abuse of Power
-					o(207304, {	-- Adventure Board
+--[[				o(207304, {	-- Adventure Board (according to a wowhead comment, these are only available between 47 and 56, can't confirm)
 						qdg(qa(28068)),	-- Adventurers Wanted: Blackrock Depths
 					}),
 					o(207303, {	-- Adventure Board
 						qdg(qh(28069)),	-- Adventurers Wanted: Blackrock Depths
-					}),
-					qg(48565, qh(28454)),	-- Assault on Dreadmaul Rock
+					}), --]]
 					qg(48306, qa(28320)),	-- Assault on Dreadmaul Rock
-					qg(14387, q(7848)),	-- Attunement to the Core
 					qg(48307, qa(28311)),	-- Blackened Ashes
-					qg(9562, qa(27471)),	-- Blackrock Anomaly
+					qg( 9562, qa(27471)),	-- Blackrock Anomaly
 					qg(48306, qa(28314)),	-- Blood Tour (secondary QG ID 48346)
 					qg(47811, qa(28174)),	-- Burning Vengeance (for players who did not complete Redridge Keeshan questline)
 					qg(47811, qa(28416)),	-- Burning Vengeance (for players who completed Redridge Keeshan questline)
@@ -565,7 +617,6 @@ _.Zones =
 					qdg(qg(9563, qa(27469))),	-- Friends on The Other Side
 					qg(48109, qa(28265)),	-- General Thorg'izog
 					qg(48307, qa(28321)),	-- Glory Amidst Chaos
-					qg(48569, qh(28455)),	-- Glory Amidst Chaos
 					qg(48085, qa(28245)),	-- Grunt Work
 					qg(48133, qa(28278)),	-- I Am the Law and I Am the Lash
 					qg(48109, qa(28239)),	-- Into the Black Tooth Hovel
@@ -579,18 +630,7 @@ _.Zones =
 						},
 						["description"] = "This quest is automatically offered after finishing the three 'A Delivery for...' quests.",
 					}),
-					qh(28453, {	-- Locked and Loaded
-						["groups"] = {
-							i(64568),
-							i(64567),
-							i(64566),
-							i(64565),
-						},
-						["description"] = "This quest is automatically offered after finishing the three 'A Delivery for...' quests.",
-					}),
 					qg(48110, qa(28310)),	-- Morgan's Vigil
-					qg(14625, qa(28514)),	-- Mouton Flamestar
-					qg(14625, qh(28515)),	-- Mouton Flamestar
 					qg(47811, qa(28179, {	-- Mud Hunter
 						i(64505),
 					})),
@@ -623,7 +663,6 @@ _.Zones =
 						i(64515),
 					})),
 					qg( 9177, qa(28569)),	-- The Bogpaddle Bullet
-					qg(48085, qh(28435)),	-- The Kodocaller's Horn
 					qg(48085, qa(28252)),	-- The Kodocaller's Horn
 					qg(47811, qa(28180)),	-- The Sand, the Cider, and the Orb
 					qg(48307, qa(28322, {	-- The Spoils of War
@@ -632,13 +671,6 @@ _.Zones =
 						i(64572),
 						i(64569),
 						i(64570),
-					})),
-					qg(48569, qh(28456, {	-- The Spoils of War
-						i(64580),
-						i(64579),
-						i(64578),
-						i(64575),
-						i(64576),
 					})),
 					qg(48133, qa(28266, {	-- Trial by Magma
 						i(64527),
