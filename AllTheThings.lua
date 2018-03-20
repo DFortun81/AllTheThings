@@ -1888,22 +1888,19 @@ local function RefreshCollections()
 		app.print("Refreshing " .. app.DisplayName .. " collection status...");
 		
 		-- Harvest Illusion Collections
-		local collectedIllusions = {};
-		SetDataMember("CollectedIllusions", collectedIllusions);
+		local collectedIllusions = GetDataMember("CollectedIllusions", {});
 		for i,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
 			if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
 		end
 		
 		-- Harvest Title Collections
-		local collectedTitles = {};
-		SetDataMember("CollectedTitles", collectedTitles);
+		local collectedTitles = GetDataMember("CollectedTitles", {});
 		for i=1,GetNumTitles(),1 do
 			if IsTitleKnown(i) then collectedTitles[i] = 1; end
 		end
 		
 		-- Refresh Mounts / Pets
-		local collectedMounts = {};
-		SetDataMember("CollectedMounts", collectedMounts);
+		local collectedMounts = GetDataMember("CollectedMounts", {});
 		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then collectedMounts[spellID] = 1; end
@@ -1916,8 +1913,7 @@ local function RefreshCollections()
 		app:GetDataCache();
 		
 		-- Refresh Toys from Cache
-		local collectedToys = {};
-		SetDataMember("CollectedToys", collectedToys);
+		local collectedToys = GetDataMember("CollectedToys", {});
 		for id,group in pairs(fieldCache["toyID"]) do
 			if not collectedToys[id] and PlayerHasToy(id) then
 				collectedToys[id] = 1;
