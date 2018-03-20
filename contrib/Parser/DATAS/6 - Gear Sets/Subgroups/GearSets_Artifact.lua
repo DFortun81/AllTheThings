@@ -3588,10 +3588,10 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(430), -- Standard Night Elf
-								artifact(428), -- Standard Worgen
-								artifact(427), -- Standard Tauren
-								artifact(426), -- Standard Troll
+								races({8}, artifact(426)), -- Standard Troll
+								races({6}, artifact(427)), -- Standard Tauren
+								races({22}, artifact(428)), -- Standard Worgen
+								races({4}, artifact(430)), -- Standard Night Elf
 								artifact(287), -- Recover one of the Pillars
 								artifact(429), -- Recover Light's Heart
 								artifact(431), -- Complete first major Order Hall campaign
@@ -3671,10 +3671,10 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(430), -- Standard Night Elf
-								artifact(428), -- Standard Worgen
-								artifact(427), -- Standard Tauren
-								artifact(426), -- Standard Troll
+								races({8}, artifact(426)), -- Standard Troll
+								races({6}, artifact(427)), -- Standard Tauren
+								races({22}, artifact(428)), -- Standard Worgen
+								races({4}, artifact(430)), -- Standard Night Elf
 								artifact(287), -- Recover one of the Pillars
 								artifact(429), -- Recover Light's Heart
 								artifact(431), -- Complete first major Order Hall campaign
@@ -3754,10 +3754,10 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(121), -- Standard Night Elf
-								artifact(264), -- Standard Worgen
-								artifact(265), -- Standard Tauren
-								artifact(266), -- Standard Troll
+								races({8}, artifact(266)), -- Standard Troll
+								races({6}, artifact(265)), -- Standard Tauren
+								races({22}, artifact(264)), -- Standard Worgen
+								races({4}, artifact(121)), -- Standard Night Elf
 								artifact(267), -- Recover one of the Pillars
 								artifact(268), -- Recover Light's Heart
 								artifact(269), -- Complete first major Order Hall campaign
@@ -3837,10 +3837,10 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(121), -- Standard Night Elf
-								artifact(264), -- Standard Worgen
-								artifact(265), -- Standard Tauren
-								artifact(266), -- Standard Troll
+								races({8}, artifact(266)), -- Standard Troll
+								races({6}, artifact(265)), -- Standard Tauren
+								races({22}, artifact(264)), -- Standard Worgen
+								races({4}, artifact(121)), -- Standard Night Elf
 								artifact(267), -- Recover one of the Pillars
 								artifact(268), -- Recover Light's Heart
 								artifact(269), -- Complete first major Order Hall campaign
