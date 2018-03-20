@@ -1953,6 +1953,43 @@ local function RefreshCollections()
 		app.print("Done refreshing collections.");
 	end);
 end
+local function RefreshMountCollection()
+	StartCoroutine("RefreshMountCollection", function()
+		while InCombatLockdown() do coroutine.yield(); end
+		
+		-- Cache current counts
+		local previousProgress = app:GetDataCache().progress or 0;
+		
+		-- Refresh Mounts / Pets
+		local collectedMounts = {};
+		SetDataMember("CollectedMounts", collectedMounts);
+		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+			if spellID and isCollected then collectedMounts[spellID] = 1; end
+		end
+		
+		-- Wait a frame before harvesting item collection status.
+		coroutine.yield();
+		
+		-- Refresh the Collection Windows!
+		app:RefreshData(false, true);
+		
+		-- Wait 2 frames before refreshing states.
+		coroutine.yield();
+		coroutine.yield();
+		
+		-- Compare progress
+		local progress = app:GetDataCache().progress or 0;
+		print(progress, previousProgress);
+		if progress < previousProgress then
+			PlayRemoveSound();
+		elseif progress > previousProgress then
+			PlayFanfare();
+		end
+		wipe(searchCache);
+		collectgarbage();
+	end);
+end
 local function SetCompletionistMode(completionistMode, fromSettings)
 	if not fromSettings then
 		local setting = _G[app:GetName() .. "-CompletionistMode"];
@@ -6878,6 +6915,8 @@ app:RegisterEvent("TOYS_UPDATED");
 app:RegisterEvent("SCENARIO_UPDATE");
 app:RegisterEvent("COMPANION_LEARNED");
 app:RegisterEvent("COMPANION_UNLEARNED");
+app:RegisterEvent("NEW_PET_ADDED");
+app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 app:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
@@ -7194,12 +7233,20 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	RefreshSaves();
 end
 app.events.COMPANION_LEARNED = function(...)
-	app:RefreshData(false, true);
-	PlayFanfare();
-	wipe(searchCache);
+	--print("COMPANION_LEARNED", ...);
+	RefreshMountCollection();
+end
+app.events.NEW_PET_ADDED = function(...)
+	--print("NEW_PET_ADDED", ...);
+	RefreshMountCollection();
+end
+app.events.PET_JOURNAL_PET_DELETED = function(...)
+	--print("PET_JOURNAL_PET_DELETED", ...);
+	RefreshMountCollection();
 end
 app.events.COMPANION_UNLEARNED = function(...)
-	app:RefreshData(false, true);
+	--print("COMPANION_UNLEARNED", ...);
+	RefreshMountCollection();
 end
 app.events.QUEST_LOG_UPDATE = function()
 	GetQuestsCompleted(CompletedQuests);
