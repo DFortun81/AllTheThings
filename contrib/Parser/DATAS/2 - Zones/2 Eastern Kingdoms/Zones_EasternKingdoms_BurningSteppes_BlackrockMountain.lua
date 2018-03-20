@@ -7,7 +7,7 @@ _.Zones =
 		m(29, {		-- Burning Steppes
 			["groups"] = {							
 				n(-3, { 	-- Holidays										
-					n(-47, {     -- Lunar Festival
+					n(-47, {    	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								q(8683, {	-- Dawnstrider the Elder			
@@ -34,36 +34,36 @@ _.Zones =
 								}),
 							}),
 						},
-						["achievementID"] = 913, -- To Honor One's Elders
+						["achievementID"] = 913,	-- To Honor One's Elders
 						["u"] = 17,
 					}),
 --[[					
-					n(-50, {     -- Love is in the Air
+					n(-50, {    	-- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1693,    -- Fool For Love
+						["achievementID"] = 1693,   	-- Fool For Love
 						["u"] = 18,
 					}),
-					n(-51, {     -- Noblegarden
+					n(-51, {    	-- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 2798, -- Noble Gardener
+						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-52, {     -- Children's Week
+					n(-52, {    	-- Children's Week
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1793, -- For The Children
+						["achievementID"] = 1793,	-- For The Children
 						["u"] = 20,
 					}),	
 --]]					
-					n(-53, {     -- Midsummer Fire Festival
+					n(-53, {    	-- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qh(11739),	-- Desecrate this Fire!
@@ -73,40 +73,40 @@ _.Zones =
 								qg(25962, qa(11882)),	-- Playing with Fire
 							}),
 						},
-						["achievementID"] = 1038, -- The Flame Warden
+						["achievementID"] = 1038,	-- The Flame Warden
 						["u"] = 21,
 					}),	
 --[[					
-					n(-56, {     -- Brewfest
+					n(-56, {    	-- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1683, -- Brewmaster
+						["achievementID"] = 1683,	-- Brewmaster
 						["u"] = 24,
 					}),
-					n(-58, {     -- Hallow's End
+					n(-58, {    	-- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["achievementID"] = 1656,	-- Hallowed Be Thy Name
 						["u"] = 26,
 					}),	
-					n(-60, {     -- Pilgrim's Bounty
+					n(-60, {    	-- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 3478, -- Pilgrim
+						["achievementID"] = 3478,	-- Pilgrim
 						["u"] = 28,
 					}),
-					n(-61, {     -- Feast of Winter Veil
+					n(-61, {    	-- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1691, -- Merrymaker
+						["achievementID"] = 1691,	-- Merrymaker
 						["u"] = 29,
 					}),						
 --]]				
@@ -121,14 +121,58 @@ _.Zones =
 					qg(66520, q(31914)),	-- Durin Darkhammer
 				}),
 				n(-17, { 	-- Quests
+					qh(28440, {	-- Abuse of Power
+						["groups"] = {
+						},
+						["sourceQuests"] = { 28439 },	-- I Am the Law and I Am the Lash
+					}),
 					
-				
-				
+					
+					qh(28448, {	-- A Deal With a Dragon (secondary QG ID 48567)
+						["groups"] = {
+						},
+						["qg"] = 48567,	-- Ariok (secondary ID can be 48565, same NPC, if you pick up Blood Tour last)
+						["sourceQuests"] = { 28445, 28443, 28444 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
+					}),
+					
+					
+					qh(28451, {	-- A Delivery for Neeralak
+						["groups"] = {
+						},
+						["qg"] = 48569,	-- Eitrigg
+						["sourceQuests"] = { 28449 },	-- Placing the Pawns
+					}),
+					
+					
+					qh(28450, {	-- A Delivery for Thorg'izog
+						["groups"] = {
+						},
+						["qg"] = 48569,	-- Eitrigg
+						["sourceQuests"] = { 28449 },	-- Placing the Pawns
+					}),
+					
+					
+					qh(28452, {	-- A Delivery for Xi'lun
+						["groups"] = {
+						},
+						["qg"] = 48569,	-- Eitrigg
+						["sourceQuests"] = { 28449 },	-- Placing the Pawns
+					}),
+					
+					
 					qh(28420, {	-- A Future Project
 						["groups"] = {
 						},
 						["qg"] = 48559,	-- Ariok
 						["sourceQuests"] = { 28418 },	-- Burning Vengeance
+					}),
+				
+				
+					qh(28445, {	-- A Heap of Delicious Worg
+						["groups"] = {
+						},
+						["qg"] = 48569,	-- Eitrigg
+						["sourceQuests"] = { 28442 },	-- Flame Crest
 					}),
 				
 				
@@ -140,7 +184,7 @@ _.Zones =
 					}),
 				
 				
-					qh(28431, {	-- A Perfect Costume
+					q( 28431, {	-- A Perfect Costume
 						["groups"] = {
 						},
 						["qg"] = 48001,	-- Thelaron Direneedle
@@ -149,6 +193,22 @@ _.Zones =
 					}),
 				
 				
+					qh(28443, {	-- Blackened Ashes
+						["groups"] = {
+						},
+						["qg"] = 48569,	-- Eitrigg
+						["sourceQuests"] = { 28442 },	-- Flame Crest
+					}),
+				
+				
+					qh(28446, {	-- Blood Tour
+						["groups"] = {
+						},
+						["qg"] = 48565,	-- Ariok
+						["sourceQuests"] = { 28445, 28443, 28444 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
+					}),
+				
+
 					qh(28418, {	-- Burning Vengeance
 						["groups"] = {
 						},
@@ -169,13 +229,67 @@ _.Zones =
 					}),
 				
 				
-					qh(28417, { -- Done Nothing Wrong
+					qh(28417, {	-- Done Nothing Wrong
 						["groups"] = {
 							i(64499),	-- Hatchlings' Protector
 							i(64498),	-- Whelp Keeper's Staff
 							i(156964),	-- Clutch Rearrangement Tool
 						},
 						["qg"] = 47779,	-- Mouton Flamestar
+					}),
+				
+				
+					qh(28447, {	-- Draconic Vanguard (secondary QG ID 48567)
+						["groups"] = {
+						},
+						["qg"] = 48567,	-- Ariok (secondary ID can be 48565, same NPC, if you pick up Blood Tour last)
+						["sourceQuests"] = { 28445, 28443, 28444 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
+					}),
+				
+				
+					qh(28441, {	-- Enough Damage For One Day (awarded "Infiltration" criteria)
+						["groups"] = {
+							i(64542),	-- Worn Argent Crusader's Breastplate
+							i(64541),	-- Blackrock Shaman's Gloves
+							i(64540),	-- Belt of Preparation
+							i(64539),	-- Kubit's Dagger
+						},
+						["sourceQuests"] = { 28440 },	-- Abuse of Power
+					}),
+				
+				
+					qh(28442, {	-- Flame Crest
+						["groups"] = {
+						},
+						["qg"] = 48568,	-- Eitrigg
+						["sourceQuests"] = { 28441 },	-- Enough Damage for One Day
+					}),
+				
+				
+					qdg(qh(27469, {	-- Friends on The Other Side
+						["groups"] = {
+						},
+						["qg"] = 56899,	-- Ragged Jong
+					})),
+				
+				
+					qh(28437, {	-- General Thorg'izog
+						["groups"] = {
+						},
+						["qg"] = 48568,	-- Eitrigg
+						["sourceQuests"] = { 28227 },	-- Golem Training
+					}),
+				
+				
+					q( 28227, {	-- Golem Training
+						["groups"] = {
+							i(64524),	-- Chiselgrip Shield
+							i(64523),	-- Combat Training Vest
+							i(64522),	-- Bracers of Friendly Favors
+							i(64521),	-- Tutor's Cloak
+						},
+						["qg"] = 48033,	-- Stebben Oreknuckle
+						["sourceQuests"] = { 28225, 28226 },	-- Prove Yer Allegiance & Scrapped Golems
 					}),
 				
 				
@@ -187,6 +301,14 @@ _.Zones =
 					}),
 				
 				
+					qh(28439, {	-- I Am the Law and I Am the Lash
+						["groups"] = {
+						},
+						["qg"] = 48133,	-- General Thorg'izog
+						["sourceQuests"] = { 28438 },	-- Trial by Magma
+					}),
+				
+				
 					qh(28432, {	-- Into the Black Tooth Hovel *****
 						["groups"] = {
 						},
@@ -195,7 +317,15 @@ _.Zones =
 					}),
 				
 				
-					qh(28421, { -- Mud Hunter
+					qh(28444, {	-- Latent Demons of the Land
+						["groups"] = {
+						},
+						["qg"] = 48569,	-- Eitrigg
+						["sourceQuests"] = { 28442 },	-- Flame Crest
+					}),
+				
+				
+					qh(28421, {	-- Mud Hunter
 						["groups"] = {
 							i(64506),	-- Obsidian-Flecked Cowl
 						},
@@ -204,7 +334,30 @@ _.Zones =
 					}),
 				
 				
-					q(28225, {	-- Prove Yer Allegiance
+					qh(28491, {	-- Not Fireflies, Flameflies
+						["groups"] = {
+							i(64558),	-- Lava Boots
+							i(64557),	-- Flamefly Spaulders
+							i(64556),	-- Petting Gloves
+							i(66080),	-- PET! Tiny Flamefly
+						},
+						["qg"] = 10260,	-- Kibler
+						["sourceQuests"] = { 28442 },	-- Flame Crest
+					}),
+				
+				
+					qh(28449, {	-- Placing the Pawns (awarded "Anticipation" criteria)
+						["groups"] = {
+							i(64550),	-- Breastplate of the Undercover Thorium Brother
+							i(64549),	-- Subversive Steps
+							i(64548),	-- Flame Crest Bracers
+							i(64547),	-- Pawn's Bracers
+						},
+						["sourceQuests"] = { 28448 },	-- A Deal With a Dragon
+					}),
+				
+				
+					q( 28225, {	-- Prove Yer Allegiance
 						["groups"] = {
 						},
 						["qg"] = 48033,	-- Stebben Oreknuckle
@@ -220,7 +373,7 @@ _.Zones =
 					}),
 				
 				
-					q(28226, {	-- Scrapped Golems
+					q( 28226, {	-- Scrapped Golems
 						["groups"] = {
 						},
 						["qg"] = 48033,	-- Stebben Oreknuckle
@@ -236,7 +389,7 @@ _.Zones =
 					}),
 				
 				
-					qh(28419, { -- Stocking Up
+					qh(28419, {	-- Stocking Up
 						["groups"] = {
 							i(64502),	-- Sharp Scorpid Barb
 							i(156965),	-- Enchanted Scorpid Tail
@@ -251,6 +404,33 @@ _.Zones =
 						},
 						["sourceQuests"] = { 28433 },	-- Grunt Work (procs after accepting)
 					}),
+					
+					
+					qh(28436, {	-- Taking the Horn For Ourselves
+						["groups"] = {
+							i(64520),	-- Helm of Serendipity
+							i(64519),	-- Improvised Breastplate
+							i(64518),	-- Leggings of the Steppes
+						},
+						["sourceQuests"] = { 28435 },	-- The Kodocaller's Horn
+					}),
+					
+					
+					qh(28570, {	-- The Bogpaddle Bullet (mutually exclusive with "Warchief's Command: Swamp of Sorrows!")
+						["groups"] = {
+						},
+						["qg"] = 10260,	-- Kibler
+						["Lvl"] = 40,
+						["isBreadcrumb"] = true,
+					}),
+					
+					
+					qh(28435, {	-- The Kodocaller's Horn
+						["groups"] = {
+						},
+						["qg"] = 48085,	-- Quartermaster Kaoshin
+						["sourceQuests"] = { 28433, 28434 },	-- Grunt Work & Strategic Cuts
+					}),
 				
 				
 					qh(28422, {	-- The Sand, the Cider, and the Orb
@@ -258,6 +438,17 @@ _.Zones =
 						},
 						["qg"] = 48559,	-- Ariok
 						["sourceQuests"] = { 28420, 28421, 28419 },	-- A Future Project, Mud Hunter, & Stocking Up
+					}),
+				
+				
+					qh(28438, {	-- Trial by Magma
+						["groups"] = {
+							i(64531),	-- Bracers of Gladiatorial Combat
+							i(64530),	-- Poorly Styled Gloves
+							i(64529),	-- Magma Lord Cloak
+						},
+						["qg"] = 48133,	-- General Thorg'izog
+						["sourceQuests"] = { 28437 },	-- General Thorg'izog
 					}),
 				
 				
@@ -285,12 +476,8 @@ _.Zones =
 				
 
 					qg(48306, qa(28316)),	-- A Deal With a Dragon (secondary QG ID 48346)
-					qg(48565, qh(28448)),	-- A Deal With a Dragon (secondary QG ID 48567)
-					qg(48569, qh(28451)),	-- A Delivery for Neeralak
 					qg(48307, qa(28318)),	-- A Delivery for Neeralak
 					qg(48307, qa(28317)),	-- A Delivery for Thorg'izog
-					qg(48569, qh(28450)),	-- A Delivery for Thorg'izog
-					qg(48569, qh(28452)),	-- A Delivery for Xi'lun
 					qg(48307, qa(28319)),	-- A Delivery for Xi'lun
 					i(142344, {	-- Broken Axe Blade
 						["groups"] = {
@@ -302,29 +489,28 @@ _.Zones =
 								}),
 							}),
 						},
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requiredSkill"] = 164,	-- Blacksmithing
 						["description"] = "The Broken Axe Blade is dropped by the mobs in and around Blackrock Stronghold in Burning Steppes.|r",
 					}),					
 					qg(47811, qa(28178)),	-- A Future Project
 					qg(48307, qa(28313)),	-- A Heap of Delicious Worg
-					qg(48569, qh(28445)),	-- A Heap of Delicious Worg
 					qg(48109, qa(28254)),	-- A Needle in a Hellhole
-					qg(48001, qa(28205, {	-- A Perfect Costume
+					qg(48001, q( 28205, {	-- A Perfect Costume
 						["groups"] = {
 						},
 						["races"] = {4},
 					})),
-					qg(48001, qh(28428, {	-- A Perfect Costume
+					qg(48001, q( 28428, {	-- A Perfect Costume
 						["groups"] = {
 						},
 						["races"] = {2,5},
 					})),
-					qg(48001, qa(28202, {	-- A Perfect Costume
+					qg(48001, q( 28202, {	-- A Perfect Costume
 						["groups"] = {
 						},
 						["races"] = {3},
 					})),
-					qg(48001, qa(28203, {	-- A Perfect Costume
+					qg(48001, q( 28203, {	-- A Perfect Costume
 						["groups"] = {
 						},
 						["races"] = {11,22},
@@ -334,17 +520,16 @@ _.Zones =
 						},
 						["races"] = {7,9},
 					})),
-					qg(48001, qh(28430, {	-- A Perfect Costume
+					qg(48001, q(28430, {	-- A Perfect Costume
 						["groups"] = {
 						},
 						["races"] = {9},
 					})),
-					qg(48001, qh(28429, {	-- A Perfect Costume
+					qg(48001, q(28429, {	-- A Perfect Costume
 						["groups"] = {
 						},
 						["races"] = {6,26},
 					})),
-					qg(48568, qh(28440)),	-- Abuse of Power
 					qg(48110, qa(28279)),	-- Abuse of Power
 					o(207304, {	-- Adventure Board
 						qdg(qa(28068)),	-- Adventurers Wanted: Blackrock Depths
@@ -356,56 +541,36 @@ _.Zones =
 					qg(48306, qa(28320)),	-- Assault on Dreadmaul Rock
 					qg(14387, q(7848)),	-- Attunement to the Core
 					qg(48307, qa(28311)),	-- Blackened Ashes
-					qg(48569, qh(28443)),	-- Blackened Ashes
 					qg(9562, qa(27471)),	-- Blackrock Anomaly
 					qg(48306, qa(28314)),	-- Blood Tour (secondary QG ID 48346)
-					qg(48565, qh(28446)),	-- Blood Tour (secondary QG ID 48567)
 					qg(47811, qa(28174)),	-- Burning Vengeance (for players who did not complete Redridge Keeshan questline)
 					qg(47811, qa(28416)),	-- Burning Vengeance (for players who completed Redridge Keeshan questline)
-					qg(47811, qa(28184, { -- Chiselgrip, the Heart of the Steppes
+					qg(47811, qa(28184, {	-- Chiselgrip, the Heart of the Steppes
 						i(64510),
 						i(64509),
 						i(64508),
 						i(64507),
 					})),
-					qg(47779, qa(28172, { -- Done Nothing Wrong
+					qg(47779, qa(28172, {	-- Done Nothing Wrong
 						i(64496),
 						i(64495),
 					})),
 					qg(48306, qa(28315)),	-- Draconic Vanguard (secondary QG ID 48346)
-					qg(48565, qh(28447)),	-- Draconic Vanguard (secondary QG ID 48567)
-					qg(48110, qa(28286, { -- Enough Damage For One Day
+					qg(48110, qa(28286, {	-- Enough Damage For One Day
 						i(64537),
 						i(64536),
 						i(64535),
 						i(64534),
 					})),
-					qg(48568, qh(28441, { -- Enough Damage For One Day
-						i(64542),
-						i(64541),
-						i(64540),
-						i(64539),
-					})),
-					qg(48568, qh(28442)),	-- Flame Crest
 					qdg(qg(9563, qa(27469))),	-- Friends on The Other Side
-					qdg(qg(56899, qh(27469))),	-- Friends on The Other Side
-					qg(48568, qh(28437)),	-- General Thorg'izog
 					qg(48109, qa(28265)),	-- General Thorg'izog
 					qg(48307, qa(28321)),	-- Glory Amidst Chaos
 					qg(48569, qh(28455)),	-- Glory Amidst Chaos
-					qg(48033, q(28227, { -- Golem Training
-						i(64524),
-						i(64523),
-						i(64522),
-						i(64521),
-					})),
 					qg(48085, qa(28245)),	-- Grunt Work
 					qg(48133, qa(28278)),	-- I Am the Law and I Am the Lash
-					qg(48133, qh(28439)),	-- I Am the Law and I Am the Lash
 					qg(48109, qa(28239)),	-- Into the Black Tooth Hovel
 					qg(48307, qa(28312)),	-- Latent Demons of the Land
-					qg(48569, qh(28444)),	-- Latent Demons of the Land
-					qa(28327, { -- Locked and Loaded
+					qa(28327, {	-- Locked and Loaded
 						["groups"] = {
 							i(64563),
 							i(64562),
@@ -414,7 +579,7 @@ _.Zones =
 						},
 						["description"] = "This quest is automatically offered after finishing the three 'A Delivery for...' quests.",
 					}),
-					qh(28453, { -- Locked and Loaded
+					qh(28453, {	-- Locked and Loaded
 						["groups"] = {
 							i(64568),
 							i(64567),
@@ -426,16 +591,10 @@ _.Zones =
 					qg(48110, qa(28310)),	-- Morgan's Vigil
 					qg(14625, qa(28514)),	-- Mouton Flamestar
 					qg(14625, qh(28515)),	-- Mouton Flamestar
-					qg(47811, qa(28179, { -- Mud Hunter
+					qg(47811, qa(28179, {	-- Mud Hunter
 						i(64505),
 					})),
-					qg(10260, qh(28491, { -- Not Fireflies, Flameflies
-						i(64558),
-						i(64557),
-						i(64556),
-						i(66080), -- PET! Tiny Flamefly
-					})),
-					qa(28326, { -- Placing the Pawns
+					qa(28326, {	-- Placing the Pawns
 						["groups"] = {
 							i(64546),
 							i(64545),
@@ -444,64 +603,44 @@ _.Zones =
 						},
 						["description"] = "This quest is automatically offered after finishing 'A Deal with a Dragon.'",
 					}),
-					qh(28449, { -- Placing the Pawns
-						["groups"] = {
-							i(64550),
-							i(64549),
-							i(64548),
-							i(64547),
-						},
-						["description"] = "This quest is automatically offered after finishing 'A Deal with a Dragon.'",
-					}),
 					qg(14437, qa(28183)),	-- Return to Keeshan
-					qg(9177, qa(28415, { -- SEVEN! YUP!
+					qg(9177, qa(28415, {	-- SEVEN! YUP!
 						i(64554),
 						i(64553),
 						i(64552),
-						i(66080), -- PET! Tiny Flamefly
+						i(66080),	-- PET! Tiny Flamefly
 					})),
 					qg(14437, qa(28182)),	-- Shadow Boxing
-					qg(47811, qa(28177, { -- Stocking Up
+					qg(47811, qa(28177, {	-- Stocking Up
 						i(64501),
-						i(157011), -- Envenomed Scorpid Tail
-						i(156965), -- Enchanted Scorpid Tail 
+						i(157011),	-- Envenomed Scorpid Tail
+						i(156965),	-- Enchanted Scorpid Tail 
 					})),
 					qg(48110, qa(28246)),	-- Strategic Cuts
-					qg(48110, qa(28253, { -- Taking the Horn For Ourselves
+					qg(48110, qa(28253, {	-- Taking the Horn For Ourselves
 						i(64517),
 						i(64516),
 						i(64515),
 					})),
-					qg(48568, qh(28436, { -- Taking the Horn For Ourselves
-						i(64520),
-						i(64519),
-						i(64518),
-					})),
-					qg(10260, qh(28570)),	-- The Bogpaddle Bullet
-					qg(9177, qa(28569)),	-- The Bogpaddle Bullet
+					qg( 9177, qa(28569)),	-- The Bogpaddle Bullet
 					qg(48085, qh(28435)),	-- The Kodocaller's Horn
 					qg(48085, qa(28252)),	-- The Kodocaller's Horn
 					qg(47811, qa(28180)),	-- The Sand, the Cider, and the Orb
-					qg(48307, qa(28322, { -- The Spoils of War
+					qg(48307, qa(28322, {	-- The Spoils of War
 						i(64574),
 						i(64573),
 						i(64572),
 						i(64569),
 						i(64570),
 					})),
-					qg(48569, qh(28456, { -- The Spoils of War
+					qg(48569, qh(28456, {	-- The Spoils of War
 						i(64580),
 						i(64579),
 						i(64578),
 						i(64575),
 						i(64576),
 					})),
-					qg(48133, qh(28438, { -- Trial by Magma
-						i(64531),
-						i(64530),
-						i(64529),
-					})),
-					qg(48133, qa(28266, { -- Trial by Magma
+					qg(48133, qa(28266, {	-- Trial by Magma
 						i(64527),
 						i(64526),
 						i(64525),
