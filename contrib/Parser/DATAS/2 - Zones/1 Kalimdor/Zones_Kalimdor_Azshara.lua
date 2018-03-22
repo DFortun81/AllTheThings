@@ -570,9 +570,11 @@ _.Zones =
 						["qg"] = 35086,	-- Labor Captain Grabbit
 						["sourceQuests"] = { 14155 },	-- Arborcide
 					}),
-					n( 35095, {	-- Talrendis Scout
-						i(47039, {	-- Scout's Orders
-							qh(14127),	-- Return of the Highborne?
+					i(47039, {	-- Scout's Orders
+						qh(14127, {	-- Return of the Highborne?
+							["groups"] = {
+							},
+							["qg"] = 35095,	-- Talrendis Scout
 						}),
 					}),
 					qh(24455, {	-- Rapid Deployment
