@@ -48,6 +48,319 @@ _.Zones =
 					
 					n(-17, { -- Quests
 						["groups"] = {
+							ach(12066, { -- You Are Now Prepared!
+								crit(1, { -- The Assault Begings
+									qa(47221, { -- The Hand of Fate		
+										["groups"] = {	
+										},
+										["description"] = "Given by Auto Accept after completing Broken Shore scenario.  May have to log out.",
+										["sourceQuests"] = { 46734 }, -- Assault on Broken Shore	
+									}),		
+									qa(47222, { -- Two If By Sea		
+										["groups"] = {	
+										},	
+										["qg"] = 121754, -- Vereesa Windrunner	
+										["sourceQuests"] = { 47221 }, -- The Hand of Fate	
+									}),		
+									qh(47835, { -- The Hand of Fate		
+										["groups"] = {	
+										},
+										["description"] = "Given by Auto Accept after completing Broken Shore scenario.  May have to log out.",
+										["sourceQuests"] = { 46734 }, -- Assault on Broken Shore	
+									}),		
+									qh(47867, { -- Two If By Sea		
+										["groups"] = {	
+										},	
+										["qg"] = 122065, -- Lady Liadrin
+										["sourceQuests"] = { 47221 }, -- The Hand of Fate	
+									}),
+									q(47223, { -- Light's Exodus		
+										["groups"] = {	
+										},	
+										["qg"] = 121756, -- Vindicator Boros	
+										["sourceQuests"] = { 47222 }, -- Two If By Sea	
+									}),		
+									q(47224, { -- The Vidicaar		
+										["groups"] = {	
+										},	
+										["qg"] = 120977, -- Prophet Velen	
+										["sourceQuests"] = { 47223 }, -- Light's Exodus	
+									}),		
+									q(46938, { -- Alone in the Abyss		
+										["groups"] = {	
+										},	
+										["qg"] = 126307, -- Prophet Velen	
+										["sourceQuests"] = { 47224 }, -- The Vidicaar	
+									}),		
+									q(47589, { -- Righteous Fury		
+										["groups"] = {	
+										},	
+										["qg"] = 119543, -- Prophet Velen	
+										["sourceQuests"] = { 46938 }, -- Alone in the Abyss	
+									}),		
+									q(46297, { -- Overwhelming Power		
+										["groups"] = {
+											i(152695), -- Crest of the Grand Army
+											i(152690), -- Darkfall Arcanum
+											i(152692), -- Devastator Anchor Crystal
+											i(152691), -- Doomcaller Heart
+											i(152694), -- Felbound Drudge's Sorrow
+											i(153421), -- Grinning Vilefiend Skull
+											i(152696), -- Manacle of Dominance
+											i(152697), -- Mark of Defiant Survival
+											i(152715), -- Scarwing Talon
+											i(152693), -- Volatile Devastator Round
+										},	
+										["qg"] = 119535, -- Illidan Stormrage	
+										["sourceQuests"] = { 46938 }, -- Alone in the Abyss	
+									}),		
+									q(48483, { -- A Stranger's Plea		
+										["groups"] = {	
+										},	
+										["qg"] = 126239, -- Chieftain Hatuun	
+										["sourceQuests"] = { 46938 }, -- Alone in the Abyss	
+									}),		
+									q(47627, { -- Vengeance		
+										["groups"] = {	
+										},	
+										["qg"] = 123148, -- Illidan Stormrage	
+										["sourceQuests"] = { 47589, 46297, 48483 }, -- Righteous Fury / Overwhelming Power / A Stranger's Plea	
+									}),		
+									q(47641, { -- Sign of Resistance		
+										["groups"] = {	
+										},	
+										["qg"] = 119543, -- Prophet Velen	
+										["sourceQuests"] = { 47627 }, -- Vengeance	
+									}),		
+									q(46732, { -- The Prophet's Gambit		
+										["groups"] = {	
+										},	
+										["qg"] = 121345, -- Prophet Velen	
+										["sourceQuests"] = { 47641 }, -- Sign of Resistance	
+									}),		
+									q(46816, { -- Rendezvous
+										--[[
+										["groups"] = {
+											{
+												["spellID"] = 252201, -- Lightforged Beacon: Krokul Hovel
+												["questID"] = 46816, -- Rendezvous
+												["collectible"] = true,
+											},
+										},	
+										--]]
+										["qg"] = 120529, -- High Exarch Turalyon	
+										["sourceQuests"] = { 46732 }, -- The Prophet's Gambit	
+									}),		
+									q(46839, { -- From Darkness		
+										["groups"] = {	
+										},	
+										["qg"] = 120529, -- High Exarch Turalyon	
+										["sourceQuests"] = { 46816 }, -- Rendezvous	
+									}),		
+									q(46840, { -- Prisoners No More		
+										["groups"] = {	
+										},	
+										["qg"] = 120760, -- High Exarch Turalyon	
+										["sourceQuests"] = { 46839 }, -- From Darkness	
+									}),		
+									q(46841, { -- Threat Reduction		
+										["groups"] = {	
+										},	
+										["qg"] = 120760, -- High Exarch Turalyon	
+										["sourceQuests"] = { 46839 }, -- From Darkness	
+									}),		
+									q(46842, { -- A Strike at the Heart		
+										["groups"] = {	
+										},	
+										["qg"] = 120953, -- High Exarch Turalyon	
+										["sourceQuests"] = { 46840, 46841 }, -- Prisoners No More / Threat Reduction	
+									}),		
+									q(46843, { -- Return to the Vindicaar		
+										["groups"] = {	
+										},	
+										["qg"] = 120738, -- High Exarch Turalyon	
+										["sourceQuests"] = { 46842 }, -- A Strike at the Heart	
+									}),		
+									q(48500, { -- A Moment of Respite		
+										["groups"] = {	
+										},	
+										["qg"] = 126307, -- Prophet Velen	
+										["sourceQuests"] = { 46843 }, -- Return to the Vindicaar	
+									}),		
+									q(47431, { -- Gathering Light		
+										["groups"] = {	
+										},	
+										["qg"] = 122378, -- High Exarch Turalyon	
+										["sourceQuests"] = { 48500 }, -- A Moment of Respite	
+									}),		
+									q(46213, { -- Crystals Not Included		
+										["groups"] = {	
+										},	
+										["qg"] = 121519, -- Captain Fareeya	
+										["sourceQuests"] = { 47431 }, -- Gathering Light	
+									}),		
+									q(40238, { -- A Grim Equation		
+										["groups"] = {	
+										},	
+										["qg"] = 121521, -- Grand Vindicator Sorvos	
+										["sourceQuests"] = { 47431 }, -- Gathering Light	
+									}),		
+									q(47541, { -- The Best Prevention		
+										["groups"] = {	
+										},	
+										["qg"] = 121520, -- Grand Lector Enaara	
+										["sourceQuests"] = { 46213, 40238 }, -- Crystals Not Included / A Grim Equation	
+									}),		
+									q(47508, { -- Fire at Will		
+										["groups"] = {	
+										},	
+										["qg"] = 121578, -- Archmage Y'mera	
+										["sourceQuests"] = { 47541 }, -- The Best Prevention	
+									}),		
+									q(47771, { -- Locating the Longshot		
+										["groups"] = {	
+										},	
+										["qg"] = 121578, -- Archmage Y'mera	
+										["sourceQuests"] = { 47508 }, -- Fire at Will	
+									}),		
+									q(47526, { -- Bringing the Big Guns		
+										["groups"] = {	
+										},	
+										["qg"] = 121517, -- Baraat the Longshot	
+										["sourceQuests"] = { 47771 }, -- Locating the Longshot	
+									}),		
+									q(47754, { -- Lightly Roasted		
+										["groups"] = {	
+										},	
+										["qg"] = 124906, -- Image of Grand Artificer Romuul	
+										["sourceQuests"] = { 47526 }, -- Bringing the Big Guns	
+									}),		
+									q(47652, { -- The Light Mother		
+										["groups"] = {	
+										},	
+										["qg"] = 122621, -- High Exarch Turalyon	
+										["sourceQuests"] = { 47754 }, -- Lightly Roasted	
+									}),		
+									q(47653, { -- Light's Return		
+										["groups"] = {	
+										},	
+										["qg"] = 122621, -- High Exarch Turalyon	
+										["sourceQuests"] = { 47652 }, -- The Light Mother	
+									}),		
+									q(47743, { -- The Child of Light and Shadow		
+										["groups"] = {	
+										},	
+										["qg"] = 122378, -- High Exarch Turalyon	
+										["sourceQuests"] = { 47653 }, -- Light's Return	
+									}),		
+									q(49143, { -- Essence of the Light Mother		
+										["groups"] = {	
+										},	
+										["qg"] = 126307, -- Prophet Velen	
+										["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow	
+									}),		
+									q(47287, { -- The Vindicaar Matrix Core		
+										["groups"] = {	
+										},	
+										["qg"] = 121263, -- Grand Artificer Romuul	
+										["sourceQuests"] = { 49143 }, -- Essence of the Light Mother	
+									}),		
+									q(48559, { -- An Offering of Light		
+										["groups"] = {	
+										},	
+										["qg"] = 126307, -- Prophet Velen	
+										["sourceQuests"] = { 47287 }, -- The Vindicaar Matrix Core	
+									}),		
+									q(48199, { -- The Burning Heart		
+										["groups"] = {	
+										},	
+										["qg"] = 126307, -- Prophet Velen	
+										["sourceQuests"] = { 48559 }, -- An Offering of Light	
+									}),		
+									q(48200, { -- Securing a Foothold		
+										["groups"] = {	
+										},	
+										["qg"] = 126954, -- High Exarch Turalyon	
+										["sourceQuests"] = { 48199 }, -- The Burning Heart	
+									}),		
+									q(48201, { -- Reinforce Light's Purchase		
+										["groups"] = {	
+										},	
+										["qg"] = 126954, -- High Exarch Turalyon	
+										["sourceQuests"] = { 48200 }, -- Securing a Foothold	
+									}),		
+									q(48202, { -- Reinforce the Veiled Den		
+										["groups"] = {	
+										},	
+										["qg"] = 126954, -- High Exarch Turalyon	
+										["sourceQuests"] = { 47473 }, -- Sizing Up the Opposition	
+									}),	
+								}),
+							}),
+							spell(253365, { -- Krokuun Equipment
+								q(48460, { -- The Wranglers [Breadcrumb - Required]	
+									["groups"] = {
+									},
+									["qg"] = 119388, -- Chieftain Hatuun
+									["sourceQuests"] = { 48199 }, -- The Burning Heart
+								}),	
+								q(47967, { -- An Argus Roper	
+									["groups"] = {
+									},
+									["qg"] = 126160, -- Lead Rider Jerek
+									["sourceQuests"] = { 48460 }, -- The Wranglers [Breadcrumb - Required]
+								}),	
+								q(48455, { -- Duskcloak Problem	
+									["groups"] = {
+									},
+									["qg"] = 126160, -- Lead Rider Jerek
+									["sourceQuests"] = { 48460 }, -- The Wranglers [Breadcrumb - Required]
+								}),	
+								q(48453, { -- Strike Back	
+									["groups"] = {
+									},
+									["qg"] = 126160, -- Lead Rider Jerek
+									["sourceQuests"] = { 48460 }, -- The Wranglers [Breadcrumb - Required]
+								}),	
+								q(48544, { -- Woah, Nelly	
+									["groups"] = {
+									},
+									["qg"] = 126160, -- Lead Rider Jerek
+									["sourceQuests"] = { 47967, 48455, 48453 }, -- An Argus Roper / Duskcloak Problem / Strike Back
+								}),	
+								q(48441, { -- Remnants of Darkfall Ridge	
+									["groups"] = {
+									},
+									["qg"] = 119388, -- Chieftain Hatuun
+									["sourceQuests"] = { 48544 }, -- Woah, Nelly
+								}),	
+								q(48442, { -- Nath'raxas Hold: Preparations	
+									["groups"] = {
+									},
+									["qg"] = 119388, -- Chieftain Hatuun
+									["sourceQuests"] = { 48441 }, -- Remnants of Darkfall Ridge
+								}),	
+								q(48910, { -- Supplying Krokuun	
+									["groups"] = {
+										i(152095), -- Krokul Ridgestalker
+									},
+									["qg"] = 119388, -- Chieftain Hatuun
+									["sourceQuests"] = { 48442 }, -- Nath'raxas Hold: Preparations
+								}),	
+								q(48443, { -- Nath'raxas Hold: Rescue Mission	
+									["groups"] = {
+									},
+									["qg"] = 119388, -- Chieftain Hatuun
+									["sourceQuests"] = { 48910 }, -- Supplying Krokuun
+								}),	
+								q(48634, { -- Further Supplying Krokuun	
+									["groups"] = {
+										i(152095), -- Krokul Ridgestalker
+									},
+									["qg"] = 119388, -- Chieftain Hatuun
+									["sourceQuests"] = { 48443 }, -- Nath'raxas Hold: Rescue Mission
+								}),	
+							}),
 --[[							
 							n(-34, {	-- World Quests
 								q(48285),	-- Aerial Superiority
@@ -106,160 +419,7 @@ _.Zones =
 								q(48318),	-- Work Order: Lightblood Elixirs
 								q(48373),	-- Work Order: Lightweave Cloth
 								q(48323),	-- Work Order: Tears of the Naaru
-							}),							
-							q(47220),	-- A Beacon in the Dark
-							q(48075),	-- A Colorful Key
-							q(48076),	-- A Crowning Achievement
-							q(48081),	-- A Floating Ruin
-							q(40238),	-- A Grim Equation
-							q(48041),	-- A Larger Cut
-							q(48500),	-- A Moment of Respite
-							q(47691),	-- A Non-Prophet Organization
-							q(48483),	-- A Stranger's Plea
-							q(46842),	-- A Strike at the Heart
-							q(47990),	-- A Touch of Fel
-							q(47219),	-- A Vessel Made Ready
-							q(47856),	-- Across the Universe
-							q(46938),	-- Alone in the Abyss
-							q(47967),	-- An Argus Roper
-							q(48559),	-- An Offering of Light
-							q(48560),	-- An Offering of Shadow
-							q(48035),	-- Angling For a Better Strike
-							q(48642),	-- Argussian Reach
-							q(47184),	-- Arkhaan's Peril
-							q(47183),	-- Arkhaan's Plan
-							q(47101),	-- Arkhaan's Prayers
-							q(48231),	-- Armor of the Triumvirate
-							q(48639),	-- Army of the Light
-							q(48016),	-- Ascending Alchemy
-							q(48039),	-- Balancing the Break
-							q(48654),	-- Beneath Oronaar
-							q(47526),	-- Bringing the Big Guns
-							q(47988),	-- Chaos Theory
-							q(48605),	-- Commander's Downfall
-							q(47066),	-- Consecrating Ground
-							q(47882),	-- Conservation of Magic
-							q(48078),	-- Counterbalancing
-							q(46213),	-- Crystals Not Included
-							q(47991),	-- Dark Machinations
-							q(47992),	-- Dawn of Justice
-							q(46818),	-- Defenseless and Afraid
-							q(47891),	-- Dire News
-							q(48038),	-- Don't Just Pick At It
-							q(48455),	-- Duskcloak Problem
-							q(48055),	-- Empyrial Strength
-							q(48034),	-- Empyrium Deposit Chunk
-							q(48037),	-- Empyrium Seam Chunk
-							q(49143),	-- Essence of the Light Mother
-							q(48278),	-- Fate of the Life-Binder
-							q(48601),	-- Felfire Shattering
-							q(47508),	-- Fire At Will
-							q(47853),	-- Flanking Maneuvers
-							q(47134),	-- Foiling the Legion's Jailbreak
-							q(47135),	-- For Their Own Good
-							q(48803),	-- Forging a Key to the Past
-							q(47994),	-- Forming a Bond
-							q(48230),	-- Fragment of the Past
-							q(46839),	-- From Darkness
-							q(48799),	-- Fuel of a Doomed World
-							q(48636),	-- Fueling the Antoran Campaign
-							q(48634),	-- Further Supplying Krokuun
-							q(47431),	-- Gathering Light
-							q(47989),	-- Heralds of Apocalypse
-							q(48448),	-- Hindering the Legion War Machine
-							q(47104),	-- Imprisoned Inquisitor
-							q(47554),	-- Intercepting the Legion's Plans
-							q(48440),	-- Into the Night
-							q(49293),	-- Invasion Onslaught
-							q(48513),	-- Invasion Point Offensive
-							q(47688),	-- Invasive Species
-							q(46834),	-- Khazaduum, First of His Name
-							q(47653),	-- Light's Return
-							q(47754),	-- Lightly Roasted
-							q(48002),	-- Limited Supplies
-							q(47771),	-- Locating the Longshot
-							q(47182),	-- Long Overdue
-							q(48074),	-- Looming Over Me
-							q(47993),	-- Lord of the Spire
-							q(46815),	-- Mac'Aree, Jewel of Argus
-							q(48442),	-- Nath'raxas Hold: Preparations
-							q(48443),	-- Nath'raxas Hold: Rescue Mission
-							q(47686),	-- Not-So-Humble Beginnings
-							q(48042),	-- Order of Operations
-							q(47995),	-- Overt Ops
-							q(46297),	-- Overwhelming Power
-							q(48974),	-- Paragon of the Army of the Light
-							q(48036),	-- Precision Perfected
-							q(47987),	-- Preventive Measures
-							q(46840),	-- Prisoners No More
-							q(48271),	-- Recovering the Pieces
-							q(48446),	-- Relics of the Ancient Eredar
-							q(48441),	-- Remnants of Darkfall Ridge
-							q(46816),	-- Rendezvous
-							q(46843),	-- Return to the Vindicaar
-							q(47589),	-- Righteous Fury
-							q(47986),	-- Scars of the Past
-							q(47416),	-- Shadow of the Triumvirate
-							q(48447),	-- Shadowguard Dispersion
-							q(47641),	-- Signs of Resistance
-							q(48929),	-- Sizing Up The Opposition
-							q(47473),	-- Sizing Up The Opposition
-							q(47217),	-- Sources of Darkness
-							q(47892),	-- Storming the Citadel
-							q(48453),	-- Strike Back
-							q(48542),	-- Strike Back
-							q(48976),	-- Supplies From the Argussian Reach
-							q(48977),	-- Supplies From the Army of the Light
-							q(48910),	-- Supplying Krokuun
-							q(48912),	-- Supplying the Antoran Campaign
-							q(48040),	-- Tainted Scraps
-							q(48600),	-- Take the Edge Off
-							q(48345),	-- Talgath's Forces
-							q(47541),	-- The Best Prevention
-							q(48864),	-- The Broken Blacksmith
-							q(48199),	-- The Burning Heart
-							q(47743),	-- The Child of Light and Shadow
-							q(47002),	-- The Crown of the Triumvirate
-							q(47690),	-- The Defiler's Legacy
-							q(48027),	-- The Glory of Argus
-							q(48506),	-- The Hand of Fate
-							qa( 47221),	-- The Hand of Fate
-							q(48507),	-- The Hand of Fate
-							qh( 47835),	-- The Hand of Fate
-							q(48029),	-- The Heart of It
-							q(47652),	-- The Light Mother
-							q(47883),	-- The Longest Vigil
-							q(47102),	-- The Mysterious Missive
-							q(49224),	-- The Netherlight Crucible
-							q(46941),	-- The Path Forward
-							q(48261),	-- The Power to Reforge
-							q(49445),	-- The Prime Exchange
-							q(46732),	-- The Prophet's Gambit
-							q(47180),	-- The Pulsing Madness
-							q(48445),	-- The Ruins of Oronaar
-							q(47238),	-- The Seat of the Triumvirate
-							q(48107),	-- The Sigil of Awakening
-							q(47889),	-- The Speaker Calls
-							q(48273),	-- The Speaker Listens
-							q(48277),	-- The Speaker Seeks
-							q(47224),	-- The Vindicaar
-							q(47287),	-- The Vindicaar Matrix Core
-							q(48460),	-- The Wranglers
-							q(48069),	-- The Wrench Calls
-							q(46841),	-- Threat Reduction
-							q(47203),	-- Throwing Shade
-							q(48013),	-- Tracking the Trackers
-							q(47627),	-- Vengeance
-							q(48280),	-- Visions of Another
-							q(48272),	-- Visions of Fear
-							q(47890),	-- Visions of Torment
-							q(48344),	-- We Have a Problem
-							q(47855),	-- What Might Have Been
-							q(48461),	-- Where They Least Expect It
-							q(40761),	-- Whispers from Oronaar
-							q(48544),	-- Woah, Nelly!
-							q(47854),	-- Wrath of the High Exarch
-							q(48028),	-- Youthful Resistance
+							}),	
 --]]
 							i(152204, { -- Glowing Key Fragment
 								q(48231, { -- Armor of the Triumvirate
@@ -1291,6 +1451,12 @@ _.Zones =
 										}),
 									}),
 									n(-17, { -- Quests
+										q(48075, { -- A Colorful Key
+											["groups"] = {
+											},
+											["requiredSkill"] = 755, -- Jewelcrafting
+											["sourceQuests"] = { 46941 }, -- The Path Forward
+										}),
 										q(48076, { -- A Crowning Achievement
 											["groups"] = {
 												i(151587), -- Empyrial Cosmic Crown
@@ -1299,6 +1465,7 @@ _.Zones =
 												i(151590), -- Empyrial Titan Crown
 											},
 											["requiredSkill"] = 755, -- Jewelcrafting
+											["sourceQuests"] = { 48075 }, -- A Colorful Key
 										}),
 										q(48078, { -- Counterbalancing
 											["groups"] = {
@@ -1306,24 +1473,34 @@ _.Zones =
 												i(151578), -- Fiendish Spaulders
 											},
 											["requiredSkill"] = 165, -- Leatherworking
+											["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
 										}),
 										q(48055, { -- Empyrial Strength
 											["groups"] = {
 												i(151576), -- Empyrial Breastplate
 											},
 											["requiredSkill"] = 164, -- Blacksmithing
+											["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
+										}),
+										q(48069, { -- The Wrench Calls
+											["groups"] = {
+											},
+											["requiredSkill"] = 202, -- Engineering
+											["sourceQuests"] = { 46941 }, -- The Path Forward
 										}),
 										q(48065, { -- Extraterrestrial Exploration
 											["groups"] = {
 												i(151652), -- Wormhole Generator: Argus
 											},
 											["requiredSkill"] = 202, -- Engineering
+											["sourceQuests"] = { 48069 }, -- The Wrench Calls
 										}),
 										q(48074, { -- Looming Over Me
 											["groups"] = {
 												i(151571), -- Lightweave Breeches
 											},
 											["requiredSkill"] = 197, -- Tailoring
+											["sourceQuests"] = { 46941 }, -- The Path Forward
 										}),
 									}),
 									n(127476, { -- Scouting Map
@@ -1356,11 +1533,15 @@ _.Zones =
 											i(152669), -- Argussian Reach Tabard
 											i(153039), -- Crystalline Campfire Toy				
 											i(153290), -- Krokul Mining Pick
-											--q(49006, {	-- Krokul Flute Unlocked
-											--	["itemID"] = 152964,	 -- Krokul Flute
-											--	["ignoreSource"] = true,
-											--	["collectible"] = true,
-											--}),
+											i(152964, {	-- Krokul Flute Unlocked
+												["groups"] = {
+													{
+														--["itemID"] = 152964, -- Krokul Flute
+														["collectible"] = true,
+														["questID"] = 49006, -- Krokul Flute Unlocked
+													},
+												},
+											}),
 										}),
 										n(121589, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings
 											["groups"] = {
