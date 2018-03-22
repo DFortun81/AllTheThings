@@ -10,25 +10,23 @@ _.Instances =
 				["groups"] = {
 					d(1, {		-- Normal
 						n(-17, {	-- Quests 				
-							qa(28834, {
-								i(65655),
-								i(65654),
+							qa(28834, {	-- Rescue the Earthspeaker!
+								i(65655),	-- Leggings of Opportune Strikes
+								i(65654),	-- Belt of a Thousand Deaths
 							}),
 							qh(28833, {
-								i(65655),
-								i(65654),
+								i(65655),	-- Leggings of Opportune Strikes
+								i(65654),	-- Belt of a Thousand Deaths
 							}),
-							qa(28836, {
-								i(65657),
-								i(65659),
-								i(65658),
-								i(),
+							qa(28836, {	-- Sins of the Sea Witch
+								i(65657),	-- Deepmist Robes
+								i(65659),	-- Kelp Forest Vest
+								i(65658),	-- Stonespeaker's Belt
 							}),
-							qh(28843, {
-								i(65657),
-								i(65659),
-								i(65658),
-								i(),
+							qh(28843, {	-- Sins of the Sea Witch
+								i(65657),	-- Deepmist Robes
+								i(65659),	-- Kelp Forest Vest
+								i(65658),	-- Stonespeaker's Belt
 							}),
 						}),
 						n(0, {		-- Zone Drop
