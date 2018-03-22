@@ -1217,6 +1217,12 @@ _.Zones =
 										}),
 									}),
 									n(-17, { -- Quests
+										q(48075, { -- A Colorful Key
+											["groups"] = {
+											},
+											["requiredSkill"] = 755, -- Jewelcrafting
+											["sourceQuests"] = { 46941 }, -- The Path Forward
+										}),
 										q(48076, { -- A Crowning Achievement
 											["groups"] = {
 												i(151587), -- Empyrial Cosmic Crown
@@ -1225,6 +1231,7 @@ _.Zones =
 												i(151590), -- Empyrial Titan Crown
 											},
 											["requiredSkill"] = 755, -- Jewelcrafting
+											["sourceQuests"] = { 48075 }, -- A Colorful Key
 										}),
 										q(48078, { -- Counterbalancing
 											["groups"] = {
@@ -1232,24 +1239,34 @@ _.Zones =
 												i(151578), -- Fiendish Spaulders
 											},
 											["requiredSkill"] = 165, -- Leatherworking
+											["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
 										}),
 										q(48055, { -- Empyrial Strength
 											["groups"] = {
 												i(151576), -- Empyrial Breastplate
 											},
 											["requiredSkill"] = 164, -- Blacksmithing
+											["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
+										}),
+										q(48069, { -- The Wrench Calls
+											["groups"] = {
+											},
+											["requiredSkill"] = 202, -- Engineering
+											["sourceQuests"] = { 46941 }, -- The Path Forward
 										}),
 										q(48065, { -- Extraterrestrial Exploration
 											["groups"] = {
 												i(151652), -- Wormhole Generator: Argus
 											},
 											["requiredSkill"] = 202, -- Engineering
+											["sourceQuests"] = { 48069 }, -- The Wrench Calls
 										}),
 										q(48074, { -- Looming Over Me
 											["groups"] = {
 												i(151571), -- Lightweave Breeches
 											},
 											["requiredSkill"] = 197, -- Tailoring
+											["sourceQuests"] = { 46941 }, -- The Path Forward
 										}),
 									}),
 									n(127476, { -- Scouting Map
@@ -1282,10 +1299,15 @@ _.Zones =
 											i(152669), -- Argussian Reach Tabard
 											i(153039), -- Crystalline Campfire Toy				
 											i(153290), -- Krokul Mining Pick
-											--q(49006, {	-- Krokul Flute Unlocked
-											--	["itemID"] = 152964,	 -- Krokul Flute
-											--	["collectible"] = true
-											--})
+											i(152964, {	-- Krokul Flute Unlocked
+												["groups"] = {
+													{
+														--["itemID"] = 152964, -- Krokul Flute
+														["collectible"] = true,
+														["questID"] = 49006, -- Krokul Flute Unlocked
+													},
+												},
+											}),
 										}),
 										n(121589, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings
 											["groups"] = {
