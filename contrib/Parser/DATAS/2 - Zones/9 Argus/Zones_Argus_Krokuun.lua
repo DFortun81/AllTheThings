@@ -85,12 +85,18 @@ _.Zones =
 										},	
 										["qg"] = 120977, -- Prophet Velen	
 										["sourceQuests"] = { 47223 }, -- Light's Exodus	
-									}),		
+									}),	
+									q(48440, { -- Into the Night
+										["groups"] = {	
+										},	
+										["qg"] = 120977, -- Prophet Velen	
+										["sourceQuests"] = { 47224 }, -- The Vidicaar	
+									}),									
 									q(46938, { -- Alone in the Abyss		
 										["groups"] = {	
 										},	
 										["qg"] = 126307, -- Prophet Velen	
-										["sourceQuests"] = { 47224 }, -- The Vidicaar	
+										["sourceQuests"] = { 48440 }, -- Into the Night
 									}),		
 									q(47589, { -- Righteous Fury		
 										["groups"] = {	
