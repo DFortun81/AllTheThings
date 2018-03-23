@@ -381,7 +381,15 @@ _.Zones =
 					qg(23892, qa(27217)),	-- Thresher Oil
 					qg(40345, qa(25479)),	-- To New Thalanaar (breadcrumb quest for 25486, not available if 25481,28503 are completed)
 					qg(40369, qa(25481)),	-- To New Thalanaar
-					qg(40344, qh(25478)),	-- To the Summit
+--]]
+					qh(25478, {	-- To the Summit
+						["groups"] = {
+						},
+						["qg"] = 40344,	--Nyse
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 28504 },	-- Warchief's Command: Thousand Needles!
+					}),
+--[[
 					qg(23566, qa(27210)),	-- Traitors Among Us
 					qg(12939, qa( 6624)),	-- Triage
 --]]					
