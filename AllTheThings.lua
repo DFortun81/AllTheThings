@@ -1286,7 +1286,7 @@ local function SearchForItemLink(link)
 											otherATTSource = otherATTSource[1];
 											
 											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-											if group[1].f == otherATTSource.f and not otherATTSource.nmc and not otherATTSource.nmr then
+											if (group[1].f == otherATTSource.f or group[1].f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
 												local link = otherATTSource.link;
 												if not link then 
 													link = RETRIEVING_DATA;
@@ -3642,7 +3642,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
 								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and item.f == otherItem.f then
+								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 									if otherItem.classes then
 										-- If this item is class locked...
 										if containsAny(otherItem.classes, item.classes) then
@@ -3674,7 +3674,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
 								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and item.f == otherItem.f then
+								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 									if otherItem.classes then
 										-- If this item is class locked...
 										if containsAny(otherItem.classes, item.classes) then
@@ -3709,7 +3709,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
 								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and item.f == otherItem.f then
+								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 									if otherItem.classes then
 										-- If this item is class locked...
 										-- Since the item is class locked, you don't unlock this source ID despite matching the class. Sorry mate.
@@ -3738,7 +3738,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
 								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and item.f == otherItem.f then
+								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 									if otherItem.classes then
 										-- If this item is class locked...
 										-- Since the item is class locked, you don't unlock this source ID despite matching the class. Sorry mate.
@@ -3775,7 +3775,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 			for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
 					local otherItem = SearchForSourceIDQuickly(sourceID);
-					if otherItem and item.f == otherItem.f and not otherItem.nmc and not otherItem.nmr then
+					if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) and not otherItem.nmc and not otherItem.nmr then
 						return true; -- Okay, fine. You are this class/race. Enjoy your +1, cheater. D:
 					end
 				end
