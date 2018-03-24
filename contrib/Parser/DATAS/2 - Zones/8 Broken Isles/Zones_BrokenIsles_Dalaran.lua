@@ -1622,7 +1622,7 @@ _.Zones =
 									i(135755),	-- Vindictive Gladiator's Satin Leggings
 									i(135752),	-- Vindictive Gladiator's Satin Treads
 								}),		
-								i(146147, { -- Vindictive Gladiator's Satin Armor		
+								i(146147, { -- Vindictive Gladiator's Silk Armor		
 									i(135730),	-- Vindictive Gladiator's Silk Cowl
 									i(135733),	-- Vindictive Gladiator's Silk Amice
 									i(135793),	-- Vindictive Gladiator's Silken Shawl
@@ -1633,7 +1633,7 @@ _.Zones =
 									i(135731),	-- Vindictive Gladiator's Silk Trousers
 									i(135728),	-- Vindictive Gladiator's Silk Treads
 								}),		
-								i(146151, { -- Vindictive Gladiator's Satin Armor		
+								i(146151, { -- Vindictive Gladiator's Felweave Armor		
 									i(135778),	-- Vindictive Gladiator's Felweave Cowl
 									i(135781),	-- Vindictive Gladiator's Felweave Amice
 									i(136880),	-- Vindictive Gladiator's Felweave Cloak
@@ -1644,7 +1644,7 @@ _.Zones =
 									i(135779),	-- Vindictive Gladiator's Felweave Trousers
 									i(135776),	-- Vindictive Gladiator's Felweave Treads
 								}),		
-								i(146141, { -- Vindictive Gladiator's Satin Armor		
+								i(146141, { -- Vindictive Gladiator's Dragonhide Armor		
 									i(135714),	-- Vindictive Gladiator's Dragonhide Helm
 									i(135717),	-- Vindictive Gladiator's Dragonhide Spaulders
 									i(135796),	-- Vindictive Gladiator's Dragonhide Cloak
@@ -1655,7 +1655,7 @@ _.Zones =
 									i(135715),	-- Vindictive Gladiator's Dragonhide Legguards
 									i(135712),	-- Vindictive Gladiator's Dragonhide Moccasins
 								}),		
-								i(146145, { -- Vindictive Gladiator's Satin Armor		
+								i(146145, { -- Vindictive Gladiator's Leather Armor		
 									i(135763),	-- Vindictive Gladiator's Leather Helm
 									i(135765),	-- Vindictive Gladiator's Leather Spaulders
 									i(136865),	-- Vindictive Gladiator's Shadowcape
@@ -1666,7 +1666,7 @@ _.Zones =
 									i(135764),	-- Vindictive Gladiator's Leather Legguards
 									i(135761),	-- Vindictive Gladiator's Leather Slippers
 								}),		
-								i(146143, { -- Vindictive Gladiator's Satin Armor		
+								i(146143, { -- Vindictive Gladiator's Ironskin Armor		
 									i(135738),	-- Vindictive Gladiator's Ironskin Helm
 									i(135740),	-- Vindictive Gladiator's Ironskin Spaulders
 									i(135797),	-- Vindictive Gladiator's Ironskin Cloak
@@ -1677,18 +1677,19 @@ _.Zones =
 									i(135739),	-- Vindictive Gladiator's Ironskin Legguards
 									i(135736),	-- Vindictive Gladiator's Ironskin Slippers
 								}),		
-								i(146263, { -- Vindictive Gladiator's Satin Armor		
+								i(146263, { -- Vindictive Gladiator's Felskin Armor		
 									i(136289),	-- Vindictive Gladiator's Felskin Helm
 									i(136292),	-- Vindictive Gladiator's Felskin Spaulders
+									i(136892),	-- Vindictive Gladiator's Demonthread Cloak
 									i(136291),	-- Vindictive Gladiator's Felskin Tunic
 									i(136294),	-- Vindictive Gladiator's Felskin Wristguards
 									i(136288),	-- Vindictive Gladiator's Felskin Gloves
 									i(136293),	-- Vindictive Gladiator's Felskin Belt
 									i(136290),	-- Vindictive Gladiator's Felskin Legguards
 									i(136287),	-- Vindictive Gladiator's Felskin Boots
-									i(135723),	-- Vindictive Gladiator's Chain Helm
 								}),		
-								i(146139, { -- Vindictive Gladiator's Satin Armor		
+								i(146139, { -- Vindictive Gladiator's Chain Armor		
+									i(135723),	-- Vindictive Gladiator's Chain Helm
 									i(135725),	-- Vindictive Gladiator's Chain Spaulders
 									i(135800),	-- Vindictive Gladiator's Drape of the Tracker
 									i(135720),	-- Vindictive Gladiator's Chain Armor
@@ -1697,9 +1698,9 @@ _.Zones =
 									i(135726),	-- Vindictive Gladiator's Chain Clasp
 									i(135724),	-- Vindictive Gladiator's Chain Leggings
 									i(135721),	-- Vindictive Gladiator's Chain Treads
-									i(135771),	-- Vindictive Gladiator's Ringmail Helm
 								}),		
-								i(146137, { -- Vindictive Gladiator's Satin Armor		
+								i(146137, { -- Vindictive Gladiator's Ringmail Armor		
+									i(135771),	-- Vindictive Gladiator's Ringmail Helm
 									i(135773),	-- Vindictive Gladiator's Ringmail Spaulders
 									i(136866),	-- Vindictive Gladiator's Totemic Cloak
 									i(135768),	-- Vindictive Gladiator's Ringmail Armor
@@ -1708,9 +1709,9 @@ _.Zones =
 									i(135774),	-- Vindictive Gladiator's Ringmail Clasp
 									i(135772),	-- Vindictive Gladiator's Ringmail Kilt
 									i(135769),	-- Vindictive Gladiator's Ringmail Boots
-									i(135747),	-- Vindictive Gladiator's Scaled Helm
 								}),		
-								i(146135, { -- Vindictive Gladiator's Satin Armor		
+								i(146135, { -- Vindictive Gladiator's Scaled Armor		
+									i(135747),	-- Vindictive Gladiator's Scaled Helm
 									i(135749),	-- Vindictive Gladiator's Scaled Shoulders
 									i(135801),	-- Vindictive Gladiator's Greatcloak of Faith
 									i(135744),	-- Vindictive Gladiator's Scaled Battlerobe
@@ -1719,9 +1720,9 @@ _.Zones =
 									i(135750),	-- Vindictive Gladiator's Scaled Girdle
 									i(135748),	-- Vindictive Gladiator's Scaled Legguards
 									i(135745),	-- Vindictive Gladiator's Scaled Sabatons
-									i(135787),	-- Vindictive Gladiator's Plate Helm
 								}),		
-								i(146131, { -- Vindictive Gladiator's Satin Armor		
+								i(146131, { -- Vindictive Gladiator's Plate Armor		
+									i(135787),	-- Vindictive Gladiator's Plate Helm
 									i(135789),	-- Vindictive Gladiator's Plate Shoulders
 									i(136886),	-- Vindictive Gladiator's Cloak of Battle
 									i(135784),	-- Vindictive Gladiator's Plate Chestpiece
@@ -1730,9 +1731,9 @@ _.Zones =
 									i(135790),	-- Vindictive Gladiator's Plate Girdle
 									i(135788),	-- Vindictive Gladiator's Plate Legguards
 									i(135785),	-- Vindictive Gladiator's Plate Warboots
-									i(135707),	-- Vindictive Gladiator's Dreadplate Helm
 								}),		
-								i(146133, { -- Vindictive Gladiator's Satin Armor		
+								i(146133, { -- Vindictive Gladiator's Dreadplate Armor		
+									i(135707),	-- Vindictive Gladiator's Dreadplate Helm
 									i(135709),	-- Vindictive Gladiator's Dreadplate Shoulders
 									i(135792),	-- Vindictive Gladiator's Dreadcloak
 									i(135704),	-- Vindictive Gladiator's Dreadplate Chestpiece
@@ -1741,7 +1742,7 @@ _.Zones =
 									i(135710),	-- Vindictive Gladiator's Dreadplate Girdle
 									i(135708),	-- Vindictive Gladiator's Dreadplate Legguards
 									i(135705),	-- Vindictive Gladiator's Dreadplate Sabatons
-									i(136892),	-- Vindictive Gladiator's Demonthread Cloak
+									
 								}),
 								-- LEGION SEASON 3 & 4
 								i(147664, { -- Cruel Gladiator's Satin Armor		
@@ -2016,7 +2017,7 @@ _.Zones =
 									i(136094),	-- Vindictive Gladiator's Satin Leggings
 									i(136091),	-- Vindictive Gladiator's Satin Treads
 								}),		
-								i(146234, { -- Vindictive Gladiator's Satin Armor		
+								i(146234, { -- Vindictive Gladiator's Silk Armor		
 									i(136069),	-- Vindictive Gladiator's Silk Cowl
 									i(136072),	-- Vindictive Gladiator's Silk Amice
 									i(136132),	-- Vindictive Gladiator's Silken Shawl
@@ -2027,7 +2028,7 @@ _.Zones =
 									i(136070),	-- Vindictive Gladiator's Silk Trousers
 									i(136067),	-- Vindictive Gladiator's Silk Treads
 								}),		
-								i(146238, { -- Vindictive Gladiator's Satin Armor		
+								i(146238, { -- Vindictive Gladiator's Felweave Armor		
 									i(136117),	-- Vindictive Gladiator's Felweave Cowl
 									i(136120),	-- Vindictive Gladiator's Felweave Amice
 									i(136883),	-- Vindictive Gladiator's Felweave Cloak
@@ -2038,7 +2039,7 @@ _.Zones =
 									i(136118),	-- Vindictive Gladiator's Felweave Trousers
 									i(136115),	-- Vindictive Gladiator's Felweave Treads
 								}),		
-								i(146228, { -- Vindictive Gladiator's Satin Armor		
+								i(146228, { -- Vindictive Gladiator's Dragonhide Armor		
 									i(136053),	-- Vindictive Gladiator's Dragonhide Helm
 									i(136056),	-- Vindictive Gladiator's Dragonhide Spaulders
 									i(136135),	-- Vindictive Gladiator's Dragonhide Cloak
@@ -2049,7 +2050,7 @@ _.Zones =
 									i(136054),	-- Vindictive Gladiator's Dragonhide Legguards
 									i(136051),	-- Vindictive Gladiator's Dragonhide Moccasins
 								}),		
-								i(146232, { -- Vindictive Gladiator's Satin Armor		
+								i(146232, { -- Vindictive Gladiator's Leather Armor		
 									i(136102),	-- Vindictive Gladiator's Leather Helm
 									i(136104),	-- Vindictive Gladiator's Leather Spaulders
 									i(136874),	-- Vindictive Gladiator's Shadowcape
@@ -2060,7 +2061,7 @@ _.Zones =
 									i(136103),	-- Vindictive Gladiator's Leather Legguards
 									i(136100),	-- Vindictive Gladiator's Leather Slippers
 								}),		
-								i(146230, { -- Vindictive Gladiator's Satin Armor		
+								i(146230, { -- Vindictive Gladiator's Ironskin Armor		
 									i(136077),	-- Vindictive Gladiator's Ironskin Helm
 									i(136079),	-- Vindictive Gladiator's Ironskin Spaulders
 									i(136136),	-- Vindictive Gladiator's Ironskin Cloak
@@ -2071,7 +2072,7 @@ _.Zones =
 									i(136078),	-- Vindictive Gladiator's Ironskin Legguards
 									i(136075),	-- Vindictive Gladiator's Ironskin Slippers
 								}),		
-								i(146270, { -- Vindictive Gladiator's Satin Armor		
+								i(146270, { -- Vindictive Gladiator's Felskin Armor		
 									["groups"] = {
 										i(136313),	-- Vindictive Gladiator's Felskin Helm
 										i(136316),	-- Vindictive Gladiator's Felskin Spaulders
@@ -2085,7 +2086,7 @@ _.Zones =
 									},
 									["classes"] = { 12 },
 								}),		
-								i(146226, { -- Vindictive Gladiator's Satin Armor		
+								i(146226, { -- Vindictive Gladiator's Chain Armor		
 									i(136062),	-- Vindictive Gladiator's Chain Helm
 									i(136064),	-- Vindictive Gladiator's Chain Spaulders
 									i(136139),	-- Vindictive Gladiator's Drape of the Tracker
@@ -2096,7 +2097,7 @@ _.Zones =
 									i(136063),	-- Vindictive Gladiator's Chain Leggings
 									i(136060),	-- Vindictive Gladiator's Chain Treads
 								}),		
-								i(146224, { -- Vindictive Gladiator's Satin Armor		
+								i(146224, { -- Vindictive Gladiator's Ringmail Armor		
 									i(136110),	-- Vindictive Gladiator's Ringmail Helm
 									i(136112),	-- Vindictive Gladiator's Ringmail Spaulders
 									i(136875),	-- Vindictive Gladiator's Totemic Cloak
@@ -2107,7 +2108,7 @@ _.Zones =
 									i(136111),	-- Vindictive Gladiator's Ringmail Kilt
 									i(136108),	-- Vindictive Gladiator's Ringmail Boots
 								}),		
-								i(146222, { -- Vindictive Gladiator's Satin Armor		
+								i(146222, { -- Vindictive Gladiator's Scaled Armor		
 									i(136086),	-- Vindictive Gladiator's Scaled Helm
 									i(136088),	-- Vindictive Gladiator's Scaled Shoulders
 									i(136140),	-- Vindictive Gladiator's Greatcloak of Faith
@@ -2118,7 +2119,7 @@ _.Zones =
 									i(136087),	-- Vindictive Gladiator's Scaled Legguards
 									i(136084),	-- Vindictive Gladiator's Scaled Sabatons
 								}),		
-								i(146218, { -- Vindictive Gladiator's Satin Armor		
+								i(146218, { -- Vindictive Gladiator's Plate Armor		
 									i(136126),	-- Vindictive Gladiator's Plate Helm
 									i(136128),	-- Vindictive Gladiator's Plate Shoulders
 									i(136889),	-- Vindictive Gladiator's Cloak of Battle
@@ -2129,7 +2130,7 @@ _.Zones =
 									i(136127),	-- Vindictive Gladiator's Plate Legguards
 									i(136124),	-- Vindictive Gladiator's Plate Warboots
 								}),		
-								i(146220, { -- Vindictive Gladiator's Satin Armor		
+								i(146220, { -- Vindictive Gladiator's Dreadplate Armor		
 									i(136046),	-- Vindictive Gladiator's Dreadplate Helm
 									i(136048),	-- Vindictive Gladiator's Dreadplate Shoulders
 									i(136131),	-- Vindictive Gladiator's Dreadcloak
