@@ -462,7 +462,6 @@ _.Zones =
 					}),
 					n(-168, { -- Other Quests
 						sz(11543,1, { -- Deliverance Point
-							
 							q(46244, { -- Cathedral of Eternal Night: Altar of the Aegis
 								["groups"] = {
 									i(146932), -- Condensed Storm's Fury
@@ -530,6 +529,13 @@ _.Zones =
 								["qg"] = 119886, -- Excavator Karla
 								["sourceQuests"] = { 46511 }, -- We're Treasure Hunters
 							}),
+						}),
+						q(46317, { -- Talon's Call
+							["groups"] = {
+							},
+							["qg"] = 118105, -- Grovewarden Proudhorn
+							["sourceQuests"] = { 46246 }, -- Strike Them Down
+							["classes"] = { 11 },  -- Druid
 						}),
 					}),
 					--[[
