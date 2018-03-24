@@ -183,7 +183,7 @@ _.Zones =
 							["questID"] = 49183,
 							["modelScale"] = 0.80,
 						}),
-						n(127376, { --  Chief Alchemist Munculus
+						n(127376, { -- Chief Alchemist Munculus
 							["groups"] = {
 								-- i(153113), -- Demon's Soulstone
 							},
@@ -221,76 +221,85 @@ _.Zones =
 							},
 							["questID"] = 48815,
 						}),
-						o(273519, {	-- Legion War Supplies
-							i(153340),	--Triumvirate High Guard's Breastplate
-							i(153344),	--Triumvirate High Guard's Bracers
-							i(153343),	--Triumvirate High Guard's Gauntlets
-							i(153345),	--Triumvirate High Guard's Warboots
-							i(152886),	--Zealous Felslinger's Visage
-							i(152888),	--Zealous Felslinger's Epaulets
-							i(152885),	--Zealous Felslinger's Handwraps
-							i(152887),	--Zealous Felslinger's Leggings
-							i(152883),	--Zealous Felslinger's Boots
+						o(273519, {	-- Legion War Supplies (east and south of small green lake in southeast area of map)
+							["groups"] = {
+								i(153340),	-- Triumvirate High Guard's Breastplate
+								i(153344),	-- Triumvirate High Guard's Bracers
+								i(153343),	-- Triumvirate High Guard's Gauntlets
+								i(153345),	-- Triumvirate High Guard's Warboots
+								i(152886),	-- Zealous Felslinger's Visage
+								i(152888),	-- Zealous Felslinger's Epaulets
+								i(152885),	-- Zealous Felslinger's Handwraps
+								i(152887),	-- Zealous Felslinger's Leggings
+							},
+							["questID"] = 48382,
 						}),
 						o(273521, {	-- Legion War Supplies
-							i(153340),	--Triumvirate High Guard's Breastplate
-							i(153344),	--Triumvirate High Guard's Bracers
-							i(153338),	--Triumvirate High Guard's Leggings
-							i(153345),	--Triumvirate High Guard's Warboots
-							i(152888),	--Zealous Felslinger's Epaulets
-							i(152889),	--Zealous Felslinger's Cuffs
-							i(152883),	--Zealous Felslinger's Boots
+							i(153340),	-- Triumvirate High Guard's Breastplate
+							i(153344),	-- Triumvirate High Guard's Bracers
+							i(153338),	-- Triumvirate High Guard's Leggings
+							i(153345),	-- Triumvirate High Guard's Warboots
+							i(152888),	-- Zealous Felslinger's Epaulets
+							i(152889),	-- Zealous Felslinger's Cuffs
+							i(152883),	-- Zealous Felslinger's Boots
 						}),
 						o(273523, {	-- Legion War Supplies
-							i(153339),	--Triumvirate High Guard's Casque
-							i(153342),	--Triumvirate High Guard's Pauldrons
-							i(153344),	--Triumvirate High Guard's Bracers
-							i(153343),	--Triumvirate High Guard's Gauntlets
-							i(152886),	--Zealous Felslinger's Visage
-							i(152889),	--Zealous Felslinger's Cuffs
-							i(152887),	--Zealous Felslinger's Leggings
+							i(153339),	-- Triumvirate High Guard's Casque
+							i(153342),	-- Triumvirate High Guard's Pauldrons
+							i(153344),	-- Triumvirate High Guard's Bracers
+							i(153343),	-- Triumvirate High Guard's Gauntlets
+							i(152886),	-- Zealous Felslinger's Visage
+							i(152889),	-- Zealous Felslinger's Cuffs
+							i(152887),	-- Zealous Felslinger's Leggings
 						}),
-						o(273524, {	-- Legion War Supplies
-							i(153342),	--Triumvirate High Guard's Pauldrons
-							i(153338),	--Triumvirate High Guard's Leggings
-							i(153345),	--Triumvirate High Guard's Warboots
-							i(152888),	--Zealous Felslinger's Epaulets
-							i(152889),	--Zealous Felslinger's Cuffs
-							i(152881),	--Zealous Felslinger's Girdle
-							i(152887),	--Zealous Felslinger's Leggings
+						o(273524, {	-- Legion War Supplies (southernmost point of wide green river, close to Felfire Armory)
+							["groups"] = {
+								i(153342),	-- Triumvirate High Guard's Pauldrons
+								i(153338),	-- Triumvirate High Guard's Leggings
+								i(152888),	-- Zealous Felslinger's Epaulets
+								i(152889),	-- Zealous Felslinger's Cuffs
+								i(152881),	-- Zealous Felslinger's Girdle
+								i(152887),	-- Zealous Felslinger's Leggings
+							},
+							["questID"] = 48385,
 						}),
-						o(273527, {	-- Legion War Supplies
-							i(153342),	--Triumvirate High Guard's Pauldrons
-							i(152881),	--Zealous Felslinger's Girdle
+						o(273527, {	-- Legion War Supplies (northeast, to the right of bridges)
+							["groups"] = {
+								i(153339),	-- Triumvirate High Guard's Casque
+								i(153342),	-- Triumvirate High Guard's Pauldrons
+							},
+							["questID"] = 48387,
 						}),
 						o(273528, {	-- Legion War Supplies
-							i(153339),	--Triumvirate High Guard's Casque
-							i(153340),	--Triumvirate High Guard's Breastplate
-							i(153344),	--Triumvirate High Guard's Bracers
-							i(153343),	--Triumvirate High Guard's Gauntlets
-							i(153338),	--Triumvirate High Guard's Leggings
-							i(153345),	--Triumvirate High Guard's Warboots
-							i(152889),	--Zealous Felslinger's Cuffs
-							i(152885),	--Zealous Felslinger's Handwraps
-							i(152883),	--Zealous Felslinger's Boots
+							i(153339),	-- Triumvirate High Guard's Casque
+							i(153340),	-- Triumvirate High Guard's Breastplate
+							i(153344),	-- Triumvirate High Guard's Bracers
+							i(153343),	-- Triumvirate High Guard's Gauntlets
+							i(153338),	-- Triumvirate High Guard's Leggings
+							i(153345),	-- Triumvirate High Guard's Warboots
+							i(152889),	-- Zealous Felslinger's Cuffs
+							i(152885),	-- Zealous Felslinger's Handwraps
+							i(152883),	-- Zealous Felslinger's Boots
 						}),
 						o(273533, {	-- Legion War Supplies
-							i(153339),	--Triumvirate High Guard's Casque
-							i(153341),	--Triumvirate High Guard's Greatbelt
+							i(153339),	-- Triumvirate High Guard's Casque
+							i(153341),	-- Triumvirate High Guard's Greatbelt
 						}),
 						o(273535, {	-- Legion War Supplies
-							i(153344),	--Triumvirate High Guard's Bracers
-							i(153343),	--Triumvirate High Guard's Gauntlets
-							i(153345),	--Triumvirate High Guard's Warboots
-							i(152885),	--Zealous Felslinger's Handwraps
+							i(153344),	-- Triumvirate High Guard's Bracers
+							i(153343),	-- Triumvirate High Guard's Gauntlets
+							i(153345),	-- Triumvirate High Guard's Warboots
+							i(152885),	-- Zealous Felslinger's Handwraps
 						}),
-						o(273538, {	-- Legion War Supplies
-							i(153342),	--Triumvirate High Guard's Pauldrons
-							i(153340),	--Triumvirate High Guard's Breastplate
-							i(153343),	--Triumvirate High Guard's Gauntlets
-							i(153345),	--Triumvirate High Guard's Warboots
-							i(152885),	--Zealous Felslinger's Handwraps
-							i(152881),	--Zealous Felslinger's Girdle
+						o(273538, {	-- Legion War Supplies (around Varga cave)
+							["groups"] = {
+								i(153342),	-- Triumvirate High Guard's Pauldrons
+								i(153340),	-- Triumvirate High Guard's Breastplate
+								i(153345),	-- Triumvirate High Guard's Warboots
+								i(152885),	-- Zealous Felslinger's Handwraps
+								i(152881),	-- Zealous Felslinger's Girdle
+							},
+							["questID"] = 48389,
 						}),
 						n(126254, { -- Lieutenant Xakaar
 							["groups"] = {
@@ -300,15 +309,15 @@ _.Zones =
 						}),
 						n(122947, { -- Mistress Il'thendra
 							["groups"] = {
-								i(153327),	--Mystic Wakener's Dagger
-								i(152946),	--World-Defiler's Casque
-								i(152944),	--World-Defiler's Shoulderplates
-								i(152949),	--World-Defiler's Cuirass
-								i(152942),	--World-Defiler's Wristguards
-								i(152947),	--World-Defiler's Gauntlets
-								i(152943),	--World-Defiler's Girdle
-								i(152945),	--World-Defiler's Tuille
-								i(152948),	--World-Defiler's Sabatons
+								i(153327),	-- Mystic Wakener's Dagger
+								i(152946),	-- World-Defiler's Casque
+								i(152944),	-- World-Defiler's Shoulderplates
+								i(152949),	-- World-Defiler's Cuirass
+								i(152942),	-- World-Defiler's Wristguards
+								i(152947),	-- World-Defiler's Gauntlets
+								i(152943),	-- World-Defiler's Girdle
+								i(152945),	-- World-Defiler's Tuille
+								i(152948),	-- World-Defiler's Sabatons
 							},
 							["questID"] = 49240,
 						}),
@@ -373,15 +382,15 @@ _.Zones =
 						}),
 						n(127300, { -- Void Warden Valsuran
 							["groups"] = {
-								i(153319), --Ardent Vindicator's Greatmace
-								i(152886),	--Zealous Felslinger's Visage
-								i(152888),	--Zealous Felslinger's Epaulets
-								i(152884),	--Zealous Felslinger's Robe
-								i(152889),	--Zealous Felslinger's Cuffs
-								i(152885),	--Zealous Felslinger's Handwraps
-								i(152881),	--Zealous Felslinger's Girdle
-								i(152887),	--Zealous Felslinger's Leggings
-								i(152883),	--Zealous Felslinger's Boots
+								i(153319),	-- Ardent Vindicator's Greatmace
+								i(152886),	-- Zealous Felslinger's Visage
+								i(152888),	-- Zealous Felslinger's Epaulets
+								i(152884),	-- Zealous Felslinger's Robe
+								i(152889),	-- Zealous Felslinger's Cuffs
+								i(152885),	-- Zealous Felslinger's Handwraps
+								i(152881),	-- Zealous Felslinger's Girdle
+								i(152887),	-- Zealous Felslinger's Leggings
+								i(152883),	-- Zealous Felslinger's Boots
 							},
 							["questID"] = 48824,
 						}),
@@ -399,15 +408,15 @@ _.Zones =
 						}),
 						n(127118, { -- Worldsplitter Skuul
 							["groups"] = {
-								i(153312), --Praetor's Ornamental Greatsword
-								i(152886),	--Zealous Felslinger's Visage
-								i(152888),	--Zealous Felslinger's Epaulets
-								i(152884),	--Zealous Felslinger's Robe
-								i(152889),	--Zealous Felslinger's Cuffs
-								i(152885),	--Zealous Felslinger's Handwraps
-								i(152881),	--Zealous Felslinger's Girdle
-								i(152887),	--Zealous Felslinger's Leggings
-								i(152883),	--Zealous Felslinger's Boots
+								i(153312),	-- Praetor's Ornamental Greatsword
+								i(152886),	-- Zealous Felslinger's Visage
+								i(152888),	-- Zealous Felslinger's Epaulets
+								i(152884),	-- Zealous Felslinger's Robe
+								i(152889),	-- Zealous Felslinger's Cuffs
+								i(152885),	-- Zealous Felslinger's Handwraps
+								i(152881),	-- Zealous Felslinger's Girdle
+								i(152887),	-- Zealous Felslinger's Leggings
+								i(152883),	-- Zealous Felslinger's Boots
 							},
 							["questID"] = 48820,
 						}),
