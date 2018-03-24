@@ -496,15 +496,15 @@ _.Zones =
 					n(-16, { 	-- Rares
 						n(124775, { -- Commander Endaxis
 							["groups"] = {
-								i(153255), --Isolon Anchorite's Cudgel
-								i(152946),	--World-Defiler's Casque
-								i(152944),	--World-Defiler's Shoulderplates
-								i(152949),	--World-Defiler's Cuirass
-								i(152942),	--World-Defiler's Wristguards
-								i(152947),	--World-Defiler's Gauntlets
-								i(152943),	--World-Defiler's Girdle
-								i(152945),	--World-Defiler's Tuille
-								i(152948),	--World-Defiler's Sabatons
+								i(153255),	-- Isolon Anchorite's Cudgel
+								i(152946),	-- World-Defiler's Casque
+								i(152944),	-- World-Defiler's Shoulderplates
+								i(152949),	-- World-Defiler's Cuirass
+								i(152942),	-- World-Defiler's Wristguards
+								i(152947),	-- World-Defiler's Gauntlets
+								i(152943),	-- World-Defiler's Girdle
+								i(152945),	-- World-Defiler's Tuille
+								i(152948),	-- World-Defiler's Sabatons
 							},
 							["questID"] = 48564,
 						}),
@@ -516,68 +516,87 @@ _.Zones =
 						}),
 						n(122911, { -- Commander Vecaya
 							["groups"] = {
-								i(153299), --Militant Exarch's Shortsword
-								i(152946),	--World-Defiler's Casque
-								i(152944),	--World-Defiler's Shoulderplates
+								i(153299),	-- Militant Exarch's Shortsword
+								i(152946),	-- World-Defiler's Casque
+								i(152944),	-- World-Defiler's Shoulderplates
+								i(152949),	-- World-Defiler's Cuirass
+								i(152942),	-- World-Defiler's Wristguards
+								i(152947),	-- World-Defiler's Gauntlets
+								i(152943),	-- World-Defiler's Girdle
+								i(152945),	-- World-Defiler's Tuille
+								i(152948),	-- World-Defiler's Sabatons
+							},
+							["questID"] = 48563,
+						}),
+						o(271849, {	-- Eredar War Supplies (very small circular spawn area west and a little south of Krokul Hovel (near Talestra the Vile)
+							["groups"] = {
+								i(152946),	-- World-Defiler's Casque
+								i(152944),	-- World-Defiler's Shoulderplates
+								i(152949),	-- World-Defiler's Cuirass
+								i(152943),	-- World-Defiler's Girdle
+								i(152945),	-- World-Defiler's Tuille
+							},
+							["questID"] = 47753,
+						}),
+						o(271850, {	-- Eredar War Supplies (south central/east and south of Shattered Fields beacon)
+							["groups"] = {
+								i(152946),	-- World-Defiler's Casque
+								i(152949),	-- World-Defiler's Cuirass
+								i(152942),	-- World-Defiler's Wristguards
+								i(152943),	-- World-Defiler's Girdle
+								i(152945),	-- World-Defiler's Tuille
+							},
+							["questID"] = 47997,
+						}),
+						o(272455, {	-- Eredar War Supplies (central, around Annihilan Pits)
+							["groups"] = {
+								i(152946),	-- World-Defiler's Casque
+								i(152942),	-- World-Defiler's Wristguards
+								i(152947),	-- World-Defiler's Gauntlets
+								i(152945),	-- World-Defiler's Tuille
+								i(152948),	-- World-Defiler's Sabatons
+							},
+							["questID"] = 47752,
+						}),
+						o(272456, {	-- Eredar War Supplies (north)
+							["groups"] = {
+								i(152944),	-- World-Defiler's Shoulderplates
+								i(152942),	-- World-Defiler's Wristguards
+								i(152947),	-- World-Defiler's Gauntlets
+								i(152943),	-- World-Defiler's Girdle
+								i(152948),	-- World-Defiler's Sabatons
+							},
+							["questID"] = 47999,
+						}),
+						o(272770, {	-- Eredar War Supplies (southwest, in/around the Xenedar)
+							["groups"] = {
+								i(152944),	-- World-Defiler's Shoulderplates
+								i(152949),	-- World-Defiler's Cuirass
+								i(152942),	-- World-Defiler's Wristguards
+								i(152947),	-- World-Defiler's Gauntlets
+								i(152945),	-- World-Defiler's Tuille
+								i(152948),	-- World-Defiler's Sabatons
+							},
+							["questID"] = 48336,
+						}),
+						o(272771, {	-- Eredar War Supplies (scattered around center and northeast)
+							["groups"] = {
+								i(152946),	-- World-Defiler's Casque
+								i(152944),	-- World-Defiler's Shoulderplates
+								i(152949),	-- World-Defiler's Cuirass
+								i(152943),	-- World-Defiler's Girdle
+							},
+							["questID"] = 48339,
+						}),
+						o(273222, {	-- Eredar War Supplies (southeast)
+							["groups"] = {
 								i(152949),	--World-Defiler's Cuirass
 								i(152942),	--World-Defiler's Wristguards
 								i(152947),	--World-Defiler's Gauntlets
 								i(152943),	--World-Defiler's Girdle
 								i(152945),	--World-Defiler's Tuille
-								i(152948),	--World-Defiler's Sabatons
 							},
-							["questID"] = 48563,
-						}),
-						o(271849, {	-- Eredar War Supplies
-							i(152946),	--World-Defiler's Casque
-							i(152944),	--World-Defiler's Shoulderplates
-							i(152949),	--World-Defiler's Cuirass
-							i(152943),	--World-Defiler's Girdle
-							i(152945),	--World-Defiler's Tuille
-						}),
-						o(271850, {	-- Eredar War Supplies
-							i(152946),	--World-Defiler's Casque
-							i(152949),	--World-Defiler's Cuirass
-							i(152942),	--World-Defiler's Wristguards
-							i(152943),	--World-Defiler's Girdle
-							i(152945),	--World-Defiler's Tuille
-						}),
-						o(272455, {	-- Eredar War Supplies (central, around Annihilan Pits)
-							["groups"] = {
-								i(152946),	--World-Defiler's Casque
-								i(152942),	--World-Defiler's Wristguards
-								i(152947),	--World-Defiler's Gauntlets
-								i(152945),	--World-Defiler's Tuille
-								i(152948),	--World-Defiler's Sabatons
-							},
-							["questID"] = 47752,
-						}),
-						o(272456, {	-- Eredar War Supplies
-							i(152944),	--World-Defiler's Shoulderplates
-							i(152942),	--World-Defiler's Wristguards
-							i(152943),	--World-Defiler's Girdle
-							i(152948),	--World-Defiler's Sabatons
-						}),
-						o(272770, {	-- Eredar War Supplies
-							i(152944),	--World-Defiler's Shoulderplates
-							i(152949),	--World-Defiler's Cuirass
-							i(152942),	--World-Defiler's Wristguards
-							i(152947),	--World-Defiler's Gauntlets
-							i(152945),	--World-Defiler's Tuille
-							i(152948),	--World-Defiler's Sabatons
-						}),
-						o(272771, {	-- Eredar War Supplies
-							i(152946),	--World-Defiler's Casque
-							i(152944),	--World-Defiler's Shoulderplates
-							i(152949),	--World-Defiler's Cuirass
-							i(152943),	--World-Defiler's Girdle
-						}),
-						o(273222, {	-- Eredar War Supplies
-							i(152949),	--World-Defiler's Cuirass
-							i(152942),	--World-Defiler's Wristguards
-							i(152947),	--World-Defiler's Gauntlets
-							i(152943),	--World-Defiler's Girdle
-							i(152945),	--World-Defiler's Tuille
+							["questID"] = 48000,
 						}),
 						n(125820, { -- Imp Mother Laglath
 							["groups"] = {

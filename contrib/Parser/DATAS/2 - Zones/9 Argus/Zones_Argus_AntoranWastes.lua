@@ -234,23 +234,29 @@ _.Zones =
 							},
 							["questID"] = 48382,
 						}),
-						o(273521, {	-- Legion War Supplies
-							i(153340),	-- Triumvirate High Guard's Breastplate
-							i(153344),	-- Triumvirate High Guard's Bracers
-							i(153338),	-- Triumvirate High Guard's Leggings
-							i(153345),	-- Triumvirate High Guard's Warboots
-							i(152888),	-- Zealous Felslinger's Epaulets
-							i(152889),	-- Zealous Felslinger's Cuffs
-							i(152883),	-- Zealous Felslinger's Boots
+						o(273521, {	-- Legion War Supplies (around Spirit Crucible)
+							["groups"] = {
+								i(153340),	-- Triumvirate High Guard's Breastplate
+								i(153344),	-- Triumvirate High Guard's Bracers
+								i(153343),	-- Triumvirate High Guard's Gauntlets
+								i(153338),	-- Triumvirate High Guard's Leggings
+								i(153345),	-- Triumvirate High Guard's Warboots
+								i(152888),	-- Zealous Felslinger's Epaulets
+								i(152889),	-- Zealous Felslinger's Cuffs
+								i(152883),	-- Zealous Felslinger's Boots
+							},
+							["questID"] = 48383,
 						}),
-						o(273523, {	-- Legion War Supplies
-							i(153339),	-- Triumvirate High Guard's Casque
-							i(153342),	-- Triumvirate High Guard's Pauldrons
-							i(153344),	-- Triumvirate High Guard's Bracers
-							i(153343),	-- Triumvirate High Guard's Gauntlets
-							i(152886),	-- Zealous Felslinger's Visage
-							i(152889),	-- Zealous Felslinger's Cuffs
-							i(152887),	-- Zealous Felslinger's Leggings
+						o(273523, {	-- Legion War Supplies (north central, possibly only in cave)
+							["groups"] = {
+								i(153339),	-- Triumvirate High Guard's Casque
+								i(153342),	-- Triumvirate High Guard's Pauldrons
+								i(153344),	-- Triumvirate High Guard's Bracers
+								i(153343),	-- Triumvirate High Guard's Gauntlets
+								i(152886),	-- Zealous Felslinger's Visage
+								i(152889),	-- Zealous Felslinger's Cuffs
+							},
+							["questID"] = 48384,
 						}),
 						o(273524, {	-- Legion War Supplies (southernmost point of wide green river, close to Felfire Armory)
 							["groups"] = {
@@ -270,26 +276,33 @@ _.Zones =
 							},
 							["questID"] = 48387,
 						}),
-						o(273528, {	-- Legion War Supplies
-							i(153339),	-- Triumvirate High Guard's Casque
-							i(153340),	-- Triumvirate High Guard's Breastplate
-							i(153344),	-- Triumvirate High Guard's Bracers
-							i(153343),	-- Triumvirate High Guard's Gauntlets
-							i(153338),	-- Triumvirate High Guard's Leggings
-							i(153345),	-- Triumvirate High Guard's Warboots
-							i(152889),	-- Zealous Felslinger's Cuffs
-							i(152885),	-- Zealous Felslinger's Handwraps
-							i(152883),	-- Zealous Felslinger's Boots
+						o(273528, {	-- Legion War Supplies (southeast, around Terminus)
+							["groups"] = {
+								i(153339),	-- Triumvirate High Guard's Casque
+								i(153340),	-- Triumvirate High Guard's Breastplate
+								i(153344),	-- Triumvirate High Guard's Bracers
+								i(153343),	-- Triumvirate High Guard's Gauntlets
+								i(153345),	-- Triumvirate High Guard's Warboots
+								i(152885),	-- Zealous Felslinger's Handwraps
+								i(152883),	-- Zealous Felslinger's Boots
+							},
+							["questID"] = 48390,
 						}),
-						o(273533, {	-- Legion War Supplies
-							i(153339),	-- Triumvirate High Guard's Casque
-							i(153341),	-- Triumvirate High Guard's Greatbelt
+						o(273533, {	-- Legion War Supplies (north - northeast of Spirit Crucible, west of bridges)
+							["groups"] = {
+								i(153339),	-- Triumvirate High Guard's Casque
+								i(153341),	-- Triumvirate High Guard's Greatbelt
+								i(152885),	-- Zealous Felslinger's Handwraps
+							},
+							["questID"] = 48388,
 						}),
-						o(273535, {	-- Legion War Supplies
-							i(153344),	-- Triumvirate High Guard's Bracers
-							i(153343),	-- Triumvirate High Guard's Gauntlets
-							i(153345),	-- Triumvirate High Guard's Warboots
-							i(152885),	-- Zealous Felslinger's Handwraps
+						o(273535, {	-- Legion War Supplies (around spiders)
+							["groups"] = {
+								i(153344),	-- Triumvirate High Guard's Bracers
+								i(153345),	-- Triumvirate High Guard's Warboots
+								i(152885),	-- Zealous Felslinger's Handwraps
+							},
+							["questID"] = 48391,
 						}),
 						o(273538, {	-- Legion War Supplies (around Varga cave)
 							["groups"] = {
