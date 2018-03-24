@@ -794,7 +794,7 @@ Notation of what is missing from Blizzard's localization
 					i(27907),	-- Mana-Etched Pantaloons
 				},		
 				["icon"] = "Interface\\Icons\\inv_jewelry_ring_56",
-				["itemModID"] = 2,
+				["modID"] = 2,
 			}),			
 			n(-3289, {	-- Moonglade Raiment		
 				["groups"] = {		
@@ -827,7 +827,7 @@ Notation of what is missing from Blizzard's localization
 					i(27837),	-- Wastewalker Leggings
 				},		
 				["icon"] = "Interface\\Icons\\inv_helmet_15",
-				["itemModID"] = 2,				
+				["modID"] = 2,				
 			}),			
 			n(-3291, {	-- Beast Lord Armor		
 				["groups"] = {		
@@ -860,7 +860,7 @@ Notation of what is missing from Blizzard's localization
 					i(27936),	-- Greaves of Desolation
 				},		
 				["icon"] = "Interface\\Icons\\inv_helmet_18",
-				["itemModID"] = 2,
+				["modID"] = 2,
 			}),			
 			n(-3293, {	-- Righteous Armor		
 				["groups"] = {		
@@ -893,7 +893,7 @@ Notation of what is missing from Blizzard's localization
 					i(27870),	-- Doomplate Legguards
 				},		
 				["icon"] = "Interface\\Icons\\inv_helmet_20",
-				["itemModID"] = 2,
+				["modID"] = 2,
 			}),			
 		}),
 		n(-3177, { -- Tier 4 (Karazhan, Gruul's Lair, & Magtheridon's Lair)

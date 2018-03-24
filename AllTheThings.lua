@@ -1376,7 +1376,7 @@ local function SearchForItemLink(link)
 										else
 											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
 											if otherSource then
-												local name, link = GetItemInfo(string.format("item:%d:::::::::::%d:1:3524", otherSource.itemID, otherSource.itemModID));
+												local name, link = GetItemInfo(string.format("item:%d:::::::::::%d:1:3524", otherSource.itemID, otherSource.modID));
 												if not link then 
 													link = RETRIEVING_DATA;
 													working = true;
@@ -2966,14 +2966,14 @@ app.BaseItem = {
 		elseif key == "link" then
 			local itemLink = t.itemID;
 			if itemLink then
-				if t.bonus then
-					if t.bonus > 0 then
-						itemLink = string.format("item:%d::::::::::::1:%d", itemLink, t.bonus);
+				if t.bonusID then
+					if t.bonusID > 0 then
+						itemLink = string.format("item:%d::::::::::::1:%d", itemLink, t.bonusID);
 					else
 						itemLink = string.format("item:%d:::::::::::::", itemLink);
 					end
-				elseif t.itemModID then
-					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, t.itemModID);
+				elseif t.modID then
+					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, t.modID);
 				end
 			end
 			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
@@ -2986,7 +2986,7 @@ app.BaseItem = {
 			return t.questID;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID);
-		elseif key == "itemModID" then
+		elseif key == "modID" then
 			return 1;
 		elseif key == "name" then
 			return t.link and GetItemInfo(t.link);
@@ -2997,15 +2997,15 @@ app.BaseItem = {
 		elseif key == "tsm" then
 			local itemLink = t.itemID;
 			if itemLink then
-				if t.bonus then
-					if t.bonus > 0 then
-						return string.format("i:%d:0:1:%d", itemLink, t.bonus);
+				if t.bonusID then
+					if t.bonusID > 0 then
+						return string.format("i:%d:0:1:%d", itemLink, t.bonusID);
 					else
 						return string.format("i:%d", itemLink);
 					end
-				--elseif t.itemModID then
-					-- NOTE: At this time, TSM3 does not support itemModID. (RIP)
-					--return string.format("i:%d:%d:1:3524", itemLink, t.itemModID);
+				--elseif t.modID then
+					-- NOTE: At this time, TSM3 does not support modID. (RIP)
+					--return string.format("i:%d:%d:1:3524", itemLink, t.modID);
 				end
 				return string.format("i:%d", itemLink);
 			end
@@ -5659,20 +5659,20 @@ local function SetRowData(self, data)
 					item = {};
 					SourceIDs[data.itemID] = item;
 				end
-				if data.bonus then
+				if data.bonusID then
 					local v = item.v;
 					if not v then
 						v = {};
 						item.v = v;
 					end
-					v[data.bonus] = s;
+					v[data.bonusID] = s;
 				else
 					local m = item.m;
 					if not m then
 						m = {};
 						item.m = m;
 					end
-					m[data.itemModID or 1] = s;
+					m[data.modID or 1] = s;
 				end
 				print("NEW SOURCE ID!", text);
 				SetDataMember("Items", SourceIDs);

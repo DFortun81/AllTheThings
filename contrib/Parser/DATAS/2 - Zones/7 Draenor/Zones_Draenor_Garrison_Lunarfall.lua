@@ -653,7 +653,7 @@ _.Zones =
 										i(113664),	-- Sandals of Mycoid Musing
 										i(113595),	-- Treads of Sand and Blood
 									},
-									["itemModID"] = 3,
+									["modID"] = 3,
 								}),
 								i(118530, {	-- Cache of Highmaul Treasures [Heroic]
 									["groups"] = {
@@ -703,7 +703,7 @@ _.Zones =
 										i(113664),	-- Sandals of Mycoid Musing
 										i(113595),	-- Treads of Sand and Blood
 									},
-									["itemModID"] = 5,
+									["modID"] = 5,
 								}),
 								i(118531, {	-- Cache of Highmaul Treasures [Mythic]
 									["groups"] = {
@@ -753,7 +753,7 @@ _.Zones =
 										i(113664),	-- Sandals of Mycoid Musing
 										i(113595),	-- Treads of Sand and Blood
 									},
-									["itemModID"] = 6,
+									["modID"] = 6,
 								}),
 								i(122484, { -- Blackrock Foundry Spoils [Normal]
 									["groups"] = {
@@ -823,7 +823,7 @@ _.Zones =
 										i(113919),	-- Treads of Rekindled Flames
 										i(113974),	-- Treads of the Dark Hunt
 									},
-									["itemModID"] = 3,
+									["modID"] = 3,
 								}),
 								i(122485, { -- Blackrock Foundry Spoils [Heroic]
 									["groups"] = {
@@ -893,7 +893,7 @@ _.Zones =
 										i(113919),	-- Treads of Rekindled Flames
 										i(113974),	-- Treads of the Dark Hunt
 									},
-									["itemModID"] = 5,
+									["modID"] = 5,
 								}),
 								i(122486, { -- Blackrock Foundry Spoils [Mythic]
 									["groups"] = {
@@ -963,7 +963,7 @@ _.Zones =
 										i(113919),	-- Treads of Rekindled Flames
 										i(113974),	-- Treads of the Dark Hunt
 									},
-									["itemModID"] = 6,
+									["modID"] = 6,
 								}),
 								i(114053, { -- Shimmering Gauntlets
 									i(112810),	-- Windowhanger Wraps
@@ -1208,7 +1208,7 @@ _.Zones =
 										i(128080),	-- Rancorbite Sabatons
 										i(128171),	-- Stompers of Echoing Doom
 									},
-									["itemModID"] = 4,
+									["modID"] = 4,
 								}),
 								i(127853, { -- Iron Fleet Treasure Chest [Normal]
 									["groups"] = {
@@ -1306,7 +1306,7 @@ _.Zones =
 										i(124286),	-- Surefooted Chain Treads
 										i(124322),	-- Treads of the Defiler
 									},
-									["itemModID"] = 3,
+									["modID"] = 3,
 								}),
 								i(127854, { -- Iron Fleet Treasure Chest [Heroic]
 									["groups"] = {
@@ -1404,7 +1404,7 @@ _.Zones =
 										i(124286),	-- Surefooted Chain Treads
 										i(124322),	-- Treads of the Defiler
 									},
-									["itemModID"] = 5,
+									["modID"] = 5,
 								}),
 								i(127855, { -- Iron Fleet Treasure Chest [Mythic]
 									["groups"] = {
@@ -1502,7 +1502,7 @@ _.Zones =
 										i(124286),	-- Surefooted Chain Treads
 										i(124322),	-- Treads of the Defiler
 									},
-									["itemModID"] = 6,
+									["modID"] = 6,
 								}),
 								i(116769), 		-- Mount
 								i(127856), 		-- Pet
