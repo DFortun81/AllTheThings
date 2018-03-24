@@ -34,20 +34,20 @@ end
 
 -- Helper Tables
 local DifficultyDB = {
-	[1] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 1 },
-	[2] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 2 },
-	[3] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 1 },
-	[4] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 1 },
-	[5] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 1 },
-	[6] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 1 },
-	[7] = { icon = "Interface/Worldmap/Skull_64Grey", itemModID = 1 },
-	[14] = { icon = "Interface/Worldmap/Skull_64Green", itemModID = 3 },
-	[15] = { icon = "Interface/Worldmap/Skull_64Blue", itemModID = 5 },
-	[16] = { icon = "Interface/Worldmap/Skull_64Purple", itemModID = 6 },
-	[17] = { icon = "Interface/Worldmap/Skull_64Grey", itemModID = 4 },
-	[23] = { icon = "Interface/Worldmap/Skull_64Purple", itemModID = 23 },
-	[24] = { icon = "Interface/Worldmap/Skull_64Red", itemModID = 22 },
-	[33] = { icon = "Interface/Worldmap/Skull_64Red", itemModID = 22 },
+	[1] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
+	[2] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 2 },
+	[3] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
+	[4] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
+	[5] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
+	[6] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
+	[7] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 1 },
+	[14] = { icon = "Interface/Worldmap/Skull_64Green", modID = 3 },
+	[15] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 5 },
+	[16] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 6 },
+	[17] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
+	[23] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
+	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
+	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
 };
 ALLIANCE_ONLY = { 1, 3, 4, 7, 11, 22, 25, 29, 30 };
 HORDE_ONLY = { 2, 5, 6, 8, 9, 10, 26, 27, 28 };
@@ -270,27 +270,27 @@ WOD_CRAFTED_ITEM = function(id)
 	return 
 	{
 		["itemID"] = id,
-		["bonus"] = 525,
+		["bonusID"] = 525,
 		["groups"] = {
 			{
 				["itemID"] = id,
-				["bonus"] = 558,
+				["bonusID"] = 558,
 				["groups"] = {
 					{
 						["itemID"] = id,
-						["bonus"] = 559,
+						["bonusID"] = 559,
 						["groups"] = {
 							{
 								["itemID"] = id,
-								["bonus"] = 594,
+								["bonusID"] = 594,
 								["groups"] = {
 									{
 										["itemID"] = id,
-										["bonus"] = 619,
+										["bonusID"] = 619,
 										["groups"] = {
 											{
 												["itemID"] = id,
-												["bonus"] = 620,
+												["bonusID"] = 620,
 											}
 										}
 									}
@@ -372,7 +372,7 @@ cr = creature;											-- Create a CREATURE Object (alternative shortcut)
 d = function(id, t)										-- Create a DIFFICULTY Object
 	t = struct("difficultyID", id, t);
 	local db = DifficultyDB[id];
-	if db then t.itemModID = db.itemModID; end
+	if db then t.modID = db.modID; end
 	return t;
 end
 e = function(id, t)										-- Create an ENCOUNTER Object

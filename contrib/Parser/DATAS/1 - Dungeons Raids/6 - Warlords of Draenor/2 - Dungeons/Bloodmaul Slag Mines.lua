@@ -9,7 +9,7 @@ _.Instances =
 			inst(385, { 	-- Bloodmaul Slag Mines
 				["groups"] = {
 					d(1, {		-- Normal
-						["itemModID"] = 17,
+						["modID"] = 17,
 						["ids"] = { 518 }, -- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 						

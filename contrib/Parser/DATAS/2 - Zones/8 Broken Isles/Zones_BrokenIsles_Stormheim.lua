@@ -30,7 +30,7 @@ _.Zones =
 							["isRaid"] = true,
 						})),
 					},
-					["itemModID"] = 3
+					["modID"] = 3
 				}),
 --[[				
 				n(-3, { 	-- Holidays					

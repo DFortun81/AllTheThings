@@ -9,7 +9,7 @@ _.Instances =
 			inst(558, { 	-- Iron Docks
 				["groups"] = {
 					d(1, {		-- Normal
-						["itemModID"] = 18,
+						["modID"] = 18,
 						["ids"] = { 519 }, -- Normal
 						["groups"] = {
 							cr(81305, e(1235, {	-- Fleshrender Nok'gar

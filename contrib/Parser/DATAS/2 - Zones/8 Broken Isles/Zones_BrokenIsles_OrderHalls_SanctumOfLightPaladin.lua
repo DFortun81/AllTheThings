@@ -138,7 +138,7 @@ _.Zones =
 												i(139227),	-- Waistplate of Nameless Horror
 												i(139235),	-- Wristclamps of Mad Dreams
 											},
-											["itemModID"] = 4,
+											["modID"] = 4,
 										}),
 										i(139486, { -- Cache of Nightmarish Treasures
 											["groups"] = {
@@ -197,7 +197,7 @@ _.Zones =
 												i(139227),	-- Waistplate of Nameless Horror
 												i(139235),	-- Wristclamps of Mad Dreams
 											},
-											["itemModID"] = 3,
+											["modID"] = 3,
 										}),
 										i(139487, { -- Cache of Nightmarish Treasures
 											["groups"] = {
@@ -256,7 +256,7 @@ _.Zones =
 												i(139227),	-- Waistplate of Nameless Horror
 												i(139235),	-- Wristclamps of Mad Dreams
 											},
-											["itemModID"] = 5,
+											["modID"] = 5,
 										}),
 										i(139488, { -- Cache of Nightmarish Treasures
 											["groups"] = {
@@ -315,7 +315,7 @@ _.Zones =
 												i(139227),	-- Waistplate of Nameless Horror
 												i(139235),	-- Wristclamps of Mad Dreams
 											},
-											["itemModID"] = 6,
+											["modID"] = 6,
 										}),
 									},
 								}),

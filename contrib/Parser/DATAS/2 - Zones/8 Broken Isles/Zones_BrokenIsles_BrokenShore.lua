@@ -60,8 +60,8 @@ _.Zones =
 						})),
 					},
 					["description"] = "|cff66ccffOnly one of these World Bosses are up at a time and only spawn when the Nether Disruptor is active.  \nThese are independent of the other Broken Isle rares and both can be up.|r",
-					["bonus"] = 1482, -- Sets ilvl to 900
-					--["itemModID"] = 3
+					["bonusID"] = 1482, -- Sets ilvl to 900
+					--["modID"] = 3
 				}),		
 				n(120434, { -- Command Center
 					["groups"] =  {
