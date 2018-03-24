@@ -391,7 +391,14 @@ _.Zones =
 					qg(39653, qa(25401)),	-- The Gordunni Orb
 					qg(39656, qh(25209)),	-- The Gordunni Threat
 					qg(39653, qa(25400)),	-- The Gordunni Threat
-					qg(39946, qa(25486)),	-- The Grimtotem are Coming
+--]]
+					qa(25486, {	-- The Grimtotem are Coming
+						["groups"] = {
+						},
+						["qg"] = 39946,	-- Caryssia Moonhunter
+						["breadcrumbQuestID"] = { 28503 },	-- Hero's Call: Thousand Needles!
+					}),
+--[[
 					qdg(qg(7875, qh(27132))),	-- The Highborne
 					qdg(qg(40032, qa(27131))),	-- The Highborne
 					qg(39847, qh(25373)),	-- The Hilltop Threat
@@ -419,12 +426,16 @@ _.Zones =
 					qg(8115, qh(25338)),	-- Treant Muisek
 					qg(39847, qh(25349)),	-- Twisted Sisters
 --]]					
-					qg(39992, qa(25488, {	-- Two If By Boat
-						i(63559),	-- Maloof's Spare Boots
-						i(63560),	-- Floating Belt
-						i(63561),	-- Bracers of Desperate Need
-						i(131430),	-- Maloof's Spare Treads
-					})),
+					qa(25488, {	-- Two If By Boat
+						["groups"] = {
+							i(63559),	-- Maloof's Spare Boots
+							i(63560),	-- Floating Belt
+							i(63561),	-- Bracers of Desperate Need
+							i(131430),	-- Maloof's Spare Treads
+						},
+						["qg"] = 39992,	-- Rendow
+						["sourceQuests"] = { 25486 },	-- The Grimtotem are Coming
+					}),
 --					qg(7776, qh(25339)),	-- Vengeance on the Northspring					
 					qg(40131, q(25368,  {  -- Verinias the Twisted
 						i(54924),
