@@ -161,8 +161,9 @@ _.Zones =
 					qh( 38395),	-- Completionism
 					qh( 27334),	-- Dark Cleric Cecille
 					q(8648),	-- Darkcore the Elder
-					qh( 31037),	-- Enemies Below
-					qh(  9812),	-- Envoy to the Horde
+--]]
+					qdg(qg(10181, qh(31037))),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
+--[[					qh(  9812),	-- Envoy to the Horde
 					qh(  9621),	-- Envoy to the Horde
 					qh( 29333),	-- Escargot A Go-Go
 					qh( 29317),	-- Fish Head

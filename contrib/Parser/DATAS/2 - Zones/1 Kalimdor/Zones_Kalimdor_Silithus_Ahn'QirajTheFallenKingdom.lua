@@ -124,7 +124,91 @@ _.Zones =
 					p(433), -- Spiky Lizard 
 				}),
 				n(-17, { 	-- Quests
-				
+					qg(15194, q(8287)),	-- A Terrible Purpose
+					qg(14347, q(43002, {	-- Blessed Blade of the Windseeker
+						["groups"] = {
+						},
+						["classes"]= {7},
+					})),
+					n(13136, {	-- Hive'Ashi Drone
+						i(20461, {	-- Brann Bronzebeard's Lost Letter
+							q(8308,  {  -- Brann Bronzebeard's Lost Letter
+								["groups"] = {
+									i(20723),
+								},
+								["description"] = "The Lost Letter can drop from a number of Hive'Ashi, Hive'Regal, and Hive'Zora Silithid.",
+							}),
+						}),
+					}),
+					qg(15171, q(8310)),	-- Breaking the Code
+					qg(50587, qh(28865)),	-- Call of the Warmatron 
+					qg(15189, q(8277)),	-- Deadly Desert Venom
+					qg(15181, q(8304)),	-- Dearest Natalia
+					qp185(qg(15174, q(8307))),	-- Desert Recipe
+					qg(15306, q(8319)),	-- Encrypted Twilight Texts
+					ql(qg(14347, q(7785))),	-- Examine the Vessel
+					qg(15170, q(8309)),	-- Glyph Chasing
+					qg(15184, q(8306,  {  -- Into The Maw of Madness
+						i(20724),
+					})),
+					qp185(qg(15174, q(8317))),	-- Kitchen Assistance
+					qg(50588, qa(28867)),	-- Nethergarde Needs You!
+					qg(15189, q(8278)),	-- Noggle's Last Hope
+					qg(15190, q(8282)),	-- Noggle's Lost Satchel
+					qg(17081, qh( 9416)),	-- Report to General Kirika
+					qg(17082, qa( 9415)),	-- Report to Marshal Bluewall
+					n(14435, {	-- Prince Thunderaan
+						i(19018, {	-- Dormant Wind Kissed Blade	
+							q(7787,  {  -- Rise, Thunderfury!
+								i(19019),
+							}),
+						}),
+					}),
+					qg(15306, q(8318)),	-- Secret Communication
+					qg(15191, q(8280)),	-- Securing the Supply Lines
+					qp185(qg(180503, q(8313))),	-- Sharing the Knowledge
+					qg(15191, q(8281)),	-- Stepping Up Security
+					qg(15194, q(8324,  {  -- Still Believing
+						["groups"] = {
+							i(20469, {
+								i(20548, {
+									i(20539),
+								}),
+								i(20554, {
+									i(20550),
+								}),
+								i(20546, {
+									i(20538),
+								}),
+								i(20555, {
+									i(20551),
+								}),
+								i(20547, {
+									i(20537),
+								}),
+								i(20553, {
+									i(20549),
+								}),
+							}),
+						},
+						["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in and has a chance to contain one or more of the recipes. Quest is repeatable.|r", 
+					})),
+					qg(15183, q(8285)),	-- The Deserter
+					qg(15194, q(8279)),	-- The Twilight Lexicon
+					qg(15183, q(8284)),	-- The Twilight Mystery
+					ql(qg(14347, q(7786))),	-- Thunderaan the Windseeker
+					qg(15194, q(8323)),	-- True Believers
+					qg(15270, q(8320)),	-- Twilight Geolords
+					qg(15170, q(8314)),	-- Unraveling the Mystery
+					qg(15270, q(8321,  {  -- Vyral the Vile
+						i(20650),
+					})),
+					o(180448, {	-- Wanted Poster: Deathclasp
+						q(8283,  {  -- Wanted - Deathclasp, Terror of the Sands
+							i(20646),
+							i(20647),
+						}),
+					}),
 --[[ MICRO-HOLIDAY - CALL OF THE SCARAB
 					desc(qwe(qh(45785)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
 					desc(qwe(qa(45787)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
@@ -211,102 +295,6 @@ _.Zones =
 						}),
 					}),
 END OF MICRO-HOLIDAY --]]
-
---[[
-					qg(15194, q(8287)),	-- A Terrible Purpose
-					qg(14347, q(43002, {	-- Blessed Blade of the Windseeker
-						["groups"] = {
-						},
-						["classes"]= {7},
-					})),
---]]					
-					n(13136, {	-- Hive'Ashi Drone
-						i(20461, {	-- Brann Bronzebeard's Lost Letter
-							q(8308,  {  -- Brann Bronzebeard's Lost Letter
-								["groups"] = {
-									i(20723),
-								},
-								["description"] = "The Lost Letter can drop from a number of Hive'Ashi, Hive'Regal, and Hive'Zora Silithid.",
-							}),
-						}),
-					}),
---[[					
-					qg(15171, q(8310)),	-- Breaking the Code
-					qg(50587, qh(28865)),	-- Call of the Warmatron 
-					qg(15189, q(8277)),	-- Deadly Desert Venom
-					qg(15181, q(8304)),	-- Dearest Natalia
-					qp185(qg(15174, q(8307))),	-- Desert Recipe
-					qg(15306, q(8319)),	-- Encrypted Twilight Texts
-					ql(qg(14347, q(7785))),	-- Examine the Vessel
-					qg(15170, q(8309)),	-- Glyph Chasing
---]]					
-					qg(15184, q(8306,  {  -- Into The Maw of Madness
-						i(20724),
-					})),
---[[					
-					qp185(qg(15174, q(8317))),	-- Kitchen Assistance
-					qg(50588, qa(28867)),	-- Nethergarde Needs You!
-					qg(15189, q(8278)),	-- Noggle's Last Hope
-					qg(15190, q(8282)),	-- Noggle's Lost Satchel
-					qg(17081, qh( 9416)),	-- Report to General Kirika
-					qg(17082, qa( 9415)),	-- Report to Marshal Bluewall
---]]					
-					n(14435, {	-- Prince Thunderaan
-						i(19018, {	-- Dormant Wind Kissed Blade	
-							q(7787,  {  -- Rise, Thunderfury!
-								i(19019),
-							}),
-						}),
-					}),
---[[					
-					qg(15306, q(8318)),	-- Secret Communication
-					qg(15191, q(8280)),	-- Securing the Supply Lines
-					qp185(qg(180503, q(8313))),	-- Sharing the Knowledge
-					qg(15191, q(8281)),	-- Stepping Up Security
---]]					
-					qg(15194, q(8324,  {  -- Still Believing
-						["groups"] = {
-							i(20469, {
-								i(20548, {
-									i(20539),
-								}),
-								i(20554, {
-									i(20550),
-								}),
-								i(20546, {
-									i(20538),
-								}),
-								i(20555, {
-									i(20551),
-								}),
-								i(20547, {
-									i(20537),
-								}),
-								i(20553, {
-									i(20549),
-								}),
-							}),
-						},
-						["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in and has a chance to contain one or more of the recipes. Quest is repeatable.|r", 
-					})),
---[[
-					qg(15183, q(8285)),	-- The Deserter
-					qg(15194, q(8279)),	-- The Twilight Lexicon
-					qg(15183, q(8284)),	-- The Twilight Mystery
-					ql(qg(14347, q(7786))),	-- Thunderaan the Windseeker
-					qg(15194, q(8323)),	-- True Believers
-					qg(15270, q(8320)),	-- Twilight Geolords
-					qg(15170, q(8314)),	-- Unraveling the Mystery
---]]					
-					qg(15270, q(8321,  {  -- Vyral the Vile
-						i(20650),
-					})),
-					o(180448, {	-- Wanted Poster: Deathclasp
-						q(8283,  {  -- Wanted - Deathclasp, Terror of the Sands
-							i(20646),
-							i(20647),
-						}),
-					}),					
 					nlq({ -- Legacy Quests
 						q(8361, { 	-- Abyssal Contacts
 							i(20603, { 	-- Bag of Spoils

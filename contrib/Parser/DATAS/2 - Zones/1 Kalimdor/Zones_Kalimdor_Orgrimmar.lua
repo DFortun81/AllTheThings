@@ -1128,7 +1128,9 @@ Legacy				qh( 1436),	-- Alliance Relations
 --[[					
 					qp755(qg(50482, qh(25162))),	-- Elemental Goo
 					qp171(qg(3347, q(29481))),	-- Elixir Master
-					qdg(qg(14720, qh(31034))),	-- Enemies Below (add'l QGs 39605 and 86832, probably changed)
+--]]
+					qdg(qg(14720, qh(31034))),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR ORC/TROLL/GOBLIN)
+--[[
 					qp185(qg(42506, qh(26235))),	-- Even Thieves Get Hungry
 					qp185(qg(42506, qh(26220))),	-- Everything Is Better with Bacon
 					qg(3310, q(26804, {	-- Flight to Razor Hill					

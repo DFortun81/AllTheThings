@@ -193,7 +193,9 @@ _.Zones =
 						["races"] = {5},
 					})),
 					qg(3441, qh( 1205)),	-- Deadmire
-					qdg(qg(36648, qh(31036))),	-- Enemies Below
+--]]
+					qdg(qg(36648, qh(31036))),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR TAUREN)
+--[[
 					qg(43795, qh(27304, {	-- Follow the Sun
 						["groups"] = {
 						},
