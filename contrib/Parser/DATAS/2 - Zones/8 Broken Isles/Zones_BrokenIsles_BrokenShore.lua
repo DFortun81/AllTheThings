@@ -67,11 +67,11 @@ _.Zones =
 					["groups"] =  {
 						n(122719, { -- Scouting Map
 							["groups"] = {
-								model(68851, i(140495, { -- Torn Invitation [Fox Mount Quest]
-									model(68851, i(137573)), -- Reins of the Llothien Prowler
-								})),
-								model(68845, i(140320)), -- Corgnelius Pet
-								model(68860, i(140316)), -- Firebat Pup Pet
+								i(140495, { -- Torn Invitation [Fox Mount Quest]
+									i(137573), -- Reins of the Llothien Prowler
+								}),
+								i(140320), -- Corgnelius Pet
+								i(140316), -- Firebat Pup Pet
 								i(129165), -- Barnacle-Encrusted Gem Toy
 								i(130169), -- Tournament Favor
 							},
@@ -278,8 +278,261 @@ _.Zones =
 						}),
 					}),
 				}),
---[[
-				n(-17, { 	-- Quests				
+				n(-17, { 	-- Quests
+					ach(11546, { -- Breaching the Tomb
+						["groups"] = {
+							crit(1, { -- Armies of Legionfall
+								["groups"] = {
+									q(46734, { -- Assault on Broken Shore
+										["groups"] = {
+											{
+												["spellID"] = 242180, -- Broken Shore World Quests
+											},
+										},
+										["qg"] = 120215, -- Archmage Khadgar
+										["sourceQuests"] = { 45727 }, -- Uniting the Isles
+									}),
+								},
+							}),
+							crit(2, { -- Assault on Broken Shore
+								["groups"] = {
+									q(46734, { -- Assault on Broken Shore
+										["groups"] = {
+										},
+										["qg"] = 120215, -- Archmage Khadgar
+										["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
+									}),
+								},
+							}),
+							crit(3, { -- Begin Construction
+								["groups"] = {
+									q(46286, { -- Legionfall Supplies
+										["groups"] = {
+											q(46245, { -- Begin Construction
+												["groups"] = {
+													q(46773, { -- The Command Center
+														["groups"] = {
+														},
+														["qg"] = 120183, -- Commander Chambers
+														["sourceQuests"] = { 46245 }, -- Begin Construction
+													}),
+													q(46772, { -- The Mage Tower
+														["groups"] = {
+														},
+														["qg"] = 120183, -- Commander Chambers
+														["sourceQuests"] = { 46245 }, -- Begin Construction
+													}),
+													q(46774, { -- The Nether Disruptor
+														["groups"] = {
+														},
+														["qg"] = 120183, -- Commander Chambers
+														["sourceQuests"] = { 46245 }, -- Begin Construction
+													}),
+												},
+												["qg"] = 120183, -- Commander Chambers
+												["sourceQuests"] = { 46286 }, -- Legionfall Supplies
+											}),
+										},
+										["qg"] = 120183, -- Commander Chambers
+										["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
+									}),
+								},
+							}),
+							crit(4, { -- Aalgen Point
+								["groups"] = {
+									q(46832, { -- Aalgen Point
+										["groups"] = {
+										},
+										["qg"] = 120183, -- Commander Chambers
+										["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
+									}),
+								},
+							}),
+							crit(5, { -- Vengeance Point
+								["groups"] = {
+									q(46845, { -- Vengeance Point
+										["groups"] = {
+										},
+										["qg"] = 120118, -- Heidirk the Scalekeeper
+										["sourceQuests"] = { 46832 }, -- Aalgen Point
+									}),
+								},
+							}),
+							crit(6, { -- Defending Broken Isles
+								["groups"] = {
+									q(46247, { -- Defending Broken Isles
+										["groups"] = {
+										},
+										["qg"] = 116576, -- Maiev Shadowsong
+										["sourceQuests"] = { 46286 }, -- Legionfall Supplies
+									}),
+								},
+							}),
+							crit(7, { -- Champions of Legionfall
+								["groups"] = {
+									q(47137, { -- Champions of Legionfall
+										["groups"] = {
+										},
+										["qg"] = 116576, -- Maiev Shadowsong
+										["sourceQuests"] = { 46247 }, -- Defending Broken Isles
+									}),
+								},
+							}),
+							crit(8, { -- Shard Times
+								["groups"] = {
+									q(46251, { -- Shard Times
+										["groups"] = {
+										},
+										["qg"] = 116302, -- Archmage Khadgar
+										["sourceQuests"] = { 47137 }, -- Champions of Legionfall
+									}),
+								},
+							}),
+							crit(9, { -- Mark of the Sentinax
+								["groups"] = {
+									q(47139, { -- Mark of the Sentinax
+										["groups"] = {
+										},
+										["qg"] = 117873, -- Illidan Stormrage
+										["sourceQuests"] = { 46251 }, -- Shard Times
+									}),
+								},
+							}),
+							crit(10, { -- Self-Fulfilling Prophecy
+								["groups"] = {
+									q(46248, { -- Self-Fulfilling Prophecy
+										["groups"] = {
+										},
+										["qg"] = 120372, -- Prophet Velen
+										["sourceQuests"] = { 47139 }, -- Mark of the Sentinax
+									}),
+								},
+							}),
+							crit(11, { -- Intolerable Infestation
+								["groups"] = {
+									q(46252, { -- Intolerable Infestation
+										["groups"] = {
+										},
+										["qg"] = 116576, -- Maiev Shadowsong
+										["sourceQuests"] = { 46248 }, -- Self-Fulfilling Prophecy
+									}),
+								},
+							}),
+							crit(12, { -- Relieved of Thier Valuables
+								["groups"] = {
+									q(46769, { -- Relieved of Their Valuables
+										["groups"] = {
+										},
+										["qg"] = 116302, -- Archmage Khadgar
+										["sourceQuests"] = { 46252 }, -- Intolerable Infestation
+									}),
+								},
+							}),
+							crit(13, { -- Take Out the Head...
+								["groups"] = {
+									q(46250, { -- Take Out the Head...
+										["groups"] = {
+										},
+										["qg"] = 116576, -- Maiev Shadowsong
+										["sourceQuests"] = { 46769 }, -- Relieved of Their Valuables
+									}),
+								},
+							}),
+							crit(14, { -- Championing Our Cause
+								["groups"] = {
+									q(46249, { -- Championing Our Cause
+										["groups"] = {
+										},
+										["qg"] = 116302, -- Archmage Khadgar
+										["sourceQuests"] = { 46250 }, -- Take Out the Head...
+									}),
+								},
+							}),
+							crit(15, { -- Strike Them Down
+								["groups"] = {
+									q(46246, { -- Strike Them Down
+										["groups"] = {
+										},
+										["qg"] = 116576, -- Maiev Shadowsong
+										["sourceQuests"] = { 46249 }, -- Championing Our Cause
+									}),
+								},
+							}),
+						},
+					}),
+					n(-168, { -- Other Quests
+						sz(11543,1, { -- Deliverance Point
+							
+							q(46244, { -- Cathedral of Eternal Night: Altar of the Aegis
+								["groups"] = {
+									i(146932), -- Condensed Storm's Fury
+									i(146926), -- Fel Command Beacon
+									i(146928), -- Heat Absorbing Prism
+									i(146933), -- Highborne Martyr's Blood
+									i(146927), -- Inferno Oil
+									i(146925), -- Mature Morrowsprout
+									i(146931), -- Mephistroth's Rib
+									i(146929), -- Moonstone Figurine
+									i(146930), -- Pure Arcane Powder
+									i(146934), -- Untouched Holy Candle
+								},
+								["qg"] = 116302, -- Archmage Khadgar
+								["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
+							}),
+							q(46253, { -- Pillars of Creation
+								["groups"] = {
+								},
+								["qg"] = 116302, -- Archmage Khadgar
+								["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
+							}),
+							q(47067, { -- Seeking Lost Knowledge
+								["groups"] = {
+								},
+								["qg"] = 116302, -- Archmage Khadgar
+								["u"] = 12,
+							}),
+							
+						}),
+						i(143559, { -- Wyrmtongue's Cache Key
+							q(46499, { -- Spiders, Huh?
+								["groups"] = {
+								},
+								["qg"] = 119886, -- Excavator Karla
+								["sourceQuests"] = { 46734 }, -- Assault on Brokeen Shore
+							}),
+							q(46501, { -- Grave Robbin'
+								["groups"] = {
+								},
+								["qg"] = 119886, -- Excavator Karla
+								["sourceQuests"] = { 46499 }, -- Spiders, Huh?
+							}),
+							q(46509, { -- Tomb Raidering
+								["groups"] = {
+								},
+								["qg"] = 119886, -- Excavator Karla
+								["sourceQuests"] = { 46501 }, -- Grave Robbin'
+							}),
+							q(46510, { -- Ship Graveyard
+								["groups"] = {
+								},
+								["qg"] = 119886, -- Excavator Karla
+								["sourceQuests"] = { 46509 }, -- Tomb Raidering
+							}),
+							q(46511, { -- We're Treasure Hunters
+								["groups"] = {
+								},
+								["qg"] = 119886, -- Excavator Karla
+								["sourceQuests"] = { 46510 }, -- Ship Graveyard
+							}),
+							q(46666, { -- The Motherlode
+								["groups"] = {
+								},
+								["qg"] = 119886, -- Excavator Karla
+								["sourceQuests"] = { 46511 }, -- We're Treasure Hunters
+							}),
+						}),
+					}),
+					--[[
 					n(-34, {	-- World Quests
 						q(46209),	-- A Flare In The Dark
 						q(45473),	-- A Giant Problem
@@ -742,6 +995,7 @@ _.Zones =
 					q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated	
 				}),
 				--]]
+				}),
 				n(-16, { 	-- Rares
 					n(119629, { -- Lord Hel'Nurath 
 						["groups"] = {
