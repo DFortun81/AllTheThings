@@ -25,6 +25,34 @@ _.Zones =
 							p(479), -- Elfin Rabbit
 						}),
 						n(-17, { -- Quests
+							spell(241857, { -- Archdruid's Lunarwing Form
+								q(46317, { -- Talon's Call
+									["groups"] = {
+									},
+									["qg"] = 118105, -- Grovewarden Proudhorn
+									["sourceQuests"] = { 46246 }, -- Strike Them Down
+									["classes"] = { 11 },  -- Druid
+								}),
+								q(46318, { -- Defense of Aviana
+									["groups"] = {
+									},
+									["qg"] = 106299, -- Thisalee Crow
+									["sourceQuests"] = { 46317 }, -- Talon's Call
+									["classes"] = {11},
+								}),
+								q(46319, { -- You Can't Take the Sky from Me
+									["groups"] = {
+										{
+											["itemID"] = 143638, 
+											["mountID"] = 231437, 
+											["questID"] = 46319,
+										}, -- Moon-Kissed Feather
+									},
+									["qg"] = 106299, -- Thisalee Crow
+									["sourceQuests"] = { 46318 }, -- Defense of Aviana
+									["classes"] = {11},
+								}),
+							}),
 							q(44057),	-- A "Noble" Event
 							q(42586),	-- A Glade Defense
 							q(43409),	-- A Hero's Weapon
@@ -49,7 +77,6 @@ _.Zones =
 							q(44272),	-- Darkheart Thicket
 							q(44076),	-- Darkheart Thicket: Essence of Regrowth
 							q(43403),	-- Defending the Isles
-							q(46318),	-- Defense of Aviana
 							q(47075),	-- Delivering Lost Knowledge
 							q(45173),	-- Desperate Times
 							q(42031),	-- Dire Growth
@@ -153,9 +180,8 @@ _.Zones =
 							q(44443),	-- Weapons of the Ancients
 							q(41413),	-- What Could Go Wrong?
 							q(45179),	-- Win the Crowd
-							q(40652),	-- Word on the Winds
-							--q(46319),	-- You Can't Take the Sky from Me											
-							
+							q(40652),	-- Word on the Winds									
+							--[[
 							q(46319, { -- You Can't Take the Sky from Me
 								["groups"] = {
 									{ ["itemID"] = 143638, ["mountID"] = 231437, ["questID"] = 46319 }, -- Moon-Kissed Feather
@@ -163,6 +189,7 @@ _.Zones =
 								["Lvl"] = 110,
 								["classes"] = {11}
 							}),
+							--]]
 							q(44232, { -- The Grove Provides
 								i(139726), -- Hood of the Dreamgrove
 							}),
