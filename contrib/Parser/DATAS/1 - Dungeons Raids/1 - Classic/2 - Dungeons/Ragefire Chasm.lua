@@ -13,7 +13,6 @@ _.Instances =
 						qg(61823, qa(30998)), -- A New Enemy
 						qg(61822, qa(30995)), -- No Man Left Behind
 						qg(61724, qh(30984)), -- No Orc Left Behind
-						qg(61716, qh(30983)), -- The Dark Shaman
 						qg(61823, qa(30996,{ -- The Dark Shaman
 							i(82891), 	-- Robes of the Doomed Ritual
 							i(82892), 	-- Ragefire Leggings
@@ -23,6 +22,7 @@ _.Instances =
 							i(131711), 	-- Stone Guard Greaves
 							i(131712), 	-- Scaled Vest of the Shaman
 						})),
+						qg(61716, qh(30983)), -- The Dark Shaman
 					}),
 					cr(61408, e(694, {	-- Adarogg
 						i(82880), 	-- Fang of Adarogg

@@ -9,54 +9,80 @@ _.Instances =
 			inst(63, { 	-- Deadmines
 				["groups"] = {
 					n(-17, {	-- Quests
-						n(115818, { -- Captain Bramblebeard
-							q(44930,{ -- Deadmines: Sea'in Red
-								["groups"] = {
-									{ -- Ensemble: Blackened Defias Armor
-										["groups"] = {	
-											i(10399), -- Blackened Defias Armor
-											i(10401), -- Blackened Defias Gloves
-											i(10403), -- Blackened Defias Belt
-											i(10400), -- Blackened Defias Leggings
-											i(10402), -- Blackened Defias Boots
-										},
-										["itemID"] = 142273, -- Ensemble: Blackened Defias Armor
-										["classes"] = { 4 },
+						q( 44930,{ -- Deadmines: Sea'in Red
+							["groups"] = {
+								{ -- Ensemble: Blackened Defias Armor
+									["groups"] = {	
+										i(10399), -- Blackened Defias Armor
+										i(10401), -- Blackened Defias Gloves
+										i(10403), -- Blackened Defias Belt
+										i(10400), -- Blackened Defias Leggings
+										i(10402), -- Blackened Defias Boots
 									},
+									["itemID"] = 142273, -- Ensemble: Blackened Defias Armor
+									["classes"] = { 4 },	-- Rogue
 								},
-								["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Rogue in Outlaw Specialization.|r \n|cff3399ffSTEP 2:|r|cff66ccff Go to Ironclad Cove (Wooden Catwalk & Boat)|r \n|cff3399ffSTEP 3:|r|cff66ccff Locate the Ghostly Parrot (36.5,17).|r \n|cff3399ffSTEP 4:|r|cff66ccff Summon Green Wing Macaw (Extra Action Button will appear, grapple up the wall).|r \n|cff3399ffSTEP 5:|r|cff66ccff Accept quest and kill pirates for the 100 bandanas.|r \n|cff3399ffSTEP 6:|r|cff66ccff Repeat process to get back to questgiver to turn in.|r",
-								["classes"] = { 4 },
-							}),
+							},
+							["qg"] = 115818,	-- Captain Bramblebeard
+							["classes"] = { 4 },
+							["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Rogue in Outlaw Specialization.|r \n|cff3399ffSTEP 2:|r|cff66ccff Go to Ironclad Cove (Wooden Catwalk & Boat)|r \n|cff3399ffSTEP 3:|r|cff66ccff Locate the Ghostly Parrot (36.5,17).|r \n|cff3399ffSTEP 4:|r|cff66ccff Summon Green Wing Macaw (Extra Action Button will appear, grapple up the wall).|r \n|cff3399ffSTEP 5:|r|cff66ccff Accept quest and kill pirates for the 100 bandanas.|r \n|cff3399ffSTEP 6:|r|cff66ccff Repeat process to get back to questgiver to turn in.|r",
 						}),
-						h(n(46889, { -- Kagtha
-							h(q(27842, { -- Only the Beginning
-								h(q(27848, { -- Good Intentions...Poor Execution
-									h(q(27850,{ -- The Defias Kingpin
-										i(66019), -- Cookie's Meat Mallet
-										i(66028), -- Cookie's Stirring Rod
-										i(66037), -- Cookie's Table Cloth
-									})),
-								})),
-							})),
-						})),
-						a(n(46612, { -- Lieutenant Horatio Laine
-							a(q(27756)), -- The Foreman
-							a(q(27758)), -- The Carpenter
-							a(q(27781)), -- The Machination
-							a(q(27785, { -- The Admiral
-								a(q(27790,{ -- The Defias Kingpin
-									i(65935), -- Cookie's Meat Mallet
-									i(65959), -- Cookie's Stirring Stick
-									i(65983), -- Cookie's Table Cloth
-								})),
-							})),
-						})),
-						n(46902, { -- Miss Mayhem
-							h(q(27847)),  -- Not Quite There
+						qa(27756, {	-- The Foreman
+							["groups"] = {
+							},
+							["qg"] = 46612,	-- Lieutenant Horatio Laine
 						}),
-						n(46906, {  -- Slinky Sharpshiv
-							h(q(27844)), -- Traitors
-						}),					
+						qa(27758, {	-- The Carpenter
+							["groups"] = {
+							},
+							["sourceQuests"] = { 27756 },	-- The Foreman
+						}),
+						qa(27781, {	-- The Machination
+							["groups"] = {
+							},
+							["sourceQuests"] = { 27758 },	-- The Carpenter
+						}),
+						qa(27785, {	-- The Admiral
+							["groups"] = {
+							},
+							["sourceQuests"] = { 27781 },	-- The Machination
+						}),
+						qa(27790, {	-- The Defias Kingpin
+							["groups"] = {
+								i(65935), -- Cookie's Meat Mallet
+								i(65959), -- Cookie's Stirring Stick
+								i(65983), -- Cookie's Table Cloth
+							},
+							["sourceQuests"] = { 27785 },	-- The Admiral
+						}),
+						qh(27842, {	-- Only the Beginning
+							["groups"] = {
+							},
+							["qg"] = 46889,	-- Kagtha
+						}),
+						qh(27844, {	-- Traitors!!!
+							["groups"] = {
+							},
+							["sourceQuests"] = { 27842 },	-- Only the Beginning
+						}),
+						qh(27847, {	-- Not Quite There
+							["groups"] = {
+							},
+							["sourceQuests"] = { 27844 },	-- Traitors!!!
+						}),
+						qh(27848, {	-- Good Intentions...Poor Execution
+							["groups"] = {
+							},
+							["sourceQuests"] = { 27847 },	-- Not Quite There
+						}),
+						qh(27850, {	-- The Defias Kingpin
+							["groups"] = {
+								i(66019), -- Cookie's Meat Mallet
+								i(66028), -- Cookie's Stirring Rod
+								i(66037), -- Cookie's Table Cloth
+							},
+							["sourceQuests"] = { 27848 },	-- Good Intentions...Poor Execution
+						}),
 					}),
 					n(0, { -- Zone Drop
 						n(48417, { -- Defias Blood Wizard

@@ -13,8 +13,18 @@ _.Instances =
 							n(-17, { -- Quests
 								i(49641, { -- Faded Lovely Greeting Card
 									["groups"] = {
-										qh(14483), -- Something is in the Air (and it Ain't Love)
-										qa(24745), -- Something is in the Air (and it Ain't Love)
+										i(49641, {	-- Faded Lovely Greeting Card
+											qa(24745, { -- Something is in the Air (and it Ain't Love)
+												["groups"] = {
+												},
+												["qg"] = 36296,	-- Apothecary Hummel
+											}),
+											qh(14483, { -- Something is in the Air (and it Ain't Love)
+												["groups"] = {
+												},
+												["qg"] = 36296,	-- Apothecary Hummel
+											}),
+										}),
 									},
 									["qg"] = 36296,
 								}),
@@ -44,30 +54,66 @@ _.Instances =
 					}),
 					d(1, {		-- Normal
 						n(-17, { -- Quests 
-							qg(47006, qa(27920)), 	-- Armored to the Teeth
-							qg(47006, qa(27921)), 	-- Fighting Tooth and Claw
-							qg(47006, qa(27968,{ 	-- Fury of the Pack
-								i(131685), 	-- Boots of Painful Cost
-								i(65984), 	-- Breastplate of the Terrible Price
-								i(65910), 	-- Godfrey's Britches
-								i(131684), 	-- Packleader's Chain Spaulders
-								i(66002), 	-- Packleader's Pauldrons
-								i(65936), 	-- Sandals of Sacrifice
-								i(65960), 	-- Shadowfang Shoulderpads
-							})),
-							qg(47293, qh(27996)), 	-- Orders Are For the Living
-							qg(47293, qh(27988)), 	-- Plague...Plague Everywhere!
-							qg(47006, qa(27917)), 	-- Sniffing Them Out
-							qg(47293, qh(27998,{ 	-- Sweet, Merciless Revenge
-								i(131687), 	-- Boots of Painful Cost
-								i(66038), 	-- Breastplate of the Terrible Price
-								i(66044), 	-- Deathstalker Pauldrons
-								i(66011), 	-- Godfrey's Britches
-								i(131686),	-- Packleader's Chain Spaulders
-								i(66020), 	-- Sandals of Sacrifice
-								i(66029), 	-- Shadowfanger Shoulderpads
-							})),
-							qg(47293, qh(27974)), 	-- This Land is Our Land
+							qa(27917, { 	-- Sniffing Them Out
+								["groups"] = {
+								},
+								["qg"] = 47706,	-- Packleader Ivar Bloodfang
+							}),
+							qa(27920, { 	-- Armored to the Teeth
+								["groups"] = {
+								},
+								["qg"] = 47706,	-- Packleader Ivar Bloodfang
+								["sourceQuests"] = { 27917 },	-- Sniffing Them Out
+							}),
+							qa(27921, { 	-- Fighting Tooth and Claw
+								["groups"] = {
+								},
+								["qg"] = 47706,	-- Packleader Ivar Bloodfang
+								["sourceQuests"] = { 27920 },	-- Armored to the Teeth
+							}),
+							qa(27968, { 	-- Fury of the Pack
+								["groups"] = {
+									i(65984), 	-- Breastplate of the Terrible Price
+									i(66002), 	-- Packleader's Pauldrons
+									i(65960), 	-- Shadowfang Shoulderpads
+									i(65936), 	-- Sandals of Sacrifice
+									i(65910), 	-- Godfrey's Britches
+									i(131684), 	-- Packleader's Chain Spaulders
+									i(131685), 	-- Boots of Painful Cost
+								},
+								["qg"] = 47706,	-- Packleader Ivar Bloodfang
+								["sourceQuests"] = { 27921 },	-- Fighting Tooth and Claw
+							}),
+							qh(27974, { 	-- This Land is Our Land
+								["groups"] = {
+								},
+								["qg"] = 47293,	-- Deathstalker Commander Belmont
+							}),
+							qh(27988, { 	-- Plague...Plague Everywhere!
+								["groups"] = {
+								},
+								["qg"] = 47293,	-- Deathstalker Commander Belmont
+								["sourceQuests"] = { 27974 },	-- This Land is Our Land
+							}),
+							qh(27996, { 	-- Orders Are For the Living
+								["groups"] = {
+								},
+								["qg"] = 47293,	-- Deathstalker Commander Belmont
+								["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
+							}),
+							qh(27998, { 	-- Sweet, Merciless Revenge
+								["groups"] = {
+									i(66038), 	-- Breastplate of the Terrible Price
+									i(66044), 	-- Deathstalker Pauldrons
+									i(66029), 	-- Shadowfanger Shoulderpads
+									i(66020), 	-- Sandals of Sacrifice
+									i(66011), 	-- Godfrey's Britches
+									i(131686),	-- Packleader's Chain Spaulders
+									i(131687), 	-- Boots of Painful Cost
+								},
+								["qg"] = 47293,	-- Deathstalker Commander Belmont
+								["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
+							}),
 						}),
 						n(0, {				-- Zone Drop
 							n(47134, {	-- Corpse Eater	
