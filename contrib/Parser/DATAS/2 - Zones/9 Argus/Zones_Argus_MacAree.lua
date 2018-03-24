@@ -264,53 +264,73 @@ _.Zones =
 							},
 							["questID"] = 48709
 						}),
-						o(273301, {	-- Ancient Eredar Cache
-							i(153271),	--Forgotten Conservatory Helm
-							i(153288),	--Forgotten Conservatory Robes
-							i(153272),	--Forgotten Conservatory Gloves
-							i(153275),	--Forgotten Conservatory Slippers (ASSUMPTION - NO DROP DATA ON WOWHEAD!)
-							i(153331),	--Mac'Aree Lightseeker's Helmet
+						o(273301, {	-- Ancient Eredar Cache (south of main road, mostly east of center)
+							["groups"] = {
+								i(153271),	-- Forgotten Conservatory Helm
+								i(153288),	-- Forgotten Conservatory Robes
+								i(153272),	-- Forgotten Conservatory Gloves
+								i(153331),	-- Mac'Aree Lightseeker's Helmet
+								i(153334),	-- Mac'Aree Lightseeker's Spaulders
+								i(153332),	-- Mac'Aree Lightseeker's Chestpiece
+							},
+							["questID"] = 48346,
 						}),
-						o(273407, {	-- Ancient Eredar Cache
-							i(153271),	--Forgotten Conservatory Helm
-							i(153334),	--Mac'Aree Lightseeker's Spaulders
-							i(153335),	--Mac'Aree Lightseeker's Handguards
-							i(153333),	--Mac'Aree Lightseeker's Waistplate
-							i(153330),	--Mac'Aree Lightseeker's Greaves
-							i(153337),	--Mac'Aree Lightseeker's Treads
+						o(273407, {	-- Ancient Eredar Cache (north central)
+							["groups"] = {
+								i(153334),	-- Mac'Aree Lightseeker's Spaulders
+								i(153335),	-- Mac'Aree Lightseeker's Handguards
+								i(153333),	-- Mac'Aree Lightseeker's Waistplate
+								i(153330),	-- Mac'Aree Lightseeker's Greaves
+								i(153337),	-- Mac'Aree Lightseeker's Treads
+							},
+							["questID"] = 48350,
 						}),
-						o(273412, {	-- Ancient Eredar Cache
-							i(153277),	--Forgotten Conservatory Wristwraps
-							i(153272),	--Forgotten Conservatory Gloves
-							i(153270),	--Forgotten Conservatory Sash
-							i(153332),	--Mac'Aree Lightseeker's Chestpiece
-							i(153336),	--Mac'Aree Lightseeker's Armguards
-							i(153333),	--Mac'Aree Lightseeker's Waistplate
-							i(153337),	--Mac'Aree Lightseeker's Treads
+						o(273412, {	-- Ancient Eredar Cache (southwest-ish)
+							["groups"] = {
+								i(153277),	-- Forgotten Conservatory Wristwraps
+								i(153272),	-- Forgotten Conservatory Gloves
+								i(153270),	-- Forgotten Conservatory Sash
+								i(153273),	-- Forgotten Conservatory Leggings
+								i(153332),	-- Mac'Aree Lightseeker's Chestpiece
+								i(153336),	-- Mac'Aree Lightseeker's Armguards
+								i(153333),	-- Mac'Aree Lightseeker's Waistplate
+								i(153337),	-- Mac'Aree Lightseeker's Treads
+							},
+							["questID"] = 48351,
 						}),
-						o(273414, {	-- Ancient Eredar Cache
-							i(153271),	--Forgotten Conservatory Helm
-							i(153276),	--Forgotten Conservatory Amice
-							i(153288),	--Forgotten Conservatory Robes
-							i(153277),	--Forgotten Conservatory Wristwraps
-							i(153273),	--Forgotten Conservatory Leggings
-							i(153332),	--Mac'Aree Lightseeker's Chestpiece
-							i(153336),	--Mac'Aree Lightseeker's Armguards
+						o(273414, {	-- Ancient Eredar Cache (central/eastern - around Conservatory of the Arcane)
+							["groups"] = {
+								i(153271),	-- Forgotten Conservatory Helm
+								i(153276),	-- Forgotten Conservatory Amice
+								i(153288),	-- Forgotten Conservatory Robes
+								i(153273),	-- Forgotten Conservatory Leggings
+								i(153332),	-- Mac'Aree Lightseeker's Chestpiece
+								i(153336),	-- Mac'Aree Lightseeker's Armguards
+								i(153335),	-- Mac'Aree Lightseeker's Handguards
+							},
+							["questID"] = 48362,
 						}),
-						o(273415, {	-- Ancient Eredar Cache
-							i(153276),	--Forgotten Conservatory Amice
-							i(153273),	--Forgotten Conservatory Leggings
-							i(153335),	--Mac'Aree Lightseeker's Handguards
-							i(153337),	--Mac'Aree Lightseeker's Treads
+						o(273415, {	-- Ancient Eredar Cache (northeast (not on side with Vigilant Thanos)
+							["groups"] = {
+								i(153276),	-- Forgotten Conservatory Amice
+								i(153273),	-- Forgotten Conservatory Leggings
+								i(153335),	-- Mac'Aree Lightseeker's Handguards
+								i(153337),	-- Mac'Aree Lightseeker's Treads
+							},
+							["questID"] = 48357,
 						}),
-						o(273439, {	-- Ancient Eredar Cache
-							i(153277),	--Forgotten Conservatory Wristwraps
-							i(153272),	--Forgotten Conservatory Gloves
-							i(153331),	--Mac'Aree Lightseeker's Helmet
-							i(153334),	--Mac'Aree Lightseeker's Spaulders
-							i(153332),	--Mac'Aree Lightseeker's Chestpiece
-							i(153336),	--Mac'Aree Lightseeker's Armguards
-							i(153333),	--Mac'Aree Lightseeker's Waistplate
+						o(273439, {	-- Ancient Eredar Cache (mostly clustered around center, a smattering central west)
+							["groups"] = {
+								i(153277),	-- Forgotten Conservatory Wristwraps
+								i(153272),	-- Forgotten Conservatory Gloves
+								i(153331),	-- Mac'Aree Lightseeker's Helmet
+								i(153334),	-- Mac'Aree Lightseeker's Spaulders
+								i(153332),	-- Mac'Aree Lightseeker's Chestpiece
+								i(153336),	-- Mac'Aree Lightseeker's Armguards
+								i(153333),	-- Mac'Aree Lightseeker's Waistplate
+								i(153330),	-- Mac'Aree Lightseeker's Greaves
+							},
+							["questID"] = 48371,
 						}),
 						n(126862, { -- Baruut the Bloodthirsty
 							["groups"] = {
@@ -319,7 +339,7 @@ _.Zones =
 							["modelScale"] = 0.75,
 							["questID"] =  48700,
 						}),
-						n(126869, { --  Captain Faruq
+						n(126869, { -- Captain Faruq
 							["groups"] = {
 								-- DROPS CACHE
 							},
@@ -331,7 +351,7 @@ _.Zones =
 							},
 							["questID"] = 48720,
 						}),
-						n(126864,{ -- Feasel the Muffin Thief
+						n(126864, { -- Feasel the Muffin Thief
 							["groups"] = {
 								--i(152998), -- Carefully Hidden Muffin [Doesn't give anything useful....yet]
 							},
@@ -343,19 +363,19 @@ _.Zones =
 							},
 							["questID"] = 48711,
 						}),
-						n(126900, { -- Instructor Tarahna
+						n(126900, {	-- Instructor Tarahna
 							["groups"] = {
 								i(153179), -- Blue Conservatory Scroll
 								i(153181), -- Red Conservatory Scroll
 								i(153180), -- Yellow Conservatory Scroll
-								i(153309), --Unyielding Peacekeeper's Mace
+								i(153309), -- Unyielding Peacekeeper's Mace
 							},
 							["modelScale"] = 0.85,
 							["questID"] = 48718,
 						}),
 						n(126899, { -- Jed'hin Champion Vorusk
 							["groups"] = {
-								i(153302), --Honed Jed'hin Scimitar
+								i(153302), -- Honed Jed'hin Scimitar
 							},
 							["questID"] = 48713,
 						}),
@@ -380,19 +400,19 @@ _.Zones =
 						}),
 						n(124440, { -- Overseer Y'Beda
 							["groups"] = {
-								i(153315), --Praetor's Ornamental Warblade
+								i(153315), -- Praetor's Ornamental Warblade
 							},
 							["questID"] = 48714,
 						}),
 						n(125498, { -- Overseer Y'Morna
 							["groups"] = {
-								i(153257), --Isolon Anchorite's Gavel
+								i(153257), -- Isolon Anchorite's Gavel
 							},
 							["questID"] = 48717,
 						}),
 						n(125497, { -- Overseer Y'Sorna
 							["groups"] = {
-								i(153268), --Enclave Aspirant's Axe
+								i(153268), -- Enclave Aspirant's Axe
 							},
 							["questID"] = 48716,
 						}),
@@ -433,7 +453,7 @@ _.Zones =
 						}),
 						n(126889, { -- Sorolis the Ill-Fated
 							["groups"] = {
-								i(153292), --Spectral Censorite's Spire
+								i(153292), -- Spectral Censorite's Spire
 							},
 							["questID"] = 48710,
 						}),
@@ -445,7 +465,7 @@ _.Zones =
 						}),
 						n(126868, { -- Turek the Lucid
 							["groups"] = {
-								i(153306), --Oronaar Miner's Piercer
+								i(153306), -- Oronaar Miner's Piercer
 							},
 							["questID"]  = 48706,
 						}),

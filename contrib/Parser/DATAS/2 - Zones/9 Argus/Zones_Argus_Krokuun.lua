@@ -45,8 +45,7 @@ _.Zones =
 						p(2124), 	-- Bilescourge
 						p(2127), 	-- Flickering Argunite
 					}),
-					
-					n(-17, { -- Quests
+					n(-17, {	-- Quests
 						["groups"] = {
 							ach(12066, { -- You Are Now Prepared!
 								crit(1, { -- The Assault Begings
@@ -543,12 +542,15 @@ _.Zones =
 							i(152943),	--World-Defiler's Girdle
 							i(152945),	--World-Defiler's Tuille
 						}),
-						o(272455, {	-- Eredar War Supplies
-							i(152946),	--World-Defiler's Casque
-							i(152942),	--World-Defiler's Wristguards
-							i(152947),	--World-Defiler's Gauntlets
-							i(152945),	--World-Defiler's Tuille
-							i(152948),	--World-Defiler's Sabatons
+						o(272455, {	-- Eredar War Supplies (central, around Annihilan Pits)
+							["groups"] = {
+								i(152946),	--World-Defiler's Casque
+								i(152942),	--World-Defiler's Wristguards
+								i(152947),	--World-Defiler's Gauntlets
+								i(152945),	--World-Defiler's Tuille
+								i(152948),	--World-Defiler's Sabatons
+							},
+							["questID"] = 47752,
 						}),
 						o(272456, {	-- Eredar War Supplies
 							i(152944),	--World-Defiler's Shoulderplates
@@ -667,7 +669,7 @@ _.Zones =
 							["questID"] = 48629,
 						}),
 					}),
-					n(0, { -- Zone Drop
+					n(0, {	-- Zone Drop
 						["groups"] = {
 							
 							n(-318, { -- Armor
@@ -778,7 +780,7 @@ _.Zones =
 						["ids"] = { 3629 },
 						["description"] = "|cFFFFD700Pond Nettle|r can be fished up from the fel waters of Argus.\n\n|cFFFFD700Unsullied tokens|r can drop off any mob, rare or treasure chest in the zone.\n\nTreasure items can drop from treasure chests only.",
 					}),
-					n(-74, { -- Zone Wide
+					n(-74, {	-- Zone Wide
 						["groups"] = {
 							n(-4, { -- Achievements
 								model(79440, ach(12103, { -- ...And Chew Mana Buns
