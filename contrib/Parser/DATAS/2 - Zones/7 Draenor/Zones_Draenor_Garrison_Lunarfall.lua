@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(962, { 	-- Draenor
-		m(971, {	-- Lunarfall other mapid's 971, 973, 974, 975
+		a(m(971, {	-- Lunarfall other mapid's 971, 973, 974, 975
 					-- Lucetia: MapID 991 was used and only worked in Shadowmoon Valley.  Changing it to 971 should work.
 			["groups"] = {				
 				na(-3, { 	 -- Holidays					
@@ -3060,7 +3060,6 @@ _.Zones =
 			["Lvl"] = 90,	
 			["icon"] = "Interface\\Icons\\achievement_garrison_tier01_alliance",
 			["description"] = "|cff66ccffLunarfall is the Alliance Garrison, located in Shadowmoon Valley. Several Shadowmoon clan ruins dotted the area before the garrison was built. A fully-upgraded Lunarfall garrison is considered to be a castle.|r",
-			["races"] = { 1, 3, 4, 7, 11, 22, 25 }
-		}),	
+		})),	
 	}),
 };
