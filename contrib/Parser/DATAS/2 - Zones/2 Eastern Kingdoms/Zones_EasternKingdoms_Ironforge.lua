@@ -65,17 +65,18 @@ _.Zones =
 						["achievementID"] = 1693,    -- Fool For Love
 						["u"] = 18,
 					}),
---[[					
+
 					n(-51, {     -- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(19148, qa(13484)),	-- Spring Collectors 
--- Commenting Coordinates		qg(19172, qa(13484)),	-- Spring Collectors 
+								qg(19148, qa(13484)),	-- Spring Collectors
+								qg(19172, qa(13484)),	-- Spring Collectors 
 							}),
 						},
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
 					}),					
+					--[[					
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
