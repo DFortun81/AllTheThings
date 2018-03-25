@@ -5755,6 +5755,7 @@ local function SetRowData(self, data)
 				text = RETRIEVING_DATA;
 			end
 		--[[
+		-- Uncomment this section for harvesting
 		elseif data.s and data.s < 1 then
 			-- If it doesn't, the source ID will need to be harvested.
 			local s, dressable = GetSourceID(text);
@@ -5766,21 +5767,21 @@ local function SetRowData(self, data)
 					SourceIDs[data.itemID] = item;
 				end
 				if data.bonusID then
-					local v = item.v;
-					if not v then
-						v = {};
-						item.v = v;
+					local bonuses = item.bonuses;
+					if not bonuses then
+						bonuses = {};
+						item.bonuses = bonuses;
 					end
-					v[data.bonusID] = s;
+					bonuses[data.bonusID] = s;
 				else
-					local m = item.m;
-					if not m then
-						m = {};
-						item.m = m;
+					local mods = item.mods;
+					if not mods then
+						mods = {};
+						item.mods = mods;
 					end
-					m[data.modID or 1] = s;
+					mods[data.modID or 1] = s;
 				end
-				print("NEW SOURCE ID!", text);
+				--print("NEW SOURCE ID!", text);
 				SetDataMember("Items", SourceIDs);
 			else
 				data.s = nil;
