@@ -286,7 +286,7 @@ _.Zones =
 									q(46734, { -- Assault on Broken Shore
 										["groups"] = {
 											{
-												["spellID"] = 242180, -- Broken Shore World Quests
+												--["spellID"] = 242180, -- Broken Shore World Quests
 											},
 										},
 										["qg"] = 120215, -- Archmage Khadgar
@@ -372,6 +372,70 @@ _.Zones =
 								["groups"] = {
 									q(47137, { -- Champions of Legionfall
 										["groups"] = {
+											cl(10, { -- Monk
+												["groups"] = {
+													q(45440, { -- A Brewing Situation	
+														["groups"] = {
+														},
+														["qg"] = 116929, -- Brewmaster Blancee
+														["sourceQuests"] = { 47137 }, -- Champions of Legionfall
+													}),	
+													q(45404, { -- Panic at the Brewery	
+														["groups"] = {
+														},
+														["qg"] = 119664, -- Brewmaster Almai
+														["sourceQuests"] = { 45440 }, -- A Brewing Situation
+													}),	
+													q(45459, { -- Storming the Legion	
+														["groups"] = {
+														},
+														["qg"] = 119765, -- Spirit of Brewmaster Blanche
+														["sourceQuests"] = { 45404 }, -- Panic at the Brewery
+													}),	
+													q(45574, { -- Fel Ingredients	
+														["groups"] = {
+														},
+														["qg"] = 117305, -- Brewmaster Almai
+														["sourceQuests"] = { 45459 }, -- Storming the Legion
+													}),	
+													q(45449, { -- Alchemist Koryla	
+														["groups"] = {
+														},
+														["qg"] = 117305, -- Brewer Almai
+														["sourceQuests"] = { 45459 }, -- Storming the Legion
+													}),	
+													q(45545, { -- Barrel Toss	
+														["groups"] = {
+														},
+														["qg"] = 117305, -- Brewer Almai
+														["sourceQuests"] = { 45459 }, -- Storming the Legion
+													}),	
+													q(46320, { -- Hope For a Cure	
+														["groups"] = {
+														},
+														["qg"] = 117305, -- Brewer Almai
+														["sourceQuests"] = { 45574, 45449, 45545 }, -- Fel Ingredients / Alchemist Koryla / Barrel Toss
+													}),	
+													q(45442, { -- Not Felling Well	
+														["groups"] = {
+														},
+														["qg"] = 119765, -- Spirit of Brewmaster Blanche
+														["sourceQuests"] = { 46320 }, -- Hope For a Cure
+													}),	
+													q(45771, { -- A Time for Everything	
+														["groups"] = {
+														},
+														["qg"] = 119765, -- Spirit of Brewmaster Blanche
+														["sourceQuests"] = { 45442 }, -- Not Felling Well
+													}),	
+													q(45790, { -- Champion: Almai	
+														["groups"] = {
+														},
+														["qg"] = 117504, -- Brewer Almai
+														["sourceQuests"] = { 45771 }, -- A Time for Everything
+													}),
+												},
+											}),
 										},
 										["qg"] = 116576, -- Maiev Shadowsong
 										["sourceQuests"] = { 46247 }, -- Defending Broken Isles

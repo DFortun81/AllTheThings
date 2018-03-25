@@ -564,7 +564,7 @@ local DressUpModel = CreateFrame('DressUpModel');
 local NPCModelHarvester = CreateFrame('DressUpModel', nil, OffScreenFrame);
 local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
     ["INVTYPE_HEAD"] = {1},
-	["INVTYPE_NECK"] = {2},
+	["INVTYPE_NECK"] = {51},
     ["INVTYPE_SHOULDER"] = {3},
     ["INVTYPE_BODY"] = {4},
     ["INVTYPE_CHEST"] = {5},
@@ -574,8 +574,8 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
     ["INVTYPE_FEET"] = {8},
     ["INVTYPE_WRIST"] = {9},
     ["INVTYPE_HAND"] = {10},
-	["INVTYPE_RING"] = {11},
-	["INVTYPE_TRINKET"] = {12},
+	["INVTYPE_RING"] = {52},
+	["INVTYPE_TRINKET"] = {53},
     ["INVTYPE_CLOAK"] = {15},
     ["INVTYPE_WEAPON"] = {16, 17},
     ["INVTYPE_SHIELD"] = {17},
@@ -5589,7 +5589,7 @@ local function CreateSettingsMenu()
 		end);
 		
 		lastFilter = weaponFilters;
-		for i, filter in ipairs({ 20, 21, 22, 23, 24, 25, 26, 35 }) do
+		for i, filter in ipairs({ 20, 21, 22, 23, 24, 25, 26, 35, 51, 52 }) do
 			local itemFilter = CreateFrame("CheckButton", weaponFilters:GetName() .. "-" .. filter, self, "InterfaceOptionsCheckButtonTemplate");
 			self.filterList[filter] = itemFilter;
 			itemFilter:SetPoint("LEFT", self, "LEFT", 210, 0);
@@ -5609,7 +5609,7 @@ local function CreateSettingsMenu()
 	
 	
 		lastFilter = weaponFilters;
-		for i, filter in ipairs({ 27, 28, 29, 30, 31, 32, 33, 34 }) do
+		for i, filter in ipairs({ 27, 28, 29, 30, 31, 32, 33, 34, 53 }) do
 			local itemFilter = CreateFrame("CheckButton", weaponFilters:GetName() .. filter, self, "InterfaceOptionsCheckButtonTemplate");
 			self.filterList[filter] = itemFilter;
 			itemFilter:SetPoint("LEFT", self, "LEFT", 420, 0);

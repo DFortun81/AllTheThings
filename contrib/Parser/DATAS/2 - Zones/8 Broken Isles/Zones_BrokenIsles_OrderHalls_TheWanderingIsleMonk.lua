@@ -9,6 +9,68 @@ _.Zones =
 				m(1044, { -- The Wandering Isle -- Monk
 					["groups"] = {
 						n(-17, { -- Quests
+							sz(11546,7, { -- Champions of Legionfall
+								q(45440, { -- A Brewing Situation	
+									["groups"] = {
+									},
+									["qg"] = 116929, -- Brewmaster Blancee
+									["sourceQuests"] = { 47137 }, -- Champions of Legionfall
+								}),	
+								q(45404, { -- Panic at the Brewery	
+									["groups"] = {
+									},
+									["qg"] = 119664, -- Brewmaster Almai
+									["sourceQuests"] = { 45440 }, -- A Brewing Situation
+								}),	
+								q(45459, { -- Storming the Legion	
+									["groups"] = {
+									},
+									["qg"] = 119765, -- Spirit of Brewmaster Blanche
+									["sourceQuests"] = { 45404 }, -- Panic at the Brewery
+								}),	
+								q(45574, { -- Fel Ingredients	
+									["groups"] = {
+									},
+									["qg"] = 117305, -- Brewmaster Almai
+									["sourceQuests"] = { 45459 }, -- Storming the Legion
+								}),	
+								q(45449, { -- Alchemist Koryla	
+									["groups"] = {
+									},
+									["qg"] = 117305, -- Brewer Almai
+									["sourceQuests"] = { 45459 }, -- Storming the Legion
+								}),	
+								q(45545, { -- Barrel Toss	
+									["groups"] = {
+									},
+									["qg"] = 117305, -- Brewer Almai
+									["sourceQuests"] = { 45459 }, -- Storming the Legion
+								}),	
+								q(46320, { -- Hope For a Cure	
+									["groups"] = {
+									},
+									["qg"] = 117305, -- Brewer Almai
+									["sourceQuests"] = { 45574, 45449, 45545 }, -- Fel Ingredients / Alchemist Koryla / Barrel Toss
+								}),	
+								q(45442, { -- Not Felling Well	
+									["groups"] = {
+									},
+									["qg"] = 119765, -- Spirit of Brewmaster Blanche
+									["sourceQuests"] = { 46320 }, -- Hope For a Cure
+								}),	
+								q(45771, { -- A Time for Everything	
+									["groups"] = {
+									},
+									["qg"] = 119765, -- Spirit of Brewmaster Blanche
+									["sourceQuests"] = { 45442 }, -- Not Felling Well
+								}),	
+								q(45790, { -- Champion: Almai	
+									["groups"] = {
+									},
+									["qg"] = 117504, -- Brewer Almai
+									["sourceQuests"] = { 45771 }, -- A Time for Everything
+								}),
+							}),	
 							q(44057),	-- A "Noble" Event
 							q(45440),	-- A Brewing Situation
 							q(43359),	-- A Hero's Weapon
