@@ -71,6 +71,71 @@ _.Zones =
 									["sourceQuests"] = { 45771 }, -- A Time for Everything
 								}),
 							}),	
+							spell(229385, { -- Ban-Lu, Grandmaster's Companion
+								q(46353, { -- Master Who?	
+									["groups"] = {
+									},
+									["qg"] = 118214, -- Yiska
+									["sourceQuests"] = { 46246 }, -- Strike Them Down
+								}),	
+								q(46341, { -- The Tale of Ban-Lu	
+									["groups"] = {
+									},
+									["qg"] = 120758, -- Master Bu
+									["sourceQuests"] = { 46353 }, -- Master Who?
+								}),	
+								q(46342, { -- Return to the Broken Peak	
+									["groups"] = {
+									},
+									["qg"] = 120758, -- Master Bu
+									["sourceQuests"] = { 46341 }, -- The Tale of Ban-Lu
+								}),
+								q(46343, { -- The Trail of Ban-Lu	
+									["groups"] = {
+									},
+									["qgs"] = 120722, -- Master Bu
+									["sourceQuests"] = { 46342 }, -- Return ot the Broken Peak
+								}),	
+								q(46344, { -- Smelly's Luckydo	
+									["groups"] = {
+									},
+									["qgs"] = 120744, -- Smelly Mountaintop
+									["sourceQuests"] = { 46343 }, -- The Trail of Ban-Lu
+								}),	
+								q(46346, { -- The Shadow of Ban-Lu	
+									["groups"] = {
+									},
+									["qgs"] = 120722, -- Master Bu
+									["sourceQuests"] = { 46344 }, -- Smelly's Luckydo
+								}),	
+								q(46347, { -- Clean-up on Aisle Sha	
+									["groups"] = {
+									},
+									["qgs"] = 120722, -- Master Bu
+									["sourceQuests"] = { 46346 }, -- The Shadow of Ban-Lu
+								}),	
+								q(46348, { -- The River to Ban-Lu	
+									["groups"] = {
+									},
+									["qgs"] = 120722, -- Master Bu
+									["sourceQuests"] = { 46347 }, -- Clean-up on Aisle Sha
+								}),	
+								q(46349, { -- Lilies for Ryuli	
+									["groups"] = {
+									},
+									["qgs"] = 120726, -- Waterspeaker Ryuli
+									["sourceQuests"] = { 46348 }, -- The River to Ban-Lu
+								}),	
+								q(46350, { -- The Trial of Ban-Lu	
+									["groups"] = {
+										i(142225), -- Ban-Lu, Grandmaster's Companion
+									},
+									["qgs"] = 120726, -- Waterspeaker Ryuli
+									["sourceQuests"] = { 46349 }, -- Lilies for Ryuli
+								}),	
+								
+							}),
+							--[[
 							q(44057),	-- A "Noble" Event
 							q(45440),	-- A Brewing Situation
 							q(43359),	-- A Hero's Weapon
@@ -192,13 +257,7 @@ _.Zones =
 							q(44261),	-- Vault of the Wardens
 							q(44259),	-- Violet Hold
 							q(45179),	-- Win the Crowd										
-							q(46350, { -- The Trial of Ban-Lu
-								["groups"] = {
-									{ ["mountID"] = 229385 }, -- Ban-Lu, Grandmaster's Companion
-								},
-								["Lvl"] = 110,
-								["classes"] = {10},
-							}),
+							--]]
 							q(44249, { -- Inner Sanctuary
 								i(139734), -- Grandmaster's Crown
 							}),
