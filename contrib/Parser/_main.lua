@@ -483,7 +483,14 @@ h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
 lvl = function(lvl, t) t.lvl = id; return t; end				-- Add a Level Requirement to an object.
 qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object 
 qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
-qg = function(id, t) t.qg = id; return t; end					-- Add a Quest Giver to an object.
+qg = function(id, t)											-- Add a Quest Giver to an object.
+	if type(id) == "number" then
+		t.qg = id;
+	else
+		t.qgs = id;
+	end
+	return t;
+end
 races = function(races, t) t.races = races; return t; end		-- Make an object only available for a set number of races.
 style = function(s, t) t.style = s; return t; end				-- Stylize an object.
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.

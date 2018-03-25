@@ -134,13 +134,13 @@ _.Zones =
 					qa(28316, {	-- A Deal With a Dragon (secondary QG ID 48346)
 						["groups"] = {
 						},
-						["qg"] = 48346,	-- John J. Keeshan (can be 48306, same NPC, if you pick up Blood Tour last)
+						["qgs"] = {48346, 48306},	-- John J. Keeshan (can be 48306, same NPC, if you pick up Blood Tour last)
 						["sourceQuests"] = { 28313, 28311, 28312 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
 					}),
 					qh(28448, {	-- A Deal With a Dragon (secondary QG ID 48567)
 						["groups"] = {
 						},
-						["qg"] = 48567,	-- Ariok (secondary ID can be 48565, same NPC, if you pick up Blood Tour last)
+						["qgs"] = {48567, 48565},	-- Ariok (secondary ID can be 48565, same NPC, if you pick up Blood Tour last)
 						["sourceQuests"] = { 28445, 28443, 28444 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
 					}),
 					qa(28318, {	-- A Delivery for Neeralak
