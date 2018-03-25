@@ -346,31 +346,31 @@ _.Zones =
 						},
 						["sourceQuests"] = {13947},
 					})),
-					n(3925, {				-- Thistlefur Avenger (No Prereq)
+					qg(3925, 				-- Thistlefur Avenger (No Prereq)
 						i(46128, { 	-- Troll Charm
 							qa(13868),	-- Corrupting Influence?
-						}),
-					}),
-					n(3926, {				-- Thistlefur Pathfinder (No Prereq)
+						})
+					),
+					qg(3926, 				-- Thistlefur Pathfinder (No Prereq)
 						i(46128, { 	-- Troll Charm
 							qa(13868),	-- Corrupting Influence?
-						}),
-					}),
-					n(3924, {				-- Thistlefur Shaman (No Prereq)
+						})
+					),
+					qg(3924,				-- Thistlefur Shaman (No Prereq)
 						i(46128, { 	-- Troll Charm
 							qa(13868),	-- Corrupting Influence?
-						}),
-					}),
-					n(3922, {				-- Thistlefur Totemic (No Prereq)
+						})
+					),
+					qg(3922,				-- Thistlefur Totemic (No Prereq)
 						i(46128, { 	-- Troll Charm
 							qa(13868),	-- Corrupting Influence?
-						}),
-					}),
-					n(3921, {				-- Thistlefur Ursa (No Prereq)
+						})
+					),
+					qg(3921,				-- Thistlefur Ursa (No Prereq)
 						i(46128, { 	-- Troll Charm
 							qa(13868),	-- Corrupting Influence?
-						}),
-					}),
+						})
+					),
 					qg(33421, qh(13653, {	-- Crisis at Splintertree
 						["groups"] = {
 							i(56639),
