@@ -3,30 +3,27 @@ _ = AllTheThings;
 
 -- Used by the Harvester
 function Harvest(things)
-	if not _.ItemDB then
-		_.ItemDB = things;
-	else
-		local thing;
-		for i,j in pairs(things) do
-			thing = _.ItemDB[i];
-			if not thing then
-				thing = {};
-				thing.mods = {};
-				thing.bonuses = {};
-				_.ItemDB[i] = thing;
-			else
-				if not thing.mods then thing.mods = {} end
-				if not thing.bonuses then thing.bonuses = {} end
+	if not _.ItemDB then _.ItemDB = {}; end
+	local thing;
+	for i,j in pairs(things) do
+		thing = _.ItemDB[i];
+		if not thing then
+			thing = {};
+			thing.mods = {};
+			thing.bonuses = {};
+			_.ItemDB[i] = thing;
+		else
+			if not thing.mods then thing.mods = {} end
+			if not thing.bonuses then thing.bonuses = {} end
+		end
+		if j.mods then
+			for l,modID in pairs(j.mods) do
+				thing.mods[l] = modID;
 			end
-			if j.mods then
-				for l,modID in pairs(j.mods) do
-					thing.mods[l] = modID;
-				end
-			end
-			if j.bonuses then
-				for l,bonusID in pairs(j.bonuses) do
-					thing.bonuses[l] = bonusID;
-				end
+		end
+		if j.bonuses then
+			for l,bonusID in pairs(j.bonuses) do
+				thing.bonuses[l] = bonusID;
 			end
 		end
 	end
