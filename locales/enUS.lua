@@ -217,12 +217,12 @@ AllTheThings.Locales.enUS = {
 		[33] = GetItemSubClassInfo(2,18),						-- Crossbows
 		[34] = GetItemSubClassInfo(2,13),						-- Fist Weapons
 		[35] = GetItemSubClassInfo(2,9),				 		-- Warglaives
-		[36] = GetItemSubClassInfo(2,14),						-- Miscellaneous
-		[37] = GetItemSubClassInfo(8,1),						-- Neck
-		[38] = GetItemSubClassInfo(8,10),						-- Finger
-		[39] = INVTYPE_TRINKET,									-- Trinket
 
 		-- PADDING for extra types, if necessary
+		[50] = GetItemSubClassInfo(2,14),						-- Miscellaneous
+		[51] = GetItemSubClassInfo(8,1),						-- Neck
+		[52] = GetItemSubClassInfo(8,10),						-- Finger
+		[53] = INVTYPE_TRINKET,									-- Trinket
 
 		-- "Non-Equipment Types"
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
@@ -236,6 +236,7 @@ AllTheThings.Locales.enUS = {
 		[108] = ENABLE_MUSIC.." "..ROLL,						-- Music Rolls
 		[109] = HEIRLOOMS, 										-- Heirlooms
 		[110] = "Titles", 										-- Titles
+		[111] = "Glyphs", 										-- Glyphs
 
 		-- "Recipes"
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes
