@@ -132,7 +132,7 @@ _.Instances =
 								i(56367),		-- Legguards of Winnowing Wind
 								nld({     		-- Legacy
 									["groups"] = {
-										un(2, i(56376)),	-- Thundercall [Heroic] (7.3.5 - Removed from Game!)
+										i(56376),	-- Thundercall [Heroic] (7.3.5 - Removed from Game!)
 									},
 									
 								}),
