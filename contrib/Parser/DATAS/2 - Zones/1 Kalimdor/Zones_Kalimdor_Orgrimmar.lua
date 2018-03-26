@@ -1121,7 +1121,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["races"] = {2,6,8},
 					})),
 --]]					
-					qg(86832, qh(13842, {	-- Dread Head Redemption (QG listed as either Garrosh 39605 or Vol'jin 86832 - figure out)
+					qg(14720, qh(13842, {	-- Dread Head Redemption
 						i(119325),	-- Bow of Fire
 						i(119327),	-- Durak's Downfall
 					})),
