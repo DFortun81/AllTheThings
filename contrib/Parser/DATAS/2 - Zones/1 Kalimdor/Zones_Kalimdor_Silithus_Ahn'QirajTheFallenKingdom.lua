@@ -124,6 +124,93 @@ _.Zones =
 					p(433), -- Spiky Lizard 
 				}),
 				n(-17, { 	-- Quests
+					qh(28865, {	-- Call of the Warmatron (bcrumb for Blasted Lands)
+						["groups"] = {
+						},
+						["qg"] = 50587,	-- Okril'on Mage
+						["isBreadcrumb"] = true,
+					}),
+				
+				
+					q(  8277, {	-- Deadly Desert Venom
+						["groups"] = {
+						},
+						["qg"] = 15189,	-- Beetix Ficklespragg
+					}),
+					
+					
+					q(  8278, {	-- Noggle's Last Hope
+						["groups"] = {
+						},
+						["qg"] = 15189,	-- Beetix Ficklespragg
+						["sourceQuests"] = { 8277 },	-- Deadly Desert Venom
+					}),
+					
+					
+					qh( 9416, {	-- Report to General Kirika
+						["groups"] = {
+						},
+						["qg"] = 17081,	-- Scout Bloodfist
+					}),
+					
+					
+					q(  8318, {	-- Secret Communication
+						["groups"] = {
+						},
+						["qg"] = 15306,	-- Bor Wildmane
+					}),
+					
+					
+					q(  8280, {	-- Securing the Supply Lines
+						["groups"] = {
+						},
+						["qg"] = 15191,	-- Windcaller Proudhorn
+						["breadcrumbQuestID"] = { 28528, 28527 },	-- Hero's Call: Silithus! & Warchief's Command: Silithus!
+					}),
+					
+					
+					q(  8281, {	-- Stepping Up Security
+						["groups"] = {
+						},
+						["qg"] = 15191,	-- Windcaller Proudhorn
+						["sourceQuests"] = { 8280 },	-- Securing the Suppy Lines
+					}),
+					
+					
+					q(  8320, {	-- Twilight Geolords
+						["groups"] = {
+						},
+						["qg"] = 15270,	-- Huum Wildmane
+					}),
+					
+					
+					o(180448, {	-- Wanted Poster: Deathclasp
+						q(8283,  {  -- Wanted - Deathclasp, Terror of the Sands
+								i(20646),	-- Sandstrider's Mark
+								i(20647),	-- Black Crystal Dagger
+						}),
+					}),
+					
+					
+					
+					
+--[[
+						["groups"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuests"] = {  },	-- 
+					}),
+--]]
+
+
+
+
+
+
+
+
+
+
 					qg(15194, q(8287)),	-- A Terrible Purpose
 					qg(14347, q(43002, {	-- Blessed Blade of the Windseeker
 						["groups"] = {
@@ -141,8 +228,6 @@ _.Zones =
 						}),
 					}),
 					qg(15171, q(8310)),	-- Breaking the Code
-					qg(50587, qh(28865)),	-- Call of the Warmatron 
-					qg(15189, q(8277)),	-- Deadly Desert Venom
 					qg(15181, q(8304)),	-- Dearest Natalia
 					qp185(qg(15174, q(8307))),	-- Desert Recipe
 					qg(15306, q(8319)),	-- Encrypted Twilight Texts
@@ -153,9 +238,7 @@ _.Zones =
 					})),
 					qp185(qg(15174, q(8317))),	-- Kitchen Assistance
 					qg(50588, qa(28867)),	-- Nethergarde Needs You!
-					qg(15189, q(8278)),	-- Noggle's Last Hope
 					qg(15190, q(8282)),	-- Noggle's Lost Satchel
-					qg(17081, qh( 9416)),	-- Report to General Kirika
 					qg(17082, qa( 9415)),	-- Report to Marshal Bluewall
 					n(14435, {	-- Prince Thunderaan
 						i(19018, {	-- Dormant Wind Kissed Blade	
@@ -164,10 +247,7 @@ _.Zones =
 							}),
 						}),
 					}),
-					qg(15306, q(8318)),	-- Secret Communication
-					qg(15191, q(8280)),	-- Securing the Supply Lines
 					qp185(qg(180503, q(8313))),	-- Sharing the Knowledge
-					qg(15191, q(8281)),	-- Stepping Up Security
 					qg(15194, q(8324,  {  -- Still Believing
 						["groups"] = {
 							i(20469, {
@@ -198,17 +278,10 @@ _.Zones =
 					qg(15183, q(8284)),	-- The Twilight Mystery
 					ql(qg(14347, q(7786))),	-- Thunderaan the Windseeker
 					qg(15194, q(8323)),	-- True Believers
-					qg(15270, q(8320)),	-- Twilight Geolords
 					qg(15170, q(8314)),	-- Unraveling the Mystery
 					qg(15270, q(8321,  {  -- Vyral the Vile
 						i(20650),
 					})),
-					o(180448, {	-- Wanted Poster: Deathclasp
-						q(8283,  {  -- Wanted - Deathclasp, Terror of the Sands
-							i(20646),
-							i(20647),
-						}),
-					}),
 --[[ MICRO-HOLIDAY - CALL OF THE SCARAB
 					desc(qwe(qh(45785)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
 					desc(qwe(qa(45787)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
