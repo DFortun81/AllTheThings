@@ -2570,6 +2570,7 @@ app.DifficultyColors = {
 	[5] = "ff0070dd",	--"Interface/Worldmap/Skull_64Blue",
 	[6] = "ff0070dd",	--"Interface/Worldmap/Skull_64Blue",
 	[7] = "ff9d9d9d",		--"Interface/Worldmap/Skull_64Grey",
+	[9] = "ff1eff00",	--"Interface/Worldmap/Skull_64Green",
 	[14] = "ff1eff00",	--"Interface/Worldmap/Skull_64Green",
 	[15] = "ff0070dd",	--"Interface/Worldmap/Skull_64Blue",
 	[16] = "ffa335ee",	--"Interface/Worldmap/Skull_64Purple",
@@ -3425,7 +3426,7 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return not t.daily and GetDataMember("TreatIncompleteQuestsAsCollectible");
+			return not t.isDaily and GetDataMember("TreatIncompleteQuestsAsCollectible");
 		elseif key == "collected" then
 			return t.collectible and t.saved;
 		elseif key == "saved" then
@@ -5808,7 +5809,7 @@ local function SetRowData(self, data)
 			end
 		end
 		if data.saved then
-			if data.parent and data.parent.locks or data.daily then
+			if data.parent and data.parent.locks or data.isDaily then
 				self.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known");
 			else
 				self.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known_green");
@@ -6250,7 +6251,7 @@ local function RowOnEnter(self)
 				if GetDataMember("ShowCreatureID") then GameTooltip:AddDoubleLine(L("CREATURE_ID"), tostring(qg)); end
 			end
 		end
-		if reference.daily then GameTooltip:AddLine("This can be completed daily."); end
+		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			if reference.g then
 				GameTooltipIcon:SetSize(96,96);
@@ -6291,7 +6292,7 @@ local function RowOnEnter(self)
 						if key == "shared" then
 							-- Skip
 						else
-							GameTooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key), app.DifficultyColors[key]), date("%c", value.reset));
+							GameTooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key), app.DifficultyColors[key] or "ff1eff00"), date("%c", value.reset));
 							for encounterIter,encounter in pairs(value.encounters) do
 								GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
 							end
