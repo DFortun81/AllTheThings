@@ -9,7 +9,7 @@ _.Instances =
 			inst(757, { 	-- Trial of the Crusader
 				["groups"] = {
 					d(3, {	-- 10 Player
-						cr(34796, e(1618, { -- Northrend Beasts  (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
+						cr(34797, e(1618, { -- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
 							a(i(47612)), 
 							h(i(47856)),
 							a(i(47616)),
@@ -214,7 +214,7 @@ _.Instances =
 								h(i(47582)),
 							}),
 						}),
-						cr(34796, e(1618, { -- Northrend Beasts  (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
+						cr(34797, e(1618, { -- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
 							a(i(47922)),
 							h(i(47995)),
 							a(i(47926)),
@@ -419,7 +419,7 @@ _.Instances =
 								h(i(47582)),
 							}),
 						}),			
-						cr(34796, e(1618, { -- Northrend Beasts  (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
+						cr(34797, e(1618, { -- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
 							a(i(46979)),
 							a(i(46958)),
 							a(i(46963)),
@@ -650,7 +650,7 @@ _.Instances =
 								h(i(47582)),
 							}),
 						}),			
-						cr(34796, e(1618, { -- Northrend Beasts  (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
+						cr(34797, e(1618, { -- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
 							a(i(46969)),
 							a(i(46980)),
 							a(i(46964)),
