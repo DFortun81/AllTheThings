@@ -472,7 +472,39 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17, { -- Quests			
+				n(-17, { -- Quests
+					ach(11133, { -- Why Can't I Hold All This Mana
+						q(41138), -- Feeding Shal'Aran
+						q(42230), -- The Valewalker's Burden
+						q(42488), -- Thalyssra's Abode
+						q(42833), -- How It's Made: Arcwinee
+						q(42792), -- Make Your Mark
+						i(136269, { -- Kel'danath's Manaflask
+							["groups"] = {
+							},
+							["questID"] = 42842,
+						}),
+						i(140328, { -- Volatile Leyline Crystal
+							["groups"] = {
+							},
+							["questID"] = 43988,
+						}),
+						i(140329, { -- Infinite Stone
+							["groups"] = {
+							},
+							["questID"] = 43989,
+						}),
+						i(140326, { -- Enchanted Burial Urn
+							["groups"] = {
+							},
+							["questID"] = 43986,
+						}),
+						i(140327, { -- Krytos's Research Notes
+							["groups"] = {
+							},
+							["questID"] = 43987,
+						}),
+					}),
 					n(-34, {	-- World Quests
 --[[
 						q(42859),	-- A Draught of Hope
