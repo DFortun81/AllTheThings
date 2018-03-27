@@ -139,6 +139,14 @@ _.Zones =
 					}),
 					
 					
+					q(  8304, {	-- Dearest Natalia
+						["groups"] = {
+						},
+						["qg"] = 15181,	-- Commander Mar'alith
+						["sourceQuests"] = { 8321 },	-- Vyral the Vile
+					}),
+					
+					
 					q(  8278, {	-- Noggle's Last Hope
 						["groups"] = {
 						},
@@ -177,10 +185,27 @@ _.Zones =
 					}),
 					
 					
+					q(  8284, {	-- The Twilight Mystery
+						["groups"] = {
+						},
+						["qg"] = 15183,	-- Geologist Larksbane
+						["sourceQuests"] = { 8321 },	-- Vyral the Vile
+					}),
+					
+					
 					q(  8320, {	-- Twilight Geolords
 						["groups"] = {
 						},
 						["qg"] = 15270,	-- Huum Wildmane
+					}),
+					
+					
+					q(  8321, {	-- Vyral the Vile (awarded "Twilight's Run" criteria)
+						["groups"] = {
+							i(20650),	-- Desert Wind Gauntlets
+						},
+						["qg"] = 15270,	-- Huum Wildmane
+						["sourceQuests"] = { 8320 },	-- Twilight Geolords
 					}),
 					
 					
@@ -228,7 +253,6 @@ _.Zones =
 						}),
 					}),
 					qg(15171, q(8310)),	-- Breaking the Code
-					qg(15181, q(8304)),	-- Dearest Natalia
 					qp185(qg(15174, q(8307))),	-- Desert Recipe
 					qg(15306, q(8319)),	-- Encrypted Twilight Texts
 					ql(qg(14347, q(7785))),	-- Examine the Vessel
@@ -275,13 +299,9 @@ _.Zones =
 					})),
 					qg(15183, q(8285)),	-- The Deserter
 					qg(15194, q(8279)),	-- The Twilight Lexicon
-					qg(15183, q(8284)),	-- The Twilight Mystery
 					ql(qg(14347, q(7786))),	-- Thunderaan the Windseeker
 					qg(15194, q(8323)),	-- True Believers
 					qg(15170, q(8314)),	-- Unraveling the Mystery
-					qg(15270, q(8321,  {  -- Vyral the Vile
-						i(20650),
-					})),
 --[[ MICRO-HOLIDAY - CALL OF THE SCARAB
 					desc(qwe(qh(45785)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
 					desc(qwe(qa(45787)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
