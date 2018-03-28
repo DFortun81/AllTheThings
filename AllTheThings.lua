@@ -342,7 +342,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 		local scale = reference.modelScale or 1;
 		local count = #displayInfos;
 		if count > 1 then
-			count = math.floor(count, MAX_CREATURES_PER_ENCOUNTER);
+			count = math.min(count, MAX_CREATURES_PER_ENCOUNTER);
 			local ratio = count / MAX_CREATURES_PER_ENCOUNTER;
 			if count < 3 then
 				for i=1,count do
