@@ -124,6 +124,34 @@ _.Zones =
 					p(433), -- Spiky Lizard 
 				}),
 				n(-17, { 	-- Quests
+					q(  8287, {	-- A Terrible Purpose (awarded "A Terrible Purpose" criteria)
+						["groups"] = {
+						},
+						["qg"] = 15194,	-- Hermit Ortell
+						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
+					}),
+
+					
+					qg({13136, 11732, 11730, 11723, 11733, 11734, 11724, 11698, 11731, 11722, 11728, 11729, 11726},	-- Hive'Ashi Drone, Hive'Regal Spitfire, Hive'Regal Ambusher, Hive'Ashi Sandstalker, Hive'Regal Slavemaker, Hive'Regal Hive Lord, Hive'Ashi Swarmer, Hive'Ashi Stinger, Hive'Regal Burrower, Hive'Ashi Defender, Hive'Zora Reaver, Hive'Zora Hive Sister, Hive'Zora Tunneler
+						i(20461, {	-- Brann Bronzebeard's Lost Letter
+							q(8308, {	-- Brann Bronzebeard's Lost Letter
+								["groups"] = {
+									i(20723),	-- Brann's Trusty Pick
+								},
+								["description"] = "This quest may have been removed in 7.3.5 — if you get this quest, please let us know on Discord!",
+							}),
+						})
+					),
+					
+					
+					q(  8310, {	-- Breaking the Code
+						["groups"] = {
+						},
+						["qg"] = 15171,	-- Frankal Stonebridge
+						["sourceQuests"] = { 8304 },	-- Dearest Natalia
+					}),
+
+					
 					qh(28865, {	-- Call of the Warmatron (bcrumb for Blasted Lands)
 						["groups"] = {
 						},
@@ -147,11 +175,44 @@ _.Zones =
 					}),
 					
 					
+					q(  8307, {	-- Desert Recipe
+						["groups"] = {
+						},
+						["qg"] = 15174,	-- Calandrath.
+						["description"] = "This quest is invisible until you reach Cooking 285.",
+						["requiredSkill"] = 185,	-- Cooking
+					}),
+					
+					
+					q(  8309, {	-- Glyph Chasing
+						["groups"] = {
+						},
+						["qg"] = 15170,	-- Rutgar Glyphshaper
+						["sourceQuests"] = { 8304 },	-- Dearest Natalia
+					}),
+					
+					
+					q(  8306, {	-- Into The Maw of Madness (awarded "Mistress Natalia Mar'alith" criteria)
+						["groups"] = {
+							i(20724),	-- Corrupted Blackwood Staff
+						},
+						["sourceQuests"] = { 8304 },	-- Dearest Natalia
+					}),
+					
+					
 					q(  8278, {	-- Noggle's Last Hope
 						["groups"] = {
 						},
 						["qg"] = 15189,	-- Beetix Ficklespragg
 						["sourceQuests"] = { 8277 },	-- Deadly Desert Venom
+					}),
+					
+					
+					q(  8282, {	-- Noggle's Lost Satchel
+						["groups"] = {
+						},
+						["qg"] = 15190,	-- Noggle Ficklespragg
+						["sourceQuests"] = { 8278 },	-- Noggle's Last Hope
 					}),
 					
 					
@@ -185,6 +246,22 @@ _.Zones =
 					}),
 					
 					
+					q(  8285, {	-- The Deserter
+						["groups"] = {
+						},
+						["qg"] = 15183,	-- Geologist Larksbane
+						["sourceQuests"] = { 8284 },	-- The Twilight Mystery
+					}),
+					
+					
+					q(  8279, {	-- The Twilight Lexicon
+						["groups"] = {
+						},
+						["qg"] = 15194,	-- Hermit Ortell
+						["sourceQuests"] = { 8285 },	-- The Deserter
+					}),
+					
+					
 					q(  8284, {	-- The Twilight Mystery
 						["groups"] = {
 						},
@@ -193,10 +270,26 @@ _.Zones =
 					}),
 					
 					
+					q(  8323, {	-- True Believers (awarded "Twilight Lexicon" criteria & overall "Silithus Quests" achievement)
+						["groups"] = {
+						},
+						["qg"] = 15194,	-- Hermit Ortell
+						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
+					}),
+					
+					
 					q(  8320, {	-- Twilight Geolords
 						["groups"] = {
 						},
 						["qg"] = 15270,	-- Huum Wildmane
+					}),
+					
+					
+					q(  8314, {	-- Unraveling the Mystery (awarded "Unraveling the Mystery" criteria)
+						["groups"] = {
+						},
+						["qg"] = 15170,	-- Rutgar Glyphshaper
+						["sourceQuests"] = { 8310, 8309 },	-- Breaking the Code & Glyph Chasing
 					}),
 					
 					
@@ -215,7 +308,7 @@ _.Zones =
 								i(20647),	-- Black Crystal Dagger
 						}),
 					}),
-					
+				
 					
 					
 					
@@ -227,42 +320,29 @@ _.Zones =
 					}),
 --]]
 
-
-
-
-
-
-
-
-
-
-					qg(15194, q(8287)),	-- A Terrible Purpose
-					qg(14347, q(43002, {	-- Blessed Blade of the Windseeker
+-- REPEATABLE QUESTS
+					qr(q(8319, {	-- Encrypted Twilight Texts
 						["groups"] = {
 						},
-						["classes"]= {7},
+						["qg"] = 15306,	-- Bor Wildmane
+						["sourceQuests"] = { 8318 },	-- Secret Communication
 					})),
-					n(13136, {	-- Hive'Ashi Drone
-						i(20461, {	-- Brann Bronzebeard's Lost Letter
-							q(8308,  {  -- Brann Bronzebeard's Lost Letter
-								["groups"] = {
-									i(20723),
-								},
-								["description"] = "The Lost Letter can drop from a number of Hive'Ashi, Hive'Regal, and Hive'Zora Silithid.",
-							}),
-						}),
-					}),
-					qg(15171, q(8310)),	-- Breaking the Code
-					qp185(qg(15174, q(8307))),	-- Desert Recipe
-					qg(15306, q(8319)),	-- Encrypted Twilight Texts
+-- LEGENDARY QUESTS
+					ql(q(43002, {	-- Blessed Blade of the Windseeker
+						["groups"] = {
+						},
+						["qg"] = 14347,	-- Highlord Demitrian
+						["classes"]= { 7 },	-- Shaman
+					})),
+
+
+					
+
+
+
 					ql(qg(14347, q(7785))),	-- Examine the Vessel
-					qg(15170, q(8309)),	-- Glyph Chasing
-					qg(15184, q(8306,  {  -- Into The Maw of Madness
-						i(20724),
-					})),
 					qp185(qg(15174, q(8317))),	-- Kitchen Assistance
 					qg(50588, qa(28867)),	-- Nethergarde Needs You!
-					qg(15190, q(8282)),	-- Noggle's Lost Satchel
 					qg(17082, qa( 9415)),	-- Report to Marshal Bluewall
 					n(14435, {	-- Prince Thunderaan
 						i(19018, {	-- Dormant Wind Kissed Blade	
@@ -297,11 +377,7 @@ _.Zones =
 						},
 						["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in and has a chance to contain one or more of the recipes. Quest is repeatable.|r", 
 					})),
-					qg(15183, q(8285)),	-- The Deserter
-					qg(15194, q(8279)),	-- The Twilight Lexicon
 					ql(qg(14347, q(7786))),	-- Thunderaan the Windseeker
-					qg(15194, q(8323)),	-- True Believers
-					qg(15170, q(8314)),	-- Unraveling the Mystery
 --[[ MICRO-HOLIDAY - CALL OF THE SCARAB
 					desc(qwe(qh(45785)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
 					desc(qwe(qa(45787)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
