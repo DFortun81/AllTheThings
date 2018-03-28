@@ -287,36 +287,39 @@ _.Zones =
 									["sourceQuests"] = { 43935 }, -- A Second Legend
 								}),	
 								i(128825, { -- T'uure, Beacon of the Naaru
-									qh(41957, { -- The Vindicator's Plea	
-										["groups"] = {
-										},
-										["qg"] = 101314, -- Alonsus Faol
-										["sourceQuests"] = { 40706 }, -- A Legend You Can Hold
-									}),	
-									qh(41966, { -- House Call	
-										["groups"] = {
-										},
-										["qg"] = 105602, -- Vindicator Boros
-										["sourceQuests"] = { 41957 }, -- The Vindicator's Plea
-									}),	
-									qh(41967, { -- Out of the Darkness	
-										["groups"] = {
-										},
-										["qg"] = 105603, -- Defender Barrem
-										["sourceQuests"] = { 41966 }, -- House Call
-									}),	
-									qh(41993, { -- Salvation From On High	
-										["groups"] = {
-										},
-										["qg"] = 105684, -- Alora
-										["sourceQuests"] = { 41967 }, -- Out of the Darkness
-									}),	
-									qh(42074, { -- Return of the Light	
-										["groups"] = {
-										},
-										["qg"] = 106011, -- Jace  Darkweaver
-										["sourceQuests"] = { 41993 }, -- Salvation From On High
-									}),
+									["groups"] = {
+										qh(41957, { -- The Vindicator's Plea	
+											["groups"] = {
+											},
+											["qg"] = 101314, -- Alonsus Faol
+											["sourceQuests"] = { 40706 }, -- A Legend You Can Hold
+										}),	
+										qh(41966, { -- House Call	
+											["groups"] = {
+											},
+											["qg"] = 105602, -- Vindicator Boros
+											["sourceQuests"] = { 41957 }, -- The Vindicator's Plea
+										}),	
+										qh(41967, { -- Out of the Darkness	
+											["groups"] = {
+											},
+											["qg"] = 105603, -- Defender Barrem
+											["sourceQuests"] = { 41966 }, -- House Call
+										}),	
+										qh(41993, { -- Salvation From On High	
+											["groups"] = {
+											},
+											["qg"] = 105684, -- Alora
+											["sourceQuests"] = { 41967 }, -- Out of the Darkness
+										}),	
+										qh(42074, { -- Return of the Light	
+											["groups"] = {
+											},
+											["qg"] = 106011, -- Jace  Darkweaver
+											["sourceQuests"] = { 41993 }, -- Salvation From On High
+										}),
+									},
+									["ignoreSource"] = true,
 								}),
 							}),
 							q(44057),	-- A "Noble" Event
