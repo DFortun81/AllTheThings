@@ -2825,9 +2825,25 @@ app.BaseIllusion = {
 		elseif key == "f" then
 			return 103;
 		elseif key == "text" then
-			return t.link;
+			if t.itemID then
+				local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+				if link then
+					t.link = link;
+					t.text = "|cffff80ff[" .. name .. "]|r";
+					return t.text;
+				end
+			end
+			return t.silentLink;
 		elseif key == "link" then
-			return "|cffff80ff|Htransmogillusion:" .. t.illusionID .. "|h[" ..select(2, C_TransmogCollection_GetIllusionSourceInfo(t.illusionID)) .. "]|h|r";
+			if t.itemID then
+				local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+				if link then
+					t.link = link;
+					return link;
+				end
+			end
+		elseif key == "silentLink" then
+			return select(3, C_TransmogCollection_GetIllusionSourceInfo(t.illusionID));
 		elseif key == "icon" then
 			return "Interface/ICONS/INV_Enchant_Disenchant";
 		else
@@ -6039,9 +6055,16 @@ local function RowOnClick(self, button)
 		
 		-- Control Click Expands the Groups
 		if IsControlKeyDown() then
-			-- If this reference has a link, then attempt to preview the appearance.
-			local link = reference.link or reference.silentLink;
-			if link and HandleModifiedItemClick(link) then return true; end
+			-- Illusions are a nasty animal that need to be displayed a special way.
+			if reference.illusionID then
+				DressUpVisual(DressUpOutfitMixin:GetSlotSourceID("MAINHANDSLOT", LE_TRANSMOG_TYPE_APPEARANCE), 16, reference.illusionID);
+			else
+				-- If this reference has a link, then attempt to preview the appearance.
+				local link = reference.link or reference.silentLink;
+				if link and HandleModifiedItemClick(link) then
+					return true;
+				end
+			end
 			
 			-- If this reference is anything else, expand the groups.
 			if reference.g then
@@ -6212,6 +6235,8 @@ local function RowOnEnter(self)
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setSubHeaderID)); end
 		if reference.description and GetDataMember("ShowDescriptions") then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
 		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L("MAP_ID"), tostring(reference.mapID)); end
+		if reference.bonusID then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
+		if reference.modID then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
 		if reference.dr then GameTooltip:AddDoubleLine(L("DROP_RATE"), "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
 		if not reference.itemID then
 			if not reference.speciesID and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, 1, true); end
