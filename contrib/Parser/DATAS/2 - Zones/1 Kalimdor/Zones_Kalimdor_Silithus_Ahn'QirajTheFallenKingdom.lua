@@ -130,8 +130,6 @@ _.Zones =
 						["qg"] = 15194,	-- Hermit Ortell
 						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
 					}),
-
-					
 					qg({13136, 11732, 11730, 11723, 11733, 11734, 11724, 11698, 11731, 11722, 11728, 11729, 11726},	-- Hive'Ashi Drone, Hive'Regal Spitfire, Hive'Regal Ambusher, Hive'Ashi Sandstalker, Hive'Regal Slavemaker, Hive'Regal Hive Lord, Hive'Ashi Swarmer, Hive'Ashi Stinger, Hive'Regal Burrower, Hive'Ashi Defender, Hive'Zora Reaver, Hive'Zora Hive Sister, Hive'Zora Tunneler
 						i(20461, {	-- Brann Bronzebeard's Lost Letter
 							q(8308, {	-- Brann Bronzebeard's Lost Letter
@@ -142,39 +140,29 @@ _.Zones =
 							}),
 						})
 					),
-					
-					
 					q(  8310, {	-- Breaking the Code
 						["groups"] = {
 						},
 						["qg"] = 15171,	-- Frankal Stonebridge
 						["sourceQuests"] = { 8304 },	-- Dearest Natalia
 					}),
-
-					
 					qh(28865, {	-- Call of the Warmatron (bcrumb for Blasted Lands)
 						["groups"] = {
 						},
 						["qg"] = 50587,	-- Okril'on Mage
 						["isBreadcrumb"] = true,
 					}),
-				
-				
 					q(  8277, {	-- Deadly Desert Venom
 						["groups"] = {
 						},
 						["qg"] = 15189,	-- Beetix Ficklespragg
 					}),
-					
-					
 					q(  8304, {	-- Dearest Natalia
 						["groups"] = {
 						},
 						["qg"] = 15181,	-- Commander Mar'alith
 						["sourceQuests"] = { 8321 },	-- Vyral the Vile
 					}),
-					
-					
 					q(  8307, {	-- Desert Recipe
 						["groups"] = {
 						},
@@ -182,117 +170,113 @@ _.Zones =
 						["description"] = "This quest is invisible until you reach Cooking 285.",
 						["requiredSkill"] = 185,	-- Cooking
 					}),
-					
-					
 					q(  8309, {	-- Glyph Chasing
 						["groups"] = {
 						},
 						["qg"] = 15170,	-- Rutgar Glyphshaper
 						["sourceQuests"] = { 8304 },	-- Dearest Natalia
 					}),
-					
-					
 					q(  8306, {	-- Into The Maw of Madness (awarded "Mistress Natalia Mar'alith" criteria)
 						["groups"] = {
 							i(20724),	-- Corrupted Blackwood Staff
 						},
 						["sourceQuests"] = { 8304 },	-- Dearest Natalia
 					}),
-					
-					
+					q(  8317, {	-- Kitchen Assistance
+						["groups"] = {
+						},
+						["qg"] = 15174,	-- Calandrath.
+						["sourceQuests"] = { 8313 },	-- Sharing the Knowledge
+						["requiredSkill"] = 185,	-- Cooking
+					}),
+					qa(28867, {	-- Nethergarde Needs You! (bcrumb for Blasted Lands)
+						["groups"] = {
+						},
+						["qg"] = 50588,	-- Nethergarde Mage
+						["isBreadcrumb"] = true,
+					}),
 					q(  8278, {	-- Noggle's Last Hope
 						["groups"] = {
 						},
 						["qg"] = 15189,	-- Beetix Ficklespragg
 						["sourceQuests"] = { 8277 },	-- Deadly Desert Venom
 					}),
-					
-					
 					q(  8282, {	-- Noggle's Lost Satchel
 						["groups"] = {
 						},
 						["qg"] = 15190,	-- Noggle Ficklespragg
 						["sourceQuests"] = { 8278 },	-- Noggle's Last Hope
 					}),
-					
-					
 					qh( 9416, {	-- Report to General Kirika
 						["groups"] = {
 						},
 						["qg"] = 17081,	-- Scout Bloodfist
 					}),
-					
-					
+					qa( 9415, {	-- Report to Marshal Bluewall
+						["groups"] = {
+						},
+						["qg"] = 17082,	-- Rifleman Torrig
+					}),
 					q(  8318, {	-- Secret Communication
 						["groups"] = {
 						},
 						["qg"] = 15306,	-- Bor Wildmane
 					}),
-					
-					
 					q(  8280, {	-- Securing the Supply Lines
 						["groups"] = {
 						},
 						["qg"] = 15191,	-- Windcaller Proudhorn
 						["breadcrumbQuestID"] = { 28528, 28527 },	-- Hero's Call: Silithus! & Warchief's Command: Silithus!
 					}),
-					
-					
+					o(180503, {	-- Sandy Cookbook
+						q(8313, {	-- Sharing the Knowledge
+							["groups"] = {
+							},
+							["sourceQuests"] = { 8307 },	-- Desert Recipe
+							["requiredSkill"] = 185,	-- Cooking
+						}),
+					}),
 					q(  8281, {	-- Stepping Up Security
 						["groups"] = {
 						},
 						["qg"] = 15191,	-- Windcaller Proudhorn
 						["sourceQuests"] = { 8280 },	-- Securing the Suppy Lines
 					}),
-					
-					
 					q(  8285, {	-- The Deserter
 						["groups"] = {
 						},
 						["qg"] = 15183,	-- Geologist Larksbane
 						["sourceQuests"] = { 8284 },	-- The Twilight Mystery
 					}),
-					
-					
 					q(  8279, {	-- The Twilight Lexicon
 						["groups"] = {
 						},
 						["qg"] = 15194,	-- Hermit Ortell
 						["sourceQuests"] = { 8285 },	-- The Deserter
 					}),
-					
-					
 					q(  8284, {	-- The Twilight Mystery
 						["groups"] = {
 						},
 						["qg"] = 15183,	-- Geologist Larksbane
 						["sourceQuests"] = { 8321 },	-- Vyral the Vile
 					}),
-					
-					
 					q(  8323, {	-- True Believers (awarded "Twilight Lexicon" criteria & overall "Silithus Quests" achievement)
 						["groups"] = {
 						},
 						["qg"] = 15194,	-- Hermit Ortell
 						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
 					}),
-					
-					
 					q(  8320, {	-- Twilight Geolords
 						["groups"] = {
 						},
 						["qg"] = 15270,	-- Huum Wildmane
 					}),
-					
-					
 					q(  8314, {	-- Unraveling the Mystery (awarded "Unraveling the Mystery" criteria)
 						["groups"] = {
 						},
 						["qg"] = 15170,	-- Rutgar Glyphshaper
 						["sourceQuests"] = { 8310, 8309 },	-- Breaking the Code & Glyph Chasing
 					}),
-					
-					
 					q(  8321, {	-- Vyral the Vile (awarded "Twilight's Run" criteria)
 						["groups"] = {
 							i(20650),	-- Desert Wind Gauntlets
@@ -300,25 +284,12 @@ _.Zones =
 						["qg"] = 15270,	-- Huum Wildmane
 						["sourceQuests"] = { 8320 },	-- Twilight Geolords
 					}),
-					
-					
 					o(180448, {	-- Wanted Poster: Deathclasp
 						q(8283,  {  -- Wanted - Deathclasp, Terror of the Sands
 								i(20646),	-- Sandstrider's Mark
 								i(20647),	-- Black Crystal Dagger
 						}),
 					}),
-				
-					
-					
-					
---[[
-						["groups"] = {
-						},
-						["qg"] = ,	-- 
-						["sourceQuests"] = {  },	-- 
-					}),
---]]
 
 -- REPEATABLE QUESTS
 					qr(q(8319, {	-- Encrypted Twilight Texts
@@ -327,57 +298,67 @@ _.Zones =
 						["qg"] = 15306,	-- Bor Wildmane
 						["sourceQuests"] = { 8318 },	-- Secret Communication
 					})),
+					qr(q(  8324, {	-- Still Believing
+						["groups"] = {
+							i(20469, {
+								i(20548, {	-- Pattern: Runed Stygian Belt
+									i(20539),	-- Runed Stygian Belt
+								}),
+								i(20554, {	-- Plans: Darkrune Breastplate
+									i(20550),	-- Darkrune Breastplate
+								}),
+								i(20546, {	-- Pattern: Runed Stygian Leggings
+									i(20538),	-- Runed Stygian Leggings
+								}),
+								i(20555, {	-- Plans: Darkrune Helm
+									i(20551),	-- Darkrune Helm
+								}),
+								i(20547, {	-- Pattern: Stygian Boots
+									i(20537),	-- Stygian Boots
+								}),
+								i(20553, {	-- Plans: Darkrune Gauntlets
+									i(20549),	-- Darkrune Gauntlets
+								}),
+							}),
+						},
+						["qg"] = 15194,	-- Hermit Ortell
+						["sourceQuests"] = { 8323 },	-- True Believers
+						["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in and has a chance to contain one or more of the recipes. Quest is repeatable.|r", 
+					})),
+					
 -- LEGENDARY QUESTS
-					ql(q(43002, {	-- Blessed Blade of the Windseeker
+					ql(q(7785, {	-- Examine the Vessel
+						["groups"] = {
+						},
+						["qg"] = 14347,	-- Highlord Demitrian
+						["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
+--						["sourceQuests"] = {  },	-- 
+					})),
+					i(19018, {	-- Dormant Wind Kissed Blade
+						ql(q(7787, {	-- Rise, Thunderfury!
+							["groups"] = {
+								i(19019),	-- Thunderfury, Blessed Blade of the Windseeker (LEGENDARY!)
+							},
+							["qg"] = 14435,	-- Prince Thunderaan
+							["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
+						})),
+					}),
+					ql(q(7786, {	-- Thunderaan the Windseeker
+						["groups"] = {
+						},
+						["qg"] = 14347,	-- Highlord Demitrian
+						["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
+						["sourceQuests"] = { 7785 },	-- Examine the Vessel
+					})),
+
+-- CLASS HALL QUESTS
+					q(43002, {	-- Blessed Blade of the Windseeker
 						["groups"] = {
 						},
 						["qg"] = 14347,	-- Highlord Demitrian
 						["classes"]= { 7 },	-- Shaman
-					})),
-
-
-					
-
-
-
-					ql(qg(14347, q(7785))),	-- Examine the Vessel
-					qp185(qg(15174, q(8317))),	-- Kitchen Assistance
-					qg(50588, qa(28867)),	-- Nethergarde Needs You!
-					qg(17082, qa( 9415)),	-- Report to Marshal Bluewall
-					n(14435, {	-- Prince Thunderaan
-						i(19018, {	-- Dormant Wind Kissed Blade	
-							q(7787,  {  -- Rise, Thunderfury!
-								i(19019),
-							}),
-						}),
 					}),
-					qp185(qg(180503, q(8313))),	-- Sharing the Knowledge
-					qg(15194, q(8324,  {  -- Still Believing
-						["groups"] = {
-							i(20469, {
-								i(20548, {
-									i(20539),
-								}),
-								i(20554, {
-									i(20550),
-								}),
-								i(20546, {
-									i(20538),
-								}),
-								i(20555, {
-									i(20551),
-								}),
-								i(20547, {
-									i(20537),
-								}),
-								i(20553, {
-									i(20549),
-								}),
-							}),
-						},
-						["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in and has a chance to contain one or more of the recipes. Quest is repeatable.|r", 
-					})),
-					ql(qg(14347, q(7786))),	-- Thunderaan the Windseeker
+
 --[[ MICRO-HOLIDAY - CALL OF THE SCARAB
 					desc(qwe(qh(45785)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
 					desc(qwe(qa(45787)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
@@ -418,8 +399,8 @@ _.Zones =
 					}),
 					qwe(qg(117432, qh(45643))),	-- Lean Shanks
 					qwe(qg(117434, qa(45735))),	-- Lean Shanks
---					qwe(q(45739)),	-- Lesser Wind Stones (WORLD QUEST)
---					qwe(q(45656)),	-- Lesser Wind Stones (WORLD QUEST)
+					qwe(q(45739)),	-- Lesser Wind Stones (WORLD QUEST)
+					qwe(q(45656)),	-- Lesser Wind Stones (WORLD QUEST)
 					n(117663, {	-- The Duke of Fathoms
 						i(143873, {	-- Pearl of Fathoms
 							qwe(qh(45748)),	-- Pearl of Fathoms
@@ -442,8 +423,8 @@ _.Zones =
 					}),
 					qwe(qg(117434, qa(45729))),	-- Sandworm Meat
 					qwe(q(45637)),	-- Sandworm Meat (probably Horde-only)
---					qwe(q(45740)),	-- Silithyst (WORLD QUEST)
---					qwe(q(45657)),	-- Silithyst (WORLD QUEST)
+					qwe(q(45740)),	-- Silithyst (WORLD QUEST)
+					qwe(q(45657)),	-- Silithyst (WORLD QUEST)
 					n(117665, {	-- The Duke of Zephyrs
 						i(143883, {	-- Song of Zephyrs
 							qwe(qa(45758)),	-- Song of Zephyrs
@@ -452,12 +433,12 @@ _.Zones =
 							qwe(qh(45750)),	-- Song of Zephyrs
 						}),
 					}),
---					qwe(q(45655)),	-- The Colossus of Ashi (WORLD QUEST)
---					qwe(q(45738)),	-- The Colossus of Ashi (WORLD QUEST)
---					qwe(q(45674)),	-- The Colossus of Regal (WORLD QUEST)
---					qwe(q(45741)),	-- The Colossus of Regal (WORLD QUEST)
---					qwe(q(45742)),	-- The Colossus of Zora (WORLD QUEST)
---					qwe(q(45675)),	-- The Colossus of Zora (WORLD QUEST)
+					qwe(q(45655)),	-- The Colossus of Ashi (WORLD QUEST)
+					qwe(q(45738)),	-- The Colossus of Ashi (WORLD QUEST)
+					qwe(q(45674)),	-- The Colossus of Regal (WORLD QUEST)
+					qwe(q(45741)),	-- The Colossus of Regal (WORLD QUEST)
+					qwe(q(45742)),	-- The Colossus of Zora (WORLD QUEST)
+					qwe(q(45675)),	-- The Colossus of Zora (WORLD QUEST)
 					n(117672, {	-- Lord Skwol
 						i(143879, {	-- Tidal Sigil of Skwol
 							qwe(qh(45754)),	-- Tidal Sigil of Skwol
