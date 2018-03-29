@@ -2437,8 +2437,15 @@ app.BaseAchievementCriteria = {
 			return t.parent.achievementID;
 		elseif key == "text" then
 			return GetAchievementCriteriaInfo(t.achievementID,t.criteriaID) or ("Achievement #" .. t.achievementID .. ", Criteria #" .. t.criteriaID);
-		--elseif key == "link" then
-		--	return GetAchievementLink(t.achievementID);
+		elseif key == "link" then
+			if t.itemID then
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+				if link then
+					t.link = link;
+					t.icon = icon;
+					return link;
+				end
+			end
 		elseif key == "icon" then
 			return select(10, GetAchievementInfo(t.achievementID));
 		elseif key == "trackable" then
@@ -3020,7 +3027,7 @@ app.BaseItem = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
-			return t.s;
+			return t.s or (t.questID and GetDataMember("TreatIncompleteQuestsAsCollectible"));
 		elseif key == "collected" then
 			return t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s);
 		elseif key == "text" then
@@ -3037,12 +3044,12 @@ app.BaseItem = {
 				elseif t.modID then
 					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, t.modID);
 				end
-			end
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
-			if link then
-				t.link = link;
-				t.icon = icon;
-				return link;
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
+				if link then
+					t.link = link;
+					t.icon = icon;
+					return link;
+				end
 			end
 		elseif key == "trackable" then
 			return t.questID;
@@ -3547,6 +3554,8 @@ app.BaseTitle = {
 			return true;
 		elseif key == "f" then
 			return 110;
+		elseif key == "icon" then
+			return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
 		elseif key == "collected" then
 			if GetDataSubMember("CollectedTitles", t.titleID) == 1 then return 1; end
 			if IsTitleKnown(t.titleID) then
@@ -5208,7 +5217,8 @@ local function CreateSettingsMenu()
 		CreateIDCheckBox(self, "ShowSpeciesID", "Show Species ID", 15, -370);
 		CreateIDCheckBox(self, "ShowSpellID", "Show Spell ID", 15, -390);
 		CreateIDCheckBox(self, "ShowTierID", "Show Tier ID", 15, -410);
-		CreateIDCheckBox(self, "ShowVisualID", "Show Visual ID", 15, -430);
+		CreateIDCheckBox(self, "ShowTitleID", "Show Title ID", 15, -430);
+		CreateIDCheckBox(self, "ShowVisualID", "Show Visual ID", 15, -450);
 		
 		-- This creates the "Show Uncollected Things" checkBox --
 		self.ShowUncollectedThings = CreateFrame("CheckButton", name .. "-ShowUncollectedThings", self, "InterfaceOptionsCheckButtonTemplate");
@@ -6717,6 +6727,12 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		--[[]]--
+		
+		-- Titles (Dynamic)
+		db = app.CreateAchievement(2188, GetTitleCache());
+		db.expanded = false;
+		db.text = "Titles (Dynamic)";
+		table.insert(g, db);
 		
 		-- The Main Window's Data
 		local missingData = {};

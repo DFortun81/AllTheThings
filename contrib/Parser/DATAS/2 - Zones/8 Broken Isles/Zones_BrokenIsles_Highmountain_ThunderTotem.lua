@@ -5,7 +5,41 @@ _.Zones =
 {
 	m(1007, { 	-- The Broken Isles
 		m(1024, {	-- Highmountain
-			["groups"] = {				
+			["groups"] = {
+				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
+					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+					["groups"] = {
+						title(340, {	-- TITLE: Field Medic!
+							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!",
+							["groups"] = {
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 6, 		-- Crumpled Letter (Criteria)
+									["itemID"] = 139524,		-- Crumpled Letter
+									--["questID"] = 42333,		-- Crumpled Letter (Quest)
+									["description"] = "",
+									["qgs"] = {}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 7, 		-- Crumpled Note (Criteria)
+									["itemID"] = 139525,		-- Crumpled Note
+									--["questID"] = 42334,		-- Crumpled Note (Quest)
+									["description"] = "",
+									["qgs"] = {}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 9, 		-- Fevered Letter (Criteria)
+									["itemID"] = 139523,		-- Fevered Letter
+									--["questID"] = 42323,		-- Fevered Letter (Quest)
+									["description"] = "",
+									["qgs"] = {}
+								}
+							}
+						})
+					},
+				}),
 				n(-7, { 	-- World Bosses
 					["groups"] = {
 						cr(110378, e(1789, { 	-- Drugon the Frostblood 
