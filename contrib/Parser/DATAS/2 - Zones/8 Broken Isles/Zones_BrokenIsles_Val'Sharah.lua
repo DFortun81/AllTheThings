@@ -5,7 +5,41 @@ _.Zones =
 {
 	m(1007, { 	-- The Broken Isles
 		m(1018, {	-- Val'sharah
-			["groups"] = {											
+			["groups"] = {
+				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
+					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+					["groups"] = {
+						title(340, {	-- TITLE: Field Medic!
+							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!",
+							["groups"] = {
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 3, 		-- Bloody Plea (Criteria)
+									["itemID"] = 139527,		-- Bloody Plea
+									--["questID"] = 42308,		-- Bloody Plea (Quest)
+									["description"] = "Furbolgs in southern Val'sharah",
+									["qgs"] = {93577, 91288}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 5, 		-- Bloody Request (Criteria)
+									["itemID"] = 139528,		-- Bloody Request
+									--["questID"] = 42309,		-- Bloody Request (Quest)
+									["description"] = "Grizzleweald (68, 73) in Val'sharah",
+									["qgs"] = {109045}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 10, 		-- Fevered Note (Criteria)
+									["itemID"] = 139526,		-- Fevered Note
+									--["questID"] = 42303,		-- Fevered Note (Quest)
+									["description"] = "Southern Val'sharah",
+									["qgs"] = {108675}
+								}
+							}
+						})
+					},
+				}),
 				n(-7, { 	-- World Bosses
 					["groups"] = {
 						cr(108879, e(1770, { -- Humongris 

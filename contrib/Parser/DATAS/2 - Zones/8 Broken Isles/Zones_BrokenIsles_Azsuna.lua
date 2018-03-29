@@ -6,6 +6,40 @@ _.Zones =
 	m(1007, { 	-- The Broken Isles
 		m(1015, {	-- Azsuna
 			["groups"] = {
+				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
+					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+					["groups"] = {
+						title(340, {	-- TITLE: Field Medic!
+							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!",
+							["groups"] = {
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 2, 		-- Bloody Note (Criteria)
+									["itemID"] = 139522,		-- Bloody Note (Item)
+									--["questID"] = 42255,		-- Bloody Note (Quest)
+									["description"] = "Pirates in southern-east Azsuna.",
+									["qgs"] = {108133, 108139, 108153, 108146}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 11, 		-- Fevered Plea (Criteria)
+									["itemID"] = 139520,		-- Fevered Plea (Item)
+									--["questID"] = 42250,		-- Fevered Plea (Quest)
+									["description"] = "Murlocs at the southern tip in Azsuna.",
+									["qgs"] = {111598, 111630, 111586 }
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 15, 		-- Singed Note (Criteria)
+									["itemID"] = 139521,		-- Singed Note (Item)
+									--["questID"] = 42245,		-- Singed Note (Quest)
+									["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy.",
+									["qgs"] = {88101, 88099, 108146}
+								},
+							}
+						})
+					},
+				}),
 				n(-7, { 	-- World Bosses
 					["groups"] = {
 						cr(109331, e(1774, { 	-- Calamir 

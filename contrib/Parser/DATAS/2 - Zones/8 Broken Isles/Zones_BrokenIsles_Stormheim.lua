@@ -5,7 +5,41 @@ _.Zones =
 {
 	m(1007, { 	-- The Broken Isles
 		m(1017, {	-- Stormheim
-			["groups"] = {				
+			["groups"] = {
+				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
+					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+					["groups"] = {
+						title(340, {	-- TITLE: Field Medic!
+							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!",
+							["groups"] = {
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 8, 		-- Crumpled Request (Criteria)
+									["itemID"] = 139531,		-- Crumpled Request
+									--["questID"] = 42058,		-- Crumpled Request (Quest)
+									["description"] = "Vampirates.\n  - Crieve (Unconfirmed)",
+									["qgs"] = {108030}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 13, 		-- Fevered Request (Criteria)
+									["itemID"] = 139529,		-- Fevered Request
+									--["questID"] = 41985,		-- Fevered Request (Quest)
+									["description"] = "Murlocs at Morheim (eastern Stormheim).",
+									["qgs"] = {98498, 98500, 98501, 98502, 110258}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 14, 		-- Singed Letter (Criteria)
+									["itemID"] = 139530,		-- Singed Letter
+									--["questID"] = 42215,		-- Singed Letter (Quest)
+									["description"] = "Southern Stormheim.",
+									["qgs"] = {116600}
+								}
+							}
+						})
+					},
+				}),
 				n(-7, { -- World Bosses
 					["groups"] = {
 						cr(107544, e(1749, { -- Nithogg 

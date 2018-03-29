@@ -6,6 +6,48 @@ _.Zones =
 	m(1007, { 	-- The Broken Isles
 		m(1033, {	-- Suramar
 			["groups"] = {
+				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
+					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+					["groups"] = {
+						title(340, {	-- TITLE: Field Medic!
+							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!",
+							["groups"] = {
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 1, 		-- Bloody Letter (Criteria)
+									["itemID"] = 139534,		-- Bloody Letter
+									--["questID"] = 42350,		-- Bloody Letter (Quest)
+									["description"] = "Northwest Suramar.",
+									["qgs"] = {101783}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 4, 		-- Bloody Prayer (Criteria)
+									["itemID"] = 139535,		-- Bloody Prayer
+									--["questID"] = 42351,		-- Bloody Prayer (Quest)
+									["description"] = "Southwest Suramar City.",
+									["qgs"] = {114470}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 12, 		-- Fevered Prayer (Criteria)
+									["itemID"] = 139532,		-- Fevered Prayer
+									--["questID"] = 42345,		-- Fevered Prayer (Quest)
+									["description"] = "Northwest Suramar.",
+									["qgs"] = {101784}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 16, 		-- Singed Plea (Criteria)
+									["itemID"] = 139533,		-- Singed Plea
+									--["questID"] = 42340,		-- Singed Plea (Quest)
+									["description"] = "Fal'dorei Tunnels.",
+									["qgs"] = {105753, 105625, 113162}
+								}
+							}
+						})
+					},
+				}),
 				n(-214, { -- Nightborne Home
 					["groups"] = {
 						n(-17, { -- Quests
