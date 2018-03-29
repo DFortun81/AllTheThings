@@ -117,8 +117,18 @@ _.Zones =
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26033 }	-- Trol'kalar
 					}),
-					
-					
+					qa(26038, {	-- Attack on the Tower (awarded "Refuge Pointe" criteria)
+						["groups"] = {
+							i( 59159),	-- Highland Mace
+							i( 59160),	-- Trelane's Leggings
+							i( 59161),	-- Belt of Refuge
+							i( 59162),	-- Lightstep Boots
+							i( 59163),	-- Craig's Steel
+							i(131470),	-- Refuge Cinch
+						},
+						["qg"] = 41983,	-- Apprentice Kryten
+						["sourceQuests"] = { 26037 },	-- Trelane's Defenses
+					}),
 					o(  2702, {	-- Stone of Inner Binding
 						q( 26042, {	-- Breaking the Keystone
 							["groups"] = {
@@ -136,8 +146,6 @@ _.Zones =
 							["sourceQuests"] = { 26042 },	-- Breaking the Keystone
 						}),
 					}),
-					
-					
 					qh(26027, {	-- Call to Arms
 						["groups"] = {
 							i( 59178),	-- Ramshackle Bracers
@@ -150,22 +158,16 @@ _.Zones =
 						["qg"] = 41966,	-- Deathstalker Maudria
 						["sourceQuests"] = { 26053 },	-- Clearing the Highlands
 					}),
-					
-					
 					qh(26053, {	-- Clearing the Highlands
 						["groups"] = {
 						},
 						["qg"] = 41966,	-- Deathstalker Maudria
 					}),
-					
-					
 					qh(26429, {	-- Crush the Witherbark
 						["groups"] = {
 						},
 						["qg"] = 2771,	-- Drum Fel
 					}),
-					
-					
 					q( 26628, {	-- Death From Below (awarded "Faldir's Cover" criteria)
 						["groups"] = {
 							i( 59212),	-- O'Breen's Dress Robes
@@ -178,8 +180,6 @@ _.Zones =
 						["qg"] = 2610,	-- Shakes O'Breen
 						["sourceQuests"] = { 26052 },	-- Speak to Shakes
 					}),
-					
-					
 					q( 26055, {	-- Drowned Sorrows
 						["groups"] = {
 							i( 59205),	-- Folly's Spar
@@ -190,24 +190,28 @@ _.Zones =
 						["qg"] = 2769,	-- Captain Steelgut
 						["sourceQuests"] = { 26083 },	-- Hello Lolo
 					}),
-					
-					
 					qh(26022, {	-- First Blood
 						["groups"] = {
 						},
 						["qg"] = 41949,	-- Dark Ranger Alina
 						["breadcrumbQuestID"] = { 28619 },	-- Warchief's Command: Arathi Highlands!
 					}),
-					
-					
+					qa(26117, {	-- For Southshore
+						["groups"] = {
+							i( 59168),	-- Stromgarde Surcoat
+							i( 59169),	-- Stromgarde Leggings
+							i( 59170),	-- Stromgarde Bracers
+							i(131487),	-- Stromgarde Greaves
+						},
+						["qg"] = 2712,	-- Quae
+						["sourceQuests"] = { 26116 },	-- Kinelory Strikes
+					}),
 					q( 26050, {	-- Goggle Boggle
 						["groups"] = {
 						},
 						["qg"] = 2768,	-- Professor Phizzlethorpe
 						["sourceQuests"] = { 26083 },	-- Hello Lolo
 					}),
-					
-					
 					qh(26108, {	-- Guile of the Raptor
 						["groups"] = {
 							i( 59203),	-- Hammerfall Gloves
@@ -219,71 +223,87 @@ _.Zones =
 						["qg"] = 42130,	-- Gor'mul
 						["sourceQuests"] = { 26107 },	-- Raising Spirits
 					}),
-					
-					
 					qh(26084, {	-- Hammerfall
 						["groups"] = {
 						},
 						["qg"] = 41949,	-- Dark Ranger Alina
 						["sourceQuests"] = { 26081 },	-- Alina's Reward
 					}),
-					
-					
 					qh(26083, {	-- Hello Lolo
 						["groups"] = {
 						},
 						["qg"] = 42088,	-- Goutgut
 						["sourceQuests"] = { 26081 },	-- Alina's Reward
 					}),
-					
-					
+					qa(26110, {	-- Just Like Old Times
+						["groups"] = {
+						},
+						["qg"] = 2712,	-- Quae
+						["sourceQuests"] = { 26113 },	-- Quae and Kinelory
+					}),
+					qa(26116, {	-- Kinelory Strikes
+						["groups"] = {
+						},
+						["qg"] = 2713,	-- Kinelory
+						["sourceQuests"] = { 26114 },	-- Quae Trusts You
+					}),
+					qa(26093, {	-- Northfold Manor
+						["groups"] = {
+						},
+						["qg"] = 2700,	-- Captain Nials
+						["breadcrumbQuestID"] = { 28573 },	-- Hero's Call: Arathi Highlands!
+					}),
+					qa(26113, {	-- Quae and Kinelory
+						["groups"] = {
+						},
+						["qg"] = 2608,	-- Commander Amaren
+					}),
+					qa(26114, {	-- Quae Trusts You
+						["groups"] = {
+						},
+						["qg"] = 2712,	-- Quae
+						["sourceQuests"] = { 26110 },	-- Just Like Old Times
+					}),
 					qh(26107, {	-- Raising Spirits
 						["groups"] = {
 						},
 						["qg"] = 42130,	-- Gor'mul
 					}),
-					
-					
 					qh(26430, {	-- Revantusk Village
 						["groups"] = {
 						},
 						["qg"] = 2771,	-- Drum Fel
 						["isBreadcrumb"] = true,	-- bcrumb for The Hinterlands (not sure if mutually exclusive with Warchief's Command quest)
 					}),
-					
-					
+					qa(26336, {	-- Shakes O'Breen
+						["groups"] = {
+						},
+						["qg"] = 2789,	-- Skuerto
+					}),
 					qh(26032, {	-- Sigil of Arathor
 						["groups"] = {
 						},
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26031 },	-- Sigil of Thoradin
 					}),
-					
-					
 					qh(26030, {	-- Sigil of Strom
 						["groups"] = {
 						},
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26023 },	-- The Forsaken Trollbane
 					}),
-					
-					
 					qh(26031, {	-- Sigil of Thoradin
 						["groups"] = {
 						},
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26030 },	-- Sigil of Strom
 					}),
-					
-					
 					q( 26052, {	-- Speak to Shakes
 						["groups"] = {
 						},
 						["qg"] = 2774,	-- Doctor Draxlegauge
 						["sourceQuests"] = { 26051 },	-- Sunken Treasure
 					}),
-					
-					
 					o(  2701, {	-- Iridescent Shards
 						q(26041, {	-- Stones of Binding
 							["groups"] = {
@@ -291,8 +311,18 @@ _.Zones =
 							["sourceQuests"] = { 26039 },	-- The Princess Trapped
 						}),
 					}),
-					
-					
+					qa(26095, {	-- Stromgarde Badges
+						["groups"] = {
+							i( 59190),	-- Slippers of Sorrowful Tidings
+							i( 59191),	-- Yellow Ribbon Armbands
+							i( 59192),	-- Griefstricken Gloves
+							i( 59193),	-- Heartsick Breastplate
+							i(131481),	-- Bindings of Longing
+							i(131482),	-- Grips of the Weary
+						},
+						["qg"] = 2700,	-- Captain Nials
+						["sourceQuests"] = { 26093 },	-- Northfold Manner
+					}),
 					q( 26051, {	-- Sunken Treasure
 						["groups"] = {
 							i( 59199),	-- Bottom Waders
@@ -303,25 +333,30 @@ _.Zones =
 						["qg"] = 2774,	-- Doctor Draxlegauge
 						["sourceQuests"] = { 26050 },	-- Goggle Boggle
 					}),
-					
-					
 					qh(26023, {	-- The Forsaken Trollbane
 						["groups"] = {
 						},
 						["qg"] = 41949,	-- Dark Ranger Alina
 						["sourceQuests"] = { 26022 },	-- First Blood
 					}),
-					
-					
 					o(138492, {	-- Shards of Myzrael
 						q(26039, {	-- The Princess Trapped
 							["groups"] = {
 							},
-							["breadcrumbQuestID"] = { 26909 },	-- The Stone Shards
+							["breadcrumbQuestID"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
 						}),
 					}),
-					
-					
+					qa(26049, {	-- The Princess Unleashed
+						["groups"] = {
+							i( 59208),	-- Wrap of Open Menace
+							i( 59209),	-- Eldritch Gloves
+							i( 59210),	-- Earthbound Mantle
+							i( 59211),	-- Shackling Gloves
+							i(131473),	-- Mantle of the Bound
+						},
+						["qg"] = 2789,	-- Skuerto
+						["sourceQuests"] = { 26346 },	-- Myzrael's Tale
+					}),
 					qh(26912, {	-- The Princess Unleashed (awarded "Hammerfall" criteria and overall "Arathi Highlands Quests" achievement)
 						["groups"] = {
 							i( 59208),	-- Wrap of Open Menace
@@ -333,8 +368,6 @@ _.Zones =
 						["qg"] = 2787,	-- Zaruk
 						["sourceQuests"] = { 26911 },	-- Myzrael's Tale
 					}),
-					
-					
 					qh(26029, {	-- The Real Threat
 						["groups"] = {
 							i( 59186),	-- Skullslasher
@@ -346,16 +379,17 @@ _.Zones =
 						["qg"] = 41966,	-- Deathstalker Maudria
 						["sourceQuests"] = { 26027 },	-- Call to Arms
 					}),
-					
-					
+					qa(26341, {	-- The Stone Shards
+						["groups"] = {
+						},
+						["qg"] = 2789,	-- Skuerto
+					}),
 					qh(26909, {	-- The Stone Shards
 						["groups"] = {
 						},
 						["qg"] = 2787,	-- Zaruk
 						["isBreadcrumb"] = true,	-- for "The Princess Trapped"
 					}),
-					
-					
 					qh(26025, {	-- The Traitor Orc
 						["groups"] = {
 							i( 59171),	-- Bloodstone-Studded Cloak
@@ -366,8 +400,6 @@ _.Zones =
 						["qg"] = 41949,	-- Dark Ranger Alina
 						["sourceQuests"] = { 26022 },	-- First Blood
 					}),
-					
-					
 					qh(26428, {	-- To Steal From Thieves
 						["groups"] = {
 							i( 59158),	-- Craig's Steel
@@ -379,8 +411,12 @@ _.Zones =
 						},
 						["qg"] = 4486,	-- Genavie Callow
 					}),
-					
-					
+					qa(26037, {	-- Trelane's Defenses
+						["groups"] = {
+						},
+						["qg"] = 2789,	-- Skuerto
+						["sourceQuests"] = { 26036 },	-- Wand Over Fist
+					}),
 					qh( 6622, {	-- Triage
 						["groups"] = {
 						},
@@ -389,86 +425,47 @@ _.Zones =
 						["requiredSkill"] = 356,	-- First Aid
 						["breadcrumbQuestID"] = { 6623 },	-- Horde Trauma
 					}),
-					
-					
 					qh(26033, {	-- Trol'kalar
 						["groups"] = {
 						},
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26032 },	-- Sigil of Arathor
 					}),
-
-
---[[
+					qa(26036, {	-- Wand over Fist
 						["groups"] = {
 						},
-						["qg"] = ,	-- 
-						["sourceQuests"] = {  },	-- 
+						["qg"] = 2789,	-- Skuerto
+						["sourceQuests"] = { 26035 },	-- Worth Its Weight in Gold
 					}),
---]]
-
-					
-					qg(41983, qa(26038, {	-- Attack on the Tower
-						i( 59159),
-						i( 59160),
-						i( 59161),
-						i( 59162),
-						i( 59163),
-						i(131470),
-					})),
-					qg( 2712, qa(26117, {	-- For Southshore
-						i( 59168),
-						i( 59169),
-						i( 59170),
-						i(131487),
-					})),
-					qg( 2712, qa(26110)),	-- Just Like Old Times
-					qg( 2713, qa(26116)),	-- Kinelory Strikes
-					qg( 2700, qa(26093)),	-- Northfold Manor
-					qg( 2608, qa(26113)),	-- Quae and Kinelory
-					qg( 2712, qa(26114)),	-- Quae Trusts You
-					qg( 2789, qa(26336)),	-- Shakes O'Breen
-					qg( 2700, qa(26095, {	-- Stromgarde Badges
-						i( 59190),
-						i( 59191),
-						i( 59192),
-						i( 59193),
-						i(131481),
-						i(131482),
-					})),
-					qg( 2789, qa(26049, {	-- The Princess Unleashed
-						i( 59208),
-						i( 59209),
-						i( 59210),
-						i( 59211),
-						i(131473),
-					})),
-					qg( 2789, qa(26341)),	-- The Stone Shards
-					qg( 2789, qa(26037)),	-- Trelane's Defenses
-					qg( 2789, qa(26036)),	-- Wand over Fist
 					o(  2713, {	-- Wanted Board
 						qa(26024, {	-- Wanted! Marez Cowl
-							i( 59182),
-							i( 59183),
-							i( 59184),
-							i( 59185),
-							i(131465),
+							i( 59182),	-- Syndicate Dagger
+							i( 59183),	-- Silenced Rifle
+							i( 59184),	-- Demon-Trafficker's Belt
+							i( 59185),	-- Vest of Dark Rumors
+							i(131465),	-- Hauberk of Dire Tidings
 						}),
 						qa(26079, {	-- Wanted! Otto and Falconcrest
-							i( 59174),
-							i( 59175),
-							i( 59176),
-							i( 59177),
-							i(131477),
-							i(131478),
+							i( 59174),	-- Dustfall Bracers
+							i( 59175),	-- Sandals of Sorrow
+							i( 59176),	-- War Rider Belt
+							i( 59177),	-- Captain Nials' Belt
+							i(131477),	-- Boots of the Refuge Captain
+							i(131478),	-- Battle Rider Belt
 						})
 					}),
-					qg( 2789, qa(26035)),	-- Worth Its Weight in Gold						
-					
-					
+					qa(26035, {	-- Worth Its Weight in Gold
+						["groups"] = {
+						},
+						["qg"] = 2789,	-- Skuerto
+					}),
 					
 -- DUNGEON QUESTS
-					qdg(qg(2789, qa(26943))),	-- Home Sweet Gnome
+					qdg(qa(26943, {	-- Home Sweet Gnome
+						["groups"] = {
+						},
+						["qg"] = 2789,	-- Skuerto
+					})),
 
 -- PVP QUESTS
 					qpvp(qa(8262, {	-- Arathor Advanced Care Package
