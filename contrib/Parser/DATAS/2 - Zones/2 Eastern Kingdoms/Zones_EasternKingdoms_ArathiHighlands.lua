@@ -398,6 +398,7 @@ _.Zones =
 						["sourceQuests"] = { 26032 },	-- Sigil of Arathor
 					}),
 
+
 --[[
 						["groups"] = {
 						},
@@ -405,12 +406,6 @@ _.Zones =
 						["sourceQuests"] = {  },	-- 
 					}),
 --]]
-
-
-
-
-
-
 
 					
 					qg(41983, qa(26038, {	-- Attack on the Tower
@@ -513,8 +508,6 @@ _.Zones =
 --						["description"] = "To get this quest, you must be ??? with The Defilers.",
 					})),
 					
-					
-					
 -- CLASS HALL QUESTS
 					qg(107806, q(42535, {	-- Death... and Decay
 						["groups"] = {
@@ -535,10 +528,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["classes"] = { 6 },	-- Death Knight
-					})),
-					
-					
-					
+					})),	
 					
 -- LEGACY QUESTS
 --[[				qpvp(qg(14986, qa(8115))),	-- Control Five Bases
@@ -546,8 +536,7 @@ _.Zones =
 					qpvp(qg(15021, qh(8122))),	-- Take Five Bases
 					qpvp(qg(15021, qh(8121))),	-- Take Four Bases
 					qpvp(qg(14983, qa(8105))),	-- The Battle for Arathi Basin!
-					qpvp(qg(15021, qh(8120))),	-- The Battle for Arathi Basin!
---]]
+					qpvp(qg(15021, qh(8120))),	-- The Battle for Arathi Basin!		--]]
 				}),
 				n(-16, { 	-- Rares
 					n(50891, { 	-- Boros

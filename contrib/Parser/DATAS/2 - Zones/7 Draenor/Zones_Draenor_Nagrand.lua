@@ -1650,7 +1650,7 @@ _.Zones =
 					}), 
 					n(88210, { 		-- Krud the Eviscerator
 						["groups"] = {
-							dr(41, i(37398)),	-- Krud's Girthy Girdle
+							dr(41, i(119384)),	-- Krud's Girthy Girdle
 						},
 						["questID"] = 37398,	
 						["description"] = "|cff66ccffKill 15 mobs near him to make him attackable.|r",
