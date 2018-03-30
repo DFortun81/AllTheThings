@@ -211,10 +211,8 @@ _.Zones =
 		["groups"] = {
 			m(640, {	-- Deepholm
 			}),
-			--[[ Let's comment this out until we get some data in here.
 			m(605, { 	-- Kezan
 			}),
-			--]]
 			m(544, { 	-- The Lost Isles
 			}),
 		},
@@ -293,7 +291,7 @@ _.Zones =
 					i(143660), -- Mrgrglhjorn
 				}),
 			}),
-			n(-20, {	-- Order Halls
+			n(-20, { -- Order Halls
 				n(-23, { 	-- Acherus: The Ebon Hold -- Death Knight
 				}),
 				m(1050, { 	-- Dreadscar Rift -- Warlock

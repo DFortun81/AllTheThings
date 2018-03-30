@@ -1508,6 +1508,31 @@ _.Zones =
 				}),				
 				m(1022, { -- Helheim
 					["groups"] = {
+						n(-17, { -- Quests
+							q(39849, { -- To Light the Way
+								i(129339), -- Drape of the Undying Raider
+								i(129239), -- Bloodbeard's Seal
+							}),
+							q(38324, { -- Accessories of the Cursed
+								i(129331), -- Soulflayer Cord
+								i(129332), -- Belt of the Eternally Tortured
+								i(129333), -- Mistcaller Mail Belt
+								i(129334), -- Girdle of the Unworthy
+								i(121563), -- Soulflayer's Collar of Bones
+							}),
+							q(39855, { -- Paid in Lifeblood
+								i(132832), -- Bones of Geir	
+								i(132830), -- Cursebinder Chains	
+								i(132826), -- Cursed Kvaldir Blood	
+								i(132827), -- Gaze of Helya	
+								i(132824), -- Helheim Waylight	
+								i(132828), -- Helhound Core	
+								i(132829), -- Silver of Helfrost	
+								i(132825), -- Val'kyra Boon	
+								i(132834), -- Wailing Wings	
+								i(132831), -- Worthy Soul	
+							}),
+						}),
 						n(-16, { -- Rares
 				--			n(92040, { -- Fenri trinket }), 
 							n(97630, { -- Soulthirster

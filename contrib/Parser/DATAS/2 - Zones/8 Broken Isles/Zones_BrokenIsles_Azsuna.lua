@@ -188,7 +188,7 @@ _.Zones =
 				}),
 				n(-169, { -- Emissary Quests
 					q(42420, { -- Court of Farondis
-						i(157825,  { -- Farondis Lockbox
+						i(157825, { -- Farondis Lockbox
 							["groups"] = {
 								n(-322, { -- Cloak
 									i(134334), -- Disgraced Court Cloak
@@ -300,7 +300,7 @@ _.Zones =
 								}),
 							},
 						}),
-						un(2, i(137563,  { -- Farondis Lockbox
+						un(2, i(137563, { -- Farondis Lockbox
 							["groups"] = {
 								n(-322, { -- Cloak
 									i(134334), -- Disgraced Court Cloak
@@ -412,7 +412,7 @@ _.Zones =
 								}),
 							},
 						})),
-						un(2, i(146750,  { -- Farondis Lockbox
+						un(2, i(146750, { -- Farondis Lockbox
 							["groups"] = {
 								n(-322, { -- Cloak
 									i(134334), -- Disgraced Court Cloak
@@ -524,7 +524,7 @@ _.Zones =
 								}),
 							},
 						})),
-						un(2, i(151467,  { -- Farondis Lockbox
+						un(2, i(151467, { -- Farondis Lockbox
 							["groups"] = {
 								n(-322, { -- Cloak
 									i(134334), -- Disgraced Court Cloak
@@ -636,7 +636,7 @@ _.Zones =
 								}),
 							},
 						})),
-						un(2, i(154906,  { -- Farondis Lockbox
+						un(2, i(154906, { -- Farondis Lockbox
 							["groups"] = {
 								n(-322, { -- Cloak
 									i(134334), -- Disgraced Court Cloak
@@ -750,11 +750,12 @@ _.Zones =
 						})),
 					}),
 					q(42422, { -- The Wardens
-						i(157827,  { -- Warden's Field Kit
+						i(157827, { -- Warden's Field Kit
 							["groups"] = {
 								n(-322, { -- Cloak
 									i(134334), -- Disgraced Court Cloak
 									i(134246), -- Herringbone Drape
+									i(136748), -- Vault Watcher's Cloak
 								}),
 								n(-3241, {	-- Arcane Singed Set		
 									["groups"] = {		
@@ -862,11 +863,12 @@ _.Zones =
 								}),
 							},
 						}),
-						un(2, i(137565,  { -- Warden's Field Kit
+						un(2, i(137565, { -- Warden's Field Kit
 							["groups"] = {
 								n(-322, { -- Cloak
 									i(134334), -- Disgraced Court Cloak
 									i(134246), -- Herringbone Drape
+									i(136748), -- Vault Watcher's Cloak
 								}),
 								n(-3241, {	-- Arcane Singed Set		
 									["groups"] = {		
@@ -974,11 +976,12 @@ _.Zones =
 								}),
 							},
 						})),
-						un(2, i(146752,  { -- Warden's Field Kit
+						un(2, i(146752, { -- Warden's Field Kit
 							["groups"] = {
 								n(-322, { -- Cloak
 									i(134334), -- Disgraced Court Cloak
 									i(134246), -- Herringbone Drape
+									i(136748), -- Vault Watcher's Cloak
 								}),
 								n(-3241, {	-- Arcane Singed Set		
 									["groups"] = {		
@@ -1086,11 +1089,12 @@ _.Zones =
 								}),
 							},
 						})),
-						un(2, i(151469,  { -- Warden's Field Kit
+						un(2, i(151469, { -- Warden's Field Kit
 							["groups"] = {
 								n(-322, { -- Cloak
 									i(134334), -- Disgraced Court Cloak
 									i(134246), -- Herringbone Drape
+									i(136748), -- Vault Watcher's Cloak
 								}),
 								n(-3241, {	-- Arcane Singed Set		
 									["groups"] = {		
@@ -1198,11 +1202,12 @@ _.Zones =
 								}),
 							},
 						})),
-						un(2, i(154908,  { -- Warden's Field Kit
+						un(2, i(154908, { -- Warden's Field Kit
 							["groups"] = {
 								n(-322, { -- Cloak
 									i(134334), -- Disgraced Court Cloak
 									i(134246), -- Herringbone Drape
+									i(136748), -- Vault Watcher's Cloak
 								}),
 								n(-3241, {	-- Arcane Singed Set		
 									["groups"] = {		
@@ -2364,6 +2369,7 @@ _.Zones =
 					n(-322, { -- Cloak
 						i(134334), -- Disgraced Court Cloak
 						i(134246), -- Herringbone Drape
+						i(136748), -- Vault Watcher's Cloak
 					}),
 					n(-3241, {	-- Arcane Singed Set		
 						["groups"] = {		
