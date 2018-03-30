@@ -180,13 +180,24 @@ _.Zones =
 						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling pet!|r",
 					}),	
 				}),
-				
 				n(-169, { -- Emissary Quests
 					q(42233, { -- Highmountain Tribes
 						i(157823, { -- Highmountain Tribute
 							n(-322, { -- Cloak
 								i(134158), -- Trembling Mightstone Drape
 								i(139112), -- Tribal Unification Cloak
+							}),
+							n(-3247, { -- Roggthread Set
+								["groups"] = {
+									i(134172), -- Roggthread Headdress
+									i(134177), -- Roggthread Mantle
+									i(134175), -- Roggthread Robe
+									i(134178), -- Roggthread Bracers
+									i(134173), -- Roggthread Gloves
+									i(134171), -- Roggthread Cord
+									i(134174), -- Roggthread Legwarmers
+									i(134176), -- Roggthread Slippers
+								},
 							}),
 							n(-3249, { -- Sunfrost Set
 								["groups"] = {
@@ -272,6 +283,18 @@ _.Zones =
 								i(134158), -- Trembling Mightstone Drape
 								i(139112), -- Tribal Unification Cloak
 							}),
+							n(-3247, { -- Roggthread Set
+								["groups"] = {
+									i(134172), -- Roggthread Headdress
+									i(134177), -- Roggthread Mantle
+									i(134175), -- Roggthread Robe
+									i(134178), -- Roggthread Bracers
+									i(134173), -- Roggthread Gloves
+									i(134171), -- Roggthread Cord
+									i(134174), -- Roggthread Legwarmers
+									i(134176), -- Roggthread Slippers
+								},
+							}),
 							n(-3249, { -- Sunfrost Set
 								["groups"] = {
 									i(139124),	-- Sunfrost Aurora
@@ -355,6 +378,18 @@ _.Zones =
 							n(-322, { -- Cloak
 								i(134158), -- Trembling Mightstone Drape
 								i(139112), -- Tribal Unification Cloak
+							}),
+							n(-3247, { -- Roggthread Set
+								["groups"] = {
+									i(134172), -- Roggthread Headdress
+									i(134177), -- Roggthread Mantle
+									i(134175), -- Roggthread Robe
+									i(134178), -- Roggthread Bracers
+									i(134173), -- Roggthread Gloves
+									i(134171), -- Roggthread Cord
+									i(134174), -- Roggthread Legwarmers
+									i(134176), -- Roggthread Slippers
+								},
 							}),
 							n(-3249, { -- Sunfrost Set
 								["groups"] = {
@@ -440,6 +475,18 @@ _.Zones =
 								i(134158), -- Trembling Mightstone Drape
 								i(139112), -- Tribal Unification Cloak
 							}),
+							n(-3247, { -- Roggthread Set
+								["groups"] = {
+									i(134172), -- Roggthread Headdress
+									i(134177), -- Roggthread Mantle
+									i(134175), -- Roggthread Robe
+									i(134178), -- Roggthread Bracers
+									i(134173), -- Roggthread Gloves
+									i(134171), -- Roggthread Cord
+									i(134174), -- Roggthread Legwarmers
+									i(134176), -- Roggthread Slippers
+								},
+							}),
 							n(-3249, { -- Sunfrost Set
 								["groups"] = {
 									i(139124),	-- Sunfrost Aurora
@@ -523,6 +570,18 @@ _.Zones =
 							n(-322, { -- Cloak
 								i(134158), -- Trembling Mightstone Drape
 								i(139112), -- Tribal Unification Cloak
+							}),
+							n(-3247, { -- Roggthread Set
+								["groups"] = {
+									i(134172), -- Roggthread Headdress
+									i(134177), -- Roggthread Mantle
+									i(134175), -- Roggthread Robe
+									i(134178), -- Roggthread Bracers
+									i(134173), -- Roggthread Gloves
+									i(134171), -- Roggthread Cord
+									i(134174), -- Roggthread Legwarmers
+									i(134176), -- Roggthread Slippers
+								},
 							}),
 							n(-3249, { -- Sunfrost Set
 								["groups"] = {
@@ -1617,6 +1676,18 @@ _.Zones =
 					n(-322, { -- Cloak
 						i(134158), -- Trembling Mightstone Drape
 						i(139112), -- Tribal Unification Cloak
+					}),
+					n(-3247, { -- Roggthread Set
+						["groups"] = {
+							i(134172), -- Roggthread Headdress
+							i(134177), -- Roggthread Mantle
+							i(134175), -- Roggthread Robe
+							i(134178), -- Roggthread Bracers
+							i(134173), -- Roggthread Gloves
+							i(134171), -- Roggthread Cord
+							i(134174), -- Roggthread Legwarmers
+							i(134176), -- Roggthread Slippers
+						},
 					}),
 					n(-3249, { -- Sunfrost Set
 						["groups"] = {

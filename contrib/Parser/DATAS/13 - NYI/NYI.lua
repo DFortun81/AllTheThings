@@ -3,9 +3,21 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	i(157751), -- Drape of New Beginnings
+	i(134693), -- Enveloping Cape
+	i(134699), -- Enveloping Drape
+	i(153829), -- Mountainsage Cloak of Destruction
+	i(134609), -- Scorching Cape
+	i(134617), -- Scorching Drape
+	i(150489), -- Shroud of Forgiveness
+	i(150714), -- Travel-Worn Shawl
+	i(134579), -- Vanguard Cape
+	i(134605), -- Vanguard Cloak
+
 	i(150715), -- Illidari Warglaive
 	i(142526), -- Glaive of the Fallen
 	i(134110), -- Hidden Helm
+	i(134111), -- Hidden Cloak
 	un(1, i(44972)), -- Alarming Clockbot (NOT IN USE)
 	un(1, i(24137)), -- PH Plate Ramparts Reward
 	un(1, i(33964)), -- Helm of the Stormcaller - Never Added
