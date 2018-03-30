@@ -192,7 +192,6 @@ _.Zones =
 										i(134218),	-- Bonespeaker Leggings
 										i(134220),	-- Bonespeaker Sandals
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3266, { -- Biornskin Set
 									["groups"] = {
@@ -205,7 +204,6 @@ _.Zones =
 										i(134194),	-- Biornskin Leggings
 										i(134193),	-- Biornskin Moccasins
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3278, { -- Tideskorn Set
 									["groups"] = {
@@ -218,7 +216,6 @@ _.Zones =
 										i(134212),	-- Tideskorn Leggings
 										i(134210),	-- Tideskorn Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3302, { -- Skoldiir Set
 									["groups"] = {
@@ -231,7 +228,6 @@ _.Zones =
 										i(134183),	-- Skoldiir Legguards
 										i(134185),	-- Skoldiir Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								n(-3309, { -- Wardbreaker Set
 									["groups"] = {
@@ -244,7 +240,6 @@ _.Zones =
 										i(136729),	-- Wardbreaker Legplates
 										i(136731),	-- Wardbreaker Warboots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 							},
 						}),
@@ -264,7 +259,6 @@ _.Zones =
 										i(134218),	-- Bonespeaker Leggings
 										i(134220),	-- Bonespeaker Sandals
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3266, { -- Biornskin Set
 									["groups"] = {
@@ -277,7 +271,6 @@ _.Zones =
 										i(134194),	-- Biornskin Leggings
 										i(134193),	-- Biornskin Moccasins
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3278, { -- Tideskorn Set
 									["groups"] = {
@@ -290,7 +283,6 @@ _.Zones =
 										i(134212),	-- Tideskorn Leggings
 										i(134210),	-- Tideskorn Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3302, { -- Skoldiir Set
 									["groups"] = {
@@ -303,7 +295,6 @@ _.Zones =
 										i(134183),	-- Skoldiir Legguards
 										i(134185),	-- Skoldiir Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								n(-3309, { -- Wardbreaker Set
 									["groups"] = {
@@ -316,7 +307,6 @@ _.Zones =
 										i(136729),	-- Wardbreaker Legplates
 										i(136731),	-- Wardbreaker Warboots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 							},
 						})),
@@ -336,7 +326,6 @@ _.Zones =
 										i(134218),	-- Bonespeaker Leggings
 										i(134220),	-- Bonespeaker Sandals
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3266, { -- Biornskin Set
 									["groups"] = {
@@ -349,7 +338,6 @@ _.Zones =
 										i(134194),	-- Biornskin Leggings
 										i(134193),	-- Biornskin Moccasins
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3278, { -- Tideskorn Set
 									["groups"] = {
@@ -362,7 +350,6 @@ _.Zones =
 										i(134212),	-- Tideskorn Leggings
 										i(134210),	-- Tideskorn Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3302, { -- Skoldiir Set
 									["groups"] = {
@@ -375,7 +362,6 @@ _.Zones =
 										i(134183),	-- Skoldiir Legguards
 										i(134185),	-- Skoldiir Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								n(-3309, { -- Wardbreaker Set
 									["groups"] = {
@@ -388,7 +374,6 @@ _.Zones =
 										i(136729),	-- Wardbreaker Legplates
 										i(136731),	-- Wardbreaker Warboots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 							},
 						})),
@@ -408,7 +393,6 @@ _.Zones =
 										i(134218),	-- Bonespeaker Leggings
 										i(134220),	-- Bonespeaker Sandals
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3266, { -- Biornskin Set
 									["groups"] = {
@@ -421,7 +405,6 @@ _.Zones =
 										i(134194),	-- Biornskin Leggings
 										i(134193),	-- Biornskin Moccasins
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3278, { -- Tideskorn Set
 									["groups"] = {
@@ -434,7 +417,6 @@ _.Zones =
 										i(134212),	-- Tideskorn Leggings
 										i(134210),	-- Tideskorn Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3302, { -- Skoldiir Set
 									["groups"] = {
@@ -447,7 +429,6 @@ _.Zones =
 										i(134183),	-- Skoldiir Legguards
 										i(134185),	-- Skoldiir Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								n(-3309, { -- Wardbreaker Set
 									["groups"] = {
@@ -460,7 +441,6 @@ _.Zones =
 										i(136729),	-- Wardbreaker Legplates
 										i(136731),	-- Wardbreaker Warboots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 							},
 						})),
@@ -480,7 +460,6 @@ _.Zones =
 										i(134218),	-- Bonespeaker Leggings
 										i(134220),	-- Bonespeaker Sandals
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3266, { -- Biornskin Set
 									["groups"] = {
@@ -493,7 +472,6 @@ _.Zones =
 										i(134194),	-- Biornskin Leggings
 										i(134193),	-- Biornskin Moccasins
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3278, { -- Tideskorn Set
 									["groups"] = {
@@ -506,7 +484,6 @@ _.Zones =
 										i(134212),	-- Tideskorn Leggings
 										i(134210),	-- Tideskorn Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3302, { -- Skoldiir Set
 									["groups"] = {
@@ -519,7 +496,6 @@ _.Zones =
 										i(134183),	-- Skoldiir Legguards
 										i(134185),	-- Skoldiir Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								n(-3309, { -- Wardbreaker Set
 									["groups"] = {
@@ -532,7 +508,6 @@ _.Zones =
 										i(136729),	-- Wardbreaker Legplates
 										i(136731),	-- Wardbreaker Warboots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 							},
 						})),

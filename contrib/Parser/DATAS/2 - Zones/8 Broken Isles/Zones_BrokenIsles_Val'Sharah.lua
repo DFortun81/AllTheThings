@@ -201,7 +201,6 @@ _.Zones =
 										i(139088),	-- Night Dreamer Leggings
 										i(139090),	-- Night Dreamer Slippers
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3259, { -- Terrorweave Set
 									["groups"] = {
@@ -214,7 +213,6 @@ _.Zones =
 										i(121326),	-- Terrorweave Leggings
 										i(121328),	-- Terrorweave Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3269, { -- Dreadhide Set
 									["groups"] = {
@@ -227,7 +225,6 @@ _.Zones =
 										i(121294),	-- Dreadhide Leggings
 										i(121293),	-- Dreadhide Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3268, { -- Tranquil Bough Set
 									["groups"] = {
@@ -240,7 +237,6 @@ _.Zones =
 										i(139068),	-- Tranquil Bough Pants
 										i(139067),	-- Tranquil Bough Footpads
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3281, { -- Bramblemail Set
 									["groups"] = {
@@ -253,7 +249,6 @@ _.Zones =
 										i(139082),	-- Bramblemail Greaves
 										i(139080),	-- Bramblemail Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3279, { -- Vilescale Set
 									["groups"] = {
@@ -266,7 +261,6 @@ _.Zones =
 										i(121320),	-- Vilescale Leggings
 										i(121318),	-- Vilescale Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3307, { -- Nightsfall Set
 									["groups"] = {
@@ -279,7 +273,6 @@ _.Zones =
 										i(139059),	-- Nightsfall Legguards
 										i(139061),	-- Nightsfall Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								n(-3303, { -- Wracksoul Set
 									["groups"] = {
@@ -292,7 +285,6 @@ _.Zones =
 										i(121280),	-- Wracksoul Legplates
 										i(121282),	-- Wracksoul Stompers
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 							},
 						}),
@@ -314,7 +306,6 @@ _.Zones =
 										i(139088),	-- Night Dreamer Leggings
 										i(139090),	-- Night Dreamer Slippers
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3259, { -- Terrorweave Set
 									["groups"] = {
@@ -327,7 +318,6 @@ _.Zones =
 										i(121326),	-- Terrorweave Leggings
 										i(121328),	-- Terrorweave Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3269, { -- Dreadhide Set
 									["groups"] = {
@@ -340,7 +330,6 @@ _.Zones =
 										i(121294),	-- Dreadhide Leggings
 										i(121293),	-- Dreadhide Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3268, { -- Tranquil Bough Set
 									["groups"] = {
@@ -353,7 +342,6 @@ _.Zones =
 										i(139068),	-- Tranquil Bough Pants
 										i(139067),	-- Tranquil Bough Footpads
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3281, { -- Bramblemail Set
 									["groups"] = {
@@ -366,7 +354,6 @@ _.Zones =
 										i(139082),	-- Bramblemail Greaves
 										i(139080),	-- Bramblemail Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3279, { -- Vilescale Set
 									["groups"] = {
@@ -379,7 +366,6 @@ _.Zones =
 										i(121320),	-- Vilescale Leggings
 										i(121318),	-- Vilescale Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3307, { -- Nightsfall Set
 									["groups"] = {
@@ -392,7 +378,6 @@ _.Zones =
 										i(139059),	-- Nightsfall Legguards
 										i(139061),	-- Nightsfall Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								n(-3303, { -- Wracksoul Set
 									["groups"] = {
@@ -405,7 +390,6 @@ _.Zones =
 										i(121280),	-- Wracksoul Legplates
 										i(121282),	-- Wracksoul Stompers
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 							},
 						})),
@@ -427,7 +411,6 @@ _.Zones =
 										i(139088),	-- Night Dreamer Leggings
 										i(139090),	-- Night Dreamer Slippers
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3259, { -- Terrorweave Set
 									["groups"] = {
@@ -440,7 +423,6 @@ _.Zones =
 										i(121326),	-- Terrorweave Leggings
 										i(121328),	-- Terrorweave Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3269, { -- Dreadhide Set
 									["groups"] = {
@@ -453,7 +435,6 @@ _.Zones =
 										i(121294),	-- Dreadhide Leggings
 										i(121293),	-- Dreadhide Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3268, { -- Tranquil Bough Set
 									["groups"] = {
@@ -466,7 +447,6 @@ _.Zones =
 										i(139068),	-- Tranquil Bough Pants
 										i(139067),	-- Tranquil Bough Footpads
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3281, { -- Bramblemail Set
 									["groups"] = {
@@ -479,7 +459,6 @@ _.Zones =
 										i(139082),	-- Bramblemail Greaves
 										i(139080),	-- Bramblemail Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3279, { -- Vilescale Set
 									["groups"] = {
@@ -492,7 +471,6 @@ _.Zones =
 										i(121320),	-- Vilescale Leggings
 										i(121318),	-- Vilescale Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3307, { -- Nightsfall Set
 									["groups"] = {
@@ -505,7 +483,6 @@ _.Zones =
 										i(139059),	-- Nightsfall Legguards
 										i(139061),	-- Nightsfall Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								n(-3303, { -- Wracksoul Set
 									["groups"] = {
@@ -518,7 +495,6 @@ _.Zones =
 										i(121280),	-- Wracksoul Legplates
 										i(121282),	-- Wracksoul Stompers
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 							},
 						})),
@@ -540,7 +516,6 @@ _.Zones =
 										i(139088),	-- Night Dreamer Leggings
 										i(139090),	-- Night Dreamer Slippers
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3259, { -- Terrorweave Set
 									["groups"] = {
@@ -553,7 +528,6 @@ _.Zones =
 										i(121326),	-- Terrorweave Leggings
 										i(121328),	-- Terrorweave Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3269, { -- Dreadhide Set
 									["groups"] = {
@@ -566,7 +540,6 @@ _.Zones =
 										i(121294),	-- Dreadhide Leggings
 										i(121293),	-- Dreadhide Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3268, { -- Tranquil Bough Set
 									["groups"] = {
@@ -579,7 +552,6 @@ _.Zones =
 										i(139068),	-- Tranquil Bough Pants
 										i(139067),	-- Tranquil Bough Footpads
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3281, { -- Bramblemail Set
 									["groups"] = {
@@ -592,7 +564,6 @@ _.Zones =
 										i(139082),	-- Bramblemail Greaves
 										i(139080),	-- Bramblemail Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3279, { -- Vilescale Set
 									["groups"] = {
@@ -605,7 +576,6 @@ _.Zones =
 										i(121320),	-- Vilescale Leggings
 										i(121318),	-- Vilescale Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3307, { -- Nightsfall Set
 									["groups"] = {
@@ -618,7 +588,6 @@ _.Zones =
 										i(139059),	-- Nightsfall Legguards
 										i(139061),	-- Nightsfall Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								n(-3303, { -- Wracksoul Set
 									["groups"] = {
@@ -631,7 +600,6 @@ _.Zones =
 										i(121280),	-- Wracksoul Legplates
 										i(121282),	-- Wracksoul Stompers
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 							},
 						})),
@@ -653,7 +621,6 @@ _.Zones =
 										i(139088),	-- Night Dreamer Leggings
 										i(139090),	-- Night Dreamer Slippers
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3259, { -- Terrorweave Set
 									["groups"] = {
@@ -666,7 +633,6 @@ _.Zones =
 										i(121326),	-- Terrorweave Leggings
 										i(121328),	-- Terrorweave Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3269, { -- Dreadhide Set
 									["groups"] = {
@@ -679,7 +645,6 @@ _.Zones =
 										i(121294),	-- Dreadhide Leggings
 										i(121293),	-- Dreadhide Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3268, { -- Tranquil Bough Set
 									["groups"] = {
@@ -692,7 +657,6 @@ _.Zones =
 										i(139068),	-- Tranquil Bough Pants
 										i(139067),	-- Tranquil Bough Footpads
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3281, { -- Bramblemail Set
 									["groups"] = {
@@ -705,7 +669,6 @@ _.Zones =
 										i(139082),	-- Bramblemail Greaves
 										i(139080),	-- Bramblemail Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3279, { -- Vilescale Set
 									["groups"] = {
@@ -718,7 +681,6 @@ _.Zones =
 										i(121320),	-- Vilescale Leggings
 										i(121318),	-- Vilescale Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 								}),
 								n(-3307, { -- Nightsfall Set
 									["groups"] = {
@@ -731,7 +693,6 @@ _.Zones =
 										i(139059),	-- Nightsfall Legguards
 										i(139061),	-- Nightsfall Sabatons
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								n(-3303, { -- Wracksoul Set
 									["groups"] = {
@@ -744,7 +705,6 @@ _.Zones =
 										i(121280),	-- Wracksoul Legplates
 										i(121282),	-- Wracksoul Stompers
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 							},
 						})),
