@@ -13,7 +13,27 @@ _.NeverImplemented =
 	i(150714), -- Travel-Worn Shawl
 	i(134579), -- Vanguard Cape
 	i(134605), -- Vanguard Cloak
-
+	i(134013), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
+	
+	i(153275), -- Forgotten Conservatory Slippers
+	-- LIKELY PART OF 110 TRIAL SET
+	i(153826), -- Mountainsage Cord
+	i(153821), -- Mountainsage Handwraps
+	i(153822), -- Mountainsage Hood
+	i(153823), -- Mountainsage Leggings
+	i(153824), -- Mountainsage Robe
+	i(153820), -- Mountainsage Sandals
+	i(153825), -- Mountainsage Shoulderpads
+	i(153827), -- Mountainsage Wristwraps
+	i(150651), -- Mountainsage Cord
+	i(150646), -- Mountainsage Handwraps
+	i(150647), -- Mountainsage Hood
+	i(150648), -- Mountainsage Leggings
+	i(150649), -- Mountainsage Robe
+	i(150645), -- Mountainsage Sandals
+	i(150650), -- Mountainsage Shoulderpads
+	i(150652), -- Mountainsage Wristwraps
+	
 	i(150715), -- Illidari Warglaive
 	i(142526), -- Glaive of the Fallen
 	i(134110), -- Hidden Helm

@@ -24,4 +24,12 @@ profession(171, 2259, { -- Alchemy
 			}),
 		}),
 	}),
+	spell(213255, { -- Transmute: Meat to Pants
+		i(137600, { -- Pile of Pants
+			i(139393), -- Fizzy Fleece Leggings
+			i(139394), -- Parachute Pants
+			i(139392), -- Greaves of Ten Thousand Links
+			i(139395), -- Reverbium-Flecked Legplates
+		}),
+	}),
 });

@@ -1632,9 +1632,11 @@ _.Zones =
 					}),
 					v(40423, { 		-- Unethical Adventurers (Puck, Jak, Xaander, Zenobia, Darkful)
 						["groups"] = {	
-							i(140681),
-							i(140680),
-							i(131767),
+							i(140683), -- Darkful's Mitts
+							i(140682), -- Zenobia's Handwraps
+							i(140681), -- Jak's Gloves
+							i(140680), -- Lysander's Lovindle Bracers
+							i(131767), -- Xander's Gauntlets
 						},
 						["displayID"] = 66606,
 						["ids"] = {1794},
