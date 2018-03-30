@@ -693,11 +693,7 @@ _.Zones =
 							
 							n(-318, { -- Armor
 								i(152740, { -- Unsullied Cloak
-									i(152778), -- Conservatory Ward's Drape									
-									i(146793), -- Man'ari Magus Drape
-									i(146794), -- Sargerei Herald's Cloak
-									i(146885), -- Soulbreaker's Drape
-									i(146795), -- Terrorfiend Greatcloak
+									i(152778), -- Conservatory Ward's Drape
 								}),
 								i(152738, { -- Unsullied Cloth Cap
 									i(152770), -- Azurelight Sage's Cap
@@ -1590,6 +1586,10 @@ _.Zones =
 												}),
 												i(153209, { -- Relinquished Cloak
 													i(152778), -- Conservatory Ward's Drape
+													i(146793), -- Man'ari Magus Drape
+													i(146794), -- Sargerei Herald's Cloak
+													i(146885), -- Soulbreaker's Drape
+													i(146795), -- Terrorfiend Greatcloak
 												}),
 												i(153208, { -- Relinquished Chestguard
 													i(152775), -- Azurelight Sage's Robes
