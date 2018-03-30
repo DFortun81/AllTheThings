@@ -181,7 +181,71 @@ _.Zones =
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
 				}),
-				n(-17, { 	-- Quests	
+				n(-17, { 	-- Quests
+					qh(26930, {	-- After the Crusade
+						["groups"] = {
+						},
+						["qg"] = 10837,	-- High Executor Derrington
+						["sourceQuests"] = { 26926 },	-- Victory, For Now
+					}),
+					qh(26933, {	-- Foes Before Hoes
+						["groups"] = {
+						},
+						["qg"] = 11055,	-- Shadow Priestess Vandis
+						["sourceQuests"] = { 26931 },	-- Foxes and Hounds
+					}),
+					qh(26931, { -- Foxes and Hounds
+						["groups"] = {
+							i( 62161),	-- Bullmastiff Vest
+							i( 62163),	-- Fox Hunter's Rifle
+							i( 62162),	-- Territorial Helm
+							i(131622),	-- Whitetail Fox Tunic
+						},
+						["qg"] = 11055,	-- Shadow Priestess Vandis
+					}),
+					qh(26934, {	-- Latent Disease
+						["groups"] = {
+						},
+						["qg"] = 11057,	-- Apothecary Dithers
+					}),
+					qh(26936, {	-- Lower the Boom
+						["groups"] = {
+						},
+						["qg"] = 10837,	-- High Executor Derrington
+						["sourceQuests"] = { 26978 },	-- Who Needs Cauldrons?
+					}),
+					qh(26979, {	-- Strange New Faces
+						["groups"] = {
+						},
+						["qg"] = 10837,	-- High Executor Derrington
+						["sourceQuests"] = { 26936 },	-- Lower the Boom
+					}),
+					qh(26920, {	-- The Battle for Andorhal
+						["groups"] = {
+						},
+						["qg"] = 10837,	-- High Executor Derrington
+						["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
+					}),
+					qh(26952, {	-- The Menders' Stead
+						["groups"] = {
+						},
+						["qg"] = 10839,	-- Argent Officer Garush
+						["sourceQuests"] = { 26933 },	-- Foes before Hoes
+						["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
+					}),
+					qh(26978, { -- Who Needs Cauldrons?
+						["groups"] = {
+							i(62171),	-- Cloak of the Salted Earth
+							i(62169),	-- Dithering Belt
+							i(62170),	-- Plague Cauldron Lid
+						},
+						["qg"] = 11057,	-- Apothecary Dithers
+						["sourceQuests"] = { 26934 },	-- Latent Disease
+					}),
+					
+					
+					
+-- untested non-WPL quests below this line					
 					qg(13158, qh(25046, { -- A Daughter's Embrace
 						i(57169),	-- Darrington's Dirk
 						i(57170),	-- Lilian's Staff
@@ -205,7 +269,6 @@ _.Zones =
 					qg(, qh(24981)),	-- A Thorn in our Side
 					qg(, qh(29377)),	-- A Time to Break Down
 					qg(, qh(29376)),	-- A Time to Build Up
-					qg(, qh(26930)),	-- After the Crusade
 					qg(, qh(24993)),	-- Annihilate the Worgen
 					qg(, qh(25009)),	-- At War With The Scarlet Crusade
 					qg(, q(40710)),	-- Blade in Twilight
@@ -233,18 +296,8 @@ _.Zones =
 					qg(, qh(11361)),	-- Fire Training
 					qg(, qh(11450)),	-- Fire Training
 					qg(, qh(11449)),	-- Fire Training
-					qg(, qh(26933)),	-- Foes Before Hoes
 					qg(, qh(24983)),	-- Forsaken Duties
 --]]
-					qg(11055, qh(26931, { -- Foxes and Hounds
-						["groups"] = {
-							i(62161),	-- Bullmastiff Vest
-							i(62163),	-- Fox Hunter's Rifle
-							i(62162),	-- Territorial Helm
-							i(131622),	-- Whitetail Fox Tunic
-						},
-						["Lvl"] = 34
-					})),
 --[[					
 					qg(, qh(11403)),	-- Free at Last!
 					qg(, qh(24991)),	-- Garren's Haunt
@@ -252,7 +305,11 @@ _.Zones =
 					qg(, qh(31578)),	-- Got one!
 					qg(, q(8652)),	-- Graveborn the Elder
 					qg(, qh(24997)),	-- Graverobbers
-					qg(, qh(25056)),	-- Grisly Grizzlies
+					qh(25056, {	-- Grisly Grizzlies
+						["groups"] = {
+						},
+						["qg"] = 11057,	-- Apothecary Dithers
+					}),
 					qg(, qh( 8312)),	-- Hallow's End Treats for Spoops!
 					qg(, qh(25039)),	-- Have You Seen Anything Weird Out There?
 					qg(, qh(25031)),	-- Head for the Mills
@@ -262,13 +319,11 @@ _.Zones =
 					qg(, q(12012)),	-- Inform the Elder
 					qg(, qa(29092)),	-- Inform the Elder
 					qg(, qh(24977)),	-- Johaan's Experiment
-					qg(, qh(26934)),	-- Latent Disease
 					qg(, qh(32672)),	-- Learn To Ride
 					qg(, qh(14089)),	-- Learn to Ride in Tirisfal Glades
 					qg(, qh(31576)),	-- Learning the Ropes
 					qg(, qh(12139)),	-- "Let the Fires Come!"
 					qg(, qh(31823)),	-- Level Up!
-					qg(, qh(26936)),	-- Lower the Boom
 					qg(, qh(24998)),	-- Maggot Eye
 					qg(, qh(11357)),	-- Masked Orphan Matron
 					qg(, qh( 6322)),	-- Michael Garrett
@@ -298,7 +353,6 @@ _.Zones =
 					qg(, qh(11933)),	-- Stealing the Exodar's Flame
 					qg(, qh(29374)),	-- Stink Bombs Away!
 					qg(, qh(11219)),	-- Stop the Fires!
-					qg(, qh(26979)),	-- Strange New Faces
 					qg(, q(11954)),	-- Striking Back
 					qg(, q(11917)),	-- Striking Back
 					qg(, q(11947)),	-- Striking Back
@@ -307,7 +361,6 @@ _.Zones =
 					qg(, q(11953)),	-- Striking Back
 					qg(, qh( 6321)),	-- Supplying Brill
 					qg(, qh(25012)),	-- Take to the Skies
-					qg(, qh(26920)),	-- The Battle for Andorhal
 					qg(, qh(27083)),	-- The Battle Resumes!
 					qg(, qh(24988)),	-- The Chill of Death
 					qg(, qh(29427)),	-- The Collector's Agent
@@ -316,7 +369,6 @@ _.Zones =
 					qg(, qh(14174)),	-- The Grateful Dead
 					qg(, qh(25030)),	-- The Haunted Mills
 					qg(, q(41625)),	-- The Light's Wrath
-					qg(, qh(26952)),	-- The Menders' Stead
 					qg(, qh(25004)),	-- The Mills Overrun
 					qg(, qh(24982)),	-- The New Forsaken
 					qg(, qh(24980)),	-- The Scarlet Palisade
@@ -333,14 +385,6 @@ _.Zones =
 					qg(, qh(14059)),	-- We're Out of Cranberry Chutney Again?
 					qg(, qh(29428)),	-- What Now?
 --]]					
-					qg(11057, qh(26978, { -- Who Needs Cauldrons?
-						["groups"] = {
-							i(62171),	-- Cloak of the Salted Earth
-							i(62169),	-- Dithering Belt
-							i(62170),	-- Plague Cauldron Lid
-						},
-						["Lvl"] = 34
-					})),
 				}),
 				n(-16, { 	-- Rares
 					n(1911, { 	-- Deeb
