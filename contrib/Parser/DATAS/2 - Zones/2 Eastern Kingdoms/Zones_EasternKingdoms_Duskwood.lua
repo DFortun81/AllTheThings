@@ -114,16 +114,17 @@ _.Zones =
 					n(-500, { 	-- WoW Anniversary
 						n(121913, { -- Emeriss		
 							["groups"] = {
-								un(31, i(150429)),	-- Emerald Dragonfang
-								un(31, i(150412)),	-- Hammer of Bestial Fury
-								un(31, i(150393)),	-- Nightmare Blade
-								un(31, i(150403)),	-- Polished Ironwood Crossbow
-								un(31, i(150408)),	-- Staff of Rampant Growth
-								un(31, i(150411)),	-- Green Dragonskin Cloak
-								un(31, i(150410)),	-- Acid Inscribed Greaves
-								un(31, i(150406)),	-- Boots of the Endless Moor
-								un(31, i(150405)),	-- Circlet of Restless Dreams
-								un(31, i(150415)),	-- Dragonspur Wraps
+								un(31, i(150429)), -- Emerald Dragonfang
+								un(31, i(150412)), -- Hammer of Bestial Fury
+								un(31, i(150393)), -- Nightmare Blade
+								un(31, i(150403)), -- Polished Ironwood Crossbow
+								un(31, i(150408)), -- Staff of Rampant Growth
+								un(31, i(150411)), -- Green Dragonskin Cloak
+								un(31, i(150410)), -- Acid Inscribed Greaves
+								un(31, i(150406)), -- Boots of the Endless Moor
+								un(31, i(150405)), -- Circlet of Restless Dreams
+								un(31, i(150415)), -- Dragonspur Wraps
+								un(31, i(150416)), -- Gloves of Delusional Power
 							},
 							["u"] = 31,
 							["isRaid"] = true,
