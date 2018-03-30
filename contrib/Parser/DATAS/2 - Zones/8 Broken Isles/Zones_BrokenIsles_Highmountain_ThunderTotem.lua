@@ -210,7 +210,6 @@ _.Zones =
 									i(139126),	-- Sunfrost Leggings
 									i(139128),	-- Sunfrost Slippers
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 							}),
 							n(-3263, { -- Rivermane Set
 								["groups"] = {
@@ -223,7 +222,6 @@ _.Zones =
 									i(139106),	-- Rivermane Kilt
 									i(139105),	-- Rivermane Sandals
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
 							}),
 							n(-3270, { -- Steelgazer Set
 								["groups"] = {
@@ -236,7 +234,6 @@ _.Zones =
 									i(134150),	-- Steelgazer Hide Leggings
 									i(134149),	-- Steelgazer Hide Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 							}),
 							n(-3275, { -- Skyhorn Set
 								["groups"] = {
@@ -249,7 +246,6 @@ _.Zones =
 									i(139120),	-- Skyhorn Legguards
 									i(139118),	-- Skyhorn Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
 							}),
 							n(-3300, { -- Greystone Set
 								["groups"] = {
@@ -262,7 +258,6 @@ _.Zones =
 									i(139097),	-- Greystone Legplates
 									i(139099),	-- Greystone Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 							}),
 							n(-3308, { -- Rockbound Set
 								["groups"] = {
@@ -275,7 +270,6 @@ _.Zones =
 									i(134139),	-- Rockbound Legguards
 									i(134141),	-- Rockbound Sabatons
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 							}),
 						}),
 						un(2, i(137561, { -- Highmountain Tribute
@@ -306,7 +300,6 @@ _.Zones =
 									i(139126),	-- Sunfrost Leggings
 									i(139128),	-- Sunfrost Slippers
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 							}),
 							n(-3263, { -- Rivermane Set
 								["groups"] = {
@@ -319,7 +312,6 @@ _.Zones =
 									i(139106),	-- Rivermane Kilt
 									i(139105),	-- Rivermane Sandals
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
 							}),
 							n(-3270, { -- Steelgazer Set
 								["groups"] = {
@@ -332,7 +324,6 @@ _.Zones =
 									i(134150),	-- Steelgazer Hide Leggings
 									i(134149),	-- Steelgazer Hide Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 							}),
 							n(-3275, { -- Skyhorn Set
 								["groups"] = {
@@ -345,7 +336,6 @@ _.Zones =
 									i(139120),	-- Skyhorn Legguards
 									i(139118),	-- Skyhorn Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
 							}),
 							n(-3300, { -- Greystone Set
 								["groups"] = {
@@ -358,7 +348,6 @@ _.Zones =
 									i(139097),	-- Greystone Legplates
 									i(139099),	-- Greystone Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 							}),
 							n(-3308, { -- Rockbound Set
 								["groups"] = {
@@ -371,7 +360,6 @@ _.Zones =
 									i(134139),	-- Rockbound Legguards
 									i(134141),	-- Rockbound Sabatons
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 							}),
 						})),
 						un(2, i(154904, { -- Highmountain Tribute
@@ -402,7 +390,6 @@ _.Zones =
 									i(139126),	-- Sunfrost Leggings
 									i(139128),	-- Sunfrost Slippers
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 							}),
 							n(-3263, { -- Rivermane Set
 								["groups"] = {
@@ -415,7 +402,6 @@ _.Zones =
 									i(139106),	-- Rivermane Kilt
 									i(139105),	-- Rivermane Sandals
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
 							}),
 							n(-3270, { -- Steelgazer Set
 								["groups"] = {
@@ -428,7 +414,6 @@ _.Zones =
 									i(134150),	-- Steelgazer Hide Leggings
 									i(134149),	-- Steelgazer Hide Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 							}),
 							n(-3275, { -- Skyhorn Set
 								["groups"] = {
@@ -441,7 +426,6 @@ _.Zones =
 									i(139120),	-- Skyhorn Legguards
 									i(139118),	-- Skyhorn Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
 							}),
 							n(-3300, { -- Greystone Set
 								["groups"] = {
@@ -454,7 +438,6 @@ _.Zones =
 									i(139097),	-- Greystone Legplates
 									i(139099),	-- Greystone Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 							}),
 							n(-3308, { -- Rockbound Set
 								["groups"] = {
@@ -467,7 +450,6 @@ _.Zones =
 									i(134139),	-- Rockbound Legguards
 									i(134141),	-- Rockbound Sabatons
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 							}),
 						})),
 						un(2, i(146748, { -- Highmountain Tribute
@@ -498,7 +480,6 @@ _.Zones =
 									i(139126),	-- Sunfrost Leggings
 									i(139128),	-- Sunfrost Slippers
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 							}),
 							n(-3263, { -- Rivermane Set
 								["groups"] = {
@@ -511,7 +492,6 @@ _.Zones =
 									i(139106),	-- Rivermane Kilt
 									i(139105),	-- Rivermane Sandals
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
 							}),
 							n(-3270, { -- Steelgazer Set
 								["groups"] = {
@@ -524,7 +504,6 @@ _.Zones =
 									i(134150),	-- Steelgazer Hide Leggings
 									i(134149),	-- Steelgazer Hide Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 							}),
 							n(-3275, { -- Skyhorn Set
 								["groups"] = {
@@ -537,7 +516,6 @@ _.Zones =
 									i(139120),	-- Skyhorn Legguards
 									i(139118),	-- Skyhorn Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
 							}),
 							n(-3300, { -- Greystone Set
 								["groups"] = {
@@ -550,7 +528,6 @@ _.Zones =
 									i(139097),	-- Greystone Legplates
 									i(139099),	-- Greystone Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 							}),
 							n(-3308, { -- Rockbound Set
 								["groups"] = {
@@ -563,7 +540,6 @@ _.Zones =
 									i(134139),	-- Rockbound Legguards
 									i(134141),	-- Rockbound Sabatons
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 							}),
 						})),
 						un(2, i(151465, { -- Highmountain Tribute
@@ -594,7 +570,6 @@ _.Zones =
 									i(139126),	-- Sunfrost Leggings
 									i(139128),	-- Sunfrost Slippers
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 							}),
 							n(-3263, { -- Rivermane Set
 								["groups"] = {
@@ -607,7 +582,6 @@ _.Zones =
 									i(139106),	-- Rivermane Kilt
 									i(139105),	-- Rivermane Sandals
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
 							}),
 							n(-3270, { -- Steelgazer Set
 								["groups"] = {
@@ -620,7 +594,6 @@ _.Zones =
 									i(134150),	-- Steelgazer Hide Leggings
 									i(134149),	-- Steelgazer Hide Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 							}),
 							n(-3275, { -- Skyhorn Set
 								["groups"] = {
@@ -633,7 +606,6 @@ _.Zones =
 									i(139120),	-- Skyhorn Legguards
 									i(139118),	-- Skyhorn Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
 							}),
 							n(-3300, { -- Greystone Set
 								["groups"] = {
@@ -646,7 +618,6 @@ _.Zones =
 									i(139097),	-- Greystone Legplates
 									i(139099),	-- Greystone Boots
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 							}),
 							n(-3308, { -- Rockbound Set
 								["groups"] = {
@@ -659,7 +630,6 @@ _.Zones =
 									i(134139),	-- Rockbound Legguards
 									i(134141),	-- Rockbound Sabatons
 								},
-								["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 							}),
 						})),
 					}),

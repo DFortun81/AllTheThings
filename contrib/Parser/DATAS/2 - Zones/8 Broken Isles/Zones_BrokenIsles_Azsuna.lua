@@ -205,7 +205,6 @@ _.Zones =
 										i(134350),	-- Arcane Singed Leggings
 										i(134352),	-- Arcane Singed Slippers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3248, {	-- Seawitch Set		
 									["groups"] = {		
@@ -218,7 +217,6 @@ _.Zones =
 										i(134262),	-- Seawitch Leggings
 										i(134264),	-- Seawitch Sandals
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3271, {	-- Brinewashed Set		
 									["groups"] = {		
@@ -231,7 +229,6 @@ _.Zones =
 										i(134238),	-- Brinewashed Leather Pants
 										i(134237),	-- Brinewashed Leather Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3264, {	-- Mana-Saber Set		
 									["groups"] = {		
@@ -244,7 +241,6 @@ _.Zones =
 										i(134326),	-- Mana-Saber Hide Pants
 										i(134325),	-- Mana-Saber Hide Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3282, {	-- Manaburst Set		
 									["groups"] = {		
@@ -257,7 +253,6 @@ _.Zones =
 										i(134344),	-- Manaburst Legguards
 										i(134342),	-- Manaburst Greaves
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),	
 								n(-3276, {	-- Sea Stalker's Set		
 									["groups"] = {		
@@ -270,7 +265,6 @@ _.Zones =
 										i(134256),	-- Sea Stalker's Leggings
 										i(134254),	-- Sea Stalker's Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),			
 								n(-3305, {	-- Coralplate Set		
 									["groups"] = {		
@@ -283,7 +277,6 @@ _.Zones =
 										i(134227),	-- Coralplate Legguards
 										i(134229),	-- Coralplate Sandstompers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),			
 								n(-3304, {	-- Ley-Scarred Set		
 									["groups"] = {		
@@ -296,7 +289,6 @@ _.Zones =
 										i(134315),	-- Ley-Scarred Greaves
 										i(134317),	-- Ley-Scarred Sabatons
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),
 							},
 						}),
@@ -317,7 +309,6 @@ _.Zones =
 										i(134350),	-- Arcane Singed Leggings
 										i(134352),	-- Arcane Singed Slippers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3248, {	-- Seawitch Set		
 									["groups"] = {		
@@ -330,7 +321,6 @@ _.Zones =
 										i(134262),	-- Seawitch Leggings
 										i(134264),	-- Seawitch Sandals
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3271, {	-- Brinewashed Set		
 									["groups"] = {		
@@ -343,7 +333,6 @@ _.Zones =
 										i(134238),	-- Brinewashed Leather Pants
 										i(134237),	-- Brinewashed Leather Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3264, {	-- Mana-Saber Set		
 									["groups"] = {		
@@ -356,7 +345,6 @@ _.Zones =
 										i(134326),	-- Mana-Saber Hide Pants
 										i(134325),	-- Mana-Saber Hide Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3282, {	-- Manaburst Set		
 									["groups"] = {		
@@ -369,7 +357,6 @@ _.Zones =
 										i(134344),	-- Manaburst Legguards
 										i(134342),	-- Manaburst Greaves
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),	
 								n(-3276, {	-- Sea Stalker's Set		
 									["groups"] = {		
@@ -382,7 +369,6 @@ _.Zones =
 										i(134256),	-- Sea Stalker's Leggings
 										i(134254),	-- Sea Stalker's Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),			
 								n(-3305, {	-- Coralplate Set		
 									["groups"] = {		
@@ -395,7 +381,6 @@ _.Zones =
 										i(134227),	-- Coralplate Legguards
 										i(134229),	-- Coralplate Sandstompers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),			
 								n(-3304, {	-- Ley-Scarred Set		
 									["groups"] = {		
@@ -408,7 +393,6 @@ _.Zones =
 										i(134315),	-- Ley-Scarred Greaves
 										i(134317),	-- Ley-Scarred Sabatons
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),
 							},
 						})),
@@ -429,7 +413,6 @@ _.Zones =
 										i(134350),	-- Arcane Singed Leggings
 										i(134352),	-- Arcane Singed Slippers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3248, {	-- Seawitch Set		
 									["groups"] = {		
@@ -442,7 +425,6 @@ _.Zones =
 										i(134262),	-- Seawitch Leggings
 										i(134264),	-- Seawitch Sandals
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3271, {	-- Brinewashed Set		
 									["groups"] = {		
@@ -455,7 +437,6 @@ _.Zones =
 										i(134238),	-- Brinewashed Leather Pants
 										i(134237),	-- Brinewashed Leather Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3264, {	-- Mana-Saber Set		
 									["groups"] = {		
@@ -468,7 +449,6 @@ _.Zones =
 										i(134326),	-- Mana-Saber Hide Pants
 										i(134325),	-- Mana-Saber Hide Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3282, {	-- Manaburst Set		
 									["groups"] = {		
@@ -481,7 +461,6 @@ _.Zones =
 										i(134344),	-- Manaburst Legguards
 										i(134342),	-- Manaburst Greaves
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),	
 								n(-3276, {	-- Sea Stalker's Set		
 									["groups"] = {		
@@ -494,7 +473,6 @@ _.Zones =
 										i(134256),	-- Sea Stalker's Leggings
 										i(134254),	-- Sea Stalker's Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),			
 								n(-3305, {	-- Coralplate Set		
 									["groups"] = {		
@@ -507,7 +485,6 @@ _.Zones =
 										i(134227),	-- Coralplate Legguards
 										i(134229),	-- Coralplate Sandstompers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),			
 								n(-3304, {	-- Ley-Scarred Set		
 									["groups"] = {		
@@ -520,7 +497,6 @@ _.Zones =
 										i(134315),	-- Ley-Scarred Greaves
 										i(134317),	-- Ley-Scarred Sabatons
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),
 							},
 						})),
@@ -541,7 +517,6 @@ _.Zones =
 										i(134350),	-- Arcane Singed Leggings
 										i(134352),	-- Arcane Singed Slippers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3248, {	-- Seawitch Set		
 									["groups"] = {		
@@ -554,7 +529,6 @@ _.Zones =
 										i(134262),	-- Seawitch Leggings
 										i(134264),	-- Seawitch Sandals
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3271, {	-- Brinewashed Set		
 									["groups"] = {		
@@ -567,7 +541,6 @@ _.Zones =
 										i(134238),	-- Brinewashed Leather Pants
 										i(134237),	-- Brinewashed Leather Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3264, {	-- Mana-Saber Set		
 									["groups"] = {		
@@ -580,7 +553,6 @@ _.Zones =
 										i(134326),	-- Mana-Saber Hide Pants
 										i(134325),	-- Mana-Saber Hide Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3282, {	-- Manaburst Set		
 									["groups"] = {		
@@ -593,7 +565,6 @@ _.Zones =
 										i(134344),	-- Manaburst Legguards
 										i(134342),	-- Manaburst Greaves
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),	
 								n(-3276, {	-- Sea Stalker's Set		
 									["groups"] = {		
@@ -606,7 +577,6 @@ _.Zones =
 										i(134256),	-- Sea Stalker's Leggings
 										i(134254),	-- Sea Stalker's Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),			
 								n(-3305, {	-- Coralplate Set		
 									["groups"] = {		
@@ -619,7 +589,6 @@ _.Zones =
 										i(134227),	-- Coralplate Legguards
 										i(134229),	-- Coralplate Sandstompers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),			
 								n(-3304, {	-- Ley-Scarred Set		
 									["groups"] = {		
@@ -632,7 +601,6 @@ _.Zones =
 										i(134315),	-- Ley-Scarred Greaves
 										i(134317),	-- Ley-Scarred Sabatons
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),
 							},
 						})),
@@ -653,7 +621,6 @@ _.Zones =
 										i(134350),	-- Arcane Singed Leggings
 										i(134352),	-- Arcane Singed Slippers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3248, {	-- Seawitch Set		
 									["groups"] = {		
@@ -666,7 +633,6 @@ _.Zones =
 										i(134262),	-- Seawitch Leggings
 										i(134264),	-- Seawitch Sandals
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3271, {	-- Brinewashed Set		
 									["groups"] = {		
@@ -679,7 +645,6 @@ _.Zones =
 										i(134238),	-- Brinewashed Leather Pants
 										i(134237),	-- Brinewashed Leather Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3264, {	-- Mana-Saber Set		
 									["groups"] = {		
@@ -692,7 +657,6 @@ _.Zones =
 										i(134326),	-- Mana-Saber Hide Pants
 										i(134325),	-- Mana-Saber Hide Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3282, {	-- Manaburst Set		
 									["groups"] = {		
@@ -705,7 +669,6 @@ _.Zones =
 										i(134344),	-- Manaburst Legguards
 										i(134342),	-- Manaburst Greaves
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),	
 								n(-3276, {	-- Sea Stalker's Set		
 									["groups"] = {		
@@ -718,7 +681,6 @@ _.Zones =
 										i(134256),	-- Sea Stalker's Leggings
 										i(134254),	-- Sea Stalker's Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),			
 								n(-3305, {	-- Coralplate Set		
 									["groups"] = {		
@@ -731,7 +693,6 @@ _.Zones =
 										i(134227),	-- Coralplate Legguards
 										i(134229),	-- Coralplate Sandstompers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),			
 								n(-3304, {	-- Ley-Scarred Set		
 									["groups"] = {		
@@ -744,7 +705,6 @@ _.Zones =
 										i(134315),	-- Ley-Scarred Greaves
 										i(134317),	-- Ley-Scarred Sabatons
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),
 							},
 						})),
@@ -768,7 +728,6 @@ _.Zones =
 										i(134350),	-- Arcane Singed Leggings
 										i(134352),	-- Arcane Singed Slippers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3248, {	-- Seawitch Set		
 									["groups"] = {		
@@ -781,7 +740,6 @@ _.Zones =
 										i(134262),	-- Seawitch Leggings
 										i(134264),	-- Seawitch Sandals
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3271, {	-- Brinewashed Set		
 									["groups"] = {		
@@ -794,7 +752,6 @@ _.Zones =
 										i(134238),	-- Brinewashed Leather Pants
 										i(134237),	-- Brinewashed Leather Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3264, {	-- Mana-Saber Set		
 									["groups"] = {		
@@ -807,7 +764,6 @@ _.Zones =
 										i(134326),	-- Mana-Saber Hide Pants
 										i(134325),	-- Mana-Saber Hide Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3282, {	-- Manaburst Set		
 									["groups"] = {		
@@ -820,7 +776,6 @@ _.Zones =
 										i(134344),	-- Manaburst Legguards
 										i(134342),	-- Manaburst Greaves
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),	
 								n(-3276, {	-- Sea Stalker's Set		
 									["groups"] = {		
@@ -833,7 +788,6 @@ _.Zones =
 										i(134256),	-- Sea Stalker's Leggings
 										i(134254),	-- Sea Stalker's Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),			
 								n(-3305, {	-- Coralplate Set		
 									["groups"] = {		
@@ -846,7 +800,6 @@ _.Zones =
 										i(134227),	-- Coralplate Legguards
 										i(134229),	-- Coralplate Sandstompers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),			
 								n(-3304, {	-- Ley-Scarred Set		
 									["groups"] = {		
@@ -859,7 +812,6 @@ _.Zones =
 										i(134315),	-- Ley-Scarred Greaves
 										i(134317),	-- Ley-Scarred Sabatons
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),
 							},
 						}),
@@ -881,7 +833,6 @@ _.Zones =
 										i(134350),	-- Arcane Singed Leggings
 										i(134352),	-- Arcane Singed Slippers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3248, {	-- Seawitch Set		
 									["groups"] = {		
@@ -894,7 +845,6 @@ _.Zones =
 										i(134262),	-- Seawitch Leggings
 										i(134264),	-- Seawitch Sandals
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3271, {	-- Brinewashed Set		
 									["groups"] = {		
@@ -907,7 +857,6 @@ _.Zones =
 										i(134238),	-- Brinewashed Leather Pants
 										i(134237),	-- Brinewashed Leather Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3264, {	-- Mana-Saber Set		
 									["groups"] = {		
@@ -920,7 +869,6 @@ _.Zones =
 										i(134326),	-- Mana-Saber Hide Pants
 										i(134325),	-- Mana-Saber Hide Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3282, {	-- Manaburst Set		
 									["groups"] = {		
@@ -933,7 +881,6 @@ _.Zones =
 										i(134344),	-- Manaburst Legguards
 										i(134342),	-- Manaburst Greaves
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),	
 								n(-3276, {	-- Sea Stalker's Set		
 									["groups"] = {		
@@ -946,7 +893,6 @@ _.Zones =
 										i(134256),	-- Sea Stalker's Leggings
 										i(134254),	-- Sea Stalker's Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),			
 								n(-3305, {	-- Coralplate Set		
 									["groups"] = {		
@@ -959,7 +905,6 @@ _.Zones =
 										i(134227),	-- Coralplate Legguards
 										i(134229),	-- Coralplate Sandstompers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),			
 								n(-3304, {	-- Ley-Scarred Set		
 									["groups"] = {		
@@ -972,7 +917,6 @@ _.Zones =
 										i(134315),	-- Ley-Scarred Greaves
 										i(134317),	-- Ley-Scarred Sabatons
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),
 							},
 						})),
@@ -994,7 +938,6 @@ _.Zones =
 										i(134350),	-- Arcane Singed Leggings
 										i(134352),	-- Arcane Singed Slippers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3248, {	-- Seawitch Set		
 									["groups"] = {		
@@ -1007,7 +950,6 @@ _.Zones =
 										i(134262),	-- Seawitch Leggings
 										i(134264),	-- Seawitch Sandals
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3271, {	-- Brinewashed Set		
 									["groups"] = {		
@@ -1020,7 +962,6 @@ _.Zones =
 										i(134238),	-- Brinewashed Leather Pants
 										i(134237),	-- Brinewashed Leather Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3264, {	-- Mana-Saber Set		
 									["groups"] = {		
@@ -1033,7 +974,6 @@ _.Zones =
 										i(134326),	-- Mana-Saber Hide Pants
 										i(134325),	-- Mana-Saber Hide Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3282, {	-- Manaburst Set		
 									["groups"] = {		
@@ -1046,7 +986,6 @@ _.Zones =
 										i(134344),	-- Manaburst Legguards
 										i(134342),	-- Manaburst Greaves
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),	
 								n(-3276, {	-- Sea Stalker's Set		
 									["groups"] = {		
@@ -1059,7 +998,6 @@ _.Zones =
 										i(134256),	-- Sea Stalker's Leggings
 										i(134254),	-- Sea Stalker's Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),			
 								n(-3305, {	-- Coralplate Set		
 									["groups"] = {		
@@ -1072,7 +1010,6 @@ _.Zones =
 										i(134227),	-- Coralplate Legguards
 										i(134229),	-- Coralplate Sandstompers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),			
 								n(-3304, {	-- Ley-Scarred Set		
 									["groups"] = {		
@@ -1085,7 +1022,6 @@ _.Zones =
 										i(134315),	-- Ley-Scarred Greaves
 										i(134317),	-- Ley-Scarred Sabatons
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),
 							},
 						})),
@@ -1107,7 +1043,6 @@ _.Zones =
 										i(134350),	-- Arcane Singed Leggings
 										i(134352),	-- Arcane Singed Slippers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3248, {	-- Seawitch Set		
 									["groups"] = {		
@@ -1120,7 +1055,6 @@ _.Zones =
 										i(134262),	-- Seawitch Leggings
 										i(134264),	-- Seawitch Sandals
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3271, {	-- Brinewashed Set		
 									["groups"] = {		
@@ -1133,7 +1067,6 @@ _.Zones =
 										i(134238),	-- Brinewashed Leather Pants
 										i(134237),	-- Brinewashed Leather Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3264, {	-- Mana-Saber Set		
 									["groups"] = {		
@@ -1146,7 +1079,6 @@ _.Zones =
 										i(134326),	-- Mana-Saber Hide Pants
 										i(134325),	-- Mana-Saber Hide Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3282, {	-- Manaburst Set		
 									["groups"] = {		
@@ -1159,7 +1091,6 @@ _.Zones =
 										i(134344),	-- Manaburst Legguards
 										i(134342),	-- Manaburst Greaves
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),	
 								n(-3276, {	-- Sea Stalker's Set		
 									["groups"] = {		
@@ -1172,7 +1103,6 @@ _.Zones =
 										i(134256),	-- Sea Stalker's Leggings
 										i(134254),	-- Sea Stalker's Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),			
 								n(-3305, {	-- Coralplate Set		
 									["groups"] = {		
@@ -1185,7 +1115,6 @@ _.Zones =
 										i(134227),	-- Coralplate Legguards
 										i(134229),	-- Coralplate Sandstompers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),			
 								n(-3304, {	-- Ley-Scarred Set		
 									["groups"] = {		
@@ -1198,7 +1127,6 @@ _.Zones =
 										i(134315),	-- Ley-Scarred Greaves
 										i(134317),	-- Ley-Scarred Sabatons
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),
 							},
 						})),
@@ -1220,7 +1148,6 @@ _.Zones =
 										i(134350),	-- Arcane Singed Leggings
 										i(134352),	-- Arcane Singed Slippers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3248, {	-- Seawitch Set		
 									["groups"] = {		
@@ -1233,7 +1160,6 @@ _.Zones =
 										i(134262),	-- Seawitch Leggings
 										i(134264),	-- Seawitch Sandals
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 								}),			
 								n(-3271, {	-- Brinewashed Set		
 									["groups"] = {		
@@ -1246,7 +1172,6 @@ _.Zones =
 										i(134238),	-- Brinewashed Leather Pants
 										i(134237),	-- Brinewashed Leather Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3264, {	-- Mana-Saber Set		
 									["groups"] = {		
@@ -1259,7 +1184,6 @@ _.Zones =
 										i(134326),	-- Mana-Saber Hide Pants
 										i(134325),	-- Mana-Saber Hide Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 								}),			
 								n(-3282, {	-- Manaburst Set		
 									["groups"] = {		
@@ -1272,7 +1196,6 @@ _.Zones =
 										i(134344),	-- Manaburst Legguards
 										i(134342),	-- Manaburst Greaves
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),	
 								n(-3276, {	-- Sea Stalker's Set		
 									["groups"] = {		
@@ -1285,7 +1208,6 @@ _.Zones =
 										i(134256),	-- Sea Stalker's Leggings
 										i(134254),	-- Sea Stalker's Boots
 									},		
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 								}),			
 								n(-3305, {	-- Coralplate Set		
 									["groups"] = {		
@@ -1298,7 +1220,6 @@ _.Zones =
 										i(134227),	-- Coralplate Legguards
 										i(134229),	-- Coralplate Sandstompers
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),			
 								n(-3304, {	-- Ley-Scarred Set		
 									["groups"] = {		
@@ -1311,7 +1232,6 @@ _.Zones =
 										i(134315),	-- Ley-Scarred Greaves
 										i(134317),	-- Ley-Scarred Sabatons
 									},		
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 								}),
 							},
 						})),

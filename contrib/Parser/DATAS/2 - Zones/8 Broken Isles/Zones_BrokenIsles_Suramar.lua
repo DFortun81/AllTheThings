@@ -196,7 +196,6 @@ _.Zones =
 										i(134306),	-- Manawracker Pants
 										i(134308),	-- Manawracker Sandals
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3262, { -- Swordsinger Set
 									["groups"] = {
@@ -209,7 +208,6 @@ _.Zones =
 										i(134282),	-- Swordsinger's Leggings
 										i(134281),	-- Swordsinger's Footpads
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3274, { -- Ley Dragoon Set
 									["groups"] = {
@@ -222,7 +220,6 @@ _.Zones =
 										i(134300),	-- Ley Dragoon's Legguards
 										i(134298),	-- Ley Dragoon's Stompers
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3299, { -- Arcane Defender Set
 									["groups"] = {
@@ -235,7 +232,6 @@ _.Zones =
 										i(134271),	-- Arcane Defender's Pants
 										i(134273),	-- Arcane Defender's Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								i(140013), -- Night Commander's Pauldrons
 							},
@@ -260,7 +256,6 @@ _.Zones =
 										i(134306),	-- Manawracker Pants
 										i(134308),	-- Manawracker Sandals
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3262, { -- Swordsinger Set
 									["groups"] = {
@@ -273,7 +268,6 @@ _.Zones =
 										i(134282),	-- Swordsinger's Leggings
 										i(134281),	-- Swordsinger's Footpads
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3274, { -- Ley Dragoon Set
 									["groups"] = {
@@ -286,7 +280,6 @@ _.Zones =
 										i(134300),	-- Ley Dragoon's Legguards
 										i(134298),	-- Ley Dragoon's Stompers
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3299, { -- Arcane Defender Set
 									["groups"] = {
@@ -299,7 +292,6 @@ _.Zones =
 										i(134271),	-- Arcane Defender's Pants
 										i(134273),	-- Arcane Defender's Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								i(140013), -- Night Commander's Pauldrons
 							},
@@ -324,7 +316,6 @@ _.Zones =
 										i(134306),	-- Manawracker Pants
 										i(134308),	-- Manawracker Sandals
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3262, { -- Swordsinger Set
 									["groups"] = {
@@ -337,7 +328,6 @@ _.Zones =
 										i(134282),	-- Swordsinger's Leggings
 										i(134281),	-- Swordsinger's Footpads
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3274, { -- Ley Dragoon Set
 									["groups"] = {
@@ -350,7 +340,6 @@ _.Zones =
 										i(134300),	-- Ley Dragoon's Legguards
 										i(134298),	-- Ley Dragoon's Stompers
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3299, { -- Arcane Defender Set
 									["groups"] = {
@@ -363,7 +352,6 @@ _.Zones =
 										i(134271),	-- Arcane Defender's Pants
 										i(134273),	-- Arcane Defender's Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								i(140013), -- Night Commander's Pauldrons
 							},
@@ -388,7 +376,6 @@ _.Zones =
 										i(134306),	-- Manawracker Pants
 										i(134308),	-- Manawracker Sandals
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3262, { -- Swordsinger Set
 									["groups"] = {
@@ -401,7 +388,6 @@ _.Zones =
 										i(134282),	-- Swordsinger's Leggings
 										i(134281),	-- Swordsinger's Footpads
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3274, { -- Ley Dragoon Set
 									["groups"] = {
@@ -414,7 +400,6 @@ _.Zones =
 										i(134300),	-- Ley Dragoon's Legguards
 										i(134298),	-- Ley Dragoon's Stompers
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3299, { -- Arcane Defender Set
 									["groups"] = {
@@ -427,7 +412,6 @@ _.Zones =
 										i(134271),	-- Arcane Defender's Pants
 										i(134273),	-- Arcane Defender's Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								i(140013), -- Night Commander's Pauldrons
 							},
@@ -452,7 +436,6 @@ _.Zones =
 										i(134306),	-- Manawracker Pants
 										i(134308),	-- Manawracker Sandals
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 								}),
 								n(-3262, { -- Swordsinger Set
 									["groups"] = {
@@ -465,7 +448,6 @@ _.Zones =
 										i(134282),	-- Swordsinger's Leggings
 										i(134281),	-- Swordsinger's Footpads
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 								}),
 								n(-3274, { -- Ley Dragoon Set
 									["groups"] = {
@@ -478,7 +460,6 @@ _.Zones =
 										i(134300),	-- Ley Dragoon's Legguards
 										i(134298),	-- Ley Dragoon's Stompers
 									},
-									["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 								}),
 								n(-3299, { -- Arcane Defender Set
 									["groups"] = {
@@ -491,7 +472,6 @@ _.Zones =
 										i(134271),	-- Arcane Defender's Pants
 										i(134273),	-- Arcane Defender's Boots
 									},
-									["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 								}),
 								i(140013), -- Night Commander's Pauldrons
 							},
