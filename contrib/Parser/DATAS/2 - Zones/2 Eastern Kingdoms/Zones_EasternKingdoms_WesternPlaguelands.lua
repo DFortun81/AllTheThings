@@ -5,13 +5,13 @@ _.Zones =
 {
 	m(14, { 	-- Eastern Kingdoms
 		m(22, {		-- Western Plaguelands
-			["groups"] = {
+			["g"] = {
 				n(-3, { 	-- Holidays
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
+					n(-47, {    	-- Lunar Festival
+						["g"] = {
 							n(-17, { 	-- Quests
 								q(8722, {	-- Meadowrun the Elder			
-									["groups"] = {			
+									["g"] = {			
 										-- i(21100),	-- Coin of Ancestry	
 										-- i(21746, {	-- Lucky Red Envelope	
 											--i(21745),	-- Elder's Moonstone
@@ -22,7 +22,7 @@ _.Zones =
 									["qg"] = 15602,	-- Elder Meadowrun		
 								}),
 								q(8714, {	-- Moonstrike the Elder			
-									["groups"] = {			
+									["g"] = {			
 										-- i(21100),	-- Coin of Ancestry	
 										-- i(21746, {	-- Lucky Red Envelope	
 											--i(21745),	-- Elder's Moonstone
@@ -34,74 +34,82 @@ _.Zones =
 								}),
 							}),
 						},
-						["achievementID"] = 913, -- To Honor One's Elders
+						["achievementID"] = 913,	-- To Honor One's Elders
 						["u"] = 17,
 					}),
---[[					n(-50, {     -- Love is in the Air
-						["groups"] = {
+--[[					n(-50, {    	-- Love is in the Air
+						["g"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1693,    -- Fool For Love
+						["achievementID"] = 1693,   	-- Fool For Love
 						["u"] = 18,
 					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
+					n(-51, {    	-- Noblegarden
+						["g"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 2798, -- Noble Gardener
+						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
+					n(-52, {    	-- Children's Week
+						["g"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1793, -- For The Children
+						["achievementID"] = 1793,	-- For The Children
 						["u"] = 20,
 					}),	
 --]]					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
+					n(-53, {    	-- Midsummer Fire Festival
+						["g"] = {
 							n(-17, { 	-- Quests
+								qa(28918),	-- Desecrate this Fire!
+								qh(11756),	-- Desecrate this Fire!
+								qa(11827),	-- Honor the Flame
+								qh(28931),	-- Honor the Flame
 								qg(25962, qa( 11882)),	-- Playing with Fire
 							}),
 						},
-						["achievementID"] = 1038, -- The Flame Warden
+						["achievementID"] = 1038,	-- The Flame Warden
 						["u"] = 21,
 					}),
 --[[
-					n(-56, {     -- Brewfest
-						["groups"] = {
+					n(-56, {    	-- Brewfest
+						["g"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1683, -- Brewmaster
+						["achievementID"] = 1683,	-- Brewmaster
 						["u"] = 24,
 					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
+--]]
+					n(-58, {    	-- Hallow's End
+						["g"] = {
 							n(-17, { 	-- Quests
+								qa(28988),	-- Candy Bucket
+								qh(28987),	-- Candy Bucket
 							}),
 						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["achievementID"] = 1656,	-- Hallowed Be Thy Name
 						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
+					}),
+--[[
+					n(-60, {    	-- Pilgrim's Bounty
+						["g"]  = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 3478, -- Pilgrim
+						["achievementID"] = 3478,	-- Pilgrim
 						["u"] = 28,
 					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
+					n(-61, {    	-- Feast of Winter Veil
+						["g"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1691, -- Merrymaker
+						["achievementID"] = 1691,	-- Merrymaker
 						["u"] = 29,
 					}),	
 --]]					
@@ -115,250 +123,535 @@ _.Zones =
 					p(420), 	-- Toad
 				}),
 				n(-17, { 	-- Quests
---					qg(, q(26954)),	-- A Different Approach
-					qg(44472, q(27012, { -- A Gnoll's Resolve
-						i(62177),
-						i(62176),
-						i(62175),
-					})),
-					qg(45165, qa(27167, { -- A Mighty Hunger
-						i(62159),
-						i(62158),
-						i(62157),
+					qh(27089, {	-- Ace in the Hole
+						["g"] = {
+							i( 62217),	-- Minuteman Pike
+							i( 62216),	-- Lurid Bracers
+							i( 62215),	-- Shoulderwraps of the Enthralled
+							i(131639),	-- Forsaken Trooper Armguards
+						},
+						["qg"] = 44451,	-- Lady Sylvanas Windrunner
+						["sourceQuests"] = { 27087 },	-- Lindsay Ravensun, Revealed
+					}),
+					
+					
+					q( 26954, {	-- A Different Approach
+						["g"] = {
+						},
+						["qg"] = 44456,	-- Adrine Towhide
+						["sourceQuests"] = { 26953 },	-- Zen'kiki, the Druid
+					}),
+
+					
+					q( 27012, {	-- A Gnoll's Resolve
+						["g"] = {
+							i(62177),	-- Kelly's Booties
+							i(62176),	-- Redpine Cloak
+							i(62175),	-- Lumberjack's Hatchet
+						},
+						["qg"] = 44472,	-- Kelly Dumah
+						["sourceQuests"] = { 27013 },	-- Too Close for Comfort
+					}),
+					
+					
+					q( 27002, {	-- An Audience with the Highlord
+						["g"] = {
+						},
+						["qg"] = 11616,	-- Nathaniel Dumah
+						["sourceQuests"] = { 27001 },	-- This Means WAR (Wild Arachnid Roundup)
+					}),
+					
+					
+					qh(27090, {	-- Andorhal, Once and For All
+						["g"] = {
+						},
+						["qg"] = 45129,	-- Lurid
+						["sourceQuests"] = { 27089 },	-- Ace in the Hole
+					}),
+					
+					
+					q( 26999, {	-- A New Era for the Plaguelands
+						["g"] = {
+							i( 62174),	-- Bracers of the Returning Wild
+							i( 62173),	-- Boots of the Flowering Earth
+							i( 62172),	-- Forest Green Cloak
+							i(131630),	-- Treads of Renewed Growth
+						},
+						["qg"] = 44454,	-- Field Agent Kaartish
+						["breadcrumbQuestID"] = { 26952 },	-- The Menders' Stead
+					}),
+					
+					
+					qh(26925, {	-- Araj the Summoner
+						["g"] = {
+						},
+						["qg"] = 44462,	-- Jearl Donald
+						["sourceQuests"] = { 26922 },	-- The Endless Flow
+					}),
+
+					
+					qh(27086, {	-- Ashes to Ashes
+						["g"] = {
+						},
+						["qg"] = 44452,	-- Koltira Deathweaver
+						["sourceQuests"] = { 27083 },	-- The Battle Resumes!
+					}),
+					
+					
+					q( 27154, {	-- Bagging Bisp
+						["g"] = {
+						},
+						["qg"] = 45149,	-- Outfitter Mendelev
+						["sourceQuests"] = { 27153 },	-- The Good People of Hearthglen
+					}),
+					
+					
+					qh(27117, {	-- Brute Strength
+						["g"] = {
+						},
+						["qg"] = 44452,	-- Koltira Deathweaver
+						["sourceQuests"] = { 26921, 26923 },	-- Scourge First... Alliance Later & War Machines (may not require SF...AL)
+					}),
+					
+					
+					qh(26938, {	-- Combat Training (awarded "A Temporary Peace" criteria)
+						["g"] = {
+							i( 62188),	-- Abominable Shoulderguards
+							i( 62187),	-- Charming Gloves
+							i( 62186),	-- Ravensun Britches
+							i( 62185),	-- Zombie Shotgun
+							i(131623),	-- Ravensun Gloves
+						},
+						["sourceQuests"] = { 26937 },	-- When Death is Not Enough
+					}),
+					
+					
+					q( 27054, {	-- Desperate Acts
+						["g"] = {
+						},
+						["qg"] = 44454,	-- Field Agent Kaartish
+						["sourceQuests"] = { 27057 },	-- Return to the Stead
+					}),
+					
+					
+					q( 27157, {	-- Drudges... <Sigh>
+						["g"] = {
+						},
+						["qg"] = 45157,	-- Lieutenant Myner
+						["sourceQuests"] = { 27156 },	-- It's About Time!
+					}),
+					
+					
+					q( 27053, {	-- Gahrron's Withering Cauldron
+						["g"] = {
+						},
+						["qg"] = 44454,	-- Field Agent Kaartish
+						["sourceQuests"] = { 27002 },	-- An Audience with the Highlord
+					}),
+					
+					
+					q( 26956, {	-- I Ain't Sayin' You a Gourd-Digger...
+						["g"] = {
+						},
+						["qg"] = 44457,	-- Selyria Groenveld
+					}),
+					
+					
+					q( 27683, {	-- Into the Woods
+						["g"] = {
+						},
+						["qgs"] = { 10840, 44462, 44456 } ,	-- Argent Office Pureheart, Jearl Donald, Adrine Towhide
+						["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
+					}),
+
+					
+					q( 27156, {	-- It's About Time!
+						["g"] = {
+						},
+						["qg"] = 45157,	-- Lieutenant Myner
+					}),
+					
+					
+					q( 27000, {	-- Learning the Ropes
+						["g"] = {
+						},
+						["qg"] = 11616,	-- Nathaniel Dumah
+						["breadcrumbQuestID"] = { 26935 },	-- Northridge Lumber Mill
+					}),
+					
+					
+					qh(27087, {	-- Lindsay Ravensun, Revealed
+						["g"] = {
+						},
+						["qg"] = 44452,	-- Koltira Deathweaver
+						["sourceQuests"] = { 27086, 27085, 27084 },	-- Ashes to Ashes, Supporting the Troops, The Farmers' Militia
+					}),
+					
+					
+					q( 27017, {	-- Memories from a Lost Past
+						["g"] = {
+							i( 62197),	-- Gahrron's Shoulderguard
+							i( 62196),	-- Gloria's Work Vest
+							i( 62195),	-- Footfalls of Memories
+							i(131631),	-- Del's Discarded Shoulderguard
+							i(131632),	-- Dusty Gahrron Chainmail
+						},
+						["qg"] = 44458,	-- Del Gahrron
+						["sourceQuests"] = { 26957 },	-- The Long Trip Home
+					}),
+					
+					
+					q( 26935, {	-- Northridge Lumber Mill
+						["g"] = {
+						},
+						["qg"] = 44454,	-- Field Agent Kaartish
+						["sourceQuests"] = { 26999 },	-- A New Era for the Plaguelands
+						["isBreadcrumb"] = true,	-- for "Learning the Ropes"
+					}),
+					
+					
+					q( 27011, {	-- Redpine Thievery
+						["g"] = {
+						},
+						["qg"] = 44472,	-- Kelly Dumah
+						["sourceQuests"] = { 27013 },	-- Too Close for Comfort
+					}),
+					
+					
+					o(176392, {	-- Scourge Cauldron
+						q(27057, {	-- Return to the Stead
+							["g"] = {
+							},
+							["sourceQuests"] = { 27053 },	-- Gahrron's Withering Cauldron
+						}),
+					}),
+					
+					
+					qh(26924, {	-- Scholomancer
+						["g"] = {
+							i( 62155),	-- Belt of Lingering Corruption
+							i( 62154),	-- Elimination Bracers
+							i( 62153),	-- Burden of Time
+							i( 62152),	-- Gandling's Gloves
+							i(131620),	-- Armguards of Binding
+							i(131621),	-- Shoulderguard of Timeless Restraint
+						},
+						["qg"] = 44452,	-- Koltira Deathweaver
+						["sourceQuests"] = { 26921, 26923 },	-- Scourge First... Alliance Later & War Machines (may not require SF...AL)
+					}),
+					
+					
+					qh(26921, {	-- Scourge First... Alliance Later
+						["g"] = {
+						},
+						["qg"] = 44452,	-- Koltira Deathweaver
+						["breadcrumbQuestID"] = { 28575 },	-- Warchief's Command: Western Plaguelands!
+					}),
+
+					
+					q( 27055, {	-- Students of Krastinov
+						["g"] = {
+							i( 62201),	-- Kaartish's Sword
+							i( 62200),	-- Field Agent's Belt
+							i( 62199),	-- Malicia's Scepter
+							i(131635),	-- Plague-Free Disciple Belt
+						},
+						["sourceQuests"] = { 27054 },	-- Desperate Acts
+					}),
+					
+					
+					qh(27085, {	-- Supporting the Troops
+						["g"] = {
+							i( 62208),	-- Gloves of the Able
+							i( 62207),	-- Belt of the Unafraid
+							i( 62206),	-- Bracers of Envy
+							i(131637),	-- Gloves of Approaching Victory
+							i(131638),	-- Belt of Proficiency
+						},
+						["qg"] = 44462,	-- Jearl Donald
+						["sourceQuests"] = { 27083 },	-- The Battle Resumes!
+					}),
+					
+
+					q( 27151, {	-- Taelan Fordring's Legacy
+						["g"] = {
+						},
+						["qg"] = 45147,	-- Daria L'Rayne
+						["sourceQuests"] = { 27002 },	-- An Audience With the Highlord
+					}),
+					
+					
+					qh(27083, {	-- The Battle Resumes!
+						["g"] = {
+						},
+						["qg"] = 45013,	-- Damion Steel
+						["sourceQuests"] = { 26938 },	-- Combat Training
+					}),
+					
+					
+					qh(26922, {	-- The Endless Flow
+						["g"] = {
+						},
+						["qg"] = 44462,	-- Jearl Donald
+					}),
+				
+				
+					qh(27084, {	-- The Farmers' Militia
+						["g"] = {
+						},
+						["qg"] = 44452,	-- Koltira Deathweaver
+						["sourceQuests"] = { 27083 },	-- The Battle Resumes!
+					}),
+				
+				
+					q( 27153, {	-- The Good People of Hearthglen
+						["g"] = {
+						},
+						["sourceQuests"] = { 27152 },	-- Unusual Behavior... Even For Gnolls
+					}),
+				
+				
+					q( 26957, {	-- The Long Trip Home
+						["g"] = {
+						},
+						["qg"] = 44905,	-- 
+					}),
+				
+				
+					qh(27144, {	-- The Reckoning (awarded "The Second Battle for Andorhal" criteria)
+						["g"] = {
+							i( 62227),	-- Pauldrons of Andorhal
+							i( 62226),	-- Andorhal Legguards
+							i( 62225),	-- Andorhal Tunic
+							i( 62224),	-- Staff of Andorhal
+							i( 62223),	-- Dagger of Andorhal
+							i(131641),	-- Andorhal Chain Leggings
+						},
+						["qg"] = 44451,	-- Lady Sylvanas Windrunner
+						["sourceQuests"] = { 27090 },	-- Andorhal, Once and For All
+					}),
+				
+				
+					q( 27001, {	-- This Means WAR (Wild Arachnid Roundup)
+						["g"] = {
+							i(62179),	-- Spider Frier
+						  --i(62178),	-- Not Transmoggable
+						},
+						["qg"] = 11616,	-- Nathaniel Dumah
+						["sourceQuests"] = { 27000 },	-- Learning the Ropes
+					}),
+				
+				
+					q( 27013, {	-- Too Close for Comfort
+						["g"] = {
+						},
+						["qg"] = 44472,	-- Kelly Dumah
+					}),
+				
+				
+					q( 27155, {	-- Turning Yourself In (awarded "The Menders' Stead" criteria and overall "Western Plaguelands Quests" achievement)
+						["g"] = {
+							i(62191),	-- Highlord's Favor
+							i(62190),	-- Light-Imbued Lantern
+						},
+						["sourceQuests"] = { 27154 },	-- Bagging Bisp
+					}),
+				
+				
+					q( 27152, {	-- Unusual Behavior... Even For Gnolls
+						["g"] = {
+						},
+						["sourceQuests"] = { 27151 },	-- Taelan Fordring's Legacy
+					}),
+				
+				
+					qh(26926, {	-- Victory, For Now (awarded "The First Battle for Andorhal" criteria)
+						["g"] = {
+						},
+						["qg"] = 44452,	-- Koltira Deathweaver
+						["sourceQuests"] = { 26925, 27117, 26924 },	-- Araj the Summoner, Brute Strength, & Scholomancer
+					}),
+				
+				
+					qh(26923, {	-- War Machines
+						["g"] = {
+							i( 62147),	-- Gut Opener Gloves
+							i( 62146),	-- Behemoth Boots
+							i( 62145),	-- Belt of the Blathering Fool
+							i( 62144),	-- Bracers of Favorable Chance
+							i(131618),	-- Putrid Mail Boots
+							i(131619),	-- Belt of Recklessness
+						},
+						["qg"] = 44466,	-- Lindsay Ravensun
+					}),
+				
+				
+					qh(26937, {	-- When Death is Not Enough
+						["g"] = {
+						},
+						["qg"] = 44466,	-- Lindsay Ravensun
+						["sourceQuests"] = { 26979 },	-- Strange New Faces
+					}),
+				
+					
+					q( 26955, {	-- Zen'Kiki and the Cultists
+						["g"] = {
+							i( 62194),	-- Breastplate of the Patient
+							i( 62193),	-- Leggings of the Slipper Shifter
+							i(131627),	-- Scaled Pants of Patience
+						},
+						["qg"] = 44456,	-- Adrine Towhide
+						["sourceQuests"] = { 27057 },	-- Return to the Stead
+					}),
+				
+				
+					q( 26953, {	-- Zen'Kiki, the Druid
+						["g"] = {
+						},
+						["qg"] = 44456,	-- Adrine Towhide
+					}),
+				
+				
+--[[
+						["g"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuests"] = {  },	-- 
+					}),
+--]]
+
+
+					qg(45165, qa(27167, {	-- A Mighty Hunger
+						i( 62159),
+						i( 62158),
+						i( 62157),
 						i(131646),
 					})),
-					qg(44454, q(26999, { -- A New Era for the Plaguelands
-						i(62174),
-						i(62173),
-						i(62172),
-						i(131630),
-					})),
-					qg(44451, qh(27089, { -- Ace in the Hole
-						i(62217),
-						i(62216),
-						i(62215),
-						i(131639),
-					})),
---					qg(, qh(26930)),	-- After the Crusade
-					qg(44453, qa(27206, { -- Alas, Andorhal
-						i(62222),
-						i(62221),
-						i(62220),
-						i(62219),
-						i(62218),
+					qg(44453, qa(27206, {	-- Alas, Andorhal
+						i( 62222),
+						i( 62221),
+						i( 62220),
+						i( 62219),
+						i( 62218),
 						i(131656),
 					})),
 					o(205258, {	-- Broken Weapons Crate	
-						qa(27171, { -- Ambushed!
+						qa(27171, {	-- Ambushed!
 							i(62167),
 							i(62166),
 							i(62165),
 						}),
 					}),
---[[
-					qg(, q(27002)),	-- An Audience with the Highlord
-					qg(, q(43153)),	-- An Eye for a Scepter
-					qg(, qh(27090)),	-- Andorhal, Once and For All
-					qg(, qa(27204)),	-- Aradne
-					qg(, qh(26925)),	-- Araj the Summoner
-					qg(, qa(27164)),	-- Araj the Summoner
-					qg(, qa(27199)),	-- Ashes to Ashes
-					qg(, qh(27086)),	-- Ashes to Ashes
-					qg(, q(27154)),	-- Bagging Bisp
---]]					
-					qg(45165, qa(27202, { -- Brother Against Broher
-						i(62213),
-						i(62212),
-						i(62211),
+					qa(27204),	-- Aradne
+					qa(27164),	-- Araj the Summoner
+					qa(27199),	-- Ashes to Ashes
+					qg(45165, qa(27202, {	-- Brother Against Broher
+						i( 62213),
+						i( 62212),
+						i( 62211),
 						i(131655),
 					})),
---[[					
-					qg(, qa(27163)),	-- Brute Strength
-					qg(, qh(27117)),	-- Brute Strength
-					qh(28987),	-- Candy Bucket
-					qa(28988),	-- Candy Bucket
---]]
-					qg(45165, qa(27174, { -- Combat Training
-						i(62184),
-						i(62183),
-						i(62182),
-						i(62181),
+					qa(27163),	-- Brute Strength
+					qg(45165, qa(27174, {	-- Combat Training
+						i( 62184),
+						i( 62183),
+						i( 62182),
+						i( 62181),
 						i(131647),
 					})),
-					qg(44466, qh(26938, { -- Combat Training
-						i(62188),
-						i(62187),
-						i(62186),
-						i(62185),
-						i(131623),
-					})),
---[[					
-					qa(11755),	-- Desecrate this Fire!
-					qa(28918),	-- Desecrate this Fire!
-					qa(11766),	-- Desecrate this Fire!
-					qa(11732),	-- Desecrate this Fire!
-					qh(11581),	-- Desecrate this Fire!
-					qh(11745),	-- Desecrate this Fire!
-					qh(11749),	-- Desecrate this Fire!
-					qh(11756),	-- Desecrate this Fire!
-					qa(11786),	-- Desecrate this Fire!
-					qa(11580),	-- Desecrate this Fire!
-					qg(, q(27054)),	-- Desperate Acts
-					qg(, q(27157)),	-- Drudges... <Sigh>
-					qg(, q(43100)),	-- Finding the Scepter
-					qg(, qh(26933)),	-- Foes Before Hoes
-					qg(, q(27053)),	-- Gahrron's Withering Cauldron
-					qg(, qa(27166)),	-- Go Fletch!
-					qg(, qa(28576)),	-- Hero's Call: Western Plaguelands!
-					qg(, qh(28931)),	-- Honor the Flame
-					qg(, qa(11827)),	-- Honor the Flame
-					qg(, q(42774)),	-- Hope Prevails
-					qg(, q(26956)),	-- I Ain't Sayin' You a Gourd-Digger...
-					qg(, q(27683)),	-- Into the Woods
-					qg(, q(27156)),	-- It's About Time!
-					qg(, q(42771)),	-- Keeping the Peace
-					qg(, qh(26934)),	-- Latent Disease
-					qg(, q(27000)),	-- Learning the Ropes
-					qg(, qh(27087)),	-- Lindsay Ravensun, Revealed
-					qg(, qh(26936)),	-- Lower the Boom
-					qg(, q(8722)),	-- Meadowrun the Elder
---]]
-					qg(44458, q(27017, { -- Memories from a Lost Past
-						i(62197),
-						i(62196),
-						i(62195),
-						i(131631),
-						i(131632),
-					})),
---[[					
-					qg(, q(8714)),	-- Moonstrike the Elder
-					qg(, q(26935)),	-- Northridge Lumber Mill
-					qg(, qa(11882)),	-- Playing with Fire
-					qg(, q(27011)),	-- Redpine Thievery
-					qg(, q(27057)),	-- Return to the Stead
-					qg(, q(42772)),	-- Sacred Ground
---]]
-					qg(44453, qa(27162, { -- Scholomancer
-						i(62151),
-						i(62150),
-						i(62149),
-						i(62148),
+					qa(27166),	-- Go Fletch!
+					qa(11882),	-- Playing with Fire
+					qg(44453, qa(27162, {	-- Scholomancer
+						i( 62151),
+						i( 62150),
+						i( 62149),
+						i( 62148),
 						i(131644),
 						i(131645),
 					})),
-					qg(44452, qh(26924, { -- Scholomancer
-						i(62155),
-						i(62154),
-						i(62153),
-						i(62152),
-						i(131620),
-						i(131621),
-					})),
---[[
-					qg(, qh(26921)),	-- Scourge First... Alliance Later
-					qg(, qa(27159)),	-- Scourge First... Horde Later
-					qg(, q(42770)),	-- Seeking Guidance
-					qg(, qh(26979)),	-- Strange New Faces
---]]
-					qg(44454, q(27055, { -- Students of Krastinov
-						i(62201),
-						i(62200),
-						i(62199),
-						i(131635),
-					})),
-					qg(44467, qa(27198, { -- Supporting the Troops
-						i(62204),
-						i(62203),
-						i(62202),
+					qa(27159),	-- Scourge First... Horde Later
+					qg(44467, qa(27198, {	-- Supporting the Troops
+						i( 62204),
+						i( 62203),
+						i( 62202),
 						i(131653),
 						i(131654),
 					})),
-					qg(44462, qh(27085, { -- Supporting the Troops
-						i(62208),
-						i(62207),
-						i(62206),
-						i(131637),
-						i(131638),
-					})),
---[[					
-					qg(, q(27151)),	-- Taelan Fordring's Legacy
-					qg(, qa(27170)),	-- The Abandoned Crypt
-					qg(, qh(28750)),	-- The Battle for Andorhal
-					qg(, qa(28749)),	-- The Battle for Andorhal
-					qg(, qa(28505)),	-- The Battle for Andorhal
-					qg(, qa(27158)),	-- The Battle for Andorhal
-					qg(, qh(28508)),	-- The Battle for Andorhal
-					qg(, qh(26920)),	-- The Battle for Andorhal
-					qg(, qh(27083)),	-- The Battle Resumes!
-					qg(, qa(27197)),	-- The Battle Resumes!
-					qg(, qa(27205)),	-- The Depravity of the Forsaken
-					qg(, qh(26922)),	-- The Endless Flow
-					qg(, qa(27161)),	-- The Endless Flow
-					qg(, qh(27084)),	-- The Farmers' Militia
-					qg(, q(27153)),	-- The Good People of Hearthglen
-					qg(, q(42773)),	-- The Light Reveals
-					qg(, q(26957)),	-- The Long Trip Home
-					qg(, qa(27233)),	-- The Menders' Stead
-					qg(, qa(27175)),	-- The Menders' Stead
-					qg(, qh(26952)),	-- The Menders' Stead
---]]
-					qg(44451, qh(27144, { -- The Reckoning
-						i(62227),
-						i(62226),
-						i(62225),
-						i(62224),
-						i(62223),
-						i(131641),
-					})),
---[[					
-					qg(, qa(27172)),	-- The Writhing Haunt
-					qg(, qa(27173)),	-- This Is Our Army
---]]
-					qg(11616, q(27001, { -- This Means WAR (Wild Arachnid Roundup)
-						i(62179),
-						--i(62178) -- Not Transmoggable
-					})),
---[[
-					qg(, qa(27168)),	-- Those That Couldn't Let Go
-					qg(, q(27013)),	-- Too Close for Comfort
---]]
-					qg(45147, q(27155, { -- Turning Yourself In
-						i(62191),
-						i(62190),
-					})),
---[[					
-					qg(, q(27152)),	-- Unusual Behavior... Even For Gnolls
-					qg(, qa(27169)),	-- Uther's Blessing
-					qg(, qa(27201)),	-- Val'kyr Incursion					
-					qg(, qa(27165)),	-- Victory, For Now
-					qg(, qh(26926)),	-- Victory, For Now
---]]
-					qg(44471, qa(27160, { -- War Machines
-						i(62143),
-						i(62142),
-						i(62141),
-						i(62140),
+					qa(27170),	-- The Abandoned Crypt
+					qa(27158),	-- The Battle for Andorhal
+					qa(27197),	-- The Battle Resumes!
+					qa(27205),	-- The Depravity of the Forsaken
+					qa(27161),	-- The Endless Flow
+					qa(27233),	-- The Menders' Stead
+					qa(27175),	-- The Menders' Stead
+					qa(27172),	-- The Writhing Haunt
+					qa(27173),	-- This Is Our Army
+					qa(27168),	-- Those That Couldn't Let Go
+					qa(27169),	-- Uther's Blessing
+					qa(27201),	-- Val'kyr Incursion					
+					qa(27165),	-- Victory, For Now
+					qg(44471, qa(27160, {	-- War Machines
+						i( 62143),
+						i( 62142),
+						i( 62141),
+						i( 62140),
 						i(131642),
 						i(131643),
 					})),
-					qg(44466, qh(26923, { -- War Machines
-						i(62147),
-						i(62146),
-						i(62145),
-						i(62144),
-						i(131618),
-						i(131619),
+					qh(28575),	-- Warchief's Command: Western Plaguelands!
+					
+					
+					
+					
+-- CLASS HALL QUESTS
+					qart(q(43153, {	-- An Eye for a Scepter
+						["g"] = {
+						},
+						["qg"] = 109698,	-- Calydus
+						["Lvl"] = 98,
+						["classes"] = { 9 },	-- Warlock
+						["sourceQuests"] = { 43100 },	-- Finding the Scepter
 					})),
---[[
-					qg(, qh(28575)),	-- Warchief's Command: Western Plaguelands!
-					qg(, qh(26937)),	-- When Death is Not Enough
---]]
-					qg(44456, q(26955, { -- Zen'Kiki and the Cultists
-						i(62194),
-						i(62193),
-						i(131627),
+					qart(q(42774, {	-- Hope Prevails
+						["g"] = {
+						},
+						["Lvl"] = 98,
+						["qg"] = 108776,	-- Lord Maxwell Tyrosus
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuests"] = {  },	-- 
 					})),
---					qg(, q(26953)),	-- Zen'Kiki, the Druid					
+					qart(q(42771, {	-- Keeping the Peace
+						["g"] = {
+						},
+						["qg"] = 108778,	-- Mehlar Dawnblade
+						["Lvl"] = 98,
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuests"] = {  },	-- 
+					})),
+					qart(q(42772, {	-- Sacred Ground
+						["g"] = {
+						},
+						["qg"] = 108777,	-- High Priest Thel'danis
+						["Lvl"] = 98,
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuests"] = {  },	-- 
+					})),
+					qart(q(42770, {	-- Seeking Guidance
+						["g"] = {
+						},
+						["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus (same QG, different IDs)
+						["Lvl"] = 98,
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuests"] = {  },	-- 
+					})),
+					qart(q(42773, {	-- The Light Reveals
+						["g"] = {
+						},
+						["qgs"] = { 108776 },	-- Lord Maxwell Tyrosus
+						["Lvl"] = 98,
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuests"] = {  },	-- 
+					})),
 				}),
 				n(-16, { 	-- Rares
 					n(50345, { 	-- Alit
@@ -980,10 +1273,10 @@ _.Zones =
 						dr(01.2, i(7418)),	-- Phalanx Breastplate
 						dr(01.1, i(7446)),	-- Sentinel Cloak					
 					}), 
---					n(111122, { -- Large Vile Slime	}),
+--					n(111122, {	-- Large Vile Slime	}),
 				}),
 				n(-2, {	-- Vendors
-					n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
+					a(n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
 						i(19216, {	-- Pattern: Argent Boots
 							i(19056),	-- Argent Boots
 						}),
@@ -1002,7 +1295,7 @@ _.Zones =
 						i(19205, {	-- Plans: Gloves of the Dawn
 							i(19057),	-- Gloves of the Dawn
 						}),
-					}),
+					})),
 					a(n(12942, {	-- Leonard Porter <Leatherworking Supplies>
 						i(15741, {	-- Pattern: Stormshroud Pants
 							i(15057),	-- Stormshroud Pants
@@ -1019,7 +1312,7 @@ _.Zones =
 							i(12775),	-- Hugh Thorium Battleaxe
 						}),
 						i(12819, {	-- Plans: Ornate Thorium Handaxe
-							i(12773), -- Ornate Thorium Handaxe
+							i(12773),	-- Ornate Thorium Handaxe
 						}),
 						i(12703, {	-- Plans: Storm Gauntlets
 							i(12632),	-- Storm Gauntlets

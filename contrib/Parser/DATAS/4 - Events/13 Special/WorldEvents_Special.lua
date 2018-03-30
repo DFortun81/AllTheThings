@@ -111,7 +111,7 @@ _.WorldEvents =
 					i(156682, {	-- Otherworldy Satchel of Helpful Goods
 						i(51969),	-- Enumerated Shoulders*
 						i(51972),	-- Enumerated Bracers
-						i(51970),	-- Enumerated Gloves
+						i(51970),	-- Enumerated Gloves*
 						i(51967),	-- Enumerated Sandals*
 						i(51961),	-- Vigorous Shoulderguards
 						i(51962),	-- Vigorous Bracers
@@ -122,7 +122,8 @@ _.WorldEvents =
 						i(51983),	-- Stalwart Shoulderguards
 						i(51989),	-- Stalwart Bands
 						i(51987),	-- Stalwart Grips
-						i(51993),	-- Turbulent Cloak*						
+						i(51993),	-- Turbulent Cloak*
+						i(51995),	-- Turbulent Necklace*
 					}),
 					i(156688, {	-- Icy Satchel of Helpful Goods
 						i(113685),	-- Coldblood Longcloak
