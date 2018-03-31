@@ -223,6 +223,7 @@ AllTheThings.Locales.enUS = {
 		[51] = GetItemSubClassInfo(8,1),						-- Neck
 		[52] = GetItemSubClassInfo(8,10),						-- Finger
 		[53] = INVTYPE_TRINKET,									-- Trinket
+		[54] = GetItemSubClassInfo(3,11),						-- Relic
 
 		-- "Non-Equipment Types"
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
