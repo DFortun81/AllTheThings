@@ -5636,7 +5636,7 @@ local function CreateSettingsMenu()
 	
 	
 		lastFilter = weaponFilters;
-		for i, filter in ipairs({ 27, 28, 29, 30, 31, 32, 33, 34, 53 }) do
+		for i, filter in ipairs({ 27, 28, 29, 31, 32, 33, 34, 54, 53 }) do
 			local itemFilter = CreateFrame("CheckButton", weaponFilters:GetName() .. filter, self, "InterfaceOptionsCheckButtonTemplate");
 			self.filterList[filter] = itemFilter;
 			itemFilter:SetPoint("LEFT", self, "LEFT", 420, 0);
