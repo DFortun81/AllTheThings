@@ -47,11 +47,21 @@ _.WorldDrops =
 					i(118814),	-- Berserker's Windwrap
 					i(118815),	-- Double Layered Frostboar Cloak
 					i(118816),	-- Gorenscale Mesh Cloak
-					i(119343),	-- Eye-Blinder Greatcloak
-					i(119344),	-- Magic-Breaker Cape
-					i(119345),	-- Milenah's Intricate Cloak
-					i(119346),	-- Kyu-Sy's Tarflame Doomcloak
-					i(119347),	-- Gill's Glorious Windcloak
+					modID(3, i(119343)),	-- Eye-Blinder Greatcloak
+					modID(5, i(119343)),	-- Eye-Blinder Greatcloak
+					modID(6, i(119343)),	-- Eye-Blinder Greatcloak
+					modID(3, i(119344)),	-- Magic-Breaker Cape
+					modID(5, i(119344)),	-- Magic-Breaker Cape
+					modID(6, i(119344)),	-- Magic-Breaker Cape
+					modID(3, i(119345)),	-- Milenah's Intricate Cloak
+					modID(5, i(119345)),	-- Milenah's Intricate Cloak
+					modID(6, i(119345)),	-- Milenah's Intricate Cloak
+					modID(3, i(119346)),	-- Kyu-Sy's Tarflame Doomcloak
+					modID(5, i(119346)),	-- Kyu-Sy's Tarflame Doomcloak
+					modID(6, i(119346)),	-- Kyu-Sy's Tarflame Doomcloak
+					modID(3, i(119347)),	-- Gill's Glorious Windcloak
+					modID(5, i(119347)),	-- Gill's Glorious Windcloak
+					modID(6, i(119347)),	-- Gill's Glorious Windcloak
 				}),
 				n(-323, { -- Chest
 					i(118819),	-- Ariya's Auspicious Robe
