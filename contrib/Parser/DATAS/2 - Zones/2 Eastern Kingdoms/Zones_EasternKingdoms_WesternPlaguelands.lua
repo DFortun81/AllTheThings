@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(22, {		-- Western Plaguelands
 			["g"] = {
-				n(-3, { 	-- Holidays
+				n(- 3, {	-- Holidays
 					n(-47, {    	-- Lunar Festival
 						["g"] = {
 							n(-17, { 	-- Quests
@@ -114,7 +114,7 @@ _.Zones =
 					}),	
 --]]					
 				}),				
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(456), 	-- Blighthawk
 					p(648), 	-- Huge Toad
@@ -122,7 +122,7 @@ _.Zones =
 					p(379), 	-- Squirrel
 					p(420), 	-- Toad
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qh(27089, {	-- Ace in the Hole
 						["g"] = {
 							i( 62217),	-- Minuteman Pike
@@ -133,16 +133,12 @@ _.Zones =
 						["qg"] = 44451,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27087 },	-- Lindsay Ravensun, Revealed
 					}),
-					
-					
 					q( 26954, {	-- A Different Approach
 						["g"] = {
 						},
 						["qg"] = 44456,	-- Adrine Towhide
 						["sourceQuests"] = { 26953 },	-- Zen'kiki, the Druid
 					}),
-
-					
 					q( 27012, {	-- A Gnoll's Resolve
 						["g"] = {
 							i(62177),	-- Kelly's Booties
@@ -152,24 +148,49 @@ _.Zones =
 						["qg"] = 44472,	-- Kelly Dumah
 						["sourceQuests"] = { 27013 },	-- Too Close for Comfort
 					}),
-					
-					
+					qa(27206, {	-- Alas, Andorhal (awarded "The Second Battle for Andorhal" criteria)
+						["g"] = {
+							i( 62222),	-- Chillwind Pauldrons
+							i( 62221),	-- Chillwind Legguards
+							i( 62220),	-- Chillwind Tunic
+							i( 62219),	-- Chillwind Staff
+							i( 62218),	-- Chillwind Dagger
+							i(131656),	-- Chillwind Breeches
+						},
+						["qg"] = 44453,	-- Thassarian
+						["sourceQuests"] = { 27204 },	-- Aradne
+					}),
+					o(205258, {	-- Broken Weapons Crate	
+						qa(27171, {	-- Ambushed!
+							["g"] = {
+								i(62167),	-- Cloak of the Unrestful
+								i(62166),	-- Spiritual Barrier
+								i(62165),	-- Cryptkeeper's Belt
+							},
+							["sourceQuests"] = { 27170 },	-- The Abandoned Crypt
+						}),
+					}),
+					qa(27167, {	-- A Mighty Hunger
+						["g"] = {
+							i( 62159),	-- Bear Hunter's Rifle
+							i( 62158),	-- Homestead Helm
+							i( 62157),	-- Farmer's Vest
+							i(131646),	-- Leather Stitched Chain Tunic
+						},
+						["qg"] = 45165,	-- Thurman Grant
+					}),
 					q( 27002, {	-- An Audience with the Highlord
 						["g"] = {
 						},
 						["qg"] = 11616,	-- Nathaniel Dumah
 						["sourceQuests"] = { 27001 },	-- This Means WAR (Wild Arachnid Roundup)
 					}),
-					
-					
 					qh(27090, {	-- Andorhal, Once and For All
 						["g"] = {
 						},
 						["qg"] = 45129,	-- Lurid
 						["sourceQuests"] = { 27089 },	-- Ace in the Hole
 					}),
-					
-					
 					q( 26999, {	-- A New Era for the Plaguelands
 						["g"] = {
 							i( 62174),	-- Bracers of the Returning Wild
@@ -178,42 +199,77 @@ _.Zones =
 							i(131630),	-- Treads of Renewed Growth
 						},
 						["qg"] = 44454,	-- Field Agent Kaartish
-						["breadcrumbQuestID"] = { 26952 },	-- The Menders' Stead
+						["breadcrumbQuestID"] = { 27175, 27233, 26952 },	-- The Menders' Stead (A/A/H versions)
 					}),
-					
-					
+					qa(27204, {	-- Aradne
+						["g"] = {
+						},
+						["qg"] = 44453,	-- Thassarian
+						["sourceQuests"] = { 27202, 27201 },	-- Brother Against Brother & Val'kyr Incursion
+					}),
+					qa(27164, {	-- Araj the Summoner
+						["g"] = {
+						},
+						["qg"] = 44467,	-- Lang Loosegrip
+						["sourceQuests"] = { 27161 },	-- The Endless Flow
+					}),
 					qh(26925, {	-- Araj the Summoner
 						["g"] = {
 						},
 						["qg"] = 44462,	-- Jearl Donald
 						["sourceQuests"] = { 26922 },	-- The Endless Flow
 					}),
-
-					
+					qa(27199, {	-- Ashes to Ashes
+						["g"] = {
+						},
+						["qg"] = 44453,	-- Thassarian
+						["sourceQuests"] = { 27197 },	-- The Battle Resumes!
+					}),
 					qh(27086, {	-- Ashes to Ashes
 						["g"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["sourceQuests"] = { 27083 },	-- The Battle Resumes!
 					}),
-					
-					
 					q( 27154, {	-- Bagging Bisp
 						["g"] = {
 						},
 						["qg"] = 45149,	-- Outfitter Mendelev
 						["sourceQuests"] = { 27153 },	-- The Good People of Hearthglen
 					}),
-					
-					
+					qa(27202, {	-- Brother Against Brother
+						["g"] = {
+							i( 62213),	-- Minuteman Pike
+							i( 62212),	-- Quelling Bracers
+							i( 62211),	-- Shoulderwraps of the Enthralled
+							i(131655),	-- Bracer of Grievance
+						},
+						["qg"] = 45165,	-- Thurman Grant
+						["sourceQuests"] = { 27205 },	-- The Depravity of the Forsaken
+					}),
+					qa(27163, {	-- Brute Strength
+						["g"] = {
+						},
+						["qg"] = 44453,	-- Thassarian
+						["sourceQuests"] = { 27159, 27160 },	-- Scourge First... Horde Later & War Machines
+					}),
 					qh(27117, {	-- Brute Strength
 						["g"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["sourceQuests"] = { 26921, 26923 },	-- Scourge First... Alliance Later & War Machines (may not require SF...AL)
 					}),
-					
-					
+					qa(27174, {	-- Combat Training (awarded "A Temporary Peace" criteria)
+						["g"] = {
+							i( 62184),	-- Abominable Shoulderguards
+							i( 62183),	-- Gory Gloves
+							i( 62182),	-- Training Leggings
+							i( 62181),	-- Zombie Shotgun
+							i(131647),	-- Faded Mail Gauntlets
+						},
+						["qg"] = 45165,	-- Thurman Grant
+						["sourceQuests"] = { 27173 },	-- This Is Our Army
+					}),
 					qh(26938, {	-- Combat Training (awarded "A Temporary Peace" criteria)
 						["g"] = {
 							i( 62188),	-- Abominable Shoulderguards
@@ -224,70 +280,57 @@ _.Zones =
 						},
 						["sourceQuests"] = { 26937 },	-- When Death is Not Enough
 					}),
-					
-					
 					q( 27054, {	-- Desperate Acts
 						["g"] = {
 						},
 						["qg"] = 44454,	-- Field Agent Kaartish
 						["sourceQuests"] = { 27057 },	-- Return to the Stead
 					}),
-					
-					
 					q( 27157, {	-- Drudges... <Sigh>
 						["g"] = {
 						},
 						["qg"] = 45157,	-- Lieutenant Myner
 						["sourceQuests"] = { 27156 },	-- It's About Time!
 					}),
-					
-					
 					q( 27053, {	-- Gahrron's Withering Cauldron
 						["g"] = {
 						},
 						["qg"] = 44454,	-- Field Agent Kaartish
 						["sourceQuests"] = { 27002 },	-- An Audience with the Highlord
 					}),
-					
-					
+					qa(27166, {	-- Go Fletch!
+						["g"] = {
+						},
+						["qg"] = 10838,	-- Commander Ashlam Valorfist
+					}),
 					q( 26956, {	-- I Ain't Sayin' You a Gourd-Digger...
 						["g"] = {
 						},
 						["qg"] = 44457,	-- Selyria Groenveld
 					}),
-					
-					
 					q( 27683, {	-- Into the Woods
 						["g"] = {
 						},
 						["qgs"] = { 10840, 44462, 44456 } ,	-- Argent Office Pureheart, Jearl Donald, Adrine Towhide
 						["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
 					}),
-
-					
 					q( 27156, {	-- It's About Time!
 						["g"] = {
 						},
 						["qg"] = 45157,	-- Lieutenant Myner
 					}),
-					
-					
 					q( 27000, {	-- Learning the Ropes
 						["g"] = {
 						},
 						["qg"] = 11616,	-- Nathaniel Dumah
 						["breadcrumbQuestID"] = { 26935 },	-- Northridge Lumber Mill
 					}),
-					
-					
 					qh(27087, {	-- Lindsay Ravensun, Revealed
 						["g"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["sourceQuests"] = { 27086, 27085, 27084 },	-- Ashes to Ashes, Supporting the Troops, The Farmers' Militia
 					}),
-					
-					
 					q( 27017, {	-- Memories from a Lost Past
 						["g"] = {
 							i( 62197),	-- Gahrron's Shoulderguard
@@ -299,8 +342,6 @@ _.Zones =
 						["qg"] = 44458,	-- Del Gahrron
 						["sourceQuests"] = { 26957 },	-- The Long Trip Home
 					}),
-					
-					
 					q( 26935, {	-- Northridge Lumber Mill
 						["g"] = {
 						},
@@ -308,16 +349,12 @@ _.Zones =
 						["sourceQuests"] = { 26999 },	-- A New Era for the Plaguelands
 						["isBreadcrumb"] = true,	-- for "Learning the Ropes"
 					}),
-					
-					
 					q( 27011, {	-- Redpine Thievery
 						["g"] = {
 						},
 						["qg"] = 44472,	-- Kelly Dumah
 						["sourceQuests"] = { 27013 },	-- Too Close for Comfort
 					}),
-					
-					
 					o(176392, {	-- Scourge Cauldron
 						q(27057, {	-- Return to the Stead
 							["g"] = {
@@ -325,8 +362,18 @@ _.Zones =
 							["sourceQuests"] = { 27053 },	-- Gahrron's Withering Cauldron
 						}),
 					}),
-					
-					
+					qa(27162, {	-- Scholomancer
+						["g"] = {
+							i( 62151),	-- Belt of Lingering Corruption
+							i( 62150),	-- Elimination Bracers
+							i( 62149),	-- Burden of Time
+							i( 62148),	-- Gandling's Gloves
+							i(131644),	-- Armguards of Binding
+							i(131645),	-- Shoulderguard of Timeless Restraint
+						},
+						["qg"] = 44453,	-- Thassarian
+						["sourceQuests"] = { 27159, 27160 },	-- Scourge First... Horde Later & War Machines
+					}),
 					qh(26924, {	-- Scholomancer
 						["g"] = {
 							i( 62155),	-- Belt of Lingering Corruption
@@ -337,18 +384,20 @@ _.Zones =
 							i(131621),	-- Shoulderguard of Timeless Restraint
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
-						["sourceQuests"] = { 26921, 26923 },	-- Scourge First... Alliance Later & War Machines (may not require SF...AL)
+						["sourceQuests"] = { 26921, 26923 },	-- Scourge First... Alliance Later & War Machines
 					}),
-					
-					
 					qh(26921, {	-- Scourge First... Alliance Later
 						["g"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["breadcrumbQuestID"] = { 28575 },	-- Warchief's Command: Western Plaguelands!
 					}),
-
-					
+					qa(27159, {	-- Scourge First... Horde Later
+						["g"] = {
+						},
+						["qg"] = 44453,	-- Thassarian
+						["breadcrumbQuestID"] = { 28576 },	-- Hero's Call: Western Plaguelands!
+					}),
 					q( 27055, {	-- Students of Krastinov
 						["g"] = {
 							i( 62201),	-- Kaartish's Sword
@@ -358,8 +407,17 @@ _.Zones =
 						},
 						["sourceQuests"] = { 27054 },	-- Desperate Acts
 					}),
-					
-					
+					qa(27198, {	-- Supporting the Troops
+						["g"] = {
+							i( 62204),	-- Gloves of the Able
+							i( 62203),	-- Belt of the Unafraid
+							i( 62202),	-- Bracers of Envy
+							i(131653),	-- Gloves of Approaching Victory
+							i(131654),	-- Belt of Proficiency
+						},
+						["qg"] = 44467,	-- Lang Loosegrip
+						["sourceQuests"] = { 27197 },	-- The Battle Resumes!
+					}),
 					qh(27085, {	-- Supporting the Troops
 						["g"] = {
 							i( 62208),	-- Gloves of the Able
@@ -371,53 +429,82 @@ _.Zones =
 						["qg"] = 44462,	-- Jearl Donald
 						["sourceQuests"] = { 27083 },	-- The Battle Resumes!
 					}),
-					
-
 					q( 27151, {	-- Taelan Fordring's Legacy
 						["g"] = {
 						},
 						["qg"] = 45147,	-- Daria L'Rayne
 						["sourceQuests"] = { 27002 },	-- An Audience With the Highlord
 					}),
-					
-					
+					qa(27170, {	-- The Abandoned Crypt
+						["g"] = {
+						},
+						["qg"] = 1854,	-- High Priest Thel'danis
+						["sourceQuests"] = { 27169 },	-- Uther's Blessing
+					}),
+					qa(27158, {	-- The Battle for Andorhal
+						["g"] = {
+						},
+						["qg"] = 10838,	-- Commander Ashlam Valorfist
+						["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
+					}),
+					qa(27197, {	-- The Battle Resumes!
+						["g"] = {
+						},
+						["qg"] = 45012,	-- Durnt Brightfalcon
+						["sourceQuests"] = { 27174 },	-- Combat Training
+					}),
 					qh(27083, {	-- The Battle Resumes!
 						["g"] = {
 						},
 						["qg"] = 45013,	-- Damion Steel
 						["sourceQuests"] = { 26938 },	-- Combat Training
 					}),
-					
-					
+					qa(27205, {	-- The Depravity of the Forsaken
+						["g"] = {
+						},
+						["qg"] = 44453,	-- Thassarian
+						["sourceQuests"] = { 27199, 27198 },	-- Ashes to Ashes & Supporting the Troops
+					}),
+					qa(27161, {	-- The Endless Flow
+						["g"] = {
+						},
+						["qg"] = 44467,	-- Lang Loosegrip
+					}),
 					qh(26922, {	-- The Endless Flow
 						["g"] = {
 						},
 						["qg"] = 44462,	-- Jearl Donald
 					}),
-				
-				
 					qh(27084, {	-- The Farmers' Militia
 						["g"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["sourceQuests"] = { 27083 },	-- The Battle Resumes!
 					}),
-				
-				
 					q( 27153, {	-- The Good People of Hearthglen
 						["g"] = {
 						},
 						["sourceQuests"] = { 27152 },	-- Unusual Behavior... Even For Gnolls
 					}),
-				
-				
 					q( 26957, {	-- The Long Trip Home
 						["g"] = {
 						},
 						["qg"] = 44905,	-- 
 					}),
-				
-				
+					qa(27175, {	-- The Menders' Stead
+						["g"] = {
+						},
+						["qg"] = 10840,	-- Argent Officer Pureheart
+						["sourceQuests"] = { 27168 },	-- Those That Couldn't Let Go
+						["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
+					}),
+					qa(27233, {	-- The Menders' Stead
+						["g"] = {
+						},
+						["qg"] = 45165,	-- Thurman Grant
+						["sourceQuests"] = { 27174 },	-- Combat Training
+						["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
+					}),
 					qh(27144, {	-- The Reckoning (awarded "The Second Battle for Andorhal" criteria)
 						["g"] = {
 							i( 62227),	-- Pauldrons of Andorhal
@@ -430,8 +517,18 @@ _.Zones =
 						["qg"] = 44451,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27090 },	-- Andorhal, Once and For All
 					}),
-				
-				
+					qa(27172, {	-- The Writhing Haunt
+						["g"] = {
+						},
+						["qg"] = 10838,	-- Commander Ashlam Valorfist
+						["sourceQuests"] = { 27171 },	-- Ambushed!
+					}),
+					qa(27173, {	-- This Is Our Army
+						["g"] = {
+						},
+						["qg"] = 45165,	-- Thurman Grant
+						["sourceQuests"] = { 27172 },	-- The Writhing Haunt
+					}),
 					q( 27001, {	-- This Means WAR (Wild Arachnid Roundup)
 						["g"] = {
 							i(62179),	-- Spider Frier
@@ -440,15 +537,17 @@ _.Zones =
 						["qg"] = 11616,	-- Nathaniel Dumah
 						["sourceQuests"] = { 27000 },	-- Learning the Ropes
 					}),
-				
-				
+					qa(27168, {	-- Those That Couldn't Let Go
+						["g"] = {
+						},
+						["qg"] = 11053,	-- High Priestess MacDonnell
+						["sourceQuests"] = { 27167, 27166 },	-- A Mighty Hunger & Go Fletch!
+					}),
 					q( 27013, {	-- Too Close for Comfort
 						["g"] = {
 						},
 						["qg"] = 44472,	-- Kelly Dumah
 					}),
-				
-				
 					q( 27155, {	-- Turning Yourself In (awarded "The Menders' Stead" criteria and overall "Western Plaguelands Quests" achievement)
 						["g"] = {
 							i(62191),	-- Highlord's Favor
@@ -456,23 +555,46 @@ _.Zones =
 						},
 						["sourceQuests"] = { 27154 },	-- Bagging Bisp
 					}),
-				
-				
 					q( 27152, {	-- Unusual Behavior... Even For Gnolls
 						["g"] = {
 						},
 						["sourceQuests"] = { 27151 },	-- Taelan Fordring's Legacy
 					}),
-				
-				
+					qa(27169, {	-- Uther's Blessing
+						["g"] = {
+						},
+						["qg"] = 10838,	-- Commander Ashlam Valorfist
+						["sourceQuests"] = { 27167, 27166 },	-- A Mighty Hunger & Go Fletch!
+					}),
+					qa(27201, {	-- Val'kyr Incursion
+						["g"] = {
+						},
+						["qg"] = 44453,	-- Thassarian
+						["sourceQuests"] = { 27205 },	-- The Depravity of the Forsaken
+					}),
+					qa(27165, {	-- Victory, For Now (awarded "The First Battle for Andorhal" criteria)
+						["g"] = {
+						},
+						["qg"] = 44453,	-- Thassarian
+						["sourceQuests"] = { 27164, 27163, 27162 },	-- Araj the Summoner, Brute Strength, & Scholomancer
+					}),
 					qh(26926, {	-- Victory, For Now (awarded "The First Battle for Andorhal" criteria)
 						["g"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["sourceQuests"] = { 26925, 27117, 26924 },	-- Araj the Summoner, Brute Strength, & Scholomancer
 					}),
-				
-				
+					qa(27160, {	-- War Machines
+						["g"] = {
+							i( 62143),	-- Gut Opener Gloves
+							i( 62142),	-- Behemoth Boots
+							i( 62141),	-- Belt of the Laconic
+							i( 62140),	-- Dried-Up Bracers
+							i(131642),	-- Putrid Mail Boots
+							i(131643),	-- Succinct Sash
+						},
+						["qg"] = 44471,	-- Lurid
+					}),
 					qh(26923, {	-- War Machines
 						["g"] = {
 							i( 62147),	-- Gut Opener Gloves
@@ -484,16 +606,12 @@ _.Zones =
 						},
 						["qg"] = 44466,	-- Lindsay Ravensun
 					}),
-				
-				
 					qh(26937, {	-- When Death is Not Enough
 						["g"] = {
 						},
 						["qg"] = 44466,	-- Lindsay Ravensun
 						["sourceQuests"] = { 26979 },	-- Strange New Faces
 					}),
-				
-					
 					q( 26955, {	-- Zen'Kiki and the Cultists
 						["g"] = {
 							i( 62194),	-- Breastplate of the Patient
@@ -503,106 +621,12 @@ _.Zones =
 						["qg"] = 44456,	-- Adrine Towhide
 						["sourceQuests"] = { 27057 },	-- Return to the Stead
 					}),
-				
-				
 					q( 26953, {	-- Zen'Kiki, the Druid
 						["g"] = {
 						},
 						["qg"] = 44456,	-- Adrine Towhide
 					}),
-				
-				
---[[
-						["g"] = {
-						},
-						["qg"] = ,	-- 
-						["sourceQuests"] = {  },	-- 
-					}),
---]]
 
-
-					qg(45165, qa(27167, {	-- A Mighty Hunger
-						i( 62159),
-						i( 62158),
-						i( 62157),
-						i(131646),
-					})),
-					qg(44453, qa(27206, {	-- Alas, Andorhal
-						i( 62222),
-						i( 62221),
-						i( 62220),
-						i( 62219),
-						i( 62218),
-						i(131656),
-					})),
-					o(205258, {	-- Broken Weapons Crate	
-						qa(27171, {	-- Ambushed!
-							i(62167),
-							i(62166),
-							i(62165),
-						}),
-					}),
-					qa(27204),	-- Aradne
-					qa(27164),	-- Araj the Summoner
-					qa(27199),	-- Ashes to Ashes
-					qg(45165, qa(27202, {	-- Brother Against Broher
-						i( 62213),
-						i( 62212),
-						i( 62211),
-						i(131655),
-					})),
-					qa(27163),	-- Brute Strength
-					qg(45165, qa(27174, {	-- Combat Training
-						i( 62184),
-						i( 62183),
-						i( 62182),
-						i( 62181),
-						i(131647),
-					})),
-					qa(27166),	-- Go Fletch!
-					qa(11882),	-- Playing with Fire
-					qg(44453, qa(27162, {	-- Scholomancer
-						i( 62151),
-						i( 62150),
-						i( 62149),
-						i( 62148),
-						i(131644),
-						i(131645),
-					})),
-					qa(27159),	-- Scourge First... Horde Later
-					qg(44467, qa(27198, {	-- Supporting the Troops
-						i( 62204),
-						i( 62203),
-						i( 62202),
-						i(131653),
-						i(131654),
-					})),
-					qa(27170),	-- The Abandoned Crypt
-					qa(27158),	-- The Battle for Andorhal
-					qa(27197),	-- The Battle Resumes!
-					qa(27205),	-- The Depravity of the Forsaken
-					qa(27161),	-- The Endless Flow
-					qa(27233),	-- The Menders' Stead
-					qa(27175),	-- The Menders' Stead
-					qa(27172),	-- The Writhing Haunt
-					qa(27173),	-- This Is Our Army
-					qa(27168),	-- Those That Couldn't Let Go
-					qa(27169),	-- Uther's Blessing
-					qa(27201),	-- Val'kyr Incursion					
-					qa(27165),	-- Victory, For Now
-					qg(44471, qa(27160, {	-- War Machines
-						i( 62143),
-						i( 62142),
-						i( 62141),
-						i( 62140),
-						i(131642),
-						i(131643),
-					})),
-					qh(28575),	-- Warchief's Command: Western Plaguelands!
-					
-					
-					
-					
 -- CLASS HALL QUESTS
 					qart(q(43153, {	-- An Eye for a Scepter
 						["g"] = {
@@ -653,7 +677,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	-- 
 					})),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(50345, { 	-- Alit
 						dr(12.0, i(7458)),	-- Knight's Boots
 						dr(04.0, i(9845)),	-- Conjurer's Shoes
@@ -1275,27 +1299,30 @@ _.Zones =
 					}), 
 --					n(111122, {	-- Large Vile Slime	}),
 				}),
-				n(-2, {	-- Vendors
-					a(n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
-						i(19216, {	-- Pattern: Argent Boots
-							i(19056),	-- Argent Boots
-						}),
-						i(19217, {	-- Pattern: Argent Shoulders
-							i(19059),	-- Argent Shoulders
-						}),
-						i(19328, {	-- Pattern: Dawn Treaders
-							i(19052),	-- Dawn Treaders
-						}),
-						i(19329, {	-- Pattern: Golden Mantle of the Dawn
-							i(19058),	-- Golden Mantle of the Dawn
-						}),
-						i(19203, {	-- Plans: Girdle of the Dawn
-							i(19051),	-- Girdle of the Dawn
-						}),
-						i(19205, {	-- Plans: Gloves of the Dawn
-							i(19057),	-- Gloves of the Dawn
-						}),
-					})),
+				n(- 2, {	-- Vendors
+					n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
+						["g"] = {
+							i(19216, {	-- Pattern: Argent Boots
+								i(19056),	-- Argent Boots
+							}),
+							i(19217, {	-- Pattern: Argent Shoulders
+								i(19059),	-- Argent Shoulders
+							}),
+							i(19328, {	-- Pattern: Dawn Treaders
+								i(19052),	-- Dawn Treaders
+							}),
+							i(19329, {	-- Pattern: Golden Mantle of the Dawn
+								i(19058),	-- Golden Mantle of the Dawn
+							}),
+							i(19203, {	-- Plans: Girdle of the Dawn
+								i(19051),	-- Girdle of the Dawn
+							}),
+							i(19205, {	-- Plans: Gloves of the Dawn
+								i(19057),	-- Gloves of the Dawn
+							}),
+						},
+						["description"] = "To view this vendor's shop, you need to be at least Honored with Argent Dawn.  Although this vendor is in an Alliance area, Horde players may still purchase from this NPC provided they have the required reputation.",
+					}),
 					a(n(12942, {	-- Leonard Porter <Leatherworking Supplies>
 						i(15741, {	-- Pattern: Stormshroud Pants
 							i(15057),	-- Stormshroud Pants
