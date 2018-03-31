@@ -1538,12 +1538,12 @@ _.Zones =
 										["classes"] = {1},
 										["dr"] = 100,
 										["groups"] = {
-											desc(q(46229), "Honor in Remembrance"),	-- Valarjar Lore Unlock 1
-											desc(q(46230), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 2
-											desc(q(46231), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 3
-											desc(q(46232), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 4
-											desc(q(46233), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 5
-											desc(q(46234), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 6
+											desc(q(46229), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 1
+											desc(q(46230), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 2
+											desc(q(46231), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 3
+											desc(q(46232), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 4
+											desc(q(46233), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 5
+											desc(q(46234), "Volund's Folly"),	-- Valarjar Lore Unlock 6
 										}
 									}),
 								}
