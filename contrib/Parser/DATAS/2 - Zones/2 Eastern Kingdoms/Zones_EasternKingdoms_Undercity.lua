@@ -139,8 +139,8 @@ _.Zones =
 					p(450),		-- Maggot
 					p(454),		-- Undercity Rat
 				}),
---[[				
 				n(-17, { 	-- Quests
+--[[
 					q(24635),	-- A Cloudlet of Classy Cologne
 					qh( 38397),	-- A Curious Oddity
 					qh( 29431),	-- A Friend in Need
@@ -163,7 +163,8 @@ _.Zones =
 					q(8648),	-- Darkcore the Elder
 --]]
 					qdg(qg(10181, qh(31037))),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
---[[					qh(  9812),	-- Envoy to the Horde
+--[[
+					qh(  9812),	-- Envoy to the Horde
 					qh(  9621),	-- Envoy to the Horde
 					qh( 29333),	-- Escargot A Go-Go
 					qh( 29317),	-- Fish Head
@@ -294,7 +295,19 @@ _.Zones =
 						qh(27721),	-- Warchief's Command: Mount Hyjal!	
 						qh(27718),	-- Warchief's Command: Vashj'ir!
 					}),
+--]]
+					nlq({     -- Legacy Quests 
+						qh(1394, {	-- Final Passage
+							un(34, i(6804)),	-- Windstorm Hammer
+							un(34, i(6806)),	-- Dancing Flame
+						}),
+						qh(1164, {	-- To Steal From Thieves
+							un(34, i(4443)),	-- Grim Pauldrons
+							un(34, i(2032)),	-- Gallan Cuffs
+						}),
+					}),
 				}),
+				
 --]]				
 				n(-16, { 	-- Rare	
 					o(240623, {	-- Sylvanas' Strongbox

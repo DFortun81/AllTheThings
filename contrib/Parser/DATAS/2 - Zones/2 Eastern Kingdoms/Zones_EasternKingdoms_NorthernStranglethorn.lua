@@ -382,6 +382,24 @@ _.Zones =
 						i(131522),	-- Hauberk of Zul'Mamwe
 						i(131523),	-- Irradiated Faux Croc' Wristguards
 					})),
+					
+					nlq({     -- Legacy Quests
+						qa(204, {	-- Bad Medicine
+							un(34, i(4140)),	-- Palm Frond Mantle
+							un(34, i(4126)),	-- Guerrilla Cleaver
+						}),
+						qa(331, {	-- Report to Doren
+							un(34, i(4139)),	-- Junglewalker Sandals
+							un(34, i(4123)),	-- Frost Metal Pauldrons
+						}),
+						qh(598, {	-- Split Bone Necklace
+							un(34, i(4137)),	-- Darkspear Shoes
+							un(34, i(4136)),	-- Darkspear Boots
+						}),
+						qa(328, {	-- The Hidden Key
+							un(34, i(4122)),	-- Bookmaker's Scepter
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(14487, { 	-- Gluggl

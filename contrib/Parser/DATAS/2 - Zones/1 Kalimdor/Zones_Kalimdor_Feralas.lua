@@ -463,7 +463,17 @@ _.Zones =
 					qg(39407, qh(25383)),	-- Ysondre's Farewell
 					qg(7875, qh(25367)),	-- Zukk'ash Infestation
 					qg(39725, qa(25429)),	-- Zukk'ash Infestation	
---]]					
+--]]
+					nlq({     -- Legacy Quests 
+						qa(1101, {	-- The Crone of the Kraul
+							un(34, i(4197)),	-- Berylline Pads
+							un(34, i(6742)),	-- Stonefist Girdle
+							un(34, i(6725)),	-- Marbled Buckler
+						}),
+						qa(2942, {	-- The Morrow Stone
+							un(34, i(9654)),	-- Cairnstone Silver
+						}),
+					}),
 				}),
 				n(-16, { -- Rares	
 					n(5347, { 		-- Antilus the Soarer

@@ -782,10 +782,30 @@ _.Zones =
 						["qg"] = 2418,	-- Deathguard Samsa
 					}),
 					nlq({ 	-- Legacy Quests
+						qa(504, {	-- Crushridge Warmongers
+							un(34, i(5249)),	-- Burning Silver
+							un(34, i(3763)),	-- Lunar Buckler
+						}),
+						qa(505, {	-- Syndicate Assassins
+							un(34, i(3758)),	-- Crusader Belt
+							un(34, i(3759)),	-- Insulated Sage Gloves
+						}),
+						q( 508, {	-- Taretha's Gift
+							un(34, i(3764)),	-- Mantis Boots
+							un(34, i(3765)),	-- Brigand's Pauldrons
+						}),
+						qh(498, {	-- The Rescue
+							un(34, i(3752)),	-- Grunt Vest
+							un(34, i(3733)),	-- Orcish War Chain
+--							un( 8, i(3734)),	-- Recipe: Big Bear Steak
+						}),
 						qh(1051, { 	-- Vorrel's Revenge
 							i(4643), 	-- Grimsteel Cape
 							i(7750), 	-- Mantle of Woe
 							i(7751), 	-- Vorrel's Boots
+						}),
+						qh(566, {	-- WANTED: Baron Vardus
+							un(34, i(2231)),	-- Inferno Robe
 						}),
 					}),	
 				}),

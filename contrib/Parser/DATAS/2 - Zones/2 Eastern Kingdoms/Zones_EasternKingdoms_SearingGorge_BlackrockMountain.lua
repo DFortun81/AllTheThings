@@ -204,6 +204,12 @@ _.Zones =
 						i(63244),
 						i(63243),
 					}),
+					nlq({     -- Legacy Quests 
+						qh(4450, {	-- Ledger from Tanaris
+							un(34, i(11860)),	-- Charged Lightning Rod
+							un(34, i(11861)),	-- Girdle of Reprisal
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares	
 					n(50876, { 	-- Avis

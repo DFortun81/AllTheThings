@@ -278,12 +278,12 @@ _.Zones =
 					qg(41298, qa(25882)),	-- A Hand at the Ranch
 --]]
 					o(2059, {	-- A Dwarven Corpse
-						qa(26855, { -- A Pilot's Revenge
-							i(57560),
-							i(57566),
-							i(57562),
-							i(57563),
-							i(131612),
+						qa(26855, {	-- A Pilot's Revenge
+							i( 57560),	-- Mangy Claw Mitts
+							i( 57566),	-- Siege Engineer's Belt
+							i( 57562),	-- Hammerfoot's Plate Leggings
+							i( 57563),	-- South Gate Blunderbuss
+							i(131612),	-- Siege Engineer's Waistband
 						}),
 					}),
 --[[
@@ -448,7 +448,16 @@ _.Zones =
 						},
 						["races"] = {7}, -- Gnome
 					})),
---]]					
+--]]				
+					nlq({     -- Legacy Quests 
+						qa(417, {	-- A Pilot's Revenge
+							un(34, i(2218)),	-- Craftsman's Dagger
+							un(34, i(1009)),	-- Compact Hammer
+						}),
+						qa(466, {	-- Search for Incendicite
+							un(34, i(3565)),	-- Beerstained Gloves
+						}),
+					}),
 					
 				}),
 				n(-16, { 	-- Rares	

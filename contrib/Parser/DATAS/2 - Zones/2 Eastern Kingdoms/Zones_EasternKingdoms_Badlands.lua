@@ -259,6 +259,22 @@ _.Zones =
 						i(63152),
 						i(63151),
 					})),
+					nlq({     -- Legacy Quests 
+						q(1137, {	-- News for Fizzle
+							un(34, i(6729)),	-- Fizzle's Zippy Lighter
+							un(34, i(6732)),	-- Gnomish Mechanic's Gloves
+						}),
+						q( 705, {	-- Pearl Diving
+							un(34, i(4086)),	-- Flash Rifle
+							un(34, i(5248)),	-- Flash Wand
+						}),
+						q( 709, {	-- Solution to Doom
+							un(34, i(4746)),	-- Doomsayer's Robe
+						}),
+						q( 716, {	-- Stone Is Better than Cloth
+							un(34, i(4979)),	-- Enchanted Stonecloth Bracers
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(14224, { 	-- 7:XT

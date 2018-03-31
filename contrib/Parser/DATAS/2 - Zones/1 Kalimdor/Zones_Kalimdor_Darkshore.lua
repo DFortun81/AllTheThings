@@ -6,8 +6,8 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(42, {		-- Darkshore
 			["groups"] = {					
-				n(-3, { 	-- Holidays					
-					n(-47, {     -- Lunar Festival
+				n( -3, { 	-- Holidays					
+					n(-47, {    	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								q(8721, {	-- Starweave the Elder			
@@ -23,36 +23,36 @@ _.Zones =
 								}),
 							}),
 						},
-						["achievementID"] = 913, -- To Honor One's Elders
+						["achievementID"] = 913,	-- To Honor One's Elders
 						["u"] = 17,
 					}),
 --[[					
-					n(-50, {     -- Love is in the Air
+					n(-50, {    	-- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1693,    -- Fool For Love
+						["achievementID"] = 1693,   	-- Fool For Love
 						["u"] = 18,
 					}),
-					n(-51, {     -- Noblegarden
+					n(-51, {    	-- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 2798, -- Noble Gardener
+						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-52, {     -- Children's Week
+					n(-52, {    	-- Children's Week
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1793, -- For The Children
+						["achievementID"] = 1793,	-- For The Children
 						["u"] = 20,
 					}),	
 --]]					
-					n(-53, {     -- Midsummer Fire Festival
+					n(-53, {    	-- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								o(187564, {	-- Alliance Bonfire (Loch Modan)
@@ -72,21 +72,21 @@ _.Zones =
 								qg(25962, qa(11882)),	-- Playing with Fire
 							}),
 						},
-						["achievementID"] = 1038, -- The Flame Warden
+						["achievementID"] = 1038,	-- The Flame Warden
 						["u"] = 21,
 					}),
 --[[					
-					n(-56, {     -- Brewfest
+					n(-56, {    	-- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1683, -- Brewmaster
+						["achievementID"] = 1683,	-- Brewmaster
 						["u"] = 24,
 					}),
 					
 --]]
-					n(-58, {     -- Hallow's End
+					n(-58, {    	-- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
 								o(208115, {	-- Candy Bucket
@@ -94,33 +94,33 @@ _.Zones =
 								}),
 							}),
 						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["achievementID"] = 1656,	-- Hallowed Be Thy Name
 						["u"] = 26,
 					}),
 --[[
-					n(-60, {     -- Pilgrim's Bounty
+					n(-60, {    	-- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 3478, -- Pilgrim
+						["achievementID"] = 3478,	-- Pilgrim
 						["u"] = 28,
 					}),
-					n(-61, {     -- Feast of Winter Veil
+					n(-61, {    	-- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1691, -- Merrymaker
+						["achievementID"] = 1691,	-- Merrymaker
 						["u"] = 29,
 					}),		
 --]]				
 				}),					
 				n(-25, { 	-- Pet Battle
-					desc(p(508), "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach."), -- Darkshore Cub
+					desc(p(508), "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach."),	-- Darkshore Cub
 					p(378), 	-- Rabbit
 					p(417), 	-- Rat
-					desc(p(493), "Can commonly be found on the beaches of Darkshore."), -- Shimmershell Snail
+					desc(p(493), "Can commonly be found on the beaches of Darkshore."),	-- Shimmershell Snail
 					p(379), 	-- Squirrel
 					n(63083, {	-- Will Larsons
 						["groups"] = {
@@ -139,7 +139,7 @@ _.Zones =
 							p(43, {		-- Orange Tabby Cat
 								["races"] = {1}		-- Human
 							}),
-							p(72, {      -- Snowshoe Rabbit
+							p(72, {     	-- Snowshoe Rabbit
 								["races"] = {3,7}	-- Gnome, Dwarf
 							}),
 						},
@@ -153,27 +153,171 @@ _.Zones =
 				n(-17, {	-- Quests
 					o(194122, {	-- Buzzbox 723	
 						qa(13554, {	-- A Cure In The Dark
-							i(52619),
-							i(52631),
-							i(52583),
+							["g"] = {
+								i(52619),	-- Ichor Stained Vest
+								i(52631),	-- Befouled Staff
+								i(52583),	-- Rat Hair Vest
+							},
+							["sourceQuests"] = { 13528 },	-- Buzzbox 723
 						}),
 					}),
---					qg(32960, qa(13564)),	-- A Lost Companion
-					qg(32959, qa(13563, {	-- A Love Eternal
-						i(52654),
-						i(52599),
-						i(131286),
-					})),
-					qg(34340, qa(13910, { -- A New Home
+					
+					
+					qa(13564, {	-- A Lost Companion
+						["g"] = {
+						},
+						["qg"] = 32960,	-- Volcor
+						["sourceQuests"] = { 13529 },	-- The Corruption's Source
+					}),
+					
+					
+					qa(13563, {	-- A Love Eternal
+						["g"] = {
+							i( 52654),	-- Forlorn Shield
+							i( 52599),	-- Restless Leggings
+							i(131286),	-- Legguards of Eternal Longing
+						},
+						["qg"] = 32959,	-- Cerellean Whiteclaw
+						["sourceQuests"] = { 13529 },	-- The Corruption's Source
+					}),
+					
+					
+					o(194714, {	-- Disgusting Workbench
+						qa(13831, {	-- A Troubling Prescription
+							["g"] = {
+							},
+							["sourceQuests"] = { 13528 },	-- Buzzbox 723
+						}),
+					}),
+					
+					
+					i(44927, {	-- Corruptor's Master Key
+						qa(13557, {	-- Bearer of Good Fortune
+							["g"] = {
+							},
+							["qgs"] = { 33022, 33020 },	-- Vile Corruptor & Zenn Foulhoof
+						}),
+					}),
+					
+					
+					qa(13521, {	-- Buzzbox 413
+						["g"] = {
+						},
+						["qg"] = 32977,	-- Wizbang Cranktoggle
+						["sourceQuests"] = { 13518, 13522 },	-- The Last Wave of Survivors & Threat from the Water
+					}),
+
+					
+					qa(13528, {	-- Buzzbox 723
+						["g"] = {
+						},
+						["qg"] = 32977,	-- Wizbang Cranktoggle
+						["sourceQuests"] = { 13527 },	-- No Accounting for Taste
+					}),
+					
+					
+					o(194105, {	-- Buzzbox 413
+						qa(13527, {	-- No Accounting for Taste
+							["g"] = {
+							},
+							["sourceQuests"] = { 13521 },	-- Buzzbox 413
+						}),
+					}),
+					
+					
+					qa(13566, {	-- Ritual Materials
+						["g"] = {
+						},
+						["qg"] = 33048,	-- Keeper Karithus
+						["sourceQuests"] = { 13564 },	-- A Lost Companion
+					}),
+
+					
+					qa(13561, {	-- Solace for the Highborne
+						["g"] = {
+						},
+						["qg"] = 33177,	-- Arya Autumnlight
+					}),
+					
+					
+					qa(13520, {	-- The Boon of the Seas
+						["g"] = {
+							i(131823),	-- Diver's Waistband
+							i( 52609),	-- Diver's Cord
+						},
+						["qg"] = 32972,	-- Serendia Oakwhisper
+						["sourceQuests"] = { 13518, 13522 },	-- The Last Wave of Survivors & Threat from the Water
+					}),
+					
+					
+					qa(13529, {	-- The Corruption's Source
+						["g"] = {
+							i( 52595),	-- Goat Hide Vest
+							i( 52621),	-- Woven Plate Leggings
+							i( 52633),	-- Satyr Horn Staff
+							i(131282),	-- Treetender Tunic
+						},
+						["qg"] = 32978,	-- Tharnarium Treetender
+						["sourceQuests"] = { 13528 },	-- Buzzbox 723
+					}),
+					
+					
+					qa(13562, {	-- The Final Flame of Bashal'Aran
+						["g"] = {
+						},
+						["qg"] = 32971,	-- Ranger Glynda Nal'Shea
+						["sourceQuests"] = { 13529 },	-- The Corruption's Source
+					}),
+					
+					
+					qa(13518, {	-- The Last Wave of Survivors
+						["g"] = {
+						},
+						["qg"] = 32973,	-- Dentaria Silverglade
+						["breadcrumbQuestID"] = { 28490 },	-- Hero's Call: Darkshore!
+					}),
+
+					
+					qa(13522, {	-- Threat from the Water
+						["g"] = {
+						},
+						["qg"] = 32971,	-- Ranger Glynda Nal'Shea
+					}),
+				
+				
+					qa(13565, {	-- Twice Removed
+						["g"] = {
+							i( 52629),	-- Naga Plate Bracers
+							i( 52603),	-- Mossy Boots
+							i(131287),	-- Grass-Stained Stompers
+						},
+						["qg"] = 33126,	-- Seraphine
+						["sourceQuests"] = { 13564 },	-- A Lost Companion
+					}),
+				
+				
+					qa(13598, {	-- Unsavory Remedies
+						["g"] = {
+						},
+						["qg"] = 33048,	-- Keeper Karithus
+						["sourceQuests"] = { 13564 },	-- A Lost Companion
+					}),
+				
+				
+--[[
+						["g"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuests"] = {  },	-- 
+					}),
+--]]
+
+
+					qg(34340, qa(13910, {	-- A New Home
 						i(52663),
 						i(52594),
 					})),
---[[
 					qg(33175, qa(13537)),	-- A Taste for Grouper
-					o(194714, {	-- Disgusting Workbench
-						qa(13831),	-- A Troubling Prescription
-					}),
---]]					
 					qg(3694, qa(13542, {	-- Against the Wind
 						i(52593),
 						i(52617),
@@ -183,22 +327,13 @@ _.Zones =
 						i(52652),
 						i(52646),
 					})),
---					qg(34301, qa(13925)),	-- An Ounce of Prevention
+					qg(34301, qa(13925)),	-- An Ounce of Prevention
 					qg(33117, qa(13578, {	-- Aroom's Farewell
 						i(55133),
 						i(52643),
 						i(131290),
 					})),
 					qg(34402, qa(26408)),	-- Ashes in Ashenvale 
---[[					
-					n(33022, {	-- Vile Corruptor (may also drop from 33020 Zenn Foulhoof)
-						i(44927, {	-- Corruptor's Master Key
-							qa(13557),	-- Bearer of Good Fortune
-						}),
-					}),
-					qg(32977, qa(13521)),	-- Buzzbox 413
-					qg(32977, qa(13528)),	-- Buzzbox 723
---]]					
 					qg(6887, qa(13558, {	-- Call Down the Thunder
 						i(52596),
 						i(52622),
@@ -208,11 +343,9 @@ _.Zones =
 						i(52620),
 						i(52634),
 					})),
---[[					
 					qg(32967, qa(13545)),	-- Cleansing the Afflicted
 					qg(6887, qa(13547)),	-- Coaxing the Spirits
 					qg(34301, qa(13881)),	-- Consumed
---]]					
 					qg(32965, qa(13507, {	-- Denying Manpower
 						i(52659),
 						i(52597),
@@ -228,114 +361,83 @@ _.Zones =
 							}),
 						}),
 					}),
---[[					
 					qg(33119, qa(13582)),	-- Elune's Fire
 					qg(33178, qa(13515)),	-- Ending the Threat
 					qg(34340, qa(13909)),	-- Got Some Flotsam?
 					qg(33048, qa(13599)),	-- Grimclaw's Return
---					qg(32912, q(26379)),	-- In Aid of the Refugees (I believe the next quest is the one active in-game - there's no quest info on wowhead for this one)
+					qg(32912, q(26379)),	-- In Aid of the Refugees (I believe the next quest is the one active in-game - there's no quest info on wowhead for this one)
 					qg(32912, qa(13601)),	-- In Aid of the Refugees
 					qg(34301, qa(13885)),	-- In Defense of Darkshore
---]]					
 					qg(32968, qa(13572, {	-- Jadefire Braziers
 						i(52608),
 						i(52624),
 						i(131289),
 					})),
---[[					
 					qg(34402, qa(13892)),	-- Leave No Tracks
 					qg(33166, qa(13940)),	-- Leaving the Dream
 					qg(32987, qa(13573)),	-- Malfurion's Return
 					qg(33091, qa(13902)),	-- Mounting the Offensive
---]]					
 					qg(33117, qa(13576, { 	-- Mutual Aid
 						i(52656),
 						i(52587),
 					})),
---[[					
 					qg(34498, qa(13953)),	-- Naga In Our Midst
-					o(194105, {	-- Buzzbox 413
-						qa(13527),	-- No Accounting for Taste
-					}),
 					qg(32966, qa(13513)),	-- On the Brink
 					qg(33055, qa(13511)),	-- One Bitter Wish
 					qg(11711, qa( 5713)),	-- One Shot. One Kill.
---]]					
 					qg(32932, qa(13523, {	-- Power Over the Tides
 						i(55127),
 						i(52662),
 						i(131281),
 					})),
---[[					
 					qg(33091, qa(13579)),	-- Protector of Ameth'Aran
 					n(32863, {	-- Shatterspear Overseer
 						i(44979, {	-- Overseer's Orders
 							qa(13506),	-- Reason to Worry
 						}),
 					}),
---]]					
 					qg(32959, qa(13570, {	-- Remembrance of Auberdine
 						i(52645),
 						i(52641),
 						i(55132),
-						i(46325),  -- PET! Withers
-						i(156966), -- Cerellean's Spellsword
+						i(46325), 	-- PET! Withers
+						i(156966),	-- Cerellean's Spellsword
 					})),
---[[					
 					qg(32966, qa(13505)),	-- Remnants of the Highborne
-					qg(33048, qa(13566)),	-- Ritual Materials
 					qg(32965, qa(13504)),	-- Shatterspear Laborers
 					qg(34340, qa(13893)),	-- Soggoth and Kronn
-					qg(33177, qa(13561)),	-- Solace for the Highborne
---]]					
 					qg(33117, qa(13580, {	-- Soothing the Elements
 						i(52598),
 						i(55134),
 						i(131291),
 					})),
---[[					
 					qg(33048, qa(13568)),	-- Spirit of the Moonstalker
 					qg(33048, qa(13567)),	-- Spirit of the Stag
 					qg(33048, qa(13597)),	-- Spirit of the Thistle Bear
 					qg(15601, q(8721)),	-- Starweave the Elder
 					qg(34402, qa(13948)),	-- Stepping Up Surveillance
---]]					
 					qg(32963, qa(13512, {	-- Strategic Strikes
 						i(52650),
 					})),
---[[					
 					qg(34342, qa(13912)),	-- Swamped Secrets
 					qg(34340, qa(13907)),	-- Sweeping Clean the Ruins
 					qg(32963, qa(13508)),	-- Swift Response
 					qg(33112, qa(13585)),	-- Sworn to Protect
---]]					
 					qg(34343, qa(13911, {	-- The Absent-Minded Prospector
 						i(52592),
 						i(52600),
 						i(131318),
 					})),
---					qg(33176, qa(13514)),	-- The Ancients' Ire
+					qg(33176, qa(13514)),	-- The Ancients' Ire
 					qg(34422, qa(13897, {	-- The Battle for Darkshore
 						i(52616),
 						i(52655),
 						i(131316),
 					})),
---[[					
 					qg(32967, qa(13544)),	-- The Bear's Blessing
 					qg(32967, qa(13526)),	-- The Bear's Paw
 					qg(33117, qa(13581)),	-- The Blackwood Pledge
---]]					
-					qg(32972, qa(13520, {	-- The Boon of the Seas
-						i(131823),
-						i(52609),
-					})),
-					qg(32978, qa(13529, {	-- The Corruption's Source
-						i(52595),
-						i(52621),
-						i(52633),
-						i(131282),
-					})),
---					qg(34402, qa(13899)),	-- The Darkscale Warlord
+					qg(34402, qa(13899)),	-- The Darkscale Warlord
 					qg(32967, qa(13546, {	-- The Defiler
 						i(52606),
 						i(52647),
@@ -348,26 +450,20 @@ _.Zones =
 						i(52628),
 						i(131315),
 					})),
---					qg(33091, qa(13586)),	-- The Emerald Dream
+					qg(33091, qa(13586)),	-- The Emerald Dream
 					qg(33091, qa(13588, {	-- The Eye of All Storms
 						i(52636),
 						i(52584),
 					})),
---[[					
-					qg(32971, qa(13562)),	-- The Final Flame of Bashal'Aran
 					qg(32963, qa(13590)),	-- The Front Line
 					qg(33091, qa(13575)),	-- The Land Is in Their Blood
---]]					
 					qg(33232, qa(13605, {	-- The Last Refugee
 						i(52586),
 						i(52632),
 						i(52602),
 						i(131293),
 					})),
---[[					
-					qg(32973, qa(13518)),	-- The Last Wave of Survivors
 					qg(33091, qa(13577)),	-- The Last Wildkin
---]]					
 					qg(34041, qa(13844, {	-- The Looting of Althalaxx
 						i(52623),
 						i(52607),
@@ -391,16 +487,14 @@ _.Zones =
 						i(52612),
 						i(131311),
 					})),
---[[					
 					qg(32971, qa(13589)),	-- The Shatterspear Invaders
 					qg(33072, qa(13895)),	-- The Slumbering Ancients
---]]					
 					qg(34403, qa(13898, {	-- The Tides Turn Against Us
 						i(52644),
 						i(52640),
 					})),
 					qg(34342, qa(13918, {	-- The Titans' Terminal
-						i(52653), -- Unidentified Cooking Utensil Not Transmoggable
+						i(52653),	-- Unidentified Cooking Utensil Not Transmoggable
 						i(52657),
 					})),
 					qg(32912, qa(13519, {	-- The Twilight's Hammer
@@ -412,25 +506,15 @@ _.Zones =
 						i(52614),
 						i(131824),
 					})),
---[[					
 					qg(33119, qa(13583)),	-- The Wildkin's Oath
-					qg(32971, qa(13522)),	-- Threat from the Water
 					qg(32987, qa(13543)),	-- Three Hammers to Break
---]]					
 					qg(32964, qa(13510, {	-- Timely Arrival
 						i(52637),
 						i(52613),
 						i(131279),
 					})),
-					qg(33126, qa(13565, { -- Twice Removed
-						i(52629),
-						i(52603),
-						i(131287),
-					})),
---[[					
 					qg(32912, qa(13596)),	-- Twilight Plans
 					qg(34404, qa(13896)),	-- Unearthed Knowledge
-					qg(33048, qa(13598)),	-- Unsavory Remedies
 					qg(32963, qa(13509)),	-- War Supplies
 					qg(33250, qa(13525)),	-- What's Happening to the Blackwood Furbolg? (breadcrumb quest for 13526)
 					n(48764, {	-- Telarius Voidstrider
@@ -438,7 +522,22 @@ _.Zones =
 							qa(28529),	-- Writings of the Void
 						}),
 					}),
---]]					
+					
+					
+					
+					
+					nlq({     -- Legacy Quests 
+						qa( 957, {	-- Bashal'Aran
+							un(34, i(7229)),	-- Explorer's Vest
+							un(34, i(5617)),	-- Vagabond Leggings
+							un(34, i(5604)),	-- Elven Wand
+						}),
+						qa(4763, {	-- The Blackwood Corrupted
+							un(34, i(15204)),	-- Moonstone Wand
+							un(34, i(15202)),	-- Wildkeeper Leggings
+							un(34, i(15203)),	-- Guststorm Legguards
+						}),
+					}),
 				}),	
 				n(-16, { 	-- Rares
 					n(2186, { 		-- Carnivous the Breaker
@@ -571,7 +670,7 @@ _.Zones =
 						dr(	1.4	, i(	68757	)), --	Imbued Pioneer Gloves
 						dr(	1.3	, i(	68760	)), --	Imbued Infantry Gauntlets
 						dr(	1	, i(	6550	)), --	Soldier's Wristguards
-						nld({     -- Legacy
+						nld({    	-- Legacy
 							i(6333),	-- Spikelash Dagger						
 						}),							
 					}), 
@@ -663,7 +762,7 @@ _.Zones =
 						dr(	1	, i(	6541	)), --	Willow Gloves
 					}), 
 				}),
-				n(-2, {	-- Vendors
+				n( -2, {	-- Vendors
 					h(n(33980, {	-- Apothecary Furrows
 						i(46325),	-- Withers
 					})),

@@ -797,6 +797,13 @@ _.Zones =
 					qh( 6142),	-- Clam Bait (REMOVED with Cata per wowhead comment)
 					qg(11626, q(5943)),	-- Gizelton Caravan (REMOVED per wowhead comment)
 					q(1467),	-- Reagents for Reclaimers Inc. (REMOVED per wowhead comments) --]]
+					nlq({     -- Legacy Quests 
+						q(5943, {	-- Gizelton Caravan
+							un(34, i(15691)),	-- Sidegunner Shottie
+							un(34, i(15692)),	-- Kodo Brander
+							un(34, i(15695)),	-- Studded Ring Shield
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(14229, { 		-- Accursed Slitherblade
