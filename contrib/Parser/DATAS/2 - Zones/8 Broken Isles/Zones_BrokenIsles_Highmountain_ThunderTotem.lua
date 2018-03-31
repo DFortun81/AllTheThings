@@ -10,7 +10,7 @@ _.Zones =
 					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 					["groups"] = {
 						title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!",
+							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!\n\nWARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
 							["groups"] = {
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -18,7 +18,7 @@ _.Zones =
 									["itemID"] = 139524,		-- Crumpled Letter
 									--["questID"] = 42333,		-- Crumpled Letter (Quest)
 									["description"] = "Western Highmountain next to Skyhorn.",
-									["qgs"] = {96986}
+									["qgs"] = {96774}
 								},
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)

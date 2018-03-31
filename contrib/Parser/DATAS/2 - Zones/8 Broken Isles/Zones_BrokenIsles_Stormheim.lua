@@ -10,14 +10,14 @@ _.Zones =
 					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 					["groups"] = {
 						title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!",
+							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!\n\nWARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
 							["groups"] = {
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
 									["criteriaID"] = 8, 		-- Crumpled Request (Criteria)
 									["itemID"] = 139531,		-- Crumpled Request
 									--["questID"] = 42058,		-- Crumpled Request (Quest)
-									["description"] = "Vampirates.\n  - Crieve (Unconfirmed)",
+									["description"] = "Vampirates.\n  - Crieve (This was the best farming spot by far.)",
 									["qgs"] = {108030}
 								},
 								{
