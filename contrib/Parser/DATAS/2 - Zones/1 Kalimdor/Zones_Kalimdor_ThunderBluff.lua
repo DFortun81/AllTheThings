@@ -378,7 +378,19 @@ _.Zones =
 						qh(27718),	-- Warchief's Command: Vashj'ir!
 						qh(28545),	-- Warchief's Command: Winterspring!
 					}),	
---]]					
+--]]
+					nlq({     -- Legacy Quests 
+						qh(5088, {	-- Arikara
+							un(34, i(15464)),	-- Brute Hammer
+							un(34, i(15465)),	-- Slingshot Wand
+							un(34, i(15466)),	-- Clink Shield
+						}),
+						qh(1102, {	-- A Vengeful Fate
+							un(34, i(4197)),	-- Berylline Pads
+							un(34, i(6742)),	-- Stonefist Girdle
+							un(34, i(6725)),	-- Marbled Buckler
+						}),
+					}),
 				}),
 				n(-2, {	-- Vendors
 					h(n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>

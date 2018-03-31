@@ -29,6 +29,14 @@ _.Instances =
 								un(34, i(16886)),	-- Outlaw Sabre
 								un(34, i(16887)),	-- Witch's Finger
 							}),
+							qa(1200, {	-- Blackfathom Villainy
+								un(34, i(7001)),	-- Gravestone Scepter
+								un(34, i(7002)),	-- Arctic Buckler
+							}),
+							qh(6561, {	-- Blackfathom Villainy
+								un(34, i(7001)),	-- Gravestone Scepter
+								un(34, i(7002)),	-- Arctic Buckler
+							}),
 							qa(26885, {	-- Knowledge in the Deeps
 								un(34, i(56660)),	-- Dusk-Stained Cloak
 								un(34, i(56658)),	-- Eventide Bow

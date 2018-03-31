@@ -972,6 +972,12 @@ _.Zones =
 						["sourceQuests"] = {13868},
 					})),
 					qg(40895, qa(25607)),	-- Ze Gnomecorder (No Prereq)
+					nlq({     -- Legacy Quests 
+						qa(1044, {	-- Answered Questions
+							un(34, i(5817)),	-- Lunaris Bow
+							un(34, i(5818)),	-- Moonbeam Wand
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(3773, { 	-- Akkrilus

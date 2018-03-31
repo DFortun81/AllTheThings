@@ -372,9 +372,9 @@ _.Zones =
 					qg(, qh(26494)),	-- Mixmaster Jasper
 --]]
 					qg(2500, q(26601, { -- Mok'rash the Cleaver
-						i(61564),
-						i(61566),
-						i(61568),
+						i( 61564),
+						i( 61566),
+						i( 61568),
 						i(131561),
 					})),
 					qg(2634, q(26606, { -- Mukla's Demise
@@ -513,7 +513,18 @@ _.Zones =
 					qg(, q(26631)),	-- Your First Day as a Pirate
 					qg(, qa(26815)),	-- Zanzil's Secret
 					qg(, qh(26533)),	-- Zanzil's Secret	
---]]					
+--]]
+					nlq({     -- Legacy Quests 
+						q( 617, {	-- Akiris by the Bundle
+							un(34, i(4117)),	-- Scorching Sash
+						}),
+						q( 213, {	-- Hostile Takeover
+							un(34, i(4121)),	-- Gemmed Gloves
+						}),
+						qa(611, {	-- The Curse of the Tides
+							un(34, i(4120)),	-- Robe of Crystal Waters
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares
 					o(179697, {	-- Arena Treasure Chest (FFA PvP)

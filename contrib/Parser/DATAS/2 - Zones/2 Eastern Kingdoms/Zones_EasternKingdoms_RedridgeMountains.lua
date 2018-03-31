@@ -353,6 +353,11 @@ _.Zones =
 							un(34, i(1276)),	-- Fire Hardened Buckler
 							un(34, i(6093)),	-- Orc Crusher
 						}),
+						qa(89, {	-- The Everstill Bridge
+							un(34, i(1310)),	-- Smith's Trousers
+							un(34, i(1303)),	-- Bridgeworker's Gloves
+							un(34, i(1304)),	-- Riding Gloves
+						}),
 						qa(122, {		-- Underbelly Scales
 							un(34, i(6092)),	-- Black Whelp Boots 
 							un(34, i(1302)),	-- Black Whelp Gloves

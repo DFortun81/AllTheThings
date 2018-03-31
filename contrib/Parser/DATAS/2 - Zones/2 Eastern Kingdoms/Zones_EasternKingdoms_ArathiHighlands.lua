@@ -534,6 +534,19 @@ _.Zones =
 					qpvp(qg(15021, qh(8121))),	-- Take Four Bases
 					qpvp(qg(14983, qa(8105))),	-- The Battle for Arathi Basin!
 					qpvp(qg(15021, qh(8120))),	-- The Battle for Arathi Basin!		--]]
+					nlq({     -- Legacy Quests 
+						q( 666, {	-- Sunken Treasure
+							un(34, i(4547)),	-- Gnomish Zapper
+							un(34, i(4548)),	-- Servomechanic Sledgehammer
+						}),
+						qa(685, {	-- Wanted! Otto and Falconcrest
+							un(34, i(5247)),	-- Rod of Sorrow
+							un(34, i(4745)),	-- War Rider Bracers
+						}),
+						qa(684, {	-- Wanted! Marez Cowl
+							un(34, i(4744)),	-- Arcane Runed Bracers
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(50891, { 	-- Boros

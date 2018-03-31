@@ -276,6 +276,25 @@ _.Zones =
 						i(157006), -- Old Guard's Bow
 						i(157004), -- Old Guard's Poleaxe 
 					})),
+					nlq({     -- Legacy Quests 
+						qa(275, {	-- Blisters on The Land
+							un(34, i(3558)),	-- Fen Keeper Robe
+							un(34, i(1273)),	-- Forest Chain
+							un(34, i(2263)),	-- Phytoblade
+						}),
+						qa(296, {	-- Ormer's Revenge
+							un(34, i(3493)),	-- Raptor's End
+							un(34, i(3566)),	-- Raptorbane Armor
+							un(34, i(5246)),	-- Excavation Rod
+						}),
+						qa(633, {	-- The Thandol Span
+							un(34, i(4504)),	-- Dwarven Guard Cloak
+							un(34, i(4505)),	-- Swampland Trousers
+						}),
+						qa(299, {	-- Uncovering the Past
+							un(34, i(2913)),	-- Silk Mantle of Gamn
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(50964, { 	-- Chops

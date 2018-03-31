@@ -31,6 +31,13 @@ _.Instances =
 							},
 							["qg"] = 5767,	-- Nalpak
 						}),
+						nlq({     -- Legacy Quests 
+							q(1487, {	-- Deviate Eradication
+								un( 8, i(6476)),	-- Pattern: Deviate Scale Belt
+								un(34, i(8071)),	-- Sizzle Stick
+								un(34, i(6481)),	-- Dagmire Gauntlets
+							}),
+						}),
 					}),
 					n(0, { 		-- Zone Drop		
 						n(3636, { 	-- Deviate Ravager

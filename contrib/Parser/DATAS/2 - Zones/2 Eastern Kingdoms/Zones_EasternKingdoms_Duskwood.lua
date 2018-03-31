@@ -400,7 +400,27 @@ _.Zones =
 --[[					
 					qg(663, qa(26688)),	-- Worgen in the Woods					
 					qg(289, qa(26660)),	-- Zombie Juice
---]]					
+--]]
+					nlq({     -- Legacy Quests 
+						qa(253, {	-- Bride of the Embalmer
+							un(34, i(3560)),	-- Mantle of Honor
+							un(34, i(6223)),	-- Crest of Darkshire
+						}),
+						qa(55, {	-- Morbent Fel
+							un(34, i(2954)),	-- Night Watch Pantaloons
+							un(34, i(2953)),	-- Watch Master's Cloak
+							un(34, i(1282)),	-- Sparkmetal Coif
+							un(34, i(7344)),	-- Torch of Holy Flame
+						}),
+						qa(101, {	-- The Totem of Infliction
+							un(34, i(1131)),	-- Totem of Infliction
+						}),
+						qa(223, {	-- Worgen in the Woods
+							un(34, i(2902)),	-- Cloak of the Faith
+							un(34, i(1547)),	-- Shield of the Faith
+							un(34, i(5244)),	-- Consecrated Wand
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares	
 					n(45785, { 	-- Carved One

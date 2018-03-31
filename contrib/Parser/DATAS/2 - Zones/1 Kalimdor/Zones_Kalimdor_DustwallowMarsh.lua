@@ -411,6 +411,12 @@ _.Zones =
 						}),
 					}),
 --					qg(23843, q(27188)),	-- What's Haunting Witch Hill?						
+					nlq({     -- Legacy Quests 
+						qh(1173, {	-- Challenge Overlord Mok'Morokk
+							un(34, i(10703)),	-- Fiendish Skiv
+							un(34, i(10704)),	-- Chillnail Splinter
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares	
 					n(50784, { 		-- Anith

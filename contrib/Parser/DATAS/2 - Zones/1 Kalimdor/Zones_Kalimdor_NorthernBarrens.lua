@@ -843,6 +843,17 @@ _.Zones =
 						["qg"] = 3390,	-- Apothecary Helbrim
 						["sourceQuests"] = { 13998 },	-- In Fungus we Trust
 					}),
+					nlq({     -- Legacy Quests 
+						qh(873, {	-- Isha Awak
+							un(34, i(5356)),	-- Branding Rod
+							un(34, i(5357)),	-- Ward of the Vale
+							un(34, i(5355)),	-- Beastmaster's Girdle
+						}),
+						qh(863, {	-- The Escape
+							un(34, i(5326)),	-- Flaring Baton
+							un(34, i(5327)),	-- Greasy Tinker's Pants
+						}),
+					}),
 				}),
 				n(-16, {	-- Rares
 					n(3672, {	 	-- Boahn
@@ -1317,7 +1328,7 @@ _.Zones =
 						i(22673),	-- Outrider's Chain Leggings
 						i(22676),	-- Outrider's Mail Leggings
 						i(22740),	-- Outrider's Leather Pants
-						i(22741),	-- Outrider's Lizardhide PAnts
+						i(22741),	-- Outrider's Lizardhide Pants
 						i(22747),	-- Outrider's Silk Leggings
 						i(30498),	-- Outrider's Lamellar Legguards
 						i(19526),	-- Battle Healer's Cloak
