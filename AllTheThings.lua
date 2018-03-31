@@ -721,7 +721,7 @@ end
 -- Quest Completion Lib
 local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
-  print("Completed Quest ID #" .. key);
+  --print("Completed Quest ID #" .. key);
   DirtyQuests[key] = true;
   rawset(t, key, value);
 end});
