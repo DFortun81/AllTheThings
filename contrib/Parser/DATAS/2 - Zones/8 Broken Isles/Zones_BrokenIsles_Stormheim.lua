@@ -1484,18 +1484,31 @@ _.Zones =
 				m(1022, { -- Helheim
 					["groups"] = {
 						n(-17, { -- Quests
-							q(39849, { -- To Light the Way
-								i(129339), -- Drape of the Undying Raider
-								i(129239), -- Bloodbeard's Seal
-							}),
-							q(38324, { -- Accessories of the Cursed
+							qg(97319, q(39837)),					-- An Unworthy Task / Ashildir <Queen of the Valkyra>
+							sq(39837, qg(91531, q(38324, {			-- Accessories of the Cursed / Colborn the Unworthy
 								i(129331), -- Soulflayer Cord
 								i(129332), -- Belt of the Eternally Tortured
 								i(129333), -- Mistcaller Mail Belt
 								i(129334), -- Girdle of the Unworthy
 								i(121563), -- Soulflayer's Collar of Bones
-							}),
-							q(39855, { -- Paid in Lifeblood
+							}))),
+							sq(39837, qg(91531, q(38339))),			-- A Little Kelp From My Foes / Colborn the Unworthy
+							sq({38324,38339}, qg(91531, q(38347, {	-- Stealth by Seaweed / Colborn the Unworthy
+								desc(n(91386), "Walk by him. Don't get killed."),	-- Guarm
+							}))),
+							sq(38347, qg(97319, q(39848))),			-- A Desperate Bargain / Ashildir <Queen of the Valkyra>
+							sq(39848, qg(91387, q(39857))),			-- The Eternal Nemesis / Helya's Altar
+							sq(39857, qg(97319, q(39849, {			-- To Light the Way / Ashildir <Queen of the Valkyra>
+								i(129339), -- Drape of the Undying Raider
+								i(129239), -- Bloodbeard's Seal
+							}))),
+							sq(39849, qg(97319, q(39849))),			-- Sundered / Ashildir <Queen of the Valkyra>
+							sq(39849, qg(97319, q(39851))),			-- Allies in Death / Ashildir <Queen of the Valkyra>
+							-- sq(39849, qg(97319, q(39852))),			-- [PH] Collect Weapons / Ashildir <Queen of the Valkyra>
+							sq({39849,39851,39852}, qg(97319, q(39853, {			-- Victory is Eternal / Ashildir <Queen of the Valkyra>
+								desc(n(91948), "Soloable, but might require a group."),	-- Geir <The Eternal Nemesis>
+							}))),
+							sq(39853, qg(97319, q(39855, { -- Paid in Lifeblood / Ashildir <Queen of the Valkyra>
 								i(132832), -- Bones of Geir	
 								i(132830), -- Cursebinder Chains	
 								i(132826), -- Cursed Kvaldir Blood	
@@ -1506,17 +1519,41 @@ _.Zones =
 								i(132825), -- Val'kyra Boon	
 								i(132834), -- Wailing Wings	
 								i(132831), -- Worthy Soul	
-							}),
+							}))),
 						}),
 						n(-16, { -- Rares
-				--			n(92040, { -- Fenri trinket }), 
+							desc(n(109163), "Objective of the World Quest 'DANGER: Captain Dargun'. Is not up otherwise."),			-- Captain Dargun
+							n(92040, {	-- Fenri
+								["groups"] = {
+									i(129044),	-- Frothing Helhound's Fury
+								},
+								["questID"] = 38461
+							}), 
+							n(115732, {			-- Jorvild the Trusted
+								["description"] = "Starting from Helya's Throne, head down the stairs and along the path. When you hit the first bridge, turn right 90 degrees and start swimming lengthwise down the pond. Directly in front of you there's a tiny \"beach\" with a door-sized cave entrance. If you get to the part of the pond where it gets narrow and turns around a corner, you went too far. The cave is just left of the bend between some rocks.",
+								["questID"] = 46949,
+								["groups"] = {
+									i(144437, {	-- Lost Legend of the Valarjar
+										["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
+										["classes"] = {1},
+										["dr"] = 100,
+										["groups"] = {
+											desc(q(46229), "Honor in Remembrance"),	-- Valarjar Lore Unlock 1
+											desc(q(46230), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 2
+											desc(q(46231), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 3
+											desc(q(46232), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 4
+											desc(q(46233), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 5
+											desc(q(46234), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 6
+										}
+									}),
+								}
+							}),
 							n(97630, { -- Soulthirster
 								["groups"] = {
 									i(129188), -- Pet
 								},
 								["questID"] = 39870,	
-							}), 
-				--			n(109163, { -- Captain Dargun }),
+							}),
 						}),
 					},	
 					["icon"] = "Interface\\Icons\\achievement_boss_helyra",	
