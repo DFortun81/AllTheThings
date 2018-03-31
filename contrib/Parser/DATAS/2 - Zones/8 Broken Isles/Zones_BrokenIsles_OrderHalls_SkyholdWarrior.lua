@@ -328,6 +328,17 @@ _.Zones =
 									desc(q(46228), "The Sealing of the Halls of Valor"),	-- Odyn Lore Unlock 6
 								}
 							}),
+							i(144437, {	-- Lost Legend of the Valarjar
+								["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
+								["groups"] = {
+									desc(q(46229), "Honor in Remembrance"),	-- Valarjar Lore Unlock 1
+									desc(q(46230), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 2
+									desc(q(46231), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 3
+									desc(q(46232), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 4
+									desc(q(46233), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 5
+									desc(q(46234), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 6
+								}
+							}),
 							q(44267),	-- Maw of Souls
 							q(43586),	-- Maw of Souls: Message to Helya
 							q(43604),	-- Maw of Souls: Ymiron's Broken Blade
