@@ -317,6 +317,17 @@ _.Zones =
 							q(45987),	-- Investigate the Broken Shore
 							q(42204),	-- Jorhuttam
 							q(39191),	-- Legacy of the Icebreaker
+							i(144436, {	-- Lost Legend of Odyn
+								["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
+								["groups"] = {
+									desc(q(46223), "Great Odyn and the Firelord"),	-- Odyn Lore Unlock 1
+									desc(q(46224), "The Wanderer and the Serpent"),	-- Odyn Lore Unlock 2
+									desc(q(46225), "Halls of Gold and Glory"),	-- Odyn Lore Unlock 3
+									desc(q(46226), "The Keeper's Eye"),	-- Odyn Lore Unlock 4
+									desc(q(46227), "First of the Val'kyr"),	-- Odyn Lore Unlock 5
+									desc(q(46228), "The Sealing of the Halls of Valor"),	-- Odyn Lore Unlock 6
+								}
+							}),
 							q(44267),	-- Maw of Souls
 							q(43586),	-- Maw of Souls: Message to Helya
 							q(43604),	-- Maw of Souls: Ymiron's Broken Blade
