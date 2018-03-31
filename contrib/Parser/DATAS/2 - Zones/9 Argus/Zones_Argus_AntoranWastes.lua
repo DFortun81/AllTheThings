@@ -450,6 +450,53 @@ _.Zones =
 							["description"] = "This npc is in a cave under the bridge at |cFFFFFFFF59.54, 44.98|r.  In order to loot the demon eyes you must obtain the buff by clicking on an |cFFFFD700All-Seer's Focus|r.  This can spawn randomly in one of three locations:\n\n|cFFFFD700Ven'orn's Lair|r inside a cave at |cFFFFFFFF67.34, 48.11|r.\n\n|cFFFFD700Defiled Path|r inside a cave at |cFFFFFFFF64.41, 21.03|r.\n\n|cFFFFD700Felfire Armory|r is located at |cFFFFFFFF58.01, 66.96|r.\n\nThe focus is not consumed and visible after you click it. Everyone can click it multiple times until it despawns.  This focus will provide you with a 1 hour buff where you are able to collect demon eyes.  Walking into a hub will have the guards attack you.  Once you collected the eyes you return to this npc and are able to buy the items.  You can purchase an elixir for 25 eyes so you no longer need to find the focus."
 						}),
 					}),
+					n(-34, { -- World Quests
+						["groups"] = {
+							n(-322, { -- Cloak
+								i(150988), -- Twisted-Ritualist's Shawl
+							}),
+							n(-43, { -- Cloth
+								i(150980),	-- Doomsinger Cap
+								i(150987),	-- Doomsinger Amice
+								i(150985),	-- Doomsinger Robes
+								i(150983),	-- Doomsinger Cuffs
+								i(150981),	-- Doomsinger Mitts
+								i(150982),	-- Doomsinger Sash
+								i(150986),	-- Doomsinger Leggings
+								i(150984),	-- Doomsinger Slippers
+							}),
+							n(-44, { -- Leather
+								i(150969),	-- Stygian Mask
+								i(150970),	-- Stygian Shoulderguards
+								i(150968),	-- Stygian Vest
+								i(150964),	-- Stygian Armbands
+								i(150965),	-- Stygian Grips
+								i(150966),	-- Stygian Belt
+								i(150971),	-- Stygian Trousers
+								i(150967),	-- Stygian Boots
+							}),
+							n(-45, { -- Mail
+								i(150975),	-- Nath'raxxan Coif
+								i(150979),	-- Nath'raxxan Spaulders
+								i(150978),	-- Nath'raxxan Chestguard
+								i(150972),	-- Nath'raxxan Wristguards
+								i(150973),	-- Nath'raxxan Gloves
+								i(150977),	-- Nath'raxxan Girdle
+								i(150974),	-- Nath'raxxan Leggings
+								i(150976),	-- Nath'raxxan Boots
+							}),
+							n(-46, { -- Plate
+								i(150957),	-- Garothi Helmet
+								i(150960),	-- Garothi Pauldrons
+								i(150958),	-- Garothi Breastplate
+								i(150962),	-- Garothi Vambraces
+								i(150961),	-- Garothi Gauntlets
+								i(150959),	-- Garothi Waistplate
+								i(150956),	-- Garothi Greaves
+								i(150963),	-- Garothi Sabatons
+							}),
+						},
+					}),
 					n(0, { 		-- Zone Drop
 						["groups"] = {
 							n(-318, { -- Armor

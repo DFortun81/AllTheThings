@@ -96,171 +96,202 @@ _.Zones =
 					q(48641, { -- Armies of Legionfall
 						i(157830, { -- Legionfall Spoils
 							["groups"] = {
-								i(147216, { -- Dauntless Hood
-									i(147241), -- Cloth
-									i(147242), -- Leather
-									i(147243), -- Mail
-									i(147244), -- Plate
+								i(147216, { -- Dauntless Hood		
+									i(147241), -- Ley-Touched Hood	
+									i(147242), -- Fel-Treated Hood	
+									i(147243), -- Galvanized Stormscale Helm	
+									i(147244), -- Storm-Tempered Greathelm	
 								}),
-								i(147218, { -- Dauntless Spaulders
-									i(147249), -- Cloth
-									i(147250), -- Leather
-									i(147251), -- Mail
-									i(147252), -- Plate
-								}),
-								i(147222, { -- Dauntless Cloak
-									i(147269) -- Cloak
-								}),
-								i(147213, { -- Dauntless Tunic
-									i(147232), -- Cloth
-									i(147229), -- Leather
-									i(147230), -- Mail
-									i(147231), -- Plate
-								}),
-								i(147212, { -- Dauntless Bracers
-									i(147225), -- Cloth
-									i(147226), -- Leather
-									i(147227), -- Mail
-									i(147228), -- Plate
-								}),
-								i(147215, { -- Dauntless Gauntlets
-									i(147237), -- Cloth
-									i(147238), -- Leather
-									i(147239), -- Mail
-									i(147240), -- Plate
-								}),
-								i(147219, { -- Dauntless Girdle
-									i(147253), -- Cloth
-									i(147254), -- Leather
-									i(147255), -- Mail
-									i(147256), -- Plate
-								}),
-								i(147217, { -- Dauntless Leggings
-									i(147245), -- Cloth
-									i(147246), -- Leather
-									i(147247), -- Mail
-									i(147248), -- Plate
-								}),
-								i(147214, { -- Dauntless Treads
-									i(147233), -- Cloth
-									i(147234), -- Leather
-									i(147235), -- Mail
-									i(147236), -- Plate
-								}),
+								i(147221, { -- Dauntless Choker	
+									i(147263), -- Animus Pendant
+								}),	
+								i(147218, { -- Dauntless Spaulders		
+									i(147249), -- Ley-Touched Mantle	
+									i(147250), -- Fel-Treated Spaulders	
+									i(147251), -- Galvanized Stormscale Spaulders	
+									i(147252), -- Storm-Tempered Shoulderguard	
+								}),		
+								i(147222, { -- Dauntless Cloak		
+									i(147269), -- Unifying Drape	
+								}),		
+								i(147213, { -- Dauntless Tunic		
+									i(147232), -- Ley-Touched Robes	
+									i(147229), -- Fel-Treated Chestguard	
+									i(147230), -- Galvanized Stormscale Chestguard	
+									i(147231), -- Storm-Tempered Breastplate	
+								}),		
+								i(147212, { -- Dauntless Bracers		
+									i(147225), -- Ley-Touched Bracers	
+									i(147226), -- Fel-Treated Bracers	
+									i(147227), -- Galvanized Stormscale Bracers	
+									i(147228), -- Storm-Tempered Bracers	
+								}),		
+								i(147215, { -- Dauntless Gauntlets		
+									i(147237), -- Ley-Touched Gloves	
+									i(147238), -- Fel-Treated Gauntlets	
+									i(147239), -- Galvanized Stormscale Gauntlets	
+									i(147240), -- Storm-Tempered Gauntlets	
+								}),		
+								i(147219, { -- Dauntless Girdle		
+									i(147253), -- Ley-Touched Cord	
+									i(147254), -- Fel-Treated Belt	
+									i(147255), -- Galvanized Stormscale Belt	
+									i(147256), -- Storm-Tempered Girdle	
+								}),		
+								i(147217, { -- Dauntless Leggings		
+									i(147245), -- Ley-Touched Trousers	
+									i(147246), -- Fel-Treated Legguards	
+									i(147247), -- Galvanized Stormscale Legguards	
+									i(147248), -- Storm-Tempered Legplates	
+								}),		
+								i(147214, { -- Dauntless Treads		
+									i(147233), -- Ley-Touched Sandals	
+									i(147234), -- Fel-Treated Boots	
+									i(147235), -- Galvanized Stormscale Boots	
+									i(147236), -- Storm-Tempered Greaves	
+								}),		
+								i(147220, { -- Dauntless Ring	
+									i(147257), -- Avenging Band
+								}),	
+								i(147223, { -- Dauntless Trinket	
+									i(147275), -- Beguiler's Talisman
+									i(147276), -- Spellbinder's Seal
+									i(147278), -- Stalwart Crest
+								}),	
 							},
 						}),
-						i(154910, { -- Legionfall Spoils
+						un(2, i(154910, { -- Legionfall Spoils
 							["groups"] = {
-								i(147216, { -- Dauntless Hood
-									i(147241), -- Cloth
-									i(147242), -- Leather
-									i(147243), -- Mail
-									i(147244), -- Plate
+								i(147216, { -- Dauntless Hood		
+									i(147241), -- Ley-Touched Hood	
+									i(147242), -- Fel-Treated Hood	
+									i(147243), -- Galvanized Stormscale Helm	
+									i(147244), -- Storm-Tempered Greathelm	
 								}),
-								i(147218, { -- Dauntless Spaulders
-									i(147249), -- Cloth
-									i(147250), -- Leather
-									i(147251), -- Mail
-									i(147252), -- Plate
-								}),
-								i(147222, { -- Dauntless Cloak
-									i(147269) -- Cloak
-								}),
-								i(147213, { -- Dauntless Tunic
-									i(147232), -- Cloth
-									i(147229), -- Leather
-									i(147230), -- Mail
-									i(147231), -- Plate
-								}),
-								i(147212, { -- Dauntless Bracers
-									i(147225), -- Cloth
-									i(147226), -- Leather
-									i(147227), -- Mail
-									i(147228), -- Plate
-								}),
-								i(147215, { -- Dauntless Gauntlets
-									i(147237), -- Cloth
-									i(147238), -- Leather
-									i(147239), -- Mail
-									i(147240), -- Plate
-								}),
-								i(147219, { -- Dauntless Girdle
-									i(147253), -- Cloth
-									i(147254), -- Leather
-									i(147255), -- Mail
-									i(147256), -- Plate
-								}),
-								i(147217, { -- Dauntless Leggings
-									i(147245), -- Cloth
-									i(147246), -- Leather
-									i(147247), -- Mail
-									i(147248), -- Plate
-								}),
-								i(147214, { -- Dauntless Treads
-									i(147233), -- Cloth
-									i(147234), -- Leather
-									i(147235), -- Mail
-									i(147236), -- Plate
-								}),
+								i(147221, { -- Dauntless Choker	
+									i(147263), -- Animus Pendant
+								}),	
+								i(147218, { -- Dauntless Spaulders		
+									i(147249), -- Ley-Touched Mantle	
+									i(147250), -- Fel-Treated Spaulders	
+									i(147251), -- Galvanized Stormscale Spaulders	
+									i(147252), -- Storm-Tempered Shoulderguard	
+								}),		
+								i(147222, { -- Dauntless Cloak		
+									i(147269), -- Unifying Drape	
+								}),		
+								i(147213, { -- Dauntless Tunic		
+									i(147232), -- Ley-Touched Robes	
+									i(147229), -- Fel-Treated Chestguard	
+									i(147230), -- Galvanized Stormscale Chestguard	
+									i(147231), -- Storm-Tempered Breastplate	
+								}),		
+								i(147212, { -- Dauntless Bracers		
+									i(147225), -- Ley-Touched Bracers	
+									i(147226), -- Fel-Treated Bracers	
+									i(147227), -- Galvanized Stormscale Bracers	
+									i(147228), -- Storm-Tempered Bracers	
+								}),		
+								i(147215, { -- Dauntless Gauntlets		
+									i(147237), -- Ley-Touched Gloves	
+									i(147238), -- Fel-Treated Gauntlets	
+									i(147239), -- Galvanized Stormscale Gauntlets	
+									i(147240), -- Storm-Tempered Gauntlets	
+								}),		
+								i(147219, { -- Dauntless Girdle		
+									i(147253), -- Ley-Touched Cord	
+									i(147254), -- Fel-Treated Belt	
+									i(147255), -- Galvanized Stormscale Belt	
+									i(147256), -- Storm-Tempered Girdle	
+								}),		
+								i(147217, { -- Dauntless Leggings		
+									i(147245), -- Ley-Touched Trousers	
+									i(147246), -- Fel-Treated Legguards	
+									i(147247), -- Galvanized Stormscale Legguards	
+									i(147248), -- Storm-Tempered Legplates	
+								}),		
+								i(147214, { -- Dauntless Treads		
+									i(147233), -- Ley-Touched Sandals	
+									i(147234), -- Fel-Treated Boots	
+									i(147235), -- Galvanized Stormscale Boots	
+									i(147236), -- Storm-Tempered Greaves	
+								}),		
+								i(147220, { -- Dauntless Ring	
+									i(147257), -- Avenging Band
+								}),	
+								i(147223, { -- Dauntless Trinket	
+									i(147275), -- Beguiler's Talisman
+									i(147276), -- Spellbinder's Seal
+									i(147278), -- Stalwart Crest
+								}),	
 							},
-							["u"] = 2,
-						}),
-						i(152649, { -- Legionfall Spoils
+						})),
+						un(2, i(152649, { -- Legionfall Spoils
 							["groups"] = {
-								i(147216, { -- Dauntless Hood
-									i(147241), -- Cloth
-									i(147242), -- Leather
-									i(147243), -- Mail
-									i(147244), -- Plate
+								i(147216, { -- Dauntless Hood		
+									i(147241), -- Ley-Touched Hood	
+									i(147242), -- Fel-Treated Hood	
+									i(147243), -- Galvanized Stormscale Helm	
+									i(147244), -- Storm-Tempered Greathelm	
 								}),
-								i(147218, { -- Dauntless Spaulders
-									i(147249), -- Cloth
-									i(147250), -- Leather
-									i(147251), -- Mail
-									i(147252), -- Plate
-								}),
-								i(147222, { -- Dauntless Cloak
-									i(147269) -- Cloak
-								}),
-								i(147213, { -- Dauntless Tunic
-									i(147232), -- Cloth
-									i(147229), -- Leather
-									i(147230), -- Mail
-									i(147231), -- Plate
-								}),
-								i(147212, { -- Dauntless Bracers
-									i(147225), -- Cloth
-									i(147226), -- Leather
-									i(147227), -- Mail
-									i(147228), -- Plate
-								}),
-								i(147215, { -- Dauntless Gauntlets
-									i(147237), -- Cloth
-									i(147238), -- Leather
-									i(147239), -- Mail
-									i(147240), -- Plate
-								}),
-								i(147219, { -- Dauntless Girdle
-									i(147253), -- Cloth
-									i(147254), -- Leather
-									i(147255), -- Mail
-									i(147256), -- Plate
-								}),
-								i(147217, { -- Dauntless Leggings
-									i(147245), -- Cloth
-									i(147246), -- Leather
-									i(147247), -- Mail
-									i(147248), -- Plate
-								}),
-								i(147214, { -- Dauntless Treads
-									i(147233), -- Cloth
-									i(147234), -- Leather
-									i(147235), -- Mail
-									i(147236), -- Plate
-								}),
+								i(147221, { -- Dauntless Choker	
+									i(147263), -- Animus Pendant
+								}),	
+								i(147218, { -- Dauntless Spaulders		
+									i(147249), -- Ley-Touched Mantle	
+									i(147250), -- Fel-Treated Spaulders	
+									i(147251), -- Galvanized Stormscale Spaulders	
+									i(147252), -- Storm-Tempered Shoulderguard	
+								}),		
+								i(147222, { -- Dauntless Cloak		
+									i(147269), -- Unifying Drape	
+								}),		
+								i(147213, { -- Dauntless Tunic		
+									i(147232), -- Ley-Touched Robes	
+									i(147229), -- Fel-Treated Chestguard	
+									i(147230), -- Galvanized Stormscale Chestguard	
+									i(147231), -- Storm-Tempered Breastplate	
+								}),		
+								i(147212, { -- Dauntless Bracers		
+									i(147225), -- Ley-Touched Bracers	
+									i(147226), -- Fel-Treated Bracers	
+									i(147227), -- Galvanized Stormscale Bracers	
+									i(147228), -- Storm-Tempered Bracers	
+								}),		
+								i(147215, { -- Dauntless Gauntlets		
+									i(147237), -- Ley-Touched Gloves	
+									i(147238), -- Fel-Treated Gauntlets	
+									i(147239), -- Galvanized Stormscale Gauntlets	
+									i(147240), -- Storm-Tempered Gauntlets	
+								}),		
+								i(147219, { -- Dauntless Girdle		
+									i(147253), -- Ley-Touched Cord	
+									i(147254), -- Fel-Treated Belt	
+									i(147255), -- Galvanized Stormscale Belt	
+									i(147256), -- Storm-Tempered Girdle	
+								}),		
+								i(147217, { -- Dauntless Leggings		
+									i(147245), -- Ley-Touched Trousers	
+									i(147246), -- Fel-Treated Legguards	
+									i(147247), -- Galvanized Stormscale Legguards	
+									i(147248), -- Storm-Tempered Legplates	
+								}),		
+								i(147214, { -- Dauntless Treads		
+									i(147233), -- Ley-Touched Sandals	
+									i(147234), -- Fel-Treated Boots	
+									i(147235), -- Galvanized Stormscale Boots	
+									i(147236), -- Storm-Tempered Greaves	
+								}),		
+								i(147220, { -- Dauntless Ring	
+									i(147257), -- Avenging Band
+								}),	
+								i(147223, { -- Dauntless Trinket	
+									i(147275), -- Beguiler's Talisman
+									i(147276), -- Spellbinder's Seal
+									i(147278), -- Stalwart Crest
+								}),	
 							},
-							["u"] = 2,
-						}),
+						})),
 					}),
 					n(-206,  { -- Paragon
 						q(46777, { -- The Bounties of Legionfall
@@ -1385,7 +1416,6 @@ _.Zones =
 							i(134394),	-- Netherwhisper Leggings
 							i(134396),	-- Netherwhisper Slippers
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 					}),
 					n(-3246, { -- Riven Priesthood Set
 						["groups"] = {
@@ -1398,7 +1428,6 @@ _.Zones =
 							i(146879),	-- Riven Priesthood Leggings
 							i(146881),	-- Riven Priesthood Slippers
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_cloth_legiondungeon_c_02",
 					}),
 					n(-3265, { -- Felbat Leather Set
 						["groups"] = {
@@ -1411,7 +1440,6 @@ _.Zones =
 							i(134370),	-- Felbat Leather Leggings
 							i(134369),	-- Felbat Leather Boots
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 					}),
 					n(-3272, { -- Lunarblight Set
 						["groups"] = {
@@ -1424,7 +1452,6 @@ _.Zones =
 							i(146861),	-- Lunarblight Trousers
 							i(146860),	-- Lunarblight Treads
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_leather_legiondungeon_c_02",
 					}),
 					n(-3277, { -- Mardum Chain Set
 						["groups"] = {
@@ -1437,7 +1464,6 @@ _.Zones =
 							i(134388),	-- Mardum Chain Leggings
 							i(134386),	-- Mardum Chain Boots
 						},
-						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 					}),
 					n(-3283, { -- Shrinebreaker Set
 						["groups"] = {
@@ -1450,7 +1476,6 @@ _.Zones =
 							i(146873),	-- Shrinebreaker Legguards
 							i(146871),	-- Shrinebreaker Boots
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_mail_legiondungeon_c_02",
 					}),
 					n(-3306, { -- Moonshatter Set
 						["groups"] = {
@@ -1463,7 +1488,6 @@ _.Zones =
 							i(146853),	-- Moonshatter Greaves
 							i(146855),	-- Moonshatter Sabatons
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_plate_legiondungeon_c_02",
 					}),
 					n(-3301, { -- Portalguard Set
 						["groups"] = {
@@ -1476,7 +1500,6 @@ _.Zones =
 							i(134359),	-- Portalguard Legplates
 							i(134361),	-- Portalguard Warboots
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
 				}),
 				n(-40, { -- Legacy
