@@ -5,6 +5,7 @@ _.Zones =
 {
 	m(1007, { 	-- The Broken Isles
 		m(1024, {	-- Highmountain
+			["maps"] = {1024, 1080},
 			["groups"] = {
 				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
 					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
@@ -1640,8 +1641,36 @@ _.Zones =
 							i(126996), -- Imbued Silkweave Slippers
 						}),
 					}),
+					n(106902, {	-- Ransa Greyfeather <Highmountain Emissary>
+						i(136919), -- PET! Baby Elderhorn
+						i(131812), -- TOY! Darkshard Fragment
+						i(131814), -- TOY! Whitewater Carp
+						i(139601), -- Harpy-Hunter's Gloves
+						i(139597), -- Mountainforged Chain Hauberk
+						i(140576), -- Tabard of the Hightmountain
+					}),
+					n(99574, { -- Slyhoof the Shameless Shaman <Used Totem Vendor>
+						i(140336), -- Brulfist Idol Toy
+					}),
 					n(115887, { -- Trinket
 						i(142369), -- Ivory Hawkstrider Mount
+					}),
+				}),
+				n(-38, { -- Profession
+					prof(356, 7620, { -- Fishing
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2099, {	-- Akule Riverhorn
+								["groups"] = {
+									i(146960, {		-- Ancient Totem Fragment
+										i(147310),	-- Floating Totem
+										i(152556), 	-- Trawler Totem
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 41.8|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requiredSkill"] = 356,
+								["creatureID"] = 120457
+							}),
+						}),
 					}),
 				}),
 				n(-34, { -- World Quests
@@ -1740,58 +1769,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
 				}),
-				m(1080, {	-- Thunder Totem
-					["groups"] = {
-						n(-2, { -- Vendors
-							n(120457, { -- Akule Riverhorn
-								["groups"] = {
-									ach(11725, { -- Fisherfriend of the Isles
-										i(152583, { -- Underlight Emerald
-											i(133755, { -- Underlight Angler
-												["groups"] = {
-													{
-														["artifactID"] = 988, -- Fisherfriend of the Isles
-														["itemID"] = 133755, -- Underlight Angler
-														["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-														["modelScale"] = 1.25,
-														["modelRotation"] = 55,
-													},
-													{
-														["artifactID"] = 989, -- Fisherfriend of the Isles
-														["itemID"] = 133755, -- Underlight Angler
-														["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-														["modelScale"] = 1.25,
-														["modelRotation"] = 55,
-													},
-												},
-												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-												["modelScale"] = 1.25,
-												["modelRotation"] = 55,
-												["ignoreSource"] = true
-											}),
-										}),
-									}),
-									i(147310), -- Floating Totem
-									i(152556), -- Trawler Totem
-								},
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 41.8|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requiredSkill"] = 356,
-							}),
-							n(106902, {	-- Ransa Greyfeather <Highmountain Emissary>
-								i(136919), -- PET! Baby Elderhorn
-								i(131812), -- TOY! Darkshard Fragment
-								i(131814), -- TOY! Whitewater Carp
-								i(139601), -- Harpy-Hunter's Gloves
-								i(139597), -- Mountainforged Chain Hauberk
-								i(140576), -- Tabard of the Hightmountain
-							}),
-							n(99574, { -- Slyhoof the Shameless Shaman <Used Totem Vendor>
-								i(140336), -- Brulfist Idol Toy
-							}),
-						}),
-					},
-					["icon"] = "Interface\\Icons\\Inv_archaeology_orcclans_warsingersdrums"				
-				}),	
+				
 			},
 			["Lvl"] = 98,	
 			["achievementID"] = 10667,

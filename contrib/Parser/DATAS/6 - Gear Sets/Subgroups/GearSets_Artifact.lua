@@ -4251,20 +4251,27 @@ _.GearSets =
 								["modelScale"] = 1.25,
 								["modelRotation"] = 55,
 							},
-							{
-								["artifactID"] = 988, -- Fisherfriend of the Isles
-								["itemID"] = 133755, -- Underlight Angler
-								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-								["modelScale"] = 1.25,
-								["modelRotation"] = 55,
-							},
-							{
-								["artifactID"] = 989, -- Fisherfriend of the Isles
-								["itemID"] = 133755, -- Underlight Angler
-								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-								["modelScale"] = 1.25,
-								["modelRotation"] = 55,
-							},
+							qg({120456,120457,120458,120459,120460}, ach(11725, { 	-- Fisherfriend of the Isles
+								["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
+								["groups"] = {
+									i(152583, { -- Underlight Emerald
+										{
+											["artifactID"] = 988, -- Fisherfriend of the Isles
+											["itemID"] = 133755, -- Underlight Angler
+											["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+											["modelScale"] = 1.25,
+											["modelRotation"] = 55,
+										},
+										{
+											["artifactID"] = 989, -- Fisherfriend of the Isles
+											["itemID"] = 133755, -- Underlight Angler
+											["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+											["modelScale"] = 1.25,
+											["modelRotation"] = 55,
+										},
+									})
+								},
+							})),
 						},
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
 						["modelScale"] = 1.25,
