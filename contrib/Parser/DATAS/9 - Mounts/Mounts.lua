@@ -611,7 +611,7 @@ _.Mounts =
 		h(i(44080)),			-- Ice Mammoth (Horde)
 		a(i(45586)),			-- Ironforge Ram
 		h(i(116782)),			-- Ironside Warwolf
-		h(i(142369)),			-- Ivory Hawkstrider
+		i(142369),			-- Ivory Hawkstrider
 		h(i(67107)),			-- Kor'kron Annihilator
 		i(152788),				-- Lightforged Warframe Mount
 		i(116768),				-- Mosshide Riverwallow

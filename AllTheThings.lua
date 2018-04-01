@@ -1262,11 +1262,6 @@ local function SearchForItemID(itemID)
 		return fieldCache["itemID"][itemID];
 	end
 end
-local function SearchForMapID(mapID)
-	if mapID and app:GetDataCache() then
-		return fieldCache["mapID"][mapID];
-	end
-end
 local function SearchForQuestID(questID)
 	if questID and app:GetDataCache() then
 		return fieldCache["questID"][questID];
@@ -1586,56 +1581,6 @@ local function ExportData(group)
 		EJ_SetLootFilter(0, 0);
 		EJ_SetSlotFilter(0);
 		SetDataMember("EXPORT_DATA", ExportDataRecursively(group, ""));
-	end
-end
-local function FindMapDataRecursively(listing, data, mapID)
-	if data then
-		for i, group in ipairs(data) do
-			if group.mapID then
-				-- Return the group if it has the map ID we're looking for.
-				if group.mapID == mapID then
-					-- Expand/Collapse the Difficulties (must be one level below)
-					if group.g then
-						local found = false;
-						local _, _, difficultyID = GetInstanceInfo();
-						ExpandGroupsRecursively(group, true);
-						if difficultyID then
-							for j, subgroup in ipairs(group.g) do
-								if subgroup.difficultyID then
-									subgroup.expanded = subgroup.difficultyID == difficultyID;
-									if subgroup.expanded then found = true; end
-								end
-							end
-							if not found then
-								difficultyID = difficultyID + 1;
-								for j, subgroup in ipairs(group.g) do
-									if subgroup.difficultyID then
-										subgroup.expanded = subgroup.difficultyID == difficultyID;
-										if subgroup.expanded then found = true; end
-									end
-								end
-							end
-						end
-					end
-					tinsert(listing, group);
-				else
-					-- A map may have a sub-map inside of it.
-					FindMapDataRecursively(listing, group.g, mapID);
-				end
-			elseif group.objectID or group.questID or group.difficultyID or group.itemID then
-				-- Fall through to the next group. NPC ID is sorta deceptive, it's a special identifier I use for World Drops, sub groups, etc.)
-			else
-				-- This must be the parent group (ALL THE THINGS) or a Tier (Dungeons & Raids - Classic, Burning Crusade, etc)
-				FindMapDataRecursively(listing, group.g, mapID);
-			end
-		end
-	end
-end
-local function FindMapData(mapID)
-	local allData, listing = app:GetDataCache(), {};
-	if allData then
-		FindMapDataRecursively(listing, allData.g, mapID);
-		if #listing > 0 then return listing; end
 	end
 end
 local function OpenMainList()
@@ -3963,8 +3908,12 @@ local function BuildGroups(parent, g)
 end
 local function ProcessGroup(data, parent, indent, back)
 	if parent.visible then
-		if parent.mapID and parent.mapID == GetTempDataMember("MapID") then
-			parent.back = 1;
+		if parent.mapID then
+			if parent.mapID == GetTempDataMember("MapID") or parent.maps and contains(parent.maps, GetTempDataMember("MapID")) then
+				parent.back = 1;
+			else
+				parent.back = back or parent.back;
+			end
 		else 
 			parent.back = back or parent.back;
 		end
