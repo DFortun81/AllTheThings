@@ -217,7 +217,33 @@ _.WorldEvents =
 						},
 						["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.|r",
 					})),
-					i(114648, {	-- Scorched Satchel of Helpful Goods 80-83
+					i(156689, {	-- Scorched Satchel of Helpful Goods
+						["groups"] = {
+						   i(113760),	-- Smoldercloth Bracers
+						   i(113759),	-- Smoldercloth Cap
+						   i(113786),	-- Smoldercloth Slippers
+						   i(113769),	-- Ravaged Leather Boots
+						   i(113705),	-- Ravaged Leather Bracers
+						   i(113698),	-- Ravaged Leather Cap
+						   i(113700),	-- Ravaged Leather Helm
+						   i(113768),	-- Ravaged Leather Slippers
+						   i(113706),	-- Ravaged Leather Wristguards
+						   i(113774),	-- Sparkmail Boots
+						   i(113703),	-- Sparkmail Bracers
+						   i(113699),	-- Sparkmail Headguard
+						   i(113697),	-- Sparkmail Helm
+						   i(113775),	-- Sparkmail Sabatons
+						   i(113704),	-- Sparkmail Wristguards
+						   i(113780),	-- Emberspark Plate Boots
+						   i(113701),	-- Emberspark Plate Bracers
+						   i(113696),	-- Emberspark Plate Headguard
+						   i(113695),	-- Emberspark Plate Helm
+						   i(113781),	-- Emberspark Plate Sabatons
+						   i(113702),	-- Emberspark Plate Wristguards
+						},
+						["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation",
+					}),
+					un(2, i(114648, {	-- Scorched Satchel of Helpful Goods 80-83
 						["groups"] = {
 						   i(113760),	-- Smoldercloth Bracers
 						   i(113759),	-- Smoldercloth Cap
@@ -242,8 +268,8 @@ _.WorldEvents =
 						   i(113702),	-- Emberspark Plate Wristguards
 						},
 						["description"] = "|cff66ccffRewarded for completing a random Cataclysm dungeon in the level 80-84 range.|r",
-					   }),
-					i(114655, {	-- Scorched Satchel of Helpful Goods 84-85
+					   })),
+					un(2, i(114655, {	-- Scorched Satchel of Helpful Goods 84-85
 						["groups"] = {
 						   i(113763),	-- Smoldercloth Gloves
 						   i(113761),	-- Smoldercloth Leggings
@@ -263,8 +289,34 @@ _.WorldEvents =
 						   i(113708),	-- Emberspark Plate Legguards
 						},
 						["description"] = "|cff66ccffRewarded for completing a random Cataclysm dungeon in the level 84-85 range.|r",
+					})),
+					i(156698, {	-- Tranquil Satchel of Helpful Goods
+						["groups"] = {
+						   i(113788),	-- Blossoming Belt
+						   i(113764),	-- Blossoming Cap
+						   i(113787),	-- Blossoming Slippers
+						   i(113772),	-- Firecracker Belt
+						   i(113770),	-- Firecracker Boots
+						   i(113731),	-- Firecracker Cap
+						   i(113773),	-- Firecracker Girdle
+						   i(113733),	-- Firecracker Helm
+						   i(113771),	-- Firecracker Slippers
+						   i(113778),	-- Venomtail Belt
+						   i(113777),	-- Venomtail Boots
+						   i(113779),	-- Venomtail Girdle
+						   i(113730),	-- Venomtail Helm
+						   i(113776),	-- Venomtail Treads
+						   i(113732),	-- Venomtail Visor
+						   i(113784),	-- Kyparite Belt
+						   i(113782),	-- Kyparite Boots
+						   i(113785),	-- Kyparite Girdle
+						   i(113729),	-- Kyparite Headguard
+						   i(113728),	-- Kyparite Helm
+						   i(113783),	-- Kyparite Stompers
+						},
+						["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation",
 					}),
-					i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
+					un(2, i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
 						["groups"] = {
 						   i(113788),	-- Blossoming Belt
 						   i(113764),	-- Blossoming Cap
@@ -289,8 +341,8 @@ _.WorldEvents =
 						   i(113783),	-- Kyparite Stompers
 						},
 						["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria dungeon in the level 85-89 range.|r",	-- Saying 89, because at level 90 you can no longer queue for this.
-					}),
-					i(114669, {	-- Tranquil Satchel of Helpful Goods 88-90
+					})),
+					un(2, i(114669, {	-- Tranquil Satchel of Helpful Goods 88-90
 						["groups"] = {
 						   i(113766),	-- Blossoming Gloves
 						   i(113767),	-- Blossoming Mantle
@@ -315,7 +367,7 @@ _.WorldEvents =
 						   i(113750),	-- Kyparite Shoulderguards
 						},
 						["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.|r",	-- Again, saying 89 because at level 90 you can no longer queue for this.
-					}),
+					})),
 					},
 				["icon"] = "Interface\\Icons\\inv_misc_bag_15",
 			}),
