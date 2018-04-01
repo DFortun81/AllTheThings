@@ -9,7 +9,6 @@ _.WorldEvents =
 				["groups"] = {
 					i(156683, {	-- Satchel of Helpful Goods [Level 15-60]			
 						["groups"] = {		
-							i(51994),	-- Tumultuous Cloak
 							i(51974),	-- Enumerated Shoulderpads
 							i(51974),	-- Enumerated Shoulderpads
 							i(51972),	-- Enumerated Bracers
@@ -45,6 +44,7 @@ _.WorldEvents =
 							i(51964),	-- Vigorous Belt
 							i(51959),	-- Vigorous Belt
 							i(51963),	-- Vigorous Stompers
+							i(51994),	-- Tumultuous Cloak*							
 						},		
 						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-60 range.|r",		
 						["Lvl"] = 15,		
