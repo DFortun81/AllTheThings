@@ -6666,7 +6666,7 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		--[[]]--
+		--[[
 		-- Uncomment for harvesting
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
@@ -6685,7 +6685,6 @@ function app:GetDataCache()
 			db.text = "Unsorted";
 			table.insert(g, db);
 		end
-		--[[]]--
 		
 		-- Titles (Dynamic)
 		db = app.CreateAchievement(2188, GetTitleCache());
@@ -6698,42 +6697,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
-		
-		-- The Main Window's Data
-		local missingData = {};
-		app.missingData = missingData;
-		missingData.visible = true;
-		missingData.expanded = false;
-		missingData.text = "Missing Sources (Total # Ignores Filters)";
-		missingData.description = L("SOURCE_ID_MISSING");
-		missingData.rows = GetTempDataMember("Missing");
-		table.insert(g, missingData);
-		app.refreshDataForce = true;
-		BuildGroups(allData, allData.g);
-		app:GetWindow("Prime").data = allData;
-		CacheFields(allData);
-		
-		-- Now build the hidden "Unsorted" Window's Data
-		allData = {};
-		allData.expanded = true;
-		allData.icon = L("LOGO_TINY");
-		allData.preview = L("LOGO_LARGE");
-		allData.text = app.DisplayName .. ": Unsorted";
-		allData.description = "This data hasn't been implemented yet.";
-		allData.visible = true;
-		allData.progress = 0;
-		allData.total = 0;
-		local g, db = {};
-		allData.g = g;
-		
-		-- Never Implemented
-		if app.Categories.NeverImplemented then
-			db = {};
-			db.expanded = false;
-			db.g = app.Categories.NeverImplemented;
-			db.text = "Never Implemented";
-			table.insert(g, db);
-		end
+		]]--
 		
 		-- Illusions (Dynamic)
 		--[[
@@ -6785,6 +6749,42 @@ function app:GetDataCache()
 		db.text = "Raw Source Data (Dynamic)";
 		table.insert(g, db);
 		]]--
+		
+		-- The Main Window's Data
+		local missingData = {};
+		app.missingData = missingData;
+		missingData.visible = true;
+		missingData.expanded = false;
+		missingData.text = "Missing Sources (Total # Ignores Filters)";
+		missingData.description = L("SOURCE_ID_MISSING");
+		missingData.rows = GetTempDataMember("Missing");
+		table.insert(g, missingData);
+		app.refreshDataForce = true;
+		BuildGroups(allData, allData.g);
+		app:GetWindow("Prime").data = allData;
+		CacheFields(allData);
+		
+		-- Now build the hidden "Unsorted" Window's Data
+		allData = {};
+		allData.expanded = true;
+		allData.icon = L("LOGO_TINY");
+		allData.preview = L("LOGO_LARGE");
+		allData.text = app.DisplayName .. ": Unsorted";
+		allData.description = "This data hasn't been implemented yet.";
+		allData.visible = true;
+		allData.progress = 0;
+		allData.total = 0;
+		local g, db = {};
+		allData.g = g;
+		
+		-- Never Implemented
+		if app.Categories.NeverImplemented then
+			db = {};
+			db.expanded = false;
+			db.g = app.Categories.NeverImplemented;
+			db.text = "Never Implemented";
+			table.insert(g, db);
+		end
 		
 		-- Unsorted
 		if app.Categories.Unsorted then
