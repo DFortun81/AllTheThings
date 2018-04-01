@@ -67,6 +67,10 @@ _.NeverImplemented =
 	un(1, i(108241)),	-- Peerless Draenic Steel Mace
 	un(1, i(115296)),	-- Spectral Warmace
 	un(1, i(115299)),	-- Spectral Scepter
+	un(1, i(4989)),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
+	un(1, i(4990)),	-- Scorched Bands
+	un(1, i(6243)),	-- Green Woolen Robe
+	un(1, i(6478)),	-- Rat Stompers
 	
 	
 	

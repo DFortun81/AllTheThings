@@ -844,6 +844,14 @@ _.Zones =
 						["sourceQuests"] = { 13998 },	-- In Fungus we Trust
 					}),
 					nlq({     -- Legacy Quests 
+						qh(899, {	-- Consumed by Hatred
+							un(34, i(5314)),	-- Boar Hunter's Cape
+							un(34, i(6477)),	-- Grassland Sash
+						}),
+						qh(868, {	-- Egg Hunt
+							un(34, i(6503)),	-- Harlequin Robes
+							un(34, i(6502)),	-- Violet Scale Armor
+						}),
 						qh(1503, {	-- Forged Steel
 							["g"] = {
 								un(34, i(7326)),	-- Thun'grim's Axe
@@ -862,9 +870,17 @@ _.Zones =
 							un(34, i(5324)),	-- Engineer's Hammer
 							un(34, i(5325)),	-- Welding Shield
 						}),
+						qh(888, {	-- Stolen Booty
+							un(34, i(5337)),	-- Wayfaring Gloves
+							un(34, i(5320)),	-- Padded Lamellar Boots
+						}),
 						qh( 863, {	-- The Escape
 							un(34, i(5326)),	-- Flaring Baton
 							un(34, i(5327)),	-- Greasy Tinker's Pants
+						}),
+						qh( 891, {	-- The Guns of Northwatch
+							un(34, i(5309)),	-- Privateer Musket
+							un(34, i(5310)),	-- Sea Dog Britches
 						}),
 					}),
 				}),

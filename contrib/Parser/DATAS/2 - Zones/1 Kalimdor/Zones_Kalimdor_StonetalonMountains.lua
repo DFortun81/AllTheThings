@@ -808,6 +808,12 @@ _.Zones =
 						["qg"] = 41664,	-- Salsbury the "Help"
 						["sourceQuests"] = { 25925 },	-- Thal'darah's Vengeance
 					}),
+					nlq({     -- Legacy Quests 
+						qh(1058, {	-- Jin'Zil's Forest Magic
+							un(34, i(6664)),	-- Voodoo Mantle
+							un(34, i(6665)),	-- Hexed Bracers
+						}),
+					}),
 				}),
 				n(-16, { -- Rares	
 					n(50812, { 		-- Arae
