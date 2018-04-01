@@ -260,6 +260,13 @@ _.Zones =
 						i(63151),
 					})),
 					nlq({     -- Legacy Quests 
+						qa(719, {	-- A Dwarf and His Tools
+							un(34, i(4978)),	-- Ryedol's Hammer
+						}),
+						qdg(qh(4134, {	-- Lost Thunderbrew Recipe
+							un(34, i(11964)),	-- Swiftstrike Cudgel
+							un(34, i(12000)),	-- Limb Cleaver
+						})),
 						q(1137, {	-- News for Fizzle
 							un(34, i(6729)),	-- Fizzle's Zippy Lighter
 							un(34, i(6732)),	-- Gnomish Mechanic's Gloves

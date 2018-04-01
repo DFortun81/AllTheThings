@@ -38,6 +38,38 @@ _.NeverImplemented =
 	i(142526), -- Glaive of the Fallen
 	i(134110), -- Hidden Helm
 	i(134111), -- Hidden Cloak
+	un(1, i(3738)),	-- Brewing Rod
+	un(1, i(1216)),	-- Frost Bracers
+	un(1, i(32482)),	-- Touch of Victory
+	un(1, i(34138)),	-- Enchanted White Wand
+	un(1, i(34139)),	-- Enchanted Crimson Wand
+	un(1, i(34144)),	-- Branch of Destruction
+	un(1, i(34145)),	-- Rod of Devastation
+	un(1, i(34146)),	-- Red Death
+	un(1, i(34147)),	-- Silverstave
+	un(1, i(34148)),	-- Purified Silverstave
+	un(1, i(34149)),	-- Lightstave
+	un(1, i(58505)),	-- ObsoleteQA Combat Test Caster DPS Wand 2
+	un(1, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
+	un(1, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
+	un(1, i(65878)),	-- Charbelching Wand
+	un(1, i(109384)),	-- 6.0 QA Combat Test Caster DPS Wand
+	un(1, i(23459)),	-- High Warlord's Battle Mace
+	un(1, i(32173)),	-- Chancellor's Bonecracker
+	un(1, i(32176)),	-- Chancellor's Pummeler
+	un(1, i(38468)),	-- Kalu'ak Peacebringer
+	un(1, i(107390)),	-- Obliterator Firing Lever
+	un(1, i(108058)),	-- Draenic Steel Mace
+	un(1, i(108154)),	-- Hardened Draenic Steel Mace
+	un(1, i(108238)),	-- Peerless Draenic Steel Mace
+	un(1, i(108239)),	-- Peerless Draenic Steel Mace
+	un(1, i(108240)),	-- Peerless Draenic Steel Mace
+	un(1, i(108241)),	-- Peerless Draenic Steel Mace
+	un(1, i(115296)),	-- Spectral Warmace
+	un(1, i(115299)),	-- Spectral Scepter
+	
+	
+	
 	un(1, i(44972)), -- Alarming Clockbot (NOT IN USE)
 	un(1, i(24137)), -- PH Plate Ramparts Reward
 	un(1, i(33964)), -- Helm of the Stormcaller - Never Added

@@ -535,6 +535,9 @@ _.Zones =
 					qpvp(qg(14983, qa(8105))),	-- The Battle for Arathi Basin!
 					qpvp(qg(15021, qh(8120))),	-- The Battle for Arathi Basin!		--]]
 					nlq({     -- Legacy Quests 
+						q( 662, {	-- Deep Sea Salvage
+							un(34, i(4511)),	-- Black Water Hammer
+						}),						
 						q( 666, {	-- Sunken Treasure
 							un(34, i(4547)),	-- Gnomish Zapper
 							un(34, i(4548)),	-- Servomechanic Sledgehammer

@@ -670,42 +670,45 @@ _.Zones =
 							},
 							["description"] = "Morganth was removed and Doane has taken his place. Blizzard used same npcID.",
 						}),	
+						n(545, {	-- Murloc Tidecaller
+							un(7, i(1473)),	-- Riverside Staff
+						}),
 						n(434, { 	-- Rabid Shadowhide Gnoll
-							un(7, i(1460)), 	-- Shadowhide Two-Handed Sword 
+							un(7, i(1460)),	-- Shadowhide Two-Handed Sword 
 						}),							
 						n(445, { 	-- Redridge Alpha
-							un(7, i(1218)), 	-- Heavy Gnoll War Club 
+							un(7, i(1218)),	-- Heavy Gnoll War Club 
 						}),	
 						n(446, { 	-- Redridge Basher
-							un(7, i(1440)), 	-- Gnoll Skull Basher 
+							un(7, i(1440)),	-- Gnoll Skull Basher 
 						}),							
 						n(426, { 	-- Redridge Brute
-							un(7, i(1214)), 	-- Gnoll Punisher 
+							un(7, i(1214)),	-- Gnoll Punisher 
 						}),
 						n(580, { 	-- Redridge Drudger
-							un(7, i(1220)), 	-- Lupine Axe 
+							un(7, i(1220)),	-- Lupine Axe 
 						}),							
 						n(423, { 	-- Redridge Mongrel 
 							un(7, i(1211)),	-- Gnoll War Harness
 						}),
 						n(424, { 	-- Redridge Poacher
-							un(7, i(1219)), 	-- Redridge Machete 
+							un(7, i(1219)),	-- Redridge Machete 
 						}),
 						n(579, { 	-- Shadowhide Assassin
-							un(7, i(1459)), 	-- Shadowhide Scalper
+							un(7, i(1459)),	-- Shadowhide Scalper
 						}),							
 						n(433, { 	-- Shadowhide Gnoll
-							un(7, i(1457)), 	-- Shadowhide Mace 
+							un(7, i(1457)),	-- Shadowhide Mace 
 						}),	
 						n(431, { 	-- Shadowhide Slayer
-							un(7, i(1458)), 	-- Shadowhide Maul
-							un(7, i(1461)),		-- Slayer's Battle Axe
+							un(7, i(1458)),	-- Shadowhide Maul
+							un(7, i(1461)),	-- Slayer's Battle Axe
 						}),
 						n(568, { 	-- Shadowhide Warrior
 							un(7, i(2175)),	-- Shadowhide Battle Axe
 						}),
 						n(442, { 	-- Tarantula
-							un(7, i(1287)), 	-- Giant Tarantula Fang 
+							un(7, i(1287)),	-- Giant Tarantula Fang 
 						}),
 					}),						
 				}),					

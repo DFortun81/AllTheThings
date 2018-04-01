@@ -12,9 +12,9 @@ _.WorldEvents =
 							i(51974),	-- Enumerated Shoulderpads
 							i(51974),	-- Enumerated Shoulderpads
 							i(51972),	-- Enumerated Bracers
-							i(51968),	-- Enumerated Wrap
-							i(51973),	-- Enumerated Handwraps
 							un(2, i(51971)),	-- Enumerated Belt
+							i(51968),	-- Enumerated Wrap*
+							i(51973),	-- Enumerated Handwraps
 							i(51967),	-- Enumerated Sandals
 							i(51984),	-- Stalwart Shoulderpads
 							i(51984),	-- Stalwart Shoulderpads

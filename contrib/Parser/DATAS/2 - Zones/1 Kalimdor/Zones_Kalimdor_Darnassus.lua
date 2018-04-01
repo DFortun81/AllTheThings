@@ -213,12 +213,14 @@ _.Zones =
 					})),
 					qg(67940, qa(32414)),	-- Darnassus Attacked? (QG in Krasarang Wilds)
 --]]					
-					qg(7999, qa(27362, {	-- Favored of Elune
-						["groups"] = {
-							i(65483),
+					qdg(q (27362, {	-- Favored of Elune
+						["g"] = {
+							i(65483),	-- Moon Staff of Elune
 						},
-						["classes"] = {5},
-						["races"] = {4},
+						["qg"] = 7999,	-- Tyrande Whisperwind
+						["races"] = { 4 },	-- Night Elf
+						["classes"] = { 5 },	-- Priest
+--						["sourceQuests"] = {  },	-- 
 					})),
 --[[					
 					qp129(qg(4156, qa(29321))),	-- Happy as a Clam Digger
@@ -348,7 +350,18 @@ _.Zones =
 						},
 						["classes"] = {3},
 					})),
---]]					
+--]]
+					nlq({     -- Legacy Quests 
+						qa(1693, {	-- Weapons of Elunite
+							["groups"] = {
+								un(34, i(6966)),	-- Elunite Axe
+								un(34, i(6968)),	-- Elunite Hammer
+								un(34, i(6969)),	-- Elunite Dagger
+								un(34, i(6967)),	-- Elunite Sword
+							},
+							["classes"] = { 1 },	-- Warrior
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rare
 					o(240625, {		-- High Priestess' Reliquary

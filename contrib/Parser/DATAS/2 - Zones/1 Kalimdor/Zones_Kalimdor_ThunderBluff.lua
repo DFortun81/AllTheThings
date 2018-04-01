@@ -380,6 +380,10 @@ _.Zones =
 					}),	
 --]]
 					nlq({     -- Legacy Quests 
+						qh(2968, {	-- A Future Task
+							un(34, i(34421)),	-- Cave Crawler's Mail Treads
+							un(34, i(34422)),	-- Tempered Thorium Boots
+						}),
 						qh(5088, {	-- Arikara
 							un(34, i(15464)),	-- Brute Hammer
 							un(34, i(15465)),	-- Slingshot Wand

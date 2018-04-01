@@ -384,7 +384,18 @@ _.Zones =
 					qg(, qh(26964)),	-- Warchief's Command: Silverpine Forest!
 					qg(, qh(14059)),	-- We're Out of Cranberry Chutney Again?
 					qg(, qh(29428)),	-- What Now?
---]]					
+--]]
+					nlq({     -- Legacy Quests 
+						qh(1822, {	-- Heirloom Weapon
+							["g"] = {
+								un(34, i(7115)),	-- Heirloom Axe
+								un(34, i(7117)),	-- Heirloom Hammer
+								un(34, i(7116)),	-- Heirloom Dagger
+								un(34, i(7118)),	-- Heirloom Sword
+							},
+							["classes"] = { 1 },	-- Warrior
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(1911, { 	-- Deeb

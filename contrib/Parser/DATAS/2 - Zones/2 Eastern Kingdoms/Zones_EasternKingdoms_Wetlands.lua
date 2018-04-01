@@ -276,7 +276,12 @@ _.Zones =
 						i(157006), -- Old Guard's Bow
 						i(157004), -- Old Guard's Poleaxe 
 					})),
-					nlq({     -- Legacy Quests 
+					nlq({	-- Legacy Quests
+						qa(471, {	-- Apprentice's Duties
+							un(34, i(2545)),	-- Malleable Chain Leggings
+							un(34, i(3561)),	-- Resilient Poncho
+--							i(3681),	-- Recipe: Crocolisk Gumbo (not unobtainable)
+						}),
 						qa(275, {	-- Blisters on The Land
 							un(34, i(3558)),	-- Fen Keeper Robe
 							un(34, i(1273)),	-- Forest Chain

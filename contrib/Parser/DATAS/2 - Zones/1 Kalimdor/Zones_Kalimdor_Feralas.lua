@@ -473,6 +473,12 @@ _.Zones =
 						qa(2942, {	-- The Morrow Stone
 							un(34, i(9654)),	-- Cairnstone Silver
 						}),
+						qh(3129, {	-- Weapons of Spirit
+							un(34, i( 9684)),	-- Force of the Hippogryph
+							un(34, i( 9686)),	-- Spirit of the Faerie Dragon
+							un(34, i( 9683)),	-- Strength of the Treant
+							un(34, i(10652)),	-- Will of the Mountain Giant
+						}),
 					}),
 				}),
 				n(-16, { -- Rares	

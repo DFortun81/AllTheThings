@@ -515,7 +515,14 @@ _.Zones =
 --[[
 					qg(39323, qh(25188)),	-- Watershed Patrol
 					qg(3293, q(834)),	-- Winds in the Desert
---]]					
+--]]
+					nlq({     -- Legacy Quests 
+						qh(827, {	-- Skull Rock
+							un(34, i(4947)),	-- Jagged Dagger
+							un(34, i(4939)),	-- Steady Bastard Sword
+							un(34, i(4948)),	-- Stinging Mace
+						}),
+					}),	
 				}),
 				n(-16, { 	-- Rares
 	--				n(5824, { 		-- Captain Flat Tusk - no transmoggable loot			}), 

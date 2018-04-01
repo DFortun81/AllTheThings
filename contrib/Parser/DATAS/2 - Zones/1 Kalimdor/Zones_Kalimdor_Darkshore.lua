@@ -163,6 +163,16 @@ _.Zones =
 					}),
 					
 					
+					qa(13542, {	-- Against the Wind
+						["g"] = {
+							i( 52593),	-- Becalmed Bracers
+							i( 52617),	-- Very Tranquil Bracers
+							i(131283),	-- Serene Breeze Bracers
+						},
+						["qg"] = 3694,	-- Sentinel Selarin
+					}),
+					
+					
 					qa(13564, {	-- A Lost Companion
 						["g"] = {
 						},
@@ -179,6 +189,16 @@ _.Zones =
 						},
 						["qg"] = 32959,	-- Cerellean Whiteclaw
 						["sourceQuests"] = { 13529 },	-- The Corruption's Source
+					}),
+					
+					
+					qa(13560, {	-- An Ocean Not So Deep
+						["g"] = {
+							i(52652),	-- Glowing Murloc Eye
+							i(52646),	-- Shipwreck Bow
+						},
+						["qg"] = 32979,	-- Gorbold Steelhand
+						["sourceQuests"] = { 13569 },	-- The Ritual Bond
 					}),
 					
 					
@@ -216,11 +236,65 @@ _.Zones =
 					}),
 					
 					
+					qa(13547, {	-- Coaxing the Spirits
+						["g"] = {
+						},
+						["qg"] = 6887,	-- Yalda
+					}),
+					
+					
+					qa(13507, {	-- Denying Manpower
+						["g"] = {
+							i( 52659),	-- Cover of Leaves
+							i( 52597),	-- Tysha's Chestguard
+							i(131278),	-- Sentinel's Leafbough Chestpiece
+						},
+						["qg"] = 32965,	-- Sentinel Tysha Moonblade
+						["sourceQuests"] = { 13504 },	-- Shatterspear Laborers
+					}),
+					
+					
+					i(46318, {	-- Hellscream's Missive
+						qa(13591, {	-- Disturbing Connections
+							["g"] = {
+								i( 55128),	-- Silver Embossed Boots
+								i( 55129),	-- Silver Plated Belt
+								i( 52675),	-- Silver Embroidered Cloak
+								i(131292),	-- Silver Inlaid Footguards
+							},
+							["qg"] = 32862,	-- Jor'kil the Soulripper
+						}),
+					}),
+					
+					
+					qa(13515, {	-- Ending the Threat (awarded "The Shatterspear" criteria)
+						["g"] = {
+						},
+						["qg"] = 33178,	-- Huntress Sandrya Moonfall
+						["sourceQuests"] = { 13590 },	-- The Front Line
+					}),
+
+
 					qa(13599, {	-- Grimclaw's Return
 						["g"] = {
 						},
 						["qg"] = 33048,	-- Keeper Karithus
 						["sourceQuests"] = { 13569 },	-- The Ritual Bond (can only be completed after picking a "Spirit of the..." quest)
+					}),
+					
+					
+					qa(13601, {	-- In Aid of the Refugees
+						["g"] = {
+						},
+						["qg"] = 32912,	-- Sentinel Lendra
+						["sourceQuests"] = { 13519, 13596 },	-- The Twilight's Hammer & Twilight Plans
+					}),
+					
+					
+					qa(13573, {	-- Malfurion's Return
+						["g"] = {
+						},
+						["qg"] = 32987,	-- Corvine Moonrise
 					}),
 					
 					
@@ -233,6 +307,62 @@ _.Zones =
 					}),
 					
 					
+					qa(13511, {	-- One Bitter Wish
+						["g"] = {
+						},
+						["qg"] = 33055,	-- Alanndarian Nightsong
+						["sourceQuests"] = { 13508 },	-- Swift Response
+					}),
+					
+					
+					qa(13513, {	-- On the Brink
+						["g"] = {
+						},
+						["qg"] = 32966,	-- Balthule Shadowstrike
+						["sourceQuests"] = { 13507, 13509 },	-- Denying Manpower & War Supplies
+					}),
+					
+					
+					qa(13523, {	-- Power Over the Tides
+						["g"] = {
+							i( 55127),	-- Tharill's Blessing
+							i( 52662),	-- Tidal Cloak
+							i(131281),	-- Tharill's Boon
+						},
+						["qg"] = 32932,	-- Moon Priestess Tharill
+					}),
+					
+					
+					i(44979, {	-- Overseer's Orders
+						qa(13506, {	-- Reason to Worry
+							["g"] = {
+							},
+							["qg"] = 32863,	-- Shatterspear Overseer
+						}),
+					}),
+					
+					
+					qa(13570, {	-- Remembrance of Auberdine
+						["g"] = {
+							i( 52645),	-- Whiteclaw Dagger
+							i( 52641),	-- Cerellean's Dagger
+							i( 55132),	-- Darkshore Bow
+							i(156966),	-- Cerellean's Spellsword
+							i( 46325), 	-- Withers (PET!)
+						},
+						["qg"] = 32959,	-- Cerellean Whiteclaw
+						["sourceQuests"] = { 13591 },	-- Disturbing Connections
+					}),
+					
+					
+					qa(13505, {	-- Remnants of the Highborne
+						["g"] = {
+						},
+						["qg"] = 32966,	-- Balthule Shadowstrike
+						["sourceQuests"] = { 13589 },	-- The Shatterspear Invaders
+					}),
+					
+					
 					qa(13566, {	-- Ritual Materials
 						["g"] = {
 						},
@@ -240,6 +370,23 @@ _.Zones =
 						["sourceQuests"] = { 13564 },	-- A Lost Companion
 					}),
 
+					
+					qa(13504, {	-- Shatterspear Laborers
+						["g"] = {
+						},
+						["qg"] = 32965,	-- Sentinel Tysha Moonblade
+						["sourceQuests"] = { 13589 },	-- The Shatterspear Invaders
+					}),
+					
+					
+					qa(13512, {	-- Strategic Strikes
+						["g"] = {
+							i(52650),	-- Dryad's Wand
+						},
+						["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+						["sourceQuests"] = { 13507, 13509 },	-- Denying Manpower & War Supplies
+					}),
+					
 					
 					qa(13561, {	-- Solace for the Highborne
 						["g"] = {
@@ -275,6 +422,22 @@ _.Zones =
 					}),
 					
 					
+					qa(13508, {	-- Swift Response
+						["g"] = {
+						},
+						["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+						["sourceQuests"] = { 13506 },	-- Reason to Worry
+					}),
+					
+					
+					qa(13514, {	-- The Ancients' Ire
+						["g"] = {
+						},
+						["qg"] = 33176,	-- Kerlonian Evershade
+						["sourceQuests"] = { 13590 },	-- The Front Line
+					}),
+					
+					
 					qa(13520, {	-- The Boon of the Seas
 						["g"] = {
 							i(131823),	-- Diver's Waistband
@@ -305,11 +468,42 @@ _.Zones =
 					}),
 					
 					
+					qa(13590, {	-- The Front Line
+						["g"] = {
+						},
+						["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+						["sourceQuests"] = { 13513, 13512 },	-- On the Brink & Strategic Strikes
+					}),
+					
+					
+					qa(13605, {	-- The Last Refugee
+						["g"] = {
+							i( 52586),	-- Archaeologist's Dungarees
+							i( 52632),	-- Digging Staff
+							i( 52602),	-- Archaeologist's Britches
+							i(131293),	-- Archaeologist's Leggings
+						},
+						["qg"] = 33232,	-- Archaeologist Hollee
+					}),
+					
+					
 					qa(13518, {	-- The Last Wave of Survivors
 						["g"] = {
 						},
 						["qg"] = 32973,	-- Dentaria Silverglade
 						["breadcrumbQuestID"] = { 28490 },	-- Hero's Call: Darkshore!
+					}),
+
+
+					qa(13844, {	-- The Looting of Althalaxx
+						["g"] = {
+							i( 52623),	-- Wild Bark Boots
+							i( 52607),	-- Forsaken Belt
+							i( 52591),	-- Narassin's Gloves
+							i(131305),	-- Wildwood Chain Links
+						},
+						["qg"] = 34041,	-- Mathas Wildwood
+						["sourceQuests"] = { 13507, 13509 },	-- Denying Manpower & War Supplies
 					}),
 
 					
@@ -322,6 +516,43 @@ _.Zones =
 						},
 						["qg"] = 33048,	-- Keeper Karithus
 						["sourceQuests"] = { 13566, 13565, 13598 },	-- Ritual Materials, Twice Removed, & Unsavory Remedies
+					}),
+					
+					
+					qa(13589, {	-- The Shatterspear Invaders
+						["g"] = {
+						},
+						["qg"] = 32971,	-- Ranger Glynda Nal'Shea
+						["sourceQuests"] = { 13569 },	-- The Ritual Bond
+					}),
+					
+					
+					qa(13543, {	-- Three Hammers to Break
+						["g"] = {
+						},
+						["qg"] = 32987,	-- Corvine Moonrise
+					}),
+					
+					
+					qa(13510, {	-- Timely Arrival
+						["g"] = {
+							i( 52637),	-- Aynasha's Spare Sword
+							i( 52613),	-- Morra's Gloves
+							i(131279),	-- Starbreeze Gauntlets
+						},
+						["qg"] = 32964,	-- Sentinel Aynasha
+						["description"] = "To see this quest, use the cage key dropped by Rit'ko - you can pick it up during One Bitter Wish, or you can get the key without doing any other quests in the zone.",
+					}),
+					
+					
+					qa(13519, {	-- The Twilight's Hammer
+						["g"] = {
+							i( 52627),	-- Gloves of the Plate Fist
+							i( 52605),	-- Fanatical Treads
+							i(131280),	-- Lendra's Cult-Stompers
+						},
+						["qg"] = 32912,	-- Sentinel Lendra
+						["sourceQuests"] = { 13591 },	-- Disturbing Connections
 					}),
 					
 					
@@ -343,11 +574,27 @@ _.Zones =
 					}),
 				
 				
+					qa(13596, {	-- Twilight Plans
+						["g"] = {
+						},
+						["qg"] = 32912,	-- Sentinel Lendra
+						["sourceQuests"] = { 13591 },	-- Disturbing Connections
+					}),
+				
+				
 					qa(13598, {	-- Unsavory Remedies
 						["g"] = {
 						},
 						["qg"] = 33048,	-- Keeper Karithus
 						["sourceQuests"] = { 13564 },	-- A Lost Companion
+					}),
+				
+				
+					qa(13509, {	-- War Supplies
+						["g"] = {
+						},
+						["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+						["sourceQuests"] = { 13504 },	-- Shatterspear Laborers
 					}),
 				
 				
@@ -365,15 +612,6 @@ _.Zones =
 						i(52594),
 					})),
 					qg(33175, qa(13537)),	-- A Taste for Grouper
-					qg(3694, qa(13542, {	-- Against the Wind
-						i(52593),
-						i(52617),
-						i(131283),
-					})),
-					qg(32979, qa(13560, {	-- An Ocean Not So Deep
-						i(52652),
-						i(52646),
-					})),
 					qg(34301, qa(13925)),	-- An Ounce of Prevention
 					qg(33117, qa(13578, {	-- Aroom's Farewell
 						i(55133),
@@ -391,28 +629,10 @@ _.Zones =
 						i(52634),
 					})),
 					qg(32967, qa(13545)),	-- Cleansing the Afflicted
-					qg(6887, qa(13547)),	-- Coaxing the Spirits
 					qg(34301, qa(13881)),	-- Consumed
-					qg(32965, qa(13507, {	-- Denying Manpower
-						i(52659),
-						i(52597),
-						i(131278),
-					})),
-					n(32862, {	-- Jor'kil the Soulripper
-						i(46318, {	-- Hellscream's Missive
-							qa(13591, {	-- Disturbing Connections
-								i(55128),
-								i(55129),
-								i(52675),
-								i(131292),
-							}),
-						}),
-					}),
 					qg(33119, qa(13582)),	-- Elune's Fire
-					qg(33178, qa(13515)),	-- Ending the Threat
 					qg(34340, qa(13909)),	-- Got Some Flotsam?
 					qg(32912, q(26379)),	-- In Aid of the Refugees (I believe the next quest is the one active in-game - there's no quest info on wowhead for this one)
-					qg(32912, qa(13601)),	-- In Aid of the Refugees
 					qg(34301, qa(13885)),	-- In Defense of Darkshore
 					qg(32968, qa(13572, {	-- Jadefire Braziers
 						i(52608),
@@ -421,36 +641,14 @@ _.Zones =
 					})),
 					qg(34402, qa(13892)),	-- Leave No Tracks
 					qg(33166, qa(13940)),	-- Leaving the Dream
-					qg(32987, qa(13573)),	-- Malfurion's Return
 					qg(33091, qa(13902)),	-- Mounting the Offensive
 					qg(33117, qa(13576, { 	-- Mutual Aid
 						i(52656),
 						i(52587),
 					})),
 					qg(34498, qa(13953)),	-- Naga In Our Midst
-					qg(32966, qa(13513)),	-- On the Brink
-					qg(33055, qa(13511)),	-- One Bitter Wish
 					qg(11711, qa( 5713)),	-- One Shot. One Kill.
-					qg(32932, qa(13523, {	-- Power Over the Tides
-						i(55127),
-						i(52662),
-						i(131281),
-					})),
 					qg(33091, qa(13579)),	-- Protector of Ameth'Aran
-					n(32863, {	-- Shatterspear Overseer
-						i(44979, {	-- Overseer's Orders
-							qa(13506),	-- Reason to Worry
-						}),
-					}),
-					qg(32959, qa(13570, {	-- Remembrance of Auberdine
-						i(52645),
-						i(52641),
-						i(55132),
-						i(46325), 	-- PET! Withers
-						i(156966),	-- Cerellean's Spellsword
-					})),
-					qg(32966, qa(13505)),	-- Remnants of the Highborne
-					qg(32965, qa(13504)),	-- Shatterspear Laborers
 					qg(34340, qa(13893)),	-- Soggoth and Kronn
 					qg(33117, qa(13580, {	-- Soothing the Elements
 						i(52598),
@@ -459,19 +657,14 @@ _.Zones =
 					})),
 					qg(15601, q(8721)),	-- Starweave the Elder
 					qg(34402, qa(13948)),	-- Stepping Up Surveillance
-					qg(32963, qa(13512, {	-- Strategic Strikes
-						i(52650),
-					})),
 					qg(34342, qa(13912)),	-- Swamped Secrets
 					qg(34340, qa(13907)),	-- Sweeping Clean the Ruins
-					qg(32963, qa(13508)),	-- Swift Response
 					qg(33112, qa(13585)),	-- Sworn to Protect
 					qg(34343, qa(13911, {	-- The Absent-Minded Prospector
 						i(52592),
 						i(52600),
 						i(131318),
 					})),
-					qg(33176, qa(13514)),	-- The Ancients' Ire
 					qg(34422, qa(13897, {	-- The Battle for Darkshore
 						i(52616),
 						i(52655),
@@ -498,21 +691,8 @@ _.Zones =
 						i(52636),
 						i(52584),
 					})),
-					qg(32963, qa(13590)),	-- The Front Line
 					qg(33091, qa(13575)),	-- The Land Is in Their Blood
-					qg(33232, qa(13605, {	-- The Last Refugee
-						i(52586),
-						i(52632),
-						i(52602),
-						i(131293),
-					})),
 					qg(33091, qa(13577)),	-- The Last Wildkin
-					qg(34041, qa(13844, {	-- The Looting of Althalaxx
-						i(52623),
-						i(52607),
-						i(52591),
-						i(131305),
-					})),
 					qg(34423, qa(13900, {	-- The Offering to Azshara
 						i(52588),
 						i(52610),
@@ -524,7 +704,6 @@ _.Zones =
 						i(52612),
 						i(131311),
 					})),
-					qg(32971, qa(13589)),	-- The Shatterspear Invaders
 					qg(33072, qa(13895)),	-- The Slumbering Ancients
 					qg(34403, qa(13898, {	-- The Tides Turn Against Us
 						i(52644),
@@ -534,25 +713,12 @@ _.Zones =
 						i(52653),	-- Unidentified Cooking Utensil Not Transmoggable
 						i(52657),
 					})),
-					qg(32912, qa(13519, {	-- The Twilight's Hammer
-						i(52627),
-						i(52605),
-						i(131280),
-					})),
 					qg(33166, qa(13587, {	-- The Waking Nightmare
 						i(52614),
 						i(131824),
 					})),
 					qg(33119, qa(13583)),	-- The Wildkin's Oath
-					qg(32987, qa(13543)),	-- Three Hammers to Break
-					qg(32964, qa(13510, {	-- Timely Arrival
-						i(52637),
-						i(52613),
-						i(131279),
-					})),
-					qg(32912, qa(13596)),	-- Twilight Plans
 					qg(34404, qa(13896)),	-- Unearthed Knowledge
-					qg(32963, qa(13509)),	-- War Supplies
 					qg(33250, qa(13525)),	-- What's Happening to the Blackwood Furbolg? (breadcrumb quest for 13526)
 					n(48764, {	-- Telarius Voidstrider
 						i(64450, {	-- Writings of the Dark Herald							
@@ -568,6 +734,10 @@ _.Zones =
 							un(34, i(7229)),	-- Explorer's Vest
 							un(34, i(5617)),	-- Vagabond Leggings
 							un(34, i(5604)),	-- Elven Wand
+						}),
+						qa(951, {	-- Mathystra Relics
+							un(34, i(5757)),	-- Hardwood Cudgel
+							un(34, i(5615)),	-- Woodsman Sword
 						}),
 						qa(4763, {	-- The Blackwood Corrupted
 							un(34, i(15204)),	-- Moonstone Wand

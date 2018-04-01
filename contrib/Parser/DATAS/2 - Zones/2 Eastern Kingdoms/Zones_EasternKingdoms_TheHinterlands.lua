@@ -686,6 +686,10 @@ _.Zones =
 						qh(7850, {	-- Dark Vessels
 							un(34, i(19118)),	-- Nature's Breath
 						}),
+						qa(2994, {	-- Saving Sharpbeak
+							un(34, i(9651)),	-- Gryphon Rider's Stormhammer
+							un(34, i(9652)),	-- Gryphon Rider's Leggings
+						}),
 					}),
 				}),
 				n(-16, {	-- Rares

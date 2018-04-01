@@ -454,6 +454,10 @@ _.Zones =
 							un(34, i(2218)),	-- Craftsman's Dagger
 							un(34, i(1009)),	-- Compact Hammer
 						}),
+						qdg(qa(4126, {	-- Hurley Blackbreath
+							un(34, i(11964)),	-- Swiftstrike Cudgel
+							un(34, i(12000)),	-- Limb Cleaver
+						})),
 						qa(466, {	-- Search for Incendicite
 							un(34, i(3565)),	-- Beerstained Gloves
 						}),

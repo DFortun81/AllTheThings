@@ -392,6 +392,9 @@ _.Zones =
 							un(34, i(4139)),	-- Junglewalker Sandals
 							un(34, i(4123)),	-- Frost Metal Pauldrons
 						}),
+						qh(592, {	-- Saving Yenniku
+							un(34, i(4134)),	-- Nimboya's Mystical Staff
+						}),
 						qh(598, {	-- Split Bone Necklace
 							un(34, i(4137)),	-- Darkspear Shoes
 							un(34, i(4136)),	-- Darkspear Boots

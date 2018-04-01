@@ -787,7 +787,21 @@ _.Zones =
 						},
 						["classes"] = {3}, -- Hunter
 					})),
---]]					
+--]]
+					nlq({     -- Legacy Quests
+						qa(2964, {	-- A Future Task
+							un(34, i(34418)),	-- Scrying Wand
+						}),
+						qa(1682, {	-- Grey Iron Weapons
+							["g"] = {
+								un(34, i(6978)),	-- Umbral Axe
+								un(34, i(6982)),	-- Umbral Mace
+								un(34, i(6981)),	-- Umbral Dagger
+								un(34, i(6984)),	-- Umbral Sword
+							},
+							["classes"] = { 1 },	-- Warrior
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares
 					nh(51596, { 	-- Wildhammer Fact Checker
