@@ -357,6 +357,17 @@ _.Zones =
 					qg(251, qa(  106)),	-- Young Lovers
 --]]					
 --					q(7937),	-- Your Fortune Awaits You... (REMOVED?)
+					nlq({     -- Legacy Quests 
+						qa(1667, {	-- Dead-tooth Jack
+							["g"] = {
+								un(34, i(6979)),	-- Haggard's Axe
+								un(34, i(6983)),	-- Haggard's Hammer
+								un(34, i(6980)),	-- Haggard's Dagger
+								un(34, i(6985)),	-- Haggard's Sword
+							},
+							["classes"] = { 1 },	-- Warrior
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares	
 					n(51077, { 	-- Bushtail

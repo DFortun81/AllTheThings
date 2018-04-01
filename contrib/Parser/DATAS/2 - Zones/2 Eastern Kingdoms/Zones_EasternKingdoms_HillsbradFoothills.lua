@@ -782,6 +782,9 @@ _.Zones =
 						["qg"] = 2418,	-- Deathguard Samsa
 					}),
 					nlq({ 	-- Legacy Quests
+						qa(565, {	-- Bartolo's Yeti Fur Cloak
+							un(34, i(2805)),	-- Yeti Fur Cloak
+						}),
 						qa(504, {	-- Crushridge Warmongers
 							un(34, i(5249)),	-- Burning Silver
 							un(34, i(3763)),	-- Lunar Buckler

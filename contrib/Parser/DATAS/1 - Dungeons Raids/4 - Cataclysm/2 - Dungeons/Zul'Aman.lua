@@ -45,6 +45,9 @@ _.Instances =
 							},
 							["description"] = "This satchel is received by rescuing Bakkalzu from Akil'zon (eagle boss) within the time limit. The satchel spawns in the left lower alcove as you enter Akil'zon's platform.",
 						}),
+						nld({     -- Legacy
+							un(2, i(33283)),	-- Amani Punisher
+						}),
 					})),
 					cr(23576, e(187, {	-- Nalorakk
 						i(69558),	-- Spiritshield Mask
@@ -117,6 +120,9 @@ _.Instances =
 						i(69574),	-- Tusked Shoulderpads
 						i(69578),	-- Hexing Robes
 						i(69583),	-- Legguards of the Unforgiving
+						nld({	-- Legacy Zul'jin items (old NPC ID for Zul'jin is now Daakara)
+							un(2, i(33468)),	-- Dark Blessing
+						}),
 					})),
 				},
 				["Lvl"] = 85,

@@ -355,6 +355,12 @@ _.Zones =
 						i(67187),
 						i(67204),
 					})),
+					nlq({     -- Legacy Quests 
+						q(4810, {	-- Return to Tinkee
+							un(34, i(15862)),	-- Blitzcleaver
+							un(34, i(15863)),	-- Grave Scepter
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(0, { 			-- Zone Drop

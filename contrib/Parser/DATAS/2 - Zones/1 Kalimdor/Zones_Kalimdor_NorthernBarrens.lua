@@ -844,12 +844,25 @@ _.Zones =
 						["sourceQuests"] = { 13998 },	-- In Fungus we Trust
 					}),
 					nlq({     -- Legacy Quests 
-						qh(873, {	-- Isha Awak
+						qh(1503, {	-- Forged Steel
+							["g"] = {
+								un(34, i(7326)),	-- Thun'grim's Axe
+								un(34, i(7328)),	-- Thun'grim's Mace
+								un(34, i(7327)),	-- Thun'grim's Dagger
+								un(34, i(7329)),	-- Thun'grim's Sword
+							},
+							["classes"] = { 1 }	-- Warrior
+						}),
+						qh( 873, {	-- Isha Awak
 							un(34, i(5356)),	-- Branding Rod
 							un(34, i(5357)),	-- Ward of the Vale
 							un(34, i(5355)),	-- Beastmaster's Girdle
 						}),
-						qh(863, {	-- The Escape
+						qh( 902, {	-- Samophlange
+							un(34, i(5324)),	-- Engineer's Hammer
+							un(34, i(5325)),	-- Welding Shield
+						}),
+						qh( 863, {	-- The Escape
 							un(34, i(5326)),	-- Flaring Baton
 							un(34, i(5327)),	-- Greasy Tinker's Pants
 						}),

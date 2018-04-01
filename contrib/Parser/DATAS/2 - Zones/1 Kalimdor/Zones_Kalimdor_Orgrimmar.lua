@@ -1556,6 +1556,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 							un(34, i(6744)),	-- Gloves of Kapelan
 							un(34, i(6745)),	-- Swiftrunner Cape
 						}),
+						qh(3507, {	-- Betrayed
+							un(34, i(10709)),	-- Pyrestone Orb
+							un(34, i(11120)),	-- Belgrom's Hammer
+						}),
 						qc1(q(8920, { 	-- An Earnest Proposal
 							un(34, i(21996)),	-- Bracers of Heroism
 						})),

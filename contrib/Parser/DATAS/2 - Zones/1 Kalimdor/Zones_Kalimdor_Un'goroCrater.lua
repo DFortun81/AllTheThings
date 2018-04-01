@@ -298,6 +298,12 @@ _.Zones =
 					qg(9270, q(24740)),	-- Volcanic Activity
 --]]					
 --					q(24688),	-- Zen'Aliri (NEVER IMPLEMENTED)
+					nlq({     -- Legacy Quests 
+						q(4301, {	-- The Mighty U'cha
+							un(34, i(11906)),	-- Beastsmasher
+							un(34, i(11907)),	-- Beastslayer
+						}),
+					}),
 				}),
 				n(-16, {	-- Rares	
 					n(6582, { 		-- Clutchmother Zavas

@@ -463,6 +463,14 @@ END OF MICRO-HOLIDAY --]]
 								i(20696), 	-- Crystal Spiked Maul
 							}),
 						}),
+						q(9023, {	-- The Perfect Poison
+							un(34, i(22378)),	-- Ravenholdt Slicer
+							un(34, i(22379)),	-- Shivsprocket's Shiv
+							un(34, i(22377)),	-- The Thunderwood Poker
+							un(34, i(22348)),	-- Doomulus Prime
+							un(34, i(22347)),	-- Fahrad's Reloading Repeater
+							un(34, i(22380)),	-- Simone's Cultivating Hammer
+						}),
 					}),
 				}),
 				n(-16, { 	-- Rares	

@@ -371,7 +371,12 @@ _.Zones =
 					qg(45500, q(27432)),	-- Zaeldarr the Outcast
 --]]
 					nlq({     -- Legacy Quests 
-						q(6041, {	-- When Smokey Sings, I Get Violent
+						qh(6136, {	-- The Corpulent One
+							un(34, i(17002)),	-- Ichor Spitter
+							un(34, i(17003)),	-- Skullstone Hammer
+							un(34, i(17004)),	-- Sarah's Guide
+						}),
+						q( 6041, {	-- When Smokey Sings, I Get Violent
 							un(34, i(16992)),	-- Smokey's Explosive Launcher
 							un(34, i(16993)),	-- Smokey's Fireshooter
 							un(34, i(17523)),	-- Smokey's Drape

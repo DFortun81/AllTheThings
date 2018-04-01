@@ -277,6 +277,12 @@ _.Zones =
 					})),
 					qg(2150, qa(  488)),	-- Zenn's Bidding					
 --]]
+					nlq({     -- Legacy Quests 
+						qa(486, {	-- Ursal the Mauler
+							un(34, i(5459)),	-- Defender Axe
+							un(34, i(5587)),	-- Thornroot Club
+						}),
+					}),
 				}),				
 				n(-16, { 	-- Rares
 					n(2162, { 		-- Agal

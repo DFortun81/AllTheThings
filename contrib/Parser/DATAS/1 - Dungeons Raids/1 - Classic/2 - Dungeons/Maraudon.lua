@@ -86,6 +86,9 @@ _.Instances =
 							i(17737),	-- Cloud Stone
 							i(17734),	-- Helm of the Mountain
 							i(17736),	-- Rockgrip Gauntlets
+							nld({     -- Legacy
+								un(2, i(17736)), 	-- Rockgrip Gauntlets
+							}),
 						})),
 						cr(13596, e(430, {	-- Rotgrip
 							["groups"] = {
