@@ -1260,40 +1260,6 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",	
 				}),				
 				n(-2, { 	-- Vendors
-					n(120460, {	-- Impus
-						["groups"] = {
-							ach(11725, { -- Fisherfriend of the Isles
-								i(152583, { -- Underlight Emerald
-									i(133755, { -- Underlight Angler
-										["groups"] = {
-											{
-												["artifactID"] = 988, -- Fisherfriend of the Isles
-												["itemID"] = 133755, -- Underlight Angler
-												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-												["modelScale"] = 1.25,
-												["modelRotation"] = 55,
-											},
-											{
-												["artifactID"] = 989, -- Fisherfriend of the Isles
-												["itemID"] = 133755, -- Underlight Angler
-												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-												["modelScale"] = 1.25,
-												["modelRotation"] = 55,
-											},
-										},
-										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-										["modelScale"] = 1.25,
-										["modelRotation"] = 55,
-										["ignoreSource"] = true
-									}),
-								}),
-							}),
-							i(147312), -- Demon Noggin
-							i(152554), -- Desecrated Seaweed Shirt
-						},
-						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF34.0, 54.0|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-						["requiredSkill"] = 356,
-					}),
 					n(120076, { -- Treasure Master Iks'reeged
 						i(142452), -- Lingering Wyrmtongue Essence Toy
 						i(143559, { -- Wyrmtongue's Cache Key
@@ -1396,6 +1362,24 @@ _.Zones =
 							}),
 						},
 						["description"] = "|cff66ccffEbon Blade and Silver Hand armaments can only be bought with the associated classes.  \nDauntless tokens can roll any item in Legion with an iLvL 850+.  The ones featured on each token are exclusive to the tokens only. \nDauntless tokens are able to be purchased, drop off any mob in Broken Shore along with Legion Invasion bossses.|r"
+					}),
+				}),
+				n(-38, { -- Profession
+					prof(356, 7620, { -- Fishing
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2102, {	-- Impus
+								["groups"] = {
+									i(146963, {		-- Desecrated Seaweed
+										i(147312), -- Demon Noggin
+										i(152554), -- Desecrated Seaweed Shirt
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF34.0, 54.0|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requiredSkill"] = 356,
+								["creatureID"] = 120460,
+								--["factionID"] = 2102
+							}),
+						}),
 					}),
 				}),
 				n(-34, { -- World Quests

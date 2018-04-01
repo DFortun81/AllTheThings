@@ -721,7 +721,7 @@ end
 -- Quest Completion Lib
 local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
-  --print("Completed Quest ID #" .. key);
+  print("Completed Quest ID #" .. key);
   DirtyQuests[key] = true;
   rawset(t, key, value);
 end});
@@ -2711,24 +2711,34 @@ end
 
 -- Faction Lib
 app.BaseFaction = {
+	-- name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
+	-- friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = GetFriendshipReputation(factionID)
 	__index = function(t, key)
 		if key == "key" then
 			return "factionID";
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			return t.standing == 8;
+			return t.standing == (t.isFriend and 6 or 8);
 		elseif key == "text" then
-			local rgb = FACTION_BAR_COLORS[t.standing];
+			local rgb = FACTION_BAR_COLORS[t.standing + (t.isFriend and 2 or 0)];
 			return Colorize(select(1, GetFactionInfoByID(t.factionID)), RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
 		elseif key == "title" then
-			return _G["FACTION_STANDING_LABEL" .. t.standing];
+			return t.isFriend and select(7, GetFriendshipReputation(t.factionID)) or _G["FACTION_STANDING_LABEL" .. t.standing];
 		elseif key == "description" then
 			return select(2, GetFactionInfoByID(t.factionID));
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
-			return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
+			return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or t.isFriend and select(6, GetFriendshipReputation(t.factionID));
+		elseif key == "isFriend" then
+			if select(1, GetFriendshipReputation(t.factionID)) then
+				rawset(t, "isFriend", true);
+				return true;
+			else
+				rawset(t, "isFriend", false);
+				return false;
+			end
 		elseif key == "standing" then
 			return select(3, GetFactionInfoByID(t.factionID)) or 4;
 		else
@@ -6732,6 +6742,12 @@ function app:GetDataCache()
 		db = app.CreateAchievement(2188, GetTitleCache());
 		db.expanded = false;
 		db.text = "Titles (Dynamic)";
+		table.insert(g, db);
+		
+		-- Factions (Dynamic)
+		db = app.CreateAchievement(11177, GetFactionCache());
+		db.expanded = false;
+		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
 		
 		-- The Main Window's Data
