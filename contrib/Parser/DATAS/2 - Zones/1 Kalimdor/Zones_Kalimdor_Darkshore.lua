@@ -236,6 +236,17 @@ _.Zones =
 					}),
 					
 					
+					qa(13558, {	-- Call Down the Thunder
+						["g"] = {
+							i( 52596),	-- Aetherion Imbued Vest
+							i( 52622),	-- Auberdine Platemail
+							i(131285),	-- Auberdine Ringmail Tunic
+						},
+						["qg"] = 6887,	-- Yalda
+						["sourceQuests"] = { 13547 },	-- Coaxing the Spirits
+					}),
+					
+					
 					qa(13547, {	-- Coaxing the Spirits
 						["g"] = {
 						},
@@ -619,11 +630,6 @@ _.Zones =
 						i(131290),
 					})),
 					qg(34402, qa(26408)),	-- Ashes in Ashenvale 
-					qg(6887, qa(13558, {	-- Call Down the Thunder
-						i(52596),
-						i(52622),
-						i(131285),
-					})),
 					qg(33112, qa(13584, {	-- Calming the Earth
 						i(52620),
 						i(52634),
@@ -735,6 +741,9 @@ _.Zones =
 							un(34, i(5617)),	-- Vagabond Leggings
 							un(34, i(5604)),	-- Elven Wand
 						}),
+						qa(995, {	-- Escape Through Stealth
+							un(34, i(6659)),	-- Scarab Trousers
+						}),
 						qa(951, {	-- Mathystra Relics
 							un(34, i(5757)),	-- Hardwood Cudgel
 							un(34, i(5615)),	-- Woodsman Sword
@@ -743,6 +752,11 @@ _.Zones =
 							un(34, i(15204)),	-- Moonstone Wand
 							un(34, i(15202)),	-- Wildkeeper Leggings
 							un(34, i(15203)),	-- Guststorm Legguards
+						}),
+						qa(4740, {	-- WANTED: Murkdeep!
+							un(34, i(5315)),	-- Timberland Armguards
+							un(34, i(15403)),	-- Ridgeback Bracers
+							un(34, i(15404)),	-- Breakwater Girdle
 						}),
 					}),
 				}),	

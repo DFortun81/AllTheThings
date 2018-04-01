@@ -757,7 +757,12 @@ _.Zones =
 						i(2955),	-- First Mate Hat
 						i(48126),	-- Razzashi Hatchling
 						i(8494),	-- Parrot Cage (Hyacinth Macaw)
-					}),			
+					}),		
+					nld({    -- Legacy
+						n(1493, {	-- Mok'rash the Cleaver
+							i(3985),	-- Monogrammed Sash
+						}),
+					}),
 				}),
 				n(-2, {	-- Vendors
 					n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>

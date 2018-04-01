@@ -395,6 +395,12 @@ _.Zones =
 						i(56885),
 						i(157015), -- Meatface's Tenderizer 
  					})),
+					nlq({     -- Legacy Quests 
+						qh(1189, {	-- Safety First
+							un(34, i(6726)),	-- Razzeric's Customized Seatbelt
+							un(34, i(6727)),	-- Razzeric's Racing Grips
+						}),
+					}),
 				}),
 				n(-16, { 	-- Rares	
 					n(47386, { 		-- Ainamiss the Hive Queen

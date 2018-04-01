@@ -721,7 +721,12 @@ _.Zones =
 							qg(823, qa(28791)),	-- They Sent Assassins
 							qg(823, qa(28796)),	-- They Sent Assassins
 							qg(823, qa(29081)),	-- They Sent Assassins *assuming one of these/class + one for non-human, but they aren't labeled on wowhead 
-							--]] 
+							--]]
+							nlq({     -- Legacy Quests 
+								qa(346, {	-- Return to Kristoff
+									un(34, i(6095)),	-- Wandering Boots
+								}),
+							}),
 						}),
 --[[						n(-16, { -- Rares
 							n(62),	-- Gug Fatcandle (doesn't drop greens, just a 4-slot bag)
