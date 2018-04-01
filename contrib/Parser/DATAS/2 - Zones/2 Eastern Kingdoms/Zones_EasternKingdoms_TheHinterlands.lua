@@ -682,6 +682,11 @@ _.Zones =
 						["qg"] = 43157,	-- Doran Steelwing
 						["breadcrumbQuestID"] = { 26496 },	-- Down with the Vilebranch
 					}),
+					nlq({     -- Legacy Quests 
+						qh(7850, {	-- Dark Vessels
+							un(34, i(19118)),	-- Nature's Breath
+						}),
+					}),
 				}),
 				n(-16, {	-- Rares
 					n(8215, { 	-- Grimungous

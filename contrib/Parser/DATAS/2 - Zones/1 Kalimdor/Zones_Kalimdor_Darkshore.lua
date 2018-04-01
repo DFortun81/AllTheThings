@@ -216,6 +216,14 @@ _.Zones =
 					}),
 					
 					
+					qa(13599, {	-- Grimclaw's Return
+						["g"] = {
+						},
+						["qg"] = 33048,	-- Keeper Karithus
+						["sourceQuests"] = { 13569 },	-- The Ritual Bond (can only be completed after picking a "Spirit of the..." quest)
+					}),
+					
+					
 					o(194105, {	-- Buzzbox 413
 						qa(13527, {	-- No Accounting for Taste
 							["g"] = {
@@ -237,6 +245,33 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 33177,	-- Arya Autumnlight
+					}),
+					
+					
+					qa(13568, {	-- Spirit of the Moonstalker
+						["g"] = {
+						},
+						["qg"] = 33131,	-- Great Moonstalker Spirit
+						["description"] = "You can only choose one of these quests.  Moonstalker gives 10% haste, Stag gives 10% movement speed, and Thistle Bear gives 10% reduction in damage taken.",
+						["sourceQuests"] = { 13569 },	-- The Ritual Bond
+					}),
+					
+					
+					qa(13567, {	-- Spirit of the Stag
+						["g"] = {
+						},
+						["qg"] = 33048,	-- Great Stag Spirit
+						["description"] = "You can only choose one of these quests.  Stag gives 10% movement speed, Moonstalker gives 10% haste, and Thistle Bear gives 10% reduction in damage taken.",
+						["sourceQuests"] = { 13569 },	-- The Ritual Bond
+					}),
+					
+					
+					qa(13597, {	-- Spirit of the Thistle Bear
+						["g"] = {
+						},
+						["qg"] = 33132,	-- Great Thistle Bear Spirit
+						["description"] = "You can only choose one of these quests.  Thistle Bear gives 10% reduction in damage taken, Moonstalker gives 10% haste, and Stag gives 10% movement speed.",
+						["sourceQuests"] = { 13569 },	-- The Ritual Bond
 					}),
 					
 					
@@ -277,6 +312,18 @@ _.Zones =
 						["breadcrumbQuestID"] = { 28490 },	-- Hero's Call: Darkshore!
 					}),
 
+					
+					qa(13569, {	-- The Ritual Bond (awarded "The Great Animal Spirit" criteria, requires you to pick one of the three "Spirit of the..." quests)
+						["g"] = {
+							i( 52615),	-- Moonstalker Bracers
+							i( 55126),	-- Thistle Bear Girdle
+							i( 52664),	-- Cloak of the Stag
+							i(131288),	-- Moonstalker Wristwraps
+						},
+						["qg"] = 33048,	-- Keeper Karithus
+						["sourceQuests"] = { 13566, 13565, 13598 },	-- Ritual Materials, Twice Removed, & Unsavory Remedies
+					}),
+					
 					
 					qa(13522, {	-- Threat from the Water
 						["g"] = {
@@ -364,7 +411,6 @@ _.Zones =
 					qg(33119, qa(13582)),	-- Elune's Fire
 					qg(33178, qa(13515)),	-- Ending the Threat
 					qg(34340, qa(13909)),	-- Got Some Flotsam?
-					qg(33048, qa(13599)),	-- Grimclaw's Return
 					qg(32912, q(26379)),	-- In Aid of the Refugees (I believe the next quest is the one active in-game - there's no quest info on wowhead for this one)
 					qg(32912, qa(13601)),	-- In Aid of the Refugees
 					qg(34301, qa(13885)),	-- In Defense of Darkshore
@@ -411,9 +457,6 @@ _.Zones =
 						i(55134),
 						i(131291),
 					})),
-					qg(33048, qa(13568)),	-- Spirit of the Moonstalker
-					qg(33048, qa(13567)),	-- Spirit of the Stag
-					qg(33048, qa(13597)),	-- Spirit of the Thistle Bear
 					qg(15601, q(8721)),	-- Starweave the Elder
 					qg(34402, qa(13948)),	-- Stepping Up Surveillance
 					qg(32963, qa(13512, {	-- Strategic Strikes
@@ -475,12 +518,6 @@ _.Zones =
 						i(52610),
 						i(52630),
 						i(131317),
-					})),
-					qg(33048, qa(13569, {	-- The Ritual Bond
-						i(52615),
-						i(55126),
-						i(52664),
-						i(131288),
 					})),
 					qg(34301, qa(13882, {	-- The Seeds of Life
 						i(52590),
