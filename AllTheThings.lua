@@ -2566,7 +2566,7 @@ app.BaseDifficulty = {
 			end
 			local locks = t.parent.locks;
 			if locks then
-				if t.parent.sharedLockout then
+				if t.parent.isLockoutShared then
 					rawset(t, key, locks.shared);
 					return locks.shared;
 				else
@@ -2964,7 +2964,7 @@ app.BaseInstance = {
 				rawset(t, key, locks);
 				return locks;
 			end
-		elseif key == "sharedLockout" then
+		elseif key == "isLockoutShared" then
 			return false;
 		else
 			-- Something that isn't dynamic.
@@ -6192,7 +6192,7 @@ local function RowOnEnter(self)
 		if reference.illusionID and GetDataMember("ShowIllusionID") then GameTooltip:AddDoubleLine(L("ILLUSION_ID"), tostring(reference.illusionID)); end
 		if reference.instanceID then
 			if GetDataMember("ShowInstanceID") then GameTooltip:AddDoubleLine(L("INSTANCE_ID"), tostring(reference.instanceID)); end
-			GameTooltip:AddDoubleLine(L("LOCKOUT"), L(reference.sharedLockout and "SHARED" or "SPLIT"));
+			GameTooltip:AddDoubleLine(L("LOCKOUT"), L(reference.isLockoutShared and "SHARED" or "SPLIT"));
 		end
 		if reference.musicRollID and GetDataMember("ShowMusicRollID") then GameTooltip:AddDoubleLine(L("MUSIC_ROLL_ID"), tostring(reference.musicRollID)); end
 		if reference.objectID and GetDataMember("ShowObjectID") then GameTooltip:AddDoubleLine(L("OBJECT_ID"), tostring(reference.objectID)); end
@@ -6276,7 +6276,7 @@ local function RowOnEnter(self)
 			-- Contains information about an Instance (Raid or Dungeon)
 			local locks = reference.locks;
 			if locks then
-				if reference.sharedLockout and locks.shared then
+				if reference.isLockoutShared and locks.shared then
 					GameTooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));
 					for encounterIter,encounter in pairs(locks.shared.encounters) do
 						GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
