@@ -2235,7 +2235,6 @@ _.Zones =
 												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
 												["modelScale"] = 1.25,
 												["modelRotation"] = 55,
-												["u"] = 15,
 											},
 											{
 												["artifactID"] = 989, -- Fisherfriend of the Isles
@@ -2243,14 +2242,12 @@ _.Zones =
 												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
 												["modelScale"] = 1.25,
 												["modelRotation"] = 55,
-												["u"] = 15,
 											},
 										},
 										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
 										["modelScale"] = 1.25,
 										["modelRotation"] = 55,
-										["ignoreSource"] = true,
-										["u"] = 15,										
+										["ignoreSource"] = true,						
 									}),
 								}),
 							}),
