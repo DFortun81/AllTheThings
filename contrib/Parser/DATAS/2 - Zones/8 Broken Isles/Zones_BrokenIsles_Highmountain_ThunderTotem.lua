@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(1007, { 	-- The Broken Isles
 		m(1024, {	-- Highmountain
-			["maps"] = {1024, 1080},
+			["maps"] = {1080},
 			["groups"] = {
 				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
 					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",

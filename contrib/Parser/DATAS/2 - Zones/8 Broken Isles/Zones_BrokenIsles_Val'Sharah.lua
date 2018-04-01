@@ -1465,39 +1465,6 @@ _.Zones =
 --]]					
 				}),
 				n(-2, { 	-- Vendors
-					n(120456, { -- Keeper Raynae
-						["groups"] = {
-							ach(11725, { -- Fisherfriend of the Isles
-								i(152583, { -- Underlight Emerald
-									i(133755, { -- Underlight Angler
-										["groups"] = {
-											{
-												["artifactID"] = 988, -- Fisherfriend of the Isles
-												["itemID"] = 133755, -- Underlight Angler
-												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-												["modelScale"] = 1.25,
-												["modelRotation"] = 55,
-											},
-											{
-												["artifactID"] = 989, -- Fisherfriend of the Isles
-												["itemID"] = 133755, -- Underlight Angler
-												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-												["modelScale"] = 1.25,
-												["modelRotation"] = 55,
-											},
-										},
-										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-										["modelScale"] = 1.25,
-										["modelRotation"] = 55,
-										["ignoreSource"] = true
-									}),
-								}),
-							}),
-							i(147309), -- Face of the Forest
-						},
-						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF53.41, 72.86|r in Lorlathil.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-						["requiredSkill"] = 356,
-					}),
 					n(93974, { -- Leyweaver Erenyi
 						sp(185927, { i(127001) }), -- Imbued Silkweave Cinch
 					}),
@@ -1510,6 +1477,23 @@ _.Zones =
 						i(139596), -- Pauldrons of Entwined Roots
 						--i(140652), --Seed of Solar Fire - Druid Artifact Skin
 						i(140667), -- Tabard of the Dreamweavers
+					}),
+				}),
+				n(-38, { -- Profession
+					prof(356, 7620, { -- Fishing
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2098, {	-- Keeper Raynae
+								["groups"] = {
+									i(146959, {		-- Corrupted Globule
+										i(147309), 	-- Face of the Forest
+										--i(152565),	-- Recipe: Feast of the Fishes
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF53.41, 72.86|r in Lorlathil.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requiredSkill"] = 356,
+								["creatureID"] = 120456
+							}),
+						}),
 					}),
 				}),
 				n(-34, { -- World Quests
