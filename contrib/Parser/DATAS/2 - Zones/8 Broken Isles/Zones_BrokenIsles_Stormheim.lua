@@ -1357,40 +1357,6 @@ _.Zones =
 --]]
 				}),
 				n(-2, { -- Vendors
-					n(120458, { -- Corbyn
-						["groups"] = {
-							ach(11725, { -- Fisherfriend of the Isles
-								i(152583, { -- Underlight Emerald
-									i(133755, { -- Underlight Angler
-										["groups"] = {
-											{
-												["artifactID"] = 988, -- Fisherfriend of the Isles
-												["itemID"] = 133755, -- Underlight Angler
-												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-												["modelScale"] = 1.25,
-												["modelRotation"] = 55,
-											},
-											{
-												["artifactID"] = 989, -- Fisherfriend of the Isles
-												["itemID"] = 133755, -- Underlight Angler
-												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-												["modelScale"] = 1.25,
-												["modelRotation"] = 55,
-											},
-										},
-										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-										["modelScale"] = 1.25,
-										["modelRotation"] = 55,
-										["ignoreSource"] = true
-									}),
-								}),
-							}),
-							i(147307), -- Carved Wooden Helm
-							i(152574), -- Corbyn's Beacon
-						},
-						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.5, 10.7|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-						["requiredSkill"] = 356,
-					}),
 					n(98367, { -- Tigrid the Charmer <Enchantress>
 						sp(191074, { i(128533) }), -- Enchanted Cauldron
 						sp(191075, { i(128534) }), -- Enchanted Torch
@@ -1409,6 +1375,23 @@ _.Zones =
 						i(140579), -- Valarjar Tabard
 						i(140579),
 						--i(140656), -- Rod of the Ascended - Priest Artifact Appearance item
+					}),
+				}),
+				n(-38, { -- Profession
+					prof(356, 7620, { -- Fishing
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2100, {	-- Corbyn
+								["groups"] = {
+									i(146961, {		-- Shiny Bauble
+										i(147307), -- Carved Wooden Helm
+										i(152574), -- Corbyn's Beacon
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.5, 10.7|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requiredSkill"] = 356,
+								["creatureID"] = 120458
+							}),
+						}),
 					}),
 				}),
 				n(-34, { -- World Quests

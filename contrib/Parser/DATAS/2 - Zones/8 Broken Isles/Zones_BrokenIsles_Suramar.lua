@@ -1461,39 +1461,6 @@ _.Zones =
 						sp(194792, { i(128904) }), -- Gravenscale Leggings
 						sp(194793, { i(128901) }), -- Gravenscale Treads
 					}),
-					n(120459, { -- Shaleth
-						["groups"] = {
-							ach(11725, { -- Fisherfriend of the Isles
-								i(152583, { -- Underlight Emerald
-									i(133755, { -- Underlight Angler
-										["groups"] = {
-											{
-												["artifactID"] = 988, -- Fisherfriend of the Isles
-												["itemID"] = 133755, -- Underlight Angler
-												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-												["modelScale"] = 1.25,
-												["modelRotation"] = 55,
-											},
-											{
-												["artifactID"] = 989, -- Fisherfriend of the Isles
-												["itemID"] = 133755, -- Underlight Angler
-												["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-												["modelScale"] = 1.25,
-												["modelRotation"] = 55,
-											},
-										},
-										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-										["modelScale"] = 1.25,
-										["modelRotation"] = 55,
-										["ignoreSource"] = true
-									}),
-								}),
-							}),
-							i(147311), -- Replica Gondola
-						},
-						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.7, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-						["requiredSkill"] = 356,
-					}),
 					n(92265, { -- Urael <Nal'ryssa's Minion>
 						sp(182948, { i(123913) }), -- Demonsteel Helm
 						sp(182946, { i(123915) }), -- Demonsteel Pauldrons
@@ -1503,6 +1470,22 @@ _.Zones =
 						sp(182945, { i(123916) }), -- Demonsteel Waistguard
 						sp(182947, { i(123914) }), -- Demonsteel Greaves
 						sp(182950, { i(123911) }), -- Demonsteel Boots
+					}),
+				}),
+				n(-38, { -- Profession
+					prof(356, 7620, { -- Fishing
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2101, {	-- Sha'leth
+								["groups"] = {
+									i(146962, {		-- Golden Minnow
+										i(147311), 	-- Replica Gondola
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.7, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requiredSkill"] = 356,
+								["creatureID"] = 120459
+							}),
+						}),
 					}),
 				}),
 				n(-34, { -- World Quests
