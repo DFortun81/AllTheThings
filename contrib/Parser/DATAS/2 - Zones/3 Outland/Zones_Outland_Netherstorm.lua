@@ -2066,7 +2066,7 @@ _.Zones =
 				}),
 				n(  0, {	-- Zone Drop -- ALL MOBS' LOOT COMES FROM 20520 ETHEREUM PRISONER ON WOWHEAD
 					["groups"] = {
-						i(29460, {	-- Ethereum Prison Key (required to summon mobs)
+						i(29460, {	-- Ethereum Prison Key (required to summon/"release" mobs)
 							n(20785, {	-- Fel Tinkerer Zortan
 								dr(01.5, i(31581)),	-- Slatesteel Boots
 								dr(01.4, i(31565)),	-- Skystalker's Boots
