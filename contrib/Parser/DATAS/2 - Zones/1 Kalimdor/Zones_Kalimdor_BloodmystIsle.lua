@@ -274,6 +274,17 @@ _.Zones =
 						dr(24, i(31256)),	-- Silvermoon Armor
 					}), 
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),--]]
 			},
 			["achievementID"] = 861,
 			["Lvl"] = 10,

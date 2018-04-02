@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(81, {		-- Stonetalon Mountains
 			["groups"] = {			
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 --[[					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -98,7 +98,7 @@ _.Zones =
 					}),		
 --]]				
 				}),					
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(487), 	-- Alpine Chipmunk
 					p(488), 	-- Coral Snake
 					p(633), 	-- Mountain Skunk
@@ -117,7 +117,7 @@ _.Zones =
 					})),
 					qg(66137, qh(31862)),	-- Zonya the Sadist
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qh(26002, {	-- Alliance Attack Plans
 						["groups"] = {
 						},
@@ -808,14 +808,8 @@ _.Zones =
 						["qg"] = 41664,	-- Salsbury the "Help"
 						["sourceQuests"] = { 25925 },	-- Thal'darah's Vengeance
 					}),
-					nlq({     -- Legacy Quests 
-						qh(1058, {	-- Jin'Zil's Forest Magic
-							un(34, i(6664)),	-- Voodoo Mantle
-							un(34, i(6665)),	-- Hexed Bracers
-						}),
-					}),
 				}),
-				n(-16, { -- Rares	
+				n(-16, {	-- Rares	
 					n(50812, { 		-- Arae
 						dr(	82	, i(	6612	)), --	Sage's Boots
 						dr(	1.2	, i(	9818	)), --	Fortified Chain
@@ -1069,15 +1063,9 @@ _.Zones =
 						dr(	1.4	, i(	6614	)), --	Sage's Cloak
 						dr(	1.2	, i(	6616	)), --	Sage's Pants
 						dr(	1	, i(	9832	)), --	Scaled Leather Gloves
-					}), 
-					nld({     -- Legacy
-						n(4015, { 	-- Pridewing Patriarch
-							i(5751), 	-- Webwing Cloak
-							i(5752), 	-- Wyvern Tailspike
-						}),
-					}),											
+					}), 									
 				}),
-				n(-2, {	-- Vendors
+				n (-2, {	-- Vendors
 					h(n(9549, {	-- Borand <Bowyer>
 						i(11304),	-- Fine Longbow
 					})),
@@ -1111,6 +1099,25 @@ _.Zones =
 						i(131882),	-- Krom'gar Sergeant's Mesh Boots
 						i(131883),	-- Krom'gar Sergeant's Chain Boots
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qh(1058, {	-- Jin'Zil's Forest Magic
+								un(34, i(6664)),	-- Voodoo Mantle
+								un(34, i(6665)),	-- Hexed Bracers
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(4015, { 	-- Pridewing Patriarch
+								un(7, i(5751)), 	-- Webwing Cloak
+								un(7, i(5752)), 	-- Wyvern Tailspike
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 847,

@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(161, {	-- Tanaris
 			["groups"] = {			
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -127,7 +127,7 @@ _.Zones =
 					}),
 --]]
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(484), 	-- Desert Spider
 					p(430), 	-- Gold Beetle
 					desc(p(1161), "Caverns of Time is located in Eastern Tanaris. This pet can be found within the main cavern and the pathway leading to it."), -- Infinite Whelpling
@@ -138,7 +138,7 @@ _.Zones =
 					p(492), 	-- Stinkbug
 					p(432), 	-- Stripe-Tailed Scorpid
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qg(38706, q(25072,  {  -- A Few Good Goblins
 						i(56856),
 						i(56857),
@@ -395,14 +395,8 @@ _.Zones =
 						i(56885),
 						i(157015), -- Meatface's Tenderizer 
  					})),
-					nlq({     -- Legacy Quests 
-						qh(1189, {	-- Safety First
-							un(34, i(6726)),	-- Razzeric's Customized Seatbelt
-							un(34, i(6727)),	-- Razzeric's Racing Grips
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(47386, { 		-- Ainamiss the Hive Queen
 						dr(	3	, i(	9937	)), --	Abjurer's Bands
 						dr(	3	, i(	9938	)), --	Abjurer's Cloak
@@ -1146,7 +1140,7 @@ _.Zones =
 						dr(	1	, i(	9911	)), --	Royal Trousers
 					}), 
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
 						i(29184),	-- Timewarden's Leggings
 						i(29185),	-- Continuum Blade
@@ -1775,6 +1769,21 @@ _.Zones =
 							i(7063),	-- Crimson Silk Robe
 						}),
 					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qh(1189, {	-- Safety First
+								un(34, i(6726)),	-- Razzeric's Customized Seatbelt
+								un(34, i(6727)),	-- Razzeric's Racing Grips
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 851,

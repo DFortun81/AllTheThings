@@ -972,12 +972,6 @@ _.Zones =
 						["sourceQuests"] = {13868},
 					})),
 					qg(40895, qa(25607)),	-- Ze Gnomecorder (No Prereq)
-					nlq({     -- Legacy Quests 
-						qa(1044, {	-- Answered Questions
-							un(34, i(5817)),	-- Lunaris Bow
-							un(34, i(5818)),	-- Moonbeam Wand
-						}),
-					}),
 				}),
 				n(-16, { 	-- Rares
 					n(3773, { 	-- Akkrilus
@@ -1324,11 +1318,6 @@ _.Zones =
 						dr(01.0, i(9806)),	-- Superior Gloves
 						dr(01.0, i(9807)),	-- Superior Shoulders
 					}),
-					nld({     -- Legacy
-						na(3808, { 	-- Forsaken Dark Stalker
-							i(1351),	-- Fingerbone Bracers
-						}),
-					}),
 				}),
 				n(-2, { 	-- Vendor
 					na(3951, { 	-- Bhaldaran Ravenshade (_)
@@ -1416,6 +1405,24 @@ _.Zones =
 						i(17062), 	-- Recipe Cooking
 					}),
 	]]--
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qa(1044, {	-- Answered Questions
+								un(34, i(5817)),	-- Lunaris Bow
+								un(34, i(5818)),	-- Moonbeam Wand
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							na(3808, { 	-- Forsaken Dark Stalker
+								un( 7, i(1351)),	-- Fingerbone Bracers
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 845,

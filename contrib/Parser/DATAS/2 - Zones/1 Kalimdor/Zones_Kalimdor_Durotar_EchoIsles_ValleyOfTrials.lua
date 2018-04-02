@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(4, {		-- Durotar
 			["groups"] = {
-				n(-3, { 	-- Holidays				
+				n( -3, {	-- Holidays				
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -276,7 +276,7 @@ _.Zones =
 					}),
 --]]
 				}),		
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
 					p(468), 	-- Creepy Crawly
 					p(467), 	-- Dung Beetle
@@ -320,7 +320,7 @@ _.Zones =
 					qg(63061, qh(31570)), 	-- Got one!
 					qg(66126, qh(31818)),	-- Zunta
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[				
 					qg(56013, q(31450)),	-- A New Fate (QG on The Wandering Isle)
 					qg(101035, qh(41002, {	-- A Weapon of the Horde
@@ -516,15 +516,8 @@ _.Zones =
 					qg(39323, qh(25188)),	-- Watershed Patrol
 					qg(3293, q(834)),	-- Winds in the Desert
 --]]
-					nlq({     -- Legacy Quests 
-						qh(827, {	-- Skull Rock
-							un(34, i(4947)),	-- Jagged Dagger
-							un(34, i(4939)),	-- Steady Bastard Sword
-							un(34, i(4948)),	-- Stinging Mace
-						}),
-					}),	
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 	--				n(5824, { 		-- Captain Flat Tusk - no transmoggable loot			}), 
 					n(5823, { 		-- Death Flayer
 						dr(	17	, i(	68744	)), --	Imbued Pioneer Cloak
@@ -581,7 +574,7 @@ _.Zones =
 	--				n(5826, { 		-- Geolord Mottle -- no transmoggable loot			}),
 	--				n(5809, { 		-- Sergeant Curtis -- no transmoggable loot			}), 
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					h(n(113615, {	-- Ravika <Darkspear Quartermaster>
 						["groups"] = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
@@ -599,6 +592,22 @@ _.Zones =
 						i(8591),	-- Whistle of the Turquoise Raptor
 						i(8592),	-- Whistle of the Violet Raptor
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qh(827, {	-- Skull Rock
+								un(34, i(4947)),	-- Jagged Dagger
+								un(34, i(4939)),	-- Steady Bastard Sword
+								un(34, i(4948)),	-- Stinging Mace
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 				m(891, { 	-- Echo Isles
 					["groups"] = {
@@ -865,7 +874,7 @@ _.Zones =
 							})),
 							qg(37969, qh(24626)),	-- Young and Vicious
 						}),
-						n(-2, { 	-- Vendors
+						n( -2, { 	-- Vendors
 							h(n(113615, {	-- Ravika <Darkspear Quartermaster>
 								i(97901),	-- Griftah's Authentic Troll Shoes
 								i(97919),	-- Whole-Body Shinka' Toy

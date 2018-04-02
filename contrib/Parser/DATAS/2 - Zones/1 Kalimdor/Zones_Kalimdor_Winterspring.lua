@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(281, {	-- Winterspring
 			["groups"] = {			
-				n(-3, { 	-- Holidays										
+				n( -3, {	-- Holidays										
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -126,7 +126,7 @@ _.Zones =
 					}),	
 --]]					
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(487),  	-- Alpine Chipmunk
 					p(441),  	-- Alpine Hare
 					p(1163), 	-- Anodized Robo Cub
@@ -152,7 +152,7 @@ _.Zones =
 					qg(66466, qh(31977)),	-- The Returning Champion
 					qg(66466, qa(31975)),	-- The Returning Champion
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qg(49537, q(28782, { -- A Bird of Legend (CHECK QG in game)
 						i(67168),
 						i(67185),
@@ -355,14 +355,8 @@ _.Zones =
 						i(67187),
 						i(67204),
 					})),
-					nlq({     -- Legacy Quests 
-						q(4810, {	-- Return to Tinkee
-							un(34, i(15862)),	-- Blitzcleaver
-							un(34, i(15863)),	-- Grave Scepter
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(0, { 			-- Zone Drop
 						dr(0.01, i(34535)),	-- Azure Whelpling
 					}),
@@ -899,14 +893,9 @@ _.Zones =
 						dr(	1	, i(	10084	)), --	Lord's Legguards
 						dr(	1	, i(	10180	)), --	Mystical Belt
 						dr(	1	, i(	10203	)), --	Overlord's Chestplate
-					}), 
-					nld({     	-- Legacy
-						n(7449, { 	-- Chillwind Ravager
-							i(20697), 	-- Crystalline Threaded Cape
-						}),
-					}),										
+					}),
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					n(50129, {	-- Daleohm <Blacksmithing Supplies>
 						i(12836, {	-- Plans: Frostguard
 							i(12797),	-- Frostguard
@@ -934,6 +923,24 @@ _.Zones =
 						},
 						["description"] = "Vendor only sells the plans to those who have completed the quest 'Blackrock Depths: Jewel of the Depths'|r",
 					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							q(4810, {	-- Return to Tinkee
+								un(34, i(15862)),	-- Blitzcleaver
+								un(34, i(15863)),	-- Grave Scepter
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(7449, { 	-- Chillwind Ravager
+								un(7, i(20697)), 	-- Crystalline Threaded Cape
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 857,

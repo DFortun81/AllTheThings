@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(61, {		-- Thousand Needles
 			["groups"] = {			
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {    	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -107,14 +107,14 @@ _.Zones =
 					}),
 --]]
 				}),									
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(424), 	-- Roach
 					p(414), 	-- Scorpid
 					desc(p(505), "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering."),	-- Twilight Iguana
 					qg(66452, qh(31906)),	-- Kela Grimtotem
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qa(25588, {	-- A Little Payback
 						["groups"] = {
 							i(63574),	-- Paper Roll Bracers
@@ -919,7 +919,7 @@ _.Zones =
 						["classes"] = { 7 },	-- Shaman
 					})),
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(5933, { 		-- Achellios the Banished
 						dr(	4	, i(	7482	)), --	Ranger Shoulders
 						dr(	3	, i(	9290	)), --	Field Plate Helmet
@@ -1351,7 +1351,7 @@ _.Zones =
 						}),
 					}),						
 				}),
-				n(-2, {	-- Vendors
+				n( -2, {	-- Vendors
 					n(41135, {		-- "Plucky" Johnson
 						i(11023),		-- Ancona Chicken
 					}),
@@ -1359,6 +1359,20 @@ _.Zones =
 						i(11305),	-- Dense Shortbow
 						i(11304),	-- Fine Longbow
 					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						--n(-17, {	-- Quests (Legacy)
+						--}),
+						n(-16, {	-- Rares (Legacy)
+							n(4099, { 	-- Galak Marauder
+								un(7, i(1493)),	-- Heaver Marauder Scimitar
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 846,

@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(101, {	-- Desolace
 			["groups"] = {			
-				n(-3, { 	-- Holidays
+				n( -3, { 	-- Holidays
 --[[					
 					n(-47, {    	-- Lunar Festival
 						["groups"] = {
@@ -790,20 +790,6 @@ _.Zones =
 						},
 						["sourceQuests"] = { 14223 },	-- Peace of Mind
 					}),
---[[LEGACY 			qg(12340, qh( 6143)),	-- Other Fish to Fry (REMOVED with Cata per wowhead comment)
-					qh( 1432),	-- Alliance Relations (REMOVED per wowhead comment)
-					qh( 1434),	-- Befouled by Satyr (REMOVED per wowhead comment)
-					qg(11625, q(5821)),	-- Bodyguard for Hire (REMOVED per wowhead comment)
-					qh( 6142),	-- Clam Bait (REMOVED with Cata per wowhead comment)
-					qg(11626, q(5943)),	-- Gizelton Caravan (REMOVED per wowhead comment)
-					q(1467),	-- Reagents for Reclaimers Inc. (REMOVED per wowhead comments) --]]
-					nlq({     -- Legacy Quests 
-						q(5943, {	-- Gizelton Caravan
-							un(34, i(15691)),	-- Sidegunner Shottie
-							un(34, i(15692)),	-- Kodo Brander
-							un(34, i(15695)),	-- Studded Ring Shield
-						}),
-					}),
 				}),
 				n(-16, { 	-- Rares
 					n(14229, { 		-- Accursed Slitherblade
@@ -1071,14 +1057,9 @@ _.Zones =
 						dr(	1	, i(	6610	)), --	Sage's Robe
 						dr(	1	, i(	10406	)), --	Scaled Leather Headband
 						dr(	1	, i(	9834	)), --	Scaled Leather Shoulders
-					}), 
-					nld({    	-- Legacy
-						n(4684, { 	-- Nether Sorceress
-							i(2620),	-- Augural Shroud
-						}),
-					}),					
+					}), 				
 				}),
-				n(-2, {	-- Vendors
+				n( -2, {	-- Vendors
 					h(n(12045, {	-- Hae'Wilani <Axecrafter>
 						i(12250),	-- Midnight Axe
 						i(12249),	-- Merciless Axe
@@ -1093,6 +1074,32 @@ _.Zones =
 							i(3851),	-- Solid Iron Maul
 						}),
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							q(5943, {	-- Gizelton Caravan
+								un(34, i(15691)),	-- Sidegunner Shottie
+								un(34, i(15692)),	-- Kodo Brander
+								un(34, i(15695)),	-- Studded Ring Shield
+							}),
+--[[  NO REWARDS			qg(12340, qh( 6143)),	-- Other Fish to Fry (REMOVED with Cata per wowhead comment)
+							qh( 1432),	-- Alliance Relations (REMOVED per wowhead comment)
+							qh( 1434),	-- Befouled by Satyr (REMOVED per wowhead comment)
+							qg(11625, q(5821)),	-- Bodyguard for Hire (REMOVED per wowhead comment)
+							qh( 6142),	-- Clam Bait (REMOVED with Cata per wowhead comment)
+							qg(11626, q(5943)),	-- Gizelton Caravan (REMOVED per wowhead comment)
+							q(1467),	-- Reagents for Reclaimers Inc. (REMOVED per wowhead comments) --]]
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(4684, { 	-- Nether Sorceress
+								un(7, i(2620)),	-- Augural Shroud
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 848,

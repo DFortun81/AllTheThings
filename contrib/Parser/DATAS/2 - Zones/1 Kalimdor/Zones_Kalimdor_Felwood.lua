@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(182, {	-- Felwood
 			["groups"] = {	
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -93,7 +93,7 @@ _.Zones =
 					}),
 --]]
 				}),									
-				n(-25, { -- Pet Battle
+				n(-25, {	-- Pet Battle
 					desc(p(500), "Can be found around Shatter Scar Vale near Infernal Sentries."), -- Minfernal
 					p(497), -- Tainted Cockroach
 					p(498), -- Tainted Moth
@@ -101,7 +101,7 @@ _.Zones =
 					p(420), -- Toad
 					qg(66442, qh(31907)),	-- Zoltan
 				}),
-				n(-17, { -- Quests
+				n(-17, {	-- Quests
 --[[				qg(15603, q(8723)),	-- Nightwind the Elder (HOLIDAY - Lunar Festival)
 					o(208158, {	-- Candy Bucket
 						q(28994),	-- Candy Bucket (HOLIDAY)
@@ -376,7 +376,7 @@ _.Zones =
 					qg(48492, qa(28383)),	-- Wisps of the Woods
 --]]					
 				}),
-				n(-16, { -- Rares	
+				n(-16, {	-- Rares	
 					n(14340, { 		-- Alshirr Banebreath
 						dr(03.0, i(7522)),	-- Gossamer Boots
 						dr(03.0, i(8120)),	-- Heraldic Cloak
@@ -856,7 +856,7 @@ _.Zones =
 						dr(01.4, i(9963)),	-- Warmonger's Circlet
 					}), 
 				}),
-				n(-2, {	-- vendors
+				n( -2, {	-- Vendors
 					n(48577, {	-- Ciana <Weaponsmith>
 						i(11308),	-- Sylvan Shortbow
 					}),
@@ -892,6 +892,17 @@ _.Zones =
 						}),
 					}),
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),	--]]
 			},
 			["achievementID"] = 853,
 			["Lvl"] = 45,

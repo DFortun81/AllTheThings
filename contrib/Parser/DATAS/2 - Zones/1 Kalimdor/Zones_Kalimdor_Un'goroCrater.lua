@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(201, {	-- Un'Goro Crater
 			["groups"] = {			
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -103,7 +103,7 @@ _.Zones =
 					}),		
 --]]				
 				}),						
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(632), 	-- Ash Lizard
 					p(406), 	-- Beetle
 					p(393), 	-- Cockroach
@@ -116,7 +116,7 @@ _.Zones =
 					p(502), 	-- Spotted Bell Frog
 					p(405), 	-- Tree Python
 				}),
-				n(0, { 		-- Zone Drops
+				n(  0, {	-- Zone Drops
 					i(142377, { -- Badly Broken Dark Spear
 						["groups"] = {
 							q(45044, { -- Weapon No More
@@ -134,7 +134,7 @@ _.Zones =
 						["requiredSkill"] = 164, -- Blacksmithing
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qg(9999, q(24735, { -- A Little Help From My Friends
 						i(53566),
 						i(53567),
@@ -298,12 +298,6 @@ _.Zones =
 					qg(9270, q(24740)),	-- Volcanic Activity
 --]]					
 --					q(24688),	-- Zen'Aliri (NEVER IMPLEMENTED)
-					nlq({     -- Legacy Quests 
-						q(4301, {	-- The Mighty U'cha
-							un(34, i(11906)),	-- Beastsmasher
-							un(34, i(11907)),	-- Beastslayer
-						}),
-					}),
 				}),
 				n(-16, {	-- Rares	
 					n(6582, { 		-- Clutchmother Zavas
@@ -532,17 +526,8 @@ _.Zones =
 						dr(	1.1	, i(	10190	)), --	Swashbuckler's Belt
 						dr(	1	, i(	10184	)), --	Swashbuckler's Bracers
 					}), 
-					nld({     -- Legacy
-						n(14461, { 	-- Baron Charr
-							["groups"] = {
-								i(18671), 	-- Baron Charr's Sceptre
-								i(18672), 	-- Elemental Ember
-							},
-							["description"] = "This rare was only available during the Elemental Invasions.",
-						}),
-					}),						
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					n(38561, {	-- Dramm Riverhorn <Light Armor Merchant>
 						i(12719, {	-- Plans: Runic Plate Leggings
 							i(12614),	-- Runic Plate Leggings
@@ -573,6 +558,28 @@ _.Zones =
 							i(15063),	-- Devilsaur Gauntlets
 						}),
 					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							q(4301, {	-- The Mighty U'cha
+								un(34, i(11906)),	-- Beastsmasher
+								un(34, i(11907)),	-- Beastslayer
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(14461, { 	-- Baron Charr
+								["groups"] = {
+									un(7, i(18671)), 	-- Baron Charr's Sceptre
+									un(7, i(18672)), 	-- Elemental Ember
+								},
+								["description"] = "This rare was only available during the Elemental Invasions.",
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 854,

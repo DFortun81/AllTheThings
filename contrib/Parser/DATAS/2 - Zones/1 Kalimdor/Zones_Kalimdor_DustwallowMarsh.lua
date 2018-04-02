@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(141, {	-- Dustwallow Marsh
 			["groups"] = {
-				n(-3, { 	-- Holidays
+				n( -3, { 	-- Holidays
 --[[					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -410,13 +410,7 @@ _.Zones =
 							i(131671),
 						}),
 					}),
---					qg(23843, q(27188)),	-- What's Haunting Witch Hill?						
-					nlq({     -- Legacy Quests 
-						qh(1173, {	-- Challenge Overlord Mok'Morokk
-							un(34, i(10703)),	-- Fiendish Skiv
-							un(34, i(10704)),	-- Chillnail Splinter
-						}),
-					}),
+--					qg(23843, q(27188)),	-- What's Haunting Witch Hill?
 				}),
 				n(-16, { 	-- Rares	
 					n(50784, { 		-- Anith
@@ -1072,7 +1066,7 @@ _.Zones =
 						dr(	1.1	, i(	9889	)), --	Huntsman's Cap
 					}), 
 				}),
-				n(-2, {	-- Vendors
+				n( -2, {	-- Vendors
 					h(n(6567, {	-- Ghok'kah <Tailoring Supplies>
 						i(4355, {	-- Pattern: Icy Cloak
 							i(4327),	-- Icy Cloak
@@ -1119,7 +1113,22 @@ _.Zones =
 						i(12251),	-- Big Stick
 						i(12250),	-- Midnight Axe
 					})),
-				}),	
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qh(1173, {	-- Challenge Overlord Mok'Morokk
+								un(34, i(10703)),	-- Fiendish Skiv
+								un(34, i(10704)),	-- Chillnail Splinter
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
 			},
 			["achievementID"] = 850,
 			["Lvl"] = 35,

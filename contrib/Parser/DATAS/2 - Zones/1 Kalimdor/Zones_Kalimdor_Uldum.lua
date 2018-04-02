@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(720, {	-- Uldum
 			["groups"] = {			
-				n(-3, { 	-- Holidays				
+				n( -3, {	-- Holidays				
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -116,7 +116,7 @@ _.Zones =
 					}),		
 --]]				
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(484), 	-- Desert Spider
 					p(467), 	-- Dung Beetle
 					p(631), 	-- Emerald Boa
@@ -144,7 +144,7 @@ _.Zones =
 					qg(66824, qa(31985)),	-- The Triumphant Return
 					qg(66824, qh(31986)),	-- The Triumphant Return
 				}),
-				n(-38, { 	-- Profession
+				n(-38, {	-- Profession
 					n(-188, { 	-- Mining
 						["groups"] = {
 							i(67282), 	-- Pet Elementium Geode
@@ -152,7 +152,7 @@ _.Zones =
 						["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
 					}),
 				}),				
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					o(206293, {	-- A.I.D.A. Terminal
 						q(27761,  {  -- A Disarming Distraction
 							i(65843),
@@ -479,7 +479,7 @@ _.Zones =
 						i(65802),
 					})),									
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(50063, { 		-- Akma'hat
 						dr(	56	, i(	69877	)), --	Belt of a Thousand Gaping Mouths
 						dr(	5	, i(	67143	)), --	Icebone Hauberk
@@ -511,7 +511,7 @@ _.Zones =
 	--				n(51402, { 		-- Madexx - Green -- tameable			}), 
 	--				n(51401, { 		-- Madexx - Red -- tameable			}), 
 				}),
-				n(-2, 	{	-- Vendors
+				n( -2, {	-- Vendors
 					n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>
 						i(62448),	-- Sun King's Girdle
 						i(62449),	-- Sandguard Bracers
@@ -527,6 +527,17 @@ _.Zones =
 						i(63045),	-- Reins of the Tan Riding Camel Mount
 					}),
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),	--]]
 			},
 			["achievementID"] = 4865,
 			["Lvl"] = 83,

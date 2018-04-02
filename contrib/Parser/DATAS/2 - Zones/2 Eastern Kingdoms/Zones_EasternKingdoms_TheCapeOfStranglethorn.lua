@@ -514,7 +514,7 @@ _.Zones =
 					qg(, qa(26815)),	-- Zanzil's Secret
 					qg(, qh(26533)),	-- Zanzil's Secret	
 --]]
-					nlq({     -- Legacy Quests 
+--[[					nlq({     -- Legacy Quests 
 						q( 617, {	-- Akiris by the Bundle
 							un(34, i(4117)),	-- Scorching Sash
 						}),
@@ -524,7 +524,7 @@ _.Zones =
 						qa(611, {	-- The Curse of the Tides
 							un(34, i(4120)),	-- Robe of Crystal Waters
 						}),
-					}),
+					}),--]]
 				}),
 				n(-16, { 	-- Rares
 					o(179697, {	-- Arena Treasure Chest (FFA PvP)
@@ -758,11 +758,11 @@ _.Zones =
 						i(48126),	-- Razzashi Hatchling
 						i(8494),	-- Parrot Cage (Hyacinth Macaw)
 					}),		
-					nld({    -- Legacy
+--[[					nld({    -- Legacy
 						n(1493, {	-- Mok'rash the Cleaver
 							i(3985),	-- Monogrammed Sash
 						}),
-					}),
+					}),--]]
 				}),
 				n(-2, {	-- Vendors
 					n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
@@ -833,10 +833,26 @@ _.Zones =
 					}),
 				}),
 				nld({ -- Legacy
-					n(-17, { -- Quests
-						q(600, { -- Venture Company Mining
-							i(5253), -- Goblin Igniter
-							i(4128), -- Silver Spade
+				  --n(  0, {	-- Zone Drop (Legacy)
+				  --}),
+					n(-17, {	-- Quests (Legacy)
+						q( 617, {	-- Akiris by the Bundle
+							un(34, i(4117)),	-- Scorching Sash
+						}),
+						q( 213, {	-- Hostile Takeover
+							un(34, i(4121)),	-- Gemmed Gloves
+						}),
+						qa(611, {	-- The Curse of the Tides
+							un(34, i(4120)),	-- Robe of Crystal Waters
+						}),
+						q( 600, { -- Venture Company Mining
+							un(34, i(5253)), -- Goblin Igniter
+							un(34, i(4128)), -- Silver Spade
+						}),
+					}),
+					n(-16, {	-- Rares (Legacy)
+						n(1493, {	-- Mok'rash the Cleaver
+							un( 7, i(3985)),	-- Monogrammed Sash
 						}),
 					}),
 				}),
