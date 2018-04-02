@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(41, {		-- Teldrassil
 			["groups"] = {			
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -122,7 +122,7 @@ _.Zones =
 					}),		
 --]]				
 				}),	
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(507), 	-- Crested Owl
 					p(479), 	-- Elfin Rabbit
 					p(447), 	-- Fawn
@@ -157,7 +157,7 @@ _.Zones =
 					qg(63070, qa(31826)),	-- Level Up!
 					qg(63070, qa(31555)), 	-- Got one!
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[				
 					qg(2078, qa(  475)),	-- A Troubling Breeze
 					qg(2083, qa(  997)),	-- Denalan's Earth
@@ -277,14 +277,8 @@ _.Zones =
 					})),
 					qg(2150, qa(  488)),	-- Zenn's Bidding					
 --]]
-					nlq({     -- Legacy Quests 
-						qa(486, {	-- Ursal the Mauler
-							un(34, i(5459)),	-- Defender Axe
-							un(34, i(5587)),	-- Thornroot Club
-						}),
-					}),
 				}),				
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(2162, { 		-- Agal
 						dr(	18	, i(	68744	)), --	Imbued Pioneer Cloak
 						dr(	16	, i(	68743	)), --	Imbued Infantry Cloak
@@ -328,7 +322,22 @@ _.Zones =
 	--				n(14432, { 		-- Threggil - no loot of note			}),
 	--				n(14428, { 		-- Uruson - no loot of note			}), 
 				}),
-				m(888, { 	-- Shadowglen
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qa(486, {	-- Ursal the Mauler
+								un(34, i(5459)),	-- Defender Axe
+								un(34, i(5587)),	-- Thornroot Club
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
+				m(888, {	-- Shadowglen
 					["groups"] = {
 						n(-25, { -- Pet Battle
 							p(507), -- Crested Owl

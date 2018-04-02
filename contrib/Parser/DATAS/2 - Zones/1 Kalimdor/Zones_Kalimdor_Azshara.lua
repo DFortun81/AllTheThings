@@ -898,11 +898,6 @@ _.Zones =
 						["qg"] = 36361,	-- Image of Archmage Xylem
 						["sourceQuests"] = { 14300, 24478, 24479 },	-- The Trial of Fire, The Trial of Frost, & The Trial of Shadow
 					}),
---[[ removed quests
-					q( 9364),	-- Fragmented Magic (removed with Cataclysm, Mage-only)
-					q(43301),	-- Invasion: Azshara (from Legion pre-launch)
-					q(14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)					
---]]					
 				}),
 				n(-16, { 	-- Rares	
 					n(6648, { 		-- Antilos
@@ -1101,20 +1096,35 @@ _.Zones =
 						dr(	1.2	, i(	6542	)), --	Willow Cape
 						dr(	1	, i(	9757	)), --	Gypsy Tunic
 					}), 
-					nld({     -- Legacy
-						n(44372, { 	-- Avalanchion
-							["groups"] = {
-								i(18673), 	-- Avalanchion's Stony Hide
-							},
-							["description"] = "This was only available during the Elemental Invasion.",
-						}),
-					}),						
 	--				n(107477, { 	-- N.U.T.Z. -- mob to tame			}),
 				}),
 				n(-2, {		-- Vendors
 					n(36375, {	-- Tex Vortacoil <Reagents>
 						i(68806),	-- Kalytha's Haunted Locket Toy
 					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+--[[
+						n(  0, {	-- Zone Drop (Legacy)
+						}),
+						n(-17, {	-- Quests (Legacy)
+						--removed quests
+							q( 9364),	-- Fragmented Magic (removed with Cataclysm, Mage-only)
+							q(43301),	-- Invasion: Azshara (from Legion pre-launch)
+							q(14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)
+						}),
+--]]
+						n(-16, {	-- Rares (Legacy)
+							n(44372, { 	-- Avalanchion
+								["groups"] = {
+									un(7, i(18673)), 	-- Avalanchion's Stony Hide
+								},
+								["description"] = "This was only available during the Elemental Invasion.",
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 852,

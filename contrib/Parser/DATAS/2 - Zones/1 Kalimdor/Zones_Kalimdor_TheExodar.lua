@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(471, { 	-- The Exodar
 			["groups"] = {
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -135,7 +135,7 @@ _.Zones =
 						["u"] = 29,
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(464), 	-- Grey Moth
 					p(385), 	-- Mouse
 				}),
@@ -231,7 +231,7 @@ _.Zones =
 					
 				}),
 --]]				
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					a(n(16713, {	-- Arras <Blacksmithing Supplies>
 						i(23591, {	-- Plans: Adamantite Cleaver
 							i(23503),	-- Adamantite Cleaver
@@ -681,6 +681,17 @@ _.Zones =
 						i(29744),	-- Gray Elekk
 					})),
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),	--]]
 			},
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_draenei",
 			["Lvl"] = 1,

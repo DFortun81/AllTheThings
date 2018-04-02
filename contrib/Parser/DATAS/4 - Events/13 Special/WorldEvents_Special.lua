@@ -46,6 +46,7 @@ _.WorldEvents =
 							i(51963),	-- Vigorous Stompers
 							i(51994),	-- Tumultuous Cloak*
 							i(51996),	-- Tumultuous Necklace*
+							i(51992),	-- Tumultuous Ring*
 						},		
 						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-60 range.|r",		
 						["Lvl"] = 15,		

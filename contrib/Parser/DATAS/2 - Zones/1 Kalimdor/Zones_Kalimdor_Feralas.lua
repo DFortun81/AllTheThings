@@ -464,22 +464,6 @@ _.Zones =
 					qg(7875, qh(25367)),	-- Zukk'ash Infestation
 					qg(39725, qa(25429)),	-- Zukk'ash Infestation	
 --]]
-					nlq({     -- Legacy Quests 
-						qa(1101, {	-- The Crone of the Kraul
-							un(34, i(4197)),	-- Berylline Pads
-							un(34, i(6742)),	-- Stonefist Girdle
-							un(34, i(6725)),	-- Marbled Buckler
-						}),
-						qa(2942, {	-- The Morrow Stone
-							un(34, i(9654)),	-- Cairnstone Silver
-						}),
-						qh(3129, {	-- Weapons of Spirit
-							un(34, i( 9684)),	-- Force of the Hippogryph
-							un(34, i( 9686)),	-- Spirit of the Faerie Dragon
-							un(34, i( 9683)),	-- Strength of the Treant
-							un(34, i(10652)),	-- Will of the Mountain Giant
-						}),
-					}),
 				}),
 				n(-16, { -- Rares	
 					n(5347, { 		-- Antilus the Soarer
@@ -1015,6 +999,31 @@ _.Zones =
 					n(5246, {		-- Zukk'ash Worker
 						dr(0.02, i(11474)), -- Sprite Darter Egg
 					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qa(1101, {	-- The Crone of the Kraul
+								un(34, i( 4197)),	-- Berylline Pads
+								un(34, i( 6742)),	-- Stonefist Girdle
+								un(34, i( 6725)),	-- Marbled Buckler
+							}),
+							qa(2942, {	-- The Morrow Stone
+								un(34, i( 9654)),	-- Cairnstone Silver
+							}),
+							qh(3129, {	-- Weapons of Spirit
+								un(34, i( 9684)),	-- Force of the Hippogryph
+								un(34, i( 9686)),	-- Spirit of the Faerie Dragon
+								un(34, i( 9683)),	-- Strength of the Treant
+								un(34, i(10652)),	-- Will of the Mountain Giant
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 849,

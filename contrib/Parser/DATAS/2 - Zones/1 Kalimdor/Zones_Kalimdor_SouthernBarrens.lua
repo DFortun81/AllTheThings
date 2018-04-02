@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(607, {	-- Southern Barrens
 			["groups"] = {			
-				n(-3,  {	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -1285,7 +1285,7 @@ _.Zones =
 						dr(	1	, i(	7446	)), --	Sentinel Cloak
 					}), 					
 				}),
-				n(-2,  {	-- Vendors
+				n( -2, {	-- Vendors
 					a(n(44283, {	-- Camran <Mail Armor>
 						i(4797),	-- Fiery Cloak
 						i(4798),	-- Heavy Runed Cloak
@@ -1294,6 +1294,17 @@ _.Zones =
 						i(4800),	-- Mighty Chain Pants
 					})),
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),	--]]
 			},
 			["achievementID"] = 4996,
 			["Lvl"] = 30,

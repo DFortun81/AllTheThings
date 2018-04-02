@@ -324,6 +324,17 @@ _.Zones =
 --]]					
 					-- qa(14082),	-- Learn to Ride at the Exodar (removed in Patch 4.0.1)
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}), --]]
 				m(894, { -- Ammen Vale
 					["groups"] = {
 						n(-25, { -- Pet Battle
@@ -373,9 +384,13 @@ _.Zones =
 								}),
 								qg(20233, qa( 9799)),	-- Botanical Legwork
 								qg(17071, qa(37445)),	-- Spare Parts 
-							}),	
---[[ -- no rewards - really no reason to show as legacy.					
-							nlq({	-- Legacy 
+							}),
+						}),
+						--[[				n(-40, {	-- Legacy
+						["groups"] = {
+							--n(  0, {	-- Zone Drop (Legacy)
+							--}),
+							n(-17, {	-- Quests (Legacy) (no rewards)
 								qg(16500, qa(26968, {	-- Frost Nova
 									["groups"] = {
 									},
@@ -441,10 +456,13 @@ _.Zones =
 									["groups"] = {
 									},
 									["classes"] = {10},
-								})),									
-							}),	
---]]							
-						}),						
+								})),
+							}),
+							--n(-16, {	-- Rares (Legacy)
+							--}),
+						},
+						["u"] = 12,
+					}), --]]
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Draenei_Male",					
 					["description"] = "|cff66ccffAmmen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape. |r",

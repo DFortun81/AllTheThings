@@ -199,14 +199,6 @@ _.Zones =
 					})),
 					qg(11801, q(29303)),	-- Tragedy and Family
 					qg(11801, q(29302)),	-- Unlocking the Secrets Within		
-					q(40962),	-- Dark Waters (LEGACY - quest awarded the Reins of the Grove Warden)
-					n(91331, {	-- Archimonde
-						i(133762, {	-- Remnant of Chaos
-							q(40904),	-- Shadow of the Defiler (LEGACY - started in HFC and began questline that rewarded Grove Warden)
-						}),
-					}),
-					q(8446),	-- Shrouded in Nightmare (LEGACY - item that began quest dropped from original Dragons of Nightmare)
-					q(8447),	-- Waking Legends (LEGACY - same as above)
 				}),
 --]]				
 				n(-2, {		-- Vendors
@@ -222,7 +214,26 @@ _.Zones =
 					n(12029, {	-- Narianna <Bowyer>
 						i(11308),	-- Sylvan Shortbow
 					}),
-				}),					
+				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							q(40962),	-- Dark Waters (LEGACY - quest awarded the Reins of the Grove Warden)
+							n(91331, {	-- Archimonde
+								i(133762, {	-- Remnant of Chaos
+									q(40904),	-- Shadow of the Defiler (LEGACY - started in HFC and began questline that rewarded Grove Warden)
+								}),
+							}),
+							q(8446),	-- Shrouded in Nightmare (LEGACY - item that began quest dropped from original Dragons of Nightmare)
+							q(8447),	-- Waking Legends (LEGACY - same as above)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),	--]]
 			},
 			["achievementID"] = 855,
 			["Lvl"] = 15,

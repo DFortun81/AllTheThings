@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(9, { 		-- Mulgore
 			["groups"] = {
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -122,7 +122,7 @@ _.Zones =
 					}),		
 --]]				
 				}),					
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(477),		-- Gazelle Fawn
 					p(385), 	-- Mouse
 					p(386), 	-- Prairie Dog
@@ -155,7 +155,7 @@ _.Zones =
 					qg(63067, qh(31831)),	-- Level Up!
 					qg(63067, qh(31575)),	-- Got one!
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[
 					qg(3079, qh( 6361, {	-- A Bundle of Hides
 						["groups"] = {
@@ -285,17 +285,8 @@ _.Zones =
 					})),
 --]]					
 --					qg(14822, q(7945)),	-- Your Fortune Awaits You... (QG in Darkmoon Faire, POSSIBLY LEGACY - some comments on wowhead on these quests say they haven't been available since new DMF)
-					nld({ 	-- Legacy
-						["groups"] = {
-							qh(765,  {  -- Supervisor Fizsprocket
-								i(4974),
-								i(4964),
-							}),
-						},
-						
-					}),	
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(3056, {		-- Ghost Howl
 						i(4854, {	-- Demon Scarred Cloak
 							["groups"] = {
@@ -357,7 +348,7 @@ _.Zones =
 						}),
 					}),							
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					h(n(3685, {	-- Harb Clawhoof <Kodo Mounts>
 						i(18793),	-- Great White Kodo
 						i(18794),	-- Great Brown Kodo
@@ -366,6 +357,21 @@ _.Zones =
 						i(15290),	-- Brown Kodo
 						i(46100),	-- White Kodo
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qh(765,  {  -- Supervisor Fizsprocket
+								un(34, i(4974)),
+								un(34, i(4964)),
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 				m(890, {	-- Camp Narache
 					["groups"] = {

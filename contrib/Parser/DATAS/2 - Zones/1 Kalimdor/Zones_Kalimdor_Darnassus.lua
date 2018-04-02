@@ -351,17 +351,6 @@ _.Zones =
 						["classes"] = {3},
 					})),
 --]]
-					nlq({     -- Legacy Quests 
-						qa(1693, {	-- Weapons of Elunite
-							["groups"] = {
-								un(34, i(6966)),	-- Elunite Axe
-								un(34, i(6968)),	-- Elunite Hammer
-								un(34, i(6969)),	-- Elunite Dagger
-								un(34, i(6967)),	-- Elunite Sword
-							},
-							["classes"] = { 1 },	-- Warrior
-						}),
-					}),
 				}),
 				n(-16, { 	-- Rare
 					o(240625, {		-- High Priestess' Reliquary
@@ -844,6 +833,26 @@ _.Zones =
 					a(n(4175, {		-- Vinasia <Cloth Armor Merchant>
 						i(12256),	-- Cindercloth Leggings
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qa(1693, {	-- Weapons of Elunite
+								["groups"] = {
+									un(34, i(6966)),	-- Elunite Axe
+									un(34, i(6968)),	-- Elunite Hammer
+									un(34, i(6969)),	-- Elunite Dagger
+									un(34, i(6967)),	-- Elunite Sword
+								},
+								["classes"] = { 1 },	-- Warrior
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_nightelf",

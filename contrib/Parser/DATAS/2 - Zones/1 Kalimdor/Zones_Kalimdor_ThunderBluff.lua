@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor	
 		m(362, { 	-- Thunder Bluff
 			["groups"] = {
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -165,13 +165,16 @@ _.Zones =
 						["u"] = 29,
 					}),		
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(477), 	-- Gazelle Fawn
 					p(385), 	-- Mouse
 					p(386), 	-- Prairie Dog
 					p(378), 	-- Rabbit
 				}),
-				n(-17, { 	-- Quests
+				n(-38, {	-- Profession
+					h(desc(n(-33,{i(122214)}), "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.")),
+				}),
+				n(-17, {	-- Quests
 --[[				
 					qg(3034, qh(27283, {	-- A Journey to Moonglade
 						["groups"] = {
@@ -379,24 +382,8 @@ _.Zones =
 						qh(28545),	-- Warchief's Command: Winterspring!
 					}),	
 --]]
-					nlq({     -- Legacy Quests 
-						qh(2968, {	-- A Future Task
-							un(34, i(34421)),	-- Cave Crawler's Mail Treads
-							un(34, i(34422)),	-- Tempered Thorium Boots
-						}),
-						qh(5088, {	-- Arikara
-							un(34, i(15464)),	-- Brute Hammer
-							un(34, i(15465)),	-- Slingshot Wand
-							un(34, i(15466)),	-- Clink Shield
-						}),
-						qh(1102, {	-- A Vengeful Fate
-							un(34, i(4197)),	-- Berylline Pads
-							un(34, i(6742)),	-- Stonefist Girdle
-							un(34, i(6725)),	-- Marbled Buckler
-						}),
-					}),
 				}),
-				n(-2, {	-- Vendors
+				n( -2, {	-- Vendors
 					h(n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>
 						i(64917),	-- Mantle of Thunder Bluff
 						i(64918),	-- Cape of Thunder Bluff
@@ -833,9 +820,27 @@ _.Zones =
 						["description"] = "Tabards are only obtainable by those who have earned them.|r",
 					})),
 				}),
-				n(-38, { -- Profession
-					h(desc(n(-33,{i(122214)}), "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.")),
-				}),	
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qh(2968, {	-- A Future Task
+								un(34, i(34421)),	-- Cave Crawler's Mail Treads
+								un(34, i(34422)),	-- Tempered Thorium Boots
+							}),
+							qh(5088, {	-- Arikara
+								un(34, i(15464)),	-- Brute Hammer
+								un(34, i(15465)),	-- Slingshot Wand
+								un(34, i(15466)),	-- Clink Shield
+							}),
+							qh(1102, {	-- A Vengeful Fate
+								un(34, i(4197)),	-- Berylline Pads
+								un(34, i(6742)),	-- Stonefist Girdle
+								un(34, i(6725)),	-- Marbled Buckler
+							}),
+						}),
+					},
+					["u"] = 12,
+				}),
 			},
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_tauren",
 			["Lvl"] = 1,

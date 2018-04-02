@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(11, {		-- Northern Barrens
 			["groups"] = {			
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -126,7 +126,7 @@ _.Zones =
 					}),
 --]]					
 				}),					
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
 					desc(p(474), "Can be found under large trees alongside Plainsland Cheetahs."), -- Cheetah Cub
 					p(631), 	-- Emerald Boa
@@ -165,7 +165,7 @@ _.Zones =
 						})),
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qh(29090, {	-- A Burning Threat
 						["groups"] = {
 						},
@@ -843,46 +843,6 @@ _.Zones =
 						["qg"] = 3390,	-- Apothecary Helbrim
 						["sourceQuests"] = { 13998 },	-- In Fungus we Trust
 					}),
-					nlq({     -- Legacy Quests 
-						qh(899, {	-- Consumed by Hatred
-							un(34, i(5314)),	-- Boar Hunter's Cape
-							un(34, i(6477)),	-- Grassland Sash
-						}),
-						qh(868, {	-- Egg Hunt
-							un(34, i(6503)),	-- Harlequin Robes
-							un(34, i(6502)),	-- Violet Scale Armor
-						}),
-						qh(1503, {	-- Forged Steel
-							["g"] = {
-								un(34, i(7326)),	-- Thun'grim's Axe
-								un(34, i(7328)),	-- Thun'grim's Mace
-								un(34, i(7327)),	-- Thun'grim's Dagger
-								un(34, i(7329)),	-- Thun'grim's Sword
-							},
-							["classes"] = { 1 }	-- Warrior
-						}),
-						qh( 873, {	-- Isha Awak
-							un(34, i(5356)),	-- Branding Rod
-							un(34, i(5357)),	-- Ward of the Vale
-							un(34, i(5355)),	-- Beastmaster's Girdle
-						}),
-						qh( 902, {	-- Samophlange
-							un(34, i(5324)),	-- Engineer's Hammer
-							un(34, i(5325)),	-- Welding Shield
-						}),
-						qh(888, {	-- Stolen Booty
-							un(34, i(5337)),	-- Wayfaring Gloves
-							un(34, i(5320)),	-- Padded Lamellar Boots
-						}),
-						qh( 863, {	-- The Escape
-							un(34, i(5326)),	-- Flaring Baton
-							un(34, i(5327)),	-- Greasy Tinker's Pants
-						}),
-						qh( 891, {	-- The Guns of Northwatch
-							un(34, i(5309)),	-- Privateer Musket
-							un(34, i(5310)),	-- Sea Dog Britches
-						}),
-					}),
 				}),
 				n(-16, {	-- Rares
 					n(3672, {	 	-- Boahn
@@ -1326,7 +1286,7 @@ _.Zones =
 						dr(34, i(5426)),	-- Serpent's Kiss
 					}), 
 				}),
-				n(-2, {	-- Vendors
+				n( -2, {	-- Vendors
 					n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
 						i(4797),	-- Fiery Cloak
 						i(4798),	-- Heavy Runed CLoak
@@ -1441,7 +1401,7 @@ _.Zones =
 						}),
 					})),
 				}),
-				n(0, {	-- Zone Drop
+				n(  0, {	-- Zone Drop
 					n(70997, { -- Hellscream Laborer
 						i(97821), -- Gahz'rooki's Summoning Stone
 					}),
@@ -1466,6 +1426,55 @@ _.Zones =
 					n(3384, { -- Southsea Privateer
 						i(5107), -- Deckhand's Shirt
 					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qh(899, {	-- Consumed by Hatred
+								un(34, i(5314)),	-- Boar Hunter's Cape
+								un(34, i(6477)),	-- Grassland Sash
+							}),
+							qh(868, {	-- Egg Hunt
+								un(34, i(6503)),	-- Harlequin Robes
+								un(34, i(6502)),	-- Violet Scale Armor
+							}),
+							qh(1503, {	-- Forged Steel
+								["g"] = {
+									un(34, i(7326)),	-- Thun'grim's Axe
+									un(34, i(7328)),	-- Thun'grim's Mace
+									un(34, i(7327)),	-- Thun'grim's Dagger
+									un(34, i(7329)),	-- Thun'grim's Sword
+								},
+								["classes"] = { 1 }	-- Warrior
+							}),
+							qh( 873, {	-- Isha Awak
+								un(34, i(5356)),	-- Branding Rod
+								un(34, i(5357)),	-- Ward of the Vale
+								un(34, i(5355)),	-- Beastmaster's Girdle
+							}),
+							qh( 902, {	-- Samophlange
+								un(34, i(5324)),	-- Engineer's Hammer
+								un(34, i(5325)),	-- Welding Shield
+							}),
+							qh(888, {	-- Stolen Booty
+								un(34, i(5337)),	-- Wayfaring Gloves
+								un(34, i(5320)),	-- Padded Lamellar Boots
+							}),
+							qh( 863, {	-- The Escape
+								un(34, i(5326)),	-- Flaring Baton
+								un(34, i(5327)),	-- Greasy Tinker's Pants
+							}),
+							qh( 891, {	-- The Guns of Northwatch
+								un(34, i(5309)),	-- Privateer Musket
+								un(34, i(5310)),	-- Sea Dog Britches
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 750,

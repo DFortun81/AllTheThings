@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(606, {	-- Mount Hyjal
 			["groups"] = {	
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -112,7 +112,7 @@ _.Zones =
 					}),	
 --]]
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(487), 	-- Alpine Chipmunk
 					p(632), 	-- Ash Lizard
 					p(540), 	-- Carrion Rat
@@ -127,7 +127,7 @@ _.Zones =
 					desc(p(469), "Can be found in areas where the Twilight Hammer have set up camp."), -- Twilight Beetle
 					qg(66819, q(31972)),	-- Brok
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qg(41006, q(25731, { -- A Bird in Hand
 						i(57333),
 						i(57332),
@@ -583,7 +583,7 @@ _.Zones =
 					qg(39621, q(25276)),	-- Your New Identity	
 --]]					
 				}),	
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(50057, { 		-- Blazewing
 						dr( 100, i(67236)),	-- Blazewing's Furious Kilt
 					}), 
@@ -616,7 +616,7 @@ _.Zones =
 	--				n(50058, { 		-- Terrorpene 	}), 
 --]]	
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					n(71304, {	-- Iris Moondreamer <Quartermaster>
 						cl(5, { -- Priest
 							["groups"] = {
@@ -929,6 +929,17 @@ _.Zones =
 						}),
 					}),
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),	--]]
 				m(795, {	-- Molten Front
 					["groups"] = {			
 --[[
@@ -988,7 +999,7 @@ _.Zones =
 							qg(52467, q(29143)),	-- Wisp Away
 						}),	
 --]]						
-						n(-16, { -- Rares
+						n(-16, {	-- Rares
 							o(207496, { -- Dark Iron Treasure Chest
 								["groups"] = {
 									i(67121),	-- Chestguard of the Caring Ursine
@@ -1025,7 +1036,7 @@ _.Zones =
 		--					n(54321, { 	-- Solix 	}),
 --]]		
 						}),
-						n(-2, { 	-- Vendors
+						n( -2, {	-- Vendors
 							n(52822, { -- Zen'Vorka
 								["groups"] = {
 									i(70108), -- Pyrelord Greaves
