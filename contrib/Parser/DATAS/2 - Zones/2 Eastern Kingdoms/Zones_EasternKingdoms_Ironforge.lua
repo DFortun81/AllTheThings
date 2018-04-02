@@ -1301,11 +1301,12 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
 							qa(2964, {	-- A Future Task
 								un(34, i(34418)),	-- Scrying Wand
+							}),
+							qa( 737, {	-- Forbidden Knowledge
+								un(34, i(4984)),	-- Skull of Impending Doom
 							}),
 							qa(1682, {	-- Grey Iron Weapons
 								["g"] = {
@@ -1318,6 +1319,8 @@ _.Zones =
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 					["u"] = 12,

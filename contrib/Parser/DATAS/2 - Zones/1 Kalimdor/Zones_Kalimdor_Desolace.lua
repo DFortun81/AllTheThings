@@ -1085,6 +1085,10 @@ _.Zones =
 								un(34, i(15692)),	-- Kodo Brander
 								un(34, i(15695)),	-- Studded Ring Shield
 							}),
+							q(1380, {	-- Khan Kratha
+								un(34, i(6773)),	-- Gelkis Marauder Chain
+								un(34, i(6774)),	-- Uthek's Finger
+							}),
 --[[  NO REWARDS			qg(12340, qh( 6143)),	-- Other Fish to Fry (REMOVED with Cata per wowhead comment)
 							qh( 1432),	-- Alliance Relations (REMOVED per wowhead comment)
 							qh( 1434),	-- Befouled by Satyr (REMOVED per wowhead comment)

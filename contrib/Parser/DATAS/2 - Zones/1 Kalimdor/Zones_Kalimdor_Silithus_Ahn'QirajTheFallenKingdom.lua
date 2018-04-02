@@ -986,8 +986,6 @@ END OF MICRO-HOLIDAY --]]
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
 							q(8361, { 	-- Abyssal Contacts
 								un(2, i(20603, { 	-- Bag of Spoils
@@ -1005,6 +1003,11 @@ END OF MICRO-HOLIDAY --]]
 								un(2, i(20601, { 	-- Sack of Spoils
 									un(7, i(20696)), 	-- Crystal Spiked Maul
 								})),
+							}),
+							q(8574, {	-- Stalwart's Battlegear
+								un(34, i(21184)),	-- Deeprock Bracers
+								un(34, i(21185)),	-- Earthcalm Orb
+								un(34, i(21186)),	-- Rockfury Bracers
 							}),
 							q(9023, {	-- The Perfect Poison
 								un(34, i(22378)),	-- Ravenholdt Slicer
@@ -1088,6 +1091,8 @@ END OF MICRO-HOLIDAY --]]
 								["description"] = "This rare was only available during the Elemental Invasions.",
 							}),
 						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),						
 					},
 					["u"] = 12,
 				}),

@@ -818,6 +818,9 @@ _.Zones =
 								un(34, i(6804)),	-- Windstorm Hammer
 								un(34, i(6806)),	-- Dancing Flame
 							}),
+							qh( 737, {	-- Forbidden Knowledge
+								un(34, i(4984)),	-- Skull of Impending Doom
+							}),
 							qh(1164, {	-- To Steal From Thieves
 								un(34, i(4443)),	-- Grim Pauldrons
 								un(34, i(2032)),	-- Gallan Cuffs

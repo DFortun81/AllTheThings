@@ -215,19 +215,23 @@ _.Zones =
 						i(11308),	-- Sylvan Shortbow
 					}),
 				}),
---[[				n(-40, {	-- Legacy
+				n(-40, {	-- Legacy
 					["groups"] = {
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 						n(-17, {	-- Quests (Legacy)
-							q(40962),	-- Dark Waters (LEGACY - quest awarded the Reins of the Grove Warden)
+							q(5526, {	-- Shards of the Felvine
+								un(34, i(18535)),	-- Milli's Shield
+								un(34, i(18536)),	-- Milli's Lexicon
+							}),
+--[[							q(40962),	-- Dark Waters (LEGACY - quest awarded the Reins of the Grove Warden)
 							n(91331, {	-- Archimonde
 								i(133762, {	-- Remnant of Chaos
 									q(40904),	-- Shadow of the Defiler (LEGACY - started in HFC and began questline that rewarded Grove Warden)
 								}),
 							}),
 							q(8446),	-- Shrouded in Nightmare (LEGACY - item that began quest dropped from original Dragons of Nightmare)
-							q(8447),	-- Waking Legends (LEGACY - same as above)
+							q(8447),	-- Waking Legends (LEGACY - same as above)--]]
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

@@ -765,6 +765,9 @@ _.Zones =
 								un(34, i(1273)),	-- Forest Chain
 								un(34, i(2263)),	-- Phytoblade
 							}),
+							qa(293, {	-- Cleansing the Eye
+								un(34, i(2943)),	-- Eye of Paleth
+							}),
 							qa(296, {	-- Ormer's Revenge
 								un(34, i(3493)),	-- Raptor's End
 								un(34, i(3566)),	-- Raptorbane Armor

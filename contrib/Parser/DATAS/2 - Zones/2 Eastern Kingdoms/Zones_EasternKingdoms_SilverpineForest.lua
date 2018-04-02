@@ -839,6 +839,7 @@ _.Zones =
 						n(-17, {	-- Quests (Legacy)
 							qh(451, { 	-- A Recipe for Death
 								un(34, i(3582)),	-- Acidproof Cloak
+								un(34, i(3451)),	-- Nightglow Concoction
 							}),
 							qh(99, { 	-- Arugal's Folly 
 								un(34, i(3586)),	-- Logsplitter

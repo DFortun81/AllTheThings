@@ -177,11 +177,13 @@ _.Zones =
 --[[
 					qg(17684, qa( 9642)),	-- More Irradiated Crystal Shards
 					qg(17424, qa( 9632)),	-- Newfound Allies
+--]]
 					qg(17424, qa( 9561, {	-- Nolkai's Words
 						i(23846, {	-- Nolkai's Box
 							i(23844)	-- Nolkai's Lantern
 						})
 					})),
+--[[
 					qg(17986, qa(10066)),	-- Oh, the Tangled Webs They Weave
 					qg(17554, qa( 9604, {	-- On the Wings of a Hippogryph
 						["groups"] = {

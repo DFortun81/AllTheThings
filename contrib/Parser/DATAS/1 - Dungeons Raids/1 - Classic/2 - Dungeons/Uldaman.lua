@@ -201,7 +201,22 @@ _.Instances =
 						["model"] = "World\\Generic\\Passivedoodads\\Furniture\\Containers\\Titanchest.mdx",
 						["modelScale"] = 2.1,
 						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
-					})
+					}),
+					n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qa(2240, {	-- The Hidden Chamber
+								un(34, i(9626)),	-- Dwarven Charge
+								un(34, i(9627)),	-- Explorers' League Lodestar
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
 				},
 				["Lvl"] = 30,
 				["mapID"] = 692
