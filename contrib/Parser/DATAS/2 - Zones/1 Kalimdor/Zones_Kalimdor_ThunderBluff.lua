@@ -842,6 +842,10 @@ _.Zones =
 								un(34, i(17508)),	-- Forcestone Buckler
 								un(34, i( 7749)),	-- Omega Orb
 							})),
+							qdg(qh( 914, {	-- Leaders of the Fang
+								un(34, i(6505)),	-- Crescent Staff
+								un(34, i(6504)),	-- Wingblade
+							})),
 						}),
 					},
 					["u"] = 12,

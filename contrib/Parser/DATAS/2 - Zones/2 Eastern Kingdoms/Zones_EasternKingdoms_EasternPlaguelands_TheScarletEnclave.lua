@@ -1001,6 +1001,11 @@ _.Zones =
 							q( 5942, {	-- Hidden Treasures
 								un(34, i(15857)),	-- Magebane Scion
 							}),
+							q( 5265, {	-- The Argent Hold
+								un(34, i(13246)),	-- Argent Avenger
+								un(34, i(13243)),	-- Argent Defender
+								un(34, i(13249)),	-- Argent Crusader
+							}),
 							qh(6136, {	-- The Corpulent One
 								un(34, i(17002)),	-- Ichor Spitter
 								un(34, i(17003)),	-- Skullstone Hammer

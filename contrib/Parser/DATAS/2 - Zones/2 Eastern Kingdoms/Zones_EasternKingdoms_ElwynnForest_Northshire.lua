@@ -345,10 +345,13 @@ _.Zones =
 --]]					
 					o(156561, {	-- Wanted Poster (add'l object QG 68)
 						qa(  176, { -- Wanted: "Hogger"
-							i(6085),
-							i(6084),
-							i(60219),
-							i(131199),
+							i(  6085),	-- Footman Tunic
+							i(  6084),	-- Stormwind Guard Leggings
+							i( 60219),	-- Balanced Spell Staff
+							i(131199),	-- Lion Guard Chainmail
+							nld({	-- Legacy
+								un(34, i(6215)),	-- Balanced Fighting Stick
+							}),
 						}),
 					}),
 --[[					
@@ -533,8 +536,6 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
 							qa(1667, {	-- Dead-tooth Jack
 								["g"] = {
@@ -547,6 +548,8 @@ _.Zones =
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 					["u"] = 12,

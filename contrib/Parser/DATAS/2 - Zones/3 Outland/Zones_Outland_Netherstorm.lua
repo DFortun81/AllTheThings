@@ -2064,74 +2064,10 @@ _.Zones =
 						i(30755),	-- Mag'hari Fighting Claw
 					}),
 				}),
-				n(  0, {	-- Zone Drop -- ALL MOBS' LOOT COMES FROM 20520 ETHEREUM PRISONER ON WOWHEAD
+				n(  0, {	-- Zone Drop
 					["groups"] = {
-						i(29460, {	-- Ethereum Prison Key (required to summon/"release" mobs)
-							n(20785, {	-- Fel Tinkerer Zortan
-								dr(01.5, i(31581)),	-- Slatesteel Boots
-								dr(01.4, i(31565)),	-- Skystalker's Boots
-								dr(01.4, i(31557)),	-- Windchanneller's Boots
-								dr(01.3, i(32520)),	-- Manaforged Sphere
-								dr(01.3, i(31573)),	-- Mistshroud Boots
-								dr(01.2, i(31938)),	-- Enigmatic Cloak
-								dr(01.2, i(31943)),	-- Ethereum Band
-								dr(01.2, i(31940)),	-- Ethereum Torque
-								dr(01.1, i(31939)),	-- Dark Cloak
-								dr(01.0, i(31929)),	-- Enigmatic Band
-								dr(01.0, i(31936)),	-- Fiery Cloak
-								dr(01.0, i(31926)),	-- Frigid Band
-								dr(01.0, i(31935)),	-- Frigid Cloak
-								dr(01.0, i(31937)),	-- Living Cloak
-								dr(00.9, i(31928)),	-- Dark Band
-								dr(00.9, i(31925)),	-- Fiery Band
-								dr(00.9, i(31927)),	-- Living Band
-							}),
-							
-							
-							
-							
-							
-							
-							
-							n(20786, {	-- Gul'bor <The Den Mother>
-								dr(01.5, i(31581)),	-- Slatesteel Boots
-								dr(01.4, i(31565)),	-- Skystalker's Boots
-								dr(01.4, i(31557)),	-- Windchanneller's Boots
-								dr(01.3, i(32520)),	-- Manaforged Sphere
-								dr(01.3, i(31573)),	-- Mistshroud Boots
-								dr(01.2, i(31938)),	-- Enigmatic Cloak
-								dr(01.2, i(31943)),	-- Ethereum Band
-								dr(01.2, i(31940)),	-- Ethereum Torque
-								dr(01.1, i(31939)),	-- Dark Cloak
-								dr(01.0, i(31929)),	-- Enigmatic Band
-								dr(01.0, i(31936)),	-- Fiery Cloak
-								dr(01.0, i(31926)),	-- Frigid Band
-								dr(01.0, i(31935)),	-- Frigid Cloak
-								dr(01.0, i(31937)),	-- Living Cloak
-								dr(00.9, i(31928)),	-- Dark Band
-								dr(00.9, i(31925)),	-- Fiery Band
-								dr(00.9, i(31927)),	-- Living Band
-							}),
-							n(20783, {	-- Porfus the Gem Gorger
-								dr(01.5, i(31581)),	-- Slatesteel Boots
-								dr(01.4, i(31565)),	-- Skystalker's Boots
-								dr(01.4, i(31557)),	-- Windchanneller's Boots
-								dr(01.3, i(32520)),	-- Manaforged Sphere
-								dr(01.3, i(31573)),	-- Mistshroud Boots
-								dr(01.2, i(31938)),	-- Enigmatic Cloak
-								dr(01.2, i(31943)),	-- Ethereum Band
-								dr(01.2, i(31940)),	-- Ethereum Torque
-								dr(01.1, i(31939)),	-- Dark Cloak
-								dr(01.0, i(31929)),	-- Enigmatic Band
-								dr(01.0, i(31936)),	-- Fiery Cloak
-								dr(01.0, i(31926)),	-- Frigid Band
-								dr(01.0, i(31935)),	-- Frigid Cloak
-								dr(01.0, i(31937)),	-- Living Cloak
-								dr(00.9, i(31928)),	-- Dark Band
-								dr(00.9, i(31925)),	-- Fiery Band
-								dr(00.9, i(31927)),	-- Living Band
-							}),
-							n(20789, {	-- Wrathbringer Laz-tarash
+						i(29460, {	-- Ethereum Prison Key (required to summon/"release"	 mobs)
+							n(20520, {	-- Ethereum Prisoner (multiple named mobs with the same ID once spawned)
 								dr(01.5, i(31581)),	-- Slatesteel Boots
 								dr(01.4, i(31565)),	-- Skystalker's Boots
 								dr(01.4, i(31557)),	-- Windchanneller's Boots
@@ -2152,7 +2088,8 @@ _.Zones =
 							}),
 						}),
 					},
-					["description"] = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm.  There is a chance that one of these mobs will be released when you open a prison.",
+					["description"] = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm.  There is a chance that one of these mobs will be released when you open a prison.  To loot Ethereum Prison Keys, you must first complete the quest 'A Mission of Mercy' in Netherstorm.",
+					["sourceQuests"] = { 10970 },	-- A Mission of Mercy (required to be able to find the prison keys)
 				}),
 			},
 			["Lvl"] = 66,	

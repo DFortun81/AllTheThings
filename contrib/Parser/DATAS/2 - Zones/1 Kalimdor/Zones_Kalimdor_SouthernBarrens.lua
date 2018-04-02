@@ -1294,17 +1294,22 @@ _.Zones =
 						i(4800),	-- Mighty Chain Pants
 					})),
 				}),
---[[				n(-40, {	-- Legacy
+				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
+							qh(913, {	-- Cry of the Thunderhawk
+								un(34, i(5302)),	-- Cobalt Buckler
+								un(34, i(5306)),	-- Wind Rider Staff
+								un(34, i(5299)),	-- Gloves of the Moon
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
 					},
 					["u"] = 12,
-				}),	--]]
+				}),
 			},
 			["achievementID"] = 4996,
 			["Lvl"] = 30,

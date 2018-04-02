@@ -114,11 +114,6 @@ _.Instances =
 							dr(0.3, i(2549)),	-- Staff of the Shade
 							dr(0.02, i(1978)),	-- Wolfclaw Gloves
 						}),
-						nld({    -- Legacy
-							n(4517, {	-- Death's Head Priest
-								i(3569), 	-- Vicar's Robe
-							}),
-						}),							
 					}),
 					n(74900, {			-- Kraulshaper Tukaar
 						i(6689),	-- Wind Spirit Staff
@@ -177,6 +172,24 @@ _.Instances =
 						i(6692),	-- Pronged Reaver
 						i(6694),	-- Heart of Agamaggan
 					})),
+					n(-40, {	-- Legacy
+						["groups"] = {
+							n(-17, {	-- Quests (Legacy)
+								qa(1142, {	-- Mortality Wanes
+									un(34, i(6751)),	-- Mourning Shawl
+									un(34, i(6752)),	-- Lancer Boots
+								}),
+							}),
+							--n(-16, {	-- Rares (Legacy)
+							--}),
+							n(  0, {	-- Zone Drop (Legacy)
+								n(4517, {	-- Death's Head Priest
+									un(7, i(3569)), 	-- Vicar's Robe
+								}),
+							}),
+						},
+						["u"] = 12,
+					}),
 				},
 				["Lvl"] = 25,
 				["mapID"] = 761

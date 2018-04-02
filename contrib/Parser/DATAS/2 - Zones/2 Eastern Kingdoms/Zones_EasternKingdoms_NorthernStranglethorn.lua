@@ -689,6 +689,11 @@ _.Zones =
 								un(34, i(4140)),	-- Palm Frond Mantle
 								un(34, i(4126)),	-- Guerrilla Cleaver
 							}),
+							q(3625, {	-- Enchanted Azsharite Fel Weaponry
+								un(34, i(10697)),	-- Enchanted Azsharite Felbane Dagger
+								un(34, i(10698)),	-- Enchanted Azsharite Felbane Staff
+								un(34, i(10696)),	-- Enchanted Azsharite Felbane Sword
+							}),
 							qa(206, {	-- Mai'Zoth
 								un(34, i(4125)),	-- Tranquil Orb
 							}),

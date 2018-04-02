@@ -1116,17 +1116,28 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
+							q( 1958, {	-- Celestial Power
+								["g"] = {
+									un(34, i(7515)),	-- Celestial Orb
+									un(34, i(9517)),	-- Celestial Stave
+								},
+								["classes"] = { 8 },	-- Mage
+							}),
 							qh(1173, {	-- Challenge Overlord Mok'Morokk
 								un(34, i(10703)),	-- Fiendish Skiv
 								un(34, i(10704)),	-- Chillnail Splinter
 							}),
+							qdg(q(2846, {	-- Tiara of the Deep
+								un(34, i(9527)),	-- Spellshifter Rod
+								un(34, i(9531)),	-- Gemshale Pauldrons
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-					},
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						},
 					["u"] = 12,
 				}),
 			},

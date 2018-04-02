@@ -80,9 +80,9 @@ _.NeverImplemented =
 	un(1, i(42529)),	-- Savage Gladiator's Reprieve
 	un(1, i(42535)),	-- Savage Gladiator's Grimoire
 	un(1, i(70209)),	-- Ruthless Gladiator's Reprieve
+	un(1, i(20522)),	-- Feral Staff
+	un(1, i(3222)),	-- Wicked Dagger
 --[[	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
 	un(1, i()),	-- 
 	un(1, i()),	-- --]]
 	
