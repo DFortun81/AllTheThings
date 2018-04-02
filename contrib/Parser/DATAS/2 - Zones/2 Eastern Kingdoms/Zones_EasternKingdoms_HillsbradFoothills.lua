@@ -1553,6 +1553,12 @@ _.Zones =
 								un(34, i(5249)),	-- Burning Silver
 								un(34, i(3763)),	-- Lunar Buckler
 							}),
+							qa(1053, {	-- In the Name of the Light
+								un(34, i( 6829)),	-- Sword of Serenity
+								un(34, i( 6830)),	-- Bonebiter
+								un(34, i( 6831)),	-- Black Menace
+								un(34, i(11262)),	-- Orb of Lorica
+							}),
 							qa(505, {	-- Syndicate Assassins
 								un(34, i(3758)),	-- Crusader Belt
 								un(34, i(3759)),	-- Insulated Sage Gloves

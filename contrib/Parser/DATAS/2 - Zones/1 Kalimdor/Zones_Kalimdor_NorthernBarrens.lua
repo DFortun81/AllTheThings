@@ -1462,6 +1462,20 @@ _.Zones =
 								un(34, i(5337)),	-- Wayfaring Gloves
 								un(34, i(5320)),	-- Padded Lamellar Boots
 							}),
+							q(4964, {	-- The Completed Orb of Dar'Orahil
+								["g"] = {
+									un(34, i(15108)),	-- Orb of Dar'Orahil
+									un(34, i(15106)),	-- Staff of Dar'Orahil
+								},
+								["classes"] = { 9 },	-- Warlock
+							}),
+							q(4975, {	-- The Completed Orb of Noh'Orahil
+								["g"] = {
+									un(34, i(15107)),	-- Orb of Noh'Orahil
+									un(34, i(15105)),	-- Staff of Noh'Orahil
+								},
+								["classes"] = { 9 },	-- Warlock
+							}),
 							qh( 863, {	-- The Escape
 								un(34, i(5326)),	-- Flaring Baton
 								un(34, i(5327)),	-- Greasy Tinker's Pants

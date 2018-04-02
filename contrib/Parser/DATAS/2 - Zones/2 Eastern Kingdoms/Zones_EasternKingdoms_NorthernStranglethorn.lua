@@ -684,12 +684,13 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
 							qa(204, {	-- Bad Medicine
 								un(34, i(4140)),	-- Palm Frond Mantle
 								un(34, i(4126)),	-- Guerrilla Cleaver
+							}),
+							qa(206, {	-- Mai'Zoth
+								un(34, i(4125)),	-- Tranquil Orb
 							}),
 							qa(331, {	-- Report to Doren
 								un(34, i(4139)),	-- Junglewalker Sandals
@@ -707,6 +708,8 @@ _.Zones =
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 					["u"] = 12,

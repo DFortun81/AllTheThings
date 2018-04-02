@@ -561,9 +561,11 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
+							q(3962, {	-- It's Dangerous to Go Alone
+								un(34, i(11902)),	-- Linken's Sword of Mastery
+								un(34, i(11904)),	-- Spirit of Aquementas
+							}),
 							q(4301, {	-- The Mighty U'cha
 								un(34, i(11906)),	-- Beastsmasher
 								un(34, i(11907)),	-- Beastslayer
@@ -578,6 +580,8 @@ _.Zones =
 								["description"] = "This rare was only available during the Elemental Invasions.",
 							}),
 						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
 					},
 					["u"] = 12,
 				}),

@@ -1065,9 +1065,15 @@ _.Zones =
 						["description"] = "Vendor only sells these quest reward items to those who have completed the quest 'Toothsmash the Annihilator'.|r",
 					})),
 				}),
---[[				n(-40, {	-- Legacy
+				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							q(7583, {	-- Suppression
+								["g"] = {
+									un(34, i(18602)),	-- Tome of Sacrifice
+								},
+								["classes"] = { 9 },	-- Warlock
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
@@ -1075,7 +1081,7 @@ _.Zones =
 						--}),
 					},
 					["u"] = 12,
-				}),	--]]
+				}),
 			},
 			["Lvl"] = 55,	
 			["achievementID"] = 766,

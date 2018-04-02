@@ -9,20 +9,15 @@ _.Instances =
 		["groups"] = {
 			inst(559, { 	-- Upper Blackrock Spire
 				["groups"] = {
-					nlq({ -- Legacy Quests
-						q(27445, { 	-- General Drakkisath, Hand of Nefarian
-							i(66001), 	-- Aeyla's Staff
-							i(65934), 	-- Staff of the Second Orb
-							i(65982), 	-- Sword of Nefarian's Hand
-							i(65958), 	-- Vaelan's Claw
-						}),
-					}),
 					n(0, { 		-- Zone Drop
 						n(10318, {	-- Blackhand Assassin
 							i(16713),	-- Shadowcraft Belt
 						}),
 						n(9817, { 	-- Blackhand Dreadweaver
 							i(16703),	-- Dreadmist Bracers
+							nld({	-- Legacy
+								un(2, i(13371)),	-- Father Flame
+							}),
 						}),
 						n(10319, { 	-- Blackhand Iron Guard
 							i(16735),	-- Bracers of Valor
@@ -35,12 +30,18 @@ _.Instances =
 						}),
 						n(9096, { 	-- Rage Talon Dragonspawn
 							i(16681),	-- Beaststalker's Bindings
+							nld({	-- Legacy
+								un(2, i(13371)),	-- Father Flame
+							}),
 						}),
 						n(10372, { 	-- Rage Talon Fire Tongue
 							i(16683),	-- Magister's Bindings
 						}),
 						n(10083, {	-- Rage Talon Flamescale
 							i(16673), 	-- Cord of Elements
+							nld({	-- Legacy
+								un(2, i(13371)),	-- Father Flame
+							}),
 						}),
 					}),
 					n(9816, { 	-- Pyroguard Emberseer
@@ -181,6 +182,43 @@ _.Instances =
 						i(16666),	-- Vest of Elements
 						i(16706),	-- Wildheart Vest
 					}),
+					n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							q(27445, { 	-- General Drakkisath, Hand of Nefarian
+								i(66001), 	-- Aeyla's Staff
+								i(65934), 	-- Staff of the Second Orb
+								i(65982), 	-- Sword of Nefarian's Hand
+								i(65958), 	-- Vaelan's Claw
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						n(  0, {	-- Zone Drop (Legacy)
+							n(	9819, {	-- Blackhand Veteran
+								nld({	-- Legacy
+									un(2, i(13371)),	-- Father Flame
+								}),
+							}),
+							n(10258, {	-- Rookery Guardian
+								nld({	-- Legacy
+									un(2, i(13371)),	-- Father Flame
+								}),
+							}),
+							n(10683, {	-- Rookery Hatcher
+								nld({	-- Legacy
+									un(2, i(13371)),	-- Father Flame
+								}),
+							}),
+							n(10161, {	-- Rookery Whelp
+								nld({	-- Legacy
+									un(2, i(13371)),	-- Father Flame
+								}),
+							}),
+						}),
+					},
+					["u"] = 12,
+				}),
 				},
 				["u"] = 12,
 				["Lvl"] = 55,

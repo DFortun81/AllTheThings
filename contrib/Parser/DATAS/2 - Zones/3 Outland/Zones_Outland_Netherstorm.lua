@@ -6,7 +6,7 @@ _.Zones =
 	m(466, { 	-- Outland
 		m(479, { 	-- Netherstorm
 			["groups"] = {							
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 --[[					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -89,11 +89,11 @@ _.Zones =
 					}),						
 --]]				
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(521), 	-- Fledgling Nether Ray
 					p(638), 	-- Nether Roach
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[				
 					q(10197),	-- A Convincing Disguise
 					q(10380),	-- A Dark Pact
@@ -528,7 +528,7 @@ _.Zones =
 						i(30515),
 					}),
 				}),	
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(18697, { -- Chief Engineer Lorthander
 						i(31201),
 					}),
@@ -541,7 +541,7 @@ _.Zones =
 						i(31209),
 					}), 
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					n(54649, {	-- Big Zokk Torquewrench <Classic Weapons>
 						["groups"] = {
 							a(i(77549)),	-- Replica Grand Marshal's Demolisher
@@ -2055,7 +2055,7 @@ _.Zones =
 							i(77736),	-- Replica Blood Guard's Dragonhide Boots
 							i(77753),	-- Replica First Sergeant's Dragonhide Armguards
 							i(77788),	-- Replica First Sergeant's Silk Cuffs
-							i(77822),  -- Replica First Sergeant's Leather Armguards
+							i(77822), 	-- Replica First Sergeant's Leather Armguards
 						},
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 					}),
@@ -2063,6 +2063,96 @@ _.Zones =
 						i(30753),	-- Warphorn Spear
 						i(30755),	-- Mag'hari Fighting Claw
 					}),
+				}),
+				n(  0, {	-- Zone Drop -- ALL MOBS' LOOT COMES FROM 20520 ETHEREUM PRISONER ON WOWHEAD
+					["groups"] = {
+						i(29460, {	-- Ethereum Prison Key (required to summon mobs)
+							n(20785, {	-- Fel Tinkerer Zortan
+								dr(01.5, i(31581)),	-- Slatesteel Boots
+								dr(01.4, i(31565)),	-- Skystalker's Boots
+								dr(01.4, i(31557)),	-- Windchanneller's Boots
+								dr(01.3, i(32520)),	-- Manaforged Sphere
+								dr(01.3, i(31573)),	-- Mistshroud Boots
+								dr(01.2, i(31938)),	-- Enigmatic Cloak
+								dr(01.2, i(31943)),	-- Ethereum Band
+								dr(01.2, i(31940)),	-- Ethereum Torque
+								dr(01.1, i(31939)),	-- Dark Cloak
+								dr(01.0, i(31929)),	-- Enigmatic Band
+								dr(01.0, i(31936)),	-- Fiery Cloak
+								dr(01.0, i(31926)),	-- Frigid Band
+								dr(01.0, i(31935)),	-- Frigid Cloak
+								dr(01.0, i(31937)),	-- Living Cloak
+								dr(00.9, i(31928)),	-- Dark Band
+								dr(00.9, i(31925)),	-- Fiery Band
+								dr(00.9, i(31927)),	-- Living Band
+							}),
+							
+							
+							
+							
+							
+							
+							
+							n(20786, {	-- Gul'bor <The Den Mother>
+								dr(01.5, i(31581)),	-- Slatesteel Boots
+								dr(01.4, i(31565)),	-- Skystalker's Boots
+								dr(01.4, i(31557)),	-- Windchanneller's Boots
+								dr(01.3, i(32520)),	-- Manaforged Sphere
+								dr(01.3, i(31573)),	-- Mistshroud Boots
+								dr(01.2, i(31938)),	-- Enigmatic Cloak
+								dr(01.2, i(31943)),	-- Ethereum Band
+								dr(01.2, i(31940)),	-- Ethereum Torque
+								dr(01.1, i(31939)),	-- Dark Cloak
+								dr(01.0, i(31929)),	-- Enigmatic Band
+								dr(01.0, i(31936)),	-- Fiery Cloak
+								dr(01.0, i(31926)),	-- Frigid Band
+								dr(01.0, i(31935)),	-- Frigid Cloak
+								dr(01.0, i(31937)),	-- Living Cloak
+								dr(00.9, i(31928)),	-- Dark Band
+								dr(00.9, i(31925)),	-- Fiery Band
+								dr(00.9, i(31927)),	-- Living Band
+							}),
+							n(20783, {	-- Porfus the Gem Gorger
+								dr(01.5, i(31581)),	-- Slatesteel Boots
+								dr(01.4, i(31565)),	-- Skystalker's Boots
+								dr(01.4, i(31557)),	-- Windchanneller's Boots
+								dr(01.3, i(32520)),	-- Manaforged Sphere
+								dr(01.3, i(31573)),	-- Mistshroud Boots
+								dr(01.2, i(31938)),	-- Enigmatic Cloak
+								dr(01.2, i(31943)),	-- Ethereum Band
+								dr(01.2, i(31940)),	-- Ethereum Torque
+								dr(01.1, i(31939)),	-- Dark Cloak
+								dr(01.0, i(31929)),	-- Enigmatic Band
+								dr(01.0, i(31936)),	-- Fiery Cloak
+								dr(01.0, i(31926)),	-- Frigid Band
+								dr(01.0, i(31935)),	-- Frigid Cloak
+								dr(01.0, i(31937)),	-- Living Cloak
+								dr(00.9, i(31928)),	-- Dark Band
+								dr(00.9, i(31925)),	-- Fiery Band
+								dr(00.9, i(31927)),	-- Living Band
+							}),
+							n(20789, {	-- Wrathbringer Laz-tarash
+								dr(01.5, i(31581)),	-- Slatesteel Boots
+								dr(01.4, i(31565)),	-- Skystalker's Boots
+								dr(01.4, i(31557)),	-- Windchanneller's Boots
+								dr(01.3, i(32520)),	-- Manaforged Sphere
+								dr(01.3, i(31573)),	-- Mistshroud Boots
+								dr(01.2, i(31938)),	-- Enigmatic Cloak
+								dr(01.2, i(31943)),	-- Ethereum Band
+								dr(01.2, i(31940)),	-- Ethereum Torque
+								dr(01.1, i(31939)),	-- Dark Cloak
+								dr(01.0, i(31929)),	-- Enigmatic Band
+								dr(01.0, i(31936)),	-- Fiery Cloak
+								dr(01.0, i(31926)),	-- Frigid Band
+								dr(01.0, i(31935)),	-- Frigid Cloak
+								dr(01.0, i(31937)),	-- Living Cloak
+								dr(00.9, i(31928)),	-- Dark Band
+								dr(00.9, i(31925)),	-- Fiery Band
+								dr(00.9, i(31927)),	-- Living Band
+							}),
+						}),
+					},
+					["description"] = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm.  There is a chance that one of these mobs will be released when you open a prison.",
 				}),
 			},
 			["Lvl"] = 66,	

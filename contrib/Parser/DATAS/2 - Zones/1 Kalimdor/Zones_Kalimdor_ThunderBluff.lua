@@ -837,6 +837,11 @@ _.Zones =
 								un(34, i(6742)),	-- Stonefist Girdle
 								un(34, i(6725)),	-- Marbled Buckler
 							}),
+							qdg(qh(1049, {	-- Compendium of the Fallen
+								un(34, i( 7747)),	-- Vile Protector
+								un(34, i(17508)),	-- Forcestone Buckler
+								un(34, i( 7749)),	-- Omega Orb
+							})),
 						}),
 					},
 					["u"] = 12,

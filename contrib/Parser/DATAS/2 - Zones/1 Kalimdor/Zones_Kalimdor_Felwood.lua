@@ -892,17 +892,23 @@ _.Zones =
 						}),
 					}),
 				}),
---[[				n(-40, {	-- Legacy
+				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
+							q(7603, {	-- Kroshius' Infernal Core
+								["g"] = {
+									un(34, i(18762)),	-- Shard of the Green Flame
+								},
+								["classes"] = { 9 },	-- Warlock
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
 					},
 					["u"] = 12,
-				}),	--]]
+				}),
 			},
 			["achievementID"] = 853,
 			["Lvl"] = 45,

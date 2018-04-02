@@ -997,9 +997,10 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
+							q( 5942, {	-- Hidden Treasures
+								un(34, i(15857)),	-- Magebane Scion
+							}),
 							qh(6136, {	-- The Corpulent One
 								un(34, i(17002)),	-- Ichor Spitter
 								un(34, i(17003)),	-- Skullstone Hammer
@@ -1013,7 +1014,9 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-					},
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),					
+						},
 					["u"] = 12,
 				}),
 				m(502, {	-- The Scarlet Enclave
@@ -1208,13 +1211,12 @@ _.Zones =
 						}),
 --[[					n(-40, {	-- Legacy
 							["groups"] = {
-								--n(  0, {	-- Zone Drop (Legacy)
-								--}),
 								n(-17, {	-- Quests (Legacy)
 								}),
 								--n(-16, {	-- Rares (Legacy)
 								--}),
-							},
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),							},
 							["u"] = 12,
 						}),	--]]
 					},

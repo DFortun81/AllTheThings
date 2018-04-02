@@ -71,6 +71,20 @@ _.NeverImplemented =
 	un(1, i(4990)),	-- Scorched Bands
 	un(1, i(6243)),	-- Green Woolen Robe
 	un(1, i(6478)),	-- Rat Stompers
+	un(1, i(18316)),	-- Obsidian Bauble
+	un(1, i(19989)),	-- Tome of Devouring Shadows
+	un(1, i(23462)),	-- High Warlord's Tome of Destruction
+	un(1, i(23463)),	-- High Warlord's Tome of Mending
+	un(1, i(32191)),	-- Chancellor's Battletome
+	un(1, i(42523)),	-- Savage Gladiator's Endgame
+	un(1, i(42529)),	-- Savage Gladiator's Reprieve
+	un(1, i(42535)),	-- Savage Gladiator's Grimoire
+	un(1, i(70209)),	-- Ruthless Gladiator's Reprieve
+--[[	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- --]]
 	
 	
 	
