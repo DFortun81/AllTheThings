@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(382, { 	-- Undercity
 			["groups"] = {				
-				n(-3, { 	-- Holidays					
+				n( -3, { 	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -296,16 +296,6 @@ _.Zones =
 						qh(27718),	-- Warchief's Command: Vashj'ir!
 					}),
 --]]
-					nlq({     -- Legacy Quests 
-						qh(1394, {	-- Final Passage
-							un(34, i(6804)),	-- Windstorm Hammer
-							un(34, i(6806)),	-- Dancing Flame
-						}),
-						qh(1164, {	-- To Steal From Thieves
-							un(34, i(4443)),	-- Grim Pauldrons
-							un(34, i(2032)),	-- Gallan Cuffs
-						}),
-					}),
 				}),
 				
 --]]				
@@ -820,6 +810,25 @@ _.Zones =
 							i(67274),	-- Enchanted Lantern Pet
 						}),
 					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qh(1394, {	-- Final Passage
+								un(34, i(6804)),	-- Windstorm Hammer
+								un(34, i(6806)),	-- Dancing Flame
+							}),
+							qh(1164, {	-- To Steal From Thieves
+								un(34, i(4443)),	-- Grim Pauldrons
+								un(34, i(2032)),	-- Gallan Cuffs
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 1,	

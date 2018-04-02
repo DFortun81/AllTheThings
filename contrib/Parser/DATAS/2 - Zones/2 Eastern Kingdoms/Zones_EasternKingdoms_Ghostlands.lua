@@ -6,8 +6,8 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(463, {	-- Ghostlands
 			["groups"] = {		
---[[				
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
+--[[
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -39,7 +39,8 @@ _.Zones =
 						},
 						["achievementID"] = 1793, -- For The Children
 						["u"] = 20,
-					}),					
+					}),
+--]]
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -49,7 +50,8 @@ _.Zones =
 						},
 						["achievementID"] = 1038, -- The Flame Warden
 						["u"] = 21,
-					}),					
+					}),
+--[[
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -58,6 +60,7 @@ _.Zones =
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),
+--]]
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -66,7 +69,8 @@ _.Zones =
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,
-					}),	
+					}),
+--[[
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
@@ -82,10 +86,10 @@ _.Zones =
 						},
 						["achievementID"] = 1691, -- Merrymaker
 						["u"] = 29,
-					}),						
-				}),				
---]]				
-				n(-25, { 	-- Pet Battle
+					}),
+--]]
+				}),								
+				n(-25, {	-- Pet Battle
 					p(461), 	-- Larva
 					p(450),		-- Maggot
 					p(417),		-- Rat
@@ -94,7 +98,7 @@ _.Zones =
 					p(463),		-- Spirit Crab
 					p(420)		-- Toad
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qh( 9275, {	-- A Little Dash of Seasoning
 						["groups"] = {
 						},
@@ -518,7 +522,7 @@ _.Zones =
 						["sourceQuests"] = { 9139 },	-- Goldenmist Village
 					}),
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(22062, { -- Dr. Whitherlimb
 						dr(36, i(31270)), 	-- Banshee Rod
 						dr(33, i(31269)), 	-- Ghoul Hammer
@@ -528,7 +532,7 @@ _.Zones =
 						dr(14, i(6541))		-- Willow Gloves
 					})
 				}),
-				nh(-2, { 	-- Vendors
+				nh(-2, {	-- Vendors
 					 n(16528, { -- Provisioner Vredigar
 						i(22990),	-- Tranquillien Champion's Cloak
 						i(28155),	-- Apothecary's Waistband
@@ -549,6 +553,19 @@ _.Zones =
 						i(29583)	-- Sinister Scimitar
 					})
 				}),
+--[[
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
+--]]
 			},
 			["Lvl"] = 10,
 			["achievementID"] = 858,

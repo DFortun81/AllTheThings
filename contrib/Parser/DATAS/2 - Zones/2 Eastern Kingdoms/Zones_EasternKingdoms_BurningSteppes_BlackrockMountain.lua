@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(29, {		-- Burning Steppes
 			["groups"] = {							
-				n(-3, { 	-- Holidays										
+				n( -3, { 	-- Holidays										
 					n(-47, {    	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -1240,7 +1240,7 @@ _.Zones =
 						dr(01.0, i(10072)),	-- Righteous Gloves					
 					}), 
 				}),
-				n(-2, {	-- Vendors
+				n( -2, {	-- Vendors
 					n(115805, {	-- Hoddruc Bladebender
 						["groups"]	= {
 							i(142346, {	-- Plans: Bleakwood Hew
@@ -1250,6 +1250,17 @@ _.Zones =
 						["description"]	= "Vendor only sells the recipe to those who have completed the quest 'Worth Its Weight in Steel'|r",
 					}),
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),	--]]
 				n(-73, { 	-- Blackrock Mountain
 					["groups"] = {	
 						n(-16, { 	-- Rares	

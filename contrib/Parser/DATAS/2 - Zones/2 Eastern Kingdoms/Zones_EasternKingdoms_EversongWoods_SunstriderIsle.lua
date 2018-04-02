@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(462, {	-- Eversong Woods
 			["groups"] = {			
-				n(-3, { 	-- Holidays
+				n (-3, {	-- Holidays
 --[[					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -125,7 +125,7 @@ _.Zones =
 					}),		
 --]]				
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(459), 	-- Cat
 					p(460), 	-- Ruby Sapling
 					p(419), 	-- Small Frog
@@ -164,7 +164,7 @@ _.Zones =
 					})),
 --]]					
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					o(181011, {	-- Magister Duskwither's Journal
 						qh(8891),	-- Abandoned Investigations
 					}),
@@ -578,7 +578,7 @@ _.Zones =
 						["qg"] = 15406,	-- Ven'jashi
 					}),
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(16854, { -- Eldinarcus
 						dr(3, { i(2965), }),	-- Warrior's Tunic
 						dr(2, { i(2961), }),	-- Burnt Leather Vest
@@ -610,7 +610,7 @@ _.Zones =
 						dr(0.9, { i(9753), }),	-- Gypsy Buckler
 					}), 
 				}),
-				nh(-2, { 	-- Vendors
+				nh(-2, {	-- Vendors
 					n(16860, { -- Jilanne
 						i(29953),	-- Golden Dragonhawk Hatchling (PET!)
 						i(29956),	-- Red Dragonhawk Hatchling (PET!)
@@ -632,7 +632,20 @@ _.Zones =
 						i(29222),	-- Purple Hawkstrider (MOUNT!)
 					})
 				}),
-				m(893, { 	-- Sunstrider Isle
+--[[
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
+--]]
+				m(893, {	-- Sunstrider Isle
 					["groups"] = {					
 						n(-17, {	-- Quests
 							qh(37440, {	-- A Fistful of Slivers
@@ -705,7 +718,20 @@ _.Zones =
 							qg(15295, q(8345)),	-- The Shrine of Dath'Remar
 							qg(15297, qh( 8346)),	-- Thirst Unending
 --]]
-						}),						
+						}),
+--[[
+						n(-40, {	-- Legacy
+							["groups"] = {
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),
+								n(-17, {	-- Quests (Legacy)
+								}),
+								--n(-16, {	-- Rares (Legacy)
+								--}),
+							},
+							["u"] = 12,
+						}),
+--]]
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Bloodelf_Female",
 					["description"] = "|cff66ccffSunstrider Isle is an island located in northwestern Eversong Woods. After the Third War, no elf was alive on the isle. It was through here that the red dragon Korialstrasz flew over when Prince Kael'thas destroyed the corrupted Sunwell. By the year 25, the isle was reclaimed and thriving|r",

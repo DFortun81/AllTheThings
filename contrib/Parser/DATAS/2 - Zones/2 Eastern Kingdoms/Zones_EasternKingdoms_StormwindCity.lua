@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(301, {	-- Stormwind City
 			["groups"] = {
-				n(-3, { 	-- Holidays
+				n(  -3, {	-- Holidays
 					n(-50, { 		-- Love is in the Air
 						["groups"] = {
 							n(-2, { -- Vendors
@@ -250,7 +250,7 @@ _.Zones =
 						["u"] = 29,
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n( -25, {	-- Pet Battle
 					p(378), 	-- Rabbit
 					p(379), 	-- Squirrel
 					p(675), 	-- Stormwind Rat
@@ -398,7 +398,7 @@ _.Zones =
 						["description"] = "Account-Wide Weekly Quest.|r",
 					}),
 				}),
-				na(-17, { 	-- Quests
+				na(-17, {	-- Quests
 					qdg(qa(27355, {	-- A Boon for the Powerful
 						["g"] = {
 							i(65496),	-- Staff of Justified Sins
@@ -872,71 +872,14 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, q(397)),	-- You Have Served Us Well
 					qg(, qa(29453)),	-- Your Time Has Come
 --]]	
-					nld({     	-- Legacy	
-						q(1942, { 		-- Astral Knot Garment
-							un(34, i(9516)),	-- Astral Knot Blouse
-							un(34, i(7511)),	-- Astral Knot Robe
-						}),
-						q(168, {		-- Collecting Memories
-							un(34, i(2036)),	-- Dusty Mining Gloves
-							un(34, i(2037)),	-- Tunneler's Boots
-						}),
-						qc1(q(1782, { 	-- Furen's Armor
-							un(34, i(6972)),	-- Fire-Hardened Hauberk
-						})),
-						qc1(q(1706, { 	-- Grimand's Armor
-							un(34, i(6971)),	-- Fire Hardened Coif
-						})),
-						qc8(q(1941, {	-- Manaweave Robe
-							un(34, i(7509)),	-- Manaweave Robe
-						})),
-						q(1364, {		-- Mazen's Behest
-							un(34, i(10747)),	-- Teacher's Sash
-							un(34, i(10748)),	-- Wanderlust Boots
-						}),
-						qc8(q(1861, {	-- Mirror Lake
-							un(34, i(7508)),	-- Ley Orb
-							un(34, i(9513)),	-- Ley Staff
-						})),
-						q(167, {		-- Oh Brother...
-							un(34, i(1893)),	-- Miner's Revenge
-						}),
-						q(6187, {		-- Order Must Be Restored
-							un(34, i(16996)),	-- Gorewood Bow
-							un(34, i(16998)),	-- Sacred Protector
-							un(34, i(16997)),	-- Stormrager
-						}),
-						q(1078, {		-- Retrieval for Mauren
-							un(34, i(6677)),	-- Spellcrafter Wand
-						}),	
-						qc4(q(2206, { 	-- Snatch and Grab
-							un(34, i(7298)),	-- Blade of Cunning
-						})),	
-						qp164(q(2758, {	-- The Origins of Smithing
-							un(34, i(9367, {	-- Plans: Golden Scale Gauntlets
-								un(8, i(9366)),		-- Golden Scale Gauntlets
-							})),
-						})),
-						qc9(q(397, {	-- You Have Served Us Well
-							un(34, i(3556)),	-- Dread Mage Hat
-						})),
-					}),
 				}),
-				n(-16, { 	-- Rares 
+				n( -16, {	-- Rares 
 --					n(3581, { 	-- Sewer Beast		}),
 					h(n(130828, {	-- Gordon MacKellar
 						i(134831),	-- Doomsayer's Robes (Toy)
 					})),
-					nld({     	-- Legacy
-						n(112527, { 	-- Doomsayer
-							["groups"] = { 
-								un(7, i(140363)), 	-- Pocket Fel Spreader
-							},
-							["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability/item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.",
-						}),
-					}),							
 				}),
-				a(n(-2, { 	-- Vendors
+				a(n(-2, {	-- Vendors
 					n(69334, {	-- Adherent Hanjun <Tushui Quartermaster>
 						i(83079),	-- Tushui Tabard
 					}),
@@ -3290,6 +3233,70 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(57921),	-- Incense Infused Cummerbund					
 					}),
 				})),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							q(1942, { 		-- Astral Knot Garment
+								un(34, i(9516)),	-- Astral Knot Blouse
+								un(34, i(7511)),	-- Astral Knot Robe
+							}),
+							q(168, {		-- Collecting Memories
+								un(34, i(2036)),	-- Dusty Mining Gloves
+								un(34, i(2037)),	-- Tunneler's Boots
+							}),
+							qc1(q(1782, { 	-- Furen's Armor
+								un(34, i(6972)),	-- Fire-Hardened Hauberk
+							})),
+							qc1(q(1706, { 	-- Grimand's Armor
+								un(34, i(6971)),	-- Fire Hardened Coif
+							})),
+							qc8(q(1941, {	-- Manaweave Robe
+								un(34, i(7509)),	-- Manaweave Robe
+							})),
+							q(1364, {		-- Mazen's Behest
+								un(34, i(10747)),	-- Teacher's Sash
+								un(34, i(10748)),	-- Wanderlust Boots
+							}),
+							qc8(q(1861, {	-- Mirror Lake
+								un(34, i(7508)),	-- Ley Orb
+								un(34, i(9513)),	-- Ley Staff
+							})),
+							q(167, {		-- Oh Brother...
+								un(34, i(1893)),	-- Miner's Revenge
+							}),
+							q(6187, {		-- Order Must Be Restored
+								un(34, i(16996)),	-- Gorewood Bow
+								un(34, i(16998)),	-- Sacred Protector
+								un(34, i(16997)),	-- Stormrager
+							}),
+							q(1078, {		-- Retrieval for Mauren
+								un(34, i(6677)),	-- Spellcrafter Wand
+							}),	
+							qc4(q(2206, { 	-- Snatch and Grab
+								un(34, i(7298)),	-- Blade of Cunning
+							})),	
+							qp164(q(2758, {	-- The Origins of Smithing
+								un(34, i(9367, {	-- Plans: Golden Scale Gauntlets
+									un(8, i(9366)),		-- Golden Scale Gauntlets
+								})),
+							})),
+							qc9(q(397, {	-- You Have Served Us Well
+								un(34, i(3556)),	-- Dread Mage Hat
+							})),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(112527, { 	-- Doomsayer
+								["groups"] = { 
+									un(7, i(140363)), 	-- Pocket Fel Spreader
+								},
+								["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability/item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.",
+							}),
+						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
 			},
 			["Lvl"] = 1,	
 			["icon"] = "Interface\\Icons\\inv_misc_tournaments_banner_human",

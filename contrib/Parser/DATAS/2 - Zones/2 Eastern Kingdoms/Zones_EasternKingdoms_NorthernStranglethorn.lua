@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(37, {		-- Northern Stranglethorn
 			["groups"] = {
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -56,7 +56,7 @@ _.Zones =
 					}),	
 --]]
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(406), 	-- Beetle
 					p(421), 	-- Crimson Moth
 					p(407), 	-- Forest Spiderling
@@ -75,7 +75,7 @@ _.Zones =
 					}),
 --					qg(63194, q(31852)),	-- Steven Lisbane (DAILY VERSION)
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[
 					qg(2465, qh(26317)),	-- A Lashtail Hatchling
 --					q(26764),	-- A New Low (REMOVED)
@@ -382,29 +382,8 @@ _.Zones =
 						i(131522),	-- Hauberk of Zul'Mamwe
 						i(131523),	-- Irradiated Faux Croc' Wristguards
 					})),
-					
-					nlq({     -- Legacy Quests
-						qa(204, {	-- Bad Medicine
-							un(34, i(4140)),	-- Palm Frond Mantle
-							un(34, i(4126)),	-- Guerrilla Cleaver
-						}),
-						qa(331, {	-- Report to Doren
-							un(34, i(4139)),	-- Junglewalker Sandals
-							un(34, i(4123)),	-- Frost Metal Pauldrons
-						}),
-						qh(592, {	-- Saving Yenniku
-							un(34, i(4134)),	-- Nimboya's Mystical Staff
-						}),
-						qh(598, {	-- Split Bone Necklace
-							un(34, i(4137)),	-- Darkspear Shoes
-							un(34, i(4136)),	-- Darkspear Boots
-						}),
-						qa(328, {	-- The Hidden Key
-							un(34, i(4122)),	-- Bookmaker's Scepter
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(14487, { 	-- Gluggl
 						dr(07.0, i(6604)),	-- Dervish Cape
 						dr(07.0, i(9803)),	-- Superior Bracers
@@ -688,7 +667,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					n(2483, {	-- Jaquilina Dramet <Superior Axecrafter>
 						i(12250),	-- Midnight Axe
 						i(12164, {	-- Plans: Massive Iron Axe
@@ -702,6 +681,35 @@ _.Zones =
 							i(3855),	-- Massive Iron Axe
 						}),
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qa(204, {	-- Bad Medicine
+								un(34, i(4140)),	-- Palm Frond Mantle
+								un(34, i(4126)),	-- Guerrilla Cleaver
+							}),
+							qa(331, {	-- Report to Doren
+								un(34, i(4139)),	-- Junglewalker Sandals
+								un(34, i(4123)),	-- Frost Metal Pauldrons
+							}),
+							qh(592, {	-- Saving Yenniku
+								un(34, i(4134)),	-- Nimboya's Mystical Staff
+							}),
+							qh(598, {	-- Split Bone Necklace
+								un(34, i(4137)),	-- Darkspear Shoes
+								un(34, i(4136)),	-- Darkspear Boots
+							}),
+							qa(328, {	-- The Hidden Key
+								un(34, i(4122)),	-- Bookmaker's Scepter
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 25,

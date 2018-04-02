@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(22, {		-- Western Plaguelands
 			["g"] = {
-				n(- 3, {	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {    	-- Lunar Festival
 						["g"] = {
 							n(-17, { 	-- Quests
@@ -1299,7 +1299,7 @@ _.Zones =
 					}), 
 --					n(111122, {	-- Large Vile Slime	}),
 				}),
-				n(- 2, {	-- Vendors
+				n( -2, {	-- Vendors
 					n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
 						["g"] = {
 							i(19216, {	-- Pattern: Argent Boots
@@ -1346,6 +1346,17 @@ _.Zones =
 						}),
 					}),
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),	--]]
 			},
 			["Lvl"] = 35,	
 			["achievementID"] = 770,

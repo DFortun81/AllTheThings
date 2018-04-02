@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(21, {		-- Silverpine Forest
 			["groups"] = {				
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -99,7 +99,7 @@ _.Zones =
 					}),
 				--]]
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(455),		-- Blighted Squirrel
 					p(628),		-- Infected Fawn
 					p(627),		-- Infected Squirrel
@@ -109,7 +109,7 @@ _.Zones =
 					p(379),		-- Squirrel
 					p(420)		-- Toad
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qh(27577, {	-- 7th Legion Battle Plans
 						["groups"] = {
 						},
@@ -475,39 +475,8 @@ _.Zones =
 						}),
 					}),
 --					qg(44640, qh(28089)),	-- Warchief's Command: Hillsbrad Foothills! (secondary QG IDs 45631 and 46125 -- couldn't find this to pick up -- may overlap with Empire of Dirt, which is also a Hillsbrad breadcrumb quest)
-					nlq({     -- Legacy Quests
-						qh(451, { 	-- A Recipe for Death
-							i(3582),	-- Acidproof Cloak
-						}),
-						qh(99, { 	-- Arugal's Folly 
-							i(3586),	-- Logsplitter
-							i(3570),	-- Bonegrinding Pestle
-							i(5242),	-- Cinder Wand
-						}),
-						qh(442, { 	-- Assault on Fenris Isle
-							i(3461),	-- High Robe of the Adjudicator
-							i(3462),	-- Talonstrike
-						}),
-						qh(516, { 	-- Beren's Peril
-							i(5252),	-- Wand of Decay
-						}),
-						qh(452, { 	-- Pyrewood Ambush 
-							i(3450),	-- Faerleia's Shield 
-							i(2818),	-- Stretched Leather Trousers 
-							i(3449),	-- Mystic Shawl 
-						}),
-						qh(480, { 	-- The Weaver
-							i(3452),	-- Ceranium Rod
-							i(3585),	-- Camouflaged Tunic
-						}),
-						qh(491, { 	-- Wand to Bethor
-							i(3457),	-- Stamped Trousers
-							i(3458),	-- Rugged Mail Gloves
-							i(3581),	-- Serrated Knife
-						}),
-					}),						
 				}),			
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(47009, { 	-- Aquarius the Unbound
 						dr(10, i(6548)), 	-- Soldier's Girdle
 						dr(9, i(6539)), 	-- Willow Belt
@@ -831,29 +800,9 @@ _.Zones =
 						dr(1.1, i(6564)), 	-- Shimmering Cloak
 						dr(1, i(9768)), 	-- Greenweave Bracers
 					}),
-					nld({     -- Legacy
-						nh(3578, { 	-- Ambermill Miner
-							i(4767),	-- Coppercloth Gloves
-						}),
-						nh(1920, {	-- Dalaran Spellscribe
-							i(4437),	-- Channeler's Staff
-							i(4436),	-- Jewel-Encrusted Sash
-						}),
-						n(1944, {	-- Rot Hide Bruiser
-							i(4439),	-- Bruiser Club
-							i(5975),	-- Ruffian Belt
-						}),
-						n(2283,	{	-- Ravenclaw Regent
-							i(6628),	-- Raven's Claws
-							i(5969),	-- Regent's Cloak
-						}),
-						n(1948, {	-- Snarlmane
-							i(4445),	-- Flesh Carver
-						}),
-					}),					
 --					n(46981, { 	-- Nightlash	}), 
 				}),
-				n(-2, { 	-- Vendors
+				n( -2, {	-- Vendors
 					nh(3552, { -- Alexandre Lefevre <Leather Armor Merchant>
 						i(4788), -- Agile Boots
 						i(4789), -- Stable Boots
@@ -885,7 +834,65 @@ _.Zones =
 						i(4777), 	-- Ironwood Maul
 					}),
 				}),
-				m(684, { -- Ruins of Gilneas
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qh(451, { 	-- A Recipe for Death
+								un(34, i(3582)),	-- Acidproof Cloak
+							}),
+							qh(99, { 	-- Arugal's Folly 
+								un(34, i(3586)),	-- Logsplitter
+								un(34, i(3570)),	-- Bonegrinding Pestle
+								un(34, i(5242)),	-- Cinder Wand
+							}),
+							qh(442, { 	-- Assault on Fenris Isle
+								un(34, i(3461)),	-- High Robe of the Adjudicator
+								un(34, i(3462)),	-- Talonstrike
+							}),
+							qh(516, { 	-- Beren's Peril
+								un(34, i(5252)),	-- Wand of Decay
+							}),
+							qh(452, { 	-- Pyrewood Ambush 
+								un(34, i(3450)),	-- Faerleia's Shield 
+								un(34, i(2818)),	-- Stretched Leather Trousers 
+								un(34, i(3449)),	-- Mystic Shawl 
+							}),
+							qh(480, { 	-- The Weaver
+								un(34, i(3452)),	-- Ceranium Rod
+								un(34, i(3585)),	-- Camouflaged Tunic
+							}),
+							qh(491, { 	-- Wand to Bethor
+								un(34, i(3457)),	-- Stamped Trousers
+								un(34, i(3458)),	-- Rugged Mail Gloves
+								un(34, i(3581)),	-- Serrated Knife
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							nh(3578, { 	-- Ambermill Miner
+								un(7, i(4767)),	-- Coppercloth Gloves
+							}),
+							nh(1920, {	-- Dalaran Spellscribe
+								un(7, i(4437)),	-- Channeler's Staff
+								un(7, i(4436)),	-- Jewel-Encrusted Sash
+							}),
+							n(1944, {	-- Rot Hide Bruiser
+								un(7, i(4439)),	-- Bruiser Club
+								un(7, i(5975)),	-- Ruffian Belt
+							}),
+							n(2283,	{	-- Ravenclaw Regent
+								un(7, i(6628)),	-- Raven's Claws
+								un(7, i(5969)),	-- Regent's Cloak
+							}),
+							n(1948, {	-- Snarlmane
+								un(7, i(4445)),	-- Flesh Carver
+							}),
+						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
+				m(684, {	-- Ruins of Gilneas
 					n(-17, { -- Quests
 						qh(27406, {	-- A Man Named Godfrey
 							["groups"] = {

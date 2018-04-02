@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(28, {		-- Searing Gorge
 			["groups"] = {			
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -94,13 +94,13 @@ _.Zones =
 					}),						
 --]]
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(427), 	-- Ash Spiderling
 					p(415), 	-- Fire Beetle
 					p(423), 	-- Lava Crab
 					p(428), 	-- Molten Hatchling
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --					qg(, q(27962)),	-- A Lumbering Relic
 					qg(47266, q(27963, { -- A New Master... But Who?
 						i(63218),
@@ -204,14 +204,8 @@ _.Zones =
 						i(63244),
 						i(63243),
 					}),
-					nlq({     -- Legacy Quests 
-						qh(4450, {	-- Ledger from Tanaris
-							un(34, i(11860)),	-- Charged Lightning Rod
-							un(34, i(11861)),	-- Girdle of Reprisal
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(50876, { 	-- Avis
 						dr(27.0, i(10201)),	-- Overlord's Greaves
 						dr(27.0, i(9962)),	-- Warmonger's Greaves
@@ -636,7 +630,22 @@ _.Zones =
 						dr(01.0, i(10069)),	-- Righteous Bracers					
 					}), 
 				}),
-				n(-73, { 	-- Blackrock Mountain
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qh(4450, {	-- Ledger from Tanaris
+								un(34, i(11860)),	-- Charged Lightning Rod
+								un(34, i(11861)),	-- Girdle of Reprisal
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
+				n(-73, {	-- Blackrock Mountain
 					["groups"] = {	
 						n(-16, { 	-- Rares	
 							n(50839, { 	-- Chromehound						

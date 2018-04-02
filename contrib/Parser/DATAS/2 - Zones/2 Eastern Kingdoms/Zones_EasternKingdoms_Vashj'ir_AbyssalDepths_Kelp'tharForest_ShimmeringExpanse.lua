@@ -9,7 +9,7 @@ _.Zones =
 				m(614, {	-- Abyssal Depths
 					["groups"] = {			
 --[[
-						n(-3, { 	-- Holidays					
+						n( -3, { 	-- Holidays					
 							n(-47, {     -- Lunar Festival
 								["groups"] = {
 									n(-17, { 	-- Quests
@@ -261,6 +261,17 @@ _.Zones =
 							}),
 							]]--
 						}),
+--[[						n(-40, {	-- Legacy
+							["groups"] = {
+								n(-17, {	-- Quests (Legacy)
+								}),
+								--n(-16, {	-- Rares (Legacy)
+								--}),
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),
+							},
+							["u"] = 12,
+						}),	--]]
 					},
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 					["description"] = "|cff66ccffAbyssal Depths is the last, and darkest zone, players reach when questing in Vash'jir. They are home to the ancient god L'ghorek, which the Twilight Hammer is siphoning energy from to be prepared when fighting Neptulon in the future.|r",
@@ -1040,6 +1051,17 @@ _.Zones =
 								}),
 							})),
 						}),
+--[[						n(-40, {	-- Legacy
+							["groups"] = {
+								n(-17, {	-- Quests (Legacy)
+								}),
+								--n(-16, {	-- Rares (Legacy)
+								--}),
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),
+							},
+							["u"] = 12,
+						}),	--]]
 					},
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 					["description"] = "|cff66ccffKelp'thar Forest is the first subzone players reach when questing in Vash'jir. It has tropical underwater life and is closer to the surface than other subzones. Quests introduce the threat of the naga while also reacquainting the player with stranded members of the Zul'Aman exploratory crew.|r",
@@ -1481,6 +1503,17 @@ _.Zones =
 								i(65905),	-- Tabard of the Earthen Ring
 							}),
 						}),
+--[[						n(-40, {	-- Legacy
+							["groups"] = {
+								n(-17, {	-- Quests (Legacy)
+								}),
+								--n(-16, {	-- Rares (Legacy)
+								--}),
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),
+							},
+							["u"] = 12,
+						}),	--]]
 					},
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 					["description"] = "|cff66ccffThe Shimmering Expanse is a subzone of Vash'jir. It contains The Earthen Ring quartermaster in Silver Tide Hollow, the only flight points in the zone, and tons of  Azshara's Veil. In this section, players learn about the highborne's past and the threat of the naga through the eyes of Battlemaidens.|r",

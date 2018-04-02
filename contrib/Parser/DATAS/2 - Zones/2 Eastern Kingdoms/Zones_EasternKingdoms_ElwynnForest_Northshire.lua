@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(30, {		-- Elwynn Forest
 			["groups"] = {						
-				n(-3, { 	-- Holidays															
+				n( -3, {	-- Holidays															
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -186,7 +186,7 @@ _.Zones =
 					}),
 --]]									
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(374), 	-- Black Lamb
 					p(459), 	-- Cat
 					p(646), 	-- Chicken
@@ -231,7 +231,7 @@ _.Zones =
 						}),
 					})),					
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[				
 					qg(10616, qa( 5545)),	-- A Bundle of Trouble
 					qg(241, qa(   40)),	-- A Fishy Peril
@@ -357,19 +357,8 @@ _.Zones =
 					qg(251, qa(  106)),	-- Young Lovers
 --]]					
 --					q(7937),	-- Your Fortune Awaits You... (REMOVED?)
-					nlq({     -- Legacy Quests 
-						qa(1667, {	-- Dead-tooth Jack
-							["g"] = {
-								un(34, i(6979)),	-- Haggard's Axe
-								un(34, i(6983)),	-- Haggard's Hammer
-								un(34, i(6980)),	-- Haggard's Dagger
-								un(34, i(6985)),	-- Haggard's Sword
-							},
-							["classes"] = { 1 },	-- Warrior
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(51077, { 	-- Bushtail
 						dr(17.0, i(68744)),	-- Imbued Pioneer Cloak
 						dr(14.0, i(68743)),	-- Imbued Infantry Cloak
@@ -490,7 +479,7 @@ _.Zones =
 --					n(50752, { 	-- Tarantis }), 
 --					n(51014, { 	-- Terrapis	}), 
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					a(n(844, {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {
 							i(4795),	-- Bear Bracers
@@ -530,7 +519,7 @@ _.Zones =
 						}),
 					})),
 				}),
-				n(-74, { -- Zone Wide
+				n(-74, {	-- Zone Wide
 					sz(776,8, { -- Eastvale Logging Camp
 						q(42740, { -- The Battle For Broken Shore
 							i(139389, { -- Charred Locket
@@ -541,6 +530,26 @@ _.Zones =
 							}),
 						}),
 					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qa(1667, {	-- Dead-tooth Jack
+								["g"] = {
+									un(34, i(6979)),	-- Haggard's Axe
+									un(34, i(6983)),	-- Haggard's Hammer
+									un(34, i(6980)),	-- Haggard's Dagger
+									un(34, i(6985)),	-- Haggard's Sword
+								},
+								["classes"] = { 1 },	-- Warrior
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 				m(864, {	-- Northshire
 					["groups"] = {
@@ -722,15 +731,24 @@ _.Zones =
 							qg(823, qa(28796)),	-- They Sent Assassins
 							qg(823, qa(29081)),	-- They Sent Assassins *assuming one of these/class + one for non-human, but they aren't labeled on wowhead 
 							--]]
-							nlq({     -- Legacy Quests 
-								qa(346, {	-- Return to Kristoff
-									un(34, i(6095)),	-- Wandering Boots
-								}),
-							}),
 						}),
 --[[						n(-16, { -- Rares
 							n(62),	-- Gug Fatcandle (doesn't drop greens, just a 4-slot bag)
 						}), --]]
+						n(-40, {	-- Legacy
+							["groups"] = {
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),
+								n(-17, {	-- Quests (Legacy)
+									qa(346, {	-- Return to Kristoff
+										un(34, i(6095)),	-- Wandering Boots
+									}),
+								}),
+								--n(-16, {	-- Rares (Legacy)
+								--}),
+							},
+							["u"] = 12,
+						}),
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
 					["description"] = "|cff66ccffNorthshire Valley is a pristine valley in Elwynn Forest in which both Northshire Abbey and the Northshire Vineyards are located. The Northshire River also flows through it. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.|r",

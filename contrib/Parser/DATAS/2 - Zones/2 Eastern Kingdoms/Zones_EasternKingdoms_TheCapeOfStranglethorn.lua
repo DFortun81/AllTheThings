@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(673, {	-- The Cape of Stranglethorn
 			["groups"] = {			
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -146,7 +146,7 @@ _.Zones =
 						["u"] = 30,
 					}),
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					{			-- Baby Ape
 					["speciesID"] = 411,
 					["description"]	= "This wild pet can be found on Jaguero Isle in the The Cape of Stranglethorn. It only spawns when it's raining on the island, however, this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the isle.",
@@ -163,7 +163,7 @@ _.Zones =
 					qa(31917),	-- A Tamer's Homecoming
 					qa(31851),	-- Bill Buckler
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[
 					qg(, q(26602)),	-- A Dish Best Served Huge
 					qg(, q(40847)),	-- A Friendly Accord
@@ -526,7 +526,7 @@ _.Zones =
 						}),
 					}),--]]
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					o(179697, {	-- Arena Treasure Chest (FFA PvP)
 						["groups"] = {
 							i(18706, {
@@ -764,7 +764,7 @@ _.Zones =
 						}),
 					}),--]]
 				}),
-				n(-2, {	-- Vendors
+				n( -2, {	-- Vendors
 					n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 						i(5789, {	-- Pattern: Murloc Scale Bracers
 							i(5783),	-- Murloc Scale Bracers
@@ -832,10 +832,8 @@ _.Zones =
 						}),
 					}),
 				}),
-				nld({ -- Legacy
-				  --n(  0, {	-- Zone Drop (Legacy)
-				  --}),
-					n(-17, {	-- Quests (Legacy)
+				n(-40, {	-- Legacy
+				  	n(-17, {	-- Quests (Legacy)
 						q( 617, {	-- Akiris by the Bundle
 							un(34, i(4117)),	-- Scorching Sash
 						}),
@@ -855,6 +853,8 @@ _.Zones =
 							un( 7, i(3985)),	-- Monogrammed Sash
 						}),
 					}),
+					--n(  0, {	-- Zone Drop (Legacy)
+					--}),
 				}),
 			},
 			["Lvl"] = 30,	

@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(23, {		-- Eastern Plaguelands
 			["groups"] = {
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -107,7 +107,7 @@ _.Zones =
 					}),
 --]]
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(626), 	-- Bat
 					p(398), 	-- Black Rat
 					p(457), 	-- Festering Maggot
@@ -115,7 +115,7 @@ _.Zones =
 					p(627), 	-- Infected Squirrel
 					qg(66512, q(31911)),	-- Deiza Plaguehorn
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[
 					qg(45431, q(27463)),	-- A Boyhood Dream
 					qdg(qg(45482, q(27422))),	-- A City Under Siege
@@ -370,20 +370,8 @@ _.Zones =
 					qg(45826, q(27521)),	-- Wretched Hive of Scum and Villainy
 					qg(45500, q(27432)),	-- Zaeldarr the Outcast
 --]]
-					nlq({     -- Legacy Quests 
-						qh(6136, {	-- The Corpulent One
-							un(34, i(17002)),	-- Ichor Spitter
-							un(34, i(17003)),	-- Skullstone Hammer
-							un(34, i(17004)),	-- Sarah's Guide
-						}),
-						q( 6041, {	-- When Smokey Sings, I Get Violent
-							un(34, i(16992)),	-- Smokey's Explosive Launcher
-							un(34, i(16993)),	-- Smokey's Fireshooter
-							un(34, i(17523)),	-- Smokey's Drape
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(10819, { 	-- Baron Bloodbane
 						dr(39.0, i(9970)),	-- Embossed Plate Leggings
 						dr(02.0, i(7520)),	-- Gossamer Headpiece
@@ -944,7 +932,7 @@ _.Zones =
 						dr(01.0, i(9916)),	-- Tracker's Belt
 					}),
 				}),
-				n(-2, {		-- Vendors
+				n (-2, {	-- Vendors
 					n(12384, {	-- Agustus the Touched
 						["groups"] = {
 							i(15902, {	-- A Crazy Grab Bag
@@ -1007,7 +995,28 @@ _.Zones =
 						i(38670), -- Greaves of the Slaughter
 					}),
 				}),
-				m(502, { 	-- The Scarlet Enclave
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qh(6136, {	-- The Corpulent One
+								un(34, i(17002)),	-- Ichor Spitter
+								un(34, i(17003)),	-- Skullstone Hammer
+								un(34, i(17004)),	-- Sarah's Guide
+							}),
+							q( 6041, {	-- When Smokey Sings, I Get Violent
+								un(34, i(16992)),	-- Smokey's Explosive Launcher
+								un(34, i(16993)),	-- Smokey's Fireshooter
+								un(34, i(17523)),	-- Smokey's Drape
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
+				m(502, {	-- The Scarlet Enclave
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
@@ -1197,6 +1206,17 @@ _.Zones =
 							},
 							["classes"] = {6},
 						}),
+--[[					n(-40, {	-- Legacy
+							["groups"] = {
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),
+								n(-17, {	-- Quests (Legacy)
+								}),
+								--n(-16, {	-- Rares (Legacy)
+								--}),
+							},
+							["u"] = 12,
+						}),	--]]
 					},
 					["icon"] = "Interface\\Icons\\Classicon_deathknight",
 					["description"] = "|cff66ccffThe Scarlet Enclave is the name of the starting area for all Death Knight players in World of Warcraft: Wrath of the Lich King.|r",

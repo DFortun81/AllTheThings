@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(27, {		-- Dun Morogh
 			["groups"] = {							
-				n(-3, { 	-- Holidays										
+				n( -3, {	-- Holidays										
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -241,7 +241,7 @@ _.Zones =
 					}),						
 --]]				
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(441), 	-- Alpine Hare
 					p(440), 	-- Snow Cub
 					n(63075, {		-- Grady Bannson
@@ -272,7 +272,7 @@ _.Zones =
 					qg(63075, qa(31822)),	-- Level Up!
 					qg(63075, qa(31551)), 	-- Got one!
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[				
 					qg(1374, qa(  319)),	-- A Favor for Evershine
 					qg(41298, qa(25882)),	-- A Hand at the Ranch
@@ -448,23 +448,9 @@ _.Zones =
 						},
 						["races"] = {7}, -- Gnome
 					})),
---]]				
-					nlq({     -- Legacy Quests 
-						qa(417, {	-- A Pilot's Revenge
-							un(34, i(2218)),	-- Craftsman's Dagger
-							un(34, i(1009)),	-- Compact Hammer
-						}),
-						qdg(qa(4126, {	-- Hurley Blackbreath
-							un(34, i(11964)),	-- Swiftstrike Cudgel
-							un(34, i(12000)),	-- Limb Cleaver
-						})),
-						qa(466, {	-- Search for Incendicite
-							un(34, i(3565)),	-- Beerstained Gloves
-						}),
-					}),
-					
+--]]
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(1130, { 	-- Bjarn
 						dr(01.4, i(6337)),	-- Infantry Leggings
 						dr(01.2, i(6269)),	-- Pioneer Trousers					
@@ -491,15 +477,10 @@ _.Zones =
 						dr(01.1, i(68761)),	-- Imbued Infantry Boots
 						dr(01.0, i(68754)),	-- Imbued Disciple's Boots
 						dr(01.0, i(68760)),	-- Imbued Infantry Gauntlets					
-					}), 
-					nld({     -- Legacy
-						n(1271, { 	-- Old Icebeard
-							i(2899),	-- Wendigo Collar
-						}),
-					}),					
+					}), 			
 --					n(1137, { 	-- Edan the Howler	}), 
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					a(n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
 						i(18772),	-- Swift GReen Mechanostrider
 						i(18773),	-- Swift White Mechanostrider
@@ -521,7 +502,32 @@ _.Zones =
 						i(8497),	-- Rabbit Crate (Snowshoe)
 					})),
 				}),
-				m(866, { 	-- Coldridge Valley
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qa(417, {	-- A Pilot's Revenge
+								un(34, i(2218)),	-- Craftsman's Dagger
+								un(34, i(1009)),	-- Compact Hammer
+							}),
+							qdg(qa(4126, {	-- Hurley Blackbreath
+								un(34, i(11964)),	-- Swiftstrike Cudgel
+								un(34, i(12000)),	-- Limb Cleaver
+							})),
+							qa(466, {	-- Search for Incendicite
+								un(34, i(3565)),	-- Beerstained Gloves
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(1271, { 	-- Old Icebeard
+								un(7, i(2899)),	-- Wendigo Collar
+							}),
+						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
+				m(866, {	-- Coldridge Valley
 					["groups"] = {	
 						n(-25, { 	-- Pet Battle
 							p(441), 	-- Alpine Hare
@@ -788,20 +794,6 @@ _.Zones =
 									["races"] = {7,9}, -- Gnome, Goblin
 								})),
 --]]								
-								nlq({ 	-- Legacy Quests
-									qa(31138, {		-- The Arts of a Monk
-										["groups"] = {
-											i(59042), 	-- Electro-Staff
-										},
-										["classes"] = {10},
-										["races"] = {7},
-									}),
---[[	Retrieving information										
---									q(31138, { 	-- The Arts of a Monk
---										i(59042), -- Electro-Staff
---									}),
---]]
-								}),	
 							},
 							["races"] = {7},
 						}),
@@ -816,21 +808,35 @@ _.Zones =
 								i(10266),	-- Masterwork Breastplate
 								i(6269),	-- Pioneer Trousers
 							}),
-							nld({ 	-- Legacy
-								n(8503, { -- Gibblewilt
-									i(10554),	-- Foreman Pants
-									i(10553),	-- Foreman Vest
-								}),	
-								n(1260,	{ 	-- Great Father Arktikus
-									i(3223),	-- Frostmane Scepter
-								}),
-							}),							
-							
 --[[	
 --							n(1260, { -- Great Father Arctikus		}), 
 --							n(1132, { -- Timber		}), 
 --]]
-
+						}),
+						n(-40, {	-- Legacy
+							["groups"] = {
+								n(-17, {	-- Quests (Legacy)
+									qa(31138, {		-- The Arts of a Monk
+										["groups"] = {
+											un(34, i(59042)), 	-- Electro-Staff
+										},
+										["classes"] = { 10 },	-- Monk
+										["races"] = { 7 },	-- Gnome
+									}),
+								}),
+								n(-16, {	-- Rares (Legacy)
+									n(8503, { -- Gibblewilt
+										i(10554),	-- Foreman Pants
+										i(10553),	-- Foreman Vest
+									}),	
+									n(1260,	{ 	-- Great Father Arktikus
+										i(3223),	-- Frostmane Scepter
+									}),
+								}),
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),
+							},
+							["u"] = 12,
 						}),
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",

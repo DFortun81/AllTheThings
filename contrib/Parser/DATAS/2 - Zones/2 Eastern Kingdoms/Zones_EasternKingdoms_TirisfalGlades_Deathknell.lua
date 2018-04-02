@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(20, {		-- Tirisfal Glades
 			["groups"] = {
-				n(-3, { 	-- Holidays
+				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -146,7 +146,7 @@ _.Zones =
 					}),		
 --]]				
 				}),				
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(417),		-- Bat
 					p(646),		-- Chicken
 					q(3861, { 	-- CLUCK!
@@ -181,7 +181,7 @@ _.Zones =
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qh(26930, {	-- After the Crusade
 						["groups"] = {
 						},
@@ -385,19 +385,8 @@ _.Zones =
 					qg(, qh(14059)),	-- We're Out of Cranberry Chutney Again?
 					qg(, qh(29428)),	-- What Now?
 --]]
-					nlq({     -- Legacy Quests 
-						qh(1822, {	-- Heirloom Weapon
-							["g"] = {
-								un(34, i(7115)),	-- Heirloom Axe
-								un(34, i(7117)),	-- Heirloom Hammer
-								un(34, i(7116)),	-- Heirloom Dagger
-								un(34, i(7118)),	-- Heirloom Sword
-							},
-							["classes"] = { 1 },	-- Warrior
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(1911, { 	-- Deeb
 						dr(13, i(68743)),	-- Imbued Infantry Cloak
 						dr(10, i(68744)),	-- Imbued Pioneer Cloak
@@ -520,11 +509,6 @@ _.Zones =
 						dr(0.9, i(68749)),	-- Imbued Disciple's Bracers
 						dr(0.9, i(68748)),	-- Imbued Disciple's Cloak
 					}),
-					nld({     -- Legacy
-						n(1658, { 	-- Captain Dargol
-							i(3330),	-- Dargol's Hauberk
-						}),
-					}),						
 --[[
 --					n(1531, { -- Lost Soul	}), 
 --					n(1910, { -- Muad	}), 
@@ -536,7 +520,7 @@ _.Zones =
 --					n(51044, { -- Plague	}),	
 --]]								
 				}),
-				n(-2, { 	-- Vendors
+				n( -2, {	-- Vendors
 					n(10856, { -- Argent Quartermaster Hasana <The Argent Dawn>
 						i(19217, {	-- Pattern: Argent Shoulders
 							i(19059)	-- Argent Shoulders
@@ -580,7 +564,7 @@ _.Zones =
 						i(46308),
 					})
 				}),
-				n(0, { -- Zone Drop
+				n(  0, {	-- Zone Drop
 					n(4284, { -- Scarlet Augur		
 						dr(0.02, i(7753)),	-- Bloodspiller
 						dr(0.01, i(7729)),	-- Chesterfall Musket
@@ -721,6 +705,29 @@ _.Zones =
 						dr(0.01, i(13114)),	-- Troll's Bane Leggings
 						dr(0.01, i(6592)),	-- Battleforge Armor
 					}),		
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qh(1822, {	-- Heirloom Weapon
+								["g"] = {
+									un(34, i(7115)),	-- Heirloom Axe
+									un(34, i(7117)),	-- Heirloom Hammer
+									un(34, i(7116)),	-- Heirloom Dagger
+									un(34, i(7118)),	-- Heirloom Sword
+								},
+								["classes"] = { 1 },	-- Warrior
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(1658, { 	-- Captain Dargol
+								un(7, i(3330)),	-- Dargol's Hauberk
+							}),
+						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 				--[[
 				m(892, {	-- Deathknell

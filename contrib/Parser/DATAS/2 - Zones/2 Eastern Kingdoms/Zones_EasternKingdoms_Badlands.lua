@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(17, {		-- Badlands
 			["groups"] = {						
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 --[[					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -95,7 +95,7 @@ _.Zones =
 					}),						
 --]]				
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(406), 	-- Beetle
 					p(398), 	-- Black Rat
 					p(430), 	-- Gold Beetle
@@ -104,7 +104,7 @@ _.Zones =
 					p(433), 	-- Spiky Lizard
 					p(432), 	-- Stripe-Tailed Scorpid
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --					qg(2860, qa(27823)),	-- A Dwarf's Got Needs
 					qg(46652, q(27764, { -- A Strange Request
 						i(63159),
@@ -259,31 +259,8 @@ _.Zones =
 						i(63152),
 						i(63151),
 					})),
-					nlq({     -- Legacy Quests 
-						qa(719, {	-- A Dwarf and His Tools
-							un(34, i(4978)),	-- Ryedol's Hammer
-						}),
-						qdg(qh(4134, {	-- Lost Thunderbrew Recipe
-							un(34, i(11964)),	-- Swiftstrike Cudgel
-							un(34, i(12000)),	-- Limb Cleaver
-						})),
-						q(1137, {	-- News for Fizzle
-							un(34, i(6729)),	-- Fizzle's Zippy Lighter
-							un(34, i(6732)),	-- Gnomish Mechanic's Gloves
-						}),
-						q( 705, {	-- Pearl Diving
-							un(34, i(4086)),	-- Flash Rifle
-							un(34, i(5248)),	-- Flash Wand
-						}),
-						q( 709, {	-- Solution to Doom
-							un(34, i(4746)),	-- Doomsayer's Robe
-						}),
-						q( 716, {	-- Stone Is Better than Cloth
-							un(34, i(4979)),	-- Enchanted Stonecloth Bracers
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(14224, { 	-- 7:XT
 						dr(09.0, i(7532)),	-- Cabalist Spaulders
 						dr(08.0, i(7519)),	-- Gossamer Pants
@@ -687,24 +664,54 @@ _.Zones =
 						dr(01.3, i(7530)),	-- Cabalist Gloves
 						dr(01.1, i(9940)),	-- Abjurer's Hood
 						dr(01.1, i(10127)),	-- Revenant Bracers					
-					}), 
-					nld({     -- Legacy
-						n(7057, {	-- Digmaster Shovelphlange
-							i(9375), 	-- Expert Goldmaker's Helmet
-							i(9378),	-- Shovelphlange's Mining Axe
-							i(9382),	-- Tromping Miner's Boots
-						}),
-						n(2719, { 	-- Dustbelcher Lord
-							i(1521),	-- Lumbering Ogre Axe
-						}),
-						n(2718, { 	-- Dustbelcher Shaman
-							i(2624),	-- Thinking Cap
-						}),	
-						n(2740, { 	-- Shadowforge Darkweaver
-							i(2621),	-- Cowl of Necromancy
-						}),
-					}),						
+					}),
 --					n(2754, { 	-- Anathemus	}), 					
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qa(719, {	-- A Dwarf and His Tools
+								un(34, i(4978)),	-- Ryedol's Hammer
+							}),
+							qdg(qh(4134, {	-- Lost Thunderbrew Recipe
+								un(34, i(11964)),	-- Swiftstrike Cudgel
+								un(34, i(12000)),	-- Limb Cleaver
+							})),
+							q(1137, {	-- News for Fizzle
+								un(34, i(6729)),	-- Fizzle's Zippy Lighter
+								un(34, i(6732)),	-- Gnomish Mechanic's Gloves
+							}),
+							q( 705, {	-- Pearl Diving
+								un(34, i(4086)),	-- Flash Rifle
+								un(34, i(5248)),	-- Flash Wand
+							}),
+							q( 709, {	-- Solution to Doom
+								un(34, i(4746)),	-- Doomsayer's Robe
+							}),
+							q( 716, {	-- Stone Is Better than Cloth
+								un(34, i(4979)),	-- Enchanted Stonecloth Bracers
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(7057, {	-- Digmaster Shovelphlange
+								un(7, i(9375)),	-- Expert Goldmaker's Helmet
+								un(7, i(9378)),	-- Shovelphlange's Mining Axe
+								un(7, i(9382)),	-- Tromping Miner's Boots
+							}),
+							n(2719, { 	-- Dustbelcher Lord
+								un(7, i(1521)),	-- Lumbering Ogre Axe
+							}),
+							n(2718, { 	-- Dustbelcher Shaman
+								un(7, i(2624)),	-- Thinking Cap
+							}),	
+							n(2740, { 	-- Shadowforge Darkweaver
+								un(7, i(2621)),	-- Cowl of Necromancy
+							}),
+						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 44,	

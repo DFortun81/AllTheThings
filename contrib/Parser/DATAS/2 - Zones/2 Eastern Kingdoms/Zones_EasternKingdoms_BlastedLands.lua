@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(19, {		-- Blasted Lands
 			["groups"] = {
-				n(-7, { 	-- World Bosses
+				n( -7, {	-- World Bosses
 					nld({		-- Legacy	
 						n(18338, { -- Highlord Kruul
 							["groups"] = {
@@ -68,7 +68,7 @@ _.Zones =
 					}),
 
 				}),							
-				n(-3, { 	-- Holidays										
+				n( -3, {	-- Holidays										
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -167,14 +167,14 @@ _.Zones =
 					}),						
 --]]				
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
 					p(415), 	-- Fire Beetle
 					p(414), 	-- Scorpid
 					p(416), 	-- Scorpling
 					p(412), 	-- Spider
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qg(42298, qa(26172, { -- A Bloodmage's Gotta Eat Too
 						i(59384),
 						i(59386),
@@ -408,7 +408,7 @@ _.Zones =
 --]]					
 					
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					["groups"] = {	
 						n(8298, { 	-- Akubar the Seer
 							dr(06.0, i(10233)),	-- Engraved Girdle
@@ -1043,7 +1043,7 @@ _.Zones =
 					},
 					["description"] = "If you are above level 90 and need to go to the low level Blasted Lands, then you need to speak with Zidormi who is standing on a small hill near the entrace of the zone from Swamp of Sorrows.",			
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					a(n(76117, {	-- Quartermaster Rindelle <Replacement Quest Rewards and General Goods>
 						["groups"]	= {
 							i(118771),	-- Wildfire Windcloak
@@ -1065,6 +1065,17 @@ _.Zones =
 						["description"] = "Vendor only sells these quest reward items to those who have completed the quest 'Toothsmash the Annihilator'.|r",
 					})),
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),	--]]
 			},
 			["Lvl"] = 55,	
 			["achievementID"] = 766,

@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(35, {		-- Loch Modan
 			["groups"] = {			
-				n(-3, { 	-- Holidays		
+				n( -3, {	-- Holidays		
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -52,7 +52,7 @@ _.Zones =
 					}),	
 --]]
 				}),				
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(441), 	-- Alpine Hare
 					p(437), 	-- Little Black Lamb
 					p(417), 	-- Rat
@@ -61,7 +61,7 @@ _.Zones =
 					p(440), 	-- Snow Cub
 					p(379), 	-- Squirrel
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qg(1092, qa(26148, { -- A Decisive Strike
 						i(58989),	-- Belt of the Valley of Kings
 						i(58990),	-- Rugelfuss Bracers
@@ -205,67 +205,9 @@ _.Zones =
 					}),
 					qg(1343, qa(26845)),	-- Who's In Charge Here?
 					qg(6577, qa(27031)),	-- Wing Nut	
---]]					
-					nlq({	-- Legacy Quests
-						qa(283, { -- A Dark Threat Looms
-							un(34, i(2907)),	-- Dwarven Tree Chopper
-							un(34, i(2908)),	-- Thornblade 
-						}),
-						qa(257, { -- A Hunter's Boast
-							un(34, i(2903)),	-- Daryl's Hunting Bow 
-							un(34, i(2904)),	-- Daryl's Hunting Rifle
-						}),
-						qa(258, { -- A Hunter's Challenge
-							un(34, i(59000)),	-- Daryl's Axe
-							un(34, i(859)),		-- Fine Cloth Shirt
-							un(34, i(59001)),	-- Ill-Worn Belt
-							un(34, i(59002)),	-- Unabashed Vest
-							un(32, i(3572)),	-- Daryl's Shortsword
-						}),
-						qa(2038, { -- Bingles' Missing Supplies
-							un(34, i(58975)),	-- Gnomish All-Purpose Ray Gun
-							un(34, i(58974)),	-- Mechanical Wand
-							un(34, i(58973)),	-- Monte's Scythe
-							un(32, i(12522)),	-- Bingles' Flying Gloves 
-						}),
-						qa(385, { -- Crocolisk Hunting
-							un(34, i(59007)),	-- Croc-Scale Gloves
-							un(34, i(59006)),	-- Croc-Skin Boots
-							un(34, i(59005)),	-- Marek's Dagger
-						}),	
-						qa(307, { -- Filthy Paws
-							un(32, i(3166)),	-- Ironheart Chain 
-							un(32, i(3160)),	-- Ironplate Buckler 
-							un(32, i(3161)),	-- Robe of the Keeper 
-						}),	
-						qa(297, { -- Gathering Idols	
-							un(32, i(5241)),	-- Dwarven Flamestick 
-							un(32, i(6186)),	-- Trogg Slicer 
-							un(32, i(3154)),	-- Thelsamar Axe
-						}),	
-						qa(217, { -- In Defense of the King's Lands
-							un(34, i(1436)),	-- Frontier Britches 
-							un(34, i(6187)),	-- Dwarven Defender 
-							un(34, i(1832)),	-- Lucky Trousers 
-						}),
-						qa(309, { -- Protecting the Shipment
-							un(32, i(3217)),	-- Foreman Belt 
-							un(32, i(6188)),	-- Mud Stompers 
-						}),							
-						qa(416, { -- Rat Catching
-							un(34, i(58977)), 	-- Algaz Shield
-							un(34, i(58976)), 	-- Rat Ear Cloak
-							un(32, i(3217)),	-- Foreman Belt 
-							un(32, i(6188)),	-- Mud Stompers 
-						}),
-						qa(256, { -- WANTED: Chok'sul
-							un(34, i(59026)), 	-- Bounty Hunter's Bracers
-							un(34, i(59027)), 	-- Thelsamar Chainmail
-							un(32, i(6191)),	-- Kimbra Boots 
-						}),
-					}),					
+--]]
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(45380, { 	-- Ashtail
 						dr(04.0, i(9765)),	-- Cadet Vest
 						dr(03.0, i(9779)),	-- Bandit Cloak
@@ -730,43 +672,8 @@ _.Zones =
 						dr(01.0, i(9748)),	-- Simple Robe
 						dr(01.0, i(6550)),	-- Soldier's Wristguards					
 					}), 
-					nld({     -- Legacy
-						n(1222, {	-- Dark Iron Sapper
-							un(7, i(2274)),	-- Sapper's Gloves
-						}),
-						n(1180, {	-- Mo'grosh Brute
-							un(7, i(2823)),	-- Mo'grosh Can Opener
-						}),
-						n(1179, {	-- Mo'grosh Enforcer
-							un(7, i(2821)),	-- Mo'grosh Masher
-						}),
-						n(1178, {	-- Mo'grosh Ogre
-							un(7, i(2822)),	-- Mo'grosh Toothpick
-						}),
-						n(1166, { 	-- Stonesplinter Seer
-							un(7, i(2266)),	-- Stonesplinter Dagger
-						}),
-						n(1197, {	-- Stonesplinter Shaman
-							un(7, i(2267)),	-- Stonesplinter Mace
-						}),
-						n(1163, { 	-- Stonesplinter Skullthumper	
-							un(7, i(2265)),	-- Stonesplinter Axe
-						}),
-						na(7170, { 	-- Thragomm
-							un(7, i(4949)),	-- Orcish Cleaver
-						}),
-						n(1176, { 	-- Tunnel Rat Forager
-							un(7, i(2281)),	 -- Rodentia Flint Axe
-						}),
-						n(1202, { 	-- Tunnel Rat Kobold
-							un(7, i(2281)),	 -- Rodentia Flint Axe
-						}),
-						n(1177, { 	-- Tunnel Rat Surveyor
-							un(7, i(2283)),	-- Rat Cloth Belt
-						}),
-					}),					
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					a(n(1214, {	-- Aldren Cordon <Clothier>
 						i(4781),	-- Whispering Vest
 						i(4786),	-- Wise Man's Belt
@@ -795,6 +702,106 @@ _.Zones =
 							i(6264),	-- Greater Adept's Robe
 						}),
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qa(283, { -- A Dark Threat Looms
+								un(34, i(2907)),	-- Dwarven Tree Chopper
+								un(34, i(2908)),	-- Thornblade 
+							}),
+							qa(257, { -- A Hunter's Boast
+								un(34, i(2903)),	-- Daryl's Hunting Bow 
+								un(34, i(2904)),	-- Daryl's Hunting Rifle
+							}),
+							qa(258, { -- A Hunter's Challenge
+								un(34, i(59000)),	-- Daryl's Axe
+								un(34, i(859)),		-- Fine Cloth Shirt
+								un(34, i(59001)),	-- Ill-Worn Belt
+								un(34, i(59002)),	-- Unabashed Vest
+								un(32, i(3572)),	-- Daryl's Shortsword
+							}),
+							qa(2038, { -- Bingles' Missing Supplies
+								un(34, i(58975)),	-- Gnomish All-Purpose Ray Gun
+								un(34, i(58974)),	-- Mechanical Wand
+								un(34, i(58973)),	-- Monte's Scythe
+								un(32, i(12522)),	-- Bingles' Flying Gloves 
+							}),
+							qa(385, { -- Crocolisk Hunting
+								un(34, i(59007)),	-- Croc-Scale Gloves
+								un(34, i(59006)),	-- Croc-Skin Boots
+								un(34, i(59005)),	-- Marek's Dagger
+							}),	
+							qa(307, { -- Filthy Paws
+								un(32, i(3166)),	-- Ironheart Chain 
+								un(32, i(3160)),	-- Ironplate Buckler 
+								un(32, i(3161)),	-- Robe of the Keeper 
+							}),	
+							qa(297, { -- Gathering Idols	
+								un(32, i(5241)),	-- Dwarven Flamestick 
+								un(32, i(6186)),	-- Trogg Slicer 
+								un(32, i(3154)),	-- Thelsamar Axe
+							}),	
+							qa(217, { -- In Defense of the King's Lands
+								un(34, i(1436)),	-- Frontier Britches 
+								un(34, i(6187)),	-- Dwarven Defender 
+								un(34, i(1832)),	-- Lucky Trousers 
+							}),
+							qa(309, { -- Protecting the Shipment
+								un(32, i(3217)),	-- Foreman Belt 
+								un(32, i(6188)),	-- Mud Stompers 
+							}),							
+							qa(416, { -- Rat Catching
+								un(34, i(58977)), 	-- Algaz Shield
+								un(34, i(58976)), 	-- Rat Ear Cloak
+								un(32, i(3217)),	-- Foreman Belt 
+								un(32, i(6188)),	-- Mud Stompers 
+							}),
+							qa(256, { -- WANTED: Chok'sul
+								un(34, i(59026)), 	-- Bounty Hunter's Bracers
+								un(34, i(59027)), 	-- Thelsamar Chainmail
+								un(32, i(6191)),	-- Kimbra Boots 
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(1222, {	-- Dark Iron Sapper
+								un(7, i(2274)),	-- Sapper's Gloves
+							}),
+							n(1180, {	-- Mo'grosh Brute
+								un(7, i(2823)),	-- Mo'grosh Can Opener
+							}),
+							n(1179, {	-- Mo'grosh Enforcer
+								un(7, i(2821)),	-- Mo'grosh Masher
+							}),
+							n(1178, {	-- Mo'grosh Ogre
+								un(7, i(2822)),	-- Mo'grosh Toothpick
+							}),
+							n(1166, { 	-- Stonesplinter Seer
+								un(7, i(2266)),	-- Stonesplinter Dagger
+							}),
+							n(1197, {	-- Stonesplinter Shaman
+								un(7, i(2267)),	-- Stonesplinter Mace
+							}),
+							n(1163, { 	-- Stonesplinter Skullthumper	
+								un(7, i(2265)),	-- Stonesplinter Axe
+							}),
+							na(7170, { 	-- Thragomm
+								un(7, i(4949)),	-- Orcish Cleaver
+							}),
+							n(1176, { 	-- Tunnel Rat Forager
+								un(7, i(2281)),	 -- Rodentia Flint Axe
+							}),
+							n(1202, { 	-- Tunnel Rat Kobold
+								un(7, i(2281)),	 -- Rodentia Flint Axe
+							}),
+							n(1177, { 	-- Tunnel Rat Surveyor
+								un(7, i(2283)),	-- Rat Cloth Belt
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 10,	
