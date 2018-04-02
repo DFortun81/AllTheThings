@@ -1102,9 +1102,11 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
+							q( 1096, {	-- Gerenzo Wrenchwhistle
+								un(34, i(6667)),	-- Engineer's Cloak
+								un(34, i(6668)),	-- Draftsman Boots
+							}),
 							qh(1058, {	-- Jin'Zil's Forest Magic
 								un(34, i(6664)),	-- Voodoo Mantle
 								un(34, i(6665)),	-- Hexed Bracers
@@ -1116,6 +1118,8 @@ _.Zones =
 								un(7, i(5752)), 	-- Wyvern Tailspike
 							}),
 						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),						
 					},
 					["u"] = 12,
 				}),

@@ -1005,6 +1005,10 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 						n(-17, {	-- Quests (Legacy)
+							qa(4266, {	-- A Hero's Welcome
+								un(34, i(11856)),	-- Ceremonial Elven Blade
+								un(34, i(11857)),	-- Sanctimonial Rod
+							}),
 							qa(1101, {	-- The Crone of the Kraul
 								un(34, i( 4197)),	-- Berylline Pads
 								un(34, i( 6742)),	-- Stonefist Girdle

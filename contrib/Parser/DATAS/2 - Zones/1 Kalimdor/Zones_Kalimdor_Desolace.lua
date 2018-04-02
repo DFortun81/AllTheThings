@@ -1080,10 +1080,24 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 						n(-17, {	-- Quests (Legacy)
+							qdg(qa(7064, {	-- Corruption of Earth and Seed
+								un(34, i(17705)),	-- Thrash Blade
+								un(34, i(17743)),	-- Resurgence Rod
+								un(34, i(17753)),	-- Verdant Keeper's Aim
+							})),
+							qdg(qh(7064, {	-- Corruption of Earth and Seed
+								un(34, i(17705)),	-- Thrash Blade
+								un(34, i(17743)),	-- Resurgence Rod
+								un(34, i(17753)),	-- Verdant Keeper's Aim
+							})),
 							q(5943, {	-- Gizelton Caravan
 								un(34, i(15691)),	-- Sidegunner Shottie
 								un(34, i(15692)),	-- Kodo Brander
 								un(34, i(15695)),	-- Studded Ring Shield
+							}),
+							q(1381, {	-- Khan Hratha
+								un(34, i(6788)),	-- Magram Hunter's Belt
+								un(34, i(6789)),	-- Ceremonial Centaur Blanket
 							}),
 							q(1380, {	-- Khan Kratha
 								un(34, i(6773)),	-- Gelkis Marauder Chain

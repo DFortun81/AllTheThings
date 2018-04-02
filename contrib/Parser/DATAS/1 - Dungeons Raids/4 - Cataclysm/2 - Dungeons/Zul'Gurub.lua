@@ -109,7 +109,15 @@ _.Instances =
 						i(69622),	-- The Hexxer's Mask
 						i(69623),	-- Vestments of the Soulflayer
 						h(i(122215)), -- Music Roll: Zul'Gurub Voodoo
-					}))
+					})),
+					n(-40, {	-- Legacy
+						["groups"] = {
+							n(11380, {	-- Jin'do the Hexxer
+								un(2, i(19884)),	-- Jin'do's Judgement
+							}),
+						},
+						["u"] = 12,
+					}),
 				},
 				["Lvl"] = 85,
 				["mapID"] = 793

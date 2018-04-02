@@ -228,7 +228,13 @@ _.Zones =
 							qa(927),	-- The Moss-twined Heart
 						}),
 					}),
-					qg(2078, qa(  483)),	-- The Relics of Wakening
+--]]
+					qg(2078, qa(483, {	-- The Relics of Wakening
+						nld({	-- Legacy
+							un(34, i(9603)),	-- Gritroot Staff
+						}),
+					})),
+--[[
 					qg(2151, qa(  487)),	-- The Road to Darnassus
 					o(6752, {	-- Strange Fronded Plant
 						qa(931),	-- The Shimmering Frond
@@ -324,8 +330,6 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
 							qa(486, {	-- Ursal the Mauler
 								un(34, i(5459)),	-- Defender Axe
@@ -334,6 +338,8 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),						
 					},
 					["u"] = 12,
 				}),

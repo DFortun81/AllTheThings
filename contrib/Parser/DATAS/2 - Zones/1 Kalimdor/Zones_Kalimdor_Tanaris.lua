@@ -1772,15 +1772,19 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
+							q( 3161, {	-- Gahz'ridian
+								un(34, i(10827)),	-- Surveyor's Tunic
+								un(34, i(10826)),	-- Staff of Lore
+							}),
 							qh(1189, {	-- Safety First
 								un(34, i(6726)),	-- Razzeric's Customized Seatbelt
 								un(34, i(6727)),	-- Razzeric's Racing Grips
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 					["u"] = 12,

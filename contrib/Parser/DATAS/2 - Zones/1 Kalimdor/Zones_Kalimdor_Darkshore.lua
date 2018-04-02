@@ -968,10 +968,16 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							qa( 993, {	-- A Lost Master
+								un(34, i(5387)),	-- Enchanted Moonstalker Cloak
+							}),
 							qa( 957, {	-- Bashal'Aran
 								un(34, i(7229)),	-- Explorer's Vest
 								un(34, i(5617)),	-- Vagabond Leggings
 								un(34, i(5604)),	-- Elven Wand
+							}),
+							qa( 947, {	-- Cave Mushrooms
+								un(34, i(5610)),	-- Gustweld Cloak
 							}),
 							qa( 963, {	-- For Love Eternal
 								un(34, i(5611)),	-- Tear of Grief
@@ -983,15 +989,27 @@ _.Zones =
 								un(34, i(5757)),	-- Hardwood Cudgel
 								un(34, i(5615)),	-- Woodsman Sword
 							}),
+							qa(2139, {	-- Tharnariun's Hope
+								un(34, i(7738)),	-- Evergreen Gloves
+								un(34, i(7739)),	-- Timberland Cape
+							}),
 							qa(4763, {	-- The Blackwood Corrupted
 								un(34, i(15204)),	-- Moonstone Wand
 								un(34, i(15202)),	-- Wildkeeper Leggings
 								un(34, i(15203)),	-- Guststorm Legguards
 							}),
+							qa(4813, {	-- The Fragments Within
+								un(34, i(15335)),	-- Briarsteel Shortsword
+								un(34, i(15396)),	-- Curvewood Dagger
+								un(34, i(15397)),	-- Oakthrush Staff
+							}),
 							qa(5321, {	-- The Sleeper Has Awakened
 								un(34, i(15205)),	-- Owlsight Rifle
 								un(34, i(15206)),	-- Jadefinger Baton
 								un(34, i(15207)),	-- Steelcap Shield
+							}),
+							qa( 973, {	-- The Tower of Althalaxx
+								un(34, i(5613)),	-- Staff of the Purifier
 							}),
 							qa(4740, {	-- WANTED: Murkdeep!
 								un(34, i(5315)),	-- Timberland Armguards

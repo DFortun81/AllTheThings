@@ -656,6 +656,11 @@ _.Zones =
 					}),
 					qh(  876, {	-- Serena Bloodfeather
 						["groups"] = {
+							nld({	-- Legacy
+								un(34, i(5321)),	-- 	Elegant Shortsword
+								un(34, i(5279)),	-- 	Harpy Skinner
+								un(34, i(5318)),	-- 	Zhovur Axe
+							}),
 						},
 						["sourceQuests"] = { 875 },	-- Harpy Lieutenants
 					}),
@@ -1454,10 +1459,14 @@ _.Zones =
 								un(34, i(5357)),	-- Ward of the Vale
 								un(34, i(5355)),	-- Beastmaster's Girdle
 							}),
-							qh( 902, {	-- Samophlange
+							q( 865, {	-- Raptor Horns
+								un(34, i(5343)),	-- Barkeeper's Cloak
+							}),
+							qh(902, {	-- Samophlange
 								un(34, i(5324)),	-- Engineer's Hammer
 								un(34, i(5325)),	-- Welding Shield
 							}),
+							
 							qh(888, {	-- Stolen Booty
 								un(34, i(5337)),	-- Wayfaring Gloves
 								un(34, i(5320)),	-- Padded Lamellar Boots
