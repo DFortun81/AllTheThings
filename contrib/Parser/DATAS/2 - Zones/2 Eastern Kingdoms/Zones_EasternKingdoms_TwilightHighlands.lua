@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(700, {	-- Twilight Highlands
 			["groups"] = {							
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -107,7 +107,7 @@ _.Zones =
 					}),						
 --]]				
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(393), 	-- Cockroach
 					p(647), 	-- Grizzly Squirrel
@@ -124,7 +124,7 @@ _.Zones =
 					p(548), 	-- Wildhammer Gryphon Hatchling
 					p(549), 	-- Yellow-Bellied Marmot
 				}),
-				n(-38, { 	-- Profession
+				n(-38, {	-- Profession
 					n(-188, { 	-- Mining
 						["groups"] = {
 							i(67282), 	-- Pet Elementium Geode
@@ -132,7 +132,7 @@ _.Zones =
 						["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
 					}),
 				}),				
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --					qg(, qa(28001)),	-- A Coward's Due
 					qg(46513, q(27745,  {  -- A Fiery Reunion
 						i(63711),
@@ -718,7 +718,7 @@ _.Zones =
 					qg(, qh(26619)),	-- You Say You Want a Revolution
 --]]
 				}),
-				n(-16, { -- Rares
+				n(-16, {	-- Rares
 					n(50085, { -- Overlord Sunderfury
 						i(67244), -- Sunderfury's Sundries
 					}), 
@@ -745,7 +745,7 @@ _.Zones =
 						dr(4, i(67142)),	-- Zom's Electrostatic Cloak
 					}), 
 				}),
-				n(-2, {	-- Vendors
+				n( -2, {	-- Vendors
 					h(n(50146, {	-- Agatian Fallanos <Shard Trader>
 						i(67308, {	-- Formula: Enchanted Lantern
 							i(67274),	-- Enchanted Lantern Pet
@@ -1296,6 +1296,17 @@ _.Zones =
 						}),
 					})),
 				}),
+--[[				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),	--]]
 			},
 			["Lvl"] = 84,	
 			["achievementID"] = 4866,

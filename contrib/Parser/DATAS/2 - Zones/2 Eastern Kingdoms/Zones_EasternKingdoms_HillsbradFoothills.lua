@@ -6,8 +6,8 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(24, {		-- Hillsbrad Foothills
 			["groups"] = {				
---[[				
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
+--[[
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -39,7 +39,8 @@ _.Zones =
 						},
 						["achievementID"] = 1793, -- For The Children
 						["u"] = 20,
-					}),					
+					}),
+--]]
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -49,7 +50,8 @@ _.Zones =
 						},
 						["achievementID"] = 1038, -- The Flame Warden
 						["u"] = 21,
-					}),					
+					}),
+--[[
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -58,6 +60,7 @@ _.Zones =
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),
+--]]
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -67,7 +70,8 @@ _.Zones =
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,
-					}),	
+					}),
+--[[
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
@@ -76,6 +80,7 @@ _.Zones =
 						["achievementID"] = 3478, -- Pilgrim
 						["u"] = 28,
 					}),
+--]]
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -87,8 +92,7 @@ _.Zones =
 						["u"] = 29,
 					}),						
 				}),				
---]]				
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(648), 	-- Huge Toad
 					p(453), 	-- Infested Bear Cub
@@ -102,7 +106,7 @@ _.Zones =
 					p(379), 	-- Squirrel
 					p(420), 	-- Toad
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qh(28345, {	-- *Gurgle* HELP! *Gurgle*
 						["groups"] = {
 						},
@@ -781,38 +785,8 @@ _.Zones =
 						},
 						["qg"] = 2418,	-- Deathguard Samsa
 					}),
-					nlq({ 	-- Legacy Quests
-						qa(565, {	-- Bartolo's Yeti Fur Cloak
-							un(34, i(2805)),	-- Yeti Fur Cloak
-						}),
-						qa(504, {	-- Crushridge Warmongers
-							un(34, i(5249)),	-- Burning Silver
-							un(34, i(3763)),	-- Lunar Buckler
-						}),
-						qa(505, {	-- Syndicate Assassins
-							un(34, i(3758)),	-- Crusader Belt
-							un(34, i(3759)),	-- Insulated Sage Gloves
-						}),
-						q( 508, {	-- Taretha's Gift
-							un(34, i(3764)),	-- Mantis Boots
-							un(34, i(3765)),	-- Brigand's Pauldrons
-						}),
-						qh(498, {	-- The Rescue
-							un(34, i(3752)),	-- Grunt Vest
-							un(34, i(3733)),	-- Orcish War Chain
---							un( 8, i(3734)),	-- Recipe: Big Bear Steak
-						}),
-						qh(1051, { 	-- Vorrel's Revenge
-							i(4643), 	-- Grimsteel Cape
-							i(7750), 	-- Mantle of Woe
-							i(7751), 	-- Vorrel's Boots
-						}),
-						qh(566, {	-- WANTED: Baron Vardus
-							un(34, i(2231)),	-- Inferno Robe
-						}),
-					}),	
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(50335, { 	-- Alitus
 						dr(14.0, i(6575)),	-- Defender Cloak
 						dr(12.0, i(9781)),	-- Bandit Pants
@@ -1469,35 +1443,9 @@ _.Zones =
 						dr(01.2, i(10404)),	-- Durable Belt
 						dr(01.2, i(6612)),	-- Sage's Boots
 						dr(01.0, i(9831)),	-- Scaled Cloak
-					}), 
-					nld({     -- Legacy
-						n(2287, { 	-- Crushridge Warmonger 
-							i(1602),	-- Sickle Axe
-						}),
-						nh(2358, { 	-- Dalaran Summoner
-							i(5245), 	-- Summoner's Wand
-						}),
-						nh(2346, { 	-- Dun Garok Priest
-							i(4723),	-- Humbert's Pants
-						}),
-						nh(2345, { 	-- Dun Garok Rifleman
-							i(4724), 	-- Humbert's Helm
-						}),
-						n(2427, { 	-- Jailor Eston
-							i(3429), 	-- Guardsman Belt
-						}),
-						n(2428, { 	-- Jailor Marlgen
-							i(3429),	-- Guardsman Belt
-						}),
-						n(2372, { 	-- Mudsnout Gnoll
-							i(3204),	-- Deepwood Bracers
-						}),
-						n(2246, { 	-- Syndicate Assassin
-							i(1280),	-- Cloaked Hood
-						}),
-					}),										
+					}),
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					h(n(2393, {	-- Christoph Jeffcoat <Tradesman>
 						i(5788, {	-- Pattern: Thick Murloc Armor
 							i(5782),	-- Thick Murloc Armor
@@ -1592,6 +1540,69 @@ _.Zones =
 							i(7352),	-- Earthen Leather Shoulders
 						}),
 					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qa(565, {	-- Bartolo's Yeti Fur Cloak
+								un(34, i(2805)),	-- Yeti Fur Cloak
+							}),
+							qa(504, {	-- Crushridge Warmongers
+								un(34, i(5249)),	-- Burning Silver
+								un(34, i(3763)),	-- Lunar Buckler
+							}),
+							qa(505, {	-- Syndicate Assassins
+								un(34, i(3758)),	-- Crusader Belt
+								un(34, i(3759)),	-- Insulated Sage Gloves
+							}),
+							q( 508, {	-- Taretha's Gift
+								un(34, i(3764)),	-- Mantis Boots
+								un(34, i(3765)),	-- Brigand's Pauldrons
+							}),
+							qh(498, {	-- The Rescue
+								un(34, i(3752)),	-- Grunt Vest
+								un(34, i(3733)),	-- Orcish War Chain
+	--							un( 8, i(3734)),	-- Recipe: Big Bear Steak
+							}),
+							qh(1051, { 	-- Vorrel's Revenge
+								i(4643), 	-- Grimsteel Cape
+								i(7750), 	-- Mantle of Woe
+								i(7751), 	-- Vorrel's Boots
+							}),
+							qh(566, {	-- WANTED: Baron Vardus
+								un(34, i(2231)),	-- Inferno Robe
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(2287, { 	-- Crushridge Warmonger 
+								un(7, i(1602)),	-- Sickle Axe
+							}),
+							nh(2358, { 	-- Dalaran Summoner
+								un(7, i(5245)), 	-- Summoner's Wand
+							}),
+							nh(2346, { 	-- Dun Garok Priest
+								un(7, i(4723)),	-- Humbert's Pants
+							}),
+							nh(2345, { 	-- Dun Garok Rifleman
+								un(7, i(4724)), 	-- Humbert's Helm
+							}),
+							n(2427, { 	-- Jailor Eston
+								un(7, i(3429)), 	-- Guardsman Belt
+							}),
+							n(2428, { 	-- Jailor Marlgen
+								un(7, i(3429)),	-- Guardsman Belt
+							}),
+							n(2372, { 	-- Mudsnout Gnoll
+								un(7, i(3204)),	-- Deepwood Bracers
+							}),
+							n(2246, { 	-- Syndicate Assassin
+								un(7, i(1280)),	-- Cloaked Hood
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 20,	

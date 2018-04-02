@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(26, {		-- The Hinterlands
 			["groups"] = {
-				n(-7, { 	-- World Bosses
+				n( -7, { 	-- World Bosses
 					nld({		-- Legacy	
 						n(14889, { -- Emeriss
 							["groups"] = {
@@ -127,7 +127,7 @@ _.Zones =
 						}),	
 					}),
 				}),			
-				n(-3, { 	-- Holidays					
+				n( -3, { 	-- Holidays					
 					n(-47, {	-- Lunar Festival
 						["groups"] = {
 							n(-17, {     -- Quests
@@ -682,15 +682,6 @@ _.Zones =
 						["qg"] = 43157,	-- Doran Steelwing
 						["breadcrumbQuestID"] = { 26496 },	-- Down with the Vilebranch
 					}),
-					nlq({     -- Legacy Quests 
-						qh(7850, {	-- Dark Vessels
-							un(34, i(19118)),	-- Nature's Breath
-						}),
-						qa(2994, {	-- Saving Sharpbeak
-							un(34, i(9651)),	-- Gryphon Rider's Stormhammer
-							un(34, i(9652)),	-- Gryphon Rider's Leggings
-						}),
-					}),
 				}),
 				n(-16, {	-- Rares
 					n(8215, { 	-- Grimungous
@@ -1102,7 +1093,7 @@ _.Zones =
 						dr(01.0, i(7369)),	-- Elder's Robe					
 					}), 
 				}),
-				n(-2,  {	-- Vendors
+				n( -2,  {	-- Vendors
 					a(n(12040, {	-- Brannik Ironbelly <Armorsmith>
 						i(12258),	-- Serpent Clasp Belt
 						i(12257),	-- Heavy Notched Belt
@@ -1123,14 +1114,28 @@ _.Zones =
 						}),
 					})),
 				}),
-				n(-100, { -- Legacy
-					n(0, { -- Zone Drop [Only common/special mobs that aren't rare]
-						n(7996, { -- Qiaga the Keeper
-							i(9241, {  -- Sacred Mallet
-								un(2, i(9240)), -- Mallet of Zul'Farrak
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qh(7850, {	-- Dark Vessels
+								un(34, i(19118)),	-- Nature's Breath
+							}),
+							qa(2994, {	-- Saving Sharpbeak
+								un(34, i(9651)),	-- Gryphon Rider's Stormhammer
+								un(34, i(9652)),	-- Gryphon Rider's Leggings
 							}),
 						}),
-					}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						n(  0, {	-- Zone Drop (Legacy)
+							n(7996, { -- Qiaga the Keeper
+								i(9241, {  -- Sacred Mallet
+									un(2, i(9240)), -- Mallet of Zul'Farrak
+								}),
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 30,	

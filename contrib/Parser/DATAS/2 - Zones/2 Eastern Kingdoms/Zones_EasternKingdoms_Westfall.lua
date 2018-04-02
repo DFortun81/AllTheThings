@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(39, {		-- Westfall
 			["groups"] = {							
-				n(-3, { 	-- Holidays	
+				n( -3, {	-- Holidays	
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -39,7 +39,7 @@ _.Zones =
 						["u"] = 21,
 					}),	
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(385), 	-- Mouse
 					p(386), 	-- Prairie Dog
@@ -74,7 +74,7 @@ _.Zones =
 						})),
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --					qg(, qa(26320)),	-- A Vision of the Past
 					qg(7024, qa(26291, { -- Big Trouble in Moonbrook
 						i(58926),	-- Gryan's Boots
@@ -223,27 +223,8 @@ _.Zones =
 						i(58911),	-- Tightly Cinched Belt
 					})),
 --					qg(, qa(26270)),	-- You Have Our Thanks	
-					nlq({	-- Legacy Quests
-						q(153, {		-- Red Leather Bandanas
-							un(34, i(3511)),	-- Cloak of the People's Militia
-							un(34, i(5944)),	-- Greaves of the People's Militia
-							un(34, i(12295)),	-- Leggings of the People's Militia
-						}),
-						q(9, {			-- The Killing Fields
-							un(34, i(3578)),	-- Harvester's Pants
-							un(34, i(1561)),	-- Harvester's Robe
-						}),
-						q(14, {			-- The People's Militia
-							un(34, i(1566)),	-- Edge of the People's Militia 
-							un(34, i(1480)),	-- Fist of the People's Militia
-							un(34, i(12296)),	-- Spark of the People's Militia
-						}),
-						qc2(q(1652, { 	-- The Tome of Valor
-							un(34, i(9607)),	-- Bastion of Stormwind 
-						})),
-					}),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(520, { 	-- Brack
 						dr(25.0, i(9786)),	-- Raider's Cloak
 						dr(11.0, i(9763)),	-- Cadet Leggings
@@ -531,37 +512,8 @@ _.Zones =
 							un(7, i(4454)),		-- Talon of Vultros
 						}),							
 					}), 
-					nld({    -- Legacy
-						n(619, { 	-- Defias Conjurer 
-							un(7, i(1933)), 	-- Staff of Conjuring
-						}),
-						n(1726, { 	-- Defias Magician
-							un(7, i(1928)), 	-- Defias Mage Staff
-						}),
-						n(121, { 	-- Defias Pathstalker
-							un(7, i(832)),		-- Silver Defias Belt
-						}),
-						n(1725, { 	-- Defias Watchman
-							un(7, i(1925)), 	-- Defias Rapier
-						}),
-						n(48334, { 	-- Dust Devil
-							un(7, i(4290)), 	-- Dust Bowl
-						}),
-						n(36, {		-- Harvest Golem
-							un(7, i(816)),		-- Small Hand Blade
-						}),
-						n(171, { 	-- Murloc Warrior
-							un(7, i(1394)),		-- Driftwood Club
-						}),
-						n(124, {	-- Riverpaw Brute
-							un(7, i(826)),		-- Brutish Riverpaw Axe
-						}),
-						n(125, { 	-- Riverpaw Overseer
-							un(7, i(1190)),		-- Overseer's Cloak
-						}),
-					}),					
 				}),
-				n(-77, { 	-- Special
+				n(-77, {	-- Special
 					o(269830, { 	-- Gift of the Mind-Seekers
 						["groups"] = {
 							i(147835),	-- Riddler's Mind Worm
@@ -571,7 +523,7 @@ _.Zones =
 						["description"] = "For a walkthrough of how to obtain this mount. Go to Special Header under Outdoor Zones - Broken Isles - Dalaran.",
 					}),										
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					a(n(844, {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {
 							i(4795),	-- Bear Bracers
@@ -597,6 +549,61 @@ _.Zones =
 					a(n(1668, {	-- William MacGregor <Bowyer>
 						i(11304),	-- Fine Longbow
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							q(153, {		-- Red Leather Bandanas
+								un(34, i(3511)),	-- Cloak of the People's Militia
+								un(34, i(5944)),	-- Greaves of the People's Militia
+								un(34, i(12295)),	-- Leggings of the People's Militia
+							}),
+							q(9, {			-- The Killing Fields
+								un(34, i(3578)),	-- Harvester's Pants
+								un(34, i(1561)),	-- Harvester's Robe
+							}),
+							q(14, {			-- The People's Militia
+								un(34, i(1566)),	-- Edge of the People's Militia 
+								un(34, i(1480)),	-- Fist of the People's Militia
+								un(34, i(12296)),	-- Spark of the People's Militia
+							}),
+							qc2(q(1652, { 	-- The Tome of Valor
+								un(34, i(9607)),	-- Bastion of Stormwind 
+							})),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(619, { 	-- Defias Conjurer 
+								un(7, i(1933)), 	-- Staff of Conjuring
+							}),
+							n(1726, { 	-- Defias Magician
+								un(7, i(1928)), 	-- Defias Mage Staff
+							}),
+							n(121, { 	-- Defias Pathstalker
+								un(7, i(832)),		-- Silver Defias Belt
+							}),
+							n(1725, { 	-- Defias Watchman
+								un(7, i(1925)), 	-- Defias Rapier
+							}),
+							n(48334, { 	-- Dust Devil
+								un(7, i(4290)), 	-- Dust Bowl
+							}),
+							n(36, {		-- Harvest Golem
+								un(7, i(816)),		-- Small Hand Blade
+							}),
+							n(171, { 	-- Murloc Warrior
+								un(7, i(1394)),		-- Driftwood Club
+							}),
+							n(124, {	-- Riverpaw Brute
+								un(7, i(826)),		-- Brutish Riverpaw Axe
+							}),
+							n(125, { 	-- Riverpaw Overseer
+								un(7, i(1190)),		-- Overseer's Cloak
+							}),
+						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 10,	

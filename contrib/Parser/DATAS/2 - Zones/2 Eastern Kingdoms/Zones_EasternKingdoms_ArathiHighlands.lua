@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(16, {		-- Arathi Highlands
 			["groups"] = {				
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 --[[					
 					n(-47, {    	-- Lunar Festival
 						["groups"] = {
@@ -97,14 +97,14 @@ _.Zones =
 					}),						
 --]]				
 				}),							
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(443), 	-- Grasslands Cottontail
 					p(386), 	-- Prairie Dog
 					p(417), 	-- Rat
 					p(419), 	-- Small Frog
 					p(445), 	-- Tiny Twister
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qh(26081, {	-- Alina's Reward (awarded "Galen's Fall" criteria)
 						["groups"] = {
 							i( 59194),	-- Sandals of Satisfaction
@@ -534,24 +534,8 @@ _.Zones =
 					qpvp(qg(15021, qh(8121))),	-- Take Four Bases
 					qpvp(qg(14983, qa(8105))),	-- The Battle for Arathi Basin!
 					qpvp(qg(15021, qh(8120))),	-- The Battle for Arathi Basin!		--]]
-					nlq({     -- Legacy Quests 
-						q( 662, {	-- Deep Sea Salvage
-							un(34, i(4511)),	-- Black Water Hammer
-						}),						
-						q( 666, {	-- Sunken Treasure
-							un(34, i(4547)),	-- Gnomish Zapper
-							un(34, i(4548)),	-- Servomechanic Sledgehammer
-						}),
-						qa(685, {	-- Wanted! Otto and Falconcrest
-							un(34, i(5247)),	-- Rod of Sorrow
-							un(34, i(4745)),	-- War Rider Bracers
-						}),
-						qa(684, {	-- Wanted! Marez Cowl
-							un(34, i(4744)),	-- Arcane Runed Bracers
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(50891, { 	-- Boros
 						dr(10.0, i(6607)),	-- Dervish Leggings
 						dr(08.0, i(6612)),	-- Sage's Boots
@@ -1118,26 +1102,9 @@ _.Zones =
 						dr(01.2, i(10404)),	-- Durable Belt
 						dr(01.2, i(6612)),	-- Sage's Boots
 						dr(01.0, i(9831)),	-- Scaled Cloak					
-					}), 
-					nld({    	-- Legacy
-						n(2564, { 	-- Boulderfist Enforcer
-							i(3341),	-- Gauntlets of Ogre Strength
-						}),
-						nh(2782, { 	-- Caretaker Alaric	
-							i(2623),	-- Holy Diadem
-						}),
-						nh(2780, { 	-- Caretaker Nevlin
-							i(2623),	-- Holy Diadem
-						}),
-						nh(2781, { 	-- Caretaker Weston
-							i(2623),	-- Holy Diadem
-						}),	
-						n(2584, { 	-- Stromgarde Defender
-							i(5624),	-- Circlet of the Order
-						}),
-					}),					
+					}),
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					a(n(2816, {	-- Androd Fadran <Leatherworking Supplies>
 						i(13288, {	-- Pattern: Raptor Hide Belt
 							i(4456),	-- Raptor Hide Belt
@@ -1325,6 +1292,46 @@ _.Zones =
 							i(4455),	-- Raptor Hide Harness
 						}),
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							q( 662, {	-- Deep Sea Salvage
+								un(34, i(4511)),	-- Black Water Hammer
+							}),						
+							q( 666, {	-- Sunken Treasure
+								un(34, i(4547)),	-- Gnomish Zapper
+								un(34, i(4548)),	-- Servomechanic Sledgehammer
+							}),
+							qa(685, {	-- Wanted! Otto and Falconcrest
+								un(34, i(5247)),	-- Rod of Sorrow
+								un(34, i(4745)),	-- War Rider Bracers
+							}),
+							qa(684, {	-- Wanted! Marez Cowl
+								un(34, i(4744)),	-- Arcane Runed Bracers
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(2564, { 	-- Boulderfist Enforcer
+								un(7, i(3341)),	-- Gauntlets of Ogre Strength
+							}),
+							nh(2782, { 	-- Caretaker Alaric	
+								un(7, i(2623)),	-- Holy Diadem
+							}),
+							nh(2780, { 	-- Caretaker Nevlin
+								un(7, i(2623)),	-- Holy Diadem
+							}),
+							nh(2781, { 	-- Caretaker Weston
+								un(7, i(2623)),	-- Holy Diadem
+							}),	
+							n(2584, { 	-- Stromgarde Defender
+								un(7, i(5624)),	-- Circlet of the Order
+							}),
+						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 25,	

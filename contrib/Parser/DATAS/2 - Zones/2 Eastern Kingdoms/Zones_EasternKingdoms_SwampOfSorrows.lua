@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(38, {		-- Swamp of Sorrows
 			["groups"] = {						
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 --[[					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -85,7 +85,7 @@ _.Zones =
 					}),						
 --]]				
 				}),								
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(648), 	-- Huge Toad
 					p(422), 	-- Moccasin
 					p(403), 	-- Parrot
@@ -94,7 +94,7 @@ _.Zones =
 					p(420), 	-- Toad
 					p(418), 	-- Water Snake
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qg(46676, qa(27849, { -- Assault on Stonard
 						i(64623),
 						i(64595),
@@ -244,14 +244,9 @@ _.Zones =
 						i(64633),
 						i(64635),
 					})),
---					qg(, qh(27911)),	-- With Dying Breath										
-					nlq({ 	-- Legacy Quests
-						qa(1393, { -- Galen's Escape
-							i(6828),	-- Visionary Buckler
-						}),
-					}),
+--					qg(, qh(27911)),	-- With Dying Breath
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(14445, { 	-- Captain Wyrmak
 						dr(06.0, i(9943)),	-- Abjurer's Robe
 						dr(06.0, i(9950)),	-- Chieftain's Breastplate
@@ -780,13 +775,8 @@ _.Zones =
 						dr(01.0, i(10238)),	-- Heavy Lamellar Boots
 						dr(01.0, i(10190)),	-- Swashbuckler's Belt					
 					}), 
-					nld({     -- Legacy
-						n(766, { 	-- Tangled Horror
-							i(5608), 	-- Living Cowl
-						}),
-					}),												
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					h(n(8176, { -- Gharash <Blacksmithing Supplies>
 						i(7995, {	-- Plans: Mithril Scale Bracers
 							i(7924),	-- Mithril Scale Bracers
@@ -800,6 +790,23 @@ _.Zones =
 						i(12256),	-- Cindercloth Leggings
 						i(12255),	-- Pale Leggings
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qa(1393, { -- Galen's Escape
+								un(34, i(6828)),	-- Visionary Buckler
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(766, { 	-- Tangled Horror
+								un(7, i(5608)), 	-- Living Cowl
+							}),
+						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 51,	

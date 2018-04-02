@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(34, {		-- Duskwood
 			["groups"] = {
-				n(-7, { 	-- World Bosses
+				n(  -7, {	-- World Bosses
 					nld({		-- Legacy	
 						n(14889, { -- Emeriss
 							["groups"] = {
@@ -154,7 +154,7 @@ _.Zones =
 					},
 					["u"] = 12,					
 				}),				
-				n(-3, { 	-- Holidays					
+				n(  -3, {	-- Holidays					
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -176,7 +176,7 @@ _.Zones =
 						["u"] = 26,
 					}),	
 				}),								
-				n(-25, { 	-- Pet Battle
+				n( -25, {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(646), 	-- Chicken
 					p(396), 	-- Dusk Spiderling
@@ -197,7 +197,7 @@ _.Zones =
 						}),
 					})),
 				}),
-				n(-17, { 	-- Quests
+				n( -17, {	-- Quests
 --					qg(43730, qa(26720)),	-- A Curse We Cannot Lift
 					qg(576, qa(26797, { -- A Daughters Love
 						i(60937),
@@ -401,28 +401,8 @@ _.Zones =
 					qg(663, qa(26688)),	-- Worgen in the Woods					
 					qg(289, qa(26660)),	-- Zombie Juice
 --]]
-					nlq({     -- Legacy Quests 
-						qa(253, {	-- Bride of the Embalmer
-							un(34, i(3560)),	-- Mantle of Honor
-							un(34, i(6223)),	-- Crest of Darkshire
-						}),
-						qa(55, {	-- Morbent Fel
-							un(34, i(2954)),	-- Night Watch Pantaloons
-							un(34, i(2953)),	-- Watch Master's Cloak
-							un(34, i(1282)),	-- Sparkmetal Coif
-							un(34, i(7344)),	-- Torch of Holy Flame
-						}),
-						qa(101, {	-- The Totem of Infliction
-							un(34, i(1131)),	-- Totem of Infliction
-						}),
-						qa(223, {	-- Worgen in the Woods
-							un(34, i(2902)),	-- Cloak of the Faith
-							un(34, i(1547)),	-- Shield of the Faith
-							un(34, i(5244)),	-- Consecrated Wand
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares	
+				n( -16, {	-- Rares	
 					n(45785, { 	-- Carved One
 						dr(06.0, i(9773)),	-- Greenweave Robe
 						dr(05.0, i(9782)),	-- Bandit Jerkin
@@ -779,81 +759,9 @@ _.Zones =
 						dr(01.1, i(6577)),	-- Defender Gauntlets
 						dr(01.1, i(6587)),	-- Scouting Trousers
 						dr(01.1, i(6565)),	-- Shimmering Gloves					
-					}), 
-					nld({    -- Legacy
-						n(210, { 	-- Bone Chewer
-							i(886),		-- Black Metal Shortsword
-						}),
-						n(570, { 	-- Brain Eater
-							i(2015), 	-- Black Metal War Axe
-						}),
-						n(771, {	-- Commander Felstrom
-							i(4465),	-- Felstrom's Gauntlets
-							i(4464),	-- Trouncing Boots
-						}),
-						n(1270, { 	-- Fetid Corpse
-							i(2014),	-- Black Metal Greatsword
-						}),
-						n(3, {		-- Flesh Eater
-							i(885),		-- Black Metal Axe
-						}),
-						n(569, { 	-- Green Recluse
-							i(2021), 	-- Green Carapace Shield
-						}),
-						n(503, {	-- Lord Malathrom
-							i(4462),	-- Cloak of Rot
-						}),
-						n(205, { 	-- Nightbane Dark Runner
-							i(2232),	-- Dark Runner Boots
-						}),
-						n(533, { 	-- Nightbane Shadow Weaver
-							i(2233),	 -- Shadow Weaver Leggings
-						}),
-						n(920, { 	-- Nightbane Tainted Ones
-							i(2234),	-- Nightwalker Armor
-						}),
-						n(206, {	-- Nightbane Vile Fang
-							i(897),		-- Madwolf Bracers
-						}),
-						n(539, { 	-- Pygmy Venom Web Spider
-							i(2020),	-- Hollowfang Blade
-						}),
-						n(202, { 	-- Rotting Horror
-							i(880),		-- Staff of Horrors
-						}),
-						n(787, { 	-- Skeletal Healer
-							i(2013),	-- Cryptbone Staff
-						}),
-						n(1110, {	-- Skeletal Raider
-							i(2018),	-- Skeletal Longsword
-						}),
-						n(785, { 	-- Skeletal Warder 
-							i(2017),	-- Glowing Leather Bracers
-						}),
-						n(1487, { 	-- Splinter Fist Enslaver
-							i(914), 	-- Large Ogre Chain Vest
-						}),
-						n(1251, { 	-- Splinter Fist Firemonger
-							i(2226),	-- Ogremage Staff
-						}),	
-						n(891, { 	-- Splinter Fist Fire Weaver
-							i(2226),	-- Ogremage Staff
-						}),
-						n(892, { 	-- Splinter Fist Taskmaster
-							i(2227),	-- Heavy Ogre War Axe
-						}),
-						n(217, {	-- Venom Web Spider
-							i(899),		-- Venom Web Fang
-						}),
-						n(0, { 		-- Zone Drop
-							{			-- Wicked Spiked Mace
-							["itemID"] = 920,	
-							["description"] = "This dropped off of Defias mobs in Duskwood.",
-							},
-						}),
-					}),					
+					}),
 				}),
-				n(-2, {		-- Vendors
+				n(  -2, {	-- Vendors
 					a(n(844, {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {
 							i(4795),	-- Bear Bracers
@@ -900,6 +808,104 @@ _.Zones =
 							i(6264),	-- Greater Adept's Robe
 						}),
 					})),
+				}),
+				n( -40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qa(253, {	-- Bride of the Embalmer
+								un(34, i(3560)),	-- Mantle of Honor
+								un(34, i(6223)),	-- Crest of Darkshire
+							}),
+							qa(55, {	-- Morbent Fel
+								un(34, i(2954)),	-- Night Watch Pantaloons
+								un(34, i(2953)),	-- Watch Master's Cloak
+								un(34, i(1282)),	-- Sparkmetal Coif
+								un(34, i(7344)),	-- Torch of Holy Flame
+							}),
+							qa(101, {	-- The Totem of Infliction
+								un(34, i(1131)),	-- Totem of Infliction
+							}),
+							qa(223, {	-- Worgen in the Woods
+								un(34, i(2902)),	-- Cloak of the Faith
+								un(34, i(1547)),	-- Shield of the Faith
+								un(34, i(5244)),	-- Consecrated Wand
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(210, { 	-- Bone Chewer
+								un(7, i(886)),		-- Black Metal Shortsword
+							}),
+							n(570, { 	-- Brain Eater
+								un(7, i(2015)), 	-- Black Metal War Axe
+							}),
+							n(771, {	-- Commander Felstrom
+								un(7, i(4465)),	-- Felstrom's Gauntlets
+								un(7, i(4464)),	-- Trouncing Boots
+							}),
+							n(1270, { 	-- Fetid Corpse
+								un(7, i(2014)),	-- Black Metal Greatsword
+							}),
+							n(3, {		-- Flesh Eater
+								un(7, i(885)),		-- Black Metal Axe
+							}),
+							n(569, { 	-- Green Recluse
+								un(7, i(2021)), 	-- Green Carapace Shield
+							}),
+							n(503, {	-- Lord Malathrom
+								un(7, i(4462)),	-- Cloak of Rot
+							}),
+							n(205, { 	-- Nightbane Dark Runner
+								un(7, i(2232)),	-- Dark Runner Boots
+							}),
+							n(533, { 	-- Nightbane Shadow Weaver
+								un(7, i(2233)),	 -- Shadow Weaver Leggings
+							}),
+							n(920, { 	-- Nightbane Tainted Ones
+								un(7, i(2234)),	-- Nightwalker Armor
+							}),
+							n(206, {	-- Nightbane Vile Fang
+								un(7, i(897)),		-- Madwolf Bracers
+							}),
+							n(539, { 	-- Pygmy Venom Web Spider
+								un(7, i(2020)),	-- Hollowfang Blade
+							}),
+							n(202, { 	-- Rotting Horror
+								un(7, i(880)),		-- Staff of Horrors
+							}),
+							n(787, { 	-- Skeletal Healer
+								un(7, i(2013)),	-- Cryptbone Staff
+							}),
+							n(1110, {	-- Skeletal Raider
+								un(7, i(2018)),	-- Skeletal Longsword
+							}),
+							n(785, { 	-- Skeletal Warder 
+								un(7, i(2017)),	-- Glowing Leather Bracers
+							}),
+							n(1487, { 	-- Splinter Fist Enslaver
+								un(7, i(914)), 	-- Large Ogre Chain Vest
+							}),
+							n(1251, { 	-- Splinter Fist Firemonger
+								un(7, i(2226)),	-- Ogremage Staff
+							}),	
+							n(891, { 	-- Splinter Fist Fire Weaver
+								un(7, i(2226)),	-- Ogremage Staff
+							}),
+							n(892, { 	-- Splinter Fist Taskmaster
+								un(7, i(2227)),	-- Heavy Ogre War Axe
+							}),
+							n(217, {	-- Venom Web Spider
+								un(7, i(899)),	-- Venom Web Fang
+							}),
+						}),
+						n(  0, {	-- Zone Drop (Legacy)
+							un(7, i(920, {	-- Wicked Spiked Mace
+								["g"] = {
+								},
+								["description"] = "This dropped off of Defias mobs in Duskwood.",
+							})),
+						}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 20,	

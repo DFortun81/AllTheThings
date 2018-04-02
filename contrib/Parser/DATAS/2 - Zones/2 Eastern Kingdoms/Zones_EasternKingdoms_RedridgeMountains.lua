@@ -6,8 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(36, {		-- Redridge Mountains
 			["groups"] = {							
---[[
-				n(-3, { 	-- Holidays					
+				n( -3, {	-- Holidays					
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -29,8 +28,7 @@ _.Zones =
 						["u"] = 26,
 					}),
 				}),								
---]]
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(395), 	-- Fledgling Buzzard
 					p(391), 	-- Mountain Cottontail
@@ -46,7 +44,7 @@ _.Zones =
 					})),
 					qg(65651, qa(31781)),	-- Lindsay (DAILY)
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qg(43733, qa(26708, { -- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 						["groups"] = {
 						i(131588),	-- Bravo Company Amice
@@ -328,43 +326,9 @@ _.Zones =
 							i(60704),	-- Mongrel Leggings
 						},
 						["sourceQuests"] = {26544},	-- They've Wised Up...
-					})),					
-					nlq({ -- Legacy Quests
-						qa(116, { 		-- Dry Times
-							un(34, i(1270)), 	-- Finely Woven Cloak
-						}),
-						qa(126, {		-- Howling in the Hills
-							un(34, i(2910)),	-- Gold Militia Boots
-						}),
-						qa(219, { 		-- Missing in Action
-							un(34, i(3431)),	-- Bone-Studded Leather 
-							un(34, i(1275)),	-- Deputy Chain Coat
-							un(34, i(3555)),	-- Robe of Solomon
-						}),
-						o(31, {	-- Old Lion Statue
-							qa(249, { 	-- Morganth
-								un(34, i(5274)),-- Rose Mantle 
-							}),
-						}),
-						qa(150, { 		-- Murloc Poachers
-							un(34, i(3567)),	-- Dwarven Fishing Pole
-						}),
-						qa(19, {		-- Tharil'zun
-							un(34, i(1276)),	-- Fire Hardened Buckler
-							un(34, i(6093)),	-- Orc Crusher
-						}),
-						qa(89, {	-- The Everstill Bridge
-							un(34, i(1310)),	-- Smith's Trousers
-							un(34, i(1303)),	-- Bridgeworker's Gloves
-							un(34, i(1304)),	-- Riding Gloves
-						}),
-						qa(122, {		-- Underbelly Scales
-							un(34, i(6092)),	-- Black Whelp Boots 
-							un(34, i(1302)),	-- Black Whelp Gloves
-						}),
-					}),					
+					})),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(14273, { 	-- Boulderheart
 						dr(07.0, i(9766)),	-- Greenweave Sash
 						dr(07.0, i(9783)),	-- Raider's Chestpiece
@@ -647,72 +611,8 @@ _.Zones =
 							un(7, i(1469)), 	-- Scimitar of Atun				
 						}),							
 					}), 
-					nld({    -- Legacy
-						n(440, { 	-- Blackrock Grunt
-							un(7, i(1446)), 	-- Blackrock Boots 
-						}),
-						n(435, { 	-- Blackrock Champion
-							un(7, i(1455)), 	-- Blackrock Champion's Axe 
-						}),							
-						n(485, { 	-- Blackrock Outrunner
-							un(7, i(1448)), 	-- Blackrock Gauntlets 
-						}),							
-						n(4065, { 	-- Blackrock Sentry
-							un(7, i(1296)), 	-- Blackrock Mace 
-						}),	
-						n(436, { 	-- Blackrock Shadowcaster
-							un(7, i(1299)), 	-- Lesser Belt of the Spire
-							un(7, i(1300)),		-- Lesser Staff of the Spire
-						}),
-						nh(397, { 	-- Grand Magus Doane 
-							["groups"] = {
-								un(7, i(2566)),	-- Sacrificial Robes
-							},
-							["description"] = "Morganth was removed and Doane has taken his place. Blizzard used same npcID.",
-						}),	
-						n(545, {	-- Murloc Tidecaller
-							un(7, i(1473)),	-- Riverside Staff
-						}),
-						n(434, { 	-- Rabid Shadowhide Gnoll
-							un(7, i(1460)),	-- Shadowhide Two-Handed Sword 
-						}),							
-						n(445, { 	-- Redridge Alpha
-							un(7, i(1218)),	-- Heavy Gnoll War Club 
-						}),	
-						n(446, { 	-- Redridge Basher
-							un(7, i(1440)),	-- Gnoll Skull Basher 
-						}),							
-						n(426, { 	-- Redridge Brute
-							un(7, i(1214)),	-- Gnoll Punisher 
-						}),
-						n(580, { 	-- Redridge Drudger
-							un(7, i(1220)),	-- Lupine Axe 
-						}),							
-						n(423, { 	-- Redridge Mongrel 
-							un(7, i(1211)),	-- Gnoll War Harness
-						}),
-						n(424, { 	-- Redridge Poacher
-							un(7, i(1219)),	-- Redridge Machete 
-						}),
-						n(579, { 	-- Shadowhide Assassin
-							un(7, i(1459)),	-- Shadowhide Scalper
-						}),							
-						n(433, { 	-- Shadowhide Gnoll
-							un(7, i(1457)),	-- Shadowhide Mace 
-						}),	
-						n(431, { 	-- Shadowhide Slayer
-							un(7, i(1458)),	-- Shadowhide Maul
-							un(7, i(1461)),	-- Slayer's Battle Axe
-						}),
-						n(568, { 	-- Shadowhide Warrior
-							un(7, i(2175)),	-- Shadowhide Battle Axe
-						}),
-						n(442, { 	-- Tarantula
-							un(7, i(1287)),	-- Giant Tarantula Fang 
-						}),
-					}),						
 				}),					
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					a(n(777, {	-- Amy Davenport <Tradeswoman>
 						i(20576, {	-- Pattern: Black Whelp Tunic
 							i(20575),	-- Black Whelp Tunic
@@ -745,7 +645,111 @@ _.Zones =
 						i(4822),	-- Owl's Disk
 					})),
 				}),
-
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qa(116, { 		-- Dry Times
+								un(34, i(1270)), 	-- Finely Woven Cloak
+							}),
+							qa(126, {		-- Howling in the Hills
+								un(34, i(2910)),	-- Gold Militia Boots
+							}),
+							qa(219, { 		-- Missing in Action
+								un(34, i(3431)),	-- Bone-Studded Leather 
+								un(34, i(1275)),	-- Deputy Chain Coat
+								un(34, i(3555)),	-- Robe of Solomon
+							}),
+							o(31, {	-- Old Lion Statue
+								qa(249, { 	-- Morganth
+									un(34, i(5274)),-- Rose Mantle 
+								}),
+							}),
+							qa(150, { 		-- Murloc Poachers
+								un(34, i(3567)),	-- Dwarven Fishing Pole
+							}),
+							qa(19, {		-- Tharil'zun
+								un(34, i(1276)),	-- Fire Hardened Buckler
+								un(34, i(6093)),	-- Orc Crusher
+							}),
+							qa(89, {	-- The Everstill Bridge
+								un(34, i(1310)),	-- Smith's Trousers
+								un(34, i(1303)),	-- Bridgeworker's Gloves
+								un(34, i(1304)),	-- Riding Gloves
+							}),
+							qa(122, {		-- Underbelly Scales
+								un(34, i(6092)),	-- Black Whelp Boots 
+								un(34, i(1302)),	-- Black Whelp Gloves
+							}),
+						}),
+						n(-16, {	-- Rares (Legacy)
+							n(440, { 	-- Blackrock Grunt
+								un(7, i(1446)), 	-- Blackrock Boots 
+							}),
+							n(435, { 	-- Blackrock Champion
+								un(7, i(1455)), 	-- Blackrock Champion's Axe 
+							}),							
+							n(485, { 	-- Blackrock Outrunner
+								un(7, i(1448)), 	-- Blackrock Gauntlets 
+							}),							
+							n(4065, { 	-- Blackrock Sentry
+								un(7, i(1296)), 	-- Blackrock Mace 
+							}),	
+							n(436, { 	-- Blackrock Shadowcaster
+								un(7, i(1299)), 	-- Lesser Belt of the Spire
+								un(7, i(1300)),		-- Lesser Staff of the Spire
+							}),
+							nh(397, { 	-- Grand Magus Doane 
+								["groups"] = {
+									un(7, i(2566)),	-- Sacrificial Robes
+								},
+								["description"] = "Morganth was removed and Doane has taken his place. Blizzard used same npcID.",
+							}),	
+							n(545, {	-- Murloc Tidecaller
+								un(7, i(1473)),	-- Riverside Staff
+							}),
+							n(434, { 	-- Rabid Shadowhide Gnoll
+								un(7, i(1460)),	-- Shadowhide Two-Handed Sword 
+							}),							
+							n(445, { 	-- Redridge Alpha
+								un(7, i(1218)),	-- Heavy Gnoll War Club 
+							}),	
+							n(446, { 	-- Redridge Basher
+								un(7, i(1440)),	-- Gnoll Skull Basher 
+							}),							
+							n(426, { 	-- Redridge Brute
+								un(7, i(1214)),	-- Gnoll Punisher 
+							}),
+							n(580, { 	-- Redridge Drudger
+								un(7, i(1220)),	-- Lupine Axe 
+							}),							
+							n(423, { 	-- Redridge Mongrel 
+								un(7, i(1211)),	-- Gnoll War Harness
+							}),
+							n(424, { 	-- Redridge Poacher
+								un(7, i(1219)),	-- Redridge Machete 
+							}),
+							n(579, { 	-- Shadowhide Assassin
+								un(7, i(1459)),	-- Shadowhide Scalper
+							}),							
+							n(433, { 	-- Shadowhide Gnoll
+								un(7, i(1457)),	-- Shadowhide Mace 
+							}),	
+							n(431, { 	-- Shadowhide Slayer
+								un(7, i(1458)),	-- Shadowhide Maul
+								un(7, i(1461)),	-- Slayer's Battle Axe
+							}),
+							n(568, { 	-- Shadowhide Warrior
+								un(7, i(2175)),	-- Shadowhide Battle Axe
+							}),
+							n(442, { 	-- Tarantula
+								un(7, i(1287)),	-- Giant Tarantula Fang 
+							}),
+						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
 			},
 			["Lvl"] = 15,	
 			["achievementID"] = 780,

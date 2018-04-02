@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(341, { 	-- Ironforge
 			["groups"] = {
-				n(-3, { 	-- Holidays				
+				n( -3, {	-- Holidays				
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -597,10 +597,10 @@ _.Zones =
 						["u"] = 29,
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(404), 	-- Long tailed Mole
 				}),
-				n(-38, { 	-- Profession
+				n(-38, {	-- Profession
 					prof(185, 2550, {	-- Cooking
 						qg(5159, qa(29352)),	-- A Fowl Shortage
 						qg(5159, qa(29351)),	-- A Round for the Guards
@@ -622,7 +622,7 @@ _.Zones =
 						["description"] = "Go fishing for a bit in the Forlorn Cavern.",
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 ---					qg(6294, qa(38396)),	-- A Curious Oddity			
 					qg(9616, qa( 4513, { -- A Little Slime Goes a Long Way
 						i(12050),	-- Hazecover Boots
@@ -788,22 +788,8 @@ _.Zones =
 						["classes"] = {3}, -- Hunter
 					})),
 --]]
-					nlq({     -- Legacy Quests
-						qa(2964, {	-- A Future Task
-							un(34, i(34418)),	-- Scrying Wand
-						}),
-						qa(1682, {	-- Grey Iron Weapons
-							["g"] = {
-								un(34, i(6978)),	-- Umbral Axe
-								un(34, i(6982)),	-- Umbral Mace
-								un(34, i(6981)),	-- Umbral Dagger
-								un(34, i(6984)),	-- Umbral Sword
-							},
-							["classes"] = { 1 },	-- Warrior
-						}),
-					}),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					nh(51596, { 	-- Wildhammer Fact Checker
 						["groups"] = {
 							dr(0.19, i(68611)),	-- Red Shirt
@@ -811,7 +797,7 @@ _.Zones =
 						["description"] = "AKA Red Shirt Guy\n\nYou must be a member of the Horde in order to attack this NPC.\n"
 					}),
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					a(n(5128, {		-- Bombus Finespindle <Leatherworking Supplies>
 						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
 							i(75106),	-- Vicious Wyrmhide Bracers
@@ -1312,6 +1298,29 @@ _.Zones =
 							i(67275),	-- Magic Lamp Pet
 						}),
 					})),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+						n(-17, {	-- Quests (Legacy)
+							qa(2964, {	-- A Future Task
+								un(34, i(34418)),	-- Scrying Wand
+							}),
+							qa(1682, {	-- Grey Iron Weapons
+								["g"] = {
+									un(34, i(6978)),	-- Umbral Axe
+									un(34, i(6982)),	-- Umbral Mace
+									un(34, i(6981)),	-- Umbral Dagger
+									un(34, i(6984)),	-- Umbral Sword
+								},
+								["classes"] = { 1 },	-- Warrior
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 1,	
