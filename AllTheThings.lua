@@ -771,6 +771,7 @@ end })
 
 -- Search Caching
 local searchCache = {};
+app.searchCache = searchCache
 local constructor = function(id, t, typeID)
 	if not t then
 		return { [typeID] = id };
@@ -2010,6 +2011,8 @@ local function SetCompletionistMode(completionistMode, fromSettings)
 	end
 	RefreshCollections();
 end
+app.SetCompletionistMode = SetCompletionistMode
+
 local function ToggleCompletionistMode()
 	SetCompletionistMode(not GetDataMember("CompletionistMode"));
 end
@@ -2022,6 +2025,8 @@ local function SetDebugMode(debugMode)
 	end
 	app:RefreshData();
 end
+app.SetDebugMode = SetDebugMode
+
 local function ToggleDebugMode()
 	SetDebugMode(not GetDataMember("IgnoreAllFilters"));
 end
