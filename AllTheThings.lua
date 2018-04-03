@@ -486,7 +486,8 @@ local function ShowInterfaceOptions()
 	if InterfaceOptionsFrame:IsVisible() then
 		InterfaceOptionsFrame_Show();
 	else
-		InterfaceOptionsFrame_OpenToCategory(app:GetName())
+		InterfaceOptionsFrame_OpenToCategory(app:GetName());
+		InterfaceOptionsFrame_OpenToCategory(app:GetName());
 	end
 end
 
@@ -5791,9 +5792,8 @@ end
 function app:GetWindow(suffix, parent, todo)
 	local window = app.Windows[suffix];
 	if not window then
-		parent = parent or UIParent
 		-- Create the window instance.
-		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent);
+		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent);
 		app.Windows[suffix] = window;
 		window.Toggle = ToggleWindow;
 		window.Update = UpdateWindow;
