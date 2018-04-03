@@ -147,7 +147,7 @@ local function ScrollFrame_OnMouseWheel(self, delta)
 	-- hide minilist if it will not be visible
 	if activeTab == miniTab then
 		local mini = app:GetWindow("settings");
-		if newValue > (mini:GetHeight()) then
+		if newValue > (mini:GetHeight()+frameSpacer) then
 			mini:Hide()
 		else
 			mini:Show()
@@ -160,7 +160,7 @@ local function createScroll(parent)
 	UIConfig = CreateFrame("Frame", "AllTheThingsSettingsConfig", parent, "ATT_ScrollFrame");
 	
 	UIConfig:SetSize(610, 535);
-	UIConfig:SetPoint("CENTER",0,-15);
+	UIConfig:SetPoint("CENTER",0,-frameSpacer);
 	
 	UIConfig.ScrollFrame = CreateFrame("ScrollFrame", nil, UIConfig, "UIPanelScrollFrameTemplate");
 	frame = UIConfig.ScrollFrame
@@ -210,7 +210,7 @@ local function createGeneralFrame(parent)
 	
 	local modeFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-modeFrame", child, "ThinBorderTemplate");
 	modeFrame:SetSize(child:GetWidth(),80)
-	modeFrame:SetPoint("TOPLEFT",mode,0,-15);
+	modeFrame:SetPoint("TOPLEFT",mode,0,-frameSpacer);
 	addObject(elm,modeFrame)
 	
 	-- debug mode
@@ -225,7 +225,7 @@ local function createGeneralFrame(parent)
 			GameTooltip:SetText ("Enable this setting if you want to see every item in the ATT database. This will disable all of the item filters for armor and weapons in addition to toys, mounts, pets, music rolls, and titles.\n\nThis is provided mostly for debugging purposes, but many users utilize this filter to measure overall account completion.\n\nDebug Mode is for users that want all of the appearances in the game.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	debugCb:SetPoint("TOPLEFT",mode,5,-15)
+	debugCb:SetPoint("TOPLEFT",mode,5,-frameSpacer)
 	addObject(elm,debugCb)
 	
 	-- completionist mode
@@ -276,7 +276,7 @@ local function createGeneralFrame(parent)
 	
 	local alertsFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-alertsFrame", child, "ThinBorderTemplate");
 	alertsFrame:SetSize(child:GetWidth(),80)
-	alertsFrame:SetPoint("TOPLEFT",alerts,0,-15);
+	alertsFrame:SetPoint("TOPLEFT",alerts,0,-frameSpacer);
 	addObject(elm,alertsFrame)
 	
 	-- This creates the "Notify me when I Collect Things" Checkbox --
@@ -332,7 +332,7 @@ local function createGeneralFrame(parent)
 	
 	local specFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-specFrame", child, "ThinBorderTemplate");
 	specFrame:SetSize(child:GetWidth(),80)
-	specFrame:SetPoint("TOPLEFT",spec,0,-15);
+	specFrame:SetPoint("TOPLEFT",spec,0,-frameSpacer);
 	addObject(elm,specFrame)
 	
 	-- Show Loot Specializations
@@ -391,7 +391,7 @@ local function createGeneralFrame(parent)
 	
 	local otherFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-otherFrame", child, "ThinBorderTemplate");
 	otherFrame:SetSize(child:GetWidth(),60)
-	otherFrame:SetPoint("TOPLEFT",other,0,-15);
+	otherFrame:SetPoint("TOPLEFT",other,0,-frameSpacer);
 	addObject(elm,otherFrame)
 	
 	-- mini map button
@@ -449,7 +449,7 @@ local function createAccountFrame(parent)
 	
 	local basicFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-basicFrame", child, "ThinBorderTemplate");
 	basicFrame:SetSize(child:GetWidth(),80)
-	basicFrame:SetPoint("TOPLEFT",basic,0,-15);
+	basicFrame:SetPoint("TOPLEFT",basic,0,-frameSpacer);
 	addObject(elm,basicFrame)
 	
 	-- Profession mode
@@ -563,7 +563,7 @@ local function createAccountFrame(parent)
 	
 	local seasonalFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-seasonalFrame", child, "ThinBorderTemplate");
 	seasonalFrame:SetSize(child:GetWidth(),230)
-	seasonalFrame:SetPoint("TOPLEFT",seasonal,0,-15);
+	seasonalFrame:SetPoint("TOPLEFT",seasonal,0,-frameSpacer);
 	addObject(elm,seasonalFrame)
 	
 	-- seasonal enable
@@ -671,7 +671,7 @@ local function createAccountFrame(parent)
 	
 	local unobtainableFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-unobtainableFrame", child, "ThinBorderTemplate");
 	unobtainableFrame:SetSize(child:GetWidth(),480)
-	unobtainableFrame:SetPoint("TOPLEFT",unobtainable,0,-15);
+	unobtainableFrame:SetPoint("TOPLEFT",unobtainable,0,-frameSpacer);
 	addObject(elm,unobtainableFrame)
 	
 	-- unobtainable enable
@@ -731,7 +731,7 @@ local function createAccountFrame(parent)
 	
 	local noChanceFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-noChanceFrame", child, "ThinBorderTemplate");
 	noChanceFrame:SetSize(unobtainableFrame:GetWidth()-20,100)
-	noChanceFrame:SetPoint("TOPLEFT",noChance,0,-15);
+	noChanceFrame:SetPoint("TOPLEFT",noChance,0,-frameSpacer);
 	addObject(elm,noChanceFrame)
 	
 	-- no chance Everything
@@ -817,7 +817,7 @@ local function createAccountFrame(parent)
 	
 	local possChanceFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-possChanceFrame", child, "ThinBorderTemplate");
 	possChanceFrame:SetSize(unobtainableFrame:GetWidth()-20,60)
-	possChanceFrame:SetPoint("TOPLEFT",possChance,0,-15);
+	possChanceFrame:SetPoint("TOPLEFT",possChance,0,-frameSpacer);
 	addObject(elm,possChanceFrame)
 	
 	-- possible Everything
@@ -902,7 +902,7 @@ local function createAccountFrame(parent)
 	
 	local highChanceFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-highChanceFrame", child, "ThinBorderTemplate");
 	highChanceFrame:SetSize(unobtainableFrame:GetWidth()-20,80)
-	highChanceFrame:SetPoint("TOPLEFT",highChance,0,-15);
+	highChanceFrame:SetPoint("TOPLEFT",highChance,0,-frameSpacer);
 	addObject(elm,highChanceFrame)
 	
 	-- high Everything
@@ -987,7 +987,7 @@ local function createAccountFrame(parent)
 	
 	local legacyFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-legacyFrame", child, "ThinBorderTemplate");
 	legacyFrame:SetSize(unobtainableFrame:GetWidth()-20,60)
-	legacyFrame:SetPoint("TOPLEFT",legacy,0,-15);
+	legacyFrame:SetPoint("TOPLEFT",legacy,0,-frameSpacer);
 	addObject(elm,legacyFrame)
 	
 	-- Legacy Everything
@@ -1080,11 +1080,11 @@ local function createMiniListFrame(parent)
 	
 	local profileFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-profileFrame", child, "ThinBorderTemplate");
 	profileFrame:SetSize(child:GetWidth(),40)
-	profileFrame:SetPoint("TOPLEFT",profile,0,-15);
+	profileFrame:SetPoint("TOPLEFT",profile,0,-frameSpacer);
 	addObject(elm,profileFrame)
 	
 	local dropdown = CreateFrame("Frame", name .. "-dropdown", child, "Lib_UIDropDownMenuTemplate")
-	dropdown:SetPoint("TOPLEFT", profile, 0, -frameSpacer);
+	dropdown:SetPoint("TOPLEFT", profile, 0, -(frameSpacer + 5));
 	Lib_UIDropDownMenu_SetWidth(dropdown,150,0)
 	
 	dropdown.CreateMenuItem = function(name)
@@ -1199,7 +1199,7 @@ local function createMiniListFrame(parent)
 	
 	local showFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-showFrame", child, "ThinBorderTemplate");
 	showFrame:SetSize(child:GetWidth()/2.5,140)
-	showFrame:SetPoint("TOPLEFT",show,0,-15);
+	showFrame:SetPoint("TOPLEFT",show,0,-frameSpacer);
 	addObject(elm,showFrame)
 	
 	local showComp = createCheckBox("Show Completed Groups", child, function(self)
@@ -1307,7 +1307,7 @@ local function createMiniListFrame(parent)
 	
 	local itemFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-itemFrame", child, "ThinBorderTemplate");
 	itemFrame:SetSize(child:GetWidth()/2.5,200)
-	itemFrame:SetPoint("TOPLEFT",item,0,-15);
+	itemFrame:SetPoint("TOPLEFT",item,0,-frameSpacer);
 	addObject(elm,itemFrame)
 	
 	local itemFilterNames = app.L("FILTER_ID_TYPES");
@@ -1358,7 +1358,7 @@ local function createMiniListFrame(parent)
 	
 	local equipFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-equipFrame", child, "ThinBorderTemplate");
 	equipFrame:SetSize(child:GetWidth(),410)
-	equipFrame:SetPoint("TOPLEFT",equip,0,-15);
+	equipFrame:SetPoint("TOPLEFT",equip,0,-frameSpacer);
 	addObject(elm,equipFrame)
 	
 	local allEquipment = createCheckBox("All Equipment", child, function(self)
@@ -1431,7 +1431,7 @@ local function createMiniListFrame(parent)
 	
 	local armorFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-armorFrame", child, "ThinBorderTemplate");
 	armorFrame:SetSize(child:GetWidth()/2.25,350)
-	armorFrame:SetPoint("TOPLEFT",armor,0,-15);
+	armorFrame:SetPoint("TOPLEFT",armor,0,-frameSpacer);
 	addObject(elm,armorFrame)
 	
 	last = armor;
@@ -1462,7 +1462,7 @@ local function createMiniListFrame(parent)
 	
 	local weaponFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-weaponFrame", child, "ThinBorderTemplate");
 	weaponFrame:SetSize(armorFrame:GetWidth(),armorFrame:GetHeight())
-	weaponFrame:SetPoint("TOPLEFT",weapon,0,-15);
+	weaponFrame:SetPoint("TOPLEFT",weapon,0,-frameSpacer);
 	addObject(elm,weaponFrame)
 	
 	last = weapon;
@@ -1500,7 +1500,7 @@ local function createTooltipFrame(parent)
 	
 	local tooltipFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tooltipFrame", child, "ThinBorderTemplate");
 	tooltipFrame:SetSize(child:GetWidth(),35)
-	tooltipFrame:SetPoint("TOPLEFT",tooltip,0,-15);
+	tooltipFrame:SetPoint("TOPLEFT",tooltip,0,-frameSpacer);
 	addObject(elm,tooltipFrame)
 	
 	-- This creates the "Enable Tooltip Information" Checkbox --
@@ -1543,7 +1543,7 @@ local function createTooltipFrame(parent)
 	
 	local progFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-progFrame", child, "ThinBorderTemplate");
 	progFrame:SetSize(child:GetWidth(),35)
-	progFrame:SetPoint("TOPLEFT",prog,0,-15);
+	progFrame:SetPoint("TOPLEFT",prog,0,-frameSpacer);
 	addObject(elm,progFrame)
 	
 	-- This creates the "Show Collection Progress" Checkbox --
@@ -1586,7 +1586,7 @@ local function createTooltipFrame(parent)
 	
 	local sharedFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-sharedFrame", child, "ThinBorderTemplate");
 	sharedFrame:SetSize(child:GetWidth(),35)
-	sharedFrame:SetPoint("TOPLEFT",shared,0,-15);
+	sharedFrame:SetPoint("TOPLEFT",shared,0,-frameSpacer);
 	addObject(elm,sharedFrame)
 	
 	-- This creates the "Show Shared Appearances" Checkbox --
@@ -1629,7 +1629,7 @@ local function createTooltipFrame(parent)
 	
 	local databaseFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-databaseFrame", child, "ThinBorderTemplate");
 	databaseFrame:SetSize(child:GetWidth(),60)
-	databaseFrame:SetPoint("TOPLEFT",database,0,-15);
+	databaseFrame:SetPoint("TOPLEFT",database,0,-frameSpacer);
 	addObject(elm,databaseFrame)
 	
 	-- This creates the "Show Database Locations" Checkbox --
@@ -1768,13 +1768,13 @@ local function createAboutFrame(parent)
 	addObject(elm,about)
 	
 	local faq = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-	faq:SetPoint("TOPLEFT",about,"BOTTOMLEFT",0,-15);
+	faq:SetPoint("TOPLEFT",about,"BOTTOMLEFT",0,-frameSpacer);
 	faq:SetText("FAQ");
 	addObject(elm,faq)
 	
 	local faqFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-faqFrame", child, "ThinBorderTemplate");
-	faqFrame:SetSize(child:GetWidth(),430)
-	faqFrame:SetPoint("TOPLEFT",faq,0,-15);
+	
+	faqFrame:SetPoint("TOPLEFT",faq,0,-frameSpacer);
 	addObject(elm,faqFrame)
 	
 	local message = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
@@ -1803,7 +1803,8 @@ local function createAboutFrame(parent)
 	message:SetText(text.q1 .. text.a1 .. text.q2 .. text.a2 .. text.q3 .. text.a3 .. text.q4 .. text.a4 .. text.q5 .. text.a5 .. text.q6 .. text.a6 .. text.q7 .. text.a7 .. text.q8 .. text.a8)
 	message:SetWidth(child:GetWidth()-10);
 	addObject(elm,message)
-		
+	
+	faqFrame:SetSize(child:GetWidth(),message:GetHeight()+ frameSpacer)
 	--app.SetWindowVisibility(window,true)
 end
 
