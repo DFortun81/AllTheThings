@@ -256,18 +256,17 @@ local function createGeneralFrame(parent)
 	
 	
 	-- only main
-	--local mainOnly = createCheckBox(app.L("I_ONLY_CARE_ABOUT_MY_MAIN"), child, function(self)
-	local mainOnly = createCheckBox("I only care about my main.", child, function(self)
+	local mainOnly = createCheckBox(app.L("I_ONLY_CARE_ABOUT_MY_MAIN"), child, function(self)
 			app.SetDataMember("MainOnly", self:GetChecked());
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("MainOnly"));
 			if app.GetDataMember("CompletionistMode") then
 				self:Disable();
-				self.Label:SetTextColor(0.2, 0.2, 0.2)
+				self.Label:SetAlpha(0.2)
 			else
 				self:Enable();
-				self.Label:SetTextColor(1,1,1)
+				self.Label:SetAlpha(1)
 			end
 		end,
 		function(self)
@@ -1342,12 +1341,12 @@ local function createMiniListFrame(parent)
 	end
 	
 	local window =  app:GetWindow("settings", child, true)
-	local allData = window.data;
-	local groups = {};
-	allData.groups = groups;
-	app.BuildGroups(allData, allData.groups);
-	window.data = allData;
-	app.CacheFields(allData);
+	--local allData = window.data;
+	--local groups = {};
+	--allData.groups = groups;
+	--app.BuildGroups(allData, allData.groups);
+	--window.data = allData;
+	--app.CacheFields(allData);
 	window:SetScript("OnMouseDown", nil);
 	window:SetMovable(false);
 	window:SetResizable(false);
