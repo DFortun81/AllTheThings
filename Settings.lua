@@ -160,7 +160,7 @@ local function createScroll(parent)
 	UIConfig = CreateFrame("Frame", "AllTheThingsSettingsConfig", parent, "ATT_ScrollFrame");
 	
 	UIConfig:SetSize(610, 535);
-	UIConfig:SetPoint("CENTER",0,-frameSpacer);
+	UIConfig:SetPoint("CENTER",0,-15);
 	
 	UIConfig.ScrollFrame = CreateFrame("ScrollFrame", nil, UIConfig, "UIPanelScrollFrameTemplate");
 	frame = UIConfig.ScrollFrame
@@ -626,7 +626,7 @@ local function createAccountFrame(parent)
 	local count = 0;
 	for k,v in ipairs(app.L("UNOBTAINABLE_ITEM_REASONS")) do
 		if v[1] > 4 then
-			print(v[3] .. " " .. k)
+			--print(v[3] .. " " .. k)
 			local seasonalFilter = createCheckBox(v[3], child, function(self)
 					local val = app.GetDataMember("SeasonalFilters")
 					val[k]= not self:GetChecked()
@@ -772,7 +772,7 @@ local function createAccountFrame(parent)
 	local count = 0;
 	for k,v in ipairs(app.L("UNOBTAINABLE_ITEM_REASONS")) do
 		if v[1]  == 1 then
-			print(v[3] .. " " .. k)
+			--print(v[3] .. " " .. k)
 			local filter = createCheckBox(v[3], child, function(self)
 					local val = app.GetDataMember("UnobtainableItemFilters")
 					val[k]= not self:GetChecked()
