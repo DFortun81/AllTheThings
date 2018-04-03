@@ -135,14 +135,10 @@ local AllTheThingsPCD = {};			-- For character specific data.
 local function SetDataMember(member, data)
 	AllTheThingsAD[member] = data;
 end
-app.SetDataMember = SetDataMember
-
 local function GetDataMember(member, default)
 	if AllTheThingsAD[member] == nil then AllTheThingsAD[member] = default; end
 	return AllTheThingsAD[member];
 end
-app.GetDataMember = GetDataMember
-
 local function SetTempDataMember(member, data)
 	AllTheThingsTempData[member] = data;
 end
@@ -153,13 +149,14 @@ end
 local function SetPersonalDataMember(member, data)
 	AllTheThingsPCD[member] = data;
 end
-app.SetPersonalDataMember = SetPersonalDataMember
-
 local function GetPersonalDataMember(member, default)
 	if AllTheThingsPCD[member] == nil then AllTheThingsPCD[member] = default; end
 	return AllTheThingsPCD[member];
 end
-app.GetPersonalDataMember = GetPersonalDataMember
+app.SetDataMember = SetDataMember;
+app.GetDataMember = GetDataMember;
+app.SetPersonalDataMember = SetPersonalDataMember;
+app.GetPersonalDataMember = GetPersonalDataMember;
 
 local function SetDataSubMember(member, submember, data)
 	if AllTheThingsAD[member] then AllTheThingsAD[member][submember] = data; end
@@ -942,7 +939,7 @@ local function CacheFields(group)
 		end
 	end
 end
-app.CacheFields = CacheFields
+app.CacheFields = CacheFields;
 
 -- Note Lib
 local function SetNote(key, id, note)
@@ -2011,8 +2008,6 @@ local function SetCompletionistMode(completionistMode, fromSettings)
 	end
 	RefreshCollections();
 end
-app.SetCompletionistMode = SetCompletionistMode
-
 local function ToggleCompletionistMode()
 	SetCompletionistMode(not GetDataMember("CompletionistMode"));
 end
@@ -2025,8 +2020,6 @@ local function SetDebugMode(debugMode)
 	end
 	app:RefreshData();
 end
-app.SetDebugMode = SetDebugMode
-
 local function ToggleDebugMode()
 	SetDebugMode(not GetDataMember("IgnoreAllFilters"));
 end
@@ -2036,6 +2029,8 @@ app.RefreshSaves = RefreshSaves;
 app.OpenMainList = OpenMainList;
 app.OpenMiniList = OpenMiniList;
 app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
+app.SetCompletionistMode = SetCompletionistMode;
+app.SetDebugMode = SetDebugMode;
 app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 app.ToggleCompletionistMode = ToggleCompletionistMode;
 app.ToggleDebugMode = ToggleDebugMode;
