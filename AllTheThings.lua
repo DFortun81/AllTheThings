@@ -768,7 +768,7 @@ end })
 
 -- Search Caching
 local searchCache = {};
-app.searchCache = searchCache
+app.searchCache = searchCache;
 local constructor = function(id, t, typeID)
 	if not t then
 		return { [typeID] = id };
