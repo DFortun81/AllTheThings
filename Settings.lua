@@ -53,6 +53,7 @@ local function onClickTab(self)
 	PanelTemplates_SetTab(parent, self.id)
 	activeTab = self.id
 	UIConfig.ScrollFrame:SetVerticalScroll(parent.tabs[activeTab].pos)
+	child:SetSize(540,self.height)
 	
 	for i, tab in pairs(parent.tabs) do
 		tab.sl:Hide()
@@ -75,7 +76,7 @@ local function onClickTab(self)
 
 end
 
-local function createTab(parent, id, name)
+local function createTab(parent, id, name, height)
 	parent.tabs = parent.tabs or {}
 	
 	local t = CreateFrame('Button', parent:GetName() .. 'Tab' .. (#parent.tabs + 1), parent, 'OptionsFrameTabButtonTemplate')
@@ -84,6 +85,7 @@ local function createTab(parent, id, name)
 	--t.panel = panel
 	t.id = id
 	t.pos = 0;
+	t.height = height
 	t:SetText(name)
 	t:SetScript('OnClick', onClickTab)
 
@@ -153,6 +155,7 @@ local function ScrollBar_OnValueChanged(self,value)
 	-- hide minilist if it will not be visible
 	if activeTab == miniTab then
 		local mini = app:GetWindow("settings");
+		if value > (mini:GetHeight()+(3*frameSpacer)) then
 			mini:Hide()
 		else
 			mini:Show()
@@ -205,7 +208,7 @@ end
 
 local function createGeneralFrame(parent)
 	local tabName = "General"
-	createTab(parent,generalTab,tabName)
+	createTab(parent,generalTab,tabName,600)
 	elm = {}
 	obj[generalTab] = elm
 	
@@ -444,7 +447,7 @@ end
 
 local function createAccountFrame(parent)
 	local tabName = "Account Filters"
-	createTab(parent,accountTab,tabName)
+	createTab(parent,accountTab,tabName, 1000)
 	
 	local elm = {}
 	obj[accountTab] = elm
@@ -1074,7 +1077,7 @@ end
 
 local function createMiniListFrame(parent)
 	local tabName = "Mini List"
-	createTab(parent,miniTab,tabName)
+	createTab(parent,miniTab,tabName, 1000)
 	
 	local elm = {}
 	obj[miniTab] = elm
@@ -1494,7 +1497,7 @@ local function createMiniListFrame(parent)
 end
 local function createTooltipFrame(parent)
 	local tabName = "Tooltip"
-	createTab(parent,tooltipTab,tabName)
+	createTab(parent,tooltipTab,tabName, 600)
 	
 	local elm = {}
 	obj[tooltipTab] = elm
@@ -1688,7 +1691,7 @@ local function createTooltipFrame(parent)
 	addObject(elm,moreLoc)
 end
 local function createDebugFrame(parent)
-	createTab(parent,debugTab,"Debug")
+	createTab(parent,debugTab,"Debug",600)
 	
 	local elm = {}
 	obj[debugTab] = elm
@@ -1757,7 +1760,7 @@ local function createDebugFrame(parent)
 end
 local function createAboutFrame(parent)
 	local tabName = "About"
-	createTab(parent,aboutTab,tabName)
+	createTab(parent,aboutTab,tabName, 1000)
 	
 	local elm = {}
 	obj[aboutTab] = elm
