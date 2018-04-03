@@ -42,6 +42,10 @@ _.Instances =
 							["groups"] = {
 								i(69584),	-- Recovered Cloak of Frostheim
 								i(69592),	-- Reforged Trollbane
+								nld({	-- Legacy (same object #, different name)
+									un(2, i(33494)),	-- Amani Divining Staff
+									un(2, i(33490)),	-- Staff of Dark Mending
+								}),
 							},
 							["description"] = "This satchel is received by rescuing Bakkalzu from Akil'zon (eagle boss) within the time limit. The satchel spawns in the left lower alcove as you enter Akil'zon's platform.",
 						}),
@@ -62,6 +66,10 @@ _.Instances =
 								i(69588),	-- Skullcrusher Warboots
 								i(69586),	-- Two-Toed Boots
 								i(69585),	-- Wristwraps of Madness
+								nld({	-- Legacy (same object #, different name)
+									un(2, i(33494)),	-- Amani Divining Staff
+									un(2, i(33490)),	-- Staff of Dark Mending
+								}),
 							},
 							["description"] = "This trunk is received by rescuing Hazlek from Nalorakk (bear boss) within the time limit. The trunk spawns in the right alcove as you enter Nalorakk's platform.",
 						}),
@@ -108,6 +116,9 @@ _.Instances =
 						i(69572),	-- Hex Lord's Bloody Cloak
 						i(69569),	-- Shadowtooth Trollskin Breastplate
 						i(69570),	-- Waistband of Hexes
+						nld({	-- Legacy
+							un(2, i(33465)),	-- Staff of Primal Fury
+						}),
 					})),
 					cr(23863, e(191, {	-- Daakara
 						i(69581),	-- Amani Scepter of Rites
@@ -121,7 +132,9 @@ _.Instances =
 						i(69578),	-- Hexing Robes
 						i(69583),	-- Legguards of the Unforgiving
 						nld({	-- Legacy Zul'jin items (old NPC ID for Zul'jin is now Daakara)
+							un(2, i(33476)),	-- Cleaver of the Unforgiving
 							un(2, i(33468)),	-- Dark Blessing
+							un(2, i(33478)),	-- Jin'rohk, The Great Apocalypse
 						}),
 					})),
 				},

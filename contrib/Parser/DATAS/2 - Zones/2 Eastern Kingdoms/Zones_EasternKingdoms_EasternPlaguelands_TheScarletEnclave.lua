@@ -998,6 +998,10 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							q(6024, {	-- Hameya's Plea
+								un(34, i(15814)),	-- Hameya's Slayer
+								un(34, i(15815)),	-- Hameya's Cloak
+							}),
 							q( 5942, {	-- Hidden Treasures
 								un(34, i(15857)),	-- Magebane Scion
 							}),
@@ -1214,14 +1218,15 @@ _.Zones =
 							},
 							["classes"] = {6},
 						}),
---[[					n(-40, {	-- Legacy
+--[[						n(-40, {	-- Legacy
 							["groups"] = {
 								n(-17, {	-- Quests (Legacy)
 								}),
 								--n(-16, {	-- Rares (Legacy)
 								--}),
 								--n(  0, {	-- Zone Drop (Legacy)
-								--}),							},
+								--}),
+							},
 							["u"] = 12,
 						}),	--]]
 					},

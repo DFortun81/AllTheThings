@@ -82,7 +82,38 @@ _.NeverImplemented =
 	un(1, i(70209)),	-- Ruthless Gladiator's Reprieve
 	un(1, i(20522)),	-- Feral Staff
 	un(1, i(3222)),	-- Wicked Dagger
+	un(1, i(38245)),	-- Crystalline Providence
+	un(1, i(38248)),	-- Torch of the Fallen Souls
+	un(1, i(84085)),	-- Dreadwaste Meditation Staff
+	un(1, i(84086)),	-- Dreadwaste Diviner's Rod
+	un(1, i(84527)),	-- Hidden Pass Meditation Staff
+	un(1, i(913)),	-- Huge Ogre Sword
+	un(1, i(12469)),	-- Mutilator
+	un(1, i(23432)),	-- Engraved Greatsword
+	un(1, i(32186)),	-- Chancellor's Warblade
+	un(1, i(54553)),	-- Kliklak's Fearsome Greatsword (never made it to live)
+	un(1, i(56701)),	-- Jinxed Vest (never made it to live)
+	un(1, i(56702)),	-- Saw Blade (never made it to live)
+	un(1, i(5255)),	-- Quilboar Tomahawk
 --[[	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
 	un(1, i()),	-- 
 	un(1, i()),	-- --]]
 	

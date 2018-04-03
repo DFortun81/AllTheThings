@@ -1362,15 +1362,23 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
-						--n(-17, {	-- Quests (Legacy)
-						--}),
+						n(-17, {	-- Quests (Legacy)
+							qh(4904, {	-- Free at Last
+								un(34, i(15469)),	-- Windsong Cinch
+								un(34, i(15468)),	-- Windsong Drape
+							}),
+							qh(1184, {	-- Parts of the Swarm
+								un(34, i(6737)),	-- Dryleaf Pants
+								un(34, i(6738)),	-- Bleeding Crescent
+							}),
+						}),
 						n(-16, {	-- Rares (Legacy)
 							n(4099, { 	-- Galak Marauder
 								un(7, i(1493)),	-- Heaver Marauder Scimitar
 							}),
 						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
 					},
 					["u"] = 12,
 				}),

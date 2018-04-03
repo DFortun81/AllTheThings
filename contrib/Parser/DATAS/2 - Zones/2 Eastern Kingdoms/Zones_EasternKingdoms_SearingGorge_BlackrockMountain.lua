@@ -637,6 +637,11 @@ _.Zones =
 								un(34, i(11860)),	-- Charged Lightning Rod
 								un(34, i(11861)),	-- Girdle of Reprisal
 							}),
+							q( 3463, {	-- Set Them Ablaze
+								un(34, i(10742)),	-- Dragonflight Leggings
+								un(34, i(10743)),	-- Drakefire Headguard
+								un(34, i(10744)),	-- Axe of the Ebon Blade
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

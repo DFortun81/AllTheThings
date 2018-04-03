@@ -224,9 +224,10 @@ _.Zones =
 					})),
 					o(112948, {	-- Intrepid's Locked Strongbox
 						qa(25819, { -- The Eye of Paleth
-							i(59092),
-							i(59091),
-							i(59090),
+							i(  2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
+							i( 59092),
+							i( 59091),
+							i( 59090),
 							i(131446),
 						}),
 					}),
@@ -768,10 +769,18 @@ _.Zones =
 							qa(293, {	-- Cleansing the Eye
 								un(34, i(2943)),	-- Eye of Paleth
 							}),
+							qa(474, {	-- Defeat Nek'rosh
+								un(34, i(3209)),	-- Ancient War Sword
+								un(34, i(6194)),	-- Barreling Reaper
+							}),
 							qa(296, {	-- Ormer's Revenge
 								un(34, i(3493)),	-- Raptor's End
 								un(34, i(3566)),	-- Raptorbane Armor
 								un(34, i(5246)),	-- Excavation Rod
+							}),
+							qa(286, {	-- Return the Statuette
+								un(34, i(2950)),	-- Icicle Rod
+								un(34, i(2949)),	-- Mariner Boots
 							}),
 							qa(633, {	-- The Thandol Span
 								un(34, i(4504)),	-- Dwarven Guard Cloak

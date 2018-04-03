@@ -398,12 +398,17 @@ _.Zones =
 						["races"] = {2,8},
 					})),
 --]]					
-					qg(86884, q(25267,  {  -- Message for Saurfang
+					qg(86884, q(25267,  {	-- Message for Saurfang
 						["groups"] = {
-							i(118217),
-							i(118219),
-							i(131898),
-							i(118218),
+							i(118217),	-- Staff of Dubious Pacts
+							i(118219),	-- Harness of Forward Directions
+							i(131898),	-- Chestguard of Forward Directions
+							i(118218),	-- Girdle of Common Causes
+							nld({	-- Legacy (same quest ID, different name)
+								un(34, i(67154)),	-- Staff of the Unwelcome
+								un(34, i(67157)),	-- Harness of Binding
+								un(34, i(67156)),	-- Girdle of Servitude
+							}),
 						},
 						["races"] = {9},
 					})),
@@ -595,16 +600,19 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
 							qh(827, {	-- Skull Rock
 								un(34, i(4947)),	-- Jagged Dagger
 								un(34, i(4939)),	-- Steady Bastard Sword
 								un(34, i(4948)),	-- Stinging Mace
 							}),
+							qh(924, {	-- The Demon Seed
+								un(34, i(5420)),	-- Banshee Armor
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 					["u"] = 12,

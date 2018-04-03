@@ -1103,6 +1103,10 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							qh(6481, {	-- Earthen Arise
+								un(34, i(16981)),	-- Owlbeard Bracers
+								un(34, i( 1306)),	-- Wolfmane Wristguards
+							}),
 							q( 1096, {	-- Gerenzo Wrenchwhistle
 								un(34, i(6667)),	-- Engineer's Cloak
 								un(34, i(6668)),	-- Draftsman Boots

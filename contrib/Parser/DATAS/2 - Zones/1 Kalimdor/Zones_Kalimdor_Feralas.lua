@@ -1005,6 +1005,10 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 						n(-17, {	-- Quests (Legacy)
+							qh(2976, {	-- A Grim Discovery
+								un(34, i(11858)),	-- Battlehard Cape
+								un(34, i(11859)),	-- Jademoon Orb
+							}),
 							qa(4266, {	-- A Hero's Welcome
 								un(34, i(11856)),	-- Ceremonial Elven Blade
 								un(34, i(11857)),	-- Sanctimonial Rod

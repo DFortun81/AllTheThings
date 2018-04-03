@@ -1317,6 +1317,13 @@ _.Zones =
 								},
 								["classes"] = { 1 },	-- Warrior
 							}),
+							qa(1880, {	-- Mage-tastic Gizmonitor
+								["g"] = {
+									un(34, i(7507)),	-- Arcane Orb
+									un(34, i(9514)),	-- Arcane Staff
+								},
+								["classes"] = { 8 },	-- Mage
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

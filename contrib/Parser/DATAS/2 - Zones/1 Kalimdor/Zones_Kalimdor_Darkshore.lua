@@ -1008,6 +1008,10 @@ _.Zones =
 								un(34, i(15206)),	-- Jadefinger Baton
 								un(34, i(15207)),	-- Steelcap Shield
 							}),
+							qa( 981, {	-- The Tower of Althalaxx
+								un(34, i(10043)),	-- Pious Legwraps
+								un(34, i( 5614)),	-- Seraph's Strike
+							}),
 							qa( 973, {	-- The Tower of Althalaxx
 								un(34, i(5613)),	-- Staff of the Purifier
 							}),

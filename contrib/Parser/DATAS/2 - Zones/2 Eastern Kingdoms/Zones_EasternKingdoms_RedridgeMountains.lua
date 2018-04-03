@@ -704,6 +704,9 @@ _.Zones =
 								},
 								["description"] = "Morganth was removed and Doane has taken his place. Blizzard used same npcID.",
 							}),	
+							n(544, {	-- Murloc Nightcrawler
+								un(7, i(1406)),	-- Pearl-Encrusted Spear
+							}),
 							n(545, {	-- Murloc Tidecaller
 								un(7, i(1473)),	-- Riverside Staff
 							}),

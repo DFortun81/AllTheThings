@@ -186,6 +186,9 @@ _.Instances =
 								n(4517, {	-- Death's Head Priest
 									un(7, i(3569)), 	-- Vicar's Robe
 								}),
+								n(4428, {	-- Death Speaker Jargba
+									un(2, i(6682)),	-- Death Speaker Robes
+								}),
 							}),
 						},
 						["u"] = 12,
