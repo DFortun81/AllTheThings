@@ -258,6 +258,7 @@ local function createGeneralFrame(parent)
 	-- only main
 	local mainOnly = createCheckBox(app.L("I_ONLY_CARE_ABOUT_MY_MAIN"), child, function(self)
 			app.SetDataMember("MainOnly", self:GetChecked());
+			app.SetCompletionistMode(app.GetDataMember("CompletionistMode"));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("MainOnly"));
