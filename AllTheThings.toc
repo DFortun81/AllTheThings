@@ -16,3 +16,5 @@ db\Presets.lua
 db\RaceDB.lua
 db\NPCDB.lua
 db\Categories.lua
+Settings.lua
+ScrollFrame.xml
