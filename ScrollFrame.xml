@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+
+<Frame name="ATT_ScrollFrame" virtual="true">
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentDialogBG">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="8" y="-24"/>
+						<Anchor point="BOTTOMRIGHT" x="-6" y="8"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+</Frame>
+
+</Ui>
