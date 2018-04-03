@@ -1437,6 +1437,11 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 						n(-17, {	-- Quests (Legacy)
+							qh(855, {	-- Centaur Bracers
+								un(34, i(5346)),	-- Orcish Battle Bow
+								un(34, i(5344)),	-- Pointed Axe
+								un(34, i(5345)),	-- Stonewood Hammer
+							}),
 							qh(899, {	-- Consumed by Hatred
 								un(34, i(5314)),	-- Boar Hunter's Cape
 								un(34, i(6477)),	-- Grassland Sash
@@ -1458,6 +1463,10 @@ _.Zones =
 								un(34, i(5356)),	-- Branding Rod
 								un(34, i(5357)),	-- Ward of the Vale
 								un(34, i(5355)),	-- Beastmaster's Girdle
+							}),
+							qh(3301, {	-- Mura Runetotem
+								un(34, i(10820)),	-- Jackseed Belt
+								un(34, i(10821)),	-- Sower's Cloak
 							}),
 							q( 865, {	-- Raptor Horns
 								un(34, i(5343)),	-- Barkeeper's Cloak
@@ -1482,6 +1491,12 @@ _.Zones =
 								["g"] = {
 									un(34, i(15107)),	-- Orb of Noh'Orahil
 									un(34, i(15105)),	-- Staff of Noh'Orahil
+								},
+								["classes"] = { 9 },	-- Warlock
+							}),
+							q(4786, {	-- The Completed Robe
+								["g"] = {
+									un(34, i(6900)),	-- Enchanted Gold Bloodrobe
 								},
 								["classes"] = { 9 },	-- Warlock
 							}),

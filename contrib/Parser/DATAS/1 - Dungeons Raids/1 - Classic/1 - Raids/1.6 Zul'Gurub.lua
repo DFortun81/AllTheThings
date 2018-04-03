@@ -235,6 +235,7 @@ _.Instances =
 						i(22720),	-- Zulian Headdress
 					}),
 					n(11380, { -- Jin'do the Hexxer
+						i(19884),	-- Jin'do's Judgement					
 						i(19886),	-- The Hexxer's Cover
 						i(19888),	-- Bloodstained Legplates
 						i(19889),	-- Overlord's Embrace

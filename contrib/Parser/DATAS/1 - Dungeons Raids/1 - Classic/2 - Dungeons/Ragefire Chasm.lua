@@ -50,6 +50,20 @@ _.Instances =
 						i(151424),	-- Belt of Boundless Fury
 						i(82886),	-- Gorewalker Treads
 					})),
+					n(-40, {	-- Legacy
+						["groups"] = {
+							--n(-17, {	-- Quests (Legacy)
+							--}),
+							--n(-16, {	-- Rares (Legacy)
+							--}),
+							n(  0, {	-- Zone Drop (Legacy)
+								n(11520, {	-- Taragaman the Hungerer
+									un(2, i(14149)),	-- Subterranean Cape
+								}),
+							}),
+						},
+						["u"] = 12,
+					}),
 				},
 				["Lvl"] = 10,
 				["mapID"] = 680

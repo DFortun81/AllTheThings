@@ -1346,9 +1346,14 @@ _.Zones =
 						}),
 					}),
 				}),
---[[				n(-40, {	-- Legacy
+				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							q(5944, {	-- In Dreams
+								un(34, i(15413)),	-- Ornate Adamantium Breastplate
+								un(34, i(15418)),	-- Shimmering Platinum Warhammer
+								un(34, i(15421)),	-- Shroud of the Exile
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
@@ -1356,7 +1361,7 @@ _.Zones =
 						--}),
 					},
 					["u"] = 12,
-				}),	--]]
+				}),
 			},
 			["Lvl"] = 35,	
 			["achievementID"] = 770,

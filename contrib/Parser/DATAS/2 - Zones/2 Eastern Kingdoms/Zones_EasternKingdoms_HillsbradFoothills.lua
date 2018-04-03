@@ -1549,15 +1549,38 @@ _.Zones =
 							qa(565, {	-- Bartolo's Yeti Fur Cloak
 								un(34, i(2805)),	-- Yeti Fur Cloak
 							}),
+							qh(550, {	-- Battle of Hillsbrad
+								un(34, i(6282)),	-- Sacred Burial Trousers
+								un(34, i(3761)),	-- Deadskull Shield
+								un(34, i(3822)),	-- Runic Darkblade
+							}),
+							qa(564, {	-- Costly Menace
+								un(34, i(3753)),	-- Shepherd's Girdle
+								un(34, i(3754)),	-- Shepherd's Gloves
+								-- i(3736),	-- Recipe: Tasty Lion Steak (recipe apparently available from Cooking trainers now)
+							}),
 							qa(504, {	-- Crushridge Warmongers
 								un(34, i(5249)),	-- Burning Silver
 								un(34, i(3763)),	-- Lunar Buckler
+							}),
+							qh(501, {	-- Elixir of Pain
+								un(34, i(2230)),	-- Gloves of Brawn
+								un(34, i(3741)),	-- Stomping Boots
+								un(34, i(6482)),	-- Firewalker Boots
+								-- i(3735),	-- Recipe: Hot Lion Chops (recipe is not unobtainable)
+							}),
+							qh(547, {	-- Humbert's Sword
+								un(34, i(3750)),	-- Ribbed Breastplate
+								un(34, i(3751)),	-- Mercenary Leggings
 							}),
 							qa(1053, {	-- In the Name of the Light
 								un(34, i( 6829)),	-- Sword of Serenity
 								un(34, i( 6830)),	-- Bonebiter
 								un(34, i( 6831)),	-- Black Menace
 								un(34, i(11262)),	-- Orb of Lorica
+							}),
+							qa(562, {	-- Stormwind Ho!
+								un(34, i(3755)),	-- Fish Gutter
 							}),
 							qa(505, {	-- Syndicate Assassins
 								un(34, i(3758)),	-- Crusader Belt
@@ -1579,6 +1602,14 @@ _.Zones =
 							}),
 							qh(566, {	-- WANTED: Baron Vardus
 								un(34, i(2231)),	-- Inferno Robe
+							}),
+							q(1792, {	-- Whirlwind Weapon
+								["g"] = {
+									un(34, i(6975)),	-- Whirlwind Axe
+									un(34, i(6977)),	-- Whirlwind Sword
+									un(34, i(6976)),	-- Whirlwind Warhammer
+								},
+								["classes"] = { 1 },	-- Warrior
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)

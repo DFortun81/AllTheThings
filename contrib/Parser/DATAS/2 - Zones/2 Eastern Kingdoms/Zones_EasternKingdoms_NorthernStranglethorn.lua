@@ -694,6 +694,10 @@ _.Zones =
 								un(34, i(10698)),	-- Enchanted Azsharite Felbane Staff
 								un(34, i(10696)),	-- Enchanted Azsharite Felbane Sword
 							}),
+							qh(582, {	-- Headhunting
+								un(34, i(4133)),	-- Darkspear Cuffs
+								un(34, i(4132)),	-- Darkspear Armsplints
+							}),
 							qa(206, {	-- Mai'Zoth
 								un(34, i(4125)),	-- Tranquil Orb
 							}),

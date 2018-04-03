@@ -933,6 +933,9 @@ _.Zones =
 								un(34, i(15862)),	-- Blitzcleaver
 								un(34, i(15863)),	-- Grave Scepter
 							}),
+							q(4842, {	-- Strange Sources
+								un(34, i(15789)),	-- Deep River Cloak
+							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(7449, { 	-- Chillwind Ravager

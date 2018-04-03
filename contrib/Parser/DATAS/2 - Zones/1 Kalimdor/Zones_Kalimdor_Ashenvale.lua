@@ -1408,12 +1408,18 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
 							qa(1044, {	-- Answered Questions
 								un(34, i(5817)),	-- Lunaris Bow
 								un(34, i(5818)),	-- Moonbeam Wand
+							}),
+							qa(1046, {	-- Raene's Cleansing
+								un(34, i( 5815)),	-- Glacial Stone
+								un(34, i(17046)),	-- Gutterblade
+							}),
+							qa( 976, {	-- Supplies to Auberdine
+								un(34, i(5323)),	-- Everglow Lantern
+								un(34, i(6721)),	-- Chestplate of Kor
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
@@ -1421,6 +1427,8 @@ _.Zones =
 								un( 7, i(1351)),	-- Fingerbone Bracers
 							}),
 						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
 					},
 					["u"] = 12,
 				}),

@@ -139,8 +139,11 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 					qg(4794, qa(1258, { --... and Bugs
-						i(57843),
-						i(57844),
+						i(57843),	-- Baroque Shield
+						i(57844),	-- Crawling Wand
+						nld({	-- Legacy
+							un(34, i(6801)),	-- Baroque Apron
+						}),
 					})),
 --[[					
 					qg(23951, qa(27214)),	-- A Disturbing Development (breadcrumb quest for 27234)
@@ -148,8 +151,8 @@ _.Zones =
 					qg(4926, qh(26682)),	-- A Shambling Threat
 --]]					
 					qg(23568, qa(27427, { -- Arms of the Grimtotems
-						i(33268),
-						i(57837),
+						i(33268),	-- Bone Dirk
+						i(57837),	-- Biting Greataxe
 					})),
 					qg(4502, qh(1168, { -- Army of the Black Dragon
 						i(10702),
@@ -1117,6 +1120,9 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							qa(11148, {	-- Arms of the Grimtotems
+								un(34, i(33272)),	-- Biting Axe
+							}),
 							q( 1958, {	-- Celestial Power
 								["g"] = {
 									un(34, i(7515)),	-- Celestial Orb
@@ -1127,6 +1133,13 @@ _.Zones =
 							qh(1173, {	-- Challenge Overlord Mok'Morokk
 								un(34, i(10703)),	-- Fiendish Skiv
 								un(34, i(10704)),	-- Chillnail Splinter
+							}),
+							qh(1169, {	-- Identifying the Brood
+								un(34, i(9703)),	-- Scorched Cape
+								un(34, i(9704)),	-- Rustler Gloves
+							}),
+							qh(11200, {	-- More than Coincidence
+								un(34, i(33272)),	-- Biting Axe
 							}),
 							qdg(q(2846, {	-- Tiara of the Deep
 								un(34, i(9527)),	-- Spellshifter Rod

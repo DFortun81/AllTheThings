@@ -691,6 +691,12 @@ _.Zones =
 							q( 716, {	-- Stone Is Better than Cloth
 								un(34, i(4979)),	-- Enchanted Stonecloth Bracers
 							}),
+							qdg(qh(4063, {	-- The Rise of the Machines
+								un(34, i(12109)),	-- Azure Moon Amice
+								un(34, i(12110)),	-- Raincaster Drape
+								un(34, i(12108)),	-- Basaltscale Armor
+								un(34, i(12111)),	-- Lavaplate Gauntlets
+							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(7057, {	-- Digmaster Shovelphlange

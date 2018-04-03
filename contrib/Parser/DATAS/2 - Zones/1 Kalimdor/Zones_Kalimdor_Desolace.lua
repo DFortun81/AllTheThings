@@ -1077,9 +1077,11 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
+							qh(1366, {	-- Centaur Bounty
+								un(34, i(6780)),	-- Lilac Sash
+								un(34, i(6784)),	-- Braced Handguards
+							}),
 							qdg(qa(7064, {	-- Corruption of Earth and Seed
 								un(34, i(17705)),	-- Thrash Blade
 								un(34, i(17743)),	-- Resurgence Rod
@@ -1090,18 +1092,28 @@ _.Zones =
 								un(34, i(17743)),	-- Resurgence Rod
 								un(34, i(17753)),	-- Verdant Keeper's Aim
 							})),
-							q(5943, {	-- Gizelton Caravan
+							q( 5943, {	-- Gizelton Caravan
 								un(34, i(15691)),	-- Sidegunner Shottie
 								un(34, i(15692)),	-- Kodo Brander
 								un(34, i(15695)),	-- Studded Ring Shield
 							}),
-							q(1381, {	-- Khan Hratha
+							q( 1381, {	-- Khan Hratha
 								un(34, i(6788)),	-- Magram Hunter's Belt
 								un(34, i(6789)),	-- Ceremonial Centaur Blanket
 							}),
-							q(1380, {	-- Khan Kratha
+							q( 1380, {	-- Khan Kratha
 								un(34, i(6773)),	-- Gelkis Marauder Chain
 								un(34, i(6774)),	-- Uthek's Finger
+							}),
+							qa(1440, {	-- Return to Vahlarriel
+								un(34, i( 9687)),	-- Grappler's Belt
+								un(34, i( 9698)),	-- Gloves of Insight
+								un(34, i( 9699)),	-- Garrison Cloak
+								un(34, i(11884)),	-- Moonlit Amice
+							}),
+							qa(1457, {	-- The Karnitol Shipwreck
+								un(34, i(6791)),	-- Hellion Boots
+								un(34, i(6792)),	-- Sanguine Pauldrons
 							}),
 --[[  NO REWARDS			qg(12340, qh( 6143)),	-- Other Fish to Fry (REMOVED with Cata per wowhead comment)
 							qh( 1432),	-- Alliance Relations (REMOVED per wowhead comment)
@@ -1116,6 +1128,8 @@ _.Zones =
 								un(7, i(2620)),	-- Augural Shroud
 							}),
 						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
 					},
 					["u"] = 12,
 				}),

@@ -895,7 +895,11 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							q(7603, {	-- Kroshius' Infernal Core
+							qa(4261, {	-- Ancient Spirit
+								un(34, i(11873)),	-- Ethereal Mist Cape
+								un(34, i(11874)),	-- Clouddrift Mantle
+							}),
+							q( 7603, {	-- Kroshius' Infernal Core
 								["g"] = {
 									un(34, i(18762)),	-- Shard of the Green Flame
 								},

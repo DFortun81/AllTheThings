@@ -1250,9 +1250,20 @@ _.Zones =
 						["description"]	= "Vendor only sells the recipe to those who have completed the quest 'Worth Its Weight in Steel'|r",
 					}),
 				}),
---[[				n(-40, {	-- Legacy
+				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							qdg(q(4024, {	-- A Taste of Flame
+								un(34, i(12066)),	-- Shaleskin Cape
+								un(34, i(12082)),	-- Wyrmhide Spaulders
+								un(34, i(12083)),	-- Valconian Sash
+							})),
+							qdg(qa(4263, {	-- Incendius!
+								un(34, i(12113)),	-- Sunborne Cape
+								un(34, i(12114)),	-- Nightfall Gloves
+								un(34, i(12112)),	-- Crypt Demon Bracers
+								un(34, i(12115)),	-- Stalwart Clutch
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
@@ -1260,7 +1271,7 @@ _.Zones =
 						--}),
 					},
 					["u"] = 12,
-				}),	--]]
+				}),
 				n(-73, { 	-- Blackrock Mountain
 					["groups"] = {	
 						n(-16, { 	-- Rares	

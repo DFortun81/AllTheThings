@@ -477,6 +477,9 @@ _.Zones =
 						dr(01.1, i(68761)),	-- Imbued Infantry Boots
 						dr(01.0, i(68754)),	-- Imbued Disciple's Boots
 						dr(01.0, i(68760)),	-- Imbued Infantry Gauntlets					
+						nld({	-- Legacy
+							un(7, i(2254)),	-- Icepane Warhammer
+						}),
 					}), 			
 --					n(1137, { 	-- Edan the Howler	}), 
 				}),

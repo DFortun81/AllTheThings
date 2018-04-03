@@ -1296,18 +1296,22 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							q( 662, {	-- Deep Sea Salvage
+							q(  662, {	-- Deep Sea Salvage
 								un(34, i(4511)),	-- Black Water Hammer
-							}),						
-							q( 666, {	-- Sunken Treasure
+							}),
+							qh(4545, {	-- Foul Magics
+								un(34, i(4543)),	-- White Drakeskin Cap
+								un(34, i(4545)),	-- Radiant Silver Bracers
+							}),
+							q(  666, {	-- Sunken Treasure
 								un(34, i(4547)),	-- Gnomish Zapper
 								un(34, i(4548)),	-- Servomechanic Sledgehammer
 							}),
-							qa(685, {	-- Wanted! Otto and Falconcrest
+							qa( 685, {	-- Wanted! Otto and Falconcrest
 								un(34, i(5247)),	-- Rod of Sorrow
 								un(34, i(4745)),	-- War Rider Bracers
 							}),
-							qa(684, {	-- Wanted! Marez Cowl
+							qa( 684, {	-- Wanted! Marez Cowl
 								un(34, i(4744)),	-- Arcane Runed Bracers
 							}),
 						}),
