@@ -4862,6 +4862,9 @@ local function StopMovingOrSizing(self)
 	end
 end
 local function StartMovingOrSizing(self, fromChild)
+	if not self:IsMovable() and not self:IsResizable() then
+		return
+	end
 	if self.isMoving then
 		StopMovingOrSizing(self);
 	else
