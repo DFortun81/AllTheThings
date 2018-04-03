@@ -144,16 +144,21 @@ local function ScrollFrame_OnMouseWheel(self, delta)
 		newValue = self:GetVerticalScrollRange();
 	end
 	
+	
+	
+	self:SetVerticalScroll(newValue);
+end
+
+local function ScrollBar_OnValueChanged(self,value)
 	-- hide minilist if it will not be visible
 	if activeTab == miniTab then
 		local mini = app:GetWindow("settings");
-		if newValue > (mini:GetHeight()+frameSpacer) then
 			mini:Hide()
 		else
 			mini:Show()
 		end
 	end
-	self:SetVerticalScroll(newValue);
+	self:GetParent():SetVerticalScroll(value)
 end
 
 local function createScroll(parent)
@@ -168,11 +173,13 @@ local function createScroll(parent)
 	UIConfig.ScrollFrame:SetPoint("BOTTOMRIGHT", AllTheThingsSettingsConfigDialogBG, "BOTTOMRIGHT", -3, 4);
 	UIConfig.ScrollFrame:SetClipsChildren(true);
 	UIConfig.ScrollFrame:SetScript("OnMouseWheel", ScrollFrame_OnMouseWheel);
+	--UIConfig.ScrollFrame:SetScript("OnValueChanged", nil);
 	
 	UIConfig.ScrollFrame.ScrollBar:ClearAllPoints();
 	UIConfig.ScrollFrame.ScrollBar:SetPoint("TOPLEFT", UIConfig.ScrollFrame, "TOPRIGHT", -12, -18);
 	UIConfig.ScrollFrame.ScrollBar:SetPoint("BOTTOMRIGHT", UIConfig.ScrollFrame, "BOTTOMRIGHT", -7, 18);
-
+	UIConfig.ScrollFrame.ScrollBar:SetScript("OnValueChanged", ScrollBar_OnValueChanged);
+	
 	child = CreateFrame("Frame", nil, UIConfig.ScrollFrame);
 	child:SetSize(540, 1000);
 	UIConfig.ScrollFrame:SetScrollChild(child);	
