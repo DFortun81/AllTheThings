@@ -522,7 +522,7 @@ _.WorldEvents =
 									i(134619),	-- Scorching Staff
 									i(134606),	-- Scorching Greatsword
 								},
-								["description"] = "Level 80-84 Loot Table",
+								["description"] = "Rewarded for winning a random battleground in the level 80-84 range.",
 								["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
 							}),
 							n(-303, {	-- Level 85-89
@@ -554,7 +554,7 @@ _.WorldEvents =
 									i(134774),	-- Covert Barrier
 									i(134746),	-- Covert Greatsword
 								},
-								["description"] = "Level 85-89 Loot Table",
+								["description"] = "Rewarded for winning a random battleground in the level 85-89 range.",
 								["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
 							}),
 						},
