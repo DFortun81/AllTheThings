@@ -114,6 +114,7 @@ local function createTab(parent, id, name, height)
 		t.sl:Show()
 		t.sr:Show()
 		activeTab = 1;
+		child:SetSize(child:GetWidth(), height)
 	end
 	t:SetID(numTabs)
 
@@ -176,7 +177,6 @@ local function createScroll(parent)
 	UIConfig.ScrollFrame:SetPoint("BOTTOMRIGHT", AllTheThingsSettingsConfigDialogBG, "BOTTOMRIGHT", -3, 4);
 	UIConfig.ScrollFrame:SetClipsChildren(true);
 	UIConfig.ScrollFrame:SetScript("OnMouseWheel", ScrollFrame_OnMouseWheel);
-	--UIConfig.ScrollFrame:SetScript("OnValueChanged", nil);
 	
 	UIConfig.ScrollFrame.ScrollBar:ClearAllPoints();
 	UIConfig.ScrollFrame.ScrollBar:SetPoint("TOPLEFT", UIConfig.ScrollFrame, "TOPRIGHT", -12, -18);
@@ -208,7 +208,7 @@ end
 
 local function createGeneralFrame(parent)
 	local tabName = "General"
-	createTab(parent,generalTab,tabName,600)
+	createTab(parent,generalTab,tabName,480)
 	elm = {}
 	obj[generalTab] = elm
 	
@@ -1497,7 +1497,7 @@ local function createMiniListFrame(parent)
 end
 local function createTooltipFrame(parent)
 	local tabName = "Tooltip"
-	createTab(parent,tooltipTab,tabName, 600)
+	createTab(parent,tooltipTab,tabName, 480)
 	
 	local elm = {}
 	obj[tooltipTab] = elm
@@ -1691,7 +1691,7 @@ local function createTooltipFrame(parent)
 	addObject(elm,moreLoc)
 end
 local function createDebugFrame(parent)
-	createTab(parent,debugTab,"Debug",600)
+	createTab(parent,debugTab,"Debug",480)
 	
 	local elm = {}
 	obj[debugTab] = elm
@@ -1760,7 +1760,7 @@ local function createDebugFrame(parent)
 end
 local function createAboutFrame(parent)
 	local tabName = "About"
-	createTab(parent,aboutTab,tabName, 1000)
+	createTab(parent,aboutTab,tabName, 700)
 	
 	local elm = {}
 	obj[aboutTab] = elm
