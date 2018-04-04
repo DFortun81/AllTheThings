@@ -10,13 +10,11 @@ _.WorldEvents =
 					i(156683, {	-- Satchel of Helpful Goods [Level 15-60]			
 						["groups"] = {		
 							i(51974),	-- Enumerated Shoulderpads
-							i(51974),	-- Enumerated Shoulderpads
-							i(51972),	-- Enumerated Bracers
+							i(51972),	-- Enumerated Bracers*
 							un(2, i(51971)),	-- Enumerated Belt
 							i(51968),	-- Enumerated Wrap*
 							i(51973),	-- Enumerated Handwraps
 							i(51967),	-- Enumerated Sandals
-							i(51984),	-- Stalwart Shoulderpads
 							i(51984),	-- Stalwart Shoulderpads
 							un(2, i(51997)),	-- Stalwart Spaulders
 							i(51989),	-- Stalwart Bands
@@ -26,7 +24,6 @@ _.WorldEvents =
 							un(2, i(51985)),	-- Stalwart Belt
 							i(51990),	-- Stalwart Treads
 							i(51976),	-- Earthbound Shoulderguards
-							i(51976),	-- Earthbound Shoulderguards
 							i(51981),	-- Earthbound Wristguards
 							i(143581),	-- Earthbound Grips
 							un(2, i(51979)),	-- Earthbound Grips
@@ -35,7 +32,6 @@ _.WorldEvents =
 							un(2, i(51977)),	-- Earthbound Girdle
 							un(2, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
 							i(51982),	-- Earthbound Boots
-							i(51966),	-- Vigorous Spaulders
 							i(51998),	-- Vigorous Spaulders
 							i(51966),	-- Vigorous Spaulders
 							i(51962),	-- Vigorous Bracers

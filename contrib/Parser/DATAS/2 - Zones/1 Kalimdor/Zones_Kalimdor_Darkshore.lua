@@ -247,6 +247,16 @@ _.Zones =
 					}),
 					
 					
+					qa(13584, {	-- Calming the Earth
+						["g"] = {
+							i(52620),	-- Earth-Crusted Breastplate
+							i(52634),	-- Earthborn Staff
+						},
+						["qg"] = 33112,	-- Selenn
+						["sourceQuests"] = { 13579 },	-- Protector of Ameth'aran
+					}),
+					
+					
 					qa(13547, {	-- Coaxing the Spirits
 						["g"] = {
 						},
@@ -341,6 +351,13 @@ _.Zones =
 							i(131281),	-- Tharill's Boon
 						},
 						["qg"] = 32932,	-- Moon Priestess Tharill
+					}),
+					
+					
+					qa(13579, {	-- Protector of Ameth'Aran
+						["g"] = {
+						},
+						["qg"] = 33091,	-- Malfurion Stormrage
 					}),
 					
 					
@@ -487,6 +504,13 @@ _.Zones =
 					}),
 					
 					
+					qa(13575, {	-- The Land Is in Their Blood
+						["g"] = {
+						},
+						["qg"] = 33091,	-- Malfurion Stormrage
+					}),
+					
+					
 					qa(13605, {	-- The Last Refugee
 						["g"] = {
 							i( 52586),	-- Archaeologist's Dungarees
@@ -495,6 +519,13 @@ _.Zones =
 							i(131293),	-- Archaeologist's Leggings
 						},
 						["qg"] = 33232,	-- Archaeologist Hollee
+					}),
+					
+					
+					qa(13577, {	-- The Last Wildkin
+						["g"] = {
+						},
+						["qg"] = 33091,	-- Malfurion Stormrage
 					}),
 					
 					
@@ -630,10 +661,6 @@ _.Zones =
 						i(131290),
 					})),
 					qg(34402, qa(26408)),	-- Ashes in Ashenvale 
-					qg(33112, qa(13584, {	-- Calming the Earth
-						i(52620),
-						i(52634),
-					})),
 					qg(32967, qa(13545)),	-- Cleansing the Afflicted
 					qg(34301, qa(13881)),	-- Consumed
 					qg(33119, qa(13582)),	-- Elune's Fire
@@ -654,7 +681,6 @@ _.Zones =
 					})),
 					qg(34498, qa(13953)),	-- Naga In Our Midst
 					qg(11711, qa( 5713)),	-- One Shot. One Kill.
-					qg(33091, qa(13579)),	-- Protector of Ameth'Aran
 					qg(34340, qa(13893)),	-- Soggoth and Kronn
 					qg(33117, qa(13580, {	-- Soothing the Elements
 						i(52598),
@@ -697,8 +723,6 @@ _.Zones =
 						i(52636),
 						i(52584),
 					})),
-					qg(33091, qa(13575)),	-- The Land Is in Their Blood
-					qg(33091, qa(13577)),	-- The Last Wildkin
 					qg(34423, qa(13900, {	-- The Offering to Azshara
 						i(52588),
 						i(52610),

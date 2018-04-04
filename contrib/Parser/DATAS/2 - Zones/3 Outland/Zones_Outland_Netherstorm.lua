@@ -2066,7 +2066,7 @@ _.Zones =
 				}),
 				n(  0, {	-- Zone Drop
 					["groups"] = {
-						i(29460, {	-- Ethereum Prison Key (required to summon/"release"	 mobs)
+						i(29460, {	-- Ethereum Prison Key (required to summon/"release" mobs)
 							n(20520, {	-- Ethereum Prisoner (multiple named mobs with the same ID once spawned)
 								dr(01.5, i(31581)),	-- Slatesteel Boots
 								dr(01.4, i(31565)),	-- Skystalker's Boots
