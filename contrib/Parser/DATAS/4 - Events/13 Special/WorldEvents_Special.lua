@@ -9,7 +9,7 @@ _.WorldEvents =
 				["groups"] = {
 					i(156683, {	-- Satchel of Helpful Goods [Level 15-60]			
 						["groups"] = {		
-							i(51974),	-- Enumerated Shoulderpads
+							i(51974),	-- Enumerated Shoulderpads*
 							i(51972),	-- Enumerated Bracers*
 							un(2, i(51971)),	-- Enumerated Belt
 							i(51968),	-- Enumerated Wrap*
