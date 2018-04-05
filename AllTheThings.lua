@@ -2372,10 +2372,15 @@ app.BaseAchievement = {
 			return GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
 			return select(10, GetAchievementInfo(t.achievementID));
-		--elseif key == "trackable" then -- TODO?
+		-- NOTE: Might want to keep this commented out as the main headers for containers will have checkmarks.
+		--elseif key == "trackable" then
 		--	return true;
 		--elseif key == "saved" then
 		--	return select(4, GetAchievementInfo(t.achievementID));
+		elseif key == "collectible" then
+			return true;
+		elseif key == "collected" then
+			return select(4, GetAchievementInfo(t.achievementID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -2390,7 +2395,7 @@ end
 app.BaseAchievementCriteria = { 
 	__index = function(t, key)
 		if key == "achievementID" then
-			return t.parent.achievementID;
+			return t.parent.achievementID or t.parent.parent.achievementID;
 		elseif key == "text" then
 			return GetAchievementCriteriaInfo(t.achievementID,t.criteriaID) or ("Achievement #" .. t.achievementID .. ", Criteria #" .. t.criteriaID);
 		elseif key == "link" then
@@ -2406,7 +2411,9 @@ app.BaseAchievementCriteria = {
 			return select(10, GetAchievementInfo(t.achievementID));
 		elseif key == "trackable" then
 			return true;
-		elseif key == "saved" then
+		elseif key == "collectible" then
+			return true;
+		elseif key == "saved" or key == "collected" then
 			return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID));
 		else
 			-- Something that isn't dynamic.
@@ -2672,9 +2679,9 @@ app.BaseFaction = {
 	__index = function(t, key)
 		if key == "key" then
 			return "factionID";
-		elseif key == "collectible" then
+		elseif key == "trackable" or key == "collectible" then
 			return true;
-		elseif key == "collected" then
+		elseif key == "saved" or key == "collected" then
 			return t.standing == (t.isFriend and 6 or 8);
 		elseif key == "text" then
 			local rgb = FACTION_BAR_COLORS[t.standing + (t.isFriend and 2 or 0)];
@@ -3516,18 +3523,10 @@ app.BaseTitle = {
 	__index = function(t, key)
 		if key == "key" then
 			return "titleID";
-		elseif key == "collectible" then
-			return true;
 		elseif key == "f" then
 			return 110;
 		elseif key == "icon" then
 			return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
-		elseif key == "collected" then
-			if GetDataSubMember("CollectedTitles", t.titleID) == 1 then return 1; end
-			if IsTitleKnown(t.titleID) then
-				SetDataSubMember("CollectedTitles", t.titleID, 1);
-				return 1;
-			end
 		elseif key == "description" then
 			return "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
 		elseif key == "text" then
@@ -3563,6 +3562,16 @@ app.BaseTitle = {
 					-- Comma Separated
 					return UnitName("player") .. ", " .. name;
 				end
+			end
+		elseif key == "collectible" then
+			return true;
+		elseif key == "trackable" then
+			return true;
+		elseif key == "saved" or key == "collected" then
+			if GetDataSubMember("CollectedTitles", t.titleID) == 1 then return 1; end
+			if IsTitleKnown(t.titleID) then
+				SetDataSubMember("CollectedTitles", t.titleID, 1);
+				return 1;
 			end
 		else
 			-- Something that isn't dynamic.
@@ -5617,7 +5626,7 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		--[[
+		--[[]]--
 		-- Uncomment for harvesting
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
@@ -5648,7 +5657,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
-		--]]
+		--[[]]--
 		
 		-- Illusions (Dynamic)
 		--[[
