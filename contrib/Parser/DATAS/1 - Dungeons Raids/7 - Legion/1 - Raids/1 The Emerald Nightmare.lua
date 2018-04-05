@@ -61,14 +61,15 @@ _.Instances =
 									i(139234)
 								})),
 								cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
-									i(139205),
-									i(138216),
-									i(138215),
-									i(138219),
-									i(138218),
-									i(138212),
-									i(138214),
-									i(138211)
+									i(136903),	-- Nightmare Whelpling (PET!)
+									i(139205),	-- Cowl of Fright
+									i(138215),	-- Dreamscale Inlaid Vestments
+									i(138216),	-- Horror Inscribed Chestguard
+									i(138218),	-- Dragonbone Wristclamps
+									i(138219),	-- Dragonspur Wristguards
+									i(138214),	-- Gauntlets of the Demented Mind
+									i(138212),	-- Handwraps of Delusional Power
+									i(138211),	-- Malignant Sabatons
 								})),
 								cr(104636, e(1750, {	-- Cenarius
 									i(139231),
@@ -154,15 +155,15 @@ _.Instances =
 								i(139220)
 							})),
 							cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
-								i(138216),
-								i(138218),
-								i(139205),
-								i(138219),
-								i(138215),
-								i(138214),
-								i(138212),
-								i(138211),
-								i(136903)
+								i(136903),	-- Nightmare Whelpling (PET!)
+								i(139205),	-- Cowl of Fright
+								i(138215),	-- Dreamscale Inlaid Vestments
+								i(138216),	-- Horror Inscribed Chestguard
+								i(138218),	-- Dragonbone Wristclamps
+								i(138219),	-- Dragonspur Wristguards
+								i(138214),	-- Gauntlets of the Demented Mind
+								i(138212),	-- Handwraps of Delusional Power
+								i(138211),	-- Malignant Sabatons
 							})),
 							cr(104636, e(1750, {	-- Cenarius
 								i(139231),
@@ -245,15 +246,15 @@ _.Instances =
 								i(139220)
 							})),
 							cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
-								i(138216),
-								i(138218),
-								i(139205),
-								i(138219),
-								i(138215),
-								i(138214),
-								i(138212),
-								i(138211),
-								i(136903)
+								i(136903),	-- Nightmare Whelpling (PET!)
+								i(139205),	-- Cowl of Fright
+								i(138215),	-- Dreamscale Inlaid Vestments
+								i(138216),	-- Horror Inscribed Chestguard
+								i(138218),	-- Dragonbone Wristclamps
+								i(138219),	-- Dragonspur Wristguards
+								i(138214),	-- Gauntlets of the Demented Mind
+								i(138212),	-- Handwraps of Delusional Power
+								i(138211),	-- Malignant Sabatons
 							})),
 							cr(104636, e(1750, {	-- Cenarius
 								i(139231),
@@ -337,15 +338,15 @@ _.Instances =
 								i(139220)
 							})),
 							cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
-								i(138216),
-								i(138218),
-								i(139205),
-								i(138219),
-								i(138215),
-								i(138214),
-								i(138212),
-								i(138211),
-								i(136903)
+								i(136903),	-- Nightmare Whelpling (PET!)
+								i(139205),	-- Cowl of Fright
+								i(138215),	-- Dreamscale Inlaid Vestments
+								i(138216),	-- Horror Inscribed Chestguard
+								i(138218),	-- Dragonbone Wristclamps
+								i(138219),	-- Dragonspur Wristguards
+								i(138214),	-- Gauntlets of the Demented Mind
+								i(138212),	-- Handwraps of Delusional Power
+								i(138211),	-- Malignant Sabatons
 							})),
 							cr(104636, e(1750, {	-- Cenarius
 								i(139231),

@@ -105,7 +105,7 @@ _.Zones =
 					p(432), 	-- Stripe-Tailed Scorpid
 				}),
 				n(-17, {	-- Quests
---					qg(2860, qa(27823)),	-- A Dwarf's Got Needs
+					qg(2860, qa(27823)),	-- A Dwarf's Got Needs
 					qg(46652, q(27764, { -- A Strange Request
 						i(63159),
 						i(63158),
@@ -118,20 +118,18 @@ _.Zones =
 						i(63184),
 						i(63183),
 					})),
---[[					
 					qg(47011, qh(27891)),	-- Amakkar, Jack of All Trades (secondary QG ID 47021)
 					qg(46757, qh(27887)),	-- Ancient Protectors
 					qg(46760, qa(27793)),	-- Ancient Protectors
 					qg(46853, q(27834)),	-- Baelog, the Glass Cannon (secondary QG ID 46856)
 					qg(46664, qh(27881)),	-- Bloodwatcher Point
---					q(27930),	-- Devastation (QG UNKNOWN, first quest in chain is 27828)
+					q(27930),	-- Devastation (QG UNKNOWN, first quest in chain is 27828)
 					qg(46660, qh( 27927)),	-- Down to the Scar
 					qg(46930, qa( 27927)),	-- Down to the Scar
 					qg(46664, qa(27791)),	-- Dustwind Dig
 					qg(46652, q(27774)),	-- Easily Swayed
 					qg(46852, q(27828)),	-- Eric, the Utility Dwarf (secondary QG ID 46855)
 					qg(46654, q(27765)),	-- First Sample: Wild Eggs
---]]					
 					qg(46758, qh(27878, { -- Forcible Acquisition
 						i(63173),
 						i(63172),
@@ -139,7 +137,7 @@ _.Zones =
 						i(63170),
 						i(63169),
 					})),
---					qg(47013, qh(27893)),	-- Gargal, the Behemoth (secondary QG ID 47022)
+					qg(47013, qh(27893)),	-- Gargal, the Behemoth (secondary QG ID 47022)
 					qg(46972, qa(27833, { -- Half-Ton Holdouts
 						i(63199),
 						i(63198),
@@ -154,22 +152,18 @@ _.Zones =
 						i(63201),
 						i(63200),
 					})),
---[[					
 					qg(46664, q(27826)),	-- Into the Dragon's Mouth
 					qg(46653, q(27776)),	-- It's Goat Time, Baby
---]]					
 					qg(46757, qh(27882, { -- It's Not About History, It's About Power
 						i(63190),
 						i(63189),
 						i(63188),
 						i(63187),
 					})),
---[[					
 					qg(47018, qh(27892)),	-- Jurrix the Striker (secondary QG ID 47024)
 					qg(46654, q(27770)),	-- Lifting the Veil
 					qg(46664, qh(27889)),	-- New Kargath
 					qg(46854, q(27835)),	-- Olaf, the Big Fella' (secondary QG ID 46857)
---]]					
 					o(206374, {	-- Trove of the Watchers
 						qh(27888, { -- Return to Blam
 							i(63179),
@@ -183,7 +177,6 @@ _.Zones =
 							i(157008),	-- Blam-Hatchet
 						}),
 					}),
---[[					
 					qg(46654, q(27769)),	-- Rhea Revealed
 					qg(46654, q(27858)),	-- Rheastrasza's Gift
 					qg(46654, qh(27898)),	-- Rheastrasza's Gift
@@ -193,14 +186,13 @@ _.Zones =
 					qg(46654, qh(27890)),	-- The Bad Dogs
 					qg(2785, q(27713)),	-- The Day that Deathwing Came
 					qg(2920, q(27714)),	-- The Day that Deathwing Came: The Real Story
---]]					
 					qg(4618, q(27715, { -- The Day that Deathwing Came: What Really Happened
 						i(63193),
 						i(63191),
 						i(156961), -- Martek's Stick of Truthiness
 						i(156962), -- Genuine Deathwing Fang
 					})),
---					qg(46664, q(27859)),	-- The Egg Lives On
+					qg(46664, q(27859)),	-- The Egg Lives On
 					qg(2860, qa(27824, { -- The Good Stuff
 						i(63168),
 						i(63167),
@@ -208,16 +200,13 @@ _.Zones =
 						i(63165),
 						i(63164),
 					})),
---[[					
 					qg(46654, qa(27832)),	-- The Hidden Clutch
 					qg(46654, qh(27897)),	-- The Hidden Clutch
 					qg(46759, qh(27877)),	-- The Morons' League
---]]					
 					o(206336, {	-- Marble Slab
 						qa(27709),	-- The Sentinel's Game
 						qh(27886),	-- The Sentinel's Game
 					}),
---[[					
 					qg(46757, qh(27884)),	-- The Sentinel's Pawn
 					qg(46760, qa(27797)),	-- The Sentinel's Pawn
 					qg(46654, qh(27896)),	-- The Sorrow and the Fury
@@ -236,18 +225,15 @@ _.Zones =
 					qg(46855, q(27829)),	-- The Wrath of a Dragonflight (add'l QGs 46856 and 46857)
 					qg(46654, qh(27895)),	-- Their Hunt Continues
 					qg(46654, qa(27830)),	-- Their Hunt Continues
---]]					
 					qg(46654, q(27771, { -- Third Sample: Implanted Eggs
 						i(63163),
 						i(63162),
 						i(63161),
 						i(63160),
 					})),
---[[					
 					qg(46650, q(27763)),	-- To Fuselight Proper
 					qg(46660, qh(28512)),	-- To the Aid of the Thorium Brotherhood
 					qg(46660, qa(46930)),	-- To the Aid of the Thorium Brotherhood
---]]					
 					qg(46664, q(27789, { -- Troggish Troubles
 						i(63182),
 						i(63181),
