@@ -8,40 +8,40 @@ _.Zones =
 			["groups"] = {						
 				n( -3, {	-- Holidays					
 --[[					
-					n(-47, {     -- Lunar Festival
+					n(-47, {    	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 913, -- To Honor One's Elders
+						["achievementID"] = 913,	-- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-50, {     -- Love is in the Air
+					n(-50, {    	-- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1693,    -- Fool For Love
+						["achievementID"] = 1693,   	-- Fool For Love
 						["u"] = 18,
 					}),
-					n(-51, {     -- Noblegarden
+					n(-51, {    	-- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 2798, -- Noble Gardener
+						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-52, {     -- Children's Week
+					n(-52, {    	-- Children's Week
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1793, -- For The Children
+						["achievementID"] = 1793,	-- For The Children
 						["u"] = 20,
 					}),	
 --]]					
-					n(-53, {     -- Midsummer Fire Festival
+					n(-53, {    	-- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qh(28912),	-- Desecrate this Fire!
@@ -51,20 +51,20 @@ _.Zones =
 								qg(25962, qa(11882)),	-- Playing with Fire
 							}),
 						},
-						["achievementID"] = 1038, -- The Flame Warden
+						["achievementID"] = 1038,	-- The Flame Warden
 						["u"] = 21,
 					}),		
 --[[					
-					n(-56, {     -- Brewfest
+					n(-56, {    	-- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1683, -- Brewmaster
+						["achievementID"] = 1683,	-- Brewmaster
 						["u"] = 24,
 					}),
 --]]					
-					n(-58, {     -- Hallow's End
+					n(-58, {    	-- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
 								q(28955),	-- Candy Bucket
@@ -73,24 +73,24 @@ _.Zones =
 								qh(28957),	-- Candy Bucket
 							}),
 						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["achievementID"] = 1656,	-- Hallowed Be Thy Name
 						["u"] = 26,
 					}),	
 --[[
-					n(-60, {     -- Pilgrim's Bounty
+					n(-60, {    	-- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 3478, -- Pilgrim
+						["achievementID"] = 3478,	-- Pilgrim
 						["u"] = 28,
 					}),
-					n(-61, {     -- Feast of Winter Veil
+					n(-61, {    	-- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1691, -- Merrymaker
+						["achievementID"] = 1691,	-- Merrymaker
 						["u"] = 29,
 					}),						
 --]]				
@@ -105,14 +105,121 @@ _.Zones =
 					p(432), 	-- Stripe-Tailed Scorpid
 				}),
 				n(-17, {	-- Quests
-					qg(2860, qa(27823)),	-- A Dwarf's Got Needs
-					qg(46652, q(27764, { -- A Strange Request
-						i(63159),
-						i(63158),
-						i(63157),
-						i(63156),
-					})),
-					qg(46760, qa(27792, { -- All's Fair in Love, War, and Archaeology
+					q( 27764, {	-- A Strange Request
+						["g"] = {
+							i(63159),	-- Parcel Bearer's Breastplate
+							i(63158),	-- Boots of Delivery
+							i(63157),	-- Lethlor Armbands
+							i(63156),	-- Alluring Leggings
+							-- i(63205),	-- Safety Goggles (not transmoggable)
+						},
+						["qg"] = 46652,	-- 
+						["sourceQuests"] = { 27774 },	-- Easily Swayed
+					}),
+					
+					
+					q( 27774, {	-- Easily Swayed
+						["g"] = {
+						},
+						["qg"] = 46652,	-- Dolph Blastus
+						["breadcrumbQuestID"] = { 27763 },	-- To Fuselight Proper
+					}),
+
+					
+					q( 27765, {	-- First Sample: Wild Eggs
+						["g"] = {
+						},
+						["qg"] = 46654,	-- Rhea
+						["sourceQuests"] = { 27764 },	-- A Strange Request
+					}),
+					
+					
+					q( 27776, {	-- It's Goat Time, Baby
+						["g"] = {
+						},
+						["qg"] = 46653,	-- Garyanne Fleezlebop
+						["sourceQuests"] = { 27775 },	-- When the Going Gets Tough, Cheat
+					}),
+					
+					
+					q( 27770, {	-- Lifting the Veil
+						["g"] = {
+						},
+						["qg"] = 46654,	-- Rhea
+						["sourceQuests"] = { 27765, 27766 },	-- First Sample: Wild Eggs & Second Sample: Whelps
+					}),
+					
+					
+					q( 27769, {	-- Rhea Revealed (awarded "Rhea" criteria)
+						["g"] = {
+						},
+						["qg"] = 46654,	-- Rhea
+						["sourceQuests"] = { 27771 },	-- Third Sample: Implanted Eggs
+					}),
+					
+					
+					q( 27766, {	-- Second Sample: Whelps
+						["g"] = {
+						},
+						["qg"] = 46654,	-- Rhea
+						["sourceQuests"] = { 27764 },	-- A Strange Request
+					}),
+					
+					
+					q( 27772, {	-- The Venerable Doctor Blam
+						["g"] = {
+						},
+						["qg"] = 46655,	-- Rheastrasza
+						["sourceQuests"] = { 27769 },	-- Rhea Revealed
+					}),
+					
+					
+					q( 27771, {	-- Third Sample: Implanted Eggs
+						["g"] = {
+							i(63163),	-- Strong Arm Mace
+							i(63162),	-- Coercive Pauldrons
+							i(63161),	-- Vest of Restraint
+							i(63160),	-- Boots of Duress
+						},
+						["qg"] = 46654,	-- Rhea
+						["sourceQuests"] = { 27770 },	-- Lifting the Veil
+					}),
+					
+					
+					q( 27763, {	-- To Fuselight Proper
+						["g"] = {
+						},
+						["qg"] = 46650,	-- Eddie Flofizzle
+						["isBreadcrumb"] = true,	-- for "Easily Swayed"
+						["breadcrumbQuestID"] = { 27762 },	-- Fuselight Ho!
+					}),
+					
+					
+					q( 27775, {	-- When the Going Gets Tough, Cheat
+						["g"] = {
+							i(63154),	-- Fuselight Chainmail
+							i(63153),	-- Goat Hide Boots
+							i(63152),	-- Goat Skin Mask
+							i(63151),	-- Wooly Goat Punchers
+						},
+						["qg"] = 46653,	-- Garyanne Fleezlebop
+					}),
+					
+					
+--[[
+						["g"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuests"] = {  },	-- 
+					}),
+--]]
+					
+					
+					
+					
+					
+					qg( 2860, qa(27823)),	-- A Dwarf's Got Needs
+					qg(46760, qa(27792, {	-- All's Fair in Love, War, and Archaeology
 						i(63186),
 						i(63185),
 						i(63184),
@@ -121,16 +228,14 @@ _.Zones =
 					qg(47011, qh(27891)),	-- Amakkar, Jack of All Trades (secondary QG ID 47021)
 					qg(46757, qh(27887)),	-- Ancient Protectors
 					qg(46760, qa(27793)),	-- Ancient Protectors
-					qg(46853, q(27834)),	-- Baelog, the Glass Cannon (secondary QG ID 46856)
+					qg(46853, q( 27834)),	-- Baelog, the Glass Cannon (secondary QG ID 46856)
 					qg(46664, qh(27881)),	-- Bloodwatcher Point
-					q(27930),	-- Devastation (QG UNKNOWN, first quest in chain is 27828)
-					qg(46660, qh( 27927)),	-- Down to the Scar
-					qg(46930, qa( 27927)),	-- Down to the Scar
+					q( 27930),	-- Devastation (QG UNKNOWN, first quest in chain is 27828)
+					qg(46660, qh(27927)),	-- Down to the Scar
+					qg(46930, qa(27927)),	-- Down to the Scar
 					qg(46664, qa(27791)),	-- Dustwind Dig
-					qg(46652, q(27774)),	-- Easily Swayed
-					qg(46852, q(27828)),	-- Eric, the Utility Dwarf (secondary QG ID 46855)
-					qg(46654, q(27765)),	-- First Sample: Wild Eggs
-					qg(46758, qh(27878, { -- Forcible Acquisition
+					qg(46852, q( 27828)),	-- Eric, the Utility Dwarf (secondary QG ID 46855)
+					qg(46758, qh(27878, {	-- Forcible Acquisition
 						i(63173),
 						i(63172),
 						i(63171),
@@ -138,62 +243,58 @@ _.Zones =
 						i(63169),
 					})),
 					qg(47013, qh(27893)),	-- Gargal, the Behemoth (secondary QG ID 47022)
-					qg(46972, qa(27833, { -- Half-Ton Holdouts
+					qg(46972, qa(27833, {	-- Half-Ton Holdouts
 						i(63199),
 						i(63198),
 						i(63197),
 						i(63196),
 						i(63195),
 					})),
-					qg(1068, qh(27880, { -- Half-Ton Holdouts
+					qg(1068, qh(27880, {	-- Half-Ton Holdouts
 						i(63204),
 						i(63203),
 						i(63202),
 						i(63201),
 						i(63200),
 					})),
-					qg(46664, q(27826)),	-- Into the Dragon's Mouth
-					qg(46653, q(27776)),	-- It's Goat Time, Baby
-					qg(46757, qh(27882, { -- It's Not About History, It's About Power
+					qg(46664, q( 27826)),	-- Into the Dragon's Mouth
+					qg(46757, qh(27882, {	-- It's Not About History, It's About Power
 						i(63190),
 						i(63189),
 						i(63188),
 						i(63187),
 					})),
 					qg(47018, qh(27892)),	-- Jurrix the Striker (secondary QG ID 47024)
-					qg(46654, q(27770)),	-- Lifting the Veil
 					qg(46664, qh(27889)),	-- New Kargath
-					qg(46854, q(27835)),	-- Olaf, the Big Fella' (secondary QG ID 46857)
+					qg(46854, q( 27835)),	-- Olaf, the Big Fella' (secondary QG ID 46857)
 					o(206374, {	-- Trove of the Watchers
-						qh(27888, { -- Return to Blam
+						qh(27888, {	-- Return to Blam
 							i(63179),
 							i(63178),
 							i(63177),
 						}),
-						qa(27794, { -- Return to Blam
-							i(63176),
-							i(63175),
-							i(63174),
+						qa(27794, {	-- Return to Blam
+							i( 63176),
+							i( 63175),
+							i( 63174),
 							i(157008),	-- Blam-Hatchet
 						}),
 					}),
-					qg(46654, q(27769)),	-- Rhea Revealed
-					qg(46654, q(27858)),	-- Rheastrasza's Gift
+					qg(46654, q( 27858)),	-- Rheastrasza's Gift
 					qg(46654, qh(27898)),	-- Rheastrasza's Gift
-					qg(46654, q(27766)),	-- Second Sample: Whelps
 					qg(46930, qa(27825)),	-- Survival of the Fattest
 					qg(46660, qh(27879)),	-- Survival of the Fattest
 					qg(46654, qh(27890)),	-- The Bad Dogs
-					qg(2785, q(27713)),	-- The Day that Deathwing Came
-					qg(2920, q(27714)),	-- The Day that Deathwing Came: The Real Story
-					qg(4618, q(27715, { -- The Day that Deathwing Came: What Really Happened
+					qg( 2785, q( 27713)),	-- The Day that Deathwing Came
+					qg( 2920, q( 27714)),	-- The Day that Deathwing Came: The Real Story
+					qg( 4618, q( 27715, {	-- The Day that Deathwing Came: What Really Happened
 						i(63193),
 						i(63191),
-						i(156961), -- Martek's Stick of Truthiness
-						i(156962), -- Genuine Deathwing Fang
+						i(156961),	-- Martek's Stick of Truthiness
+						i(156962),	-- Genuine Deathwing Fang
 					})),
-					qg(46664, q(27859)),	-- The Egg Lives On
-					qg(2860, qa(27824, { -- The Good Stuff
+					qg(46664, q( 27859)),	-- The Egg Lives On
+					qg( 2860, qa(27824, {	-- The Good Stuff
 						i(63168),
 						i(63167),
 						i(63166),
@@ -211,10 +312,9 @@ _.Zones =
 					qg(46760, qa(27797)),	-- The Sentinel's Pawn
 					qg(46654, qh(27896)),	-- The Sorrow and the Fury
 					qg(46654, qa(27831)),	-- The Sorrow and the Fury
-					qg(46654, q(27827)),	-- The Swift, the Fierce, and the Stout
+					qg(46654, q( 27827)),	-- The Swift, the Fierce, and the Stout
 					qa(27912),	-- The Titans' Trove (AUTO OFFERED?)
 					qh(27913),	-- The Titans' Trove (AUTO OFFERED?)
-					qg(46655, q(27772)),	-- The Venerable Doctor Blam					
 					o(206335, {	-- Stone Slab
 						qh(27885),	-- The Warden's Game
 						qa(27693),	-- The Warden's Game
@@ -222,28 +322,15 @@ _.Zones =
 					qg(46760, qa(27796)),	-- The Warden's Pawn
 					qg(46757, qh(27883)),	-- The Warden's Pawn
 					qg(47021, qh(27894)),	-- The Wrath of a Dragonflight (add'l QGs 47022 and 47024)
-					qg(46855, q(27829)),	-- The Wrath of a Dragonflight (add'l QGs 46856 and 46857)
+					qg(46855, q( 27829)),	-- The Wrath of a Dragonflight (add'l QGs 46856 and 46857)
 					qg(46654, qh(27895)),	-- Their Hunt Continues
 					qg(46654, qa(27830)),	-- Their Hunt Continues
-					qg(46654, q(27771, { -- Third Sample: Implanted Eggs
-						i(63163),
-						i(63162),
-						i(63161),
-						i(63160),
-					})),
-					qg(46650, q(27763)),	-- To Fuselight Proper
 					qg(46660, qh(28512)),	-- To the Aid of the Thorium Brotherhood
 					qg(46660, qa(46930)),	-- To the Aid of the Thorium Brotherhood
-					qg(46664, q(27789, { -- Troggish Troubles
+					qg(46664, q( 27789, {	-- Troggish Troubles
 						i(63182),
 						i(63181),
 						i(63180),
-					})),
-					qg(46653, q(27775, { -- When the Going Gets Tough, Cheat
-						i(63154),
-						i(63153),
-						i(63152),
-						i(63151),
 					})),
 				}),
 				n(-16, {	-- Rares

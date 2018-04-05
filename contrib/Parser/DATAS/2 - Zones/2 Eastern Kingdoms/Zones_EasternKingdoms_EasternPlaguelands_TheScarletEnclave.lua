@@ -214,7 +214,7 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 48704,	-- Gek Nozzlerocket
-						["isBreadcrumb"] = true,	-- 
+						["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
 					}),
 					qg(16134, q(27456, { -- Gathering Some Grub(s)
 						i(62981),
