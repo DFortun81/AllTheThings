@@ -380,12 +380,10 @@ _.Instances =
 									dr(0.2, i(18337)),	-- Orphic Bracers
 								}),
 							}),
-							cr(11488, e(407, {	-- Illyanna Ravenoak
-								i(18347),			-- Well Balanced Axe
-								i(18383),			-- Force Imbued Gauntlets
-								i(18377),			-- Quickdraw Gloves (7.3.5 - Moved from Immol'thar)
-								i(18349),			-- Gauntlets of Accuracy
-								i(18386),			-- Padre's Trousers
+							cr(11487, e(408, {	-- Magister Kalendris
+								i(18374),				-- Flamescarred Shoulders
+								i(18350),				-- Amplifying Cloak
+								i(18351),				-- Magically Sealed Bracers
 							})),
 							n(11467, {			-- Tsu'zee
 								["groups"] = {
@@ -394,10 +392,12 @@ _.Instances =
 								},
 								["description"] = "This is a rare that is not always present.",
 							}),
-							cr(11487, e(408, {	-- Magister Kalendris
-								i(18374),				-- Flamescarred Shoulders
-								i(18350),				-- Amplifying Cloak
-								i(18351),				-- Magically Sealed Bracers
+							cr(11488, e(407, {	-- Illyanna Ravenoak
+								i(18347),			-- Well Balanced Axe
+								i(18383),			-- Force Imbued Gauntlets
+								i(18377),			-- Quickdraw Gloves (7.3.5 - Moved from Immol'thar)
+								i(18349),			-- Gauntlets of Accuracy
+								i(18386),			-- Padre's Trousers
 							})),
 							cr(11489, e(406, {	-- Tendris Warpwood
 								i(18353),			-- Stoneflower Staff
