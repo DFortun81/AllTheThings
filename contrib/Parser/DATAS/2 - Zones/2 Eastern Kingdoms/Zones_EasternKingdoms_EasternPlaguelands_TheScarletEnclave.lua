@@ -210,7 +210,12 @@ _.Zones =
 						i(62973),
 						i(62972),
 					})),
---					qg(48704, q(27762)),	-- Fuselight, Ho!
+					q( 27762, {	-- Fuselight, Ho!
+						["g"] = {
+						},
+						["qg"] = 48704,	-- Gek Nozzlerocket
+						["isBreadcrumb"] = true,	-- 
+					}),
 					qg(16134, q(27456, { -- Gathering Some Grub(s)
 						i(62981),
 						i(62980),
