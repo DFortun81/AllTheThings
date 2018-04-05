@@ -2521,18 +2521,6 @@ _.Zones =
 						a(i(47750)),	-- Khadgar's Leggings of Conquest
 						a(i(47748)),	-- Khadgar's Hood of Conquest
 					}),
-					n(108825, {	-- Conjurer Margoss
-						["groups"] = {
-							i(138777, { -- Drowned Mana
-								i(138811),	-- Brinedeep Bottom Feeder Mount
-								i(142532),	-- Crate of Bobbers: Murloc Head Toy
-								i(142531),	-- Crate of Bobbers: Squeaky Duck Toy
-								i(138810),	-- Sting Ray Pup
-								i(143842),	-- Trashy
-							}),
-						},
-						["requiredSkill"] = 356,
-					}),
 					n(107326, { -- Draemus <Exotic Pet Supplier>
 						i(116415, { -- Pet Charms
 							i(136910), -- Alarm-o-Bot Pet
@@ -5550,6 +5538,202 @@ _.Zones =
 						}),
 						i(141862),	-- Mote of Light Toy
 						i(141713),	-- Arcadian War Turtle Mount
+					}),
+				}),
+				n(-38, { -- Profession
+					prof(356, 7620, { -- Fishing
+						faction(1975, {	-- Conjurer Margoss
+							["groups"] = {
+								q(42911),	-- Drowned Mana (Quest)
+								i(138777, { -- Drowned Mana
+									i(138811),	-- Brinedeep Bottom Feeder Mount
+									i(142532),	-- Crate of Bobbers: Murloc Head Toy
+									i(142531),	-- Crate of Bobbers: Squeaky Duck Toy
+									i(138810),	-- Sting Ray Pup
+									i(143842),	-- Trashy
+								}),
+							},
+							["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+							["requiredSkill"] = 356,
+							["creatureID"] = 108825
+						}),
+						n(95844, {	-- Marcia Chase <Fishing Trainer & Supplies>
+							ach(10722, { 	-- The Wish Remover
+								["groups"] = {
+									{
+										["criteriaID"] = 1,		-- Stellagosa's Silver Coin (Criteria)
+										["itemID"] = 138894,	-- Stellagosa's Silver Coin (Item)
+									},
+									{
+										["criteriaID"] = 2,
+									},
+									{
+										["criteriaID"] = 3,
+									},
+									{
+										["criteriaID"] = 4,
+									},
+									{
+										["criteriaID"] = 5,
+									},
+									{
+										["criteriaID"] = 6,
+									},
+									{
+										["criteriaID"] = 7,
+									},
+									{
+										["criteriaID"] = 8,
+									},
+									{
+										["criteriaID"] = 9,
+									},
+									{
+										["criteriaID"] = 10,
+									},
+									{
+										["criteriaID"] = 11,
+									},
+									{
+										["criteriaID"] = 12,
+									},
+									{
+										["criteriaID"] = 13,
+									},
+									{
+										["criteriaID"] = 14,
+									},
+									{
+										["criteriaID"] = 15,
+									},
+									{
+										["criteriaID"] = 16,
+									},
+									{
+										["criteriaID"] = 17,
+									},
+									{
+										["criteriaID"] = 18,
+									},
+									{
+										["criteriaID"] = 19,
+									},
+									{
+										["criteriaID"] = 20,
+									},
+									{
+										["criteriaID"] = 21,
+									},
+									{
+										["criteriaID"] = 22,
+									},
+									{
+										["criteriaID"] = 23,
+									},
+									{
+										["criteriaID"] = 24,
+									},
+									{
+										["criteriaID"] = 25,
+									},
+									{
+										["criteriaID"] = 26,
+									},
+									{
+										["criteriaID"] = 27,
+									},
+									{
+										["criteriaID"] = 28,
+									},
+									{
+										["criteriaID"] = 29,
+									},
+									{
+										["criteriaID"] = 30,
+									},
+									{
+										["criteriaID"] = 31,
+									},
+									{
+										["criteriaID"] = 32,
+									},
+									{
+										["criteriaID"] = 33,
+									},
+									{
+										["criteriaID"] = 34,
+									},
+									{
+										["criteriaID"] = 35,
+									},
+									{
+										["criteriaID"] = 36,
+									},
+									{
+										["criteriaID"] = 37,
+									},
+									{
+										["criteriaID"] = 38,
+									},
+									{
+										["criteriaID"] = 39,
+									},
+									{
+										["criteriaID"] = 40,
+									},
+									{
+										["criteriaID"] = 41,
+									},
+									{
+										["criteriaID"] = 42,
+									},
+									{
+										["criteriaID"] = 43,
+									},
+									{
+										["criteriaID"] = 44,
+									},
+									{
+										["criteriaID"] = 45,
+									},
+									{
+										["criteriaID"] = 46,
+									},
+									{
+										["criteriaID"] = 47,
+									},
+									{
+										["criteriaID"] = 48,
+									},
+									{
+										["criteriaID"] = 49,
+									},
+									{
+										["criteriaID"] = 50,
+									},
+									{
+										["criteriaID"] = 51,
+									},
+									{
+										["criteriaID"] = 52,
+									},
+									{
+										["criteriaID"] = 53,
+									},
+									{
+										["criteriaID"] = 54,
+									},
+									{
+										["criteriaID"] = 55,
+									},
+									{
+										["criteriaID"] = 56,
+									},
+								},
+								["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
+								["requiredSkill"] = 356,
+							}),
+						}),
 					}),
 				}),
 				n(-213, {	-- The Underbelly
