@@ -105,6 +105,21 @@ _.Zones =
 					p(432), 	-- Stripe-Tailed Scorpid
 				}),
 				n(-17, {	-- Quests
+					qh(27891, {	-- Amakkar, Jack of All Trades
+						["g"] = {
+						},
+						["qgs"] = { 47011, 47021 },	-- Amakkar (same QG, different IDs)
+						["sourceQuests"] = { 27890 },	-- The Bad Dogs
+					}),
+
+					
+					qh(27887, {	-- Ancient Protectors
+						["g"] = {
+						},
+						["sourceQuests"] = { 27885 },	-- The Warden's Game
+					}),
+
+					
 					q( 27764, {	-- A Strange Request
 						["g"] = {
 							i(63159),	-- Parcel Bearer's Breastplate
@@ -115,6 +130,29 @@ _.Zones =
 						},
 						["qg"] = 46652,	-- 
 						["sourceQuests"] = { 27774 },	-- Easily Swayed
+					}),
+					
+					
+					qh(27881, {	-- Bloodwatcher Point
+						["g"] = {
+						},
+						["qg"] = 46664,	-- Dr. Hieronymus Blam
+						["sourceQuests"] = { 27789 },	-- Troggish Troubles
+					}),
+					
+					
+					q( 27930, {	-- Devastation
+						["g"] = {
+						},
+						["sourceQuests"] = { 27898 },	-- Rheastrasza's Gift
+					}),
+					
+					
+					q( 27927, {	-- Down to the Scar
+						["g"] = {
+						},
+						["qg"] = 46660,	-- Aidan Summerwind
+						["isBreadcrumb"] = true,	-- for "The Day that Deathwing Came"
 					}),
 					
 					
@@ -134,11 +172,63 @@ _.Zones =
 					}),
 					
 					
+					qh(27878, {	-- Forcible Acquisition
+						["g"] = {
+							i(63173),	-- Ironhew Cloak
+							i(63172),	-- Angor Pauldrons
+							i(63171),	-- Dustwind Vest
+							i(63170),	-- Dust Bowl Shield
+							i(63169),	-- Sunglow Cowl
+						},
+						["qg"] = 46758,	-- Aoren Sunglow
+					}),
+					
+					
+					qh(27893, {	-- Gargal, the Behemoth
+						["g"] = {
+						},
+						["qgs"] = { 47013, 47022 },	-- Gargal (same QG, different IDs)
+						["sourceQuests"] = { 27890 },	-- The Bad Dogs
+					}),
+					
+					
+					qh(27880, {	-- Half-Ton Holdouts
+						["g"] = {
+							i(63204),	-- Bow of Kargath
+							i(63203),	-- Half-Ton Pauldrons
+							i(63202),	-- Dustbelcher Boots
+							i(63201),	-- Holdout Gloves
+							i(63200),	-- Gorn's Discarded Cloak
+						},
+						["qg"] = 1068,	-- Gorn
+					}),
+					
+					
 					q( 27776, {	-- It's Goat Time, Baby
 						["g"] = {
 						},
 						["qg"] = 46653,	-- Garyanne Fleezlebop
 						["sourceQuests"] = { 27775 },	-- When the Going Gets Tough, Cheat
+					}),
+					
+					
+					qh(27882, {	-- It's Not About History, It's About Power
+						["g"] = {
+							i(63190),	-- Upstart's Breastplate
+							i(63189),	-- Counterfeit Chainmail
+							i(63188),	-- Excavation Bracers
+							i(63187),	-- Hooligan's Pantaloons
+						},
+						["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
+						["sourceQuests"] = { 27881 },	-- Bloodwatcher Point
+					}),
+					
+					
+					qh(27892, {	-- Jurrix the Striker (secondary QG ID 47024)
+						["g"] = {
+						},
+						["qgs"] = { 47018, 47024 },	-- Jurrix Whitemane
+						["sourceQuests"] = { 27890 },	-- The Bad Dogs
 					}),
 					
 					
@@ -150,11 +240,45 @@ _.Zones =
 					}),
 					
 					
+					qh(27889, {	-- New Kargath
+						["g"] = {
+						},
+						["qg"] = 46664,	-- Dr. Hieronymus Blam
+						["sourceQuests"] = { 27888 },	-- Return to Blam
+					}),
+					
+					
+					o(206374, {	-- Trove of the Watchers
+						qa(27794, {	-- Return to Blam
+							i( 63176),
+							i( 63175),
+							i( 63174),
+							i(157008),	-- Blam-Hatchet
+						}),
+						qh(27888, {	-- Return to Blam (awarded "The Titans' Knowledge" criteria)
+							["g"] = {
+								i(63179),	-- Well Cushioned Boots
+								i(63178),	-- Hieronymus' Belt
+								i(63177),	-- Watcher's Spear
+							},
+							["sourceQuests"] = { 27913 },	-- The Titans' Trove
+						}),
+					}),
+					
+					
 					q( 27769, {	-- Rhea Revealed (awarded "Rhea" criteria)
 						["g"] = {
 						},
 						["qg"] = 46654,	-- Rhea
 						["sourceQuests"] = { 27771 },	-- Third Sample: Implanted Eggs
+					}),
+					
+					
+					qh(27898, {	-- Rheastrasza's Gift
+						["g"] = {
+						},
+						["qg"] = 46654,	-- Rhea
+						["sourceQuests"] = { 27897 },	-- The Hidden Clutch
 					}),
 					
 					
@@ -166,11 +290,141 @@ _.Zones =
 					}),
 					
 					
+					qh(27879, {	-- Survival of the Fattest
+						["g"] = {
+						},
+						["qg"] = 46660,	-- Aidan Summerwind
+					}),
+					
+					
+					qh(27890, {	-- The Bad Dogs
+						["g"] = {
+						},
+						["qg"] = 46654,	-- Rhea
+						["sourceQuests"] = { 27889 },	-- New Kargath
+					}),
+					
+					
+					q( 27713, {	-- The Day that Deathwing Came
+						["g"] = {
+						},
+						["qg"] = 2785,	-- Theldurin the Lost
+						["breadcrumbQuestID"] = { 27927 },	-- Down to the Scar
+					}),
+					
+					
+					q( 27714, {	-- The Day that Deathwing Came: The Real Story
+						["g"] = {
+						},
+						["qg"] = 2920,	-- Lucien Tosselwrench
+						["sourceQuests"] = { 27713 },	-- The Day that Deathwing Came
+					}),
+					
+					
+					q( 27715, {	-- The Day that Deathwing Came: What Really Happened (awarded "The Day that Deathwing Came" criteria + overall "Badlands Quests" achievement)
+						["g"] = {
+							i( 63193),	-- Theldurin's Fist
+							i( 63191),	-- Martek's Knife
+							i(156961),	-- Martek's Stick of Truthiness
+							i(156962),	-- Genuine Deathwing Fang
+						},
+						["qg"] = 4618,	-- Martek the Exiled
+						["sourceQuests"] = { 27714 },	-- The Day that Deathwing Came: The Real Story
+					}),
+					
+					
+					q( 27859, {	-- The Egg Lives On (awarded "The Fate of a Dragonflight" criteria)
+						["g"] = {
+						},
+						["qg"] = 46664,	-- Dr. Hieronymus Blam
+						["sourceQuests"] = { 27930 },	-- Devastation
+					}),
+					
+					
+					qh(27897, {	-- The Hidden Clutch
+						["g"] = {
+						},
+						["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
+					}),
+					
+					
+					qh(27895, {	-- Their Hunt Continues
+						["g"] = {
+						},
+						["sourceQuests"] = { 27894 },	-- The Wrath of a Dragonflight
+					}),
+					
+					
+					qh(27877, {	-- The Morons' League
+						["g"] = {
+						},
+						["qg"] = 46759,	-- Lidia Sunglow
+					}),
+					
+					
+					o(206336, {	-- Marble Slab
+						qa(27709),	-- The Sentinel's Game
+						qh(27886, {	-- The Sentinel's Game
+							["g"] = {
+							},
+							["sourceQuests"] = { 27884 },	-- The Sentinel's Pawn
+						}),
+					}),
+					
+					
+					qh(27884, {	-- The Sentinel's Pawn
+						["g"] = {
+						},
+						["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
+						["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
+					}),
+					
+					
+					qh(27896, {	-- The Sorrow and the Fury
+						["g"] = {
+						},
+						["sourceQuests"] = { 27895 },	-- Their Hunt Continues
+					}),
+					
+					
+					qh(27913, {	-- The Titans' Trove
+						["g"] = {
+						},
+						["sourceQuests"] = { 27887 },	-- Ancient Protectors
+					}),
+					
+					
 					q( 27772, {	-- The Venerable Doctor Blam
 						["g"] = {
 						},
 						["qg"] = 46655,	-- Rheastrasza
 						["sourceQuests"] = { 27769 },	-- Rhea Revealed
+					}),
+					
+					
+					o(206335, {	-- Stone Slab
+						qa(27693),	-- The Warden's Game
+						qh(27885, {	-- The Warden's Game
+							["g"] = {
+							},
+							["sourceQuests"] = { 27883 },	-- The Warden's Pawn
+						}),
+					}),
+					
+					
+					qh(27883, {	-- The Warden's Pawn
+						["g"] = {
+						},
+						["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
+						["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
+					}),
+					
+					
+					qh(27894, {	-- The Wrath of a Dragonflight
+						["g"] = {
+						},
+						["qgs"] = { 47021, 47022, 47024 },	-- Amakkar, Gargal, & Jurrix Whitemane
+						["sourceQuests"] = {  },	-- 
 					}),
 					
 					
@@ -192,6 +446,25 @@ _.Zones =
 						["qg"] = 46650,	-- Eddie Flofizzle
 						["isBreadcrumb"] = true,	-- for "Easily Swayed"
 						["breadcrumbQuestID"] = { 27762 },	-- Fuselight Ho!
+					}),
+					
+					
+					q( 28512, {	-- To the Aid of the Thorium Brotherhood
+						["g"] = {
+						},
+						["qgs"] = { 46930, 46660 },	-- Victoria Dolen (A) & Aidan Summerwind (H)
+						["isBreadcrumb"] = true,
+					}),
+					
+					
+					q( 27789, {	-- Troggish Troubles
+						["g"] = {
+							i(63182),	-- Anti-Trogg Shield
+							i(63181),	-- Shrug of Disappointment
+							i(63180),	-- Blam Blam Gun
+						},
+						["qg"] = 46664,	-- Dr. Hieronymus Blam
+						["sourceQuests"] = { 27772 },	-- The Venerable Doctor Blam
 					}),
 					
 					
@@ -225,24 +498,10 @@ _.Zones =
 						i(63184),
 						i(63183),
 					})),
-					qg(47011, qh(27891)),	-- Amakkar, Jack of All Trades (secondary QG ID 47021)
-					qg(46757, qh(27887)),	-- Ancient Protectors
 					qg(46760, qa(27793)),	-- Ancient Protectors
-					qg(46853, q( 27834)),	-- Baelog, the Glass Cannon (secondary QG ID 46856)
-					qg(46664, qh(27881)),	-- Bloodwatcher Point
-					q( 27930),	-- Devastation (QG UNKNOWN, first quest in chain is 27828)
-					qg(46660, qh(27927)),	-- Down to the Scar
-					qg(46930, qa(27927)),	-- Down to the Scar
+					qg(46853, qa(27834)),	-- Baelog, the Glass Cannon (secondary QG ID 46856)
 					qg(46664, qa(27791)),	-- Dustwind Dig
-					qg(46852, q( 27828)),	-- Eric, the Utility Dwarf (secondary QG ID 46855)
-					qg(46758, qh(27878, {	-- Forcible Acquisition
-						i(63173),
-						i(63172),
-						i(63171),
-						i(63170),
-						i(63169),
-					})),
-					qg(47013, qh(27893)),	-- Gargal, the Behemoth (secondary QG ID 47022)
+					qg(46852, qa(27828)),	-- Eric, the Utility Dwarf (secondary QG ID 46855)
 					qg(46972, qa(27833, {	-- Half-Ton Holdouts
 						i(63199),
 						i(63198),
@@ -250,50 +509,10 @@ _.Zones =
 						i(63196),
 						i(63195),
 					})),
-					qg(1068, qh(27880, {	-- Half-Ton Holdouts
-						i(63204),
-						i(63203),
-						i(63202),
-						i(63201),
-						i(63200),
-					})),
-					qg(46664, q( 27826)),	-- Into the Dragon's Mouth
-					qg(46757, qh(27882, {	-- It's Not About History, It's About Power
-						i(63190),
-						i(63189),
-						i(63188),
-						i(63187),
-					})),
-					qg(47018, qh(27892)),	-- Jurrix the Striker (secondary QG ID 47024)
-					qg(46664, qh(27889)),	-- New Kargath
-					qg(46854, q( 27835)),	-- Olaf, the Big Fella' (secondary QG ID 46857)
-					o(206374, {	-- Trove of the Watchers
-						qh(27888, {	-- Return to Blam
-							i(63179),
-							i(63178),
-							i(63177),
-						}),
-						qa(27794, {	-- Return to Blam
-							i( 63176),
-							i( 63175),
-							i( 63174),
-							i(157008),	-- Blam-Hatchet
-						}),
-					}),
-					qg(46654, q( 27858)),	-- Rheastrasza's Gift
-					qg(46654, qh(27898)),	-- Rheastrasza's Gift
+					qg(46664, qa(27826)),	-- Into the Dragon's Mouth
+					qg(46854, qa(27835)),	-- Olaf, the Big Fella' (secondary QG ID 46857)
+					qg(46654, qa(27858)),	-- Rheastrasza's Gift
 					qg(46930, qa(27825)),	-- Survival of the Fattest
-					qg(46660, qh(27879)),	-- Survival of the Fattest
-					qg(46654, qh(27890)),	-- The Bad Dogs
-					qg( 2785, q( 27713)),	-- The Day that Deathwing Came
-					qg( 2920, q( 27714)),	-- The Day that Deathwing Came: The Real Story
-					qg( 4618, q( 27715, {	-- The Day that Deathwing Came: What Really Happened
-						i(63193),
-						i(63191),
-						i(156961),	-- Martek's Stick of Truthiness
-						i(156962),	-- Genuine Deathwing Fang
-					})),
-					qg(46664, q( 27859)),	-- The Egg Lives On
 					qg( 2860, qa(27824, {	-- The Good Stuff
 						i(63168),
 						i(63167),
@@ -302,36 +521,13 @@ _.Zones =
 						i(63164),
 					})),
 					qg(46654, qa(27832)),	-- The Hidden Clutch
-					qg(46654, qh(27897)),	-- The Hidden Clutch
-					qg(46759, qh(27877)),	-- The Morons' League
-					o(206336, {	-- Marble Slab
-						qa(27709),	-- The Sentinel's Game
-						qh(27886),	-- The Sentinel's Game
-					}),
-					qg(46757, qh(27884)),	-- The Sentinel's Pawn
 					qg(46760, qa(27797)),	-- The Sentinel's Pawn
-					qg(46654, qh(27896)),	-- The Sorrow and the Fury
 					qg(46654, qa(27831)),	-- The Sorrow and the Fury
-					qg(46654, q( 27827)),	-- The Swift, the Fierce, and the Stout
+					qg(46654, qa(27827)),	-- The Swift, the Fierce, and the Stout
 					qa(27912),	-- The Titans' Trove (AUTO OFFERED?)
-					qh(27913),	-- The Titans' Trove (AUTO OFFERED?)
-					o(206335, {	-- Stone Slab
-						qh(27885),	-- The Warden's Game
-						qa(27693),	-- The Warden's Game
-					}),
 					qg(46760, qa(27796)),	-- The Warden's Pawn
-					qg(46757, qh(27883)),	-- The Warden's Pawn
-					qg(47021, qh(27894)),	-- The Wrath of a Dragonflight (add'l QGs 47022 and 47024)
-					qg(46855, q( 27829)),	-- The Wrath of a Dragonflight (add'l QGs 46856 and 46857)
-					qg(46654, qh(27895)),	-- Their Hunt Continues
+					qg(46855, qa(27829)),	-- The Wrath of a Dragonflight (add'l QGs 46856 and 46857)
 					qg(46654, qa(27830)),	-- Their Hunt Continues
-					qg(46660, qh(28512)),	-- To the Aid of the Thorium Brotherhood
-					qg(46660, qa(46930)),	-- To the Aid of the Thorium Brotherhood
-					qg(46664, q( 27789, {	-- Troggish Troubles
-						i(63182),
-						i(63181),
-						i(63180),
-					})),
 				}),
 				n(-16, {	-- Rares
 					n(14224, { 	-- 7:XT
