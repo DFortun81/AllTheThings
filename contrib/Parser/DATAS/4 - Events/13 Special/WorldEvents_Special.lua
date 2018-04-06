@@ -108,7 +108,7 @@ _.WorldEvents =
 					})),
 					i(156682, {	-- Otherworldy Satchel of Helpful Goods
 						i(51969),	-- Enumerated Shoulders*
-						i(51972),	-- Enumerated Bracers
+						i(51972),	-- Enumerated Bracers*
 						i(51970),	-- Enumerated Gloves*
 						i(51967),	-- Enumerated Sandals*
 						i(51961),	-- Vigorous Shoulderguards
@@ -120,14 +120,12 @@ _.WorldEvents =
 						i(51983),	-- Stalwart Shoulderguards
 						i(51989),	-- Stalwart Bands
 						i(51987),	-- Stalwart Grips
-						i(51993),	-- Turbulent Cloak*
 						i(51995),	-- Turbulent Necklace*
+						i(51993),	-- Turbulent Cloak*
+						i(51991),	-- Turbulent Signet*
 					}),
 					i(156688, {	-- Icy Satchel of Helpful Goods
-						i(113685),	-- Coldblood Longcloak
-						i(113683),	-- Coldwrap Cloak
-						i(113684),	-- Icecrust Cloak
-						i(112348),	-- Snow-Coated Cloth Cap
+						i(112348),	-- Snow-Coated Cloth Cap*
 						i(113758),	-- Snow-Coated Cloth Gloves
 						i(112367),	-- Snow-Coated Cloth Belt
 						i(112355),	-- Snow-Coated Cloth Leggings
@@ -155,6 +153,9 @@ _.WorldEvents =
 						i(112362),	-- Ice-Encrusted Plate Girdle
 						i(112356),	-- Ice-Encrusted Plate Leggings
 						i(112354),	-- Ice-Encrusted Plate Legguards
+						i(113685),	-- Coldblood Longcloak
+						i(113683),	-- Coldwrap Cloak
+						i(113684),	-- Icecrust Cloak*
 					}),
 					un(2, i(52004, {	-- Satchel of Helpful Goods 60-64
 						["groups"] = {
