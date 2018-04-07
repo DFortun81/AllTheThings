@@ -742,10 +742,176 @@ _.Zones =
 						n(121589, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings
 							["groups"] = {
 								i(153211, { -- Relinquished Hood
+									--[[
 									i(152770), -- Azurelight Sage's Cap
 									i(152759), -- Arinor Keeper's Headgear
 									i(152765), -- Oronaar Disciple's Coif
 									i(152747), -- Praetorium Guard's Helmet
+									--]]
+									i(134270),	-- Arcane Defender's Helm
+									i(134348),	-- Arcane Singed Aurora
+									i(140870),	-- Architect's Coif of Despair
+									i(152759),	-- Arinor Keeper's Headgear
+									i(147063),	-- Armet of the Rotten Mind
+									i(152770),	-- Azurelight Sage's Cap
+									i(134196),	-- Biornskin Hood
+									i(134167),	-- Bitestone Cowl
+									i(134216),	-- Bonespeaker Cowl
+									i(139081),	-- Bramblemail Helm
+									i(134240),	-- Brinewashed Leather Cowl
+									i(134512),	-- Casque of the Deep
+									i(142134),	-- Castellan's Blinders
+									i(141455),	-- Cave Skulker's Helm
+									i(137516),	-- Collar of Blindsight
+									i(134424),	-- Collar of Enclosure
+									i(134473),	-- Collar of Fiery Allegiance
+									i(136777),	-- Collar of Honorable Exultation
+									i(134426),	-- Collar of Raking Claws
+									i(134226),	-- Coralplate Helmet
+									i(137427),	-- Corpse Feast Headwrap
+									i(139205),	-- Cowl of Fright
+									i(147731),	-- Cowl of Plumbed Depths
+									i(137479),	-- Cowl of Promising News
+									i(137341),	-- Cragshaper's Fitted Hood
+									i(137526),	-- Crown of Ash
+									i(147050),	-- Crown of Discarded Hope
+									i(133629),	-- Crown of Fallen Kings
+									i(139231),	-- Crown of Steely Brambles
+									i(151333),	-- Crown of the Dark Envoy
+									i(150980),	-- Doomsinger Crown
+									i(121296),	-- Dreadhide Hood
+									i(146781),	-- Ered'ruin Coif
+									i(140881),	-- Eventide Casque
+									i(147172),	-- Fanged Slayer's Helm
+									i(134372),	-- Felbat Leather Headguard
+									i(147242),	-- Fel-Treated Hood
+									i(149585),	-- Fierce Combatant's Chain Helm
+									i(149584),	-- Fierce Combatant's Chain Helm
+									i(149567),	-- Fierce Combatant's Dragonhide Helm
+									i(149568),	-- Fierce Combatant's Dragonhide Helm
+									i(149535),	-- Fierce Combatant's Dreadplate Helm
+									i(149536),	-- Fierce Combatant's Dreadplate Helm
+									i(149551),	-- Fierce Combatant's Felskin Helm
+									i(149552),	-- Fierce Combatant's Felskin Helm
+									i(149725),	-- Fierce Combatant's Felweave Cowl
+									i(149724),	-- Fierce Combatant's Felweave Cowl
+									i(149615),	-- Fierce Combatant's Ironskin Helm
+									i(149614),	-- Fierce Combatant's Ironskin Helm
+									i(149676),	-- Fierce Combatant's Leather Helm
+									i(149677),	-- Fierce Combatant's Leather Helm
+									i(149742),	-- Fierce Combatant's Plate Helm
+									i(149743),	-- Fierce Combatant's Plate Helm
+									i(149693),	-- Fierce Combatant's Ringmail Helm
+									i(149692),	-- Fierce Combatant's Ringmail Helm
+									i(149653),	-- Fierce Combatant's Satin Hood
+									i(149652),	-- Fierce Combatant's Satin Hood
+									i(149638),	-- Fierce Combatant's Scaled Helm
+									i(149639),	-- Fierce Combatant's Scaled Helm
+									i(149599),	-- Fierce Combatant's Silk Cowl
+									i(149598),	-- Fierce Combatant's Silk Cowl
+									i(147987),	-- Fierce Gladiator's Chain Helm
+									i(147988),	-- Fierce Gladiator's Chain Helm
+									i(147972),	-- Fierce Gladiator's Dragonhide Helm
+									i(147971),	-- Fierce Gladiator's Dragonhide Helm
+									i(148079),	-- Fierce Gladiator's Leather Helm
+									i(148080),	-- Fierce Gladiator's Leather Helm
+									i(148145),	-- Fierce Gladiator's Plate Helm
+									i(148095),	-- Fierce Gladiator's Ringmail Helm
+									i(148040),	-- Fierce Gladiator's Scaled Helm
+									i(147243),	-- Galvanized Stormscale Helm
+									i(150957),	-- Garothi Helmet
+									i(137415),	-- Gaze of Fleeting Hours
+									i(139281),	-- Glory Seeker's Helm
+									i(137410),	-- Greathelm of Barbed Chelicerae
+									i(139214),	-- Greyed Dragonscale Coif
+									i(139096),	-- Greystone Helm
+									i(144503),	-- Helm of Domatrax
+									i(134471),	-- Helm of Endless Dunes
+									i(142126),	-- Helm of Phantasmal Scars
+									i(151324),	-- Helm of Shadowy Descent
+									i(141418),	-- Helm of the Mountain Recluse
+									i(134513),	-- Helmet of Reverent Loyalty
+									i(138356),	-- Helmet of the Highlord
+									i(134425),	-- Hood of Ancient Evil
+									i(138312),	-- Hood of Everburning Knowledge
+									i(140903),	-- Hood of Fading Opportunity
+									i(137502),	-- Hood of Indignation
+									i(141414),	-- Hood of Scorned Brood
+									i(137511),	-- Hood of the Blind Executioner
+									i(142150),	-- Hood of Uncanny Perspectives
+									i(144494),	-- Imposing Dreadsoul Headgear
+									i(137445),	-- Insurmountable Skullfortress
+									i(136757),	-- Isle Watcher's Helm
+									i(133618),	-- Kraken Hide Helm
+									i(134299),	-- Ley Dragoon's Headgear
+									i(134314),	-- Ley-Scarred Helm
+									i(147241),	-- Ley-Touched Hood
+									i(146863),	-- Lunarblight Headgear
+									i(147033),	-- Lunar-Wrath Headgear
+									i(141453),	-- Magic-Warped Hood
+									i(141449),	-- Mana Scavenger's Mask
+									i(134343),	-- Manaburst Helm
+									i(141459),	-- Manacrystal-Adorned Helmet
+									i(134328),	-- Mana-Saber Hide Hood
+									i(134304),	-- Manawracker Crown
+									i(134387),	-- Mardum Chain Helm
+									i(139204),	-- Mask of Multitudinous Eyes
+									i(137441),	-- Millificent's Turboview Specs
+									i(137443),	-- Mithril Melon Vault
+									i(146852),	-- Moonshatter Helmet
+									i(134470),	-- Mountain Throne Coif
+									i(150975),	-- Nath'raxxan Coif
+									i(146772),	-- Netherfiend Headgear
+									i(134392),	-- Netherwhisper Hood
+									i(139086),	-- Night Dreamer Crest
+									i(140851),	-- Nighthold Custodian's Hood
+									i(139058),	-- Nightsfall Helmet
+									i(152765),	-- Oronaar Disciple's Coif
+									i(147740),	-- Plague-Resistant Headcover
+									i(147749),	-- Polished Felfury Helmet
+									i(134358),	-- Portalguard Helm
+									i(152747),	-- Praetorium Guard's Helmet
+									i(146877),	-- Riven Priesthood Cap
+									i(139108),	-- Rivermane Hood
+									i(134138),	-- Rockbound Helm
+									i(134172),	-- Roggthread Headdress
+									i(134255),	-- Sea Stalker's Hood
+									i(134260),	-- Seawitch Hood
+									i(139244),	-- Shadow Archer's Helm
+									i(136742),	-- Shadow Stalker Hood
+									i(147034),	-- Shadow-Scarred Headcover
+									i(151337),	-- Shadow-Weaver's Crown
+									i(146872),	-- Shrinebreaker Coif
+									i(134182),	-- Skoldiir Helm
+									i(139119),	-- Skyhorn Headgear
+									i(134440),	-- Soulstarve Hood
+									i(134152),	-- Steelgazer Hide Hood
+									i(141424),	-- Stormbattered Casque
+									i(147244),	-- Storm-Tempered Greathelm
+									i(150969),	-- Stygian Mask
+									i(134511),	-- Subterranean Horror Faceguard
+									i(139124),	-- Sunfrost Aurora
+									i(134284),	-- Swordsinger's Hood
+									i(121324),	-- Terrorweave Cowl
+									i(134211),	-- Tideskorn Coif
+									i(147190),	-- Titanic Onslaught Greathelm
+									i(139070),	-- Tranquil Bough Hood
+									i(142142),	-- Unbound Reality Mask
+									i(136762),	-- Vault-Minder's Crown
+									i(134447),	-- Veil of Unseen Strikes
+									i(139229),	-- Venom-Fanged Barbute
+									i(134446),	-- Vigilant Bondbreaker Headdress
+									i(121319),	-- Vilescale Helm
+									i(146786),	-- Vileweave Cap
+									i(140901),	-- Vintage Suramar Nobility Hat
+									i(142304),	-- Visage of Brutish Iron
+									i(137451),	-- Vision of the Spider Queen
+									i(151336),	-- Voidlashed Hood
+									i(136728),	-- Wardbreaker Helm
+									i(142296),	-- Wikket Witch's Hat
+									i(147142),	-- Wildstalker Helmet
+									i(121279),	-- Wracksoul Helm
+									i(146761),	-- Xorothian Helmet
 								}),
 								i(153215, { -- Relinquished Spaulders
 									i(152777), -- Azurelight Sage's Mantle
