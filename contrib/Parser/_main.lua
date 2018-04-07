@@ -366,6 +366,9 @@ creature = function(id, t)								-- Create a CREATURE Object
 	return struct("creatureID", id, t);
 end
 cr = creature;											-- Create a CREATURE Object (alternative shortcut)
+currency = function(id, t)								-- Create a CURRENCY Object
+	return struct("currencyID", id, t);
+end
 d = function(id, t)										-- Create a DIFFICULTY Object
 	t = struct("difficultyID", id, t);
 	local db = DifficultyDB[id];

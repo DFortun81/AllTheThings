@@ -344,7 +344,7 @@ _.Zones =
 					},
 					["description"] = "In order to see this battle pet you must first obtain the buff |cFFFFD700Spring Cleaning|r, which is a 15 minute buff..  Multiple people can click the rug.  If there are none present you can realm hop until you find one. You obtain this buff by clicking on a |cFFFFD700Dusty Rug|r.  The rug can spawn in one of five locations:\n\n|cFFFFFFFFBarber Shop|r - Upper Level (|cFFFFFFFF52.52, 30.31|r),\n\n|cFFFFFFFFBreanni's Shop|r - Behind the counter (|cFFFFFFFF58.9, 38.3|r),\n\n|cFFFFFFFFFilthy  Animal [Horde]|r - Outside the building on top of the sewer gate to the right before you enter. (|cFFFFFFFF64.15, 37.9|r)\n\n|cFFFFFFFFGreyfang Enclave [Alliance]|r - Behind the Paladin Portal\n\n|cFFFFFFFFLegerdemain Lounge|r - Top Floor",
 				}),
-				n(-169, { -- Emissary Quests
+				n(-169, { 	-- Emissary Quests
 					q(43179, { -- The Kirin Tor of Dalaran
 						i(157828, { -- Kirin Tor Chest
 							["groups"] = {
@@ -5540,7 +5540,7 @@ _.Zones =
 						i(141713),	-- Arcadian War Turtle Mount
 					}),
 				}),
-				n(-38, { -- Profession
+				n(-38, { 	-- Profession
 					prof(356, 7620, { -- Fishing
 						faction(1975, {	-- Conjurer Margoss
 							["groups"] = {
@@ -5738,8 +5738,10 @@ _.Zones =
 				}),
 				n(-213, {	-- The Underbelly
 					n(-4, {	-- Achievements
-						ach(11066, { -- Underbelly Tycoon
-							i(138387), -- Ratstallion
+						currency(1149, { -- Sightless Eyes
+							ach(11066, { -- Underbelly Tycoon
+								i(138387), -- Ratstallion
+							}),
 						}),
 					}),
 					n(-25, { -- Pet Battle
@@ -5785,14 +5787,14 @@ _.Zones =
 					}),
 					n(-2, {	-- Vendors
 						n(97363, { -- K'huta <Portals and Jujus>
-							--currency(1149, { -- Sightless Eyes
+							currency(1149, { -- Sightless Eyes
 								i(128625, { -- Formula: Leylight Brazier
 									i(128536), -- Leylight Brazier
 								}),
 							}),	
 						}),
 						n(97364, { 	-- Laura Malley <Creatures>
-							--currency(1149, { -- Sightless Eyes
+							currency(1149, { -- Sightless Eyes
 								i(137932, { -- Recipe: Flaming Hoop
 									i(129961), -- Flaming Hoop
 								}),
@@ -5803,10 +5805,10 @@ _.Zones =
 								i(139412, { -- Young Mutant War Turtles
 									p(1912), -- Young Mutant Warturtle
 								}),
-							--}),
+							}),
 						}),
 						n(107760, { -- Strap Bucklebolt <Belts>
-							--currency(1149, { -- Sightless Eyes
+							currency(1149, { -- Sightless Eyes
 								i(137901, { -- Recipe: Battlebound Girdle Rank 2
 									i(128898),	-- Battlebound Girdle
 								}),
@@ -5852,6 +5854,8 @@ _.Zones =
 								i(137881, { -- Recipe: Warhide Belt Rank 3
 									i(128882),	-- Warhide Belt
 								}),
+							}),
+						}),
 					}),
 				}),	
 			},
