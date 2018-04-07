@@ -181,7 +181,7 @@ _.Zones =
 						["description"] = "1. Buy Dried Bilberries from Fialla Sweetberry in Dalaran.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling pet!|r",
 					}),	
 				}),
-				n(-169, { -- Emissary Quess
+				n(-169, { 	-- Emissary Quess
 					q(42170, { -- The Dreamweavers
 						i(157822, { -- Dreamweaver Provisions
 							["groups"] = {
@@ -1479,8 +1479,128 @@ _.Zones =
 						i(140667), -- Tabard of the Dreamweavers
 					}),
 				}),
-				n(-38, { -- Profession
+				n(-38, { 	-- Profession
 					prof(356, 7620, { -- Fishing
+						ach(10596, {	-- Bigger Fish to Fry
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+							i(133708, {		-- Drowned Thistleleaf
+								["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
+								["groups"] = {
+									spell(202067, {		-- Blessing of the Thistleleaf
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
+											["itemID"] = 133729,		-- Thorned Flounder (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
+											["itemID"] = 139656,		-- Thorned Flounder (Item)
+										},
+									}),
+								},
+							}),
+							i(133707, {		-- Nightmare Nightcrawler
+								["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 16,		-- Terrorfin (Criteria)
+										["itemID"] = 133728,		-- Terrorfin (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 16,		-- Terrorfin (Criteria)
+										["itemID"] = 139655,		-- Terrorfin (Item)
+									},
+								},
+							}),
+							i(133705, {		-- Rotten Fishbone
+								["description"] = "This item that will attract a Lorlathil Druid that casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
+								["groups"] = {
+									n(102349, {		-- Lorlathil Druid
+										["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
+										["groups"] = {
+											spell(201809, {		-- The Cat's Meow (Spell)
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
+													["itemID"] = 133730,		-- Ancient Mossgill (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
+													["itemID"] = 139657,		-- Ancient Mossgill (Item)
+												},
+											}),
+										},
+									}),
+								},
+							}),
+						}),
 						ach(11725, { 	-- Fisherfriend of the Isles
 							faction(2098, {	-- Keeper Raynae
 								["groups"] = {
@@ -1496,7 +1616,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-34, { -- World Quests
+				n(-34, { 	-- World Quests
 					["groups"] = {
 						n(-322, { -- Cloak
 							i(139074),	-- Dreamwalker's Cloak

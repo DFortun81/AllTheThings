@@ -186,7 +186,7 @@ _.Zones =
 						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling pet!|r",
 					}),	
 				}),
-				n(-169, { -- Emissary Quests
+				n(-169, { 	-- Emissary Quests
 					q(42420, { -- Court of Farondis
 						i(157825, { -- Farondis Lockbox
 							["groups"] = {
@@ -2248,8 +2248,129 @@ _.Zones =
 						--i(139556), 				-- Hunter Legendary Appearance
 					}),
 				}),
-				n(-38, { -- Profession
+				n(-38, { 	-- Profession
 					prof(356, 7620, { -- Fishing
+						ach(10596, {	-- Bigger Fish to Fry
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+							i(133702, {		-- Aromatic Murloc Slime
+								["description"] = "This item will allow you to catch the Rare fish Leyshimmer Blenny in Azsuna.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 8,			-- Leyshimmer Blenny (Criteria)
+										["itemID"] = 133725,		-- Leyshimmer Blenny (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 8,			-- Leyshimmer Blenny (Criteria)
+										["itemID"] = 139652,		-- Leyshimmer Blenny (Item)
+									},
+								},
+							}),
+							i(133703, {		-- Pearlescent Conch
+								["description"] = "This item will allow you to catch the Rare fish Nar'thalas Hermit in Azsuna.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
+										["itemID"] = 133726,		-- Nar'thalas Hermit (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
+										["itemID"] = 139653,		-- Nar'thalas Hermit (Item)
+									},
+								},
+							}),
+							i(133704, {		-- Rusty Queenfish Brooch
+								["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
+								["groups"] = {
+									spell(201807, { -- Rusty Queenfish Brooch (Buff)
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
+											["itemID"] = 133727,		-- Ghostly Queenfish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
+											["itemID"] = 139654,		-- Ghostly Queenfish (Item)
+										},
+									}),
+								},
+							}),
+							i(133701, {		-- Skrog Toenail
+								["description"] = "You receive the buff Skrog Toenail; on expiration of this buff, a Murloc mob is summoned. When killed, this mob will drop Aromatic Murloc Slime.",
+								["groups"] = {
+									n(102338, {		-- Salteye Skrog-Hunter
+										dr(93, i(133702)),	-- Aromatic Murloc Slime
+									}),
+								},
+							}),
+						}),
 						ach(11725, { 	-- Fisherfriend of the Isles
 							faction(2097, {	-- Ilyssia of the Waters
 								["groups"] = {
@@ -2265,7 +2386,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-34, { -- World Quests
+				n(-34, { 	-- World Quests
 					n(-322, { -- Cloak
 						i(134334), -- Disgraced Court Cloak
 						i(134246), -- Herringbone Drape

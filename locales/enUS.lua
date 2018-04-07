@@ -417,6 +417,8 @@ AllTheThings.Locales.enUS = {
 		[-214] = "Interface\\Icons\\achievement_alliedrace_nightborne",			-- Nightborne
 		[-215] = "Interface\\\Icons\\INV_Pet_Naaru",							-- Vindicaar
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",				-- Prestige
+		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",						-- Lures (for Fishing)
+		[-218] = "Interface\\Icons\\Achievement_Profession_Fishing_NorthrendAngler",	-- Coastal (for Fishing)
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-318] = "Interface\\Icons\\garrison_purplearmor",						-- Armor
@@ -883,6 +885,8 @@ AllTheThings.Locales.enUS = {
 		[-214] = GetSpellInfo(262061).." "..HOME,								-- Nightborne Home
 		[-215] = GetSpellInfo(250877),											-- Vindicaar
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
+		[-217] = "Lures",														-- Lures (for Fishing)
+		[-218] = "Coastal",														-- Coastal (for Fishing)
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
