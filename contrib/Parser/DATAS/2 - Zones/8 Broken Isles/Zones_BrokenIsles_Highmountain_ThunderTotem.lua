@@ -181,7 +181,7 @@ _.Zones =
 						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling pet!|r",
 					}),	
 				}),
-				n(-169, { -- Emissary Quests
+				n(-169, { 	-- Emissary Quests
 					q(42233, { -- Highmountain Tribes
 						i(157823, { -- Highmountain Tribute
 							n(-322, { -- Cloak
@@ -1656,8 +1656,137 @@ _.Zones =
 						i(142369), -- Ivory Hawkstrider Mount
 					}),
 				}),
-				n(-38, { -- Profession
+				n(-38, { 	-- Profession
 					prof(356, 7620, { -- Fishing
+						ach(10596, {	-- Bigger Fish to Fry
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+							i(133712, {		-- Frost Worm
+								["description"] = "This item will allow you to catch the Rare fish Coldriver Carp in Highmountain.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
+										["itemID"] = 133732,		-- Coldriver Carp (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
+										["itemID"] = 139659,		-- Coldriver Carp (Item)
+									},
+								},
+							}),
+							i(133709, {		-- Funky Sea Snail
+								["description"] = "The short buff will eventually expire and this item will disappear from your inventory. When it does, the attached mob will spawn.",
+								["groups"] = {
+									n(102347, {
+										["description"] = "After the short buff expires, this mob spawns. Kill it for the lure.",
+										["groups"] = {
+											dr(95, i(133710)), 	-- Salmon Lure
+										},
+									}),
+								},
+							}),
+							i(133710, {		-- Salmon Lure
+								["description"] = "This item will allow you to catch the Rare fish Ancient Highmountain Salmon in Highmountain.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
+										["itemID"] = 133733,		-- Ancient Highmountain Salmon (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
+										["itemID"] = 139660,		-- Ancient Highmountain Salmon (Item)
+									},
+								},
+							}),
+							i(133711, {		-- Swollen Murloc Egg
+								["description"] = "This item that will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
+								["groups"] = {
+									n(102339, {		-- Swamprock Tadpole
+										["description"] = "Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",
+										["groups"] = {
+											spell(202056, {		-- Blessing of the Murlocs
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 10,		-- Mountain Puffer (Criteria)
+													["itemID"] = 133731,		-- Mountain Puffer (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 10,		-- Mountain Puffer (Criteria)
+													["itemID"] = 139658,		-- Mountain Puffer (Item)
+												},
+											}),
+										},
+									}),
+								},
+							}),
+						}),
 						ach(11725, { 	-- Fisherfriend of the Isles
 							faction(2099, {	-- Akule Riverhorn
 								["groups"] = {
@@ -1673,7 +1802,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-34, { -- World Quests
+				n(-34, { 	-- World Quests
 					n(-322, { -- Cloak
 						i(134158), -- Trembling Mightstone Drape
 						i(139112), -- Tribal Unification Cloak

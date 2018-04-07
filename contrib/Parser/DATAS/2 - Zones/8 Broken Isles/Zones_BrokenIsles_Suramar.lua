@@ -1474,6 +1474,122 @@ _.Zones =
 				}),
 				n(-38, { -- Profession
 					prof(356, 7620, { -- Fishing
+						ach(10596, {	-- Bigger Fish to Fry
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+							i(133720, {		-- Demonic Detritus
+								["description"] = "This item will allow you to catch the Rare fish Tainted Runescale Koi in Suramar.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 15,		-- Tainted Runescale Koi (Criteria)
+										["itemID"] = 133739,		-- Tainted Runescale Koi (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 15,		-- Tainted Runescale Koi (Criteria)
+										["itemID"] = 139666,		-- Tainted Runescale Koi (Item)
+									},
+								},
+							}),
+							i(133717, {		-- Enchanted Lure
+								["description"] = "This item will allow you to catch the Rare fish Magic-Eater Frog in Suramar.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 9,			-- Magic-Eater Frog (Criteria)
+										["itemID"] = 133737,		-- Magic-Eater Frog (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 9,			-- Magic-Eater Frog (Criteria)
+										["itemID"] = 139664,		-- Magic-Eater Frog (Item)
+									},
+								},
+							}),
+							i(133719, {		-- Sleeping Murloc
+								["description"] = "Using this item will awaken a Confused Seerspine Murloc, who will run around briefly and drop some Seerspine Puffer (as well as other fish) onto the ground/water nearby.",
+								["groups"] = {
+									n(102350, {		-- Confused Seerspine Murloc
+										["description"] = "Runs around briefly and drop some Seerspine Puffer (as well as other fish) onto the ground/water nearby.\n\nIn order to collect the fish, you simply have to run over them - they will be added to your bags.",
+										["groups"] = {
+											{
+												["achievementID"] = 10596,	-- Bigger Fish to Fry
+												["criteriaID"] = 14,		-- Seerspine Puffer (Criteria)
+												["itemID"] = 133738,		-- Seerspine Puffer (Item)
+											},
+											{
+												["achievementID"] = 10596,	-- Bigger Fish to Fry
+												["criteriaID"] = 14,		-- Seerspine Puffer (Criteria)
+												["itemID"] = 139665,		-- Seerspine Puffer (Item)
+											},
+										},
+									}),
+								},
+							}),
+						}),
 						ach(11725, { 	-- Fisherfriend of the Isles
 							faction(2101, {	-- Sha'leth
 								["groups"] = {

@@ -2397,11 +2397,21 @@ app.BaseAchievementCriteria = {
 		if key == "achievementID" then
 			return t.parent.achievementID or t.parent.parent.achievementID;
 		elseif key == "text" then
-			return GetAchievementCriteriaInfo(t.achievementID,t.criteriaID) or ("Achievement #" .. t.achievementID .. ", Criteria #" .. t.criteriaID);
+			if t.itemID then
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+				if link then
+					t.text = link;
+					t.link = link;
+					t.icon = icon;
+					return link;
+				end
+			end
+			return GetAchievementCriteriaInfo(t.achievementID,t.criteriaID);
 		elseif key == "link" then
 			if t.itemID then
 				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
 				if link then
+					t.text = link;
 					t.link = link;
 					t.icon = icon;
 					return link;
@@ -2414,7 +2424,7 @@ app.BaseAchievementCriteria = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "saved" or key == "collected" then
-			return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID));
+			return select(3, GetAchievementCriteriaInfo(t.achievementID, math.min(t.criteriaID, GetAchievementNumCriteria(t.achievementID))));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
