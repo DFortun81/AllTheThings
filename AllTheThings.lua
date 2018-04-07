@@ -2424,7 +2424,7 @@ app.BaseAchievementCriteria = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "saved" or key == "collected" then
-			return select(3, GetAchievementCriteriaInfo(t.achievementID, math.min(t.criteriaID, GetAchievementNumCriteria(t.achievementID))));
+			return select(4, GetAchievementInfo(t.achievementID)) or select(3, GetAchievementCriteriaInfo(t.achievementID, math.min(t.criteriaID, GetAchievementNumCriteria(t.achievementID))));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -2539,6 +2539,27 @@ app.BaseCharacterClass = {
 };
 app.CreateCharacterClass = function(id, t)
 	return createInstance(constructor(id, t, "classID"), app.BaseCharacterClass);
+end
+
+-- Currency Lib
+app.BaseCurrencyClass = {
+	__index = function(t, key)
+		if key == "key" then
+			return "currencyID";
+		elseif key == "text" then
+			return GetCurrencyLink(t.currencyID) or select(1, GetCurrencyInfo(t.currencyID));
+		elseif key == "icon" then
+			return select(3, GetCurrencyInfo(t.currencyID));
+		elseif key == "icon" then
+			return select(3, GetCurrencyInfo(t.currencyID));
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateCurrencyClass = function(id, t)
+	return createInstance(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
 end
 
 -- Difficulty Lib
@@ -5075,6 +5096,8 @@ local function RowOnEnter(self)
 					GameTooltip:AddDoubleLine(key, tostring(value));
 				end	
 			end
+		elseif reference.currencyID then
+			GameTooltip:SetCurrencyByID(reference.currencyID);
 		else
 			-- Standalone Fields
 			if reference.toyID then GameTooltip:SetToyByItemID(reference.toyID);
