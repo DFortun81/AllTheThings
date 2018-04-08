@@ -1698,6 +1698,7 @@ local function createDebugFrame(parent)
 			
 	 local ids = {["ShowAchievementID"] = "Show Achievement ID",
 		["ShowArtifactID"] = "Show Artifact ID",
+		["ShowBonusID"] = "Show Bonus ID",
 		["ShowCreatureID"] = "Show Creature ID",
 		["ShowDifficultyID"] = "Show Difficulty ID",
 		["ShowEncounterID"] = "Show Encounter ID",
@@ -1708,6 +1709,7 @@ local function createDebugFrame(parent)
 		["ShowItemID"] = "Show Item ID",
 		["ShowItemString"] = "Show Item String",
 		["ShowMapID"] = "Show Map ID",
+		["ShowModID"] = "Show Mod ID",
 		["ShowMusicRollID"] = "Show Music Roll ID",
 		["ShowObjectID"] = "Show Object ID",
 		["ShowQuestID"] = "Show Quest ID",
@@ -1718,7 +1720,7 @@ local function createDebugFrame(parent)
 		["ShowVisualID"] = "Show Visual ID",
 		}
 	local last;
-	for _,id in pairs ({"ShowAchievementID","ShowArtifactID","ShowCreatureID","ShowDifficultyID","ShowEncounterID","ShowFactionID","ShowFilterID","ShowIllusionID","ShowInstanceID","ShowItemID","ShowItemString","ShowMapID","ShowMusicRollID","ShowObjectID","ShowQuestID","ShowSourceID","ShowSpeciesID","ShowSpellID","ShowTierID","ShowVisualID"}) do
+	for _,id in pairs ({"ShowAchievementID","ShowArtifactID","ShowBonusID","ShowCreatureID","ShowDifficultyID","ShowEncounterID","ShowFactionID","ShowFilterID","ShowIllusionID","ShowInstanceID","ShowItemID","ShowItemString","ShowMapID","ShowModID","ShowMusicRollID","ShowObjectID","ShowQuestID","ShowSourceID","ShowSpeciesID","ShowSpellID","ShowTierID","ShowVisualID"}) do
 		local filter = createCheckBox(ids[id], child, function(self)
 			app.SetDataMember(id, self:GetChecked());
 			wipe(app.searchCache);

@@ -5285,8 +5285,8 @@ local function RowOnEnter(self)
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setSubHeaderID)); end
 		if reference.description and GetDataMember("ShowDescriptions") then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
 		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L("MAP_ID"), tostring(reference.mapID)); end
-		if reference.bonusID then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
-		if reference.modID then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
+		if reference.bonusID and GetDataMember("ShowBonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
+		if reference.modID and GetDataMember("ShowModID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
 		if reference.dr then GameTooltip:AddDoubleLine(L("DROP_RATE"), "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
 		if not reference.itemID then
 			if reference.speciesID then
@@ -6285,6 +6285,7 @@ app.events.VARIABLES_LOADED = function()
 	
 	GetDataMember("ShowAchievementID", false);
 	GetDataMember("ShowArtifactID", false);
+	GetDataMember("ShowBonusID", false);
 	GetDataMember("ShowCreatureID", false);
 	GetDataMember("ShowDifficultyID", false);
 	GetDataMember("ShowEncounterID", false);
@@ -6295,6 +6296,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowItemID", false);
 	GetDataMember("ShowItemString", false);
 	GetDataMember("ShowMapID", false);
+	GetDataMember("ShowModID", false);
 	GetDataMember("ShowMusicRollID", false);
 	GetDataMember("ShowObjectID", false);
 	GetDataMember("ShowQuestID", false);
