@@ -38,7 +38,7 @@ _.Zones =
 					qg(18253, q(11033)),	-- Assassin No More
 					qg(113986, q(44500)),	-- Author! Author!
 --]]
-					ql(q(30109, {	-- Blood of the Betrayer (UNTESTED, NEEDS CONFIRMATION)
+					ql(q(30109, {	-- Blood of the Betrayer
 						["groups"] = {
 						},
 						["qg"] = 57770,	-- Zazzo Twinklefingers
@@ -189,7 +189,7 @@ _.Zones =
 						})),
 					}),
 --]]					
-					ql(q(30113, {	-- Victory in the Depths (UNTESTED, NEEDS CONFIRMATION)
+					ql(q(30113, {	-- Victory in the Depths
 						["groups"] = {
 							i(77947),	-- The Sleeper
 							i(77948),	-- The Dreamer

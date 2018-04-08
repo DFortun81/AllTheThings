@@ -490,7 +490,7 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 29847 },	-- To Catch a Thief
 					})),
-					ql(q(30108, {	-- Our Man in Karazhan (UNTESTED, NEEDS CONFIRMATION)
+					ql(q(30108, {	-- Our Man in Karazhan
 						["groups"] = {
 						},
 						["qg"] = 57777,	-- Wrathion
@@ -582,7 +582,7 @@ _.Zones =
 						["qg"] = 13840,	-- Warmaster Laggrond
 						["sourceQuests"] = { 7161 },	-- Proving Grounds
 					})),
-					ql(q(30116, {	-- Sharpening Your Fangs (UNTESTED, NEEDS CONFIRMATION)
+					ql(q(30116, {	-- Sharpening Your Fangs
 						["groups"] = {
 						},
 						["qg"] = 57777,	-- Wrathion

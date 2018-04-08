@@ -120,15 +120,15 @@ _.WorldEvents =
 						i(51983),	-- Stalwart Shoulderguards
 						i(51989),	-- Stalwart Bands
 						i(51987),	-- Stalwart Grips
-						i(51995),	-- Turbulent Necklace*
 						i(51993),	-- Turbulent Cloak*
+						i(51995),	-- Turbulent Necklace*
 						i(51991),	-- Turbulent Signet*
 					}),
 					i(156688, {	-- Icy Satchel of Helpful Goods
 						i(112348),	-- Snow-Coated Cloth Cap*
-						i(113758),	-- Snow-Coated Cloth Gloves
+						i(113758),	-- Snow-Coated Cloth Gloves*
 						i(112367),	-- Snow-Coated Cloth Belt
-						i(112355),	-- Snow-Coated Cloth Leggings
+						i(112355),	-- Snow-Coated Cloth Leggings*
 						i(112352),	-- Winterfrost Leather Cap
 						i(112351),	-- Winterfrost Leather Helm
 						i(113690),	-- Winterfrost Leather Gloves
@@ -156,6 +156,7 @@ _.WorldEvents =
 						i(113685),	-- Coldblood Longcloak
 						i(113683),	-- Coldwrap Cloak
 						i(113684),	-- Icecrust Cloak*
+						i(113687),	-- Dark Rune Lavalliere*
 					}),
 					un(2, i(52004, {	-- Satchel of Helpful Goods 60-64
 						["groups"] = {
@@ -465,29 +466,31 @@ _.WorldEvents =
 					}),
 					i(135542, {	-- Icy Crate of Battlefield Goods 70-79
 						["groups"] = {
-							i(134724),	-- Icyweave Amice
-							i(134723),	-- Icyweave Gloves
-							i(134722),	-- Icyweave Robes
-							i(134730),	-- Frosthide Gloves
+							i(134724),	-- Icyweave Amice*
+							i(134722),	-- Icyweave Robes*
+							i(134723),	-- Icyweave Gloves*
 							i(134731),	-- Frosthide Shoulderpads
 							i(134729),	-- Frosthide Tunic
+							i(134730),	-- Frosthide Gloves
+							i(134734),	-- Frigidlink Spaulders
 							i(134732),	-- Frigidlink Armor
 							i(134733),	-- Frigidlink Gauntlets
-							i(134734),	-- Frigidlink Spaulders
+							i(134737),	-- Chillplate Shoulders
 							i(134735),	-- Chillplate Chestpiece
 							i(134736),	-- Chillplate Gauntlets
-							i(134737),	-- Chillplate Shoulders
-							i(134725),	-- Cold-Touched Mageblade
-							i(134718),	-- Cold-Touched Shanker
-							i(134719),	-- Cold-Touched Ripper
-							i(134720),	-- Cold-Touched Rifle
-							i(134727),	-- Cold-Touched Endgame
-							i(134742),	-- Cold-Touched Hacker
-							i(134726),	-- Cold-Touched Sword
-							i(134741),	-- Cold-Touched Barrier
-							i(134721),	-- Cold-Touched Staff
 							i(134717),	-- Cold-Touched Decapitator
-							i(134728),	-- Cold-Touched Wand
+							i(134721),	-- Cold-Touched Staff
+							i(134742),	-- Cold-Touched Hacker
+							i(134725),	-- Cold-Touched Mageblade*
+							i(134719),	-- Cold-Touched Ripper
+							i(134718),	-- Cold-Touched Shanker
+							i(134726),	-- Cold-Touched Sword
+							i(134720),	-- Cold-Touched Rifle
+							i(134728),	-- Cold-Touched Wand*
+							i(134741),	-- Cold-Touched Barrier
+							i(134727),	-- Cold-Touched Endgame
+							i(134739),	-- Cold-Touched Band*
+							i(134744),	-- Cold-Touched Distinction*
 						},
 						["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range.|r",
 					}),
