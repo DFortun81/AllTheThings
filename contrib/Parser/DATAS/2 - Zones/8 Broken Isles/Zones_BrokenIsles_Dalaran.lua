@@ -6172,6 +6172,63 @@ _.Zones =
 				}),
 				n(-38, { 	-- Profession
 					prof(356, 7620, { -- Fishing
+						n(-100001, { 	-- Artifact
+							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["lvl"] = 110,
+							["groups"] = {
+								{
+									["questID"] = 40961,			-- The Dalaran Fountain
+									["sourceQuest"] = 40960,		-- (Source Quest: Luminous Pearl)
+									["qg"] = 90417,					-- Quest Giver: Archmage Khadgar
+									["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item to start this chain.",
+								},
+								{
+									["questID"] = 41010,			-- Fish Frenzy
+									["sourceQuest"] = 40961,		-- (Source Quest: The Dalaran Fountain)
+									["qg"] = 102639,				-- Quest Giver: Archmage Khadgar
+									["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
+									["groups"] = {
+										i(133755, { -- Underlight Angler
+											["groups"] = {
+												{
+													["artifactID"] = 841, -- Base Skin
+													["itemID"] = 133755, -- Underlight Angler
+													["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+													["modelScale"] = 1.25,
+													["modelRotation"] = 55,
+												},
+												qg({120456,120457,120458,120459,120460}, ach(11725, { 	-- Fisherfriend of the Isles
+													["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
+													["groups"] = {
+														i(152583, { -- Underlight Emerald
+															{
+																["artifactID"] = 988, -- Fisherfriend of the Isles
+																["itemID"] = 133755, -- Underlight Angler
+																["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+																["modelScale"] = 1.25,
+																["modelRotation"] = 55,
+															},
+															{
+																["artifactID"] = 989, -- Fisherfriend of the Isles
+																["itemID"] = 133755, -- Underlight Angler
+																["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+																["modelScale"] = 1.25,
+																["modelRotation"] = 55,
+															},
+														})
+													},
+												})),
+											},
+											["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+											["modelScale"] = 1.25,
+											["modelRotation"] = 55,
+											["ignoreSource"] = true,
+											["sourceQuest"] = 40961
+										}),
+									},
+								},
+							},
+						}),
 						faction(1975, {	-- Conjurer Margoss
 							["groups"] = {
 								q(42911),	-- Drowned Mana (Quest)

@@ -4282,7 +4282,6 @@ _.GearSets =
 				["icon"] = "Interface\\Icons\\trade_fishing",
 			}),
 		},
-		["icon"] = "Interface\\Icons\\inv_artifact_tome01", -- AK Research Book
 		["achievementID"] = 11171, -- Arsenal of Power
 	}),
 };
