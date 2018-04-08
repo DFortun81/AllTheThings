@@ -6145,11 +6145,29 @@ _.Zones =
 						},
 					}),
 					n(107109, { -- Xur'ios <Vaultkeeper of the Void>
-						i(137935, { -- Recipe: Leather Love Seat
-							i(129956),	-- Leather Love Seat Toy
+						currency(1275, { -- Curious Coin
+							i(136702, { -- Formula: Soul Fibril
+								i(136689), -- Soul Fibril
+							}),
+							i(136699, { -- Recipe: Flamespike
+								i(136686), -- Flamespike
+							}),
+							i(137727, { -- Schematic: Mecha-Bond Imprint Matrix
+								i(134125, { -- Mecha-Bond Imprint Matric
+									["groups"] = {
+									},
+									["classes"] = 3, -- Hunter/camp[
+								}),
+							}),
+							i(136706, { -- Technique: Straszan Mark
+								i(136693), -- Straszan Mark
+							}),
+							i(137935, { -- Recipe: Leather Love Seat
+								i(129956),	-- Leather Love Seat Toy
+							}),
+							i(141713),	-- Arcadian War Turtle Mount
+							i(141862),	-- Mote of Light Toy
 						}),
-						i(141862),	-- Mote of Light Toy
-						i(141713),	-- Arcadian War Turtle Mount
 					}),
 				}),
 				n(-38, { 	-- Profession
