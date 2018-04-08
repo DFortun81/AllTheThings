@@ -817,7 +817,10 @@ local function GetCachedSearchResults(search, method, ...)
 					local count = 0;
 					local abbrevs = L("ABBREVIATIONS");
 					for i,j in ipairs(group) do
-						if j.parent and not j.parent.hideText and j.parent.parent and (GetDataMember("ShowCompleteSourceLocations") or (not j.collected and not j.parent.saved)) then
+						if j.parent and not j.parent.hideText and j.parent.parent and (GetDataMember("ShowCompleteSourceLocations") or (not j.collected and not j.parent.saved))
+							and app.RecursiveClassAndRaceFilter(j)
+							and (j.u or app.RecursiveUnobtainableFilter(j.parent)) then
+						
 							local text = BuildSourceText(j, 0, j.qgs);
 							--print(text .. tostring(j.parent.questID or 0) .. ", " .. tostring(j.parent.saved or 0));
 							for source,replacement in pairs(abbrevs) do
@@ -4010,6 +4013,22 @@ app.UnobtainableItemFilter = app.NoFilter;
 app.SeasonalFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteQuests = app.Filter;
+
+-- Recursive Checks
+app.RecursiveClassAndRaceFilter = function(group)
+	if app.ClassRequirementFilter(group) and app.RaceRequirementFilter(group) then
+		if group.parent then return app.RecursiveClassAndRaceFilter(group.parent); end
+		return true;
+	end
+	return false;
+end
+app.RecursiveUnobtainableFilter = function(group)
+	if app.UnobtainableItemFilter(group.u) and app.SeasonalFilter(group.u) then
+		if group.parent then return app.RecursiveUnobtainableFilter(group.parent); end
+		return true;
+	end
+	return false;
+end
 
 -- Processing Functions (Coroutines)
 local UpdateGroup, UpdateGroups;
