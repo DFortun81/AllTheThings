@@ -640,7 +640,14 @@ _.Zones =
 						qa(  9423),	-- Return to Obadei
 						qa( 10346),	-- Return to the Abyssal Shelf
 						qh( 10347),	-- Return to the Abyssal Shelf
-						q(9732),	-- Return to the Marsh
+						q(  9732, {	-- Return to the Marsh (awarded "Draining the Marsh" criteria for Zangarmarsh)
+							["g"] = {
+								i(25524),	-- Cenarion Expedition Boots
+								i(25523),	-- Windcaller's Gauntlets
+								i(25522),	-- Marshstrider's Spaulders
+							},
+							["qg"] = 16885,	-- Amythiel Mistwalker
+						}),
 						qa(  9430),	-- Sha'naar Relics
 						qh( 14065),	-- Sharing a Bountiful Feast
 						qa( 10340),	-- Shatter Point
