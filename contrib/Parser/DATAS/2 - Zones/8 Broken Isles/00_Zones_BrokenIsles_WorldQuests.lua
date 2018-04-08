@@ -338,13 +338,13 @@ _.Zones =
 						i(139972), -- Saberguard's Greaves
 						i(139980), -- Spider Stompers
 						i(134167), -- Bitestone Cowl
-						i(134169), -- Biteestone Shoulderguard
-						i(134170), -- Biteestone Vest
-						i(134164), -- Biteestone Wristwrap
-						i(134165), -- Biteestone Gauntlets
-						i(134163), -- Biteestone Girthcord
+						i(134169), -- Bitestone Shoulderguard
+						i(134170), -- Bitestone Vest
+						i(134164), -- Bitestone Wristwrap
+						i(134165), -- Bitestone Gauntlets
+						i(134163), -- Bitestone Girthcord
 						i(134168), -- Bitestone Kilt
-						i(134166), -- Biteestone Boots
+						i(134166), -- Bitestone Boots
 						i(136758), -- Isle Watcher's Leggings
 					}),
 					n(-46, { -- Plate
