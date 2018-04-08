@@ -19,3 +19,6 @@ AllTheThings.iml
 .idea/misc.xml
 .idea/inspectionProfiles/profiles_settings.xml
 icon.png
+contrib/Harvesters/System.Net.Http.Formatting.xml
+contrib/Harvesters/Blizzard API Harvester.pdb
+contrib/Harvesters/Blizzard API Harvester.exe.config
