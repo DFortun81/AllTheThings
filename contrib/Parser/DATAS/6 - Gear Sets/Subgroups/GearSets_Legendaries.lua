@@ -149,7 +149,6 @@ _.GearSets =
 				i(152626), -- Insignia of the Grand Army
 				i(132452), -- Sephuz's Secret
 				i(154172), -- Aman'Thul's Vision
-				i(144249), -- Archimonde's Hatred Reborn
 				i(144259), -- Kil'jaeden's Burning Wish
 				i(132444), -- Prydaz, Xavric's Magnum Opus
 				i(137043), -- Frizzo's Fingertrap
@@ -188,7 +187,6 @@ _.GearSets =
 				i(152626), -- Insignia of the Grand Army
 				i(132452), -- Sephuz's Secret
 				i(154172), -- Aman'Thul's Vision
-				i(144249), -- Archimonde's Hatred Reborn
 				i(144259), -- Kil'jaeden's Burning Wish
 				i(132444), -- Prydaz, Xavric's Magnum Opus
 				i(132410), -- Shard of the Exodar
@@ -307,7 +305,6 @@ _.GearSets =
 				i(152626), -- Insignia of the Grand Army
 				i(132452), -- Sephuz's Secret
 				i(154172), -- Aman'Thul's Vision
-				i(144249), -- Archimonde's Hatred Reborn
 				i(144259), -- Kil'jaeden's Burning Wish
 				i(132444), -- Prydaz, Xavric's Magnum Opus
 				i(133973), -- The Twins' Painful Touch
@@ -350,7 +347,6 @@ _.GearSets =
 				i(152626), -- Insignia of the Grand Army
 				i(132452), -- Sephuz's Secret
 				i(154172), -- Aman'Thul's Vision
-				i(144249), -- Archimonde's Hatred Reborn
 				i(144259), -- Kil'jaeden's Burning Wish
 				i(132444), -- Prydaz, Xavric's Magnum Opus
 				i(137049), -- Insignia of Ravenholdt
@@ -386,7 +382,6 @@ _.GearSets =
 				i(152626), -- Insignia of the Grand Army
 				i(132452), -- Sephuz's Secret
 				i(154172), -- Aman'Thul's Vision
-				i(144249), -- Archimonde's Hatred Reborn
 				i(144259), -- Kil'jaeden's Burning Wish
 				i(132444), -- Prydaz, Xavric's Magnum Opus
 				i(137050), -- Eye of the Twisting Nether
@@ -423,7 +418,6 @@ _.GearSets =
 				i(152626), -- Insignia of the Grand Army
 				i(132452), -- Sephuz's Secret
 				i(154172), -- Aman'Thul's Vision
-				i(144249), -- Archimonde's Hatred Reborn
 				i(144259), -- Kil'jaeden's Burning Wish
 				i(132444), -- Prydaz, Xavric's Magnum Opus
 				i(132369), -- Wilfred's Sigil of Superior Summoning
