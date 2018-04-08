@@ -2375,8 +2375,41 @@ _.Zones =
 							faction(2097, {	-- Ilyssia of the Waters
 								["groups"] = {
 									i(146848, {		-- Fragmented Enchantment
-										i(152555), 	-- Ghost Shark
 										i(147308), 	-- Enchanted Bobber
+										i(152555), 	-- Ghost Shark
+										i(133703, {		-- Pearlescent Conch
+											["description"] = "This item will allow you to catch the Rare fish Nar'thalas Hermit in Azsuna.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
+													["itemID"] = 133726,		-- Nar'thalas Hermit (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
+													["itemID"] = 139653,		-- Nar'thalas Hermit (Item)
+												},
+											},
+										}),
+										i(133704, {		-- Rusty Queenfish Brooch
+											["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
+											["groups"] = {
+												spell(201807, { -- Rusty Queenfish Brooch (Buff)
+													{
+														["achievementID"] = 10596,	-- Bigger Fish to Fry
+														["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
+														["itemID"] = 133727,		-- Ghostly Queenfish (Item)
+													},
+													{
+														["achievementID"] = 10596,	-- Bigger Fish to Fry
+														["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
+														["itemID"] = 139654,		-- Ghostly Queenfish (Item)
+													},
+												}),
+											},
+										}),
+										i(133701),		-- Skrog Toenail
 									}),
 								},
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",

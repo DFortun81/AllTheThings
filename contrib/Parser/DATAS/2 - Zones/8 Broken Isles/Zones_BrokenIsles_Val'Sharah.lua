@@ -1606,7 +1606,61 @@ _.Zones =
 								["groups"] = {
 									i(146959, {		-- Corrupted Globule
 										i(147309), 	-- Face of the Forest
-										--i(152565),	-- Recipe: Feast of the Fishes
+										i(152565),	-- Recipe: Feast of the Fishes
+										i(133708, {		-- Drowned Thistleleaf
+											["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
+											["groups"] = {
+												spell(202067, {		-- Blessing of the Thistleleaf
+													{
+														["achievementID"] = 10596,	-- Bigger Fish to Fry
+														["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
+														["itemID"] = 133729,		-- Thorned Flounder (Item)
+													},
+													{
+														["achievementID"] = 10596,	-- Bigger Fish to Fry
+														["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
+														["itemID"] = 139656,		-- Thorned Flounder (Item)
+													},
+												}),
+											},
+										}),
+										i(133707, {		-- Nightmare Nightcrawler
+											["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 16,		-- Terrorfin (Criteria)
+													["itemID"] = 133728,		-- Terrorfin (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 16,		-- Terrorfin (Criteria)
+													["itemID"] = 139655,		-- Terrorfin (Item)
+												},
+											},
+										}),
+										i(133705, {		-- Rotten Fishbone
+											["description"] = "This item that will attract a Lorlathil Druid that casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
+											["groups"] = {
+												n(102349, {		-- Lorlathil Druid
+													["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
+													["groups"] = {
+														spell(201809, {		-- The Cat's Meow (Spell)
+															{
+																["achievementID"] = 10596,	-- Bigger Fish to Fry
+																["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
+																["itemID"] = 133730,		-- Ancient Mossgill (Item)
+															},
+															{
+																["achievementID"] = 10596,	-- Bigger Fish to Fry
+																["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
+																["itemID"] = 139657,		-- Ancient Mossgill (Item)
+															},
+														}),
+													},
+												}),
+											},
+										}),
 									}),
 								},
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF53.41, 72.86|r in Lorlathil.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
