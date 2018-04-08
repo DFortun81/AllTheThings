@@ -3233,7 +3233,8 @@ app.BaseMount = {
 		elseif key == "b" then
 			return (t.parent and t.parent.b) or 1;
 		elseif key == "text" then
-			return select(1, GetSpellLink(t.mountID)) or select(1, GetSpellInfo(t.mountID)) or ("Spell #" .. t.mountID);
+			return "|cffe6cc80" .. (select(1, GetSpellInfo(t.mountID)) or "???") .. "|r";
+			--return select(1, GetSpellLink(t.mountID)) or select(1, GetSpellInfo(t.mountID)) or ("Spell #" .. t.mountID);
 		elseif key == "description" then
 			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID];
 			if mountID then return select(2, C_MountJournal_GetMountInfoExtraByID(mountID)); end
@@ -3507,16 +3508,48 @@ app.CreateQuest = function(id, t)
 end
 
 -- Spell Lib
+local spellRecipeInfo = {};
 app.BaseSpell = {
 	__index = function(t, key)
 		if key == "key" then
 			return "spellID";
 		elseif key == "text" then
-			return select(1, GetSpellLink(t.spellID)) or select(1, GetSpellInfo(t.spellID)) or ("Spell #" .. t.spellID);
-		elseif key == "link" then
-			return select(1, GetSpellLink(t.spellID));
+			return t.link;
 		elseif key == "icon" then
 			return select(3, GetSpellInfo(t.spellID));
+		elseif key == "link" then
+			if t.itemID and t.f ~= 200 then
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+				if link then
+					t.link = link;
+					t.icon = icon;
+					return link;
+				end
+			end
+			return select(1, GetSpellLink(t.spellID));
+		elseif key == "collectible" then
+			if not C_TradeSkillUI.GetRecipeInfo(t.spellID, spellRecipeInfo) then
+				rawset(t, "collectible", false);
+				return false;
+			else
+				rawset(t, "collectible", true);
+				return true;
+			end
+		elseif key == "collected" then
+			if t.collectible then
+				C_TradeSkillUI.GetRecipeInfo(t.spellID, spellRecipeInfo);
+				return spellRecipeInfo and spellRecipeInfo.learned;
+			end
+		elseif key == "name" then
+			return t.itemID and GetItemInfo(t.itemID);
+		elseif key == "specs" then
+			if t.itemID then
+				return GetItemSpecInfo(t.itemID);
+			end
+		elseif key == "tsm" then
+			if t.itemID then
+				return string.format("i:%d", t.itemID);
+			end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3541,7 +3574,7 @@ app.BaseSpecies = {
 		elseif key == "f" then
 			return 101;
 		elseif key == "text" then
-			return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+			return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
 		elseif key == "icon" then
 			return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 		elseif key == "description" then
