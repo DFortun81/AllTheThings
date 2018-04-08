@@ -6002,6 +6002,7 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
+app:GetWindow("Tradeskills");
 app:GetWindow("CurrentInstance");
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
@@ -6101,6 +6102,8 @@ app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 app:RegisterEvent("TOYS_UPDATED");
+--app:RegisterEvent("TRADE_SKILL_SHOW");
+--app:RegisterEvent("TRADE_SKILL_CLOSE");
 --app:RegisterEvent("ACHIEVEMENT_EARNED");
 app:RegisterEvent("SCENARIO_UPDATE");
 app:RegisterEvent("COMPANION_LEARNED");
@@ -6391,6 +6394,11 @@ app.events.PLAYER_LOGIN = function()
 		OnLeave = MinimapButtonOnLeave,
 	})
 end
+app.events.ACHIEVEMENT_EARNED = function(achievementID, ...)
+	if achievementID then
+		print("ACHIEVEMENT_EARNED", achievementID, ...);
+	end
+end
 app.events.SCENARIO_UPDATE = RefreshLocation;
 app.events.ZONE_CHANGED_NEW_AREA = RefreshLocation;
 app.events.PLAYER_LOOT_SPEC_UPDATED = function()
@@ -6460,6 +6468,12 @@ app.events.TOYS_UPDATED = function(itemID, new)
 			if link then print(format(L("ITEM_ID_ADDED"), link, itemID)); end
 		end
 	end
+end
+app.events.TRADE_SKILL_CLOSE = function(...)
+	app:GetWindow("Tradeskills"):SetVisible(false);
+end
+app.events.TRADE_SKILL_SHOW = function(...)
+	app:GetWindow("Tradeskills"):SetVisible(true);
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	if sourceID then
