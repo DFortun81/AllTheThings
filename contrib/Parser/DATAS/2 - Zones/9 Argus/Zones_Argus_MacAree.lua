@@ -1470,11 +1470,11 @@ _.Zones =
 									}),
 									n(127476, { -- Scouting Map
 										["groups"] = {
-											model(68851, i(140495, { -- Torn Invitation [Fox Mount Quest]
-												model(68851, i(137573)), -- Reins of the Llothien Prowler
-											})),
-											model(68845, i(140320)), -- Corgnelius Pet
-											model(68860, i(140316)), -- Firebat Pup Pet
+											i(140495, { -- Torn Invitation [Fox Mount Quest]
+												i(137573), -- Reins of the Llothien Prowler
+											}),
+											i(140320), -- Corgnelius Pet
+											i(140316), -- Firebat Pup Pet
 											i(129165), -- Barnacle-Encrusted Gem Toy
 											i(130169), -- Tournament Favor
 										},
