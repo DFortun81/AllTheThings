@@ -1552,12 +1552,12 @@ _.Zones =
 									spell(202067, {		-- Blessing of the Thistleleaf
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
+											["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
 											["itemID"] = 133729,		-- Thorned Flounder (Item)
 										},
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
+											["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
 											["itemID"] = 139656,		-- Thorned Flounder (Item)
 										},
 									}),
@@ -1568,12 +1568,12 @@ _.Zones =
 								["groups"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 16,		-- Terrorfin (Criteria)
+										["criteriaID"] = 17,		-- Terrorfin (Criteria)
 										["itemID"] = 133728,		-- Terrorfin (Item)
 									},
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 16,		-- Terrorfin (Criteria)
+										["criteriaID"] = 17,		-- Terrorfin (Criteria)
 										["itemID"] = 139655,		-- Terrorfin (Item)
 									},
 								},
@@ -1613,12 +1613,12 @@ _.Zones =
 												spell(202067, {		-- Blessing of the Thistleleaf
 													{
 														["achievementID"] = 10596,	-- Bigger Fish to Fry
-														["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
+														["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
 														["itemID"] = 133729,		-- Thorned Flounder (Item)
 													},
 													{
 														["achievementID"] = 10596,	-- Bigger Fish to Fry
-														["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
+														["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
 														["itemID"] = 139656,		-- Thorned Flounder (Item)
 													},
 												}),
@@ -1629,12 +1629,12 @@ _.Zones =
 											["groups"] = {
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 16,		-- Terrorfin (Criteria)
+													["criteriaID"] = 17,		-- Terrorfin (Criteria)
 													["itemID"] = 133728,		-- Terrorfin (Item)
 												},
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 16,		-- Terrorfin (Criteria)
+													["criteriaID"] = 17,		-- Terrorfin (Criteria)
 													["itemID"] = 139655,		-- Terrorfin (Item)
 												},
 											},
