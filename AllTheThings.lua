@@ -3233,7 +3233,7 @@ app.BaseMount = {
 		elseif key == "b" then
 			return (t.parent and t.parent.b) or 1;
 		elseif key == "text" then
-			return "|cffe6cc80" .. (select(1, GetSpellInfo(t.mountID)) or "???") .. "|r";
+			return "|cffb19cd9" .. (select(1, GetSpellInfo(t.mountID)) or "???") .. "|r";
 			--return select(1, GetSpellLink(t.mountID)) or select(1, GetSpellInfo(t.mountID)) or ("Spell #" .. t.mountID);
 		elseif key == "description" then
 			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID];
@@ -3528,10 +3528,7 @@ app.BaseSpell = {
 			end
 			return select(1, GetSpellLink(t.spellID));
 		elseif key == "collectible" then
-			if not C_TradeSkillUI.GetRecipeInfo(t.spellID, spellRecipeInfo) then
-				rawset(t, "collectible", false);
-				return false;
-			else
+			if C_TradeSkillUI.GetRecipeInfo(t.spellID, spellRecipeInfo) then
 				rawset(t, "collectible", true);
 				return true;
 			end
