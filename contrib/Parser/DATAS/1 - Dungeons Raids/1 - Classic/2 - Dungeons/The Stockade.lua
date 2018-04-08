@@ -45,32 +45,39 @@ _.Instances =
 						i(63344),	-- Standard Issue Prisoner Shoes
 						i(132570),	-- Stolen Guard's Chain Boots
 					})),
-					nld({	-- Legacy
-						nlq({	-- Legacy Quests
-							qa(377, {	-- Crime and Punishment
-								un(34, i(2033)),	-- Ambassador's Boots
-								un(34, i(2906)),	-- Darkshire Mail Leggings
+					n(-40, {	-- Legacy
+						["groups"] = {
+							n(-17, {	-- Quests (Legacy)
+								qa(377, {	-- Crime and Punishment
+									un(34, i(2033)),	-- Ambassador's Boots
+									un(34, i(2906)),	-- Darkshire Mail Leggings
+								}),
+								qa(378, {	-- The Fury Runs Deep
+									un(34, i(3562)),	-- Belt of Vindication
+									un(34, i(1264)),	-- Headbasher
+								}),
+								qa(386, { 	-- What Comes Around...
+									un(34, i(1317)),	-- Hardened Root Staff 
+									un(34, i(3400)),	-- Lucine Longsword
+								}),
 							}),
-							qa(378, {	-- The Fury Runs Deep
-								un(34, i(3562)),	-- Belt of Vindication
-								un(34, i(1264)),	-- Headbasher
+							n(-16, {	-- Rares (Legacy)
+								n(1720, {	-- Bruegal Ironknuckle
+									["groups"] = {
+										un(2, i(2942)),	-- Iron Knuckles
+										un(2, i(3228)),	-- Jimmied Handcuffs
+										un(2, i(2941)),	-- Prison Shank
+									},
+									["description"] = "This is a rare that was not always present.",
+								}),
 							}),
-							qa(386, { 	-- What Comes Around...
-								un(34, i(1317)),	-- Hardened Root Staff 
-								un(34, i(3400)),	-- Lucine Longsword
+							n(  0, {	-- Zone Drop (Legacy)
+								n(1666, { 	-- Kam Deepfury
+									un(2, i(2280)),	-- Kam's Walking Stick	
+								}),
 							}),
-						}),
-						n(1666, { 	-- Kam Deepfury
-							un(34, i(2280)),	-- Kam's Walking Stick	
-						}),
-						n(1720, {	-- Bruegal Ironknuckle
-							["groups"] = {
-								un(34, i(2942)),	-- Iron Knuckles
-								un(34, i(3228)),	-- Jimmied Handcuffs
-								un(34, i(2941)),	-- Prison Shank
-							},
-							["description"] = "This is a rare that was not always present.",
-						}),
+						},
+						["u"] = 12,
 					}),
 				},
 				["Lvl"] = 15,

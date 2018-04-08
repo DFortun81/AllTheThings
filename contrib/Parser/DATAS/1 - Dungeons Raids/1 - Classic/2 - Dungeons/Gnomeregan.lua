@@ -8,79 +8,120 @@ _.Instances =
 		["groups"] = {
 			inst(231, { 	-- Gnomeregan
 				["groups"] = {
-					n(-17, {			-- Quests 			
-						qg(44018, qa(26944)),	-- Exploring Gnomeregan
+					n(-17, {			-- Quests
 						i(9326, {	-- Grime-Encrusted Ring
-							q(2945),	-- Grime-Encrusted Ring
+							q(2945, {	-- Grime-Encrusted Ring
+								["g"] = {
+								},
+								["qg"] = 6212,	-- Dark Iron Agent
+							}),
 						}),	
-						qg(2789, qa(26943)),	-- Home Sweet Gnome
-						qg(3412, qh(2950)),		-- Nogg's Ring Redo
 						o(142487, {	-- The Sparklematic 5200
-							qr(q(2953)),	-- More Sparklematic Action
-							qa(2947),		-- Return of the Ring
-							qh(2949),		-- Return of the Ring
-							q(2951),		-- The Sparklematic 5200!
-							q(2952),		-- The Sparklematic 5200!
+--[[						qr(q(2953, {	-- More Sparklematic Action
+								a(i(122207)),	-- Music Roll: Tinkertown
+								-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
+							})),	--]]
+							qa(  2947, {	-- Return of the Ring
+								["g"] = {
+								},
+								["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
+							}),
+							qh(  2949, {	-- Return of the Ring
+								["g"] = {
+								},
+								["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
+							}),
+--[[						q(   2951),		-- The Sparklematic 5200!
+							q(   2952),		-- The Sparklematic 5200!	--]]
 						}),	
-						qg(44556, qa(26939)),	-- The G-Team
-						qg(44560, qa(26941)),	-- The G-Team						
+						qa(26939, {	-- The G-Team
+							["g"] = {
+							},
+							["qg"] = 44556,	-- Murd Doc
+							["breadcrumbQuestID"] = { 26944, 26943 },	-- Exploring Gnomeregan OR Home Sweet Gnome
+						}),
+						qg(44560, qa(26941, {	-- The G-Team
+							["g"] = {
+							},
+							["sourceQuests"] = { 26939 },	-- The G-Team
+						})),
 						qg(44561, qa(26942, {	-- The G-Team
-							i(131624),	-- Barechus' Chainmail
-							i(66004),	-- Barechus' Greaves
-							i(65987),	-- G-Team Belt
-							i(131625),	-- Hann Ibal's Chain Dungarees
-							i(65913),	-- Hann Ibal's Epaulettes
-							i(65939),	-- Murd Doc's Leggings
-							i(65963),	-- Temple's Vest
+							["g"] = {
+								i( 65987),	-- G-Team Belt
+								i( 66004),	-- Barechus' Greaves
+								i( 65963),	-- Temple's Vest
+								i( 65939),	-- Murd Doc's Leggings
+								i( 65913),	-- Hann Ibal's Epaulettes
+								i(131624),	-- Barechus' Chainmail
+								i(131625),	-- Hann Ibal's Chain Dungarees
+							},
+							["sourceQuests"] = { 26941 },	-- The G-Team
 						})),
 						qg(44556, qh(50338)),	-- The G-Team
-						qg(44560, qh(50337)),	-- The G-Team			
-						qg(44561, qh(50336, {	-- The G-Team
+						qg(44560, qh(50337, {	-- The G-Team
+							["g"] = {
+							},
+							["sourceQuests"] = { 50338 },	-- The G-Team
+						})),
+						qg(44561, qh(50336, {	-- The G-Team (unknown if requires previous 2)
+							i( 65987),	-- G-Team Belt
+							i( 66004),	-- Barechus' Greaves
+							i( 65963),	-- Temple's Vest
+							i( 65939),	-- Murd Doc's Leggings
+							i( 65913),	-- Hann Ibal's Epaulettes
 							i(131624),	-- Barechus' Chainmail
-							i(66004),	-- Barechus' Greaves
-							i(65987),	-- G-Team Belt
 							i(131625),	-- Hann Ibal's Chain Dungarees
-							i(65913),	-- Hann Ibal's Epaulettes
-							i(65939),	-- Murd Doc's Leggings
-							i(65963),	-- Temple's Vest
-						})),						
-						nlq({		-- Legacy Quests
-							q(2904, {	-- A Fine Mess
-								un(34, i(9536)),	-- Fairywing Mantle 
-								un(34, i(9535)),	-- Fire-welded Bracers
-							}),
-							qa(2930, {	-- Data Rescue
-								un(34, i(9604)),	-- Mechanic's Pipehammer 
-								un(34, i(9605)),	-- Repairman's Cape
-							}),
-							qa(2928, { 	-- Gyrodrillmatic Excavationators
-								un(34, i(9609)),	-- Shilly Mitts 
-								un(34, i(9608)),	-- Shoni's Disarming Tool
-							}),
-							qh(2841, {	-- Rig Wars
-								un(34, i(9623)),	-- Civinad Robes 
-								un(34, i(9625)),	-- Dual Reinforced Leggings
-								un(34, i(9624)),	-- Triprunner Dungarees
-							}),
-							qa(2929, {	-- The Grand Betrayal
-								un(34, i(9623)),	-- Civinad Robes 
-								un(34, i(9625)),	-- Dual Reinforced Leggings
-								un(34, i(9624)),	-- Triprunner Dungarees
-							}),
-						}),
+						})),
 					}),
 					n(0, {				-- Zone Drop
 						i(9510),	-- Caverndeep Trudgers
 						i(9308, {	-- Grime-Encrusted Object
 							q(2952, { 	-- The Sparklematic 5200!
-								q(2953, {	-- More Sparklematic Action (repeatable)
+								qr(q(2953, {	-- More Sparklematic Action
 									i(9363, {	-- Sparklematic-Wrapped Box
 										["groups"] = {
 											a(i(122207)),	-- Music Roll: Tinkertown
+											-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
 										},
-										["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparkle-Matic 5200 and open the box it gives you.\nThis is NOT a guaranteed drop."
+										["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200 and open the box it gives you.\nThis is NOT a guaranteed drop."
+									}),
+								})),
+--[[							q(4601, {	-- More Sparklematic Action
+									i(9363, {	-- Sparklematic-Wrapped Box
+										a(i(122207)),	-- Music Roll: Tinkertown
+										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
 									}),
 								}),
+								q(4602, {	-- More Sparklematic Action
+									i(9363, {	-- Sparklematic-Wrapped Box
+										a(i(122207)),	-- Music Roll: Tinkertown
+										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
+									}),
+								}),
+								qr(q(4603, {	-- More Sparklematic Action
+									i(9363, {	-- Sparklematic-Wrapped Box
+										a(i(122207)),	-- Music Roll: Tinkertown
+										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
+									}),
+								})),
+								qr(q(4604, {	-- More Sparklematic Action
+									i(9363, {	-- Sparklematic-Wrapped Box
+										a(i(122207)),	-- Music Roll: Tinkertown
+										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
+									}),
+								})),
+								q(4605, {	-- More Sparklematic Action
+									i(9363, {	-- Sparklematic-Wrapped Box
+										a(i(122207)),	-- Music Roll: Tinkertown
+										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
+									}),
+								}),
+								q(4606, {	-- More Sparklematic Action
+									i(9363, {	-- Sparklematic-Wrapped Box
+										a(i(122207)),	-- Music Roll: Tinkertown
+										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
+									}),
+								}), --]]
 							}),	
 						}),
 						i(9491),	-- Hotshot Pilot's Gloves
@@ -261,16 +302,38 @@ _.Instances =
 							i(11825),	-- Pet Bombling
 						}),	
 					})),
-					n(-100, { 			-- Legacy
-						n(-17, { -- Quests
-							["groups"] = {
-								qg(6579, q(2928, { -- Gyrodrillmatic Excavationators
-									un(34, i(9608)), -- Shoni's Disarming Tool
-									un(34, i(9609)), -- Shilly Mitts
-								})),
-							},
-							["u"] = 12,
-						}),
+					n(-40, {	-- Legacy
+						["groups"] = {
+							n(-17, {	-- Quests (Legacy)
+								q( 2904, {	-- A Fine Mess
+									un(34, i(9536)),	-- Fairywing Mantle 
+									un(34, i(9535)),	-- Fire-welded Bracers
+								}),
+								qa(2930, {	-- Data Rescue
+									un(34, i(9604)),	-- Mechanic's Pipehammer 
+									un(34, i(9605)),	-- Repairman's Cape
+								}),
+								qa(2928, { 	-- Gyrodrillmatic Excavationators
+									un(34, i(9609)),	-- Shilly Mitts 
+									un(34, i(9608)),	-- Shoni's Disarming Tool
+								}),
+								qh(2841, {	-- Rig Wars
+									un(34, i(9623)),	-- Civinad Robes 
+									un(34, i(9625)),	-- Dual Reinforced Leggings
+									un(34, i(9624)),	-- Triprunner Dungarees
+								}),
+								qa(2929, {	-- The Grand Betrayal
+									un(34, i(9623)),	-- Civinad Robes 
+									un(34, i(9625)),	-- Dual Reinforced Leggings
+									un(34, i(9624)),	-- Triprunner Dungarees
+								}),
+							}),
+							--n(-16, {	-- Rares (Legacy)
+							--}),
+							--n(  0, {	-- Zone Drop (Legacy)
+							--}),
+						},
+						["u"] = 12,
 					}),
 				},
 				["Lvl"] = 19,

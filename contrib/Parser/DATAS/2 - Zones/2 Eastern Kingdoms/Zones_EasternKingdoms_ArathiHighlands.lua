@@ -461,7 +461,7 @@ _.Zones =
 					}),
 					
 -- DUNGEON QUESTS
-					qdg(qa(26943, {	-- Home Sweet Gnome
+					qdg(qa(26943, {	-- Home Sweet Gnome (mutually exclusive with 26944 "Exploring Gnomeregan")
 						["groups"] = {
 						},
 						["qg"] = 2789,	-- Skuerto

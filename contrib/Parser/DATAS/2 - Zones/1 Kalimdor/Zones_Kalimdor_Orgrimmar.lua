@@ -1218,7 +1218,13 @@ Legacy				qh( 1436),	-- Alliance Relations
 					})),
 					qp755(qg(50482, qh(25158))),	-- Nibbler! No!
 					qp129(qg(43239, qh(26556))),	-- No Dumping Allowed
-					qdg(qg(3412, qh( 2950))),	-- Nogg's Ring Redo
+--]]
+					qdg(qg(3412, qh(2950, {	-- Nogg's Ring Redo
+						["g"] = {
+						},
+						["sourceQuests"] = { 2949 },	-- Return of the Ring
+					}))),
+--[[
 					qg(43062, qh(26417)),	-- Northern Stranglethorn: The Fallen Empire
 					qp755(qg(50482, qh(25161))),	-- Ogrezonians in the Mood
 --]]					
