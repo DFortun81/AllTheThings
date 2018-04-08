@@ -655,6 +655,7 @@ AllTheThings.Locales.enUS = {
 		[-9952] = "Interface\\Icons\\ClassIcon_Druid", 							-- Guardian / Feral Spec
 		[-9953] = "Interface\\Icons\\ClassIcon_Warrior", 						-- Arms / Fury Spec
 		[-9954] = "Interface\\Icons\\ClassIcon_DeathKnight", 					-- Frost / Unholoy Spec
+		[-100001] = "Interface\\Icons\\inv_artifact_tome01", 					-- AK Research Book
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",

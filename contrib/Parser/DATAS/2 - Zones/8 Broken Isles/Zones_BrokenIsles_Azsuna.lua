@@ -2250,6 +2250,16 @@ _.Zones =
 				}),
 				n(-38, { 	-- Profession
 					prof(356, 7620, { -- Fishing
+						n(-100001, { 	-- Artifact
+							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["lvl"] = 110,
+							["groups"] = {
+								{
+									["itemID"] = 133887,	-- Luminous Pearl (Item)
+									["questID"] = 40960,	-- Luminous Pearl (Quest)
+								}
+							},
+						}),
 						ach(10596, {	-- Bigger Fish to Fry
 							n(-218, {		-- Coastal
 								i(133722, {		-- Axefish Lure
