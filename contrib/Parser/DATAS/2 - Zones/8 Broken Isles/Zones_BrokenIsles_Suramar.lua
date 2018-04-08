@@ -664,9 +664,9 @@ _.Zones =
 								i(136914), -- Leyline Broodling
 							}),
 							n(109564, { -- Glimmering Treasure Chest
-								model(68851, i(140495, { -- Torn Invitation [Fox Mount Quest]
-									model(68851, i(137573)), -- Reins of the Llothien Prowler
-								})),
+								i(140495, { -- Torn Invitation [Fox Mount Quest]
+									i(137573), -- Reins of the Llothien Prowler
+								}),
 								i(141296),	-- Ancient Mana Basin
 								i(141297),	-- Arcano-Shower
 								i(141298),	-- Displacer Meditation Stone
