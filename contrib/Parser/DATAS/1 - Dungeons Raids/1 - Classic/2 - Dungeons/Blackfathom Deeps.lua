@@ -9,50 +9,20 @@ _.Instances =
 			inst(227, { 	-- Blackfathom Deeps
 				["groups"] = {
 					n(-17, {			-- Quests 
-						qg(3845, qa(26897)),	-- Blackfathom Deeps
 						qg(75606, qa(34672, { 	-- The Rise of Aku'mai
-							i(65986),	-- Shield Against the Evil Presence
-							i(65962),	-- Thaelrid's Greaves
-							i(65938),	-- Blackfathom Leggings
-							i(65911),	-- Robe of Kelris
+							i( 65986),	-- Shield Against the Evil Presence
+							i( 65962),	-- Thaelrid's Greaves
+							i( 65938),	-- Blackfathom Leggings
+							i( 65911),	-- Robe of Kelris
 							i(131713),	-- Scales of Aku'mai
 						})),
 						qg(74409, qh(34673, { 	-- The Rise of Aku'mai
-							i(66039),	-- Shield Against the Evil Presence
-							i(66030),	-- Plates of Aku'mai
-							i(66021),	-- Blackfathom Leggings
+							i( 66030),	-- Plates of Aku'mai
+							i( 66039),	-- Shield Against the Evil Presence
+							i( 66021),	-- Blackfathom Leggings
+							i( 66012),	-- Je'neu's Robes
 							i(131714),	-- Blackfathom Chain Leggings
-							i(66012),	-- Je'neu's Robes
-						})),	
-						nlq({		-- Legacy Quests
-							qh(6922, {	-- Baron Aquanis
-								un(34, i(16886)),	-- Outlaw Sabre
-								un(34, i(16887)),	-- Witch's Finger
-							}),
-							qa(1200, {	-- Blackfathom Villainy
-								un(34, i(7001)),	-- Gravestone Scepter
-								un(34, i(7002)),	-- Arctic Buckler
-							}),
-							qh(6561, {	-- Blackfathom Villainy
-								un(34, i(7001)),	-- Gravestone Scepter
-								un(34, i(7002)),	-- Arctic Buckler
-							}),
-							qa(26885, {	-- Knowledge in the Deeps
-								un(34, i(56660)),	-- Dusk-Stained Cloak
-								un(34, i(56658)),	-- Eventide Bow
-							}),
-							qa(1275, {	-- Researching the Corruption
-								un(34, i(7003)),	-- Beetle Clasps
-								un(34, i(7004)),	-- Prelacy Cape
-							}),	
-							qa(26883, {	-- Twilight Falls
-								un(34, i(56699)),	-- Aluwyn's Legguards
-								un(34, i(56697)),	-- Blackfathom Mace
-								un(34, i(56698)),	-- Gift of the Enigmatic Tree
-								un(34, i(7000)),	-- Heartwood Girdle
-								un(34, i(6998)),	-- Nimbus Boots
-							}),
-						}),
+						})),
 					}),	
 					n(0, {				-- Zone Drop
 						n(74721, {	-- Blindlight Bilefin	
@@ -263,6 +233,44 @@ _.Instances =
 						i(6910),	-- Leech Pants
 						i(151441),	-- Aku'mai Worshipper's Greatboots
 					})),
+					n(-40, {	-- Legacy
+						["groups"] = {
+							n(-17, {	-- Quests (Legacy)
+								qh(6922, {	-- Baron Aquanis
+									un(34, i(16886)),	-- Outlaw Sabre
+									un(34, i(16887)),	-- Witch's Finger
+								}),
+								qa(1200, {	-- Blackfathom Villainy
+									un(34, i(7001)),	-- Gravestone Scepter
+									un(34, i(7002)),	-- Arctic Buckler
+								}),
+								qh(6561, {	-- Blackfathom Villainy
+									un(34, i(7001)),	-- Gravestone Scepter
+									un(34, i(7002)),	-- Arctic Buckler
+								}),
+								qa(26885, {	-- Knowledge in the Deeps
+									un(34, i(56660)),	-- Dusk-Stained Cloak
+									un(34, i(56658)),	-- Eventide Bow
+								}),
+								qa(1275, {	-- Researching the Corruption
+									un(34, i(7003)),	-- Beetle Clasps
+									un(34, i(7004)),	-- Prelacy Cape
+								}),	
+								qa(26883, {	-- Twilight Falls
+									un(34, i(56699)),	-- Aluwyn's Legguards
+									un(34, i(56697)),	-- Blackfathom Mace
+									un(34, i(56698)),	-- Gift of the Enigmatic Tree
+									un(34, i( 7000)),	-- Heartwood Girdle
+									un(34, i( 6998)),	-- Nimbus Boots
+								}),
+							}),
+							--n(-16, {	-- Rares (Legacy)
+							--}),
+							--n(  0, {	-- Zone Drop (Legacy)
+							--}),
+						},
+						["u"] = 12,
+					}),
 				},
 				["Lvl"] = 15,
 				["mapID"] = 688

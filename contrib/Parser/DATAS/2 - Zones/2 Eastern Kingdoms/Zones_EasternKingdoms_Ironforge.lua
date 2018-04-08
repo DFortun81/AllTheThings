@@ -649,7 +649,13 @@ _.Zones =
 					})),
 					qg(6569, qa( 2039)),	-- Find Bingles
 					qg(6031, qa( 1618)),	-- Gearing Redridge
-					qdg(qg(6826, qa( 2948))),	-- Gnome Improvement
+--]]
+					qdg(qg(6826, qa( 2948, {	-- Gnome Improvement
+						["g"] = {
+						},
+						["sourceQuests"] = { 2947 },	-- Return of the Ring
+					}))),
+--[[
 					qp202(qg(5174, q 29477))),	-- Gnomish Engineering
 					qp202(qg(5174, q 29475))),	-- Goblin Engineering
 					qg(4256, qa( 6388, {	-- Gryth Thurden
