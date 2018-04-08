@@ -1472,12 +1472,12 @@ _.Zones =
 								["groups"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 18,		-- Thundering Stormray (Criteria)
+										["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
 										["itemID"] = 133736,		-- Thundering Stormray (Item)
 									},
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 18,		-- Thundering Stormray (Criteria)
+										["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
 										["itemID"] = 139663,		-- Thundering Stormray (Item)
 									},
 								},

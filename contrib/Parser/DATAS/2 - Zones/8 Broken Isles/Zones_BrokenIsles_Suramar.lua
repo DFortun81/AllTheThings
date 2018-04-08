@@ -1544,12 +1544,12 @@ _.Zones =
 								["groups"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 15,		-- Tainted Runescale Koi (Criteria)
+										["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
 										["itemID"] = 133739,		-- Tainted Runescale Koi (Item)
 									},
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 15,		-- Tainted Runescale Koi (Criteria)
+										["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
 										["itemID"] = 139666,		-- Tainted Runescale Koi (Item)
 									},
 								},
@@ -1577,12 +1577,12 @@ _.Zones =
 										["groups"] = {
 											{
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 14,		-- Seerspine Puffer (Criteria)
+												["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
 												["itemID"] = 133738,		-- Seerspine Puffer (Item)
 											},
 											{
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 14,		-- Seerspine Puffer (Criteria)
+												["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
 												["itemID"] = 139665,		-- Seerspine Puffer (Item)
 											},
 										},

@@ -75,12 +75,12 @@ profession(356, 7620, { 	-- Fishing
 			["groups"] = {
 				{
 					["achievementID"] = 10596,	-- Bigger Fish to Fry
-					["criteriaID"] = 15,		-- Tainted Runescale Koi (Criteria)
+					["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
 					["itemID"] = 133739,		-- Tainted Runescale Koi (Item)
 				},
 				{
 					["achievementID"] = 10596,	-- Bigger Fish to Fry
-					["criteriaID"] = 15,		-- Tainted Runescale Koi (Criteria)
+					["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
 					["itemID"] = 139666,		-- Tainted Runescale Koi (Item)
 				},
 			},
@@ -91,12 +91,12 @@ profession(356, 7620, { 	-- Fishing
 				spell(202067, {		-- Blessing of the Thistleleaf
 					{
 						["achievementID"] = 10596,	-- Bigger Fish to Fry
-						["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
+						["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
 						["itemID"] = 133729,		-- Thorned Flounder (Item)
 					},
 					{
 						["achievementID"] = 10596,	-- Bigger Fish to Fry
-						["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
+						["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
 						["itemID"] = 139656,		-- Thorned Flounder (Item)
 					},
 				}),
@@ -160,12 +160,12 @@ profession(356, 7620, { 	-- Fishing
 			["groups"] = {
 				{
 					["achievementID"] = 10596,	-- Bigger Fish to Fry
-					["criteriaID"] = 16,		-- Terrorfin (Criteria)
+					["criteriaID"] = 17,		-- Terrorfin (Criteria)
 					["itemID"] = 133728,		-- Terrorfin (Item)
 				},
 				{
 					["achievementID"] = 10596,	-- Bigger Fish to Fry
-					["criteriaID"] = 16,		-- Terrorfin (Criteria)
+					["criteriaID"] = 17,		-- Terrorfin (Criteria)
 					["itemID"] = 139655,		-- Terrorfin (Item)
 				},
 			},
@@ -259,12 +259,12 @@ profession(356, 7620, { 	-- Fishing
 			["groups"] = {
 				{
 					["achievementID"] = 10596,	-- Bigger Fish to Fry
-					["criteriaID"] = 18,		-- Thundering Stormray (Criteria)
+					["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
 					["itemID"] = 133736,		-- Thundering Stormray (Item)
 				},
 				{
 					["achievementID"] = 10596,	-- Bigger Fish to Fry
-					["criteriaID"] = 18,		-- Thundering Stormray (Criteria)
+					["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
 					["itemID"] = 139663,		-- Thundering Stormray (Item)
 				},
 			},
@@ -285,12 +285,12 @@ profession(356, 7620, { 	-- Fishing
 					["groups"] = {
 						{
 							["achievementID"] = 10596,	-- Bigger Fish to Fry
-							["criteriaID"] = 14,		-- Seerspine Puffer (Criteria)
+							["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
 							["itemID"] = 133738,		-- Seerspine Puffer (Item)
 						},
 						{
 							["achievementID"] = 10596,	-- Bigger Fish to Fry
-							["criteriaID"] = 14,		-- Seerspine Puffer (Criteria)
+							["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
 							["itemID"] = 139665,		-- Seerspine Puffer (Item)
 						},
 					},
@@ -422,13 +422,11 @@ profession(356, 7620, { 	-- Fishing
 				["achievementID"] = 10596,	-- Bigger Fish to Fry
 				["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
 				["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
-				
 			},
 			{
 				["achievementID"] = 10596,	-- Bigger Fish to Fry
 				["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
 				["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-				
 			},
 			{
 				["achievementID"] = 10596,	-- Bigger Fish to Fry
@@ -552,53 +550,53 @@ profession(356, 7620, { 	-- Fishing
 			},
 			{
 				["achievementID"] = 10596,	-- Bigger Fish to Fry
-				["criteriaID"] = 14,		-- Seerspine Puffer (Criteria)
-				["itemID"] = 133738,		-- Seerspine Puffer (Item)
-			},
-			{
-				["achievementID"] = 10596,	-- Bigger Fish to Fry
-				["criteriaID"] = 14,		-- Seerspine Puffer (Criteria)
-				["itemID"] = 139665,		-- Seerspine Puffer (Item)
-			},
-			{
-				["achievementID"] = 10596,	-- Bigger Fish to Fry
-				["criteriaID"] = 15,		-- Tainted Runescale Koi (Criteria)
+				["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
 				["itemID"] = 133739,		-- Tainted Runescale Koi (Item)
 			},
 			{
 				["achievementID"] = 10596,	-- Bigger Fish to Fry
-				["criteriaID"] = 15,		-- Tainted Runescale Koi (Criteria)
+				["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
 				["itemID"] = 139666,		-- Tainted Runescale Koi (Item)
 			},
 			{
 				["achievementID"] = 10596,	-- Bigger Fish to Fry
-				["criteriaID"] = 16,		-- Terrorfin (Criteria)
-				["itemID"] = 133728,		-- Terrorfin (Item)
-			},
-			{
-				["achievementID"] = 10596,	-- Bigger Fish to Fry
-				["criteriaID"] = 16,		-- Terrorfin (Criteria)
-				["itemID"] = 139655,		-- Terrorfin (Item)
-			},
-			{
-				["achievementID"] = 10596,	-- Bigger Fish to Fry
-				["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
-				["itemID"] = 133729,		-- Thorned Flounder (Item)
-			},
-			{
-				["achievementID"] = 10596,	-- Bigger Fish to Fry
-				["criteriaID"] = 17,		-- Thorned Flounder (Criteria)
-				["itemID"] = 139656,		-- Thorned Flounder (Item)
-			},
-			{
-				["achievementID"] = 10596,	-- Bigger Fish to Fry
-				["criteriaID"] = 18,		-- Thundering Stormray (Criteria)
+				["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
 				["itemID"] = 133736,		-- Thundering Stormray (Item)
 			},
 			{
 				["achievementID"] = 10596,	-- Bigger Fish to Fry
-				["criteriaID"] = 18,		-- Thundering Stormray (Criteria)
+				["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
 				["itemID"] = 139663,		-- Thundering Stormray (Item)
+			},
+			{
+				["achievementID"] = 10596,	-- Bigger Fish to Fry
+				["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
+				["itemID"] = 133738,		-- Seerspine Puffer (Item)
+			},
+			{
+				["achievementID"] = 10596,	-- Bigger Fish to Fry
+				["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
+				["itemID"] = 139665,		-- Seerspine Puffer (Item)
+			},
+			{
+				["achievementID"] = 10596,	-- Bigger Fish to Fry
+				["criteriaID"] = 17,		-- Terrorfin (Criteria)
+				["itemID"] = 133728,		-- Terrorfin (Item)
+			},
+			{
+				["achievementID"] = 10596,	-- Bigger Fish to Fry
+				["criteriaID"] = 17,		-- Terrorfin (Criteria)
+				["itemID"] = 139655,		-- Terrorfin (Item)
+			},
+			{
+				["achievementID"] = 10596,	-- Bigger Fish to Fry
+				["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
+				["itemID"] = 133729,		-- Thorned Flounder (Item)
+			},
+			{
+				["achievementID"] = 10596,	-- Bigger Fish to Fry
+				["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
+				["itemID"] = 139656,		-- Thorned Flounder (Item)
 			},
 		}),
 		ach(11725, { 	-- Fisherfriend of the Isles
