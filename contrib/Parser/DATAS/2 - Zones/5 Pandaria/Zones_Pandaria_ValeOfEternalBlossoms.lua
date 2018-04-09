@@ -108,6 +108,16 @@ _.Zones =
 					qa( 32315),	-- Anduin's Plea
 					qh( 31377),	-- Attack At The Temple of the Jade Serpent
 					qa( 31376),	-- Attack At The Temple of the Jade Serpent
+--]]
+--[[ CHALLENGE MODE DAILIES -- REMOVED?
+					qdg(qa(32006, {	-- A Worthy Challenge: Flameweaver Koegler
+						i(98134),	-- Heroic Cache of Treasures
+					})),
+					qdg(qh(31527, {	-- A Worthy Challenge: Flameweaver Koegler
+						i(98134),	-- Heroic Cache of Treasures
+					})),
+--]]
+--[[
 					q(32603),	-- Beasts of Fable
 					q(32604),	-- Beasts of Fable Book I
 					q(32868),	-- Beasts of Fable Book II

@@ -11,7 +11,7 @@ _.Instances =
 					d(2, {		-- Heroic
 						["groups"] = {
 							n(-17, {	-- Quests 					
-								q(31497, {
+								qg(64764, q(31497, {	-- Just for Safekeeping, Of Course
 									i(87370),	-- Waistguard of the Phalanx
 									i(87371),	-- Scarlet Champion's Belt
 									i(87372),	-- Verdone's Chewed Waistplate
@@ -21,7 +21,8 @@ _.Instances =
 									i(87376),	-- Scholarly Cord
 									i(87377),	-- Scarlet Archer's Links
 									i(87378),	-- Loksey's Lost Belt
-								}),
+								})),
+								qg(64764, q(31495)),	-- Rank and File
 							}),
 							cr(59303, e(660, {	-- Houndmaster Braun
 								i(144190),	-- Houndmaster's Compound Crossbow
