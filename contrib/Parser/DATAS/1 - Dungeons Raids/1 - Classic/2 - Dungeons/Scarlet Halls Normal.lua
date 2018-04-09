@@ -9,6 +9,10 @@ _.Instances =
 			inst(311, { 	-- Scarlet Halls
 				["groups"] = {
 					d(1, {		-- Normal
+						n(-17, {	-- Quests
+							qg(64738, q(31493)),	-- Just for Safekeeping, Of Course
+							qg(64738, q(31490)),	-- Rank and File
+						}),
 						cr(59303, e(660, {	-- Houndmaster Braun
 							i(88264),	-- Houndmaster's Compound Crossbow
 							i(88268),	-- Canine Commander's Breastplate

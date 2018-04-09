@@ -96,8 +96,8 @@ _.NeverImplemented =
 	un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 	un(1, i(56702)),	-- Saw Blade (never made it to live)
 	un(1, i(5255)),	-- Quilboar Tomahawk
+	un(1, i(7027)),	-- Boots of Darkness
 --[[	un(1, i()),	-- 
-	un(1, i()),	-- 
 	un(1, i()),	-- 
 	un(1, i()),	-- 
 	un(1, i()),	-- 

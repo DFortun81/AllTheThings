@@ -1115,6 +1115,11 @@ _.Zones =
 								un(34, i(6664)),	-- Voodoo Mantle
 								un(34, i(6665)),	-- Hexed Bracers
 							}),
+							qa(1081, {	-- Reception from Tyrande
+								un(34, i(7334)),	-- Efflorescent Robe
+								un(34, i(7335)),	-- Grizzly Tunic
+								un(34, i(7336)),	-- Wildwood Chain
+							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(4015, { 	-- Pridewing Patriarch

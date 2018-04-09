@@ -27,18 +27,10 @@ _.Instances =
 						},						
 						["achievementID"] = 913, -- To Honor One's Elders						
 					}),							
-					n(-17, {	-- Quests 			
-						q(27692, {	-- Prince Theradras
-							i(131682),	-- Boots of Endless Vitality
-							i(131681),	-- Leggings of Flourishing Vigor
-							i(65969),	-- Leggings of the Verdant Oasis
-							i(65992),	-- Pauldrons of the Promise
-							i(65945),	-- Sandals of Glorious Life
-							i(66008),	-- Shield of Maraudon
-							i(65919),	-- Zaetar's Gloves
-						}),
-					}),	
 					n(-70, { -- Foulspore Cavern [Orange]
+						n(-17, {	-- Quests
+							q(27698),	-- Servants of Theradras
+						}),
 						cr(13282, e(423, {	-- Noxxion
 							i(17745),	-- Noxious Shooter
 							i(151450),	-- Chainmail of the Noxious Hollow
@@ -56,6 +48,9 @@ _.Instances =
 						})),
 					}),
 					n(-71, { -- The Wicked Grotto [Purple]
+						n(-17, {	-- Quests
+							q(27697),	-- Corruption in Maraudon
+						}),
 						cr(13601, e(425, {	-- Tinkerer Gizlock
 							i(17719),	-- Inventor's Focal Sword
 							i(17717),	-- Megashot Rifle
@@ -75,6 +70,17 @@ _.Instances =
 						}),
 					}),
 					n(-69, { -- Maraudon Portal
+						n(-17, {	-- Quests 			
+							q(27692, {	-- Princess Theradras
+								i(131682),	-- Boots of Endless Vitality
+								i(131681),	-- Leggings of Flourishing Vigor
+								i(65969),	-- Leggings of the Verdant Oasis
+								i(65992),	-- Pauldrons of the Promise
+								i(65945),	-- Sandals of Glorious Life
+								i(66008),	-- Shield of Maraudon
+								i(65919),	-- Zaetar's Gloves
+							}),
+						}),	
 						cr(12225, e(428, {	-- Celebras the Cursed
 							i(17738),	-- Claw of Celebras
 							i(132561),	-- Corrupted Keeper's Band
