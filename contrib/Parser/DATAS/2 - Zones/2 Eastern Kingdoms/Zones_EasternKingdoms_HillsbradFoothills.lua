@@ -1595,6 +1595,11 @@ _.Zones =
 								un(34, i(3733)),	-- Orcish War Chain
 	--							un( 8, i(3734)),	-- Recipe: Big Bear Steak
 							}),
+							qh(2938, {	-- Venom to the Undercity
+								un(34, i( 9649)),	-- Royal Highmark Vestments
+								un(34, i( 9650)),	-- Honorguard Chestpiece
+								un(34, i(10686)),	-- Aegis of Battle
+							}),
 							qh(1051, { 	-- Vorrel's Revenge
 								i(4643), 	-- Grimsteel Cape
 								i(7750), 	-- Mantle of Woe

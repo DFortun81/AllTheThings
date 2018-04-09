@@ -1367,6 +1367,10 @@ _.Zones =
 								un(34, i(15469)),	-- Windsong Cinch
 								un(34, i(15468)),	-- Windsong Drape
 							}),
+							qdg(q(2770, {	-- Gahz'rilla (may have been Horde-only)
+								un(34, i( 9653)),	-- Speedy Racer Goggles
+								un(34, i(11122)),	-- Carrot on a Stick
+							})),
 							qh(1184, {	-- Parts of the Swarm
 								un(34, i(6737)),	-- Dryleaf Pants
 								un(34, i(6738)),	-- Bleeding Crescent

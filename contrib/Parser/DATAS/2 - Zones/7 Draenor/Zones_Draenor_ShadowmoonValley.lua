@@ -701,7 +701,7 @@ _.Zones =
 					}),
 					o(232587, { 	-- Uzko's Knickknacks
 						["groups"] = {	
-							dr(100, i(113546)),	-- Uzko's Dusty Boots
+							un(15, dr(100, i(113546))),	-- Uzko's Dusty Boots
 						},
 						["questID"] = 33540,
 						["icon"] = "Interface\\Icons\\inv_misc_chamferchest01",	
