@@ -368,6 +368,133 @@ _.WorldEvents =
 						},
 						["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.|r",	-- Again, saying 89 because at level 90 you can no longer queue for this.
 					})),
+					i(98134, {	-- Heroic Cache of Treasures
+						["groups"] = {
+							i(98209),	-- Ale-Boiled Bindings
+							i(98203),	-- Ale-Boiled Boots
+							i(98206),	-- Ale-Boiled Britches
+							i(98204),	-- Ale-Boiled Gloves
+							i(98205),	-- Ale-Boiled Hood
+							i(98202),	-- Ale-Boiled Jerkin
+							i(98207),	-- Ale-Boiled Shoulders
+							i(98208),	-- Ale-Boiled Waistband
+							i(98239),	-- Doubtcrusher Breastplate
+							i(98237),	-- Doubtcrusher Drape
+							i(98241),	-- Doubtcrusher Gauntlets
+							i(98245),	-- Doubtcrusher Girdle
+							i(98242),	-- Doubtcrusher Helm
+							i(98243),	-- Doubtcrusher Legplates
+							i(98238),	-- Doubtcrusher Neck
+							i(98244),	-- Doubtcrusher Pauldrons
+							i(98240),	-- Doubtcrusher Sabatons
+							i(98247),	-- Doubtcrusher Seal
+							i(98246),	-- Doubtcrusher Vambraces
+							i(98226),	-- Heartlander's Cloak
+							i(98233),	-- Heartlander's Cord
+							i(98230),	-- Heartlander's Cowl
+							i(98229),	-- Heartlander's Handwraps
+							i(98231),	-- Heartlander's Leggings
+							i(98235),	-- Heartlander's Necklace
+							i(98227),	-- Heartlander's Robe
+							i(98228),	-- Heartlander's Sandals
+							i(98232),	-- Heartlander's Shoulderpads
+							i(98236),	-- Heartlander's Signet
+							i(98234),	-- Heartlander's Wristwraps
+							i(98278),	-- Immaculate Pandaren Axe
+							i(98279),	-- Immaculate Pandaren Axe
+							i(98318),	-- Immaculate Pandaren Axe
+							i(98265),	-- Immaculate Pandaren Broadaxe
+							i(98314),	-- Immaculate Pandaren Broadaxe
+							i(98324),	-- Immaculate Pandaren Cane
+							i(98267),	-- Immaculate Pandaren Crossbow
+							i(98275),	-- Immaculate Pandaren Dagger
+							i(98262),	-- Immaculate Pandaren Greatsword
+							i(98312),	-- Immaculate Pandaren Greatsword
+							i(98269),	-- Immaculate Pandaren Gun
+							i(98263),	-- Immaculate Pandaren Hammer
+							i(98313),	-- Immaculate Pandaren Hammer
+							i(98277),	-- Immaculate Pandaren Knuckles
+							i(98280),	-- Immaculate Pandaren Knuckles
+							i(98317),	-- Immaculate Pandaren Knuckles
+							i(98271),	-- Immaculate Pandaren Mace
+							i(98274),	-- Immaculate Pandaren Mace
+							i(98323),	-- Immaculate Pandaren Protector
+							i(98325),	-- Immaculate Pandaren Rod
+							i(98276),	-- Immaculate Pandaren Scepter
+							i(98322),	-- Immaculate Pandaren Shield
+							i(98260),	-- Immaculate Pandaren Spear
+							i(98266),	-- Immaculate Pandaren Spear
+							i(98315),	-- Immaculate Pandaren Spear
+							i(98270),	-- Immaculate Pandaren Spellblade
+							i(98321),	-- Immaculate Pandaren Spellblade
+							i(98261),	-- Immaculate Pandaren Staff
+							i(98264),	-- Immaculate Pandaren Staff
+							i(98319),	-- Immaculate Pandaren Staff
+							i(98272),	-- Immaculate Pandaren Sword
+							i(98273),	-- Immaculate Pandaren Sword
+							i(98316),	-- Immaculate Pandaren Sword
+							i(98268),	-- Immaculate Pandaren Wand
+							i(98320),	-- Immaculate Pandaren Wand
+							i(98198),	-- Jinyu Seer's Cord
+							i(98195),	-- Jinyu Seer's Cowl
+							i(98194),	-- Jinyu Seer's Handwraps
+							i(98196),	-- Jinyu Seer's Leggings
+							i(98192),	-- Jinyu Seer's Robe
+							i(98193),	-- Jinyu Seer's Sandals
+							i(98197),	-- Jinyu Seer's Shoulderpads
+							i(98199),	-- Jinyu Seer's Wristwraps
+							i(98218),	-- Lightning Pillar Breastplate							
+							i(98220),	-- Lightning Pillar Gauntlets
+							i(98224),	-- Lightning Pillar Girdle
+							i(98221),	-- Lightning Pillar Helm
+							i(98222),	-- Lightning Pillar Legplates
+							i(98223),	-- Lightning Pillar Pauldrons
+							i(98219),	-- Lightning Pillar Sabatons
+							i(98225),	-- Lightning Pillar Vambraces
+							i(98189),	-- Mist Splitter's Choker
+							i(98172),	-- Mist Splitter's Cloak
+							i(98190),	-- Mist Splitter's Ring
+							i(98216),	-- Mountaineer's Belt
+							i(98217),	-- Mountaineer's Bracers
+							i(98212),	-- Mountaineer's Gauntlets
+							i(98211),	-- Mountaineer's Greaves
+							i(98213),	-- Mountaineer's Helm
+							i(98214),	-- Mountaineer's Legguards
+							i(98215),	-- Mountaineer's Spaulders
+							i(98210),	-- Mountaineer's Vest
+							i(98187),	-- Perpetual Static Belt
+							i(98188),	-- Perpetual Static Bracers
+							i(98183),	-- Perpetual Static Gauntlets
+							i(98182),	-- Perpetual Static Greaves
+							i(98184),	-- Perpetual Static Helm
+							i(98185),	-- Perpetual Static Legguards
+							i(98186),	-- Perpetual Static Spaulders
+							i(98181),	-- Perpetual Static Vest
+							i(98191),	-- Sha-Seeker Cloak
+							i(98200),	-- Sha-Seeker Collar
+							i(98201),	-- Sha-Seeker Ring
+ 							i(98250),	-- Thunder Bastion Breastplate
+							i(98248),	-- Thunder Bastion Drape
+							i(98252),	-- Thunder Bastion Gauntlets
+							i(98256),	-- Thunder Bastion Girdle
+							i(98253),	-- Thunder Bastion Helm
+							i(98254),	-- Thunder Bastion Legplates
+							i(98249),	-- Thunder Bastion Neck
+							i(98255),	-- Thunder Bastion Pauldrons
+							i(98251),	-- Thunder Bastion Sabatons
+							i(98258),	-- Thunder Bastion Seal
+							i(98257),	-- Thunder Bastion Vambraces
+							i(98180),	-- Tidesplitter Bindings
+							i(98174),	-- Tidesplitter Boots
+							i(98177),	-- Tidesplitter Britches
+							i(98175),	-- Tidesplitter Gloves
+							i(98176),	-- Tidesplitter Hood
+							i(98173),	-- Tidesplitter Jerkin
+							i(98178),	-- Tidesplitter Shoulders
+							i(98179),	-- Tidesplitter Waistband
+						},
+						["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria heroic scenario at 90.",
+					}),
 					},
 				["icon"] = "Interface\\Icons\\inv_misc_bag_15",
 			}),
