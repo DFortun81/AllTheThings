@@ -77,6 +77,24 @@ _.Instances =
 								},
 							},
 							{
+								["questID"] = 8627, -- Avenger's Breastplate (Quest)
+								["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {2},	-- Paladin
+								["groups"] = {
+									i(21389),	-- Avenger's Breastplate
+								},
+							},
+							{
+								["questID"] = 8629, -- Avenger's Legguards (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {2},	-- Paladin
+								["groups"] = {
+									i(21390),	-- Avenger's Legguards
+								},
+							},
+							{
 								["questID"] = 8655, -- Avenger's Greaves (Quest)
 								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 								["collectible"] = false,	-- Not Collectible
@@ -103,6 +121,24 @@ _.Instances =
 								["classes"] = {1},	-- Warrior
 								["groups"] = {
 									i(21330),	-- Conqueror's Spaulders
+								},
+							},
+							{
+								["questID"] = 8562, -- Conqueror's Breastplate (Quest)
+								["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {1},	-- Warrior
+								["groups"] = {
+									i(21331),	-- Conqueror's Breastplate
+								},
+							},
+							{
+								["questID"] = 8560, -- Conqueror's Legguards (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {1},	-- Warrior
+								["groups"] = {
+									i(21332),	-- Conqueror's Legguards
 								},
 							},
 							{
@@ -135,6 +171,24 @@ _.Instances =
 								},
 							},
 							{
+								["questID"] = 8638, -- Deathdealer's Vest (Quest)
+								["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {4},	-- Rogue
+								["groups"] = {
+									i(21364),	-- Deathdealer's Vest
+								},
+							},
+							{
+								["questID"] = 8640, -- Deathdealer's Leggings (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {4},	-- Rogue
+								["groups"] = {
+									i(21362),	-- Deathdealer's Leggings
+								},
+							},
+							{
 								["questID"] = 8637, -- Deathdealer's Boots (Quest)
 								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 								["collectible"] = false,	-- Not Collectible
@@ -161,6 +215,24 @@ _.Instances =
 								["classes"] = {9},	-- Warlock
 								["groups"] = {
 									i(21335),	-- Doomcaller's Mantle
+								},
+							},
+							{
+								["questID"] = 8661, -- Doomcaller's Robes (Quest)
+								["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {9},	-- Warlock
+								["groups"] = {
+									i(21334),	-- Doomcaller's Robes
+								},
+							},
+							{
+								["questID"] = 8663, -- Doomcaller's Trousers (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {9},	-- Warlock
+								["groups"] = {
+									i(21336),	-- Doomcaller's Trousers
 								},
 							},
 							{
@@ -193,6 +265,24 @@ _.Instances =
 								},
 							},
 							{
+								["questID"] = 8633, -- Enigma Robes (Quest)
+								["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {8},	-- Mage
+								["groups"] = {
+									i(21343),	-- Enigma Robes
+								},
+							},
+							{
+								["questID"] = 8631, -- Enigma Leggings (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {8},	-- Mage
+								["groups"] = {
+									i(21346),	-- Enigma Leggings
+								},
+							},
+							{
 								["questID"] = 8634, -- Enigma Boots (Quest)
 								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 								["collectible"] = false,	-- Not Collectible
@@ -219,6 +309,24 @@ _.Instances =
 								["classes"] = {11},	-- Druid
 								["groups"] = {
 									i(21354),	-- Genesis Shoulderpads
+								},
+							},
+							{
+								["questID"] = 8666, -- Genesis Vest (Quest)
+								["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {11},	-- Druid
+								["groups"] = {
+									i(21357),	-- Genesis Vest
+								},
+							},
+							{
+								["questID"] = 8668, -- Genesis Trousers (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {11},	-- Druid
+								["groups"] = {
+									i(21356),	-- Genesis Trousers
 								},
 							},
 							{
@@ -251,6 +359,24 @@ _.Instances =
 								},
 							},
 							{
+								["questID"] = 8603, -- Vestments of the Oracle (Quest)
+								["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {5},	-- Priest
+								["groups"] = {
+									i(21351),	-- Vestments of the Oracle
+								},
+							},
+							{
+								["questID"] = 8593, -- Trousers of the Oracle (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {5},	-- Priest
+								["groups"] = {
+									i(21352),	-- Trousers of the Oracle
+								},
+							},
+							{
 								["questID"] = 8596, -- Footwraps of the Oracle (Quest)
 								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 								["collectible"] = false,	-- Not Collectible
@@ -277,6 +403,24 @@ _.Instances =
 								["classes"] = {7},	-- Shaman
 								["groups"] = {
 									i(21376),	-- Stormcaller's Pauldrons
+								},
+							},
+							{
+								["questID"] = 8622, -- Stormcaller's Hauberk (Quest)
+								["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {7},	-- Shaman
+								["groups"] = {
+									i(21374),	-- Stormcaller's Hauberk
+								},
+							},
+							{
+								["questID"] = 8624, -- Stormcaller's Leggings (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {7},	-- Shaman
+								["groups"] = {
+									i(21375),	-- Stormcaller's Leggings
 								},
 							},
 							{
@@ -309,6 +453,24 @@ _.Instances =
 								},
 							},
 							{
+								["questID"] = 8656, -- Striker's Hauberk (Quest)
+								["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {3},	-- Hunter
+								["groups"] = {
+									i(21370),	-- Striker's Hauberk
+								},
+							},
+							{
+								["questID"] = 8658, -- Striker's Leggings (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {3},	-- Hunter
+								["groups"] = {
+									i(21368),	-- Striker's Leggings
+								},
+							},
+							{
 								["questID"] = 8626, -- Striker's Footguards (Quest)
 								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 								["collectible"] = false,	-- Not Collectible
@@ -317,66 +479,6 @@ _.Instances =
 									i(21365),	-- Striker's Footguards
 								},
 							},
-						}),
-						
-						n(15503, { -- Kandrostrasz
-							
-							q(8593, {	-- Trousers of the Oracle	
-								i(21352),	-- Trousers of the Oracle
-							}),
-							q(8631, {	-- Enigma Leggings	
-								i(21346),	-- Enigma Leggings
-							}),
-							q(8663, {	-- Dooomcaller's Trousers	
-								i(21336),	-- Dooomcaller's Trousers
-							}),
-							q(8668, {	-- Genesis Trousers	
-								i(21356),	-- Genesis Trousers
-							}),
-							q(8640, {	-- Deathdealer's Leggings	
-								i(21362),	-- Deathdealer's Leggings
-							}),
-							q(8658, {	-- Striker's Leggings	
-								i(21368),	-- Striker's Leggings
-							}),
-							q(8624, {	-- Stormcaller's Leggings	
-								i(21375),	-- Stormcaller's Leggings
-							}),
-							q(8629, {	-- Avenger's Legguards	
-								i(21390),	-- Avenger's Legguards
-							}),
-							q(8560, {	-- Conqueror's Legguards	
-								i(21332),	-- Conqueror's Legguards
-							}),
-						}),
-						n(15504, { -- Vethsera
-							q(8603, {	-- Vestments of the Oracle	
-								i(21351),	-- Vestments of the Oracle
-							}),		
-							q(8633, {	-- Enigma Robes	
-								i(21343),	-- Enigma Robes
-							}),		
-							q(8661, {	-- Dooomcaller's Robes	
-								i(21334),	-- Dooomcaller's Robes
-							}),		
-							q(8666, {	-- Genesis Vest	
-								i(21357),	-- Genesis Vest
-							}),		
-							q(8638, {	-- Deathdealer's Vest	
-								i(21364),	-- Deathdealer's Vest
-							}),		
-							q(8656, {	-- Striker's Hauberk	
-								i(21370),	-- Striker's Hauberk
-							}),		
-							q(8622, {	-- Stormcaller's Hauberk	
-								i(21374),	-- Stormcaller's Hauberk
-							}),		
-							q(8627, {	-- Avenger's Breastplate	
-								i(21389),	-- Avenger's Breastplate
-							}),		
-							q(8562, {	-- Conqueror's Breastplate	
-								i(21331),	-- Conqueror's Breastplate
-							}),	
 						}),
 					}),
 					n(0, {		-- Zone Drop
@@ -1450,35 +1552,89 @@ _.Instances =
 								},
 							},
 							i(20927, {	-- Ouro's Intact Hide
-								q(8560, {
-									i(21332),
-								}),
-								q(8640, {
-									i(21362),
-								}),
-								q(8631, {
-									i(21346),
-								}),
-								q(8593, {
-									i(21352),
-								}),
+								{
+									["questID"] = 8560, -- Conqueror's Legguards (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {1},	-- Warrior
+									["groups"] = {
+										i(21332),	-- Conqueror's Legguards
+									},
+								},
+								{
+									["questID"] = 8640, -- Deathdealer's Leggings (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {4},	-- Rogue
+									["groups"] = {
+										i(21362),	-- Deathdealer's Leggings
+									},
+								},
+								{
+									["questID"] = 8631, -- Enigma Leggings (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {8},	-- Mage
+									["groups"] = {
+										i(21346),	-- Enigma Leggings
+									},
+								},
+								{
+									["questID"] = 8593, -- Trousers of the Oracle (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {5},	-- Priest
+									["groups"] = {
+										i(21352),	-- Trousers of the Oracle
+									},
+								},
 							}),
 							i(20931, {	-- Skin of the Great Sandworm
-								q(8629, {
-									i(21390),
-								}),
-								q(8663, {
-									i(21336),
-								}),
-								q(8668, {
-									i(21356),
-								}),
-								q(8624, {
-									i(21375),
-								}),
-								q(8658, {
-									i(21368),
-								}),
+								{
+									["questID"] = 8629, -- Avenger's Legguards (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {2},	-- Paladin
+									["groups"] = {
+										i(21390),	-- Avenger's Legguards
+									},
+								},
+								{
+									["questID"] = 8663, -- Doomcaller's Trousers (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {9},	-- Warlock
+									["groups"] = {
+										i(21336),	-- Doomcaller's Trousers
+									},
+								},
+								{
+									["questID"] = 8668, -- Genesis Trousers (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {11},	-- Druid
+									["groups"] = {
+										i(21356),	-- Genesis Trousers
+									},
+								},
+								{
+									["questID"] = 8624, -- Stormcaller's Leggings (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {7},	-- Shaman
+									["groups"] = {
+										i(21375),	-- Stormcaller's Leggings
+									},
+								},
+								{
+									["questID"] = 8658, -- Striker's Leggings (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {3},	-- Hunter
+									["groups"] = {
+										i(21368),	-- Striker's Leggings
+									},
+								},
 							}),
 							i(23557),	-- Larvae of the Great Worm
 							i(21610),	-- Wormscale Blocker
@@ -1500,35 +1656,89 @@ _.Instances =
 								["questID"] = 8801,	-- C'Thun's Legacy (Quest)
 							},
 							i(20929, {	-- Carapace of the Old God
-								q(8627, {
-									i(21389),
-								}),
-								q(8562, {
-									i(21331),
-								}),
-								q(8638, {
-									i(21364),
-								}),
-								q(8622, {
-									i(21374),
-								}),
-								q(8656, {
-									i(21370),
-								}),
+								{
+									["questID"] = 8627, -- Avenger's Breastplate (Quest)
+									["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {2},	-- Paladin
+									["groups"] = {
+										i(21389),	-- Avenger's Breastplate
+									},
+								},
+								{
+									["questID"] = 8562, -- Conqueror's Breastplate (Quest)
+									["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {1},	-- Warrior
+									["groups"] = {
+										i(21331),	-- Conqueror's Breastplate
+									},
+								},
+								{
+									["questID"] = 8638, -- Deathdealer's Vest (Quest)
+									["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {4},	-- Rogue
+									["groups"] = {
+										i(21364),	-- Deathdealer's Vest
+									},
+								},
+								{
+									["questID"] = 8622, -- Stormcaller's Hauberk (Quest)
+									["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {7},	-- Shaman
+									["groups"] = {
+										i(21374),	-- Stormcaller's Hauberk
+									},
+								},
+								{
+									["questID"] = 8656, -- Striker's Hauberk (Quest)
+									["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {3},	-- Hunter
+									["groups"] = {
+										i(21370),	-- Striker's Hauberk
+									},
+								},
 							}),
 							i(20933, {	-- Husk of the Old God
-								q(8661, {
-									i(21334),
-								}),
-								q(8633, {
-									i(21343),
-								}),
-								q(8666, {
-									i(21357),
-								}),
-								q(8603, {
-									i(21351),
-								}),
+								{
+									["questID"] = 8661, -- Doomcaller's Robes (Quest)
+									["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {9},	-- Warlock
+									["groups"] = {
+										i(21334),	-- Doomcaller's Robes
+									},
+								},
+								{
+									["questID"] = 8633, -- Enigma Robes (Quest)
+									["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {8},	-- Mage
+									["groups"] = {
+										i(21343),	-- Enigma Robes
+									},
+								},
+								{
+									["questID"] = 8666, -- Genesis Vest (Quest)
+									["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {11},	-- Druid
+									["groups"] = {
+										i(21357),	-- Genesis Vest
+									},
+								},
+								{
+									["questID"] = 8603, -- Vestments of the Oracle (Quest)
+									["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {5},	-- Priest
+									["groups"] = {
+										i(21351),	-- Vestments of the Oracle
+									},
+								},
 							}),
 							i(21134),	-- Dark Edge of Insanity
 							i(21126),	-- Death's Sting
