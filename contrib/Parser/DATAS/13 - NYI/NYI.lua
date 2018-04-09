@@ -399,7 +399,6 @@ i(114846),	-- Sigil of Dark Simulacrum
 -- Two-Handed Maces
 -- Two-Handed Swords
 -- One-Handed Maces
-i(30317),	--Cosmic Infuser (Temporary)
 -- Held in Off-hand
 un(15, i(2562)),	-- Bouquet of Scarlet Begonias [White Item shows on Shared Appearances]
 un(15, i(3424)),	-- Bouquet of Black Roses [White Item shows on Shared Appearances]
@@ -422,22 +421,16 @@ i(67235),	-- Garr's Girdle of Memories - item does not seem to exist in game - W
 i(67240),	-- Belt of a Thousand Mouths - item does not seem to exist in game - Wowhead says removed/no longer available
 -- Polearms
 -- Staves
-i(30313),	-- Staff of Disintegration (Temporary)
 -- Shield
-i(30314),	-- Phaseshift Bulwark (Temporary)
 -- One-Handed Axes
 -- Daggers
-i(30312),	-- Infinity Blade (Temporary)
 -- One-Handed Swords
-i(30311),	-- Warp Slicer (Temporary)
 -- Back
 -- Bows
-i(30318),	-- Netherstrand Longbow (Temporary)
 i(111783),	-- Irontree Bow - item does not seem to exist in game - from what I could find, this item was never in game but shares the same name and model of another item
 -- Guns
 -- Wands
 -- Two-Handed Axes
-i(30316),	-- Devastation (Temporary)
 -- Toy
 i(6351),	-- Dented Crate
 i(6352),	-- Waterlogged Crate
