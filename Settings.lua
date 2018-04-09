@@ -1717,10 +1717,11 @@ local function createDebugFrame(parent)
 		["ShowSpeciesID"] = "Show Species ID",
 		["ShowSpellID"] = "Show Spell ID",
 		["ShowTierID"] = "Show Tier ID",
+		["ShowTitleID"] = "Show Title ID",
 		["ShowVisualID"] = "Show Visual ID",
 		}
 	local last;
-	for _,id in pairs ({"ShowAchievementID","ShowArtifactID","ShowBonusID","ShowCreatureID","ShowDifficultyID","ShowEncounterID","ShowFactionID","ShowFilterID","ShowIllusionID","ShowInstanceID","ShowItemID","ShowItemString","ShowMapID","ShowModID","ShowMusicRollID","ShowObjectID","ShowQuestID","ShowSourceID","ShowSpeciesID","ShowSpellID","ShowTierID","ShowVisualID"}) do
+	for _,id in pairs ({"ShowAchievementID","ShowArtifactID","ShowBonusID","ShowCreatureID","ShowDifficultyID","ShowEncounterID","ShowFactionID","ShowFilterID","ShowIllusionID","ShowInstanceID","ShowItemID","ShowItemString","ShowMapID","ShowModID","ShowMusicRollID","ShowObjectID","ShowQuestID","ShowSourceID","ShowSpeciesID","ShowSpellID","ShowTierID","ShowTitleID","ShowVisualID"}) do
 		local filter = createCheckBox(ids[id], child, function(self)
 			app.SetDataMember(id, self:GetChecked());
 			wipe(app.searchCache);
