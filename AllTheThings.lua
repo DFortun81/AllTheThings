@@ -3075,7 +3075,10 @@ app.BaseItem = {
 		elseif key == "collectible" then
 			return t.s or (t.questID and GetDataMember("TreatIncompleteQuestsAsCollectible"));
 		elseif key == "collected" then
-			return t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s);
+			if t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s) then
+				return 1;
+			end
+			return t.questID and GetDataMember("TreatIncompleteQuestsAsCollectible") and t.saved;
 		elseif key == "text" then
 			return t.link;
 		elseif key == "link" then
