@@ -142,6 +142,13 @@ _.Instances =
 							q(11007),	-- Kael'thas and the Verdant Sphere
 						}),
 						i(32458),	-- Ashes of Al'ar (MOUNT!)
+						un(15, i(30317)), -- Cosmic Infuser 
+						un(15, i(30316)), -- Devastation 
+						un(15, i(30312)), -- Infinity Blade 
+						un(15, i(30318)), -- Netherstrand Longbow 
+						un(15, i(30314)), -- Phaseshift Bulwark 
+						un(15, i(30313)), -- Staff of Disintegration 
+						un(15, i(30311)), -- Warp Slicer 
 						i(30236, {	-- Chestguard of the Vanquished Champion
 							i(32039),	-- Merciless Gladiator's Scaled Chestpiece
 							i(32029),	-- Merciless Gladiator's Ringmail Armor
