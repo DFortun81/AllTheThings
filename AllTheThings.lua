@@ -5746,7 +5746,7 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		--[[
+		--[[--]]
 		-- Uncomment for harvesting
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
@@ -5777,7 +5777,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
-		]]--
+		--[[]]--
 		
 		-- Illusions (Dynamic)
 		--[[
