@@ -46,12 +46,24 @@ _.Instances =
 						["groups"] = {
 							e(1651, {	-- Onyxia 
 								["groups"] = {
-									a(i(49644, { -- Head of Onyxia
-										qa(24428),  -- A Most Puzzling Circumstance
-									})),
-									h(i(49643, { -- Head of Onyxia
-										qh(24429),  -- A Most Puzzling Circumstance
-									})),
+									a({
+										["itemID"] = 49644,		-- Head of Onyxia [Alliance]
+										["questID"] = 24428,	-- A Most Puzzling Circumstance
+										["groups"] = {
+											i(49486),		-- Polished Dragonslayer's Signet
+											i(49485),		-- Sparkling Onyxia Tooth Pendant
+											i(49487),		-- Purified Onyxia Blood Talisman
+										},
+									}),
+									h({
+										["itemID"] = 49643,		-- Head of Onyxia [Horde]
+										["questID"] = 24429,	-- A Most Puzzling Circumstance
+										["groups"] = {
+											i(49486),		-- Polished Dragonslayer's Signet
+											i(49485),		-- Sparkling Onyxia Tooth Pendant
+											i(49487),		-- Purified Onyxia Blood Talisman
+										},
+									}),
 									i(49636),	-- Reins of the Onyxian Drake (Mount)
 									i(49299),	-- Keen Obsidian Edged Blade
 									i(49302),	-- Reclaimed Shadowstrike
@@ -93,12 +105,24 @@ _.Instances =
 						["groups"] = {
 							e(1651, {	-- Onyxia
 								["groups"] = {
-									a(i(49644, { -- Head of Onyxia
-										qa(24428),  -- A Most Puzzling Circumstance
-									})),
-									h(i(49643, { -- Head of Onyxia
-										qh(24429),  -- A Most Puzzling Circumstance
-									})),
+									a({
+										["itemID"] = 49644,		-- Head of Onyxia [Alliance]
+										["questID"] = 24428,	-- A Most Puzzling Circumstance
+										["groups"] = {
+											i(49486),		-- Polished Dragonslayer's Signet
+											i(49485),		-- Sparkling Onyxia Tooth Pendant
+											i(49487),		-- Purified Onyxia Blood Talisman
+										},
+									}),
+									h({
+										["itemID"] = 49643,		-- Head of Onyxia [Horde]
+										["questID"] = 24429,	-- A Most Puzzling Circumstance
+										["groups"] = {
+											i(49486),		-- Polished Dragonslayer's Signet
+											i(49485),		-- Sparkling Onyxia Tooth Pendant
+											i(49487),		-- Purified Onyxia Blood Talisman
+										},
+									}),
 									i(49636),	-- Reins of the Onyxian Drake (Mount)
 									i(49496),	-- Reinforced Shadowstrike
 									i(49498),	-- Sharpened Obsidian Edged Blade
