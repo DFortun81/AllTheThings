@@ -9,67 +9,145 @@ _.Instances =
 			inst(758, { 	-- Icecrown Citadel
 				["groups"] = {
 					n(-17, { -- Quests
-						n(37120, {	-- Highlord Darion Mograine
-							["groups"] = {
-								q(24545),	-- The Sacred and the Corrupt
-								q(24743, {	-- Shadow's Edge
-									i(49888)	-- Shadow's Edge
-								}),
-								q(24547),	-- A Feast of Souls
-								q(24749),	-- Unholy Infusion
-								q(24756),	-- Blood Infusion
-								q(24757),	-- Frost Infusion
-								q(24548),	-- The Splintered Throne
-								q(24549, {	-- Shadowmourne...
-									i(49623)	-- Shadowmourne
-								}),
-								q(24748, {	-- The Lich King's Last Stand
-									i(51315, {	-- Sealed Chest
+						["description"] = "These quests are only able to be completed on 25 Man Normal/Heroic Difficulty.",
+						["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+						["groups"] = {
+							{
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+								["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
+								["groups"] = {
+									{
+										["itemID"] = 49869,		-- Light's Vengeance
+										["questID"] = 24545,	-- The Sacred and the Corrupt
+										["description"] = "Fly out to Dragonblight and collect this item from a cave after some short RP.",
+									},
+									{
+										["itemID"] = 50226,		-- Festergut's Acidic Blood
+										["questID"] = 24545,	-- The Sacred and the Corrupt
+										["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+										["description"] = "This can drop from Festergut on 25 man difficulty or higher.",
+									},
+									{
+										["itemID"] = 50231,		-- Rotface's Acidic Blood
+										["questID"] = 24545,	-- The Sacred and the Corrupt
+										["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+										["description"] = "This can drop from Rotface on 25 man difficulty or higher.",
+									},
+								},
+							},
+							{
+								["questID"] = 24743,	-- Shadow's Edge
+								["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
+								["sourceQuest"] = 24545,	-- Source Quest: The Sacred and the Corrupt
+								["groups"] = {
+									i(49888),			-- Shadow's Edge
+								},
+							},
+							{
+								["questID"] = 24547,	-- A Feast of Souls
+								["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
+								["sourceQuest"] = 24743,	-- Source Quest: Shadow's Edge
+							},
+							{
+								["questID"] = 24749,	-- Unholy Infusion
+								["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
+								["sourceQuest"] = 24547,	-- Source Quest: A Feast of Souls
+							},
+							{
+								["questID"] = 24756,	-- Blood Infusion
+								["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
+								["sourceQuest"] = 24749,	-- Source Quest: Unholy Infusion
+							},
+							{
+								["questID"] = 24757,	-- Frost Infusion
+								["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
+								["sourceQuest"] = 24756,	-- Source Quest: Blood Infusion
+							},
+							{
+								["questID"] = 24548,	-- The Splintered Throne
+								["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
+								["sourceQuest"] = 24757,	-- Source Quest: Frost Infusion
+								["groups"] = {
+									{
+										["itemID"] = 50274,		-- Shadowfrost Shard
+										["questID"] = 24548,	-- The Splintered Throne
+										["description"] = "These can drop from any of the bosses on 25 man difficulty or higher. You need 50 of these, so this quest will take you several weeks to finish.",
+									},
+								},
+							},
+							{
+								["questID"] = 24549,	-- Shadowmourne...
+								["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
+								["sourceQuest"] = 24548,	-- Source Quest: The Splintered Throne
+								["groups"] = {
+									i(49623)			-- Shadowmourne
+								},
+							},
+							{
+								["questID"] = 24748,	-- The Lich King's Last Stand
+								["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
+								["sourceQuest"] = 24549,	-- Source Quest: Shadowmourne...
+							},
+							{
+								["itemID"] = 51315,		-- Sealed Chest
+								["questID"] = 24914,	-- Personal Property
+								["qg"] = 36597,			-- Quest Giver: The Lich King
+								["sourceQuest"] = 24549,	-- Source Quest: Shadowmourne...
+								["description"] = "Dropped by the Lich King on 25 Man Difficulty while on the quest The Lich King's Last Stand. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.",
+								["groups"] = {
+									{
+										["itemID"] = 51316,			-- Unsealed Chest
+										["sourceQuest"] = 24914,	-- Source Quest: Personal Property
+										["description"] = "This item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",
 										["groups"] = {
-											q(24914, {	-- Personal Property
-												i(51316, {	-- Unsealed Chest
-													i(51317, {	-- Alexandros' Soul Shard
-														q(24915, {	-- Mograine's Reunion
-															i(52200)	-- Reins of the Crimson Deathcharger
-														})
-													}),
-													i(51319, {	-- Arthas' Training Sword
-														q(24917, {	-- Muradin's Lament
-															i(52201)	-- Muradin's Favor
-														})
-													}),
-													i(51320, {	-- Badge of the Silver Hand
-														q(24919, {	-- The Lightbringer's Redemption
-															i(52252)	-- Tabard of the Lightbringer
-														})
-													}),
-													i(51321, {	-- Blood of Sylvanas
-														q(24918, {	-- Sylvanas' Vengeance
-															i(52253)	-- Sylvanas' Music Box
-														})
-													}),
-													i(51318, {	-- Jaina's Locket
-														q(24916, {	-- Jaina's Locket
-															i(52251, {	-- Jaina's Locket
-																["ignoreSource"] = true,
-																["collectible"] = false
-															})
-														})
+											{
+												["itemID"] = 51317,		-- Alexandros' Soul Shard
+												["questID"] = 24915,	-- Mograine's Reunion
+												["description"] = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
+												["groups"] = {
+													i(52200)	-- Reins of the Crimson Deathcharger
+												},
+											},
+											{
+												["itemID"] = 51319,		-- Arthas' Training Sword
+												["questID"] = 24917,	-- Muradin's Lament
+												["description"] = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
+												["groups"] = {
+													i(52201)	-- Muradin's Favor
+												},
+											},
+											{
+												["itemID"] = 51320,		-- Badge of the Silver Hand
+												["questID"] = 24919,	-- The Lightbringer's Redemption
+												["description"] = "Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",
+												["groups"] = {
+													i(52252)	-- Tabard of the Lightbringer
+												},
+											},
+											{
+												["itemID"] = 51321,		-- Blood of Sylvanas
+												["questID"] = 24918,	-- Sylvanas' Vengeance
+												["description"] = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
+												["groups"] = {
+													i(52253)	-- Sylvanas' Music Box
+												},
+											},
+											{
+												["itemID"] = 51318,		-- Jaina's Locket
+												["questID"] = 24916,	-- Jaina's Locket
+												["description"] = "Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",
+												["groups"] = {
+													i(52251, {	-- Jaina's Locket
+														["ignoreSource"] = true,
+														["collectible"] = false
 													})
-												})
-											})
+												},
+											},
 										},
-										["description"] = "Dropped by killing the Lich King on 25 Man Difficulty while on the above quest. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped."
-									}),
-								})
+									},
+								},
 							},
-							["description"] = "These quests are only able to be completed on 25 Man Normal/Heroic Difficulty.",
-							["classes"] = {
-								1,
-								2,
-								6
-							},
-						})
+						},
 					}),
 					n(-2, {		-- Vendors
 						model(1525, n(38858, { 		-- Goodman the Closer
