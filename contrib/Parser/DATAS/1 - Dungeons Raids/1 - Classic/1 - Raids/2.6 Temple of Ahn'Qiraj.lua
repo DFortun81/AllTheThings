@@ -9,147 +9,345 @@ _.Instances =
 			inst(744, { 	-- Temple of Ahn'Qiraj
 				["groups"] = {
 					n(-17, { -- Quests
-						n(15502, { -- Andorgos <Brood of Malygos>
-							q(8592, {	-- Tiara of the Oracle	
-								i(21348),	-- Tiara of the Oracle
-							}),		
-							q(8594, {	-- Mantle of the Oracle	
-								i(21350),	-- Mantle of the Oracle
-							}),		
-							q(8632, {	-- Enigma Circlet	
-								i(21347),	-- Enigma Circlet
-							}),		
-							q(8625, {	-- Enigma Shoulderpads	
-								i(21345),	-- Enigma Shoulderpads
-							}),		
-							q(8662, {	-- Dooomcaller's Circlet	
-								i(21337),	-- Dooomcaller's Circlet
-							}),		
-							q(8664, {	-- Doomcaller's Mantle	
-								i(21335),	-- Doomcaller's Mantle
-							}),		
-							q(8667, {	-- Genesis Helm	
-								i(21353),	-- Genesis Helm
-							}),		
-							q(8669, {	-- Genesis Shoulderpads	
-								i(21354),	-- Genesis Shoulderpads
-							}),		
-							q(8639, {	-- Deathdealer's Helm	
-								i(21360),	-- Deathdealer's Helm
-							}),		
-							q(8641, {	-- Deathdealer's Spaulders	
-								i(21361),	-- Deathdealer's Spaulders
-							}),		
-							q(8657, {	-- Striker's Diadem	
-								i(21366),	-- Striker's Diadem
-							}),		
-							q(8659, {	-- Striker's Pauldrons	
-								i(21367),	-- Striker's Pauldrons
-							}),		
-							q(8623, {	-- Stormcaller's Diadem	
-								i(21372),	-- Stormcaller's Diadem
-							}),		
-							q(8602, {	-- Stormcaller's Pauldrons	
-								i(21376),	-- Stormcaller's Pauldrons
-							}),		
-							q(8628, {	-- Avenger's Crown	
-								i(21387),	-- Avenger's Crown
-							}),		
-							q(8630, {	-- Avenger's Pauldrons	
-								i(21391),	-- Avenger's Pauldrons
-							}),		
-							q(8561, {	-- Conqueror's Crown	
-								i(21329),	-- Conqueror's Crown
-							}),		
-							q(8544, {	-- Conqueror's Spaulders	
-								i(21330),	-- Conqueror's Spaulders
-							}),		
+						faction(910, { 	-- Quests / Brood of Nozdormu
+							["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
 						}),
-						n(15380, { -- Arygos
+						{
+							["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+							["qg"] = 15380,		-- Quest Giver: Arygos
+							["collectible"] = false,	-- Turn off Collectible flags.
 							["groups"] = {
-								i(21232, {	-- Imperial Qiraji Armaments
-									q(8789, {	-- Imperial Qiraji Armaments
-										i(21242),	-- Blessed Qiraji War Axe
-										i(21272),	-- Blessed Qiraji Musket
-										i(21244),	-- Blessed Qiraji Pugio
-										i(21269),	-- Blessed Qiraji Bulwark
-									}),
-								}),
+								i(21242),	-- Blessed Qiraji War Axe
+								i(21272),	-- Blessed Qiraji Musket
+								i(21244),	-- Blessed Qiraji Pugio
+								i(21269),	-- Blessed Qiraji Bulwark
 							},
-							["description"] = "Turn in your Imperial Qiraji Armaments along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose."
+						},
+						{
+							["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+							["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+							["collectible"] = false,	-- Turn off Collectible flags.
+							["groups"] = {
+								i(21273),	-- Blessed Qiraji Acolyte Staff
+								i(21275),	-- Blessed Qiraji Augur Staff
+								i(21268),	-- Blessed Qiraji War Hammer
+							},
+						},
+						{
+							["questID"] = 8579,	-- Mortal Champions (Quest)
+							["qg"] = 15503,		-- Quest Giver: Kandrostrasz
+							["groups"] = {
+								{
+									["itemID"] = 21229,	-- Qiraji Lord's Insignia
+									["questID"] = 8579,	-- Mortal Champions (Quest)
+									--[[
+									["groups"] = {
+										{
+											["questID"] = 8595,	-- Mortal Champions (Repeatable)
+											["description"] = "You can repeat this quest until Exalted.",
+											["collectible"] = false,
+										},
+									}
+									]]--
+								},
+							}
+						},
+						qg(15379, q(8802, {	-- The Savior of Kalimdor
+							i(21712),	-- Amulet of the Fallen God
+							i(21710),	-- Cloak of the Fallen God
+							i(21709),	-- Ring of the Fallen God
+						})),
+						cl(2, {		-- Paladin / Avenger Set
+							{
+								["questID"] = 8628, -- Avenger's Crown (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {2},	-- Paladin
+								["groups"] = {
+									i(21387),	-- Avenger's Crown
+								},
+							},
+							{
+								["questID"] = 8630, -- Avenger's Pauldrons (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {2},	-- Paladin
+								["groups"] = {
+									i(21391),	-- Avenger's Pauldrons
+								},
+							},
+							{
+								["questID"] = 8655, -- Avenger's Greaves (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {2},	-- Paladin
+								["groups"] = {
+									i(21388),	-- Avenger's Greaves
+								},
+							},
 						}),
-						n(15379, {	-- Caelestrasz
-							q(8802, {-- The Savior of Kalimdor
-								i(21710),	-- Cloak of the Fallen God
-							}),
+						cl(1, { 	-- Warrior / Conqueror Set
+							{
+								["questID"] = 8561, -- Conqueror's Crown (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {1},	-- Warrior
+								["groups"] = {
+									i(21329),	-- Conqueror's Crown
+								},
+							},
+							{
+								["questID"] = 8544, -- Conqueror's Spaulders (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {1},	-- Warrior
+								["groups"] = {
+									i(21330),	-- Conqueror's Spaulders
+								},
+							},
+							{
+								["questID"] = 8559, -- Conqueror's Greaves (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {1},	-- Warrior
+								["groups"] = {
+									i(21333),	-- Conqueror's Greaves
+								},
+							},
 						}),
+						cl(4, { 	-- Rogue / Deathdealer Set
+							{
+								["questID"] = 8639, -- Deathdealer's Helm (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {4},	-- Rogue
+								["groups"] = {
+									i(21360),	-- Deathdealer's Helm
+								},
+							},
+							{
+								["questID"] = 8641, -- Deathdealer's Spaulders (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {4},	-- Rogue
+								["groups"] = {
+									i(21361),	-- Deathdealer's Spaulders
+								},
+							},
+							{
+								["questID"] = 8637, -- Deathdealer's Boots (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {4},	-- Rogue
+								["groups"] = {
+									i(21359),	-- Deathdealer's Boots
+								},
+							},
+						}),
+						cl(9, { 	-- Warlock / Doomcaller Set
+							{
+								["questID"] = 8662, -- Doomcaller's Circlet (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {9},	-- Warlock
+								["groups"] = {
+									i(21337),	-- Doomcaller's Circlet
+								},
+							},
+							{
+								["questID"] = 8664, -- Doomcaller's Mantle (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {9},	-- Warlock
+								["groups"] = {
+									i(21335),	-- Doomcaller's Mantle
+								},
+							},
+							{
+								["questID"] = 8660, -- Doomcaller's Footwraps (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {9},	-- Warlock
+								["groups"] = {
+									i(21338),	-- Doomcaller's Footwraps
+								},
+							},
+						}),
+						cl(8, { 	-- Mage / Enigma Set
+							{
+								["questID"] = 8632, -- Enigma Circlet (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {8},	-- Mage
+								["groups"] = {
+									i(21347),	-- Enigma Circlet
+								},
+							},
+							{
+								["questID"] = 8625, -- Enigma Shoulderpads (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {8},	-- Mage
+								["groups"] = {
+									i(21345),	-- Enigma Shoulderpads
+								},
+							},
+							{
+								["questID"] = 8634, -- Enigma Boots (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {8},	-- Mage
+								["groups"] = {
+									i(21344),	-- Enigma Boots
+								},
+							},
+						}),
+						cl(11, { 	-- Druid / Genesis Set
+							{
+								["questID"] = 8667, -- Genesis Helm (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {11},	-- Druid
+								["groups"] = {
+									i(21353),	-- Genesis Helm
+								},
+							},
+							{
+								["questID"] = 8669, -- Genesis Shoulderpads (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {11},	-- Druid
+								["groups"] = {
+									i(21354),	-- Genesis Shoulderpads
+								},
+							},
+							{
+								["questID"] = 8665, -- Genesis Boots (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {11},	-- Druid
+								["groups"] = {
+									i(21355),	-- Genesis Boots
+								},
+							},
+						}),
+						cl(5, { 	-- Priest / Oracle Set
+							{
+								["questID"] = 8592, -- Tiara of the Oracle (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {5},	-- Priest
+								["groups"] = {
+									i(21348),	-- Tiara of the Oracle
+								},
+							},
+							{
+								["questID"] = 8594, -- Mantle of the Oracle (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {5},	-- Priest
+								["groups"] = {
+									i(21350),	-- Mantle of the Oracle
+								},
+							},
+							{
+								["questID"] = 8596, -- Footwraps of the Oracle (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {5},	-- Priest
+								["groups"] = {
+									i(21349),	-- Footwraps of the Oracle
+								},
+							},
+						}),
+						cl(7, {		-- Shaman / Stormcaller Set
+							{
+								["questID"] = 8623, -- Stormcaller's Diadem (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {7},	-- Shaman
+								["groups"] = {
+									i(21372),	-- Stormcaller's Diadem
+								},
+							},
+							{
+								["questID"] = 8602, -- Stormcaller's Pauldrons (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {7},	-- Shaman
+								["groups"] = {
+									i(21376),	-- Stormcaller's Pauldrons
+								},
+							},
+							{
+								["questID"] = 8621, -- Stormcaller's Footguards (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {7},	-- Shaman
+								["groups"] = {
+									i(21373),	-- Stormcaller's Footguards
+								},
+							},
+						}),
+						cl(3, {		-- Hunter / Striker Set
+							{
+								["questID"] = 8657, -- Striker's Diadem (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {3},	-- Hunter
+								["groups"] = {
+									i(21366),	-- Striker's Diadem
+								},
+							},
+							{
+								["questID"] = 8659, -- Striker's Pauldrons (Quest)
+								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {3},	-- Hunter
+								["groups"] = {
+									i(21367),	-- Striker's Pauldrons
+								},
+							},
+							{
+								["questID"] = 8626, -- Striker's Footguards (Quest)
+								["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+								["collectible"] = false,	-- Not Collectible
+								["classes"] = {3},	-- Hunter
+								["groups"] = {
+									i(21365),	-- Striker's Footguards
+								},
+							},
+						}),
+						
 						n(15503, { -- Kandrostrasz
+							
 							q(8593, {	-- Trousers of the Oracle	
 								i(21352),	-- Trousers of the Oracle
-							}),		
-							q(8596, {	-- Footwraps of the Oracle	
-								i(21349),	-- Footwraps of the Oracle
-							}),		
+							}),
 							q(8631, {	-- Enigma Leggings	
 								i(21346),	-- Enigma Leggings
-							}),		
-							q(8634, {	-- Enigma Boots	
-								i(21344),	-- Enigma Boots
-							}),		
+							}),
 							q(8663, {	-- Dooomcaller's Trousers	
 								i(21336),	-- Dooomcaller's Trousers
-							}),		
-							q(8660, {	-- Doomcaller's Footwraps	
-								i(21338),	-- Doomcaller's Footwraps
-							}),		
+							}),
 							q(8668, {	-- Genesis Trousers	
 								i(21356),	-- Genesis Trousers
-							}),		
-							q(8665, {	-- Genesis Boots	
-								i(21355),	-- Genesis Boots
-							}),		
+							}),
 							q(8640, {	-- Deathdealer's Leggings	
 								i(21362),	-- Deathdealer's Leggings
-							}),		
-							q(8637, {	-- Deathdealer's Boots	
-								i(21359),	-- Deathdealer's Boots
-							}),		
+							}),
 							q(8658, {	-- Striker's Leggings	
 								i(21368),	-- Striker's Leggings
-							}),		
-							q(8626, {	-- Striker's Footguards	
-								i(21365),	-- Striker's Footguards
-							}),		
+							}),
 							q(8624, {	-- Stormcaller's Leggings	
 								i(21375),	-- Stormcaller's Leggings
-							}),		
-							q(8621, {	-- Stormcaller's Footguards	
-								i(21373),	-- Stormcaller's Footguards
-							}),		
+							}),
 							q(8629, {	-- Avenger's Legguards	
 								i(21390),	-- Avenger's Legguards
-							}),		
-							q(8655, {	-- Avenger's Greaves	
-								i(21388),	-- Avenger's Greaves
-							}),		
+							}),
 							q(8560, {	-- Conqueror's Legguards	
 								i(21332),	-- Conqueror's Legguards
-							}),		
-							q(8559, {	-- Conqueror's Greaves	
-								i(21333),	-- Conqueror's Greaves
-							}),		
-						}),
-						n(15378, { -- Merithra of the Dream
-							["groups"] = {
-								i(21237, {	-- Imperial Qiraji Regalia
-									q(8790, {	-- Imperial Qiraji Regalia
-										i(21273),	-- Blessed Qiraji Acolyte Staff
-										i(21275),	-- Blessed Qiraji Augur Staff
-										i(21268),	-- Blessed Qiraji War Hammer
-									}),
-								}),
-							},
-							["description"] = "Turn in your Imperial Qiraji Regalia along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose."
+							}),
 						}),
 						n(15504, { -- Vethsera
 							q(8603, {	-- Vestments of the Oracle	
@@ -309,288 +507,948 @@ _.Instances =
 					}),
 					e(1543, {	-- The Prophet Skeram
 						["groups"] = {
-							i(21703),
-							i(21128),
-							i(21699),
-							i(21701),
-							i(21814),
-							i(21708),
-							i(21698),
-							i(21704),
-							i(21705),
-							i(21706),
-							i(93041),
-							i(22222, {
-								i(22196),
+							i(22222, {	-- Thick Obisidan Breastplate (Recipe)
+								i(22196),	-- Thick Obisidan Breastplate (Item)
 							}),
+							i(93041),	-- Jewel of Maddening Whispers (Pet)
+							i(21703),	-- Hammer of Ji'zhi
+							i(21128),	-- Staff of the Qiraji Prophets
+							i(21702),	-- Amulet of Foul Warding
+							i(21700),	-- Pendant of the Qiraji Guardian
+							i(21699),	-- Barrage Shoulders
+							i(21701),	-- Cloak of Concentrated Hatred
+							i(21814),	-- Breastplate of Annihilation
+							i(21708),	-- Beetle Scaled Waistguards
+							i(21698),	-- Leggings of Immersion
+							i(21705),	-- Boots of the Fallen Prophet
+							i(21704),	-- Boots of the Redeemed Prophecy
+							i(21706),	-- Boots of the Unwavering Will
+							i(21707),	-- Ring of Swarming Thought
+							{
+								["itemID"] = 21229,	-- Qiraji Lord's Insignia
+								["questID"] = 8579,	-- Mortal Champions (Quest)
+							},
 						},
 						["creatureID"] = 15263,
 					}),
 					e(1547, {	-- Silithid Royalty
-						n(15511, { -- Lord Kri
-							["groups"] = {
-								i(21603),	-- Wand of Qiraji Nobility
-								i(21680),	-- Vest of Swift Execution
-								i(21693),	-- Guise of the Devourer
-								i(21694),	-- Ternary Mantle
-								i(21697),	-- Cape of the Trinity
-								i(21696),	-- Robes of the Triumvirate
-								i(21692),	-- Triad Girdle
-							},
-							["description"] = "Killing this boss last will drop the following items.",
-						}),
-						n(15543, { -- Princess Yauj
-							["groups"] = {
-								i(21686),	-- Mantle of Phrenic Power
-								i(21682),	-- Bile-Covered Gauntlets
-								i(21684),	-- Mantle of the Desert's Fury
-								i(21683),	-- Mantle of the Desert Crusade
-								i(21693),	-- Guise of the Devourer
-								i(21694),	-- Ternary Mantle
-								i(21697),	-- Cape of the Trinity
-								i(21696),	-- Robes of the Triumvirate
-								i(21692),	-- Triad Girdle
-							},
-							["description"] = "Killing this boss last will drop the following items.",
-						}),
-						n(15544, { -- Vem
-							["groups"] = {
-								i(21689),	-- Gloves of Ebru
-								i(21691),	-- Ooze-Ridden Gauntlets
-								i(21688),	-- Boots of the Fallen Hero
-								i(21693),	-- Guise of the Devourer
-								i(21694),	-- Ternary Mantle
-								i(21697),	-- Cape of the Trinity
-								i(21696),	-- Robes of the Triumvirate
-								i(21692),	-- Triad Girdle
-							},
-							["description"] = "Killing this boss last will drop the following items.",
-						}),
+						["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
+						["groups"] = {
+							n(15511, { -- Lord Kri
+								["description"] = "Killing this boss last can drop the following items.",
+								["groups"] = {
+									{
+										["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
+										["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+										["groups"] = {
+											{
+												["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+												["qg"] = 15380,		-- Quest Giver: Arygos
+												["collectible"] = false,	-- Turn off Collectible flags.
+												["groups"] = {
+													i(21242),	-- Blessed Qiraji War Axe
+													i(21272),	-- Blessed Qiraji Musket
+													i(21244),	-- Blessed Qiraji Pugio
+													i(21269),	-- Blessed Qiraji Bulwark
+												},
+											},
+										},
+									},
+									{
+										["itemID"] = 21237,	-- Imperial Qiraji Regalia (Item)
+										["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+										["groups"] = {
+											{
+												["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+												["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+												["collectible"] = false,	-- Turn off Collectible flags.
+												["groups"] = {
+													i(21273),	-- Blessed Qiraji Acolyte Staff
+													i(21275),	-- Blessed Qiraji Augur Staff
+													i(21268),	-- Blessed Qiraji War Hammer
+												},
+											},
+										},
+									},
+									i(21603),	-- Wand of Qiraji Nobility
+									i(21693),	-- Guise of the Devourer
+									i(21694),	-- Ternary Mantle
+									i(21697),	-- Cape of the Trinity
+									i(21696),	-- Robes of the Triumvirate
+									i(21680),	-- Vest of Swift Execution
+									i(21692),	-- Triad Girdle
+									i(21695),	-- Angelista's Touch
+									i(21681),	-- Ring of the Devoured
+									i(21685),	-- Petrified Scarab
+									{
+										["itemID"] = 21229,	-- Qiraji Lord's Insignia
+										["questID"] = 8579,	-- Mortal Champions (Quest)
+									},
+								},
+							}),
+							n(15543, { -- Princess Yauj
+								["description"] = "Killing this boss last can drop the following items.",
+								["groups"] = {
+									{
+										["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
+										["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+										["groups"] = {
+											{
+												["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+												["qg"] = 15380,		-- Quest Giver: Arygos
+												["collectible"] = false,	-- Turn off Collectible flags.
+												["groups"] = {
+													i(21242),	-- Blessed Qiraji War Axe
+													i(21272),	-- Blessed Qiraji Musket
+													i(21244),	-- Blessed Qiraji Pugio
+													i(21269),	-- Blessed Qiraji Bulwark
+												},
+											},
+										},
+									},
+									{
+										["itemID"] = 21237,	-- Imperial Qiraji Regalia (Item)
+										["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+										["groups"] = {
+											{
+												["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+												["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+												["collectible"] = false,	-- Turn off Collectible flags.
+												["groups"] = {
+													i(21273),	-- Blessed Qiraji Acolyte Staff
+													i(21275),	-- Blessed Qiraji Augur Staff
+													i(21268),	-- Blessed Qiraji War Hammer
+												},
+											},
+										},
+									},
+									i(21693),	-- Guise of the Devourer
+									i(21683),	-- Mantle of the Desert Crusade
+									i(21684),	-- Mantle of the Desert's Fury
+									i(21686),	-- Mantle of Phrenic Power
+									i(21694),	-- Ternary Mantle
+									i(21697),	-- Cape of the Trinity
+									i(21696),	-- Robes of the Triumvirate
+									i(21682),	-- Bile-Covered Gauntlets
+									i(21692),	-- Triad Girdle
+									i(21695),	-- Angelista's Touch
+									i(21687),	-- Ukko's Ring of Darkness
+									{
+										["itemID"] = 21229,	-- Qiraji Lord's Insignia
+										["questID"] = 8579,	-- Mortal Champions (Quest)
+									},
+								},
+							}),
+							n(15544, { -- Vem
+								["description"] = "Killing this boss last can drop the following items.",
+								["groups"] = {
+									{
+										["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
+										["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+										["groups"] = {
+											{
+												["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+												["qg"] = 15380,		-- Quest Giver: Arygos
+												["collectible"] = false,	-- Turn off Collectible flags.
+												["groups"] = {
+													i(21242),	-- Blessed Qiraji War Axe
+													i(21272),	-- Blessed Qiraji Musket
+													i(21244),	-- Blessed Qiraji Pugio
+													i(21269),	-- Blessed Qiraji Bulwark
+												},
+											},
+										},
+									},
+									{
+										["itemID"] = 21237,	-- Imperial Qiraji Regalia (Item)
+										["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+										["groups"] = {
+											{
+												["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+												["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+												["collectible"] = false,	-- Turn off Collectible flags.
+												["groups"] = {
+													i(21273),	-- Blessed Qiraji Acolyte Staff
+													i(21275),	-- Blessed Qiraji Augur Staff
+													i(21268),	-- Blessed Qiraji War Hammer
+												},
+											},
+										},
+									},
+									i(21693),	-- Guise of the Devourer
+									i(21690),	-- Angelista's Charm
+									i(21694),	-- Ternary Mantle
+									i(21697),	-- Cape of the Trinity
+									i(21696),	-- Robes of the Triumvirate
+									i(21689),	-- Gloves of Ebru
+									i(21691),	-- Ooze-Ridden Gauntlets
+									i(21692),	-- Triad Girdle
+									i(21688),	-- Boots of the Fallen Hero
+									i(21695),	-- Angelista's Touch
+									{
+										["itemID"] = 21229,	-- Qiraji Lord's Insignia
+										["questID"] = 8579,	-- Mortal Champions (Quest)
+									},
+								},
+							}),
+						},
 					}),
 					e(1544, {	-- Battleguard Sartura
 						["groups"] = {
-							i(21673),
-							i(21666),
-							i(21669),
-							i(21671),
-							i(21674),
-							i(21672),
-							i(21675),
-							i(21668),
-							i(21676),
-							i(21667),
-							i(21648),
+							{
+								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
+								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+								["groups"] = {
+									{
+										["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+										["qg"] = 15380,		-- Quest Giver: Arygos
+										["collectible"] = false,	-- Turn off Collectible flags.
+										["groups"] = {
+											i(21242),	-- Blessed Qiraji War Axe
+											i(21272),	-- Blessed Qiraji Musket
+											i(21244),	-- Blessed Qiraji Pugio
+											i(21269),	-- Blessed Qiraji Bulwark
+										},
+									},
+								},
+							},
+							{
+								["itemID"] = 21237,	-- Imperial Qiraji Regalia (Item)
+								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+								["groups"] = {
+									{
+										["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+										["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+										["collectible"] = false,	-- Turn off Collectible flags.
+										["groups"] = {
+											i(21273),	-- Blessed Qiraji Acolyte Staff
+											i(21275),	-- Blessed Qiraji Augur Staff
+											i(21268),	-- Blessed Qiraji War Hammer
+										},
+									},
+								},
+							},
+							i(21673),	-- Silithid Claw
+							i(21666),	-- Sartura's Might
+							i(21669),	-- Creeping Vine Helm
+							i(21678),	-- Necklace of Purity
+							i(21671),	-- Robes of the Battleguard
+							i(21674),	-- Gauntlets of Steadfast Determination
+							i(21672),	-- Gloves of Enforcement
+							i(21675),	-- Thick Qirajihide Belt
+							i(21676),	-- Leggings of the Festering Swarm
+							i(21667),	-- Legplates of Blazing Light
+							i(21668),	-- Scaled Leggings of Qiraji Fury
+							i(21648),	-- Recomposed Boots
+							i(21670),	-- Badge of the Swarmguard
+							{
+								["itemID"] = 21229,	-- Qiraji Lord's Insignia
+								["questID"] = 8579,	-- Mortal Champions (Quest)
+							},
 						},
 						["creatureID"] = 15516,
 					}),
 					e(1545, {	-- Fankriss the Unyielding
 						["groups"] = {
-							i(21635),
-							i(21650),
-							i(21665),
-							i(21639),
-							i(21627),
-							i(21663),
-							i(21652),
-							i(21651),
-							i(21645),
+							{
+								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
+								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+								["groups"] = {
+									{
+										["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+										["qg"] = 15380,		-- Quest Giver: Arygos
+										["collectible"] = false,	-- Turn off Collectible flags.
+										["groups"] = {
+											i(21242),	-- Blessed Qiraji War Axe
+											i(21272),	-- Blessed Qiraji Musket
+											i(21244),	-- Blessed Qiraji Pugio
+											i(21269),	-- Blessed Qiraji Bulwark
+										},
+									},
+								},
+							},
+							{
+								["itemID"] = 21237,	-- Imperial Qiraji Regalia (Item)
+								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+								["groups"] = {
+									{
+										["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+										["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+										["collectible"] = false,	-- Turn off Collectible flags.
+										["groups"] = {
+											i(21273),	-- Blessed Qiraji Acolyte Staff
+											i(21275),	-- Blessed Qiraji Augur Staff
+											i(21268),	-- Blessed Qiraji War Hammer
+										},
+									},
+								},
+							},
+							i(21635),	-- Barb of the Sand Reaver
+							i(21650),	-- Ancient Qiraji Ripper
+							i(21664),	-- Barbed Choker
+							i(21665),	-- Mantle of Wicked Revenge
+							i(21639),	-- Pauldrons of the Unrelenting
+							i(21627),	-- Cloak of Untold Secrets
+							i(21663),	-- Robes of the Guardian Saint
+							i(21652),	-- Silithid Carapace Chestguard
+							i(21651),	-- Scaled Sand Reaver Leggings
+							i(21645),	-- Hive Tunneler's Boots
+							i(21647),	-- Fetish of the Sand Reaver
+							{
+								["itemID"] = 21229,	-- Qiraji Lord's Insignia
+								["questID"] = 8579,	-- Mortal Champions (Quest)
+							},
 						},
 						["creatureID"] = 15510,
 					}),
 					e(1548, {	-- Viscidus
 						["groups"] = {
+							{
+								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
+								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+								["groups"] = {
+									{
+										["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+										["qg"] = 15380,		-- Quest Giver: Arygos
+										["collectible"] = false,	-- Turn off Collectible flags.
+										["groups"] = {
+											i(21242),	-- Blessed Qiraji War Axe
+											i(21272),	-- Blessed Qiraji Musket
+											i(21244),	-- Blessed Qiraji Pugio
+											i(21269),	-- Blessed Qiraji Bulwark
+										},
+									},
+								},
+							},
+							{
+								["itemID"] = 21237,	-- Imperial Qiraji Regalia (Item)
+								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+								["groups"] = {
+									{
+										["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+										["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+										["collectible"] = false,	-- Turn off Collectible flags.
+										["groups"] = {
+											i(21273),	-- Blessed Qiraji Acolyte Staff
+											i(21275),	-- Blessed Qiraji Augur Staff
+											i(21268),	-- Blessed Qiraji War Hammer
+										},
+									},
+								},
+							},
 							i(20928, {	-- Qiraji Bindings of Command
-								q(8544, {
-									i(21330),
-								}),
-								q(8559, {
-									i(21333),
-								}),
-								q(8641, {
-									i(21361),
-								}),
-								q(8637, {
-									i(21359),
-								}),
-								q(8594, {
-									i(21350),
-								}),
-								q(8596, {
-									i(21349),
-								}),
-								q(8659, {
-									i(21367),
-								}),
-								q(8626, {
-									i(21365),
-								}),
+								{
+									["questID"] = 8544, -- Conqueror's Spaulders (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {1},	-- Warrior
+									["groups"] = {
+										i(21330),	-- Conqueror's Spaulders
+									},
+								},
+								{
+									["questID"] = 8559, -- Conqueror's Greaves (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {1},	-- Warrior
+									["groups"] = {
+										i(21333),	-- Conqueror's Greaves
+									},
+								},
+								{
+									["questID"] = 8641, -- Deathdealer's Spaulders (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {4},	-- Rogue
+									["groups"] = {
+										i(21361),	-- Deathdealer's Spaulders
+									},
+								},
+								{
+									["questID"] = 8637, -- Deathdealer's Boots (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {4},	-- Rogue
+									["groups"] = {
+										i(21359),	-- Deathdealer's Boots
+									},
+								},
+								{
+									["questID"] = 8594, -- Mantle of the Oracle (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {5},	-- Priest
+									["groups"] = {
+										i(21350),	-- Mantle of the Oracle
+									},
+								},
+								{
+									["questID"] = 8596, -- Footwraps of the Oracle (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {5},	-- Priest
+									["groups"] = {
+										i(21349),	-- Footwraps of the Oracle
+									},
+								},
+								{
+									["questID"] = 8659, -- Striker's Pauldrons (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {3},	-- Hunter
+									["groups"] = {
+										i(21367),	-- Striker's Pauldrons
+									},
+								},
+								{
+									["questID"] = 8626, -- Striker's Footguards (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {3},	-- Hunter
+									["groups"] = {
+										i(21365),	-- Striker's Footguards
+									},
+								},
 							}),
 							i(20932, {	-- Qiraji Bindings of Dominance
-								q(8630, {
-									i(21391),
-								}),
-								q(8655, {
-									i(21388),
-								}),
-								q(8664, {
-									i(21335),
-								}),
-								q(8660, {
-									i(21338),
-								}),
-								q(8625, {
-									i(21345),
-								}),
-								q(8634, {
-									i(21344),
-								}),
-								q(8669, {
-									i(21354),
-								}),
-								q(8665, {
-									i(21355),
-								}),
-								q(8602, {
-									i(21376),
-								}),
-								q(8621, {
-									i(21373),
-								}),
+								{
+									["questID"] = 8630, -- Avenger's Pauldrons (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {2},	-- Paladin
+									["groups"] = {
+										i(21391),	-- Avenger's Pauldrons
+									},
+								},
+								{
+									["questID"] = 8655, -- Avenger's Greaves (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {2},	-- Paladin
+									["groups"] = {
+										i(21388),	-- Avenger's Greaves
+									},
+								},
+								{
+									["questID"] = 8664, -- Doomcaller's Mantle (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {9},	-- Warlock
+									["groups"] = {
+										i(21335),	-- Doomcaller's Mantle
+									},
+								},
+								{
+									["questID"] = 8660, -- Doomcaller's Footwraps (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {9},	-- Warlock
+									["groups"] = {
+										i(21338),	-- Doomcaller's Footwraps
+									},
+								},
+								{
+									["questID"] = 8625, -- Enigma Shoulderpads (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {8},	-- Mage
+									["groups"] = {
+										i(21345),	-- Enigma Shoulderpads
+									},
+								},
+								{
+									["questID"] = 8634, -- Enigma Boots (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {8},	-- Mage
+									["groups"] = {
+										i(21344),	-- Enigma Boots
+									},
+								},
+								{
+									["questID"] = 8669, -- Genesis Shoulderpads (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {11},	-- Druid
+									["groups"] = {
+										i(21354),	-- Genesis Shoulderpads
+									},
+								},
+								{
+									["questID"] = 8665, -- Genesis Boots (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {11},	-- Druid
+									["groups"] = {
+										i(21355),	-- Genesis Boots
+									},
+								},
+								{
+									["questID"] = 8602, -- Stormcaller's Pauldrons (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {7},	-- Shaman
+									["groups"] = {
+										i(21376),	-- Stormcaller's Pauldrons
+									},
+								},
+								{
+									["questID"] = 8621, -- Stormcaller's Footguards (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {7},	-- Shaman
+									["groups"] = {
+										i(21373),	-- Stormcaller's Footguards
+									},
+								},
 							}),
-							i(21622),
-							i(21623),
-							i(21624),
-							i(21626),
-							i(93039),
+							i(93039),	-- Viscidus Globule (Pet)
+							i(21622),	-- Sharpened Silithid Femur
+							i(21624),	-- Gauntlets of Kalimdor
+							i(21623),	-- Gauntlets of the Righteous Champion
+							i(21626),	-- Slime-Coated Leggings
+							i(21677),	-- Ring of Qiraji Fury
+							i(21625),	-- Scarab Brooch
+							{
+								["itemID"] = 21229,	-- Qiraji Lord's Insignia
+								["questID"] = 8579,	-- Mortal Champions (Quest)
+							},
 						},
 						["description"] = "This boss requires 20 frost hits to freeze. A fast dagger or one-hander with enchant weapon - elemental force or endothermic blaster toy (boss at 0%) to do this. Once frozen, you need 30 melee hits to shatter him. Equipping crate of kidnapped puppies or barov peasant caller trinket and using it after boss freezes will help to do this.",
 						["creatureID"] = 15299,
 					}),
 					e(1546, {	-- Princess Huhuran
 						["groups"] = {
+							{
+								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
+								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+								["groups"] = {
+									{
+										["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+										["qg"] = 15380,		-- Quest Giver: Arygos
+										["collectible"] = false,	-- Turn off Collectible flags.
+										["groups"] = {
+											i(21242),	-- Blessed Qiraji War Axe
+											i(21272),	-- Blessed Qiraji Musket
+											i(21244),	-- Blessed Qiraji Pugio
+											i(21269),	-- Blessed Qiraji Bulwark
+										},
+									},
+								},
+							},
+							{
+								["itemID"] = 21237,	-- Imperial Qiraji Regalia (Item)
+								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+								["groups"] = {
+									{
+										["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+										["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+										["collectible"] = false,	-- Turn off Collectible flags.
+										["groups"] = {
+											i(21273),	-- Blessed Qiraji Acolyte Staff
+											i(21275),	-- Blessed Qiraji Augur Staff
+											i(21268),	-- Blessed Qiraji War Hammer
+										},
+									},
+								},
+							},
 							i(20928, {	-- Qiraji Bindings of Command
-								q(8544, {
-									i(21330),
-								}),
-								q(8559, {
-									i(21333),
-								}),
-								q(8641, {
-									i(21361),
-								}),
-								q(8637, {
-									i(21359),
-								}),
-								q(8594, {
-									i(21350),
-								}),
-								q(8596, {
-									i(21349),
-								}),
-								q(8659, {
-									i(21367),
-								}),
-								q(8626, {
-									i(21365),
-								}),
+								{
+									["questID"] = 8544, -- Conqueror's Spaulders (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {1},	-- Warrior
+									["groups"] = {
+										i(21330),	-- Conqueror's Spaulders
+									},
+								},
+								{
+									["questID"] = 8559, -- Conqueror's Greaves (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {1},	-- Warrior
+									["groups"] = {
+										i(21333),	-- Conqueror's Greaves
+									},
+								},
+								{
+									["questID"] = 8641, -- Deathdealer's Spaulders (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {4},	-- Rogue
+									["groups"] = {
+										i(21361),	-- Deathdealer's Spaulders
+									},
+								},
+								{
+									["questID"] = 8637, -- Deathdealer's Boots (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {4},	-- Rogue
+									["groups"] = {
+										i(21359),	-- Deathdealer's Boots
+									},
+								},
+								{
+									["questID"] = 8594, -- Mantle of the Oracle (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {5},	-- Priest
+									["groups"] = {
+										i(21350),	-- Mantle of the Oracle
+									},
+								},
+								{
+									["questID"] = 8596, -- Footwraps of the Oracle (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {5},	-- Priest
+									["groups"] = {
+										i(21349),	-- Footwraps of the Oracle
+									},
+								},
+								{
+									["questID"] = 8659, -- Striker's Pauldrons (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {3},	-- Hunter
+									["groups"] = {
+										i(21367),	-- Striker's Pauldrons
+									},
+								},
+								{
+									["questID"] = 8626, -- Striker's Footguards (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {3},	-- Hunter
+									["groups"] = {
+										i(21365),	-- Striker's Footguards
+									},
+								},
 							}),
 							i(20932, {	-- Qiraji Bindings of Dominance
-								q(8630, {
-									i(21391),
-								}),
-								q(8655, {
-									i(21388),
-								}),
-								q(8664, {
-									i(21335),
-								}),
-								q(8660, {
-									i(21338),
-								}),
-								q(8625, {
-									i(21345),
-								}),
-								q(8634, {
-									i(21344),
-								}),
-								q(8669, {
-									i(21354),
-								}),
-								q(8665, {
-									i(21355),
-								}),
-								q(8602, {
-									i(21376),
-								}),
-								q(8621, {
-									i(21373),
-								}),
+								{
+									["questID"] = 8630, -- Avenger's Pauldrons (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {2},	-- Paladin
+									["groups"] = {
+										i(21391),	-- Avenger's Pauldrons
+									},
+								},
+								{
+									["questID"] = 8655, -- Avenger's Greaves (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {2},	-- Paladin
+									["groups"] = {
+										i(21388),	-- Avenger's Greaves
+									},
+								},
+								{
+									["questID"] = 8664, -- Doomcaller's Mantle (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {9},	-- Warlock
+									["groups"] = {
+										i(21335),	-- Doomcaller's Mantle
+									},
+								},
+								{
+									["questID"] = 8660, -- Doomcaller's Footwraps (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {9},	-- Warlock
+									["groups"] = {
+										i(21338),	-- Doomcaller's Footwraps
+									},
+								},
+								{
+									["questID"] = 8625, -- Enigma Shoulderpads (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {8},	-- Mage
+									["groups"] = {
+										i(21345),	-- Enigma Shoulderpads
+									},
+								},
+								{
+									["questID"] = 8634, -- Enigma Boots (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {8},	-- Mage
+									["groups"] = {
+										i(21344),	-- Enigma Boots
+									},
+								},
+								{
+									["questID"] = 8669, -- Genesis Shoulderpads (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {11},	-- Druid
+									["groups"] = {
+										i(21354),	-- Genesis Shoulderpads
+									},
+								},
+								{
+									["questID"] = 8665, -- Genesis Boots (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {11},	-- Druid
+									["groups"] = {
+										i(21355),	-- Genesis Boots
+									},
+								},
+								{
+									["questID"] = 8602, -- Stormcaller's Pauldrons (Quest)
+									["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {7},	-- Shaman
+									["groups"] = {
+										i(21376),	-- Stormcaller's Pauldrons
+									},
+								},
+								{
+									["questID"] = 8621, -- Stormcaller's Footguards (Quest)
+									["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
+									["collectible"] = false,	-- Not Collectible
+									["classes"] = {7},	-- Shaman
+									["groups"] = {
+										i(21373),	-- Stormcaller's Footguards
+									},
+								},
 							}),
-							i(21616),
-							i(21621),
-							i(21618),
-							i(21617),
-							i(21619),
+							i(21616),	-- Huhuran's Stinger
+							i(21621),	-- Cloak of the Golden Hive
+							i(21618),	-- Hive Defiler Wristguards
+							i(21619),	-- Gloves of the Messiah
+							i(21617),	-- Wasphide Gauntlets
+							i(21620),	-- Ring of the Martyr
+							{
+								["itemID"] = 21229,	-- Qiraji Lord's Insignia
+								["questID"] = 8579,	-- Mortal Champions (Quest)
+							},
 						},
 						["creatureID"] = 15509,
 					}),
 					e(1549, {	-- The Twin Emperors
 						["groups"] = {
 							n(15276, { -- Emperor Vek'lor
-								i(21597), -- Royal Scepter of Vek'lor
-								i(21602), -- Qiraji Execution  Bracers
-								i(21599), -- Vek'lor's Gloves of Devastation
-								i(21598), -- Royal Qiraji Belt
-								i(21600), -- Boots of Epiphany
-								i(93040), -- Anubisath Idol
+								{
+									["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
+									["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+									["groups"] = {
+										{
+											["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+											["qg"] = 15380,		-- Quest Giver: Arygos
+											["collectible"] = false,	-- Turn off Collectible flags.
+											["groups"] = {
+												i(21242),	-- Blessed Qiraji War Axe
+												i(21272),	-- Blessed Qiraji Musket
+												i(21244),	-- Blessed Qiraji Pugio
+												i(21269),	-- Blessed Qiraji Bulwark
+											},
+										},
+									},
+								},
+								{
+									["itemID"] = 21237,	-- Imperial Qiraji Regalia (Item)
+									["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+									["groups"] = {
+										{
+											["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+											["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+											["collectible"] = false,	-- Turn off Collectible flags.
+											["groups"] = {
+												i(21273),	-- Blessed Qiraji Acolyte Staff
+												i(21275),	-- Blessed Qiraji Augur Staff
+												i(21268),	-- Blessed Qiraji War Hammer
+											},
+										},
+									},
+								},
 								i(20930, {	-- Vek'lor's Diadem
-									q(8628, {
-										i(21387),
-									}),
-									q(8639, {
-										i(21360),
-									}),
-									q(8667, {
-										i(21353),
-									}),
-									q(8623, {
-										i(21372),
-									}),
-									q(8657, {
-										i(21366),
-									}),
+									{
+										["questID"] = 8628, -- Avenger's Crown (Quest)
+										["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+										["collectible"] = false,	-- Not Collectible
+										["classes"] = {2},	-- Paladin
+										["groups"] = {
+											i(21387),	-- Avenger's Crown
+										},
+									},
+									{
+										["questID"] = 8639, -- Deathdealer's Helm (Quest)
+										["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+										["collectible"] = false,	-- Not Collectible
+										["classes"] = {4},	-- Rogue
+										["groups"] = {
+											i(21360),	-- Deathdealer's Helm
+										},
+									},
+									{
+										["questID"] = 8667, -- Genesis Helm (Quest)
+										["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+										["collectible"] = false,	-- Not Collectible
+										["classes"] = {11},	-- Druid
+										["groups"] = {
+											i(21353),	-- Genesis Helm
+										},
+									},
+									{
+										["questID"] = 8623, -- Stormcaller's Diadem (Quest)
+										["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+										["collectible"] = false,	-- Not Collectible
+										["classes"] = {7},	-- Shaman
+										["groups"] = {
+											i(21372),	-- Stormcaller's Diadem
+										},
+									},
+									{
+										["questID"] = 8657, -- Striker's Diadem (Quest)
+										["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+										["collectible"] = false,	-- Not Collectible
+										["classes"] = {3},	-- Hunter
+										["groups"] = {
+											i(21366),	-- Striker's Diadem
+										},
+									},
 								}),
+								i(20735),	-- Formula: Enchant Cloak - Subtlety
+								i(93040), 	-- Anubisath Idol
+								i(21597), 	-- Royal Scepter of Vek'lor
+								i(21602), 	-- Qiraji Execution Bracers
+								i(21599), 	-- Vek'lor's Gloves of Devastation
+								i(21598), 	-- Royal Qiraji Belt
+								i(21600), 	-- Boots of Epiphany
+								i(21601),	-- Ring of Emperor Vek'lor
+								{
+									["itemID"] = 21229,	-- Qiraji Lord's Insignia
+									["questID"] = 8579,	-- Mortal Champions (Quest)
+								},
 							}),
 							n(15275, { -- Emperor Vek'nilash
-								i(21679), -- Kalimdor's Revenge
-								i(21604), -- Bracelets of Royal Redemption
-								i(21605), -- Gloves  of the Hidden Temple
-								i(21606), -- Belt of the Fallen Emperor
-								i(21607), -- Grasp of the Fallen Emperor
-								i(21609), -- Regenerating Belt of Vek'nilash
+								{
+									["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
+									["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+									["groups"] = {
+										{
+											["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+											["qg"] = 15380,		-- Quest Giver: Arygos
+											["collectible"] = false,	-- Turn off Collectible flags.
+											["groups"] = {
+												i(21242),	-- Blessed Qiraji War Axe
+												i(21272),	-- Blessed Qiraji Musket
+												i(21244),	-- Blessed Qiraji Pugio
+												i(21269),	-- Blessed Qiraji Bulwark
+											},
+										},
+									},
+								},
+								{
+									["itemID"] = 21237,	-- Imperial Qiraji Regalia (Item)
+									["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+									["groups"] = {
+										{
+											["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+											["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+											["collectible"] = false,	-- Turn off Collectible flags.
+											["groups"] = {
+												i(21273),	-- Blessed Qiraji Acolyte Staff
+												i(21275),	-- Blessed Qiraji Augur Staff
+												i(21268),	-- Blessed Qiraji War Hammer
+											},
+										},
+									},
+								},
 								i(20926, {	-- Vek'nilash's Circlet
-									q(8561, {
-										i(21329),
-									}),
-									q(8662, {
-										i(21337),
-									}),
-									q(8632, {
-										i(21347),
-									}),
-									q(8592, {
-										i(21348),
-									}),
+									{
+										["questID"] = 8561, -- Conqueror's Crown (Quest)
+										["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+										["collectible"] = false,	-- Not Collectible
+										["classes"] = {1},	-- Warrior
+										["groups"] = {
+											i(21329),	-- Conqueror's Crown
+										},
+									},
+									{
+										["questID"] = 8662, -- Doomcaller's Circlet (Quest)
+										["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+										["collectible"] = false,	-- Not Collectible
+										["classes"] = {9},	-- Warlock
+										["groups"] = {
+											i(21337),	-- Doomcaller's Circlet
+										},
+									},
+									{
+										["questID"] = 8632, -- Enigma Circlet (Quest)
+										["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+										["collectible"] = false,	-- Not Collectible
+										["classes"] = {8},	-- Mage
+										["groups"] = {
+											i(21347),	-- Enigma Circlet
+										},
+									},
+									{
+										["questID"] = 8592, -- Tiara of the Oracle (Quest)
+										["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+										["collectible"] = false,	-- Not Collectible
+										["classes"] = {5},	-- Priest
+										["groups"] = {
+											i(21348),	-- Tiara of the Oracle
+										},
+									},
 								}),
+								i(20726),	-- Formula: Enchant Gloves - Threat
+								i(21679), 	-- Kalimdor's Revenge
+								i(21608),	-- Amulet of Vek'nilash
+								i(21604), 	-- Bracelets of Royal Redemption
+								i(21605), 	-- Gloves of the Hidden Temple
+								i(21606), 	-- Belt of the Fallen Emperor
+								i(21607), 	-- Grasp of the Fallen Emperor
+								i(21609), 	-- Regenerating Belt of Vek'nilash
+								{
+									["itemID"] = 21229,	-- Qiraji Lord's Insignia
+									["questID"] = 8579,	-- Mortal Champions (Quest)
+								},
 							}),
 						},
 					}),
 					e(1550, { -- Ouro
 						["groups"] = {
-							i(23557),
-							i(21610),
-							i(21615),
-							i(21611),
+							{
+								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
+								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+								["groups"] = {
+									{
+										["questID"] = 8789,	-- Imperial Qiraji Armaments (Quest)
+										["qg"] = 15380,		-- Quest Giver: Arygos
+										["collectible"] = false,	-- Turn off Collectible flags.
+										["groups"] = {
+											i(21242),	-- Blessed Qiraji War Axe
+											i(21272),	-- Blessed Qiraji Musket
+											i(21244),	-- Blessed Qiraji Pugio
+											i(21269),	-- Blessed Qiraji Bulwark
+										},
+									},
+								},
+							},
+							{
+								["itemID"] = 21237,	-- Imperial Qiraji Regalia (Item)
+								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
+								["groups"] = {
+									{
+										["questID"] = 8790,	-- Imperial Qiraji Regalia (Quest)
+										["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+										["collectible"] = false,	-- Turn off Collectible flags.
+										["groups"] = {
+											i(21273),	-- Blessed Qiraji Acolyte Staff
+											i(21275),	-- Blessed Qiraji Augur Staff
+											i(21268),	-- Blessed Qiraji War Hammer
+										},
+									},
+								},
+							},
 							i(20927, {	-- Ouro's Intact Hide
 								q(8560, {
 									i(21332),
@@ -622,25 +1480,25 @@ _.Instances =
 									i(21368),
 								}),
 							}),
+							i(23557),	-- Larvae of the Great Worm
+							i(21610),	-- Wormscale Blocker
+							i(21615),	-- Don Rigoberto's Lost Hat
+							i(21611),	-- Burrower Bracers
+							i(23570),	-- Jom Gabbar
+							i(23558),	-- The Burrower's Shell
+							{
+								["itemID"] = 21229,	-- Qiraji Lord's Insignia
+								["questID"] = 8579,	-- Mortal Champions (Quest)
+							},
 						},
 						["creatureID"] = 15517,
 					}),
 					e(1551, { -- C'Thun
 						["groups"] = {
-							i(20933, {	-- Husk of the Old God
-								q(8661, {
-									i(21334),
-								}),
-								q(8633, {
-									i(21343),
-								}),
-								q(8666, {
-									i(21357),
-								}),
-								q(8603, {
-									i(21351),
-								}),
-							}),
+							{
+								["itemID"] = 21221,	-- Eye of C'Thun
+								["questID"] = 8801,	-- C'Thun's Legacy (Quest)
+							},
 							i(20929, {	-- Carapace of the Old God
 								q(8627, {
 									i(21389),
@@ -658,19 +1516,33 @@ _.Instances =
 									i(21370),
 								}),
 							}),
-							i(21221, {	-- Eye of C'Thun
-								q(8801),	-- C'Thun's Legacy
+							i(20933, {	-- Husk of the Old God
+								q(8661, {
+									i(21334),
+								}),
+								q(8633, {
+									i(21343),
+								}),
+								q(8666, {
+									i(21357),
+								}),
+								q(8603, {
+									i(21351),
+								}),
 							}),
-							i(21134),
-							i(21839),
-							i(21126),
-							i(22731),
-							i(21583),
-							i(21585),
-							i(21581),
-							i(22730),
-							i(21586),
-							i(21582),
+							i(21134),	-- Dark Edge of Insanity
+							i(21126),	-- Death's Sting
+							i(21839),	-- Scepter of the False Prophet
+							i(22732),	-- Mark of C'Thun
+							i(21583),	-- Cloak of Clarity
+							i(22731),	-- Cloak of the Devoured
+							i(21585),	-- Dark Storm Gauntlets
+							i(21581),	-- Gauntlets of Annihilation
+							i(21586),	-- Belt of Never-Ending Agony
+							i(22730),	-- Eyestalk Waist Cord
+							i(21582),	-- Grasp of the Old God
+							i(21596),	-- Ring of the Godslayer
+							i(21579),	-- Vanquished Tentacle of C'Thun
 						},
 						["creatureID"] = 15727,
 					}),
