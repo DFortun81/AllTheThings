@@ -17,6 +17,8 @@ _.GearSets =
 	}),
 	n(-364, { -- Legendaries
 	}),
+	n(-211, { -- New Character
+	}),
 	n(-4189, { -- PvP Item Sets
 	}),
 --	n(-999999, { -- Staff Picks
