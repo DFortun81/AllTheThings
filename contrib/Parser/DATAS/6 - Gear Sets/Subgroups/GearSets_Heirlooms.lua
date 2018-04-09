@@ -198,18 +198,18 @@ _.GearSets =
 					i(93890), -- Gleaming Spaulders of Valor
 					un(2, i(93894)), -- Immaculate Lightforge Spaulders
 					un(2, i(48685)), -- Polished Breastplate of Valor
-					un(2, i(122381)), -- Polished Breastplate of Valor
+					i(122381), -- Polished Breastplate of Valor
 					un(2, i(61931)), -- Polished Helm of Valor
-					un(2, i(122245)), -- Polished Helm of Valor
+					i(122245), -- Polished Helm of Valor
 					un(2, i(62023)), -- Polished Legplates of Valor
 					i(122251), -- Polished Legplates of Valor
 					un(2, i(42949)), -- Polished Spaulders of Valor
 					i(122355), -- Polished Spaulders of Valor
-					un(2, i(127010)), -- Pristine Lightforge Breastplate
+					i(127010), -- Pristine Lightforge Breastplate
 					i(127012), -- Pristine Lightforge Helm
-					un(2, i(127011)), -- Pristine Lightforge Legplates
+					i(127011), -- Pristine Lightforge Legplates
 					i(44100), -- Pristine Lightforge Spaulders
-					un(2, i(122373)), -- Pristine Lightforge Spaulders
+					i(122373), -- Pristine Lightforge Spaulders
 					i(93895), -- Reinforced Stockade Pauldrons
 					i(44099), -- Strengthened Stockade Pauldrons
 					i(122372), -- Strengthened Stockade Pauldrons
