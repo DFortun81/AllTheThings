@@ -280,6 +280,13 @@ n(-3, { 	-- Holidays
 --[[				
 					qa( 31512),	-- A Witness to History
 					qa( 32315),	-- Anduin's Plea
+--]]
+--[[ CHALLENGE MODE DAILIES -- REMOVED?
+					qdg(qa(32006, {	-- A Worthy Challenge: Flameweaver Koegler
+						i(98134),	-- Heroic Cache of Treasures
+					})),
+--]]
+--[[
 					qa( 32052),	-- Candy Bucket
 					q(31486),	-- Everything I Know About Cooking
 					qa( 32316),	-- Heart Of The Alliance

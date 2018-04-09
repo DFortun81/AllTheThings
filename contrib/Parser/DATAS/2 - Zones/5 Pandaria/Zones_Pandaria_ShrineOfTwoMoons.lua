@@ -281,6 +281,13 @@ n(-3, { 	-- Holidays
 --[[
 					qh( 32352),	-- A Gathering Storm
 					qh( 31511),	-- A Witness to History
+--]]
+--[[ CHALLENGE MODE DAILIES -- REMOVED?
+					qdg(qh(31527, {	-- A Worthy Challenge: Flameweaver Koegler
+						i(98134),	-- Heroic Cache of Treasures
+					})),
+--]]
+--[[
 					qh( 32242),	-- Buried Secrets
 					qh( 32022),	-- Candy Bucket
 					q(31279),	-- Everything I Know About Cooking
