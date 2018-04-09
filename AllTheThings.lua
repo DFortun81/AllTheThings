@@ -2754,7 +2754,8 @@ app.BaseFaction = {
 		elseif key == "trackable" or key == "collectible" then
 			return true;
 		elseif key == "saved" or key == "collected" then
-			return t.standing == (t.isFriend and 6 or 8);
+			if t.isFriend then return not select(9, GetFriendshipReputation(t.factionID)); end
+			return t.standing == 8;
 		elseif key == "text" then
 			local rgb = FACTION_BAR_COLORS[t.standing + (t.isFriend and 2 or 0)];
 			return Colorize(select(1, GetFactionInfoByID(t.factionID)), RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
