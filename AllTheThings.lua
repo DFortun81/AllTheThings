@@ -6307,6 +6307,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowSpeciesID", false);
 	GetDataMember("ShowSpellID", false);
 	GetDataMember("ShowTierID", false);
+	GetDataMember("ShowTitleID", false);
 	GetDataMember("ShowVisualID", false);
 	
 	app.Settings:init();
