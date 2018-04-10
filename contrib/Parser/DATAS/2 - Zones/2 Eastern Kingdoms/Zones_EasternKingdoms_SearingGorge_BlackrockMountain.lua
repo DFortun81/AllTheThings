@@ -642,6 +642,18 @@ _.Zones =
 								un(34, i(10743)),	-- Drakefire Headguard
 								un(34, i(10744)),	-- Axe of the Ebon Blade
 							}),
+							q( 3379, {	-- Shadoweaver
+								["g"] = {
+									un(34, i(10461)),	-- Shadowy Bracers
+								},
+								["requiredSkill"] = 197,	-- Tailoring
+							}),
+							q( 3385, {	-- The Undermarket
+								["g"] = {
+									un(34, i(10462)),	-- Shadowy Belt
+								},
+								["requiredSkill"] = 197,	-- Tailoring
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

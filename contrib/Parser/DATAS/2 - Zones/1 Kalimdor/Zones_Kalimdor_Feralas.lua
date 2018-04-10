@@ -1013,6 +1013,10 @@ _.Zones =
 								un(34, i(11856)),	-- Ceremonial Elven Blade
 								un(34, i(11857)),	-- Sanctimonial Rod
 							}),
+							qh(3062, {	-- Dark Heart
+								un(34, i(9665)),	-- Wingcrest Gloves
+								un(34, i(9666)),	-- Stronghorn Girdle
+							}),
 							qa(1101, {	-- The Crone of the Kraul
 								un(34, i( 4197)),	-- Berylline Pads
 								un(34, i( 6742)),	-- Stonefist Girdle
