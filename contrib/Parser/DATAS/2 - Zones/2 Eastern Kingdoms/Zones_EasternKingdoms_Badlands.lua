@@ -954,6 +954,11 @@ _.Zones =
 								un(34, i(4086)),	-- Flash Rifle
 								un(34, i(5248)),	-- Flash Wand
 							}),
+							q(2418, {	-- Power Stones
+								un(34, i( 9522)),	-- Energized Stone Circle
+								un(34, i(10358)),	-- Duracin Bracers
+								un(34, i(10359)),	-- Everlast Boots
+							}),
 							q( 709, {	-- Solution to Doom
 								un(34, i(4746)),	-- Doomsayer's Robe
 							}),

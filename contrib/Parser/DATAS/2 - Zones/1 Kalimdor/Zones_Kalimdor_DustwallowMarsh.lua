@@ -1141,6 +1141,10 @@ _.Zones =
 							qh(11200, {	-- More than Coincidence
 								un(34, i(33272)),	-- Biting Axe
 							}),
+							qh( 1172, {	-- The Brood of Onyxia
+								un(34, i(10700)),	-- Encarmine Boots
+								un(34, i(10701)),	-- Boots of Zua'tec
+							}),
 							qdg(q(2846, {	-- Tiara of the Deep
 								un(34, i(9527)),	-- Spellshifter Rod
 								un(34, i(9531)),	-- Gemshale Pauldrons

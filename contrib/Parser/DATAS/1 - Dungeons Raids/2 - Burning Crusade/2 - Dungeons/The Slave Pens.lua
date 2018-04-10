@@ -88,8 +88,16 @@ _.Instances =
 							i(24378),		-- Coilfang Hammer of Renewal
 							i(24380),		-- Calming Spore Reed
 							i(24381),		-- Coilfang Needler
-							i(24379),		-- Bogstrok Scale Cloak
-							i(27550),		-- Ironscale War Cloak
+							i(24379, {		-- Bogstrok Scale Cloak
+								["g"] = {
+								},
+								["description"] = "This item currently has no class/spec info attached by Blizzard and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class/spec until Blizzard corrects this.",
+							}),
+							i(27550, {		-- Ironscale War Cloak
+								["g"] = {
+								},
+								["description"] = "This item currently has no class/spec info attached by Blizzard and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class/spec until Blizzard corrects this.",
+							}),
 							i(27547),		-- Coldwhisper Cord
 							i(27548),		-- Girdle of Many Blessings (NOTE: Timewalking drops from Mennu?)
 							i(28124),		-- Liar's Cord

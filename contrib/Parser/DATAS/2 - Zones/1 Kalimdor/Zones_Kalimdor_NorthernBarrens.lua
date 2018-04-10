@@ -1459,6 +1459,18 @@ _.Zones =
 								},
 								["classes"] = { 1 }	-- Warrior
 							}),
+							qh(3514, {	-- Horde Presence
+								un(34, i(10653)),	-- Trailblazer Boots
+								un(34, i(10654)),	-- Jutebraid Gloves
+							}),
+							qa(3370, {	-- In Nightmares
+								un(34, i(10657)),	-- Talbar Mantle
+								un(34, i(10658)),	-- Quagmire Galoshes
+							}),
+							qh(3369, {	-- In Nightmares
+								un(34, i(10657)),	-- Talbar Mantle
+								un(34, i(10658)),	-- Quagmire Galoshes
+							}),
 							qh( 873, {	-- Isha Awak
 								un(34, i(5356)),	-- Branding Rod
 								un(34, i(5357)),	-- Ward of the Vale
