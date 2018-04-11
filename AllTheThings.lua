@@ -893,16 +893,18 @@ local function CacheArrayFieldIDs(group, field, arrayField)
 		end
 	end
 end
-local function CacheFieldID(group, field)
-	local firldCache_g = group[field];
-	if firldCache_g then
-		local fieldCache_f = fieldCache[field][firldCache_g];
+local function CacheFieldValue(group, field, value)
+	if value then
+		local fieldCache_f = fieldCache[field][value];
 		if not fieldCache_f then
 			fieldCache_f = {};
-			fieldCache[field][firldCache_g] = fieldCache_f;
+			fieldCache[field][value] = fieldCache_f;
 		end
 		tinsert(fieldCache_f, group);
 	end
+end
+local function CacheFieldID(group, field)
+	CacheFieldValue(group, field, group[field]);
 end
 local function CacheSubFieldID(group, field, subfield)
 	local firldCache_g = group[subfield];
@@ -930,8 +932,7 @@ local function CacheFields(group)
 	CacheFieldID(group, "s");
 	CacheFieldID(group, "speciesID");
 	CacheFieldID(group, "spellID");
-	CacheSubFieldID(group, "itemID", "toyID");
-	CacheFieldID(group, "toyID");
+	if group.f == 102 and group.itemID then CacheFieldValue(group, "toyID", group.itemID); end
 	if group.c and not containsValue(group.c, app.ClassIndex) then
 		group.nmc = true;	-- "Not My Class"
 	end
@@ -2476,6 +2477,7 @@ app.CreateAchievementCriteria = function(id, t)
 	return createInstance(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
 end
 
+(function()
 local transmogSlotIcons = { "axe_17", "axe_09", "weapon_bow_05", "weapon_rifle_01", "mace_02", "hammer_16", "spear_04", "sword_04", "sword_07", "weapon_glave_01", "staff_27", nil, nil, "misc_monsterclaw_02", nil, "weapon_shortblade_01", nil, nil, "weapon_crossbow_01","wand_02", "shield_06", "helmet_03", "shoulder_05", "misc_cape_11", "chest_chain", "shirt_grey_01", "misc_tournaments_tabard_gnome", "bracer_07", "gauntlets_24", "belt_24", "pants_09", "boots_09", "misc_orb_01" }
 local transmogArmorSlots = { INVTYPE_HEAD, INVTYPE_NECK, INVTYPE_SHOULDER, INVTYPE_CLOAK, INVTYPE_CHEST, INVTYPE_BODY, INVTYPE_TABARD, INVTYPE_WRIST, INVTYPE_HAND, INVTYPE_WAIST, INVTYPE_LEGS, INVTYPE_FEET, INVTYPE_RING, INVTYPE_TRINKET, INVTYPE_HOLDABLE };
 app.BaseTransmogCategory = {
@@ -2488,12 +2490,13 @@ app.BaseTransmogCategory = {
         return transmogArmorSlots[t.itemSubClass - 20]
       end
     elseif key == "icon" then
-        return "Interface\\Icons\\inv_"..transmogSlotIcons[t.itemSubClass]
+        return "Interface\\Icons\\inv_"..transmogSlotIcons[t.itemSubClass];
     else
       return table[key];
     end
   end
 };
+end)();
 app.CreateTransmogCategory = function(id, t)
   return createInstance(constructor(id, t, "category"), app.BaseTransmogCategory);
 end
@@ -3693,23 +3696,23 @@ end
 app.BaseToy = {
 	__index = function(t, key)
 		if key == "key" then
-			return "toyID";
+			return "itemID";
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			return GetDataSubMember("CollectedToys", t.toyID);
+			return GetDataSubMember("CollectedToys", t.itemID);
 		elseif key == "f" then
 			return 102;
 		elseif key == "text" then
-			return C_ToyBox_GetToyLink(t.toyID);
+			return C_ToyBox_GetToyLink(t.itemID);
 		elseif key == "link" then
-			return C_ToyBox_GetToyLink(t.toyID);
+			return C_ToyBox_GetToyLink(t.itemID);
 		elseif key == "icon" then
-			return select(3, C_ToyBox_GetToyInfo(t.toyID));
+			return select(3, C_ToyBox_GetToyInfo(t.itemID));
 		elseif key == "name" then
-			return select(2, C_ToyBox_GetToyInfo(t.toyID));
+			return select(2, C_ToyBox_GetToyInfo(t.itemID));
 		elseif key == "tsm" then
-			return string.format("i:%d", t.toyID);
+			return string.format("i:%d", t.itemID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3717,7 +3720,7 @@ app.BaseToy = {
 	end
 };
 app.CreateToy = function(id, t)
-	return createInstance(constructor(id, t, "toyID"), app.BaseToy);
+	return createInstance(constructor(id, t, "itemID"), app.BaseToy);
 end
 
 -- Vignette Lib
@@ -5056,7 +5059,7 @@ local function RowOnClick(self, button)
 						if #missingItems > 0 then
 							local itemList, search = {};
 							for i,group in ipairs(missingItems) do
-								search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID or group.toyID);
+								search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
 								if search then itemList[search] = BuildSourceTextForTSM(group, 0); end
 							end
 							app:ShowPopupDialog("Running this command can potentially destroy your existing TSM settings by reassigning items to the " .. app.DisplayName .. " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?",
@@ -5174,28 +5177,29 @@ local function RowOnEnter(self)
 		
 		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
 		if reference.itemID then
-			-- This is an item reference. :)
-			local link = reference.link;
-			if link then
-				GameTooltip:SetHyperlink(link);
-			elseif reference.speciesID then
-				-- Do nothing.
-			elseif not reference.artifactID then
-				GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
-				if reference and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, true); end
-				for key, value in pairs(reference) do
-					GameTooltip:AddDoubleLine(key, tostring(value));
-				end	
+			if reference.f == 204 then
+				-- This is a toy!
+				GameTooltip:SetToyByItemID(reference.itemID);
+			else
+				-- This is an non-toy item reference. :)
+				local link = reference.link;
+				if link then
+					GameTooltip:SetHyperlink(link);
+				elseif reference.speciesID then
+					-- Do nothing.
+				elseif not reference.artifactID then
+					GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
+					if reference and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, true); end
+					for key, value in pairs(reference) do
+						GameTooltip:AddDoubleLine(key, tostring(value));
+					end	
+				end
 			end
 		elseif reference.currencyID then
 			GameTooltip:SetCurrencyByID(reference.currencyID);
-		else
-			-- Standalone Fields
-			if reference.toyID then GameTooltip:SetToyByItemID(reference.toyID);
-			elseif not reference.encounterID then -- Dungeon Journal links do NOT work. :/
-				local link = reference.link;
-				if link then pcall(GameTooltip.SetHyperlink, GameTooltip, link); end
-			end
+		elseif not reference.encounterID then
+			local link = reference.link;
+			if link then pcall(GameTooltip.SetHyperlink, GameTooltip, link); end
 		end
 		
 		-- Miscellaneous fields
@@ -5303,7 +5307,6 @@ local function RowOnEnter(self)
 			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
 			if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. " Collected"); end
 		end
-		if reference.toyID then AttachTooltipSearchResults(GameTooltip, "toyID:" .. reference.toyID, SearchForFieldAndSummarize, "toyID", reference.toyID); end
 		if reference.titleID then
 			if GetDataMember("ShowTitleID") then GameTooltip:AddDoubleLine(L("TITLE_ID"), tostring(reference.titleID)); end
 			GameTooltip:AddDoubleLine(" ", L(IsTitleKnown(reference.titleID) and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"));
