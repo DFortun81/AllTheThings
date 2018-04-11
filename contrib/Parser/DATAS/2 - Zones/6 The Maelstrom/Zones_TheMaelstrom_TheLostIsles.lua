@@ -475,10 +475,10 @@ _.Zones =
 						}),	
 						qh(25214, { -- Escape Velocity	
 							["groups"] = {
-								i(52965), -- Heartache Dagger
-								i(52937), -- Chip's Cloak
-								i(52920), -- Cardio-Extractor Gloves
-								i(131835), -- Cardio-Extractor Handguards
+								i(52923), -- Rocket-Fuel Soaked Bracers
+								i(52968), -- Orbital Leggings
+								i(131845), -- Oribital Greaves
+								i(52939), -- Cage-Launcher's Plate
 							},
 							["qg"] = 38120, -- Hobart Grapplehammer
 							["sourceQuests"] = { 25213 }, -- The Slave Pits
@@ -495,10 +495,11 @@ _.Zones =
 						}),	
 						qh(25244, { -- What Kind of Name is Candy, Anyway? [Male Version]	
 							["groups"] = {
-								i(52972), -- 
-								i(131846), -- 
-								i(52970), -- 
-								i(52941), -- 
+								i(52972), -- Ex-Stealer's Gloves
+								i(52970), -- Fickle Belt
+								i(131846), -- Fickle Cord
+								i(52941), -- Jealousy's Edge
+								i(52938), -- Jealousy's Edge [Yes, there are two.  Both are awarded on completion.]
 							},
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25214 }, -- Escape Velocity
@@ -511,12 +512,12 @@ _.Zones =
 						}),	
 						qh(25265, { -- Victory!	
 							["groups"] = {
-								i(52927), -- 
-								i(52971), -- 
-								i(62335), -- 
-								i(58499), -- 
-								i(131847), -- 
-								i(131893), -- 
+								i(52927), -- Victor's Robes
+								i(52971), -- Igneous Leggings
+								i(62335), -- Thrall's Gift
+								i(58499), -- Grasp of Victory
+								i(131847), -- Victor's Legguards
+								i(131893), -- Victor's Igneous Cuffs
 							},
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25251 }, -- Final Confrontation
