@@ -2142,7 +2142,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 							for i,j in ipairs(group.g) do
 								if app.GroupRequirementsFilter(j) and app.GroupFilter(j) and not j.hideText then
 									if j.g then
-										if not j.total or j.total < 1 then 
+										if not j.total or j.total < 2 then 
 											if j.collected then
 												if GetDataMember("ShowCollectedItems") then
 													if first then first = nil; self:AddLine("Contains:"); end
@@ -2169,7 +2169,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 												if first then first = nil; self:AddLine("Contains:"); end
 												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON"));
 											end
-										else
+										elseif j.collectible or (j.trackable and app.ShowIncompleteQuests(j)) then
 											if first then first = nil; self:AddLine("Contains:"); end
 											if j.dr then
 												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON"));
