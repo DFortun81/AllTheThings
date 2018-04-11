@@ -2048,10 +2048,7 @@ app.ToggleDebugMode = ToggleDebugMode;
 app.ToggleMainList = ToggleMainList;
 
 
--- Tooltip Hooks
-local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
-local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
-local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
+-- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, listing, group)
 	if listing then
 		-- Display the pre-calculated row data.
@@ -2352,57 +2349,67 @@ local function AttachBattlePetTooltip(self, data)
 		end
 	end
 end
-local function AttachCurrencyByID(self, currencyID)
-	-- Make sure to call to base functionality
-	GameTooltip_SetCurrencyByID(self, currencyID);
-	AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForFieldAndSummarize, "currencyID", currencyID);
-	self:Show();
+local function ClearTooltip(self)
+	self.AllTheThingsProcessing = nil;
 end
-local function AttachCurrencyToken(self, tokenID)
-	-- Make sure to call to base functionality
-	GameTooltip_SetCurrencyToken(self, tokenID);
-	
-	-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
-	local name, isHeader = GetCurrencyListInfo(tokenID);
-	if not isHeader then
-		-- Determine which currencyID is the one that we're dealing with.
-		local cache = SearchForFieldContainer("currencyID");
-		if cache then
-			-- We only care about currencies in the addon at the moment.
-			for currencyID, _ in pairs(cache) do
-				-- Compare the name of the currency vs the name of the token
-				if select(1, GetCurrencyInfo(currencyID)) == name then
-					AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForFieldAndSummarize, "currencyID", currencyID);
-					self:Show();
-					break;
+
+-- Tooltip Hooks
+(function()
+	local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
+	GameTooltip.SetCurrencyByID = function(self, currencyID)
+		-- Make sure to call to base functionality
+		GameTooltip_SetCurrencyByID(self, currencyID);
+		AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForFieldAndSummarize, "currencyID", currencyID);
+		self:Show();
+	end
+	local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
+	GameTooltip.SetCurrencyToken = function(self, tokenID)
+		-- Make sure to call to base functionality
+		GameTooltip_SetCurrencyToken(self, tokenID);
+		
+		-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
+		local name, isHeader = GetCurrencyListInfo(tokenID);
+		if not isHeader then
+			-- Determine which currencyID is the one that we're dealing with.
+			local cache = SearchForFieldContainer("currencyID");
+			if cache then
+				-- We only care about currencies in the addon at the moment.
+				for currencyID, _ in pairs(cache) do
+					-- Compare the name of the currency vs the name of the token
+					if select(1, GetCurrencyInfo(currencyID)) == name then
+						AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForFieldAndSummarize, "currencyID", currencyID);
+						self:Show();
+						break;
+					end
 				end
 			end
 		end
 	end
-end
-local function AttachLFGDungeonReward(self, dungeonID, rewardID)
-	local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardID);
-	if spec == "item" and itemID then
-		--AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForFieldAndSummarize, "itemID", itemID);
-		local g = SearchForItemID(itemID);
-		if g and #g > 0 then
-			local link = g[1].link;
-			if link then
-				self:SetHyperlink(link);
-				return;
+	local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
+	GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardID)
+		local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardID);
+		if spec == "item" and itemID then
+			--AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForFieldAndSummarize, "itemID", itemID);
+			local g = SearchForItemID(itemID);
+			if g and #g > 0 then
+				local link = g[1].link;
+				if link then
+					self:SetHyperlink(link);
+					return;
+				end
 			end
 		end
+		
+		-- Only call to the base functionality if it is unknown.
+		GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardID);
 	end
-	
-	-- Only call to the base functionality if it is unknown.
-	GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardID);
-end
-local function ClearTooltip(self)
-	self.AllTheThingsProcessing = nil;
-end
-GameTooltip.SetCurrencyByID = AttachCurrencyByID;
-GameTooltip.SetCurrencyToken = AttachCurrencyToken;
-GameTooltip.SetLFGDungeonReward = AttachLFGDungeonReward;
+	local GameTooltip_SetToyByItemID = GameTooltip.SetToyByItemID;
+	GameTooltip.SetToyByItemID = function(self, itemID)
+		GameTooltip_SetToyByItemID(self, itemID);
+		AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForFieldAndSummarize, "itemID", itemID);
+		self:Show();
+	end
+end)();
 
 -- Achievement Lib
 app.BaseAchievement = {
@@ -5177,7 +5184,7 @@ local function RowOnEnter(self)
 		
 		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
 		if reference.itemID then
-			if reference.f == 204 then
+			if reference.f == 102 then
 				-- This is a toy!
 				GameTooltip:SetToyByItemID(reference.itemID);
 			else
