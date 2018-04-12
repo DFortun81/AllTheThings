@@ -631,6 +631,12 @@ _.Instances =
 					}),
 					e(1543, {	-- The Prophet Skeram
 						["groups"] = {
+							dr(1.0, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(1.2, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(1.1, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(1.0, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(1.1, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(1.0, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							i(22222, {	-- Thick Obisidan Breastplate (Recipe)
 								i(22196),	-- Thick Obisidan Breastplate (Item)
 							}),
@@ -661,6 +667,12 @@ _.Instances =
 							n(15511, { -- Lord Kri
 								["description"] = "Killing this boss last can drop the following items.",
 								["groups"] = {
+									dr(12, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+									dr(0.9, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+									dr(0.9, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+									dr(0.8, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+									dr(1.4, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+									dr(0.9, i(20736)),	-- Formula: Enchant Cloak - Dodge
 									{
 										["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 										["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -713,6 +725,12 @@ _.Instances =
 							n(15543, { -- Princess Yauj
 								["description"] = "Killing this boss last can drop the following items.",
 								["groups"] = {
+									dr(1.2, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+									dr(0.6, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+									dr(0.7, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+									dr(0.5, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+									dr(0.8, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+									dr(1.1, i(20736)),	-- Formula: Enchant Cloak - Dodge
 									{
 										["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 										["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -766,6 +784,12 @@ _.Instances =
 							n(15544, { -- Vem
 								["description"] = "Killing this boss last can drop the following items.",
 								["groups"] = {
+									dr(1.0, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+									dr(1.5, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+									dr(1.0, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+									dr(1.3, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+									dr(1.0, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+									dr(1.2, i(20736)),	-- Formula: Enchant Cloak - Dodge
 									{
 										["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 										["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -819,6 +843,12 @@ _.Instances =
 					}),
 					e(1544, {	-- Battleguard Sartura
 						["groups"] = {
+							dr(1.0, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(1.0, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(1.2, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(1.1, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(1.1, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(1.5, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -874,6 +904,12 @@ _.Instances =
 					}),
 					e(1545, {	-- Fankriss the Unyielding
 						["groups"] = {
+							dr(1.0, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(1.2, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(1.1, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(1.7, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(1.0, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(1.0, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -927,6 +963,12 @@ _.Instances =
 					}),
 					e(1548, {	-- Viscidus
 						["groups"] = {
+							dr(1.1, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(0.8, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(1.2, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(1.8, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(1.0, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(1.8, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -1143,6 +1185,12 @@ _.Instances =
 					}),
 					e(1546, {	-- Princess Huhuran
 						["groups"] = {
+							dr(1.6, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(1.2, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(1.0, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(1.3, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(1.1, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(1.4, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -1540,6 +1588,12 @@ _.Instances =
 					}),
 					e(1550, { 	-- Ouro
 						["groups"] = {
+							dr(0.7, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(0.8, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(1.3, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(0.9, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(1.5, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(1.2, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",

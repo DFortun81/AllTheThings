@@ -10,6 +10,12 @@ _.Instances =
 				["groups"] = {
 					e(1537, { 	-- Kurinnaxx
 						["groups"] = {
+							dr(0.8, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(0.5, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(0.5, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(0.4, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(0.5, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(0.6, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							i(20888, { -- Qiraji Ceremonial Ring
 								{
 									["questID"] = 8701, -- Band of Veiled Shadows (Quest)
@@ -184,6 +190,12 @@ _.Instances =
 					}),
 					e(1538, { 	-- General Rajaxx
 						["groups"] = {
+							dr(0.5, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(1.2, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(1.0, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(0.6, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(0.7, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(0.5, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							i(20888, { -- Qiraji Ceremonial Ring
 								{
 									["questID"] = 8701, -- Band of Veiled Shadows (Quest)
@@ -386,6 +398,12 @@ _.Instances =
 					}),
 					e(1540, { 	-- Buru the Gorger
 						["groups"] = {
+							dr(0.7, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(0.4, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(0.3, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(0.5, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(0.8, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(0.8, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							i(20888, { -- Qiraji Ceremonial Ring
 								{
 									["questID"] = 8701, -- Band of Veiled Shadows (Quest)
@@ -653,6 +671,12 @@ _.Instances =
 					}),
 					e(1541, { 	-- Ayamiss the Hunter
 						["groups"] = {
+							dr(0.3, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(0.8, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(0.6, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(0.4, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(0.5, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(0.7, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							i(20888, { -- Qiraji Ceremonial Ring
 								{
 									["questID"] = 8701, -- Band of Veiled Shadows (Quest)
@@ -893,6 +917,12 @@ _.Instances =
 					}),
 					e(1542, { 	-- Ossirian the Unscarred
 						["groups"] = {
+							dr(0.7, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(0.6, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(1.2, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(0.5, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(0.6, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(0.7, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							{
 								["itemID"] = 21220,	-- Head of Ossirian the Unscarred
 								["questID"] = 8791,	-- The Fall of Ossirian
@@ -1073,6 +1103,12 @@ _.Instances =
 					}),
 					e(1539, { 	-- Moam
 						["groups"] = {
+							dr(0.6, i(20729)),	-- Formula: Enchant Gloves - Fire Power
+							dr(0.9, i(20728)),	-- Formula: Enchant Gloves - Frost Power
+							dr(0.5, i(20730)),	-- Formula: Enchant Gloves - Healing Power
+							dr(0.4, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
+							dr(0.7, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
+							dr(0.5, i(20736)),	-- Formula: Enchant Cloak - Dodge
 							i(22220, {	-- Plans: Black Grasp of the Destroyer
 								i(22194),	-- Black Grasp of the Destroyer
 							}),
