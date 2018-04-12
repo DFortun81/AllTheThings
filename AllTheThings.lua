@@ -874,8 +874,8 @@ fieldCache["encounterID"] = {};
 fieldCache["objectID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["mapID"] = {};
-fieldCache["mountID"] = {};
 fieldCache["questID"] = {};
+fieldCache["requireSkill"] = {};
 fieldCache["s"] = {};
 fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
@@ -927,8 +927,8 @@ local function CacheFields(group)
 	CacheFieldID(group, "itemID");
 	CacheFieldID(group, "mapID");
 	CacheArrayFieldIDs(group, "mapID", "maps");
-	CacheFieldID(group, "mountID");
 	CacheFieldID(group, "questID");
+	CacheFieldID(group, "requireSkill");
 	CacheFieldID(group, "s");
 	CacheFieldID(group, "speciesID");
 	CacheFieldID(group, "spellID");
@@ -1606,65 +1606,41 @@ end
 local function OpenMainList()
 	app:OpenWindow("Prime");
 end
-local function OpenMiniList(mapID)
-	--print("OpenMainList->" .. mapID);
+local function OpenMiniList(field, id, label)
 	-- If there is at not at least one window visible after this, hide the app window.
 	local popout = app:GetWindow("CurrentInstance");
-	local mapData = SearchForField("mapID", mapID);
-	if mapData then
+	local results = SearchForField(field, id);
+	if results then
 		-- Simplify the returned groups
-		if #mapData < 2 then
+		if #results < 2 then
 			-- Only one object matched.
-			mapData = setmetatable({}, { __index = mapData[1] });
+			results = setmetatable({}, { __index = results[1] });
 		else
 			-- A couple of objects matched, let's make a header.
-			local header = { g = {}, baseIndent = -1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for Map ID #" .. mapID, back = 1, total = 0, progress = 0 };
-			--setmetatable(constructor(mapID, { g = {}, indent = -1, visible = true }, "mapID"), app.BaseMap);
-			for i, group in ipairs(mapData) do
+			local header = { g = {}, baseIndent = -1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, back = 1, total = 0, progress = 0 };
+			for i, group in ipairs(results) do
 				header.progress = header.progress + (group.progress or 0);
 				header.total = header.total + (group.total or 0);
 				header.parent = group.parent;
 				tinsert(header.g, group);
-				--[[
-				if group.text == header.text then
-					-- Merge the subgroups with the header groups
-					for j, subgroup in ipairs(group.g) do
-						tinsert(header.g, subgroup);
-					end
-					for key,value in pairs(group) do
-						if key ~= "g" and key ~= "progress" and key ~= "total" then
-							header[key] = value;
-						end
-					end
-				else
-					tinsert(header.g, group);
-					if group.indent and group.indent > header.indent then
-						header.indent = group.indent;
-					end
-				end
-				
-				header.icon = group.icon;
-				header.parent = group.parent;
-				]]--
 			end
 			
 			-- Swap out the map data for the header.
-			mapData = header;
+			results = header;
 		end
 		
 		-- Check to see if it is empty.
 		if popout.data then ExpandGroupsRecursively(popout.data, false); end
 		
 		-- Check to see completion...
-		popout.data = mapData;
+		popout.data = results;
 		ExpandGroupsRecursively(popout.data, true);
 		
 		-- Reset to the first object.
 		popout.ScrollBar:SetValue(1);
 		
-		if mapData.progress == mapData.total then
-			if mapData.g and #mapData.g > 0 then
-				--app.print("You've collected " .. app.DisplayName .. " from " .. (GetRealZoneText() or "this zone") .. ".");
+		if results.progress == results.total then
+			if results.g and #results.g > 0 then
 				popout:SetVisible(true);
 				return false;
 			else
@@ -1677,9 +1653,6 @@ local function OpenMiniList(mapID)
 			return false;
 		end
 	end
-	
-	-- This can trigger when you login.
-	-- app.print("There isn't anything listed for " .. (GetRealZoneText() or "") .. ": " ..(GetSubZoneText() or "").. ".");
 end
 local function OpenMiniListForCurrentZone()
 	-- Cache the original map ID.
@@ -1687,7 +1660,7 @@ local function OpenMiniListForCurrentZone()
 	SetMapToCurrentZone();
 	local mapID = GetCurrentMapAreaID();
 	SetMapByID(originalMapID);
-	OpenMiniList(mapID);
+	OpenMiniList("mapID", mapID, "Map ID");
 end
 local function ToggleMainList()
 	app:ToggleWindow("Prime");
@@ -1748,7 +1721,7 @@ local function RefreshLocationCoroutine()
 	-- Cache that we're in the current map ID.
 	if GetTempDataMember("MapID") ~= mapID then
 		SetTempDataMember("MapID", mapID);
-		OpenMiniList(mapID);
+		OpenMiniList("mapID", mapID, "Map ID");
 		wipe(searchCache);
 	end
 end
@@ -3271,13 +3244,13 @@ end
 app.BaseMount = {
 	__index = function(t, key)
 		if key == "key" then
-			return "mountID";
+			return "spellID";
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			if GetDataSubMember("CollectedMounts", t.mountID) then return true; end
-			if IsSpellKnown(t.mountID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
-				SetDataSubMember("CollectedMounts", t.mountID, 1);
+			if GetDataSubMember("CollectedMounts", t.spellID) then return true; end
+			if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
+				SetDataSubMember("CollectedMounts", t.spellID, 1);
 				return true;
 			end
 		elseif key == "f" then
@@ -3285,10 +3258,10 @@ app.BaseMount = {
 		elseif key == "b" then
 			return (t.parent and t.parent.b) or 1;
 		elseif key == "text" then
-			return "|cffb19cd9" .. (select(1, GetSpellInfo(t.mountID)) or "???") .. "|r";
-			--return select(1, GetSpellLink(t.mountID)) or select(1, GetSpellInfo(t.mountID)) or ("Spell #" .. t.mountID);
+			return "|cffb19cd9" .. (select(1, GetSpellInfo(t.spellID)) or "???") .. "|r";
+			--return select(1, GetSpellLink(t.spellID)) or select(1, GetSpellInfo(t.spellID)) or ("Spell #" .. t.spellID);
 		elseif key == "description" then
-			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID];
+			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.spellID];
 			if mountID then return select(2, C_MountJournal_GetMountInfoExtraByID(mountID)); end
 		elseif key == "link" then
 			if t.itemID then
@@ -3298,16 +3271,14 @@ app.BaseMount = {
 					return link;
 				end
 			end
-			return select(1, GetSpellLink(t.mountID));
+			return select(1, GetSpellLink(t.spellID));
 		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.mountID));
+			return select(3, GetSpellInfo(t.spellID));
 		elseif key == "displayID" then
-			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID];
+			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.spellID];
 			if mountID then return select(1, C_MountJournal_GetMountInfoExtraByID(mountID)); end
-		elseif key == "spellID" then
-			return t.mountID;
 		elseif key == "name" then
-			return C_MountJournal_GetMountInfoByID(GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.mountID]);
+			return C_MountJournal_GetMountInfoByID(GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.spellID]);
 		elseif key == "tsm" then
 			if t.itemID then return string.format("i:%d", t.itemID); end
 			if t.parent and t.parent.itemID then return string.format("i:%d", t.parent.itemID); end
@@ -3318,7 +3289,7 @@ app.BaseMount = {
 	end
 };
 app.CreateMount = function(id, t)
-	return createInstance(constructor(id, t, "mountID"), app.BaseMount);
+	return createInstance(constructor(id, t, "spellID"), app.BaseMount);
 end
 
 -- Music Roll Lib
@@ -3559,8 +3530,65 @@ app.CreateQuest = function(id, t)
 	return createInstance(constructor(id, t, "questID"), app.BaseQuest);
 end
 
--- Spell Lib
+-- Recipe Lib
 local spellRecipeInfo = {};
+app.BaseRecipe = {
+	__index = function(t, key)
+		if key == "key" then
+			return "spellID";
+		elseif key == "f" then
+			return 200;
+		elseif key == "text" then
+			return t.link;
+		elseif key == "icon" then
+			if t.itemID then
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+				if link then
+					t.link = link;
+					t.icon = icon;
+					return link;
+				end
+			end
+			return (t.requireSkill and select(3, GetSpellInfo(t.requireSkill))) or select(3, GetSpellInfo(t.spellID));
+		elseif key == "link" then
+			if t.itemID then
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+				if link then
+					t.link = link;
+					t.icon = icon;
+					return link;
+				end
+			end
+			return select(1, GetSpellLink(t.spellID));
+		elseif key == "collectible" then
+			return true;
+		elseif key == "collected" then
+			if GetDataSubMember("CollectedSpells", t.spellID) then return true; end
+			if C_TradeSkillUI.GetRecipeInfo(t.spellID, spellRecipeInfo) and spellRecipeInfo.learned then
+				SetDataSubMember("CollectedSpells", t.spellID, 1);
+				return true;
+			end
+		elseif key == "name" then
+			return t.itemID and GetItemInfo(t.itemID);
+		elseif key == "specs" then
+			if t.itemID then
+				return GetItemSpecInfo(t.itemID);
+			end
+		elseif key == "tsm" then
+			if t.itemID then
+				return string.format("i:%d", t.itemID);
+			end
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateRecipe = function(id, t)
+	return createInstance(constructor(id, t, "spellID"), app.BaseRecipe);
+end
+
+-- Spell Lib
 app.BaseSpell = {
 	__index = function(t, key)
 		if key == "key" then
@@ -3580,15 +3608,7 @@ app.BaseSpell = {
 			end
 			return select(1, GetSpellLink(t.spellID));
 		elseif key == "collectible" then
-			if C_TradeSkillUI.GetRecipeInfo(t.spellID, spellRecipeInfo) then
-				rawset(t, "collectible", true);
-				return true;
-			end
-		elseif key == "collected" then
-			if t.collectible then
-				C_TradeSkillUI.GetRecipeInfo(t.spellID, spellRecipeInfo);
-				return spellRecipeInfo and spellRecipeInfo.learned;
-			end
+			return false;
 		elseif key == "name" then
 			return t.itemID and GetItemInfo(t.itemID);
 		elseif key == "specs" then
@@ -5930,7 +5950,7 @@ function app:GetDataCache()
 		CacheFields(allData);
 		
 		-- Now that we have built the data, we don't need this anymore.
-		app.Categories = nil;
+		--app.Categories = nil;
 	end
 	return allData;
 end
@@ -6051,7 +6071,6 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
-app:GetWindow("Tradeskills");
 app:GetWindow("CurrentInstance");
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
@@ -6151,8 +6170,9 @@ app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 app:RegisterEvent("TOYS_UPDATED");
---app:RegisterEvent("TRADE_SKILL_SHOW");
---app:RegisterEvent("TRADE_SKILL_CLOSE");
+app:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
+app:RegisterEvent("TRADE_SKILL_SHOW");
+app:RegisterEvent("TRADE_SKILL_CLOSE");
 --app:RegisterEvent("ACHIEVEMENT_EARNED");
 app:RegisterEvent("SCENARIO_UPDATE");
 app:RegisterEvent("COMPANION_LEARNED");
@@ -6374,30 +6394,6 @@ app.events.PLAYER_LOGIN = function()
 		local mountIDs = C_MountJournal.GetMountIDs();
 		if #mountIDs < 1 then return true; end
 		
-		--[[
-		-- Let's build the dynamic mount cache.
-		local cache = GetTempDataMember("MOUNT_CACHE", {});
-		local listedMounts = GetTempDataMember("MOUNT_CACHE_LISTED", {});
-		local temp = GetTempDataMember("COMPANION_PET_SOURCE_TYPES", {});
-		if #temp < 1 then
-			for i=1,C_PetJournal.GetNumPetSources() do
-				local t = { ["text"] = _G["BATTLE_PET_SOURCE_"..i], ["g"] = {} };
-				temp[i] = t;
-				tinsert(cache, t);
-			end
-		end
-		for i,mountID in ipairs(mountIDs) do
-			-- The 2nd value in the list is the spellID for the mount.
-			local creatureName, spellID, icon, active, isUsable, sourceType, isFavorite, isFactionSpecific, faction, hideOnChar, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID and not (hideOnChar or listedMounts[spellID]) then
-				listedMounts[spellID] = true;
-				if temp[sourceType or 1] then tinsert(temp[sourceType or 1].g, setmetatable({ ["mountID"] = spellID }, app.BaseMount));
-				else tinsert(cache, setmetatable({ ["mountID"] = spellID }, app.BaseMount)); end
-			end
-		end
-		SetDataMember("MOUNT_CACHE", cache);
-		]]--
-		
 		-- Harvest the Spell IDs for Conversion.
 		local spellID_MountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", {});
 		local collectedMounts = GetDataMember("CollectedMounts", {});
@@ -6519,11 +6515,93 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		end
 	end
 end
-app.events.TRADE_SKILL_CLOSE = function(...)
-	app:GetWindow("Tradeskills"):SetVisible(false);
+app.events.TRADE_SKILL_LIST_UPDATE = function(...)
+	if app.Categories.Professions then
+		local popout = app:GetWindow("Tradeskills");
+		if popout:IsShown() then
+			-- Cache the Tradeskill
+			local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
+			local skillCache = fieldCache["requireSkill"][tradeSkillID];
+			if skillCache then
+				-- Cache learned recipes
+				local learned = 0;
+				for i,group in ipairs(skillCache) do
+					if group.spellID and group.f == 200 then
+						-- This is a recipe, cache the learned state.
+						if not GetDataSubMember("CollectedSpells", group.spellID) then
+							if C_TradeSkillUI.GetRecipeInfo(group.spellID, spellRecipeInfo) and spellRecipeInfo.learned then
+								SetDataSubMember("CollectedSpells", group.spellID, 1);
+								learned = learned + 1;
+							end
+						end
+					end
+				end
+				
+				-- Open the Tradeskill list for this Profession
+				for i,group in ipairs(app.Categories.Professions) do
+					if group.requireSkill == tradeSkillID then
+						popout.data = group;
+						BuildGroups(group, group.g);
+						UpdateGroups(group, group.g, 1);
+						ExpandGroupsRecursively(group, true);
+						popout:SetVisible(true);
+					end
+				end
+			
+				-- If something new was "learned", then refresh the data.
+				if learned > 0 then
+					app:RefreshData(false, true);
+					app.print("Cached " .. learned .. " known recipes!");
+				end
+			end
+		end
+	end
 end
 app.events.TRADE_SKILL_SHOW = function(...)
-	app:GetWindow("Tradeskills"):SetVisible(true);
+	if app.Categories.Professions then
+		-- Cache the Tradeskill
+		local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
+		local skillCache = fieldCache["requireSkill"][tradeSkillID];
+		if skillCache then
+			-- Cache learned recipes
+			local learned = 0;
+			for i,group in ipairs(skillCache) do
+				if group.spellID and group.f == 200 then
+					-- This is a recipe, cache the learned state.
+					if not GetDataSubMember("CollectedSpells", group.spellID) then
+						if C_TradeSkillUI.GetRecipeInfo(group.spellID, spellRecipeInfo) and spellRecipeInfo.learned then
+							SetDataSubMember("CollectedSpells", group.spellID, 1);
+							learned = learned + 1;
+						end
+					end
+				end
+			end
+		
+			-- Open the Tradeskill list for this Profession
+			for i,group in ipairs(app.Categories.Professions) do
+				if group.requireSkill == tradeSkillID then
+					local popout = app:GetWindow("Tradeskills");
+					popout:ClearAllPoints();
+					popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
+					popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+					popout.data = group;
+					BuildGroups(group, group.g);
+					UpdateGroups(group, group.g, 1);
+					ExpandGroupsRecursively(group, true);
+					popout:SetVisible(true);
+				end
+			end
+			
+			-- If something new was "learned", then refresh the data.
+			if learned > 0 then
+				app:RefreshData(false, true);
+				app.print("Cached " .. learned .. " known recipes!");
+			end
+		end
+	end
+end
+app.events.TRADE_SKILL_CLOSE = function(...)
+	app:GetWindow("Tradeskills"):SetVisible(false);
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	if sourceID then
