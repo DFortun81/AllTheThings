@@ -482,130 +482,152 @@ _.Instances =
 						}),
 					}),
 					n(0, {		-- Zone Drop
-						n(15264, {	-- Anubisath Sentinel	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+						{
+							["itemID"] = 21230,	-- Ancient Qiraji Artifact
+							["questID"] = 8784,	-- Secrets of the Qiraji (Quest)
+							["collectible"] = false,
+							["repeatable"] = true,
+						},
+						n(15277, {	-- Anubisath Defender
+							dr(08.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
 							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15277, {	-- Anubisath Defender	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
+							dr(0.12, i(21890)), -- Gloves of the Fallen Prophet
 							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15311, {	-- Anubisath Warder	
+							dr(0.18, i(21891)),	-- Shard of the Fallen Star
+						}),
+						n(15264, {	-- Anubisath Sentinel
+							dr(09.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(0.05, i(21837)),	-- Anubisath Warhammer
+							dr(0.05, i(21838)),	-- Garb of Royal Ascension
+							dr(0.05, i(21888)),	-- Gloves of the Immortal
+							dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
+							dr(0.07, i(21836)),	-- Ritssyn's Ring of Chaos
+						}),
+						n(15311, {	-- Anubisath Warder
+							dr(11.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(11.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(0.2, i(21890)),	-- Gloves of the Fallen Prophet
+							dr(0.2, i(21889)),	-- Gloves of the Redeemed Prophecy
+							dr(0.3, i(21891)),	-- Shard of the Fallen Star
+						}),
+						n(15262, {	-- Obsidian Eradicator
+							dr(08.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(08.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(0.05, i(21837)),	-- Anubisath Warhammer
+							dr(0.04, i(21838)),	-- Garb of Royal Ascension
+							dr(0.07, i(21888)),	-- Gloves of the Immortal
+							dr(0.06, i(21856)),	-- Neretzek, the Blood Drinker
+							dr(0.05, i(21836)),	-- Ritssyn's Ring of Chaos
+						}),
+						n(15312, {	-- Obisidan Nullifier
+							dr(08.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(1.5, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(0.12, i(21890)), -- Gloves of the Fallen Prophet
+							dr(0.12, i(21889)),	-- Gloves of the Redeemed Prophecy
+							dr(0.14, i(21891)),	-- Shard of the Fallen Star
+						}),
+						n(15247, {	-- Qiraji Brainwasher
+							dr(08.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(0.05, i(21837)),	-- Anubisath Warhammer
+							dr(0.06, i(21838)),	-- Garb of Royal Ascension
+							dr(0.05, i(21888)),	-- Gloves of the Immortal
+							dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
+							dr(0.07, i(21836)),	-- Ritssyn's Ring of Chaos
+						}),
+						n(15252, {	-- Qiraji Champion
 							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
 							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
 							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
+							dr(0.8, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(0.15, i(21890)), -- Gloves of the Fallen Prophet
 							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15262, {	-- Obsidian Eradicator	
+							dr(0.14, i(21891)),	-- Shard of the Fallen Star
+						}),
+						n(15249, {	-- Qiraji Lasher
 							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
 							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15312, {	-- Obisidan Nullifier	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(1.1, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(0.11, i(21837)),	-- Anubisath Warhammer
+							dr(0.04, i(21838)),	-- Garb of Royal Ascension
+							dr(0.06, i(21888)),	-- Gloves of the Immortal
+							dr(0.08, i(21856)),	-- Neretzek, the Blood Drinker
+							dr(0.04, i(21836)),	-- Ritssyn's Ring of Chaos
+						}),
+						n(15246, {	-- Qiraji Mindslayer
+							dr(09.0, i(21218)),	-- Blue Qiraji Resonating Crystal
 							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
-							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15247, {	-- Qiraji Brainwasher	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(1.1, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(0.17, i(21890)), -- Gloves of the Fallen Prophet
+							dr(0.16, i(21889)),	-- Gloves of the Redeemed Prophecy
+							dr(0.2, i(21891)),	-- Shard of the Fallen Star
+						}),
+						n(15250, {	-- Qiraji Slayer
+							dr(09.0, i(21218)),	-- Blue Qiraji Resonating Crystal
 							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
 							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15252, {	-- Qiraji Champion	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
-							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15249, {	-- Qiraji Lasher	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15246, {	-- Qiraji Mindslayer	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
-							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15250, {	-- Qiraji Slayer	
-							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
+							dr(0.07, i(21837)),	-- Anubisath Warhammer
+							dr(0.05, i(21838)),	-- Garb of Royal Ascension
+							dr(0.05, i(21888)),	-- Gloves of the Immortal
+							dr(0.04, i(21856)),	-- Neretzek, the Blood Drinker
+							dr(0.06, i(21836)),	-- Ritssyn's Ring of Chaos
+						}),
 						n(15233, {	-- Vekniss Guardian	
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
-						n(15240, {	-- Vekniss Hive Crawler	
-							dr(0.13, i(21890)), -- Gloves of the Fallen Prophet
-							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-						}),		
-						n(15229, {	-- Vekniss Soldier	
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
+							dr(0.08, i(21837)),	-- Anubisath Warhammer
+							dr(0.05, i(21838)),	-- Garb of Royal Ascension
+							dr(0.06, i(21888)),	-- Gloves of the Immortal
+							dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
+							dr(0.07, i(21836)),	-- Ritssyn's Ring of Chaos
+						}),
+						n(15240, {	-- Vekniss Hive Crawler
+							dr(0.3, i(21890)), 	-- Gloves of the Fallen Prophet
+							dr(0.2, i(21889)),	-- Gloves of the Redeemed Prophecy
+							dr(0.15, i(21891)),	-- Shard of the Fallen Star
+						}),
+						n(15229, {	-- Vekniss Soldier
+							dr(0.05, i(21837)),	-- Anubisath Warhammer
+							dr(0.07, i(21838)),	-- Garb of Royal Ascension
+							dr(0.06, i(21888)),	-- Gloves of the Immortal
+							dr(0.06, i(21856)),	-- Neretzek, the Blood Drinker
+							dr(0.06, i(21836)),	-- Ritssyn's Ring of Chaos
+						}),
 						n(15235, {	-- Vekniss Stinger	
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
+							dr(0.08, i(21837)),	-- Anubisath Warhammer
+							dr(0.04, i(21838)),	-- Garb of Royal Ascension
+							dr(0.03, i(21888)),	-- Gloves of the Immortal
+							dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
+							dr(0.05, i(21836)),	-- Ritssyn's Ring of Chaos
+						}),
 						n(15230, {	-- Vekniss Warrior	
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),		
+							dr(0.04, i(21837)),	-- Anubisath Warhammer
+							dr(0.05, i(21838)),	-- Garb of Royal Ascension
+							dr(0.05, i(21888)),	-- Gloves of the Immortal
+							dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
+							dr(0.06, i(21836)),	-- Ritssyn's Ring of Chaos
+						}),
 						n(15236, {	-- Vekniss Wasp	
-							dr(0.5, i(21837)),	-- Anubisath Warhammer
-							dr(0.5, i(21838)),	-- Garb of Royal Ascension
-							dr(0.5, i(21888)),	-- Gloves of the Immortal
-							dr(0.5, i(21856)),	-- Neretzek, the Blood Drinker
-						}),	
+							dr(0.09, i(21837)),	-- Anubisath Warhammer
+							dr(0.07, i(21838)),	-- Garb of Royal Ascension
+							dr(0.08, i(21888)),	-- Gloves of the Immortal
+							dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
+							dr(0.04, i(21836)),	-- Ritssyn's Ring of Chaos
+						}),
 					}),
 					e(1543, {	-- The Prophet Skeram
 						["groups"] = {
@@ -1516,7 +1538,7 @@ _.Instances =
 							}),
 						},
 					}),
-					e(1550, { -- Ouro
+					e(1550, { 	-- Ouro
 						["groups"] = {
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
@@ -1649,7 +1671,7 @@ _.Instances =
 						},
 						["creatureID"] = 15517,
 					}),
-					e(1551, { -- C'Thun
+					e(1551, { 	-- C'Thun
 						["groups"] = {
 							{
 								["itemID"] = 21221,	-- Eye of C'Thun
