@@ -20,11 +20,11 @@ _.WorldEvents =
 			un(35, i(122469)), -- Mystic Runesaber
 			un(35, i(156564)), -- Shu-zen, the Divine Sentinel
 			un(35, i(92724)), -- Swift Windsteed
-			i(112326, { -- Warforged Nightmare
+			un(35, i(112326, { -- Warforged Nightmare
 				["groups"] = {
 					un(35, i(112324)), -- Nightmarish Hitching Post
 				},
-			}),
+			})),
 			un(35, i(69846)), -- Winged Guardian
 		}),
 		n(-162, { -- Pets
@@ -35,11 +35,11 @@ _.WorldEvents =
 			un(35, i(70099)), -- Cenarion Hatchling
 			un(35, i(92707)), -- Cinder Kitten
 			un(2, i(72068)), -- Guardian Cub
-			i(49662, { -- Gryphon Hatchling
+			un(2, i(49662, { -- Gryphon Hatchling
 				["groups"] = {
 				},
 				["description"] = "This item is available only if you purchase the Plush Toy and redeem the code",
-			}),
+			})),
 			un(35, i(49693)), -- Lil' K.T.
 			un(35, i(68385)), -- Lil' Ragnaros
 			un(35, i(54847)), -- Lil' XT
@@ -50,11 +50,11 @@ _.WorldEvents =
 			un(35, i(151234)), -- Shadow
 			un(35, i(78916)), -- Soul of the Aspects
 			un(35, i(147900)), -- Twilight
-			i(49663, { -- Wind Rider Cub
+			un(2, i(49663, { -- Wind Rider Cub
 				["groups"] = {
 				},
 				["description"] = "This item is available only if you purchase the Plush Toy and redeem the code",
-			}),
+			})),
 		}),
 	}),
 };
