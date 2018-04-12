@@ -15,8 +15,6 @@ _.NeverImplemented =
 	i(134579), -- Vanguard Cape
 	i(134605), -- Vanguard Cloak
 	i(134013), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
-	
-	i(153275), -- Forgotten Conservatory Slippers
 	-- LIKELY PART OF 110 TRIAL SET
 	i(153826), -- Mountainsage Cord
 	i(153821), -- Mountainsage Handwraps
@@ -146,9 +144,6 @@ _.NeverImplemented =
 		{ ["mountID"]= 18363 }	
 	})))),
 	un(1, model(17890, i(25596))), 	-- Peep's Whistle	 					(Never added in Game)
-	un(35, i(112326)),	-- Warforged Nightmare
-	un(2, i(49662)),	-- Gryphon Hatchling
-	un(2, i(49663)),	-- Wind Rider Cub
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
 	un(1, i(39263)),	-- Dissevered Leggings 									(Patchwerk 10 Man Normal, was never available to players.)
 	un(1, i(48730)),	-- Sunstrider's Gauntlets of Conquest

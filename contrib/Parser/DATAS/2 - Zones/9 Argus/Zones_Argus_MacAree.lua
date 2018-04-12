@@ -266,17 +266,19 @@ _.Zones =
 						}),
 						o(273301, {	-- Ancient Eredar Cache (south of main road, mostly east of center)
 							["groups"] = {
-								i(153271),	-- Forgotten Conservatory Helm
-								i(153288),	-- Forgotten Conservatory Robes
-								i(153272),	-- Forgotten Conservatory Gloves
-								i(153331),	-- Mac'Aree Lightseeker's Helmet
-								i(153334),	-- Mac'Aree Lightseeker's Spaulders
-								i(153332),	-- Mac'Aree Lightseeker's Chestpiece
+								i(153271), -- Forgotten Conservatory Helm
+								i(153288), -- Forgotten Conservatory Robes
+								i(153272), -- Forgotten Conservatory Gloves
+								i(153275), -- Forgotten Conservatory Slippers
+								i(153331), -- Mac'Aree Lightseeker's Helmet
+								i(153334), -- Mac'Aree Lightseeker's Spaulders
+								i(153332), -- Mac'Aree Lightseeker's Chestpiece
 							},
 							["questID"] = 48346,
 						}),
 						o(273407, {	-- Ancient Eredar Cache (north central)
 							["groups"] = {
+								i(153275), -- Forgotten Conservatory Slippers
 								i(153334),	-- Mac'Aree Lightseeker's Spaulders
 								i(153335),	-- Mac'Aree Lightseeker's Handguards
 								i(153333),	-- Mac'Aree Lightseeker's Waistplate
@@ -291,6 +293,7 @@ _.Zones =
 								i(153272),	-- Forgotten Conservatory Gloves
 								i(153270),	-- Forgotten Conservatory Sash
 								i(153273),	-- Forgotten Conservatory Leggings
+								i(153275), -- Forgotten Conservatory Slippers
 								i(153332),	-- Mac'Aree Lightseeker's Chestpiece
 								i(153336),	-- Mac'Aree Lightseeker's Armguards
 								i(153333),	-- Mac'Aree Lightseeker's Waistplate
@@ -303,6 +306,7 @@ _.Zones =
 								i(153271),	-- Forgotten Conservatory Helm
 								i(153276),	-- Forgotten Conservatory Amice
 								i(153288),	-- Forgotten Conservatory Robes
+								i(153275), -- Forgotten Conservatory Slippers
 								i(153273),	-- Forgotten Conservatory Leggings
 								i(153332),	-- Mac'Aree Lightseeker's Chestpiece
 								i(153336),	-- Mac'Aree Lightseeker's Armguards
@@ -314,6 +318,7 @@ _.Zones =
 							["groups"] = {
 								i(153276),	-- Forgotten Conservatory Amice
 								i(153273),	-- Forgotten Conservatory Leggings
+								i(153275), -- Forgotten Conservatory Slippers
 								i(153335),	-- Mac'Aree Lightseeker's Handguards
 								i(153337),	-- Mac'Aree Lightseeker's Treads
 							},
@@ -323,6 +328,7 @@ _.Zones =
 							["groups"] = {
 								i(153277),	-- Forgotten Conservatory Wristwraps
 								i(153272),	-- Forgotten Conservatory Gloves
+								i(153275), -- Forgotten Conservatory Slippers
 								i(153331),	-- Mac'Aree Lightseeker's Helmet
 								i(153334),	-- Mac'Aree Lightseeker's Spaulders
 								i(153332),	-- Mac'Aree Lightseeker's Chestpiece
