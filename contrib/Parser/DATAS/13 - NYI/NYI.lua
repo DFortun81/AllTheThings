@@ -377,11 +377,8 @@ i(2699),	-- Recipe: Redridge Goulash
 i(2700),	-- Recipe: Succculent Pork Ribs
 i(2701),	-- Recipe: Seasoned Wolf Kabob
 i(3394),	-- Recipe: Potion of Curing
-i(20735),	-- Formula: Enchant Cloak - Subtlety
-i(20730),	-- Formula: Encahnt Gloves - Healing Power
 i(83811),	-- Design: Agile Primal Diamond
 i(83840),	-- Design: Destructive Primal Diamond
-i(20726),	-- Formula: Enchant Gloves - Threat
 i(18267),	-- Recipe: Runn Tum Tuber Superprise
 i(83844),	-- Design: Ember Primal Diamond
 i(83815),	-- Design: Austere Primal Diamond
