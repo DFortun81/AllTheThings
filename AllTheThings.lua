@@ -6540,10 +6540,10 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 				-- Open the Tradeskill list for this Profession
 				for i,group in ipairs(app.Categories.Professions) do
 					if group.requireSkill == tradeSkillID then
-						popout.data = group;
-						BuildGroups(group, group.g);
-						UpdateGroups(group, group.g, 1);
-						ExpandGroupsRecursively(group, true);
+						popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
+						BuildGroups(popout.data, popout.data.g);
+						UpdateGroups(popout.data, popout.data.g, 1);
+						ExpandGroupsRecursively(popout.data, true);
 						popout:SetVisible(true);
 					end
 				end
@@ -6559,44 +6559,12 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 end
 app.events.TRADE_SKILL_SHOW = function(...)
 	if app.Categories.Professions then
-		-- Cache the Tradeskill
-		local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
-		local skillCache = fieldCache["requireSkill"][tradeSkillID];
-		if skillCache then
-			-- Cache learned recipes
-			local learned = 0;
-			for i,group in ipairs(skillCache) do
-				if group.spellID and group.f == 200 then
-					-- This is a recipe, cache the learned state.
-					if not GetDataSubMember("CollectedSpells", group.spellID) then
-						if C_TradeSkillUI.GetRecipeInfo(group.spellID, spellRecipeInfo) and spellRecipeInfo.learned then
-							SetDataSubMember("CollectedSpells", group.spellID, 1);
-							learned = learned + 1;
-						end
-					end
-				end
-			end
-		
-			-- Open the Tradeskill list for this Profession
-			for i,group in ipairs(app.Categories.Professions) do
-				if group.requireSkill == tradeSkillID then
-					local popout = app:GetWindow("Tradeskills");
-					popout:ClearAllPoints();
-					popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
-					popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
-					popout.data = group;
-					BuildGroups(group, group.g);
-					UpdateGroups(group, group.g, 1);
-					ExpandGroupsRecursively(group, true);
-					popout:SetVisible(true);
-				end
-			end
-			
-			-- If something new was "learned", then refresh the data.
-			if learned > 0 then
-				app:RefreshData(false, true);
-				app.print("Cached " .. learned .. " known recipes!");
-			end
+		if fieldCache["requireSkill"][C_TradeSkillUI.GetTradeSkillLine()] then
+			local popout = app:GetWindow("Tradeskills");
+			popout:ClearAllPoints();
+			popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
+			popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+			popout:SetVisible(true);
 		end
 	end
 end
