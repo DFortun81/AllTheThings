@@ -440,6 +440,9 @@ q = quest;												-- Create a QUEST Object (alternative shortcut)
 race = function(id, t)									-- Create a RACE Object
 	return struct("raceID", id, t);
 end
+recipe = function(id, t)								-- Create a RECIPE Object
+	return struct("recipeID", id, t);
+end
 spell = function(id, t)									-- Create a SPELL Object
 	return struct("spellID", id, t);
 end
