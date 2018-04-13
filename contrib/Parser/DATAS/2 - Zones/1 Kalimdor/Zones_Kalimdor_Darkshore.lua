@@ -1092,6 +1092,10 @@ _.Zones =
 								un(34, i(7738)),	-- Evergreen Gloves
 								un(34, i(7739)),	-- Timberland Cape
 							}),
+							qa( 943, {	-- The Absent Minded Prospector
+								un(34, i(5627)),	-- Relic Blade
+								un(34, i(5626)),	-- Skullchipper
+							}),
 							qa(4763, {	-- The Blackwood Corrupted
 								un(34, i(15204)),	-- Moonstone Wand
 								un(34, i(15202)),	-- Wildkeeper Leggings

@@ -167,11 +167,16 @@ _.Zones =
 						["classes"]= {11},
 					}),
 					qg(11832, q(13075)),	-- The Boon of Remulos
-					qdg(qg(12042, q(28343)), {	-- The Breath of Cenarius
+--]]
+					qdg(q(28343, {	-- The Breath of Cenarius
 						["groups"] = {
+							i(65617),	-- Headdress of the Verdant Circle
+							i(65638),	-- Headdress of the Green Circle
 						},
-						["classes"]= {11},
-					}),
+						["qg"] = 12042,	-- Loganaar
+						["classes"]= { 11 },	-- Druid
+					})),
+--[[
 					qdg(qg(12042, qa(27356)), {	-- The Circle's Future
 						["groups"] = {
 						},

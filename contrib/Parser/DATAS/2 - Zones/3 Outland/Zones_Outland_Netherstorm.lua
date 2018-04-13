@@ -48,16 +48,20 @@ _.Zones =
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(25962, qa( 11882)),	-- Playing with Fire
+								qa(11799),	-- Desecrate this Fire!
+								qh(11759),	-- Desecrate this Fire!
+								qa(11830),	-- Honor the Flame
+								qh(11835),	-- Honor the Flame
+								qg(25962, qa(11882)),	-- Playing with Fire
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
 						["u"] = 21,
 					}),	
---[[					
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
+								qh(11446),	-- Brewfest!
 							}),
 						},
 						["achievementID"] = 1683, -- Brewmaster
@@ -66,6 +70,10 @@ _.Zones =
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
+								qa(29074),	-- A Season for Celebration
+								qh(29400),	-- A Season for Celebration
+								q( 12407),	-- Candy Bucket
+								q( 12408),	-- Candy Bucket
 							}),
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
@@ -74,11 +82,14 @@ _.Zones =
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
+								qa(14022),	-- Pilgrim's Bounty
+								qh(14036),	-- Pilgrim's Bounty
 							}),
 						},
 						["achievementID"] = 3478, -- Pilgrim
 						["u"] = 28,
 					}),
+--[[
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -94,438 +105,800 @@ _.Zones =
 					p(638), 	-- Nether Roach
 				}),
 				n(-17, {	-- Quests
---[[				
-					q(10197),	-- A Convincing Disguise
-					q(10380),	-- A Dark Pact
-					q(10202),	-- A Defector
---]]					
-					q(10185,  {  -- A Fate Worse Than Death
-						i(29955),
-						i(29954),
-						i(30401),
-						i(29959),
+					i( 29234, {	-- Belmara's Tome
+						q(10305, {	-- Abjurist Belmara
+							["g"] = {
+							},
+							["qg"] = 19546,	-- Abjurist Belmara
+						}),
 					}),
---[[					
-					q(10508),	-- A Gift for Voren'thal
-					q(10262),	-- A Heap of Ethereals
-					q(10314),	-- A Lingering Suspicion
-					q(10970),	-- A Mission of Mercy
-					qa( 11042),	-- A Mystifying Vision
-					q(10270),	-- A Not-So-Modest Proposal
-					q(10272),	-- A Promising Start
-					qh( 29400),	-- A Season for Celebration
-					qa( 29074),	-- A Season for Celebration
-					qh( 11037),	-- A Strange Vision
-					q(10973),	-- A Thousand Worlds
-					q(10305),	-- Abjurist Belmara
---]]					
-					q(10381,  {  -- Aldor No More
+
+					
+					q( 10185, {	-- A Fate Worse Than Death
+						["g"] = {
+							i(29955),	-- Mana Infused Wristguards
+							i(29954),	-- Spiritbinder's Mantle
+							i(30401),	-- Farahlite Studded Boots
+							i(29959),	-- Spiritualist's Gauntlets
+						},
+						["qg"] = 19488,	-- Custodian Dieworth
+						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower (NEEDS CONFIRMATION)
+					}),
+					
+					
+					o(184300, {	-- Necromantic Focus
+						q(10314, {	-- A Lingering Suspicion
+							["g"] = {
+							},
+							["sourceQuests"] = { 10316 },	-- Searching for Evidence
+						}),
+					}),
+					
+					
+					q( 10268, {	-- An Audience with the Prince
+						["g"] = {
+						},
+						["qg"] = 20066,	-- Gahruj
+						["sourceQuests"] = { 10267 },	-- Rightful Repossession
+					}),
+					
+					
+					q( 10176, {	-- Ar'kelos the Guardian
+						["g"] = {
+							i(29777),	-- Cloak of the Valiant Defender
+							i(29779),	-- Rejuvenating Scepter
+						},
+						["qg"] = 19644,	-- Image of Archmage Vargoth
+						["sourceQuests"] = { 10209 },	-- Summoner Kanthin's Prize
+					}),
+					
+					
+					i( 29233, {	-- Dathric's Blade
+						q( 10182, {	-- Battle-Mage Dathric
+							["g"] = {
+							},
+							["qg"] = 19543,	-- Battle-Mage Dathric
+						}),
+					}),
+					
+					
+					o(183811, {	-- Wanted Poster
+						q(10701, {	-- Breaking Down Netherock
+							i(31314),	-- Rocket-Chief Pauldrons
+							i(31313),	-- Nether-Rocket Gloves
+							i(31315),	-- Goblin Girdle
+							i(31312),	-- Sinister Area 52 Boots
+						}),	
+						q(10261, {	-- Wanted: Annihilator Servo!
+							i(30295),	-- Exotic Spiked Shoulders
+							i(30296),	-- Lost Chestplate of the Reverent
+							i(30294),	-- Red Pointy Hat
+						}),
+					}),
+					
+					
+					q( 10240, {	-- Building a Perimeter
+						["g"] = {
+							i(29785),	-- Crimson Mail Bracers
+							i(29784),	-- Harmony's Touch
+							i(29786),	-- Kirin'Var Defender's Greaves
+							i(30398),	-- Boots of the Beneficent
+						},
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
+						["sourceQuests"] = { 10239 },	-- Potential Energy Source
+					}),
+					
+					
+					q( 10319, {	-- Capturing the Phylactery
+						["g"] = {
+						},
+						["qg"] = 19488,	-- Custodian Dieworth
+						["sourceQuests"] = { 10314 },	-- A Lingering Suspicion
+					}),
+					
+					
+					i( 29236, {	-- Cohlien's Cap
+						q(10307, {	-- Cohlien Frostweaver
+							["g"] = {
+							},
+							["qg"] = 19545,	-- Cohlien Frostweaver
+						}),
+					}),
+					
+					
+					q( 10174, {	-- Curse of the Violet Tower
+						["g"] = {
+						},
+						["qg"] = 19217,	-- Ravandwyr
+						["sourceQuests"] = { 10300 },	-- Rebuilding the Staff
+					}),
+					
+					
+					q( 10418, {	-- Deal With the Saboteurs
+						["g"] = {
+						},
+						["qg"] = 20810,	-- Mehrdad
+						["sourceQuests"] = { 10417 },	-- Run a Diagnostic!
+					}),
+					
+					
+					q( 10235, {	-- Declawing Doomclaw
+						["g"] = {
+							i(30279),	-- Mama's Insurance
+							i(30278),	-- Pilfered Ethereal Blade
+							i(30277),	-- Ripfang Paw
+						},
+						["qg"] = 19728,	-- Mama Wheeler
+						["sourceQuests"] = { 10234 },	-- One Demon's Trash...
+					}),
+					
+					
+					q( 10320, {	-- Destroy Naberius!
+						["g"] = {
+							i(29780),	-- Kirin Tor Apprentice's Robes
+							i(29781),	-- Lifewarden's Breastplate
+							i(29782),	-- Coif of the Wicked
+							i(29783),	-- Legguards of the Resolute Defender
+						},
+						["qg"] = 19488,	-- Custodian Dieworth
+						["sourceQuests"] = { 10319 },	-- Capturing the Phylactery
+					}),
+					
+					
+					q( 10247, {	-- Doctor Vomisa, Ph.T.
+						["g"] = {
+						},
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
+						["sourceQuests"] = { 10237 },	-- Warn Area 52!
+					}),
+					
+					
+					q( 10223, {	-- Down With Daellis
+						["g"] = {
+							i(29792),	-- Dawnstrider's Cloak
+							i(30399),	-- Nightstalker's Wristguards
+						},
+						["qg"] = 19488,	-- Custodian Dieworth
+					}),
+					
+					
+					q( 10221, {	-- Dr. Boom! (awarded "Building the X-52 Nether-Rocket" criteria)
+						["g"] = {
+							i(29969),	-- Sparky's Discarded Helmet
+							i(29968),	-- Nether Leggings
+							i(29967),	-- Nether Vest
+							i(30514),	-- Nether Guards
+						},
+						["qg"] = 19634,	-- Lead Sapper Blastfizzle
+						["sourceQuests"] = { 10203 },	-- Invaluable Asset Zapping
+					}),
+					
+					
+					q( 10311, {	-- Drijya Needs Your Help
+						["g"] = {
+						},
+						["qg"] = 20066,	-- Gahruj
+						["isBreadcrumb"] = true,	-- for "Sabotage the Warp-Gate!"
+					}),
+					
+					
+					q( 10226, {	-- Elemental Power Extraction
+						["g"] = {
+							i(30264),	-- Area 52 Engineering Gloves
+							i(30263),	-- Heavy-Duty Engineering Boots
+							i(30262),	-- Trep's Shoulderguards
+							i(30516),	-- Chief Engineer's Belt
+						},
+						["qg"] = 19709,	-- Chief Engineer Trep
+						["sourceQuests"] = { 10224 },	-- Essence for the Engines
+					}),
+					
+					
+					q( 10224, {	-- Essence for the Engines
+						["g"] = {
+						},
+						["qg"] = 19709,	-- Chief Engineer Trep
+						["sourceQuests"] = { 10225 },	-- Report to Engineering
+					}),
+					
+					
+					q( 10256, {	-- Finding the Keymaster
+						["g"] = {
+						},
+						["qg"] = 19481,	-- Archmage Vargoth
+						["sourceQuests"] = { 10176 },	-- Ar'kelos the Guardian
+					}),
+					
+					
+					q( 10333, {	-- Help Mama Wheeler
+						["g"] = {
+						},
+						["qg"] = 19645,	-- Papa Wheeler
+						["sourceQuests"] = { 10206 },	-- Pick Your Part
+					}),
+					
+					
+					q( 10232, {	-- In A Scrap With The Legion
+						["g"] = {
+						},
+						["qg"] = 19645,	-- Papa Wheeler
+						["sourceQuests"] = { 10206 },	-- Pick Your Part
+					}),
+					
+					
+					q( 10331, {	-- Indispensable Tools
+						["g"] = {
+						},
+						["qg"] = 20463,	-- Apprentice Andrethan
+					}),
+					
+					
+					q( 10203, {	-- Invaluable Asset Zapping
+						["g"] = {
+						},
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
+						["sourceQuests"] = { 10186 },	-- You're Hired!
+					}),
+					
+					
+					q( 10309, {	-- It's a Fel Reaver, But with Heart
+						["g"] = {
+							i(30268),	-- Heap Leggings
+							i(30270),	-- Scavenged Breastplate
+							i(30269),	-- Warp-Raider's Eyepatch
+						},
+						["qg"] = 19690,	-- N. D. Meancamp
+					}),
+					
+					
+					q( 10433, {	-- Keeping Up Appearances
+						["g"] = {
+						},
+						["qg"] = 20921,	-- Shauly Pore
+					}),
+					
+					
+					q( 10192, {	-- Krasus's Compendium
+						["g"] = {
+						},
+						["qg"] = 19644,	-- Image of Archmage Vargoth
+						["sourceQuests"] = { 10188 },	-- The Sigil of Krasus
+					}),
+					
+					
+					q( 10184, {	-- Malevolent Remnants
+						["g"] = {
+						},
+						["qg"] = 19488,	-- Custodian Dieworth
+						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower (NEEDS CONFIRMATION)
+					}),
+					
+					
+					q( 10191, {	-- Mark V is Alive!
+						["g"] = {
+							i(30226),	-- Alley's Recurve
+							i(30252),	-- Unearthed Enkaat Wand
+						},
+						["qg"] = 19589,	-- Maxx A. Million Mk. V
+					}),
+					
+					
+					q( 10332, {	-- Master Smith Rhonsus
+						["g"] = {
+							i(29787),	-- Master Smith's Hammer
+							i(29788),	-- Finely Wrought Scale Leggings
+							i(29789),	-- Andrethan's Masterwork
+							i(29791),	-- Reinforced Heaume
+						},
+						["qg"] = 20463,	-- Apprentice Andrethan
+						["sourceQuests"] = { 10331 },	-- Indispensable Tools
+					}),
+					
+					
+					q( 10334, {	-- Needs More Cowbell
+						["g"] = {
+						},
+						["qg"] = 20464,	-- Thadell
+					}),
+					
+					
+					q( 10348, {	-- New Opportunities
+						["g"] = {
+						},
+						["qg"] = 20810,	-- Mehrdad
+					}),
+					
+					
+					q( 10234, {	-- One Demon's Trash...
+						["g"] = {
+						},
+						["qg"] = 19728,	-- Mama Wheeler
+						["sourceQuests"] = { 10333 },	-- Help Mama Wheeler
+					}),
+					
+					
+					q( 10206, {	-- Pick Your Part
+						["g"] = {
+							i(30275),	-- Mech Tech Shoulders
+							i(30274),	-- Papa's Armbands
+						},
+						["qg"] = 19645,	-- Papa Wheeler
+						["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
+					}),
+					
+					
+					q( 10239, {	-- Potential Energy Source
+						["g"] = {
+						},
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
+						["sourceQuests"] = { 10343 },	-- The Unending Invasion
+					}),
+					
+					
+					q( 10300, {	-- Rebuilding the Staff
+						["g"] = {
+						},
+						["qg"] = 19217,	-- Ravandwyr
+						["sourceQuests"] = { 10173 },	-- The Archmage's Staff
+					}),
+					
+					
+					q( 10190, {	-- Recharging the Batteries
+						["g"] = {
+						},
+						["qg"] = 19578,	-- Bot-Specialist Alley
+					}),
+					
+					
+					q( 10225, {	-- Report to Engineering
+						["g"] = {
+						},
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
+						["sourceQuests"] = { 10186 },	-- You're Hired!
+					}),
+					
+					
+					q( 10266, {	-- Request for Assistance
+						["g"] = {
+						},
+						["qg"] = 19880,	-- Nether-Stalker Khay-ji
+						["sourceQuests"] = { 10205 },	-- Warp-Raider Nesaad
+					}),
+					
+					
+					q( 10267, {	-- Rightful Repossession
+						["g"] = {
+							i(30273),	-- Duro Footgear
+							i(30272),	-- Eco-Dome Leggings
+							i(30271),	-- Midrealm Hat
+						},
+						["qg"] = 20066,	-- Gahruj
+						["sourceQuests"] = { 10266 },	-- Request for Assistance
+					}),
+					
+					
+					q( 10417, {	-- Run a Diagnostic!
+						["g"] = {
+						},
+						["qg"] = 20810,	-- Mehrdad
+					}),
+					
+					
+					q( 10310, {	-- Sabotage the Warp-Gate!
+						["g"] = {
+							i(29978),	-- Consortium Combatant's Robes
+							i(29980),	-- Midrealm Leggings
+							i(29979),	-- Netherstorm Eyepatch
+						},
+						["qg"] = 20281,	-- Drijya
+						["breadcrumbQuestID"] = { 10311 },	-- Drijya Needs Your Help
+					}),
+					
+					
+					q( 10316, {	-- Searching for Evidence
+						["g"] = {
+						},
+						["qg"] = 19488,	-- Custodian Dieworth
+						["sourceQuests"] = { 10312 },	-- The Annals of Kirin'Var
+					}),
+					
+					
+					q( 10342, {	-- Securing the Shaleskin Shale
+						["g"] = {
+						},
+						["qg"] = 19617,	-- Boots
+					}),
+					
+					
+					q( 10209, {	-- Summoner Kanthin's Prize
+						["g"] = {
+						},
+						["qg"] = 19644,	-- Image of Archmage Vargoth
+						["sourceQuests"] = { 10301 },	-- Unlocking the Compendium
+					}),
+					
+					
+					q( 10199, {	-- That Little Extra Kick
+						["g"] = {
+							i(29999),	-- After Hours Pauldrons
+							i(30002),	-- Boot's Boots
+							i(30001),	-- Doc's Belt
+							i(30000),	-- Mixologist's Gloves
+						},
+						["qg"] = 19617,	-- Boots
+						["sourceQuests"] = { 10342 },	-- Securing the Shaleskin Shale
+					}),
+					
+					
+					q( 10312, {	-- The Annals of Kirin'Var
+						["g"] = {
+						},
+						["qg"] = 19488,	-- Custodian Dieworth
+						["sourceQuests"] = { 10184 },	-- Malevolent Remnants
+					}),
+					
+					
+					q( 10173, {	-- The Archmage's Staff
+						["g"] = {
+						},
+						["qg"] = 19217,	-- Ravandwyr
+					}),
+					
+				
+					q( 10188, {	-- The Sigil of Krasus
+						["g"] = {
+							i(29771),	-- Kirin'Var Journeyman's Belt
+							i(29772),	-- Kirin'Var Scout's Belt
+							i(29773),	-- Battle-Mage's Helmet
+							i(29774),	-- Kirin'Var Defender's Chausses
+						},
+						["qg"] = 19644,	-- Image of Archmage Vargoth
+						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower
+					}),
+				
+				
+					q( 10222, {	-- The Sunfury Garrison
+						["g"] = {
+						},
+						["qg"] = 19488,	-- Custodian Dieworth
+						["sourceQuests"] = { 10188 },	-- The Sigil of Krasus (NEEDS CONFIRMATION)
+					}),
+				
+				
+					q( 10343, {	-- The Unending Invasion
+						["g"] = {
+						},
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
+						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower
+					}),
+				
+				
+					q( 10233, {	-- Torching Sunfury Hold
+						["g"] = {
+						},
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
+						["sourceQuests"] = { 10192 },	-- Krasus's Compendium
+					}),
+				
+				
+					q( 10301, {	-- Unlocking the Compendium
+						["g"] = {
+						},
+						["qg"] = 19644,	-- Image of Archmage Vargoth
+						["sourceQuests"] = { 10192 },	-- Krasus's Compendium
+					}),
+				
+				
+					q( 10237, {	-- Warn Area 52!
+						["g"] = {
+						},
+						["qg"] = 19728,	-- Mama Wheeler
+						["sourceQuests"] = { 10235 },	-- Declawing Doomclaw
+					}),
+				
+				
+					q( 10205, {	-- Warp-Raider Nesaad
+						["g"] = {
+							i(30266),
+							i(30265),
+							i(30267),
+						},
+						["qg"] = 19880,	-- Nether-Stalker Khay'ji
+						["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
+					}),
+				
+				
+					q( 10337, {	-- When the Cows Come Home
+						["g"] = {
+							i(29804),	-- Wrangler's Boots
+							i(29806),	-- Cowpoke's Riding Gloves
+							i(29807),	-- Engraved Cattleman's Buckle
+							i(30400),	-- Thadell's Bracers
+							i(30523),	-- Hotshot Cattle Prod
+						},
+						["qg"] = 20415,	-- Bessy
+						["sourceQuests"] = { 10334 },	-- Needs More Cowbell
+					}),
+				
+				
+					q( 10186, {	-- You're Hired!
+						["g"] = {
+							i(30225),	-- Junior Technician 3rd Grade Bracers
+							i(30224),	-- Junior Technician 3rd Grade Gloves
+							i(30218),	-- Junior Technician 3rd Grade Shoulders
+							i(30515),	-- Junior Technician 3rd Grade Goggles
+						},
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
+						["breadcrumbQuestID"] = { 39201 },	-- Warchief's Command: Netherstorm!
+					}),
+				
+				
+				
+				
+				
+--[[
+						["g"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuests"] = {  },	-- 
+					}),
+					
+						["g"] = {
+						},
+						["qg"] = ,	-- 
+					}),
+					
+						["g"] = {
+						},
+						["sourceQuests"] = {  },	-- 
+					}),
+--]]
+				
+				
+					q( 10197),	-- A Convincing Disguise
+					q( 10380),	-- A Dark Pact
+					q( 10202),	-- A Defector
+					q( 10508),	-- A Gift for Voren'thal
+					q( 10970),	-- A Mission of Mercy
+					qa(11042),	-- A Mystifying Vision
+					q( 10270),	-- A Not-So-Modest Proposal
+					q( 10272),	-- A Promising Start
+					qh(11037),	-- A Strange Vision
+					q( 10973),	-- A Thousand Worlds
+					q( 10381, {	-- Aldor No More
 						i(30382),
 						i(30379),
 						i(30381),
 						i(30380),
 					}),
---[[					
-					q(10436),	-- All Clear!
-					q(10268),	-- An Audience with the Prince
-					q(10308),	-- Another Heap of Ethereals
---]]					
-					q(10176,  {  -- Ar'kelos the Guardian
-						i(29777),
-						i(29779),
-					}),
-					q(10353,  {  -- Arconus the Insatiable
+					q( 10436),	-- All Clear!
+					q( 10353, {	-- Arconus the Insatiable
 						i(30329),
 						i(30328),
 						i(30330),
 						i(30517),
 					}),
---[[					
-					q(11038),	-- Assist Exarch Orelis
-					q(10263),	-- Assisting the Consortium
-					q(10264),	-- Assisting the Consortium
-					q(10246),	-- Attack on Manaforge Coruu
-					q(10245),	-- B'naar Console Transcription
---]]					
-					q(10249,  {  -- Back to the Chief!
-						i(30019),
-						i(30016),
-						i(30014),
-						i(134021),  -- TOY!
+					q( 11038),	-- Assist Exarch Orelis
+					q( 10263),	-- Assisting the Consortium
+					q( 10264),	-- Assisting the Consortium
+					q( 10246),	-- Attack on Manaforge Coruu
+					q( 10245),	-- B'naar Console Transcription
+					q( 10249, {	-- Back to the Chief!
+						i( 30019),
+						i( 30016),
+						i( 30014),
+						i(134021),	-- TOY!
 					}),
---[[					
-					q(10182),	-- Battle-Mage Dathric
-					q(10652),	-- Behind Enemy Lines
-					q(10204),	-- Bloodgem Crystals
-					q(10924),	-- Bloody Imp-ossible!
-					q(10509),	-- Bound for Glory
---]]					
-					q(10701,  {  -- Breaking Down Netherock
-						i(31314),
-						i(31313),
-						i(31315),
-						i(31312),
-					}),					
---					qh( 11446),	-- Brewfest!
-					q(10240,  {  -- Building a Perimeter
-						i(29785),
-						i(29784),
-						i(29786),
-						i(30398),
-					}),
---[[					
-					q(12407),	-- Candy Bucket
-					q(12408),	-- Candy Bucket
-					q(10422),	-- Captain Tyralius
-					q(10257),	-- Capturing the Keystone
-					q(10319),	-- Capturing the Phylactery
-					q(10307),	-- Cohlien Frostweaver
-					q(10306),	-- Conjurer Luminrath
-					q(10265),	-- Consortium Crystal Collection
-					qa( 11356),	-- Costumed Orphan Matron
-					q(10427),	-- Creatures of the Eco-Domes
-					q(11481),	-- Crisis at the Sunwell
-					q(10174),	-- Curse of the Violet Tower
-					q(10432),	-- Damning Evidence
-					q(10418),	-- Deal With the Saboteurs
-					q(10317),	-- Dealing with the Foreman
---]]					
-					q(10318,  {  -- Dealing with the Overmaster
+					q( 10652),	-- Behind Enemy Lines
+					q( 10204),	-- Bloodgem Crystals
+					q( 10924),	-- Bloody Imp-ossible!
+					q( 10509),	-- Bound for Glory
+					q( 10422),	-- Captain Tyralius
+					q( 10306),	-- Conjurer Luminrath
+					qa(11356),	-- Costumed Orphan Matron
+					q( 10427),	-- Creatures of the Eco-Domes
+					q( 11481),	-- Crisis at the Sunwell
+					q( 10432),	-- Damning Evidence
+					q( 10317),	-- Dealing with the Foreman
+					q( 10318, {	-- Dealing with the Overmaster
 						i(30003),
 						i(30004),
 						i(30005),
 					}),
-					q(10409,  {  -- Deathblow to the Legion - Aldor
+					q( 10409, {	-- Deathblow to the Legion - Aldor
 						i(30368),
 						i(30369),
 						i(30370),
 						i(30371),
 					}),
-					q(10235,  {  -- Declawing Doomclaw
-						i(30279),
-						i(30278),
-						i(30277),
-					}),
-					q(10406,  {  -- Delivering the Message
+					q( 10406, {	-- Delivering the Message
 						i(30335),
 						i(30337),
 						i(30336),
 						i(30518),
 					}),
---[[					
-					qh( 11749),	-- Desecrate this Fire!
-					qa( 11732),	-- Desecrate this Fire!
-					qa( 11755),	-- Desecrate this Fire!
-					qa( 11799),	-- Desecrate this Fire!
-					qa( 11580),	-- Desecrate this Fire!
-					qa( 11786),	-- Desecrate this Fire!
-					qa( 11766),	-- Desecrate this Fire!
-					qh( 11745),	-- Desecrate this Fire!
-					qh( 11759),	-- Desecrate this Fire!
-					qh( 11581),	-- Desecrate this Fire!
---]]					
-					q(10320,  {  -- Destroy Naberius!
-						i(29780),
-						i(29781),
-						i(29782),
-						i(29783),
-					}),
---					q(10424),	-- Diagnosis: Critical
-					q(10439,  {  -- Dimensuis the All-Devouring
+					q( 10424),	-- Diagnosis: Critical
+					q( 10439, {	-- Dimensuis the All-Devouring
 						i(30297),
 						i(30299),
 						i(30298),
 					}),
---[[					
-					q(10241),	-- Distraction at Manaforge B'naar
-					q(10247),	-- Doctor Vomisa, Ph.T.
---]]
-					q(10223,  {  -- Down With Daellis
-						i(29792),
-						i(30399),
-					}),
-					q(10221,  {  -- Dr. Boom!
-						i(29969),
-						i(29968),
-						i(29967),
-						i(30514),
-					}),
---[[					
-					q(10311),	-- Drijya Needs Your Help
-					q(10411),	-- Electro-Shock Goodness!
---]]
-					q(10226,  {  -- Elemental Power Extraction
-						i(30264),
-						i(30263),
-						i(30262),
-						i(30516),
-					}),
-					q(10425,  {  -- Escape from the Staging Grounds
+					q( 10241),	-- Distraction at Manaforge B'naar
+					q( 10411),	-- Electro-Shock Goodness!
+					q( 10425, {	-- Escape from the Staging Grounds
 						i(30331),
 						i(30332),
 						i(30333),
 						i(30334),
 					}),
---[[					
-					q(10224),	-- Essence for the Engines
-					q(10384),	-- Ethereum Data
-					q(10972),	-- Ethereum Prisoner I.D. Catalogue
-					q(10971),	-- Ethereum Secrets
-					q(10855),	-- Fel Reavers, No Thanks!
-					q(10256),	-- Finding the Keymaster
-					q(10426),	-- Flora of the Eco-Domes
-					q(10281),	-- Formal Introductions
-					q(10276),	-- Full Triangle
-					q(10271),	-- Getting Down to Business
-					q(10333),	-- Help Mama Wheeler
-					qa( 39202),	-- Hero's Call: Netherstorm
-					q(10193),	-- High Value Targets
---]]					
-					q(10293,  {  -- Hitting the Motherlode
+					q( 10384),	-- Ethereum Data
+					q( 10972),	-- Ethereum Prisoner I.D. Catalogue
+					q( 10971),	-- Ethereum Secrets
+					q( 10855),	-- Fel Reavers, No Thanks!
+					q( 10426),	-- Flora of the Eco-Domes
+					q( 10281),	-- Formal Introductions
+					q( 10276),	-- Full Triangle
+					q( 10271),	-- Getting Down to Business
+					qa(39202),	-- Hero's Call: Netherstorm
+					q( 10193),	-- High Value Targets
+					q( 10293, {	-- Hitting the Motherlode
 						i(29813),
 					}),
---[[					
-					qa( 11830),	-- Honor the Flame
-					qh( 11835),	-- Honor the Flame
-					q(10232),	-- In A Scrap With The Legion
-					q(10290),	-- In Search of Farahlite
-					q(10331),	-- Indispensable Tools
---]]					
-					q(10198,  {  -- Information Gathering - Scryer
+					q( 10290),	-- In Search of Farahlite
+					q( 10198, {	-- Information Gathering - Scryer
 						i(30397),
 						i(30383),
 						i(30384),
 						i(30386),
 					}),
---[[					
-					q(10203),	-- Invaluable Asset Zapping
-					q(10410),	-- Ishanah's Help
---]]					
-					q(10309,  {  -- It's a Fel Reaver, But with Heart
-						i(30268),
-						i(30270),
-						i(30269),
-					}),
---					q(10433),	-- Keeping Up Appearances					
-					q(10341,  {  -- Kick Them While They're Down - Scryer
+					q( 10410),	-- Ishanah's Help
+					q( 10341, {	-- Kick Them While They're Down - Scryer
 						i(30395),
 						i(30394),
 						i(30396),
 						i(30522),
 					}),
---[[					
-					q(10192),	-- Krasus's Compendium
-					q(10184),	-- Malevolent Remnants
-					q(10189),	-- Manaforge B'naar
---]]					
-					q(10191,  {  -- Mark V is Alive!
-						i(30226),
-						i(30252),
-					}),
---[[					
-					q(10325),	-- Marks of Kil'jaeden
-					q(10653),	-- Marks of Sargeras
-					qh( 11357),	-- Masked Orphan Matron
---]]					
-					q(10332,  {  -- Master Smith Rhonsus
-						i(29787),
-						i(29788),
-						i(29789),
-						i(29791),
-					}),
-					q(10313,  {  -- Measuring Warp Energies - Aldor
+					q( 10189),	-- Manaforge B'naar
+					q( 10325),	-- Marks of Kil'jaeden
+					q( 10653),	-- Marks of Sargeras
+					qh(11357),	-- Masked Orphan Matron
+					q( 10313, {	-- Measuring Warp Energies - Aldor
 						i(30362),
 						i(30363),
 						i(30364),
 						i(30521),
 					}),
---[[					
-					q(10326),	-- More Marks of Kil'jaeden
-					q(10654),	-- More Marks of Sargeras
-					q(10243),	-- Naaru Technology
-					q(10334),	-- Needs More Cowbell
-					q(10850),	-- Nether Gas In a Fel Fire Engine
-					q(10315),	-- Neutralizing the Nethermancers
-					q(10348),	-- New Opportunities
---]]					
-					q(10408,  {  -- Nexus-King Salhadaar
+					q( 10326),	-- More Marks of Kil'jaeden
+					q( 10654),	-- More Marks of Sargeras
+					q( 10243),	-- Naaru Technology
+					q( 10850),	-- Nether Gas In a Fel Fire Engine
+					q( 10315),	-- Neutralizing the Nethermancers
+					q( 10408, {	-- Nexus-King Salhadaar
 						i(30011),
 						i(30012),
 						i(30010),
 						i(30013),
 						i(30009),
 					}),
---[[					
-					q(10183),	-- Off To Area 52
-					q(10438),	-- On Nethery Wings
-					q(10234),	-- One Demon's Trash...
-					qh( 11036),	-- Out of This World Produce!
-					q(10431),	-- Outside Assistance
-					qa( 11040),	-- Parts for the Rocket-Chief
---]]					
-					q(10206,  {  -- Pick Your Part
-						i(30275),
-						i(30274),
-					}),
---[[					
-					qa( 14022),	-- Pilgrim's Bounty
-					qh( 14036),	-- Pilgrim's Bounty
-					qa( 11882),	-- Playing with Fire
-					q(10239),	-- Potential Energy Source
-					q(10385),	-- Potential for Brain Damage = High
-					q(10300),	-- Rebuilding the Staff
-					q(10190),	-- Recharging the Batteries
-					q(10437),	-- Recipe for Destruction
-					q(10225),	-- Report to Engineering
-					q(11039),	-- Report to Spymaster Thalodien
-					q(10266),	-- Request for Assistance
---]]					
-					q(10435,  {  -- Retrieving the Goods
+					q( 10183),	-- Off To Area 52
+					q( 10438),	-- On Nethery Wings
+					qh(11036),	-- Out of This World Produce!
+					q( 10431),	-- Outside Assistance
+					qa(11040),	-- Parts for the Rocket-Chief
+					q( 10385),	-- Potential for Brain Damage = High
+					q( 10437),	-- Recipe for Destruction
+					q( 11039),	-- Report to Spymaster Thalodien
+					q( 10435, {	-- Retrieving the Goods
 						i(30284),
 						i(30402),
 						i(30285),
 						i(30286),
 					}),
---					q(10200),	-- Return to Thalodien
-					q(10267,  {  -- Rightful Repossession
-						i(30273),
-						i(30272),
-						i(30271),
-					}),
---[[					
-					q(10417),	-- Run a Diagnostic!
-					q(10405),	-- S-A-B-O-T-A-G-E
---]]					
-					q(10310,  {  -- Sabotage the Warp-Gate!
-						i(29978),
-						i(29980),
-						i(29979),
-					}),
---					q(10316),	-- Searching for Evidence
-					q(10274,  {  -- Securing the Celestial Ridge
+					q( 10200),	-- Return to Thalodien
+					q( 10405),	-- S-A-B-O-T-A-G-E
+					q( 10274, {	-- Securing the Celestial Ridge
 						i(29808),
 						i(29810),
 						i(29811),
 						i(29812),
 					}),
---[[					
-					q(10342),	-- Securing the Shaleskin Shale
-					q(10969),	-- Seek Out Ameer
-					q(10323),	-- Shutting Down Manaforge Ara
-					q(10365),	-- Shutting Down Manaforge Ara
-					q(10329),	-- Shutting Down Manaforge B'naar
-					q(10299),	-- Shutting Down Manaforge B'naar
-					q(10321),	-- Shutting Down Manaforge Coruu
-					q(10330),	-- Shutting Down Manaforge Coruu
-					q(10322),	-- Shutting Down Manaforge Duro
-					q(10338),	-- Shutting Down Manaforge Duro
-					q(10327),	-- Single Mark of Kil'jaeden
-					q(10655),	-- Single Mark of Sargeras
-					q(10407),	-- Socrethar's Shadow
-					q(10280),	-- Special Delivery to Shattrath City
-					q(10974),	-- Stasis Chambers of Bash'ir
-					q(10194),	-- Stealth Flight
---]]					
-					q(10440,  {  -- Success!
+					q( 10969),	-- Seek Out Ameer
+					q( 10323),	-- Shutting Down Manaforge Ara
+					q( 10365),	-- Shutting Down Manaforge Ara
+					q( 10329),	-- Shutting Down Manaforge B'naar
+					q( 10299),	-- Shutting Down Manaforge B'naar
+					q( 10321),	-- Shutting Down Manaforge Coruu
+					q( 10330),	-- Shutting Down Manaforge Coruu
+					q( 10322),	-- Shutting Down Manaforge Duro
+					q( 10338),	-- Shutting Down Manaforge Duro
+					q( 10327),	-- Single Mark of Kil'jaeden
+					q( 10655),	-- Single Mark of Sargeras
+					q( 10407),	-- Socrethar's Shadow
+					q( 10280),	-- Special Delivery to Shattrath City
+					q( 10974),	-- Stasis Chambers of Bash'ir
+					q( 10194),	-- Stealth Flight
+					q( 10440, {	-- Success!
 						i(30290),
 						i(30291),
 						i(30520),
 					}),
---[[					
-					q(10209),	-- Summoner Kanthin's Prize
-					q(11877),	-- Sunfury Attack Plans
-					q(10328),	-- Sunfury Briefings
---]]					
-					q(10335,  {  -- Surveying the Ruins
+					q( 11877),	-- Sunfury Attack Plans
+					q( 10328),	-- Sunfury Briefings
+					q( 10335, {	-- Surveying the Ruins
 						i(30255),
 						i(30253),
 						i(30254),
 					}),
-					q(10857,  {  -- Teleport This!
+					q( 10857, {	-- Teleport This!
 						i(31701),
 						i(31700),
 						i(31703),
 						i(31699),
 					}),
---					q(10430),	-- Testing the Prototype
-					q(10199,  {  -- That Little Extra Kick
-						i(29999),
-						i(30002),
-						i(30001),
-						i(30000),
-					}),
---[[					
-					q(10312),	-- The Annals of Kirin'Var
-					q(10173),	-- The Archmage's Staff
-					q(10856),	-- The Best Defense
-					q(10434),	-- The Dynamic Duo
-					q(10339),	-- The Ethereum
---]]					
-					q(10345,  {  -- The Flesh Lies...
+					q( 10430),	-- Testing the Prototype
+					q( 10856),	-- The Best Defense
+					q( 10434),	-- The Dynamic Duo
+					q( 10339),	-- The Ethereum
+					q( 10345, {	-- The Flesh Lies...
 						i(30352),
 						i(30341),
 						i(30342),
 						i(30519),
 					}),
-					q(10413,  {  -- The Horrors of Pollution
+					q( 10413, {	-- The Horrors of Pollution
 						i(30338),
 					}),
---[[					
-					qa( 11970),	-- The Master of Summer Lore
-					q(10336),	-- The Minions of Culuthas
---]]					
-					q(10188,  {  -- The Sigil of Krasus
-						i(29771),
-						i(29772),
-						i(29773),
-						i(29774),
-					}),
---[[					
-					qh( 11971),	-- The Spinner of Summer Tales
-					q(10222),	-- The Sunfury Garrison
-					q(10343),	-- The Unending Invasion
-					q(10423),	-- To the Stormspire
-					q(10233),	-- Torching Sunfury Hold
-					q(10269),	-- Triangulation Point One
-					q(10275),	-- Triangulation Point Two
-					q(10273),	-- Troublesome Distractions
---]]					
-					q(10507,  {  -- Turning Point - Scryer
+					qa(11970),	-- The Master of Summer Lore
+					q( 10336),	-- The Minions of Culuthas
+					qh(11971),	-- The Spinner of Summer Tales
+					q( 10423),	-- To the Stormspire
+					q( 10269),	-- Triangulation Point One
+					q( 10275),	-- Triangulation Point Two
+					q( 10273),	-- Troublesome Distractions
+					q( 10507, {	-- Turning Point - Scryer
 						i(30375),
 						i(30372),
 						i(30373),
 						i(30374),
 						i(30859),
 					}),
---					q(10301),	-- Unlocking the Compendium
-					q(10261,  {  -- Wanted: Annihilator Servo!
-						i(30295),
-						i(30296),
-						i(30294),
+					qh(39201),	-- Warchief's Command: Netherstorm
+					q( 10429),	-- When Nature Goes Too Far
+					q( 10248),	-- You, Robot
+
+
+-- DUNGEON QUESTS
+					qdg(q( 10257, {	-- Capturing the Keystone
+						["g"] = {
+						},
+						["qg"] = 19481,	-- Archmage Vargoth
+						["sourceQuests"] = { 10256 },	-- Finding the Keymaster
+					})),
+
+-- FACTION QUESTS					
+					faction(932, {	-- The Aldor
 					}),
---[[					
-					qh( 39201),	-- Warchief's Command: Netherstorm
-					q(10237),	-- Warn Area 52!
---]]					
-					q(10205,  {  -- Warp-Raider Nesaad
-						i(30266),
-						i(30265),
-						i(30267),
+					faction(933, {	-- The Consortium
+						q( 10265, {	-- Consortium Crystal Collection
+							["g"] = {
+							},
+							["qg"] = 19880,	-- Nether-Stalker Khay'ji
+						}),
+						q( 10262, {	-- A Heap of Ethereals
+							["g"] = {
+							},
+							["qg"] = 19880,	-- Nether-Stalker Khay'ji
+							["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
+						}),
+						qr(q(10308, {	-- Another Heap of Ethereals
+							["g"] = {
+							},
+							["qg"] = 19880,	-- Nether-Stalker Khay'ji
+							["description"] = "Gives reputation through Exalted.",
+							["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
+						})),
 					}),
---					q(10429),	-- When Nature Goes Too Far
-					q(10337,  {  -- When the Cows Come Home
-						i(29804),
-						i(29806),
-						i(29807),
-						i(30400),
-						i(30523),
-					}),
---					q(10248),	-- You, Robot
-					q(10186,  {  -- You're Hired!
-						i(30225),
-						i(30224),
-						i(30218),
-						i(30515),
+					faction(934, {	-- The Scryers
 					}),
 				}),	
 				n(-16, {	-- Rares	

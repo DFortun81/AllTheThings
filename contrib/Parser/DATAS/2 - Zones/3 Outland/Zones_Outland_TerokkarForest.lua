@@ -288,13 +288,18 @@ _.Zones =
 						}),
 					}),	
 --[[					
-					q(10898),	-- Skywing
-					qa( 10038),	-- Speak with Private Weeks
-					q(10908),	-- Speak with Rilak the Redeemed
-					qh( 10039),	-- Speak with Scout Neftis
-					qh( 11506),	-- Spirits of Auchindoun					
-					qa( 11505),	-- Spirits of Auchindoun
-					q(9968),	-- Strange Energy
+					q( 10898),	-- Skywing
+					qa(10038),	-- Speak with Private Weeks
+					q( 10908),	-- Speak with Rilak the Redeemed
+					qh(10039),	-- Speak with Scout Neftis
+					qh(11506),	-- Spirits of Auchindoun					
+					qa(11505),	-- Spirits of Auchindoun
+					q(  9968, {	-- Strange Energy
+						["g"] = {
+						},
+						["qg"] = 18446,	-- Earthbinder Tavgren
+						["breadcrumbQuestID"] = { 9957 },	-- What's Wrong at Cenarion Thicket?
+					}),
 					qa(  9986),	-- Stymying the Arakkoa
 					qh(  9987),	-- Stymying the Arakkoa
 					qh(  9890),	-- Success!

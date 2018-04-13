@@ -217,10 +217,11 @@ _.WorldEvents =
 						},
 						["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.|r",
 					})),
-					i(156689, {	-- Scorched Satchel of Helpful Goods
+					i(156689, {	-- Scorched Satchel of Helpful Goods (80 - ?)
 						["groups"] = {
-						   i(113760),	-- Smoldercloth Bracers
+						   i(113760),	-- Smoldercloth Bracers*
 						   i(113759),	-- Smoldercloth Cap
+						   i(113762),	-- Smoldercloth Robe*
 						   i(113786),	-- Smoldercloth Slippers
 						   i(113769),	-- Ravaged Leather Boots
 						   i(113705),	-- Ravaged Leather Bracers
@@ -784,6 +785,7 @@ _.WorldEvents =
 									i(134632),	-- Scorching Redoubt
 									i(134619),	-- Scorching Staff
 									i(134606),	-- Scorching Greatsword
+									i(134627),	-- Scorching Pendant*
 								},
 								["description"] = "Rewarded for winning a random battleground in the level 80-84 range.",
 								["icon"] = "Interface\\Icons\\expansionicon_cataclysm",

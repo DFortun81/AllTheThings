@@ -677,7 +677,18 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(26442)),	-- Rock Lobster
 					qg(, qa(44471)),	-- Second Sight
 					qg(, q(32317)),	-- Seeking the Soulstones
-					qg(, qa(29399)),	-- Shopping Around				
+					qg(, qa(29399)),	-- Shopping Around
+--]]
+					qdg(qa(28401, {	-- Slaves of the Firelord
+						["g"] = {
+							i(65640), 		-- Mask of the Farseer
+							i(65622), 		-- Headcover of the Farseer
+						},
+						["qg"] = 20407,	-- Farseer Umbrua
+						["classes"] = { 7 },	-- Shaman
+--						["sourceQuests"] = {  },	-- 
+					})),
+--[[
 					qg(, qa(24745)),	-- Something is in the Air (and it Ain't Love)
 					qg(, qa(24655)),	-- Something Stinks
 					qg(, qa( 9324)),	-- Stealing Orgrimmar's Flame

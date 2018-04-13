@@ -75,27 +75,13 @@ _.Instances =
 						},
 						["achievementID"] = 1683, -- Brewmaster
 					}),
-					n(-17, { -- Quests
+					n(-17, {	-- Quests
 						n(-75, { -- Detention Block
-							qa(27565, { -- Into the Prison [Alliance]
+							qa(27569, { -- Dark Iron Tacticians
 								["groups"] = {
 								},
-								["qg"] = 45892, -- Jalinda Sprig
-							}),
-							qh(27579, { -- Into the Prison [Horde]
-								["groups"] = {
-								},
-								["qg"] = 45821, -- Tha'trak Proudtusk
-							}),
-							q(27603, { -- The Sealed Gate
-								["groups"] = {
-								},
-								["qg"] = 45849, -- Tinkee Steamboil
-							}),
-							q(27596, { -- The Heart of the Mountain
-								["groups"] = {
-								},
-								["qg"] = 45850, -- Maxwort Uberglint
+								["qg"] = 45894, -- Prospector Seymour
+								["sourceQuests"] = { 27568 }, -- Infilitrating Shadowforge City [Alliance]
 							}),
 							qa(27568, { -- Infiltrating Shadowforge City [Alliance]
 								["groups"] = {
@@ -106,6 +92,32 @@ _.Instances =
 								["groups"] = {
 								},
 								["qg"] = 45839, -- Galamav the Marksman
+							}),
+							qa(27565, { -- Into the Prison [Alliance]
+								["groups"] = {
+								},
+								["qg"] = 45892, -- Jalinda Sprig
+							}),
+							qh(27579, { -- Into the Prison [Horde]
+								["groups"] = {
+								},
+								["qg"] = 45821, -- Tha'trak Proudtusk
+							}),
+							qh(27585, { -- The 109th Division
+								["groups"] = {
+								},
+								["qg"] = 45820, -- Razal'blade
+								["sourceQuests"] = { 27582 }, -- Infiltrating Shadowforge City [Horde]
+							}),
+							q( 27596, { -- The Heart of the Mountain
+								["groups"] = {
+								},
+								["qg"] = 45850, -- Maxwort Uberglint
+							}),
+							q( 27603, { -- The Sealed Gate
+								["groups"] = {
+								},
+								["qg"] = 45849, -- Tinkee Steamboil
 							}),
 							qa(27567, { -- Twilight?! No! [Alliance]
 								["groups"] = {
@@ -119,45 +131,14 @@ _.Instances =
 								["qg"] = 45818, -- Lexlort
 								["sourceQuests"] = { 27579 }, -- Into the Prison [Horde]
 							}),
-							qa(27569, { -- Dark Iron Tacticians
-								["groups"] = {
-								},
-								["qg"] = 45894, -- Prospector Seymour
-								["sourceQuests"] = { 27568 }, -- Infilitrating Shadowforge City [Alliance]
-							}),
-							qh(27585, { -- The 109th Division
-								["groups"] = {
-								},
-								["qg"] = 45820, -- Razal'blade
-								["sourceQuests"] = { 27582 }, -- Infiltrating Shadowforge City [Horde]
-							}),
 						}),
 						n(-76, { -- Shadowforge City
-							qa(27571, { -- The Grim Guzzler [Alliance]
-								["groups"] = {
-								},
-								["qg"] = 45888, -- Mayara Brightwing
-								["sourceQuests"] = { 27569 }, -- Dark Iron Tacticians
-							}),
-							qh(27589, { -- The Grim Guzzler [Horde]
-								["groups"] = {
-								},
-								["qg"] = 45817, -- Hierophant Theodora Mulvadania
-								["sourceQuests"] = { 27585 }, -- The 109th Division
-							}),
-							qa(27573, { -- The Dark Iron Pact [Alliance]
-								["groups"] = {
-								},
-								["qg"] = 45899, -- Mountaineer Orfus
-								["sourceQuests"] = { 27571 }, -- The Grim Guzzler [Alliance]
-							}),
-							qh(27591, { -- The Dark Iron Pact [Horde]
-								["groups"] = {
-								},
-								["qg"] = 45824, --  Thunderheart
-								["sourceQuests"] = { 27589 }, -- The Grim Guzzler [Horde]
-							}),
-							qa(27578, { -- Morgan's Fruition
+							qr(qg(12944, q(6646))),	-- Favor Amongst the Brotherhood, Blood of the Mountain
+							qr(qg(12944, q(6645))),	-- Favor Amongst the Brotherhood, Core Leather
+							qr(qg(12944, q(6642))),	-- Favor Amongst the Brotherhood, Dark Iron Ore
+							qr(qg(12944, q(6643))),	-- Favor Amongst the Brotherhood, Fiery Core
+							qr(qg(12944, q(6644))),	-- Favor Amongst the Brotherhood, Lava Core
+							qa(27578, {	-- Morgan's Fruition
 								["groups"] = {
 									i(65956), -- Maxwell's Cloak
 									i(65932), -- Thaurissan's Breastplatee
@@ -175,54 +156,34 @@ _.Instances =
 								["qg"] = 45840, -- Warlord Goretooth
 								["sourceQuests"] = { 27591 },  -- The Dark Iron Pact [Horde]
 							}),
+							qr(qg(9503, q(4295))), 		-- Rocknot's Ale
+							qa(27573, { -- The Dark Iron Pact [Alliance]
+								["groups"] = {
+								},
+								["qg"] = 45899, -- Mountaineer Orfus
+								["sourceQuests"] = { 27571 }, -- The Grim Guzzler [Alliance]
+							}),
+							qh(27591, { -- The Dark Iron Pact [Horde]
+								["groups"] = {
+								},
+								["qg"] = 45824, --  Thunderheart
+								["sourceQuests"] = { 27589 }, -- The Grim Guzzler [Horde]
+							}),
+							qa(27571, { -- The Grim Guzzler [Alliance]
+								["groups"] = {
+								},
+								["qg"] = 45888, -- Mayara Brightwing
+								["sourceQuests"] = { 27569 }, -- Dark Iron Tacticians
+							}),
+							qh(27589, { -- The Grim Guzzler [Horde]
+								["groups"] = {
+								},
+								["qg"] = 45817, -- Hierophant Theodora Mulvadania
+								["sourceQuests"] = { 27585 }, -- The 109th Division
+							}),
 						}),
-						--[[ TEMPORARILY DISABLED
-							DETENTION BLOCK
-							o(207304, {			-- Adventure Board 
-								qa(28068),				-- Adventurers Wanted: Blackrock Depths
-							}),
-							o(207303, {			-- Adventure Board
-								qh(28069),				-- Adventurers Wanted: Blackrock Depths
-							}),
-							qc7(qg(20407, qa(28401,{ 	-- Slaves of the Firelord
-								i(65640), 		-- Mask of the Farseer
-								i(65622), 		-- Headcover of the Farseer
-							}))),
-							qc7(qg(3344, qh(28465,{		-- Slaves of the Firelord (alternate questgiver 72939)
-								i(65643), 		-- Mask of the Speaker
-								i(65630), 		-- Headcover of the Speaker
-							}))),
-							nlq({			-- Legacy Quests
-								q(4024, {		-- A Taste of Flame
-									un(34, i(12066)),	-- Shaleskin Cape
-									un(34, i(12083)),	-- Valconian Sash
-									un(34, i(12082)),	-- Wyrmhide Spaulders
-								}),
-								qa(4242, {		-- Abandoned Hope
-									un(34, i(12018)),	-- Conservator Helm
-									un(34, i(12021)),	-- Shieldplate Sabatons
-									un(34, i(12041)),	-- Windshear Leggings
-								}),
-								qh(3907, {		-- Disharmony of Fire
-									un(34, i(12112)),	-- Crypt Demon Bracers
-									un(34, i(12114)),	-- Nightfall Gloves
-									un(34, i(12115)),	-- Stalwart Clutch
-									un(34, i(12113)),	-- Sunborne Cape
-								}),
-								qa(4263, {		-- Incendius!
-									un(34, i(12112)),	-- Crypt Demon Bracers
-									un(34, i(12114)),	-- Nightfall Gloves
-									un(34, i(12115)),	-- Stalwart Clutch
-									un(34, i(12113)),	-- Sunborne Cape 
-								}),
-								qa(4322, {		-- Jail Break!
-									un(34, i(12061)),	-- Blade of Reckoning
-									un(34, i(12062)),	-- Skilled Fighting Blade
-								}),
-							}),
-						--]]	
 					}),
-					n(0, { 		-- Zone Drop
+					n(  0, {	-- Zone Drop
 						n(8892, {	-- Anvilrage Footman
 							dr(0.04, i(12549)),	-- Braincage
 							dr(0.03, i(12531)),	-- Searing Needle
@@ -439,7 +400,7 @@ _.Instances =
 							}),
 						}),
 					}),
-					n(-75, { 	-- Detention Block
+					n(-75, {	-- Detention Block
 						cr(9018, e(369, {	-- High Interrogator Gerstahn
 							i(11625), 	-- Enthralled Sphere
 							i(11626), 	-- Blackveil Cape
@@ -573,143 +534,7 @@ _.Instances =
 							}),
 						}),
 					}),
-					n(-76, { 	-- Shadowforge City
-						--[[ TEMPORARILY DISABLED
-						n(-17, {			-- Quests 		
-							qc1(qg(914, qa(28393,{		-- A Dangerous Alliance
-								i(65618), 		-- Faceguard of the Crown
-								i(65639), 		-- Headguard of the Crown
-							}))),
-							qc1(qg(3353, qh(28457,{		-- A Dangerous Alliance
-								i(65625), 		-- Faceguard of the Horde
-								i(65642), 		-- Headguard of the Horde
-							}))),
-							
-							qr(qg(12944, q(6646))),		-- Favor Amongst the Brotherhood, Blood of the Mountain
-							qr(qg(12944, q(6645))),		-- Favor Amongst the Brotherhood, Core Leather
-							qr(qg(12944, q(6642))),		-- Favor Amongst the Brotherhood, Dark Iron Ore
-							qr(qg(12944, q(6643))),		-- Favor Amongst the Brotherhood, Fiery Core
-							qr(qg(12944, q(6644))),		-- Favor Amongst the Brotherhood, Lava Core					
-							qg(45890, qa(27578, {		-- Morgan's Fruition	
-								i(65932),		-- Thaurissan's Breastplate
-								i(65956),		-- Maxwell's Cloak									
-							})),
-							qg(45840, qh(27593, {		-- Rebirth of the K.E.F.	
-								i(68053),		-- Thaurissian's Breastplate
-								i(68052),		-- Kargath Cloak								
-							})),
-							qr(qg(9503, q(4295))), 		-- Rocknot's Ale
-							qc9(qg(461, qa(28399, { 	-- Stones of Binding
-								i(65621), 		-- Horns of Justified Sins
-							}))),
-							qc9(qg(3326, qh(28459, {	-- Stones of Binding (Alternate qg 88705)
-								i(65627), 		-- Horns of the Left Hand Path
-							}))),
-							
-							qc11(qg(12042, q(28343, {	-- The Breath of Cenarius
-								i(65617), 		-- Headdress of the Verdant Circle
-								i(65638), 		-- Headdress of the Green Circle
-							}))),
-							qc4(qg(13283, qa(28406, {	-- The Dark Iron Army (Alternate qg 51998)
-								i(65624), 		-- SI:7 Special Issue Facemask
-							}))),
-							qc4(qg(47233, qh(28463, {	-- The Dark Iron Army
-								i(65629), 		-- Facemask of the Shattered Hand	
-							}))),
-							qc3(qg(44247, qa(28394, {	-- The Golem Lord's Creations
-								i(65619), 		-- Helm of the Crown
-							}))),
-							qc3(qg(3352, qh(28461, {	-- The Golem Lord's Creations
-								i(65628), 		-- Helm of the Great Hunter
-							}))),
-							qc8(qg(331, qa(28398, {		-- The Pyromancer's Grimoire
-								i(65620), 		-- Hood of the Royal Wizard
-							}))),
-							qc8(qg(47246, qh(28458, {	-- The Pyromancer's Grimoire
-								i(65626), 		-- Hood of the Arcane Path
-							}))),
-							qc5(qg(376, qa(28328, {		-- Twilight Scheming
-								i(65616), 		-- Crown of the Hallowed
-							}))),
-							qc5(qg(45339, qh(28474, {	-- Twilight Scheming
-								["groups"] = {		
-									i(65633), 	-- Crown of Forsaken Faith
-								},
-								["races"] = {5},
-							}))),
-							qc5(qg(45337, qh(28475, {	-- Twilight Scheming
-								["groups"] = {		
-									i(65634), 	-- Crown of the Sunchaser
-								},
-								["races"] = {10},
-							}))),
-							qc5(qg(45137, qh(28477, {	-- Twilight Scheming
-								["groups"] = {		
-									i(65636), 	-- Crown of the Shadow-Walker
-								},
-								["races"] = {8},
-							}))),
-							qc5(qg(44735, qh(28476, {	-- Twilight Scheming
-								["groups"] = {		
-									i(65635), 	-- Crown of the Earthmother
-								},
-								["races"] = {6},
-							}))),
-							qc5(qg(45347, qh(28478, {	-- Twilight Scheming
-								["groups"] = {		
-									i(65637), 	-- Crown of Golden Worship
-								},
-								["races"] = {9},
-							}))),
-							qc2(qg(928, qa(28405, {		-- Weapons of Darkness
-								i(65623), 		-- Helm of the Order
-								i(65641), 		-- Faceguard of the Order
-								i(65646), 		-- Headguard of the Order
-							}))),
-							qc2(qg(44725, qh(28466, {	-- Weapons of Darkness
-								["groups"] = {		
-									i(65631), 	-- Helm of the Sunwalker
-									i(65644), 	-- Faceguard of the Sunwalker
-									i(65647), 	-- Headguard of the Sunwalker
-								},
-								["races"] = {6},
-							}))),
-							qc2(qg(23128, qh(28473, {	-- Weapons of Darkness
-								["groups"] = {		
-									i(65632), 	-- Helm of the Order
-									i(65645), 	-- Faceguard of the Order
-									i(65648), 	-- Headguard of the Order
-									i(25549), 	-- Blood Knight Tabard
-								},
-								["races"] = {10},
-							}))),
-							nlq({			-- Legacy Quests
-								qa(4126, {		-- Hurley Blackbreath
-									un(34, i(12000)),	-- Limb Cleaver
-									un(34, i(11964)),	-- Swiftstrike Cudgel
-								}),
-								qh(4134, {		-- Lost Thunderbrew Recipe
-									un(34, i(12000)),	-- Limb Cleaver
-									un(34, i(11964)),	-- Swiftstrike Cudgel
-								}),
-								q(4136, {		-- Ribbly Screwspigot
-									un(34, i(11963)),	-- Penance Spaulders 
-									un(34, i(11865)),	-- Rancor Boots
-									un(34, i(12049)),	-- Splintsteel Armor
-								}),
-								q(4201, {		-- The Love Potion
-									un(34, i(11962)),	-- Manacle Cuffs
-									un(34, i(11866)),	-- Nagmara's Whipping Belt
-								}),
-								qh(4063, {		-- The Rise of the Machines
-									un(34, i(12109)),	-- Azure Moon Amice
-									un(34, i(12108)),	-- Basaltscale Armor
-									un(34, i(12111)),	-- Lavaplate Gauntlets
-									un(34, i(12110)),	-- Raincaster Drape
-								}),
-							}),
-						}),
-						--]]						
+					n(-76, {	-- Shadowforge City
 						cr(9024, e(373, {	-- Pyromancer Loregrain
 							i(11750), 	-- Kindling Stave
 							i(11748), 	-- Pyric Caduceus
@@ -1019,7 +844,67 @@ _.Instances =
 							i(12553), 	-- Swiftwalker Boots
 							i(12554), 	-- Hands of the Exalted Herald
 						})),
-					}),					
+					}),
+					n(-40, {	-- Legacy
+						["groups"] = {
+							n(-17, {	-- Quests (Legacy)
+								q( 4024, {		-- A Taste of Flame
+									un(34, i(12066)),	-- Shaleskin Cape
+									un(34, i(12083)),	-- Valconian Sash
+									un(34, i(12082)),	-- Wyrmhide Spaulders
+								}),
+								qa(4242, {		-- Abandoned Hope
+									un(34, i(12018)),	-- Conservator Helm
+									un(34, i(12021)),	-- Shieldplate Sabatons
+									un(34, i(12041)),	-- Windshear Leggings
+								}),
+								qh(3907, {		-- Disharmony of Fire
+									un(34, i(12112)),	-- Crypt Demon Bracers
+									un(34, i(12114)),	-- Nightfall Gloves
+									un(34, i(12115)),	-- Stalwart Clutch
+									un(34, i(12113)),	-- Sunborne Cape
+								}),
+								qa(4126, {		-- Hurley Blackbreath
+									un(34, i(12000)),	-- Limb Cleaver
+									un(34, i(11964)),	-- Swiftstrike Cudgel
+								}),
+								qa(4263, {		-- Incendius!
+									un(34, i(12112)),	-- Crypt Demon Bracers
+									un(34, i(12114)),	-- Nightfall Gloves
+									un(34, i(12115)),	-- Stalwart Clutch
+									un(34, i(12113)),	-- Sunborne Cape 
+								}),
+								qa(4322, {		-- Jail Break!
+									un(34, i(12061)),	-- Blade of Reckoning
+									un(34, i(12062)),	-- Skilled Fighting Blade
+								}),
+								qh(4134, {		-- Lost Thunderbrew Recipe
+									un(34, i(12000)),	-- Limb Cleaver
+									un(34, i(11964)),	-- Swiftstrike Cudgel
+								}),
+								q( 4136, {		-- Ribbly Screwspigot
+									un(34, i(11963)),	-- Penance Spaulders 
+									un(34, i(11865)),	-- Rancor Boots
+									un(34, i(12049)),	-- Splintsteel Armor
+								}),
+								q( 4201, {		-- The Love Potion
+									un(34, i(11962)),	-- Manacle Cuffs
+									un(34, i(11866)),	-- Nagmara's Whipping Belt
+								}),
+								qh(4063, {		-- The Rise of the Machines
+									un(34, i(12109)),	-- Azure Moon Amice
+									un(34, i(12108)),	-- Basaltscale Armor
+									un(34, i(12111)),	-- Lavaplate Gauntlets
+									un(34, i(12110)),	-- Raincaster Drape
+								}),
+							}),
+							--n(-16, {	-- Rares (Legacy)
+							--}),
+							--n(  0, {	-- Zone Drop (Legacy)
+							--}),
+						},
+						["u"] = 12,
+					}),
 				},
 				["Lvl"] = 42,
 				["mapID"] = 704
