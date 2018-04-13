@@ -511,6 +511,16 @@ _.Zones =
 	--				n(51402, { 		-- Madexx - Green -- tameable			}), 
 	--				n(51401, { 		-- Madexx - Red -- tameable			}), 
 				}),
+				n(-77, {	-- Special
+					n(50409, {	-- Mysterious Camel Figurine
+						["g"] = {
+							n(50245, {	-- Dormus the Camel Hoarder
+								i(63046),	-- Reins of the Grey Riding Camel
+							}),
+						},
+						["description"] = "If you're lucky enough to find the right Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
+					}),
+				}),
 				n( -2, {	-- Vendors
 					n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>
 						i(62448),	-- Sun King's Girdle
