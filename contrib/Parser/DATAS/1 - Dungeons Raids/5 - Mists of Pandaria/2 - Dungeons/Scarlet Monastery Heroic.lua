@@ -12,8 +12,9 @@ _.Instances =
 						["ids"] = { 524 }, -- Heroic
 						["Lvl"] = 90,
 						["groups"] = {
-							n(-17, {	-- Quests 					
-								q(31516, {
+							n(-17, {	-- Quests
+								qg(64838, q(31515)),	-- Blades of the Anointed
+								qg(64855, q(31516, {	-- Unto Dust Thou Shalt Return
 									i(87361),	-- Martial Purification Gloves
 									i(87362),	-- Gauntlets of Righteous Conviction
 									i(87363),	-- Zealous Fervor Handguards
@@ -23,7 +24,7 @@ _.Instances =
 									i(87367),	-- Gloves of Fiery Purification
 									i(87368),	-- Gauntlets of Bloody Judgment
 									i(87369),	-- Crimson Monk Handwraps
-								}),
+								})),
 							}),
 							cr(59789, e(688, {	-- Thalnos the Soulrender
 								i(144001),	-- Forgotten Bloodmage Mantle
