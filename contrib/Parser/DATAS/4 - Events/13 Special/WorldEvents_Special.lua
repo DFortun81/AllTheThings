@@ -762,7 +762,6 @@ _.WorldEvents =
 						["groups"] = {
 							n(-302, {	-- Level 80-84
 								["groups"] = {
-									i(134634),	-- Scorching Cloak
 									i(134616),	-- Inflammatory Cord
 									i(134615),	-- Inflammatory Hood
 									i(134614),	-- Inflammatory Treads
@@ -775,16 +774,17 @@ _.WorldEvents =
 									i(134631),	-- Firescored Girdle
 									i(134630),	-- Firescored Helm
 									i(134629),	-- Firescored Warboots
-									i(134608),	-- Scorching Longbow
-									i(134610),	-- Scorching Shanker
+									i(134634),	-- Scorching Cloak*
 									i(134607),	-- Scorching Cleaver
-									i(134633),	-- Scorching Hacker
 									i(134618),	-- Scorching Gavel
-									i(134611),	-- Scorching Pummeler
-									i(134612),	-- Scorching Pike
-									i(134632),	-- Scorching Redoubt
-									i(134619),	-- Scorching Staff
 									i(134606),	-- Scorching Greatsword
+									i(134633),	-- Scorching Hacker
+									i(134608),	-- Scorching Longbow
+									i(134612),	-- Scorching Pike
+									i(134611),	-- Scorching Pummeler
+									i(134632),	-- Scorching Redoubt
+									i(134610),	-- Scorching Shanker
+									i(134619),	-- Scorching Staff
 									i(134627),	-- Scorching Pendant*
 								},
 								["description"] = "Rewarded for winning a random battleground in the level 80-84 range.",
