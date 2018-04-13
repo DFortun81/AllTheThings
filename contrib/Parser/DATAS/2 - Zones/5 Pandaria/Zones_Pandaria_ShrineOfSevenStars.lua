@@ -282,6 +282,9 @@ n(-3, { 	-- Holidays
 					qa( 32315),	-- Anduin's Plea
 --]]
 --[[ CHALLENGE MODE DAILIES -- REMOVED?
+					qdg(qa(32005, {	-- A Worthy Challenge: Durand
+						i(98134),	-- Heroic Cache of Treasures
+					})),
 					qdg(qa(32006, {	-- A Worthy Challenge: Flameweaver Koegler
 						i(98134),	-- Heroic Cache of Treasures
 					})),

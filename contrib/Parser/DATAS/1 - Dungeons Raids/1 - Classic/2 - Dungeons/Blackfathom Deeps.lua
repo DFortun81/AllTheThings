@@ -253,8 +253,12 @@ _.Instances =
 									un(34, i(56658)),	-- Eventide Bow
 								}),
 								qa(1275, {	-- Researching the Corruption
-									un(34, i(7003)),	-- Beetle Clasps
-									un(34, i(7004)),	-- Prelacy Cape
+									un(34, i(56679)),	-- Dissector
+									un(34, i(56680)),	-- Shadestar Mace
+									un(34, i(56681)),	-- Searching Wand
+									un(34, i(56682)),	-- Band of the Skull Crusher
+									un(34, i( 7004)),	-- Prelacy Cape
+									un(34, i( 7003)),	-- Beetle Clasps
 								}),	
 								qa(26883, {	-- Twilight Falls
 									un(34, i(56699)),	-- Aluwyn's Legguards

@@ -1082,6 +1082,10 @@ _.Zones =
 								un(34, i(6780)),	-- Lilac Sash
 								un(34, i(6784)),	-- Braced Handguards
 							}),
+							q(6161, {	-- Claim Rackmore's Treasure!
+								un(34, i(16788)),	-- Captain Rackmore's Wheel
+								un(34, i(16789)),	-- Captain Rackmore's Tiller
+							}),
 							qdg(qa(7064, {	-- Corruption of Earth and Seed
 								un(34, i(17705)),	-- Thrash Blade
 								un(34, i(17743)),	-- Resurgence Rod

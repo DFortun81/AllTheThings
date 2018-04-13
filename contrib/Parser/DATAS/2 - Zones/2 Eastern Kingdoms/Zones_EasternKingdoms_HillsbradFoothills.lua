@@ -1563,6 +1563,11 @@ _.Zones =
 								un(34, i(5249)),	-- Burning Silver
 								un(34, i(3763)),	-- Lunar Buckler
 							}),
+							qh(567, {	-- Dangerous!
+								un(34, i(3742)),	-- Bow of Plunder
+								un(34, i(3743)),	-- Sentry Buckler
+								un(34, i(5250)),	-- Charred Wand
+							}),
 							qh(501, {	-- Elixir of Pain
 								un(34, i(2230)),	-- Gloves of Brawn
 								un(34, i(3741)),	-- Stomping Boots
