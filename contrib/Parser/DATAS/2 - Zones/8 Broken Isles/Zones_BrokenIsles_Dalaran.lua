@@ -393,6 +393,205 @@ _.Zones =
 						})),
 					}),
 				}),
+				n(-219, { -- Profession Trainers
+					n(93525, { --  Ainderu Summerleaf <Tailoring Trainer>
+						["groups"] = {
+							recipe(56023),	-- Aurora Slippers
+							recipe(8766),	-- Azure Silk Belt
+							recipe(8760),	-- Azure Silk Hood
+							recipe(8758),	-- Azure Silk Pants
+							recipe(3859),	-- Azure Silk Vest
+							recipe(56010),	-- Azure Spellthread
+							recipe(2395),	-- Barbaric Linen Vest
+							recipe(134585),	-- Bipsi's Gloves
+							recipe(55925),	-- Black Duskweave Leggings
+							recipe(55941),	-- Black Duskweave Robe
+							recipe(55943),	-- Black Duskweave Wristwraps
+							recipe(12073),	-- Black Mageweave Boots
+							recipe(12053),	-- Black Mageweave Gloves
+							recipe(12072),	-- Black Mageweave Headband
+							recipe(12049),	-- Black Mageweave Leggings
+							recipe(12050),	-- Black Mageweave Robe
+							recipe(12074),	-- Black Mageweave Shoulders
+							recipe(12048),	-- Black Mageweave Vest
+							recipe(2394),	-- Blue Linen Shirt
+							recipe(55900),	-- Bolt of Imbued Frostweave
+							recipe(18420),	-- Brightcloth Cloak
+							recipe(18415),	-- Brightcloth Gloves
+							recipe(18414),	-- Brightcloth Robe
+							recipe(3914),	-- Brown Linen Pants
+							recipe(7623),	-- Brown Linen Robe
+							recipe(125553),	-- Cerulean Spellthread
+							recipe(12088),	-- Cindercloth Boots
+							recipe(12069),	-- Cindercloth Robe
+							recipe(64730),	-- Cloak of Crimson Snow
+							recipe(56015),	-- Cloak of Frozen Spirits
+							recipe(56014),	-- Cloak of the Moon
+							recipe(8772),	-- Crimson Silk Belt
+							recipe(8804),	-- Crimson Silk Gloves
+							recipe(8799),	-- Crimson Silk Pantaloons
+							recipe(8791),	-- Crimson Silk Vest
+							recipe(75248),	-- Deathsilk Belt
+							recipe(75252),	-- Deathsilk Boots
+							recipe(75249),	-- Deathsilk Bracers
+							recipe(75256),	-- Deathsilk Cowl
+							recipe(75253),	-- Deathsilk Gloves
+							recipe(75254),	-- Deathsilk Leggings
+							recipe(75257),	-- Deathsilk Robe
+							recipe(75251),	-- Deathsilk Shoulders
+							recipe(56020),	-- Deep Frozen Cord
+							recipe(3848),	-- Double-stitched Woolen Shoulders
+							recipe(75146),	-- Dream of Azshara
+							recipe(75142),	-- Dream of Deepholm
+							recipe(94743),	-- Dream of Destruction
+							recipe(75144),	-- Dream of Hyjal
+							recipe(75145),	-- Dream of Ragnaros
+							recipe(75141),	-- Dream of Skywall
+							recipe(12092),	-- Dreamweave Circlet
+							recipe(12067),	-- Dreamweave Gloves
+							recipe(12070),	-- Dreamweave Vest
+							recipe(55914),	-- Duskweave Belt
+							recipe(55924),	-- Duskweave Boots
+							recipe(55919),	-- Duskweave Cowl
+							recipe(55922),	-- Duskweave Gloves
+							recipe(55901),	-- Duskweave Leggings
+							recipe(55921),	-- Duskweave Robe
+							recipe(55923),	-- Duskweave Shoulders
+							recipe(55920),	-- Duskweave Wristwraps
+							recipe(8764),	-- Earthen Vest
+							recipe(56002),	-- Ebonweave
+							recipe(56027),	-- Ebonweave Gloves
+							recipe(56026),	-- Ebonweave Robe
+							recipe(75264),	-- Embersilk Bag
+							recipe(75250),	-- Enchanted Spellthread
+							recipe(18437),	-- Felcloth Boots
+							recipe(18442),	-- Felcloth Hood
+							recipe(18451),	-- Felcloth Robe
+							recipe(18453),	-- Felcloth Shoulders
+							recipe(60969),	-- Flying Carpet
+							recipe(3871),	-- Formal White Shirt
+							recipe(64729),	-- Frostguard Drape
+							recipe(56021),	-- Frostmoon Pants
+							recipe(59582),	-- Frostsavage Belt
+							recipe(59585),	-- Frostsavage Boots
+							recipe(59583),	-- Frostsavage Bracers
+							recipe(59589),	-- Frostsavage Cowl
+							recipe(59586),	-- Frostsavage Gloves
+							recipe(59588),	-- Frostsavage Leggings
+							recipe(59587),	-- Frostsavage Robe
+							recipe(59584),	-- Frostsavage Shoulders
+							recipe(56007),	-- Frostweave Bag
+							recipe(18411),	-- Frostweave Gloves
+							recipe(18424),	-- Frostweave Pants
+							recipe(18403),	-- Frostweave Tunic
+							recipe(55908),	-- Frostwoven Belt
+							recipe(55906),	-- Frostwoven Boots
+							recipe(55907),	-- Frostwoven Cowl
+							recipe(55904),	-- Frostwoven Gloves
+							recipe(56030),	-- Frostwoven Leggings
+							recipe(55903),	-- Frostwoven Robe
+							recipe(55902),	-- Frostwoven Shoulders
+							recipe(56031),	-- Frostwoven Wristwraps
+							recipe(75255),	-- Ghostly Spellthread
+							recipe(18410),	-- Ghostweave Belt
+							recipe(18413),	-- Ghostweave Gloves
+							recipe(18441),	-- Ghostweave Pants
+							recipe(18416),	-- Ghostweave Vest
+							recipe(60993),	-- Glacial Robe
+							recipe(60994),	-- Glacial Slippers
+							recipe(60990),	-- Glacial Waistband
+							recipe(3852),	-- Gloves of Meditation
+							recipe(2406),	-- Gray Woolen Shirt
+							recipe(3841),	-- Green Linen Bracers
+							recipe(2396),	-- Green Linen Shirt
+							recipe(8774),	-- Green Silken Shoulders
+							recipe(2399),	-- Green Woolen Vest
+							recipe(56000),	-- Green Workman's Shirt
+							recipe(3842),	-- Handstitched Linen Britches
+							recipe(56018),	-- Hat of Wintry Doom
+							recipe(3840),	-- Heavy Linen Gloves
+							recipe(3843),	-- Heavy Woolen Gloves
+							recipe(3850),	-- Heavy Woolen Pants
+							recipe(75268),	-- Hyjal Expedition Bag
+							recipe(125557),	-- Imperial Silk
+							recipe(6690),	-- Lesser Wizard's Robe
+							recipe(56022),	-- Light Blessed Mittens
+							recipe(2386),	-- Linen Boots
+							recipe(3861),	-- Long Silken Cloak
+							recipe(60971),	-- Magnificent Flying Carpet
+							recipe(56001),	-- Moonshroud
+							recipe(56025),	-- Moonshroud Gloves
+							recipe(56024),	-- Moonshroud Robe
+							recipe(55911),	-- Mystic Frostwoven Robe
+							recipe(55910),	-- Mystic Frostwoven Shoulders
+							recipe(55913),	-- Mystic Frostwoven Wristwraps
+							recipe(26746),	-- Netherweave Bag
+							recipe(26765),	-- Netherweave Belt
+							recipe(26772),	-- Netherweave Boots
+							recipe(26764),	-- Netherweave Bracers
+							recipe(26770),	-- Netherweave Gloves
+							recipe(26771),	-- Netherweave Pants
+							recipe(12061),	-- Orange Mageweave Shirt
+							recipe(75265),	-- Otherworldly Bag
+							recipe(6521),	-- Pearl-clasped Cloak
+							recipe(125552),	-- Pearlescent Spellthread
+							recipe(2392),	-- Red Linen Shirt
+							recipe(8489),	-- Red Swashbuckler's Shirt
+							recipe(2397),	-- Reinforced Linen Cape
+							recipe(8770),	-- Robe of Power
+							recipe(18402),	-- Runecloth Belt
+							recipe(18423),	-- Runecloth Boots
+							recipe(18409),	-- Runecloth Cloak
+							recipe(18417),	-- Runecloth Gloves
+							recipe(18444),	-- Runecloth Headband
+							recipe(18438),	-- Runecloth Pants
+							recipe(18406),	-- Runecloth Robe
+							recipe(18449),	-- Runecloth Shoulders
+							recipe(18407),	-- Runecloth Tunic
+							recipe(12082),	-- Shadoweave Boots
+							recipe(12071),	-- Shadoweave Gloves
+							recipe(12052),	-- Shadoweave Pants
+							recipe(12055),	-- Shadoweave Robe
+							recipe(12076),	-- Shadoweave Shoulders
+							recipe(56008),	-- Shining Spellthread
+							recipe(8762),	-- Silk Headband
+							recipe(186097),	-- Silkweave Cover
+							recipe(186100),	-- Silkweave Drape
+							recipe(186094),	-- Silkweave Flourish
+							recipe(186091),	-- Silkweave Shade
+							recipe(56019),	-- Silky Iceshard Boots
+							recipe(12046),	-- Simple Kilt
+							recipe(3845),	-- Soft-soled Linen Boots
+							recipe(130325),	-- Song of Harmony
+							recipe(56003),	-- Spellweave
+							recipe(56029),	-- Spellweave Gloves
+							recipe(56028),	-- Spellweave Robe
+							recipe(3855),	-- Spidersilk Boots
+							recipe(63742),	-- Spidersilk Drape
+							recipe(75258),	-- Spiritmend Belt
+							recipe(75261),	-- Spiritmend Boots
+							recipe(75259),	-- Spiritmend Bracers
+							recipe(75266),	-- Spiritmend Cowl
+							recipe(75262),	-- Spiritmend Gloves
+							recipe(75263),	-- Spiritmend Leggings
+							recipe(75267),	-- Spiritmend Robe
+							recipe(75260),	-- Spiritmend Shoulders
+							recipe(3866),	-- Stylish Red Shirt
+							recipe(75293),	-- Vicious Embersilk Belt
+							recipe(75297),	-- Vicious Embersilk Boots
+							recipe(75270),	-- Vicious Embersilk Bracers
+							recipe(99537),	-- Vicious Embersilk Cape
+							recipe(75295),	-- Vicious Embersilk Gloves
+							recipe(75291),	-- Vicious Embersilk Shoulders
+							recipe(75269),	-- Vicious Fireweave Belt
+							recipe(75294),	-- Vicious Fireweave Boots
+							recipe(75290),	-- Vicious Fireweave Bracers
+							recipe(75296),	-- Vicious Fireweave Gloves
+							recipe(75292),	-- Vicious Fireweave Shoulders
+						},
+						--["requiredSkill"] = 197, -- Tailoring
+					}),
+				}),
 				n(-17, { 	-- Quests
 					q(44400, {	-- Assault on Violet Hold: Purple Pain
 						i(141359),
