@@ -589,7 +589,7 @@ _.Zones =
 							recipe(75296),	-- Vicious Fireweave Gloves
 							recipe(75292),	-- Vicious Fireweave Shoulders
 						},
-						--["requiredSkill"] = 197, -- Tailoring
+						["requiredSkill"] = 197, -- Tailoring
 					}),
 				}),
 				n(-17, { 	-- Quests
