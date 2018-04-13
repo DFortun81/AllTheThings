@@ -11,43 +11,20 @@ _.Instances =
 					n(-12, {	-- Warpwood Quarter [East - Demon]
 						["groups"] = {
 							n(-17, {	-- Quests
-								qg(44969, q(27104, {	-- Alzzin the Wildshaper
+								qg(44969, q( 27104, {	-- Alzzin the Wildshaper
 									i(65948),	-- Warpwood Bark Vest
 									i(65972),	-- Warpwood Bow
 									i(65922),	-- Warpwood Leaf Mantle
 									i(65993),	-- Warpwood Shield
 								})),
-								qg(44969, q(27105)),	-- An Unwelcome Guest
-								qg(44971, q(27108)),	-- Lethtendris's Web
-								qg(44971, q(27107)),	-- Pusillin The Thief
+								qg(44969, q( 27105)),	-- An Unwelcome Guest
+								qg(44971, q( 27108)),	-- Lethtendris's Web
+								qg(44971, q( 27107)),	-- Pusillin The Thief
 								qg(40032, qa(27129)),	-- Saving Warpwood
-								qg(7875, qh(27130)),	-- Saving Warpwood
-								qg(44969, q(27103)),	-- Shards of the Felvine
-								nlq({	-- Legacy Quests
-									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
-										["groups"] = {
-											q(7507),	-- Furor's Compendium
-											q(7508),	-- The Forging of Quel'Serrar
-											q(7509, {	-- The Forging of Quel'Serrar
-												un(34, i(18348)),	-- Quel'Serrar
-											}),
-										},
-										["classes"] = {1,2},
-										["description"] = "Item used to drop from any boss in Dire Maul.",
-									})),
-									qa(7488, {	-- Lethtendris's Web
-										un(34, i(18491)),	-- Lorespinner 
-									}),
-									qh(7489, {	-- Lethtendris's Web
-										un(34, i(18491)),	-- Lorespinner 
-									}),
-									q(7441, {	-- Pusillin and the Elder Azj'Tordin
-										un(34, i(18410)),	-- Sprinter's Sword 
-										un(34, i(18411)),	-- Spry Boots
-									}),
-								}),
+								qg( 7875, qh(27130)),	-- Saving Warpwood
+								qg(44969, q( 27103)),	-- Shards of the Felvine
 							}),
-							n(0, {				-- Zone Drop
+							n(  0, {	-- Zone Drop
 								n(13196, {		-- Phase Lasher
 									dr(0.4, i(18295)),	-- Phasing Boots
 								}),
@@ -94,7 +71,7 @@ _.Instances =
 								i(18313),			-- Helm of Awareness
 								i(18306),			-- Gloves of Shadowy Mist
 							})),
-							n(16097, { -- Isalien Summonable
+							n( 16097, { -- Isalien Summonable
 								["groups"] = { 
 									i(22057, {	-- Brazier of Invocation
 										un(11, i(22472)), 	-- Boots of Ferocity
@@ -123,7 +100,7 @@ _.Instances =
 								o(179485, {	-- A Broken Trap
 									qr(q(27118)),	-- A Broken Trap
 								}),
-								qg(3936, qa(27133)),	-- Eyes in the Sky
+								qg( 3936, qa(27133)),	-- Eyes in the Sky
 								qg(45040, qa(27125, {	-- King of the Gordok
 									i(65976),	-- Pauldrons of Tribute
 									i(65927),	-- Slippers of Tribute
@@ -150,19 +127,6 @@ _.Instances =
 									i(18366),	-- Gordok's Handguards
 									i(18369),	-- Gordok's Handwraps
 								})),
-								nlq({	-- Legacy Quests
-									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
-										["groups"] = {
-											q(7507),	-- Furor's Compendium
-											q(7508),	-- The Forging of Quel'Serrar
-											q(7509, {	-- The Forging of Quel'Serrar
-												un(34, i(18348)),	-- Quel'Serrar
-											}),
-										},
-										["classes"] = {1,2},
-										["description"] = "Item used to drop from any boss in Dire Maul.",
-									})),
-								}),
 							}),
 							cr(14326, e(411, {	-- Guard Mol'dar
 								i(18498),			-- Hedgecutter
@@ -264,43 +228,6 @@ _.Instances =
 								},
 								["description"] = "Speak with Mizzle after killing King Gordok and he'll spawn the Tribute Chest. The quality of the items within are dependent on how many of the guards you leave alive."
 							}),
-							nld({				-- Legacy
-								o(179501, {	-- Knot Thimblejack's Cache
-									un(7, i(18414, {	-- Pattern: Belt of the Archmage
-										un(8, i(18405)),	-- Belt of the Archmage
-									})),
-									un(7, i(18517, {	-- Pattern: Chromatic Cloak
-										un(8, i(18509)),	-- Chromatic Cloak
-									})),
-									un(2, i(18418, {	-- Pattern: Cloak of Warding
-										un(8, i(18413)),	-- Cloak of Warding
-									})),
-									un(2, i(18415, {	-- Pattern: Felcloth Gloves
-										un(8, i(18407)),	-- Felcloth Gloves
-									})),
-									un(2, i(18514, {	-- Pattern: Girdle of Insight
-										un(8, i(18504)),	-- Girdle of Insight
-									})),
-									un(7, i(18518, {	-- Pattern: Hide of the Wild
-										un(8, i(18510)),	-- Hide of the Wild
-									})),
-									un(2, i(18416, {	-- Pattern: Inferno Gloves
-										un(8, i(18408)),	-- Inferno Gloves
-									})),
-									un(2, i(18515, {	-- Pattern: Mongoose Boots
-										un(8, i(18506)),	-- Mongoose Boots
-									})),
-									un(2, i(18417, {	-- Pattern: Mooncloth Gloves
-										un(8, i(18409)),	-- Mooncloth Gloves
-									})),
-									un(7, i(18519, {	-- Pattern: Shifting Cloak
-										un(8, i(18511)),	-- Shifting Cloak
-									})),
-									un(2, i(18516, {	-- Pattern: Swift Flight Bracers
-										un(8, i(18508)),	-- Swift Flight Bracers
-									})),
-								}),
-							}),
 						},
 					}),
 					n(-14, {	-- Capital Gardens [West - Elves]
@@ -310,6 +237,7 @@ _.Instances =
 								qg(40032, qa(27131)),	-- The Highborne
 								qg(7875, qh(27132)),	-- The Highborne
 								qg(14358, q(27110)),	-- The Madness Within
+								qg(44991, q(27113)),	-- The Shen'dralar Ancient
 								qg(14358, q(27111, {	-- The Treasure of Shen'dralar
 									i(65949),	-- Dire Maul
 									i(65973),	-- Fras Siabi's Cigar Cutter
@@ -317,29 +245,6 @@ _.Instances =
 									i(65994),	-- Staff of Athen'a
 								})),
 								qg(44999, q(27109)),	-- The Warped Defender
-								nlq({	-- Legacy Quests
-									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
-										["groups"] = {
-											q(7507),	-- Furor's Compendium
-											q(7508),	-- The Forging of Quel'Serrar
-											q(7509, {	-- The Forging of Quel'Serrar
-												un(34, i(18348)),	-- Quel'Serrar
-											}),
-										},
-										["classes"] = {1,2},
-										["description"] = "Item used to drop from any boss in Dire Maul.",
-									})),
-									qa(7462, { 	-- The Treasure of the Shen'dralar
-										un(34, i(18421)),	-- Backwood Helm 
-										un(34, i(18420)),	-- Bonecrusher 
-										un(34, i(18424)),	-- Sedge Boots 
-									}),
-									qh(7877, { 	-- The Treasure of the Shen'dralar
-										un(34, i(18421)),	-- Backwood Helm 
-										un(34, i(18420)),	-- Bonecrusher 
-										un(34, i(18424)),	-- Sedge Boots 
-									}),
-								}),
 							}),
 							n(0, {				-- Zone Drop
 								n(11480, {	-- Arcane Aberration
@@ -444,6 +349,123 @@ _.Instances =
 								}),
 							}),
 						},
+					}),
+					n(-40, {	-- Legacy
+						["groups"] = {
+							n(-12, {	-- Warpwood Quarter [East - Demon]
+								n(-17, {	-- Quests (Legacy)
+									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
+										["groups"] = {
+											q(7507),	-- Furor's Compendium
+											q(7508),	-- The Forging of Quel'Serrar
+											q(7509, {	-- The Forging of Quel'Serrar
+												un(34, i(18348)),	-- Quel'Serrar
+											}),
+										},
+										["classes"] = {1,2},
+										["description"] = "Item used to drop from any boss in Dire Maul.",
+									})),
+									qa(7488, {	-- Lethtendris's Web
+										un(34, i(18491)),	-- Lorespinner 
+									}),
+									qh(7489, {	-- Lethtendris's Web
+										un(34, i(18491)),	-- Lorespinner 
+									}),
+									q(7441, {	-- Pusillin and the Elder Azj'Tordin
+										un(34, i(18410)),	-- Sprinter's Sword 
+										un(34, i(18411)),	-- Spry Boots
+									}),
+								}),
+								--n(-16, {	-- Rares (Legacy)
+								--}),
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),
+							}),
+							n(-13, {	-- Gordok Commons [North - Ogres]
+								n(-17, {	-- Quests (Legacy)
+									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
+										["groups"] = {
+											q(7507),	-- Furor's Compendium
+											q(7508),	-- The Forging of Quel'Serrar
+											q(7509, {	-- The Forging of Quel'Serrar
+												un(34, i(18348)),	-- Quel'Serrar
+											}),
+										},
+										["classes"] = {1,2},
+										["description"] = "Item used to drop from any boss in Dire Maul.",
+									})),
+								}),
+								--n(-16, {	-- Rares (Legacy)
+								--}),
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),
+								o(179501, {	-- Knot Thimblejack's Cache
+									un(7, i(18414, {	-- Pattern: Belt of the Archmage
+										un(8, i(18405)),	-- Belt of the Archmage
+									})),
+									un(7, i(18517, {	-- Pattern: Chromatic Cloak
+										un(8, i(18509)),	-- Chromatic Cloak
+									})),
+									un(2, i(18418, {	-- Pattern: Cloak of Warding
+										un(8, i(18413)),	-- Cloak of Warding
+									})),
+									un(2, i(18415, {	-- Pattern: Felcloth Gloves
+										un(8, i(18407)),	-- Felcloth Gloves
+									})),
+									un(2, i(18514, {	-- Pattern: Girdle of Insight
+										un(8, i(18504)),	-- Girdle of Insight
+									})),
+									un(7, i(18518, {	-- Pattern: Hide of the Wild
+										un(8, i(18510)),	-- Hide of the Wild
+									})),
+									un(2, i(18416, {	-- Pattern: Inferno Gloves
+										un(8, i(18408)),	-- Inferno Gloves
+									})),
+									un(2, i(18515, {	-- Pattern: Mongoose Boots
+										un(8, i(18506)),	-- Mongoose Boots
+									})),
+									un(2, i(18417, {	-- Pattern: Mooncloth Gloves
+										un(8, i(18409)),	-- Mooncloth Gloves
+									})),
+									un(7, i(18519, {	-- Pattern: Shifting Cloak
+										un(8, i(18511)),	-- Shifting Cloak
+									})),
+									un(2, i(18516, {	-- Pattern: Swift Flight Bracers
+										un(8, i(18508)),	-- Swift Flight Bracers
+									})),
+								}),
+							}),
+							n(-14, {	-- Capital Gardens [West - Elves]
+								n(-17, {	-- Quests (Legacy)
+									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
+										["groups"] = {
+											q(7507),	-- Furor's Compendium
+											q(7508),	-- The Forging of Quel'Serrar
+											q(7509, {	-- The Forging of Quel'Serrar
+												un(34, i(18348)),	-- Quel'Serrar
+											}),
+										},
+										["classes"] = {1,2},
+										["description"] = "Item used to drop from any boss in Dire Maul.",
+									})),
+									qa(7462, { 	-- The Treasure of the Shen'dralar
+										un(34, i(18421)),	-- Backwood Helm 
+										un(34, i(18420)),	-- Bonecrusher 
+										un(34, i(18424)),	-- Sedge Boots 
+									}),
+									qh(7877, { 	-- The Treasure of the Shen'dralar
+										un(34, i(18421)),	-- Backwood Helm 
+										un(34, i(18420)),	-- Bonecrusher 
+										un(34, i(18424)),	-- Sedge Boots 
+									}),
+								}),
+								--n(-16, {	-- Rares (Legacy)
+								--}),
+								--n(  0, {	-- Zone Drop (Legacy)
+								--}),
+							}),
+						},
+						["u"] = 12,
 					}),
 				},
 				["Lvl"] = 31,

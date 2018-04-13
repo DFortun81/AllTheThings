@@ -8,7 +8,19 @@ _.Instances =
 		["groups"] = {
 			inst(279, { 	-- The Culling of Stratholme
 				["groups"] = {
-					d(1, {		-- Normal
+					n(-17, {	-- Quests
+						qg(26527, q(13149)),	-- Dispelling Illusions
+						qg(26527, q(13151, {	-- A Royal Escort
+							["g"] = {
+								i(44396),	-- Gloves of the Time Guardian
+								i(44397),	-- Handwraps of Preserved History
+								i(44398),	-- Grips of Chronological Events
+								i(44399),	-- Gauntlets of The Culling
+							},
+							["sourceQuests"] = { 13149 },	-- Dispelling Illusions
+						})),
+					}),
+					d(  1, {		-- Normal
 						n(0, {		-- Zone Drop
 							["groups"] = {
 								n(27731, { -- Acolyte
@@ -147,7 +159,7 @@ _.Instances =
 							i(37695),	-- Legguards of Nature's Power
 						}))
 					}),
-					d(2, {		-- Heroic
+					d(  2, {		-- Heroic
 						["Lvl"] = 80,
 						["ignoreBonus"] = true,
 						["groups"] = {
@@ -272,7 +284,7 @@ _.Instances =
 								i(37688),	-- Legplates of the Infinite Drakonid
 								i(37105),	-- Treads of Altered History
 							})),
-							n(32273, {	-- Infinite Corruptor
+							n( 32273, {	-- Infinite Corruptor
 								ach(1817, {
 									i(43951),	-- Reins of the Bronze Drake
 								}),

@@ -8,15 +8,56 @@ _.Instances =
 		["groups"] = {
 			inst(239, { 	-- Uldaman
 				["groups"] = {
-					n(-17, {	-- Quests 			
+					n(-17, {	-- Quests
+						qa(27677, {	-- Archaedas, The Ancient Stone Watcher
+							["g"] = {
+							},
+							["sourceQuests"] = { 27672 },	-- The Chamber of Khaz'mul
+						}),
+						qh(27680, {	-- Archaedas, The Ancient Stone Watcher
+							["g"] = {
+							},
+							["sourceQuests"] = { 27679 },	-- The Chamber of Khaz'mul
+						}),
+						qa(27676, {	-- Behind Closed Doors
+							["g"] = {
+							},
+							["qg"] = 46233,	-- Olga Runesworn
+						}),
+						qh(27681, {	-- Behind Closed Doors
+							["g"] = {
+							},
+							["qg"] = 46235,	-- Lidia Sunglow
+						}),
+						qa(27673, {	-- It's What's Inside That Counts
+							["g"] = {
+							},
+							["qg"] = 46247,	-- Kand Sandseeker
+						}),
+						qa(27672, {	-- The Chamber of Khaz'mul
+							["g"] = {
+							},
+							["qg"] = 46234,	-- Lead Prospector Durdin
+						}),
+						qh(27679, {	-- The Chamber of Khaz'mul
+							["g"] = {
+							},
+							["qg"] = 46236,	-- High Examiner Tae'thelan
+						}),
 						o(131474, {	-- The Discs of Norgannon
+							q(2278),	-- The Platinum Discs
 							q(2280, {	-- The Platinum Discs
 								i(65921),	-- Durdin's Hammer
 								i(65947),	-- Platinum Sword
 							}),
 						}),
+						qh(27682, {	-- We Require More Minerals
+							["g"] = {
+							},
+							["qg"] = 46241,	-- Aoren Sunglow
+						}),
 					}),	
-					n(0, {				-- Zone Drop
+					n(  0, {	-- Zone Drop
 						i(9420),	-- Adventurer's Pith Helmet
 						i(9392),	-- Annealed Blade
 						i(9393),	-- Beacon of Hope
@@ -203,20 +244,20 @@ _.Instances =
 						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 					}),
 					n(-40, {	-- Legacy
-					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
-							qa(2240, {	-- The Hidden Chamber
-								un(34, i(9626)),	-- Dwarven Charge
-								un(34, i(9627)),	-- Explorers' League Lodestar
+						["groups"] = {
+							n(-17, {	-- Quests (Legacy)
+								qa(2240, {	-- The Hidden Chamber
+									un(34, i(9626)),	-- Dwarven Charge
+									un(34, i(9627)),	-- Explorers' League Lodestar
+								}),
 							}),
-						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
-					},
-					["u"] = 12,
-				}),
+							--n(-16, {	-- Rares (Legacy)
+							--}),
+							--n(  0, {	-- Zone Drop (Legacy)
+							--}),
+						},
+						["u"] = 12,
+					}),
 				},
 				["Lvl"] = 30,
 				["mapID"] = 692
