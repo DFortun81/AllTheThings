@@ -953,7 +953,14 @@ _.Zones =
 						i(40775),	-- Winged Steed of the Ebon Blade
 					}),
 					n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
+						{
+							["itemID"] = 136801,	-- Divine Tome
+							["recipeID"] = 121183,	-- Contemplation
+						},
 						i(136928),	-- Thaumaturgist's Orb Toy - Priest only
+						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
+						i(19447),	-- Formula: Enchant Bracer - Healing Power
+						i(19442),	-- Formula: Powerful Anti-Venom
 						i(19217, {	-- Pattern: Argent Shoulders
 							i(19059)	-- Argent Shoulders
 						}),
@@ -972,6 +979,7 @@ _.Zones =
 						i(19205, {	-- Plans: Gloves of the Dawn
 							i(19057)	-- Gloves of the Dawn
 						}),
+						i(13482),	-- Recipe: Transmute Air to Fire
 					}),
 					n(28512, {	-- Quartermaster Ozorg
 						i(34652), -- Archerus Knight's Hood
