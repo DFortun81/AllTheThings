@@ -1414,6 +1414,10 @@ _.Zones =
 							i(6242),	-- Blue Linen Robe
 						}),
 					}),
+					nh(8307, {	-- Tarban Hearthgrain <Baker>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					h(n(3482, {	-- Tari'qa <Trade Supplies>
 						i(5488),	-- Recipe: Crispy Lizard Tail
 						i(5486),	-- Recipe: Strider Stew

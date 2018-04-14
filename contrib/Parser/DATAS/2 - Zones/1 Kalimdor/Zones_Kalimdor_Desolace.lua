@@ -1078,6 +1078,12 @@ _.Zones =
 							i(3851),	-- Solid Iron Maul
 						}),
 					})),
+					nh(12033, {	-- Wulan <Cooking Supplies>
+						i(17062),	-- Recipe: Mithril Head Trout
+						i(6369),	-- Recipe: Rockscale Cod
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

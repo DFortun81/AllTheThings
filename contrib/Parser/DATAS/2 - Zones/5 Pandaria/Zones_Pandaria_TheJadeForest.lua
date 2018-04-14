@@ -980,7 +980,11 @@ _.Zones =
 						recipe(125121),	-- Wildfowl Ginseng Soup
 						recipe(124224),	-- Yak Cheese Curds
 					}),
-					nh(56406, {	-- Rivett Clutchpop
+					na(56687, {		-- Metalworker Sashi <Trade Goods>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
+					nh(56406, {		-- Rivett Clutchpop
 						i(81579),	-- Faded Forest Satin Hood
 						i(81580),	-- Faded Forest Hide Helm
 						i(81581),	-- Faded Forest Ringmail Helm
@@ -1075,7 +1079,7 @@ _.Zones =
 						i(81685),	-- Faded Forest Blade
 						i(81686),	-- Faded Forest Axe
 					}),
-					n(58414, { -- San Redscale <Serpent Keeper>
+					n(58414, { 		-- San Redscale <Serpent Keeper>
 						i(89222),	-- Cloud Ring Toy
 						i(85430),	-- Reins of the Azure Cloud Serpent Mount
 						i(85429),	-- Reins of the Golden Cloud Serpent Mount
@@ -1097,7 +1101,7 @@ _.Zones =
 						}),
 						i(89796),	-- Order of the Cloud Serpent Tabard
 					}),
-					na(61598, {	-- Silkweaver Rui <Adventuring Supplies>
+					na(61598, {		-- Silkweaver Rui <Adventuring Supplies>
 						i(81579),	-- Faded Forest Satin Hood
 						i(81580),	-- Faded Forest Hide Helm
 						i(81581),	-- Faded Forest Ringmail Helm
@@ -1192,7 +1196,7 @@ _.Zones =
 						i(81685),	-- Faded Forest Blade
 						i(81686),	-- Faded Forest Axe
 					}),
-					n(56705, {	-- Singegruff <Adventuring Supplies>
+					n(56705, {		-- Singegruff <Adventuring Supplies>
 						i(81579),	-- Faded Forest Satin Hood
 						i(81580),	-- Faded Forest Hide Helm
 						i(81581),	-- Faded Forest Ringmail Helm

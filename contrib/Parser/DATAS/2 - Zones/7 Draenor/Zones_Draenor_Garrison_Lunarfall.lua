@@ -2227,6 +2227,7 @@ _.Zones =
 					}),
 					n(-107, { -- Fishing Hut
 						i(112623, {			-- Pack of Fishing Supplies
+							dr(1.2, i(34834)),	-- Recipe: Captain Rumsey's Lager
 							dr(1.2, i(33820)),	-- Weather-Beaten Fishing Hat
 							dr(0.8, i(44983)),	-- Strand Crawler Pet
 							dr(0.7, i(45991)),	-- Bone Fishing Pole - not moggable

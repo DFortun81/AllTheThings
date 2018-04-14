@@ -594,6 +594,10 @@ _.Zones =
 						},
 						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game."
 					})),
+					nh(26868, {	-- Provisioner Lorkran <General Goods>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					h(n(27730, {	-- Purkom <Venture Coin Vendor>
 						["groups"] = {
 							i(38353),	-- Venture Bay Buccaneer's Cape

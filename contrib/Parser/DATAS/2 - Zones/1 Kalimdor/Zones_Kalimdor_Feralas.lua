@@ -958,6 +958,10 @@ _.Zones =
 							i(7386),	-- Green Whelp Bracers
 						}),
 					})),
+					nh(40474, {	-- Moro Sungrain <Trade Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					a(n(40226, {-- Pratt McGrubben <Leatherworking Supplies>
 						i(15734,{	-- Pattern: Living Shoulders
 							i(15061),	-- Living Shoulders

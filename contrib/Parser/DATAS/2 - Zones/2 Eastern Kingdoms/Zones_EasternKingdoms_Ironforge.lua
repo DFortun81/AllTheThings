@@ -974,7 +974,7 @@ _.Zones =
 					}),
 					n(5161, {	-- Grimnur Stonebrand <Fishing Trainer>
 						ach(5847, {	-- Fish or Cut Bait: Ironforge
-							i(67414, {	-- Bag of Fishing Treasures
+							i(67414, {	-- Bag of Shiny Things
 								dr(1.1, i(44983)),	-- Strand Crawler Pet
 								dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
 								--dr(0.5, i(45991)),	-- Bone Fishing Pole - not moggable

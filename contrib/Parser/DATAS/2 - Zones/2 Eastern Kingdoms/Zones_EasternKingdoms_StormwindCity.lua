@@ -1177,7 +1177,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						ach(5476, {	-- Fish or Cut Bait: Stormwind
-							i(67414, {	-- Bag of Fishing Treasures
+							i(67414, {	-- Bag of Shiny Things
 								dr(1.1, i(44983)),	-- Strand Crawler Pet
 								dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
 								dr(0.5, i(45991)),	-- Bone Fishing Pole - not moggable
@@ -1206,6 +1206,10 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(44606),	-- Toy Train Set Toy
 						i(45057),	-- Wind-Up Train Wrecker Toy
 						i(69896),	-- Yellow Balloon Toy
+					}),
+					n(133411, {	-- Dalia Skyblossom <Cooking Trainer>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					n(52029, {	-- Edlan Halsing <Bloodthirsty Gladiator>
 						i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
@@ -1340,6 +1344,10 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(64876),	-- Bloodthirsty Gladiator's Wyrmhide Legguards
 						i(64877),	-- Bloodthirsty Gladiator's Wyrmhide Robes
 						i(64878),	-- Bloodthirsty Gladiator's Wyrmhide Spaulders					
+					}),
+					n(5483, {	-- Erika Tate <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					n(44245, {	-- Faldren Tillsdale <Valor Quartermaster>
 						i(78704),	-- Spiritwalker's Legguards
@@ -2064,7 +2072,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 								i(133536),	-- Bracers of the Black Dream
 								i(133511),	-- Gurboggle's Gleaming Bauble Toy
 								i(133542),	-- Tosselwrench's Mega-Accurate Simulation Viewfinder Toy
-								i(67414, {	-- Bag of Fishing Treasures
+								i(67414, {	-- Bag of Shiny Things
 									dr(1.1, i(44983)),	-- Strand Crawler Pet
 									dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
 									dr(0.5, i(45991)),	-- Bone Fishing Pole - not moggable

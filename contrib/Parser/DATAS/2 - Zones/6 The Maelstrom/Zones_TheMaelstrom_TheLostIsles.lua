@@ -537,6 +537,12 @@ _.Zones =
 					},
 					["races"] = {9},
 				}),
+				nh(-2, {	-- Vendors
+					n(45286, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
+				}),
 			},
 			["description"] = "|cff66ccffThe Lost Isles are a chain of islands to the south of Azshara that the Bilgewater Cartel goblins reached after their shipwreck. Things get interesting when the orc ship Draka's Fury also crashes. This is a phased area that only leveling goblins can reach.|r",
 			["icon"] = "Interface\\Icons\\achievement_femalegoblinhead",

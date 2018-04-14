@@ -1921,6 +1921,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(25475),	-- Blue Wind Rider Mount
 						i(25476),	-- Green Wind Rider Mount
 					}),
+					n(133261, {	-- Feng Su <Cooking Trainer>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					--[[n(12795, {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
 					}),]]
 					n(50323, {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
@@ -2662,6 +2666,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(62462),	-- Goblin Turbo-Trike Key Mount
 						i(62461),	-- Goblin Trike Key Mount
 					}),
+					n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					n(101759, {	-- Kiatke <Timewalking Vendor>
 						["groups"] = {
 							currency(1166, { -- Timewarped Badge
@@ -2679,7 +2687,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 								i(133536),	-- Bracers of the Black Dream
 								i(133511),	-- Gurboggle's Gleaming Bauble Toy
 								i(133542),	-- Tosselwrench's Mega-Accurate Simulation Viewfinder Toy
-								i(67414, {	-- Bag of Fishing Treasures
+								i(67414, {	-- Bag of Shiny Things
 									dr(1.1, i(44983)),	-- Strand Crawler Pet
 									dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
 									--dr(0.5, i(45991)),	-- Bone Fishing Pole - not moggable
@@ -2859,7 +2867,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					}),
 					n(43239, {	-- Razgar <Master Angler>
 						ach(5477, {	-- Fish or Cut Bait: Orgrimmar
-							i(67414, {	-- Bag of Fishing Treasures
+							i(67414, {	-- Bag of Shiny Things
 								dr(1.1, i(44983)),	-- Strand Crawler
 								dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
 							}),
@@ -3533,6 +3541,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(23468),	-- High Warlord's Tome of Destruction
 						i(23469),	-- High Warlord's Tome of Mending
 					}),
+					n(46708, {	-- Suja <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					n(3356, {	-- Sumi <Blacksmithing Supplies>
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							i(3849),	-- Hardened Iron Shortsword
@@ -3888,6 +3900,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(10360),	-- Black Kingsnake
 						i(10361),	-- Brown Snake
 						i(10392),	-- Crimson Snake
+					}),
+					n(3400, {	-- Xen'to <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
 						i(12162, {	-- Plans: Hardened Iron Shortsword

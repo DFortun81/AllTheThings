@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(862, { 	-- Pandaria
-n(-3, { 	-- Holidays
+		n(-3, { 	-- Holidays
 --[[				
 				n(-47, {     -- Lunar Festival
 					["groups"] = {
@@ -421,6 +421,10 @@ n(-3, { 	-- Holidays
 --]]					
 				}),
 				n(-2, {	-- Vendors
+					nh(64067, {	-- Barleyflower <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					nh(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor>
 						i(99667, {	-- Gauntlets of the Cursed Protector
 							i(99064),	-- Gauntlets of Saven Sacred Seals
@@ -1210,6 +1214,10 @@ n(-3, { 	-- Holidays
 						i(99664),	-- Shoulderguards of the Stattered Vale
 						i(99665),	-- Headguard of Winged Triumph
 						i(99666),	-- Greaves of Winged Triumph
+					}),
+					nh(64126, {	-- Stephen Wong <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					nh(74019, {	-- Tu'aho Pathcutter <Mythic Vendor>
 						i(99717, {	-- Shoulders of the Cursed Vanquisher

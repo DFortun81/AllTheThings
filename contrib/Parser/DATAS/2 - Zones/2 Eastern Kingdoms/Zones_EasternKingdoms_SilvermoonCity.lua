@@ -504,6 +504,10 @@ _.Zones =
 							i(67274),	-- Enchanted Lantern Pet
 						}),
 					}),
+					n(16677, {	-- Quelis <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					n(16782, {	-- Yatheon <Engineering Supplies>
 						i(23799, {	-- Schematic: Adamantite Rifle
 							i(23746)	-- Adamantite Rifle

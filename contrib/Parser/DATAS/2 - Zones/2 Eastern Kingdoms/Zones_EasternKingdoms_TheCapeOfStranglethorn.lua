@@ -812,6 +812,11 @@ _.Zones =
 						i(4778),	-- Heavy Spiked Mace
 						i(4777),	-- Ironwood Maul
 					}),
+					n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+						i(16767),	-- Recipe: Undermine Clam Chowder
+					}),
 					n(2663, {	-- Narkk <Pirate Supplies>
 						i(10728, {	-- Pattern: Black Swashbuckler's Shirt
 							i(4336),	-- Black Swashbuckler's Shirt

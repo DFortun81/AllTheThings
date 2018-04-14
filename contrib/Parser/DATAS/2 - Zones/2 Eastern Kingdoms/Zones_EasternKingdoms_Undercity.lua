@@ -309,7 +309,7 @@ _.Zones =
 					}),
 					n(4573, {	-- Armand Cromwell <Fishing Trainer>
 						ach(5850, {	-- Fish or Cut Bait: Undercity
-							i(67414, {	-- Bag of Fishing Treasures
+							i(67414, {	-- Bag of Shiny Things
 								dr(1.1, i(44983)),	-- Strand Crawler
 								dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
 								dr(0.5, i(45991)),	-- Bone Fishing Pole

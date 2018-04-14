@@ -1070,6 +1070,10 @@ _.Zones =
 					}), 
 				}),
 				n( -2, {	-- Vendors
+					na(4894, {	-- Craig Nollward <Cooking Trainer>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					h(n(6567, {	-- Ghok'kah <Tailoring Supplies>
 						i(4355, {	-- Pattern: Icy Cloak
 							i(4327),	-- Icy Cloak
