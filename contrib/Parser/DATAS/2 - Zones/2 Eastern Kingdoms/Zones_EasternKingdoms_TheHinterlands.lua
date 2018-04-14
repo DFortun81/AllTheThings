@@ -1117,6 +1117,9 @@ _.Zones =
 							i(8192),	-- Nightscape Shoulders
 						}),
 					})),
+					na(4782, {	-- Truk Wildbeard <Bartender>
+						i(18046),	-- Recipe: Tender Wolf Steak
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
