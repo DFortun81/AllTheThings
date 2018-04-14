@@ -135,11 +135,26 @@ _.Zones =
 					}),
 					
 					
+					q( 10436, {	-- All Clear!
+						["g"] = {
+						},
+						["qg"] = 20913,	-- Tashar
+						["sourceQuests"] = { 10430 },	-- Testing the Prototype
+					}),
+					
+					
 					q( 10268, {	-- An Audience with the Prince
 						["g"] = {
 						},
 						["qg"] = 20066,	-- Gahruj
 						["sourceQuests"] = { 10267 },	-- Rightful Repossession
+					}),
+					
+					
+					q( 10270, {	-- A Not-So-Modest Proposal
+						["g"] = {
+						},
+						["qg"] = 20071,	-- Wind Trader Marid
 					}),
 					
 					
@@ -153,12 +168,31 @@ _.Zones =
 					}),
 					
 					
+					q( 10249, {	-- Back to the Chief! (awarded "Protect Area 52" criteria)
+						["g"] = {
+							i( 30019),	-- Area 52 Defender's Pants
+							i( 30016),	-- X-52 Technician's Helm
+							i( 30014),	-- X-52 Pilot's Leggings
+							i(134021),	-- X-52 Rocket Helmet (TOY!)
+						},
+						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
+						["sourceQuests"] = { 10248 },	-- You, Robot
+					}),
+					
+					
 					i( 29233, {	-- Dathric's Blade
 						q( 10182, {	-- Battle-Mage Dathric
 							["g"] = {
 							},
 							["qg"] = 19543,	-- Battle-Mage Dathric
 						}),
+					}),
+					
+					
+					q( 10924, {	-- Bloody Imp-ossible!
+						["g"] = {
+						},
+						["qg"] = 22479,	-- Sab'aoth
 					}),
 					
 					
@@ -189,6 +223,13 @@ _.Zones =
 					}),
 					
 					
+					q( 10422, {	-- Captain Tyralius
+						["g"] = {
+						},
+						["qg"] = 20450,	-- Flesh Handler Viridius
+					}),
+					
+					
 					q( 10319, {	-- Capturing the Phylactery
 						["g"] = {
 						},
@@ -206,11 +247,37 @@ _.Zones =
 					}),
 					
 					
+					q( 10427, {	-- Creatures of the Eco-Domes
+						["g"] = {
+						},
+						["qg"] = 20871,	-- Aurine Moonblaze
+						["sourceQuests"] = { 10426 },	-- Flora of the Eco-Domes
+					}),
+					
+					
 					q( 10174, {	-- Curse of the Violet Tower
 						["g"] = {
 						},
 						["qg"] = 19217,	-- Ravandwyr
 						["sourceQuests"] = { 10300 },	-- Rebuilding the Staff
+					}),
+					
+					
+					q( 10317, {	-- Dealing with the Foreman
+						["g"] = {
+						},
+						["qg"] = 20112,	-- Wind Trader Tuluman
+					}),
+					
+					
+					q( 10318, {	-- Dealing with the Overmaster
+						["g"] = {
+							i(30003),	-- Gloves of the Nether-Stalker
+							i(30004),	-- Landing Boots
+							i(30005),	-- Overmaster's Shoulders
+						},
+						["qg"] = 20393,	-- Foreman Sundown
+						["sourceQuests"] = { 10317 },	-- Dealing with the Foreman
 					}),
 					
 					
@@ -242,6 +309,14 @@ _.Zones =
 						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10319 },	-- Capturing the Phylactery
+					}),
+					
+					
+					q( 10424, {	-- Diagnosis: Critical
+						["g"] = {
+						},
+						["qg"] = 20811,	-- Ghabar
+						["sourceQuests"] = { 10423 },	-- To the Stormspire
 					}),
 					
 					
@@ -282,6 +357,13 @@ _.Zones =
 					}),
 					
 					
+					q( 10411, {	-- Electro-Shock Goodness!
+						["g"] = {
+						},
+						["qg"] = 20449,	-- Researcher Navuud
+					}),
+					
+					
 					q( 10226, {	-- Elemental Power Extraction
 						["g"] = {
 							i(30264),	-- Area 52 Engineering Gloves
@@ -302,6 +384,13 @@ _.Zones =
 					}),
 					
 					
+					q( 10855, {	-- Fel Reavers, No Thanks!
+						["g"] = {
+						},
+						["qg"] = 20471,	-- Nether-Stalker Nauthis
+					}),
+					
+					
 					q( 10256, {	-- Finding the Keymaster
 						["g"] = {
 						},
@@ -310,11 +399,35 @@ _.Zones =
 					}),
 					
 					
+					q( 10426, {	-- Flora of the Eco-Domes
+						["g"] = {
+						},
+						["qg"] = 20871,	-- Aurine Moonblaze
+					}),
+					
+					
+					q( 10276, {	-- Full Triangle
+						["g"] = {
+						},
+						["qg"] = 20112,	-- Wind Trader Tuluman
+						["sourceQuests"] = { 10275 },	-- Triangulation Point Two
+					}),
+					
+					
 					q( 10333, {	-- Help Mama Wheeler
 						["g"] = {
 						},
 						["qg"] = 19645,	-- Papa Wheeler
 						["sourceQuests"] = { 10206 },	-- Pick Your Part
+					}),
+					
+					
+					q( 10293, {	-- Hitting the Motherlode
+						["g"] = {
+							i(29813),	-- Cloak of Woven Energy
+						},
+						["qg"] = 20067,	-- Zuben Elgenubi
+						["sourceQuests"] = { 10290 },	-- In Search of Farahlite
 					}),
 					
 					
@@ -330,6 +443,13 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 20463,	-- Apprentice Andrethan
+					}),
+					
+					
+					q( 10290, {	-- In Search of Farahlite
+						["g"] = {
+						},
+						["qg"] = 20067,	-- Zuben Elgenubi
 					}),
 					
 					
@@ -402,6 +522,13 @@ _.Zones =
 					}),
 					
 					
+					q( 10315, {	-- Neutralizing the Nethermancers
+						["g"] = {
+						},
+						["qg"] = 20341,	-- Nether-Stalker Oazul
+					}),
+					
+					
 					q( 10348, {	-- New Opportunities
 						["g"] = {
 						},
@@ -450,6 +577,13 @@ _.Zones =
 					}),
 					
 					
+					q( 10437, {	-- Recipe for Destruction
+						["g"] = {
+						},
+						["qg"] = 20907,	-- Professor Dabiri
+					}),
+					
+					
 					q( 10225, {	-- Report to Engineering
 						["g"] = {
 						},
@@ -463,6 +597,18 @@ _.Zones =
 						},
 						["qg"] = 19880,	-- Nether-Stalker Khay-ji
 						["sourceQuests"] = { 10205 },	-- Warp-Raider Nesaad
+					}),
+					
+					
+					q( 10435, {	-- Retrieving the Goods
+						["g"] = {
+							i(30284),	-- Audi's Embroidered Boots
+							i(30402),	-- Field Agent's Bracers
+							i(30285),	-- B.O.O.M. Operative's Belt
+							i(30286),	-- Otherworldly Pauldrons
+						},
+						["qg"] = 20205,	-- Audi the Needle
+						["sourceQuests"] = { 10434 },	-- The Dynamic Duo
 					}),
 					
 					
@@ -510,11 +656,60 @@ _.Zones =
 					}),
 					
 					
+					q( 10280, {	-- Special Delivery to Shattrath City
+						["g"] = {
+						},
+						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
+						["sourceQuests"] = { 10276 },	-- Full Triangle
+					}),
+					
+					
+					q( 10440, {	-- Success!
+						["g"] = {
+							i(30290),	-- Leggings of Concentrated Power
+							i(30291),	-- Nexus-Guard's Pauldrons
+							i(30520),	-- Gold-Trimmed Cuffs
+						},
+						["qg"] = 20913,	-- Tashar
+						["sourceQuests"] = { 10436 },	-- All Clear!
+					}),
+					
+					
 					q( 10209, {	-- Summoner Kanthin's Prize
 						["g"] = {
 						},
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10301 },	-- Unlocking the Compendium
+					}),
+					
+					
+					q( 10335, {	-- Surveying the Ruins
+						["g"] = {
+							i(30255),	-- Chestguard of the Stormspire
+							i(30253),	-- Ethereal Gloves
+							i(30254),	-- Zephyrion's Belt
+						},
+						["qg"] = 20470,	-- Zephyrion
+					}),
+					
+					
+					q( 10857, {	-- Teleport This!
+						["g"] = {
+							i(31701),	-- Saboteur's Axe
+							i(31700),	-- Runed Silver Staff
+							i(31703),	-- Nether-Stalker's Blade
+							i(31699),	-- Imbued Draenethyst Crystal
+						},
+						["qg"] = 20471,	-- Nether-Stalker Nauthis
+						["sourceQuests"] = { 10856 },	-- The Best Defense
+					}),
+					
+					
+					q( 10430, {	-- Testing the Prototype
+						["g"] = {
+						},
+						["qg"] = 20811,	-- Ghabar
+						["sourceQuests"] = { 10424 },	-- Diagnosis: Critical
 					}),
 					
 					
@@ -544,6 +739,36 @@ _.Zones =
 						["qg"] = 19217,	-- Ravandwyr
 					}),
 					
+				
+					q( 10856, {	-- The Best Defense
+						["g"] = {
+						},
+						["qg"] = 20471,	-- Nether-Stalker Nauthis
+						["sourceQuests"] = { 10855 },	-- Fel Reavers, No Thanks!
+					}),
+				
+				
+					q( 10434, {	-- The Dynamic Duo
+						["g"] = {
+						},
+						["qg"] = 20921,	-- Shauly Pore
+						["sourceQuests"] = { 10433 },	-- Keeping Up Appearances
+					}),
+				
+				
+					q( 10339, {	-- The Ethereum
+						["g"] = {
+						},
+						["qg"] = 20448,	-- Commander Ameer
+					}),
+				
+				
+					q( 10336, {	-- The Minions of Culuthas
+						["g"] = {
+						},
+						["qg"] = 20471,	-- Nether-Stalker Nauthis
+					}),
+				
 				
 					q( 10188, {	-- The Sigil of Krasus
 						["g"] = {
@@ -581,6 +806,30 @@ _.Zones =
 					}),
 				
 				
+					q( 10423, {	-- To the Stormspire
+						["g"] = {
+						},
+						["qg"] = 20810,	-- Mehrdad
+						["sourceQuests"] = { 10418 },	-- Deal With the Saboteurs
+					}),
+				
+				
+					q( 10269, {	-- Triangulation Point One
+						["g"] = {
+						},
+						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
+						["sourceQuests"] = { 10268 },	-- An Audience With the Prince
+					}),
+				
+				
+					q( 10275, {	-- Triangulation Point Two
+						["g"] = {
+						},
+						["qg"] = 20092,	-- Dealer Hazzin
+						["sourceQuests"] = { 10269 },	-- Triangulation Point One
+					}),
+				
+				
 					q( 10301, {	-- Unlocking the Compendium
 						["g"] = {
 						},
@@ -608,6 +857,14 @@ _.Zones =
 					}),
 				
 				
+					q( 10429, {	-- When Nature Goes Too Far
+						["g"] = {
+						},
+						["qg"] = 20871,	-- Aurine Moonblaze
+						["sourceQuests"] = { 10427 },	-- Creatures of the Eco-Domes
+					}),
+				
+				
 					q( 10337, {	-- When the Cows Come Home
 						["g"] = {
 							i(29804),	-- Wrangler's Boots
@@ -631,6 +888,15 @@ _.Zones =
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["breadcrumbQuestID"] = { 39201 },	-- Warchief's Command: Netherstorm!
 					}),
+					
+					
+					q( 10248, {	-- You, Robot
+						["g"] = {
+						},
+						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
+						["sourceQuests"] = { 10247 },	-- Doctor Vomisa, Ph.T.
+					}),
+					
 				
 				
 				
@@ -661,7 +927,6 @@ _.Zones =
 					q( 10508),	-- A Gift for Voren'thal
 					q( 10970),	-- A Mission of Mercy
 					qa(11042),	-- A Mystifying Vision
-					q( 10270),	-- A Not-So-Modest Proposal
 					q( 10272),	-- A Promising Start
 					qh(11037),	-- A Strange Vision
 					q( 10973),	-- A Thousand Worlds
@@ -671,7 +936,6 @@ _.Zones =
 						i(30381),
 						i(30380),
 					}),
-					q( 10436),	-- All Clear!
 					q( 10353, {	-- Arconus the Insatiable
 						i(30329),
 						i(30328),
@@ -683,28 +947,13 @@ _.Zones =
 					q( 10264),	-- Assisting the Consortium
 					q( 10246),	-- Attack on Manaforge Coruu
 					q( 10245),	-- B'naar Console Transcription
-					q( 10249, {	-- Back to the Chief!
-						i( 30019),
-						i( 30016),
-						i( 30014),
-						i(134021),	-- TOY!
-					}),
 					q( 10652),	-- Behind Enemy Lines
 					q( 10204),	-- Bloodgem Crystals
-					q( 10924),	-- Bloody Imp-ossible!
 					q( 10509),	-- Bound for Glory
-					q( 10422),	-- Captain Tyralius
 					q( 10306),	-- Conjurer Luminrath
 					qa(11356),	-- Costumed Orphan Matron
-					q( 10427),	-- Creatures of the Eco-Domes
 					q( 11481),	-- Crisis at the Sunwell
 					q( 10432),	-- Damning Evidence
-					q( 10317),	-- Dealing with the Foreman
-					q( 10318, {	-- Dealing with the Overmaster
-						i(30003),
-						i(30004),
-						i(30005),
-					}),
 					q( 10409, {	-- Deathblow to the Legion - Aldor
 						i(30368),
 						i(30369),
@@ -717,14 +966,12 @@ _.Zones =
 						i(30336),
 						i(30518),
 					}),
-					q( 10424),	-- Diagnosis: Critical
 					q( 10439, {	-- Dimensuis the All-Devouring
 						i(30297),
 						i(30299),
 						i(30298),
 					}),
 					q( 10241),	-- Distraction at Manaforge B'naar
-					q( 10411),	-- Electro-Shock Goodness!
 					q( 10425, {	-- Escape from the Staging Grounds
 						i(30331),
 						i(30332),
@@ -734,17 +981,10 @@ _.Zones =
 					q( 10384),	-- Ethereum Data
 					q( 10972),	-- Ethereum Prisoner I.D. Catalogue
 					q( 10971),	-- Ethereum Secrets
-					q( 10855),	-- Fel Reavers, No Thanks!
-					q( 10426),	-- Flora of the Eco-Domes
 					q( 10281),	-- Formal Introductions
-					q( 10276),	-- Full Triangle
 					q( 10271),	-- Getting Down to Business
 					qa(39202),	-- Hero's Call: Netherstorm
 					q( 10193),	-- High Value Targets
-					q( 10293, {	-- Hitting the Motherlode
-						i(29813),
-					}),
-					q( 10290),	-- In Search of Farahlite
 					q( 10198, {	-- Information Gathering - Scryer
 						i(30397),
 						i(30383),
@@ -772,7 +1012,6 @@ _.Zones =
 					q( 10654),	-- More Marks of Sargeras
 					q( 10243),	-- Naaru Technology
 					q( 10850),	-- Nether Gas In a Fel Fire Engine
-					q( 10315),	-- Neutralizing the Nethermancers
 					q( 10408, {	-- Nexus-King Salhadaar
 						i(30011),
 						i(30012),
@@ -786,14 +1025,7 @@ _.Zones =
 					q( 10431),	-- Outside Assistance
 					qa(11040),	-- Parts for the Rocket-Chief
 					q( 10385),	-- Potential for Brain Damage = High
-					q( 10437),	-- Recipe for Destruction
 					q( 11039),	-- Report to Spymaster Thalodien
-					q( 10435, {	-- Retrieving the Goods
-						i(30284),
-						i(30402),
-						i(30285),
-						i(30286),
-					}),
 					q( 10200),	-- Return to Thalodien
 					q( 10405),	-- S-A-B-O-T-A-G-E
 					q( 10274, {	-- Securing the Celestial Ridge
@@ -814,31 +1046,10 @@ _.Zones =
 					q( 10327),	-- Single Mark of Kil'jaeden
 					q( 10655),	-- Single Mark of Sargeras
 					q( 10407),	-- Socrethar's Shadow
-					q( 10280),	-- Special Delivery to Shattrath City
 					q( 10974),	-- Stasis Chambers of Bash'ir
 					q( 10194),	-- Stealth Flight
-					q( 10440, {	-- Success!
-						i(30290),
-						i(30291),
-						i(30520),
-					}),
 					q( 11877),	-- Sunfury Attack Plans
 					q( 10328),	-- Sunfury Briefings
-					q( 10335, {	-- Surveying the Ruins
-						i(30255),
-						i(30253),
-						i(30254),
-					}),
-					q( 10857, {	-- Teleport This!
-						i(31701),
-						i(31700),
-						i(31703),
-						i(31699),
-					}),
-					q( 10430),	-- Testing the Prototype
-					q( 10856),	-- The Best Defense
-					q( 10434),	-- The Dynamic Duo
-					q( 10339),	-- The Ethereum
 					q( 10345, {	-- The Flesh Lies...
 						i(30352),
 						i(30341),
@@ -849,11 +1060,7 @@ _.Zones =
 						i(30338),
 					}),
 					qa(11970),	-- The Master of Summer Lore
-					q( 10336),	-- The Minions of Culuthas
 					qh(11971),	-- The Spinner of Summer Tales
-					q( 10423),	-- To the Stormspire
-					q( 10269),	-- Triangulation Point One
-					q( 10275),	-- Triangulation Point Two
 					q( 10273),	-- Troublesome Distractions
 					q( 10507, {	-- Turning Point - Scryer
 						i(30375),
@@ -863,8 +1070,6 @@ _.Zones =
 						i(30859),
 					}),
 					qh(39201),	-- Warchief's Command: Netherstorm
-					q( 10429),	-- When Nature Goes Too Far
-					q( 10248),	-- You, Robot
 
 
 -- DUNGEON QUESTS
