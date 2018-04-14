@@ -3563,8 +3563,9 @@ app.BaseRecipe = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			if GetDataSubMember("CollectedSpells", t.spellID) then return true; end
+			if GetTempDataSubMember("CollectedSpells", t.spellID) then return true; end
 			if C_TradeSkillUI.GetRecipeInfo(t.spellID, spellRecipeInfo) and spellRecipeInfo.learned then
+				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return true;
 			end
@@ -6248,6 +6249,15 @@ app.events.VARIABLES_LOADED = function()
 	if GetDataMember("ItemDB") then SetDataMember("ItemDB", nil); end
 	SetTempDataMember("Missing", {});
 	
+	-- Cache your character's profession data.
+	local recipes = GetDataMember("CollectedSpellsPerCharacter", {});
+	local myRecipes = GetTempDataMember("CollectedSpells", recipes[app.Me]);
+	if not myRecipes then
+		myRecipes = {};
+		recipes[app.Me] = myRecipes;
+		SetTempDataMember("CollectedSpells", myRecipes);
+	end
+	
 	-- Register for Dynamic Events and Assign Filters
 	if GetDataMember("IgnoreAllFilters", false) then
 		app.GroupFilter = app.NoFilter;
@@ -6528,10 +6538,13 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 				for i,group in ipairs(skillCache) do
 					if group.spellID and group.f == 200 then
 						-- This is a recipe, cache the learned state.
-						if not GetDataSubMember("CollectedSpells", group.spellID) then
+						if not GetTempDataMember("CollectedSpells", group.spellID) then
 							if C_TradeSkillUI.GetRecipeInfo(group.spellID, spellRecipeInfo) and spellRecipeInfo.learned then
-								SetDataSubMember("CollectedSpells", group.spellID, 1);
-								learned = learned + 1;
+								SetTempDataMember("CollectedSpells", group.spellID, 1);
+								if not GetDataSubMember("CollectedSpells", group.spellID) then
+									SetDataSubMember("CollectedSpells", group.spellID, 1);
+									learned = learned + 1;
+								end
 							end
 						end
 					end

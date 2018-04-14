@@ -522,6 +522,9 @@ _.Zones =
 				}),
 				n( -2, {	-- Vendors
 					n(10856, { -- Argent Quartermaster Hasana <The Argent Dawn>
+						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
+						i(19447),	-- Formula: Enchant Bracer - Healing Power
+						i(19442),	-- Formula: Powerful Anti-Venom
 						i(19217, {	-- Pattern: Argent Shoulders
 							i(19059)	-- Argent Shoulders
 						}),
@@ -540,6 +543,7 @@ _.Zones =
 						i(19205, {	-- Plans: Gloves of the Dawn
 							i(19057)	-- Gloves of the Dawn
 						}),
+						i(13482),	-- Recipe: Transmute Air to Fire
 					}),
 					nh(3522, { -- Constance Brisboise <Apprentice Clothier>
 						i(6270, {	-- Pattern: Blue Linen Vest
