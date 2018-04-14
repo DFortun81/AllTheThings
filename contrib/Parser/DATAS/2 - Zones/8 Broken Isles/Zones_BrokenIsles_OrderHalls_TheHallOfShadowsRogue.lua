@@ -24,60 +24,6 @@ _.Zones =
 								["description"] = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r"
 							}),
 						}),
-						spell(921, { 	-- Pickpocketing
-							["groups"] = {	
-								n(-161, { 	-- Toys
-									i(36863, { -- Decahedral Dwarven Dice
-										["groups"] = {
-										},
-										["description"] = "Can be pickpocketed from Northrend humanoids.",
-									}),
-									i(63269, { -- Loaded Gnomish Dice
-										["groups"] = {
-										},
-										["description"] = "Can be pickpocketed from Cataclysm humanoids.",
-									}),
-									i(36862, { -- Worn Troll Dice
-										["groups"] = {
-										},
-										["description"] = "Can be pickpocketed from Northrend humanoids.",
-									}),
-								}),
-								n(-165, { 	-- Junkboxes
-									["groups"] = {
-										i(16882, { 	-- Battered Junkbox
-											i(5756), 	-- Sliverblade
-											i(4446), 	-- Blackvenom Blade
-										}),
-										i(16884, { 	-- Sturdy Junkbox
-											i(2164), 	-- Gut Ripper
-										}),
-										i(16885, { 	-- Heavy Junkbox
-											i(2163),	-- Shadowblade
-											i(1728),	-- Teebu's Blazing Longsword
-											i(14555),	-- Alcor's Sunrazor
-										}),
-										i(29569, { 	-- Strong Junkbox
-											i(31331),	-- The Night Blade
-										}),
-										i(43575, { 	-- Reinforced Junkbox
-											i(43613),	-- The Dusk Blade
-											i(43611),	-- Krol Cleaver
-										}),
-										i(63349, { 	-- Flame-Scarred Junkbox
-											i(68163),	-- The Twilight Blade
-											i(68161),	-- Krol Decapitator
-										}),
-										i(88165, { 	-- Vine-Cracked Junkbox
-											i(88149),	-- The Gloaming Blade
-											i(88150),	-- Krol Scimitar
-										}),
-									},
-									["icon"] = "Interface\\Icons\\inv_box_01",
-									["description"] = "These items have a small chance of dropping from the junkboxes.",
-								}),
-							},
-						}),						
 						n(-17, { -- Quests
 							qc4(qg(101513, q(45571))),	-- A Bit of Espionage 
 							qc4(qg(101513, q(43958))),	-- A Body of Evidence 
