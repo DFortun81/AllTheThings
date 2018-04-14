@@ -797,6 +797,17 @@ _.Zones =
 							i(3849),	-- Hardened Iron Shortsword
 						}),
 					}),
+					n(2664, {	-- Kelsey Yance <Cook>
+						i(13940),	-- Recipe: Cooked Glossy Mightfish
+						i(13941),	-- Recipe: Filet of Redgill
+						i(6039),	-- Recipe: Giant Clam Scorcho
+						i(13943),	-- Recipe: Hot Smoked Bass
+						i(13948),	-- Recipe: Mightfish Steak
+						i(17062),	-- Recipe: Mithril Head Trout
+						i(6369),	-- Recipe: Rockscale Cod
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					n(2840, {	-- Kizz Bluntstrike <Macecrafter>
 						i(4778),	-- Heavy Spiked Mace
 						i(4777),	-- Ironwood Maul

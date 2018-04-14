@@ -261,7 +261,11 @@ _.Zones =
 					})),
 --[[
 					qg(43738, qa(26719)),	-- Delivery to Master Harris
-					qg(272, qa(26623)),	-- Dusky Crab Cakes
+]]--
+					qg(272, qa(26623, {	-- Dusky Crab Cakes
+						i(3683),	-- Recipe: Gooey Spider Cake
+					})),
+--[[
 					qg(100323, q(40834, {	-- Following the Curse
 						["groups"] = {
 						},

@@ -1139,12 +1139,10 @@ _.Zones =
 						}),
 					})),
 					h(n(2821, {	-- Keena <Trade Goods>
-						i(21942, {	-- Design: Ruby Crown of Restoration
-							i(20969),	-- Ruby Crown of Restoration
-						}),
-						i(5973, {	-- Pattern: Barbaric Leggings
-							i(5963),	-- Barbaric Leggings
-						}),
+						i(21942),	-- Design: Ruby Crown of Restoration
+						i(5973),	-- Pattern: Barbaric Leggings
+						i(3682),	-- Recipe: Curiously Tasty Omelet
+						i(12228),	-- Recipe: Roast Raptor
 					})),
 					h(n(9555, {	-- Mu'uta <Bowyer>
 						i(11305),	-- Dense Shortbow

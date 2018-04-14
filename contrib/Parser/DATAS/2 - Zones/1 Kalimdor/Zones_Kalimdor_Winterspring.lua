@@ -901,6 +901,9 @@ _.Zones =
 							i(12797),	-- Frostguard
 						}),
 					}),
+					n(11187, {	-- Himmik <Food & Drink>
+						i(16110),	-- Recipe: Monster Omelet
+					}),
 					n(52830, {	-- Michelle De Rum <Pet Collector>
 						i(69239),	-- Winterspring Cub
 					}),

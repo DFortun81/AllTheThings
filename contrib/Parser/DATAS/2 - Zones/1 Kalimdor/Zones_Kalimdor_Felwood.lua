@@ -864,6 +864,9 @@ _.Zones =
 						i(16768),	-- Furbolg Medicine Pouch
 						i(16769),	-- Furbolg Medicine Totem
 					}),
+					na(2803, {	-- Malygen <General Goods>
+						i(16110),	-- Recipe: Monster Omelet
+					}),
 					n(11557, {	-- Meilosh
 						i(66888),	-- Stave of Fur and Claw Toy
 						i(19204, {	-- Plans: Heavy Timbermaw Boots

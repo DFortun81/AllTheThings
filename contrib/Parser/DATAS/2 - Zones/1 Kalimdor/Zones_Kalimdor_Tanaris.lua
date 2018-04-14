@@ -192,8 +192,14 @@ _.Zones =
 					qg(19936, q(10462)),	-- Champion's Pledge
 					qg(19935, q(10466)),	-- Champion's Vow (add'l QG 19936)
 					qg(38706, q(24933)),	-- Chicken of the Desert
-					qp185(qg(40589, q(13825))),	-- Clamlette Surprise
-					qp185(qg(40589, q(6610))),	-- Clamlette Surprise
+--]]
+					qg(40589, q(13825, {	-- Clamlette Surprise
+						recipe(64054),	-- Clamlette Magnifique
+					})),
+					qg(40589, q(6610, {		-- Clamlette Surprise
+						recipe(64054),	-- Clamlette Magnifique
+					})),
+--[[
 					qg(38706, q(24932)),	-- Cutting Losses
 					qg(38927, q(25026)),	-- Darkest Mojo
 --]]					

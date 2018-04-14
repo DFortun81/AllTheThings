@@ -1064,10 +1064,14 @@ _.Zones =
 						i(12250),	-- Midnight Axe
 						i(12249),	-- Merciless Axe
 					})),
+					a(n(8150, {	-- Janet Hommers <Food & Drink>
+						i(12240),	-- Recipe: Heavy Kodo Stew
+						i(12233),	-- Recipe: Mystery Stew
+					})),
 					h(n(9636, {	-- Kireena <Trade Goods>
-						i(7114, {	-- Pattern: Azure Silk Gloves
-							i(4319),	-- Azure Silk Gloves
-						}),
+						i(7114),	-- Pattern: Azure Silk Gloves
+						i(12232),	-- Recipe: Carrion Surprise
+						i(12240),	-- Recipe: Heavy Kodo Stew
 					})),
 					h(n(8878, {	-- Muuran <Superior Macecrafter>
 						i(10858, {	-- Plans: Solid Iron Maul
