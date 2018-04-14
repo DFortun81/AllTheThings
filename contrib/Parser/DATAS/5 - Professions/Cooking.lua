@@ -26,6 +26,10 @@ profession(185, 2550, { -- Cooking
 		},
 	}),
 	n(-26, {	-- Drop
+		desc(i(43509), "Can drop from any Northrend mob."),	-- Recipe: Bad Clams
+		desc(i(43510), "Can drop from any Northrend mob."),	-- Recipe: Haunted Herring
+		desc(i(43508), "Can drop from any Northrend mob."),	-- Recipe: Last Week's Mammoth
+		desc(i(43507), "Can drop from any Northrend mob."),	-- Recipe: Tasty Cupcake
 		i(111387, {		-- The Joy of Draenor Cooking
 			["collectible"] = false,
 			["description"] = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
@@ -35,7 +39,6 @@ profession(185, 2550, { -- Cooking
 			},
 		}),
 	}),
-	
 	n(101846, {	-- Nomi
 		["description"] = "Takes various meat, fish, and animal byproducts for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",
 		["groups"] = {
@@ -363,13 +366,9 @@ profession(185, 2550, { -- Cooking
 		
 		-- Wrath
 		recipe(57421),	-- Northern Stew
-		-- i(43509),	-- Recipe: Bad Clams, TODO: https://www.wowhead.com/item=43509/recipe-bad-clams
 		recipe(58523),	-- Bad Clams
-		-- i(43510),	-- Recipe: Haunted Herring, TODO: https://www.wowhead.com/item=43510/recipe-haunted-herring
 		recipe(58525),	-- Haunted Herring
-		-- i(43508),	-- Recipe: Last Week's Mammoth, TODO: https://www.wowhead.com/item=43508/recipe-last-weeks-mammoth
 		recipe(58521),	-- Last Week's Mammoth
-		-- i(43507),	-- Recipe: Tasty Cupcake, TODO: https://www.wowhead.com/item=43507/recipe-tasty-cupcake
 		recipe(58512),	-- Tasty Cupcake
 		recipe(45561),	-- Grilled Bonescale
 		recipe(45562),	-- Sauteed Goby
@@ -447,9 +446,7 @@ profession(185, 2550, { -- Cooking
 		recipe(88045),	-- Starfire Espresso
 		recipe(88046),	-- Tender Baked Turtle
 		recipe(88047),	-- Whitecrest Gumbo
-		-- i(62799),	-- Recipe: Broiled Dragon Feast, TODO: https://www.wowhead.com/item=62799/recipe-broiled-dragon-feast
 		recipe(88011),	-- Broiled Dragon Feast
-		-- i(62800),	-- Recipe: Seafood Magnifique Feast, TODO: https://www.wowhead.com/item=62800/recipe-seafood-magnifique-feast
 		recipe(88036),	-- Seafood Magnifique Feast
 		
 		-- Mists
