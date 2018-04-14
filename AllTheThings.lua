@@ -6246,6 +6246,9 @@ app.events.VARIABLES_LOADED = function()
 	if GetDataMember("Items") then SetDataMember("Items", nil); end
 	if GetDataMember("ItemDB") then SetDataMember("ItemDB", nil); end
 	SetTempDataMember("Missing", {});
+	GetDataMember("CollectedSpells", {});
+	GetDataMember("SeasonalFilters", {});
+	GetDataMember("UnobtainableItemFilters", {});
 	
 	-- Cache your character's profession data.
 	local recipes = GetDataMember("CollectedSpellsPerCharacter", {});
@@ -6317,12 +6320,12 @@ app.events.VARIABLES_LOADED = function()
 	else
 		app.RaceRequirementFilter = app.NoFilter;
 	end
-	if GetDataMember("FilterUnobtainableItems", false) then
+	if GetDataMember("FilterUnobtainableItems", true) then
 		app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 	else
 		app.UnobtainableItemFilter = app.NoFilter;
 	end
-	if GetDataMember("FilterSeasonal", false) then
+	if GetDataMember("FilterSeasonal", true) then
 	   app.SeasonalFilter = app.FilterItemClass_SeasonalItem
 	else
 	   app.SeasonalFilter = app.NoFilter
@@ -6337,7 +6340,7 @@ app.events.VARIABLES_LOADED = function()
 	else
 		app.PersonalLootFilter = app.NoFilter;
 	end
-	if GetDataMember("RequiredSkillFilter", false) then
+	if GetDataMember("RequiredSkillFilter", true) then
 		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
 	else
 		app.RequiredSkillFilter = app.NoFilter;
@@ -6391,7 +6394,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowTierID", false);
 	GetDataMember("ShowTitleID", false);
 	GetDataMember("ShowVisualID", false);
-	
 	app.Settings:init();
 end
 app.events.PLAYER_LOGIN = function()
@@ -6532,28 +6534,26 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 	if app.Categories.Professions then
 		local popout = app:GetWindow("Tradeskills");
 		if popout:IsShown() then
-			-- Cache the Tradeskill
-			local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
-			local skillCache = fieldCache["requireSkill"][tradeSkillID];
+			-- Cache Learned Spells
+			local skillCache = fieldCache["spellID"];
 			if skillCache then
 				-- Cache learned recipes
 				local learned = 0;
-				for i,group in ipairs(skillCache) do
-					if group.spellID and group.f == 200 then
-						-- This is a recipe, cache the learned state.
-						if not GetTempDataSubMember("CollectedSpells", group.spellID) then
-							if C_TradeSkillUI.GetRecipeInfo(group.spellID, spellRecipeInfo) and spellRecipeInfo.learned then
-								SetTempDataSubMember("CollectedSpells", group.spellID, 1);
-								if not GetDataSubMember("CollectedSpells", group.spellID) then
-									SetDataSubMember("CollectedSpells", group.spellID, 1);
-									learned = learned + 1;
-								end
+				for spellID,groups in pairs(skillCache) do
+					spellID = tonumber(spellID);
+					if not GetTempDataSubMember("CollectedSpells", spellID) then
+						if C_TradeSkillUI.GetRecipeInfo(spellID, spellRecipeInfo) and spellRecipeInfo.learned then
+							SetTempDataSubMember("CollectedSpells", spellID, 1);
+							if not GetDataSubMember("CollectedSpells", spellID) then
+								SetDataSubMember("CollectedSpells", spellID, 1);
+								learned = learned + 1;
 							end
 						end
 					end
 				end
 				
 				-- Open the Tradeskill list for this Profession
+				local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
 				for i,group in ipairs(app.Categories.Professions) do
 					if group.requireSkill == tradeSkillID then
 						popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });

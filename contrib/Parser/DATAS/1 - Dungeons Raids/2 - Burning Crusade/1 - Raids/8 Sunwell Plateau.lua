@@ -10,6 +10,7 @@ _.Instances =
 				["groups"] = {
 					n(0, {		-- Zone Drop
 						n(-15, { -- Recipes
+							i(35273),	-- Study of Advanced Smelting
 							i(35208, {
 								i(34380),
 							}),
