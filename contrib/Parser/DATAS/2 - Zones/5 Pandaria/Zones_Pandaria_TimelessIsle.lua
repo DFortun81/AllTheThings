@@ -990,8 +990,8 @@ _.Zones =
 						i(94933),
 					}),
 				}),
---[[
-				n(-17, { 	-- Quests				
+				n(-17, { 	-- Quests
+--[[			
 					q(33211),	-- A Timeless Question
 					q(33161),	-- A Timeless Tour
 					q(33337),	-- A Vision in Time
@@ -1006,7 +1006,11 @@ _.Zones =
 					q(33231),	-- Journey to the Timeless Isle
 					q(33222),	-- Little Tommy Newcomer
 					q(33234),	-- Meaty Crane Leg
-					q(33018),	-- Noodle Secrets Long Forgotten
+--]]			
+					o(221376, {	-- Old Sign Fragment
+						q(33018),	-- Noodle Secrets Long Forgotten
+					}),
+--[[			
 					q(33379),	-- One Final Turn
 					q(33374),	-- Path of the Mistwalker
 					q(33239),	-- Pristine Firestorm Egg
@@ -1020,7 +1024,9 @@ _.Zones =
 					q(33137),	-- The Celestial Tournament
 					q(33336),	-- The Essence of Time
 					q(33335),	-- The Last Emperor
-					q(33020),	-- The Lost Secret of the Secret Ingredient
+--]]			
+					sq(33018, qg(72426, q(33020))),	-- The Lost Secret of the Secret Ingredient
+--[[			
 					q(33136),	-- The Rainy Day is Here
 					q(45563),	-- The Shrouded Coin
 					q(33238),	-- Thick Tiger Haunch
@@ -1029,9 +1035,9 @@ _.Zones =
 					q(33160),	-- Time Keeper Kairoz
 					q(33340),	-- Timeless Nutriment
 					q(33333),	-- Timeless Treasures
-					q(33341),	-- Wayshrines Of The Celestials				
-				}),
---]]				
+					q(33341),	-- Wayshrines Of The Celestials		
+--]]					
+				}),	
 				n(-16, { 	-- Rares
 					n(72775, { 		-- Bufo
 						["groups"] = {

@@ -531,6 +531,18 @@ _.Zones =
 						i(32539),	-- Skyguard Drape
 						i(32538),	-- Skywitch's Drape
 					}),
+					na(19296, {	-- Innkeeper Biribi <Innkeeper>
+						i(27699),	-- Recipe: Golden Fish Sticks
+						i(27700),	-- Recipe: Spicy Crawdad
+					}),
+					nh(18957, {	-- Innkeeper Grilka <Innkeeper>
+						i(27690),	-- Recipe: Blackened Basilisk
+						i(27692),	-- Recipe: Warp Burger
+					}),
+					nh(18960, {	-- Rungor <Trade Goods>
+						i(27699),	-- Recipe: Golden Fish Sticks
+						i(27700),	-- Recipe: Spicy Crawdad
+					}),
 					nh(19772, {	-- Spirit Sage Gartok
 						i(28559),	-- Exorcist's Plate Helm
 						i(28560),	-- Exorcist's Lamellar Helm
@@ -556,6 +568,10 @@ _.Zones =
 						i(28759),	-- Exorcist's Dreadweave Hood
 						i(28760),	-- Exorcist's Silk Hood
 						i(28761),	-- Exorcist's Scaled Helm
+					}),
+					na(19038, {	-- Supply Officer Mills <Rations>
+						i(27690),	-- Recipe: Blackened Basilisk
+						i(27692),	-- Recipe: Warp Burger
 					}),
 				}),
 			},

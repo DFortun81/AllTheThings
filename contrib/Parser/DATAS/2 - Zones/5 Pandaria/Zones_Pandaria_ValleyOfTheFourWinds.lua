@@ -167,7 +167,11 @@ _.Zones =
 					q(31321),	-- Buy A Fish A Round?
 					q(32046),	-- Candy Bucket
 					q(32048),	-- Candy Bucket
-					q(33022),	-- Catch and Carry
+]]--
+					sq({33021,33139}, qg(64231, q(33022, {	-- Catch and Carry
+						recipe(145038),	-- Noodle Cart Kit
+					}))),
+--[[
 					q(30318),	-- Chasing the Chicken
 					q(29907),	-- Chen and Li Li
 					q(30046),	-- Chen's Resolution
@@ -215,7 +219,11 @@ _.Zones =
 					q(30376),	-- Hope Springs Eternal
 					q(32682),	-- Inherit the Earth
 					q(30085),	-- Into the Brewery
-					q(33024),	-- Is That A Real Measurement?
+]]--
+					sq(33022, qg(64231, q(33024, {	-- Is That A Real Measurement?
+						recipe(145061),	-- Deluxe Noodle Cart Kit
+					}))),
+--[[
 					qa( 30624),	-- It Does You No Good In The Keg
 					qh( 30653),	-- It Does You No Good In The Keg
 					q(31942),	-- It's Melon Time
@@ -273,7 +281,10 @@ _.Zones =
 					q(31673),	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
 					q(31535),	-- Replenishing the Pantry
 					q(30626),	-- Retreat!
-					q(33021),	-- Secrets Lost, Forever?
+]]--
+					sq(33107, qg(64231, q(33021))),	-- Secrets Lost, Forever?
+					sq(33107, qg(64231, q(33139))),	-- Secrets Lost, Forever?
+--[[
 					q(30057),	-- Seeing Orange
 					q(30337),	-- Simian Sabotage
 					q(29600),	-- Snap Judgment
@@ -323,6 +334,11 @@ _.Zones =
 					q(30627),	-- The Savior of Stoneplow
 					q(30086),	-- The Search for the Hidden Master
 					q(33027),	-- The Secret Ingredient Is...
+]]--
+					sq(33026, qg(64231, q(33027, {	-- The Secret Ingredient Is...
+						recipe(145062),	-- Pandaren Treasure Noodle Cart Kit
+					}))),
+--[[
 					q(31474),	-- The Soup of Contemplation
 					q(31476),	-- The Spirit of Cooking
 					q(30622),	-- The Swarm Begins
@@ -333,6 +349,9 @@ _.Zones =
 					q(29946),	-- The Warren-Mother
 					q(31675),	-- The White Turnip Treatment
 					q(33026),	-- These Aren't Your Fatty Goatsteaks
+]]--
+					sq(33024, qg(64231, q(33026))),	-- These Aren't Your Fatty Goatsteaks
+--[[
 					q(32019),	-- They Call Him... Stormstout
 					q(30323),	-- They Don't Even Wear Them
 					q(29985),	-- They Will Be Mist
@@ -741,6 +760,13 @@ _.Zones =
 				--	}),
 				}),
 				n(-2, {		-- Vendors
+					n(58713, {	-- Anthea Ironpaw <Master of the Wok>
+						recipe(104301),	-- Sauteed Carrots
+						recipe(104303),	-- Sea Mist Rice Noodles
+						recipe(104302),	-- Valley Stir Fry
+						recipe(125594),	-- Banquet of the Wok
+						recipe(125595),	-- Great Banquet of the Wok
+					}),
 					na(75694, {	-- Armsmaster Holinka <Tyrannical Gladiator>
 						i(144246, { -- Arsenal: Tyrannical Gladiator's Weapons
 							i(99794),	-- Tyrannical Gladiator's Barrier
@@ -954,6 +980,13 @@ _.Zones =
 						i(99959),	-- Tyrannical Gladiator's Plate Helm
 						i(99960),	-- Tyrannical Gladiator's Plate Legguards
 						i(99961),	-- Tyrannical Gladiator's Plate Shoulders
+					}),
+					n(58717, {	-- Bobo Ironpaw <Master of the Brew>
+						recipe(124052),	-- Ginseng Tea
+						recipe(124053),	-- Jade Witch Brew
+						recipe(124054),	-- Mad Brewer's Breakfast
+						recipe(125602),	-- Banquet of the Brew
+						recipe(125603),	-- Great Banquet of the Brew
 					}),
 					n(61215, {	-- Claretta <Adventuring Supplies>
 						i(81579),	-- Faded Forest Satin Hood
@@ -1278,6 +1311,8 @@ _.Zones =
 						i(103332),	-- Grievous Gladiator's Plate Shoulders
 					}),
 					n(58706, {	-- Gina Mudclaw <Tillers Quartermaster>
+						i(74657),	-- Recipe: Spicy Salmon
+						i(74658),	-- Recipe: Spicy Vegetable Chips
 						i(90175),	-- Gin'Ji Knife Set Toy
 						i(89869),	-- Pandaren Scarecrow Toy
 						i(89391),	-- Reins of the Black Riding Goat Mount
@@ -1456,6 +1491,20 @@ _.Zones =
 						i(138724, {	-- Ensemble: Dreadful Gladiator's Felweave Armor - Warlock
 						}),
 --]]
+					}),
+					n(58716, {	-- Jian Ironpaw <Master of the Oven>
+						recipe(104312),	-- Chun Tian Spring Rolls
+						recipe(104311),	-- Twin Fish Platter
+						recipe(104310),	-- Wildfowl Roast
+						recipe(125600),	-- Banquet of the Oven
+						recipe(125601),	-- Great Banquet of the Oven
+					}),
+					n(58712, {	-- Kol Ironpaw <Master of the Grill>
+						recipe(104300),	-- Black Pepper Ribs and Shrimp
+						recipe(104298),	-- Charbroiled Tiger Steak
+						recipe(104299),	-- Eternal Blossom Fish
+						recipe(125141),	-- Banquet of the Grill
+						recipe(125142),	-- Great Banquet of the Grill
 					}),
 					n(75689, {	-- Lucan Malory <Malevolent Gladiator>
 						i(144243, { -- Arsenal: Malevolent Gladiator's Weapons
@@ -1653,7 +1702,14 @@ _.Zones =
 						i(91789),	-- Malevolent Gladiator's Plate Legguards
 						i(91791),	-- Malevolent Gladiator's Plate Shoulders
 					}),
-					n(64395, { --	Nam Ironpaw <Stockmaster>
+					n(58714, {	-- Mei Mei Ironpaw <Master of the Pot>
+						recipe(104305),	-- Braised Turtle
+						recipe(104306),	-- Mogu Fish Stew
+						recipe(104304),	-- Swirling Mist Soup
+						recipe(125596),	-- Banquet of the Pot
+						recipe(125597),	-- Great Banquet of the Pot
+					}),
+					n(64395, { 	-- Nam Ironpaw <Stockmaster>
 						i(88801),	-- Flippable Table
 						i(86468),	-- Apron
 						i(86559),	-- Frying Pan (cannot be transmogged)
@@ -2007,6 +2063,13 @@ _.Zones =
 						i(81684),	-- Faded Forest Shield
 						i(81685),	-- Faded Forest Blade
 						i(81686),	-- Faded Forest Axe
+					}),
+					n(58715, {	-- Yan Ironpaw <Master of the Steamer>
+						recipe(104308),	-- Fire Spirit Salmon
+						recipe(104307),	-- Shrimp Dumplings
+						recipe(104309),	-- Steamed Crab Surprise
+						recipe(125598),	-- Banquet of the Steamer
+						recipe(125599),	-- Great Banquet of the Steamer
 					}),
 				}),
 				n(-38, { -- Profession

@@ -133,7 +133,11 @@ _.Zones =
 					q(29829),	-- Discretion is Key
 					q(13041),	-- Finish the Shipment
 					q(24585),	-- Flame Leviathan Must Die!
-					q(13571),	-- Fletcher's Lost and Found
+]]--
+					q(13571, {	-- Fletcher's Lost and Found
+						recipe(53056),	-- Kungaloosh
+					}),
+--[[
 					qh( 29609),	-- Friends in Dalaran
 					qh( 32405),	-- Hand of the Silver Covenant
 					q(13819),	-- Heroic: All Is Well That Ends Well
@@ -1425,7 +1429,33 @@ _.Zones =
 						i(39973), -- Ghostly Skull
 					}),
 					na(31032, { -- Derek Odds <Cooking Supplies>
-						i(134020), -- Chef's Hat
+						currency(81, {	-- Epicurean's Award
+							i(134020), 	-- Chef's Hat
+							i(43035),	-- Recipe: Blackened Dragonfin
+							i(43032),	-- Recipe: Blackened Worg Steak
+							i(43029),	-- Recipe: Critter Bites
+							i(43033),	-- Recipe: Cuttlesteak
+							i(43036),	-- Recipe: Dragonfin Filet
+							i(43024),	-- Recipe: Firecracker Salmon
+							i(43017),	-- Recipe: Fish Feast
+							i(43505),	-- Recipe: Gigantic Feast
+							i(43030),	-- Recipe: Hearty Rhino
+							i(43026),	-- Recipe: Imperial Manta Steak
+							i(43018),	-- Recipe: Mega Mammoth Meal
+							i(43022),	-- Recipe: Mighty Rhino Dogs
+							i(43023),	-- Recipe: Poached Northern Sculpin
+							i(43028),	-- Recipe: Rhinolicious Wormsteak
+							i(43506),	-- Recipe: Small Feast
+							i(43031),	-- Recipe: Snapper Extreme
+							i(43034),	-- Recipe: Spiced Mammoth Treats
+							i(43020),	-- Recipe: Spiced Worm Burger
+							i(43025),	-- Recipe: Spicy Blue Nettlefish
+							i(43027),	-- Recipe: Spicy Fried Herring
+							i(43019),	-- Recipe: Tender Shoveltusk Steak
+							i(43037),	-- Recipe: Tracker Snacks
+							i(43021),	-- Recipe: Very Burnt Worg
+							i(44954),	-- Recipe: Worg Tartare
+						}),
 					}),
 					n(34252, { 	-- Dubin Clay <Plate Armor Merchant>
 						i(45335),	-- Valorous Darkruned Chestguard
@@ -3242,7 +3272,33 @@ _.Zones =
 						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
 					}),
 					nh(31031, { -- Misensi <Cooking Supplies>
-						i(134020), -- Chef's Hat
+						currency(81, {	-- Epicurean's Award
+							i(134020), 	-- Chef's Hat
+							i(43035),	-- Recipe: Blackened Dragonfin
+							i(43032),	-- Recipe: Blackened Worg Steak
+							i(43029),	-- Recipe: Critter Bites
+							i(43033),	-- Recipe: Cuttlesteak
+							i(43036),	-- Recipe: Dragonfin Filet
+							i(43024),	-- Recipe: Firecracker Salmon
+							i(43017),	-- Recipe: Fish Feast
+							i(43505),	-- Recipe: Gigantic Feast
+							i(43030),	-- Recipe: Hearty Rhino
+							i(43026),	-- Recipe: Imperial Manta Steak
+							i(43018),	-- Recipe: Mega Mammoth Meal
+							i(43022),	-- Recipe: Mighty Rhino Dogs
+							i(43023),	-- Recipe: Poached Northern Sculpin
+							i(43028),	-- Recipe: Rhinolicious Wormsteak
+							i(43506),	-- Recipe: Small Feast
+							i(43031),	-- Recipe: Snapper Extreme
+							i(43034),	-- Recipe: Spiced Mammoth Treats
+							i(43020),	-- Recipe: Spiced Worm Burger
+							i(43025),	-- Recipe: Spicy Blue Nettlefish
+							i(43027),	-- Recipe: Spicy Fried Herring
+							i(43019),	-- Recipe: Tender Shoveltusk Steak
+							i(43037),	-- Recipe: Tracker Snacks
+							i(43021),	-- Recipe: Very Burnt Worg
+							i(44954),	-- Recipe: Worg Tartare
+						}),
 					}),
 					n(29495, {  -- Norvin Alderman <Cloaks>
 						i(50466),	-- Sentinel's Winter Cloak

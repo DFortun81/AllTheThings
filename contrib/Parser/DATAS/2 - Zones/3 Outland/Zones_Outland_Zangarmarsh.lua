@@ -761,18 +761,22 @@ _.Zones =
 					}), 
 				}),
 				n( -2, {	-- Vendors
-					a(n(18581, {	-- Alliance Field Scout
+					na(18581, {		-- Alliance Field Scout
 						i(24579, {	-- Mark of Honor Hold
 							i(27931),	-- Splintermark
 							i(27942),	-- Incendic Rod
 						})
-					})),
-					h(n(19383, {	-- Captured Gnome
+					}),
+					nh(19383, {		-- Captured Gnome
 						i(23805, {	-- Schematic: Ultra-Spectroscopic Detection Goggles
 							i(23762),	-- Ultra-Spectroscopic Detection Goggles
 						}),
-					})),
-					n(17904, {	-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
+					}),
+					na(20028, {		-- Doba <Cooking Supplies>
+						i(27694),	-- Recipe: Blackened Trout
+						i(27695),	-- Recipe: Feltail Delight
+					}),
+					n(17904, {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
 						i(29174),	-- Watcher's Cowl
 						i(35329),	-- Dreadweave Hood
 						i(35336),	-- Mooncloth Shoulderpads
@@ -815,13 +819,19 @@ _.Zones =
 						i(33999),	-- Cenarion War Hippogryph Mount
 						i(31804),	-- Cenarion Expedition Tabard
 					}),
-					h(n(18564, {	-- Horde Field Scout
+					nh(18015, {		-- Gambarinka <Tradesman>
+						i(27694),	-- Recipe: Blackened Trout
+					}),
+					nh(18564, {		-- Horde Field Scout
 						i(24581, {	-- Mark of Thrallmar
 							i(27930),	-- Splintermark
 							i(27939),	-- Incendic Rod
 						})
-					})),
-					a(n(19694, {	-- Loolruna <Armorer>
+					}),
+					n(18911, {		-- Juno Dufrain <Fishing Trainer>
+						i(27696),	-- Recipe: Blackened Sporefish
+					}),
+					na(19694, {		-- Loolruna <Armorer>
 						i(23596, {	-- Plans: Adamantite Breastplate
 							i(23507),	-- Adamantite Breastplate
 						}),
@@ -831,33 +841,34 @@ _.Zones =
 						i(23595, {	-- Plans: Adamantite Plate Gloves
 							i(23508),	-- Adamantite Plat Gloves
 						}),
-					})),
-					a(n(19722, {	-- Muheru the Weaver <Tailoring Supplies>
+					}),
+					na(19722, {		-- Muheru the Weaver <Tailoring Supplies>
 						i(21899, {	-- Pattern: Imbued Netherweave Boots
 							i(21860),	-- Netherweave Boots
 						}),
 						i(21898, {	-- Pattern: Imbued Netherweave Pants
 							i(21859),	-- Imbued Netherweave Pants
-						}),
-					})),
-					n(18382, {	-- Mycah <Sporeggar Quartermaster>
-						i(24245, {	-- Glowcap
-							i(25827),	-- Muck-Covered Drape
-							i(25828),	-- Petrified Lichen Guard
-							i(29149),	-- Sporeling's Firestick
-							i(29150),	-- Hardened Stone Shard
-							i(31775),	-- Sporeggar Tabard
-							i(34478),	-- Tiny Sporebat Pet
 						}),
 					}),
-					h(n(18011, {	-- Zurai <Merchant>
-						i(21899, {	-- Pattern: Imbued Netherweave Boots
-							i(21860),	-- Netherweave Boots
+					n(18382, {		-- Mycah <Sporeggar Quartermaster>
+						i(24245, {	-- Glowcap
+							i(38229),	-- Pattern: Mycah's Botanical Bag
+							i(30156),	-- Recipe: Clam Bar
+							i(22906),	-- Recipe: Shrouding Potion
+							i(22916),	-- Recipe: Transmute Primal Earth to Water
+							i(34478),	-- Tiny Sporebat Pet
+							i(29150),	-- Hardened Stone Shard
+							i(25828),	-- Petrified Lichen Guard
+							i(29149),	-- Sporeling's Firestick
+							i(25827),	-- Muck-Covered Drape
+							i(31775),	-- Sporeggar Tabard
 						}),
-						i(21898, {	-- Pattern: Imbued Netherweave Pants
-							i(21859),	-- Imbued Netherweave Pants
-						}),
-					})),
+					}),
+					nh(18011, {		-- Zurai <Merchant>
+						i(21899),	-- Pattern: Imbued Netherweave Boots
+						i(21898),	-- Pattern: Imbued Netherweave Pants
+						i(27695),	-- Recipe: Feltail Delight
+					}),
 				}),
 				n(  0, {	-- Zone Drop
 					

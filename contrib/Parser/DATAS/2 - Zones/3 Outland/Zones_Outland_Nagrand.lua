@@ -459,7 +459,7 @@ _.Zones =
 							i(29228),	-- Reins of the Dark War Talbuk
 						}),
 					})),
-					n(18072, {	-- Elementalist Sharvak <The Earthen Ring>
+					n(18072, {		-- Elementalist Sharvak <The Earthen Ring>
 						i(136934),	-- Raging Elemental Stone - Shaman only - Toy
 						i(136935),	-- Tadpole Cloudseeder - Shaman only - Toy
 						i(136937),	-- Vol'jin's Serpent Totem - Shaman only - Toy
@@ -470,7 +470,13 @@ _.Zones =
 							i(21863),	-- Soulcloth Gloves
 						}),
 					})),
-					n(23007, {	-- Paulsta'ats <Consortium Quartermaster>
+					nh(20097, {		-- Nula the Butcher <Cooking Supplies>
+						i(27697),	-- Recipe: Grilled Mudfish
+						i(27698),	-- Recipe: Poached Bluefish
+						i(27691),	-- Recipe: Roasted Clefthoof
+						i(27693),	-- Recipe: Talbuk Steak
+					}),
+					n(23007, {		-- Paulsta'ats <Consortium Quartermaster>
 						i(29115),	-- Consortium Blaster
 						i(29116),	-- Nomad's Leggings
 						i(29117),	-- Stormspire Vest
@@ -610,6 +616,12 @@ _.Zones =
 						i(31836),	-- Reins of the White Riding Talbuk
 						i(31774),	-- Kurenai Tabard
 					})),
+					na(20097, {		-- Uriku <Cooking Supplies>
+						i(27697),	-- Recipe: Grilled Mudfish
+						i(27698),	-- Recipe: Poached Bluefish
+						i(27691),	-- Recipe: Roasted Clefthoof
+						i(27693),	-- Recipe: Talbuk Steak
+					}),
 				}),
 			},
 			["Lvl"] = 64,	

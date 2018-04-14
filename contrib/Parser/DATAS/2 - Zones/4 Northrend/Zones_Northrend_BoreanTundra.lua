@@ -313,8 +313,14 @@ _.Zones =
 					q(29239),	-- Nordrassil's Bough
 					qh( 11709),	-- Nork Bloodfrenzy's Charge
 					q(13016),	-- Northal the Elder
-					qh( 13090),	-- Northern Cooking
-					qa( 13088),	-- Northern Cooking
+]]--
+					qh( 13090, {-- Northern Cooking
+						recipe(57421),	-- Northern Stew
+					}),
+					qa( 13088, {-- Northern Cooking
+						recipe(57421),	-- Northern Stew
+					}),
+--[[
 					q(11871),	-- Not On Our Watch
 					q(11949),	-- Not Without a Fight!
 					qa( 11791),	-- Notify Arlos

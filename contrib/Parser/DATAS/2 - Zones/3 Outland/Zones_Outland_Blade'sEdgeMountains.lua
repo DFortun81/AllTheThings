@@ -256,7 +256,12 @@ _.Zones =
 					q(10722),	-- Meeting at the Blackwing Coven
 					q(10983),	-- Mog'dorg the Wizened
 					q(10989),	-- Mog'dorg the Wizened
-					qh( 10860),	-- Mok'Nathal Treats
+]]--
+					qh( 10860, {	-- Mok'Nathal Treats
+						i(31674),	-- Recipe: Crunchy Serpent
+						i(31675),	-- Recipe: Mok'Nathal Shortribs
+					}),
+--[[
 					qa( 10671),	-- More than a Pound of Flesh
 					q(10812),	-- Mystery Mask
 					q(10981),	-- Nexus-Prince Shaffar's Personal Chamber
@@ -599,11 +604,19 @@ _.Zones =
 							i(32828),		-- Ogri'la Tabard
 						}),
 					}),
+					na(21113, {		-- Sassa Weldwell <Trade Goods>
+						i(31674), 	-- Recipe: Crunchy Serpent
+						i(31675),	-- Recipe: Mok'Nathal Shortribs
+					}),
 					n(22099, {		-- Wyrmcult Provisioner
 						["groups"] = {
 							i(31341),	-- Wyrmcultist's Cloak
 						},
 						["description"] = "To access this vendor, you must be wearing an Overseer Disguise. To get the disguise, you must either be currently on, or have completed, the quest 'Meeting at the Blackwing Coven' which will allow you to loot 'Costume Scraps' from Wyrmcultists. You will need 5 Costume Scraps to make an Overseer Disguise.|r",
+					}),
+					n(20916, {		-- Xerintha Ravenoak <Food & Drink>
+						i(31674), 	-- Recipe: Crunchy Serpent
+						i(31675),	-- Recipe: Mok'Nathal Shortribs
 					}),
 					n(20917, {		-- Zinyen Swiftstrider <Weapon Vendor>
 						i(30753),		-- Warphorn Spear
