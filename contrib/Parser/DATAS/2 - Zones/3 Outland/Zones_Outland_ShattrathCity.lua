@@ -170,13 +170,17 @@ _.Zones =
 					q(11875),	-- Gaining the Advantage
 					q(29675),	-- Hey There Dalliah
 --]]					
-					q(10704,  {  -- How to Break Into the Arcatraz - Dungeon Quest
-						i(31465),
-						i(31461),
-						i(31464),
-						i(31462),
-						i(31460),
-					}),
+					qdg(q(10704, {	-- How to Break Into the Arcatraz
+						["g"] = {
+							i(31465),	-- Sha'tari Achorite's Cloak
+							i(31461),	-- A'dal's Gift
+							i(31464),	-- Naaru Belt of Precision
+							i(31462),	-- Shattrath's Champion Belt
+							i(31460),	-- Sha'tari Vindicator's Waistguard
+						},
+						["qg"] = 18481,	-- A'dal
+						["sourceQuests"] = { 10280 },	-- Special Delivery to Shattrath City
+					})),
 --[[					
 					qh( 11966),	-- Incense for the Festival Scorchlings
 					qa( 11964),	-- Incense for the Summer Scorchlings
