@@ -1,0 +1,72 @@
+$Id: Revision.txt 22 2017-05-25 07:11:15Z arith-179865 $
+Revision History:
+=================
+
+v7.2.0.24015-r3 (2017/05/25)
+----------------------------
+- Reverted LIB_UIDROPDOWNMENU_MAXBUTTONS back to 8
+- Renamed ToC file name
+- Added OptionalDeps: LibStub to ToC
+
+v7.2.0.24015-r2 (2017/05/19)
+----------------------------
+- added version number to EasyMenu
+- increased LIB_UIDROPDOWNMENU_MAXBUTTONS to 24
+- renamed packaged folder name to !NoTaint_UIDropDownMenu
+  - No impact to addons which embedded this lib
+  - For users who installed this lib separately, please remove the old "NoTaint_UIDropDownMenu" folder
+
+v7.2.0.24015 (2017/05/12)
+-------------------------
+- added UIDropDownMenu.xml;
+- removed customized codes in creating buttons; 
+- removed customized codes in Lib_UIDropDownMenu_AddButton()
+- added LibStub to set library's version
+
+v7.2.0.23801-r3 (2017/04/27)
+----------------------------
+- fixed the loading order in ToC if this get installed separately.
+
+v7.2.0.23801-r2 (2017/04/17)
+----------------------------
+- ToC update to support proper loading if user install this library separately; this is for WoW 7.2 release.
+
+v7.2.0.23801 (2017/03/22)
+--------------------------
+- fixed the issue when dropdown menu has more than 1 level
+
+v7.2.0.23789 (2017/03/22)
+--------------------------
+- lib update to sync with WoW 7.2.0.23789
+- TOC update to support WoW 7.2.0
+
+v7.1.0.22908.r7 (2016/12/26)
+--------------------------
+- fixes with listframe width
+
+v7.1.0.22908.r6 (2016/12/26)
+--------------------------
+- some minor enhancement in logical operation:
+Lib_UIDropDownMenu_AddButton - index's value; width and maxWidth's values
+
+v7.1.0.22908 (2016/10/27)
+--------------------------
+- Toc update to support WoW 7.1.0
+- Codes synch with 7.1.0.22908:
+- Added function Lib_UIDropDownMenu_AddSeparator(info, level)
+
+v1.2
+----
+Updated (thanks to Blazeflack). To use Lib_UIDropDownMenu_AddSeparator left text value empty like
+
+Code:
+
+local tabsSubmenu = {
+	{ text = "Add new tab", func = AddNewTab, notCheckable = true, keepShownOnClick = false },
+	{ notCheckable = true, notClickable = true },
+	{ text = "Remove active tab", func = ConfirmRemoveTab, notCheckable = true, keepShownOnClick = false },
+}
+
+1.1
+---
+Fixed first two menu's strata.
