@@ -458,25 +458,9 @@ local function createAccountFrame(parent)
 	addObject(elm,basic)
 	
 	local basicFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-basicFrame", child, "ThinBorderTemplate");
-	basicFrame:SetSize(child:GetWidth(),80)
+	basicFrame:SetSize(child:GetWidth(),100)
 	basicFrame:SetPoint("TOPLEFT",basic,0,-frameSpacer);
 	addObject(elm,basicFrame)
-	
-	-- Profession mode
-	local prof = createCheckBox("Filter By Profession", child, function(self)
-			app.SetDataMember("RequiredSkillFilter", self:GetChecked());
-			if self:GetChecked() then
-				app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
-			else
-				app.RequiredSkillFilter = app.NoFilter;
-			end
-			app:RefreshData();
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("RequiredSkillFilter"));
-		end);
-	prof:SetPoint("TOPLEFT",basic,5,-frameSpacer)
-	addObject(elm,prof)
 	
 	-- level
 	local level = createCheckBox("Filter Groups By Level", child, function(self)
@@ -492,10 +476,57 @@ local function createAccountFrame(parent)
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("FilterGroupsByLevel"));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
 		end);
-	level:SetPoint("TOPLEFT",prof,child:GetWidth()/2, 0)
+	level:SetPoint("TOPLEFT",basic,5, -frameSpacer)
 	addObject(elm,level)
 	
+	-- Profession mode
+	local prof = createCheckBox("Filter By Known Professions", child, function(self)
+			app.SetDataMember("RequiredSkillFilter", self:GetChecked());
+			if self:GetChecked() then
+				app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+			else
+				app.RequiredSkillFilter = app.NoFilter;
+			end
+			app:RefreshData();
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("RequiredSkillFilter"));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you only want to see items and recipes that require professions that you know.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	prof:SetPoint("TOPLEFT",level,0,-frameSpacer)
+	addObject(elm,prof)
+	
+	-- Track Recipes Account Wide mode
+	local tracker = createCheckBox("Track Recipes Account-Wide", child, function(self)
+			app.SetDataMember("TrackRecipesAccountWide", self:GetChecked());
+			if self:GetChecked() then
+				app.RecipeChecker = app.GetDataSubMember;
+			else
+				app.RecipeChecker = app.GetTempDataSubMember;
+			end
+			app:RefreshData();
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("TrackRecipesAccountWide"));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you want to treat recipes collected by any character on your account as Collected.\n\nIf you wish to treat only recipes known by your current character as Collected, turn this setting off.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	tracker:SetPoint("TOPLEFT",prof,5,-frameSpacer)
+	addObject(elm,tracker)
+
 	-- race
 	local race = createCheckBox("Filter Items By Race", child, function(self)
 			app.SetDataMember("FilterItemsByRace", self:GetChecked());
@@ -509,7 +540,7 @@ local function createAccountFrame(parent)
 		function(self) 
 			self:SetChecked(app.GetDataMember("FilterItemsByRace"));
 		end);
-	race:SetPoint("TOPLEFT",prof,0, -frameSpacer)
+	race:SetPoint("TOPLEFT",level,child:GetWidth()/2, 0)
 	addObject(elm,race)
 	
 	-- class
@@ -525,7 +556,7 @@ local function createAccountFrame(parent)
 		function(self) 
 			self:SetChecked(app.GetDataMember("FilterItemsByClass"));
 		end);
-	class:SetPoint("TOPLEFT",race,child:GetWidth()/2, 0)
+	class:SetPoint("TOPLEFT",race,0, -frameSpacer)
 	addObject(elm,class)
 	
 	-- BOE
@@ -541,7 +572,7 @@ local function createAccountFrame(parent)
 		function(self) 
 			self:SetChecked(app.GetDataMember("RequireBindingFilter"));
 		end);
-	boe:SetPoint("TOPLEFT",race,0, -frameSpacer)
+	boe:SetPoint("TOPLEFT",tracker,-5, -frameSpacer * 1.5)
 	addObject(elm,boe)
 	
 	--ignore

@@ -153,11 +153,6 @@ local function GetPersonalDataMember(member, default)
 	if AllTheThingsPCD[member] == nil then AllTheThingsPCD[member] = default; end
 	return AllTheThingsPCD[member];
 end
-app.SetDataMember = SetDataMember;
-app.GetDataMember = GetDataMember;
-app.SetPersonalDataMember = SetPersonalDataMember;
-app.GetPersonalDataMember = GetPersonalDataMember;
-
 local function SetDataSubMember(member, submember, data)
 	if AllTheThingsAD[member] then AllTheThingsAD[member][submember] = data; end
 end
@@ -275,6 +270,14 @@ local function GetTempDataSubSubMember(member, submember, subsubmember, default)
 	end
 	return AllTheThingsTempData[member][submember][subsubmember];
 end
+app.SetDataMember = SetDataMember;
+app.GetDataMember = GetDataMember;
+app.SetDataSubMember = SetDataSubMember;
+app.GetDataSubMember = GetDataSubMember;
+app.SetPersonalDataMember = SetPersonalDataMember;
+app.GetPersonalDataMember = GetPersonalDataMember;
+app.GetTempDataMember = GetTempDataMember;
+app.GetTempDataSubMember = GetTempDataSubMember;
 
 -- Game Tooltip Icon
 local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
@@ -3563,12 +3566,7 @@ app.BaseRecipe = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			if GetTempDataSubMember("CollectedSpells", t.spellID) then return true; end
-			if C_TradeSkillUI.GetRecipeInfo(t.spellID, spellRecipeInfo) and spellRecipeInfo.learned then
-				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				SetDataSubMember("CollectedSpells", t.spellID, 1);
-				return true;
-			end
+			return app.RecipeChecker("CollectedSpells", t.spellID);
 		elseif key == "name" then
 			return t.itemID and GetItemInfo(t.itemID);
 		elseif key == "specs" then
@@ -6343,6 +6341,11 @@ app.events.VARIABLES_LOADED = function()
 		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
 	else
 		app.RequiredSkillFilter = app.NoFilter;
+	end
+	if GetDataMember("TrackRecipesAccountWide", true) then
+		app.RecipeChecker = GetDataSubMember;
+	else
+		app.RecipeChecker = GetTempDataSubMember;
 	end
 	if GetDataMember("ShowIncompleteQuests", false) then
 		app.ShowIncompleteQuests = app.FilterItemTrackable;
