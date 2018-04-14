@@ -1099,6 +1099,10 @@ _.Zones =
 	--				n(107477, { 	-- N.U.T.Z. -- mob to tame			}),
 				}),
 				n(-2, {		-- Vendors
+					nh(49885, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					n(36375, {	-- Tex Vortacoil <Reagents>
 						i(68806),	-- Kalytha's Haunted Locket Toy
 					}),

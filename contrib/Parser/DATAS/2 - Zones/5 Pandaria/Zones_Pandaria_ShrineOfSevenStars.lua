@@ -6,7 +6,7 @@ _.Zones =
 	m(862, { 	-- Pandaria
 		m(905, { 	-- Shrine of Seven Stars
 			["groups"] = {		
-n(-3, { 	-- Holidays					
+				n(-3, { 	-- Holidays					
 --[[					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -942,6 +942,10 @@ n(-3, { 	-- Holidays
 						i(99408),	-- Handguards of the Prehistoric Marauder
 						i(99352),	-- Handwraps of Celestial Harmony
 						i(99388),	-- Handwraps of Seven Sacred Seals
+					}),
+					na(64084, {	-- Jojo <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					na(64096, {	-- Serenka <First Aid Supplies>
 						i(44693),	-- Wound Dressing Shirt

@@ -274,7 +274,6 @@ profession(185, 2550, { -- Cooking
 		recipe(2544),	-- Crab Cake
 		recipe(3370),	-- Crocolisk Steak
 		recipe(2546),	-- Dry Pork Ribs
-		-- i(21099), TODO: https://www.wowhead.com/item=21099/recipe-smoked-sagefish (I didn't add all 37 of these... because I don't hate myself that much)
 		recipe(25704),	-- Smoked Sagefish
 		recipe(2545),	-- Cooked Crab Claw
 		recipe(8238),	-- Savory Deviate Delight

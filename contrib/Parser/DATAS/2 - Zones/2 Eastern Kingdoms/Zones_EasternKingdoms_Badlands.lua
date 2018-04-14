@@ -936,6 +936,13 @@ _.Zones =
 					}),
 --					n(2754, { 	-- Anathemus	}), 					
 				}),
+				n(-2, {	-- Vendors
+					n(48060, {	-- "Chef" Overheat <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+						i(16767),	-- Recipe: Undermine Clam Chowder
+					}),
+				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)

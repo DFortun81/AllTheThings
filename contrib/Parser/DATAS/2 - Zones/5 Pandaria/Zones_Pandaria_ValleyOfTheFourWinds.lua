@@ -1715,6 +1715,10 @@ _.Zones =
 						i(86559),	-- Frying Pan (cannot be transmogged)
 						i(86558),	-- Rolling Pin (cannot be transmogged)
 					}),
+					n(64465, {	-- Noodles <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					n(55143, {	-- Sally Fizzlefury <Engineering Trainer>
 						i(88802),	-- Foxicopter Controller Toy
 						i(91904),	-- Stackable Stag Toy

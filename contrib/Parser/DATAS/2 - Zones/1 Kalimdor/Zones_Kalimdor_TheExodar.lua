@@ -680,6 +680,10 @@ _.Zones =
 						},
 						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
 					})),
+					na(16718, {		-- Phea <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					a(n(21019, {	-- Sixx <Moth Keeper>
 						i(29901),	-- Blue Moth Egg Pet
 						i(29903),	-- Yellow Moth Egg Pet

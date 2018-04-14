@@ -1108,6 +1108,10 @@ _.Zones =
 							i(7924),	-- Mithril Scale Bracers
 						}),
 					})),
+					nh(14738, {	-- Otho Moji'ko <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					a(n(8160, {	-- Nioma <Leatherworking Supplies>
 						i(8409, {	-- Pattern: Nightscape Shoulders
 							i(8192),	-- Nightscape Shoulders

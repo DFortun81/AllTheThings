@@ -860,6 +860,10 @@ _.Zones =
 					n(48577, {	-- Ciana <Weaponsmith>
 						i(11308),	-- Sylvan Shortbow
 					}),
+					n(48580, {	-- Desaan <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					n(11555, {	-- Gorn One Eye
 						i(16768),	-- Furbolg Medicine Pouch
 						i(16769),	-- Furbolg Medicine Totem

@@ -639,6 +639,10 @@ _.Zones =
 						i(4786),	-- Wise Man's Belt
 						i(4782),	-- Solstice Robe
 					})),
+					na(3085, {	-- Gloria Femmel <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					a(n(793, {	-- Kara Adams <Shield Crafter>
 						i(4820),	-- Guardian Buckler
 						i(4821),	-- Bear Buckler

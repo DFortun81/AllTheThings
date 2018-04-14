@@ -328,7 +328,13 @@ _.Zones =
 --]]					
 					-- qa(14082),	-- Learn to Ride at the Exodar (removed in Patch 4.0.1)
 				}),
---[[			n(-40, {	-- Legacy
+				na(-2, {	-- Vendors
+					n(17246, {	-- "Cookie" McWeaksauce <Cooking Trainer & Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
+				}),
+				--[[			n(-40, {	-- Legacy
 					["groups"] = {
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),

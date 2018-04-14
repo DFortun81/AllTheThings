@@ -393,7 +393,7 @@ _.Zones =
 				n(-2, {		-- Vendors
 					a(n(4156, {		-- Astaia <Fishing Trainer>
 						ach(5848, {	-- Fish or Cut Bait: Darnassus
-							i(67414, {	-- Bag of Fishing Treasures
+							i(67414, {	-- Bag of Shiny Things
 								dr(1.1, i(44983)),	-- Strand Crawler Pet
 								dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
 							}),

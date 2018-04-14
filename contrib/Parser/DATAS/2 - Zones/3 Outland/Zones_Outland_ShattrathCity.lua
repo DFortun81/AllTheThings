@@ -919,6 +919,10 @@ _.Zones =
 						i(134007),	-- Eternal Black Diamond Ring Toy
 						i(134004),	-- Noble's Eternal Elementium Signet
 					}),
+					n(19195, {	-- Jim Saltit <Cooking Supplies>
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					n(21906, {	-- Kelara <Keeper of Sha'tari Heirlooms>
 						i(30113),	-- Destroyer Chestguard
 						i(30114),	-- Destroyer Handguards
