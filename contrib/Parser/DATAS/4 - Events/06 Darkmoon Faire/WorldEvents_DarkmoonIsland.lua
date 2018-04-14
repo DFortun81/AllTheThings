@@ -545,6 +545,9 @@ _.WorldEvents =
 						i(78326), -- Feet
 					}),
 				}),
+				n(55278, { -- Boomie Sparks
+					i(138202), -- Sparklepony XL Toy
+				}),
 				n(55305, { -- Carl Goodup
 					i(73762), -- Pet
 					i(75042), -- ["isToy"]= true
@@ -592,18 +595,16 @@ _.WorldEvents =
 					i(11027), -- Wood Frog Box
 				}),
 				n(55103, { -- Galissa Sundew <Fishing Prizes>
+					i(126929), 	-- Recipe: Fancy Darkmoon Feast
+					i(126928),	-- Recipe: Lemon Herb Filet
+					i(126927), 	-- Recipe: Sugar-Crusted Fish Feast
 					i(126930, { -- Faded Treasure Map
 						q(38934), -- Sila's Secret Stash
 					}),
 					i(142398), -- Darkwater Skate
 					i(126925), -- Blorp's Bubble
 					i(126926), -- Translucent Shell
-					--[[ Commented out until recipes work
-					sp(185708 , { i(126927) }), -- Recipe: Sugar-Crusted Fish Feast
-					sp(185704 , { i(126928) }), -- Recipe: Lemon Herb Filet
-					sp(185705 , { i(126929) }), -- Recipe: Fancy Darkmoon Feast
-					--]]
-					i(126931), -- Seafarer's  Slidewhistle
+					i(126931), -- Seafarer's Slidewhistle
 				}),
 				n(14828, { -- Gelvis Grimegate <Souvenir & Toy Prizes>
 					i(73762), -- Darkmoon Balloon
@@ -623,9 +624,6 @@ _.WorldEvents =
 					i(73903), -- Darkmoon Tonk Pet
 					i(73765), -- Darkmoon Turtle Pet					
 					i(73905), -- Darkmoon Zeppelin Pet
-				}),
-				n(55278, { -- Boomie Sparks
-					i(138202), -- Sparklepony XL Toy
 				}),
 				n(108785, { -- Scarlet Quartermaster
 					["groups"] = {
@@ -656,6 +654,10 @@ _.WorldEvents =
 						},
 					},
 					["description"] = "|cff66ccffMust be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster.  If you are not wearing it then you will just get flavor text.  A tabard that has been transmog will NOT work.|r"
+				}),
+				n(56069, {	-- Tatia Brine <Fishing Supplies>
+					i(6325),	-- Recipe: Brilliant Smallfish
+					i(6330),	-- Recipe: Bristle Whisker Catfish
 				}),
 			}),	
 		},

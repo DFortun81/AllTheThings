@@ -171,6 +171,34 @@ _.Zones =
 								qg(34744, qa(14030)),	-- They're Ravenous In Darnassus
 								qg(34710, qa(14053)),	-- We're Out of Cranberry Chutney Again?
 							}),
+							n(-2, {		-- Vendor
+								na(35337, {	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
+									a(i(46809, {		-- Bountiful Cookbook (Alliance)
+										a(i(44859)),	-- Recipe: Candied Sweet Potato (Alliance)
+										a(i(44858)),	-- Recipe: Cranberry Chutney (Alliance)
+										a(i(44862)),	-- Recipe: Pumpkin Pie (Alliance)
+										a(i(44861)),	-- Recipe: Slow-Roasted Turkey (Alliance)
+										a(i(44860)),	-- Recipe: Spice Bread Stuffing (Alliance)
+									})),
+									i(44835),	-- Autumnal Herbs
+									i(46888),	-- Bountiful Basket
+									i(44853),	-- Honey
+									i(46784),	-- Ripe Elwynn Pumpkin
+								}),
+								na(34682, {	-- Wilmina Holbeck <Pilgrim's Bounty Vendor>
+									a(i(46809, {		-- Bountiful Cookbook (Alliance)
+										a(i(44859)),	-- Recipe: Candied Sweet Potato (Alliance)
+										a(i(44858)),	-- Recipe: Cranberry Chutney (Alliance)
+										a(i(44862)),	-- Recipe: Pumpkin Pie (Alliance)
+										a(i(44861)),	-- Recipe: Slow-Roasted Turkey (Alliance)
+										a(i(44860)),	-- Recipe: Spice Bread Stuffing (Alliance)
+									})),
+									i(44835),	-- Autumnal Herbs
+									i(46888),	-- Bountiful Basket
+									i(44853),	-- Honey
+									i(46784),	-- Ripe Elwynn Pumpkin
+								}),
+							}),
 						},
 						["achievementID"] = 3478, -- Pilgrim
 						["u"] = 28,
@@ -517,9 +545,9 @@ _.Zones =
 						i(11303),	-- Fine Shortbow
 					})),
 					a(n(66, {	-- Tharynn Bouden <Trade Supplies>
-						i(6270, {	-- Pattern: Blue Linen Vest
-							i(6240),	-- Blue Linen Vest
-						}),
+						i(6270),	-- Pattern: Blue Linen Vest
+						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6328),	-- Recipe: Longjaw Mud Snapper
 					})),
 				}),
 				n(-74, {	-- Zone Wide

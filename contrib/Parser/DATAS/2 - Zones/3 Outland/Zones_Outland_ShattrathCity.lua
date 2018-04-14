@@ -69,13 +69,12 @@ _.Zones =
 							}),
 							n(-2, { 	-- Vendors
 								n(23064, { -- Eebee Jinglepocket
-									i(70923), -- Gaudy Winter Veil Sweater
-									i(34261, { -- Pattern: Green Winter Clothes
-										i(151792), -- Green Winter Clothes
-									}),
-									i(34262, { -- Pattern: Winter Boots
-										i(151791), -- Winter Boots
-									}),
+									i(34261),	-- Pattern: Green Winter Clothes
+									i(34262),	-- Pattern: Winter Boots
+									i(17200),	-- Recipe: Gingerbread Cookie
+									i(34413),	-- Recipe: Hot Apple Cider
+									i(17201),	-- Recipe: Winter Veil Egg Nog
+									i(70923), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 						},
@@ -207,8 +206,24 @@ _.Zones =
 						},
 						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
 					}),
+					q(11380, {	-- Manalicious
+						i(33844, {	-- Barrel of Fish
+							i(33869),	-- Recipe: Broiled Bloodfin
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33870),	-- Recipe: Skullfish Soup
+							i(33871),	-- Recipe: Stormchops
+						}),
+						i(33857, {	-- Crate of Meat
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33873),	-- Recipe: Spicy Hot Talbuk
+							i(33871),	-- Recipe: Stormchops
+						}),
+					}),
 --[[					
-					q(11380),	-- Manalicious
 					q(10325),	-- Marks of Kil'jaeden
 					q(10653),	-- Marks of Sargeras
 					qh( 11357),	-- Masked Orphan Matron
@@ -257,7 +272,25 @@ _.Zones =
 					q(11039),	-- Report to Spymaster Thalodien
 					q(10021),	-- Restoring the Light
 					q(10889),	-- Return to Shattrath
-					q(11377),	-- Revenge is Tasty
+]]--
+					q(11377, {	-- Revenge is Tasty
+						i(33844, {	-- Barrel of Fish
+							i(33869),	-- Recipe: Broiled Bloodfin
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33870),	-- Recipe: Skullfish Soup
+							i(33871),	-- Recipe: Stormchops
+						}),
+						i(33857, {	-- Crate of Meat
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33873),	-- Recipe: Spicy Hot Talbuk
+							i(33871),	-- Recipe: Stormchops
+						}),
+					}),
+--[[
 					qh( 29660),	-- Saving the Botanica
 					qa( 10863),	-- Secrets of the Arakkoa
 					q(10849),	-- Seek Out Kirrik
@@ -272,8 +305,24 @@ _.Zones =
 						i(31764),
 						i(31760),  --PET!
 					}),
+					q(11381, {	-- Soup for the Soul
+						i(33844, {	-- Barrel of Fish
+							i(33869),	-- Recipe: Broiled Bloodfin
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33870),	-- Recipe: Skullfish Soup
+							i(33871),	-- Recipe: Stormchops
+						}),
+						i(33857, {	-- Crate of Meat
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33873),	-- Recipe: Spicy Hot Talbuk
+							i(33871),	-- Recipe: Stormchops
+						}),
+					}),
 --[[					
-					q(11381),	-- Soup for the Soul
 					q(10908),	-- Speak with Rilak the Redeemed
 					q(10984),	-- Speak with the Ogre
 --]]					
@@ -300,8 +349,24 @@ _.Zones =
 					q(11953),	-- Striking Back
 					q(11877),	-- Sunfury Attack Plans
 					q(10656),	-- Sunfury Signets
-					q(11379),	-- Super Hot Stew
---]]					
+--]]				
+					q(11379, {	-- Super Hot Stew
+						i(33844, {	-- Barrel of Fish
+							i(33869),	-- Recipe: Broiled Bloodfin
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33870),	-- Recipe: Skullfish Soup
+							i(33871),	-- Recipe: Stormchops
+						}),
+						i(33857, {	-- Crate of Meat
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33873),	-- Recipe: Spicy Hot Talbuk
+							i(33871),	-- Recipe: Stormchops
+						}),
+					}),
 					q(11112, {	-- Suraku the Azure Netherwing Drake
 						["groups"] = {
 							i(32858),	-- Reins of the Azure Netherwing Drake Mount
@@ -709,6 +774,21 @@ _.Zones =
 							i(129841), -- Trousers of the Scryer's Retainer
 							i(129856), -- Vanir's Fist of Brutality
 							i(129855), -- Voodo-Woven Belt
+							i(33844, {	-- Barrel of Fish
+								i(33869),	-- Recipe: Broiled Bloodfin
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33870),	-- Recipe: Skullfish Soup
+								i(33871),	-- Recipe: Stormchops
+							}),
+							i(33857, {	-- Crate of Meat
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33873),	-- Recipe: Spicy Hot Talbuk
+								i(33871),	-- Recipe: Stormchops
+							}),
 						}),
 					}),
 					n(19213, {	-- Eiin <Specialty Tailoring Supplies>

@@ -190,11 +190,13 @@ _.Zones =
 --[[					
 					qg(2080, qa(  941)),	-- Planting the Heart
 					qg(2080, qa(  922)),	-- Rellian Greenspyre
-					qg(4265, qa( 6344, {	-- Reminders of Home
-						["groups"] = {
-						},
-						["races"] = {4},
-					})),
+]]--
+					{
+						["questID"] = 6344,	-- Reminders of Home
+						["races"] = {4},	-- Night Elf Only
+						["qg"] = 4265,		-- Quest Giver: Nyoma
+					},
+--[[
 					qg(2081, qa(13945)),	-- Resident Danger
 					qg(2083, qa(  489)),	-- Seek Redemption!
 					qg(49480, qa(28728)),	-- Signs of Things to Come
@@ -327,6 +329,18 @@ _.Zones =
 	--				n(14429, { 		-- Grimmaw - no loot of note			}), 
 	--				n(14432, { 		-- Threggil - no loot of note			}),
 	--				n(14428, { 		-- Uruson - no loot of note			}), 
+				}),
+				na(-2, {		-- Vendors
+					n(10118, {	-- Nessa Shadowsong <Fishing Supplies>
+						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6326),	-- Recipe: Slitherskin Mackerel
+					}),
+					n(4265, {	-- Nyoma <Cooking Supplies>
+						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6328),	-- Recipe: Longjaw Mud Snapper
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

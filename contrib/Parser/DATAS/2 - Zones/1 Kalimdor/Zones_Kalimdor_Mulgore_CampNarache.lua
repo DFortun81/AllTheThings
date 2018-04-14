@@ -357,6 +357,10 @@ _.Zones =
 						i(15290),	-- Brown Kodo
 						i(46100),	-- White Kodo
 					})),
+					h(n(5940, {	-- Harn Longcast <Fishing Supplies>
+						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6328),	-- Recipe: Longjaw Mud Snapper
+					})),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

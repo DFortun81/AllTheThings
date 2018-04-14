@@ -292,8 +292,12 @@ _.Zones =
 						},
 						["classes"] = {1},
 					})),
-					qg(17110, qa( 9454)),	-- The Great Moongraze Hunt
-					qg(17110, qa(10324)),	-- The Great Moongraze Hunt
+]]--
+					qg(17110, qa( 9454, {	-- The Great Moongraze Hunt
+						i(27686),	-- Recipe: Roasted Moongraze Tenderloin
+					})),
+					sq(9454, qg(17110, qa(10324))),	-- The Great Moongraze Hunt
+--[[
 					qg(17443, qa( 9570)),	-- The Kurken is Lurkin'
 --]]					
 					qg(17443, qa( 9571, {	-- The Kurken's Hide

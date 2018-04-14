@@ -132,6 +132,7 @@ profession(129, 3273, { -- First Aid
 		{
 			["recipeID"] = 7935,	-- Strong Anti-Venom
 			["itemID"] = 6454,		-- Manual: Strong Anti-Venom
+			-- TODO: https://www.wowhead.com/item=6454/manual-strong-anti-venom
 		},
 		recipe(7928),	-- Silk Bandage
 		recipe(7929),	-- Heavy Silk Bandage
@@ -139,11 +140,7 @@ profession(129, 3273, { -- First Aid
 		recipe(10841),	-- Heavy Mageweave Bandage
 		recipe(18629),	-- Runecloth Bandage
 		recipe(18630),	-- Heavy Runecloth Bandage
-		{
-			["recipeID"] = 23787,	-- Powerful Anti-Venom
-			["itemID"] = 19442,		-- Formula: Powerful Anti-Venom
-			-- TODO: https://www.wowhead.com/item=19442/formula-powerful-anti-venom
-		},
+		recipe(23787),	-- Powerful Anti-Venom
 		
 		-- BC
 		recipe(27032),	-- Nethercloth Bandage
@@ -172,11 +169,7 @@ profession(129, 3273, { -- First Aid
 		-- Legion
 		recipe(202853),	-- Silkweave Bandage
 		recipe(202854),	-- Silkweave Splint
-		{
-			["recipeID"] = 230047,	-- Feathered Luffa
-			["itemID"] = 142333,	-- Recipe: Feathered Luffa
-			-- TODO: https://www.wowhead.com/item=142333/recipe-feathered-luffa
-		},
+		recipe(230047),	-- Feathered Luffa
 		recipe(211926),	-- Set Bonue
 		recipe(211696),	-- Stabilize
 		recipe(221690),	-- Silvery Salve

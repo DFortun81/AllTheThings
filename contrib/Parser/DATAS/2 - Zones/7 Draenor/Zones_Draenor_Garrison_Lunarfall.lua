@@ -158,13 +158,12 @@ _.Zones =
 									}),
 								}),	
 								na(96304, { -- Tradurjo Jinglepocket
-									i(70923), -- Gaudy Winter Veil Sweater
-									i(34319, { -- Pattern: Red Winter Clothes
-										i(151790), -- Red Winter Clothes
-									}),
-									i(34262, { -- Pattern: Winter Boots
-										i(151791), -- Winter Boots
-									}),
+									i(34319),	-- Pattern: Red Winter Clothes
+									i(34262),	-- Pattern: Winter Boots
+									i(17200),	-- Recipe: Gingerbread Cookie
+									i(34413),	-- Recipe: Hot Apple Cider
+									i(17201),	-- Recipe: Winter Veil Egg Nog
+									i(70923), 	-- Gaudy Winter Veil Sweater
 								}),										
 							}),
 						},
@@ -2663,6 +2662,14 @@ _.Zones =
 					["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit from Lunarfall Inn using either Magic Debuff or Wild Aggression. |r\n|cff3399ffStep 2:|r |cff66ccffDo a /tired emote and he will award the toy. |r\n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison.|r"
 				})),
 				na(-2, { 	 -- Vendors
+					na(80159, { 	-- Arsenio Zerep <Cook>
+						i(122556),	-- Recipe: Buttered Sturgeon
+						i(122557),	-- Recipe: Jumbo Sea Dog
+						i(122558),	-- Recipe: Pickled Eel
+						i(122559),	-- Recipe: Salty Squid Roll
+						i(122555),	-- Recipe: Sleeper Sushi
+						i(122560),	-- Recipe: Whiptail Fillet
+					}),
 					n(88779, { 			-- Benjamin Brode 
 						i(119210), 			-- Toy
 						i(119212), 			-- Toy
@@ -2680,14 +2687,6 @@ _.Zones =
 						i(127868), 		-- Pet
 					}),
 			--[[
-					na(80159, { 	-- Arsenio Zerep -- cooking vendor
-						i(122555),
-						i(122556),
-						i(122557),
-						i(122558),
-						i(122559),
-						i(122560),
-					}),
 					na(88223, { 	-- Sergeant Crowler - Garrison Quartermaster
 						i(141642),
 					}),

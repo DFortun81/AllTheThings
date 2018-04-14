@@ -105,16 +105,32 @@ _.Zones =
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,
 					}),	
+]]--
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
 								qg(19169, qh(14036)),	-- Pilgrim's Bounty
 								qg(34654, qh(14065)),	-- Sharing a Bountiful Feast
 							}),
+							n(-2, {		-- Vendor
+								nh(34787, {	-- John Rigsdale <Pilgrim's Bounty Vendor>
+									h(i(46810, {		-- Bountiful Cookbook (Horde)
+										h(i(46806)),	-- Recipe: Candied Sweet Potato (Horde)
+										h(i(46805)),	-- Recipe: Cranberry Chutney (Horde)
+										h(i(46804)),	-- Recipe: Pumpkin Pie (Horde)
+										h(i(46807)),	-- Recipe: Slow-Roasted Turkey (Horde)
+										h(i(46803)),	-- Recipe: Spice Bread Stuffing (Horde)
+									})),
+									i(44835),	-- Autumnal Herbs
+									i(46888),	-- Bountiful Basket
+									i(44853),	-- Honey
+								}),
+							}),
 						},
 						["achievementID"] = 3478, -- Pilgrim
 						["u"] = 28,
 					}),
+--[[
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -611,18 +627,21 @@ _.Zones =
 					}), 
 				}),
 				nh(-2, {	-- Vendors
-					n(16860, { -- Jilanne
+					n(16860, {	-- Jilanne
 						i(29953),	-- Golden Dragonhawk Hatchling (PET!)
 						i(29956),	-- Red Dragonhawk Hatchling (PET!)
 						i(29957),	-- Silver Dragonhawk Hatchling (PET!)
 					}),
-					n(50484, { -- Magistrix Nizara <Silvermoon City Quartermaster>
+					n(16262, {	-- Landraelanis <Tradesman>
+						i(27685),	-- Recipe: Lynx Steak
+					}),
+					n(50484, {	-- Magistrix Nizara <Silvermoon City Quartermaster>
 						i(64914),	-- Shroud of Silvermoon
 						i(64915),	-- Cape of Silvermoon
 						i(64916),	-- Mantle of Silvermoon
 						i(45585),	-- Silvermoon City Tabard
 					}),
-					n(16264, { -- Winaestra <Hawkstrider Breeder>
+					n(16264, {	-- Winaestra <Hawkstrider Breeder>
 						i(28936),	-- Swift Pink Hawkstrider (MOUNT!)
 						i(29223),	-- Swift Green Hawkstrider (MOUNT!)
 						i(29224),	-- Swift Purple Hawkstrider (MOUNT!)

@@ -126,16 +126,42 @@ _.Zones =
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,
-					}),	
---[[					
+					}),
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
-							n(-17, { 	-- Quests
+							n(-2, {		-- Vendor
+								nh(35341, {	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
+									h(i(46810, {		-- Bountiful Cookbook (Horde)
+										h(i(46806)),	-- Recipe: Candied Sweet Potato (Horde)
+										h(i(46805)),	-- Recipe: Cranberry Chutney (Horde)
+										h(i(46804)),	-- Recipe: Pumpkin Pie (Horde)
+										h(i(46807)),	-- Recipe: Slow-Roasted Turkey (Horde)
+										h(i(46803)),	-- Recipe: Spice Bread Stuffing (Horde)
+									})),
+									i(44835),	-- Autumnal Herbs
+									i(46888),	-- Bountiful Basket
+									i(44853),	-- Honey
+									i(46796),	-- Ripe Tirisfal Pumpkin
+								}),
+								nh(34683, {	-- Rose Standish <Pilgrim's Bounty Vendor>
+									h(i(46810, {		-- Bountiful Cookbook (Horde)
+										h(i(46806)),	-- Recipe: Candied Sweet Potato (Horde)
+										h(i(46805)),	-- Recipe: Cranberry Chutney (Horde)
+										h(i(46804)),	-- Recipe: Pumpkin Pie (Horde)
+										h(i(46807)),	-- Recipe: Slow-Roasted Turkey (Horde)
+										h(i(46803)),	-- Recipe: Spice Bread Stuffing (Horde)
+									})),
+									i(44835),	-- Autumnal Herbs
+									i(46888),	-- Bountiful Basket
+									i(44853),	-- Honey
+									i(46796),	-- Ripe Tirisfal Pumpkin
+								}),
 							}),
 						},
 						["achievementID"] = 3478, -- Pilgrim
 						["u"] = 28,
 					}),
+					--[[					
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -521,6 +547,9 @@ _.Zones =
 --]]								
 				}),
 				n( -2, {	-- Vendors
+					nh(2118, {	-- Abigail Shiel <Trade Supplies>
+						i(12226),	-- Recipe: Crispy Bat Wing
+					}),
 					n(10856, { -- Argent Quartermaster Hasana <The Argent Dawn>
 						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 						i(19447),	-- Formula: Enchant Bracer - Healing Power
@@ -549,6 +578,10 @@ _.Zones =
 						i(6270, {	-- Pattern: Blue Linen Vest
 							i(6240)	-- Blue Linen Vest
 						}),
+					}),
+					nh(3550, { -- Martine Tramblay <Fishing Supplies>
+						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6326),	-- Recipe: Slitherskin Mackerel
 					}),
 					nh(12943, { -- Werg Thickblade <Leatherworking Supplies>
 						i(15741, {	-- Pattern: Stormshroud Pants

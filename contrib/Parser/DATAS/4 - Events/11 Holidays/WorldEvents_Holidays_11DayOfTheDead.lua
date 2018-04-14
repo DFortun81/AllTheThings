@@ -16,7 +16,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(-2, { -- Vendors
-						n(34382, {	-- Chapman
+						n(34382, {	-- Chapman <Day of the Dead Vendor>
+							un(27, i(46710)),	-- Recipe: Bread of the Dead
 							un(27, i(116856)), 	-- "Blooming Rose" Contender's Costume
 							un(27, i(116888)), 	-- "Night Demon" Contender's Costume
 							un(27, i(116889)), 	-- "Purple Phantom" Contender's Costume

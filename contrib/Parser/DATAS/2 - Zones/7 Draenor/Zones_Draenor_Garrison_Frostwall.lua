@@ -158,13 +158,12 @@ _.Zones =
 									}),
 								}),
 								nh(96304, { -- Tradurjo Jinglepocket
-									i(70923), -- Gaudy Winter Veil Sweater
-									i(34319, { -- Pattern: Red Winter Clothes
-										i(151790), -- Red Winter Clothes
-									}),
-									i(34262, { -- Pattern: Winter Boots
-										i(151791), -- Winter Boots
-									}),
+									i(34319),	-- Pattern: Red Winter Clothes
+									i(34262),	-- Pattern: Winter Boots
+									i(17200),	-- Recipe: Gingerbread Cookie
+									i(34413),	-- Recipe: Hot Apple Cider
+									i(17201),	-- Recipe: Winter Veil Egg Nog
+									i(70923), 	-- Gaudy Winter Veil Sweater
 								}),																			
 							}),
 						},
@@ -2678,27 +2677,27 @@ _.Zones =
 						i(119210), 	 -- Toy
 						i(119212), 	 -- Toy
 					}),
-					n(80285, { 	 -- Guh - bladespire trader
+					n(80285, { 	 	-- Guh - bladespire trader
 						["groups"] = {
 							i(119430),
 						},
 						["description"] = "|cff66ccffFound at 37.4,60.2 in Frostfire Ridge - Speak with him and have him visit your garrison.|r"
 					}),
-					nh(95471, { -- Trader Darakk
+					nh(95471, { 	-- Trader Darakk
 						i(116655), 	 -- Mount
 						i(116667), 	 -- Mount
 						i(127864), 	 -- Toy
 						i(127868), 	 -- Pet
 					}),
-	 --[[
-					nh(76928, { -- Kraank -- cooking vendor
-						i(122555),
-						i(122556),
-						i(122557),
-						i(122558),
-						i(122559),
-						i(122560),
+					nh(76928, { 	-- Kraank <Food & Drink>
+						i(122556),	-- Recipe: Buttered Sturgeon
+						i(122557),	-- Recipe: Jumbo Sea Dog
+						i(122558),	-- Recipe: Pickled Eel
+						i(122559),	-- Recipe: Salty Squid Roll
+						i(122555),	-- Recipe: Sleeper Sushi
+						i(122560),	-- Recipe: Whiptail Fillet
 					}),
+	 --[[
 					nh(88228, { -- Sergeant Grimjaw - Garrison Quartermaster
 						i(141642),
 					}),
