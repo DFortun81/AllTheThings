@@ -221,8 +221,9 @@ _.WorldEvents =
 						["groups"] = {
 						   i(113760),	-- Smoldercloth Bracers*
 						   i(113759),	-- Smoldercloth Cap
+						   i(113763),	-- Smoldercloth Gloves*
 						   i(113762),	-- Smoldercloth Robe*
-						   i(113786),	-- Smoldercloth Slippers
+						   i(113786),	-- Smoldercloth Slippers*
 						   i(113769),	-- Ravaged Leather Boots
 						   i(113705),	-- Ravaged Leather Bracers
 						   i(113698),	-- Ravaged Leather Cap
@@ -763,8 +764,8 @@ _.WorldEvents =
 							n(-302, {	-- Level 80-84
 								["groups"] = {
 									i(134616),	-- Inflammatory Cord
-									i(134615),	-- Inflammatory Hood
-									i(134614),	-- Inflammatory Treads
+									i(134615),	-- Inflammatory Hood*
+									i(134614),	-- Inflammatory Treads*
 									i(134622),	-- Incendiary Belt
 									i(134620),	-- Incendiary Boots
 									i(134621),	-- Incendiary Helm
@@ -784,7 +785,7 @@ _.WorldEvents =
 									i(134611),	-- Scorching Pummeler
 									i(134632),	-- Scorching Redoubt
 									i(134610),	-- Scorching Shanker
-									i(134619),	-- Scorching Staff
+									i(134619),	-- Scorching Staff*
 									i(134627),	-- Scorching Pendant*
 								},
 								["description"] = "Rewarded for winning a random battleground in the level 80-84 range.",

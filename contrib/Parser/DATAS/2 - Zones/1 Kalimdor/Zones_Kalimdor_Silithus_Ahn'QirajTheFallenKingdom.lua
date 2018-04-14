@@ -1090,6 +1090,12 @@ END OF MICRO-HOLIDAY --]]
 								},
 								["description"] = "This rare was only available during the Elemental Invasions.",
 							}),
+							n(15204, {	-- High Marshal Whirlaxis
+								["g"] = {
+									un(2, i(20691)),	-- Windshear Cape
+								},
+								["description"] = "This was a summonable elite.",
+							}),
 						}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),						

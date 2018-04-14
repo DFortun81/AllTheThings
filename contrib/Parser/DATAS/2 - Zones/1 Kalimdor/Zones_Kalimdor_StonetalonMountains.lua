@@ -1103,6 +1103,10 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							qh(6283, {	-- Bloodfury Bloodline
+								un(34, i(16990)),	-- Spritekin Cloak
+								un(34, i(16987)),	-- Screecher Belt
+							}),
 							qh(6481, {	-- Earthen Arise
 								un(34, i(16981)),	-- Owlbeard Bracers
 								un(34, i( 1306)),	-- Wolfmane Wristguards

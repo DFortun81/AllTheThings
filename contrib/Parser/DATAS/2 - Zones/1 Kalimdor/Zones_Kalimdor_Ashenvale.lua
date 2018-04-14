@@ -1421,6 +1421,9 @@ _.Zones =
 								un(34, i(5323)),	-- Everglow Lantern
 								un(34, i(6721)),	-- Chestplate of Kor
 							}),
+							qh( 247, {	-- The Hunt Completed
+								un(34, i(16658)),	-- Wildhunter Cloak
+							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							na(3808, { 	-- Forsaken Dark Stalker
