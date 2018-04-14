@@ -6542,11 +6542,13 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 				
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
-					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) and spellRecipeInfo.learned then
-						SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-						if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-							SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-							learned = learned + 1;
+					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+						if spellRecipeInfo.learned then
+							SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+							if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+								SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+								learned = learned + 1;
+							end
 						end
 						if not skillCache[spellRecipeInfo.recipeID] then
 							app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
