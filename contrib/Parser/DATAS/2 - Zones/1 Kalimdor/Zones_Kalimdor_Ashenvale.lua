@@ -1327,16 +1327,11 @@ _.Zones =
 						i(4778),
 						i(4777),
 					}),
-	--[[
-					na(3954, { 	-- Dalria (_)
-						["groups"] = {
-							i(20855), -- Pattern JC
-							i(11101), -- Formula Ench
-							i(11039), -- Formula Ench
-						},
-						["description"] = "|cff66ccffJC Pattern and 2 Enchant Formulas Limited Supply (1)|r",
+					na(3954, { 	-- Dalria <Trade Goods>
+						i(20855), -- Design: Wicked Moonstone Ring
+						i(11101), -- Formula: Enchant Bracer - Lesser Strength
+						i(11039), -- Formula: Enchant Cloak - Minor Agility
 					}),
-	]]--
 					na(34601, { -- Harlown Darkweave (_)
 						["groups"] = {
 							i(7361, { -- Pattern: Herbalist's Gloves
@@ -1399,12 +1394,10 @@ _.Zones =
 							}),
 						},
 					}),
-	--[[
-					nh(12962, { -- Wik'Tar (h)
-						i(6369), 	-- Recipe Cooking
-						i(17062), 	-- Recipe Cooking
+					nh(12962, { -- Wik'Tar <Fish Merchant & Supplies>
+						i(17062), 	-- Recipe: Mithril Head Trout
+						i(6369), 	-- Recipe: Rockscale Cod
 					}),
-	]]--
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

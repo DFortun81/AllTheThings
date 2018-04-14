@@ -279,7 +279,6 @@ profession(185, 2550, { -- Cooking
 		recipe(8238),	-- Savory Deviate Delight
 		recipe(6501),	-- Clam Chowder
 		recipe(3372),	-- Murloc Fin Soup
-		-- i(34834), TODO: https://www.wowhead.com/item=34834/recipe-captain-rumseys-lager#contained-in-item
 		recipe(45695),	-- Captain Rumsey's Lager
 		recipe(2547),	-- Redridge Goulash
 		recipe(7755),	-- Bristle Whisker Catfish
@@ -299,19 +298,15 @@ profession(185, 2550, { -- Cooking
 		recipe(24418),	-- Heavy Crocolisk Stew
 		recipe(3399),	-- Tasty Lion Steak
 		desc(un(1, recipe(13028)), "Henry Stern who is currently the only source of acquiring Goldthorn Tea is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it."),	-- Goldthorn Tea
-		-- i(6369), TODO: https://www.wowhead.com/item=6369/recipe-rockscale-cod
 		recipe(7828),	-- Rockscale Cod
 		recipe(4094),	-- Barbecued Buzzard Wing
 		recipe(15863),	-- Carrion Surprise
 		recipe(7213),	-- Giant Clam Scorcho
 		recipe(15856),	-- Hot Wolf Ribs
 		recipe(15861),	-- Jungle Stew
-		-- i(17062), TODO: https://www.wowhead.com/item=17062/recipe-mithril-head-trout
 		recipe(20916),	-- Mithril Head Trout
 		recipe(15865),	-- Mystery Stew
-		-- i(12228), TODO: https://www.wowhead.com/item=12228/recipe-roast-raptor
 		recipe(15855),	-- Roast Raptor
-		-- i(21219), TODO: https://www.wowhead.com/item=21219/recipe-sagefish-delight
 		recipe(25954),	-- Sagefish Delight
 		recipe(3400),	-- Soothing Turtle Bisque
 		recipe(15906),	-- Dragonbreath Chili
@@ -322,9 +317,7 @@ profession(185, 2550, { -- Cooking
 		recipe(15933),	-- Monster Omelet
 		recipe(15915),	-- Spiced Chili Crab
 		recipe(18238),	-- Spotted Yellowtail
-		-- i(18046), TODO: https://www.wowhead.com/item=18046/recipe-tender-wolf-steak
 		recipe(22480),	-- Tender Wolf Steak
-		-- i(16767), TODO: https://www.wowhead.com/item=16767/recipe-undermine-clam-chowder
 		recipe(20626),	-- Undermine Clam Chowder
 		recipe(18240),	-- Grilled Squid
 		recipe(18242),	-- Hot Smoked Bass

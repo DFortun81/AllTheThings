@@ -1433,10 +1433,20 @@ _.Zones =
 						i(73454),	-- Cataclysmic Gladiator's Ripper
 						i(73455),	-- Cataclysmic Gladiator's Shanker
 					}),
+					n(40589, {	-- Dirge Quikcleave <Butcher>
+						un(7, i(21025)), -- Recipe: Dirge's Kickin' Chimaerok Chops
+						i(18046),	-- Recipe: Tender Wolf Steak
+					}),
 					n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>
 						i(6047, {	-- Plans: Golden Scale Coif
 							i(3837),	-- Golden Scale Coif
 						}),
+					}),
+					n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
+						i(18046),	-- Recipe: Tender Wolf Steak
+					}),
+					n(106940, {	-- Innkeeper Fizzgrimble <Innkeeper>
+						i(18046),	-- Recipe: Tender Wolf Steak
 					}),
 					n(69323, {	-- Tiny Tayger <Ruthless Gladiator>
 						i(146640, { -- Arsenal: Ruthless Gladiator's Weapons

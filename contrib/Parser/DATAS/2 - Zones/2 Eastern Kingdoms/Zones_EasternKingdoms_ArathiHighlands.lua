@@ -1120,14 +1120,11 @@ _.Zones =
 						i(4826),	-- Marauder Axe
 						i(4831),	-- Stalking Pants
 					}),
-					a(n(2810, {	-- Hammon Karwn <Superior Tradesman>
-						i(21942, {	-- Design: Ruby Crown of Restoration
-							i(20969),	-- Ruby Crown of Restoration
-						}),
-						i(5973, {	-- Pattern: Barbaric Leggings
-							i(5963),	-- Barbaric Leggings
-						}),
-					})),
+					na(2810, {	-- Hammon Karwn <Superior Tradesman>
+						i(21942),	-- Design: Ruby Crown of Restoration
+						i(5973),	-- Pattern: Barbaric Leggings
+						i(12228),	-- Recipe: Roast Raptor
+					}),
 					a(n(1471, {	-- Jannos Ironwill <Superior Macecrafter>
 						i(10858, {	-- Plans: Solid Iron Maul
 							i(3851),	-- Solid Iron Maul
