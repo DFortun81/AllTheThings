@@ -174,5 +174,6 @@ profession(129, 3273, { -- First Aid
 		recipe(211696),	-- Stabilize
 		recipe(221690),	-- Silvery Salve
 		recipe(212067),	-- Treat Burns
+		recipe(211353),	-- Treat Fever
 	}),
 });

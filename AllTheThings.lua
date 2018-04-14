@@ -6539,6 +6539,23 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 			if skillCache then
 				-- Cache learned recipes
 				local learned = 0;
+				
+				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+				for i = 1,#recipeIDs do
+					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) and spellRecipeInfo.learned then
+						SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+						if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+							SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+							learned = learned + 1;
+						end
+						if not skillCache[spellRecipeInfo.recipeID] then
+							app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
+							skillCache[spellRecipeInfo.recipeID] = { {} };
+						end
+					end
+				end
+				
+				--[[
 				for spellID,groups in pairs(skillCache) do
 					spellID = tonumber(spellID);
 					if not GetTempDataSubMember("CollectedSpells", spellID) then
@@ -6551,6 +6568,7 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 						end
 					end
 				end
+				]]--
 				
 				-- Open the Tradeskill list for this Profession
 				local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
