@@ -698,95 +698,93 @@ _.Instances =
 							},
 							["description"]	= "Private Rocknot must be sent into a drunken rage to aggro Phalanx. \nTo do that, feed him 6 dark iron ale mugs which can be bought from Plugger Spazzring. \nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
 						})),
-						n(-2, { 	-- Vendors
-							n(12944, { 	-- Lokhtos Darkbargainer 
-								["groups"] = {
-									i(18628, {	-- Thorium Brotherhood Contract
-										q(7604, {	-- A Binding Contract
-											i(18592, {	-- Plans: Sulfuron Hammer
-												i(17193),	-- Sulfuron Hammer
-											}),
+						n(12944, { 			-- Lokhtos Darkbargainer 
+							["groups"] = {
+								i(18628, {	-- Thorium Brotherhood Contract
+									q(7604, {	-- A Binding Contract
+										i(18592, {	-- Plans: Sulfuron Hammer
+											i(17193),	-- Sulfuron Hammer
 										}),
-									}),									
-									i(17025, { 	-- Pattern: Black Dragonscale Boots
-										i(16984),	-- Black Dragonscale Boots
 									}),
-									i(19331, { 	-- Pattern: Chromatic Gauntlets
-										i(19157),	-- Chromatic Gauntlets
-									}),
-									i(19332, { 	-- Pattern: Corehound Belt
-										i(19162),	-- Corehound Belt
-									}),
-									i(17022, { 	-- Pattern: Corehound Boots
-										i(16982),	-- Corehound Boots
-									}),
-									i(17018, { 	-- Pattern: Flarecore Gloves
-										i(16979),	-- Flarecore Gloves
-									}),
-									i(19220, { 	-- Pattern: Flarecore Leggings
-										i(19165),	-- Flarecore Leggings
-									}),
-									i(17017, { 	-- Pattern: Flarecore Mantle
-										i(16980),	-- Flarecore Mantle
-									}),
-									i(19219, { 	-- Pattern: Flarecore Robe
-										i(19156),	-- Flarecore Robe
-									}),
-									i(19330, { 	-- Pattern: Lava Belt
-										i(19149),	-- Lava Belt
-									}),
-									i(19333, { 	-- Pattern: Molten Belt
-										i(19163),	-- Molten Belt
-									}),
-									i(17023, { 	-- Pattern: Molten Helm
-										i(16983),	-- Molten Helm
-									}),
-									i(19208, { 	-- Plans: Black Amnesty
-										i(19166),	-- Black Amnesty
-									}),
-									i(19209, { 	-- Plans: Blackfury
-										i(19167),	-- Blackfury
-									}),
-									i(19211, { 	-- Plans: Blackguard
-										i(19168),	-- Blackguard
-									}),
-									i(20040, { 	-- Plans: Dark Iron Boots
-										i(20039),	-- Dark Iron Boots
-									}),
-									i(17051, { 	-- Plans: Dark Iron Bracers
-										i(17014),	-- Dark Iron Bracers
-									}),
-									i(17060, { 	-- Plans: Dark Iron Destroyer
-										i(17016),	-- Dark Iron Destroyer
-									}),
-									i(19207, { 	-- Plans: Dark Iron Gauntlets
-										i(19164),	-- Dark Iron Gauntlets
-									}),
-									i(19206, { 	-- Plans: Dark Iron Helm
-										i(19148),	-- Dark Iron Helm
-									}),
-									i(17052, { 	-- Plans: Dark Iron Leggings
-										i(17013),	-- Dark Iron Leggings
-									}),
-									i(17059, { 	-- Plans: Dark Iron Reaver
-										i(17015),	-- Dark Iron Reaver
-									}),
-									i(19210, { 	-- Plans: Ebon Hand
-										i(19170),	-- Ebon Hand
-									}),
-									i(17049, { 	-- Plans: Fiery Chain Girdle
-										i(16989),	-- Fiery Chain Girdle
-									}),
-									i(17053, { 	-- Plans: Fiery Chain Shoulders
-										i(16988),	-- Fiery Chain Shoulders
-									}),
-									i(19212, { 	-- Plans: Nightfall
-										i(19169),	-- Nightfall
-									}),
-								},
-								["description"] = "While having a Sulfuron Ingot in your inventory, speak with Lokhtos Darkbargainer and click on the new chat option to obtain Thorium Brotherhood Contract.",									
-							}),
-						}),		
+								}),									
+								i(17025, { 	-- Pattern: Black Dragonscale Boots
+									i(16984),	-- Black Dragonscale Boots
+								}),
+								i(19331, { 	-- Pattern: Chromatic Gauntlets
+									i(19157),	-- Chromatic Gauntlets
+								}),
+								i(19332, { 	-- Pattern: Corehound Belt
+									i(19162),	-- Corehound Belt
+								}),
+								i(17022, { 	-- Pattern: Corehound Boots
+									i(16982),	-- Corehound Boots
+								}),
+								i(17018, { 	-- Pattern: Flarecore Gloves
+									i(16979),	-- Flarecore Gloves
+								}),
+								i(19220, { 	-- Pattern: Flarecore Leggings
+									i(19165),	-- Flarecore Leggings
+								}),
+								i(17017, { 	-- Pattern: Flarecore Mantle
+									i(16980),	-- Flarecore Mantle
+								}),
+								i(19219, { 	-- Pattern: Flarecore Robe
+									i(19156),	-- Flarecore Robe
+								}),
+								i(19330, { 	-- Pattern: Lava Belt
+									i(19149),	-- Lava Belt
+								}),
+								i(19333, { 	-- Pattern: Molten Belt
+									i(19163),	-- Molten Belt
+								}),
+								i(17023, { 	-- Pattern: Molten Helm
+									i(16983),	-- Molten Helm
+								}),
+								i(19208, { 	-- Plans: Black Amnesty
+									i(19166),	-- Black Amnesty
+								}),
+								i(19209, { 	-- Plans: Blackfury
+									i(19167),	-- Blackfury
+								}),
+								i(19211, { 	-- Plans: Blackguard
+									i(19168),	-- Blackguard
+								}),
+								i(20040, { 	-- Plans: Dark Iron Boots
+									i(20039),	-- Dark Iron Boots
+								}),
+								i(17051, { 	-- Plans: Dark Iron Bracers
+									i(17014),	-- Dark Iron Bracers
+								}),
+								i(17060, { 	-- Plans: Dark Iron Destroyer
+									i(17016),	-- Dark Iron Destroyer
+								}),
+								i(19207, { 	-- Plans: Dark Iron Gauntlets
+									i(19164),	-- Dark Iron Gauntlets
+								}),
+								i(19206, { 	-- Plans: Dark Iron Helm
+									i(19148),	-- Dark Iron Helm
+								}),
+								i(17052, { 	-- Plans: Dark Iron Leggings
+									i(17013),	-- Dark Iron Leggings
+								}),
+								i(17059, { 	-- Plans: Dark Iron Reaver
+									i(17015),	-- Dark Iron Reaver
+								}),
+								i(19210, { 	-- Plans: Ebon Hand
+									i(19170),	-- Ebon Hand
+								}),
+								i(17049, { 	-- Plans: Fiery Chain Girdle
+									i(16989),	-- Fiery Chain Girdle
+								}),
+								i(17053, { 	-- Plans: Fiery Chain Shoulders
+									i(16988),	-- Fiery Chain Shoulders
+								}),
+								i(19212, { 	-- Plans: Nightfall
+									i(19169),	-- Nightfall
+								}),
+							},
+							["description"] = "While having a Sulfuron Ingot in your inventory, speak with Lokhtos Darkbargainer and click on the new chat option to obtain Thorium Brotherhood Contract.",									
+						}),	
 						cr(9156, e(384, {	-- Ambassador Flamelash
 							i(11809), 	-- Flame Wrath
 							i(11808), 	-- Circle of Flame
@@ -803,12 +801,18 @@ _.Instances =
 							["description"] = "This is a rare that is not always present.",
 						}),
 						n(9037, {			-- Gloom'rel
-							["groups"] = {
-								o(164869, {		-- Spectral Chalice
-									qp186(q(4083)),	-- The Spectral Chalice
-								}),
-							},
 							["description"] = "If you are a miner, speak with Gloom'rel so he will summon the Spectral Chalice to learn to smelt Dark Iron Ore.\nThe quest requires 2x Star Ruby, 20x Gold Bar, and 10x Truesilver Bar to complete.",
+							["requireSkill"] = 186,	-- Mining
+							["groups"] = {
+								{
+									--["objectID"] = 164869,	-- The Spectral Chalice (Object)
+									["questID"] = 4083,		-- The Spectral Chalice (Quest)
+									["icon"] = "Interface\\Icons\\INV_Misc_Bowl_01",
+									["groups"] = {
+										recipe(14891),		-- Smelt Dark Iron (Recipe)
+									},
+								},
+							},
 						}),
 						cr(9039, e(385, {	-- The Seven
 							o(169243, {	-- Chest of The Seven

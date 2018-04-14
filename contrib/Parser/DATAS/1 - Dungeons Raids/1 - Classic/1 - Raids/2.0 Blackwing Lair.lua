@@ -97,6 +97,9 @@ _.Instances =
 						},
 						["creatureID"] = 11983,
 					}),
+					n(14401, {	-- Master Elemental Shaper Krixix
+						i(44956),	-- Goblin's Guide to Elementium
+					}),
 					e(1533, { -- Ebonroc
 						["groups"] = {
 							i(19353),	-- Drake Talon Cleaver
