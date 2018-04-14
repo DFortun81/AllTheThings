@@ -685,6 +685,11 @@ _.Zones =
 					a(n(1687, {	-- Cliff Hadin <Bowyer>
 						i(11304),	-- Fine Longbow
 					})),
+					a(n(1684, { -- Khara Deepwater <Fishing Supplies>
+						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6329),	-- Recipe: Loch Frenzy Delight
+						i(6328),	-- Recipe: Longjaw Mud Snapper
+					})),
 					a(n(954, {	-- Kat Sampson <Leather Armor Merchant>
 						i(4788),	-- Agile Boots
 						i(4789),	-- Stable Boots

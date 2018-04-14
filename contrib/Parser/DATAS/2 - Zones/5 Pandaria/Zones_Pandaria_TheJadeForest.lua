@@ -124,8 +124,6 @@ _.Zones =
 					q(30157),	-- Emptier Nests
 					q(30136),	-- Empty Nests
 					qa( 31736),	-- Envoy of the Alliance
-					q(31486),	-- Everything I Know About Cooking
-					q(31279),	-- Everything I Know About Cooking
 					q(30004),	-- Everything In Its Place
 					qh( 31771),	-- Face to Face With Consequence
 					qa( 29762),	-- Family Heirlooms
@@ -441,6 +439,7 @@ _.Zones =
 						i(90386),
 						i(90389),
 					}),
+					q(31486),		-- Everything I Know About Cooking
 					q(29639,  {  	-- Flying Colors
 						i(80798),
 						i(80799),
@@ -959,6 +958,28 @@ _.Zones =
 				--	n(65003, { 		-- Martar the Not-So-Smart	}),
 				}),
 				n(-2, {		-- Vendors
+					n(56707, { 		-- Chin <Master of Noodles>
+						recipe(124233),	-- Blanched Needle Mushrooms
+						recipe(124228),	-- Boiled Silkworm Pupa
+						recipe(124227),	-- Dried Needle Mushrooms
+						recipe(124226),	-- Dried Peaches
+						recipe(104297),	-- Fish Cake
+						recipe(104237),	-- Golden Carp Consomme
+						recipe(124231),	-- Green Curry Fish
+						recipe(124232),	-- Peach Pie
+						recipe(125080),	-- Pearl Milk Tea
+						recipe(125067),	-- Perfectly Cooked Instant Noodles
+						recipe(124223),	-- Pounded Rice Cake
+						recipe(124229),	-- Red Bean Bun
+						recipe(125122),	-- Rice Pudding
+						recipe(125078),	-- Roasted Barley Tea
+						recipe(124234),	-- Skewered Peanut Chicken
+						recipe(125117), -- Sliced Peaches
+						recipe(124230),	-- Tangy Yogurt
+						recipe(124225),	-- Toasted Fish Jerky
+						recipe(125121),	-- Wildfowl Ginseng Soup
+						recipe(124224),	-- Yak Cheese Curds
+					}),
 					nh(56406, {	-- Rivett Clutchpop
 						i(81579),	-- Faded Forest Satin Hood
 						i(81580),	-- Faded Forest Hide Helm

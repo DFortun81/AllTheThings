@@ -139,6 +139,34 @@ _.Zones =
 								qg(34714, qh(14060)),	-- Easy As Pie
 								qg(19176, qh(14036)),	-- Pilgrim's Bounty
 							}),
+							n(-2, {		-- Vendor
+								nh(35343, {	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
+									h(i(46810, {		-- Bountiful Cookbook (Horde)
+										h(i(46806)),	-- Recipe: Candied Sweet Potato (Horde)
+										h(i(46805)),	-- Recipe: Cranberry Chutney (Horde)
+										h(i(46804)),	-- Recipe: Pumpkin Pie (Horde)
+										h(i(46807)),	-- Recipe: Slow-Roasted Turkey (Horde)
+										h(i(46803)),	-- Recipe: Spice Bread Stuffing (Horde)
+									})),
+									i(44835),	-- Autumnal Herbs
+									i(46888),	-- Bountiful Basket
+									i(44853),	-- Honey
+									i(46797),	-- Mulgore Sweet Potato
+								}),
+								nh(34684, {	-- Laha Farplain <Pilgrim's Bounty Vendor>
+									h(i(46810, {		-- Bountiful Cookbook (Horde)
+										h(i(46806)),	-- Recipe: Candied Sweet Potato (Horde)
+										h(i(46805)),	-- Recipe: Cranberry Chutney (Horde)
+										h(i(46804)),	-- Recipe: Pumpkin Pie (Horde)
+										h(i(46807)),	-- Recipe: Slow-Roasted Turkey (Horde)
+										h(i(46803)),	-- Recipe: Spice Bread Stuffing (Horde)
+									})),
+									i(44835),	-- Autumnal Herbs
+									i(46888),	-- Bountiful Basket
+									i(44853),	-- Honey
+									i(46797),	-- Mulgore Sweet Potato
+								}),
+							}),
 						},
 						["achievementID"] = 3478, -- Pilgrim
 						["u"] = 28,
@@ -151,13 +179,12 @@ _.Zones =
 							}),
 							n(-2, { 	-- Vendors
 								n(13432, { -- Seersa Jinglepocket
-									i(70923), -- Gaudy Winter Veil Sweater
-									i(34261, { -- Pattern: Green Winter Clothes
-										i(151792), -- Green Winter Clothes
-									}),
-									i(34262, { -- Pattern: Winter Boots
-										i(151791), -- Winter Boots
-									}),
+									i(34319),	-- Pattern: Red Winter Clothes
+									i(34262),	-- Pattern: Winter Boots
+									i(17200),	-- Recipe: Gingerbread Cookie
+									i(34413),	-- Recipe: Hot Apple Cider
+									i(17201),	-- Recipe: Winter Veil Egg Nog
+									i(70923), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 						},
@@ -383,38 +410,38 @@ _.Zones =
 					}),	
 --]]
 				}),
-				n( -2, {	-- Vendors
-					h(n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>
+				nh( -2, {	-- Vendors
+					n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>
 						i(64917),	-- Mantle of Thunder Bluff
 						i(64918),	-- Cape of Thunder Bluff
 						i(64919),	-- Shroud of Thunder Bluff
 						i(45584),	-- Thunder Bluff Tabard
-					})),
-					h(n(3019, {	-- Delgo Ragetotem <Axe Merchant>
+					}),
+					n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 						i(12249),	-- Meciless Axe
-					})),
-					h(n(8401, {	-- Halpa <Prairie Dog Vendor>
+					}),
+					n(8401, {	-- Halpa <Prairie Dog Vendor>
 						i(10394),	-- Prairie Dog Whistle Pet
-					})),
-					h(n(8358, {	-- Hewa <Cloth Armor Merchant>
+					}),
+					n(8358, {	-- Hewa <Cloth Armor Merchant>
 						i(3428),	-- Common Grey Shirt
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
-					})),
-					h(n(3028, {	-- Kah Mistrunner <Fishing Trainer>
+					}),
+					n(3028, {	-- Kah Mistrunner <Fishing Trainer>
 						ach(5849, {	-- Fish or Cut Bait: Thunder Bluff
 							i(67414, {	-- Bag of Fishing Treasures
 								dr(1.1, i(44983)),	-- Strand Crawler
 								dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
 							}),
 						}),
-					})),
-					h(n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
+					}),
+					n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
 						i(11307),	-- Massive Longbow
 						i(11306),	-- Sturdy Recurve
 						i(11303),	-- Fine Shortbow
-					})),
-					h(n(3005, {	-- Mahu <Tailoring Supplies>
+					}),
+					n(3005, {	-- Mahu <Tailoring Supplies>
 						i(10311, {	-- Pattern: Orange Martial Shirt
 							i(10052),	-- Orange Martial Shirt
 						}),
@@ -448,8 +475,8 @@ _.Zones =
 						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
 							i(54506),	-- Flame-Ascended Pantaloons
 						}),
-					})),
-					h(n(3008, {	-- Mak <Leatherworking Supplies>
+					}),
+					n(3008, {	-- Mak <Leatherworking Supplies>
 						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
 							i(75106),	-- Vicious Wyrmhide Bracers
 						}),
@@ -576,13 +603,13 @@ _.Zones =
 						i(67100, {	-- Pattern: Dragonkiller Tunic
 							i(56564),	-- Dragonkiller Tunic
 						}),
-					})),
-					h(n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
+					}),
+					n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
 						i(67308, {	-- Formula: Enchanted Lantern
 							i(67274),	-- Enchanted Lantern Pet
 						}),
-					})),
-					h(n(51503, {	-- Randah Songhorn <Guild Vendor>
+					}),
+					n(51503, {	-- Randah Songhorn <Guild Vendor>
 						["groups"] = {
 							i(69209),	-- Illustrious Guild Tabard - Friendly
 							i(69210),	-- Renowned Guild Tabard - Honored
@@ -684,8 +711,12 @@ _.Zones =
 							}),
 						},
 						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
-					})),
-					h(n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>
+					}),
+					n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
+						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6330),	-- Recipe: Bristle Whisker Catfish
+					}),
+					n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>
 						i(66122, {	-- Plans: Vicious Pyrium Legguards
 							i(75136),	-- Vicious Pyrium Legguards
 						}),
@@ -779,8 +810,8 @@ _.Zones =
 						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
 							i(75121),	-- Vicious Ornate Pyrium Gauntlets
 						}),
-					})),
-					h(n(5189, {	-- Thrumn <Tabard Vendor>
+					}),
+					n(5189, {	-- Thrumn <Tabard Vendor>
 						["groups"] = {
 							h(i(20131)),	-- Battle Tabard of the Defilers
 							i(31404),		-- Green Trophy Tabard of the Illidari
@@ -818,7 +849,7 @@ _.Zones =
 							},
 						},
 						["description"] = "Tabards are only obtainable by those who have earned them.|r",
-					})),
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

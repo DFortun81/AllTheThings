@@ -443,7 +443,10 @@ _.Zones =
 						},
 						["questID"] = 38593,
 						["icon"] = "Interface\\Icons\\INV_Spear_05",
-					}),				
+					}),
+					n(96240, {		-- Lok'goron Hashslinger
+						i(128501),	-- Recipe: Fel Eggs and Ham
+					}),
 					o(241565, { 	-- Looted Bleeding Hollow Treasure
 						["groups"] = {	
 							q(38560,{ 	-- Garrison Campaign: The Bane of the Bleeding Hollow

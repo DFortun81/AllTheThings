@@ -523,8 +523,8 @@ _.Zones =
 						["description"] = "For a walkthrough of how to obtain this mount. Go to Special Header under Outdoor Zones - Broken Isles - Dalaran.",
 					}),										
 				}),
-				n( -2, {	-- Vendors
-					a(n(844, {	-- Antonio Perelli <Traveling Salesman>
+				na( -2, {	-- Vendors
+					n(844, {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {
 							i(4795),	-- Bear Bracers
 							i(4796),	-- Owl Bracers
@@ -534,8 +534,8 @@ _.Zones =
 							i(4777),	-- Ironwood Maul
 						},
 						["description"] = "This vendor travels in a big circuit from Elwynn Forest(stopping in Goldshire) to Westfall(stopping in Sentinel Hill) to Duskwood(stopping in Darkshire) to Redridge Mountains(stopping in Lakeshire) and then back to Elwynn Forest, so if you cannot find him in this zone, check one of the other three zones.|r",
-					})),
-					a(n(843, {	-- Gina MacGregor <Trade Supplies>
+					}),
+					n(843, {	-- Gina MacGregor <Trade Supplies>
 						i(6274, {	-- Pattern: Blue Overalls
 							i(6263),	-- Blue Overalls
 						}),
@@ -545,10 +545,13 @@ _.Zones =
 						i(5786, {	-- Pattern: Murloc Scale Belt
 							i(5780),	-- Murloc Scale Belt
 						}),
-					})),
-					a(n(1668, {	-- William MacGregor <Bowyer>
+					}),
+					n(4305, {	-- Kriggon Talsone <Fisherman>
+						i(6326),	-- Recipe: Slitherskin Mackerel
+					}),
+					n(1668, {	-- William MacGregor <Bowyer>
 						i(11304),	-- Fine Longbow
-					})),
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

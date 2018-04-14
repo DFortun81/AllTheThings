@@ -103,14 +103,6 @@ _.Zones =
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
 					}),
 --]]
 					n(-61, {     -- Feast of Winter Veil
@@ -120,13 +112,12 @@ _.Zones =
 							}),
 							n(-2, { -- Vendors
 								n(13429, { -- Nardstrum Copperpinch
-									i(70923), -- Gaudy Winter Veil Sweater
-									i(34261, { -- Pattern: Green Winter Clothes
-										i(151792), -- Green Winter Clothes
-									}),
-									i(34262, { -- Pattern: Winter Boots
-										i(151791), -- Winter Boots
-									}),
+									i(34261),	-- Pattern: Green Winter Clothes
+									i(34262),	-- Pattern: Winter Boots
+									i(17200),	-- Recipe: Gingerbread Cookie
+									i(34413),	-- Recipe: Hot Apple Cider
+									i(17201),	-- Recipe: Winter Veil Egg Nog
+									i(70923), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 						},
@@ -525,7 +516,7 @@ _.Zones =
 							i(56564),	-- Dragonkiller Tunic
 						}),
 					}),
-					h(n(51496, {	-- Kim Horn <Guild Vendor>
+					n(51496, {	-- Kim Horn <Guild Vendor>
 						["groups"] = {
 							i(69209),	-- Illustrious Guild Tabard - Friendly
 							i(69210),	-- Renowned Guild Tabard - Honored
@@ -627,11 +618,17 @@ _.Zones =
 							}),
 						},
 						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
-					})),
+					}),
 					n(4558, {	-- Lauren Newcomb <Light Armor Merchant>
 						i(3428),	-- Common Gray Shirt
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
+					}),
+					n(4574, {	-- Lizbeth Cromwell <Fishing Supplies>
+						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6328),	-- Recipe: Longjaw Mud Snapper
+						i(17062),	-- Recipe: Mithril Head Trout
+						i(6369),	-- Recipe: Rockscale Cod
 					}),
 					n(5190, {	-- Merill Pleasance <Tabard Vendor>
 						["groups"] = {

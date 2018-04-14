@@ -110,7 +110,9 @@ _.Zones =
 							}),
 							n(-2, { -- Vendors
 								n(23012, { -- Hotoppik Jinglepocket
-									i(70923), -- Gaudy Winter Veil Sweater
+									i(17200),	-- Recipe: Gingerbread Cookie
+									i(17201),	-- Recipe: Winter Veil Egg Nog
+									i(70923), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 						},

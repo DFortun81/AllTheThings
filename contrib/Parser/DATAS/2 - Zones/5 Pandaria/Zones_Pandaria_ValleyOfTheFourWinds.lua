@@ -1890,6 +1890,29 @@ _.Zones =
 						i(102732),	-- Prideful Gladiator's Plate Legguards
 						i(102685),	-- Prideful Gladiator's Plate Shoulders
 					}),
+					n(64231, { 	-- Sungshin Ironpaw <Guide to the Ways>
+						-- TODO: https://www.wowhead.com/npc=64231/sungshin-ironpaw#starts
+						recipe(124233),	-- Blanched Needle Mushrooms
+						recipe(124228),	-- Boiled Silkworm Pupa
+						recipe(124227),	-- Dried Needle Mushrooms
+						recipe(124226),	-- Dried Peaches
+						recipe(104297),	-- Fish Cake
+						recipe(104237),	-- Golden Carp Consomme
+						recipe(124231),	-- Green Curry Fish
+						recipe(124232),	-- Peach Pie
+						recipe(125080),	-- Pearl Milk Tea
+						recipe(125067),	-- Perfectly Cooked Instant Noodles
+						recipe(124223),	-- Pounded Rice Cake
+						recipe(124229),	-- Red Bean Bun
+						recipe(125122),	-- Rice Pudding
+						recipe(125078),	-- Roasted Barley Tea
+						recipe(124234),	-- Skewered Peanut Chicken
+						recipe(125117), -- Sliced Peaches
+						recipe(124230),	-- Tangy Yogurt
+						recipe(124225),	-- Toasted Fish Jerky
+						recipe(125121),	-- Wildfowl Ginseng Soup
+						recipe(124224),	-- Yak Cheese Curds
+					}),
 					n(59583, {	-- Trader Jambeezi <Adventuring Supplies>
 						i(81579),	-- Faded Forest Satin Hood
 						i(81580),	-- Faded Forest Hide Helm

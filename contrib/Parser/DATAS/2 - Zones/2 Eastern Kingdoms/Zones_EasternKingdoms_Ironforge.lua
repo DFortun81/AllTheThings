@@ -406,13 +406,12 @@ _.Zones =
 							}),
 							n(-2, { 	-- Vendors
 								n(13433, { -- Wulmort Jinglepocket
-									i(70923), -- Gaudy Winter Veil Sweater
-									i(34261, { -- Pattern: Green Winter Clothes
-										i(151792), -- Green Winter Clothes
-									}),
-									i(34262, { -- Pattern: Winter Boots
-										i(151791), -- Winter Boots
-									}),
+									i(34319),	-- Pattern: Red Winter Clothes
+									i(34262),	-- Pattern: Winter Boots
+									i(17200),	-- Recipe: Gingerbread Cookie
+									i(34413),	-- Recipe: Hot Apple Cider
+									i(17201),	-- Recipe: Winter Veil Egg Nog
+									i(70923), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 							n(54519, { 	-- Winter Veil Tree
@@ -803,8 +802,8 @@ _.Zones =
 						["description"] = "AKA Red Shirt Guy\n\nYou must be a member of the Horde in order to attack this NPC.\n"
 					}),
 				}),
-				n( -2, {	-- Vendors
-					a(n(5128, {		-- Bombus Finespindle <Leatherworking Supplies>
+				na( -2, {	-- Vendors
+					n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
 						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
 							i(75106),	-- Vicious Wyrmhide Bracers
 						}),
@@ -931,14 +930,14 @@ _.Zones =
 						i(67100, {	-- Pattern: Dragonkiller Tunic
 							i(56564),	-- Dragonkiller Tunic
 						}),
-					})),
-					a(n(50309, {	-- Captain Stonehelm <Ironforge Quartermaster>
+					}),
+					n(50309, {	-- Captain Stonehelm <Ironforge Quartermaster>
 						i(64898),	-- Shroud of Ironforge
 						i(64899),	-- Cape fo Ironforge
 						i(64900),	-- Mantle of Ironforge
 						i(45577),	-- Ironforge Tabard
-					})),
-					a(n(5161, {		-- Grimnur Stonebrand <Fishing Trainer>
+					}),
+					n(5161, {	-- Grimnur Stonebrand <Fishing Trainer>
 						ach(5847, {	-- Fish or Cut Bait: Ironforge
 							i(67414, {	-- Bag of Fishing Treasures
 								dr(1.1, i(44983)),	-- Strand Crawler Pet
@@ -947,8 +946,8 @@ _.Zones =
 								--dr(0.5, i(45992)),	-- Jeweled Fishing Pole - not Moggable
 							}),
 						}),
-					})),
-					a(n(6294, {		-- Krom Stoutarm <Heirloom Curator>
+					}),
+					n(6294, {	-- Krom Stoutarm <Heirloom Curator>
 						heir(122349),	-- Bloodied Arcanite Reaper
 						heir(122350),	-- Balanced Heartseeker
 						heir(122351),	-- Venerable Dal'Rend's Sacred Charge
@@ -1003,8 +1002,8 @@ _.Zones =
 						heir(140773),	-- Eagletalon Spear
 						a(i(150743)),	-- Surviving Kalimdor Toy
 						a(i(150746)),	-- To Modernize the Provisions of Azeroth Toy
-					})),
-					a(n(5049, {		-- Lyesa Steelbrow <Tabard Vendor>
+					}),
+					n(5049, {	-- Lyesa Steelbrow <Tabard Vendor>
 						["groups"] = {
 							i(20132),	-- Arathor Battle Tabard
 							i(24344),	-- Tabard of the Hand
@@ -1043,14 +1042,14 @@ _.Zones =
 							},
 						},
 						["description"] = "Tabards are only obtainable by those who have earned them.|r",
-					})),
-					a(n(50308, {	-- Master Tinker Trini <Gnomeregan Quartermaster>
+					}),
+					n(50308, {	-- Master Tinker Trini <Gnomeregan Quartermaster>
 						i(64895),	-- Mantle of Gnomeregan
 						i(64896),	-- Cape of Gnomeregan
 						i(64897),	-- Shroud of Gnomeregan
 						i(45578),	-- Gnomeregan Tabard
-					})),
-					a(n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
+					}),
+					n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
 						i(10321, {	-- Pattern: Tuxedo Shirt
 							i(10034),	-- Tuxedo Shirt
 						}),
@@ -1060,8 +1059,8 @@ _.Zones =
 						i(10314, {	-- Pattern: Lavender Mageweave Shirt
 							i(10054),	-- Lavender Mageweave Shirt
 						}),
-					})),
-					a(n(5154, {	-- Poranna Snowbraid <Tailoring Supplies>
+					}),
+					n(5154, {	-- Poranna Snowbraid <Tailoring Supplies>
 						i(54593, {	-- Pattern: Vicious Embersilk Cowl
 							i(75073),	-- Vicious Embersilk Cowl
 						}),
@@ -1092,16 +1091,16 @@ _.Zones =
 						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
 							i(54506),	-- Flame-Ascended Pantaloons
 						}),
-					})),
-					a(n(5108, {	-- Raena Flinthammer <Light Armor Merchant>
+					}),
+					n(5108, {	-- Raena Flinthammer <Light Armor Merchant>
 						i(3428),	-- Common Gray Shirt
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
-					})),
-					a(n(5122, {	-- Skolmin Goldfury <Bow Merchant>
+					}),
+					n(5122, {	-- Skolmin Goldfury <Bow Merchant>
 						i(11303),	-- Fine Shortbow
-					})),
-					a(n(51495, {	-- Steeg Haskell <Guild Vendor>
+					}),
+					n(51495, {	-- Steeg Haskell <Guild Vendor>
 						["groups"] = {
 							i(69209),	-- Illustrious Guild Tabard - Friendly
 							i(69210),	-- Renowned Guild Tabard - Honored
@@ -1203,8 +1202,14 @@ _.Zones =
 							}),
 						},
 						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
-					})),
-					a(n(4259, {	-- Thurgrum Deepforge <Blacksmithing Supplies>
+					}),
+					n(5162, {	-- Tansy Puddlefizz <Fishing Supplies>
+						i(6328),	-- Recipe: Longjaw Mud Snapper
+						i(17062),	-- Recipe: Mithril Head Trout
+						i(6369),	-- Recipe: Rockscale Cod
+						i(6326),	-- Recipe: Slitherskin Mackerel
+					}),
+					n(4259, {	-- Thurgrum Deepforge <Blacksmithing Supplies>
 						i(66122, {	-- Plans: Vicious Pyrium Legguards
 							i(75136),	-- Vicious Pyrium Legguards
 						}),
@@ -1298,12 +1303,12 @@ _.Zones =
 						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
 							i(75121),	-- Vicious Ornate Pyrium Gauntlets
 						}),
-					})),
-					a(n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
+					}),
+					n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 						i(67312, {	-- Formula: Magic Lamp
 							i(67275),	-- Magic Lamp Pet
 						}),
-					})),
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

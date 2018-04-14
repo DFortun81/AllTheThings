@@ -110,6 +110,20 @@ _.Zones =
 							n(-17, { 	-- Quests
 								qg(19171, qa(14022)),	-- Pilgrim's Bounty
 							}),
+							n(-2, {		-- Vendor
+								na(34682, {	-- Ranisa Whitebough <Pilgrim's Bounty Vendor>
+									a(i(46809, {		-- Bountiful Cookbook (Alliance)
+										a(i(44859)),	-- Recipe: Candied Sweet Potato (Alliance)
+										a(i(44858)),	-- Recipe: Cranberry Chutney (Alliance)
+										a(i(44862)),	-- Recipe: Pumpkin Pie (Alliance)
+										a(i(44861)),	-- Recipe: Slow-Roasted Turkey (Alliance)
+										a(i(44860)),	-- Recipe: Spice Bread Stuffing (Alliance)
+									})),
+									i(44835),	-- Autumnal Herbs
+									i(46888),	-- Bountiful Basket
+									i(44853),	-- Honey
+								}),
+							}),
 						},
 						["achievementID"] = 3478, -- Pilgrim
 						["u"] = 28,
@@ -121,13 +135,12 @@ _.Zones =
 							}),	
 							n(-2, { -- Vendors
 								n(23010, { -- Wolgren Jinglepocket
-									i(70923), -- Gaudy Winter Veil Sweater
-									i(34319, { -- Pattern: Red Winter Clothes
-										i(151790), -- Red Winter Clothes
-									}),
-									i(34262, { -- Pattern: Winter Boots
-										i(151791), -- Winter Boots
-									}),
+									i(34319),	-- Pattern: Red Winter Clothes
+									i(34262),	-- Pattern: Winter Boots
+									i(17200),	-- Recipe: Gingerbread Cookie
+									i(34413),	-- Recipe: Hot Apple Cider
+									i(17201),	-- Recipe: Winter Veil Egg Nog
+									i(70923), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 						},

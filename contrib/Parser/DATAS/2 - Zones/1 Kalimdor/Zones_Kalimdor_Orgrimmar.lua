@@ -604,13 +604,12 @@ _.Zones =
 							}),
 							n(-2, { 	-- Vendors
 								n(13420, { -- Penney Copperpinch
-									un(29, i(70923)), -- Gaudy Winter Veil Sweater
-									un(29, i(34261, { -- Pattern: Green Winter Clothes
-										un(29, i(151792)), -- Green Winter Clothes
-									})),
-									un(29, i(34262, { -- Pattern: Winter Boots
-										un(29, i(151791)), -- Winter Boots
-									})),
+									i(34261),	-- Pattern: Green Winter Clothes
+									i(34262),	-- Pattern: Winter Boots
+									i(17200),	-- Recipe: Gingerbread Cookie
+									i(34413),	-- Recipe: Hot Apple Cider
+									i(17201),	-- Recipe: Winter Veil Egg Nog
+									i(70923), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 							n(54519, { 	-- Winter Veil Tree

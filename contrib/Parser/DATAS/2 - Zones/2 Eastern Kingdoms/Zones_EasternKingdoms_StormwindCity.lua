@@ -236,13 +236,12 @@ _.Zones =
 							}),
 							n(-2, { -- Vendors
 								n(13435, { -- Khole Jinglepocket
-									un(29, i(70923)), 	-- Gaudy Winter Veil Sweater
-									un(29, i(34319, { 	-- Pattern: Red Winter Clothes
-										un(29, i(151790)), 	-- Red Winter Clothes
-									})),
-									un(29, i(34262, {	-- Pattern: Winter Boots
-										un(29, i(151791)), 	-- Winter Boots
-									})),
+									i(34319),	-- Pattern: Red Winter Clothes
+									i(34262),	-- Pattern: Winter Boots
+									i(17200),	-- Recipe: Gingerbread Cookie
+									i(34413),	-- Recipe: Hot Apple Cider
+									i(17201),	-- Recipe: Winter Veil Egg Nog
+									i(70923), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 						},
@@ -1141,6 +1140,9 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(16060),	-- Common White Shirt
 					}),
 					n(5494, {	-- Catherine Leland <Fishing Supplies>
+						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6330),	-- Recipe: Bristle Whisker Catfish
+						i(6368),	-- Recipe: Rainbow Fin Albacore
 						ach(5476, {	-- Fish or Cut Bait: Stormwind
 							i(67414, {	-- Bag of Fishing Treasures
 								dr(1.1, i(44983)),	-- Strand Crawler Pet

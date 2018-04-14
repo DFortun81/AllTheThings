@@ -261,6 +261,34 @@ _.Zones =
 								qg(34677, qh(14047)),	-- Slow-roasted Turkey (QG in Undercity)
 								qg(34679, qh(14044)),	-- Undersupplied in the Undercity
 							}),
+							n(-2, {		-- Vendor
+								nh(35342, {	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
+									h(i(46810, {		-- Bountiful Cookbook (Horde)
+										h(i(46806)),	-- Recipe: Candied Sweet Potato (Horde)
+										h(i(46805)),	-- Recipe: Cranberry Chutney (Horde)
+										h(i(46804)),	-- Recipe: Pumpkin Pie (Horde)
+										h(i(46807)),	-- Recipe: Slow-Roasted Turkey (Horde)
+										h(i(46803)),	-- Recipe: Spice Bread Stuffing (Horde)
+									})),
+									i(44835),	-- Autumnal Herbs
+									i(46888),	-- Bountiful Basket
+									i(44853),	-- Honey
+									i(46793),	-- Tangy Southfury Cranberries
+								}),
+								nh(34685, {	-- Dalni Tallgrass <Pilgrim's Bounty Vendor>
+									h(i(46810, {		-- Bountiful Cookbook (Horde)
+										h(i(46806)),	-- Recipe: Candied Sweet Potato (Horde)
+										h(i(46805)),	-- Recipe: Cranberry Chutney (Horde)
+										h(i(46804)),	-- Recipe: Pumpkin Pie (Horde)
+										h(i(46807)),	-- Recipe: Slow-Roasted Turkey (Horde)
+										h(i(46803)),	-- Recipe: Spice Bread Stuffing (Horde)
+									})),
+									i(44835),	-- Autumnal Herbs
+									i(46888),	-- Bountiful Basket
+									i(44853),	-- Honey
+									i(46793),	-- Tangy Southfury Cranberries
+								}),
+							}),
 						},
 						["achievementID"] = 3478, -- Pilgrim
 						["u"] = 28,
@@ -579,8 +607,8 @@ _.Zones =
 	--				n(5826, { 		-- Geolord Mottle -- no transmoggable loot			}),
 	--				n(5809, { 		-- Sergeant Curtis -- no transmoggable loot			}), 
 				}),
-				n( -2, {	-- Vendors
-					h(n(113615, {	-- Ravika <Darkspear Quartermaster>
+				nh( -2, {	-- Vendors
+					n(113615, {	-- Ravika <Darkspear Quartermaster>
 						["groups"] = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
 						i(97919),	-- Whole-Body Shinka' Toy
@@ -588,15 +616,19 @@ _.Zones =
 						i(98552),	-- Xan'tish's Flute Toy
 						},
 						["description"] = "Vendor is only available at this location if you are on the quest 'The Legion Returns'. This vendor is also available on the Echo Isles.",
-					})),
-					h(n(7952, {	-- Zjolnir <Raptor Handler>
+					}),
+					n(5942, {	-- Zansoa <Fishing Supplies>
+						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6326),	-- Recipe: Slitherskin Mackerel
+					}),
+					n(7952, {	-- Zjolnir <Raptor Handler>
 						i(18788),	-- Swift Blue Raptor
 						i(18789),	-- Swift Olive Raptor
 						i(18790),	-- Swift Orange Raptor
 						i(8588),	-- Whistle of the Emerald Raptor
 						i(8591),	-- Whistle of the Turquoise Raptor
 						i(8592),	-- Whistle of the Violet Raptor
-					})),
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
