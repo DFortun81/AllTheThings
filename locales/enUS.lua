@@ -420,6 +420,7 @@ AllTheThings.Locales.enUS = {
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",						-- Lures (for Fishing)
 		[-218] = "Interface\\Icons\\Achievement_Profession_Fishing_NorthrendAngler",	-- Coastal (for Fishing)
 		[-219] = "Interface\\MINIMAP\\TRACKING\\Profession",					-- Profession Trainers
+		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",							-- Class
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-318] = "Interface\\Icons\\garrison_purplearmor",						-- Armor
@@ -895,6 +896,7 @@ AllTheThings.Locales.enUS = {
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)
 		[-219] = MINIMAP_TRACKING_TRAINER_PROFESSION,							-- Profession Trainers
+		[-220] = CLASS,															-- Class
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
