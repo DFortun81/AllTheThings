@@ -52,6 +52,9 @@ _.Zones =
 					}),	
 --]]
 				}),				
+				n(0, {		-- Zone Drops
+					desc(i(2700), "Can drop from any mob in the zone, would recommend farming the crocolisks."),	-- Recipe: Succulent Pork Ribs
+				}),
 				n(-25, {	-- Pet Battle
 					p(441), 	-- Alpine Hare
 					p(437), 	-- Little Black Lamb
@@ -168,6 +171,11 @@ _.Zones =
 					qg(1105, qa(  301)),	-- Report to Ironforge
 --					qg(1105, qa(  273)),	-- Resupplying the Excavation (REMOVED, replaced with next quest)
 					qg(1105, qa(13639)),	-- Resupplying the Excavation
+]]--
+					q(26620, {	-- Seasoned Wolf Kabobs
+						i(2701),	-- Recipe: Seasoned Wolf Kabobs
+					}),
+--[[
 					qg(1073, qa(27075)),	-- Servants of Cho'gall
 					qg(44618, qa(27033)),	-- Skystrider's Heart
 					qg(44345, qa(26928)),	-- Smells Like A Plan
@@ -189,7 +197,11 @@ _.Zones =
 --[[
 					qg(1089, qa(26145)),	-- The Trogg Threat
 					qg(44870, qa(27116)),	-- The Winds of Loch Modan
-					qg(1963, qa(26860)),	-- Thelsamar Blood Sausages
+--]]
+					qg(1963, qa(26860, {	-- Thelsamar Blood Sausages
+						i(3679),	-- Recipe: Blood Sausage
+					})),
+--[[
 					qg(44859, qa(27025)),	-- Thistle While You Work
 --]]
 					qg(1187, qa(27037, { -- Vyrin's Revenge
@@ -685,14 +697,17 @@ _.Zones =
 					a(n(1687, {	-- Cliff Hadin <Bowyer>
 						i(11304),	-- Fine Longbow
 					})),
+					na(1465, {	-- Drac Roughcut <Tradesman>
+						i(6892),	-- Recipe: Smoked Bear Meat
+					}),
+					a(n(954, {	-- Kat Sampson <Leather Armor Merchant>
+						i(4788),	-- Agile Boots
+						i(4789),	-- Stable Boots
+					})),
 					a(n(1684, { -- Khara Deepwater <Fishing Supplies>
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6329),	-- Recipe: Loch Frenzy Delight
 						i(6328),	-- Recipe: Longjaw Mud Snapper
-					})),
-					a(n(954, {	-- Kat Sampson <Leather Armor Merchant>
-						i(4788),	-- Agile Boots
-						i(4789),	-- Stable Boots
 					})),
 					a(n(167, {	-- Morhan Coppertongue <Metalsmith>
 						i(4765),	-- Enamelled Broadsword

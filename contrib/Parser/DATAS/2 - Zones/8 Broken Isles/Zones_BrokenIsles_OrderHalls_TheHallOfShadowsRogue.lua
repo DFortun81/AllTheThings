@@ -467,6 +467,9 @@ _.Zones =
 								i(140541), -- Shiv of the Uncrowned
 								i(140556), -- Shortblade of the Uncrowned
 							}),
+							n(105982, {	-- Smudge Thunderwood <Herbal Concoctions>
+								i(18160),	-- Recipe: Thistle Tea
+							}),
 							n(121282, {	-- Zan Shivsproket
 								i(143490),	--  Bloody Reins of Dark Portent (MOUNT!)
 								i(143491),	-- Mephitic Reins of Dark Portent (MOUNT!)

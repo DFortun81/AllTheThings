@@ -1305,7 +1305,8 @@ _.Zones =
 					}), 
 					n(110340, { 	-- Myonix
 						["groups"] = {	
-							i(121739),
+							i(133816),	-- Recipe: Leybeque Ribs
+							i(121739),	-- Felinus Manus
 						},
 						["questID"] = 43358,	
 					}), 
@@ -1332,6 +1333,15 @@ _.Zones =
 							i(139926),
 						},
 						["questID"] = 42831,	
+					}),
+					n(110824, { 		-- Tideclaw
+						{
+							["itemID"] = 141011,	-- Recipe: Surf
+							["description"] = "Drops from any marine mob in the zone.",
+							["groups"] = {
+								i(133817), 	-- Recipe: Suramar Surf and Turf
+							},
+						},
 					}), 
 --[[				
 				--	v(45478, { 		-- Achronos	}), 
@@ -1367,7 +1377,6 @@ _.Zones =
 				--	v(43996, { 		-- Shadowquill	}), 
 				--	v(43369, { 		-- Siegemaster Aedrin	}), 
 				--	v(45477, { 		-- Sorallus	}), 
-				--	v(43542, { 		-- Tideclaw	}), 
 				--	v(44669, { 		-- Vicious Whale Shark}), 					
 				--	v(45474, { 		-- Volshax, Breaker of Will	}), 
 --]]
@@ -1437,6 +1446,9 @@ _.Zones =
 					n(93979, { -- Leyweaver Jorjana
 						sp(185930, { i(126998) }), -- Imbued Silkweave Hood
 					}),
+					n(112226, {	-- Markus Hjolbruk
+						i(133819),	-- Recipe: Koi-Scented Stormray [Rank 1]
+					}),
 					n(112059, { -- Sasunne Dameuse <Souvenirs>
 						--[[ No use yet, potential pets/toys?
 						i(140670), -- Souvenir Elekk
@@ -1473,6 +1485,22 @@ _.Zones =
 					}),
 				}),
 				n(-38, { -- Profession
+					profession(185, 2550, { -- Cooking
+						{
+							["itemID"] = 141011,	-- Recipe: Surf
+							["description"] = "Drops from any marine mob in the zone.",
+							["groups"] = {
+								i(133817), 	-- Recipe: Suramar Surf and Turf
+							},
+						},
+						{
+							["itemID"] = 141012,	-- Recipe: Turf
+							["description"] = "Fly to Crimson Thicket, Suramar. Kill the Heartwood stag. 3-4 and you should have it.",
+							["groups"] = {
+								i(133817), 	-- Recipe: Suramar Surf and Turf
+							},
+						},
+					}),
 					prof(356, 7620, { -- Fishing
 						n(-100001, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",

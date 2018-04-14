@@ -859,7 +859,9 @@ _.Zones =
 							q(39853), -- Victory is Eternal
 							q(39855), -- Paid in Lifeblood
 						}),
-						q(40078),	-- A Heavy Burden
+						q(40078, {	-- A Heavy Burden
+							i(133813),	-- Recipe: Pickled Stormray [Rank 1]
+						}),
 						crit(7, { -- Secrets of the Shieldmaidens
 							qa( 39059),	-- To Catch a Banshee
 							qa( 39060),	-- Combustible Contagion
@@ -1268,7 +1270,8 @@ _.Zones =
 					}), 
 					n(93371, { 		-- Mordvigbjorn
 						["groups"] = {	
-							i(129035),
+							i(133827),	-- Recipe: Bear Tartare [Rank 1]
+							i(129035),	-- Indomitable Bearskin Cloak
 						},
 						["questID"] = 38837,	
 						["ids"] = {1794},	

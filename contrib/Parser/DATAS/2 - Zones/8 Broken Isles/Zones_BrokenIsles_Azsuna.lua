@@ -1606,7 +1606,9 @@ _.Zones =
 							q(37542), -- No Time for Tryouts
 							q(37528), -- Let Sleeping Giants Lie
 							q(37510), -- Sternfathom's Champion
-							q(37536), -- Morale Booster
+							q(37536, { -- Morale Booster
+								i(133828),	-- Recipe: Fighter Chow [Rank 1]
+							}),
 							q(37538,  {  	-- Round 1, Fight!
 								i(121438),
 								i(121436),
@@ -1922,7 +1924,12 @@ _.Zones =
 					q(45174),	-- The Hunt for Illidan Stormrage
 					q(41185),	-- The Keys to Success
 					q(40859),	-- The Latest Fashion: Headguns!
-					q(37727),	-- The Magister of Mixology
+]]--
+					qg(89341, q(37727, {	-- The Magister of Mixology
+						i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
+					})),
+					sq(37727, qg(89341, q(37728))),	-- Presentation is Everything
+--[[
 					q(40858),	-- The Missing Pieces
 					q(42407),	-- The Nature of the Beast
 					qh( 46322),	-- The Pirate's Bay

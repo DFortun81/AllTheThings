@@ -126,6 +126,33 @@ _.Zones =
 					}),
 --]]					
 				}),					
+				n(0, {		-- Zone Drops
+					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
+					n(70997, { -- Hellscream Laborer
+						i(97821), -- Gahz'rooki's Summoning Stone
+					}),
+					n(71002, { -- Kor'kron Incinerator
+						i(97821), -- Gahz'rooki's Summoning Stone
+					}),
+					n(70999, { -- Kor'kron Marauder
+						i(97821), -- Gahz'rooki's Summoning Stone
+					}),
+					n(71000, { -- Mercenary Engineer
+						i(97821), -- Gahz'rooki's Summoning Stone
+					}),
+					n(71001, { -- Mercenary Shredder
+						i(97821), -- Gahz'rooki's Summoning Stone
+					}),
+					n(3382, { -- Southseaa Cannoneer
+						i(5107), -- Deckhand's Shirt
+					}),
+					n(3383, { -- Southsea Cutthroat
+						i(5107), -- Deckhand's Shirt
+					}),
+					n(3384, { -- Southsea Privateer
+						i(5107), -- Deckhand's Shirt
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
 					desc(p(474), "Can be found under large trees alongside Plainsland Cheetahs."), -- Cheetah Cub
@@ -1360,6 +1387,10 @@ _.Zones =
 						i(20425),	-- Advisor's Gnarled Staff
 						i(19505),	-- Warsong Battle Tabard
 					})),
+					n(3497, {	-- Kilxx <Fisherman>
+						i(6330),	-- Recipe: Bristle Whisker Catfish
+						i(6368),	-- Recipe: Rainbow Fin Albacore
+					}),
 					n(3658, {	-- Lizzarik <Weapon Dealer>
 						i(4778),	-- Heavy Spiked Mace
 						i(4777),	-- Ironwood Maul
@@ -1378,6 +1409,10 @@ _.Zones =
 							i(6242),	-- Blue Linen Robe
 						}),
 					}),
+					h(n(3482, {	-- Tari'qa <Trade Supplies>
+						i(5488),	-- Recipe: Crispy Lizard Tail
+						i(5486),	-- Recipe: Strider Stew
+					})),
 					h(n(3488, {	-- Uthrok <Bowyer & Gunsmith>
 						i(11304),	-- Fine Longbow
 					})),
@@ -1405,32 +1440,6 @@ _.Zones =
 							i(6240),	-- Blue Linen Vest
 						}),
 					})),
-				}),
-				n(  0, {	-- Zone Drop
-					n(70997, { -- Hellscream Laborer
-						i(97821), -- Gahz'rooki's Summoning Stone
-					}),
-					n(71002, { -- Kor'kron Incinerator
-						i(97821), -- Gahz'rooki's Summoning Stone
-					}),
-					n(70999, { -- Kor'kron Marauder
-						i(97821), -- Gahz'rooki's Summoning Stone
-					}),
-					n(71000, { -- Mercenary Engineer
-						i(97821), -- Gahz'rooki's Summoning Stone
-					}),
-					n(71001, { -- Mercenary Shredder
-						i(97821), -- Gahz'rooki's Summoning Stone
-					}),
-					n(3382, { -- Southseaa Cannoneer
-						i(5107), -- Deckhand's Shirt
-					}),
-					n(3383, { -- Southsea Cutthroat
-						i(5107), -- Deckhand's Shirt
-					}),
-					n(3384, { -- Southsea Privateer
-						i(5107), -- Deckhand's Shirt
-					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

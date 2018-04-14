@@ -991,7 +991,11 @@ _.Zones =
 						  }),
 						  q(38646),	-- A Sight For Sore Eyes
 						  q(38647),	-- For the Corn!
-						  q(39117),	-- Shriek No More
+						  q(39117, {	-- Shriek No More
+							i(133812),	-- Recipe: Deep-Fried Mossgill
+							i(129168),	-- Band of Sablehide
+							i(130009),	-- Bonefeather Talisman
+						  }),
 						  q(38691),	-- Jarod's Mission
 						}),
 						crit(7, { -- Black Rook Hold

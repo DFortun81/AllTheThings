@@ -118,6 +118,9 @@ _.Zones =
 					qh(31904),	-- Cassandra Kaboom
 					qg(66422, qh(31918)),	-- A Tamer's Homecoming
 				}),
+				n(0, {		-- Zone Drops
+					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
+				}),
 				n(-17, {	-- Quests
 					qh(24542, {	-- A Curious Bloom
 						["groups"] = {

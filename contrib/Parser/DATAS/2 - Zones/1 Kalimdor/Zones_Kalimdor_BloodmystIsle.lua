@@ -276,7 +276,12 @@ _.Zones =
 						dr(24, i(31256)),	-- Silvermoon Armor
 					}), 
 				}),
---[[				n(-40, {	-- Legacy
+				na(-2, {	-- Vendors
+					n(18427, {	-- Fazu <Tradesman>
+						i(22647), -- Recipe: Crunchy Spider Surprise
+					}),
+				}),
+--[[			n(-40, {	-- Legacy
 					["groups"] = {
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),

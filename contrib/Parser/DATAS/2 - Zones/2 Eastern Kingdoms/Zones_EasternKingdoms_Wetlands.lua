@@ -727,6 +727,11 @@ _.Zones =
 					a(n(1459, {	-- Naela Trance <Bowyer>
 						i(11304),	-- Fine Longbow
 					})),
+					a(n(3178, {	-- Stuart Fleming <Fishing Supplies>
+						i(17062),	-- Recipe: Mithril Head Trout
+						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6369),	-- Recipe: Rockscale Cod
+					})),
 					a(n(1460, {	-- Unger Statforth <Horse Breeder>
 						i(2411),	-- Black Stallion Bridle Mount
 						i(5656),	-- Brown Horse Bridle Mount

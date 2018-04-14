@@ -348,19 +348,22 @@ _.Zones =
 						}),
 					}),							
 				}),
-				n( -2, {	-- Vendors
-					h(n(3685, {	-- Harb Clawhoof <Kodo Mounts>
+				nh( -2, {	-- Vendors
+					n(3685, {	-- Harb Clawhoof <Kodo Mounts>
 						i(18793),	-- Great White Kodo
 						i(18794),	-- Great Brown Kodo
 						i(18795),	-- Great Grey Kodo
 						i(15277),	-- Gray Kodo
 						i(15290),	-- Brown Kodo
 						i(46100),	-- White Kodo
-					})),
-					h(n(5940, {	-- Harn Longcast <Fishing Supplies>
+					}),
+					n(5940, {	-- Harn Longcast <Fishing Supplies>
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6328),	-- Recipe: Longjaw Mud Snapper
-					})),
+					}),
+					n(3081, {	-- Wunna Darkmane <Trade Goods>
+						i(5484),	-- Recipe: Roasted Kodo Meat
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

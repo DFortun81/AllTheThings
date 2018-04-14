@@ -3466,6 +3466,44 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(73455),	-- Cataclysmic Gladiator's Shanker
 						i(73456),	-- Cataclysmic Gladiator's Pike
 					}),
+					n(3333, {	-- Shankys <Fishing Supplies>
+						i(17062),	-- Recipe: Mithril Head Trout
+						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6369),	-- Recipe: Rockscale Cod
+					}),
+					n(49737, {	-- Shazdar <Sous Chef>
+						currency(81, {	-- Epicurean's Award
+							i(65426),	-- Recipe: Baked Rockfish
+							i(65427),	-- Recipe: Basilisk Liverdog
+							i(65429),	-- Recipe: Beer-Basted Crocolisk
+							i(65424),	-- Recipe: Blackbelly Sushi
+							i(65411),	-- Recipe: Broiled Mountain Trout
+							i(65431),	-- Recipe: Chocolate Cookie
+							i(65430),	-- Recipe: Crocolisk Au Gratin
+							i(65422),	-- Recipe: Delicious Sagefish Tail
+							i(65408),	-- Recipe: Feathered Lure
+							i(65423),	-- Recipe: Fish Fry
+							i(65432),	-- Recipe: Fortune Cookie
+							i(65428),	-- Recipe: Grilled Dragon
+							i(65418),	-- Recipe: Hearty Seafood Soup
+							i(65415),	-- Recipe: Highland Spirits
+							i(65407),	-- Recipe: Lavascale Fillet
+							i(65409),	-- Recipe: Lavascale Minestrone
+							i(65412),	-- Recipe: Lightly Fried Lurker
+							i(65416),	-- Recipe: Lurker Lunch
+							i(65420),	-- Recipe: Mushroom Sauce Mudfish
+							i(65417),	-- Recipe: Pickled Guppy
+							i(65410),	-- Recipe: Salted Eye
+							i(68688),	-- Recipe: Scalding Murglesnout
+							i(65413),	-- Recipe: Seasoned Crab
+							i(65421),	-- Recipe: Severed Sagefish Head
+							i(65425),	-- Recipe: Skewered Eel
+							i(65433),	-- Recipe: South Island Iced Tea
+							i(65414),	-- Recipe: Starfire Espresso
+							i(65419),	-- Recipe: Tender Baked Turtle
+							i(65406),	-- Recipe: Whitecrest Gumbo
+						}),
+					}),
 					n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
 						i(64908),	-- Shroud of Orgrimmar
 						i(64909),	-- Cape of Orgrimmar
