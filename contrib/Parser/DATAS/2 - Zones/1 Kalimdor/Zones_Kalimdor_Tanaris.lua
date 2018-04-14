@@ -1773,6 +1773,10 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							qr(q(8181, {	-- Confront Yeh'kinya
+								un(34, i(20218)),	-- Faded Hakkari Cloak
+								un(34, i(20219)),	-- Tattered Hakkari Cape
+							})),
 							q( 3161, {	-- Gahz'ridian
 								un(34, i(10827)),	-- Surveyor's Tunic
 								un(34, i(10826)),	-- Staff of Lore
