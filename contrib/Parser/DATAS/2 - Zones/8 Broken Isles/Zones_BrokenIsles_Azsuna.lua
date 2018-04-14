@@ -2229,6 +2229,16 @@ _.Zones =
 						})
 					}),
 					n(107379, {	-- Marin Bladewing <Wardens Emissary>
+						i(137849),					-- Design: Twisted Pandemonite Choker
+						i(142333),					-- Recipe: Feathered Luffa
+						i(142331),					-- Recipe: Spiced Falcosaur Omelet
+						i(137713),					-- Schematic: Bolt-Action Headgun (Rank 3)
+						i(137714),					-- Schematic: Reinforced Headgun (Rank 3)
+						i(137715),					-- Schematic: Semi-Automagic Cranial Cannon (Rank 3)
+						i(137716),					-- Schematic: Sawed-Off Cranial Cannon (Rank 3)
+						i(137773),					-- Vantus Rune Technique: Cenarius (Rank 3)
+						i(137777),					-- Vantus Rune Technique: Spellblade Aluriel (Rank 3)
+						i(137781),					-- Vantus Rune Technique: Star Augur Etraeus (Rank 3)
 						i(136898), 					-- Fledgling Warden Owl Pet
 						i(130157), 					-- Syxsehnz Rod Toy
 						i(130191), 					-- Trapped Treasure Chest Kit Toy

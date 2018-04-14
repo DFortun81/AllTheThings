@@ -6541,9 +6541,9 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 				for i,group in ipairs(skillCache) do
 					if group.spellID and group.f == 200 then
 						-- This is a recipe, cache the learned state.
-						if not GetTempDataMember("CollectedSpells", group.spellID) then
+						if not GetTempDataSubMember("CollectedSpells", group.spellID) then
 							if C_TradeSkillUI.GetRecipeInfo(group.spellID, spellRecipeInfo) and spellRecipeInfo.learned then
-								SetTempDataMember("CollectedSpells", group.spellID, 1);
+								SetTempDataSubMember("CollectedSpells", group.spellID, 1);
 								if not GetDataSubMember("CollectedSpells", group.spellID) then
 									SetDataSubMember("CollectedSpells", group.spellID, 1);
 									learned = learned + 1;
