@@ -816,12 +816,15 @@ _.Zones =
 						i(16060),	-- Common White Shirt
 					}),
 					nh(3556, { -- Andrew Hilbert <Trade Supplies>
-						i(5786, { -- Pattern: Murloc Scale Belt
-							i(5780) -- Murloc Scale Belt
-						}),
-						i(5787, { -- Pattern: Murloc Scale Breastplate
-							i(5781) -- Murloc Scale Breastplate
-						})
+						i(6272),	-- Pattern: Blue Linen Robe
+						i(5786), 	-- Pattern: Murloc Scale Belt
+						i(5787), 	-- Pattern: Murloc Scale Breastplate
+						i(5771),	-- Pattern: Red Linen Bag
+						i(6892),	-- Recipe: Smoked Bear Meat
+					}),
+					nh(5748, {	-- Killian Sanatha <Fisherman>
+						i(6328),	-- Recipe: Longjaw Mud Snapper
+						i(6368),	-- Recipe: Rainbow Fin Albacore
 					}),
 					nh(9553, { -- Nadia Vernon <Bowyer>
 						i(11304), -- Fine Longbow

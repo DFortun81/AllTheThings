@@ -1451,6 +1451,11 @@ _.Zones =
 							i(5782),	-- Thick Murloc Armor
 						}),
 					})),
+					nh(2397, {	-- Derak Nightfall <Cook>
+						i(6330), 	-- Recipe: Bristle Whisker Catfish
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
 					h(n(2698, {	-- George Candarte <Leatherworking Supplies>
 						i(7613, {	-- Pattern: Green Leather Armor
 							i(4255),	-- Green Leather Armor
@@ -1507,6 +1512,12 @@ _.Zones =
 						i(4818),	-- Executioner's Sword
 						i(4817),	-- Blessed Claymore
 					})),
+					n(6779, {	-- Smudge Thunderwood <Poison Supplies>
+						["classes"] = {4},	-- Rogue Only
+						["groups"] = {
+							i(18160),	-- Recipe: Thistle Tea
+						},
+					}),
 					a(n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
 						i(19100),	-- Electrified Dagger
 						i(19102),	-- Crackling Staff

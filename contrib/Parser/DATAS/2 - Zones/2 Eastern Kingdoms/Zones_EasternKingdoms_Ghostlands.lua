@@ -179,6 +179,7 @@ _.Zones =
 					}),
 					qh( 9171, {	-- Culinary Crunch
 						["groups"] = {
+							i(22647), -- Recipe: Crunchy Spider Surprise
 						},
 						["qg"] = 16253,	-- Master Chef Mouldier
 						["sourceQuests"] = { 9138 },	-- Suncrown Village
@@ -533,7 +534,16 @@ _.Zones =
 					})
 				}),
 				nh(-2, {	-- Vendors
-					 n(16528, { -- Provisioner Vredigar
+					n(16268, {	-- Eralan <Poison Supplies>
+						i(29583),	-- Sinister Scimitar
+					}),
+					n(16253, {	-- Master Chef Mouldier <Cooking Trainer & Supplies>
+						i(27687),	-- Recipe: Bat Bites
+						i(22647),	-- Recipe: Crunchy Spider Surprise
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					}),
+					n(16528, { -- Provisioner Vredigar
 						i(22990),	-- Tranquillien Champion's Cloak
 						i(28155),	-- Apothecary's Waistband
 						i(28158),	-- Batskin Belt
@@ -549,9 +559,6 @@ _.Zones =
 						i(132571),	-- Woodrunner's Footpads
 						i(132572),	-- Deathstalker's Hauberk
 					}),
-					n(16268, {	-- Eralan <Poison Supplies>
-						i(29583)	-- Sinister Scimitar
-					})
 				}),
 --[[
 				n(-40, {	-- Legacy

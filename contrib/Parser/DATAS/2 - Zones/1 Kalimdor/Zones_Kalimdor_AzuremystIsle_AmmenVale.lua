@@ -328,7 +328,7 @@ _.Zones =
 --]]					
 					-- qa(14082),	-- Learn to Ride at the Exodar (removed in Patch 4.0.1)
 				}),
---[[				n(-40, {	-- Legacy
+--[[			n(-40, {	-- Legacy
 					["groups"] = {
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),

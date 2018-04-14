@@ -1007,7 +1007,9 @@ _.Zones =
 								q(40216),	-- A Hunter at Heart
 								q(40170),	-- Amateur Hour
 								q(39123),	-- Lion Stalkin'
-								q(39867),	-- I'm Not Lion!
+								q(39867, {	-- I'm Not Lion!
+									i(133810),	-- Recipe: Salt and Pepper Shank [Rank 1]
+								}),
 								q(39124),	-- Moose Shootin'
 								q(39178),	-- Moose on the Loose
 								q(39392),	-- Bear Huntin'
@@ -1035,7 +1037,9 @@ _.Zones =
 								q(40045),	-- Nature vs. Nurture
 								q(40047),	-- I'll Huff, I'll Puff...
 								q(40049),	-- Slime Time
-								q(40102),	-- Murlocs: The Next Generation
+								q(40102, {	-- Murlocs: The Next Generation
+									i(133818),	-- Recipe: Barracuda Mrglgagh [Rank 1]
+								}),
 								q(40230,  {  	-- Oh, the Clawdacity!
 									i(132116),
 									i(132113),
@@ -1657,6 +1661,9 @@ _.Zones =
 					}),
 				}),
 				n(-38, { 	-- Profession
+					profession(185, 2550, { -- Cooking
+						desc(i(133820), "Can drop from any Drogbar."), 	-- Recipe: Drogbar-Style Salmon
+					}),
 					prof(356, 7620, { -- Fishing
 						n(-100001, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",

@@ -608,6 +608,9 @@ _.Zones =
 	--				n(5809, { 		-- Sergeant Curtis -- no transmoggable loot			}), 
 				}),
 				nh( -2, {	-- Vendors
+					n(3881, { -- Grimtak
+						i(5483),	-- Recipe: Scorpid Surprise
+					}),
 					n(113615, {	-- Ravika <Darkspear Quartermaster>
 						["groups"] = {
 						i(97901),	-- Griftah's Authentic Troll Shoes

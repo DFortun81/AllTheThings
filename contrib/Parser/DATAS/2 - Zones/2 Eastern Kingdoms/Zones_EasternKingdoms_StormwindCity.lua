@@ -928,6 +928,39 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 							i(54506),	-- Flame-Ascended Pantaloons
 						}),
 					}),
+					n(49701, {	-- Bario Matalli <Sous Chef>
+						currency(81, {	-- Epicurean's Award
+							i(65426),	-- Recipe: Baked Rockfish
+							i(65427),	-- Recipe: Basilisk Liverdog
+							i(65429),	-- Recipe: Beer-Basted Crocolisk
+							i(65424),	-- Recipe: Blackbelly Sushi
+							i(65411),	-- Recipe: Broiled Mountain Trout
+							i(65431),	-- Recipe: Chocolate Cookie
+							i(65430),	-- Recipe: Crocolisk Au Gratin
+							i(65422),	-- Recipe: Delicious Sagefish Tail
+							i(65408),	-- Recipe: Feathered Lure
+							i(65423),	-- Recipe: Fish Fry
+							i(65432),	-- Recipe: Fortune Cookie
+							i(65428),	-- Recipe: Grilled Dragon
+							i(65418),	-- Recipe: Hearty Seafood Soup
+							i(65415),	-- Recipe: Highland Spirits
+							i(65407),	-- Recipe: Lavascale Fillet
+							i(65409),	-- Recipe: Lavascale Minestrone
+							i(65412),	-- Recipe: Lightly Fried Lurker
+							i(65416),	-- Recipe: Lurker Lunch
+							i(65420),	-- Recipe: Mushroom Sauce Mudfish
+							i(65417),	-- Recipe: Pickled Guppy
+							i(65410),	-- Recipe: Salted Eye
+							i(68688),	-- Recipe: Scalding Murglesnout
+							i(65413),	-- Recipe: Seasoned Crab
+							i(65421),	-- Recipe: Severed Sagefish Head
+							i(65425),	-- Recipe: Skewered Eel
+							i(65433),	-- Recipe: South Island Iced Tea
+							i(65414),	-- Recipe: Starfire Espresso
+							i(65419),	-- Recipe: Tender Baked Turtle
+							i(65406),	-- Recipe: Whitecrest Gumbo
+						}),
+					}),
 					n(69975, {	-- Captain Dirgehammer <Cataclysmic Gladiator>
 						i(146639, { -- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["groups"] = {
@@ -1999,6 +2032,21 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(5655),	-- Chestnut Mare Bridle
 						i(2414),	-- Pinto Bridle
 					}),
+					a(n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
+						i(2889),	-- Recipe: Beer Basted Boar Ribs
+						i(3679),	-- Recipe: Blood Sausage
+						i(2698),	-- Recipe: Cooked Crab Claw
+						i(3681),	-- Recipe: Crocolisk Gumbo
+						i(3678),	-- Recipe: Crocolisk Steak
+						i(3682),	-- Recipe: Curiously Tasty Omelet
+						i(3683),	-- Recipe: Gooey Spider Cake
+						i(2697),	-- Recipe: Goretusk Liver Pie
+						i(3680),	-- Recipe: Murloc Fin Soup
+						i(2699),	-- Recipe: Redridge Goulash
+						i(2701),	-- Recipe: Seasoned Wolf Kabob
+						i(2700),	-- Recipe: Succulent Pork Ribs
+						i(728),		-- Recipe: Westfall Stew
+					})),
 					n(101759, {	-- Kiatke <Timewalking Vendor>
 						["groups"] = {
 							currency(1166, { -- Timewarped Badge

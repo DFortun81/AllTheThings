@@ -39,6 +39,10 @@ _.Zones =
 						["u"] = 21,
 					}),	
 				}),								
+				n(0, {		-- Zone Drops
+					desc(i(2698), "Can drop from any mob in the zone, would recommend farming the murlocs in the north."),	-- Recipe: Cooked Crab Claw
+					desc(i(728), "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls."),		-- Recipe: Westfall Stew
+				}),
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(385), 	-- Mouse
@@ -547,7 +551,10 @@ _.Zones =
 						}),
 					}),
 					n(4305, {	-- Kriggon Talsone <Fisherman>
+						i(5528),	-- Recipe: Clam Chowder
+						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(6326),	-- Recipe: Slitherskin Mackerel
+						i(16111),	-- Recipe: Spiced Chili Crab
 					}),
 					n(1668, {	-- William MacGregor <Bowyer>
 						i(11304),	-- Fine Longbow
