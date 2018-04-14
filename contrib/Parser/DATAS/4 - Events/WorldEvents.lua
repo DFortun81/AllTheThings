@@ -74,7 +74,7 @@ _.WorldEvents =
 	}),
 	m(823, { -- Darkmoon Island
 	}),
-	n(-3, {  -- World Events (Holidays)
+	n(-3, {  -- Holidays
 		--n(-177, { -- Mini World Events
 		--}),
 		--n(-175, { -- Monthly World Events
@@ -111,6 +111,8 @@ _.WorldEvents =
 		}),
 	}),
 	n(-36, { -- In-Game Shop
+	}),
+	n(-383, { -- Miscellaneous
 	}),
 	n(-32, { -- Trading Card Game
 	}),
