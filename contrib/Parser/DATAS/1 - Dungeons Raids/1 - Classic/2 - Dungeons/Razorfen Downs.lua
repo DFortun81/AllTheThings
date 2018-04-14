@@ -89,6 +89,9 @@ _.Instances =
 						i(10775),	-- Carapace of Tuten'kash
 						i(10777),	-- Arachnid Gloves
 					})),
+					un(1, n(8696, {	-- Henry Stern
+						desc(un(1, recipe(13028)), "Henry Stern who is currently the only source of acquiring Goldthorn Tea is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it."),	-- Goldthorn Tea
+					})),
 					n(75813, {			-- Sah'rhee
 						["groups"] = {
 							dr(22, i(10766)),	-- Plaguerot Sprig 

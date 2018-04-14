@@ -777,6 +777,12 @@ _.Zones =
 					}), 
 				}),
 				n( -2, {	-- Vendors
+					nh(989, {	-- Banalash <Trade Supplies>
+						i(21941),	-- Design: Black Pearl Panther
+						i(11223),	-- Formula: Enchant Bracer - Dodge
+						i(12232),	-- Recipe: Carrion Surprise
+						i(16111),	-- Recipe: Spiced Chili Crab
+					}),
 					h(n(8176, { -- Gharash <Blacksmithing Supplies>
 						i(7995, {	-- Plans: Mithril Scale Bracers
 							i(7924),	-- Mithril Scale Bracers

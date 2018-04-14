@@ -165,6 +165,7 @@ _.Zones =
 					}),
 					q(  8307, {	-- Desert Recipe
 						["groups"] = {
+							recipe(24801),	-- Smoked Desert Dumplings
 						},
 						["qg"] = 15174,	-- Calandrath.
 						["description"] = "This quest is invisible until you reach Cooking 285.",

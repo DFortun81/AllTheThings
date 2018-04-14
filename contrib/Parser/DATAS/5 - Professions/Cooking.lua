@@ -51,7 +51,9 @@ profession(185, 2550, { -- Cooking
 		h(recipe(66036)),	-- Pumpkin Pie (Horde)
 		h(recipe(66037)),	-- Slow-Roasted Turkey (Horde)
 		h(recipe(66038)),	-- Spice Bread Stuffing (Horde)
-		recipe(185704),	-- Lemon Herb Filet
+		recipe(185705),		-- Fancy Darkmoon Feast
+		recipe(185704),		-- Lemon Herb Filet
+		recipe(185708),		-- Sugar-Crusted Fish Feast
 		
 		-- Classic
 		recipe(37836),	-- Spice Bread
@@ -92,21 +94,76 @@ profession(185, 2550, { -- Cooking
 		recipe(2544),	-- Crab Cake
 		recipe(3370),	-- Crocolisk Steak
 		recipe(2546),	-- Dry Pork Ribs
-		-- TODO: https://www.wowhead.com/item=21099/recipe-smoked-sagefish (I didn't add all 37 of these... because I don't hate myself that much)
+		-- i(21099), TODO: https://www.wowhead.com/item=21099/recipe-smoked-sagefish (I didn't add all 37 of these... because I don't hate myself that much)
 		recipe(25704),	-- Smoked Sagefish
 		recipe(2545),	-- Cooked Crab Claw
 		recipe(8238),	-- Savory Deviate Delight
 		recipe(6501),	-- Clam Chowder
 		recipe(3372),	-- Murloc Fin Soup
-		-- TODO: https://www.wowhead.com/item=34834/recipe-captain-rumseys-lager#contained-in-item
+		-- i(34834), TODO: https://www.wowhead.com/item=34834/recipe-captain-rumseys-lager#contained-in-item
 		recipe(45695),	-- Captain Rumsey's Lager
 		recipe(2547),	-- Redridge Goulash
 		recipe(7755),	-- Bristle Whisker Catfish
 		recipe(6418),	-- Crispy Lizard Tail
 		recipe(2549),	-- Seasoned Wolf Kabob
 		recipe(2548),	-- Succulent Pork Ribs
+		recipe(3377),	-- Gooey Spider Cake
+		un(7, i(5489)),	-- Recipe: Lean Venison
+		recipe(6419),	-- Lean Venison
+		recipe(3373),	-- Crocolisk Gumbo
+		recipe(6500),	-- Goblin Deviled Clams
+		un(7, i(12227)), -- Recipe: Lean Wolf Steak
+		recipe(15853),	-- Lean Wolf Steak
+		recipe(3398),	-- Hot Lion Chops
+		recipe(6417),	-- Dig Rat Stew
+		recipe(3376),	-- Curiously Tasty Omelet
+		recipe(24418),	-- Heavy Crocolisk Stew
+		recipe(3399),	-- Tasty Lion Steak
+		desc(un(1, recipe(13028)), "Henry Stern who is currently the only source of acquiring Goldthorn Tea is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it."),	-- Goldthorn Tea
+		-- i(6369), TODO: https://www.wowhead.com/item=6369/recipe-rockscale-cod
+		recipe(7828),	-- Rockscale Cod
+		recipe(4094),	-- Barbecued Buzzard Wing
+		recipe(15863),	-- Carrion Surprise
+		recipe(7213),	-- Giant Clam Scorcho
+		recipe(15856),	-- Hot Wolf Ribs
+		recipe(15861),	-- Jungle Stew
+		-- i(17062), TODO: https://www.wowhead.com/item=17062/recipe-mithril-head-trout
+		recipe(20916),	-- Mithril Head Trout
+		recipe(15865),	-- Mystery Stew
+		-- i(12228), TODO: https://www.wowhead.com/item=12228/recipe-roast-raptor
+		recipe(15855),	-- Roast Raptor
+		-- i(21219), TODO: https://www.wowhead.com/item=21219/recipe-sagefish-delight
+		recipe(25954),	-- Sagefish Delight
+		recipe(3400),	-- Soothing Turtle Bisque
+		recipe(15906),	-- Dragonbreath Chili
+		recipe(15910),	-- Heavy Kodo Stew
+		recipe(21175),	-- Spider Sausage
+		recipe(18239),	-- Cooked Glossy Mightfish
+		recipe(18241),	-- Filet of Redgill
+		recipe(15933),	-- Monster Omelet
+		recipe(15915),	-- Spiced Chili Crab
+		recipe(18238),	-- Spotted Yellowtail
+		-- i(18046), TODO: https://www.wowhead.com/item=18046/recipe-tender-wolf-steak
+		recipe(22480),	-- Tender Wolf Steak
+		-- i(16767), TODO: https://www.wowhead.com/item=16767/recipe-undermine-clam-chowder
+		recipe(20626),	-- Undermine Clam Chowder
+		recipe(18240),	-- Grilled Squid
+		recipe(18242),	-- Hot Smoked Bass
+		recipe(64054),	-- Clamlette Magnifique
+		recipe(46684),	-- Charred Bear Kabobs
+		recipe(46688),	-- Juicy Bear Burger
+		recipe(18243),	-- Nightfin Soup
+		recipe(18244),	-- Poached Sunscale Salmon
+		recipe(18247),	-- Baked Salmon
+		recipe(18245),	-- Lobster Stew
+		recipe(18246),	-- Mightfish Steak
+		recipe(22761),	-- Runn Tum Tuber Surprise
+		recipe(24801),	-- Smoked Desert Dumplings
+		un(7, i(21025)), -- Recipe: Dirge's Kickin' Chimaerok Chops
+		un(8, recipe(25659)),	-- Dirge's Kickin' Chimaerok Chops
 		
 		-- BC
+		recipe(33290),	-- Blackened Trout
 		-- i(33925),	-- Recipe: Delicious Chocolate Cake
 		recipe(43779),	-- Delicious Chocolate Cake
 		

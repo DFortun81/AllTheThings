@@ -1088,13 +1088,22 @@ _.Zones =
 						i(12250),	-- Midnight Axe
 					})),
 					a(n(4897, {	-- Helenia Olden <Trade Supplies>
-						i(5789, {	-- Pattern: Murloc Scale Bracers
-							i(5783),	-- Murloc Scale Bracers
-						}),
+						i(21941),	-- Design: Black Pearl Panther
+						i(21943),	-- Design: Truesilver Crab
+						i(5789),	-- Pattern: Murloc Scale Bracers
+						i(12239),	-- Recipe: Dragonbreath Chili
+						i(12233),	-- Recipe: Mystery Stew
+						i(12228),	-- Recipe: Roast Raptor
 					})),
 					a(n(4892, {	-- Jensen Farran <Hunter Trainer & Bowyer>
 						i(11305),	-- Dense Shortbow
 					})),
+					nh(4879, {	-- Ogg'marr <Butcher>
+						i(12232),	-- Recipe: Carrion Surprise
+						i(12239),	-- Recipe: Dragonbreath Chili
+						i(20075), 	-- Recipe: Heavy Crocolisk Stew
+						i(12228),	-- Recipe: Roast Raptor
+					}),
 					a(n(4890, {	-- Piter Verance <Weaponsmith & Armorer>
 						i(4817),	-- Blessed Claymore
 						i(4818),	-- Executioner's Sword

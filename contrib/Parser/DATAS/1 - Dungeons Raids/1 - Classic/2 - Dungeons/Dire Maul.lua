@@ -53,6 +53,10 @@ _.Instances =
 									dr(0.2, i(18298)),	-- Unbridled Leggings
 								}),
 							}),
+							n(14354, {	-- Pusillin
+								i(18267),	-- Recipe: Runn Tum Tuber Surprise
+								dr(6, i(12662)),	-- Demonic Rune
+							}),
 							cr(14327, e(404, {	-- Lethtendris
 								i(18311),			-- Quel'dorei Channeling Rod
 								i(18301),			-- Lethtendris' Wand

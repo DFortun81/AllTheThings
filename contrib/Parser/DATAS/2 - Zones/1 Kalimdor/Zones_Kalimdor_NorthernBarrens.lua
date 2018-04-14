@@ -128,6 +128,11 @@ _.Zones =
 				}),					
 				n(0, {		-- Zone Drops
 					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
+					n(3444, {	-- Dig Rat
+						i(78342, {	-- Plump Dig Rat
+							recipe(6417),	-- Dig Rat Stew
+						}),
+					}),
 					n(70997, { -- Hellscream Laborer
 						i(97821), -- Gahz'rooki's Summoning Stone
 					}),
@@ -1440,6 +1445,9 @@ _.Zones =
 							i(6240),	-- Blue Linen Vest
 						}),
 					})),
+					nh(3489, {	-- Zargh <Butcher>
+						i(3735), 	-- Recipe: Hot Lion Chops
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

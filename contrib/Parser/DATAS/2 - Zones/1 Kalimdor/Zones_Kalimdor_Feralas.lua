@@ -958,7 +958,7 @@ _.Zones =
 							i(7386),	-- Green Whelp Bracers
 						}),
 					})),
-					a(n(40226, {	-- Pratt McGrubben <Leatherworking Supplies>
+					a(n(40226, {-- Pratt McGrubben <Leatherworking Supplies>
 						i(15734,{	-- Pattern: Living Shoulders
 							i(15061),	-- Living Shoulders
 						}),
@@ -969,6 +969,18 @@ _.Zones =
 							i(7386),	-- Green Whelp Bracers
 						}),
 					})),
+					nh(8145, {	-- Sheendra Tallgrass <Trade Supplies>
+						i(13949),	-- Recipe: Baked Salmon
+						i(12229),	-- Recipe: Hot Wolf Ribs
+						i(13947),	-- Recipe: Lobster Stew
+						i(13948),	-- Recipe: Mightfish Steak
+					}),
+					na(7947, {	-- Vivianna <Trade Supplies>
+						i(13949),	-- Recipe: Baked Salmon
+						i(12229),	-- Recipe: Hot Wolf Ribs
+						i(13947),	-- Recipe: Lobster Stew
+						i(13948),	-- Recipe: Mightfish Steak
+					}),
 					h(n(8159, {	-- Worb Strongstitch <Light Armor Merchant>
 						i(12254),	-- Well Oiled Cloak
 						i(12253),	-- Brilliant Red Cloak
