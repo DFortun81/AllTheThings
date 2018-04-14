@@ -241,8 +241,14 @@ _.Zones =
 					qh( 11264),	-- Necro Overlord Mezhen
 					qh( 11304),	-- New Agamand
 					qa( 11501),	-- News From the East
-					qh( 13089),	-- Northern Cooking
-					qa( 13087),	-- Northern Cooking
+]]--
+					qh( 13089, {-- Northern Cooking
+						recipe(57421),	-- Northern Stew
+					}),
+					qa( 13087, {-- Northern Cooking
+						recipe(57421),	-- Northern Stew
+					}),
+--[[
 					qh( 11265),	-- Of Keys and Cages
 					qa( 11231),	-- Of Keys and Cages
 					qa( 12297),	-- Of Traitors and Treason

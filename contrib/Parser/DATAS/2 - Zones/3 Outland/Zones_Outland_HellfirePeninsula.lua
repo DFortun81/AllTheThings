@@ -651,7 +651,9 @@ _.Zones =
 						qa(  9430),	-- Sha'naar Relics
 						qh( 14065),	-- Sharing a Bountiful Feast
 						qa( 10340),	-- Shatter Point
-						q(9356),	-- Smooth as Butter
+						q(9356, {	-- Smooth as Butter
+							i(27684),	-- Recipe: Buzzard Bites
+						}),
 						qh(9387,  {  -- Source of the Corruption
 							i(25915),
 						}),
@@ -771,7 +773,7 @@ _.Zones =
 					}),
 				}),
 				n(-2, {		-- Vendors
-					h(n(35099, {	-- Bana Wildmane <Wind Rider Keeper>
+					nh(35099, {		-- Bana Wildmane <Wind Rider Keeper>
 						i(25477),	-- Swift Red Wind Rider Mount
 						i(25531),	-- Swift Green Wind Rider Mount
 						i(25532),	-- Swift Yellow Wind Rider Mount
@@ -779,12 +781,15 @@ _.Zones =
 						i(25474),	-- Tawny Wind Rider Mount
 						i(25475),	-- Blue Wind Rider Mount
 						i(25476),	-- Green Wind Rider Mount
-					})),
-					h(n(18997, {	-- Fallesh Sunfallow <Weapon Merchant>
+					}),
+					nh(16585, {		-- Cookie One-Eye <Food & Drink>
+						i(27688),	-- Recipe: Ravager Dog
+					}),
+					nh(18997, {		-- Fallesh Sunfallow <Weapon Merchant>
 						i(30753),	-- Warphorn Spear
 						i(30755),	-- Mag'hari Fighting Claw
-					})),
-					a(n(35101, {	-- Grunda Bronzewing <Gryphon Keeper>	
+					}),
+					na(35101, {		-- Grunda Bronzewing <Gryphon Keeper>	
 						i(25473),	-- Swift Blue Gryphon Mount
 						i(25527),	-- Swift Red Gryphon Mount
 						i(25528),	-- Swift Green Gryphon Mount
@@ -792,16 +797,16 @@ _.Zones =
 						i(25470),	-- Golden Gryphon Mount
 						i(25471),	-- Ebon Gryphon Mount
 						i(25472),	-- Snowy Gryphon Mount
-					})),
-					a(n(18775, {	-- Lebowski <Engineering Trainer>
+					}),
+					na(18775, {		-- Lebowski <Engineering Trainer>
 						i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
 							i(23762),	-- Ultra-Spectropic Detection Goggles
 						}),
 						i(23803, {	-- Schematic: Cogspinner Goggles
 							i(23758),	-- Cogspinner Goggles
 						}),
-					})),
-					a(n(17657, {	-- Logistics Officer Ulrike <Honor Hold Quartermaster>
+					}),
+					na(17657, {		-- Logistics Officer Ulrike <Honor Hold Quartermaster>
 						i(29166),	-- Hellforged Halberd
 						i(35464),	-- Dreadweave Robe
 						i(35465),	-- Evoker's Silk Amice
@@ -832,13 +837,13 @@ _.Zones =
 							i(25695),	-- Felstalker Belt
 						}),
 						i(23999),	-- Honor Hold Tabard
-					})),
-					h(n(19836, {	-- Mixie Farshot <Gun Merchant>
+					}),
+					nh(19836, {		-- Mixie Farshot <Gun Merchant>
 						i(23803, {	-- Schematic: Cogspinner Goggles
 							i(23758),	-- Cogspinner Goggles
 						}),
-					})),
-					h(n(17585, {	-- 	Quartermaster Urgronn <Thrallmar Quartermaster>
+					}),
+					nh(17585, {		-- Quartermaster Urgronn <Thrallmar Quartermaster>
 						i(29167),	-- Blackened Spear
 						i(35332),	-- Dreadweave Robe
 						i(35343),	-- Evoker's Silk Amice
@@ -869,11 +874,14 @@ _.Zones =
 							i(25695),	-- Felstalker Belt
 						}),
 						i(24004),	-- Thrallmar Tabard
-					})),
-					a(n(19001, {	-- Talaara <Weapon Merchant>
+					}),
+					na(16826, {		-- Sid Limbardi <Innkeeper>
+						i(27688),	-- Recipe: Ravager Dog
+					}),
+					na(19001, {		-- Talaara <Weapon Merchant>
 						i(30753),	-- Warphorn Spear
 						i(30755),	-- Mag'hari Fighting Claw
-					})),
+					}),
 				}),
 			},
 			["Lvl"] = 58,	

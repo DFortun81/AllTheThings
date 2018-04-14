@@ -34,6 +34,18 @@ _.Instances =
 									i(87299),	-- Eversight Armplates
 									i(87300),	-- Armplates of the Jade Idol
 								}),
+								{
+									["questID"] = 33107,		-- Bad Feeling, Worse Result
+									["objectID"] = 221413,		-- Lin Family Scroll
+									["sourceQuest"] = 33020,	-- Source Quest: The Lost Secret of the Secret Ingredient
+									["groups"] = {
+										{
+											["creatureID"] = 72726,		-- Ghost of Lin Da-Gu
+											["questID"] = 33107,		-- Bad Feeling, Worse Result
+										},
+									},
+								},
+								sq(33020, o(221413, q(33107))),	-- Lin Family Scroll / Bad Feeling, Worse Result
 							}),
 							cr(56448, e(672, {	-- Wise Mari
 								i(144017), -- Waterburst Helm

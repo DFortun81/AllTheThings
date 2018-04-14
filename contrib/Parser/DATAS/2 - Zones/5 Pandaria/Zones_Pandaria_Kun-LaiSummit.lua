@@ -873,6 +873,12 @@ _.Zones =
 						["modelScale"] = 3.2,
 						["icon"] = "Interface\\Icons\\inv_misc_ornatebox",
 					}),
+					o(213765, {		-- Tablet of Ren Yun (Object)
+						["questID"] = 31417,	-- FLAG - Tablet of Ren Yun
+						["groups"] = {
+							i(86393),	-- Tablet of Ren Yun
+						},
+					}),
 					n(50769, { 		-- Zai the Outcast
 						dr(14, i(86581)),	-- Toy
 						dr(12, i(87618)),

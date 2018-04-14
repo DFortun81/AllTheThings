@@ -517,6 +517,12 @@ _.Zones =
 							i(87611),
 						}),
 					}),
+					o(214439, {		-- Barrel of Banana Infused Rum
+						["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
+						["groups"] = {
+							i(87266),	-- Recipe: Banana Infused Rum
+						},
+					}),
 					n(66936, { 		-- Clawlord Kril'mandar <The Pinch King>
 						 ["groups"] = {
 							i(90087), -- Lobstmourne
@@ -806,16 +812,18 @@ _.Zones =
 						i(93168),	-- Grand Armored Gryphon Mount
 					}),
 					n(63721, {	-- Nat Pagle <The Anglers Quartermaster>
+						i(85505),	-- Recipe: Krasarang Fritters
+						i(85502),	-- Recipe: Viseclaw Soup
+						i(81354),	-- Reins of the Azure Water Strider Mount
 						i(85447),	-- Tiny Goldfish Pet
 						i(85500),	-- Angler's Fishing Raft Toy
 						i(86596),	-- Nat's Fishing Chair Toy
-						-- i(107950),	-- Bipsi's Bobbing Berg -- Mage only! Also NOT A TOY! yet!
+						i(107950),	-- Bipsi's Bobbing Berg -- Mage only! Also NOT A TOY! yet!
 						i(84660),	-- Pandaren Fishing Pole -- NOT MOGGABLE
 						i(84661),	-- Dragon Fishing Pole -- NOT MOGGABLE
 						i(88710),	-- Nat's Hat -- NOT MOGGABLE
 						i(88535),	-- Sharpened Tuskarr Pole -- NOT MOGGABLE
 						i(89401),	-- Angler's Tabard
-						i(81354),	-- Reins of the Azure Water Strider Mount
 					}),
 					nh(67751, {	-- Ongrom Black Tooth <Collector of Commissions>
 						i(91838, {  -- Lion's Landing Commission
