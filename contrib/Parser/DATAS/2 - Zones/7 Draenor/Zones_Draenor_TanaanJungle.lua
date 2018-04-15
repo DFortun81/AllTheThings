@@ -865,6 +865,15 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-38, { 	-- Profession
+					profession(182, 2366, { -- Herb Gathering
+						o(243334, {		-- Withered Herb
+							n(95132, {	-- Disturbed Podling
+								dr(0.3, i(118595)), -- Nightshade Sproutling
+							}),
+						})
+					}),
+				}),
 			},
 			["Lvl"] = 100,	
 			["achievementID"] = 10260,
