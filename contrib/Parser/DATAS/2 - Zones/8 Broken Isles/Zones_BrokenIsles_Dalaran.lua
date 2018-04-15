@@ -6672,25 +6672,35 @@ _.Zones =
 						},
 					}),
 					n(-2, {	-- Vendors
-						n(97363, { -- K'huta <Portals and Jujus>
+						n(97363, {	-- K'huta <Portals and Jujus>
 							currency(1149, { -- Sightless Eyes
-								i(128625, { -- Formula: Leylight Brazier
-									i(128536), -- Leylight Brazier
-								}),
+								i(128625),	-- Formula: Leylight Brazier
+								i(141058),	-- Technique: Glyph of Critterhex
+								i(139423),	-- Croc Mojo
+								i(138031),	-- Portal Key: Abandoned Shack
+								i(138030),	-- Portal Key: Alchemists' Lair
+								i(138028),	-- Portal Key: Black Market
+								i(138029),	-- Portal Key: Inn Entrance
+								i(138032),	-- Portal Key: Rear Entrance
+								i(138027),	-- Portal Key: Sewer Guard Station
 							}),	
 						}),
 						n(97364, { 	-- Laura Malley <Creatures>
 							currency(1149, { -- Sightless Eyes
-								i(137932, { -- Recipe: Flaming Hoop
-									i(129961), -- Flaming Hoop
-								}),
-								i(137934, { -- Recipe: Leather Pet Leash
-									i(129958), -- Leather Pet Leash
-								}),
-								i(136904), -- Sewer-Pipe Jelly Pet
+								i(137932),	-- Recipe: Flaming Hoop
+								i(137934),	-- Recipe: Leather Pet Leash
+								i(136904), 	-- Sewer-Pipe Jelly Pet
 								i(139412, { -- Young Mutant War Turtles
 									p(1912), -- Young Mutant Warturtle
 								}),
+							}),
+						}),
+						n(97360, {	-- Matthew Rabis <Feral Warlock>
+							currency(1149, { -- Sightless Eyes
+								i(137828),	-- Design: Twisted Pandemonite Choker
+								i(139896),	-- Skinning Technique: Legion Gutting
+								i(141066),	-- Technique: Glyph of the Voidlord
+								i(139425),	-- Imp-Binding Contract
 							}),
 						}),
 						n(107760, { -- Strap Bucklebolt <Belts>
