@@ -1425,32 +1425,36 @@ _.Zones =
 						  --]]
 				}),	
 				n(-16, { 	-- Rares
-					v(40413, { 		-- Amateur Hunters
+					{
+						["vignetteID"] = 40413,	-- Amateur Hunters
+						["qgs"] = {
+							100232,	-- Ryael Dawndrifter <Amateur Hunter>
+							100230, -- "Sure-Shot" Arnie <Amateur Hunter>
+							100231, -- Dargok Thunderuin <Amateur Hunter>
+						},
+						["description"] = "|cff66ccffThere are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage in combat with the amateur hunters, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest. |r",
 						["groups"] = {
-							i(6356, { 	-- Battered Chest 245479
+							o(245479, {	-- Battered Chest
 								["groups"] = {	
 									i(131781),
 								},						
 								["displayID"] = 65118,
 							}),
 						},
-						["displayID"] = 66532,
-						["ids"] = {1794},
-						["description"] = "|cff66ccffThere are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage in combat with the amateur hunters, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest. |r",
-					}),
-					v(39784, { 		-- Beastmaster Pao'lek (Arru)
+					},
+					{
+						["vignetteID"] = 39784,	-- Beastmaster Pao'lek (Arru)
+						["qgs"] = {
+							97215,	-- Beastmaster Pao'lek
+							97220, 	-- Arru <The Terror>
+						},
+						["description"] = "|cff66ccffSpeak with Beastmastr Pao'lek then help him tame Arru. Loot treasure Thunder Totem Stolen Goods afterward.|r",
 						["groups"] = {
-							o(244473, { 	-- Thunder Totem Stolen Goods (No Localization - No Model)
-								["groups"] = {	
-									i(131756), 
-								},						
-								["icon"] = "Interface\\Icons\\inv_misc_ornatebox",
+							o(244473, { 	-- Thunder Totem Stolen Goods (No Model)
+								i(131756), 	-- Fletcher's Nimble Grips
 							}),
 						},
-						["displayID"] = 65449,
-						["ids"] = {1794},
-						["description"] = "|cff66ccffSpeak with Beastmastr Pao'lek then help him tame Arru. Loot treasure Thunder Totem Stolen Goods afterward.|r",
-					}),
+					},
 					n(97449, { 		-- Bristlemaul
 						["groups"] = {
 							i(131761),
@@ -1530,6 +1534,24 @@ _.Zones =
 						["questID"] = 39435,	
 						["ids"] = {1794},	
 					}), 
+					{
+						["vignetteID"] = 40423,	-- Unethical Adventurers
+						["qgs"] = {
+							100302,	-- Puck <Unethical Adventurers>
+							109498, -- Xaander <Unethical Adventurers>
+							100303, -- Zenobia <Unethical Adventurers>
+							109501,	-- Darkful <Unethical Adventurers>
+							109500,	-- Jak <Unethical Adventurers>
+						},
+						["description"] = "|cff66ccffLoot the treasure inside cave and a party of enemies will appear (Puck, Xaander, Zenobia, Darkful, Jak), kill them and loot the treasure. |r",
+						["groups"] = {
+							i(140683), -- Darkful's Mitts
+							i(140682), -- Zenobia's Handwraps
+							i(140681), -- Jak's Gloves
+							i(140680), -- Lysander's Lovindle Bracers
+							i(131767), -- Xander's Gauntlets
+						},
+					},
 					n(97579, { 		-- Scout Harefoot (Mynta Talonscreech)
 						["groups"] = {
 							i(131792),
@@ -1604,18 +1626,6 @@ _.Zones =
 						},
 						["modelID"] = 73098,
 						["questID"] = 39503,	
-					}),
-					v(40423, { 		-- Unethical Adventurers (Puck, Jak, Xaander, Zenobia, Darkful)
-						["groups"] = {	
-							i(140683), -- Darkful's Mitts
-							i(140682), -- Zenobia's Handwraps
-							i(140681), -- Jak's Gloves
-							i(140680), -- Lysander's Lovindle Bracers
-							i(131767), -- Xander's Gauntlets
-						},
-						["displayID"] = 66606,
-						["ids"] = {1794},
-						["description"] = "|cff66ccffLoot the treasure inside cave and a party of enemies will appear (Puck, Xaander, Zenobia, Darkful, Jak), kill them and loot the treasure. |r",
 					}),
 --[[
 	--				n(104481, { 	-- Ala'washte	}), 

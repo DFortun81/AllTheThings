@@ -36,6 +36,31 @@ profession(393, 8613, { -- Skinning
 				}),
 			},
 		}),
+		i(151566, {	-- Fiendish Leather
+			{
+				["itemID"] = 151866,	-- Tainted Scraps
+				["questID"] = 48040,	-- Tainted Scraps (Quest)
+				["groups"] = {
+					recipe(247842),	-- Fiendish Leather [Rank 1]
+				},
+			},
+			{
+				["itemID"] = 151867,	-- Spoiled Fiendish Leather
+				["questID"] = 48041,	-- A Larger Cut (Quest)
+				["sourceQuest"] = 48040,	-- Source Quest: Tainted Scraps
+				["groups"] = {
+					recipe(247843),	-- Fiendish Leather [Rank 2]
+				},
+			},
+			{
+				["itemID"] = 151868,	-- Corrupted Tooth
+				["questID"] = 48042,	-- Order of Operations (Quest)
+				["sourceQuest"] = 48041,	-- Source Quest: A Larger Cut 
+				["groups"] = {
+					recipe(247844),	-- Fiendish Leather [Rank 3]
+				},
+			},
+		}),
 		i(124115, {	-- Stormscale
 			{
 				["itemID"] = 129862,	-- Stormscale Sample
@@ -123,6 +148,63 @@ profession(393, 8613, { -- Skinning
 			{
 				["itemID"] = 129860,	-- Stonehide Leather Sample
 				["questID"] = 40131,	-- Stonehide Leather Sample (Quest)
+			},
+			{
+				["questID"] = 40132,	-- In One Piece (Quest)
+				["sourceQuest"] = 40131,	-- Source Quest: Stonehide Leather Sample
+				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+				["groups"] = {
+					recipe(194161),	-- Stonehide Leather [Rank 1]
+				},
+			},
+			{
+				["itemID"] = 129864,	-- Scrap of Pants
+				["questID"] = 40133,	-- Scrap of Pants (Quest)
+				["sourceQuest"] = 40132,	-- Source Quest: In One Piece
+			},
+			{
+				["questID"] = 40134,	-- Highmountain Hides (Quest)
+				["sourceQuest"] = 40133,	-- Source Quest: Scrap of Pants
+				["qg"] = 94409,			-- Quest Giver: Hemet Nesingwary <Hemet's Hunting Party>
+				["groups"] = {
+					i(130064),	-- Deadeye Monocle
+				},
+			},
+			{
+				["questID"] = 40135,	-- The Freedom to Roam (Quest)
+				["sourceQuest"] = 40133,	-- Source Quest: Scrap of Pants
+				["qg"] = 94409,			-- Quest Giver: Hemet Nesingwary <Hemet's Hunting Party>
+				["groups"] = {
+					recipe(194162),	-- Stonehide Leather [Rank 2]
+				},
+			},
+			{
+				["itemID"] = 129866,	-- Immaculate Stonehide Leather
+				["questID"] = 40136,	-- Immaculate Stonehide Leather (Quest)
+				["sourceQuest"] = 40135,	-- Source Quest: In One Piece
+			},
+			{
+				["questID"] = 40137,	-- Leather for Ske'rit (Quest)
+				["sourceQuest"] = 40136,	-- Source Quest: Immaculate Stonehide Leather
+				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+			},
+			{
+				["questID"] = 40138,	-- Trial of the Crusader: Hides of Legend (Quest)
+				["sourceQuest"] = 40137,	-- Source Quest: Leather for Ske'rit
+				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+			},
+			{
+				["questID"] = 40139,	-- Halls of Valor: The Hide of Fenryr (Quest)
+				["sourceQuest"] = 40137,	-- Source Quest: Leather for Ske'rit
+				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+			},
+			{
+				["questID"] = 40140,	-- Ske'rit's Leather Handbook (Quest)
+				["sourceQuests"] = {40138,40139},	-- Source Quest: Trial of the Crusader: Hides of Legend / Halls of Valor: The Hide of Fenryr
+				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+				["groups"] = {
+					recipe(194163),	-- Stonehide Leather [Rank 3]
+				},
 			},
 		}),
 	}),

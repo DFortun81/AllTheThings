@@ -1384,12 +1384,6 @@ _.Zones =
 							i(130154),  -- Pet
 						},
 						["questID"] = 38468,	
-					}), 
-					v(38466, { 		-- Grellkin Treasure (No Model)
-						["groups"] = {	
-							i(130147),
-						},
-						["ids"] = {1794},	
 					}),
 					n(98241, { 		-- Lyrath Moonfeather
 						["groups"] = {	
@@ -1440,7 +1434,14 @@ _.Zones =
 						},
 						["questID"] = 38780,	
 						["ids"] = {1794},	
-					}), 
+					}),
+					{
+						["objectID"] = 241128,	-- Unguarded Thistleleaf Treasure
+						["questID"] = 38466,	-- Grellkin Treasure
+						["groups"] = {
+							i(130147),	-- Thistleleaf Branch
+						},
+					},
 					n(97504, { 		-- Wraithtalon
 						["groups"] = {	
 							i(130116),

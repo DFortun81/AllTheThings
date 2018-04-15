@@ -1039,6 +1039,17 @@ _.Zones =
 --]]					
 				}),	
 				n(-16, { 	-- Rares
+					{
+						["vignetteID"] = 32961,	-- Scary Ghosts and Nice Sprites
+						["qgs"] = {
+							71824,	-- Angry Sprite
+							71826,	-- Scary Sprite
+						},
+						["description"] = "|cff66ccffClick on Neverending Spritewood (Purple Crystal) to transform and be able to attack the sprites.|r",
+						["groups"] = {
+							dr(1, i(104160)),	-- Dandelion Frolicker
+						},
+					},
 					n(72775, { 		-- Bufo
 						["groups"] = {
 							dr(3, i(104169)),
@@ -1150,13 +1161,6 @@ _.Zones =
 					}),
 					n(72875, { 		-- Ordon Candlekeeper
 						dr(0.5, i(86565)),
-					}),
-					v(32961, { 		-- Scary Ghosts and Nice Sprites
-						["groups"] = {
-							dr(1, i(104160)),
-						},
-						["modelID"] = 50911,
-						["description"] = "|cff66ccffClick on Neverending Spritewood (Purple Crystal) to transform and be able to attack the sprites.|r",	
 					}),
 					n(72769, { 		-- Spirit of Jadefire
 						["groups"] = {	
