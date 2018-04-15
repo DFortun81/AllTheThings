@@ -42,148 +42,146 @@ profession(185, 2550, { -- Cooking
 	n(101846, {	-- Nomi
 		["description"] = "Takes various meat, fish, and animal byproducts for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",
 		["groups"] = {
-			n(-37, {	-- Discovery
-				i(124119, {	-- Big Gamy Ribs
-					i(133835),	-- Recipe: Spiced Rib Roast [Rank 2]
-					i(133855),	-- Recipe: Spiced Rib Roast [Rank 3]
-					i(133829),	-- Recipe: Hearty Feast [Rank 1]
-					i(133849),	-- Recipe: Hearty Feast [Rank 2]
-					i(133869),	-- Recipe: Hearty Feast [Rank 3]
-					i(133836), 	-- Recipe: Leybeque Ribs [Rank 2]
-					i(133856), 	-- Recipe: Leybeque Ribs [Rank 3]
-					i(133821),	-- Recipe: The Hungry Magister [Rank 1]
-					i(133841),	-- Recipe: The Hungry Magister [Rank 2]
-					i(133861),	-- Recipe: The Hungry Magister [Rank 3]
-					i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-					i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-					i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
-				}),
-				i(124112, {	-- Black Barracuda
-					i(133838),	-- Recipe: Barracuda Mrglgagh [Rank 2]
-					i(133858),	-- Recipe: Barracuda Mrglgagh [Rank 3]
-					i(133825),	-- Recipe: Fishbrul Special [Rank 1]
-					i(133845),	-- Recipe: Fishbrul Special [Rank 2]
-					i(133865),	-- Recipe: Fishbrul Special [Rank 3]
-					i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-					i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-					i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
-					i(133823),	-- Recipe: Nightborne Delicacy Platter [Rank 1]
-					i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2]
-					i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3]
-				}),
-				i(124107, {	-- Cursed Queenfish
-					i(133848),	-- Recipe: Fighter Chow [Rank 2]
-					i(133868),	-- Recipe: Fighter Chow [Rank 3]
-					i(133825),	-- Recipe: Fishbrul Special [Rank 1]
-					i(133845),	-- Recipe: Fishbrul Special [Rank 2]
-					i(133865),	-- Recipe: Fishbrul Special [Rank 3]
-				}),
-				i(124118, { -- Fatty Bearsteak
-					i(133847),	-- Recipe: Bear Tartare [Rank 2]
-					i(133867),	-- Recipe: Bear Tartare [Rank 3]
-				}),
-				i(124109, {	-- Highmountain Salmon
-					i(133840),	-- Recipe: Drogbar-Style Salmon [Rank 2]
-					i(133860),	-- Recipe: Drogbar-Style Salmon [Rank 3]
-					i(133825),	-- Recipe: Fishbrul Special [Rank 1]
-					i(133845),	-- Recipe: Fishbrul Special [Rank 2]
-					i(133865),	-- Recipe: Fishbrul Special [Rank 3]
-					i(133821),	-- Recipe: The Hungry Magister [Rank 1]
-					i(133841),	-- Recipe: The Hungry Magister [Rank 2]
-					i(133861),	-- Recipe: The Hungry Magister [Rank 3]
-					i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-					i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-					i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
-				}),
-				i(124117, {	-- Lean Steak
-					i(133831),	-- Recipe: Salt and Pepper Shank [Rank 2]
-					i(133851),	-- Recipe: Salt and Pepper Shank [Rank 3]
-					i(133829),	-- Recipe: Hearty Feast [Rank 1]
-					i(133849),	-- Recipe: Hearty Feast [Rank 2]
-					i(133869),	-- Recipe: Hearty Feast [Rank 3]
-					i(133837),	-- Recipe: Suramar Surf and Turf [Rank 2]
-					i(133857),	-- Recipe: Suramar Surf and Turf [Rank 3]
-					i(133822),	-- Recipe: Azshari Salad [Rank 1]
-					i(133842),	-- Recipe: Azshari Salad [Rank 2]
-					i(133862),	-- Recipe: Azshari Salad [Rank 3]
-					i(133836), 	-- Recipe: Leybeque Ribs [Rank 2]
-					i(133856), 	-- Recipe: Leybeque Ribs [Rank 3]
-					i(133821),	-- Recipe: The Hungry Magister [Rank 1]
-					i(133841),	-- Recipe: The Hungry Magister [Rank 2]
-					i(133861),	-- Recipe: The Hungry Magister [Rank 3]
-					i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-					i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-					i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
-				}),
-				i(124120, {	-- Leyblood
-					i(133838),	-- Recipe: Barracuda Mrglgagh [Rank 2]
-					i(133858),	-- Recipe: Barracuda Mrglgagh [Rank 3]
-					i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-					i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-					i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
-				}),
-				i(124108, {	-- Mossgill Perch
-					i(133832),	-- Recipe: Deep-Fried Mossgill [Rank 2]
-					i(133852),	-- Recipe: Deep-Fried Mossgill [Rank 3]
-					i(133829),	-- Recipe: Hearty Feast [Rank 1]
-					i(133849),	-- Recipe: Hearty Feast [Rank 2]
-					i(133869),	-- Recipe: Hearty Feast [Rank 3]
-					i(133825),	-- Recipe: Fishbrul Special [Rank 1]
-					i(133845),	-- Recipe: Fishbrul Special [Rank 2]
-					i(133865),	-- Recipe: Fishbrul Special [Rank 3]
-				}),
-				i(124111, {	-- Runescale Koi
-					i(133839),	-- Recipe: Koi-Scented Stormray [Rank 2]
-					i(133859),	-- Recipe: Koi-Scented Stormray [Rank 3]
-					i(133837),	-- Recipe: Suramar Surf and Turf [Rank 2]
-					i(133857),	-- Recipe: Suramar Surf and Turf [Rank 3]
-					i(133822),	-- Recipe: Azshari Salad [Rank 1]
-					i(133842),	-- Recipe: Azshari Salad [Rank 2]
-					i(133862),	-- Recipe: Azshari Salad [Rank 3]
-					i(133824),	-- Recipe: Seed-Battered Fish Plate [Rank 1]
-					i(133844),	-- Recipe: Seed-Battered Fish Plate [Rank 2]
-					i(133864),	-- Recipe: Seed-Battered Fish Plate [Rank 3]
-					i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-					i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-					i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
-				}),
-				i(133607, {	-- Silver Mackerel
-					i(133846),	-- Recipe: Dried Mackerel Strips [Rank 2]
-					i(133866),	-- Recipe: Dried Mackerel Strips [Rank 3]
-				}),
-				i(133680, { -- Slice of Bacon
-					i(133871),	-- Recipe: Crispy Bacon [Rank 1]
-					i(133872),	-- Recipe: Crispy Bacon [Rank 2]
-					i(133873),	-- Recipe: Crispy Bacon [Rank 3]
-					i(133829),	-- Recipe: Hearty Feast [Rank 1]
-					i(133849),	-- Recipe: Hearty Feast [Rank 2]
-					i(133869),	-- Recipe: Hearty Feast [Rank 3]
-				}),
-				i(124110, {	-- Stormray
-					i(133833),	-- Recipe: Pickled Stormray [Rank 2]
-					i(133853),	-- Recipe: Pickled Stormray [Rank 3]
-					i(133829),	-- Recipe: Hearty Feast [Rank 1]
-					i(133849),	-- Recipe: Hearty Feast [Rank 2]
-					i(133869),	-- Recipe: Hearty Feast [Rank 3]
-					i(133839),	-- Recipe: Koi-Scented Stormray [Rank 2]
-					i(133859),	-- Recipe: Koi-Scented Stormray [Rank 3]
-					i(133824),	-- Recipe: Seed-Battered Fish Plate [Rank 1]
-					i(133844),	-- Recipe: Seed-Battered Fish Plate [Rank 2]
-					i(133864),	-- Recipe: Seed-Battered Fish Plate [Rank 3]
-					i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-					i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-					i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
-				}),
-				i(124121, {	-- Wildfowl Egg
-					i(133834),	-- Recipe: Faronaar Fizz [Rank 2]
-					i(133854),	-- Recipe: Faronaar Fizz [Rank 3]
-					i(133829),	-- Recipe: Hearty Feast [Rank 1]
-					i(133849),	-- Recipe: Hearty Feast [Rank 2]
-					i(133869),	-- Recipe: Hearty Feast [Rank 3]
-					i(133823),	-- Recipe: Nightborne Delicacy Platter [Rank 1]
-					i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2]
-					i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3]
-				}),
+			i(124119, {	-- Big Gamy Ribs
+				i(133835),	-- Recipe: Spiced Rib Roast [Rank 2]
+				i(133855),	-- Recipe: Spiced Rib Roast [Rank 3]
+				i(133829),	-- Recipe: Hearty Feast [Rank 1]
+				i(133849),	-- Recipe: Hearty Feast [Rank 2]
+				i(133869),	-- Recipe: Hearty Feast [Rank 3]
+				i(133836), 	-- Recipe: Leybeque Ribs [Rank 2]
+				i(133856), 	-- Recipe: Leybeque Ribs [Rank 3]
+				i(133821),	-- Recipe: The Hungry Magister [Rank 1]
+				i(133841),	-- Recipe: The Hungry Magister [Rank 2]
+				i(133861),	-- Recipe: The Hungry Magister [Rank 3]
+				i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
+				i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
+				i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+			}),
+			i(124112, {	-- Black Barracuda
+				i(133838),	-- Recipe: Barracuda Mrglgagh [Rank 2]
+				i(133858),	-- Recipe: Barracuda Mrglgagh [Rank 3]
+				i(133825),	-- Recipe: Fishbrul Special [Rank 1]
+				i(133845),	-- Recipe: Fishbrul Special [Rank 2]
+				i(133865),	-- Recipe: Fishbrul Special [Rank 3]
+				i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
+				i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
+				i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+				i(133823),	-- Recipe: Nightborne Delicacy Platter [Rank 1]
+				i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2]
+				i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3]
+			}),
+			i(124107, {	-- Cursed Queenfish
+				i(133848),	-- Recipe: Fighter Chow [Rank 2]
+				i(133868),	-- Recipe: Fighter Chow [Rank 3]
+				i(133825),	-- Recipe: Fishbrul Special [Rank 1]
+				i(133845),	-- Recipe: Fishbrul Special [Rank 2]
+				i(133865),	-- Recipe: Fishbrul Special [Rank 3]
+			}),
+			i(124118, { -- Fatty Bearsteak
+				i(133847),	-- Recipe: Bear Tartare [Rank 2]
+				i(133867),	-- Recipe: Bear Tartare [Rank 3]
+			}),
+			i(124109, {	-- Highmountain Salmon
+				i(133840),	-- Recipe: Drogbar-Style Salmon [Rank 2]
+				i(133860),	-- Recipe: Drogbar-Style Salmon [Rank 3]
+				i(133825),	-- Recipe: Fishbrul Special [Rank 1]
+				i(133845),	-- Recipe: Fishbrul Special [Rank 2]
+				i(133865),	-- Recipe: Fishbrul Special [Rank 3]
+				i(133821),	-- Recipe: The Hungry Magister [Rank 1]
+				i(133841),	-- Recipe: The Hungry Magister [Rank 2]
+				i(133861),	-- Recipe: The Hungry Magister [Rank 3]
+				i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
+				i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
+				i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+			}),
+			i(124117, {	-- Lean Steak
+				i(133831),	-- Recipe: Salt and Pepper Shank [Rank 2]
+				i(133851),	-- Recipe: Salt and Pepper Shank [Rank 3]
+				i(133829),	-- Recipe: Hearty Feast [Rank 1]
+				i(133849),	-- Recipe: Hearty Feast [Rank 2]
+				i(133869),	-- Recipe: Hearty Feast [Rank 3]
+				i(133837),	-- Recipe: Suramar Surf and Turf [Rank 2]
+				i(133857),	-- Recipe: Suramar Surf and Turf [Rank 3]
+				i(133822),	-- Recipe: Azshari Salad [Rank 1]
+				i(133842),	-- Recipe: Azshari Salad [Rank 2]
+				i(133862),	-- Recipe: Azshari Salad [Rank 3]
+				i(133836), 	-- Recipe: Leybeque Ribs [Rank 2]
+				i(133856), 	-- Recipe: Leybeque Ribs [Rank 3]
+				i(133821),	-- Recipe: The Hungry Magister [Rank 1]
+				i(133841),	-- Recipe: The Hungry Magister [Rank 2]
+				i(133861),	-- Recipe: The Hungry Magister [Rank 3]
+				i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
+				i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
+				i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+			}),
+			i(124120, {	-- Leyblood
+				i(133838),	-- Recipe: Barracuda Mrglgagh [Rank 2]
+				i(133858),	-- Recipe: Barracuda Mrglgagh [Rank 3]
+				i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
+				i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
+				i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+			}),
+			i(124108, {	-- Mossgill Perch
+				i(133832),	-- Recipe: Deep-Fried Mossgill [Rank 2]
+				i(133852),	-- Recipe: Deep-Fried Mossgill [Rank 3]
+				i(133829),	-- Recipe: Hearty Feast [Rank 1]
+				i(133849),	-- Recipe: Hearty Feast [Rank 2]
+				i(133869),	-- Recipe: Hearty Feast [Rank 3]
+				i(133825),	-- Recipe: Fishbrul Special [Rank 1]
+				i(133845),	-- Recipe: Fishbrul Special [Rank 2]
+				i(133865),	-- Recipe: Fishbrul Special [Rank 3]
+			}),
+			i(124111, {	-- Runescale Koi
+				i(133839),	-- Recipe: Koi-Scented Stormray [Rank 2]
+				i(133859),	-- Recipe: Koi-Scented Stormray [Rank 3]
+				i(133837),	-- Recipe: Suramar Surf and Turf [Rank 2]
+				i(133857),	-- Recipe: Suramar Surf and Turf [Rank 3]
+				i(133822),	-- Recipe: Azshari Salad [Rank 1]
+				i(133842),	-- Recipe: Azshari Salad [Rank 2]
+				i(133862),	-- Recipe: Azshari Salad [Rank 3]
+				i(133824),	-- Recipe: Seed-Battered Fish Plate [Rank 1]
+				i(133844),	-- Recipe: Seed-Battered Fish Plate [Rank 2]
+				i(133864),	-- Recipe: Seed-Battered Fish Plate [Rank 3]
+				i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
+				i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
+				i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+			}),
+			i(133607, {	-- Silver Mackerel
+				i(133846),	-- Recipe: Dried Mackerel Strips [Rank 2]
+				i(133866),	-- Recipe: Dried Mackerel Strips [Rank 3]
+			}),
+			i(133680, { -- Slice of Bacon
+				i(133871),	-- Recipe: Crispy Bacon [Rank 1]
+				i(133872),	-- Recipe: Crispy Bacon [Rank 2]
+				i(133873),	-- Recipe: Crispy Bacon [Rank 3]
+				i(133829),	-- Recipe: Hearty Feast [Rank 1]
+				i(133849),	-- Recipe: Hearty Feast [Rank 2]
+				i(133869),	-- Recipe: Hearty Feast [Rank 3]
+			}),
+			i(124110, {	-- Stormray
+				i(133833),	-- Recipe: Pickled Stormray [Rank 2]
+				i(133853),	-- Recipe: Pickled Stormray [Rank 3]
+				i(133829),	-- Recipe: Hearty Feast [Rank 1]
+				i(133849),	-- Recipe: Hearty Feast [Rank 2]
+				i(133869),	-- Recipe: Hearty Feast [Rank 3]
+				i(133839),	-- Recipe: Koi-Scented Stormray [Rank 2]
+				i(133859),	-- Recipe: Koi-Scented Stormray [Rank 3]
+				i(133824),	-- Recipe: Seed-Battered Fish Plate [Rank 1]
+				i(133844),	-- Recipe: Seed-Battered Fish Plate [Rank 2]
+				i(133864),	-- Recipe: Seed-Battered Fish Plate [Rank 3]
+				i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
+				i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
+				i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+			}),
+			i(124121, {	-- Wildfowl Egg
+				i(133834),	-- Recipe: Faronaar Fizz [Rank 2]
+				i(133854),	-- Recipe: Faronaar Fizz [Rank 3]
+				i(133829),	-- Recipe: Hearty Feast [Rank 1]
+				i(133849),	-- Recipe: Hearty Feast [Rank 2]
+				i(133869),	-- Recipe: Hearty Feast [Rank 3]
+				i(133823),	-- Recipe: Nightborne Delicacy Platter [Rank 1]
+				i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2]
+				i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3]
 			}),
 			n(-17, {	-- Quests
 				q(40989, {	-- The Prodigal Sous Chef
