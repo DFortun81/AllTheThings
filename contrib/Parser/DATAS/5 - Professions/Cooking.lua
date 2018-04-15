@@ -269,7 +269,12 @@ profession(185, 2550, { -- Cooking
 		recipe(2543),	-- Westfall Stew
 		recipe(3371),	-- Blood Sausage
 		recipe(28267),	-- Crunchy Spider Surprise
-		desc(un(1, i(7678)), "Do not attempt to buy this to learn on your non-Rogue characters, it won't let you. Also, you'd have to spend a couple million gold to get ahold of one."),	-- Recipe: Thistle Tea
+		{
+			["itemID"] = 7678,		-- Recipe: Thistle Tea (Removed from Game!)
+			["recipeID"] = 9513,	-- Thistle Tea
+			["description"] = "Do not attempt to buy this to learn on your non-Rogue characters, it won't let you. Also, you'd have to spend a couple million gold to get ahold of one.",
+			["u"] = 1,
+		},
 		{
 			["recipeID"] = 9513,	-- Thistle Tea
 			["classes"] = {4},		-- Rogue Only
@@ -554,6 +559,7 @@ profession(185, 2550, { -- Cooking
 		recipe(160989),		-- Sleeper Surprise
 		recipe(160984),		-- Talador Surf and Turf
 		un(1, recipe(169696)),		-- Marinated Elekk Steak (Never made it to Live)
+		un(1, recipe(169699)),		-- Seasoned Elekk Ribeye (Never made it to Live)
 		un(1, recipe(169701)),		-- Seasoned Elekk Ribeye (Never made it to Live)
 		un(1, recipe(169693)),		-- Whole Pot-Roasted Elekk (Never made it to Live)
 		recipe(173978),		-- Feast of Blood

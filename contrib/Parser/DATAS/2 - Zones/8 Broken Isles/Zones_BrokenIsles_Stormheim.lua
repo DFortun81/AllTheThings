@@ -1525,6 +1525,18 @@ _.Zones =
 							}),
 						}),
 					}),
+					profession(393, 8613, { -- Skinning
+						n(91799, {	-- Juvenile Stormwing
+							{
+									["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
+									["collectible"] = false,
+									["dr"] = 17,
+									["groups"] = {
+										recipe(194171),	-- Unbroken Claw
+									},
+								},
+						}),
+					}),
 				}),
 				n(-34, { -- World Quests
 					n(-322, { -- Cloak
