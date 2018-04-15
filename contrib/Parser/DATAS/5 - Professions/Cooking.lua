@@ -553,6 +553,9 @@ profession(185, 2550, { -- Cooking
 		recipe(161000),		-- Gorgrond Chowder
 		recipe(160989),		-- Sleeper Surprise
 		recipe(160984),		-- Talador Surf and Turf
+		un(1, recipe(169696)),		-- Marinated Elekk Steak (Never made it to Live)
+		un(1, recipe(169701)),		-- Seasoned Elekk Ribeye (Never made it to Live)
+		un(1, recipe(169693)),		-- Whole Pot-Roasted Elekk (Never made it to Live)
 		recipe(173978),		-- Feast of Blood
 		recipe(173979),		-- Feast of the Waters
 		recipe(180761),		-- Buttered Sturgeon
