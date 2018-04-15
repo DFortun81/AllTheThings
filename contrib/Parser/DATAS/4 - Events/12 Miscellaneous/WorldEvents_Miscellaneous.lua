@@ -37,11 +37,43 @@ _.WorldEvents =
 						dr(0.007, i(12007)), -- Prairie Ring
 						dr(0.01, i(3396)), -- Recipe: Elixir of Lesser Agility
 						dr(0.007, i(12008)), -- Savannah Ring
-						un(2, i(5756)), -- Silverblade
+						un(7, i(5756)), -- Silverblade
 						dr(0.007, i(11967)), -- Zircon Band
 					}),
 					i(16884, { 	-- Sturdy Junkbox
-						i(2164), 	-- Gut Ripper
+						dr(0.04, i(11974)), -- Aquamarine Ring
+						dr(0.01, i(12043)), -- Desert Choker
+						dr(0.04, i(21947)), -- Design: Gem Studded Band
+						dr(0.04, i(21945)), -- Design: The Aquamarine Ward
+						dr(0.01, i(21944)), -- Design: Truesilver Boar
+						dr(0.04, i(7552)), -- Falcon's Hook
+						dr(0.02, i(12011)), -- Forest Loop
+						dr(0.05, i(11225)), -- Formula: Enchant Bracer - Greater Stamina
+						dr(0.07, i(11204)), -- Formula: Enchant Bracer - Greater Versatility
+						dr(0.02, i(2164)), -- Gut Ripper
+						dr(0.02, i(11973)), -- Hematite Link
+						dr(0.01, i(11987)), -- Iridium Circle
+						dr(0.01, i(11999)), -- Lodestone  Hoop
+						dr(0.01, i(12031)), -- Lodestone Necklace
+						dr(0.05, i(12042)), -- Marsh Chain
+						dr(0.02, i(12012)), -- Marsh Ring
+						dr(0.2, i(12001)), -- Onyx Ring
+						dr(0.09, i(8387)), -- Pattern: Big Voodoo Mask
+						dr(0.02, i(8389)), -- Pattern: Big Voodoo Pants
+						dr(0.05, i(8386)), -- Pattern: Big Voodoo Robe
+						dr(0.02, i(10320)), -- Pattern: Red Mageweave Headband
+						dr(0.01, i(8385)), -- Pattern: Turtle Scale Gloves
+						dr(0.01, i(10301)), -- Pattern: White Bandit Mask
+						dr(0.01, i(7990)), -- Plans: Heavy Mithril Helm
+						dr(0.07, i(8029)), -- Plans: Wicked Mithril Blade
+						dr(0.01, i(9298)), -- Recipe: Elixir of Giants
+						dr(0.04, i(9295)), -- Recipe: Invisibility Potion
+						dr(0.01, i(3395)), -- Recipe: Limited Invulnerability Potion
+						dr(0.02, i(10603)), -- Schematic: Catseye Ultra Goggles
+						dr(0.02, i(10606)), -- Schematic: Parachute Cloak
+						dr(0.02, i(11988)), -- Tellurium Band
+						dr(0.02, i(11975)), -- Topaz  Ring
+						dr(0.05, i(12024)), -- Vanadium Talisman
 					}),
 					i(16885, { 	-- Heavy Junkbox
 						i(2163),	-- Shadowblade
