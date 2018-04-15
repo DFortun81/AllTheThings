@@ -2,7 +2,7 @@
 profession(393, 8613, { -- Skinning
 	n(-26, {	-- Drop
 		n(103675, {	-- Felhide Gargantuan
-			["description"] = "These mobs are only available while there is a World Quest for skinning one. They can only be skinned one time, similarly to the Slice of Bacon cooking quests.",
+			["description"] = "These mobs are only available during a World Quest. They can only be skinned one time, similarly to the Slice of Bacon cooking quests.",
 			["groups"] = {
 				i(124116, {	-- Felhide
 					{
