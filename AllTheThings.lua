@@ -1474,6 +1474,7 @@ local function SearchForItemLink(link)
 						local specs = group[1].specs;
 						if specs and group[1].s then
 							if #specs > 0 then
+								table.sort(specs);
 								local spec_label = "";
 								local atleastone = false;
 								for key, specID in ipairs(specs) do
@@ -4958,6 +4959,7 @@ local function SetRowData(self, data)
 		local summary = GetProgressText(data);
 		local specs = GetDataMember("ShowLootSpecializationRequirements") and data.specs;
 		if specs and #specs > 0 then
+			table.sort(specs);
 			for i,spec in ipairs(specs) do
 				local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
 				if class == app.Class then summary = "|T" .. icon .. ":0|t " .. summary; end
