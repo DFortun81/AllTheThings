@@ -52,7 +52,7 @@ _.Zones =
 							},
 							["questID"] = 42819, -- Change to tracking quest later.
 							["isRaid"] = true,
-						})),	
+						})),
 						cr(108678, e(1763, { -- Shar'thos 
 							["groups"] = {
 								i(141542),
@@ -1682,6 +1682,22 @@ _.Zones =
 								["creatureID"] = 120456
 							}),
 						}),
+					}),
+					profession(393, 8613, { -- Skinning
+						cr(108879, e(1770, { -- Humongris 
+							["groups"] = {
+								{
+									["itemID"] = 139895,	-- Skinning Technique: Legion Butchery
+									["collectible"] = false,
+									["dr"] = 100,
+									["groups"] = {
+										recipe(194173),	-- Legion Butchery
+									},
+								},
+							},
+							["questID"] = 42819,
+							["isRaid"] = true,
+						})),
 					}),
 				}),
 				n(-34, { 	-- World Quests
