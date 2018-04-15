@@ -220,7 +220,7 @@ _.WorldEvents =
 					i(156689, {	-- Scorched Satchel of Helpful Goods (80 - ?)
 						["groups"] = {
 						   i(113760),	-- Smoldercloth Bracers*
-						   i(113759),	-- Smoldercloth Cap
+						   i(113759),	-- Smoldercloth Cap*
 						   i(113763),	-- Smoldercloth Gloves*
 						   i(113762),	-- Smoldercloth Robe*
 						   i(113786),	-- Smoldercloth Slippers*

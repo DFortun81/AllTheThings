@@ -269,8 +269,20 @@ _.Zones =
 					q(11009),	-- Ogre Heaven
 					qh( 10714),	-- On Spirit's Wings
 					q(11030),	-- Our Boy Wants To Be A Skyguard Ranger
-					qh( 11036),	-- Out of This World Produce!					
-					qa( 11040),	-- Parts for the Rocket-Chief
+--]]
+					qh(11036, {	-- Out of This World Produce!
+						["g"] = {
+						},
+						["qg"] = 19471,	-- Old Orok
+						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other breadcrumb quests)
+					}),
+					qa(11040, {	-- Parts for the Rocket-Chief
+						["g"] = {
+						},
+						["qg"] = 21112,	-- Bossi Pentapiston
+						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other breadcrumb quests)
+					}),
+--[[
 					qa( 10798),	-- Pay the Baron a Visit
 					qa( 10584),	-- Picking Up Some Power Converters
 --]]					
