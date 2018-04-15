@@ -3789,25 +3789,88 @@ end
 app.BaseVignette = {
 	__index = function(t, key)
 		if key == "key" then
-			return "vignetteID";
+			return "questID";
 		elseif key == "f" then
 			return 107;
 		elseif key == "text" then
-			local questName = QuestTitleFromID[t.vignetteID];
-			if questName then return "|Hquest:" .. t.vignetteID .. "|h" .. questName .. "|h"; end
-			return "|Hquest:" .. t.vignetteID .. "|h[]|h";
+			if t.qgs then
+				local all = true;
+				for i,qg in ipairs(t.qgs) do
+					if not NPCNameFromID[qg] then
+						all = false;
+					end
+				end
+				if all then
+					t.name = nil;
+					local count = #t.qgs;
+					for i=1,count,1 do
+						local qg = t.qgs[i];
+						if t.name then
+							t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
+						else
+							t.name = NPCNameFromID[qg];
+						end
+						if not t.title then
+							t.title = NPCTitlesFromID[qg];
+						end
+					end
+					return t.name;
+				end
+			elseif t.qg then
+				if NPCNameFromID[t.qg] then
+					t.name = NPCNameFromID[t.qg];
+					if not t.title then
+						t.title = NPCTitlesFromID[t.qg];
+					end
+					return t.name;
+				end
+			elseif t.creatureID then
+				if t.creatureID > 0 then
+					if NPCNameFromID[t.creatureID] then
+						t.name = NPCNameFromID[t.creatureID];
+						if not t.title then
+							t.title = NPCTitlesFromID[t.creatureID];
+						end
+						return t.name;
+					end
+				else
+					t.name = L("NPC_ID_NAMES")[t.creatureID];
+					return t.name;
+				end
+			end
+		
+			local questName = QuestTitleFromID[t.questID];
+			if questName then
+				if t.retries then
+					t.retries = nil;
+					t.title = nil;
+				end
+				questName = "|Hquest:" .. t.questID .. "|h[" .. questName .. "]|h";
+				t.text = questName;
+				return questName;
+			end
+			if t.retries then
+				t.retries = t.retries + 1;
+				if t.retries > 40 then
+					questName = "|Hquest:" .. t.questID .. "|h[Quest #" .. t.questID .. "*]|h";
+					t.title = "Failed to acquire quest information. The quest made be invalid or unintended to appear in a tooltip.";
+					t.text = questName;
+					return questName;
+				end
+			else
+				t.retries = 1;
+			end
+			return "|Hquest:" .. t.questID .. "|h[]|h";
 		elseif key == "link" then
-			return "quest:" .. t.vignetteID;
+			return "quest:" .. t.questID;
 		elseif key == "icon" then
 			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
+		elseif key == "collectible" then
+			return not t.isDaily and GetDataMember("TreatIncompleteQuestsAsCollectible");
+		elseif key == "collected" then
+			return t.collectible and t.saved;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.vignetteID);
-		elseif key == "trackable" then
-			return true;
-		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.vignetteID);
-		elseif key == "questID" then
-			return t.vignetteID;
+			return IsQuestFlaggedCompleted(t.questID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3815,7 +3878,7 @@ app.BaseVignette = {
 	end
 };
 app.CreateVignette = function(id, t)
-	return createInstance(constructor(id, t, "vignetteID"), app.BaseVignette);
+	return createInstance(constructor(id, t, "questID"), app.BaseVignette);
 end
 
 -- Filtering

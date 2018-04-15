@@ -1181,15 +1181,41 @@ _.Zones =
 						},
 						["questID"] = 38422,	
 						["ids"] = {1794},
-						["description"] = "|cff66ccffSpeak to Captain Tomas to summon Mother Clacker. Alliance can tag Mother Clacker after it is summoned.|r",
-					}), 					
+						["description"] = "Speak to Captain Tomas to summon Mother Clacker. Alliance can tag Mother Clacker after it is summoned.",
+					}),
+					h({
+						["vignetteID"] = 38627,	-- Worgen Stalkers (Horde Only)
+						["qgs"] = {
+							92604,	-- Champion Elodie
+							92609,	-- Tracker Jack
+							92611,	-- Ambusher Daggerfang
+							92613,	-- Priestess Liza
+						},
+						["description"] = "There is an ongoing 4x4 battle, assist the Horde by defeating the Worgen Stalkers.",
+						["groups"] = {
+							i(129264),	-- Patrol Captain's Gauntlets
+						},
+					}),
 					nh(94313, { 	-- Daniel "Boomer" Vorick
 						["groups"] = {
 							i(129144),
 						},
 						["questID"] = 39048,	
 						["ids"] = {1794},
-					}), 
+					}),
+					a({
+						["vignetteID"] = 38630,	-- Horde Kill Squad (Alliance Only)
+						["qgs"] = {
+							92626,	-- Deathguard Adams
+							92631,	-- Dark Ranger Jess
+							92633,	-- Assassin Huwe
+							92634,	-- Apothecary Perez
+						},
+						["description"] = "There is an ongoing 4x4 battle, assist the Alliance by defeating the Horde Kill Squad.",
+						["groups"] = {
+							i(129266),	-- Raider Captain's Gauntlets
+						},
+					}),
 					na(94347, { 	-- Dread-Rider Cortis
 						["groups"] = {	
 							i(130134),
@@ -1224,22 +1250,17 @@ _.Zones =
 						},
 						["questID"] = 42591,	
 						["ids"] = {1794},	
-					}), 
-					a(v(38630, { 	-- Horde Kill Squad
-						["groups"] = {	
-							i(129266),
+					}),
+					a({
+						["vignetteID"] = 38625,	-- Hook and Sinker (Alliance Only)
+						["qgs"] = {
+							92590,	-- Hook
+							92591,	-- Sinker
 						},
-						["displayID"] = 30072, 
-						["ids"] = {1794},
-						["description"] = "|cff66ccffThere is an ongoing 4x4 battle, assist and help kill Dark Ranger Jess, Apothecary Perez, Deathguard Adams, and Assassin Huwe.|r",
-					})),
-					a(v(38625, { 	-- Hook and Sinker
-						["groups"] = {	
-							i(129109),
+						["groups"] = {
+							i(129109),	-- Sinker's Line
 						},
-						["displayID"] = 27773,
-						["ids"] = {1794},
-					})),
+					}),
 					nh(92951, { 	-- Houndmaster Ely
 						["groups"] = {	
 							i(129037),
@@ -1326,15 +1347,7 @@ _.Zones =
 						},
 						["questID"] = 38472,	
 						["ids"] = {1794},	
-					}), 
-					h(v(38627, { 	-- Worgen Stalkers
-						["groups"] = {	
-							i(129264),
-						},
-						["displayID"] = 63182,
-						["ids"] = {1794},
-						["description"] = "|cff66ccffThere is an ongoing 4x4 battle, assist and help kill Champion Elodie, Priestess Liza, Tracker Jack, and Ambusher Daggerfang.|r",
-					})),
+					}),
 --[[
 				--	n(108885, { 	-- Aegir Wavecrusher	}), 
 				--	n(92599, { 		-- Bloodstalker Alpha }), 
