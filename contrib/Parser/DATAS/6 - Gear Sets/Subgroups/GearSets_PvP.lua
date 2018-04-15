@@ -353,6 +353,128 @@ _.GearSets =
 			},
 			["achievementID"] = 11707, -- No Mercy
 		}),
+		gsh(379, { -- Season 3
+			["groups"] = {
+				gs(379, { -- Vengeful Gladiator's Satin Armor		
+					["groups"] = {	
+						i(33718), -- 
+						i(33720), -- 
+						i(33721), -- 
+						i(33901), -- 
+						i(33717), -- 
+						i(33900), -- 
+						i(33719), -- 
+						i(33902), -- 
+					},	
+					["classes"] = 5, -- Priest	
+				}),		
+				gs(959, { -- Vengeful Gladiator's Silk Armor		
+					["groups"] = {	
+						i(33758), -- 
+						i(33757), -- 
+						i(33760), -- 
+						i(33913), -- 
+						i(33759), -- 
+						i(33912), -- 
+						i(33761), -- 
+						i(33914), -- 
+					},	
+					["classes"] = 8, -- Mage	
+				}),		
+				gs(955, { -- Vengeful Gladiator's Felweave Armor		
+					["groups"] = {	
+						i(33677), -- 
+						i(33679), -- 
+						i(33680), -- 
+						i(33883), -- 
+						i(33676), -- 
+						i(33882), -- 
+						i(33678), -- 
+						i(33884), -- 
+					},	
+					["classes"] = 9, -- Warlock	
+				}),		
+				gs(961, { -- Vengeful Gladiator's Dragonhide Armor		
+					["groups"] = {	
+						i(33672), -- 
+						i(33674), -- 
+						i(33675), -- 
+						i(33881), -- 
+						i(33690), -- 
+						i(33879), -- 
+						i(33673), -- 
+						i(33880), -- 
+					},	
+					["classes"] = 11, -- Druid	
+				}),		
+				gs(957, { -- Vengeful Gladiator's Leather Armor		
+					["groups"] = {	
+						i(33701), -- 
+						i(33703), -- 
+						i(33704), -- 
+						i(147670), -- 
+						i(33700), -- 
+						i(33891), -- 
+						i(33702), -- 
+						i(33892), -- 
+					},	
+					["classes"] = 4, -- Rogue	
+				}),		
+				gs(960, { -- Vengeful Gladiator's Chain Armor		
+					["groups"] = {	
+						i(33666), -- 
+						i(33668), -- 
+						i(33664), -- 
+						i(33876), -- 
+						i(33665), -- 
+						i(33877), -- 
+						i(33667), -- 
+						i(33878), -- 
+					},	
+					["classes"] = 3, -- Hunter	
+				}),		
+				gs(956, { -- Vengeful Gladiator's Ringmail Armor		
+					["groups"] = {	
+						i(33740), -- 
+						i(33742), -- 
+						i(33738), -- 
+						i(33894), -- 
+						i(33739), -- 
+						i(33898), -- 
+						i(33741), -- 
+						i(33896), -- 
+					},	
+					["classes"] = 7, -- Shaman	
+				}),		
+				gs(958, { -- Vengeful Gladiator's Scaled Armor		
+					["groups"] = {	
+						i(33697), -- 
+						i(33753), -- 
+						i(33695), -- 
+						i(33889), -- 
+						i(33696), -- 
+						i(33888), -- 
+						i(33698), -- 
+						i(33890), -- 
+					},	
+					["classes"] = 2, -- Paladin	
+				}),		
+				gs(954, { -- Vengeful Gladiator's Plate Armor		
+					["groups"] = {	
+						i(33730), -- 
+						i(33732), -- 
+						i(33728), -- 
+						i(33813), -- 
+						i(33729), -- 
+						i(33811), -- 
+						i(33731), -- 
+						i(33812), -- 
+					},	
+					["classes"] = 1, -- Warrior	
+				}),		
+			},
+			["achievementID"] = 11708, -- With a Vengeance
+		}),
 		gsh(373, { -- Season 7
 			["groups"] = {
 				gs(373, { -- Relentless Gladiator's Satin Armor
