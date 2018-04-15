@@ -53,6 +53,8 @@ _.Zones =
 								qa(11830),	-- Honor the Flame
 								qh(11835),	-- Honor the Flame
 								qg(25962, qa(11882)),	-- Playing with Fire
+								qg(20102, qa(11970)),	-- The Master of Summer Lore
+								qg(20102, qh(11971)),	-- The Spinner of Summer Tales
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
@@ -74,6 +76,8 @@ _.Zones =
 								qh(29400),	-- A Season for Celebration
 								q( 12407),	-- Candy Bucket
 								q( 12408),	-- Candy Bucket
+								qg(20102, qa(11356)),	-- Costumed Orphan Matron
+								qg(20102, qh(11357)),	-- Masked Orphan Matron
 							}),
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
@@ -158,6 +162,25 @@ _.Zones =
 					}),
 					
 					
+					q( 10272, {	-- A Promising Start
+						["g"] = {
+						},
+						["qg"] = 20110,	-- Tyri
+						["sourceQuests"] = { 10281 },	-- Formal Introductions
+					}),
+					
+					
+					q( 10353, {	-- Arconus the Insatiable
+						["g"] = {
+							i(30329),	-- Flesh Handler's Headpiece
+							i(30328),	-- Protectorate Assassin's Tunic
+							i(30330),	-- Starcaller's Plated Belt
+							i(30517),	-- Netherfarer's Leggings
+						},
+						["qg"] = 20552,	-- Agent Ya-six
+					}),
+					
+					
 					q( 10176, {	-- Ar'kelos the Guardian
 						["g"] = {
 							i(29777),	-- Cloak of the Valiant Defender
@@ -165,6 +188,14 @@ _.Zones =
 						},
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10209 },	-- Summoner Kanthin's Prize
+					}),
+					
+					
+					q( 10973, {	-- A Thousand Worlds
+						["g"] = {
+						},
+						["qg"] = 20448,	-- 
+						["description"] = "Requires Revered with The Consortium.",
 					}),
 					
 					
@@ -247,6 +278,15 @@ _.Zones =
 					}),
 					
 					
+					i( 29235, {	-- Luminrath's Mantle
+						q( 10306, {	-- Conjurer Luminrath
+							["g"] = {
+							},
+							["qg"] = 19544,	-- Conjurer Luminrath
+						}),
+					}),
+					
+					
 					q( 10427, {	-- Creatures of the Eco-Domes
 						["g"] = {
 						},
@@ -300,6 +340,18 @@ _.Zones =
 					}),
 					
 					
+					q( 10406, {	-- Delivering the Message
+						["g"] = {
+							i(30335),	-- Druidic Force Boots
+							i(30337),	-- Protectorate Headplate
+							i(30336),	-- Surger's Hand Wraps
+							i(30518),	-- Warpthread Vest
+						},
+						["qg"] = 20482,	-- Image of Commander Ameer
+						["sourceQuests"] = { 10405 },	-- S-A-B-O-T-A-G-E
+					}),
+					
+					
 					q( 10320, {	-- Destroy Naberius!
 						["g"] = {
 							i(29780),	-- Kirin Tor Apprentice's Robes
@@ -317,6 +369,17 @@ _.Zones =
 						},
 						["qg"] = 20811,	-- Ghabar
 						["sourceQuests"] = { 10423 },	-- To the Stormspire
+					}),
+					
+					
+					q( 10439, {	-- Dimensuis the All-Devouring (awarded "Destroying the All-Devouring" criteria)
+						["g"] = {
+							i(30297),	-- Circlet of the Starcaller
+							i(30299),	-- Starcaller's Plated Leggings
+							i(30298),	-- Void Slayer's Tunic
+						},
+						["qg"] = 20907,	-- Professor Dabiri
+						["sourceQuests"] = { 10438 },	-- On Nethery Wings
 					}),
 					
 					
@@ -376,11 +439,30 @@ _.Zones =
 					}),
 					
 					
+					q( 10425, {	-- Escape from the Staging Grounds
+						["g"] = {
+							i(30331),	-- Diviner's Cinch
+							i(30332),	-- Ferocious Bands
+							i(30333),	-- Spaulders of the Protectorate
+							i(30334),	-- Starcaller's Plated Stompers
+						},
+						["qg"] = 20763,	-- Captured Protectorate Vanguard
+					}),
+					
+					
 					q( 10224, {	-- Essence for the Engines
 						["g"] = {
 						},
 						["qg"] = 19709,	-- Chief Engineer Trep
 						["sourceQuests"] = { 10225 },	-- Report to Engineering
+					}),
+					
+					
+					q( 10384, {	-- Ethereum Data
+						["g"] = {
+						},
+						["qg"] = 20482,	-- Image of Commander Ameer
+						["sourceQuests"] = { 10339 },	-- The Ethereum
 					}),
 					
 					
@@ -406,11 +488,27 @@ _.Zones =
 					}),
 					
 					
+					q( 10281, {	-- Formal Introductions
+						["g"] = {
+						},
+						["qg"] = 20154,	-- Shrouded Figure
+						["sourceQuests"] = { 10271 },	-- Getting Down to Business
+					}),
+					
+					
 					q( 10276, {	-- Full Triangle
 						["g"] = {
 						},
 						["qg"] = 20112,	-- Wind Trader Tuluman
 						["sourceQuests"] = { 10275 },	-- Triangulation Point Two
+					}),
+					
+					
+					q( 10271, {	-- Getting Down to Business
+						["g"] = {
+						},
+						["qg"] = 20518,	-- Image of Wind Trader Marid
+						["sourceQuests"] = { 10270 },	-- A Not-So-Modest Proposal
 					}),
 					
 					
@@ -536,11 +634,40 @@ _.Zones =
 					}),
 					
 					
+					q( 10408, {	-- Nexus-King Salhadaar
+						["g"] = {
+							i(30011),	-- Ameer's Impulse Taser
+							i(30012),	-- Ameer's Judgment
+							i(30010),	-- Fleshling Simulation Staff
+							i(30013),	-- Twin-Bladed Ripper
+							i(30009),	-- The Burning Crusader
+						},
+						["qg"] = 20482,	-- Image of Commander Ameer
+						["sourceQuests"] = { 10406 },	-- Delivering the Message
+					}),
+					
+					
+					q( 10183, {	-- Off To Area 52
+						["g"] = {
+						},
+						["qg"] = 19569,	-- Netherologist Coppernickels
+						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other breadcrumb quests)
+					}),
+					
+					
 					q( 10234, {	-- One Demon's Trash...
 						["g"] = {
 						},
 						["qg"] = 19728,	-- Mama Wheeler
 						["sourceQuests"] = { 10333 },	-- Help Mama Wheeler
+					}),
+					
+					
+					q( 10438, {	-- On Nethery Wings
+						["g"] = {
+						},
+						["qg"] = 20907,	-- Professor Dabiri
+						["sourceQuests"] = { 10437 },	-- Recipe for Destruction
 					}),
 					
 					
@@ -559,6 +686,14 @@ _.Zones =
 						},
 						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuests"] = { 10343 },	-- The Unending Invasion
+					}),
+					
+					
+					q( 10385, {	-- Potential for Brain Damage = High
+						["g"] = {
+						},
+						["qg"] = 20482,	-- Image of Commander Ameer
+						["sourceQuests"] = { 10384 },	-- Ethereum Data
 					}),
 					
 					
@@ -630,6 +765,14 @@ _.Zones =
 					}),
 					
 					
+					q( 10405, {	-- S-A-B-O-T-A-G-E
+						["g"] = {
+						},
+						["qg"] = 20482,	-- Image of Commander Ameer
+						["sourceQuests"] = { 10385 },	-- Potential for Brain Damage = High
+					}),
+					
+					
 					q( 10310, {	-- Sabotage the Warp-Gate!
 						["g"] = {
 							i(29978),	-- Consortium Combatant's Robes
@@ -649,6 +792,18 @@ _.Zones =
 					}),
 					
 					
+					q( 10274, {	-- Securing the Celestial Ridge (awarded "The Consortium" criteria)
+						["g"] = {
+							i(29808),	-- Shimmering Azure Boots
+							i(29810),	-- Dragon Crested Epaulets
+							i(29811),	-- Goldenlink Bracers
+							i(29812),	-- Blued Steel Gauntlets
+						},
+						["qg"] = 20110,	-- Tyri
+						["sourceQuests"] = { 10273 },	-- Troublesome Distractions
+					}),
+					
+					
 					q( 10342, {	-- Securing the Shaleskin Shale
 						["g"] = {
 						},
@@ -661,6 +816,14 @@ _.Zones =
 						},
 						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["sourceQuests"] = { 10276 },	-- Full Triangle
+					}),
+					
+					
+					q( 10974, {	-- Stasis Chambers of Bash'ir
+						["g"] = {
+						},
+						["qg"] = 20448,	-- Commander Ameer
+						["sourceQuests"] = { 10973 },	-- A Thousand Worlds
 					}),
 					
 					
@@ -763,6 +926,27 @@ _.Zones =
 					}),
 				
 				
+					q( 10345, {	-- The Flesh Lies...
+						["g"] = {
+							i(30352),	-- Demolisher's Bracers
+							i(30341),	-- Flash Handler's Gauntlets
+							i(30342),	-- Protectorate Waistband
+							i(30519),	-- Boots of the Nexus Warden
+						},
+						["qg"] = 20551,	-- Agent Araxes
+					}),
+				
+				
+					i( 29738, {	-- Vial of Void Horror Ooze
+						q(10413, {	-- The Horrors of Pollution
+							["g"] = {
+								i(30338),	-- Diviner's Cloak
+							},
+							["qg"] = 20779,	-- Congealed Void Horror
+						}),
+					}),
+				
+				
 					q( 10336, {	-- The Minions of Culuthas
 						["g"] = {
 						},
@@ -827,6 +1011,14 @@ _.Zones =
 						},
 						["qg"] = 20092,	-- Dealer Hazzin
 						["sourceQuests"] = { 10269 },	-- Triangulation Point One
+					}),
+				
+				
+					q( 10273, {	-- Troublesome Distractions
+						["g"] = {
+						},
+						["qg"] = 20110,	-- Tyri
+						["sourceQuests"] = { 10272 },	-- A Promising Start
 					}),
 				
 				
@@ -919,157 +1111,13 @@ _.Zones =
 						["sourceQuests"] = {  },	-- 
 					}),
 --]]
+				-- q(10850),	-- Nether Gas In a Fel Fire Engine (doesn't ever register as completed and is irrelevant, it's only part of "Fel Reavers, No Thanks!")
 				
-				
-					q( 10197),	-- A Convincing Disguise
-					q( 10380),	-- A Dark Pact
-					q( 10202),	-- A Defector
-					q( 10508),	-- A Gift for Voren'thal
-					q( 10970),	-- A Mission of Mercy
-					qa(11042),	-- A Mystifying Vision
-					q( 10272),	-- A Promising Start
-					qh(11037),	-- A Strange Vision
-					q( 10973),	-- A Thousand Worlds
-					q( 10381, {	-- Aldor No More
-						i(30382),
-						i(30379),
-						i(30381),
-						i(30380),
-					}),
-					q( 10353, {	-- Arconus the Insatiable
-						i(30329),
-						i(30328),
-						i(30330),
-						i(30517),
-					}),
-					q( 11038),	-- Assist Exarch Orelis
-					q( 10263),	-- Assisting the Consortium
-					q( 10264),	-- Assisting the Consortium
-					q( 10246),	-- Attack on Manaforge Coruu
-					q( 10245),	-- B'naar Console Transcription
-					q( 10652),	-- Behind Enemy Lines
-					q( 10204),	-- Bloodgem Crystals
-					q( 10509),	-- Bound for Glory
-					q( 10306),	-- Conjurer Luminrath
-					qa(11356),	-- Costumed Orphan Matron
-					q( 11481),	-- Crisis at the Sunwell
-					q( 10432),	-- Damning Evidence
-					q( 10409, {	-- Deathblow to the Legion - Aldor
-						i(30368),
-						i(30369),
-						i(30370),
-						i(30371),
-					}),
-					q( 10406, {	-- Delivering the Message
-						i(30335),
-						i(30337),
-						i(30336),
-						i(30518),
-					}),
-					q( 10439, {	-- Dimensuis the All-Devouring
-						i(30297),
-						i(30299),
-						i(30298),
-					}),
-					q( 10241),	-- Distraction at Manaforge B'naar
-					q( 10425, {	-- Escape from the Staging Grounds
-						i(30331),
-						i(30332),
-						i(30333),
-						i(30334),
-					}),
-					q( 10384),	-- Ethereum Data
-					q( 10972),	-- Ethereum Prisoner I.D. Catalogue
-					q( 10971),	-- Ethereum Secrets
-					q( 10281),	-- Formal Introductions
-					q( 10271),	-- Getting Down to Business
-					qa(39202),	-- Hero's Call: Netherstorm
-					q( 10193),	-- High Value Targets
-					q( 10198, {	-- Information Gathering - Scryer
-						i(30397),
-						i(30383),
-						i(30384),
-						i(30386),
-					}),
-					q( 10410),	-- Ishanah's Help
-					q( 10341, {	-- Kick Them While They're Down - Scryer
-						i(30395),
-						i(30394),
-						i(30396),
-						i(30522),
-					}),
-					q( 10189),	-- Manaforge B'naar
-					q( 10325),	-- Marks of Kil'jaeden
-					q( 10653),	-- Marks of Sargeras
-					qh(11357),	-- Masked Orphan Matron
-					q( 10313, {	-- Measuring Warp Energies - Aldor
-						i(30362),
-						i(30363),
-						i(30364),
-						i(30521),
-					}),
-					q( 10326),	-- More Marks of Kil'jaeden
-					q( 10654),	-- More Marks of Sargeras
-					q( 10243),	-- Naaru Technology
-					q( 10850),	-- Nether Gas In a Fel Fire Engine
-					q( 10408, {	-- Nexus-King Salhadaar
-						i(30011),
-						i(30012),
-						i(30010),
-						i(30013),
-						i(30009),
-					}),
-					q( 10183),	-- Off To Area 52
-					q( 10438),	-- On Nethery Wings
-					qh(11036),	-- Out of This World Produce!
-					q( 10431),	-- Outside Assistance
-					qa(11040),	-- Parts for the Rocket-Chief
-					q( 10385),	-- Potential for Brain Damage = High
-					q( 11039),	-- Report to Spymaster Thalodien
-					q( 10200),	-- Return to Thalodien
-					q( 10405),	-- S-A-B-O-T-A-G-E
-					q( 10274, {	-- Securing the Celestial Ridge
-						i(29808),
-						i(29810),
-						i(29811),
-						i(29812),
-					}),
-					q( 10969),	-- Seek Out Ameer
-					q( 10323),	-- Shutting Down Manaforge Ara
-					q( 10365),	-- Shutting Down Manaforge Ara
-					q( 10329),	-- Shutting Down Manaforge B'naar
-					q( 10299),	-- Shutting Down Manaforge B'naar
-					q( 10321),	-- Shutting Down Manaforge Coruu
-					q( 10330),	-- Shutting Down Manaforge Coruu
-					q( 10322),	-- Shutting Down Manaforge Duro
-					q( 10338),	-- Shutting Down Manaforge Duro
-					q( 10327),	-- Single Mark of Kil'jaeden
-					q( 10655),	-- Single Mark of Sargeras
-					q( 10407),	-- Socrethar's Shadow
-					q( 10974),	-- Stasis Chambers of Bash'ir
-					q( 10194),	-- Stealth Flight
-					q( 11877),	-- Sunfury Attack Plans
-					q( 10328),	-- Sunfury Briefings
-					q( 10345, {	-- The Flesh Lies...
-						i(30352),
-						i(30341),
-						i(30342),
-						i(30519),
-					}),
-					q( 10413, {	-- The Horrors of Pollution
-						i(30338),
-					}),
-					qa(11970),	-- The Master of Summer Lore
-					qh(11971),	-- The Spinner of Summer Tales
-					q( 10273),	-- Troublesome Distractions
-					q( 10507, {	-- Turning Point - Scryer
-						i(30375),
-						i(30372),
-						i(30373),
-						i(30374),
-						i(30859),
-					}),
-					qh(39201),	-- Warchief's Command: Netherstorm
+					
+					
+					
+					
+					
 
 
 -- DUNGEON QUESTS
@@ -1082,6 +1130,50 @@ _.Zones =
 
 -- FACTION QUESTS					
 					faction(932, {	-- The Aldor
+						-- q(11481),	-- Crisis at the Sunwell (all these quests may only be able to be picked up in Shattrath)
+						-- q(10327),	-- Single Mark of Kil'jaeden
+						-- q(10655),	-- Single Mark of Sargeras
+						-- q(10325),	-- Marks of Kil'jaeden
+						-- q(10653),	-- Marks of Sargeras
+						-- q(10326),	-- More Marks of Kil'jaeden
+						-- q(10654),	-- More Marks of Sargeras
+						q( 10263, {	-- Assisting the Consortium
+							["g"] = {
+							},
+							["qg"] = 19467,	-- Anchorite Karja
+							["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
+						}),
+						q( 10328),	-- Sunfury Briefings
+						q( 10431),	-- Outside Assistance
+						q( 10380),	-- A Dark Pact
+						q( 10381, {	-- Aldor No More
+							i(30382),
+							i(30379),
+							i(30381),
+							i(30380),
+						}),
+						q( 10241),	-- Distraction at Manaforge B'naar
+						q( 10313, {	-- Measuring Warp Energies - Aldor
+							i(30362),
+							i(30363),
+							i(30364),
+							i(30521),
+						}),
+						q( 10246),	-- Attack on Manaforge Coruu
+						q( 10243),	-- Naaru Technology
+						q( 10245),	-- B'naar Console Transcription
+						q( 10299),	-- Shutting Down Manaforge B'naar
+						q( 10321),	-- Shutting Down Manaforge Coruu
+						q( 10322),	-- Shutting Down Manaforge Duro
+						q( 10323),	-- Shutting Down Manaforge Ara
+						q( 10407),	-- Socrethar's Shadow
+						q( 10410),	-- Ishanah's Help
+						q( 10409, {	-- Deathblow to the Legion - Aldor
+							i(30368),
+							i(30369),
+							i(30370),
+							i(30371),
+						}),
 					}),
 					faction(933, {	-- The Consortium
 						q( 10265, {	-- Consortium Crystal Collection
@@ -1102,8 +1194,75 @@ _.Zones =
 							["description"] = "Gives reputation through Exalted.",
 							["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
 						})),
+						q( 10969, {	-- Seek Out Ameer
+							["g"] = {
+							},
+							["qg"] = 22899,	-- Protectorate Advisor Rahim
+							["description"] = "Requires Honored with The Consortium.",
+							["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
+						}),
+						q( 10970, {	-- A Mission of Mercy
+							["g"] = {
+							},
+							["qg"] = 20448,	-- Commander Ameer
+							["description"] = "Requires Honored with The Consortium.",
+						}),
+						q( 10971, {	-- Ethereum Secrets
+							["g"] = {
+							},
+							["qg"] = 20448,	-- Commander Ameer
+							["sourceQuests"] = { 10970 },	-- A Mission of Mercy
+						}),
+						qr(q(10972, {	-- Ethereum Prisoner I.D. Catalogue
+							["g"] = {
+							},
+							["qg"] = 20448,	-- Commander Ameer
+							["description"] = "Gives reputation through Exalted.",
+							["sourceQuests"] = { 10971},	-- Ethereum Secrets
+						})),
 					}),
 					faction(934, {	-- The Scryers
+						q( 10264, {	-- Assisting the Consortium
+							["g"] = {
+							},
+							["qg"] = 19468,	-- Spymaster Thalodien
+							["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
+						}),
+						q( 11039),	-- Report to Spymaster Thalodien
+						q( 10189),	-- Manaforge B'naar
+						q( 10193),	-- High Value Targets
+						q( 10329),	-- Shutting Down Manaforge B'naar
+						q( 10194),	-- Stealth Flight
+						q( 10652),	-- Behind Enemy Lines
+						q( 10197),	-- A Convincing Disguise
+						q( 10198, {	-- Information Gathering - Scryer
+							i(30397),
+							i(30383),
+							i(30384),
+							i(30386),
+						}),
+						q( 10330),	-- Shutting Down Manaforge Coruu
+						q( 10200),	-- Return to Thalodien
+						q( 10338),	-- Shutting Down Manaforge Duro
+						q( 10365),	-- Shutting Down Manaforge Ara
+						q( 10341, {	-- Kick Them While They're Down - Scryer
+							i(30395),
+							i(30394),
+							i(30396),
+							i(30522),
+						}),
+						q( 10202),	-- A Defector
+						q( 10432),	-- Damning Evidence
+						q( 10508),	-- A Gift for Voren'thal
+						q( 10509),	-- Bound for Glory
+						q( 10507, {	-- Turning Point - Scryer
+							i(30375),
+							i(30372),
+							i(30373),
+							i(30374),
+							i(30859),
+						}),
+						q( 10204),	-- Bloodgem Crystals
 					}),
 				}),	
 				n(-16, {	-- Rares	

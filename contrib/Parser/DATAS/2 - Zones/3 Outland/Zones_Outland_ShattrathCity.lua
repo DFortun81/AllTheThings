@@ -104,7 +104,6 @@ _.Zones =
 					q(10552),	-- Allegiance to the Scryers
 					q(11024),	-- An Ally in Lower City
 					q(10419),	-- Arcane Tomes
-					q(11038),	-- Assist Exarch Orelis
 					qh( 10167),	-- Auchindoun...
 					qa( 10966),	-- Back to the Orphanage
 					qh( 10967),	-- Back to the Orphanage
@@ -138,7 +137,6 @@ _.Zones =
 					qa( 11356),	-- Costumed Orphan Matron
 					q(11028),	-- Countdown to Doom
 					q(10009),	-- Crackin' Some Skulls
-					q(11481),	-- Crisis at the Sunwell
 					qh( 29667),	-- Culling the Herd
 --]]					
 					q(10409,  {  -- Deathblow to the Legion - Aldor 
@@ -228,8 +226,6 @@ _.Zones =
 						}),
 					}),
 --[[					
-					q(10325),	-- Marks of Kil'jaeden
-					q(10653),	-- Marks of Sargeras
 					qh( 11357),	-- Masked Orphan Matron
 					q(29681),	-- Maximum Security Breakout
 					q(10983),	-- Mog'dorg the Wizened
@@ -461,6 +457,15 @@ _.Zones =
 							i(32861),	-- Reins of the Veridian Netherwing Drake Mount
 						},
 						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+					}),
+					faction(932, {	-- The Aldor
+						q(11038),	-- Assist Exarch Orelis
+						q(11481),	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
+						q(10325),	-- Marks of Kil'jaeden (may be able to be picked up in Netherstorm)
+						q(10653),	-- Marks of Sargeras  (may be able to be picked up in Netherstorm)
+					}),
+					faction(1077, {	-- Shattered Sun Offensive
+						q(11877),	-- Sunfury Attack Plans
 					}),
 				}),	
 				n(-2, { 	-- Vendors
