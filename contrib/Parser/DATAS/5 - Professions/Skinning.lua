@@ -1,5 +1,131 @@
 -- Skinning - Skill ID 393 / Spell ID 8613
 profession(393, 8613, { -- Skinning
+	n(-26, {	-- Drop
+		n(103675, {	-- Felhide Gargantuan
+			["description"] = "These mobs are only available while there is a World Quest for skinning one. They can only be skinned one time, similarly to the Slice of Bacon cooking quests.",
+			["groups"] = {
+				i(124116, {	-- Felhide
+					{
+						["itemID"] = 129863,	-- Felhide Sample
+						["questID"] = 40156,	-- Felhide Sample (Quest)
+						["groups"] = {
+							recipe(194167),	-- Felhide [Rank 1]
+						},
+					},
+					{
+						["questID"] = 40157,	-- An Unseemly Task
+						["sourceQuest"] = 40156,	-- Source Quest: Felhide Sample (Quest)
+						["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+					},
+					{
+						["questID"] = 40158,	-- Darkheart Thicket: Demons Be Different
+						["sourceQuest"] = 40157,	-- Source Quest: An Unseemly Task
+						["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+						["groups"] = {
+							recipe(194168),	-- Felhide [Rank 2]
+						},
+					},
+					{
+						["questID"] = 40159,	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
+						["sourceQuest"] = 40158,	-- Source Quest: Darkheart Thicket: Demons Be Different
+						["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+						["groups"] = {
+							recipe(194169),	-- Felhide [Rank 3]
+						},
+					},
+				}),
+			},
+		}),
+		i(124115, {	-- Stormscale
+			{
+				["itemID"] = 129862,	-- Stormscale Sample
+				["questID"] = 40141,	-- Stormscale Sample (Quest)
+			},
+			{
+				["questID"] = 40142,	-- The Core of the Stormscale (Quest)
+				["sourceQuest"] = 40141,	-- Source Quest: Stormscale Sample
+				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+				["groups"] = {
+					recipe(194164),	-- Stormscale [Rank 1]
+				},
+			},
+			{
+				["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
+				["questID"] = 40143,	-- Unfinished Treatise on the Properties of Stormscale (Quest)
+				["sourceQuest"] = 40142,	-- Source Quest: The Core of the Stormscale
+			},
+			{
+				["questID"] = 40144,	-- Glielle (Quest)
+				["sourceQuest"] = 40143,	-- Source Quest: Unfinished Treatise on the Properties of Stormscale
+				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+			},
+			{
+				["questID"] = 40145,	-- Under Down (Quest)
+				["sourceQuest"] = 40144,	-- Source Quest: Glielle
+				["qg"] = 98791,			-- Quest Giver: Glielle <Skinning Trainer>
+				["groups"] = {
+					recipe(194165),	-- Stormscale [Rank 2]
+				},
+			},
+			{
+				["questID"] = 40146,	-- Seymour and Agnes (Quest)
+				["sourceQuest"] = 40143,	-- Source Quest: Unfinished Treatise on the Properties of Stormscale
+				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+			},
+			{
+				["questID"] = 40147,	-- Mother's Prized Knife (Quest)
+				["sourceQuest"] = 40146,	-- Source Quest: Seymour and Agnes
+				["qg"] = 98721,			-- Quest Giver: Seymour <Skinning Trainer>
+			},
+			{
+				["questID"] = 40148,	-- Red-Eyed Revenge (Quest)
+				["sourceQuest"] = 40146,	-- Source Quest: Seymour and Agnes
+				["qg"] = 98721,			-- Quest Giver: Seymour <Skinning Trainer>
+			},
+			{
+				["questID"] = 40149,	-- Drakol'nir Must Die (Quest)
+				["sourceQuests"] = {40147,40148},	-- Source Quest: Mother's Prized Knife / Seymour and Agnes
+				["qg"] = 98721,			-- Quest Giver: Seymour <Skinning Trainer>
+				["groups"] = {
+					i(130102),	-- Mother's Skinning Knife
+				},
+			},
+			{
+				["itemID"] = 129867,	-- Immaculate Stormscale
+				["questID"] = 40151,	-- Immaculate Stormscale (Quest)
+				["sourceQuest"] = 40144,	-- Source Quest: Under Down (Quest)
+			},
+			{
+				["questID"] = 40152,	-- Scales for Ske'rit (Quest)
+				["sourceQuest"] = 40151,	-- Source Quest: Immaculate Stormscale (Quest)
+				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+			},
+			{
+				["questID"] = 40153,	-- Return to Karazhan: Scales of Legend (Quest)
+				["sourceQuest"] = 40152,	-- Source Quest: Scales for Ske'rit (Quest)
+				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+			},
+			{
+				["questID"] = 40154,	-- Eye of Azshara: The Scales of Serpentrix (Quest)
+				["sourceQuest"] = 40152,	-- Source Quest: Scales for Ske'rit (Quest)
+				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+			},
+			{
+				["questID"] = 40155,	-- Eye of Azshara: The Scales of Serpentrix (Quest)
+				["sourceQuests"] = {40153,40154},	-- Source Quest: Return to Karazhan: Scales of Legend / Eye of Azshara: The Scales of Serpentrix
+				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+				["groups"] = {
+					recipe(194166),	-- Stormscale [Rank 3]
+				},
+			},
+		}),
+		i(124113, {	-- Stonehide Leather
+			{
+				["itemID"] = 129860,	-- Stonehide Leather Sample
+				["questID"] = 40131,	-- Stonehide Leather Sample (Quest)
+			},
+		}),
+	}),
 	n(-25, { -- Pet Battles
 		i(153057), -- Fossorial Bile Larva
 	}),
