@@ -183,16 +183,24 @@ profession(185, 2550, { -- Cooking
 				i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2]
 				i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3]
 			}),
+			{
+				["itemID"] = 151653,	-- Broken Isles Recipe Scrap
+				["description"] = "Use 10 of these to create an unlearned recipe. It appears as though you can only get Rank 2+ recipes from this item.",
+				["collectible"] = false,
+			},
+			{
+				["itemID"] = 146757,	-- Prepared Ingredients
+				["description"] = "Use 10 of these to create food or unlearned recipes. It appears as though you can only get Rank 2+ recipes from this item.",
+				["collectible"] = false,
+			},
 			n(-17, {	-- Quests
 				q(40989, {	-- The Prodigal Sous Chef
-					--["collectible"] = false,
 					["description"] = "If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",
 					["groups"] = {
 						i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1]
 					},
 				}),
 				q(40988, {	-- Too Many Chefs
-					--["collectible"] = false,
 					["description"] = "If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",
 					["groups"] = {
 						i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1]
