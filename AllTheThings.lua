@@ -3390,7 +3390,7 @@ app.BaseObject = {
 		if key == "key" then
 			return "objectID";
 		elseif key == "text" then
-			local name = L("OBJECT_ID_NAMES")[t.objectID] or ("Unknown Object ID #" .. t.objectID);
+			local name = L("OBJECT_ID_NAMES")[t.objectID] or ("Object ID #" .. t.objectID);
 			if t["isRaid"] then name = "|cffff8000" .. name .. "|r"; end
 			rawset(t, "text", name);
 			return name;
