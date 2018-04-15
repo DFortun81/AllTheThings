@@ -83,10 +83,6 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[				
-					q(10420),	-- A Cleansing Light
-					q(10020),	-- A Cure for Zahlia
---]]
 					q(10112,  {  -- A Personal Favor
 						i(25927),
 						i(31724),
@@ -98,10 +94,14 @@ _.Zones =
 					qa(  9365),	-- A Thief's Reward
 					qh(  9339),	-- A Thief's Reward
 					q(47663),	-- A Timely Summons from Shattrath
-					q(10210),	-- A'dal
+--]]
+					q(10210, {	-- A'dal
+						["g"] = {
+						},
+						["qg"] = 19684,	-- Haggard War Veteran
+					}),
+--[[
 					qa( 11451),	-- Alicia's Poem
-					q(10551),	-- Allegiance to the Aldor
-					q(10552),	-- Allegiance to the Scryers
 					q(11024),	-- An Ally in Lower City
 					q(10419),	-- Arcane Tomes
 					qh( 10167),	-- Auchindoun...
@@ -120,7 +120,13 @@ _.Zones =
 					qh( 11046),	-- Chief Apothecary Hildagard
 					qa( 10943),	-- Children's Week
 					qh( 10942),	-- Children's Week
-					q(10211),	-- City of Light
+--]]
+					q(10211, {	-- City of Light
+						["g"] = {
+						},
+						["qg"] = 18166,	-- Archmage Khadgar
+						["sourceQuests"] = { 10210 },	-- A'dal
+					}),
 --]]
 					q(44863,  {  -- Clearing the Air
 						i(142279,  {  -- Plans: Windforged Rapier
@@ -139,12 +145,6 @@ _.Zones =
 					q(10009),	-- Crackin' Some Skulls
 					qh( 29667),	-- Culling the Herd
 --]]					
-					q(10409,  {  -- Deathblow to the Legion - Aldor 
-						i(30368),
-						i(30369),
-						i(30370),
-						i(30371),
-					}),
 --[[					
 					q(47523),	-- Disturbance Detected: Black Temple
 					q(11482),	-- Duty Calls
@@ -163,7 +163,6 @@ _.Zones =
 --[[					
 					q(10949),	-- Entry Into the Black Temple
 					q(10228),	-- Ezekiel
-					q(10421),	-- Fel Armaments
 					q(10412),	-- Firewing Signets
 					q(11875),	-- Gaining the Advantage
 					q(29675),	-- Hey There Dalliah
@@ -185,7 +184,6 @@ _.Zones =
 					qa( 29092),	-- Inform the Elder
 					q(12012),	-- Inform the Elder
 					q(9990),	-- Investigate Tuurem
-					q(10554),	-- Ishanah
 					q(10410),	-- Ishanah's Help
 					q(10010),	-- It's Just That Easy?
 --]]					
@@ -248,10 +246,7 @@ _.Zones =
 					}),
 --[[					
 					q(10415),	-- More Firewing Signets
-					q(10326),	-- More Marks of Kil'jaeden
-					q(10654),	-- More Marks of Sargeras
 					q(10658),	-- More Sunfury Signets
-					q(10019),	-- More Venom Sacs
 					q(31925),	-- Morulu The Elder
 					q(10547),	-- Of Thistleheads and Eggs...
 --]]					
@@ -270,7 +265,6 @@ _.Zones =
 					q(11517),	-- Report to Nasuun
 					q(11534),	-- Report to Nasuun
 					q(11039),	-- Report to Spymaster Thalodien
-					q(10021),	-- Restoring the Light
 					q(10889),	-- Return to Shattrath
 ]]--
 					q(11377, {	-- Revenge is Tasty
@@ -295,8 +289,6 @@ _.Zones =
 					qa( 10863),	-- Secrets of the Arakkoa
 					q(10849),	-- Seek Out Kirrik
 					q(10414),	-- Single Firewing Signet
-					q(10327),	-- Single Mark of Kil'jaeden
-					q(10655),	-- Single Mark of Sargeras
 					q(10659),	-- Single Sunfury Signet
 --]]					
 					q(10898,  {  -- Skywing
@@ -340,7 +332,6 @@ _.Zones =
 					qh( 11933),	-- Stealing the Exodar's Flame
 					qa(  9326),	-- Stealing the Undercity's Flame
 					qa(  9325),	-- Stealing Thunder Bluff's Flame
-					q(10017),	-- Strained Supplies
 					q(11954),	-- Striking Back
 					q(11917),	-- Striking Back
 					q(11947),	-- Striking Back
@@ -458,12 +449,159 @@ _.Zones =
 						},
 						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
 					}),
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					faction(932, {	-- The Aldor
-						q(11038),	-- Assist Exarch Orelis
-						q(11481),	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
-						q(10325),	-- Marks of Kil'jaeden (may be able to be picked up in Netherstorm)
-						q(10653),	-- Marks of Sargeras  (may be able to be picked up in Netherstorm)
+						q(10551, {	-- Allegiance to the Aldor
+							["g"] = {
+							},
+							["qg"] = 18166,	-- Archmage Khadgar
+							["sourceQuests"] = { 10211 },	-- City of Light
+						}),
+						q(10554, {	-- Ishanah
+							["g"] = {
+							},
+							["qg"] = 18166,	-- Archmage Khadgar
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						}),
+						q(10021, {	-- Restoring the Light
+							["g"] = {
+							},
+							["qg"] = 18166,	-- Archmage Khadgar
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						}),
+						q(10325, {	-- Marks of Kil'jaeden (may be able to be picked up in Netherstorm)
+							["g"] = {
+							},
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						}),
+						qr(q(10327, {	-- Single Mark of Kil'jaeden
+							["g"] = {
+							},
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["description"] = "Gives reputation through Honored.",
+							["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
+						})),
+						qr(q(10326, {	-- More Marks of Kil'jaeden
+							["g"] = {
+							},
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["description"] = "Gives reputation through Honored.",
+							["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
+						})),
+						q(10653, {	-- Marks of Sargeras  (may be able to be picked up in Netherstorm)
+							["g"] = {
+							},
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						}),
+						qr(q(10655, {	-- Single Mark of Sargeras
+							["g"] = {
+							},
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["description"] = "Gives reputation through Exalted.",
+							["sourceQuests"] = { 10653 },	-- Marks of Sargeras
+						})),
+						qr(q(10654, {	-- More Marks of Sargeras
+							["g"] = {
+							},
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["description"] = "Gives reputation through Exalted.",
+							["sourceQuests"] = { 10653 },	-- Marks of Sargeras
+						})),
+						q(10020, {	-- A Cure for Zahlia
+							["g"] = {
+							},
+							["qg"] = 18597,	-- Sha'nir
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						}),
+						q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
+							["g"] = {
+							},
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						}),
+						q(10420, {	-- A Cleansing Light
+							["g"] = {
+							},
+							["qg"] = 18538,	-- Ishanah
+							-- ["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor (this quest appeared before I aligned myself with The Aldor)
+						}),
+						qr(q(10421, {	-- Fel Armaments
+							["g"] = {
+							},
+							["qg"] = 18538,	-- Ishanah
+							["description"] = "Gives reputation through Exalted.",
+							["sourceQuests"] = { 10420 },	-- A Cleansing Light
+						})),
+						q(11038, {	-- Assist Exarch Orelis
+							["g"] = {
+							},
+							["qgs"] = { 23271, 23270 },	-- Vindicator Kaan & Vindicator Aeus
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
+						}),
+						q(10409, {	-- Deathblow to the Legion (awarded "Socrethar" criteria for Netherstorm "Into the Nether" overall quest achievement)
+							["g"] = {
+								i(30368),	-- Slippers of the High Priestess
+								i(30369),	-- Cleansed Fel Pauldrons
+								i(30370),	-- Gauntlets of the Redeemed Vindicator
+								i(30371),	-- Lightwarden's Girdle
+							},
+							["qg"] = 18538,	-- Ishanah
+							["sourceQuests"] = { 10410 },	-- Ishanah's Help
+						}),
+						q(10017, {	-- Strained Supplies
+							["g"] = {
+							},
+							["qg"] = 18597,	-- Sha'nir
+							["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
+						}),
+						q(10019, {	-- More Venom Sacs
+							["g"] = {
+							},
+							["qg"] = 18597,	-- Sha'nir
+							["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
+							["sourceQuests"] = { 10017 },	-- Strained Supplies
+						}),
 					}),
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					faction(934, {	-- The Scryers
+						q(10552, {	-- Allegiance to the Scryers
+							["g"] = {
+							},
+							["qg"] = 18166,	-- Archmage Khadgar
+							["sourceQuests"] = { 10211 },	-- City of Light
+						}),
+					}),
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					faction(1077, {	-- Shattered Sun Offensive
 						q(11877),	-- Sunfury Attack Plans
 					}),

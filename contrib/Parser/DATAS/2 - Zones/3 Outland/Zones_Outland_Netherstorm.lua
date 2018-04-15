@@ -191,14 +191,6 @@ _.Zones =
 					}),
 					
 					
-					q( 10973, {	-- A Thousand Worlds
-						["g"] = {
-						},
-						["qg"] = 20448,	-- 
-						["description"] = "Requires Revered with The Consortium.",
-					}),
-					
-					
 					q( 10249, {	-- Back to the Chief! (awarded "Protect Area 52" criteria)
 						["g"] = {
 							i( 30019),	-- Area 52 Defender's Pants
@@ -651,7 +643,7 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 19569,	-- Netherologist Coppernickels
-						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other breadcrumb quests)
+						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other bcrumb quests)
 					}),
 					
 					
@@ -816,14 +808,6 @@ _.Zones =
 						},
 						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["sourceQuests"] = { 10276 },	-- Full Triangle
-					}),
-					
-					
-					q( 10974, {	-- Stasis Chambers of Bash'ir
-						["g"] = {
-						},
-						["qg"] = 20448,	-- Commander Ameer
-						["sourceQuests"] = { 10973 },	-- A Thousand Worlds
 					}),
 					
 					
@@ -1095,23 +1079,23 @@ _.Zones =
 				
 				
 --[[
-						["g"] = {
-						},
-						["qg"] = ,	-- 
-						["sourceQuests"] = {  },	-- 
-					}),
-					
-						["g"] = {
-						},
-						["qg"] = ,	-- 
-					}),
-					
-						["g"] = {
-						},
-						["sourceQuests"] = {  },	-- 
-					}),
+							["g"] = {
+							},
+							["qg"] = ,	-- 
+							["sourceQuests"] = {  },	-- 
+						}),
+						
+							["g"] = {
+							},
+							["qg"] = ,	-- 
+						}),
+						
+							["g"] = {
+							},
+							["sourceQuests"] = {  },	-- 
+						}),
 --]]
-				-- q(10850),	-- Nether Gas In a Fel Fire Engine (doesn't ever register as completed and is irrelevant, it's only part of "Fel Reavers, No Thanks!")
+				-- q(10850),	-- Nether Gas In a Fel Fire Engine (doesn't ever register as completed and irrelevant, it's only part of "Fel Reavers, No Thanks!")
 				
 					
 					
@@ -1130,49 +1114,112 @@ _.Zones =
 
 -- FACTION QUESTS					
 					faction(932, {	-- The Aldor
-						-- q(11481),	-- Crisis at the Sunwell (all these quests may only be able to be picked up in Shattrath)
-						-- q(10327),	-- Single Mark of Kil'jaeden
-						-- q(10655),	-- Single Mark of Sargeras
-						-- q(10325),	-- Marks of Kil'jaeden
-						-- q(10653),	-- Marks of Sargeras
-						-- q(10326),	-- More Marks of Kil'jaeden
-						-- q(10654),	-- More Marks of Sargeras
-						q( 10263, {	-- Assisting the Consortium
+						q(10263, {	-- Assisting the Consortium
 							["g"] = {
 							},
 							["qg"] = 19467,	-- Anchorite Karja
 							["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 						}),
-						q( 10328),	-- Sunfury Briefings
-						q( 10431),	-- Outside Assistance
-						q( 10380),	-- A Dark Pact
-						q( 10381, {	-- Aldor No More
-							i(30382),
-							i(30379),
-							i(30381),
-							i(30380),
+						q(10241, {	-- Distraction at Manaforge B'naar
+							["g"] = {
+							},
+							["qg"] = 19466,	-- Exarch Orelis
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							["breadcrumbQuestID"] = { 11038 },	-- Assist Exarch Orelis
 						}),
-						q( 10241),	-- Distraction at Manaforge B'naar
-						q( 10313, {	-- Measuring Warp Energies - Aldor
-							i(30362),
-							i(30363),
-							i(30364),
-							i(30521),
+						q(10313, {	-- Measuring Warp Energies
+							["g"] = {
+								i(30362),	-- Energized Helm
+								i(30363),	-- Warp-Shielded Hauberk
+								i(30364),	-- Resonating Axe
+								i(30521),	-- Warpweaver's Gloves
+							},
+							["qg"] = 19466,	-- Exarch Orelis
+							["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
 						}),
-						q( 10246),	-- Attack on Manaforge Coruu
-						q( 10243),	-- Naaru Technology
-						q( 10245),	-- B'naar Console Transcription
-						q( 10299),	-- Shutting Down Manaforge B'naar
-						q( 10321),	-- Shutting Down Manaforge Coruu
-						q( 10322),	-- Shutting Down Manaforge Duro
-						q( 10323),	-- Shutting Down Manaforge Ara
-						q( 10407),	-- Socrethar's Shadow
-						q( 10410),	-- Ishanah's Help
-						q( 10409, {	-- Deathblow to the Legion - Aldor
-							i(30368),
-							i(30369),
-							i(30370),
-							i(30371),
+						q(10243, {	-- Naaru Technology
+							["g"] = {
+							},
+							["qg"] = 19467,	-- Anchorite Karja
+							["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
+						}),
+						o(183770, {	-- B'naar Control Console
+							q(10245, {	-- B'naar Console Transcription
+								["g"] = {
+								},
+								["sourceQuests"] = { 10243 },	-- Naaru Technology
+							}),
+						}),
+						q(10299, {	-- Shutting Down Manaforge B'naar
+							["g"] = {
+							},
+							["qg"] = 19467,	-- Anchorite Karja
+							["sourceQuests"] = { 10245 },	-- B'naar Console Transcription
+						}),
+						q(10246, {	-- Attack on Manaforge Coruu
+							["g"] = {
+							},
+							["qg"] = 19466,	-- Exarch Orelis
+							["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
+						}),
+						q(10321, {	-- Shutting Down Manaforge Coruu
+							["g"] = {
+							},
+							["qg"] = 19467,	-- Anchorite Karja
+							["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
+						}),
+						q(10322, {	-- Shutting Down Manaforge Duro
+							["g"] = {
+							},
+							["qg"] = 19467,	-- Anchorite Karja
+							["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
+						}),
+						q(10323, {	-- Shutting Down Manaforge Ara
+							["g"] = {
+							},
+							["qg"] = 19467,	-- Anchorite Karja
+							["sourceQuests"] = { 10322 },	-- Shutting Down Manaforge Duro
+						}),
+						q(10328, {	-- Sunfury Briefings
+							["g"] = {
+							},
+							["qg"] = 19466,	-- Exarch Orelis
+							["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
+						}),
+						q(10431, {	-- Outside Assistance
+							["g"] = {
+							},
+							["qg"] = 19466,	-- Exarch Orelis
+							["sourceQuests"] = { 10328 },	-- Sunfury Briefings
+						}),
+						q(10380, {	-- A Dark Pact
+							["g"] = {
+							},
+							["qg"] = 20780,	-- Kaylaan
+							["sourceQuests"] = { 10431 },	-- Outside Assistance
+						}),
+						q(10381, {	-- Aldor No More
+							["g"] = {
+								i(30382),	-- Aldor Ceremonial Wraps
+								i(30379),	-- Vindicator's Light Vest
+								i(30381),	-- Kaylaan's Spaulders
+								i(30380),	-- Girdle of the Lost Vindicator
+							},
+							["qg"] = 20780,	-- Kaylaan
+							["sourceQuests"] = { 10380 },	-- A Dark Pact
+						}),
+						q(10407, {	-- Socrethar's Shadow
+							["g"] = {
+							},
+							["qg"] = 19467,	-- Anchorite Karja
+							["sourceQuests"] = { 10323, 10381 },	-- Shutting Down Manaforge Ara & Aldor No More
+						}),
+						q(10410, {	-- Ishanah's Help
+							["g"] = {
+							},
+							["qg"] = 19467,	-- Anchorite Karja
+							["sourceQuests"] = { 10407 },	-- Socrethar's Shadow
 						}),
 					}),
 					faction(933, {	-- The Consortium
@@ -1220,6 +1267,18 @@ _.Zones =
 							["description"] = "Gives reputation through Exalted.",
 							["sourceQuests"] = { 10971},	-- Ethereum Secrets
 						})),
+						q( 10973, {	-- A Thousand Worlds
+							["g"] = {
+							},
+							["qg"] = 20448,	-- 
+							["description"] = "Requires Revered with The Consortium.",
+						}),
+						q( 10974, {	-- Stasis Chambers of Bash'ir
+							["g"] = {
+							},
+							["qg"] = 20448,	-- Commander Ameer
+							["sourceQuests"] = { 10973 },	-- A Thousand Worlds
+						}),
 					}),
 					faction(934, {	-- The Scryers
 						q( 10264, {	-- Assisting the Consortium
