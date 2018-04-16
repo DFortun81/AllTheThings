@@ -2445,7 +2445,7 @@ _.Zones =
 							i(137098),	-- Zoldyck Family Training Shackles
 							--]]
 							cl(12, { -- Demon Hunter
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									["groups"] = {
 										i(137061), -- Raddon's Cascading Eyes
 										i(132444), -- Prydaz, Xavric's Magnum Opus
@@ -2475,7 +2475,7 @@ _.Zones =
 								}),
 							}),
 							cl(6, { -- Death Knight
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(132459), -- Perseverance of the Ebon Martyr
 									i(144280), -- Death March
 									i(132444), -- Prydaz, Xavric's Magnum Opus
@@ -2506,7 +2506,7 @@ _.Zones =
 								}),
 							}),	
 							cl(11, {	-- Druid
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(151801), -- Behemoth Headdress
 									i(132444), -- Prydaz, Xavric's Magnum Opus
 									i(151783), -- Chameleon Song
@@ -2544,7 +2544,7 @@ _.Zones =
 								}),
 							}),
 							cl(3, { -- Hunter
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(137064), -- The Shadow Hunter's Voodoo Mask
 									i(144326), -- The Mantle of Command
 									i(151803), -- Celerity of the Windrunnerszao
@@ -2574,7 +2574,7 @@ _.Zones =
 								}),
 							}),
 							cl(8, {		-- Mage
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(132863), -- Darckli's Dragonfire Diadem
 									i(144274), -- Gravity Seal
 									i(151810), -- Shattered Fragments of Sindragosa
@@ -2603,7 +2603,7 @@ _.Zones =
 								}),
 							}),
 							cl(10, { -- Monk
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(137063), -- Fundamental Observation
 									i(151811), -- The Wind Blows
 									i(151788), -- Stormstout's Last Gasp
@@ -2636,7 +2636,7 @@ _.Zones =
 								}),
 							}),
 							cl(2, { -- Paladin
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(137065), -- Justice Gaze
 									i(144275), -- Saruan's Resolve
 									i(151782), -- The Topless Tower
@@ -2668,7 +2668,7 @@ _.Zones =
 								}),
 							}),
 							cl(5, { -- Priest
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(144244), -- Kam Xi'raff
 									i(151787), -- The Alabaster Lady
 									i(133971), -- Zenk'aram, Iridi's Anadem
@@ -2701,7 +2701,7 @@ _.Zones =
 								}),
 							}),
 							cl(4, { -- Rogue
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(151815), -- The Empty Crown
 									i(144236), -- Mantle of the Master Assassino
 									i(151817), -- The Curse of Restlessness
@@ -2727,7 +2727,7 @@ _.Zones =
 								}),
 							}),
 							cl(7, { -- Shaman
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(143732), -- Uncertain Reminder
 									i(137074), -- Echoes of the Great Sundering
 									i(137616), -- Emalon's Charged Core
@@ -2757,7 +2757,7 @@ _.Zones =
 								}),
 							}),
 							cl(9, { -- Warlock
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(132394), -- Hood of Eternal Disdain
 									i(144385), -- Wakener's Loyalty
 									i(146666), -- Celumbra, the Night's Dichotomy (Mage, Priest, Lock)
@@ -2786,7 +2786,7 @@ _.Zones =
 								}),
 							}),
 							cl(1, { -- Warrior
-								i(154879, { -- Awoken Titan Essence
+								i(157796, { -- Purified Titan Essence
 									i(137088), -- Ceann-Ar Charger
 									i(151823), -- The Great Storm's Eye
 									i(143728), -- Timeless Stratagem
