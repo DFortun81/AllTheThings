@@ -186,26 +186,12 @@ _.Zones =
 					q(9990),	-- Investigate Tuurem
 					q(10410),	-- Ishanah's Help
 					q(10010),	-- It's Just That Easy?
---]]					
-					q(11109, {	-- Jorus the Cobalt Netherwing Drake
-						["groups"] = {
-							i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
-						},
-						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-					}),
---[[					
 					q(11007),	-- Kael'thas and the Verdant Sphere
 					q(11108),	-- Lord Illidan Stormrage
 					q(29659),	-- Lost Treasure
 					q(8867),	-- Lunar Fireworks
 					q(11514),	-- Maintaining the Sunwell Portal
 --]]					
-					q(11110, {	-- Malfas the Purple Netherwing Drake
-						["groups"] = {
-							i(32860),	-- Reins of the Purple Netherwing Drake Mount
-						},
-						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-					}),
 					q(11380, {	-- Manalicious
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin
@@ -226,37 +212,10 @@ _.Zones =
 --[[					
 					qh( 11357),	-- Masked Orphan Matron
 					q(29681),	-- Maximum Security Breakout
-					q(10983),	-- Mog'dorg the Wizened
-					q(10025),	-- More Basilisk Eyes
---]]					
-					q(10918,  {  -- More Feathers
-						["groups"] = {
-							i(31800,  {  -- Outcasts Cache
-								i(28495),
-								i(28496),
-								i(28497),
-								i(28498),
-								i(28491),
-								i(28493),
-								i(28492),
-								i(28494),
-							}),
-						},	
-						["description"] = "|cff66ccffRepeatable until Honored with Lower City|r",					
-					}),
---[[					
 					q(10415),	-- More Firewing Signets
 					q(10658),	-- More Sunfury Signets
 					q(31925),	-- Morulu The Elder
 					q(10547),	-- Of Thistleheads and Eggs...
---]]					
-					q(11111, {	-- Onyxien the Onyx Netherwing Drake
-						["groups"] = {
-							i(32857),	-- Reins of the Onyx Netherwing Drake Mount
-						},
-						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-					}),
---[[					
 					q(10004),	-- Patience and Understanding
 					qa( 14022),	-- Pilgrim's Bounty
 					qh( 14036),	-- Pilgrim's Bounty
@@ -316,7 +275,6 @@ _.Zones =
 					}),
 --[[					
 					q(10908),	-- Speak with Rilak the Redeemed
-					q(10984),	-- Speak with the Ogre
 --]]					
 					q(10280,  {  -- Special Delivery to Shattrath City
 						i(30258),
@@ -358,12 +316,6 @@ _.Zones =
 							i(33871),	-- Recipe: Stormchops
 						}),
 					}),
-					q(11112, {	-- Suraku the Azure Netherwing Drake
-						["groups"] = {
-							i(32858),	-- Reins of the Azure Netherwing Drake Mount
-						},
-						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-					}),
 --[[					
 					qh( 10862),	-- Surrender to the Horde
 					q(10416),	-- Synthesis of Power
@@ -388,34 +340,48 @@ _.Zones =
 					qa( 11970),	-- The Master of Summer Lore
 					q(10251),	-- The Master's Grand Design?
 					q(11880),	-- The Multiphase Survey
---]]					
-					q(10917,  {  -- The Outcast's Plight
-						i(31800,  {  -- Outcasts Cache
-							i(28495),
-							i(28496),
-							i(28497),
-							i(28498),
-							i(28491),
-							i(28493),
-							i(28492),
-							i(28494),
-						}),
-					}),
---[[					
 					q(10879),	-- The Skettis Offensive
 					qh( 11971),	-- The Spinner of Summer Tales
 					q(40168),	-- The Swirling Vial
-					q(10883),	-- The Tempest Key
+--]]
+					q(10883, {	-- The Tempest Key
+						["g"] = {
+						},
+						["qg"] = 18166,	-- Archmage Khadgar
+						["sourceQuests"] = { 10588 },	-- The Cipher of Damnation
+					}),
+--[[
 					q(13081),	-- The Will of the Naaru
 					q(11096),	-- Threat from Above
 					q(11098),	-- To Skettis!
 					q(13430),	-- Trial of the Naaru: Magtheridon
 					q(10888),	-- Trial of the Naaru: Magtheridon
-					q(10884),	-- Trial of the Naaru: Mercy
-					q(10885),	-- Trial of the Naaru: Strength
-					q(10886),	-- Trial of the Naaru: Tenacity
-					q(29642),	-- Trouble at Auchindoun
---]]					
+--]]
+					qdg(q(10884, {	-- Trial of the Naaru: Mercy
+						["g"] = {
+						},
+						["qg"] = 18481,	-- A'dal
+						["sourceQuests"] = { 10883 },	-- The Tempest Key
+					})),
+					qdg(q(10885, {	-- Trial of the Naaru: Strength
+						["g"] = {
+						},
+						["qg"] = 18481,	-- A'dal
+						["sourceQuests"] = { 10883 },	-- The Tempest Key
+					})),
+					qdg(q(10886, {	-- Trial of the Naaru: Tenacity
+						["g"] = {
+						},
+						["qg"] = 18481,	-- A'dal
+						["sourceQuests"] = { 10883 },	-- The Tempest Key
+					})),
+					qdg(q(29642, {	-- Trouble at Auchindoun
+						["g"] = {
+						},
+						["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
+						-- ["sourceQuests"] = {  },	-- UNKNOWN IF HAS SOURCE
+					})),
+--[[
 					q(10507,  {  -- Turning Point - Scryer 
 						i(30375),
 						i(30372),
@@ -423,20 +389,10 @@ _.Zones =
 						i(30374),
 						i(30859),
 					}),
---[[					
 					q(29674),	-- Unbound Darkness
 					q(11886),	-- Unusual Activity
 					q(8883),	-- Valadar Starsong
---]]					
-					q(11113, {	-- Voranaku the Violet Netherwing Drake
-						["groups"] = {
-							i(32862),	-- Reins of the Violet Netherwing Drake Mount
-						},
-						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-					}),
---[[					
 					q(10553),	-- Voren'thal the Seer
-					q(10024),	-- Voren'thal's Visions
 					q(11389),	-- Wanted: Arcatraz Sentinels
 					q(11371),	-- Wanted: Coilfang Myrmidons
 					q(11376),	-- Wanted: Malicious Instructors
@@ -449,13 +405,7 @@ _.Zones =
 					q(9979),	-- Wind Trader Lathrai
 					q(29657),	-- With Great Power, Comes Great Responsibility
 					qa( 11045),	-- Zorus the Judicator
---]]					
-					q(11114, {	-- Zoya the Veridian Netherwing Drake
-						["groups"] = {
-							i(32861),	-- Reins of the Veridian Netherwing Drake Mount
-						},
-						["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-					}),
+--]]
 					
 					
 					
@@ -590,6 +540,119 @@ _.Zones =
 					
 					
 					
+					faction(1011, {	-- Lower City
+						q(10917,  {  -- The Outcast's Plight
+							["g"] = {
+								i(31800,  {  -- Outcasts Cache
+									i(28495),	-- Windwalker's Sash
+									i(28496),	-- Talonite's Belt
+									i(28497),	-- Dreadhawk's Girdle
+									i(28498),	-- Ravenguard's Baldric
+									i(28491),	-- Windwalker's Footwraps
+									i(28493),	-- Dreadhawk's Schynbald
+									i(28492),	-- Talonite's Boots
+									i(28494),	-- Ravenguard's Greaves
+								}),
+							},
+							["qg"] = 22429,	-- Vekax
+						}),
+						qr(q(10918,  {  -- More Feathers
+							["groups"] = {
+								i(31800,  {  -- Outcasts Cache
+									i(28495),	-- Windwalker's Sash
+									i(28496),	-- Talonite's Belt
+									i(28497),	-- Dreadhawk's Girdle
+									i(28498),	-- Ravenguard's Baldric
+									i(28491),	-- Windwalker's Footwraps
+									i(28493),	-- Dreadhawk's Schynbald
+									i(28492),	-- Talonite's Boots
+									i(28494),	-- Ravenguard's Greaves
+								}),
+							},	
+							["qg"] = 22429,	-- Vekax
+							["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
+							["sourceQuests"] = { 10917 },	-- The Outcast's Plight
+						})),
+					}),
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					faction(1015, {	-- Netherwing
+						q(11109, {	-- Jorus the Cobalt Netherwing Drake
+							["groups"] = {
+								i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+						q(11110, {	-- Malfas the Purple Netherwing Drake
+							["groups"] = {
+								i(32860),	-- Reins of the Purple Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+						q(11111, {	-- Onyxien the Onyx Netherwing Drake
+							["groups"] = {
+								i(32857),	-- Reins of the Onyx Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+						q(11112, {	-- Suraku the Azure Netherwing Drake
+							["groups"] = {
+								i(32858),	-- Reins of the Azure Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+						q(11113, {	-- Voranaku the Violet Netherwing Drake
+							["groups"] = {
+								i(32862),	-- Reins of the Violet Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+						q(11114, {	-- Zoya the Veridian Netherwing Drake
+							["groups"] = {
+								i(32861),	-- Reins of the Veridian Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+					}),
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					faction(1038, {	-- Ogri'la
+						q(10984, {	-- Speak with the Ogre
+							["g"] = {
+							},
+							["qg"] = 22497,	-- V'eru
+							["isBreadcrumb"] = true,	-- for "Mog'dorg the Wizened"
+						}),
+						q(10983, {	-- Mog'dorg the Wizened
+							["g"] = {
+							},
+							["qg"] = 22940,	-- Grok
+							["breadcrumbQuestID"] = { 10984 },	-- Speak with the Ogre
+						}),
+					}),
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					faction(934, {	-- The Scryers
 						q(10552, {	-- Allegiance to the Scryers
@@ -597,6 +660,19 @@ _.Zones =
 							},
 							["qg"] = 18166,	-- Archmage Khadgar
 							["sourceQuests"] = { 10211 },	-- City of Light
+						}),
+						q(10024, {	-- Voren'thal's Visions
+							["g"] = {
+							},
+							["qg"] = 18596,	-- Arcanist Adyria
+							["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+						}),
+						q(10025, {	-- More Basilisk Eyes
+							["g"] = {
+							},
+							["qg"] = 18596,	-- Arcanist Adyria
+							["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+							["sourceQuests"] = { 10024 },	-- Voren'thal's Visions
 						}),
 					}),
 					
