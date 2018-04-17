@@ -207,7 +207,9 @@ profession(185, 2550, { -- Cooking
 					},
 				}),
 				q(40990),	-- A Good Recipe List
-				q(40991),	-- Opening the Test Kitchen
+				q(40991, {	-- Opening the Test Kitchen
+					ach(10591),	-- All Grown Up
+				}),
 			}),
 			n(-2, { 	-- Vendors
 				["description"] = "Before Nomi will sell you any of these, you need to complete the quest that awards them.\n\nUse the ATT Source Text in the tooltip for more information on where you can find them.",
