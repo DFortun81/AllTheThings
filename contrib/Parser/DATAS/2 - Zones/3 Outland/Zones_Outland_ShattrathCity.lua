@@ -368,7 +368,14 @@ _.Zones =
 					qh( 10862),	-- Surrender to the Horde
 					q(10416),	-- Synthesis of Power
 					q(13082),	-- The Boon of A'dal
-					q(10550),	-- The Bundle of Bloodthistle
+--]]
+					q( 10550, {	-- The Bundle of Bloodthistle
+						["g"] = {
+						},
+						["qg"] = 21411,	-- Tobias the Filth Gorger
+						["sourceQuests"] = { 10547 },	-- Of Thistleheads and Eggs...
+					}),
+--[[
 					q(29658),	-- The Calculator
 					q(10847),	-- The Eyes of Skettis
 					q(10948),	-- The Hostage Soul
