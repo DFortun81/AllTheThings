@@ -964,6 +964,10 @@ _.Zones =
 							qh(4642, {	-- Melding of Influences
 								un(34, i(15703)),	-- Chemist's Smock
 							}),
+							qh(8273, {	-- Oran's Gratitude
+								un(34, i(20643)),	-- Undercity Reservist's Cap
+								un(34, i(20642)),	-- Antiquated Nobleman's Tunic
+							}),
 							qh(1358, {	-- Sample for Helbrim
 								un(34, i(10637)),	-- Brewer's Gloves
 								un(34, i(10638)),	-- Long Draping Cape
@@ -975,6 +979,11 @@ _.Zones =
 								},
 								["classes"] = { 8 },	-- Mage
 							}),
+							qdg(qh(5725, {	-- The Power to Destroy
+								un(34, i(15449)),	-- Ghastly Trousers
+								un(34, i(15450)),	-- Dredgemire Leggings
+								un(34, i(15451)),	-- Gargoyle Leggings
+							})),
 							qh(1164, {	-- To Steal From Thieves
 								un(34, i(4443)),	-- Grim Pauldrons
 								un(34, i(2032)),	-- Gallan Cuffs

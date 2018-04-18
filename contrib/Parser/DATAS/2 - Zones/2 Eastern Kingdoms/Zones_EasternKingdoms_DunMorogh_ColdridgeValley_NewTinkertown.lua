@@ -540,6 +540,13 @@ _.Zones =
 								un(34, i(2218)),	-- Craftsman's Dagger
 								un(34, i(1009)),	-- Compact Hammer
 							}),
+							qa(5625, {	-- Garments of the Light
+								["g"] = {
+									un(34, i(16605)),	-- Friar's Robes of the Light
+								},
+								["races"] = { 3 },	-- Dwarf
+								["classes"] = { 5 },	-- Priest
+							}),
 							qdg(qa(4126, {	-- Hurley Blackbreath
 								un(34, i(11964)),	-- Swiftstrike Cudgel
 								un(34, i(12000)),	-- Limb Cleaver

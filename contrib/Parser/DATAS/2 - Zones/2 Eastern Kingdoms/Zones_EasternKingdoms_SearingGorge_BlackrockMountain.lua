@@ -637,6 +637,10 @@ _.Zones =
 								un(34, i(11860)),	-- Charged Lightning Rod
 								un(34, i(11861)),	-- Girdle of Reprisal
 							}),
+							q( 7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
+								un(34, i(19124)),	-- Slagplate Leggings
+								un(34, i(19123)),	-- Everwarm Handwraps
+							}),
 							q( 3463, {	-- Set Them Ablaze
 								un(34, i(10742)),	-- Dragonflight Leggings
 								un(34, i(10743)),	-- Drakefire Headguard

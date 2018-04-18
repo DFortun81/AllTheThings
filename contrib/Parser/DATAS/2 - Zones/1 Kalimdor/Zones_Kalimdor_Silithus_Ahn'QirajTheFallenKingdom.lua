@@ -994,6 +994,14 @@ END OF MICRO-HOLIDAY --]]
 									un(7, i(20693)), 	-- Weighted Cloak
 								})),
 							}),
+							q(8379, {	-- Armaments of War
+								un(34, i(20707)),	-- Cenarion Reservist's Pants
+								un(34, i(20717)),	-- Desert Bloom Gloves
+							}),
+							q(8381, {	-- Armaments of War
+								un(34, i(20705)),	-- Cenarion Reservist's Pants
+								un(34, i(20716)),	-- Sandworm Skin Gloves
+							}),
 							q(8352, { 	-- Scepter of the Council
 								un(2, i(20602, { 	-- Chest of Spoils
 									un(7, i(20720)), 	-- Dark Whisper Blade
@@ -1017,6 +1025,11 @@ END OF MICRO-HOLIDAY --]]
 								un(34, i(22348)),	-- Doomulus Prime
 								un(34, i(22347)),	-- Fahrad's Reloading Repeater
 								un(34, i(22380)),	-- Simone's Cultivating Hammer
+							}),
+							q(8572, {	-- Veteran's Battlegear
+								un(34, i(21181)),	-- Grace of Earth
+								un(34, i(21182)),	-- Band of Earthen Might
+								un(34, i(21183)),	-- Earthpower Vest
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
@@ -1051,6 +1064,14 @@ END OF MICRO-HOLIDAY --]]
 									un(2, i(20660)), 	-- Stonecutting Glaive
 								},
 								["description"] = "The Hoary Templar is a level 60 air elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
+							}),
+							n(15205, {	-- Baron Kazum
+								["g"] = {
+									un(7, i(20686)),	-- Abyssal Cloth Amice
+									un(7, i(20687)),	-- Abyssal Plate Vambraces
+									un(7, i(20688)),	-- Earthen Guard
+								},
+								["description"] = "Summoning Baron Kazum requires a full Twilight Trappings set, a Twilight Cultist Medallion of Station, and a Twilight Cultist Ring of Lordship.",
 							}),
 							n(15206, { 	-- The Duke of Cynders
 								["groups"] = {
@@ -1093,6 +1114,8 @@ END OF MICRO-HOLIDAY --]]
 							}),
 							n(15204, {	-- High Marshal Whirlaxis
 								["g"] = {
+									un(2, i(20690)),	-- Abyssal Cloth Wristbands
+									un(2, i(20689)),	-- Abyssal Leather Shoulders
 									un(2, i(20691)),	-- Windshear Cape
 								},
 								["description"] = "This was a summonable elite.",

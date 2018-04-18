@@ -1092,6 +1092,11 @@ _.Zones =
 								un(34, i(7738)),	-- Evergreen Gloves
 								un(34, i(7739)),	-- Timberland Cape
 							}),
+							qa( 741, {	-- The Absent Minded Prospector
+								un(34, i( 5629)),	-- Hammerfist Gloves
+								un(34, i( 5630)),	-- Windfelt Gloves
+								un(34, i(11936)),	-- Relic Hunter Belt
+							}),
 							qa( 943, {	-- The Absent Minded Prospector
 								un(34, i(5627)),	-- Relic Blade
 								un(34, i(5626)),	-- Skullchipper

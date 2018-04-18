@@ -929,15 +929,27 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
-							q(4810, {	-- Return to Tinkee
+							q( 5121, {	-- High Chief Winterfall
+								un(34, i(15784)),	-- Crystal Breeze Mantle
+								un(34, i(15786)),	-- Fempulse Jerkin
+								un(34, i(15787)),	-- Willow Band Hauberk
+							}),
+							q( 4810, {	-- Return to Tinkee
 								un(34, i(15862)),	-- Blitzcleaver
 								un(34, i(15863)),	-- Grave Scepter
 							}),
-							q(4842, {	-- Strange Sources
+							q( 5056, {	-- Shy-Rotam
+								un(34, i(15783)),	-- Beasthunter Dagger
+								un(34, i(15782)),	-- Beaststalker Blade
+							}),
+							q( 4842, {	-- Strange Sources
 								un(34, i(15789)),	-- Deep River Cloak
+							}),
+							qa(5253, {	-- The Crystal of Zin-Malor
+								un(34, i(15791)),	-- Turquoise Sash
+								un(34, i(15792)),	-- Plow Wood Spaulders
+								un(34, i(15795)),	-- Emerald Mist Gauntlets
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
@@ -945,6 +957,8 @@ _.Zones =
 								un(7, i(20697)), 	-- Crystalline Threaded Cape
 							}),
 						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
 					},
 					["u"] = 12,
 				}),

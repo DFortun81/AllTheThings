@@ -876,6 +876,23 @@ _.Zones =
 						dr(0.07, i(29960)),	-- Captured Firefly (PET!)
 					}),
 				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qdg(q(9763, {	-- The Warlord's Hideout
+								un(34, i(28183)),	-- Hydromancer's Headwrap
+								un(34, i(28182)),	-- Helm of the Claw
+								un(34, i(28181)),	-- Earthwarden's Coif
+								un(34, i(28180)),	-- Myrmidon's Headdress
+							})),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
 			},
 			["Lvl"] = 60,	
 			["achievementID"] = 863,

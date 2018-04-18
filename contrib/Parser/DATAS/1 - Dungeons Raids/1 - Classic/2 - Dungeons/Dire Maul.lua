@@ -465,8 +465,16 @@ _.Instances =
 								}),
 								--n(-16, {	-- Rares (Legacy)
 								--}),
-								--n(  0, {	-- Zone Drop (Legacy)
-								--}),
+								n(  0, {	-- Zone Drop (Legacy)
+									n(14690, {	-- Revanchion
+										["g"] = {
+											un(2, i(23129)),	-- Bracers of Mending
+											un(2, i(23127)),	-- Cloak of Revanchion
+											un(2, i(23128)),	-- The Shadow's Grasp
+										},
+										["description"] = "This NPC was only available during the pre-WotLK Scourge Invasion.",
+									}),
+								}),
 							}),
 						},
 						["u"] = 12,

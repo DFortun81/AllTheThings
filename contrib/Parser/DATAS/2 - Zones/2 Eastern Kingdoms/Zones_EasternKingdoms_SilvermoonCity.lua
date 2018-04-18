@@ -738,7 +738,25 @@ _.Zones =
 						i(3428),	-- Common Gray Shirt
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
-					})
+					}),
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qh(9489, {	-- Cleansing the Scar
+								["g"] = {
+									un(34, i(23924)),	-- Robes of Silvermoon
+								},
+								["races"] = { 10 },	-- Blood Elf
+								["classes"] = { 5 },	-- Priest
+							}),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
 				}),
 			},
 			["Lvl"] = 1,	

@@ -101,7 +101,68 @@ _.NeverImplemented =
 	un(1, i(10032)),	-- Stormcloth Headband
 	un(1, i(10038)),	-- Stormcloth Shoulders (comment on wowhead says they have the pattern, but I'm pretty sure that's fake - no history of the pattern or item on UMJ)
 	un(1, i(10039)),	-- Stormcloth Boots
+	un(1, i(12107)),	-- Whispersilk Leggings
+	un(1, i(13080)),	-- Widow's Clutch
+	un(1, i(18341)),	-- Quel'dorei Sash
+	un(1, i(21780)),	-- Blood Crown
+	un(1, i(23433)),	-- Blood Robes
+	un(1, i(23434)),	-- Robes of the Shard
+	un(1, i(25793)),	-- Curate's Footwraps
+	un(1, i(25970)),	-- Shalassi Oracle's Sandals (removed in beta)
+	un(1, i(26015)),	-- Anchorite Neophyte's Cuffs
+	un(1, i(27720)),	-- Robes of the Aldor
+	un(1, i(30287)),	-- Mantle of Arcane Mastery
+	un(1, i(30459)),	-- Netherflame Robe
+	un(1, i(30460)),	-- Netherflame Belt
+	un(1, i(30461)),	-- Netherflame Boots
+	un(1, i(30463)),	-- Lifeblood Belt
+	un(1, i(30463)),	-- Lifeblood Bracers
+	un(1, i(30465)),	-- Lifeblood Leggings
+	un(1, i(34107)),	-- Tattered Shoulderpads
+	un(1, i(37210)),	-- Seafarer Cinch (removed in beta)
+	un(1, i(37225)),	-- Sweltering Sandals (removed in beta)
+	un(1, i(37245)),	-- Tangled Web Bindings
+	un(1, i(37273)),	-- Crimson Keeper Mitts
+	un(1, i(37295)),	-- HF28 Cloth Spell Head4
+	un(1, i(39364)),	-- Hood of the Titan Defender
+	un(1, i(43878)),	-- Mantle of Unholy Power
+	un(1, i(45629)),	-- Shadoweave Belt
+	un(1, i(47103)),	-- Rotting Handwraps
+	un(1, i(54542)),	-- Robes of Restored Hope
+	un(1, i(54550)),	-- Hood of Vigorous Defense
+	un(1, i(54977)),	-- Revitalizing Sandals
+	un(1, i(57528)),	-- Hogger's Mangy Handgrips
+	un(1, i(60728)),	-- Keeshan's Burlap Vest
+	un(1, i(62988)),	-- Sash of the Unhonored
+	un(1, i(65746)),	-- Leggings of Valorous Defense
+	un(1, i(66013)),	-- Mantle of the Glorious Song
+	un(1, i(80948)),	-- Peacebreaker's Silk Cowl
+	un(1, i(80949)),	-- Peacebreaker's Satin Hood
+	un(1, i(80988)),	-- Scavenger's Silk Amice
+	un(1, i(80989)),	-- Scavenger's Satin Mantle
+	un(1, i(80997)),	-- Silk Robe of Eminent Domain
+	un(1, i(80998)),	-- Satin Robe of Eminent Domain
+	un(1, i(81006)),	-- Honorary Combat Engineer's Silk Trousers
+	un(1, i(81007)),	-- Honorary Combat Engineer's Satin Leggings
+	un(1, i(81015)),	-- Landfall Silk Treads
+	un(1, i(81016)),	-- Landfall Satin Treads
+	un(1, i(81033)),	-- Scavenger's Silk Handguards
+	un(1, i(81034)),	-- Scavenger's Satin Gloves
+	un(1, i(81042)),	-- Scavenger's Silk Cuffs
+	un(1, i(81043)),	-- Scavenger's Satin Cuffs
+	un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
+	un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
+	un(1, i(17142)),	-- Shard of the Defiler
 --[[	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
+	un(1, i()),	-- 
 	un(1, i()),	-- 
 	un(1, i()),	-- 
 	un(1, i()),	-- 

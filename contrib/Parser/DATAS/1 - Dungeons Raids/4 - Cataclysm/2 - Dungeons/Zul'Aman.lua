@@ -44,6 +44,7 @@ _.Instances =
 								i(69592),	-- Reforged Trollbane
 								nld({	-- Legacy (same object #, different name)
 									un(2, i(33494)),	-- Amani Divining Staff
+									un(2, i(33489)),	-- Mantle of Ill Intent
 									un(2, i(33490)),	-- Staff of Dark Mending
 								}),
 							},
@@ -59,6 +60,9 @@ _.Instances =
 						i(69556),	-- Armbands of the Bear Spirit
 						i(69557),	-- Jungle Striders
 						i(69555),	-- Boots of the Ursine
+						nld({	-- Legacy
+							un(2, i(33285)),	-- Fury of the Ursine
+						}),
 						o(186648, {	-- Hazlek's Trunk
 							["groups"] = {
 								i(69587),	-- Chestplate of Hubris
@@ -68,6 +72,7 @@ _.Instances =
 								i(69585),	-- Wristwraps of Madness
 								nld({	-- Legacy (same object #, different name)
 									un(2, i(33494)),	-- Amani Divining Staff
+									un(2, i(33489)),	-- Mantle of Ill Intent
 									un(2, i(33490)),	-- Staff of Dark Mending
 								}),
 							},
@@ -79,6 +84,9 @@ _.Instances =
 						i(69559),	-- Amani'shi Bracers
 						i(69561),	-- Hawkscale Waistguard
 						i(69562),	-- Boots of Bad Mojo
+						nld({	-- Legacy
+							un(2, i(33357)),	-- Footpads of Madness
+						}),
 						o(186667, {	-- Norkani's Package
 							["groups"] = {
 								i(69593),	-- Battleplate of the Amani Empire
@@ -87,6 +95,9 @@ _.Instances =
 								i(69590),	-- Mojo-Mender's Gloves
 								i(69592),	-- Reforged Trollbane
 								i(69591),	-- Voodoo Hexblade
+								nld({	-- Legacy (same object #, different name)
+									un(2, i(33489)),	-- Mantle of Ill Intent
+								}),
 							},
 							["description"] = "This package is received by rescuing Norkani from Jan'alai (dragonhawk boss) within the time limit. The package spawns on the right of the stairs that lead to Jan'alai's platform.",							
 						}),
@@ -96,6 +107,9 @@ _.Instances =
 						i(69565),	-- Breastplate of Primal Fury
 						i(69568),	-- Shadowmender Wristguards
 						i(69567),	-- Wristwraps of Departed Spirits
+						nld({	-- Legacy
+							un(2, i(33317)),	-- Robe of Departed Spirits
+						}),
 						o(186672, {	-- Kasha's Bag
 							["groups"] = {	
 								i(69747),	-- Amani Battle Bear (mount)			
@@ -106,6 +120,9 @@ _.Instances =
 								i(69588),	-- Skullcrusher Warboots
 								i(69586),	-- Two-Toed Boots	
 								i(69585),	-- Wristwraps of Madness
+								nld({	-- Legacy (same object #, different name)
+									un(2, i(33489)),	-- Mantle of Ill Intent
+								}),
 							},
 							["description"] = "This bag is received by rescuing Kasha from Halazzi (Lynx boss) within the time limit. The bag spawns in the right lower corner as you enter Halazzi's room.",							
 						}),
@@ -117,6 +134,8 @@ _.Instances =
 						i(69569),	-- Shadowtooth Trollskin Breastplate
 						i(69570),	-- Waistband of Hexes
 						nld({	-- Legacy
+							un(2, i(33453)),	-- Hood of Hexing
+							un(2, i(33463)),	-- Hood of the Third Eye
 							un(2, i(33465)),	-- Staff of Primal Fury
 						}),
 					})),
@@ -135,6 +154,7 @@ _.Instances =
 							un(2, i(33476)),	-- Cleaver of the Unforgiving
 							un(2, i(33468)),	-- Dark Blessing
 							un(2, i(33478)),	-- Jin'rohk, The Great Apocalypse
+							un(2, i(33471)),	-- Two-toed Sandals
 						}),
 					})),
 				},

@@ -334,17 +334,24 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 				}),
-				--[[			n(-40, {	-- Legacy
+				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
+							qa(9586, {	-- Help Tavara
+								["g"] = {
+									un(34, i(23931)),	-- Azure Watch Robes
+								},
+								["races"] = { 11 },	-- Draenei
+								["classes"] = { 5 },	-- Priest
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
 					},
 					["u"] = 12,
-				}), --]]
+				}),
 				m(894, { -- Ammen Vale
 					["groups"] = {
 						n(-25, { -- Pet Battle

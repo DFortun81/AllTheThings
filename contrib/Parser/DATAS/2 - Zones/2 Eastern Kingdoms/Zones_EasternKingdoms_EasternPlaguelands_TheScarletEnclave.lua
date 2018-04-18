@@ -1011,6 +1011,38 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							qr(q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
+								un(34, i(22657)),	-- Amulet of the Dawn
+								un(34, i(22667)),	-- Bracers of Hope
+								un(34, i(22668)),	-- Bracers of Subterfuge
+								un(34, i(22659)),	-- Medallion of the Dawn
+								un(34, i(22678)),	-- Talisman of Ascendance
+								un(34, i(22656)),	-- The Purifier
+							})),
+							qr(q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
+								un(34, i(22657)),	-- Amulet of the Dawn
+								un(34, i(22667)),	-- Bracers of Hope
+								un(34, i(22668)),	-- Bracers of Subterfuge
+								un(34, i(22659)),	-- Medallion of the Dawn
+								un(34, i(22678)),	-- Talisman of Ascendance
+								un(34, i(22656)),	-- The Purifier
+							})),
+							qr(q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
+								un(34, i(22657)),	-- Amulet of the Dawn
+								un(34, i(22667)),	-- Bracers of Hope
+								un(34, i(22668)),	-- Bracers of Subterfuge
+								un(34, i(22659)),	-- Medallion of the Dawn
+								un(34, i(22678)),	-- Talisman of Ascendance
+								un(34, i(22656)),	-- The Purifier
+							})),
+							qr(q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
+								un(34, i(22657)),	-- Amulet of the Dawn
+								un(34, i(22667)),	-- Bracers of Hope
+								un(34, i(22668)),	-- Bracers of Subterfuge
+								un(34, i(22659)),	-- Medallion of the Dawn
+								un(34, i(22678)),	-- Talisman of Ascendance
+								un(34, i(22656)),	-- The Purifier
+							})),
 							q(6024, {	-- Hameya's Plea
 								un(34, i(15814)),	-- Hameya's Slayer
 								un(34, i(15815)),	-- Hameya's Cloak
