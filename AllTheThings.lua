@@ -2773,6 +2773,8 @@ app.BaseFaction = {
 	__index = function(t, key)
 		if key == "key" then
 			return "factionID";
+		elseif key == "f" then
+			return 112;
 		elseif key == "trackable" or key == "collectible" then
 			return true;
 		elseif key == "saved" or key == "collected" then
