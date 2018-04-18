@@ -1,5 +1,5 @@
 -- Jewelcrafting - Skill ID 755 / Spell ID 25229
-profession(755, 25229, { -- Jewelcrafting
+profession(755, { -- Jewelcrafting
 	n(-160, { -- Mounts
 		i(83088),	-- Jade Panther
 		i(82453),	-- Jeweled Onyx Panther

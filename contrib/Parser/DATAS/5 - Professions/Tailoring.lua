@@ -1,5 +1,5 @@
 -- Tailoring - Skill ID 197 / Spell ID 3908
-profession(197, 3908, { -- Tailoring
+profession(197, { -- Tailoring
 	n(-160, { -- Mounts
 		i(115363),	-- Creeping Carpet
 		i(44554),	-- Flying Carpet

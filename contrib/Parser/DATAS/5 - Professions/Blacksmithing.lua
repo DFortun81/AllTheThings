@@ -1,5 +1,5 @@
 -- Blacksmithing - Skill ID 164 / Spell ID 2018
-profession(164, 2018, { -- Blacksmithing
+profession(164, { -- Blacksmithing
 	n(-160, { -- Mounts
 		i(137686),	-- Steelbound Harness
 	}),

@@ -5,7 +5,7 @@
 -- professionSkillID = 20222;
 
 -- Engineering - Skill ID 202 / Spell ID 4036
-profession(202, 4036, { -- Engineering	
+profession(202, { -- Engineering	
 	n(-494, { -- Miscellaneous
 		n(43929, { -- Blingtron 4000
 			i(86623, { -- Blingtron 4000 Gift Package

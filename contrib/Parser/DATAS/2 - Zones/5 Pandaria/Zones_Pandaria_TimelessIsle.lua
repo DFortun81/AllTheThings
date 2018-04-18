@@ -986,7 +986,7 @@ _.Zones =
 					p(1326),	-- Skywisp Moth
 				}),
 				n(-38, { 	-- Profession
-					prof(356, 7620, { -- Fishing
+					prof(356, { -- Fishing
 						i(94933),
 					}),
 				}),

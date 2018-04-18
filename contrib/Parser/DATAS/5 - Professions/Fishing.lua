@@ -1,5 +1,5 @@
 -- Fishing - Skill ID 356 / Spell ID 7620
-profession(356, 7620, { 	-- Fishing
+profession(356, { 	-- Fishing
 	n(-167, { 	-- Fishing Poles
 		["groups"] = {	
 			desc(un(15, i(19970)), "Reward from winning Stranglethorn Fishing Extravaganza."),	-- Arcanite Fishing Pole

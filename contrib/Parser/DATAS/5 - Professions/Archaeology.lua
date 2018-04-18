@@ -1,5 +1,5 @@
 -- Archaeology - Skill ID 794 / Spell ID 158762
-profession(794, 158762, { -- Archaeology
+profession(794, { -- Archaeology
 	n(-160, { -- Mounts
 		sp(90619, { i(60954) }),	-- Fossilized Raptor
 		sp(92148, { i(64883) }),	-- Scepter of Azj'Aqir

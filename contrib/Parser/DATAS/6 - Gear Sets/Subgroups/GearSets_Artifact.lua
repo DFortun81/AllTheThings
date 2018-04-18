@@ -4240,7 +4240,7 @@ _.GearSets =
 				},
 				["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\nUnlocks are shown based off your current hero and may or may not reflect whether you actually unlocked them on that class.\n\n"
 			}),
-			prof(356, 7620, { -- Fishing
+			prof(356, { -- Fishing
 				["groups"] = {
 					i(133755, { -- Underlight Angler
 						["groups"] = {

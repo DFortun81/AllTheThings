@@ -1,5 +1,5 @@
 -- Inscription - Skill ID 773 / Spell ID 45357
-profession(773, 45357, { -- Inscription
+profession(773, { -- Inscription
 	n(-25, { -- Pet Battles
 		i(89368), -- Chi-Ji Kite
 		i(89367), -- Yu'lon Kite

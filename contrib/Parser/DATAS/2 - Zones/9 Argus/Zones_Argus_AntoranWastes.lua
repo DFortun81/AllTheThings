@@ -600,7 +600,7 @@ _.Zones =
 									i(152753), -- Praetorium Guard's Sabatons
 								}),
 							}),
-							prof(356, 7620, { -- Fishing
+							prof(356, { -- Fishing
 								i(152912), -- Pond Nettle [Note: Fishing]
 							}),
 						},
@@ -636,13 +636,13 @@ _.Zones =
 									style(2, title(366)), -- the Lightbringer
 								}),
 							}),
-							prof(182, 2366, { -- Herb Gathering
+							prof(182, { -- Herb Gathering
 								["groups"] = {
 									i(153045), -- Fel Lasher (WOWHEAD DATA says only from Astral Glory on Mac'Aree, but comments say otherwise)
 								},
 								["description"] = "|cff66ccffThis pet can be found when gathering Argus herbs.|r",
 							}),
-							prof(393, 8613, { -- Skinning
+							prof(393, { -- Skinning
 								i(153057), -- Fossorial Bile Larva
 							}),
 							n(-215, { -- Vindicaar

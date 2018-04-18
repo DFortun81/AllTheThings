@@ -600,14 +600,14 @@ _.Zones =
 					p(404), 	-- Long tailed Mole
 				}),
 				n(-38, {	-- Profession
-					prof(185, 2550, {	-- Cooking
+					prof(185, {	-- Cooking
 						qg(5159, qa(29352)),	-- A Fowl Shortage
 						qg(5159, qa(29351)),	-- A Round for the Guards
 						qg(5159, qa(29355)),	-- Can't Get Enough Spice Bread
 						qg(5159, qa(29356)),	-- I Need to Cask a Favor
 						qg(5159, qa(29353)),	-- Keepin' the Haggis Flowin'
 					}),
-					prof(356, 7620, { -- Fishing
+					prof(356, { -- Fishing
 						["groups"] = {
 --							Add quest subsection?  Not sure what would be more ~aesthetically appealing~						
 							qg(5161, qa(29342)),	-- Cold Water Fishing

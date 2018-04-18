@@ -1369,7 +1369,7 @@ _.Zones =
 					}),
 				}),
 				n(-38, { -- Profession
-					prof(356, 7620, { -- Fishing
+					prof(356, { -- Fishing
 						ach(10596, {	-- Bigger Fish to Fry
 							n(-218, {		-- Coastal
 								i(133722, {		-- Axefish Lure

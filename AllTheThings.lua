@@ -3465,6 +3465,7 @@ local SkillIDToSpellID = setmetatable({
 	[333] = 7411,	-- Enchanting
 	[202] = 4036,	-- Engineering
 	[356] = 7620,	-- Fishing
+	[129] = 3273,	-- First Aid
 	[182] = 2366,	-- Herb Gathering
 	[773] = 45357,	-- Inscription
 	[755] = 25229,	-- Jewelcrafting
@@ -3476,11 +3477,13 @@ local SkillIDToSpellID = setmetatable({
 app.BaseProfession = {
 	__index = function(t, key)
 		if key == "key" then
-			return "professionID";
+			return "requireSkill";
 		elseif key == "text" then
-			return select(1, GetSpellInfo(t.professionID));
+			return select(1, GetSpellInfo(t.spellID));
 		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.professionID));
+			return select(3, GetSpellInfo(t.spellID));
+		elseif key == "spellID" then
+			return SkillIDToSpellID[t.requireSkill];
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3488,7 +3491,7 @@ app.BaseProfession = {
 	end
 };
 app.CreateProfession = function(id, t)
-	return createInstance(constructor(id, t, "professionID"), app.BaseProfession);
+	return createInstance(constructor(id, t, "requireSkill"), app.BaseProfession);
 end
 
 -- Quest Lib
