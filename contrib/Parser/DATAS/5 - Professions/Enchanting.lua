@@ -1,5 +1,5 @@
 -- Enchanting - Skill ID 333 / Spell ID 7411
-profession(333, 7411, { -- Enchanting
+profession(333, { -- Enchanting
 	n(-492, { -- Illusions
 		["groups"] = {
 			sp(217637, {					-- Tome of Illusions: Azeroth

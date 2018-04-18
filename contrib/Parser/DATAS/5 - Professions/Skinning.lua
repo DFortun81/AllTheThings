@@ -1,5 +1,5 @@
 -- Skinning - Skill ID 393 / Spell ID 8613
-profession(393, 8613, { -- Skinning
+profession(393, { -- Skinning
 	n(-26, {	-- Drop
 		n(103675, {	-- Felhide Gargantuan
 			["description"] = "These mobs are only available during a World Quest. They can only be skinned one time, similarly to the Slice of Bacon cooking quests.",

@@ -1,5 +1,5 @@
 -- Mining - Skill ID 186 / Spell ID 2575
-profession(186, 2575, { -- Mining
+profession(186, { -- Mining
 	n(-26, {	-- Drop
 		n(93237, {	-- Brimstone Destroyer
 			["description"] = "These mobs are only available during a World Quest. They can only be mined one time, similarly to the Slice of Bacon cooking quests.",

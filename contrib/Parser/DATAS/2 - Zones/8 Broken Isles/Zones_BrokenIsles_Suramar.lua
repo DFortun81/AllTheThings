@@ -1485,7 +1485,7 @@ _.Zones =
 					}),
 				}),
 				n(-38, { -- Profession
-					profession(185, 2550, { -- Cooking
+					prof(185, { -- Cooking
 						{
 							["itemID"] = 141011,	-- Recipe: Surf
 							["description"] = "Drops from any marine mob in the zone.",
@@ -1501,7 +1501,7 @@ _.Zones =
 							},
 						},
 					}),
-					prof(356, 7620, { -- Fishing
+					prof(356, { -- Fishing
 						n(-100001, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,

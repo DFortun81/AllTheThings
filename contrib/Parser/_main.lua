@@ -423,13 +423,11 @@ obj = function(id, t)									-- Create a WORLD OBJECT Object (an interactable, 
 	return struct("objectID", id, t);
 end
 o = obj;												-- Create a WORLD OBJECT Object (alternative shortcut)
-prof = function(skillID, spellID, t)					-- Create a PROFESSION Object
-	t = struct("professionID", spellID, t);
-	t.requiredSkill = skillID;
-	return t;
+prof = function(skillID, t)								-- Create a PROFESSION Object
+	return struct("professionID", skillID, t);
 end
-profession = function(skillID, spellID, t)				-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, spellID, t);
+profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
+	local p = prof(skillID, t);
 	_.Professions = { p };
 	return p;
 end

@@ -1394,7 +1394,7 @@ _.Zones =
 					}),
 				}),
 				n(-38, { -- Profession
-					prof(356, 7620, { -- Fishing
+					prof(356, { -- Fishing
 						n(-100001, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
@@ -1538,7 +1538,7 @@ _.Zones =
 							}),
 						}),
 					}),
-					profession(393, 8613, { -- Skinning
+					prof(393, { -- Skinning
 						n(91799, {	-- Juvenile Stormwing
 							{
 								["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw

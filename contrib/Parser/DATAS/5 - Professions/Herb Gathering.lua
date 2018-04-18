@@ -1,5 +1,5 @@
 -- Herbalism - Skill ID 182 / Spell ID 2366
-profession(182, 2366, { -- Herb Gathering
+profession(182, { -- Herb Gathering
 	n(-26, {	-- Drop
 		i(124101, {	-- Aethril
 			{

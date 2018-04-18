@@ -975,7 +975,7 @@ _.Zones =
 					}),
 				}),
 				n(  -38, {	-- Profession
-					prof(356, 7620, { -- Fishing
+					prof(356, { -- Fishing
 						["groups"] = {
 							un(15, i(34486)),		-- Old Crafty
 						},

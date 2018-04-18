@@ -1,5 +1,5 @@
--- Skinning - Skill ID 393 / Spell ID 8613
-profession(129, 3273, { -- First Aid
+-- Skinning - Skill ID 393 / Spell ID 3273
+profession(129, { -- First Aid
 	ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
 		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 		["groups"] = {

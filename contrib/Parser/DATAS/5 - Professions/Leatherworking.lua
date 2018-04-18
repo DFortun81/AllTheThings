@@ -1,5 +1,5 @@
 -- Leatherworking - Skill ID  165 / Spell ID  2108
-profession(165, 2108, { -- Leatherworking
+profession(165, { -- Leatherworking
 	n(-160, { 	-- Mounts
 		i(129962), -- Elderhorn Riding Harness
 		i(108883), -- Riding Harness
