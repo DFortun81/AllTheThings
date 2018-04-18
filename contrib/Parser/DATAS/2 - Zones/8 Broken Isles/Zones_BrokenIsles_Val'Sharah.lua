@@ -882,194 +882,299 @@ _.Zones =
 						q(39731),	-- The Tranquil Forest
 						q(39861),	-- Tying Up Loose Ends
 						q(40122),	-- Cenarius, Keeper of the Grove
-						q(38384),	-- Nature's Call
+						q(38384, {	-- Nature's Call
+							i(141618),	-- Life-Giving Berries
+							i(141619),	-- Mana-Infused Berries
+						}),
 						crit(1, { -- Archdruid of the Vale
-						  q(38382),	-- Archdruid of the Vale										
-						  q(39383),	-- Dishonored
-						  q(39384),	-- The Corruptor
-						  q(40573,  {  -- The Nightmare Lord
-							i(129992),
-							i(130000),
-							i(130008),
-							i(130019),
-						  }),
-						  q(38323),	-- Return to the Grove
+							q(38382),	-- Archdruid of the Vale										
+							q(39383),	-- Dishonored
+							q(39384),	-- The Corruptor
+							q(40573,  {  -- The Nightmare Lord
+								i(130008),	-- Armbands of Unrelenting Anguish
+								i(130019),	-- Armplates of Unrelenting Anguish
+								i(130000),	-- Bands of Unrelenting Anguish
+								i(129992),	-- Cuffs of Unrelenting Anguish
+								i(121643),	-- Thaon's Grief
+							}),
+							q(38323),	-- Return to the Grove
 						}),
 						crit(2, { -- Archdruid of the Claw
-						  q(38142),	-- Archdruid of the Claw
-						  q(38455),	-- Frenzied Furbolgs
-						  q(38922),	-- Littlefur
-						  q(38246,  {  -- Totemic Call
-							i(121599),
-							i(121601),
-							i(121600),
-							i(121598),
-							i(129987),
-							i(129995),
-							i(130003),
-							i(130014),
-						  }),
-						  q(38146),	-- The Chieftain's Beads
-						  q(38143),	-- Awakening the Archdruid
-						  q(38144),	-- The Demons Below
-						  q(38145),	-- Out of the Dream
-						  q(38147,  {  -- Entangled Dreams
-							i(121593),
-							i(121576),
-							i(121575),
-							i(121574),
-							i(121586),
-							i(121588),
-							i(121587),
-							i(121585),
-						  }),
-						  q(38322),	-- Return to the Grove
+							q(38142),	-- Archdruid of the Claw
+							q(38455),	-- Frenzied Furbolgs
+							q(38922),	-- Littlefur
+							q(38246,  {  -- Totemic Call
+								i(121599),	-- Nightvale Cord
+								i(129987),	-- Nightvale Gloves
+								i(121598),	-- Rooksguard Girdle
+								i(130014),	-- Rooksguard Grips
+								i(121601),	-- Sablehide Belt
+								i(129995),	-- Sablehide Handguards
+								i(130003),	-- Thornbrace Grips
+								i(121600),	-- Thornbrace Waistguard
+							}),
+							q(38146),	-- The Chieftain's Beads
+							q(38143),	-- Awakening the Archdruid
+							q(38144),	-- The Demons Below
+							q(38145),	-- Out of the Dream
+							q(38147,  {  -- Entangled Dreams
+								i(121586),	-- Nightvale Cowl
+								i(121593),	-- Nightvale Robe
+								i(121574),	-- Rooksguard Breastplate
+								i(121585),	-- Rooksguard Helmet
+								i(121588),	-- Sablehide Hood
+								i(121576),	-- Sablehide Vest
+								i(121575),	-- Thornbrace Chainmail
+								i(121587),	-- Thornbrace Helm
+							}),
+							q(38322),	-- Return to the Grove
 						}),
 						crit(3, { -- Archdruid of the Lore
-						  q(38381, {	-- Archdruid of Lore (Non-Druid version)
-							["classes"] = {1,2,3,4,5,6,7,8,9,10,12}
-						  }),
-						  q(44106, {	-- Archdruid of Lore (Druid version)
-							["classes"] = {11}
-						  }),
-						  q(38225,  {  -- Death to the Witchmother
-							i(121646),
-						  }),
-						  q(38235),	-- Solid as a Rock
-						  q(38148),	-- Return to the Grove
+							q(38381, {	-- Archdruid of Lore (Non-Druid version)
+								["classes"] = {1,2,3,4,5,6,7,8,9,10,12}
+							}),
+							q(44106, {	-- Archdruid of Lore (Druid version)
+								["classes"] = {11}
+							}),
+							q(38225,  {  -- Death to the Witchmother
+								i(121646),	-- Witchmother Drape
+								i(130021),	-- Swiftfeather Band
+							}),
+							q(38235),	-- Solid as a Rock
+							q(38148),	-- Return to the Grove
 						}),
 						crit(4, { -- Into the Nightmare
-						  q(38377),	-- The Emerald Queen
-						  q(38641),	-- The Temple of Elune
-						  q(38662),	-- Tears for Fears
-						  q(38655),	-- Root Cause
-						  q(38663),	-- The Die is Cast
-						  q(38595),	-- Malfurion's Fury
-						  q(38582,  {  -- To Old Friends
-							i(121596),
-							i(121594),
-							i(121597),
-							i(121595),
-							i(129986),
-							i(129994),
-							i(130002),
-							i(130013),
-						  }),
-						  q(38753),	-- The Demon's Trail
+							q(38377, {	-- The Emerald Queen
+								i(141387),	-- Emerald Bloom
+								i(132279),	-- Cleansed Shrine Relic
+								i(132282),	-- Enchanted Pool Garnet
+								i(132303),	-- Enchanted Stoneblood Feather
+								i(132297),	-- Everblooming Flower
+								i(132286),	-- Felshroom
+								i(132287),	-- Firewater Essence
+								i(132290),	-- Frozen Moss of the Den
+								i(132280),	-- Lost Priestess' Loop
+								i(132281),	-- Lunarwing Crystal
+								i(132298),	-- Nightmare Cave Moss
+								i(132295),	-- Petrified Ancient Bark
+								i(132284),	-- Preserved Blood-Stained Claw
+								i(132302),	-- Rustling of the Forest
+								i(132299),	-- Satyr's Nightmare Fetish
+								i(132285),	-- Small Nightmare Totem
+								i(132294),	-- Stone of the Dream Den
+								i(132288),	-- Trickster's Everburning Flames
+								i(132283),	-- Uncorrupted Val Blood
+								i(132296),	-- Val'sharah Seed Pods
+								i(132289),	-- Vale Shadow Frost
+							}),
+							q(38641),	-- The Temple of Elune
+							q(38662, {	-- Tears for Fears
+								i(121651),	-- Darkfiend Dreadbringer Horn
+								i(121641),	-- Radiant Charm of Elune
+								i(121647),	-- Temple Priestess' Charm
+								i(121649),	-- Vibrant Temple Masonry
+							}),
+							q(38655),	-- Root Cause
+							q(38663),	-- The Die is Cast
+							q(38595),	-- Malfurion's Fury
+							q(38582,  {  -- To Old Friends
+								i(129986),	-- Nightvale Footwraps
+								i(121596),	-- Nightvale Mantle
+								i(121595),	-- Rooksguard Pauldrons
+								i(130013),	-- Rooksguard Treads
+								i(129994),	-- Sablehide Footwraps
+								i(121594),	-- Sablehide Shoulders
+								i(130002),	-- Thornbrace Boots
+								i(121597),	-- Thornbrace Spaulders
+							}),
+							q(38753, {	-- The Demon's Trail
+								i(141390),	-- The Corruptor's Totem [AP]
+							}),
 						}),
 						crit(5, { -- All Nightmare Long
-						  qa( 41056),	-- Love Lost
-						  qh( 41054),	-- Love Lost
-						  qh( 41890),	-- Dark Side of the Moon
-						  qa( 41708),	-- Dark Side of the Moon
-						  q(38671),	-- Lost in Retreat
-						  q(41707),	-- Wormtalon Wreckage
-						  q(43576),	-- Regroup at the Refuge
-						  qa( 41724),	-- Heart of the Nightmare
-						  qh( 38675),	-- Heart of the Nightmare
-						  q(38684),	-- Reading the Leaves
-						  qh( 41749),	-- Given to Corruption
-						  qa( 41893),	-- Given to Corruption
-						  q(43702),	-- Softening the Target
-						  qh( 41763),	-- Close Enough to Touch
-						  qa( 38687),	-- Close Enough to Touch
-						  q(38743),	-- The Fate of Val'sharah
+							qa( 41056),	-- Love Lost
+							qh( 41054),	-- Love Lost
+							qh( 41890),	-- Dark Side of the Moon
+							qa( 41708),	-- Dark Side of the Moon
+							q(38671),	-- Lost in Retreat
+							q(41707),	-- Wormtalon Wreckage
+							q(43576),	-- Regroup at the Refuge
+							qa( 41724),	-- Heart of the Nightmare
+							qh( 38675),	-- Heart of the Nightmare
+							q(38684),	-- Reading the Leaves
+							qh( 41749),	-- Given to Corruption
+							qa( 41893),	-- Given to Corruption
+							q(43702),	-- Softening the Target
+							qh( 41763, {	-- Close Enough to Touch
+								i(132311),	-- Blossom of Promise
+								i(132319),	-- Charred Imp Claw
+								i(132314),	-- Desiccated Breeze
+								i(132305),	-- Elothir's Sympathy
+								i(132322),	-- Lifelink to Elothir
+								i(132316),	-- Mana-Fused Seedling
+								i(132325),	-- Nightmare Zephyr
+								i(132321),	-- Petrified Ancient Branch
+								i(132309),	-- Rimed Worldtree Blossom
+								i(132317),	-- Sap of the Worldtree
+								i(132308),	-- Shaladrassil's Anger
+								i(132312),	-- Twisted Nightmare Totem
+								i(132310),	-- Uncorrupted Soil
+								i(132306),	-- Varethos' Fortitude
+								i(132320),	-- Varethos' Frozen Heart
+								i(132323),	-- Varethos' Last Breath
+							}),
+							qa( 38687, {	-- Close Enough to Touch
+								i(132311),	-- Blossom of Promise
+								i(132319),	-- Charred Imp Claw
+								i(132314),	-- Desiccated Breeze
+								i(132305),	-- Elothir's Sympathy
+								i(132322),	-- Lifelink to Elothir
+								i(132316),	-- Mana-Fused Seedling
+								i(132325),	-- Nightmare Zephyr
+								i(132321),	-- Petrified Ancient Branch
+								i(132309),	-- Rimed Worldtree Blossom
+								i(132317),	-- Sap of the Worldtree
+								i(132308),	-- Shaladrassil's Anger
+								i(132312),	-- Twisted Nightmare Totem
+								i(132310),	-- Uncorrupted Soil
+								i(132306),	-- Varethos' Fortitude
+								i(132320),	-- Varethos' Frozen Heart
+								i(132323),	-- Varethos' Last Breath
+							}),
+							q(38743, {	-- The Fate of Val'sharah
+								i(141383),	-- Crystallized Moon Drop [AP]
+							}),
 						}),
 						crit(6, { -- Bradensbrook
-						  q(39149),	-- A Village in Peril
-						  q(38643),	-- A Village in Peril
-						  q(38645),	-- Children of the Night
-						  q(38644,  {  -- The Farmsteads
-							i(121583),
-							i(121581),
-							i(121584),
-							i(121582),
-							i(129991),
-							i(129999),
-							i(130007),
-							i(130018),
-						  }),
-						  q(38646),	-- A Sight For Sore Eyes
-						  q(38647),	-- For the Corn!
-						  q(39117, {	-- Shriek No More
-							i(133812),	-- Recipe: Deep-Fried Mossgill
-							i(129168),	-- Band of Sablehide
-							i(130009),	-- Bonefeather Talisman
-						  }),
-						  q(38691),	-- Jarod's Mission
+							q(39149),	-- A Village in Peril
+							q(38643),	-- A Village in Peril
+							q(38645),	-- Children of the Night
+							q(38644,  {  -- The Farmsteads
+								i(121583),	-- Nightvale Handwraps
+								i(129991),	-- Nightvale Waistwrap
+								i(130018),	-- Rooksguard Binding
+								i(121582),	-- Rooksguard Gauntlets
+								i(121581),	-- Sablehide Gloves
+								i(129999),	-- Sablehide Waistcord
+								i(121584),	-- Thornbrace Gauntlets
+								i(130007),	-- Thornbrace Girdle
+							}),
+							q(38646),	-- A Sight For Sore Eyes
+							q(38647),	-- For the Corn!
+							q(39117, {	-- Shriek No More
+								i(133812),	-- Recipe: Deep-Fried Mossgill
+								i(129168),	-- Band of Sablehide
+								i(130009),	-- Bonefeather Talisman
+							}),
+							q(38691, {	-- Jarod's Mission
+								i(141388),	-- Warden's Boon
+							}),
 						}),
 						crit(7, { -- Black Rook Hold
-						  q(38718),	-- Kur'talos Ravencrest
-						  q(38714,  {  -- Maiev's Trail
-							i(121602),
-							i(121605),
-							i(121604),
-							i(121603),
-							i(129983),
-						  }),
-						  q(38715),	-- The Rook's Guard
-						  q(38717),	-- Black Rook Prison
-						  q(38724),	-- Brotherly Love
-						  q(44278, {	-- Illidari Freedom
-							["classes"] = {12},
-						  }),
-						  q(38719, {	-- Illidari Freedom
-							["classes"] = {1,2,3,4,5,6,7,8,9,10,11},
-						  }),
-						  q(38721),	-- Lieutenant of the Tower					
+							q(38718),	-- Kur'talos Ravencrest
+							q(38714,  {  -- Maiev's Trail
+								i(129983),	-- Farseeker Drape
+								i(121602),	-- Nightvale Wristwraps
+								i(121603),	-- Rooksguard Vambraces
+								i(121605),	-- Sablehide Armbands
+								i(121604),	-- Thornbrace Wristguards
+							}),
+							q(38715),	-- The Rook's Guard
+							q(38717),	-- Black Rook Prison
+							q(38724),	-- Brotherly Love
+							q(44278, {	-- Illidari Freedom
+								["classes"] = {12},
+							}),
+							q(38719, {	-- Illidari Freedom
+								["classes"] = {1,2,3,4,5,6,7,8,9,10,11},
+							}),
+							q(38721, {	-- Lieutenant of the Tower
+								i(141389),	-- Stareye Gem
+								i(132337),	-- Araxxas's Badge
+								i(132334),	-- Blessed Cup of the Moon
+								i(132339),	-- Death's Chill Mirror Shard
+								i(132350),	-- Defiant Frozen Fist
+								i(132345),	-- Elune Graced Signet
+								i(132338),	-- Everflame Arrowhead
+								i(132344),	-- Guile of the Hold's Sky Terrors
+								i(132348),	-- Gul'dan's Commission
+								i(132349),	-- Inquisitor's Fire-Brand Tip
+								i(132341),	-- Nourishmoss
+								i(132353),	-- Patch of Risen Saber Pelt
+								i(132352),	-- Revitalizing Incense
+								i(132340),	-- Rook Fired Ore
+								i(132346),	-- Small Highborne Figurine
+								i(132351),	-- The Forgemaster's Hammer Head
+								i(132347),	-- The Interrogator's Vial
+								i(132336),	-- The Jailer's Cat Tail
+								i(132335),	-- Tower Magi's Eye
+								i(132342),	-- Vial of Dormant Shadowswarm
+								i(132355),	-- Wind-Whipped Hold Banner Strip
+							}),
 						}),
 					  }),
 					ach(10877, { -- Pillars of Creation
-						q(40567),	-- Darkheart Thicket: Enter the Nightmare
+						q(40567, {	-- Darkheart Thicket: Enter the Nightmare
+							i(141551),	-- Boots of the Receding Nightmare
+							i(141548),	-- Footwraps of the Receding Nightmare
+							i(141550),	-- Sabatons of the Receding Nightmare
+							i(141549),	-- Treads of the Receding Nightmare
+						}),
 						q(40890,  {  -- The Tears of Elune
-						  i(130001), -- Shaladrassil Cuirass
-						  i(129993), -- Shaladrassil Tunic
-						  i(129985), -- Shaladrassil Vestments
-						  i(130012), -- Shaladrassil Chestguard
+							i(130001), -- Shaladrassil Cuirass
+							i(129993), -- Shaladrassil Tunic
+							i(129985), -- Shaladrassil Vestments
+							i(130012), -- Shaladrassil Chestguard
 						}),
 					}),  
 					n(-168, { -- Other Quests
 						sz(10666,3, { -- Bradensbrook
-						  q(39015,  {  -- Grumpy
-							i(128354), -- PET! Grumpy
-						  }),
+							q(39015,  {  -- Grumpy
+								i(128354), -- PET! Grumpy
+							}),
 						}),
 						sz(10666,6, { -- Grove of Cenarius
-						  q(39354),	-- Wisp in the Willows
-			--              q(44825),	-- Wisp in the Willows REMOVED?
+							q(39354, {	-- Wisp in the Willows
+								i(130127),	-- Syndrelle's Favorite Ring
+							}),
+							--[[
+							q(44825, {	-- Wisp in the Willows REMOVED?
+								i(130127),	-- Syndrelle's Favorite Ring
+							}),
+							]]--
 						}),
 						n(-101802, { -- Lostlight Grotto
-						  q(42747),	-- Where the Wildkin Are
-						  q(42748),	-- Emerald Sisters
-						  q(42750),	-- Dreamcatcher
-						  q(42786),	-- Grotesque Remains
-						  q(42751),	-- Moon Reaver
+							q(42747),	-- Where the Wildkin Are
+							q(42748),	-- Emerald Sisters
+							q(42750),	-- Dreamcatcher
+							q(42786),	-- Grotesque Remains
+							q(42751),	-- Moon Reaver
 						}),
 						n(-101801, { -- Lunarwing Shallows
-						  q(38889,  {  -- Adopting the Adorable
-							["groups"] = {
-							  i(128690), -- PET! Ashmaw Cub
-							},
-							["description"] = "|cff66ccffHave to kill Jinikki the Puncturer to get this quest.|n",
-						  }),
-						  q(40221,  {  -- Spread Your Lunarwings and Fly
-							i(121578),
-							i(121580),
-							i(121579),
-							i(121577),
-							i(121590),
-							i(121592),
-							i(121591),
-							i(121589),
-						  }),
-						  q(40220),	-- Thorny Dancing
-						  q(38862),	-- Thieving Thistleleaf
+							q(38889,  {  -- Adopting the Adorable
+								["groups"] = {
+									i(128690), -- PET! Ashmaw Cub
+								},
+								["description"] = "|cff66ccffHave to kill Jinikki the Puncturer to get this quest.|n",
+							}),
+							q(40221,  {  -- Spread Your Lunarwings and Fly
+								i(121590),	-- Nightvale Leggings
+								i(121578),	-- Nightvale Sandals
+								i(121589),	-- Rooksguard Legguards
+								i(121577),	-- Rooksguard Warboots
+								i(121580),	-- Sablehide Boots
+								i(121592),	-- Sablehide Breeches
+								i(121591),	-- Thornbrace Leggings
+								i(121579),	-- Thornbrace Sabatons
+							}),
+							q(40220),	-- Thorny Dancing
+							q(38862),	-- Thieving Thistleleaf
 						}),
 						sz(10666,9, { -- Moonclaw Vale
-						  q(42865),	-- Grell to Pay
-						  q(42883),	-- All Grell Broke Loose
-						  q(42884),	-- Grassroots Effort
-						  q(42857),	-- Moist Around the Hedges
+							q(42865),	-- Grell to Pay
+							q(42883),	-- All Grell Broke Loose
+							q(42884),	-- Grassroots Effort
+							q(42857),	-- Moist Around the Hedges
 						}),
 					}),
 				  
