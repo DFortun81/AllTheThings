@@ -224,6 +224,7 @@ AllTheThings.Locales.enUS = {
 		[52] = GetItemSubClassInfo(8,10),						-- Finger
 		[53] = INVTYPE_TRINKET,									-- Trinket
 		[54] = GetItemSubClassInfo(3,11),						-- Relic
+		[55] = "Consumables",									-- Consumable (Artifact Power, etc)
 
 		-- "Non-Equipment Types"
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
@@ -238,6 +239,7 @@ AllTheThings.Locales.enUS = {
 		[109] = HEIRLOOMS, 										-- Heirlooms
 		[110] = "Titles", 										-- Titles
 		[111] = "Glyphs", 										-- Glyphs
+		[112] = "Factions", 									-- Factions
 
 		-- "Recipes"
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes

@@ -1477,7 +1477,7 @@ local function createMiniListFrame(parent)
 	
 	last = armor;
 	x = 5
-	for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 51, 52, 53, 54 }) do
+	for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 51, 52, 53, 54, 55 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
 			itemFilters[filter] = self:GetChecked();
 			refreshUI();
