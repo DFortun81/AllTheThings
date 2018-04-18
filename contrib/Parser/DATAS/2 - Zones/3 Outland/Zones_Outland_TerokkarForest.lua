@@ -574,6 +574,23 @@ _.Zones =
 						i(27692),	-- Recipe: Warp Burger
 					}),
 				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							qdg(q(10218, {	-- Someone Else's Hard Work Pays Off
+								un(34, i(29328)),	-- Consortium Prince's Wrap
+								un(34, i(29327)),	-- Cryo-mitts
+								un(34, i(29326)),	-- Consortium Mantle of Phasing
+								un(34, i(29325)),	-- Flesh Beast's Metal Greaves
+							})),
+						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+					["u"] = 12,
+				}),
 			},
 			["Lvl"] = 62,	
 			["achievementID"] = 867,

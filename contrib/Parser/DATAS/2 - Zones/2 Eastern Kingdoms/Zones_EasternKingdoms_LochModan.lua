@@ -725,12 +725,15 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
 							qa(283, { -- A Dark Threat Looms
 								un(34, i(2907)),	-- Dwarven Tree Chopper
 								un(34, i(2908)),	-- Thornblade 
+							}),
+							qa(26155, {	-- A Dark Threat, Remembered
+								un(34, i(59013)),	-- Stonesmirk Breastplate
+								un(34, i(59012)),	-- Disarming Gloves
+								un(34, i(59011)),	-- Nicolette's Robes
 							}),
 							qa(257, { -- A Hunter's Boast
 								un(34, i(2903)),	-- Daryl's Hunting Bow 
@@ -779,6 +782,12 @@ _.Zones =
 								un(32, i(3217)),	-- Foreman Belt 
 								un(32, i(6188)),	-- Mud Stompers 
 							}),
+							qa(25117, {	-- Scout's Dishonor
+								un(34, i(59017)),	-- Strange Smelling Boots
+								un(34, i(59016)),	-- Clue-Finder's Leggings
+								un(34, i(59015)),	-- Bracers of Alarm
+								un(34, i(59014)),	-- Kizmet's Wrap
+							}),
 							qa(256, { -- WANTED: Chok'sul
 								un(34, i(59026)), 	-- Bounty Hunter's Bracers
 								un(34, i(59027)), 	-- Thelsamar Chainmail
@@ -820,6 +829,8 @@ _.Zones =
 								un(7, i(2283)),	-- Rat Cloth Belt
 							}),
 						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
 					},
 					["u"] = 12,
 				}),

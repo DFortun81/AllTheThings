@@ -949,6 +949,10 @@ _.Zones =
 							qa(719, {	-- A Dwarf and His Tools
 								un(34, i(4978)),	-- Ryedol's Hammer
 							}),
+							qdg(qh(4983, {	-- Bijou's Reconnaissance Report (may only have been both factions)
+								un(34, i(15858)),	-- Freewind Gloves
+								un(34, i(15859)),	-- Seapost Girdle
+							})),
 							qdg(qh(4134, {	-- Lost Thunderbrew Recipe
 								un(34, i(11964)),	-- Swiftstrike Cudgel
 								un(34, i(12000)),	-- Limb Cleaver
@@ -972,6 +976,11 @@ _.Zones =
 							q( 716, {	-- Stone Is Better than Cloth
 								un(34, i(4979)),	-- Enchanted Stonecloth Bracers
 							}),
+							qdg(qh(4724, {	-- The Pack Mistress
+								un(34, i(15824)),	-- Astoria Robes
+								un(34, i(15825)),	-- Traphook Jerkin
+								un(34, i(15827)),	-- Jadescale Breastplate
+							})),
 							qdg(qh(4063, {	-- The Rise of the Machines
 								un(34, i(12109)),	-- Azure Moon Amice
 								un(34, i(12110)),	-- Raincaster Drape

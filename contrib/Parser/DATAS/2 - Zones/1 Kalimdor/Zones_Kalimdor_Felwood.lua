@@ -902,15 +902,27 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							q( 5242, {	-- A Final Blow
+								un(34, i(15707)),	-- Brantwood Sash
+								un(34, i(15708)),	-- Blight Leather Gloves
+								un(34, i(15709)),	-- Gearforge Girdle
+							}),
 							qa(4261, {	-- Ancient Spirit
 								un(34, i(11873)),	-- Ethereal Mist Cape
 								un(34, i(11874)),	-- Clouddrift Mantle
+							}),
+							qa(4906, {	-- Further Corruption
+								un(34, i(11875)),	-- Breezecloud Bracers
 							}),
 							q( 7603, {	-- Kroshius' Infernal Core
 								["g"] = {
 									un(34, i(18762)),	-- Shard of the Green Flame
 								},
 								["classes"] = { 9 },	-- Warlock
+							}),
+							q( 5385, {	-- The Remains of Trey Lightforge
+								un(34, i(15706)),	-- Hunt Tracker Blade
+								un(34, i(15705)),	-- Tidecrest Blade
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)

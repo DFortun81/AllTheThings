@@ -1806,6 +1806,10 @@ _.Zones =
 								un(34, i(6726)),	-- Razzeric's Customized Seatbelt
 								un(34, i(6727)),	-- Razzeric's Racing Grips
 							}),
+							q( 5863, {	-- The Dunemaul Compound
+								un(34, i(16738)),	-- Witherseed Gloves
+								un(34, i(16739)),	-- Rugwood Mantle
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

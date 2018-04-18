@@ -8,12 +8,12 @@ _.Zones =
 			["groups"] = {		
 				cr(69099, e(814, { 	-- Nalak, The Storm Lord
 					["groups"] = {
-						i(95602, { -- Stormtouched Cache
-							i(94295, { -- Primal Egg
-								i(94296, {  -- Cracked Primal Egg
-									i(94292), -- Reins of the Black Primal Raptor
-									i(94293), -- Reins of the Green Primal Raptor
-									i(94291), -- Reins of the Red Primal Raptor
+						i(95602, {	-- Stormtouched Cache
+							i(94295, {	-- Primal Egg
+								i(94296, { 	-- Cracked Primal Egg
+									i(94292),	-- Reins of the Black Primal Raptor
+									i(94293),	-- Reins of the Green Primal Raptor
+									i(94291),	-- Reins of the Red Primal Raptor
 								}),
 							}),
 						}),
@@ -246,12 +246,12 @@ _.Zones =
 					["achievementID"] = 8028,
 				})),			
 				n(-3, { 	-- Holidays
-					n(-51, {     -- Noblegarden
+					n(-51, {    	-- Noblegarden
 						["groups"] = {				
 							qg(19148, qa(13484)),	-- Spring Collectors 
 -- Commenting Coordinates	qg(19172, qa(13484)),	-- Spring Collectors 
 						},
-						["achievementID"] = 2798, -- Noble Gardener
+						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
 					}),
 				}),
@@ -601,27 +601,32 @@ _.Zones =
 				--	n(69997, { 		-- Progenitus	}), 
 --]]
 				}),
-				n(-2, { -- Vendors
-					a(n(68000, { -- Hiren Loresong <Kirin Tor Offensive Quartermaster>
-						i(95564), -- Reins of the Golden Primal Direhorn Mount
-						i(95591), -- Kirin Tor Offensive Tabard
-						i(95567), -- Kirin Tor Beacon Toy
-						i(97212), -- Cloak of the Immortal Guardian
-						i(97211), -- Shan'ze Partisan's Greatcloak
-						i(97210), -- Shan'ze Gravetender Cloak
-						i(97209), -- Static-Collecting Cloak
-						i(97208), -- Thunder-Chaser Cloak
-						i(95523), -- Belt of Loa Charms
-						i(95518), -- Pain-Binder Girdle
-						i(95517), -- Shan'ze Scholar's Girdle
-						i(95521), -- Cinch of the Dead Forest's Vigil
-						i(95519), -- Skumblade-Tooth Girdle
-						i(95522), -- Rotting Bog Cinch
-						i(95525), -- Skumblade Ritualist Links
-						i(95520), -- Girdle of Shan'ze Glory
-						i(95524), -- Thunder Caressed Waistguard
+				n(-2, {	-- Vendors
+					a(n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>
+						i(95564),	-- Reins of the Golden Primal Direhorn (MOUNT!)
+						i(95567),	-- Kirin Tor Beacon (TOY!)
+						i(95591),	-- Kirin Tor Offensive Tabard
+						i(97191),	-- Ancient Overlord's Onyx Band
+						i(97189),	-- Ancient Primalist's Seal
+						i(95532),	-- Belt of Loa Charms
+						i(95521),	-- Cinch of the Dead Forest's Vigil
+						i(97212),	-- Cloak of the Immortal Guardian
+						i(95520),	-- Girdle of Shan'ze Glory
+						i(95527),	-- Pain-Binder Girdle
+						i(97187),	-- Refurbished Band of Jin
+						i(97190),	-- Refurbished Seal of Jin
+						i(97188),	-- Restored Hexxer's Signet
+						i(95522),	-- Rotting Bog Cinch
+						i(97210),	-- Shan'ze Gravetender Cloak
+						i(97211),	-- Shan'ze Partisan's Greatcloak
+						i(95526),	-- Shan'ze Scholar's Girdle
+						i(95525),	-- Skumblade Ritualist Links
+						i(95519),	-- Skumblade-Tooth Girdle
+						i(97209),	-- Static-Collecting Cloak
+						i(95524),	-- Thunder Caressed Waistguard
+						i(97208),	-- Thunder-Chaser Cloak
 					})),
-					n(70535, { -- Teng of the Flying Daggers <Shado-Pan Assault Quartermaster>
+					n(70535, {	-- Teng of the Flying Daggers <Shado-Pan Assault Quartermaster>
 						i(96569),	-- Breastplate of the All-Consuming Maw
 						i(96570),	-- Gauntlets of the All-Consuming Maw
 						i(96571),	-- Helmet of the All-Consuming Maw
@@ -1029,24 +1034,24 @@ _.Zones =
 						i(95995),	-- Shoulderguards of the Last Mogu
 						i(97131),	-- Shadow-Pan Assault Tabard
 					}),
-					h(n(67672, { -- Vasarin Redmorn <Sunreaver Onslaught Quartermaster>
-						i(95565), -- Reins of the Crimson Primal Direhorn Mount
-						i(95592), -- Sunreaver Onslaught Tabard
-						i(95568), -- Sunreaver Beacon Toy
-						i(97212), -- Cloak of the Immortal Guardian
-						i(97211), -- Shan'ze Partisan's Greatcloak
-						i(97210), -- Shan'ze Gravetender Cloak
-						i(97209), -- Static-Collecting Cloak
-						i(97208), -- Thunder-Chaser Cloak
-						i(95523), -- Belt of Loa Charms
-						i(95518), -- Pain-Binder Girdle
-						i(95517), -- Shan'ze Scholar's Girdle
-						i(95521), -- Cinch of the Dead Forest's Vigil
-						i(95519), -- Skumblade-Tooth Girdle
-						i(95522), -- Rotting Bog Cinch
-						i(95525), -- Skumblade Ritualist Links
-						i(95520), -- Girdle of Shan'ze Glory
-						i(95524), -- Thunder Caressed Waistguard
+					h(n(67672, {	-- Vasarin Redmorn <Sunreaver Onslaught Quartermaster>
+						i(95565),	-- Reins of the Crimson Primal Direhorn Mount
+						i(95592),	-- Sunreaver Onslaught Tabard
+						i(95568),	-- Sunreaver Beacon Toy
+						i(97212),	-- Cloak of the Immortal Guardian
+						i(97211),	-- Shan'ze Partisan's Greatcloak
+						i(97210),	-- Shan'ze Gravetender Cloak
+						i(97209),	-- Static-Collecting Cloak
+						i(97208),	-- Thunder-Chaser Cloak
+						i(95523),	-- Belt of Loa Charms
+						i(95518),	-- Pain-Binder Girdle
+						i(95517),	-- Shan'ze Scholar's Girdle
+						i(95521),	-- Cinch of the Dead Forest's Vigil
+						i(95519),	-- Skumblade-Tooth Girdle
+						i(95522),	-- Rotting Bog Cinch
+						i(95525),	-- Skumblade Ritualist Links
+						i(95520),	-- Girdle of Shan'ze Glory
+						i(95524),	-- Thunder Caressed Waistguard
 					})),
 				}),
 				n(-38, { -- Profession

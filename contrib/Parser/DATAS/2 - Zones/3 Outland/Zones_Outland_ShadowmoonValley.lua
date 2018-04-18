@@ -871,15 +871,25 @@ _.Zones =
 							["qg"] = 22214,	-- Harbinger Saronen
 							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 						})),
-						q( 10619, {	-- The Ashtongue Tribe
+						q(10619, {	-- The Ashtongue Tribe
 							["g"] = {
 							},
 							["qg"] = 21822,	-- Vindicator Aluumen
 							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 						}),
-
+						q(10816, {	-- Reclaiming Holy Ground
+							["g"] = {
+								i(30940),	-- Aged Leather Bindings
+								i(30961),	-- Ash-Covered Helm
+								i(30922),	-- Ata'mai Crown
+								i(30958),	-- Blackened Chain Greaves
+							},
+							["qg"] = 21822,	-- Vindicator Aluumen
+							["sourceQuests"] = { 10619 },	-- The Ashtongue Tribe
+						}),
 						
-						q( 10587, {	-- Karabor Training Grounds
+						
+						q(10587, {	-- Karabor Training Grounds
 							["g"] = {
 							},
 							["qg"] = 21860,	-- Exarch Onaala
@@ -887,37 +897,35 @@ _.Zones =
 						}),
 
 						
-						q( 10568, {	-- Tablets of Baa'ri
+						q(10568, {	-- Tablets of Baa'ri
 							["g"] = {
 							},
 							["qg"] = 21402,	-- Anchorite Ceyla
 							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 						}),
-
+						q(10571, {	-- Oronu the Elder
+							["g"] = {
+							},
+							["qg"] = 21402,	-- Anchorite Ceyla
+							["sourceQuests"] = { 10568 },	-- Tablets of Baa'ri
+						}),
 						
 						
 						
 						
 						
-						q( 10637),	-- A Necessary Distraction
-						q( 10640),	-- Altruis
-						q( 10571),	-- Oronu the Elder
-						q( 10650),	-- Return to the Aldor
-						q( 10574),	-- The Ashtongue Corruptors
-						q( 10575),	-- The Warden's Cage
-						q( 10651, {	-- Varedis Must Be Stopped
+						q(10637),	-- A Necessary Distraction
+						q(10640),	-- Altruis
+						q(10650),	-- Return to the Aldor
+						q(10574),	-- The Ashtongue Corruptors
+						q(10575),	-- The Warden's Cage
+						q(10651, {	-- Varedis Must Be Stopped
 							i(31013),
 							i(30933),
 							i(31010),
 							i(31002),
 							i(30948),
 							i(31009),
-						}),
-						q( 10816, {	-- Reclaiming Holy Ground
-							i(30940),
-							i(30961),
-							i(30922),
-							i(30958),
 						}),
 					}),
 					

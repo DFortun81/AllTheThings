@@ -1119,6 +1119,10 @@ _.Zones =
 								un(34, i(6664)),	-- Voodoo Mantle
 								un(34, i(6665)),	-- Hexed Bracers
 							}),
+							qh(6381, {	-- New Life
+								un(34, i(16985)),	-- Windseeker Boots
+								un(34, i(16986)),	-- Sandspire Gloves
+							}),
 							qa(1081, {	-- Reception from Tyrande
 								un(34, i(7334)),	-- Efflorescent Robe
 								un(34, i(7335)),	-- Grizzly Tunic

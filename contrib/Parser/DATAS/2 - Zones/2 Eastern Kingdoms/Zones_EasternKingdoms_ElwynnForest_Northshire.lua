@@ -574,6 +574,13 @@ _.Zones =
 								},
 								["classes"] = { 1 },	-- Warrior
 							}),
+							qa(5624, {	-- Garments of the Light
+								["g"] = {
+									un(34, i(16605)),	-- Friar's Robes of the Light
+								},
+								["races"] = { 1 },	-- Human
+								["classes"] = { 5 },	-- Priest
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

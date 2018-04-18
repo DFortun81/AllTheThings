@@ -1127,9 +1127,17 @@ _.Zones =
 							qh(7850, {	-- Dark Vessels
 								un(34, i(19118)),	-- Nature's Breath
 							}),
+							q( 1446, {	-- Jammal'an the Prophet
+								un(34, i(11123)),	-- Rainstrider Leggings
+								un(34, i(11124)),	-- Helm of Exile
+							}),
 							qa(2994, {	-- Saving Sharpbeak
 								un(34, i(9651)),	-- Gryphon Rider's Stormhammer
 								un(34, i(9652)),	-- Gryphon Rider's Leggings
+							}),
+							qh(7849, {	-- Separation Anxiety
+								un(34, i(19117)),	-- Laquered Wooden Plate Legplates
+								un(34, i(19116)),	-- Greenleaf Handwraps
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)

@@ -636,12 +636,19 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							qh(827, {	-- Skull Rock
+							qh(5648, {	-- Garments of Spirituality
+								["g"] = {
+									un(34, i(16606)),	-- Juju Hex Robes
+								},
+								["races"] = { 8 },	-- Troll
+								["classes"] = { 5 },	-- Priest
+							}),
+							qh( 827, {	-- Skull Rock
 								un(34, i(4947)),	-- Jagged Dagger
 								un(34, i(4939)),	-- Steady Bastard Sword
 								un(34, i(4948)),	-- Stinging Mace
 							}),
-							qh(924, {	-- The Demon Seed
+							qh( 924, {	-- The Demon Seed
 								un(34, i(5420)),	-- Banshee Armor
 							}),
 						}),

@@ -1298,6 +1298,14 @@ _.Zones =
 								un(34, i(4543)),	-- White Drakeskin Cap
 								un(34, i(4545)),	-- Radiant Silver Bracers
 							}),
+							qa( 661, {	-- Hints of a New Plague?
+								un(34, i(15455)),	-- Dustfall Robes
+								un(34, i(15456)),	-- Lightstep Leggings
+							}),
+							qa( 697, {	-- Malin's Request
+								un(34, i( 4975)),	-- Vigilant Buckler
+								un(34, i(15104)),	-- Wingborne Boots
+							}),
 							q(  666, {	-- Sunken Treasure
 								un(34, i(4547)),	-- Gnomish Zapper
 								un(34, i(4548)),	-- Servomechanic Sledgehammer

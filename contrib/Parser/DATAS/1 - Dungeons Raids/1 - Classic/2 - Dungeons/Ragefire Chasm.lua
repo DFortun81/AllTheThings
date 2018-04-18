@@ -52,12 +52,22 @@ _.Instances =
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {
-							--n(-17, {	-- Quests (Legacy)
-							--}),
+							n(-17, {	-- Quests (Legacy)
+								qh(5724, {	-- Returning the Lost Satchel
+									un(34, i(15452)),	-- Featherbead Bracers
+									un(34, i(15453)),	-- Savannah Bracers
+								}),
+							}),
 							--n(-16, {	-- Rares (Legacy)
 							--}),
 							n(  0, {	-- Zone Drop (Legacy)
+								n(11518, {	-- Jergosh the Invoker
+									un(2, i(14147)),	-- Cavedweller Bracers
+									un(2, i(14151)),	-- Chanting Blade
+									un(2, i(14150)),	-- Robe of Evocation
+								}),
 								n(11520, {	-- Taragaman the Hungerer
+									un(2, i(14148)),	-- Crystalline Cuffs
 									un(2, i(14149)),	-- Subterranean Cape
 								}),
 							}),

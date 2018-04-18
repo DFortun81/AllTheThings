@@ -1037,6 +1037,10 @@ _.Zones =
 								un(34, i(10705)),	-- Firwillow Wristbands
 								un(34, i(10706)),	-- Nightscale Girdle
 							}),
+							qa(4267, {	-- Rise of the Silithid
+								un(34, i(34416)),	-- Gloves of the Dune
+								un(34, i(34417)),	-- Marauder's Handwraps
+							}),
 							qa(1101, {	-- The Crone of the Kraul
 								un(34, i( 4197)),	-- Berylline Pads
 								un(34, i( 6742)),	-- Stonefist Girdle
@@ -1044,6 +1048,10 @@ _.Zones =
 							}),
 							qa(2942, {	-- The Morrow Stone
 								un(34, i( 9654)),	-- Cairnstone Silver
+							}),
+							qa(3791, {	-- The Mystery of Morrowgrain
+								un(34, i(11888)),	-- Quintis' Research Gloves
+								un(34, i(11889)),	-- Bark Iron Pauldrons
 							}),
 							qh(3129, {	-- Weapons of Spirit
 								un(34, i( 9684)),	-- Force of the Hippogryph

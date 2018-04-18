@@ -345,7 +345,14 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							qa(486, {	-- Ursal the Mauler
+							qa(5621, {	-- Garments of the Moon
+								["g"] = {
+									un(34, i(16604)),	-- Moon Robes of Elune
+								},
+								["races"] = { 4 },	-- Night Elf
+								["classes"] = { 5 },	-- Priest
+							}),
+							qa( 486, {	-- Ursal the Mauler
 								un(34, i(5459)),	-- Defender Axe
 								un(34, i(5587)),	-- Thornroot Club
 							}),

@@ -1467,6 +1467,10 @@ _.Zones =
 								un(34, i(5314)),	-- Boar Hunter's Cape
 								un(34, i(6477)),	-- Grassland Sash
 							}),
+							qh(862, {	-- Dig Rat Stew
+								un( 7, i( 5487)),	-- Recipe: Dig Rat Stew
+								un(34, i(10919)),	-- Apothecary Gloves
+							}),
 							qh(868, {	-- Egg Hunt
 								un(34, i(6503)),	-- Harlequin Robes
 								un(34, i(6502)),	-- Violet Scale Armor

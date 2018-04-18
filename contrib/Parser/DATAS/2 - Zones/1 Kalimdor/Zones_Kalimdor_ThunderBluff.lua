@@ -1007,6 +1007,9 @@ _.Zones =
 								un(34, i(6505)),	-- Crescent Staff
 								un(34, i(6504)),	-- Wingblade
 							})),
+							qdg(qh(965, {	-- Serpentbloom
+								un(34, i(10919)),	-- Apothecary Gloves
+							})),
 						}),
 					},
 					["u"] = 12,
