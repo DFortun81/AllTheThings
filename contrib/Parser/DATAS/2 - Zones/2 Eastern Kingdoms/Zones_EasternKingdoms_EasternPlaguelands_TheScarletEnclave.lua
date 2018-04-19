@@ -1043,6 +1043,34 @@ _.Zones =
 								un(34, i(22678)),	-- Talisman of Ascendance
 								un(34, i(22656)),	-- The Purifier
 							})),
+							qr(q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
+								un(34, i(22681)),	-- Band of Piety
+								un(34, i(22680)),	-- Band of Resolution
+								un(34, i(22688)),	-- Verimonde's Last Resort
+								un(34, i(22690)),	-- Leggings of the Plague Hunter
+								un(34, i(22689)),	-- Sanctified Leather Helm
+							})),
+							qr(q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
+								un(34, i(22681)),	-- Band of Piety
+								un(34, i(22680)),	-- Band of Resolution
+								un(34, i(22688)),	-- Verimonde's Last Resort
+								un(34, i(22690)),	-- Leggings of the Plague Hunter
+								un(34, i(22689)),	-- Sanctified Leather Helm
+							})),
+							qr(q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
+								un(34, i(22681)),	-- Band of Piety
+								un(34, i(22680)),	-- Band of Resolution
+								un(34, i(22688)),	-- Verimonde's Last Resort
+								un(34, i(22690)),	-- Leggings of the Plague Hunter
+								un(34, i(22689)),	-- Sanctified Leather Helm
+							})),
+							qr(q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
+								un(34, i(22681)),	-- Band of Piety
+								un(34, i(22680)),	-- Band of Resolution
+								un(34, i(22688)),	-- Verimonde's Last Resort
+								un(34, i(22690)),	-- Leggings of the Plague Hunter
+								un(34, i(22689)),	-- Sanctified Leather Helm
+							})),
 							q(6024, {	-- Hameya's Plea
 								un(34, i(15814)),	-- Hameya's Slayer
 								un(34, i(15815)),	-- Hameya's Cloak

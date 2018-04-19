@@ -136,6 +136,7 @@ _.Instances =
 						nld({	-- Legacy
 							un(2, i(33453)),	-- Hood of Hexing
 							un(2, i(33463)),	-- Hood of the Third Eye
+							un(2, i(33298)),	-- Prowler's Strikeblade
 							un(2, i(33465)),	-- Staff of Primal Fury
 						}),
 					})),

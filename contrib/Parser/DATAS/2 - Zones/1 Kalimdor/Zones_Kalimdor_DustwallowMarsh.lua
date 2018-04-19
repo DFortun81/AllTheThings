@@ -8,40 +8,40 @@ _.Zones =
 			["groups"] = {
 				n( -3, { 	-- Holidays
 --[[					
-					n(-47, {     -- Lunar Festival
+					n(-47, {    	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 913, -- To Honor One's Elders
+						["achievementID"] = 913,	-- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-50, { 7    -- Love is in the Air
+					n(-50, { 7   	-- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1693,    -- Fool For Love
+						["achievementID"] = 1693,   	-- Fool For Love
 						["u"] = 18,
 					}),
-					n(-51, {     -- Noblegarden
+					n(-51, {    	-- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 2798, -- Noble Gardener
+						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-52, {     -- Children's Week
+					n(-52, {    	-- Children's Week
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1793, -- For The Children
+						["achievementID"] = 1793,	-- For The Children
 						["u"] = 20,
 					}),
 --]]					
-					n(-53, {     -- Midsummer Fire Festival
+					n(-53, {    	-- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								o(187927, {	-- Alliance Bonfire
@@ -79,20 +79,20 @@ _.Zones =
 								qg(25962, qa(11882)),	-- Playing with Fire
 							}),
 						},
-						["achievementID"] = 1038, -- The Flame Warden
+						["achievementID"] = 1038,	-- The Flame Warden
 						["u"] = 21,
 					}),
 --[[					
-					n(-56, {     -- Brewfest
+					n(-56, {    	-- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1683, -- Brewmaster
+						["achievementID"] = 1683,	-- Brewmaster
 						["u"] = 24,
 					}),
 --]]
-					n(-58, {     -- Hallow's End
+					n(-58, {    	-- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
 								o(190052, {	-- Candy Bucket	
@@ -106,24 +106,24 @@ _.Zones =
 								}),
 							}),
 						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["achievementID"] = 1656,	-- Hallowed Be Thy Name
 						["u"] = 26,
 					}),	
 --[[
-					n(-60, {     -- Pilgrim's Bounty
+					n(-60, {    	-- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 3478, -- Pilgrim
+						["achievementID"] = 3478,	-- Pilgrim
 						["u"] = 28,
 					}),
-					n(-61, {     -- Feast of Winter Veil
+					n(-61, {    	-- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1691, -- Merrymaker
+						["achievementID"] = 1691,	-- Merrymaker
 						["u"] = 29,
 					}),		
 --]]				
@@ -132,7 +132,7 @@ _.Zones =
 					p(398), 	-- Black Rat
 					p(385), 	-- Mouse
 					p(387), 	-- Snake
-					desc(p(489), "Can be found in the area around Onyxia's Lair in Dustwallow Marsh."), -- Spawn of Onyxia
+					desc(p(489), "Can be found in the area around Onyxia's Lair in Dustwallow Marsh."),	-- Spawn of Onyxia
 					p(412), 	-- Spider
 					p(420), 	-- Toad
 					qg(66436, qh(31905)),	-- Grazzle the Great
@@ -150,11 +150,11 @@ _.Zones =
 					qg(4944, qa(27425)),	-- A Grim Connection
 					qg(4926, qh(26682)),	-- A Shambling Threat
 --]]					
-					qg(23568, qa(27427, { -- Arms of the Grimtotems
+					qg(23568, qa(27427, {	-- Arms of the Grimtotems
 						i(33268),	-- Bone Dirk
 						i(57837),	-- Biting Greataxe
 					})),
-					qg(4502, qh(1168, { -- Army of the Black Dragon
+					qg(4502, qh(1168, {	-- Army of the Black Dragon
 						i(10702),
 						i(9706),
 					})),
@@ -163,32 +163,32 @@ _.Zones =
 					qg(23579, q(27407)),	-- Bloodfen Feathers
 					qg(23951, qa(27247)),	-- Captain Vimes
 --]]					
-					qg(23570, q(27413, {  -- Catch a Dragon by the Tail
+					qg(23570, q(27413, { 	-- Catch a Dragon by the Tail
 						i(33235),
 						i(33241),
 						i(131672),
 					})),
-					qg(4500, qh(27418, { -- Challenge Overlord Mok'Morokk
+					qg(4500, qh(27418, {	-- Challenge Overlord Mok'Morokk
 						i(57846),
 						i(57847),
 						i(57850),
 						i(131675),
 						i(156999),	-- Mok'Morokk's Headcracker
 					})),
-					qg(23579, q(27411, { -- Challenge to the Black Dragonflight
+					qg(23579, q(27411, {	-- Challenge to the Black Dragonflight
 						i(33231),
 						i(57828),
 						i(33256),
 					})),
 --					qg(4791, qh(11213)),	-- Check Up on Tabetha
-					qg(23843, q(27190, {  -- Cleansing Witch Hill
+					qg(23843, q(27190, { 	-- Cleansing Witch Hill
 						i(33229),
 						i(33257),
 						i(33245),
 						i(131650),
 					})),
 --					qg(23568, qa(27426)),	-- Confirming the Suspicion
-					qg(23797, q(27347, {  -- Corrosion Prevention
+					qg(23797, q(27347, { 	-- Corrosion Prevention
 						i(33233),
 						i(33239),
 						i(33255),
@@ -202,7 +202,7 @@ _.Zones =
 					qg(5086, qa(27234)),	-- Defias in Dustwallow?
 					qg(23797, q(11208)),	-- Delivery for Drazzit
 --]]					
-					qg(23600, q(27340, { -- Direhorn Raiders
+					qg(23600, q(27340, {	-- Direhorn Raiders
 						i(33240),
 						i(33261),
 						i(57831),
@@ -213,12 +213,12 @@ _.Zones =
 					qg(6546, q(11211)),	-- Help for Mudsprocket
 					qg(4791, qh(11215)),	-- Help Mudsprocket
 --]]					
-					qg(4792, q(27191, {  -- Hungry as an Ogre!
+					qg(4792, q(27191, { 	-- Hungry as an Ogre!
 						i(9518),
 						i(9519),
 						i(131651),
 					})),
-					qg(4501, qh(27414, { -- Identifying the Brood
+					qg(4501, qh(27414, {	-- Identifying the Brood
 						i(57833),
 						i(57838),
 						i(57839),
@@ -230,13 +230,13 @@ _.Zones =
 					qg(23896, qa(27219)),	-- Is it Real?
 					qg(23569, qa(27238)),	-- Jaina Must Know
 --]]					
-					qg(4792, q(27186, {  -- Jarl Needs a Blade
+					qg(4792, q(27186, { 	-- Jarl Needs a Blade
 						i(5016),
 						i(57835),
 						i(131649),
 					})),
 --					qg(4792, q(27184)),	-- Jarl Needs Eyes
-					qg(6546, qh(27297, { -- Justice Dispensed
+					qg(6546, qh(27297, {	-- Justice Dispensed
 						i(33271),
 						i(57829),
 						i(156976),	-- Staff of Memory 
@@ -247,20 +247,20 @@ _.Zones =
 					qg(4944, qa(27264)),	-- Lieutenant Paval Reethe
 					qg(21042, qa(27263)),	-- Lieutenant Paval Reethe
 --]]					
-					qg(4792, q(27183, {  -- Marsh Frog Legs
+					qg(4792, q(27183, { 	-- Marsh Frog Legs
 						i(57834),
 						i(57845),
 						i(131648),
 					})),
 --					qg(23951, qa(27248)),	-- Mission to Mudsprocket
-					qg(4926, qh(27294, { -- More than Coincidence
+					qg(4926, qh(27294, {	-- More than Coincidence
 						i(57852),
 					})),
 --[[					
 					qg(4794, qa(1204)),	-- Mudrock Soup and Bugs
 					qp129(qg(12919, q(13826))),	-- Nat Pagle, Angler Extreme
 --]]					
-					qp129(qg(12919, q(6607, {   -- Nat Pagle, Angler Extreme
+					qp129(qg(12919, q(6607, {  	-- Nat Pagle, Angler Extreme
 						i(45858)	-- Nat's Lucky Fishing Pole
 					}))),
 --[[					
@@ -268,12 +268,12 @@ _.Zones =
 					qg(39697, qh(25292)),	-- Next of Kin
 					qg(12919, qa(27221)),	-- Oh, It's Real
 --]]					
-					qg(4500, qh(27424, { -- Overlord Mok'Morokk's Concern
+					qg(4500, qh(27424, {	-- Overlord Mok'Morokk's Concern
 						i(57848),
 						i(57854),
 						i(131676),
 					})),
-					qg(4944, qa(27291, { -- Peace at Last
+					qg(4944, qa(27291, {	-- Peace at Last
 						i(33271),
 						i(57829),
 						i(156976),	-- Staff of Memory 
@@ -283,7 +283,7 @@ _.Zones =
 					qg(4968, qa(27240)),	-- Proof of Treachery
 					qg(23566, qa(27211)),	-- Propaganda War
 --]]					
-					qg(4983, qh(27261, { -- Questioning Reethe
+					qg(4983, qh(27261, {	-- Questioning Reethe
 						i(6797),
 						i(6798),
 					})),
@@ -292,7 +292,7 @@ _.Zones =
 					qg(6546, qh(27296)),	-- Raze Direhorn Post!
 					qg(6546, qa(27429)),	-- Raze Direhorn Post!
 --]]					
-					qg(23569, qa(27237, { -- Recover the Cargo!
+					qg(23569, qa(27237, {	-- Recover the Cargo!
 						i(33267),
 						i(33259),
 						i(156977),	-- Serrated Gladius 
@@ -308,10 +308,10 @@ _.Zones =
 					qg(4880, qa( 1222)),	-- Stinky's Escape
 					qg(4880, qh( 1270)),	-- Stinky's Escape
 --]]					
-					qg(4968, qa(27239, { -- Survey Alcaz Island
-						i(57851),
-						i(33250),
-						i(131253),
+					qg(4968, qa(27239, {	-- Survey Alcaz Island
+						i( 57851),	-- Swamp Gas Gauntlets
+						i( 33250),	-- Archer's Wristguard
+						i(131253),	-- Archer's Chain Bracer
 					})),
 --[[					
 					o(187273, {	-- Suspicious Hoofprint
@@ -321,7 +321,7 @@ _.Zones =
 					qg(23568, qa(27428)),	-- Tabetha's Assistance
 					qg(4921, qa(11212)),	-- Tabetha's Farm
 --]]					
-					qg(23905, qa(27222, { -- Take Down Tethyr!
+					qg(23905, qa(27222, {	-- Take Down Tethyr!
 						i(57842),
 						i(33247),
 						i(57849),
@@ -342,7 +342,7 @@ _.Zones =
 					qg(4500, qh(27417)),	-- The Brood of Onyxia
 					qg(4501, qh(27416)),	-- The Brood of Onyxia
 --]]					
-					qg(4501, qh(27415, { -- The Brood of Onyxia
+					qg(4501, qh(27415, {	-- The Brood of Onyxia
 						i(57836),
 						i(131674),
 					})),
@@ -350,7 +350,7 @@ _.Zones =
 					qg(5089, qa(27288)),	-- The Deserters
 					qg(4944, qa(27287)),	-- The Deserters
 --]]					
-					qg(23566, qa(27213, { -- The End of the Deserters
+					qg(23566, qa(27213, {	-- The End of the Deserters
 						i(57832),
 						i(33249),
 						i(57853),
@@ -368,7 +368,7 @@ _.Zones =
 						qa(27246),	-- The Orc Report
 					}),
 --]]					
-					qg(23601, q(27339, { -- The Reagent Thief
+					qg(23601, q(27339, {	-- The Reagent Thief
 						i(33260),
 						i(33273),
 						i(33244),
@@ -396,18 +396,22 @@ _.Zones =
 					qg(23566, qa(27210)),	-- Traitors Among Us
 					qg(12939, qa( 6624)),	-- Triage
 --]]					
-					qg(17095, qh(9437, { -- Twilight of the Dawn Runner
-						i(33250),
-						i(57851),
-						i(131253),
+					qg(17095, qh(9437, {	-- Twilight of the Dawn Runner
+						i( 33250),	-- Archer's Wristguard
+						i( 57851),	-- Swamp Gas Gauntlets
+						i(131253),	-- Archer's Chain Bracer
+							nld({	-- Legacy
+								un(34, i(33269)),	-- Bejeweled Dagger
+								un(34, i(33252)),	-- Gleaming Scale Breastplate
+							}),
 					})),
-					qg(23723, qa(27243, { -- Unleash the Raptors
+					qg(23723, qa(27243, {	-- Unleash the Raptors
 						i(33266),
 						i(33248),
 						i(131662),
 					})),
 					o(186426, {	-- Wanted Poster
-						q(27412, { -- WANTED: Goreclaw the Ravenous
+						q(27412, {	-- WANTED: Goreclaw the Ravenous
 							i(33258),
 							i(33242),
 							i(131671),
@@ -1163,6 +1167,10 @@ _.Zones =
 								un(34, i(33230)),	-- Leggings of the Long Road
 								un(34, i(33243)),	-- Skirmisher's Cover
 								un(34, i(33251)),	-- Steel-banded Hauberk
+							}),
+							qa(11223, {	-- Return to Jaina
+								un(34, i(33269)),	-- Bejeweled Dagger
+								un(34, i(33252)),	-- Gleaming Scale Breastplate
 							}),
 							qa(11198, {	-- Take Down Tethyr!
 								un(34, i(33228)),	-- Crimson Tunic

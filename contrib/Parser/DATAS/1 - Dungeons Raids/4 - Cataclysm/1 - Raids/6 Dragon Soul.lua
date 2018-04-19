@@ -221,7 +221,7 @@ _.Instances =
 						},
 						["description"] = "The droprates are really really low. Spend the time you would otherwise waste in here complaining about it on the forums instead.\n\n - Crieve",
 					}),
-					d(1, {	-- Normal
+					d(4, {	-- Normal
 						["ignoreBonus"] = true,
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
