@@ -926,7 +926,7 @@ _.Zones =
 										i(121279),	-- Wracksoul Helm
 										i(146761),	-- Xorothian Helmet
 									},
-									["bonusID"] = 3573, -- Relinquished
+									["modID"] = 43,
 								}),
 								i(153215, { -- Relinquished Spaulders
 									i(152777), -- Azurelight Sage's Mantle
@@ -978,12 +978,12 @@ _.Zones =
 									i(152753), -- Praetorium Guard's Sabatons
 								}),
 							},
-							["ids"] = { 3573 },
 						}),
 					}),
 				},
 				["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
 				["modelScale"] = 5,
+				["maps"] = { 1171, 1135, 1170 },
 			}),
 		}),
 	}),
