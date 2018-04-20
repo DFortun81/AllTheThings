@@ -13,15 +13,18 @@ _.GearSets =
 			i(14616), -- Feet
 		}),
 		gs(1470, { -- Burnished Triumvirate Armor
-			i(151336), -- Head
-			i(151319), -- Shoulder
-			i(151306), -- Cloak
-			i(151313), -- Chest
-			i(151315), -- Wrist
-			i(151318), -- Hands
-			i(151316), -- Waist
-			i(151314), -- Legs
-			i(151317), -- Feet
+			["groups"] = {
+				i(151336), -- Voidlashed Hood
+				i(151319), -- Twilight's Edge Spaulders
+				i(151306), -- Dignitary's Traveling Cloak
+				i(151313), -- Vest of the Void's Embrace
+				i(151315), -- Bracers of Dark Binding
+				i(151318), -- Gloves of the Dark Shroud
+				i(151316), -- Cinch of the Umbral Lasher
+				i(151314), -- Shifting Stalker Hide Pants
+				i(151317), -- Footpads of Seeping Dread
+			},
+			["classes"] = { 11, 4, 10, 12 }, -- Druid/Rogue/Monk/DH
 		}),
 		n(-3229, { -- Cadaverous Garb [Unobtainable]
 			i(14637), -- Chest
@@ -69,14 +72,17 @@ _.GearSets =
 			}),
 		}),	
 		gs(1457, { -- Chronoscryer's Finery
-			i(151672), -- Head
-			i(151682), -- Shoulders
-			i(151679), -- Chest
-			i(151688), -- Bracers
-			i(151669), -- Hands
-			i(151685), -- Belt
-			i(151676), -- Legs
-			i(151664), -- Feet
+			["groups"] = {
+				i(151672), -- Head
+				i(151682), -- Shoulders
+				i(151679), -- Chest
+				i(151688), -- Bracers
+				i(151669), -- Hands
+				i(151685), -- Belt
+				i(151676), -- Legs
+				i(151664), -- Feet
+			},
+			["classes"] = { 5, 8 , 9 }, -- Priest/Mage/Lock
 		}),
 		n(-3231, { -- Deathbone Guardian [Unobtainable]
 			i(14624), -- Chest
@@ -120,14 +126,17 @@ _.GearSets =
 			["icon"] = "Interface\\Icons\\inv_shirt_16",
 		}),
 		gs(1458, { -- Epoch Sentinel's Mail
-			i(151673), -- Head
-			i(151683), -- Shoulders
-			i(151661), -- Chest
-			i(151690), -- Bracers
-			i(151670), -- Hands
-			i(151686), -- Belt
-			i(151677), -- Legs
-			i(151665), -- Feet
+			["groups"] = {
+				i(151673), -- Head
+				i(151683), -- Shoulders
+				i(151661), -- Chest
+				i(151690), -- Bracers
+				i(151670), -- Hands
+				i(151686), -- Belt
+				i(151677), -- Legs
+				i(151665), -- Feet
+			},
+			["classes"] = { 3, 7 }, -- Hunter/Shaman
 		}),
 		n(-3226, { -- Ironweave Battlesuit [Unobtainable]
 			i(22302), -- Helm
@@ -140,15 +149,18 @@ _.GearSets =
 			i(22311), -- Feet
 		}),
 		gs(1471, { -- Light-Woven Triumvirate Regalia
-			i(151337), -- Head
-			i(151299), -- Shoulder
-			i(151635), -- Cloak
-			i(151303), -- Chest
-			i(151305), -- Wrist
-			i(151300), -- Hands
-			i(151302), -- Waist
-			i(151304), -- Legs
-			i(151301), -- Feet
+			["groups"] = {
+				i(151337), -- Head
+				i(151299), -- Shoulder
+				i(151635), -- Cloak
+				i(151303), -- Chest
+				i(151305), -- Wrist
+				i(151300), -- Hands
+				i(151302), -- Waist
+				i(151304), -- Legs
+				i(151301), -- Feet
+			},
+			["classes"] = { 5, 8 , 9 }, -- Priest/Mage/Lock
 		}),
 		n(-3228, { -- Necropile Raiment [Unobtainable]
 			i(14633), -- Shoulders
@@ -158,25 +170,31 @@ _.GearSets =
 			i(14631), -- Feet
 		}),
 		gs(1459, { -- Riftscarred Vestments
-			i(151674), -- Head
-			i(151680), -- Shoulders
-			i(151662), -- Chest
-			i(151691), -- Bracers
-			i(151667), -- Hands
-			i(151687), -- Belt
-			i(151678), -- Legs
-			i(151666), -- Feet
+			["groups"] = {
+				i(151674), -- Head
+				i(151680), -- Shoulders
+				i(151662), -- Chest
+				i(151691), -- Bracers
+				i(151667), -- Hands
+				i(151687), -- Belt
+				i(151678), -- Legs
+				i(151666), -- Feet
+			},
+			["classes"] = { 11, 4, 10, 12 }, -- Druid/Rogue/Monk/DH
 		}),
 		gs(1469, { -- Sterling Triumvirate Chainmail
-			i(151324), -- Head
-			i(151323), -- Shoulder
-			i(151634), -- Cloak
-			i(151325), -- Chest
-			i(151321), -- Wrist
-			i(151322), -- Hands
-			i(151326), -- Waist
-			i(151338), -- Legs
-			i(151320), -- Feet
+			["groups"] = {
+				i(151324), -- Head
+				i(151323), -- Shoulder
+				i(151634), -- Cloak
+				i(151325), -- Chest
+				i(151321), -- Wrist
+				i(151322), -- Hands
+				i(151326), -- Waist
+				i(151338), -- Legs
+				i(151320), -- Feet
+			},
+			["classes"] = { 3, 7 }, -- Hunter/Shaman
 		}),
 		n(-3227, { -- The Postmaster
 			i(13390), -- Helm
@@ -195,25 +213,31 @@ _.GearSets =
 			["icon"] = "Interface\\Icons\\inv_shirt_16",
 		}),
 		gs(1456, { -- Timewarden's Plate
-			i(151671), -- Head
-			i(151681), -- Shoulders
-			i(151660), -- Chest
-			i(151689), -- Bracers
-			i(151668), -- Hands
-			i(151684), -- Belt
-			i(151675), -- Legs
-			i(151663), -- Feet
+			["groups"] = {
+				i(151671), -- Head
+				i(151681), -- Shoulders
+				i(151660), -- Chest
+				i(151689), -- Bracers
+				i(151668), -- Hands
+				i(151684), -- Belt
+				i(151675), -- Legs
+				i(151663), -- Feet
+			},
+			["classes"] = { 2, 1, 6 }, -- Paladin/Warrior/DK
 		}),
 		gs(1468, { -- Venerated Triumvirate Battleplate
-			i(151333), -- Head
-			i(151331), -- Shoulder
-			i(151298), -- Cloak
-			i(151329), -- Chest
-			i(151328), -- Wrist
-			i(151332), -- Hands
-			i(151327), -- Waist
-			i(151339), -- Legs
-			i(151330), -- Feet
+			["groups"] = {
+				i(151333), -- Head
+				i(151331), -- Shoulder
+				i(151298), -- Cloak
+				i(151329), -- Chest
+				i(151328), -- Wrist
+				i(151332), -- Hands
+				i(151327), -- Waist
+				i(151339), -- Legs
+				i(151330), -- Feet
+			},
+			["classes"] = { 2, 1, 6 }, -- Paladin/Warrior/DK
 		}),
 	}),
 };
