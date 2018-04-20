@@ -435,16 +435,16 @@ _.Instances =
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
 							n(0, {			-- Zone Drop
-								i(86993),	-- Darting Damselfly Cuffs
-								i(86994),	-- Gleaming Moth Cuffs
-								i(86992),	-- Shining Cicada Bracers
-								i(86996),	-- Pearlescent Butterfly Wristbands
-								i(86995),	-- Smooth Beetle Wristbands
-								i(86997),	-- Jagged Hornet Bracers
-								i(86998),	-- Luminescent Firefly Wristguards
-								i(86999),	-- Inlaid Cricket Bracers
-								i(87000),	-- Plated Locust Bracers
-								i(87001),	-- Serrated Wasp Bracers
+								un(7, i(86993)),	-- Darting Damselfly Cuffs
+								un(7, i(86994)),	-- Gleaming Moth Cuffs
+								un(7, i(86992)),	-- Shining Cicada Bracers
+								un(7, i(86996)),	-- Pearlescent Butterfly Wristbands
+								un(7, i(86995)),	-- Smooth Beetle Wristbands
+								un(7, i(86997)),	-- Jagged Hornet Bracers
+								un(7, i(86998)),	-- Luminescent Firefly Wristguards
+								un(7, i(86999)),	-- Inlaid Cricket Bracers
+								un(7, i(87000)),	-- Plated Locust Bracers
+								un(7, i(87001)),	-- Serrated Wasp Bracers
 							}),
 							PATTERNS_ILVL_496,							
 							cr(62980, e(745, {	-- Imperial Vizier Zor'lok
