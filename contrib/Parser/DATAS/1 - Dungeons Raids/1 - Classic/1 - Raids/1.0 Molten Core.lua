@@ -311,9 +311,13 @@ _.Instances =
 						}),						
 					}),
 					cr(12118, e(1519, { -- Lucifron
+						i(18265),	-- Pattern: Flarecore Wraps
+						i(18292),	-- Schematic: Core Marksman Rifle
+						i(18291),	-- Schematic: Force Reactive Disc
 						i(18878),	-- Sorcerous Dagger
 						i(17077),	-- Crimson Shocker
 						i(18870),	-- Helm of the Lifegiver
+						i(17109),	-- Choker of Enlightenment
 						i(19145),	-- Robe of Volatle Power
 						i(19146),	-- Wristguards of Stability
 						i(16805),	-- Felheart Gloves (Warlock)
@@ -325,17 +329,13 @@ _.Instances =
 						i(16829),	-- Cenarion Boots (Druid)
 						i(16837),	-- Earthfury Boots (Shaman)
 						i(16859),	-- Lawbringer Boots (Paladin)
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),						
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
+						i(18879),	-- Heavy Dark Iron Ring
+						i(19147),	-- Ring of Spell Power
 					})),
 					cr(11982, e(1520, { -- Magmadar
+						i(18265), 	-- Pattern: Flarecore Wraps
+						i(18292), 	-- Schematic: Core Marksman Rifle
+						i(18291), 	-- Schematic: Force Reactive Disc
 						i(93034),	-- Blazing Rune (Pet)
 						i(17073),	-- Earthshaker
 						i(18822),	-- Obsidian Edged Blade
@@ -343,6 +343,7 @@ _.Instances =
 						i(18203),	-- Eskhandar's Right Claw
 						i(17069),	-- Striker's Mark
 						i(19142),	-- Fire Runed Grimoire
+						i(17065),	-- Medallion of Steadfast Might
 						i(18829),	-- Deep Earth Spaulders
 						i(18823),	-- Aged Core Leather Gloves
 						i(19143),	-- Flameguard Gauntlets
@@ -359,17 +360,13 @@ _.Instances =
 						i(16814),	-- Pants of Prophecy (Priest)
 						i(18824),	-- Magma Tempered Boots
 						i(19144),	-- Sabatons of the Flamewalker
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
+						i(18821),	-- Quick Strike Ring
+						i(18820),	-- Talisman of Ephemeral Power
 					})),
 					cr(12259, e(1521, { -- Gehennas
+						i(18265), 	-- Pattern: Flarecore Wraps
+						i(18292), 	-- Schematic: Core Marksman Rifle
+						i(18291), 	-- Schematic: Force Reactive Disc
 						i(18878),	-- Sorcerous Dagger
 						i(17077),	-- Crimson Shocker
 						i(18870),	-- Helm of the Lifegiver
@@ -384,17 +381,13 @@ _.Instances =
 						i(18875),	-- Salamander Scale Pants
 						i(16849),	-- Giantstalker's Boots (Hunter)
 						i(16862),	-- Sabatons of Might (Warrior)
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
+						i(18879),	-- Heavy Dark Iron Ring
+						i(19147),	-- Ring of Spell Power
 					})),
 					cr(12057, e(1522, { -- Garr
+						i(18265), 	-- Pattern: Flarecore Wraps
+						i(18292), 	-- Schematic: Core Marksman Rifle
+						i(18291), 	-- Schematic: Force Reactive Disc
 						i(18564, {	-- Bindings of the Windseeker (Right)
 							un(15, i(19019)),	-- Thunderfury, Blessed Blade of the Windseeker
 						}),
@@ -420,17 +413,13 @@ _.Instances =
 						i(18861),	-- Flamewaker Legplates
 						i(18824),	-- Magma Tempered Boots
 						i(19144),	-- Sabatons of the Flamewalker
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
+						i(18821),	-- Quick Strike Ring
+						i(18820),	-- Talisman of Ephemeral Power
 					})),
 					cr(12264, e(1523, { -- Shazzrah
+						i(18265), 	-- Pattern: Flarecore Wraps
+						i(18292), 	-- Schematic: Core Marksman Rifle
+						i(18291), 	-- Schematic: Force Reactive Disc
 						i(18878),	-- Sorcerous Dagger
 						i(17077),	-- Crimson Shocker
 						i(18870),	-- Helm of the Lifegiver
@@ -445,17 +434,13 @@ _.Instances =
 						i(16811),	-- Boots of Prophecy (Priest)
 						i(16803),	-- Felheart Slippers (Warlock)
 						i(16824),	-- Nightslayer Boots (Rogue)
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
+						i(18879),	-- Heavy Dark Iron Ring
+						i(19147),	-- Ring of Spell Power
 					})),
 					cr(12056, e(1524, { -- Baron Geddon
+						i(18265), 	-- Pattern: Flarecore Wraps
+						i(18292), 	-- Schematic: Core Marksman Rifle
+						i(18291), 	-- Schematic: Force Reactive Disc
 						i(18563, {	-- Bindings of the Windseeker (Left)
 							un(15, i(19019)),	-- Thunderfury, Blessed Blade of the Windseeker
 						}),
@@ -473,21 +458,14 @@ _.Instances =
 						i(18861),	-- Flamewaker Legplates
 						i(18824),	-- Magma Tempered Boots
 						i(19144),	-- Sabatons of the Flamewalker
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
+						i(18821),	-- Quick Strike Ring
+						i(17110),	-- Seal of the Archmagus
+						i(18820),	-- Talisman of Ephemeral Power
 					})),
 					cr(12098, e(1525, { -- Sulfuron Harbinger
 						i(93033),	-- Mark of Flame (Pet)
-						i(17074, {	-- Shadowstrike
-							i(17223),	-- Thunderstrike
-						}),
+						i(17074),	-- Shadowstrike
+						i(17223),	-- Thunderstrike
 						i(18878),	-- Sorcerous Dagger
 						i(17077),	-- Crimson Shocker
 						i(18870),	-- Helm of the Lifegiver
@@ -500,9 +478,15 @@ _.Instances =
 						i(18861),	-- Flamewaker Legplates
 						i(18872),	-- Manastorm Leggings
 						i(18875),	-- Salamander Scale Pants
+						i(18879),	-- Heavy Dark Iron Ring
+						i(19147),	-- Ring of Spell Power
 					})),
 					cr(11988, e(1526, { -- Golemagg the Incinerator
+						i(18265), 	-- Pattern: Flarecore Wraps
+						i(18292), 	-- Schematic: Core Marksman Rifle
+						i(18291), 	-- Schematic: Force Reactive Disc
 						i(93035),	-- Core of Hardened Ash (Pet)
+						i(17203),	-- Sulfuron Ingot
 						i(18822),	-- Obsidian Edged Blade 
 						i(18842),	-- Staff of Dominance
 						i(17103),	-- Azuresong Mageblade
@@ -524,15 +508,8 @@ _.Instances =
 						i(18861),	-- Flamewaker Legplates
 						i(18824),	-- Magma Tempered Boots
 						i(19144),	-- Sabatons of the Flamewalker
-						i(18265, {	-- Pattern: Flarecore Wraps
-							i(18263),	-- Flarecore Wraps
-						}),
-						i(18292, {	-- Schematic: Core Marksman Rifle
-							i(18282),	-- Core Marksman Rifle
-						}),
-						i(18291, {	-- Schematic: Force Reactive Disc
-							i(18168),	-- Force Reactive Disc
-						}),	
+						i(18821),	-- Quick Strike Ring
+						i(18820),	-- Talisman of Ephemeral Power
 					})),
 					cr(12018, e(1527, { -- Majordomo Executus
 						i(18803),	-- Finkle's Lava Dredger
@@ -544,6 +521,7 @@ _.Instances =
 						i(18808),	-- Gloves of the Hypnotic Flame
 						i(18809),	-- Sash of Whispered Secrets
 						i(18806),	-- Core Forged Greaves
+						i(19140),	-- Cauterizing Band
 					})),
 					cr(11502, e(1528, { -- Ragnaros
 						ach(8820, { -- 10th Anniversary
@@ -570,6 +548,7 @@ _.Instances =
 						i(18816),	-- Perdition's Blade
 						i(17106),	-- Malistar's Defender
 						i(18817),	-- Crown of Destruction
+						i(18814),	-- Choker of the Fire Lord
 						i(17102),	-- Cloak of the Shrouded Mists
 						i(17107),	-- Dragon Blood's Cloak
 						i(19137),	-- Onslaught Girdle
@@ -582,6 +561,10 @@ _.Instances =
 						i(16930),	-- Nemesis Leggings (Warlock)
 						i(16915),	-- Netherwind Pants (Mage)
 						i(16901),	-- Stormrage Legguards (Druid)
+						i(17063),	-- Band of Accuria
+						i(19138),	-- Band of Sulfuras
+						i(18815),	-- Essence of the Pure Flame
+						i(17082),	-- Shard of the Flame
 					})),
 				},
 				["isRaid"] = true,
