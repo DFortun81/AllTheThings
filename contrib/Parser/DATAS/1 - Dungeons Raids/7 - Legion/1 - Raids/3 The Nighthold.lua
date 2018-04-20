@@ -175,6 +175,7 @@ _.Instances =
 											["description"] = "|cff66ccffNeed to click on Eye of Aman'thul to complete quest after Gul'dan is dead.|r"
 										}),
 									}),
+									i(119211), -- Golden Hearthstone Card: Lord Jaraxxus
 									i(140917),
 									i(140913),
 									i(140919),
@@ -356,6 +357,7 @@ _.Instances =
 										["description"] = "|cff66ccffNeed to click on Eye of Aman'thul to complete quest after Gul'dan is dead.|r"
 									}),
 								}),
+								i(119211), -- Golden Hearthstone Card: Lord Jaraxxus
 								i(140913),
 								i(138358),
 								i(140919),
@@ -537,6 +539,7 @@ _.Instances =
 										["description"] = "|cff66ccffNeed to click on Eye of Aman'thul to complete quest after Gul'dan is dead.|r"
 									}),
 								}),
+								i(119211), -- Golden Hearthstone Card: Lord Jaraxxus
 								i(140913),
 								i(138358),
 								i(140919),
@@ -718,6 +721,7 @@ _.Instances =
 										["description"] = "|cff66ccffNeed to click on Eye of Aman'thul to complete quest after Gul'dan is dead.|r"
 									}),
 								}),
+								i(119211), -- Golden Hearthstone Card: Lord Jaraxxus
 								i(140913),
 								i(138358),
 								i(140919),
