@@ -9,6 +9,9 @@ _.Instances =
 			inst(742, { 	-- Blackwing Lair
 				["groups"] = {
 					n(0, {		-- Zone Drop
+						n(13996, {	-- Blackwing Technician
+							dr(7, i(18562)),	-- Elementium Ingot
+						}),
 						i(19436),	-- Cloak of Draconic Might
 						i(19437),	-- Boots of Pure Thought
 						i(19438),	-- Ringo's Blizzard Boots
@@ -17,6 +20,7 @@ _.Instances =
 						i(19354),	-- Draconic Avenger
 						i(19358),	-- Draconic Maul
 						i(19435),	-- Essence Gatherer
+						i(19434),	-- Band of Dark Dominion
 					}),
 					e(1529, { -- Razoregore the Untamed
 						["groups"] = {
@@ -34,6 +38,8 @@ _.Instances =
 							i(16918),	-- Netherwind Bindings
 							i(16904),	-- Stormrage Bracers
 							i(19369),	-- Gloves of Rapid Evolution
+							i(19336),	-- Arcane Infused Gem
+							i(19337),	-- The Black Book
 						},
 						["creatureID"] = 12435,
 					}),
@@ -42,6 +48,7 @@ _.Instances =
 							i(19346),	-- Dragonfang Blade
 							i(19348),	-- Red Dragonscale Protector
 							i(19372),	-- Helm of Endless Rage
+							i(19371),	-- Pendant of the Fallen Dragon
 							i(16944),	-- Belt of Ten Storms
 							i(16925),	-- Belt of Transcendence
 							i(16910),	-- Bloodfang Belt
@@ -51,6 +58,8 @@ _.Instances =
 							i(16818),	-- Netherwind Belt
 							i(16903),	-- Stormrage Belt
 							i(16960),	-- Waistband of Wrath
+							i(19339),	-- Mind Quickening Gem
+							i(19340),	-- Rune of Metamorphosis
 						},
 						["creatureID"] = 13020,
 					}),
@@ -70,6 +79,8 @@ _.Instances =
 							i(16912),	-- Netherwind Boots
 							i(16965),	-- Sabatons of Wrath
 							i(16898),	-- Stormrage Boots
+							i(19341),	-- Lifegiving Gem
+							i(19342),	-- Venomous Totem
 						},
 						["creatureID"] = 12017,
 					}),
@@ -94,11 +105,16 @@ _.Instances =
 							i(19396),	-- Taut Dragonhide Belt
 							i(19402),	-- Legguards of the Fallen Crusader
 							i(19401),	-- Primalist's Linked Legguards
+							i(19397),	-- Ring of Blackrock
+							i(19344),	-- Natural Alignment Crystal
+							i(19395),	-- Rejuvenating Gem
+							i(19343),	-- Scrolls of Blinding Light
 						},
 						["creatureID"] = 11983,
 					}),
 					n(14401, {	-- Master Elemental Shaper Krixix
 						i(44956),	-- Goblin's Guide to Elementium
+						dr(7, i(18562)),	-- Elementium Ingot
 					}),
 					e(1533, { -- Ebonroc
 						["groups"] = {
@@ -118,6 +134,11 @@ _.Instances =
 							i(16913),	-- Netherwind Gloves
 							i(16899),	-- Stormrage Handguards
 							i(19396),	-- Taut Dragonhide Belt
+							i(19403),	-- Band of Forced Concentration
+							i(19397),	-- Ring of Blackrock
+							i(19345),	-- Aegis of Preservation
+							i(19406),	-- Drake Fang Talisman
+							i(19395),	-- Rejuvenating Gem
 						},
 						["creatureID"] = 14601,
 					}),
@@ -140,6 +161,10 @@ _.Instances =
 							i(16899),	-- Stormrage Handguards
 							i(19396),	-- Taut Dragonhide Belt
 							i(19433),	-- Emberweave Leggings
+							i(19432),	-- Circle of Applied Force
+							i(19397),	-- Ring of Blackrock
+							i(19395),	-- Rejuvenating Gem
+							i(19431),	-- Styleen's Impeding Scarab
 						},
 						["creatureID"] = 11981,
 					}),
@@ -174,19 +199,20 @@ _.Instances =
 					e(1536, { -- Nefarian
 						["groups"] = {
 							i(19003, {	-- Head of Nefarian
-								qa(7781, {	-- The Lord of Blackrock
-									qa(7782, {	-- THe Lord of Blackrock
-										i(19366), -- Master Dragonslayer's Orb
-									}),
-								}),
+								qa(7781), 	-- The Lord of Blackrock
+								sq(7781, qg(107574, qa(7782, {	-- The Lord of Blackrock
+									i(19366), 	-- Master Dragonslayer's Orb
+									i(19383),	-- Master Dragonslayer's Medallion
+									i(19384),	-- Master Dragonslayer's Ring
+								}))),
 							}),
-
 							i(19002, {	-- Head of Nefarian
-								qh(7783, {	-- The Lord of Blackrock
-									qh(7784, {	-- The Lord of Blackrock
-										i(19366), -- Master Dragonslayer's Orb
-									}),
-								}),
+								qh(7783), 	-- The Lord of Blackrock
+								sq(7783, qg(133520, qh(7784, {	-- The Lord of Blackrock
+									i(19366), 	-- Master Dragonslayer's Orb
+									i(19383),	-- Master Dragonslayer's Medallion
+									i(19384),	-- Master Dragonslayer's Ring
+								}))),
 							}),
 							i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 							i(19356),	-- Staff of the Shadow Flame
@@ -202,6 +228,7 @@ _.Instances =
 							i(16929),	-- Nemesis Skullcap
 							i(16914),	-- Netherwind Crown
 							i(16900),	-- Stormrage Cover
+							i(19377),	-- Prestor's Talisman of Connivery
 							i(19378),	-- Cloak of the Brood Lord
 							i(16905),	-- Bloodfang Chestpiece
 							i(16950),	-- Breastplate of Ten Storms
@@ -214,6 +241,9 @@ _.Instances =
 							i(16897),	-- Stormrage Chestguard
 							i(19380),	-- Therazane's Link
 							i(19381),	-- Boots of the Shadow Flame
+							i(19376),	-- Archimtiros' Ring of Reckoning
+							i(19382),	-- Pure Elementium Band
+							i(19379),	-- Neltharion's Tear
 						},
 						["creatureID"] = 11583,
 					})
