@@ -1846,7 +1846,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
 						i(83080),	-- Huojin Tabard
 					}),
-					n(64419, { -- Doris Volanthius <Vicious Gladiator>
+					n(54657, { -- Doris Volanthius <Vicious Gladiator>
 						i(146641, { --  Arsenal: Vicious Gladiator's Weapons
 							i(61360),	-- Vicious Gladiator's Barrier
 							i(61351),	-- Vicious Gladiator's Baton of Light
