@@ -817,33 +817,47 @@ local function GetCachedSearchResults(search, method, ...)
 				cache[2] = group;
 				if GetDataMember("ShowSources") then
 					local temp = {};
+					local unfiltered = {};
 					local count = 0;
 					local abbrevs = L("ABBREVIATIONS");
 					for i,j in ipairs(group) do
-						if j.parent and not j.parent.hideText and j.parent.parent and (GetDataMember("ShowCompleteSourceLocations") or (not j.collected and not j.parent.saved))
-							and app.RecursiveClassAndRaceFilter(j)
-							and (j.u or app.RecursiveUnobtainableFilter(j.parent)) then
-						
+						if j.parent and not j.parent.hideText and j.parent.parent 
+							and (GetDataMember("ShowCompleteSourceLocations") or (not j.collected and not j.parent.saved)) then
 							local text = BuildSourceText(j, 0, j.qgs);
-							--print(text .. tostring(j.parent.questID or 0) .. ", " .. tostring(j.parent.saved or 0));
 							for source,replacement in pairs(abbrevs) do
 								text = string.gsub(text, source,replacement);
 							end
-							tinsert(temp, text);
-							if not GetDataMember("ShowAllSources") then break; end
 							
-							count = count + 1;
-							if count > 9 then -- Shows 15 sources (Take # you want minus 1 and input)
-								count = #group - count;
-								if count > 1 then
-									tinsert(temp, "And " .. count .. " other sources...");
-									break;
+							if not app.RecursiveClassAndRaceFilter(j.parent) then
+								tinsert(unfiltered, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" .. text);
+							elseif not app.RecursiveUnobtainableFilter(j.parent) then
+								tinsert(unfiltered, "|TInterface\\FriendsFrame\\StatusIcon-DnD:0|t" .. text);
+							else
+								tinsert(temp, text);
+								count = count + 1;
+								if count > 9 then -- Shows 15 sources (Take # you want minus 1 and input)
+									count = #group - count;
+									if count > 1 then
+										tinsert(temp, "And " .. count .. " other sources...");
+										break;
+									end
+								else
+									if not GetDataMember("ShowAllSources") then break; end
 								end
 							end
 						end
 					end
+					if #temp < 1 or not GetDataMember("OnlyShowRelevantDatabaseLocations") then
+						for i,j in ipairs(unfiltered) do
+							if not contains(listing, j) then
+								tinsert(listing, i, j);
+							end
+						end
+					end
 					for i,j in ipairs(temp) do
-						tinsert(listing, i, j);
+						if not contains(listing, j) then
+							tinsert(listing, i, j);
+						end
 					end
 				end
 				if #group > 0 and group[1].u then
@@ -2092,7 +2106,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 						if s.total then
 							merged.total = merged.total + s.total;
 							merged.progress = merged.progress + s.progress;
-						elseif s.collectible and app.GroupFilter(s) then
+						elseif s.collectible and app.GroupRequirementsFilter(s) and app.GroupFilter(s) then
 							merged.total = merged.total + 1;
 							if s.collected then
 								merged.progress = merged.progress + 1;
@@ -2115,7 +2129,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 						if GetDataMember("ShowContents") then
 							local first = true;
 							for i,j in ipairs(group.g) do
-								if app.GroupRequirementsFilter(j) and app.GroupFilter(j) and not j.hideText then
+								if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
 									if j.g then
 										if not j.total or j.total < 2 then 
 											if j.collected then
@@ -4923,7 +4937,9 @@ local function CreateMiniListForGroup(group)
 		UpdateGroups(popout.data, popout.data.g, 1);
 		newItem.visible = true;
 	end
-	ExpandGroupsRecursively(popout.data, true);
+	if not popout.data.expanded then
+		ExpandGroupsRecursively(popout.data, true);
+	end
 	--ExportData(popout.data);
 	popout:Toggle(true);
 end
@@ -6427,6 +6443,7 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Tooltip Settings
+	GetDataMember("OnlyShowRelevantDatabaseLocations", true);
 	GetDataMember("OnlyShowRelevantSharedAppearances", false);
 	GetDataMember("ShowLootSpecializationRequirements", true);
 	GetDataMember("TreatIncompleteQuestsAsCollectible", false);
@@ -6649,7 +6666,10 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 						popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
 						BuildGroups(popout.data, popout.data.g);
 						UpdateGroups(popout.data, popout.data.g, 1);
-						ExpandGroupsRecursively(popout.data, true);
+						if not popout.data.expanded then
+							popout.data.expanded = true;
+							ExpandGroupsRecursively(popout.data, true);
+						end
 						popout:SetVisible(true);
 					end
 				end
