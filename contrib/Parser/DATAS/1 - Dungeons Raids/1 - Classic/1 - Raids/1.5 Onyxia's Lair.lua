@@ -88,19 +88,22 @@ _.Instances =
 											})),
 										},
 									},
-									un(2, i(17067)),	-- Ancient Cornerstone Grimoire
 									un(2, i(17068)),	-- Deathbringer
-									un(2, i(17078)),	-- Sapphiron Drape
 									un(2, i(17075)),	-- Vis'kag the Bloodletter
-									i(16963),	-- Helm of Wrath
-									i(16900),	-- Stormrage Cover
-									i(16921),	-- Halo of Transcendence
-									i(16955),	-- Judgment Crown
-									i(16939),	-- Dragonstalker's Helm
-									i(16947),	-- Helmet of Ten Storms
-									i(16914),	-- Netherwind Crown
+									un(2, i(17067)),	-- Ancient Cornerstone Grimoire
 									i(16908),	-- Bloodfang Hood
+									i(16939),	-- Dragonstalker's Helm
+									i(16921),	-- Halo of Transcendence
+									i(16963),	-- Helm of Wrath
+									i(16947),	-- Helmet of Ten Storms
+									i(16955),	-- Judgment Crown
 									i(16929),	-- Nemesis Skullcap
+									i(16914),	-- Netherwind Crown
+									i(16900),	-- Stormrage Cover
+									un(2, i(18205)),	-- Eskhandar's Collar
+									un(2, i(17078)),	-- Sapphiron Drape
+									un(2, i(18813)),	-- Ring of Binding
+									un(2, i(17064)),	-- Shard of the Scale
 								},
 								["u"] = 12,
 								["creatureID"] = 10184
@@ -160,13 +163,16 @@ _.Instances =
 										},
 									}),
 									i(49636),	-- Reins of the Onyxian Drake (Mount)
+									i(49295),	-- Enlarged Onyxia Hide Backpack (Bag)
+									i(49294),	-- Ashen Sack of Gems (Consumable)
 									i(49299),	-- Keen Obsidian Edged Blade
 									i(49302),	-- Reclaimed Shadowstrike
+									i(49301),	-- Reclaimed Thunderstrike
+									i(49437),	-- Rusted Gutgore Ripper
+									i(49304),	-- Sharpened Fang of the Mystics
 									i(49297),	-- Empowered Deathbringer
 									i(49303),	-- Gleaming Quel'Serrar
 									i(49298),	-- Glinting Azuresong Mageblade
-									i(49437),	-- Rusted Gutgore Ripper
-									i(49304),	-- Sharpened Fang of the Mystics
 									i(49296),	-- Singed Vis'kag the Bloodletter
 									i(49305),	-- Snub-Nose Blastershot Launcher
 									i(49308),	-- Antique Cornerstone Grimoire
@@ -189,7 +195,11 @@ _.Instances =
 									i(49327),	-- Stormrage Antlers (Druid)
 									i(49328),	-- Stormrage Helm (Druid)
 									i(49326),	-- Stormrage Hood (Druid)
+									i(49306),	-- Eskhandar's Choker
 									i(49307),	-- Fluttering Sapphiron Drape
+									i(49309),	-- Runed Ring of Binding
+									i(49463),	-- Purified Shard of the Flame
+									i(49310),	-- Purified Shard of the Scale
 								},
 								["creatureID"] = 10184
 							}),
@@ -248,7 +258,10 @@ _.Instances =
 										},
 									}),
 									i(49636),	-- Reins of the Onyxian Drake (Mount)
+									i(49295),	-- Enlarged Onyxia Hide Backpack (Bag)
+									i(49294),	-- Ashen Sack of Gems (Consumable)
 									i(49496),	-- Reinforced Shadowstrike
+									i(49497),	-- Reinforced Thunderstrike
 									i(49498),	-- Sharpened Obsidian Edged Blade
 									i(49495),	-- Burnished Quel'Serrar
 									i(49494),	-- Honed Fang of the Mystics
@@ -277,7 +290,11 @@ _.Instances =
 									i(49473),	-- Stormrage Cover (Druid)
 									i(49471),	-- Stormrage Coverlet (Druid)
 									i(49472),	-- Stormrage Crown (Druid)
+									i(49492),	-- Eskhandar's Links
 									i(49491),	-- Flowing Sapphiron Drape
+									i(49489),	-- Signified Ring of Binding
+									i(49464),	-- Shiny Shard of the Flame
+									i(49488),	-- Shiny Shard of the Scale
 								},
 								["creatureID"] = 10184
 							})
