@@ -101,9 +101,6 @@ _.Zones =
 					qh( 11037),	-- A Strange Vision
 					qh( 10085),	-- A Visit With The Ancestors
 					qh( 10044),	-- A Visit With the Greatmother
-					q(10669),	-- Against All Odds
-					q(10668),	-- Against the Illidari
-					q(10641),	-- Against the Legion
 					q(9804),	-- Agitated Spirits of Skysong
 					q(10640),	-- Altruis
 					q(10689),	-- Altruis
@@ -414,6 +411,45 @@ _.Zones =
 						i(25594),
 						i(25593),
 					}),
+					
+					
+					
+					
+--[[						["g"] = {
+							},
+							["qg"] = ,	-- 
+							["sourceQuests"] = {  },	-- 
+						}),
+--]]
+					
+					
+					
+					
+					faction(932, {	-- The Aldor
+						q(10641, {	-- Against the Legion
+							["g"] = {
+							},
+							["qg"] = 18417,	-- Altruis the Sufferer
+							["sourceQuests"] = { 10640 },	-- Altruis
+						}),
+						q(10668, {	-- Against the Illidari
+							["g"] = {
+							},
+							["qg"] = 18417,	-- Altruis the Sufferer
+							["sourceQuests"] = { 10640 },	-- Altruis
+						}),
+						q(10669, {	-- Against All Odds
+							["g"] = {
+							},
+							["qg"] = 18417,	-- Altruis the Sufferer
+							["sourceQuests"] = { 10640 },	-- Altruis
+						}),
+					}),
+					
+					
+					
+					
+					
 				}),
 				n(-16, { 	-- Rares	
 					n(17144, { -- Goretooth
@@ -423,6 +459,7 @@ _.Zones =
 						i(31189),
 					}), 
 					n(18684, { -- Bro'Gaz the Clanless -- Drops Neck
+						i(31194),	-- Gronn-Blessed Warbeads
 					}), 	
 					n(18683, { -- Voidhunter Yar
 						i(31197),
