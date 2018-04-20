@@ -240,6 +240,7 @@ AllTheThings.Locales.enUS = {
 		[110] = "Titles", 										-- Titles
 		[111] = "Glyphs", 										-- Glyphs
 		[112] = "Factions", 									-- Factions
+		[113] = "Bags", 										-- Bags
 
 		-- "Recipes"
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes
