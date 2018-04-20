@@ -205,7 +205,6 @@ _.Zones =
 					qh( 11854),	-- Honor the Flame
 					q(10109),	-- I Must Have Them!
 					q(9897),	-- I'm Saved!
-					q(10646),	-- Illidan's Pupil
 					qa( 11502),	-- In Defense of Halaa
 					qa( 11964),	-- Incense for the Summer Scorchlings
 					q(10010),	-- It's Just That Easy?
@@ -275,7 +274,6 @@ _.Zones =
 					q(10004),	-- Patience and Understanding
 					qh( 10479),	-- Proving Your Strength
 					qh(  9797),	-- Reinforcements for Garadar
-					q(10650),	-- Return to the Aldor
 					qh( 10170),	-- Return to the Greatmother
 					q(10691),	-- Return to the Scryers
 					q(9931),	-- Returning the Favor
@@ -312,7 +310,6 @@ _.Zones =
 					q(9857),	-- Talbuk Mastery
 					q(9858),	-- Talbuk Mastery
 					qh( 10082),	-- The Agitated Ancestors
-					q(10649),	-- The Book of Fel Names
 					q(9913),	-- The Consortium Needs You!
 					q(9861),	-- The Howling Wind
 					qh(  9888),	-- The Impotent Leader
@@ -443,6 +440,24 @@ _.Zones =
 							},
 							["qg"] = 18417,	-- Altruis the Sufferer
 							["sourceQuests"] = { 10640 },	-- Altruis
+						}),
+						q(10646, {	-- Illidan's Pupil
+							["g"] = {
+							},
+							["qg"] = 18417,	-- Altruis
+							["sourceQuests"] = { 10641, 10668, 10669 },	-- Against the Legion, Against the Illidari, & Against All Odds
+						}),
+						qdg(q(10649, {	-- The Book of Fel Names
+							["g"] = {
+							},
+							["qg"] = 18417,	-- Altruis
+							["sourceQuests"] = { 10646 },	-- Illidan's Pupil
+						})),
+						q(10650, {	-- Return to the Aldor
+							["g"] = {
+							},
+							["qg"] = 18417,	-- Altruis the Sufferer
+							["sourceQuests"] = { 10649 },	-- The Book of Fel Names
 						}),
 					}),
 					

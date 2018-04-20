@@ -13,15 +13,36 @@ _.Instances =
 							i(23518), 
 						}),
 					})),
-					n(20869, {
-						["groups"] = {	
-							i(21905, {
-								i(21866),
+					n(-17, {	-- Quests
+						q(29674),	-- Unbound Darkness
+						q(29675, {	-- Hey There Dalliah
+							["g"] = {
+							},
+							["sourceQuests"] = { 29674 },	-- Unbound Darkness
+						}),
+						q(29681, {	-- Maximum Security Breakout
+							["g"] = {
+							},
+							["sourceQuests"] = { 29675 },	-- Hey There Dalliah
+						}),
+						faction(932, {	-- The Aldor
+							q(10706, {	-- A Mysterious Portent
+								["g"] = {
+								},
+								["qg"] = 21962,	-- Udalo
+								["sourceQuests"] = { 10705 },	-- Seer Udalo
 							}),
-						},
-						["modelScale"] = 5,
+						}),
 					}),
-					d(1, {		-- Normal
+					n(  0, {	-- Zone Drop
+						n(20869, {	-- Arcatraz Sentinel
+							["groups"] = {	
+								i(21905),	-- Pattern: Arcanoweave Bracers
+							},
+							["modelScale"] = 5,
+						}),
+					}),
+					d(  1, {	-- Normal
 						cr(20870, e(548, {	-- Zereketh the Unbound
 							i(28415),		-- Hood of Oblivion (7.3.5 - Moved from Harbinger Skyriss)
 							i(28374),		-- Mana-Sphere Shoulderguards
@@ -68,7 +89,7 @@ _.Instances =
 							i(28406),		-- Sigil-Laced Boots
 						}))
 					}),
-					d(2, {		-- Heroic
+					d(  2, {	-- Heroic
 						["Lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
@@ -118,7 +139,7 @@ _.Instances =
 								i(28406),		-- Sigil-Laced Boots
 							}))
 						}}),
-					d(24, {		-- Timewalking
+					d( 24, {	-- Timewalking
 						["Lvl"] = 60,
 						["groups"] = {
 							cr(20870, e(548, {	-- Zereketh the Unbound

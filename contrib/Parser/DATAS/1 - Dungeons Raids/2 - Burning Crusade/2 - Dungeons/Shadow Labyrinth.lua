@@ -10,19 +10,25 @@ _.Instances =
 				["groups"] = {
 					d(1, {		-- Normal
 						["groups"] = {
-							n(-17, {	-- Quests 				
-								q(29644,{	-- Into the Heart of the Labyrinth
-									i(28179),	-- Shattrath Jumpers
-									i(28178),	-- Spymistress' Boots
-									i(28177),	-- Auchenai Boots
-									i(28176),	-- Sha'tari Wrought Greaves
-								}),	
-								q(29641,{	-- The Soul Devices
+							n(-17, {	-- Quests
+								qg(54890, q(29645)),	-- Ambassador Hellmaw
+								qg(54891, q(29640)),	-- Find Spy To'gun
+								qg(18891, q(29641, {	-- The Soul Devices
 									i(28174),	-- Shattrath Wraps
 									i(28171),	-- Spymistress' Wristguards
 									i(28170),	-- Auchenai Bracers
 									i(28167),	-- Sha'tari Wrought Armguards
-								}),	
+								})),	
+								qg(54890, q(29643)),	-- The Codex of Blood
+								q(29644, {	-- Into the Heart of the Labyrinth
+									["g"] = {
+										i(28179),	-- Shattrath Jumpers
+										i(28178),	-- Spymistress' Boots
+										i(28177),	-- Auchenai Boots
+										i(28176),	-- Sha'tari Wrought Greaves
+									},
+									["sourceQuests"] = { 29643 },	-- The Codex of Blood
+								}),
 							}),
 							n(18830, {	-- Cabal Fanatic
 								i(23607, {	-- Plans: Felsteel Helm
@@ -36,7 +42,7 @@ _.Instances =
 									i(27888),	-- Dream-Wing Helm
 									i(27889),	-- Jaedenfire Gloves of Annihilation
 									i(27908),	-- Leggings of Assassination
-									i(27884)	-- Ornate Boots of the Sanctified
+									i(27884),	-- Ornate Boots of the Sanctified
 								},
 								["creatureID"] = 18731
 							}),
@@ -45,9 +51,7 @@ _.Instances =
 									i(27890),	-- Wand of the Netherwing
 									i(27892),	-- Cloak of the Inciter
 									i(27893),	-- Ornate Leggings of the Venerated
-									i(25728, {	-- Pattern: Stylin' Purple Hat
-										i(25680),	-- Stylin' Purple Hat
-									}),
+									i(25728),	-- Pattern: Stylin' Purple Hat
 								},
 								["creatureID"] = 18667
 							}),
@@ -78,9 +82,7 @@ _.Instances =
 									i(29261),	-- Girdle of Ferocity
 									i(30532),	-- Kirin Tor Master's Trousers
 									i(27902),	-- Silent Slippers of Meditation
-									i(24309, {	-- Pattern: Spellstrike Pants
-										i(24262),	-- Spellstrike Pants
-									}),
+									i(24309),	-- Pattern: Spellstrike Pants
 								},
 								["creatureID"] = 18708
 							}),
@@ -112,9 +114,7 @@ _.Instances =
 									i(27890),	-- Wand of the Netherwing
 									i(27892),	-- Cloak of the Inciter
 									i(27893),	-- Ornate Leggings of the Venerated
-									i(25728, {	-- Pattern: Stylin' Purple Hat
-										i(25680),	-- Stylin' Purple Hat
-									}),
+									i(25728),	-- Pattern: Stylin' Purple Hat
 								},
 								["creatureID"] = 18667
 							}),
@@ -145,9 +145,7 @@ _.Instances =
 									i(29261),	-- Girdle of Ferocity
 									i(30532),	-- Kirin Tor Master's Trousers
 									i(27902),	-- Silent Slippers of Meditation
-									i(24309, {	-- Pattern: Spellstrike Pants
-										i(24262),	-- Spellstrike Pants
-									}),
+									i(24309),	-- Pattern: Spellstrike Pants
 								},
 								["creatureID"] = 18708
 							}),

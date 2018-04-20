@@ -724,7 +724,6 @@ _.Zones =
 					q( 13429),	-- A Distraction for Akama
 					q( 10985),	-- A Distraction for Akama
 					qa(10642),	-- A Ghost in the Machine
-					q( 10706),	-- A Mysterious Portent
 					q( 10708, {	-- Akama's Promise
 						i(30932),
 						i(30999),
@@ -814,7 +813,6 @@ _.Zones =
 					}),
 					qh(11047),	-- The Apprentice's Request
 					qa(10606),	-- The Art of Fel Reaver Maintenance
-					q( 10707),	-- The Ata'mal Terrace
 					qa(10573),	-- The Deathforge
 					qa(10583),	-- The Fate of Flanis
 					qa(10612),	-- The Fel and the Furious
@@ -904,7 +902,19 @@ _.Zones =
 							["qg"] = 21860,	-- Exarch Onaala
 							["sourceQuests"] = { 10637 },	-- A Necessary Distraction
 						}),
-
+						q(10651, {	-- Varedis Must Be Stopped (awarded "Borrowed Power" criteria)
+							["g"] = {
+								i(31013),	-- Ceremonial Kris
+								i(30933),	-- Hauberk of Karabor
+								i(31010),	-- Slayer's Axe
+								i(31002),	-- Summoner's Blade
+								i(30948),	-- Sunfury Legguards
+								i(31009),	-- Wildcaller
+							},
+							["qg"] = 21860,	-- Exarch Onaala
+							["sourceQuests"] = { 10650 },  	-- Return to the Aldor
+						}),
+						
 						
 						q(10568, {	-- Tablets of Baa'ri
 							["g"] = {
@@ -942,26 +952,33 @@ _.Zones =
 							["qg"] = 21826,	-- Sanoru
 							["sourceQuests"] = { 10622 },	-- Proof of Allegiance
 						}),
-						q(10705, {	-- Seer Udalo
+						qdg(q(10705, {	-- Seer Udalo
 							["g"] = {
 							},
 							["qg"] = 21700,	-- Akama
 							["sourceQuests"] = { 10628 },	-- Akama
+						})),
+						q(10707, {	-- The Ata'mal Terrace
+							["g"] = {
+							},
+							["qg"] = 21770,	-- Akama
+							["sourceQuests"] = { 10706 },	-- A Mysterious Portent
+						}),
+						q(10708, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
+							["g"] = {
+								i(30932),	-- Akama's Sash
+								i(30999),	-- Ashtongue Blade
+								i(31000),	-- Bloodwarder's Rifle
+								i(30943),	-- Verdant Gloves
+								i(30984),	-- Spellbreaker's Buckler
+								i(31417),	-- Staff of the Ashtongue Deathsworn
+							},
+							["qg"] = 21700,	-- Akama
+							["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
 						}),
 						
 						
 						
-						
-						
-						q(10650),	-- Return to the Aldor
-						q(10651, {	-- Varedis Must Be Stopped
-							i(31013),
-							i(30933),
-							i(31010),
-							i(31002),
-							i(30948),
-							i(31009),
-						}),
 					}),
 					
 					
