@@ -637,9 +637,7 @@ _.Instances =
 							dr(1.0, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
 							dr(1.1, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
 							dr(1.0, i(20736)),	-- Formula: Enchant Cloak - Dodge
-							i(22222, {	-- Thick Obisidan Breastplate (Recipe)
-								i(22196),	-- Thick Obisidan Breastplate (Item)
-							}),
+							i(22222),	-- Thick Obisidan Breastplate (Recipe)
 							i(93041),	-- Jewel of Maddening Whispers (Pet)
 							i(21703),	-- Hammer of Ji'zhi
 							i(21128),	-- Staff of the Qiraji Prophets
