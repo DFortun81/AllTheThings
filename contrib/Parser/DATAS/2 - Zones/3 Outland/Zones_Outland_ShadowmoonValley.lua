@@ -725,7 +725,6 @@ _.Zones =
 					q( 10985),	-- A Distraction for Akama
 					qa(10642),	-- A Ghost in the Machine
 					q( 10706),	-- A Mysterious Portent
-					q( 10628),	-- Akama
 					q( 10708, {	-- Akama's Promise
 						i(30932),
 						i(30999),
@@ -786,14 +785,12 @@ _.Zones =
 					qa(10744, {	-- News of Victory
 						i(30924),
 					}),
-					q( 10622),	-- Proof of Allegiance
 					qa(10703),	-- Put On Yer Kneepads...
 					q( 10679),	-- Quenching the Blade
 					q( 11053),	-- Rise, Overseer!
 					q( 10946),	-- Ruse of the Ashtongue
 					q( 10958),	-- Seek Out the Ashtongue
 					q( 11082),	-- Seeker of Truth
-					q( 10705),	-- Seer Udalo
 					qa(10572),	-- Setting Up the Bomb
 					q( 10822),	-- Single Sunfury Signet
 					qa(10661),	-- Spleendid!
@@ -895,6 +892,18 @@ _.Zones =
 							["qg"] = 21860,	-- Exarch Onaala
 							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 						}),
+						q(10637, {	-- A Necessary Distraction
+							["g"] = {
+							},
+							["qg"] = 21860,	-- Exarch Onaala
+							["sourceQuests"] = { 10587 },	-- Karabor Training Grounds
+						}),
+						q(10640, {	-- Altruis
+							["g"] = {
+							},
+							["qg"] = 21860,	-- Exarch Onaala
+							["sourceQuests"] = { 10637 },	-- A Necessary Distraction
+						}),
 
 						
 						q(10568, {	-- Tablets of Baa'ri
@@ -909,16 +918,42 @@ _.Zones =
 							["qg"] = 21402,	-- Anchorite Ceyla
 							["sourceQuests"] = { 10568 },	-- Tablets of Baa'ri
 						}),
+						q(10574, {	-- The Ashtongue Corruptors
+							["g"] = {
+							},
+							["qg"] = 21402,	-- Anchorite Ceyla
+							["sourceQuests"] = { 10571 },	-- Oronu the Elder
+						}),
+						q(10575, {	-- The Warden's Cage
+							["g"] = {
+							},
+							["qg"] = 21402,	-- Anchorite Ceyla
+							["sourceQuests"] = { 10574 },	-- The Ashtongue Corruptors
+						}),
+						q(10622, {	-- Proof of Allegiance
+							["g"] = {
+							},
+							["qg"] = 21826,	-- Sanoru
+							["sourceQuests"] = { 10575 },	-- The Warden's Cage
+						}),
+						q(10628, {	-- Akama
+							["g"] = {
+							},
+							["qg"] = 21826,	-- Sanoru
+							["sourceQuests"] = { 10622 },	-- Proof of Allegiance
+						}),
+						q(10705, {	-- Seer Udalo
+							["g"] = {
+							},
+							["qg"] = 21700,	-- Akama
+							["sourceQuests"] = { 10628 },	-- Akama
+						}),
 						
 						
 						
 						
 						
-						q(10637),	-- A Necessary Distraction
-						q(10640),	-- Altruis
 						q(10650),	-- Return to the Aldor
-						q(10574),	-- The Ashtongue Corruptors
-						q(10575),	-- The Warden's Cage
 						q(10651, {	-- Varedis Must Be Stopped
 							i(31013),
 							i(30933),

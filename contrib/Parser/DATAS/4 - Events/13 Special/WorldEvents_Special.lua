@@ -321,9 +321,11 @@ _.WorldEvents =
 					})),
 					i(156698, {	-- Tranquil Satchel of Helpful Goods
 						["groups"] = {
-						   i(113788),	-- Blossoming Belt
+						   i(113788),	-- Blossoming Belt*
 						   i(113764),	-- Blossoming Cap
-						   i(113787),	-- Blossoming Slippers
+						   i(113766),	-- Blossoming Gloves*
+						   i(113765),	-- Blossoming Robe*
+						   i(113787),	-- Blossoming Slippers*
 						   i(113772),	-- Firecracker Belt
 						   i(113770),	-- Firecracker Boots
 						   i(113731),	-- Firecracker Cap
@@ -342,6 +344,7 @@ _.WorldEvents =
 						   i(113729),	-- Kyparite Headguard
 						   i(113728),	-- Kyparite Helm
 						   i(113783),	-- Kyparite Stompers
+						   i(113735),	-- Drifting Cloud Necklace*
 						},
 						["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation",
 					}),
