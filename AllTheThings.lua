@@ -6621,71 +6621,76 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 	if app.Categories.Professions then
 		local popout = app:GetWindow("Tradeskills");
 		if popout:IsShown() then
-			-- Cache Learned Spells
-			local skillCache = fieldCache["spellID"];
-			if skillCache then
-				-- Cache learned recipes
-				local learned = 0;
-				
-				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
-				for i = 1,#recipeIDs do
-					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
-						if spellRecipeInfo.learned then
-							SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-							if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-								SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-								learned = learned + 1;
+			if not (C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
+				-- Cache Learned Spells
+				local skillCache = fieldCache["spellID"];
+				if skillCache then
+					-- Cache learned recipes
+					local learned = 0;
+					
+					local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+					for i = 1,#recipeIDs do
+						if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+							if spellRecipeInfo.learned then
+								SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+								if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+									SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+									learned = learned + 1;
+								end
 							end
-						end
-						if not skillCache[spellRecipeInfo.recipeID] then
-							app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
-							skillCache[spellRecipeInfo.recipeID] = { {} };
-						end
-					end
-				end
-				
-				--[[
-				for spellID,groups in pairs(skillCache) do
-					spellID = tonumber(spellID);
-					if not GetTempDataSubMember("CollectedSpells", spellID) then
-						if C_TradeSkillUI.GetRecipeInfo(spellID, spellRecipeInfo) and spellRecipeInfo.learned then
-							SetTempDataSubMember("CollectedSpells", spellID, 1);
-							if not GetDataSubMember("CollectedSpells", spellID) then
-								SetDataSubMember("CollectedSpells", spellID, 1);
-								learned = learned + 1;
+							if not skillCache[spellRecipeInfo.recipeID] then
+								app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
+								skillCache[spellRecipeInfo.recipeID] = { {} };
 							end
 						end
 					end
-				end
-				]]--
-				
-				-- Open the Tradeskill list for this Profession
-				local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
-				for i,group in ipairs(app.Categories.Professions) do
-					if group.requireSkill == tradeSkillID then
-						popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
-						BuildGroups(popout.data, popout.data.g);
-						UpdateGroups(popout.data, popout.data.g, 1);
-						if not popout.data.expanded then
-							popout.data.expanded = true;
-							ExpandGroupsRecursively(popout.data, true);
+					
+					--[[
+					for spellID,groups in pairs(skillCache) do
+						spellID = tonumber(spellID);
+						if not GetTempDataSubMember("CollectedSpells", spellID) then
+							if C_TradeSkillUI.GetRecipeInfo(spellID, spellRecipeInfo) and spellRecipeInfo.learned then
+								SetTempDataSubMember("CollectedSpells", spellID, 1);
+								if not GetDataSubMember("CollectedSpells", spellID) then
+									SetDataSubMember("CollectedSpells", spellID, 1);
+									learned = learned + 1;
+								end
+							end
 						end
-						popout:SetVisible(true);
+					end
+					]]--
+					
+					-- Open the Tradeskill list for this Profession
+					local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
+					for i,group in ipairs(app.Categories.Professions) do
+						if group.requireSkill == tradeSkillID then
+							popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
+							BuildGroups(popout.data, popout.data.g);
+							UpdateGroups(popout.data, popout.data.g, 1);
+							if not popout.data.expanded then
+								popout.data.expanded = true;
+								ExpandGroupsRecursively(popout.data, true);
+							end
+							popout:SetVisible(true);
+						end
+					end
+				
+					-- If something new was "learned", then refresh the data.
+					if learned > 0 then
+						app:RefreshData(false, true);
+						app.print("Cached " .. learned .. " known recipes!");
 					end
 				end
-			
-				-- If something new was "learned", then refresh the data.
-				if learned > 0 then
-					app:RefreshData(false, true);
-					app.print("Cached " .. learned .. " known recipes!");
-				end
+			else
+				 popout:SetVisible(false);
 			end
 		end
 	end
 end
 app.events.TRADE_SKILL_SHOW = function(...)
 	if app.Categories.Professions then
-		if fieldCache["requireSkill"][C_TradeSkillUI.GetTradeSkillLine()] then
+		if fieldCache["requireSkill"][C_TradeSkillUI.GetTradeSkillLine()]
+			and not (C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
 			local popout = app:GetWindow("Tradeskills");
 			popout:ClearAllPoints();
 			popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
