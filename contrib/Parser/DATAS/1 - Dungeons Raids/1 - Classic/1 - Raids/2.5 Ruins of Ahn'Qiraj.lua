@@ -179,12 +179,8 @@ _.Instances =
 					}),
 					n(15471, {	-- Lieutenant General Andorov
 						["groups"] = {
-							i(22221, {	-- Plans: Obsidian Mail Tunic
-								i(22191),	-- Obsidian Mail Tunic
-							}),
-							i(22219, {	-- Plans: Jagged Obsidian Shield
-								i(22198),	-- Jagged Obsidian Shield
-							}),
+							i(22221),	-- Plans: Obsidian Mail Tunic
+							i(22219),	-- Plans: Jagged Obsidian Shield
 						},
 						["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed."
 					}),
@@ -1109,9 +1105,7 @@ _.Instances =
 							dr(0.4, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
 							dr(0.7, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
 							dr(0.5, i(20736)),	-- Formula: Enchant Cloak - Dodge
-							i(22220, {	-- Plans: Black Grasp of the Destroyer
-								i(22194),	-- Black Grasp of the Destroyer
-							}),
+							i(22220),	-- Plans: Black Grasp of the Destroyer
 							i(20888, { 	-- Qiraji Ceremonial Ring
 								{
 									["questID"] = 8701, -- Band of Veiled Shadows (Quest)
