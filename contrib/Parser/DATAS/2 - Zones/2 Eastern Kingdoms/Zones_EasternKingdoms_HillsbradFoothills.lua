@@ -1541,15 +1541,16 @@ _.Zones =
 						i(19032),	-- Stormpike Battle Tabard
 					})),
 					n(3537, {	-- Zixil <Merchant Supreme>
+						i(6377),	-- Formula: Enchant Boots - Minor Agility
+						i(7362), 	-- Pattern: Earthen Leather Shoulders
+						i(5772),	-- Pattern: Red Woolen Bag
+						i(7561),	-- Schematic: Goblin Jumper Cables
+						i(4836),	-- Fireproof Orb
+						i(4838),	-- Orb of Power
 						i(4837),	-- Strength of Will
 						i(4829),	-- Dreamer's Belt
-						i(4827),	-- Wizard's Belt
-						i(4836),	-- Fireproof Orb
 						i(4828),	-- Nightwind Belt
-						i(4838),	-- Orb of Power
-						i(7362, {	-- Pattern: Earthen Leather Shoulders
-							i(7352),	-- Earthen Leather Shoulders
-						}),
+						i(4827),	-- Wizard's Belt
 					}),
 				}),
 				n(-40, {	-- Legacy

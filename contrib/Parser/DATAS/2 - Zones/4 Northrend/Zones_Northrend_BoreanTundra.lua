@@ -912,6 +912,12 @@ _.Zones =
 							i(41508),	-- Mechano-Hog Mount
 						}),
 					})),
+					n(5758, {	-- Librarian Erickson <Enchanting Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					a(n(32564, { -- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
 						i(38453),	-- Shield of the Lion-Hearted
 						i(38455),	-- Hammer of hte Alliance Vanguard

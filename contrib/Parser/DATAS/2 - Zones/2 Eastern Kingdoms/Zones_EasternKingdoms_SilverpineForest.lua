@@ -826,10 +826,24 @@ _.Zones =
 						i(6328),	-- Recipe: Longjaw Mud Snapper
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 					}),
-					nh(9553, { -- Nadia Vernon <Bowyer>
+					nh(5758, {	-- Leo Sarn <Enchanting Supplies>
+						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
+					nh(5757, {	-- Lilly <Enchanting Supplies>
+						i(6346),	-- Formula: Enchant Chest - Lesser Mana
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
+					nh(9553, {	-- Nadia Vernon <Bowyer>
 						i(11304), -- Fine Longbow
 					}),
-					n(3534, { -- Wallace the Blind <Weaponsmith>
+					n(3534, {	-- Wallace the Blind <Weaponsmith>
 						i(4817), 	-- Blessed Claymore
 						i(4818), 	-- Executioner's Sword
 						i(11304), 	-- Fine Longbow

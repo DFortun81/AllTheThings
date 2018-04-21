@@ -331,6 +331,12 @@ _.Zones =
 	--				n(14428, { 		-- Uruson - no loot of note			}), 
 				}),
 				na(-2, {		-- Vendors
+					n(44030, {	-- Draelan <Enchanting Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					n(10118, {	-- Nessa Shadowsong <Fishing Supplies>
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(6326),	-- Recipe: Slitherskin Mackerel

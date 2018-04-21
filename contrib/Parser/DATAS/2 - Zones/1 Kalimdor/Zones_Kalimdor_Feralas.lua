@@ -941,6 +941,12 @@ _.Zones =
 	--				n(54533, { 		-- Prince Lakma -- Drops no transmoggable loot			}),
 				}),
 				n(-2, {		-- Vendors
+					na(44381, {	-- Apprentice of Estulan <Enchanting Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					h(n(9548, {	-- Cawind Trueaim <Gunsmith & Bowyer>
 						i(11308),	-- Sylvan Shortbow
 					})),

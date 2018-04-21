@@ -833,6 +833,18 @@ _.Zones =
 					}), 
 				}),
 				n(-2, {		-- Vendors
+					nh(26569, {	-- Alys Vol'tyr <Reagents & Enchanting Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
+					nh(27030, {	-- Bradley Towns <Reagents & Enchanting Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					n(32533, {	-- Cielstrasza <Wyrmrest Accord Quartermaster>
 						i(44198),	-- Breastplate of the Solemn Council
 						i(44199),	-- Gavel of the Brewing Storm
@@ -848,6 +860,12 @@ _.Zones =
 						i(44197),	-- Bracers of Accorded Courtesy
 						i(43156),	-- Tabard of the Wyrmrest Accord
 						i(43955),	-- Reins of the Red Drake Mount
+					}),
+					na(27054, {	-- Modoru <Reagents & Enchanting Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 					n(32763, {	-- Sairuk <Kalu'ak Quartermaster>
 						i(44050),	-- Mastercraft Kalu'ak Fishing Pole

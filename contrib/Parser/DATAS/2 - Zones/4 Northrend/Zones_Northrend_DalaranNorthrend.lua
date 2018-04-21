@@ -2100,6 +2100,12 @@ _.Zones =
 						i(51313),	-- Sanctified Scourgelord Legplates
 						i(51314),	-- Sanctified Scourgelord Shoulderplates
 					}),
+					n(28714, {	-- Ildine Sorrowspear <Enchanting Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					n(96483, {  -- Jepetto Joybuzz <Toymaker>
 						i(54436), -- Blue Clockwork Rocket Bot Pet
 						i(95621), -- Warbot Ignition Key Pet

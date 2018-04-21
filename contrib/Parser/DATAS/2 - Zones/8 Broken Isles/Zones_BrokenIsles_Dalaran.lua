@@ -3566,6 +3566,31 @@ _.Zones =
 						}),
 						--i(139555), -- Designs of the Grand Architect - Hunter Artifact Appearance
 					}),
+					n(93530, {	-- Ildine Sorrowspear <Enchanting Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						{
+							["itemID"] = 139494,	-- Forgotten Formulas of the Broken Isles
+							["collectible"] = false,
+						},
+						i(128591),	-- Formula: Enchant Cloak - Binding of Agility [Rank 2]
+						i(128592),	-- Formula: Enchant Cloak - Binding of Intellect [Rank 2]
+						i(128590),	-- Formula: Enchant Cloak - Binding of Strength [Rank 2]
+						i(128588),	-- Formula: Enchant Cloak - Word of Agility [Rank 2]
+						i(128589),	-- Formula: Enchant Cloak - Word of Intellect [Rank 2]
+						i(128587),	-- Formula: Enchant Cloak - Word of Strength [Rank 2]
+						i(128583),	-- Formula: Enchant Ring - Binding of Critical Strike [Rank 2]
+						i(128584),	-- Formula: Enchant Ring - Binding of Haste [Rank 2]
+						i(128585),	-- Formula: Enchant Ring - Binding of Mastery [Rank 2]
+						i(128586),	-- Formula: Enchant Ring - Binding of Versatility [Rank 2]
+						i(128579),	-- Formula: Enchant Ring - Word of Critical Strike [Rank 2]
+						i(128580),	-- Formula: Enchant Ring - Word of Haste [Rank 2]
+						i(128581),	-- Formula: Enchant Ring - Word of Mastery [Rank 2]
+						i(128582),	-- Formula: Enchant Ring - Word of Versatility [Rank 2]
+						i(140634),	-- Formula: Ley Shatter
+					}),
 					n(96483, { 	-- Jepetto Joybuzz <Toymaker>
 						i(54436), -- Blue Clockwork Rocket Bot Pet
 						i(95621), -- Warbot Ignition Key Pet

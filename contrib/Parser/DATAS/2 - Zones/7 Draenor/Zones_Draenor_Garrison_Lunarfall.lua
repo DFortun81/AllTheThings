@@ -2826,38 +2826,6 @@ _.Zones =
 						}),
 					}),
 			--[[							
-					n(-105, { 		-- Enchanter's Study
-						na(77354, { 		-- Ayada the White 
-							i(111922), 			-- teaches Ring/neck Breath of Crit, haste, vers, mastery -- Mark of the shattered hand, temporal crystal, luminous shard, enchanted dust, secrets of draenor enchanting
-							i(118394),
-							i(118429),
-							i(118430),
-							i(118432),
-							i(118433),
-							i(118434),
-							i(118435),
-							i(118437),
-							i(118438),
-							i(118439),
-							i(118440),
-							i(118442),
-							i(118443),
-							i(118444),
-							i(118445),
-							i(118447),
-							i(118453),
-							i(118454),
-							i(118455),
-							i(118457),
-							i(118458),
-							i(118460),
-							i(118461),
-							i(118462),
-							i(118463),
-							i(118467),
-							i(138882),
-						}),
-					}),
 					n(-106, { 		-- Engineering Works
 					na(77365, { 		-- Zaren Hoffle 
 							i(111921), 		-- Teaches Gearspring parts, ultimate gnomish army knife, goblin glider kit, mecha-blast rocket, secrets of draenor engineering, shieldtronic shield, stealthman 54

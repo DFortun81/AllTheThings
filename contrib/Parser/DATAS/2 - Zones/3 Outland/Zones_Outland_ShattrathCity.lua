@@ -1152,6 +1152,12 @@ _.Zones =
 							i(21854),	-- Netherweave Robe
 						}),
 					}),
+					n(33633, {	-- Enchantress Andiala <Enchanting Trainer>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					n(18525, { -- G'eras
 						i(33585), -- Achromic Trousers of the Naaru
 						i(33810), -- Amani Mask of Death
@@ -1434,10 +1440,20 @@ _.Zones =
 						},
 						["description"] = "Will only sell these recipes to those who have completed the quests that reward them.|r",
 					}),
+					n(19663, {	-- Madame Ruby <Enchanting Supplies>
+						i(28282),	-- Formula: Enchant Shield - Major Stamina
+						i(22565),	-- Formula: Large Prismatic Shard
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22562),	-- Formula: Superior Mana Oil
+						i(22563),	-- Formula: Superior Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					n(21655, {	-- Nakodu <Lower City Quartermaster>
 						i(30835),	-- Salvager's Hauberk
 						i(30836),	-- Leggings of the Skettis Exile
-						i(35331),	-- Dreadweave MAntle
+						i(35331),	-- Dreadweave Mantle
 						i(35335),	-- Mooncloth Mitts
 						i(35340),	-- Satin Leggings
 						i(35344),	-- Evoker's Silk Cowl
@@ -1832,6 +1848,18 @@ _.Zones =
 						i(23799, {	-- Schematic: Adamantite Rifle
 							i(23746),	-- Adamantite Rifle
 						}),
+					}),
+					n(19234, {	-- Yurial Soulwater <Enchanting Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
+					n(33676, {	-- Zurii <Enchanting Trainer>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 				}),
 			},
