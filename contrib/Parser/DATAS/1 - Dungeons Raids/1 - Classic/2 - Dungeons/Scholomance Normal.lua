@@ -9,11 +9,24 @@ _.Instances =
 			inst(246, { 	-- Scholomance
 				["groups"] = {
 					d(1, {		-- Normal
-						n(0, { 		-- Zone Drop
-							i(18702), 	-- Belt of the Ordained
+						n(-17, {	-- Quests
+							q(31447, {	-- An End to the Suffering
+								["g"] = {
+								},
+								["qg"] = 64562,	-- Talking Skull
+							}),
+							q(31440, {	-- The Four Tomes
+								["g"] = {
+								},
+								["qg"] = 64562,	-- Talking Skull
+							}),
+						}),
+						n(  0, {	-- Zone Drop
+							n(59501, {	-- Reanimated Corpse
+								dr(.01, i(18702)), 	-- Belt of the Ordained
+								dr(.01, i(18697)),	-- Coldstone Slippers
+							}),
 							i(14536),	-- Bonebrace Hauberk
-							i(18697),	-- Coldstone Slippers
-							i(7752),	-- Dreamslayer
 							i(18699), 	-- Icy Tomb Spaulders
 							i(18700), 	-- Malefic Bracers
 							i(18698), 	-- Tattered Leather Hood
@@ -56,7 +69,7 @@ _.Instances =
 					}),
 					n(-40, { -- Legacy
 						["groups"] = {
-							n(-39, {	-- Legacy Quests
+							n(-17, {	-- Quests (Legacy)
 								q(4771, { 	-- Dawn's Gambit
 									un(2, i(15854)), 	-- Dancing Sliver
 									un(2, i(15853)), 	-- Windreaper
@@ -77,7 +90,7 @@ _.Instances =
 									un(2, i(13982)), 	-- Warblade of Caer Darrow
 								}),
 							}),
-							n(0, { 		-- Zone Drop
+							n(  0, {	-- Zone Drop
 								n(10495, { 	-- Diseased Ghoul
 									un(7, i(16714)),	-- Wildheart Bracers
 								}),

@@ -8,40 +8,40 @@ _.WorldEvents =
 			n(-300, {	-- Satchel of Helpful Goods
 				["groups"] = {
 					i(156683, {	-- Satchel of Helpful Goods [Level 15-60]			
-						["groups"] = {		
-							i(51974),	-- Enumerated Shoulderpads*
-							i(51972),	-- Enumerated Bracers*
-							un(2, i(51971)),	-- Enumerated Belt
-							i(51968),	-- Enumerated Wrap*
-							i(51973),	-- Enumerated Handwraps
-							i(51967),	-- Enumerated Sandals
-							i(51984),	-- Stalwart Shoulderpads
-							un(2, i(51997)),	-- Stalwart Spaulders
-							i(51989),	-- Stalwart Bands
-							i(143583),	-- Stalwart Grips
-							un(2, i(51987)),	-- Stalwart Grips
-							i(143582),	-- Stalwart Belt
-							un(2, i(51985)),	-- Stalwart Belt
-							i(51990),	-- Stalwart Treads
-							i(51976),	-- Earthbound Shoulderguards
-							i(51981),	-- Earthbound Wristguards
-							i(143581),	-- Earthbound Grips
-							un(2, i(51979)),	-- Earthbound Grips
-							un(2, i(51980)),	-- Earthbound Handgrips [Probably unobtainable]
-							i(143580),	-- Earthbound Girdle
+						["groups"] = {
+							i(51982),	-- Earthbound Boots
 							un(2, i(51977)),	-- Earthbound Girdle
 							un(2, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
-							i(51982),	-- Earthbound Boots
-							i(51998),	-- Vigorous Spaulders
-							i(51966),	-- Vigorous Spaulders
-							i(51962),	-- Vigorous Bracers*
-							i(51960),	-- Vigorous Gloves
-							i(51965),	-- Vigorous Handguards
-							i(51964),	-- Vigorous Belt*
-							i(51963),	-- Vigorous Stompers*
+							i(143580),	-- Earthbound Girdle
+							un(2, i(51979)),	-- Earthbound Grips
+							i(143581),	-- Earthbound Grips
+							un(2, i(51980)),	-- Earthbound Handgrips [Probably unobtainable]
+							i(51976),	-- Earthbound Shoulderguards
+							i(51981),	-- Earthbound Wristguards
+							un(2, i(51971)),	-- Enumerated Belt
+							i(51972),	-- Enumerated Bracers*
+							i(51973),	-- Enumerated Handwraps
+							i(51967),	-- Enumerated Sandals
+							i(51974),	-- Enumerated Shoulderpads*
+							i(51968),	-- Enumerated Wrap*
+							i(51989),	-- Stalwart Bands
+							un(2, i(51985)),	-- Stalwart Belt
+							i(143582),	-- Stalwart Belt
+							un(2, i(51987)),	-- Stalwart Grips
+							i(143583),	-- Stalwart Grips
+							i(51984),	-- Stalwart Shoulderpads
+							un(2, i(51997)),	-- Stalwart Spaulders
+							i(51990),	-- Stalwart Treads
 							i(51994),	-- Tumultuous Cloak*
 							i(51996),	-- Tumultuous Necklace*
 							i(51992),	-- Tumultuous Ring*
+							i(51964),	-- Vigorous Belt*
+							i(51962),	-- Vigorous Bracers*
+							i(51960),	-- Vigorous Gloves
+							i(51965),	-- Vigorous Handguards
+							i(51998),	-- Vigorous Spaulders
+							i(51966),	-- Vigorous Spaulders
+							i(51963),	-- Vigorous Stompers*
 						},		
 						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-60 range.|r",		
 						["Lvl"] = 15,		
@@ -55,9 +55,9 @@ _.WorldEvents =
 					un(2, i(52000, {	-- Satchel of Helpful Goods 24-34
 						["groups"] = {
 						   i(51973),	-- Enumerated Handwraps
-						   i(51965),	-- Vigorous Handguards
-						   --i(51980),	-- Earthbound Handgrips; Probably unobtainable.
 						   i(143581),	-- Earthbound Grips
+						   --i(51980),	-- Earthbound Handgrips; Probably unobtainable.
+						   i(51965),	-- Vigorous Handguards
 						},
 						["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 24-34 range.|r",
 					})),
@@ -687,17 +687,17 @@ _.WorldEvents =
 							i(134655),	-- Front-Line Breastplate
 							i(134657),	-- Front-Line Legguards
 							i(134656),	-- Front-Line Warboots
-							i(134637),	-- Recruit's Dirk
-							i(134638),	-- Recruit's Rifle
-							i(134645),	-- Recruit's Endgame
 							i(134636),	-- Recruit's Cleaver
+							i(134635),	-- Recruit's Decapitator
+							i(134637),	-- Recruit's Dirk
+							i(134645),	-- Recruit's Endgame
 							i(134644),	-- Recruit's Hammer
 							i(134646),	-- Recruit's Mageblade
 							i(135481),	-- Recruit's Quickblade
-							i(134663),	-- Recruit's Slicer
 							i(134662),	-- Recruit's Redoubt
+							i(134638),	-- Recruit's Rifle
+							i(134663),	-- Recruit's Slicer
 							i(134639),	-- Recruit's Staff
-							i(134635),	-- Recruit's Decapitator
 						},
 						["description"] = "|cff66ccffRewarded for winning a random battleground in the level 15-39 range.|r",
 					}),
@@ -707,8 +707,8 @@ _.WorldEvents =
 							i(134670),	-- Auxiliary's Cowl
 							i(134669),	-- Auxiliary's Handwraps
 							i(134671),	-- Auxiliary's Trousers
-							i(134675),	-- Rookie's Gloves
-							i(134676),	-- Rookie's Helm
+							i(134675),	-- Rookie's Gloves*
+							i(134676),	-- Rookie's Helm*
 							i(134677),	-- Rookie's Legguards
 							i(134678),	-- Rookie's Shoulders
 							i(134679),	-- Greenhorn's Gauntlets
@@ -719,15 +719,16 @@ _.WorldEvents =
 							i(134685),	-- Front-Line Greaves
 							i(134684),	-- Front-Line Helm
 							i(134686),	-- Front-Line Shoulders
-							i(134665),	-- Recruit's Longbow
-							i(134666),	-- Recruit's Shanker
-							i(134673),	-- Recruit's Gavel
-							i(134667),	-- Recruit's Pummeler
-							i(134688),	-- Recruit's Slicer
-							i(134668),	-- Recruit's Pike
+							i(134689),	-- Recruit's Accolade*
 							i(134687),	-- Recruit's Barrier
 							i(134674),	-- Recruit's Battle Staff
+							i(134673),	-- Recruit's Gavel
 							i(134664),	-- Recruit's Greatsword
+							i(134665),	-- Recruit's Longbow
+							i(134668),	-- Recruit's Pike
+							i(134667),	-- Recruit's Pummeler
+							i(134666),	-- Recruit's Shanker
+							i(134688),	-- Recruit's Slicer
 						},
 						["description"] = "|cff66ccffRewarded for winning a random battleground in the level 40-59 range.|r",
 					}),
