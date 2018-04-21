@@ -947,6 +947,10 @@ _.Zones =
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
+					nh(8158, {	-- Bronk <Alchemy Supplies>
+						i(9302),	-- Recipe: Ghost Dye
+						i(6057),	-- Recipe: Nature Protection Potion
+					}),
 					h(n(9548, {	-- Cawind Trueaim <Gunsmith & Bowyer>
 						i(11308),	-- Sylvan Shortbow
 					})),
@@ -964,6 +968,10 @@ _.Zones =
 							i(7386),	-- Green Whelp Bracers
 						}),
 					})),
+					na(8157, {	-- Logannas <Alchemy Supplies>
+						i(9302),	-- Recipe: Ghost Dye
+						i(6057),	-- Recipe: Nature Protection Potion
+					}),
 					nh(40474, {	-- Moro Sungrain <Trade Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish

@@ -1147,6 +1147,19 @@ _.Zones =
 					}), 
 				}),
 				n( -2, {	-- Vendors
+					n(5594, {	-- Alchemist Pestlezugg <Alchemy Supplies>
+						i(6057),	-- Recipe: Nature Protection Potion
+						i(9303),	-- Recipe: Philosopher's Stone
+						i(12958),	-- Recipe: Transmute Arcanite
+						i(9304),	-- Recipe: Transmute Iron to Gold
+						i(9305),	-- Recipe: Transmute Mithril to Truesilver
+					}),
+					n(98864, {	-- Alchemist Pestlezugg <Alchemy Supplies>
+						i(9303),	-- Recipe: Philosopher's Stone
+						i(12958),	-- Recipe: Transmute Arcanite
+						i(9304),	-- Recipe: Transmute Iron to Gold
+						i(9305),	-- Recipe: Transmute Mithril to Truesilver
+					}),
 					n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
 						i(29184),	-- Timewarden's Leggings
 						i(29185),	-- Continuum Blade

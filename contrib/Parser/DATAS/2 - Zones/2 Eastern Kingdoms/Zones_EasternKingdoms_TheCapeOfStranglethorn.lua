@@ -781,6 +781,10 @@ _.Zones =
 					n(2845, {	-- Fargon Mortalak <Superior Armorer>
 						i(12257),	-- Heavy Notched Belt
 					}),
+					n(2848, {	-- Glyx Brewright <Alchemy Supplies>
+						i(6056),	-- Recipe: Frost Protection Potion
+						i(6057),	-- Recipe: Nature Protection Potion
+					}),
 					n(2839, {	-- Haren Kanmae <Superior Bowyer>
 						i(11305),	-- Dense Shortbow
 					}),

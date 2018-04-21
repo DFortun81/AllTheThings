@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(14, { 	-- Eastern Kingdoms
 		m(16, {		-- Arathi Highlands
-			["groups"] = {				
+			["groups"] = {
 				n( -3, {	-- Holidays					
 --[[					
 					n(-47, {    	-- Lunar Festival
@@ -1105,188 +1105,59 @@ _.Zones =
 					}),
 				}),
 				n( -2, {	-- Vendors
-					a(n(2816, {	-- Androd Fadran <Leatherworking Supplies>
-						i(13288, {	-- Pattern: Raptor Hide Belt
-							i(4456),	-- Raptor Hide Belt
-						}),
-					})),
+					na(2816, {	-- Androd Fadran <Leatherworking Supplies>
+						i(13288),	-- Pattern: Raptor Hide Belt
+					}),
 					n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
-						i(4835),	-- Elite Shoulders
+						i(11150),	-- Formula: Enchant Gloves - Mining
+						i(4824),	-- Blurred Axe
 						i(4825),	-- Callous Axe
+						i(4826),	-- Marauder Axe
+						i(4835),	-- Elite Shoulders
+						i(4833),	-- Glorious Shoulders
 						i(4832),	-- Mystic Sarong
 						i(4830),	-- Saber Leggings
-						i(4833),	-- Glorious Shoulders
-						i(4824),	-- Blurred Axe
-						i(4826),	-- Marauder Axe
 						i(4831),	-- Stalking Pants
 					}),
+					na(2812, {	-- Drovnar Strongbrew <Alchemy Supplies>
+						i(6056),	-- Recipe: Frost Protection Potion
+					}),
+					--[[
+					na(44123, {	-- Emily Jackson <Stable Master>
+						i(37460),	-- Rope Pet Leash
+					}),
+					]]--
 					na(2810, {	-- Hammon Karwn <Superior Tradesman>
 						i(21942),	-- Design: Ruby Crown of Restoration
 						i(5973),	-- Pattern: Barbaric Leggings
 						i(12228),	-- Recipe: Roast Raptor
 					}),
-					a(n(1471, {	-- Jannos Ironwill <Superior Macecrafter>
-						i(10858, {	-- Plans: Solid Iron Maul
-							i(3851),	-- Solid Iron Maul
-						}),
-					})),
-					h(n(6574, {	-- Jun'ha <Tailoring Supplies>
-						i(7089, {	-- Pattern: Azure Silk Cloak
-							i(7053),	-- Azure Silk Cloak
-						}),
-					})),
-					h(n(2821, {	-- Keena <Trade Goods>
+					na(1471, {	-- Jannos Ironwill <Superior Macecrafter>
+						i(10858),	-- Plans: Solid Iron Maul
+					}),
+					nh(6574, {	-- Jun'ha <Tailoring Supplies>
+						i(7089), 	-- Pattern: Azure Silk Cloak
+					}),
+					nh(2821, {	-- Keena <Trade Goods>
 						i(21942),	-- Design: Ruby Crown of Restoration
 						i(5973),	-- Pattern: Barbaric Leggings
 						i(3682),	-- Recipe: Curiously Tasty Omelet
 						i(12228),	-- Recipe: Roast Raptor
-					})),
-					h(n(9555, {	-- Mu'uta <Bowyer>
+					}),
+					nh(9555, {	-- Mu'uta <Bowyer>
 						i(11305),	-- Dense Shortbow
-					})),
-					na(15127, {	-- Samual Hawke
-						i(20069),	-- Ironbark Staff
-						i(20055),	-- Highlander's Chain Pauldrons
-						i(20056),	-- Highlander's Mail Pauldrons
-						i(20057),	-- Highlander's Plate Spaulders
-						i(20058),	-- Highlander's Lamellar Spaulers
-						i(20059),	--
-						i(20060),	--
-						i(20061),	--
-						i(20070),	--
-						i(20073),	--
-						i(20041),	--
-						i(20042),	--
-						i(20043),	--
-						i(20044),	--
-						i(20045),	--
-						i(20046),	--
-						i(20047),	--
-						i(20048),	--
-						i(20049),	--
-						i(20050),	--
-						i(20051),	--
-						i(20052),	--
-						i(20053),	--
-						i(20054),	--
-						i(20088),	--
-						i(20091),	--
-						i(20094),	--
-						i(20097),	--
-						i(20100),	--
-						i(20103),	--
-						i(20106),	--
-						i(20109),	--
-						i(20112),	--
-						i(20115),	--
-						i(20118),	--
-						i(20121),	--
-						i(20124),	--
-						i(20127),	--
-						i(20089),	--
-						i(20092),	--
-						i(20095),	--
-						i(20098),	--
-						i(20101),	--
-						i(20104),	--
-						i(20107),	--
-						i(20110),	--
-						i(20113),	--
-						i(20116),	--
-						i(20119),	--
-						i(20122),	--
-						i(20125),	--
-						i(20128),	--
-						i(20090),	--
-						i(20093),	--
-						i(20096),	--
-						i(20099),	--
-						i(20102),	--
-						i(20105),	--
-						i(20108),	--
-						i(20111),	--
-						i(20114),	--
-						i(20117),	--
-						i(20120),	--
-						i(20123),	--
-						i(20126),	--
-						i(20129),	--
-						i(20132),	--
 					}),
-					nh(15126, {	-- Rutherford Twing
-						i(20220),	-- Ironbark Staff
-						i(20068),	-- Deathguard's Cloak
-						i(20158),	-- Defiler's Chain Pauldrons
-						i(20175),	-- Defiler's Lizardhide Shoulders
-						i(20176),	-- Defiler's Epaulets
-						i(20184),	--
-						i(20194),	--
-						i(20203),	--
-						i(20212),	--
-						i(20214),	--
-						i(20150),	--
-						i(20154),	--
-						i(20159),	--
-						i(20163),	--
-						i(20167),	--
-						i(20171),	--
-						i(20177),	--
-						i(20181),	--
-						i(20186),	--
-						i(20190),	--
-						i(20195),	--
-						i(20199),	--
-						i(20204),	--
-						i(20208),	--
-						i(20151),	--
-						i(20155),	--
-						i(20160),	--
-						i(20165),	--
-						i(20170),	--
-						i(20174),	--
-						i(20179),	--
-						i(20185),	--
-						i(20189),	--
-						i(20193),	--
-						i(20196),	--
-						i(20202),	--
-						i(20205),	--
-						i(20211), 	--
-						i(20153),	--
-						i(20156),	--
-						i(20161),	--
-						i(20166),	--
-						i(20168),	--
-						i(20173),	--
-						i(20180),	--
-						i(20183),	--
-						i(20187),	--
-						i(20192),	--
-						i(20198),	--
-						i(20200),	--
-						i(20206),	--
-						i(20209),	--
-						i(20152),	--
-						i(20157),	--
-						i(20162),	--
-						i(20164),	--
-						i(20169),	--
-						i(20172),	--
-						i(20178),	--
-						i(20182),	--
-						i(20188),	--
-						i(20191),	--
-						i(20197),	--
-						i(20201),	--
-						i(20207),	--
-						i(20210),	--
-						i(20131),	--
+					na(2814, {	-- Narj Deepslice <Butcher>
+						i(4609),	-- Recipe: Barbecued Buzzard Wing
 					}),
-					h(n(2819, {	-- Tunkk <Leatherworking Supplies>
-						i(13287, {	-- Pattern: Raptor Hide Harness
-							i(4455),	-- Raptor Hide Harness
-						}),
-					})),
+					--[[
+					nh(9976, {	-- Tharlidun <Stable Master>
+						i(37460),	-- Rope Pet Leash
+					}),
+					]]--
+					nh(2819, {	-- Tunkk <Leatherworking Supplies>
+						i(13287), 	-- Pattern: Raptor Hide Harness
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

@@ -27,6 +27,9 @@ profession(333, { -- Enchanting
 		i(6342),	-- Formula: Enchant Chest - Minor Mana [Random Drop - Should probably be summarized: https://www.wowhead.com/item=6342/formula-enchant-chest-minor-mana]
 		-- i(6346),	-- Formula: Enchant Chest - Lesser Mana [From 2 Vendors - Done]
 		i(11039),	-- Formula: Enchant Cloak - Minor Agility [Random Drop - Should probably be summarized: https://www.wowhead.com/item=11039/formula-enchant-cloak-minor-agility]
+		-- i(11152),	-- Formula: Enchant Gloves - Fishing [From 4 Drops - Done]
+		i(78343),	-- Formula: Enchant Gloves - Herbalism [Random Drop - Should probably be summarized: https://www.wowhead.com/item=78343/formula-enchant-gloves-herbalism]
+		-- i(11150),	-- Formula: Enchant Gloves - Mining [From 1 Vendor - Done]
 		i(11081),	-- Formula: Enchant Shield - Lesser Protection [Random Drop - Should probably be summarized: https://www.wowhead.com/item=11081/formula-enchant-shield-lesser-protection]
 		-- i(28282),	-- Formula: Enchant Shield - Major Stamina [From 1 Vendor - Done]
 		i(6348),	-- Formula: Enchant Weapon - Minor Beastslayer [Random Drop - Should probably be summarized: https://www.wowhead.com/item=6348/formula-enchant-weapon-minor-beastslayer]
@@ -37,8 +40,8 @@ profession(333, { -- Enchanting
 		-- i(20758),	-- Formula: Minor Wizard Oil [From 31 Vendors - Done]
 		-- i(20755),	-- Formula: Wizard Oil [From 1 Vendor - Done]
 		-- i(22562),	-- Formula: Superior Mana Oil [From 3 Vendors - Done]
-		i(22563),	-- Formula: Superior Wizard Oil
-		i(22307),	-- Pattern: Enchanted Mageweave Pouch
+		-- i(22563),	-- Formula: Superior Wizard Oil [From 3 Vendors - Done]
+		-- i(22307),	-- Pattern: Enchanted Mageweave Pouch [From 3 Vendors - Done]
 		-- i(22308),	-- Pattern: Enchanted Runecloth Bag [From 1 Vendor - Done]
 	}),
 	gb(126, {	-- Enchanter's Study (Level 3)
@@ -260,6 +263,8 @@ profession(333, { -- Enchanting
 		recipe(7421),	-- Runed Copper Rod
 		recipe(14807),	-- Greater Magic Wand
 		recipe(14293),	-- Lesser Magic Wand
+		recipe(14809),	-- Lesser Mystic Wand
+		recipe(25125),	-- Minor Mana Oil
 		recipe(25124),	-- Minor Wizard Oil
 		recipe(7426),	-- Minor Absorption [Permanently enchant chest armor so it has a 2% chance per hit of giving you 10 points of damage absorption.]
 		recipe(7779),	-- Minor Agility [Permanently enchant bracers to increase Agility by 1.]
@@ -275,17 +280,36 @@ profession(333, { -- Enchanting
 		recipe(7457),	-- Minor Stamina [Permanently enchant bracers to increase Stamina by 1.]
 		recipe(7863),	-- Minor Stamina [Permanently enchant boots to increase Stamina by 1.]
 		recipe(13378),	-- Minor Stamina [Permanently enchant a shield to increase Stamina by 1.]
+		recipe(13626),	-- Minor Stats [Permanently enchant chest armor to increase all stats by 1.]
 		recipe(7782),	-- Minor Strength [Permanently enchant bracers to increase Strength by 1.]
 		recipe(7788),	-- Minor Striking [Permanently enchant a melee weapon to do 1 additional point of damage.]
 		recipe(7766),	-- Minor Versatility [Permanently enchant bracers to increase Versatility by 1.]
+		recipe(13538),	-- Lesser Absorption [Permanently enchant chest armor so it has a 5% chance per hit of giving you 25 points of damage absorption.]
+		recipe(13637),	-- Lesser Agility [Permanently enchant boots to increase Agility by 3.]
+		recipe(13646),	-- Lesser Dodge [Permanently enchant bracers to increase dodge by 3.]
 		recipe(7748),	-- Lesser Health [Permanently enchant chest armor to increase health by 15.]
+		recipe(13529),	-- Lesser Impact [Permanently enchant a two-handed melee weapon to do 3 additional points of damage.]
 		recipe(7793),	-- Lesser Intellect [Permanently enchant a two-handed melee weapon to increase Intellect by 3.]
+		recipe(13622),	-- Lesser Intellect [Permanently enchant bracers to increase Intellect by 3.]
 		recipe(7776),	-- Lesser Mana [Permanently enchant chest armor to increase mana by 12.]
 		recipe(13421),	-- Lesser Protection [Permanently enchant a cloak to increase armor by 2.]
 		recipe(13464),	-- Lesser Protection [Permanently enchant a shield to increase armor by 3.]
+		recipe(13501),	-- Lesser Stamina [Permanently enchant bracers to increase Stamina by 3.]
+		recipe(13644),	-- Lesser Stamina [Permanently enchant boots to increase Stamina by 3.]
+		recipe(13631),	-- Lesser Stamina [Permanently enchant a shield to increase Stamina by 3.]
+		recipe(13536),	-- Lesser Strength [Permanently enchant bracers to increase Strength by 3.]
+		recipe(13503),	-- Lesser Striking [Permanently enchant a melee weapon to do 2 additional points of damage.]
 		recipe(13380),	-- Lesser Versatility [Permanently enchant a two-handed melee weapon to increase Versatility by 3.]
 		recipe(7859),	-- Lesser Versatility [Permanently enchant bracers to increase Versatility by 3.]
+		recipe(13485),	-- Lesser Versatility [Permanently enchant a shield to increase Versatility by 3.]
+		recipe(13635),	-- Defense [Permanently enchant a cloak to increase armor by 3.]
+		recipe(13620),	-- Fishing [Permanently enchant gloves to increase Fishing skill by 2.]
 		recipe(7857),	-- Health [Permanently enchant chest armor to increase health by 25.]
+		recipe(13617),	-- Herbalism [Permanently enchant gloves to increase Herbalism skill by 2.]
+		recipe(13607),	-- Mana [Permanently enchant chest armor to increase mana by 20.]
+		recipe(13612),	-- Mining [Permanently enchant gloves to increase Mining skill by 2.]
+		recipe(13642),	-- Versatility [Permanently enchant bracers to increase Versatility by 5.]
+		recipe(13640),	-- Greater Health [Permanently enchant chest armor to increase health by 35.]   (No listed locations?)
 		
 		-- BC
 		
