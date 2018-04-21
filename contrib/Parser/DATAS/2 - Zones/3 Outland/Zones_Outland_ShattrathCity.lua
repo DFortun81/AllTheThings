@@ -7,16 +7,17 @@ _.Zones =
 		m(481, { -- Shattrath City
 			["groups"] = {
 				n( -3, {	-- Holidays
-					n(-47, {     -- Lunar Festival
+					n(-47, {	-- Lunar Festival
 						["groups"] = {
 							n(-17, {	-- Quests
 								qg(15895, q(8867)),	-- Lunar Fireworks
+								qg(15895, q(8883)),	-- Valadar Starsong
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-51, {     -- Noblegarden
+					n(-51, {	-- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qg(20102, qa(13484)),	-- Spring Collectors 
@@ -26,7 +27,7 @@ _.Zones =
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-52, {     -- Children's Week
+					n(-52, {	-- Children's Week
 						["groups"] = {
 							n(-17, { 	-- Quests
 		--						CHILDREN'S WEEK NIGHTMARE - BLOOD ELF ORPHAN
@@ -60,7 +61,7 @@ _.Zones =
 						["achievementID"] = 1793, -- For The Children
 						["u"] = 20,
 					}),	
-					n(-53, {     -- Midsummer Fire Festival
+					n(-53, {	-- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qa( 9365, {	-- A Thief's Reward
@@ -76,12 +77,32 @@ _.Zones =
 								qg(16817, qa(11964)),	-- Incense for the Summer Scorchlings
 								qg(16818, qh(11966)),	-- Incense for the Festival Scorchlings
 								qg(25962, qa(11882)),	-- Playing with Fire
+								q( 11954, {	-- Striking Back
+									["g"] = {
+									},
+									["qg"] = 26221,	-- Earthen Ring Elder
+								}),
+								qa(11970, {	-- The Master of Summer Lore
+									["g"] = {
+									},
+									["qg"] = 20102,	-- Goblin Commoner
+								}),
+								qh(11971, {	-- The Spinner of Summer Tales
+									["g"] = {
+									},
+									["qg"] = 20102,	-- Goblin Commoner
+								}),
+								q( 11886, {	-- Unusual Activity
+									["g"] = {
+									},
+									["qg"] = 26221,	-- Earthen Ring Elder
+								}),
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
 						["u"] = 21,
 					}),
-					n(-58, { -- Hallow's End
+					n(-58, {	-- Hallow's End
 						["groups"] = {
 							n(-17, { -- Quests
 								["groups"] = {
@@ -101,6 +122,11 @@ _.Zones =
 										},
 										["qg"] = 20102,	-- Goblin Commoner
 									}),
+									qh(11357, {	-- Masked Orphan Matron
+										["g"] = {
+										},
+										["qg"] = 20102,	-- Goblin Commoner
+									}),
 								},
 							}),
 							-- n(-2, { -- Vendors
@@ -109,7 +135,25 @@ _.Zones =
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,
 					}),
-					n(-56, {     -- Brewfest
+					n(-60, {	-- Pilgrim's Bounty
+						["groups"]  = {
+							n(-17, { 	-- Quests
+								qa(14022, {	-- Pilgrim's Bounty
+									["g"] = {
+									},
+									["qg"] = 20102,	-- Goblin Commoner
+								}),
+								qh(14036, {	-- Pilgrim's Bounty
+									["g"] = {
+									},
+									["qg"] = 20102,	-- Goblin Commoner
+								}),
+							}),
+						},
+						["achievementID"] = 3478, -- Pilgrim
+						["u"] = 28,
+					}),	
+					n(-56, {	-- Brewfest
 						["groups"] = {
 							n(-17, { -- Quests
 								qh(11446, {	-- Brewfest!
@@ -122,7 +166,7 @@ _.Zones =
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),
-					n(-61, {     -- Feast of Winter Veil
+					n(-61, {	-- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qg(23064, qa(7025)), -- Greatfather Winter is Here!	
@@ -151,11 +195,11 @@ _.Zones =
 					}),
 				}),
 				n(-17, {	-- Quests
-					q(10112, {	-- A Personal Favor
+					q( 10112, {	-- A Personal Favor
 						i(25927),
 						i(31724),
 					}),
-					q(10210, {	-- A'dal
+					q( 10210, {	-- A'dal
 						["g"] = {
 						},
 						["qg"] = 19684,	-- Haggard War Veteran
@@ -259,28 +303,12 @@ _.Zones =
 							i(33871),	-- Recipe: Stormchops
 						}),
 					}),
---[[					
-					qh(11357),	-- Masked Orphan Matron
-					q( 29681),	-- Maximum Security Breakout
-					q( 10658),	-- More Sunfury Signets
-					q( 10547),	-- Of Thistleheads and Eggs...
-					q( 10004),	-- Patience and Understanding
-					qa(14022),	-- Pilgrim's Bounty
-					qh(14036),	-- Pilgrim's Bounty
-					qa(11882),	-- Playing with Fire
---]]
 					q( 10037, {	-- Rather Be Fishin'
 						["g"] = {
 							i(25978)	-- Seth's Graphite Fishing Pole
 						},
 						["qg"] = 18653,	-- Seth
 					}),
---[[
-					q( 11517),	-- Report to Nasuun
-					q( 11534),	-- Report to Nasuun
-					q( 11039),	-- Report to Spymaster Thalodien
-					q( 10889),	-- Return to Shattrath
-]]--
 					q( 11377, {	-- Revenge is Tasty
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin
@@ -298,17 +326,17 @@ _.Zones =
 							i(33871),	-- Recipe: Stormchops
 						}),
 					}),
---[[
-					qh(29660),	-- Saving the Botanica
-					qa(10863),	-- Secrets of the Arakkoa
-					q( 10849),	-- Seek Out Kirrik
-					q( 10659),	-- Single Sunfury Signet
---]]					
-					q( 10898,  {  -- Skywing
-						i(31766),
-						i(31765),
-						i(31764),
-						i(31760),  --PET!
+					q( 10849, {	-- Seek Out Kirrik
+						["g"] = {
+						},
+						["qg"] = 22292,	-- Rilak the Redeemed
+						["sourceQuests"] = { 10847 },	-- The Eyes of Skettis *UNTESTED*
+					}),
+					q( 10898, {	-- Skywing
+						i(31766),	-- Skywitch Hat
+						i(31765),	-- Redeemer's Plate
+						i(31764),	-- Stillfire Leggings
+						i(31760),	-- Miniwing (PET!)
 					}),
 					q( 11381, {	-- Soup for the Soul
 						i(33844, {	-- Barrel of Fish
@@ -327,32 +355,6 @@ _.Zones =
 							i(33871),	-- Recipe: Stormchops
 						}),
 					}),
---[[					
-					q( 10908),	-- Speak with Rilak the Redeemed
---]]					
-					q( 10280,  {  -- Special Delivery to Shattrath City
-						i(30258),
-						i(30256),
-						i(30257),
-					}),
---[[					
-					qh( 9332),	-- Stealing Darnassus's Flame
-					qh( 9331),	-- Stealing Ironforge's Flame
-					qa( 9324),	-- Stealing Orgrimmar's Flame
-					qa(11935),	-- Stealing Silvermoon's Flame
-					qh( 9330),	-- Stealing Stormwind's Flame
-					qh(11933),	-- Stealing the Exodar's Flame
-					qa( 9326),	-- Stealing the Undercity's Flame
-					qa( 9325),	-- Stealing Thunder Bluff's Flame
-					q( 11954),	-- Striking Back
-					q( 11917),	-- Striking Back
-					q( 11947),	-- Striking Back
-					q( 11948),	-- Striking Back
-					q( 11952),	-- Striking Back
-					q( 11953),	-- Striking Back
-					q( 11877),	-- Sunfury Attack Plans
-					q( 10656),	-- Sunfury Signets
---]]				
 					q( 11379, {	-- Super Hot Stew
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin
@@ -370,45 +372,51 @@ _.Zones =
 							i(33871),	-- Recipe: Stormchops
 						}),
 					}),
---[[					
-					qh(10862),	-- Surrender to the Horde
-					q( 10416),	-- Synthesis of Power
-					q( 13082),	-- The Boon of A'dal
---]]
+					q( 13082, {	-- The Boon of A'dal
+						["g"] = {
+						},
+						["qg"] = 18481,	-- A'dal
+						["sourceQuests"] = { 13081 },	-- The Will of the Naaru *UNTESTED*
+					}),
 					q( 10550, {	-- The Bundle of Bloodthistle
 						["g"] = {
 						},
 						["qg"] = 21411,	-- Tobias the Filth Gorger
 						["sourceQuests"] = { 10547 },	-- Of Thistleheads and Eggs...
 					}),
---[[
-					q( 29658),	-- The Calculator
-					q( 10847),	-- The Eyes of Skettis
-					q( 10948),	-- The Hostage Soul
-					qa( 8871),	-- The Lunar Festival
-					qh( 8875),	-- The Lunar Festival
-					qa( 8872),	-- The Lunar Festival
-					qa( 8870),	-- The Lunar Festival
-					qh( 8873),	-- The Lunar Festival
-					qh( 8874),	-- The Lunar Festival
-					qa(11970),	-- The Master of Summer Lore
-					q( 10251),	-- The Master's Grand Design?
-					q( 10879),	-- The Skettis Offensive
-					qh(11971),	-- The Spinner of Summer Tales
-					q( 40168),	-- The Swirling Vial
---]]
+					q( 10847, {	-- The Eyes of Skettis
+						["g"] = {
+						},
+						["qg"] = 22292,	-- Rilak the Redeemed
+						["breadcrumbQuestID"] = { 10863, 10908, 10862 },	-- Secrets of the Arakkoa, Speak with Rilak the Redeemed, or Surrender to the Horde
+					}),
+					q( 10251, {	-- The Master's Grand Design?
+						["g"] = {
+						},
+						["qg"] = 19720,	-- "Dirty" Larry
+						["sourceQuests"] = { 10231 },	-- What Book?  I Don't See Any Book. *UNTESTED*
+					}),
+					q( 10879, {	-- The Skettis Offensive
+						["g"] = {
+							i(31727),	-- Choker of Bloodied Feathers
+							i(31726),	-- Necklace of Bloodied Feathers
+						},
+						["qg"] = 22373,	-- Defender Grashna
+						["sourceQuests"] = { 10874 },	-- Veil Shalas: Signal Fires *UNTESTED*
+					}),
 					q( 10883, {	-- The Tempest Key
 						["g"] = {
 						},
 						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuests"] = { 10588 },	-- The Cipher of Damnation
 					}),
---[[
-					q( 13081),	-- The Will of the Naaru
-					q( 11098),	-- To Skettis!
-					q( 13430),	-- Trial of the Naaru: Magtheridon
-					q( 10888),	-- Trial of the Naaru: Magtheridon
---]]
+					qr(q(13430, {	-- Trial of the Naaru: Magtheridon
+						["g"] = {
+						},
+						["qg"] = 18481,	-- A'dal
+						-- ["sourceQuests"] = {  },	-- UNKNOWN
+					})),
+--					q(10888),	-- Trial of the Naaru: Magtheridon (REMOVED / REPLACED WITH PREVIOUS QUEST)
 					qdg(q(10884, {	-- Trial of the Naaru: Mercy
 						["g"] = {
 						},
@@ -433,19 +441,6 @@ _.Zones =
 						["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 						-- ["sourceQuests"] = {  },	-- UNKNOWN IF HAS SOURCE
 					})),
---[[
-					q( 10507,  {  -- Turning Point - Scryer 
-						i(30375),
-						i(30372),
-						i(30373),
-						i(30374),
-						i(30859),
-					}),
-					q( 29674),	-- Unbound Darkness
-					q( 11886),	-- Unusual Activity
-					q(  8883),	-- Valadar Starsong
-					q( 10553),	-- Voren'thal the Seer
---]]
 					qdg(q(11369, {	-- Wanted: A Black Stalker Egg
 						["g"] = {
 						},
@@ -455,42 +450,63 @@ _.Zones =
 						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
-						["qg"] = 24370,	-- Nether-Stalker Mah-duun
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
---					q( 11371),	-- Wanted: Coilfang Myrmidons
+					qdg(q(11371, {	-- Wanted: Coilfang Myrmidons
+						["g"] = {
+							i(29460),	-- Ethereum Prison Key
+						},
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+					})),
 					qdg(q(11376, {	-- Wanted: Malicious Instructors
 						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
-						["qg"] = 24370,	-- Nether-Stalker Mah-duun
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
 					qdg(q(11383, {	-- Wanted: Rift Lords
 						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
-						["qg"] = 24370,	-- Nether-Stalker Mah-duun
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
---[[
-					q( 11364),	-- Wanted: Shattered Hand Centurions
-					q( 11500),	-- Wanted: Sisters of Torment
-					q( 11385),	-- Wanted: Sunseeker Channelers
-					q( 11387),	-- Wanted: Tempest-Forge Destroyers
-					q( 10231),	-- What Book? I Don't See Any Book.
-					q(  9979),	-- Wind Trader Lathrai
-					q( 29657),	-- With Great Power, Comes Great Responsibility
-					qa(11045),	-- Zorus the Judicator
---]]
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					faction(932, {	-- The Aldor
+					qdg(q(11364, {	-- Wanted: Shattered Hand Centurions
+						["g"] = {
+							i(29460),	-- Ethereum Prison Key
+						},
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+					})),
+					qdg(q(11500, {	-- Wanted: Sisters of Torment
+						["g"] = {
+							i(29460),	-- Ethereum Prison Key
+						},
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+					})),
+					qdg(q(11385, {	-- Wanted: Sunseeker Channelers
+						["g"] = {
+							i(29460),	-- Ethereum Prison Key
+						},
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+					})),
+					qdg(q(11387, {	-- Wanted: Tempest-Forge Destroyers
+						["g"] = {
+							i(29460),	-- Ethereum Prison Key
+						},
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+					})),
+					q( 10231, {	-- What Book? I Don't See Any Book.
+						["g"] = {
+						},
+						["qg"] = 19715,	-- Ezekiel
+						["sourceQuests"] = { 10228 },	-- Ezekiel *UNTESTED*
+					}),
+					qa(11045, {	-- Zorus the Judicator
+						["g"] = {
+						},
+						["qg"] = 19678,	-- Fantei
+						["isBreadcrumb"] = true,	-- for "A Ghost in the Machine" in SMV, mutually exclusive w/other bcrumbs
+					}),
+					faction( 932, {	-- The Aldor
 						q(10551, {	-- Allegiance to the Aldor
 							["g"] = {
 							},
@@ -605,15 +621,6 @@ _.Zones =
 							["sourceQuests"] = { 10017 },	-- Strained Supplies
 						}),
 					}),
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					faction(1011, {	-- Lower City
 						q(10917,  {  -- The Outcast's Plight
 							["g"] = {
@@ -648,15 +655,6 @@ _.Zones =
 							["sourceQuests"] = { 10917 },	-- The Outcast's Plight
 						})),
 					}),
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					faction(1015, {	-- Netherwing
 						q(11109, {	-- Jorus the Cobalt Netherwing Drake
 							["groups"] = {
@@ -695,15 +693,6 @@ _.Zones =
 							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
 						}),
 					}),
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					faction(1038, {	-- Ogri'la
 						q(10984, {	-- Speak with the Ogre
 							["g"] = {
@@ -718,17 +707,7 @@ _.Zones =
 							["breadcrumbQuestID"] = { 10984 },	-- Speak with the Ogre
 						}),
 					}),
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					faction(934, {	-- The Scryers
+					faction( 934, {	-- The Scryers
 						q(10552, {	-- Allegiance to the Scryers
 							["g"] = {
 							},
@@ -750,26 +729,45 @@ _.Zones =
 						}),
 						
 						
+						q(10416),	-- Synthesis of Power
 						q(10419),	-- Arcane Tomes
 						q(11482),	-- Duty Calls
 						q(10412),	-- Firewing Signets
 						q(10415),	-- More Firewing Signets
 						q(10414),	-- Single Firewing Signet
+						q(10656),	-- Sunfury Signets
+						q(10658),	-- More Sunfury Signets
+						q(10659),	-- Single Sunfury Signet
+						q(11039, {	-- Report to Spymaster Thalodien
+							["g"] = {
+							},
+							["qgs"] = { 23273, 23272 },	-- Arcanist Raestan, Arcanist Savan
+							-- ["sourceQuests"] = {  },	-- UNTESTED
+						}),
+						q(10507, {	-- Turning Point
+							["g"] = {
+								i(30375),	-- Gauntlets of the Vanquisher
+								i(30372),	-- Socrethar's Girdle
+								i(30373),	-- Netherfused Pauldrons
+								i(30374),	-- Greaves of Spellpower
+								i(30859),	-- Wand of the Seer
+							},
+							["qg"] = 18530,	-- Voren'thal the Seer
+							["sourceQuests"] = { 10509 },	-- Bound for Glory *UNTESTED*
+						}),
+						q(10553),	-- Voren'thal the Seer
 					}),
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					faction(1031, {	-- Sha'tari Skyguard
 						q(11096, {	-- Threat from Above
 							["g"] = {
 							},
 							["qg"] = 23449,	-- Yuula
+						}),
+						q(11098, {	-- To Skettis!
+							["g"] = {
+							},
+							["qg"] = 23449,	-- Yuula
+							["sourceQuests"] = { 11096 },	-- Threat From Above *UNTESTED*
 						}),
 						q(11028, {	-- Countdown to Doom
 							["g"] = {
@@ -778,16 +776,6 @@ _.Zones =
 							["sourceQuests"] = { 11024 },	-- An Ally in Lower City *UNTESTED*
 						}),
 					}),
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					faction(1077, {	-- Shattered Sun Offensive
 						q(11877, {	-- Sunfury Attack Plans
 							["g"] = {
