@@ -384,6 +384,12 @@ end
 follower = function(id, t)								-- Create an FOLLOWER Object
 	return struct("followerID", id, t);
 end
+garrisonBuilding = function(id, t)						-- Create an GARRISON BUILDING Object
+	return struct("buildingID", id, t);
+end
+gb = function(id, t)									-- Create an GARRISON BUILDING Object (Alternative)
+	return struct("buildingID", id, t);
+end
 gs = function(id, t)									-- Create a GEAR SET Object (IE: "Vestments of Prophecy")
 	return struct("setID", id, t);
 end

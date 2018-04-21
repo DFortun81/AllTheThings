@@ -2846,7 +2846,7 @@ app.CreateFilter = function(id, t)
 	return createInstance(constructor(id, t, "filterID"), app.BaseFilter);
 end
 
--- Follower Lib
+-- Garrison Follower Lib
 app.BaseFollower = {
 	__index = function(t, key)
 		if key == "key" then
@@ -2876,6 +2876,31 @@ app.BaseFollower = {
 app.CreateFollower = function(id, t)
 	return createInstance(constructor(id, t, "followerID"), app.BaseFollower);
 end
+
+-- /dump C_Garrison.GetBuildingInfo(1)
+-- Garrison Building Lib
+-- id, name, texPrefix, icon, description, rank, currencyID, currencyQty, goldQty, buildTime, needsPlan, isPrebuilt, possSpecs, upgrades, canUpgrade, isMaxLevel, hasFollowerSlot = C_Garrison.GetBuildingInfo(BuildingID)
+-- https://wow.gamepedia.com/API_C_Garrison.GetBuildingInfo
+app.BaseGarrisonBuilding = {
+	__index = function(t, key)
+		if key == "key" then
+			return "buildingID";
+		elseif key == "text" then
+			return select(2, C_Garrison.GetBuildingInfo(t.buildingID));
+		elseif key == "icon" then
+			return select(4, C_Garrison.GetBuildingInfo(t.buildingID));
+		elseif key == "description" then
+			return select(5, C_Garrison.GetBuildingInfo(t.buildingID));
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateGarrisonBuilding = function(id, t)
+	return createInstance(constructor(id, t, "buildingID"), app.BaseGarrisonBuilding);
+end
+
 
 -- Heirloom Lib
 app.BaseHeirloom = {
