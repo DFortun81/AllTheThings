@@ -5590,6 +5590,28 @@ _.Zones =
 						i(140309),	-- Prismatic Bauble Toy
 						i(137570),	-- Blood Fang Cocoon
 					}),
+					n(28721, { -- Tiffany Cartier <Jewelcrafting Supplies>
+						["groups"] = {
+							i(137834),	-- Design: Ancient Maelstrom Amulet
+							i(137819),	-- Design: Azsunite Loop
+							i(137834),	-- Design: Ancient Maelstrom Amulet
+							i(137819),	-- Design: Azsunite Loop
+							i(137822),	-- Design: Azsunite Pendant
+							i(137827),	-- Design: Blessed Dawnlight Medallion
+							i(137817),	-- Design: Deep Amber Loop
+							i(137820),	-- Design: Deep Amber Pendant
+							i(137837),	-- Design: Grim Furystone Gorget
+							i(137833),	-- Design: Intrepid Necklace of Prophecy
+							i(137862),	-- Design: Queen's Opal Loop
+							i(137863),	-- Design: Queen's Opal Pendant
+							i(137836),	-- Design: Raging Furystone Gorget
+							i(137835),	-- Design: Righteous Dawnlight Medallion
+							i(137818),	-- Design: Skystone Loop
+							i(137821),	-- Design: Skystone Pendant
+							i(137832),	-- Design: Sylvan Maelstrom Amulet
+							i(137830),	-- Design: Tranquil Necklace of Prophecy
+						},
+					}),
 					na(98723, { -- Tiffy Trapspring <Exotic Pets and Accessories>
 						i(116415, { -- Pet Charm
 							i(127704), -- Bloodthorn Hatchling Pet
