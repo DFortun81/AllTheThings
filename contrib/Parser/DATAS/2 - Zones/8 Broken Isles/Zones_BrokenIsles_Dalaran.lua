@@ -591,6 +591,464 @@ _.Zones =
 						},
 						["requiredSkill"] = 197, -- Tailoring
 					}),
+					n(92183, { -- Alard Schmied <Blacksmithing Trainer>
+						["groups"] = {
+							recipe(19669),	-- Arcanite Skeleton Key
+							recipe(10001),	-- Big Black Mace
+							recipe(3491),	-- Big Bronze Knife
+							recipe(59436),	-- Brilliant Saronite Belt
+							recipe(55057),	-- Brilliant Saronite Boots
+							recipe(59438),	-- Brilliant Saronite Bracers
+							recipe(55058),	-- Brilliant Saronite Breastplate
+							recipe(55056),	-- Brilliant Saronite Gauntlets
+							recipe(59441),	-- Brilliant Saronite Helm
+							recipe(55055),	-- Brilliant Saronite Legplates
+							recipe(59440),	-- Brilliant Saronite Pauldrons
+							recipe(55374),	-- Brilliant Titansteel Helm
+							recipe(55377),	-- Brilliant Titansteel Treads
+							recipe(2741),	-- Bronze Axe
+							recipe(9987),	-- Bronze Battle Axe
+							recipe(9986),	-- Bronze Greatsword
+							recipe(2740),	-- Bronze Mace
+							recipe(2742),	-- Bronze Shortsword
+							recipe(9985),	-- Bronze Warhammer
+							recipe(3326),	-- Coarse Grinding Stone
+							recipe(2665),	-- Coarse Sharpening Stone
+							recipe(3116),	-- Coarse Weightstone
+							recipe(52568),	-- Cobalt Belt
+							recipe(52569),	-- Cobalt Boots
+							recipe(55834),	-- Cobalt Bracers
+							recipe(52570),	-- Cobalt Chestpiece
+							recipe(55835),	-- Cobalt Gauntlets
+							recipe(52571),	-- Cobalt Helm
+							recipe(52567),	-- Cobalt Legplates
+							recipe(52572),	-- Cobalt Shoulders
+							recipe(59405),	-- Cobalt Skeleton Key
+							recipe(55201),	-- Cobalt Tenderizer
+							recipe(54550),	-- Cobalt Triangle Shield
+							recipe(76434),	-- Cold-Forged Shank
+							recipe(2738),	-- Copper Axe
+							recipe(3293),	-- Copper Battle Axe
+							recipe(2661),	-- Copper Chain Belt
+							recipe(3319),	-- Copper Chain Boots
+							recipe(2662),	-- Copper Chain Pants
+							recipe(9983),	-- Copper Claymore
+							recipe(8880),	-- Copper Dagger
+							recipe(2737),	-- Copper Mace
+							recipe(2739),	-- Copper Shortsword
+							recipe(56280),	-- Cudgel of Saronite Justice
+							recipe(55301),	-- Daunting Handguards
+							recipe(55303),	-- Daunting Legplates
+							recipe(55206),	-- Deadly Saronite Dirk
+							recipe(76433),	-- Decapitator's Razor
+							recipe(16639),	-- Dense Grinding Stone
+							recipe(16641),	-- Dense Sharpening Stone
+							recipe(16640),	-- Dense Weightstone
+							recipe(76441),	-- Elementium Shield Spike
+							recipe(55656),	-- Eternal Belt Buckle
+							recipe(29550),	-- Fel Iron Breastplate
+							recipe(29553),	-- Fel Iron Chain Bracers
+							recipe(29551),	-- Fel Iron Chain Coif
+							recipe(29552),	-- Fel Iron Chain Gloves
+							recipe(29556),	-- Fel Iron Chain Tunic
+							recipe(29565),	-- Fel Iron Greatsword
+							recipe(29558),	-- Fel Iron Hammer
+							recipe(29557),	-- Fel Iron Hatchet
+							recipe(29547),	-- Fel Iron Plate Belt
+							recipe(29548),	-- Fel Iron Plate Boots
+							recipe(29545),	-- Fel Iron Plate Gloves
+							recipe(29549),	-- Fel Iron Plate Pants
+							recipe(29654),	-- Fel Sharpening Stone
+							recipe(34607),	-- Fel Weightstone
+							recipe(76435),	-- Fire-Etched Dagger
+							recipe(76178),	-- Folded Obsidium
+							recipe(55203),	-- Forged Cobalt Claymore
+							recipe(122637),	-- Forgewire Axe
+							recipe(55182),	-- Furious Saronite Beatstick
+							recipe(122641),	-- Ghost Shard
+							recipe(122583),	-- Ghost-Forged Belt
+							recipe(122638),	-- Ghost-Forged Blade
+							recipe(122582),	-- Ghost-Forged Boots
+							recipe(122581),	-- Ghost-Forged Bracers
+							recipe(122578),	-- Ghost-Forged Breastplate
+							recipe(122579),	-- Ghost-Forged Gauntlets
+							recipe(122576),	-- Ghost-Forged Helm
+							recipe(122580),	-- Ghost-Forged Legplates
+							recipe(122577),	-- Ghost-Forged Shoulders
+							recipe(122633),	-- Ghostly Skeleton Key
+							recipe(15972),	-- Glinting Steel Dagger
+							recipe(7223),	-- Golden Scale Bracers
+							recipe(19667),	-- Golden Skeleton Key
+							recipe(3501),	-- Green Iron Bracers
+							recipe(3508),	-- Green Iron Hauberk
+							recipe(3502),	-- Green Iron Helm
+							recipe(3506),	-- Green Iron Leggings
+							recipe(76181),	-- Hardened Obsidium Belt
+							recipe(76182),	-- Hardened Obsidium Boots
+							recipe(76179),	-- Hardened Obsidium Bracers
+							recipe(76261),	-- Hardened Obsidium Breastplate
+							recipe(76180),	-- Hardened Obsidium Gauntlets
+							recipe(76260),	-- Hardened Obsidium Helm
+							recipe(76259),	-- Hardened Obsidium Legguards
+							recipe(76291),	-- Hardened Obsidium Shield
+							recipe(76258),	-- Hardened Obsidium Shoulders
+							recipe(3296),	-- Heavy Bronze Mace
+							recipe(3292),	-- Heavy Copper Broadsword
+							recipe(7408),	-- Heavy Copper Maul
+							recipe(3337),	-- Heavy Grinding Stone
+							recipe(9993),	-- Heavy Mithril Axe
+							recipe(9968),	-- Heavy Mithril Boots
+							recipe(9959),	-- Heavy Mithril Breastplate
+							recipe(9928),	-- Heavy Mithril Gauntlet
+							recipe(9926),	-- Heavy Mithril Shoulder
+							recipe(2674),	-- Heavy Sharpening Stone
+							recipe(3117),	-- Heavy Weightstone
+							recipe(55302),	-- Helm of Command
+							recipe(55174),	-- Honed Cobalt Cleaver
+							recipe(54949),	-- Horned Cobalt Helm
+							recipe(16971),	-- Huge Thorium Battleaxe
+							recipe(61008),	-- Icebane Chestguard
+							recipe(61009),	-- Icebane Girdle
+							recipe(61010),	-- Icebane Treads
+							recipe(16647),	-- Imperial Plate Belt
+							recipe(16657),	-- Imperial Plate Boots
+							recipe(16649),	-- Imperial Plate Bracers
+							recipe(16663),	-- Imperial Plate Chest
+							recipe(16658),	-- Imperial Plate Helm
+							recipe(16730),	-- Imperial Plate Leggings
+							recipe(16646),	-- Imperial Plate Shoulders
+							recipe(8768),	-- Iron Buckle
+							recipe(32284),	-- Lesser Rune of Warding
+							recipe(76436),	-- Lifeforce Hammer
+							recipe(122635),	-- Lightsteel Shield
+							recipe(9961),	-- Mithril Coif
+							recipe(9931),	-- Mithril Scale Pants
+							recipe(55204),	-- Notched Cobalt War Axe
+							recipe(76474),	-- Obsidium Bladespear
+							recipe(76437),	-- Obsidium Executioner
+							recipe(76438),	-- Obsidium Skeleton Key
+							recipe(56549),	-- Ornate Saronite Bracers
+							recipe(56553),	-- Ornate Saronite Gauntlets
+							recipe(56555),	-- Ornate Saronite Hauberk
+							recipe(56554),	-- Ornate Saronite Legplates
+							recipe(56550),	-- Ornate Saronite Pauldrons
+							recipe(56556),	-- Ornate Saronite Skullshield
+							recipe(56551),	-- Ornate Saronite Waistguard
+							recipe(56552),	-- Ornate Saronite Walkers
+							recipe(16969),	-- Ornate Thorium Handaxe
+							recipe(2672),	-- Patterned Bronze Bracers
+							recipe(6517),	-- Pearl-handled Dagger
+							recipe(122639),	-- Phantasmal Hammer
+							recipe(76264),	-- Redsteel Belt
+							recipe(76265),	-- Redsteel Boots
+							recipe(76262),	-- Redsteel Bracers
+							recipe(76270),	-- Redsteel Breastplate
+							recipe(76263),	-- Redsteel Gauntlets
+							recipe(76269),	-- Redsteel Helm
+							recipe(76267),	-- Redsteel Legguards
+							recipe(76266),	-- Redsteel Shoulders
+							recipe(239415),	-- Rethu's Incessant Courage
+							recipe(55300),	-- Righteous Gauntlets
+							recipe(55304),	-- Righteous Greaves
+							recipe(7817),	-- Rough Bronze Boots
+							recipe(2670),	-- Rough Bronze Cuirass
+							recipe(2668),	-- Rough Bronze Leggings
+							recipe(3328),	-- Rough Bronze Shoulders
+							recipe(3320),	-- Rough Grinding Stone
+							recipe(2666),	-- Runed Copper Belt
+							recipe(2664),	-- Runed Copper Bracers
+							recipe(3323),	-- Runed Copper Gauntlets
+							recipe(3324),	-- Runed Copper Pants
+							recipe(55179),	-- Saronite Ambusher
+							recipe(55014),	-- Saronite Bulwark
+							recipe(54557),	-- Saronite Defender
+							recipe(55185),	-- Saronite Mindcrusher
+							recipe(55013),	-- Saronite Protector
+							recipe(55181),	-- Saronite Shiv
+							recipe(59442),	-- Saronite Spellblade
+							recipe(55177),	-- Savage Cobalt Slicer
+							recipe(55305),	-- Savage Saronite Bracers
+							recipe(55309),	-- Savage Saronite Gauntlets
+							recipe(55311),	-- Savage Saronite Hauberk
+							recipe(55310),	-- Savage Saronite Legplates
+							recipe(55306),	-- Savage Saronite Pauldrons
+							recipe(55312),	-- Savage Saronite Skullshield
+							recipe(55307),	-- Savage Saronite Waistguard
+							recipe(55308),	-- Savage Saronite Walkers
+							recipe(2675),	-- Shining Silver Breastplate
+							recipe(19666),	-- Silver Skeleton Key
+							recipe(3331),	-- Silvered Bronze Boots
+							recipe(3333),	-- Silvered Bronze Gauntlets
+							recipe(9920),	-- Solid Grinding Stone
+							recipe(9918),	-- Solid Sharpening Stone
+							recipe(9921),	-- Solid Weightstone
+							recipe(54946),	-- Spiked Cobalt Belt
+							recipe(54918),	-- Spiked Cobalt Boots
+							recipe(54948),	-- Spiked Cobalt Bracers
+							recipe(54944),	-- Spiked Cobalt Chestpiece
+							recipe(54945),	-- Spiked Cobalt Gauntlets
+							recipe(54917),	-- Spiked Cobalt Helm
+							recipe(54947),	-- Spiked Cobalt Legplates
+							recipe(54941),	-- Spiked Cobalt Shoulders
+							recipe(55372),	-- Spiked Titansteel Helm
+							recipe(55375),	-- Spiked Titansteel Treads
+							recipe(122640),	-- Spiritblade Decimator
+							recipe(122636),	-- Spiritguard Shield
+							recipe(9916),	-- Steel Breastplate
+							recipe(9935),	-- Steel Plate Helm
+							recipe(76283),	-- Stormforged Belt
+							recipe(76285),	-- Stormforged Boots
+							recipe(76280),	-- Stormforged Bracers
+							recipe(76289),	-- Stormforged Breastplate
+							recipe(76281),	-- Stormforged Gauntlets
+							recipe(76288),	-- Stormforged Helm
+							recipe(76287),	-- Stormforged Legguards
+							recipe(76293),	-- Stormforged Shield
+							recipe(76286),	-- Stormforged Shoulders
+							recipe(55200),	-- Sturdy Cobalt Quickblade
+							recipe(54551),	-- Tempered Saronite Belt
+							recipe(54552),	-- Tempered Saronite Boots
+							recipe(55017),	-- Tempered Saronite Bracers
+							recipe(54553),	-- Tempered Saronite Breastplate
+							recipe(55015),	-- Tempered Saronite Gauntlets
+							recipe(54555),	-- Tempered Saronite Helm
+							recipe(54554),	-- Tempered Saronite Legplates
+							recipe(54556),	-- Tempered Saronite Shoulders
+							recipe(55373),	-- Tempered Titansteel Helm
+							recipe(55376),	-- Tempered Titansteel Treads
+							recipe(3294),	-- Thick War Axe
+							recipe(16642),	-- Thorium Armor
+							recipe(16643),	-- Thorium Belt
+							recipe(16652),	-- Thorium Boots
+							recipe(16644),	-- Thorium Bracers
+							recipe(16653),	-- Thorium Helm
+							recipe(16662),	-- Thorium Leggings
+							recipe(56357),	-- Titanium Shield Spike
+							recipe(59406),	-- Titanium Skeleton Key
+							recipe(55839),	-- Titanium Weapon Chain
+							recipe(55370),	-- Titansteel Bonecrusher
+							recipe(55369),	-- Titansteel Destroyer
+							recipe(55371),	-- Titansteel Guardian
+							recipe(56234),	-- Titansteel Shanker
+							recipe(56400),	-- Titansteel Shield Wall
+							recipe(63182),	-- Titansteel Spellblade
+							recipe(19668),	-- Truesilver Skeleton Key
+							recipe(55298),	-- Vengeance Bindings
+						},
+						["requiredSkill"] = 164, -- Blacksmithing
+					}),
+					n(93536, { -- Awilo Lon'gomba <Cooking Trainer>
+						["groups"] = {
+							recipe(45569),	-- Baked Manta Ray
+							recipe(4094),	-- Barbecued Buzzard Wing
+							recipe(64358),	-- Black Jelly
+							recipe(88006),	-- Blackened Surprise
+							recipe(6499),	-- Boiled Clams
+							recipe(46684),	-- Charred Bear Kabobs
+							recipe(2541),	-- Coyote Steak
+							recipe(2544),	-- Crab Cake
+							recipe(58065),	-- Dalaran Clam Chowder
+							recipe(88015),	-- Darkbrew Lager
+							recipe(2546),	-- Dry Pork Ribs
+							recipe(6415),	-- Fillet of Frenzy
+							recipe(104297),	-- Fish Cake
+							recipe(42302),	-- Fisherman's Feast
+							recipe(6500),	-- Goblin Deviled Clams
+							recipe(104237),	-- Golden Carp Consomme
+							recipe(45554),	-- Great Feast
+							recipe(45561),	-- Grilled Bonescale
+							recipe(45563),	-- Grilled Sculpin
+							recipe(18240),	-- Grilled Squid
+							recipe(42305),	-- Hot Buttered Trout
+							recipe(46688),	-- Juicy Bear Burger
+							recipe(6412),	-- Kaldorei Spider Kabob
+							recipe(45549),	-- Mammoth Meal
+							recipe(18243),	-- Nightfin Soup
+							recipe(45566),	-- Pickled Fangtooth
+							recipe(45565),	-- Poached Nettlefish
+							recipe(18244),	-- Poached Sunscale Salmon
+							recipe(45553),	-- Rhino Dogs
+							recipe(45552),	-- Roasted Worg
+							recipe(45562),	-- Sauteed Goby
+							recipe(45550),	-- Shoveltusk Steak
+							recipe(45560),	-- Smoked Rockfin
+							recipe(45564),	-- Smoked Salmon
+							recipe(3400),	-- Soothing Turtle Bisque
+							recipe(37836),	-- Spice Bread
+							recipe(2539),	-- Spiced Wolf Meat
+							recipe(21175),	-- Spider Sausage
+							recipe(18238),	-- Spotted Yellowtail
+							recipe(42296),	-- Stewed Trout
+							recipe(3399),	-- Tasty Lion Steak
+							recipe(93741),	-- Venison Jerky
+							recipe(45551),	-- Worm Delight
+						},
+						["requiredSkill"] = 185, -- Cooking
+					}),
+					n(92458, { -- Deucus Valdera <Alchemy Trainer>
+						["groups"] = {
+							recipe(33740),	-- Adept's Elixir
+							recipe(114786),	-- Alchemist's Flask
+							recipe(114751),	-- Alchemist's Rejuvenation
+							recipe(11461),	-- Arcane Elixir
+							recipe(7836),	-- Blackmouth Oil
+							recipe(12609),	-- Catseye Elixir
+							recipe(80479),	-- Deathblood Venom
+							recipe(80486),	-- Deepstone Oil
+							recipe(93935),	-- Draught of War
+							recipe(15833),	-- Dreamless Sleep Potion
+							recipe(80478),	-- Earthen Potion
+							recipe(11449),	-- Elixir of Agility
+							recipe(17557),	-- Elixir of Brute Force
+							recipe(80488),	-- Elixir of Deep Earth
+							recipe(3177),	-- Elixir of Defense
+							recipe(11478),	-- Elixir of Detect Demon
+							recipe(11460),	-- Elixir of Detect Undead
+							recipe(39638),	-- Elixir of Draenic Wisdom
+							recipe(7845),	-- Elixir of Firepower
+							recipe(3450),	-- Elixir of Fortitude
+							recipe(11467),	-- Elixir of Greater Agility
+							recipe(11450),	-- Elixir of Greater Defense
+							recipe(11465),	-- Elixir of Greater Intellect
+							recipe(22808),	-- Elixir of Greater Water Breathing
+							recipe(28545),	-- Elixir of Healing Power
+							recipe(80491),	-- Elixir of Impossible Accuracy
+							recipe(39636),	-- Elixir of Major Fortitude
+							recipe(28544),	-- Elixir of Major Strength
+							recipe(33741),	-- Elixir of Mastery
+							recipe(53840),	-- Elixir of Mighty Agility
+							recipe(53898),	-- Elixir of Mighty Fortitude
+							recipe(80493),	-- Elixir of Mighty Speed
+							recipe(54218),	-- Elixir of Mighty Strength
+							recipe(60367),	-- Elixir of Mighty Thoughts
+							recipe(63732),	-- Elixir of Minor Accuracy
+							recipe(2334),	-- Elixir of Minor Fortitude
+							recipe(53847),	-- Elixir of Spirit
+							recipe(80484),	-- Elixir of the Cobra
+							recipe(80497),	-- Elixir of the Master
+							recipe(80480),	-- Elixir of the Naga
+							recipe(17555),	-- Elixir of the Sages
+							recipe(7179),	-- Elixir of Water Breathing
+							recipe(3171),	-- Elixir of Wisdom
+							recipe(58871),	-- Endless Healing Potion
+							recipe(58868),	-- Endless Mana Potion
+							recipe(62409),	-- Ethereal Oil
+							recipe(7837),	-- Fire Oil
+							recipe(53903),	-- Flask of Endless Rage
+							recipe(94162),	-- Flask of Flowing Water
+							recipe(54213),	-- Flask of Pure Mojo
+							recipe(80719),	-- Flask of Steelskin
+							recipe(53902),	-- Flask of Stoneblood
+							recipe(80720),	-- Flask of the Draconic Mind
+							recipe(53901),	-- Flask of the Frost Wyrm
+							recipe(80721),	-- Flask of the Winds
+							recipe(80723),	-- Flask of Titanic Strength
+							recipe(80477),	-- Ghost Elixir
+							recipe(80496),	-- Golemblood Potion
+							recipe(17573),	-- Greater Arcane Elixir
+							recipe(7181),	-- Greater Healing Potion
+							recipe(11448),	-- Greater Mana Potion
+							recipe(53848),	-- Guru's Elixir
+							recipe(3447),	-- Healing Potion
+							recipe(53839),	-- Icy Mana Potion
+							recipe(60403),	-- Indestructible Alchemist Stone
+							recipe(53905),	-- Indestructible Potion
+							recipe(53899),	-- Lesser Flask of Toughness
+							recipe(2337),	-- Lesser Healing Potion
+							recipe(3448),	-- Lesser Invisibility Potion
+							recipe(3173),	-- Lesser Mana Potion
+							recipe(80508),	-- Lifebound Alchemist Stone
+							recipe(45061),	-- Mad Alchemist's Potion
+							recipe(17556),	-- Major Healing Potion
+							recipe(3452),	-- Mana Potion
+							recipe(114752),	-- Master Healing Potion
+							recipe(60396),	-- Mercurial Alchemist Stone
+							recipe(38070),	-- Mercurial Stone
+							recipe(60405),	-- Mighty Alchemist Stone
+							recipe(17552),	-- Mighty Rage Potion
+							recipe(80490),	-- Mighty Rejuvenation Potion
+							recipe(2331),	-- Minor Mana Potion
+							recipe(2332),	-- Minor Rejuvenation Potion
+							recipe(80487),	-- Mysterious Potion
+							recipe(80498),	-- Mythical Healing Potion
+							recipe(80494),	-- Mythical Mana Potion
+							recipe(60893),	-- Northrend Alchemy Research
+							recipe(11451),	-- Oil of Immolation
+							recipe(33738),	-- Onslaught Elixir
+							recipe(80482),	-- Potion of Concentration
+							recipe(80725),	-- Potion of Deepholm
+							recipe(80269),	-- Potion of Illusion
+							recipe(53900),	-- Potion of Nightmares
+							recipe(80495),	-- Potion of the Tol'vir
+							recipe(80726),	-- Potion of Treasure Finding
+							recipe(80492),	-- Prismatic Elixir
+							recipe(17572),	-- Purification Potion
+							recipe(53812),	-- Pygmy Oil
+							recipe(96253),	-- Quicksilver Alchemist Stone
+							recipe(53838),	-- Resurgent Healing Potion
+							recipe(53836),	-- Runic Healing Potion
+							recipe(53837),	-- Runic Mana Potion
+							recipe(3449),	-- Shadow Oil
+							recipe(53842),	-- Spellpower Elixir
+							recipe(17551),	-- Stonescale Oil
+							recipe(3176),	-- Strong Troll's Blood Elixir
+							recipe(28551),	-- Super Healing Potion
+							recipe(11457),	-- Superior Healing Potion
+							recipe(17553),	-- Superior Mana Potion
+							recipe(7841),	-- Swim Speed Potion
+							recipe(80247),	-- Transmute: Amberjewel
+							recipe(66658),	-- Transmute: Ametrine
+							recipe(80248),	-- Transmute: Demonseye
+							recipe(66662),	-- Transmute: Dreadstone
+							recipe(80251),	-- Transmute: Dream Emerald
+							recipe(57427),	-- Transmute: Earthsiege Diamond
+							recipe(80250),	-- Transmute: Ember Topaz
+							recipe(66664),	-- Transmute: Eye of Zul
+							recipe(80245),	-- Transmute: Inferno Ruby
+							recipe(66660),	-- Transmute: King's Amber
+							recipe(78866),	-- Transmute: Living Elements
+							recipe(66663),	-- Transmute: Majestic Zircon
+							recipe(80246),	-- Transmute: Ocean Sapphire
+							recipe(80244),	-- Transmute: Pyrium Bar
+							recipe(80237),	-- Transmute: Shadowspirit Diamond
+							recipe(57425),	-- Transmute: Skyflare Diamond
+							recipe(60350),	-- Transmute: Titanium
+							recipe(80243),	-- Transmute: Truegold
+							recipe(33733),	-- Unstable Mana Potion
+							recipe(96254),	-- Vibrant Alchemist Stone
+							recipe(96252),	-- Volatile Alchemist Stone
+							recipe(33732),	-- Volatile Healing Potion
+							recipe(80481),	-- Volcanic Potion
+							recipe(3170),	-- Weak Troll's Blood Elixir
+							recipe(53841),	-- Wrath Elixir
+							recipe(136197),	-- Zen Alchemist Stone
+						},
+						["requiredSkill"] = 171, -- Alchemy
+					}),
+					n(93520, { -- Didi the Wrench <Goblin Engineering Trainer>
+						["groups"] = {
+							recipe(95707),	-- Big Daddy
+							recipe(127138),	-- Depleted-Kyparium Rocket
+							recipe(30565),	-- Foreman's Enchanted Helmet
+							recipe(30566),	-- Foreman's Reinforced Helmet
+							recipe(56514),	-- Global Thermal Sapper Charge
+							recipe(12755),	-- Goblin Bomb Dispenser
+							recipe(12718),	-- Goblin Construction Helmet
+							recipe(12908),	-- Goblin Dragon Gun
+							recipe(12717),	-- Goblin Mining Helmet
+							recipe(12716),	-- Goblin Mortar
+							recipe(8895),	-- Goblin Rocket Boots
+							recipe(12715),	-- Goblin Rocket Fuel Recipe
+							recipe(12758),	-- Goblin Rocket Helmet
+							recipe(30563),	-- Goblin Rocket Launcher
+							recipe(12760),	-- Goblin Sapper Charge
+							recipe(84412),	-- Personal World Destroyer
+							recipe(30560),	-- Super Sapper Charge
+							recipe(12754),	-- The Big One
+							recipe(30558),	-- The Bigger One
+						},
+						["requiredSkill"] = 202, -- Engineering
+					}),
 				}),
 				n(-17, { 	-- Quests
 					n(-176, { -- Weekly World Events
