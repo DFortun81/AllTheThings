@@ -2063,12 +2063,12 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 				local merged = { g = {}, total = 0, progress = 0 };
 				for i,g in ipairs(group) do
 					if g.collectible then
-						merged.collectible = g.collectible;
-						merged.collected = g.collected;
+						merged.collectible = merged.collectible or g.collectible;
+						merged.collected = merged.collected or g.collected;
 					end
 					if g.trackable then
-						merged.trackable = g.trackable;
-						merged.saved = g.saved;
+						merged.trackable = merged.trackable or g.trackable;
+						merged.saved = merged.saved or g.saved;
 					end
 					if g.g then
 						for j,s in ipairs(g.g) do
@@ -2100,8 +2100,17 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 					end
 					
 					-- Calculate totals
-					merged.total = 0;
-					merged.progress = 0;
+					if merged.collectible then
+						merged.total = 1;
+						if merged.collected then
+							merged.progress = 1;
+						else
+							merged.progress = 0;
+						end
+					else
+						merged.total = 0;
+						merged.progress = 0;
+					end
 					for j,s in ipairs(merged.g) do
 						if s.total then
 							merged.total = merged.total + s.total;
@@ -2125,53 +2134,90 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 			if rightSide then
 				if group.g then
 					if group.total and group.total > 0 then
-						rightSide:SetText(GetProgressColorText(group.progress, group.total));
+						local progress = 0;
+						local total = 0;
 						if GetDataMember("ShowContents") then
-							local first = true;
+							local headers = {};
+							local items = {};
 							for i,j in ipairs(group.g) do
 								if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
-									if j.g then
-										if not j.total or j.total < 2 then 
-											if j.collected then
-												if GetDataMember("ShowCollectedItems") then
-													if first then first = nil; self:AddLine("Contains:"); end
-													self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON"));
-												end
-											elseif j.collectible or (j.trackable and app.ShowIncompleteQuests(j)) then
-												if first then first = nil; self:AddLine("Contains:"); end
-												if j.dr then
-													self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON"));
-												else
-													self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("NOT_COLLECTED_ICON"));
-												end
-											end
-										else
-											local percent = j.progress / j.total;
-											if percent < 1 or GetDataMember("ShowCompletedGroups")  then 
-												if first then first = nil; self:AddLine("Contains:"); end
-												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), GetProgressColorText(j.progress, j.total));
-											end
+									if j.total and j.total > 1 then
+										progress = progress + j.progress;
+										total = total + j.total;
+										if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
+											tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), GetProgressColorText(j.progress, j.total) });
 										end
 									else
-										if j.collected then
+										total = total + 1;
+										if j.collected or (j.trackable and j.saved) then
+											progress = progress + 1;
 											if GetDataMember("ShowCollectedItems") then
-												if first then first = nil; self:AddLine("Contains:"); end
-												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON"));
+												tinsert(items, {"  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON")});
 											end
 										elseif j.collectible or (j.trackable and app.ShowIncompleteQuests(j)) then
-											if first then first = nil; self:AddLine("Contains:"); end
 											if j.dr then
-												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON"));
+												tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON") });
 											else
-												self:AddDoubleLine("  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("NOT_COLLECTED_ICON"));
+												tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("NOT_COLLECTED_ICON") });
 											end
 										end
 									end
 								end
 							end
+							
+							if total > 0 then
+								rightSide:SetText(GetProgressColorText(progress, total));
+								if #items > 0 then
+									self:AddLine("Contains:");
+									for i,pair in ipairs(items) do
+										self:AddDoubleLine(pair[1], pair[2]);
+									end
+								end
+							else
+								if group.collectible then
+									rightSide:SetText(GetCollectionText(group.collected));
+								elseif group.trackable then
+									rightSide:SetText(GetCompletionText(group.saved));
+								else
+									rightSide:SetText("---");
+								end
+							end
+						else
+							-- TODO: Change this.
+							for i,j in ipairs(group.g) do
+								if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
+									if j.total and j.total > 1 then
+										progress = progress + j.progress;
+										total = total + j.total;
+									else
+										total = total + 1;
+										if j.collected or (j.trackable and j.saved) then
+											progress = progress + 1;
+										end
+									end
+								end
+							end
+							
+							if total > 0 then
+								rightSide:SetText(GetProgressColorText(progress, total));
+							else
+								if group.collectible then
+									rightSide:SetText(GetCollectionText(group.collected));
+								elseif group.trackable then
+									rightSide:SetText(GetCompletionText(group.saved));
+								else
+									rightSide:SetText("---");
+								end
+							end
 						end
 					else
-						rightSide:SetText("---");
+						if group.collectible then
+							rightSide:SetText(GetCollectionText(group.collected));
+						elseif group.trackable then
+							rightSide:SetText(GetCompletionText(group.saved));
+						else
+							rightSide:SetText("---");
+						end
 					end
 				else
 					if group.collectible then
@@ -5348,30 +5394,32 @@ local function RowOnEnter(self)
 		end
 		
 		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
-		if reference.itemID then
-			if reference.f == 102 then
-				-- This is a toy!
-				GameTooltip:SetToyByItemID(reference.itemID);
-			else
-				-- This is an non-toy item reference. :)
-				local link = reference.link;
-				if link then
-					GameTooltip:SetHyperlink(link);
-				elseif reference.speciesID then
-					-- Do nothing.
-				elseif not reference.artifactID then
-					GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
-					if reference and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, true); end
-					for key, value in pairs(reference) do
-						GameTooltip:AddDoubleLine(key, tostring(value));
-					end	
+		if not reference.creatureID then
+			if reference.itemID then
+				if reference.f == 102 then
+					-- This is a toy!
+					GameTooltip:SetToyByItemID(reference.itemID);
+				else
+					-- This is an non-toy item reference. :)
+					local link = reference.link;
+					if link then
+						GameTooltip:SetHyperlink(link);
+					elseif reference.speciesID then
+						-- Do nothing.
+					elseif not reference.artifactID then
+						GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
+						if reference and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, true); end
+						for key, value in pairs(reference) do
+							GameTooltip:AddDoubleLine(key, tostring(value));
+						end	
+					end
 				end
+			elseif reference.currencyID then
+				GameTooltip:SetCurrencyByID(reference.currencyID);
+			elseif not reference.encounterID then
+				local link = reference.link;
+				if link then pcall(GameTooltip.SetHyperlink, GameTooltip, link); end
 			end
-		elseif reference.currencyID then
-			GameTooltip:SetCurrencyByID(reference.currencyID);
-		elseif not reference.encounterID then
-			local link = reference.link;
-			if link then pcall(GameTooltip.SetHyperlink, GameTooltip, link); end
 		end
 		
 		-- Miscellaneous fields
