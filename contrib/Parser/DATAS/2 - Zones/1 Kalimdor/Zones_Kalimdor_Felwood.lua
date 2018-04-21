@@ -5,7 +5,31 @@ _.Zones =
 {
 	m(13, { 	-- Kalimdor
 		m(182, {	-- Felwood
-			["groups"] = {	
+			["groups"] = {
+				faction(576, {	-- Timbermaw Hold
+					["creatureID"] = 11558,	-- Kernda
+					["groups"] = {
+						ach(944),	-- They Love Me In That Tunnel
+						n(11555, {	-- Gorn One Eye
+							i(16768),	-- Furbolg Medicine Pouch
+							i(16769),	-- Furbolg Medicine Totem
+						}),
+						n(11557, {	-- Meilosh
+							i(22392),	-- Formula: Enchant 2H Weapon - Agility
+							i(19445),	-- Formula: Enchant Weapon - Agility
+							i(19218), 	-- Pattern: Mantle of the Timbermaw
+							i(19326), 	-- Pattern: Might of the Timbermaw
+							i(19327),  	-- Pattern: Timbermaw Brawlers
+							i(20253), 	-- Pattern: Warbear Harness
+							i(20254), 	-- Pattern: Warbear Woolies
+							i(19215), 	-- Pattern: Wisdom of the Timbermaw
+							i(19202), 	-- Plans: Heavy Timbermaw Belt
+							i(19204), 	-- Plans: Heavy Timbermaw Boots
+							i(13484),	-- Recipe: Transmute Earth to Water
+							i(66888),	-- Stave of Fur and Claw Toy
+						}),
+					},
+				}),
 				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -864,40 +888,10 @@ _.Zones =
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					n(11555, {	-- Gorn One Eye
-						i(16768),	-- Furbolg Medicine Pouch
-						i(16769),	-- Furbolg Medicine Totem
-					}),
 					na(2803, {	-- Malygen <General Goods>
 						i(16110),	-- Recipe: Monster Omelet
 					}),
-					n(11557, {	-- Meilosh
-						i(66888),	-- Stave of Fur and Claw Toy
-						i(19204, {	-- Plans: Heavy Timbermaw Boots
-							i(19048),	-- Heavy Timbermaw Boots
-						}),
-						i(19218, {	-- Pattern: Mantle of the Timbermaw
-							i(19050),	-- Mantle of the Timbermaw
-						}),
-						i(19327, { 	-- Pattern: Timbermaw Brawlers
-							i(19049),	-- Timbermaw Brawlers
-						}),
-						i(19202, {	-- Plans: Heavy Timbermaw Belt
-							i(19043),	-- Heavy Timbermaw Belt
-						}),
-						i(19215, {	-- Pattern: Wisdom of the Timbermaw
-							i(19047),	-- Wisdom of the Timbermaw
-						}),
-						i(19326, {	-- Pattern: Might of the Timbermaw
-							i(19044),	-- Might of the Timbermaw
-						}),
-						i(20254, {	-- Pattern: Warbear Woolies
-							i(15065),	-- Warbear Woolies
-						}),
-						i(20253, {	-- Pattern: Warbear Harness
-							i(15064),	-- Warbear Harness
-						}),
-					}),
+					
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

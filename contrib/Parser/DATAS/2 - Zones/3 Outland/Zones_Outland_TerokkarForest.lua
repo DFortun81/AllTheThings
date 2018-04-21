@@ -435,6 +435,9 @@ _.Zones =
 --]]
 				}),	
 				n(-16, { 	-- Rares
+					n(16810, {	-- Bonechewer Backbreaker
+						dr(7.0, i(16248)),	-- Formula: Enchant Weapon - Unholy
+					}),
 					n(23161, {	-- Darkscreecher Akkarai
 						["groups"] = {
 							dr(20, i(32529)),	-- Heretic's Gauntlets

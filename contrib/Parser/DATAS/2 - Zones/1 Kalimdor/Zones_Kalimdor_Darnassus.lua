@@ -606,6 +606,11 @@ _.Zones =
 						i(64888),	-- Mantle of Darnassus
 						i(45579),	-- Darnassus Tabard
 					})),
+					na(4229, {		-- Mythrin'dir <Trade Supplies>
+						i(20854),	-- Design: Amulet of the Moon
+						i(11223),	-- Formula: Enchant Bracer - Dodge
+						i(16217),	-- Formula: Enchant Shield - Greater Stamina
+					}),
 					a(n(4225, {		-- Saenorion <Leatherworking Supplies>
 						i(7451, { -- Pattern: Green Whelp Bracers
 							i(7386)	-- Green Whelp Bracers
@@ -810,7 +815,7 @@ _.Zones =
 							i(52735),	-- Formula: Enchant Weapon - Windwalk
 						}),
 					})),
-					na(51504, {	-- Velia Moonbow <Guild Vendor>
+					na(51504, {		-- Velia Moonbow <Guild Vendor>
 						["groups"] = {
 							faction(1168, {	-- Your Guild (Faction)
 								["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",

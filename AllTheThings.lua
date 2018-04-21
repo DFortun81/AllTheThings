@@ -1033,10 +1033,10 @@ local function GetFactionCache()
 	if not cache then
 		cache = {};
 		SetTempDataMember("FACTION_CACHE", cache);
-		for i=1,GetNumFactions(),1 do
+		for i=1,1000,1 do
 			local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar,
 				isHeader, isCollapsed, hasRep, isWatched, isChild, factionID = GetFactionInfo(i);
-			if hasRep or not isHeader then
+			if name then
 				tinsert(cache, app.CreateFaction(i));
 			end
 		end

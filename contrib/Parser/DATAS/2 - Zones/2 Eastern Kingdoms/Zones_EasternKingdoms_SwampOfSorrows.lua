@@ -678,6 +678,7 @@ _.Zones =
 						dr(01.0, i(10167)),	-- Templar Boots					
 					}), 
 					n(14448, { 	-- Molt Thorn
+						un(2, i(11205)),	-- Formula: Enchant Gloves - Advanced Herbalism
 						dr(09.0, i(10108)),	-- Wanderer's Cloak
 						dr(03.0, i(10098)),	-- Councillor's Cloak
 						dr(03.0, i(10198)),	-- Crusader's Helm
