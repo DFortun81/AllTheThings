@@ -309,7 +309,11 @@ profession(333, { -- Enchanting
 		recipe(13607),	-- Mana [Permanently enchant chest armor to increase mana by 20.]
 		recipe(13612),	-- Mining [Permanently enchant gloves to increase Mining skill by 2.]
 		recipe(13642),	-- Versatility [Permanently enchant bracers to increase Versatility by 5.]
-		recipe(13640),	-- Greater Health [Permanently enchant chest armor to increase health by 35.]   (No listed locations?)
+		recipe(13640),	-- Greater Health [Permanently enchant chest armor to increase health by 35.]   (No listed locations? - https://www.wowhead.com/spell=13640/greater-health)
+		recipe(13648),	-- Stamina [Permanently enchant bracers to increase Stamina by 5.]
+		
+		-- NOTE: STOPPED HERE
+		-- https://www.wowhead.com/enchanting#recipes:200+17+10+1
 		
 		-- BC
 		
