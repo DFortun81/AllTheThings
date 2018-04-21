@@ -2062,17 +2062,19 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 				-- Build the group data (merge into one group)
 				local merged = { g = {}, total = 0, progress = 0 };
 				for i,g in ipairs(group) do
-					if g.collectible then
-						merged.collectible = merged.collectible or g.collectible;
-						merged.collected = merged.collected or g.collected;
-					end
-					if g.trackable then
-						merged.trackable = merged.trackable or g.trackable;
-						merged.saved = merged.saved or g.saved;
-					end
-					if g.g then
-						for j,s in ipairs(g.g) do
-							tinsert(merged.g, s);
+					if not g.hideText and (app.RecursiveClassAndRaceFilter(g.parent) or GetDataMember("IgnoreAllFilters")) then
+						if g.collectible then
+							merged.collectible = merged.collectible or g.collectible;
+							merged.collected = merged.collected or g.collected;
+						end
+						if g.trackable then
+							merged.trackable = merged.trackable or g.trackable;
+							merged.saved = merged.saved or g.saved;
+						end
+						if g.g then
+							for j,s in ipairs(g.g) do
+								tinsert(merged.g, s);
+							end
 						end
 					end
 				end
@@ -2132,15 +2134,16 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 			
 			local rightSide = _G[self:GetName() .. "TextRight1"];
 			if rightSide then
-				if group.g then
+				if group.g and not group.hideText and app.RecursiveClassAndRaceFilter(group) then
 					if group.total and group.total > 0 then
 						local progress = 0;
 						local total = 0;
 						if GetDataMember("ShowContents") then
-							local headers = {};
+							local parents = {};
 							local items = {};
 							for i,j in ipairs(group.g) do
 								if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
+									if not contains(parents, j.parent) then tinsert(parents, j.parent); end
 									if j.total and j.total > 1 then
 										progress = progress + j.progress;
 										total = total + j.total;
@@ -2169,8 +2172,33 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 								rightSide:SetText(GetProgressColorText(progress, total));
 								if #items > 0 then
 									self:AddLine("Contains:");
-									for i,pair in ipairs(items) do
-										self:AddDoubleLine(pair[1], pair[2]);
+									if #items < 36 then
+										for i,pair in ipairs(items) do
+											self:AddDoubleLine(pair[1], pair[2]);
+										end
+									elseif #parents < 2 then
+										for i=1,math.min(36, #items) do
+											self:AddDoubleLine(items[i][1], items[i][2]);
+										end
+										self:AddLine("And " .. (#items - 36) .. " more...");
+									else
+										for i,j in ipairs(parents) do
+											local title = "  ";
+											if j.parent then
+												if j.parent.parent then
+													if j.creatureID then
+														title = title .. (j.parent.parent.icon and ("|T" .. j.parent.parent.icon .. ":0|t") or "") .. (j.parent.parent.text or RETRIEVING_DATA) .. " -> " .. (j.text or RETRIEVING_DATA) .. " (" .. (j.parent.text or RETRIEVING_DATA) .. ")";
+													else
+														title = title .. (j.parent.parent.icon and ("|T" .. j.parent.parent.icon .. ":0|t") or "") .. (j.parent.parent.text or RETRIEVING_DATA) .. " -> " .. (j.parent.text or RETRIEVING_DATA);
+													end
+												else
+													title = title .. (j.parent.icon and ("|T" .. j.parent.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA) .. " (" .. (j.parent.text or RETRIEVING_DATA) .. ")";
+												end
+											else
+												title = title .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA);
+											end
+											self:AddDoubleLine(title, GetProgressColorText(j.progress, j.total));
+										end
 									end
 								end
 							else
