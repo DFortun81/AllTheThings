@@ -34,11 +34,10 @@ _.WorldEvents =
 							i(51982),	-- Earthbound Boots
 							i(51998),	-- Vigorous Spaulders
 							i(51966),	-- Vigorous Spaulders
-							i(51962),	-- Vigorous Bracers
+							i(51962),	-- Vigorous Bracers*
 							i(51960),	-- Vigorous Gloves
 							i(51965),	-- Vigorous Handguards
-							i(51964),	-- Vigorous Belt
-							i(51959),	-- Vigorous Belt
+							i(51964),	-- Vigorous Belt*
 							i(51963),	-- Vigorous Stompers*
 							i(51994),	-- Tumultuous Cloak*
 							i(51996),	-- Tumultuous Necklace*
@@ -112,6 +111,7 @@ _.WorldEvents =
 						i(51970),	-- Enumerated Gloves*
 						i(51967),	-- Enumerated Sandals*
 						i(51961),	-- Vigorous Shoulderguards
+						i(51959),	-- Vigorous Belt
 						i(51962),	-- Vigorous Bracers
 						i(51960),	-- Vigorous Gloves
 						i(51975),	-- Earthbound Shoulders
