@@ -6,9 +6,9 @@ _.Instances =
 {
 	{ -- Classic
 		["groups"] = {
-			inst(236, {    -- Stratholme
+			inst(236, { 	-- Stratholme
 				["groups"] = {
-					q(35563, {	-- Main Gate
+					q(35563, {	-- Main Gate (Living)
 						n(-47, {	-- Lunar Festival						
 							["groups"] = {						
 								n(-17, {	-- Quests				
@@ -28,68 +28,38 @@ _.Instances =
 							["achievementID"] = 913, -- To Honor One's Elders						
 						}),
 						n(-17, {	-- Quests
-							q(27208, {	-- The Dreadlord Balnazzar
-								i(65998),	-- Balnazzar's Hide
-								i(65977),	-- Balnazzar's Horn
-								i(65953),	-- Dathrohan's Mace
-								i(65928),	-- Leggings of Stratholme
+							q(27359, {	-- Argent Reinforcements
+								["g"] = {
+								},
+								["qg"] = 45330,	-- Archmage Angela Dosantos
 							}),
-							nlq({ 	-- Legacy Quests
-								q(5282, { 	-- The Restless Souls (2)
-									i(13315),	-- Testament of Hope
-								}),
+							q(27352, {	-- Liquid Gold
+								["g"] = {
+								},
+								["qg"] = 45328,	-- Packmaster Stonebruiser
 							}),
-						}),
-						n(0, {		-- Zone Drop
-							i(18743),	-- Gracious Cape
-							i(17061),	-- Juno's Shadow
-							i(18741),	-- Morlune's Bracer
-							i(18744),	-- Plaguebat Fur Gloves
-							i(18736),	-- Plaguehound Leggings
-							i(18745),	-- Sacred Cloth Leggings
-							i(18742),	-- Stratholme Militia Shoulderguard
-							i(142337, {	-- Plans: Blight
-								i(7959),	-- Blight
+							q(27227, {	-- Lord Aurius Rivendare
+								["g"] = {
+								},
+								["qg"] = 45329,	-- Crusade Commander Eligor Dawnbringer
 							}),
-							nld({	-- Legacy
-								n(10425, { 	-- Crimson Battle Mage
-									i(16685),	-- Magister's Belt
-								}),
-								n(10419, { 	-- Crimson Conjuror
-									i(16697), 	-- Devout Bracers
-									i(16702),	-- Dreadmist Belt
-									i(16685),	-- Magister's Belt
-								}),
-								n(10421, { 	-- Crimson Defender
-									i(16681),	-- Beaststalker's Bindings
-								}),
-								n(10424, { 	-- Crimson Gallant
-									i(16723),	-- Lightforge Belt
-								}),
-								n(10418, { 	-- Crimson Guardsman
-									i(16723),	-- Lightforge Belt
-								}),
-								n(10420, { 	-- Crimson Initiate
-									i(16697), 	-- Devout Bracers
-								}),
-								n(10426, { 	-- Crimson Inquisitor
-									i(16714),	-- Wildheart Bracers
-								}),
-								n(10423, { 	-- Crimson Priest
-									i(16697), 	-- Devout Bracers
-								}),
-								n(10422, { 	-- Crimson Sorcerer
-									i(16685),	-- Magister's Belt
-								}),
-								n(10414, { 	-- Patchwork Horror
-									i(16736),	-- Belt of Valor
-								}),
-								n(11043, { 	-- Risen Monk
-									i(16671), 	-- Bindings of Elements
-								}),
+							q(27228, {	-- Man Against Abomination
+								["g"] = {
+								},
+								["qg"] = 45206,	-- Crusade Commander Korfax
 							}),
 						}),
-						n(10393, {			-- Skul
+						n(  0, {	-- Zone Drop
+							i( 18743),	-- Gracious Cape
+							i( 17061),	-- Juno's Shadow
+							i( 18741),	-- Morlune's Bracer
+							i( 18744),	-- Plaguebat Fur Gloves
+							i( 18736),	-- Plaguehound Leggings
+							i( 18745),	-- Sacred Cloth Leggings
+							i( 18742),	-- Stratholme Militia Shoulderguard
+							i(142337),	-- Plans: Blight
+						}),
+						n( 10393, {			-- Skul
 							["groups"] = {
 								dr(31, i(13395)),	-- Skul's Fingerbone Claws
 								dr(28, i(13394)),	-- Skul's Cold Embrace
@@ -114,7 +84,7 @@ _.Instances =
 								i(16717),	-- Wildheart Gloves
 							}),
 						})),
-						n(11143, { 	-- Postmaster Malown
+						n( 11143, {			-- Postmaster Malown
 							["groups"] = {
 								dr(14, i(13393)),	-- Malown's Slam
 								dr(13, i(13390)),	-- The Postmaster's Band
@@ -168,98 +138,120 @@ _.Instances =
 						})),
 						n(-40, {	-- Legacy
 							["groups"] = {
-								n(14684, { 	-- Balzaphon
-									["groups"] = {
-										i(23124),	-- Staff of Balzaphon
-										i(23126),	-- Waistband of Balzaphon
-									},
-									["description"] = "This boss was only available during the Scourge Invasions.",
+								n(-17, {	-- Quests (Legacy)
+									q(5282, { 	-- The Restless Souls (2)
+										un(34, i(13315)),	-- Testament of Hope
+									}),
 								}),
-								n(16102, { 	-- Sothos
-									["groups"] = {
-										o(181083, {	-- Sothos and Jarien's Heirlooms
-											["groups"] = {
-												i(22301), 	-- Ironweave Robe
-												i(22328),	-- Legplates of Vigilance
-												i(22329),	-- Scepter of Interminable Focus
-											},
-											["modelID"] = 34286,
-										}),
-									},
-									["description"] = "Sothos and Jarien are a pair of elite ghosts summoned in the Scarlet Bastion by using Brazier of Beckoning.",
+								n(  0, {	-- Zone Drop (Legacy)
+									n(14684, { 	-- Balzaphon
+										["groups"] = {
+											un(2, i(23124)),	-- Staff of Balzaphon
+											un(2, i(23126)),	-- Waistband of Balzaphon
+										},
+										["description"] = "This boss was only available during the Scourge Invasions.",
+									}),
+									n(10425, { 	-- Crimson Battle Mage
+										un(7, i(16685)),	-- Magister's Belt
+									}),
+									n(10419, { 	-- Crimson Conjuror
+										un(7, i(16697)), 	-- Devout Bracers
+										un(7, i(16702)),	-- Dreadmist Belt
+										un(7, i(16685)),	-- Magister's Belt
+									}),
+									n(10421, { 	-- Crimson Defender
+										un(7, i(16681)),	-- Beaststalker's Bindings
+									}),
+									n(10424, { 	-- Crimson Gallant
+										un(7, i(16723)),	-- Lightforge Belt
+									}),
+									n(10418, { 	-- Crimson Guardsman
+										un(7, i(16723)),	-- Lightforge Belt
+									}),
+									n(10420, { 	-- Crimson Initiate
+										un(7, i(16697)), 	-- Devout Bracers
+									}),
+									n(10426, { 	-- Crimson Inquisitor
+										un(7, i(16714)),	-- Wildheart Bracers
+									}),
+									n(10423, { 	-- Crimson Priest
+										un(7, i(16697)), 	-- Devout Bracers
+									}),
+									n(10422, { 	-- Crimson Sorcerer
+										un(7, i(16685)),	-- Magister's Belt
+									}),
+									n(10414, { 	-- Patchwork Horror
+										un(7, i(16736)),	-- Belt of Valor
+									}),
+									n(11043, { 	-- Risen Monk
+										un(7, i(16671)), 	-- Bindings of Elements
+									}),
+									n(16102, { 	-- Sothos
+										["groups"] = {
+											o(181083, {	-- Sothos and Jarien's Heirlooms
+												["groups"] = {
+													un(2, i(22301)), 	-- Ironweave Robe
+													un(2, i(22328)),	-- Legplates of Vigilance
+													un(2, i(22329)),	-- Scepter of Interminable Focus
+												},
+												["modelID"] = 34286,
+											}),
+										},
+										["description"] = "Sothos and Jarien are a pair of elite ghosts summoned in the Scarlet Bastion by using Brazier of Beckoning.",
+									}),
 								}),
 							},
 							["u"] = 12,
 						}),
 					}),
-					q(35574, { -- Side Entrance
-						nlq({ 	-- Legacy Quests
-							q(9737, { 	-- True Masters of the Light
-								["groups"] = {
-									{
-									["mountID"] = 34767, 	-- Thalassian Charger
-									},
-									i(25549),	-- Blood Knight Tabard
+					q(35574, { -- Side Entrance (Dead)
+						n(-17, {	-- Quests
+							q(27185, {	-- Cutting the Competition
+								["g"] = {
 								},
-								["classes"] = {2},
-								["races"] = {10},
+								["qg"] = 45201,	-- Master Craftsman Wilhelm
+							}),
+							q(27305, {	-- Of Love and Family
+								["g"] = {
+								},
+								["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
+							}),
+							q(27223, {	-- Retribution
+								["g"] = {
+								},
+								["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
+							}),
+							q(27208, {	-- The Dreadlord Balnazzar
+								["g"] = {
+									i(65998),	-- Balnazzar's Hide
+									i(65977),	-- Balnazzar's Horn
+									i(65953),	-- Dathrohan's Mace
+									i(65928),	-- Leggings of Stratholme
+								},
+								["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
+							}),
+							q(27192, {	-- The Great Fras Siabi
+								["g"] = {
+								},
+								["qg"] = 45323,	-- Packmaster Stonebruiser
+							}),
+							q(27230, {	-- Weapons for War
+								["g"] = {
+								},
+								["qg"] = 45331,	-- Master Craftsman Wilhelm
 							}),
 						}),
-						n(0, {      -- Zone Drop
-							i(18743),   -- Gracious Cape
-							i(17061),   -- Juno's Shadow
-							i(18741),   -- Morlune's Bracer
-							i(18744),   -- Plaguebat Fur Gloves
-							i(18736),   -- Plaguehound Leggings
-							i(18745),   -- Sacred Cloth Leggings
-							i(18742),   -- Stratholme Militia Shoulderguard
-							i(142337, {	-- Plans: Blight
-								i(7959),	-- Blight
-							}),
-							nld({	-- Legacy
-								n(10416, { 	-- Bile Spewer
-									i(16736),	-- Belt of Valor
-								}),
-								n(10413, { 	-- Crypt Beast
-									i(16671), 	-- Bindings of Elements
-								}),
-								n(10407, { 	-- Fleshflayer Ghoul
-									i(16681),	-- Beaststalker's Bindings
-								}),
-								n(10406, { 	-- Ghoul Ravener
-									i(16681),	-- Beaststalker's Bindings
-								}),
-								n(10405, { 	-- Plague Ghoul
-									i(16710),	-- Shadowcraft Bracers
-								}),
-								n(10408, { 	-- Rockwing Gargoyle
-									i(16723),	-- Lightforge Belt
-								}),
-								n(10409, { 	-- Rockwing Screecher
-									i(16723),	-- Lightforge Belt
-								}),
-								n(10463, {	-- Shrieking Banshee
-									i(16714),	-- Wildheart Bracers
-								}),
-								n(10400, { 	-- Thuzadin Necromancer
-									i(16697), 	-- Devout Bracers
-									i(16702),	-- Dreadmist Belt
-									i(16685),	-- Magister's Belt
-								}),
-								n(10398, { 	-- Thuzadin Shadowcaster
-									i(16697), 	-- Devout Bracers
-									i(16702),	-- Dreadmist Belt
-									i(16685),	-- Magister's Belt
-								}),
-								n(10417, { 	-- Venom Belcher
-									i(16736),	-- Belt of Valor
-								}),
-								n(10464, { 	-- Wailing Banshee
-									i(16714),	-- Wildheart Bracers
-								}),
-							}),
+						n(  0, {	-- Zone Drop
+							i( 18743),	-- Gracious Cape
+							i( 17061),	-- Juno's Shadow
+							i( 18741),	-- Morlune's Bracer
+							i( 18744),	-- Plaguebat Fur Gloves
+							i( 18736),	-- Plaguehound Leggings
+							i( 18745),	-- Sacred Cloth Leggings
+							i( 18742),	-- Stratholme Militia Shoulderguard
+							i(142337),	-- Plans: Blight
 						}),
-						n(10809, {	-- Stonespine
+						n( 10809, {			-- Stonespine
 							["groups"] = {
 								dr(32, i(13397)),	-- Stoneskin Gargoyle Cape
 								dr(32, i(13954)),	-- Verdant Footpads
@@ -310,7 +302,7 @@ _.Instances =
 							i(13372),	-- Slavedriver's Cane
 							i(13375),	-- Crest of Retribution
 							i(13374),	-- Soulstealer Mantle
-							nld({    -- Legacy
+							nld({ 	-- Legacy
 								i(16737),	-- Gauntlets of Valor
 							}),
 						})),
@@ -329,7 +321,66 @@ _.Instances =
 							i(13344),	-- Dracorian Gauntlets
 							i(22410),	-- Gauntlets of Deftness
 						})),
-					})
+						n(-40, {	-- Legacy
+							["groups"] = {
+								n(-17, {	-- Quests (Legacy)
+									q(9737, { 	-- True Masters of the Light
+										["groups"] = {
+											{
+											["mountID"] = 34767, 	-- Thalassian Charger
+											},
+											i(25549),	-- Blood Knight Tabard
+										},
+										["classes"] = {2},
+										["races"] = {10},
+									}),
+								}),
+								n(  0, {	-- Zone Drop (Legacy)
+									n(10416, { 	-- Bile Spewer
+										un(7, i(16736)),	-- Belt of Valor
+									}),
+									n(10413, { 	-- Crypt Beast
+										un(7, i(16671)), 	-- Bindings of Elements
+									}),
+									n(10407, { 	-- Fleshflayer Ghoul
+										un(7, i(16681)),	-- Beaststalker's Bindings
+									}),
+									n(10406, { 	-- Ghoul Ravener
+										un(7, i(16681)),	-- Beaststalker's Bindings
+									}),
+									n(10405, { 	-- Plague Ghoul
+										un(7, i(16710)),	-- Shadowcraft Bracers
+									}),
+									n(10408, { 	-- Rockwing Gargoyle
+										un(7, i(16723)),	-- Lightforge Belt
+									}),
+									n(10409, { 	-- Rockwing Screecher
+										un(7, i(16723)),	-- Lightforge Belt
+									}),
+									n(10463, {	-- Shrieking Banshee
+										un(7, i(16714)),	-- Wildheart Bracers
+									}),
+									n(10400, { 	-- Thuzadin Necromancer
+										un(7, i(16697)), 	-- Devout Bracers
+										un(7, i(16702)),	-- Dreadmist Belt
+										un(7, i(16685)),	-- Magister's Belt
+									}),
+									n(10398, { 	-- Thuzadin Shadowcaster
+										un(7, i(16697)), 	-- Devout Bracers
+										un(7, i(16702)),	-- Dreadmist Belt
+										un(7, i(16685)),	-- Magister's Belt
+									}),
+									n(10417, { 	-- Venom Belcher
+										un(7, i(16736)),	-- Belt of Valor
+									}),
+									n(10464, { 	-- Wailing Banshee
+										un(7, i(16714)),	-- Wildheart Bracers
+									}),
+								}),
+							},
+							["u"] = 12,
+						}),
+					}),
 				},
 				["Lvl"] = 37,
 				["mapID"] = 765

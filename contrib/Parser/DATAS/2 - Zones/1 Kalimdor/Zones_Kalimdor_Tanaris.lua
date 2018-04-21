@@ -246,10 +246,10 @@ _.Zones =
 					qg(38703, qh(25534)),	-- Going Off-Task
 					qg(38704, qa(26886)),	-- Going Off-Task
 					qg(40580, q(25521)),	-- I'm With Scorpid
+--]]
 					qdg(qg(7804, q(25556))),	-- Into Zul'Farrak
 --					q(42237),	-- Invasion: Tanaris (LEGACY - Legion pre-patch)
 --					q(43244),	-- Invasion: Tanaris (LEGACY - Legion pre-patch)
---]]
 					qg(38706, q(24953,  {  -- Just Trying to Kill Some Bugs
 						i(56852),
 						i(56853),
