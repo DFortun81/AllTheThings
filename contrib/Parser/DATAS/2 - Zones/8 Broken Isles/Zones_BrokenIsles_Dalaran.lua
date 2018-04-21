@@ -3591,6 +3591,39 @@ _.Zones =
 						i(128582),	-- Formula: Enchant Ring - Word of Versatility [Rank 2]
 						i(140634),	-- Formula: Ley Shatter
 					}),
+					n(100500, { -- Jabrul <Jewelcrafting Master>
+						i(137809),	-- Design: Ancient Maelstrom Amulet
+						i(137794),	-- Design: Azsunite Loop
+						i(137797),	-- Design: Azsunite Pendant
+						i(137802),	-- Design: Blessed Dawnlight Medallion
+						i(138451),	-- Design: Deadly Deep Amber
+						i(138454),	-- Design: Deadly Eye of Prophecy
+						i(137792),	-- Design: Deep Amber Loop
+						i(137795),	-- Design: Deep Amber Pendant
+						i(137812),	-- Design: Grim Furystone Gorget
+						i(137808),	-- Design: Intrepid Necklace of Prophecy
+						i(138453),	-- Design: Masterful Queen's Opal
+						i(138456),	-- Design: Masterful Shadowruby
+						i(137859),	-- Design: Queen's Opal Loop
+						i(137860),	-- Design: Queen's Opal Pendant
+						i(138452),	-- Design: Quick Azsunite
+						i(138455),	-- Design: Quick Dawnlight
+						i(137811),	-- Design: Raging Furystone Gorget
+						i(137810),	-- Design: Righteous Dawnlight Medallion
+						i(137813),	-- Design: Saber's Eye
+						i(137815),	-- Design: Saber's Eye of Agility
+						i(137816),	-- Design: Saber's Eye of Intellect
+						i(137814),	-- Design: Saber's Eye of Strength
+						i(137861),	-- Design: Shadowruby Band
+						i(137793),	-- Design: Skystone Loop
+						i(137796),	-- Design: Skystone Pendant
+						i(137801),	-- Design: Sorcerous Shadowruby Pendant
+						i(137804),	-- Design: Subtle Shadowruby Pendant
+						i(137807),	-- Design: Sylvan Maelstrom Amulet
+						i(137805),	-- Design: Tranquil Necklace of Prophecy
+						i(137803),	-- Design: Twisted Pandemonite Choker
+						i(137806),	-- Design: Vindictive Pandemonite Choker
+					}),
 					n(96483, { 	-- Jepetto Joybuzz <Toymaker>
 						i(54436), -- Blue Clockwork Rocket Bot Pet
 						i(95621), -- Warbot Ignition Key Pet
@@ -5590,7 +5623,7 @@ _.Zones =
 						i(140309),	-- Prismatic Bauble Toy
 						i(137570),	-- Blood Fang Cocoon
 					}),
-					n(28721, { -- Tiffany Cartier <Jewelcrafting Supplies>
+					n(93526, { -- Tiffany Cartier <Jewelcrafting Supplies>
 						["groups"] = {
 							i(137834),	-- Design: Ancient Maelstrom Amulet
 							i(137819),	-- Design: Azsunite Loop
