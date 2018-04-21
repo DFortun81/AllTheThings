@@ -8,12 +8,20 @@ _.Instances =
 		["groups"] = {
 			inst(233, { 	-- Razorfen Downs
 				["groups"] = {
-					n(-17, {			-- Quests 			
-						q(33514,{	-- The Ritual
-							i(65996),	-- Belt of Tyrannic Rule
-							i(65975),	-- Chestguard of Redemption
-							i(65926),	-- Coldbringer's Leggings
-							i(65951),	-- Razorfen Spaulders
+					n(-17, {			-- Quests 
+						q(33513, {	-- Blackthorn's Lieutenants
+							["g"] = {
+							},
+							["qgs"] = { 74367, 74888 },	-- Koristrasza (same NPC, different IDs)
+						}),
+						q(33514, {	-- The Ritual
+							["g"] = {
+								i(65996),	-- Belt of Tyrannic Rule
+								i(65975),	-- Chestguard of Redemption
+								i(65926),	-- Coldbringer's Leggings
+								i(65951),	-- Razorfen Spaulders
+							},
+							["qgs"] = { 74367, 74888 },	-- Koristrasza (same NPC, different IDs)							
 						}),
 					}),
 					n(0, {				-- Zone Drop
@@ -42,13 +50,13 @@ _.Instances =
 							dr(0.01, i(10578)),	-- Thoughtcast Boots
 						}),
 						n(74411, {	-- Death's Head Necrolyte
-							dr(0.3, i(10574)),	-- Corpseshroud
+							dr(0.30, i(10574)),	-- Corpseshroud
 							dr(0.03, i(10582)),	-- Briar Tredders
 							dr(0.01, i(10571)),	-- Ebony Boneclub
 							dr(0.01, i(10567)),	-- Quillshooter
 						}),
 						n(74478, {	-- Death's Head Shadowmender
-							dr(3, i(10578)),	-- Thoughtcast Boots
+							dr(3.00, i(10578)),	-- Thoughtcast Boots
 							dr(0.03, i(10574)),	-- Corpseshroud
 							dr(0.03, i(10581)),	-- Death's Head Vestment
 							dr(0.01, i(10573)),	-- Boneslasher

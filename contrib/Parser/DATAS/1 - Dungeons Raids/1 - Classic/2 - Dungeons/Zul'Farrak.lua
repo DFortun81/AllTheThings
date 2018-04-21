@@ -27,53 +27,51 @@ _.Instances =
 						},						
 						["achievementID"] = 913, -- To Honor One's Elders						
 					}),							
-					n(-17, {	-- Quests 
-						n(7407, { -- Chief Engineer Bildewhizzle
-							q(27070,{ -- A Fool's Errand
+					n(-17, {	-- Quests
+						q(27070, {	-- A Fool's Errand
+							["g"] = {
 								i(65954), -- Belt of the Deep
 								i(65929), -- Bildewhizzle's Armbands
 								i(65978), -- Electrified Leggings
 								i(65999), -- Pauldrons of Zul'Farrak
-							}),	
+							},
+							["qg"] = 7407,	-- Chief Engineer Bildewhizzle
 						}),
-						n(40712, { -- Mazoga's Spirit
-							q(25556), -- Into Zul'Farrak [Optional Breadcrumb]
-							q(27068,{ -- Chief Ukorz Sandscalp
+						q(27076, {	-- Breaking and Entering
+							["g"] = {
+							},
+							["qg"] = 44929,	-- Tran'rek
+						}),
+						q(27068, {	-- Chief Ukorz Sandscalp
+							["g"] = {
 								i(65930), -- Hands of Consequences
 								i(65955), -- Mazoga's Boots
 								i(65979), -- Staff of the Unknown Road
-							}),
-							q(27071), -- Wrath of the Sandfury
+							},
+							["qg"] = 40712,	-- Mazoga's Spirit
+							["breadcrumbQuestID"] = { 25556 },	-- Into Zul'Farrak
 						}),
-						n(44929, { -- Tran'rek
-							q(27076), -- Breaking and Entering
+						q(27071, {	-- Wrath of the Sandfury
+							["g"] = {
+							},
+							["qg"] = 40712,	-- Mazoga's Spirit
 						}),
 					}),
-					n(0,   {	-- Zone Drop
+					n(  0, {	-- Zone Drop
 						n(5649, { -- Sandfury Blood Drinker
-							dr(0.1, i(142402, {	-- Plans: Light Earthforged Blade
-								i(30071), -- Light Earthforged Blade
-							})),
+							dr(0.1, i(142402)),	-- Plans: Light Earthforged Blade
 						}),
 						n(5648, { -- Sandfury Shadowcaster
-							dr(0.3, i(142402, {	-- Plans: Light Earthforged Blade
-								i(30071), -- Light Earthforged Blade
-							})),
+							dr(0.1, i(142402)),	-- Plans: Light Earthforged Blade
 						}),
 						n(7246, { -- Sandfury Shadowhunter
-							dr(0.4, i(142402, {	-- Plans: Light Earthforged Blade
-								i(30071), -- Light Earthforged Blade
-							})),
+							dr(0.1, i(142402)),	-- Plans: Light Earthforged Blade
 						}),
 						n(7247, { -- Sandfury Soul Eater
-							dr(0.1, i(142402, {	-- Plans: Light Earthforged Blade
-								i(30071), -- Light Earthforged Blade
-							})),
+							dr(0.1, i(142402)),	-- Plans: Light Earthforged Blade
 						}),
 						n(5650, { -- Sandfury Witch Doctor
-							dr(0.1, i(142402, {	-- Plans: Light Earthforged Blade
-								i(30071), -- Light Earthforged Blade
-							})),
+							dr(0.1, i(142402)),	-- Plans: Light Earthforged Blade
 						}),
 					}),
 					n(10080, {			-- Sandarr Dunereaver
@@ -96,7 +94,7 @@ _.Instances =
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
-					n(7272, { 			-- Theka the Martyr
+					n( 7272, { 			-- Theka the Martyr
 						dr(0.16, i(142402, {	-- Plans: Light Earthforged Blade
 							i(30071), -- Light Earthforged Blade
 						})),

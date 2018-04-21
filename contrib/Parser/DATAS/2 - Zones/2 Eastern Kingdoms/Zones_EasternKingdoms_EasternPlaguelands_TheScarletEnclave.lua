@@ -116,10 +116,8 @@ _.Zones =
 					qg(66512, q(31911)),	-- Deiza Plaguehorn
 				}),
 				n(-17, {	-- Quests
---[[
-					qg(45431, q(27463)),	-- A Boyhood Dream
+--					qg(45431, q(27463)),	-- A Boyhood Dream
 					qdg(qg(45482, q(27422))),	-- A City Under Siege
---]]
 					qg(12384, q(27533, { -- A Fate Worse Than Butchery
 						i(63006),
 						i(63005),
@@ -156,9 +154,9 @@ _.Zones =
 						i(62963),
 						i(62962),
 					})),
---[[
-					qg(16134, q(27457)),	-- An Opportune Alliance
+--					qg(16134, q(27457)),	-- An Opportune Alliance
 					qdg(qg(49856, q(28755))),	-- Annals of the Silver Hand
+--[[
 					qg(45729, q(27466)),	-- Argent Call: Northdale
 					qg(11034, q(27465)),	-- Argent Call: The Noxious Glade
 					qg(11034, q(27464)),	-- Argent Call: The Trial of the Crypt
