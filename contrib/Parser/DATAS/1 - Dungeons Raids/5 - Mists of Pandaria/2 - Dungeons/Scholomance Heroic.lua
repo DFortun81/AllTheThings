@@ -13,16 +13,24 @@ _.Instances =
 						["Lvl"] = 90,
 						["groups"] = {
 							n(-17, {	-- Quests 			
-								q(31448, {
-									i(87379),	-- Runed Deathbone Chestplate
-									i(87380),	-- Carver's Bloodspattered Chestpiece
-									i(87381),	-- Coldforge Carapace
-									i(87382),	-- Patchwork Flesh Armor
-									i(87383),	-- Ghoulskin Vestments
-									i(87384),	-- Darkmaster's Spare Robe
-									i(87385),	-- Empowered Necropile Robe
-									i(87386),	-- Inscribed Bloodmail Hauberk
-									i(87387),	-- Foul Cadaverous Armor
+								q(31448, {	-- An End to the Suffering
+									["g"] = {
+										i(87379),	-- Runed Deathbone Chestplate
+										i(87380),	-- Carver's Bloodspattered Chestpiece
+										i(87381),	-- Coldforge Carapace
+										i(87382),	-- Patchwork Flesh Armor
+										i(87383),	-- Ghoulskin Vestments
+										i(87384),	-- Darkmaster's Spare Robe
+										i(87385),	-- Empowered Necropile Robe
+										i(87386),	-- Inscribed Bloodmail Hauberk
+										i(87387),	-- Foul Cadaverous Armor
+									},
+									["qg"] = 64563,	-- Talking Skull
+								}),
+								q(31442, {	-- The Four Tomes
+									["g"] = {
+									},
+									["qg"] = 64563,	-- Talking Skull
 								}),
 							}),
 							cr(58633, e(659, { 	-- Instructor Chillheart

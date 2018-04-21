@@ -282,6 +282,9 @@ _.Zones =
 					qa( 32315),	-- Anduin's Plea
 --]]
 --[[ CHALLENGE MODE DAILIES -- REMOVED?
+					qdg(qa(32007, {	-- A Worthy Challenge: Darkmaster Gandling
+						i(98134),	-- Heroic Cache of Treasures
+					})),
 					qdg(qa(32005, {	-- A Worthy Challenge: Durand
 						i(98134),	-- Heroic Cache of Treasures
 					})),

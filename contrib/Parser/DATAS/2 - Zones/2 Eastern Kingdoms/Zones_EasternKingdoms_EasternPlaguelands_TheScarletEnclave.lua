@@ -135,10 +135,8 @@ _.Zones =
 						i(131669),
 						i(131670),
 					})),
---[[
-					qg(11063, q(27386)),	-- A Strange Historian
+--					qg(11063, q(27386)),	-- A Strange Historian
 					qdg(qg(49856, q(28756))),	-- Aberrations of Bone
---]]
 					qg(45831, q(27539, { -- Add'em to the Pile
 						i(63014),
 						i(63013),
