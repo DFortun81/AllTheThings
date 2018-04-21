@@ -789,6 +789,12 @@ _.Zones =
 						i(30753),	-- Warphorn Spear
 						i(30755),	-- Mag'hari Fighting Claw
 					}),
+					nh(18753, {		-- Felannia <Enchanting Trainer>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					na(35101, {		-- Grunda Bronzewing <Gryphon Keeper>	
 						i(25473),	-- Swift Blue Gryphon Mount
 						i(25527),	-- Swift Red Gryphon Mount
@@ -797,6 +803,12 @@ _.Zones =
 						i(25470),	-- Golden Gryphon Mount
 						i(25471),	-- Ebon Gryphon Mount
 						i(25472),	-- Snowy Gryphon Mount
+					}),
+					na(18773, {		-- Johan Barnes <Enchanting Trainer>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 					na(18775, {		-- Lebowski <Engineering Trainer>
 						i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles

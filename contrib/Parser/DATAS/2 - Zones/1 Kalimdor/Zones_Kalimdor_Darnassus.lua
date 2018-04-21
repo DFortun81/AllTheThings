@@ -786,8 +786,28 @@ _.Zones =
 						i(12247),	-- Broad Bladed Knife
 					})),
 					a(n(4228, {		-- Vaean <Enchanting Supplies>
-						i(67312, {	-- Formula: Magic Lamp
-							i(67275),	-- Magic Lamp Pet
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(52555, {	-- Hypnotic Dust
+							a(i(67275)),	-- Formula: Magic Lamp
+						}),
+						i(52721, {	-- Heavenly Shard
+							i(64411),	-- Formula: Enchant Boots - Assassin's Step
+							i(64412),	-- Formula: Enchant Boots - Lavawalker
+							i(52738),	-- Formula: Enchant Bracer - Greater Critical Strike
+							i(64413),	-- Formula: Enchant Bracer - Greater Speed
+							i(52740),	-- Formula: Enchant Chest - Greater Stamina
+							i(52739),	-- Formula: Enchant Chest - Peerless Stats
+							i(52737),	-- Formula: Enchant Cloak - Greater Critical Strike
+							i(64414),	-- Formula: Enchant Gloves - Greater Mastery
+							i(64415),	-- Formula: Enchant Gloves - Mighty Strength
+						}),
+						i(52722, {	-- Maelstrom Crystal
+							i(52736),	-- Formula: Enchant Weapon - Landslide
+							i(52733),	-- Formula: Enchant Weapon - Power Torrent
+							i(52735),	-- Formula: Enchant Weapon - Windwalk
 						}),
 					})),
 					na(51504, {	-- Velia Moonbow <Guild Vendor>

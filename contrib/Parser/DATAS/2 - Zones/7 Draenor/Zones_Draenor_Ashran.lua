@@ -162,6 +162,54 @@ _.Zones =
 				m(1009, {	-- Stormshield
 					["groups"] = {
 						na(-2, {	-- Vendors
+							n(87022, {	-- Bob <Enchanting Recipes>
+								i(111922, {		-- Draenor Enchanting
+									["collectible"] = false,
+									["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+									["groups"] = {
+										recipe(177043),	-- Secrets of Draenor Enchanting
+										recipe(169092),	-- Temporal Crystal
+										recipe(169091),	-- Luminous Shard
+										recipe(162948),	-- Enchanted Dust
+										recipe(158907),	-- Breath of Critical Strike [Ring]
+										recipe(158908),	-- Breath of Haste [Ring]
+										recipe(158909),	-- Breath of Mastery
+										un(1, recipe(158910)),	-- Breath of Mastery
+										recipe(158911),	-- Breath of Versatility
+										recipe(158896),	-- Breath of Versatility (Rank 2?)
+										recipe(159236),	-- Mark of the Shattered Hand
+									},
+								}),
+								i(119293, {		-- Secret of Draenor Enchanting
+									i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
+									i(118429),	-- Formula: Enchant Cloak - Breath of Haste
+									i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
+									i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
+									i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
+									i(118434),	-- Formula: Enchant Cloak - Gift of Haste
+									i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
+									i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
+									i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
+									i(118439),	-- Formula: Enchant Neck - Breath of Haste
+									i(118440),	-- Formula: Enchant Neck - Breath of Mastery
+									i(118442),	-- Formula: Enchant Neck - Breath of Versatility
+									i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
+									i(118444),	-- Formula: Enchant Neck - Gift of Haste
+									i(118445),	-- Formula: Enchant Neck - Gift of Mastery
+									i(118447),	-- Formula: Enchant Neck - Gift of Versatility
+									i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
+									i(118454),	-- Formula: Enchant Ring - Gift of Haste
+									i(118455),	-- Formula: Enchant Ring - Gift of Mastery
+									i(118457),	-- Formula: Enchant Ring - Gift of Versatility
+									i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
+									i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
+									i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
+									i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
+									i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
+									i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
+									i(138882),	-- Formula: Tome of Illusions: Draenor
+								}),
+							}),
 							n(88155, {	-- Challenger Savina
 								["groups"] = {
 									i(136854, {	-- Arsenal: Draenor Challenger's Armaments
@@ -1760,6 +1808,54 @@ _.Zones =
 							i(115380),	-- Crystal-Leaf Chain
 							i(115381),	-- Crystal-Plated Greatbelt
 							i(116768),	-- Mosshide Riverwallow MOUNT!
+						}),
+						n(86045, {	-- Ged'kah <Enchanting Recipes>
+							i(111922, {		-- Draenor Enchanting
+								["collectible"] = false,
+								["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+								["groups"] = {
+									recipe(177043),	-- Secrets of Draenor Enchanting
+									recipe(169092),	-- Temporal Crystal
+									recipe(169091),	-- Luminous Shard
+									recipe(162948),	-- Enchanted Dust
+									recipe(158907),	-- Breath of Critical Strike [Ring]
+									recipe(158908),	-- Breath of Haste [Ring]
+									recipe(158909),	-- Breath of Mastery
+									un(1, recipe(158910)),	-- Breath of Mastery
+									recipe(158911),	-- Breath of Versatility
+									recipe(158896),	-- Breath of Versatility (Rank 2?)
+									recipe(159236),	-- Mark of the Shattered Hand
+								},
+							}),
+							i(119293, {		-- Secret of Draenor Enchanting
+								i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
+								i(118429),	-- Formula: Enchant Cloak - Breath of Haste
+								i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
+								i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
+								i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
+								i(118434),	-- Formula: Enchant Cloak - Gift of Haste
+								i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
+								i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
+								i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
+								i(118439),	-- Formula: Enchant Neck - Breath of Haste
+								i(118440),	-- Formula: Enchant Neck - Breath of Mastery
+								i(118442),	-- Formula: Enchant Neck - Breath of Versatility
+								i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
+								i(118444),	-- Formula: Enchant Neck - Gift of Haste
+								i(118445),	-- Formula: Enchant Neck - Gift of Mastery
+								i(118447),	-- Formula: Enchant Neck - Gift of Versatility
+								i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
+								i(118454),	-- Formula: Enchant Ring - Gift of Haste
+								i(118455),	-- Formula: Enchant Ring - Gift of Mastery
+								i(118457),	-- Formula: Enchant Ring - Gift of Versatility
+								i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
+								i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
+								i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
+								i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
+								i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
+								i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
+								i(138882),	-- Formula: Tome of Illusions: Draenor
+							}),
 						}),
 						n(88493, {	-- Mimi Wizzlebub <Steamwheedle Quartermaster>
 							i(116672),	-- Domesticated Razorback MOUNT!

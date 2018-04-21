@@ -627,6 +627,12 @@ _.Zones =
 					}), 
 				}),
 				nh(-2, {	-- Vendors
+					n(18951, {	-- Erilia <Enchanting Vendor>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					n(16860, {	-- Jilanne
 						i(29953),	-- Golden Dragonhawk Hatchling (PET!)
 						i(29956),	-- Red Dragonhawk Hatchling (PET!)

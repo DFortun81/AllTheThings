@@ -1106,6 +1106,12 @@ _.Zones =
 					a(n(4892, {	-- Jensen Farran <Hunter Trainer & Bowyer>
 						i(11305),	-- Dense Shortbow
 					})),
+					na(53410, {	-- Lissah Spellwick <Enchanting Trainer & Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					nh(4879, {	-- Ogg'marr <Butcher>
 						i(12232),	-- Recipe: Carrion Surprise
 						i(12239),	-- Recipe: Dragonbreath Chili

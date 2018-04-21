@@ -1044,6 +1044,12 @@ _.Zones =
 					["description"] = "If you are above level 90 and need to go to the low level Blasted Lands, then you need to speak with Zidormi who is standing on a small hill near the entrace of the zone from Swamp of Sorrows.",			
 				}),
 				n( -2, {	-- Vendors
+					na(44321, {	-- Sarah Lightbrew <Enchanting Supplies>
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
 					a(n(76117, {	-- Quartermaster Rindelle <Replacement Quest Rewards and General Goods>
 						["groups"]	= {
 							i(118771),	-- Wildfire Windcloak

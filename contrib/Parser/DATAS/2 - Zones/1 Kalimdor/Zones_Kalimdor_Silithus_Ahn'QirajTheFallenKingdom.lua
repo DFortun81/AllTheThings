@@ -942,6 +942,15 @@ END OF MICRO-HOLIDAY --]]
 						},
 						["description"] = "Vendor is located upstairs in the northern building in Southwind Village.|r",
 					}),
+					n(15419, {		-- Kania <Enchanting Supplies>
+						i(20754),	-- Formula: Lesser Mana Oil
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(20755),	-- Formula: Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(22308),	-- Pattern: Enchanted Runecloth Bag
+					}),
 					n(15179, {	-- Mishta <Trade Supplies>
 						i(22683, {	-- Pattern: Gaea's Embrace
 							i(22660),	-- Gaea's Embrace
