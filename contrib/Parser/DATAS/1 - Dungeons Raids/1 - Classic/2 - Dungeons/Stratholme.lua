@@ -250,6 +250,9 @@ _.Instances =
 							i( 18745),	-- Sacred Cloth Leggings
 							i( 18742),	-- Stratholme Militia Shoulderguard
 							i(142337),	-- Plans: Blight
+							n(10398, {	-- Thuzadin Shadowcaster
+								dr(5.0, i(16248)),	-- Formula: Enchant Weapon - Unholy
+							}),
 						}),
 						n( 10809, {			-- Stonespine
 							["groups"] = {

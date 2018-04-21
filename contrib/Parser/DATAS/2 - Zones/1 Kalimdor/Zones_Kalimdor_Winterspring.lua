@@ -359,6 +359,12 @@ _.Zones =
 				n(-16, {	-- Rares
 					n(0, { 			-- Zone Drop
 						dr(0.01, i(34535)),	-- Azure Whelpling
+						n(7524, {	-- Anguished Highborne
+							dr(2.0, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
+						}),
+						n(7523, {	-- Suffering Highborne
+							dr(0.4, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
+						}),
 					}),
 					n(51045, { 		-- Arcanus
 						dr(	11	, i(	10276	)), --	Emerald Sabatons
@@ -908,9 +914,11 @@ _.Zones =
 						i(69239),	-- Winterspring Cub
 					}),
 					n(11189, {	-- Qia <Trade Supplies>
-						i(15740, {	-- Pattern: Frostsaber Boots
-							i(15071),	-- Frostsaber Boots
-						}),
+						i(21957),	-- Design: Necklace of the Diamond Tower
+						i(16221),	-- Formula: Enchant Chest - Major Health
+						i(15740), 	-- Pattern: Frostsaber Boots
+						i(14526),	-- Pattern: Mooncloth
+						i(14468),	-- Pattern: Runecloth Bag
 					}),
 					a(n(10618, {	-- Rivern Frostwind <Wintersaber Trainer>
 						["groups"] = {

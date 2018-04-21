@@ -1050,8 +1050,17 @@ _.Zones =
 						dr(01.0, i(6612)),	-- Sage's Boots
 						dr(01.0, i(6394)),	-- Silver-Thread Boots					
 					}), 
+					n(2558, {	-- Witherbark Berserker
+						dr(0.9, i(11166)),	-- Formula: Enchant Gloves - Skinning
+					}),
+					n(2556, {	-- Witherbark Headhunter
+						dr(1.5, i(11166)),	-- Formula: Enchant Gloves - Skinning
+					}),
 					n(2553, {	-- Witherbark Shadowcaster
 						dr(0.3, i(1297))		-- Robes of the Shadowcaster
+					}),
+					n(2557, {	-- Witherbark Shadow Hunter
+						dr(0.7, i(11166)),	-- Formula: Enchant Gloves - Skinning
 					}),
 					n(2605, { 	-- Zalas Witherbark
 						dr(09.0, i(6604)),	-- Dervish Cape

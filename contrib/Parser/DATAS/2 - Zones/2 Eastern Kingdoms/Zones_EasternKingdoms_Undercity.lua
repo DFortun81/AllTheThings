@@ -323,6 +323,10 @@ _.Zones =
 						i(64922),	-- Mantle of Undercity
 						i(45583)	-- Undercity Tabard
 					}),
+					n(4561, {	-- Daniel Bartlett <Trade Supplies>
+						i(20854),	-- Design: Amulet of the Moon
+						i(16217),	-- Formula: Enchant Shield - Greater Stamina
+					}),
 					n(6566, {	-- Estelle Gendry <Heirloom "Curator">
 						heir(122349),	-- Bloodied Arcanite Reaper
 						heir(122350),	-- Balanced Heartseeker

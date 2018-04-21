@@ -657,6 +657,7 @@ _.Zones =
 							i(1991),	-- Goblin Power Shovel
 						}),
 						n(674, { 	-- Venture Co. Strip Miner
+							dr(0.2, i(11203)),	--Formula: Enchant Gloves - Advanced Mining
 							i(1991),	-- Goblin Power Shovel
 						}),
 						n(676, { 	-- Venture Co. Surveyor
