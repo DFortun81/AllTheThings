@@ -39,7 +39,7 @@ _.WorldEvents =
 							i(51965),	-- Vigorous Handguards
 							i(51964),	-- Vigorous Belt
 							i(51959),	-- Vigorous Belt
-							i(51963),	-- Vigorous Stompers
+							i(51963),	-- Vigorous Stompers*
 							i(51994),	-- Tumultuous Cloak*
 							i(51996),	-- Tumultuous Necklace*
 							i(51992),	-- Tumultuous Ring*
