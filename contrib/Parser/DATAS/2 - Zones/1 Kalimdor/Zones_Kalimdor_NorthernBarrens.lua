@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, { 	-- Kalimdor
 		m(11, {		-- Northern Barrens
-			["groups"] = {			
+			["groups"] = {
 				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -1344,53 +1344,6 @@ _.Zones =
 						i(3428),	-- Common Gray Shirt
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
-					})),
-					h(n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
-						i(19578),	-- Berserker Bracers
-						i(19582),	-- Windtalker's Wristguards
-						i(19587),	-- Forest Stalker's Bracers
-						i(19595),	-- Dryad's Wrist Bindings
-						i(22651),	-- Outrader's Plate Legguards
-						i(22673),	-- Outrider's Chain Leggings
-						i(22676),	-- Outrider's Mail Leggings
-						i(22740),	-- Outrider's Leather Pants
-						i(22741),	-- Outrider's Lizardhide Pants
-						i(22747),	-- Outrider's Silk Leggings
-						i(30498),	-- Outrider's Lamellar Legguards
-						i(19526),	-- Battle Healer's Cloak
-						i(19542),	-- Scout's Blade
-						i(19550),	-- Legionnaire's Sword
-						i(19558),	-- Outrider's Bow
-						i(19566),	-- Advisor's Gnarled Staff
-						i(19580),	-- Berserker Bracers
-						i(19583),	-- Windtalker's Wristguards
-						i(19589),	-- Forest Stalker's Bracers
-						i(19596),	-- Dryad's Wrist Bindings
-						i(19527),	-- Battle Healer's Cloak
-						i(19543),	-- Scout's Blade
-						i(19551),	-- Legionnaire's Sword
-						i(19559),	-- Outrider's Bow
-						i(19567),	-- Advisor's Gnarled Staff
-						i(19581),	-- Berserker Bracers
-						i(19584),	-- Windtalker's Wristguards
-						i(19590),	-- Forest Stalker's Bracers
-						i(19597),	-- Dryad's Wrist Bindings
-						i(19528),	-- Battle Healer's Cloak
-						i(19544),	-- Scout's Blade
-						i(19552),	-- Legionnaire's Sword
-						i(19560),	-- Outrider's Bow
-						i(19568),	-- Advisor's Gnarled Staff
-						i(19529),	-- Battle Healer's Cloak
-						i(19545),	-- Scout's Blade
-						i(19553),	-- Legionnaire's Sword
-						i(19561),	-- Outrider's Bow
-						i(19569),	-- Advisor's Gnarled Staff
-						i(20427),	-- Battle Healer's Cloak
-						i(20441),	-- Scout's Blade
-						i(20430),	-- Legionnaire's Sword
-						i(20437),	-- Outrider's Bow
-						i(20425),	-- Advisor's Gnarled Staff
-						i(19505),	-- Warsong Battle Tabard
 					})),
 					n(3497, {	-- Kilxx <Fisherman>
 						i(6330),	-- Recipe: Bristle Whisker Catfish

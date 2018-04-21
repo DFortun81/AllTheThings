@@ -1033,8 +1033,10 @@ local function GetFactionCache()
 	if not cache then
 		cache = {};
 		SetTempDataMember("FACTION_CACHE", cache);
-		for i=1,10000,1 do
-			if GetFactionInfoByID(i) then
+		for i=1,GetNumFactions(),1 do
+			local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar,
+				isHeader, isCollapsed, hasRep, isWatched, isChild, factionID = GetFactionInfo(i);
+			if hasRep or not isHeader then
 				tinsert(cache, app.CreateFaction(i));
 			end
 		end
@@ -2870,11 +2872,11 @@ app.BaseFaction = {
 			return t.standing == 8;
 		elseif key == "text" then
 			local rgb = FACTION_BAR_COLORS[t.standing + (t.isFriend and 2 or 0)];
-			return Colorize(select(1, GetFactionInfoByID(t.factionID)), RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
+			return Colorize(select(1, GetFactionInfoByID(t.factionID)) or ("Faction #" .. t.factionID), RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
 		elseif key == "title" then
 			return t.isFriend and select(7, GetFriendshipReputation(t.factionID)) or _G["FACTION_STANDING_LABEL" .. t.standing];
 		elseif key == "description" then
-			return select(2, GetFactionInfoByID(t.factionID));
+			return select(2, GetFactionInfoByID(t.factionID)) or "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
