@@ -1338,6 +1338,12 @@ _.Zones =
 					}), 
 				}),
 				n( -2, {	-- Vendors
+					n(19540, { -- Asarnan <Enchanting Trainer>
+						i(20753),    -- Formula: Lesser Wizard Oil
+						i(20752),    -- Formula: Minor Mana Oil
+						i(20758),    -- Formula: Minor Wizard Oil
+						i(22307),    -- Pattern: Enchanted Mageweave Pouch
+					}),
 					n(54649, {	-- Big Zokk Torquewrench <Classic Weapons>
 						["groups"] = {
 							a(i(77549)),	-- Replica Grand Marshal's Demolisher
@@ -1610,6 +1616,12 @@ _.Zones =
 						i(29378),	-- Starheart Baton
 						i(29380),	-- Ethereum Phase Blade
 						i(29391),	-- Pulse Dagger
+					}),
+					n(19537, { -- Dealer Malij <Enchanting Supplies>
+						i(20753),    -- Formula: Lesser Wizard Oil
+						i(20752),    -- Formula: Minor Mana Oil
+						i(20758),    -- Formula: Minor Wizard Oil
+						i(22307),    -- Pattern: Enchanted Mageweave Pouch
 					}),
 					n(20980, {	-- Dealer Rashaad <Exotic Creatures>
 						i(8490),	-- Cat Carrier (Siamese) Pet
