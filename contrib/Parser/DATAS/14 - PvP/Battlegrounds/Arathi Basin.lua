@@ -26,8 +26,9 @@ _.PVP =
 				h(faction(510, {
 					["groups"] = {
 						ach(710), 	-- The Defiler
-						i(137642, {	-- Mark of Honor (testing)
-							nh(15126, {	-- Rutherford Twing -- TODO: Comment these in and organize + add rings/trinkets https://www.wowhead.com/npc=15126/rutherford-twing#sells
+						nh(15126, {	-- Rutherford Twing -- TODO: Comment these in and organize + add rings/trinkets https://www.wowhead.com/npc=15126/rutherford-twing#sells
+							["itemID"] = 137642,	-- Mark of Honor
+							["groups"] = {
 								i(20220),	-- Ironbark Staff
 								i(20068),	-- Deathguard's Cloak
 								i(20158),	-- Defiler's Chain Pauldrons
@@ -95,7 +96,7 @@ _.PVP =
 								i(20207),	--
 								i(20210),	--
 								i(20131),	--
-							}),
+							},
 						}),
 					},
 					["creatureID"] = 19905,
@@ -104,73 +105,76 @@ _.PVP =
 					["groups"] = {
 						ach(711), 	-- Knight of Arathor
 						na(15127, {	-- Samual Hawke	-- TODO: Comment these in and organize + add rings/trinkets https://www.wowhead.com/npc=15127/samuel-hawke
-							i(20069),	-- Ironbark Staff
-							i(20055),	-- Highlander's Chain Pauldrons
-							i(20056),	-- Highlander's Mail Pauldrons
-							i(20057),	-- Highlander's Plate Spaulders
-							i(20058),	-- Highlander's Lamellar Spaulers
-							i(20059),	--
-							i(20060),	--
-							i(20061),	--
-							i(20070),	--
-							i(20073),	--
-							i(20041),	--
-							i(20042),	--
-							i(20043),	--
-							i(20044),	--
-							i(20045),	--
-							i(20046),	--
-							i(20047),	--
-							i(20048),	--
-							i(20049),	--
-							i(20050),	--
-							i(20051),	--
-							i(20052),	--
-							i(20053),	--
-							i(20054),	--
-							i(20088),	--
-							i(20091),	--
-							i(20094),	--
-							i(20097),	--
-							i(20100),	--
-							i(20103),	--
-							i(20106),	--
-							i(20109),	--
-							i(20112),	--
-							i(20115),	--
-							i(20118),	--
-							i(20121),	--
-							i(20124),	--
-							i(20127),	--
-							i(20089),	--
-							i(20092),	--
-							i(20095),	--
-							i(20098),	--
-							i(20101),	--
-							i(20104),	--
-							i(20107),	--
-							i(20110),	--
-							i(20113),	--
-							i(20116),	--
-							i(20119),	--
-							i(20122),	--
-							i(20125),	--
-							i(20128),	--
-							i(20090),	--
-							i(20093),	--
-							i(20096),	--
-							i(20099),	--
-							i(20102),	--
-							i(20105),	--
-							i(20108),	--
-							i(20111),	--
-							i(20114),	--
-							i(20117),	--
-							i(20120),	--
-							i(20123),	--
-							i(20126),	--
-							i(20129),	--
-							i(20132),	--
+							["itemID"] = 137642,	-- Mark of Honor
+							["groups"] = {
+								i(20069),	-- Ironbark Staff
+								i(20055),	-- Highlander's Chain Pauldrons
+								i(20056),	-- Highlander's Mail Pauldrons
+								i(20057),	-- Highlander's Plate Spaulders
+								i(20058),	-- Highlander's Lamellar Spaulers
+								i(20059),	--
+								i(20060),	--
+								i(20061),	--
+								i(20070),	--
+								i(20073),	--
+								i(20041),	--
+								i(20042),	--
+								i(20043),	--
+								i(20044),	--
+								i(20045),	--
+								i(20046),	--
+								i(20047),	--
+								i(20048),	--
+								i(20049),	--
+								i(20050),	--
+								i(20051),	--
+								i(20052),	--
+								i(20053),	--
+								i(20054),	--
+								i(20088),	--
+								i(20091),	--
+								i(20094),	--
+								i(20097),	--
+								i(20100),	--
+								i(20103),	--
+								i(20106),	--
+								i(20109),	--
+								i(20112),	--
+								i(20115),	--
+								i(20118),	--
+								i(20121),	--
+								i(20124),	--
+								i(20127),	--
+								i(20089),	--
+								i(20092),	--
+								i(20095),	--
+								i(20098),	--
+								i(20101),	--
+								i(20104),	--
+								i(20107),	--
+								i(20110),	--
+								i(20113),	--
+								i(20116),	--
+								i(20119),	--
+								i(20122),	--
+								i(20125),	--
+								i(20128),	--
+								i(20090),	--
+								i(20093),	--
+								i(20096),	--
+								i(20099),	--
+								i(20102),	--
+								i(20105),	--
+								i(20108),	--
+								i(20111),	--
+								i(20114),	--
+								i(20117),	--
+								i(20120),	--
+								i(20123),	--
+								i(20126),	--
+								i(20129),	--
+								i(20132),	--
+							},
 						}),
 					},
 					["creatureID"] = 30231,
