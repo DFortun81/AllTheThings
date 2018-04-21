@@ -27,13 +27,25 @@ _.Instances =
 						},						
 						["achievementID"] = 913, -- To Honor One's Elders						
 					}),							
-					n(-17, {    		-- Quests          
-						qg(46077, q(27605)),	-- Eranikus
-						qg(46077, q(27604)),	-- Jammal'an the Prophet
-						qg(46077, q(27633)),	-- The Blood God Hakkar
-						qg(46071, q(27913)),	-- The Heart of the Temple
+					n(-17, {	-- Quests
+						q(27605, {	-- Eranikus
+							["g"] = {
+								i(65931),	-- Essence of Eranikus' Shade
+							},
+							["qg"] = 46077,	-- Lord Itharius
+						}),
+						q(27604, {	-- Jammal'an the Prophet
+							["g"] = {
+							},
+							["qg"] = 46077,	-- Lord Itharius
+						}),
+						q(27633, {	-- The Blood God Hakkar
+							["g"] = {
+							},
+							["qg"] = 46077,	-- Lord Itharius
+						}),
 					}),				
-					n(0, {				-- Zone Drop
+					n(  0, {	-- Zone Drop
 						n(5270, { 	-- Atal'ai Corpse Eater 
 							dr(0.01, i(10627)),	-- Bludgeon of the Grinning Dog
 							dr(0.01, i(10626)),	-- Ragehammer
@@ -79,13 +91,9 @@ _.Instances =
 						n(5225, { 	-- Murk Spitter
 							dr(0.05, i(10627)),	-- Bludgeon of the Grinning Dog
 						}),
-						n(5277, { 	-- Nightmare Scalebane
-							dr(1.3, i(78346, {  -- Pattern: Green Dragonscale Breastplate
-								i(15045), -- Green Dragonscale Breastplate
-							})),
-							dr(1.2, i(15733, {	-- Pattern: Green Dragonscale Leggings
-								i(15046), -- Green Dragonscale Leggings
-							})),
+						n(5277, {	-- Nightmare Scalebane
+							dr(1.30, i(78346)),	-- Pattern: Green Dragonscale Breastplate
+							dr(1.20, i(15733)),	-- Pattern: Green Dragonscale Leggings
 							dr(0.01, i(10627)),	-- Bludgeon of the Grinning Dog
 							dr(0.01, i(10628)),	-- Deathblow
 							dr(0.01, i(10629)),	-- Mistwalker Boots
@@ -99,12 +107,8 @@ _.Instances =
 							dr(0.01, i(10623)),	-- Winter's Bite
 						}),
 						n(5283, { 	-- Nightmare Wanderer 
-							dr(1.2, i(78346, {  -- Pattern: Green Dragonscale Breastplate
-								i(15045), -- Green Dragonscale Breastplate
-							})),
-							dr(1.1, i(15733, {	-- Pattern: Green Dragonscale Leggings
-								i(15046), -- Green Dragonscale Leggings
-							})),
+							dr(1.20, i(78346)),	-- Pattern: Green Dragonscale Breastplate
+							dr(1.10, i(15733)),	-- Pattern: Green Dragonscale Leggings
 							dr(0.02, i(10627)),	-- Bludgeon of the Grinning Dog
 							dr(0.02, i(10632)),	-- Slimescale Bracers
 							dr(0.02, i(10630)),	-- Soulcatcher Halo
@@ -118,20 +122,12 @@ _.Instances =
 							dr(0.01, i(10623)),	-- Winter's Bite
 						}),
 						n(8319, { 	-- Nightmare Whelp
-							dr(1.5, i(78346, {  -- Pattern: Green Dragonscale Breastplate
-								i(15045), -- Green Dragonscale Breastplate
-							})),
-							dr(1.3, i(15733, {	-- Pattern: Green Dragonscale Leggings
-								i(15046), -- Green Dragonscale Leggings
-							})),
+							dr(1.5, i(78346)),  -- Pattern: Green Dragonscale Breastplate
+							dr(1.3, i(15733)),	-- Pattern: Green Dragonscale Leggings
 						}),						
 						n(5280, { 	-- Nightmare Wyrmkin 
-							dr(1.4, i(15733, {	-- Pattern: Green Dragonscale Leggings
-								i(15046), -- Green Dragonscale Leggings
-							})),
-							dr(1.3, i(78346, {  -- Pattern: Green Dragonscale Breastplate
-								i(15045), -- Green Dragonscale Breastplate
-							})),
+							dr(1.40, i(15733)),	-- Pattern: Green Dragonscale Leggings
+							dr(1.30, i(78346)),	-- Pattern: Green Dragonscale Breastplate
 							dr(0.01, i(10627)),	-- Bludgeon of the Grinning Dog
 							dr(0.01, i(10628)),	-- Deathblow
 							dr(0.01, i(10629)),	-- Mistwalker Boots
@@ -163,7 +159,7 @@ _.Instances =
 						i(10808),	-- Gloves of the Atal'ai Prophet
 						i(10807),	-- Kilt of the Atal'ai Prophet
 					})),
-					e(459, { 			-- Wardens of the Dream
+					e(  459, { 			-- Wardens of the Dream
 						n(5721, {	-- Dreamscythe
 							i(12463), 	-- Drakefang Butcher
 							i(12243), 	-- Smoldering Claw
@@ -172,6 +168,14 @@ _.Instances =
 							i(12464),	-- Bloodfire Talons
 							i(12466),	-- Dawnspire Cord
 						}),
+						n(5720, { 	-- Weaver
+							i(12463), 	-- Drakefang Butcher
+							i(12243), 	-- Smoldering Claw
+							i(10797), 	-- Firebreather
+							i(10796),	-- Drakestone
+							i(12464),	-- Bloodfire Talons
+							i(12466),	-- Dawnspire Cord
+						}),	
 						n(5722, { 	-- Hazzas
 							i(12463), 	-- Drakefang Butcher
 							i(12243), 	-- Smoldering Claw
@@ -187,15 +191,7 @@ _.Instances =
 							i(10796),	-- Drakestone
 							i(12464),	-- Bloodfire Talons
 							i(12466),	-- Dawnspire Cord
-						}),						
-						n(5720, { 	-- Weaver
-							i(12463), 	-- Drakefang Butcher
-							i(12243), 	-- Smoldering Claw
-							i(10797), 	-- Firebreather
-							i(10796),	-- Drakestone
-							i(12464),	-- Bloodfire Talons
-							i(12466),	-- Dawnspire Cord
-						}),												
+						}),
 					}),
 					cr(5709, e(463, { 	-- Shade of Erankikus
 						i(10828), -- Dire Nail
@@ -205,9 +201,9 @@ _.Instances =
 						i(10835), -- Crest of Supremacy
 						i(10833), -- Horns of Eranikus
 					})),
-					nld({				-- Legacy
+					n(-40, {	-- Legacy
 						["groups"] = {
-							nlq({	-- Legacy Quests
+							n(-17, {	-- Quests (Legacy)
 								qc11(q(9053, { 	-- A Better Ingredient
 									un(34, i(22272)),	-- Forest's Embrace
 									un(34, i(22274)),	-- Grizzled Pelt
@@ -254,62 +250,64 @@ _.Instances =
 									un(34, i(20517)),	-- Razorsteel Shoulders
 								})),
 							}),
-							n(8580, {	-- Atal'alarion
-								un(2, i(10798)),	-- Atal'alarion Tusk Ring
-								un(2, i(10800)),	-- Darkwater Bracers
-								un(2, i(10799)),	-- Headspike
-							}),
-							n(5713, {	-- Gasher
-								un(2, i(10786)),	-- Atal'ai Boots
-								un(2, i(10784)),	-- Atal'ai Breastplate
-								un(2, i(10788)),	-- Atal'ai Girdle
-								un(2, i(10787)),	-- Atal'ai Gloves
-								un(2, i(10785)),	-- Atal'ai Leggings
-								un(2, i(10783)),	-- Atal'ai Spaulders
-							}),
-							n(5715, { 	-- Hukku
-								un(2, i(10786)),	-- Atal'ai Boots
-								un(2, i(10784)),	-- Atal'ai Breastplate
-								un(2, i(10788)),	-- Atal'ai Girdle
-								un(2, i(10787)),	-- Atal'ai Gloves
-								un(2, i(10785)),	-- Atal'ai Leggings
-								un(2, i(10783)),	-- Atal'ai Spaulders
-							}),
-							n(5714, {	-- Loro
-								un(2, i(10786)),	-- Atal'ai Boots
-								un(2, i(10784)),	-- Atal'ai Breastplate
-								un(2, i(10788)),	-- Atal'ai Girdle
-								un(2, i(10787)),	-- Atal'ai Gloves
-								un(2, i(10785)),	-- Atal'ai Leggings
-								un(2, i(10783)),	-- Atal'ai Spaulders
-							}),
-							n(5717, {	-- Mijan
-								un(2, i(10786)),	-- Atal'ai Boots
-								un(2, i(10784)),	-- Atal'ai Breastplate
-								un(2, i(10788)),	-- Atal'ai Girdle
-								un(2, i(10787)),	-- Atal'ai Gloves
-								un(2, i(10785)),	-- Atal'ai Leggings
-								un(2, i(10783)),	-- Atal'ai Spaulders
-							}),
-							n(5712, {	-- Zolo
-								un(2, i(10786)),	-- Atal'ai Boots
-								un(2, i(10784)),	-- Atal'ai Breastplate
-								un(2, i(10788)),	-- Atal'ai Girdle
-								un(2, i(10787)),	-- Atal'ai Gloves
-								un(2, i(10785)),	-- Atal'ai Leggings
-								un(2, i(10783)),	-- Atal'ai Spaulders
-							}),
-							n(5716, {	-- Zul'Lor
-								un(2, i(10786)),	-- Atal'ai Boots
-								un(2, i(10784)),	-- Atal'ai Breastplate
-								un(2, i(10788)),	-- Atal'ai Girdle
-								un(2, i(10787)),	-- Atal'ai Gloves
-								un(2, i(10785)),	-- Atal'ai Leggings
-								un(2, i(10783)),	-- Atal'ai Spaulders
-							}),
-							n(5708, {	-- Spawn of Hakkar
-								un(2, i(10801)),	-- Slitherscale Boots
-								un(2, i(10802)),	-- Wingveil Cloak
+							n(  0, {	-- Zone Drop (Legacy)
+								n(8580, {	-- Atal'alarion
+									un(2, i(10798)),	-- Atal'alarion Tusk Ring
+									un(2, i(10800)),	-- Darkwater Bracers
+									un(2, i(10799)),	-- Headspike
+								}),
+								n(5713, {	-- Gasher
+									un(2, i(10786)),	-- Atal'ai Boots
+									un(2, i(10784)),	-- Atal'ai Breastplate
+									un(2, i(10788)),	-- Atal'ai Girdle
+									un(2, i(10787)),	-- Atal'ai Gloves
+									un(2, i(10785)),	-- Atal'ai Leggings
+									un(2, i(10783)),	-- Atal'ai Spaulders
+								}),
+								n(5715, { 	-- Hukku
+									un(2, i(10786)),	-- Atal'ai Boots
+									un(2, i(10784)),	-- Atal'ai Breastplate
+									un(2, i(10788)),	-- Atal'ai Girdle
+									un(2, i(10787)),	-- Atal'ai Gloves
+									un(2, i(10785)),	-- Atal'ai Leggings
+									un(2, i(10783)),	-- Atal'ai Spaulders
+								}),
+								n(5714, {	-- Loro
+									un(2, i(10786)),	-- Atal'ai Boots
+									un(2, i(10784)),	-- Atal'ai Breastplate
+									un(2, i(10788)),	-- Atal'ai Girdle
+									un(2, i(10787)),	-- Atal'ai Gloves
+									un(2, i(10785)),	-- Atal'ai Leggings
+									un(2, i(10783)),	-- Atal'ai Spaulders
+								}),
+								n(5717, {	-- Mijan
+									un(2, i(10786)),	-- Atal'ai Boots
+									un(2, i(10784)),	-- Atal'ai Breastplate
+									un(2, i(10788)),	-- Atal'ai Girdle
+									un(2, i(10787)),	-- Atal'ai Gloves
+									un(2, i(10785)),	-- Atal'ai Leggings
+									un(2, i(10783)),	-- Atal'ai Spaulders
+								}),
+								n(5712, {	-- Zolo
+									un(2, i(10786)),	-- Atal'ai Boots
+									un(2, i(10784)),	-- Atal'ai Breastplate
+									un(2, i(10788)),	-- Atal'ai Girdle
+									un(2, i(10787)),	-- Atal'ai Gloves
+									un(2, i(10785)),	-- Atal'ai Leggings
+									un(2, i(10783)),	-- Atal'ai Spaulders
+								}),
+								n(5716, {	-- Zul'Lor
+									un(2, i(10786)),	-- Atal'ai Boots
+									un(2, i(10784)),	-- Atal'ai Breastplate
+									un(2, i(10788)),	-- Atal'ai Girdle
+									un(2, i(10787)),	-- Atal'ai Gloves
+									un(2, i(10785)),	-- Atal'ai Leggings
+									un(2, i(10783)),	-- Atal'ai Spaulders
+								}),
+								n(5708, {	-- Spawn of Hakkar
+									un(2, i(10801)),	-- Slitherscale Boots
+									un(2, i(10802)),	-- Wingveil Cloak
+								}),
 							}),
 						},
 						["u"] = 12,
