@@ -426,6 +426,7 @@ AllTheThings.Locales.enUS = {
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",							-- Class
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
+		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
 		[-318] = "Interface\\Icons\\garrison_purplearmor",						-- Armor
 		[-319] = "Interface\\Icons\\garrison_purpleweapon",						-- Weapons
 		[-320] = "Interface\\Icons\\inv_helmet_03",								-- Head
@@ -911,7 +912,7 @@ AllTheThings.Locales.enUS = {
 		[-301] = "Crates of Battlefield Goods",
 		[-302] = BATTLEFIELD_LEVEL.." 80-84", 									-- Level Range 80-84
 		[-303] = BATTLEFIELD_LEVEL.." 85-89",									-- Level Range 85-89
-		
+		[-304] = BATTLEGROUNDS,													-- Battlegrounds
 		[-318] = ARMOR, 														-- Armor
 		[-319] = AUCTION_CATEGORY_WEAPONS, 										-- Weapons
 		[-320] = INVTYPE_HEAD, 													-- Head
