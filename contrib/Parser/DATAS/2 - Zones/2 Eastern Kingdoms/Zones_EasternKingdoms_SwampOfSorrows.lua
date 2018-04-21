@@ -102,11 +102,13 @@ _.Zones =
 						i(64614),
 						i(64621),
 					})),
---[[					
-					qg(, q(27740)),	-- Baba Bogbrew
-					qg(, q(27914)),	-- Blessing of the Green Dragonflight
-					qg(, qa(27904)),	-- Breath of Mist
---]]
+--					qg(, q(27740)),	-- Baba Bogbrew
+					q(27914, {	-- Blessing of the Green Dragonflight
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius (may be outside instance?)
+					}),
+--					qg(, qa(27904)),	-- Breath of Mist
 					qg(45948, q(27599, { -- Can't Take It With Them
 						i(64590),
 						i(64600),
@@ -156,8 +158,12 @@ _.Zones =
 --[[
 					qg(, q(27598)),	-- Kill Gil
 					qg(, qh(27910)),	-- Last Regrets
-					qg(, q(27704)),	-- Legends of the Sunken Temple
 --]]
+					q(27704, {	-- Legends of the Sunken Temple
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
 					qg(46676, qa(27822, { -- Lumbering Oafs
 						i(64593),
 						i(64603),
@@ -187,7 +193,13 @@ _.Zones =
 					qg(, qa(27821)),	-- Orcs and Humans
 					qg(, qh(27852)),	-- Orcs and Humans
 					qg(, qa(11882)),	-- Playing with Fire
-					qg(, q(27694)),	-- Pool of Tears
+--]]
+					q(27694, {	-- Pool of Tears
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+--[[
 					qg(, qh(27907)),	-- Prayerblossom
 					qg(, qa(27875)),	-- Prayerblossom
 					qg(, qa(27843)),	-- Reinforcements Denied
@@ -197,9 +209,23 @@ _.Zones =
 					qg(, qh(27908)),	-- Secrets of the Mire
 					qg(, qa(27876)),	-- Secrets of the Mire
 					qg(, q(27818)),	-- Slithering Signs
-					qg(, q(27705)),	-- Step One: The Priestess
-					qg(, q(27773)),	-- Step Three: Prophet
-					qg(, q(27768)),	-- Step Two: The Bloodletter
+--]]
+					q(27705, {	-- Step One: The Priestess
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+					q(27773, {	-- Step Three: Prophet
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+					q(27768, {	-- Step Two: The Bloodletter
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+--[[
 					qg(, q(27663)),	-- Tastes Like Strider
 					qg(, qh(28570)),	-- The Bogpaddle Bullet
 					qg(, qa(28569)),	-- The Bogpaddle Bullet
@@ -210,10 +236,18 @@ _.Zones =
 						i(64611),
 						i(64619),
 					})),
+					q(27869, {	-- The Dragon and the Temple
+						["g"] = {
+						},
+						["qg"] = 46172,	-- Baba Bogbrew
+					}),
+--					qg(, qa(27918)),	-- The Harborage
+					q(27915, {	-- The Heart of the Temple
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
 --[[
-					qg(, q(27869)),	-- The Dragon and the Temple
-					qg(, qa(27918)),	-- The Harborage
-					qg(, q(27915)),	-- The Heart of the Temple
 					qg(, qa(27860)),	-- The Lost Ones
 					qg(, qa(27902)),	-- The Purespring
 					qg(, qh(27909)),	-- The Purespring
@@ -232,11 +266,17 @@ _.Zones =
 						i(64629),
 						i(157013), -- Ogre Mage Club
 					})),
---[[					
-					qg(, qa(27870)),	-- To Marshtide Watch
-					qg(, qh(27871)),	-- To Stonard
-					qg(, qh(28677)),	-- Warchief's Command: Swamp of Sorrows!
---]]
+					qa(27870, {	-- To Marshtide Watch
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+					qh(27871, {	-- To Stonard
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+--					qg(, qh(28677)),	-- Warchief's Command: Swamp of Sorrows!
 					qg(7623, qh(27857, { -- We're Under Attack!
 						i(64636),
 						i(64626),

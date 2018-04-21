@@ -160,6 +160,13 @@ _.Zones =
 					})),
 --[[					
 					qg(23579, q(27408)),	-- Banner of the Stonemaul
+--]]
+					q(27914, {	-- Blessing of the Green Dragonflight
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius (may be outside instance?)
+					}),
+--[[
 					qg(23579, q(27407)),	-- Bloodfen Feathers
 					qg(23951, qa(27247)),	-- Captain Vimes
 --]]					
@@ -241,8 +248,13 @@ _.Zones =
 						i(57829),
 						i(156976),	-- Staff of Memory 
 					})),
---[[					
-					qg(6546, qa(27430)),	-- Justice for the Hyals
+--					qg(6546, qa(27430)),	-- Justice for the Hyals
+					q(27704, {	-- Legends of the Sunken Temple
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+--[[
 					qg(21042, qh(27260)),	-- Lieutenant Paval Reethe
 					qg(4944, qa(27264)),	-- Lieutenant Paval Reethe
 					qg(21042, qa(27263)),	-- Lieutenant Paval Reethe
@@ -278,6 +290,11 @@ _.Zones =
 						i(57829),
 						i(156976),	-- Staff of Memory 
 					})),
+					q(27694, {	-- Pool of Tears
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
 --[[					
 					qg(23723, qa(27245)),	-- Prisoners of the Grimtotems
 					qg(4968, qa(27240)),	-- Proof of Treachery
@@ -305,6 +322,22 @@ _.Zones =
 						qh(27229),	-- SMASH BROODQUEEN
 					}),
 					qg(23579, q(27410)),	-- Spirits of Stonemaul Hold
+--]]
+					q(27705, {	-- Step One: The Priestess
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+					q(27773, {	-- Step Three: Prophet
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+					q(27768, {	-- Step Two: The Bloodletter
+						["g"] = {
+						},
+						["qg"] = 46071,	-- Lord Itharius
+					}),
 					qg(4880, qa( 1222)),	-- Stinky's Escape
 					qg(4880, qh( 1270)),	-- Stinky's Escape
 --]]					

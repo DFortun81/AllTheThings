@@ -489,19 +489,19 @@ _.Instances =
 							["repeatable"] = true,
 						},
 						n(15277, {	-- Anubisath Defender
-							dr(08.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(8.00, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(9.00, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(9.00, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(1.00, i(21321)),	-- Red Qiraji Resonating Crystal
 							dr(0.12, i(21890)), -- Gloves of the Fallen Prophet
 							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
 							dr(0.18, i(21891)),	-- Shard of the Fallen Star
 						}),
 						n(15264, {	-- Anubisath Sentinel
-							dr(09.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(9.00, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(9.00, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(0.00, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(1.00, i(21321)),	-- Red Qiraji Resonating Crystal
 							dr(0.05, i(21837)),	-- Anubisath Warhammer
 							dr(0.05, i(21838)),	-- Garb of Royal Ascension
 							dr(0.05, i(21888)),	-- Gloves of the Immortal
@@ -512,16 +512,16 @@ _.Instances =
 							dr(11.0, i(21218)),	-- Blue Qiraji Resonating Crystal
 							dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
 							dr(11.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
-							dr(0.2, i(21890)),	-- Gloves of the Fallen Prophet
-							dr(0.2, i(21889)),	-- Gloves of the Redeemed Prophecy
-							dr(0.3, i(21891)),	-- Shard of the Fallen Star
+							dr(01.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(00.2, i(21890)),	-- Gloves of the Fallen Prophet
+							dr(00.2, i(21889)),	-- Gloves of the Redeemed Prophecy
+							dr(00.3, i(21891)),	-- Shard of the Fallen Star
 						}),
 						n(15262, {	-- Obsidian Eradicator
-							dr(08.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(08.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(8.00, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(8.00, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(9.00, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(1.00, i(21321)),	-- Red Qiraji Resonating Crystal
 							dr(0.05, i(21837)),	-- Anubisath Warhammer
 							dr(0.04, i(21838)),	-- Garb of Royal Ascension
 							dr(0.07, i(21888)),	-- Gloves of the Immortal
@@ -529,10 +529,10 @@ _.Instances =
 							dr(0.05, i(21836)),	-- Ritssyn's Ring of Chaos
 						}),
 						n(15312, {	-- Obisidan Nullifier
-							dr(08.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-							dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
-							dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(1.5, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(8.00, i(21218)),	-- Blue Qiraji Resonating Crystal
+							dr(9.00, i(21323)),	-- Green Qiraji Resonating Crystal
+							dr(9.00, i(21324)),	-- Yellow Qiraji Resonating Crystal
+							dr(1.50, i(21321)),	-- Red Qiraji Resonating Crystal
 							dr(0.12, i(21890)), -- Gloves of the Fallen Prophet
 							dr(0.12, i(21889)),	-- Gloves of the Redeemed Prophecy
 							dr(0.14, i(21891)),	-- Shard of the Fallen Star
@@ -541,7 +541,7 @@ _.Instances =
 							dr(08.0, i(21218)),	-- Blue Qiraji Resonating Crystal
 							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
 							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(01.0, i(21321)),	-- Red Qiraji Resonating Crystal
 							dr(0.05, i(21837)),	-- Anubisath Warhammer
 							dr(0.06, i(21838)),	-- Garb of Royal Ascension
 							dr(0.05, i(21888)),	-- Gloves of the Immortal
@@ -552,7 +552,7 @@ _.Instances =
 							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
 							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
 							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(0.8, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(0.80, i(21321)),	-- Red Qiraji Resonating Crystal
 							dr(0.15, i(21890)), -- Gloves of the Fallen Prophet
 							dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
 							dr(0.14, i(21891)),	-- Shard of the Fallen Star
@@ -561,7 +561,7 @@ _.Instances =
 							dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
 							dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
 							dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(1.1, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(01.1, i(21321)),	-- Red Qiraji Resonating Crystal
 							dr(0.11, i(21837)),	-- Anubisath Warhammer
 							dr(0.04, i(21838)),	-- Garb of Royal Ascension
 							dr(0.06, i(21888)),	-- Gloves of the Immortal
@@ -572,16 +572,16 @@ _.Instances =
 							dr(09.0, i(21218)),	-- Blue Qiraji Resonating Crystal
 							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
 							dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(1.1, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(01.1, i(21321)),	-- Red Qiraji Resonating Crystal
 							dr(0.17, i(21890)), -- Gloves of the Fallen Prophet
 							dr(0.16, i(21889)),	-- Gloves of the Redeemed Prophecy
-							dr(0.2, i(21891)),	-- Shard of the Fallen Star
+							dr(0.20, i(21891)),	-- Shard of the Fallen Star
 						}),
 						n(15250, {	-- Qiraji Slayer
 							dr(09.0, i(21218)),	-- Blue Qiraji Resonating Crystal
 							dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
 							dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-							dr(1.0, i(21321)),	-- Red Qiraji Resonating Crystal
+							dr(1.00, i(21321)),	-- Red Qiraji Resonating Crystal
 							dr(0.07, i(21837)),	-- Anubisath Warhammer
 							dr(0.05, i(21838)),	-- Garb of Royal Ascension
 							dr(0.05, i(21888)),	-- Gloves of the Immortal
@@ -596,8 +596,8 @@ _.Instances =
 							dr(0.07, i(21836)),	-- Ritssyn's Ring of Chaos
 						}),
 						n(15240, {	-- Vekniss Hive Crawler
-							dr(0.3, i(21890)), 	-- Gloves of the Fallen Prophet
-							dr(0.2, i(21889)),	-- Gloves of the Redeemed Prophecy
+							dr(0.30, i(21890)), 	-- Gloves of the Fallen Prophet
+							dr(0.20, i(21889)),	-- Gloves of the Redeemed Prophecy
 							dr(0.15, i(21891)),	-- Shard of the Fallen Star
 						}),
 						n(15229, {	-- Vekniss Soldier

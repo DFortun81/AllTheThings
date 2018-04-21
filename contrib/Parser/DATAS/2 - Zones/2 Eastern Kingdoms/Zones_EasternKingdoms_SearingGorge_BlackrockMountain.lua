@@ -106,7 +106,11 @@ _.Zones =
 						i(63218),
 						i(63217),
 					})),
---					qg(, q(27470)),	-- A Potential Ally
+					qdg(q(27470, {	-- A Potential Ally
+						["g"] = {
+						},
+						["qg"] = 14625,	-- Overseer Oilfist
+					})),
 					qg(47268, q(27958, { -- A Proper Antivenom
 						i(63211),
 						i(63210),
