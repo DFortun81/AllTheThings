@@ -9,18 +9,49 @@ _.Instances =
 			inst(742, { 	-- Blackwing Lair
 				["groups"] = {
 					n(0, {		-- Zone Drop
-						n(13996, {	-- Blackwing Technician
-							dr(7, i(18562)),	-- Elementium Ingot
+						n(12457, {	-- Blackwing Spellbinder
+							dr(0.4, i(19434)),	-- Band of Dark Dominion
+							dr(0.5, i(19362)),	-- Doom's Edge
+							dr(0.9, i(19435)),	-- Essence Gatherer
 						}),
-						i(19436),	-- Cloak of Draconic Might
-						i(19437),	-- Boots of Pure Thought
-						i(19438),	-- Ringo's Blizzard Boots
-						i(19439),	-- Interlaced Shadow Jerkin
-						i(19362),	-- Doom's Edge
-						i(19354),	-- Draconic Avenger
-						i(19358),	-- Draconic Maul
-						i(19435),	-- Essence Gatherer
-						i(19434),	-- Band of Dark Dominion
+						n(13996, {	-- Blackwing Technician
+							dr(7.0, i(18562)),	-- Elementium Ingot
+						}),
+						n(12459, {	-- Blackwing Warlock
+							dr(0.6, i(19434)),	-- Band of Dark Dominion
+							dr(0.6, i(19362)),	-- Doom's Edge
+							dr(0.4, i(19435)),	-- Essence Gatherer
+						}),
+						n(12467, {	-- Death Talon Captain
+							dr(3.0, i(19437)),	-- Boots of Pure Thought
+							dr(4.0, i(19436)),	-- Cloak of Dragonic Might
+							dr(3.0, i(19358)),	-- Draconic Maul
+						}),
+						n(12463, {	-- Death Talon Flamescale
+							dr(1.7, i(19437)),	-- Boots of Pure Thought
+							dr(0.9, i(19436)),	-- Cloak of Dragonic Might
+							dr(1.2, i(19358)),	-- Draconic Maul
+						}),
+						n(12461, {	-- Death Talon Overseer
+							dr(0.7, i(19434)),	-- Band of Dark Dominion
+							dr(0.8, i(19362)),	-- Doom's Edge
+							dr(0.6, i(19435)),	-- Essence Gatherer
+						}),
+						n(12464, {	-- Death Talon Seether
+							dr(1.7, i(19437)),	-- Boots of Pure Thought
+							dr(1.8, i(19436)),	-- Cloak of Dragonic Might
+							dr(1.3, i(19358)),	-- Draconic Maul
+						}),
+						n(12460, {	-- Death Talon Wyrmguard
+							dr(4.0, i(19354)),	-- Draconic Avenger
+							dr(4.0, i(19439)),	-- Interlaced Shadow Jerkin
+							dr(4.0, i(19438)),	-- Ringo's Blizzard Boots
+						}),
+						n(12465, {	-- Death Talon Wyrmkin
+							dr(1.7, i(19437)),	-- Boots of Pure Thought
+							dr(1.2, i(19436)),	-- Cloak of Dragonic Might
+							dr(1.4, i(19358)),	-- Draconic Maul
+						}),
 					}),
 					e(1529, { -- Razoregore the Untamed
 						["groups"] = {
