@@ -3626,7 +3626,7 @@ app.BaseQuest = {
 				return "|Hquest:" .. t.questID .. "|h[" .. questName .. "]|h";
 			end
 			if t.retries and t.retries > 120 then
-				t.title = "Failed to acquire information. Scroll to try again.";
+				t.title = "Failed to acquire information. This quest may have been removed from the game.";
 				return "|Hquest:" .. t.questID .. "|h[Quest #" .. t.questID .. "*]|h";
 			else
 				t.retries = (t.retries or 0) + 1;

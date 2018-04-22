@@ -203,7 +203,18 @@ _.Zones =
 						q(44487),	-- Waterlogged Tome
 					}),
 				}),
---]]				
+--]]			
+				n(-16, {	-- Rares
+					n(7371, {	-- Deadwind Mauler
+						dr(0.5, i(16246)),	-- Formula: Enchant Bracer - Superior Strength
+						dr(0.04, i(8275)),	-- Ebonhold Buckler
+					}),
+					n(7372, {	-- Deadwind Warlock
+						dr(3.0, i(16246)),	-- Formula: Enchant Bracer - Superior Strength
+						dr(0.04, i(15940)),	-- Elegant Scepter
+						dr(0.01, i(10182)),	-- Swashbuckler's Breastplate
+					}),
+				}),
 				n(-77, { 	-- Special
 					n(-79, { 	-- Puzzler's Desire
 						["groups"] = {
