@@ -4006,6 +4006,7 @@ _.Zones =
 						}),
 					}),
 					n(93539, { 	-- Hobart Grapplehammer <Engineering Supplies>
+						i(136782),	-- Fireworks Instruction Manual
 						i(136629), -- Felgibber Shotgun
 						i(136630), -- "Twirling Bottom" Repeater
 						i(136631), -- Surface-to-Infernal Rocket Launcher
