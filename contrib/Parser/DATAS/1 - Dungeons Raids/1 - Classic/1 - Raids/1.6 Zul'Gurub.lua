@@ -9,113 +9,324 @@ _.Instances =
 			inst(76, { 	-- Zul'Gurub
 				["groups"] = {
 					nlq({ -- Legacy Quests
-						q(8201, { -- A Collection of Heads
-							i(20217), -- Belt of Tiny Heads
-							i(20216), -- Belt of Preserved Heads
-							i(20215), -- Belt of Shriveled Heads
-							i(20213), -- Belt of Shrunken Heads
-						}),
-						i(19724, {	-- Primal Hakkari Aegis		
-							q(8071, {	-- Paragon's of Power: The Confessor's Mantle		
-								i(19841), 	-- Zandalar's Confessor's Mantle	
-							}),			
-							q(8073, {	-- Paragon's of Power: The Madcap's Tunic		
-								i(19834), 	-- Zandalar's Madcap's Tunic	
-							}),			
-							q(8067, {	-- Paragon's of Power: The Predator's Mantle		
-								i(19831), 	-- Zandalar's Predator's Mantle	
-							}),			
-						}),				
-						i(19717, {	-- Primal Hakkari Armsplint			
-							q(8056, {	-- Paragon's of Power: The Augur's Bracers		
-								i(19830), 	-- Zandalar's Augur's Bracers	
-							}),			
-							q(8063, {	-- Paragon's of Power: The Madcap's Bracers		
-								i(19836), 	-- Zandalar's Madcap's Bracers	
-							}),			
-							q(8058, {	-- Paragon's of Power: The Vindicator's Armguards		
-								i(19824), 	-- Zandalar's Vindicator's Armguards	
-							}),			
-						}),				
-						i(19716, {	-- Primal Hakkari Bindings			
-							q(8053, {	-- Paragon's of Power: The Freethinker's Armguards		
-								i(19827), 	-- Zandalar's Freethinker's Armguards	
-							}),			
-							q(8060, {	-- Paragon's of Power: The Illusionist's Wraps		
-								i(19846), 	-- Zandalar's Illusionist's Wraps	
-							}),			
-							q(8062, {	-- Paragon's of Power: The Predator's Bracers		
-								i(19833), 	-- Zandalar's Predator's Bracers	
-							}),			
-						}),				
-						i(19719, {	-- Primal Hakkari Girdle		
-							q(8074, {	-- Paragon's of Power: The Augur's Belt	
-								i(19829), 	-- Zandalar's Augur's Belt
-							}),		
-							q(8072, {	-- Paragon's of Power: The Madcap's Mantle	
-								i(19835), 	-- Zandalar's Madcap's Mantle
-							}),		
-							q(8078, {	-- Paragon's of Power: The Vindicator's Belt	
-								i(19823), 	-- Zandalar's Vindicator's Belt
-							}),		
-						}),			
-						i(19723, {	-- Primal Hakkari Kossack		
-							q(8077, {	-- Paragon's of Power: The Demoniac's Robes	
-								i(20033), 	-- Zandalar's Demoniac's Robes
-							}),		
-							q(8069, {	-- Paragon's of Power: The Illusionist's Robes	
-								i(20034), 	-- Zandalar's Illusionist's Robes
-							}),		
-							q(8079, {	-- Paragon's of Power: The Vindicator's Breastplate	
-								i(19822), 	-- Zandalar's Vindicator's Breastplate
-							}),		
-						}),			
-						i(19720, {	-- Primal Hakkari Sash		
-							q(8070, {	-- Paragon's of Power: The Confessor's Bindings	
-								i(19842), 	-- Zandalar's Confessor's Bindings
-							}),		
-							q(8076, {	-- Paragon's of Power: The Demoniac's Mantle	
-								i(19849), 	-- Zandalar's Demoniac's Mantle
-							}),		
-							q(8064, {	-- Paragon's of Power: The Haruspex's Belt	
-								i(19839), 	-- Zandalar's Haruspex's Belt
-							}),		
-						}),			
-						i(19721, {	-- Primal Hakkari Shawl		
-							q(8054, {	-- Paragon's of Power: The Freethinker's Belt	
-								i(19826), 	-- Zandalar's Freethinker's Belt
-							}),		
-							q(8068, {	-- Paragon's of Power: The Illusionist's Mantle	
-								i(19845), 	-- Zandalar's Illusionist's Mantle
-							}),		
-							q(8066, {	-- Paragon's of Power: The Predator's Belt	
-								i(19832), 	-- Zandalar's Predator's Belt
-							}),		
-						}),			
-						i(19718, {	-- Primal Hakkari Stanchion		
-							q(8061, {	-- Paragon's of Power: The Confessor's Wraps	
-								i(19843), 	-- Zandalar's Confessor's Wraps
-							}),		
-							q(8059, {	-- Paragon's of Power: The Demoniac's Wraps	
-								i(19848), 	-- Zandalar's Demoniac's Wraps
-							}),		
-							q(8057, {	-- Paragon's of Power: The Haruspex's Bracers	
-								i(19840), 	-- Zandalar's Haruspex's Bracers
-							}),		
-						}),			
-						i(19722, {	-- Primal Hakkari Tabard		
-							q(8075, {	-- Paragon's of Power: The Confessor's Wraps	
-								i(19828), 	-- Zandalar's Confessor's Wraps
-							}),		
-							q(8055, {	-- Paragon's of Power: The Demoniac's Wraps	
-								i(19825), 	-- Zandalar's Demoniac's Wraps
-							}),		
-							q(8065, {	-- Paragon's of Power: The Haruspex's Bracers	
-								i(19838), 	-- Zandalar's Haruspex's Bracers
-							}),		
-						}),			
+						{
+							["itemID"] = 19724,	-- Primal Hakkari Aegis
+							["u"] = 2,			-- Legacy Item
+							["groups"] = {
+								{
+									["questID"] = 8071, -- Paragon's of Power: The Confessor's Mantle
+									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
+									["classes"] = {5},	-- Priest
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19841)),	-- Zandalar Confessor's Mantle
+									},
+								},			
+								{
+									["questID"] = 8073, -- Paragon's of Power: The Madcap's Tunic
+									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
+									["classes"] = {4},	-- Rogue
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19834)),	-- Zandalar Madcap's Tunic
+									},
+								},
+								{
+									["questID"] = 8067, -- Paragon's of Power: The Predator's Mantle
+									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
+									["classes"] = {3},	-- Hunter
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19831)),	-- Zandalar Predator's Mantle
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 19717,	-- Primal Hakkari Armsplint
+							["u"] = 2,			-- Legacy Item
+							["groups"] = {
+								{
+									["questID"] = 8056, -- Paragons of Power: The Augur's Bracers
+									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
+									["classes"] = {7},	-- Shaman
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19830)),	-- Zandalar Augur's Bracers
+									},
+								},
+								{
+									["questID"] = 8063, -- Paragon's of Power: The Madcap's Bracers
+									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
+									["classes"] = {4},	-- Rogue
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19836)),	-- Zandalar Madcap's Bracers
+									},
+								},
+								{
+									["questID"] = 8058, -- Paragon's of Power: The Vindicator's Armguards
+									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
+									["classes"] = {1},	-- Warrior
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19824)),	-- Zandalar Vindicator's Armguards
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 19716,	-- Primal Hakkari Bindings
+							["u"] = 2,			-- Legacy Item
+							["groups"] = {
+								{
+									["questID"] = 8053, -- Paragon's of Power: The Freethinker's Armguards
+									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
+									["classes"] = {2},	-- Paladin
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19827)),	-- Zandalar Freethinker's Armguards
+									},
+								},
+								{
+									["questID"] = 8060, -- Paragon's of Power: The Illusionist's Wraps
+									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
+									["classes"] = {8},	-- Mage
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19846)),	-- Zandalar Illusionist's Wraps
+									},
+								},
+								{
+									["questID"] = 8062, -- Paragon's of Power: The Predator's Bracers
+									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
+									["classes"] = {3},	-- Hunter
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19833)),	-- Zandalar Predator's Bracers
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 19719,	-- Primal Hakkari Girdle
+							["u"] = 2,			-- Legacy Item
+							["groups"] = {
+								{
+									["questID"] = 8074, -- Paragons of Power: The Augur's Belt
+									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
+									["classes"] = {7},	-- Shaman
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19829)),	-- Zandalar Augur's Belt
+									},
+								},
+								{
+									["questID"] = 8072, -- Paragon's of Power: The Madcap's Mantle
+									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
+									["classes"] = {4},	-- Rogue
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19835)),	-- Zandalar Madcap's Mantle
+									},
+								},
+								{
+									["questID"] = 8078, -- Paragon's of Power: The Vindicator's Belt
+									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
+									["classes"] = {1},	-- Warrior
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19823)),	-- Zandalar Vindicator's Belt
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 19723,	-- Primal Hakkari Kossack
+							["u"] = 2,			-- Legacy Item
+							["groups"] = {
+								{
+									["questID"] = 8077, -- Paragons of Power: The Demoniac's Robes
+									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
+									["classes"] = {9},	-- Warlock
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(20033)),	-- Zandalar Demoniac's Robe
+									},
+								},
+								{
+									["questID"] = 8069, -- Paragon's of Power: The Illusionist's Robes
+									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
+									["classes"] = {8},	-- Mage
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(20034)),	-- Zandalar Illusionist's Robe
+									},
+								},
+								{
+									["questID"] = 8079, -- Paragon's of Power: The Vindicator's Breastplate
+									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
+									["classes"] = {1},	-- Warrior
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19822)),	-- Zandalar Vindicator's Breastplate
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 19720,	-- Primal Hakkari Sash
+							["u"] = 2,			-- Legacy Item
+							["groups"] = {
+								{
+									["questID"] = 8070, -- Paragon's of Power: The Confessor's Bindings
+									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
+									["classes"] = {5},	-- Priest
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19842)),	-- Zandalar Confessor's Bindings
+									},
+								},
+								{
+									["questID"] = 8076, -- Paragons of Power: The Demoniac's Mantle
+									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
+									["classes"] = {9},	-- Warlock
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19849)),	-- Zandalar Demoniac's Mantle
+									},
+								},
+								{
+									["questID"] = 8064, -- Paragons of Power: The Haruspex's Belt
+									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
+									["classes"] = {9},	-- Warlock
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19839)),	-- Zandalar Haruspex's Belt
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 19721,	-- Primal Hakkari Shawl
+							["u"] = 2,			-- Legacy Item
+							["groups"] = {
+								{
+									["questID"] = 8054, -- Paragon's of Power: The Freethinker's Belt
+									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
+									["classes"] = {2},	-- Paladin
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19826)),	-- Zandalar Freethinker's Belt
+									},
+								},
+								{
+									["questID"] = 8068, -- Paragon's of Power: The Illusionist's Mantle
+									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
+									["classes"] = {8},	-- Mage
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19845)),	-- Zandalar Illusionist's Mantle
+									},
+								},
+								{
+									["questID"] = 8066, -- Paragon's of Power: The Predator's Belt
+									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
+									["classes"] = {3},	-- Hunter
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19832)),	-- Zandalar Predator's Belt
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 19718,	-- Primal Hakkari Stanchion
+							["u"] = 2,			-- Legacy Item
+							["groups"] = {
+								{
+									["questID"] = 8061, -- Paragon's of Power: The Confessor's Wraps
+									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
+									["classes"] = {5},	-- Priest
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19843)),	-- Zandalar Confessor's Wraps
+									},
+								},
+								{
+									["questID"] = 8059, -- Paragons of Power: The Demoniac's Wraps
+									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
+									["classes"] = {9},	-- Warlock
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19848)),	-- Zandalar Demoniac's Wraps
+									},
+								},
+								{
+									["questID"] = 8057, -- Paragons of Power: The Haruspex's Bracers
+									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
+									["classes"] = {9},	-- Warlock
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19840)),	-- Zandalar Haruspex's Bracers
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 19722,	-- Primal Hakkari Tabard
+							["u"] = 2,			-- Legacy Item
+							["groups"] = {
+								{
+									["questID"] = 8075, -- Paragons of Power: The Augur's Hauberk
+									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
+									["classes"] = {7},	-- Shaman
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19828)),	-- Zandalar Augur's Hauberk
+									},
+								},
+								{
+									["questID"] = 8055, -- Paragon's of Power: The Freethinker's Breastplate
+									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
+									["classes"] = {2},	-- Paladin
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19825)),	-- Zandalar Freethinker's Breastplate
+									},
+								},
+								{
+									["questID"] = 8065, -- Paragons of Power: The Haruspex's Tunic
+									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
+									["classes"] = {9},	-- Warlock
+									["u"] = 12,			-- Legacy Content
+									["groups"] = {
+										un(2, i(19838)),	-- Zandalar Haruspex's Tunic
+									},
+								},
+							},
+						},
 					}),
 					n(0, {		-- Zone Drop
+						un(2, i(19727)),	-- Blood Scythe
+						un(2, i(19708)),	-- Blue Hakkari Bijou
+						un(2, i(19713)),	-- Bronze Hakkari Bijou
+						un(2, i(19715)),	-- Gold Hakkari Bijou
+						un(2, i(19711)),	-- Green Hakkari Bijou
+						un(2, i(19710)),	-- Orange Hakkari Bijou
+						un(2, i(19712)),	-- Purple Hakkari Bijou
+						un(2, i(19707)),	-- Red Hakkari Bijou
+						un(2, i(19714)),	-- Silver Hakkari Bijou
+						un(2, i(19709)),	-- Yellow Hakkari Bijou
+						un(2, i(19706)),	-- Bloodscalp Coin
+						un(2, i(19701)),	-- Gurubashi Coin
+						un(2, i(19700)),	-- Hakkari Coin
+						un(2, i(19699)),	-- Razzashi Coin
+						un(2, i(19704)),	-- Sandfury Coin
+						un(2, i(19705)),	-- Skullsplitter Coin
+						un(2, i(19702)),	-- Vilebranch Coin
+						un(2, i(19703)),	-- Witherbark Coin
+						un(2, i(19698)),	-- Zulian Coin
 						i(19908),	-- Sceptre of Smiting
 						i(20258),	-- Zulian Ceremonial Staff
 						i(20259),	-- Shadow Panther Hide Gloves

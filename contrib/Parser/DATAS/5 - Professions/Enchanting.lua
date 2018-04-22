@@ -31,6 +31,7 @@ profession(333, { -- Enchanting
 		-- i(11223),	-- Formula: Enchant Bracer - Dodge [From 2 Vendors - Done]
 		i(11225),	-- Formula: Enchant Bracer - Greater Stamina [Random Drop - Should probably be summarized: https://www.wowhead.com/item=11225/formula-enchant-bracer-greater-stamina]
 		i(11204),	-- Formula: Enchant Bracer - Greater Versatility [Random Drop - Should probably be summarized: https://www.wowhead.com/item=11204/formula-enchant-bracer-greater-versatility]
+		-- i(16246),	-- Formula: Enchant Bracer - Superior Strength [From 2 Drops - Done]
 		i(16218),	-- Formula: Enchant Bracer - Superior Versatility [Random Drop - https://www.wowhead.com/item=16218/formula-enchant-bracer-superior-versatility]
 		i(6342),	-- Formula: Enchant Chest - Minor Mana [Random Drop - Should probably be summarized: https://www.wowhead.com/item=6342/formula-enchant-chest-minor-mana]
 		-- i(6346),	-- Formula: Enchant Chest - Lesser Mana [From 2 Vendors - Done]
@@ -51,6 +52,7 @@ profession(333, { -- Enchanting
 		-- i(28282),	-- Formula: Enchant Shield - Major Stamina [From 1 Vendor - Done]
 		i(11202),	-- Formula: Enchant Shield - Stamina [Random Drop - Should probably be summarized: https://www.wowhead.com/item=11202/formula-enchant-shield-stamina]
 		-- i(22392),	-- Formula: Enchant 2H Weapon - Agility [From 1 Vendor - Done]
+		un(2, i(16247)),	-- Formula: Enchant 2H Weapon - Superior Impact [Removed from Game, used to drop from mobs in UBRS, https://www.wowhead.com/item=16247/formula-enchant-2h-weapon-superior-impact]
 		-- i(19445),	-- Formula: Enchant Weapon - Agility [From 1 Vendor - Done]
 		i(11208),	-- Formula: Enchant Weapon - Demonslaying [Random Drop - Should probably be summarized: https://www.wowhead.com/item=11208/formula-enchant-weapon-demonslaying]
 		-- i(11207),	-- Formula: Enchant Weapon - Fiery Weapon [From 1 Drop - Done]
@@ -71,6 +73,8 @@ profession(333, { -- Enchanting
 		-- i(20755),	-- Formula: Wizard Oil [From 1 Vendor - Done]
 		-- i(22562),	-- Formula: Superior Mana Oil [From 3 Vendors - Done]
 		-- i(22563),	-- Formula: Superior Wizard Oil [From 3 Vendors - Done]
+		-- un(2, i(20757)),	-- Formula: Brilliant Mana Oil [From 1 Vendor - Done]
+		-- un(2, i(20756)),	-- Formula: Brilliant Wizard Oil [From 1 Vendor - Done]
 		-- i(22307),	-- Pattern: Enchanted Mageweave Pouch [From 3 Vendors - Done]
 		-- i(22308),	-- Pattern: Enchanted Runecloth Bag [From 1 Vendor - Done]
 		un(2, i(11813)),	-- Formula: Smoking Heart of the Mountain [BOE]
@@ -302,6 +306,8 @@ profession(333, { -- Enchanting
 		recipe(25127),	-- Lesser Mana Oil
 		recipe(25126),	-- Lesser Wizard Oil
 		recipe(25128),	-- Wizard Oil
+		un(2, recipe(25130)),	-- Formula: Brilliant Mana Oil
+		un(2, recipe(20756)),	-- Formula: Brilliant Wizard Oil
 		recipe(17181),	-- Enchanted Leather
 		recipe(17180),	-- Enchanted Thorium Bar
 		recipe(15596),	-- Smoking Heart of the Mountain
@@ -368,6 +374,7 @@ profession(333, { -- Enchanting
 		recipe(13607),	-- Mana [Permanently enchant chest armor to increase mana by 20.]
 		recipe(13612),	-- Mining [Permanently enchant gloves to increase Mining skill by 2.]
 		recipe(13642),	-- Versatility [Permanently enchant bracers to increase Versatility by 5.]
+		recipe(20023),	-- Greater Agility [Permanently enchant boots to increase Agility by 7.]
 		recipe(20012),	-- Greater Agility [Permanently enchant gloves to increase Agility by 6.]
 		recipe(13746),	-- Greater Defense [Permanently enchant a cloak to increase armor by 5.]
 		recipe(13640),	-- Greater Health [Permanently enchant chest armor to increase health by 35.]   (No listed locations? - https://www.wowhead.com/spell=13640/greater-health)
@@ -378,6 +385,7 @@ profession(333, { -- Enchanting
 		recipe(20020),	-- Greater Stamina [Permanently enchant boots to increase Stamina by 7.]
 		recipe(20017),	-- Greater Stamina [Permanently enchant a shield to increase Stamina by 7.]
 		recipe(13939),	-- Greater Strength [Permanently enchant bracers to increase Strength by 7.]
+		recipe(20013),	-- Greater Strength [Permanently enchant gloves to increase Strength by 7.]
 		recipe(13943),	-- Greater Striking [Permanently enchant a melee weapon to do 4 additional points of damage.]
 		recipe(13846),	-- Greater Versatility [Permanently enchant bracers to increase Versatility by 6.]
 		recipe(13905),	-- Greater Versatility [Permanently enchant a shield to increase Versatility by 7.]
@@ -399,6 +407,7 @@ profession(333, { -- Enchanting
 		recipe(13858),	-- Superior Health [Permanently enchant chest armor to increase health by 50.]
 		recipe(20030),	-- Superior Impact [Permanently enchant a two-handed melee weapon to do 9 additional points of damage.]
 		recipe(13917),	-- Superior Mana [Permanently enchant chest armor to increase mana by 40.]
+		recipe(20010),	-- Superior Strength [Permanently enchant bracers to increase Strength by 9.]
 		recipe(20009),	-- Superior Versatility [Permanently enchant bracers to increase Versatility by 7.]
 		recipe(20033),	-- Unholy Weapon [Permanently enchant a melee weapon to often inflict a curse on the target, inflicting Shadow damage and reducing their melee damage.]
 		recipe(20024),	-- Versatility [Permanently enchant boots to increase Versatility by 5.]
