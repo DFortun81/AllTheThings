@@ -1571,7 +1571,7 @@ app.SearchForField = SearchForField;
 
 -- Map Information Lib
 local function ExpandGroupsRecursively(group, expanded, manual)
-	if group.g and (not group.itemID or manual) then
+	if group.g and ((not group.itemID and not (group.total and group.progress >= group.total)) or manual) then
 		group.expanded = expanded;
 		for i, subgroup in ipairs(group.g) do
 			ExpandGroupsRecursively(subgroup, expanded, manual);
