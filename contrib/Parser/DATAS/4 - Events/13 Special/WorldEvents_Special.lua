@@ -709,8 +709,8 @@ _.WorldEvents =
 							i(134671),	-- Auxiliary's Trousers
 							i(134675),	-- Rookie's Gloves*
 							i(134676),	-- Rookie's Helm*
-							i(134677),	-- Rookie's Legguards
-							i(134678),	-- Rookie's Shoulders
+							i(134677),	-- Rookie's Legguards*
+							i(134678),	-- Rookie's Shoulders*
 							i(134679),	-- Greenhorn's Gauntlets
 							i(134680),	-- Greenhorn's Helm
 							i(134681),	-- Greenhorn's Legguards
