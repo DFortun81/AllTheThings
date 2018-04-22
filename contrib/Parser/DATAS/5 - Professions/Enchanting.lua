@@ -418,11 +418,11 @@ profession(333, { -- Enchanting
 		recipe(21931),	-- Winter's Might [Permanently enchant a melee weapon to increase Frost spell power by 7.]
 		recipe(217637),	-- Tome of Illusions: Azeroth
 		
-		-- NOTE: STOPPED HERE
-		-- https://www.wowhead.com/enchanting#recipes:250+17+10+1
-		
 		-- BC
 		i(34002),	-- Lesser Assault [Permanently enchant bracers to increase attack power by 8. Cannot be applied to items higher than level 600.]
+		
+		-- NOTE: STOPPED HERE
+		-- https://www.wowhead.com/enchanting#recipes:250+17+10+1
 		
 		-- Wrath
 		

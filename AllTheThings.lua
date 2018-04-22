@@ -2982,19 +2982,19 @@ end
 app.BaseHeirloom = {
 	__index = function(t, key)
 		if key == "key" then
-			return "heirloomID";
+			return "itemID";
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			return C_Heirloom.PlayerHasHeirloom(t.heirloomID);
+			return C_Heirloom.PlayerHasHeirloom(t.itemID);
 		elseif key == "f" then
 			return 109;
 		elseif key == "text" then
-			return select(2, GetItemInfo(t.heirloomID));
+			return t.link;
 		elseif key == "link" then
-			return select(2, GetItemInfo(t.heirloomID));
+			return select(2, GetItemInfo(t.itemID));
 		elseif key == "icon" then
-			return select(4, C_Heirloom.GetHeirloomInfo(t.heirloomID));
+			return select(4, C_Heirloom.GetHeirloomInfo(t.itemID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3002,7 +3002,7 @@ app.BaseHeirloom = {
 	end
 };
 app.CreateHeirloom = function(id, t)
-	return createInstance(constructor(id, t, "heirloomID"), app.BaseHeirloom);
+	return createInstance(constructor(id, t, "itemID"), app.BaseHeirloom);
 end
 
 -- Illusion Lib
@@ -3417,11 +3417,11 @@ end
 app.BaseMusicRoll = {
 	__index = function(t, key)
 		if key == "key" then
-			return "musicRollID";
+			return "questID";
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			return IsQuestFlaggedCompleted(t.musicRollID);
+			return IsQuestFlaggedCompleted(t.questID);
 		elseif key == "f" then
 			return 108;
 		elseif key == "Lvl" then
@@ -3438,9 +3438,9 @@ app.BaseMusicRoll = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.musicRollID);
+			return IsQuestFlaggedCompleted(t.questID);
 		elseif key == "description" then
-			return "These are unlocked per-character and are not currently shared across your account.";
+			return "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.";
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3448,11 +3448,7 @@ app.BaseMusicRoll = {
 	end
 };
 app.CreateMusicRoll = function(questID, t)
-	--local t = {};
-	--t.itemID = itemID;
-	--t.musicRollID = questID;
-	--return createInstance(t, app.BaseMusicRoll);
-	return createInstance(constructor(questID, t, "musicRollID"), app.BaseMusicRoll);
+	return createInstance(constructor(questID, t, "questID"), app.BaseMusicRoll);
 end
 
 -- NPC Lib
@@ -3687,7 +3683,16 @@ app.BaseRecipe = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			return app.RecipeChecker("CollectedSpells", t.spellID);
+			if app.RecipeChecker("CollectedSpells", t.spellID) then
+				return 1;
+			end
+			if IsSpellKnown(t.spellID) then
+				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+				if not GetDataSubMember("CollectedSpells", t.spellID) then
+					SetDataSubMember("CollectedSpells", t.spellID, 1);
+				end
+				return 1;
+			end
 		elseif key == "name" then
 			return t.itemID and GetItemInfo(t.itemID);
 		elseif key == "specs" then
@@ -5530,7 +5535,6 @@ local function RowOnEnter(self)
 			if GetDataMember("ShowInstanceID") then GameTooltip:AddDoubleLine(L("INSTANCE_ID"), tostring(reference.instanceID)); end
 			GameTooltip:AddDoubleLine(L("LOCKOUT"), L(reference.isLockoutShared and "SHARED" or "SPLIT"));
 		end
-		if reference.musicRollID and GetDataMember("ShowMusicRollID") then GameTooltip:AddDoubleLine(L("MUSIC_ROLL_ID"), tostring(reference.musicRollID)); end
 		if reference.objectID and GetDataMember("ShowObjectID") then GameTooltip:AddDoubleLine(L("OBJECT_ID"), tostring(reference.objectID)); end
 		if reference.speciesID and GetDataMember("ShowSpeciesID") then GameTooltip:AddDoubleLine(L("SPECIES_ID"), tostring(reference.speciesID)); end
 		if reference.spellID and GetDataMember("ShowSpellID") then GameTooltip:AddDoubleLine(L("SPELL_ID"), tostring(reference.spellID)); end
