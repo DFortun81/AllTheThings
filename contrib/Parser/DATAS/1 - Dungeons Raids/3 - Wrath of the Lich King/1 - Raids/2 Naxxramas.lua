@@ -422,9 +422,10 @@ _.Instances =
 						n(-371, { 	-- The Upper Necropolis
 							cr(15989, e(1614, {	-- Sapphiron
 								["groups"] = {
-									i(44569, {	-- Key to the Focusing Iris
-										q(13372),	-- The Key to the Focusing Iris
-									}),
+									{
+										["itemID"] = 44569,		-- Key to the Focusing Iris (Item)
+										["questID"] = 13372,	-- The Key to the Focusing Iris (Quest)
+									},
 									i(39409),	-- Cowl of Winged Fear
 									i(39403),	-- Helm of the Unsubmissive
 									i(39399),	-- Helm of the Vast Legions
@@ -1037,9 +1038,10 @@ _.Instances =
 						n(-371, { 	-- The Upper Necropolis
 							cr(15989, e(1614, {	-- Sapphiron
 								["groups"] = {
-									i(44577, {	-- Heroic Key to the Focusing Iris
-										q(13375),	-- The Heroic Key to the Focusing Iris
-									}),
+									{
+										["itemID"] = 44577,		-- Heroic Key to the Focusing Iris (Item)
+										["questID"] = 13375,	-- The Heroic Key to the Focusing Iris (Quest)
+									},
 									i(40368),	-- Murder
 									i(40366),	-- Platehelm of the Great Wyrm
 									i(40377),	-- Noble Birthright Pauldrons

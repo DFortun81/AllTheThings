@@ -424,6 +424,7 @@ _.Zones =
 								i(139688), -- Battlelord's Bracers
 							}),
 							q(44153, { -- Light's Charge [Quests are in order of the chain]
+								["maps"] = {1091},
 								["groups"] = {
 									q(44004, { -- Bringer of the Light
 										i(140617), -- Rakeesh's Pauldron

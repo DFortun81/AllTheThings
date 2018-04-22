@@ -4927,7 +4927,6 @@ local function CreateMiniListForGroup(group)
 			["description"] = "The items in this list are shared appearances for the following item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
 			["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
 			["visible"] = true,
-			["expanded"] = true,
 			["g"] = { mainItem }
 		};
 		BuildGroups(popout.data, popout.data.g);
@@ -5011,7 +5010,6 @@ local function CreateMiniListForGroup(group)
 			["progress"] = 0,
 			["total"] = 0,
 			["visible"] = true,
-			["expanded"] = true,
 			["g"] = g,
 			["hideText"] = true
 		};
@@ -5030,7 +5028,6 @@ local function CreateMiniListForGroup(group)
 			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
 			["g"] = { newItem },
 			["visible"] = true,
-			["expanded"] = true,
 			["progress"] = 0,
 			["total"] = 0,
 		};
@@ -5039,7 +5036,7 @@ local function CreateMiniListForGroup(group)
 		newItem.visible = true;
 	end
 	if not popout.data.expanded then
-		ExpandGroupsRecursively(popout.data, true);
+		ExpandGroupsRecursively(popout.data, true, true);
 	end
 	--ExportData(popout.data);
 	popout:Toggle(true);
