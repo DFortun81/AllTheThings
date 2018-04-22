@@ -1902,10 +1902,14 @@ local function RefreshCollections()
 		end
 		
 		-- Refresh Mounts / Pets
-		local collectedMounts = GetDataMember("CollectedMounts", {});
+		local collectedSpells = GetDataMember("CollectedSpells", {});
+		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
 		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID and isCollected then collectedMounts[spellID] = 1; end
+			if spellID and isCollected then
+				collectedSpells[spellID] = 1;
+				collectedSpellsPerCharacter[spellID] = 1;
+			end
 		end
 		
 		-- Wait a frame before harvesting item collection status.
@@ -1958,12 +1962,15 @@ local function RefreshMountCollection()
 		-- Cache current counts
 		local previousProgress = app:GetDataCache().progress or 0;
 		
-		-- Refresh Mounts / Pets
-		local collectedMounts = {};
-		SetDataMember("CollectedMounts", collectedMounts);
+		-- Refresh Mounts
+		local collectedSpells = GetDataMember("CollectedSpells", {});
+		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
 		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID and isCollected then collectedMounts[spellID] = 1; end
+			if spellID and isCollected then
+				collectedSpells[spellID] = 1;
+				collectedSpellsPerCharacter[spellID] = 1;
+			end
 		end
 		
 		-- Wait a frame before harvesting item collection status.
@@ -1994,7 +2001,7 @@ local function SetCompletionistMode(completionistMode, fromSettings)
 	end
 	app.print(completionistMode and "Entering Completionist Mode..." or GetDataMember("MainOnly") and "Entering Unique Appearances Mode (Main Only)..." or "Entering Unique Appearances Mode...");
 	SetDataMember("CompletionistMode", completionistMode);
-	SetDataMember("CollectedSources", {});	-- This option causes a caching issue, so we have to purge the Source ID data cache.
+	wipe(SetDataMember("CollectedSources"));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 	if completionistMode then
 		app.ItemSourceFilter = app.FilterItemSource;
 		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
@@ -2868,8 +2875,12 @@ app.BaseFaction = {
 		elseif key == "trackable" or key == "collectible" then
 			return true;
 		elseif key == "saved" or key == "collected" then
-			if t.isFriend then return not select(9, GetFriendshipReputation(t.factionID)); end
-			return t.standing == 8;
+			if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
+			if t.isFriend and not select(9, GetFriendshipReputation(t.factionID)) or t.standing == 8 then
+				SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+				SetDataSubMember("CollectedFactions", t.factionID, 1);
+				return 1;
+			end
 		elseif key == "text" then
 			local rgb = FACTION_BAR_COLORS[t.standing + (t.isFriend and 2 or 0)];
 			return Colorize(select(1, GetFactionInfoByID(t.factionID)) or ("Faction #" .. t.factionID), RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
@@ -3327,6 +3338,8 @@ app.BaseItemSource = {
 				end
 				return string.format("i:%d", itemLink);
 			end
+		elseif key == "s" then
+			return 0;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3369,10 +3382,11 @@ app.BaseMount = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			if GetDataSubMember("CollectedMounts", t.spellID) then return true; end
+			if app.RecipeChecker("CollectedSpells", t.spellID) then return 1; end
 			if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
-				SetDataSubMember("CollectedMounts", t.spellID, 1);
-				return true;
+				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+				SetDataSubMember("CollectedSpells", t.spellID, 1);
+				return 1;
 			end
 		elseif key == "f" then
 			return 100;
@@ -3688,9 +3702,7 @@ app.BaseRecipe = {
 			end
 			if IsSpellKnown(t.spellID) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				if not GetDataSubMember("CollectedSpells", t.spellID) then
-					SetDataSubMember("CollectedSpells", t.spellID, 1);
-				end
+				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
 			end
 		elseif key == "name" then
@@ -3734,6 +3746,13 @@ app.BaseSpell = {
 			return select(1, GetSpellLink(t.spellID));
 		elseif key == "collectible" then
 			return false;
+		elseif key == "collected" then
+			if app.RecipeChecker("CollectedSpells", t.spellID) then return 1; end
+			if IsSpellKnown(t.spellID) then
+				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+				SetDataSubMember("CollectedSpells", t.spellID, 1);
+				return 1;
+			end
 		elseif key == "name" then
 			return t.itemID and GetItemInfo(t.itemID);
 		elseif key == "specs" then
@@ -6436,6 +6455,7 @@ app.events.VARIABLES_LOADED = function()
 	if GetDataMember("Items") then SetDataMember("Items", nil); end
 	if GetDataMember("ItemDB") then SetDataMember("ItemDB", nil); end
 	SetTempDataMember("Missing", {});
+	GetDataMember("CollectedFactions", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
@@ -6447,6 +6467,15 @@ app.events.VARIABLES_LOADED = function()
 		myRecipes = {};
 		recipes[app.Me] = myRecipes;
 		SetTempDataMember("CollectedSpells", myRecipes);
+	end
+	
+	-- Cache your character's faction data.
+	local factions = GetDataMember("CollectedFactionsPerCharacter", {});
+	local myfactions = GetTempDataMember("CollectedFactions", factions[app.Me]);
+	if not myfactions then
+		myfactions = {};
+		factions[app.Me] = myfactions;
+		SetTempDataMember("CollectedFactions", myfactions);
 	end
 	
 	-- Register for Dynamic Events and Assign Filters
@@ -6602,13 +6631,16 @@ app.events.PLAYER_LOGIN = function()
 		
 		-- Harvest the Spell IDs for Conversion.
 		local spellID_MountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", {});
-		local collectedMounts = GetDataMember("CollectedMounts", {});
-		for i,mountID in ipairs(mountIDs) do
-			-- The 2nd value in the list is the spellID for the mount.
-			local creatureName, spellID, icon, active, isUsable, sourceType, isFavorite, isFactionSpecific, faction, hideOnChar, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+		local collectedSpells = GetDataMember("CollectedSpells", {});
+		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
+		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID then
 				spellID_MountID[spellID] = mountID;
-				if isCollected then collectedMounts[spellID] = 1; end
+				if isCollected then
+					collectedSpells[spellID] = 1;
+					collectedSpellsPerCharacter[spellID] = 1;
+				end
 			end
 		end
 		
@@ -6631,7 +6663,7 @@ app.events.PLAYER_LOGIN = function()
 			local lastTime = GetDataMember("RefreshedCollectionsAlready");
 			if not lastTime or (lastTime ~= version) then
 				SetDataMember("RefreshedCollectionsAlready", version);
-				SetDataMember("CollectedSources", {});	-- This option causes a caching issue, so we have to purge the Source ID data cache.
+				wipe(GetDataMember("CollectedSources"));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 				RefreshCollections();
 				return nil;
 			end
