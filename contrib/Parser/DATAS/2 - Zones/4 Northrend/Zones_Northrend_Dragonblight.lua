@@ -147,7 +147,6 @@ _.Zones =
 					q(12631),	-- An Invitation, of Sorts...
 					q(43388),	-- Apostate Liberation
 					q(12077),	-- Apply This Twice A Day
-					q(26013),	-- Assault on the Sanctum
 					q(12083),	-- Atop the Woodlands
 					qh( 12084),	-- Atop the Woodlands
 					qh( 12071),	-- Attack by Air!
@@ -215,7 +214,6 @@ _.Zones =
 					qh( 12448),	-- Heated Battle
 					q(12416),	-- Heated Battle
 					qa( 39204),	-- Hero's Call: Dragonblight
-					q(13385),	-- Heroic Judgment at the Eye of Eternity
 					qa( 12174),	-- High Commander Halford Wyrmbane
 					qa( 12298),	-- High Commander Halford Wyrmbane
 					qa( 13487),	-- Honor the Flame
@@ -231,7 +229,6 @@ _.Zones =
 					qa( 12325),	-- Into Hostile Territory
 					q(12789),	-- Into the Breach!
 					qh( 11978),	-- Into the Fold
-					q(13384),	-- Judgment at the Eye of Eternity
 					qa( 12167),	-- Kill the Cultists
 					qh( 12115),	-- Koltira and the Language of Death
 					qa( 12277),	-- Leave Nothing to Chance
@@ -422,6 +419,11 @@ _.Zones =
 						i(38002),
 						i(38106),
 					}),
+					{
+						["questID"] = 26013,	-- Assault on the Sanctum
+						["qg"] = 27990,			-- Quest Giver: Krasus <Consort of the Queen>
+						["sourceQuest"] = 26012,	-- Source Quest: Trouble at Wyrmrest
+					},
 					qa(12083,  {  -- Atop the Woodlands
 						i(37942),
 						i(37985),
@@ -513,11 +515,33 @@ _.Zones =
 						i(38034),
 						i(38097),
 					}),
+					{
+						["questID"] = 13385,	-- Heroic Judgment at the Eye of Eternity
+						["qg"] = 27990,			-- Quest Giver: Krasus <Consort of the Queen>
+						["sourceQuest"] = 13375,	-- Source Quest: The Heroic Key to the Focusing Iris (Quest)
+						["groups"] = {
+							i(44664),	-- Favor of the Dragon Queen
+							i(44662),	-- Life-Binder's Locket
+							i(44665),	-- Nexus War Champion Beads
+							i(44661),	-- Wyrmrest Necklace of Power
+						},
+					},
 					qa(12282,  {  -- Imprints on the Past
 						i(37938),
 						i(38025),
 						i(38086),
 					}),
+					{
+						["questID"] = 13384,	-- Judgment at the Eye of Eternity
+						["qg"] = 27990,			-- Quest Giver: Krasus <Consort of the Queen>
+						["sourceQuest"] = 13372,	-- Source Quest: The Key to the Focusing Iris (Quest)
+						["groups"] = {
+							i(44658),	-- Chain of the Ancient Wyrm
+							i(44660),	-- Drakescale Collar
+							i(44659),	-- Pendant of the Dragonsworn
+							i(44657),	-- Torque of the Red Dragonflight
+						},
+					},
 					qa(12277,  {  -- Leave Nothing to Chance
 						i(38293),
 						i(38002),

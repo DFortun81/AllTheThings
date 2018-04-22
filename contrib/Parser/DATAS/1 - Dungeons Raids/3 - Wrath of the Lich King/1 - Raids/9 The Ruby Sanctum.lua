@@ -8,6 +8,14 @@ _.Instances =
 		["groups"] = {
 			inst(761, { 	-- The Ruby Sanctum
 				["groups"] = {
+					desc(n(39751), "Must be killed before you can fight General Zarithrian or talk to the quest giver."),	-- Baltharus the Warborn
+					{
+						["questID"] = 26034,	-- The Twilight Destroyer
+						["qg"] = 40429,			-- Quest Giver: Krasus <Consort of the Queen>
+						["sourceQuest"] = 26013,	-- Source Quest: Assault on the Sanctum
+					},
+					desc(n(39747), "Must be killed before you can fight General Zarithrian."),	-- Saviana Ragefire
+					desc(n(39746), "Must be killed before you can fight Halion."),	-- General Zarithrian
 					d(3, {
 						cr(39863, e(1652, {
 							i(53113),
