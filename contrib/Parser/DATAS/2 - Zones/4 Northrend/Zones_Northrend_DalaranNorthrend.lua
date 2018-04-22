@@ -91,75 +91,16 @@ _.Zones =
 					q(13472),	-- Candy Bucket
 					q(13463),	-- Candy Bucket
 					q(14151),	-- Cardinal Ruby
-]]--
-					qa( 13103, {	-- Cheese for Glowergold
-						currency(81),	-- Epicurean's Award
-						i(44113, { 	-- Small Spice Bag
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
-						}),
-					}),
-					qh( 13115, {	-- Cheese for Glowergold
-						currency(81),	-- Epicurean's Award
-						i(44113, { 	-- Small Spice Bag
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
-						}),
-					}),
---[[
 					q(13272),	-- Cloth Scavenging
-]]--
-					qa( 13101, {	-- Convention at the Legerdemain
-						currency(81),	-- Epicurean's Award
-						i(44113, { 	-- Small Spice Bag
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
-						}),
-					}),
-					qh( 13113, {	-- Convention at the Legerdemain
-						currency(81),	-- Epicurean's Award
-						i(44113, { 	-- Small Spice Bag
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
-						}),
-					}),
---[[
 					q(13834),	-- Dangerously Delicious
 					q(13836),	-- Disarmed!
 					q(29829),	-- Discretion is Key
 					q(13041),	-- Finish the Shipment
 					q(24585),	-- Flame Leviathan Must Die!
-]]--
-					q(13571, {	-- Fletcher's Lost and Found
-						recipe(53056),	-- Kungaloosh
-					}),
---[[
 					qh( 29609),	-- Friends in Dalaran
 					qh( 32405),	-- Hand of the Silver Covenant
 					q(13819),	-- Heroic: All Is Well That Ends Well
 					q(24587),	-- Ignis the Furnace Master Must Die!
-]]--
-					qa( 13100, {	-- Infused Mushroom Meatloaf
-						currency(81),	-- Epicurean's Award
-						i(44113, { 	-- Small Spice Bag
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
-						}),
-					}),
-					qh( 13112, {	-- Infused Mushroom Meatloaf
-						currency(81),	-- Epicurean's Award
-						i(44113, { 	-- Small Spice Bag
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
-						}),
-					}),
---[[
 					qa( 24510),	-- Inside the Frozen Citadel
 					qh( 24506),	-- Inside the Frozen Citadel
 					q(24582),	-- Instructor Razuvious Must Die!
@@ -177,24 +118,6 @@ _.Zones =
 					qa( 29071),	-- Make Haste to Stormwind!
 					q(24584),	-- Malygos Must Die!
 					qh( 11357),	-- Masked Orphan Matron
-]]--
-					qa( 13107, {	-- Mustard Dogs!
-						currency(81),	-- Epicurean's Award
-						i(44113, { 	-- Small Spice Bag
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
-						}),
-					}),
-					qh( 13116, {	-- Mustard Dogs!
-						currency(81),	-- Epicurean's Award
-						i(44113, { 	-- Small Spice Bag
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
-						}),
-					}),
---[[
 					q(13148),	-- Necklace Repair
 					q(24581),	-- Noth the Plaguebringer Must Die!
 					qh( 32412),	-- One Last Grasp
@@ -207,24 +130,6 @@ _.Zones =
 					qh( 24558),	-- Return To Myralion Sunblaze
 					q(24579),	-- Sartharion Must Die!
 					q(13845),	-- Sealed Vial of Poison
-]]--
-					qa( 13102, {	-- Sewer Stew
-						currency(81),	-- Epicurean's Award
-						i(44113, { 	-- Small Spice Bag
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
-						}),
-					}),
-					qh( 13114, {	-- Sewer Stew
-						currency(81),	-- Epicurean's Award
-						i(44113, { 	-- Small Spice Bag
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
-						}),
-					}),
---[[
 					q(12958),	-- Shipment: Blood Jade Amulet
 					q(12962),	-- Shipment: Bright Armor Relic
 					q(12959),	-- Shipment: Glowing Ivory Figurine
