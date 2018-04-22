@@ -31,6 +31,7 @@ profession(333, { -- Enchanting
 		-- i(11223),	-- Formula: Enchant Bracer - Dodge [From 2 Vendors - Done]
 		i(11225),	-- Formula: Enchant Bracer - Greater Stamina [Random Drop - Should probably be summarized: https://www.wowhead.com/item=11225/formula-enchant-bracer-greater-stamina]
 		i(11204),	-- Formula: Enchant Bracer - Greater Versatility [Random Drop - Should probably be summarized: https://www.wowhead.com/item=11204/formula-enchant-bracer-greater-versatility]
+		i(16251),	-- Formula: Enchant Bracer - Superior Stamina [Random Drop - Should probably be summarized: https://www.wowhead.com/item=16251/formula-enchant-bracer-superior-stamina]
 		-- i(16246),	-- Formula: Enchant Bracer - Superior Strength [From 2 Drops - Done]
 		i(16218),	-- Formula: Enchant Bracer - Superior Versatility [Random Drop - https://www.wowhead.com/item=16218/formula-enchant-bracer-superior-versatility]
 		i(6342),	-- Formula: Enchant Chest - Minor Mana [Random Drop - Should probably be summarized: https://www.wowhead.com/item=6342/formula-enchant-chest-minor-mana]
@@ -407,6 +408,7 @@ profession(333, { -- Enchanting
 		recipe(13858),	-- Superior Health [Permanently enchant chest armor to increase health by 50.]
 		recipe(20030),	-- Superior Impact [Permanently enchant a two-handed melee weapon to do 9 additional points of damage.]
 		recipe(13917),	-- Superior Mana [Permanently enchant chest armor to increase mana by 40.]
+		recipe(20011),	-- Superior Stamina [Permanently enchant bracers to increase Stamina by 9.]
 		recipe(20010),	-- Superior Strength [Permanently enchant bracers to increase Strength by 9.]
 		recipe(20009),	-- Superior Versatility [Permanently enchant bracers to increase Versatility by 7.]
 		recipe(20033),	-- Unholy Weapon [Permanently enchant a melee weapon to often inflict a curse on the target, inflicting Shadow damage and reducing their melee damage.]
@@ -417,9 +419,10 @@ profession(333, { -- Enchanting
 		recipe(217637),	-- Tome of Illusions: Azeroth
 		
 		-- NOTE: STOPPED HERE
-		-- https://www.wowhead.com/enchanting#recipes:200+17+10+1
+		-- https://www.wowhead.com/enchanting#recipes:250+17+10+1
 		
 		-- BC
+		i(34002),	-- Lesser Assault [Permanently enchant bracers to increase attack power by 8. Cannot be applied to items higher than level 600.]
 		
 		-- Wrath
 		
