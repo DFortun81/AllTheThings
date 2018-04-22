@@ -2146,14 +2146,14 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 							for i,j in ipairs(group.g) do
 								if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
 									if not contains(parents, j.parent) then tinsert(parents, j.parent); end
-									if j.total and j.total > 1 then
+									if j.total and j.total > 0 then
 										progress = progress + j.progress;
 										total = total + j.total;
 										if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
 											tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), GetProgressColorText(j.progress, j.total) });
 										end
 									else
-										total = total + 1;
+										if j.collectible then total = total + 1; end
 										if j.collected or (j.trackable and j.saved) then
 											progress = progress + 1;
 											if GetDataMember("ShowCollectedItems") then
