@@ -227,91 +227,81 @@ profession(185, { -- Cooking
 		},
 	}),
 	n(-17, {	-- Quests
-		map(504, {	-- Dalaran: Northrend
+		profession(185, {	-- Cooking
 			["maps"] = { 504 },	-- Dalaran: Northrend
 			["g"] = {
-				qa( 13103, {	-- Cheese for Glowergold
-					currency(81),	-- Epicurean's Award
-					i(44113, { 	-- Small Spice Bag
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33871),	-- Recipe: Stormchops
-					}),
+				na(28705, {	-- Katherine Lee
+					["g"] = {
+						qa(13100, {	-- Infused Mushroom Meatloaf
+							["g"] = {
+							},
+							["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
+							["criteriaID"] = 1,	-- Infused Mushroom Meatloaf
+						}),
+						qa(13101, {	-- Convention at the Legerdemain
+							["g"] = {
+							},
+							["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
+							["criteriaID"] = 2,	-- Convention at the Legerdemain
+						}),
+						qa(13102, {	-- Sewer Stew
+							["g"] = {
+							},
+							["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
+							["criteriaID"] = 3,	-- Sewer Stew
+						}),
+						qa(13103, {	-- Cheese for Glowergold
+							["g"] = {
+							},
+							["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
+							["criteriaID"] = 4,	-- Cheese for Glowergold
+						}),
+						qa(13107, {	-- Mustard Dogs!
+							["g"] = {
+							},
+							["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
+							["criteriaID"] = 5,	-- Mustard Dogs!
+						}),
+					},
+					["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
 				}),
-				qh( 13115, {	-- Cheese for Glowergold
-					currency(81),	-- Epicurean's Award
-					i(44113, { 	-- Small Spice Bag
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33871),	-- Recipe: Stormchops
-					}),
-				}),
-				qa( 13101, {	-- Convention at the Legerdemain
-					currency(81),	-- Epicurean's Award
-					i(44113, { 	-- Small Spice Bag
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33871),	-- Recipe: Stormchops
-					}),
-				}),
-				qh( 13113, {	-- Convention at the Legerdemain
-					currency(81),	-- Epicurean's Award
-					i(44113, { 	-- Small Spice Bag
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33871),	-- Recipe: Stormchops
-					}),
+				nh(29631, {	-- Awilo Longomba
+					["g"] = {
+						qh(13112, {	-- Infused Mushroom Meatloaf
+							["g"] = {
+							},
+							["achievementID"] = 1783,	-- Our Daily Bread (Horde)
+							["criteriaID"] = 1,	-- Infused Mushroom Meatloaf
+						}),
+						qh(13113, {	-- Convention at the Legerdemain
+							["g"] = {
+							},
+							["achievementID"] = 1783,	-- Our Daily Bread (Horde)
+							["criteriaID"] = 2,	-- Convention at the Legerdemain
+						}),
+						qh(13114, {	-- Sewer Stew
+							["g"] = {
+							},
+							["achievementID"] = 1783,	-- Our Daily Bread (Horde)
+							["criteriaID"] = 3,	-- Sewer Stew
+						}),
+						qh(13115, {	-- Cheese for Glowergold
+							["g"] = {
+							},
+							["achievementID"] = 1783,	-- Our Daily Bread (Horde)
+							["criteriaID"] = 4,	-- Cheese for Glowergold
+						}),
+						qh(13116, {	-- Mustard Dogs!
+							["g"] = {
+							},
+							["achievementID"] = 1783,	-- Our Daily Bread (Horde)
+							["criteriaID"] = 5,	-- Mustard Dogs!
+						}),
+					},
+					["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
 				}),
 				q(13571, {	-- Fletcher's Lost and Found
 					recipe(53056),	-- Kungaloosh
-				}),
-				qa( 13100, {	-- Infused Mushroom Meatloaf
-					currency(81),	-- Epicurean's Award
-					i(44113, { 	-- Small Spice Bag
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33871),	-- Recipe: Stormchops
-					}),
-				}),
-				qh( 13112, {	-- Infused Mushroom Meatloaf
-					currency(81),	-- Epicurean's Award
-					i(44113, { 	-- Small Spice Bag
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33871),	-- Recipe: Stormchops
-					}),
-				}),
-				qa( 13107, {	-- Mustard Dogs!
-					currency(81),	-- Epicurean's Award
-					i(44113, { 	-- Small Spice Bag
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33871),	-- Recipe: Stormchops
-					}),
-				}),
-				qh( 13116, {	-- Mustard Dogs!
-					currency(81),	-- Epicurean's Award
-					i(44113, { 	-- Small Spice Bag
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33871),	-- Recipe: Stormchops
-					}),
-				}),
-				qa( 13102, {	-- Sewer Stew
-					currency(81),	-- Epicurean's Award
-					i(44113, { 	-- Small Spice Bag
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33871),	-- Recipe: Stormchops
-					}),
-				}),
-				qh( 13114, {	-- Sewer Stew
-					currency(81),	-- Epicurean's Award
-					i(44113, { 	-- Small Spice Bag
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33871),	-- Recipe: Stormchops
-					}),
 				}),
 			},
 		}),

@@ -406,7 +406,6 @@ _.Zones =
 						["classes"] = { 9 },	-- Warlock
 --						["sourceQuests"] = {  },	-- 
 					})),
---					qg(, qa(31984)),	-- A Brief Reprieve
 					qdg(qa(27363, {	-- A Budding Young Surgeon
 						["g"] = {
 							i(65480),	-- Staff of the Technocrat
@@ -424,9 +423,6 @@ _.Zones =
 						["classes"] = { 1 },	-- Warrior
 --						["sourceQuests"] = {  },	-- 
 					})),
-
-					
-					
 --					qg(, qa(26190)),	-- A Fisherman's Feast
 					qdg(qa(27337, {	-- A Fitting Weapon
 						["g"] = {
