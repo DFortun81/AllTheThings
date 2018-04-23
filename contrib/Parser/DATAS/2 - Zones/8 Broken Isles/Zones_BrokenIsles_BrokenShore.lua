@@ -1559,59 +1559,58 @@ _.Zones =
 				n(-40, { -- Legacy
 					n(121589, { -- Thaumaturge Vashreen <Purveryor of Exquisite Furnishings>
 						["groups"] = {
-							i(147796, { -- Relinquished Hood
+							un(2, i(147796, { -- Relinquished Hood
 								i(146786), -- Cloth
 								i(146772), -- Leather
 								i(146781), -- Mail
 								i(146761), -- Plate
-							}),
-							i(147800, { -- Relinquished Spaulders
+							})),
+							un(2, i(147800, { -- Relinquished Spaulders
 								i(146791), -- Cloth
 								i(146774), -- Leather
 								i(146783), -- Mail
 								i(146763), -- Plate
-							}),
-							i(147794, { -- Relinquished Cloak
+							})),
+							un(2, i(147794, { -- Relinquished Cloak
 								i(146766), -- Cloak
-							}),
-							i(147793, { -- Relinquished Chestguard
+							})),
+							un(2, i(147793, { -- Relinquished Chestguard
 								i(146789), -- Cloth
 								i(146773), -- Leather
 								i(146784), -- Mail
 								i(146758), -- Plate
-							}),
-							i(147786, { -- Relinquished Bracers
+							})),
+							un(2, i(147786, { -- Relinquished Bracers
 								i(146792), -- Cloth
 								i(146768), -- Leather
 								i(146778), -- Mail
 								i(146765), -- Plate
-							}),
-							i(147795, { -- Relinquished Gauntlets
+							})),
+							un(2, i(147795, { -- Relinquished Gauntlets
 								i(146787), -- Cloth
 								i(146771), -- Leather
 								i(146779), -- Mail
 								i(146759), -- Plate
-							}),
-							i(147791, { -- Relinquished Girdle
+							})),
+							un(2, i(147791, { -- Relinquished Girdle
 								i(146785), -- Cloth
 								i(146775), -- Leather
 								i(146777), -- Mail
 								i(146760), -- Plate
-							}),
-							i(147797, { -- Relinquished Leggings
+							})),
+							un(2, i(147797, { -- Relinquished Leggings
 								i(146788), -- Cloth
 								i(146770), -- Leather
 								i(146782), -- Mail
 								i(146762), -- Plate
-							}),
-							i(147792, { -- Relinquished Treads
+							})),
+							un(2, i(147792, { -- Relinquished Treads
 								i(146790), -- Cloth
 								i(146769), -- Leather
 								i(146780), -- Mail
 								i(146764), -- Plate
-							}),
+							})),
 						},
-						["u"] = 33,
 						["description"] = "|cff66ccffThis vendor no longer exists on the Broken Shore and the only way to obtain these appearances are by the Legion Invasion bosses, and Legion Invasion quests only.|r"
 					}),
 				}),

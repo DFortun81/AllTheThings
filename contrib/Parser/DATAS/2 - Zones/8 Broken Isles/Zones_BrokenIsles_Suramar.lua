@@ -1394,41 +1394,50 @@ _.Zones =
 						i(130151), -- The "Devilsaur" Lunchbox
 					}),
 					n(115736, {	-- First Arcanist Thalyssra
-						i(136899), -- PET! Extinguished Eye
-						i(140325), -- TOY! Home Made Party Mask
-						i(140324), -- TOY! Mobile Telemancy Beacon
-						-- Order Hall Pieces START
-						i(139760), -- Priest Shoulders
-						i(139756), -- Priest Gloves
-						i(139752), -- Mage Shoulders
-						i(139748), -- Mage Gloves
-						i(139768), -- Warlock Shoulders
-						i(139764), -- Warlock Gloves
-						i(139728), -- Druid Shoulders
-						i(139725), -- Druid Gloves
-						i(139744), -- Rogue Shoulders
-						i(139741), -- Rogue Gloves
-						i(139736), -- Monk Shoulders
-						i(139733), -- Monk Gloves
-						i(139720), -- DH Shoulders
-						i(139717), -- DH Gloves
-						i(139712), -- Hunter Shoulders
-						i(139709), -- Hunter Gloves
-						i(139703), -- Shaman Shoulders
-						i(139700), -- Shaman Gloves
-						i(139695), -- Paladin Shoulders
-						i(139692), -- Paladin Gloves
-						i(139686), -- Warrior Shoulders
-						i(139683), -- Warrior Gloves
-						i(139678), -- DK Shoulders
-						i(139675), -- DK Gloves
-						-- Order Hall Pieces End
-						i(139600), -- Braided Manastring Cinch
-						i(139979), -- Footpads of the Nightrunners
-						i(121738), -- Irongrove Refugee Boots
 						i(121736), -- Nightfall Slipeprs
-						i(140575), -- Nightfallen Tabard
+						i(121738), -- Irongrove Refugee Boots
+						i(139979), -- Footpads of the Nightrunners
 						i(140015), -- Scavenged Felsoul Sabaton
+						i(140746), -- Treasure Map: Suramar
+						i(140324), -- Mobile Telemancy Beacon
+						i(139600), -- Braided Manastring Cinch
+						i(136899), -- Extinguished Eye
+						i(140325), -- Home Made Party Mask
+						i(139604), -- Mana-Soaked Amethyst Pendant
+						i(140575), -- Nightfallen Tabard
+						i(139760), -- Spaulders of the Hight Priest
+						i(139756), -- Gloves of the High Priest
+						i(139752), -- Mantle of Tirisgarde
+						i(139748), -- Gloves of Tirisgarde
+						i(139768), -- Amice of the Black Harvest
+						i(139764), -- Gloves of the Black Harvest
+						i(139728), -- Amice of the Dreamgrove
+						i(139725), -- Gloves of the Dreamgrove
+						i(139744), -- Shoulderblades of the Uncrowned
+						i(139741), -- Gloves of the Uncrowned
+						i(139736), -- Grandmaster's Shoulderguards
+						i(139733), -- Gradnmaster's Palms
+						i(139720), -- Spaulders of the Shattered Abyss
+						i(139717), -- Gloves of the Shattered Abyss
+						i(139712), -- Spaulders of the Unseeen Path
+						i(139709), -- Grips of the Unseen Path
+						i(139703), -- Farseer's Shoulderguards
+						i(139700), -- Farseer's Gauntlets
+						i(139695), -- Spaulders of teh Silver Hand
+						i(139692), -- Gauntlets of the Silver Hand
+						i(139686), -- Battlelord's Pauldrons
+						i(139683), -- Battlelord's Gauntlets
+						i(139678), -- Deathlord's Mantle
+						i(139675), -- Deathlord's Gauntlets
+						i(142120), -- Recipe: Potion of Prolonged Power Rank 2
+						i(137973), -- Pattern: Imbued Silkweave Bracers Rank 2
+						i(137976), -- Pattern: Imbued Silkweave Pantaloons Rank 2
+						i(137979), -- Pattern: Imbued Silkweave Slippers Rank 2
+						i(137850), -- Design: Subtle Shadowruby Pendant Rank 3
+						i(128603), -- Formula: Enchant Ring - Binding of Versatility Rank 3
+						i(128602), -- Formula: Enchant Ring - Binding of Mastery Rank 3
+						i(128600), -- Formula: Enchant Ring - Binding of Critical Strike Rank 3
+						i(128609), -- Formula: Enchant Cloak - Binding of Intellect Rank 3
 					}),
 					n(113843, {-- Kieule <Souvenirs>
 						--[[ No use yet, potential pets/toys?
@@ -1438,13 +1447,13 @@ _.Zones =
 						i(130151), -- The "Devilsaur" Lunchbox
 					}),
 					n(93971, { -- Leyweaver Inondra
-						sp(186112, { i(127019) }), -- Imbued Silkweave Cover
-						sp(186115, { i(127020) }), -- Imbued Silkweave Drape
-						sp(186109, { i(127034) }), -- Imbued Silkweave Flourish
-						sp(186106, { i(127033) }), -- Imbued Silkweave Shade
+						i(127277), -- Imbued Silkweave Cover Rank 1
+						i(127278), -- Imbued Silkweave Drape Rank 1
+						i(127280), -- Imbued Silkweave Flourish Rank 1
+						i(127279), -- Imbued Silkweave Shade Rank 1
 					}),
 					n(93979, { -- Leyweaver Jorjana
-						sp(185930, { i(126998) }), -- Imbued Silkweave Hood
+						i(127025), -- Imbued Silkweave Hood Rank 1
 					}),
 					n(112226, {	-- Markus Hjolbruk
 						i(133819),	-- Recipe: Koi-Scented Stormray [Rank 1]
@@ -1458,30 +1467,30 @@ _.Zones =
 						i(130151), -- The "Devilsaur" Lunchbox
 					}),
 					n(98969, { -- Stalriss Dawnrunner <Leatherworking Trainer>
-						sp(194784, { i(128887) }), -- Dreadleather Mask
-						sp(194789, { i(128889) }), -- Dreadleather Shoulderguard
-						sp(194791, { i(128884) }), -- Dreadleather Jerkin
-						sp(194790, { i(128886) }), -- Dreadleather Gloves
-						sp(194788, { i(128890) }), -- Dreadleather Belt
-						sp(194786, { i(128888) }), -- Dreadleather Pants
-						sp(194785, { i(128885) }), -- Dreadleather Footpads
-						sp(194794, { i(128903) }), -- Gravenscale Warhelm
-						sp(194798, { i(128905) }), -- Gravenscale Spaulders
-						sp(194795, { i(128900) }), -- Gravenscale Hauberk
-						sp(194799, { i(128902) }), -- Gravenscale Grips
-						sp(194797, { i(128906) }), -- Gravenscale Girdle
-						sp(194792, { i(128904) }), -- Gravenscale Leggings
-						sp(194793, { i(128901) }), -- Gravenscale Treads
+						i(140643),	-- Recipe: Dreadleather Jerkin Rank 1
+						i(140651),	-- Recipe: Gravenscale Hauberk Rank 1
+						i(140649),	-- Recipe: Gravenscale Grips Rank 1
+						i(140648),	-- Recipe: Gravenscale Warhelm Rank 1
+						i(140647),	-- Recipe: Gravenscale Leggings Rank 1
+						i(140646),	-- Recipe: Gravenscale Spaulders Rank 1
+						i(140645),	-- Recipe: Gravenscale Girdle Rank 1
+						i(140650),	-- Recipe: Gravenscale Treads Rank 1
+						i(140642),	-- Recipe: Dreadleather Footpads Rank 1
+						i(140641),	-- Recipe: Dreadleather Gloves Rank 1
+						i(140640),	-- Recipe: Dreadleather Mask Rank 1
+						i(140639),	-- Recipe: Dreadleather Pants Rank 1
+						i(140637),	-- Recipe: Dreadleather Belt Rank 1
+						i(140638),	-- Recipe: Dreadleather Shoulderguard Rank 1
 					}),
 					n(92265, { -- Urael <Nal'ryssa's Minion>
-						sp(182948, { i(123913) }), -- Demonsteel Helm
-						sp(182946, { i(123915) }), -- Demonsteel Pauldrons
-						sp(182951, { i(123910) }), -- Demonsteel Breastplate
-						sp(182944, { i(123917) }), -- Demonsteel Armguards
-						sp(182949, { i(123912) }), -- Demonsteel Gauntlets
-						sp(182945, { i(123916) }), -- Demonsteel Waistguard
-						sp(182947, { i(123914) }), -- Demonsteel Greaves
-						sp(182950, { i(123911) }), -- Demonsteel Boots
+						i(123920),	-- Recipe: Demonsteel Armguards Rank 1
+						i(123921),	-- Recipe: Demonsteel Waistguard Rank 1
+						i(123922),	-- Recipe: Demonsteel Pauldrons Rank 1
+						i(123923),	-- Recipe: Demonsteel Greaves Rank 1
+						i(123924),	-- Recipe: Demonsteel Helm Rank 1
+						i(123925),	-- Recipe: Demonsteel Gauntlets Rank 1
+						i(123926),	-- Recipe: Demonsteel Boots Rank 1
+						i(123927),	-- Recipe: Demonsteel Breastplate Rank 1
 					}),
 				}),
 				n(-38, { -- Profession
