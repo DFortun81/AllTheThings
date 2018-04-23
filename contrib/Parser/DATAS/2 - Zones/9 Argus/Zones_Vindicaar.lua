@@ -742,7 +742,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n(121589, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings
+						n(121589, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 							["groups"] = {
 								i(153211, { -- Relinquished Hood
 									["groups"] = {
