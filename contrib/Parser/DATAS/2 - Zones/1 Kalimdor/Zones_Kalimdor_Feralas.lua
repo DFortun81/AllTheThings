@@ -293,7 +293,7 @@ _.Zones =
 						i(131421),
 						i(156984), -- Windflight Knife 
 					})),
-					qg(39377, qh(252330,  {  -- More Than Illness
+					qg(39377, qh(25230,  {  -- More Than Illness
 						i(54914),
 						i(54915),
 						i(54916),
