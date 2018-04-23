@@ -175,8 +175,8 @@ _.Instances =
 							i(10796),	-- Drakestone
 							i(12464),	-- Bloodfire Talons
 							i(12466),	-- Dawnspire Cord
-						}),	
-						n(5722, { 	-- Hazzas
+						}),
+						n(5719, { 	-- Morphaz 
 							i(12463), 	-- Drakefang Butcher
 							i(12243), 	-- Smoldering Claw
 							i(10797), 	-- Firebreather
@@ -184,7 +184,7 @@ _.Instances =
 							i(12464),	-- Bloodfire Talons
 							i(12466),	-- Dawnspire Cord
 						}),
-						n(5719, { 	-- Morphaz 
+						n(5722, { 	-- Hazzas
 							i(12463), 	-- Drakefang Butcher
 							i(12243), 	-- Smoldering Claw
 							i(10797), 	-- Firebreather
