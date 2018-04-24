@@ -74,7 +74,7 @@ local GetTitleName = _G["GetTitleName"];
 local IsDressableItem = _G["IsDressableItem"];
 --local IsQuestFlaggedCompleted = _G["IsQuestFlaggedCompleted"];
 local PlayerHasToy = _G["PlayerHasToy"];
-local SetPortraitTexture = _G["SetPortraitTexture"];
+local SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
@@ -1033,12 +1033,8 @@ local function GetFactionCache()
 	if not cache then
 		cache = {};
 		SetTempDataMember("FACTION_CACHE", cache);
-		for i=1,1000,1 do
-			local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar,
-				isHeader, isCollapsed, hasRep, isWatched, isChild, factionID = GetFactionInfo(i);
-			if name then
-				tinsert(cache, app.CreateFaction(i));
-			end
+		for i=1,5000,1 do
+			tinsert(cache, app.CreateFaction(i));
 		end
 	end
 	return cache;
@@ -3358,8 +3354,8 @@ app.BaseMap = {
 		if key == "key" then
 			return "mapID";
 		elseif key == "text" then
-			local mapID = t.mapID;
-			return (mapID and mapID > 0 and GetMapNameByID(mapID)) or ("Map ID #" .. (mapID or "???"));
+			local info = C_Map.GetMapInfo(t.mapID);
+			return (info and info.name) or ("Map ID #" .. (t.mapID or "???"));
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
