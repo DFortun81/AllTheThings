@@ -1671,12 +1671,7 @@ local function OpenMiniList(field, id, label)
 	end
 end
 local function OpenMiniListForCurrentZone()
-	-- Cache the original map ID.
-	local originalMapID = GetCurrentMapAreaID();
-	SetMapToCurrentZone();
-	local mapID = GetCurrentMapAreaID();
-	SetMapByID(originalMapID);
-	OpenMiniList("mapID", mapID, "Map ID");
+	OpenMiniList("mapID", C_Map.GetBestMapForUnit("player"), "Map ID");
 end
 local function ToggleMainList()
 	app:ToggleWindow("Prime");
@@ -1713,26 +1708,9 @@ local function RefreshLocationCoroutine()
 		--print("Definitely not PVPing. (RefreshLocation) " ..  (instanceType or "??"));
 	end
 	
-	-- Cache the original map ID.
-	local originalMapID = GetCurrentMapAreaID();
-	SetMapToCurrentZone();
-	local mapID = GetCurrentMapAreaID();
-	
-	-- Onyxia's Lair fix
-	local text_to_mapID = L("ZONE_TEXT_TO_MAP_ID");
-	local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
-	if otherMapID then
-		mapID = otherMapID;
-	else
-		-- This is necessary because the map area ID for instances
-		-- is -1 when you initially enter them for a few moments. (not even a full second)
-		while not mapID or mapID < 0 do
-			coroutine.yield();
-			mapID = GetCurrentMapAreaID();
-		end
-	end
-	
-	SetMapByID(originalMapID);
+	-- Cache the player's current map.
+	local mapID = C_Map.GetBestMapForUnit("player");
+	print("Current Map ID: ", mapID);
 	
 	-- Cache that we're in the current map ID.
 	if GetTempDataMember("MapID") ~= mapID then
@@ -6344,16 +6322,10 @@ SLASH_AllTheThingsNote1 = "/attnote";
 SlashCmdList["AllTheThingsNote"] = function(cmd)
 	cmd = cmd or "";
 	if cmd == "clear" then
-		local originalMapID = GetCurrentMapAreaID();
-		SetMapToCurrentZone();
-		SetNote("mapID", GetCurrentMapAreaID(), nil);
-		SetMapByID(originalMapID);
+		SetNote("mapID", C_Map.GetBestMapForUnit("player"), nil);
 		return nil;
 	elseif cmd ~= "" then
-		local originalMapID = GetCurrentMapAreaID();
-		SetMapToCurrentZone();
-		SetNote("mapID", GetCurrentMapAreaID(), cmd);
-		SetMapByID(originalMapID);
+		SetNote("mapID", GC_Map.GetBestMapForUnit("player"), cmd);
 		return nil;
 	end
 	
