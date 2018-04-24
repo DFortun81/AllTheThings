@@ -3432,9 +3432,9 @@ app.BaseMusicRoll = {
 	__index = function(t, key)
 		if key == "key" then
 			return "questID";
-		elseif key == "collectible" then
+		elseif key == "collectible" or key == "trackable" then
 			return true;
-		elseif key == "collected" then
+		elseif key == "collected" or key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID);
 		elseif key == "f" then
 			return 108;
@@ -3449,10 +3449,6 @@ app.BaseMusicRoll = {
 				t.icon = icon;
 				return link;
 			end
-		elseif key == "trackable" then
-			return true;
-		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID);
 		elseif key == "description" then
 			return "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.";
 		else
