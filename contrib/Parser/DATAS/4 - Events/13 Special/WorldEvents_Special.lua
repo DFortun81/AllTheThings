@@ -698,6 +698,7 @@ _.WorldEvents =
 							i(134638),	-- Recruit's Rifle
 							i(134663),	-- Recruit's Slicer
 							i(134639),	-- Recruit's Staff
+							i(134661),	-- Recruit's Signet
 						},
 						["description"] = "|cff66ccffRewarded for winning a random battleground in the level 15-39 range.|r",
 					}),
