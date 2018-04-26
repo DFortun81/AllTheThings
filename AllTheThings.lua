@@ -7374,11 +7374,11 @@ app.events.VARIABLES_LOADED = function()
 			end
 			
 			SetMapByID(originalMapID);
-			return app.LegionToBFAMapID(mapID);
+			return mapID;
 		end
 		app.GetMapName = function(mapID)
 			if mapID and mapID > 0 then
-				return GetMapNameByID(app.BFAToLegionMapID(mapID)) or ("Map ID #" .. mapID);
+				return GetMapNameByID(mapID) or ("Map ID #" .. mapID);
 			else
 				return "Map ID #???";
 			end
