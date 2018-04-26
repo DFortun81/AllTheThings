@@ -77,60 +77,6 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 
--- There were some API changes between Legion and BFA:
-app.BFA = select(4, GetBuildInfo()) > 80000;	-- If this is for BFA, run the BFA code, otherwise the Legion/Legacy code.
-if app.BFA then
-	-- BFA specific code!
-	app.SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
-	app.GetCurrentMapID = function()
-		return C_Map.GetBestMapForUnit("player");
-	end
-	app.GetMapName = function(mapID)
-		if mapID and mapID > 0 then
-			local info = C_Map.GetMapInfo(mapID);
-			return (info and info.name) or ("Map ID #" .. mapID);
-		else
-			return "Map ID #???";
-		end
-	end
-	app.GetMapNameForObject = function(t)
-		return app.GetMapName(t.uiMapID or t.mapID);
-	end
-else
-	-- Legion / Legacy code!
-	app.SetPortraitTexture = _G["SetPortraitTexture"];
-	app.GetCurrentMapID = function()
-		-- Cache the original map ID.
-		local originalMapID = GetCurrentMapAreaID();
-		SetMapToCurrentZone();
-		local mapID = GetCurrentMapAreaID();
-		
-		-- Onyxia's Lair fix
-		local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
-		local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
-		if otherMapID then
-			mapID = otherMapID;
-		else
-			-- This is necessary because the map area ID for instances
-			-- is -1 when you initially enter them for a few moments. (not even a full second)
-			mapID = GetCurrentMapAreaID();
-		end
-		
-		SetMapByID(originalMapID);
-		return mapID;
-	end
-	app.GetMapName = function(mapID)
-		if mapID and mapID > 0 then
-			return GetMapNameByID(mapID) or ("Map ID #" .. mapID);
-		else
-			return "Map ID #???";
-		end
-	end
-	app.GetMapNameForObject = function(t)
-		return app.GetMapName(t.mapID);
-	end
-end
-
 -- Coroutine Helper Functions
 app.refreshing = {};
 local function OnUpdate(self)
@@ -943,7 +889,6 @@ fieldCache["encounterID"] = {};
 fieldCache["objectID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["mapID"] = {};
-fieldCache["uiMapID"] = {};
 fieldCache["questID"] = {};
 fieldCache["requireSkill"] = {};
 fieldCache["s"] = {};
@@ -988,17 +933,6 @@ local function CacheSubFieldID(group, field, subfield)
 		tinsert(fieldCache_f, {["g"] = { group }, ["parent"] = group, [subfield] = firldCache_g });
 	end
 end
-if app.BFA then
-	app.CacheMapIDs = function(group)
-		CacheFieldID(group, "uiMapID");
-		CacheArrayFieldIDs(group, "uiMapID", "uiMaps");
-	end
-else
-	app.CacheMapIDs = function(group)
-		CacheFieldID(group, "mapID");
-		CacheArrayFieldIDs(group, "mapID", "maps");
-	end
-end
 local function CacheFields(group)
 	CacheFieldID(group, "creatureID");
 	CacheFieldID(group, "currencyID");
@@ -1011,7 +945,8 @@ local function CacheFields(group)
 	CacheFieldID(group, "s");
 	CacheFieldID(group, "speciesID");
 	CacheFieldID(group, "spellID");
-	app.CacheMapIDs(group);
+	CacheFieldID(group, "mapID");
+	CacheArrayFieldIDs(group, "mapID", "maps");
 	if group.f == 102 and group.itemID then CacheFieldValue(group, "toyID", group.itemID); end
 	if group.c and not containsValue(group.c, app.ClassIndex) then
 		group.nmc = true;	-- "Not My Class"
@@ -3398,7 +3333,7 @@ app.BaseMap = {
 		if key == "key" then
 			return "mapID";
 		elseif key == "text" then
-			return app.GetMapNameForObject(t);
+			return app.GetMapName(t.mapID);
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
@@ -6433,6 +6368,55 @@ app.events.VARIABLES_LOADED = function()
 		_G["AllTheThingsPCD"] = AllTheThingsPCD;
 	end
 	
+	-- There were some API changes between Legion and BFA:
+	print("thing", GetBuildInfo());
+	app.BFA = select(4, GetBuildInfo()) >= 80000;	-- If this is for BFA, run the BFA code, otherwise the Legion/Legacy code.
+	if app.BFA then
+		-- BFA specific code!
+		app.SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
+		app.GetCurrentMapID = function()
+			return C_Map.GetBestMapForUnit("player");
+		end
+		app.GetMapName = function(mapID)
+			if mapID and mapID > 0 then
+				local info = C_Map.GetMapInfo(mapID);
+				return (info and info.name) or ("Map ID #" .. mapID);
+			else
+				return "Map ID #???";
+			end
+		end
+	else
+		-- Legion / Legacy code!
+		app.SetPortraitTexture = _G["SetPortraitTexture"];
+		app.GetCurrentMapID = function()
+			-- Cache the original map ID.
+			local originalMapID = GetCurrentMapAreaID();
+			SetMapToCurrentZone();
+			local mapID = GetCurrentMapAreaID();
+			
+			-- Onyxia's Lair fix
+			local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
+			local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
+			if otherMapID then
+				mapID = otherMapID;
+			else
+				-- This is necessary because the map area ID for instances
+				-- is -1 when you initially enter them for a few moments. (not even a full second)
+				mapID = GetCurrentMapAreaID();
+			end
+			
+			SetMapByID(originalMapID);
+			return mapID;
+		end
+		app.GetMapName = function(mapID)
+			if mapID and mapID > 0 then
+				return GetMapNameByID(mapID) or ("Map ID #" .. mapID);
+			else
+				return "Map ID #???";
+			end
+		end
+	end
+	
 	-- Setup the localization and interpret the Display Information.
 	SetLocale(GetLocale());
 	app:UpdateWindowColors();
@@ -6647,6 +6631,7 @@ app.events.VARIABLES_LOADED = function()
 end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
+	print("thing", GetBuildInfo());
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
 	app:GetDataCache();
