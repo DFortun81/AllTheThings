@@ -72,12 +72,64 @@ local GetItemInfoInstant = _G["GetItemInfoInstant"];
 local GetItemSpecInfo = _G["GetItemSpecInfo"];
 local GetTitleName = _G["GetTitleName"];
 local IsDressableItem = _G["IsDressableItem"];
---local IsQuestFlaggedCompleted = _G["IsQuestFlaggedCompleted"];
 local PlayerHasToy = _G["PlayerHasToy"];
-local SetPortraitTexture = _G["SetPortraitTexture"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
+
+-- There were some API changes between Legion and BFA:
+app.BFA = select(4, GetBuildInfo()) > 80000;	-- If this is for BFA, run the BFA code, otherwise the Legion/Legacy code.
+if app.BFA then
+	-- BFA specific code!
+	app.SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
+	app.GetCurrentMapID = function()
+		return C_Map.GetBestMapForUnit("player");
+	end
+	app.GetMapName = function(mapID)
+		if mapID and mapID > 0 then
+			local info = C_Map.GetMapInfo(mapID);
+			return (info and info.name) or ("Map ID #" .. mapID);
+		else
+			return "Map ID #???";
+		end
+	end
+	app.GetMapNameForObject = function(t)
+		return app.GetMapName(t.uiMapID or t.mapID);
+	end
+else
+	-- Legion / Legacy code!
+	app.SetPortraitTexture = _G["SetPortraitTexture"];
+	app.GetCurrentMapID = function()
+		-- Cache the original map ID.
+		local originalMapID = GetCurrentMapAreaID();
+		SetMapToCurrentZone();
+		local mapID = GetCurrentMapAreaID();
+		
+		-- Onyxia's Lair fix
+		local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
+		local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
+		if otherMapID then
+			mapID = otherMapID;
+		else
+			-- This is necessary because the map area ID for instances
+			-- is -1 when you initially enter them for a few moments. (not even a full second)
+			mapID = GetCurrentMapAreaID();
+		end
+		
+		SetMapByID(originalMapID);
+		return mapID;
+	end
+	app.GetMapName = function(mapID)
+		if mapID and mapID > 0 then
+			return GetMapNameByID(mapID) or ("Map ID #" .. mapID);
+		else
+			return "Map ID #???";
+		end
+	end
+	app.GetMapNameForObject = function(t)
+		return app.GetMapName(t.mapID);
+	end
+end
 
 -- Coroutine Helper Functions
 app.refreshing = {};
@@ -669,20 +721,20 @@ local function SetPortraitIcon(self, data, x)
 		return true;
 	elseif GetDataMember("ShowModels") then
 		if data.displayID then
-			SetPortraitTexture(self, data.displayID);
+			app.SetPortraitTexture(self, data.displayID);
 			self:SetWidth(self:GetHeight());
 			self:SetTexCoord(0, 1, 0, 1);
 			return true;
 		elseif data.creatureID then
 			local displayID = app.NPCDB[data.creatureID];
 			if displayID then
-				SetPortraitTexture(self, displayID);
+				app.SetPortraitTexture(self, displayID);
 				self:SetWidth(self:GetHeight());
 				self:SetTexCoord(0, 1, 0, 1);
 				return true;
 			elseif data.creatureID < 0 then
 				-- A negative creature ID is actually a displayInfo ID.
-				SetPortraitTexture(self, math.abs(data.creatureID));
+				app.SetPortraitTexture(self, math.abs(data.creatureID));
 				self:SetWidth(self:GetHeight());
 				self:SetTexCoord(0, 1, 0, 1);
 				return true;
@@ -711,7 +763,7 @@ local function SetPortraitIcon(self, data, x)
 		elseif data.qgs and #data.qgs > 0 then
 			local displayID = app.NPCDB[data.qgs[1]];
 			if displayID then
-				SetPortraitTexture(self, displayID);
+				app.SetPortraitTexture(self, displayID);
 				self:SetWidth(self:GetHeight());
 				self:SetTexCoord(0, 1, 0, 1);
 				return true;
@@ -891,6 +943,7 @@ fieldCache["encounterID"] = {};
 fieldCache["objectID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["mapID"] = {};
+fieldCache["uiMapID"] = {};
 fieldCache["questID"] = {};
 fieldCache["requireSkill"] = {};
 fieldCache["s"] = {};
@@ -935,6 +988,17 @@ local function CacheSubFieldID(group, field, subfield)
 		tinsert(fieldCache_f, {["g"] = { group }, ["parent"] = group, [subfield] = firldCache_g });
 	end
 end
+if app.BFA then
+	app.CacheMapIDs = function(group)
+		CacheFieldID(group, "uiMapID");
+		CacheArrayFieldIDs(group, "uiMapID", "uiMaps");
+	end
+else
+	app.CacheMapIDs = function(group)
+		CacheFieldID(group, "mapID");
+		CacheArrayFieldIDs(group, "mapID", "maps");
+	end
+end
 local function CacheFields(group)
 	CacheFieldID(group, "creatureID");
 	CacheFieldID(group, "currencyID");
@@ -942,13 +1006,12 @@ local function CacheFields(group)
 	CacheFieldID(group, "encounterID");
 	CacheFieldID(group, "objectID");
 	CacheFieldID(group, "itemID");
-	CacheFieldID(group, "mapID");
-	CacheArrayFieldIDs(group, "mapID", "maps");
 	CacheFieldID(group, "questID");
 	CacheFieldID(group, "requireSkill");
 	CacheFieldID(group, "s");
 	CacheFieldID(group, "speciesID");
 	CacheFieldID(group, "spellID");
+	app.CacheMapIDs(group);
 	if group.f == 102 and group.itemID then CacheFieldValue(group, "toyID", group.itemID); end
 	if group.c and not containsValue(group.c, app.ClassIndex) then
 		group.nmc = true;	-- "Not My Class"
@@ -1033,12 +1096,8 @@ local function GetFactionCache()
 	if not cache then
 		cache = {};
 		SetTempDataMember("FACTION_CACHE", cache);
-		for i=1,1000,1 do
-			local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar,
-				isHeader, isCollapsed, hasRep, isWatched, isChild, factionID = GetFactionInfo(i);
-			if name then
-				tinsert(cache, app.CreateFaction(i));
-			end
+		for i=1,5000,1 do
+			tinsert(cache, app.CreateFaction(i));
 		end
 	end
 	return cache;
@@ -1675,12 +1734,7 @@ local function OpenMiniList(field, id, label)
 	end
 end
 local function OpenMiniListForCurrentZone()
-	-- Cache the original map ID.
-	local originalMapID = GetCurrentMapAreaID();
-	SetMapToCurrentZone();
-	local mapID = GetCurrentMapAreaID();
-	SetMapByID(originalMapID);
-	OpenMiniList("mapID", mapID, "Map ID");
+	OpenMiniList("mapID", app.GetCurrentMapID(), "Map ID");
 end
 local function ToggleMainList()
 	app:ToggleWindow("Prime");
@@ -1717,26 +1771,12 @@ local function RefreshLocationCoroutine()
 		--print("Definitely not PVPing. (RefreshLocation) " ..  (instanceType or "??"));
 	end
 	
-	-- Cache the original map ID.
-	local originalMapID = GetCurrentMapAreaID();
-	SetMapToCurrentZone();
-	local mapID = GetCurrentMapAreaID();
-	
-	-- Onyxia's Lair fix
-	local text_to_mapID = L("ZONE_TEXT_TO_MAP_ID");
-	local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
-	if otherMapID then
-		mapID = otherMapID;
-	else
-		-- This is necessary because the map area ID for instances
-		-- is -1 when you initially enter them for a few moments. (not even a full second)
-		while not mapID or mapID < 0 do
-			coroutine.yield();
-			mapID = GetCurrentMapAreaID();
-		end
+	-- Cache the map ID.
+	local mapID = app.GetCurrentMapID();
+	while not mapID or mapID < 0 do
+		coroutine.yield();
+		mapID = app.GetCurrentMapID();
 	end
-	
-	SetMapByID(originalMapID);
 	
 	-- Cache that we're in the current map ID.
 	if GetTempDataMember("MapID") ~= mapID then
@@ -3358,8 +3398,7 @@ app.BaseMap = {
 		if key == "key" then
 			return "mapID";
 		elseif key == "text" then
-			local mapID = t.mapID;
-			return (mapID and mapID > 0 and GetMapNameByID(mapID)) or ("Map ID #" .. (mapID or "???"));
+			return app.GetMapNameForObject(t);
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
@@ -6348,16 +6387,10 @@ SLASH_AllTheThingsNote1 = "/attnote";
 SlashCmdList["AllTheThingsNote"] = function(cmd)
 	cmd = cmd or "";
 	if cmd == "clear" then
-		local originalMapID = GetCurrentMapAreaID();
-		SetMapToCurrentZone();
-		SetNote("mapID", GetCurrentMapAreaID(), nil);
-		SetMapByID(originalMapID);
+		SetNote("mapID", app.GetCurrentMapID(), nil);
 		return nil;
 	elseif cmd ~= "" then
-		local originalMapID = GetCurrentMapAreaID();
-		SetMapToCurrentZone();
-		SetNote("mapID", GetCurrentMapAreaID(), cmd);
-		SetMapByID(originalMapID);
+		SetNote("mapID", app.GetCurrentMapID(), cmd);
 		return nil;
 	end
 	
