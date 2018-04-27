@@ -3334,6 +3334,7 @@ app.BaseMap = {
 		if key == "key" then
 			return "mapID";
 		elseif key == "text" then
+			if t["isRaid"] then return "|cffff8000" .. app.GetMapName(t.mapID) .. "|r"; end
 			return app.GetMapName(t.mapID);
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
