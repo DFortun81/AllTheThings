@@ -9,15 +9,15 @@ _.WorldEvents =
 				["groups"] = {
 					i(156683, {	-- Satchel of Helpful Goods [Level 15-60]			
 						["groups"] = {
-							i(51982),	-- Earthbound Boots
-							un(2, i(51977)),	-- Earthbound Girdle
+							i(51982),	-- Earthbound Boots*
+							un(2, i(51977)),	-- Earthbound Girdle*
 							un(2, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
-							i(143580),	-- Earthbound Girdle
-							un(2, i(51979)),	-- Earthbound Grips
-							i(143581),	-- Earthbound Grips
+							i(143580),	-- Earthbound Girdle*
+							un(2, i(51979)),	-- Earthbound Grips*
+							i(143581),	-- Earthbound Grips*
 							un(2, i(51980)),	-- Earthbound Handgrips [Probably unobtainable]
-							i(51976),	-- Earthbound Shoulderguards
-							i(51981),	-- Earthbound Wristguards
+							i(51976),	-- Earthbound Shoulderguards*
+							i(51981),	-- Earthbound Wristguards*
 							un(2, i(51971)),	-- Enumerated Belt
 							i(51972),	-- Enumerated Bracers*
 							i(51973),	-- Enumerated Handwraps
@@ -26,12 +26,12 @@ _.WorldEvents =
 							i(51968),	-- Enumerated Wrap*
 							i(51989),	-- Stalwart Bands
 							un(2, i(51985)),	-- Stalwart Belt
-							i(143582),	-- Stalwart Belt
+							i(143582),	-- Stalwart Belt*
 							un(2, i(51987)),	-- Stalwart Grips
-							i(143583),	-- Stalwart Grips
-							i(51984),	-- Stalwart Shoulderpads
+							i(143583),	-- Stalwart Grips*
+							i(51984),	-- Stalwart Shoulderpads*
 							un(2, i(51997)),	-- Stalwart Spaulders
-							i(51990),	-- Stalwart Treads
+							i(51990),	-- Stalwart Treads*
 							i(51994),	-- Tumultuous Cloak*
 							i(51996),	-- Tumultuous Necklace*
 							i(51992),	-- Tumultuous Ring*
@@ -130,7 +130,7 @@ _.WorldEvents =
 						i(112367),	-- Snow-Coated Cloth Belt
 						i(112355),	-- Snow-Coated Cloth Leggings*
 						i(112352),	-- Winterfrost Leather Cap
-						i(112351),	-- Winterfrost Leather Helm
+						i(112351),	-- Winterfrost Leather Helm*
 						i(113690),	-- Winterfrost Leather Gloves
 						i(113689),	-- Winterfrost Leather Knuckledusters
 						i(112365),	-- Winterfrost Leather Belt
@@ -698,6 +698,7 @@ _.WorldEvents =
 							i(134638),	-- Recruit's Rifle
 							i(134663),	-- Recruit's Slicer
 							i(134639),	-- Recruit's Staff
+							i(134661),	-- Recruit's Signet
 						},
 						["description"] = "|cff66ccffRewarded for winning a random battleground in the level 15-39 range.|r",
 					}),

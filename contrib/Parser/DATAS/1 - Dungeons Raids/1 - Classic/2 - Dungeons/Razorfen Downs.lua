@@ -97,8 +97,8 @@ _.Instances =
 						i(10775),	-- Carapace of Tuten'kash
 						i(10777),	-- Arachnid Gloves
 					})),
-					un(1, n(8696, {	-- Henry Stern
-						desc(un(1, recipe(13028)), "Henry Stern who is currently the only source of acquiring Goldthorn Tea is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it."),	-- Goldthorn Tea
+					un(1, n(8696, {		-- Henry Stern
+						desc(un(1, recipe(13028)), "Henry Stern, who is currently the only source of acquiring Goldthorn Tea, is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it."),	-- Goldthorn Tea
 					})),
 					n(75813, {			-- Sah'rhee
 						["groups"] = {
@@ -110,20 +110,22 @@ _.Instances =
 						},
 						["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you click the body to start this optional boss."
 					}),
-					cr(74347, e(433, {	-- Mordresh Fire Eye
+					cr(74347, e( 433, {	-- Mordresh Fire Eye
 						i(10770),	-- Mordresh's Lifeless Skull
+						i(10769),	-- Glowing Eye of Mordresh
 						i(10771),	-- Deathmage Sash
 					})),
 					cr(74435, e(1143, {	-- Mushlump
-						i(10772),	-- Glutton's Cleaver
-						i(10774),	-- Fleshhide Shoulders
+						i( 10772),	-- Glutton's Cleaver
+						i( 10774),	-- Fleshhide Shoulders
+						i(151453),	-- Grungy Necromantic Ring
 					})),
 					cr(74875, e(1146, {	-- Death Speaker Blackthorn
-						i(10758),	-- X'caliboar
-						i(10766),	-- Plaguerot Sprig
-						i(10767),	-- Savage Boar's Guard
-						i(10760),	-- Swine Fists
-						i(10768),	-- Boar Champion's Belt
+						i( 10758),	-- X'caliboar
+						i( 10766),	-- Plaguerot Sprig
+						i( 10767),	-- Savage Boar's Guard
+						i( 10760),	-- Swine Fists
+						i( 10768),	-- Boar Champion's Belt
 						i(151454),	-- Splinterbone Sabatons
 					})),
 					cr(74434, e(1141, {	-- Amnennar the Coldbringer

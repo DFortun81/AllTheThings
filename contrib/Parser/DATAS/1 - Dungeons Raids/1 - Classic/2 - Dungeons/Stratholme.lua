@@ -68,17 +68,18 @@ _.Instances =
 							["description"] = "This is a rare that is not always present.",
 						}),
 						cr(10558, e(443, { 	-- Hearthsinger Forresten
-							i(13379),	-- Piccolo of the Flaming Fire (Toy)
+							i(13379),	-- Piccolo of the Flaming Fire (TOY!)
+							i(12103),	-- Star of Mystaria
 							i(13378),	-- Songbird Blouse
 							i(13384),	-- Rainbow Girdle
 							i(13383),  	-- Woollies of the Prancing Minstrel
 						})),
 						cr(10516, e(450, { 	-- The Unforgiven
-							i(22406),	-- Redemption
-							i(13408),	-- Soul Breaker
-							i(13404),	-- Mask of the Unforgiven
-							i(13405),	-- Wailing Nightbane Pauldrons
-							i(13409),	-- Tearfall Bracers
+							i( 22406),	-- Redemption
+							i( 13408),	-- Soul Breaker
+							i( 13404),	-- Mask of the Unforgiven
+							i( 13405),	-- Wailing Nightbane Pauldrons
+							i( 13409),	-- Tearfall Bracers
 							i(151404),	-- Gauntlets of Purged Sanity
 							nld({	-- Legacy
 								i(16717),	-- Wildheart Gloves
@@ -88,33 +89,33 @@ _.Instances =
 							["groups"] = {
 								dr(14, i(13393)),	-- Malown's Slam
 								dr(13, i(13390)),	-- The Postmaster's Band
-								dr(13, i(13391)),	-- The Postmaster's Treads
-								dr(21, i(13389)),	-- The Postmaster's Trousers
 								dr(19, i(13388)),	-- The Postmaster's Tunic
+								dr(21, i(13389)),	-- The Postmaster's Trousers
+								dr(13, i(13391)),	-- The Postmaster's Treads
+								dr(13, i(13392)),	-- The Postmaster's Seal
 							},
-							["description"] = "Click 3 mailboxes in the instance to get Postmaster Malown to spawn",
+							["description"] = "Click any 3 mailboxes in the instance to get Postmaster Malown to spawn.",
 						}),
 						cr(10808, e(445, { 	-- Timmy the Cruel
-							i(13401),	-- The Cruel Hand of Timmy
-							i(13400),	-- Vambraces of the Sadist
+							i( 13401),	-- The Cruel Hand of Timmy
+							i( 13400),	-- Vambraces of the Sadist
 							i(151403),	-- Fetid Stranglers
-							i(13403),	-- Grimgore Noose
-							i(13402),	-- Timmy's Galoshes
+							i( 13403),	-- Grimgore Noose
+							i( 13402),	-- Timmy's Galoshes
 							nld({	-- Legacy
 								i(16724),	-- Lightforge Gauntlets
 							}),
 						})),
 						cr(10997, e(446, { 	-- Willey Hopebreaker
-							--i(22406),	-- Redemption (Journal says only form The Unforgiven)
+							--i(22406),	-- Redemption (Journal says only from The Unforgiven)
 							i(22404),	-- Willey's Back Scratcher
 							i(13380),	-- Willey's Portable Howitzer
 							i(22407),	-- Helm of the New Moon
 							i(22405),	-- Mantle of the Scarlet Crusade
 							i(18721),	-- Barrage Girdle
 							i(13381),	-- Master Cannoneer Boots
-							i(12839, {	-- Plans: Heartseeker
-								i(12783),	-- Heartseeker
-							}),
+							i(13382),	-- Cannonball Runner
+							i(12839),	-- Plans: Heartseeker
 						})),
 						cr(10811, e(448, { 	-- Instructor Galford
 							i(13385),	-- Tome of Knowledge
@@ -132,9 +133,7 @@ _.Instances =
 							i(18720),	-- Shroud of the Nathrezim
 							i(13358),	-- Wyrmtongue Shoulders
 							i(13369),	-- Fire Striders
-							i(14512, {	-- Pattern: Truefaith Vestments
-								i(14154),	-- Truefaith Vestments
-							}),
+							i(14512),	-- Pattern: Truefaith Vestments
 						})),
 						n(-40, {	-- Legacy
 							["groups"] = {
@@ -204,7 +203,7 @@ _.Instances =
 							["u"] = 12,
 						}),
 					}),
-					q(35574, { -- Side Entrance (Dead)
+					q(35574, {	-- Side Entrance (Dead)
 						n(-17, {	-- Quests
 							q(27185, {	-- Cutting the Competition
 								["g"] = {
@@ -250,7 +249,7 @@ _.Instances =
 							i( 18745),	-- Sacred Cloth Leggings
 							i( 18742),	-- Stratholme Militia Shoulderguard
 							i(142337),	-- Plans: Blight
-							n(10398, {	-- Thuzadin Shadowcaster
+							n( 10398, {	-- Thuzadin Shadowcaster
 								dr(5.0, i(16248)),	-- Formula: Enchant Weapon - Unholy
 							}),
 						}),
@@ -265,6 +264,7 @@ _.Instances =
 						cr(10436, e(451, { 	-- Baroness Anastari
 							i(13534),	-- Banshee Finger
 							i(18729),	-- Screeching Bow
+							i(18728),	-- Anastari Heirloom
 							i(13538),	-- Windshrieker Pauldrons
 							i(13535),	-- Coldtouch Phantom Wraps
 							i(13537),	-- Chillhide Bracers
@@ -290,9 +290,7 @@ _.Instances =
 							i(13526),	-- Flamescarred Girdle
 							i(13527),	-- Lavawalker Greaves
 							i(18735),	-- Maleki's Footwraps
-							i(12833, {	-- Plans: Hammer of the Titans
-								i(12796),	-- Hammer of the Titans
-							}),
+							i(12833),	-- Plans: Hammer of the Titans
 						})),
 						cr(10435, e(454, { 	-- Magistrate Barthilas
 							i(18725),	-- Peacemaker
@@ -304,13 +302,16 @@ _.Instances =
 						cr(10439, e(455, { 	-- Ramstein the Gorger
 							i(13372),	-- Slavedriver's Cane
 							i(13375),	-- Crest of Retribution
+							i(18723),	-- Animated Chain Necklace
 							i(13374),	-- Soulstealer Mantle
+							i(13373),	-- Band of Flesh
+							i(13515),	-- Ramstein's Lightning Bolts
 							nld({ 	-- Legacy
 								i(16737),	-- Gauntlets of Valor
 							}),
 						})),
 						cr(45412, e(456, { 	-- Lord Aurius Rivendare
-							i(13335),	-- Deathcharger's Reins (Mount)
+							i(13335),	-- Deathcharger's Reins (MOUNT!)
 							i(13505),	-- Runeblade of Baron Rivendare
 							i(13368),	-- Bonescraper
 							i(13349),	-- Scepter of the Unholy
@@ -323,6 +324,7 @@ _.Instances =
 							i(22409),	-- Tunic of the Crescent Moon
 							i(13344),	-- Dracorian Gauntlets
 							i(22410),	-- Gauntlets of Deftness
+							i(13345),	-- Seal of Rivendare
 						})),
 						n(-40, {	-- Legacy
 							["groups"] = {

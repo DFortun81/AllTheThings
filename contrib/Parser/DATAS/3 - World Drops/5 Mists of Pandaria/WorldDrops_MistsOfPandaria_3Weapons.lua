@@ -230,8 +230,6 @@ _.WorldDrops =
 				}),
 			}),	
 		},
-		["Lvl"] = 86,
-		["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
 		["tierID"] = 5
 	},
 };

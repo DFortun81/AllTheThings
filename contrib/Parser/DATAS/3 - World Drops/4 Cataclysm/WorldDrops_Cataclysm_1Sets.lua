@@ -296,8 +296,6 @@ _.WorldDrops =
 				i(55697),	-- Yojamba Waistband
 			}),	
 		},
-		["Lvl"] = 77,
-		["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
 		["tierID"] = 4
 	},
 };

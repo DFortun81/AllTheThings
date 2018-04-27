@@ -14,10 +14,10 @@ _.Instances =
 								n(23682, { -- Headless Horseman
 									["groups"] = {
 										i(149574, { -- Loot-Stuffed Pumpkin [Rare Quality]
-											i(33292), 	-- Hallowed Helm
+											i( 33292), 	-- Hallowed Helm
 											i(117356), 	-- The Horseman's Sinister Slicer (i600)
 											i(117355), 	-- The Horseman's Horrific Hood (i600)
-											i(33154), 	-- Sinister Squashling
+											i( 33154), 	-- Sinister Squashling
 											nld({    -- Legacy
 												i(38175), 	-- The Horseman's Blade (i110)
 												i(49128), 	-- The Horseman's Baleful Blade (i200)
@@ -30,12 +30,12 @@ _.Instances =
 											}),
 										}),
 										i(117392, { -- Loot-Stuffed Pumpkin [Epic Quality]
-											i(33292), 	-- Hallowed Helm
-											i(33808), 	-- The Horseman's Helm (i110)
+											i( 33292), 	-- Hallowed Helm
+											i( 33808), 	-- The Horseman's Helm (i110)
 											i(117355), 	-- The Horseman's Horrific Hood (i600)
 											i(117356), 	-- The Horseman's Sinister Slicer (i600)
-											i(33154), 	-- Sinister Squashling
-											i(37012), 	-- The Horseman's Reins
+											i( 33154), 	-- Sinister Squashling
+											i( 37012), 	-- The Horseman's Reins
 											nld({    -- Legacy
 												i(38175), 	-- The Horseman's Blade (i110)
 												i(49128), 	-- The Horseman's Baleful Blade (i200)
@@ -100,12 +100,14 @@ _.Instances =
 							i(88288),	-- Soulrender Greatcloak
 							i(88287),	-- Bracers of the Fallen Crusader
 							i(88286),	-- Legguards of the Crimson Magus
+							i(88285),	-- Signet of the Hidden Door
 						})),
 						cr(59223, e(671, {	-- Brother Korloff
 							i(88289),	-- Firestorm Greatstaff
 							i(88292),	-- Helm of Rising Flame
 							i(88290),	-- Scorched Earth Cloak
 							i(88291),	-- Korloff's Raiment
+							i(88293),	-- Firefinger Ring
 						})),
 						cr( 3977, e(674, {	-- High Inquisitor Whitemane
 							i( 88301),	-- Greatstaff of Righteousness
@@ -117,6 +119,8 @@ _.Instances =
 							i( 88298),	-- Leggings of Hallowed Fire
 							i( 88295),	-- Dashing Strike Treads
 							i(132549),	-- Deft Strike Treads
+							i( 88300),	-- Triune Signet
+							i( 88294),	-- Flashing Steel Talisman
 						})),
 						n(-40, {	-- Legacy
 							["groups"] = {

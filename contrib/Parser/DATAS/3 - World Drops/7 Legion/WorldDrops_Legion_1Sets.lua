@@ -168,8 +168,6 @@ _.WorldDrops =
 				i(121275),	-- Moonfall Wristwraps
 			}),
 		},
-		["Lvl"] = 98,
-		["icon"] = "Interface\\Icons\\achievements_zone_brokenshore",
 		["tierID"] = 7
 	}
 };

@@ -626,7 +626,6 @@ _.WorldDrops =
 				}),
 			}),	
 		},
-		["icon"] = "Interface\\Icons\\expansionicon_classic",
 		["tierID"] = 1
 	},	
 };

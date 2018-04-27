@@ -75,8 +75,6 @@ _.WorldDrops =
 				}),
 			}),
 		},
-		["Lvl"] = 98,
-		["icon"] = "Interface\\Icons\\achievements_zone_brokenshore",
 		["tierID"] = 7
 	}
 };

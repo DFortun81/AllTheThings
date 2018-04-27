@@ -452,8 +452,6 @@ _.WorldDrops =
 				i(25029),	-- Warlord's Iron-Vambraces
 			}),
 		},
-		["Lvl"] = 57,
-		["icon"] = "Interface\\Icons\\expansionicon_burningcrusade",
 		["tierID"] = 2
 	},
 };
