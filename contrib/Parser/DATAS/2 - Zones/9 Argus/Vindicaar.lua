@@ -1855,8 +1855,8 @@ _.Zones =
 				}),
 			},
 			["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
-			["modelScale"] = 5,
 			["maps"] = { 1171, 1135, 1170 },
+			["isRaid"] = true,
 		}),
 	}),
 };
