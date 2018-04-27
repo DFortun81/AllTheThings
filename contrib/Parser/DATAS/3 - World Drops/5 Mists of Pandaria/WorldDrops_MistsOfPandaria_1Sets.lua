@@ -267,8 +267,6 @@ _.WorldDrops =
 				i(82248),	-- Yak Vest
 			}),	
 		},
-		["Lvl"] = 86,
-		["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
 		["tierID"] = 5
 	},
 };

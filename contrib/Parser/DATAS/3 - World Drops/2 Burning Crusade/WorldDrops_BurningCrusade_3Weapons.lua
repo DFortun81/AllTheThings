@@ -347,8 +347,6 @@ _.WorldDrops =
 				}),
 			}),	
 		},
-		["Lvl"] = 57,
-		["icon"] = "Interface\\Icons\\expansionicon_burningcrusade",
 		["tierID"] = 2
 	},
 };

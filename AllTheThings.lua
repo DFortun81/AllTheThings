@@ -3788,21 +3788,56 @@ app.CreateSpecies = function(id, t)
 end
 
 -- Tier Lib
-app.BaseTier = {
-	__index = function(t, key)
-		if key == "key" then
-			return "tierID";
-		elseif key == "text" then
-			return EJ_GetTierInfo(t.tierID);
-		else
-			-- Something that isn't dynamic.
-			return table[key];
+(function()
+	local tierIcons = {
+		"Interface\\Icons\\expansionicon_classic", 					-- Classic
+		"Interface\\Icons\\expansionicon_burningcrusade",			-- Burning Crusade
+		"Interface\\Icons\\expansionicon_wrathofthelichking",		-- Wrath
+		"Interface\\Icons\\expansionicon_cataclysm",				-- Cata
+		"Interface\\Icons\\expansionicon_mistsofpandaria",			-- Mists
+		"Interface\\Icons\\Achievement_boss_hellfire_archimonde",	-- WoD
+		"Interface\\Icons\\achievements_zone_brokenshore"			-- Legion
+	};
+	local tierLevel = {
+		1, 		-- Classic
+		57,		-- Burning Crusade
+		67,		-- Wrath
+		77,		-- Cata
+		86,		-- Mists
+		90,		-- WoD
+		98		-- Legion
+	};
+	local tierDescription = {
+		"|cff66ccffFour years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.|r", 					-- Classic
+		"|cff66ccffThe Burning Crusade is the first expansion. Its main features include an increase of the level cap up to 70, the introduction of the blood elves & the draenei as playable races, & the addition of the world of Outland, along with many new zones, dungeons, items, quests, & monsters.|r",			-- Burning Crusade
+		"|cff66ccffWrath of the Lich King is the second expansion. The majority of the expansion content takes place in Northrend & centers around the plans of the Lich King. Content highlights include the increase of the level cap from 70 to 80, the introduction of the death knight Hero class, & new PvP/World PvP content.|r",		-- Wrath
+		"|cff66ccffCataclysm is the third expansion. Set primarily in a dramatically reforged Kalimdor & Eastern Kingdoms on the world of Azeroth, the expansion follows the return of Deathwing, who causes a new Sundering as he makes his cataclysmic re-entrance into the world from Deepholm. Cataclysm returns players to the two continents of Azeroth for most of their campaigning, opening new zones such as Mount Hyjal, the sunken world of Vashj'ir, Deepholm, Uldum and the Twilight Highlands. It includes two new playable races, the worgen & the goblins. The expansion increases level cap to 85, adds the ability to fly in Kalimdor & Eastern Kingdoms, intorduces Archaeology & reforging, & restructures the world itself.|r",				-- Cata
+		"|cff66ccffMists of Pandaria is the fourth expansion pack. The expansion refocuses primarily on the war between the Alliance & Horde, in the wake of the accidental rediscovery of Pandaria. Adventurers rediscover the ancient pandaren people, whose wisdom will help guide them to new destinies; the Pandaren Empire's ancient enemy, the mantid; and their legendary oppressors, the enigmatic mogu. The land changes over time & the conflict between Varian Wrynn & Garrosh Hellscream escalates. As civil war wracks the Horde, the Alliance & forces in the Horde opposed to Hellscream's violent uprising join forces to take the battle directly to Hellscream & his Sha-touched allies in Orgrimmar.|r",			-- Mists
+		"|cff66ccffWarlords of Draenor is the fifth expansion. Across Draenor's savage jungles & battle-scarred plains, Azeroth's heroes will engage in a mythic conflict involving mystical draenei champions & mighty orc clans, & cross axes with the likes of Grommash Hellscream, Blackhand, & Ner’zhul at the height of their primal power. Players will need to scour this unwelcoming land in search of allies to help build a desperate defense against the old Horde’s formidable engine of conquest, or else watch their own world’s bloody, war-torn history repeat itself.|r",	-- WoD
+		"|cff66ccffLegion is the sixth expansion. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.|r"			-- Legion
+	};
+	app.BaseTier = {
+		__index = function(t, key)
+			if key == "key" then
+				return "tierID";
+			elseif key == "text" then
+				return EJ_GetTierInfo(t.tierID);
+			elseif key == "icon" then
+				return tierIcons[t.tierID];
+			elseif key == "description" then
+				return tierDescription[t.tierID];
+			elseif key == "Lvl" then
+				return tierLevel[t.tierID];
+			else
+				-- Something that isn't dynamic.
+				return table[key];
+			end
 		end
+	};
+	app.CreateTier = function(id, t)
+		return createInstance(constructor(id, t, "tierID"), app.BaseTier);
 	end
-};
-app.CreateTier = function(id, t)
-	return createInstance(constructor(id, t, "tierID"), app.BaseTier);
-end
+end)();
 
 -- Title Lib
 app.BaseTitle = {
@@ -7762,33 +7797,21 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 						end
 					end
 					
-					--[[
-					for spellID,groups in pairs(skillCache) do
-						spellID = tonumber(spellID);
-						if not GetTempDataSubMember("CollectedSpells", spellID) then
-							if C_TradeSkillUI.GetRecipeInfo(spellID, spellRecipeInfo) and spellRecipeInfo.learned then
-								SetTempDataSubMember("CollectedSpells", spellID, 1);
-								if not GetDataSubMember("CollectedSpells", spellID) then
-									SetDataSubMember("CollectedSpells", spellID, 1);
-									learned = learned + 1;
-								end
-							end
-						end
-					end
-					]]--
-					
 					-- Open the Tradeskill list for this Profession
 					local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
-					for i,group in ipairs(app.Categories.Professions) do
-						if group.requireSkill == tradeSkillID then
-							popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
-							BuildGroups(popout.data, popout.data.g);
-							UpdateGroups(popout.data, popout.data.g, 1);
-							if not popout.data.expanded then
-								popout.data.expanded = true;
-								ExpandGroupsRecursively(popout.data, true);
+					if popout.tradeSkillID ~= tradeSkillID then
+						popout.tradeSkillID = tradeSkillID;
+						for i,group in ipairs(app.Categories.Professions) do
+							if group.requireSkill == tradeSkillID then
+								popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
+								BuildGroups(popout.data, popout.data.g);
+								UpdateGroups(popout.data, popout.data.g, 1);
+								if not popout.data.expanded then
+									popout.data.expanded = true;
+									ExpandGroupsRecursively(popout.data, true);
+								end
+								popout:SetVisible(true);
 							end
-							popout:SetVisible(true);
 						end
 					end
 				

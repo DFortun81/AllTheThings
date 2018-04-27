@@ -194,8 +194,6 @@ _.WorldDrops =
 				}),
 			}),
 		},
-		["Lvl"] = 77,
-		["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
 		["tierID"] = 4
 	},
 };	

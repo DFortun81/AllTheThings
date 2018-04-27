@@ -5,7 +5,7 @@ _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
 		["groups"] = {
-			n(-520, { 	-- Expansion Prelauch Events
+			n(-520, { 	-- Expansion Prelaunch Events
 				["groups"] = {
 					n(-521, { -- Burning Crusade
 						["groups"] = {

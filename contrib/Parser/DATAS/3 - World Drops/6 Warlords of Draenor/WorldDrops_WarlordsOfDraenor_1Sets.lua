@@ -360,8 +360,6 @@ _.WorldDrops =
 				i(106752),	-- Packrunner Vest
 			}),
 		},
-		["Lvl"] = 90,
-		["icon"] = "Interface\\Icons\\Achievement_boss_hellfire_archimonde",
 		["tierID"] = 6
 	},
 };

@@ -602,7 +602,6 @@ _.WorldDrops =
 				i(6241),	-- Woolen Boots
 			}),
 		},
-		["icon"] = "Interface\\Icons\\expansionicon_classic",
 		["tierID"] = 1
 	},	
 };
