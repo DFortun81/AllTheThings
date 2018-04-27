@@ -1628,10 +1628,10 @@ local function OpenMiniList(field, id, label)
 		-- Simplify the returned groups
 		if #results < 2 then
 			-- Only one object matched.
-			results = setmetatable({}, { __index = results[1] });
+			results = setmetatable({ back = 1 }, { __index = results[1] });
 		else
 			-- A couple of objects matched, let's make a header.
-			local header = { g = {}, baseIndent = -1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, back = 1, total = 0, progress = 0 };
+			local header = { g = {}, baseIndent = -1, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, back = 1, total = 0, progress = 0 };
 			for i, group in ipairs(results) do
 				header.progress = header.progress + (group.progress or 0);
 				header.total = header.total + (group.total or 0);
@@ -4329,23 +4329,18 @@ local function BuildGroups(parent, g)
 end
 app.BuildGroups = BuildGroups
 
-local function ProcessGroup(data, parent, indent, back)
-	if parent.visible then
-		if parent.mapID then
-			if parent.mapID == GetTempDataMember("MapID") or parent.maps and contains(parent.maps, GetTempDataMember("MapID")) then
-				parent.back = 1;
-			else
-				parent.back = back or parent.back;
-			end
-		else 
-			parent.back = back or parent.back;
+local function ProcessGroup(data, object, indent, back)
+	if object.visible then
+		if back < 1 and (object.mapID and object.mapID == GetTempDataMember("MapID")) or (object.maps and contains(object.maps, GetTempDataMember("MapID"))) then
+			back = 1;
 		end
-		parent.indent = indent;
-		tinsert(data, parent);
-		if parent.g and parent.expanded then
+		object.back = back;
+		object.indent = indent;
+		tinsert(data, object);
+		if object.g and object.expanded then
 			indent = indent + 1;
-			back = parent.back * 0.5;
-			for j, group in ipairs(parent.g) do
+			back = back * 0.5;
+			for j, group in ipairs(object.g) do
 				ProcessGroup(data, group, indent, back);
 			end
 		end
@@ -5824,22 +5819,22 @@ local function UpdateWindow(self, force)
 				end
 			end
 			if count > 1 then
-				tinsert(self.rowData, 1, self.data);
+				--tinsert(self.rowData, 1, self.data);
 				for i, data in ipairs(self.data.g) do
-					ProcessGroup(self.rowData, data, 0, 0);
+					ProcessGroup(self.rowData, data, 0, self.data.back or 0);
 				end
 			else
 				for i, data in ipairs(self.data.g) do
 					if data.visible then
 						local oldExpanded = data.expanded;
 						data.expanded = true;
-						ProcessGroup(self.rowData, data, 0, 0);
+						ProcessGroup(self.rowData, data, 0, self.data.back or 0);
 						data.expanded = oldExpanded;
 					end
 				end
 			end
 		else
-			ProcessGroup(self.rowData, self.data, 0, 0);
+			ProcessGroup(self.rowData, self.data, 0, self.data.back or 0);
 		end
 		
 		-- Does this user have everything?
