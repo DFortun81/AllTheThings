@@ -527,7 +527,6 @@ _.Zones =
 						["races"] = {9},
 					})),
 					desc(qh(47835), "This quest will be automatically offered upon completion of the Assault on Broken Shore scenario and returning to Dalaran.  You may also choose the option to skip the scenario when speaking to Khadgar."),	-- The Hand of Fate (QG in Broken Isles Dalaran)
-					qg(96686, qh(39801)),	-- The Splintered Fleet
 					qg(3140, qh(25169)),	-- The War of Northwatch Aggression
 					qg(96683, qh(38307)),	-- The Warchief Beckons (QG also in Dalaran)
 					qg(39380, qh(25205)),	-- The Wolf and The Kodo
