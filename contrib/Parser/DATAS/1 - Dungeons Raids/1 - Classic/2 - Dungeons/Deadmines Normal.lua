@@ -84,7 +84,7 @@ _.Instances =
 							["sourceQuests"] = { 27848 },	-- Good Intentions...Poor Execution
 						}),
 					}),
-					n(0, { -- Zone Drop
+					n(  0, {	-- Zone Drop
 						n(48417, { -- Defias Blood Wizard
 							dr(0.01, i(8492)), -- Parrot Cage (Green Wing Macaw)
 							dr(0.01, i(1951)), -- Blackwater Cutlass
@@ -108,22 +108,6 @@ _.Instances =
 						}),
 					}),
 					d(1, {		-- Normal
-						nlq({ 	-- Legacy Quests
-							qa(214, { 	-- Red Silk Bandanas
-								i(6094),	-- Piercing Axe
-								i(2089), 	-- Scrimshaw Dagger
-								i(2074), 	-- Solid Shortblade
-							}),
-							qa(2040, { 	-- Underground Assault
-								i(7606),	-- Polar Gauntlets
-								i(7607),	-- Sable Wand
-							}),
-							qa(166, { 	-- The Defias Brotherhood
-								i(6087),	-- Chausses of Westfall 
-								i(2042),	-- Staff of Westfall 
-								i(2041),	-- Tunic of Westfall 
-							}),
-						}),
 						cr(47162, e(89, {	-- Glubtok
 							i(2169),		-- Buzzer Blade
 							i(5444),		-- Miner's Cape
@@ -162,13 +146,51 @@ _.Instances =
 							i(5193),		-- Cape of the Brotherhood
 							i(5202),		-- Corsair's Overshirt
 						})),
-						nld({ 	-- Legacy
+						n(-40, {	-- Legacy
 							["groups"] = {
+								n(-17, {	-- Quests (Legacy)
+									qa(214, { 	-- Red Silk Bandanas
+										un(34, i(6094)),	-- Piercing Axe
+										un(34, i(2089)), 	-- Scrimshaw Dagger
+										un(34, i(2074)), 	-- Solid Shortblade
+									}),
+									qa(2040, { 	-- Underground Assault
+										un(34, i(7606)),	-- Polar Gauntlets
+										un(34, i(7607)),	-- Sable Wand
+									}),
+									qa(166, { 	-- The Defias Brotherhood
+										un(34, i(6087)),	-- Chausses of Westfall 
+										un(34, i(2042)),	-- Staff of Westfall 
+										un(34, i(2041)),	-- Tunic of Westfall 
+									}),
+								}),
+								--n(-16, {	-- Rares (Legacy)
+								--}),
+								n(  0, {	-- Zone Drops
+									n(4416, { 	-- Defias Strip Miner
+										["groups"] = {
+											i(10402),	-- Blackend Defias Boots
+										},	
+										["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",		
+									}),
+									n(1731, { 	-- Goblin Craftsman 
+										i(1944), 	-- Metalworking Gloves
+									}),
+									n( 622, { 	-- Goblin Engineer 
+										i(1936), 	-- Goblin Screwdriver
+									}),
+									n(3947, { 	-- Goblin Shipbuilder 
+										i(1943), 	-- Goblin Mail Leggings
+									}),
+									n( 641, { 	-- Goblin Woodcarver 
+										i(1945), 	-- Woodworking Gloves
+									}),
+								}),
 								n(643, { 	-- Sneed
-									i(5194),	-- Taskmaster Axe
+									un(2, i(5194)),	-- Taskmaster Axe
 								}),
 								n(646, { 	-- Mr. Smite
-									i(7230),	-- Smite's Mighty Hammer
+									un(2, i(7230)),	-- Smite's Mighty Hammer
 								}),
 								n(647, { 	-- Captain Greenskin
 									["groups"] = {
@@ -182,29 +204,9 @@ _.Instances =
 									},	
 									["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",	
 								}),
-								n(0, { 		-- Zone Drops
-									n(4416, { 	-- Defias Strip Miner
-										["groups"] = {
-											i(10402),	-- Blackend Defias Boots
-										},	
-										["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",		
-									}),
-									n(1731, { 	-- Goblin Craftsman 
-										i(1944), 	-- Metalworking Gloves
-									}),
-									n(622, { 	-- Goblin Engineer 
-										i(1936), 	-- Goblin Screwdriver
-									}),
-									n(3947, { 	-- Goblin Shipbuilder 
-										i(1943), 	-- Goblin Mail Leggings
-									}),
-									n(641, { 	-- Goblin Woodcarver 
-										i(1945), 	-- Woodworking Gloves
-									}),
-								}),
 							},
-							
-						}),						
+							["u"] = 12,
+						}),
 					}),
 				},
 				["Lvl"] = 10,
