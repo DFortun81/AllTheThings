@@ -35,7 +35,7 @@ _.Instances =
 										un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
 										un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
 										un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
-										un(18, dr(0.33, i(50250))),	-- Big Love Rocket
+										un(18, dr(.33, i(50250))),	-- Big Love Rocket
 										un(18, dr(1.0, i(50471))),	-- The Heartbreaker
 									},
 									["Lvl"] = 98,
@@ -53,7 +53,7 @@ _.Instances =
 						},
 					}),
 					d(1, {		-- Normal
-						n(-17, { -- Quests 
+						n(-17, {	-- Quests 
 							qa(27917, { 	-- Sniffing Them Out
 								["groups"] = {
 								},
@@ -73,11 +73,11 @@ _.Instances =
 							}),
 							qa(27968, { 	-- Fury of the Pack
 								["groups"] = {
-									i(65984), 	-- Breastplate of the Terrible Price
-									i(66002), 	-- Packleader's Pauldrons
-									i(65960), 	-- Shadowfang Shoulderpads
-									i(65936), 	-- Sandals of Sacrifice
-									i(65910), 	-- Godfrey's Britches
+									i( 65984), 	-- Breastplate of the Terrible Price
+									i( 66002), 	-- Packleader's Pauldrons
+									i( 65960), 	-- Shadowfang Shoulderpads
+									i( 65936), 	-- Sandals of Sacrifice
+									i( 65910), 	-- Godfrey's Britches
 									i(131684), 	-- Packleader's Chain Spaulders
 									i(131685), 	-- Boots of Painful Cost
 								},
@@ -103,11 +103,11 @@ _.Instances =
 							}),
 							qh(27998, { 	-- Sweet, Merciless Revenge
 								["groups"] = {
-									i(66038), 	-- Breastplate of the Terrible Price
-									i(66044), 	-- Deathstalker Pauldrons
-									i(66029), 	-- Shadowfanger Shoulderpads
-									i(66020), 	-- Sandals of Sacrifice
-									i(66011), 	-- Godfrey's Britches
+									i( 66038), 	-- Breastplate of the Terrible Price
+									i( 66044), 	-- Deathstalker Pauldrons
+									i( 66029), 	-- Shadowfanger Shoulderpads
+									i( 66020), 	-- Sandals of Sacrifice
+									i( 66011), 	-- Godfrey's Britches
 									i(131686),	-- Packleader's Chain Spaulders
 									i(131687), 	-- Boots of Painful Cost
 								},
@@ -115,7 +115,7 @@ _.Instances =
 								["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
 							}),
 						}),
-						n(0, {				-- Zone Drop
+						n(  0, {	-- Zone Drop
 							n(47134, {	-- Corpse Eater	
 								dr(0.02, i(3194)),	-- Black Malice
 								dr(0.02, i(1483)),	-- Face Smasher
@@ -272,49 +272,50 @@ _.Instances =
 								dr(0.02, i(1484)),	-- Witching Stave
 							}),		
 						}),
-						cr(46962, e(96, { 	-- Baron Ashbury
+						cr(46962, e( 96, { 	-- Baron Ashbury
 							i(6323), 	-- Baron's Scepter
 							i(6314), 	-- Wolfmaster Cape
 							i(6324), 	-- Robes of Arugal
 						})),
-						n(3864, {  			-- Fel Steed
+						n(  3864, {			-- Fel Steed
 							dr(21, i(6341)), 	-- Eerie Stable Lantern
 						}),
-						cr(3887, e(97, { 	-- Baron Silverlaine
-							i(5254),	-- Rugged Spaulders
+						cr( 3887, e( 97, { 	-- Baron Silverlaine
+							i(  5254),	-- Rugged Spaulders
 							i(132568),	-- Shadowfang Pauldrons
-							i(5943),	-- Rift Bracers
+							i(  5943),	-- Rift Bracers
 							i(132567),	-- Blindwatcher's Chain
-							i(6319),	-- Girdle of the Blindwatcher
+							i(  6319),	-- Girdle of the Blindwatcher
+							i(  6321),	-- Silverlaine's Family Seal
 						})),
-						cr(4278, e(98, { 	-- Commander Springvale
-							i(3191),	-- Arced War Axe
-							i(6320),	-- Commander's Crest
+						cr( 4278, e( 98, { 	-- Commander Springvale
+							i(  3191),	-- Arced War Axe
+							i(  6320),	-- Commander's Crest
 							i(151069),	-- Breastplate of the Stilled Heart
 							i(151070),	-- Gloves of the Greymane Wall
 							i(151067),	-- Boots of Lingering Sorrow
 							i(151068),	-- Boots of the Predator
 						})),
-						n(3872, { 			-- Deathsworn Captain
+						n(  3872, { 		-- Deathsworn Captain
 							["groups"] = {
 								dr(45, i(6641)),	-- Haunting Blade
 								dr(44, i(6642)),	-- Phantom Armor
 							},
 							["description"] = "This is a rare that is not always present.",
 						}),
-						cr(46963, e(99, { 	-- Lord Walden
-							i(1292),	-- Butcher's Cleaver
-							i(6341), 	-- Eerie Stable Lantern
-							i(6642),	-- Phantom Armor
-							i(3230),	-- Black Wolf Bracers
+						cr(46963, e( 99, { 	-- Lord Walden
+							i(  1292),	-- Butcher's Cleaver
+							i(  6341), 	-- Eerie Stable Lantern
+							i(  6642),	-- Phantom Armor
+							i(  3230),	-- Black Wolf Bracers
 							i(132566),	-- Dark Lupine Wraps
 						})),
 						cr(46964, e(100, { 	-- Lord Godfrey
-							i(6641),	-- Haunting Blade
-							i(6318),	-- Odo's Ley Staff
-							i(6220),	-- Meteor Shard
+							i(  6641),	-- Haunting Blade
+							i(  6318),	-- Odo's Ley Staff
+							i(  6220),	-- Meteor Shard
 							i(151072),	-- Worgen Hunter's Helm
-							i(3748),	-- Feline Mantle
+							i(  3748),	-- Feline Mantle
 							i(151071),	-- Gloves of the Uplifted Cup
 							i(151073),	-- Greaves of the Misguided
 						})),
@@ -332,7 +333,7 @@ _.Instances =
 								qh(1014),	-- Arugal Must Die
 								q(1740, { -- The Orb of Soran'ruk
 									["groups"] = {
-										i(6898), -- Orb of Soran'ruk
+										i( 6898), -- Orb of Soran'ruk
 										i(15109), -- Staff of Soran'ruk
 									},
 									["classes"] = { 9 }

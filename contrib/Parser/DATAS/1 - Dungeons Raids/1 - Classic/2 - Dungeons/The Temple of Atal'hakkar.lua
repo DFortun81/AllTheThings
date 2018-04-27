@@ -4,7 +4,7 @@
 
 _.Instances = 
 {
-	{ -- Classic
+	{	-- Classic
 		["groups"] = {
 			inst(237, { 	-- The Temple of Atal'hakkar
 				["groups"] = {
@@ -25,7 +25,7 @@ _.Instances =
 								}),				
 							}),					
 						},						
-						["achievementID"] = 913, -- To Honor One's Elders						
+						["achievementID"] = 913,	-- To Honor One's Elders						
 					}),							
 					n(-17, {	-- Quests
 						q(27605, {	-- Eranikus
@@ -122,7 +122,7 @@ _.Instances =
 							dr(0.01, i(10623)),	-- Winter's Bite
 						}),
 						n(8319, { 	-- Nightmare Whelp
-							dr(1.5, i(78346)),  -- Pattern: Green Dragonscale Breastplate
+							dr(1.5, i(78346)), 	-- Pattern: Green Dragonscale Breastplate
 							dr(1.3, i(15733)),	-- Pattern: Green Dragonscale Leggings
 						}),						
 						n(5280, { 	-- Nightmare Wyrmkin 
@@ -167,6 +167,7 @@ _.Instances =
 							i(10796),	-- Drakestone
 							i(12464),	-- Bloodfire Talons
 							i(12466),	-- Dawnspire Cord
+							i(10795),	-- Drakeclaw Band
 						}),
 						n(5720, { 	-- Weaver
 							i(12463), 	-- Drakefang Butcher
@@ -175,6 +176,7 @@ _.Instances =
 							i(10796),	-- Drakestone
 							i(12464),	-- Bloodfire Talons
 							i(12466),	-- Dawnspire Cord
+							i(10795),	-- Drakeclaw Band
 						}),
 						n(5719, { 	-- Morphaz 
 							i(12463), 	-- Drakefang Butcher
@@ -183,6 +185,7 @@ _.Instances =
 							i(10796),	-- Drakestone
 							i(12464),	-- Bloodfire Talons
 							i(12466),	-- Dawnspire Cord
+							i(10795),	-- Drakeclaw Band
 						}),
 						n(5722, { 	-- Hazzas
 							i(12463), 	-- Drakefang Butcher
@@ -191,15 +194,17 @@ _.Instances =
 							i(10796),	-- Drakestone
 							i(12464),	-- Bloodfire Talons
 							i(12466),	-- Dawnspire Cord
+							i(10795),	-- Drakeclaw Band
 						}),
 					}),
 					cr(5709, e(463, { 	-- Shade of Erankikus
-						i(10828), -- Dire Nail
-						i(10847), -- Dragon's Call
-						i(10837), -- Tooth of Eranikus
-						i(10836), -- Rod of Corrosion
-						i(10835), -- Crest of Supremacy
-						i(10833), -- Horns of Eranikus
+						i(10828),	-- Dire Nail
+						i(10847),	-- Dragon's Call
+						i(10837),	-- Tooth of Eranikus
+						i(10836),	-- Rod of Corrosion
+						i(10835),	-- Crest of Supremacy
+						i(10833),	-- Horns of Eranikus
+						i(10829),	-- The Dragon's Eye
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {

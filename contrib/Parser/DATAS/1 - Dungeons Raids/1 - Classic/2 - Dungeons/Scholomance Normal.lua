@@ -34,6 +34,7 @@ _.Instances =
 						cr(58633, e(659, { 	-- Instructor Chillheart
 							n(58664, {	-- Instructor Chillheart's Phylactery
 								i(88339),	-- Gravetouch Greatsword
+								i(88335),	-- Anarchist's Pendant
 								i(88338),	-- Breastplate of Wracking Souls
 								i(88337),	-- Shadow Puppet Bracers
 								i(88336),	-- Icewrath Belt
@@ -56,6 +57,7 @@ _.Instances =
 						})),
 						cr(58722, e(666, { 	-- Lilian Voss
 							i(88351),	-- Soulburner Crown
+							i(88354),	-- Necklace of the Dark Blaze
 							i(88352),	-- Shivbreaker Vest
 							i(88353),	-- Dark Blaze Gauntlets
 							i(88350),	-- Leggings of Unleashed Anguish
@@ -65,6 +67,9 @@ _.Instances =
 							i(88361),	-- Gloves of Explosive Pain
 							i(88356),	-- Tombstone Gauntlets
 							i(88359),	-- Incineration Belt
+							i(88358),	-- Lessons of the Darkmaster
+							i(88360),	-- Price of Progress
+							i(88355),	-- Searing Words
 						})),
 					}),
 					n(-40, { -- Legacy
