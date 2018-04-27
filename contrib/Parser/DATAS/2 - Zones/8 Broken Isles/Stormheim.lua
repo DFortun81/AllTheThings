@@ -699,15 +699,22 @@ _.Zones =
 							qh( 39864),	-- Stormheim
 							qh( 38307),	-- The Warchief Beckons
 							qh( 39698),	-- Making the Rounds
-							qh(39801,  {  -- The Splintered Fleet
-								i(139916),
-								i(139948),
-								i(139974),
-								i(140012),
-								i(139925),
-								i(139956),
-								i(139987),
-								i(140018),
+							h({
+								["questID"] = 39801,	-- The Splintered Fleet
+								["maps"] = {1027,4},	-- Map: The Cove of Nashal / Durotar
+								["Lvl"] = 98,			-- Requires Level 98
+								["qg"] = 96686,			-- Quest Giver: Lady Sylvanas Windrunner <Banshee Queen>
+								["sourceQuest"] = 38307,	-- Source Quest: The Warchief Beckons
+								["groups"] = {
+									i(139916),	-- Black Rose Amice
+									i(139925),	-- Black Rose Wristwraps
+									i(139974),	-- Dark Ranger Shoulderguards
+									i(139987),	-- Dark Ranger Wristguards
+									i(140012),	-- Deathstalker Shoulderplates
+									i(140018),	-- Deathstalker Vambraces
+									i(139948),	-- Dread-Rider Shoulders
+									i(139956),	-- Dread-Rider Cuffs
+								},
 							}),
 						}),
 						crit(2, { -- The Aftermath
