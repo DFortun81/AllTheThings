@@ -24,7 +24,7 @@ _.WorldEvents =
 							i(51967),	-- Enumerated Sandals
 							i(51974),	-- Enumerated Shoulderpads*
 							i(51968),	-- Enumerated Wrap*
-							i(51989),	-- Stalwart Bands
+							i(51989),	-- Stalwart Bands*
 							un(2, i(51985)),	-- Stalwart Belt
 							i(143582),	-- Stalwart Belt*
 							un(2, i(51987)),	-- Stalwart Grips
