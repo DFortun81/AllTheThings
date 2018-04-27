@@ -2646,6 +2646,7 @@ app.BaseCharacterClass = {
 		if key == "key" then
 			return "classID";
 		elseif key == "text" then
+			if t.mapID then return "|c" .. t.classColors.colorStr .. app.GetMapName(t.mapID) .. " (" .. t.name .. ")|r"; end
 			return "|c" .. t.classColors.colorStr .. t.name .. "|r";
 		elseif key == "icon" then
 			return "Interface\\Glues\\CharacterCreate\\UI-CharacterCreate-Classes";
@@ -5930,6 +5931,17 @@ function app:GetDataCache()
 			db.text = L("WORLD_DROPS");
 			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
 			db.g = app.Categories.WorldDrops;
+			table.insert(g, db);
+		end
+		
+		-- Class Halls
+		if app.Categories.ClassHalls then
+			db = {};
+			db.Lvl = 98;
+			db.expanded = false;
+			db.text = GetCategoryInfo(15275);
+			db.icon = "Interface\\Icons\\achievement_level_110";
+			db.g = app.Categories.ClassHalls;
 			table.insert(g, db);
 		end
 		
