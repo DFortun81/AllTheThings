@@ -451,6 +451,9 @@ spell = function(id, t)									-- Create a SPELL Object
 	return struct("spellID", id, t);
 end
 sp = spell;												-- Create a SPELL Object (alternative shortcut)
+tier = function(id, t)									-- Create a TIER Object
+	return struct("tierID", id, t);
+end
 title = function(id, t)									-- Create a TITLE Object
 	return struct("titleID", id, t);
 end

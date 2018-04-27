@@ -341,8 +341,6 @@ _.WorldDrops =
 				}),
 			}),	
 		},
-		["Lvl"] = 67,
-		["icon"] = "Interface\\Icons\\expansionicon_wrathofthelichking",
 		["tierID"] = 3
 	},
 };

@@ -1727,7 +1727,6 @@ _.WorldDrops =
 				i(14817),	-- Warstrike Shoulder Pads
 			}),
 		},
-		["icon"] = "Interface\\Icons\\expansionicon_classic",
 		["tierID"] = 1
 	},	
 };
