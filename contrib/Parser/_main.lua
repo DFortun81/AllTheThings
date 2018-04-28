@@ -381,6 +381,9 @@ end
 faction = function(id, t)								-- Create an FACTION Object
 	return struct("factionID", id, t);
 end
+filter = function(id, t)								-- Create an FILTER Object
+	return struct("f", id, t);
+end
 follower = function(id, t)								-- Create an FOLLOWER Object
 	return struct("followerID", id, t);
 end

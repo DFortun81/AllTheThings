@@ -54,7 +54,9 @@ _.Zones =
 --				}),
 				n(-2, {		-- Vendors
 					n(25032, {	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
-						i(34665),	-- Bombadier5's Blade
+						i(35500),	-- Formula: Enchant Chest - Dodge
+						i(34872),	-- Formula: Void Shatter
+						i(34665),	-- Bombadier's Blade
 						i(34666),	-- The Sunbreaker
 						i(34667),	-- Archmage's Guile
 						i(34670),	-- Seeker's Gavel

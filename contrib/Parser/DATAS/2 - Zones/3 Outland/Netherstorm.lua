@@ -1325,17 +1325,27 @@ _.Zones =
 					}),
 				}),	
 				n(-16, {	-- Rares	
-					n(18697, { -- Chief Engineer Lorthander
+					n(18697, { 	-- Chief Engineer Lorthander
 						i(31201),
 					}),
---					n(18698, { -- Ever-Core the Punisher -- Drops Ring
---					}), 
-					n(20932, { -- Nuramoc
+					n(23008, {	-- Ethereum Jailor
+						dr(1.6, i(22530)),	-- Formula: Enchant Bracer - Greater Dodge
+					}),
+					n(22822, {	-- Ethereum Nullifier
+						dr(2, i(22530)),	-- Formula: Enchant Bracer - Greater Dodge
+					}),
+					n(18698, { 	-- Ever-Core the Punisher
+						i(31203),	-- Arcane Loop
+					}),
+					n(20932, { 	-- Nuramoc
 						i(31210),
 						i(31212),
 						i(31211),
 						i(31209),
-					}), 
+					}),
+					n(20136, {	-- Sunfury Researcher
+						dr(2, i(22551)),	-- Formula: Enchant Weapon - Major Intellect
+					}),
 				}),
 				n( -2, {	-- Vendors
 					n(19540, { -- Asarnan <Enchanting Trainer>
@@ -1610,6 +1620,7 @@ _.Zones =
 						i(34995),	-- Brutal Gladiator's Chopper	
 					}),
 					n(19536, {	-- Dealer Jadyan <Exotic Weapons>
+						i(78348),	-- Formula: Enchant Weapon - Executioner
 						i(29371),	-- Nexus-Claw
 						i(29372),	-- Void-Talon
 						i(29377),	-- Ethereum Phase-Spear
@@ -2070,6 +2081,8 @@ _.Zones =
 						i(32821),	-- Veteran's Wyrmhide Bracers		
 					}),
 					n(20242, {	-- Karaaz <Consortium Quartermaster>
+						i(22552),	-- Formula: Enchant Weapon - Major Striking
+						i(28274),	-- Formula: Enchant Cloak - PvP Power
 						i(29115),	-- Consortium Blaster
 						i(29116),	-- Nomad's Leggings
 						i(29117),	-- Stormspire Vest

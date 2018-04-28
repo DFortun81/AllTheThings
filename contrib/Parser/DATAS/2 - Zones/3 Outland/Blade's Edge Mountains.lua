@@ -470,6 +470,15 @@ _.Zones =
 					}),
 				}),
 				n(-16, { 	-- Rares
+					n(22243, {	-- Bash'ir Arcanist
+						dr(0.7, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
+					}),
+					n(22242, {	-- Bash'ir Spell-Thief
+						dr(0.9, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
+					}),
+					n(19952, {	-- Bloodmaul Geomancer
+						dr(2, i(22534)),	-- Formula: Enchant Bracer - Spellpower
+					}),
 					n(20889, { 	-- Ethereum Prisoner (Group Energy Ball)
 						["groups"] = {	
 							n(22827, { 	-- Gorgolon the All-Seeing

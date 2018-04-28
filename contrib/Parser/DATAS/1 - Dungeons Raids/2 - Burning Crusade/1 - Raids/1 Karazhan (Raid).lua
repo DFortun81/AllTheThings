@@ -25,14 +25,11 @@ _.Instances =
 						}),
 					}),
 					n(0, { 		-- Zone Drop
-						n(-15, { -- Recipes
-							i(21903, { -- Pattern: Soulcloth Shoulders
-								i(21864), 
-							}),
-							i(21904, { -- Pattern: Soulcloth Vest
-								i(21865), 
-							}),
+						n(16472, {	-- Phantom Stagehand
+							dr(11, i(22545)),	-- Formula: Enchant Boots - Surefooted [From 1 Drop - Done]
 						}),
+						i(21903),	-- Pattern: Soulcloth Shoulders
+						i(21904),	-- Pattern: Soulcloth Vest
 						i(30642),	-- Drape of the Righteous
 						i(30668),	-- Grasp of the Dead
 						i(30673),	-- Inferno Waist Cord
@@ -88,6 +85,7 @@ _.Instances =
 					}),
 					e(1554, { 	-- Moroes
 						["groups"] = {
+							i(22559),	-- Formula: Enchant Weapon - Mongoose
 							i(138797),
 							i(28524),
 							i(28525),
@@ -239,6 +237,7 @@ _.Instances =
 					}),
 					e(1560, {	-- Terestian Illhoof
 						["groups"] = {
+							i(22561),	-- Formula: Enchant Weapon - Soulfrost
 							i(138799),
 							i(28658),
 							i(28657),
@@ -255,6 +254,7 @@ _.Instances =
 					}),
 					e(1559, {	-- Shade of Aran
 						["groups"] = {
+							i(22560),	-- Formula: Enchant Weapon - Sunfire
 							i(138798),
 							i(28673),
 							i(28728),

@@ -246,7 +246,8 @@ AllTheThings.Locales.enUS = {
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes
 	};
 	["FILTER_ID_ICONS"] = {
-
+		[27] = "Interface\\Icons\\inv_wand_02",								-- Wands
+		[102] = "Interface\\Icons\\INV_Misc_Toy_10",						-- Toy
 	},
 
 	-- These need to be localized manually.

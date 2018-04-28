@@ -819,6 +819,9 @@ _.Zones =
 						}),
 					}),
 					na(17657, {		-- Logistics Officer Ulrike <Honor Hold Quartermaster>
+						i(22531),	-- Formula: Enchant Bracer - Superior Healing
+						i(22547),	-- Formula: Enchant Chest - Exceptional Stats
+						i(33150),	-- Formula: Enchant Cloak - Subtlety
 						i(29166),	-- Hellforged Halberd
 						i(35464),	-- Dreadweave Robe
 						i(35465),	-- Evoker's Silk Amice
@@ -856,6 +859,9 @@ _.Zones =
 						}),
 					}),
 					nh(17585, {		-- Quartermaster Urgronn <Thrallmar Quartermaster>
+						i(24000),	-- Formula: Enchant Bracer - Superior Healing
+						i(24003),	-- Formula: Enchant Chest - Exceptional Stats
+						i(33151),	-- Formula: Enchant Cloak - Subtlety
 						i(29167),	-- Blackened Spear
 						i(35332),	-- Dreadweave Robe
 						i(35343),	-- Evoker's Silk Amice

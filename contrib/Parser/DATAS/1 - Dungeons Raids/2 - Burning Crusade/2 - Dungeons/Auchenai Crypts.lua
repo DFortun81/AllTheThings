@@ -8,10 +8,13 @@ _.Instances =
 		["groups"] = {
 			inst(247, { 	-- Auchenai Crypts
 				["groups"] = {
-					n(18497, {
-						i(23605, {
+					n(18497, {	-- Auchenai Monk
+						i(23605, {	-- Plans: Felsteel Gloves
 							i(23517),
 						}),
+					}),
+					n(18521, {	-- Raging Skeleton
+						dr(7, i(22544)),	-- Formula: Enchant Boots - Dexterity
 					}),
 					d(1, {		-- Normal
 						n(-17, {	-- Quests

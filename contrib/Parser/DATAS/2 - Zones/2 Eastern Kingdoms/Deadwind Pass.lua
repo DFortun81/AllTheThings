@@ -227,12 +227,10 @@ _.Zones =
 				}),
 				n(-2, {		-- Vendors
 					n(18255, {  -- Mage Darius
-						i(33205, { -- Pattern: Shadowprowler's Chestguard
-							i(33204),
-						}),
-						i(33124, { -- Pattern: Cloak of Darkness
-							i(33122), 
-						}),
+						i(31401),	-- Design: The Frozen Eye
+						i(33165),	-- Formula: Enchant Weapon - Greater Agility
+						i(33124), 	-- Pattern: Cloak of Darkness
+						i(33205), 	-- Pattern: Shadowprowler's Chestguard
 					}),
 				}),
 			},

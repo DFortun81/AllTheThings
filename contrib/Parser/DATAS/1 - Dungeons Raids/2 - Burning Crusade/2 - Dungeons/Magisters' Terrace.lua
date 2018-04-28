@@ -40,6 +40,7 @@ _.Instances =
 						}),
 						e(532, { -- Priestess Delrissa
 							["groups"] = {
+								i(35756),	-- Formula: Enchant Cloak - Greater Dodge
 								i(35275), 		-- Orb of Sin'dorei
 								i(34790),		-- Battle-Mace of the High Priestess
 								i(34788),		-- Duskhallow Mantle
@@ -51,6 +52,9 @@ _.Instances =
 						}),
 						e(533, { -- Kael'thas Sunstrider
 							["groups"] = {
+								i(35297),		-- Formula: Enchant Boots - Boar's Speed
+								i(35299),		-- Formula: Enchant Boots - Cat's Swiftness
+								i(35298),		-- Formula: Enchant Boots - Vitality
 								i(35275), 		-- Orb of Sin'dorei
 								i(35504),		-- Phoenix Hatchling
 								i(34794),		-- Axe of Shattered Dreams
@@ -110,6 +114,7 @@ _.Instances =
 							}),
 							e(532, { -- Priestess Delrissa
 								["groups"] = {
+									i(35756),	-- Formula: Enchant Cloak - Greater Dodge
 									i(35275), 		-- Orb of Sin'dorei
 									i(34790),		-- Battle-Mace of the High Priestess
 									i(34788),		-- Duskhallow Mantle
@@ -121,6 +126,9 @@ _.Instances =
 							}),
 							e(533, { -- Kael'thas Sunstrider
 								["groups"] = {
+									i(35297),		-- Formula: Enchant Boots - Boar's Speed
+									i(35299),		-- Formula: Enchant Boots - Cat's Swiftness
+									i(35298),		-- Formula: Enchant Boots - Vitality
 									i(35275), 		-- Orb of Sin'dorei
 									i(35504),		-- Phoenix Hatchling
 									i(35513),		-- Swift White Hawkstrider
