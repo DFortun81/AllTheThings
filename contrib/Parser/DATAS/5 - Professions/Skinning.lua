@@ -1,6 +1,10 @@
 -- Skinning - Skill ID 393 / Spell ID 8613
 profession(393, { -- Skinning
 	n(-26, {	-- Drop
+		i(111351, {		-- A Guide to Skinning in Draenor
+			["collectible"] = false,
+			["description"] = "This can drop from any Warlords of Draenor mob after skinning it.",
+		}),
 		n(103675, {	-- Felhide Gargantuan
 			["description"] = "These mobs are only available during a World Quest. They can only be skinned one time, similarly to the Slice of Bacon cooking quests.",
 			["groups"] = {

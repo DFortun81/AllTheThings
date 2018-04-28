@@ -39,6 +39,22 @@ profession(185, { -- Cooking
 			},
 		}),
 	}),
+	{
+		["itemID"] = 86425,	-- Cooking School Bell
+		["groups"] = {
+			faction(1357, {		-- Nomi (Faction)
+				["description"] = "Summon Nomi once per day, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
+				["creatureID"] = 64337,	-- Nomi (Child)
+				["collectible"] = false,
+				["groups"] = {
+					ach(7325),	-- Now I Am the Master
+					q(31820, {	-- A Present for Teacher
+						i(86468),	-- Apron
+					}),
+				},
+			}),
+		}
+	},
 	n(101846, {	-- Nomi
 		["description"] = "Takes various meat, fish, and animal byproducts for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",
 		["groups"] = {
@@ -308,7 +324,6 @@ profession(185, { -- Cooking
 	}),
 	n(-15, { 	-- Recipes
 		n(-3, { 	-- Holiday
-			--["groups"] = {
 			recipe(65454),	-- Bread of the Dead
 			recipe(21143),	-- Gingerbread Cookie
 			recipe(45022),	-- Hot Apple Cider
@@ -326,21 +341,24 @@ profession(185, { -- Cooking
 			recipe(185705),		-- Fancy Darkmoon Feast
 			recipe(185704),		-- Lemon Herb Filet
 			recipe(185708),		-- Sugar-Crusted Fish Feast
-			--},
-			--["icon"] = "Interface\\Icons\\INV_Helm_Cloth_WitchHat_B_01",
 		}),
 		tier(1, {	-- Classic
+			un(2, i(16072)),	-- Expert Cookbook
+			un(2, i(16073)),	-- Artisan Cookbook
+			un(2, i(27736)),	-- Master Cookbook
 			recipe(37836),	-- Spice Bread
 			recipe(7751),	-- Brilliant Smallfish
 			recipe(2538),	-- Charred Wolf Meat
 			recipe(15935),	-- Crispy Bat Wing
+			un(7, i(6891)),	-- Recipe: Herb Baked Egg
 			recipe(8604),	-- Herb Baked Egg
 			recipe(33276),	-- Lynx Steak
 			recipe(2540),	-- Roasted Boar Meat
-			recipe(33277),	-- Roasted Moongraze Tenderloin
+			a(recipe(33277)),	-- Roasted Moongraze Tenderloin
 			recipe(7752),	-- Slitherskin Mackerel
 			un(7, h(i(3734))),		-- Recipe: Big Bear Steak [Removed From Game!]
 			un(8, h(recipe(3397))),	-- Big Bear Steak [Removed From Game!]
+			un(7, i(5482)),	-- Recipe: Kaldorei Spider Kabob
 			recipe(6412),	-- Kaldorei Spider Kabob
 			recipe(2539),	-- Spiced Wolf Meat
 			recipe(2795),	-- Beer Basted Boar Ribs
@@ -351,6 +369,7 @@ profession(185, { -- Cooking
 			recipe(33278),	-- Bat Bites
 			recipe(6499),	-- Boiled Clams
 			recipe(2541),	-- Coyote Steak
+			un(7, i(5485)),	-- Recipe: Fillet of Frenzy
 			recipe(6415),	-- Fillet of Frenzy
 			recipe(2542),	-- Goretusk Liver Pie
 			recipe(7754),	-- Loch Frenzy Delight
@@ -392,9 +411,12 @@ profession(185, { -- Cooking
 			un(7, i(12227)), -- Recipe: Lean Wolf Steak
 			recipe(15853),	-- Lean Wolf Steak
 			recipe(3398),	-- Hot Lion Chops
+			un(7, i(5487)),	-- Recipe: Dig Rat Stew
+			un(7, i(44977)),	-- Recipe: Dig Rat Stew
 			recipe(6417),	-- Dig Rat Stew
 			recipe(3376),	-- Curiously Tasty Omelet
 			recipe(24418),	-- Heavy Crocolisk Stew
+			un(7, i(3736)),	-- Recipe: Tasty Lion Steak
 			recipe(3399),	-- Tasty Lion Steak
 			desc(un(1, recipe(13028)), "Henry Stern who is currently the only source of acquiring Goldthorn Tea is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it."),	-- Goldthorn Tea
 			recipe(7828),	-- Rockscale Cod
@@ -407,6 +429,7 @@ profession(185, { -- Cooking
 			recipe(15865),	-- Mystery Stew
 			recipe(15855),	-- Roast Raptor
 			recipe(25954),	-- Sagefish Delight
+			un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
 			recipe(3400),	-- Soothing Turtle Bisque
 			recipe(15906),	-- Dragonbreath Chili
 			recipe(15910),	-- Heavy Kodo Stew
@@ -415,15 +438,21 @@ profession(185, { -- Cooking
 			recipe(18241),	-- Filet of Redgill
 			recipe(15933),	-- Monster Omelet
 			recipe(15915),	-- Spiced Chili Crab
+			un(7, i(13939)),	-- Recipe: Spotted Yellowtail
 			recipe(18238),	-- Spotted Yellowtail
 			recipe(22480),	-- Tender Wolf Steak
 			recipe(20626),	-- Undermine Clam Chowder
+			un(7, i(13942)),	-- Recipe: Grilled Squid
 			recipe(18240),	-- Grilled Squid
 			recipe(18242),	-- Hot Smoked Bass
 			recipe(64054),	-- Clamlette Magnifique
+			un(7, i(35564)),	-- Recipe: Charred Bear Kabobs
 			recipe(46684),	-- Charred Bear Kabobs
+			un(7, i(35566)),	-- Recipe: Juicy Bear Burger
 			recipe(46688),	-- Juicy Bear Burger
+			un(7, i(13945)),	-- Recipe: Nightfin Soup
 			recipe(18243),	-- Nightfin Soup
+			un(7, i(13946)),	-- Recipe: Poached Sunscale Salmon
 			recipe(18244),	-- Poached Sunscale Salmon
 			recipe(18247),	-- Baked Salmon
 			recipe(18245),	-- Lobster Stew
@@ -482,6 +511,8 @@ profession(185, { -- Cooking
 			recipe(45550),	-- Shoveltusk Steak
 			recipe(45564),	-- Smoked Salmon
 			recipe(45551),	-- Worm Delight
+			un(1, i(34126)),	-- Recipe: Shoveltusk Soup
+			un(1, i(39692)),	-- Recipe: Succulent Orca Stew
 			un(1, i(39644)),	-- Recipe: Kungaloosh
 			recipe(53056),	-- Kungaloosh
 			recipe(45554),	-- Great Feast
@@ -572,6 +603,8 @@ profession(185, { -- Cooking
 			recipe(126654),	-- Four Senses Brew
 			recipe(124032),	-- Krasarang Fritters
 			recipe(125120),	-- Spicy Salmon
+			recipe(105190),	-- Pandaren Banquet
+			recipe(105194),	-- Great Pandaren Banquet
 			
 			-- Added with 5.4
 			recipe(145309),	-- Farmer's Delight
@@ -582,46 +615,82 @@ profession(185, { -- Cooking
 			recipe(145310),	-- Stuffed Lushrooms
 			
 			-- Master of the Brew
-			recipe(124052),	-- Ginseng Tea
-			recipe(124053),	-- Jade Witch Brew
-			recipe(124054),	-- Mad Brewer's Breakfast
-			recipe(125602),	-- Banquet of the Brew
-			recipe(125603),	-- Great Banquet of the Brew
+			{
+				["recipeID"] = 125589,	-- Way of the Brew
+				["collectible"] = false,
+				["groups"] = {
+					recipe(124052),	-- Ginseng Tea
+					recipe(124053),	-- Jade Witch Brew
+					recipe(124054),	-- Mad Brewer's Breakfast
+					recipe(125602),	-- Banquet of the Brew
+					recipe(125603),	-- Great Banquet of the Brew
+				}
+			},
 			
 			-- Master of the Grill
-			recipe(104300),	-- Black Pepper Ribs and Shrimp
-			recipe(104298),	-- Charbroiled Tiger Steak
-			recipe(104299),	-- Eternal Blossom Fish
-			recipe(125141),	-- Banquet of the Grill
-			recipe(125142),	-- Great Banquet of the Grill
+			{
+				["recipeID"] = 124694,	-- Way of the Grill
+				["collectible"] = false,
+				["groups"] = {
+					recipe(104300),	-- Black Pepper Ribs and Shrimp
+					recipe(104298),	-- Charbroiled Tiger Steak
+					recipe(104299),	-- Eternal Blossom Fish
+					recipe(125141),	-- Banquet of the Grill
+					recipe(125142),	-- Great Banquet of the Grill
+				}
+			},
 			
 			-- Master of the Oven
-			recipe(104312),	-- Chun Tian Spring Rolls
-			recipe(104311),	-- Twin Fish Platter
-			recipe(104310),	-- Wildfowl Roast
-			recipe(125600),	-- Banquet of the Oven
-			recipe(125601),	-- Great Banquet of the Oven
+			{
+				["recipeID"] = 125588,	-- Way of the Oven
+				["collectible"] = false,
+				["groups"] = {
+					recipe(104312),	-- Chun Tian Spring Rolls
+					recipe(104311),	-- Twin Fish Platter
+					recipe(104310),	-- Wildfowl Roast
+					recipe(125600),	-- Banquet of the Oven
+					recipe(125601),	-- Great Banquet of the Oven
+				}
+			},
 			
 			-- Master of the Pot
-			recipe(104305),	-- Braised Turtle
-			recipe(104306),	-- Mogu Fish Stew
-			recipe(104304),	-- Swirling Mist Soup
-			recipe(125596),	-- Banquet of the Pot
-			recipe(125597),	-- Great Banquet of the Pot
+			{
+				["recipeID"] = 125586,	-- Way of the Pot
+				["collectible"] = false,
+				["groups"] = {
+					recipe(104305),	-- Braised Turtle
+					recipe(104306),	-- Mogu Fish Stew
+					recipe(104304),	-- Swirling Mist Soup
+					recipe(125596),	-- Banquet of the Pot
+					recipe(125597),	-- Great Banquet of the Pot
+				}
+			},
 			
 			-- Master of the Steamer
-			recipe(104308),	-- Fire Spirit Salmon
-			recipe(104307),	-- Shrimp Dumplings
-			recipe(104309),	-- Steamed Crab Surprise
-			recipe(125598),	-- Banquet of the Steamer
-			recipe(125599),	-- Great Banquet of the Steamer
+			{
+				["recipeID"] = 125587,	-- Way of the Steamer
+				["collectible"] = false,
+				["groups"] = {
+					recipe(104308),	-- Fire Spirit Salmon
+					recipe(104307),	-- Shrimp Dumplings
+					recipe(104309),	-- Steamed Crab Surprise
+					recipe(125598),	-- Banquet of the Steamer
+					recipe(125599),	-- Great Banquet of the Steamer
+				}
+			},
 			
 			-- Master of the Wok
-			recipe(104301),	-- Sauteed Carrots
-			recipe(104303),	-- Sea Mist Rice Noodles
-			recipe(104302),	-- Valley Stir Fry
-			recipe(125594),	-- Banquet of the Wok
-			recipe(125595),	-- Great Banquet of the Wok
+			{
+				["recipeID"] = 125584,	-- Way of the Wok
+				["collectible"] = false,
+				["groups"] = {
+					recipe(104301),	-- Sauteed Carrots
+					recipe(104303),	-- Sea Mist Rice Noodles
+					recipe(104302),	-- Valley Stir Fry
+					recipe(125594),	-- Banquet of the Wok
+					recipe(125595),	-- Great Banquet of the Wok
+				}
+			},
 			
 			-- Noodle Karts
 			recipe(145038),	-- Noodle Cart Kit

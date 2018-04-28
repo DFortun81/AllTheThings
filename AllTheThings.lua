@@ -2860,7 +2860,7 @@ app.BaseFaction = {
 			end
 		elseif key == "text" then
 			local rgb = FACTION_BAR_COLORS[t.standing + (t.isFriend and 2 or 0)];
-			return Colorize(select(1, GetFactionInfoByID(t.factionID)) or ("Faction #" .. t.factionID), RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
+			return Colorize(select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or ("Faction #" .. t.factionID), RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
 		elseif key == "title" then
 			return t.isFriend and select(7, GetFriendshipReputation(t.factionID)) or _G["FACTION_STANDING_LABEL" .. t.standing];
 		elseif key == "description" then
