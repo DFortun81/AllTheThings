@@ -721,6 +721,11 @@ _.Zones =
 						i(152400), -- Embroidered Lightforged Drape
 					}),
 					n(127151, { -- Toraan the Revered <Argussian Reach Emissary>
+						i(152658),	-- Formula: Chaos Shatter
+						i(151707),	-- Recipe: Astral Alchemist Stone [Rank 2]
+						i(151708),	-- Recipe: Astral Alchemist Stone [Rank 3]
+						i(152618),	-- Recipe: Astral Healing Potion [Rank 3]
+						i(152725),	-- Technique: Mass Mill Astral Glory
 						i(152794), -- Reins of the Amethyst Ruinstrider Mount
 						i(152795), -- Reins of the Beryl Ruinstrider Mount
 						i(152797), -- Reins of the Cerulean Ruinstrider Mount

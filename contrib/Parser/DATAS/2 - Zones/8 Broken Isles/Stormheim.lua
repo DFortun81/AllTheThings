@@ -1381,13 +1381,21 @@ _.Zones =
 				}),
 				n(-2, { -- Vendors
 					n(98367, { -- Tigrid the Charmer <Enchantress>
-						sp(191074, { i(128533) }), -- Enchanted Cauldron
-						sp(191075, { i(128534) }), -- Enchanted Torch
+						i(124440, {	-- Arkhana
+							i(128617),	-- Formula: Enchant Gloves - Legion Herbalism
+							i(128618),	-- Formula: Enchant Gloves - Legion Mining
+							i(128619),	-- Formula: Enchant Gloves - Legion Skinning
+							i(128620),	-- Formula: Enchant Gloves - Legion Surveying
+							i(128621),	-- Formula: Enchanted Cauldron
+							i(128622),	-- Formula: Enchanted Torch
+						}),
 					}),
 					n(90866, { -- Tinkmaster Overspark <Chief Architect of Gnomish Engineering>
-						sp(30313, { i(23746) }), -- Adamantite Rifle
-						sp(30316, { i(23758) }), -- Cogspinner Goggles
-						sp(30318, { i(23762) }), -- Ultra-Spectropic Detection Goggles
+						i(23799),	-- Schematic: Adamantite Rifle
+						i(23807),	-- Schematic: Adamantite Scope
+						i(23803),	-- Schematic: Cogspinner Goggles
+						i(23816),	-- Schematic: Fel Iron Toolbox
+						i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
 					}),
 					n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
 						i(136920), -- PET! Sunborn Val'kyr
