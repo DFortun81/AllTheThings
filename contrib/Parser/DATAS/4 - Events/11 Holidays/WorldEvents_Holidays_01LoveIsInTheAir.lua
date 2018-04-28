@@ -95,126 +95,126 @@ _.WorldEvents =
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["LvL"] = 71,
+							["Lvl"] = 71,
 							["qg"] = 38066,
 						}),	
 						q(24651, {	-- Crushing the Crown
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["LvL"] = 61,
+							["Lvl"] = 61,
 							["qg"] = 37172,
 						}),	
 						q(28935, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["LvL"] = 81,
+							["Lvl"] = 81,
 							["qg"] = 37172,
 						}),	
 						q(24650, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["LvL"] = 51,
+							["Lvl"] = 51,
 							["qg"] = 37172,
 						}),	
 						q(24652, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["LvL"] = 71,
+							["Lvl"] = 71,
 							["qg"] = 37172,
 						}),	
 						q(28934, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["LvL"] = 81,
+							["Lvl"] = 81,
 							["qg"] = 38066,
 						}),	
 						q(24658, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["LvL"] = 5,
+							["Lvl"] = 5,
 							["qg"] = 38066,
 						}),	
 						q(24659, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["LvL"] = 14,
+							["Lvl"] = 14,
 							["qg"] = 38066,
 						}),	
 						q(24660, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["LvL"] = 23,
+							["Lvl"] = 23,
 							["qg"] = 38066,
 						}),	
 						q(24662, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["LvL"] = 32,
+							["Lvl"] = 32,
 							["qg"] = 38066,
 						}),	
 						q(24663, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["LvL"] = 41,
+							["Lvl"] = 41,
 							["qg"] = 38066,
 						}),	
 						q(24664, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["LvL"] = 51,
+							["Lvl"] = 51,
 							["qg"] = 38066,
 						}),	
 						q(24665, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["LvL"] = 61,
+							["Lvl"] = 61,
 							["qg"] = 38066,
 						}),	
 						q(24638, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["LvL"] = 5,
+							["Lvl"] = 5,
 							["qg"] = 37172,
 						}),	
 						q(24645, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["LvL"] = 14,
+							["Lvl"] = 14,
 							["qg"] = 38066,
 						}),	
 						q(24647, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["LvL"] = 23,
+							["Lvl"] = 23,
 							["qg"] = 38066,
 						}),	
 						q(24648, {	-- Crushing the Crown
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["LvL"] = 32,
+							["Lvl"] = 32,
 							["qg"] = 38066,
 						}),	
 						q(24649, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["LvL"] = 41,
+							["Lvl"] = 41,
 							["qg"] = 38066,
 						}),	
 						a(q(24848)),	-- Fireworks At The Gilded Rose
@@ -224,13 +224,13 @@ _.WorldEvents =
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["LvL"] = 78,
+							["Lvl"] = 78,
 						}),	
 						q(24793, {	-- Man on the Inside
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["LvL"] = 78,
+							["Lvl"] = 78,
 						}),
 						h(q(24541)),	-- Pilfering Perfume
 						a(q(24656)),	-- Pilfering Perfume
@@ -244,7 +244,7 @@ _.WorldEvents =
 						q(14488, {	-- You've Been Served
 							["groups"] = {
 							},
-							["LvL"] = 80,
+							["Lvl"] = 80,
 						}),
 					}),
 					n(-2, { -- Vendors
