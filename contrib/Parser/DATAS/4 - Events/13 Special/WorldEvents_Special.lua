@@ -671,7 +671,7 @@ _.WorldEvents =
 				["groups"] = {
 					i(135539, {	-- Crate of Battlefield Goods 15-39
 						["groups"] = {
-							i(134643),	-- Auxiliary's Cuffs
+							i(134643),	-- Auxiliary's Cuffs*
 							i(134642),	-- Auxiliary's Leggings
 							i(134640),	-- Auxiliary's Robe
 							i(134641),	-- Auxiliary's Treads
@@ -692,7 +692,7 @@ _.WorldEvents =
 							i(134637),	-- Recruit's Dirk
 							i(134645),	-- Recruit's Endgame
 							i(134644),	-- Recruit's Hammer
-							i(134646),	-- Recruit's Mageblade
+							i(134646),	-- Recruit's Mageblade*
 							i(135481),	-- Recruit's Quickblade
 							i(134662),	-- Recruit's Redoubt
 							i(134638),	-- Recruit's Rifle
@@ -718,7 +718,7 @@ _.WorldEvents =
 							i(134682),	-- Greenhorn's Spaulders
 							i(134683),	-- Front-Line Gauntlets
 							i(134685),	-- Front-Line Greaves
-							i(134684),	-- Front-Line Helm
+							i(134684),	-- Front-Line Helm*
 							i(134686),	-- Front-Line Shoulders
 							i(134689),	-- Recruit's Accolade*
 							i(134687),	-- Recruit's Barrier
@@ -729,7 +729,8 @@ _.WorldEvents =
 							i(134668),	-- Recruit's Pike
 							i(134667),	-- Recruit's Pummeler
 							i(134666),	-- Recruit's Shanker
-							i(134688),	-- Recruit's Slicer
+							i(134688),	-- Recruit's Slicer*
+							i(134691),  -- Recruit's Badge*
 						},
 						["description"] = "|cff66ccffRewarded for winning a random battleground in the level 40-59 range.|r",
 					}),
