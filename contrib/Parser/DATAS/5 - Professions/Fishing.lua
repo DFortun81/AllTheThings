@@ -1,5 +1,41 @@
 -- Fishing - Skill ID 356 / Spell ID 7620
 profession(356, { 	-- Fishing
+	n(-26, {	-- Drop
+		{
+			["itemID"] = 34109,	-- Weather Beaten Journal
+			["collectible"] = false,
+		},
+		{
+			["itemID"] = 16082,	-- Artisan Fishing - The Way of the Lure
+			["collectible"] = false,
+			["description"] = "No longer required.",
+			["u"] = 2,
+		},
+		{
+			["itemID"] = 16083,	-- Expert Fishing - The Bass and You
+			["collectible"] = false,
+			["description"] = "No longer required.",
+			["u"] = 2,
+		},
+		{
+			["itemID"] = 27532,	-- Master Fishing - The Art of Angling
+			["collectible"] = false,
+			["description"] = "No longer required.",
+			["u"] = 2,
+		},
+		{
+			["itemID"] = 46054,	-- Journeyman Fishing - Fishing for Dummies
+			["collectible"] = false,
+			["description"] = "No longer required.",
+			["u"] = 2,
+		},
+		{
+			["itemID"] = 46055,	-- Grand Master Fishing - Deep Sea Adventures
+			["collectible"] = false,
+			["description"] = "No longer required.",
+			["u"] = 2,
+		},
+	}),
 	n(-167, { 	-- Fishing Poles
 		["groups"] = {	
 			desc(un(15, i(19970)), "Reward from winning Stranglethorn Fishing Extravaganza."),	-- Arcanite Fishing Pole
@@ -387,7 +423,7 @@ profession(356, { 	-- Fishing
 		desc(un(15, i(44703)), "Can be caught from Fangtooth Herring Schools in Howling Fjord."), -- Dark Herring
 	}),
 	n(-153, {	-- Classic
-	
+		
 	}),
 	n(-154, { 	-- The Burning Crusade
 	
