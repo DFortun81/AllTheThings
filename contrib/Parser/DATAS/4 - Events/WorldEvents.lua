@@ -116,8 +116,6 @@ _.WorldEvents =
 	}),
 	n(-32, { -- Trading Card Game
 	}),
-	n(-77, { -- Special
-	}),
 	n(-62, { -- Stranglethorn Fishing Extravaganza
 	}),
 	n(-173, { -- Timewalking
