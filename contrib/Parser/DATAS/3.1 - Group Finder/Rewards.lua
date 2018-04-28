@@ -103,57 +103,63 @@ _.GroupFinder =
 		["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 56-60 range.|r",
 	})),
 	i(156682, {	-- Otherworldy Satchel of Helpful Goods
-		i(51969),	-- Enumerated Shoulders*
-		i(51972),	-- Enumerated Bracers*
-		i(51970),	-- Enumerated Gloves*
-		i(51967),	-- Enumerated Sandals*
-		i(51961),	-- Vigorous Shoulderguards
-		i(51959),	-- Vigorous Belt
-		i(51962),	-- Vigorous Bracers
-		i(51960),	-- Vigorous Gloves
-		i(51975),	-- Earthbound Shoulders
-		i(51981),	-- Earthbound Wristguards
-		i(51979),	-- Earthbound Grips
-		i(51983),	-- Stalwart Shoulderguards
-		i(51989),	-- Stalwart Bands
-		i(51987),	-- Stalwart Grips
-		i(51993),	-- Turbulent Cloak*
-		i(51995),	-- Turbulent Necklace*
-		i(51991),	-- Turbulent Signet*
+		["groups"] = {
+			i(51969),	-- Enumerated Shoulders*
+			i(51972),	-- Enumerated Bracers*
+			i(51970),	-- Enumerated Gloves*
+			i(51967),	-- Enumerated Sandals*
+			i(51961),	-- Vigorous Shoulderguards
+			i(51959),	-- Vigorous Belt
+			i(51962),	-- Vigorous Bracers
+			i(51960),	-- Vigorous Gloves
+			i(51975),	-- Earthbound Shoulders
+			i(51981),	-- Earthbound Wristguards
+			i(51979),	-- Earthbound Grips
+			i(51983),	-- Stalwart Shoulderguards
+			i(51989),	-- Stalwart Bands
+			i(51987),	-- Stalwart Grips
+			i(51993),	-- Turbulent Cloak*
+			i(51995),	-- Turbulent Necklace*
+			i(51991),	-- Turbulent Signet*
+		},
+		["Lvl"] = 60,
 	}),
 	i(156688, {	-- Icy Satchel of Helpful Goods
-		i(112348),	-- Snow-Coated Cloth Cap*
-		i(113758),	-- Snow-Coated Cloth Gloves*
-		i(112367),	-- Snow-Coated Cloth Belt
-		i(112355),	-- Snow-Coated Cloth Leggings*
-		i(112352),	-- Winterfrost Leather Cap
-		i(112351),	-- Winterfrost Leather Helm*
-		i(113690),	-- Winterfrost Leather Gloves
-		i(113689),	-- Winterfrost Leather Knuckledusters
-		i(112365),	-- Winterfrost Leather Belt
-		i(112366),	-- Winterfrost Leather Girdle
-		i(112360),	-- Winterfrost Leather Leggings
-		i(112359),	-- Winterfrost Leather Waders
-		i(112349),	-- Icefall Chain Helm
-		i(112350),	-- Icefall Mail Helm
-		i(113694),	-- Icefall Chain Gloves
-		i(113693),	-- Icefall Mail Gloves
-		i(112364),	-- Icefall Mail Girdle
-		i(112363),	-- Icefall Chain Belt
-		i(112358),	-- Icefall Chain Leggings
-		i(112357),	-- Icefall Mail Leggings
-		i(112347),	-- Ice-Encrusted Plate Helm
-		i(112346),	-- Ice-Encrusted Plate Headguard
-		i(113692),	-- Ice-Encrusted Gauntlets
-		i(113691),	-- Ice-Encrusted Gloves
-		i(112361),	-- Ice-Encrusted Plate Belt
-		i(112362),	-- Ice-Encrusted Plate Girdle
-		i(112356),	-- Ice-Encrusted Plate Leggings
-		i(112354),	-- Ice-Encrusted Plate Legguards
-		i(113685),	-- Coldblood Longcloak
-		i(113683),	-- Coldwrap Cloak
-		i(113684),	-- Icecrust Cloak*
-		i(113687),	-- Dark Rune Lavalliere*
+		["groups"] = {
+			i(112348),	-- Snow-Coated Cloth Cap*
+			i(113758),	-- Snow-Coated Cloth Gloves*
+			i(112367),	-- Snow-Coated Cloth Belt
+			i(112355),	-- Snow-Coated Cloth Leggings*
+			i(112352),	-- Winterfrost Leather Cap
+			i(112351),	-- Winterfrost Leather Helm*
+			i(113690),	-- Winterfrost Leather Gloves
+			i(113689),	-- Winterfrost Leather Knuckledusters
+			i(112365),	-- Winterfrost Leather Belt
+			i(112366),	-- Winterfrost Leather Girdle
+			i(112360),	-- Winterfrost Leather Leggings
+			i(112359),	-- Winterfrost Leather Waders
+			i(112349),	-- Icefall Chain Helm
+			i(112350),	-- Icefall Mail Helm
+			i(113694),	-- Icefall Chain Gloves
+			i(113693),	-- Icefall Mail Gloves
+			i(112364),	-- Icefall Mail Girdle
+			i(112363),	-- Icefall Chain Belt
+			i(112358),	-- Icefall Chain Leggings
+			i(112357),	-- Icefall Mail Leggings
+			i(112347),	-- Ice-Encrusted Plate Helm
+			i(112346),	-- Ice-Encrusted Plate Headguard
+			i(113692),	-- Ice-Encrusted Gauntlets
+			i(113691),	-- Ice-Encrusted Gloves
+			i(112361),	-- Ice-Encrusted Plate Belt
+			i(112362),	-- Ice-Encrusted Plate Girdle
+			i(112356),	-- Ice-Encrusted Plate Leggings
+			i(112354),	-- Ice-Encrusted Plate Legguards
+			i(113685),	-- Coldblood Longcloak
+			i(113683),	-- Coldwrap Cloak
+			i(113684),	-- Icecrust Cloak*
+			i(113687),	-- Dark Rune Lavalliere*
+		},
+		["Lvl"] = 60,
 	}),
 	un(2, i(52004, {	-- Satchel of Helpful Goods 60-64
 		["groups"] = {
@@ -241,6 +247,7 @@ _.GroupFinder =
 		   i(113702),	-- Emberspark Plate Wristguards
 		},
 		["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation",
+		["Lvl"] = 80,
 	}),
 	un(2, i(114648, {	-- Scorched Satchel of Helpful Goods 80-83
 		["groups"] = {
@@ -344,6 +351,7 @@ _.GroupFinder =
 		   i(113735),	-- Drifting Cloud Necklace*
 		},
 		["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation",
+		["Lvl"] = 80,
 	}),
 	un(2, i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
 		["groups"] = {
@@ -398,7 +406,7 @@ _.GroupFinder =
 		["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.|r",	-- Again, saying 89 because at level 90 you can no longer queue for this.
 	})),
 	i(92813, {	-- Greater Cache of Treasures
-		["g"] = {
+		["groups"] = {
 			i(92821),	-- Bladesnap Breastplate
 			i(92881),	-- Bladesnap Drape
 			i(92820),	-- Bladesnap Gauntlets
@@ -532,6 +540,7 @@ _.GroupFinder =
 			i(92882),	-- Stormcrier Ring
 		},
 		["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",						
+		["Lvl"] = 90,
 	}),
 	i(98134, {	-- Heroic Cache of Treasures
 		["groups"] = {
@@ -659,5 +668,6 @@ _.GroupFinder =
 			i(98179),	-- Tidesplitter Waistband
 		},
 		["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria heroic scenario at 90.",
+		["Lvl"] = 90,
 	}),
 };
