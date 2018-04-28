@@ -8,11 +8,14 @@ _.Instances =
 		["groups"] = {
 			inst(250, { 	-- Mana Tombs
 				["groups"] = {
-					model(20468, n(18314, {
+					n(18317, {	-- Ethereal Priest
+						dr(6, i(22543)),	-- Formula: Enchant Boots - Fortitude
+					}),
+					n(18314, {	-- Nexus Stalker
 						i(23615, {
 							i(23526),
 						}),
-					})),
+					}),
 					d(1, {		-- Normal
 						cr(18341, e(534, {	-- Pandemonius
 							i(25943),		-- Creepjacker

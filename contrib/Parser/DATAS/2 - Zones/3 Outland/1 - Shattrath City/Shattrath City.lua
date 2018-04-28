@@ -819,6 +819,9 @@ _.Zones =
 						i(12251),	-- Big Stick
 					}),
 					n(21432, {	-- Almaador <Sha'tari Quartermaster>
+						i(28273),	-- Formula: Enchant Gloves - Major Healing
+						i(33153),	-- Formula: Enchant Gloves - Threat
+						i(28281),	-- Formula: Enchant Weapon - Major Healing
 						i(29180),	-- Blessed Scale Girdle
 						i(35330),	-- Dreadweave Leggings
 						i(35333),	-- Mooncloth Cowl
@@ -1439,6 +1442,7 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 					n(21655, {	-- Nakodu <Lower City Quartermaster>
+						i(33148),	-- Formula: Enchant Cloak - Dodge
 						i(30835),	-- Salvager's Hauberk
 						i(30836),	-- Leggings of the Skettis Exile
 						i(35331),	-- Dreadweave Mantle

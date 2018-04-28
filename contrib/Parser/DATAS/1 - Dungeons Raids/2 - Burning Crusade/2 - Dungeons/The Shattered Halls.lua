@@ -8,6 +8,9 @@ _.Instances =
 		["groups"] = {
 			inst(259, { 	-- The Shattered Halls
 				["groups"] = {
+					n(17465, {	-- Shattered Hand Centurion
+						dr(11, i(22554)),	-- Formula: Enchant 2H Weapon - Savagery
+					}),
 					d(1, {		-- Normal
 						n(-17, {	-- Quests 					
 							qh(25650,{

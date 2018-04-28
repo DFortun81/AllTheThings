@@ -58,6 +58,9 @@ _.Instances =
 							i( 18745),	-- Sacred Cloth Leggings
 							i( 18742),	-- Stratholme Militia Shoulderguard
 							i(142337),	-- Plans: Blight
+							n( 10398, {	-- Thuzadin Shadowcaster
+								dr(5.0, i(16248)),	-- Formula: Enchant Weapon - Unholy
+							}),
 						}),
 						n( 10393, {			-- Skul
 							["groups"] = {
@@ -249,8 +252,8 @@ _.Instances =
 							i( 18745),	-- Sacred Cloth Leggings
 							i( 18742),	-- Stratholme Militia Shoulderguard
 							i(142337),	-- Plans: Blight
-							n( 10398, {	-- Thuzadin Shadowcaster
-								dr(5.0, i(16248)),	-- Formula: Enchant Weapon - Unholy
+							n( 10422, {	-- Risen Sorcerer
+								dr(6, i(16249)),	-- Formula: Enchant 2H Weapon - Major Intellect
 							}),
 						}),
 						n( 10809, {			-- Stonespine

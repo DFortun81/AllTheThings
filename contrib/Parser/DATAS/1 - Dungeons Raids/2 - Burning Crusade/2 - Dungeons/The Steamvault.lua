@@ -8,6 +8,9 @@ _.Instances =
 		["groups"] = {
 			inst(261, { 	-- The Steamvault
 				["groups"] = {
+					n(17803, {	-- Coilfang Oracle
+						dr(2, i(22533)),	-- Formula: Enchant Bracer - Fortitude
+					}),
 					d(1, {		-- Normal
 						cr(17797, e(573, {	-- Hydromancer Thespia
 							i(27789),		-- Cloak of Whispering Shells

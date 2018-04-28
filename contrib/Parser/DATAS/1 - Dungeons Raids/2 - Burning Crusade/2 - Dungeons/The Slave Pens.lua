@@ -10,12 +10,14 @@ _.Instances =
 				["groups"] = {
 					n(-3, { -- Holiday
 						["groups"] = {
-							a(n(-53, { 	-- Midsummer Fire Festival
+							n(-53, { 	-- Midsummer Fire Festival
 								["groups"] = {
 									n(25740, { -- Ahune
 										["groups"] = {
+											i(35498),	-- Formula: Enchant Weapon - Deathfrost [Drops from Ahune, the Frost Lord]
 											i(117394, {
 												i(117373),
+												i(138838),	-- Illusion Deathfrost
 												i(53641), -- pet
 											}),
 											i(117372),
@@ -23,7 +25,7 @@ _.Instances =
 											i(117375),
 											i(117376),
 											i(117377),
-											i(138838), -- Illusion Deathfrost
+											i(138838), 	-- Illusion Deathfrost
 										},		
 										["description"] = "|cff66ccffYou can only loot the satchel once per day per toon by running it through the Dungeon queue on your first run.|r",
 									}),
@@ -34,36 +36,8 @@ _.Instances =
 										}),
 									}),
 								},
-								["achievementID"] = 1038, -- The Flame Warden
 								["u"] = 21,
-							})),
-							h(n(-54, { 	-- Midsummer Fire Festival
-								["groups"] = {
-									n(25740, { -- Ahune
-										["groups"] = {
-											i(117394, {
-												i(117373),
-												i(53641), -- pet
-											}),
-											i(117372),
-											i(117374),
-											i(117375),
-											i(117376),
-											i(117377),
-											i(138838), -- Illusion Deathfrost
-										},		
-										["description"] = "|cff66ccffYou can only loot the satchel once per day per toon by running it through the Dungeon queue on your first run.|r",
-									}),
-									n(-17, { -- Quests
-										q(11972, {
-											i(35279),
-											i(35280),
-										}),
-									}),
-								},
-								["achievementID"] = 1039, -- The Flame Warden
-								["u"] = 21,
-							})),
+							}),
 						},
 					}),
 					d(1, {		-- Normal

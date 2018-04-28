@@ -23,6 +23,9 @@ _.Instances =
 						},
 						["description"] = "This vendor is located in Southshore inside the instance.",
 					}),
+					n(18664, {	-- Aged Dalaran Wizard
+						i(22539),	-- Formula: Enchant Shield - Intellect
+					}),
 					d(1, {		-- Normal
 						n(-17, { 	-- Quests
 							q(29599,{

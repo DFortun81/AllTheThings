@@ -1287,7 +1287,8 @@ _.Zones =
 							},
 							["classes"] = {6},
 						}),
---[[						n(-40, {	-- Legacy
+						--[[					
+						n(-40, {	-- Legacy
 							["groups"] = {
 								n(-17, {	-- Quests (Legacy)
 								}),
@@ -1297,7 +1298,13 @@ _.Zones =
 								--}),
 							},
 							["u"] = 12,
-						}),	--]]
+						}),
+						--]]
+						n(-16, {	-- Rares
+							n(9451, {	-- Scarlet Archmage
+								dr(1.2, i(16252)),	-- Formula: Enchant Weapon - Crusader
+							}),
+						}),
 					},
 					["icon"] = "Interface\\Icons\\Classicon_deathknight",
 					["description"] = "|cff66ccffThe Scarlet Enclave is the name of the starting area for all Death Knight players in World of Warcraft: Wrath of the Lich King.|r",

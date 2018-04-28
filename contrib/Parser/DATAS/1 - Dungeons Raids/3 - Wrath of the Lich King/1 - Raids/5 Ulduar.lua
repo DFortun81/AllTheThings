@@ -106,6 +106,8 @@ _.Instances =
 								i(45134),
 								i(45132),
 							}),
+							i(46027),	-- Formula: Enchant Weapon - Blade Ward
+							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 							i(45282),
 							i(45284),
 							i(45287),
@@ -124,6 +126,8 @@ _.Instances =
 							i(45119),
 						})),
 						cr(33118, e(1638, { -- Ignis the Furnace Master
+							i(46027),	-- Formula: Enchant Weapon - Blade Ward
+							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 							i(45311),
 							i(45309),
 							i(45314),
@@ -180,6 +184,8 @@ _.Instances =
 								i(45445),
 								i(45442),
 							}),
+							i(46027),	-- Formula: Enchant Weapon - Blade Ward
+							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 							i(45685),
 							i(45682),
 							i(45687),
@@ -246,6 +252,8 @@ _.Instances =
 								i(45241),
 								i(45607),
 							}),
+							i(46027),	-- Formula: Enchant Weapon - Blade Ward
+							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 							i(45332),
 							i(45331),
 							i(45329),
@@ -290,6 +298,8 @@ _.Instances =
 							i(45267),
 						})),
 						cr(33515, e(1643, { -- Auriaya
+							i(46027),	-- Formula: Enchant Weapon - Blade Ward
+							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 							i(45713),
 							i(45707),
 							i(45864),
@@ -618,6 +628,8 @@ _.Instances =
 								i(45519),
 								i(45516),
 							}),
+							i(46027),	-- Formula: Enchant Weapon - Blade Ward
+							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 							i(45996),
 							i(46011),
 							i(46013),
@@ -648,7 +660,8 @@ _.Instances =
 								i(45537),
 								i(45536),
 								i(45533),
-							}),							
+							}),	
+							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 							i(46016),
 							i(46025),
 							i(46024),

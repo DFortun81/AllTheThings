@@ -1161,6 +1161,8 @@ _.Zones =
 						i(9305),	-- Recipe: Transmute Mithril to Truesilver
 					}),
 					n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
+						i(28272),	-- Formula: Enchant Gloves - Major Spellpower
+						i(33152),	-- Formula: Enchant Gloves - Superior Agility
 						i(29184),	-- Timewarden's Leggings
 						i(29185),	-- Continuum Blade
 						i(35328),	-- Dreadweave Gloves

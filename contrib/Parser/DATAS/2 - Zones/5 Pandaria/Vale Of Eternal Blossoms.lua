@@ -742,6 +742,10 @@ _.Zones =
 						i(83275),	-- Wasteland Axe
 					}),
 					nh(64001, {	-- Sage Lotusbloom <The August Celestials Quartermaster>
+						i(89304),	-- Reins of the Thundering August Cloud Serpent Mount
+						i(84561),	-- Formula: Enchant Bracer - Exceptional Strength
+						i(84557),	-- Formula: Enchant Bracer - Greater Agility
+						i(84559),	-- Formula: Enchant Bracer - Super Intellect
 						i(88741),	-- Gloves of Red Feathers
 						i(88742),	-- Sunspeaker's Flared Gloves
 						i(88743),	-- Ogo's Elder Gloves
@@ -782,10 +786,13 @@ _.Zones =
 						i(89667),	-- Refurbished Zandalari Vestment
 						i(89668),	-- Mountain Stream Ringmail
 						i(89669),	-- Undergrowth Stalker Chestpiece
-						i(89304),	-- Reins of the Thundering August Cloud Serpent Mount
 						i(89799),	-- August Celestials Tabard
 					}),
 					na(64032, {	-- Sage Whiteheart <The August Celestials Quartermaster>
+						i(89304),	-- Reins of the Thundering August Cloud Serpent Mount
+						i(84561),	-- Formula: Enchant Bracer - Exceptional Strength
+						i(84557),	-- Formula: Enchant Bracer - Greater Agility
+						i(84559),	-- Formula: Enchant Bracer - Super Intellect
 						i(88741),	-- Gloves of Red Feathers
 						i(88742),	-- Sunspeaker's Flared Gloves
 						i(88743),	-- Ogo's Elder Gloves
@@ -826,7 +833,6 @@ _.Zones =
 						i(89667),	-- Refurbished Zandalari Vestment
 						i(89668),	-- Mountain Stream Ringmail
 						i(89669),	-- Undergrowth Stalker Chestpiece
-						i(89304),	-- Reins of the Thundering August Cloud Serpent Mount
 						i(89799),	-- August Celestials Tabard
 					}),
 					n(64605, {	-- Tan Shin Tiao <Lorewalkers Quartermaster>

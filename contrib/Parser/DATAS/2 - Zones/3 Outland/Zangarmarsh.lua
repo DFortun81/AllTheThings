@@ -777,6 +777,8 @@ _.Zones =
 						i(27695),	-- Recipe: Feltail Delight
 					}),
 					n(17904, {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
+						i(33149),	-- Formula: Enchant Cloak - Stealth
+						i(28271),	-- Formula: Enchant Gloves - Precise Strikes
 						i(29174),	-- Watcher's Cowl
 						i(35329),	-- Dreadweave Hood
 						i(35336),	-- Mooncloth Shoulderpads

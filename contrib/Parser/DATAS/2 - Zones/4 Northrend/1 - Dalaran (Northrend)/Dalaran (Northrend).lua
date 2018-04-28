@@ -3968,6 +3968,36 @@ _.Zones =
 						i(39539),	-- Heroes' Dreamwalker Leggings
 						i(39531),	-- Heroes' Dreamwalker Headpiece				
 					}),
+					n(32514, {	-- Vanessa Sellers <Shard Trader>
+						i(34057, {	-- Abyss Crystal
+							i(44944),	-- Formula: Enchant Bracer - Major Stamina
+						}),
+						i(34052, {	-- Dream Shard
+							i(44490),	-- Formula: Enchant Boots - Greater Assault
+							i(44491),	-- Formula: Enchant Boots - Tuskarr's Vitality
+							i(44484),	-- Formula: Enchant Bracer - Greater Assault
+							i(44498),	-- Formula: Enchant Bracer - Superior Spellpower
+							i(37340),	-- Formula: Enchant Chest - Exceptional Resilience
+							i(44489),	-- Formula: Enchant Chest - Powerful Stats
+							i(44472),	-- Formula: Enchant Cloak - Greater Speed
+							i(44471),	-- Formula: Enchant Cloak - Mighty Stamina
+							i(37349),	-- Formula: Enchant Cloak - Shadow Armor
+							i(37347),	-- Formula: Enchant Cloak - Superior Dodge
+							i(44488),	-- Formula: Enchant Cloak - Wisdom
+							i(44485),	-- Formula: Enchant Gloves - Armsman
+							i(45059),	-- Formula: Enchant Staff - Greater Spellpower
+							i(44483),	-- Formula: Enchant 2H Weapon - Massacre
+							i(44496),	-- Formula: Enchant Weapon - Accuracy
+							i(44492),	-- Formula: Enchant Weapon - Berserking
+							i(44495),	-- Formula: Enchant Weapon - Black Magic
+							i(37339),	-- Formula: Enchant Weapon - Giant Slayer
+							i(37344),	-- Formula: Enchant Weapon - Icebreaker
+							i(44494),	-- Formula: Enchant Weapon - Lifeward
+							i(44487),	-- Formula: Enchant Weapon - Mighty Spellpower
+							i(44473),	-- Formula: Enchant Weapon - Scourgebane
+							i(44486),	-- Formula: Enchant Weapon - Superior Potency
+						}),
+					}),
 					n(69971, {  -- Xazi Smolderpipe <Wrathful Gladiator>
 						i(146642, { -- Arsenal: Wrathful Gladiator's Weapons
 							i(51452),	-- Wrathful Gladiator's Barrier	

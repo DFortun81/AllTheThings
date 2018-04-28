@@ -74,6 +74,7 @@ _.Instances =
 							["description"] = "DO NOT KILL this mob if trying to get the Burning Felguard to spawn.",
 						}),
 						n(9216, { 		-- Spirestone Warlord
+							dr(9, i(16250)),	-- Formula: Enchant Weapon - Superior Striking
 							dr(.01, i(13260))	-- Wind Dancer Boots
 						}),
 					}),

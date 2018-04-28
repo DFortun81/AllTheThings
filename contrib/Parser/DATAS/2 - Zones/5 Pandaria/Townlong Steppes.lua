@@ -1528,6 +1528,10 @@ _.Zones =
 						i(86738),	-- Red Crane Spaulders
 					}),
 					n(64595, {	-- Rushi the Fox <Shado-Pan Quartermaster>
+						i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan
+						i(84584),	-- Formula: Enchant Weapon - Dancing Steel
+						i(84583),	-- Formula: Enchant Weapon - Jade Spirit
+						i(84580),	-- Formula: Enchant Weapon - River's Song
 						i(89074),	-- Cloak of the Dark Disciple
 						i(89075),	-- Yi's Cloak of Courage
 						i(89076),	-- Blackguard Cape
@@ -1558,12 +1562,6 @@ _.Zones =
 						i(90844),	-- Replica Shado-Pan Helmet - Leather
 						i(90845),	-- Replica Shado-Pan Helmet - Mail
 						i(90846),	-- Replica Shado-Pan Helmet - Plate
-						i(138877, {	-- Formula: Tome of Illusions: Secrets of the Shado-Pan
-							i(138794, { -- Tome of Illusions: Secrets of the Shado-Pan
-								ill(4446),	-- River's Song
-								ill(4444),	-- Dancing Steel
-							}),
-						}),
 					}),
 					n(62737, {	-- Supplier Xin
 						i(83158),	-- Wasteland Satin Hood

@@ -308,26 +308,26 @@ profession(185, { -- Cooking
 	}),
 	n(-15, { 	-- Recipes
 		n(-3, { 	-- Holiday
-			["groups"] = {
-				recipe(65454),	-- Bread of the Dead
-				recipe(21143),	-- Gingerbread Cookie
-				recipe(45022),	-- Hot Apple Cider
-				recipe(21144),	-- Winter Veil Egg Nog
-				a(recipe(62051)),	-- Candied Sweet Potato (Alliance)
-				a(recipe(62049)),	-- Cranberry Chutney (Alliance)
-				a(recipe(62044)),	-- Pumpkin Pie (Alliance)
-				a(recipe(62045)),	-- Slow-Roasted Turkey (Alliance)
-				a(recipe(62050)),	-- Spice Bread Stuffing (Alliance)
-				h(recipe(66034)),	-- Candied Sweet Potato (Horde)
-				h(recipe(66035)),	-- Cranberry Chutney (Horde)
-				h(recipe(66036)),	-- Pumpkin Pie (Horde)
-				h(recipe(66037)),	-- Slow-Roasted Turkey (Horde)
-				h(recipe(66038)),	-- Spice Bread Stuffing (Horde)
-				recipe(185705),		-- Fancy Darkmoon Feast
-				recipe(185704),		-- Lemon Herb Filet
-				recipe(185708),		-- Sugar-Crusted Fish Feast
-			},
-			["icon"] = "Interface\\Icons\\INV_Helm_Cloth_WitchHat_B_01",
+			--["groups"] = {
+			recipe(65454),	-- Bread of the Dead
+			recipe(21143),	-- Gingerbread Cookie
+			recipe(45022),	-- Hot Apple Cider
+			recipe(21144),	-- Winter Veil Egg Nog
+			a(recipe(62051)),	-- Candied Sweet Potato (Alliance)
+			a(recipe(62049)),	-- Cranberry Chutney (Alliance)
+			a(recipe(62044)),	-- Pumpkin Pie (Alliance)
+			a(recipe(62045)),	-- Slow-Roasted Turkey (Alliance)
+			a(recipe(62050)),	-- Spice Bread Stuffing (Alliance)
+			h(recipe(66034)),	-- Candied Sweet Potato (Horde)
+			h(recipe(66035)),	-- Cranberry Chutney (Horde)
+			h(recipe(66036)),	-- Pumpkin Pie (Horde)
+			h(recipe(66037)),	-- Slow-Roasted Turkey (Horde)
+			h(recipe(66038)),	-- Spice Bread Stuffing (Horde)
+			recipe(185705),		-- Fancy Darkmoon Feast
+			recipe(185704),		-- Lemon Herb Filet
+			recipe(185708),		-- Sugar-Crusted Fish Feast
+			--},
+			--["icon"] = "Interface\\Icons\\INV_Helm_Cloth_WitchHat_B_01",
 		}),
 		tier(1, {	-- Classic
 			recipe(37836),	-- Spice Bread

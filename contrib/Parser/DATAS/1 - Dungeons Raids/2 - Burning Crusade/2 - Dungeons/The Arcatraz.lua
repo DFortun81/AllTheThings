@@ -8,11 +8,11 @@ _.Instances =
 		["groups"] = {
 			inst(254, { 	-- The Arcatraz
 				["groups"] = {
-					model(19945, n(20900, {
+					n(20900, {
 						i(23606, {
 							i(23518), 
 						}),
-					})),
+					}),
 					n(-17, {	-- Quests
 						q(29674),	-- Unbound Darkness
 						q(29675, {	-- Hey There Dalliah
@@ -40,6 +40,9 @@ _.Instances =
 								i(21905),	-- Pattern: Arcanoweave Bracers
 							},
 							["modelScale"] = 5,
+						}),
+						n(20880, {	-- Eredar Deathbringer
+							dr(8, i(22556)),	-- Formula: Enchant 2H Weapon - Major Agility
 						}),
 					}),
 					d(  1, {	-- Normal

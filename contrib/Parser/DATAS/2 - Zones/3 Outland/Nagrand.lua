@@ -529,6 +529,8 @@ _.Zones =
 						i(27693),	-- Recipe: Talbuk Steak
 					}),
 					n(23007, {		-- Paulsta'ats <Consortium Quartermaster>
+						i(28274),	-- Formula: Enchant Cloak - PvP Power
+						i(22552),	-- Formula: Enchant Weapon - Major Striking
 						i(29115),	-- Consortium Blaster
 						i(29116),	-- Nomad's Leggings
 						i(29117),	-- Stormspire Vest
