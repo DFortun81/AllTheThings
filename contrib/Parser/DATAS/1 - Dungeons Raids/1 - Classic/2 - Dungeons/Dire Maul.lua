@@ -25,57 +25,60 @@ _.Instances =
 								qg(44969, q( 27103)),	-- Shards of the Felvine
 							}),
 							n(  0, {	-- Zone Drop
-								n(13196, {		-- Phase Lasher
+								n(13196, {	-- Phase Lasher
 									dr(0.4, i(18295)),	-- Phasing Boots
 								}),
-								n(11454, {		-- Wildspawn Betrayer
-									dr(0., i(18296)),	-- Marksman Bands
+								n(11454, {	-- Wildspawn Betrayer
+									dr(0.2, i(18296)),	-- Marksman Bands
 									dr(0.2, i(18298)),	-- Unbridled Leggings
 								}),
-								n(11455, {		-- Wildspawn Felsworn
-									dr(0.3, i(18298)),	-- Unbridled Leggings
+								n(11455, {	-- Wildspawn Felsworn
+									dr(0.30, i(18298)),	-- Unbridled Leggings
 									dr(0.15, i(18296)),	-- Marksman Bands
 								}),
-								n(11457, {		-- Wildspawn Hellcaller
+								n(11457, {	-- Wildspawn Hellcaller
 									dr(0.14, i(18296)),	-- Marksman Bands
 									dr(0.12, i(18298)),	-- Unbridled Leggings
 								}),
-								n(11452, {		-- Wildspawn Rogue
+								n(11452, {	-- Wildspawn Rogue
 									dr(0.17, i(18296)),	-- Marksman Bands
 									dr(0.15, i(18298)),	-- Unbridled Leggings
 								}),
-								n(11451, {		-- Wildspawn Satyr
-									dr(0.6, i(18296)),	-- Marksman Bands
+								n(11451, {	-- Wildspawn Satyr
+									dr(0.60, i(18296)),	-- Marksman Bands
 									dr(0.17, i(18298)),	-- Unbridled Leggings
 								}),
-								n(11456, {		-- Wildspawn Shadowstalker
+								n(11456, {	-- Wildspawn Shadowstalker
 									dr(0.2, i(18296)),	-- Marksman Bands
 									dr(0.2, i(18298)),	-- Unbridled Leggings
 								}),
 							}),
-							n(14354, {	-- Pusillin
+							n( 14354, {			-- Pusillin
 								i(18267),	-- Recipe: Runn Tum Tuber Surprise
 								dr(6, i(12662)),	-- Demonic Rune
 							}),
 							cr(14327, e(404, {	-- Lethtendris
-								i(18311),			-- Quel'dorei Channeling Rod
-								i(18301),			-- Lethtendris' Wand
-								i(18325),			-- Felhide Cap
+								i(18311),	-- Quel'dorei Channeling Rod
+								i(18301),	-- Lethtendris' Wand
+								i(18325),	-- Felhide Cap
+								i(18302),	-- Band of Vigor
 							})),
 							cr(13280, e(403, {	-- Hydrospawn
-								i(18324),			-- Waveslicer
-								i(18305),			-- Breakwater Legguards
-								i(18307),			-- Riptide Shoes
-								i(18322),			-- Waterspout Boots
+								i(18324),	-- Waveslicer
+								i(18317),	-- Tempest Talisman
+								i(18305),	-- Breakwater Legguards
+								i(18307),	-- Riptide Shoes
+								i(18322),	-- Waterspout Boots
 							})),
 							cr(11490, e(402, {	-- Zevrim Thornhoof
-								i(18323),			-- Satyr's Bow
-								i(18319),			-- Fervent Helm
-								i(18308),			-- Clever Hat
-								i(18313),			-- Helm of Awareness
-								i(18306),			-- Gloves of Shadowy Mist
+								i(18323),	-- Satyr's Bow
+								i(18319),	-- Fervent Helm
+								i(18308),	-- Clever Hat
+								i(18313),	-- Helm of Awareness
+								i(18306),	-- Gloves of Shadowy Mist
+								i(18315),	-- Ring of Demonic Potency
 							})),
-							n( 16097, { -- Isalien Summonable
+							n( 16097, {			-- Isalien Summonable
 								["groups"] = { 
 									i(22057, {	-- Brazier of Invocation
 										un(11, i(22472)), 	-- Boots of Ferocity
@@ -87,14 +90,15 @@ _.Instances =
 								["description"] = "|cff66ccffRequires Brazier of Invocation|r |cff3399ff(Dungeon Set 2 Questline)|r |cff66ccffto summon this boss.|r",
 							}),
 							cr(11492, e(405, {	-- Alzzin the Wildshaper
-								i(18321),			-- Energetic Rod
-								i(18310),			-- Fiendish Machete
-								i(18328),			-- Shadewood Cloak
-								i(18312),			-- Energized Chestplate
-								i(18309),			-- Gloves of Restoration
-								i(18326),			-- Razor Gauntlets
-								i(18327),			-- Whipvine Cord
-								i(18318),			-- Merciful Greaves
+								i(18321),	-- Energetic Rod
+								i(18310),	-- Fiendish Machete
+								i(18328),	-- Shadewood Cloak
+								i(18312),	-- Energized Chestplate
+								i(18309),	-- Gloves of Restoration
+								i(18326),	-- Razor Gauntlets
+								i(18327),	-- Whipvine Cord
+								i(18318),	-- Merciful Greaves
+								i(18314),	-- Ring of Demonic Guile
 							})),
 						},
 					}),
@@ -133,75 +137,77 @@ _.Instances =
 								})),
 							}),
 							cr(14326, e(411, {	-- Guard Mol'dar
-								i(18498),			-- Hedgecutter
-								i(18462),			-- Jagged Bone Fist
-								i(18463),			-- Ogre Pocket Knife
-								i(18460),			-- Unsophisticated Hand Cannon
-								i(18493),			-- Bulky Iron Spaulders
-								i(18494),			-- Denwatcher's Shoulders
-								i(18496),			-- Heliotrope Cloak
-								i(18450),			-- Robes of Combustion
-								i(18497),			-- Sublime Wristguards
-								i(18451),			-- Hyena Wristguards
-								-- i(18459),		-- Gallant's Wristguards (7.3.5 - Moved to Cho'Rush the Observer)
-								-- i(18458),		-- Modest Wristguards (7.3.5 - Moved to Captain Kromcrush)
+								i(18498),	-- Hedgecutter
+								i(18462),	-- Jagged Bone Fist
+								i(18463),	-- Ogre Pocket Knife
+								i(18460),	-- Unsophisticated Hand Cannon
+								i(18493),	-- Bulky Iron Spaulders
+								i(18494),	-- Denwatcher's Shoulders
+								i(18496),	-- Heliotrope Cloak
+								i(18450),	-- Robes of Combustion
+								i(18497),	-- Sublime Wristguards
+								i(18451),	-- Hyena Wristguards
+							 -- i(18459),	-- Gallant's Wristguards (7.3.5 - Moved to Cho'Rush the Observer)
+							 -- i(18458),	-- Modest Wristguards (7.3.5 - Moved to Captain Kromcrush)
 							})),
 							cr(14322, e(412, {	-- Stomper Kreeg
-								i(18425),			-- Kreeg's Mug
+								i(18425),	-- Kreeg's Mug
+								i(18464),	-- Gordok Nose Ring
 							})),
 							cr(14321, e(413, {	-- Guard Fengus
-								i(18498),			-- Hedgecutter
-								i(18462),			-- Jagged Bone Fist
-								i(18463),			-- Ogre Pocket Knife
-								i(18460),			-- Unsophisticated Hand Cannon
-								i(18493),			-- Bulky Iron Spaulders
-								i(18494),			-- Denwatcher's Shoulders
-								i(18496),			-- Heliotrope Cloak
-								i(18450),			-- Robes of Combustion
-								i(18497),			-- Sublime Wristguards
-								i(18451),			-- Hyena Wristguards
-								-- i(18459),		-- Gallant's Wristguards (7.3.5 - Moved to Cho'Rush the Observer)
-								-- i(18458),		-- Modest Wristguards (7.3.5 - Moved to Captain Kromcrush)
+								i(18498),	-- Hedgecutter
+								i(18462),	-- Jagged Bone Fist
+								i(18463),	-- Ogre Pocket Knife
+								i(18460),	-- Unsophisticated Hand Cannon
+								i(18493),	-- Bulky Iron Spaulders
+								i(18494),	-- Denwatcher's Shoulders
+								i(18496),	-- Heliotrope Cloak
+								i(18450),	-- Robes of Combustion
+								i(18497),	-- Sublime Wristguards
+								i(18451),	-- Hyena Wristguards
+							 -- i(18459),	-- Gallant's Wristguards (7.3.5 - Moved to Cho'Rush the Observer)
+							 -- i(18458),	-- Modest Wristguards (7.3.5 - Moved to Captain Kromcrush)
 							})),
 							cr(14323, e(414, {	-- Guard Slip'kik
-								i(18498),			-- Hedgecutter
-								i(18462),			-- Jagged Bone Fist
-								i(18463),			-- Ogre Pocket Knife
-								i(18460),			-- Unsophisticated Hand Cannon
-								i(18493),			-- Bulky Iron Spaulders
-								i(18494),			-- Denwatcher's Shoulders
-								i(18496),			-- Heliotrope Cloak
-								i(18450),			-- Robes of Combustion
-								i(18497),			-- Sublime Wristguards
-								i(18451),			-- Hyena Wristguards
-								-- i(18459),		-- Gallant's Wristguards (7.3.5 - Moved to Cho'Rush the Observer)
-								-- i(18458),		-- Modest Wristguards (7.3.5 - Moved to Captain Kromcrush)
+								i(18498),	-- Hedgecutter
+								i(18462),	-- Jagged Bone Fist
+								i(18463),	-- Ogre Pocket Knife
+								i(18460),	-- Unsophisticated Hand Cannon
+								i(18493),	-- Bulky Iron Spaulders
+								i(18494),	-- Denwatcher's Shoulders
+								i(18496),	-- Heliotrope Cloak
+								i(18450),	-- Robes of Combustion
+								i(18497),	-- Sublime Wristguards
+								i(18451),	-- Hyena Wristguards
+							 -- i(18459),	-- Gallant's Wristguards (7.3.5 - Moved to Cho'Rush the Observer)
+							 -- i(18458),	-- Modest Wristguards (7.3.5 - Moved to Captain Kromcrush)
 							})),
 							cr(14325, e(415, {	-- Captain Kromcrush
-								i(18502),			-- Monstrous Glaive
-								i(18503),			-- Kromcrush's Chestplate
-								i(18458),			-- Modest Wristguards (7.3.5 - Moved from Guards)
-								i(18505),			-- Mugger's Belt
-								i(18507),			-- Boots of the Full Moon
+								i(18502),	-- Monstrous Glaive
+								i(18503),	-- Kromcrush's Chestplate
+								i(18458),	-- Modest Wristguards (7.3.5 - Moved from Guards)
+								i(18505),	-- Mugger's Belt
+								i(18507),	-- Boots of the Full Moon
 							})),
 							cr(14324, e(416, {	-- Cho'Rush the Observer
-								i(18484),			-- Cho'Rush's Blade
-								i(18483),			-- Mana Channeling Wand
-								i(18485),			-- Observer's Shield
-								i(18490),			-- Insightful Hood
-								i(18459),			-- Gallant's Wristguards (7.3.5 - Moved from Guards)
-								i(18527),			-- Harmonious Gauntlets (7.3.5 - Moved to Cho'Rush the Observer)
+								i(18484),	-- Cho'Rush's Blade
+								i(18483),	-- Mana Channeling Wand
+								i(18485),	-- Observer's Shield
+								i(18490),	-- Insightful Hood
+								i(18459),	-- Gallant's Wristguards (7.3.5 - Moved from Guards)
+								i(18527),	-- Harmonious Gauntlets (7.3.5 - Moved to Cho'Rush the Observer)
 							})),
 							cr(11501, e(417, {	-- King Gordok
-								i(18520),			-- Barbarous Blade
-								i(18523),			-- Brightly Glowing Stone
-								i(18526),			-- Crown of the Ogre King
-								i(18525),			-- Bracers of Prosperity
-								-- i(18527),		-- Harmonious Gauntlets (7.3.5 - Moved to Cho'Rush the Observer)
-								i(18524),			-- Leggings of Destruction
-								i(18521),			-- Grimy Metal Boots
+								i(18520),	-- Barbarous Blade
+								i(18523),	-- Brightly Glowing Stone
+								i(18526),	-- Crown of the Ogre King
+								i(18525),	-- Bracers of Prosperity
+							 -- i(18527),	-- Harmonious Gauntlets (7.3.5 - Moved to Cho'Rush the Observer)
+								i(18524),	-- Leggings of Destruction
+								i(18521),	-- Grimy Metal Boots
+								i(18522),	-- Band of the Ogre King
 							})),
-							n(14353, {			-- Mizzle the Crafty
+							n( 14353, {			-- Mizzle the Crafty
 								["groups"] = {
 									o(179564, { -- Gordok Tribute Chest (No Localization)
 										["groups"] = {
@@ -237,12 +243,12 @@ _.Instances =
 					n(-14, {	-- Capital Gardens [West - Elves]
 						["groups"] = {
 							n(-17, {	-- Quests
-								qg(44991, q(27112)),	-- The Cursed Remains
+								qg(44991, q( 27112)),	-- The Cursed Remains
 								qg(40032, qa(27131)),	-- The Highborne
-								qg(7875, qh(27132)),	-- The Highborne
-								qg(14358, q(27110)),	-- The Madness Within
-								qg(44991, q(27113)),	-- The Shen'dralar Ancient
-								qg(14358, q(27111, {	-- The Treasure of Shen'dralar
+								qg( 7875, qh(27132)),	-- The Highborne
+								qg(14358, q( 27110)),	-- The Madness Within
+								qg(44991, q( 27113)),	-- The Shen'dralar Ancient
+								qg(14358, q( 27111, {	-- The Treasure of Shen'dralar
 									i(65949),	-- Dire Maul
 									i(65973),	-- Fras Siabi's Cigar Cutter
 									i(65924),	-- Shen'dralar Trident
@@ -250,7 +256,7 @@ _.Instances =
 								})),
 								qg(44999, q(27109)),	-- The Warped Defender
 							}),
-							n(0, {				-- Zone Drop
+							n(  0, {	-- Zone Drop
 								n(11480, {	-- Arcane Aberration
 									dr(0.4, i(18337)),	-- Orphic Bracers
 									dr(0.3, i(18338)),	-- Wand of Arcane Potency
@@ -290,11 +296,13 @@ _.Instances =
 								}),
 							}),
 							cr(11487, e(408, {	-- Magister Kalendris
-								i(18374),				-- Flamescarred Shoulders
-								i(18350),				-- Amplifying Cloak
-								i(18351),				-- Magically Sealed Bracers
+								i(18397),	-- Elder Magus Pendant
+								i(18374),	-- Flamescarred Shoulders
+								i(18350),	-- Amplifying Cloak
+								i(18351),	-- Magically Sealed Bracers
+								i(18371),	-- Mindtap Talisman
 							})),
-							n(11467, {			-- Tsu'zee
+							n( 11467, {			-- Tsu'zee
 								["groups"] = {
 									dr(31, i(18387)),	-- Brightspark Gloves
 									dr(31, i(18346)),	-- Threadbane Trousers
@@ -302,54 +310,55 @@ _.Instances =
 								["description"] = "This is a rare that is not always present.",
 							}),
 							cr(11488, e(407, {	-- Illyanna Ravenoak
-								i(18347),			-- Well Balanced Axe
-								i(18383),			-- Force Imbued Gauntlets
-								i(18377),			-- Quickdraw Gloves (7.3.5 - Moved from Immol'thar)
-								i(18349),			-- Gauntlets of Accuracy
-								i(18386),			-- Padre's Trousers
+								i(18347),	-- Well Balanced Axe
+								i(18383),	-- Force Imbued Gauntlets
+								i(18377),	-- Quickdraw Gloves (7.3.5 - Moved from Immol'thar)
+								i(18349),	-- Gauntlets of Accuracy
+								i(18386),	-- Padre's Trousers
 							})),
 							cr(11489, e(406, {	-- Tendris Warpwood
-								i(18353),			-- Stoneflower Staff
-								i(18352),			-- Petrified Bark Shield
-								i(18382),			-- Fluctuating Cloak (7.3.5 - Moved from Prince Tortheldrin)
-								i(18393),			-- Warpwood Bindings
-								i(18390),			-- Tanglemoss Leggings
+								i(18353),	-- Stoneflower Staff
+								i(18352),	-- Petrified Bark Shield
+								i(18382),	-- Fluctuating Cloak (7.3.5 - Moved from Prince Tortheldrin)
+								i(18393),	-- Warpwood Bindings
+								i(18390),	-- Tanglemoss Leggings
 							})),
 							cr(11496, e(409, {	-- Immol'thar
-								i(18372),			-- Blade of the New Moon
-								i(18384),			-- Bile-Etched Spaulders
-								i(18389),			-- Cloak of the Cosmos
-								i(18385),			-- Robe of Everlasting Night
-								i(18394),			-- Demon Howl Wristguards
-								-- i(18377),		-- Quickdraw Gloves (7.3.5 - Moved to Illyanna Ravenoak)
-								i(18391),			-- Eyestalk Cord
-								i(18379),			-- Odious Greaves
+								i(18372),	-- Blade of the New Moon
+								i(18381),	-- Evil Eye Pendant
+								i(18384),	-- Bile-Etched Spaulders
+								i(18389),	-- Cloak of the Cosmos
+								i(18385),	-- Robe of Everlasting Night
+								i(18394),	-- Demon Howl Wristguards
+							 -- i(18377),	-- Quickdraw Gloves (7.3.5 - Moved to Illyanna Ravenoak)
+								i(18391),	-- Eyestalk Cord
+								i(18379),	-- Odious Greaves
+								i(18370),	-- Vigilance Charm
 							})),
-							n(14506, {			-- Lord Hel'nurath
+							n( 14506, {			-- Lord Hel'nurath
 								["groups"] = {
 									un(11, i(18757)), 	-- Diabolic Mantle
 									un(11, i(18755)), 	-- Xorothian Firestick
 									un(11, i(18756)), 	-- Dreadguard Protector
 									un(11, i(18754)), 	-- Fel Hardened Bracers	
 								},
-								["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Warlock with (Dreadsteed of Xoroth) FOS|r \n|cff3399ffSTEP 2:|r|cff66ccff Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning STEPpes - 8.2,35.8)|r \n|cff3399ffSTEP 3:|r|cff66ccff Kill Immol'thar.|r \n|cff3399ffSTEP 4:|r|cff66ccff Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.|r \n|cff3399ffSTEP 5:|r|cff66ccff Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.|r \n|cff3399ffSTEP 6:|r|cff66ccff Once mobs stop spawning, use Xorothian Glyphs to summon the dreadsteed.|r \n|cff3399ffSTEP 7:|r|cff66ccff Kill Lord Hel'nurath & collect loot.|r"
+								["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Warlock with (Dreadsteed of Xoroth) FOS|r \n|cff3399ffSTEP 2:|r|cff66ccff Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)|r \n|cff3399ffSTEP 3:|r|cff66ccff Kill Immol'thar.|r \n|cff3399ffSTEP 4:|r|cff66ccff Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.|r \n|cff3399ffSTEP 5:|r|cff66ccff Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.|r \n|cff3399ffSTEP 6:|r|cff66ccff Once mobs stop spawning, use Xorothian Glyphs to summon the dreadsteed.|r \n|cff3399ffSTEP 7:|r|cff66ccff Kill Lord Hel'nurath & collect loot.|r"
 							}),
 							cr(11486, e(410, {	-- Prince Tortheldrin
-								i(18396),			-- Mind Carver
-								i(18392),			-- Distracting Dagger
-								i(18376),			-- Timeworn Mace
-								i(18388),			-- Stoneshatter
-								-- i(18382),		-- Fluctuating Cloak (7.3.5 - Moved to Tendris Warpwood)
-								i(18373),			-- Chestplate of Tranquility
-								i(18375),			-- Bracers of the Eclipse
-								i(18380),			-- Eldritch Reinforced Legplates
-								i(18378),			-- Silvermoon Leggings
+								i(18396),	-- Mind Carver
+								i(18392),	-- Distracting Dagger
+								i(18376),	-- Timeworn Mace
+								i(18388),	-- Stoneshatter
+							 -- i(18382),	-- Fluctuating Cloak (7.3.5 - Moved to Tendris Warpwood)
+								i(18373),	-- Chestplate of Tranquility
+								i(18375),	-- Bracers of the Eclipse
+								i(18380),	-- Eldritch Reinforced Legplates
+								i(18378),	-- Silvermoon Leggings
+								i(18395),	-- Emerald Flame Ring
 							})),
-							n(-2, {		-- Vendors
+							n(  2, {	-- Vendors
 								n(14371, { -- Shen'dralar Provisioner
-									i(18487, { -- Pattern: Mooncloth Robe
-										i(18486), -- Mooncloth Robe
-									}),
+									i(18487), -- Pattern: Mooncloth Robe
 								}),
 							}),
 						},
@@ -404,39 +413,17 @@ _.Instances =
 								--n(  0, {	-- Zone Drop (Legacy)
 								--}),
 								o(179501, {	-- Knot Thimblejack's Cache
-									un(7, i(18414, {	-- Pattern: Belt of the Archmage
-										un(8, i(18405)),	-- Belt of the Archmage
-									})),
-									un(7, i(18517, {	-- Pattern: Chromatic Cloak
-										un(8, i(18509)),	-- Chromatic Cloak
-									})),
-									un(2, i(18418, {	-- Pattern: Cloak of Warding
-										un(8, i(18413)),	-- Cloak of Warding
-									})),
-									un(2, i(18415, {	-- Pattern: Felcloth Gloves
-										un(8, i(18407)),	-- Felcloth Gloves
-									})),
-									un(2, i(18514, {	-- Pattern: Girdle of Insight
-										un(8, i(18504)),	-- Girdle of Insight
-									})),
-									un(7, i(18518, {	-- Pattern: Hide of the Wild
-										un(8, i(18510)),	-- Hide of the Wild
-									})),
-									un(2, i(18416, {	-- Pattern: Inferno Gloves
-										un(8, i(18408)),	-- Inferno Gloves
-									})),
-									un(2, i(18515, {	-- Pattern: Mongoose Boots
-										un(8, i(18506)),	-- Mongoose Boots
-									})),
-									un(2, i(18417, {	-- Pattern: Mooncloth Gloves
-										un(8, i(18409)),	-- Mooncloth Gloves
-									})),
-									un(7, i(18519, {	-- Pattern: Shifting Cloak
-										un(8, i(18511)),	-- Shifting Cloak
-									})),
-									un(2, i(18516, {	-- Pattern: Swift Flight Bracers
-										un(8, i(18508)),	-- Swift Flight Bracers
-									})),
+									un(7, i(18414)),	-- Pattern: Belt of the Archmage
+									un(7, i(18517)),	-- Pattern: Chromatic Cloak
+									un(2, i(18418)),	-- Pattern: Cloak of Warding
+									un(2, i(18415)),	-- Pattern: Felcloth Gloves
+									un(2, i(18514)),	-- Pattern: Girdle of Insight
+									un(7, i(18518)),	-- Pattern: Hide of the Wild
+									un(2, i(18416)),	-- Pattern: Inferno Gloves
+									un(2, i(18515)),	-- Pattern: Mongoose Boots
+									un(2, i(18417)),	-- Pattern: Mooncloth Gloves
+									un(7, i(18519)),	-- Pattern: Shifting Cloak
+									un(2, i(18516)),	-- Pattern: Swift Flight Bracers
 								}),
 							}),
 							n(-14, {	-- Capital Gardens [West - Elves]
