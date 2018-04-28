@@ -5934,6 +5934,15 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
+		-- Group Finder
+		if app.Categories.GroupFinder then
+			db = app.CreateAchievement(4476, app.Categories.GroupFinder);	-- Looking for More
+			db.f = 0;
+			db.expanded = false;
+			db.text = DUNGEONS_BUTTON;
+			table.insert(g, db);
+		end
+		
 		-- Class Halls
 		if app.Categories.ClassHalls then
 			db = {};
