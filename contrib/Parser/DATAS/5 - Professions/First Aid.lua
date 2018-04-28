@@ -122,6 +122,36 @@ profession(129, { -- First Aid
 			})
 		},
 	}),
+	n(-26, {	-- Drop
+		un(2, i(16084, {		-- Expert First Aid - Under Wraps
+			["collectible"] = false,
+			["description"] = "No longer required.",
+		})),
+		un(2, i(16085, {		-- Artisan First Aid - Heal Thyself
+			["collectible"] = false,
+			["description"] = "No longer required.",
+		})),
+		un(2, i(22012, {		-- Master First Aid - Doctor in the House
+			["collectible"] = false,
+			["description"] = "No longer required.",
+		})),
+		i(6454),	-- Manual: Strong Anti-Venom  -- TODO: https://www.wowhead.com/item=6454/manual-strong-anti-venom
+		un(2, i(16112, {		-- Manual: Heavy Silk Bandage
+			["description"] = "No longer required.",
+		})),
+		un(2, i(16113, {		-- Manual: Mageweave Bandage
+			["description"] = "No longer required.",
+		})),
+		un(2, i(21992, {		-- Manual: Netherweave Bandage
+			["description"] = "No longer required.",
+		})),
+		un(2, i(21993, {		-- Manual: Heavy Netherweave Bandage
+			["description"] = "No longer required.",
+		})),
+		un(2, i(39152, {		-- Manual: Heavy Frostweave Bandage
+			["description"] = "No longer required.",
+		})),
+	}),
 	n(-15, { -- Recipes
 		-- Classic
 		recipe(3275),	-- Linen Bandage
@@ -129,11 +159,7 @@ profession(129, { -- First Aid
 		recipe(7934),	-- Anti-Venom
 		recipe(3277),	-- Wool Bandage
 		recipe(3278),	-- Heavy Wool Bandage
-		{
-			["recipeID"] = 7935,	-- Strong Anti-Venom
-			["itemID"] = 6454,		-- Manual: Strong Anti-Venom
-			-- TODO: https://www.wowhead.com/item=6454/manual-strong-anti-venom
-		},
+		recipe(7935),	-- Strong Anti-Venom
 		recipe(7928),	-- Silk Bandage
 		recipe(7929),	-- Heavy Silk Bandage
 		recipe(10840),	-- Mageweave Bandage
