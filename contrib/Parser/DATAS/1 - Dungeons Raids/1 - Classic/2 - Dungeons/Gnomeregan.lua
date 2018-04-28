@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(231, { 	-- Gnomeregan
 				["groups"] = {
-					n(-17, {			-- Quests
+					n(-17, {	-- Quests
 						i(9326, {	-- Grime-Encrusted Ring
 							q(2945, {	-- Grime-Encrusted Ring
 								["g"] = {
@@ -73,7 +73,7 @@ _.Instances =
 							i(131625),	-- Hann Ibal's Chain Dungarees
 						})),
 					}),
-					n(0, {				-- Zone Drop
+					n(  0, {	-- Zone Drop
 						i(9510),	-- Caverndeep Trudgers
 						i(9308, {	-- Grime-Encrusted Object
 							q(2952, { 	-- The Sparklematic 5200!
@@ -252,32 +252,33 @@ _.Instances =
 							dr(0.01, i(9485)),	-- Vibroblade
 						}),
 					}),
-					cr(7361, e(419, {	-- Grubbis
+					cr( 7361, e(419, {	-- Grubbis
 						i(151080),	-- Grubbis' Protective Pail
-						i(9445),	-- Grubbis Paws
+						i(  9445),	-- Grubbis Paws
 						i(151079),	-- Chomper-Hide Belt
 						i(151078),	-- Shabby Trogg Britches
 					})),
-					cr(7079, e(420, {	-- Viscous Fallout
-						i(9452),	-- Hydrocane
-						i(9453),	-- Toxic Revenger
+					cr( 7079, e(420, {	-- Viscous Fallout
+						i(  9452),	-- Hydrocane
+						i(  9453),	-- Toxic Revenger
 						i(151081),	-- Gnomish Rebreather
 						i(151082),	-- Lead Apron
-						i(9454),	-- Acidic Walkers
+						i(  9454),	-- Acidic Walkers
 						i(151083),	-- Hazmat Galoshes
 					})),
-					cr(6235, e(421, {	-- Electrocutioner 6000
+					cr( 6235, e(421, {	-- Electrocutioner 6000
 						i(9446),	-- Electrocutioner Leg
 						i(9448),	-- Spidertank Oilrag
+						i(9447),	-- Electrocutioner Lagnut
 					})),
-					cr(6229, e(418, {	-- Crowd Pummeler 9-60
-						i(9449),	-- Manual Crowd Pummeler
+					cr( 6229, e(418, {	-- Crowd Pummeler 9-60
+						i(  9449),	-- Manual Crowd Pummeler
 						i(151085),	-- Glitchbot Helm
 						i(151084),	-- Grease-Smudged Sash
 						i(132558),	-- Bot Operator's Treads
-						i(9450),	-- Gnomebot Operating Boots
+						i(  9450),	-- Gnomebot Operating Boots
 					})),
-					n(6228, {			-- Dark Iron Ambassador
+					n(  6228, {			-- Dark Iron Ambassador
 						["groups"] = {	
 							dr(38, i(9456)),	-- Glass Shooter
 							dr(28, i(9457)),	-- Royal Diplomatic Scepter
@@ -287,20 +288,17 @@ _.Instances =
 					}),
 					n(113621, {			-- Endgineer Omegaplugg
 						["groups"] = {
-							i(141331), -- Vial of Green Goo (Toy)
+							i(141331), -- Vial of Green Goo (TOY!)
 						},
 						["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Head to the last boss in Gnomeregan but DO NOT kill him.|r  \n|cff3399ffSTEP 2:|r|cff66ccff Go to the back of the pillar on the left side of the entrance as you enter the room and press the small button.|r\n|cff3399ffSTEP 3:|r|cff66ccff Endgineer Omegaplugg will spawn, with 207 Million health.  He drops the toy.  Everyone in group can loot the toy.  Good Luck!|r"
 					}),
-					cr(7800, e(422, {	-- Mekgineer Thermaplugg
-						i(9459),	-- Thermaplugg's Left Arm
-						i(9458),	-- Thermaplugg's Central Core
-						i(9492),	-- Electromagnetic Gigaflux Reactivator
-						i(4415, { 	-- Schematic: Craftsman's Monocle
-							i(4393),	-- Craftsman's Monocle
-						}),
-						i(11828, { 	-- Schematic: Pet Bombling
-							i(11825),	-- Pet Bombling
-						}),	
+					cr( 7800, e(422, {	-- Mekgineer Thermaplugg
+						i( 9459),	-- Thermaplugg's Left Arm
+						i( 9458),	-- Thermaplugg's Central Core
+						i( 9492),	-- Electromagnetic Gigaflux Reactivator
+						i( 9461),	-- Charged Gear
+						i( 4415), 	-- Schematic: Craftsman's Monocle
+						i(11828), 	-- Schematic: Pet Bombling	
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {

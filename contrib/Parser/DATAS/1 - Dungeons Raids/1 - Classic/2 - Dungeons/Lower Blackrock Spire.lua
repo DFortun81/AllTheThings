@@ -33,7 +33,7 @@ _.Instances =
 							i(65981),	-- War Master's Pauldrons
 						}),
 					}),
-					n(0, {		-- Zone Drop
+					n(  0, {	-- Zone Drop
 						n(9259, {		-- Firebrand Grunt
 							dr(1.6, i(15749)),	-- Pattern: Volcanic Breastplate
 							nld({     -- Legacy
@@ -74,7 +74,7 @@ _.Instances =
 							["description"] = "DO NOT KILL this mob if trying to get the Burning Felguard to spawn.",
 						}),
 						n(9216, { 		-- Spirestone Warlord
-							dr(9, i(16250)),	-- Formula: Enchant Weapon - Superior Striking
+							dr(9.0, i(16250)),	-- Formula: Enchant Weapon - Superior Striking
 							dr(.01, i(13260))	-- Wind Dancer Boots
 						}),
 					}),
@@ -100,21 +100,21 @@ _.Instances =
 						["description"] = "This is a rare that is not always present.",
 					}),
 					cr( 9196, e(388, {	-- Highlord Omokk
-						i(13167),	-- Fist of Omokk
+						i( 13167),	-- Fist of Omokk
 						i(151412),	-- Ogre Highlord's Casque
-						i(13166),	-- Slamshot Shoulders
-						i(13168),	-- Plate of the Shaman King
-						i(13170),	-- Skyshroud Leggings
-						i(13169),	-- Tressermane Leggings
+						i( 13166),	-- Slamshot Shoulders
+						i( 13168),	-- Plate of the Shaman King
+						i( 13170),	-- Skyshroud Leggings
+						i( 13169),	-- Tressermane Leggings
 					})),
 					cr( 9236, e(389, {	-- Shadow Hunter Vosh'gajin
-						i(12651),	-- Blackcrow
-						i(12653),	-- Riphook
-						i(13257),	-- Demonic Runed Spaulders
-						i(12626),	-- Funeral Cuffs
-						i(13255),	-- Trueaim Gauntlets
+						i( 12651),	-- Blackcrow
+						i( 12653),	-- Riphook
+						i( 13257),	-- Demonic Runed Spaulders
+						i( 12626),	-- Funeral Cuffs
+						i( 13255),	-- Trueaim Gauntlets
 						i(151413),	-- Smolderthorn Greatbelt
-						nld({     -- Legacy
+						nld({	-- Legacy
 							un(7, i(16712)), 	-- Shadowcraft Gloves
 						}),																				
 					})),
@@ -131,6 +131,7 @@ _.Instances =
 					}),	
 					cr( 9237, e(390, {	-- War Master Voone
 						i(12582),	-- Keris of Zul'Serak
+						i(13177),	-- Talisman of Evasion
 						i(13179),	-- Brazecore Armguards
 						i(22231),	-- Kayser's Boots of Precision
 						nld({     -- Legacy
@@ -155,21 +156,23 @@ _.Instances =
 						["description"] = "This is a rare that is not always present.",
 					}),
 					cr(10596, e(391, {	-- Mother Smolderweb
-						i( 68673),	-- Smolderthorn Egg
+						i( 68673),	-- Smolderthorn Egg (PET!)
 						i( 13183),	-- Venomspitter
 						i(151414),	-- Arcanophile's Greatcloak
 						i( 13244),	-- Gilded Gauntlets
+						i( 13213),	-- Smolderweb's Eye
 					})),
 					cr(10584, e(392, {	-- Urok Doomhowl
 						["groups"] = {	
 							i(13258),	-- Slaghide Gauntlets
 							i(22232),	-- Marksman's Girdle
 							i(13259),	-- Ribsteel Footguards
+							i(13178),	-- Rosewine Circle
 						},
 						["description"] = "Summonable Boss. Loot a Roughshod Pike, it will be on the left wall after crossing the second bridge before heading to Highlord Omokk. Then kill Highlord Omokk and loot his head. After killing Mother Smolderweb head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
 					})),
 					cr( 9736, e(393, {	-- Quartermaster Zigris
-						i( 12264),	-- Worg Carrier
+						i( 12264),	-- Worg Carrier (PET!)
 						i( 13253),	-- Hands of Power
 						i( 13252),	-- Cloudrunner Girdle
 						i(151416),	-- Dark Horde Grunt's Legplates
@@ -187,16 +190,17 @@ _.Instances =
 						}),																				
 					})),
 					cr(10220, e(394, {	-- Halycon
+						i(13212),	-- Halcyon's Spiked Collar
 						i(22313),	-- Ironweave Bracers
 						i(13211),	-- Slashclaw Bracers
 						i(13210),	-- Pads of the Dread Wolf
 					})),
 					cr(10268, e(395, {	-- Gizrul the Slavener
-						i(13205),	-- Rhombeard Protector
+						i( 13205),	-- Rhombeard Protector
 						i(151418),	-- Raider Aspirant's Helm
 						i(151417),	-- Worg-Keeper's Spaulders
-						i(13208),	-- Bleak Howler Armguards
-						i(13206),	-- Wolfshear Leggings
+						i( 13208),	-- Bleak Howler Armguards
+						i( 13206),	-- Wolfshear Leggings
 					})),
 					n(  9718, {			-- Ghok Bashguud
 						["groups"] = {	
@@ -210,6 +214,8 @@ _.Instances =
 						i( 13163),	-- Relentless Scythe
 						i( 13161),	-- Trindlehaven Staff
 						i( 13162),	-- Reiver Claws
+						i( 13143),	-- Mark of the Dragon Lord
+						i( 22321),	-- Heart of Wyrmthalak
 						i(142370),	-- Plans: Arcanite Champion
 					})),
 					n(-40, {	-- Legacy
