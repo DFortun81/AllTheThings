@@ -1712,7 +1712,7 @@ local function RefreshLocationCoroutine()
 		coroutine.yield();
 		mapID = app.GetCurrentMapID();
 	end
-	print("Current Map ID #", mapID);
+	--print("Current Map ID #", mapID);
 	
 	-- Cache that we're in the current map ID.
 	if GetTempDataMember("MapID") ~= mapID then
@@ -7808,7 +7808,7 @@ app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 								end
 							end
 							if not skillCache[spellRecipeInfo.recipeID] then
-								app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
+								--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
 								skillCache[spellRecipeInfo.recipeID] = { {} };
 							end
 						end
