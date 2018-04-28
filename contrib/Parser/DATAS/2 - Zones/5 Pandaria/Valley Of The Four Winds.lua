@@ -169,7 +169,10 @@ _.Zones =
 					q(32048),	-- Candy Bucket
 ]]--
 					sq({33021,33139}, qg(64231, q(33022, {	-- Catch and Carry
+						un(1, i(101631)),	-- Recipe: Noodle Cart Kit
 						recipe(145038),	-- Noodle Cart Kit
+						un(1, i(101728)),	-- Recipe: Grand Noodle Cart Kit
+						un(1, recipe(145167)),	-- Grand Noodle Cart Kit
 					}))),
 --[[
 					q(30318),	-- Chasing the Chicken
@@ -221,7 +224,10 @@ _.Zones =
 					q(30085),	-- Into the Brewery
 ]]--
 					sq(33022, qg(64231, q(33024, {	-- Is That A Real Measurement?
+						un(1, i(101664)),	-- Recipe: Deluxe Noodle Cart Kit
 						recipe(145061),	-- Deluxe Noodle Cart Kit
+						un(1, i(101739)),	-- Recipe: Grand Deluxe Noodle Cart Kit
+						un(1, recipe(145170)),	-- Grand Deluxe Noodle Cart Kit
 					}))),
 --[[
 					qa( 30624),	-- It Does You No Good In The Keg
@@ -336,7 +342,10 @@ _.Zones =
 					q(33027),	-- The Secret Ingredient Is...
 ]]--
 					sq(33026, qg(64231, q(33027, {	-- The Secret Ingredient Is...
+						un(1, i(101663)),	-- Recipe: Pandaren Treasure Noodle Cart Kit
 						recipe(145062),	-- Pandaren Treasure Noodle Cart Kit
+						un(1, i(101741)),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
+						un(1, recipe(145197)),	-- Grand Pandaren Treasure Noodle Cart Kit
 					}))),
 --[[
 					q(31474),	-- The Soup of Contemplation
@@ -761,10 +770,15 @@ _.Zones =
 				}),
 				n(-2, {		-- Vendors
 					n(58713, {	-- Anthea Ironpaw <Master of the Wok>
+						un(1, i(74666)),	-- Recipe: Sauteed Carrots
 						recipe(104301),	-- Sauteed Carrots
+						un(1, i(74668)),	-- Recipe: Sea Mist Rice Noodles
 						recipe(104303),	-- Sea Mist Rice Noodles
+						un(1, i(74667)),	-- Recipe: Valley Stir Fry
 						recipe(104302),	-- Valley Stir Fry
+						un(1, i(87231)),	-- Recipe: Banquet of the Wok
 						recipe(125594),	-- Banquet of the Wok
+						un(1, i(87233)),	-- Recipe: Great Banquet of the Wok
 						recipe(125595),	-- Great Banquet of the Wok
 					}),
 					na(75694, {	-- Armsmaster Holinka <Tyrannical Gladiator>
@@ -985,7 +999,9 @@ _.Zones =
 						recipe(124052),	-- Ginseng Tea
 						recipe(124053),	-- Jade Witch Brew
 						recipe(124054),	-- Mad Brewer's Breakfast
+						un(1, i(87247)),	-- Recipe: Banquet of the Brew
 						recipe(125602),	-- Banquet of the Brew
+						un(1, i(87249)),	-- Recipe: Great Banquet of the Brew
 						recipe(125603),	-- Great Banquet of the Brew
 					}),
 					n(61215, {	-- Claretta <Adventuring Supplies>
@@ -1493,17 +1509,27 @@ _.Zones =
 --]]
 					}),
 					n(58716, {	-- Jian Ironpaw <Master of the Oven>
+						un(1, i(74677)),	-- Recipe: Chun Tian Spring Rolls
 						recipe(104312),	-- Chun Tian Spring Rolls
+						un(1, i(74676)),	-- Recipe: Twin Fish Platter
 						recipe(104311),	-- Twin Fish Platter
+						un(1, i(74675)),	-- Recipe: Wildfowl Roast
 						recipe(104310),	-- Wildfowl Roast
+						un(1, i(87243)),	-- Recipe: Banquet of the Oven
 						recipe(125600),	-- Banquet of the Oven
+						un(1, i(87245)),	-- Recipe: Great Banquet of the Oven
 						recipe(125601),	-- Great Banquet of the Oven
 					}),
 					n(58712, {	-- Kol Ironpaw <Master of the Grill>
+						un(1, i(74665)),	-- Recipe: Black Pepper Ribs and Shrimp
 						recipe(104300),	-- Black Pepper Ribs and Shrimp
+						un(1, i(74663)),	-- Recipe: Charbroiled Tiger Steak
 						recipe(104298),	-- Charbroiled Tiger Steak
+						un(1, i(74664)),	-- Recipe: Eternal Blossom Fish
 						recipe(104299),	-- Eternal Blossom Fish
+						un(1, i(87227)),	-- Recipe: Banquet of the Grill
 						recipe(125141),	-- Banquet of the Grill
+						un(1, i(87229)),	-- Recipe: Great Banquet of the Grill
 						recipe(125142),	-- Great Banquet of the Grill
 					}),
 					n(75689, {	-- Lucan Malory <Malevolent Gladiator>
@@ -1703,17 +1729,27 @@ _.Zones =
 						i(91791),	-- Malevolent Gladiator's Plate Shoulders
 					}),
 					n(58714, {	-- Mei Mei Ironpaw <Master of the Pot>
+						un(1, i(74670)),	-- Recipe: Braised Turtle
 						recipe(104305),	-- Braised Turtle
+						un(1, i(74671)),	-- Recipe: Mogu Fish Stew
 						recipe(104306),	-- Mogu Fish Stew
+						un(1, i(74669)),	-- Recipe: Swirling Mist Soup
 						recipe(104304),	-- Swirling Mist Soup
+						un(1, i(87235)),	-- Recipe: Banquet of the Pot
 						recipe(125596),	-- Banquet of the Pot
+						un(1, i(87237)),	-- Recipe: Great Banquet of the Pot
 						recipe(125597),	-- Great Banquet of the Pot
 					}),
 					n(64395, { 	-- Nam Ironpaw <Stockmaster>
-						i(88801),	-- Flippable Table
-						i(86468),	-- Apron
-						i(86559),	-- Frying Pan (cannot be transmogged)
-						i(86558),	-- Rolling Pin (cannot be transmogged)
+						currency(402, {	-- Ironpaw Token
+							i(75013),	-- Recipe: Pandaren Banquet
+							i(75017),	-- Recipe: Great Pandaren Banquet
+							i(86425),	-- Cooking School Bell
+							i(88801),	-- Flippable Table
+							i(86468),	-- Apron
+							i(86559),	-- Frying Pan (cannot be transmogged)
+							i(86558),	-- Rolling Pin (cannot be transmogged)
+						}),
 					}),
 					n(64465, {	-- Noodles <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
@@ -2069,10 +2105,15 @@ _.Zones =
 						i(81686),	-- Faded Forest Axe
 					}),
 					n(58715, {	-- Yan Ironpaw <Master of the Steamer>
+						un(1, i(74673)),	-- Recipe: Fire Spirit Salmon
 						recipe(104308),	-- Fire Spirit Salmon
+						un(1, i(74672)),	-- Recipe: Shrimp Dumplings
 						recipe(104307),	-- Shrimp Dumplings
+						un(1, i(74674)),	-- Recipe: Steamed Crab Surprise
 						recipe(104309),	-- Steamed Crab Surprise
+						un(1, i(87239)),	-- Recipe: Banquet of the Steamer
 						recipe(125598),	-- Banquet of the Steamer
+						un(1, i(87241)),	-- Recipe: Great Banquet of the Steamer
 						recipe(125599),	-- Great Banquet of the Steamer
 					}),
 				}),
