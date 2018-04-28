@@ -10,7 +10,7 @@ _.PVP =
 					i(134643),	-- Auxiliary's Cuffs*
 					i(134642),	-- Auxiliary's Leggings*
 					i(134640),	-- Auxiliary's Robe
-					i(134641),	-- Auxiliary's Treads
+					i(134641),	-- Auxiliary's Treads*
 					i(134650),	-- Rookie's Bindings
 					i(134648),	-- Rookie's Boots
 					i(134649),	-- Rookie's Pants
