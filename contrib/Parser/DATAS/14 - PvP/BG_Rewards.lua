@@ -53,7 +53,7 @@ _.PVP =
 			i(134680),	-- Greenhorn's Helm
 			i(134681),	-- Greenhorn's Legguards
 			i(134682),	-- Greenhorn's Spaulders
-			i(134683),	-- Front-Line Gauntlets
+			i(134683),	-- Front-Line Gauntlets*
 			i(134685),	-- Front-Line Greaves
 			i(134684),	-- Front-Line Helm*
 			i(134686),	-- Front-Line Shoulders
