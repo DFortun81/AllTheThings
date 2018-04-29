@@ -90,7 +90,7 @@ _.Instances =
 						["description"] = "Epic items in this dungeon are listed in the Dungeon Journal as dropping in both Normal and Heroic. Odds of getting the epics in Normal are low to non-existant. Strongly recommend if you are after these items, you run the instance on Heroic.",
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(18830, {	-- Cabal Fanatic
@@ -152,7 +152,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 65,
+				["lvl"] = 65,
 				["mapID"] = 724,
 			}),
 		},					

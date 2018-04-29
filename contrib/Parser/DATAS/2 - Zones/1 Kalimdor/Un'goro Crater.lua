@@ -587,7 +587,7 @@ _.Zones =
 				}),
 			},
 			["achievementID"] = 854,
-			["Lvl"] = 50,
+			["lvl"] = 50,
 			["description"] = "|cff66ccffUn'goro Crater is a lush zone in southern Kalimdor, surrounded by three desert zones. It is filled with devilsaurs, exotic crystals, dinosaurs, and elementals. In the center of Un'goro crater is Fire Plume Ridge, a volcanic mountain. Before Cataclysm, there was a long quest series referencing Nintendo characters such as Link.|r",
 		}),
 	}),

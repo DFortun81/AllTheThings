@@ -1581,7 +1581,7 @@ _.GearSets =
 					i(141380), -- Unholy 1H Warsword
 					i(141364), -- Unholy 2H Sword
 				},
-				["Lvl"] = 110,
+				["lvl"] = 110,
 			}),
 			i(141371, { -- Arsenal: Armaments of the Silver Hand
 				["groups"] = {
@@ -1590,7 +1590,7 @@ _.GearSets =
 					i(141370), -- Shield
 					i(141367), -- 1H Mace	
 				},
-				["Lvl"] = 110,				
+				["lvl"] = 110,				
 			}),
 			i(136854, {	-- Arsenal: Draenor Challenger's Armaments
 				["groups"] = {
@@ -1613,7 +1613,7 @@ _.GearSets =
 					i(118399),	-- Suneater
 					i(118410),	-- Tesseract Timepiece
 				},
-				["Lvl"] = 100,
+				["lvl"] = 100,
 			}),
 			i(152396, { -- Arsenal: Weapons of the Lightforged
 				["groups"] = {
@@ -1630,7 +1630,7 @@ _.GearSets =
 					i(152341), -- Lustrous Eventide Greatsword
 					i(152343), -- Lustrous Eventide Staff
 				},
-				["Lvl"] = 110,
+				["lvl"] = 110,
 			}),
 			
 		},

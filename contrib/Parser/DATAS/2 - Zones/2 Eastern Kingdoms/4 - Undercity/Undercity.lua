@@ -1021,7 +1021,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["Lvl"] = 1,
+			["lvl"] = 1,
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\inv_misc_tournaments_banner_scourge",
 			["description"] = "|cff66ccffThe Undercity is the capital city of the Forsaken undead of the Horde. It is located in Tirisfal Glades, at the northern edge of the Eastern Kingdoms.|r",				

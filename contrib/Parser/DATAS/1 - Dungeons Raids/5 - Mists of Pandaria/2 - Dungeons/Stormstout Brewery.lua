@@ -76,7 +76,7 @@ _.Instances =
 					}),
 					d(2, {		-- Heroic
 						["ids"] = { 524 }, -- Heroic
-						["Lvl"] = 90,
+						["lvl"] = 90,
 						["groups"] = {
 							cr(56637, e(668, {	-- Ook-Ook
 								i(144084),	-- Ook's Hozen Slicer
@@ -128,7 +128,7 @@ _.Instances =
 					}),
 					d(24, {		-- Timewalking
 						["ids"] = { 615 }, -- Timewalking
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["groups"] = {
 							cr(56637, e(668, {	-- Ook-Ook
 								i(144084),	-- Ook's Hozen Slicer
@@ -156,7 +156,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 85,
+				["lvl"] = 85,
 				["mapID"] = 876
 			}),
 		},					

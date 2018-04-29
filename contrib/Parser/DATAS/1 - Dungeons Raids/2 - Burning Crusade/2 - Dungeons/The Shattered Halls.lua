@@ -87,7 +87,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(16807, e(566, {	-- Grand Warlock Nethekurse
@@ -138,7 +138,7 @@ _.Instances =
 							}))
 						}}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 60,
+						["lvl"] = 60,
 						["groups"] = {
 							cr(16807, e(566, {	-- Grand Warlock Nethekurse
 								i(123995),		-- Hortus' Seal of Brilliance
@@ -178,7 +178,7 @@ _.Instances =
 							}))
 						}})
 				},
-				["Lvl"] = 65,
+				["lvl"] = 65,
 				["mapID"] = 710
 			}),
 		},					

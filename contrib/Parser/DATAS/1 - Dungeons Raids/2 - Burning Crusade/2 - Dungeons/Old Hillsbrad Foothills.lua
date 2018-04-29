@@ -80,7 +80,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(28132, {	-- Don Carlos
@@ -134,7 +134,7 @@ _.Instances =
 							}))
 						}})
 				},
-				["Lvl"] = 63,
+				["lvl"] = 63,
 				["mapID"] = 734
 			}),
 		},					

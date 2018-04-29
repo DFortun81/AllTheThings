@@ -178,7 +178,7 @@ _.ClassHalls =
 					["groups"] = {
 						{ ["itemID"] = 143638, ["mountID"] = 231437, ["questID"] = 46319 }, -- Moon-Kissed Feather
 					},
-					["Lvl"] = 110,
+					["lvl"] = 110,
 					["classes"] = {11}
 				}),
 				--]]
@@ -534,7 +534,7 @@ _.ClassHalls =
 				}),
 			}),
 		},
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		["mapID"] = 1077,
 		["maps"] = {1048}	-- The Emerald Dreamway
 		--["icon"] = "Interface\\Icons\\classicon_druid",

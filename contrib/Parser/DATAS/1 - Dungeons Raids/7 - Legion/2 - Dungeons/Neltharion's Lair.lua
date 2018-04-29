@@ -60,7 +60,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 110,
+						["lvl"] = 110,
 						["groups"] = {
 							cr(91003, e(1662, {	-- Rokmora
 								i(139121),
@@ -105,7 +105,7 @@ _.Instances =
 							}))
 						}}),
 					d(23, {		-- Mythic
-						["Lvl"] = 110,
+						["lvl"] = 110,
 						["groups"] = {
 							cr(91003, e(1662, {	-- Rokmora
 								i(139121),
@@ -150,7 +150,7 @@ _.Instances =
 							}))
 						}})
 				},
-				["Lvl"] = 98,
+				["lvl"] = 98,
 				["mapID"] = 1065
 			}),
 		},					

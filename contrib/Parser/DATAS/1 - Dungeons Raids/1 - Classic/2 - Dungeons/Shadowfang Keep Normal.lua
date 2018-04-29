@@ -38,7 +38,7 @@ _.Instances =
 										un(18, dr(.33, i(50250))),	-- Big Love Rocket
 										un(18, dr(1.0, i(50471))),	-- The Heartbreaker
 									},
-									["Lvl"] = 98,
+									["lvl"] = 98,
 								}),
 								i(147907, { -- Heart-Shaped Carton
 									["groups"] = {
@@ -47,7 +47,7 @@ _.Instances =
 										un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
 										un(18, dr(1.0, i(50471))),	-- The Heartbreaker
 									},
-									["Lvl"] = 16,
+									["lvl"] = 16,
 								}),
 							}),
 						},
@@ -386,7 +386,7 @@ _.Instances =
 						["u"] = 12,
 					}),
 				},
-				["Lvl"] = 11,
+				["lvl"] = 11,
 				["mapID"] = 764
 			}),
 		},					

@@ -104,7 +104,7 @@ _.Instances =
 					}),
 					d(2, {		-- Heroic
 						["ids"] = { 524 }, -- Heroic
-						["Lvl"] = 90,
+						["lvl"] = 90,
 						["groups"] = {
 							cr(56448, e(672, {	-- Wise Mari
 								i(144017), -- Waterburst Helm
@@ -170,7 +170,7 @@ _.Instances =
 					}),
 					d(24, {		-- Timewalking
 						["ids"] = { 615 }, -- Timewalking
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["groups"] = {
 							cr(56448, e(672, {	-- Wise Mari
 								i(144017), -- Waterburst Helm
@@ -205,7 +205,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 85,
+				["lvl"] = 85,
 				["mapID"] = 867
 			}),
 		},					

@@ -30,7 +30,7 @@ _.WorldEvents =
 									un(18, dr(0.33, i(50250))),	-- Big Love Rocket
 									un(18, dr(1.0, i(50471))),	-- The Heartbreaker
 								},
-								["Lvl"] = 98,
+								["lvl"] = 98,
 							}),
 							i(147907, { -- Heart-Shaped Carton
 								["groups"] = {
@@ -39,7 +39,7 @@ _.WorldEvents =
 									un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
 									un(18, dr(1.0, i(50471))),	-- The Heartbreaker
 								},
-								["Lvl"] = 16,
+								["lvl"] = 16,
 							}),
 						}),
 						n(47626, { -- Admiral Ripsnarl
@@ -95,126 +95,126 @@ _.WorldEvents =
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["Lvl"] = 71,
+							["lvl"] = 71,
 							["qg"] = 38066,
 						}),	
 						q(24651, {	-- Crushing the Crown
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["Lvl"] = 61,
+							["lvl"] = 61,
 							["qg"] = 37172,
 						}),	
 						q(28935, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["Lvl"] = 81,
+							["lvl"] = 81,
 							["qg"] = 37172,
 						}),	
 						q(24650, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["Lvl"] = 51,
+							["lvl"] = 51,
 							["qg"] = 37172,
 						}),	
 						q(24652, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["Lvl"] = 71,
+							["lvl"] = 71,
 							["qg"] = 37172,
 						}),	
 						q(28934, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["Lvl"] = 81,
+							["lvl"] = 81,
 							["qg"] = 38066,
 						}),	
 						q(24658, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["Lvl"] = 5,
+							["lvl"] = 5,
 							["qg"] = 38066,
 						}),	
 						q(24659, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["Lvl"] = 14,
+							["lvl"] = 14,
 							["qg"] = 38066,
 						}),	
 						q(24660, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["Lvl"] = 23,
+							["lvl"] = 23,
 							["qg"] = 38066,
 						}),	
 						q(24662, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["Lvl"] = 32,
+							["lvl"] = 32,
 							["qg"] = 38066,
 						}),	
 						q(24663, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["Lvl"] = 41,
+							["lvl"] = 41,
 							["qg"] = 38066,
 						}),	
 						q(24664, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["Lvl"] = 51,
+							["lvl"] = 51,
 							["qg"] = 38066,
 						}),	
 						q(24665, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["Lvl"] = 61,
+							["lvl"] = 61,
 							["qg"] = 38066,
 						}),	
 						q(24638, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["Lvl"] = 5,
+							["lvl"] = 5,
 							["qg"] = 37172,
 						}),	
 						q(24645, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["Lvl"] = 14,
+							["lvl"] = 14,
 							["qg"] = 38066,
 						}),	
 						q(24647, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["Lvl"] = 23,
+							["lvl"] = 23,
 							["qg"] = 38066,
 						}),	
 						q(24648, {	-- Crushing the Crown
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["Lvl"] = 32,
+							["lvl"] = 32,
 							["qg"] = 38066,
 						}),	
 						q(24649, {	-- Crushing the Crown	
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["Lvl"] = 41,
+							["lvl"] = 41,
 							["qg"] = 38066,
 						}),	
 						a(q(24848)),	-- Fireworks At The Gilded Rose
@@ -224,13 +224,13 @@ _.WorldEvents =
 							["groups"] = {
 							},
 							["races"] = { 1,3,4,7,11,22,25,29,30 },
-							["Lvl"] = 78,
+							["lvl"] = 78,
 						}),	
 						q(24793, {	-- Man on the Inside
 							["groups"] = {
 							},
 							["races"] = { 2,5,6,8,9,10,26,27,28 },
-							["Lvl"] = 78,
+							["lvl"] = 78,
 						}),
 						h(q(24541)),	-- Pilfering Perfume
 						a(q(24656)),	-- Pilfering Perfume
@@ -244,7 +244,7 @@ _.WorldEvents =
 						q(14488, {	-- You've Been Served
 							["groups"] = {
 							},
-							["Lvl"] = 80,
+							["lvl"] = 80,
 						}),
 					}),
 					n(-2, { -- Vendors

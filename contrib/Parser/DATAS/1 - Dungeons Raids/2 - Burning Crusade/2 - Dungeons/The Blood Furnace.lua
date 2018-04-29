@@ -71,7 +71,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(17381, e(555, {	-- The Maker
@@ -116,7 +116,7 @@ _.Instances =
 							}))
 						}})
 				},
-				["Lvl"] = 58,
+				["lvl"] = 58,
 				["mapID"] = 725
 			}),
 		},					

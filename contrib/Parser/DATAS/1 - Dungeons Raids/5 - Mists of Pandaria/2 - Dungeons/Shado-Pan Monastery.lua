@@ -90,7 +90,7 @@ _.Instances =
 					}),
 					d(2, {		-- Heroic
 						["ids"] = { 524 }, -- Heroic
-						["Lvl"] = 90,
+						["lvl"] = 90,
 						["groups"] = {
 							cr(56747, e(673, {	-- Gu Cloudstrike
 								i(143961),	-- Azure Serpent Chestguard
@@ -152,7 +152,7 @@ _.Instances =
 					}),
 					d(24, {		-- Timewalking
 						["ids"] = { 615 }, -- Timewalking
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["groups"] = {
 							cr(56747, e(673, {	-- Gu Cloudstrike
 								i(143961),	-- Azure Serpent Chestguard
@@ -185,7 +185,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 87,
+				["lvl"] = 87,
 				["mapID"] = 877
 			}),
 		},					

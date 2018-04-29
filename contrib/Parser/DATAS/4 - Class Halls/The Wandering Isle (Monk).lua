@@ -587,7 +587,7 @@ _.ClassHalls =
 				}),
 			}),
 		},
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		["mapID"] = 1044,
 		--["icon"] = "Interface\\Icons\\classicon_monk",
 		--["classes"] = {10}

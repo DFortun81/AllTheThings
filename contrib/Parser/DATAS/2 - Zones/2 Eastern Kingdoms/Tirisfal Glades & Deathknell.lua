@@ -812,7 +812,7 @@ _.Zones =
 				}),
 				]]--
 			},
-			["Lvl"] = 1,	
+			["lvl"] = 1,	
 			["achievementID"] = 768,
 			["description"] = "|cff66ccffTirisfal Glades is the grim starting zone for the Forsaken. It is recovering from the plague of the Lich King, as new undead are forcibly brainwashed into the new Forsaken regime.|r",				
 		}),

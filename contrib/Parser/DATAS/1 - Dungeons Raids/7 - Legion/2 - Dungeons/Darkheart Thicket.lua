@@ -64,7 +64,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 110,
+						["lvl"] = 110,
 						["groups"] = {
 							cr(96512, e(1654, {	-- Archdruid Glaidalis
 								i(139086),
@@ -113,7 +113,7 @@ _.Instances =
 							}))
 						}}),
 					d(23, {		-- Mythic
-						["Lvl"] = 110,
+						["lvl"] = 110,
 						["groups"] = {
 							cr(96512, e(1654, {	-- Archdruid Glaidalis
 								i(139086),
@@ -162,7 +162,7 @@ _.Instances =
 							}))
 						}})
 				},
-				["Lvl"] = 98,
+				["lvl"] = 98,
 				["mapID"] = 1067
 			}),
 		},					

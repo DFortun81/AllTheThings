@@ -683,7 +683,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 10260,	-- Kibler
-						["Lvl"] = 40,
+						["lvl"] = 40,
 						["isBreadcrumb"] = true,
 					}),
 					qa(28252, {	-- The Kodocaller's Horn
@@ -1292,7 +1292,7 @@ _.Zones =
 					["u"] = 12,
 				}),		
 			},
-			["Lvl"] = 49,
+			["lvl"] = 49,
 			["achievementID"] = 775,
 			["description"] = "|cff66ccffBurning Steppes is home to a large orc settlement, Twilight Hammer cultists, and the black dragonflight. Players help popular NPCs Eitrigg and John J. Keeshan stop the attacks of the hostile bloodthirsty orcs.|r",
 		}),

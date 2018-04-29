@@ -129,7 +129,7 @@ _.Instances =
 						}))
 					}),
 					d(2, { -- Heroic
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["groups"] = {
 							n(0, {		-- Zone Drop
 								i(37647),	-- Cloak of Bloodied Waters
@@ -181,7 +181,7 @@ _.Instances =
 						}
 					}),
 					d(24, { -- Timewalking
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["groups"] = {
 							cr(29304, e(592, {	-- Slad'ran
 								i(127527),	-- Witch Doctor's Wildstaff
@@ -231,7 +231,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 74,
+				["lvl"] = 74,
 				["mapID"] = 530
 			}),
 		},					

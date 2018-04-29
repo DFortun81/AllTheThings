@@ -62,7 +62,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {		-- Zone Drop
@@ -119,7 +119,7 @@ _.Instances =
 						}
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["groups"] = {
 							cr(28586, e(597, {	-- General Bjarngrim
 								i(127504),	-- Iron Dwarf Smith Pauldrons
@@ -154,7 +154,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 75,
+				["lvl"] = 75,
 				["mapID"] = 525
 			}),
 		},					

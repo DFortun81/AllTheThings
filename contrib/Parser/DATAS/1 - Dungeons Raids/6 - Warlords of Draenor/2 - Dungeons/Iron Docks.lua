@@ -171,7 +171,7 @@ _.Instances =
 					}),
 					d(2, {		-- Heroic
 						["ids"] = { 524 }, -- Heroic
-						["Lvl"] = 100,
+						["lvl"] = 100,
 						["groups"] = {
 							n(-17, {	-- Quests 		
 								q(37157, {
@@ -337,7 +337,7 @@ _.Instances =
 					}),
 					d(23, {		-- Mythic
 						["ids"] = { 642 }, -- Mythic
-						["Lvl"] = 100,
+						["lvl"] = 100,
 						["groups"] = {
 							cr(81305, e(1235, {	-- Fleshrender Nok'gar
 								i(110055),	-- Gutwrench Goreaxe
@@ -497,7 +497,7 @@ _.Instances =
 						},
 					}),
 				},
-				["Lvl"] = 92,
+				["lvl"] = 92,
 				["mapID"] = 987
 			}),
 		},					

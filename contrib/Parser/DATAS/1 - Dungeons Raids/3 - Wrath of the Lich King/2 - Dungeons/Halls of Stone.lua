@@ -70,7 +70,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {		-- Zone Drop
@@ -117,7 +117,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 74,
+				["lvl"] = 74,
 				["mapID"] = 526
 			}),
 		},					

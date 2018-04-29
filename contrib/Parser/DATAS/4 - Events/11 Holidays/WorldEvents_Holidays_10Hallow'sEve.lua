@@ -37,7 +37,7 @@ _.WorldEvents =
 										un(26, i(87570)), 	-- The Horseman's Sinister Slicer (i470)
 										un(26, i(117356)), 	-- The Horseman's Sinister Slicer (i600)
 									},
-									["Lvl"] = 23,
+									["lvl"] = 23,
 								}),
 								i(117392, { -- Loot-Stuffed Pumpkin [Epic Quality]
 									["groups"]  = {
@@ -55,7 +55,7 @@ _.WorldEvents =
 										un(26, i(87570)), 	-- The Horseman's Sinister Slicer (i470)
 										un(26, i(117356)), 	-- The Horseman's Sinister Slicer (i600)
 									},
-									["Lvl"] = 98,
+									["lvl"] = 98,
 								}),
 							},
 							["description"] = "|cff66ccffYou can only loot the bag once per day per toon by running it through the Dungeon queue on your first run.|r",

@@ -135,7 +135,7 @@ _.Instances =
 						}),
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(44577, e(117, { -- General Husam
@@ -231,7 +231,7 @@ _.Instances =
 						},
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["groups"] = {
 							cr(44577, e(117, { -- General Husam
 								i(133257),		-- Saliza's Spear
@@ -263,7 +263,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 83,
+				["lvl"] = 83,
 				["mapID"] = 747
 			}),
 		},					

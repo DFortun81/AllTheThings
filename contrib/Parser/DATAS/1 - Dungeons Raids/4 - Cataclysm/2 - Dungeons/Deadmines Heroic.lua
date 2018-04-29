@@ -9,7 +9,7 @@ _.Instances =
 			inst(63, { 	-- Deadmines
 				["groups"] = {
 					d(2, {		-- Heroic
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(47162, e(89, { -- Glubtok

@@ -9,7 +9,7 @@ _.ClassHalls =
 				["groups"] = {
 					i(140160), -- Stormforged Vrykul Horn
 				},
-				["Lvl"] = 103,
+				["lvl"] = 103,
 				["classes"]  = {1},
 				["description"] = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once a week.\n",
 			}),
@@ -483,7 +483,7 @@ _.ClassHalls =
 				}),
 			}),
 		},
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		["mapID"] = 1035,
 		--["icon"] = "Interface\\Icons\\classicon_warrior",
 		--["classes"] = {1}

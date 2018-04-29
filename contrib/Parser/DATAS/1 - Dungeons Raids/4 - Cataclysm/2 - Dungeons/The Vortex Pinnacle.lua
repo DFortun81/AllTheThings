@@ -104,7 +104,7 @@ _.Instances =
 						}),
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(43878, e(114, { -- Grand Vizier Ertan
@@ -175,7 +175,7 @@ _.Instances =
 						}
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["groups"] = {
 							cr(43878, e(114, { -- Grand Vizier Ertan
 								i(133233),		-- Biting Wind
@@ -206,7 +206,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 80,
+				["lvl"] = 80,
 				["mapID"] = 769
 			}),
 		},					

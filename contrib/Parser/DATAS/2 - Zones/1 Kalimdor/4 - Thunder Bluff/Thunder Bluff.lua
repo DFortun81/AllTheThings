@@ -1038,7 +1038,7 @@ _.Zones =
 				}),
 			},
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_tauren",
-			["Lvl"] = 1,
+			["lvl"] = 1,
 			["isRaid"] = true,
 			["description"] = "|cff66ccffThunder Bluff is the Tauren capital city located in the northern part of the region of Mulgore. The whole of the city is built on bluffs several hundred feet above the surrounding landscape, and is accessible by elevators on the southwestern and northeastern sides.|r",
 		}),

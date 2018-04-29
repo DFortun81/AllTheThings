@@ -81,7 +81,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(43438, e(110, { -- Corborus
@@ -118,7 +118,7 @@ _.Instances =
 						}
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["groups"] = {
 							cr(43438, e(110, { -- Corborus
 								i(133375),		-- Crackling Geode Mace
@@ -154,7 +154,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 80,
+				["lvl"] = 80,
 				["mapID"] = 768
 			}),
 		},					

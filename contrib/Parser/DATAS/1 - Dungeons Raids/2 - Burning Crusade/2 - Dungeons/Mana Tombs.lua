@@ -64,7 +64,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(18341, e(534, {	-- Pandemonius
@@ -123,7 +123,7 @@ _.Instances =
 						}
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 60,
+						["lvl"] = 60,
 						["groups"] = {
 							cr(18341, e(534, {	-- Pandemonius
 								i(127219),		-- Creepjacker
@@ -181,7 +181,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 61,
+				["lvl"] = 61,
 				["mapID"] = 732
 			}),
 		},					

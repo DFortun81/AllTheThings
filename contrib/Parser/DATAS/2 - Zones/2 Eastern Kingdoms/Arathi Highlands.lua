@@ -1221,7 +1221,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["Lvl"] = 25,	
+			["lvl"] = 25,	
 			["achievementID"] = 761,
 			["description"] = "|cff66ccffArathi Highlands is located in southeastern Lordaeron. Players can queue for Arathi Basin via Refuge Pointe and Hammerfall. Main attractions are the ancient kingdom of Stromgarde and the architectural Dwarven wonder, Thandol Span.|r",				
 		}),

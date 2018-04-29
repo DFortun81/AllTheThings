@@ -76,7 +76,7 @@ _.Instances =
 					}),
 					d(2, {		-- Heroic
 						["ids"] = { 524 }, -- Heroic
-						["Lvl"] = 90,
+						["lvl"] = 90,
 						["groups"] = {
 							cr(61567, e(693, {	-- Vizier Jin'bak
 								i(144022),	-- Hood of Viridian Residue
@@ -143,7 +143,7 @@ _.Instances =
 						}}),
 					d(24, {		-- Timewalking
 						["ids"] = { 615 }, -- Timewalking
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["groups"] = {
 							cr(61567, e(693, {	-- Vizier Jin'bak
 								i(144022),	-- Hood of Viridian Residue
@@ -178,7 +178,7 @@ _.Instances =
 							}))
 						}})
 				},
-				["Lvl"] = 88,
+				["lvl"] = 88,
 				["mapID"] = 887
 			}),
 		},					

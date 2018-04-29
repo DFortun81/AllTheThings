@@ -245,7 +245,7 @@ _.ClassHalls =
 					["groups"] = {
 						{ ["mountID"] = 229417 }, -- Slayer's Felbroken Shrieker
 					},
-					["Lvl"] = 110,
+					["lvl"] = 110,
 					["classes"] = {12},
 				}),
 				q(44213, { -- You Will Be Prepared!
@@ -627,7 +627,7 @@ _.ClassHalls =
 				}),	
 			}),
 		},
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		["mapID"] = 1052,
 		--["icon"] = "Interface\\Icons\\Classicon_demonhunter",
 		--["classes"] = {12},

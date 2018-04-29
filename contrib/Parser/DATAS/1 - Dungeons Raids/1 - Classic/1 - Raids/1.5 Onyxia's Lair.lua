@@ -201,7 +201,7 @@ _.Instances = { tier(1, {	-- Classic
 						["creatureID"] = 10184
 					}),
 				},
-				["Lvl"] = 80,
+				["lvl"] = 80,
 			}),
 			d(4, {	-- 25 Player
 				["groups"] = {
@@ -296,12 +296,12 @@ _.Instances = { tier(1, {	-- Classic
 						["creatureID"] = 10184
 					})
 				},
-				["Lvl"] = 80,
+				["lvl"] = 80,
 			})
 		},
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
-		["Lvl"] = 60,
+		["lvl"] = 60,
 		["mapID"] = 718
 	}),
 })};

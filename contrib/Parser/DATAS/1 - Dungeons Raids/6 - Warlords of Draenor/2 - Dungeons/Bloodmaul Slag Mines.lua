@@ -196,7 +196,7 @@ _.Instances =
 					}),
 					d(2, {		-- Heroic
 						["ids"] = { 524 }, -- Heroic
-						["Lvl"] = 100,
+						["lvl"] = 100,
 						["groups"] = {
 							cr(74787, e(888, { -- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
@@ -377,7 +377,7 @@ _.Instances =
 					}),
 					d(23, {		-- Mythic
 						["ids"] = { 642 }, -- Mythic
-						["Lvl"] = 100,
+						["lvl"] = 100,
 						["groups"] = {
 							cr(74787, e(888, { -- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
@@ -557,7 +557,7 @@ _.Instances =
 						},
 					}),
 				},
-				["Lvl"] = 90,
+				["lvl"] = 90,
 				["mapID"] = 964
 			}),
 		},					

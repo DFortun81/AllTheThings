@@ -30,7 +30,7 @@ _.Instances =
 					n(-17, {	-- Quests
 						ql(qg(53567, q(29225, {	-- Actionable Intelligence [Legendary Questline: Dragonwrath]
 							["classes"] = {5,7,8,9,11},	-- Shamans, Druids, Priests, Mages, and Warlocks Only
-							["Lvl"] = 85
+							["lvl"] = 85
 						}))),
 						a(q(13094,{ 	-- Have They No Shame?
 							i(43182), 	-- Cured Mammoth Hide Mantle
@@ -105,7 +105,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["groups"] = {
 							a(cr(26798, e(833, { -- Commander Stoutbeard
 								i(37728),	-- Cloak of the Enemy
@@ -161,7 +161,7 @@ _.Instances =
 						}
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["groups"] = {
 							-- NOTE: This boss is not listed in the Timewalking Dungeon Journal.
 							a(cr(26798, e(833, { -- Commander Stoutbeard
@@ -221,7 +221,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 68,
+				["lvl"] = 68,
 				["mapID"] = 520
 			}),
 		},					

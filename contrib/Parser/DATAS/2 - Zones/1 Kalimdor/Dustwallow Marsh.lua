@@ -682,7 +682,7 @@ _.Zones =
 						["groups"] = {
 							dr(3, i(142265))	-- Big Red Raygun
 						},
-						["Lvl"] = 110
+						["lvl"] = 110
 					}),
 					n(14231, { 		-- Drogoth the Roamer
 						dr(	5	, i(	7446	)), --	Sentinel Cloak
@@ -1239,7 +1239,7 @@ _.Zones =
 				}),
 			},
 			["achievementID"] = 850,
-			["Lvl"] = 35,
+			["lvl"] = 35,
 			["description"] = "|cff66ccffDustwallow Marsh is a swamp in central Kalimdor, with Theramore Isle as its main port city. While Theramore Isle is a large Alliance settlement, it is surrounded by Horde territory. Quests in this zone remain mostly unchanged from pre-Cataclysm, with discontent in Theramore, skirmishes against ogres, and the threat of the black dragonflight.|r",
 		}),
 	}),

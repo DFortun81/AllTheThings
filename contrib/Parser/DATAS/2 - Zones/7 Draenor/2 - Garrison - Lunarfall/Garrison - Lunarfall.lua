@@ -3025,7 +3025,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 90,
+			["lvl"] = 90,
 			["isRaid"] = true,
 			["maps"] = {973, 974, 975},
 			["icon"] = "Interface\\Icons\\achievement_garrison_tier01_alliance",

@@ -10,7 +10,7 @@ _.Instances =
 				["groups"] = {
 					d(2, {		-- Heroic
 						["ids"] = { 524 }, -- Heroic
-						["Lvl"] = 90,
+						["lvl"] = 90,
 						["groups"] = {
 							n(-17, {	-- Quests
 								qg(64838, q(31515)),	-- Blades of the Anointed

@@ -84,7 +84,7 @@ _.Instances =
 					}),
 					d(2, {		-- Heroic
 						["ids"] = { 524 },	-- Heroic
-						["Lvl"] = 90,
+						["lvl"] = 90,
 						["groups"] = {
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
 								i(144020),	-- Crest of the Clan Lords	
@@ -136,7 +136,7 @@ _.Instances =
 					}),
 					d(24, {		-- Timewalking
 						["ids"] = { 615 },	-- Timewalking
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["groups"] = {
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
 								i(144020),	-- Crest of the Clan Lords	
@@ -164,7 +164,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 87,
+				["lvl"] = 87,
 				["mapID"] = 885
 			}),
 		},					

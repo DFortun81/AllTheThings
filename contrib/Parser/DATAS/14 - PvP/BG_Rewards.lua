@@ -37,7 +37,7 @@ _.PVP =
 			i(134659),  -- Recruit's Ring
 		},
 		["description"] = "|cff66ccffRewarded for winning a random battleground in the level 15-39 range.|r",
-		["Lvl"] = 15,
+		["lvl"] = 15,
 	}),
 	i(135540, {	-- Crate of Battlefield Goods 40-59
 		["groups"] = {
@@ -70,7 +70,7 @@ _.PVP =
 			i(134691),  -- Recruit's Badge*
 		},
 		["description"] = "|cff66ccffRewarded for winning a random battleground in the level 40-59 range.|r",
-		["Lvl"] = 40,
+		["lvl"] = 40,
 	}),
 	i(135541, {	-- Crusader's Crate of Battlefield Goods 60-69
 		["groups"] = {
@@ -99,7 +99,7 @@ _.PVP =
 			i(134590),	-- Vanguard Baton of Light
 		},
 		["description"] = "|cff66ccffRewarded for winning a random battleground in the level 60-69 range.|r",
-		["Lvl"] = 60,
+		["lvl"] = 60,
 	}),
 	i(135542, {	-- Icy Crate of Battlefield Goods 70-79
 		["groups"] = {
@@ -130,7 +130,7 @@ _.PVP =
 			i(134744),	-- Cold-Touched Distinction*
 		},
 		["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range.|r",
-		["Lvl"] = 70, 
+		["lvl"] = 70, 
 	}),
 	i(135543, {	-- Rival's Crate of Battlefield Goods 80-89; splitting this box into two categories, loot table varies with level
 		["groups"] = {
@@ -163,7 +163,7 @@ _.PVP =
 				},
 				["description"] = "Rewarded for winning a random battleground in the level 80-84 range.",
 				["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
-				["Lvl"] = 80,
+				["lvl"] = 80,
 			}),
 			n(-303, {	-- Level 85-89
 				["groups"] = {
@@ -196,7 +196,7 @@ _.PVP =
 				},
 				["description"] = "Rewarded for winning a random battleground in the level 85-89 range.",
 				["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
-				["Lvl"] = 85,
+				["lvl"] = 85,
 			}),
 		},
 		["description"] = "|cff66ccffRewarded for winning a random battleground in the level 80-89 range.|r",
@@ -232,7 +232,7 @@ _.PVP =
 			i(134776),	-- Seasoned Decapitator
 		},
 		["description"] = "|cff66ccffRewarded for winning a random battleground in the level 90-99 range.|r",
-		["Lvl"] = 90,
+		["lvl"] = 90,
 	}),
 	i(135546, {	-- Fel-Touched Crate of Battlefield Goods 100-109 / Ashran
 		["groups"] = {
@@ -255,6 +255,6 @@ _.PVP =
 			i(134713),	-- Crushing Pauldrons
 		},
 		["description"] = "|cff66ccffRewarded for winning a random battleground in the level 100-109 range, or Ashran quests.|r",
-		["Lvl"] = 100,
+		["lvl"] = 100,
 	}),
 };

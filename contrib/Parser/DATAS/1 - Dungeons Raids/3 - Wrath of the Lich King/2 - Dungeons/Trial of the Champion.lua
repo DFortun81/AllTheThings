@@ -220,10 +220,10 @@ _.Instances =
 								i(47216), -- The Black Heart
 							})),
 						},
-						["Lvl"] = 80,
+						["lvl"] = 80,
 					})
 				},
-				["Lvl"] = 75,
+				["lvl"] = 75,
 				["mapID"] = 542
 			}),
 		},					

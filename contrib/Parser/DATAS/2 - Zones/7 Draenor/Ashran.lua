@@ -161,7 +161,7 @@ _.Zones =
 				}),
 			},
 			["maps"] = {1009, 1011},	-- We want to show Ashran in both maps.
-			["Lvl"] = 100,	
+			["lvl"] = 100,	
 			["achievementID"] = 9102,
 			["description"] = "|cff66ccffAshran is a level 100 instanced cross-realm end game world PvP zone found in eastern Draenor. The name also refers to the greater Ashran zone, including the Alliance and Horde capitals, which are set outside of the PvP zone itself.|r",				
 		}),	

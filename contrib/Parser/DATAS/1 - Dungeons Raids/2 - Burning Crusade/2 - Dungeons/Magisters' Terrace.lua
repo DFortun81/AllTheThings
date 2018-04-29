@@ -80,7 +80,7 @@ _.Instances =
 						})
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							e(530, { -- Selin Fireheart
@@ -155,7 +155,7 @@ _.Instances =
 							})
 						}}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 60,
+						["lvl"] = 60,
 						["groups"] = {
 							e(530, { -- Selin Fireheart
 								["groups"] = {
@@ -226,7 +226,7 @@ _.Instances =
 							})
 						}})
 				},
-				["Lvl"] = 65,
+				["lvl"] = 65,
 				["mapID"] = 798
 			}),
 		},					

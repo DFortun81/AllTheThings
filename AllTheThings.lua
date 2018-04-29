@@ -3415,7 +3415,7 @@ app.BaseMusicRoll = {
 			return IsQuestFlaggedCompleted(t.questID);
 		elseif key == "f" then
 			return 108;
-		elseif key == "Lvl" then
+		elseif key == "lvl" then
 			return 100;
 		elseif key == "text" then
 			return t.link;
@@ -3828,7 +3828,7 @@ end
 				return tierIcons[t.tierID];
 			elseif key == "description" then
 				return tierDescription[t.tierID];
-			elseif key == "Lvl" then
+			elseif key == "lvl" then
 				return tierLevel[t.tierID];
 			else
 				-- Something that isn't dynamic.
@@ -4043,7 +4043,7 @@ function app.NoFilter()
 	return true;
 end
 function app.FilterGroupsByLevel(group)
-	return app.Level >= (group.Lvl or 0);
+	return app.Level >= (group.lvl or 0);
 end
 function app.FilterGroupsByCompletion(group)
 	return group.progress < group.total;
@@ -5528,7 +5528,7 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
 		end
-		if reference.Lvl then GameTooltip:AddDoubleLine(L("REQUIRES_LEVEL"), tostring(reference.Lvl)); end
+		if reference.lvl then GameTooltip:AddDoubleLine(L("REQUIRES_LEVEL"), tostring(reference.lvl)); end
 		--if reference.b then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requireSkill then
 			GameTooltip:AddDoubleLine(L("REQUIRES"), tostring(GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0)));
@@ -5946,7 +5946,7 @@ function app:GetDataCache()
 		-- Class Halls
 		if app.Categories.ClassHalls then
 			db = {};
-			db.Lvl = 98;
+			db.lvl = 98;
 			db.expanded = false;
 			db.text = GetCategoryInfo(15275);
 			db.icon = "Interface\\Icons\\achievement_level_110";

@@ -45,7 +45,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(18472, e(541, {	-- Darkweaver Syth
@@ -80,7 +80,7 @@ _.Instances =
 							}))
 						}})
 				},
-				["Lvl"] = 63,
+				["lvl"] = 63,
 				["mapID"] = 723
 			}),
 		},					

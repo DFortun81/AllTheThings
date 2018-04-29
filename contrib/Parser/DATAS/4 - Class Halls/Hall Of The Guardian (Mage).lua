@@ -157,7 +157,7 @@ _.ClassHalls =
 					["groups"] = {
 						{ ["mountID"] = 229376 }, -- Archmage's Prismatic Discs
 					},
-					["Lvl"] = 110,
+					["lvl"] = 110,
 					["classes"] = {8},
 				}),
 				q(44240, { -- Orange is the New Purple
@@ -497,7 +497,7 @@ _.ClassHalls =
 				}),
 			}),
 		},
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		["mapID"] = 1068,
 		--["icon"] = "Interface\\Icons\\Classicon_mage",
 		--["classes"] = {8}

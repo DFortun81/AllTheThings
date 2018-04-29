@@ -25,7 +25,7 @@ _.GearSets =
 				i(151317), -- Footpads of Seeping Dread
 			},
 			["classes"] = { 11, 4, 10, 12 }, -- Druid/Rogue/Monk/DH
-			["Lvl"] = 110,
+			["lvl"] = 110,
 		}),
 		n(-3229, { -- Cadaverous Garb [Unobtainable]
 			i(14637), -- Chest
@@ -73,7 +73,7 @@ _.GearSets =
 					i(21392), -- Weapon
 				}),
 			},
-			["Lvl"] = 60,
+			["lvl"] = 60,
 		}),	
 		gs(1457, { -- Chronoscryer's Finery
 			["groups"] = {
@@ -87,7 +87,7 @@ _.GearSets =
 				i(151664), -- Feet
 			},
 			["classes"] = { 5, 8 , 9 }, -- Priest/Mage/Lock
-			["Lvl"] = 110,
+			["lvl"] = 110,
 		}),
 		n(-3231, { -- Deathbone Guardian [Unobtainable]
 			i(14624), -- Chest
@@ -142,7 +142,7 @@ _.GearSets =
 				i(151665), -- Feet
 			},
 			["classes"] = { 3, 7 }, -- Hunter/Shaman
-			["Lvl"] = 110,
+			["lvl"] = 110,
 		}),
 		n(-3226, { -- Ironweave Battlesuit [Unobtainable]
 			i(22302), -- Helm
@@ -167,7 +167,7 @@ _.GearSets =
 				i(151301), -- Feet
 			},
 			["classes"] = { 5, 8 , 9 }, -- Priest/Mage/Lock
-			["Lvl"] = 110,
+			["lvl"] = 110,
 		}),
 		n(-3228, { -- Necropile Raiment [Unobtainable]
 			i(14633), -- Shoulders
@@ -188,7 +188,7 @@ _.GearSets =
 				i(151666), -- Feet
 			},
 			["classes"] = { 11, 4, 10, 12 }, -- Druid/Rogue/Monk/DH
-			["Lvl"] = 110,
+			["lvl"] = 110,
 		}),
 		gs(1469, { -- Sterling Triumvirate Chainmail
 			["groups"] = {
@@ -203,7 +203,7 @@ _.GearSets =
 				i(151320), -- Feet
 			},
 			["classes"] = { 3, 7 }, -- Hunter/Shaman
-			["Lvl"] = 110,
+			["lvl"] = 110,
 		}),
 		n(-3227, { -- The Postmaster
 			i(13390), -- Helm
@@ -233,7 +233,7 @@ _.GearSets =
 				i(151663), -- Feet
 			},
 			["classes"] = { 2, 1, 6 }, -- Paladin/Warrior/DK
-			["Lvl"] = 110,
+			["lvl"] = 110,
 		}),
 		gs(1468, { -- Venerated Triumvirate Battleplate
 			["groups"] = {
@@ -248,7 +248,7 @@ _.GearSets =
 				i(151330), -- Feet
 			},
 			["classes"] = { 2, 1, 6 }, -- Paladin/Warrior/DK
-			["Lvl"] = 110,
+			["lvl"] = 110,
 		}),
 	}),
 };

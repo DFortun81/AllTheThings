@@ -3031,7 +3031,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 90,
+			["lvl"] = 90,
 			["isRaid"] = true,
 			["maps"] = {980, 981, 982},
 			["icon"] = "Interface\\Icons\\achievement_garrison_tier01_horde",

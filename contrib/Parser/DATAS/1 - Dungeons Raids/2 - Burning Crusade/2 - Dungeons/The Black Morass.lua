@@ -51,7 +51,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(17879, e(552, {	-- Chrono Lord Deja
@@ -91,7 +91,7 @@ _.Instances =
 							}))
 						}}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 60,
+						["lvl"] = 60,
 						["groups"] = {
 							cr(17879, e(552, {	-- Chrono Lord Deja
 								i(127434),		-- Melmorta's Twilight Longbow
@@ -126,7 +126,7 @@ _.Instances =
 							}))
 						}})
 				},
-				["Lvl"] = 65,
+				["lvl"] = 65,
 				["mapID"] = 733
 			}),
 		},					

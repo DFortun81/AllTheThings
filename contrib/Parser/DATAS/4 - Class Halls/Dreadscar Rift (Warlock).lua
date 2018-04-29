@@ -405,7 +405,7 @@ _.ClassHalls =
 					["groups"] = {
 						{ ["mountID"] = 232412 }, -- Netherlord's Chaotic Wrathsteed
 					},
-					["Lvl"] = 110,
+					["lvl"] = 110,
 					["classes"] = {9},
 				}),
 				q(44254, { -- Gazing Into Oblivion
@@ -489,7 +489,7 @@ _.ClassHalls =
 				}),
 			}),
 		},
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		["mapID"] = 1050,
 		--["icon"] = "Interface\\Icons\\Classicon_warlock",
 		--["classes"] = {9},

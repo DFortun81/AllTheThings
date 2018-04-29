@@ -11,7 +11,7 @@
 			"subclass": 5,
 			"iLvl": 20,
 			"inventoryType": 0,
-			"Lvl": 20
+			"lvl": 20
 		},
 		{
 			"name": "Whistle of the Mottled Red Raptor",
@@ -23,7 +23,7 @@
 			"subclass": 5,
 			"iLvl": 40,
 			"inventoryType": 0,
-			"Lvl": 40,
+			"lvl": 40,
 			"races": [
 				2,
 				5,
@@ -46,7 +46,7 @@
 			"subclass": 5,
 			"iLvl": 20,
 			"inventoryType": 0,
-			"Lvl": 20,
+			"lvl": 20,
 			"races": [
 				1,
 				3,
@@ -69,7 +69,7 @@
 			"subclass": 5,
 			"iLvl": 20,
 			"inventoryType": 0,
-			"Lvl": 20,
+			"lvl": 20,
 			"races": [
 				1,
 				3,
@@ -92,7 +92,7 @@
 			"subclass": 5,
 			"iLvl": 20,
 			"inventoryType": 0,
-			"Lvl": 20,
+			"lvl": 20,
 			"races": [
 				1,
 				3,
@@ -115,7 +115,7 @@
 			"subclass": 5,
 			"iLvl": 40,
 			"inventoryType": 0,
-			"Lvl": 40,
+			"lvl": 40,
 			"races": [
 				2,
 				5,
@@ -138,7 +138,7 @@
 			"subclass": 5,
 			"iLvl": 40,
 			"inventoryType": 0,
-			"Lvl": 40,
+			"lvl": 40,
 			"races": [
 				2,
 				5,
@@ -161,7 +161,7 @@
 			"subclass": 5,
 			"iLvl": 40,
 			"inventoryType": 0,
-			"Lvl": 40,
+			"lvl": 40,
 			"races": [
 				2,
 				5,
@@ -184,7 +184,7 @@
 			"subclass": 5,
 			"iLvl": 40,
 			"inventoryType": 0,
-			"Lvl": 40,
+			"lvl": 40,
 			"races": [
 				2,
 				5,
@@ -208,7 +208,7 @@
 			"iLvl": 1,
 			"inventoryType": 0,
 			"requireSkill": 164,
-			"Lvl": 60
+			"lvl": 60
 		},
 		{
 			"name": "Enchanted Thorium Platemail (Volume II)",
@@ -221,7 +221,7 @@
 			"iLvl": 1,
 			"inventoryType": 0,
 			"requireSkill": 164,
-			"Lvl": 60
+			"lvl": 60
 		},
 		{
 			"name": "Enchanted Thorium Platemail (Volume III)",
@@ -234,7 +234,7 @@
 			"iLvl": 1,
 			"inventoryType": 0,
 			"requireSkill": 164,
-			"Lvl": 60
+			"lvl": 60
 		},
 		{
 			"name": "Bottom Half of Advanced Armorsmithing: Volume I",
@@ -247,7 +247,7 @@
 			"iLvl": 1,
 			"inventoryType": 0,
 			"requireSkill": 164,
-			"Lvl": 50
+			"lvl": 50
 		},
 		{
 			"name": "Top Half of Advanced Armorsmithing: Volume I",
@@ -260,7 +260,7 @@
 			"iLvl": 1,
 			"inventoryType": 0,
 			"requireSkill": 164,
-			"Lvl": 50
+			"lvl": 50
 		},
 		{
 			"name": "Bottom Half of Advanced Armorsmithing: Volume II",
@@ -273,7 +273,7 @@
 			"iLvl": 1,
 			"inventoryType": 0,
 			"requireSkill": 164,
-			"Lvl": 50
+			"lvl": 50
 		},
 		{
 			"name": "Top Half of Advanced Armorsmithing: Volume II",
@@ -286,7 +286,7 @@
 			"iLvl": 1,
 			"inventoryType": 0,
 			"requireSkill": 164,
-			"Lvl": 50
+			"lvl": 50
 		},
 		{
 			"name": "Bottom Half of Advanced Armorsmithing: Volume III",
@@ -299,7 +299,7 @@
 			"iLvl": 1,
 			"inventoryType": 0,
 			"requireSkill": 164,
-			"Lvl": 50
+			"lvl": 50
 		},
 		{
 			"name": "Top Half of Advanced Armorsmithing: Volume III",
@@ -312,7 +312,7 @@
 			"iLvl": 1,
 			"inventoryType": 0,
 			"requireSkill": 164,
-			"Lvl": 50
+			"lvl": 50
 		},
 		{
 			"name": "Peep's Whistle",
@@ -324,7 +324,7 @@
 			"subclass": 5,
 			"iLvl": 70,
 			"inventoryType": 0,
-			"Lvl": 70
+			"lvl": 70
 		},
 		{
 			"name": "Sun-Lute of the Phoenix King",
@@ -336,7 +336,7 @@
 			"subclass": 1,
 			"iLvl": 483,
 			"inventoryType": 17,
-			"Lvl": 85
+			"lvl": 85
 		},
 		{
 			"name": "Toskk's Maximized Wristguards",
@@ -348,7 +348,7 @@
 			"subclass": 2,
 			"iLvl": 264,
 			"inventoryType": 9,
-			"Lvl": 80
+			"lvl": 80
 		},
 		{
 			"name": "Garr's Girdle of Memories",
@@ -360,7 +360,7 @@
 			"subclass": 4,
 			"iLvl": 346,
 			"inventoryType": 6,
-			"Lvl": 85
+			"lvl": 85
 		},
 		{
 			"name": "Xariona's Spectral Claws",
@@ -372,7 +372,7 @@
 			"subclass": 3,
 			"iLvl": 346,
 			"inventoryType": 10,
-			"Lvl": 85
+			"lvl": 85
 		},
 		{
 			"name": "Belt of a Thousand Mouths",
@@ -384,7 +384,7 @@
 			"subclass": 2,
 			"iLvl": 346,
 			"inventoryType": 6,
-			"Lvl": 85
+			"lvl": 85
 		},
 		{
 			"name": "Beak of Julak-Doom",
@@ -396,7 +396,7 @@
 			"subclass": 15,
 			"iLvl": 346,
 			"inventoryType": 13,
-			"Lvl": 85
+			"lvl": 85
 		},
 		{
 			"name": "Jewel of the Firelord",
@@ -408,7 +408,7 @@
 			"subclass": 5,
 			"iLvl": 1,
 			"inventoryType": 1,
-			"Lvl": 1
+			"lvl": 1
 		},
 		{
 			"name": "Crown of Eternal Winter",
@@ -420,7 +420,7 @@
 			"subclass": 5,
 			"iLvl": 1,
 			"inventoryType": 1,
-			"Lvl": 1
+			"lvl": 1
 		},
 		{
 			"name": "Hood of Hungering Darkness",
@@ -432,7 +432,7 @@
 			"subclass": 5,
 			"iLvl": 1,
 			"inventoryType": 1,
-			"Lvl": 1
+			"lvl": 1
 		},
 		{
 			"name": "Primal Gladiator's Heavy Crossbow",
@@ -444,7 +444,7 @@
 			"subclass": 18,
 			"iLvl": 660,
 			"inventoryType": 26,
-			"Lvl": 100,
+			"lvl": 100,
 			"races": [
 				2,
 				5,
@@ -478,7 +478,7 @@
 			"subclass": 18,
 			"iLvl": 660,
 			"inventoryType": 26,
-			"Lvl": 100,
+			"lvl": 100,
 			"races": [
 				1,
 				3,
@@ -512,7 +512,7 @@
 			"subclass": 5,
 			"iLvl": 20,
 			"inventoryType": 0,
-			"Lvl": 20,
+			"lvl": 20,
 			"races": [
 				1,
 				3,
@@ -535,7 +535,7 @@
 			"subclass": 5,
 			"iLvl": 20,
 			"inventoryType": 0,
-			"Lvl": 20,
+			"lvl": 20,
 			"races": [
 				2,
 				5,
@@ -558,7 +558,7 @@
 			"subclass": 5,
 			"iLvl": 20,
 			"inventoryType": 0,
-			"Lvl": 20
+			"lvl": 20
 		},
 		{
 			"name": "Ren'dorei Cloak",
@@ -570,7 +570,7 @@
 			"subclass": 5,
 			"iLvl": 1,
 			"inventoryType": 16,
-			"Lvl": 1,
+			"lvl": 1,
 			"races": [
 				29
 			],
