@@ -4283,6 +4283,6 @@ _.GearSets =
 			}),
 		},
 		["achievementID"] = 11171, -- Arsenal of Power
-		["Lvl"] = 100,
+		["lvl"] = 100,
 	}),
 };

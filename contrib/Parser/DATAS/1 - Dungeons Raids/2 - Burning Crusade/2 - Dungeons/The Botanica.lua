@@ -71,7 +71,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(17976, e(558, {	-- Commander Sarannis
@@ -131,7 +131,7 @@ _.Instances =
 							}))
 						}})
 				},
-				["Lvl"] = 65,
+				["lvl"] = 65,
 				["mapID"] = 729
 			}),
 		},					

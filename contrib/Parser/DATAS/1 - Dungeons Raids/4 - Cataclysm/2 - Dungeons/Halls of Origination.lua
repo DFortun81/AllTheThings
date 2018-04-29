@@ -166,7 +166,7 @@ _.Instances =
 						}),
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(39425, e(124, { -- Temple Guardian Anhuur
@@ -269,7 +269,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 83,
+				["lvl"] = 83,
 				["mapID"] = 759
 			}),	
 		},					

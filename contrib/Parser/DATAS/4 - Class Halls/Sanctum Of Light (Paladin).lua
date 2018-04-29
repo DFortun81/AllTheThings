@@ -10,7 +10,7 @@ _.ClassHalls =
 					["groups"] = {
 						i(143502), -- Highlord's Golden Charge
 					},
-					["Lvl"] = 110,
+					["lvl"] = 110,
 					["classes"] = {2},
 				}),
 				q(44250, { -- Champion of the Light
@@ -360,7 +360,7 @@ _.ClassHalls =
 			}),
 		},
 		["mapID"] = 23,
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		--["icon"] = "Interface\\Icons\\classicon_paladin",			
 		--["classes"] = {2}
 	}),

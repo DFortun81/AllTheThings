@@ -1252,7 +1252,7 @@ _.Instances =
 					}),
 				},
 				["isRaid"] = true,
-				["Lvl"] = 80,
+				["lvl"] = 80,
 				["mapID"] = 529
 			}),
 		},					

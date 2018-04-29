@@ -575,13 +575,13 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 5636,	-- Gryphon Master Talonaxe
-						["Lvl"] = 35,
+						["lvl"] = 35,
 					}),
 					qh(28508, {	-- The Battle for Andorhal (can't be picked up if you have "Warchief's Command: Western Plaguelands")
 						["groups"] = {
 						},
 						["qg"] = 42898,	-- Darkcleric Marnal
-						["Lvl"] = 35,
+						["lvl"] = 35,
 					}),
 					qa(26528, {	-- The Eye of Shadra
 						["groups"] = {
@@ -1153,7 +1153,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["Lvl"] = 30,	
+			["lvl"] = 30,	
 			["achievementID"] = 773,
 			["description"] = "|cff66ccffThe Hinterlands are both a center for the Wildhammer Dwarves to the west at Aerie Peak and the forest trolls to the east. It is an ancient region with pine trees, troll ruins, and one of the few remaining high elf settlements.|r",				
 		}),

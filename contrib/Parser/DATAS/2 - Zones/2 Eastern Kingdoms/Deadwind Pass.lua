@@ -234,7 +234,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 50,	
+			["lvl"] = 50,	
 			["achievementID"] = 777,
 			["description"] = "|cff66ccffDeadwind Pass is a haunted forest and canyon on the edges of the Kingdom of Stormwind in the southern Eastern Kingdoms. Medivh made his foreboding home in Karazhan at the center of the Pass, which is now a 10-player dungeon.|r",			
 		}),	

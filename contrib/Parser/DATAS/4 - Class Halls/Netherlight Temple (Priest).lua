@@ -450,7 +450,7 @@ _.ClassHalls =
 					["groups"] = {
 						{ ["mountID"] = 229377 }, -- High Priest's Lightsworn Seeker
 					},
-					["Lvl"] = 110,
+					["lvl"] = 110,
 					["classes"] = {5},
 				}),
 				q(44251, { -- Power Word: Armor
@@ -528,7 +528,7 @@ _.ClassHalls =
 				}),
 			}),
 		},
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		["mapID"] = 1040,
 		--["icon"] = "Interface\\Icons\\Classicon_priest",
 		--["classes"] = {5}

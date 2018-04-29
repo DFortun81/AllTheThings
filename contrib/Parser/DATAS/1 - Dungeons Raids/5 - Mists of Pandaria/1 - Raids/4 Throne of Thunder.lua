@@ -1450,7 +1450,7 @@ _.Instances =
 				},
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
-				["Lvl"] = 90,
+				["lvl"] = 90,
 				["mapID"] = 930
 			}),
 		},					

@@ -1855,7 +1855,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 1,
+			["lvl"] = 1,
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\spell_arcane_teleportshattrath",
 			["description"] = "|cff66ccffShattrath City is a major hub in Outland situated in the northwestern portion of Terokkar Forest. It is a capital-sized sanctuary city populated by ancient heroes and naaru. It is the first capital available to both sides.|r",				

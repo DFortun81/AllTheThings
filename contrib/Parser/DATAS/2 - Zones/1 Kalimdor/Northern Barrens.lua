@@ -193,7 +193,7 @@ _.Zones =
 								}), -- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
 							},
 							["description"] = "Account-Wide Weekly quest.|r",
-							["Lvl"] = 110,
+							["lvl"] = 110,
 						})),
 					}),
 				}),
@@ -356,14 +356,14 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 3391,	-- Gazlowe
-						["Lvl"] = 35,
+						["lvl"] = 35,
 						["sourceQuests"] = { 26696 },	-- The Call of Kalimdor
 					}),
 					qa(26702, {	-- Flight to Theramore
 						["groups"] = {
 						},
 						["qg"] = 3391,	-- Gazlowe
-						["Lvl"] = 35,
+						["lvl"] = 35,
 						["sourceQuests"] = { 26596 },	-- The Call of Kalimdor
 					}),
 					qh(14072, {	-- Flushing Out Verog
@@ -1506,7 +1506,7 @@ _.Zones =
 				}),
 			},
 			["achievementID"] = 750,
-			["Lvl"] = 10,
+			["lvl"] = 10,
 			["description"] = "|cff66ccffNorthern Barrens is a dry grassy zone, dotted with farms and few lush oasis. It is primarily a low-level zone for Horde players, but Alliance players can travel to the Steamwheedle Cartel city of Ratchet.|r",
 		}),
 	}),

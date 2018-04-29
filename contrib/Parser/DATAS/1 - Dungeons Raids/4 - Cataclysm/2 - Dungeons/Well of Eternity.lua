@@ -52,7 +52,7 @@ _.Instances =
 						i(72848),	-- Leggings of the Legion
 					}))
 				},
-				["Lvl"] = 85,
+				["lvl"] = 85,
 				["mapID"] = 816
 			}),
 		},					

@@ -85,7 +85,7 @@ _.Instances =
 						})
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							e(527, { -- Watchkeeper Gargolmar
@@ -150,7 +150,7 @@ _.Instances =
 							}),
 						}})
 				},
-				["Lvl"] = 57,
+				["lvl"] = 57,
 				["mapID"] = 797
 			}),
 		},					

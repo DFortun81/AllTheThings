@@ -702,7 +702,7 @@ _.Zones =
 							h({
 								["questID"] = 39801,	-- The Splintered Fleet
 								["maps"] = {1027,4},	-- Map: The Cove of Nashal / Durotar
-								["Lvl"] = 98,			-- Requires Level 98
+								["lvl"] = 98,			-- Requires Level 98
 								["qg"] = 96686,			-- Quest Giver: Lady Sylvanas Windrunner <Banshee Queen>
 								["sourceQuest"] = 38307,	-- Source Quest: The Warchief Beckons
 								["groups"] = {
@@ -1715,7 +1715,7 @@ _.Zones =
 					["description"] = "|cff66ccffHelheim is the desolate realm of the val'kyr Helya. She created it below the Halls of Valor after having sealed Odyn's fortress in an impregnable barrier. Here, the spirits of the dishonorable spend eternity in an endless futile battle, always seeking glory but never able to attain it. It has recently become connected to Haustvald.|r",
 				}),
 			},
-			["Lvl"] = 98,	
+			["lvl"] = 98,	
 			["achievementID"] = 10668,
 			["description"] = "|cff66ccffStormheim is a zone in the eastern area of the Broken Isles situated in the shadow of Highmountain to the west, and Suramar to the southwest. It's home to the mighty vrykul who left Northrend many ages ago in search of their holy land. Two titanic watchers here have warred with each other for thousands of years. The Halls of Valor and Helheim, the realms to which the vrykul journey when they die, are located in this zone.|r",				
 		}),	

@@ -61,7 +61,7 @@ _.WorldEvents =
 									un(2, i(48663)), 	-- Tankard O' Terror
 								},
 								["itemID"] = 117393,
-								["Lvl"] = 98,
+								["lvl"] = 98,
 							},
 							{
 								["groups"] = {
@@ -71,7 +71,7 @@ _.WorldEvents =
 									un(24, i(117379)), 	-- Tremendous Tankard O'Terror
 								},
 								["itemID"] = 149752,
-								["Lvl"] = 46,
+								["lvl"] = 46,
 							},
 						},
 						["description"] = "|cff66ccffYou can only loot the keg once per day per toon by running it through the Dungeon queue on your first run.|r",	

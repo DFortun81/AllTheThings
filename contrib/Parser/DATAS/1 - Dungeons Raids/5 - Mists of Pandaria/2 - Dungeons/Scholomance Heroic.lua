@@ -10,7 +10,7 @@ _.Instances =
 				["groups"] = {
 					d(2, {		-- Heroic
 						["ids"] = { 524 }, -- Heroic
-						["Lvl"] = 90,
+						["lvl"] = 90,
 						["groups"] = {
 							n(-17, {	-- Quests 			
 								q(31448, {	-- An End to the Suffering

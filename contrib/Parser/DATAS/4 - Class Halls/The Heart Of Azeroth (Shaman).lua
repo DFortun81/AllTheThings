@@ -22,7 +22,7 @@ _.ClassHalls =
 					["groups"] = {
 						i(143489), -- Raging Tempest Totem
 					},
-					["Lvl"] = 110,
+					["lvl"] = 110,
 					["classes"] = {7},
 				}),
 				q(44253, { -- A Vision of Triump
@@ -356,7 +356,7 @@ _.ClassHalls =
 				}),
 			}),
 		},
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		["mapID"] = 1057,
 		--["icon"] = "Interface\\Icons\\classicon_shaman",
 		--["classes"] = {7}

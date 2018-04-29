@@ -87,7 +87,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(40586, e(101, {	-- Lady Naz'jar
@@ -121,7 +121,7 @@ _.Instances =
 						}
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["groups"] = {
 							cr(40586, e(101, {	-- Lady Naz'jar
 								i(133179),		-- Lightning Whelk Axe
@@ -156,7 +156,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 77,
+				["lvl"] = 77,
 				["mapID"] = 767
 			}),
 		},					

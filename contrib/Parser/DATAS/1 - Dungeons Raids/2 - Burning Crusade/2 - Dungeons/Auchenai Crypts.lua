@@ -68,7 +68,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["groups"] = {
 							cr(18371, e(523, {	-- Shirrak the Dead Watcher
 								i(27846),		-- Claw of the Watcher
@@ -108,7 +108,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 62,
+				["lvl"] = 62,
 				["mapID"] = 722
 			}),
 		},					

@@ -103,7 +103,7 @@ _.Zones =
 			},
 			["description"] = "|cff66ccffTol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.|r",
 			["achievementID"] = 4874,
-			["Lvl"] = 85,
+			["lvl"] = 85,
 		}),
 	}),
 };

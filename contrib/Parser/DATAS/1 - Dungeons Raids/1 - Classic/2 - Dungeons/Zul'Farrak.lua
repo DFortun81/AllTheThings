@@ -141,7 +141,7 @@ _.Instances =
 						i(9469), 	-- Gahz'rilla Scale Armor
 					})),				
 				},
-				["Lvl"] = 39,
+				["lvl"] = 39,
 				["mapID"] = 686
 			}),
 		},					

@@ -74,7 +74,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["groups"] = {
 							n(0, {		-- Zone Drop
 								["groups"] = {
@@ -157,7 +157,7 @@ _.Instances =
 						}
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["groups"] = {
 							cr(36494, e(608, {	-- Forgemaster Garfrost
 								i(133486),	-- Garfrost's Two-Ton Hammer
@@ -190,7 +190,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 75,
+				["lvl"] = 75,
 				["mapID"] = 602
 			}),
 		},					

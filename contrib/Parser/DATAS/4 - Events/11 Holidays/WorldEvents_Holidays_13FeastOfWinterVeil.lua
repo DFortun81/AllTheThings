@@ -638,7 +638,7 @@ _.WorldEvents =
 									un(29, dr(5.0, i(116448))),	-- Warm Red Woolen Socks
 								}),
 							},
-							["Lvl"] = 1,
+							["lvl"] = 1,
 						}),
 						q(8803),	-- A Festive Gift
 						q(8768, { 	-- A Gaily Wrapped Present
@@ -649,7 +649,7 @@ _.WorldEvents =
 									un(29, i(21305)),	-- Red Helper Box
 									un(29, i(21309)),	-- Snowman Kit
 								},
-								["Lvl"] = 20,
+								["lvl"] = 20,
 							}),
 						}),
 						q(50420, { 	-- A Gently Shaken Gift
@@ -708,7 +708,7 @@ _.WorldEvents =
 									["questID"] = 43364,
 								}),
 							},
-							["Lvl"] = 10,
+							["lvl"] = 10,
 						}),
 						q(8769, { 	-- A Ticking Present
 							["groups"] = {
@@ -727,7 +727,7 @@ _.WorldEvents =
 									})),
 								}),
 							},
-							["Lvl"] = 40,
+							["lvl"] = 40,
 						}),
 						q(47751, { 	-- A Winter Veil Gift
 							["groups"] = {
@@ -804,7 +804,7 @@ _.WorldEvents =
 									["questID"] = 47751,
 								}),
 							},
-							["Lvl"] = 10,
+							["lvl"] = 10,
 						}),
 					}),
 				},

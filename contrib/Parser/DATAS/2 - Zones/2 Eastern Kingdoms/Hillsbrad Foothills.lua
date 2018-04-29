@@ -567,7 +567,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 13840,	-- Warmaster Laggrond
-						["Lvl"] = 51,
+						["lvl"] = 51,
 					})),
 --					q(43297),	-- Repel (REMOVED, part of Legion pre-patch)
 					qpvp(qa(7168, {	-- Rise and Be Recognized
@@ -642,7 +642,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 13817,	-- Voggah Deathgrip
-						["Lvl"] = 51,
+						["lvl"] = 51,
 					})),
 					q( 28751, {	-- Tending the Garden
 						["groups"] = {
@@ -1674,7 +1674,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["Lvl"] = 20,	
+			["lvl"] = 20,	
 			["achievementID"] = 772,
 			["description"] = "|cff66ccffHillsbrad Foothills was radically changed in Cataclysm. A former grassy zone with World PvP between the Alliance town of Southshore and the Horde town of Tarren Mill, the Forsaken have taken over the zone after the Shattering. Southshore is destroyed due to plague experiments, and toxic waste covers much of the zone. This zone has also been merged with Alterac Mountains, a snowy plateau populated by ogres and surrounded by the Syndicate.|r",				
 		}),

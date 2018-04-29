@@ -343,7 +343,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 37812,	-- Mahka
-						["Lvl"] = 30,
+						["lvl"] = 30,
 					})),
 					qa(25043, {	-- Fields of Blood
 						["groups"] = {
@@ -522,7 +522,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 39697,	-- Nato Raintree
-						["Lvl"] = 35,
+						["lvl"] = 35,
 					}),
 					qa(25102, {	-- No Bull
 						["groups"] = {
@@ -573,7 +573,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 39119,	-- General Twinbraid
-						["Lvl"] = 35,
+						["lvl"] = 35,
 						["sourceQuests"] = { 25182 },	-- Kill 'em All!
 					}),
 					qa(24921, {	-- Report to Aubrey
@@ -1319,7 +1319,7 @@ _.Zones =
 				}),
 			},
 			["achievementID"] = 4996,
-			["Lvl"] = 30,
+			["lvl"] = 30,
 			["description"] = "|cff66ccffSouthern Barrens is a war-torn land after the Shattering. Camp Taurajo has been razed as the Alliance retaliate for the Horde's offensive in Ashenvale, plowing through to link Theramore to their northern bases. Naralex, formerly sleeping in Wailing Caverns, is rescued and has created a wild mutant jungle in this zone as well.|r",
 		}),	
 	}),

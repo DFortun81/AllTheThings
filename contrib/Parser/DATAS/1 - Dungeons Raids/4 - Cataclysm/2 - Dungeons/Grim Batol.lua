@@ -84,7 +84,7 @@ _.Instances =
 						})),
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(39625, e(131, { -- General Umbriss
@@ -137,7 +137,7 @@ _.Instances =
 						}
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["groups"] = {
 							cr(39625, e(131, { -- General Umbriss
 								i(133283),	-- Modgud's Blade
@@ -173,7 +173,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 83,
+				["lvl"] = 83,
 				["mapID"] = 757
 			}),
 		},					

@@ -621,7 +621,7 @@ _.Zones =
 											un(29, dr(5.0, i(116448))),	-- Warm Red Woolen Socks
 										}),
 									},
-									["Lvl"] = 1,
+									["lvl"] = 1,
 								}),
 								q(8803), 	-- A Festive Gift
 								q(8768, { 	-- A Gaily Wrapped Present
@@ -632,7 +632,7 @@ _.Zones =
 											un(29, i(21305)),	-- Red Helper Box
 											un(29, i(21309)),	-- Snowman Kit
 										},
-										["Lvl"] = 20,
+										["lvl"] = 20,
 									}),
 								}),
 								q(50420, { 	-- A Gently Shaken Gift
@@ -690,7 +690,7 @@ _.Zones =
 											["questID"] = 43364,
 										}),
 									},
-									["Lvl"] = 10,
+									["lvl"] = 10,
 								}),
 								q(8769, { 	-- A Ticking Present
 									["groups"] = {
@@ -709,7 +709,7 @@ _.Zones =
 											})),
 										}),
 									},
-									["Lvl"] = 40,
+									["lvl"] = 40,
 								}),
 								q(47751, { 	-- A Winter Veil Gift
 									["groups"] = {
@@ -785,7 +785,7 @@ _.Zones =
 											["questID"] = 47751,
 										}),
 									},
-									["Lvl"] = 10,
+									["lvl"] = 10,
 								}),
 							}),
 						},
@@ -4266,7 +4266,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 			},
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_orc",
 			["isRaid"] = true,
-			["Lvl"] = 1,
+			["lvl"] = 1,
 			["description"] = "|cff66ccffOrgrimmar is the capital city of the Horde, with large settlements of trolls, orcs, tauren, and goblins.|r",		
 		}),
 	}),

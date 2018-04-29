@@ -166,7 +166,7 @@ _.Instances =
 						},
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 100,
+						["lvl"] = 100,
 						["groups"] = {
 							n(-17, {	-- Quests 			
 								q(37159, {
@@ -329,7 +329,7 @@ _.Instances =
 						},
 					}),
 					d(23, {		-- Mythic
-						["Lvl"] = 100,
+						["lvl"] = 100,
 						["groups"] = {
 							cr(75964, e(965, {	-- Ranjit
 								i(110030),	-- Chakram-Breaker Greatsword
@@ -487,7 +487,7 @@ _.Instances =
 						},
 					}),
 				},
-				["Lvl"] = 96,
+				["lvl"] = 96,
 				["mapID"] = 989
 			}),
 		},					

@@ -53,7 +53,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 60,
+						["lvl"] = 60,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(17797, e(573, {	-- Hydromancer Thespia
@@ -95,7 +95,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 65,
+				["lvl"] = 65,
 				["mapID"] = 727
 			}),
 		},					

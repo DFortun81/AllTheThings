@@ -423,7 +423,7 @@ _.Zones =
 											dr(5.0, i(116448)),	-- Warm Red Woolen Socks
 										}),
 									},
-									["Lvl"] = 1,
+									["lvl"] = 1,
 								}),
 								q(8803),   	-- A Festive Gift
 								q(8768, { 	-- A Gaily Wrapped Present
@@ -434,7 +434,7 @@ _.Zones =
 											i(21305),	-- Red Helper Box
 											i(21309),	-- Snowman Kit
 										},
-										["Lvl"] = 20,
+										["lvl"] = 20,
 									}),
 								}),
 								q(50420, { 	-- A Gently Shaken Gift
@@ -492,7 +492,7 @@ _.Zones =
 											["questID"] = 43364,
 										}),
 									},
-									["Lvl"] = 10,
+									["lvl"] = 10,
 								}),
 								q(8769, { 	-- A Ticking Present
 									["groups"] = {
@@ -511,7 +511,7 @@ _.Zones =
 											}),
 										}),
 									},
-									["Lvl"] = 40,
+									["lvl"] = 40,
 								}),
 								q(47751, { 	-- A Winter Veil Gift
 									["groups"] = {
@@ -588,7 +588,7 @@ _.Zones =
 											["questID"] = 47751,
 										}),
 									},
-									["Lvl"] = 10,
+									["lvl"] = 10,
 								}),
 							}),
 						},
@@ -1493,7 +1493,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["Lvl"] = 1,
+			["lvl"] = 1,
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_dwarf",
 			["description"] = "|cff66ccffIronforge is the capital city of the dwarves, proud members of the Alliance. It is the ancestral home of the Bronzebeard dwarves. The Council of Three Hammers rules the kingdom of Khaz Modan from the throne room within the city.|r",			

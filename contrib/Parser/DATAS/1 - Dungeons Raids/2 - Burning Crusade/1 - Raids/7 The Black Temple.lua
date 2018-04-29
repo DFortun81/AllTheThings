@@ -328,11 +328,11 @@ _.Instances =
 								}),
 							}))
 						},	
-						["Lvl"] = 68,
+						["lvl"] = 68,
 						["ignoreBonus"] = 1
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["groups"] = {	
 							cr(22887, e(1582, {	-- High Warlord Naj'entus
 								i(150447),
@@ -483,7 +483,7 @@ _.Instances =
 					}),
 				},	
 				["isRaid"] = true,
-				["Lvl"] = 68,
+				["lvl"] = 68,
 				["mapID"] = 796
 			}),
 		},					

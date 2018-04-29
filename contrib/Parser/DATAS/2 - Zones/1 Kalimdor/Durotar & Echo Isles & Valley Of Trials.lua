@@ -963,7 +963,7 @@ _.Zones =
 				}),	
 			},
 			["achievementID"] = 728,
-			["Lvl"] = 1,
+			["lvl"] = 1,
 			["description"] = "|cff66ccffDurotar is the Horde starting zone for orcs and trolls. Thrall chose this land for the orcs to settle in, naming it Durotar after his father, Durotan. After the Shattering, more of the zone is flooded from the Southfury River, and the quests reflect Hellscream's new military rule.|r",				
 		}),
 	}),

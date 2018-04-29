@@ -59,7 +59,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(17770, e(576, {	-- Hungarfen
@@ -113,7 +113,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 60,
+				["lvl"] = 60,
 				["mapID"] = 726
 			}),
 		},					

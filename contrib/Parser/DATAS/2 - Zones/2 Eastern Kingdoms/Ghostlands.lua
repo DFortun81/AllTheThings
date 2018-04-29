@@ -120,7 +120,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 16197,	-- Arcanist Vandril
-						["Lvl"] = 10,
+						["lvl"] = 10,
 						["races"] = {10}, -- Blood Elf
 						["classes"] = {8}, -- Mage
 					}),
@@ -130,7 +130,7 @@ _.Zones =
 							i(7509)	-- Manaweave Robe
 						},
 						["qg"] = 16197,	-- Arcanist Vandril
-						["Lvl"] = 10,
+						["lvl"] = 10,
 						["races"] = {10}, -- Blood Elf
 						["classes"] = {8}, -- Mage
 						["sourceQuests"] = { 9487 },	-- Arcane Reavers
@@ -247,7 +247,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 16201,	-- Geranis Whitemorn
-						["Lvl"] = 10,
+						["lvl"] = 10,
 						["sourceQuests"] = { 9274 },	-- Spirits of the Drowned (NOTE: I was able to pick up this while I was on this quest, but it may have procced after Report to Captain Helios - when I pulled up Wholly to check what info it had, it only listed the lv. requirement, but it was not available to me at that lv. or above until somewhere around this point)
 					}),
 					q(  9811, {	-- Friend of the Sin'dorei
@@ -432,7 +432,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 16199,	-- Magister Darenis
-						["Lvl"] = 20,
+						["lvl"] = 20,
 --						["sourceQuests"] = {  },	-- UNKNOWN - requires unknown progression in zone.  Could not pick up on 110 who had done no quests.  Needs more testing.
 					}),
 --[[				qh( 9529, {	-- The Stone (LEGACY?  no information on where to pick up and most recent wowhead comment speculates it has been removed)
@@ -574,7 +574,7 @@ _.Zones =
 				}),
 --]]
 			},
-			["Lvl"] = 10,
+			["lvl"] = 10,
 			["achievementID"] = 858,
 			["description"] = "|cff66ccffGhostlands is a low-level zone focusing on the alliance between the Blood Elves and Forsaken in pushing back the Scourge's presence. It is dark and shadowy with corruption throughout the land, culminating in Deathholme. It is also the site of the ancient Amani troll empire and the low-level reputation hub of Tranquillien.|r",					
 		}),

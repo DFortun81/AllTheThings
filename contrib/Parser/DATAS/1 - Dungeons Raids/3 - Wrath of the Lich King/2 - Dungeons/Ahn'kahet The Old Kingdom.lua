@@ -62,7 +62,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {		-- Zone Drop
@@ -112,7 +112,7 @@ _.Instances =
 							}))
 						}}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["groups"] = {
 							cr(29309, e(580, {	-- Elder Nadox
 								i(127607),	-- Blade of Nadox
@@ -160,7 +160,7 @@ _.Instances =
 							}))
 						}})
 				},
-				["Lvl"] = 70,
+				["lvl"] = 70,
 				["mapID"] = 522
 			}),
 		},					

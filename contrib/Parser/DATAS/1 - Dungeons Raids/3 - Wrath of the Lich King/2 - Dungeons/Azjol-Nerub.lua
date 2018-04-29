@@ -75,7 +75,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 80,
+						["lvl"] = 80,
 						["groups"] = {
 							n(0, {		-- Zone Drop
 								i(37243),	-- Treasure Seeker's Belt
@@ -114,7 +114,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 69,
+				["lvl"] = 69,
 				["mapID"] = 533
 			}),
 		},					

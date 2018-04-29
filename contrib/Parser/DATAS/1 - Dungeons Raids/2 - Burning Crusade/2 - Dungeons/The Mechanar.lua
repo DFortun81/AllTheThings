@@ -62,7 +62,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(19219, e(563, {	-- Mechano-Lord Capacitus
@@ -103,7 +103,7 @@ _.Instances =
 						},
 					}),
 				},
-				["Lvl"] = 65,
+				["lvl"] = 65,
 				["mapID"] = 730
 			}),
 		},					

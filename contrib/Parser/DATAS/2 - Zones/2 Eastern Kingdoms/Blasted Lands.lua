@@ -1089,7 +1089,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["Lvl"] = 55,	
+			["lvl"] = 55,	
 			["achievementID"] = 766,
 			["description"] = "|cff66ccffThe Blasted Lands are a scorched zone connecting Eastern Kingdoms to Outland via the Dark Portal. It is filled with demons and ogres. New to Cataclysm is the Gilnean village of Surwich, a sinister forest revitalized by druid Marl Wormthorn.|r",				
 		}),

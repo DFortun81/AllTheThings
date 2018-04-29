@@ -71,7 +71,7 @@ _.Instances =
 					}),
 					d(2, {		-- Heroic
 						["ids"] = { 1726 }, -- Heroic
-						["Lvl"] = 110,
+						["lvl"] = 110,
 						["groups"] = {
 							cr(91784, e(1480, {	-- Warlord Parjesh
 								i(134240),
@@ -125,7 +125,7 @@ _.Instances =
 					}),
 					d(23, {		-- Mythic
 						["ids"] = { 1727 }, -- Mythic
-						["Lvl"] = 110,
+						["lvl"] = 110,
 						["groups"] = {
 							cr(91784, e(1480, {	-- Warlord Parjesh
 								i(134240),
@@ -178,7 +178,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 98,
+				["lvl"] = 98,
 				["mapID"] = 1046,
 			}),
 		},					

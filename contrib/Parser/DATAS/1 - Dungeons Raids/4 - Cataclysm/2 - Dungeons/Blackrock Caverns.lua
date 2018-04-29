@@ -113,7 +113,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(39665, e(105, { -- Rom'ogg Boncrusher
@@ -243,7 +243,7 @@ _.Instances =
 						}),
 					}),	
 				},
-				["Lvl"] = 77,
+				["lvl"] = 77,
 				["mapID"] = 753
 			}),
 		},					

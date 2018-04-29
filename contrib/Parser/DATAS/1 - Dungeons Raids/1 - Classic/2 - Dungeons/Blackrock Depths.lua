@@ -50,7 +50,7 @@ _.Instances =
 											un(2.00, i( 71332)), 	-- Tremendous Tankard O'Terror
 											un(2.00, i(107218)), 	-- Tremendous Tankard O'Terror
 										},
-										["Lvl"] = 98,
+										["lvl"] = 98,
 										["u"] = 24,
 									}),
 									i(149752, {		-- Keg-Shaped Treasure Box
@@ -66,7 +66,7 @@ _.Instances =
 											un(2.00, i( 71332)), 	-- Tremendous Tankard O'Terror
 											un(2.00, i(107218)), 	-- Tremendous Tankard O'Terror
 										},
-										["Lvl"] = 46,
+										["lvl"] = 46,
 										["u"] = 24,
 									}),
 								},
@@ -863,7 +863,7 @@ _.Instances =
 						["u"] = 12,
 					}),
 				},
-				["Lvl"] = 42,
+				["lvl"] = 42,
 				["mapID"] = 704
 			}),
 		},					

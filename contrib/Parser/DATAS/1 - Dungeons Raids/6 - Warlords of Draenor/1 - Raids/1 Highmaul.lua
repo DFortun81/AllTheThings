@@ -343,7 +343,7 @@ _.Instances =
 					})
 				},
 				["isRaid"] = true,
-				["Lvl"] = 100,
+				["lvl"] = 100,
 				["mapID"] = 994
 			}),
 		},					

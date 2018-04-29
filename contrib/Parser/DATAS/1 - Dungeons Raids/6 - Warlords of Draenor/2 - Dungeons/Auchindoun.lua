@@ -168,7 +168,7 @@ _.Instances =
 						}
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 100,
+						["lvl"] = 100,
 						["groups"] = {
 							n(-17, {	-- Quests 		
 								q(37156, {
@@ -333,7 +333,7 @@ _.Instances =
 						},
 					}),
 					d(23, {		-- Mythic
-						["Lvl"] = 100,
+						["lvl"] = 100,
 						["groups"] = {
 							cr(75839, e(1185, {	-- Vigilant Kaathar
 								i(110045),	-- Kamui's Crystalline Staff of Wizardry
@@ -493,7 +493,7 @@ _.Instances =
 						},
 					}),
 				},
-				["Lvl"] = 94,
+				["lvl"] = 94,
 				["mapID"] = 984
 			}),
 		},					

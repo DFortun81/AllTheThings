@@ -9,7 +9,7 @@ _.Instances =
 			inst(64, { 	-- Shadowfang Keep
 				["groups"] = {
 					d(2, {		-- Heroic
-						["Lvl"] = 85,
+						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(46962, e(96, { -- Baron Ashbury

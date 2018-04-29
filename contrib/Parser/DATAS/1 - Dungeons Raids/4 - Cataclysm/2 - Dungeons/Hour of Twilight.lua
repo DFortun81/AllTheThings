@@ -53,7 +53,7 @@ _.Instances =
 						i(72861),		-- Pauldrons of the Dragonblight
 					}))
 				},
-				["Lvl"] = 85,
+				["lvl"] = 85,
 				["mapID"] = 819
 			}),
 		},					

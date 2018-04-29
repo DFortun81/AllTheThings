@@ -45,14 +45,14 @@ _.ClassHalls =
 					["groups"] = {
 						i(143493), -- Razor-Lined Reins of Dark Potent
 					},
-					["Lvl"] = 110,
+					["lvl"] = 110,
 					["classes"] = {4},
 				}),
 				qh(46178, { -- The Sunken Vault
 					["groups"] = {
 						i(143493), -- Razor-Lined Reins of Dark Potent
 					},
-					["Lvl"] = 110,
+					["lvl"] = 110,
 					["classes"] = {4},
 				}),
 				q(45848, { -- Fit For a Pirate
@@ -420,7 +420,7 @@ _.ClassHalls =
 				}),
 			}),
 		},
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		["mapID"] = 1014,
 		--["icon"] = "Interface\\Icons\\classicon_rogue",
 		--["classes"] = {4},

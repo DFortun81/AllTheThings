@@ -70,7 +70,7 @@ _.Instances =
 				},
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
-				["Lvl"] = 68,
+				["lvl"] = 68,
 				["mapID"] = 779
 			}),
 		},					

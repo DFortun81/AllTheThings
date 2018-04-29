@@ -230,7 +230,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["Lvl"] = 77,	
+			["lvl"] = 77,	
 			["description"] = "|cff66ccffWintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns. .|r",	
 			["icon"] = "Interface\\Icons\\spell_frost_chillingblast", 
 		}),

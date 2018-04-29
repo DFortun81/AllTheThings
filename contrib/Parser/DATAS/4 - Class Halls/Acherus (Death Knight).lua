@@ -366,7 +366,7 @@ _.ClassHalls =
 			}),
 		},
 		["mapID"] = 1021,
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		--["icon"] = "Interface\\Icons\\Classicon_deathknight",
 		--["classes"] = {6}
 	}),

@@ -792,7 +792,7 @@ _.Zones =
 					["description"] = "|cff66ccffNorthshire Valley is a pristine valley in Elwynn Forest in which both Northshire Abbey and the Northshire Vineyards are located. The Northshire River also flows through it. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.|r",
 				}),	
 			},
-			["Lvl"] = 1,	
+			["lvl"] = 1,	
 			["achievementID"] = 776,
 			["description"] = "|cff66ccffElwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center.|r",				
 		}),	

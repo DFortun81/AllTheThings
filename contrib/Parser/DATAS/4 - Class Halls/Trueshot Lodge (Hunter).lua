@@ -145,7 +145,7 @@ _.ClassHalls =
 					["groups"] = {
 						{ ["mountID"] = 229386 }, -- Huntmaster's Loyal Wolfhawk
 					},
-					["Lvl"] = 110,
+					["lvl"] = 110,
 					["classes"] = {3},
 				}),
 				q(44233, { -- Walk This Way
@@ -504,7 +504,7 @@ _.ClassHalls =
 				}),
 			}),
 		},
-		["Lvl"] = 98,
+		["lvl"] = 98,
 		["mapID"] = 1072,
 		--["icon"] = "Interface\\Icons\\classicon_hunter",
 		--["classes"] = {3}

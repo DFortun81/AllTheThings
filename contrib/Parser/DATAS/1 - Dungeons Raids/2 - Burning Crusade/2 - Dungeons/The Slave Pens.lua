@@ -99,7 +99,7 @@ _.Instances =
 						}))
 					}),
 					d(2, {		-- Heroic
-						["Lvl"] = 70,
+						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(17941, e(570, { -- Mennu the Betrayer
@@ -147,7 +147,7 @@ _.Instances =
 						}
 					}),
 					d(24, {		-- Timewalking
-						["Lvl"] = 60,
+						["lvl"] = 60,
 						["groups"] = {
 							cr(17941, e(570, { -- Mennu the Betrayer
 								i(127183),		-- Spellfire Longsword
@@ -189,7 +189,7 @@ _.Instances =
 						}
 					})
 				},
-				["Lvl"] = 59,
+				["lvl"] = 59,
 				["mapID"] = 728
 			}),
 		},					

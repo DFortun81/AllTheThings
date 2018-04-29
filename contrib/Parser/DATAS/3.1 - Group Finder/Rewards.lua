@@ -41,7 +41,7 @@ _.GroupFinder =
 			i(51963),	-- Vigorous Stompers*
 		},		
 		["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-60 range.|r",		
-		["Lvl"] = 15,		
+		["lvl"] = 15,		
 	}),	
 	un(2, i(51999, {	-- Satchel of Helpful Goods 15-25
 		["groups"] = {
@@ -122,7 +122,7 @@ _.GroupFinder =
 			i(51995),	-- Turbulent Necklace*
 			i(51991),	-- Turbulent Signet*
 		},
-		["Lvl"] = 60,
+		["lvl"] = 60,
 	}),
 	i(156688, {	-- Icy Satchel of Helpful Goods
 		["groups"] = {
@@ -159,7 +159,7 @@ _.GroupFinder =
 			i(113684),	-- Icecrust Cloak*
 			i(113687),	-- Dark Rune Lavalliere*
 		},
-		["Lvl"] = 60,
+		["lvl"] = 60,
 	}),
 	un(2, i(52004, {	-- Satchel of Helpful Goods 60-64
 		["groups"] = {
@@ -247,7 +247,7 @@ _.GroupFinder =
 		   i(113702),	-- Emberspark Plate Wristguards
 		},
 		["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation",
-		["Lvl"] = 80,
+		["lvl"] = 80,
 	}),
 	un(2, i(114648, {	-- Scorched Satchel of Helpful Goods 80-83
 		["groups"] = {
@@ -351,7 +351,7 @@ _.GroupFinder =
 		   i(113735),	-- Drifting Cloud Necklace*
 		},
 		["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation",
-		["Lvl"] = 80,
+		["lvl"] = 80,
 	}),
 	un(2, i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
 		["groups"] = {
@@ -540,7 +540,7 @@ _.GroupFinder =
 			i(92882),	-- Stormcrier Ring
 		},
 		["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",						
-		["Lvl"] = 90,
+		["lvl"] = 90,
 	}),
 	i(98134, {	-- Heroic Cache of Treasures
 		["groups"] = {
@@ -668,6 +668,6 @@ _.GroupFinder =
 			i(98179),	-- Tidesplitter Waistband
 		},
 		["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria heroic scenario at 90.",
-		["Lvl"] = 90,
+		["lvl"] = 90,
 	}),
 };

@@ -987,10 +987,10 @@ _.Zones =
 					["description"] = "The Chromie Scenario sends you through multiple timeways to defeat Chromie's attackers. As you gain reputation with Chromie by killing mobs in the scenario, you will unlock more powerful abilities for Chromie to help speed up your run. Unlike past solo scenarios like Withered Army Training, you do not need to worry about gearing up--your gear is scaled up to 1000 and your player level is increased as well to 112. You can also fly inside this scenario--unusual for instanced content.\n\nEach scenario attempt lasts 15 minutes and the ultimate goal is to defeat 8 timeways in one attempt. Progress can be sped up through obtaining items that grant extra time, buffs from Chromie, and items which auto-complete a timeway threat.",
 					["creatureID"] = 27856,
 					["maps"] = {1177},	-- Death's of Chrome Scenario [Shocking, not same mapID as Dragonblight]
-					["Lvl"] = 110,
+					["lvl"] = 110,
 				}),
 			},
-			["Lvl"] = 71,	
+			["lvl"] = 71,	
 			["achievementID"] = 1265,
 			["description"] = "|cff66ccffDragonblight is a level 72-75 quest hub in central Northrend. It makes a reappearance in Cataclysm as the backdrop for Dragon Soul and Hour of Twilight in patch 4.3. It is an icy valley, covered with the bodies of dead dragons. Players learn about two major plotlines here: the dragonflights at Wyrmrest Temple, and the Wrathgate plot, which has very different stories for Alliance and Horde.|r",				
 		}),

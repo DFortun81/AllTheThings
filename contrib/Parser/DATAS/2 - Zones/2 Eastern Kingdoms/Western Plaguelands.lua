@@ -632,14 +632,14 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 109698,	-- Calydus
-						["Lvl"] = 98,
+						["lvl"] = 98,
 						["classes"] = { 9 },	-- Warlock
 						["sourceQuests"] = { 43100 },	-- Finding the Scepter
 					})),
 					qart(q(42774, {	-- Hope Prevails
 						["g"] = {
 						},
-						["Lvl"] = 98,
+						["lvl"] = 98,
 						["qg"] = 108776,	-- Lord Maxwell Tyrosus
 						["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	-- 
@@ -648,7 +648,7 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 108778,	-- Mehlar Dawnblade
-						["Lvl"] = 98,
+						["lvl"] = 98,
 						["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	-- 
 					})),
@@ -656,7 +656,7 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 108777,	-- High Priest Thel'danis
-						["Lvl"] = 98,
+						["lvl"] = 98,
 						["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	-- 
 					})),
@@ -664,7 +664,7 @@ _.Zones =
 						["g"] = {
 						},
 						["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus (same QG, different IDs)
-						["Lvl"] = 98,
+						["lvl"] = 98,
 						["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	-- 
 					})),
@@ -672,7 +672,7 @@ _.Zones =
 						["g"] = {
 						},
 						["qgs"] = { 108776 },	-- Lord Maxwell Tyrosus
-						["Lvl"] = 98,
+						["lvl"] = 98,
 						["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	-- 
 					})),
@@ -1367,7 +1367,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["Lvl"] = 35,	
+			["lvl"] = 35,	
 			["achievementID"] = 770,
 			["description"] = "|cff66ccffWestern Plaguelands is starting to mend thanks to the efforts of the Cenarion Circle, but other parts are torn apart by war, such as Andorhal. After the fall of the Scarlet Crusade and victory in Northrend, Hearthglen was reclaimed by Tirion Fordring and now serves as a major friendly quest hub (in contrast to the pre-Cataclysm elites). The Battle for Andorhal questline also features reappearances of Thassarian and Koltira Deathweaver, two favorite deathknights who wanted to remain friends after their experiences at Acherus instead of picking a side to fight on.|r",				
 		}),

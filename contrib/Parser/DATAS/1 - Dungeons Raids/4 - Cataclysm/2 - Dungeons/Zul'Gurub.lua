@@ -111,7 +111,7 @@ _.Instances =
 						h(i(122215)), -- Music Roll: Zul'Gurub Voodoo
 					})),
 				},
-				["Lvl"] = 85,
+				["lvl"] = 85,
 				["mapID"] = 793
 			}),
 		},					
