@@ -228,7 +228,7 @@ _.GearSets =
 				n(-385, { -- Finger
 					i(128173), -- Admiral Taylor's Loyalty Ring
 					i(128172), -- Captain Sander's Returned Band
-					i(50255), -- Dread Pirate Ring
+					un(2, i(50255)), -- Dread Pirate Ring
 					i(122529), -- Dread Pirate Ring
 					i(128169), -- Signet of the Third Fleet
 				}),
