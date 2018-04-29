@@ -1977,7 +1977,7 @@ local function SetCompletionistMode(completionistMode, fromSettings)
 	end
 	app.print(completionistMode and "Entering Completionist Mode..." or GetDataMember("MainOnly") and "Entering Unique Appearances Mode (Main Only)..." or "Entering Unique Appearances Mode...");
 	SetDataMember("CompletionistMode", completionistMode);
-	wipe(SetDataMember("CollectedSources"));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
+	wipe(GetDataMember("CollectedSources"));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 	if completionistMode then
 		app.ItemSourceFilter = app.FilterItemSource;
 		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
