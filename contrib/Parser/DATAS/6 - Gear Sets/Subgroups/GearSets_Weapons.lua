@@ -1564,61 +1564,73 @@ _.GearSets =
 				}),
 			}),
 			i(141372, { -- Arsenal: Armaments of the Ebon Blade
-				i(141365), -- Blood 2H Axe
-				i(141377), -- Blood 1H Sword
-				i(141366), -- Blood 2H Polearm
-				i(141379), -- Blood 1H Warsword
-				i(141375), -- Blood 2H Sword
-				i(141381), -- Icy 2H Axe
-				i(141362), -- Icy 1H Sword
-				i(141373), -- Icy 2H Polearm
-				i(141363), -- Icy 1H Warsword
-				i(141376), -- Icy 2H Sword
-				i(141382), -- Unholy 2H Axe
-				i(141378), -- Unholy 1H Sword
-				i(141374), -- Unholy 2H Polearm
-				i(141380), -- Unholy 1H Warsword
-				i(141364), -- Unholy 2H Sword
+				["groups"] = {
+					i(141365), -- Blood 2H Axe
+					i(141377), -- Blood 1H Sword
+					i(141366), -- Blood 2H Polearm
+					i(141379), -- Blood 1H Warsword
+					i(141375), -- Blood 2H Sword
+					i(141381), -- Icy 2H Axe
+					i(141362), -- Icy 1H Sword
+					i(141373), -- Icy 2H Polearm
+					i(141363), -- Icy 1H Warsword
+					i(141376), -- Icy 2H Sword
+					i(141382), -- Unholy 2H Axe
+					i(141378), -- Unholy 1H Sword
+					i(141374), -- Unholy 2H Polearm
+					i(141380), -- Unholy 1H Warsword
+					i(141364), -- Unholy 2H Sword
+				},
+				["Lvl"] = 110,
 			}),
 			i(141371, { -- Arsenal: Armaments of the Silver Hand
-				i(141653), -- 2H Yellow
-				i(141368), -- 2H Blue
-				i(141370), -- Shield
-				i(141367), -- 1H Mace					
+				["groups"] = {
+					i(141653), -- 2H Yellow
+					i(141368), -- 2H Blue
+					i(141370), -- Shield
+					i(141367), -- 1H Mace	
+				},
+				["Lvl"] = 110,				
 			}),
 			i(136854, {	-- Arsenal: Draenor Challenger's Armaments
-				i(118401),	-- Arcana Shard Spire
-				i(118396),	-- Bloodmaw Gargoyle
-				i(118395),	-- Claws of Creation
-				i(118409),	-- Cloudsong Glaive
-				i(118411),	-- Crystal-Shot Longrifle
-				i(118403),	-- Dimension-Ripper's Staff
-				i(118397),	-- Equus
-				i(118408),	-- Elemental Crescent
-				i(118407),	-- Face of the Guardian
-				i(118413),	-- Flamegrinder
-				i(118406),	-- Furnace of the Great Machine
-				i(118402),	-- Greatstaff of Infinite Knowledge
-				i(118412),	-- Greatsword of the Inferno
-				i(118404),	-- Living Longbow
-				i(118405),	-- Shifting Felblade
-				i(118398),	-- Soul Eater
-				i(118399),	-- Suneater
-				i(118410),	-- Tesseract Timepiece
+				["groups"] = {
+					i(118401),	-- Arcana Shard Spire
+					i(118396),	-- Bloodmaw Gargoyle
+					i(118395),	-- Claws of Creation
+					i(118409),	-- Cloudsong Glaive
+					i(118411),	-- Crystal-Shot Longrifle
+					i(118403),	-- Dimension-Ripper's Staff
+					i(118397),	-- Equus
+					i(118408),	-- Elemental Crescent
+					i(118407),	-- Face of the Guardian
+					i(118413),	-- Flamegrinder
+					i(118406),	-- Furnace of the Great Machine
+					i(118402),	-- Greatstaff of Infinite Knowledge
+					i(118412),	-- Greatsword of the Inferno
+					i(118404),	-- Living Longbow
+					i(118405),	-- Shifting Felblade
+					i(118398),	-- Soul Eater
+					i(118399),	-- Suneater
+					i(118410),	-- Tesseract Timepiece
+				},
+				["Lvl"] = 100,
 			}),
 			i(152396, { -- Arsenal: Weapons of the Lightforged
-				i(152332), -- Brilliant Daybreak Aegis
-				i(152337), -- Brilliant Daybreak Blade
-				i(152334), -- Brilliant Eventide Aegis
-				i(152339), -- Brilliant Eventide Blade
-				i(152333), -- Lustrous Daybreak Aegis
-				i(152336), -- Lustrous Daybreak Blade
-				i(152340), -- Lustrous Daybreak Greatsword
-				i(152342), -- Lustrous Daybreak Staff
-				i(152335), -- Lustrous Eventide Aegis
-				i(152338), -- Lustrous Eventide Blade
-				i(152341), -- Lustrous Eventide Greatsword
-				i(152343), -- Lustrous Eventide Staff
+				["groups"] = {
+					i(152332), -- Brilliant Daybreak Aegis
+					i(152337), -- Brilliant Daybreak Blade
+					i(152334), -- Brilliant Eventide Aegis
+					i(152339), -- Brilliant Eventide Blade
+					i(152333), -- Lustrous Daybreak Aegis
+					i(152336), -- Lustrous Daybreak Blade
+					i(152340), -- Lustrous Daybreak Greatsword
+					i(152342), -- Lustrous Daybreak Staff
+					i(152335), -- Lustrous Eventide Aegis
+					i(152338), -- Lustrous Eventide Blade
+					i(152341), -- Lustrous Eventide Greatsword
+					i(152343), -- Lustrous Eventide Staff
+				},
+				["Lvl"] = 110,
 			}),
 			
 		},

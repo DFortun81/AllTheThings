@@ -25,6 +25,7 @@ _.GearSets =
 				i(151317), -- Footpads of Seeping Dread
 			},
 			["classes"] = { 11, 4, 10, 12 }, -- Druid/Rogue/Monk/DH
+			["Lvl"] = 110,
 		}),
 		n(-3229, { -- Cadaverous Garb [Unobtainable]
 			i(14637), -- Chest
@@ -34,42 +35,45 @@ _.GearSets =
 			i(14641), -- Feet
 		}),
 		n(-3181, { -- Cenarion Circle Set (Ruins of Ahn'Qiraj)
-			n(-3232, { -- Finery of Infinite Wisdom
-				i(21412), -- Back
-				i(21410), -- Weapon
-			}),
-			n(-3233, { -- Trappings of Vaulted Secrets
-				i(21415), -- Back
-				i(21413), -- Weapon
-			}),
-			n(-3234, { -- Implements of Unspoken Names
-				i(21418), -- Back
-				i(21416), -- Weapon
-			}),
-			n(-3235, { -- Symbols of Unending Life
-				i(21409), -- Back
-				i(21407), -- Weapon
-			}),
-			n(-3236, { -- Emblems of Veiled Shadows
-				i(21406), -- Back
-				i(21404), -- Weapon
-			}),
-			n(-3237, { -- Trappings of the Unseen Path
-				i(21403), -- Back
-				i(21401), -- Weapon
-			}),
-			n(-3238, { -- Gift of the Gathering Storm
-				i(21400), -- Back
-				i(21398), -- Weapon
-			}),
-			n(-3239, { -- Battlegear of Eternal Justice
-				i(21397), -- Back
-				i(21395), -- Weapon
-			}),
-			n(-3240, { -- Battlegear of Unyielding Strength
-				i(21394), -- Back
-				i(21392), -- Weapon
-			}),
+			["groups"] = {
+				n(-3232, { -- Finery of Infinite Wisdom
+					i(21412), -- Back
+					i(21410), -- Weapon
+				}),
+				n(-3233, { -- Trappings of Vaulted Secrets
+					i(21415), -- Back
+					i(21413), -- Weapon
+				}),
+				n(-3234, { -- Implements of Unspoken Names
+					i(21418), -- Back
+					i(21416), -- Weapon
+				}),
+				n(-3235, { -- Symbols of Unending Life
+					i(21409), -- Back
+					i(21407), -- Weapon
+				}),
+				n(-3236, { -- Emblems of Veiled Shadows
+					i(21406), -- Back
+					i(21404), -- Weapon
+				}),
+				n(-3237, { -- Trappings of the Unseen Path
+					i(21403), -- Back
+					i(21401), -- Weapon
+				}),
+				n(-3238, { -- Gift of the Gathering Storm
+					i(21400), -- Back
+					i(21398), -- Weapon
+				}),
+				n(-3239, { -- Battlegear of Eternal Justice
+					i(21397), -- Back
+					i(21395), -- Weapon
+				}),
+				n(-3240, { -- Battlegear of Unyielding Strength
+					i(21394), -- Back
+					i(21392), -- Weapon
+				}),
+			},
+			["Lvl"] = 60,
 		}),	
 		gs(1457, { -- Chronoscryer's Finery
 			["groups"] = {
@@ -83,6 +87,7 @@ _.GearSets =
 				i(151664), -- Feet
 			},
 			["classes"] = { 5, 8 , 9 }, -- Priest/Mage/Lock
+			["Lvl"] = 110,
 		}),
 		n(-3231, { -- Deathbone Guardian [Unobtainable]
 			i(14624), -- Chest
@@ -137,6 +142,7 @@ _.GearSets =
 				i(151665), -- Feet
 			},
 			["classes"] = { 3, 7 }, -- Hunter/Shaman
+			["Lvl"] = 110,
 		}),
 		n(-3226, { -- Ironweave Battlesuit [Unobtainable]
 			i(22302), -- Helm
@@ -161,6 +167,7 @@ _.GearSets =
 				i(151301), -- Feet
 			},
 			["classes"] = { 5, 8 , 9 }, -- Priest/Mage/Lock
+			["Lvl"] = 110,
 		}),
 		n(-3228, { -- Necropile Raiment [Unobtainable]
 			i(14633), -- Shoulders
@@ -181,6 +188,7 @@ _.GearSets =
 				i(151666), -- Feet
 			},
 			["classes"] = { 11, 4, 10, 12 }, -- Druid/Rogue/Monk/DH
+			["Lvl"] = 110,
 		}),
 		gs(1469, { -- Sterling Triumvirate Chainmail
 			["groups"] = {
@@ -195,6 +203,7 @@ _.GearSets =
 				i(151320), -- Feet
 			},
 			["classes"] = { 3, 7 }, -- Hunter/Shaman
+			["Lvl"] = 110,
 		}),
 		n(-3227, { -- The Postmaster
 			i(13390), -- Helm
@@ -224,6 +233,7 @@ _.GearSets =
 				i(151663), -- Feet
 			},
 			["classes"] = { 2, 1, 6 }, -- Paladin/Warrior/DK
+			["Lvl"] = 110,
 		}),
 		gs(1468, { -- Venerated Triumvirate Battleplate
 			["groups"] = {
@@ -238,6 +248,7 @@ _.GearSets =
 				i(151330), -- Feet
 			},
 			["classes"] = { 2, 1, 6 }, -- Paladin/Warrior/DK
+			["Lvl"] = 110,
 		}),
 	}),
 };
