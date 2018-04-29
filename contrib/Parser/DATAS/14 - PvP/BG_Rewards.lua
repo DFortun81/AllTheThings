@@ -17,21 +17,21 @@ _.PVP =
 			i(134651),	-- Greenhorn's Armor
 			i(134652),	-- Greenhorn's Footguards
 			i(134653),	-- Greenhorn's Leggings
-			i(134658),	-- Front-Line Armplates
-			i(134655),	-- Front-Line Breastplate
-			i(134657),	-- Front-Line Legguards
-			i(134656),	-- Front-Line Warboots
-			i(134636),	-- Recruit's Cleaver
-			i(134635),	-- Recruit's Decapitator
-			i(134637),	-- Recruit's Dirk
-			i(134645),	-- Recruit's Endgame
-			i(134644),	-- Recruit's Hammer
+			i(134658),	-- Front-Line Armplates*
+			i(134655),	-- Front-Line Breastplate*
+			i(134657),	-- Front-Line Legguards*
+			i(134656),	-- Front-Line Warboots*
+			i(134636),	-- Recruit's Cleaver*
+			i(134635),	-- Recruit's Decapitator*
+			i(134637),	-- Recruit's Dirk*
+			i(134645),	-- Recruit's Endgame*
+			i(134644),	-- Recruit's Hammer*
 			i(134646),	-- Recruit's Mageblade*
-			i(135481),	-- Recruit's Quickblade
-			i(134662),	-- Recruit's Redoubt
+			i(135481),	-- Recruit's Quickblade*
+			i(134662),	-- Recruit's Redoubt*
 			i(134638),	-- Recruit's Rifle
-			i(134663),	-- Recruit's Slicer
-			i(134639),	-- Recruit's Staff
+			i(134663),	-- Recruit's Slicer*
+			i(134639),	-- Recruit's Staff*
 			i(134661),	-- Recruit's Signet
 			i(134660),  -- Recruit's Band
 			i(134659),  -- Recruit's Ring
@@ -54,18 +54,18 @@ _.PVP =
 			i(134681),	-- Greenhorn's Legguards
 			i(134682),	-- Greenhorn's Spaulders
 			i(134683),	-- Front-Line Gauntlets*
-			i(134685),	-- Front-Line Greaves
+			i(134685),	-- Front-Line Greaves*
 			i(134684),	-- Front-Line Helm*
-			i(134686),	-- Front-Line Shoulders
+			i(134686),	-- Front-Line Shoulders*
 			i(134689),	-- Recruit's Accolade*
 			i(134687),	-- Recruit's Barrier
-			i(134674),	-- Recruit's Battle Staff
-			i(134673),	-- Recruit's Gavel
+			i(134674),	-- Recruit's Battle Staff*
+			i(134673),	-- Recruit's Gavel*
 			i(134664),	-- Recruit's Greatsword
 			i(134665),	-- Recruit's Longbow
 			i(134668),	-- Recruit's Pike
-			i(134667),	-- Recruit's Pummeler
-			i(134666),	-- Recruit's Shanker
+			i(134667),	-- Recruit's Pummeler*
+			i(134666),	-- Recruit's Shanker*
 			i(134688),	-- Recruit's Slicer*
 			i(134691),  -- Recruit's Badge*
 		},
