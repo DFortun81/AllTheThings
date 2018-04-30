@@ -45,6 +45,99 @@ _.Zones =
 					qg(65651, qa(31781)),	-- Lindsay (DAILY)
 				}),
 				n(-17, {	-- Quests
+					ach(4902, { -- Redridge Mountain Quests
+						crit(1, { -- The Gnoll Offensive
+							qg(379, qa(26506)),	-- Franks and Beans
+							o(204344, {	-- Wanted!
+								qa(26504, { -- Wanted: Redridge Gnolls
+									i(60684),	-- Royal Guard Breastplate
+									i(60683),	-- Tower Watch Bracers
+									i(60682),	-- Watch Captain's Cloak
+								}),
+							}),
+							qg(464, qa(26503, {	-- Still Assessing the Threat
+								["groups"] = {
+								i(60687),	-- Belt of the Sons
+								i(60686),	-- Boots of the Prolific Sire
+								i(131538),	-- Striders of the Prolific Sire
+								i(60685),	-- Yowling Cloak
+								},
+								["breadcrumbQuestID"] = {26365},	-- Hero's Call: Redridge Mountains!
+							})),
+							qg(464, qa(26505, {	-- Parker's Report					
+								["groups"] = {
+								},
+								["sourceQuests"] = {26503},	-- Still Assessing the Threat
+							})),
+							qg(8965, qa(26508)),	-- Nida's Necklace
+							qg(342, qa(26509)),	-- An Unwelcome Guest
+							qg(900, qa(26511, {	-- Lake Everstill Clean Up
+								i(60699),	-- Bailiff's Gloves
+								i(60698),	-- Belt of Recurring Raids
+								i(131539),	-- Chain of Recurring Raids
+								i(157001),	-- Everstill Hewer
+								i(60697),	-- Indiscriminate Wand
+								i(60696),	-- Shield of the Lesson
+							})),
+							qg(344, qa(26510)),	-- We Must Prepare!
+							qg(344, qa(26512, {	-- Tuning the Gnomecorder
+								["groups"] = {
+								},
+								["sourceQuests"] = {26510},	-- We Must Prepare!
+							})),
+							qg(344, qa(26514, {	-- Canyon Romp
+								["groups"] = {
+								},
+								["sourceQuests"] = {26512},	-- Tuning the Gnomecorder
+							})),
+							qg(344, qa(26544, {	-- They've Wised Up...
+								["groups"] = {
+								},
+								["sourceQuests"] = {26514},	-- Canyon Romp
+							})),
+							{
+								["itemID"] = 58898, -- Dirt-Stained Scroll
+								["questID"] = 26519, -- He Who Controls the Ettins
+								["qgs"] = {
+									445,	-- Redridge Alpha
+									446,	-- Redridge Basher
+									430,	-- Redridge Mystic
+								},
+								["sourceQuests"] = { 26514 },	-- Canyon Romp
+							},	
+							qg(382, qa(26513, {	-- Like a Fart in the Wind
+								["groups"] = {
+								i(60692),	-- Breadwinner's Gloves
+								i(60695),	-- Cloak of Insomnia
+								i(131540),	-- Starvation Leggings
+								i(60694),	-- Starvation Vest
+								i(60693),	-- Ventillated Leggings
+								i(131541),	-- Ventillated Vest
+								},
+								["sourceQuests"] = {26510,26503,26505},	-- We Must Prepare! + Still Assessing the Threat + Parker's Report)
+							})),
+							qg(344, qa(26545, {	-- Yowler Must Die!
+								["groups"] = {
+									i(60703),	-- Escalation Britchers
+									i(60705),	-- Legguards of Invasion
+									i(131552),	-- Mongrel Greaves
+									i(60704),	-- Mongrel Leggings
+								},
+								["sourceQuests"] = {26544},	-- They've Wised Up...
+							})),
+							o(204351, {	-- Ettin Control Orb
+								qa(26520, { -- Saving Foreman Oslow
+									["groups"] = {
+										i(60701),	-- Leverage Bracers
+										i(131543),	-- Leverage Wriststraps
+										i(60700),	-- Solomon's Gavel
+										i(60702),	-- Sword of the Falling Sky
+									},
+									["sourceQuests"] = {26519},	-- He Who Controls the Ettins							
+								}),
+							}),
+						}),
+					}),
 					qg(43733, qa(26708, { -- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 						["groups"] = {
 						i(131588),	-- Bravo Company Amice
@@ -61,7 +154,6 @@ _.Zones =
 						},
 						["sourceQuests"] = {26561},	-- Krakauer
 					})),
-					qg(342, qa(26509)),	-- An Unwelcome Guest
 					qg(43461, qa(26636, {	-- Bravo Company Field Kit: Camouflage
 						["groups"] = {
 						},
@@ -81,11 +173,6 @@ _.Zones =
 						},
 						["sourceQuests"] = {26586},	-- In Search of Bravo Company
 					})),
-					qg(344, qa(26514, {	-- Canyon Romp
-						["groups"] = {
-						},
-						["sourceQuests"] = {26512},	-- Tuning the Gnomecorder
-					})),
 					qg(620, q(3861)),	-- CLUCK!
 					qg(43733, qa(26714, {	-- Darkblaze, Brood of the Worldbreaker
 						["groups"] = {
@@ -103,18 +190,18 @@ _.Zones =
 						},
 						["sourceQuests"] = {26651},	-- To Win a War, You Gotta Become War
 					})),
-					qg(379, qa(26506)),	-- Franks and Beans	
 --					qg(900, qa(26728)),	-- Hero's Call: Duskwood! (BREADCRUMB)
 					qg(43462, qa(26638, {	-- Hunting the Hunters
 						["groups"] = {
 						},
 						["sourceQuests"] = {26616},	-- It's Never Over
 					})),
+					--[[	
 					i(58898, {	-- Dirt-Stained Scroll
 						qa(26519, {	-- He Who Controls the Ettins
 							["groups"] = {
 							},
-							["qg"] = 445,	-- Redridge Alpha
+							["qg"] = 
 							["sourceQuests"] = { 26514 },	-- Canyon Romp
 						}),
 					}),
@@ -122,7 +209,7 @@ _.Zones =
 						qa(26519, {	-- He Who Controls the Ettins
 							["groups"] = {
 							},
-							["qg"] = 446,	-- Redridge Basher
+							
 							["sourceQuests"] = { 26514 },	-- Canyon Romp
 						}),
 					}),
@@ -130,10 +217,10 @@ _.Zones =
 						qa(26519, {	-- He Who Controls the Ettins
 							["groups"] = {
 							},
-							["qg"] = 430,	-- Redridge Mystic
+							["qg"] = 
 							["sourceQuests"] = { 26514 },	-- Canyon Romp
 						}),
-					}),
+					}),--]]
 					qg(43221, qa(26573, {	-- His Heart Must Be In It
 						["groups"] = {
 							i(131557),	-- Hauberk of the Changing Heart
@@ -167,31 +254,7 @@ _.Zones =
 						},
 						["sourceQuests"] = {26560},	-- Jorgensen
 					})),
-					qg(900, qa(26511, {	-- Lake Everstill Clean Up
-						i(60699),	-- Bailiff's Gloves
-						i(60698),	-- Belt of Recurring Raids
-						i(131539),	-- Chain of Recurring Raids
-						i(157001),	-- Everstill Hewer
-						i(60697),	-- Indiscriminate Wand
-						i(60696),	-- Shield of the Lesson
-					})),
-					qg(382, qa(26513, {	-- Like a Fart in the Wind
-						["groups"] = {
-						i(60692),	-- Breadwinner's Gloves
-						i(60695),	-- Cloak of Insomnia
-						i(131540),	-- Starvation Leggings
-						i(60694),	-- Starvation Vest
-						i(60693),	-- Ventillated Leggings
-						i(131541),	-- Ventillated Vest
-						},
-						["sourceQuests"] = {26510,26503,26505},	-- We Must Prepare! + Still Assessing the Threat + Parker's Report)
-					})),					
-					qg(8965, qa(26508)),	-- Nida's Necklace	
-					qg(464, qa(26505, {	-- Parker's Report					
-						["groups"] = {
-						},
-						["sourceQuests"] = {26503},	-- Still Assessing the Threat
-					})),
+										
 					qg(43458, qa(26639, {	-- Point of Contact: Brubaker
 						["groups"] = {
 						},
@@ -213,17 +276,6 @@ _.Zones =
 						},
 						["sourceQuests"] = {26562},	-- And Last But Not Least... Danforth
 					})),
-					o(204351, {	-- Ettin Control Orb
-						qa(26520, { -- Saving Foreman Oslow
-							["groups"] = {
-								i(60701),	-- Leverage Bracers
-								i(131543),	-- Leverage Wriststraps
-								i(60700),	-- Solomon's Gavel
-								i(60702),	-- Sword of the Falling Sky
-							},
-							["sourceQuests"] = {26519},	-- He Who Controls the Ettins							
-						}),
-					}),
 					qg(43607, qa(26692, {	-- Shadowhide Extinction
 						["groups"] = {
 						i(60719),	-- Danforth's Breastplate
@@ -236,15 +288,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuests"] = {26708},	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
-					})),
-					qg(464, qa(26503, {	-- Still Assessing the Threat
-						["groups"] = {
-						i(60687),	-- Belt of the Sons
-						i(60686),	-- Boots of the Prolific Sire
-						i(131538),	-- Striders of the Prolific Sire
-						i(60685),	-- Yowling Cloak
-						},
-						["breadcrumbQuestID"] = {26365},	-- Hero's Call: Redridge Mountains!
 					})),
 					qg(43194, qa(26569, {	-- Surveying Equipment
 						["groups"] = {
@@ -273,11 +316,6 @@ _.Zones =
 						},
 						["sourceQuests"] = {26563},	-- Return of the Bravo Company
 					})),
-					qg(344, qa(26544, {	-- They've Wised Up...
-						["groups"] = {
-						},
-						["sourceQuests"] = {26514},	-- Canyon Romp
-					})),
 					qg(43184, qa(26568, {	-- This Ain't My War					
 						["groups"] = {
 						},
@@ -295,37 +333,15 @@ _.Zones =
 						},
 						["sourceQuests"] = {26714},	-- Darkblaze, Brood of the Worldbreaker
 					})),
-					qg(344, qa(26512, {	-- Tuning the Gnomecorder
-						["groups"] = {
-						},
-						["sourceQuests"] = {26510},	-- We Must Prepare!
-					})),
 					qg(43508, qa(26640, {	-- Unspeakable Atrocities
 						["groups"] = {
 						},
 						["sourceQuests"] = {26639},	-- Point of Contact: Brubaker
 					})),
-					o(204344, {	-- Wanted!
-						qa(26504, { -- Wanted: Redridge Gnolls
-							i(60684),	-- Royal Guard Breastplate
-							i(60683),	-- Tower Watch Bracers
-							i(60682),	-- Watch Captain's Cloak
-						}),
-					}),
 					qg(43221, qa(26571, {	-- Weapons of War
 						["groups"] = {
 						},
 						["sourceQuests"] = {26568},	-- This Ain't My War
-					})),
-					qg(344, qa(26510)),	-- We Must Prepare!
-					qg(344, qa(26545, {	-- Yowler Must Die!
-						["groups"] = {
-							i(60703),	-- Escalation Britchers
-							i(60705),	-- Legguards of Invasion
-							i(131552),	-- Mongrel Greaves
-							i(60704),	-- Mongrel Leggings
-						},
-						["sourceQuests"] = {26544},	-- They've Wised Up...
 					})),
 				}),
 				n(-16, {	-- Rares
