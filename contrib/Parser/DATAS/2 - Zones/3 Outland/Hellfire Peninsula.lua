@@ -110,11 +110,21 @@ _.Zones =
 								["groups"] = {
 								},
 							}),
+							qa(49862, { -- To Outland! [Breadcrumb]
+								["groups"] = {
+								},
+							}),
 							qh(10120, { -- Arrival in Outland
 								["groups"] = {
 								},
 								["qg"] = 19253, -- Lieutenant General Orion
 								["sourceQuests"] = { 49816 }, -- To Outland [Breadcrumb]
+							}),
+							qa(10288, { -- Arrival in Outland
+								["groups"] = {
+								},
+								["qg"] = 19229, -- Commander Duron
+								["sourceQuests"] = { 49862 }, -- To Outland [Breadcrumb]
 							}),
 							qh(10289, { -- Journey to Thrallmar
 								["groups"] = {
@@ -122,11 +132,23 @@ _.Zones =
 								["qg"] = 18930, -- Vlagga Freyfeather
 								["sourceQuests"] = { 10120 }, -- Arrival in Outlanad
 							}),
+							qa(10140, { -- Journey to Honor Hold
+								["groups"] = {
+								},
+								["qg"] = 18931, -- Amish Wildhammer
+								["sourceQuests"] = { 10288 }, -- Arrival in Outland
+							}),
 							qh(10291, { -- Report to Nazgrel
 								["groups"] = {
 								},
 								["qg"] = 19255, -- General Krakork
 								["sourceQuests"] = { 10289 }, -- Journey to Thrallmar
+							}),
+							qa(10254, { -- Force Commander Danath
+								["groups"] = {
+								},
+								["qg"] = 19308, -- Marshal Isildor
+								["sourceQuests"] = { 10140 }, -- Journey to Honor Hold
 							}),
 							qh(10086, { -- I Work... For the Horde!
 								["groups"] = {
@@ -137,11 +159,33 @@ _.Zones =
 								},
 								["qg"] = 21283, -- Megzeg Nukklebust
 							}),
+							qa(10055, { -- Waste Not, Want Not
+								["groups"] = {
+									i(29931), -- Phantasmal Headdress
+									i(29938), -- Battle Seeker Chesguard
+									i(29943), -- Legionnaire's Studded Helm
+									i(29945), -- Magistrate's Greaves
+								},
+								["qg"] = 21209, -- Dumphry
+								["sourceQuests"] = { 10254 }, -- Force Commander Danath
+							}),
 							qh(10121, { -- Eradicate the Burning Legion
 								["groups"] = {
 								},
 								["qg"] = 3230, -- Nazgrel
 								["sourceQuests"] = { 10291 }, -- Report to Nazgrel
+							}),
+							qa(10141, { -- The Legion Reborn
+								["groups"] = {
+								},
+								["qg"] = 16819, -- Force Commander Danath Trollbane
+								["sourceQuests"] = { 10254 }, -- Force Commander Danath
+							}),
+							qa(10160, { -- Know Your Enemy
+								["groups"] = {
+								},
+								["qg"] = 16819, -- Force Commander Danath Trollbane
+								["sourceQuests"] = { 10254 }, -- Force Commander Danath
 							}),
 							qh(10450, { -- Bonechewer Blood
 								["groups"] = {
@@ -154,6 +198,17 @@ _.Zones =
 								["qg"] = 21256, -- Vurtok Axebreaker
 								["sourceQuests"] = { 10291 }, -- Report to Nazgrel
 							}),
+							qa(10482, { -- Fel Orc Scavengers
+								["groups"] = {
+									i(29915), -- Desolation Rod
+									i(29919), -- Adamantine Kite Shield
+									i(29917), -- Landslide Buckler
+									i(29914), -- Hellfire Skiver
+									i(29916), -- Ironstar Repeater
+								},
+								["qg"] = 16820, -- Lieutenant Amadi
+								["sourceQuests"] = { 10160 }, -- Know Your Enemy
+							}),
 							qh(10087, { -- Burn It Up... For the Horde!
 								["groups"] = {
 									i(29928), -- Wanderer's Stitched Trousers
@@ -163,6 +218,12 @@ _.Zones =
 								},
 								["qg"] = 21283, -- Megzeg Nukklebust
 								["sourceQuests"] = { 10086 }, -- Work For the Horde
+							}),
+							qa(10078, { -- Laying Waste to the Unwanted
+								["groups"] = {
+								},
+								["qg"] = 21209, -- Dumphry
+								["sourceQuests"] = { 10055 }, -- Waste Not, Want Not
 							}),
 							qh(10123, { -- Felspark Ravine
 								["groups"] = {
@@ -175,17 +236,40 @@ _.Zones =
 								["qg"] = 19256, -- Sergeant Shatterskull
 								["sourceQuests"] = { 10121 }, -- Eradicate the Burning Legion
 							}),
+							qa(10142, { -- The Path of Anguish
+								["groups"] = {
+									i(29908), -- Rage Reaver
+									i(29909), -- Screaming Dagger
+									i(29910), -- The Staff of Twin Worlds
+									i(29911), -- Agamaggan's Quill
+									i(29913), -- Foe Reaver
+								},
+								["qg"] = 19309, -- Sergeant Altumus
+								["sourceQuests"] = { 10141 }, -- The Legion Reborn
+							}),
 							qh(10449, { -- Apothecary Zelana
 								["groups"] = {
 								},
 								["qg"] = 21256, -- Vurtok Axebreaker
 								["sourceQuests"] = { 10450 }, -- Bonechewer Blood
 							}),
+							qa(10483, { -- Ill Omens
+								["groups"] = {
+								},
+								["qg"] = 16820, -- Lieutenant Amadi
+								["sourceQuests"] = { 10482 }, -- Fel Orc Scavengers
+							}),
 							qh(10124, { -- Forward Base: Reaver's Fall
 								["groups"] = {
 								},
 								["qg"] = 19256, -- Sergeeant Shatterskull
 								["sourceQuests"] = { 10123 }, -- Felspark Ravine
+							}),
+							qa(10143, { -- Expedition Point
+								["groups"] = {
+								},
+								["qg"] = 19309, -- Sergeant Altumus
+								["sourceQuests"] = { 10142 }, -- The Path of Anguish
 							}),
 							qh(10208, { -- Disrupt Their Reinforcements
 								["groups"] = {
@@ -198,7 +282,18 @@ _.Zones =
 								["qg"] = 19273, -- Forward Commander To'arch
 								["sourceQuests"] = { 10124 }, -- Forward Base: Reaver's Fall
 							}),
-							qh(10129, { -- Mission: Gatewayas Murketh and Shaadraz
+							qa(10144, { -- Disrupt Their Reinforcements
+								["groups"] = {
+									i(29927), -- Shadowbrim Travel Hat
+									i(29939), -- Flayer-Hide Leggings
+									i(29932), -- Arcane Ringed Tunic
+									i(29946), -- Invader's Greathelm
+									i(29935), -- Fore Scarred Breastplate
+								},
+								["qg"] = 19310, -- Forward Commander Kingston
+								["sourceQuests"] = { 10143 }, -- Expedition Point
+							}),
+							qh(10129, { -- Mission: Gateways Murketh and Shaadraz
 								["groups"] = {
 									i(29942), -- Battle Scarred Leggings
 									i(29937), -- Helm of Infinite Visions
@@ -208,12 +303,23 @@ _.Zones =
 								["qg"] = 19273, -- Forwarad Commander To'arch
 								["sourceQuests"] = { 10208 }, -- Disrupt Their Reinforcements
 							}),
+							qa(10146, { -- Mission: Gateways Murketh and Shaadraz
+								["groups"] = {
+									i(29942), -- Battle Scarred Leggings
+									i(29937), -- Helm of Infinite Visions
+									i(29929), -- Raging Spirit Harness
+									i(29944), -- Protectorate Breastplate
+								},
+								["qg"] = 19310, -- Forward Commander Kingston
+								["sourceQuests"] = { 10144 }, -- Disrupt Their Reinforcements
+							}),
 							qh(10388, { -- Return to Thrallmar
 								["groups"] = {
 								},
 								["qg"] = 19273, -- Forwarad Commander To'arch
 								["sourceQuests"] = { 10129 }, -- Mission: Gatewayas Murketh and Shaadraz 
 							}),
+							
 						}),
 						--[[
 						crit(2, { -- Cruel's Intentions
@@ -476,6 +582,17 @@ _.Zones =
 							["qg"] = 19273, -- Forwarad Commander To'arch
 							["sourceQuests"] = { 10129 }, -- Mission: Gatewayas Murketh and Shaadraz
 						}),
+						-- Need a Shatter Point Section, but none in achievement
+						qa(10163, { -- Mission: The Abyssal Shelf
+							["groups"] = {
+								i(29926), -- Whispering Tunic
+								i(29940), -- Veteran's Skullcap
+								i(29933), -- Arcane Ringed Greaves
+								i(29936), -- Skyfire Greaves
+							},
+							["qg"] = 20232, -- Wing Commander Gryphongar
+							["sourceQuests"] = { 10344 }, -- Wing Commander Gryphongar
+						}),
 					}),
 					n(-494, { -- Miscellaneous
 						qh(  9442),	-- A Debilitating Sickness
@@ -520,13 +637,6 @@ _.Zones =
 						qa(  9398),	-- Deadly Predators
 						qh( 10229),	-- Decipher the Tome
 						qa( 10916),	-- Digging for Prayer Beads
-						qa(10144, {  -- Disrupt Their Reinforcements
-							i(29927),
-							i(29939),
-							i(29932),
-							i(29946),
-							i(29935),
-						}),
 						qa( 10394),	-- Disruption - Forge Camp: Mageddon
 						qh( 10392),	-- Doorway to the Abyss
 						qa(10937,  {  -- Drill the Drillmaster
@@ -568,20 +678,16 @@ _.Zones =
 						qa( 47023),	-- Guardian: Aid of the Illidari
 						q(9361),	-- Helboar, the Other White Meat
 						qa( 10106),	-- Hellfire Fortifications
-						qh( 10110),	-- Hellfire Fortifications
 						qa( 13410),	-- Hellfire Fortifications
 						qa( 13408),	-- Hellfire Fortifications
-						qh( 13411),	-- Hellfire Fortifications
 						qa( 10443),	-- Helping the Cenarion Post
-						qa( 28708),	-- Hero's Call: Outland!
 						qh(10258,  {  -- Honor the Fallen
 							i(29108),
 							i(29109),
 						}),
 						qa( 11818),	-- Honor the Flame
 						qh( 11851),	-- Honor the Flame
-						qa( 10764),	-- Hotter than Hell	
-						qa( 10483),	-- Ill Omens
+						qa( 10764),	-- Hotter than Hell
 						q(10161,  {  -- In Case of Emergency...
 							i(25981),
 							i(25980),
@@ -594,9 +700,6 @@ _.Zones =
 						qa( 29543),	-- Invading the Citadel
 						qa( 10397),	-- Invasion Point: Annihilator
 						qh( 10213),	-- Investigate the Crash
-						qa( 10140),	-- Journey to Honor Hold
-						qh( 10289),	-- Journey to Thrallmar
-						qa( 10160),	-- Know your Enemy
 						qa(10078,  {  -- Laying Waste to the Unwanted
 							i(29928),
 							i(29930),
@@ -620,12 +723,6 @@ _.Zones =
 							i(29940),
 							i(29933),
 							i(29936),
-						}),
-						qa(10146,  {  -- Mission: The Murketh and Shaadraz Gateways
-							i(29942),
-							i(29937),
-							i(29929),
-							i(29944),
 						}),
 						q(10403),	-- Naladu
 						q(31922),	-- Nicki Tinytech
@@ -676,7 +773,6 @@ _.Zones =
 						}),
 						qh(  9340),	-- The Great Fissure
 						qa( 10399),	-- The Heart of Darkness
-						qa( 10141),	-- The Legion Reborn
 						qa(  9558),	-- The Longbeards
 						qa(10099,  {  -- The Mastermind
 							i(25984),
@@ -719,29 +815,11 @@ _.Zones =
 							i(25483),
 							i(25482),
 							i(25481),
-						}),			
-						qh( 28705),	-- Warchief's Command: Outland!
+						}),
 						qa( 10485),	-- Warlord of the Bleeding Hollow
 						q(9724),	-- Warning the Cenarion Circle
-						qa(10055,  {  -- Waste Not, Want Not
-							i(29931),
-							i(29938),
-							i(29943),
-							i(29945),
-						}),
 						qa( 10079),	-- When This Mine's a-Rockin'
 						qa( 10344),	-- Wing Commander Gryphongar
-						qa(10895,  {  -- Zeth'Gor Must Burn!
-							i(28057),
-							i(28052),
-							i(28050),
-							i(28055),
-							i(28051),
-						}),
-						qh(10792,  {  -- Zeth'Gor Must Burn!
-							i(27732),
-							i(27731),
-						}),
 						nlq({ 	-- Legacy Quests
 							qh(9447, { -- Administering the Salve
 								i(25496), -- Mag'har Bow [Set to unobtainable]
