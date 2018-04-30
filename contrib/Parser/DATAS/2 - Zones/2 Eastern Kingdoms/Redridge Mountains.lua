@@ -47,14 +47,6 @@ _.Zones =
 				n(-17, {	-- Quests
 					ach(4902, { -- Redridge Mountain Quests
 						crit(1, { -- The Gnoll Offensive
-							qg(379, qa(26506)),	-- Franks and Beans
-							o(204344, {	-- Wanted!
-								qa(26504, { -- Wanted: Redridge Gnolls
-									i(60684),	-- Royal Guard Breastplate
-									i(60683),	-- Tower Watch Bracers
-									i(60682),	-- Watch Captain's Cloak
-								}),
-							}),
 							qg(464, qa(26503, {	-- Still Assessing the Threat
 								["groups"] = {
 								i(60687),	-- Belt of the Sons
@@ -68,16 +60,6 @@ _.Zones =
 								["groups"] = {
 								},
 								["sourceQuests"] = {26503},	-- Still Assessing the Threat
-							})),
-							qg(8965, qa(26508)),	-- Nida's Necklace
-							qg(342, qa(26509)),	-- An Unwelcome Guest
-							qg(900, qa(26511, {	-- Lake Everstill Clean Up
-								i(60699),	-- Bailiff's Gloves
-								i(60698),	-- Belt of Recurring Raids
-								i(131539),	-- Chain of Recurring Raids
-								i(157001),	-- Everstill Hewer
-								i(60697),	-- Indiscriminate Wand
-								i(60696),	-- Shield of the Lesson
 							})),
 							qg(344, qa(26510)),	-- We Must Prepare!
 							qg(344, qa(26512, {	-- Tuning the Gnomecorder
@@ -137,212 +119,215 @@ _.Zones =
 								}),
 							}),
 						}),
-					}),
-					qg(43733, qa(26708, { -- AHHHHHHHHHHHH! AHHHHHHHHH!!!
-						["groups"] = {
-						i(131588),	-- Bravo Company Amice
-						i(60722),	-- Bravo Company Mantle
-						i(60723),	-- Bravo Company Monnions
-						i(60725),	-- Bravo Company Pauldrons
-						i(60724),	-- Bravo Company Shoulderguards
-						i(131589),	-- Bravo Company Spaulders
-						},
-						["sourceQuests"] = {26694},	-- The Grand Magus Doane
-					})),
-					qg(43303, qa(26562, {	-- And Last But Not Least... Danforth
-						["groups"] = {
-						},
-						["sourceQuests"] = {26561},	-- Krakauer
-					})),
-					qg(43461, qa(26636, {	-- Bravo Company Field Kit: Camouflage
-						["groups"] = {
-						},
-						["sourceQuests"] = {26616},	-- It's Never Over
-					})),
-					qg(43459, qa(26637, {	-- Bravo Company Field Kit: Chloroform
-						["groups"] = {
-						i(60717),	-- Everstill Breastplate
-						i(60716),	-- Muckdweller Gloves
-						i(131569),	-- Muckdweller Handguards
-						i(60715),	-- Vial of Chloroform
-						},
-						["sourceQuests"] = {26616},	-- It's Never Over
-					})),
-					qg(43270, qa(26587, {	-- Breaking Out is Hard to Do
-						["groups"] = {
-						},
-						["sourceQuests"] = {26586},	-- In Search of Bravo Company
-					})),
-					qg(620, q(3861)),	-- CLUCK!
-					qg(43733, qa(26714, {	-- Darkblaze, Brood of the Worldbreaker
-						["groups"] = {
-						},
-						["sourceQuests"] = {26713},	-- Showdown at Stonewatch
-					})),
-					qg(43611, qa(26668, {	-- Detonation
-						["groups"] = {
-						i(60712),	-- Exterminator's Armbands
-						i(131576),	-- Exterminator's Bracers
-						i(156953),	-- 'Liberated' Greataxe
-						i(60714),	-- Massive Firearm of Death
-						i(60711),	-- Messner's Cuffs
-						i(60713),	-- Redridge Legguards
-						},
-						["sourceQuests"] = {26651},	-- To Win a War, You Gotta Become War
-					})),
---					qg(900, qa(26728)),	-- Hero's Call: Duskwood! (BREADCRUMB)
-					qg(43462, qa(26638, {	-- Hunting the Hunters
-						["groups"] = {
-						},
-						["sourceQuests"] = {26616},	-- It's Never Over
-					})),
-					--[[	
-					i(58898, {	-- Dirt-Stained Scroll
-						qa(26519, {	-- He Who Controls the Ettins
-							["groups"] = {
-							},
-							["qg"] = 
-							["sourceQuests"] = { 26514 },	-- Canyon Romp
+						crit(2, { -- Keeshan's Raiders
+							qg(43221, qa(26567, {	-- John J. Keeshan
+								["groups"] = {
+								},
+								["sourceQuests"] = {26545},	-- Yowler Must Die!
+							})),
+							qg(43184, qa(26568, {	-- This Ain't My War					
+								["groups"] = {
+								},
+								["sourceQuests"] = {26567},	-- John J. Keeshan
+							})),
+							qg(43221, qa(26571, {	-- Weapons of War
+								["groups"] = {
+								},
+								["sourceQuests"] = {26568},	-- This Ain't My War
+							})),
+							qg(43221, qa(26586, {	-- In Search of Bravo Company
+								["groups"] = {
+								},
+								["sourceQuests"] = {26568},	-- This Ain't My War
+							})),
+							qg(43270, qa(26587, {	-- Breaking Out is Hard to Do
+								["groups"] = {
+								},
+								["sourceQuests"] = {26586},	-- In Search of Bravo Company
+							})),
+							qg(43300, qa(26560, {	-- Jorgensen
+								["groups"] = {
+								},
+								["sourceQuests"] = {26587},	-- Breaking Out is Hard to Do
+							})),
+							qg(43305, qa(26561, {	-- Krakauer
+								["groups"] = {
+								},
+								["sourceQuests"] = {26560},	-- Jorgensen
+							})),
+							qg(43303, qa(26562, {	-- And Last But Not Least... Danforth
+								["groups"] = {
+								},
+								["sourceQuests"] = {26561},	-- Krakauer
+							})),
+							qg(382, qa(26570, {	-- Render's Army
+								["groups"] = {
+								},
+								["sourceQuests"] = {26568},	-- This Ain't My War
+							})),
+							qg(43194, qa(26569, {	-- Surveying Equipment
+								["groups"] = {
+								i(60708),	-- Blackrock Shield
+								i(60707),	-- Lakeshire Gloves
+								i(131556),	-- Lakeshire Handwraps
+								i(60706),	-- Sandals of the Neverending Bridge
+								},
+								["sourceQuests"] = {26568},	-- This Ain't My War
+							})),
+							qg(43302, qa(26563, {	-- Return of the Bravo Company
+								["groups"] = {
+								},
+								["sourceQuests"] = {26562},	-- And Last But Not Least... Danforth
+							})),
+							qg(43221, qa(26573, {	-- His Heart Must Be In It
+								["groups"] = {
+									i(131557),	-- Hauberk of the Changing Heart
+									i(60710),	-- Troteman's Bracers
+									i(60709),	-- Vest of the Changing Heart
+								},
+								["sourceQuests"] = {26571},	-- Weapons of War
+							})),
+							qg(43221, qa(26607, {	-- They Drew First Blood
+								["groups"] = {
+								},
+								["sourceQuests"] = {26563},	-- Return of the Bravo Company
+							})),
+						}),
+						crit(3, { -- First Blood
+							qg(43184, qa(26616, {	-- It's Never Over
+								["groups"] = {
+								},
+								["sourceQuests"] = {26607},	-- They Drew First Blood
+							})),
+							qg(43461, qa(26636, {	-- Bravo Company Field Kit: Camouflage
+								["groups"] = {
+								},
+								["sourceQuests"] = {26616},	-- It's Never Over
+							})),
+							qg(43459, qa(26637, {	-- Bravo Company Field Kit: Chloroform
+								["groups"] = {
+								i(60717),	-- Everstill Breastplate
+								i(60716),	-- Muckdweller Gloves
+								i(131569),	-- Muckdweller Handguards
+								i(60715),	-- Vial of Chloroform
+								},
+								["sourceQuests"] = {26616},	-- It's Never Over
+							})),
+							qg(43462, qa(26638, {	-- Hunting the Hunters
+								["groups"] = {
+								},
+								["sourceQuests"] = {26616},	-- It's Never Over
+							})),
+							qg(43458, qa(26639, {	-- Point of Contact: Brubaker
+								["groups"] = {
+								},
+								["sourceQuests"] = {26616},	-- It's Never Over
+							})),
+							qg(43508, qa(26640, {	-- Unspeakable Atrocities
+								["groups"] = {
+								},
+								["sourceQuests"] = {26639},	-- Point of Contact: Brubaker
+							})),
+							qg(43458, qa(26646, {	-- Prisoners of War
+								["groups"] = {
+								},
+								["sourceQuests"] = {26640},	-- Unspeakable Atrocities
+							})),
+							qg(43458, qa(26651, {	-- To Win a War, You Gotta Become War
+								["groups"] = {
+								},
+								["sourceQuests"] = {26646},	-- Prisoners of War
+							})),
+							qg(43611, qa(26668, {	-- Detonation
+								["groups"] = {
+								i(60712),	-- Exterminator's Armbands
+								i(131576),	-- Exterminator's Bracers
+								i(156953),	-- 'Liberated' Greataxe
+								i(60714),	-- Massive Firearm of Death
+								i(60711),	-- Messner's Cuffs
+								i(60713),	-- Redridge Legguards
+								},
+								["sourceQuests"] = {26651},	-- To Win a War, You Gotta Become War
+							})),
+							qg(43607, qa(26692, {	-- Shadowhide Extinction
+								["groups"] = {
+								i(60719),	-- Danforth's Breastplate
+								i(60718),	-- Shadowhide Boots
+								i(131583),	-- Shadowhide Footguards
+								},
+								["sourceQuests"] = {26668},	-- Detonation
+							})),
+							qg(43611, qa(26693, {	-- The Dark Tower
+								["groups"] = {
+								},
+								["sourceQuests"] = {26668},	-- Detonation
+							})),
+							qg(43611, qa(26694, {	-- The Grand Magus Doane
+								["groups"] = {
+								i(60721),	-- Shalewind Belt
+								i(131584),	-- Treacherous Boots
+								i(60720),	-- Treacherous Treads
+								},
+								["sourceQuests"] = {26693},	-- The Dark Tower
+							})),
+							qg(43733, qa(26708, {	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
+								["groups"] = {
+								i(131588),	-- Bravo Company Amice
+								i(60722),	-- Bravo Company Mantle
+								i(60723),	-- Bravo Company Monnions
+								i(60725),	-- Bravo Company Pauldrons
+								i(60724),	-- Bravo Company Shoulderguards
+								i(131589),	-- Bravo Company Spaulders
+								},
+								["sourceQuests"] = {26694},	-- The Grand Magus Doane
+							})),
+							qg(43733, qa(26713, {	-- Showdown at Stonewatch
+								["groups"] = {
+								},
+								["sourceQuests"] = {26708},	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
+							})),
+							qg(43733, qa(26714, {	-- Darkblaze, Brood of the Worldbreaker
+								["groups"] = {
+								},
+								["sourceQuests"] = {26713},	-- Showdown at Stonewatch
+							})),
+							qg(43733, qa(26726, {	-- Triumphant Return
+								["groups"] = {
+								i(60727),	-- Keeshan's Bow
+								i(60726),	-- Keeshan's Dagger
+								},
+								["sourceQuests"] = {26714},	-- Darkblaze, Brood of the Worldbreaker
+							})),
 						}),
 					}),
-					i(58898, {	-- Dirt-Stained Scroll
-						qa(26519, {	-- He Who Controls the Ettins
-							["groups"] = {
-							},
-							
-							["sourceQuests"] = { 26514 },	-- Canyon Romp
+					n(-168, { -- Other Quests
+						sz(780,1, {  -- Lakeshire
+							qg(8965, qa(26508)), -- Nida's Necklace
+							qg(342, qa(26509)),	-- An Unwelcome Guest
+							qg(900, qa(26511, {	-- Lake Everstill Clean Up
+								i(60699),	-- Bailiff's Gloves
+								i(60698),	-- Belt of Recurring Raids
+								i(131539),	-- Chain of Recurring Raids
+								i(157001),	-- Everstill Hewer
+								i(60697),	-- Indiscriminate Wand
+								i(60696),	-- Shield of the Lesson
+							})),
+							qg(900, qa(26728)),	-- Hero's Call: Duskwood! (BREADCRUMB)
+							qg(620, q(3861, {	-- CLUCK!
+								i(11110), -- Chicken Egg
+							})),
+						}),
+						sz(780,3, { -- Three Corners
+							qg(379, qa(26506)),	-- Franks and Beans
+							o(204344, {	-- Wanted!
+								qa(26504, { -- Wanted: Redridge Gnolls
+									i(60684),	-- Royal Guard Breastplate
+									i(60683),	-- Tower Watch Bracers
+									i(60682),	-- Watch Captain's Cloak
+								}),
+							}),
 						}),
 					}),
-					i(58898, {	-- Dirt-Stained Scroll
-						qa(26519, {	-- He Who Controls the Ettins
-							["groups"] = {
-							},
-							["qg"] = 
-							["sourceQuests"] = { 26514 },	-- Canyon Romp
-						}),
-					}),--]]
-					qg(43221, qa(26573, {	-- His Heart Must Be In It
-						["groups"] = {
-							i(131557),	-- Hauberk of the Changing Heart
-							i(60710),	-- Troteman's Bracers
-							i(60709),	-- Vest of the Changing Heart
-						},
-						["sourceQuests"] = {26571},	-- Weapons of War
-					})),
-					qg(43221, qa(26586, {	-- In Search of Bravo Company
-						["groups"] = {
-						},
-						["sourceQuests"] = {26568},	-- This Ain't My War
-					})),
-					qg(43184, qa(26616, {	-- It's Never Over
-						["groups"] = {
-						},
-						["sourceQuests"] = {26607},	-- They Drew First Blood
-					})),
-					qg(43221, qa(26567, {	-- John J. Keeshan
-						["groups"] = {
-						},
-						["sourceQuests"] = {26545},	-- Yowler Must Die!
-					})),
-					qg(43300, qa(26560, {	-- Jorgensen
-						["groups"] = {
-						},
-						["sourceQuests"] = {26587},	-- Breaking Out is Hard to Do
-					})),
-					qg(43305, qa(26561, {	-- Krakauer
-						["groups"] = {
-						},
-						["sourceQuests"] = {26560},	-- Jorgensen
-					})),
-										
-					qg(43458, qa(26639, {	-- Point of Contact: Brubaker
-						["groups"] = {
-						},
-						["sourceQuests"] = {26616},	-- It's Never Over
-					})),
-					qg(43458, qa(26646, {	-- Prisoners of War
-						["groups"] = {
-						},
-						["sourceQuests"] = {26640},	-- Unspeakable Atrocities
-					})),
---					q(33350),	-- Redridge Group Trial (NOT IMPLEMENTED?)
-					qg(382, qa(26570, {	-- Render's Army
-						["groups"] = {
-						},
-						["sourceQuests"] = {26568},	-- This Ain't My War
-					})),
-					qg(43302, qa(26563, {	-- Return of the Bravo Company
-						["groups"] = {
-						},
-						["sourceQuests"] = {26562},	-- And Last But Not Least... Danforth
-					})),
-					qg(43607, qa(26692, {	-- Shadowhide Extinction
-						["groups"] = {
-						i(60719),	-- Danforth's Breastplate
-						i(60718),	-- Shadowhide Boots
-						i(131583),	-- Shadowhide Footguards
-						},
-						["sourceQuests"] = {26668},	-- Detonation
-					})),
-					qg(43733, qa(26713, {	-- Showdown at Stonewatch
-						["groups"] = {
-						},
-						["sourceQuests"] = {26708},	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
-					})),
-					qg(43194, qa(26569, {	-- Surveying Equipment
-						["groups"] = {
-						i(60708),	-- Blackrock Shield
-						i(60707),	-- Lakeshire Gloves
-						i(131556),	-- Lakeshire Handwraps
-						i(60706),	-- Sandals of the Neverending Bridge
-						},
-						["sourceQuests"] = {26568},	-- This Ain't My War
-					})),
-					qg(43611, qa(26693, {	-- The Dark Tower
-						["groups"] = {
-						},
-						["sourceQuests"] = {26668},	-- Detonation
-					})),
-					qg(43611, qa(26694, {	-- The Grand Magus Doane
-						["groups"] = {
-						i(60721),	-- Shalewind Belt
-						i(131584),	-- Treacherous Boots
-						i(60720),	-- Treacherous Treads
-						},
-						["sourceQuests"] = {26693},	-- The Dark Tower
-					})),
-					qg(43221, qa(26607, {	-- They Drew First Blood
-						["groups"] = {
-						},
-						["sourceQuests"] = {26563},	-- Return of the Bravo Company
-					})),
-					qg(43184, qa(26568, {	-- This Ain't My War					
-						["groups"] = {
-						},
-						["sourceQuests"] = {26567},	-- John J. Keeshan
-					})),
-					qg(43458, qa(26651, {	-- To Win a War, You Gotta Become War
-						["groups"] = {
-						},
-						["sourceQuests"] = {26646},	-- Prisoners of War
-					})),
-					qg(43733, qa(26726, { -- Triumphant Return
-						["groups"] = {
-						i(60727),	-- Keeshan's Bow
-						i(60726),	-- Keeshan's Dagger
-						},
-						["sourceQuests"] = {26714},	-- Darkblaze, Brood of the Worldbreaker
-					})),
-					qg(43508, qa(26640, {	-- Unspeakable Atrocities
-						["groups"] = {
-						},
-						["sourceQuests"] = {26639},	-- Point of Contact: Brubaker
-					})),
-					qg(43221, qa(26571, {	-- Weapons of War
-						["groups"] = {
-						},
-						["sourceQuests"] = {26568},	-- This Ain't My War
-					})),
 				}),
 				n(-16, {	-- Rares
 					n(14273, { 	-- Boulderheart
