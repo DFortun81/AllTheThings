@@ -1354,9 +1354,10 @@ _.Zones =
 					}),
 					n(2483, {	-- Jaquilina Dramet <Superior Axecrafter>
 						i(12250),	-- Midnight Axe
-						i(12164, {	-- Plans: Massive Iron Axe
-							i(3855),	-- Massive Iron Axe
-						}),
+						i(12164),	-- Plans: Massive Iron Axe
+					}),
+					n(8679, {	-- Knaz Blunderflame
+						i(10602),	-- Schematic: Deadly Scope
 					}),
 					nh(1148, {	-- Nerrist <Trade Goods>
 						i(21943),	-- Design: Truesilver Crab
@@ -1367,9 +1368,7 @@ _.Zones =
 					nh(1146, {	-- Vharr <Superior Weaponsmith>
 						i(12250),	-- Midnight Axe
 						i(12248),	-- Daring Dirk
-						i(12164, {	-- Plans: Massive Iron Axe
-							i(3855),	-- Massive Iron Axe
-						}),
+						i(12164),	-- Plans: Massive Iron Axe
 					}),
 					nh(1149, {	-- Uthok <General Supplies>
 						i(16111),	-- Recipe: Spiced Chili Crab
