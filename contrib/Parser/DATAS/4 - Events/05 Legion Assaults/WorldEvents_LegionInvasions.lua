@@ -6,7 +6,6 @@ _.WorldEvents =
 	n(-543, { 	-- Broken Isles: Legion Invasions
 		["groups"] = {
 			{
-				--["npcID"] = -388,
 				["vignetteID"] = 47063,
 				["qgs"] = {
 					118180, -- Dread Vizier Gra'tork <Legion Commander
