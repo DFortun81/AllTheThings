@@ -49,10 +49,10 @@ _.Zones =
 						crit(1, { -- The Gnoll Offensive
 							qg(464, qa(26503, {	-- Still Assessing the Threat
 								["groups"] = {
-								i(60687),	-- Belt of the Sons
-								i(60686),	-- Boots of the Prolific Sire
-								i(131538),	-- Striders of the Prolific Sire
-								i(60685),	-- Yowling Cloak
+									i(60687),	-- Belt of the Sons
+									i(60686),	-- Boots of the Prolific Sire
+									i(131538),	-- Striders of the Prolific Sire
+									i(60685),	-- Yowling Cloak
 								},
 								["breadcrumbQuestID"] = {26365},	-- Hero's Call: Redridge Mountains!
 							})),
@@ -89,12 +89,12 @@ _.Zones =
 							},	
 							qg(382, qa(26513, {	-- Like a Fart in the Wind
 								["groups"] = {
-								i(60692),	-- Breadwinner's Gloves
-								i(60695),	-- Cloak of Insomnia
-								i(131540),	-- Starvation Leggings
-								i(60694),	-- Starvation Vest
-								i(60693),	-- Ventillated Leggings
-								i(131541),	-- Ventillated Vest
+									i(60692),	-- Breadwinner's Gloves
+									i(60695),	-- Cloak of Insomnia
+									i(131540),	-- Starvation Leggings
+									i(60694),	-- Starvation Vest
+									i(60693),	-- Ventillated Leggings
+									i(131541),	-- Ventillated Vest
 								},
 								["sourceQuests"] = {26510,26503,26505},	-- We Must Prepare! + Still Assessing the Threat + Parker's Report)
 							})),
@@ -167,10 +167,10 @@ _.Zones =
 							})),
 							qg(43194, qa(26569, {	-- Surveying Equipment
 								["groups"] = {
-								i(60708),	-- Blackrock Shield
-								i(60707),	-- Lakeshire Gloves
-								i(131556),	-- Lakeshire Handwraps
-								i(60706),	-- Sandals of the Neverending Bridge
+									i(60708),	-- Blackrock Shield
+									i(60707),	-- Lakeshire Gloves
+									i(131556),	-- Lakeshire Handwraps
+									i(60706),	-- Sandals of the Neverending Bridge
 								},
 								["sourceQuests"] = {26568},	-- This Ain't My War
 							})),
@@ -206,10 +206,10 @@ _.Zones =
 							})),
 							qg(43459, qa(26637, {	-- Bravo Company Field Kit: Chloroform
 								["groups"] = {
-								i(60717),	-- Everstill Breastplate
-								i(60716),	-- Muckdweller Gloves
-								i(131569),	-- Muckdweller Handguards
-								i(60715),	-- Vial of Chloroform
+									i(60717),	-- Everstill Breastplate
+									i(60716),	-- Muckdweller Gloves
+									i(131569),	-- Muckdweller Handguards
+									i(60715),	-- Vial of Chloroform
 								},
 								["sourceQuests"] = {26616},	-- It's Never Over
 							})),
@@ -240,20 +240,20 @@ _.Zones =
 							})),
 							qg(43611, qa(26668, {	-- Detonation
 								["groups"] = {
-								i(60712),	-- Exterminator's Armbands
-								i(131576),	-- Exterminator's Bracers
-								i(156953),	-- 'Liberated' Greataxe
-								i(60714),	-- Massive Firearm of Death
-								i(60711),	-- Messner's Cuffs
-								i(60713),	-- Redridge Legguards
+									i(60712),	-- Exterminator's Armbands
+									i(131576),	-- Exterminator's Bracers
+									i(156953),	-- 'Liberated' Greataxe
+									i(60714),	-- Massive Firearm of Death
+									i(60711),	-- Messner's Cuffs
+									i(60713),	-- Redridge Legguards
 								},
 								["sourceQuests"] = {26651},	-- To Win a War, You Gotta Become War
 							})),
 							qg(43607, qa(26692, {	-- Shadowhide Extinction
 								["groups"] = {
-								i(60719),	-- Danforth's Breastplate
-								i(60718),	-- Shadowhide Boots
-								i(131583),	-- Shadowhide Footguards
+									i(60719),	-- Danforth's Breastplate
+									i(60718),	-- Shadowhide Boots
+									i(131583),	-- Shadowhide Footguards
 								},
 								["sourceQuests"] = {26668},	-- Detonation
 							})),
@@ -264,20 +264,20 @@ _.Zones =
 							})),
 							qg(43611, qa(26694, {	-- The Grand Magus Doane
 								["groups"] = {
-								i(60721),	-- Shalewind Belt
-								i(131584),	-- Treacherous Boots
-								i(60720),	-- Treacherous Treads
+									i(60721),	-- Shalewind Belt
+									i(131584),	-- Treacherous Boots
+									i(60720),	-- Treacherous Treads
 								},
 								["sourceQuests"] = {26693},	-- The Dark Tower
 							})),
 							qg(43733, qa(26708, {	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 								["groups"] = {
-								i(131588),	-- Bravo Company Amice
-								i(60722),	-- Bravo Company Mantle
-								i(60723),	-- Bravo Company Monnions
-								i(60725),	-- Bravo Company Pauldrons
-								i(60724),	-- Bravo Company Shoulderguards
-								i(131589),	-- Bravo Company Spaulders
+									i(131588),	-- Bravo Company Amice
+									i(60722),	-- Bravo Company Mantle
+									i(60723),	-- Bravo Company Monnions
+									i(60725),	-- Bravo Company Pauldrons
+									i(60724),	-- Bravo Company Shoulderguards
+									i(131589),	-- Bravo Company Spaulders
 								},
 								["sourceQuests"] = {26694},	-- The Grand Magus Doane
 							})),
@@ -293,8 +293,8 @@ _.Zones =
 							})),
 							qg(43733, qa(26726, {	-- Triumphant Return
 								["groups"] = {
-								i(60727),	-- Keeshan's Bow
-								i(60726),	-- Keeshan's Dagger
+									i(60727),	-- Keeshan's Bow
+									i(60726),	-- Keeshan's Dagger
 								},
 								["sourceQuests"] = {26714},	-- Darkblaze, Brood of the Worldbreaker
 							})),
