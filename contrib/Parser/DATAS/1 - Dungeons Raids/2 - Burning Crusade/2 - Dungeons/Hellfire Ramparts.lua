@@ -4,23 +4,23 @@
 
 _.Instances = 
 {
-	{ -- Burning Crusade
+	{	-- Burning Crusade
 		["groups"] = {
 			inst(248, { 	-- Hellfire Ramparts
 				["groups"] = {
 					d(1, {		-- Normal
 						n(-17, {	-- Quests 				
-							qa(29528,{ -- War on the Ramparts
-								i(25718), -- Mantle of Magical Might
-								i(25717), -- Sure-Step Boots
-								i(25716), -- Handguards of Precision
-								i(25715), -- Jade Warrior Pauldrons
+							qa(29528, {	-- War on the Ramparts
+								i(25718),	-- Mantle of Magical Might
+								i(25717),	-- Sure-Step Boots
+								i(25716),	-- Handguards of Precision
+								i(25715),	-- Jade Warrior Pauldrons
 							}),	
-							qh(29527,{ -- War on the Ramparts
-								i(25718), -- Mantle of Magical Might
-								i(25717), -- Sure-Step Boots
-								i(25716), -- Handguards of Precision
-								i(25715), -- Jade Warrior Pauldrons
+							qh(29527, {	-- War on the Ramparts
+								i(25718),	-- Mantle of Magical Might
+								i(25717),	-- Sure-Step Boots
+								i(25716),	-- Handguards of Precision
+								i(25715),	-- Jade Warrior Pauldrons
 							}),	
 						}),
 						e(527, { 	-- Watchkeeper Gargolmar
@@ -38,7 +38,7 @@ _.Instances =
 							},
 							["creatureID"] = 17306,
 						}),
-						e(528, { -- Omor the Unscarred
+						e(528, {	-- Omor the Unscarred
 							["groups"] = {
 								i(24069),	-- Crystalfire Staff
 								i(24094),	-- Heart Fire Warhammer
@@ -46,6 +46,9 @@ _.Instances =
 								i(27476),	-- Truncheon of Five Hells
 								i(27477),	-- Faol's Signet of Cleansing
 								i(27466),	-- Headdress of Alacrity
+								i(24073),	-- Garrote-String Necklace
+								i(24096),	-- Heartblood Prayer Beads
+								i(27464),	-- Omor's Unyielding Will
 								i(27539),	-- Justice Bearer's Pauldrons
 								i(27906),	-- Crimsonforge Breastplate
 								i(27462),	-- Crimson Bracers of Gloom
@@ -54,10 +57,11 @@ _.Instances =
 								i(27478),	-- Girdle of the Blasted Reaches
 								i(24091),	-- Tenacious Defender
 								i(27467),	-- Silent-Strider Kneeboots
+								i(27895),	-- Band of Many Prisms
 							},
 							["creatureID"] = 17308,
 						}),
-						e(529, { -- Vazruden the Herald
+						e(529, {	-- Vazruden the Herald
 							["groups"] = {
 								model(34286, o(185168, { 	-- Reinforced Fel Iron Chest
 									i(24044),	-- Hellreaver
@@ -79,6 +83,11 @@ _.Instances =
 									i(24083),	-- Lifegiver Britches
 									i(27458),	-- Oceansong Kilt
 									i(24064),	-- Ironsole Clompers
+									i(27453),	-- Averinn's Ring of Slaying
+									i(24045),	-- Band of Renewal
+									i(24151),	-- Mok'Nathal Clan Ring
+									i(27460),	-- Reavers' Ring
+									i(24154),	-- Witching Band
 								})),
 							},
 							["creatureID"] = 17307,
@@ -88,7 +97,7 @@ _.Instances =
 						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
-							e(527, { -- Watchkeeper Gargolmar
+							e(527, {	-- Watchkeeper Gargolmar
 								["groups"] = {
 									i(24020),	-- Shadowrend Longblade
 									i(27449),	-- Blood Knight Defender
@@ -103,7 +112,7 @@ _.Instances =
 								},
 								["creatureID"] = 17306,
 							}),
-							e(528, { -- Omor the Unscarred
+							e(528, {	-- Omor the Unscarred
 								["groups"] = {
 									i(24069),	-- Crystalfire Staff
 									i(24094),	-- Heart Fire Warhammer
@@ -111,6 +120,9 @@ _.Instances =
 									i(27476),	-- Truncheon of Five Hells
 									i(27477),	-- Faol's Signet of Cleansing
 									i(27466),	-- Headdress of Alacrity
+									i(24073),	-- Garrote-String Necklace
+									i(24096),	-- Heartblood Prayer Beads
+									i(27464),	-- Omor's Unyielding Will
 									i(27539),	-- Justice Bearer's Pauldrons
 									i(27906),	-- Crimsonforge Breastplate
 									i(27462),	-- Crimson Bracers of Gloom
@@ -119,10 +131,11 @@ _.Instances =
 									i(27478),	-- Girdle of the Blasted Reaches
 									i(24091),	-- Tenacious Defender
 									i(27467),	-- Silent-Strider Kneeboots
+									i(27895),	-- Band of Many Prisms
 								},
 								["creatureID"] = 17308,
 							}),
-							e(529, { -- Vazruden the Herald
+							e(529, {	-- Vazruden the Herald
 								["groups"] = {
 									model(34286, o(185168, { 	-- Reinforced Fel Iron Chest
 										i(24044),	-- Hellreaver
@@ -144,6 +157,11 @@ _.Instances =
 										i(24083),	-- Lifegiver Britches
 										i(27458),	-- Oceansong Kilt
 										i(24064),	-- Ironsole Clompers
+										i(27453),	-- Averinn's Ring of Slaying
+										i(24045),	-- Band of Renewal
+										i(24151),	-- Mok'Nathal Clan Ring
+										i(27460),	-- Reavers' Ring
+										i(24154),	-- Witching Band
 									})),
 								},
 								["creatureID"] = 17307,

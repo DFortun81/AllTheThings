@@ -8,131 +8,148 @@ _.Instances =
 		["groups"] = {
 			inst(251, { 	-- Old Hillsbrad Foothills
 				["groups"] = {
-					n(0, {		-- Zone Drop
-						i(25729, { -- Pattern: Stylin' Adventure Hat
-							i(25681), 
+					n(-2, {	-- Vendors
+						n(18672, {	-- Thomas Yance
+							i(   45),	-- Squire's Shirt
+							i(   38),	-- Recruit's Shirt
+							i(   53),	-- Neophyte's Shirt
+							i( 6096),	-- Apprentice's Shirt
+							i( 6097),	-- Acolyte's Shirt
+							i(25725),	-- Pattern: Riding Crop
+						}),
+						n(18664, {	-- Aged Dalaran Wizard
+							i(22539),	-- Formula: Enchant Shield - Intellect
+						}),
+					}),
+					n( 0, {	-- Zone Drop
+						n(28132, {	-- Don Carlos
+							dr(0.11, i(25729)), -- Pattern: Stylin' Adventure Hat
+						}),
+						n(17820, {	-- Durnholde Rifleman
+							dr(0.50, i(25729)), -- Pattern: Stylin' Adventure Hat
 						}),
 					}),	
-					n(18672, {	-- Thomas Yance
-						["groups"] = {	
-							i(45),
-							i(38),
-							i(53),
-							i(6096),
-							i(6097),
-						},
-						["description"] = "This vendor is located in Southshore inside the instance.",
-					}),
-					n(18664, {	-- Aged Dalaran Wizard
-						i(22539),	-- Formula: Enchant Shield - Intellect
-					}),
-					d(1, {		-- Normal
+					d( 1, {	-- Normal
 						n(-17, { 	-- Quests
-							q(29599,{
-								i(29317),
-								i(29318),
-								i(29319),
-								i(29316),
+							q(29599, {	-- Escape from Durnholde
+								i(29317),	-- Tempest's Touch
+								i(29318),	-- Southshore Sneakers
+								i(29319),	-- Tarren Mill Defender's Cinch
+								i(29316),	-- Warchief's Mantle
 							}),	
 						}),
 						cr(17848, e(538, {	-- Lieutenant Drake
-							i(28210),		-- Bloodskull Destroyer
-							i(28213),		-- Lordaeron Medical Guide
-							i(28215),		-- Mok'Nathal Mask of Battle
-							i(27417),		-- Ravenwing Pauldrons
-							i(27423),		-- Cloak of Impulsiveness
-							i(28214),		-- Grips of the Lunar Eclipse
-							i(28212),		-- Aran's Sorcerous Slacks
-							i(27418),		-- Stormreaver Shadow-Kilt
-							i(27420),		-- Uther's Ceremonial Warboots
+							i(28210),	-- Bloodskull Destroyer
+							i(28213),	-- Lordaeron Medical Guide
+							i(28215),	-- Mok'Nathal Mask of Battle
+							i(27417),	-- Ravenwing Pauldrons
+							i(27423),	-- Cloak of Impulsiveness
+							i(28214),	-- Grips of the Lunar Eclipse
+							i(28212),	-- Aran's Sorcerous Slacks
+							i(27418),	-- Stormreaver Shadow-Kilt
+							i(27420),	-- Uther's Ceremonial Warboots
+							i(27436),	-- Iron Band of the Unbreakable
+							i(28211),	-- Lieutenant's Signet of Lordaeron
 						})),
 						cr(17862, e(539, {	-- Captain Skarloc
-							i(27424),		-- Amani Venom-Axe
-							i(28216),		-- Dathrohan's Ceremonial Hammer
-							i(27426),		-- Northshire Battlemace
-							i(28220),		-- Moon-Crown Antlers
-							i(27427),		-- Durotan's Battle Harnace
-							i(27428),		-- Stormfront Gauntlets
-							i(28219),		-- Emerald-Scale Greaves
-							i(28218),		-- Pontiff's Pantaloons of Prophecy
-							i(27430),		-- Scaled Greaves of Patience
-							i(28221),		-- Boots of the Watchful Heart
+							i(27424),	-- Amani Venom-Axe
+							i(28216),	-- Dathrohan's Ceremonial Hammer
+							i(27426),	-- Northshire Battlemace
+							i(28220),	-- Moon-Crown Antlers
+							i(28217),	-- Tarren Mill Vitality Locket
+							i(27427),	-- Durotan's Battle Harnace
+							i(27428),	-- Stormfront Gauntlets
+							i(28219),	-- Emerald-Scale Greaves
+							i(28218),	-- Pontiff's Pantaloons of Prophecy
+							i(27430),	-- Scaled Greaves of Patience
+							i(28221),	-- Boots of the Watchful Heart
 						})),
 						cr(18096, e(540, {	-- Epoch Hunter
-							i(28222),		-- Reaver of the Infinites
-							i(27431),		-- Time-Shifted Dagger
-							i(28226),		-- Timeslicer
-							i(28225),		-- Doomplate Warhelm
-							i(28224),		-- Wastewalker Helm
-							i(27434),		-- Mantle of Perenolde
-							i(27433),		-- Pauldrons of Sufferance
-							i(28344),		-- Wyrmfury Pauldrons
-							i(28401),		-- Hauberk of Desolation
-							i(28191),		-- Mana-Etched Vestments
-							i(29246),		-- Nightfall Wristguards
-							i(29250),		-- Cord of Sanctification
-							i(27911),		-- Epoch's Whispering Cinch
-							i(30536),		-- Greaves of the Martyr
-							i(30534),		-- Wyrmscale Greaves
-							i(24173, { -- Design: Circlet of Arcane Might
-								i(24123), 
-							}),
-						}))
+							i(28222),	-- Reaver of the Infinites
+							i(27431),	-- Time-Shifted Dagger
+							i(28226),	-- Timeslicer
+							i(28225),	-- Doomplate Warhelm
+							i(28224),	-- Wastewalker Helm
+							i(27440),	-- Diamond Prism of Recurrence
+							i(28233),	-- Necklace of Resplendent Hope
+							i(27434),	-- Mantle of Perenolde
+							i(27433),	-- Pauldrons of Sufferance
+							i(28344),	-- Wyrmfury Pauldrons
+							i(28401),	-- Hauberk of Desolation
+							i(28191),	-- Mana-Etched Vestments
+							i(29246),	-- Nightfall Wristguards
+							i(29250),	-- Cord of Sanctification
+							i(27911),	-- Epoch's Whispering Cinch
+							i(30536),	-- Greaves of the Martyr
+							i(30534),	-- Wyrmscale Greaves
+							i(27432),	-- Broxigar's Ring of Valor
+							i(27904),	-- Resounding Ring of Glory
+							i(28227),	-- Sparking Arcanite Ring
+							i(28223),	-- Arcanist's Stone
+							i(24173),	-- Design: Circlet of Arcane Might
+						})),
 					}),
-					d(2, {		-- Heroic
+					d( 2, {	-- Heroic
 						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
-							n(28132, {	-- Don Carlos
+							n( 28132, {			-- Don Carlos
 								["groups"] = {	
-									i(134019), 
+									i(134019),	-- Don Carlos' Famous Hat (TOY!)
 								},
 								["description"] = "This is a neutral mob that wanders the road.",
 							}),
 							cr(17848, e(538, {	-- Lieutenant Drake
-								i(28210),		-- Bloodskull Destroyer
-								i(28213),		-- Lordaeron Medical Guide
-								i(28215),		-- Mok'Nathal Mask of Battle
-								i(27417),		-- Ravenwing Pauldrons
-								i(27423),		-- Cloak of Impulsiveness
-								i(28214),		-- Grips of the Lunar Eclipse
-								i(28212),		-- Aran's Sorcerous Slacks
-								i(27418),		-- Stormreaver Shadow-Kilt
-								i(27420),		-- Uther's Ceremonial Warboots
+								i(28210),	-- Bloodskull Destroyer
+								i(28213),	-- Lordaeron Medical Guide
+								i(28215),	-- Mok'Nathal Mask of Battle
+								i(27417),	-- Ravenwing Pauldrons
+								i(27423),	-- Cloak of Impulsiveness
+								i(28214),	-- Grips of the Lunar Eclipse
+								i(28212),	-- Aran's Sorcerous Slacks
+								i(27418),	-- Stormreaver Shadow-Kilt
+								i(27420),	-- Uther's Ceremonial Warboots
+								i(27436),	-- Iron Band of the Unbreakable
+								i(28211),	-- Lieutenant's Signet of Lordaeron
 							})),
 							cr(17862, e(539, {	-- Captain Skarloc
-								i(27424),		-- Amani Venom-Axe
-								i(28216),		-- Dathrohan's Ceremonial Hammer
-								i(27426),		-- Northshire Battlemace
-								i(28220),		-- Moon-Crown Antlers
-								i(27427),		-- Durotan's Battle Harnace
-								i(27428),		-- Stormfront Gauntlets
-								i(28219),		-- Emerald-Scale Greaves
-								i(28218),		-- Pontiff's Pantaloons of Prophecy
-								i(27430),		-- Scaled Greaves of Patience
-								i(28221),		-- Boots of the Watchful Heart
+								i(27424),	-- Amani Venom-Axe
+								i(28216),	-- Dathrohan's Ceremonial Hammer
+								i(27426),	-- Northshire Battlemace
+								i(28220),	-- Moon-Crown Antlers
+								i(28217),	-- Tarren Mill Vitality Locket
+								i(27427),	-- Durotan's Battle Harnace
+								i(27428),	-- Stormfront Gauntlets
+								i(28219),	-- Emerald-Scale Greaves
+								i(28218),	-- Pontiff's Pantaloons of Prophecy
+								i(27430),	-- Scaled Greaves of Patience
+								i(28221),	-- Boots of the Watchful Heart
 							})),
 							cr(18096, e(540, {	-- Epoch Hunter
-								i(28222),		-- Reaver of the Infinites
-								i(27431),		-- Time-Shifted Dagger
-								i(28226),		-- Timeslicer
-								i(28225),		-- Doomplate Warhelm
-								i(28224),		-- Wastewalker Helm
-								i(27434),		-- Mantle of Perenolde
-								i(27433),		-- Pauldrons of Sufferance
-								i(28344),		-- Wyrmfury Pauldrons
-								i(28401),		-- Hauberk of Desolation
-								i(28191),		-- Mana-Etched Vestments
-								i(29246),		-- Nightfall Wristguards
-								i(29250),		-- Cord of Sanctification
-								i(27911),		-- Epoch's Whispering Cinch
-								i(30536),		-- Greaves of the Martyr
-								i(30534),		-- Wyrmscale Greaves
-								i(24173, { -- Design: Circlet of Arcane Might
-									i(24123), 
-								}),
-							}))
-						}})
+								i(28222),	-- Reaver of the Infinites
+								i(27431),	-- Time-Shifted Dagger
+								i(28226),	-- Timeslicer
+								i(28225),	-- Doomplate Warhelm
+								i(28224),	-- Wastewalker Helm
+								i(27440),	-- Diamond Prism of Recurrence
+								i(28233),	-- Necklace of Resplendent Hope
+								i(27434),	-- Mantle of Perenolde
+								i(27433),	-- Pauldrons of Sufferance
+								i(28344),	-- Wyrmfury Pauldrons
+								i(28401),	-- Hauberk of Desolation
+								i(28191),	-- Mana-Etched Vestments
+								i(29246),	-- Nightfall Wristguards
+								i(29250),	-- Cord of Sanctification
+								i(27911),	-- Epoch's Whispering Cinch
+								i(30536),	-- Greaves of the Martyr
+								i(30534),	-- Wyrmscale Greaves
+								i(27432),	-- Broxigar's Ring of Valor
+								i(27904),	-- Resounding Ring of Glory
+								i(28227),	-- Sparking Arcanite Ring
+								i(28223),	-- Arcanist's Stone
+								i(24173),	-- Design: Circlet of Arcane Might
+							})),
+						}}),
 				},
 				["lvl"] = 63,
 				["mapID"] = 734
