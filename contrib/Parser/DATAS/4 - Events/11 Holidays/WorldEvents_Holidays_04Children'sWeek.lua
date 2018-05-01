@@ -285,7 +285,16 @@ _.WorldEvents =
 							["sourceQuests"] = { 13954, 13959, 13937 }, -- The Dragon Queen / Meeting a Great One / A Trip to the Wonderworks
 						}),
 					}),
-					
+					n(-2, { -- Vendors
+						nh(52809, { -- Blax Bottlerocket <Toys and Novelties>
+							un(20, i(69895)), -- Green Balloon
+							un(20, i(69896)), -- Yellow Balloon
+						}),
+						na(52358, { -- Craggle Wobbletop <Toys and Novelties>
+							un(20, i(69895)), -- Green Balloon
+							un(20, i(69896)), -- Yellow Balloon
+						}),
+					}),
 				},
 				["achievementID"] = 1793, -- For The Children
 				["u"] = 20,
