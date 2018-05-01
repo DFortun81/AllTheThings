@@ -7,7 +7,6 @@ _.GroupFinder =
 	i(156683, {	-- Satchel of Helpful Goods [Level 15-60]			
 		["groups"] = {
 			i(51982),	-- Earthbound Boots*
-			un(2, i(51977)),	-- Earthbound Girdle*
 			un(2, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
 			i(143580),	-- Earthbound Girdle*
 			un(2, i(51979)),	-- Earthbound Grips*
@@ -115,7 +114,8 @@ _.GroupFinder =
 			i(51975),	-- Earthbound Shoulders
 			i(51981),	-- Earthbound Wristguards
 			i(51979),	-- Earthbound Grips
-			i(51983),	-- Stalwart Shoulderguards
+			i(51977),	-- Earthbound Girdle
+			i(51983),	-- Stalwart Shoulderguards*
 			i(51989),	-- Stalwart Bands
 			i(51987),	-- Stalwart Grips
 			i(51993),	-- Turbulent Cloak*

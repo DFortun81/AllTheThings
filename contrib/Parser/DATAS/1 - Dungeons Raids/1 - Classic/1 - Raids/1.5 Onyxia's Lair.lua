@@ -161,7 +161,11 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 							i(49636),	-- Reins of the Onyxian Drake (Mount)
 							i(49295),	-- Enlarged Onyxia Hide Backpack (Bag)
-							i(49294),	-- Ashen Sack of Gems (Consumable)
+							i(49294, {	-- Ashen Sack of Gems (Consumable)
+								["groups"] = {
+								},
+								["f"] = 113, -- Bag
+							}),
 							i(49299),	-- Keen Obsidian Edged Blade
 							i(49302),	-- Reclaimed Shadowstrike
 							i(49301),	-- Reclaimed Thunderstrike
@@ -256,7 +260,11 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 							i(49636),	-- Reins of the Onyxian Drake (Mount)
 							i(49295),	-- Enlarged Onyxia Hide Backpack (Bag)
-							i(49294),	-- Ashen Sack of Gems (Consumable)
+							i(49294, {	-- Ashen Sack of Gems (Consumable)
+								["groups"] = {
+								},
+								["f"] = 113, -- Bag
+							}),
 							i(49496),	-- Reinforced Shadowstrike
 							i(49497),	-- Reinforced Thunderstrike
 							i(49498),	-- Sharpened Obsidian Edged Blade
