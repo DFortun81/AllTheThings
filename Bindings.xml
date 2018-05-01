@@ -5,6 +5,9 @@
 	<Binding name="ALLTHETHINGS_OPENMINILIST" category="ADDONS">
 		AllTheThings.OpenMiniListForCurrentZone();
 	</Binding>
+	<Binding name="ALLTHETHINGS_OPENPROFESSIONMINILIST" category="ADDONS">
+		AllTheThings.OpenMiniListForCurrentProfession();
+	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" category="ADDONS">
 		AllTheThings.ToggleMainList();
 	</Binding>
