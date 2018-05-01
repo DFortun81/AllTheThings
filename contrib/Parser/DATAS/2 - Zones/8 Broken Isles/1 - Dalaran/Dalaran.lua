@@ -2188,7 +2188,7 @@ _.Zones =
 										i(138854), -- Fragment of the Betrayer's Prison
 										i(151639), -- Soul of the Slayer
 										i(132452), -- Sephuz's Secret
-										i(154172), -- Aman'Thul's Vision
+	
 										i(144249), -- Archimonde's Hatred Reborn
 										i(144259), -- Kil'jaeden's Burning Wish
 									},
@@ -2219,7 +2219,6 @@ _.Zones =
 									i(137223), -- Seal of Necrofantasia
 									i(151640), -- Soul of the Deahtlord
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144249), -- Archimonde's Hatred Reborn
 									i(144259), -- Kil'jaeden's Burning Wish
 								}),
@@ -2249,7 +2248,6 @@ _.Zones =
 									i(137023), -- Promise of Elune, the Moon Goddess
 									i(137025), -- Skysec's Hold
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144249), -- Archimonde's Hatred Reborn
 									i(144259), -- Kil'jaeden's Burning Wish
 									i(137039), -- Impeccable Fel Essence
@@ -2279,7 +2277,6 @@ _.Zones =
 									i(137227), -- Qa'pla, Eredun War Order
 									i(137033), -- Ulr's Feather Snowshoes
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144259), -- Kil'jaeden's Burning Wish
 									i(132444), -- Prydaz, Xavric's Magnum Opus
 									i(137043), -- Frizzo's Fingertrap
@@ -2308,7 +2305,6 @@ _.Zones =
 									i(132451), -- Mystic Kilt of the Rune Master
 									i(132455), -- Norgannon's Foresight (Priest, Mage, Lock)
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144259), -- Kil'jaeden's Burning Wish
 									i(132444), -- Prydaz, Xavric's Magnum Opus
 									i(132410), -- Shard of the Exodar
@@ -2335,7 +2331,6 @@ _.Zones =
 									i(137027), -- Firestone Walkers
 									i(137029), -- Katsuo's Eclipse
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144249), -- Archimonde's Hatred Reborn
 									i(144259), -- Kil'jaeden's Burning Wish
 									i(132444), -- Prydaz, Xavric's Magnum Opus
@@ -2365,7 +2360,6 @@ _.Zones =
 									i(137070), -- Tyelca, Ferren Marcus's Stature
 									i(132443), -- Aggramar's Stride (Paladin, Warrior, Death Knight)
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144249), -- Archimonde's Hatred Reborn
 									i(144259), -- Kil'jaeden's Burning Wish
 									i(132444), -- Prydaz, Xavric's Magnum Opus
@@ -2398,7 +2392,6 @@ _.Zones =
 									i(132447), -- Entrancing Trousers of An'juna
 									i(132455), -- Norgannon's Foresight (Priest, Mage, Lock)
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144259), -- Kil'jaeden's Burning Wish
 									i(132444), -- Prydaz, Xavric's Magnum Opus
 									i(133973), -- The Twins' Painful Touch
@@ -2424,7 +2417,6 @@ _.Zones =
 									i(137032), -- Shadow Satyr's Walk
 									i(137031), -- Thraxi's Tricksy Treads
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144259), -- Kil'jaeden's Burning Wish
 									i(132444), -- Prydaz, Xavric's Magnum Opus
 									i(137049), -- Insignia of Ravenholdt
@@ -2450,7 +2442,6 @@ _.Zones =
 									i(138117), -- Spiritual Journey
 									i(137035), -- The Deceiver's Blood Pact
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144259), -- Kil'jaeden's Burning Wish
 									i(132444), -- Prydaz, Xavric's Magnum Opus
 									i(137050), -- Eye of the Twisting Nether
@@ -2477,7 +2468,6 @@ _.Zones =
 									i(132357), -- Pillars of the Dark Portal
 									i(132455), -- Norgannon's Foresight (Priest, Mage, Lock)
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144259), -- Kil'jaeden's Burning Wish
 									i(132444), -- Prydaz, Xavric's Magnum Opus
 									i(132369), -- Wilfred's Sigil of Superior Summoning
@@ -2503,7 +2493,6 @@ _.Zones =
 									i(137077), -- Weight of the Earth
 									i(132443), -- Aggramar's Stride (Paladin, Warrior, Death Knight)
 									i(132452), -- Sephuz's Secret
-									i(154172), -- Aman'Thul's Vision
 									i(144249), -- Archimonde's Hatred Reborn
 									i(144259), -- Kil'jaeden's Burning Wish
 									i(132444), -- Prydaz, Xavric's Magnum Opus
