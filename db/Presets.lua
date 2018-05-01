@@ -52,6 +52,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["DEMONHUNTER"] = {
 		true, -- [1]
@@ -103,6 +104,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["DRUID"] = {
 		true, -- [1]
@@ -154,6 +156,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["HUNTER"] = {
 		true, -- [1]
@@ -205,6 +208,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["MAGE"] = {
 		true, -- [1]
@@ -256,6 +260,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["MONK"] = {
 		true, -- [1]
@@ -307,6 +312,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["PALADIN"] = {
 		true, -- [1]
@@ -358,6 +364,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["PRIEST"] = {
 		true, -- [1]
@@ -398,6 +405,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["ROGUE"] = {
 		true, -- [1]
@@ -447,6 +455,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["SHAMAN"] = {
 		true, -- [1]
@@ -486,6 +495,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["WARLOCK"] = {
 		true, -- [1]
@@ -525,6 +535,7 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 	["WARRIOR"] = {
 		true, -- [1]
@@ -576,5 +587,6 @@ AllTheThings.Presets = {
 		[53] = false,
 		[54] = false,
 		[55] = false,
+		[113] = false,
 	},
 }
