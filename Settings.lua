@@ -1405,12 +1405,12 @@ local function createMiniListFrame(parent)
 	local allEquipment = createCheckBox("All Equipment", child, function(self)
 			if self:GetChecked() then
 				-- set all equipment true
-				for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 30, 31, 32, 33, 34, 51, 52, 53, 54 }) do
+				for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 31, 32, 33, 34, 51, 52, 53, 54 }) do
 					itemFilters[filter] = true;
 				end
 			else
 				-- set all equipment false
-				for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 30, 31, 32, 33, 34, 51, 52, 53, 54 }) do
+				for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 31, 32, 33, 34, 51, 52, 53, 54 }) do
 					itemFilters[filter] = false;
 				end
 			end
@@ -1419,7 +1419,7 @@ local function createMiniListFrame(parent)
 		end, 
 		function(self) 
 			local isTrue = false
-			for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 30, 31, 32, 33, 34, 51, 52, 53, 54 }) do
+			for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 31, 32, 33, 34, 51, 52, 53, 54 }) do
 				isTrue = (not itemFilters[filter]) or isTrue
 			end
 			self:SetChecked(not isTrue);
@@ -1436,12 +1436,12 @@ local function createMiniListFrame(parent)
 		local presets = app.Presets[app.Class]
 			if self:GetChecked() then
 				-- set class items true
-				for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 30, 31, 32, 33, 34, 51, 52, 53, 54 }) do
+				for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 31, 32, 33, 34, 51, 52, 53, 54 }) do
 					itemFilters[filter] = presets[filter]
 				end
 			else
 				-- set all items false
-				for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 30, 31, 32, 33, 34, 51, 52, 53, 54 }) do
+				for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 31, 32, 33, 34, 51, 52, 53, 54 }) do
 					itemFilters[filter] = false;
 				end
 			end
@@ -1451,7 +1451,7 @@ local function createMiniListFrame(parent)
 		function(self) 
 			local presets = app.Presets[app.Class]
 			local isTrue = false
-			for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 30, 31, 32, 33, 34, 51, 52, 53, 54 }) do
+			for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 35, 27, 28, 29, 31, 32, 33, 34, 51, 52, 53, 54 }) do
 				isTrue = (not (itemFilters[filter] == presets[filter])) or isTrue
 			end
 			self:SetChecked(not isTrue);
@@ -1508,7 +1508,7 @@ local function createMiniListFrame(parent)
 	
 	last = weapon;
 	x = 5
-	for i,filter in ipairs({ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 }) do
+	for i,filter in ipairs({ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
 			itemFilters[filter] = self:GetChecked();
 			refreshUI();
