@@ -400,7 +400,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,other)
 	
 	local otherFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-otherFrame", child, "ThinBorderTemplate");
-	otherFrame:SetSize(child:GetWidth(),60)
+	otherFrame:SetSize(child:GetWidth(),80)
 	otherFrame:SetPoint("TOPLEFT",other,0,-frameSpacer);
 	addObject(elm,otherFrame)
 	
@@ -442,7 +442,27 @@ local function createGeneralFrame(parent)
 		end);
 	autoMinilist:SetPoint("TOPLEFT",minimapButton,0,-frameSpacer)
 	addObject(elm,autoMinilist)	
-
+	
+	-- show profession mini list auto
+	local autoProfessionMinilist = createCheckBox("Show the Profession Mini List Automatically", child, function(self)
+			app.SetDataMember("AutoProfessionMiniList", self:GetChecked());
+			if self:GetChecked() then
+				app.OpenMiniListForCurrentProfession(true, true);
+			else
+				app.GetWindow("Tradeskills"):SetVisible(false);
+			end
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("AutoProfessionMiniList", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want ATT to open and refresh the profession mini list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nSome people don't like this feature, but when you are working on your professions, this feature is extremely useful. We don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	autoProfessionMinilist:SetPoint("TOPLEFT",autoMinilist,0,-frameSpacer)
+	autoProfessionMinilist.Label:SetWidth(autoProfessionMinilist.Label:GetWidth() * 1.5);
+	addObject(elm,autoProfessionMinilist)
 end
 
 local function createAccountFrame(parent)

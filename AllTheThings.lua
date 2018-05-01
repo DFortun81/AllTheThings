@@ -76,6 +76,7 @@ local PlayerHasToy = _G["PlayerHasToy"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
+local spellRecipeInfo = {};
 
 -- Coroutine Helper Functions
 app.refreshing = {};
@@ -1668,6 +1669,76 @@ local function OpenMiniList(field, id, label)
 		end
 	end
 end
+local function OpenMiniListForCurrentProfession(manual, refresh)
+	if app.Categories.Professions then
+		local popout = app:GetWindow("Tradeskills");
+		local tradeSkillLine = C_TradeSkillUI.GetTradeSkillLine();
+		if tradeSkillLine and GetDataMember("AutoProfessionMiniList") and fieldCache["requireSkill"][tradeSkillLine]
+			and not (C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
+			if manual or not refresh then
+				popout:ClearAllPoints();
+				popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
+				popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+				popout:SetVisible(true);
+			end
+		else
+			if manual then
+				app.print("You must have a profession open to open the profession mini list.");
+			end
+			popout:SetVisible(false);
+		end
+		
+		if popout:IsShown() and refresh then
+			-- Cache Learned Spells
+			local skillCache = fieldCache["spellID"];
+			if skillCache then
+				-- Cache learned recipes
+				local learned = 0;
+				
+				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+				for i = 1,#recipeIDs do
+					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+						if spellRecipeInfo.learned then
+							SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+							if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+								SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+								learned = learned + 1;
+							end
+						end
+						if not skillCache[spellRecipeInfo.recipeID] then
+							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
+							skillCache[spellRecipeInfo.recipeID] = { {} };
+						end
+					end
+				end
+				
+				-- Open the Tradeskill list for this Profession
+				local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
+				if popout.tradeSkillID ~= tradeSkillID then
+					popout.tradeSkillID = tradeSkillID;
+					for i,group in ipairs(app.Categories.Professions) do
+						if group.requireSkill == tradeSkillID then
+							popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
+							app.BuildGroups(popout.data, popout.data.g);
+							app.UpdateGroups(popout.data, popout.data.g, 1);
+							if not popout.data.expanded then
+								popout.data.expanded = true;
+								ExpandGroupsRecursively(popout.data, true);
+							end
+							popout:SetVisible(true);
+						end
+					end
+				end
+			
+				-- If something new was "learned", then refresh the data.
+				if learned > 0 then
+					app:RefreshData(false, true);
+					app.print("Cached " .. learned .. " known recipes!");
+				end
+			end
+		end
+	end
+end
 local function OpenMiniListForCurrentZone()
 	OpenMiniList("mapID", app.GetCurrentMapID(), "Map ID");
 end
@@ -2016,6 +2087,7 @@ app.RefreshSaves = RefreshSaves;
 app.OpenMainList = OpenMainList;
 app.OpenMiniList = OpenMiniList;
 app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
+app.OpenMiniListForCurrentProfession = OpenMiniListForCurrentProfession;
 app.SetCompletionistMode = SetCompletionistMode;
 app.SetDebugMode = SetDebugMode;
 app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
@@ -3638,7 +3710,6 @@ app.CreateQuest = function(id, t)
 end
 
 -- Recipe Lib
-local spellRecipeInfo = {};
 app.BaseRecipe = {
 	__index = function(t, key)
 		if key == "key" then
@@ -4456,6 +4527,7 @@ local function UpdateParentProgress(group)
 		end
 	end
 end
+app.UpdateGroups = UpdateGroups;
 
 -- Helper Methods
 -- The following Helper Methods are used when you obtain a new appearance.
@@ -7446,6 +7518,7 @@ app.events.VARIABLES_LOADED = function()
 	BINDING_HEADER_ALLTHETHINGS = app.DisplayName;
 	BINDING_NAME_ALLTHETHINGS_OPENMAINLIST = L("OPEN_MAINLIST");
 	BINDING_NAME_ALLTHETHINGS_OPENMINILIST = L("OPEN_MINILIST");
+	BINDING_NAME_ALLTHETHINGS_OPENPROFESSIONMINILIST = L("OPEN_PROFESSIONMINILIST");
 	BINDING_NAME_ALLTHETHINGS_TOGGLEMAINLIST = L("TOGGLE_MAINLIST");
 	BINDING_NAME_ALLTHETHINGS_TOGGLEMINILIST = L("TOGGLE_MINILIST");
 	BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETIONISTMODE = L("TOGGLE_COMPLETIONIST_MODE");
@@ -7623,6 +7696,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowDescriptions", true);
 	GetDataMember("ShowModels", true);
 	GetDataMember("AutoMiniList", true);
+	GetDataMember("AutoProfessionMiniList", true);
 	
 	GetDataMember("ShowAchievementID", false);
 	GetDataMember("ShowArtifactID", false);
@@ -7787,74 +7861,10 @@ app.events.TOYS_UPDATED = function(itemID, new)
 	end
 end
 app.events.TRADE_SKILL_LIST_UPDATE = function(...)
-	if app.Categories.Professions then
-		local popout = app:GetWindow("Tradeskills");
-		if popout:IsShown() then
-			if not (C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
-				-- Cache Learned Spells
-				local skillCache = fieldCache["spellID"];
-				if skillCache then
-					-- Cache learned recipes
-					local learned = 0;
-					
-					local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
-					for i = 1,#recipeIDs do
-						if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
-							if spellRecipeInfo.learned then
-								SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-								if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-									SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-									learned = learned + 1;
-								end
-							end
-							if not skillCache[spellRecipeInfo.recipeID] then
-								--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
-								skillCache[spellRecipeInfo.recipeID] = { {} };
-							end
-						end
-					end
-					
-					-- Open the Tradeskill list for this Profession
-					local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
-					if popout.tradeSkillID ~= tradeSkillID then
-						popout.tradeSkillID = tradeSkillID;
-						for i,group in ipairs(app.Categories.Professions) do
-							if group.requireSkill == tradeSkillID then
-								popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
-								BuildGroups(popout.data, popout.data.g);
-								UpdateGroups(popout.data, popout.data.g, 1);
-								if not popout.data.expanded then
-									popout.data.expanded = true;
-									ExpandGroupsRecursively(popout.data, true);
-								end
-								popout:SetVisible(true);
-							end
-						end
-					end
-				
-					-- If something new was "learned", then refresh the data.
-					if learned > 0 then
-						app:RefreshData(false, true);
-						app.print("Cached " .. learned .. " known recipes!");
-					end
-				end
-			else
-				 popout:SetVisible(false);
-			end
-		end
-	end
+	OpenMiniListForCurrentProfession(false, true);
 end
 app.events.TRADE_SKILL_SHOW = function(...)
-	if app.Categories.Professions then
-		if fieldCache["requireSkill"][C_TradeSkillUI.GetTradeSkillLine()]
-			and not (C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
-			local popout = app:GetWindow("Tradeskills");
-			popout:ClearAllPoints();
-			popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
-			popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
-			popout:SetVisible(true);
-		end
-	end
+	OpenMiniListForCurrentProfession(false, false);
 end
 app.events.TRADE_SKILL_CLOSE = function(...)
 	app:GetWindow("Tradeskills"):SetVisible(false);

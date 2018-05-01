@@ -23,6 +23,7 @@ AllTheThings.Locales.enUS = {
 	["OPEN_MAINLIST"] = "Open Main List";
 	["TOGGLE_MAINLIST"] = "Toggle Main List";
 	["OPEN_MINILIST"] = "Open Mini List";
+	["OPEN_PROFESSIONMINILIST"] = "Open Profession Mini List";
 	["TOGGLE_MINILIST"] = "Toggle Mini List";
 	["TOGGLE_COMPLETIONIST_MODE"] = "Toggle Completionist Mode";
 	["TOGGLE_DEBUG_MODE"] = "Toggle Debug Mode";
