@@ -2756,7 +2756,7 @@ app.BaseCurrencyClass = {
 		if key == "key" then
 			return "currencyID";
 		elseif key == "text" then
-			return GetCurrencyLink(t.currencyID) or select(1, GetCurrencyInfo(t.currencyID));
+			return GetCurrencyLink(t.currencyID, 1) or select(1, GetCurrencyInfo(t.currencyID));
 		elseif key == "icon" then
 			return select(3, GetCurrencyInfo(t.currencyID));
 		elseif key == "icon" then
