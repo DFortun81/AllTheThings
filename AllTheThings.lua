@@ -2558,6 +2558,7 @@ end
 			end
 		end
 	end
+	--[[
 	local GameTooltip_SetToyByItemID = GameTooltip.SetToyByItemID;
 	GameTooltip.SetToyByItemID = function(self, itemID)
 		GameTooltip_SetToyByItemID(self, itemID);
@@ -2566,6 +2567,7 @@ end
 			self:Show();
 		end
 	end
+	]]--
 end)();
 
 -- Achievement Lib
