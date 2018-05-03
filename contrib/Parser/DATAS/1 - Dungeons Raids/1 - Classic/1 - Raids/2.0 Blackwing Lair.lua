@@ -272,8 +272,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19376),	-- Archimtiros' Ring of Reckoning
 					i(19382),	-- Pure Elementium Band
 					i(19379),	-- Neltharion's Tear
-				 -- BLUES NOT IN DUNGEON JOURNAL/WOWHEAD
-					i(13114),	-- Serenity Belt
+				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
+					i(13008),	-- Dalewind Trousers
+					i(13144),	-- Serenity Belt
 					i(13146),	-- Shell Launcher Shotgun
 				},
 				["creatureID"] = 11583,

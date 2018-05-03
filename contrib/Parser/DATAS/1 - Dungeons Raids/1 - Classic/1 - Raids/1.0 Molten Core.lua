@@ -576,6 +576,10 @@ _.Instances = { tier(1, {	-- Classic
 				i(19138),	-- Band of Sulfuras
 				i(18815),	-- Essence of the Pure Flame
 				i(17082),	-- Shard of the Flame
+			 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
+				i(13008),	-- Dalewind Trousers
+				i(13144),	-- Serenity Belt
+				i(13146),	-- Shell Launcher Shotgun
 			})),
 		},
 		["isRaid"] = true,
