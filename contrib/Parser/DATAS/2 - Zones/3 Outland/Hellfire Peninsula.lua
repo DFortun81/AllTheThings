@@ -106,10 +106,6 @@ _.Zones =
 				n(-17, {  	-- Quests
 					h(ach(1271, { -- To Hellfire and Back [Horde Version]
 						crit(1, { -- Disrupt the Burning Legion
-							qh(49816, { -- To Outland! [Breadcrumb]
-								["groups"] = {
-								},
-							}),
 							qh(10120, { -- Arrival in Outland
 								["groups"] = {
 								},
@@ -390,10 +386,6 @@ _.Zones =
 					})),
 					a(ach(1189, { -- To Hellfire and Back [Horde Version]
 						crit(1, { -- Disrupt the Burning Legion
-							qa(49862, { -- To Outland! [Breadcrumb]
-								["groups"] = {
-								},
-							}),
 							qa(10288, { -- Arrival in Outland
 								["groups"] = {
 								},
@@ -564,6 +556,14 @@ _.Zones =
 						}),
 					})),
 					n(-168, { -- Other Quests
+						qh(49816, { -- To Outland! [Breadcrumb]
+							["groups"] = {
+							},
+						}),
+						qa(49862, { -- To Outland! [Breadcrumb]
+							["groups"] = {
+							},
+						}),
 						sz(1271,8, { -- Cenarion Post
 							["groups"] = {
 								q(9912, { -- The Cenarion Expedition [Breadcrumb]
@@ -574,7 +574,7 @@ _.Zones =
 							},
 							["collectible"] = false,	-- Turn off Collectible flags.
 						}),
-						sz(862,3, { -- Falcon Watch
+						h(sz(862,3, { -- Falcon Watch
 							["groups"] = {
 								qh(10442, { -- Helping the Cenarion Post
 									["groups"] = {
@@ -583,8 +583,8 @@ _.Zones =
 								}),
 							},
 							["collectible"] = false,	-- Turn off Collectible flags.
-						}),
-						sz(862,4, { -- Spinebreaker Post
+						})),
+						h(sz(862,4, { -- Spinebreaker Post
 							["groups"] = {
 								qh(10220,{	-- Make Them Listen	
 									["groups"] = {	
@@ -608,8 +608,8 @@ _.Zones =
 								}),
 							},
 							["collectible"] = false,	-- Turn off Collectible flags.
-						}),
-						sz(862,11, { -- Thrallmar
+						})),
+						h(sz(862,11, { -- Thrallmar
 							["groups"] = {
 								q(9498, { -- Falcon Watch [Breadcrumb]
 									["groups"] = {
@@ -646,7 +646,7 @@ _.Zones =
 								}),
 							},
 							["collectible"] = false,	-- Turn off Collectible flags.
-						}),
+						})),
 						-- Need a Reaver's Fall Section, but none in achievement
 						qh(10242, { -- Spinebreaker Post
 							["groups"] = {
