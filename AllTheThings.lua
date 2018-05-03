@@ -6273,6 +6273,7 @@ function app:GetDataCache()
 		--app.Categories = nil;
 		
 		-- Check to see if it is empty.
+		--[[
 		local harvestData = {};
 		harvestData.visible = true;
 		harvestData.expanded = true;
@@ -6311,6 +6312,7 @@ function app:GetDataCache()
 		popout.data = harvestData;
 		popout.ScrollBar:SetValue(1);
 		popout:SetVisible(true);
+		]]--
 	end
 	return allData;
 end
