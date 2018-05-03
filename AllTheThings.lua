@@ -568,7 +568,6 @@ end
 CS:Hide();
 
 -- Source ID Harvesting Lib
-local SourceIDs = {};
 local DressUpModel = CreateFrame('DressUpModel');
 local NPCModelHarvester = CreateFrame('DressUpModel', nil, OffScreenFrame);
 local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
@@ -659,6 +658,7 @@ local function GetSourceID(itemLink)
 	return nil, false;
 end
 app.GetSourceID = GetSourceID;
+app.MaximumItemInfoRetries = 400;
 local function SetPortraitIcon(self, data, x)
 	self.lastData = data;
 	if data.texCoords then
@@ -3302,7 +3302,7 @@ app.BaseItem = {
 				else
 					if t.retries then
 						t.retries = t.retries + 1;
-						if t.retries > 40 then
+						if t.retries > app.MaximumItemInfoRetries then
 							local itemName = "Item #" .. t.itemID .. "*";
 							t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
 							t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
@@ -3383,7 +3383,7 @@ app.BaseItemSource = {
 			else
 				if t.retries then
 					t.retries = t.retries + 1;
-					if t.retries > 40 then
+					if t.retries > app.MaximumItemInfoRetries then
 						local itemName = "Item #" .. t.itemID .. "*";
 						t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
 						t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
@@ -5193,10 +5193,10 @@ local function SetRowData(self, row, data)
 				if data.collected then
 					data.parent.progress = data.parent.progress + 1;
 				end
-				local item = SourceIDs[data.itemID];
+				local item = AllTheThingsHarvestItems[data.itemID];
 				if not item then
 					item = {};
-					SourceIDs[data.itemID] = item;
+					AllTheThingsHarvestItems[data.itemID] = item;
 				end
 				if data.bonusID then
 					local bonuses = item.bonuses;
@@ -5213,10 +5213,9 @@ local function SetRowData(self, row, data)
 					end
 					mods[data.modID or 1] = s;
 				end
-				print("NEW SOURCE ID!", text);
-				SetDataMember("Items", SourceIDs);
+				--print("NEW SOURCE ID!", text);
 			else
-				print("NARP", text);
+				--print("NARP", text);
 				data.s = nil;
 				data.parent.total = data.parent.total - 1;
 			end
@@ -5341,6 +5340,21 @@ local function UpdateVisibleRowData(self)
 					coroutine.yield();
 					UpdateVisibleRowData(self);
 				end
+				if self.UpdateDone then
+					StartCoroutine(self:GetName()..":UpdateDone", function()
+						coroutine.yield();
+						coroutine.yield();
+						coroutine.yield();
+						self:UpdateDone();
+					end);
+				end
+			end);
+		elseif self.UpdateDone and rowCount > 5 then
+			StartCoroutine(self:GetName()..":UpdateDone", function()
+				coroutine.yield();
+				coroutine.yield();
+				coroutine.yield();
+				self:UpdateDone();
 			end);
 		end
 	else
@@ -6269,11 +6283,8 @@ function app:GetDataCache()
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
 		
-		-- Now that we have built the data, we don't need this anymore.
-		--app.Categories = nil;
-		
-		-- Check to see if it is empty.
-		--[[
+		-- Uncomment this section if you need to Harvest Source IDs:
+		--[[]]--
 		local harvestData = {};
 		harvestData.visible = true;
 		harvestData.expanded = true;
@@ -6287,6 +6298,7 @@ function app:GetDataCache()
 		local mID = 1;
 		local modIDs = {};
 		local bonusIDs = {};
+		app.MaximumItemInfoRetries = 10;
 		for itemID,groups in pairs(fieldCache["itemID"]) do
 			for i,group in ipairs(groups) do
 				if group.bonusID and not bonusIDs[group.bonusID] then
@@ -6312,7 +6324,21 @@ function app:GetDataCache()
 		popout.data = harvestData;
 		popout.ScrollBar:SetValue(1);
 		popout:SetVisible(true);
-		]]--
+		local oldUpdate = popout.Update;
+		popout.Update = function(self, ...)
+			for i,group in ipairs(harvestData.g) do
+				if group.s and group.s == 0 then
+					group.visible = true;
+				else
+					group.visible = false;
+				end
+			end
+			oldUpdate(self, ...);
+		end
+		popout.UpdateDone = function(self)
+			self:Update();
+		end
+		--[[]]--
 	end
 	return allData;
 end
@@ -6546,6 +6572,7 @@ app.events.VARIABLES_LOADED = function()
 		AllTheThingsPCD = { };
 		_G["AllTheThingsPCD"] = AllTheThingsPCD;
 	end
+	AllTheThingsHarvestItems = {};
 	
 	-- There were some API changes between Legion and BFA:
 	local uiMapIDTables = {		
@@ -7612,8 +7639,6 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Check to see if we have a leftover ItemDB cache
-	if GetDataMember("Items") then SetDataMember("Items", nil); end
-	if GetDataMember("ItemDB") then SetDataMember("ItemDB", nil); end
 	GetDataMember("CollectedFactions", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
