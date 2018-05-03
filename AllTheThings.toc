@@ -2,7 +2,7 @@
 ## Interface: 70300
 ## Title: AllTheThings
 ## Name: AllTheThings
-## SavedVariables: AllTheThingsAD
+## SavedVariables: AllTheThingsAD, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsPCD
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Version: 1.5.9
