@@ -1456,7 +1456,7 @@ local function SearchForItemLink(link)
 												end
 												text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												text = text	.. " |CFFFF0000(MISSING IN ATT)|r/" .. GetCollectionIcon(otherSource.isCollected);
+												text = text	.. " |CFFFF0000(MISSING IN ATT - " .. otherSourceID .. ")|r/" .. GetCollectionIcon(otherSource.isCollected);
 												tinsert(listing, text);
 											end
 										end
@@ -3048,13 +3048,13 @@ app.BaseHeirloom = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			return C_Heirloom.PlayerHasHeirloom(t.itemID);
+			return C_Heirloom.PlayerHasHeirloom(t.itemID) or (t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s));
 		elseif key == "f" then
 			return 109;
 		elseif key == "text" then
 			return t.link;
 		elseif key == "link" then
-			return select(2, GetItemInfo(t.itemID));
+			return C_Heirloom.GetHeirloomLink(t.itemID);--select(2, GetItemInfo(t.itemID));
 		elseif key == "icon" then
 			return select(4, C_Heirloom.GetHeirloomInfo(t.itemID));
 		else
@@ -6286,7 +6286,7 @@ function app:GetDataCache()
 		CacheFields(allData);
 		
 		-- Uncomment this section if you need to Harvest Source IDs:
-		--[[]]--
+		--[[
 		local harvestData = {};
 		harvestData.visible = true;
 		harvestData.expanded = true;
@@ -6352,7 +6352,7 @@ function app:GetDataCache()
 			end
 			UpdateVisibleRowData(self);
 		end
-		--[[]]--
+		]]--
 	end
 	return allData;
 end
