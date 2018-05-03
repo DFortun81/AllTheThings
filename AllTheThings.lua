@@ -3051,10 +3051,12 @@ app.BaseHeirloom = {
 			return C_Heirloom.PlayerHasHeirloom(t.itemID) or (t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s));
 		elseif key == "f" then
 			return 109;
+		elseif key == "modID" then
+			return 1;
 		elseif key == "text" then
 			return t.link;
 		elseif key == "link" then
-			return C_Heirloom.GetHeirloomLink(t.itemID);--select(2, GetItemInfo(t.itemID));
+			return C_Heirloom.GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID));
 		elseif key == "icon" then
 			return select(4, C_Heirloom.GetHeirloomInfo(t.itemID));
 		else
@@ -6286,7 +6288,7 @@ function app:GetDataCache()
 		CacheFields(allData);
 		
 		-- Uncomment this section if you need to Harvest Source IDs:
-		--[[
+		--[[]]--
 		local harvestData = {};
 		harvestData.visible = true;
 		harvestData.expanded = true;
@@ -6300,17 +6302,19 @@ function app:GetDataCache()
 		local mID = 1;
 		local modIDs = {};
 		local bonusIDs = {};
-		app.MaximumItemInfoRetries = 10;
+		app.MaximumItemInfoRetries = 100;
 		for itemID,groups in pairs(fieldCache["itemID"]) do
 			for i,group in ipairs(groups) do
-				if group.bonusID and not bonusIDs[group.bonusID] then
-					bonusIDs[group.bonusID] = true;
-					tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, indent = 1, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
-				else
-					mID = group.modID or 1;
-					if not modIDs[mID] then
-						modIDs[mID] = true;
-						tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, indent = 1, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
+				if (not group.s or group.s == 0) and (not group.f or group.f == 109 or group.f < 50) then
+					if group.bonusID and not bonusIDs[group.bonusID] then
+						bonusIDs[group.bonusID] = true;
+						tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, indent = 1, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
+					else
+						mID = group.modID or 1;
+						if not modIDs[mID] then
+							modIDs[mID] = true;
+							tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, indent = 1, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
+						end
 					end
 				end
 			end
@@ -6352,7 +6356,7 @@ function app:GetDataCache()
 			end
 			UpdateVisibleRowData(self);
 		end
-		]]--
+		--[[]]--
 	end
 	return allData;
 end

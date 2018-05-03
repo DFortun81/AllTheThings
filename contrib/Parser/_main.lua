@@ -403,7 +403,7 @@ gssh = function(id, t)									-- Create a GEAR SET SUB HEADER Object (IE: "Glad
 	return struct("setSubHeaderID", id, t);
 end
 heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
-	return struct("heirloomID", id, t);
+	return struct("itemID", id, t);
 end
 inst = function(id, t)									-- Create an INSTANCE Object
 	return struct("instanceID", id, t);
