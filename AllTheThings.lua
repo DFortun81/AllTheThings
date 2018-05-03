@@ -5524,10 +5524,10 @@ local function RowOnEnter(self)
 		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
 		if not reference.creatureID then
 			if reference.itemID then
-				if reference.f == 102 then
+				--if reference.f == 102 then
 					-- This is a toy!
-					GameTooltip:SetToyByItemID(reference.itemID);
-				else
+					--GameTooltip:SetToyByItemID(reference.itemID);
+				--else
 					-- This is an non-toy item reference. :)
 					local link = reference.link;
 					if link then
@@ -5541,7 +5541,7 @@ local function RowOnEnter(self)
 							GameTooltip:AddDoubleLine(key, tostring(value));
 						end	
 					end
-				end
+				--end
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID);
 			elseif not reference.encounterID then
