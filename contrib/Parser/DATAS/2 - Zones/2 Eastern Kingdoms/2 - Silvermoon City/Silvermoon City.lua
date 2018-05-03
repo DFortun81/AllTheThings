@@ -767,7 +767,7 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							qh(9489, {	-- Cleansing the Scar
-								["g"] = {
+								["groups"] = {
 									un(34, i(23924)),	-- Robes of Silvermoon
 								},
 								["races"] = { 10 },	-- Blood Elf

@@ -118,6 +118,7 @@ _.GroupFinder =
 			i(51983),	-- Stalwart Shoulderguards*
 			i(51989),	-- Stalwart Bands
 			i(51987),	-- Stalwart Grips
+			i(51990),	-- Stalwart Treads*
 			i(51993),	-- Turbulent Cloak*
 			i(51995),	-- Turbulent Necklace*
 			i(51991),	-- Turbulent Signet*
@@ -139,7 +140,7 @@ _.GroupFinder =
 			i(112360),	-- Winterfrost Leather Leggings
 			i(112359),	-- Winterfrost Leather Waders
 			i(112349),	-- Icefall Chain Helm
-			i(112350),	-- Icefall Mail Helm
+			i(112350),	-- Icefall Mail Helm*ii
 			i(113694),	-- Icefall Chain Gloves
 			i(113693),	-- Icefall Mail Gloves
 			i(112364),	-- Icefall Mail Girdle
@@ -148,13 +149,13 @@ _.GroupFinder =
 			i(112357),	-- Icefall Mail Leggings
 			i(112347),	-- Ice-Encrusted Plate Helm
 			i(112346),	-- Ice-Encrusted Plate Headguard
-			i(113692),	-- Ice-Encrusted Gauntlets
+			i(113692),	-- Ice-Encrusted Gauntlets*
 			i(113691),	-- Ice-Encrusted Gloves
 			i(112361),	-- Ice-Encrusted Plate Belt
 			i(112362),	-- Ice-Encrusted Plate Girdle
 			i(112356),	-- Ice-Encrusted Plate Leggings
 			i(112354),	-- Ice-Encrusted Plate Legguards
-			i(113685),	-- Coldblood Longcloak
+			i(113685),	-- Coldblood Longcloak*
 			i(113683),	-- Coldwrap Cloak
 			i(113684),	-- Icecrust Cloak*
 			i(113687),	-- Dark Rune Lavalliere*
@@ -297,7 +298,7 @@ _.GroupFinder =
 		["description"] = "|cff66ccffRewarded for completing a random Cataclysm dungeon in the level 84-85 range.|r",
 	})),
 	un(2, i(90041, {	-- Spoils of Theramore
-		["g"] = {
+		["groups"] = {
 			-- h(i(90000)),	-- Everlasting Horde Firework
 			-- a(i(89999)),	-- Everlasting Alliance Firework
 			i(90017),	-- Theramore Arcanist's Hat

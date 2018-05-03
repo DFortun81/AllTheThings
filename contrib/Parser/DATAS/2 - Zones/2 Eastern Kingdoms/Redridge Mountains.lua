@@ -759,7 +759,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["lvl"] = 15,	
+			["lvl"] = 10,	
 			["achievementID"] = 780,
 			["description"] = "Redridge Mountains is a sleepy zone that is primarily Alliance. However, threats come from the Blackrock Invasion, which is revealed to be tied to the Black Dragonflight and Deathwing. The main series of quests follows John J. Keeshan, a clear tribute to Rambo.",				
 		}),

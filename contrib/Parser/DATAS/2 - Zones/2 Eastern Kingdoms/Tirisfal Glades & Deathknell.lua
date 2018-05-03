@@ -747,14 +747,14 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							qh(5650, {	-- Garments of Darkness
-								["g"] = {
+								["groups"] = {
 									un(34, i(16607)),	-- Garments of Darkness
 								},
 								["races"] =  { 5 },	-- Undead
 								["classes"] = { 5 },	-- Priest
 							}),
 							qh(1822, {	-- Heirloom Weapon
-								["g"] = {
+								["groups"] = {
 									un(34, i(7115)),	-- Heirloom Axe
 									un(34, i(7117)),	-- Heirloom Hammer
 									un(34, i(7116)),	-- Heirloom Dagger

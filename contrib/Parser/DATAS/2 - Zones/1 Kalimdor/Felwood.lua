@@ -909,7 +909,7 @@ _.Zones =
 								un(34, i(11875)),	-- Breezecloud Bracers
 							}),
 							q( 7603, {	-- Kroshius' Infernal Core
-								["g"] = {
+								["groups"] = {
 									un(34, i(18762)),	-- Shard of the Green Flame
 								},
 								["classes"] = { 9 },	-- Warlock
@@ -928,7 +928,7 @@ _.Zones =
 				}),
 			},
 			["achievementID"] = 853,
-			["lvl"] = 45,
+			["lvl"] = 40,
 			["description"] = "|cff66ccffFelwood is a corrupted forest filled with demons and satyrs. It is also home to one of the few remaining uncorrupted furbolg tribes, the Timbermaw. There are also new Worgen/Goblin settlements and quests dealing with the deforestation of the Irontree Woods.|r",
 		}),
 	}),

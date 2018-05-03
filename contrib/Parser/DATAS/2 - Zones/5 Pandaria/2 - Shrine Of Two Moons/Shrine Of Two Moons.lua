@@ -1543,7 +1543,7 @@ _.Zones =
 					})),
 				}),
 			},
-			["lvl"] = 1,
+			["lvl"] = 78,
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\achievement_doublejeopardyhorde",
 			["description"] = "|cff66ccffThe Shrine of Two Moons is an ancient mogu structure located north of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. The Golden Lotus have allowed use of the shrine by the Horde, and it serves as the main hub for the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.|r",				

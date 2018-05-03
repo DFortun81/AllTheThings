@@ -11,12 +11,12 @@ _.Instances =
 					d(1, {		-- Normal
 						n(-17, {	-- Quests
 							q(31447, {	-- An End to the Suffering
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 64562,	-- Talking Skull
 							}),
 							q(31440, {	-- The Four Tomes
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 64562,	-- Talking Skull
 							}),

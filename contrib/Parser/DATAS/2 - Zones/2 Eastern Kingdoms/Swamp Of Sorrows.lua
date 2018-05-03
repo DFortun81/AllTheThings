@@ -104,7 +104,7 @@ _.Zones =
 					})),
 --					qg(, q(27740)),	-- Baba Bogbrew
 					q(27914, {	-- Blessing of the Green Dragonflight
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius (may be outside instance?)
 					}),
@@ -160,7 +160,7 @@ _.Zones =
 					qg(, qh(27910)),	-- Last Regrets
 --]]
 					q(27704, {	-- Legends of the Sunken Temple
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
@@ -195,7 +195,7 @@ _.Zones =
 					qg(, qa(11882)),	-- Playing with Fire
 --]]
 					q(27694, {	-- Pool of Tears
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
@@ -211,17 +211,17 @@ _.Zones =
 					qg(, q(27818)),	-- Slithering Signs
 --]]
 					q(27705, {	-- Step One: The Priestess
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
 					q(27773, {	-- Step Three: Prophet
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
 					q(27768, {	-- Step Two: The Bloodletter
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
@@ -237,13 +237,13 @@ _.Zones =
 						i(64619),
 					})),
 					q(27869, {	-- The Dragon and the Temple
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46172,	-- Baba Bogbrew
 					}),
 --					qg(, qa(27918)),	-- The Harborage
 					q(27915, {	-- The Heart of the Temple
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
@@ -267,12 +267,12 @@ _.Zones =
 						i(157013), -- Ogre Mage Club
 					})),
 					qa(27870, {	-- To Marshtide Watch
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
 					qh(27871, {	-- To Stonard
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
@@ -856,7 +856,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["lvl"] = 51,	
+			["lvl"] = 40,	
 			["achievementID"] = 782,
 			["description"] = "|cff66ccffThe Swamp of Sorrows is a marshland in southern Eastern Kingdoms filled with green dragons serving Ysera. When the Dark Portal imploded during the Second War, The Black Morass was split in half--the northern part became the Swamp, while the southern half became the barren Blasted Lands. The Horde city of Stonard is under attack, and the Steamwheedle Cartel has taken advantage of the location to set up a seaside resort.|r",				
 		}),

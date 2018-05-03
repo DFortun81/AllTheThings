@@ -1292,7 +1292,7 @@ _.Zones =
 					["u"] = 12,
 				}),		
 			},
-			["lvl"] = 49,
+			["lvl"] = 40,
 			["achievementID"] = 775,
 			["description"] = "|cff66ccffBurning Steppes is home to a large orc settlement, Twilight Hammer cultists, and the black dragonflight. Players help popular NPCs Eitrigg and John J. Keeshan stop the attacks of the hostile bloodthirsty orcs.|r",
 		}),

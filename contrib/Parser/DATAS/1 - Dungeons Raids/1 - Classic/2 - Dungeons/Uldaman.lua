@@ -10,37 +10,37 @@ _.Instances =
 				["groups"] = {
 					n(-17, {	-- Quests
 						qa(27677, {	-- Archaedas, The Ancient Stone Watcher
-							["g"] = {
+							["groups"] = {
 							},
 							["sourceQuests"] = { 27672 },	-- The Chamber of Khaz'mul
 						}),
 						qh(27680, {	-- Archaedas, The Ancient Stone Watcher
-							["g"] = {
+							["groups"] = {
 							},
 							["sourceQuests"] = { 27679 },	-- The Chamber of Khaz'mul
 						}),
 						qa(27676, {	-- Behind Closed Doors
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 46233,	-- Olga Runesworn
 						}),
 						qh(27681, {	-- Behind Closed Doors
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 46235,	-- Lidia Sunglow
 						}),
 						qa(27673, {	-- It's What's Inside That Counts
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 46247,	-- Kand Sandseeker
 						}),
 						qa(27672, {	-- The Chamber of Khaz'mul
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 46234,	-- Lead Prospector Durdin
 						}),
 						qh(27679, {	-- The Chamber of Khaz'mul
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 46236,	-- High Examiner Tae'thelan
 						}),
@@ -52,7 +52,7 @@ _.Instances =
 							}),
 						}),
 						qh(27682, {	-- We Require More Minerals
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 46241,	-- Aoren Sunglow
 						}),

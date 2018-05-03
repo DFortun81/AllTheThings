@@ -1219,7 +1219,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qp129(qg(43239, qh(26556))),	-- No Dumping Allowed
 --]]
 					qdg(qg(3412, qh(2950, {	-- Nogg's Ring Redo
-						["g"] = {
+						["groups"] = {
 						},
 						["sourceQuests"] = { 2949 },	-- Return of the Ring
 					}))),

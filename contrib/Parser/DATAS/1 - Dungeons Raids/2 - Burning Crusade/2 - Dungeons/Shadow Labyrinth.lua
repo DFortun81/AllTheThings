@@ -21,7 +21,7 @@ _.Instances =
 								})),	
 								qg(54890, q(29643)),	-- The Codex of Blood
 								q( 29644, {	-- Into the Heart of the Labyrinth
-									["g"] = {
+									["groups"] = {
 										i(28179),	-- Shattrath Jumpers
 										i(28178),	-- Spymistress' Boots
 										i(28177),	-- Auchenai Boots

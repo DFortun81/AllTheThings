@@ -107,7 +107,7 @@ _.Zones =
 						i(63217),
 					})),
 					qdg(q(27470, {	-- A Potential Ally
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 14625,	-- Overseer Oilfist
 					})),
@@ -651,13 +651,13 @@ _.Zones =
 								un(34, i(10744)),	-- Axe of the Ebon Blade
 							}),
 							q( 3379, {	-- Shadoweaver
-								["g"] = {
+								["groups"] = {
 									un(34, i(10461)),	-- Shadowy Bracers
 								},
 								["requiredSkill"] = 197,	-- Tailoring
 							}),
 							q( 3385, {	-- The Undermarket
-								["g"] = {
+								["groups"] = {
 									un(34, i(10462)),	-- Shadowy Belt
 								},
 								["requiredSkill"] = 197,	-- Tailoring
@@ -671,7 +671,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["lvl"] = 47,	
+			["lvl"] = 40,	
 			["achievementID"] = 774,
 			["description"] = "|cff66ccffSearing Gorge is a fiery and rocky zone home to a friendly subset of the Dark Iron Clan--the Thorium Brotherhood. The inhospitable environment is due to the summoning of Ragnaros--currently, large mining operations take place in the Cauldron and Slag Pit. Players also get to interact with quirky NPCs like Lunk the non-violent ogre and Evonice Sootsmoker who believes in murder through sleep deprivation.|r",				
 		}),

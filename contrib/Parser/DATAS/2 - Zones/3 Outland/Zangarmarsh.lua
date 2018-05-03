@@ -100,14 +100,14 @@ _.Zones =
 					p(387), 	-- Snake
 					p(515), 	-- Sporeling Sprout
 					q(31923, {	-- Ras'an
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 66551,	-- Ras'an
 					}),
 				}),
 				n(-17, {	-- Quests
 					q(  9788, {	-- A Damp, Dark Place
-						["g"] = {
+						["groups"] = {
 							i(25516),	-- Ikeyen's Boots
 							i(25515),	-- Mud Encrusted Boots
 							i(25514),	-- Ikeyen's Pauldrons
@@ -119,7 +119,7 @@ _.Zones =
 					
 					
 					qh( 9899, {	-- A Job Undone (awarded "Swamprat Post" criteria)
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18016,	-- Magasha
 						["sourceQuests"] = { 9773 },	-- No More Mushrooms!
@@ -127,14 +127,14 @@ _.Zones =
 					
 					
 					qh( 9845, {	-- Angling to Beat the Competition
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18018,	-- Zurjaya
 					}),
 					
 					
 					q(  9702, {	-- A Question of Gluttony
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17831,	-- Watcher Leesa'oh
 						["sourceQuests"] = { 9701 },	-- Observing the Sporelings
@@ -142,7 +142,7 @@ _.Zones =
 					
 					
 					qh( 9847, {	-- A Spirit Ally?
-						["g"] = {
+						["groups"] = {
 							i(25621),
 							i(31770),
 						},
@@ -152,7 +152,7 @@ _.Zones =
 					
 					
 					q(  9718, {	-- As the Crow Flies
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuests"] = { 9716 },	-- Disturbance at Umbrafen Lake
@@ -160,7 +160,7 @@ _.Zones =
 
 
 					q(  9728, {	-- A Warm Welcome
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17858,	-- Warden Hamoot
 						["breadcrumbQuestID"] = { 9778 },	-- Warden Hamoot
@@ -168,7 +168,7 @@ _.Zones =
 
 
 					q(  9720, {	-- Balance Must Be Preserved
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuests"] = { 9718 },	-- As the Crow Flies
@@ -176,21 +176,21 @@ _.Zones =
 					
 					
 					q(  9785, {	-- Blessings of the Ancients
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18070,	-- Windcaller Blackhoof
 					}),
 
 
 					qh( 9814, {	-- Burstcap Mushrooms, Mon!
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18014,	-- Witch Doctor Tor'gash
 					}),
 					
 					
 					q(  9716, {	-- Disturbance at Umbrafen Lake
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["breadcrumbQuestID"] = { 39181, 39180 },	-- Hero's Call: Zangarmarsh! & Warchief's Command: Zangarmarsh!
@@ -199,7 +199,7 @@ _.Zones =
 					
 					i( 24330, {	-- Drain Schematics
 						q(9731,  { 	-- Drain Schematics
-							["g"] = {
+							["groups"] = {
 								i(27730),	-- Watcher's Cloak of Vigilance
 							},
 							["qg"] = 18340,	-- Steam Pump Overseer
@@ -216,7 +216,7 @@ _.Zones =
 					
 					
 					q(  9708, {	-- Familiar Fungi
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17831,	-- Watcher Leesa'oh
 						["sourceQuests"] = { 9702 },	-- A Question of Gluttony
@@ -224,7 +224,7 @@ _.Zones =
 					
 					
 					qh( 9816, {	-- Have You Ever Seen One of These? (awarded "Zabra'jin" criteria)
-						["g"] = {
+						["groups"] = {
 							i(25611),	-- The Witch Doctor's Wraps
 							i(25612),	-- Daggerfen Mail
 							i(25610),	-- Fen Strider's Footguards
@@ -235,7 +235,7 @@ _.Zones =
 					
 					
 					qh( 9822, {	-- Impending Attack
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18013,	-- Shadow Hunter Denjai
 						["sourceQuests"] = { 9820 },	-- WANTED: Boss Grog'ak
@@ -243,7 +243,7 @@ _.Zones =
 					
 					
 					qh( 9772, {	-- Jyoba's Report
-						["g"] = {
+						["groups"] = {
 							i(25600),	-- Bog Walker's Bands
 							i(25601),	-- Murk-Darkened Bracers
 							i(25602),	-- Bog Walker's Belt
@@ -271,14 +271,14 @@ _.Zones =
 					
 					
 					qh( 9770, {	-- Menacing Marshfangs
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18012,	-- Reavij
 					}),
 					
 					
 					qh(10118, {	-- Message to the Daggerfen (awarded "The Defense of Zabra'jin" criteria and overall "Mysteries of the Marsh" zone achievement)
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18013,	-- Shadow Hunter Denjai
 						["sourceQuests"] = { 9822 },	-- Impending Attack
@@ -286,35 +286,35 @@ _.Zones =
 					
 					
 					q(  9743, {	-- Natural Enemies
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17923,	-- Fahssn
 					}),
 					
 					
 					qh(10105, {	-- News for Rakoria
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18013,	-- Shadow Hunter Denjai
 					}),
 					
 					
 					qh( 9796, {	-- News from Zangarmarsh
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18011,	-- Zurai
 					}),
 					
 					
 					qh( 9773, {	-- No More Mushrooms!
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18016,	-- Magasha
 					}),
 					
 					
 					qh( 9898, {	-- Nothin' Says Lovin' Like a Big Stinger
-						["g"] = {
+						["groups"] = {
 							i(31786),	-- Blacksting Shoulders
 							i(31787),	-- Stalwart Girdle
 							i(31788),	-- Blacksting Gloves
@@ -326,7 +326,7 @@ _.Zones =
 					
 					
 					q(  9701, {	-- Observing the Sporelings
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17831,	-- Watcher Leesa'oh
 						["breadcrumbQuestID"] = { 9697 },	-- Watcher Leesa'oh
@@ -334,14 +334,14 @@ _.Zones =
 					
 					
 					q(  9802, {	-- Plants of Zangarmarsh
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17909,	-- Lauranna Thar'well
 					}),
 
 
 					qh( 9904, {	-- Pursuing Terrorclaw
-						["g"] = {
+						["groups"] = {
 							i(25924),	-- Swamprunner's Boots
 							i(25923),	-- Fierce Mantle
 							i(25922),	-- Fearless Girdle
@@ -353,21 +353,21 @@ _.Zones =
 					
 					
 					qh( 9797, {	-- Reinforcements for Garadar
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18091,	-- Messenger Gazgrigg
 					}),
 					
 					
 					qh( 9775, {	-- Report to Shadow Hunter Denjai
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18011,	-- Zurai
 					}),
 					
 					
 					q(  9894, {	-- Safeguarding the Watchers (awarded "Saving the Sporeloks" criteria)
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18070,	-- Windcaller Blackhoof
 						["sourceQuests"] = { 9747 },	-- The Umbrafen Tribe
@@ -375,7 +375,7 @@ _.Zones =
 					
 					
 					q( 10096, {	-- Saving the Sporeloks
-						["g"] = {
+						["groups"] = {
 							i(27717),	-- Expedition Forager Leggings
 							i(31657),	-- Chemise of Rebirth
 							i(27715),	-- Circle's Stalwart Helmet
@@ -387,7 +387,7 @@ _.Zones =
 					
 					
 					qh( 9771, {	-- Searching for Scout Jyoba
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18011,	-- Zurai
 						["sourceQuests"] = { 9774 },	-- Thick Hydra Scales
@@ -395,14 +395,14 @@ _.Zones =
 					
 					
 					qh( 9846, {	-- Spirits of the Feralfen
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18017,	-- Seer Janidi
 					}),
 					
 					
 					q(  9709, {	-- Stealing Back the Mushrooms (awarded "Don't Eat THOSE Mushrooms!" criteria)
-						["g"] = {
+						["groups"] = {
 							i(25525),	-- Zangar Epaulets
 							i(25534),	-- Marsh Survivalist's Belt
 							i(25530),	-- Helm of Natural Purity
@@ -414,14 +414,14 @@ _.Zones =
 					
 					
 					qh( 9841, {	-- Stinging the Stingers
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18015,	-- Gambarinka
 					}),
 					
 					
 					qh( 9903, {	-- The Biggest of Them All
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18018,	-- Zurjaya
 						["sourceQuests"] = { 9845 },	-- Angling to Beat the Competition
@@ -430,7 +430,7 @@ _.Zones =
 					
 					i( 25459, {	-- "Count" Ungula's Mandible
 						q(9911, {	-- The Count of the Marshes
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 18285,	-- "Count" Ungula
 						}),
@@ -438,28 +438,28 @@ _.Zones =
 					
 					
 					q(  9895, {	-- The Dying Balance
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17834,	-- Lethyn Moonfire
 					}),
 					
 					
 					qh( 9795, {	-- The Ogre Threat
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18013,	-- Shadow Hunter Denjai
 					}),
 					
 					
 					qh( 9769, {	-- There's No Explanation for Fashion
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18016,	-- Magasha
 					}),
 					
 					
 					qh( 9842, {	-- The Sharpest Blades
-						["g"] = {
+						["groups"] = {
 							i( 27756),	-- Marshfang Blade Axe
 							i( 27753),	-- Ensorcelled Marshfang Blade
 							i( 27754),	-- Keen Marshfang Slicer
@@ -471,21 +471,21 @@ _.Zones =
 					
 					
 					q(  9739, {	-- The Sporelings' Plight
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17923,	-- Fahssn
 					}),
 					
 					
 					q(  9747, {	-- The Umbrafen Tribe
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17956,	-- Ikeyen
 					}),
 				
 				
 					qa( 9636, {	-- The Zapthrottle Mote Extractor!
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17634,	-- K. Lee Smallfry
 						["description"] = "Invisible until 305 Engineering.",
@@ -494,7 +494,7 @@ _.Zones =
 
 					
 					qh( 9635, {	-- The Zapthrottle Mote Extractor!
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17637,	-- Mack Diver
 						["description"] = "Invisible until 305 Engineering.",
@@ -503,14 +503,14 @@ _.Zones =
 				
 				
 					qh( 9774, {	-- Thick Hydra Scales
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18011,	-- Zurai
 					}),
 				
 				
 					qh( 9823, {	-- Us or Them
-						["g"] = {
+						["groups"] = {
 							i(25617),	-- Captain Krosh's Crash Helmet
 						},
 						["qg"] = 18013,	-- Shadow Hunter Denjai
@@ -525,7 +525,7 @@ _.Zones =
 				
 				
 					q(  9778, {	-- Warden Hamoot
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["isBreadcrumb"] = true,	-- for "A Warm Welcome"
@@ -533,7 +533,7 @@ _.Zones =
 				
 				
 					q(  9724, {	-- Warning the Cenarion Circle
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuests"] = { 9731 },	-- Drain Schematics
@@ -541,7 +541,7 @@ _.Zones =
 				
 				
 					q(  9697, {	-- Watcher Leesa'oh
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17834,	-- Lethyn Moonfire
 						["isBreadcrumb"] = true,	-- for "Observing the Sporelings"
@@ -549,7 +549,7 @@ _.Zones =
 
 					
 					q(  9957, {	-- What's Wrong at Cenarion Thicket?
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17834,	-- Lethyn Moonfire
 						["isBreadcrumb"] = true,	-- for "Strange Energy" in Terokkar Forest, mutually exclusive with Warchief's Command/Hero's Call
@@ -558,12 +558,12 @@ _.Zones =
 					
 					i( 24484, {	-- Withered Basidium	
 						qa(9827, {	-- Withered Basidium
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 18124,	-- Withered Giant
 						}),
 						qh(9828, {	-- Withered Basidium
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 18124,	-- Withered Giant
 						}),
@@ -571,7 +571,7 @@ _.Zones =
 					
 					
 --[[
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = ,	-- 
 						["sourceQuests"] = {  },	-- 
@@ -647,12 +647,12 @@ _.Zones =
 					
 -- DUNGEON QUESTS
 					qdg(q(29566, {	-- Checking Up
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17841,	-- Ysiel Windsinger
 					})),
 					qdg(q(29616, {	-- Storming the Steamvault
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 17841,	-- Ysiel Windsinger
 					})),
@@ -660,7 +660,7 @@ _.Zones =
 -- CENARION EXPEDITION QUESTS
 					faction(942, {	-- Cenarion Expedition
 						qr(q(9784, {	-- Identify Plant Parts
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 17909,	-- Lauranna Thar'well
 							["description"] = "Only available until you are Honored with Cenarion Expedition.",
@@ -669,7 +669,7 @@ _.Zones =
 						i(24402, {	-- Package of Identified Plants
 							i(24407, {	-- Uncatalogued Species
 								qr(q(9875, {	-- Uncatalogued Species
-									["g"] = {
+									["groups"] = {
 									},
 									["description"] = "Only available until you are Honored with Cenarion Expedition.",
 									["sourceQuests"] = { 9784 },	-- Identify Plant Parts
@@ -680,44 +680,44 @@ _.Zones =
 -- SPOREGGAR QUESTS
 					faction(970, {	-- Sporeggar
 						q(  9806, {	-- Fertile Spores
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 17925,	-- Gshaff
 							["description"] = "Invisible until you reach Neutral with Sporeggar.",
 						}),
 						q(  9808, {	-- Glowcap Mushrooms
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 17924,	-- Msshi'fn
 							["description"] = "Available from Neutral to Friendly with Sporeggar.",
 						}),
 --						q(  9809),	-- More Glowcaps (removed?)
 						q(  9742, {	-- More Spore Sacs
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 17923,	-- Fahssn
 							["description"] = "Unavailable after you reach Friendly with Sporeggar.",
 						}),
 						q(  9744, {	-- More Tendrils!
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 17923,	-- Fahssn
 							["description"] = "Unavailable after you reach Friendly with Sporeggar.",
 						}),
 						qr(q(9807, {	-- More Fertile Spores
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 17925,	-- Gshaff
 							["sourceQuests"] = { 9806 },	-- Fertile Spores
 						})),
 						q(  9919, {	-- Sporeggar (awarded "A Trip With the Sporelings" criteria)
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 17923,	-- Fahssn
 							["description"] = "Invisible until you reach Neutral with Sporeggar.",
 						}),
 						q(  9726, {	-- Now That We're Friends...
-							["g"] = {
+							["groups"] = {
 								i(27749),	-- Staff of the Wild
 								i(27751),	-- Survivalist's Pike
 								i(27750),	-- Hammer of the Sporelings
@@ -727,13 +727,13 @@ _.Zones =
 							["description"] = "Invisible until you reach Friendly with Sporeggar.",	
 						}),
 						qr(q(9727, {	-- Now That We're Still Friends...
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 17856,	-- Gzhun'tt
 							["sourceQuests"] = { 9726 },	-- Now That We're Friends...
 						})),
 						q(  9729, {	-- Fhwoor Smash!
-							["g"] = {
+							["groups"] = {
 								i(25537),	-- Hewing Axe of the Marsh
 								i(25538),	-- Sporeling Claw
 								i(25536),	-- Sporeggar Smasher

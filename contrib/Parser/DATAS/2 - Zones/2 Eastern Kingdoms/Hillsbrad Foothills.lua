@@ -1636,7 +1636,7 @@ _.Zones =
 								un(34, i(2231)),	-- Inferno Robe
 							}),
 							q(1792, {	-- Whirlwind Weapon
-								["g"] = {
+								["groups"] = {
 									un(34, i(6975)),	-- Whirlwind Axe
 									un(34, i(6977)),	-- Whirlwind Sword
 									un(34, i(6976)),	-- Whirlwind Warhammer
@@ -1674,7 +1674,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["lvl"] = 20,	
+			["lvl"] = 15,	
 			["achievementID"] = 772,
 			["description"] = "|cff66ccffHillsbrad Foothills was radically changed in Cataclysm. A former grassy zone with World PvP between the Alliance town of Southshore and the Horde town of Tarren Mill, the Forsaken have taken over the zone after the Shattering. Southshore is destroyed due to plague experiments, and toxic waste covers much of the zone. This zone has also been merged with Alterac Mountains, a snowy plateau populated by ogres and surrounded by the Syndicate.|r",				
 		}),

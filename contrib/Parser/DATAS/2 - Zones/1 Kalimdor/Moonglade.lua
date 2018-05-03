@@ -250,7 +250,7 @@ _.Zones =
 				}),	--]]
 			},
 			["achievementID"] = 855,
-			["lvl"] = 15,
+			["lvl"] = 10,
 			["description"] = "|cff66ccffMoonglade is both home of the Cenarion Circle and a haven for all druids. It is an uncorrupted neutral zone, protected by mountains and shrouded in green light, without any hostile mobs or gathering resources. The main village of Nighthaven is maintained by the Cenarion Circle and features druid trainers and a rare robe vendor, Geenia Sunshadow, who sells items like Formal Dangui.|r",		
 		}),
 	}),

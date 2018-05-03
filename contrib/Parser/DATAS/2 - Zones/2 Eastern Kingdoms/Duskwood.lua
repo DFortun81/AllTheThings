@@ -916,7 +916,7 @@ _.Zones =
 						}),
 						n(  0, {	-- Zone Drop (Legacy)
 							un(7, i(920, {	-- Wicked Spiked Mace
-								["g"] = {
+								["groups"] = {
 								},
 								["description"] = "This dropped off of Defias mobs in Duskwood.",
 							})),

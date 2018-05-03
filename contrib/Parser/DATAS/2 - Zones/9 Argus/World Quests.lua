@@ -51,6 +51,7 @@ _.Zones =
 						i(150963),	-- Garothi Sabatons
 					}),
 				},
+				["lvl"] = 110,
 			}),
 		},
 	}),

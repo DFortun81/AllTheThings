@@ -125,7 +125,7 @@ _.Instances =
 						n(-40, {	-- Legacy
 							["groups"] = {
 								n(-85, {	-- Graveyard
-									["g"] = {
+									["groups"] = {
 										n(-17, {	-- Quests (Legacy)
 											qa(26972, { -- The Dark Side of the Light
 												un(34, i(65964)),	-- Gloves of the "Pure"
@@ -179,7 +179,7 @@ _.Instances =
 									["icon"] = "Interface\\Icons\\Achievement_BG_Xkills_AVgraveyard",									
 								}),
 								n(-86, {	-- Library
-									["g"] = {
+									["groups"] = {
 										n(-17, {	-- Quests (Legacy)
 											qh(26959, { -- Stripping Their Defenses
 												un(34, i(66015)), 	-- Houndmaster's Belt

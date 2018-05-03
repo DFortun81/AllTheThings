@@ -466,6 +466,7 @@ _.Zones =
 						i(140017), -- Boots of the Felsword
 					}),
 				},
+				["lvl"] = 110,
 			}),
 		},
 	}),

@@ -650,7 +650,7 @@ _.Zones =
 					qg(6031, qa( 1618)),	-- Gearing Redridge
 --]]
 					qdg(qg(6826, qa( 2948, {	-- Gnome Improvement
-						["g"] = {
+						["groups"] = {
 						},
 						["sourceQuests"] = { 2947 },	-- Return of the Ring
 					}))),
@@ -1469,7 +1469,7 @@ _.Zones =
 								un(34, i(4984)),	-- Skull of Impending Doom
 							}),
 							qa(1682, {	-- Grey Iron Weapons
-								["g"] = {
+								["groups"] = {
 									un(34, i(6978)),	-- Umbral Axe
 									un(34, i(6982)),	-- Umbral Mace
 									un(34, i(6981)),	-- Umbral Dagger
@@ -1478,7 +1478,7 @@ _.Zones =
 								["classes"] = { 1 },	-- Warrior
 							}),
 							qa(1880, {	-- Mage-tastic Gizmonitor
-								["g"] = {
+								["groups"] = {
 									un(34, i(7507)),	-- Arcane Orb
 									un(34, i(9514)),	-- Arcane Staff
 								},

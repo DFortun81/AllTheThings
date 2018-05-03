@@ -106,7 +106,7 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					qh(27891, {	-- Amakkar, Jack of All Trades
-						["g"] = {
+						["groups"] = {
 						},
 						["qgs"] = { 47011, 47021 },	-- Amakkar (same QG, different IDs)
 						["sourceQuests"] = { 27890 },	-- The Bad Dogs
@@ -114,14 +114,14 @@ _.Zones =
 
 					
 					qh(27887, {	-- Ancient Protectors
-						["g"] = {
+						["groups"] = {
 						},
 						["sourceQuests"] = { 27885 },	-- The Warden's Game
 					}),
 
 					
 					q( 27764, {	-- A Strange Request
-						["g"] = {
+						["groups"] = {
 							i(63159),	-- Parcel Bearer's Breastplate
 							i(63158),	-- Boots of Delivery
 							i(63157),	-- Lethlor Armbands
@@ -134,7 +134,7 @@ _.Zones =
 					
 					
 					qh(27881, {	-- Bloodwatcher Point
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46664,	-- Dr. Hieronymus Blam
 						["sourceQuests"] = { 27789 },	-- Troggish Troubles
@@ -142,14 +142,14 @@ _.Zones =
 					
 					
 					q( 27930, {	-- Devastation
-						["g"] = {
+						["groups"] = {
 						},
 						["sourceQuests"] = { 27898 },	-- Rheastrasza's Gift
 					}),
 					
 					
 					q( 27927, {	-- Down to the Scar
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46660,	-- Aidan Summerwind
 						["isBreadcrumb"] = true,	-- for "The Day that Deathwing Came"
@@ -157,7 +157,7 @@ _.Zones =
 					
 					
 					q( 27774, {	-- Easily Swayed
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46652,	-- Dolph Blastus
 						["breadcrumbQuestID"] = { 27763 },	-- To Fuselight Proper
@@ -165,7 +165,7 @@ _.Zones =
 
 					
 					q( 27765, {	-- First Sample: Wild Eggs
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46654,	-- Rhea
 						["sourceQuests"] = { 27764 },	-- A Strange Request
@@ -173,7 +173,7 @@ _.Zones =
 					
 					
 					qh(27878, {	-- Forcible Acquisition
-						["g"] = {
+						["groups"] = {
 							i(63173),	-- Ironhew Cloak
 							i(63172),	-- Angor Pauldrons
 							i(63171),	-- Dustwind Vest
@@ -185,7 +185,7 @@ _.Zones =
 					
 					
 					qh(27893, {	-- Gargal, the Behemoth
-						["g"] = {
+						["groups"] = {
 						},
 						["qgs"] = { 47013, 47022 },	-- Gargal (same QG, different IDs)
 						["sourceQuests"] = { 27890 },	-- The Bad Dogs
@@ -193,7 +193,7 @@ _.Zones =
 					
 					
 					qh(27880, {	-- Half-Ton Holdouts
-						["g"] = {
+						["groups"] = {
 							i(63204),	-- Bow of Kargath
 							i(63203),	-- Half-Ton Pauldrons
 							i(63202),	-- Dustbelcher Boots
@@ -205,7 +205,7 @@ _.Zones =
 					
 					
 					q( 27776, {	-- It's Goat Time, Baby
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46653,	-- Garyanne Fleezlebop
 						["sourceQuests"] = { 27775 },	-- When the Going Gets Tough, Cheat
@@ -213,7 +213,7 @@ _.Zones =
 					
 					
 					qh(27882, {	-- It's Not About History, It's About Power
-						["g"] = {
+						["groups"] = {
 							i(63190),	-- Upstart's Breastplate
 							i(63189),	-- Counterfeit Chainmail
 							i(63188),	-- Excavation Bracers
@@ -225,7 +225,7 @@ _.Zones =
 					
 					
 					qh(27892, {	-- Jurrix the Striker (secondary QG ID 47024)
-						["g"] = {
+						["groups"] = {
 						},
 						["qgs"] = { 47018, 47024 },	-- Jurrix Whitemane
 						["sourceQuests"] = { 27890 },	-- The Bad Dogs
@@ -233,7 +233,7 @@ _.Zones =
 					
 					
 					q( 27770, {	-- Lifting the Veil
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46654,	-- Rhea
 						["sourceQuests"] = { 27765, 27766 },	-- First Sample: Wild Eggs & Second Sample: Whelps
@@ -241,7 +241,7 @@ _.Zones =
 					
 					
 					qh(27889, {	-- New Kargath
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46664,	-- Dr. Hieronymus Blam
 						["sourceQuests"] = { 27888 },	-- Return to Blam
@@ -256,7 +256,7 @@ _.Zones =
 							i(157008),	-- Blam-Hatchet
 						}),
 						qh(27888, {	-- Return to Blam (awarded "The Titans' Knowledge" criteria)
-							["g"] = {
+							["groups"] = {
 								i(63179),	-- Well Cushioned Boots
 								i(63178),	-- Hieronymus' Belt
 								i(63177),	-- Watcher's Spear
@@ -267,7 +267,7 @@ _.Zones =
 					
 					
 					q( 27769, {	-- Rhea Revealed (awarded "Rhea" criteria)
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46654,	-- Rhea
 						["sourceQuests"] = { 27771 },	-- Third Sample: Implanted Eggs
@@ -275,7 +275,7 @@ _.Zones =
 					
 					
 					qh(27898, {	-- Rheastrasza's Gift
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46654,	-- Rhea
 						["sourceQuests"] = { 27897 },	-- The Hidden Clutch
@@ -283,7 +283,7 @@ _.Zones =
 					
 					
 					q( 27766, {	-- Second Sample: Whelps
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46654,	-- Rhea
 						["sourceQuests"] = { 27764 },	-- A Strange Request
@@ -291,14 +291,14 @@ _.Zones =
 					
 					
 					qh(27879, {	-- Survival of the Fattest
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46660,	-- Aidan Summerwind
 					}),
 					
 					
 					qh(27890, {	-- The Bad Dogs
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46654,	-- Rhea
 						["sourceQuests"] = { 27889 },	-- New Kargath
@@ -306,7 +306,7 @@ _.Zones =
 					
 					
 					q( 27713, {	-- The Day that Deathwing Came
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 2785,	-- Theldurin the Lost
 						["breadcrumbQuestID"] = { 27927 },	-- Down to the Scar
@@ -314,7 +314,7 @@ _.Zones =
 					
 					
 					q( 27714, {	-- The Day that Deathwing Came: The Real Story
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 2920,	-- Lucien Tosselwrench
 						["sourceQuests"] = { 27713 },	-- The Day that Deathwing Came
@@ -322,7 +322,7 @@ _.Zones =
 					
 					
 					q( 27715, {	-- The Day that Deathwing Came: What Really Happened (awarded "The Day that Deathwing Came" criteria + overall "Badlands Quests" achievement)
-						["g"] = {
+						["groups"] = {
 							i( 63193),	-- Theldurin's Fist
 							i( 63191),	-- Martek's Knife
 							i(156961),	-- Martek's Stick of Truthiness
@@ -334,7 +334,7 @@ _.Zones =
 					
 					
 					q( 27859, {	-- The Egg Lives On (awarded "The Fate of a Dragonflight" criteria)
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46664,	-- Dr. Hieronymus Blam
 						["sourceQuests"] = { 27930 },	-- Devastation
@@ -342,21 +342,21 @@ _.Zones =
 					
 					
 					qh(27897, {	-- The Hidden Clutch
-						["g"] = {
+						["groups"] = {
 						},
 						["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
 					}),
 					
 					
 					qh(27895, {	-- Their Hunt Continues
-						["g"] = {
+						["groups"] = {
 						},
 						["sourceQuests"] = { 27894 },	-- The Wrath of a Dragonflight
 					}),
 					
 					
 					qh(27877, {	-- The Morons' League
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46759,	-- Lidia Sunglow
 					}),
@@ -365,7 +365,7 @@ _.Zones =
 					o(206336, {	-- Marble Slab
 						qa(27709),	-- The Sentinel's Game
 						qh(27886, {	-- The Sentinel's Game
-							["g"] = {
+							["groups"] = {
 							},
 							["sourceQuests"] = { 27884 },	-- The Sentinel's Pawn
 						}),
@@ -373,7 +373,7 @@ _.Zones =
 					
 					
 					qh(27884, {	-- The Sentinel's Pawn
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
 						["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
@@ -381,21 +381,21 @@ _.Zones =
 					
 					
 					qh(27896, {	-- The Sorrow and the Fury
-						["g"] = {
+						["groups"] = {
 						},
 						["sourceQuests"] = { 27895 },	-- Their Hunt Continues
 					}),
 					
 					
 					qh(27913, {	-- The Titans' Trove
-						["g"] = {
+						["groups"] = {
 						},
 						["sourceQuests"] = { 27887 },	-- Ancient Protectors
 					}),
 					
 					
 					q( 27772, {	-- The Venerable Doctor Blam
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46655,	-- Rheastrasza
 						["sourceQuests"] = { 27769 },	-- Rhea Revealed
@@ -405,7 +405,7 @@ _.Zones =
 					o(206335, {	-- Stone Slab
 						qa(27693),	-- The Warden's Game
 						qh(27885, {	-- The Warden's Game
-							["g"] = {
+							["groups"] = {
 							},
 							["sourceQuests"] = { 27883 },	-- The Warden's Pawn
 						}),
@@ -413,7 +413,7 @@ _.Zones =
 					
 					
 					qh(27883, {	-- The Warden's Pawn
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
 						["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
@@ -421,7 +421,7 @@ _.Zones =
 					
 					
 					qh(27894, {	-- The Wrath of a Dragonflight
-						["g"] = {
+						["groups"] = {
 						},
 						["qgs"] = { 47021, 47022, 47024 },	-- Amakkar, Gargal, & Jurrix Whitemane
 						["sourceQuests"] = {  },	-- 
@@ -429,7 +429,7 @@ _.Zones =
 					
 					
 					q( 27771, {	-- Third Sample: Implanted Eggs
-						["g"] = {
+						["groups"] = {
 							i(63163),	-- Strong Arm Mace
 							i(63162),	-- Coercive Pauldrons
 							i(63161),	-- Vest of Restraint
@@ -441,7 +441,7 @@ _.Zones =
 					
 					
 					q( 27763, {	-- To Fuselight Proper
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46650,	-- Eddie Flofizzle
 						["isBreadcrumb"] = true,	-- for "Easily Swayed"
@@ -450,7 +450,7 @@ _.Zones =
 					
 					
 					q( 28512, {	-- To the Aid of the Thorium Brotherhood
-						["g"] = {
+						["groups"] = {
 						},
 						["qgs"] = { 46930, 46660 },	-- Victoria Dolen (A) & Aidan Summerwind (H)
 						["isBreadcrumb"] = true,
@@ -458,7 +458,7 @@ _.Zones =
 					
 					
 					q( 27789, {	-- Troggish Troubles
-						["g"] = {
+						["groups"] = {
 							i(63182),	-- Anti-Trogg Shield
 							i(63181),	-- Shrug of Disappointment
 							i(63180),	-- Blam Blam Gun
@@ -469,7 +469,7 @@ _.Zones =
 					
 					
 					q( 27775, {	-- When the Going Gets Tough, Cheat
-						["g"] = {
+						["groups"] = {
 							i(63154),	-- Fuselight Chainmail
 							i(63153),	-- Goat Hide Boots
 							i(63152),	-- Goat Skin Mask
@@ -480,7 +480,7 @@ _.Zones =
 					
 					
 --[[
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = ,	-- 
 						["sourceQuests"] = {  },	-- 
@@ -1010,7 +1010,7 @@ _.Zones =
 					["u"] = 12,
 				}),
 			},
-			["lvl"] = 44,	
+			["lvl"] = 40,	
 			["achievementID"] = 765,
 			["description"] = "|cff66ccffBadlands is a scorched zone and the home of the Earthen, Dark Iron Dwarves, and Goblins in Fuselight-by-the-Sea. Formerly a short zone before Cataclysm, it now has two notable chains: The Day Deathwing Died, and the sad tale of the dragon Rhea.|r",				
 		}),

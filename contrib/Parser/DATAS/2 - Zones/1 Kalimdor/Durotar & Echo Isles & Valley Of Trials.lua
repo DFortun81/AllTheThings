@@ -636,7 +636,7 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							qh(5648, {	-- Garments of Spirituality
-								["g"] = {
+								["groups"] = {
 									un(34, i(16606)),	-- Juju Hex Robes
 								},
 								["races"] = { 8 },	-- Troll

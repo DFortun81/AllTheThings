@@ -66,12 +66,12 @@ _.Instances =
 							i(24381),	-- Coilfang Needler
 							i(27551),	-- Skeletal Necklace of Battlerage
 							i(24379, {	-- Bogstrok Scale Cloak
-								["g"] = {
+								["groups"] = {
 								},
 								["description"] = "This item currently has no class/spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class/spec until Blizzard corrects this.",
 							}),
 							i(27550, {	-- Ironscale War Cloak
-								["g"] = {
+								["groups"] = {
 								},
 								["description"] = "This item currently has no class/spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class/spec until Blizzard corrects this.",
 							}),
@@ -127,12 +127,12 @@ _.Instances =
 								i(24381),	-- Coilfang Needler
 								i(27551),	-- Skeletal Necklace of Battlerage
 								i(24379, {	-- Bogstrok Scale Cloak
-									["g"] = {
+									["groups"] = {
 									},
 									["description"] = "This item currently has no class/spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class/spec until Blizzard corrects this.",
 								}),
 								i(27550, {	-- Ironscale War Cloak
-									["g"] = {
+									["groups"] = {
 									},
 									["description"] = "This item currently has no class/spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class/spec until Blizzard corrects this.",
 								}),

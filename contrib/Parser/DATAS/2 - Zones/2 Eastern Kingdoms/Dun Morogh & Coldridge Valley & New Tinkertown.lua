@@ -541,7 +541,7 @@ _.Zones =
 								un(34, i(1009)),	-- Compact Hammer
 							}),
 							qa(5625, {	-- Garments of the Light
-								["g"] = {
+								["groups"] = {
 									un(34, i(16605)),	-- Friar's Robes of the Light
 								},
 								["races"] = { 3 },	-- Dwarf

@@ -997,7 +997,7 @@ _.Zones =
 								un(34, i(10638)),	-- Long Draping Cape
 							}),
 							qh(1882, {	-- The Balnir Farmstead
-								["g"] = {
+								["groups"] = {
 									un(34, i(7507)),	-- Arcane Orb
 									un(34, i(9514)),	-- Arcane Staff
 								},

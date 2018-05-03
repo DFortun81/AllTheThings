@@ -162,7 +162,7 @@ _.Zones =
 					qg(23579, q(27408)),	-- Banner of the Stonemaul
 --]]
 					q(27914, {	-- Blessing of the Green Dragonflight
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius (may be outside instance?)
 					}),
@@ -250,7 +250,7 @@ _.Zones =
 					})),
 --					qg(6546, qa(27430)),	-- Justice for the Hyals
 					q(27704, {	-- Legends of the Sunken Temple
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
@@ -291,7 +291,7 @@ _.Zones =
 						i(156976),	-- Staff of Memory 
 					})),
 					q(27694, {	-- Pool of Tears
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
@@ -324,17 +324,17 @@ _.Zones =
 					qg(23579, q(27410)),	-- Spirits of Stonemaul Hold
 --]]
 					q(27705, {	-- Step One: The Priestess
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
 					q(27773, {	-- Step Three: Prophet
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
 					q(27768, {	-- Step Two: The Bloodletter
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
@@ -1180,7 +1180,7 @@ _.Zones =
 								un(34, i(33272)),	-- Biting Axe
 							}),
 							q( 1958, {	-- Celestial Power
-								["g"] = {
+								["groups"] = {
 									un(34, i(7515)),	-- Celestial Orb
 									un(34, i(9517)),	-- Celestial Stave
 								},

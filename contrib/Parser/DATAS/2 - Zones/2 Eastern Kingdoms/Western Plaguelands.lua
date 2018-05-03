@@ -5,13 +5,13 @@ _.Zones =
 {
 	m(14, { 	-- Eastern Kingdoms
 		m(22, {		-- Western Plaguelands
-			["g"] = {
+			["groups"] = {
 				n( -3, {	-- Holidays
 					n(-47, {    	-- Lunar Festival
-						["g"] = {
+						["groups"] = {
 							n(-17, { 	-- Quests
 								q(8722, {	-- Meadowrun the Elder			
-									["g"] = {			
+									["groups"] = {			
 										-- i(21100),	-- Coin of Ancestry	
 										-- i(21746, {	-- Lucky Red Envelope	
 											--i(21745),	-- Elder's Moonstone
@@ -22,7 +22,7 @@ _.Zones =
 									["qg"] = 15602,	-- Elder Meadowrun		
 								}),
 								q(8714, {	-- Moonstrike the Elder			
-									["g"] = {			
+									["groups"] = {			
 										-- i(21100),	-- Coin of Ancestry	
 										-- i(21746, {	-- Lucky Red Envelope	
 											--i(21745),	-- Elder's Moonstone
@@ -38,7 +38,7 @@ _.Zones =
 						["u"] = 17,
 					}),
 --[[					n(-50, {    	-- Love is in the Air
-						["g"] = {
+						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
@@ -46,7 +46,7 @@ _.Zones =
 						["u"] = 18,
 					}),
 					n(-51, {    	-- Noblegarden
-						["g"] = {
+						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
@@ -54,7 +54,7 @@ _.Zones =
 						["u"] = 19,
 					}),
 					n(-52, {    	-- Children's Week
-						["g"] = {
+						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
@@ -63,7 +63,7 @@ _.Zones =
 					}),	
 --]]					
 					n(-53, {    	-- Midsummer Fire Festival
-						["g"] = {
+						["groups"] = {
 							n(-17, { 	-- Quests
 								qa(28918),	-- Desecrate this Fire!
 								qh(11756),	-- Desecrate this Fire!
@@ -77,7 +77,7 @@ _.Zones =
 					}),
 --[[
 					n(-56, {    	-- Brewfest
-						["g"] = {
+						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
@@ -86,7 +86,7 @@ _.Zones =
 					}),
 --]]
 					n(-58, {    	-- Hallow's End
-						["g"] = {
+						["groups"] = {
 							n(-17, { 	-- Quests
 								qa(28988),	-- Candy Bucket
 								qh(28987),	-- Candy Bucket
@@ -97,7 +97,7 @@ _.Zones =
 					}),
 --[[
 					n(-60, {    	-- Pilgrim's Bounty
-						["g"]  = {
+						["groups"]  = {
 							n(-17, { 	-- Quests
 							}),
 						},
@@ -105,7 +105,7 @@ _.Zones =
 						["u"] = 28,
 					}),
 					n(-61, {    	-- Feast of Winter Veil
-						["g"] = {
+						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
@@ -124,7 +124,7 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					qh(27089, {	-- Ace in the Hole
-						["g"] = {
+						["groups"] = {
 							i( 62217),	-- Minuteman Pike
 							i( 62216),	-- Lurid Bracers
 							i( 62215),	-- Shoulderwraps of the Enthralled
@@ -134,13 +134,13 @@ _.Zones =
 						["sourceQuests"] = { 27087 },	-- Lindsay Ravensun, Revealed
 					}),
 					q( 26954, {	-- A Different Approach
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44456,	-- Adrine Towhide
 						["sourceQuests"] = { 26953 },	-- Zen'kiki, the Druid
 					}),
 					q( 27012, {	-- A Gnoll's Resolve
-						["g"] = {
+						["groups"] = {
 							i(62177),	-- Kelly's Booties
 							i(62176),	-- Redpine Cloak
 							i(62175),	-- Lumberjack's Hatchet
@@ -149,7 +149,7 @@ _.Zones =
 						["sourceQuests"] = { 27013 },	-- Too Close for Comfort
 					}),
 					qa(27206, {	-- Alas, Andorhal (awarded "The Second Battle for Andorhal" criteria)
-						["g"] = {
+						["groups"] = {
 							i( 62222),	-- Chillwind Pauldrons
 							i( 62221),	-- Chillwind Legguards
 							i( 62220),	-- Chillwind Tunic
@@ -162,7 +162,7 @@ _.Zones =
 					}),
 					o(205258, {	-- Broken Weapons Crate	
 						qa(27171, {	-- Ambushed!
-							["g"] = {
+							["groups"] = {
 								i(62167),	-- Cloak of the Unrestful
 								i(62166),	-- Spiritual Barrier
 								i(62165),	-- Cryptkeeper's Belt
@@ -171,7 +171,7 @@ _.Zones =
 						}),
 					}),
 					qa(27167, {	-- A Mighty Hunger
-						["g"] = {
+						["groups"] = {
 							i( 62159),	-- Bear Hunter's Rifle
 							i( 62158),	-- Homestead Helm
 							i( 62157),	-- Farmer's Vest
@@ -180,19 +180,19 @@ _.Zones =
 						["qg"] = 45165,	-- Thurman Grant
 					}),
 					q( 27002, {	-- An Audience with the Highlord
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 11616,	-- Nathaniel Dumah
 						["sourceQuests"] = { 27001 },	-- This Means WAR (Wild Arachnid Roundup)
 					}),
 					qh(27090, {	-- Andorhal, Once and For All
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 45129,	-- Lurid
 						["sourceQuests"] = { 27089 },	-- Ace in the Hole
 					}),
 					q( 26999, {	-- A New Era for the Plaguelands
-						["g"] = {
+						["groups"] = {
 							i( 62174),	-- Bracers of the Returning Wild
 							i( 62173),	-- Boots of the Flowering Earth
 							i( 62172),	-- Forest Green Cloak
@@ -202,43 +202,43 @@ _.Zones =
 						["breadcrumbQuestID"] = { 27175, 27233, 26952 },	-- The Menders' Stead (A/A/H versions)
 					}),
 					qa(27204, {	-- Aradne
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44453,	-- Thassarian
 						["sourceQuests"] = { 27202, 27201 },	-- Brother Against Brother & Val'kyr Incursion
 					}),
 					qa(27164, {	-- Araj the Summoner
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44467,	-- Lang Loosegrip
 						["sourceQuests"] = { 27161 },	-- The Endless Flow
 					}),
 					qh(26925, {	-- Araj the Summoner
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44462,	-- Jearl Donald
 						["sourceQuests"] = { 26922 },	-- The Endless Flow
 					}),
 					qa(27199, {	-- Ashes to Ashes
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44453,	-- Thassarian
 						["sourceQuests"] = { 27197 },	-- The Battle Resumes!
 					}),
 					qh(27086, {	-- Ashes to Ashes
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["sourceQuests"] = { 27083 },	-- The Battle Resumes!
 					}),
 					q( 27154, {	-- Bagging Bisp
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 45149,	-- Outfitter Mendelev
 						["sourceQuests"] = { 27153 },	-- The Good People of Hearthglen
 					}),
 					qa(27202, {	-- Brother Against Brother
-						["g"] = {
+						["groups"] = {
 							i( 62213),	-- Minuteman Pike
 							i( 62212),	-- Quelling Bracers
 							i( 62211),	-- Shoulderwraps of the Enthralled
@@ -248,19 +248,19 @@ _.Zones =
 						["sourceQuests"] = { 27205 },	-- The Depravity of the Forsaken
 					}),
 					qa(27163, {	-- Brute Strength
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44453,	-- Thassarian
 						["sourceQuests"] = { 27159, 27160 },	-- Scourge First... Horde Later & War Machines
 					}),
 					qh(27117, {	-- Brute Strength
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["sourceQuests"] = { 26921, 26923 },	-- Scourge First... Alliance Later & War Machines (may not require SF...AL)
 					}),
 					qa(27174, {	-- Combat Training (awarded "A Temporary Peace" criteria)
-						["g"] = {
+						["groups"] = {
 							i( 62184),	-- Abominable Shoulderguards
 							i( 62183),	-- Gory Gloves
 							i( 62182),	-- Training Leggings
@@ -271,7 +271,7 @@ _.Zones =
 						["sourceQuests"] = { 27173 },	-- This Is Our Army
 					}),
 					qh(26938, {	-- Combat Training (awarded "A Temporary Peace" criteria)
-						["g"] = {
+						["groups"] = {
 							i( 62188),	-- Abominable Shoulderguards
 							i( 62187),	-- Charming Gloves
 							i( 62186),	-- Ravensun Britches
@@ -281,58 +281,58 @@ _.Zones =
 						["sourceQuests"] = { 26937 },	-- When Death is Not Enough
 					}),
 					q( 27054, {	-- Desperate Acts
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44454,	-- Field Agent Kaartish
 						["sourceQuests"] = { 27057 },	-- Return to the Stead
 					}),
 					q( 27157, {	-- Drudges... <Sigh>
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 45157,	-- Lieutenant Myner
 						["sourceQuests"] = { 27156 },	-- It's About Time!
 					}),
 					q( 27053, {	-- Gahrron's Withering Cauldron
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44454,	-- Field Agent Kaartish
 						["sourceQuests"] = { 27002 },	-- An Audience with the Highlord
 					}),
 					qa(27166, {	-- Go Fletch!
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 10838,	-- Commander Ashlam Valorfist
 					}),
 					q( 26956, {	-- I Ain't Sayin' You a Gourd-Digger...
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44457,	-- Selyria Groenveld
 					}),
 					q( 27683, {	-- Into the Woods
-						["g"] = {
+						["groups"] = {
 						},
 						["qgs"] = { 10840, 44462, 44456 } ,	-- Argent Office Pureheart, Jearl Donald, Adrine Towhide
 						["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
 					}),
 					q( 27156, {	-- It's About Time!
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 45157,	-- Lieutenant Myner
 					}),
 					q( 27000, {	-- Learning the Ropes
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 11616,	-- Nathaniel Dumah
 						["breadcrumbQuestID"] = { 26935 },	-- Northridge Lumber Mill
 					}),
 					qh(27087, {	-- Lindsay Ravensun, Revealed
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["sourceQuests"] = { 27086, 27085, 27084 },	-- Ashes to Ashes, Supporting the Troops, The Farmers' Militia
 					}),
 					q( 27017, {	-- Memories from a Lost Past
-						["g"] = {
+						["groups"] = {
 							i( 62197),	-- Gahrron's Shoulderguard
 							i( 62196),	-- Gloria's Work Vest
 							i( 62195),	-- Footfalls of Memories
@@ -343,27 +343,27 @@ _.Zones =
 						["sourceQuests"] = { 26957 },	-- The Long Trip Home
 					}),
 					q( 26935, {	-- Northridge Lumber Mill
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44454,	-- Field Agent Kaartish
 						["sourceQuests"] = { 26999 },	-- A New Era for the Plaguelands
 						["isBreadcrumb"] = true,	-- for "Learning the Ropes"
 					}),
 					q( 27011, {	-- Redpine Thievery
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44472,	-- Kelly Dumah
 						["sourceQuests"] = { 27013 },	-- Too Close for Comfort
 					}),
 					o(176392, {	-- Scourge Cauldron
 						q(27057, {	-- Return to the Stead
-							["g"] = {
+							["groups"] = {
 							},
 							["sourceQuests"] = { 27053 },	-- Gahrron's Withering Cauldron
 						}),
 					}),
 					qa(27162, {	-- Scholomancer
-						["g"] = {
+						["groups"] = {
 							i( 62151),	-- Belt of Lingering Corruption
 							i( 62150),	-- Elimination Bracers
 							i( 62149),	-- Burden of Time
@@ -375,7 +375,7 @@ _.Zones =
 						["sourceQuests"] = { 27159, 27160 },	-- Scourge First... Horde Later & War Machines
 					}),
 					qh(26924, {	-- Scholomancer
-						["g"] = {
+						["groups"] = {
 							i( 62155),	-- Belt of Lingering Corruption
 							i( 62154),	-- Elimination Bracers
 							i( 62153),	-- Burden of Time
@@ -387,19 +387,19 @@ _.Zones =
 						["sourceQuests"] = { 26921, 26923 },	-- Scourge First... Alliance Later & War Machines
 					}),
 					qh(26921, {	-- Scourge First... Alliance Later
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["breadcrumbQuestID"] = { 28575 },	-- Warchief's Command: Western Plaguelands!
 					}),
 					qa(27159, {	-- Scourge First... Horde Later
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44453,	-- Thassarian
 						["breadcrumbQuestID"] = { 28576 },	-- Hero's Call: Western Plaguelands!
 					}),
 					q( 27055, {	-- Students of Krastinov
-						["g"] = {
+						["groups"] = {
 							i( 62201),	-- Kaartish's Sword
 							i( 62200),	-- Field Agent's Belt
 							i( 62199),	-- Malicia's Scepter
@@ -408,7 +408,7 @@ _.Zones =
 						["sourceQuests"] = { 27054 },	-- Desperate Acts
 					}),
 					qa(27198, {	-- Supporting the Troops
-						["g"] = {
+						["groups"] = {
 							i( 62204),	-- Gloves of the Able
 							i( 62203),	-- Belt of the Unafraid
 							i( 62202),	-- Bracers of Envy
@@ -419,7 +419,7 @@ _.Zones =
 						["sourceQuests"] = { 27197 },	-- The Battle Resumes!
 					}),
 					qh(27085, {	-- Supporting the Troops
-						["g"] = {
+						["groups"] = {
 							i( 62208),	-- Gloves of the Able
 							i( 62207),	-- Belt of the Unafraid
 							i( 62206),	-- Bracers of Envy
@@ -430,83 +430,83 @@ _.Zones =
 						["sourceQuests"] = { 27083 },	-- The Battle Resumes!
 					}),
 					q( 27151, {	-- Taelan Fordring's Legacy
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 45147,	-- Daria L'Rayne
 						["sourceQuests"] = { 27002 },	-- An Audience With the Highlord
 					}),
 					qa(27170, {	-- The Abandoned Crypt
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 1854,	-- High Priest Thel'danis
 						["sourceQuests"] = { 27169 },	-- Uther's Blessing
 					}),
 					qa(27158, {	-- The Battle for Andorhal
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
 					}),
 					qa(27197, {	-- The Battle Resumes!
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 45012,	-- Durnt Brightfalcon
 						["sourceQuests"] = { 27174 },	-- Combat Training
 					}),
 					qh(27083, {	-- The Battle Resumes!
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 45013,	-- Damion Steel
 						["sourceQuests"] = { 26938 },	-- Combat Training
 					}),
 					qa(27205, {	-- The Depravity of the Forsaken
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44453,	-- Thassarian
 						["sourceQuests"] = { 27199, 27198 },	-- Ashes to Ashes & Supporting the Troops
 					}),
 					qa(27161, {	-- The Endless Flow
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44467,	-- Lang Loosegrip
 					}),
 					qh(26922, {	-- The Endless Flow
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44462,	-- Jearl Donald
 					}),
 					qh(27084, {	-- The Farmers' Militia
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["sourceQuests"] = { 27083 },	-- The Battle Resumes!
 					}),
 					q( 27153, {	-- The Good People of Hearthglen
-						["g"] = {
+						["groups"] = {
 						},
 						["sourceQuests"] = { 27152 },	-- Unusual Behavior... Even For Gnolls
 					}),
 					q( 26957, {	-- The Long Trip Home
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44905,	-- 
 					}),
 					qa(27175, {	-- The Menders' Stead
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 10840,	-- Argent Officer Pureheart
 						["sourceQuests"] = { 27168 },	-- Those That Couldn't Let Go
 						["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
 					}),
 					qa(27233, {	-- The Menders' Stead
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 45165,	-- Thurman Grant
 						["sourceQuests"] = { 27174 },	-- Combat Training
 						["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
 					}),
 					qh(27144, {	-- The Reckoning (awarded "The Second Battle for Andorhal" criteria)
-						["g"] = {
+						["groups"] = {
 							i( 62227),	-- Pauldrons of Andorhal
 							i( 62226),	-- Andorhal Legguards
 							i( 62225),	-- Andorhal Tunic
@@ -518,19 +518,19 @@ _.Zones =
 						["sourceQuests"] = { 27090 },	-- Andorhal, Once and For All
 					}),
 					qa(27172, {	-- The Writhing Haunt
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["sourceQuests"] = { 27171 },	-- Ambushed!
 					}),
 					qa(27173, {	-- This Is Our Army
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 45165,	-- Thurman Grant
 						["sourceQuests"] = { 27172 },	-- The Writhing Haunt
 					}),
 					q( 27001, {	-- This Means WAR (Wild Arachnid Roundup)
-						["g"] = {
+						["groups"] = {
 							i(62179),	-- Spider Frier
 						  --i(62178),	-- Not Transmoggable
 						},
@@ -538,54 +538,54 @@ _.Zones =
 						["sourceQuests"] = { 27000 },	-- Learning the Ropes
 					}),
 					qa(27168, {	-- Those That Couldn't Let Go
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 11053,	-- High Priestess MacDonnell
 						["sourceQuests"] = { 27167, 27166 },	-- A Mighty Hunger & Go Fletch!
 					}),
 					q( 27013, {	-- Too Close for Comfort
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44472,	-- Kelly Dumah
 					}),
 					q( 27155, {	-- Turning Yourself In (awarded "The Menders' Stead" criteria and overall "Western Plaguelands Quests" achievement)
-						["g"] = {
+						["groups"] = {
 							i(62191),	-- Highlord's Favor
 							i(62190),	-- Light-Imbued Lantern
 						},
 						["sourceQuests"] = { 27154 },	-- Bagging Bisp
 					}),
 					q( 27152, {	-- Unusual Behavior... Even For Gnolls
-						["g"] = {
+						["groups"] = {
 						},
 						["sourceQuests"] = { 27151 },	-- Taelan Fordring's Legacy
 					}),
 					qa(27169, {	-- Uther's Blessing
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["sourceQuests"] = { 27167, 27166 },	-- A Mighty Hunger & Go Fletch!
 					}),
 					qa(27201, {	-- Val'kyr Incursion
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44453,	-- Thassarian
 						["sourceQuests"] = { 27205 },	-- The Depravity of the Forsaken
 					}),
 					qa(27165, {	-- Victory, For Now (awarded "The First Battle for Andorhal" criteria)
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44453,	-- Thassarian
 						["sourceQuests"] = { 27164, 27163, 27162 },	-- Araj the Summoner, Brute Strength, & Scholomancer
 					}),
 					qh(26926, {	-- Victory, For Now (awarded "The First Battle for Andorhal" criteria)
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44452,	-- Koltira Deathweaver
 						["sourceQuests"] = { 26925, 27117, 26924 },	-- Araj the Summoner, Brute Strength, & Scholomancer
 					}),
 					qa(27160, {	-- War Machines
-						["g"] = {
+						["groups"] = {
 							i( 62143),	-- Gut Opener Gloves
 							i( 62142),	-- Behemoth Boots
 							i( 62141),	-- Belt of the Laconic
@@ -596,7 +596,7 @@ _.Zones =
 						["qg"] = 44471,	-- Lurid
 					}),
 					qh(26923, {	-- War Machines
-						["g"] = {
+						["groups"] = {
 							i( 62147),	-- Gut Opener Gloves
 							i( 62146),	-- Behemoth Boots
 							i( 62145),	-- Belt of the Blathering Fool
@@ -607,13 +607,13 @@ _.Zones =
 						["qg"] = 44466,	-- Lindsay Ravensun
 					}),
 					qh(26937, {	-- When Death is Not Enough
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44466,	-- Lindsay Ravensun
 						["sourceQuests"] = { 26979 },	-- Strange New Faces
 					}),
 					q( 26955, {	-- Zen'Kiki and the Cultists
-						["g"] = {
+						["groups"] = {
 							i( 62194),	-- Breastplate of the Patient
 							i( 62193),	-- Leggings of the Slipper Shifter
 							i(131627),	-- Scaled Pants of Patience
@@ -622,14 +622,14 @@ _.Zones =
 						["sourceQuests"] = { 27057 },	-- Return to the Stead
 					}),
 					q( 26953, {	-- Zen'Kiki, the Druid
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 44456,	-- Adrine Towhide
 					}),
 
 -- CLASS HALL QUESTS
 					qart(q(43153, {	-- An Eye for a Scepter
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 109698,	-- Calydus
 						["lvl"] = 98,
@@ -637,7 +637,7 @@ _.Zones =
 						["sourceQuests"] = { 43100 },	-- Finding the Scepter
 					})),
 					qart(q(42774, {	-- Hope Prevails
-						["g"] = {
+						["groups"] = {
 						},
 						["lvl"] = 98,
 						["qg"] = 108776,	-- Lord Maxwell Tyrosus
@@ -645,7 +645,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	-- 
 					})),
 					qart(q(42771, {	-- Keeping the Peace
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 108778,	-- Mehlar Dawnblade
 						["lvl"] = 98,
@@ -653,7 +653,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	-- 
 					})),
 					qart(q(42772, {	-- Sacred Ground
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 108777,	-- High Priest Thel'danis
 						["lvl"] = 98,
@@ -661,7 +661,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	-- 
 					})),
 					qart(q(42770, {	-- Seeking Guidance
-						["g"] = {
+						["groups"] = {
 						},
 						["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus (same QG, different IDs)
 						["lvl"] = 98,
@@ -669,7 +669,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	-- 
 					})),
 					qart(q(42773, {	-- The Light Reveals
-						["g"] = {
+						["groups"] = {
 						},
 						["qgs"] = { 108776 },	-- Lord Maxwell Tyrosus
 						["lvl"] = 98,
@@ -1301,7 +1301,7 @@ _.Zones =
 				}),
 				n( -2, {	-- Vendors
 					n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
-						["g"] = {
+						["groups"] = {
 							i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 							i(19447),	-- Formula: Enchant Bracer - Healing Power
 							i(19442),	-- Formula: Powerful Anti-Venom

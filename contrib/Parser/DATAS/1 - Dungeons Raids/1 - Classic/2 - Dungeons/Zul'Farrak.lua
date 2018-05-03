@@ -29,7 +29,7 @@ _.Instances =
 					}),							
 					n(-17, {	-- Quests
 						q(27070, {	-- A Fool's Errand
-							["g"] = {
+							["groups"] = {
 								i(65954),	-- Belt of the Deep
 								i(65929),	-- Bildewhizzle's Armbands
 								i(65978),	-- Electrified Leggings
@@ -38,12 +38,12 @@ _.Instances =
 							["qg"] = 7407,	-- Chief Engineer Bildewhizzle
 						}),
 						q(27076, {	-- Breaking and Entering
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 44929,	-- Tran'rek
 						}),
 						q(27068, {	-- Chief Ukorz Sandscalp
-							["g"] = {
+							["groups"] = {
 								i(65930),	-- Hands of Consequences
 								i(65955),	-- Mazoga's Boots
 								i(65979),	-- Staff of the Unknown Road
@@ -52,7 +52,7 @@ _.Instances =
 							["breadcrumbQuestID"] = { 25556 },	-- Into Zul'Farrak
 						}),
 						q(27071, {	-- Wrath of the Sandfury
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 40712,	-- Mazoga's Spirit
 						}),

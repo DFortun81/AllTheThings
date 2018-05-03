@@ -1433,7 +1433,7 @@ _.Zones =
 								un(34, i(6502)),	-- Violet Scale Armor
 							}),
 							qh(1503, {	-- Forged Steel
-								["g"] = {
+								["groups"] = {
 									un(34, i(7326)),	-- Thun'grim's Axe
 									un(34, i(7328)),	-- Thun'grim's Mace
 									un(34, i(7327)),	-- Thun'grim's Dagger
@@ -1475,21 +1475,21 @@ _.Zones =
 								un(34, i(5320)),	-- Padded Lamellar Boots
 							}),
 							q(4964, {	-- The Completed Orb of Dar'Orahil
-								["g"] = {
+								["groups"] = {
 									un(34, i(15108)),	-- Orb of Dar'Orahil
 									un(34, i(15106)),	-- Staff of Dar'Orahil
 								},
 								["classes"] = { 9 },	-- Warlock
 							}),
 							q(4975, {	-- The Completed Orb of Noh'Orahil
-								["g"] = {
+								["groups"] = {
 									un(34, i(15107)),	-- Orb of Noh'Orahil
 									un(34, i(15105)),	-- Staff of Noh'Orahil
 								},
 								["classes"] = { 9 },	-- Warlock
 							}),
 							q(4786, {	-- The Completed Robe
-								["g"] = {
+								["groups"] = {
 									un(34, i(6900)),	-- Enchanted Gold Bloodrobe
 								},
 								["classes"] = { 9 },	-- Warlock

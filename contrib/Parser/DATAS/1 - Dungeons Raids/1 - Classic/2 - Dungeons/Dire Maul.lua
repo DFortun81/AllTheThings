@@ -454,7 +454,7 @@ _.Instances =
 								--}),
 								n(  0, {	-- Zone Drop (Legacy)
 									n(14690, {	-- Revanchion
-										["g"] = {
+										["groups"] = {
 											un(2, i(23129)),	-- Bracers of Mending
 											un(2, i(23127)),	-- Cloak of Revanchion
 											un(2, i(23128)),	-- The Shadow's Grasp

@@ -1483,6 +1483,7 @@ _.Zones =
 			},
 			["isRaid"] = true,
 			["achievementID"] = 9214, -- Hero of Stormshield
+			["lvl"] = 100,
 		}),
 	}),
 };

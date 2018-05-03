@@ -1075,7 +1075,7 @@ END OF MICRO-HOLIDAY --]]
 								["description"] = "The Hoary Templar is a level 60 air elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
 							}),
 							n(15205, {	-- Baron Kazum
-								["g"] = {
+								["groups"] = {
 									un(7, i(20686)),	-- Abyssal Cloth Amice
 									un(7, i(20687)),	-- Abyssal Plate Vambraces
 									un(7, i(20688)),	-- Earthen Guard
@@ -1122,7 +1122,7 @@ END OF MICRO-HOLIDAY --]]
 								["description"] = "This rare was only available during the Elemental Invasions.",
 							}),
 							n(15204, {	-- High Marshal Whirlaxis
-								["g"] = {
+								["groups"] = {
 									un(2, i(20690)),	-- Abyssal Cloth Wristbands
 									un(2, i(20689)),	-- Abyssal Leather Shoulders
 									un(2, i(20691)),	-- Windshear Cape
@@ -1168,7 +1168,7 @@ END OF MICRO-HOLIDAY --]]
 				}),	
 			},		
 			["achievementID"] = 856,
-			["lvl"] = 55,
+			["lvl"] = 40,
 			["description"] = "|cff66ccffSilithus used to be the seat of the Aqiri insect empire and has colossal structures and underground insect lairs. The night elves sealed the silithids in Ahn'Qiraj during the War of the Shifting Sands, to prevent further invasions. The zone used to be a major quest/reputation hub in vanilla--it had an intricate system of reputation-increasing quests. summonable mini-bosses, and numerous rewards.|r",
 		}),
 	}),
