@@ -630,8 +630,8 @@ qc12 = function(t)						-- Gives a quest the Demon Hunter Description
 	return t;
 end
 qd = function(t)							-- Gives a quest the Daily Description
-	t.description = "This quest is a daily.";
-	t.icon = "Interface\\GossipFrame\\DailyQuestIcon";
+	--t.description = "This quest is a daily.";
+	--t.icon = "Interface\\GossipFrame\\DailyQuestIcon";
 	return t;
 end
 qdg = function(t)						-- Gives a quest the Dungeon Description
@@ -730,8 +730,8 @@ qraid = function(t)						-- Gives a quest the Raid Description
 	return t;
 end
 qr = function(t)							-- Gives a quest the Repeatable Description
-	t.description = "This quest is repeatable.";
-	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_azure";
+	--t.description = "This quest is repeatable.";
+	--t.icon = "Interface\\Icons\\70_inscription_vantus_rune_azure";
 	t.repeatable = true;
 	return t;
 end
