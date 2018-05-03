@@ -68,7 +68,8 @@ _.Zones =
 					}),
 				}),
 			},	
-			["icon"] = "Interface\\Icons\\inv_legendary_theblackprince",	
+			["icon"] = "Interface\\Icons\\inv_legendary_theblackprince",
+			["lvl"] = 78,
 		}),	
 	}),
 };

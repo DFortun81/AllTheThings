@@ -412,7 +412,7 @@ _.Zones =
 					
 					
 					
---[[						["g"] = {
+--[[						["groups"] = {
 							},
 							["qg"] = ,	-- 
 							["sourceQuests"] = {  },	-- 
@@ -424,37 +424,37 @@ _.Zones =
 					
 					faction(932, {	-- The Aldor
 						q(10641, {	-- Against the Legion
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 18417,	-- Altruis the Sufferer
 							["sourceQuests"] = { 10640 },	-- Altruis
 						}),
 						q(10668, {	-- Against the Illidari
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 18417,	-- Altruis the Sufferer
 							["sourceQuests"] = { 10640 },	-- Altruis
 						}),
 						q(10669, {	-- Against All Odds
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 18417,	-- Altruis the Sufferer
 							["sourceQuests"] = { 10640 },	-- Altruis
 						}),
 						q(10646, {	-- Illidan's Pupil
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 18417,	-- Altruis
 							["sourceQuests"] = { 10641, 10668, 10669 },	-- Against the Legion, Against the Illidari, & Against All Odds
 						}),
 						qdg(q(10649, {	-- The Book of Fel Names
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 18417,	-- Altruis
 							["sourceQuests"] = { 10646 },	-- Illidan's Pupil
 						})),
 						q(10650, {	-- Return to the Aldor
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 18417,	-- Altruis the Sufferer
 							["sourceQuests"] = { 10649 },	-- The Book of Fel Names

@@ -11,7 +11,7 @@ _.Instances =
 					n(-17, {	-- Quests
 						i(9326, {	-- Grime-Encrusted Ring
 							q(2945, {	-- Grime-Encrusted Ring
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 6212,	-- Dark Iron Agent
 							}),
@@ -22,12 +22,12 @@ _.Instances =
 								-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
 							})),	--]]
 							qa(  2947, {	-- Return of the Ring
-								["g"] = {
+								["groups"] = {
 								},
 								["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
 							}),
 							qh(  2949, {	-- Return of the Ring
-								["g"] = {
+								["groups"] = {
 								},
 								["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
 							}),
@@ -35,18 +35,18 @@ _.Instances =
 							q(   2952),		-- The Sparklematic 5200!	--]]
 						}),	
 						qa(26939, {	-- The G-Team
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 44556,	-- Murd Doc
 							["breadcrumbQuestID"] = { 26944, 26943 },	-- Exploring Gnomeregan OR Home Sweet Gnome
 						}),
 						qg(44560, qa(26941, {	-- The G-Team
-							["g"] = {
+							["groups"] = {
 							},
 							["sourceQuests"] = { 26939 },	-- The G-Team
 						})),
 						qg(44561, qa(26942, {	-- The G-Team
-							["g"] = {
+							["groups"] = {
 								i( 65987),	-- G-Team Belt
 								i( 66004),	-- Barechus' Greaves
 								i( 65963),	-- Temple's Vest
@@ -59,7 +59,7 @@ _.Instances =
 						})),
 						qg(44556, qh(50338)),	-- The G-Team
 						qg(44560, qh(50337, {	-- The G-Team
-							["g"] = {
+							["groups"] = {
 							},
 							["sourceQuests"] = { 50338 },	-- The G-Team
 						})),

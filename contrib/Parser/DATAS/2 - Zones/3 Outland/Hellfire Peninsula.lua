@@ -738,7 +738,7 @@ _.Zones =
 						qa( 10346),	-- Return to the Abyssal Shelf
 						qh( 10347),	-- Return to the Abyssal Shelf
 						q(  9732, {	-- Return to the Marsh (awarded "Draining the Marsh" criteria for Zangarmarsh)
-							["g"] = {
+							["groups"] = {
 								i(25524),	-- Cenarion Expedition Boots
 								i(25523),	-- Windcaller's Gauntlets
 								i(25522),	-- Marshstrider's Spaulders

@@ -245,35 +245,35 @@ profession(185, { -- Cooking
 	n(-17, {	-- Quests
 		profession(185, {	-- Cooking
 			["maps"] = { 504 },	-- Dalaran: Northrend
-			["g"] = {
+			["groups"] = {
 				na(28705, {	-- Katherine Lee
-					["g"] = {
+					["groups"] = {
 						qa(13100, {	-- Infused Mushroom Meatloaf
-							["g"] = {
+							["groups"] = {
 							},
 							["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
 							["criteriaID"] = 1,	-- Infused Mushroom Meatloaf
 						}),
 						qa(13101, {	-- Convention at the Legerdemain
-							["g"] = {
+							["groups"] = {
 							},
 							["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
 							["criteriaID"] = 2,	-- Convention at the Legerdemain
 						}),
 						qa(13102, {	-- Sewer Stew
-							["g"] = {
+							["groups"] = {
 							},
 							["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
 							["criteriaID"] = 3,	-- Sewer Stew
 						}),
 						qa(13103, {	-- Cheese for Glowergold
-							["g"] = {
+							["groups"] = {
 							},
 							["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
 							["criteriaID"] = 4,	-- Cheese for Glowergold
 						}),
 						qa(13107, {	-- Mustard Dogs!
-							["g"] = {
+							["groups"] = {
 							},
 							["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
 							["criteriaID"] = 5,	-- Mustard Dogs!
@@ -282,33 +282,33 @@ profession(185, { -- Cooking
 					["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
 				}),
 				nh(29631, {	-- Awilo Longomba
-					["g"] = {
+					["groups"] = {
 						qh(13112, {	-- Infused Mushroom Meatloaf
-							["g"] = {
+							["groups"] = {
 							},
 							["achievementID"] = 1783,	-- Our Daily Bread (Horde)
 							["criteriaID"] = 1,	-- Infused Mushroom Meatloaf
 						}),
 						qh(13113, {	-- Convention at the Legerdemain
-							["g"] = {
+							["groups"] = {
 							},
 							["achievementID"] = 1783,	-- Our Daily Bread (Horde)
 							["criteriaID"] = 2,	-- Convention at the Legerdemain
 						}),
 						qh(13114, {	-- Sewer Stew
-							["g"] = {
+							["groups"] = {
 							},
 							["achievementID"] = 1783,	-- Our Daily Bread (Horde)
 							["criteriaID"] = 3,	-- Sewer Stew
 						}),
 						qh(13115, {	-- Cheese for Glowergold
-							["g"] = {
+							["groups"] = {
 							},
 							["achievementID"] = 1783,	-- Our Daily Bread (Horde)
 							["criteriaID"] = 4,	-- Cheese for Glowergold
 						}),
 						qh(13116, {	-- Mustard Dogs!
-							["g"] = {
+							["groups"] = {
 							},
 							["achievementID"] = 1783,	-- Our Daily Bread (Horde)
 							["criteriaID"] = 5,	-- Mustard Dogs!

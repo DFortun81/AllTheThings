@@ -338,7 +338,7 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							qa(9586, {	-- Help Tavara
-								["g"] = {
+								["groups"] = {
 									un(34, i(23931)),	-- Azure Watch Robes
 								},
 								["races"] = { 11 },	-- Draenei

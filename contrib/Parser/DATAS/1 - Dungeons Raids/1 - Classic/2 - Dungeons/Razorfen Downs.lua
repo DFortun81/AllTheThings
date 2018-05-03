@@ -10,12 +10,12 @@ _.Instances =
 				["groups"] = {
 					n(-17, {			-- Quests 
 						q(33513, {	-- Blackthorn's Lieutenants
-							["g"] = {
+							["groups"] = {
 							},
 							["qgs"] = { 74367, 74888 },	-- Koristrasza (same NPC, different IDs)
 						}),
 						q(33514, {	-- The Ritual
-							["g"] = {
+							["groups"] = {
 								i(65996),	-- Belt of Tyrannic Rule
 								i(65975),	-- Chestguard of Redemption
 								i(65926),	-- Coldbringer's Leggings

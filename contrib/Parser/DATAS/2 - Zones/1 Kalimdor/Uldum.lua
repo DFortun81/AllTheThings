@@ -513,7 +513,7 @@ _.Zones =
 				}),
 				n(-77, {	-- Special
 					n(50409, {	-- Mysterious Camel Figurine
-						["g"] = {
+						["groups"] = {
 							n(50245, {	-- Dormus the Camel Hoarder
 								i(63046),	-- Reins of the Grey Riding Camel
 							}),

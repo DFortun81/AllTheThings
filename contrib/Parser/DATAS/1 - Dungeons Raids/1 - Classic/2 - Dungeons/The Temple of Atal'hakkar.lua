@@ -29,18 +29,18 @@ _.Instances =
 					}),							
 					n(-17, {	-- Quests
 						q(27605, {	-- Eranikus
-							["g"] = {
+							["groups"] = {
 								i(65931),	-- Essence of Eranikus' Shade
 							},
 							["qg"] = 46077,	-- Lord Itharius
 						}),
 						q(27604, {	-- Jammal'an the Prophet
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 46077,	-- Lord Itharius
 						}),
 						q(27633, {	-- The Blood God Hakkar
-							["g"] = {
+							["groups"] = {
 							},
 							["qg"] = 46077,	-- Lord Itharius
 						}),

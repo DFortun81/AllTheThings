@@ -1521,6 +1521,7 @@ _.Zones =
 			},
 			["isRaid"] = true,
 			["achievementID"] = 9215, -- Hero of Warspear
+			["lvl"] = 100,
 		}),
 	}),
 };

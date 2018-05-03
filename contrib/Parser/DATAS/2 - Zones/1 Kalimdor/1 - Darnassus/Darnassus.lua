@@ -242,7 +242,7 @@ _.Zones =
 					qg(67940, qa(32414)),	-- Darnassus Attacked? (QG in Krasarang Wilds)
 --]]					
 					qdg(q (27362, {	-- Favored of Elune
-						["g"] = {
+						["groups"] = {
 							i(65483),	-- Moon Staff of Elune
 						},
 						["qg"] = 7999,	-- Tyrande Whisperwind

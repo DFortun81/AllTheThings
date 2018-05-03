@@ -271,13 +271,13 @@ _.Zones =
 					q(11030),	-- Our Boy Wants To Be A Skyguard Ranger
 --]]
 					qh(11036, {	-- Out of This World Produce!
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 19471,	-- Old Orok
 						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other breadcrumb quests)
 					}),
 					qa(11040, {	-- Parts for the Rocket-Chief
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 21112,	-- Bossi Pentapiston
 						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other breadcrumb quests)

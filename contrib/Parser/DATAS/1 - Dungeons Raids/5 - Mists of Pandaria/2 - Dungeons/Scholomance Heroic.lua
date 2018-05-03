@@ -14,7 +14,7 @@ _.Instances =
 						["groups"] = {
 							n(-17, {	-- Quests 			
 								q(31448, {	-- An End to the Suffering
-									["g"] = {
+									["groups"] = {
 										i(87379),	-- Runed Deathbone Chestplate
 										i(87380),	-- Carver's Bloodspattered Chestpiece
 										i(87381),	-- Coldforge Carapace
@@ -28,7 +28,7 @@ _.Instances =
 									["qg"] = 64563,	-- Talking Skull
 								}),
 								q(31442, {	-- The Four Tomes
-									["g"] = {
+									["groups"] = {
 									},
 									["qg"] = 64563,	-- Talking Skull
 								}),

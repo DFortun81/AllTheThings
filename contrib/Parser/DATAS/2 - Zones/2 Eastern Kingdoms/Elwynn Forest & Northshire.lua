@@ -566,7 +566,7 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							qa(1667, {	-- Dead-tooth Jack
-								["g"] = {
+								["groups"] = {
 									un(34, i(6979)),	-- Haggard's Axe
 									un(34, i(6983)),	-- Haggard's Hammer
 									un(34, i(6980)),	-- Haggard's Dagger
@@ -575,7 +575,7 @@ _.Zones =
 								["classes"] = { 1 },	-- Warrior
 							}),
 							qa(5624, {	-- Garments of the Light
-								["g"] = {
+								["groups"] = {
 									un(34, i(16605)),	-- Friar's Robes of the Light
 								},
 								["races"] = { 1 },	-- Human

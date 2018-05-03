@@ -1075,7 +1075,7 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							q(7583, {	-- Suppression
-								["g"] = {
+								["groups"] = {
 									un(34, i(18602)),	-- Tome of Sacrifice
 								},
 								["classes"] = { 9 },	-- Warlock

@@ -207,7 +207,7 @@ _.Zones =
 						i(62972),
 					})),
 					q( 27762, {	-- Fuselight, Ho!
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 48704,	-- Gek Nozzlerocket
 						["isBreadcrumb"] = true,	-- for "To Fuselight Proper"

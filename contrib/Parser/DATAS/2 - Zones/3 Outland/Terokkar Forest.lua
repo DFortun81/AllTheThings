@@ -295,7 +295,7 @@ _.Zones =
 					qh(11506),	-- Spirits of Auchindoun					
 					qa(11505),	-- Spirits of Auchindoun
 					q(  9968, {	-- Strange Energy
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18446,	-- Earthbinder Tavgren
 						["breadcrumbQuestID"] = { 9957 },	-- What's Wrong at Cenarion Thicket?

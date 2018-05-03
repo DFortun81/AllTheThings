@@ -11,7 +11,7 @@ _.Instances =
 					n(-17, {	-- Quests
 						qg(26527, q(13149)),	-- Dispelling Illusions
 						qg(26527, q(13151, {	-- A Royal Escort
-							["g"] = {
+							["groups"] = {
 								i(44396),	-- Gloves of the Time Guardian
 								i(44397),	-- Handwraps of Preserved History
 								i(44398),	-- Grips of Chronological Events

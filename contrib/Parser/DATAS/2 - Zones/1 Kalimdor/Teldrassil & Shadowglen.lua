@@ -352,7 +352,7 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							qa(5621, {	-- Garments of the Moon
-								["g"] = {
+								["groups"] = {
 									un(34, i(16604)),	-- Moon Robes of Elune
 								},
 								["races"] = { 4 },	-- Night Elf

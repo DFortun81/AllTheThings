@@ -65,12 +65,12 @@ _.Zones =
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qa( 9365, {	-- A Thief's Reward
-									["g"] = {
+									["groups"] = {
 									},
 									["qg"] = 16817,	-- Festival Loremaster
 								}),
 								qh( 9339, {	-- A Thief's Reward
-									["g"] = {
+									["groups"] = {
 									},
 									["qg"] = 16818,	-- Festival Talespinner
 								}),
@@ -78,22 +78,22 @@ _.Zones =
 								qg(16818, qh(11966)),	-- Incense for the Festival Scorchlings
 								qg(25962, qa(11882)),	-- Playing with Fire
 								q( 11954, {	-- Striking Back
-									["g"] = {
+									["groups"] = {
 									},
 									["qg"] = 26221,	-- Earthen Ring Elder
 								}),
 								qa(11970, {	-- The Master of Summer Lore
-									["g"] = {
+									["groups"] = {
 									},
 									["qg"] = 20102,	-- Goblin Commoner
 								}),
 								qh(11971, {	-- The Spinner of Summer Tales
-									["g"] = {
+									["groups"] = {
 									},
 									["qg"] = 20102,	-- Goblin Commoner
 								}),
 								q( 11886, {	-- Unusual Activity
-									["g"] = {
+									["groups"] = {
 									},
 									["qg"] = 26221,	-- Earthen Ring Elder
 								}),
@@ -107,23 +107,23 @@ _.Zones =
 							n(-17, { -- Quests
 								["groups"] = {
 									qa(29074, {	-- A Season for Celebration
-										["g"] = {
+										["groups"] = {
 										},
 										["qg"] = 20102,	-- Goblin Commoner
 									}),
 									qh(29400, {	-- A Season for Celebration
-										["g"] = {
+										["groups"] = {
 										},
 										["qg"] = 20102,	-- Goblin Commoner
 									}),
 									q( 12404),	-- Candy Bucket
 									qa(11356, {	-- Costumed Orphan Matron
-										["g"] = {
+										["groups"] = {
 										},
 										["qg"] = 20102,	-- Goblin Commoner
 									}),
 									qh(11357, {	-- Masked Orphan Matron
-										["g"] = {
+										["groups"] = {
 										},
 										["qg"] = 20102,	-- Goblin Commoner
 									}),
@@ -139,12 +139,12 @@ _.Zones =
 						["groups"]  = {
 							n(-17, { 	-- Quests
 								qa(14022, {	-- Pilgrim's Bounty
-									["g"] = {
+									["groups"] = {
 									},
 									["qg"] = 20102,	-- Goblin Commoner
 								}),
 								qh(14036, {	-- Pilgrim's Bounty
-									["g"] = {
+									["groups"] = {
 									},
 									["qg"] = 20102,	-- Goblin Commoner
 								}),
@@ -157,7 +157,7 @@ _.Zones =
 						["groups"] = {
 							n(-17, { -- Quests
 								qh(11446, {	-- Brewfest!
-									["g"] = {
+									["groups"] = {
 									},
 									["qg"] = 20102,	-- Goblin Commoner
 								}),
@@ -189,7 +189,7 @@ _.Zones =
 				}),
 				n(-25, {	-- Pet Battle
 					q(31925, {	-- Morulu The Elder
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 66553,	-- Morulu The Elder
 					}),
@@ -200,35 +200,35 @@ _.Zones =
 						i(31724),
 					}),
 					q( 10210, {	-- A'dal
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 19684,	-- Haggard War Veteran
 					}),
 					qdg(qh(10167, {	-- Auchindoun...
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10102 },	-- A Secret Revealed (*UNTESTED*)
 					})),
 					qdg(q( 10180, {	-- Can't Stay Away
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 19045,	-- Oloraak
 					})),
 					qh(11046, {	-- Chief Apothecary Hildagard
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 19678,	-- Fantei
 						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
 					}),
 					q( 10211, {	-- City of Light
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuests"] = { 10210 },	-- A'dal
 					}),
 					q( 44863, {	-- Clearing the Air
-						["g"] = {
+						["groups"] = {
 							i(142279),	-- Plans: Windforged Rapier
 							i(142283),	-- Plans: Skyforged Great Axe
 							i(142282),	-- Plans: Stormforged Axe
@@ -237,19 +237,19 @@ _.Zones =
 						["requiredSkill"] = 164,	-- Blacksmithing
 					}),
 					q( 10009, {	-- Crackin' Some Skulls
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuests"] = { 10004 },	-- Patience and Understanding *UNTESTED*
 					}),
 					q( 47523, {	-- Disturbance Detected: Black Temple (EVENT: TIMEWALKING)
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 123252,	-- Vormu
 						["description"] = "This quest is only available during BC Timewalking.",
 					}),
 					q( 41160, {	-- Earth to Earth
-						["g"] = {
+						["groups"] = {
 							i(142284),	-- Plans: Stoneforged Claymore
 							i(142287),	-- Plans: Great Earthforged Hammer
 							i(142286),	-- Plans: Lavaforged Warhammer
@@ -258,13 +258,13 @@ _.Zones =
 						["requiredSkill"] = 164,	-- Blacksmithing
 					}),
 					q( 10949, {	-- Entry Into the Black Temple
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10948 },	-- The Hostage Soul *UNTESTED*
 					}),
 					qdg(q(10704, {	-- How to Break Into the Arcatraz
-						["g"] = {
+						["groups"] = {
 							i(31465),	-- Sha'tari Achorite's Cloak
 							i(31461),	-- A'dal's Gift
 							i(31464),	-- Naaru Belt of Precision
@@ -275,13 +275,13 @@ _.Zones =
 						["sourceQuests"] = { 10280 },	-- Special Delivery to Shattrath City
 					})),
 					q(  9990, {	-- Investigate Tuurem
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18484,	-- Wind Trader Lathrai
 						["sourceQuests"] = { 10112 },	-- A Personal Favor *UNTESTED*
 					}),
 					q( 10010, {	-- It's Just That Easy?
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuests"] = { 10009 },	-- Crackin' Some Skulls *UNTESTED*
@@ -304,7 +304,7 @@ _.Zones =
 						}),
 					}),
 					q( 10037, {	-- Rather Be Fishin'
-						["g"] = {
+						["groups"] = {
 							i(25978)	-- Seth's Graphite Fishing Pole
 						},
 						["qg"] = 18653,	-- Seth
@@ -327,7 +327,7 @@ _.Zones =
 						}),
 					}),
 					q( 10849, {	-- Seek Out Kirrik
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["sourceQuests"] = { 10847 },	-- The Eyes of Skettis *UNTESTED*
@@ -373,31 +373,31 @@ _.Zones =
 						}),
 					}),
 					q( 13082, {	-- The Boon of A'dal
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 13081 },	-- The Will of the Naaru *UNTESTED*
 					}),
 					q( 10550, {	-- The Bundle of Bloodthistle
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 21411,	-- Tobias the Filth Gorger
 						["sourceQuests"] = { 10547 },	-- Of Thistleheads and Eggs...
 					}),
 					q( 10847, {	-- The Eyes of Skettis
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["breadcrumbQuestID"] = { 10863, 10908, 10862 },	-- Secrets of the Arakkoa, Speak with Rilak the Redeemed, or Surrender to the Horde
 					}),
 					q( 10251, {	-- The Master's Grand Design?
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 19720,	-- "Dirty" Larry
 						["sourceQuests"] = { 10231 },	-- What Book?  I Don't See Any Book. *UNTESTED*
 					}),
 					q( 10879, {	-- The Skettis Offensive
-						["g"] = {
+						["groups"] = {
 							i(31727),	-- Choker of Bloodied Feathers
 							i(31726),	-- Necklace of Bloodied Feathers
 						},
@@ -405,103 +405,103 @@ _.Zones =
 						["sourceQuests"] = { 10874 },	-- Veil Shalas: Signal Fires *UNTESTED*
 					}),
 					q( 10883, {	-- The Tempest Key
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuests"] = { 10588 },	-- The Cipher of Damnation
 					}),
 					qr(q(13430, {	-- Trial of the Naaru: Magtheridon
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18481,	-- A'dal
 						-- ["sourceQuests"] = {  },	-- UNKNOWN
 					})),
 --					q(10888),	-- Trial of the Naaru: Magtheridon (REMOVED / REPLACED WITH PREVIOUS QUEST)
 					qdg(q(10884, {	-- Trial of the Naaru: Mercy
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10883 },	-- The Tempest Key
 					})),
 					qdg(q(10885, {	-- Trial of the Naaru: Strength
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10883 },	-- The Tempest Key
 					})),
 					qdg(q(10886, {	-- Trial of the Naaru: Tenacity
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10883 },	-- The Tempest Key
 					})),
 					qdg(q(29642, {	-- Trouble at Auchindoun
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 						-- ["sourceQuests"] = {  },	-- UNKNOWN IF HAS SOURCE
 					})),
 					qdg(q(11369, {	-- Wanted: A Black Stalker Egg
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 24369,	-- Wind Trader Zhareem
 					})),
 					qdg(q(11389, {	-- Wanted: Arcatraz Sentinels
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
 					qdg(q(11371, {	-- Wanted: Coilfang Myrmidons
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
 					qdg(q(11376, {	-- Wanted: Malicious Instructors
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
 					qdg(q(11383, {	-- Wanted: Rift Lords
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
 					qdg(q(11364, {	-- Wanted: Shattered Hand Centurions
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
 					qdg(q(11500, {	-- Wanted: Sisters of Torment
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
 					qdg(q(11385, {	-- Wanted: Sunseeker Channelers
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
 					qdg(q(11387, {	-- Wanted: Tempest-Forge Destroyers
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 					})),
 					q( 10231, {	-- What Book? I Don't See Any Book.
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 19715,	-- Ezekiel
 						["sourceQuests"] = { 10228 },	-- Ezekiel *UNTESTED*
 					}),
 					qa(11045, {	-- Zorus the Judicator
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 19678,	-- Fantei
 						["isBreadcrumb"] = true,	-- for "A Ghost in the Machine" in SMV, mutually exclusive w/other bcrumbs
@@ -509,97 +509,97 @@ _.Zones =
 					faction( 932, {	-- The Aldor
 						["groups"] = {
 							q(10551, {	-- Allegiance to the Aldor
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18166,	-- Archmage Khadgar
 								["sourceQuests"] = { 10211 },	-- City of Light
 							}),
 							q(10554, {	-- Ishanah
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18166,	-- Archmage Khadgar
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
 							q(10021, {	-- Restoring the Light
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18166,	-- Archmage Khadgar
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
 							q(10325, {	-- Marks of Kil'jaeden (may be able to be picked up in Netherstorm)
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
 							qr(q(10327, {	-- Single Mark of Kil'jaeden
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
 							})),
 							qr(q(10326, {	-- More Marks of Kil'jaeden
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
 							})),
 							q(10653, {	-- Marks of Sargeras  (may be able to be picked up in Netherstorm)
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
 							qr(q(10655, {	-- Single Mark of Sargeras
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
 							})),
 							qr(q(10654, {	-- More Marks of Sargeras
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
 							})),
 							q(10020, {	-- A Cure for Zahlia
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18597,	-- Sha'nir
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
 							q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
 							q(10420, {	-- A Cleansing Light
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18538,	-- Ishanah
 								-- ["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor (this quest appeared before I aligned myself with The Aldor)
 							}),
 							qr(q(10421, {	-- Fel Armaments
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18538,	-- Ishanah
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10420 },	-- A Cleansing Light
 							})),
 							q(11038, {	-- Assist Exarch Orelis
-								["g"] = {
+								["groups"] = {
 								},
 								["qgs"] = { 23271, 23270 },	-- Vindicator Kaan & Vindicator Aeus
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
 							}),
 							q(10409, {	-- Deathblow to the Legion (awarded "Socrethar" criteria for Netherstorm "Into the Nether" overall quest achievement)
-								["g"] = {
+								["groups"] = {
 									i(30368),	-- Slippers of the High Priestess
 									i(30369),	-- Cleansed Fel Pauldrons
 									i(30370),	-- Gauntlets of the Redeemed Vindicator
@@ -609,13 +609,13 @@ _.Zones =
 								["sourceQuests"] = { 10410 },	-- Ishanah's Help
 							}),
 							q(10017, {	-- Strained Supplies
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18597,	-- Sha'nir
 								["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
 							}),
 							q(10019, {	-- More Venom Sacs
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18597,	-- Sha'nir
 								["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
@@ -627,7 +627,7 @@ _.Zones =
 					faction(1011, {	-- Lower City
 						["groups"] = {
 							q(10917,  {  -- The Outcast's Plight
-								["g"] = {
+								["groups"] = {
 									i(31800,  {  -- Outcasts Cache
 										i(28495),	-- Windwalker's Sash
 										i(28496),	-- Talonite's Belt
@@ -705,13 +705,13 @@ _.Zones =
 					faction(1038, {	-- Ogri'la
 						["groups"] = {
 							q(10984, {	-- Speak with the Ogre
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 22497,	-- V'eru
 								["isBreadcrumb"] = true,	-- for "Mog'dorg the Wizened"
 							}),
 							q(10983, {	-- Mog'dorg the Wizened
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 22940,	-- Grok
 								["breadcrumbQuestID"] = { 10984 },	-- Speak with the Ogre
@@ -722,19 +722,19 @@ _.Zones =
 					faction( 934, {	-- The Scryers
 						["groups"] = {
 							q(10552, {	-- Allegiance to the Scryers
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18166,	-- Archmage Khadgar
 								["sourceQuests"] = { 10211 },	-- City of Light
 							}),
 							q(10024, {	-- Voren'thal's Visions
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18596,	-- Arcanist Adyria
 								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
 							}),
 							q(10025, {	-- More Basilisk Eyes
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 18596,	-- Arcanist Adyria
 								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
@@ -750,13 +750,13 @@ _.Zones =
 							q(10658),	-- More Sunfury Signets
 							q(10659),	-- Single Sunfury Signet
 							q(11039, {	-- Report to Spymaster Thalodien
-								["g"] = {
+								["groups"] = {
 								},
 								["qgs"] = { 23273, 23272 },	-- Arcanist Raestan, Arcanist Savan
 								-- ["sourceQuests"] = {  },	-- UNTESTED
 							}),
 							q(10507, {	-- Turning Point
-								["g"] = {
+								["groups"] = {
 									i(30375),	-- Gauntlets of the Vanquisher
 									i(30372),	-- Socrethar's Girdle
 									i(30373),	-- Netherfused Pauldrons
@@ -773,18 +773,18 @@ _.Zones =
 					faction(1031, {	-- Sha'tari Skyguard
 						["groups"] = {
 							q(11096, {	-- Threat from Above
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23449,	-- Yuula
 							}),
 							q(11098, {	-- To Skettis!
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23449,	-- Yuula
 								["sourceQuests"] = { 11096 },	-- Threat From Above *UNTESTED*
 							}),
 							q(11028, {	-- Countdown to Doom
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 22292,	-- Rilak the Redeemed
 								["sourceQuests"] = { 11024 },	-- An Ally in Lower City *UNTESTED*
@@ -795,23 +795,23 @@ _.Zones =
 					faction(1077, {	-- Shattered Sun Offensive
 						["groups"] = {
 							qr(q(11877, {	-- Sunfury Attack Plans
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 25140,	-- Lord Torvos
 							})),
 							qr(q(11880, {	-- The Multiphase Survey
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 19475,	-- Harbinger Haronem
 							})),
 							qr(q(11875, {	-- Gaining the Advantage
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 19202,	-- Emissary Mordin
 								["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
 							})),
 							qr(q(11514, {	-- Maintaining the Sunwell Portal
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 24932,	-- Exarch Nasuun
 							})),
@@ -1874,7 +1874,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["lvl"] = 1,
+			["lvl"] = 58,
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\spell_arcane_teleportshattrath",
 			["description"] = "|cff66ccffShattrath City is a major hub in Outland situated in the northwestern portion of Terokkar Forest. It is a capital-sized sanctuary city populated by ancient heroes and naaru. It is the first capital available to both sides.|r",				

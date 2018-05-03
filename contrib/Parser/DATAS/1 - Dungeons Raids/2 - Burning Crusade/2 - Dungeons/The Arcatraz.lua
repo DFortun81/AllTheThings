@@ -11,18 +11,18 @@ _.Instances =
 					n(-17, {	-- Quests
 						q(29674),	-- Unbound Darkness
 						q(29675, {	-- Hey There Dalliah
-							["g"] = {
+							["groups"] = {
 							},
 							["sourceQuests"] = { 29674 },	-- Unbound Darkness
 						}),
 						q(29681, {	-- Maximum Security Breakout
-							["g"] = {
+							["groups"] = {
 							},
 							["sourceQuests"] = { 29675 },	-- Hey There Dalliah
 						}),
 						faction(932, {	-- The Aldor
 							q(10706, {	-- A Mysterious Portent
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 21962,	-- Udalo
 								["sourceQuests"] = { 10705 },	-- Seer Udalo

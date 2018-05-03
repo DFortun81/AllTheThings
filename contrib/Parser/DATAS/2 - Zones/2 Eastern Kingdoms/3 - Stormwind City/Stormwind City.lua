@@ -399,7 +399,7 @@ _.Zones =
 				}),
 				na(-17, {	-- Quests
 					qdg(qa(27355, {	-- A Boon for the Powerful
-						["g"] = {
+						["groups"] = {
 							i(65496),	-- Staff of Justified Sins
 						},
 						["qg"] = 461,	-- Demisette Cloyce
@@ -407,7 +407,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	-- 
 					})),
 					qdg(qa(27363, {	-- A Budding Young Surgeon
-						["g"] = {
+						["groups"] = {
 							i(65480),	-- Staff of the Technocrat
 						},
 						["qg"] = 45306,	-- Chief Surgeon Gashweld
@@ -415,7 +415,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	-- 
 					})),
 					qdg(qa(28393, {	-- A Dangerous Alliance
-						["g"] = {
+						["groups"] = {
 							i(65618),	-- Faceguard of the Crown
 							i(65639),	-- Headguard of the Crown
 						},
@@ -425,7 +425,7 @@ _.Zones =
 					})),
 --					qg(, qa(26190)),	-- A Fisherman's Feast
 					qdg(qa(27337, {	-- A Fitting Weapon
-						["g"] = {
+						["groups"] = {
 							i(65492),	-- Broadsword of the Crown
 							i(65493),	-- Greatsword of the Crown
 						},
@@ -451,7 +451,7 @@ _.Zones =
 					qg(, qa(42978)),	-- A Royal Audience
 --]]
 					qdg(qa(27351, {	-- A Royal Reward
-						["g"] = {
+						["groups"] = {
 							i(65486),	-- SI:7 Special Issue Dagger
 						},
 						["qgs"] = { 51998, 13283 },	-- Arthur Huwe & Lord Tony Romano
@@ -470,7 +470,7 @@ _.Zones =
 					qg(, qa(44473)),	-- A Weapon of the Alliance
 --]]
 					qdg(qa(27344, {	-- A Well-Earned Reward
-						["g"] = {
+						["groups"] = {
 							i(65465),	-- Crossbow of the Crown
 						},
 						["qg"] = 44247,	-- Wulf Hansreim
@@ -501,7 +501,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(26488)),	-- Big Gulp
 --]]
 					qdg(qa(27353, {	-- Blessings of the Elements
-						["g"] = {
+						["groups"] = {
 							i(65488),	-- Battleaxe of the Farseer
 							i(65489),	-- Spell Axe of the Farseer
 						},
@@ -543,7 +543,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(31981)),	-- Exceeding Expectations
 --]]
 					qdg(qa(27361, {	-- Favored of the Light
-						["g"] = {
+						["groups"] = {
 							i(65482),	-- Staff of the Hallowed
 						},
 						["qg"] = 376,	-- High Priestess Laurena
@@ -621,7 +621,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(38206)),	-- Making the Rounds
 					--]]
 					qdg(qa(27354, {	-- Mastering the Arcane
-						["g"] = {
+						["groups"] = {
 							i(65467),	-- Staff of the Royal Wizard
 						},
 						["qg"] = 331,	-- Maginor Dumas
@@ -675,7 +675,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(29399)),	-- Shopping Around
 --]]
 					qdg(qa(28401, {	-- Slaves of the Firelord
-						["g"] = {
+						["groups"] = {
 							i(65640), 		-- Mask of the Farseer
 							i(65622), 		-- Headcover of the Farseer
 						},
@@ -692,7 +692,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa( 9325)),	-- Stealing Thunder Bluff's Flame
 --]]
 					qdg(qa(28399, {	-- Stones of Binding
-						["g"] = {
+						["groups"] = {
 							i(65621),	-- Horns of Justified Sins
 						},
 						["qg"] = 461,	-- Demisette Cloyce
@@ -739,7 +739,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(29403)),	-- The Collector's Agent
 --]]
 					qdg(qa(28406, {	-- The Dark Iron Army
-						["g"] = {
+						["groups"] = {
 							i(65624),	-- SI:7 Special Issue Facemask
 						},
 						["qgs"] = { 51998, 13283 },	-- Arthur Huwe & Lord Tony Romano
@@ -755,7 +755,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(40517)),	-- The Fallen Lion
 --]]
 					qdg(qa(28394, {	-- The Golem Lord's Creations
-						["g"] = {
+						["groups"] = {
 							i(65619),	-- Helm of the Crown
 						},
 						["qg"] = 44247,	-- Wulf Hansreim
@@ -767,7 +767,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(47221)),	-- The Hand of Fate
 --]]
 					qdg(q(27343, {	-- The Hand of the Light
-						["g"] = {
+						["groups"] = {
 							i(65475),	-- Mace of the Order
 							i(65476),	-- Gavel of the Order
 							i(65477),	-- Warhammer of the Order
@@ -841,7 +841,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, q( 29482)),	-- Transmutation Master
 --]]
 					qdg(qa(28328, {	-- Twilight Scheming
-						["g"] = {
+						["groups"] = {
 							i(65616),	-- Crown of the Hallowed
 						},
 						["qg"] = 376,	-- Twilight Scheming
@@ -858,7 +858,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, q(11886)),	-- Unusual Activity
 --]]
 					qdg(q(28405, {	-- Weapons of Darkness
-						["g"] = {
+						["groups"] = {
 							i(65623),	-- Helm of the Order
 							i(65641),	-- Faceguard of the Order
 							i(65646),	-- Headguard of the Order

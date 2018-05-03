@@ -1861,6 +1861,7 @@ _.Zones =
 			},
 			["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
 			["maps"] = { 1171, 1135, 1170 },
+			["lvl"] = 110,
 			["isRaid"] = true,
 		}),
 	}),
