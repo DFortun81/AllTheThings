@@ -104,13 +104,9 @@ _.Zones =
 					p(414), -- Scorpid
 				}),
 				n(-17, {  	-- Quests
-					ach(1271, { -- To Hellfire and Back [Horde Version]
+					h(ach(1271, { -- To Hellfire and Back [Horde Version]
 						crit(1, { -- Disrupt the Burning Legion
 							qh(49816, { -- To Outland! [Breadcrumb]
-								["groups"] = {
-								},
-							}),
-							qa(49862, { -- To Outland! [Breadcrumb]
 								["groups"] = {
 								},
 							}),
@@ -120,35 +116,17 @@ _.Zones =
 								["qg"] = 19253, -- Lieutenant General Orion
 								["sourceQuests"] = { 49816 }, -- To Outland [Breadcrumb]
 							}),
-							qa(10288, { -- Arrival in Outland
-								["groups"] = {
-								},
-								["qg"] = 19229, -- Commander Duron
-								["sourceQuests"] = { 49862 }, -- To Outland [Breadcrumb]
-							}),
 							qh(10289, { -- Journey to Thrallmar
 								["groups"] = {
 								},
 								["qg"] = 18930, -- Vlagga Freyfeather
 								["sourceQuests"] = { 10120 }, -- Arrival in Outlanad
 							}),
-							qa(10140, { -- Journey to Honor Hold
-								["groups"] = {
-								},
-								["qg"] = 18931, -- Amish Wildhammer
-								["sourceQuests"] = { 10288 }, -- Arrival in Outland
-							}),
 							qh(10291, { -- Report to Nazgrel
 								["groups"] = {
 								},
 								["qg"] = 19255, -- General Krakork
 								["sourceQuests"] = { 10289 }, -- Journey to Thrallmar
-							}),
-							qa(10254, { -- Force Commander Danath
-								["groups"] = {
-								},
-								["qg"] = 19308, -- Marshal Isildor
-								["sourceQuests"] = { 10140 }, -- Journey to Honor Hold
 							}),
 							qh(10086, { -- I Work... For the Horde!
 								["groups"] = {
@@ -159,33 +137,11 @@ _.Zones =
 								},
 								["qg"] = 21283, -- Megzeg Nukklebust
 							}),
-							qa(10055, { -- Waste Not, Want Not
-								["groups"] = {
-									i(29931), -- Phantasmal Headdress
-									i(29938), -- Battle Seeker Chesguard
-									i(29943), -- Legionnaire's Studded Helm
-									i(29945), -- Magistrate's Greaves
-								},
-								["qg"] = 21209, -- Dumphry
-								["sourceQuests"] = { 10254 }, -- Force Commander Danath
-							}),
 							qh(10121, { -- Eradicate the Burning Legion
 								["groups"] = {
 								},
 								["qg"] = 3230, -- Nazgrel
 								["sourceQuests"] = { 10291 }, -- Report to Nazgrel
-							}),
-							qa(10141, { -- The Legion Reborn
-								["groups"] = {
-								},
-								["qg"] = 16819, -- Force Commander Danath Trollbane
-								["sourceQuests"] = { 10254 }, -- Force Commander Danath
-							}),
-							qa(10160, { -- Know Your Enemy
-								["groups"] = {
-								},
-								["qg"] = 16819, -- Force Commander Danath Trollbane
-								["sourceQuests"] = { 10254 }, -- Force Commander Danath
 							}),
 							qh(10450, { -- Bonechewer Blood
 								["groups"] = {
@@ -198,17 +154,6 @@ _.Zones =
 								["qg"] = 21256, -- Vurtok Axebreaker
 								["sourceQuests"] = { 10291 }, -- Report to Nazgrel
 							}),
-							qa(10482, { -- Fel Orc Scavengers
-								["groups"] = {
-									i(29915), -- Desolation Rod
-									i(29919), -- Adamantine Kite Shield
-									i(29917), -- Landslide Buckler
-									i(29914), -- Hellfire Skiver
-									i(29916), -- Ironstar Repeater
-								},
-								["qg"] = 16820, -- Lieutenant Amadi
-								["sourceQuests"] = { 10160 }, -- Know Your Enemy
-							}),
 							qh(10087, { -- Burn It Up... For the Horde!
 								["groups"] = {
 									i(29928), -- Wanderer's Stitched Trousers
@@ -218,12 +163,6 @@ _.Zones =
 								},
 								["qg"] = 21283, -- Megzeg Nukklebust
 								["sourceQuests"] = { 10086 }, -- Work For the Horde
-							}),
-							qa(10078, { -- Laying Waste to the Unwanted
-								["groups"] = {
-								},
-								["qg"] = 21209, -- Dumphry
-								["sourceQuests"] = { 10055 }, -- Waste Not, Want Not
 							}),
 							qh(10123, { -- Felspark Ravine
 								["groups"] = {
@@ -236,40 +175,17 @@ _.Zones =
 								["qg"] = 19256, -- Sergeant Shatterskull
 								["sourceQuests"] = { 10121 }, -- Eradicate the Burning Legion
 							}),
-							qa(10142, { -- The Path of Anguish
-								["groups"] = {
-									i(29908), -- Rage Reaver
-									i(29909), -- Screaming Dagger
-									i(29910), -- The Staff of Twin Worlds
-									i(29911), -- Agamaggan's Quill
-									i(29913), -- Foe Reaver
-								},
-								["qg"] = 19309, -- Sergeant Altumus
-								["sourceQuests"] = { 10141 }, -- The Legion Reborn
-							}),
 							qh(10449, { -- Apothecary Zelana
 								["groups"] = {
 								},
 								["qg"] = 21256, -- Vurtok Axebreaker
 								["sourceQuests"] = { 10450 }, -- Bonechewer Blood
 							}),
-							qa(10483, { -- Ill Omens
-								["groups"] = {
-								},
-								["qg"] = 16820, -- Lieutenant Amadi
-								["sourceQuests"] = { 10482 }, -- Fel Orc Scavengers
-							}),
 							qh(10124, { -- Forward Base: Reaver's Fall
 								["groups"] = {
 								},
 								["qg"] = 19256, -- Sergeeant Shatterskull
 								["sourceQuests"] = { 10123 }, -- Felspark Ravine
-							}),
-							qa(10143, { -- Expedition Point
-								["groups"] = {
-								},
-								["qg"] = 19309, -- Sergeant Altumus
-								["sourceQuests"] = { 10142 }, -- The Path of Anguish
 							}),
 							qh(10208, { -- Disrupt Their Reinforcements
 								["groups"] = {
@@ -282,17 +198,6 @@ _.Zones =
 								["qg"] = 19273, -- Forward Commander To'arch
 								["sourceQuests"] = { 10124 }, -- Forward Base: Reaver's Fall
 							}),
-							qa(10144, { -- Disrupt Their Reinforcements
-								["groups"] = {
-									i(29927), -- Shadowbrim Travel Hat
-									i(29939), -- Flayer-Hide Leggings
-									i(29932), -- Arcane Ringed Tunic
-									i(29946), -- Invader's Greathelm
-									i(29935), -- Fore Scarred Breastplate
-								},
-								["qg"] = 19310, -- Forward Commander Kingston
-								["sourceQuests"] = { 10143 }, -- Expedition Point
-							}),
 							qh(10129, { -- Mission: Gateways Murketh and Shaadraz
 								["groups"] = {
 									i(29942), -- Battle Scarred Leggings
@@ -302,16 +207,6 @@ _.Zones =
 								},
 								["qg"] = 19273, -- Forwarad Commander To'arch
 								["sourceQuests"] = { 10208 }, -- Disrupt Their Reinforcements
-							}),
-							qa(10146, { -- Mission: Gateways Murketh and Shaadraz
-								["groups"] = {
-									i(29942), -- Battle Scarred Leggings
-									i(29937), -- Helm of Infinite Visions
-									i(29929), -- Raging Spirit Harness
-									i(29944), -- Protectorate Breastplate
-								},
-								["qg"] = 19310, -- Forward Commander Kingston
-								["sourceQuests"] = { 10144 }, -- Disrupt Their Reinforcements
 							}),
 							qh(10388, { -- Return to Thrallmar
 								["groups"] = {
@@ -492,7 +387,182 @@ _.Zones =
 								["sourceQuests"] = { 9372 }, -- Demonic Contamination
 							}),
 						}),
-					}),
+					})),
+					a(ach(1189, { -- To Hellfire and Back [Horde Version]
+						crit(1, { -- Disrupt the Burning Legion
+							qa(49862, { -- To Outland! [Breadcrumb]
+								["groups"] = {
+								},
+							}),
+							qa(10288, { -- Arrival in Outland
+								["groups"] = {
+								},
+								["qg"] = 19229, -- Commander Duron
+								["sourceQuests"] = { 49862 }, -- To Outland [Breadcrumb]
+							}),
+							qa(10140, { -- Journey to Honor Hold
+								["groups"] = {
+								},
+								["qg"] = 18931, -- Amish Wildhammer
+								["sourceQuests"] = { 10288 }, -- Arrival in Outland
+							}),
+							qa(10254, { -- Force Commander Danath
+								["groups"] = {
+								},
+								["qg"] = 19308, -- Marshal Isildor
+								["sourceQuests"] = { 10140 }, -- Journey to Honor Hold
+							}),
+							qa(10055, { -- Waste Not, Want Not
+								["groups"] = {
+									i(29931), -- Phantasmal Headdress
+									i(29938), -- Battle Seeker Chesguard
+									i(29943), -- Legionnaire's Studded Helm
+									i(29945), -- Magistrate's Greaves
+								},
+								["qg"] = 21209, -- Dumphry
+								["sourceQuests"] = { 10254 }, -- Force Commander Danath
+							}),
+							qa(10141, { -- The Legion Reborn
+								["groups"] = {
+								},
+								["qg"] = 16819, -- Force Commander Danath Trollbane
+								["sourceQuests"] = { 10254 }, -- Force Commander Danath
+							}),
+							qa(10160, { -- Know Your Enemy
+								["groups"] = {
+								},
+								["qg"] = 16819, -- Force Commander Danath Trollbane
+								["sourceQuests"] = { 10254 }, -- Force Commander Danath
+							}),
+							qa(10482, { -- Fel Orc Scavengers
+								["groups"] = {
+									i(29915), -- Desolation Rod
+									i(29919), -- Adamantine Kite Shield
+									i(29917), -- Landslide Buckler
+									i(29914), -- Hellfire Skiver
+									i(29916), -- Ironstar Repeater
+								},
+								["qg"] = 16820, -- Lieutenant Amadi
+								["sourceQuests"] = { 10160 }, -- Know Your Enemy
+							}),
+							qa(10078, { -- Laying Waste to the Unwanted
+								["groups"] = {
+								},
+								["qg"] = 21209, -- Dumphry
+								["sourceQuests"] = { 10055 }, -- Waste Not, Want Not
+							}),
+							qa(10142, { -- The Path of Anguish
+								["groups"] = {
+									i(29908), -- Rage Reaver
+									i(29909), -- Screaming Dagger
+									i(29910), -- The Staff of Twin Worlds
+									i(29911), -- Agamaggan's Quill
+									i(29913), -- Foe Reaver
+								},
+								["qg"] = 19309, -- Sergeant Altumus
+								["sourceQuests"] = { 10141 }, -- The Legion Reborn
+							}),
+							qa(10483, { -- Ill Omens
+								["groups"] = {
+								},
+								["qg"] = 16820, -- Lieutenant Amadi
+								["sourceQuests"] = { 10482 }, -- Fel Orc Scavengers
+							}),
+							qa(10143, { -- Expedition Point
+								["groups"] = {
+								},
+								["qg"] = 19309, -- Sergeant Altumus
+								["sourceQuests"] = { 10142 }, -- The Path of Anguish
+							}),
+							qa(10144, { -- Disrupt Their Reinforcements
+								["groups"] = {
+									i(29927), -- Shadowbrim Travel Hat
+									i(29939), -- Flayer-Hide Leggings
+									i(29932), -- Arcane Ringed Tunic
+									i(29946), -- Invader's Greathelm
+									i(29935), -- Fore Scarred Breastplate
+								},
+								["qg"] = 19310, -- Forward Commander Kingston
+								["sourceQuests"] = { 10143 }, -- Expedition Point
+							}),
+							qa(10146, { -- Mission: Gateways Murketh and Shaadraz
+								["groups"] = {
+									i(29942), -- Battle Scarred Leggings
+									i(29937), -- Helm of Infinite Visions
+									i(29929), -- Raging Spirit Harness
+									i(29944), -- Protectorate Breastplate
+								},
+								["qg"] = 19310, -- Forward Commander Kingston
+								["sourceQuests"] = { 10144 }, -- Disrupt Their Reinforcements
+							}),
+							
+						}),
+						--[[
+						crit(2, { -- Cruel's Intentions
+						}),
+						crit(3, { -- The Hand of Kargath
+						}),
+						crit(4, { -- Spinebreaker Post
+						}),
+						crit(5, { -- The Mag'har
+						}),
+						crit(6, { -- Falcon Watch
+						}),
+						crit(7, { -- Green, But Not Orcs [Missing Rest that procs achieve]
+						}),
+						--]]
+						crit(8, { -- Cenarion Post
+							i(29476, { -- Crimson Crystal Shard
+								q(10134, { -- Crimson Crystal Clue
+									["groups"] = {
+									},
+									["qg"] = 19188, -- Raging Colossus
+								}),
+							}),
+							q(10349, { -- The Earthbinder
+								["groups"] = {
+								},
+								["qg"] = 19293, -- Tola'thion
+								["sourceQuests"] = { 10134 }, -- Crimson Crystal Clue
+							}),
+							q(10351, { -- Natural Remedies
+								["groups"] = {
+									i(28074), -- Studded Green Anklewraps
+									i(28075), -- Destroyer's Mantle
+									i(28069), -- Golden Cenarion Greaves
+									i(28070), -- Verdant Handwraps
+								},
+								["qg"] = 19294, -- Earthbinder Galandria Nightbreeze
+								["sourceQuests"] = { 10349 }, -- The Earthbinder
+							}),
+							q(10132, { -- Colossal Menace
+								["groups"] = {
+									i(28062), -- Expedition Repeater
+									i(28063), -- Survivalist's Wand
+								},
+								["qg"] = 19293, -- Tola'thion
+							}),
+							q(9372, { -- Demonic Contamination
+								["groups"] = {
+								},
+								["qg"] = 16991, -- Thiah Redmane
+							}),
+							q(10159, { -- Keep Thornfang Hill Clear!
+								["groups"] = {
+								},
+								["qg"] = 16888, -- Mahuram Stouthoof
+							}),
+							q(10255, { -- Testing the Antidote
+								["groups"] = {
+									i(25986), -- Dreadtusk's Fury
+									i(25987), -- Helboar Carving Blade
+									i(25985), -- Cenarion Naturalist's Staff
+								},
+								["qg"] = 16991, -- Thiah Redmane
+								["sourceQuests"] = { 9372 }, -- Demonic Contamination
+							}),
+						}),
+					})),
 					n(-168, { -- Other Quests
 						sz(1271,8, { -- Cenarion Post
 							["groups"] = {
