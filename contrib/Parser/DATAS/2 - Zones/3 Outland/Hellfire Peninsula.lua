@@ -495,75 +495,87 @@ _.Zones =
 					}),
 					n(-168, { -- Other Quests
 						sz(1271,8, { -- Cenarion Post
-							q(9912, { -- The Cenarion Expedition [Breadcrumb]
-								["groups"] = {
-								},
-								["qg"] = 16885,
-							}),
+							["groups"] = {
+								q(9912, { -- The Cenarion Expedition [Breadcrumb]
+									["groups"] = {
+									},
+									["qg"] = 16885,
+								}),
+							},
+							["collectible"] = false,	-- Turn off Collectible flags.
 						}),
 						sz(862,3, { -- Falcon Watch
-							qh(10442, { -- Helping the Cenarion Post
-								["groups"] = {
-								},
-								["qg"] = 16790, -- Falconer Drenna Riverwind
-							}),
+							["groups"] = {
+								qh(10442, { -- Helping the Cenarion Post
+									["groups"] = {
+									},
+									["qg"] = 16790, -- Falconer Drenna Riverwind
+								}),
+							},
+							["collectible"] = false,	-- Turn off Collectible flags.
 						}),
 						sz(862,4, { -- Spinebreaker Post
-							qh(10220,{	-- Make Them Listen	
-								["groups"] = {	
-								},	
-								["qg"] = 19682,	-- Emissary Mordiba
-							}),		
-							qh(10278,{	-- The Warp Rifts	
-								["groups"] = {	
-								},	
-								["qg"] = 19683,	-- Ogath the Mad
-							}),		
-							qh(9345,{	-- Preparing the Salve	
-								["groups"] = {	
-								},	
-								["qg"] = 16858,	-- Grelag
-							}),		
-							qh(10809,{	-- Wanted: Worg Master Kruush	
-								["groups"] = {	
-								},	
-								--["qg"] = Wanted Poster,	
-							}),
+							["groups"] = {
+								qh(10220,{	-- Make Them Listen	
+									["groups"] = {	
+									},	
+									["qg"] = 19682,	-- Emissary Mordiba
+								}),		
+								qh(10278,{	-- The Warp Rifts	
+									["groups"] = {	
+									},	
+									["qg"] = 19683,	-- Ogath the Mad
+								}),		
+								qh(9345,{	-- Preparing the Salve	
+									["groups"] = {	
+									},	
+									["qg"] = 16858,	-- Grelag
+								}),		
+								qh(10809,{	-- Wanted: Worg Master Kruush	
+									["groups"] = {	
+									},	
+									--["qg"] = Wanted Poster,	
+								}),
+							},
+							["collectible"] = false,	-- Turn off Collectible flags.
 						}),
 						sz(862,11, { -- Thrallmar
-							q(9498, { -- Falcon Watch [Breadcrumb]
-								["groups"] = {
-								},
-								["qg"] = 21256, -- Vurtok Axebreaker
-								["sourceQuests"] = { 10450 }, -- Bonechewer Blood
-								["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 }, -- Every race but Blood Elves
-							}),
-							q(9499, { -- Falcon Watch [Breadcrumb]
-								["groups"] = {
-								},
-								["qg"] = 21256, -- Vurtok Axebreaker
-								["sourceQuests"] = { 10450 }, -- Bonechewer Blood
-								["races"] = { 10 }, -- Blood Elves
-							}),
-							qh(13409, { -- Hellfire Fortifications
-								["groups"] = {
-									i(40477), -- Insignia of the Horde
-								},
-								["qg"] = 18267, -- Battlecryer Blackeye
-								["sourceQuests"] = { 10124 }, -- Forward Base: Reaver's Fall
-							}),
-							qh(10110, { -- Hellfire Fortifications
-								["groups"] = {
-								},
-								["qg"] = 18267, -- Battlecryer Blackeye
-								["sourceQuests"] = { 13409 }, -- Hellfire Fortifications
-							}),
-							qh(10390, { -- Forge Camp: Mageddon
-								["groups"] = {
-								},
-								["qg"] = 3230, -- Nazgrel
-								["sourceQuests"] = { 10388 }, -- Return to Thrallmar
-							}),
+							["groups"] = {
+								q(9498, { -- Falcon Watch [Breadcrumb]
+									["groups"] = {
+									},
+									["qg"] = 21256, -- Vurtok Axebreaker
+									["sourceQuests"] = { 10450 }, -- Bonechewer Blood
+									["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 }, -- Every race but Blood Elves
+								}),
+								q(9499, { -- Falcon Watch [Breadcrumb]
+									["groups"] = {
+									},
+									["qg"] = 21256, -- Vurtok Axebreaker
+									["sourceQuests"] = { 10450 }, -- Bonechewer Blood
+									["races"] = { 10 }, -- Blood Elves
+								}),
+								qh(13409, { -- Hellfire Fortifications
+									["groups"] = {
+										i(40477), -- Insignia of the Horde
+									},
+									["qg"] = 18267, -- Battlecryer Blackeye
+									["sourceQuests"] = { 10124 }, -- Forward Base: Reaver's Fall
+								}),
+								qh(10110, { -- Hellfire Fortifications
+									["groups"] = {
+									},
+									["qg"] = 18267, -- Battlecryer Blackeye
+									["sourceQuests"] = { 13409 }, -- Hellfire Fortifications
+								}),
+								qh(10390, { -- Forge Camp: Mageddon
+									["groups"] = {
+									},
+									["qg"] = 3230, -- Nazgrel
+									["sourceQuests"] = { 10388 }, -- Return to Thrallmar
+								}),
+							},
+							["collectible"] = false,	-- Turn off Collectible flags.
 						}),
 						-- Need a Reaver's Fall Section, but none in achievement
 						qh(10242, { -- Spinebreaker Post

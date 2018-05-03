@@ -1584,15 +1584,6 @@ u(22322, 11); 	-- The Jaw Breaker
 u(22325, 11); 	-- Belt of the Trickster
 u(22330, 11); 	-- Shroud of Arcane Mastery
 
--------------------------------
--- LEGACY CACHE REWARDS (12) --
--------------------------------
-
-u(139484, 12);	-- Cache of Nightmarish Treasures
-u(139486, 12);	-- Cache of Nightmarish Treasures
-u(139487, 12);	-- Cache of Nightmarish Treasures
-u(139488, 12);	-- Cache of Nightmarish Treasures
-
 --------------------------------------------------------------------------------------------------------------------------------------------
 --                15 This item has a Source ID, but apparently cannot be used for transmog and will likely be unlearnable.                --
 --------------------------------------------------------------------------------------------------------------------------------------------
