@@ -1343,9 +1343,6 @@ _.Zones =
 						i(31211),
 						i(31209),
 					}),
-					n(20136, {	-- Sunfury Researcher
-						dr(2, i(22551)),	-- Formula: Enchant Weapon - Major Intellect
-					}),
 				}),
 				n( -2, {	-- Vendors
 					n(19540, { -- Asarnan <Enchanting Trainer>
@@ -3024,6 +3021,9 @@ _.Zones =
 								dr(00.9, i(31925)),	-- Fiery Band
 								dr(00.9, i(31927)),	-- Living Band
 							}),
+						}),
+						n(20136, {	-- Sunfury Researcher
+							dr(2, i(22551)),	-- Formula: Enchant Weapon - Major Intellect
 						}),
 					},
 					["description"] = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm.  There is a chance that one of these mobs will be released when you open a prison.  To loot Ethereum Prison Keys, you must first complete the quest 'A Mission of Mercy' in Netherstorm.",
