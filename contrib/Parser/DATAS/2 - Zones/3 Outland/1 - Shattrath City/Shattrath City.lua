@@ -507,297 +507,316 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for "A Ghost in the Machine" in SMV, mutually exclusive w/other bcrumbs
 					}),
 					faction( 932, {	-- The Aldor
-						q(10551, {	-- Allegiance to the Aldor
-							["g"] = {
-							},
-							["qg"] = 18166,	-- Archmage Khadgar
-							["sourceQuests"] = { 10211 },	-- City of Light
-						}),
-						q(10554, {	-- Ishanah
-							["g"] = {
-							},
-							["qg"] = 18166,	-- Archmage Khadgar
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						}),
-						q(10021, {	-- Restoring the Light
-							["g"] = {
-							},
-							["qg"] = 18166,	-- Archmage Khadgar
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						}),
-						q(10325, {	-- Marks of Kil'jaeden (may be able to be picked up in Netherstorm)
-							["g"] = {
-							},
-							["qg"] = 18537,	-- Adyen the Lightwarden
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						}),
-						qr(q(10327, {	-- Single Mark of Kil'jaeden
-							["g"] = {
-							},
-							["qg"] = 18537,	-- Adyen the Lightwarden
-							["description"] = "Gives reputation through Honored.",
-							["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
-						})),
-						qr(q(10326, {	-- More Marks of Kil'jaeden
-							["g"] = {
-							},
-							["qg"] = 18537,	-- Adyen the Lightwarden
-							["description"] = "Gives reputation through Honored.",
-							["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
-						})),
-						q(10653, {	-- Marks of Sargeras  (may be able to be picked up in Netherstorm)
-							["g"] = {
-							},
-							["qg"] = 18537,	-- Adyen the Lightwarden
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						}),
-						qr(q(10655, {	-- Single Mark of Sargeras
-							["g"] = {
-							},
-							["qg"] = 18537,	-- Adyen the Lightwarden
-							["description"] = "Gives reputation through Exalted.",
-							["sourceQuests"] = { 10653 },	-- Marks of Sargeras
-						})),
-						qr(q(10654, {	-- More Marks of Sargeras
-							["g"] = {
-							},
-							["qg"] = 18537,	-- Adyen the Lightwarden
-							["description"] = "Gives reputation through Exalted.",
-							["sourceQuests"] = { 10653 },	-- Marks of Sargeras
-						})),
-						q(10020, {	-- A Cure for Zahlia
-							["g"] = {
-							},
-							["qg"] = 18597,	-- Sha'nir
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						}),
-						q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
-							["g"] = {
-							},
-							["qg"] = 18537,	-- Adyen the Lightwarden
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						}),
-						q(10420, {	-- A Cleansing Light
-							["g"] = {
-							},
-							["qg"] = 18538,	-- Ishanah
-							-- ["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor (this quest appeared before I aligned myself with The Aldor)
-						}),
-						qr(q(10421, {	-- Fel Armaments
-							["g"] = {
-							},
-							["qg"] = 18538,	-- Ishanah
-							["description"] = "Gives reputation through Exalted.",
-							["sourceQuests"] = { 10420 },	-- A Cleansing Light
-						})),
-						q(11038, {	-- Assist Exarch Orelis
-							["g"] = {
-							},
-							["qgs"] = { 23271, 23270 },	-- Vindicator Kaan & Vindicator Aeus
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-							["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
-						}),
-						q(10409, {	-- Deathblow to the Legion (awarded "Socrethar" criteria for Netherstorm "Into the Nether" overall quest achievement)
-							["g"] = {
-								i(30368),	-- Slippers of the High Priestess
-								i(30369),	-- Cleansed Fel Pauldrons
-								i(30370),	-- Gauntlets of the Redeemed Vindicator
-								i(30371),	-- Lightwarden's Girdle
-							},
-							["qg"] = 18538,	-- Ishanah
-							["sourceQuests"] = { 10410 },	-- Ishanah's Help
-						}),
-						q(10017, {	-- Strained Supplies
-							["g"] = {
-							},
-							["qg"] = 18597,	-- Sha'nir
-							["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
-						}),
-						q(10019, {	-- More Venom Sacs
-							["g"] = {
-							},
-							["qg"] = 18597,	-- Sha'nir
-							["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
-							["sourceQuests"] = { 10017 },	-- Strained Supplies
-						}),
+						["groups"] = {
+							q(10551, {	-- Allegiance to the Aldor
+								["g"] = {
+								},
+								["qg"] = 18166,	-- Archmage Khadgar
+								["sourceQuests"] = { 10211 },	-- City of Light
+							}),
+							q(10554, {	-- Ishanah
+								["g"] = {
+								},
+								["qg"] = 18166,	-- Archmage Khadgar
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(10021, {	-- Restoring the Light
+								["g"] = {
+								},
+								["qg"] = 18166,	-- Archmage Khadgar
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(10325, {	-- Marks of Kil'jaeden (may be able to be picked up in Netherstorm)
+								["g"] = {
+								},
+								["qg"] = 18537,	-- Adyen the Lightwarden
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							qr(q(10327, {	-- Single Mark of Kil'jaeden
+								["g"] = {
+								},
+								["qg"] = 18537,	-- Adyen the Lightwarden
+								["description"] = "Gives reputation through Honored.",
+								["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
+							})),
+							qr(q(10326, {	-- More Marks of Kil'jaeden
+								["g"] = {
+								},
+								["qg"] = 18537,	-- Adyen the Lightwarden
+								["description"] = "Gives reputation through Honored.",
+								["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
+							})),
+							q(10653, {	-- Marks of Sargeras  (may be able to be picked up in Netherstorm)
+								["g"] = {
+								},
+								["qg"] = 18537,	-- Adyen the Lightwarden
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							qr(q(10655, {	-- Single Mark of Sargeras
+								["g"] = {
+								},
+								["qg"] = 18537,	-- Adyen the Lightwarden
+								["description"] = "Gives reputation through Exalted.",
+								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
+							})),
+							qr(q(10654, {	-- More Marks of Sargeras
+								["g"] = {
+								},
+								["qg"] = 18537,	-- Adyen the Lightwarden
+								["description"] = "Gives reputation through Exalted.",
+								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
+							})),
+							q(10020, {	-- A Cure for Zahlia
+								["g"] = {
+								},
+								["qg"] = 18597,	-- Sha'nir
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
+								["g"] = {
+								},
+								["qg"] = 18537,	-- Adyen the Lightwarden
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(10420, {	-- A Cleansing Light
+								["g"] = {
+								},
+								["qg"] = 18538,	-- Ishanah
+								-- ["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor (this quest appeared before I aligned myself with The Aldor)
+							}),
+							qr(q(10421, {	-- Fel Armaments
+								["g"] = {
+								},
+								["qg"] = 18538,	-- Ishanah
+								["description"] = "Gives reputation through Exalted.",
+								["sourceQuests"] = { 10420 },	-- A Cleansing Light
+							})),
+							q(11038, {	-- Assist Exarch Orelis
+								["g"] = {
+								},
+								["qgs"] = { 23271, 23270 },	-- Vindicator Kaan & Vindicator Aeus
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+								["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
+							}),
+							q(10409, {	-- Deathblow to the Legion (awarded "Socrethar" criteria for Netherstorm "Into the Nether" overall quest achievement)
+								["g"] = {
+									i(30368),	-- Slippers of the High Priestess
+									i(30369),	-- Cleansed Fel Pauldrons
+									i(30370),	-- Gauntlets of the Redeemed Vindicator
+									i(30371),	-- Lightwarden's Girdle
+								},
+								["qg"] = 18538,	-- Ishanah
+								["sourceQuests"] = { 10410 },	-- Ishanah's Help
+							}),
+							q(10017, {	-- Strained Supplies
+								["g"] = {
+								},
+								["qg"] = 18597,	-- Sha'nir
+								["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
+							}),
+							q(10019, {	-- More Venom Sacs
+								["g"] = {
+								},
+								["qg"] = 18597,	-- Sha'nir
+								["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
+								["sourceQuests"] = { 10017 },	-- Strained Supplies
+							}),
+						},
+						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 					faction(1011, {	-- Lower City
-						q(10917,  {  -- The Outcast's Plight
-							["g"] = {
-								i(31800,  {  -- Outcasts Cache
-									i(28495),	-- Windwalker's Sash
-									i(28496),	-- Talonite's Belt
-									i(28497),	-- Dreadhawk's Girdle
-									i(28498),	-- Ravenguard's Baldric
-									i(28491),	-- Windwalker's Footwraps
-									i(28493),	-- Dreadhawk's Schynbald
-									i(28492),	-- Talonite's Boots
-									i(28494),	-- Ravenguard's Greaves
-								}),
-							},
-							["qg"] = 22429,	-- Vekax
-						}),
-						qr(q(10918,  {  -- More Feathers
-							["groups"] = {
-								i(31800,  {  -- Outcasts Cache
-									i(28495),	-- Windwalker's Sash
-									i(28496),	-- Talonite's Belt
-									i(28497),	-- Dreadhawk's Girdle
-									i(28498),	-- Ravenguard's Baldric
-									i(28491),	-- Windwalker's Footwraps
-									i(28493),	-- Dreadhawk's Schynbald
-									i(28492),	-- Talonite's Boots
-									i(28494),	-- Ravenguard's Greaves
-								}),
-							},	
-							["qg"] = 22429,	-- Vekax
-							["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
-							["sourceQuests"] = { 10917 },	-- The Outcast's Plight
-						})),
+						["groups"] = {
+							q(10917,  {  -- The Outcast's Plight
+								["g"] = {
+									i(31800,  {  -- Outcasts Cache
+										i(28495),	-- Windwalker's Sash
+										i(28496),	-- Talonite's Belt
+										i(28497),	-- Dreadhawk's Girdle
+										i(28498),	-- Ravenguard's Baldric
+										i(28491),	-- Windwalker's Footwraps
+										i(28493),	-- Dreadhawk's Schynbald
+										i(28492),	-- Talonite's Boots
+										i(28494),	-- Ravenguard's Greaves
+									}),
+								},
+								["qg"] = 22429,	-- Vekax
+							}),
+							qr(q(10918,  {  -- More Feathers
+								["groups"] = {
+									i(31800,  {  -- Outcasts Cache
+										i(28495),	-- Windwalker's Sash
+										i(28496),	-- Talonite's Belt
+										i(28497),	-- Dreadhawk's Girdle
+										i(28498),	-- Ravenguard's Baldric
+										i(28491),	-- Windwalker's Footwraps
+										i(28493),	-- Dreadhawk's Schynbald
+										i(28492),	-- Talonite's Boots
+										i(28494),	-- Ravenguard's Greaves
+									}),
+								},	
+								["qg"] = 22429,	-- Vekax
+								["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
+								["sourceQuests"] = { 10917 },	-- The Outcast's Plight
+							})),
+						},
+						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 					faction(1015, {	-- Netherwing
-						q(11109, {	-- Jorus the Cobalt Netherwing Drake
-							["groups"] = {
-								i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
-							},
-							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-						}),
-						q(11110, {	-- Malfas the Purple Netherwing Drake
-							["groups"] = {
-								i(32860),	-- Reins of the Purple Netherwing Drake Mount
-							},
-							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-						}),
-						q(11111, {	-- Onyxien the Onyx Netherwing Drake
-							["groups"] = {
-								i(32857),	-- Reins of the Onyx Netherwing Drake Mount
-							},
-							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-						}),
-						q(11112, {	-- Suraku the Azure Netherwing Drake
-							["groups"] = {
-								i(32858),	-- Reins of the Azure Netherwing Drake Mount
-							},
-							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-						}),
-						q(11113, {	-- Voranaku the Violet Netherwing Drake
-							["groups"] = {
-								i(32862),	-- Reins of the Violet Netherwing Drake Mount
-							},
-							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-						}),
-						q(11114, {	-- Zoya the Veridian Netherwing Drake
-							["groups"] = {
-								i(32861),	-- Reins of the Veridian Netherwing Drake Mount
-							},
-							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-						}),
+						["groups"] = {
+							q(11109, {	-- Jorus the Cobalt Netherwing Drake
+								["groups"] = {
+									i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
+								},
+								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+							}),
+							q(11110, {	-- Malfas the Purple Netherwing Drake
+								["groups"] = {
+									i(32860),	-- Reins of the Purple Netherwing Drake Mount
+								},
+								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+							}),
+							q(11111, {	-- Onyxien the Onyx Netherwing Drake
+								["groups"] = {
+									i(32857),	-- Reins of the Onyx Netherwing Drake Mount
+								},
+								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+							}),
+							q(11112, {	-- Suraku the Azure Netherwing Drake
+								["groups"] = {
+									i(32858),	-- Reins of the Azure Netherwing Drake Mount
+								},
+								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+							}),
+							q(11113, {	-- Voranaku the Violet Netherwing Drake
+								["groups"] = {
+									i(32862),	-- Reins of the Violet Netherwing Drake Mount
+								},
+								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+							}),
+							q(11114, {	-- Zoya the Veridian Netherwing Drake
+								["groups"] = {
+									i(32861),	-- Reins of the Veridian Netherwing Drake Mount
+								},
+								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+							}),
+						},
+						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 					faction(1038, {	-- Ogri'la
-						q(10984, {	-- Speak with the Ogre
-							["g"] = {
-							},
-							["qg"] = 22497,	-- V'eru
-							["isBreadcrumb"] = true,	-- for "Mog'dorg the Wizened"
-						}),
-						q(10983, {	-- Mog'dorg the Wizened
-							["g"] = {
-							},
-							["qg"] = 22940,	-- Grok
-							["breadcrumbQuestID"] = { 10984 },	-- Speak with the Ogre
-						}),
+						["groups"] = {
+							q(10984, {	-- Speak with the Ogre
+								["g"] = {
+								},
+								["qg"] = 22497,	-- V'eru
+								["isBreadcrumb"] = true,	-- for "Mog'dorg the Wizened"
+							}),
+							q(10983, {	-- Mog'dorg the Wizened
+								["g"] = {
+								},
+								["qg"] = 22940,	-- Grok
+								["breadcrumbQuestID"] = { 10984 },	-- Speak with the Ogre
+							}),
+						},
+						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 					faction( 934, {	-- The Scryers
-						q(10552, {	-- Allegiance to the Scryers
-							["g"] = {
-							},
-							["qg"] = 18166,	-- Archmage Khadgar
-							["sourceQuests"] = { 10211 },	-- City of Light
-						}),
-						q(10024, {	-- Voren'thal's Visions
-							["g"] = {
-							},
-							["qg"] = 18596,	-- Arcanist Adyria
-							["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
-						}),
-						q(10025, {	-- More Basilisk Eyes
-							["g"] = {
-							},
-							["qg"] = 18596,	-- Arcanist Adyria
-							["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
-							["sourceQuests"] = { 10024 },	-- Voren'thal's Visions
-						}),
-						
-						
-						q(10416),	-- Synthesis of Power
-						q(10419),	-- Arcane Tomes
-						q(11482),	-- Duty Calls
-						q(10412),	-- Firewing Signets
-						q(10415),	-- More Firewing Signets
-						q(10414),	-- Single Firewing Signet
-						q(10656),	-- Sunfury Signets
-						q(10658),	-- More Sunfury Signets
-						q(10659),	-- Single Sunfury Signet
-						q(11039, {	-- Report to Spymaster Thalodien
-							["g"] = {
-							},
-							["qgs"] = { 23273, 23272 },	-- Arcanist Raestan, Arcanist Savan
-							-- ["sourceQuests"] = {  },	-- UNTESTED
-						}),
-						q(10507, {	-- Turning Point
-							["g"] = {
-								i(30375),	-- Gauntlets of the Vanquisher
-								i(30372),	-- Socrethar's Girdle
-								i(30373),	-- Netherfused Pauldrons
-								i(30374),	-- Greaves of Spellpower
-								i(30859),	-- Wand of the Seer
-							},
-							["qg"] = 18530,	-- Voren'thal the Seer
-							["sourceQuests"] = { 10509 },	-- Bound for Glory *UNTESTED*
-						}),
-						q(10553),	-- Voren'thal the Seer
+						["groups"] = {
+							q(10552, {	-- Allegiance to the Scryers
+								["g"] = {
+								},
+								["qg"] = 18166,	-- Archmage Khadgar
+								["sourceQuests"] = { 10211 },	-- City of Light
+							}),
+							q(10024, {	-- Voren'thal's Visions
+								["g"] = {
+								},
+								["qg"] = 18596,	-- Arcanist Adyria
+								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+							}),
+							q(10025, {	-- More Basilisk Eyes
+								["g"] = {
+								},
+								["qg"] = 18596,	-- Arcanist Adyria
+								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+								["sourceQuests"] = { 10024 },	-- Voren'thal's Visions
+							}),
+							q(10416),	-- Synthesis of Power
+							q(10419),	-- Arcane Tomes
+							q(11482),	-- Duty Calls
+							q(10412),	-- Firewing Signets
+							q(10415),	-- More Firewing Signets
+							q(10414),	-- Single Firewing Signet
+							q(10656),	-- Sunfury Signets
+							q(10658),	-- More Sunfury Signets
+							q(10659),	-- Single Sunfury Signet
+							q(11039, {	-- Report to Spymaster Thalodien
+								["g"] = {
+								},
+								["qgs"] = { 23273, 23272 },	-- Arcanist Raestan, Arcanist Savan
+								-- ["sourceQuests"] = {  },	-- UNTESTED
+							}),
+							q(10507, {	-- Turning Point
+								["g"] = {
+									i(30375),	-- Gauntlets of the Vanquisher
+									i(30372),	-- Socrethar's Girdle
+									i(30373),	-- Netherfused Pauldrons
+									i(30374),	-- Greaves of Spellpower
+									i(30859),	-- Wand of the Seer
+								},
+								["qg"] = 18530,	-- Voren'thal the Seer
+								["sourceQuests"] = { 10509 },	-- Bound for Glory *UNTESTED*
+							}),
+							q(10553),	-- Voren'thal the Seer
+						},
+						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 					faction(1031, {	-- Sha'tari Skyguard
-						q(11096, {	-- Threat from Above
-							["g"] = {
-							},
-							["qg"] = 23449,	-- Yuula
-						}),
-						q(11098, {	-- To Skettis!
-							["g"] = {
-							},
-							["qg"] = 23449,	-- Yuula
-							["sourceQuests"] = { 11096 },	-- Threat From Above *UNTESTED*
-						}),
-						q(11028, {	-- Countdown to Doom
-							["g"] = {
-							},
-							["qg"] = 22292,	-- Rilak the Redeemed
-							["sourceQuests"] = { 11024 },	-- An Ally in Lower City *UNTESTED*
-						}),
+						["groups"] = {
+							q(11096, {	-- Threat from Above
+								["g"] = {
+								},
+								["qg"] = 23449,	-- Yuula
+							}),
+							q(11098, {	-- To Skettis!
+								["g"] = {
+								},
+								["qg"] = 23449,	-- Yuula
+								["sourceQuests"] = { 11096 },	-- Threat From Above *UNTESTED*
+							}),
+							q(11028, {	-- Countdown to Doom
+								["g"] = {
+								},
+								["qg"] = 22292,	-- Rilak the Redeemed
+								["sourceQuests"] = { 11024 },	-- An Ally in Lower City *UNTESTED*
+							}),
+						},
+						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 					faction(1077, {	-- Shattered Sun Offensive
-						q(11877, {	-- Sunfury Attack Plans
-							["g"] = {
-							},
-							["qg"] = 25140,	-- Lord Torvos
-						}),
-						q(11880, {	-- The Multiphase Survey
-							["g"] = {
-							},
-							["qg"] = 19475,	-- Harbinger Haronem
-						}),
-						q(11875, {	-- Gaining the Advantage
-							["g"] = {
-							},
-							["qg"] = 19202,	-- Emissary Mordin
-							["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
-						}),
-						q(11514, {	-- Maintaining the Sunwell Portal
-							["g"] = {
-							},
-							["qg"] = 24932,	-- Exarch Nasuun
-						}),
+						["groups"] = {
+							qr(q(11877, {	-- Sunfury Attack Plans
+								["g"] = {
+								},
+								["qg"] = 25140,	-- Lord Torvos
+							})),
+							qr(q(11880, {	-- The Multiphase Survey
+								["g"] = {
+								},
+								["qg"] = 19475,	-- Harbinger Haronem
+							})),
+							qr(q(11875, {	-- Gaining the Advantage
+								["g"] = {
+								},
+								["qg"] = 19202,	-- Emissary Mordin
+								["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
+							})),
+							qr(q(11514, {	-- Maintaining the Sunwell Portal
+								["g"] = {
+								},
+								["qg"] = 24932,	-- Exarch Nasuun
+							})),
+						},
+						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 				}),	
 				n( -2, {	-- Vendors

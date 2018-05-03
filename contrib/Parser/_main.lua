@@ -732,6 +732,7 @@ end
 qr = function(t)							-- Gives a quest the Repeatable Description
 	t.description = "This quest is repeatable.";
 	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_azure";
+	t.repeatable = true;
 	return t;
 end
 qw = function(t)							
