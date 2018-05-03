@@ -6326,42 +6326,29 @@ function app:GetDataCache()
 		popout.data = harvestData;
 		popout.ScrollBar:SetValue(1);
 		popout:SetVisible(true);
-		local oldUpdate = popout.Update;
-		popout.Update = function(self, ...)
-			for i,group in ipairs(harvestData.g) do
-				if group.s and group.s == 0 then
-					group.visible = true;
-				else
-					group.visible = false;
-				end
-			end
-			if self.rowData then
-				local count = #self.rowData;
-				for i=1,count,1 do
-					if self.rowData[i] and not self.rowData[i].visible then
-						table.remove(self.rowData, i);
-						count = count - 1;
-						i = i - 1;
-					end
-				end
-			end
-			oldUpdate(self, ...);
-		end
 		popout.UpdateDone = function(self)
+			local progress = 0;
+			local total = 0;
 			for i,group in ipairs(harvestData.g) do
+				total = total + 1;
 				if group.s and group.s == 0 then
 					group.visible = true;
 				else
 					group.visible = false;
+					progress = progress + 1;
 				end
 			end
 			if self.rowData then
 				local count = #self.rowData;
-				for i=1,count,1 do
-					if self.rowData[i] and not self.rowData[i].visible then
-						table.remove(self.rowData, i);
-						count = count - 1;
-						i = i - 1;
+				if count > 1 then
+					self.rowData[1].progress = progress;
+					self.rowData[1].total = total;
+					for i=1,count,1 do
+						if self.rowData[i] and not self.rowData[i].visible then
+							table.remove(self.rowData, i);
+							count = count - 1;
+							i = i - 1;
+						end
 					end
 				end
 			end
