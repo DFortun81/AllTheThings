@@ -8,324 +8,299 @@ _.Instances =
 		["groups"] = {
 			inst(751, { 	-- The Black Temple
 				["groups"] = {
-					n(0, {		-- Zone Drop
-						i(32590),	-- Nethervoid Cloak
-						i(34012),	-- Shroud of the Final Stand
-						i(32609),	-- Boots of the Divine Light
-						i(32593),	-- Treads of the Den Mother
-						i(32592),	-- Chestguard of Relentless Storms
-						i(32608),	-- Pillager's Gauntlets
+					n( 0, {	-- Zone Drop
+					 -- i(32609),	-- Boots of the Divine Light (Hyjal only)
+					 -- i(32592),	-- Chestguard of Relentless Storms (Hyjal only)
 						i(32606),	-- Girdle of the Lightbearer
-			--			i(34009),	-- Hammer of Judgement(looks to only drop from hyjal)
-						i(32943),	-- Swiftsteel Bludgeon
+					 -- i(34009),	-- Hammer of Judgement(looks to only drop from hyjal)
 						i(34011),	-- Illidari Runeshield
-						
+					 -- i(32590),	-- Nethervoid Cloak (Hyjal only)
+						i(32608),	-- Pillager's Gauntlets
+						i(34012),	-- Shroud of the Final Stand
+						i(32943),	-- Swiftsteel Bludgeon
+						i(32593),	-- Treads of the Den Mother
 						-- Recipes
-						i(32738, { i(32571), }),	-- Dawnsteel Bracers (BT ONLY)
-						--i(32739, { i(32573), }),	-- Dawnsteel Shoulders (Hyjal ONLY)
-						--i(32736, { i(32568), }),	-- Swiftsteel Bracers (Hyjal ONLY)
-						i(32737, { i(32570), }),	-- Swiftsteel Shoulders (BT ONLY)
-						--i(32748, { i(32574), }),	-- Bindings of Lightning Reflexes (Hyjal ONLY)
-						i(32744, { i(32582), }),	-- Bracers of Renewed Life (BT ONLY)
-						i(32750, { i(32577), }),	-- Living Earth Bindings (BT ONLY)
-						--i(32751, { i(32579), }),	-- Living Earth Shoulders (Hyjal ONLY)
-						i(32749, { i(32575), }),	-- Shoulders of Lightning Reflexes (BT ONLY)
-						--i(32745, { i(32583), }),	-- Shoulderpads of Renewed Life (Hyjal ONLY)
-						--i(32746, { i(32580), }),	-- Swiftstrike Bracers (Hyjal ONLY)
-						i(32747, { i(32581), }),	-- Swiftstrike Shoulders (BT ONLY)
-						i(32754, { i(32586), }),	-- Bracers of Nimble Thought (BT ONLY)
-						--i(32755, { i(32587), }),	-- Mantle of Nimble Thought (Hyjal ONLY)
-						i(32753, { i(32585), }),	-- Swiftheal Mantle(BT ONLY)
-						--i(32752, { i(32584), }),	-- Swiftheal Wraps (Hyjal ONLY)
+					 -- i(32748),	-- Pattern: Bindings of Lightning Reflexes (Hyjal ONLY)
+						i(32754),	-- Pattern: Bracers of Nimble Thought (BT ONLY)
+						i(32744),	-- Pattern: Bracers of Renewed Life (BT ONLY)
+						i(32750),	-- Pattern: Living Earth Bindings (BT ONLY)
+					 -- i(32751),	-- Pattern: Living Earth Shoulders (Hyjal ONLY)
+					 -- i(32755),	-- Pattern: Mantle of Nimble Thought (Hyjal ONLY)
+					 -- i(32745),	-- Pattern: Shoulderpads of Renewed Life (Hyjal ONLY)
+						i(32749),	-- Pattern: Shoulders of Lightning Reflexes (BT ONLY)
+					 -- i(32746),	-- Pattern: Swiftstrike Bracers (Hyjal ONLY)
+						i(32747),	-- Pattern: Swiftstrike Shoulders (BT ONLY)
+						i(32753),	-- Pattern: Swiftheal Mantle(BT ONLY)
+					 -- i(32752),	-- Pattern: Swiftheal Wraps (Hyjal ONLY)
+						i(32738),	-- Plans: Dawnsteel Bracers (BT ONLY)
+					 -- i(32739),	-- Plans: Dawnsteel Shoulders (Hyjal ONLY)
+					 -- i(32736),	-- Plans: Swiftsteel Bracers (Hyjal ONLY)
+						i(32737),	-- Plans: Swiftsteel Shoulders (BT ONLY)
 					}),
-					n(-2, {		-- Vendors
-						model(21345, n(23159, { -- Okuno
-							i(32447, {
-								i(32420),
-							}),
-							i(32444, {
-								i(32401),
-							}),
-							i(32442, {
-								i(32403),
-							}),
-							i(32443, {
-								i(32404),
-							}),
-							i(32441, {
-								i(32402),
-							}),
-							i(32436, {
-								i(32393),
-							}),
-							i(32435, {
-								i(32396),
-							}),
-							i(32433, {
-								i(32394),
-							}),
-							i(32434, {
-								i(32395),
-							}),
-							i(32430, {
-								i(32399),
-							}),
-							i(32429, {
-								i(32398),
-							}),
-							i(32431, {
-								i(32400),
-							}),
-							i(32432, {
-								i(32397),
-							}),
-							i(32440, {
-								i(32390),
-							}),
-							i(32438, {
-								i(32392),
-							}),
-							i(32439, {
-								i(32389),
-							}),
-							i(32437, {
-								i(32391),
-							}),
+					n(-2, {	-- Vendors
+						model(21345, n(23159, {	-- Okuno
+							i(32429),	-- Pattern: Boots of Shackled Souls
+							i(32430),	-- Pattern: Bracers of Shackled Souls
+							i(32431),	-- Pattern: Greaves of Shackled Souls
+							i(32447),	-- Pattern: Night's End
+							i(32436),	-- Pattern: Redeemed Soul Cinch
+							i(32435),	-- Pattern: Redeemed Soul Legguards
+							i(32433),	-- Pattern: Redeemed Soul Moccasins
+							i(32434),	-- Pattern: Redeemed Soul Wristguards
+							i(32438),	-- Pattern: Soulguard Bracers
+							i(32440),	-- Pattern: Soulguard Girdle
+							i(32439),	-- Pattern: Soulguard Leggings
+							i(32437),	-- Pattern: Soulguard Slippers
+							i(32432),	-- Pattern: Waistguard of Shackled Souls
+							i(32442),	-- Plans: Shadesteel Bracers
+							i(32444),	-- Plans: Shadesteel Girdle
+							i(32443),	-- Plans: Shadesteel Greaves
+							i(32441),	-- Plans: Shadesteel Sabots
 						})),
 					}),
-					d(14, { 	-- Normal	
+					d(14, {	-- Normal	
 						["groups"] = {
 							cr(22887, e(1582, {	-- High Warlord Naj'entus
-								i(32248),
-								i(32237),
-								i(32236),
-								i(32240),
-								i(32241),
-								i(32377),
-								i(32232),
-								i(32234),
-								i(32243),
-								i(32239),
-								i(32242),
-								i(32245),
-								i(122104)
+								i(122104),	-- Leviathan Egg (PET!)
+								i( 32248),	-- Halberd of Desolation
+								i( 32236),	-- Rising Tide
+								i( 32237),	-- The Maelstrom's Fury
+								i( 32240),	-- Guise of the Tidal Lurker
+								i( 32241),	-- Helm of Soothing Currents
+								i( 32377),	-- Mantle of Darkness
+								i( 32232),	-- Eternium Shell Bracers
+								i( 32234),	-- Fists of Mukoa
+								i( 32242),	-- Boots of Oceanic Fury
+								i( 32243),	-- Pearl Inlaid Boots
+								i( 32239),	-- Slippers of the Seacaller
+								i( 32245),	-- Tide-Stomper's Greaves
+								i( 32238),	-- Ring of Calming Waves
+								i( 32247),	-- Ring of Captured Storms
 							})),
 							cr(22898, e(1583, {	-- Supremus
-								i(32254),
-								i(32262),
-								i(32253),
-								i(32255),
-								i(32250),
-								i(32252),
-								i(32251),
-								i(32259),
-								i(32258),
-								i(32256),
-								i(122106)
+								i(122106),	-- Shard of Supremus (PET!)
+								i( 32262),	-- Syphon of the Nathrezim
+								i( 32254),	-- The Brutalizer
+								i( 32253),	-- Legionkiller
+								i( 32255),	-- Felstone Bulwark
+								i( 32260),	-- Choker of Endless Nightmares
+								i( 32250),	-- Pauldrons of Abyssal Fury
+								i( 32252),	-- Nether Shadow Tunic
+								i( 32259),	-- Bands of the Coming Storm
+								i( 32251),	-- Wraps of Precise Flight
+								i( 32258),	-- Naturalist's Preserving Cinch
+								i( 32256),	-- Waistwrap of Infinity
+								i( 32261),	-- Band of the Abyssal Lord
 							})),
 							cr(22841, e(1584, {	-- Shade of Akama
-								i(32361),
-								i(32264),
-								i(32273),
-								i(32279),
-								i(32513),
-								i(32270),
-								i(32278),
-								i(32275),
-								i(32265),
-								i(32276),
-								i(32263),
-								i(32271),
-								i(32268)
+								i(32361),	-- Blind Seers Icon
+								i(32273),	-- Amice of Brilliant Light
+								i(32264),	-- Shoulders of the Hidden Predator
+								i(32270),	-- Focused Mana Bindings
+								i(32279),	-- The Seeker's Wristguards
+								i(32513),	-- Wristbands of Divine Influence
+								i(32278),	-- Grips of Silent Justice
+								i(32275),	-- Spiritwalker Gauntlets
+								i(32276),	-- Flashfire Girdle
+								i(32265),	-- Shadow-Walker's Cord
+								i(32271),	-- Kilt of Immortal Nature
+								i(32263),	-- Praetorian's Legguards
+								i(32268),	-- Myrmidon's Treads
+								i(32266),	-- Ring of Deceitful Intent
 							})),
 							cr(22871, e(1585, {	-- Teron Gorefiend
-								i(32348),
-								i(32325),
-								i(32329),
-								i(32323),
-								i(32327),
-								i(32324),
-								i(32280),
-								i(32328),
-								i(32512),
-								i(32510)
+								i(32348),	-- Soul Cleaver
+								i(32325),	-- Rifle of the Stoic Guardian
+								i(32329),	-- Cowl of Benevolence
+								i(32323),	-- Shadowmoon Destroyer's Drape
+								i(32327),	-- Robe of the Shadow Council
+								i(32324),	-- Insidious Bands
+								i(32328),	-- Botanist's Gloves of Growth
+								i(32280),	-- Gauntlets of Enforcement
+								i(32512),	-- Girdle of Lordaeron's Fallen
+								i(32510),	-- Softstep Boots of Tracking
 							})),
 							cr(22948, e(1586, {	-- Gurtogg Bloodboil
-								i(32344),
-								i(32269),
-								i(32343),
-								i(32338),
-								i(32337),
-								i(32334),
-								i(32340),
-								i(32342),
-								i(32333),
-								i(32339),
-								i(32341)
+								i(32344),	-- Staff of Immaculate Recovery
+								i(32269),	-- Messenger of Fate
+								i(32343),	-- Wand of Prismatic Focus
+								i(32338),	-- Blood-Cursed Shoulderpads
+								i(32337),	-- Shroud of Forgiveness
+								i(32340),	-- Garments of Temperance
+								i(32334),	-- Vest of Mounting Assault
+								i(32339),	-- Belt of Primal Majesty
+								i(32342),	-- Girdle of Mighty Resolve
+								i(32333),	-- Girdle of Stability
+								i(32341),	-- Leggings of Divine Retribution
+								i(32335),	-- Unstoppable Aggressor's Ring
+								i(32501),	-- Shadowmoon Insignia
 							})),
 							cr(23418, e(1587, {	-- Reliquary of Souls
-								i(32332),
-								i(32363),
-								i(32350),
-								i(32354),
-								i(32517),
-								i(32351),
-								i(32347),
-								i(32353),
-								i(32346),
-								i(32345),
-								i(32352),
-								i(122108),
-								i(122109),
-								i(122107)
+								i(122107),	-- Fragment of Anger (PET!)
+								i(122109),	-- Fragment of Desire (PET!)
+								i(122108),	-- Fragment of Suffering (PET!)
+								i( 32332),	-- Torch of the Damned
+								i( 32363),	-- Naaru-Blessed Life Rod
+								i( 32350),	-- Touch of Inspiration
+								i( 32354),	-- Crown of Empowered Fate
+								i( 32362),	-- Pendant of Titans
+								i( 32349),	-- Translucent Spellthread Necklace
+								i( 32517),	-- The Wavemender's Mantle
+								i( 32351),	-- Elunite Empowered Bracers
+								i( 32353),	-- Gloves of Unfailing Faith
+								i( 32347),	-- Grips of Damnation
+								i( 32346),	-- Boneweave Girdle
+								i( 32345),	-- Dreadboots of the Legion
+								i( 32352),	-- Naturewarden's Treads
 							})),
 							cr(22947, e(1588, {	-- Mother Shahraz
-								i(32369),
-								i(32365),
-								i(32367),
-								i(32366),
-								i(31101, {
-									i(31070),
-									i(32043),
-									i(32037),
-									i(32024),
-									i(32018),
-									i(31996),
-									i(31979),
-									i(31976),
-									i(31054),
-									i(31069),
-									i(30998),
-									i(30997),
-									i(30996)
+								i( 31101, {	-- Pauldrons of the Forgotten Conqueror
+									i(30996),	-- Lightbringer Pauldrons
+									i(30997),	-- Lightbringer Shoulderbraces
+									i(30998),	-- Lightbringer Shoulderguards
+									i(32043),	-- Merciless Gladiator's Scaled Shoulders
+									i(31996),	-- Merciless Gladiator's Lamellar Shoulders
+									i(32024),	-- Merciless Gladiator's Ornamented Spaulders
+									i(31069),	-- Mantle of Absolution
+									i(32018),	-- Merciless Gladiator's Mooncloth Mantle
+									i(32037),	-- Merciless Gladiator's Satin Mantle
+									i(31070),	-- Shoulderpads of Absolution
+									i(31054),	-- Mantle of the Malefic
+									i(31976),	-- Merciless Gladiator's Dreadweave Mantle
+									i(31979),	-- Merciless Gladiator's Felweave Amice
 								}),
-								i(31103, {	
-									i(31022),
-									i(31024),
-									i(31023),
-									i(30980),
-									i(30979),
-									i(32033),
-									i(30490),
-									i(32013),
-									i(32008),
-									i(31964),
-									i(31006)
+								i( 31103, {	-- Pauldrons of the Forgotten Protector
+									i(31006),	-- Gronnstalker's Spaulders
+									i(31964),	-- Merciless Gladiator's Chain Spaulders
+									i(32008),	-- Merciless Gladiator's Linked Spaulders
+									i(32013),	-- Merciless Gladiator's Mail Spaulders
+									i(32033),	-- Merciless Gladiator's Ringmail Spaulders
+									i(31023),	-- Skyshatter Mantle
+									i(31024),	-- Skyshatter Pauldrons
+									i(31022),	-- Skyshatter Shoulderpads
+									i(30490),	-- Merciless Gladiator's Plate Shoulders
+									i(30979),	-- Onslaught Shoulderblades
+									i(30980),	-- Onslaught Shoulderguards
 								}),
-								i(31102, {	
-									i(31047),
-									i(31049),
-									i(31048),
-									i(31030),
-									i(32059),
-									i(32047),
-									i(32001),
-									i(31990),
-									i(31971),
-									i(31059)
+								i( 31102, {	-- Pauldrons of the Forgotten Vanquisher
+									i(31971),	-- Merciless Gladiator's Dragonhide Spaulders
+									i(31990),	-- Merciless Gladiator's Kodohide Spaulders
+									i(31059),	-- Merciless Gladiator's Wyrmhide Spaulders
+									i(31048),	-- Thunderheart Pauldrons
+									i(31049),	-- Thunderheart Shoulderpads
+									i(31047),	-- Thunderheart Spaulders
+									i(32059),	-- Mantle of the Tempest
+									i(32047),	-- Merciless Gladiator's Silk Amice
+									i(32001),	-- Merciless Gladiator's Leather Spaulders
+									i(31030),	-- Slayer's Shoulderpads
 								}),
-								i(122110)
+								i(122110),	-- Sultry Grimoire (PET!)
+								i( 32369),	-- Blade of Savagery
+								i( 32370),	-- Nadina's Pendant of Purity
+								i( 32365),	-- Heartshatter Breastplate
+								i( 32367),	-- Leggings of Devastation
+								i( 32366),	-- Shadowmaster's Boots
 							})),
 							cr(23426, e(1589, {	-- The Illidari Council
-								i(32376),
-								i(32373),
-								i(32518),
-								i(32331),
-								i(32519),
-								i(31098, {
-									i(32042),
-									i(32036),
-									i(32023),
-									i(32017),
-									i(31995),
-									i(31983),
-									i(31975),
-									i(30995),
-									i(30994),
-									i(30993),
-									i(31053),
-									i(31067),
-									i(31068)
+								i(31098, {	-- 
+									i(32042),	-- 
+									i(32036),	-- 
+									i(32023),	-- 
+									i(32017),	-- 
+									i(31995),	-- 
+									i(31983),	-- 
+									i(31975),	-- 
+									i(30995),	-- 
+									i(30994),	-- 
+									i(30993),	-- 
+									i(31053),	-- 
+									i(31067),	-- 
+									i(31068),	-- 
 								}),
-								i(31100, {
-									i(31021),
-									i(31020),
-									i(31019),
-									i(30978),
-									i(30977),
-									i(32032),
-									i(30489),
-									i(32012),
-									i(32007),
-									i(31963),
-									i(31005)
+								i(31100, {	-- 
+									i(31021),	-- 
+									i(31020),	-- 
+									i(31019),	-- 
+									i(30978),	-- 
+									i(30977),	-- 
+									i(32032),	-- 
+									i(30489),	-- 
+									i(32012),	-- 
+									i(32007),	-- 
+									i(31963),	-- 
+									i(31005),	-- 
 								}),
-								i(31099, {
-									i(31046),
-									i(31045),
-									i(31044),
-									i(31029),
-									i(32058),
-									i(32051),
-									i(32000),
-									i(31989),
-									i(31969),
-									i(31058)
+								i(31099, {	-- 
+									i(31046),	-- 
+									i(31045),	-- 
+									i(31044),	-- 
+									i(31029),	-- 
+									i(32058),	-- 
+									i(32051),	-- 
+									i(32000),	-- 
+									i(31989),	-- 
+									i(31969),	-- 
+									i(31058),	-- 
 								}),
+								i(32376),	-- 
+								i(32373),	-- 
+								i(32518),	-- 
+								i(32331),	-- 
+								i(32519),	-- 
 							})),
 							cr(22917, e(1590, {	-- Illidan Stormrage
-								i(32374),
-								i(32837),
-								i(32838),
-								i(32471),
-								i(32500),
-								i(32336),
-								i(32375),
-								i(32525),
-								i(32235),
-								i(32521),
-								i(32524),
-								i(122196),
-								i(31089, {
-									i(31066),
-									i(31065),
-									i(31052),
-									i(32039),
-									i(32038),
-									i(32020),
-									i(32019),
-									i(31992),
-									i(31982),
-									i(31977),
-									i(30992),
-									i(30991),
-									i(30990)
+								i(31089, {	-- 
+									i(31066),	-- 
+									i(31065),	-- 
+									i(31052),	-- 
+									i(32039),	-- 
+									i(32038),	-- 
+									i(32020),	-- 
+									i(32019),	-- 
+									i(31992),	-- 
+									i(31982),	-- 
+									i(31977),	-- 
+									i(30992),	-- 
+									i(30991),	-- 
+									i(30990),	-- 
 								}),
-								i(31091, {
-									i(31018),
-									i(31016),
-									i(31017),
-									i(30976),
-									i(30975),
-									i(32029),
-									i(30486),
-									i(32009),
-									i(32004),
-									i(31960),
-									i(31004)
+								i(31091, {	-- 
+									i(31018),	-- 
+									i(31016),	-- 
+									i(31017),	-- 
+									i(30976),	-- 
+									i(30975),	-- 
+									i(32029),	-- 
+									i(30486),	-- 
+									i(32009),	-- 
+									i(32004),	-- 
+									i(31960),	-- 
+									i(31004),	-- 
 								}),
-								i(31090, {
-									i(31043),
-									i(31041),
-									i(31042),
-									i(31028),
-									i(31057),
-									i(32060),
-									i(32050),
-									i(32002),
-									i(31991),
-									i(31972)
+								i(31090, {	-- 
+									i(31043),	-- 
+									i(31041),	-- 
+									i(31042),	-- 
+									i(31028),	-- 
+									i(31057),	-- 
+									i(32060),	-- 
+									i(32050),	-- 
+									i(32002),	-- 
+									i(31991),	-- 
+									i(31972),	-- 
 								}),
+								i(32374),	-- 
+								i(32837),	-- 
+								i(32838),	-- 
+								i(32471),	-- 
+								i(32500),	-- 
+								i(32336),	-- 
+								i(32375),	-- 
+								i(32525),	-- 
+								i(32235),	-- 
+								i(32521),	-- 
+								i(32524),	-- 
+								i(122196),	-- 
 							}))
 						},	
 						["lvl"] = 68,
