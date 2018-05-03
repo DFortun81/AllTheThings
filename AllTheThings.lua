@@ -6343,11 +6343,9 @@ function app:GetDataCache()
 				if count > 1 then
 					self.rowData[1].progress = progress;
 					self.rowData[1].total = total;
-					for i=1,count,1 do
+					for i=count,1,-1 do
 						if self.rowData[i] and not self.rowData[i].visible then
 							table.remove(self.rowData, i);
-							count = count - 1;
-							i = i - 1;
 						end
 					end
 				end
