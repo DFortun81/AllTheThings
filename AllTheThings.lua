@@ -3299,6 +3299,21 @@ app.BaseItem = {
 					t.link = link;
 					t.icon = icon;
 					return link;
+				else
+					if t.retries then
+						t.retries = t.retries + 1;
+						if t.retries > 40 then
+							local itemName = "Item #" .. t.itemID .. "*";
+							t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
+							t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+							t.link = "";
+							t.s = nil;
+							t.text = itemName;
+							return itemName;
+						end
+					else
+						t.retries = 1;
+					end
 				end
 			end
 		elseif key == "trackable" then
@@ -3333,9 +3348,7 @@ app.BaseItem = {
 	end
 };
 app.CreateItem  = function(id, t)
-	t = createInstance(constructor(id, t, "itemID"), app.BaseItem);
-	--if not t.s and not t.ignoreSource then t.s = 0; end-- uncomment this line and copy your AllTheThings.lua file from Saved Variables into the contrib folder as a new filter to harvest source IDs
-	return t;
+	return createInstance(constructor(id, t, "itemID"), app.BaseItem);
 end
 
 -- Item Source Lib
@@ -3367,6 +3380,20 @@ app.BaseItemSource = {
 				t.link = link;
 				t.icon = icon;
 				return link;
+			else
+				if t.retries then
+					t.retries = t.retries + 1;
+					if t.retries > 40 then
+						local itemName = "Item #" .. t.itemID .. "*";
+						t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
+						t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+						t.link = "";
+						t.text = itemName;
+						return itemName;
+					end
+				else
+					t.retries = 1;
+				end
 			end
 		elseif key == "modID" then
 			return 1;
@@ -4421,14 +4448,6 @@ local function ProcessGroup(data, object, indent, back)
 	end
 end
 UpdateGroup = function(parent, group)
-	--[[
-	-- Uncomment this section for Harvesting
-	if group.s and group.s < 1 then
-		-- The source ID will need to be harvested.
-		table.insert(GetTempDataMember("Missing"), group);
-	end
-	]]--
-	
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
 		-- Check if this is a group
@@ -5155,26 +5174,25 @@ local function ClearRowData(self)
 	self.Summary:Hide();
 	self.Label:Hide();
 end
-local function SetRowData(self, data)
-	ClearRowData(self);
+local function SetRowData(self, row, data)
+	ClearRowData(row);
 	if data then
 		local text = data.text;
 		if not text or text == RETRIEVING_DATA then
-			self:GetParent().processingLinks = true;
 			text = RETRIEVING_DATA;
+			self.processingLinks = true;
 		elseif string.find(text, "%[%]") then
 			-- This means the link is still rendering
-			if not data.itemID then
-				self:GetParent().processingLinks = true;
-				text = RETRIEVING_DATA;
-			end
-		--[[
-		-- Uncomment this section for harvesting
+			text = RETRIEVING_DATA;
+			self.processingLinks = true;
 		elseif data.s and data.s < 1 then
 			-- If it doesn't, the source ID will need to be harvested.
 			local s, dressable = GetSourceID(text);
 			if s and s > 0 then
 				data.s = s;
+				if data.collected then
+					data.parent.progress = data.parent.progress + 1;
+				end
 				local item = SourceIDs[data.itemID];
 				if not item then
 					item = {};
@@ -5195,47 +5213,48 @@ local function SetRowData(self, data)
 					end
 					mods[data.modID or 1] = s;
 				end
-				--print("NEW SOURCE ID!", text);
+				print("NEW SOURCE ID!", text);
 				SetDataMember("Items", SourceIDs);
 			else
+				print("NARP", text);
 				data.s = nil;
+				data.parent.total = data.parent.total - 1;
 			end
-			]]--
 		end
-		local leftmost = self;
+		local leftmost = row;
 		local relative = "LEFT";
 		local x = (((data.indent or 0) + 1) * GetDataMember("Indent", 8)) or 0;
-		self.ref = data;
+		row.ref = data;
 		if data.back then
-			self.Background:SetAlpha(data.back or 0.2);
-			self.Background:Show();
+			row.Background:SetAlpha(data.back or 0.2);
+			row.Background:Show();
 		end
 		if data.u then
 			local reason = L("UNOBTAINABLE_ITEM_REASONS")[data.u or 1];
 			if reason then
 				local texture = L("UNOBTAINABLE_ITEM_TEXTURES")[reason[1]];
 				if texture then
-					self.Indicator:SetTexture(texture);
-					self.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
-					self.Indicator:Show();
+					row.Indicator:SetTexture(texture);
+					row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
+					row.Indicator:Show();
 				end
 			end
 		end
 		if data.saved then
 			if data.parent and data.parent.locks or data.isDaily then
-				self.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known");
+				row.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known");
 			else
-				self.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known_green");
+				row.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known_green");
 			end
-			self.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
-			self.Indicator:Show();
+			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
+			row.Indicator:Show();
 		end
-		if SetPortraitIcon(self.Texture, data) then
-			self.Texture.Background:SetPoint("LEFT", leftmost, relative, x, 0);
-			self.Texture.Border:SetPoint("LEFT", leftmost, relative, x, 0);
-			self.Texture:SetPoint("LEFT", leftmost, relative, x, 0);
-			self.Texture:Show();
-			leftmost = self.Texture;
+		if SetPortraitIcon(row.Texture, data) then
+			row.Texture.Background:SetPoint("LEFT", leftmost, relative, x, 0);
+			row.Texture.Border:SetPoint("LEFT", leftmost, relative, x, 0);
+			row.Texture:SetPoint("LEFT", leftmost, relative, x, 0);
+			row.Texture:Show();
+			leftmost = row.Texture;
 			relative = "RIGHT";
 			x = 4;
 		end
@@ -5248,19 +5267,19 @@ local function SetRowData(self, data)
 				if class == app.Class then summary = "|T" .. icon .. ":0|t " .. summary; end
 			end
 		end
-		self.Summary:SetText(summary);
-		self.Summary:Show();
-		self.Label:SetPoint("LEFT", leftmost, relative, x, 0);
-		if self.Summary and self.Summary:IsShown() then
-			self.Label:SetPoint("RIGHT", self.Summary, "LEFT", 0, 0);
+		row.Summary:SetText(summary);
+		row.Summary:Show();
+		row.Label:SetPoint("LEFT", leftmost, relative, x, 0);
+		if row.Summary and row.Summary:IsShown() then
+			row.Label:SetPoint("RIGHT", row.Summary, "LEFT", 0, 0);
 		else
-			self.Label:SetPoint("RIGHT");
+			row.Label:SetPoint("RIGHT");
 		end
-		self.Label:SetText(text);
-		self.Label:Show();
-		self:Show();
+		row.Label:SetText(text);
+		row.Label:Show();
+		row:Show();
 	else
-		self:Hide();
+		row:Hide();
 	end
 end
 local function UpdateRowProgress(group)
@@ -5299,12 +5318,12 @@ local function UpdateVisibleRowData(self)
 	-- Set the data for the first row to ALWAYS display the topmost data (essentially becoming a Title Bar)
 	local firstRow = self.rowData[1];
 	if firstRow then
-		SetRowData(container.rows[1], firstRow);
+		SetRowData(self, container.rows[1], firstRow);
 		current = current + 1;
 		
 		-- Fill the remaining rows up to the (visible) row count.
 		for i=2,rowCount do
-			SetRowData(container.rows[i], self.rowData[current]);
+			SetRowData(self, container.rows[i], self.rowData[current]);
 			current = current + 1;
 		end
 		
@@ -5315,16 +5334,15 @@ local function UpdateVisibleRowData(self)
 		end
 		
 		-- If the rows need to be processed again, do so next update.
-		if container.processingLinks then
-            container.processingLinks = nil;
-            StartCoroutine(self:GetName(), function()
-				coroutine.yield();
-				StartCoroutine(self:GetName()..":Update", function()
+		if self.processingLinks then
+			StartCoroutine(self:GetName(), function()
+				while self.processingLinks do
+					self.processingLinks = nil;
 					coroutine.yield();
-					self:Update();
-				end);
-            end);
-        end
+					UpdateVisibleRowData(self);
+				end
+			end);
+		end
 	else
 		self:Hide();
 	end
@@ -5354,7 +5372,8 @@ local function StartMovingOrSizing(self, fromChild)
 			self:StartSizing();
 			Push(self, "StartMovingOrSizing (Sizing)", function()
 				if self.isMoving then
-					self:Update();
+					--self:Update();
+					UpdateVisibleRowData(self);
 					return true;
 				end
 			end);
@@ -5528,19 +5547,23 @@ local function RowOnEnter(self)
 					-- This is a toy!
 					--GameTooltip:SetToyByItemID(reference.itemID);
 				--else
-					-- This is an non-toy item reference. :)
-					local link = reference.link;
-					if link then
-						GameTooltip:SetHyperlink(link);
-					elseif reference.speciesID then
-						-- Do nothing.
-					elseif not reference.artifactID then
-						GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
-						if reference and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, true); end
-						for key, value in pairs(reference) do
-							GameTooltip:AddDoubleLine(key, tostring(value));
-						end	
-					end
+				-- This is an non-toy item reference. :)
+				local link = reference.link;
+				if link and link ~= "" then
+					GameTooltip:SetHyperlink(link);
+				else
+					GameTooltip:AddLine("Item #" .. reference.itemID);
+					if reference and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, true); end
+					AttachTooltipSearchResults(GameTooltip, "itemID:" .. reference.itemID, SearchForFieldAndSummarize, "itemID", reference.itemID);
+				--elseif reference.speciesID then
+					-- Do nothing.
+				--elseif not reference.artifactID then
+					--GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
+					--if reference and reference.u then GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, true); end
+					--for key, value in pairs(reference) do
+					--	GameTooltip:AddDoubleLine(key, tostring(value));
+					--end	
+				end
 				--end
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID);
@@ -5846,7 +5869,8 @@ local function OnScrollBarValueChanged(self, value)
 	local un = math.floor(value);
 	local up = un + 1;
 	self.CurrentValue = (up - value) > (-(un - value)) and un or up;
-	self:GetParent():Update();
+	--self:GetParent():Update();
+	UpdateVisibleRowData(self:GetParent());
 end
 local function SetWindowVisibility(self, show)
 	if show then
@@ -6121,7 +6145,6 @@ function app:GetDataCache()
 		end
 		
 		--[[
-		-- Uncomment for harvesting
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
 			db = {};
@@ -6205,14 +6228,6 @@ function app:GetDataCache()
 		]]--
 		
 		-- The Main Window's Data
-		local missingData = {};
-		app.missingData = missingData;
-		missingData.visible = true;
-		missingData.expanded = false;
-		missingData.text = "Missing Sources (Total # Ignores Filters)";
-		missingData.description = L("SOURCE_ID_MISSING");
-		missingData.rows = GetTempDataMember("Missing");
-		table.insert(g, missingData);
 		app.refreshDataForce = true;
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Prime").data = allData;
@@ -6256,6 +6271,46 @@ function app:GetDataCache()
 		
 		-- Now that we have built the data, we don't need this anymore.
 		--app.Categories = nil;
+		
+		-- Check to see if it is empty.
+		local harvestData = {};
+		harvestData.visible = true;
+		harvestData.expanded = true;
+		harvestData.progress = 0;
+		harvestData.total = 0;
+		harvestData.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
+		harvestData.text = "Harvesting All Items";
+		harvestData.description = "If you're seeing this window outside of Git, please yell loudly in Crieve's ear.";
+		harvestData.g = {};
+		
+		local mID = 1;
+		local modIDs = {};
+		local bonusIDs = {};
+		for itemID,groups in pairs(fieldCache["itemID"]) do
+			for i,group in ipairs(groups) do
+				if group.bonusID and not bonusIDs[group.bonusID] then
+					bonusIDs[group.bonusID] = true;
+					tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, indent = 1, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
+				else
+					mID = group.modID or 1;
+					if not modIDs[mID] then
+						modIDs[mID] = true;
+						tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, indent = 1, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
+					end
+				end
+			end
+			wipe(modIDs);
+			wipe(bonusIDs);
+		end
+		harvestData.rows = harvestData.g;
+		BuildGroups(harvestData, harvestData.g);
+		UpdateGroups(harvestData, harvestData.g, 1);
+		
+		-- Assign the missing data table to the harvester.
+		local popout = app:GetWindow("Harvester");
+		popout.data = harvestData;
+		popout.ScrollBar:SetValue(1);
+		popout:SetVisible(true);
 	end
 	return allData;
 end
@@ -6275,13 +6330,7 @@ function app:RefreshData(lazy, safely)
 			local allData = app:GetDataCache();
 			allData.progress = 0;
 			allData.total = 0;
-			wipe(GetTempDataMember("Missing"));
-			app.missingData.g = nil;
 			UpdateGroups(allData, allData.g, 1);
-			app.missingData.g = app.missingData.rows;
-			app.missingData.total = #app.missingData.rows;
-			app.missingData.progress = 0;
-			app.missingData.visible = app.missingData.total > 0;
 			--print(tostring(allData.progress or 0) .. " / " .. tostring(allData.total or 0));
 			
 			-- Forcibly update the windows.
@@ -6376,6 +6425,7 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
+app:GetWindow("Harvester");
 app:GetWindow("CurrentInstance");
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
@@ -7562,7 +7612,6 @@ app.events.VARIABLES_LOADED = function()
 	-- Check to see if we have a leftover ItemDB cache
 	if GetDataMember("Items") then SetDataMember("Items", nil); end
 	if GetDataMember("ItemDB") then SetDataMember("ItemDB", nil); end
-	SetTempDataMember("Missing", {});
 	GetDataMember("CollectedFactions", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});

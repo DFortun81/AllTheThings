@@ -143,8 +143,6 @@ AllTheThings.Locales.enUS = {
 	["REQUIRES"] = "Requires";
 	["SOURCE"] = "Source";
 	["SOURCE_ID"] = "Source ID";
-	["SOURCE_ID_MISSING"] = "Source ID Missing. Collection detection may not work. Please report this item to Crieve-Sargeras. If you also know the sourceID, provide that information as well.";
-	["SPECIES_ID_MISSING"] = "Species ID Missing. Collection detection will not work. If you know the Species ID associated with this item, please report this information to Crieve-Sargeras.";
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
