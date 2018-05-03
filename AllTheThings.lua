@@ -5343,18 +5343,20 @@ local function UpdateVisibleRowData(self)
 				if self.UpdateDone then
 					StartCoroutine(self:GetName()..":UpdateDone", function()
 						coroutine.yield();
-						coroutine.yield();
-						coroutine.yield();
-						self:UpdateDone();
+						StartCoroutine(self:GetName()..":UpdateDoneP2", function()
+							coroutine.yield();
+							self:UpdateDone();
+						end);
 					end);
 				end
 			end);
 		elseif self.UpdateDone and rowCount > 5 then
 			StartCoroutine(self:GetName()..":UpdateDone", function()
 				coroutine.yield();
-				coroutine.yield();
-				coroutine.yield();
-				self:UpdateDone();
+				StartCoroutine(self:GetName()..":UpdateDoneP2", function()
+					coroutine.yield();
+					self:UpdateDone();
+				end);
 			end);
 		end
 	else
@@ -6333,10 +6335,37 @@ function app:GetDataCache()
 					group.visible = false;
 				end
 			end
+			if self.rowData then
+				local count = #self.rowData;
+				for i=1,count,1 do
+					if self.rowData[i] and not self.rowData[i].visible then
+						table.remove(self.rowData, i);
+						count = count - 1;
+						i = i - 1;
+					end
+				end
+			end
 			oldUpdate(self, ...);
 		end
 		popout.UpdateDone = function(self)
-			self:Update();
+			for i,group in ipairs(harvestData.g) do
+				if group.s and group.s == 0 then
+					group.visible = true;
+				else
+					group.visible = false;
+				end
+			end
+			if self.rowData then
+				local count = #self.rowData;
+				for i=1,count,1 do
+					if self.rowData[i] and not self.rowData[i].visible then
+						table.remove(self.rowData, i);
+						count = count - 1;
+						i = i - 1;
+					end
+				end
+			end
+			UpdateVisibleRowData(self);
 		end
 		--[[]]--
 	end
