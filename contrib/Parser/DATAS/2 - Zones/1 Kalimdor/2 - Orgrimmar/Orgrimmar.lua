@@ -853,7 +853,7 @@ _.Zones =
 					qg(63626, qh(31589)),	-- On The Mend
 					qg(63626, qh(31827)),	-- Level Up!
 					qg(63626, qh(31590)),	-- Got one!					
-					ach(6602, { -- Taming Kalimdor	
+					h(ach(6602, { -- Taming Kalimdor	
 						qh(32009),	-- Varzok
 						qh(31812, {	-- Zunta, The Pet Tamer
 							i(89125, {	-- Sack of Pet Supplies
@@ -912,7 +912,7 @@ _.Zones =
 								i(44820),	-- TOY! Red Ribbon Pet Leash
 							}),
 						}),	
-					}),
+					})),
 					qg(63626, qh(31903, { -- Battle Pet Tamers: Eastern Kingdoms
 						["groups"] = {
 							i(89125, {	-- Sack of Pet Supplies

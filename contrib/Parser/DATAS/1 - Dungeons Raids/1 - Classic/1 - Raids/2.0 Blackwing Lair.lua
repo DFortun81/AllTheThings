@@ -274,6 +274,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19379),	-- Neltharion's Tear
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
 					i(13008),	-- Dalewind Trousers
+					i(13075),	-- Direwing Legguards
 					i(13144),	-- Serenity Belt
 					i(13146),	-- Shell Launcher Shotgun
 				},

@@ -276,7 +276,7 @@ _.Zones =
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					ach(6603, { -- Taming Eastern Kingdoms
+					a(ach(6603, { -- Taming Eastern Kingdoms
 						qa(32008),	-- Audrey Burnhep
 						qa(31316, { -- Julia, The Pet Tamer
 							i(89125, {	-- Sack of Pet Supplies
@@ -335,7 +335,7 @@ _.Zones =
 								i(44820),	-- TOY! Red Ribbon Pet Leash
 							}),
 						}),
-					}),
+					})),
 					qa(31889, { -- Battle Pet Tamers: Kalimdor
 						["groups"] = {
 							i(89125, {	-- Sack of Pet Supplies
