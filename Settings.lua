@@ -447,9 +447,9 @@ local function createGeneralFrame(parent)
 	local autoProfessionMinilist = createCheckBox("Show the Profession Mini List Automatically", child, function(self)
 			app.SetDataMember("AutoProfessionMiniList", self:GetChecked());
 			if self:GetChecked() then
-				app.OpenMiniListForCurrentProfession(true, true);
+				app:OpenMiniListForCurrentProfession(true, true);
 			else
-				app.GetWindow("Tradeskills"):SetVisible(false);
+				app:GetWindow("Tradeskills"):SetVisible(false);
 			end
 		end, 
 		function(self) 
