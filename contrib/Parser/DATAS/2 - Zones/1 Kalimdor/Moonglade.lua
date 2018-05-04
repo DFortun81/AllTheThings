@@ -218,7 +218,11 @@ _.Zones =
 						i(136795),	-- Tome of the Wilds: Charm Woodland Creature
 						i(136794),	-- Tome of the Wilds: Flap
 						i(136789),	-- Tome of the Wilds: Stag Form
-						i(136790),	-- Tome of the Wilds: Track Beasts
+						--i(136790),	-- Tome of the Wilds: Track Beasts
+						{
+							["itemID"] = 136790,	-- Tome of the Wilds: Track Beasts
+							["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+						},
 						i(136787),	-- Tome of the Wilds: Treant Form
 					}),
 					n(12029, {	-- Narianna <Bowyer>
