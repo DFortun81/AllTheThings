@@ -6298,7 +6298,7 @@ function app:GetDataCache()
 		CacheFields(allData);
 		
 		-- Uncomment this section if you need to Harvest Source IDs:
-		--[[]]--
+		--[[
 		local harvestData = {};
 		harvestData.visible = true;
 		harvestData.expanded = true;
@@ -6366,7 +6366,7 @@ function app:GetDataCache()
 			end
 			UpdateVisibleRowData(self);
 		end
-		--[[]]--
+		]]--
 	end
 	return allData;
 end
@@ -6481,7 +6481,6 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
-app:GetWindow("Harvester");
 app:GetWindow("CurrentInstance");
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
