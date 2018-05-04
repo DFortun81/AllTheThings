@@ -2234,14 +2234,26 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 										if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
 											tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), GetProgressColorText(j.progress, j.total) });
 										end
-									else
-										if j.collectible then total = total + 1; end
+									elseif j.collectible then
+										total = total + 1;
 										if j.collected or (j.trackable and j.saved) then
 											progress = progress + 1;
 											if GetDataMember("ShowCollectedItems") then
 												tinsert(items, {"  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON")});
 											end
-										elseif j.collectible or (j.trackable and app.ShowIncompleteQuests(j)) then
+										else
+											if j.dr then
+												tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON") });
+											else
+												tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("NOT_COLLECTED_ICON") });
+											end
+										end
+									elseif j.trackable then
+										if j.saved then
+											if GetDataMember("ShowCollectedItems") then
+												tinsert(items, {"  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON")});
+											end
+										elseif app.ShowIncompleteQuests(j) then
 											if j.dr then
 												tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON") });
 											else
