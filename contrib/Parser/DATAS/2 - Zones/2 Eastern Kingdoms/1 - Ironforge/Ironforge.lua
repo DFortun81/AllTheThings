@@ -983,58 +983,58 @@ _.Zones =
 						}),
 					}),
 					n(6294, {	-- Krom Stoutarm <Heirloom Curator>
-						heir(122349),	-- Bloodied Arcanite Reaper
-						heir(122350),	-- Balanced Heartseeker
-						heir(122351),	-- Venerable Dal'Rend's Sacred Charge
-						heir(122352),	-- Charmed Ancient Bone Bow
-						heir(122353),	-- Dignified HEadmaster's Charge
-						heir(122354),	-- Devout Aurastone Hammer
-						heir(122355),	-- Polished Spaulders of Valor
-						heir(122356),	-- Champion Herod's Shoulder
-						heir(122357),	-- Mystical Pauldrons of Elements
-						heir(122358),	-- Stained Shadowcraft Spaulders
-						heir(122359),	-- Preened Ironfeather Shoulders
-						heir(122360),	-- Tattered Dreadmist Mantle
-						heir(122361),	-- Swift Hand of Justice
-						heir(122362),	-- Discerning Eye of the Beast
-						heir(122363),	-- Burnished Warden Staff
-						heir(122364),	-- Sharpened Scarlet Kris
-						heir(122365),	-- Reforged Truesilver Champion
-						heir(122366),	-- Upgraded Dwarven Hand Cannon
-						heir(122367),	-- The Blessed Hammer of Grace
-						heir(122368),	-- Grand Staff of Jordan
-						heir(122369),	-- Battleworn Thrash Blade
-						a(heir(122371)),	-- Inherited Insignia of the Alliance
-						heir(122372),	-- Strengthened Stockade Pauldrons
-						heir(122373),	-- Pristine Lightforge Spaulders
-						heir(122374),	-- Prized Beastmaster's Mantle
-						heir(122375),	-- Aged Paundrons of The Five Thunders
-						heir(122376),	-- Exceptional Stormshroud Shoulders
-						heir(122377),	-- Lasting Feralheart Spaulders
-						heir(122378),	-- Exquisite Sunderseer Mantle
-						heir(122379),	-- Champion's Deathdealer Breastplate
-						heir(122380),	-- Mystical Vest of Elements
-						heir(122381),	-- Polished Breastplate of Valor
-						heir(122382),	-- Preened Ironfeather Breastplate
-						heir(122383),	-- Stained Shadowcraft Tunic
-						heir(122384),	-- Tatered Dreadmist Robe
-						heir(122385),	-- Venerable Mass of McGowan
-						heir(122386),	-- Repurposed Lava Dredger
-						heir(122387),	-- Burnished Breastplate of Might
-						heir(122388),	-- Burnished Pauldrons of Might
-						heir(122389),	-- Bloodsoaked Skullforge Reaver
-						heir(122390),	-- Musty Tome of the Lost
-						heir(122391),	-- Flamescarred Draconian Deflector
-						heir(122392),	-- Weathered Observers Shield
-						heir(122530),	-- Inherited Mark of Tyranny
-						heir(122662),	-- Eternal Talisman of Evasion
-						heir(122663),	-- Eternal Amulet of the Redeemed
-						heir(122664),	-- Eternal Horizon Choker
-						heir(122666),	-- Eternal Woven Ivy Necklace
-						heir(122667),	-- Eternal Emberfury Talisman
-						heir(122668),	-- Eternal Will of the Martyr
-						heir(127010),	-- Pristine Lightforge Breastplate
-						heir(140773),	-- Eagletalon Spear
+						i(122349),	-- Bloodied Arcanite Reaper
+						i(122350),	-- Balanced Heartseeker
+						i(122351),	-- Venerable Dal'Rend's Sacred Charge
+						i(122352),	-- Charmed Ancient Bone Bow
+						i(122353),	-- Dignified HEadmaster's Charge
+						i(122354),	-- Devout Aurastone Hammer
+						i(122355),	-- Polished Spaulders of Valor
+						i(122356),	-- Champion Herod's Shoulder
+						i(122357),	-- Mystical Pauldrons of Elements
+						i(122358),	-- Stained Shadowcraft Spaulders
+						i(122359),	-- Preened Ironfeather Shoulders
+						i(122360),	-- Tattered Dreadmist Mantle
+						i(122361),	-- Swift Hand of Justice
+						i(122362),	-- Discerning Eye of the Beast
+						i(122363),	-- Burnished Warden Staff
+						i(122364),	-- Sharpened Scarlet Kris
+						i(122365),	-- Reforged Truesilver Champion
+						i(122366),	-- Upgraded Dwarven Hand Cannon
+						i(122367),	-- The Blessed Hammer of Grace
+						i(122368),	-- Grand Staff of Jordan
+						i(122369),	-- Battleworn Thrash Blade
+						a(i(122371)),	-- Inherited Insignia of the Alliance
+						i(122372),	-- Strengthened Stockade Pauldrons
+						i(122373),	-- Pristine Lightforge Spaulders
+						i(122374),	-- Prized Beastmaster's Mantle
+						i(122375),	-- Aged Paundrons of The Five Thunders
+						i(122376),	-- Exceptional Stormshroud Shoulders
+						i(122377),	-- Lasting Feralheart Spaulders
+						i(122378),	-- Exquisite Sunderseer Mantle
+						i(122379),	-- Champion's Deathdealer Breastplate
+						i(122380),	-- Mystical Vest of Elements
+						i(122381),	-- Polished Breastplate of Valor
+						i(122382),	-- Preened Ironfeather Breastplate
+						i(122383),	-- Stained Shadowcraft Tunic
+						i(122384),	-- Tatered Dreadmist Robe
+						i(122385),	-- Venerable Mass of McGowan
+						i(122386),	-- Repurposed Lava Dredger
+						i(122387),	-- Burnished Breastplate of Might
+						i(122388),	-- Burnished Pauldrons of Might
+						i(122389),	-- Bloodsoaked Skullforge Reaver
+						i(122390),	-- Musty Tome of the Lost
+						i(122391),	-- Flamescarred Draconian Deflector
+						i(122392),	-- Weathered Observers Shield
+						i(122530),	-- Inherited Mark of Tyranny
+						i(122662),	-- Eternal Talisman of Evasion
+						i(122663),	-- Eternal Amulet of the Redeemed
+						i(122664),	-- Eternal Horizon Choker
+						i(122666),	-- Eternal Woven Ivy Necklace
+						i(122667),	-- Eternal Emberfury Talisman
+						i(122668),	-- Eternal Will of the Martyr
+						i(127010),	-- Pristine Lightforge Breastplate
+						i(140773),	-- Eagletalon Spear
 						a(i(150743)),	-- Surviving Kalimdor Toy
 						a(i(150746)),	-- To Modernize the Provisions of Azeroth Toy
 					}),

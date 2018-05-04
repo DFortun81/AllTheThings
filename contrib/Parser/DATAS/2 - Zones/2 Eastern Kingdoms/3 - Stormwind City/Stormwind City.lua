@@ -2403,21 +2403,21 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						["description"] = "The vendor wanders around Stormwind at random times. He is not always available.|r",
 					}),
 					n(52030, {	-- Liliana Emberfrost <Honor Heirlooms>
-						heir(122364),	-- Sharpened Scarlet Kris
-						heir(122365),	-- Reforged Truesilver Champion
-						heir(122366),	-- Upgraded Dwarven Hand Cannon
-						heir(122367),	-- The Blessed Hammer of Grace
-						heir(122368),	-- Grand Staff of Jordan
-						heir(122369),	-- Battleworn Thrash Blade
-						a(heir(122371)),	-- Inherited Insignia of the Alliance
-						heir(122372),	-- Strengthened Stockade Pauldrons
-						heir(122373),	-- Pristine Lightforge Spaulders
-						heir(122374),	-- Prized Beastmaster's Mantle
-						heir(122375),	-- Aged Paundrons of The Five Thunders
-						heir(122376),	-- Exceptional Stormshroud Shoulders
-						heir(122377),	-- Lasting Feralheart Spaulders
-						heir(122378),	-- Exquisite Sunderseer Mantle
-						heir(122530),	-- Inherited Mark of Tyranny
+						i(122364),	-- Sharpened Scarlet Kris
+						i(122365),	-- Reforged Truesilver Champion
+						i(122366),	-- Upgraded Dwarven Hand Cannon
+						i(122367),	-- The Blessed Hammer of Grace
+						i(122368),	-- Grand Staff of Jordan
+						i(122369),	-- Battleworn Thrash Blade
+						a(i(122371)),	-- Inherited Insignia of the Alliance
+						i(122372),	-- Strengthened Stockade Pauldrons
+						i(122373),	-- Pristine Lightforge Spaulders
+						i(122374),	-- Prized Beastmaster's Mantle
+						i(122375),	-- Aged Paundrons of The Five Thunders
+						i(122376),	-- Exceptional Stormshroud Shoulders
+						i(122377),	-- Lasting Feralheart Spaulders
+						i(122378),	-- Exquisite Sunderseer Mantle
+						i(122530),	-- Inherited Mark of Tyranny
 					}),
 					n(1299, {	-- Lisbeth Schneider <Clothier>
 						i(3426),	-- Bold Yellow Shirt

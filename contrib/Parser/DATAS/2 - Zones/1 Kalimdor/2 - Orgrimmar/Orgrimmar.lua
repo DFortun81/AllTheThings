@@ -1934,21 +1934,21 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(64884),	-- Bilgewater Cartel Tabard
 					}),
 					n(52036, {	-- Galra <Honor Heirlooms>
-						heir(122364),	-- Sharpened Scarlet Kris
-						heir(122365),	-- Reforged Truesilver Champion
-						heir(122366),	-- Upgraded Dwarven Hand Cannon
-						heir(122367),	-- The Blessed Hammer of Grace
-						heir(122368),	-- Grand Staff of Jordan
-						heir(122369),	-- Battleworn Thrash Blade
-						heir(122370),	-- Inherited Insignia of the Horde
-						heir(122372),	-- Strengthened Stockade Pauldrons
-						heir(122373),	-- Pristine Lightforge Spaulders
-						heir(122374),	-- Prized Beastmaster's Mantle
-						heir(122375),	-- Aged Paundrons of The Five Thunders
-						heir(122376),	-- Exceptional Stormshroud Shoulders
-						heir(122377),	-- Lasting Feralheart Spaulders
-						heir(122378),	-- Exquisite Sunderseer Mantle
-						heir(122530),	-- Inherited Mark of Tyranny
+						i(122364),	-- Sharpened Scarlet Kris
+						i(122365),	-- Reforged Truesilver Champion
+						i(122366),	-- Upgraded Dwarven Hand Cannon
+						i(122367),	-- The Blessed Hammer of Grace
+						i(122368),	-- Grand Staff of Jordan
+						i(122369),	-- Battleworn Thrash Blade
+						i(122370),	-- Inherited Insignia of the Horde
+						i(122372),	-- Strengthened Stockade Pauldrons
+						i(122373),	-- Pristine Lightforge Spaulders
+						i(122374),	-- Prized Beastmaster's Mantle
+						i(122375),	-- Aged Paundrons of The Five Thunders
+						i(122376),	-- Exceptional Stormshroud Shoulders
+						i(122377),	-- Lasting Feralheart Spaulders
+						i(122378),	-- Exquisite Sunderseer Mantle
+						i(122530),	-- Inherited Mark of Tyranny
 					}),
 					n(5188, {	-- Garyl <Tabard Vendor>
 						["groups"] = {
