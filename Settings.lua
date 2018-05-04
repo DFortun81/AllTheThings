@@ -1383,7 +1383,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,item)
 	
 	local itemFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-itemFrame", child, "ThinBorderTemplate");
-	itemFrame:SetSize(child:GetWidth()/2.5,200)
+	itemFrame:SetSize(child:GetWidth()/2.5,220)
 	itemFrame:SetPoint("TOPLEFT",item,0,-frameSpacer);
 	addObject(elm,itemFrame)
 	
@@ -1391,7 +1391,7 @@ local function createMiniListFrame(parent)
 	local itemFilters = app.GetPersonalDataMember("ItemFilters");
 	local last = item;
 	local x = 5
-	for i,filter in ipairs({ 100, 101, 102, 103, 104, 108, 110, 113, 200 }) do
+	for i,filter in ipairs({ 55, 100, 101, 102, 103, 104, 108, 110, 113, 200 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
 			itemFilters[filter] = self:GetChecked();
 			app:RefreshData();
@@ -1513,7 +1513,7 @@ local function createMiniListFrame(parent)
 	
 	last = armor;
 	x = 5
-	for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 51, 52, 53, 54, 55 }) do
+	for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 51, 52, 53 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
 			itemFilters[filter] = self:GetChecked();
 			refreshUI();
@@ -1544,7 +1544,7 @@ local function createMiniListFrame(parent)
 	
 	last = weapon;
 	x = 5
-	for i,filter in ipairs({ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35 }) do
+	for i,filter in ipairs({ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 54 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
 			itemFilters[filter] = self:GetChecked();
 			refreshUI();
