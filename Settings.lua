@@ -469,7 +469,7 @@ local function createGeneralFrame(parent)
 			app.SetDataMember("AutoMinimize", self:GetChecked());
 		end, 
 		function(self) 
-			self:SetChecked(app.GetDataMember("AutoMinimize", false));
+			self:SetChecked(app.GetDataMember("AutoMinimize", true));
 		end,
 		function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");

@@ -1662,7 +1662,7 @@ local function OpenMiniList(field, id, label)
 		ExpandGroupsRecursively(popout.data, true);
 		
 		-- if enabled minimize rows based on difficulty 
-		if GetDataMember("AutoMinimize",false) then
+		if GetDataMember("AutoMinimize",true) then
 			local _, _, difficultyID, _, _, _, _, _, _ = GetInstanceInfo();
 			for _, row in ipairs(popout.data.g) do
 				local found = not row["difficultyID"] or (difficultyID == row["difficultyID"]);
@@ -7831,6 +7831,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowModels", true);
 	GetDataMember("AutoMiniList", true);
 	GetDataMember("AutoProfessionMiniList", true);
+	GetDataMember("AutoMinimize", true);
 	
 	GetDataMember("ShowAchievementID", false);
 	GetDataMember("ShowArtifactID", false);
