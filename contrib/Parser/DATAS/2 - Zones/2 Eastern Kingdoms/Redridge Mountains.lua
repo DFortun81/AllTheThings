@@ -45,7 +45,7 @@ _.Zones =
 					qg(65651, qa(31781)),	-- Lindsay (DAILY)
 				}),
 				n(-17, {	-- Quests
-					ach(4902, { -- Redridge Mountain Quests
+					a(ach(4902, { -- Redridge Mountain Quests
 						crit(1, { -- The Gnoll Offensive
 							qg(464, qa(26503, {	-- Still Assessing the Threat
 								["groups"] = {
@@ -299,7 +299,7 @@ _.Zones =
 								["sourceQuests"] = {26714},	-- Darkblaze, Brood of the Worldbreaker
 							})),
 						}),
-					}),
+					})),
 					n(-168, { -- Other Quests
 						sz(780,1, {  -- Lakeshire
 							qg(8965, qa(26508)), -- Nida's Necklace
