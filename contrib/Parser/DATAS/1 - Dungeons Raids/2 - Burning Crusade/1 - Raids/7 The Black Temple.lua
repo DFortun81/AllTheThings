@@ -93,7 +93,7 @@ _.Instances =
 								i( 32261),	-- Band of the Abyssal Lord
 							})),
 							cr(22841, e(1584, {	-- Shade of Akama
-								i(32361),	-- Blind Seers Icon
+								i(32361),	-- Blind-Seers Icon
 								i(32273),	-- Amice of Brilliant Light
 								i(32264),	-- Shoulders of the Hidden Predator
 								i(32270),	-- Focused Mana Bindings
@@ -202,106 +202,110 @@ _.Instances =
 								i( 32366),	-- Shadowmaster's Boots
 							})),
 							cr(23426, e(1589, {	-- The Illidari Council
-								i(31098, {	-- 
-									i(32042),	-- 
-									i(32036),	-- 
-									i(32023),	-- 
-									i(32017),	-- 
-									i(31995),	-- 
-									i(31983),	-- 
-									i(31975),	-- 
-									i(30995),	-- 
-									i(30994),	-- 
-									i(30993),	-- 
-									i(31053),	-- 
-									i(31067),	-- 
-									i(31068),	-- 
+								i(31098, {	-- Leggings of the Forgotten Conqueror
+									i(30993),	-- Lightbringer Greaves
+									i(30994),	-- Lightbringer Leggings
+									i(30995),	-- Lightbringer Legguards
+									i(31995),	-- Merciless Gladiator's Lamellar Legguards
+									i(32023),	-- Merciless Gladiator's Ornamented Legplates
+									i(32042),	-- Merciless Gladiator's Scaled Legguards
+									i(31068),	-- Breeches of Absolution
+									i(31067),	-- Leggings of Absolution
+									i(32017),	-- Merciless Gladiator's Mooncloth Leggings
+									i(32036),	-- Merciless Gladiator's Satin Leggings
+									i(31053),	-- Leggings of the Malefic
+									i(31975),	-- Merciless Gladiator's Dreadweave Leggings
+									i(31983),	-- Merciless Gladiator's Felweave Trousers
 								}),
-								i(31100, {	-- 
-									i(31021),	-- 
-									i(31020),	-- 
-									i(31019),	-- 
-									i(30978),	-- 
-									i(30977),	-- 
-									i(32032),	-- 
-									i(30489),	-- 
-									i(32012),	-- 
-									i(32007),	-- 
-									i(31963),	-- 
-									i(31005),	-- 
+								i(31100, {	-- Leggings of the Forgotten Protector
+									i(31005),	-- Gronnstalker's Leggings
+									i(31963),	-- Merciless Gladiator's Chain Leggings
+									i(32007),	-- Merciless Gladiator's Linked Leggings
+									i(32012),	-- Merciless Gladiator's Mail Leggings
+									i(32032),	-- Merciless Gladiator's Ringmail Leggings
+									i(31019),	-- Skyshatter Leggings
+									i(31020),	-- Skyshatter Legguards
+									i(31021),	-- Skyshatter Pants
+									i(30489),	-- Merciless Gladiator's Plate Legguards
+									i(30977),	-- Onslaught Greaves
+									i(30978),	-- Onslaught Legguards
 								}),
-								i(31099, {	-- 
-									i(31046),	-- 
-									i(31045),	-- 
-									i(31044),	-- 
-									i(31029),	-- 
-									i(32058),	-- 
-									i(32051),	-- 
-									i(32000),	-- 
-									i(31989),	-- 
-									i(31969),	-- 
-									i(31058),	-- 
+								i(31099, {	-- Leggings of the Forgotten Vanquisher
+									i(31969),	-- Merciless Gladiator's Dragonhide Legguards
+									i(31989),	-- Merciless Gladiator's Kodohide Legguards
+									i(31058),	-- Merciless Gladiator's Wyrmhide Legguards
+									i(31044),	-- Thunderheart Leggings
+									i(31045),	-- Thunderheart Legguards
+									i(31046),	-- Thunderheart Pants
+									i(32058),	-- Leggings of the Tempest
+									i(32051),	-- Merciless Gladiator's Silk Trousers
+									i(32000),	-- Merciless Gladiator's Leather Legguards
+									i(31029),	-- Slayer's Legguards
 								}),
-								i(32376),	-- 
-								i(32373),	-- 
-								i(32518),	-- 
-								i(32331),	-- 
-								i(32519),	-- 
+								i(32376),	-- Forest Prowler's Helm
+								i(32373),	-- Helm of the Illidari Shatterer
+								i(32518),	-- Veil of Turning Leaves
+								i(32331),	-- Cloak of the Illidari Council
+								i(32519),	-- Belt of Divine Guidance
+								i(32505),	-- Madness of the Betrayer
 							})),
 							cr(22917, e(1590, {	-- Illidan Stormrage
-								i(31089, {	-- 
-									i(31066),	-- 
-									i(31065),	-- 
-									i(31052),	-- 
-									i(32039),	-- 
-									i(32038),	-- 
-									i(32020),	-- 
-									i(32019),	-- 
-									i(31992),	-- 
-									i(31982),	-- 
-									i(31977),	-- 
-									i(30992),	-- 
-									i(30991),	-- 
-									i(30990),	-- 
+								i( 31089, {	-- Chestguard of the Forgotten Conqueror
+									i(30990),	-- Lightbringer Breastplate
+									i(30991),	-- Lightbringer Chestguard
+									i(30992),	-- Lightbringer Chestpiece
+									i(31992),	-- Merciless Gladiator's Lamellar Chestpiece
+									i(32020),	-- Merciless Gladiator's Ornamented Chestguard
+									i(32039),	-- Merciless Gladiator's Scaled Chestpiece
+									i(32019),	-- Merciless Gladiator's Mooncloth Robe
+									i(32038),	-- Merciless Gladiator's Satin Robe
+									i(31065),	-- Shroud of Absolution
+									i(31066),	-- Vestments of Absolution
+									i(31977),	-- Merciless Gladiator's Dreadweave Robe
+									i(31982),	-- Merciless Gladiator's Felweave Raiment
+									i(31052),	-- Robe of the Malefic
 								}),
-								i(31091, {	-- 
-									i(31018),	-- 
-									i(31016),	-- 
-									i(31017),	-- 
-									i(30976),	-- 
-									i(30975),	-- 
-									i(32029),	-- 
-									i(30486),	-- 
-									i(32009),	-- 
-									i(32004),	-- 
-									i(31960),	-- 
-									i(31004),	-- 
+								i( 31091, {	-- Chestguard of the Forgotten Protector
+									i(31004),	-- Gronnstalker's Chestguard
+									i(31960),	-- Merciless Gladiator's Chain Armor
+									i(32004),	-- Merciless Gladiator's Linked Armor
+									i(32009),	-- Merciless Gladiator's Mail Armor
+									i(32029),	-- Merciless Gladiator's Ringmail Armor
+									i(31017),	-- Skyshatter Breastplate
+									i(31016),	-- Skyshatter Chestguard
+									i(31018),	-- Skyshatter Tunic
+									i(30486),	-- Merciless Gladiator's Plate Chestpiece
+									i(30975),	-- Onslaught Breastplate
+									i(30976),	-- Onslaught Chestguard
 								}),
-								i(31090, {	-- 
-									i(31043),	-- 
-									i(31041),	-- 
-									i(31042),	-- 
-									i(31028),	-- 
-									i(31057),	-- 
-									i(32060),	-- 
-									i(32050),	-- 
-									i(32002),	-- 
-									i(31991),	-- 
-									i(31972),	-- 
+								i( 31090, {	-- Chestguard of the Forgotten Vanquisher
+									i(31972),	-- Merciless Gladiator's Dragonhide Tunic
+									i(31991),	-- Merciless Gladiator's Kodohide Tunic
+									i(32060),	-- Merciless Gladiator's Wyrmhide Tunic
+									i(31042),	-- Thunderheart Chestguard
+									i(31041),	-- Thunderheart Tunic
+									i(31043),	-- Thunderheart Vest
+									i(32050),	-- Merciless Gladiator's Silk Raiment
+									i(31057),	-- Robes of the Tempest
+									i(32002),	-- Merciless Gladiator's Leather Tunic
+									i(31028),	-- Slayer's Chestguard
 								}),
-								i(32374),	-- 
-								i(32837),	-- 
-								i(32838),	-- 
-								i(32471),	-- 
-								i(32500),	-- 
-								i(32336),	-- 
-								i(32375),	-- 
-								i(32525),	-- 
-								i(32235),	-- 
-								i(32521),	-- 
-								i(32524),	-- 
-								i(122196),	-- 
-							}))
+								i( 32374),	-- Zhar'doom, Greatstaff ot the Devourer
+								i( 32837),	-- Warglaive of Azzinoth (MH)
+								i( 32838),	-- Warglaive of Azzinoth (OH)
+								i( 32500),	-- Crystal Spire of Karabor
+								i( 32471),	-- Shard of Azzinoth
+								i( 32336),	-- Black Bow of the Betrayer
+								i( 32375),	-- Bulwark of Azzinoth
+								i( 32525),	-- Cowl of the Illidari High Lord
+								i( 32235),	-- Cursed Vision of Sargeras
+								i( 32521),	-- Faceplate of the Impenetrable
+								i( 32524),	-- Shroud of the Highborne
+								i( 32497),	-- Stormrage Signet Ring
+								i( 32496),	-- Memento of Tyrande
+								i( 32483),	-- The Skull of Gul'dan
+								i(122196),	-- Music Roll: The Burning Legion
+							})),
 						},	
 						["lvl"] = 68,
 						["ignoreBonus"] = 1
@@ -310,119 +314,124 @@ _.Instances =
 						["lvl"] = 70,
 						["groups"] = {	
 							cr(22887, e(1582, {	-- High Warlord Naj'entus
-								i(150447),
-								i(150437),
-								i(150438),
-								i(150481),
-								i(150441),
-								i(150520),
-								i(150434),
-								i(150435),
-								i(150443),
-								i(150444),
-								i(150440),
-								i(150445),
-								i(122104)
+								i(122104),	-- Leviathan Egg (PET!)
+								i(150447),	-- Halberd of Desolation
+								i(150437),	-- Rising Tide
+								i(150438),	-- The Maelstrom's Fury
+								i(150481),	-- Cowl of Benevolence
+								i(150441),	-- Guise of the Tidal Lurker
+								i(150520),	-- Mantle of Darkness
+								i(150434),	-- Eternium Shell Bracers
+								i(150435),	-- Fists of Mukoa
+								i(150443),	-- Boots of Oceanic Fury
+								i(150444),	-- Pearl Inlaid Boots
+								i(150440),	-- Slippers of the Seacaller
+								i(150445),	-- Tide-Stomper's Greaves
 							})),
 							cr(22898, e(1583, {	-- Supremus
-								i(150460),
-								i(150451),
-								i(150453),
-								i(150532),
-								i(150456),
-								i(150454),
-								i(150512),
-								i(122106)
+								i(122106),	-- Shard of Supremus (PET!)
+								i(150460),	-- Syphon of the Nathrezim
+								i(150451),	-- Legionkiller
+								i(150453),	-- Felstone Bulwark
+								i(150532),	-- Veil of Turning Leaves
+								i(150456),	-- Naturalist's Preserving Cinch
+								i(150454),	-- Waistwrap of Infinity
+								i(150512),	-- Leggings of Devastation
+								i(150459),	-- Band of the Abyssal Lord
 							})),
 							cr(22841, e(1584, {	-- Shade of Akama
-								i(150452),
-								i(150507),
-								i(150469),
-								i(150535),
-								i(150473),
-								i(150470),
-								i(150463),
+								i(150452),	-- The Brutalizer
+								i(150507),	-- Blind-Seers Icon
+								i(150469),	-- Amice of Brilliant Light
+								i(150535),	-- Shroud of the Highborne
+								i(150473),	-- The Seeker's Wristguards
+								i(150470),	-- Spiritwalker Gauntlets
+								i(150463),	-- Shadow-Walker's Cord
 							})),
 							cr(22871, e(1585, {	-- Teron Gorefiend
-								i(150500),
-								i(150477),
-								i(150475),
-								i(150479),
-								i(150476),
-								i(150480),
-								i(150474),
-								i(150533),
-								i(150529),
-								i(150528)
+								i(150500),	-- Soul Cleaver
+								i(150477),	-- Rifle of the Stoic Guardian
+								i(150475),	-- Shadowmoon Destroyer's Drape
+								i(150479),	-- Robe of the Shadow Council
+								i(150476),	-- Insidious Bands
+								i(150480),	-- Botanist's Gloves of Growth
+								i(150474),	-- Gauntlets of Enforcement
+								i(150533),	-- Belt of Divine Guidance
+								i(150529),	-- Girdle of Lordaeron's Fallen
+								i(150528),	-- Softstep Boots of Tracking
 							})),
 							cr(22948, e(1586, {	-- Gurtogg Bloodboil
-								i(150496),
-								i(150466),
-								i(150495),
-								i(150462),
-								i(150486),
-								i(150530),
-								i(150491),
-								i(150471),
-								i(150494),
-								i(150493),
-								i(150511)
+								i(150496),	-- Staff of Immaculate Recovery
+								i(150466),	-- Messenger of Fate
+								i(150495),	-- Wand of Prismatic Focus
+								i(150462),	-- Shoudlers of the Hidden Predator
+								i(150486),	-- Vest of Mounting Assault
+								i(150530),	-- Wristbands of Divine Influence
+								i(150491),	-- Belt of Primal Majesty
+								i(150471),	-- Flashfire Girdle
+								i(150494),	-- Girdle of Mighty Resolve
+								i(150493),	-- Leggings of Divine Retribution
+								i(150511),	-- Shadowmaster's Boots
+								i(150526),	-- Shadowmoon Insignia
 							})),
 							cr(23418, e(1587, {	-- Reliquary of Souls
-								i(150484),
-								i(150509),
-								i(150506),
-								i(150490),
-								i(150531),
-								i(150503),
-								i(150505),
-								i(150499),
-								i(150498),
-								i(150485),
-								i(150497),
-								i(150504),
-								i(122108),
-								i(122109),
-								i(122107)
+								i(122107),	-- Fragment of Anger (PET!)
+								i(122109),	-- Fragment of Desire (PET!)
+								i(122108),	-- Fragment of Suffering (PET!)
+								i(150484),	-- Torch of the Damned
+								i(150509),	-- Naaru-Blessed Life Rod
+								i(150506),	-- Crown of Empowered Fate
+								i(150490),	-- Blood-Cursed Shoulderpads
+								i(150531),	-- The Wavemender's Mantle
+								i(150503),	-- Elunite Empowered Bracers
+								i(150505),	-- Gloves of Unfailing Faith
+								i(150499),	-- Grips of Damnation
+								i(150498),	-- Boneweave Girdle
+								i(150485),	-- Girdle of Stability
+								i(150497),	-- Dreadboots of the Legion
+								i(150504),	-- Naturewarden's Treads
 							})),
 							cr(22947, e(1588, {	-- Mother Shahraz
-								i(150514),
-								i(150519),
-								i(150442),
-								i(150516),
-								i(150571),
-								i(150771),
-								i(150556),
-								i(150558),
-								i(150568),
-								i(150555),
-								i(150768),
-								i(150565),
-								i(150560),
-								i(150563),
-								i(150573),
-								i(150765),
-								i(150492),
-								i(150510),
-								i(150467),
-								i(150468),
-								i(122110)
+								i(122110),	-- Sultry Grimoire (PET!)
+								i(150514),	-- Blade of Savagery
+								i(150519),	-- Forest Prowler's Helm
+								i(150442),	-- Helm of Soothing Currents
+								i(150516),	-- Helm of the Illidari Shatterer
+								i(150571),	-- Gronnstalker's Spaulders
+								i(150935),	-- Illidari Shoulderpads
+							 -- i(150771),	-- Illidari Shoulderpads (this version is not in DJ)
+								i(150556),	-- Lightbringer Shoulderguards
+								i(150558),	-- Mantle of the Malefic
+								i(150568),	-- Mantle of the Tempest
+								i(150555),	-- Onslaught Shoulderguards
+								i(150768),	-- Shoulderguards of the Broken Sage
+								i(150565),	-- Shoulderpads of Absolution
+								i(150560),	-- Skyshatter Mantle
+								i(150563),	-- Slayer's Shoulderpads
+								i(150573),	-- Thunderheart Spaulders
+								i(150765),	-- Undying Vigil Shoulderguards
+								i(150492),	-- Garments of Temperance
+								i(150510),	-- Heartshatter Breastplate
+								i(150467),	-- Focused Mana Bindings
+								i(150468),	-- Kilt of Immortal Nature
 							})),
 							cr(23426, e(1589, {	-- The Illidari Council
-								i(150536),
-								i(150483),
-								i(150580),
-								i(150562),
-								i(150572),
-								i(150570),
-								i(150554),
-								i(150567),
-								i(150575),
-								i(150557),
-								i(150769),
-								i(150773),
-								i(150766),
-								i(150564),
+								i(150536),	-- Cowl of the Illidari High Lord
+								i(150483),	-- Cloak of the Illidari Council
+								i(150572),	-- Gronnstalker's Leggings
+								i(150933),	-- Illidari Leggings
+							 -- i(150773),	-- Illidari Leggings (this version is not in DJ)
+								i(150567),	-- Leggings of Absolution
+								i(150580),	-- Leggings of the Malefic
+								i(150570),	-- Leggings of the Tempest
+								i(150769),	-- Leggings of the Broken Sage
+								i(150557),	-- Lightbringer Legguards
+								i(150554),	-- Onslaught Legguards
+								i(150562),	-- Skyshatter Legguards
+								i(150564),	-- Slayer's Legguards
+								i(150575),	-- Thunderheart Legguards
+								i(150766),	-- Undying Vigil Legplates
+								i(150527),	-- Madness of the Betrayer
 							})),
 							cr(22917, e(1590, {	-- Illidan Stormrage
 								ach(11869, { -- I'll Hold These For You Until You Get Out
@@ -433,27 +442,31 @@ _.Instances =
 									},
 									["classes"] = { 12 },
 								}),
-								i(150517),
-								i(150521),
-								i(150525),
-								i(150488),
-								i(150518),
-								i(150534),
-								i(150436),
-								i(150550),
-								i(150559),
-								i(150551),
-								i(150772),
-								i(150569),
-								i(150566),
-								i(150561),
-								i(150770),
-								i(150553),
-								i(150574),
-								i(150767),
-								i(150552),
-								i(122196),
-							}))
+								i(150517),	-- Zhar'doom, Greatstaff of the Devourer
+								i(150525),	-- Crystal Spire of Karabor
+								i(150521),	-- Shard of Azzinoth
+								i(150488),	-- Black Bow of the Betrayer
+								i(150518),	-- Bulwark of Azzinoth
+								i(150436),	-- Cursed Vision of Sargeras
+								i(150534),	-- Faceplate of the Impenetrable
+								i(150553),	-- Gronnstalker's Chestguard
+								i(150934),	-- Illidari Robe
+							 -- i(150772),	-- Illidari Robe (this version is not in DJ)
+								i(150770),	-- Jerkin of the Broken Sage
+								i(150552),	-- Lightbringer Chestguard
+								i(150551),	-- Onslaught Chestguard
+								i(150559),	-- Robe of the Malefic
+								i(150569),	-- Robes of the Tempest
+								i(150566),	-- Shroud of Absolution
+								i(150561),	-- Skyshatter Breastplate
+								i(150550),	-- Slayer's Chestguard
+								i(150574),	-- Thunderheart Tunic
+								i(150767),	-- Undying Vigil Battleplate
+								i(150524),	-- Stormrage Signet Ring
+								i(150523),	-- Memento of Tyrande
+								i(150522),	-- The Skull of Gul'dan
+								i(122196),	-- Music Roll: The Burning Legion
+							})),
 						},
 					}),
 				},	
