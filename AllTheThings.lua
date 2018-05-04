@@ -638,8 +638,12 @@ local function BuildSourceTextForTSM(group, l)
 	end
 	return app.DisplayName;
 end
-local function GetSourceID(itemLink)
+local function GetSourceID(itemLink, itemID)
     if IsDressableItem(itemLink) then
+		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
+		local sourceID = select(2, C_TransmogCollection.GetItemInfo(itemLink));
+		if sourceID then return sourceID, true; end
+		
 		local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
 		if slotName then
 			local slots = inventorySlotsMap[slotName];
@@ -649,7 +653,13 @@ local function GetSourceID(itemLink)
 				for i, slot in pairs(slots) do
 					DressUpModel:TryOn(itemLink, slot);
 					local sourceID = DressUpModel:GetSlotTransmogSources(slot);
-					if sourceID and sourceID ~= 0 then return sourceID, true; end
+					if sourceID and sourceID ~= 0 then
+						-- Added 5/4/2018 - Account for DressUpModel lag... sigh
+						local sourceItemLink = select(6, C_TransmogCollection.GetAppearanceSourceInfo(sourceID));
+						if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
+							return sourceID, true;
+						end
+					end
 				end
 			end
 		end
@@ -1331,7 +1341,7 @@ local function SearchForItemLink(link)
 				
 				local group, working, important;
 				-- Source ID searching is much faster and more reliable.
-				local sourceID = GetSourceID(link);
+				local sourceID = GetSourceID(link, itemID);
 				if sourceID then
 					important = true;
 					group = SearchForSourceID(sourceID) or SearchForItemID(itemID);
@@ -5189,7 +5199,7 @@ local function SetRowData(self, row, data)
 			self.processingLinks = true;
 		elseif data.s and data.s < 1 then
 			-- If it doesn't, the source ID will need to be harvested.
-			local s, dressable = GetSourceID(text);
+			local s, dressable = GetSourceID(text, data.itemID);
 			if s and s > 0 then
 				data.s = s;
 				if data.collected then
