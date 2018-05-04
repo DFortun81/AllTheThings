@@ -1661,6 +1661,23 @@ local function OpenMiniList(field, id, label)
 		popout.data = results;
 		ExpandGroupsRecursively(popout.data, true);
 		
+		-- if enabled minimize rows based on difficulty 
+		if GetDataMember("AutoMinimize",false) then
+			local _, _, difficultyID, _, _, _, _, _, _ = GetInstanceInfo();
+			for _, row in ipairs(popout.data.g) do
+				local found = not row["difficultyID"] or (difficultyID == row["difficultyID"]);
+				
+				if not found and row["difficulties"] then
+					for _, value in pairs(row["difficulties"]) do
+						if value == difficultyID then
+							found = true
+						end
+					end
+				end	
+				ExpandGroupsRecursively(row, found);
+			end
+		end
+
 		-- Reset to the first object.
 		popout.ScrollBar:SetValue(1);
 		

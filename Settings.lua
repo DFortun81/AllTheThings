@@ -400,7 +400,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,other)
 	
 	local otherFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-otherFrame", child, "ThinBorderTemplate");
-	otherFrame:SetSize(child:GetWidth(),80)
+	otherFrame:SetSize(child:GetWidth(),90)
 	otherFrame:SetPoint("TOPLEFT",other,0,-frameSpacer);
 	addObject(elm,otherFrame)
 	
@@ -463,6 +463,22 @@ local function createGeneralFrame(parent)
 	autoProfessionMinilist:SetPoint("TOPLEFT",autoMinilist,0,-frameSpacer)
 	autoProfessionMinilist.Label:SetWidth(autoProfessionMinilist.Label:GetWidth() * 1.5);
 	addObject(elm,autoProfessionMinilist)
+	
+	-- auto minimize when not applicable 
+	local autoMin = createCheckBox("Automatically Minimize Mini List rows when not Applicable", child, function(self)
+			app.SetDataMember("AutoMinimize", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("AutoMinimize", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to automatically minimize rows in the current map mini list that are not applicable. Example: Minimize Heroic loot when in a Normal dungeon", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	autoMin:SetPoint("TOPLEFT",autoProfessionMinilist,0,-frameSpacer)
+	autoMin.Label:SetWidth(autoMin.Label:GetWidth() * 1.5);
+	addObject(elm,autoMin)
 end
 
 local function createAccountFrame(parent)
