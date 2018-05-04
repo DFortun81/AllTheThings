@@ -532,7 +532,7 @@ _.Zones =
 							i(18706, {
 								ach(396, {		-- Arena Grandmaster
 									["groups"] = {
-										heir(126948)		-- Defending Champion (BoA Trinket)
+										i(126948)		-- Defending Champion (BoA Trinket)
 									},
 									["description"] = "You must gather 12x Arena Master trinkets on ONE character. Once you have the achievement, the next time you open the chest on any character you can get the Defending Champion in addition to the other spoils.",
 								})
