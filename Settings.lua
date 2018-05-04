@@ -465,7 +465,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,autoProfessionMinilist)
 	
 	-- auto minimize when not applicable 
-	local autoMin = createCheckBox("Automatically Minimize Mini List rows when not Applicable", child, function(self)
+	local autoMin = createCheckBox("Automatically Minimize Inactive Difficulties in Mini Lists", child, function(self)
 			app.SetDataMember("AutoMinimize", self:GetChecked());
 		end, 
 		function(self) 
@@ -473,7 +473,7 @@ local function createGeneralFrame(parent)
 		end,
 		function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to automatically minimize rows in the current map mini list that are not applicable. Example: Minimize Heroic loot when in a Normal dungeon", nil, nil, nil, nil, true);
+			GameTooltip:SetText ("Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
 	autoMin:SetPoint("TOPLEFT",autoProfessionMinilist,0,-frameSpacer)
