@@ -10,7 +10,7 @@ _.Instances = { tier(1, {	-- Classic
 					i( 65986),	-- Shield Against the Evil Presence
 					i( 65962),	-- Thaelrid's Greaves
 					i( 65938),	-- Blackfathom Leggings
-					i( 65911),	-- Robe of Kelris
+					i( 65912),	-- Robe of Kelris
 					i(131713),	-- Scales of Aku'mai
 				})),
 				qg(74409, qh(34673, { 	-- The Rise of Aku'mai
