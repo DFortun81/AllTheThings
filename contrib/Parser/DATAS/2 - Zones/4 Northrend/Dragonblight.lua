@@ -846,15 +846,6 @@ _.Zones =
 					}),
 				}),	
 				n(-16, { 	-- Rares
-					n(26343, {	-- Indu'le Fisherman
-						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
-					}),
-					n(26336, {	-- Indu'le Mystic
-						dr(0.7, i(50406)),	-- Formula: Enchant Gloves - Angler
-					}),
-					n(26344, {	-- Indu'le Warrior
-						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
-					}),
 					n(32409, { -- Crazed Indu'le Survivor
 						i(44672),
 					}), 
@@ -914,6 +905,17 @@ _.Zones =
 						i(44061),	-- Pigment-Stained Robes
 						i(44062),	-- Turtle-Minders Robe
 						i(44723),	-- Nutured Penguin Egg Pet
+					}),
+				}),
+				n(0, {	-- Zone Drop
+					n(26343, {	-- Indu'le Fisherman
+						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
+					}),
+					n(26336, {	-- Indu'le Mystic
+						dr(0.7, i(50406)),	-- Formula: Enchant Gloves - Angler
+					}),
+					n(26344, {	-- Indu'le Warrior
+						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
 					}),
 				}),
 				faction(2135, {		-- Chromie (Faction)
