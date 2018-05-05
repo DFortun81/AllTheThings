@@ -9,7 +9,7 @@ _.WorldEvents =
 				["groups"] = {
 					n(-4, { 	-- Achievements
 						ach(1691, { -- Merrymaker
-							un(29, style(0, title(102))), -- Merrymaker
+							un(29, title(102)), -- Merrymaker
 						}),
 						ach(1705, { -- (2007)
 							i(34426, { -- Winter Veil Gift
