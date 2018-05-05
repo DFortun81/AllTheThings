@@ -632,7 +632,7 @@ _.Zones =
 								i(153040), -- Felclaw Marsuul
 							}),
 							ach(12083, { -- Paragon of Argus
-								style(2, title(366)), -- the Lightbringer
+								title(366), -- the Lightbringer
 							}),
 						}),
 						prof(182, { -- Herb Gathering

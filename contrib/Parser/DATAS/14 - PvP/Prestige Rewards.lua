@@ -21,7 +21,7 @@ _.PVP =
 			i(140228), -- Prestigious Bronze Courser
 		}),
 		ach(11468, { -- Alive for Five [5]
-			style(0, title(321)), -- The Honorable %s
+			title(321), -- The Honorable %s
 		}),
 		ach(11469, { -- The River Six [6]
 			-- Artifact Appearance
@@ -37,7 +37,7 @@ _.PVP =
 			i(140233), -- Prestigious Ivory Courser
 		}),
 		ach(11685, { -- Decade of Dominance [10]
-			style(2, title(322)), -- %s, the Prestigious
+			title(322), -- %s, the Prestigious
 		}),
 		ach(11686, { -- These Go To Eleven [11]
 			-- Artifact Appearance
@@ -49,7 +49,7 @@ _.PVP =
 			i(140408), -- Prestigious Azure Courser
 		}),
 		ach(11689, { -- Fourteen for the Team [14]
-			style(2, title(323)), -- %s, the Unrelenting
+			title(323), -- %s, the Unrelenting
 		}),
 		ach(11690, { -- When You're Fifteen [15]
 			-- Artifact Appearance
@@ -62,21 +62,21 @@ _.PVP =
 		}),
 		--[[ TEMPORARILY DISABLED UNTIL CORRECT TITLEID CAN BE FOUND
 		ach(11693, { -- Eighteen and Over [18]
-			style(2, title(503)), -- %s the Unstoppable Force
+			title(503), -- %s the Unstoppable Force
 		}),
 		--]]
 		ach(12109, { -- Twenty-One Arms Salute [21]
 			i(140230), -- Prestigious Royal Courser
 		}),
 		ach(12180, { -- Catching Twenty-Two [22]
-			style(2, title(325)), -- %s, Bound By Honor
+			title(325), -- %s, Bound By Honor
 		}),
 		ach(12183, { -- Prestige Quartermaster [25]
 			i(140407), -- Prestigious Midnight Courser
 		}),
 		--[[ Not active yet
 		ach(12216, { -- Prestige 26 [26]
-			style(2, title(518)), -- %s, the Tactian
+			title(518), -- %s, the Tactian
 		}),
 		--]]
 	}),

@@ -4025,30 +4025,54 @@ app.BaseTitle = {
 		elseif key == "playerTitle" then
 			local name = GetTitleName(t.titleID);
 			if name then
-				if t.style == nil then
-					if string.sub(name, 1, 1) == " " then
-						-- Suffix
-						local first = string.sub(name, 2, 2);
-						if first == string.upper(first) then
-							return UnitName("player") .. ", " .. name;
-						else
-							return UnitName("player") .. name;
-						end
-					else
-						-- Prefix
-						return name .. UnitName("player");
-					end
-				elseif t.style == 0 then
+				local style = t.style;
+				if style == 0 then
 					-- Prefix
 					return name .. UnitName("player");
-				elseif t.style == 1 then
+				elseif style == 1 then
 					-- Player Name First
 					return UnitName("player") .. name;
-				elseif t.style == 2 then
+				elseif style == 2 then
+					-- Player Name First (with space)
+					return UnitName("player") .. " " .. name;
+				elseif style == 3 then
 					-- Comma Separated
 					return UnitName("player") .. ", " .. name;
 				end
 			end
+		elseif key == "style" then
+			local name = GetTitleName(t.titleID);
+			if name then
+				local first = string.sub(name, 1, 1);
+				if first == " " then
+					-- Suffix
+					first = string.sub(name, 2, 2);
+					if first == string.upper(first) then
+						-- Comma Separated
+						return 3;
+					end
+					
+					-- Player Name First
+					return 1;
+				else
+					local last = string.sub(name, -1);
+					if last == " " then
+						-- Prefix
+						return 0;
+					end
+				
+					-- Suffix
+					if first == string.lower(first) then
+						-- Player Name First with a space
+						return 2;
+					end
+					
+					-- Comma Separated
+					return 3;
+				end
+			end
+			
+			return 1;	-- Player Name First
 		elseif key == "collectible" then
 			return true;
 		elseif key == "trackable" then

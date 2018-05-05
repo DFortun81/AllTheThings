@@ -8,6 +8,70 @@ _.Instances =
 		["groups"] = {
 			inst(758, { 	-- Icecrown Citadel
 				["groups"] = {
+					faction(1156, {		-- The Ashen Verdict
+						["achievementID"] = 4598,	-- The Ashen Verdict (Achievement)
+						["groups"] = {
+							title(141),		-- Of the Ashen Verdict
+							n(37687, { 	-- Alchemist Finklestein
+								i(49908, {	-- Primordial Saronite
+									i(49959),	-- Pattern: Bladeborn Leggings
+									i(49958),	-- Pattern: Blessed Cenarion Boots
+									i(49954),	-- Pattern: Deathfrost Boots
+									i(49965),	-- Pattern: Draconic Bonesplinter Legguards
+									i(49963),	-- Pattern: Earthsoul Boots
+									i(49961),	-- Pattern: Footpads of Impending Death
+									i(49953),	-- Pattern: Leggings of Woven Death
+									i(49957),	-- Pattern: Legwraps of Unleashed Nature
+									i(49962),	-- Pattern: Lightning-Infused Leggings
+									i(49955),	-- Pattern: Lightweave Leggings
+									i(49966),	-- Pattern: Rock-Steady Treads
+									i(49956),	-- Pattern: Sandals of Consecration
+									i(49974),	-- Plans: Boots of Kingly Upheaval
+									i(49972),	-- Plans: Hellfrozen Bonegrinders
+									i(49971),	-- Plans: Legplates of Painful Death
+									i(49973),	-- Plans: Pillars of Might
+									i(49970),	-- Plans: Protectors of Life
+									i(49969),	-- Plans: Puresteel Legplates
+								}),
+							}),
+							{
+								["questID"] = 24815,	-- Choose Your Path
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["description"] = "Requires Friendly with The Ashen Verdict before it will be offered. You can get there by clearing ICC and all of the trash mobs. If the quest does not appear, you may have to relog.",
+								["groups"] = {
+									i(50375),	-- Ashen Band of Courage
+									i(50377),	-- Ashen Band of Destruction
+									i(52569),	-- Ashen Band of Might
+									i(50376),	-- Ashen Band of Vengeance
+									i(50378),	-- Ashen Band of Wisdom
+								},
+							},
+							{
+								["questID"] = 24827,	-- Path of Courage [Honored]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
+								["groups"] = {
+									i(50388),	-- Ashen Band of Courage [Honored]
+								},
+							},
+							{
+								["questID"] = 24834,	-- Path of Courage [Revered]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24827,	-- Path of Courage [Honored]
+								["groups"] = {
+									i(50403),	-- Ashen Band of Greater Courage
+								},
+							},
+							{
+								["questID"] = 24835,	-- Path of Courage [Exalted]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24834,	-- Path of Courage [Revered]
+								["groups"] = {
+									i(50404),	-- Ashen Band of Unmatched Courage
+								},
+							},
+						},
+					}),
 					n(-17, { -- Quests
 						["description"] = "These quests are only able to be completed on 25 Man Normal/Heroic Difficulty.",
 						["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
@@ -150,201 +214,156 @@ _.Instances =
 						},
 					}),
 					n(-2, {		-- Vendors
-						model(1525, n(38858, { 		-- Goodman the Closer
-							i(50993), -- Band of the Night Raven
-							i(50996), -- Belt of Omission
-							i(50994), -- Belt of Petrified Ivy
-							i(50980), -- Blizzard Keeper's Mitts
-							i(50965), -- Castle Breaker's Battleplate
-							i(50982), -- Cat Burglar's Grips
-							i(50968), -- Cataclysmic Chestguard
-							i(50969), -- Chestplate of Unspoken Truths
-							i(50997), -- Circle of Ossus
-							i(50468), -- Drape of the Violet Tower
-							i(50975), -- Ermine Coronation Robes
-							i(50977), -- Gatecrasher's Gauntlets
-							i(50976), -- Gauntlets of Overexposure
-							i(50978), -- Gauntlets of the Kraken
-							i(50984), -- Gloves of Amivalence
-							i(50983), -- Gloves of False Gestures
-							i(50981), -- Gloves of the Great Horned Owl
-							i(50989), -- Lich Killer's Lanyard
-							i(50979), -- Logsplitters
-							i(50970), -- Longstrider's Vest
-							i(50971), -- Mail of the Geyser
-							i(50987), -- Malevolent Girdle
-							i(50974), -- Meteor Chaser's Raiment
-							i(50467), -- Might of the Ocean Serpent
-							i(50470), -- Recovered Scarlet Onsalught Cape
-							i(50466), -- Sentinel's Winter Cloak
-							i(50972), -- Shadow Seeker's Tunic
-							i(50995), -- Vengeful Noose
-							i(50991), -- Verdigris Chain Belt
-							i(50973), -- Vestments of Spruce and Fir
-							i(50469), -- Volde's Cloak of the Night Sky
-							i(50992), -- Waistband of Despair
+						n(38858, { 		-- Goodman the Closer
+							i(49908),	-- Primordial Saronite
+							i(50355),	-- Herkumi War Token
+							i(50356),	-- Corroded Skeleton Key
+							i(50357),	-- Maghia's Misguised Quill
+							i(50358),	-- Purified Lunar Dust
+							
+							i(50468),	-- Drape of the Violet Tower
+							i(50467),	-- Might of the Ocean Serpent
+							i(50470),	-- Recovered Scarlet Onsalught Cape
+							i(50466),	-- Sentinel's Winter Cloak
+							i(50469),	-- Volde's Cloak of the Night Sky
+							
+							i(50965),	-- Castle Breaker's Battleplate
+							i(50968),	-- Cataclysmic Chestguard
+							i(50969),	-- Chestplate of Unspoken Truths
+							i(50975),	-- Ermine Coronation Robes
+							i(50970),	-- Longstrider's Vest
+							i(50971),	-- Mail of the Geyser
+							i(50974),	-- Meteor Chaser's Raiment
+							i(50972),	-- Shadow Seeker's Tunic
+							i(50973),	-- Vestments of Spruce and Fir
+							
+							i(50980),	-- Blizzard Keeper's Mitts
+							i(50982),	-- Cat Burglar's Grips
+							i(50977),	-- Gatecrasher's Gauntlets
+							i(50976),	-- Gauntlets of Overexposure
+							i(50978),	-- Gauntlets of the Kraken
+							i(50984),	-- Gloves of Ambivalence
+							i(50983),	-- Gloves of False Gestures
+							i(50981),	-- Gloves of the Great Horned Owl
+							i(50979),	-- Logsplitters
+							
+							i(50993),	-- Band of the Night Raven
+							i(50996),	-- Belt of Omission
+							i(50994),	-- Belt of Petrified Ivy
+							i(50997),	-- Circle of Ossus
+							i(50989),	-- Lich Killer's Lanyard
+							i(50987),	-- Malevolent Girdle
+							i(50995),	-- Vengeful Noose
+							i(50991),	-- Verdigris Chain Belt
+							i(50992),	-- Waistband of Despair
+							
 							-- Relentless PvP START
 							gs(373, { -- Relentless Gladiator's Satin Armor
-								i(41855), -- Relentless Gladiator's Mooncloth Hood
-								i(41870), -- Relentless Gladiator's Mooncloth Mantle
-								i(41860), -- Relentless Gladiator's Mooncloth Robe
-								i(41875), -- Relentless Gladiator's Mooncloth Gloves
-								i(41865), -- Relentless Gladiator's Mooncloth Leggings
-								i(41916), -- Relentless Gladiator's Satin Hood
-								i(41935), -- Relentless Gladiator's Satin Mantle
-								i(41922), -- Relentless Gladiator's Satin Robe
-								i(41941), -- Relentless Gladiator's Satin Gloves
-								i(41928), -- Relentless Gladiator's Satin Leggings
+								i(41855),	-- Relentless Gladiator's Mooncloth Hood
+								i(41870),	-- Relentless Gladiator's Mooncloth Mantle
+								i(41860),	-- Relentless Gladiator's Mooncloth Robe
+								i(41875),	-- Relentless Gladiator's Mooncloth Gloves
+								i(41865),	-- Relentless Gladiator's Mooncloth Leggings
+								i(41916),	-- Relentless Gladiator's Satin Hood
+								i(41935),	-- Relentless Gladiator's Satin Mantle
+								i(41922),	-- Relentless Gladiator's Satin Robe
+								i(41941),	-- Relentless Gladiator's Satin Gloves
+								i(41928),	-- Relentless Gladiator's Satin Leggings
 							}),
 							gs(775, { -- Relentless Gladiator's Silk Armor
 								["groups"] = {
-									i(41947), -- Relentless Gladiator's Silk Cowl
-									i(41966), -- Relentless Gladiator's Silk Amice
-									i(41954), -- Relentless Gladiator's Silk Raiment
-									i(41972), -- Relentless Gladiator's Silk Handguards
-									i(41960), -- Relentless Gladiator's Silk Trousers
+									i(41947),	-- Relentless Gladiator's Silk Cowl
+									i(41966),	-- Relentless Gladiator's Silk Amice
+									i(41954),	-- Relentless Gladiator's Silk Raiment
+									i(41972),	-- Relentless Gladiator's Silk Handguards
+									i(41960),	-- Relentless Gladiator's Silk Trousers
 								},
-								["icon"] = "Interface\\Icons\\INV_Helmet_86", -- Relentless Silk Cowl Icon as Mage Set didn't have one
+								["icon"] = "Interface\\Icons\\INV_Helmet_86",	-- Relentless Silk Cowl Icon as Mage Set didn't have one
 							}),
 							gs(771, { -- Relentless Gladiator's Felweave Armor
-								i(41994), -- Relentless Gladiator's Felweave Cowl
-								i(42012), -- Relentless Gladiator's Felweave Amice
-								i(41999), -- Relentless Gladiator's Felweave Raiment
-								i(42018), -- Relentless Gladiator's Felweave Handguards
-								i(42006), -- Relentless Gladiator's Felweave Trousers
+								i(41994),	-- Relentless Gladiator's Felweave Cowl
+								i(42012),	-- Relentless Gladiator's Felweave Amice
+								i(41999),	-- Relentless Gladiator's Felweave Raiment
+								i(42018),	-- Relentless Gladiator's Felweave Handguards
+								i(42006),	-- Relentless Gladiator's Felweave Trousers
 							}),
-							gs(777, { -- Relentless Gladiator's Dragonhide Amrmor
-								i(41679), -- Relentless Gladiator's Dragonhide Helm
-								i(41716), -- Relentless Gladiator's Dragonhide Spaulders
-								i(41662), -- Relentless Gladiator's Dragonhide Robes
-								i(41774), -- Relentless Gladiator's Dragonhide Gloves
-								i(41668), -- Relentless Gladiator's Dragonhide Legguards
-								i(41328), -- Relentless Gladiator's Wyrmhide Helm
-								i(41282), -- Relentless Gladiator's Wyrmhide Spaulders
-								i(41317), -- Relentless Gladiator's Wyrmhide Robes
-								i(41294), -- Relentless Gladiator's Wyrmhide Gloves
-								i(41305), -- Relentless Gladiator's Wyrmhide Legguards
-								i(41322), -- Relentless Gladiator's Kodohide Helm
-								i(41276), -- Relentless Gladiator's Kodohide Spaulders
-								i(41311), -- Relentless Gladiator's Kodohide Robes
-								i(41288), -- Relentless Gladiator's Kodohide Gloves
-								i(41299), -- Relentless Gladiator's Kodohide Legguards
+							gs(777, { -- Relentless Gladiator's Dragonhide Armor
+								i(41679),	-- Relentless Gladiator's Dragonhide Helm
+								i(41716),	-- Relentless Gladiator's Dragonhide Spaulders
+								i(41662),	-- Relentless Gladiator's Dragonhide Robes
+								i(41774),	-- Relentless Gladiator's Dragonhide Gloves
+								i(41668),	-- Relentless Gladiator's Dragonhide Legguards
+								i(41328),	-- Relentless Gladiator's Wyrmhide Helm
+								i(41282),	-- Relentless Gladiator's Wyrmhide Spaulders
+								i(41317),	-- Relentless Gladiator's Wyrmhide Robes
+								i(41294),	-- Relentless Gladiator's Wyrmhide Gloves
+								i(41305),	-- Relentless Gladiator's Wyrmhide Legguards
+								i(41322),	-- Relentless Gladiator's Kodohide Helm
+								i(41276),	-- Relentless Gladiator's Kodohide Spaulders
+								i(41311),	-- Relentless Gladiator's Kodohide Robes
+								i(41288),	-- Relentless Gladiator's Kodohide Gloves
+								i(41299),	-- Relentless Gladiator's Kodohide Legguards
 							}),
 							gs(773, { -- Relentless Gladiator's Leather Armor
-								i(41673), -- Relentless Gladiator's Leather Helm
-								i(41684), -- Relentless Gladiator's Leather Spaulders
-								i(41651), -- Relentless Gladiator's Leather Tunic
-								i(41768), -- Relentless Gladiator's Leather Gloves
-								i(41656), -- Relentless Gladiator's Leather Legguards
+								i(41673),	-- Relentless Gladiator's Leather Helm
+								i(41684),	-- Relentless Gladiator's Leather Spaulders
+								i(41651),	-- Relentless Gladiator's Leather Tunic
+								i(41768),	-- Relentless Gladiator's Leather Gloves
+								i(41656),	-- Relentless Gladiator's Leather Legguards
 							}),
 							gs(776, { -- Relentless Gladiator's Chain Armor
-								i(41158), -- Relentless Gladiator's Chain Helm
-								i(41218), -- Relentless Gladiator's Chain Spaulders
-								i(41088), -- Relentless Gladiator's Chain Armor
-								i(41144), -- Relentless Gladiator's Chain Gauntlets
-								i(41206), -- Relentless Gladiator's Chain Leggings
+								i(41158),	-- Relentless Gladiator's Chain Helm
+								i(41218),	-- Relentless Gladiator's Chain Spaulders
+								i(41088),	-- Relentless Gladiator's Chain Armor
+								i(41144),	-- Relentless Gladiator's Chain Gauntlets
+								i(41206),	-- Relentless Gladiator's Chain Leggings
 							}),
 							gs(772, { -- Relentless Gladiator's Ringmail Armor
-								i(41152), -- Relentless Gladiator's Linked Helm
-								i(41212), -- Relentless Gladiator's Linked Spaulders
-								i(41082), -- Relentless Gladiator's Linked Armor
-								i(41138), -- Relentless Gladiator's Linked Gauntlets
-								i(41200), -- Relentless Gladiator's Linked Leggings
-								i(41020), -- Relentless Gladiator's Mail Helm
-								i(41045), -- Relentless Gladiator's Mail Spaulders
-								i(40995), -- Relentless Gladiator's Mail Armor
-								i(41008), -- Relentless Gladiator's Mail Gauntlets
-								i(41034), -- Relentless Gladiator's Mail Leggings
-								i(41014), -- Relentless Gladiator's Ringmail Helm
-								i(41039), -- Relentless Gladiator's Ringmail Spaulders
-								i(40994), -- Relentless Gladiator's Ringmail Armor
-								i(41002), -- Relentless Gladiator's Ringmail Gauntlets
-								i(41028), -- Relentless Gladiator's Ringmail Leggings
+								i(41152),	-- Relentless Gladiator's Linked Helm
+								i(41212),	-- Relentless Gladiator's Linked Spaulders
+								i(41082),	-- Relentless Gladiator's Linked Armor
+								i(41138),	-- Relentless Gladiator's Linked Gauntlets
+								i(41200),	-- Relentless Gladiator's Linked Leggings
+								i(41020),	-- Relentless Gladiator's Mail Helm
+								i(41045),	-- Relentless Gladiator's Mail Spaulders
+								i(40995),	-- Relentless Gladiator's Mail Armor
+								i(41008),	-- Relentless Gladiator's Mail Gauntlets
+								i(41034),	-- Relentless Gladiator's Mail Leggings
+								i(41014),	-- Relentless Gladiator's Ringmail Helm
+								i(41039),	-- Relentless Gladiator's Ringmail Spaulders
+								i(40994),	-- Relentless Gladiator's Ringmail Armor
+								i(41002),	-- Relentless Gladiator's Ringmail Gauntlets
+								i(41028),	-- Relentless Gladiator's Ringmail Leggings
 							}),
 							gs(774, { -- Relentless Gladiator's Scaled Armor
-								i(40934), -- Relentless Gladiator's Ornamented Headcover
-								i(40964), -- Relentless Gladiator's Ornamented Spauldersi(40910), -- Relentless Gladiator's Ornamented Chestguard
-								i(40928), -- Relentless Gladiator's Ornamented Gloves
-								i(40940), -- Relentless Gladiator's Ornamented Legplates
-								i(40831), -- Relentless Gladiator's Scaled Helm
-								i(40872), -- Relentless Gladiator's Scaled Shoulders
-								i(40792), -- Relentless Gladiator's Scaled Chestpiece
-								i(40812), -- Relentless Gladiator's Scaled Gauntlets
-								i(40852), -- Relentless Gladiator's Scaled Legguards
+								i(40934),	-- Relentless Gladiator's Ornamented Headcover
+								i(40964),	-- Relentless Gladiator's Ornamented Spaulders
+								i(40910),	-- Relentless Gladiator's Ornamented Chestguard
+								i(40928),	-- Relentless Gladiator's Ornamented Gloves
+								i(40940),	-- Relentless Gladiator's Ornamented Legplates
+								i(40831),	-- Relentless Gladiator's Scaled Helm
+								i(40872),	-- Relentless Gladiator's Scaled Shoulders
+								i(40792),	-- Relentless Gladiator's Scaled Chestpiece
+								i(40812),	-- Relentless Gladiator's Scaled Gauntlets
+								i(40852),	-- Relentless Gladiator's Scaled Legguards
 							}),
 							gs(770, { -- Relentless Gladiator's Plate Armor
-								i(40829), -- Relentless Gladiator's Plate Helm
-								i(40870), -- Relentless Gladiator's Plate Shoulders
-								i(40790), -- Relentless Gladiator's Plate Chestpiece
-								i(40810), -- Relentless Gladiator's Plate Gauntlets
-								i(40850), -- Relentless Gladiator's Plate Legguards
+								i(40829),	-- Relentless Gladiator's Plate Helm
+								i(40870),	-- Relentless Gladiator's Plate Shoulders
+								i(40790),	-- Relentless Gladiator's Plate Chestpiece
+								i(40810),	-- Relentless Gladiator's Plate Gauntlets
+								i(40850),	-- Relentless Gladiator's Plate Legguards
 							}),		
 							gs(778, { -- Relentless Gladiator's Dreaplate Armor
-								i(40830), -- Relentless Gladiator's Dreadplate Helm
-								i(40871), -- Relentless Gladiator's Dreadplate Shoulders
-								i(40791), -- Relentless Gladiator's Dreadplate Chestpiece
-								i(40811), -- Relentless Gladiator's Dreadplate Gauntlets
-								i(40851), -- Relentless Gladiator's Dreadplate Legguards
+								i(40830),	-- Relentless Gladiator's Dreadplate Helm
+								i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
+								i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
+								i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
+								i(40851),	-- Relentless Gladiator's Dreadplate Legguards
 							}),	
 							-- Relentless PvP END
-						})),
-						model(25934, n(37687, { 	-- Alchemist Finklestein
-							i(49974, {
-								i(49907),
-							}),
-							i(49972, {
-								i(49906),
-							}),
-							i(49970, {
-								i(49905),
-							}),
-							i(49971, {
-								i(49903),
-							}),
-							i(49973, {
-								i(49904),
-							}),
-							i(49969, {
-								i(49902),
-							}),
-							i(49958, {
-								i(49894),
-							}),
-							i(49957, {
-								i(49898),
-							}),
-							i(49961, {
-								i(49895),
-							}),
-							i(49959, {
-								i(49899),
-							}),
-							i(49963, {
-								i(49896),
-							}),
-							i(49962, {
-								i(49900),
-							}),
-							i(49966, {
-								i(49897),
-							}),
-							i(49965, {
-								i(49901),
-							}),
-							i(49954, {
-								i(49890),
-							}),
-							i(49953, {
-								i(49891),
-							}),
-							i(49956, {
-								i(49893),
-							}),
-							i(49955, {
-								i(49892),
-							}),
-						})),
-						model(31039, n(38316, { 	-- Ormus the Penitent	
+						}),
+						n(38316, { 	-- Ormus the Penitent	
 							i(50855, {
 								i(51133, {
 									i(51306),
@@ -395,8 +414,8 @@ _.Instances =
 									i(51313),
 								}),
 							}),
-						})),
-						model(30884, na(37999, { 	-- Alana Moonstrike	
+						}),
+						na(37999, { 	-- Alana Moonstrike	
 							i(50821, {
 								i(51149, {
 									i(51290),
@@ -472,8 +491,8 @@ _.Instances =
 									i(51303),
 								}),
 							}),
-						})),
-						model(30879, nh(37992, { 	-- Tortunok
+						}),
+						nh(37992, { 	-- Tortunok
 							i(50821, {
 								i(51149, {
 									i(51290),
@@ -549,8 +568,8 @@ _.Instances =
 									i(51303),
 								}),
 							}),
-						})),
-						model(30883, na(37998, { 	-- Talan Moonstrike	
+						}),
+						na(37998, { 	-- Talan Moonstrike	
 							i(50115, {
 								i(51153, {
 									i(51286),
@@ -576,8 +595,8 @@ _.Instances =
 									i(51287),
 								}),
 							}),
-						})),
-						model(30880, nh(37993, { 	-- Gerardo the Suave
+						}),
+						nh(37993, { 	-- Gerardo the Suave
 							i(50115, {
 								i(51153, {
 									i(51286),
@@ -603,8 +622,8 @@ _.Instances =
 									i(51287),
 								}),
 							}),
-						})),	
-						model(31012, na(38283, { 	-- Malfus Grimfrost
+						}),	
+						na(38283, { 	-- Malfus Grimfrost
 							i(50276, {
 								i(51158, {
 									i(51281),
@@ -630,8 +649,8 @@ _.Instances =
 									i(51282),
 								}),
 							}),
-						})),
-						model(31013, nh(38284, { 	-- Uvlus Banefire	
+						}),
+						nh(38284, { 	-- Uvlus Banefire	
 							i(50276, {
 								i(51158, {
 									i(51281),
@@ -657,8 +676,8 @@ _.Instances =
 									i(51282),
 								}),
 							}),
-						})),	
-						model(30716, n(37696, { 	-- Crusader Halford
+						}),	
+						n(37696, { 	-- Crusader Halford
 							i(50867, {
 								i(51167, {
 									i(51272),
@@ -734,60 +753,60 @@ _.Instances =
 									i(51278),
 								}),
 							}),
-						})),
-						model(31117, n(38054, { 	-- Scott the Merciful
+						}),
+						n(38054, { 	-- Scott the Merciful
 							i(50765, { -- Crimson Acolyte Hood
 								i(51178, { -- Sanctified Crimson Acolyte Hood
-									i(51261), -- Sanctified Crimson Acolyte Hood
+									i(51261),	-- Sanctified Crimson Acolyte Hood
 								}),
 							}),
 							i(50767, { -- Crimson Acolyte Shoulderpads
 								i(51175, { -- Sanctified Crimson Acolyte Shoulderpads
-									i(51264), -- Sanctified Crimson Acolyte Shoulderpads
+									i(51264),	-- Sanctified Crimson Acolyte Shoulderpads
 								}),
 							}),
 							i(50768, { -- Crimson Acolyte Robe
 								i(51176, { -- Sanctified Crimson Acolyte Robe
-									i(51263), -- Sanctified Crimson Acolyte Robe
+									i(51263),	-- Sanctified Crimson Acolyte Robe
 								}),
 							}),
 							i(50766, { -- Crimson Acolyte Gloves
 								i(51179, { -- Sanctified Crimson Acolyte Gloves
-									i(51260), -- Sanctified Crimson Acolyte Gloves
+									i(51260),	-- Sanctified Crimson Acolyte Gloves
 								}),
 							}),
 							i(50769, { -- Crimson Acolyte Leggings
 								i(51177, { -- Sanctified Crimson Acolyte Leggings
-									i(51262), -- Sanctified Crimson Acolyte Leggings
+									i(51262),	-- Sanctified Crimson Acolyte Leggings
 								}),
 							}),
 							i(50392, { -- Crimson Acolyte Cowl
 								i(51184, { -- Sanctified Crimson Acolyte Cowl
-									i(51255), -- Sanctified Crimson Acolyte Cowl
+									i(51255),	-- Sanctified Crimson Acolyte Cowl
 								}),
 							}),
 							i(50396, { -- Crimson Acolyte Mantle
 								i(51182, { -- Sanctified Crimson Acolyte Mantle
-									i(51257), -- Sanctified Crimson Acolyte Mantle
+									i(51257),	-- Sanctified Crimson Acolyte Mantle
 								}),
 							}),
 							i(50394, { -- Crimson Acolyte Raiments
 								i(51180, { -- Sanctified Crimson Acolyte Raiments
-									i(51259), -- Sanctified Crimson Acolyte Raiments
+									i(51259),	-- Sanctified Crimson Acolyte Raiments
 								}),
 							}),
 							i(50391, { -- Crimson Acolyte Handwraps
 								i(51183, { -- Sanctified Crimson Acolyte Handwraps
-									i(51256), -- Sanctified Crimson Acolyte Handwraps
+									i(51256),	-- Sanctified Crimson Acolyte Handwraps
 								}),
 							}),
 							i(50393, { -- Crimson Acolyte Pants
 								i(51181, { -- Sanctified Crimson Acolyte Pants
-									i(51258), -- Sanctified Crimson Acolyte Pants
+									i(51258),	-- Sanctified Crimson Acolyte Pants
 								}),
 							}),
-						})),
-						model(30882, na(37997, { 	-- Yili	
+						}),
+						na(37997, { 	-- Yili	
 							i(50089, {
 								i(51187, {
 									i(51252),
@@ -813,8 +832,8 @@ _.Instances =
 									i(51253),
 								}),
 							}),
-						})),
-						model(30878, nh(37991, { 	-- Ikfirus the Vile
+						}),
+						nh(37991, { 	-- Ikfirus the Vile
 							i(50089, {
 								i(51187, {
 									i(51252),
@@ -840,8 +859,8 @@ _.Instances =
 									i(51253),
 								}),
 							}),
-						})),				
-						model(22806, na(38840, { 	-- Jedebia
+						}),				
+						na(38840, { 	-- Jedebia
 							i(50843, {
 								i(51202, {
 									i(51237),
@@ -917,8 +936,8 @@ _.Instances =
 									i(51246),
 								}),
 							}),
-						})),
-						model(31195, nh(38841, { 	-- Vol'guk
+						}),
+						nh(38841, { 	-- Vol'guk
 							i(50843, {
 								i(51202, {
 									i(51237),
@@ -994,8 +1013,8 @@ _.Instances =
 									i(51246),
 								}),
 							}),
-						})),				
-						model(30983, na(38182, { 	-- Niby the Almighty
+						}),				
+						na(38182, { 	-- Niby the Almighty
 							i(50241, {
 								i(51208, {
 									i(51231),
@@ -1021,8 +1040,8 @@ _.Instances =
 									i(51232),
 								}),
 							}),
-						})),
-						model(30982, nh(38181, { 	-- Haragg the Unseen
+						}),
+						nh(38181, { 	-- Haragg the Unseen
 							i(50241, {
 								i(51208, {
 									i(51231),
@@ -1048,8 +1067,8 @@ _.Instances =
 									i(51232),
 								}),
 							}),
-						})),				
-						model(31112, n(37688, { 	-- Crusader Grimtong
+						}),				
+						n(37688, { 	-- Crusader Grimtong
 							i(50080, {
 								i(51212, {
 									i(51227),
@@ -1100,7 +1119,7 @@ _.Instances =
 									i(51223),
 								}),
 							}),
-						})),
+						}),
 					}),
 					d(3, { -- 10 Man Normal
 						cr(36612, e(1624, { -- Lord Marrowgar

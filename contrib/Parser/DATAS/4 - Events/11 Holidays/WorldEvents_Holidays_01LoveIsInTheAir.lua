@@ -10,7 +10,7 @@ _.WorldEvents =
 					n(-4, { -- Achievements
 						ach(1693, { -- Fool For Love
 							["groups"] = {
-								un(18, style(2, title(103))),	-- the Love Fool
+								un(18, title(103)),	-- the Love Fool
 							},					
 						}),
 						ach(1700, { -- Perma-Peddle

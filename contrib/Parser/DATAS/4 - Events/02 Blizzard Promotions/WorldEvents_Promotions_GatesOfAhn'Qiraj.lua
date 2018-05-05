@@ -9,7 +9,7 @@ _.WorldEvents =
 				["groups"] = {
 					q(8743, {	-- Bang A Gong
 						ach(416, {	-- Scarab Lord
-							un(37, style(0, title(33))),	-- Scarab Lord Title
+							un(37, title(33)),	-- Scarab Lord Title
 							un(34, i(21176)),	-- Black Qiraji Resonation Crystal
 						}),
 					}),

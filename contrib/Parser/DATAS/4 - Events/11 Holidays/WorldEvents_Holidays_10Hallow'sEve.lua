@@ -9,7 +9,7 @@ _.WorldEvents =
 				["groups"] = {
 					n(-4, { -- Achievements
 						ach(1656, { -- Hallowed Be Thy Name
-							un(26, style(2, title(92))), -- the Hallowed
+							un(26, title(92)), -- the Hallowed
 							ach(292, { -- Sinister Calling
 								un(26, i(33154)), -- Sinister Squashling
 								un(26, i(33292)), -- Hallowed Helm

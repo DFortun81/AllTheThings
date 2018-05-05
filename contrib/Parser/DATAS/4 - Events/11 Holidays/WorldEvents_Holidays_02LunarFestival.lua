@@ -10,7 +10,7 @@ _.WorldEvents =
 					n(-4, { -- Achievements
 						ach(913, { -- To Honor One's Elders
 							["groups"] = {
-								un(17, style(0, title(43))), -- Elder
+								un(17, title(43)), -- Elder
 							},
 						}),
 					}),
