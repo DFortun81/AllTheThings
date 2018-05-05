@@ -39,35 +39,231 @@ _.Instances =
 								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
 								["description"] = "Requires Friendly with The Ashen Verdict before it will be offered. You can get there by clearing ICC and all of the trash mobs. If the quest does not appear, you may have to relog.",
 								["groups"] = {
-									i(50375),	-- Ashen Band of Courage
-									i(50377),	-- Ashen Band of Destruction
-									i(52569),	-- Ashen Band of Might
-									i(50376),	-- Ashen Band of Vengeance
-									i(50378),	-- Ashen Band of Wisdom
+									{
+										["itemID"] = 50375,		-- Ashen Band of Courage
+										["questID"] = 24815,	-- Choose Your Path
+										["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+									},
+									{
+										["itemID"] = 50377,		-- Ashen Band of Destruction
+										["questID"] = 24815,	-- Choose Your Path
+										["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+									},
+									{
+										["itemID"] = 52569,		-- Ashen Band of Might
+										["questID"] = 24815,	-- Choose Your Path
+										["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+									},
+									{
+										["itemID"] = 50376,		-- Ashen Band of Vengeance
+										["questID"] = 24815,	-- Choose Your Path
+										["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+									},
+									{
+										["itemID"] = 50378,		-- Ashen Band of Wisdom
+										["questID"] = 24815,	-- Choose Your Path
+										["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+									},
 								},
 							},
+							-- Quest Chain: Path of Courage
 							{
 								["questID"] = 24827,	-- Path of Courage [Honored]
 								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
 								["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
+								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
 								["groups"] = {
-									i(50388),	-- Ashen Band of Courage [Honored]
+									{
+										["itemID"] = 50388,		-- Ashen Band of Greater Courage
+										["questID"] = 24827,	-- Path of Courage [Honored]
+										["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+									},
 								},
 							},
 							{
 								["questID"] = 24834,	-- Path of Courage [Revered]
 								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
 								["sourceQuest"] = 24827,	-- Path of Courage [Honored]
+								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
 								["groups"] = {
-									i(50403),	-- Ashen Band of Greater Courage
+									{
+										["itemID"] = 50403,		-- Ashen Band of Unmatched Courage
+										["questID"] = 24834,	-- Path of Courage [Revered]
+										["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+									},
 								},
 							},
 							{
 								["questID"] = 24835,	-- Path of Courage [Exalted]
 								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
 								["sourceQuest"] = 24834,	-- Path of Courage [Revered]
+								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
 								["groups"] = {
-									i(50404),	-- Ashen Band of Unmatched Courage
+									{
+										["itemID"] = 50404,		-- Ashen Band of Endless Courage
+										["questID"] = 24835,	-- Path of Courage [Exalted]
+										["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+									},
+								},
+							},
+							-- Quest Chain: Path of Destruction
+							{
+								["questID"] = 24828,	-- Path of Destruction [Honored]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
+								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["groups"] = {
+									{
+										["itemID"] = 50384,		-- Ashen Band of Greater Destruction
+										["questID"] = 24828,	-- Path of Destruction [Honored]
+										["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+									},
+								},
+							},
+							{
+								["questID"] = 24823,	-- Path of Destruction [Revered]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24828,	-- Path of Destruction [Honored]
+								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["groups"] = {
+									{
+										["itemID"] = 50397,		-- Ashen Band of Unmatched Destruction
+										["questID"] = 24823,	-- Path of Destruction [Revered]
+										["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+									},
+								},
+							},
+							{
+								["questID"] = 24829,	-- Path of Destruction [Exalted]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24823,	-- Path of Destruction [Revered]
+								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["groups"] = {
+									{
+										["itemID"] = 50398,		-- Ashen Band of Endless Destruction
+										["questID"] = 24829,	-- Path of Destruction [Exalted]
+										["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+									},
+								},
+							},
+							-- Quest Chain: Path of Might
+							{
+								["questID"] = 25239,	-- Path of Might [Honored]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
+								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+								["groups"] = {
+									{
+										["itemID"] = 52570,		-- Ashen Band of Greater Might
+										["questID"] = 25239,	-- Path of Might [Honored]
+										["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+									},
+								},
+							},
+							{
+								["questID"] = 25240,	-- Path of Might [Revered]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 25239,	-- Path of Might [Honored]
+								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+								["groups"] = {
+									{
+										["itemID"] = 52571,		-- Ashen Band of Unmatched Might
+										["questID"] = 25240,	-- Path of Might [Revered]
+										["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+									},
+								},
+							},
+							{
+								["questID"] = 25242,	-- Path of Might [Exalted]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 25240,	-- Path of Might [Revered]
+								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+								["groups"] = {
+									{
+										["itemID"] = 52572,		-- Ashen Band of Endless Might
+										["questID"] = 25242,	-- Path of Might [Exalted]
+										["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+									},
+								},
+							},
+							-- Quest Chain: Path of Vengeance
+							{
+								["questID"] = 24826,	-- Path of Vengeance [Honored]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
+								["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+								["groups"] = {
+									{
+										["itemID"] = 50387,		-- Ashen Band of Greater Vengeance
+										["questID"] = 24826,	-- Path of Vengeance [Honored]
+										["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+									},
+								},
+							},
+							{
+								["questID"] = 24832,	-- Path of Vengeance [Revered]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24826,	-- Path of Vengeance [Honored]
+								["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+								["groups"] = {
+									{
+										["itemID"] = 50401,		-- Ashen Band of Unmatched Vengeance
+										["questID"] = 24832,	-- Path of Vengeance [Revered]
+										["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+									},
+								},
+							},
+							{
+								["questID"] = 24833,	-- Path of Vengeance [Exalted]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24832,	-- Path of Vengeance [Revered]
+								["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+								["groups"] = {
+									{
+										["itemID"] = 50402,		-- Ashen Band of Endless Vengeance
+										["questID"] = 24833,	-- Path of Vengeance [Exalted]
+										["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+									},
+								},
+							},
+							-- Quest Chain: Path of Wisdom
+							{
+								["questID"] = 24825,	-- Path of Wisdom [Honored]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
+								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["groups"] = {
+									{
+										["itemID"] = 50386,		-- Ashen Band of Greater Wisdom
+										["questID"] = 24825,	-- Path of Wisdom [Honored]
+										["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+									},
+								},
+							},
+							{
+								["questID"] = 24830,	-- Path of Wisdom [Revered]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24825,	-- Path of Wisdom [Honored]
+								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["groups"] = {
+									{
+										["itemID"] = 50399,		-- Ashen Band of Unmatched Wisdom
+										["questID"] = 24830,	-- Path of Wisdom [Revered]
+										["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+									},
+								},
+							},
+							{
+								["questID"] = 24831,	-- Path of Wisdom [Exalted]
+								["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+								["sourceQuest"] = 24830,	-- Path of Wisdom [Revered]
+								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["groups"] = {
+									{
+										["itemID"] = 50400,		-- Ashen Band of Endless Wisdom
+										["questID"] = 24831,	-- Path of Wisdom [Exalted]
+										["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+									},
 								},
 							},
 						},
