@@ -67,7 +67,7 @@ _.PetJournal =
 		p(173), 	-- Snarly
 		p(713), 	-- Softshell Snapling
 		p(1201), 	-- Spawn of G'nathus
-		p(125), 	-- Speedy
+		un(20, p(125)), 	-- Speedy
 		p(1337), 	-- Spineclaw Crab
 		p(723), 	-- Spiny Terrapin
 		p(572), 	-- Spirebound Crab
@@ -317,7 +317,7 @@ _.PetJournal =
 		p(2065),	-- Dig Rat
 		p(467),		-- Dung Beetle
 		p(1778),	-- Dust Bunny
-		p(158),		-- Egbert
+		un(20, p(158)),		-- Egbert
 		p(479),		-- Elfin Rabbit
 		p(209),		-- Elwynn Lamb
 		p(447),		-- Fawn
@@ -356,7 +356,7 @@ _.PetJournal =
 		p(391),		-- Mountain Cottontail
 		p(633),		-- Mountain Skunk
 		p(385),		-- Mouse
-		p(126),		-- Mr. Wiggles
+		un(20, p(126)),		-- Mr. Wiggles
 		p(1776),	-- Mudshell Conch
 		p(210),		-- Mulgore Hatchling
 		p(638),		-- Nether Roach
@@ -365,7 +365,7 @@ _.PetJournal =
 		p(323),		-- Nuts
 		p(1729),	-- Olivetail Hare
 		p(2116), 	-- Orphaned Marsuul
-		p(159),		-- Peanut
+		un(20, p(159)),		-- Peanut
 		p(250),		-- Perky Pug
 		p(166),		-- Pint-Sized Pink Pachyderm
 		p(381),		-- Porcupette
@@ -386,7 +386,7 @@ _.PetJournal =
 		p(665),		-- Sand Scarab
 		p(717),		-- Savory Beetle
 		p(512),		-- Scarab Hatchling
-		p(289),		-- Scooter the Snail
+		un(20, p(289)),		-- Scooter the Snail
 		p(493),		-- Shimmershell Snail
 		p(677),		-- Shy Bandicoon
 		p(568),		-- Silkbead Snail
@@ -414,7 +414,7 @@ _.PetJournal =
 		p(55),		-- Undercity Cockroach
 		p(454),		-- Undercity Rat
 		p(410),		-- Wharf Rat
-		p(127),		-- Whiskers the Rat
+		un(20, p(127)),		-- Whiskers the Rat
 		p(118),		-- Winter Reindeer
 		p(153),		-- Wolpertinger
 		p(740),		-- Yakrat
@@ -723,8 +723,8 @@ _.PetJournal =
 		p(1343),	-- Bonkers
 		p(1149),	-- Corefire Imp
 		p(1688),	-- Crusher
-		p(225),		-- Curious Oracle Hatchling
-		p(226),		-- Curious Wolvar Hatchling
+		un(20, p(225)),		-- Curious Oracle Hatchling
+		un(20, p(226)),		-- Curious Wolvar Hatchling
 		p(1329),	-- Dandelion Frolicker
 		un(16, p(294)),	-- Deathy
 		p(1979),	-- Dutiful Gruntling
@@ -827,7 +827,7 @@ _.PetJournal =
 		p(845),		-- Jade Owl
 		p(231),		-- Jade Tiger
 		p(1635),	-- K'ute
-		p(308),		-- Legs
+		un(20, p(308)),		-- Legs
 		p(1234),	-- Lesser Voidcaller
 		p(1395),	-- Lil' Leftovers
 		p(1243),	-- Living Fluid
@@ -864,7 +864,7 @@ _.PetJournal =
 		p(1154),	-- Viscidus Globule
 		p(1244),	-- Viscous Horror
 		p(2130),	-- Void Shardling
-		p(157),		-- Willy
+		un(20, p(157)),		-- Willy
 		p(1937),	-- Wondrous Wisdomball
 		un(6, p(1255)),	-- Zeradar
 		p(247),		-- Zipao Tiger

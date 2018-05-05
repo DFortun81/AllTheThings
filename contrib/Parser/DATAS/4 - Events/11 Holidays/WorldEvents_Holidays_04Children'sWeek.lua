@@ -45,10 +45,10 @@ _.WorldEvents =
 						}),
 						qh(5502, { -- A Warden in the House
 							["groups"] = {
-								un(25, i(23007)), -- Piglet's Collar
-								un(25, i(23015)), -- Rat Cage
-								un(25, i(23002)), -- Turtle Box
-								un(25, i(66073)), -- Snail Shell
+								un(20, i(23007)), -- Piglet's Collar
+								un(20, i(23015)), -- Rat Cage
+								un(20, i(23002)), -- Turtle Box
+								un(20, i(66073)), -- Snail Shell
 							},
 							["qg"] = 14444, -- Orcish Orphan
 							["sourceQuests"] = { 29190, 29191 }, -- Let's Go Fly a Kite / You Scream, I Scream...
@@ -90,10 +90,10 @@ _.WorldEvents =
 						}),
 						qa(171, { -- A Warden of the Alliance
 							["groups"] = { 
-								un(25, i(23007)), -- Piglet's Collar
-								un(25, i(23015)), -- Rat Cage
-								un(25, i(23002)), -- Turtle Box
-								un(25, i(66073)), -- Snail Shell
+								un(20, i(23007)), -- Piglet's Collar
+								un(20, i(23015)), -- Rat Cage
+								un(20, i(23002)), -- Turtle Box
+								un(20, i(66073)), -- Snail Shell
 							},
 							["qg"] = 14305, -- Human Orphan
 							["sourceQuests"] = { 29117, 29119 }, -- Let's Go Fly a Kite / You Scream, I Scream...
@@ -135,10 +135,10 @@ _.WorldEvents =
 						}),
 						qh(10967, { -- Back to the Orphanage
 							["groups"] = { 
-								un(25, i(32616)), -- Egbert's Egg
-								un(25, i(32622)), -- Elekk Training Collar
-								un(25, i(69648)), -- Legs
-								un(25, i(32617)), -- Sleepy Willy
+								un(20, i(32616)), -- Egbert's Egg
+								un(20, i(32622)), -- Elekk Training Collar
+								un(20, i(69648)), -- Legs
+								un(20, i(32617)), -- Sleepy Willy
 							},
 							["qg"] = 22817, -- Blood Elf Orphan
 							["sourceQuests"] = { 11975, 10963 }, -- Now, When I Grow Up... / Time to Visit the Caverns
@@ -180,10 +180,10 @@ _.WorldEvents =
 						}),
 						qa(10966, { -- Back to the Orphanage
 							["groups"] = { 
-								un(25, i(32616)), -- Egbert's Egg
-								un(25, i(32622)), -- Elekk Training Collar
-								un(25, i(69648)), -- Legs
-								un(25, i(32617)), -- Sleepy Willy
+								un(20, i(32616)), -- Egbert's Egg
+								un(20, i(32622)), -- Elekk Training Collar
+								un(20, i(69648)), -- Legs
+								un(20, i(32617)), -- Sleepy Willy
 							},
 							["qg"] = 22818, -- Draenei Orphan
 							["sourceQuests"] = { 10956, 10962 }, -- The Seat of the Naaru / Time to Visit the Caverns
@@ -231,7 +231,7 @@ _.WorldEvents =
 						}),
 						q(13960, { -- Back to the Orphanage
 							["groups"] = {
-								un(25, i(46544)), -- Curious Wolvar Pup
+								un(20, i(46544)), -- Curious Wolvar Pup
 							},
 							["qg"] = 33533, -- Oracle Orphan
 							["sourceQuests"] = { 13934, 13955, 13957 }, -- The Dragon Queen / The Mighty Hemet Nesingwary / A Visit to the Wonderworks
@@ -279,7 +279,7 @@ _.WorldEvents =
 						}),
 						q(13959, { -- Back to the Orphanage
 							["groups"] = {
-								un(25, i(46545)), -- Curious Oracle Hatchling
+								un(20, i(46545)), -- Curious Oracle Hatchling
 							},
 							["qg"] = 33533, -- Oracle Orphan
 							["sourceQuests"] = { 13954, 13959, 13937 }, -- The Dragon Queen / Meeting a Great One / A Trip to the Wonderworks
