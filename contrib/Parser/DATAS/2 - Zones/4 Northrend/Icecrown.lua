@@ -905,38 +905,6 @@ _.Zones =
 						i(44695),
 					}), 
 				}),
-				n(-2, { 	-- Vendors
-					n(33595, {	-- Mera Mistrunner <Cooking Supplies>
-						currency(81, {	-- Epicurean's Award
-							i(134020), 	-- Chef's Hat
-							i(43035),	-- Recipe: Blackened Dragonfin
-							i(43032),	-- Recipe: Blackened Worg Steak
-							i(43029),	-- Recipe: Critter Bites
-							i(43033),	-- Recipe: Cuttlesteak
-							i(43036),	-- Recipe: Dragonfin Filet
-							i(43024),	-- Recipe: Firecracker Salmon
-							i(43017),	-- Recipe: Fish Feast
-							i(43505),	-- Recipe: Gigantic Feast
-							i(43030),	-- Recipe: Hearty Rhino
-							i(43026),	-- Recipe: Imperial Manta Steak
-							i(43018),	-- Recipe: Mega Mammoth Meal
-							i(43022),	-- Recipe: Mighty Rhino Dogs
-							i(43023),	-- Recipe: Poached Northern Sculpin
-							i(43028),	-- Recipe: Rhinolicious Wormsteak
-							i(43506),	-- Recipe: Small Feast
-							i(43031),	-- Recipe: Snapper Extreme
-							i(43034),	-- Recipe: Spiced Mammoth Treats
-							i(43020),	-- Recipe: Spiced Worm Burger
-							i(43025),	-- Recipe: Spicy Blue Nettlefish
-							i(43027),	-- Recipe: Spicy Fried Herring
-							i(43019),	-- Recipe: Tender Shoveltusk Steak
-							i(43037),	-- Recipe: Tracker Snacks
-							i(43021),	-- Recipe: Very Burnt Worg
-							i(44954),	-- Recipe: Worg Tartare
-						}),
-					}),
-					
-				}),
 				n(-363, {	-- The Argent Tournament
 					n(-2, {
 						n(33602, { -- Anuur <Jewelcrafting Supplies>
@@ -1884,8 +1852,34 @@ _.Zones =
 							i(47696),	-- Shoulderplates of Trembling Rage
 							i(47706),	-- Shoulders of the Groundbreaker
 						})),
-						n(33595, { -- Mera Mistrunner <Cooking Supplies>
-							i(134020),	-- Chef's Hat
+						n(33595, {	-- Mera Mistrunner <Cooking Supplies>
+							currency(81, {	-- Epicurean's Award
+								i(134020), 	-- Chef's Hat
+								i(43035),	-- Recipe: Blackened Dragonfin
+								i(43032),	-- Recipe: Blackened Worg Steak
+								i(43029),	-- Recipe: Critter Bites
+								i(43033),	-- Recipe: Cuttlesteak
+								i(43036),	-- Recipe: Dragonfin Filet
+								i(43024),	-- Recipe: Firecracker Salmon
+								i(43017),	-- Recipe: Fish Feast
+								i(43505),	-- Recipe: Gigantic Feast
+								i(43030),	-- Recipe: Hearty Rhino
+								i(43026),	-- Recipe: Imperial Manta Steak
+								i(43018),	-- Recipe: Mega Mammoth Meal
+								i(43022),	-- Recipe: Mighty Rhino Dogs
+								i(43023),	-- Recipe: Poached Northern Sculpin
+								i(43028),	-- Recipe: Rhinolicious Wormsteak
+								i(43506),	-- Recipe: Small Feast
+								i(43031),	-- Recipe: Snapper Extreme
+								i(43034),	-- Recipe: Spiced Mammoth Treats
+								i(43020),	-- Recipe: Spiced Worm Burger
+								i(43025),	-- Recipe: Spicy Blue Nettlefish
+								i(43027),	-- Recipe: Spicy Fried Herring
+								i(43019),	-- Recipe: Tender Shoveltusk Steak
+								i(43037),	-- Recipe: Tracker Snacks
+								i(43021),	-- Recipe: Very Burnt Worg
+								i(44954),	-- Recipe: Worg Tartare
+							}),
 						}),
 						a(n(33650, { -- Rillie Spindlenut <Gnomeregan Quartermaster>
 							i(45725),	-- Argent Hippogryph Mount
