@@ -3,47 +3,47 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
+	m(13, {	-- Kalimdor
 		m(141, {	-- Dustwallow Marsh
 			["groups"] = {
-				n( -3, { 	-- Holidays
+				n( -3, {	-- Holidays
 --[[					
-					n(-47, {    	-- Lunar Festival
+					n(-47, {   	-- Lunar Festival
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 913,	-- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-50, { 7   	-- Love is in the Air
+					n(-50, { 7  	-- Love is in the Air
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
-						["achievementID"] = 1693,   	-- Fool For Love
+						["achievementID"] = 1693,  	-- Fool For Love
 						["u"] = 18,
 					}),
-					n(-51, {    	-- Noblegarden
+					n(-51, {   	-- Noblegarden
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-52, {    	-- Children's Week
+					n(-52, {   	-- Children's Week
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 1793,	-- For The Children
 						["u"] = 20,
 					}),
 --]]					
-					n(-53, {    	-- Midsummer Fire Festival
+					n(-53, {   	-- Midsummer Fire Festival
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 								o(187927, {	-- Alliance Bonfire
 									qh(11744),	-- Desecrate this Fire!
 								}),
@@ -59,18 +59,18 @@ _.Zones =
 						["u"] = 21,
 					}),
 --[[					
-					n(-56, {    	-- Brewfest
+					n(-56, {   	-- Brewfest
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 1683,	-- Brewmaster
 						["u"] = 24,
 					}),
 --]]
-					n(-58, {    	-- Hallow's End
+					n(-58, {   	-- Hallow's End
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 								o(190052, {	-- Candy Bucket	
 									qa(12349),	-- Candy Bucket
 								}),
@@ -86,17 +86,17 @@ _.Zones =
 						["u"] = 26,
 					}),	
 --[[
-					n(-60, {    	-- Pilgrim's Bounty
+					n(-60, {   	-- Pilgrim's Bounty
 						["groups"]  = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 3478,	-- Pilgrim
 						["u"] = 28,
 					}),
-					n(-61, {    	-- Feast of Winter Veil
+					n(-61, {   	-- Feast of Winter Veil
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 1691,	-- Merrymaker
@@ -104,16 +104,16 @@ _.Zones =
 					}),		
 --]]				
 				}),									
-				n(-25, { 	-- Pet Battle
-					p(398), 	-- Black Rat
-					p(385), 	-- Mouse
-					p(387), 	-- Snake
+				n(-25, {	-- Pet Battle
+					p(398),	-- Black Rat
+					p(385),	-- Mouse
+					p(387),	-- Snake
 					desc(p(489), "Can be found in the area around Onyxia's Lair in Dustwallow Marsh."),	-- Spawn of Onyxia
-					p(412), 	-- Spider
-					p(420), 	-- Toad
+					p(412),	-- Spider
+					p(420),	-- Toad
 					qg(66436, qh(31905)),	-- Grazzle the Great
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qh( 1168, {	-- Army of the Black Dragon
 						["g"] = {
 							i(10702),	-- Enormous Ogre Boots
@@ -123,13 +123,30 @@ _.Zones =
 					}),
 					
 
-					qh(26682, {	-- A Shambling Threat
+					qh(26682, {	-- A Shambling Threat (awarded "Wild Threats" criteria)
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
 						["breadcrumbQuestID"] = { 28554 },	-- Warchief's Command: Dustwallow Marsh!
 					}),
 
+					
+					q( 27407, {	-- Bloodfen Feathers
+						["g"] = {
+						},
+						["qg"] = 23579,	-- Brogg
+					}),
+					
+					
+					q( 27413, {	-- Catch a Dragon by the Tail
+						["g"] = {
+							i( 33235),	-- Journeyman's Epaulets
+							i( 33241),	-- Oiled Leather Leggings
+							i(131672),	-- Chain Linked Leggings
+						},
+						["qg"] = 23570,	-- Gizzix Grimegurgle
+					}),
+					
 					
 					qh(11213, {	-- Check Up on Tabetha
 						["g"] = {
@@ -138,10 +155,41 @@ _.Zones =
 					}),
 
 
+					q( 27190, {	-- Cleansing Witch Hill
+						["g"] = {
+							i( 33229),	-- Mordant's Travel Tunic
+							i( 33257),	-- Scaled Marshwalkers
+							i( 33245),	-- Grimsby's Gaudy Girdle
+							i(131650),	-- Grimsby's Chain Cinch
+						},
+						["qg"] = 23843,	-- Mordant Grimsby
+						["sourceQuests"] = { 27189 },	-- The Witch's Bane
+					}),
+					
+					
 					qh(25051, {	-- Darkmist Extermination
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
+					}),
+					
+
+					q( 27340, {	-- Direhorn Raiders
+						["g"] = {
+							i( 33240),	-- Grimtotem Earthbinder's Tunic
+							i( 57827),	-- Morlann's Other Seal
+							i( 33261),	-- Destroyer's Cloak
+							i( 57831),	-- Direhorn Cinch
+							i(131664),	-- Grimtotem Earthbinder's Vest
+						},
+						["qg"] = 23600,	-- Apprentice Morlann
+					}),
+
+					
+					q( 11211, {	-- Help for Mudsprocket (mutually exclusive with "Help Mudsprocket")
+						["g"] = {
+						},
+						["qg"] = 6546,	-- Tabetha
 					}),
 					
 					
@@ -152,6 +200,17 @@ _.Zones =
 					}),
 					
 
+					q( 27191, {	-- Hungry as an Ogre!
+						["g"] = {
+							i(  9518),	-- Mud's Crushers
+							i(  9519),	-- Durtfeet Stompers
+							i(131651),	-- Mud's Chain Boots
+						},
+						["qg"] = 4792,	-- "Swamp Eye" Jarl
+						["sourceQuests"] = { 27184 },	-- Jarl Needs Eyes
+					}),
+					
+					
 					qh(27414, {	-- Identifying the Brood
 						["g"] = {
 							i( 57833),	-- Brooding Mask
@@ -169,6 +228,62 @@ _.Zones =
 						["qg"] = 4926,	-- Krog
 					}),
 
+
+					q( 27186, {	-- Jarl Needs a Blade (awarded "'Swamp Eye' Story" criteria)
+						["g"] = {
+							i(  5016),	-- Artisan's Trousers
+							i( 57835),	-- "Swamp Eye" Belt
+							i(  9622),	-- Reedknot Ring
+							i(131649),	-- "Swamp Eye" Chain Sash
+						},
+						["qg"] = 4792,	-- "Swamp Eye" Jarl
+						["sourceQuests"] = { 27184 },	-- Jarl Needs Eyes
+					}),
+					
+					
+					q( 27184, {	-- Jarl Needs Eyes
+						["g"] = {
+						},
+						["qg"] = 4792,	-- "Swamp Eye" Jarl
+						["sourceQuests"] = { 27183 },	-- Marsh Frog Legs
+					}),
+
+					
+					qh(27297, {	-- Justice Dispensed (awarded "Connection to the Grimtotem" criteria)
+						["g"] = {
+							i( 33271),	-- Battlecaster's Edge
+							i( 57829),	-- Steel-Backed Hauberk
+							i(156976),	-- Staff of Memory 
+						},
+						["qg"] = 6546,	-- Tabetha
+						["sourceQuests"] = { 27296 },	-- Raze Direhorn Post!
+					}),
+					
+					
+					o(21042, {	-- Theramore Guard Badge
+						qh(27260),	-- Lieutenant Paval Reethe
+					}),
+					
+					
+					q( 27183, {	-- Marsh Frog Legs
+						["g"] = {
+							i( 57834),	-- Frog Boots
+							i( 57845),	-- Swamp Splints
+							i(131648),	-- Frog Stompers
+						},
+						["qg"] = 4792,	-- "Swamp Eye" Jarl
+						["breadcrumbQuestID"] = { 27182 },	-- The Hermit of Witch Hill
+					}),
+					
+					
+					qh(27294, {	-- More than Coincidence
+						["g"] = {
+							i(57852),	-- Grimtotem Cloak
+						},
+						["qg"] = 4926,	-- Krog
+						["sourceQuests"] = { 27292 },	-- Return to Krog
+					}),
+					
 					
 					qh(27424, {	-- Overlord Mok'Morokk's Concern
 						["g"] = {
@@ -180,12 +295,105 @@ _.Zones =
 					}),
 					
 					
+					qh(27261, {	-- Questioning Reethe
+						["g"] = {
+							i(6797),	-- Eyepoker
+							i(6798),	-- Blasting Hackbut
+						},
+						["qg"] = 4983,	-- Ogron
+						["sourceQuests"] = { 27306 },	-- Talk to Ogron
+					}),
+					
+					
+					qh(27296, {	-- Raze Direhorn Post!
+						["g"] = {
+						},
+						["qg"] = 6546,	-- Tabetha
+						["sourceQuests"] = { 27295 },	-- Seek Out Tabetha
+					}),
+					
+					
+					qh(27295, {	-- Seek Out Tabetha
+						["g"] = {
+						},
+						["qg"] = 4926,	-- Krog
+						["sourceQuests"] = { 27294, 27293 },	-- More Than Coincidence & The Grimtotem Plot
+					}),
+					
+					
 					o(205332, {	-- Wanted Poster
 						qh(27229),	-- SMASH BROODQUEEN
 					}),
 					
 					
-					qh(27182, {	-- The Hermit of Witch Hill (breadcrumb quest for 27183)
+					o(187273, {	-- Suspicious Hoofprint
+						qa(27262),	-- Suspicious Hoofprints
+						qh(27259),	-- Suspicious Hoofprints
+					}),
+					
+					
+					qh(27306, {	-- Talk to Ogron
+						["g"] = {
+						},
+						["qg"] = 4926,	-- Krog
+						["sourceQuests"] = { 27260 },	-- Lieutenant Paval Reethe
+					}),
+
+					
+					o( 20992, {	-- Black Shield
+						qa(27252),	-- The Black Shield
+						qh(27254),	-- The Black Shield (#1)
+					}),
+					
+					
+					qh(27255, {	-- The Black Shield (#2)
+						["g"] = {
+						},
+						["qg"] = 4926,	-- Krog
+						["sourceQuests"] = { 27254 },	-- The Black Shield (#1)
+					}),
+					
+					
+					qh(27256, {	-- The Black Shield (#3)
+						["g"] = {
+						},
+						["qg"] = 5087,	-- Do'gol
+						["sourceQuests"] = { 27255 },	-- The Black Shield (#2)
+					}),
+					
+
+					qh(27257, {	-- The Black Shield (#4)
+						["g"] = {
+						},
+						["qg"] = 5087,	-- Do'gol
+						["sourceQuests"] = { 27256 },	-- The Black Shield (#3)
+					}),
+
+					
+					qh(27258, {	-- The Black Shield (offshoot)
+						["g"] = {
+						},
+						["qg"] = 4926,	-- Krog
+						["sourceQuests"] = { 27261 },	-- Questioning Reethe
+					}),
+					
+					
+					qh(27293, {	-- The Grimtotem Plot
+						["g"] = {
+						},
+						["qg"] = 4926,	-- Krog
+						["sourceQuests"] = { 27292 },	-- Return to Krog
+					}),
+					
+
+					q( 27336, {	-- The Grimtotem Weapon
+						["g"] = {
+						},
+						["qg"] = 23601,	-- Apprentice Garion
+					}),
+
+					
+					qh(27182, {	-- The Hermit of Witch Hill
 						["g"] = {
 						},
 						["qg"] = 4501,	-- Draz'Zilb
@@ -193,10 +401,59 @@ _.Zones =
 					}),
 					
 					
+					o(20985, {	-- Loose Dirt
+						qh(27244),	-- The Lost Report
+						qa(27246),	-- The Orc Report
+					}),
+					
+					
 					qh( 1201, {	-- Theramore Spies
 						["g"] = {
 						},
 						["qg"] = 4791,	-- Nazeer Bloodpike
+					}),
+					
+
+					q( 27339, {	-- The Reagent Thief
+						["g"] = {
+							i( 33260),	-- Spellbound Cloak
+							i( 33273),	-- Seasoned Marshwood Bow
+							i( 33244),	-- The Wanderer's Cover
+							i(131663),	-- The Explorer's Coif
+						},
+						["qg"] = 23601,	-- Apprentice Garion
+					}),
+					
+					
+					qh( 1202, {	-- The Theramore Docks (awarded "Work Left Undone" criteria)
+						["g"] = {
+						},
+						["qg"] = 4791,	-- Nazeer Bloodpike
+						["sourceQuests"] = { 1201 },	-- Theramore Spies
+					}),
+
+
+					q( 27189, {	-- The Witch's Bane
+						["g"] = {
+						},
+						["qg"] = 23843,	-- Mordant Grimsby
+						["sourceQuests"] = { 27188 },	-- What's Haunting Witch Hill?
+					}),
+
+
+					q( 27346, {	-- The Zeppelin Crash
+						["g"] = {
+						},
+						["qg"] = 23600,	-- Apprentice Morlann
+					}),
+
+					
+					qh(25478, {	-- To the Summit
+						["groups"] = {
+						},
+						["qg"] = 40344,	-- Nyse
+						["isBreadcrumb"] = true,	-- for "The Grimtotem are Coming"
+						["sourceQuests"] = { 28504 },	-- Warchief's Command: Thousand Needles!
 					}),
 					
 					
@@ -214,6 +471,21 @@ _.Zones =
 					}),
 					
 					
+					o(186426, {	-- Wanted Poster
+						q(27412, {	-- WANTED: Goreclaw the Ravenous
+							i( 33258),	-- Protective Engineer's Leggings
+							i( 33263),	-- Raptor Eye Ring
+							i( 33242),	-- Raptorhide Legguards
+							i(131671),	-- Raptorhide Chain Leggings
+						}),
+					}),
+					
+					
+					q( 27188, {	-- What's Haunting Witch Hill?
+						["g"] = {
+						},
+						["qg"] = 23843,	-- Mordant Grimsby
+					}),
 					
 					
 					
@@ -244,13 +516,7 @@ _.Zones =
 						},
 						["qg"] = 46071,	-- Lord Itharius (may be outside instance?)
 					}),
-					qg(23579, q(27407)),	-- Bloodfen Feathers
 					qg(23951, qa(27247)),	-- Captain Vimes
-					qg(23570, q(27413, { 	-- Catch a Dragon by the Tail
-						i(33235),
-						i(33241),
-						i(131672),
-					})),
 					qg(4500, qh(27418, {	-- Challenge Overlord Mok'Morokk
 						i(57846),
 						i(57847),
@@ -263,14 +529,8 @@ _.Zones =
 						i(57828),
 						i(33256),
 					})),
-					qg(23843, q(27190, { 	-- Cleansing Witch Hill
-						i(33229),
-						i(33257),
-						i(33245),
-						i(131650),
-					})),
 					qg(23568, qa(27426)),	-- Confirming the Suspicion
-					qg(23797, q(27347, { 	-- Corrosion Prevention
+					qg(23797, q(27347, {	-- Corrosion Prevention
 						i(33233),
 						i(33239),
 						i(33255),
@@ -281,54 +541,22 @@ _.Zones =
 					qg(23892, qa(27218)),	-- Dastardly Denizens of the Deep
 					qg(5086, qa(27234)),	-- Defias in Dustwallow?
 					qg(23797, q(11208)),	-- Delivery for Drazzit
-					qg(23600, q(27340, {	-- Direhorn Raiders
-						i(33240),
-						i(33261),
-						i(57831),
-						i(131664),
-					})),
 					qg(23566, qa(27212)),	-- Discrediting the Deserters
-					qg(6546, q(11211)),	-- Help for Mudsprocket
-					qg(4792, q(27191, { 	-- Hungry as an Ogre!
-						i(9518),
-						i(9519),
-						i(131651),
-					})),
 					qg(4944, qa(27249)),	-- Inspecting the Ruins
 					qg(23896, qa(27219)),	-- Is it Real?
 					qg(23569, qa(27238)),	-- Jaina Must Know
-					qg(4792, q(27186, { 	-- Jarl Needs a Blade
-						i(5016),
-						i(57835),
-						i(131649),
-					})),
-					qg(4792, q(27184)),	-- Jarl Needs Eyes
-					qg(6546, qh(27297, {	-- Justice Dispensed
-						i(33271),
-						i(57829),
-						i(156976),	-- Staff of Memory 
-					})),
 					qg(6546, qa(27430)),	-- Justice for the Hyals
 					q(27704, {	-- Legends of the Sunken Temple
 						["groups"] = {
 						},
 						["qg"] = 46071,	-- Lord Itharius
 					}),
-					qg(21042, qh(27260)),	-- Lieutenant Paval Reethe
 					qg(4944, qa(27264)),	-- Lieutenant Paval Reethe
 					qg(21042, qa(27263)),	-- Lieutenant Paval Reethe
-					qg(4792, q(27183, { 	-- Marsh Frog Legs
-						i(57834),
-						i(57845),
-						i(131648),
-					})),
 					qg(23951, qa(27248)),	-- Mission to Mudsprocket
-					qg(4926, qh(27294, {	-- More than Coincidence
-						i(57852),
-					})),
 					qg(4794, qa(1204)),	-- Mudrock Soup and Bugs
 					qp129(qg(12919, q(13826))),	-- Nat Pagle, Angler Extreme
-					qp129(qg(12919, q(6607, {  	-- Nat Pagle, Angler Extreme
+					qp129(qg(12919, q(6607, { 	-- Nat Pagle, Angler Extreme
 						i(45858)	-- Nat's Lucky Fishing Pole
 					}))),
 					qg(12919, qa(27220)),	-- Nat's Bargain
@@ -347,12 +575,7 @@ _.Zones =
 					qg(23723, qa(27245)),	-- Prisoners of the Grimtotems
 					qg(4968, qa(27240)),	-- Proof of Treachery
 					qg(23566, qa(27211)),	-- Propaganda War
-					qg(4983, qh(27261, {	-- Questioning Reethe
-						i(6797),
-						i(6798),
-					})),
 					qg(23723, qa(27242)),	-- Raptor Captor
-					qg(6546, qh(27296)),	-- Raze Direhorn Post!
 					qg(6546, qa(27429)),	-- Raze Direhorn Post!
 					qg(23569, qa(27237, {	-- Recover the Cargo!
 						i(33267),
@@ -362,7 +585,6 @@ _.Zones =
 					qg(5086, qa(27235)),	-- Renn McGill
 					qg(23569, qa(27236)),	-- Secondhand Diving Gear
 					qg(23797, q(27348)),	-- Secure the Cargo!
-					qg(4926, qh(27295)),	-- Seek Out Tabetha
 					qg(23579, q(27410)),	-- Spirits of Stonemaul Hold
 					q(27705, {	-- Step One: The Priestess
 						["groups"] = {
@@ -386,10 +608,6 @@ _.Zones =
 						i( 33250),	-- Archer's Wristguard
 						i(131253),	-- Archer's Chain Bracer
 					})),
-					o(187273, {	-- Suspicious Hoofprint
-						qh(27259),	-- Suspicious Hoofprints
-						qa(27262),	-- Suspicious Hoofprints
-					}),
 					qg(23568, qa(27428)),	-- Tabetha's Assistance
 					qg(4921, qa(11212)),	-- Tabetha's Farm
 					qg(23905, qa(27222, {	-- Take Down Tethyr!
@@ -398,17 +616,8 @@ _.Zones =
 						i(57849),
 						i(131659),
 					})),
-					qg(4926, qh(27306)),	-- Talk to Ogron					
-					o(20992, {	-- Black Shield
-						qh(27254),	-- The Black Shield
-						qa(27252),	-- The Black Shield
-					}),
 					qg(4844, qa(27284)),	-- The Black Shield
 					qg(4941, qa(27285)),	-- The Black Shield
-					qg(4926, qh(27255)),	-- The Black Shield
-					qg(5087, qh(27256)),	-- The Black Shield
-					qg(4926, qh(27258)),	-- The Black Shield
-					qg(5087, qh(27257)),	-- The Black Shield
 					qg(4500, qh(27417)),	-- The Brood of Onyxia
 					qg(4501, qh(27416)),	-- The Brood of Onyxia
 					qg(4501, qh(27415, {	-- The Brood of Onyxia
@@ -425,34 +634,12 @@ _.Zones =
 						i(131658),
 					})),
 					qg(23579, q(27409)),	-- The Essence of Enmity
-					qg(4926, qh(27293)),	-- The Grimtotem Plot
-					qg(23601, q(27336)),	-- The Grimtotem Weapon
 					qg(23835, qa(27215)),	-- The Hermit of Swamplight Manor (breadcrumb quest for 27183)
-					o(20985, {	-- Loose Dirt
-						qh(27244),	-- The Lost Report
-						qa(27246),	-- The Orc Report
-					}),
-					qg(23601, q(27339, {	-- The Reagent Thief
-						i(33260),
-						i(33273),
-						i(33244),
-						i(131663),
-					})),
-					qg(4791, qh( 1202)),	-- The Theramore Docks
-					qg(23843, q(27189)),	-- The Witch's Bane
-					qg(23600, q(27346)),	-- The Zeppelin Crash
 					qg(4921, qa(27251)),	-- They Call Him Smiling Jim (breadcrumb quest for 27249)
 					qg(23835, qa(27216)),	-- This Old Lighthouse
 					qg(23892, qa(27217)),	-- Thresher Oil
 					qg(40345, qa(25479)),	-- To New Thalanaar (breadcrumb quest for 25486, not available if 25481,28503 are completed)
 					qg(40369, qa(25481)),	-- To New Thalanaar
-					qh(25478, {	-- To the Summit
-						["groups"] = {
-						},
-						["qg"] = 40344,	--Nyse
-						["isBreadcrumb"] = true,
-						["sourceQuests"] = { 28504 },	-- Warchief's Command: Thousand Needles!
-					}),
 					qg(23566, qa(27210)),	-- Traitors Among Us
 					qg(12939, qa( 6624)),	-- Triage
 					qg(23723, qa(27243, {	-- Unleash the Raptors
@@ -460,16 +647,8 @@ _.Zones =
 						i(33248),
 						i(131662),
 					})),
-					o(186426, {	-- Wanted Poster
-						q(27412, {	-- WANTED: Goreclaw the Ravenous
-							i(33258),
-							i(33242),
-							i(131671),
-						}),
-					}),
-					qg(23843, q(27188)),	-- What's Haunting Witch Hill?
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(50784, { 		-- Anith
 						dr(	5	, i(	7458	)), --	Knight's Boots
 						dr(	5	, i(	7462	)), --	Knight's Girdle
@@ -688,9 +867,9 @@ _.Zones =
 						dr(	1.1	, i(	7492	)), --	Captain's Cloak
 						dr(	1	, i(	7454	)), --	Knight's Breastplate
 					}), 
-					o(202080, { 	-- Dart's Nest
+					o(202080, {	-- Dart's Nest
 						["groups"] = {		
-							dr(100, i(48112)), 	-- Darting Hatchling Pet
+							dr(100, i(48112)),	-- Darting Hatchling Pet
 						},
 						["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
 						["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",	
@@ -1165,7 +1344,7 @@ _.Zones =
 					nh(4879, {	-- Ogg'marr <Butcher>
 						i(12232),	-- Recipe: Carrion Surprise
 						i(12239),	-- Recipe: Dragonbreath Chili
-						i(20075), 	-- Recipe: Heavy Crocolisk Stew
+						i(20075),	-- Recipe: Heavy Crocolisk Stew
 						i(12228),	-- Recipe: Roast Raptor
 					}),
 					a(n(4890, {	-- Piter Verance <Weaponsmith & Armorer>

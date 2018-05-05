@@ -316,11 +316,15 @@ _.Zones =
 					qp129(qg(3028, qh(29345))),	-- Pond Predators
 					qg(3978, qh( 2965)),	-- Portents of Uldum
 --]]					
-					qg(4943, qh(27292, { -- Return to Krog
-						i(33267),	-- Fleshripper
-						i(33259),	-- Crimson Barbut
-						i(156977),	-- Serrated Gladius 
-					})),
+					qh(27292, { -- Return to Krog
+						["g"] = {
+							i( 33267),	-- Fleshripper
+							i( 33259),	-- Crimson Barbut
+							i(156977),	-- Serrated Gladius 
+						},
+						["qg"] = 4943,	-- Mosarn
+						["sourceQuests"] = { 27258 },	-- The Black Shield
+					}),
 --[[					
 					qg(2995, qh( 6364, {	-- Return to Varg
 						["groups"] = {
