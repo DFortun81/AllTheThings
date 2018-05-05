@@ -5,83 +5,56 @@ _.Zones =
 {
 	m(485, { 	-- Northrend
 		m(492, { 	-- Icecrown
-			["groups"] = {			
---[[				
-				n(-3, { 	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),				
---]]				
+			["groups"] = {
+				faction(1106, {	-- Argent Crusade
+					["achievementID"] = 947,	-- The Argent Crusade
+					["groups"] = {
+						ach(945, {	-- The Argent Champion
+							title(99),	-- %s the Argent Champion
+						}),
+						n(30431, { -- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
+							i(43154),	-- Tabard of the Argent Crusade
+							i(41726),	-- Design: Guardian's Twilight Opal
+							i(42187),	-- Pattern: Brilliant Spellthread
+							i(44244),	-- Argent Skeleton Crusher
+							i(44214),	-- Purifying Torch
+							i(44245),	-- Zombie Sweeper Shotgun
+							i(44248),	-- Battle Mender's Helm
+							i(44247),	-- Fang-Deflecting Faceguard
+							i(44296),	-- Helm of Purified Thoughts
+							i(44295),	-- Polished Regimental Hauberk
+							i(44216),	-- Cloak of Holy Extermination
+							i(44240),	-- Special Issue Legplates
+							i(44239),	-- Standard Issue Legplates
+							i(44297),	-- Boots of the Neverending Path
+							i(44283),	-- Signet of Hopeful Light
+						}),
+					},
+				}),
+				faction(1098, {	-- Knights of the Ebon Blade
+					["achievementID"] = 1009,	-- Knights of the Ebon Blade
+					["groups"] = {
+						n(32538, { -- Duchess Mynx <Ebon Blade Quartermaster>
+							i(43155),	-- Tabard of the Ebon Blade
+							i(41562),	-- Design: Deadly Huge Citrine
+							i(41721),	-- Design: Deadly Monarch Topaz
+							i(41725),	-- Design: Timeless Twilight Opal
+							i(42183),	-- Pattern: Abyssal Bag
+							i(44250),	-- Reaper of Dark Souls
+							i(44249),	-- Runeblade of Demonstrable Power
+							i(44241),	-- Unholy Persuader
+							i(44257),	-- Spaulders of the Black Arrow
+							i(44303),	-- Darkheart Chestguard
+							i(44242),	-- Dark Soldier Cape
+							i(44258),	-- Wound-Binder Wristguards
+							i(44256),	-- Sterile Flesh-Handling Gloves
+							i(44302),	-- Belt of Dark Mending
+							i(44305),	-- Kilt of Dark Mercy
+							i(44306),	-- Death-Insured Sabatons
+							i(44243),	-- Toxin-Tempered Sabatons
+						}),
+					},
+				}),
 				n(-25, { 	-- Pet Battles
 					p(641),		-- Arctic Hare
 					p(393),		-- Cockroach
@@ -933,21 +906,6 @@ _.Zones =
 					}), 
 				}),
 				n(-2, { 	-- Vendors
-					n(32538, { -- Duchess Mynx <Ebon Blade Quartermaster>
-						i(43155),	-- Tabard of the Ebon Blade
-						i(44250),	-- Reaper of Dark Souls
-						i(44249),	-- Runeblade of Demonstrable Power
-						i(44241),	-- Unholy Persuader
-						i(44302),	-- Belt of Dark Mending
-						i(44242),	-- Dark Soldier Cape
-						i(44303),	-- Darkheart Chestguard
-						i(44306),	-- Death-Insured Sabatons
-						i(44305),	-- Kilt of Dark Mercy
-						i(44257),	-- Spaulders of the Black Arrow
-						i(44256),	-- Sterile Flesh-Handling Gloves
-						i(44243),	-- Toxin-Tempered Sabatons
-						i(44258),	-- Wound-Binder Wristguards
-					}),
 					n(33595, {	-- Mera Mistrunner <Cooking Supplies>
 						currency(81, {	-- Epicurean's Award
 							i(134020), 	-- Chef's Hat
@@ -977,20 +935,7 @@ _.Zones =
 							i(44954),	-- Recipe: Worg Tartare
 						}),
 					}),
-					n(30431, { -- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
-						i(43154),	-- Tabard of the Argent Crusade
-						i(44244),	-- Argent Skeleton Crusher
-						i(44245),	-- Zombie Sweeper Shotgun
-						i(44248),	-- Battle Mender's Helm
-						i(44297),	-- Boots of the Neverending Path
-						i(44216),	-- Cloak of Holy Extermination
-						i(44247),	-- Fang-Deflecting Faceguard
-						i(44296),	-- Helm of Purified Thoughts
-						i(44295),	-- Polished Regimental Hauberk
-						i(44214),	-- Purifying Torch
-						i(44240),	-- Special Issue Legplates
-						i(44239),	-- Standard Issue Legplates
-					}),
+					
 				}),
 				n(-363, {	-- The Argent Tournament
 					n(-2, {
@@ -2314,7 +2259,7 @@ _.Zones =
 			},
 			["lvl"] = 67,	
 			["achievementID"] = 1270,
-			["description"] = "|cff66ccffIcecrown is a zone intended for level 77+ players to quest in, as well as return to at max level for the Argent Tournament, a daily quest hub that has many vanity rewards. Icecrown, composed literally of solid ice, is home to the Frozen Throne and Icecrown Citadel. The Lich King's presence can be felt across the zone, with the Argent Crusade and Ebon Blade battling all sorts of Scourge horrors. There are also quest chains covering the Scarlet Onslaught's final outpost, as well as the presence of the corrupted Vrykul.|r",				
+			["description"] = "|cff66ccffIcecrown is a zone intended for level 67+ players to quest in, as well as return to at max level for the Argent Tournament, a daily quest hub that has many vanity rewards. Icecrown, composed literally of solid ice, is home to the Frozen Throne and Icecrown Citadel. The Lich King's presence can be felt across the zone, with the Argent Crusade and Ebon Blade battling all sorts of Scourge horrors. There are also quest chains covering the Scarlet Onslaught's final outpost, as well as the presence of the corrupted Vrykul.|r",				
 		}),
 	}),
 };
