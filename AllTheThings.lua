@@ -2228,38 +2228,58 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 							for i,j in ipairs(group.g) do
 								if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
 									if not contains(parents, j.parent) then tinsert(parents, j.parent); end
+									
+									local right = nil;
 									if j.total and j.total > 0 then
 										progress = progress + j.progress;
 										total = total + j.total;
 										if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
-											tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), GetProgressColorText(j.progress, j.total) });
+											right = GetProgressColorText(j.progress, j.total);
 										end
 									elseif j.collectible then
 										total = total + 1;
 										if j.collected or (j.trackable and j.saved) then
 											progress = progress + 1;
 											if GetDataMember("ShowCollectedItems") then
-												tinsert(items, {"  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON")});
+												right = L("COLLECTED_ICON");
 											end
 										else
-											if j.dr then
-												tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON") });
-											else
-												tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("NOT_COLLECTED_ICON") });
-											end
+											right = L("NOT_COLLECTED_ICON");
 										end
 									elseif j.trackable then
 										if j.saved then
 											if GetDataMember("ShowCollectedItems") then
-												tinsert(items, {"  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("COLLECTED_ICON")});
+												right = L("COLLECTED_ICON");
 											end
 										elseif app.ShowIncompleteQuests(j) then
-											if j.dr then
-												tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. L("NOT_COLLECTED_ICON") });
-											else
-												tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), L("NOT_COLLECTED_ICON") });
+											right = L("NOT_COLLECTED_ICON");
+										end
+									end
+									
+									-- If there's progress to display, then let's summarize a bit better.
+									if right then
+										-- If this group has a droprate, add it to the display.
+										if j.dr then right = "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. right; end
+										
+										-- If this group has specialization requirements, let's attempt to show the specialization icons.
+										local specs = GetDataMember("ShowLootSpecializationRequirements") and j.specs;
+										if specs and #specs > 0 then
+											table.sort(specs);
+											for i,spec in ipairs(specs) do
+												local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+												if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
 											end
 										end
+										
+										-- Insert into the display.
+										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
+										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
+										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
+										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
+										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
+										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
+										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
+										tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), right });
 									end
 								end
 							end
