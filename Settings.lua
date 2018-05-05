@@ -1767,6 +1767,7 @@ local function createDebugFrame(parent)
 		["ShowArtifactID"] = "Show Artifact ID",
 		["ShowBonusID"] = "Show Bonus ID",
 		["ShowCreatureID"] = "Show Creature ID",
+		["ShowCurrencyID"] = "Show Currency ID",
 		["ShowDifficultyID"] = "Show Difficulty ID",
 		["ShowEncounterID"] = "Show Encounter ID",
 		["ShowFactionID"] = "Show Faction ID",
@@ -1787,7 +1788,7 @@ local function createDebugFrame(parent)
 		["ShowVisualID"] = "Show Visual ID",
 		}
 	local last;
-	for _,id in pairs ({"ShowAchievementID","ShowArtifactID","ShowBonusID","ShowCreatureID","ShowDifficultyID","ShowEncounterID","ShowFactionID","ShowFilterID","ShowIllusionID","ShowInstanceID","ShowItemID","ShowItemString","ShowMapID","ShowModID","ShowObjectID","ShowQuestID","ShowSourceID","ShowSpeciesID","ShowSpellID","ShowTierID","ShowTitleID","ShowVisualID"}) do
+	for _,id in pairs ({"ShowAchievementID","ShowArtifactID","ShowBonusID","ShowCreatureID","ShowCurrencyID","ShowDifficultyID","ShowEncounterID","ShowFactionID","ShowFilterID","ShowIllusionID","ShowInstanceID","ShowItemID","ShowItemString","ShowMapID","ShowModID","ShowObjectID","ShowQuestID","ShowSourceID","ShowSpeciesID","ShowSpellID","ShowTierID","ShowTitleID","ShowVisualID"}) do
 		local filter = createCheckBox(ids[id], child, function(self)
 			app.SetDataMember(id, self:GetChecked());
 			wipe(app.searchCache);

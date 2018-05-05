@@ -2555,6 +2555,7 @@ end
 		
 		if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
 			AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForFieldAndSummarize, "currencyID", currencyID);
+			if GetDataMember("ShowCurrencyID") then self:AddDoubleLine(L("CURRENCY_ID"), tostring(currencyID)); end
 			self:Show();
 		end
 	end
@@ -2575,6 +2576,7 @@ end
 						-- Compare the name of the currency vs the name of the token
 						if select(1, GetCurrencyInfo(currencyID)) == name then
 							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForFieldAndSummarize, "currencyID", currencyID);
+							if GetDataMember("ShowCurrencyID") then self:AddDoubleLine(L("CURRENCY_ID"), tostring(currencyID)); end
 							self:Show();
 							break;
 						end
@@ -7860,6 +7862,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowArtifactID", false);
 	GetDataMember("ShowBonusID", false);
 	GetDataMember("ShowCreatureID", false);
+	GetDataMember("ShowCurrencyID", false);
 	GetDataMember("ShowDifficultyID", false);
 	GetDataMember("ShowEncounterID", false);
 	GetDataMember("ShowFactionID", false);

@@ -58,6 +58,7 @@ AllTheThings.Locales.enUS = {
 	["ARTIFACT"] = "Artifact";
 	["ARTIFACT_ID"] = "Artifact ID";
 	["CREATURE_ID"] = "Creature ID";
+	["CURRENCY_ID"] = "Currency ID";
 	["DIFFICULTY"] = "Difficulty";
 	["DIFFICULTY_ID"] = "Difficulty ID";
 	["ENCOUNTER"] = "Encounter";
