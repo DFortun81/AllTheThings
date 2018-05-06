@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(285, { 	-- Utgarde Keep
 				["groups"] = {
-					n(-47, {     -- Lunar Festival
+					n(-47, {	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								q(13017, {	-- Jarten the Elder			
@@ -51,10 +51,10 @@ _.Instances =
 						h(q(11262)),	-- Ingvar Must Die!, No actual awards.
 						a(q(29763)),	-- Stealing Their Thunder, No actual awards.
 					}),
-					d(1, {		-- Normal
-						n(0, {		-- Zone Drop
-							i(35580),
-							i(35579)
+					d(  1, {	-- Normal
+						n(0, {	-- Zone Drop
+							i(35580),	-- Skein Woven Mantle
+							i(35579),	-- Vrykul Shackles
 						}),
 						cr(23953, e(638, { -- Prince Keleseth <The San'layn>
 							ig(44731),		-- Bouquet of Ebon Roses
@@ -89,12 +89,12 @@ _.Instances =
 							i(37193),		-- Staggering Legplates
 						}))
 					}),
-					d(2, {		-- Heroic
+					d(  2, {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
-							n(0, {		-- Zone Drop
-								i(37197),
-								i(37196)
+							n(0, {	-- Zone Drop
+								i(37196),	-- Runecaster's Mantle
+								i(37197),	-- Tattered Castle Drape
 							}),
 							cr(23953, e(638, { -- Prince Keleseth <The San'layn>
 								ig(44731),		-- Bouquet of Ebon Roses
