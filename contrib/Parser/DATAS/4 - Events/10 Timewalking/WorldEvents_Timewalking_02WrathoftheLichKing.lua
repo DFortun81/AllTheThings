@@ -7,6 +7,18 @@ _.WorldEvents =
 		["groups"] = {
 			n(-155, { 	-- Wrath of the Lich King
 				["groups"] = {
+					i(129928, { -- Frigid Timewarped Prism
+						q(40173, { -- The Unstable Prism
+							["groups"] = {
+							},
+							["qg"] = 98690, -- Auzin
+						}),
+					}),
+					q(50316, { -- Disturbance Detected: Ulduar
+						["groups"] = {
+						},
+						["qg"] = 130654, -- Vormu
+					}),
 					currency(1166, { -- Timewarped Badge
 						i(129922), -- Bridle of the Ironbound Wraithcharger Mount
 						i(129965), -- Grizzlesnout's Fang Toy

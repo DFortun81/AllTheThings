@@ -7,6 +7,18 @@ _.WorldEvents =
 		["groups"] = {
 			n(-154, { 	-- Burning Crusade
 				["groups"] = {
+					i(129747, { -- Swirling Timewarped Vial
+						q(40168, { -- The Swirling Vial
+							["groups"]= {
+							},
+							["qg"] = 98685, -- Cupri
+						}),
+					}),
+					q(47523, { -- Disturbance Detected: Black Temple
+						["groups"] = {
+						},
+						["qg"] = 123252, -- Vormu
+					}),
 					currency(1166, { -- Timewarped Badge
 						i(129929), -- Ever-Shifting Mirror
 						i(151016), -- Fractured Necrolyte Skull
