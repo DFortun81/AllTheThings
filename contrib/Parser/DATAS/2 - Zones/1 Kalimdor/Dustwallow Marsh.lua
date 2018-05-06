@@ -131,6 +131,14 @@ _.Zones =
 					}),
 
 					
+					q( 27408, {	-- Banner of the Stonemaul
+						["g"] = {
+						},
+						["qg"] = 23579,	-- Brogg
+						["sourceQuests"] = { 27407 },	-- Bloodfen Feathers
+					}),
+					
+					
 					q( 27407, {	-- Bloodfen Feathers
 						["g"] = {
 						},
@@ -145,6 +153,30 @@ _.Zones =
 							i(131672),	-- Chain Linked Leggings
 						},
 						["qg"] = 23570,	-- Gizzix Grimegurgle
+					}),
+					
+					
+					qh(27418, {	-- Challenge Overlord Mok'Morokk (awarded "Challening the Overlord" criteria + overall quest achievement for the zone)
+						["g"] = {
+							i( 57846),	-- Overlord's Trophy Shoulders
+							i( 57847),	-- Mok'Morokk's Beat Stick
+							i( 57850),	-- Dustwallow Impaler
+							i(131675),	-- Overlord's Trophy Pauldrons
+							i(156999),	-- Mok'Morokk's Headcracker
+						},
+						["qg"] = 4500,	-- Overlord Mok'Morokk
+						["sourceQuests"] = { 27415 },	-- The Brood of Onyxia (#3)
+					}),
+					
+					
+					q( 27411, {	-- Challenge to the Black Dragonflight (awarded "The Challenge of the Stonemaul" criteria)
+						["g"] = {
+							i(33231),	-- Oversized Stonemaul Hood
+							i(57828),	-- Brogg's Better Battle Harness
+							i(33256),	-- Refitted Bruiser Gauntlets
+						},
+						["qg"] = 23579,	-- Brogg
+						["sourceQuests"] = { 27410 },	-- Spirits of Stonemaul Hold
 					}),
 					
 					
@@ -167,6 +199,18 @@ _.Zones =
 					}),
 					
 					
+					q( 27347, {	-- Corrosion Prevention
+						["g"] = {
+							i( 33233),	-- Cobalt-Threaded Gloves
+							i( 33239),	-- Marshwarden's Tunic
+							i( 33255),	-- Rustproof Waistguard
+							i( 57840),	-- Corroded Helmet
+							i(131666),	-- Marshwarden's Vest
+						},
+						["qg"] = 23797,	-- Moxie Steelgrille
+					}),
+					
+					
 					qh(25051, {	-- Darkmist Extermination
 						["g"] = {
 						},
@@ -174,6 +218,14 @@ _.Zones =
 					}),
 					
 
+					q( 11208, {	-- Delivery for Drazzit
+						["g"] = {
+						},
+						["qg"] = 23797,	-- Moxie Steelgrille
+						["sourceQuests"] = { 27348 },	-- Secure the Cargo!
+					}),
+					
+					
 					q( 27340, {	-- Direhorn Raiders
 						["g"] = {
 							i( 33240),	-- Grimtotem Earthbinder's Tunic
@@ -285,6 +337,25 @@ _.Zones =
 					}),
 					
 					
+					q(  6607, {	-- Nat Pagle, Angler Extreme
+						["g"] = {
+							i(45858)	-- Nat's Lucky Fishing Pole
+						},
+						["qg"] = 12919,	-- Nat Pagle
+						["requiredSkill"] = 129,	-- Fishing
+					}),
+					
+					
+					q( 13826, {	-- Nat Pagle, Angler Extreme
+						["g"] = {
+							i(45858),	-- Nat's Lucky Fishing Pole
+						},
+						["qg"] = 12919,	-- Nat Pagle
+						["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
+						["requiredSkill"] = 129,	-- Fishing
+					}),
+					
+					
 					qh(27424, {	-- Overlord Mok'Morokk's Concern
 						["g"] = {
 							i( 57848),	-- Mok'Morokk's Grog Bottle
@@ -313,6 +384,14 @@ _.Zones =
 					}),
 					
 					
+					q( 27348, {	-- Secure the Cargo!
+						["g"] = {
+						},
+						["qg"] = 23797,	-- Moxie Steelgrille
+						["breadcrumbQuestID"] = { 27346 },	-- The Zeppelin Crash
+					}),
+					
+					
 					qh(27295, {	-- Seek Out Tabetha
 						["g"] = {
 						},
@@ -323,6 +402,21 @@ _.Zones =
 					
 					o(205332, {	-- Wanted Poster
 						qh(27229),	-- SMASH BROODQUEEN
+					}),
+					
+					
+					q( 27410, {	-- Spirits of Stonemaul Hold
+						["g"] = {
+						},
+						["qg"] = 23579,	-- Brogg
+						["sourceQuests"] = { 27408, 27409 },	-- Banner of the Stonemaul & The Essence of Enmity
+					}),
+					
+					
+					qh( 1270, {	-- Stinky's Escape
+						["g"] = {
+						},
+						["qg"] = 4880,	-- "Stinky" Ignatz
 					}),
 					
 					
@@ -377,6 +471,41 @@ _.Zones =
 						["sourceQuests"] = { 27261 },	-- Questioning Reethe
 					}),
 					
+
+					qh(27416, {	-- The Brood of Onyxia (#1)
+						["g"] = {
+						},
+						["qg"] = 4501,	-- Draz'Zilb
+						["sourceQuests"] = { 27414 },	-- Identifying the Brood
+					}),
+					
+					
+					qh(27417, {	-- The Brood of Onyxia (#2)
+						["g"] = {
+						},
+						["qg"] = 4500,	-- Overlord Mok'Morokk
+						["sourceQuests"] = { 27416 },	-- The Brood of Onyxia (#1)
+					}),
+					
+					
+					qh(27415, {	-- The Brood of Onyxia (#3) (awarded "Onyxia's Brood" criteria)
+						["g"] = {
+							i( 57836),	-- Encarmine Spaulders
+							i( 57841),	-- Wyrmbog Amulet
+							i(131674),	-- Encarmine Pauldrons
+						},
+						["qg"] = 4501,	-- Draz'Zilb
+						["sourceQuests"] = { 27417 },	-- The Brood of Onyxia (#2) (possibly available after #1)
+					}),
+					
+					
+					q( 27409, {	-- The Essence of Enmity
+						["g"] = {
+						},
+						["qg"] = 23579,	-- Brogg
+						["sourceQuests"] = { 27407 },	-- Bloodfen Feathers
+					}),
+
 					
 					qh(27293, {	-- The Grimtotem Plot
 						["g"] = {
@@ -504,147 +633,81 @@ _.Zones =
 							un(34, i(6801)),	-- Baroque Apron
 						}),
 					})),
-					qg(23951, qa(27214)),	-- A Disturbing Development (breadcrumb quest for 27234)
-					qg(4944, qa(27425)),	-- A Grim Connection
+					qg(23951, qa(27214)),	-- A Disturbing Development (bcrumb quest for 27234)
+					qg( 4944, qa(27425)),	-- A Grim Connection
 					qg(23568, qa(27427, {	-- Arms of the Grimtotems
 						i(33268),	-- Bone Dirk
 						i(57837),	-- Biting Greataxe
 					})),
-					qg(23579, q(27408)),	-- Banner of the Stonemaul
-					q(27914, {	-- Blessing of the Green Dragonflight
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius (may be outside instance?)
-					}),
 					qg(23951, qa(27247)),	-- Captain Vimes
-					qg(4500, qh(27418, {	-- Challenge Overlord Mok'Morokk
-						i(57846),
-						i(57847),
-						i(57850),
-						i(131675),
-						i(156999),	-- Mok'Morokk's Headcracker
-					})),
-					qg(23579, q(27411, {	-- Challenge to the Black Dragonflight
-						i(33231),
-						i(57828),
-						i(33256),
-					})),
 					qg(23568, qa(27426)),	-- Confirming the Suspicion
-					qg(23797, q(27347, {	-- Corrosion Prevention
-						i(33233),
-						i(33239),
-						i(33255),
-						i(57840),
-						i(131666),
-					})),
-					qg(4948, qa(27286)),	-- Daelin's Men
+					qg( 4948, qa(27286)),	-- Daelin's Men
 					qg(23892, qa(27218)),	-- Dastardly Denizens of the Deep
-					qg(5086, qa(27234)),	-- Defias in Dustwallow?
-					qg(23797, q(11208)),	-- Delivery for Drazzit
+					qg( 5086, qa(27234)),	-- Defias in Dustwallow?
 					qg(23566, qa(27212)),	-- Discrediting the Deserters
-					qg(4944, qa(27249)),	-- Inspecting the Ruins
+					qg( 4944, qa(27249)),	-- Inspecting the Ruins
 					qg(23896, qa(27219)),	-- Is it Real?
 					qg(23569, qa(27238)),	-- Jaina Must Know
-					qg(6546, qa(27430)),	-- Justice for the Hyals
-					q(27704, {	-- Legends of the Sunken Temple
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
-					qg(4944, qa(27264)),	-- Lieutenant Paval Reethe
+					qg( 6546, qa(27430)),	-- Justice for the Hyals
+					qg( 4944, qa(27264)),	-- Lieutenant Paval Reethe
 					qg(21042, qa(27263)),	-- Lieutenant Paval Reethe
 					qg(23951, qa(27248)),	-- Mission to Mudsprocket
-					qg(4794, qa(1204)),	-- Mudrock Soup and Bugs
-					qp129(qg(12919, q(13826))),	-- Nat Pagle, Angler Extreme
-					qp129(qg(12919, q(6607, { 	-- Nat Pagle, Angler Extreme
-						i(45858)	-- Nat's Lucky Fishing Pole
-					}))),
+					qg( 4794, qa( 1204)),	-- Mudrock Soup and Bugs
 					qg(12919, qa(27220)),	-- Nat's Bargain
-					qg(39697, qh(25292)),	-- Next of Kin
 					qg(12919, qa(27221)),	-- Oh, It's Real
-					qg(4944, qa(27291, {	-- Peace at Last
-						i(33271),
-						i(57829),
+					qg( 4944, qa(27291, {	-- Peace at Last
+						i( 33271),
+						i( 57829),
 						i(156976),	-- Staff of Memory 
 					})),
-					q(27694, {	-- Pool of Tears
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
 					qg(23723, qa(27245)),	-- Prisoners of the Grimtotems
-					qg(4968, qa(27240)),	-- Proof of Treachery
+					qg( 4968, qa(27240)),	-- Proof of Treachery
 					qg(23566, qa(27211)),	-- Propaganda War
 					qg(23723, qa(27242)),	-- Raptor Captor
-					qg(6546, qa(27429)),	-- Raze Direhorn Post!
+					qg( 6546, qa(27429)),	-- Raze Direhorn Post!
 					qg(23569, qa(27237, {	-- Recover the Cargo!
-						i(33267),
-						i(33259),
+						i( 33267),
+						i( 33259),
 						i(156977),	-- Serrated Gladius 
 					})),
-					qg(5086, qa(27235)),	-- Renn McGill
+					qg( 5086, qa(27235)),	-- Renn McGill
 					qg(23569, qa(27236)),	-- Secondhand Diving Gear
-					qg(23797, q(27348)),	-- Secure the Cargo!
-					qg(23579, q(27410)),	-- Spirits of Stonemaul Hold
-					q(27705, {	-- Step One: The Priestess
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
-					q(27773, {	-- Step Three: Prophet
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
-					q(27768, {	-- Step Two: The Bloodletter
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
-					qg(4880, qa( 1222)),	-- Stinky's Escape
-					qg(4880, qh( 1270)),	-- Stinky's Escape
-					qg(4968, qa(27239, {	-- Survey Alcaz Island
+					qg( 4880, qa( 1222)),	-- Stinky's Escape
+					qg( 4968, qa(27239, {	-- Survey Alcaz Island
 						i( 57851),	-- Swamp Gas Gauntlets
 						i( 33250),	-- Archer's Wristguard
 						i(131253),	-- Archer's Chain Bracer
 					})),
 					qg(23568, qa(27428)),	-- Tabetha's Assistance
-					qg(4921, qa(11212)),	-- Tabetha's Farm
+					qg( 4921, qa(11212)),	-- Tabetha's Farm
 					qg(23905, qa(27222, {	-- Take Down Tethyr!
-						i(57842),
-						i(33247),
-						i(57849),
+						i( 57842),
+						i( 33247),
+						i( 57849),
 						i(131659),
 					})),
-					qg(4844, qa(27284)),	-- The Black Shield
-					qg(4941, qa(27285)),	-- The Black Shield
-					qg(4500, qh(27417)),	-- The Brood of Onyxia
-					qg(4501, qh(27416)),	-- The Brood of Onyxia
-					qg(4501, qh(27415, {	-- The Brood of Onyxia
-						i(57836),
-						i(131674),
-					})),
-					qg(5089, qa(27288)),	-- The Deserters
-					qg(4944, qa(27287)),	-- The Deserters
+					qg( 4844, qa(27284)),	-- The Black Shield
+					qg( 4941, qa(27285)),	-- The Black Shield
+					qg( 5089, qa(27288)),	-- The Deserters
+					qg( 4944, qa(27287)),	-- The Deserters
 					qg(23566, qa(27213, {	-- The End of the Deserters
-						i(57832),
-						i(33249),
-						i(57853),
+						i( 57832),
+						i( 33249),
+						i( 57853),
 						i(131657),
 						i(131658),
 					})),
-					qg(23579, q(27409)),	-- The Essence of Enmity
-					qg(23835, qa(27215)),	-- The Hermit of Swamplight Manor (breadcrumb quest for 27183)
-					qg(4921, qa(27251)),	-- They Call Him Smiling Jim (breadcrumb quest for 27249)
+					qg(23835, qa(27215)),	-- The Hermit of Swamplight Manor (bcrumb quest for 27183)
+					qg( 4921, qa(27251)),	-- They Call Him Smiling Jim (bcrumb quest for 27249)
 					qg(23835, qa(27216)),	-- This Old Lighthouse
 					qg(23892, qa(27217)),	-- Thresher Oil
-					qg(40345, qa(25479)),	-- To New Thalanaar (breadcrumb quest for 25486, not available if 25481,28503 are completed)
+					qg(40345, qa(25479)),	-- To New Thalanaar (bcrumb quest for 25486, not available if 25481,28503 are completed)
 					qg(40369, qa(25481)),	-- To New Thalanaar
 					qg(23566, qa(27210)),	-- Traitors Among Us
 					qg(12939, qa( 6624)),	-- Triage
 					qg(23723, qa(27243, {	-- Unleash the Raptors
-						i(33266),
-						i(33248),
+						i( 33266),
+						i( 33248),
 						i(131662),
 					})),
 				}),
