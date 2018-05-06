@@ -7,6 +7,13 @@ _.WorldEvents =
 		["groups"] = {
 			n(-157, { 	-- Mists of Pandaria
 				["groups"] = {
+					i(143776, { -- Shrouded Timewarped Coin
+						q(45563, { -- The Shrouded Coin
+							["groups"] = {
+							},
+							["qg"] = 118828, -- Mistweaver Xia
+						}),
+					}),
 					currency(1166, { -- Timewarped Badge
 						i(144044),	-- Gloves of Red Feathers
 						i(144045),	-- Fingers of the Loneliest Monk

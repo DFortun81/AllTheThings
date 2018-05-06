@@ -7,6 +7,20 @@ _.WorldEvents =
 		["groups"] = {
 			n(-156, { 	-- Catacylsm
 				["groups"] = {
+					i(133378, { -- Smoldering Timewarped Ember [Alliance]
+						qa(40787, { -- The Smoldering Ember
+							["groups"] = {
+							},
+							["qg"] = 101759, -- Kiatke
+						}),
+					}),
+					i(133377, { -- Smoldering Timewarped Ember [Horde]
+						qh(40787, { -- The Smoldering Ember
+							["groups"] = {
+							},
+							["qg"] = 101759, -- Kiatke
+						}),
+					}),
 					currency(1166, { -- Timewarped Badge
 						i(133525),	-- Bones of the Damned
 						i(133526),	-- Lightwarper Vestments
