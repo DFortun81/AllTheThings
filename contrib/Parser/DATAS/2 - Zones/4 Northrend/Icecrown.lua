@@ -55,6 +55,29 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(2257, {	-- Frostbitten
+					{
+						["criteriaID"] = 2,	-- High Thane Jorfus [Criteria]
+						["qg"] = 32501,		-- High Thane Jorfus [NPC]
+						["groups"] = {
+							i(44695),	-- Corroded Faceguard
+						},
+					},
+					{
+						["criteriaID"] = 3,	-- Hildana Deathstealer [Criteria]
+						["qg"] = 32495,		-- Hildana Deathstealer [NPC]
+						["groups"] = {
+							i(44697),	-- Val'kyr Vestments
+						},
+					},
+					{
+						["criteriaID"] = 23,	-- Putridus the Ancient [Criteria]
+						["qg"] = 32487,			-- Putridus the Ancient [NPC]
+						["groups"] = {
+							i(44696),	-- Giant's Toewrap
+						},
+					},
+				}),
 				n(-25, { 	-- Pet Battles
 					p(641),		-- Arctic Hare
 					p(393),		-- Cockroach
@@ -894,17 +917,6 @@ _.Zones =
 						i(43846),
 					}),
 				}),	
-				n(-16, { 	-- Rares	
-					n(32487, { -- Putridus the Ancient
-						i(44696),
-					}), 
-					n(32495, { -- Hildana Deathstealer
-						i(44697),
-					}), 
-					n(32501, { -- High Thane Jorfus
-						i(44695),
-					}), 
-				}),
 			},
 			["lvl"] = 67,	
 			["achievementID"] = 1270,
