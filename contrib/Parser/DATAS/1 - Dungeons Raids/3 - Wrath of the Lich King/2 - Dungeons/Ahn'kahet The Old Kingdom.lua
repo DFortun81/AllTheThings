@@ -18,10 +18,10 @@ _.Instances =
 						q(29825),	-- Pupil No More, No actual awards.
 						q(29826), 	-- Reclaiming Ahn'Kahet, No actual awards.
 					}),
-					d(1, {		-- Normal
-						n(0, {		-- Zone Drop
+					d(  1, {	-- Normal
+						n(0, {	-- Zone Drop
 							i(35615),	-- Glowworm Cavern Bindings
-							i(35616)	-- Spored Tendrils Spaulders
+							i(35616),	-- Spored Tendrils Spaulders
 						}),
 						cr(29309, e(580, {	-- Elder Nadox
 							i(35606),	-- Blade of Nadox
@@ -30,9 +30,12 @@ _.Instances =
 							i(37593),	-- Sprinting Shoulderpads
 							i(35607),	-- Ahn'kahar Handwraps
 							i(35608),	-- Crawler-Emblem Belt
+							i(37591),	-- Nerubian Shield Ring
 						})),
 						cr(29308, e(581, {	-- Prince Taldaram
 							i(35609),	-- Talisman of Scourge Command
+							i(37595),	-- Necklace of Taldaram
+							i(35610),	-- Slasher's Amulet
 							i(37612),	-- Bonegrinder Breastplate
 							i(37613),	-- Flame Sphere Bindings
 							i(37614),	-- Gauntlets of the Plundering Geist
@@ -40,12 +43,14 @@ _.Instances =
 						})),
 						cr(29310, e(582, {	-- Jedoga Shadowseeker
 							ig(21524), 	-- Red Winter Hat
-							i(43281),	-- Edge of Oblivion
-							i(44191),	-- Ice-Rimed Chopper
-							i(43280),	-- Faceguard of the Hammer Clan
-							i(43278),	-- Cloak of the Darkcaster
-							i(43283),	-- Subterranean Waterfall Shroud
-							i(43279),	-- Battlechest of the Twilight Cult
+							i( 43281),	-- Edge of Oblivion
+							i( 44191),	-- Ice-Rimed Chopper
+							i( 43280),	-- Faceguard of the Hammer Clan
+							i( 43282),	-- Shadowseeker's Pendant
+							i( 43278),	-- Cloak of the Darkcaster
+							i( 43283),	-- Subterranean Waterfall Shroud
+							i( 43279),	-- Battlechest of the Twilight Cult
+							i( 43277),	-- Jedoga's Greatring
 						})),
 						cr(29311, e(584, {	-- Herald Volazj
 							i(37617),	-- Staff of Sinister Claws
@@ -59,13 +64,13 @@ _.Instances =
 							i(37622),	-- Skirt of the Old Kingdom
 							i(37618),	-- Greaves of Ancient Evil
 							i(35614),	-- Volazj's Sabatons
-						}))
+						})),
 					}),
-					d(2, {		-- Heroic
+					d(  2, {	-- Heroic
 						["lvl"] = 80,
 						["ignoreBonus"] = true,
 						["groups"] = {
-							n(0, {		-- Zone Drop
+							n(0, {	-- Zone Drop
 								i(37625)	-- Web Winder Gloves
 							}),
 							cr(29309, e(580, {	-- Elder Nadox
@@ -75,9 +80,12 @@ _.Instances =
 								i(37593),	-- Sprinting Shoulderpads
 								i(35607),	-- Ahn'kahar Handwraps
 								i(35608),	-- Crawler-Emblem Belt
+								i(37591),	-- Nerubian Shield Ring
 							})),
 							cr(29308, e(581, {	-- Prince Taldaram
 								i(35609),	-- Talisman of Scourge Command
+								i(37595),	-- Necklace of Taldaram
+								i(35610),	-- Slasher's Amulet
 								i(37612),	-- Bonegrinder Breastplate
 								i(37613),	-- Flame Sphere Bindings
 								i(37614),	-- Gauntlets of the Plundering Geist
@@ -85,17 +93,20 @@ _.Instances =
 							})),
 							cr(30258, e(583, {	-- Amanitar
 								i(43284),	-- Amanitar Skullbow
+								i(43285),	-- Amulet of the Spell Flinger
 								i(43287),	-- Silken Bridge Handwraps
 								i(43286),	-- Legguards of Swarming Attacks
 							})),
 							cr(29310, e(582, {	-- Jedoga Shadowseeker
 								ig(21524), 	-- Red Winter Hat
-								i(43281),	-- Edge of Oblivion
-								i(44191),	-- Ice-Rimed Chopper
-								i(43280),	-- Faceguard of the Hammer Clan
-								i(43278),	-- Cloak of the Darkcaster
-								i(43283),	-- Subterranean Waterfall Shroud
-								i(43279),	-- Battlechest of the Twilight Cult
+								i( 43281),	-- Edge of Oblivion
+								i( 44191),	-- Ice-Rimed Chopper
+								i( 43280),	-- Faceguard of the Hammer Clan
+								i( 43282),	-- Shadowseeker's Pendant
+								i( 43278),	-- Cloak of the Darkcaster
+								i( 43283),	-- Subterranean Waterfall Shroud
+								i( 43279),	-- Battlechest of the Twilight Cult
+								i( 43277),	-- Jedoga's Greatring
 							})),
 							cr(29311, e(584, {	-- Herald Volazj
 								i(37617),	-- Staff of Sinister Claws
@@ -109,9 +120,9 @@ _.Instances =
 								i(37622),	-- Skirt of the Old Kingdom
 								i(37618),	-- Greaves of Ancient Evil
 								i(35614),	-- Volazj's Sabatons
-							}))
+							})),
 						}}),
-					d(24, {		-- Timewalking
+					d( 24, {	-- Timewalking
 						["lvl"] = 70,
 						["groups"] = {
 							cr(29309, e(580, {	-- Elder Nadox
@@ -121,8 +132,11 @@ _.Instances =
 								i(127616),	-- Glowworm Cavern Bindings
 								i(127608),	-- Ahn'kahar Handwraps
 								i(127609),	-- Crawler-Emblem
+								i(127618),	-- Nerubian Shield Ring								
 							})),
 							cr(29308, e(581, {	-- Prince Taldaram
+								i(127622),	-- Necklace of Taldaram
+								i(127611),	-- Slasher's Amulet
 								i(127620),	-- Sprinting Shoulderpads
 								i(127642),	-- Subterranean Waterfall Shroud
 								i(127623),	-- Bonegrinder Breastplate
@@ -132,6 +146,7 @@ _.Instances =
 							})),
 							cr(30258, e(583, {	-- Amanitar
 								i(127643),	-- Amanitar Skullbow
+								i(127644),	-- Amulet of the Spell Flinger
 								i(127613),	-- Mantle of Echoing Bats
 								i(127617),	-- Spored Tendrils Spaulders
 								i(127646),	-- Silken Bridge Handwraps
@@ -145,8 +160,11 @@ _.Instances =
 								i(127647),	-- Ice-Rimed Chopper
 								i(127610),	-- Talisman of Scourge Command
 								i(127639),	-- Faceguard of the Hammer Clan
+								i(127641),	-- Shadowseeker's Pendant
 								i(127637),	-- Cloak of the Darkcaster
 								i(127638),	-- Battlechest of the Twilight Cult
+								i(127636),	-- Jedoga's Greatring
+								i(127634),	-- Stained-Glass Shard Ring
 							})),
 							cr(29311, e(584, {	-- Herald Volazj
 								i(127628),	-- Staff of Sinister Claws
@@ -157,8 +175,9 @@ _.Instances =
 								i(127627),	-- Kilt of the Forgotten One
 								i(127632),	-- Skirt of the Old Kingdom
 								i(127629),	-- Greaves of Ancient Evil
-							}))
-						}})
+							})),
+						},
+					}),
 				},
 				["lvl"] = 70,
 				["mapID"] = 522
