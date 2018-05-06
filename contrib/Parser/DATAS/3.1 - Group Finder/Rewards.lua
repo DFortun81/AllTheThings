@@ -23,7 +23,6 @@ _.GroupFinder =
 			i(51989),	-- Stalwart Bands*
 			un(2, i(51985)),	-- Stalwart Belt
 			i(143582),	-- Stalwart Belt*
-			un(2, i(51987)),	-- Stalwart Grips
 			i(143583),	-- Stalwart Grips*
 			i(51984),	-- Stalwart Shoulderpads*
 			un(2, i(51997)),	-- Stalwart Spaulders
@@ -116,8 +115,8 @@ _.GroupFinder =
 			i(51979),	-- Earthbound Grips
 			i(51977),	-- Earthbound Girdle
 			i(51983),	-- Stalwart Shoulderguards*
-			i(51989),	-- Stalwart Bands
-			i(51987),	-- Stalwart Grips
+			i(51989),	-- Stalwart Bands*
+			i(51987),	-- Stalwart Grips*
 			i(51990),	-- Stalwart Treads*
 			i(51993),	-- Turbulent Cloak*
 			i(51995),	-- Turbulent Necklace*
