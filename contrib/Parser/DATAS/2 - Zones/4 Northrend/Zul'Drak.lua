@@ -6,6 +6,29 @@ _.Zones =
 	m(485, { 	-- Northrend
 		m(496, {	-- Zul'Drak
 			["groups"] = {							
+				ach(2257, {	-- Frostbitten
+					{
+						["criteriaID"] = 17,	-- Griegen [Criteria]
+						["qg"] = 32471,			-- Griegen [NPC]
+						["groups"] = {
+							i(44686),	-- thereal Terror Handwraps
+						},
+					},
+					{
+						["criteriaID"] = 18,	-- Terror Spinner [Criteria]
+						["qg"] = 32475,			-- Terror Spinner [NPC]
+						["groups"] = {
+							i(44685),	-- Calcified Web Spaulders
+						},
+					},
+					{
+						["criteriaID"] = 16,	-- Zul'drak Sentinel [Criteria]
+						["qg"] = 32447,			-- Zul'drak Sentinel [NPC]
+						["groups"] = {
+							i(44677),	-- Eternal Observer's Legplates
+						},
+					},
+				}),
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -445,17 +468,13 @@ _.Zones =
 						i(39826),
 					}),
 				}),	
-				n(-16, { 	-- Rares	
-					n(32447, { -- Zul'drak Sentinel
-						i(44677),
-					}), 
-					n(32471, { -- Griegen
-						i(44686),
-					}), 
-					n(32475, { -- Terror Spinner
-						i(44685),
-					}), 
-	--				n(33776, { -- Gondria -- Drops Ring			}),
+				n(-16, { 	-- Rares
+					n(33776, { -- Gondria
+						["description"] = "This is a very sought after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
+						["groups"] = {
+							i(46324),	-- Gondria's Spectral Claw
+						},
+					}),
 				}),
 			},
 			["lvl"] = 64,	
