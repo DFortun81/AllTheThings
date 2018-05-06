@@ -5,7 +5,219 @@ _.Zones =
 {
 	m(485, { 	-- Northrend
 		m(493, { 	-- Sholazar Basin
-			["groups"] = {			
+			["groups"] = {
+				ach(952),	-- Mercenary of Sholazar
+				faction(1104, {	-- Frenzyheart Tribe
+					["achievementID"] = 950,	-- Frenzyheart Tribe
+					["groups"] = {
+						n(31911, {	-- Tanak <Frenzyheart Quartermaster>
+							i(44717, {	-- Disgusting Jar
+								i(44718, {	-- Ripe Disgusting Jar
+									i(44719),	-- Frenzyheart Brew
+								}),
+							}),
+							i(41723),	-- Design: Jagged Forest Emerald
+							i(41561),	-- Design: Reckless Huge Citrine
+							i(44116),	-- Muddied Crimson Gloves
+							i(44120),	-- Giant-Sized Gauntlets
+							i(44121),	-- Sparkly Shiny Gloves
+							i(44117),	-- Azure Strappy Pants
+							i(44123),	-- Discarded Titanium Legplates
+							i(44122),	-- Scavenged Feathery Leggings
+							i(44073),	-- Frenzyheart Insignia of Fury
+						}),
+						{
+							["questID"] = 12582,	-- Frenzyheart Champion
+							["qg"] = 28668,			-- Quest Giver: Zepik the Gorloc Hunter
+							["description"] = "In the battle with Artruis in the quest A Hero's Burden Jaloot must survive if you wish to be allied with the Frenyheart. Thus kill Jaloot. If you wish to be allied with Oracles then kill Zepik in the fight and leave Jaloot alive.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracle\n\nNOTE: You can repeat this quest as often as you like to switch from one faction to the other.",
+							["isDaily"] = true
+						},
+						{
+							["questID"] = 12692,	-- Return of the Lich Hunter
+							["qg"] = 28668,			-- Quest Giver: Zepik the Gorloc Hunter
+							["sourceQuest"] = 12582,	-- Source Quest: Frenzyheart Champion
+							["isDaily"] = true
+						},
+						ach(961, {	-- Honorary Frenzyheart
+							{
+								["questID"] = 12702,	-- Chicken Party! [Quest]
+								["criteriaID"] = 1,		-- Chicken Party! [Criteria]
+								["qg"] = 28138, 		-- Quest Giver: Elder Harkek
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12703,	-- Kartak's Rampage [Quest]
+								["criteriaID"] = 2,		-- Kartak's Rampage [Criteria]
+								["qg"] = 29146, 		-- Quest Giver: Vekgar
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12759,	-- Tools of War [Quest]
+								["criteriaID"] = 3,		-- Tools of War [Criteria]
+								["qg"] = 29146, 		-- Quest Giver: Vekgar
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12760,	-- Secret Strength of the Frenzyheart [Quest]
+								["criteriaID"] = 4,		-- Secret Strength of the Frenzyheart [Criteria]
+								["qg"] = 29146, 		-- Quest Giver: Vekgar
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12732,	-- The Heartblood's Strength [Quest]
+								["criteriaID"] = 5,		-- The Heartblood's Strength [Criteria]
+								["qg"] = 29043, 		-- Quest Giver: Rejek
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12741,	-- Strength of the Tempest [Quest]
+								["criteriaID"] = 6,		-- Strength of the Tempest [Criteria]
+								["qg"] = 29043, 		-- Quest Giver: Rejek
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12734,	-- Rejek: First Blood [Quest]
+								["criteriaID"] = 7,		-- Rejek: First Blood [Criteria]
+								["qg"] = 29043, 		-- Quest Giver: Rejek
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12758,	-- A Hero's Headgear [Quest]
+								["criteriaID"] = 8,		-- A Hero's Headgear [Criteria]
+								["qg"] = 29043, 		-- Quest Giver: Rejek
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+							},
+						}),
+					},
+				}),
+				faction(1105, {	-- The Oracles
+					["achievementID"] = 951,	-- The Oracles
+					["groups"] = {
+						n(31910, {	-- Geen <Oracles Quartermaster>
+							i(39878, {	-- Mysterious Egg
+								i(39883, {	-- Cracked Egg
+									i(44707),	-- Reins of the Green Proto-Drake Mount
+									i(39898),	-- Cobra Hatchling Pet
+									i(44721),	-- Proto-Drake Whelp Pet
+									i(39896),	-- Tickbird Hatchling Pet
+									i(39899),	-- White Tickbird Hatchling Pet
+								}),
+							}),
+							i(41724),	-- Design: Misty Forest Emerald
+							i(41567),	-- Design: Nimble Dark Jade
+							i(44108),	-- Shinygem Rod
+							i(44110),	-- Sharkjaw Cap
+							i(44109),	-- Toothslice Helm
+							i(44112),	-- Glimmershell Shoulder Protectors
+							i(44111),	-- Gold Star Spaulders
+							i(44104),	-- Fishy Cinch
+							i(44106),	-- Glitterscale Wrap
+							i(44074),	-- Oracle Talisman of Ablution
+						}),
+						{
+							["questID"] = 12689,	-- Hand of the Oracles
+							["qg"] = 28667,			-- Quest Giver: Jaloot
+							["description"] = "In the battle with Artruis in the quest A Hero's Burden Jaloot must survive if you wish to be allied with the Oracle. Thus kill Zepik. If you wish to be allied with Frenyheart then kill Jaloot in the fight and leave Zepik alive.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracle\n\nNOTE: You can repeat this quest as often as you like to switch from one faction to the other.",
+							["isDaily"] = true
+						},
+						{
+							["questID"] = 12695,	-- Return of the Friendly Dryskin
+							["qg"] = 28667,			-- Quest Giver: Jaloot
+							["sourceQuest"] = 12689,	-- Source Quest: Hand of the Oracles
+							["isDaily"] = true
+						},
+						ach(962, {	-- Savior of the Oracles
+							{
+								["questID"] = 12704,	-- Appeasing the Great Rain Stone [Quest]
+								["criteriaID"] = 1,		-- Appeasing the Great Rain Stone [Criteria]
+								["qg"] = 28027, 		-- Quest Giver: High-Oracle Soo-say
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12705,	-- Will of the Titans [Quest]
+								["criteriaID"] = 2,		-- Will of the Titans [Criteria]
+								["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12761,	-- Mastery of the Crystals [Quest]
+								["criteriaID"] = 3,		-- Mastery of the Crystals [Criteria]
+								["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12762,	-- Power of the Great Ones [Quest]
+								["criteriaID"] = 4,		-- Power of the Great Ones [Criteria]
+								["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12736,	-- Song of Reflection [Quest]
+								["criteriaID"] = 5,		-- Song of Reflection [Criteria]
+								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12726,	-- Song of Wind and Water [Quest]
+								["criteriaID"] = 6,		-- Song of Wind and Water [Criteria]
+								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12735,	-- A Cleansing Song [Quest]
+								["criteriaID"] = 7,		-- A Cleansing Song [Criteria]
+								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+							},
+							{
+								["questID"] = 12737,	-- Song of Fecundity [Quest]
+								["criteriaID"] = 8,		-- Song of Fecundity [Criteria]
+								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+							},
+						}),
+					},
+				}),
+				ach(2257, {	-- Frostbitten
+					{
+						["criteriaID"] = 19,	-- Aotona [Criteria]
+						["qg"] = 32481,			-- Aotona [NPC]
+						["groups"] = {
+							i(44691),	-- Aotona's Collar
+						},
+					},
+					{
+						["criteriaID"] = 20,	-- King Krush [Criteria]
+						["qg"] = 32485,			-- King Krush [NPC]
+						["groups"] = {
+							i(44683),	-- King's Eyesocket
+						},
+					},
+					{
+						["criteriaID"] = 1,	-- Loque'nahak [Criteria]
+						["qg"] = 32517,		-- Loque'nahak <Mate of Har'koa> [NPC]
+						["groups"] = {
+							i(44688),	-- Loque'Nahak's Severed Fang [Neck]
+							i(44687),	-- Loque'Nahak's Pelt
+						},
+					},
+				}),
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -118,9 +330,7 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					q(12735),	-- A Cleansing Song
 					q(12581),	-- A Hero's Burden
-					q(12758),	-- A Hero's Headgear
 					q(12607),	-- A Mammoth Undertaking
 					q(12536),	-- A Rough Ride
 					q(12804),	-- A Steak Fit for a Hunter
@@ -129,12 +339,10 @@ _.Zones =
 					q(12699),	-- An Embarrassing Incident
 					q(12561),	-- An Issue of Trust
 					q(12543),	-- An Offering for Soo-rahm
-					q(12704),	-- Appeasing the Great Rain Stone
 					q(12574),	-- Back So Soon?
 					q(12797),	-- Back Through the Waygate
 					q(12683),	-- Burning to Help
 					q(12950),	-- Candy Bucket
-					q(12702),	-- Chicken Party!
 					q(12569),	-- Crocolisk Mastery: The Ambush
 					q(12560),	-- Crocolisk Mastery: The Plan
 					q(12551),	-- Crocolisk Mastery: The Trial
@@ -171,14 +379,12 @@ _.Zones =
 					qa( 11964),	-- Incense for the Summer Scorchlings
 					q(12624),	-- It Could Be Anywhere!
 					q(12540),	-- Just Following Orders
-					q(12703),	-- Kartak's Rampage
 					q(12589),	-- Kick, What Kick?
 					q(12651),	-- Lakeside Landing
 					q(12579),	-- Lifeblood of the Mosswalker Shrine
 					q(12537),	-- Lightning Definitely Strikes Twice
 					q(12571),	-- Make the Bad Snake Go Away
 					q(12573),	-- Making Peace
-					q(12761),	-- Mastery of the Crystals
 					q(12535),	-- Mischief in the Making
 					q(12658),	-- My Pet Roc
 					q(12522),	-- Need an Engine, Take an Engine
@@ -186,13 +392,11 @@ _.Zones =
 					qa( 11882),	-- Playing with Fire
 					qh( 11915),	-- Playing with Fire
 					q(12614),	-- Post-partum Aggression
-					q(12762),	-- Power of the Great Ones
 					q(12613),	-- Powering the Waygate - The Makers' Overlook
 					q(12559),	-- Powering the Waygate - The Makers' Perch
 					q(12681),	-- Reagent Agent
 					q(12546),	-- Reclamation
 					q(12671),	-- Reconnaissance Flight
-					q(12734),	-- Rejek: First Blood
 					q(12695),	-- Return of the Friendly Dryskin
 					q(12692),	-- Return of the Lich Hunter
 					q(12611),	-- Returned Sevenfold
@@ -201,24 +405,18 @@ _.Zones =
 					q(12520),	-- Rhino Mastery: The Test
 					q(12805),	-- Salvaging Life's Strength
 					q(13018),	-- Sandrene the Elder
-					q(12760),	-- Secret Strength of the Frenzyheart
 					q(12605),	-- Securing the Bait
 					q(12603),	-- Sharpening Your Talons
 					q(39209),	-- Sholazar Basin
 					q(39212),	-- Sholazar Basin
 					q(12634),	-- Some Make Lemonade, Some Make Liquor
-					q(12737),	-- Song of Fecundity
-					q(12736),	-- Song of Reflection
-					q(12726),	-- Song of Wind and Water
 					q(12644),	-- Still At It
-					q(12741),	-- Strength of the Tempest
 					q(12578),	-- The Angry Gorloc
 					q(12529),	-- The Ape Hunter's Slave
 					q(12544),	-- The Bones of Nozronn
 					q(12548),	-- The Etymidian
 					q(12612),	-- The Fallen Pillar
-					q(12592),	-- The Great Hunter's Challenge					
-					q(12732),	-- The Heartblood's Strength
+					q(12592),	-- The Great Hunter's Challenge
 					q(12620),	-- The Lifewarden's Wrath
 					q(12575),	-- The Lost Mistwhisper Treasure
 					q(12538),	-- The Mist Isn't Listening
@@ -228,11 +426,9 @@ _.Zones =
 					q(12645),	-- The Taste Test
 					q(12531),	-- The Underground Menace
 					q(12533),	-- The Wasp Hunter's Apprentice
-					q(12759),	-- Tools of War
 					q(12530),	-- Tormenting the Softknuckles
 					q(13024),	-- Wanikaya the Elder
 					q(12660),	-- Weapons of Destruction
-					q(12705),	-- Will of the Titans
 					--]]
 					q(12489, { -- Welcome to Sholazar Basin
 						["groups"] = {
@@ -365,52 +561,15 @@ _.Zones =
 						i(39450),
 					}),
 				}),	
-				n(-16, { 	-- Rares	
-					n(32481, { -- Aotona
-						i(44691),
-					}), 
-	--				n(32485, { -- King Krush -- Drops Ring			}), 
-					n(32517, { -- Loque'nahak
-						i(44687),
-					}),
-				}),
 				n(-2, {		-- Vendors
-					n(31910, {	-- Geen <Oracles Quartermaster>
-						i(44104),	-- Fishy Cinch
-						i(44106),	-- Glitterscale Wrap
-						i(44108),	-- Shinygem Rod
-						i(44109),	-- Toothslice Helm
-						i(44110),	-- Sharkjaw Cap
-						i(44111),	-- Gold Star Spaulders
-						i(44112),	-- Glimmershell Shoulder Protectors
-						i(39878, {	-- Mysterious Egg
-							i(39883, {	-- Cracked Egg
-								i(39898),	-- Cobra Hatchling Pet
-								i(39896),	-- Tickbird Hatchling Pet
-								i(39899),	-- White Tickbird Hatchling Pet
-								i(44721),	-- Proto-Drake Whelp Pet
-								i(44707),	-- Reins of the Green Proto-Drake Mount
-							}),
-						}),
-					}),
 					n(28040, {	-- Mardan Thunderhoof <Gunsmith>
 						["groups"] = {
 							i(136855),	-- Hunter's Call
+							i(136780),	-- Pet Training Manual: Play Dead
+							i(136781),	-- Pet Training Manual: Fetch
+							i(136783),	-- The Art of Concealment
 						},
 						["classes"] = {3},
-					}),
-					n(31911, {	-- Tanak <Frenzyheart Quartermaster>
-						i(44116),	-- Muddied Crimson Gloves
-						i(44120),	-- Giant-Sized Gauntlets
-						i(44121),	-- Sparkly Shiny Gloves
-						i(44122),	-- Scavenged Feathery Leggings
-						i(44123),	-- Discarded Titanium Legplates
-						i(44117),	-- Azure Strappy Pants
-						i(44717, {	-- Disgusting Jr
-							i(44718, {	-- Ripe Disgusting Jar
-								i(44719),	-- Frenzyheart Brew
-							}),
-						}),
 					}),
 				}),
 			},
