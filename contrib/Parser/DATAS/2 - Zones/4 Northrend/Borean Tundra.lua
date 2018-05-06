@@ -6,6 +6,80 @@ _.Zones =
 	m(485, { 	-- Northrend
 		m(486, { 	-- Borean Tundra
 			["groups"] = {
+				a(faction(1037, {	-- Alliance Vanguard
+					["achievementID"] = 1012,	-- The Winds of the North
+					["groups"] = {
+						a(n(32564, { -- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
+							i(44937),	-- Plans: Titanium Plating
+							i(44503),	-- Schematic: Mekgineer's Chopper
+							i(38464),	-- Gnomish Magician's Quill
+							i(38455),	-- Hammer of hte Alliance Vanguard
+							i(38457),	-- Sawed-Off Hand Cannon
+							i(38465),	-- Vanguard Soldier's Dagger
+							i(38463),	-- Lordaeron's Resolve
+							i(38459),	-- Orb of the EAstern Kingdons
+							i(38453),	-- Shield of the Lion-Hearted
+						})),
+						a(faction(1050, {	-- Valiance Expedition
+							["creatureID"] = 25250,	-- General Arlos
+							["groups"] = {
+								a({
+									["questID"] = 13088,	-- Northern Cooking
+									["qg"] = 26989,		-- Quest Giver: Rollick MacKreel <Cooking Trainer>
+									["groups"] = {
+										recipe(57421),	-- Northern Stew
+									},
+								}),
+								a(n(35131, { -- Durgan Thunderbeak <Gryphon Keeper>
+									i(25473), 	-- Swift Blue Gryphon Mount
+									i(25527),	-- Swift Red Gryphon Mount
+									i(25528),	-- Swift Green Gryphon Mount
+									i(25529),	-- Swift Purple Gryphon Mount
+									i(25470),	-- GoldenGryphon Mount
+									i(25471),	-- Ebon Gryphon Mount
+									i(25472),	-- Snowy Gryphon Mount
+								})),
+							},
+						})),
+					},
+				})),
+				h(faction(1052, {	-- Horde Expedition
+					["achievementID"] = 1011,	-- The Winds of the North
+					["groups"] = {
+						nh(32565, { -- Gara Skullcrush <Horde Expedition Quartermaster>
+							i(44938),	-- Plans: Titanium Plating
+							i(44502),	-- Schematic: Mechano-Hog
+							i(38460),	-- Chaged Wand of the Cleft
+							i(38456),	-- Sin'dorei Recurve Bow
+							i(38454),	-- Warsong Punisher
+							i(38461),	-- Warsong Shanker
+							i(38458),	-- Darkspear Orb
+							i(38452),	-- Bulwark of the Warchief
+							i(38462),	-- Warsong Stormshield
+						}),
+						h(faction(1085, {	-- Warsong Offensive
+							["creatureID"] = 25237,	-- Garrosh Hellscream <Overlord of the Warsong Offensive>
+							["groups"] = {
+								h({
+									["questID"] = 13090,	-- Northern Cooking
+									["qg"] = 26972,		-- Quest Giver: Orn Tenderhoof <Cooking Trainer>
+									["groups"] = {
+										recipe(57421),	-- Northern Stew
+									},
+								}),
+								h(n(35132, { -- Tohfo Skyhoof <Wind Rider Keeper>
+									i(25477),	-- Swift Red Wind Rider
+									i(25531),	-- Swift Green Wind Rider
+									i(25532),	-- Swift Blue Wind Rider
+									i(25533),	-- Swift Purple Wind Rider
+									i(25474),	-- Tawny Wind Rider
+									i(25475),	-- Blue Wind Rider
+									i(25476),	-- Green Wind Rider
+								})),
+							},
+						})),
+					},
+				})),
 				faction(1073, {	-- The Kalu'ak
 					["achievementID"] = 949,	-- Tuskarrmageddon
 					["groups"] = {
@@ -13,6 +87,29 @@ _.Zones =
 							["questID"] = 11945,	-- Preparing for the Worst
 							["qg"] = 26213,		-- Quest Giver: Utaik
 							["isDaily"] = true,
+						},
+					},
+				}),
+				ach(2257, {	-- Frostbitten
+					{
+						["criteriaID"] = 5,	-- Fumblub Gearwind [Criteria]
+						["qg"] = 32358,		-- Fumblub Gearwind [NPC]
+						["groups"] = {
+							i(44666),	-- Fumblub's Seat Cushion
+						},
+					},
+					{
+						["criteriaID"] = 6,	-- Icehorn [Criteria]
+						["qg"] = 32361,		-- Icehorn [NPC]
+						["groups"] = {
+							i(44667),	-- Mammoth-Hair Crown
+						},
+					},
+					{
+						["criteriaID"] = 4,	-- Old Crystalbark [Criteria]
+						["qg"] = 32357,		-- Old Crystalbark [NPC]
+						["groups"] = {
+							i(44649),	-- Crystalbark's Toenail
 						},
 					},
 				}),
@@ -140,16 +237,12 @@ _.Zones =
 --]]				
 				}),								
 				n(-25, { 	-- Pet Battle
-					i(22780, { -- White Murloc Egg
-						["groups"] = {
-						},
-						["description"] = "This is contained in the White Murloc Egg located at 56, 88 and is located at the back of the room, not the table.",
-					}),
 					p(641), 	-- Arctic Hare
 					p(639), 	-- Borean Marmot
 					p(1165), 	-- Nexus Whelpling
 					p(530), 	-- Oily Slimeling
 					p(388), 	-- Shore Crab
+					desc(i(22780), "This is contained in the White Murloc Egg located at 56, 88 and is located at the back of the room, not the table."),	-- White Murloc Egg (Terky)
 					p(536), 	-- Tundra Penguin
 					p(1238), 	-- Unborn Val'kyr
 				}),
@@ -324,12 +417,6 @@ _.Zones =
 					qh( 11709),	-- Nork Bloodfrenzy's Charge
 					q(13016),	-- Northal the Elder
 ]]--
-					qh( 13090, {-- Northern Cooking
-						recipe(57421),	-- Northern Stew
-					}),
-					qa( 13088, {-- Northern Cooking
-						recipe(57421),	-- Northern Stew
-					}),
 --[[
 					q(11871),	-- Not On Our Watch
 					q(11949),	-- Not Without a Fight!
@@ -881,17 +968,6 @@ _.Zones =
 						i(37424),
 						i(37505),
 					}),
-				}),	
-				n(-16, { 	-- Rares	
-					n(32357, { -- Old Crystalbark
-						i(44649),
-					}), 
-					n(32358, { -- Fumblub Gearwind
-						i(44666),
-					}), 
-					n(32361, { -- Icehorn
-						i(44667),
-					}), 
 				}),
 				n(-2, { 	-- Vendors
 					n(25206, { -- Ahlurglgr <Clam Vendor>
@@ -901,54 +977,12 @@ _.Zones =
 							i(37463),	-- Winterfin Patch of Honor
 						}),
 					}),
-					a(n(35131, { -- Durgan Thunderbeak <Gryphon Keeper>
-						i(25473), 	-- Swift Blue Gryphon Mount
-						i(25527),	-- Swift Red Gryphon Mount
-						i(25528),	-- Swift Green Gryphon Mount
-						i(25529),	-- Swift Purple Gryphon Mount
-						i(25470),	-- GoldenGryphon Mount
-						i(25471),	-- Ebon Gryphon Mount
-						i(25472),	-- Snowy Gryphon Mount
-					})),
-					h(n(32565, { -- Gara Skullcrush <Horde Expedition Quartermaster>
-						i(38452),	-- Bulwark of the Warchief
-						i(38454),	-- Warsong Punisher
-						i(38456),	-- Sin'dorei Recurve Bow
-						i(38458),	-- Darkspear Orb
-						i(38460),	-- Chaged Wand of the Cleft
-						i(38461),	-- Warsong Shanker
-						i(38462),	-- Warsong Stormshield
-						i(44502, {	-- Schematic: Mechano-Hog
-							i(41508),	-- Mechano-Hog Mount
-						}),
-					})),
-					n(5758, {	-- Librarian Erickson <Enchanting Supplies>
+					n(27147, {	-- Librarian Erickson <Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
-					a(n(32564, { -- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
-						i(38453),	-- Shield of the Lion-Hearted
-						i(38455),	-- Hammer of hte Alliance Vanguard
-						i(38457),	-- Sawed-Off Hand Cannon
-						i(38459),	-- Orb of the EAstern Kingdons
-						i(38463),	-- Lordaeron's Resolve
-						i(38464),	-- Gnomish Magician's Quill
-						i(38465),	-- Vanguard Soldier's Dagger
-						i(44503, {	-- Schematic: Mekgineer's Chopper
-							i(44413),	-- Mekgineer's Chopper Mount
-						}),
-					})),
-					h(n(35132, { -- Tohfo Skyhoof <Wind Rider Keeper>
-						i(25477),	-- Swift Red Wind Rider
-						i(25531),	-- Swift Green Wind Rider
-						i(25532),	-- Swift Blue Wind Rider
-						i(25533),	-- Swift Purple Wind Rider
-						i(25474),	-- Tawny Wind Rider
-						i(25475),	-- Blue Wind Rider
-						i(25476),	-- Green Wind Rider
-					})),
 				}),
 			},
 			["lvl"] = 58,	
