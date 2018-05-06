@@ -976,6 +976,15 @@ _.Zones =
 					n(32409, { -- Crazed Indu'le Survivor
 						i(44672),
 					}), 
+					n(26343, {	-- Indu'le Fisherman
+						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
+					}),
+					n(26336, {	-- Indu'le Mystic
+						dr(0.7, i(50406)),	-- Formula: Enchant Gloves - Angler
+					}),
+					n(26344, {	-- Indu'le Warrior
+						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
+					}),
 					n(32417, { -- Scarlet Highlord Daion
 						i(44671),
 					}),
@@ -1002,17 +1011,6 @@ _.Zones =
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					}),
-				}),
-				n(0, {	-- Zone Drop
-					n(26343, {	-- Indu'le Fisherman
-						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
-					}),
-					n(26336, {	-- Indu'le Mystic
-						dr(0.7, i(50406)),	-- Formula: Enchant Gloves - Angler
-					}),
-					n(26344, {	-- Indu'le Warrior
-						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
 					}),
 				}),
 			},
