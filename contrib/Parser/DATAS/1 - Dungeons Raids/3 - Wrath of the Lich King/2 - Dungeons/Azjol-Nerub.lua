@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(272, { 	-- Azjol-Nerub
 				["groups"] = {
-					n(-47, {     -- Lunar Festival
+					n(-47, {	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								q(13022, {	-- Nurgen the Elder			
@@ -42,25 +42,26 @@ _.Instances =
 						}),
 						q(29811),	-- The Gatewatcher's Talisman, No actual awards.
 					}),
-					d(1, {		-- Normal
+					d  (1, {	-- Normal
 						cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
-							i(35655),	-- Cobweb Machete
-							i(37216),	-- Facade Shield of Glyphs
+							i( 35655),	-- Cobweb Machete
+							i( 37216),	-- Facade Shield of Glyphs
 							i(157582),	-- Nerubian Mantle
-							i(37219),	-- Custodian's Chestpiece
-							i(37217),	-- Golden Limb Bands
-							i(35656),	-- Aura Focused Gauntlets
-							i(35657),	-- Exquisite Spider-Silk Footwraps
-							i(37218),	-- Stone-Worn Footwraps
+							i( 37219),	-- Custodian's Chestpiece
+							i( 37217),	-- Golden Limb Bands
+							i( 35656),	-- Aura Focused Gauntlets
+							i( 35657),	-- Exquisite Spider-Silk Footwraps
+							i( 37218),	-- Stone-Worn Footwraps
 						})),
 						cr(28921, e(586, {	-- Hadronox
-							i(35658),	-- Life-Staff of the Web Lair
-							i(35660),	-- Spinneret Epaulets
-							i(37222),	-- Egg Sac Robes
-							i(37230),	-- Grotto Mist Gloves
+							i( 35658),	-- Life-Staff of the Web Lair
+							i( 35660),	-- Spinneret Epaulets
+							i( 37222),	-- Egg Sac Robes
+							i( 37230),	-- Grotto Mist Gloves
 							i(157581),	-- Skittering Gauntlets
-							i(37221),	-- Hollowed Mandibles Legplates
-							i(35659),	-- Treads of Aspiring Heights
+							i( 37221),	-- Hollowed Mandibles Legplates
+							i( 35659),	-- Treads of Aspiring Heights
+							i( 37220),	-- Essence of Gossamer
 						})),
 						cr(29120, e(587, {	-- Anub'arak
 							i(37235),	-- Crypt Lord's Deft Blade
@@ -72,33 +73,36 @@ _.Instances =
 							i(35663),	-- Charmed Silken Cord
 							i(37242),	-- Sash of the Servant
 							i(35662),	-- Wing Cover Girdle
-						}))
+							i(37232),	-- Ring of the Traitor King
+							i(35661),	-- Signet of Arachnathid Command
+						})),
 					}),
-					d(2, {		-- Heroic
+					d(  2, {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
 							n(0, {		-- Zone Drop
 								i(37243),	-- Treasure Seeker's Belt
-								i(37625)	-- Web Winder Gloves
+								i(37625),	-- Web Winder Gloves
 							}),
 							cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
-								i(35655),	-- Cobweb Machete
-								i(37216),	-- Facade Shield of Glyphs
+								i( 35655),	-- Cobweb Machete
+								i( 37216),	-- Facade Shield of Glyphs
 								i(157582),	-- Nerubian Mantle
-								i(37219),	-- Custodian's Chestpiece
-								i(37217),	-- Golden Limb Bands
-								i(35656),	-- Aura Focused Gauntlets
-								i(35657),	-- Exquisite Spider-Silk Footwraps
-								i(37218),	-- Stone-Worn Footwraps
+								i( 37219),	-- Custodian's Chestpiece
+								i( 37217),	-- Golden Limb Bands
+								i( 35656),	-- Aura Focused Gauntlets
+								i( 35657),	-- Exquisite Spider-Silk Footwraps
+								i( 37218),	-- Stone-Worn Footwraps
 							})),
 							cr(28921, e(586, {	-- Hadronox
-								i(35658),	-- Life-Staff of the Web Lair
-								i(35660),	-- Spinneret Epaulets
-								i(37222),	-- Egg Sac Robes
-								i(37230),	-- Grotto Mist Gloves
+								i( 35658),	-- Life-Staff of the Web Lair
+								i( 35660),	-- Spinneret Epaulets
+								i( 37222),	-- Egg Sac Robes
+								i( 37230),	-- Grotto Mist Gloves
 								i(157581),	-- Skittering Gauntlets
-								i(37221),	-- Hollowed Mandibles Legplates
-								i(35659),	-- Treads of Aspiring Heights
+								i( 37221),	-- Hollowed Mandibles Legplates
+								i( 35659),	-- Treads of Aspiring Heights
+								i( 37220),	-- Essence of Gossamer
 							})),
 							cr(29120, e(587, {	-- Anub'arak
 								i(37235),	-- Crypt Lord's Deft Blade
@@ -110,9 +114,11 @@ _.Instances =
 								i(35663),	-- Charmed Silken Cord
 								i(37242),	-- Sash of the Servant
 								i(35662),	-- Wing Cover Girdle
-							}))
-						}
-					})
+								i(37232),	-- Ring of the Traitor King
+								i(35661),	-- Signet of Arachnathid Command
+							})),
+						},
+					}),
 				},
 				["lvl"] = 69,
 				["mapID"] = 533

@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(274, { 	-- Gundrak
 				["groups"] = {
-					n(-47, { -- Lunar Festival
+					n(-47, {	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								q(13065, {	-- Ohanzee the Elder			
@@ -27,7 +27,7 @@ _.Instances =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-17, { -- Quests
+					n(-17, {	-- Quests
 						q(29844, { -- For Posterity
 							["groups"] = {
 								i(43180), -- Lion's Head Ring
@@ -85,20 +85,20 @@ _.Instances =
 							["qg"] = 55737, -- Chronicler Bah'Kini
 						}),							
 					}),
-					d(1, { -- Normal
-						n(0, {		-- Zone Drop
+					d(  1, {	-- Normal
+						n(0, {	-- Zone Drop
 							i(35593),	-- Steel Bear Trap Bracers
-							i(35594)	-- Snowmelt Silken Cinch
+							i(35594),	-- Snowmelt Silken Cinch
 						}),
 						cr(29304, e(592, { 	-- Slad'ran
-							i(35583),	-- Witch Doctor's Wildstaff
-							i(37626),	-- Wand of Sseratus
-							i(37627),	-- Snake Den Spaulders
-							i(35584),	-- Embroidered Gown of Zul'drak
+							i( 35583),	-- Witch Doctor's Wildstaff
+							i( 37626),	-- Wand of Sseratus
+							i( 37627),	-- Snake Den Spaulders
+							i( 35584),	-- Embroidered Gown of Zul'drak
 							i(157578),	-- Belt of Vile Concoctions
-							i(37628),	-- Slad'ran Coiled Cord
-							i(35585),	-- Cannibal's Legguards
-							i(37629),	-- Slithering Slippers
+							i( 37628),	-- Slad'ran Coiled Cord
+							i( 35585),	-- Cannibal's Legguards
+							i( 37629),	-- Slithering Slippers
 						})),
 						cr(29307, e(593, {	-- Drakkari Colossus
 							i(35590),	-- Drakkari Hunting Bow
@@ -110,15 +110,17 @@ _.Instances =
 							i(37637),	-- Living Mojo Belt
 						})),
 						cr(29305, e(594, { 	-- Moorabi
-							i(37631),	-- Fist of the Deity
-							i(35587),	-- Frozen Scepter of Necromancy
-							i(37633),	-- Ground Tremor Helm
+							i( 37631),	-- Fist of the Deity
+							i( 35587),	-- Frozen Scepter of Necromancy
+							i( 37633),	-- Ground Tremor Helm
 							i(157584),	-- Drape of Moorabi
-							i(37630),	-- Shroud of Moorabi
-							i(35588),	-- Forlorn Breastplate of War
-							i(37632),	-- Mojo Frenzy Greaves
+							i( 37630),	-- Shroud of Moorabi
+							i( 35588),	-- Forlorn Breastplate of War
+							i( 37632),	-- Mojo Frenzy Greaves
+							i( 35589),	-- Arcane Focal Signet
 						})),
 						cr(29306, e(596, {	-- Gal'darah
+							i(43309),	-- Amulet of the Stampede
 							i(43305),	-- Shroud of Akali
 							i(37641),	-- Arcane Flame Altar-Garb
 							i(37639),	-- Grips of the Beast God
@@ -126,24 +128,27 @@ _.Instances =
 							i(37643),	-- Sash of Blood Removal
 							i(37644),	-- Gored Hide Legguards
 							i(37640),	-- Boots of Transformation
-						}))
+							i(43306),	-- Gal'darah's Signet
+							i(37642),	-- Hemorrhaging Circle
+							i(37638),	-- Offering of Sacrifice
+						})),
 					}),
-					d(2, { -- Heroic
+					d(  2, {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
-							n(0, {		-- Zone Drop
+							n(0, {	-- Zone Drop
 								i(37647),	-- Cloak of Bloodied Waters
-								i(37648)	-- Belt of Tasseled Lanterns
+								i(37648),	-- Belt of Tasseled Lanterns
 							}),
 							cr(29304, e(592, { 	-- Slad'ran
-								i(35583),	-- Witch Doctor's Wildstaff
-								i(37626),	-- Wand of Sseratus
-								i(37627),	-- Snake Den Spaulders
-								i(35584),	-- Embroidered Gown of Zul'drak
+								i( 35583),	-- Witch Doctor's Wildstaff
+								i( 37626),	-- Wand of Sseratus
+								i( 37627),	-- Snake Den Spaulders
+								i( 35584),	-- Embroidered Gown of Zul'drak
 								i(157578),	-- Belt of Vile Concoctions
-								i(37628),	-- Slad'ran Coiled Cord
-								i(35585),	-- Cannibal's Legguards
-								i(37629),	-- Slithering Slippers
+								i( 37628),	-- Slad'ran Coiled Cord
+								i( 35585),	-- Cannibal's Legguards
+								i( 37629),	-- Slithering Slippers
 							})),
 							cr(29307, e(593, {	-- Drakkari Colossus
 								i(35590),	-- Drakkari Hunting Bow
@@ -155,13 +160,14 @@ _.Instances =
 								i(37637),	-- Living Mojo Belt
 							})),
 							cr(29305, e(594, { 	-- Moorabi
-								i(37631),	-- Fist of the Deity
-								i(35587),	-- Frozen Scepter of Necromancy
-								i(37633),	-- Ground Tremor Helm
+								i( 37631),	-- Fist of the Deity
+								i( 35587),	-- Frozen Scepter of Necromancy
+								i( 37633),	-- Ground Tremor Helm
 								i(157584),	-- Drape of Moorabi
-								i(37630),	-- Shroud of Moorabi
-								i(35588),	-- Forlorn Breastplate of War
-								i(37632),	-- Mojo Frenzy Greaves
+								i( 37630),	-- Shroud of Moorabi
+								i( 35588),	-- Forlorn Breastplate of War
+								i( 37632),	-- Mojo Frenzy Greaves
+								i( 35589),	-- Arcane Focal Signet
 							})),
 							cr(29932, e(595, {	-- Eck the Ferocious
 								i(43311),	-- Helmet of the Shrine
@@ -170,6 +176,7 @@ _.Instances =
 								i(43312),	-- Gorloc Muddy Footwraps
 							})),
 							cr(29306, e(596, {	-- Gal'darah
+								i(43309),	-- Amulet of the Stampede
 								i(43305),	-- Shroud of Akali
 								i(37641),	-- Arcane Flame Altar-Garb
 								i(37639),	-- Grips of the Beast God
@@ -177,10 +184,13 @@ _.Instances =
 								i(37643),	-- Sash of Blood Removal
 								i(37644),	-- Gored Hide Legguards
 								i(37640),	-- Boots of Transformation
-							}))
-						}
+								i(43306),	-- Gal'darah's Signet
+								i(37642),	-- Hemorrhaging Circle
+								i(37638),	-- Offering of Sacrifice
+							})),
+						},
 					}),
-					d(24, { -- Timewalking
+					d( 24, {	-- Timewalking
 						["lvl"] = 70,
 						["groups"] = {
 							cr(29304, e(592, {	-- Slad'ran
@@ -206,10 +216,13 @@ _.Instances =
 								i(127543),	-- Fist of the Deity
 								i(127530),	-- Frozen Scepter of Necromancy
 								i(127545),	-- Ground Tremor Helm
+								i(127558),	-- Burning Skull Pendant
 								i(127542),	-- Shroud of Moorabi
 								i(127531),	-- Forlorn Breastplate of War
 								i(127560),	-- Belt of Tasseled Lanterns
 								i(127544),	-- Mojo Frenzy Greaves
+								i(127532),	-- Arcane Focal Signet
+								i(127554),	-- Hemorrhaging Circle
 							})),
 							cr(29932, e(595, {	-- Eck the Ferocious
 								i(127565),	-- Helmet of the Shrine
@@ -218,6 +231,7 @@ _.Instances =
 								i(127566),	-- Gorloc Muddy Footwraps
 							})),
 							cr(29306, e(596, {	-- Gal'darah
+								i(127563),	-- Amulet of the Stampede
 								i(127559),	-- Cloak of Bloodied Waters
 								i(127561),	-- Shroud of Akali
 								i(127553),	-- Arcane Flame Altar-Garb
@@ -227,9 +241,11 @@ _.Instances =
 								i(127555),	-- Sash of Blood Removal
 								i(127556),	-- Gored Hide Legguards
 								i(127552),	-- Boots of Transformation
-							}))
-						}
-					})
+								i(127562),	-- Gal'darah's Signet
+								i(127550),	-- Offering of Sacrifice
+							})),
+						},
+					}),
 				},
 				["lvl"] = 74,
 				["mapID"] = 530
