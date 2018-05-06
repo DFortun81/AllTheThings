@@ -5,7 +5,162 @@ _.Zones =
 {
 	m(485, { 	-- Northrend
 		m(495, { 	-- The Storm Peaks
-			["groups"] = {							
+			["groups"] = {
+				faction(1119, {	-- The Sons of Hodir
+					["creatureID"] = 30105,	-- King Jokkum
+					["groups"] = {
+						n(32540, {	-- Lillehoff <The Sons of Hodir Quartermaster>
+							ach(2083, {
+								i(43961),	-- Reins of the Grand Ice Mammoth Mount - Alliance
+								i(44086),	-- Reins of the Grand Ice Mammoth Mount - Horde
+							}),
+							ach(2082, {	-- Ice Mammoth
+								i(43958),	-- Reins of the Ice Mammoth Mount - Alliance
+								i(44080),	-- Reins of the Ice Mammoth Mount - Horde
+							}),
+							i(41720),	-- Design: Smooth Autumn's Glow
+							i(42184),	-- Pattern: Glacial Bag
+							i(44510),	-- Pattern: Mammoth Mining Bag
+							i(44193),	-- Broken Stalactite
+							i(44192),	-- Stalactite Chopper
+							i(44190),	-- Spaulders of Frozen Knives
+							i(44195),	-- Spaulders of the Giant Lords
+							i(44189),	-- Giant Ring Belt
+							i(44194),	-- Giant-Friend Kilt
+							{
+								["itemID"] = 44131,	-- Lesser Inscription of the Axe
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							},
+							{
+								["itemID"] = 44130,	-- Lesser Inscription of the Crag
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							},
+							{
+								["itemID"] = 44132,	-- Lesser Inscription of the Pinnacle
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							},
+							{
+								["itemID"] = 44129,	-- Lesser Inscription of the Storm
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							},
+							{
+								["itemID"] = 44133,	-- Greater Inscription of the Axe
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+								["b"] = 0,	-- Ignore BoA
+							},
+							{
+								["itemID"] = 50335,	-- Greater Inscription of the Axe
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+								["b"] = 0,	-- Ignore BoA
+							},
+							{
+								["itemID"] = 44134,	-- Greater Inscription of the Crag
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+								["b"] = 0,	-- Ignore BoA
+							},
+							{
+								["itemID"] = 50336,	-- Greater Inscription of the Crag
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+								["b"] = 0,	-- Ignore BoA
+							},
+							{
+								["itemID"] = 44136,	-- Greater Inscription of the Pinnacle
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+								["b"] = 0,	-- Ignore BoA
+							},
+							{
+								["itemID"] = 50337,	-- Greater Inscription of the Pinnacle
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+								["b"] = 0,	-- Ignore BoA
+							},
+							{
+								["itemID"] = 44135,	-- Greater Inscription of the Storm
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+								["b"] = 0,	-- Ignore BoA
+							},
+							{
+								["itemID"] = 50338,	-- Greater Inscription of the Storm
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+								["b"] = 0,	-- Ignore BoA
+							},
+						}),
+						{
+							["itemID"] = 44725,	-- Everfrost Chip
+							["questID"] = 13420,	-- Everfrost
+							["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
+						},
+						{
+							["questID"] = 13421,	-- Remember Everfrost!
+							["qg"] = 32594,	-- Quest Giver: Calder <Blacksmithing Supplies>
+							["sourceQuest"] = 13420,	-- Source Quest: Everfrost
+							["isDaily"]	= true,
+						},
+						{
+							["questID"] = 12977,	-- Blowing Hodir's Horn
+							["description"] = "Starts at Hodir's Horn.",
+							["icon"] = "Interface\\Icons\\INV_Misc_Horn_03",
+							["isDaily"]	= true,
+						},
+						{
+							["questID"] = 13046,	-- Feeding Arngrim
+							["description"] = "Starts at Arngrim the Insatiable. (frozen giant sitting on throne)",
+							["icon"] = "Interface\\Icons\\Achievement_Dungeon_FrozenThrone",
+							["isDaily"]	= true,
+						},
+						{
+							["questID"] = 12981,	-- Hot and Cold
+							["description"] = "Starts at Fjorn's Anvil.",
+							["icon"] = "Interface\\Icons\\INV_BLACKSMITH_ANVIL",
+							["isDaily"]	= true,
+						},
+						{
+							["questID"] = 13006,	-- Polishing the Helm
+							["description"] = "Starts at Hodir's Helm.",
+							["icon"] = "Interface\\Icons\\INV_Helmet_110",
+							["isDaily"]	= true,
+						},
+						{
+							["questID"] = 12994,	-- Spy Hunter
+							["qg"] = 30294,		-- Quest Giver: Frostworg Denmother
+							["isDaily"]	= true,
+						},
+						{
+							["questID"] = 13003,	-- Thrusting Hodir's Spear
+							["description"] = "Starts at Hodir's Spear.",
+							["icon"] = "Interface\\Icons\\INV_Spear_04",
+							["isDaily"]	= true,
+						},
+					},
+				}),
+				ach(2257, {	-- Frostbitten
+					{
+						["criteriaID"] = 22,	-- Dirkee [Criteria]
+						["qg"] = 32500,			-- Dirkee [NPC]
+						["groups"] = {
+							i(44708),	-- Dirkee's Superstructure
+							i(44681),	-- Titanium Brain-Gear
+						},
+					},
+					{
+						["criteriaID"] = 21,	-- Vyragosa [Criteria]
+						["qg"] = 32630,			-- Vyragosa [NPC]
+						["groups"] = {
+							i(44732),	-- Azure Dragonleather Helm
+						},
+					},
+				}),
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -170,7 +325,6 @@ _.Zones =
 					q(13424),	-- Back to the Pit
 					q(12967),	-- Battling the Elements
 					q(12832),	-- Bitter Departure
-					q(12977),	-- Blowing Hodir's Horn
 					qh( 11446),	-- Brewfest!
 					qa( 13448),	-- Candy Bucket
 					qh( 13471),	-- Candy Bucket
@@ -203,13 +357,11 @@ _.Zones =
 					qh( 13038),	-- Distortions in Time
 					qh( 13000),	-- Emergency Measures
 					q(12844),	-- Equipment Recovery
-					q(13420),	-- Everfrost
 					q(12907),	-- Examples to be Made
 					q(12836),	-- Expression of Gratitude
 					q(12978),	-- Facing the Storm
 					q(13015),	-- Fargal the Elder
 					qa( 12986),	-- Fate of the Titans
-					q(13046),	-- Feeding Arngrim
 					qa( 12874),	-- Fervor of the Frostborn
 					q(12931),	-- Fighting Back
 					q(12985),	-- Forging a Head
@@ -223,7 +375,6 @@ _.Zones =
 					q(13559),	-- Hodir's Tribute
 					qh( 13498),	-- Honor the Flame
 					qa( 13490),	-- Honor the Flame
-					q(12981),	-- Hot and Cold
 					q(12890),	-- If Size Mattered...
 					q(12975),	-- In Memoriam
 					q(12997),	-- Into the Pit
@@ -261,14 +412,12 @@ _.Zones =
 					qa( 14022),	-- Pilgrim's Bounty
 					qh( 14036),	-- Pilgrim's Bounty
 					qa( 11882),	-- Playing with Fire
-					q(13006),	-- Polishing the Helm
 					q(13061),	-- Prepare for Glory
 					qa( 12869),	-- Pushed Too Far
 					q(13001),	-- Raising Hodir's Spear
 					q(12930),	-- Rare Earth
 					q(12827),	-- Reclaimed Rations
 					q(12937),	-- Relief for the Fallen
-					q(13421),	-- Remember Everfrost!
 					q(12888),	-- SCRAP-E
 					q(13064),	-- Sibling Rivalry
 					qa( 12868),	-- Sirana Iceshriek
@@ -280,7 +429,6 @@ _.Zones =
 					qh( 12917),	-- Speaking with the Wind's Voice
 					qa( 13484),	-- Spring Collectors
 					qh( 13483),	-- Spring Gatherers
-					q(12994),	-- Spy Hunter
 					qa( 12866),	-- Stemming the Aggressors
 					q(13020),	-- Stonebeard the Elder
 					q(29863),	-- Stormherald Eljrrin
@@ -324,7 +472,6 @@ _.Zones =
 					qh( 13034),	-- The Witness and the Hero
 					qh( 13056),	-- There's Always Time for Revenge
 					q(12843),	-- They Took Our Men!
-					q(13003),	-- Thrusting Hodir's Spear
 					qa( 12876),	-- Unwelcome Guests
 					q(12984),	-- Valduran the Stormborn
 					q(12953),	-- Valkyrion Must Burn
@@ -517,32 +664,22 @@ _.Zones =
 					}),
 				}),	
 				n(-16, { 	-- Rares	
-					n(32491, { -- Time-Lost Proto-Drake
-						i(44168), -- Mount
-					}), 
-					n(32500, { -- Dirkee
-						i(44708),
-					}), 
-					n(32630, { -- Vyragosa
-						i(44732),
-					}), 
 					n(35189, { -- Skoll
-						i(49227),
+						["description"] = "In Norse mythology, the aspects of the sun and moon are pursued through the sky by two wolves. Skoll is the wolf that pursues the sun and, at the onset of Ragnarok, will finally catch and devour it.\n\nSkoll's brother, Hati, will do the same to the moon.\n\nThis is a very much sought after Hunter Pet, so instead of killing this rare for the BoE, buy the BoE off the AH.",
+						["groups"] = {
+							i(49227),	-- Skoll's Fang
+						},
+					}),
+					n(32491, { -- Time-Lost Proto-Drake
+						["description"] = "They call it a time-lost proto drake because you've lost so much time looking for it.\n\nSpawn spot coordinates:\n   31, 69 - Frozen Lake\n   51, 70 - Brunn Village\n   35, 76 - Waterfall\n   52, 34 - Ulduar Ravine",
+						["groups"] = {
+							i(44168), 	-- Reins of the Time-Lost Proto-Drake
+							i(44682),	-- Time-Forward Talisman
+						},
 					}),
 				}),
 				n(-2, {		-- Vendors
-					n(32540, {	-- Lillehoff <The Sons of Hodir Quartermaster>
-						i(44192),	-- Stalactite Chopper
-						i(44193),	-- Broken Stalactite
-						i(44194),	-- Giant-Friend Kilt
-						i(44195),	-- Spaulders of the Giant Lords
-						i(44189),	-- Giant Ring Belt
-						i(44190),	-- Spaulders of Frozen Knives
-						i(43958),	-- Reins of the Ice Mammoth Mount - Alliance
-						i(43961),	-- Reins of the Grand Ice Mammoth Mount - Alliance
-						i(44080),	-- Reins of the Ice Mammoth Mount - Horde
-						i(44086),	-- Reins of the Grand Ice Mammoth Mount - Horde
-					}),
+					
 					nh(30472, {	-- Olut Alegut
 						i(43499),	-- Iron Boot Flask
 					}),
