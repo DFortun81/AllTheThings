@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(485, { 	-- Northrend
 		m(486, { 	-- Borean Tundra
-			["groups"] = {						
+			["groups"] = {
+				faction(1073, {	-- The Kalu'ak
+					["achievementID"] = 949,	-- Tuskarrmageddon
+					["groups"] = {
+						{
+							["questID"] = 11945,	-- Preparing for the Worst
+							["qg"] = 26213,		-- Quest Giver: Utaik
+							["isDaily"] = true,
+						},
+					},
+				}),
 				n(-3, { 	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
