@@ -133,6 +133,29 @@ _.Zones =
 				}),
 				-- The Taunka 1064
 				-- The Hand of Vengeance 1067
+				ach(2257, {	-- Frostbitten
+					{
+						["criteriaID"] = 11,	-- Crazed Indu'le Survivor [Criteria]
+						["qg"] = 32409,			-- Crazed Indu'le Survivor [NPC]
+						["groups"] = {
+							i(44672),	-- Seal-Fur Spaulders
+						},
+					},
+					{
+						["criteriaID"] = 12,	-- Scarlet Highlord Daion [Criteria]
+						["qg"] = 32417,			-- Scarlet Highlord Daion [NPC]
+						["groups"] = {
+							i(44671),	-- Highlord's Padded Legguards
+						},
+					},
+					{
+						["criteriaID"] = 10,	-- Tukemuth [Criteria]
+						["qg"] = 32400,			-- Tukemuth [NPC]
+						["groups"] = {
+							i(44673),	-- Mammoth-Riding Boots
+						},
+					},
+				}),
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -972,26 +995,6 @@ _.Zones =
 						i(38131),
 					}),
 				}),	
-				n(-16, { 	-- Rares
-					n(32409, { -- Crazed Indu'le Survivor
-						i(44672),
-					}), 
-					n(26343, {	-- Indu'le Fisherman
-						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
-					}),
-					n(26336, {	-- Indu'le Mystic
-						dr(0.7, i(50406)),	-- Formula: Enchant Gloves - Angler
-					}),
-					n(26344, {	-- Indu'le Warrior
-						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
-					}),
-					n(32417, { -- Scarlet Highlord Daion
-						i(44671),
-					}),
-					n(32400, { -- Tukemuth
-						i(44673),
-					}), 
-				}),
 				n(-2, {		-- Vendors
 					nh(26569, {	-- Alys Vol'tyr <Reagents & Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -1011,6 +1014,17 @@ _.Zones =
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
+				}),
+				n(0, {		-- Zone Drop
+					n(26343, {	-- Indu'le Fisherman
+						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
+					}),
+					n(26336, {	-- Indu'le Mystic
+						dr(0.7, i(50406)),	-- Formula: Enchant Gloves - Angler
+					}),
+					n(26344, {	-- Indu'le Warrior
+						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
 					}),
 				}),
 			},

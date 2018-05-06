@@ -35,6 +35,29 @@ _.Zones =
 						},
 					},
 				}),
+				ach(2257, {	-- Frostbitten
+					{
+						["criteriaID"] = 9,	-- King Ping [Criteria]
+						["qg"] = 32398,		-- King Ping [NPC]
+						["groups"] = {
+							i(44668),	-- Egg-Warming Blanket
+						},
+					},
+					{
+						["criteriaID"] = 7,	-- Perobas the Bloodthirster [Criteria]
+						["qg"] = 32377,		-- Perobas the Bloodthirster [NPC]
+						["groups"] = {
+							i(44669),	-- Worgen-Scored Shackles
+						},
+					},
+					{
+						["criteriaID"] = 8,	-- Vigdis the War Maiden [Criteria]
+						["qg"] = 32386,		-- Vigdis the War Maiden [NPC]
+						["groups"] = {
+							i(44670),	-- Soul-Sealed Belt
+						},
+					},
+				}),
 				n(-3, { 	-- Holidays
 --[[					
 					n(-47, {     -- Lunar Festival
@@ -696,17 +719,6 @@ _.Zones =
 						i(35861),
 						i(35862),
 					}),
-				}),
-				n(-16, { 	-- Rares	
-					n(32377, { -- Perobas the Bloodthirster
-						i(44669),
-					}), 
-					n(32386, { -- Vigdis the War Maiden
-						i(44670),
-					}), 
-					n(32398, { -- King Ping
-						i(44668),
-					}), 
 				}),
 				n(-2, { 	-- Vendors
 					n(24539, {	-- "Silvermoon" Harry

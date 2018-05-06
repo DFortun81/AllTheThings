@@ -5,7 +5,30 @@ _.Zones =
 {
 	m(485, { 	-- Northrend
 		m(490, {	-- Grizzly Hills
-			["groups"] = {							
+			["groups"] = {
+				ach(2257, {	-- Frostbitten
+					{
+						["criteriaID"] = 13,	-- Grocklar [Criteria]
+						["qg"] = 32422,			-- Grocklar [NPC]
+						["groups"] = {
+							i(44675),	-- Rock-Giant's Pinky Cover
+						},
+					},
+					{
+						["criteriaID"] = 14,	-- Seething Hate [Criteria]
+						["qg"] = 32429,			-- Seething Hate [NPC]
+						["groups"] = {
+							i(44674),	-- Ichor-Stained Wraps
+						},
+					},
+					{
+						["criteriaID"] = 15,	-- Syreian the Bonecarver [Criteria]
+						["qg"] = 32438,			-- Syreian the Bonecarver [NPC]
+						["groups"] = {
+							i(44676),	-- Syreian's Leggings
+						},
+					},
+				}),
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -568,29 +591,24 @@ _.Zones =
 					}),
 				}),	
 				n(-16, { 	-- Rares
-					desc(n(91632, {	-- Remington Brode <Traveling Lumberjack>
-						i(122236)
-					}), "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\""),					
-					n(32422, { -- Grocklar
-						i(44675),
-					}), 
-					n(32429, { -- Seething Hate
-						i(44674),
-					}), 
-					n(32438, { -- Syreian the Bonecarver
-						i(44676),
-					}), 
 					n(38453, { -- Arcturis
-						i(51958),
-					}), 
+						["description"] = "This is a very sought after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
+						["groups"] = {
+							i(51958),	-- Pristine Glowbear Pelt
+						},
+					}),
 				}),
 				n(-2, {		-- Vendors
 					a(n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
 						["groups"] = {
-							i(38353),	-- Venture Bay Buccaneer's Cape
-							i(38354),	-- Oil-Stained Tarp
-							i(38355),	-- Thick Goblin Back Protector
-							i(38356),	-- Venture Battle Wand
+							i(137642, {	-- Mark of Honor
+								i(38356),	-- Venture Battle Wand
+								i(38354),	-- Oil-Stained Tarp
+								i(38355),	-- Thick Goblin Back Protector
+								i(38353),	-- Venture Bay Buccaneer's Cape
+								i(38358),	-- Arcane Revitalizer
+								i(38359),	-- Goblin Repetition Reducer
+							}),
 						},
 						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game."
 					})),
@@ -600,13 +618,20 @@ _.Zones =
 					}),
 					h(n(27730, {	-- Purkom <Venture Coin Vendor>
 						["groups"] = {
-							i(38353),	-- Venture Bay Buccaneer's Cape
-							i(38354),	-- Oil-Stained Tarp
-							i(38355),	-- Thick Goblin Back Protector
-							i(38356),	-- Venture Battle Wand
+							i(137642, {	-- Mark of Honor
+								i(38356),	-- Venture Battle Wand
+								i(38354),	-- Oil-Stained Tarp
+								i(38355),	-- Thick Goblin Back Protector
+								i(38353),	-- Venture Bay Buccaneer's Cape
+								i(38358),	-- Arcane Revitalizer
+								i(38359),	-- Goblin Repetition Reducer
+							}),
 						},
 						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game."
 					})),
+					desc(n(91632, {	-- Remington Brode <Traveling Lumberjack>
+						i(122236)
+					}), "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\""),
 				}),
 			},
 			["lvl"] = 63,	
