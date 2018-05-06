@@ -670,7 +670,7 @@ _.Zones =
 						i(31836),	-- Reins of the White Riding Talbuk
 						i(31774),	-- Kurenai Tabard
 					})),
-					na(20097, {		-- Uriku <Cooking Supplies>
+					na(20096, {		-- Uriku <Cooking Supplies>
 						i(27697),	-- Recipe: Grilled Mudfish
 						i(27698),	-- Recipe: Poached Bluefish
 						i(27691),	-- Recipe: Roasted Clefthoof
