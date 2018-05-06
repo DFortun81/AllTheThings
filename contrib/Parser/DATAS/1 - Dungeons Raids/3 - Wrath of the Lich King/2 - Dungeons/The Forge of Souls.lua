@@ -14,7 +14,7 @@ _.Instances =
 						a(q(24510)),	-- Inside the Frozen Citadel, No actual awards.
 						h(q(24506)),	-- Inside the Frozen Citadel, No actual awards.
 					}),
-					d(1, {		-- Normal
+					d(  1, {	-- Normal
 						n(0, {		-- Zone Drop
 							i(49852),	-- Coffin Nail
 							i(49854),	-- Mantle of Tattered Feathers
@@ -22,9 +22,12 @@ _.Instances =
 							i(49855)	-- Plated Grips of Korth'azz
 						}),
 						cr(36497, e(615, {	-- Brojahm
+							i(50316),	-- Papa's Brand New Bag
+							i(50317),	-- Papa's New Bag
 							i(49783),	-- Lucky Old Sun
 							i(50191),	-- Nighttime
 							i(50197),	-- Eyes of Bewilderment
+							i(50196),	-- Love's Prisoner
 							i(49785),	-- Bewildering Shoulderpads
 							i(50193),	-- Very Fashionable Shoulders
 							i(49786),	-- Robes of the Cheating Heart
@@ -41,6 +44,8 @@ _.Instances =
 							i(50210),	-- Seethe
 							i(50206),	-- Frayed Scoundrel's Cap
 							i(50214),	-- Helm of the Spirit Shock
+							i(50211),	-- Arcane Loops of Anger
+							i(49799),	-- Coil of Missing Gems
 							i(50208),	-- Pauldrons of the Souleater
 							i(49792),	-- Accursed Crawling Cape
 							i(49791),	-- Lost Reliquary Chestguard
@@ -54,9 +59,11 @@ _.Instances =
 							i(50215),	-- Recovered Reliquary Boots
 							i(49795),	-- Sollerets of Suffering
 							i(49798),	-- Soul Screaming Boots
-						}))
+							i(49800),	-- Spiteful Signet
+							i(50198),	-- Needle-Encrusted Scorpion
+						})),
 					}),
-					d(2, {		-- Heroic
+					d(  2, {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
 							n(0, {		-- Zone Drop
@@ -91,9 +98,12 @@ _.Instances =
 								},
 							}),
 							cr(36497, e(615, {	-- Brojahm
+								i(50316),	-- Papa's Brand New Bag
+								i(50317),	-- Papa's New Bag
 								i(49783),	-- Lucky Old Sun
 								i(50191),	-- Nighttime
 								i(50197),	-- Eyes of Bewilderment
+								i(50196),	-- Love's Prisoner
 								i(49785),	-- Bewildering Shoulderpads
 								i(50193),	-- Very Fashionable Shoulders
 								i(49786),	-- Robes of the Cheating Heart
@@ -110,6 +120,8 @@ _.Instances =
 								i(50210),	-- Seethe
 								i(50206),	-- Frayed Scoundrel's Cap
 								i(50214),	-- Helm of the Spirit Shock
+								i(50211),	-- Arcane Loops of Anger
+								i(49799),	-- Coil of Missing Gems
 								i(50208),	-- Pauldrons of the Souleater
 								i(49792),	-- Accursed Crawling Cape
 								i(49791),	-- Lost Reliquary Chestguard
@@ -123,9 +135,11 @@ _.Instances =
 								i(50215),	-- Recovered Reliquary Boots
 								i(49795),	-- Sollerets of Suffering
 								i(49798),	-- Soul Screaming Boots
-							}))
-						}
-					})
+								i(49800),	-- Spiteful Signet
+								i(50198),	-- Needle-Encrusted Scorpion
+							})),
+						},
+					}),
 				},
 				["lvl"] = 75,
 				["mapID"] = 601

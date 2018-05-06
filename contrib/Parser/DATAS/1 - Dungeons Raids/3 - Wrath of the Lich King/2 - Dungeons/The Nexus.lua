@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(281, { 	-- The Nexus
 				["groups"] = {
-					n(-47, {     -- Lunar Festival
+					n(-47, {	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								q(13021, {	-- Igasho the Elder			
@@ -63,57 +63,61 @@ _.Instances =
 							i(42762), 	-- Treads of Torn Future
 						}),
 					}),
-					d(1, {		-- Normal
+					d(  1, {	-- Normal
 						cr(26731, e(618, { 	-- Grand Magus Telestra
 							ig(21524), 	-- Red Winter Hat
-							i(35617),	-- Wand of Shimmering Scales
-							i(37134),	-- Telestra's Journal
-							i(37135),	-- Arcane-Shielded Helm
-							i(37139),	-- Spaulders of the Careless Thief
-							i(37138),	-- Bands of Channeled Energy
-							i(35604),	-- Insulating Bindings
-							i(35605),	-- Belt of Draconic Runes
+							i( 35617),	-- Wand of Shimmering Scales
+							i( 37134),	-- Telestra's Journal
+							i( 37135),	-- Arcane-Shielded Helm
+							i( 37139),	-- Spaulders of the Careless Thief
+							i( 37138),	-- Bands of Channeled Energy
+							i( 35604),	-- Insulating Bindings
+							i( 35605),	-- Belt of Draconic Runes
 						})),
 						cr(26763, e(619, {	-- Anomalus
-							i(35598),	-- Tome of the Lore Keepers
+							i(35598),	--	 Tome of the Lore Keepers
 							i(37149),	-- Helm of Anomalus
+							i(37141),	-- Amulet of Dazzling Light
 							i(37144),	-- Hauberk of the Arcane Wraith
 							i(35599),	-- Gauntlets of Serpent Scales
 							i(35600),	-- Cleated Ice Boots
 							i(37150),	-- Rift Striders
 						})),
 						cr(26794, e(620, { 	-- Ormorok the Tree-Shaper
-							i(35601),	-- Drakonid Arm Blade
-							i(35602),	-- Chiseled Stalagmite Pauldrons
-							i(37153),	-- Gloves of the Crystal Gardener
+							i( 35601),	-- Drakonid Arm Blade
+							i( 35602),	-- Chiseled Stalagmite Pauldrons
+							i( 37153),	-- Gloves of the Crystal Gardener
 							i(157559), 	-- Chilly Cinch 
-							i(37152),	-- Girdle of Ice
-							i(37155),	-- Frozen Forest Kilt
-							i(35603),	-- Greaves of the Blue Flight
+							i( 37152),	-- Girdle of Ice
+							i( 37155),	-- Frozen Forest Kilt
+							i( 35603),	-- Greaves of the Blue Flight
+							i( 37151),	-- Band of Frosted Thorns
 						})),
 						cr(26723, e(621, {	-- Keristrasza
-							i(35595),	-- Glacier Sharpened Vileblade
-							i(37169),	-- War Mace of Unrequited Love
-							i(37162),	-- Bulwark of the Noble Protector
-							i(37165),	-- Crystal-Infused Tunic
-							i(37170),	-- Interwoven Scale Bracers
-							i(37172),	-- Gloves of Glistening Runes
+							i( 35595),	-- Glacier Sharpened Vileblade
+							i( 37169),	-- War Mace of Unrequited Love
+							i( 37162),	-- Bulwark of the Noble Protector
+							i( 37165),	-- Crystal-Infused Tunic
+							i( 37170),	-- Interwoven Scale Bracers
+							i( 37172),	-- Gloves of Glistening Runes
 							i(157565),	-- Tangler-Leather Gloves
-							i(37171),	-- Flame-Bathed Steel Girdle
-							i(35596),	-- Attuned Crystalline Boots
-							i(37167),	-- Dragon Slayer's Sabatons
-						}))
+							i( 37171),	-- Flame-Bathed Steel Girdle
+							i( 35596),	-- Attuned Crystalline Boots
+							i( 37167),	-- Dragon Slayer's Sabatons
+							i( 35597),	-- Band of Glittering Permafrost
+							i( 37166),	-- Sphere of Red Dragon's Blood
+						})),
 					}),
-					d(2, {		-- Heroic
+					d(  2, {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
-							a(cr(26798, e(833, { -- Commander Stoutbeard
+							a(cr(26798, e(833, {	-- Commander Stoutbeard
 								i(37728),	-- Cloak of the Enemy
 								i(37729),	-- Grips of Sculptured Icicles
 								i(37731),	-- Opposed Stasis Leggings
 								i(37730),	-- Cleric's Linen Shoes
 							}))),
-							h(cr(26796, e(617, { -- Commander Kolurg
+							h(cr(26796, e(617, {	-- Commander Kolurg
 								i(37728),	-- Cloak of the Enemy
 								i(37729),	-- Grips of Sculptured Icicles
 								i(37731),	-- Opposed Stasis Leggings
@@ -132,55 +136,63 @@ _.Instances =
 							cr(26763, e(619, {	-- Anomalus
 								i(35598),	-- Tome of the Lore Keepers
 								i(37149),	-- Helm of Anomalus
+								i(37141),	-- Amulet of Dazzling Light
 								i(37144),	-- Hauberk of the Arcane Wraith
 								i(35599),	-- Gauntlets of Serpent Scales
 								i(35600),	-- Cleated Ice Boots
 								i(37150),	-- Rift Striders
 							})),
 							cr(26794, e(620, { 	-- Ormorok the Tree-Shaper
-								i(35601),	-- Drakonid Arm Blade
-								i(35602),	-- Chiseled Stalagmite Pauldrons
-								i(37153),	-- Gloves of the Crystal Gardener
+								i( 35601),	-- Drakonid Arm Blade
+								i( 35602),	-- Chiseled Stalagmite Pauldrons
+								i( 37153),	-- Gloves of the Crystal Gardener
 								i(157559), 	-- Chilly Cinch 
-								i(37152),	-- Girdle of Ice
-								i(37155),	-- Frozen Forest Kilt
-								i(35603),	-- Greaves of the Blue Flight
+								i( 37152),	-- Girdle of Ice
+								i( 37155),	-- Frozen Forest Kilt
+								i( 35603),	-- Greaves of the Blue Flight
+								i( 37151),	-- Band of Frosted Thorns
 							})),
 							cr(26723, e(621, {	-- Keristrasza
-								i(35595),	-- Glacier Sharpened Vileblade
-								i(37169),	-- War Mace of Unrequited Love
-								i(37162),	-- Bulwark of the Noble Protector
-								i(37165),	-- Crystal-Infused Tunic
-								i(37170),	-- Interwoven Scale Bracers
-								i(37172),	-- Gloves of Glistening Runes
+								i( 35595),	-- Glacier Sharpened Vileblade
+								i( 37169),	-- War Mace of Unrequited Love
+								i( 37162),	-- Bulwark of the Noble Protector
+								i( 37165),	-- Crystal-Infused Tunic
+								i( 37170),	-- Interwoven Scale Bracers
+								i( 37172),	-- Gloves of Glistening Runes
 								i(157565),	-- Tangler-Leather Gloves
-								i(37171),	-- Flame-Bathed Steel Girdle
-								i(35596),	-- Attuned Crystalline Boots
-								i(37167),	-- Dragon Slayer's Sabatons
-							}))
-						}
+								i( 37171),	-- Flame-Bathed Steel Girdle
+								i( 35596),	-- Attuned Crystalline Boots
+								i( 37167),	-- Dragon Slayer's Sabatons
+								i( 35597),	-- Band of Glittering Permafrost
+								i( 37166),	-- Sphere of Red Dragon's Blood
+							})),
+						},
 					}),
-					d(24, {		-- Timewalking
+					d( 24, {	-- Timewalking
 						["lvl"] = 70,
 						["groups"] = {
 							-- NOTE: This boss is not listed in the Timewalking Dungeon Journal.
-							a(cr(26798, e(833, { -- Commander Stoutbeard
+							a(cr(26798, e(833, {	-- Commander Stoutbeard
 								i(127568),	-- Glacier Sharpened Vileblade
 								i(127603),	-- Cloak of the Enemy
 								i(127600),	-- Rippling Azure Cloak
+								i(127604),	-- Grips of Sculptured Icicles
 								i(127606),	-- Opposed Stasis Leggings
 								i(127569),	-- Attuned Crystalline Boots
 								i(127605),	-- Cleric's Linen Boots
-								i(127604),	-- Grips of Sculptured Icicles
+								i(127570),	-- Band of Glittering Permafrost
+								i(127594),	-- Sphere of Red Dragon's Blood
 							}))),
-							h(cr(26796, e(617, { -- Commander Kolurg
+							h(cr(26796, e(617, {	-- Commander Kolurg
 								i(127568),	-- Glacier Sharpened Vileblade
 								i(127603),	-- Cloak of the Enemy
 								i(127600),	-- Rippling Azure Cloak
+								i(127604),	-- Grips of Sculptured Icicles
 								i(127606),	-- Opposed Stasis Leggings
 								i(127569),	-- Attuned Crystalline Boots
 								i(127605),	-- Cleric's Linen Boots
-								i(127604),	-- Grips of Sculptured Icicles
+								i(127570),	-- Band of Glittering Permafrost
+								i(127594),	-- Sphere of Red Dragon's Blood
 							}))),
 							cr(26731, e(618, {	-- Grand Magus Telestra
 								i(127579),	-- Wand of Shimmering Scales
@@ -199,6 +211,7 @@ _.Instances =
 								i(127591),	-- Frozen Forest Kilt
 								i(127602), 	-- Cavern Leather Treads
 								i(127576),	-- Greaves of the Blue Flight
+								i(127588),	-- Band of Frosted Thorns
 							})),
 							cr(26794, e(620, {	-- Ormorok the Tree-Shaper
 								i(127568),	-- Glacier Sharpened Vileblade
@@ -208,6 +221,8 @@ _.Instances =
 								i(127606),	-- Opposed Stasis Leggings
 								i(127569),	-- Attuned Crystalline Boots
 								i(127605),	-- Cleric's Linen Shoes
+								i(127570),	-- Band of Glittering Permafrost
+								i(127594),	-- Sphere of Red Dragon's Blood
 							})),
 							cr(26723, e(621, {	-- Keristrasza
 								i(127596),	-- War Mace of Unrequited Love
@@ -217,9 +232,9 @@ _.Instances =
 								i(127599),	-- Gloves of Glistening Runes
 								i(127598),	-- Flame-Bathed Steel Girdle
 								i(127595),	-- Dragon Slayer's Sabatons
-							}))
-						}
-					})
+							})),
+						},
+					}),
 				},
 				["lvl"] = 68,
 				["mapID"] = 520

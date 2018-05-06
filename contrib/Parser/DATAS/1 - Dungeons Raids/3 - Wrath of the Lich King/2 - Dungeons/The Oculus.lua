@@ -19,7 +19,7 @@ _.Instances =
 						q(13127),	-- Mage-Lord Urom
 						q(13124),	-- The Struggle Persists (Ring rewards, essentially nothing.)
 					}),
-					d(1, {		-- Normal
+					d(  1, {	-- Normal
 						n(0, {		-- Zone Drop
 							i(36976),	-- Ring-Lord's Leggings
 							i(36978),	-- Ley-Whelphide Belt
@@ -27,12 +27,14 @@ _.Instances =
 						}),
 						cr(27654, e(622, {	-- Drakos the Interrogator
 							i(157562),	-- Rod of Aggressive Questioning
-							i(36944),	-- Lifeblade of Belgaristrasz
-							i(37255),	-- The Interrogator
-							i(37258),	-- Drakewing's Raiments
-							i(36946),	-- Runic Cage Chestpiece
-							i(37256),	-- Scaled Armor of Drakos
-							i(36945),	-- Verdisa's Cuffs of Dreaming
+							i( 36944),	-- Lifeblade of Belgaristrasz
+							i( 37255),	-- The Interrogator
+							i( 36943),	-- Timeless Beads of Eternos
+							i( 37258),	-- Drakewing's Raiments
+							i( 36946),	-- Runic Cage Chestpiece
+							i( 37256),	-- Scaled Armor of Drakos
+							i( 36945),	-- Verdisa's Cuffs of Dreaming
+							i( 37257),	-- Band of Torture
 						})),
 						cr(27447, e(623, {	-- Varos Cloudstrider
 							i(37260),	-- Cloudstrider's Waraxe
@@ -46,12 +48,14 @@ _.Instances =
 						})),
 						cr(27655, e(624, {	-- Mage-Lord Urom
 							ig(21525), 	-- Green Winter Hat
-							i(36953),	-- Spaulders of Skillful Maneuvers
-							i(37288),	-- Catalytic Bands
-							i(36951),	-- Sidestepping Handguards
-							i(36952),	-- Girdle of Obscuring
-							i(37289),	-- Sash of Phantasmal Images
-							i(36954),	-- The Conjurer's Slippers
+							i( 36953),	-- Spaulders of Skillful Maneuvers
+							i( 37288),	-- Catalytic Bands
+							i( 36951),	-- Sidestepping Handguards
+							i( 36952),	-- Girdle of Obscuring
+							i( 37289),	-- Sash of Phantasmal Images
+							i( 36954),	-- The Conjurer's Slippers
+							i( 37195),	-- Band of Enchanted Growth
+							i( 37264),	-- Pendulum of Telluric Currents
 						})),
 						cr(27656, e(625, {	-- Ley-Guardian Eregos
 							i(36975),	-- Malygos' Favor
@@ -68,9 +72,11 @@ _.Instances =
 							i(37363),	-- Gauntlets of Dragon Wrath
 							i(37362),	-- Leggings of Protective Auras
 							i(37292),	-- Ley-Guardian's Legguards
-						}))
+							i(36961),	-- Dragonflight Great-Ring
+							i(36972),	-- Tome of Arcane Phenomena
+						})),
 					}),
-					d(2, {		-- Heroic
+					d(  2, {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
 							n(0, {		-- Zone Drop
@@ -80,12 +86,14 @@ _.Instances =
 							}),
 							cr(27654, e(622, {	-- Drakos the Interrogator
 								i(157562),	-- Rod of Aggressive Questioning
-								i(36944),	-- Lifeblade of Belgaristrasz
-								i(37255),	-- The Interrogator
-								i(37258),	-- Drakewing's Raiments
-								i(36946),	-- Runic Cage Chestpiece
-								i(37256),	-- Scaled Armor of Drakos
-								i(36945),	-- Verdisa's Cuffs of Dreaming
+								i( 36944),	-- Lifeblade of Belgaristrasz
+								i( 37255),	-- The Interrogator
+								i( 36943),	-- Timeless Beads of Eternos
+								i( 37258),	-- Drakewing's Raiments
+								i( 36946),	-- Runic Cage Chestpiece
+								i( 37256),	-- Scaled Armor of Drakos
+								i( 36945),	-- Verdisa's Cuffs of Dreaming
+								i( 37257),	-- Band of Torture
 							})),
 							cr(27447, e(623, {	-- Varos Cloudstrider
 								i(37260),	-- Cloudstrider's Waraxe
@@ -99,12 +107,14 @@ _.Instances =
 							})),
 							cr(27655, e(624, {	-- Mage-Lord Urom
 								ig(21525), 	-- Green Winter Hat
-								i(36953),	-- Spaulders of Skillful Maneuvers
-								i(37288),	-- Catalytic Bands
-								i(36951),	-- Sidestepping Handguards
-								i(36952),	-- Girdle of Obscuring
-								i(37289),	-- Sash of Phantasmal Images
-								i(36954),	-- The Conjurer's Slippers
+								i( 36953),	-- Spaulders of Skillful Maneuvers
+								i( 37288),	-- Catalytic Bands
+								i( 36951),	-- Sidestepping Handguards
+								i( 36952),	-- Girdle of Obscuring
+								i( 37289),	-- Sash of Phantasmal Images
+								i( 36954),	-- The Conjurer's Slippers
+								i( 37195),	-- Band of Enchanted Growth
+								i( 37264),	-- Pendulum of Telluric Currents
 							})),
 							cr(27656, e(625, {	-- Ley-Guardian Eregos
 								i(36975),	-- Malygos' Favor
@@ -121,9 +131,11 @@ _.Instances =
 								i(37363),	-- Gauntlets of Dragon Wrath
 								i(37362),	-- Leggings of Protective Auras
 								i(37292),	-- Ley-Guardian's Legguards
-							}))
-						}
-					})
+								i(36961),	-- Dragonflight Great-Ring
+								i(36972),	-- Tome of Arcane Phenomena
+							})),
+						},
+					}),
 				},
 				["lvl"] = 75,
 				["mapID"] = 528

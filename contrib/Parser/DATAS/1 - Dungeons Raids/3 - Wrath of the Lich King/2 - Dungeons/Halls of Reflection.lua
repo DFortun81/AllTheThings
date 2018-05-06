@@ -16,7 +16,7 @@ _.Instances =
 						a(q(24500)),	-- Wrath of the Lich King, No actual awards.
 						h(q(24802)),	-- Wrath of the Lich King, No actual awards.
 					}),
-					d(1, {		-- Normal
+					d(  1, {	-- Normal
 						n(0, {		-- Zone Drop
 							i(49852),	-- Coffin Nail
 							i(49854),	-- Mantle of Tattered Feathers
@@ -49,6 +49,7 @@ _.Instances =
 							i(49837),	-- Mitts of Burning Hail
 							i(50299),	-- Suspiciously Soft Gloves
 							i(49836),	-- Frostsworn Bone Leggings
+							i(50260),	-- Ephemeral Snowflake
 						})),
 						cr(36954, e(603, {	-- Escape from Arthas
 							i(49839),	-- Mourning Malice
@@ -62,6 +63,7 @@ _.Instances =
 							i(49851),	-- Greathelm of the Silver Hand
 							i(50311),	-- Second Helm of the Executioner
 							i(49849),	-- Tattered Glacial-Woven Hood
+							i(50310),	-- Fossilized Ammonite Choker
 							i(49848),	-- Grim Lasher Shoulderguards
 							i(49842),	-- Tapestry of the Frozen Throne
 							i(49841),	-- Blackened Geist Ribs
@@ -72,12 +74,14 @@ _.Instances =
 							i(49847),	-- Legguards of Untimely Demise
 							i(50308),	-- Blighted Leather Footpads
 							i(50305),	-- Grinning Skull Boots
-						}))
+							i(50313),	-- Oath of Empress Zoe
+							i(50306),	-- The Lady's Promise
+						})),
 					}),
-					d(2, {		-- Heroic
+					d(  2, {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
-							n(0, {		-- Zone Drop
+							n(0, {	-- Zone Drop
 								["groups"] = {
 									i(50315),	-- Seven-Fingered Claws
 									i(50319),	-- Unsharpened Ice Razor
@@ -134,6 +138,7 @@ _.Instances =
 								i(49837),	-- Mitts of Burning Hail
 								i(50299),	-- Suspiciously Soft Gloves
 								i(49836),	-- Frostsworn Bone Leggings
+								i(50260),	-- Ephemeral Snowflake
 							})),
 							cr(36954, e(603, {	-- Escape from Arthas
 								i(49839),	-- Mourning Malice
@@ -147,6 +152,7 @@ _.Instances =
 								i(49851),	-- Greathelm of the Silver Hand
 								i(50311),	-- Second Helm of the Executioner
 								i(49849),	-- Tattered Glacial-Woven Hood
+								i(50310),	-- Fossilized Ammonite Choker
 								i(49848),	-- Grim Lasher Shoulderguards
 								i(49842),	-- Tapestry of the Frozen Throne
 								i(49841),	-- Blackened Geist Ribs
@@ -157,9 +163,11 @@ _.Instances =
 								i(49847),	-- Legguards of Untimely Demise
 								i(50308),	-- Blighted Leather Footpads
 								i(50305),	-- Grinning Skull Boots
-							}))
-						}
-					})
+								i(50313),	-- Oath of Empress Zoe
+								i(50306),	-- The Lady's Promise
+							})),
+						},
+					}),
 				},
 				["lvl"] = 75,
 				["mapID"] = 603
