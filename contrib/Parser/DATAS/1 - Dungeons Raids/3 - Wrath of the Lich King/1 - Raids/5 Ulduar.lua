@@ -4,7 +4,7 @@
 
 _.Instances = 
 {
-	{ -- Wrath of the Lich King
+	{	-- Wrath of the Lich King
 		["groups"] = {
 			inst(759, { 	-- Ulduar
 				["groups"] = {
@@ -24,8 +24,8 @@ _.Instances =
 								["groups"] = {
 									i(45039, {	-- Shattered Fragments of Val'anyr
 										q(13622, {	-- Ancient History
-											q(13629, { -- Val'anyr, Hammer of Ancient Kings
-												i(46017)  -- Val'anyr, Hammer of Ancient Kings
+											q(13629, {	-- Val'anyr, Hammer of Ancient Kings
+												i(46017) 	-- Val'anyr, Hammer of Ancient Kings
 											})
 										})
 									})
@@ -96,118 +96,147 @@ _.Instances =
 								i(45566),
 							}),
 						}),
-						cr(33113, e(1637, { -- Flame Leviathan
+						cr(33113, e(1637, {	-- Flame Leviathan
 							ach(12320, {	-- Orbit-uary
-								i(45293),
-								i(45300),
-								i(45295),
-								i(45135),
-								i(45136),
-								i(45134),
-								i(45132),
+								i(45132),	-- Golden Saronite Dragon
+								i(45113),	-- Pendant of Fiery Havoc
+								i(45300),	-- Mantle of Fiery Vengeance
+								i(45136),	-- Shoulderpads of Dormant Energies
+								i(45293),	-- Handguards of Potent Cures
+								i(45295),	-- Gilded Steel Legplates
+								i(45134),	-- Plated Leggings of Ruination
+								i(45135),	-- Boots of Fiery Resolution
+								i(45297),	-- Shimmering Seal
 							}),
+							i(45038),	-- Fragment of Val'anyr
+							i(45087),	-- Runed Orb
+							i(45282),	-- Ironsoul
+							i(45287),	-- Firesoul
+							i(45284),	-- Kinetic Ripper
+							i(45110),	-- Titanguard
+							i(45115),	-- Leviathan Fueling Manual
+							i(45107),	-- Iron Riveted War Helm
+							i(45289),	-- Lifespark Visage
+							i(45118),	-- Steamworker's Goggles
+							i(45116),	-- Freya's Choker of Warding (
+							i(45285),	-- Might of the Leviathan
+							i(45288),	-- Firestrider Chestguard
+							i(45291),	-- Combustion Bracers
+							i(45283),	-- Flamewatch Armguards
+							i(45108),	-- Mechanist's Bindings
+							i(45111),	-- Mimiron's Inferno Couplings
+							i(45117),	-- Constructor's Handwraps
+							i(45109),	-- Gloves of the Fiery Behemoth
+							i(45119),	-- Embrace of the Leviathan
+							i(45113),	-- Glowing Ring of Reclamation
+							i(45106),	-- Strength of the Automaton
+							i(45112),	-- The Leviathan's Coil
+							i(45292),	-- Energy Siphon
+							i(45286),	-- Pyrite Infuser
 							i(46027),	-- Formula: Enchant Weapon - Blade Ward
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining
-							i(45282),
-							i(45284),
-							i(45287),
-							i(45289),
-							i(45288),
-							i(45291),
-							i(45283),
-							i(45110),
-							i(45115),
-							i(45107),
-							i(45118),
-							i(45111),
-							i(45108),
-							i(45109),
-							i(45117),
-							i(45119),
 						})),
-						cr(33118, e(1638, { -- Ignis the Furnace Master
-							i(46027),	-- Formula: Enchant Weapon - Blade Ward
-							i(46348),	-- Formula: Enchant Weapon - Blood Draining
-							i(45311),
-							i(45309),
-							i(45314),
-							i(45321),
-							i(45318),
-							i(45317),
-							i(45316),
-							i(45312),
-							i(45310),
-							i(45165),
-							i(45171),
-							i(45170),
-							i(45164),
-							i(45186),
-							i(45167),
-							i(45187),
-							i(45161),
-							i(45185),
-							i(45162),
-							i(45166),
-							i(142086),
+						cr(33118, e(1638, {	-- Ignis the Furnace Master
+							i( 45038),	-- Fragment of Val'anyr
+							i(142086),	-- Red-Hot Coal (PET!)
+							i( 45087),	-- Runed Orb
+							i( 45171),	-- Intensity
+							i( 45311),	-- Relentless Edge
+							i( 45165),	-- Worldcarver
+							i( 45309),	-- Rifle of the Platinum Guard
+							i( 45170),	-- Scepter of Creation
+							i( 45314),	-- Igniter Rod
+							i( 45164),	-- Helm of the Furnace Master
+							i( 45321),	-- Pauldrons of Tempered Will
+							i( 45186),	-- Soot-Covered Mantle
+							i( 45318),	-- Drape of Fuming Anger
+							i( 45317),	-- Shawl of the Caretaker
+							i( 45167),	-- Lifeforge Breastplate
+							i( 45316),	-- Armbraces of the Vibrant Flame
+							i( 45187),	-- Wristguards of the Firetender
+							i( 45310),	-- Gauntlets of the Iron Furnace
+							i( 45312),	-- Gloves of Smoldering Touch
+							i( 45185),	-- Flamewrought Cinch
+							i( 45161),	-- Girdle of Embers
+							i( 45166),	-- Charred Saronite Greaves
+							i( 45162),	-- Flamestalker Boots
+							i( 45157),	-- Cindershard Ring
+							i( 45168),	-- Pyrelight Circle
+							i( 45313),	-- Furnace Stone
+							i( 45158),	-- Heart of Iron
+							i( 46027),	-- Formula: Enchant Weapon - Blade Ward
+							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
-						cr(33186, e(1639, { -- Razorscale
-							i(45298),
-							i(45299),
-							i(45305),
-							i(45301),
-							i(45304),
-							i(45306),
-							i(45307),
-							i(45302),
-							i(45147),
-							i(45142),
-							i(45137),
-							i(45150),
-							i(45140),
-							i(45138),
-							i(45146),
-							i(45149),
-							i(45151),
-							i(45139),
-							i(45143),
-							i(45141),
-							i(142087),
+						cr(33186, e(1639, {	-- Razorscale
+							i( 45038),	-- Fragment of Val'anyr
+							i(142087),	-- Ironbound Collar (PET!)
+							i( 45087),	-- Runed Orb
+							i( 45147),	-- Guiding Star
+							i( 45298),	-- Razorscale Talon
+							i( 45142),	-- Remorse
+							i( 45137),	-- Veranus' Bane
+							i( 45150),	-- Collar of the Wyrmhunter
+							i( 45299),	-- Dragonsteel Faceplate
+							i( 45140),	-- Razorscale Shoulderguards
+							i( 45138),	-- Drape of the Drakerider
+							i( 45305),	-- Breastplate of the Afterlife
+							i( 45149),	-- Bracers of the Broodmother
+							i( 45301),	-- Bracers of the Smothering Inferno
+							i( 45146),	-- Shackles of the Odalisque
+							i( 45151),	-- Belt of the Fallen Wyrm
+							i( 45306),	-- Binding of the Dragon Matriarch
+							i( 45139),	-- Dragonslayer's Brace
+							i( 45304),	-- Stormtempered Girdle
+							i( 45307),	-- Ironscale Leggings
+							i( 45141),	-- Proto-Hide Leggings
+							i( 45143),	-- Saronite Mesh Legguards
+							i( 45302),	-- Treads of the Invader
+							i( 45303),	-- Band of Draconic Guile
+							i( 45308),	-- Eye of the Broodmother
+							i( 45148),	-- Living Flame
 						})),
-						cr(33293, e(1640, { -- XT-002 Deconstructor
-							ach(12330, { 	-- Hearbreaker
-								i(45869),
-								i(45867),
-								i(45868),
-								i(45870),
-								i(45446),
-								i(45444),
-								i(45445),
-								i(45442),
+						cr(33293, e(1640, {	-- XT-002 Deconstructor
+							ach(12330, {	-- Heartbreaker
+								i(45868),	-- Aesir's Edge
+								i(45442),	-- Sorthalis, Hammer of the Watchers
+								i(45870),	-- Magnetized Projectile Emitter
+								i(45443),	-- Charm of Meticulous Timing
+								i(45445),	-- Breastplate of the Devoted
+								i(45867),	-- Breastplate of the Stoneshaper
+								i(45869),	-- Fluxing Energy Coils
+								i(45446),	-- Grasps of Reason
+								i(45444),	-- Gloves of the Steady Hand
+								i(45871),	-- Seal of Ulduar
 							}),
+							i(45038),	-- Fragment of Val'anyr
+							i(45087),	-- Runed Orb
+							i(45256),	-- Twisted Visage
+							i(45246),	-- Golem-Shard Sticker
+							i(45685),	-- Plasma Foil
+							i(45257),	-- Quartz Crystal Wand
+							i(45682),	-- Pulsing Spellshield
+							i(45687),	-- Helm of Veiled Energies
+							i(45253),	-- Mantle of Wavering Calm
+							i(45251),	-- Shoulderplates of the Deconstructor
+							i(45677),	-- Treacherous Shoulderpads
+							i(45676),	-- Chestplate of Vicious Potency
+							i(45259),	-- Quartz-Studded Harness
+							i(45686),	-- Vest of the Glowing Crescent
+							i(45680),	-- Armbands of the Construct
+							i(45252),	-- Horologist's Wristguards
+							i(45679),	-- Gloves of Taut Grip
+							i(45694),	-- Conductive Cord
+							i(45248),	-- Clockwork Legplates
+							i(45260),	-- Boots of Hasty Revival
+							i(45249),	-- Brass-Lined Boots
+							i(45258),	-- Sandals of Rash Temperament
+							i(45250),	-- Crazed Construct Ring
+							i(45675),	-- Power Enhancing Loop
+							i(45247),	-- Signet of the Earthshaker
 							i(46027),	-- Formula: Enchant Weapon - Blade Ward
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining
-							i(45685),
-							i(45682),
-							i(45687),
-							i(45677),
-							i(45686),
-							i(45676),
-							i(45680),
-							i(45679),
-							i(45694),
-							i(45256),
-							i(45246),
-							i(45257),
-							i(45253),
-							i(45251),
-							i(45259),
-							i(45252),
-							i(45248),
-							i(45258),
-							i(45249),
-							i(45260),
 						})),
-						cr(32871, e(1650, { -- Algalon the Observer
+						cr(32871, e(1650, {	-- Algalon the Observer
 							i(46044),
 							i(46037),
 							i(46042),
@@ -241,7 +270,7 @@ _.Instances =
 								i(45618),	-- Sunglimmer Cloak
 							}),
 						})),
-						cr(32867, e(1641, { -- Assembly of Iron 32927, 32857
+						cr(32867, e(1641, {	-- Assembly of Iron 32927, 32857
 							ach(12334, {	-- I Choose You, Steelbreaker
 								i(45455),
 								i(45449),
@@ -277,7 +306,7 @@ _.Instances =
 							i(45232),
 							i(142088),
 						})),
-						cr(32930, e(1642, { -- Kologarn
+						cr(32930, e(1642, {	-- Kologarn
 							i(45695),
 							i(45700),
 							i(45697),
@@ -297,7 +326,7 @@ _.Instances =
 							i(45274),
 							i(45267),
 						})),
-						cr(33515, e(1643, { -- Auriaya
+						cr(33515, e(1643, {	-- Auriaya
 							i(46027),	-- Formula: Enchant Weapon - Blade Ward
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 							i(45713),
@@ -323,7 +352,7 @@ _.Instances =
 							i(45441),
 							i(142089),
 						})),
-						cr(32845, e(1644, { -- Hodir
+						cr(32845, e(1644, {	-- Hodir
 							ach(12347, {	-- I Could Say That This Cache Was Rare
 								i(45888),
 								i(45876),
@@ -370,7 +399,7 @@ _.Instances =
 							i(45453),
 							i(45454),
 							i(45452),
-							i(45632, { -- Breastplate of the Wayward Conqueror
+							i(45632, {	-- Breastplate of the Wayward Conqueror
 								i(46193),
 								i(46168),
 								i(46137),
@@ -378,7 +407,7 @@ _.Instances =
 								i(46173),
 								i(46154),
 							}),
-							i(45633, { -- Breastplate of the Wayward Protector
+							i(45633, {	-- Breastplate of the Wayward Protector
 								i(46198),
 								i(46206),
 								i(46205),
@@ -386,7 +415,7 @@ _.Instances =
 								i(46146),
 								i(46141),
 							}),
-							i(45634, { -- Breastplate of the Wayward Vanquisher
+							i(45634, {	-- Breastplate of the Wayward Vanquisher
 								i(46123),
 								i(46194),
 								i(46186),
@@ -397,7 +426,7 @@ _.Instances =
 							}),
 							i(142090),
 						})),
-						cr(32865, e(1645, { -- Thorim
+						cr(32865, e(1645, {	-- Thorim
 							ach(12352, {	-- Lose Your Illusion
 								i(45928),
 								i(45930),
@@ -412,7 +441,7 @@ _.Instances =
 							i(45927),
 							i(45895),
 							i(45894),
-							i(45659, { -- Spaulders of the Wayward Conqueror
+							i(45659, {	-- Spaulders of the Wayward Conqueror
 								i(45390),
 								i(45393),
 								i(45422),
@@ -420,7 +449,7 @@ _.Instances =
 								i(45380),
 								i(45385),
 							}),
-							i(45660, { -- Spaulders of the Wayward Protector
+							i(45660, {	-- Spaulders of the Wayward Protector
 								i(45404),
 								i(45410),
 								i(45415),
@@ -428,7 +457,7 @@ _.Instances =
 								i(45428),
 								i(45363),
 							}),
-							i(45661, { -- Spaulders of the Wayward Vanquisher
+							i(45661, {	-- Spaulders of the Wayward Vanquisher
 								i(45400),
 								i(45349),
 								i(45359),
@@ -441,7 +470,7 @@ _.Instances =
 							i(45463),
 							i(45467),
 							i(45468),
-							i(45638, { -- Crown of the Wayward Conqueror
+							i(45638, {	-- Crown of the Wayward Conqueror
 								i(46140),
 								i(46197),
 								i(46172),
@@ -449,7 +478,7 @@ _.Instances =
 								i(46180),
 								i(46175),
 							}),
-							i(45639, { -- Crown of the Wayward Protector
+							i(45639, {	-- Crown of the Wayward Protector
 								i(46209),
 								i(46201),
 								i(46212),
@@ -457,7 +486,7 @@ _.Instances =
 								i(46166),
 								i(46143),
 							}),
-							i(45640, { -- Crown of the Wayward Vanquisher
+							i(45640, {	-- Crown of the Wayward Vanquisher
 								i(46125),
 								i(46184),
 								i(46161),
@@ -467,7 +496,7 @@ _.Instances =
 								i(46120),
 							}),
 						})),
-						cr(32906, e(1646, { -- Freya
+						cr(32906, e(1646, {	-- Freya
 							ach(12366, {	-- Knock,Knock, Knock on Wood
 								i(45943),
 								i(45947),
@@ -484,7 +513,7 @@ _.Instances =
 							i(45941),
 							i(45936),
 							i(142091),
-							i(45644, { -- Gloves of the Wayward Conqueror
+							i(45644, {	-- Gloves of the Wayward Conqueror
 								i(45392),
 								i(45387),
 								i(45419),
@@ -492,7 +521,7 @@ _.Instances =
 								i(45370),
 								i(45376),
 							}),
-							i(45645, { -- Gloves of the Wayward Protector
+							i(45645, {	-- Gloves of the Wayward Protector
 								i(45401),
 								i(45414),
 								i(45406),
@@ -500,7 +529,7 @@ _.Instances =
 								i(45430),
 								i(45360),
 							}),
-							i(45646, { -- Gloves of the Wayward Vanquisher
+							i(45646, {	-- Gloves of the Wayward Vanquisher
 								i(45397),
 								i(45345),
 								i(45355),
@@ -515,7 +544,7 @@ _.Instances =
 							i(45482),
 							i(45483),
 							i(142091),
-							i(45653, { -- Legplates of the Wayward Conqueror
+							i(45653, {	-- Legplates of the Wayward Conqueror
 								i(46170),
 								i(46195),
 								i(46139),
@@ -523,7 +552,7 @@ _.Instances =
 								i(46176),
 								i(46181),
 							}),
-							i(45654, { -- Legplates of the Wayward Protector
+							i(45654, {	-- Legplates of the Wayward Protector
 								i(46208),
 								i(46202),
 								i(46210),
@@ -531,7 +560,7 @@ _.Instances =
 								i(46169),
 								i(46144),
 							}),
-							i(45655, { -- Legplates of the Wayward Vanquisher
+							i(45655, {	-- Legplates of the Wayward Vanquisher
 								i(46126),
 								i(46192),
 								i(46160),
@@ -541,7 +570,7 @@ _.Instances =
 								i(46121),
 							}),
 						})),
-						cr(33350, e(1647, { -- Mimiron
+						cr(33350, e(1647, {	-- Mimiron
 							ach(12369, {	-- Firefighter
 								i(45993),
 								i(45989),
@@ -560,7 +589,7 @@ _.Instances =
 							i(45976),
 							i(45975),
 							i(142092),
-							i(45647, { -- Helm of the Wayward Conqueror
+							i(45647, {	-- Helm of the Wayward Conqueror
 								i(45417),
 								i(45386),
 								i(45391),
@@ -568,7 +597,7 @@ _.Instances =
 								i(45372),
 								i(45382),
 							}),
-							i(45648, { -- Helm of the Wayward Protector
+							i(45648, {	-- Helm of the Wayward Protector
 								i(45408),
 								i(45402),
 								i(45412),
@@ -576,7 +605,7 @@ _.Instances =
 								i(45425),
 								i(45361),
 							}),
-							i(45649, { -- Helm of the Wayward Vanquisher
+							i(45649, {	-- Helm of the Wayward Vanquisher
 								i(45398),
 								i(45346),
 								i(45356),
@@ -591,7 +620,7 @@ _.Instances =
 							i(45493),
 							i(45491),
 							i(142092),
-							i(45641, { -- Gauntlets of the Wayward Conqueror
+							i(45641, {	-- Gauntlets of the Wayward Conqueror
 								i(46163),
 								i(46188),
 								i(46135),
@@ -599,7 +628,7 @@ _.Instances =
 								i(46179),
 								i(46155),
 							}),
-							i(45642, { -- Gauntlets of the Wayward Protector
+							i(45642, {	-- Gauntlets of the Wayward Protector
 								i(46199),
 								i(46200),
 								i(46207),
@@ -607,7 +636,7 @@ _.Instances =
 								i(46148),
 								i(46142),
 							}),
-							i(45643, { -- Gauntlets of the Wayward Vanquisher
+							i(45643, {	-- Gauntlets of the Wayward Vanquisher
 								i(46124),
 								i(46183),
 								i(46158),
@@ -617,7 +646,7 @@ _.Instances =
 								i(46113),
 							}),
 						})),
-						cr(33271, e(1648, { -- General Vezax
+						cr(33271, e(1648, {	-- General Vezax
 							ach(12373, {	-- I Love the Smell of Saronite in the Morning
 								i(46032),
 								i(46034),
@@ -670,7 +699,7 @@ _.Instances =
 							i(46028),
 							i(46019),
 							i(46030),
-							i(45635, { -- Chestguard of the Wayward Conqueror
+							i(45635, {	-- Chestguard of the Wayward Conqueror
 								i(45389),
 								i(45395),
 								i(45421),
@@ -678,7 +707,7 @@ _.Instances =
 								i(45381),
 								i(45375),
 							}),
-							i(45636, { -- Chestguard of the Wayward Protector
+							i(45636, {	-- Chestguard of the Wayward Protector
 								i(45405),
 								i(45411),
 								i(45413),
@@ -686,7 +715,7 @@ _.Instances =
 								i(45429),
 								i(45364),
 							}),
-							i(45637, { -- Chestguard of the Wayward Vanquisher
+							i(45637, {	-- Chestguard of the Wayward Vanquisher
 								i(45396),
 								i(45354),
 								i(45348),
@@ -703,7 +732,7 @@ _.Instances =
 							i(45529),
 							i(45524),
 							i(45531),
-							i(45656, { -- Mantle of the Wayward Conqueror
+							i(45656, {	-- Mantle of the Wayward Conqueror
 								i(46190),
 								i(46165),
 								i(46136),
@@ -711,7 +740,7 @@ _.Instances =
 								i(46152),
 								i(46177),
 							}),
-							i(45657, { -- Mantle of the Wayward Protector
+							i(45657, {	-- Mantle of the Wayward Protector
 								i(46204),
 								i(46211),
 								i(46203),
@@ -719,7 +748,7 @@ _.Instances =
 								i(46167),
 								i(46145),
 							}),
-							i(45658, { -- Mantle of the Wayward Vanquisher
+							i(45658, {	-- Mantle of the Wayward Vanquisher
 								i(46127),
 								i(46187),
 								i(46157),
@@ -737,8 +766,8 @@ _.Instances =
 								["groups"] = {
 									i(45039, {	-- Shattered Fragments of Val'anyr
 										q(13622, {	-- Ancient History
-											q(13629, { -- Val'anyr, Hammer of Ancient Kings
-												i(46017)  -- Val'anyr, Hammer of Ancient Kings
+											q(13629, {	-- Val'anyr, Hammer of Ancient Kings
+												i(46017) 	-- Val'anyr, Hammer of Ancient Kings
 											})
 										})
 									})

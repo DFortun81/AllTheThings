@@ -8,44 +8,48 @@ _.Instances =
 		["groups"] = {
 			inst(756, { 	-- The Eye of Eternity
 				["groups"] = {
-					d(3, {
-						cr(28859, e(1617, {
-							i(40497),
-							i(40489),
-							i(40488),
-							i(40491),
-							i(40475),
-							i(40511),
-							i(40526),
-							i(40519),
-							i(43953),
-							i(43952),
-						}))
+					d(3, {	-- 10-Player
+						cr(28859, e(1617, {	-- Malygos
+							i(43952),	-- Reins of the Azure Drake (MOUNT!)
+							i(43953),	-- Reins of the Blue Drake (MOUNT!)
+							i(40497),	-- Black Ice
+							i(40489),	-- Greatstaff of the Nexus
+							i(40491),	-- Hailstorm
+							i(40488),	-- Ice Spire Scepter
+							i(40475),	-- Barricade of Eternity
+							i(40486),	-- Necklace of the Glittering Chamber
+							i(40511),	-- Focusing Energy Epaulets
+							i(40526),	-- Gown of the Spell-Weaver
+							i(40519),	-- Footsteps of Malygos
+							i(40474),	-- Surge Needle Ring
+						})),
 					}),
-					d(4, {
-						cr(28859, e(1617, {
-							i(40562),
-							i(40543),
-							i(40590),
-							i(40594),
-							i(40555),
-							i(40588),
-							i(40539),
-							i(40194),
-							i(40564),
-							i(40541),
-							i(40566),
-							i(40561),
-							i(40589),
-							i(40560),
-							i(40549),
-							i(40591),
-							i(40592),
-							i(40558),
-							i(43953),
-							i(43952),
-						}))
-					})
+					d(4, {	-- 25-Player
+						cr(28859, e(1617, {	-- Malygos
+							i(43952),	-- Reins of the Azure Drake (MOUNT!)
+							i(43953),	-- Reins of the Blue Drake (MOUNT!)
+							i(40543),	-- Blue Aspect Helm
+							i(40562),	-- Hood of Rationality
+							i(40590),	-- Elevated Lair Pauldrons
+							i(40555),	-- Mantle of Dissemination
+							i(40594),	-- Spaulders of Catatonia
+							i(40194),	-- Blanketing Robes of Snow
+							i(40539),	-- Chestguard of the Recluse
+							i(40588),	-- Tunic of the Artifact Guardian
+							i(40541),	-- Frosted Adroit Handguards
+							i(40564),	-- Winter Spectacle Gloves
+							i(40561),	-- Leash of Heedless Magic
+							i(40566),	-- Unravelling Strands of Sanity
+							i(40560),	-- Leggings of the Wanton Spellcaster
+							i(40589),	-- Legplates of Soveriegnty
+							i(40558),	-- Arcanic Tramplers
+							i(40592),	-- Boots of Healing Energies
+							i(40549),	-- Boots of the Renewed Flight
+							i(40591),	-- Melancholy Sabatons
+							i(40532),	-- Living Ice Crystals
+							i(40531),	-- Mark of Norgannon
+						})),
+					}),
 				},
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
