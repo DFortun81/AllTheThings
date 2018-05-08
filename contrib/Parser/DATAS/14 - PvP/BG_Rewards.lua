@@ -74,7 +74,6 @@ _.PVP =
 	}),
 	i(135541, {	-- Crusader's Crate of Battlefield Goods 60-69
 		["groups"] = {
-			i(134587),	-- Vanguard Drape
 			i(134584),	-- Inciter's Cord
 			i(134585),	-- Inciter's Cuffs
 			i(134583),	-- Inciter's Treads
@@ -86,7 +85,8 @@ _.PVP =
 			i(134595),	-- Agitator's Waistguard
 			i(134602),	-- Instigator's Armplates*
 			i(134601),	-- Instigator's Girdle
-			i(134600),	-- Instigator's Warboots
+			i(134600),	-- Instigator's Warboots*
+			i(134587),	-- Vanguard Drape*
 			i(134580),	-- Vanguard Heavy Crossbow
 			i(134581),	-- Vanguard Shanker
 			i(134589),	-- Vanguard Reprieve

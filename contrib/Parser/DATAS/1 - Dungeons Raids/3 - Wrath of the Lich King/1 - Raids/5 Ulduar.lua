@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(759, { 	-- Ulduar
 				["groups"] = {
-					d(14, {
+					d(14, {	-- Normal
 						n(0, {		-- Zone Drop
 							i(46341),	-- Drape of the Spellweaver
 							i(46347),	-- Cloak of the Dormant Blaze
@@ -237,530 +237,603 @@ _.Instances =
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(32871, e(1650, {	-- Algalon the Observer
-							i(46044),
-							i(46037),
-							i(46042),
-							i(46039),
-							i(46045),
-							i(46043),
-							i(46041),
-							i(46049),
-							i(46050),
 							i(46052, {	-- Reply-Code Alpha
-								i(46320),
-								i(46321),
+								q(13631, {	-- All Is Well That Ends Well
+									i(46320),	-- Drape of the Skyherald
+									i(46321),	-- Sunglimmer Drape
+									i(46322),	-- Brann's Sealing Ring
+									i(46323),	-- Starshine Signet
+								}),
 							}),
-							i(45613),
-							i(45620),
-							i(45612),
-							i(45607),
-							i(45570),
-							i(45587),
-							i(45617),
-							i(45610),
-							i(45611),
-							i(45665),
-							i(45616),
-							i(45619),
-							i(45594),
-							i(45615),
-							i(45599),
 							i(46053, {	-- Reply-Code Alpha
-								i(45588),	-- Drape of the Skyborn
-								i(45618),	-- Sunglimmer Cloak
+								q(13819, {	-- Heroic: All Is Well That Ends Well
+									i(45588),	-- Drape of the Skyborn
+									i(45618),	-- Sunglimmer Cloak
+									i(45608),	-- Brann's Signet Ring
+									i(45614),	-- Starshine Circle
+								}),
 							}),
+							i(45038),	-- Fragment of Val'anyr
+							i(45087),	-- Runed Orb
+							i(45613),	-- Dreambinder
+							i(45612),	-- Constellus
+							i(45607),	-- Fang of Oblivion
+							i(45620),	-- Starshard Edge
+							i(45570),	-- Skyforge Crossbow
+							i(45587),	-- Bulwark of Algalon
+							i(45617),	-- Cosmos
+							i(45610),	-- Boundless Gaze
+							i(46047),	-- Pendant of the Somber Witness
+							i(46040),	-- Strength of the Heavens
+							i(46044),	-- Observer's Mantle
+							i(46037),	-- Shoulderplates of the Celestial Watch
+							i(46042),	-- Drape of the Messenger
+							i(46039),	-- Breastplate of the Timeless
+							i(45611),	-- Solar Bindings
+							i(46043),	-- Gloves of the Endless Dark
+							i(45665),	-- Pharos Gloves
+							i(46045),	-- Pulsar Gloves
+							i(45616),	-- Star-Beaded Clutch
+							i(46041),	-- Starfall Girdle
+							i(45619),	-- Starwatcher's Binding
+							i(45594),	-- Legplates of the Endless Void
+							i(46049),	-- Zodiac Leggings
+							i(45615),	-- Planewalker Treads
+							i(45599),	-- Sabatons of Lifeless Night
+							i(46050),	-- Starlight Treads
+							i(46048),	-- Band of Lights
+							i(46046),	-- Nebula Band
+							i(45609),	-- Comet's Trail
+							i(46038),	-- Dark Matter
+							i(46051),	-- Meteorite Crystal
 						})),
 						cr(32867, e(1641, {	-- Assembly of Iron 32927, 32857
 							ach(12334, {	-- I Choose You, Steelbreaker
-								i(45455),
-								i(45449),
-								i(45448),
-								i(45242),
-								i(45245),
-								i(45244),
-								i(45241),
-								i(45607),
+								i(45607),	-- Fang of Oblivion
+								i(45448),	-- Perilous Bite
+								i(45449),	-- The Masticator
+								i(45243),	-- Sapphire Amulet of Renewal
+								i(45447),	-- Watchful Eye of Fate
+								i(45245),	-- Shoulderpads of the Intruder
+								i(45242),	-- Drape of Mortal Downfall
+								i(45241),	-- Belt of Colossal Rage
+								i(45455),	-- Belt of the Crystal Tree
+								i(45244),	-- Greaves of Swift Vengeance
+								i(45456),	-- Loop of the Agile
 							}),
-							i(46027),	-- Formula: Enchant Weapon - Blade Ward
-							i(46348),	-- Formula: Enchant Weapon - Blood Draining
-							i(45332),
-							i(45331),
-							i(45329),
-							i(45322),
-							i(45423),
-							i(45333),
-							i(45324),
-							i(45378),
-							i(45330),
-							i(45234),
-							i(45233),
-							i(45226),
-							i(45227),
-							i(45224),
-							i(45237),
-							i(45240),
-							i(45225),
-							i(45228),
-							i(45239),
-							i(45238),
-							i(45232),
-							i(142088),
+							i( 45038),	-- Fragment of Val'anyr
+							i( 45087),	-- Runed Orb
+							i(142088),	-- Stormforged Rune (PET!)
+							i( 45234),	-- Rapture
+							i( 45233),	-- Stormrune Edge
+							i( 45331),	-- Rune-Etched Nightblade
+							i( 45332),	-- Stormtip
+							i( 45226),	-- Ancient Iron Heaume
+							i( 45329),	-- Circlet of True Sight
+							i( 45193),	-- Insurmountable Fervor
+							i( 45236),	-- Unblinking Eye
+							i( 45227),	-- Iron-Studded Mantle
+							i( 45322),	-- Cloak of the Iron Council
+							i( 45224),	-- Drape of the Lithe
+							i( 45237),	-- Phaelia's Vestments of the Sprouting Seed
+							i( 45240),	-- Raiments of the Iron Council
+							i( 45225),	-- Steelbreaker's Embrace
+							i( 45423),	-- Runetouch Wristwraps
+							i( 45228),	-- Handguards of the Enclave
+							i( 45239),	-- Runeshaper's Gloves
+							i( 45333),	-- Belt of the Iron Servant
+							i( 45324),	-- Leggings of Swift Reflexes
+							i( 45238),	-- Overload Legwraps
+							i( 45378),	-- Boots of the Petrified Forest
+							i( 45330),	-- Greaves of Iron Intensity
+							i( 45232),	-- Runed Ironhide Boots
+							i( 45418),	-- Lady Maye's Sapphire Ring
+							i( 45235),	-- Radiant Seal
+							i( 46027),	-- Formula: Enchant Weapon - Blade Ward
+							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(32930, e(1642, {	-- Kologarn
-							i(45695),
-							i(45700),
-							i(45697),
-							i(45704),
-							i(45701),
-							i(45698),
-							i(45266),
-							i(45261),
-							i(45271),
-							i(45265),
-							i(45272),
-							i(45275),
-							i(45269),
-							i(45264),
-							i(45268),
-							i(45273),
-							i(45274),
-							i(45267),
+							i(45038),	-- Fragment of Val'anyr
+							i(45087),	-- Runed Orb
+							i(45695),	-- Spire of Withering Dreams
+							i(45266),	-- Malice
+							i(45700),	-- Stoneguard
+							i(45261),	-- Giant's Bane
+							i(45271),	-- Ironmender
+							i(45696),	-- Mark of the Unyielding
+							i(45262),	-- Necklace of Unerring Mettle
+							i(45699),	-- Pendant of the Piercing Glare
+							i(45697),	-- Shoulderguards of the Solemn Watch
+							i(45265),	-- Shoulderpads of the Monolith
+							i(45704),	-- Shawl of the Shattered Giant
+							i(45272),	-- Robes of the Umbral Brute
+							i(45275),	-- Bracers of Unleashed Magic
+							i(45264),	-- Decimator's Armguards
+							i(45269),	-- Unfaltering Armguards
+							i(45268),	-- Gloves of the Pythonic Guardian
+							i(45273),	-- Handwraps of Plentiful Recovery
+							i(45274),	-- Leggings of the Stoneweaver
+							i(45267),	-- Saronite Plated Legguards
+							i(45701),	-- Greaves of the Earthbinder
+							i(45698),	-- Sabatons of the Iron Watcher
+							i(45702),	-- Emerald Signet Ring
+							i(45703),	-- Spark of Hope
+							i(45263),	-- Wrathstone
 						})),
 						cr(33515, e(1643, {	-- Auriaya
-							i(46027),	-- Formula: Enchant Weapon - Blade Ward
-							i(46348),	-- Formula: Enchant Weapon - Blood Draining
-							i(45713),
-							i(45707),
-							i(45864),
-							i(45711),
-							i(45832),
-							i(45712),
-							i(45865),
-							i(45709),
-							i(45708),
-							i(45315),
-							i(45437),
-							i(45327),
-							i(45435),
-							i(45439),
-							i(45440),
-							i(45320),
-							i(45319),
-							i(45334),
-							i(45325),
-							i(45434),
-							i(45441),
-							i(142089),
+							i( 45038),	-- Fragment of Val'anyr
+							i(142089),	-- Glittering Ball of Yarn (PET!)
+							i( 45087),	-- Runed Orb
+							i( 45437),	-- Runescribed Blade
+							i( 45315),	-- Stonerender
+							i( 45713),	-- Nurturing Touch
+							i( 45327),	-- Siren's Cry
+							i( 45707),	-- Shieldwall of the Breaker
+							i( 45864),	-- Cover of the Keepers
+							i( 45435),	-- Cowl of the Absolute
+							i( 45439),	-- Unwavering Stare
+							i( 45440),	-- Amice of the Stoic Watch
+							i( 45711),	-- Ironaya's Discarded Mantle
+							i( 45832),	-- Mantle of the Preserver
+							i( 45320),	-- Shoulderplates of the Eternal
+							i( 45319),	-- Cloak of the Makers
+							i( 45712),	-- Chestplate of Titanic Fury
+							i( 45865),	-- Raiments of the Corrupted
+							i( 45334),	-- Unbreakable Chestguard
+							i( 45325),	-- Gloves of the Stonereaper
+							i( 45709),	-- Nimble Climber's Belt
+							i( 45708),	-- Archaedas' Lost Legplates
+							i( 45434),	-- Greaves of the Rockmender
+							i( 45441),	-- Sandals of the Ancient Keeper
+							i( 45326),	-- Platinum Band of the Aesir
+							i( 45438),	-- Ring of the Faithful Servant
+							i( 45866),	-- Elemental Focus Stone
+							i( 46027),	-- Formula: Enchant Weapon - Blade Ward
+							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(32845, e(1644, {	-- Hodir
 							ach(12347, {	-- I Could Say That This Cache Was Rare
-								i(45888),
-								i(45876),
-								i(45886),
-								i(45887),
-								i(45877),
-								i(45461),
-								i(45462),
-								i(45460),
-								i(45612),
-								i(45457),
+								i(45886),	-- Icecore Staff
+								i(45457),	-- Staff of Endless Winter
+								i(45612),	-- Constellus
+								i(45876),	-- Shiver
+								i(45887),	-- Ice Layered Barrier
+								i(45877),	-- The Boreal Guard
+								i(45459),	-- Frigid Strength of Hodir
+								i(45461),	-- Drape of Icy Intent
+								i(45460),	-- Bindings of Winter Gale
+								i(45888),	-- Bitter Cold Armguards
+								i(45462),	-- Gloves of the Frozen Glade
 							}),
-							i(45458),
-							i(45872),
-							i(45464),
-							i(45873),
-							i(45650, {
-								i(45394),
-								i(45388),
-								i(45420),
-								i(45379),
-								i(45384),
-								i(45371),
+							i( 45632, {	-- Breastplate of the Wayward Conqueror
+								i(46154),	-- Conqueror's Aegis Battleplate
+								i(46173),	-- Conqueror's Aegis Breastplate
+								i(46178),	-- Conqueror's Aegis Tunic
+								i(46168),	-- Conqueror's Raiments of Sanctification
+								i(46193),	-- Conqueror's Robe of Sanctification
+								i(46137),	-- Conqueror's Deathbringer Robe
 							}),
-							i(45651, {
-								i(45416),
-								i(45403),
-								i(45409),
-								i(45432),
-								i(45427),
-								i(45362),
+							i( 45633, {	-- Breastplate of the Wayward Protector
+								i(46141),	-- Conqueror's Scourgestalker Tunic
+								i(46205),	-- Conqueror's Worldbreaker Chestguard
+								i(46206),	-- Conqueror's Worldbreaker Hauberk
+								i(46198),	-- Conqueror's Worldbreaker Tunic
+								i(46146),	-- Conqueror's Siegebreaker Battleplate
+								i(46162),	-- Conqueror's Siegebreaker Breastplate
 							}),
-							i(45652, {
-								i(45399),
-								i(45353),
-								i(45357),
-								i(45347),
-								i(45367),
-								i(45343),
-								i(45338),
+							i( 45634, {	-- Breastplate of the Wayward Vanquisher
+								i(46111),	-- Conqueror's Darkruned Battleplate
+								i(46118),	-- Conqueror's Darkruned Chestguard
+								i(46159),	-- Conqueror's Nightsong Raiments
+								i(46186),	-- Conqueror's Nightsong Robe
+								i(46194),	-- Conqueror's Nightsong Vestments
+								i(46130),	-- Conqueror's Kirin Tor Tunic
+								i(46123),	-- Conqueror's Terrorblade Breastplate
 							}),
-							i(138800),
-							i(45450),
-							i(45453),
-							i(45454),
-							i(45452),
-							i(45632, {	-- Breastplate of the Wayward Conqueror
-								i(46193),
-								i(46168),
-								i(46137),
-								i(46178),
-								i(46173),
-								i(46154),
+							i( 45038),	-- Fragment of Val'anyr
+							i(138800),	-- Illusion: Blade Ward
+							i( 45650, {	-- Leggings of the Wayward Conqueror
+								i(45371),	-- Valorous Aegis Greaves
+								i(45384),	-- Valorous Aegis Legguards
+								i(45379),	-- Valorous Aegis Legplates
+								i(45388),	-- Valorous Leggings of Sanctification
+								i(45394),	-- Valorous Pants of Sanctification
+								i(45420),	-- Valorous Deathbringer Leggings
 							}),
-							i(45633, {	-- Breastplate of the Wayward Protector
-								i(46198),
-								i(46206),
-								i(46205),
-								i(46162),
-								i(46146),
-								i(46141),
+							i( 45651, {	-- Leggings of the Wayward Protector
+								i(45362),	-- Valorous Scourgestalker Legguards
+								i(45409),	-- Valorous Worldbreaker Kilt
+								i(45403),	-- Valorous Worldbreaker Legguards
+								i(45416),	-- Valorous Worldbreaker War-Kilt
+								i(45427),	-- Valorous Siegebreaker Legguards
+								i(45432),	-- Valorous Siegebreaker Legplates
 							}),
-							i(45634, {	-- Breastplate of the Wayward Vanquisher
-								i(46123),
-								i(46194),
-								i(46186),
-								i(46159),
-								i(46130),
-								i(46118),
-								i(46111),
+							i( 45652, {	-- Leggings of the Wayward Vanquisher
+								i(45338),	-- Valorous Darkruned Legguards
+								i(45343),	-- Valorous Darkruned Legplates
+								i(45347),	-- Valorous Nightsong Leggings
+								i(45357),	-- Valorous Nightsong Legguards
+								i(45353),	-- Valorous Nightsong Trousers
+								i(45367),	-- Valorous Kirin Tor Leggings
+								i(45399),	-- Valorous Terrorblade Legplates
 							}),
-							i(142090),
+							i(142090),	-- Ominous Pile of Snow (PET!)
+							i( 45087),	-- Runed Orb
+							i( 45458),	-- Stormedge
+							i( 45872),	-- Avalanche
+							i( 45450),	-- Northern Barrier
+							i( 45464),	-- Cowl of Icy Breaths
+							i( 45873),	-- Winter's Frigid Embrace
+							i( 45453),	-- Winter's Icy Embrace
+							i( 45454),	-- Frost-Bound Chain Bracers
+							i( 45452),	-- Frostplate Greaves
+							i( 45451),	-- Frozen Loop
+							i( 45874),	-- Signet of Winter
 						})),
 						cr(32865, e(1645, {	-- Thorim
 							ach(12352, {	-- Lose Your Illusion
-								i(45928),
-								i(45930),
-								i(45473),
-								i(45474),
-								i(45472),
-								i(45570),
-								i(45470),
+								i(45930),	-- Combatant's Bootblade
+								i(45570),	-- Skyforge Crossbow
+								i(45470),	-- Wisdom's Hold
+								i(45472),	-- Warhelm of the Champion
+								i(45933),	-- Pendant of the Shallow Grave
+								i(45474),	-- Pauldrons of the Combatant
+								i(45473),	-- Embrace of the Gladiator
+								i(45928),	-- Gauntlets of the Thunder Lord
+								i(45471),	-- Fate's Clutch
+								i(45931),	-- Mjolnir Runestone
+								i(45929),	-- Sif's Remembrance
 							}),
-							i(45892),
-							i(45893),
-							i(45927),
-							i(45895),
-							i(45894),
-							i(45659, {	-- Spaulders of the Wayward Conqueror
-								i(45390),
-								i(45393),
-								i(45422),
-								i(45373),
-								i(45380),
-								i(45385),
+							i( 45638, {	-- Crown of the Wayward Conqueror
+								i(46175),	-- Conqueror's Aegis Faceguard
+								i(46180),	-- Conqueror's Aegis Headpiece
+								i(46156),	-- Conqueror's Aegis Helm
+								i(46172),	-- Conqueror's Circlet of Sanctification
+								i(46197),	-- Conqueror's Cowl of Sanctification
+								i(46140),	-- Conqueror's Deathbringer Hood
 							}),
-							i(45660, {	-- Spaulders of the Wayward Protector
-								i(45404),
-								i(45410),
-								i(45415),
-								i(45433),
-								i(45428),
-								i(45363),
+							i( 45639, {	-- Crown of the Wayward Protector
+								i(46143),	-- Conqueror's Scourgestalker Headpiece
+								i(46212),	-- Conqueror's Worldbreaker Faceguard
+								i(46201),	-- Conqueror's Worldbreaker Headpiece
+								i(46209),	-- Conqueror's Worldbreaker Helm
+								i(46166),	-- Conqueror's Siegebreaker Greathelm
+								i(46151),	-- Conqueror's Siegebreaker Helmet
 							}),
-							i(45661, {	-- Spaulders of the Wayward Vanquisher
-								i(45400),
-								i(45349),
-								i(45359),
-								i(45352),
-								i(45369),
-								i(45344),
-								i(45339),
+							i( 45640, {	-- Crown of the Wayward Vanquisher
+								i(46120),	-- Conqueror's Darkruned Faceguard
+								i(46115),	-- Conqueror's Darkruned Helmet
+								i(46191),	-- Conqueror's Nightsong Cover
+								i(46161),	-- Conqueror's Nightsong Headguard
+								i(46184),	-- Conqueror's Nightsong Headpiece
+								i(46129),	-- Conqueror's Kirin Tor Hood
+								i(46125),	-- Conqueror's Terrorblade Helmet
 							}),
-							i(138800),
-							i(45463),
-							i(45467),
-							i(45468),
-							i(45638, {	-- Crown of the Wayward Conqueror
-								i(46140),
-								i(46197),
-								i(46172),
-								i(46156),
-								i(46180),
-								i(46175),
+							i( 45038),	-- Fragment of Val'anyr
+							i(138800),	-- Illusion: Blade Ward
+							i( 45087),	-- Runed Orb
+							i( 45659, {	-- Spaulders of the Wayward Conqueror
+								i(45385),	-- Valorous Aegis Shoulderguards
+								i(45380),	-- Valorous Aegis Shoulderplates
+								i(45373),	-- Valorous Aegis Spaulders
+								i(45393),	-- Valorous Mantle of Sanctification
+								i(45390),	-- Valorous Shoulderpads of Sanctification
+								i(45422),	-- Valorous Deathbringer Shoulderpads
 							}),
-							i(45639, {	-- Crown of the Wayward Protector
-								i(46209),
-								i(46201),
-								i(46212),
-								i(46151),
-								i(46166),
-								i(46143),
+							i( 45660, {	-- Spaulders of the Wayward Protector
+								i(45363),	-- Valorous Scourgestalker Spaulders
+								i(45415),	-- Valorous Worldbreaker Shoulderguards
+								i(45410),	-- Valorous Worldbreaker Shoulderpads
+								i(45404),	-- Valorous Worldbreaker Spaulders
+								i(45428),	-- Valorous Siegebreaker Pauldrons
+								i(45433),	-- Valorous Siegebreaker Shoulderplates
 							}),
-							i(45640, {	-- Crown of the Wayward Vanquisher
-								i(46125),
-								i(46184),
-								i(46161),
-								i(46191),
-								i(46129),
-								i(46115),
-								i(46120),
+							i( 45661, {	-- Spaulders of the Wayward Vanquisher
+								i(45339),	-- Valorous Darkruned Pauldrons
+								i(45344),	-- Valorous Darkruned Shoulderplates
+								i(45352),	-- Valorous Nightsong Mantle
+								i(45359),	-- Valorous Nightsong Shoulderpads
+								i(45349),	-- Valorous Nightsong Spaulders
+								i(45369),	-- Valorous Kirin Tor Shoulderpads
+								i(45400),	-- Valorous Terrorblade Pauldrons
 							}),
+							i( 45892),	-- Legacy of Thunder
+							i( 45463),	-- Vulmir, the Northern Tempest
+							i( 45893),	-- Guise of the Midgard Serpent
+							i( 45927),	-- Handwraps of Resonance
+							i( 45467),	-- Belt of the Betrayed
+							i( 45895),	-- Belt of the Blood Pit
+							i( 45468),	-- Leggings of Lost Love
+							i( 45894),	-- Leggings of Unstable Discharge
+							i( 45469),	-- Sif's Promise
+							i( 45466),	-- Scale of Fates
 						})),
 						cr(32906, e(1646, {	-- Freya
 							ach(12366, {	-- Knock,Knock, Knock on Wood
-								i(45943),
-								i(45947),
-								i(45294),
-								i(45486),
-								i(45488),
-								i(45487),
-								i(45484),
-								i(45613),
+								i(45613),	-- Dreambinder
+								i(45484),	-- Bladetwister
+								i(45947),	-- Serilas, Blood Blade of Invar One-Arm
+								i(45294),	-- Petrified Ivy Sprig
+								i(45485),	-- Bronze Pendant of the Vanir
+								i(45945),	-- Seed of Budding Carnage
+								i(45486),	-- Drape of the Sullen Goddess
+								i(45943),	-- Gloves of Whispering Winds
+								i(45487),	-- Handguards of Revitalization
+								i(45488),	-- Leggings of the Enslaved Idol
+								i(45946),	-- Fire Orchid Signet
 							}),
-							i(45934),
-							i(45935),
-							i(45940),
-							i(45941),
-							i(45936),
-							i(142091),
-							i(45644, {	-- Gloves of the Wayward Conqueror
-								i(45392),
-								i(45387),
-								i(45419),
-								i(45383),
-								i(45370),
-								i(45376),
+							i(142091),	-- Blessed Seed (PET!)
+							i( 45038),	-- Fragment of Val'anyr
+							i( 45644, {	-- Gloves of the Wayward Conqueror
+								i(45376),	-- Valorous Aegis Gauntlets
+								i(45370),	-- Valorous Aegis Gloves
+								i(45383),	-- Valorous Aegis Handguards
+								i(45387),	-- Valorous Gloves of Sanctification
+								i(45392),	-- Valorous Handwraps of Sanctification
+								i(45419),	-- Valorous Deathbringer Gloves
 							}),
-							i(45645, {	-- Gloves of the Wayward Protector
-								i(45401),
-								i(45414),
-								i(45406),
-								i(45426),
-								i(45430),
-								i(45360),
+							i( 45645, {	-- Gloves of the Wayward Protector
+								i(45360),	-- Valorous Scourgestalker Handguards
+								i(45406),	-- Valorous Worldbreaker Gloves
+								i(45414),	-- Valorous Worldbreaker Grips
+								i(45401),	-- Valorous Worldbreaker Handguards
+								i(45430),	-- Valorous Siegebreaker Gauntlets
+								i(45426),	-- Valorous Siegebreaker Handguards
 							}),
-							i(45646, {	-- Gloves of the Wayward Vanquisher
-								i(45397),
-								i(45345),
-								i(45355),
-								i(45351),
-								i(46131),
-								i(45337),
-								i(45341),
+							i( 45646, {	-- Gloves of the Wayward Vanquisher
+								i(45341),	-- Valorous Darkruned Gauntlets
+								i(45337),	-- Valorous Darkruned Handguards
+								i(45351),	-- Valorous Nightsong Gloves
+								i(45355),	-- Valorous Nightsong Handgrips
+								i(45345),	-- Valorous Nightsong Handguards
+								i(46131),	-- Valorous Kirin Tor Gauntlets
+								i(45397),	-- Valorous Terrorblade Gauntlets
 							}),
-							i(138800),
-							i(45479),
-							i(45481),
-							i(45482),
-							i(45483),
-							i(142091),
-							i(45653, {	-- Legplates of the Wayward Conqueror
-								i(46170),
-								i(46195),
-								i(46139),
-								i(46153),
-								i(46176),
-								i(46181),
+							i(138800),	-- Illusion: Blade Ward
+							i( 45653, {	-- Legplates of the Wayward Conqueror
+								i(46153),	-- Conqueror's Aegis Legplates
+								i(46176),	-- Conqueror's Aegis Legguards
+								i(46181),	-- Conqueror's Aegis Greaves
+								i(46195),	-- Conqueror's Leggings of Sanctification
+								i(46170),	-- Conqueror's Pants of Sanctification
+								i(46139),	-- Conqueror's Deathbringer Leggings
 							}),
-							i(45654, {	-- Legplates of the Wayward Protector
-								i(46208),
-								i(46202),
-								i(46210),
-								i(46150),
-								i(46169),
-								i(46144),
+							i( 45654, {	-- Legplates of the Wayward Protector
+								i(46144),	-- Conqueror's Scourgestalker Legguards
+								i(46210),	-- Conqueror's Worldbreaker Kilt
+								i(46202),	-- Conqueror's Worldbreaker Legguards
+								i(46208),	-- Conqueror's Worldbreaker War-Kilt
+								i(46169),	-- Conqueror's Siegebreaker Legguards
+								i(46150),	-- Conqueror's Siegebreaker Legplates
 							}),
-							i(45655, {	-- Legplates of the Wayward Vanquisher
-								i(46126),
-								i(46192),
-								i(46160),
-								i(46185),
-								i(46133),
-								i(46116),
-								i(46121),
+							i( 45655, {	-- Legplates of the Wayward Vanquisher
+								i(46121),	-- Conqueror's Darkruned Legguards
+								i(46116),	-- Conqueror's Darkruned Legplates
+								i(46185),	-- Conqueror's Nightsong Leggings
+								i(46160),	-- Conqueror's Nightsong Legguards
+								i(46192),	-- Conqueror's Nightsong Trousers
+								i(46133),	-- Conqueror's Kirin Tor Leggings
+								i(46126),	-- Conqueror's Terrorblade Legplates
 							}),
+							i( 45087),	-- Runed Orb
+							i( 45479),	-- The Lifebinder
+							i( 45934),	-- Unraveling Reach
+							i( 45935),	-- Ironbark Faceguard
+							i( 45480),	-- Nymph Heart Charm
+							i( 45941),	-- Chestguard of the Lasher
+							i( 45940),	-- Tunic of the Limber Stalker
+							i( 45481),	-- Gauntlets of Ruthless Reprisal
+							i( 45482),	-- Leggings of the Lifetender
+							i( 45936),	-- Legplates of Fluorishing Resolve
+							i( 45483),	-- Boots of the Servant
 						})),
 						cr(33350, e(1647, {	-- Mimiron
 							ach(12369, {	-- Firefighter
-								i(45993),
-								i(45989),
-								i(45982),
-								i(45988),
-								i(45990),
-								i(45496),
-								i(45497),
-								i(45663),
-								i(45494),
-								i(45620),
+								i(45494),	-- Delirium's Touch
+								i(45990),	-- Fusion Blade
+								i(45620),	-- Starshard Edge
+								i(45497),	-- Crown of Luminescence
+								i(45993),	-- Mimiron's Flight Goggles
+								i(45496),	-- Titanskin Cloak
+								i(45663),	-- Armbands of Bedlam
+								i(45982),	-- Fused Alloy Legplates
+								i(45988),	-- Greaves of the Iron Army
+								i(45989),	-- Tempered Mercury Greaves
+								i(45495),	-- Conductive Seal
 							}),
-							i(45972),
-							i(45974),
-							i(45973),
-							i(45976),
-							i(45975),
-							i(142092),
-							i(45647, {	-- Helm of the Wayward Conqueror
-								i(45417),
-								i(45386),
-								i(45391),
-								i(45377),
-								i(45372),
-								i(45382),
+							i( 45038),	-- Fragment of Val'anyr
+							i( 45641, {	-- Gauntlets of the Wayward Conqueror
+								i(46163),	-- 
+								i(46188),	-- 
+								i(46135),	-- 
+								i(46174),	-- 
+								i(46179),	-- 
+								i(46155),	-- 
 							}),
-							i(45648, {	-- Helm of the Wayward Protector
-								i(45408),
-								i(45402),
-								i(45412),
-								i(45431),
-								i(45425),
-								i(45361),
+							i( 45642, {	-- Gauntlets of the Wayward Protector
+								i(46199),	-- 
+								i(46200),	-- 
+								i(46207),	-- 
+								i(46164),	-- 
+								i(46148),	-- 
+								i(46142),	-- 
 							}),
-							i(45649, {	-- Helm of the Wayward Vanquisher
-								i(45398),
-								i(45346),
-								i(45356),
-								i(46313),
-								i(45365),
-								i(45342),
-								i(45336),
+							i( 45643, {	-- Gauntlets of the Wayward Vanquisher
+								i(46124),	-- 
+								i(46183),	-- 
+								i(46158),	-- 
+								i(46189),	-- 
+								i(46132),	-- 
+								i(46119),	-- 
+								i(46113),	-- 
 							}),
-							i(138800),
-							i(45489),
-							i(45492),
-							i(45493),
-							i(45491),
-							i(142092),
-							i(45641, {	-- Gauntlets of the Wayward Conqueror
-								i(46163),
-								i(46188),
-								i(46135),
-								i(46174),
-								i(46179),
-								i(46155),
+							i( 45647, {	-- Helm of the Wayward Conqueror
+								i(45417),	-- 
+								i(45386),	-- 
+								i(45391),	-- 
+								i(45377),	-- 
+								i(45372),	-- 
+								i(45382),	-- 
 							}),
-							i(45642, {	-- Gauntlets of the Wayward Protector
-								i(46199),
-								i(46200),
-								i(46207),
-								i(46164),
-								i(46148),
-								i(46142),
+							i( 45648, {	-- Helm of the Wayward Protector
+								i(45408),	-- 
+								i(45402),	-- 
+								i(45412),	-- 
+								i(45431),	-- 
+								i(45425),	-- 
+								i(45361),	-- 
 							}),
-							i(45643, {	-- Gauntlets of the Wayward Vanquisher
-								i(46124),
-								i(46183),
-								i(46158),
-								i(46189),
-								i(46132),
-								i(46119),
-								i(46113),
+							i( 45649, {	-- Helm of the Wayward Vanquisher
+								i(45398),	-- 
+								i(45346),	-- 
+								i(45356),	-- 
+								i(46313),	-- 
+								i(45365),	-- 
+								i(45342),	-- 
+								i(45336),	-- 
 							}),
+							i(138800),	-- Illusion: Blade Ward
+							i(142092),	-- Overcomplicated Controller (PET!)
+							i( 45087),	-- Runed Orb
+							i( 45489),	-- Insanity's Grip
+							i( 45972),	-- Pulse Baton
+							i( 45492),	-- Malleable Steelweave Mantle
+							i( 45974),	-- Shoulderguards of Assimilation
+							i( 45493),	-- Asimov's Drape
+							i( 45973),	-- Stylish Power Cape
+							i( 45976),	-- Static Charge Handwraps
+							i( 45975),	-- Cable of the Metrognome
+							i( 45491),	-- Waistguard of the Creator
+							i( 45490),	-- Pandora's Plea
 						})),
 						cr(33271, e(1648, {	-- General Vezax
 							ach(12373, {	-- I Love the Smell of Saronite in the Morning
-								i(46032),
-								i(46034),
-								i(46036),
-								i(46035),
-								i(46033),
-								i(45520),
-								i(45519),
-								i(45516),
+								i(46033),	-- Tortured Earth
+								i(45516),	-- Voidrethar, Dark Blade of Oblivion
+								i(46035),	-- Aesuga, Hand of the Argent Champion
+								i(46036),	-- Void Sabre
+								i(45517),	-- Pendulum of Infinity
+								i(46032),	-- Drape of the Faceless General
+								i(45519),	-- Vestments of the Blind Denizen
+								i(45520),	-- Handwraps of the Vigilant
+								i(46034),	-- Leggings of Profound Darkness
+								i(45518),	-- Flare of the Heavens
 							}),
+							i(45038),	-- Fragment of Val'anyr
+							i(45087),	-- Runed Orb
+							i(45996),	-- Hoperender
+							i(45498),	-- Lotrafen, Spear of the Damned
+							i(46011),	-- Shadowbite
+							i(45511),	-- Scepter of Lost Souls
+							i(45502),	-- Helm of the Faceless
+							i(46008),	-- Choker of the Abyss
+							i(46015),	-- Pendant of Endless Despair
+							i(45514),	-- Mantle of the Unknowing
+							i(46013),	-- Underworld Mantle
+							i(46014),	-- Saronite Animus Cloak
+							i(46012),	-- Vestments of the Piercing Light
+							i(46009),	-- Bindings of the Depths
+							i(45997),	-- Gauntlets of the Wretched
+							i(45512),	-- Grips of the Unbroken
+							i(45505),	-- Belt of Clinging Hope
+							i(45508),	-- Belt of the Darkspeaker
+							i(45504),	-- Darkcore Leggings
+							i(45513),	-- Boots of the Forgotten Depths
+							i(45501),	-- Boots of the Underdweller
+							i(46010),	-- Darkstone Ring
+							i(45503),	-- Metallic Loop of the Sufferer
+							i(45515),	-- Ring of the Vacant Eye
 							i(46027),	-- Formula: Enchant Weapon - Blade Ward
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining
-							i(45996),
-							i(46011),
-							i(46013),
-							i(46014),
-							i(46012),
-							i(46009),
-							i(45997),
-							i(45498),
-							i(45511),
-							i(45502),
-							i(45514),
-							i(45512),
-							i(45505),
-							i(45508),
-							i(45504),
-							i(45513),
-							i(45501),
+							i(45507),	-- The General's Heart
 						})),
 						cr(33288, e(1649, {	-- Yogg-Saron
 							ach(12388, {	-- Alone in the Darkness
-								i(45693)	-- Mimiron's Head
+								i(45693)	-- Mimiron's Head (MOUNT!)
 							}),	
 							ach(12387, {	-- One Light in the Darkness
-								i(46068),
-								i(46095),
-								i(46097),
-								i(46067),
-								i(45537),
-								i(45536),
-								i(45533),
-							}),	
-							i(46348),	-- Formula: Enchant Weapon - Blood Draining
-							i(46016),
-							i(46025),
-							i(46024),
-							i(46031),
-							i(46018),
-							i(46028),
-							i(46019),
-							i(46030),
-							i(45635, {	-- Chestguard of the Wayward Conqueror
-								i(45389),
-								i(45395),
-								i(45421),
-								i(45374),
-								i(45381),
-								i(45375),
+								i(45533),	-- Dark Edge of Depravity
+								i(46067),	-- Hammer of Crushing Whispers
+								i(46097),	-- Caress of Insanity
+								i(46068),	-- Amice of Inconceivable Horror
+								i(46095),	-- Soul-Devouring Cinch
+								i(45536),	-- Legguards of Cunning Deception
+								i(45537),	-- 
 							}),
-							i(45636, {	-- Chestguard of the Wayward Protector
-								i(45405),
-								i(45411),
-								i(45413),
-								i(45424),
-								i(45429),
-								i(45364),
+							i( 45635, {	-- Chestguard of the Wayward Conqueror
+								i(45375),	-- Valorous Aegis Battleplate
+								i(45381),	-- Valorous Aegis Breastplate
+								i(45374),	-- Valorous Aegis Tunic
+								i(45395),	-- Valorous Raiments of Sanctification
+								i(45389),	-- Valorous Robe of Sanctification
+								i(45421),	-- Valorous Deathbringer Robe
 							}),
-							i(45637, {	-- Chestguard of the Wayward Vanquisher
-								i(45396),
-								i(45354),
-								i(45348),
-								i(45358),
-								i(45368),
-								i(45335),
-								i(45340),
+							i( 45636, {	-- Chestguard of the Wayward Protector
+								i(45364),	-- Valorous Scourgestalker Tunic
+								i(45413),	-- Valorous Worldbreaker Chestguard
+								i(45411),	-- Valorous Worldbreaker Hauberk
+								i(45405),	-- Valorous Worldbreaker Tunic
+								i(45429),	-- Valorous Siegebreaker Battleplate
+								i(45424),	-- Valorous Siegebreaker Breastplate
 							}),
-							i(138801),
-							i(45521),
-							i(45527),
-							i(45532),
-							i(45523),
-							i(45529),
-							i(45524),
-							i(45531),
-							i(45656, {	-- Mantle of the Wayward Conqueror
-								i(46190),
-								i(46165),
-								i(46136),
-								i(46182),
-								i(46152),
-								i(46177),
+							i( 45637, {	-- Chestguard of the Wayward Vanquisher
+								i(45340),	-- Valorous Darkruned Battleplate
+								i(45335),	-- Valorous Darkruned Chestguard
+								i(45358),	-- Valorous Nightsong Raiments
+								i(45348),	-- Valorous Nightsong Robe
+								i(45354),	-- Valorous Nightsong Vestments
+								i(45368),	-- Valorous Kirin Tor Tunic
+								i(45396),	-- Valorous Terrorblade Robe
 							}),
-							i(45657, {	-- Mantle of the Wayward Protector
-								i(46204),
-								i(46211),
-								i(46203),
-								i(46149),
-								i(46167),
-								i(46145),
+							i( 45038),	-- Fragment of Val'anyr
+							i(138801),	-- Illusion: Blood Draining
+							i( 45656, {	-- Mantle of the Wayward Conqueror
+								i(46177),	-- Conqueror's Aegis Shoulderguards
+								i(46152),	-- Conqueror's Aegis Shoulderplates
+								i(46182),	-- Conqueror's Aegis Spaulders
+								i(46165),	-- Conqueror's Mantle of Sanctification
+								i(46190),	-- Conqueror's Shoulderpads of Sanctification
+								i(46136),	-- Conqueror's Deathbringer Shoulderpads
 							}),
-							i(45658, {	-- Mantle of the Wayward Vanquisher
-								i(46127),
-								i(46187),
-								i(46157),
-								i(46196),
-								i(46134),
-								i(46117),
-								i(46122),
+							i( 45657, {	-- Mantle of the Wayward Protector
+								i(46145),	-- Conqueror's Scourgestalker Spaulders
+								i(46203),	-- Conqueror's Worldbreaker Shoulderguards
+								i(46211),	-- Conqueror's Worldbreaker Shoulderpads
+								i(46204),	-- Conqueror's Worldbreaker Spaulders
+								i(46167),	-- Conqueror's Siegebreaker Pauldrons
+								i(46149),	-- Conqueror's Siegebreaker Shoulderplates
 							}),
-							i(142093),
+							i( 45658, {	-- Mantle of the Wayward Vanquisher
+								i(46122),	-- Conqueror's Darkruned Pauldrons
+								i(46117),	-- Conqueror's Darkruned Shoulderplates
+								i(46196),	-- Conqueror's Nightsong Mantle
+								i(46157),	-- Conqueror's Nightsong Shoulderpads
+								i(46187),	-- Conqueror's Nightsong Spaulders
+								i(46134),	-- Conqueror's Kirin Tor Shoulderpads
+								i(46127),	-- Conqueror's Terrorblade Pauldrons
+							}),
+							i( 45087),	-- Runed Orb
+							i(142093),	-- Wriggling Darkness (PET!)
+							i( 46016),	-- Abaddon
+							i( 46025),	-- Devotion
+							i( 45521),	-- Earthshaper
+							i( 46024),	-- Kingsbane
+							i( 45527),	-- Soulscribe
+							i( 46031),	-- Touch of Madness
+							i( 46018),	-- Deliverance
+							i( 45532),	-- Cowl of Dark Whispers
+							i( 46028),	-- Faceguard of the Eyeless Horror
+							i( 45523),	-- Garona's Guise
+							i( 46022),	-- Pendant of a Thousand Maws
+							i( 45529),	-- Shawl of Haunted Memories
+							i( 45524),	-- Chestguard of Insidious Intent
+							i( 45531),	-- Chestguard of the Fallen God
+							i( 46019),	-- Leggings of the Insatiable
+							i( 46030),	-- Treads of the Dragon Council
+							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 					}),
-					d(33--[[Timewalking]], {
+					d(33, {	-- Timewalking
 						n(0, {		-- Zone Drop
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
@@ -794,120 +867,120 @@ _.Instances =
 							-- i(156252),	-- Greaves of the Stonewarder	(no equivalent in TW, 'Retrieving Data' on possible item, no data on WoWHead)
 							i(156257),	-- Daschal's Bite
 						}),
-						cr(33113, e(1637--[[Flame Leviathan]], {
-							--i(45038--[[Fragment of Val'anyr]]),
-							--i(45087--[[Runed Orb]]),
-							i(156012--[[Ironsoul]]),
-							i(156017--[[Firesoul]]),
-							i(155933--[[Golden Saronite Dragon]]),
-							i(156014--[[Kinetic Ripper]]),
-							i(155924--[[Titanguard]]),
-							i(155928--[[Leviathan Fueling Manual]]),
-							i(155921--[[Iron Riveted War Helm]]),
-							i(156019--[[Lifespark Visage]]),
-							i(155931--[[Steamworker's Goggles]]),
-							i(156028--[[Mantle of Fiery Vengeance]]),
-							i(155937--[[Shoulderpads of Dormant Energies]]),
-							i(156018--[[Firestrider Chestguard]]),
-							i(156020--[[Combustion Bracers]]),
-							i(156013--[[Flamewatch Armguards]]),
-							i(155922--[[Mechanist's Bindings]]),
-							i(155925--[[Mimiron's Inferno Couplings]]),
-							i(155930--[[Constructor's Handwraps]]),
-							i(155923--[[Gloves of the Fiery Behemoth]]),
-							i(156022--[[Handguards of Potent Cures]]),
-							i(155932--[[Embrace of the Leviathan]]),
-							i(156024--[[Gilded Steel Legplates]]),
-							i(155935--[[Plated Leggings of Ruination]]),
-							i(155936--[[Boots of Fiery Resolution]]),
-							i(156021--[[Energy Siphon]]),
-							i(156016--[[Pyrite Infuser]]),
+						cr(33113, e(1637, {	-- Flame Leviathan
+							i( 45038),	-- Fragment of Val'anyr
+							i( 45087),	-- Runed Orb
+							i(156012),	-- Ironsoul
+							i(156017),	-- Firesoul
+							i(155933),	-- Golden Saronite Dragon
+							i(156014),	-- Kinetic Ripper
+							i(155924),	-- Titanguard
+							i(155928),	-- Leviathan Fueling Manual
+							i(155921),	-- Iron Riveted War Helm
+							i(156019),	-- Lifespark Visage
+							i(155931),	-- Steamworker's Goggles
+							i(156028),	-- Mantle of Fiery Vengeance
+							i(155937),	-- Shoulderpads of Dormant Energies
+							i(156018),	-- Firestrider Chestguard
+							i(156020),	-- Combustion Bracers
+							i(156013),	-- Flamewatch Armguards
+							i(155922),	-- Mechanist's Bindings
+							i(155925),	-- Mimiron's Inferno Couplings
+							i(155930),	-- Constructor's Handwraps
+							i(155923),	-- Gloves of the Fiery Behemoth
+							i(156022),	-- Handguards of Potent Cures
+							i(155932),	-- Embrace of the Leviathan
+							i(156024),	-- Gilded Steel Legplates
+							i(155935),	-- Plated Leggings of Ruination
+							i(155936),	-- Boots of Fiery Resolution
+							i(156021),	-- Energy Siphon
+							i(156016),	-- Pyrite Infuser
 						})),
-						cr(33118, e(1638--[[Ignis the Furnace Master]], {
-							--i(45038--[[Fragment of Val'anyr]]),
-							i(142086--[[Red-Hot Coal]]),
-							--i(45087--[[Runed Orb]]),
-							i(155961--[[Intensity]]),
-							i(156039--[[Relentless Edge]]),
-							i(155956--[[Worldcarver]]),
-							i(156037--[[Rifle of the Platinum Guard]]),
-							i(155960--[[Scepter of Creation]]),
-							i(156042--[[Igniter Rod]]),
-							i(155955--[[Helm of the Furnace Master]]),
-							i(156049--[[Pauldrons of Tempered Will]]),
-							i(155963--[[Soot-Covered Mantle]]),
-							i(156046--[[Drape of Fuming Anger]]),
-							i(156045--[[Shawl of the Caretaker]]),
-							i(155958--[[Lifeforge Breastplate]]),
-							i(156044--[[Armbraces of the Vibrant Flame]]),
-							i(155964--[[Wristguards of the Firetender]]),
-							i(156038--[[Gauntlets of the Iron Furnace]]),
-							i(156040--[[Gloves of Smoldering Touch]]),
-							i(155962--[[Flamewrought Cinch]]),
-							i(155953--[[Girdle of Embers]]),
-							i(155957--[[Charred Saronite Greaves]]),
-							i(155954--[[Flamestalker Boots]]),
-							i(156041--[[Furnace Stone]]),
-							i(155952--[[Heart of Iron]]),
+						cr(33118, e(1638, {	-- Ignis the Furnace Master
+							i( 45038),	-- Fragment of Val'anyr
+							i(142086),	-- Red-Hot Coal
+							i( 45087),	-- Runed Orb
+							i(155961),	-- Intensity
+							i(156039),	-- Relentless Edge
+							i(155956),	-- Worldcarver
+							i(156037),	-- Rifle of the Platinum Guard
+							i(155960),	-- Scepter of Creation
+							i(156042),	-- Igniter Rod
+							i(155955),	-- Helm of the Furnace Master
+							i(156049),	-- Pauldrons of Tempered Will
+							i(155963),	-- Soot-Covered Mantle
+							i(156046),	-- Drape of Fuming Anger
+							i(156045),	-- Shawl of the Caretaker
+							i(155958),	-- Lifeforge Breastplate
+							i(156044),	-- Armbraces of the Vibrant Flame
+							i(155964),	-- Wristguards of the Firetender
+							i(156038),	-- Gauntlets of the Iron Furnace
+							i(156040),	-- Gloves of Smoldering Touch
+							i(155962),	-- Flamewrought Cinch
+							i(155953),	-- Girdle of Embers
+							i(155957),	-- Charred Saronite Greaves
+							i(155954),	-- Flamestalker Boots
+							i(156041),	-- Furnace Stone
+							i(155952),	-- Heart of Iron
 						})),
-						cr(33186, e(1639--[[Razorscale]], {
-							--i(45038--[[Fragment of Val'anyr]]),
-							i(142087--[[Ironbound Collar]]),
-							--i(45087--[[Runed Orb]]),
-							i(155946--[[Guiding Star]]),
-							i(156026--[[Razorscale Talon]]),
-							i(155943--[[Remorse]]),
-							i(155938--[[Veranus' Bane]]),
-							i(155949--[[Collar of the Wyrmhunter]]),
-							i(156027--[[Dragonsteel Faceplate]]),
-							i(155941--[[Razorscale Shoulderguards]]),
-							i(155939--[[Drape of the Drakerider]]),
-							i(156033--[[Breastplate of the Afterlife]]),
-							i(155948--[[Bracers of the Broodmother]]),
-							i(156029--[[Bracers of the Smothering Inferno]]),
-							i(155945--[[Shackles of the Odalisque]]),
-							i(155950--[[Belt of the Fallen Wyrm]]),
-							i(156034--[[Binding of the Dragon Matriarch]]),
-							i(155940--[[Dragonslayer's Brace]]),
-							i(156032--[[Stormtempered Girdle]]),
-							i(156035--[[Ironscale Leggings]]),
-							i(155942--[[Proto-Hide Leggings]]),
-							i(155944--[[Saronite Mesh Legguards]]),
-							i(156030--[[Treads of the Invader]]),
-							i(156036--[[Eye of the Broodmother]]),
-							i(155947--[[Living Flame]]),
+						cr(33186, e(1639, {	-- Razorscale
+							i( 45038),	-- Fragment of Val'anyr
+							i(142087),	-- Ironbound Collar
+							i( 45087),	-- Runed Orb
+							i(155946),	-- Guiding Star
+							i(156026),	-- Razorscale Talon
+							i(155943),	-- Remorse
+							i(155938),	-- Veranus' Bane
+							i(155949),	-- Collar of the Wyrmhunter
+							i(156027),	-- Dragonsteel Faceplate
+							i(155941),	-- Razorscale Shoulderguards
+							i(155939),	-- Drape of the Drakerider
+							i(156033),	-- Breastplate of the Afterlife
+							i(155948),	-- Bracers of the Broodmother
+							i(156029),	-- Bracers of the Smothering Inferno
+							i(155945),	-- Shackles of the Odalisque
+							i(155950),	-- Belt of the Fallen Wyrm
+							i(156034),	-- Binding of the Dragon Matriarch
+							i(155940),	-- Dragonslayer's Brace
+							i(156032),	-- Stormtempered Girdle
+							i(156035),	-- Ironscale Leggings
+							i(155942),	-- Proto-Hide Leggings
+							i(155944),	-- Saronite Mesh Legguards
+							i(156030),	-- Treads of the Invader
+							i(156036),	-- Eye of the Broodmother
+							i(155947),	-- Living Flame
 						})),
-						cr(33293, e(1640--[[XT-002 Deconstructor]], {
-							--i(45038--[[Fragment of Val'anyr]]),
-							--i(45087--[[Runed Orb]]),
-							i(156290--[[Aesir's Edge]]),
-							i(155993--[[Twisted Visage]]),
-							i(155985--[[Golem-Shard Sticker]]),
-							i(156265--[[Plasma Foil]]),
-							i(156164--[[Sorthalis, Hammer of the Watchers]]),
-							i(156292--[[Magnetized Projectile Emitter]]),
-							i(155994--[[Quartz Crystal Wand]]),
-							i(156264--[[Pulsing Spellshield]]),
-							i(156267--[[Helm of Veiled Energies]]),
-							i(155992--[[Mantle of Wavering Calm]]),
-							i(155990--[[Shoulderplates of the Deconstructor]]),
-							i(156261--[[Treacherous Shoulderpads]]),
-							i(156167--[[Breastplate of the Devoted]]),
-							i(156289--[[Breastplate of the Stoneshaper]]),
-							i(156260--[[Chestplate of Vicious Potency]]),
-							i(155996--[[Quartz-Studded Harness]]),
-							i(156266--[[Vest of the Glowing Crescent]]),
-							i(156263--[[Armbands of the Construct]]),
-							i(156291--[[Fluxing Energy Coils]]),
-							i(156168--[[Grasps of Reason]]),
-							i(155991--[[Horologist's Wristguards]]),
-							i(156262--[[Gloves of Taut Grip]]),
-							i(156166--[[Gloves of the Steady Hand]]),
-							i(156268--[[Conductive Cord]]),
-							i(155987--[[Clockwork Legplates]]),
-							i(155997--[[Boots of Hasty Revival]]),
-							i(155988--[[Brass-Lined Boots]]),
-							i(155995--[[Sandals of Rash Temperament]]),
+						cr(33293, e(1640, {	-- XT-002 Deconstructor
+							i( 45038),	-- Fragment of Val'anyr
+							i( 45087),	-- Runed Orb
+							i(156290),	-- Aesir's Edge
+							i(155993),	-- Twisted Visage
+							i(155985),	-- Golem-Shard Sticker
+							i(156265),	-- Plasma Foil
+							i(156164),	-- Sorthalis, Hammer of the Watchers
+							i(156292),	-- Magnetized Projectile Emitter
+							i(155994),	-- Quartz Crystal Wand
+							i(156264),	-- Pulsing Spellshield
+							i(156267),	-- Helm of Veiled Energies
+							i(155992),	-- Mantle of Wavering Calm
+							i(155990),	-- Shoulderplates of the Deconstructor
+							i(156261),	-- Treacherous Shoulderpads
+							i(156167),	-- Breastplate of the Devoted
+							i(156289),	-- Breastplate of the Stoneshaper
+							i(156260),	-- Chestplate of Vicious Potency
+							i(155996),	-- Quartz-Studded Harness
+							i(156266),	-- Vest of the Glowing Crescent
+							i(156263),	-- Armbands of the Construct
+							i(156291),	-- Fluxing Energy Coils
+							i(156168),	-- Grasps of Reason
+							i(155991),	-- Horologist's Wristguards
+							i(156262),	-- Gloves of Taut Grip
+							i(156166),	-- Gloves of the Steady Hand
+							i(156268),	-- Conductive Cord
+							i(155987),	-- Clockwork Legplates
+							i(155997),	-- Boots of Hasty Revival
+							i(155988),	-- Brass-Lined Boots
+							i(155995),	-- Sandals of Rash Temperament
 						})),
 						--cr(32871, e(1650--[[Algalon the Observer]], {
 						--})),
