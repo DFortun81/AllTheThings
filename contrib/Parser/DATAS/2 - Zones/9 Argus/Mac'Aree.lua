@@ -99,6 +99,295 @@ _.Zones =
 					}),
 				}),
 				n(-25, { 	-- Pet Battle
+					ach(12088, { -- Anomalous Animals of Argus
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 7, 		-- Bucky
+						},
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 9, 		-- Gloamwing
+						},
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 8, 		-- Snozz
+						},
+					}),
+					ach(12089, { -- Aquatic Assault
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 7, 		-- Bucky
+						},
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 9, 		-- Gloamwing
+						},
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 8, 		-- Snozz
+						},
+					}),
+					ach(12091, { -- Beast Blitz				
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 7, 		-- Bucky
+						},			
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},			
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 9, 		-- Gloamwing
+						},			
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},			
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},			
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 8, 		-- Snozz
+						},			
+					}),				
+					ach(12092, { -- Critical Critters				
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 7, 		-- Bucky
+						},			
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},			
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 9, 		-- Gloamwing
+						},			
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},			
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},			
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 8, 		-- Snozz
+						},			
+					}),				
+					ach(12093, { -- Draconic Destruction				
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 7, 		-- Bucky
+						},			
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},			
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 9, 		-- Gloamwing
+						},			
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},			
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},			
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 8, 		-- Snozz
+						},			
+					}),				
+					ach(12094, { -- Elemental Escalation				
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 7, 		-- Bucky
+						},			
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},			
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 9, 		-- Gloamwing
+						},			
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},			
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},			
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 8, 		-- Snozz
+						},			
+					}),				
+					ach(12095, { -- Fierce Fliers				
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 7, 		-- Bucky
+						},			
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},			
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 9, 		-- Gloamwing
+						},			
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},			
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},			
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 8, 		-- Snozz
+						},			
+					}),				
+					ach(12096, { -- Humanoid Havoc				
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 7, 		-- Bucky
+						},			
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},			
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 9, 		-- Gloamwing
+						},			
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},			
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},			
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 8, 		-- Snozz
+						},			
+					}),				
+					ach(12097, { -- Magical Mayhem				
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 7, 		-- Bucky
+						},			
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},			
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 9, 		-- Gloamwing
+						},			
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},			
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},			
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 8, 		-- Snozz
+						},			
+					}),				
+					ach(12098, { -- Mechanical Melee				
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 7, 		-- Bucky
+						},			
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},			
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 9, 		-- Gloamwing
+						},			
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},			
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},			
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 8, 		-- Snozz
+						},			
+					}),				
+					ach(12099, { -- Unstoppable Undead				
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 7, 		-- Bucky
+						},			
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 11, 		-- Corrupted Blood of Argus
+						},			
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 9, 		-- Gloamwing
+						},			
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 12, 		-- Mar'cuus
+						},			
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 10, 		-- Shadeflicker
+						},			
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 8, 		-- Snozz
+						},			
+					}),				
+					ach(12100, { -- Family Fighter
+						i(153040), -- Felclaw Marsuul
+					}),
 					p(2131), 	-- Arcane Gorger
 					p(2132), 	-- Felcrazed Wyrm
 					p(2133), 	-- Pygmy Marsuul
