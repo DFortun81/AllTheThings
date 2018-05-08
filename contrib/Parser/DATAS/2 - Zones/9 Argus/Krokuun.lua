@@ -40,6 +40,295 @@ _.Zones =
 					}),
 				}),
 				n(-25, { 	-- Pet Battle
+					ach(12088, { -- Anomalous Animals of Argus
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 3, 		-- Baneglow
+						},
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 5, 		-- Deathscreech
+						},
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 2, 		-- Foulclaw
+						},
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 6, 		-- Gnasher
+						},
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 4, 		-- Retch
+						},
+						{
+							["achievementID"] = 12088,	-- Anomalous Animals of Argus
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},
+					}),
+					ach(12089, { -- Aquatic Assault
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 3, 		-- Baneglow
+						},
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 5, 		-- Deathscreech
+						},
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 2, 		-- Foulclaw
+						},
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 6, 		-- Gnasher
+						},
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 4, 		-- Retch
+						},
+						{
+							["achievementID"] = 12089,	-- Aquatic Assault
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},
+					}),
+					ach(12091, { -- Beast Blitz				
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 3, 		-- Baneglow
+						},			
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 5, 		-- Deathscreech
+						},			
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 2, 		-- Foulclaw
+						},			
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 6, 		-- Gnasher
+						},			
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 4, 		-- Retch
+						},			
+						{			
+							["achievementID"] = 12091,	-- Beast Blitz	
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},			
+					}),				
+					ach(12092, { -- Critical Critters				
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 3, 		-- Baneglow
+						},			
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 5, 		-- Deathscreech
+						},			
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 2, 		-- Foulclaw
+						},			
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 6, 		-- Gnasher
+						},			
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 4, 		-- Retch
+						},			
+						{			
+							["achievementID"] = 12092,	-- Critical Critters	
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},			
+					}),				
+					ach(12093, { -- Draconic Destruction				
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 3, 		-- Baneglow
+						},			
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 5, 		-- Deathscreech
+						},			
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 2, 		-- Foulclaw
+						},			
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 6, 		-- Gnasher
+						},			
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 4, 		-- Retch
+						},			
+						{			
+							["achievementID"] = 12093,	-- Draconic Destruction	
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},			
+					}),				
+					ach(12094, { -- Elemental Escalation				
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 3, 		-- Baneglow
+						},			
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 5, 		-- Deathscreech
+						},			
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 2, 		-- Foulclaw
+						},			
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 6, 		-- Gnasher
+						},			
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 4, 		-- Retch
+						},			
+						{			
+							["achievementID"] = 12094,	-- Elemental Escalation	
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},			
+					}),				
+					ach(12095, { -- Fierce Fliers				
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 3, 		-- Baneglow
+						},			
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 5, 		-- Deathscreech
+						},			
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 2, 		-- Foulclaw
+						},			
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 6, 		-- Gnasher
+						},			
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 4, 		-- Retch
+						},			
+						{			
+							["achievementID"] = 12095,	-- Fierce Fliers	
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},			
+					}),				
+					ach(12096, { -- Humanoid Havoc				
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 3, 		-- Baneglow
+						},			
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 5, 		-- Deathscreech
+						},			
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 2, 		-- Foulclaw
+						},			
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 6, 		-- Gnasher
+						},			
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 4, 		-- Retch
+						},			
+						{			
+							["achievementID"] = 12096,	-- Humanoid Havoc	
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},			
+					}),				
+					ach(12097, { -- Magical Mayhem				
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 3, 		-- Baneglow
+						},			
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 5, 		-- Deathscreech
+						},			
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 2, 		-- Foulclaw
+						},			
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 6, 		-- Gnasher
+						},			
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 4, 		-- Retch
+						},			
+						{			
+							["achievementID"] = 12097,	-- Magical Mayhem	
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},			
+					}),				
+					ach(12098, { -- Mechanical Melee				
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 3, 		-- Baneglow
+						},			
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 5, 		-- Deathscreech
+						},			
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 2, 		-- Foulclaw
+						},			
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 6, 		-- Gnasher
+						},			
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 4, 		-- Retch
+						},			
+						{			
+							["achievementID"] = 12098,	-- Mechanical Melee	
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},			
+					}),				
+					ach(12099, { -- Unstoppable Undead				
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 3, 		-- Baneglow
+						},			
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 5, 		-- Deathscreech
+						},			
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 2, 		-- Foulclaw
+						},			
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 6, 		-- Gnasher
+						},			
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 4, 		-- Retch
+						},			
+						{			
+							["achievementID"] = 12099,	-- Unstoppable Undead	
+							["criteriaID"] = 1, 		-- Ruinhoof
+						},			
+					}),				
+					ach(12100, { -- Family Fighter
+						i(153040), -- Felclaw Marsuul
+					}),
 					p(2123),	-- Bile Larva
 					p(2124), 	-- Bilescourge
 					p(2127), 	-- Flickering Argunite
