@@ -8,211 +8,187 @@ _.Instances =
 		["groups"] = {
 			inst(757, { 	-- Trial of the Crusader
 				["groups"] = {
-					d(3, {	-- 10 Player
-						cr(34797, e(1618, { -- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
-							a(i(47612)), 
-							h(i(47856)),
-							a(i(47616)),
-							h(i(47860)),
-							a(i(47613)),
-							h(i(47857)),
-							a(i(47610)),
-							h(i(47850)),
-							a(i(47611)),
-							h(i(47852)),
-							a(i(47609)),
-							h(i(47851)),
-							a(i(47614)),
-							h(i(47858)),
-							a(i(47617)),
-							h(i(47855)),
-							a(i(47615)),
-							h(i(47859)),
-							a(i(47608)),
-							h(i(47853)),
-							i(142084),
-							i(142083)
+					d(3, {	-- 10-Player
+						cr(34797, e(1618, {	-- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
+							i(  142083),	-- Giant Worm Egg (PET!)
+							i(  142084),	-- Magnataur Hunting Horn (PET!)
+							a(i(47612)), 	-- Rod of Imprisoned Souls
+							h(i(47856)),	-- Scepter of Imprisoned Souls
+							a(i(47607)),	-- Collar of Ceaseless Torment
+							h(i(47849)),	-- Collar of Unending Torment
+							h(i(47857)),	-- Pauldrons of the Glacial Winds
+							a(i(47613)),	-- Shoulderpads of the Glacial Winds
+							h(i(47860)),	-- Pauldrons of the Spirit Walker
+							a(i(47616)),	-- Shoulderguards of the Spirit Walker
+							a(i(47610)),	-- Armbands of the Northern Stalker
+							h(i(47850)),	-- Bracers of the Northern Stalker
+							a(i(47611)),	-- Dreadscale Armguards
+							h(i(47852)),	-- Dreadscale Bracers
+							h(i(47851)),	-- Gauntlets of Mounting Anger
+							a(i(47609)),	-- Gauntlets of Rising Anger
+							h(i(47859)),	-- Belt of the Impaler
+							a(i(47614)),	-- Girdle of the Impaler
+							a(i(47615)),	-- Belt of the Frozen Reach
+							h(i(47858)),	-- Girdle of the Frozen Reach
+							h(i(47855)),	-- Icehowl Binding
+							a(i(47617)),	-- Icehowl Cinch
+							a(i(47608)),	-- Acidmaw Boots
+							h(i(47853)),	-- Acidmaw Treads
+							a(i(47578)),	-- Carnivorous Band
+							h(i(47854)),	-- Gormok's Band
 						})),
 						cr(34780, e(1619, {	-- Lord Jaraxxus
-							a(i(47676)),
-							h(i(47871)),
-							a(i(47680)),
-							h(i(47869)),
-							a(i(47663)),
-							h(i(47861)),
-							a(i(47711)),
-							h(i(47870)),
-							a(i(47621)),
-							h(i(47866)),
-							a(i(47669)),
-							h(i(47863)),
-							a(i(47620)),
-							h(i(47865)),
-							a(i(49235)),
-							h(i(49236)),
-							a(i(47683)),
-							h(i(47867)),
+							a(i(47676)),	-- Dirk of the Night Watch
+							h(i(47871)),	-- Orcish Deathblade
+							h(i(47619)),	-- Amulet of Binding Elements
+							a(i(47679)),	-- Endurance of the Infernal
+							h(i(47872)),	-- Fortitude of the Infernal
+							h(i(47864)),	-- Pendant of Binding Elements
+							a(i(47680)),	-- Armguards of the Nether Lord
+							h(i(47869)),	-- Armplates of the Nether Lord
+							a(i(47663)),	-- Felspark Bindings
+							h(i(47861)),	-- Felspark Bracers
+							h(i(47863)),	-- Belt of the Bloodhoof Emissary
+							a(i(47669)),	-- Belt of the Winter Solstice
+							h(i(47870)),	-- Belt of the Nether Champion
+							a(i(47711)),	-- Girdle of the Nether Champion
+							h(i(47866)),	-- Darkspear Ritual Binding
+							a(i(47621)),	-- Girdle of the Farseer
+							a(i(47620)),	-- Leggings of the Demonic Messenger
+							h(i(47865)),	-- Legwraps of the Demonic Messenger
+							a(i(49235)),	-- Boots of Tortured Space
+							h(i(49236)),	-- Sabatons of Tortured Space
+							a(i(47683)),	-- Sentinel Scouting Greaves
+							h(i(47867)),	-- Warsong Poacher's Greaves
+							h(i(47862)),	-- Firestorm Band
+							a(i(47618)),	-- Firestorm Ring
+							h(i(47868)),	-- Planestalker Band
+							a(i(47703)),	-- Planestalker Signet
 						})),
-						cr(34461, e(1620, { -- Faction Champions (34460,34469,34467,34468,34465,34471,34466,34473,34472,34463,34470,34474,34475) 
+						cr(34461, e(1620, {	-- Faction Champions (34460,34469,34467,34468,34465,34471,34466,34473,34472,34463,34470,34474,34475) 
 							["groups"] = {
-								i(47874),
-								i(47875),
-								i(47876),
-								i(47877),
-								i(47878),
-								i(47873)
+								i(47874),	-- Sunreaver Disciple's Blade
+								i(47876),	-- Sunreaver Champion's Faceplate
+								i(47875),	-- Sunreaver Ranger's Helm
+								i(47877),	-- Sunreaver Defender's Pauldrons
+								i(47878),	-- Sunreaver Assassin's Gloves
+								i(47873),	-- Sunreaver Magus' Sandals
+								i(47880),	-- Binding Stone
+								i(47882),	-- Eitrigg's Oath
+								i(47879),	-- Fetish of Volatile Power
+								i(47881),	-- Vengeance of the Forsaken
 							},
 							["races"] = HORDE_ONLY
 						})),
 						cr(34458, e(1621, { -- Faction Champions (34451,34459,34448,34449,34445,34456,34447,34441,34454,34455,34444,34450,34453)
 							["groups"] = {
-								i(47724),
-								i(47717),
-								i(47718),
-								i(47720),
-								i(47719),
-								i(47721)
+								i(47724),	-- Blade of the Silver Disciple
+								i(47717),	-- Faceplate of the Silver Champion
+								i(47718),	-- Helm of the Silver Ranger
+								i(47720),	-- Pauldrons of the Silver Defender
+								i(47719),	-- Gloves of the Silver Assassin
+								i(47721),	-- Sandals of the Silver Magus
+								i(47728),	-- Binding Light
+								i(47727),	-- Fervor of the Frostborn
+								i(47726),	-- Talisman of Volatile Power
+								i(47725),	-- Victor's Call
 							},
 							["races"] = ALLIANCE_ONLY
 						})),
 						cr(34497, e(1622, {	-- Twin Val'kyr (34496-Eydis)
-							a(i(47737)),
-							h(i(47884)),
-							a(i(47743)),
-							h(i(47892)),
-							a(i(47736)),
-							h(i(47886)),
-							a(i(47740)),
-							h(i(47883)),
-							a(i(47742)),
-							h(i(47913)),
-							a(i(47746)),
-							h(i(47891)),
-							a(i(47739)),
-							h(i(47887)),
-							a(i(47744)),
-							h(i(47893)),
-							a(i(47745)),
-							h(i(47889)),
-							a(i(47738)),
-							h(i(47885)),
-							a(i(49231)),
-							h(i(49232)),
+							h(i(47884)),	-- Edge of Agony
+							a(i(47743)),	-- Enlightenment
+							h(i(47892)),	-- Illumination
+							a(i(47737)),	-- Reckoning
+							a(i(47736)),	-- Icefall Blade
+							h(i(47886)),	-- Nemesis Blade
+							a(i(47740)),	-- The Diplomat
+							h(i(47883)),	-- Widebarrel Flintlock
+							a(i(47742)),	-- Chalice of Benedictus
+							h(i(47913)),	-- Lightbane Focus
+							h(i(47891)),	-- Helm of the High Mesa
+							a(i(47746)),	-- Helm of the Snowy Grotto
+							h(i(47890)),	-- Darkbane Amulet
+							a(i(47747)),	-- Darkbane Pendant
+							a(i(47739)),	-- Armor of Shifting Shadows
+							h(i(47887)),	-- Vest of Shifting Shadows
+							a(i(47745)),	-- Gloves of Looming Shadow
+							h(i(47889)),	-- Looming Shadow Wraps
+							a(i(47744)),	-- Gloves of the Azure Prophet
+							h(i(47893)),	-- Sen'jin Ritualist Gloves
+							h(i(47885)),	-- Greaves of the Lingering Vortex
+							a(i(47738)),	-- Sabatons of the Lingering Vortex
+							a(i(49231)),	-- Boots of the Grieving Soul
+							h(i(49232)),	-- Sandals of the Grieving Soul
+							h(i(47888)),	-- Band of the Twin Val'kyr
+							a(i(47700)),	-- Loop of the Twin Val'kyr
 						})),
 						cr(34564, e(1623, { -- Anub'arak
-							a(i(47834)),
-							h(i(47911)),
-							a(i(47815)),
-							h(i(47900)),
-							a(i(47810)),
-							h(i(47899)),
-							a(i(47809)),
-							h(i(47894)),
-							a(i(47816)),
-							h(i(47905)),
-							a(i(47741)),
-							h(i(47907)),
-							a(i(47812)),
-							h(i(47895)),
-							a(i(47835)),
-							h(i(47910)),
-							a(i(47813)),
-							h(i(47897)),
-							a(i(47829)),
-							h(i(47901)),
-							a(i(47832)),
-							h(i(47904)),
-							a(i(47811)),
-							h(i(47896)),
-							a(i(47838)),
-							h(i(47906)),
-							a(i(47837)),
-							h(i(47909)),
-							a(i(47830)),
-							h(i(47908)),
-							a(i(47836)),
-							h(i(47902)),
-							a(i(47814)),
-							h(i(47903)),
-							a(i(47808)),
-							h(i(47898)),
-							i(142085)
+							i(  142085),	-- Nerubian Relic (PET!)
+							h(i(47911)),	-- Anguish
+							a(i(47815)),	-- Cold Convergence
+							a(i(47834)),	-- Fordragon Blades
+							h(i(47900)),	-- Perdition
+							h(i(47899)),	-- Ardent Guard
+							a(i(47809)),	-- Argent Resolve
+							h(i(47905)),	-- Blackhorn Bludgeon
+							a(i(47810)),	-- Crusader's Glory
+							h(i(47903)),	-- Forsaken Bonecarver
+							h(i(47898)),	-- Frostblade Hatchet
+							h(i(47894)),	-- Mace of the Earthborn Chieftain
+							a(i(47816)),	-- The Grinder
+							a(i(47814)),	-- Westfall Saber
+							a(i(47808)),	-- The Lion's Maw
+							a(i(47741)),	-- Baelgun's Heavy Crossbow
+							h(i(47907)),	-- Darkmaw Crossbow
+							h(i(47910)),	-- Aegis of the Coliseum
+							a(i(47835)),	-- Bulwark of the Royal Guard
+							h(i(47895)),	-- Pride of the Kor'kron
+							a(i(47812)),	-- Vigilant Ward
+							a(i(47813)),	-- Helmet of the Crypt Lord
+							h(i(47897)),	-- Helm of the Crypt Lord
+							h(i(47901)),	-- Pauldrons of the Shadow Hunter
+							a(i(47829)),	-- Pauldrons of the Timeless Hunter
+							h(i(47904)),	-- Shoulderpads of the Snow Bandit
+							a(i(47832)),	-- Spaulders of the Snow Bandit
+							a(i(47811)),	-- Chestguard of the Warden
+							h(i(47906)),	-- Robes of the Sleepless
+							h(i(47896)),	-- Stoneskin Chestplate
+							a(i(47838)),	-- Vestments of the Sleepless
+							h(i(47909)),	-- Belt of the Eternal
+							a(i(47837)),	-- Cinch of the Undying
+							h(i(47902)),	-- Legplates of Redeemed Blood
+							a(i(47836)),	-- Legplates of the Immortal Spider
+							a(i(47830)),	-- Legplates of the Silver Hand
+							h(i(47908)),	-- Sunwalker Legguards
 						})),
 					}),
-					d(5, {	-- 10 Player Heroic
+					d(5, {	-- 10-Player Heroic
 						n(-1, {		-- Shared Boss Loot 
-							i(47654, {
-								a(i(47585)),
-							}),
-							i(47639,	{
-								h(i(47586)),
-							}),
-							i(47629, {
-								a(i(47579)),
-							}),
-							i(47646,	{
-								h(i(47580)),
-							}),
-							i(47631, {
-								a(i(47576)),
-							}),
-							i(47648,	{
-								h(i(47577)),
-							}),
-							i(47630, {
-								a(i(47595)),
-							}),
-							i(47649,	{
-								h(i(47596)),
-							}),
-							i(47628, {
-								a(i(47597)),
-							}),
-							i(47650,	{
-								h(i(47598)),
-							}),
-							i(47634, {
-								a(i(47599)),
-							}),
-							i(47651,	{
-								h(i(47600)),
-							}),
-							i(47632, {
-								a(i(47602)),
-							}),
-							i(47652,	{
-								h(i(47601)),
-							}),
-							i(47655, {
-								a(i(47603)),
-							}),
-							i(47638,	{
-								h(i(47604)),
-							}),
-							i(47633, {
-								a(i(47583)),
-							}),
-							i(47653,	{
-								h(i(47584)),
-							}),
-							i(47656, {
-								a(i(47587)),
-							}),
-							i(47637,	{
-								h(i(47588)),
-							}),
-							i(47657, {
-								a(i(47605)),
-							}),
-							i(47636,	{
-								h(i(47606)),
-							}),
-							i(47635, {
-								a(i(47581)),
-							}),
-							i(47647,	{
-								h(i(47582)),
-							}),
+							a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
+							h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
+							a(i(47629)),	-- Pattern: Black Chitin Bracers
+							h(i(47646)),	-- Pattern: Black Chitin Bracers
+							a(i(47635)),	-- Pattern: Bracers of Swift Death
+							h(i(47647)),	-- Pattern: Bracers of Swift Death
+							a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
+							h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
+							a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
+							h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
+							a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
+							h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
+							a(i(47634)),	-- Pattern: Knightbane Carapace
+							h(i(47651)),	-- Pattern: Knightbane Carapace
+							a(i(47632)),	-- Pattern: Lunar Eclipse Robes
+							h(i(47652)),	-- Pattern: Lunar Eclipse Robes
+							a(i(47655)),	-- Pattern: Merlin's Robe
+							h(i(47638)),	-- Pattern: Merlin's Robe
+							a(i(47633)),	-- Pattern: Moonshadow Armguards
+							h(i(47653)),	-- Pattern: Moonshadow Armguards
+							a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
+							h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
+							a(i(47657)),	-- Pattern: Royal Moonshroud Robe
+							h(i(47636)),	-- Pattern: Royal Moonshroud Robe
 						}),
 						cr(34797, e(1618, { -- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
 							a(i(47922)),
@@ -236,7 +212,7 @@ _.Instances =
 							a(i(47919)),
 							h(i(47992)),
 							i(142084),
-							i(142083)
+							i(142083),
 						})),
 						cr(34780, e(1619, {	-- Lord Jaraxxus
 							a(i(47938)),
@@ -265,7 +241,7 @@ _.Instances =
 								i(48015),
 								i(48016),
 								i(48017),
-								i(48012)
+								i(48012),
 							},
 							["races"] = HORDE_ONLY
 						})),
@@ -276,7 +252,7 @@ _.Instances =
 								i(47942),
 								i(47944),
 								i(47945),
-								i(47940)
+								i(47940),
 							},
 							["races"] = ALLIANCE_ONLY
 						})),
@@ -344,80 +320,32 @@ _.Instances =
 							i(142085), -- Nerubian Relic Pet
 						})),
 					}),
-					d(4, {	-- 25 Player
+					d(4, {	-- 25-Player
 						n(-1, {		-- Shared Boss Loot 
-							i(47654, {
-								a(i(47585)),
-							}),
-							i(47639,	{
-								h(i(47586)),
-							}),
-							i(47629, {
-								a(i(47579)),
-							}),
-							i(47646,	{
-								h(i(47580)),
-							}),
-							i(47631, {
-								a(i(47576)),
-							}),
-							i(47648,	{
-								h(i(47577)),
-							}),
-							i(47630, {
-								a(i(47595)),
-							}),
-							i(47649,	{
-								h(i(47596)),
-							}),
-							i(47628, {
-								a(i(47597)),
-							}),
-							i(47650,	{
-								h(i(47598)),
-							}),
-							i(47634, {
-								a(i(47599)),
-							}),
-							i(47651,	{
-								h(i(47600)),
-							}),
-							i(47632, {
-								a(i(47602)),
-							}),
-							i(47652,	{
-								h(i(47601)),
-							}),
-							i(47655, {
-								a(i(47603)),
-							}),
-							i(47638,	{
-								h(i(47604)),
-							}),
-							i(47633, {
-								a(i(47583)),
-							}),
-							i(47653,	{
-								h(i(47584)),
-							}),
-							i(47656, {
-								a(i(47587)),
-							}),
-							i(47637,	{
-								h(i(47588)),
-							}),
-							i(47657, {
-								a(i(47605)),
-							}),
-							i(47636,	{
-								h(i(47606)),
-							}),
-							i(47635, {
-								a(i(47581)),
-							}),
-							i(47647,	{
-								h(i(47582)),
-							}),
+							a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
+							h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
+							a(i(47629)),	-- Pattern: Black Chitin Bracers
+							h(i(47646)),	-- Pattern: Black Chitin Bracers
+							a(i(47635)),	-- Pattern: Bracers of Swift Death
+							h(i(47647)),	-- Pattern: Bracers of Swift Death
+							a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
+							h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
+							a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
+							h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
+							a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
+							h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
+							a(i(47634)),	-- Pattern: Knightbane Carapace
+							h(i(47651)),	-- Pattern: Knightbane Carapace
+							a(i(47632)),	-- Pattern: Lunar Eclipse Robes
+							h(i(47652)),	-- Pattern: Lunar Eclipse Robes
+							a(i(47655)),	-- Pattern: Merlin's Robe
+							h(i(47638)),	-- Pattern: Merlin's Robe
+							a(i(47633)),	-- Pattern: Moonshadow Armguards
+							h(i(47653)),	-- Pattern: Moonshadow Armguards
+							a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
+							h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
+							a(i(47657)),	-- Pattern: Royal Moonshroud Robe
+							h(i(47636)),	-- Pattern: Royal Moonshroud Robe
 						}),			
 						cr(34797, e(1618, { -- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
 							a(i(46979)),
@@ -575,80 +503,32 @@ _.Instances =
 							i(142085)
 						})),
 					}),
-					d(6, {	-- 25 Player Heroic
+					d(6, {	-- 25-Player Heroic
 						n(-1, {		-- Shared Boss Loot 
-							i(47654, {
-								a(i(47585)),
-							}),
-							i(47639,	{
-								h(i(47586)),
-							}),
-							i(47629, {
-								a(i(47579)),
-							}),
-							i(47646,	{
-								h(i(47580)),
-							}),
-							i(47631, {
-								a(i(47576)),
-							}),
-							i(47648,	{
-								h(i(47577)),
-							}),
-							i(47630, {
-								a(i(47595)),
-							}),
-							i(47649,	{
-								h(i(47596)),
-							}),
-							i(47628, {
-								a(i(47597)),
-							}),
-							i(47650,	{
-								h(i(47598)),
-							}),
-							i(47634, {
-								a(i(47599)),
-							}),
-							i(47651,	{
-								h(i(47600)),
-							}),
-							i(47632, {
-								a(i(47602)),
-							}),
-							i(47652,	{
-								h(i(47601)),
-							}),
-							i(47655, {
-								a(i(47603)),
-							}),
-							i(47638,	{
-								h(i(47604)),
-							}),
-							i(47633, {
-								a(i(47583)),
-							}),
-							i(47653,	{
-								h(i(47584)),
-							}),
-							i(47656, {
-								a(i(47587)),
-							}),
-							i(47637,	{
-								h(i(47588)),
-							}),
-							i(47657, {
-								a(i(47605)),
-							}),
-							i(47636,	{
-								h(i(47606)),
-							}),
-							i(47635, {
-								a(i(47581)),
-							}),
-							i(47647,	{
-								h(i(47582)),
-							}),
+							a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
+							h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
+							a(i(47629)),	-- Pattern: Black Chitin Bracers
+							h(i(47646)),	-- Pattern: Black Chitin Bracers
+							a(i(47635)),	-- Pattern: Bracers of Swift Death
+							h(i(47647)),	-- Pattern: Bracers of Swift Death
+							a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
+							h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
+							a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
+							h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
+							a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
+							h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
+							a(i(47634)),	-- Pattern: Knightbane Carapace
+							h(i(47651)),	-- Pattern: Knightbane Carapace
+							a(i(47632)),	-- Pattern: Lunar Eclipse Robes
+							h(i(47652)),	-- Pattern: Lunar Eclipse Robes
+							a(i(47655)),	-- Pattern: Merlin's Robe
+							h(i(47638)),	-- Pattern: Merlin's Robe
+							a(i(47633)),	-- Pattern: Moonshadow Armguards
+							h(i(47653)),	-- Pattern: Moonshadow Armguards
+							a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
+							h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
+							a(i(47657)),	-- Pattern: Royal Moonshroud Robe
+							h(i(47636)),	-- Pattern: Royal Moonshroud Robe
 						}),			
 						cr(34797, e(1618, { -- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
 							a(i(46969)),
