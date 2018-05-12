@@ -459,6 +459,7 @@ AllTheThings.Locales.enUS = {
 		[-347] = "Interface\\Icons\\inv_weapon_crossbow_01",					-- Crossbows
 		[-348] = "Interface\\Icons\\inv_misc_monsterclaw_02",					-- Fist Weapons
 		[-349] = "Interface\\Icons\\Ability_Mage_IceForm",						-- Cosmetic
+		[-355] = "Interface\\Icons\\misc_arrowlup",								-- Titanforged
 		[-363] = "Interface\\Icons\\achievement_reputation_argentchampion", 	-- The Argent Tournament
 		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",				-- The Construct Quarter
 		[-368] = "Interface\\Icons\\inv_trinket_naxxramas04",					-- The Arachnid Quarter
@@ -946,7 +947,7 @@ AllTheThings.Locales.enUS = {
 		[-347] = GetItemSubClassInfo(2,18),										-- Crossbows
 		[-348] = GetItemSubClassInfo(2,13),										-- Fist Weapons
 		[-349] = GetItemSubClassInfo(4,5),										-- Cosmetic
-
+		[-355] = GetSpellInfo(257215),											-- Titanforged
 		[-356] = "Assault on the Dark Portal",
 		[-357] = GetSpellInfo(171866),											-- Sparring Arena Outpost
 		[-358] = GetSpellInfo(164028),											-- Lumber Mill Outpost
