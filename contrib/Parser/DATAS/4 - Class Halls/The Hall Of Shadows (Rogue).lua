@@ -6,20 +6,68 @@ _.ClassHalls =
 	cl(4, { -- The Hall of Shadows -- Rogue
 		["groups"] = {
 			i(139781, { -- Marin Noggenfogger's Lucky Coin
-				o(252267, { -- Large Plundered Sack
-					["groups"] = {
-						i(141408), -- Uncrowned Shadowcraft Cap
-					i(139587), -- Suspicious Crate Toy
-					--[[ Artifact Appearance  Quests Commented Out For Now
-					i(94222, { -- Key to the Palace of Lei Shen
-						sp(220709, { i(139571) }), -- Tome of Otherwordly Venoms
+				["description"] = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r",
+				["groups"] = {
+					o(252273, {	-- Box of Throwing Daggers
+						dr(100, i(139589)), -- Poisoned Throwing Knives
+						dr(0.6, i(130322)),	-- Mask of Artful Dodging
+						dr(0.2, i(130324)),	-- Boots of Artful Dodging
 					}),
-					--]]
-					},
-					["icon"] = "Interface\\Icons\\inv_misc_5potionbag_special",
-					["classes"] = {4},
-					["description"] = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r"
-				}),
+					o(252267, { -- Large Plundered Sack
+						dr(98.0, i(141408)), -- Uncrowned Shadowcraft Cap
+						dr(3.0, i(130322)),	-- Mask of Artful Dodging
+					}),
+					o(252270, {	-- Mysterious Crate
+						dr(100, i(139587)), -- Suspicious Crate [Toy]
+						dr(0.8, i(130322)),	-- Mask of Artful Dodging
+						dr(0.5, i(130324)),	-- Boots of Artful Dodging
+					}),
+					o(252269, {	-- Pack of Battle Potions
+						dr(100, i(139588)),	-- Pack of Battle Potions
+						dr(4.0, i(130322)),	-- Mask of Artful Dodging
+						dr(1.6, i(130324)),	-- Boots of Artful Dodging
+					}),
+					o(252284, {	-- Pile of Sticky Bombs
+						dr(100, i(139584)),	-- Sticky Bombs
+						dr(0.4, i(130322)),	-- Mask of Artful Dodging
+						dr(0.2, i(130324)),	-- Boots of Artful Dodging
+					}),
+					o(252272, {	-- Smoky Boots
+						dr(100, i(139592)),	-- Smoky Boots
+						dr(3.0, i(130324)),	-- Boots of Artful Dodging
+					}),
+					o(252282, {	-- Sparkling Set of Keys
+						i(94222, { -- Key to the Palace of Lei Shen
+							["description"] = "Speak to Taoshi at the bottom level of the Order Hall to start the Troves of the Thunder King scenario. 1  Key to the Palace of Lei Shen is required for each attempt of this scenario.\n\nThis is the exact same scenario that was available during Mists of Pandaria. The mobs DO SCALE with level though.\n\nComplete the scenario (reaching the end, or until the timer runs out) looting chests and obtaining as many Burial Trove Keys as possible.",
+							["groups"] = {
+								i(95497, {	-- Burial Trove Key
+									["description"] = "Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",
+									["groups"] = {
+										i(139571, { -- Tome of Otherwordly Venoms
+											artifact(891), -- Find Hidden Artifact Skin
+										}),
+									},
+								}),
+							},
+						}),
+						dr(1.0, i(130322)),	-- Mask of Artful Dodging
+						dr(0.9, i(130324)),	-- Boots of Artful Dodging
+					}),
+					o(252279, {	-- Stolen Tome of Artifact Lore
+						dr(100, i(139591)), -- Stolen Tome of Artifact Lore
+						dr(0.6, i(130322)),	-- Mask of Artful Dodging
+					}),
+					o(252277, {	-- Thistle Tea
+						dr(100, i(139586)),	-- Thistle Tea
+						dr(1.2, i(130322)),	-- Mask of Artful Dodging
+						dr(0.6, i(130324)),	-- Boots of Artful Dodging
+					}),
+					o(252289, {	-- Vanishing Powder
+						dr(100, i(139586)),	-- Thistle Tea
+						dr(0.5, i(130322)),	-- Mask of Artful Dodging
+						dr(0.4, i(130324)),	-- Boots of Artful Dodging
+					}),
+				},
 			}),
 			n(-17, { -- Quests
 				qc4(qg(101513, q(45571))),	-- A Bit of Espionage 
