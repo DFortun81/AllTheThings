@@ -937,16 +937,60 @@ _.Zones =
 						}),
 					}),
 					ach(11232, { -- Lock, Stock and Two Smoking Goblins
-						q(43331,  {  -- Time to Collect
-							i(140595),
-							i(140594),
-							i(140593),
-							i(140592),
-							i(140599),
-							i(140598),
-							i(140597),
-							i(140596),
+						ach(10793, {	-- What a Ripoff!
+							{
+								["questID"] = 39789,	-- Eating Into Our Business
+								["qg"] = 97258,		-- Quest Giver: Ootasa Galehoof
+							},
+							{
+								["questID"] = 39793,	-- Only the Finest
+								["qg"] = 107675,		-- Quest Giver: Rax Sixtrigger
+								["sourceQuest"] = 39789,	-- Source Quest: Eating Into Our Business
+							},
+							{
+								["questID"] = 39787,	-- Rigging the Wager
+								["qg"] = 107674,		-- Quest Giver: Snaggle Sixtrigger
+								["sourceQuest"] = 39793,	-- Source Quest: Only the Finest
+							},
+							{
+								["questID"] = 39786,	-- A Stone Cold Gamble
+								["qg"] = 107674,		-- Quest Giver: Snaggle Sixtrigger
+								["sourceQuest"] = 39787,	-- Source Quest: Rigging the Wager
+							},
+							{
+								["questID"] = 39792,	-- A Stack of Racks
+								["qg"] = 107675,		-- Quest Giver: Rax Sixtrigger
+								["sourceQuest"] = 39786,	-- Source Quest: A Stone Cold Gamble
+							},
+							{
+								["questID"] = 42483,	-- Put It All on Red
+								["qg"] = 107674,		-- Quest Giver: Snaggle Sixtrigger
+								["sourceQuest"] = 39792,	-- Source Quest: A Stack of Racks
+								["groups"] = {
+									title(343),		-- TITLE: %s the Gullible
+								},
+							},
 						}),
+						{
+							["questID"] = 43331,	-- Time to Collect
+							["qg"] = 110018,	-- Quest Giver: Gazrix Gearlock <Steamwheedle Cartel>
+							["sourceQuest"] = 42483,	-- Source Quest: Put It All on Red
+							["lvl"] = 110,	-- Requires Level 110
+							["groups"] = {
+								i(140601, {	-- Sixtrigger Resource Crate
+									i(133815),	-- Recipe: Spiced Rib Roast
+									i(140600),	-- Sixtrigger Lucky Ring
+								}),
+								i(140599),	-- Pretty Silk Gloves
+								i(140597),	-- Rax's Piloting Handgrips
+								i(140596),	-- Reinforced Mook Handguards
+								i(140598),	-- Snaggle's Best Gloves
+								i(140592),	-- Mook Battlepants
+								i(140593),	-- Rax's Polished Greaves
+								i(140595),	-- Rax's Silk Pajama Bottoms
+								i(140594),	-- Snaggle's Favorite Pants
+							}
+						},
 					}),
 					n(-168, { -- Other Quests
 						sz(10668,4,  { -- Dreygrot

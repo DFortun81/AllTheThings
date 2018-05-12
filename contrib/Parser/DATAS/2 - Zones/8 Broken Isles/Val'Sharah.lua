@@ -1490,6 +1490,14 @@ _.Zones =
 						},
 						["questID"] = 38468,	
 					}),
+					n(94366, {	-- Lelyn Swiftshadow
+						["groups"] = {
+							{
+								["itemID"] = 127860,	-- Warden's Signet
+								["questID"] = 38711,	-- The Warden's Signet
+							},
+						},
+					}),
 					n(98241, { 		-- Lyrath Moonfeather
 						["groups"] = {	
 							i(130118),
