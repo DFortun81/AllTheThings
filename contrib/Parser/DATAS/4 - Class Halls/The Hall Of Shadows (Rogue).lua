@@ -7,6 +7,7 @@ _.ClassHalls =
 		["groups"] = {
 			i(139781, { -- Marin Noggenfogger's Lucky Coin
 				["description"] = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r",
+				["qg"] = 102594,	-- Marin Noggenfogger <Baron of Gadgetzan>
 				["groups"] = {
 					o(252273, {	-- Box of Throwing Daggers
 						dr(100, i(139589)), -- Poisoned Throwing Knives
@@ -39,6 +40,7 @@ _.ClassHalls =
 					o(252282, {	-- Sparkling Set of Keys
 						i(94222, { -- Key to the Palace of Lei Shen
 							["description"] = "Speak to Taoshi at the bottom level of the Order Hall to start the Troves of the Thunder King scenario. 1  Key to the Palace of Lei Shen is required for each attempt of this scenario.\n\nThis is the exact same scenario that was available during Mists of Pandaria. The mobs DO SCALE with level though.\n\nComplete the scenario (reaching the end, or until the timer runs out) looting chests and obtaining as many Burial Trove Keys as possible.",
+							["maps"] = {934},
 							["groups"] = {
 								i(95497, {	-- Burial Trove Key
 									["description"] = "Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",
