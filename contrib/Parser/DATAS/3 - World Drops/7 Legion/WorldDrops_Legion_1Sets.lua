@@ -166,6 +166,24 @@ _.WorldDrops =
 				i(121273),	-- Moonfall Sandals
 				i(121274),	-- Moonfall Shoulderpads
 				i(121275),	-- Moonfall Wristwraps
+				
+				-- Cathedral BoEs (rage)
+				{
+					["itemID"] = 147514,	-- Felguard Destroyer's Legplates
+					["bonusID"] = 1812,		-- BoE, Cathedral
+				},
+				{
+					["itemID"] = 147515,	-- Hellblaze Invader's Greaves
+					["bonusID"] = 1812,		-- BoE, Cathedral
+				},
+				{
+					["itemID"] = 147516,	-- Legion Stalker's Hood
+					["bonusID"] = 1812,		-- BoE, Cathedral
+				},
+				{
+					["itemID"] = 147517,	-- Inquisitor's Battle Cowl
+					["bonusID"] = 1812,		-- BoE, Cathedral
+				},
 			}),
 		},
 		["tierID"] = 7
