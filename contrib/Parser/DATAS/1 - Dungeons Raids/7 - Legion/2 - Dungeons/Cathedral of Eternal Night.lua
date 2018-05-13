@@ -8,80 +8,199 @@ _.Instances =
 		["groups"] = {
 			inst(900, { 	-- Cathedral of Eternal Night
 				["groups"] = {
+					n(0, { -- Zone Drops
+						n(118704, { -- Dul'zak
+							["groups"] = {
+								-- Cathedral BoEs (rage)
+								{
+									["itemID"] = 147514,	-- Felguard Destroyer's Legplates
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+								{
+									["itemID"] = 147515,	-- Hellblaze Invader's Greaves
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+								{
+									["itemID"] = 147516,	-- Legion Stalker's Hood
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+								{
+									["itemID"] = 147517,	-- Inquisitor's Battle Cowl
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+							},
+							["description"] = "This NPC is found after you fight the first two trash packs and spawns at the start.",
+						}),
+						n(118723, { -- Gazerax
+							["groups"] = {
+								-- Cathedral BoEs (rage)
+								{
+									["itemID"] = 147514,	-- Felguard Destroyer's Legplates
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+								{
+									["itemID"] = 147515,	-- Hellblaze Invader's Greaves
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+								{
+									["itemID"] = 147516,	-- Legion Stalker's Hood
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+								{
+									["itemID"] = 147517,	-- Inquisitor's Battle Cowl
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+							},
+							["description"] = "This NPC is found at the second boss. You must defeat this NPC before second boss spawns.",
+						}),
+						n(118705, { -- Nal'asha
+							["groups"] = {
+								-- Cathedral BoEs (rage)
+								{
+									["itemID"] = 147514,	-- Felguard Destroyer's Legplates
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+								{
+									["itemID"] = 147515,	-- Hellblaze Invader's Greaves
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+								{
+									["itemID"] = 147516,	-- Legion Stalker's Hood
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+								{
+									["itemID"] = 147517,	-- Inquisitor's Battle Cowl
+									["bonusID"] = 1812,		-- BoE, Cathedral
+									["modID"] = 0,
+								},
+							},
+							["description"] = "This NPC is found before the third boss with the pack of spiders on the platform.",
+						}),
+					}),
+					n(-34, { -- World Quests
+						q(46867, { -- Cathedral of Eternal Night: Fel Beast
+							n(120713, { -- Wa'glur
+								["groups"] = {
+									-- Cathedral BoEs (rage)
+									{
+										["itemID"] = 147514,	-- Felguard Destroyer's Legplates
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147515,	-- Hellblaze Invader's Greaves
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147516,	-- Legion Stalker's Hood
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147517,	-- Inquisitor's Battle Cowl
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+								},
+							}),
+						}),
+						q(46868, { -- Cathedral of Eternal Night: Infernal Dead
+							n(120716, { -- Dreadspeaker Serilis
+								["groups"] = {
+									-- Cathedral BoEs (rage)
+									{
+										["itemID"] = 147514,	-- Felguard Destroyer's Legplates
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147515,	-- Hellblaze Invader's Greaves
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147516,	-- Legion Stalker's Hood
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147517,	-- Inquisitor's Battle Cowl
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+								},
+							}),
+						}),
+						q(46865, { -- Cathedral of Eternal Night: Mother of Flame
+							n(120715, {  -- Raga'yut
+								["groups"] = {
+									-- Cathedral BoEs (rage)
+									{
+										["itemID"] = 147514,	-- Felguard Destroyer's Legplates
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147515,	-- Hellblaze Invader's Greaves
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147516,	-- Legion Stalker's Hood
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147517,	-- Inquisitor's Battle Cowl
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+								},
+							}),
+						}),
+						q(46869, { -- Cathedral of Eternal Night: Temptress of Pain
+							n(120717, { -- Mistress Dominix
+								["groups"] = {
+									-- Cathedral BoEs (rage)
+									{
+										["itemID"] = 147514,	-- Felguard Destroyer's Legplates
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147515,	-- Hellblaze Invader's Greaves
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147516,	-- Legion Stalker's Hood
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+									{
+										["itemID"] = 147517,	-- Inquisitor's Battle Cowl
+										["bonusID"] = 1812,		-- BoE, Cathedral
+										["modID"] = 0,
+									},
+								},
+							}),
+						}),
+					}),
 					d(2, {		-- Heroic
 						["ids"] = { 1726 }, -- Heroic
 						["groups"] = {
-							n(0, { -- Zone Drops
-								n(118704, { -- Dul'zak
-									["groups"] = {
-										i(147517), -- Inquisitor's Battle Cowl
-										i(147516), -- Legion Stalker's Hood
-										i(147515), -- Hellblaze Invader's Greaves
-										i(147514), -- Felguard Destroyer's Legplates
-									},
-									["description"] = "This NPC is found after you fight the first two trash packs and spawns at the start.",
-								}),
-								n(118723, { -- Gazerax
-									["groups"] = {
-										i(147517), -- Inquisitor's Battle Cowl
-										i(147516), -- Legion Stalker's Hood
-										i(147515), -- Hellblaze Invader's Greaves
-										i(147514), -- Felguard Destroyer's Legplates
-									},
-									["description"] = "This NPC is found at the second boss. You must defeat this NPC before second boss spawns.",
-								}),
-								n(118705, { -- Nal'asha
-									["groups"] = {
-										i(147517), -- Inquisitor's Battle Cowl
-										i(147516), -- Legion Stalker's Hood
-										i(147515), -- Hellblaze Invader's Greaves
-										i(147514), -- Felguard Destroyer's Legplates
-									},
-									["description"] = "This NPC is found before the third boss with the pack of spiders on the platform.",
-								}),
-							}),
-							n(-34, { -- World Quests
-								q(46867, { -- Cathedral of Eternal Night: Fel Beast
-									n(120713, { -- Wa'glur
-										["groups"] = {
-											i(147517), -- Inquisitor's Battle Cowl
-											i(147516), -- Legion Stalker's Hood
-											i(147515), -- Hellblaze Invader's Greaves
-											i(147514), -- Felguard Destroyer's Legplates
-										},
-									}),
-								}),
-								q(46868, { -- Cathedral of Eternal Night: Infernal Dead
-									n(120716, { -- Dreadspeaker Serilis
-										["groups"] = {
-											i(147517), -- Inquisitor's Battle Cowl
-											i(147516), -- Legion Stalker's Hood
-											i(147515), -- Hellblaze Invader's Greaves
-											i(147514), -- Felguard Destroyer's Legplates
-										},
-									}),
-								}),
-								q(46865, { -- Cathedral of Eternal Night: Mother of Flame
-									n(120715, {  -- Raga'yut
-										["groups"] = {
-											i(147517), -- Inquisitor's Battle Cowl
-											i(147516), -- Legion Stalker's Hood
-											i(147515), -- Hellblaze Invader's Greaves
-											i(147514), -- Felguard Destroyer's Legplates
-										},
-									}),
-								}),
-								q(46869, { -- Cathedral of Eternal Night: Temptress of Pain
-									n(120717, { -- Mistress Dominix
-										["groups"] = {
-											i(147517), -- Inquisitor's Battle Cowl
-											i(147516), -- Legion Stalker's Hood
-											i(147515), -- Hellblaze Invader's Greaves
-											i(147514), -- Felguard Destroyer's Legplates
-										},
-									}),
-								}),
-							}),
 							cr(117193, e(1905, {	-- Agronox
 								i(144469),
 								i(144468),
