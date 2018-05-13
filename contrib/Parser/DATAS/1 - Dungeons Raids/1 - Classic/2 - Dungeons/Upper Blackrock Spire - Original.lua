@@ -9,6 +9,7 @@ _.Instances =
 		["groups"] = {
 			inst(559, { 	-- Upper Blackrock Spire
 				["groups"] = {
+					un(12, ach(2188)),	-- Leeeeeeeeeeeeeroy!
 					n(0, { 		-- Zone Drop
 						n(10318, {	-- Blackhand Assassin
 							i(16713),	-- Shadowcraft Belt
@@ -163,6 +164,7 @@ _.Instances =
 						["description"] = "This boss could be summoned using the Brazier of Invocation.",
 					}),
 					n(10363, { 	-- General Drakkisath
+						un(12, ach(1307)),	-- Upper Blackrock Spire (Classic)
 						i(16674),	-- Beaststalker's Tunic
 						i(12592),	-- Blackblade of Shahram
 						i(16730),	-- Breastplate of Valor

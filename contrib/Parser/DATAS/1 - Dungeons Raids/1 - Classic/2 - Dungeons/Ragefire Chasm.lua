@@ -44,6 +44,7 @@ _.Instances =
 						i( 82884),	-- Chitonous Bracers
 					})),
 					cr(61528, e(697, {	-- Lava Guard Gordoth
+						ach(629),	-- Ragefire Chasm
 						i( 82888),	-- Heartboiler Staff
 						i( 82883),	-- Bloodcursed Felblade
 						i(151425),	-- Gordoth's Crushers

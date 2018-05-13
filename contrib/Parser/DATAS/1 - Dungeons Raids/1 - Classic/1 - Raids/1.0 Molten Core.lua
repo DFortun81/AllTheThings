@@ -5,6 +5,8 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(741, { 	-- Molten Core
 		["groups"] = {
+			ach(429),	-- Sulfuras, Hand of Ragnaros
+			ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
 			n(0, {	-- Zone Drop
 				n(11673, { -- Ancient Core Hound
 					dr(1.7, i(16828)),	-- Cenarion Belt (Druid)
@@ -535,6 +537,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(19140),	-- Cauterizing Band
 			})),
 			cr(11502, e(1528, { -- Ragnaros
+				ach(686),	-- Molten Core
 				ach(8820, { -- 10th Anniversary
 					["groups"] = {
 						ach(9550, { -- Boldly, You Sought the Power of Ragnaros

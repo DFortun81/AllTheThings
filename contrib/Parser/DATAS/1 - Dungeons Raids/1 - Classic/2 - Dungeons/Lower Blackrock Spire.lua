@@ -211,6 +211,7 @@ _.Instances =
 						["description"] = "This is a rare that is not always present.",
 					}),
 					cr( 9568, e(396, {	-- Overlord Wyrmthalak
+						ach(643),	-- Lower Blackrock Spire
 						i( 13163),	-- Relentless Scythe
 						i( 13161),	-- Trindlehaven Staff
 						i( 13162),	-- Reiver Claws
@@ -222,6 +223,7 @@ _.Instances =
 						["groups"] = {
 							-- n(-17, {	-- Quests (Legacy)
 							-- }),
+							un(12, ach(2188)),	-- Leeeeeeeeeeeeeroy!
 							n(  0, {	-- Zone Drop (Legacy)
 								n(9693, { 	-- Bloodaxe Evoker
 									un(7, i(16673)), 	-- Cord of Elements

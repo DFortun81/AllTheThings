@@ -112,6 +112,7 @@ _.Instances =
 						})),
 						cr(12201, e(431, {	-- Princess Theradras
 							["groups"] = {
+								ach(640),	-- Maraudon
 								i(17766),	-- Princess Theradras' Scepter
 								i(17780),	-- Blade of Eternal Darkness
 								i(17710),	-- Charstone Dirk

@@ -107,7 +107,7 @@ _.Instances =
 							dr(5.00, i(1951)), -- Blackwater Cutlass
 						}),
 					}),
-					d(  1, {	-- Normal
+					d(  1, {	-- Normal	
 						cr(47162, e(89, {	-- Glubtok
 							i(2169),	-- Buzzer Blade
 							i(5444),	-- Miner's Cape
@@ -141,6 +141,7 @@ _.Instances =
 							i(1156),	-- Lavishly Jeweled Ring
 						})),
 						cr(47739, e(93, {	-- "Captain" Cookie
+							ach(628),	-- Deadmines
 							i(5192),	-- Cookie's Tenderizer
 							i(5197),	-- Thief's Blade
 							i(5198),	-- Cookie's Stirring Rod

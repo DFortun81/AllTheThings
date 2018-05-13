@@ -170,6 +170,7 @@ _.Instances =
 						dr(2, i(13033)),	-- Zealot Blade
 					}),
 					cr( 4421, e(901, {	-- Charlga Razorflank
+						ach(635),	-- Razorfen Kraul
 						i(6692),	-- Pronged Reaver
 						i(6694),	-- Heart of Agamaggan
 						i(6693),	-- Agamaggan's Clutch

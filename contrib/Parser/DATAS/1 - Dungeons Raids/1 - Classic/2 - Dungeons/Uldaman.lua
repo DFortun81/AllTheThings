@@ -140,6 +140,7 @@ _.Instances =
 						i(  9414),	-- Oilskin Leggings
 					})),
 					cr( 2748, e(  473, {	-- Archaedas
+						ach(638),	-- Uldaman
 						i( 9418),	-- Stoneslayer
 						i( 9413),	-- The Rockpounder
 						i(11118),	-- Archaedic Stone

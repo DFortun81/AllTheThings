@@ -92,6 +92,7 @@ _.Instances =
 						i(6629), 	-- Sporid Cape
 					})),
 					cr(3654, e(481, { 	-- Mutanus the Devourer
+						ach(630),	-- Wailing Caverns
 						i(6461), 	-- Slime-Encrusted Pads
 						i(6627), 	-- Mutant Breastplate
 						i(6463),	-- Deep Fathom Ring

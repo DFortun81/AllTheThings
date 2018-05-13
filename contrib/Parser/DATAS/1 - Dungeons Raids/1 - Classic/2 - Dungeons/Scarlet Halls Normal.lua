@@ -30,6 +30,7 @@ _.Instances =
 							i(132550),	-- Scarlet Chain Footpads
 						})),
 						cr(59150, e(656, {	-- Flameweaver Koegler
+							ach(7413),	-- Scarlet Halls
 							i(88278),	-- Mograine's Immaculate Might
 							i(88274),	-- Koegler's Ritual Knife
 							i(88280),	-- Melted Hypnotic Blade

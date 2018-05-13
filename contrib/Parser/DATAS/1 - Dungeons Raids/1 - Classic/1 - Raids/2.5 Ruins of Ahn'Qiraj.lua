@@ -910,6 +910,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1542, { 	-- Ossirian the Unscarred
 				["groups"] = {
+					ach(689),	-- Ruins of Ahn'Qiraj
 					dr(0.7, i(20729)),	-- Formula: Enchant Gloves - Fire Power
 					dr(0.6, i(20728)),	-- Formula: Enchant Gloves - Frost Power
 					dr(1.2, i(20730)),	-- Formula: Enchant Gloves - Healing Power

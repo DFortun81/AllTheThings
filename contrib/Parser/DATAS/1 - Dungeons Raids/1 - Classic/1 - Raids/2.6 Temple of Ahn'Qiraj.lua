@@ -1722,6 +1722,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1551, { 	-- C'Thun
 				["groups"] = {
+					ach(687),	-- Temple of Ahn'Qiraj
 					{
 						["itemID"] = 21221,	-- Eye of C'Thun
 						["questID"] = 8801,	-- C'Thun's Legacy (Quest)

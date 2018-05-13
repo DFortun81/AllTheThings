@@ -8,6 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(230, { 	-- Dire Maul
 				["groups"] = {
+					ach(644),	-- King of Dire Maul
 					n(-12, {	-- Warpwood Quarter [East - Demon]
 						["groups"] = {
 							n(-17, {	-- Quests

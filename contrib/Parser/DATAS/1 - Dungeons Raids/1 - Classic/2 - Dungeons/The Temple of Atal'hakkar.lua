@@ -198,6 +198,7 @@ _.Instances =
 						}),
 					}),
 					cr(5709, e(463, { 	-- Shade of Erankikus
+						ach(641),	-- Sunken Temple
 						i(10828),	-- Dire Nail
 						i(10847),	-- Dragon's Call
 						i(10837),	-- Tooth of Eranikus

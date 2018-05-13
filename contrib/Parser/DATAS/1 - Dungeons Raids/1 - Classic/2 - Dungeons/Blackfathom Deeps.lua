@@ -226,6 +226,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(151438),	-- Hungering Deepwater Treads
 			})),
 			cr(75408, e( 444, {	-- Aku'mai
+				ach(632),	-- Blackfathom Deeps
 				i(  6909),	-- Strike of the Hydra
 				i(  6911),	-- Moss Cinch
 				i(132553),	-- Algae-Twined Waistcord
