@@ -1398,7 +1398,11 @@ _.Zones =
 						i(121738), -- Irongrove Refugee Boots
 						i(139979), -- Footpads of the Nightrunners
 						i(140015), -- Scavenged Felsoul Sabaton
-						i(140746), -- Treasure Map: Suramar
+						i(140746, { -- Treasure Map: Suramar
+							["groups"] = {
+							},
+							["f"] = 55, -- Consumable
+						}),
 						i(140324), -- Mobile Telemancy Beacon
 						i(139600), -- Braided Manastring Cinch
 						i(136899), -- Extinguished Eye
