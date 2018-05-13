@@ -114,6 +114,8 @@ _.Instances =
 						i(30449),	-- Void Star Talisman
 					})),
 					cr(19622, e(1576, { -- Kael'thas Sunstrider
+						ach(696),	-- Tempest Keep
+						ach(885),	-- Ashes of Al'ar
 						i(32405, {	-- Verdant Sphere
 							q(11007),	-- Kael'thas and the Verdant Sphere
 						}),

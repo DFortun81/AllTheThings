@@ -519,6 +519,8 @@ _.Instances =
 					}),
 					e(1596, {	-- Kil'jaeden
 						["groups"] = {
+							ach(698),	-- Sunwell Plateau
+							ach(725),	-- Thori'dal, the Stars' Fury
 							i(34664),	-- Sunmote
 							i(34247),	-- Apolyon, the Soul-Render
 							i(34337),	-- Golden Staff of the Sin'dorei

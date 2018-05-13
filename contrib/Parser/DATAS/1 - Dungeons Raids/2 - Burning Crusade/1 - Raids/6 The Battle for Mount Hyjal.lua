@@ -264,6 +264,7 @@ _.Instances =
 					}),
 					e(1581, {	-- Archimonde
 						["groups"] = {
+							ach(695),	-- The Battle for Mount Hyjal
 							i( 31097, {	-- Helm of the Forgotten Conqueror
 								i(30987),	-- Lightbringer Faceguard
 								i(30988),	-- Lightbringer Greathelm
