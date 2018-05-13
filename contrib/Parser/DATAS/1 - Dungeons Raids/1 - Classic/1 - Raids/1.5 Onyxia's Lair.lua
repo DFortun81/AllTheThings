@@ -9,6 +9,7 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					e(1651, {	-- Onyxia (Legacy)
 						["groups"] = {
+							un(12, ach(684)),	-- Onyxia's Lair (Level 60)
 							a({
 								["itemID"] = 18423,		-- Head of Onyxia [Alliance]
 								["questID"] = 7495,		-- Victory for the Alliance
@@ -112,6 +113,10 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					e(1651, {	-- Onyxia 
 						["groups"] = {
+							ach(4403),	-- Many Whelps! Handle It! (10 player)
+							ach(4402),	-- More Dots! (10 player)
+							ach(4396),	-- Onyxia's Lair (10 player)
+							ach(4404),	-- She Deep Breaths More (10 player)
 							a({
 								["itemID"] = 49644,		-- Head of Onyxia [Alliance]
 								["questID"] = 24428,	-- A Most Puzzling Circumstance
@@ -211,6 +216,10 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					e(1651, {	-- Onyxia
 						["groups"] = {
+							ach(4406), -- Many Whelps! Handle It! (25 player)
+							ach(4405), -- More Dots! (25 player)
+							ach(4397), -- Onyxia's Lair (25 player)
+							ach(4407), -- She Deep Breaths More (25 player)
 							a({
 								["itemID"] = 49644,		-- Head of Onyxia [Alliance]
 								["questID"] = 24428,	-- A Most Puzzling Circumstance
