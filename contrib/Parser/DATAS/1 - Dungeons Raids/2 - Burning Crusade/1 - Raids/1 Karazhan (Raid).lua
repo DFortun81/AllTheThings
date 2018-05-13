@@ -8,6 +8,8 @@ _.Instances =
 		["groups"] = {
 			inst(745, { 	-- Karazhan (Raid)
 				["groups"] = {
+					ach(960),	-- The Violet Eye
+					un(3, ach(2456)),	-- Vampire Hunter
 					n(-2, {	-- Vendors
 						n(16388, { 	-- Koren
 							["groups"] = {	
@@ -67,6 +69,7 @@ _.Instances =
 					}),
 					e(  1553, {			-- Attumen The Huntsman
 						["groups"] = {
+							ach(882),	-- Fiery Warhorse's Reins
 							i(30480),	-- Fiery Warhorse's Reins (MOUNT!)
 							i(28504),	-- Steelhawk Crossbow
 							i(28509),	-- Worgen Claw Necklace
@@ -316,6 +319,7 @@ _.Instances =
 					}),
 					e(  1563, {			-- Prince Malchezaar
 						["groups"] = {
+							ach(690),	-- Karazhan
 							i(29760, {	-- Helm of the Fallen Champion
 								i(27704),	-- Gladiator's Lamellar Helm
 								i(31616),	-- Gladiator's Ornamented Headcover

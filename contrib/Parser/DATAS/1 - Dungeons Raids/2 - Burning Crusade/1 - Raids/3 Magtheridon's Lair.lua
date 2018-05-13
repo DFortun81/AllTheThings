@@ -9,6 +9,7 @@ _.Instances =
 			inst(747, { 	-- Magtheridon's Lair
 				["groups"] = {
 					cr(17257, e(1566, {
+						ach(693),	-- Magtheridon's Lair
 						a(i(32385, {	-- Magtheridon's Head (Alliance)
 							a(q(11002)),	-- The Fall of Magtheridon (Alliance)
 						})),

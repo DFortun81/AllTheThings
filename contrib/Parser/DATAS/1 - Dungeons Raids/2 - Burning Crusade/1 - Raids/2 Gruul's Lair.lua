@@ -61,6 +61,7 @@ _.Instances =
 					}),
 					e(1565, {	-- Grull the Dragonkiller
 						["groups"] = {
+							ach(692),	-- Gruul's Lair
 							i(29766, {	-- Leggings of the Fallen Champion
 								i(27705),	-- Gladiator's Lamellar Legguards
 								i(31618),	-- Gladiator's Ornamented Legplates

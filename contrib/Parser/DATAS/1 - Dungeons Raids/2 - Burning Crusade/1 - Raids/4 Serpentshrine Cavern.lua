@@ -50,6 +50,7 @@ _.Instances =
 					}),
 					e(1568, {	-- The Lurker Below
 						["groups"] = {
+							ach(144),	-- The Lurker Above
 							i(30058),	-- Mallet of the Tides
 							i(30059),	-- Choker of Animalistic Fury
 							i(30065),	-- Glowing Breastplate of Truth
@@ -188,6 +189,7 @@ _.Instances =
 						}),
 					e(1572, {	-- Lady Vashj
 						["groups"] = {
+							ach(694),	-- Serpentshrine Cavern
 							i(97554),	-- Dripping Strider Egg (PET!)
 							i(30242, {	-- Helm of the Vanquished Champion
 								i(30125),	-- Crystalforge Faceguard

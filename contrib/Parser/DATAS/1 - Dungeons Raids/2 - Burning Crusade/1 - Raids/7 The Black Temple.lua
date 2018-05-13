@@ -60,6 +60,8 @@ _.Instances =
 					}),
 					d(14, {	-- Normal	
 						["groups"] = {
+							ach(958),	-- Sworn to the Deathsworn
+							ach(426),	-- Warglaives of Azzinoth
 							cr(22887, e(1582, {	-- High Warlord Naj'entus
 								i(122104),	-- Leviathan Egg (PET!)
 								i( 32248),	-- Halberd of Desolation
@@ -250,6 +252,7 @@ _.Instances =
 								i(32505),	-- Madness of the Betrayer
 							})),
 							cr(22917, e(1590, {	-- Illidan Stormrage
+								ach(697),	-- The Black Temple
 								i( 31089, {	-- Chestguard of the Forgotten Conqueror
 									i(30990),	-- Lightbringer Breastplate
 									i(30991),	-- Lightbringer Chestguard
