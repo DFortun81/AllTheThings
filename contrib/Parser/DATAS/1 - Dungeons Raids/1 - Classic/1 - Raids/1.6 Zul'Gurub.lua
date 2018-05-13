@@ -5,6 +5,7 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(76, { 	-- Zul'Gurub
 		["groups"] = {
+			un(12, ach(560)),	-- Deadliest Catch
 			nlq({ -- Legacy Quests
 				{
 					["itemID"] = 19724,	-- Primal Hakkari Aegis
@@ -375,6 +376,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(22720),	-- Zulian Headdress
 			}),
 			n(11382, { -- Bloodlord Mandokir
+				un(12, ach(881)),	-- Swift Razzashi Raptor
 				i(19865),	-- Warblade of the Hakkari
 				i(19867),	-- Bloodlord's Defender
 				i(19869),	-- Blooddrenched Grips
@@ -407,6 +409,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(14509, { -- High Priest Thekal
+				un(12, ach(880)),	-- Swift Zulian Tiger
 				i(19896),	-- Thekal's Grasp
 				i(19897),	-- Betrayer's Boots
 				i(19899),	-- Ritualistic Legguards
@@ -454,6 +457,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(19894),	-- Bloodsoaked Gauntlets
 			}),
 			n(14834, { -- Hakkar the Soulflayer
+				un(12, ach(688)),	-- Zul'Gurub
 				i(19852),	-- Ancient Hakkari Manslayer
 				i(19853),	-- Gurubashi Dwarf Destroyer
 				i(19854),	-- Zin'rokh, Destroyer of Worlds

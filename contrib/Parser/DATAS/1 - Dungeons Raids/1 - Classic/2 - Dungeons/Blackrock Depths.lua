@@ -31,6 +31,7 @@ _.Instances =
 						["groups"] = {
 							n(23872, { 	-- Coren Direbrew
 								["groups"] = {
+									ach(295),	-- Direbrewfest
 									a(i(38280, {	-- Direbrew's Dire Brew
 										qa(12491),		-- Direbrew's Dire Brew
 									})),
@@ -788,6 +789,7 @@ _.Instances =
 							i( 22275), 	-- Firemoss Boots
 						})),
 						cr(9019, e( 387, {	-- Emperor Dagran Thaurissan
+							ach(642),	-- Blackrock Depths
 							i(11931), 	-- Dreadforge Retaliatior
 							i(11684), 	-- Ironfoe
 							i(11928), 	-- Thaurissan's Royal Scepter

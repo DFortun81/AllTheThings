@@ -110,6 +110,7 @@ _.Instances =
 							i(88293),	-- Firefinger Ring
 						})),
 						cr( 3977, e(674, {	-- High Inquisitor Whitemane
+							ach(637),	-- Scarlet Monastery
 							i( 88301),	-- Greatstaff of Righteousness
 							i( 88297),	-- Lightbreaker Greatsword
 							i( 88299),	-- Whitemane's Embroidered Chapeau

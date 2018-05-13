@@ -125,6 +125,7 @@ _.Instances =
 						i(151458),	-- Sezz'ziz's Captive Kickers
 					})),
 					cr(7267, e(489, { 	-- Chief Ukorz Sandscalp
+						ach(639),	-- Zul'Farrak
 						i(  9477), 	-- The Chief's Enforcer
 						i( 11086, { 	-- Jan'thraze the Protector
 							i(9372), 	-- Sul'thraze the Lasher

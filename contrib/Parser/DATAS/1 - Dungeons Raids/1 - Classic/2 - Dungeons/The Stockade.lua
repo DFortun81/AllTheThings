@@ -25,6 +25,7 @@ _.Instances =
 						qg(46417, qa(27733)),	-- The Good Ol' Switcheroo
 					}),
 					cr(46254, e(464, {	-- Hogger
+						ach(633),	-- Stormwind Stockade
 						i(  1959),	-- Cold Iron Pick
 						i(151074), 	-- Turnkey's Pauldrons
 						i(  1934),	-- Hogger's Trousers

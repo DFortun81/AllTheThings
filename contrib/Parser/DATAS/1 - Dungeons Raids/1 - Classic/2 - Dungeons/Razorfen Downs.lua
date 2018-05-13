@@ -129,6 +129,7 @@ _.Instances =
 						i(151454),	-- Splinterbone Sabatons
 					})),
 					cr(74434, e(1141, {	-- Amnennar the Coldbringer
+						ach(636),	-- Razorfen Downs
 						i(10761),	-- Coldrage Dagger
 						i(10763),	-- Icemetal Barbute
 						i(10764),	-- Deathchill Armor

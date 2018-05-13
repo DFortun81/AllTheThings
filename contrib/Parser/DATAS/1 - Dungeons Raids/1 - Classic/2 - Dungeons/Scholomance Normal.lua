@@ -67,6 +67,7 @@ _.Instances =
 							i(88350),	-- Leggings of Unleashed Anguish
 						})),
 						cr(59080, e(684, { 	-- Darkmaster Gandling
+							ach(645),	-- Scholomance
 							i(88362),	-- Shoulderguards of Painful Lessons
 							i(88361),	-- Gloves of Explosive Pain
 							i(88356),	-- Tombstone Gauntlets

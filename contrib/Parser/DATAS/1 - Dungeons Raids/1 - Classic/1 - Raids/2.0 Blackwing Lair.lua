@@ -226,6 +226,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1536, { -- Nefarian
 				["groups"] = {
+					ach(685),	-- Blackwing Lair
 					i(19003, {	-- Head of Nefarian
 						qa(7781), 	-- The Lord of Blackrock
 						sq(7781, qg(107574, qa(7782, {	-- The Lord of Blackrock

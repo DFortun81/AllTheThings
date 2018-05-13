@@ -8,6 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(236, { 	-- Stratholme
 				["groups"] = {
+					ach(646),	-- Stratholme
 					q(35563, {	-- Main Gate (Living)
 						n(-47, {	-- Lunar Festival						
 							["groups"] = {						
@@ -314,6 +315,7 @@ _.Instances =
 							}),
 						})),
 						cr(45412, e(456, { 	-- Lord Aurius Rivendare
+							ach(729),	-- Deathcharger's Reins
 							i(13335),	-- Deathcharger's Reins (MOUNT!)
 							i(13505),	-- Runeblade of Baron Rivendare
 							i(13368),	-- Bonescraper

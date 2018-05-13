@@ -293,6 +293,7 @@ _.Instances =
 						["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Head to the last boss in Gnomeregan but DO NOT kill him.|r  \n|cff3399ffSTEP 2:|r|cff66ccff Go to the back of the pillar on the left side of the entrance as you enter the room and press the small button.|r\n|cff3399ffSTEP 3:|r|cff66ccff Endgineer Omegaplugg will spawn, with 207 Million health.  He drops the toy.  Everyone in group can loot the toy.  Good Luck!|r"
 					}),
 					cr( 7800, e(422, {	-- Mekgineer Thermaplugg
+						ach(634),	-- Gnomeregan
 						i( 9459),	-- Thermaplugg's Left Arm
 						i( 9458),	-- Thermaplugg's Central Core
 						i( 9492),	-- Electromagnetic Gigaflux Reactivator

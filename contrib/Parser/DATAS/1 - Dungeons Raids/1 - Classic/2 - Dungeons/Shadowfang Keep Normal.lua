@@ -311,6 +311,7 @@ _.Instances =
 							i(132566),	-- Dark Lupine Wraps
 						})),
 						cr(46964, e(100, { 	-- Lord Godfrey
+							ach(631),	-- Shadowfang Keep
 							i(  6641),	-- Haunting Blade
 							i(  6318),	-- Odo's Ley Staff
 							i(  6220),	-- Meteor Shard
