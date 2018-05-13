@@ -520,7 +520,6 @@ _.Instances =
 					e(1596, {	-- Kil'jaeden
 						["groups"] = {
 							ach(698),	-- Sunwell Plateau
-							ach(725),	-- Thori'dal, the Stars' Fury
 							i(34664),	-- Sunmote
 							i(34247),	-- Apolyon, the Soul-Render
 							i(34337),	-- Golden Staff of the Sin'dorei
@@ -528,7 +527,9 @@ _.Instances =
 							i(34335),	-- Hammer of Sanctification
 							i(34331),	-- Hand of the Deceiver
 							i(34336),	-- Sunfire
-							i(34334),	-- Thori'dal, the Stars' Fury (LEGENDARY!)
+							i(34334, {	-- Thori'dal, the Stars' Fury (LEGENDARY!)
+								ach(725),	-- Thori'dal, the Stars' Fury
+							}),
 							i(34333),	-- Coif of Alleria
 							i(34245, {	-- Cover of Ursol the Wise
 								n(25977, {	-- Yrma

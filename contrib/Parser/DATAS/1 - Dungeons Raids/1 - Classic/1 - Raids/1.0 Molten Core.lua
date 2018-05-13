@@ -5,8 +5,6 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(741, { 	-- Molten Core
 		["groups"] = {
-			ach(429),	-- Sulfuras, Hand of Ragnaros
-			ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
 			n(0, {	-- Zone Drop
 				n(11673, { -- Ancient Core Hound
 					dr(1.7, i(16828)),	-- Cenarion Belt (Druid)
@@ -396,6 +394,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18564, {	-- Bindings of the Windseeker (Right)
+					ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
 					un(15, i(19019)),	-- Thunderfury, Blessed Blade of the Windseeker
 				}),
 				i(18822),	-- Obsidian Edged Blade
@@ -453,6 +452,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18563, {	-- Bindings of the Windseeker (Left)
+					ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
 					un(15, i(19019)),	-- Thunderfury, Blessed Blade of the Windseeker
 				}),
 				i(18822),	-- Obsidian Edged Blade
@@ -554,6 +554,7 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 12,
 				}),
 				i(17204, {	-- Eye of Sulfuras
+					ach(429),	-- Sulfuras, Hand of Ragnaros
 					un(15, i(17182)), 	-- Sulfuras, Hand of Ragnaros
 				}),
 				i(138833),	-- Illusion: Flametongue (Shaman)
