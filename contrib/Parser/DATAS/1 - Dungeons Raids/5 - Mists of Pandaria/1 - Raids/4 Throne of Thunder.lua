@@ -952,6 +952,7 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
+							ach(8124), -- Glory of the Thundering Raider
 							n(-17, {	-- Quests 
 								q(32711, { -- Agony and Anima
 									["groups"] = {
@@ -1060,29 +1061,1390 @@ _.Instances =
 								}),
 							}),
 							n(0, {		-- Zone Drop
-								i(95207, { i(96333) }),	-- Abandoned Zandalari Firecord
-								i(95208, { i(96334) }),	-- Abandoned Zandalari Shadowgirdle
-								i(95224, { i(96337) }),	-- Home-Warding Slippers
-								i(95223, { i(96335) }),	-- Silentflame Sandals
-								i(95210, { i(96343) }),	-- Abandoned Zandalari Moonstrap
-								i(95209, { i(96342) }),	-- Abandoned Zandalari Silentbelt
-								i(95221, { i(96338) }),	-- Deeproot Treads
-								i(95219, { i(96331) }),	-- Spiderweb Tabi
-								i(95211, { i(96344) }),	-- Abandoned Zandalari Arrowlinks
-								i(95212, { i(96345) }),	-- Abandoned Zandalari Waterchain
-								i(95220, { i(96332) }),	-- Scalehide Spurs
-								i(95222, { i(96339) }),	-- Spiritbound Boots
-								i(95215, { i(96348) }),	-- Abandoned Zandalari Bucklebreaker
-								i(95214, { i(96347) }),	-- Abandoned Zandalari Goreplate
-								i(95213, { i(96346) }),	-- Abandoned Zandalari Greatbelt
-								i(95218, { i(96351) }),	-- Columnbreaker Stompers
-								i(95217, { i(96350) }),	-- Locksmasher Greaves
-								i(95216, { i(96340) }),	-- Vaultwalker Sabatons
+								n(69909, { -- Amani'shi Flame Chanter	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70448, { -- Ancient Python	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons	
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(68221, { -- Bore Worm	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(68222, { -- Bow Fly Swarm	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers
+									n(-355, { -- Thunderforged	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers
+									}),
+								}),
+								n(70589, { -- Cavern Burrower	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69702, { -- Dark Ritualist	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons	
+									}),
+								}),
+								n(69910, { -- Drakkari Frost Warden	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70586, { -- Eternal Guardian	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69899, { -- Farraki Sand Conjurer	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons	
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70153, { -- Fungal Growth	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(68220, { -- Gastropod	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69351, { -- Greater Cave Bat	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69916, { -- Gurubashi Berserker	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69905, { -- Gurubashi Berserker	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons	
+									}),
+								}),
+								n(69375, { -- Hidden Fog	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69834, { -- Lightning Guardian	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+									}),
+								}),
+								n(70202, { -- Manchu	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70594, { -- Mist Lurker	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70179, { -- Ritual Guard	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(68313, { -- Roaming Fog	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70430, { -- Rocky Horror	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95224), -- Home-Warding Slippers
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96337), -- Home-Warding Slippers
+									}),
+								}),
+								n(70224, { -- Rotting Scavenger	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95224), -- Home-Warding Slippers
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96337), -- Home-Warding Slippers
+									}),
+								}),
 								n(69944, { -- Sand Elemental
 									i(94125), -- Living Sandling
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70587, { -- Shale Stalker	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70240, { -- Shan'ze Celestial Shaper	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70227, { -- Skittering Spiderling	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70445, { -- Stormbringer Draz'kil	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69821, { -- Thunder Lord	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70341, { -- Tormented Spirit	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70230, { -- Zandalari Blade Initiate	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons	
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69906, { -- Zandalari High Priest	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons	
+									}),
+								}),
+								n(69927, { -- Zandalari Prelate	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons	
+									}),
+								}),
+								n(70557, { -- Zandalari Prophet	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69388, { -- Zandalari Spear-Shaper	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons	
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69390, { -- Zandalari Storm-Caller	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(70236, { -- Zandalari Storm-Caller	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69911, { -- Zandalari Warlord	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95224), -- Home-Warding Slippers	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle
+										i(96337), -- Home-Warding Slippers	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
+								}),
+								n(69455, { -- Zandalari Water-Binder	
+									i(95207), -- Abandoned Zandalari Firecord	
+									i(95208), -- Abandoned Zandalari Shadowgirdle	
+									i(95223), -- Silentflame Sandals	
+									i(95210), -- Abandoned Zandalari Moonstrap	
+									i(95209), -- Abandoned Zandalari Silentbelt	
+									i(95221), -- Deeproot Treads	
+									i(95219), -- Spiderweb Tabi	
+									i(95211), -- Abandoned Zandalari Arrowlinks	
+									i(95212), -- Abandoned Zandalari Waterchain	
+									i(95220), -- Scalehide Spurs	
+									i(95222), -- Spiritbound Boots	
+									i(95215), -- Abandoned Zandalari Bucklebreaker	
+									i(95214), -- Abandoned Zandalari Goreplate	
+									i(95213), -- Abandoned Zandalari Greatbelt	
+									i(95218), -- Columnbreaker Stompers	
+									i(95217), -- Locksmasher Greaves	
+									i(95216), -- Vaultwalker Sabatons
+									n(-355, { -- Thunderforged	
+										i(96333), -- Abandoned Zandalari Firecord	
+										i(96334), -- Abandoned Zandalari Shadowgirdle	
+										i(96335), -- Silentflame Sandals	
+										i(96343), -- Abandoned Zandalari Moonstrap	
+										i(96342), -- Abandoned Zandalari Silentbelt	
+										i(96338), -- Deeproot Treads	
+										i(96331), -- Spiderweb Tabi	
+										i(96344), -- Abandoned Zandalari Arrowlinks	
+										i(96345), -- Abandoned Zandalari Waterchain	
+										i(96332), -- Scalehide Spurs	
+										i(96339), -- Spiritbound Boots	
+										i(96348), -- Abandoned Zandalari Bucklebreaker	
+										i(96347), -- Abandoned Zandalari Goreplate	
+										i(96346), -- Abandoned Zandalari Greatbelt	
+										i(96351), -- Columnbreaker Stompers	
+										i(96350), -- Locksmasher Greaves	
+										i(96340), -- Vaultwalker Sabatons
+									}),
 								}),
 							}),
 							cr(69465, e(827, {	-- Jin'rokh the Breaker
+								ach(8094), -- Lightning Overload
 								i(94735), -- Drape of Booming Nights
 								i(94733), -- Fissure-Split Shoulderwraps
 								i(94731), -- Robes of Static Bursts
@@ -1163,6 +2525,7 @@ _.Instances =
 								}),	
 							})),
 							cr(68476, e(819, {	-- Horridon
+								ach(8038), -- Cretaceous Collector
 								i(94745), -- Horn-Rimmed Doomcloak
 								i(94748), -- Wastewalker's Sandblasted Drape
 								i(94752), -- Flamecaster's Burning Crown
@@ -1245,6 +2608,7 @@ _.Instances =
 								}),	
 							})),
 							cr(69134, e(816, {	-- Council of Elders (Kazra'jin)
+								ach(8073), -- Cage Match
 								i(94761), -- Zandalari Robes of the Final Rite
 								i(94762), -- Mar'li's Bloodstained Sandals
 								i(94765), -- Robes of Treacherous Ground
@@ -1345,6 +2709,7 @@ _.Instances =
 								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 							}),
 							cr(67977, e(825, {	-- Tortos
+								ach(8077), -- One-Up
 								i(94774), -- Beakbreaker Greatcloak
 								i(94785), -- Shimmershell Cape
 								i(94782), -- Stonegaze Hood
@@ -1431,6 +2796,7 @@ _.Instances =
 								}),	
 							})),
 							cr(70212, e(821, {	-- Megaera (Flaming Head)
+								ach(8082), -- Head Case
 								i(94801), -- Gleaming-Eye Shoulderpads
 								i(94804), -- Frostborn Wristwraps
 								i(94799), -- Sandals of Arcane Fury
@@ -1523,6 +2889,7 @@ _.Instances =
 									["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range."								
 							}),
 							cr(69712, e(828, {	-- Ji-Kun
+								ach(8097), -- Soft Hands
 								i(94812), -- Pinionfeather Greatcloak
 								i(94806), -- Robe of Midnight Down
 								i(94813), -- Cord of Cacophonous Cawing
@@ -1640,6 +3007,7 @@ _.Instances =
 								}),	
 							})),
 							cr(68036, e(818, {	-- Durumu the Forgotten
+								ach(8098), -- You Said Crossing the Streams Was Bad
 								i(94929), -- Deadly Glare Cape
 								i(94822), -- Reinforced Mirror-Sheen Cloak
 								i(94928), -- Chilblain Spaulders
@@ -1724,6 +3092,7 @@ _.Instances =
 								}),	
 							})),
 							cr(69017, e(820, {	-- Primordius
+								ach(8037), -- Genectically Unmodified Organism
 								i(94942), -- Hydra-Scale Bloodcloak
 								i(94951), -- Robes of Mutagenic Blood
 								i(94948), -- Bracers of Fragile Bone
@@ -1807,6 +3176,7 @@ _.Instances =
 								}),	
 							})),
 							cr(69427, e(824, {	-- Dark Animus
+								ach(8081), -- Ritualist Who?
 								i(94960), -- Constantly Accelerating Cloak
 								i(94959), -- Hood of the Crimson Wake
 								i(94957), -- Anima-Ringed Fingers
@@ -1901,6 +3271,7 @@ _.Instances =
 								}),	
 							})),
 							cr(68078, e(817, {	-- Iron Qon
+								ach(8087), -- Can't Touch This
 								i(94970), -- Quet'zal's Crackling Cord
 								i(94966), -- Saddle-Scarred Leggings
 								i(94968), -- Dam'ren's Frozen Footguards
@@ -2091,6 +3462,8 @@ _.Instances =
 								}),	
 							})),
 							cr(68397, e(832, {	-- Lei Shen
+								ach(8090), -- A Complete Circuit
+								un(2, ach(8249)), -- Ahead of the Curve: Lei Shen
 								i(94993), -- Gloves of the Maimed Vizier
 								i(94990), -- Legwraps of Cardinality
 								i(94987), -- Fusion Slasher Chestguard
@@ -2174,6 +3547,7 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
+							ach(8124), -- Glory of the Thundering Raider
 							n(-17, {	-- Quests 					
 								qh(32589, { -- Life Blood
 									i(95590), -- Glorious Standard of the Sunreaver Onslaught Toy
@@ -2305,6 +3679,8 @@ _.Instances =
 								i(96622, { i(96994) }),	-- Visage of the Doomed
 							}),
 							cr(69465, e(827, {			-- Jin'rokh the Breaker
+								ach(8056), -- Heroic: Jin'rokh the Breaker
+								ach(8094), -- Lightning Overload
 								i(96383, { i(96755) }),	-- Drape of Booming Nights
 								i(96380, { i(96752) }),	-- Fissure-Split Shoulderwraps
 								i(96381, { i(96753) }),	-- Robes of Static Bursts
@@ -2323,6 +3699,8 @@ _.Instances =
 								i(96376, { i(96748) }),	-- Worldbreaker's Stormscythe
 							})),
 							cr(68476, e(819, {			-- Horridon
+								ach(8038), -- Cretaceous Collector
+								ach(8057), -- Heroic: Horridon
 								i(96397, { i(96769) }),	-- Horn-Rimmed Doomcloak
 								i(96389, { i(96761) }),	-- Wastewalker's Sandblasted Drape
 								i(96399, { i(96771) }),	-- Flamecaster's Burning Crown
@@ -2343,6 +3721,8 @@ _.Instances =
 								i(93666)
 							})),
 							cr(69134, e(816, {			-- Council of Elders (Kazra'jin)
+								ach(8073), -- Cage Match
+								ach(8058), -- Heroic: Council of Elders
 								i(96412, { i(96784) }),	-- Zandalari Robes of the Final Rite
 								i(96411, { i(96783) }),	-- Mar'li's Bloodstained Sandals
 								i(96415, { i(96787) }),	-- Robes of Treacherous Ground
@@ -2384,6 +3764,8 @@ _.Instances =
 								}),
 							})),
 							cr(67977, e(825, {			-- Tortos
+								ach(8059), -- Heroic: Tortos
+								ach(8077), -- One-Up
 								i(96431, { i(96803) }),	-- Beakbreaker Greatcloak
 								i(96435, { i(96807) }),	-- Shimmershell Cape
 								i(96433, { i(96805) }),	-- Stonegaze Hood
@@ -2405,6 +3787,8 @@ _.Instances =
 								i(96436, { i(96808) }),	-- Tortos' Discarded Shell
 							})),
 							cr(70212, e(821, {			-- Megaera (Flaming Head)
+								ach(8082), -- Head Case
+								ach(8060), -- Heroic: Megaera
 								i(96451, { i(96823) }),	-- Gleaming-Eye Shoulderpads
 								i(96452, { i(96824) }),	-- Frostborn Wristwraps
 								i(96450, { i(96822) }),	-- Sandals of Arcane Fury
@@ -2426,6 +3810,8 @@ _.Instances =
 									["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range."								
 							}),
 							cr(69712, e(828, {			-- Ji-Kun
+								ach(8061), -- Heroic: Ji-Kun
+								ach(8097), -- Soft Hands
 								i(96461, { i(96833) }),	-- Pinionfeather Greatcloak
 								i(96463, { i(96835) }),	-- Robe of Midnight Down
 								i(96462, { i(96834) }),	-- Cord of Cacophonous Cawing
@@ -2468,6 +3854,8 @@ _.Instances =
 								}),
 							})),
 							cr(68036, e(818, {			-- Durumu the Forgotten
+								ach(8062), -- Heroic: Durumu the Forgotten
+								ach(8098), -- You Said Crossing the Streams Was Bad
 								i(96485, { i(96857) }),	-- Deadly Glare Cape
 								i(96480, { i(96852) }),	-- Reinforced Mirror-Sheen Cloak
 								i(96484, { i(96856) }),	-- Chilblain Spaulders
@@ -2488,6 +3876,8 @@ _.Instances =
 								i(96472, { i(96844) }),	-- Durumu's Baleful Gaze
 							})),
 							cr(69017, e(820, {			-- Primordius
+								ach(8037), -- Genectically Unmodified Organism
+								ach(8063), -- Heroic: Primordius
 								i(96499, { i(96871) }),	-- Hydra-Scale Bloodcloak
 								i(96503, { i(96875) }),	-- Robes of Mutagenic Blood
 								i(96506, { i(96878) }),	-- Bracers of Fragile Bone
@@ -2508,6 +3898,8 @@ _.Instances =
 								i(97960)
 							})),
 							cr(69427, e(824, {			-- Dark Animus
+								ach(8064), -- Heroic: Dark Animus
+								ach(8081), -- Ritualist Who?
 								i(96517, { i(96889) }),	-- Constantly Accelerating Cloak
 								i(96515, { i(96887) }),	-- Hood of the Crimson Wake
 								i(96520, { i(96892) }),	-- Anima-Ringed Fingers
@@ -2548,6 +3940,8 @@ _.Instances =
 								}),
 							})),
 							cr(68078, e(817, {			-- Iron Qon
+								ach(8087), -- Can't Touch This
+								ach(8065), -- Heroic: Iron Qon
 								i(96526, { i(96898) }),	-- Quet'zal's Crackling Cord
 								i(96527, { i(96899) }),	-- Saddle-Scarred Leggings
 								i(96528, { i(96900) }),	-- Dam'ren's Frozen Footguards
@@ -2589,6 +3983,7 @@ _.Instances =
 								}),
 							})),
 							cr(68905, e(829, {			-- Twin Consorts (Lu'lin)
+								ach(8066), -- Heroic: Twin Consorts
 								i(96536, { i(96908) }),	-- Robes of the Moon Lotus
 								i(96540, { i(96912) }),	-- Bracers of the Midnight Comet
 								i(96541, { i(96913) }),	-- Girdle of Night and Day
@@ -2628,6 +4023,9 @@ _.Instances =
 								}),
 							})),
 							cr(68397, e(832, {			-- Lei Shen
+								ach(8090), -- A Complete Circuit
+								un(2, ach(8238)), -- Cutting Edge: Lei Shen
+								ach(8067), -- Heroic: Lei Shen								
 								i(96557, { i(96929) }),	-- Gloves of the Maimed Vizier
 								i(96556, { i(96928) }),	-- Legwraps of Cardinality
 								i(96548, { i(96920) }),	-- Fusion Slasher Chestguard
@@ -2645,6 +4043,9 @@ _.Instances =
 								i(96562, { i(96934) }),	-- Lei Shen's Orb of Command
 							})),
 							cr(69473, e(831, {			-- Ra-den
+								un(2, ach(8260)), -- Cutting Edge: Ra-den
+								ach(8068), -- Heroic: Ra-den
+								ach(8089), -- I Thought He Was Supposeed to Be Hard?
 								i(95016),
 								i(95017),
 								i(95038),
