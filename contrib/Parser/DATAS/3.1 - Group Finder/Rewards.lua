@@ -123,6 +123,7 @@ _.GroupFinder =
 			i(51991),	-- Turbulent Signet*
 		},
 		["lvl"] = 60,
+		-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: unsure about start/end points -- I *think* but am not positive that they opened at 58 and I'm not sure when they become unavailable.  Still available for a 69 character.  Commenting this out until confirmation.
 	}),
 	i(156688, {	-- Icy Satchel of Helpful Goods
 		["groups"] = {
@@ -158,8 +159,10 @@ _.GroupFinder =
 			i(113683),	-- Coldwrap Cloak
 			i(113684),	-- Icecrust Cloak*
 			i(113687),	-- Dark Rune Lavalliere*
+			i(113688),	-- Obsidian Citadel Necklace*
 		},
 		["lvl"] = 60,
+		-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: Unsure of start/end points.  Not positive about 58, but I think LK dungeons now open at the same time as BC.  Unavailable on a level 84 character, so this bracket ends sometime before that.  Commenting out until confirmation.)
 	}),
 	un(2, i(52004, {	-- Satchel of Helpful Goods 60-64
 		["groups"] = {
