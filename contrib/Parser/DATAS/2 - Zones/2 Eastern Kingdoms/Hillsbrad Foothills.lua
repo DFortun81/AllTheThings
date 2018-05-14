@@ -503,7 +503,7 @@ _.Zones =
 						["qg"] = 47432,	-- Apothecary Underhill
 						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 					}),
-					ql(q(30118, {	-- Patricide (UNTESTED, NEEDS CONFIRMATION)
+					ql(q(30118, {	-- Patricide
 						["groups"] = {
 							i(77949),	-- Golad, Twilight of Aspects (LEGENDARY!)
 							i(77950),	-- Tiriosh, Nightmare of Ages (LEGENDARY!)
