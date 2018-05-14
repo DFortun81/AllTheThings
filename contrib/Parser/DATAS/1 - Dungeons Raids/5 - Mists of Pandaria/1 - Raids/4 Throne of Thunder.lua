@@ -6149,7 +6149,7 @@ _.Instances =
 							cr(69473, e(831, {			-- Ra-den
 								un(2, ach(8260)), -- Cutting Edge: Ra-den
 								ach(8068), -- Heroic: Ra-den
-								ach(8089), -- I Thought He Was Supposeed to Be Hard?
+								un(2, ach(8089)), -- I Thought He Was Supposeed to Be Hard?
 								i(95016),
 								i(95017),
 								i(95038),
