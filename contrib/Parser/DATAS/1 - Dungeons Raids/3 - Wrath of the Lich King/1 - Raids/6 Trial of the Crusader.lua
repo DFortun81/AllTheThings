@@ -447,7 +447,7 @@ _.Instances =
 							a(i(47041)),	-- Solace of the Defeated
 							h(i(47271)),	-- Solace of the Fallen
 						})),
-						cr(34461, e(1620, {	-- Faction Champions (34460,34469,34467,34468,34465,34471,34466,34473,34472,34463,34470,34474,34475)
+						cr(34461, e(1620, {	-- Champions of the Alliance (34460,34469,34467,34468,34465,34471,34466,34473,34472,34463,34470,34474,34475)
 							["groups"] = {
 								i(47556),	-- Crusader Orb
 								i(47242),	-- Trophy of the Crusade
@@ -460,14 +460,16 @@ _.Instances =
 								i(47281),	-- Bracers of the Silent Massacre
 								i(47286),	-- Belt of Biting Cold
 								i(47283),	-- Belt of Bloodied Scars
-								i(47289),	-- 
-								i(47284),	-- 
-								i(47295),	-- 
-								i(47293),	-- 
+								i(47289),	-- Leggings of Concealed Hatred
+								i(47284),	-- Icewalker Treads
+								i(47295),	-- Sabatons of Tremoring Earth
+								i(47293),	-- Sandals of the Mourning Widow
+								i(47282),	-- Band of Callous Aggression
+								i(47290),	-- Juggernaut's Vitality
 							},
 							["races"] = HORDE_ONLY
 						})),
-						cr(34458, e(1621, {	-- Faction Champions (34451,34459,34448,34449,34445,34456,34447,34441,34454,34455,34444,34450,34453)
+						cr(34458, e(1621, {	-- Champions of the Horde (34451,34459,34448,34449,34445,34456,34447,34441,34454,34455,34444,34450,34453)
 							["groups"] = {
 								i(47556),	-- Crusader Orb
 								i(47242),	-- Trophy of the Crusade
@@ -480,77 +482,97 @@ _.Instances =
 								i(47093),	-- Vambraces of the Broken Bond
 								i(47081),	-- Cord of Biting Cold
 								i(47072),	-- Girdle of Bloodied Scars
-								i(47083),	-- 
-								i(47090),	-- 
-								i(47071),	-- 
-								i(47092),	-- 
+								i(47083),	-- Legguards of Concealed Hatred
+								i(47092),	-- Boots of the Mourning Widow
+								i(47090),	-- Boots of Tremoring Earth
+								i(47071),	-- Treads of the Icewalker
+								i(47070),	-- Ring of Callous Aggression
+								i(47080),	-- Satrina's Impending Scarab
 							},
 							["races"] = ALLIANCE_ONLY
 						})),
 						cr(34497, e(1622, {	-- Twin Val'kyr (34496-Eydis)
-							a(i(47114)),	-- 
-							a(i(47104)),	-- 
-							a(i(47138)),	-- 
-							a(i(47126)),	-- 
-							a(i(47142)),	-- 
-							a(i(47108)),	-- 
-							a(i(47141)),	-- 
-							a(i(47140)),	-- 
-							a(i(47107)),	-- 
-							a(i(47121)),	-- 
-							a(i(47106)),	-- 
-							h(i(47302)),	-- 
-							h(i(47300)),	-- 
-							h(i(47309)),	-- 
-							h(i(47310)),	-- 
-							h(i(47301)),	-- 
-							h(i(47306)),	-- 
-							h(i(47298)),	-- 
-							h(i(47308)),	-- 
-							h(i(47299)),	-- 
-							h(i(47304)),	-- 
-							h(i(47296)),	-- 
+							  i( 47556),	-- Crusader Orb
+							  i( 47242),	-- Trophy of the Crusade
+							a(i(47114)),	-- Lupine Longstaff
+							h(i(47302)),	-- Twin's Pact
+							h(i(47300)),	-- Gouge of the Frigid Heart
+							a(i(47104)),	-- Twin Spike
+							a(i(47138)),	-- Chalice of Searing Light
+							h(i(47309)),	-- Mystifying Charm
+							h(i(47307)),	-- Cry of the Val'kyr
+							h(i(47305)),	-- Legionnaire's Gorget
+							a(i(47116)),	-- The Arbiter's Muse
+							a(i(47105)),	-- The Executioner's Malice
+							h(i(47297)),	-- The Executioner's Vice
+							a(i(47139)),	-- Wail of the Val'kyr
+							a(i(47142)),	-- Breastplate of the Frozen Lake
+							h(i(47310)),	-- Chestplate of the Frozen Lake
+							a(i(47126)),	-- Skyweaver Robes
+							h(i(47301)),	-- Skyweaver Vestments
+							h(i(47298)),	-- Armguards of the Shieldmaiden
+							a(i(47141)),	-- Bindings of Dark Essence
+							a(i(47108)),	-- Bracers of the Shieldmaiden
+							h(i(47306)),	-- Dark Essence Bindings
+							h(i(47308)),	-- Belt of Pale Thorns
+							a(i(47107)),	-- Belt of the Merciless Killer
+							h(i(47299)),	-- Belt of the Pitiless Killer
+							a(i(47140)),	-- Cord of Pale Thorns
+							a(i(47121)),	-- Legguards of Ascension
+							h(i(47304)),	-- Legplates of Ascension
+							h(i(47296)),	-- Greaves of Ruthless Judgment
+							a(i(47106)),	-- Sabatons of Ruthless Judgment
+							h(i(47303)),	-- Death's Choice
+							a(i(47115)),	-- Death's Verdict
 						})),
 						cr(34564, e(1623, {	-- Anub'arak
-							a(i(47233)),	-- 
-							a(i(47193)),	-- 
-							a(i(47183)),	-- 
-							a(i(47225)),	-- 
-							a(i(47204)),	-- 
-							a(i(47151)),	-- 
-							a(i(47203)),	-- 
-							a(i(47234)),	-- 
-							a(i(47235)),	-- 
-							a(i(47195)),	-- 
-							a(i(47152)),	-- 
-							a(i(47186)),	-- 
-							a(i(47187)),	-- 
-							a(i(47184)),	-- 
-							a(i(47150)),	-- 
-							a(i(47194)),	-- 
-							a(i(47148)),	-- 
-							h(i(47329)),	-- 
-							h(i(47322)),	-- 
-							h(i(47314)),	-- 
-							h(i(47328)),	-- 
-							h(i(47320)),	-- 
-							h(i(47325)),	-- 
-							h(i(47313)),	-- 
-							h(i(47324)),	-- 
-							h(i(47326)),	-- 
-							h(i(47330)),	-- 
-							h(i(47323)),	-- 
-							h(i(47311)),	-- 
-							h(i(47317)),	-- 
-							h(i(47319)),	-- 
-							h(i(47318)),	-- 
-							h(i(47312)),	-- 
-							h(i(47321)),	-- 
-							  i(142085),	-- 
+							  i( 47556),	-- Crusader Orb
+							  i(142085),	-- Nerubian Relic (PET!)
+							  i( 47242),	-- Trophy of the Crusade
+							a(i(47233)),	-- Archon Glaive
+							h(i(47329)),	-- Hellion Glaive
+							h(i(47314)),	-- Hellscream Slicer
+							a(i(47193)),	-- Misery's End
+							a(i(47148)),	-- Stormpike Cleaver
+							h(i(47322)),	-- Suffering's End
+							h(i(47328)),	-- Maiden's Adoration
+							a(i(47225)),	-- Maiden's Favor
+							h(i(47320)),	-- Might of the Nerub
+							a(i(47183)),	-- Strength of the Nerub
+							a(i(47204)),	-- Chestguard of Flowing Elements
+							h(i(47325)),	-- Cuirass of Flowing Elements
+							h(i(47313)),	-- Armbands of Dark Determination
+							a(i(47203)),	-- Armbands of the Ashen Saint
+							h(i(47324)),	-- Bindings of the Ashen Saint
+							a(i(47151)),	-- Bracers of Dark Determination
+							h(i(47330)),	-- Gauntlets of Bitter Reprisal
+							a(i(47234)),	-- Gloves of Bitter Reprisal
+							a(i(47235)),	-- Gloves of the Lifeless Touch
+							h(i(47326)),	-- Handwraps of the Lifeless Touch
+							a(i(47152)),	-- Belt of Deathly Dominion
+							a(i(47195)),	-- Belt of the Forgotten Martyr
+							h(i(47323)),	-- Girdle of the Forgotten Martyr
+							h(i(47311)),	-- Waistguard of Deathly Dominion
+							h(i(47317)),	-- Breeches of the Deepening Void
+							h(i(47318)),	-- Leggings of the Awakening
+							a(i(47187)),	-- Leggings of the Deepening Void
+							h(i(47319)),	-- Leggings of the Lurking Threat
+							a(i(47184)),	-- Legguards of the Lurking Threat
+							a(i(47186)),	-- Legwraps of the Awakening
+							h(i(47321)),	-- Boots of the Icy Floe
+							a(i(47194)),	-- Footpads of the Icy Floe
+							a(i(47150)),	-- Greaves of the 7th Legion
+							h(i(47312)),	-- Greaves of the Saronite Citadel
+							a(i(47054)),	-- Band of Deplorable Violence
+							h(i(47315)),	-- Band of the Traitor King
+							h(i(47327)),	-- Lurid Manifestation
+							a(i(47149)),	-- Signet of the Traitor King
+							h(i(47316)),	-- Reign of the Dead
+							a(i(47182)),	-- Reign of the Unliving
 						})),
 					}),
 					d(6, {	-- 25-Player Heroic
-						n(-1, {		-- Shared Boss Loot 
+						n(-1, {	-- Shared Boss Loot 
 							a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
 							h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
 							a(i(47629)),	-- Pattern: Black Chitin Bracers
@@ -577,36 +599,40 @@ _.Instances =
 							h(i(47636)),	-- Pattern: Royal Moonshroud Robe
 						}),			
 						cr(34797, e(1618, {	-- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
-							a(i(46969)),	-- 
-							a(i(46980)),	-- 
-							a(i(46964)),	-- 
-							a(i(46971)),	-- 
-							a(i(46977)),	-- 
-							a(i(46965)),	-- 
-							a(i(46993)),	-- 
-							a(i(46968)),	-- 
-							a(i(46967)),	-- 
-							a(i(46973)),	-- 
-							a(i(46991)),	-- 
-							a(i(46975)),	-- 
-							a(i(46986)),	-- 
-							a(i(46989)),	-- 
-							h(i(47416)),	-- 
-							h(i(47422)),	-- 
-							h(i(47421)),	-- 
-							h(i(47418)),	-- 
-							h(i(47417)),	-- 
-							h(i(47425)),	-- 
-							h(i(47412)),	-- 
-							h(i(47415)),	-- 
-							h(i(47414)),	-- 
-							h(i(47419)),	-- 
-							h(i(47426)),	-- 
-							h(i(47420)),	-- 
-							h(i(47424)),	-- 
-							h(i(47423)),	-- 
-							  i(142083),	-- 
-							  i(142084),	-- 
+							  i( 47556),	-- Crusader Orb
+							  i(142083),	-- Giant Worm Egg (PET!)
+							  i(142084),	-- Magnataur Hunting Horn (PET!)
+							  i( 47242),	-- Trophy of the Crusade
+							h(i(47422)),	-- Barb of Tarasque
+							a(i(46980)),	-- Blade of Tarasque
+							a(i(46969)),	-- Steel Bladebreaker
+							h(i(47416)),	-- Stygian Bladebreaker
+							a(i(46964)),	-- Crystal Plated Vanguard
+							h(i(47421)),	-- Forlorn Barrier
+							h(i(47418)),	-- Cloak of the Untamed Predator
+							h(i(47417)),	-- Drape of the Refreshing Winds
+							a(i(46971)),	-- Drape of the Untamed Predator
+							a(i(46977)),	-- Shawl of the Refreshing Winds
+							a(i(46965)),	-- Breastplate of Cruel Intent
+							a(i(46968)),	-- Chestplate of the Towering Monstrosity
+							h(i(47412)),	-- Cuirass of Cruel Intent
+							h(i(47425)),	-- Flowing Robes of Ascent
+							a(i(46993)),	-- Flowing Vestments of Ascent
+							h(i(47415)),	-- Hauberk of the Towering Monstrosity
+							a(i(46967)),	-- Boneshatter Armplates
+							h(i(47414)),	-- Boneshatter Vambraces
+							a(i(46991)),	-- Belt of the Ice Burrower
+							h(i(47419)),	-- Belt of the Tenebrous Mist
+							h(i(47426)),	-- Binding of the Ice Burrower
+							a(i(46973)),	-- Cord of the Tenebrous Mist
+							a(i(46975)),	-- Leggings of the Broken Beast
+							h(i(47420)),	-- Legwraps of the Broken Beast
+							a(i(46986)),	-- Boots of the Courageous
+							h(i(47423)),	-- Boots of the Harsh Winter
+							a(i(46989)),	-- Boots of the Unrelenting Storm
+							h(i(47424)),	-- Sabatons of the Courageous
+							h(i(47413)),	-- Ring of the Violent Temperament
+							a(i(46966)),	-- Band of the Violent Temperament
 						})),
 						cr(34780, e(1619, {	-- Lord Jaraxxus
 							a(i(46995)),	-- 

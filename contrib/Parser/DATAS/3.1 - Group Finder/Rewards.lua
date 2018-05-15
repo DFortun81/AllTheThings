@@ -123,7 +123,7 @@ _.GroupFinder =
 			i(51991),	-- Turbulent Signet*
 		},
 		["lvl"] = 60,
-		-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: unsure about start/end points -- I *think* but am not positive that they opened at 58 and I'm not sure when they become unavailable.  Still available for a 69 character.  Commenting this out until confirmation.
+		-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: unsure about start/end points -- I *think* but am not positive that they opened at 58 and I'm not sure when they become unavailable.  Still available for a 70 character.  Commenting this out until confirmation.
 	}),
 	i(156688, {	-- Icy Satchel of Helpful Goods
 		["groups"] = {
@@ -148,13 +148,13 @@ _.GroupFinder =
 			i(112358),	-- Icefall Chain Leggings
 			i(112357),	-- Icefall Mail Leggings
 			i(112347),	-- Ice-Encrusted Plate Helm
-			i(112346),	-- Ice-Encrusted Plate Headguard
+			i(112346),	-- Ice-Encrusted Plate Headguard*
 			i(113692),	-- Ice-Encrusted Gauntlets*
 			i(113691),	-- Ice-Encrusted Gloves
-			i(112361),	-- Ice-Encrusted Plate Belt
+			i(112361),	-- Ice-Encrusted Plate Belt*
 			i(112362),	-- Ice-Encrusted Plate Girdle
 			i(112356),	-- Ice-Encrusted Plate Leggings
-			i(112354),	-- Ice-Encrusted Plate Legguards
+			i(112354),	-- Ice-Encrusted Plate Legguards*
 			i(113685),	-- Coldblood Longcloak*
 			i(113683),	-- Coldwrap Cloak
 			i(113684),	-- Icecrust Cloak*
