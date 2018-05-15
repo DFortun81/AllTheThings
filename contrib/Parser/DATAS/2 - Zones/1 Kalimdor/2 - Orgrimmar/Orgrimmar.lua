@@ -1149,11 +1149,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 --]]					
 					qh( 2754, {	-- Horns of Frenzy
 						["groups"] = {
-							i(7980, { 	-- Plans: Barbaric Iron Helm
-								i(7915),	-- Barbaric Iron Helm
-							}),
+							i(7980),	-- Plans: Barbaric Iron Helm
 						},
 						["qg"] = 7790,	-- Orokk Omosh
+						["sourceQuests"] = { 2753 },	-- Trampled Under Foot
 						["requiredSkill"] = 164,	-- Blacksmithing
 					}),
 --[[					
@@ -1163,11 +1162,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 --]]					
 					qh( 2755, {	-- Joys of Omosh
 						["groups"] = {
-							i(7982, {	-- Plans: Barbaric Iron Gloves
-								i(7917),	-- Barbaric Iron Gloves
-							}),
+							i(7982),	-- Plans: Barbaric Iron Gloves
 						},
 						["qg"] = 7790,	-- Orokk Omosh
+						["sourceQuests"] = { 2754 },	-- Horns of Frenzy
 						["requiredSkill"] = 164,	-- Blacksmithing
 					}),
 --[[
@@ -1393,11 +1391,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 					})),					
 					qh( 2753, {	-- Trampled Under Foot
 						["groups"] = {
-							i(7981, {	-- Plans: Barbaric Iron Boots
-								i(7916),	-- Barbaric Iron Boots
-							}),
+							i(7981),	-- Plans: Barbaric Iron Boots
 						},
 						["qg"] = 7790,	-- Orokk Omosh
+						["sourceQuests"] = { 2752 },	-- On Iron Pauldrons
 						["requiredSkill"] = 164,	-- Blacksmithing
 					}),
 --					qp171(qg(3347, q(29482))),	-- Transmutation Master
