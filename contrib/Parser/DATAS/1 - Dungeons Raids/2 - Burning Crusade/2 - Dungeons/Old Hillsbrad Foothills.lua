@@ -65,6 +65,7 @@ _.Instances =
 							i(28221),	-- Boots of the Watchful Heart
 						})),
 						cr(18096, e(540, {	-- Epoch Hunter
+							ach(652),	-- The Escape From Durnholde
 							i(28222),	-- Reaver of the Infinites
 							i(27431),	-- Time-Shifted Dagger
 							i(28226),	-- Timeslicer
@@ -126,6 +127,7 @@ _.Instances =
 								i(28221),	-- Boots of the Watchful Heart
 							})),
 							cr(18096, e(540, {	-- Epoch Hunter
+								ach(673),	-- Heroic: The Escape From Durnholde
 								i(28222),	-- Reaver of the Infinites
 								i(27431),	-- Time-Shifted Dagger
 								i(28226),	-- Timeslicer

@@ -38,6 +38,7 @@ _.Instances =
 							i(28034),	-- Hourglass of the Unraveller
 						})),
 						cr(17881, e(554, {	-- Aeonus
+							ach(655),	-- Opening of the Dark Portal
 							i(28188),	-- Bloodfire Greatstaff
 							i(28189),	-- Latro's Shifting Sword
 						 -- i(29356),	-- Quantum Blade (7.3.5 - Moved to Temporus)
@@ -81,6 +82,7 @@ _.Instances =
 								i(28034),	-- Hourglass of the Unraveller
 							})),
 							cr(17881, e(554, {	-- Aeonus
+								ach(676),	-- Heroic: Opening of the Dark Portal
 								i(28188),	-- Bloodfire Greatstaff
 								i(28189),	-- Latro's Shifting Sword
 							 -- i(29356),	-- Quantum Blade (7.3.5 - Moved to Temporus)

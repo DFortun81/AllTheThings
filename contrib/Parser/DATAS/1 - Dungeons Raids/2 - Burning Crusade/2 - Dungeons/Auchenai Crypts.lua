@@ -39,6 +39,7 @@ _.Instances =
 							i(26055),	-- Oculus of the Hidden Eye
 						})),
 						cr(18373, e(524, {	-- Exarch Maladaar
+							ach(666),	-- Auchenai Crypts
 							i(27412),	-- Ironstaff of Regeneration
 							i(27872),	-- The Harvester of Souls
 							i(27415),	-- Darkguard Face Mask
@@ -90,6 +91,7 @@ _.Instances =
 								i(26055),	-- Oculus of the Hidden Eye
 							})),
 							cr(18373, e(524, {	-- Exarch Maladaar
+								ach(672),	-- Heroic: Auchenai Crypts
 								i(27412),	-- Ironstaff of Regeneration
 								i(27872),	-- The Harvester of Souls
 								i(27415),	-- Darkguard Face Mask

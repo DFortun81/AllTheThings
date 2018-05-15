@@ -42,6 +42,7 @@ _.Instances =
 							i(28259),	-- Cosmic Lifeband
 						})),
 						cr(19220, e(565, {	-- Pathaleon the Calculator
+							ach(658),	-- The Mechanar
 							i(28267),	-- Edge of the Cosmos
 							i(27899),	-- Mana Wrath
 							i(29362),	-- The Sun Eater
@@ -82,6 +83,7 @@ _.Instances =
 								i(28259),	-- Cosmic Lifeband
 							})),
 							cr(19220, e(565, {	-- Pathaleon the Calculator
+								ach(679),	-- Heroic: The Mechanar
 							 -- Edge of the Cosmos
 								i(27899),	-- Mana Wrath
 								i(29362),	-- The Sun Eater

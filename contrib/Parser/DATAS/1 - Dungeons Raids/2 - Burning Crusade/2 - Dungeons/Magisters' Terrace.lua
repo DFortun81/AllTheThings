@@ -58,6 +58,7 @@ _.Instances =
 						}),
 						e(533, { -- Kael'thas Sunstrider
 							["groups"] = {
+								ach(661),	-- Magister's Terrace
 								i(35297),	-- Formula: Enchant Boots - Boar's Speed
 								i(35299),	-- Formula: Enchant Boots - Cat's Swiftness
 								i(35298),	-- Formula: Enchant Boots - Vitality
@@ -140,12 +141,15 @@ _.Instances =
 							}),
 							e(533, { -- Kael'thas Sunstrider
 								["groups"] = {
+									ach(682),	-- Heroic: Magister's Terrace
 									i(35297),	-- Formula: Enchant Boots - Boar's Speed
 									i(35299),	-- Formula: Enchant Boots - Cat's Swiftness
 									i(35298),	-- Formula: Enchant Boots - Vitality
 									i(35275), 	-- Orb of Sin'dorei (TOY!)
 									i(35504),	-- Phoenix Hatchling (PET!)
-									i(35513),	-- Swift White Hawkstrider (MOUNT!)
+									i(35513, {	-- Swift White Hawkstrider (MOUNT!)
+										ach(884),	-- Swift White Hawkstrider
+									}),
 									i(34794),	-- Axe of Shattered Dreams
 									i(34797),	-- Sun-Infused Focus Staff
 									i(34616),	-- Breeching Comet

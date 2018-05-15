@@ -49,6 +49,7 @@ _.Instances =
 							i(28339),	-- Boots of the Shifting Sands
 						})),
 						cr(17977, e(562, {	-- Warp Splinter
+							ach(659),	-- The Botanica
 							i(29359),	-- Feral Staff of Lashing
 							i(28367),	-- Greatsword of Forlorn Visions
 							i(28341),	-- Warpstaff of Arcanum
@@ -108,6 +109,7 @@ _.Instances =
 								i(28339),	-- Boots of the Shifting Sands
 							})),
 							cr(17977, e(562, {	-- Warp Splinter
+								ach(680),	-- Heroic: The Botanica
 								i(29359),	-- Feral Staff of Lashing
 								i(28367),	-- Greatsword of Forlorn Visions
 								i(28341),	-- Warpstaff of Arcanum

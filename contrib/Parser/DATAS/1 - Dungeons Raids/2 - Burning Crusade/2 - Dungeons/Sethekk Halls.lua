@@ -8,8 +8,19 @@ _.Instances =
 		["groups"] = {
 			inst(252, { 	-- Sethekk Halls
 				["groups"] = {
-					n(0, {	-- Zone Drop
+						n(0, {	-- Zone Drop
 						i(25731),	-- Pattern: Stylin' Crimson Hat
+					}),
+					n(-3, {	-- Holiday
+						["groups"] = {
+							n(-60, {	-- Pilgrim's Bounty
+								["group"] = {
+									ach(3582),	-- Terokkar Turkey Time
+								},
+								["u"] = 28
+							}),
+						},
+						["icon"] = "Interface\\Icons\\INV_Helm_Cloth_WitchHat_B_01",
 					}),
 					d(1, {	-- Normal
 						n(-17, {	-- Quests 					
@@ -26,6 +37,7 @@ _.Instances =
 							i(27915),	-- Sky-Hunter Swift Boots
 						})),
 						cr(18473, e(543, {	-- Talon King Ikiss
+							ach(653),	-- Sethekk Halls
 							i(27986),	-- Crow Wing Reaper
 							i(29355),	-- Terokk's Shadowstaff (7.3.5 - Used to be only Heroic Mode)
 							i(27980),	-- Terokk's Nightmace
@@ -54,7 +66,9 @@ _.Instances =
 								i(27915),	-- Sky-Hunter Swift Boots
 							})),
 							cr(23035, e(542, {	-- Anzu
-								i(32768),	-- Reins of the Raven Lord (MOUNT!)
+								i(32768, {	-- Reins of the Raven Lord (MOUNT!)
+									ach(883),	-- Reins of the Raven Lord
+								}),
 								i(32781),	-- Talon of Anzu
 								i(32780),	-- The Boomstick
 								i(32769),	-- Belt of the Raven Lord
@@ -63,6 +77,7 @@ _.Instances =
 								i(32779),	-- Band of Frigid Elements
 							})),
 							cr(18473, e(543, {	-- Talon King Ikiss
+								ach(674),	-- Heroic: Sethekk Halls
 								i(27986),	-- Crow Wing Reaper
 								i(29355),	-- Terokk's Shadowstaff
 								i(27980),	-- Terokk's Nightmace

@@ -44,6 +44,7 @@ _.Instances =
 							i(27822),	-- Crystal Band of Valor
 						})),
 						cr(18344, e(537, {	-- Nexus-Prince Shaffar
+							ach(651),	-- Mana-Tombs
 							i(27829),	-- Axe of the Nexus-Kings
 							i(27842),	-- Grand Scepter of the Nexus-Kings
 							i(27840),	-- Scepter of Sha'tar
@@ -113,6 +114,7 @@ _.Instances =
 								})),
 							}),
 							cr(18344, e(537, {		-- Nexus-Prince Shaffar
+								ach(671),	-- Heroic: Mana-Tombs
 								i(27829),	-- Axe of the Nexus-Kings
 								i(27842),	-- Grand Scepter of the Nexus-Kings
 								i(27840),	-- Scepter of Sha'tar

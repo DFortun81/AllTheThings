@@ -69,6 +69,7 @@ _.Instances =
 							}),
 							e(  547, {	-- Murmur
 								["groups"] = {
+									ach(654),	-- Shadow Labyrinth
 									i(27903),	-- Sonic Spear
 									i(27905),	-- Greatsword of Horrid Dreams
 									i(29353),	-- Shockwave Truncheon
@@ -133,6 +134,7 @@ _.Instances =
 							}),
 							e(  547, {	-- Murmur
 								["groups"] = {
+									ach(675),	-- Shadow Labyrinth
 									i(27903),	-- Sonic Spear
 									i(27905),	-- Greatsword of Horrid Dreams
 									i(29353),	-- Shockwave Truncheon

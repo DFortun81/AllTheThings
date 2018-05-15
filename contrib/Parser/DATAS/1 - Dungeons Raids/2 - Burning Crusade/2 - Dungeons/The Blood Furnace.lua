@@ -57,6 +57,7 @@ _.Instances =
 							i(24390),	-- Auslese's Light Channeler
 						})),
 						cr(17377, e(557, {	-- Keli'dan the Breaker
+							ach(648),	-- The Blood Furnace
 							i(24394),	-- Warsong Howling Axe
 							i(27512),	-- The Willbreaker
 							i(27507),	-- Adamantine Repeater
@@ -108,6 +109,7 @@ _.Instances =
 								i(24390),	-- Auslese's Light Channeler
 							})),
 							cr(17377, e(557, {	-- Keli'dan the Breaker
+								ach(668),	-- Heroic: The Blood Furnace
 								i(24394),	-- Warsong Howling Axe
 								i(27512),	-- The Willbreaker
 								i(27507),	-- Adamantine Repeater
