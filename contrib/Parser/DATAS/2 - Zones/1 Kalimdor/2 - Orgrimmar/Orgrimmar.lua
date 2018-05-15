@@ -1089,11 +1089,9 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["classes"] = {12},
 					})),
 --]]					
-					qh(2751, { -- Barbaric Battlements
+					qh(2751, {	-- Barbaric Battlements
 						["groups"] = {
-							i(7979, {		-- Plans: Barbaric Iron Breastplate
-								i(7914),		-- Barbaric Iron Breastplate
-							}),
+							i(7979),	-- Plans: Barbaric Iron Breastplate
 						},
 						["qg"] = 7790,	-- Orokk Omosh
 						["requiredSkill"] = 164,	-- Blacksmithing
@@ -1229,11 +1227,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 --]]					
 					qh( 2752, {	-- On Iron Pauldrons
 						["groups"] = {
-							i(7978, { 	-- Plans: Barbaric Iron Shoulders
-								i(7913),	-- Barbaric Iron Shoulders
-							}),
+							i(7978),	-- Plans: Barbaric Iron Shoulders
 						},
 						["qg"] = 7790,	-- Orokk Omosh
+						["sourceQuests"] = { 2751 },	-- Barbaric Battlements
 						["requiredSkill"] = 164,	-- Blacksmithing
 					}),
 --[[

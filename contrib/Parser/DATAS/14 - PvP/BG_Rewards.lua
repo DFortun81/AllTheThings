@@ -84,18 +84,18 @@ _.PVP =
 			i(134594),	-- Agitator's Footguards
 			i(134595),	-- Agitator's Waistguard
 			i(134602),	-- Instigator's Armplates*
-			i(134601),	-- Instigator's Girdle
+			i(134601),	-- Instigator's Girdle*
 			i(134600),	-- Instigator's Warboots*
 			i(134587),	-- Vanguard Drape*
 			i(134580),	-- Vanguard Heavy Crossbow
 			i(134581),	-- Vanguard Shanker
-			i(134589),	-- Vanguard Reprieve
+			i(134589),	-- Vanguard Reprieve*
 			i(134578),	-- Vanguard Cleaver
 			i(134604),	-- Vanguard Hacker*
-			i(134588),	-- Vanguard Gavel
-			i(134603),	-- Vanguard Redoubt
+			i(134588),	-- Vanguard Gavel*
+			i(134603),	-- Vanguard Redoubt*
 			i(134582),	-- Vanguard Staff
-			i(134577),	-- Vanguard Decapitator
+			i(134577),	-- Vanguard Decapitator*
 			i(134590),	-- Vanguard Baton of Light
 		},
 		["description"] = "|cff66ccffRewarded for winning a random battleground in the level 60-69 range.|r",
