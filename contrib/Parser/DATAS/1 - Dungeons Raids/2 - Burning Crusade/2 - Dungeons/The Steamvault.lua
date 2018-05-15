@@ -34,6 +34,7 @@ _.Instances =
 							i(23887),	-- Schematic: Rocket Boots Xtreme
 						})),
 						cr(17798, e(575, {	-- Warlord Kalithresh
+							ach(656),	-- The Steamvault
 							i(29351),	-- Wrathtide Longbow
 							i(27801),	-- Beast Lord Mantle
 							i(27738),	-- Incanter's Pauldrons
@@ -76,6 +77,7 @@ _.Instances =
 								i(27795),	-- Sash of Serpentra (7.3.5 - Moved from Warlord Kalithresh)
 							})),
 							cr(17798, e(575, {	-- Warlord Kalithresh
+								ach(677),	-- Heroic: The Steamvault
 								i(29351),	-- Wrathtide Longbow
 								i(27801),	-- Beast Lord Mantle
 								i(27738),	-- Incanter's Pauldrons

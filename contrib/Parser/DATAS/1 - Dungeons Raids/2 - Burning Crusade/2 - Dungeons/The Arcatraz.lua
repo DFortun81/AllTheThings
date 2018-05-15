@@ -74,6 +74,7 @@ _.Instances =
 							i(28394),	-- Ryngo's Band of Ingenuity
 						})),
 						cr(20912, e(551, {	-- Harbinger Skyriss
+							ach(660),	-- The Arcatraz
 						 -- i(28416),	-- Hungering Spineripper (7.3.5 - Moved to Dalliah)	
 							i(29360),	-- Vileblade of the Betrayer
 							i(28412),	-- Lamp of Peaceful Radiance
@@ -126,6 +127,7 @@ _.Instances =
 								i(28394),	-- Ryngo's Band of Ingenuity
 							})),
 							cr(20912, e(551, {	-- Harbinger Skyriss
+								ach(681),	-- Heroic: The Arcatraz
 							 -- i(28416),	-- Hungering Spineripper (7.3.5 - Moved to Dalliah)	
 								i(29360),	-- Vileblade of the Betrayer
 								i(28412),	-- Lamp of Peaceful Radiance

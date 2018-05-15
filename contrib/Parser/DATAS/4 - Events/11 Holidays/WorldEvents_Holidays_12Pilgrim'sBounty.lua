@@ -9,7 +9,7 @@ _.WorldEvents =
 				["groups"]  = {
 					n(-4, { -- Achievements
 						{
-							["achievementID"] = 3478,
+							["achievementID"] = 3478,	-- Pilgrim
 							["groups"] = {
 								un(28, i(44810)), -- Turkey Cage (Pet)
 							},

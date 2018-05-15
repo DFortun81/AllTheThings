@@ -14,6 +14,7 @@ _.Instances =
 								["groups"] = {
 									n(25740, { -- Ahune
 										["groups"] = {
+											ach(263),	-- Ice the Frost Lord
 											i(35498),	-- Formula: Enchant Weapon - Deathfrost [Drops from Ahune, the Frost Lord]
 											i(117394, {
 												i(117373),
@@ -82,6 +83,7 @@ _.Instances =
 							i(24376),	-- Runed Fungalcap
 						})),
 						cr(17942, e(572, { -- Quagmirran
+							ach(649),	-- The Slave Pens
 							i(27741),	-- Bleeding Hollow Warhammer
 							i(27673),	-- Phosphorescent Blade
 							i(27714),	-- Swamplight Lantern (NOTE: This drops from Rokmar in Timewalking)
@@ -143,6 +145,7 @@ _.Instances =
 								i(24376),	-- Runed Fungalcap
 							})),
 							cr(17942, e(572, { -- Quagmirran
+								ach(669),	-- Heroic: The Slave Pens
 								i(27741),	-- Bleeding Hollow Warhammer
 								i(27673),	-- Phosphorescent Blade
 								i(27714),	-- Swamplight Lantern (NOTE: This drops from Rokmar in Timewalking)

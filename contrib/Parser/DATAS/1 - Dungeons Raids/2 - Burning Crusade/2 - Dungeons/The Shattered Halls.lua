@@ -73,6 +73,7 @@ _.Instances =
 						 -- i(27802),	-- Tidefury Shoulderguards  (7.3.5 - Moved to Warchief Kargath Bladefist)
 						})),
 						cr(16808, e(569, {	-- Warchief Kargath Bladefist
+							ach(657),	-- The Shattered Halls
 							i(27533),	-- Demonblood Eviscerator
 							i(27538),	-- Lightsworn Hammer
 							i(29348),	-- The Bladefist
@@ -124,6 +125,7 @@ _.Instances =
 							 -- i(27802),	-- Tidefury Shoulderguards  (7.3.5 - Moved to Warchief Kargath Bladefist)
 							})),
 							cr(16808, e(569, {	-- Warchief Kargath Bladefist
+								ach(678),	-- Heroic: The Shattered Halls
 								i(27533),	-- Demonblood Eviscerator
 								i(27538),	-- Lightsworn Hammer
 								i(29348),	-- The Bladefist

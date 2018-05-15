@@ -40,6 +40,7 @@ _.Instances =
 						}),
 						e(528, {	-- Omor the Unscarred
 							["groups"] = {
+								ach(647),	-- Hellfire Ramparts
 								i(24069),	-- Crystalfire Staff
 								i(24094),	-- Heart Fire Warhammer
 								i(27463),	-- Terror Flame Dagger
@@ -97,6 +98,7 @@ _.Instances =
 						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
+							ach(667),	-- Heroic: Hellfire Ramparts
 							e(527, {	-- Watchkeeper Gargolmar
 								["groups"] = {
 									i(24020),	-- Shadowrend Longblade

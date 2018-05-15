@@ -46,6 +46,7 @@ _.Instances =
 							i(27762),	-- Weathered Band of the Swamplord
 						})),
 						cr(17882, e(579, {	-- The Black Stalker
+							ach(650),	-- Underbog
 							i(27769),	-- Endbringer
 							i(24464),	-- The Stalker's Fangs
 							i(29350),	-- The Black Stalk
@@ -110,6 +111,7 @@ _.Instances =
 								i(27762),	-- Weathered Band of the Swamplord
 							})),
 							cr(17882, e(579, {	-- The Black Stalker
+								ach(670),	-- Heroic: Underbog
 								i(27769),	-- Endbringer
 								i(24464),	-- The Stalker's Fangs
 								i(29350),	-- The Black Stalk
