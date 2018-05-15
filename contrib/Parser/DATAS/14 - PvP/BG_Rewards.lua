@@ -128,6 +128,7 @@ _.PVP =
 			i(134727),	-- Cold-Touched Endgame
 			i(134739),	-- Cold-Touched Band*
 			i(134744),	-- Cold-Touched Distinction*
+			i(134740),	-- Cold-Touched Signet*
 		},
 		["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range.|r",
 		["lvl"] = 70, 
