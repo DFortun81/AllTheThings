@@ -1106,7 +1106,7 @@ _.Zones =
 					},
 					["achievementID"] = 5866,
 					["lvl"] = 85,
-					["description"] = "|cff66ccffThe Molten Front is a daily quest zone for level 85+ players aded in 4.2. Players reach it via a portal in Mount Hyjal. This zone covers the initial attacks on Firelands. It is a volcanic zone covered in flame elementals and allies of Ragnarnos. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress.|r",
+					["description"] = "|cff66ccffThe Molten Front is a daily quest zone for level 85+ players added in 4.2. Players reach it via a portal in Mount Hyjal. This zone covers the initial attacks on Firelands. It is a volcanic zone covered in flame elementals and allies of Ragnarnos. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress.|r",
 				}),	
 			},
 			["achievementID"] = 4863,
