@@ -1852,10 +1852,15 @@ local function RefreshLocationCoroutine()
 		OpenMiniList("mapID", mapID, "Map ID");
 		wipe(searchCache);
 	end
+	if GetDataMember("AutoRaidAssistant", false) then
+		app:GetWindow("RaidAssistant"):Show();
+	end
 end
 local function RefreshLocation()
 	if GetDataMember("AutoMiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
 		StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+	elseif GetDataMember("AutoRaidAssistant", false) then
+		app:GetWindow("RaidAssistant"):Show();
 	end
 end
 local function RefreshSavesCoroutine()
