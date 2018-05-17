@@ -507,7 +507,7 @@ _.Instances =
 								i(41162),	-- Hateful Gladiator's Linked Leggings
 								i(41031),	-- Hateful Gladiator's Mail Leggings
 								i(41862),	-- Hateful Gladiator's Mooncloth Leggings
-								i(40937),	-- Hateful Gladiator's Ornamental Legplates
+								i(40937),	-- Hateful Gladiator's Ornamented Legplates
 								i(40840),	-- Hateful Gladiator's Plate Legguards
 								i(41025),	-- Hateful Gladiator's Ringmail Leggings
 								i(41925),	-- Hateful Gladiator's Satin Leggings
@@ -744,6 +744,7 @@ _.Instances =
 								i(46155),	-- Conqueror's Aegis Gauntlets
 								i(46179),	-- Conqueror's Aegis Gloves
 								i(46174),	-- Conqueror's Aegis Handguards
+								i(46113),	-- Conqueror's Darkruned Gauntlets
 								i(46119),	-- Conqueror's Darkruned Handguards
 								i(46135),	-- Conqueror's Deathbringer Gloves
 								i(46188),	-- Conqueror's Gloves of Sanctification
@@ -792,46 +793,46 @@ _.Instances =
 								i(46116),	-- Conqueror's Darkruned Legplates
 								i(46139),	-- Conqueror's Deathbringer Leggings
 								i(46133),	-- Conqueror's Kirin Tor Leggings
-
-								i(46113),	-- 
-								i(46169),	-- 
-								i(46195),	-- 
-								i(41864),	-- 
-								i(41298),	-- 
-								i(41027),	-- 
-								i(41199),	-- 
-								i(41304),	-- 
-								i(46210),	-- 
-								i(40848),	-- 
-								i(41959),	-- 
-								i(42005),	-- 
-								i(46144),	-- 
-								i(41033),	-- 
-								i(40849),	-- 
-								i(41667),	-- 
-								i(46185),	-- 
-								i(41205),	-- 
-								i(46192),	-- 
-								i(40847),	-- 
-								i(46202),	-- 
-								i(46126),	-- 
-								i(41927),	-- 
-								i(46208),	-- 
-								i(46150),	-- 
-								i(46170),	-- 
-								i(46160),	-- 
-								i(40939),	-- 
-								i(41655),	-- 
-								i(41903),	-- 
-								i(41621),	-- 
-								i(40977),	-- 
-								i(41055),	-- 
-								i(41635),	-- 
-								i(41075),	-- 
-								i(40882),	-- 
-								i(41230),	-- 
-								i(41836),	-- 
-								i(41885),	-- 
+								i(46195),	-- Conqueror's Leggings of Sanctification
+								i(46185),	-- Conqueror's Nightsong Leggings
+								i(46160),	-- Conqueror's Nightsong Legguards
+								i(46192),	-- Conqueror's Nightsong Trousers
+								i(46170),	-- Conqueror's Pants of Sanctification
+								i(46144),	-- Conqueror's Scourgestalker Legguards
+								i(46169),	-- Conqueror's Siegebreaker Legguards
+								i(46150),	-- Conqueror's Siegebreaker Legplates
+								i(46126),	-- Conqueror's Terrorblade Legplates
+								i(46210),	-- Conqueror's Worldbreaker Kilt
+								i(46202),	-- Conqueror's Worldbreaker Legguards
+								i(46208),	-- Conqueror's Worldbreaker War-Kilt
+								i(41205),	-- Furious Gladiator's Chain Leggings
+								i(41667),	-- Furious Gladiator's Dragonhide Legguards
+								i(40848),	-- Furious Gladiator's Dreadplate Legguards
+								i(42005),	-- Furious Gladiator's Felweave Trousers
+								i(41298),	-- Furious Gladiator's Kodohide Legguards
+								i(41655),	-- Furious Gladiator's Leather Legguards
+								i(41199),	-- Furious Gladiator's Linked Leggings
+								i(41033),	-- Furious Gladiator's Mail Leggings
+								i(41864),	-- Furious Gladiator's Mooncloth Leggings
+								i(40939),	-- Furious Gladiator's Ornamented Legplates
+								i(40847),	-- Furious Gladiator's Plate Legguards
+								i(41027),	-- Furious Gladiator's Ringmail Leggings
+								i(41927),	-- Furious Gladiator's Satin Leggings
+								i(40849),	-- Furious Gladiator's Scaled Legguards
+								i(41959),	-- Furious Gladiator's Silk Trousers
+								i(41304),	-- Furious Gladiator's Wyrmhide Legguards
+								i(41635),	-- Furious Gladiator's Boots of Dominance
+								i(41621),	-- Furious Gladiator's Boots of Salvation
+								i(41836),	-- Furious Gladiator's Boots of Triumph
+								i(40977),	-- Furious Gladiator's Greaves of Salvation
+								i(40882),	-- Furious Gladiator's Greaves of Triumph
+								i(41075),	-- Furious Gladiator's Sabatons of Dominance
+								i(41055),	-- Furious Gladiator's Sabatons of Salvation
+								i(41230),	-- Furious Gladiator's Sabatons of Triumph
+								i(41903),	-- Furious Gladiator's Slippers of Dominance
+								i(41885),	-- Furious Gladiator's Slippers of Salvation
+								i(42116),	-- Furious Gladiator's Band of Dominance
+								i(42117),	-- Furious Gladiator's Band of Triumph
 							},
 							["creatureID"] = 33993,
 						}),
@@ -839,113 +840,123 @@ _.Instances =
 							["groups"] = {
 								a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
 								h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
-								i(51334),
-								i(51356),
-								i(51332),
-								i(51354),
-								i(51346),
-								i(51348),
-								i(51330),
-								i(51376),
-								i(51352),
-								i(51361),
-								i(51329),
-								i(51342),
-								i(51345),
-								i(51364),
-								i(51373),
-								i(51367),
-								i(51370),
-								i(51196),
-								i(51420),
-								i(51191),
-								i(51183),
-								i(51213),
-								i(51154),
-								i(51434),
-								i(51488),
-								i(51169),
-								i(51537),
-								i(51144),
-								i(51128),
-								i(51469),
-								i(51159),
-								i(51217),
-								i(51148),
-								i(51483),
-								i(51138),
-								i(51414),
-								i(51132),
-								i(51498),
-								i(51510),
-								i(51475),
-								i(51179),
-								i(51201),
-								i(51459),
-								i(51209),
-								i(51172),
-								i(51542),
-								i(51163),
-								i(51188),
-								i(51426),
-								i(51493),
-								i(51464),
-								i(51504),
-								i(51374),
-								i(51359),
-								i(51327),
-								i(51340),
-								i(51368),
-								i(51362),
-								i(51365),
-								i(51343),
-								i(51371),
-								i(51350),
-								i(51490),
-								i(51471),
-								i(51193),
-								i(51157),
-								i(51512),
-								i(51211),
-								i(51203),
-								i(51177),
-								i(51207),
-								i(51422),
-								i(51152),
-								i(51171),
-								i(51146),
-								i(51500),
-								i(51181),
-								i(51466),
-								i(51544),
-								i(51161),
-								i(51216),
-								i(51539),
-								i(51136),
-								i(51198),
-								i(51142),
-								i(51428),
-								i(51485),
-								i(51506),
-								i(51131),
-								i(51186),
-								i(51461),
-								i(51416),
-								i(51436),
-								i(51477),
-								i(51495),
-								i(51126),
-								i(51168),
-								i(51372),
-								i(51366),
-								i(51363),
-								i(51328),
-								i(51341),
-								i(51369),
-								i(51375),
-								i(51344),
-								i(51351),
-								i(51360),
+								i(51335),	-- Wrathful Gladiator's Pendant of Ascendancy
+								i(51349),	-- Wrathful Gladiator's Pendant of Deliverance
+								i(51331),	-- Wrathful Gladiator's Pendant of Dominance
+								i(51347),	-- Wrathful Gladiator's Pendant of Salvation
+								i(51333),	-- Wrathful Gladiator's Pendant of Subjugation
+								i(51353),	-- Wrathful Gladiator's Pendant of Sundering
+								i(51355),	-- Wrathful Gladiator's Pendant of Triumph
+								i(51357),	-- Wrathful Gladiator's Pendant of Victory
+								i(51334),	-- Wrathful Gladiator's Cloak of Ascendancy
+								i(51348),	-- Wrathful Gladiator's Cloak of Deliverance
+								i(51330),	-- Wrathful Gladiator's Cloak of Dominance
+								i(51346),	-- Wrathful Gladiator's Cloak of Salvation
+								i(51332),	-- Wrathful Gladiator's Cloak of Subjugation
+								i(51354),	-- Wrathful Gladiator's Cloak of Triumph
+								i(51356),	-- Wrathful Gladiator's Cloak of Victory
+								i(51345),	-- Wrathful Gladiator's Armwraps of Dominance
+								i(51342),	-- Wrathful Gladiator's Armwraps of Salvation
+								i(51370),	-- Wrathful Gladiator's Armwraps of Triumph
+								i(51361),	-- Wrathful Gladiator's Bracers of Salvation
+								i(51364),	-- Wrathful Gladiator's Bracers of Triumph
+								i(51329),	-- Wrathful Gladiator's Cuffs of Dominance
+								i(51367),	-- Wrathful Gladiator's Cuffs of Salvation
+								i(51376),	-- Wrathful Gladiator's Wristguards of Dominance
+								i(51373),	-- Wrathful Gladiator's Wristguards of Salvation
+								i(51352),	-- Wrathful Gladiator's Wristguards of Triumph
+								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
+								i(51159),	-- Sanctified Bloodmage Gloves
+								i(51179),	-- Sanctified Crimson Acolyte Gloves
+								i(51183),	-- Sanctified Crimson Acolyte Handwraps
+								i(51209),	-- Sanctified Dark Coven Gloves
+								i(51201),	-- Sanctified Frost Witch's Gloves
+								i(51196),	-- Sanctified Frost Witch's Grips
+								i(51191),	-- Sanctified Frost Witch's Handguards
+								i(51138),	-- Sanctified Lasherweave Gauntlets
+								i(51148),	-- Sanctified Lasherweave Gloves
+								i(51144),	-- Sanctified Lasherweave Handgrips
+								i(51163),	-- Sanctified Lightsworn Gauntlets
+								i(51169),	-- Sanctified Lightsworn Gloves
+								i(51172),	-- Sanctified Lightsworn Handguards
+								i(51128),	-- Sanctified Scourgelord Gauntlets
+								i(51132),	-- Sanctified Scourgelord Handguards
+								i(51188),	-- Sanctified Shadowblade Gauntlets
+								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
+								i(51217),	-- Sanctified Ymirjar Lord's Handguards
+								i(51459),	-- Wrathful Gladiator's Chain Gauntlets
+								i(51426),	-- Wrathful Gladiator's Dragonhide Gloves
+								i(51414),	-- Wrathful Gladiator's Dreadplate Gauntlets
+								i(51537),	-- Wrathful Gladiator's Felweave Handguards
+								i(51420),	-- Wrathful Gladiator's Kodohide Gloves
+								i(51493),	-- Wrathful Gladiator's Leather Gloves
+								i(51504),	-- Wrathful Gladiator's Linked Gauntlets
+								i(51510),	-- Wrathful Gladiator's Mail Gauntlets
+								i(51483),	-- Wrathful Gladiator's Mooncloth Gloves
+								i(51469),	-- Wrathful Gladiator's Ornamented Gloves
+								i(51542),	-- Wrathful Gladiator's Plate Gauntlets
+								i(51498),	-- Wrathful Gladiator's Ringmail Gauntlets
+								i(51488),	-- Wrathful Gladiator's Satin Gloves
+								i(51475),	-- Wrathful Gladiator's Scaled Gauntlets
+								i(51464),	-- Wrathful Gladiator's Silk Handguards
+								i(51434),	-- Wrathful Gladiator's Wyrmhide Gloves
+								i(51343),	-- Wrathful Gladiator's Belt of Dominance
+								i(51340),	-- Wrathful Gladiator's Belt of Salvation
+								i(51368),	-- Wrathful Gladiator's Belt of Triumph
+								i(51327),	-- Wrathful Gladiator's Cord of Dominance
+								i(51365),	-- Wrathful Gladiator's Cord of Salvation
+								i(51359),	-- Wrathful Gladiator's Girdle of Salvation
+								i(51362),	-- Wrathful Gladiator's Girdle of Triumph
+								i(51374),	-- Wrathful Gladiator's Waistguard of Dominance
+								i(51371),	-- Wrathful Gladiator's Waistguard of Salvation
+								i(51350),	-- Wrathful Gladiator's Waistguard of Triumph
+								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
+								i(51157),	-- Sanctified Bloodmage Leggings
+								i(51177),	-- Sanctified Crimson Acolyte Leggings
+								i(51181),	-- Sanctified Crimson Acolyte Pants
+								i(51207),	-- Sanctified Dark Coven Leggings
+								i(51203),	-- Sanctified Frost Witch's Kilt
+								i(51193),	-- Sanctified Frost Witch's Legguards
+								i(51198),	-- Sanctified Frost Witch's War-Kilt
+								i(51142),	-- Sanctified Lasherweave Legguards
+								i(51136),	-- Sanctified Lasherweave Legplates
+								i(51146),	-- Sanctified Lasherweave Trousers
+								i(51168),	-- Sanctified Lightsworn Greaves
+								i(51171),	-- Sanctified Lightsworn Legguards
+								i(51161),	-- Sanctified Lightsworn Legplates
+								i(51131),	-- Sanctified Scourgelord Legguards
+								i(51126),	-- Sanctified Scourgelord Legplates
+								i(51186),	-- Sanctified Shadowblade Legplates
+								i(51216),	-- Sanctified Ymirjar Lord's Legguards
+								i(51211),	-- Sanctified Ymirjar Lord's Legplates
+								i(51461),	-- Wrathful Gladiator's Chain Leggings
+								i(51428),	-- Wrathful Gladiator's Dragonhide Legguards
+								i(51416),	-- Wrathful Gladiator's Dreadplate Legguards
+								i(51539),	-- Wrathful Gladiator's Felweave Trousers
+								i(51422),	-- Wrathful Gladiator's Kodohide Legguards
+								i(51495),	-- Wrathful Gladiator's Leather Legguards
+								i(51506),	-- Wrathful Gladiator's Linked Leggings
+								i(51512),	-- Wrathful Gladiator's Mail Leggings
+								i(51485),	-- Wrathful Gladiator's Mooncloth Leggings
+								i(51471),	-- Wrathful Gladiator's Ornamented Legplates
+								i(51544),	-- Wrathful Gladiator's Plate Legguards
+								i(51500),	-- Wrathful Gladiator's Ringmail Leggings
+								i(51490),	-- Wrathful Gladiator's Satin Leggings
+								i(51477),	-- Wrathful Gladiator's Scaled Legguards
+								i(51466),	-- Wrathful Gladiator's Silk Trousers
+								i(51436),	-- Wrathful Gladiator's Wyrmhide Legguards
+								i(51344),	-- Wrathful Gladiator's Boots of Dominance
+								i(51341),	-- Wrathful Gladiator's Boots of Salvation
+								i(51369),	-- Wrathful Gladiator's Boots of Triumph
+								i(51360),	-- Wrathful Gladiator's Greaves of Salvation
+								i(51363),	-- Wrathful Gladiator's Greaves of Triumph
+								i(51375),	-- Wrathful Gladiator's Sabatons of Dominance
+								i(51372),	-- Wrathful Gladiator's Sabatons of Salvation
+								i(51351),	-- Wrathful Gladiator's Sabatons of Triumph
+								i(51328),	-- Wrathful Gladiator's Treads of Dominance
+								i(51366),	-- Wrathful Gladiator's Treads of Salvation
+								i(51336),	-- Wrathful Gladiator's Band of Dominance
+								i(51358),	-- Wrathful Gladiator's Band of Triumph
 							},
 							["creatureID"] = 38433,
 						}),
@@ -953,114 +964,114 @@ _.Instances =
 							["groups"] = {
 								a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
 								h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
-								i(40514),
-								i(40569),
-								i(40469),
-								i(40990),
-								i(41997),
-								i(40458),
-								i(40905),
-								i(40495),
-								i(40503),
-								i(41660),
-								i(40544),
-								i(41858),
-								i(41086),
-								i(41080),
-								i(40418),
-								i(40785),
-								i(40508),
-								i(41951),
-								i(40574),
-								i(40463),
-								i(40525),
-								i(41920),
-								i(40471),
-								i(40423),
-								i(41315),
-								i(41309),
-								i(40550),
-								i(40579),
-								i(40559),
-								i(40523),
-								i(40786),
-								i(40784),
-								i(40991),
-								i(40449),
-								i(41649),
-								i(41000),
-								i(40460),
-								i(41292),
-								i(40472),
-								i(40545),
-								i(41873),
-								i(40496),
-								i(40504),
-								i(40805),
-								i(41970),
-								i(40509),
-								i(40926),
-								i(40552),
-								i(40454),
-								i(41766),
-								i(40415),
-								i(40445),
-								i(41939),
-								i(42016),
-								i(41142),
-								i(40466),
-								i(40515),
-								i(40520),
-								i(40580),
-								i(40570),
-								i(40527),
-								i(40563),
-								i(41136),
-								i(40575),
-								i(40804),
-								i(41772),
-								i(41006),
-								i(40806),
-								i(41286),
-								i(40567),
-								i(41926),
-								i(40457),
-								i(40522),
-								i(40417),
-								i(40493),
-								i(41032),
-								i(40572),
-								i(41666),
-								i(40547),
-								i(41198),
-								i(40846),
-								i(40938),
-								i(40422),
-								i(41654),
-								i(41204),
-								i(40468),
-								i(40844),
-								i(40448),
-								i(41958),
-								i(41297),
-								i(40529),
-								i(40506),
-								i(41026),
-								i(40556),
-								i(40500),
-								i(40577),
-								i(42004),
-								i(41863),
-								i(40512),
-								i(41303),
-								i(40845),
-								i(40583),
-								i(40462),
-								i(40517),
+								i(41086),	-- Deadly Gladiator's Chain Armor
+								i(41660),	-- Deadly Gladiator's Dragonhide Robes
+								i(40784),	-- Deadly Gladiator's Dreadplate Chestpiece
+								i(41997),	-- Deadly Gladiator's Felweave Raiment
+								i(41309),	-- Deadly Gladiator's Kodohide Robes
+								i(41649),	-- Deadly Gladiator's Leather Tunic
+								i(41080),	-- Deadly Gladiator's Linked Armor
+								i(40991),	-- Deadly Gladiator's Mail Armor
+								i(41858),	-- Deadly Gladiator's Mooncloth Robe
+								i(40905),	-- Deadly Gladiator's Ornamented Chestguard
+								i(40786),	-- Deadly Gladiator's Plate Chestpiece
+								i(40990),	-- Deadly Gladiator's Ringmail Armor
+								i(41920),	-- Deadly Gladiator's Satin Robe
+								i(40785),	-- Deadly Gladiator's Scaled Chestpiece
+								i(41951),	-- Deadly Gladiator's Silk Raiment
+								i(41315),	-- Deadly Gladiator's Wyrmhide Robes
+								i(40495),	-- Valorous Bonescythe Breastplate
+								i(40503),	-- Valorous Cryptstalker Tunic
+								i(40525),	-- Valorous Dreadnaught Battleplate
+								i(40544),	-- Valorous Dreadnaught Breastplate
+								i(40471),	-- Valorous Dreamwalker Raiments
+								i(40463),	-- Valorous Dreamwalker Robe
+								i(40469),	-- Valorous Dreamwalker Vestments
+								i(40523),	-- Valorous Earthshatter Chestguard
+								i(40514),	-- Valorous Earthshatter Hauberk
+								i(40508),	-- Valorous Earthshatter Tunic
+								i(40418),	-- Valorous Frostfire Robe
+								i(40423),	-- Valorous Plagueheart Robe
+								i(40458),	-- Valorous Raiments of Faith
+								i(40579),	-- Valorous Redemption Breastplate
+								i(40574),	-- Valorous Redemption Chestpiece
+								i(40569),	-- Valorous Redemption Tunic
+								i(40449),	-- Valorous Robe of Faith
+								i(40550),	-- Valorous Scourgeborne Battleplate
+								i(40559),	-- Valorous Scourgeborne Chestguard
+								i(41142),	-- Deadly Gladiator's Chain Gauntlets
+								i(41772),	-- Deadly Gladiator's Dragonhide Gloves
+								i(40806),	-- Deadly Gladiator's Dreadplate Gauntlets
+								i(42016),	-- Deadly Gladiator's Felweave Handguards
+								i(41286),	-- Deadly Gladiator's Kodohide Gloves
+								i(41766),	-- Deadly Gladiator's Leather Gloves
+								i(41136),	-- Deadly Gladiator's Linked Gauntlets
+								i(41006),	-- Deadly Gladiator's Mail Gauntlets
+								i(41873),	-- Deadly Gladiator's Mooncloth Gloves
+								i(40926),	-- Deadly Gladiator's Ornamented Gloves
+								i(40804),	-- Deadly Gladiator's Plate Gauntlets
+								i(41000),	-- Deadly Gladiator's Ringmail Gauntlets
+								i(41939),	-- Deadly Gladiator's Satin Gloves
+								i(40805),	-- Deadly Gladiator's Scaled Gauntlets
+								i(41970),	-- Deadly Gladiator's Silk Handguards
+								i(41292),	-- Deadly Gladiator's Wyrmhide Gloves
+								i(40496),	-- Valorous Bonescythe Gauntlets
+								i(40504),	-- Valorous Cryptstalker Handguards
+								i(40527),	-- Valorous Dreadnaught Gauntlets
+								i(40545),	-- Valorous Dreadnaught Handguards
+								i(40466),	-- Valorous Dreamwalker Gloves
+								i(40472),	-- Valorous Dreamwalker Handgrips
+								i(40460),	-- Valorous Dreamwalker Handguards
+								i(40515),	-- Valorous Earthshatter Gloves
+								i(40520),	-- Valorous Earthshatter Grips
+								i(40509),	-- Valorous Earthshatter Handguards
+								i(40415),	-- Valorous Frostfire Gloves
+								i(40445),	-- Valorous Gloves of Faith
+								i(40454),	-- Valorous Handwraps of Faith
+								i(40575),	-- Valorous Redemption Gauntlets
+								i(40570),	-- Valorous Redemption Gloves
+								i(40580),	-- Valorous Redemption Handguards
+								i(40552),	-- Valorous Scourgeborne Gauntlets
+								i(40563),	-- Valorous Scourgeborne Handguards
+								i(41204),	-- Deadly Gladiator's Chain Leggings
+								i(41666),	-- Deadly Gladiator's Dragonhide Legguards
+								i(40845),	-- Deadly Gladiator's Dreadplate Legguards
+								i(42004),	-- Deadly Gladiator's Felweave Trousers
+								i(41297),	-- Deadly Gladiator's Kodohide Legguards
+								i(41654),	-- Deadly Gladiator's Leather Legguards
+								i(41198),	-- Deadly Gladiator's Linked Leggings
+								i(41032),	-- Deadly Gladiator's Mail Leggings
+								i(41863),	-- Deadly Gladiator's Mooncloth Leggings
+								i(40938),	-- Deadly Gladiator's Ornamented Legplates
+								i(40844),	-- Deadly Gladiator's Plate Legguards
+								i(41026),	-- Deadly Gladiator's Ringmail Leggings
+								i(41926),	-- Deadly Gladiator's Satin Leggings
+								i(40846),	-- Deadly Gladiator's Scaled Legguards
+								i(41958),	-- Deadly Gladiator's Silk Trousers
+								i(41303),	-- Deadly Gladiator's Wyrmhide Legguards
+								i(40500),	-- Valorous Bonescythe Legplates
+								i(40506),	-- Valorous Cryptstalker Legguards
+								i(40547),	-- Valorous Dreadnaught Legguards
+								i(40529),	-- Valorous Dreadnaught Legplates
+								i(40462),	-- Valorous Dreamwalker Leggings
+								i(40493),	-- Valorous Dreamwalker Legguards
+								i(40468),	-- Valorous Dreamwalker Trousers
+								i(40517),	-- Valorous Earthshatter Kilt
+								i(40512),	-- Valorous Earthshatter Legguards
+								i(40522),	-- Valorous Earthshatter War-Kilt
+								i(40417),	-- Valorous Frostfire Leggings
+								i(40448),	-- Valorous Leggings of Faith
+								i(40457),	-- Valorous Pants of Faith
+								i(40422),	-- Valorous Plagueheart Leggings
+								i(40572),	-- Valorous Redemption Greaves
+								i(40583),	-- Valorous Redemption Legguards
+								i(40577),	-- Valorous Redemption Legplates
+								i(40567),	-- Valorous Scourgeborne Legguards
+								i(40556),	-- Valorous Scourgeborne Legplates
 							},
 							["creatureID"] = 31125,
 						}),
-					})
+					}),
 				},
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
