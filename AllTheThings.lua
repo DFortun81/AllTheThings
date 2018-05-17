@@ -6309,7 +6309,7 @@ function app:GetDataCache()
 			db.text = "Unsorted";
 			table.insert(g, db);
 		end
-		]]--
+		
 		-- Titles (Dynamic)
 		db = app.CreateAchievement(2188, GetTitleCache());
 		db.expanded = false;
@@ -6321,7 +6321,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
-		--[[]]--
+		]]--
 		
 		-- Illusions (Dynamic)
 		--[[
