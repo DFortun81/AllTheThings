@@ -5499,6 +5499,11 @@ end
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
+		-- If the row data itself has an OnClick handler... execute that first.
+		if reference.OnClick and reference.OnClick(self, button) then
+			return true;
+		end
+		
 		if IsShiftKeyDown() then
 			-- If we're at the Auction House
 			if AuctionFrame and AuctionFrame:IsShown() then
@@ -5904,7 +5909,6 @@ CreateRow = function(self)
 	local row = CreateFrame("Button", nil, self);
 	row:SetHeight(self.rowHeight);
 	row.index = #self.rows;
-	row.todo = self.todo;
 	if row.index == 0 then
 		-- This means relative to the parent.
 		row:SetPoint("TOPLEFT");
@@ -6477,14 +6481,14 @@ function app:RefreshData(lazy, safely)
 		end
 	end);
 end
-function app:GetWindow(suffix, parent, todo)
+function app:GetWindow(suffix, parent, onUpdate)
 	local window = app.Windows[suffix];
 	if not window then
 		-- Create the window instance.
 		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent);
 		app.Windows[suffix] = window;
 		window.Toggle = ToggleWindow;
-		window.Update = UpdateWindow;
+		window.Update = onUpdate or UpdateWindow;
 		window.SetVisible = SetWindowVisibility;
 		window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
 		window:SetScript("OnMouseDown", StartMovingOrSizing);
@@ -6551,10 +6555,9 @@ function app:GetWindow(suffix, parent, todo)
 		container.rowHeight = select(2, GameFontNormal:GetFont()) + 4;
 		window.Container = container;
 		container.rows = {};
-		container.todo = todo;
 		scrollbar:SetValue(1);
 		container:Show();
-		UpdateWindow(window, true);
+		window:Update(true);
 	end
 	return window;
 end
@@ -6563,6 +6566,423 @@ end
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
 app:GetWindow("CurrentInstance");
+app:GetWindow("RaidAssistant", UIParent, function(self)
+	if not self.initialized then
+		self.initialized = true;
+		
+		-- Define the different window configurations that the mini list will switch to based on context.
+		local raidassistant, lootspecialization, lootmethod, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
+		
+		-- Raid Assistant
+		local difficultyLookup = {
+			personalloot = "Personal Loot",
+			group = "Group Loot",
+			master = "Master Loot",
+		};
+		local difficultyDescriptions = {
+			personalloot = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.\n\nClick twice to create a group automatically if you're by yourself.",
+			group = "Group loot, round-robin for normal items, rolling for special ones.\n\nClick twice to create a group automatically if you're by yourself.",
+			master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
+		};
+		local setLootMethod = function(self, meth)
+			if IsInGroup() then
+				self.data = raidassistant;
+				if meth == "master" then
+					SetLootMethod(meth, UnitName("player"));
+				else
+					SetLootMethod(meth);
+				end
+				UpdateWindow(self, true);
+			else
+				if not GroupFinderFrame:IsVisible() then
+					PVEFrame_ShowFrame("GroupFinderFrame")
+				end
+				GroupFinderFrameGroupButton4:Click()
+				LFGListCategorySelection_SelectCategory(LFGListFrame.CategorySelection,6,0)
+				LFGListFrame.CategorySelection.StartGroupButton:Click()
+				LFGListFrame.EntryCreation.Name:SetText("ZZZ ATT - Solo Loot Method");
+				LFGListFrame.EntryCreation.ListGroupButton:Click()
+				self.frame = self.frame or CreateFrame("Frame")
+				self.frame:SetScript("OnEvent",function(f)
+					if LFGListFrame.ApplicationViewer.AutoAcceptButton:GetChecked() then
+						LFGListFrame.ApplicationViewer.AutoAcceptButton:Click()
+					end
+					C_Timer.After(0.6, function()
+						self.data = raidassistant;
+						if meth == "master" then
+							SetLootMethod(meth, UnitName("player"));
+						else
+							SetLootMethod(meth);
+						end
+						UpdateWindow(self, true);
+					end);
+					f:UnregisterEvent("LFG_LIST_ACTIVE_ENTRY_UPDATE")
+				end)
+				self.frame:RegisterEvent("LFG_LIST_ACTIVE_ENTRY_UPDATE")
+			end
+		end
+		local switchDungeonDifficulty = function(row, button)
+			self.data = raidassistant;
+			SetDungeonDifficultyID(row.ref.difficultyID);
+			UpdateWindow(self, true);
+		end
+		local switchRaidDifficulty = function(row, button)
+			self.data = raidassistant;
+			SetRaidDifficultyID(row.ref.difficultyID);
+			UpdateWindow(self, true);
+		end
+		local switchLegacyRaidDifficulty = function(row, button)
+			self.data = raidassistant;
+			SetLegacyRaidDifficultyID(row.ref.difficultyID);
+			UpdateWindow(self, true);
+		end
+		raidassistant = {
+			['text'] = "Raid Assistant",
+			['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp", 
+			["description"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
+			['visible'] = true, 
+			['expanded'] = true,
+			['back'] = 1,
+			['g'] = {
+				{
+					['text'] = "Loot Specialization Unknown",
+					['title'] = "Loot Specialization",
+					["description"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						self.data = lootspecialization;
+						UpdateWindow(self, true);
+					end,
+					['OnUpdate'] = function(data)
+						if app.Spec then
+							local id, name, description, icon, role, class = GetSpecializationInfoByID(app.Spec);
+							if GetLootSpecialization() == 0 then name = name .. " (Automatic)"; end
+							data.text = name;
+							data.icon = icon;
+						end
+					end,
+					['back'] = 0.5,
+				},
+				{
+					['text'] = "Personal", 
+					['title'] = "Loot Method",
+					["description"] = "The loot method dictates what kind of loot will drop and how much. You must be in a party to utilize Loot Method switching, but ATT will automatically create a group for you if you click any of the options within twice.\n\nClick this row to change it now!",
+					['icon'] = "Interface\\Icons\\Inv_legion_chest_Valajar.blp",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						self.data = lootmethod;
+						UpdateWindow(self, true);
+					end,
+					['OnUpdate'] = function(data)
+						if app.LootMethod then
+							data.text = difficultyLookup[app.LootMethod] or app.LootMethod;
+						end
+					end,
+					['back'] = 0.5,
+				},
+				app.CreateDifficulty(1, {
+					['title'] = "Dungeon Difficulty",
+					["description"] = "The difficulty setting for dungeons.\n\nClick this row to change it now!",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						self.data = dungeondifficulty;
+						UpdateWindow(self, true);
+					end,
+					['OnUpdate'] = function(data)
+						if app.DungeonDifficulty then
+							data.difficultyID = app.DungeonDifficulty;
+						end
+					end,
+					['back'] = 0.5,
+				}),
+				app.CreateDifficulty(14, {
+					['title'] = "Raid Difficulty",
+					["description"] = "The difficulty setting for raids.\n\nClick this row to change it now!",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						-- Don't allow you to change difficulties when you're in LFR / Raid Finder
+						if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
+						self.data = raiddifficulty;
+						UpdateWindow(self, true);
+					end,
+					['OnUpdate'] = function(data)
+						if app.RaidDifficulty then
+							data.difficultyID = app.RaidDifficulty;
+						end
+					end,
+					['back'] = 0.5,
+				}),
+				app.CreateDifficulty(5, {
+					['title'] = "Legacy Raid Difficulty",
+					["description"] = "The difficulty setting for legacy raids.\n\nClick this row to change it now!",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						-- Don't allow you to change difficulties when you're in LFR / Raid Finder
+						if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
+						self.data = legacyraiddifficulty;
+						UpdateWindow(self, true);
+					end,
+					['OnUpdate'] = function(data)
+						if app.LegacyRaidDifficulty then
+							data.difficultyID = app.LegacyRaidDifficulty;
+						end
+					end,
+					['back'] = 0.5,
+				}),
+			}
+		};
+		lootspecialization = {
+			['text'] = "Loot Specialization",
+			['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02.blp",
+			["description"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant.",
+			['OnClick'] = function(row, button)
+				self.data = raidassistant;
+				UpdateWindow(self, true);
+			end,
+			['OnUpdate'] = function(data)
+				data.g = {};
+				local numSpecializations = GetNumSpecializations();
+				if numSpecializations and numSpecializations > 0 then
+					tinsert(data.g, {
+						['text'] = "Current Specialization",
+						['title'] = select(2, GetSpecializationInfo(GetSpecialization())),
+						['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01.blp",
+						['id'] = 0,
+						["description"] = "If you switch your talents, your loot specialization changes with you.",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							self.data = raidassistant;
+							SetLootSpecialization(row.ref.id);
+							UpdateWindow(self, true);
+						end,
+						['back'] = 0.5,
+					});
+					for i=1,numSpecializations,1 do
+						local id, name, description, icon, background, role, primaryStat = GetSpecializationInfo(i);
+						tinsert(data.g, {
+							['text'] = name,
+							['icon'] = icon,
+							['id'] = id,
+							["description"] = description,
+							['visible'] = true,
+							['OnClick'] = function(row, button)
+								self.data = raidassistant;
+								SetLootSpecialization(row.ref.id);
+								UpdateWindow(self, true);
+							end,
+							['back'] = 0.5,
+						});
+					end
+				end
+			end,
+			['visible'] = true, 
+			['expanded'] = true,
+			['back'] = 1,
+			['g'] = {},
+		};
+		lootmethod = {
+			['text'] = "Loot Method",
+			['icon'] = "Interface\\Icons\\Inv_legion_chest_Valajar.blp",
+			["description"] = "This setting allows you to customize what kind of loot will drop and how much.\n\nThis only works while in a party - If you're by yourself, you can create a Premade Group (just don't invite anyone) and then change it.\n\nClick this row to go back to the Raid Assistant.",
+			['OnClick'] = function(row, button)
+				self.data = raidassistant;
+				UpdateWindow(self, true);
+			end,
+			['visible'] = true, 
+			['expanded'] = true,
+			['back'] = 1,
+			['g'] = {
+				{
+					['text'] = difficultyLookup["personalloot"],
+					['icon'] = "Interface\\Icons\\Ability_Stealth",
+					['description'] = difficultyDescriptions["personalloot"],
+					['id'] = "personalloot",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						setLootMethod(self, row.ref.id);
+					end,
+					['back'] = 0.5,
+				},
+				{
+					['text'] = difficultyLookup["group"],
+					['icon'] = "Interface\\Icons\\INV_Misc_GroupNeedMore",
+					['description'] = difficultyDescriptions["group"],
+					['id'] = "group",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						setLootMethod(self, row.ref.id);
+					end,
+					['back'] = 0.5,
+				},
+				{
+					['text'] = difficultyLookup["master"],
+					['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
+					['description'] = difficultyDescriptions["master"],
+					['id'] = "master",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						setLootMethod(self, row.ref.id);
+					end,
+					['back'] = 0.5,
+				},
+				{
+					['text'] = "Delist Group",
+					['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
+					['description'] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						C_LFGList.RemoveListing();
+						if GroupFinderFrame:IsVisible() then
+							PVEFrame_ToggleFrame("GroupFinderFrame")
+						end
+						self.data = raidassistant;
+						UpdateWindow(self, true);
+					end,
+					['back'] = 0.5,
+				},
+				{
+					['text'] = "Leave Group",
+					['icon'] = "Interface\\Icons\\Ability_Vanish",
+					['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						LeaveParty();
+						if GroupFinderFrame:IsVisible() then
+							PVEFrame_ToggleFrame("GroupFinderFrame")
+						end
+						self.data = raidassistant;
+						UpdateWindow(self, true);
+					end,
+					['back'] = 0.5,
+				},
+			},
+		};
+		dungeondifficulty = {
+			['text'] = "Dungeon Difficulty",
+			['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
+			["description"] = "This setting allows you to customize the difficulty of a dungeon.\n\nClick this row to go back to the Raid Assistant.",
+			['OnClick'] = function(row, button)
+				self.data = raidassistant;
+				UpdateWindow(self, true);
+			end,
+			['visible'] = true, 
+			['expanded'] = true,
+			['back'] = 1,
+			['g'] = {
+				app.CreateDifficulty(1, {
+					['OnClick'] = switchDungeonDifficulty,
+					["description"] = "Click to change now. (if available)",
+					['visible'] = true,
+					['back'] = 0.5,
+				}),
+				app.CreateDifficulty(2, {
+					['OnClick'] = switchDungeonDifficulty,
+					["description"] = "Click to change now. (if available)",
+					['visible'] = true,
+					['back'] = 0.5,
+				}),
+				app.CreateDifficulty(23, {
+					['OnClick'] = switchDungeonDifficulty,
+					["description"] = "Click to change now. (if available)",
+					['visible'] = true,
+					['back'] = 0.5,
+				})
+			},
+		};
+		raiddifficulty = {
+			['text'] = "Raid Difficulty",
+			['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
+			["description"] = "This setting allows you to customize the difficulty of a raid.\n\nClick this row to go back to the Raid Assistant.",
+			['OnClick'] = function(row, button)
+				self.data = raidassistant;
+				UpdateWindow(self, true);
+			end,
+			['visible'] = true, 
+			['expanded'] = true,
+			['back'] = 1,
+			['g'] = {
+				app.CreateDifficulty(14, {
+					['OnClick'] = switchRaidDifficulty,
+					["description"] = "Click to change now. (if available)",
+					['visible'] = true,
+					['back'] = 0.5,
+				}),
+				app.CreateDifficulty(15, {
+					['OnClick'] = switchRaidDifficulty,
+					["description"] = "Click to change now. (if available)",
+					['visible'] = true,
+					['back'] = 0.5,
+				}),
+				app.CreateDifficulty(16, {
+					['OnClick'] = switchRaidDifficulty,
+					["description"] = "Click to change now. (if available)",
+					['visible'] = true,
+					['back'] = 0.5,
+				})
+			},
+		};
+		legacyraiddifficulty = {
+			['text'] = "Legacy Raid Difficulty",
+			['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
+			["description"] = "This setting allows you to customize the difficulty of a legacy raid. (Pre-Siege of Orgrimmar)\n\nClick this row to go back to the Raid Assistant.",
+			['OnClick'] = function(row, button)
+				self.data = raidassistant;
+				UpdateWindow(self, true);
+			end,
+			['visible'] = true, 
+			['expanded'] = true,
+			['back'] = 1,
+			['g'] = {
+				app.CreateDifficulty(3, {
+					['OnClick'] = switchLegacyRaidDifficulty,
+					["description"] = "Click to change now. (if available)",
+					['visible'] = true,
+					['back'] = 0.5,
+				}),
+				app.CreateDifficulty(5, {
+					['OnClick'] = switchLegacyRaidDifficulty,
+					["description"] = "Click to change now. (if available)",
+					['visible'] = true,
+					['back'] = 0.5,
+				}),
+				app.CreateDifficulty(4, {
+					['OnClick'] = switchLegacyRaidDifficulty,
+					["description"] = "Click to change now. (if available)",
+					['visible'] = true,
+					['back'] = 0.5,
+				}),
+				app.CreateDifficulty(6, {
+					['OnClick'] = switchLegacyRaidDifficulty,
+					["description"] = "Click to change now. (if available)",
+					['visible'] = true,
+					['back'] = 0.5,
+				}),
+			},
+		};
+		
+		self.data = raidassistant;
+		
+		-- Setup Event Handlers and register for events
+		self.events = {};
+		self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
+		self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
+		self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
+		self:RegisterEvent("CHAT_MSG_SYSTEM");
+	end
+	
+	-- Update the window and all of its row data
+	app.LootMethod = select(1, GetLootMethod());
+	app.LegacyRaidDifficulty = GetLegacyRaidDifficultyID() or 1;
+	app.DungeonDifficulty = GetDungeonDifficultyID() or 1;
+	app.RaidDifficulty = GetRaidDifficultyID() or 14;
+	app.Spec = GetLootSpecialization();
+	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
+	if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+	for i,g in ipairs(self.data.g) do
+		if g.OnUpdate then g.OnUpdate(g); end
+	end
+	UpdateWindow(self, true);
+end):Show();
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
@@ -6664,6 +7084,7 @@ app:RegisterEvent("COMPANION_LEARNED");
 app:RegisterEvent("COMPANION_UNLEARNED");
 app:RegisterEvent("NEW_PET_ADDED");
 app:RegisterEvent("PET_JOURNAL_PET_DELETED");
+app:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
 app:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
@@ -7980,6 +8401,13 @@ app.events.ACHIEVEMENT_EARNED = function(achievementID, ...)
 end
 app.events.SCENARIO_UPDATE = RefreshLocation;
 app.events.ZONE_CHANGED_NEW_AREA = RefreshLocation;
+app.events.ACTIVE_TALENT_GROUP_CHANGED = function()
+	app.Spec = GetLootSpecialization();
+	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
+	if GetDataMember("RequirePersonalLootFilter") then
+		app:RefreshData(false, true);
+	end
+end
 app.events.PLAYER_LOOT_SPEC_UPDATED = function()
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
