@@ -153,8 +153,8 @@ _.NeverImplemented =
 	un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
 	un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
 	un(1, i(17142)),	-- Shard of the Defiler
+	un(1, i(140011)),	-- Duskwatch Adjudicator's Pauldrons
 --[[	un(1, i()),	-- 
-	un(1, i()),	-- 
 	un(1, i()),	-- 
 	un(1, i()),	-- 
 	un(1, i()),	-- 
