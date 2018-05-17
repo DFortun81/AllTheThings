@@ -3,6 +3,7 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	i(110591), -- Flintlocke's Blasthammer [This version NYI since old one was still good for transmog]
 	i(151377), -- Arne Test Heirloom - Bloodied Arcanite Reaper
 	i(157751), -- Drape of New Beginnings
 	i(134693), -- Enveloping Cape
