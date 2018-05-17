@@ -112,23 +112,24 @@ _.PVP =
 			i(134734),	-- Frigidlink Spaulders
 			i(134732),	-- Frigidlink Armor
 			i(134733),	-- Frigidlink Gauntlets
-			i(134737),	-- Chillplate Shoulders
-			i(134735),	-- Chillplate Chestpiece
-			i(134736),	-- Chillplate Gauntlets
-			i(134717),	-- Cold-Touched Decapitator
+			i(134737),	-- Chillplate Shoulders*
+			i(134735),	-- Chillplate Chestpiece*
+			i(134736),	-- Chillplate Gauntlets*
+			i(134717),	-- Cold-Touched Decapitator*
 			i(134721),	-- Cold-Touched Staff
-			i(134742),	-- Cold-Touched Hacker
+			i(134742),	-- Cold-Touched Hacker*
 			i(134725),	-- Cold-Touched Mageblade*
 			i(134719),	-- Cold-Touched Ripper
 			i(134718),	-- Cold-Touched Shanker
 			i(134726),	-- Cold-Touched Sword
 			i(134720),	-- Cold-Touched Rifle
 			i(134728),	-- Cold-Touched Wand*
-			i(134741),	-- Cold-Touched Barrier
+			i(134741),	-- Cold-Touched Barrier*
 			i(134727),	-- Cold-Touched Endgame
 			i(134739),	-- Cold-Touched Band*
-			i(134744),	-- Cold-Touched Distinction*
 			i(134740),	-- Cold-Touched Signet*
+			i(134745),	-- Cold-Touched Badge*
+			i(134744),	-- Cold-Touched Distinction*
 		},
 		["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range.|r",
 		["lvl"] = 70, 

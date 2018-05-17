@@ -4,7 +4,7 @@
 
 _.Instances = 
 {
-	{ -- Wrath of the Lich King
+	{	-- Wrath of the Lich King
 		["groups"] = {
 			inst(758, { 	-- Icecrown Citadel
 				["groups"] = {
@@ -268,7 +268,7 @@ _.Instances =
 							},
 						},
 					}),
-					n(-17, { -- Quests
+					n(-17, {	-- Quests
 						["description"] = "These quests are only able to be completed on 25 Man Normal/Heroic Difficulty.",
 						["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
 						["groups"] = {
@@ -409,7 +409,7 @@ _.Instances =
 							},
 						},
 					}),
-					n(-2, {		-- Vendors
+					n( -2, {	-- Vendors
 						n(38858, { 		-- Goodman the Closer
 							i(49908),	-- Primordial Saronite
 							i(50355),	-- Herkumi War Token
@@ -454,7 +454,7 @@ _.Instances =
 							i(50992),	-- Waistband of Despair
 							
 							-- Relentless PvP START
-							gs(373, { -- Relentless Gladiator's Satin Armor
+							gs(373, {	-- Relentless Gladiator's Satin Armor
 								i(41855),	-- Relentless Gladiator's Mooncloth Hood
 								i(41870),	-- Relentless Gladiator's Mooncloth Mantle
 								i(41860),	-- Relentless Gladiator's Mooncloth Robe
@@ -466,7 +466,7 @@ _.Instances =
 								i(41941),	-- Relentless Gladiator's Satin Gloves
 								i(41928),	-- Relentless Gladiator's Satin Leggings
 							}),
-							gs(775, { -- Relentless Gladiator's Silk Armor
+							gs(775, {	-- Relentless Gladiator's Silk Armor
 								["groups"] = {
 									i(41947),	-- Relentless Gladiator's Silk Cowl
 									i(41966),	-- Relentless Gladiator's Silk Amice
@@ -476,14 +476,14 @@ _.Instances =
 								},
 								["icon"] = "Interface\\Icons\\INV_Helmet_86",	-- Relentless Silk Cowl Icon as Mage Set didn't have one
 							}),
-							gs(771, { -- Relentless Gladiator's Felweave Armor
+							gs(771, {	-- Relentless Gladiator's Felweave Armor
 								i(41994),	-- Relentless Gladiator's Felweave Cowl
 								i(42012),	-- Relentless Gladiator's Felweave Amice
 								i(41999),	-- Relentless Gladiator's Felweave Raiment
 								i(42018),	-- Relentless Gladiator's Felweave Handguards
 								i(42006),	-- Relentless Gladiator's Felweave Trousers
 							}),
-							gs(777, { -- Relentless Gladiator's Dragonhide Armor
+							gs(777, {	-- Relentless Gladiator's Dragonhide Armor
 								i(41679),	-- Relentless Gladiator's Dragonhide Helm
 								i(41716),	-- Relentless Gladiator's Dragonhide Spaulders
 								i(41662),	-- Relentless Gladiator's Dragonhide Robes
@@ -500,21 +500,21 @@ _.Instances =
 								i(41288),	-- Relentless Gladiator's Kodohide Gloves
 								i(41299),	-- Relentless Gladiator's Kodohide Legguards
 							}),
-							gs(773, { -- Relentless Gladiator's Leather Armor
+							gs(773, {	-- Relentless Gladiator's Leather Armor
 								i(41673),	-- Relentless Gladiator's Leather Helm
 								i(41684),	-- Relentless Gladiator's Leather Spaulders
 								i(41651),	-- Relentless Gladiator's Leather Tunic
 								i(41768),	-- Relentless Gladiator's Leather Gloves
 								i(41656),	-- Relentless Gladiator's Leather Legguards
 							}),
-							gs(776, { -- Relentless Gladiator's Chain Armor
+							gs(776, {	-- Relentless Gladiator's Chain Armor
 								i(41158),	-- Relentless Gladiator's Chain Helm
 								i(41218),	-- Relentless Gladiator's Chain Spaulders
 								i(41088),	-- Relentless Gladiator's Chain Armor
 								i(41144),	-- Relentless Gladiator's Chain Gauntlets
 								i(41206),	-- Relentless Gladiator's Chain Leggings
 							}),
-							gs(772, { -- Relentless Gladiator's Ringmail Armor
+							gs(772, {	-- Relentless Gladiator's Ringmail Armor
 								i(41152),	-- Relentless Gladiator's Linked Helm
 								i(41212),	-- Relentless Gladiator's Linked Spaulders
 								i(41082),	-- Relentless Gladiator's Linked Armor
@@ -531,7 +531,7 @@ _.Instances =
 								i(41002),	-- Relentless Gladiator's Ringmail Gauntlets
 								i(41028),	-- Relentless Gladiator's Ringmail Leggings
 							}),
-							gs(774, { -- Relentless Gladiator's Scaled Armor
+							gs(774, {	-- Relentless Gladiator's Scaled Armor
 								i(40934),	-- Relentless Gladiator's Ornamented Headcover
 								i(40964),	-- Relentless Gladiator's Ornamented Spaulders
 								i(40910),	-- Relentless Gladiator's Ornamented Chestguard
@@ -543,14 +543,14 @@ _.Instances =
 								i(40812),	-- Relentless Gladiator's Scaled Gauntlets
 								i(40852),	-- Relentless Gladiator's Scaled Legguards
 							}),
-							gs(770, { -- Relentless Gladiator's Plate Armor
+							gs(770, {	-- Relentless Gladiator's Plate Armor
 								i(40829),	-- Relentless Gladiator's Plate Helm
 								i(40870),	-- Relentless Gladiator's Plate Shoulders
 								i(40790),	-- Relentless Gladiator's Plate Chestpiece
 								i(40810),	-- Relentless Gladiator's Plate Gauntlets
 								i(40850),	-- Relentless Gladiator's Plate Legguards
 							}),		
-							gs(778, { -- Relentless Gladiator's Dreaplate Armor
+							gs(778, {	-- Relentless Gladiator's Dreaplate Armor
 								i(40830),	-- Relentless Gladiator's Dreadplate Helm
 								i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
 								i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
@@ -951,53 +951,53 @@ _.Instances =
 							}),
 						}),
 						n(38054, { 	-- Scott the Merciful
-							i(50765, { -- Crimson Acolyte Hood
-								i(51178, { -- Sanctified Crimson Acolyte Hood
+							i(50765, {	-- Crimson Acolyte Hood
+								i(51178, {	-- Sanctified Crimson Acolyte Hood
 									i(51261),	-- Sanctified Crimson Acolyte Hood
 								}),
 							}),
-							i(50767, { -- Crimson Acolyte Shoulderpads
-								i(51175, { -- Sanctified Crimson Acolyte Shoulderpads
+							i(50767, {	-- Crimson Acolyte Shoulderpads
+								i(51175, {	-- Sanctified Crimson Acolyte Shoulderpads
 									i(51264),	-- Sanctified Crimson Acolyte Shoulderpads
 								}),
 							}),
-							i(50768, { -- Crimson Acolyte Robe
-								i(51176, { -- Sanctified Crimson Acolyte Robe
+							i(50768, {	-- Crimson Acolyte Robe
+								i(51176, {	-- Sanctified Crimson Acolyte Robe
 									i(51263),	-- Sanctified Crimson Acolyte Robe
 								}),
 							}),
-							i(50766, { -- Crimson Acolyte Gloves
-								i(51179, { -- Sanctified Crimson Acolyte Gloves
+							i(50766, {	-- Crimson Acolyte Gloves
+								i(51179, {	-- Sanctified Crimson Acolyte Gloves
 									i(51260),	-- Sanctified Crimson Acolyte Gloves
 								}),
 							}),
-							i(50769, { -- Crimson Acolyte Leggings
-								i(51177, { -- Sanctified Crimson Acolyte Leggings
+							i(50769, {	-- Crimson Acolyte Leggings
+								i(51177, {	-- Sanctified Crimson Acolyte Leggings
 									i(51262),	-- Sanctified Crimson Acolyte Leggings
 								}),
 							}),
-							i(50392, { -- Crimson Acolyte Cowl
-								i(51184, { -- Sanctified Crimson Acolyte Cowl
+							i(50392, {	-- Crimson Acolyte Cowl
+								i(51184, {	-- Sanctified Crimson Acolyte Cowl
 									i(51255),	-- Sanctified Crimson Acolyte Cowl
 								}),
 							}),
-							i(50396, { -- Crimson Acolyte Mantle
-								i(51182, { -- Sanctified Crimson Acolyte Mantle
+							i(50396, {	-- Crimson Acolyte Mantle
+								i(51182, {	-- Sanctified Crimson Acolyte Mantle
 									i(51257),	-- Sanctified Crimson Acolyte Mantle
 								}),
 							}),
-							i(50394, { -- Crimson Acolyte Raiments
-								i(51180, { -- Sanctified Crimson Acolyte Raiments
+							i(50394, {	-- Crimson Acolyte Raiments
+								i(51180, {	-- Sanctified Crimson Acolyte Raiments
 									i(51259),	-- Sanctified Crimson Acolyte Raiments
 								}),
 							}),
-							i(50391, { -- Crimson Acolyte Handwraps
-								i(51183, { -- Sanctified Crimson Acolyte Handwraps
+							i(50391, {	-- Crimson Acolyte Handwraps
+								i(51183, {	-- Sanctified Crimson Acolyte Handwraps
 									i(51256),	-- Sanctified Crimson Acolyte Handwraps
 								}),
 							}),
-							i(50393, { -- Crimson Acolyte Pants
-								i(51181, { -- Sanctified Crimson Acolyte Pants
+							i(50393, {	-- Crimson Acolyte Pants
+								i(51181, {	-- Sanctified Crimson Acolyte Pants
 									i(51258),	-- Sanctified Crimson Acolyte Pants
 								}),
 							}),
@@ -1317,874 +1317,899 @@ _.Instances =
 							}),
 						}),
 					}),
-					d(3, { -- 10 Man Normal
-						cr(36612, e(1624, { -- Lord Marrowgar
-							i(50761),
-							i(50760),
-							i(50764),
-							i(50774),
-							i(50762),
-							i(50773),
-							i(50775),
-							i(50772),
-							i(50771),
-							i(50759),
-							i(142094)
+					d(  3, {	-- 10 Man Normal
+						cr(36612, e(1624, {	-- Lord Marrowgar
+							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i( 50761),	-- Citadel Enforcer's Claymore
+							i( 50759),	-- Bone Warden's Splitter
+							i( 50760),	-- Bonebreaker Scepter
+							i( 50771),	-- Frost Needle
+							i( 50763),	-- Marrowgar's Scratching Choker
+							i( 50764),	-- Shawl of Nerubian Silk
+							i( 50774),	-- Coldwraith Bracers
+							i( 50773),	-- Cord of the Patronizing Practitioner
+							i( 50762),	-- Linked Scourge Vertebrae
+							i( 50775),	-- Corrupted Silverplate Leggings
+							i( 50772),	-- Ancient Skeletal Boots
+							i( 50339),	-- Sliver of Pure Ice
 						})),
-						cr(36855, e(1625, { -- Lady Deathwhisper
-							i(50776),
-							i(50779),
-							i(50786),
-							i(50780),
-							i(50785),
-							i(50782),
-							i(50777),
-							i(50778),
-							i(50784),
-							i(50783),
-							i(50781)
+						cr(36855, e(1625, {	-- Lady Deathwhisper
+							i(50776),	-- Njordar Bone Bow
+							i(50781),	-- Scourgelord's Baton
+							i(50779),	-- Deathspeaker Zealot's Helm
+							i(50780),	-- Chestguard of the Frigid Noose
+							i(50786),	-- Ghoul Commander's Cuirass
+							i(50785),	-- Bracers of Dark Blessings
+							i(50777),	-- Handgrips of Frost and Sleet
+							i(50782),	-- Sister's Handshrouds
+							i(50784),	-- Deathspeaker Disciple's Belt
+							i(50778),	-- Soulthief's Braided Belt
+							i(50783),	-- Boots of the Frozen Seed
+							i(50342),	-- Whispering Fanged Skull
 						})),
-						e(1626, { -- Icecrown Gunship Battle
-							i(50793),
-							i(50787),
-							i(50794),
-							i(50797),
-							i(50792),
-							i(50791),
-							i(50789),
-							i(50796),
-							i(50795),
-							i(50788)
+						e(  1626, {			-- Icecrown Gunship Battle
+							i(50787),	-- Frost Giant's Cleaver
+							i(50793),	-- Midnight Sun
+							i(50794),	-- Neverending Winter
+							i(50797),	-- Ice-Reinforced Vrykul Helm
+							i(50792),	-- Pauldrons of Lost Hope
+							i(50791),	-- Saronite Gargoyle Cloak
+							i(50796),	-- Bracers of Pale Illumination
+							i(50789),	-- Icecrown Rampart Bracers
+							i(50795),	-- Cord of Dark Suffering
+							i(50788),	-- Bone Drake's Enameled Boots
+							i(50790),	-- Abomination's Bloody Ring
+							i(50340),	-- Muradin's Spyglass
 						}),
-						cr(37813, e(1628, { -- Deathbringer Saurfang
-							i(50805),
-							i(50798),
-							i(50807),
-							i(50800),
-							i(50801),
-							i(50802),
-							i(50799),
-							i(50806),
-							i(50808),
-							i(50804),
-							i(142095)
+						cr(37813, e(1628, {	-- Deathbringer Saurfang
+							i(142095),	-- Remains of a Blood Beast (PET!)
+							i( 50805),	-- Mag'hari Chieftain's Staff
+							i( 50798),	-- Ramaladni's Blade of Culling
+							i( 50807),	-- Thaumaturge's Crackling Cowl
+							i( 50809),	-- Soulcleave Pendant
+							i( 50801),	-- Blade-Scored Carapace
+							i( 50800),	-- Hauberk of a Thousand Cuts
+							i( 50802),	-- Gargoyle Spit Bracers
+							i( 50799),	-- Scourge Stranglers
+							i( 50808),	-- Deathforged Legplates
+							i( 50806),	-- Leggings of Unrelenting Blood
+							i( 50804),	-- Icecrown Spire Sandals
+							i( 50803),	-- Saurfang's Cold-Forged Band
 						})),
-						n(37217, {	-- Precious
-							dr(7, i(52019))	-- Precious' Ribbon
+						n( 37217, {			-- Precious
+							dr(7, i(52019)),	-- Precious' Ribbon
 						}),
-						cr(36626, e(1629, { -- Festergut
-							i(50966),
-							i(50810),
-							i(50988),
-							i(50859),
-							i(50985),
-							i(50967),
-							i(50811),
-							i(50858),
-							i(50990),
-							i(50812)
+						cr(36626, e(1629, {	-- Festergut
+							i(50966),	-- Abracadaver
+							i(50810),	-- Gutbuster
+							i(50852),	-- Precious' Putrid Collar
+							i(50988),	-- Bloodstained Surgeon's Shoulderguards
+							i(50859),	-- Cloak of Many Skins
+							i(50985),	-- Wrists of Septic Shock
+							i(50967),	-- Festergut's Gaseous Gloves
+							i(50811),	-- Festering Fingerguards
+							i(50990),	-- Kilt of Untreated Wounds
+							i(50858),	-- Plague-Soaked Leather Leggings
+							i(50812),	-- Taldron's Long Neglected Boots
+							i(50986),	-- Signet of Putrefaction
 						})),
-						cr(36627, e(1630, { -- Rotface
-							i(50998),
-							i(51003),
-							i(51004),
-							i(51002),
-							i(51009),
-							i(51007),
-							i(51005),
-							i(51000),
-							i(51006)
+						cr(36627, e(1630, {	-- Rotface
+							i(50998),	-- Shaft of Glacial Ice
+							i(51003),	-- Abomination Knuckles
+							i(51004),	-- Lockjaw
+							i(51002),	-- Taldron's Short-Sighted Helm
+							i(51008),	-- Choker of Filthy Diamonds
+							i(51009),	-- Chestguard of the Failed Experiment
+							i(51007),	-- Ether-Soaked Bracers
+							i(51005),	-- Gloves of Broken Fingers
+							i(51000),	-- Flesh-Shaper's Gurney Strap
+							i(51006),	-- Shuffling Shoes
+							i(51001),	-- Rotface's Rupturing Ring
 						})),
-						cr(36678, e(1631, { -- Professor Putricide
-							i(51011),
-							i(51010),
-							i(51013),
-							i(51020),
-							i(51014),
-							i(51015),
-							i(51018),
-							i(51017),
-							i(51019),
-							i(142096)
+						cr(36678, e(1631, {	-- Professor Putricide
+							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i( 51011),	-- Flesh-Carving Scalpel
+							i( 51010),	-- The Facelifter
+							i( 51013),	-- Discarded Bag of Entrails
+							i( 51012),	-- Infected Choker
+							i( 51016),	-- Pendant of Split Veins
+							i( 51014),	-- Scalpel-Sharpening Shoulderguards
+							i( 51015),	-- Shoulderpads of the Morbid Ritual
+							i( 51020),	-- Shoulders of Ruinous Senility
+							i( 51018),	-- Chestplate of Septic Stitches
+							i( 51017),	-- Cauterized Cord
+							i( 51019),	-- Rippling Flesh Kilt
+							i( 50341),	-- Unidentifiable Organ
 						})),
-						cr(37970, e(1632, { -- Blood Prince Council
-							i(51022),
-							i(51326),
-							i(51383),
-							i(51382),
-							i(51379),
-							i(51325),
-							i(51025),
-							i(51023),
-							i(51380),
-							i(51021)
+						cr(37970, e(1632, {	-- Blood Prince Council
+							i(51022),	-- Hersir's Greatspear
+							i(51021),	-- Soulbreaker
+							i(51326),	-- Wand of Ruby Claret
+							i(51383),	-- Spaulders of the Blood Princes
+							i(51382),	-- Heartsick Mender's Cape
+							i(51379),	-- Bloodsoul Raiment
+							i(51325),	-- Blood-Drinker's Girdle
+							i(51025),	-- Battle-Maiden's Legguards
+							i(51380),	-- Pale Corpse Boots
+							i(51023),	-- Taldaram's Soft Slippers
+							i(51381),	-- Cerise Coiled Ring
+							i(51024),	-- Thrice Fanged Signet
 						})),
-						cr(37955, e(1633, { -- Blood-Queen Lana'thel
-							i(51384),
-							i(51385),
-							i(51553),
-							i(51554),
-							i(51552),
-							i(51551),
-							i(51386),
-							i(51556),
-							i(51555),
-							i(51550)
+						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
+							i(51384),	-- Bloodsipper
+							i(51553),	-- Lana'thel's Bloody Nail
+							i(51385),	-- Stakethrower
+							i(51554),	-- Cowl of Malefic Repose
+							i(51548),	-- Collar of Haughty Disdain
+							i(51552),	-- Shoulderpads of the Searing Kiss
+							i(51551),	-- Chestguard of Siphoned Elements
+							i(51386),	-- Throatrender Handguards
+							i(51556),	-- Veincrusher Gauntlets
+							i(51555),	-- Tightening Waistband
+							i(51550),	-- Ivory-Inlaid Leggings
+							i(51387),	-- Seal of the Twilight Queen
 						})),
-						cr(36789, e(1634, { -- Valithria Dreamwalker
-							i(51562),
-							i(51582),
-							i(51561),
-							i(51585),
-							i(51586),
-							i(51565),
-							i(51584),
-							i(51563),
-							i(51583),
-							i(51564),
-							i(51777),
-							i(51566)
+						cr(36789, e(1634, {	-- Valithria Dreamwalker
+							i(51562),	-- Oxheart
+							i(51582),	-- Sister Svalna's Aether Staff
+							i(51561),	-- Dreamhunter's Carbine
+							i(51585),	-- Sister Svalna's Spangenhelm
+							i(51586),	-- Emerald Saint's Spaulders
+							i(51565),	-- Skinned Whelp Shoulders
+							i(51584),	-- Lich Wrappings
+							i(51563),	-- Taiga Bindings
+							i(51583),	-- Stormbringer Gloves
+							i(51564),	-- Ironrope Belt of Ymirjar
+							i(51777),	-- Leggings of the Refracted Mind
+							i(51566),	-- Legguards of the Twisted Dream
 						})),
-						cr(36853, e(1635, { -- Sindragosa
-							i(51784),
-							i(51788),
-							i(51791),
-							i(51792),
-							i(51790),
-							i(51783),
-							i(51789),
-							i(51782),
-							i(51786),
-							i(51785),
-							i(51787),
-							i(142097)
+						cr(36853, e(1635, {	-- Sindragosa
+							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i( 51788),	-- Bleak Coldarra Carver
+							i( 51784),	-- Splintershard
+							i( 51791),	-- Lost Pavise of the Blue Flight
+							i( 51779),	-- Rimetooth Pendant
+							i( 51792),	-- Shoulderguards of Crystalline Bone
+							i( 51790),	-- Robes of Azure Downfall
+							i( 51783),	-- Vambraces of the Frost Wyrm Queen
+							i( 51789),	-- Icicle Shapers
+							i( 51782),	-- Etched Dragonbone Girdle
+							i( 51786),	-- Legplates of Aetheric Strife
+							i( 51787),	-- Scourge Fanged Stompers
+							i( 51785),	-- Wyrmwing Treads
 						})),
-						cr(36597, e(1636, { -- The Lich King
-							i(138955),
-							i(51797),
-							i(51796),
-							i(51799),
-							i(51800),
-							i(51801),
-							i(51803),
-							i(51795),
-							i(51798),
-							i(51802),
-							i(142098),
-							i(122229)
-						}))
-					}),
-					d(5, { -- 10 Man Heroic
-						cr(36612, e(1624, { -- Lord Marrowgar
-							i(51936),
-							i(51937),
-							i(51938),
-							i(51933),
-							i(51929),
-							i(51930),
-							i(51935),
-							i(51928),
-							i(51931),
-							i(51932),
-							i(142094)
-						})),
-						cr(36855, e(1625, { -- Lady Deathwhisper
-							i(51927),
-							i(51922),
-							i(51924),
-							i(51923),
-							i(51917),
-							i(51918),
-							i(51926),
-							i(51921),
-							i(51925),
-							i(51919),
-							i(51920)
-						})),
-						e(1626, { -- Icecrown Gunship Battle
-							i(51916),
-							i(51910),
-							i(51909),
-							i(51906),
-							i(51911),
-							i(51912),
-							i(51907),
-							i(51914),
-							i(51908),
-							i(51915)
-						}),
-						cr(37813, e(1628, { -- Deathbringer Saurfang
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
-								i(51184),	-- Sanctified Crimson Acolyte Cowl
-								i(51178),	-- Sanctified Crimson Acolyte Hood
-								i(51182),	-- Sanctified Crimson Acolyte Mantle
-								i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
-								i(51180),	-- Sanctified Crimson Acolyte Raiments
-								i(51176),	-- Sanctified Crimson Acolyte Robe
-								i(51179),	-- Sanctified Crimson Acolyte Gloves
-								i(51183),	-- Sanctified Crimson Acolyte Handwraps
-								i(51177),	-- Sanctified Crimson Acolyte Leggings
-								i(51181),	-- Sanctified Crimson Acolyte Pants
-								i(51208),	-- Sanctified Dark Coven Hood
-								i(51205),	-- Sanctified Dark Coven Shoulderpads
-								i(51206),	-- Sanctified Dark Coven Robe
-								i(51209),	-- Sanctified Dark Coven Gloves
-								i(51207),	-- Sanctified Dark Coven Leggings
-								i(51173),	-- Sanctified Lightsworn Faceguard
-								i(51167),	-- Sanctified Lightsworn Headpiece
-								i(51162),	-- Sanctified Lightsworn Helmet
-								i(51170),	-- Sanctified Lightsworn Shoulderguards
-								i(51160),	-- Sanctified Lightsworn Shoulderplates
-								i(51166),	-- Sanctified Lightsworn Spaulders
-								i(51164),	-- Sanctified Lightsworn Battleplate
-								i(51174),	-- Sanctified Lightsworn Chestguard
-								i(51165),	-- Sanctified Lightsworn Tunic
-								i(51163),	-- Sanctified Lightsworn Gauntlets
-								i(51169),	-- Sanctified Lightsworn Gloves
-								i(51172),	-- Sanctified Lightsworn Handguards
-								i(51168),	-- Sanctified Lightsworn Greaves
-								i(51171),	-- Sanctified Lightsworn Legguards
-								i(51161),	-- Sanctified Lightsworn Legplates
-							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
-								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
-								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
-								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
-								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
-								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
-								i(51197),	-- Sanctified Frost Witch's Faceguard
-								i(51192),	-- Sanctified Frost Witch's Headpiece
-								i(51202),	-- Sanctified Frost Witch's Helm
-								i(51199),	-- Sanctified Frost Witch's Shoulderguards
-								i(51204),	-- Sanctified Frost Witch's Shoulderpads
-								i(51194),	-- Sanctified Frost Witch's Spaulders
-								i(51195),	-- Sanctified Frost Witch's Chestguard
-								i(51200),	-- Sanctified Frost Witch's Hauberk
-								i(51190),	-- Sanctified Frost Witch's Tunic
-								i(51201),	-- Sanctified Frost Witch's Gloves
-								i(51196),	-- Sanctified Frost Witch's Grips
-								i(51191),	-- Sanctified Frost Witch's Handguards
-								i(51203),	-- Sanctified Frost Witch's Kilt
-								i(51193),	-- Sanctified Frost Witch's Legguards
-								i(51198),	-- Sanctified Frost Witch's War-Kilt
-								i(51218),	-- Sanctified Ymirjar Lord's Greathelm
-								i(51212),	-- Sanctified Ymirjar Lord's Helmet
-								i(51215),	-- Sanctified Ymirjar Lord's Pauldrons
-								i(51210),	-- Sanctified Ymirjar Lord's Shoulderplates
-								i(51214),	-- Sanctified Ymirjar Lord's Battleplate
-								i(51219),	-- Sanctified Ymirjar Lord's Breastplate
-								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
-								i(51217),	-- Sanctified Ymirjar Lord's Handguards
-								i(51216),	-- Sanctified Ymirjar Lord's Legguards
-								i(51211),	-- Sanctified Ymirjar Lord's Legplates
-							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
-								i(51158),	-- Sanctified Bloodmage Hood
-								i(51155),	-- Sanctified Bloodmage Shoulderpads
-								i(51156),	-- Sanctified Bloodmage Robe
-								i(51159),	-- Sanctified Bloodmage Gloves
-								i(51157),	-- Sanctified Bloodmage Leggings
-								i(51149),	-- Sanctified Lasherweave Cover
-								i(51143),	-- Sanctified Lasherweave Headguard
-								i(51137),	-- Sanctified Lasherweave Helmet
-								i(51147),	-- Sanctified Lasherweave Mantle
-								i(51135),	-- Sanctified Lasherweave Pauldrons
-								i(51140),	-- Sanctified Lasherweave Shoulderpads
-								i(51141),	-- Sanctified Lasherweave Raiment
-								i(51139),	-- Sanctified Lasherweave Robes
-								i(51145),	-- Sanctified Lasherweave Vestment
-								i(51138),	-- Sanctified Lasherweave Gauntlets
-								i(51148),	-- Sanctified Lasherweave Gloves
-								i(51144),	-- Sanctified Lasherweave Handgrips
-								i(51142),	-- Sanctified Lasherweave Legguards
-								i(51136),	-- Sanctified Lasherweave Legplates
-								i(51146),	-- Sanctified Lasherweave Trousers
-								i(51187),	-- Sanctified Shadowblade Helmet
-								i(51185),	-- Sanctified Shadowblade Pauldrons
-								i(51189),	-- Sanctified Shadowblade Breastplate
-								i(51188),	-- Sanctified Shadowblade Gauntlets
-								i(51186),	-- Sanctified Shadowblade Legplates
-								i(51133),	-- Sanctified Scourgelord Faceguard
-								i(51127),	-- Sanctified Scourgelord Helmet
-								i(51130),	-- Sanctified Scourgelord Pauldrons
-								i(51125),	-- Sanctified Scourgelord Shoulderplates
-								i(51129),	-- Sanctified Scourgelord Battleplate
-								i(51134),	-- Sanctified Scourgelord Chestguard
-								i(51128),	-- Sanctified Scourgelord Gauntlets
-								i(51132),	-- Sanctified Scourgelord Handguards
-								i(51131),	-- Sanctified Scourgelord Legguards
-								i(51126),	-- Sanctified Scourgelord Legplates
-							}),
-							i(51905),
-							i(51898),
-							i(51896),
-							i(51903),
-							i(51902),
-							i(51901),
-							i(51904),
-							i(51895),
-							i(51897),
-							i(51899),
-							i(142095)
-						})),
-						n(37217, {	-- Precious
-							dr(4, i(52019))	-- Precious' Ribbon
-						}),
-						cr(36626, e(1629, { -- Festergut
-							i(51887),
-							i(51893),
-							i(51883),
-							i(51888),
-							i(51885),
-							i(51886),
-							i(51892),
-							i(51889),
-							i(51882),
-							i(51891)
-						})),
-						cr(36627, e(1630, { -- Rotface
-							i(51881),
-							i(51875),
-							i(51876),
-							i(51877),
-							i(51870),
-							i(51872),
-							i(51874),
-							i(51879),
-							i(51873)
-						})),
-						cr(36678, e(1631, { -- Professor Putricide
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
-								i(51184),	-- Sanctified Crimson Acolyte Cowl
-								i(51178),	-- Sanctified Crimson Acolyte Hood
-								i(51182),	-- Sanctified Crimson Acolyte Mantle
-								i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
-								i(51180),	-- Sanctified Crimson Acolyte Raiments
-								i(51176),	-- Sanctified Crimson Acolyte Robe
-								i(51179),	-- Sanctified Crimson Acolyte Gloves
-								i(51183),	-- Sanctified Crimson Acolyte Handwraps
-								i(51177),	-- Sanctified Crimson Acolyte Leggings
-								i(51181),	-- Sanctified Crimson Acolyte Pants
-								i(51208),	-- Sanctified Dark Coven Hood
-								i(51205),	-- Sanctified Dark Coven Shoulderpads
-								i(51206),	-- Sanctified Dark Coven Robe
-								i(51209),	-- Sanctified Dark Coven Gloves
-								i(51207),	-- Sanctified Dark Coven Leggings
-								i(51173),	-- Sanctified Lightsworn Faceguard
-								i(51167),	-- Sanctified Lightsworn Headpiece
-								i(51162),	-- Sanctified Lightsworn Helmet
-								i(51170),	-- Sanctified Lightsworn Shoulderguards
-								i(51160),	-- Sanctified Lightsworn Shoulderplates
-								i(51166),	-- Sanctified Lightsworn Spaulders
-								i(51164),	-- Sanctified Lightsworn Battleplate
-								i(51174),	-- Sanctified Lightsworn Chestguard
-								i(51165),	-- Sanctified Lightsworn Tunic
-								i(51163),	-- Sanctified Lightsworn Gauntlets
-								i(51169),	-- Sanctified Lightsworn Gloves
-								i(51172),	-- Sanctified Lightsworn Handguards
-								i(51168),	-- Sanctified Lightsworn Greaves
-								i(51171),	-- Sanctified Lightsworn Legguards
-								i(51161),	-- Sanctified Lightsworn Legplates
-							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
-								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
-								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
-								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
-								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
-								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
-								i(51197),	-- Sanctified Frost Witch's Faceguard
-								i(51192),	-- Sanctified Frost Witch's Headpiece
-								i(51202),	-- Sanctified Frost Witch's Helm
-								i(51199),	-- Sanctified Frost Witch's Shoulderguards
-								i(51204),	-- Sanctified Frost Witch's Shoulderpads
-								i(51194),	-- Sanctified Frost Witch's Spaulders
-								i(51195),	-- Sanctified Frost Witch's Chestguard
-								i(51200),	-- Sanctified Frost Witch's Hauberk
-								i(51190),	-- Sanctified Frost Witch's Tunic
-								i(51201),	-- Sanctified Frost Witch's Gloves
-								i(51196),	-- Sanctified Frost Witch's Grips
-								i(51191),	-- Sanctified Frost Witch's Handguards
-								i(51203),	-- Sanctified Frost Witch's Kilt
-								i(51193),	-- Sanctified Frost Witch's Legguards
-								i(51198),	-- Sanctified Frost Witch's War-Kilt
-								i(51218),	-- Sanctified Ymirjar Lord's Greathelm
-								i(51212),	-- Sanctified Ymirjar Lord's Helmet
-								i(51215),	-- Sanctified Ymirjar Lord's Pauldrons
-								i(51210),	-- Sanctified Ymirjar Lord's Shoulderplates
-								i(51214),	-- Sanctified Ymirjar Lord's Battleplate
-								i(51219),	-- Sanctified Ymirjar Lord's Breastplate
-								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
-								i(51217),	-- Sanctified Ymirjar Lord's Handguards
-								i(51216),	-- Sanctified Ymirjar Lord's Legguards
-								i(51211),	-- Sanctified Ymirjar Lord's Legplates
-							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
-								i(51158),	-- Sanctified Bloodmage Hood
-								i(51155),	-- Sanctified Bloodmage Shoulderpads
-								i(51156),	-- Sanctified Bloodmage Robe
-								i(51159),	-- Sanctified Bloodmage Gloves
-								i(51157),	-- Sanctified Bloodmage Leggings
-								i(51149),	-- Sanctified Lasherweave Cover
-								i(51143),	-- Sanctified Lasherweave Headguard
-								i(51137),	-- Sanctified Lasherweave Helmet
-								i(51147),	-- Sanctified Lasherweave Mantle
-								i(51135),	-- Sanctified Lasherweave Pauldrons
-								i(51140),	-- Sanctified Lasherweave Shoulderpads
-								i(51141),	-- Sanctified Lasherweave Raiment
-								i(51139),	-- Sanctified Lasherweave Robes
-								i(51145),	-- Sanctified Lasherweave Vestment
-								i(51138),	-- Sanctified Lasherweave Gauntlets
-								i(51148),	-- Sanctified Lasherweave Gloves
-								i(51144),	-- Sanctified Lasherweave Handgrips
-								i(51142),	-- Sanctified Lasherweave Legguards
-								i(51136),	-- Sanctified Lasherweave Legplates
-								i(51146),	-- Sanctified Lasherweave Trousers
-								i(51187),	-- Sanctified Shadowblade Helmet
-								i(51185),	-- Sanctified Shadowblade Pauldrons
-								i(51189),	-- Sanctified Shadowblade Breastplate
-								i(51188),	-- Sanctified Shadowblade Gauntlets
-								i(51186),	-- Sanctified Shadowblade Legplates
-								i(51133),	-- Sanctified Scourgelord Faceguard
-								i(51127),	-- Sanctified Scourgelord Helmet
-								i(51130),	-- Sanctified Scourgelord Pauldrons
-								i(51125),	-- Sanctified Scourgelord Shoulderplates
-								i(51129),	-- Sanctified Scourgelord Battleplate
-								i(51134),	-- Sanctified Scourgelord Chestguard
-								i(51128),	-- Sanctified Scourgelord Gauntlets
-								i(51132),	-- Sanctified Scourgelord Handguards
-								i(51131),	-- Sanctified Scourgelord Legguards
-								i(51126),	-- Sanctified Scourgelord Legplates
-							}),
-							i(51869),
-							i(51868),
-							i(51866),
-							i(51859),
-							i(51864),
-							i(51865),
-							i(51861),
-							i(51862),
-							i(51860),
-							i(142096)
-						})),
-						cr(37970, e(1632, { -- Blood Prince Council
-							i(51857),
-							i(51858),
-							i(51852),
-							i(51847),
-							i(51848),
-							i(51851),
-							i(51853),
-							i(51854),
-							i(51856),
-							i(51850)
-						})),
-						cr(37955, e(1633, { -- Blood-Queen Lana'thel
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
-								i(51184),	-- Sanctified Crimson Acolyte Cowl
-								i(51178),	-- Sanctified Crimson Acolyte Hood
-								i(51182),	-- Sanctified Crimson Acolyte Mantle
-								i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
-								i(51180),	-- Sanctified Crimson Acolyte Raiments
-								i(51176),	-- Sanctified Crimson Acolyte Robe
-								i(51179),	-- Sanctified Crimson Acolyte Gloves
-								i(51183),	-- Sanctified Crimson Acolyte Handwraps
-								i(51177),	-- Sanctified Crimson Acolyte Leggings
-								i(51181),	-- Sanctified Crimson Acolyte Pants
-								i(51208),	-- Sanctified Dark Coven Hood
-								i(51205),	-- Sanctified Dark Coven Shoulderpads
-								i(51206),	-- Sanctified Dark Coven Robe
-								i(51209),	-- Sanctified Dark Coven Gloves
-								i(51207),	-- Sanctified Dark Coven Leggings
-								i(51173),	-- Sanctified Lightsworn Faceguard
-								i(51167),	-- Sanctified Lightsworn Headpiece
-								i(51162),	-- Sanctified Lightsworn Helmet
-								i(51170),	-- Sanctified Lightsworn Shoulderguards
-								i(51160),	-- Sanctified Lightsworn Shoulderplates
-								i(51166),	-- Sanctified Lightsworn Spaulders
-								i(51164),	-- Sanctified Lightsworn Battleplate
-								i(51174),	-- Sanctified Lightsworn Chestguard
-								i(51165),	-- Sanctified Lightsworn Tunic
-								i(51163),	-- Sanctified Lightsworn Gauntlets
-								i(51169),	-- Sanctified Lightsworn Gloves
-								i(51172),	-- Sanctified Lightsworn Handguards
-								i(51168),	-- Sanctified Lightsworn Greaves
-								i(51171),	-- Sanctified Lightsworn Legguards
-								i(51161),	-- Sanctified Lightsworn Legplates
-							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
-								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
-								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
-								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
-								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
-								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
-								i(51197),	-- Sanctified Frost Witch's Faceguard
-								i(51192),	-- Sanctified Frost Witch's Headpiece
-								i(51202),	-- Sanctified Frost Witch's Helm
-								i(51199),	-- Sanctified Frost Witch's Shoulderguards
-								i(51204),	-- Sanctified Frost Witch's Shoulderpads
-								i(51194),	-- Sanctified Frost Witch's Spaulders
-								i(51195),	-- Sanctified Frost Witch's Chestguard
-								i(51200),	-- Sanctified Frost Witch's Hauberk
-								i(51190),	-- Sanctified Frost Witch's Tunic
-								i(51201),	-- Sanctified Frost Witch's Gloves
-								i(51196),	-- Sanctified Frost Witch's Grips
-								i(51191),	-- Sanctified Frost Witch's Handguards
-								i(51203),	-- Sanctified Frost Witch's Kilt
-								i(51193),	-- Sanctified Frost Witch's Legguards
-								i(51198),	-- Sanctified Frost Witch's War-Kilt
-								i(51218),	-- Sanctified Ymirjar Lord's Greathelm
-								i(51212),	-- Sanctified Ymirjar Lord's Helmet
-								i(51215),	-- Sanctified Ymirjar Lord's Pauldrons
-								i(51210),	-- Sanctified Ymirjar Lord's Shoulderplates
-								i(51214),	-- Sanctified Ymirjar Lord's Battleplate
-								i(51219),	-- Sanctified Ymirjar Lord's Breastplate
-								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
-								i(51217),	-- Sanctified Ymirjar Lord's Handguards
-								i(51216),	-- Sanctified Ymirjar Lord's Legguards
-								i(51211),	-- Sanctified Ymirjar Lord's Legplates
-							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
-								i(51158),	-- Sanctified Bloodmage Hood
-								i(51155),	-- Sanctified Bloodmage Shoulderpads
-								i(51156),	-- Sanctified Bloodmage Robe
-								i(51159),	-- Sanctified Bloodmage Gloves
-								i(51157),	-- Sanctified Bloodmage Leggings
-								i(51149),	-- Sanctified Lasherweave Cover
-								i(51143),	-- Sanctified Lasherweave Headguard
-								i(51137),	-- Sanctified Lasherweave Helmet
-								i(51147),	-- Sanctified Lasherweave Mantle
-								i(51135),	-- Sanctified Lasherweave Pauldrons
-								i(51140),	-- Sanctified Lasherweave Shoulderpads
-								i(51141),	-- Sanctified Lasherweave Raiment
-								i(51139),	-- Sanctified Lasherweave Robes
-								i(51145),	-- Sanctified Lasherweave Vestment
-								i(51138),	-- Sanctified Lasherweave Gauntlets
-								i(51148),	-- Sanctified Lasherweave Gloves
-								i(51144),	-- Sanctified Lasherweave Handgrips
-								i(51142),	-- Sanctified Lasherweave Legguards
-								i(51136),	-- Sanctified Lasherweave Legplates
-								i(51146),	-- Sanctified Lasherweave Trousers
-								i(51187),	-- Sanctified Shadowblade Helmet
-								i(51185),	-- Sanctified Shadowblade Pauldrons
-								i(51189),	-- Sanctified Shadowblade Breastplate
-								i(51188),	-- Sanctified Shadowblade Gauntlets
-								i(51186),	-- Sanctified Shadowblade Legplates
-								i(51133),	-- Sanctified Scourgelord Faceguard
-								i(51127),	-- Sanctified Scourgelord Helmet
-								i(51130),	-- Sanctified Scourgelord Pauldrons
-								i(51125),	-- Sanctified Scourgelord Shoulderplates
-								i(51129),	-- Sanctified Scourgelord Battleplate
-								i(51134),	-- Sanctified Scourgelord Chestguard
-								i(51128),	-- Sanctified Scourgelord Gauntlets
-								i(51132),	-- Sanctified Scourgelord Handguards
-								i(51131),	-- Sanctified Scourgelord Legguards
-								i(51126),	-- Sanctified Scourgelord Legplates
-							}),
-							i(51846),
-							i(51838),
-							i(51845),
-							i(51837),
-							i(51839),
-							i(51840),
-							i(51835),
-							i(51844),
-							i(51836),
-							i(51841)
-						})),
-						cr(36789, e(1634, { -- Valithria Dreamwalker
-							i(51828),
-							i(51833),
-							i(51834),
-							i(51825),
-							i(51824),
-							i(51830),
-							i(51826),
-							i(51832),
-							i(51827),
-							i(51831),
-							i(51829),
-							i(51823)
-						})),
-						cr(36853, e(1635, { -- Sindragosa
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
-								i(51184),	-- Sanctified Crimson Acolyte Cowl
-								i(51178),	-- Sanctified Crimson Acolyte Hood
-								i(51182),	-- Sanctified Crimson Acolyte Mantle
-								i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
-								i(51180),	-- Sanctified Crimson Acolyte Raiments
-								i(51176),	-- Sanctified Crimson Acolyte Robe
-								i(51179),	-- Sanctified Crimson Acolyte Gloves
-								i(51183),	-- Sanctified Crimson Acolyte Handwraps
-								i(51177),	-- Sanctified Crimson Acolyte Leggings
-								i(51181),	-- Sanctified Crimson Acolyte Pants
-								i(51208),	-- Sanctified Dark Coven Hood
-								i(51205),	-- Sanctified Dark Coven Shoulderpads
-								i(51206),	-- Sanctified Dark Coven Robe
-								i(51209),	-- Sanctified Dark Coven Gloves
-								i(51207),	-- Sanctified Dark Coven Leggings
-								i(51173),	-- Sanctified Lightsworn Faceguard
-								i(51167),	-- Sanctified Lightsworn Headpiece
-								i(51162),	-- Sanctified Lightsworn Helmet
-								i(51170),	-- Sanctified Lightsworn Shoulderguards
-								i(51160),	-- Sanctified Lightsworn Shoulderplates
-								i(51166),	-- Sanctified Lightsworn Spaulders
-								i(51164),	-- Sanctified Lightsworn Battleplate
-								i(51174),	-- Sanctified Lightsworn Chestguard
-								i(51165),	-- Sanctified Lightsworn Tunic
-								i(51163),	-- Sanctified Lightsworn Gauntlets
-								i(51169),	-- Sanctified Lightsworn Gloves
-								i(51172),	-- Sanctified Lightsworn Handguards
-								i(51168),	-- Sanctified Lightsworn Greaves
-								i(51171),	-- Sanctified Lightsworn Legguards
-								i(51161),	-- Sanctified Lightsworn Legplates
-							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
-								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
-								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
-								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
-								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
-								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
-								i(51197),	-- Sanctified Frost Witch's Faceguard
-								i(51192),	-- Sanctified Frost Witch's Headpiece
-								i(51202),	-- Sanctified Frost Witch's Helm
-								i(51199),	-- Sanctified Frost Witch's Shoulderguards
-								i(51204),	-- Sanctified Frost Witch's Shoulderpads
-								i(51194),	-- Sanctified Frost Witch's Spaulders
-								i(51195),	-- Sanctified Frost Witch's Chestguard
-								i(51200),	-- Sanctified Frost Witch's Hauberk
-								i(51190),	-- Sanctified Frost Witch's Tunic
-								i(51201),	-- Sanctified Frost Witch's Gloves
-								i(51196),	-- Sanctified Frost Witch's Grips
-								i(51191),	-- Sanctified Frost Witch's Handguards
-								i(51203),	-- Sanctified Frost Witch's Kilt
-								i(51193),	-- Sanctified Frost Witch's Legguards
-								i(51198),	-- Sanctified Frost Witch's War-Kilt
-								i(51218),	-- Sanctified Ymirjar Lord's Greathelm
-								i(51212),	-- Sanctified Ymirjar Lord's Helmet
-								i(51215),	-- Sanctified Ymirjar Lord's Pauldrons
-								i(51210),	-- Sanctified Ymirjar Lord's Shoulderplates
-								i(51214),	-- Sanctified Ymirjar Lord's Battleplate
-								i(51219),	-- Sanctified Ymirjar Lord's Breastplate
-								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
-								i(51217),	-- Sanctified Ymirjar Lord's Handguards
-								i(51216),	-- Sanctified Ymirjar Lord's Legguards
-								i(51211),	-- Sanctified Ymirjar Lord's Legplates
-							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
-								i(51158),	-- Sanctified Bloodmage Hood
-								i(51155),	-- Sanctified Bloodmage Shoulderpads
-								i(51156),	-- Sanctified Bloodmage Robe
-								i(51159),	-- Sanctified Bloodmage Gloves
-								i(51157),	-- Sanctified Bloodmage Leggings
-								i(51149),	-- Sanctified Lasherweave Cover
-								i(51143),	-- Sanctified Lasherweave Headguard
-								i(51137),	-- Sanctified Lasherweave Helmet
-								i(51147),	-- Sanctified Lasherweave Mantle
-								i(51135),	-- Sanctified Lasherweave Pauldrons
-								i(51140),	-- Sanctified Lasherweave Shoulderpads
-								i(51141),	-- Sanctified Lasherweave Raiment
-								i(51139),	-- Sanctified Lasherweave Robes
-								i(51145),	-- Sanctified Lasherweave Vestment
-								i(51138),	-- Sanctified Lasherweave Gauntlets
-								i(51148),	-- Sanctified Lasherweave Gloves
-								i(51144),	-- Sanctified Lasherweave Handgrips
-								i(51142),	-- Sanctified Lasherweave Legguards
-								i(51136),	-- Sanctified Lasherweave Legplates
-								i(51146),	-- Sanctified Lasherweave Trousers
-								i(51187),	-- Sanctified Shadowblade Helmet
-								i(51185),	-- Sanctified Shadowblade Pauldrons
-								i(51189),	-- Sanctified Shadowblade Breastplate
-								i(51188),	-- Sanctified Shadowblade Gauntlets
-								i(51186),	-- Sanctified Shadowblade Legplates
-								i(51133),	-- Sanctified Scourgelord Faceguard
-								i(51127),	-- Sanctified Scourgelord Helmet
-								i(51130),	-- Sanctified Scourgelord Pauldrons
-								i(51125),	-- Sanctified Scourgelord Shoulderplates
-								i(51129),	-- Sanctified Scourgelord Battleplate
-								i(51134),	-- Sanctified Scourgelord Chestguard
-								i(51128),	-- Sanctified Scourgelord Gauntlets
-								i(51132),	-- Sanctified Scourgelord Handguards
-								i(51131),	-- Sanctified Scourgelord Legguards
-								i(51126),	-- Sanctified Scourgelord Legplates
-							}),
-							i(51819),
-							i(51815),
-							i(51812),
-							i(51811),
-							i(51813),
-							i(51820),
-							i(51814),
-							i(51821),
-							i(51817),
-							i(51816),
-							i(51818),
-							i(142097)
-						})),
-						cr(36597, e(1636, { -- The Lich King
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
-								i(51184),	-- Sanctified Crimson Acolyte Cowl
-								i(51178),	-- Sanctified Crimson Acolyte Hood
-								i(51182),	-- Sanctified Crimson Acolyte Mantle
-								i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
-								i(51180),	-- Sanctified Crimson Acolyte Raiments
-								i(51176),	-- Sanctified Crimson Acolyte Robe
-								i(51179),	-- Sanctified Crimson Acolyte Gloves
-								i(51183),	-- Sanctified Crimson Acolyte Handwraps
-								i(51177),	-- Sanctified Crimson Acolyte Leggings
-								i(51181),	-- Sanctified Crimson Acolyte Pants
-								i(51208),	-- Sanctified Dark Coven Hood
-								i(51205),	-- Sanctified Dark Coven Shoulderpads
-								i(51206),	-- Sanctified Dark Coven Robe
-								i(51209),	-- Sanctified Dark Coven Gloves
-								i(51207),	-- Sanctified Dark Coven Leggings
-								i(51173),	-- Sanctified Lightsworn Faceguard
-								i(51167),	-- Sanctified Lightsworn Headpiece
-								i(51162),	-- Sanctified Lightsworn Helmet
-								i(51170),	-- Sanctified Lightsworn Shoulderguards
-								i(51160),	-- Sanctified Lightsworn Shoulderplates
-								i(51166),	-- Sanctified Lightsworn Spaulders
-								i(51164),	-- Sanctified Lightsworn Battleplate
-								i(51174),	-- Sanctified Lightsworn Chestguard
-								i(51165),	-- Sanctified Lightsworn Tunic
-								i(51163),	-- Sanctified Lightsworn Gauntlets
-								i(51169),	-- Sanctified Lightsworn Gloves
-								i(51172),	-- Sanctified Lightsworn Handguards
-								i(51168),	-- Sanctified Lightsworn Greaves
-								i(51171),	-- Sanctified Lightsworn Legguards
-								i(51161),	-- Sanctified Lightsworn Legplates
-							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
-								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
-								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
-								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
-								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
-								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
-								i(51197),	-- Sanctified Frost Witch's Faceguard
-								i(51192),	-- Sanctified Frost Witch's Headpiece
-								i(51202),	-- Sanctified Frost Witch's Helm
-								i(51199),	-- Sanctified Frost Witch's Shoulderguards
-								i(51204),	-- Sanctified Frost Witch's Shoulderpads
-								i(51194),	-- Sanctified Frost Witch's Spaulders
-								i(51195),	-- Sanctified Frost Witch's Chestguard
-								i(51200),	-- Sanctified Frost Witch's Hauberk
-								i(51190),	-- Sanctified Frost Witch's Tunic
-								i(51201),	-- Sanctified Frost Witch's Gloves
-								i(51196),	-- Sanctified Frost Witch's Grips
-								i(51191),	-- Sanctified Frost Witch's Handguards
-								i(51203),	-- Sanctified Frost Witch's Kilt
-								i(51193),	-- Sanctified Frost Witch's Legguards
-								i(51198),	-- Sanctified Frost Witch's War-Kilt
-								i(51218),	-- Sanctified Ymirjar Lord's Greathelm
-								i(51212),	-- Sanctified Ymirjar Lord's Helmet
-								i(51215),	-- Sanctified Ymirjar Lord's Pauldrons
-								i(51210),	-- Sanctified Ymirjar Lord's Shoulderplates
-								i(51214),	-- Sanctified Ymirjar Lord's Battleplate
-								i(51219),	-- Sanctified Ymirjar Lord's Breastplate
-								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
-								i(51217),	-- Sanctified Ymirjar Lord's Handguards
-								i(51216),	-- Sanctified Ymirjar Lord's Legguards
-								i(51211),	-- Sanctified Ymirjar Lord's Legplates
-							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
-								i(51158),	-- Sanctified Bloodmage Hood
-								i(51155),	-- Sanctified Bloodmage Shoulderpads
-								i(51156),	-- Sanctified Bloodmage Robe
-								i(51159),	-- Sanctified Bloodmage Gloves
-								i(51157),	-- Sanctified Bloodmage Leggings
-								i(51149),	-- Sanctified Lasherweave Cover
-								i(51143),	-- Sanctified Lasherweave Headguard
-								i(51137),	-- Sanctified Lasherweave Helmet
-								i(51147),	-- Sanctified Lasherweave Mantle
-								i(51135),	-- Sanctified Lasherweave Pauldrons
-								i(51140),	-- Sanctified Lasherweave Shoulderpads
-								i(51141),	-- Sanctified Lasherweave Raiment
-								i(51139),	-- Sanctified Lasherweave Robes
-								i(51145),	-- Sanctified Lasherweave Vestment
-								i(51138),	-- Sanctified Lasherweave Gauntlets
-								i(51148),	-- Sanctified Lasherweave Gloves
-								i(51144),	-- Sanctified Lasherweave Handgrips
-								i(51142),	-- Sanctified Lasherweave Legguards
-								i(51136),	-- Sanctified Lasherweave Legplates
-								i(51146),	-- Sanctified Lasherweave Trousers
-								i(51187),	-- Sanctified Shadowblade Helmet
-								i(51185),	-- Sanctified Shadowblade Pauldrons
-								i(51189),	-- Sanctified Shadowblade Breastplate
-								i(51188),	-- Sanctified Shadowblade Gauntlets
-								i(51186),	-- Sanctified Shadowblade Legplates
-								i(51133),	-- Sanctified Scourgelord Faceguard
-								i(51127),	-- Sanctified Scourgelord Helmet
-								i(51130),	-- Sanctified Scourgelord Pauldrons
-								i(51125),	-- Sanctified Scourgelord Shoulderplates
-								i(51129),	-- Sanctified Scourgelord Battleplate
-								i(51134),	-- Sanctified Scourgelord Chestguard
-								i(51128),	-- Sanctified Scourgelord Gauntlets
-								i(51132),	-- Sanctified Scourgelord Handguards
-								i(51131),	-- Sanctified Scourgelord Legguards
-								i(51126),	-- Sanctified Scourgelord Legplates
-							}),
-							i(138955),
-							i(51946),
-							i(51945),
-							i(51943),
-							i(51939),
-							i(51944),
-							i(51942),
-							i(51941),
-							i(51947),
-							i(51940),
-							i(142099),
-							i(122229)
+						cr(36597, e(1636, {	-- The Lich King
+							i(142098),	-- Drudge Remains (PET!)
+							i(138955),	-- Illusion: Rune of Razorice
+							i( 51799),	-- Halion, Staff of Forgotten Love
+							i( 51797),	-- Tainted Twig of Nordrassil
+							i( 51796),	-- Warmace of Menethil
+							i( 51801),	-- Pugius, Fist of Defiance
+							i( 51800),	-- Stormfury, Black Blade of the Betrayer
+							i( 51803),	-- Tel'thas, Dagger of the Blood King
+							i( 51795),	-- Troggbane, Axe of the Frostborne King
+							i( 51798),	-- Valius, Gavel of the Lightbringer
+							i( 51802),	-- Windrunner's Heartseeker
+							i(122229),	-- Music Roll: Invincible
 						})),
 					}),
-					d(4, { -- 25 Man Normal
-						n(0, { 		-- Zone Drop
+					d(  5, {	-- 10 Man Heroic
+						cr(36612, e(1624, {	-- Lord Marrowgar
+							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i( 49908),	-- Primordial Saronite
+							i( 51936),	-- Citadel Enforcer's Claymore
+							i( 51938),	-- Bone Warden's Splitter
+							i( 51937),	-- Bonebreaker Scepter
+							i( 51932),	-- Frost Needle
+							i( 51934),	-- Marrowgar's Scratching Choker
+							i( 51933),	-- Shawl of Nerubian Silk
+							i( 51929),	-- Coldwraith Bracers
+							i( 51930),	-- Cord of the Patronizing Practitioner
+							i( 51935),	-- Linked Scourge Vertebrae
+							i( 51928),	-- Corrupted Silverplate Leggings
+							i( 51931),	-- Ancient Skeletal Boots
+							i( 50346),	-- Sliver of Pure Ice
+						})),
+						cr(36855, e(1625, {	-- Lady Deathwhisper
+							i(49908),	-- Primordial Saronite
+							i(51927),	-- Njordar Bone Bow
+							i(51922),	-- Scourgelord's Baton
+							i(51924),	-- Deathspeaker Zealot's Helm
+							i(51923),	-- Chestguard of the Frigid Noose
+							i(51917),	-- Ghoul Commander's Cuirass
+							i(51918),	-- Bracers of Dark Blessings
+							i(51926),	-- Handgrips of Frost and Sleet
+							i(51921),	-- Sister's Handshrouds
+							i(51919),	-- Deathspeaker Disciple's Belt
+							i(51925),	-- Soulthief's Braided Belt
+							i(51920),	-- Boots of the Frozen Seed
+							i(50343),	-- Whispering Fanged Skull
+						})),
+						e(1626, {	-- Icecrown Gunship Battle
+							i(49908),	-- Primordial Saronite
+							i(51916),	-- 
+							i(51910),	-- 
+							i(51909),	-- 
+							i(51906),	-- 
+							i(51911),	-- 
+							i(51912),	-- 
+							i(51907),	-- 
+							i(51914),	-- 
+							i(51908),	-- 
+							i(51915),	-- 
+						}),
+						cr(37813, e(1628, {	-- Deathbringer Saurfang
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
+								i(51184),	-- Sanctified Crimson Acolyte Cowl
+								i(51178),	-- Sanctified Crimson Acolyte Hood
+								i(51182),	-- Sanctified Crimson Acolyte Mantle
+								i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
+								i(51180),	-- Sanctified Crimson Acolyte Raiments
+								i(51176),	-- Sanctified Crimson Acolyte Robe
+								i(51179),	-- Sanctified Crimson Acolyte Gloves
+								i(51183),	-- Sanctified Crimson Acolyte Handwraps
+								i(51177),	-- Sanctified Crimson Acolyte Leggings
+								i(51181),	-- Sanctified Crimson Acolyte Pants
+								i(51208),	-- Sanctified Dark Coven Hood
+								i(51205),	-- Sanctified Dark Coven Shoulderpads
+								i(51206),	-- Sanctified Dark Coven Robe
+								i(51209),	-- Sanctified Dark Coven Gloves
+								i(51207),	-- Sanctified Dark Coven Leggings
+								i(51173),	-- Sanctified Lightsworn Faceguard
+								i(51167),	-- Sanctified Lightsworn Headpiece
+								i(51162),	-- Sanctified Lightsworn Helmet
+								i(51170),	-- Sanctified Lightsworn Shoulderguards
+								i(51160),	-- Sanctified Lightsworn Shoulderplates
+								i(51166),	-- Sanctified Lightsworn Spaulders
+								i(51164),	-- Sanctified Lightsworn Battleplate
+								i(51174),	-- Sanctified Lightsworn Chestguard
+								i(51165),	-- Sanctified Lightsworn Tunic
+								i(51163),	-- Sanctified Lightsworn Gauntlets
+								i(51169),	-- Sanctified Lightsworn Gloves
+								i(51172),	-- Sanctified Lightsworn Handguards
+								i(51168),	-- Sanctified Lightsworn Greaves
+								i(51171),	-- Sanctified Lightsworn Legguards
+								i(51161),	-- Sanctified Lightsworn Legplates
+							}),
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
+								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
+								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
+								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
+								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
+								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
+								i(51197),	-- Sanctified Frost Witch's Faceguard
+								i(51192),	-- Sanctified Frost Witch's Headpiece
+								i(51202),	-- Sanctified Frost Witch's Helm
+								i(51199),	-- Sanctified Frost Witch's Shoulderguards
+								i(51204),	-- Sanctified Frost Witch's Shoulderpads
+								i(51194),	-- Sanctified Frost Witch's Spaulders
+								i(51195),	-- Sanctified Frost Witch's Chestguard
+								i(51200),	-- Sanctified Frost Witch's Hauberk
+								i(51190),	-- Sanctified Frost Witch's Tunic
+								i(51201),	-- Sanctified Frost Witch's Gloves
+								i(51196),	-- Sanctified Frost Witch's Grips
+								i(51191),	-- Sanctified Frost Witch's Handguards
+								i(51203),	-- Sanctified Frost Witch's Kilt
+								i(51193),	-- Sanctified Frost Witch's Legguards
+								i(51198),	-- Sanctified Frost Witch's War-Kilt
+								i(51218),	-- Sanctified Ymirjar Lord's Greathelm
+								i(51212),	-- Sanctified Ymirjar Lord's Helmet
+								i(51215),	-- Sanctified Ymirjar Lord's Pauldrons
+								i(51210),	-- Sanctified Ymirjar Lord's Shoulderplates
+								i(51214),	-- Sanctified Ymirjar Lord's Battleplate
+								i(51219),	-- Sanctified Ymirjar Lord's Breastplate
+								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
+								i(51217),	-- Sanctified Ymirjar Lord's Handguards
+								i(51216),	-- Sanctified Ymirjar Lord's Legguards
+								i(51211),	-- Sanctified Ymirjar Lord's Legplates
+							}),
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
+								i(51158),	-- Sanctified Bloodmage Hood
+								i(51155),	-- Sanctified Bloodmage Shoulderpads
+								i(51156),	-- Sanctified Bloodmage Robe
+								i(51159),	-- Sanctified Bloodmage Gloves
+								i(51157),	-- Sanctified Bloodmage Leggings
+								i(51149),	-- Sanctified Lasherweave Cover
+								i(51143),	-- Sanctified Lasherweave Headguard
+								i(51137),	-- Sanctified Lasherweave Helmet
+								i(51147),	-- Sanctified Lasherweave Mantle
+								i(51135),	-- Sanctified Lasherweave Pauldrons
+								i(51140),	-- Sanctified Lasherweave Shoulderpads
+								i(51141),	-- Sanctified Lasherweave Raiment
+								i(51139),	-- Sanctified Lasherweave Robes
+								i(51145),	-- Sanctified Lasherweave Vestment
+								i(51138),	-- Sanctified Lasherweave Gauntlets
+								i(51148),	-- Sanctified Lasherweave Gloves
+								i(51144),	-- Sanctified Lasherweave Handgrips
+								i(51142),	-- Sanctified Lasherweave Legguards
+								i(51136),	-- Sanctified Lasherweave Legplates
+								i(51146),	-- Sanctified Lasherweave Trousers
+								i(51187),	-- Sanctified Shadowblade Helmet
+								i(51185),	-- Sanctified Shadowblade Pauldrons
+								i(51189),	-- Sanctified Shadowblade Breastplate
+								i(51188),	-- Sanctified Shadowblade Gauntlets
+								i(51186),	-- Sanctified Shadowblade Legplates
+								i(51133),	-- Sanctified Scourgelord Faceguard
+								i(51127),	-- Sanctified Scourgelord Helmet
+								i(51130),	-- Sanctified Scourgelord Pauldrons
+								i(51125),	-- Sanctified Scourgelord Shoulderplates
+								i(51129),	-- Sanctified Scourgelord Battleplate
+								i(51134),	-- Sanctified Scourgelord Chestguard
+								i(51128),	-- Sanctified Scourgelord Gauntlets
+								i(51132),	-- Sanctified Scourgelord Handguards
+								i(51131),	-- Sanctified Scourgelord Legguards
+								i(51126),	-- Sanctified Scourgelord Legplates
+							}),
+							i(142095),	-- Remains of a Blood Beast (PET!)
+							i( 51905),	-- 
+							i( 51898),	-- 
+							i( 51896),	-- 
+							i( 51903),	-- 
+							i( 51902),	-- 
+							i( 51901),	-- 
+							i( 51904),	-- 
+							i( 51895),	-- 
+							i( 51897),	-- 
+							i( 51899),	-- 
+						})),
+						n(37217, {	-- Precious
+							dr(4, i(52019)),	-- Precious' Ribbon
+						}),
+						cr(36626, e(1629, {	-- Festergut
+							i(51887),	-- 
+							i(51893),	-- 
+							i(51883),	-- 
+							i(51888),	-- 
+							i(51885),	-- 
+							i(51886),	-- 
+							i(51892),	-- 
+							i(51889),	-- 
+							i(51882),	-- 
+							i(51891),	-- 
+						})),
+						cr(36627, e(1630, {	-- Rotface
+							i(51881),	-- 
+							i(51875),	-- 
+							i(51876),	-- 
+							i(51877),	-- 
+							i(51870),	-- 
+							i(51872),	-- 
+							i(51874),	-- 
+							i(51879),	-- 
+							i(51873),	-- 
+						})),
+						cr(36678, e(1631, {	-- Professor Putricide
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
+								i(51184),	-- Sanctified Crimson Acolyte Cowl
+								i(51178),	-- Sanctified Crimson Acolyte Hood
+								i(51182),	-- Sanctified Crimson Acolyte Mantle
+								i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
+								i(51180),	-- Sanctified Crimson Acolyte Raiments
+								i(51176),	-- Sanctified Crimson Acolyte Robe
+								i(51179),	-- Sanctified Crimson Acolyte Gloves
+								i(51183),	-- Sanctified Crimson Acolyte Handwraps
+								i(51177),	-- Sanctified Crimson Acolyte Leggings
+								i(51181),	-- Sanctified Crimson Acolyte Pants
+								i(51208),	-- Sanctified Dark Coven Hood
+								i(51205),	-- Sanctified Dark Coven Shoulderpads
+								i(51206),	-- Sanctified Dark Coven Robe
+								i(51209),	-- Sanctified Dark Coven Gloves
+								i(51207),	-- Sanctified Dark Coven Leggings
+								i(51173),	-- Sanctified Lightsworn Faceguard
+								i(51167),	-- Sanctified Lightsworn Headpiece
+								i(51162),	-- Sanctified Lightsworn Helmet
+								i(51170),	-- Sanctified Lightsworn Shoulderguards
+								i(51160),	-- Sanctified Lightsworn Shoulderplates
+								i(51166),	-- Sanctified Lightsworn Spaulders
+								i(51164),	-- Sanctified Lightsworn Battleplate
+								i(51174),	-- Sanctified Lightsworn Chestguard
+								i(51165),	-- Sanctified Lightsworn Tunic
+								i(51163),	-- Sanctified Lightsworn Gauntlets
+								i(51169),	-- Sanctified Lightsworn Gloves
+								i(51172),	-- Sanctified Lightsworn Handguards
+								i(51168),	-- Sanctified Lightsworn Greaves
+								i(51171),	-- Sanctified Lightsworn Legguards
+								i(51161),	-- Sanctified Lightsworn Legplates
+							}),
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
+								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
+								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
+								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
+								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
+								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
+								i(51197),	-- Sanctified Frost Witch's Faceguard
+								i(51192),	-- Sanctified Frost Witch's Headpiece
+								i(51202),	-- Sanctified Frost Witch's Helm
+								i(51199),	-- Sanctified Frost Witch's Shoulderguards
+								i(51204),	-- Sanctified Frost Witch's Shoulderpads
+								i(51194),	-- Sanctified Frost Witch's Spaulders
+								i(51195),	-- Sanctified Frost Witch's Chestguard
+								i(51200),	-- Sanctified Frost Witch's Hauberk
+								i(51190),	-- Sanctified Frost Witch's Tunic
+								i(51201),	-- Sanctified Frost Witch's Gloves
+								i(51196),	-- Sanctified Frost Witch's Grips
+								i(51191),	-- Sanctified Frost Witch's Handguards
+								i(51203),	-- Sanctified Frost Witch's Kilt
+								i(51193),	-- Sanctified Frost Witch's Legguards
+								i(51198),	-- Sanctified Frost Witch's War-Kilt
+								i(51218),	-- Sanctified Ymirjar Lord's Greathelm
+								i(51212),	-- Sanctified Ymirjar Lord's Helmet
+								i(51215),	-- Sanctified Ymirjar Lord's Pauldrons
+								i(51210),	-- Sanctified Ymirjar Lord's Shoulderplates
+								i(51214),	-- Sanctified Ymirjar Lord's Battleplate
+								i(51219),	-- Sanctified Ymirjar Lord's Breastplate
+								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
+								i(51217),	-- Sanctified Ymirjar Lord's Handguards
+								i(51216),	-- Sanctified Ymirjar Lord's Legguards
+								i(51211),	-- Sanctified Ymirjar Lord's Legplates
+							}),
+							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
+								i(51158),	-- Sanctified Bloodmage Hood
+								i(51155),	-- Sanctified Bloodmage Shoulderpads
+								i(51156),	-- Sanctified Bloodmage Robe
+								i(51159),	-- Sanctified Bloodmage Gloves
+								i(51157),	-- Sanctified Bloodmage Leggings
+								i(51149),	-- Sanctified Lasherweave Cover
+								i(51143),	-- Sanctified Lasherweave Headguard
+								i(51137),	-- Sanctified Lasherweave Helmet
+								i(51147),	-- Sanctified Lasherweave Mantle
+								i(51135),	-- Sanctified Lasherweave Pauldrons
+								i(51140),	-- Sanctified Lasherweave Shoulderpads
+								i(51141),	-- Sanctified Lasherweave Raiment
+								i(51139),	-- Sanctified Lasherweave Robes
+								i(51145),	-- Sanctified Lasherweave Vestment
+								i(51138),	-- Sanctified Lasherweave Gauntlets
+								i(51148),	-- Sanctified Lasherweave Gloves
+								i(51144),	-- Sanctified Lasherweave Handgrips
+								i(51142),	-- Sanctified Lasherweave Legguards
+								i(51136),	-- Sanctified Lasherweave Legplates
+								i(51146),	-- Sanctified Lasherweave Trousers
+								i(51187),	-- Sanctified Shadowblade Helmet
+								i(51185),	-- Sanctified Shadowblade Pauldrons
+								i(51189),	-- Sanctified Shadowblade Breastplate
+								i(51188),	-- Sanctified Shadowblade Gauntlets
+								i(51186),	-- Sanctified Shadowblade Legplates
+								i(51133),	-- Sanctified Scourgelord Faceguard
+								i(51127),	-- Sanctified Scourgelord Helmet
+								i(51130),	-- Sanctified Scourgelord Pauldrons
+								i(51125),	-- Sanctified Scourgelord Shoulderplates
+								i(51129),	-- Sanctified Scourgelord Battleplate
+								i(51134),	-- Sanctified Scourgelord Chestguard
+								i(51128),	-- Sanctified Scourgelord Gauntlets
+								i(51132),	-- Sanctified Scourgelord Handguards
+								i(51131),	-- Sanctified Scourgelord Legguards
+								i(51126),	-- Sanctified Scourgelord Legplates
+							}),
+							i( 51869),	-- 
+							i( 51868),	-- 
+							i( 51866),	-- 
+							i( 51859),	-- 
+							i( 51864),	-- 
+							i( 51865),	-- 
+							i( 51861),	-- 
+							i( 51862),	-- 
+							i( 51860),	-- 
+						})),
+						cr(37970, e(1632, {	-- Blood Prince Council
+							i(51857),	-- 
+							i(51858),	-- 
+							i(51852),	-- 
+							i(51847),	-- 
+							i(51848),	-- 
+							i(51851),	-- 
+							i(51853),	-- 
+							i(51854),	-- 
+							i(51856),	-- 
+							i(51850),	-- 
+						})),
+						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
+							i(52027, {	-- Conqueror's Mark of Sanctification; Normal
+								i(51184),	-- Sanctified Crimson Acolyte Cowl
+								i(51178),	-- Sanctified Crimson Acolyte Hood
+								i(51182),	-- Sanctified Crimson Acolyte Mantle
+								i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
+								i(51180),	-- Sanctified Crimson Acolyte Raiments
+								i(51176),	-- Sanctified Crimson Acolyte Robe
+								i(51179),	-- Sanctified Crimson Acolyte Gloves
+								i(51183),	-- Sanctified Crimson Acolyte Handwraps
+								i(51177),	-- Sanctified Crimson Acolyte Leggings
+								i(51181),	-- Sanctified Crimson Acolyte Pants
+								i(51208),	-- Sanctified Dark Coven Hood
+								i(51205),	-- Sanctified Dark Coven Shoulderpads
+								i(51206),	-- Sanctified Dark Coven Robe
+								i(51209),	-- Sanctified Dark Coven Gloves
+								i(51207),	-- Sanctified Dark Coven Leggings
+								i(51173),	-- Sanctified Lightsworn Faceguard
+								i(51167),	-- Sanctified Lightsworn Headpiece
+								i(51162),	-- Sanctified Lightsworn Helmet
+								i(51170),	-- Sanctified Lightsworn Shoulderguards
+								i(51160),	-- Sanctified Lightsworn Shoulderplates
+								i(51166),	-- Sanctified Lightsworn Spaulders
+								i(51164),	-- Sanctified Lightsworn Battleplate
+								i(51174),	-- Sanctified Lightsworn Chestguard
+								i(51165),	-- Sanctified Lightsworn Tunic
+								i(51163),	-- Sanctified Lightsworn Gauntlets
+								i(51169),	-- Sanctified Lightsworn Gloves
+								i(51172),	-- Sanctified Lightsworn Handguards
+								i(51168),	-- Sanctified Lightsworn Greaves
+								i(51171),	-- Sanctified Lightsworn Legguards
+								i(51161),	-- Sanctified Lightsworn Legplates
+							}),
+							i(52026, {	-- Protector's Mark of Sanctifaction; Normal
+								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
+								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
+								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
+								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
+								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
+								i(51197),	-- Sanctified Frost Witch's Faceguard
+								i(51192),	-- Sanctified Frost Witch's Headpiece
+								i(51202),	-- Sanctified Frost Witch's Helm
+								i(51199),	-- Sanctified Frost Witch's Shoulderguards
+								i(51204),	-- Sanctified Frost Witch's Shoulderpads
+								i(51194),	-- Sanctified Frost Witch's Spaulders
+								i(51195),	-- Sanctified Frost Witch's Chestguard
+								i(51200),	-- Sanctified Frost Witch's Hauberk
+								i(51190),	-- Sanctified Frost Witch's Tunic
+								i(51201),	-- Sanctified Frost Witch's Gloves
+								i(51196),	-- Sanctified Frost Witch's Grips
+								i(51191),	-- Sanctified Frost Witch's Handguards
+								i(51203),	-- Sanctified Frost Witch's Kilt
+								i(51193),	-- Sanctified Frost Witch's Legguards
+								i(51198),	-- Sanctified Frost Witch's War-Kilt
+								i(51218),	-- Sanctified Ymirjar Lord's Greathelm
+								i(51212),	-- Sanctified Ymirjar Lord's Helmet
+								i(51215),	-- Sanctified Ymirjar Lord's Pauldrons
+								i(51210),	-- Sanctified Ymirjar Lord's Shoulderplates
+								i(51214),	-- Sanctified Ymirjar Lord's Battleplate
+								i(51219),	-- Sanctified Ymirjar Lord's Breastplate
+								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
+								i(51217),	-- Sanctified Ymirjar Lord's Handguards
+								i(51216),	-- Sanctified Ymirjar Lord's Legguards
+								i(51211),	-- Sanctified Ymirjar Lord's Legplates
+							}),
+							i(52025, {	-- Vanquisher's Mark of Sanctification; Normal
+								i(51158),	-- Sanctified Bloodmage Hood
+								i(51155),	-- Sanctified Bloodmage Shoulderpads
+								i(51156),	-- Sanctified Bloodmage Robe
+								i(51159),	-- Sanctified Bloodmage Gloves
+								i(51157),	-- Sanctified Bloodmage Leggings
+								i(51149),	-- Sanctified Lasherweave Cover
+								i(51143),	-- Sanctified Lasherweave Headguard
+								i(51137),	-- Sanctified Lasherweave Helmet
+								i(51147),	-- Sanctified Lasherweave Mantle
+								i(51135),	-- Sanctified Lasherweave Pauldrons
+								i(51140),	-- Sanctified Lasherweave Shoulderpads
+								i(51141),	-- Sanctified Lasherweave Raiment
+								i(51139),	-- Sanctified Lasherweave Robes
+								i(51145),	-- Sanctified Lasherweave Vestment
+								i(51138),	-- Sanctified Lasherweave Gauntlets
+								i(51148),	-- Sanctified Lasherweave Gloves
+								i(51144),	-- Sanctified Lasherweave Handgrips
+								i(51142),	-- Sanctified Lasherweave Legguards
+								i(51136),	-- Sanctified Lasherweave Legplates
+								i(51146),	-- Sanctified Lasherweave Trousers
+								i(51187),	-- Sanctified Shadowblade Helmet
+								i(51185),	-- Sanctified Shadowblade Pauldrons
+								i(51189),	-- Sanctified Shadowblade Breastplate
+								i(51188),	-- Sanctified Shadowblade Gauntlets
+								i(51186),	-- Sanctified Shadowblade Legplates
+								i(51133),	-- Sanctified Scourgelord Faceguard
+								i(51127),	-- Sanctified Scourgelord Helmet
+								i(51130),	-- Sanctified Scourgelord Pauldrons
+								i(51125),	-- Sanctified Scourgelord Shoulderplates
+								i(51129),	-- Sanctified Scourgelord Battleplate
+								i(51134),	-- Sanctified Scourgelord Chestguard
+								i(51128),	-- Sanctified Scourgelord Gauntlets
+								i(51132),	-- Sanctified Scourgelord Handguards
+								i(51131),	-- Sanctified Scourgelord Legguards
+								i(51126),	-- Sanctified Scourgelord Legplates
+							}),
+							i(51846),	-- 
+							i(51838),	-- 
+							i(51845),	-- 
+							i(51837),	-- 
+							i(51839),	-- 
+							i(51840),	-- 
+							i(51835),	-- 
+							i(51844),	-- 
+							i(51836),	-- 
+							i(51841),	-- 
+						})),
+						cr(36789, e(1634, {	-- Valithria Dreamwalker
+							i(51828),	-- 
+							i(51833),	-- 
+							i(51834),	-- 
+							i(51825),	-- 
+							i(51824),	-- 
+							i(51830),	-- 
+							i(51826),	-- 
+							i(51832),	-- 
+							i(51827),	-- 
+							i(51831),	-- 
+							i(51829),	-- 
+							i(51823),	-- 
+						})),
+						cr(36853, e(1635, {	-- Sindragosa
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
+								i(51184),	-- Sanctified Crimson Acolyte Cowl
+								i(51178),	-- Sanctified Crimson Acolyte Hood
+								i(51182),	-- Sanctified Crimson Acolyte Mantle
+								i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
+								i(51180),	-- Sanctified Crimson Acolyte Raiments
+								i(51176),	-- Sanctified Crimson Acolyte Robe
+								i(51179),	-- Sanctified Crimson Acolyte Gloves
+								i(51183),	-- Sanctified Crimson Acolyte Handwraps
+								i(51177),	-- Sanctified Crimson Acolyte Leggings
+								i(51181),	-- Sanctified Crimson Acolyte Pants
+								i(51208),	-- Sanctified Dark Coven Hood
+								i(51205),	-- Sanctified Dark Coven Shoulderpads
+								i(51206),	-- Sanctified Dark Coven Robe
+								i(51209),	-- Sanctified Dark Coven Gloves
+								i(51207),	-- Sanctified Dark Coven Leggings
+								i(51173),	-- Sanctified Lightsworn Faceguard
+								i(51167),	-- Sanctified Lightsworn Headpiece
+								i(51162),	-- Sanctified Lightsworn Helmet
+								i(51170),	-- Sanctified Lightsworn Shoulderguards
+								i(51160),	-- Sanctified Lightsworn Shoulderplates
+								i(51166),	-- Sanctified Lightsworn Spaulders
+								i(51164),	-- Sanctified Lightsworn Battleplate
+								i(51174),	-- Sanctified Lightsworn Chestguard
+								i(51165),	-- Sanctified Lightsworn Tunic
+								i(51163),	-- Sanctified Lightsworn Gauntlets
+								i(51169),	-- Sanctified Lightsworn Gloves
+								i(51172),	-- Sanctified Lightsworn Handguards
+								i(51168),	-- Sanctified Lightsworn Greaves
+								i(51171),	-- Sanctified Lightsworn Legguards
+								i(51161),	-- Sanctified Lightsworn Legplates
+							}),
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
+								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
+								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
+								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
+								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
+								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
+								i(51197),	-- Sanctified Frost Witch's Faceguard
+								i(51192),	-- Sanctified Frost Witch's Headpiece
+								i(51202),	-- Sanctified Frost Witch's Helm
+								i(51199),	-- Sanctified Frost Witch's Shoulderguards
+								i(51204),	-- Sanctified Frost Witch's Shoulderpads
+								i(51194),	-- Sanctified Frost Witch's Spaulders
+								i(51195),	-- Sanctified Frost Witch's Chestguard
+								i(51200),	-- Sanctified Frost Witch's Hauberk
+								i(51190),	-- Sanctified Frost Witch's Tunic
+								i(51201),	-- Sanctified Frost Witch's Gloves
+								i(51196),	-- Sanctified Frost Witch's Grips
+								i(51191),	-- Sanctified Frost Witch's Handguards
+								i(51203),	-- Sanctified Frost Witch's Kilt
+								i(51193),	-- Sanctified Frost Witch's Legguards
+								i(51198),	-- Sanctified Frost Witch's War-Kilt
+								i(51218),	-- Sanctified Ymirjar Lord's Greathelm
+								i(51212),	-- Sanctified Ymirjar Lord's Helmet
+								i(51215),	-- Sanctified Ymirjar Lord's Pauldrons
+								i(51210),	-- Sanctified Ymirjar Lord's Shoulderplates
+								i(51214),	-- Sanctified Ymirjar Lord's Battleplate
+								i(51219),	-- Sanctified Ymirjar Lord's Breastplate
+								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
+								i(51217),	-- Sanctified Ymirjar Lord's Handguards
+								i(51216),	-- Sanctified Ymirjar Lord's Legguards
+								i(51211),	-- Sanctified Ymirjar Lord's Legplates
+							}),
+							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
+								i(51158),	-- Sanctified Bloodmage Hood
+								i(51155),	-- Sanctified Bloodmage Shoulderpads
+								i(51156),	-- Sanctified Bloodmage Robe
+								i(51159),	-- Sanctified Bloodmage Gloves
+								i(51157),	-- Sanctified Bloodmage Leggings
+								i(51149),	-- Sanctified Lasherweave Cover
+								i(51143),	-- Sanctified Lasherweave Headguard
+								i(51137),	-- Sanctified Lasherweave Helmet
+								i(51147),	-- Sanctified Lasherweave Mantle
+								i(51135),	-- Sanctified Lasherweave Pauldrons
+								i(51140),	-- Sanctified Lasherweave Shoulderpads
+								i(51141),	-- Sanctified Lasherweave Raiment
+								i(51139),	-- Sanctified Lasherweave Robes
+								i(51145),	-- Sanctified Lasherweave Vestment
+								i(51138),	-- Sanctified Lasherweave Gauntlets
+								i(51148),	-- Sanctified Lasherweave Gloves
+								i(51144),	-- Sanctified Lasherweave Handgrips
+								i(51142),	-- Sanctified Lasherweave Legguards
+								i(51136),	-- Sanctified Lasherweave Legplates
+								i(51146),	-- Sanctified Lasherweave Trousers
+								i(51187),	-- Sanctified Shadowblade Helmet
+								i(51185),	-- Sanctified Shadowblade Pauldrons
+								i(51189),	-- Sanctified Shadowblade Breastplate
+								i(51188),	-- Sanctified Shadowblade Gauntlets
+								i(51186),	-- Sanctified Shadowblade Legplates
+								i(51133),	-- Sanctified Scourgelord Faceguard
+								i(51127),	-- Sanctified Scourgelord Helmet
+								i(51130),	-- Sanctified Scourgelord Pauldrons
+								i(51125),	-- Sanctified Scourgelord Shoulderplates
+								i(51129),	-- Sanctified Scourgelord Battleplate
+								i(51134),	-- Sanctified Scourgelord Chestguard
+								i(51128),	-- Sanctified Scourgelord Gauntlets
+								i(51132),	-- Sanctified Scourgelord Handguards
+								i(51131),	-- Sanctified Scourgelord Legguards
+								i(51126),	-- Sanctified Scourgelord Legplates
+							}),
+							i( 51819),	-- 
+							i( 51815),	-- 
+							i( 51812),	-- 
+							i( 51811),	-- 
+							i( 51813),	-- 
+							i( 51820),	-- 
+							i( 51814),	-- 
+							i( 51821),	-- 
+							i( 51817),	-- 
+							i( 51816),	-- 
+							i( 51818),	-- 
+						})),
+						cr(36597, e(1636, {	-- The Lich King
+							i(52027, {	-- Conqueror's Mark of Sanctification; Normal
+								i(51184),	-- Sanctified Crimson Acolyte Cowl
+								i(51178),	-- Sanctified Crimson Acolyte Hood
+								i(51182),	-- Sanctified Crimson Acolyte Mantle
+								i(51175),	-- Sanctified Crimson Acolyte Shoulderpads
+								i(51180),	-- Sanctified Crimson Acolyte Raiments
+								i(51176),	-- Sanctified Crimson Acolyte Robe
+								i(51179),	-- Sanctified Crimson Acolyte Gloves
+								i(51183),	-- Sanctified Crimson Acolyte Handwraps
+								i(51177),	-- Sanctified Crimson Acolyte Leggings
+								i(51181),	-- Sanctified Crimson Acolyte Pants
+								i(51208),	-- Sanctified Dark Coven Hood
+								i(51205),	-- Sanctified Dark Coven Shoulderpads
+								i(51206),	-- Sanctified Dark Coven Robe
+								i(51209),	-- Sanctified Dark Coven Gloves
+								i(51207),	-- Sanctified Dark Coven Leggings
+								i(51173),	-- Sanctified Lightsworn Faceguard
+								i(51167),	-- Sanctified Lightsworn Headpiece
+								i(51162),	-- Sanctified Lightsworn Helmet
+								i(51170),	-- Sanctified Lightsworn Shoulderguards
+								i(51160),	-- Sanctified Lightsworn Shoulderplates
+								i(51166),	-- Sanctified Lightsworn Spaulders
+								i(51164),	-- Sanctified Lightsworn Battleplate
+								i(51174),	-- Sanctified Lightsworn Chestguard
+								i(51165),	-- Sanctified Lightsworn Tunic
+								i(51163),	-- Sanctified Lightsworn Gauntlets
+								i(51169),	-- Sanctified Lightsworn Gloves
+								i(51172),	-- Sanctified Lightsworn Handguards
+								i(51168),	-- Sanctified Lightsworn Greaves
+								i(51171),	-- Sanctified Lightsworn Legguards
+								i(51161),	-- Sanctified Lightsworn Legplates
+							}),
+							i(138955),	-- Illusion: Rune of Razorice
+							i(52026, {	-- Protector's Mark of Sanctifaction; Normal
+								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
+								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
+								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
+								i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
+								i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
+								i(51197),	-- Sanctified Frost Witch's Faceguard
+								i(51192),	-- Sanctified Frost Witch's Headpiece
+								i(51202),	-- Sanctified Frost Witch's Helm
+								i(51199),	-- Sanctified Frost Witch's Shoulderguards
+								i(51204),	-- Sanctified Frost Witch's Shoulderpads
+								i(51194),	-- Sanctified Frost Witch's Spaulders
+								i(51195),	-- Sanctified Frost Witch's Chestguard
+								i(51200),	-- Sanctified Frost Witch's Hauberk
+								i(51190),	-- Sanctified Frost Witch's Tunic
+								i(51201),	-- Sanctified Frost Witch's Gloves
+								i(51196),	-- Sanctified Frost Witch's Grips
+								i(51191),	-- Sanctified Frost Witch's Handguards
+								i(51203),	-- Sanctified Frost Witch's Kilt
+								i(51193),	-- Sanctified Frost Witch's Legguards
+								i(51198),	-- Sanctified Frost Witch's War-Kilt
+								i(51218),	-- Sanctified Ymirjar Lord's Greathelm
+								i(51212),	-- Sanctified Ymirjar Lord's Helmet
+								i(51215),	-- Sanctified Ymirjar Lord's Pauldrons
+								i(51210),	-- Sanctified Ymirjar Lord's Shoulderplates
+								i(51214),	-- Sanctified Ymirjar Lord's Battleplate
+								i(51219),	-- Sanctified Ymirjar Lord's Breastplate
+								i(51213),	-- Sanctified Ymirjar Lord's Gauntlets
+								i(51217),	-- Sanctified Ymirjar Lord's Handguards
+								i(51216),	-- Sanctified Ymirjar Lord's Legguards
+								i(51211),	-- Sanctified Ymirjar Lord's Legplates
+							}),
+							i(52025, {	-- Vanquisher's Mark of Sanctification; Normal
+								i(51158),	-- Sanctified Bloodmage Hood
+								i(51155),	-- Sanctified Bloodmage Shoulderpads
+								i(51156),	-- Sanctified Bloodmage Robe
+								i(51159),	-- Sanctified Bloodmage Gloves
+								i(51157),	-- Sanctified Bloodmage Leggings
+								i(51149),	-- Sanctified Lasherweave Cover
+								i(51143),	-- Sanctified Lasherweave Headguard
+								i(51137),	-- Sanctified Lasherweave Helmet
+								i(51147),	-- Sanctified Lasherweave Mantle
+								i(51135),	-- Sanctified Lasherweave Pauldrons
+								i(51140),	-- Sanctified Lasherweave Shoulderpads
+								i(51141),	-- Sanctified Lasherweave Raiment
+								i(51139),	-- Sanctified Lasherweave Robes
+								i(51145),	-- Sanctified Lasherweave Vestment
+								i(51138),	-- Sanctified Lasherweave Gauntlets
+								i(51148),	-- Sanctified Lasherweave Gloves
+								i(51144),	-- Sanctified Lasherweave Handgrips
+								i(51142),	-- Sanctified Lasherweave Legguards
+								i(51136),	-- Sanctified Lasherweave Legplates
+								i(51146),	-- Sanctified Lasherweave Trousers
+								i(51187),	-- Sanctified Shadowblade Helmet
+								i(51185),	-- Sanctified Shadowblade Pauldrons
+								i(51189),	-- Sanctified Shadowblade Breastplate
+								i(51188),	-- Sanctified Shadowblade Gauntlets
+								i(51186),	-- Sanctified Shadowblade Legplates
+								i(51133),	-- Sanctified Scourgelord Faceguard
+								i(51127),	-- Sanctified Scourgelord Helmet
+								i(51130),	-- Sanctified Scourgelord Pauldrons
+								i(51125),	-- Sanctified Scourgelord Shoulderplates
+								i(51129),	-- Sanctified Scourgelord Battleplate
+								i(51134),	-- Sanctified Scourgelord Chestguard
+								i(51128),	-- Sanctified Scourgelord Gauntlets
+								i(51132),	-- Sanctified Scourgelord Handguards
+								i(51131),	-- Sanctified Scourgelord Legguards
+								i(51126),	-- Sanctified Scourgelord Legplates
+							}),
+							i( 51946),	-- 
+							i( 51945),	-- 
+							i( 51943),	-- 
+							i( 51939),	-- 
+							i( 51944),	-- 
+							i( 51942),	-- 
+							i( 51941),	-- 
+							i( 51947),	-- 
+							i( 51940),	-- 
+							i(142099),	-- 
+							i(122229),	-- Music Roll: Invincible
+						})),
+					}),
+					d(  4, {	-- 25 Man Normal
+						n(0, {	-- Zone Drop
 							i(50449),	-- Stiffened Corpse Shoulderpads
 							i(50450),	-- Leggings of Dubious Charms
 							i(50451),	-- Belt of the Lonely Noble
 							i(50444),	-- Rowan's Rifle of Silver Bullets
 						}),
-						cr(36612, e(1624, { -- Lord Marrowgar
-							i(50415),
-							i(49968),
-							i(49976),
-							i(49952),
-							i(49980),
-							i(49951),
-							i(49960),
-							i(49979),
-							i(49978),
-							i(49964),
-							i(49950),
-							i(142094)
+						cr(36612, e(1624, {	-- Lord Marrowgar
+							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i( 50415),	-- 
+							i( 49968),	-- 
+							i( 49976),	-- 
+							i( 49952),	-- 
+							i( 49980),	-- 
+							i( 49951),	-- 
+							i( 49960),	-- 
+							i( 49979),	-- 
+							i( 49978),	-- 
+							i( 49964),	-- 
+							i( 49950),	-- 
 						})),
-						cr(36855, e(1625, { -- Lady Deathwhisper
-							i(49992),
-							i(49982),
-							i(50034),
-							i(49986),
-							i(49987),
-							i(49991),
-							i(49996),
-							i(49994),
-							i(49995),
-							i(49988),
-							i(49993),
-							i(49983)
+						cr(36855, e(1625, {	-- Lady Deathwhisper
+							i(49992),	-- 
+							i(49982),	-- 
+							i(50034),	-- 
+							i(49986),	-- 
+							i(49987),	-- 
+							i(49991),	-- 
+							i(49996),	-- 
+							i(49994),	-- 
+							i(49995),	-- 
+							i(49988),	-- 
+							i(49993),	-- 
+							i(49983),	-- 
 						})),
-						e(1626, { -- Icecrown Gunship Battle
-							i(50411),
-							i(50006),
-							i(50003),
-							i(49998),
-							i(50001),
-							i(50000),
-							i(50002),
-							i(50011),
-							i(50010),
-							i(50009)
+						e(1626, {	-- Icecrown Gunship Battle
+							i(50411),	-- 
+							i(50006),	-- 
+							i(50003),	-- 
+							i(49998),	-- 
+							i(50001),	-- 
+							i(50000),	-- 
+							i(50002),	-- 
+							i(50011),	-- 
+							i(50010),	-- 
+							i(50009),	-- 
 						}),
-						cr(37813, e(1628, { -- Deathbringer Saurfang
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
+						cr(37813, e(1628, {	-- Deathbringer Saurfang
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
 								i(51184),	-- Sanctified Crimson Acolyte Cowl
 								i(51178),	-- Sanctified Crimson Acolyte Hood
 								i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -2216,7 +2241,7 @@ _.Instances =
 								i(51171),	-- Sanctified Lightsworn Legguards
 								i(51161),	-- Sanctified Lightsworn Legplates
 							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
 								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -2248,7 +2273,8 @@ _.Instances =
 								i(51216),	-- Sanctified Ymirjar Lord's Legguards
 								i(51211),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
+							i(142095),	-- Remains of a Blood Beast (PET!)
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
 								i(51158),	-- Sanctified Bloodmage Hood
 								i(51155),	-- Sanctified Bloodmage Shoulderpads
 								i(51156),	-- Sanctified Bloodmage Robe
@@ -2285,47 +2311,46 @@ _.Instances =
 								i(51131),	-- Sanctified Scourgelord Legguards
 								i(51126),	-- Sanctified Scourgelord Legplates
 							}),
-							i(50412),
-							i(50014),
-							i(50333),
-							i(50015),
-							i(142095)
+							i( 50412),	-- 
+							i( 50014),	-- 
+							i( 50333),	-- 
+							i( 50015),	-- 
 						})),
 						n(37217, {	-- Precious
-							dr(12, i(52019))	-- Precious' Ribbon
+							dr(12, i(52019)),	-- Precious' Ribbon
 						}),
-						cr(36626, e(1629, { -- Festergut
-							i(50040),
-							i(50035),
-							i(50060),
-							i(50059),
-							i(50038),
-							i(50037),
-							i(50064),
-							i(50036),
-							i(50063),
-							i(50413),
-							i(50042),
-							i(50041),
-							i(50056),
-							i(50062)
+						cr(36626, e(1629, {	-- Festergut
+							i(50040),	-- 
+							i(50035),	-- 
+							i(50060),	-- 
+							i(50059),	-- 
+							i(50038),	-- 
+							i(50037),	-- 
+							i(50064),	-- 
+							i(50036),	-- 
+							i(50063),	-- 
+							i(50413),	-- 
+							i(50042),	-- 
+							i(50041),	-- 
+							i(50056),	-- 
+							i(50062),	-- 
 						})),
-						cr(36627, e(1630, { -- Rotface
-							i(50016),
-							i(50028),
-							i(50033),
-							i(50026),
-							i(50022),
-							i(50020),
-							i(50019),
-							i(50024),
-							i(50027),
-							i(50030),
-							i(50032),
-							i(50021)
+						cr(36627, e(1630, {	-- Rotface
+							i(50016),	-- 
+							i(50028),	-- 
+							i(50033),	-- 
+							i(50026),	-- 
+							i(50022),	-- 
+							i(50020),	-- 
+							i(50019),	-- 
+							i(50024),	-- 
+							i(50027),	-- 
+							i(50030),	-- 
+							i(50032),	-- 
+							i(50021),	-- 
 						})),
-						cr(36678, e(1631, { -- Professor Putricide
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
+						cr(36678, e(1631, {	-- Professor Putricide
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
 								i(51184),	-- Sanctified Crimson Acolyte Cowl
 								i(51178),	-- Sanctified Crimson Acolyte Hood
 								i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -2357,7 +2382,7 @@ _.Instances =
 								i(51171),	-- Sanctified Lightsworn Legguards
 								i(51161),	-- Sanctified Lightsworn Legplates
 							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
 								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -2389,7 +2414,8 @@ _.Instances =
 								i(51216),	-- Sanctified Ymirjar Lord's Legguards
 								i(51211),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
+							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
 								i(51158),	-- Sanctified Bloodmage Hood
 								i(51155),	-- Sanctified Bloodmage Shoulderpads
 								i(51156),	-- Sanctified Bloodmage Robe
@@ -2426,29 +2452,28 @@ _.Instances =
 								i(51131),	-- Sanctified Scourgelord Legguards
 								i(51126),	-- Sanctified Scourgelord Legplates
 							}),
-							i(50068),
-							i(50179),
-							i(50069),
-							i(50067),
-							i(142096)
+							i( 50068),	-- 
+							i( 50179),	-- 
+							i( 50069),	-- 
+							i( 50067),	-- 
 						})),
-						cr(37970, e(1632, { -- Blood Prince Council
-							i(49919),
-							i(50184),
-							i(50072),
-							i(50073),
-							i(50171),
-							i(50074),
-							i(50172),
-							i(50177),
-							i(50175),
-							i(50075),
-							i(50176),
-							i(50071),
-							i(50173)
+						cr(37970, e(1632, {	-- Blood Prince Council
+							i(49919),	-- 
+							i(50184),	-- 
+							i(50072),	-- 
+							i(50073),	-- 
+							i(50171),	-- 
+							i(50074),	-- 
+							i(50172),	-- 
+							i(50177),	-- 
+							i(50175),	-- 
+							i(50075),	-- 
+							i(50176),	-- 
+							i(50071),	-- 
+							i(50173),	-- 
 						})),
-						cr(37955, e(1633, { -- Blood-Queen Lana'thel
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
+						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
+							i(52027, {	-- Conqueror's Mark of Sanctification; Normal
 								i(51184),	-- Sanctified Crimson Acolyte Cowl
 								i(51178),	-- Sanctified Crimson Acolyte Hood
 								i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -2480,7 +2505,7 @@ _.Instances =
 								i(51171),	-- Sanctified Lightsworn Legguards
 								i(51161),	-- Sanctified Lightsworn Legplates
 							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
+							i(52026, {	-- Protector's Mark of Sanctifaction; Normal
 								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -2512,7 +2537,7 @@ _.Instances =
 								i(51216),	-- Sanctified Ymirjar Lord's Legguards
 								i(51211),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
+							i(52025, {	-- Vanquisher's Mark of Sanctification; Normal
 								i(51158),	-- Sanctified Bloodmage Hood
 								i(51155),	-- Sanctified Bloodmage Shoulderpads
 								i(51156),	-- Sanctified Bloodmage Robe
@@ -2549,27 +2574,27 @@ _.Instances =
 								i(51131),	-- Sanctified Scourgelord Legguards
 								i(51126),	-- Sanctified Scourgelord Legplates
 							}),
-							i(50181),
-							i(50178),
-							i(50065)
+							i(50181),	-- 
+							i(50178),	-- 
+							i(50065),	-- 
 						})),
-						cr(36789, e(1634, { -- Valithria Dreamwalker
-							i(138832),
-							i(50183),
-							i(50472),
-							i(50202),
-							i(50205),
-							i(50418),
-							i(50417),
-							i(50188),
-							i(50187),
-							i(50199),
-							i(50192),
-							i(50416),
-							i(50190)
+						cr(36789, e(1634, {	-- Valithria Dreamwalker
+							i(138832),	-- 
+							i( 50183),	-- 
+							i( 50472),	-- 
+							i( 50202),	-- 
+							i( 50205),	-- 
+							i( 50418),	-- 
+							i( 50417),	-- 
+							i( 50188),	-- 
+							i( 50187),	-- 
+							i( 50199),	-- 
+							i( 50192),	-- 
+							i( 50416),	-- 
+							i( 50190),	-- 
 						})),
-						cr(36853, e(1635, { -- Sindragosa
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
+						cr(36853, e(1635, {	-- Sindragosa
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
 								i(51184),	-- Sanctified Crimson Acolyte Cowl
 								i(51178),	-- Sanctified Crimson Acolyte Hood
 								i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -2601,7 +2626,7 @@ _.Instances =
 								i(51171),	-- Sanctified Lightsworn Legguards
 								i(51161),	-- Sanctified Lightsworn Legplates
 							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
 								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -2633,7 +2658,8 @@ _.Instances =
 								i(51216),	-- Sanctified Ymirjar Lord's Legguards
 								i(51211),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
+							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
 								i(51158),	-- Sanctified Bloodmage Hood
 								i(51155),	-- Sanctified Bloodmage Shoulderpads
 								i(51156),	-- Sanctified Bloodmage Robe
@@ -2670,11 +2696,10 @@ _.Instances =
 								i(51131),	-- Sanctified Scourgelord Legguards
 								i(51126),	-- Sanctified Scourgelord Legplates
 							}),
-							i(50423),
-							i(142097)
+							i( 50423),	-- 
 						})),
-						cr(36597, e(1636, { -- The Lich King
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
+						cr(36597, e(1636, {	-- The Lich King
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
 								i(51184),	-- Sanctified Crimson Acolyte Cowl
 								i(51178),	-- Sanctified Crimson Acolyte Hood
 								i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -2706,7 +2731,9 @@ _.Instances =
 								i(51171),	-- Sanctified Lightsworn Legguards
 								i(51161),	-- Sanctified Lightsworn Legplates
 							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
+							i(142098),	-- Drudge Remains (PET!)
+							i(138955),	-- Illusion: Rune of Razorice
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
 								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -2738,7 +2765,7 @@ _.Instances =
 								i(51216),	-- Sanctified Ymirjar Lord's Legguards
 								i(51211),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
 								i(51158),	-- Sanctified Bloodmage Hood
 								i(51155),	-- Sanctified Bloodmage Shoulderpads
 								i(51156),	-- Sanctified Bloodmage Robe
@@ -2775,69 +2802,67 @@ _.Instances =
 								i(51131),	-- Sanctified Scourgelord Legguards
 								i(51126),	-- Sanctified Scourgelord Legplates
 							}),
-							i(138955),
-							i(50429),
-							i(50070),
-							i(50425),
-							i(50426),
-							i(50427),
-							i(49997),
-							i(50428),
-							i(50012),
-							i(49981),
-							i(142098),
-							i(122229)
-						}))
+							i( 50429),	-- 
+							i( 50070),	-- 
+							i( 50425),	-- 
+							i( 50426),	-- 
+							i( 50427),	-- 
+							i( 49997),	-- 
+							i( 50428),	-- 
+							i( 50012),	-- 
+							i( 49981),	-- 
+							i(122229),	-- Music Roll: Invincible
+						})),
 					}),
-					d(6, { -- 25 Man Heroic
-						n(0, {		-- Zone Drop
+					d(  6, {	-- 25 Man Heroic
+						n(0, {	-- Zone Drop
 							i(50449),	-- Stiffened Corpse Shoulderpads
 							i(50450),	-- Leggings of Dubious Charms
 							i(50451),	-- Belt of the Lonely Noble
 							i(50444),	-- Rowan's Rifle of Silver Bullets
 						}),
-						cr(36612, e(1624, { -- Lord Marrowgar
-							i(50709),
-							i(50608),
-							i(50616),
-							i(50605),
-							i(50617),
-							i(50606),
-							i(50611),
-							i(50615),
-							i(50613),
-							i(50612),
-							i(50607),
-							i(142094)
+						cr(36612, e(1624, {	-- Lord Marrowgar
+							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i( 50709),	-- 
+							i( 50608),	-- 
+							i( 50616),	-- 
+							i( 50605),	-- 
+							i( 50617),	-- 
+							i( 50606),	-- 
+							i( 50611),	-- 
+							i( 50615),	-- 
+							i( 50613),	-- 
+							i( 50612),	-- 
+							i( 50607),	-- 
 						})),
-						cr(36855, e(1625, { -- Lady Deathwhisper
-							i(50648),
-							i(50641),
-							i(50638),
-							i(50640),
-							i(50646),
-							i(50643),
-							i(50649),
-							i(50651),
-							i(50650),
-							i(50645),
-							i(50639),
-							i(50652)
+						cr(36855, e(1625, {	-- Lady Deathwhisper
+							i(50648),	-- 
+							i(50641),	-- 
+							i(50638),	-- 
+							i(50640),	-- 
+							i(50646),	-- 
+							i(50643),	-- 
+							i(50649),	-- 
+							i(50651),	-- 
+							i(50650),	-- 
+							i(50645),	-- 
+							i(50639),	-- 
+							i(50652),	-- 
 						})),
-						e(1626, { -- Icecrown Gunship Battle
-							i(50654),
-							i(50661),
-							i(50660),
-							i(50653),
-							i(50656),
-							i(50659),
-							i(50655),
-							i(50663),
-							i(50667),
-							i(50665)
+						e(1626, {	-- Icecrown Gunship Battle
+							i(50654),	-- 
+							i(50661),	-- 
+							i(50660),	-- 
+							i(50653),	-- 
+							i(50656),	-- 
+							i(50659),	-- 
+							i(50655),	-- 
+							i(50663),	-- 
+							i(50667),	-- 
+							i(50665),	-- 
 						}),
-						cr(37813, e(1628, { -- Deathbringer Saurfang
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
+						cr(37813, e(1628, {	-- Deathbringer Saurfang
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
 								i(51184),	-- Sanctified Crimson Acolyte Cowl
 								i(51178),	-- Sanctified Crimson Acolyte Hood
 								i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -2869,7 +2894,7 @@ _.Instances =
 								i(51171),	-- Sanctified Lightsworn Legguards
 								i(51161),	-- Sanctified Lightsworn Legplates
 							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
 								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -2901,7 +2926,7 @@ _.Instances =
 								i(51216),	-- Sanctified Ymirjar Lord's Legguards
 								i(51211),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
 								i(51158),	-- Sanctified Bloodmage Hood
 								i(51155),	-- Sanctified Bloodmage Shoulderpads
 								i(51156),	-- Sanctified Bloodmage Robe
@@ -2938,7 +2963,7 @@ _.Instances =
 								i(51131),	-- Sanctified Scourgelord Legguards
 								i(51126),	-- Sanctified Scourgelord Legplates
 							}),
-							i(52030, { -- Conqueror's Mark of Sanctification; Heroic
+							i( 52030, {	-- Conqueror's Mark of Sanctification; Heroic
 								i(51255),	-- Sanctified Crimson Acolyte Cowl
 								i(51261),	-- Sanctified Crimson Acolyte Hood
 								i(51257),	-- Sanctified Crimson Acolyte Mantle
@@ -2971,7 +2996,7 @@ _.Instances =
 								i(51278),	-- Sanctified Lightsworn Legplates
 
 							}),
-							i(52029, { -- Protector's Mark of Sanctifaction; Heroic
+							i( 52029, {	-- Protector's Mark of Sanctifaction; Heroic
 								i(51286),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51288),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51289),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -3003,7 +3028,8 @@ _.Instances =
 								i(51223),	-- Sanctified Ymirjar Lord's Legguards
 								i(51228),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52028, { -- Vanquisher's Mark of Sanctification; Heroic
+							i(142095),	-- Remains of a Blood Beast (PET!)
+							i( 52028, {	-- Vanquisher's Mark of Sanctification; Heroic
 								i(51281),	-- Sanctified Bloodmage Hood
 								i(51284),	-- Sanctified Bloodmage Shoulderpads
 								i(51283),	-- Sanctified Bloodmage Robe
@@ -3040,47 +3066,46 @@ _.Instances =
 								i(51308),	-- Sanctified Scourgelord Legguards
 								i(51313),	-- Sanctified Scourgelord Legplates
 							}),
-							i(50672),
-							i(50668),
-							i(50670),
-							i(50671),
-							i(142095)
+							i( 50672),	-- 
+							i( 50668),	-- 
+							i( 50670),	-- 
+							i( 50671),	-- 
 						})),
 						n(37217, {	-- Precious
-							dr(16, i(52019))	-- Precious' Ribbon
+							dr(16, i(52019)),	-- Precious' Ribbon
 						}),
-						cr(36626, e(1629, { -- Festergut
-							i(50695),
-							i(50692),
-							i(50701),
-							i(50698),
-							i(50689),
-							i(50703),
-							i(50690),
-							i(50688),
-							i(50702),
-							i(50691),
-							i(50694),
-							i(50696),
-							i(50697),
-							i(50699)
+						cr(36626, e(1629, {	-- Festergut
+							i(50695),	-- 
+							i(50692),	-- 
+							i(50701),	-- 
+							i(50698),	-- 
+							i(50689),	-- 
+							i(50703),	-- 
+							i(50690),	-- 
+							i(50688),	-- 
+							i(50702),	-- 
+							i(50691),	-- 
+							i(50694),	-- 
+							i(50696),	-- 
+							i(50697),	-- 
+							i(50699),	-- 
 						})),
-						cr(36627, e(1630, { -- Rotface
-							i(50685),
-							i(50676),
-							i(50684),
-							i(50679),
-							i(50674),
-							i(50673),
-							i(50677),
-							i(50681),
-							i(50680),
-							i(50686),
-							i(50687),
-							i(50675)
+						cr(36627, e(1630, {	-- Rotface
+							i(50685),	-- 
+							i(50676),	-- 
+							i(50684),	-- 
+							i(50679),	-- 
+							i(50674),	-- 
+							i(50673),	-- 
+							i(50677),	-- 
+							i(50681),	-- 
+							i(50680),	-- 
+							i(50686),	-- 
+							i(50687),	-- 
+							i(50675),	-- 
 						})),
-						cr(36678, e(1631, { -- Professor Putricide
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
+						cr(36678, e(1631, {	-- Professor Putricide
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
 								i(51184),	-- Sanctified Crimson Acolyte Cowl
 								i(51178),	-- Sanctified Crimson Acolyte Hood
 								i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -3112,7 +3137,7 @@ _.Instances =
 								i(51171),	-- Sanctified Lightsworn Legguards
 								i(51161),	-- Sanctified Lightsworn Legplates
 							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
 								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -3144,7 +3169,7 @@ _.Instances =
 								i(51216),	-- Sanctified Ymirjar Lord's Legguards
 								i(51211),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
 								i(51158),	-- Sanctified Bloodmage Hood
 								i(51155),	-- Sanctified Bloodmage Shoulderpads
 								i(51156),	-- Sanctified Bloodmage Robe
@@ -3181,7 +3206,7 @@ _.Instances =
 								i(51131),	-- Sanctified Scourgelord Legguards
 								i(51126),	-- Sanctified Scourgelord Legplates
 							}),
-							i(52030, { -- Conqueror's Mark of Sanctification; Heroic
+							i( 52030, {	-- Conqueror's Mark of Sanctification; Heroic
 								i(51255),	-- Sanctified Crimson Acolyte Cowl
 								i(51261),	-- Sanctified Crimson Acolyte Hood
 								i(51257),	-- Sanctified Crimson Acolyte Mantle
@@ -3214,7 +3239,7 @@ _.Instances =
 								i(51278),	-- Sanctified Lightsworn Legplates
 
 							}),
-							i(52029, { -- Protector's Mark of Sanctifaction; Heroic
+							i( 52029, {	-- Protector's Mark of Sanctifaction; Heroic
 								i(51286),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51288),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51289),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -3246,7 +3271,8 @@ _.Instances =
 								i(51223),	-- Sanctified Ymirjar Lord's Legguards
 								i(51228),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52028, { -- Vanquisher's Mark of Sanctification; Heroic
+							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i( 52028, {	-- Vanquisher's Mark of Sanctification; Heroic
 								i(51281),	-- Sanctified Bloodmage Hood
 								i(51284),	-- Sanctified Bloodmage Shoulderpads
 								i(51283),	-- Sanctified Bloodmage Robe
@@ -3283,29 +3309,28 @@ _.Instances =
 								i(51308),	-- Sanctified Scourgelord Legguards
 								i(51313),	-- Sanctified Scourgelord Legplates
 							}),
-							i(50708),
-							i(50704),
-							i(50705),
-							i(50707),
-							i(142096)
+							i( 50708),	-- 
+							i( 50704),	-- 
+							i( 50705),	-- 
+							i( 50707),	-- 
 						})),
-						cr(37970, e(1632, { -- Blood Prince Council
-							i(50603),
-							i(50710),
-							i(50719),
-							i(50712),
-							i(50713),
-							i(50715),
-							i(50718),
-							i(50723),
-							i(50717),
-							i(50721),
-							i(50716),
-							i(50722),
-							i(50711)
+						cr(37970, e(1632, {	-- Blood Prince Council
+							i(50603),	-- 
+							i(50710),	-- 
+							i(50719),	-- 
+							i(50712),	-- 
+							i(50713),	-- 
+							i(50715),	-- 
+							i(50718),	-- 
+							i(50723),	-- 
+							i(50717),	-- 
+							i(50721),	-- 
+							i(50716),	-- 
+							i(50722),	-- 
+							i(50711),	-- 
 						})),
-						cr(37955, e(1633, { -- Blood-Queen Lana'thel
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
+						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
+							i(52027, {	-- Conqueror's Mark of Sanctification; Normal
 								i(51184),	-- Sanctified Crimson Acolyte Cowl
 								i(51178),	-- Sanctified Crimson Acolyte Hood
 								i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -3337,7 +3362,7 @@ _.Instances =
 								i(51171),	-- Sanctified Lightsworn Legguards
 								i(51161),	-- Sanctified Lightsworn Legplates
 							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
+							i(52026, {	-- Protector's Mark of Sanctifaction; Normal
 								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -3369,7 +3394,7 @@ _.Instances =
 								i(51216),	-- Sanctified Ymirjar Lord's Legguards
 								i(51211),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
+							i(52025, {	-- Vanquisher's Mark of Sanctification; Normal
 								i(51158),	-- Sanctified Bloodmage Hood
 								i(51155),	-- Sanctified Bloodmage Shoulderpads
 								i(51156),	-- Sanctified Bloodmage Robe
@@ -3406,7 +3431,7 @@ _.Instances =
 								i(51131),	-- Sanctified Scourgelord Legguards
 								i(51126),	-- Sanctified Scourgelord Legplates
 							}),
-							i(52030, { -- Conqueror's Mark of Sanctification; Heroic
+							i(52030, {	-- Conqueror's Mark of Sanctification; Heroic
 								i(51255),	-- Sanctified Crimson Acolyte Cowl
 								i(51261),	-- Sanctified Crimson Acolyte Hood
 								i(51257),	-- Sanctified Crimson Acolyte Mantle
@@ -3439,7 +3464,7 @@ _.Instances =
 								i(51278),	-- Sanctified Lightsworn Legplates
 
 							}),
-							i(52029, { -- Protector's Mark of Sanctifaction; Heroic
+							i(52029, {	-- Protector's Mark of Sanctifaction; Heroic
 								i(51286),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51288),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51289),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -3471,7 +3496,7 @@ _.Instances =
 								i(51223),	-- Sanctified Ymirjar Lord's Legguards
 								i(51228),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52028, { -- Vanquisher's Mark of Sanctification; Heroic
+							i(52028, {	-- Vanquisher's Mark of Sanctification; Heroic
 								i(51281),	-- Sanctified Bloodmage Hood
 								i(51284),	-- Sanctified Bloodmage Shoulderpads
 								i(51283),	-- Sanctified Bloodmage Robe
@@ -3508,27 +3533,27 @@ _.Instances =
 								i(51308),	-- Sanctified Scourgelord Legguards
 								i(51313),	-- Sanctified Scourgelord Legplates
 							}),
-							i(50725),
-							i(50727),
-							i(50729)
+							i(50725),	-- 
+							i(50727),	-- 
+							i(50729),	-- 
 						})),
-						cr(36789, e(1634, { -- Valithria Dreamwalker
-							i(138832),
-							i(50621),
-							i(50631),
-							i(50626),
-							i(50628),
-							i(50629),
-							i(50630),
-							i(50619),
-							i(50620),
-							i(50623),
-							i(50624),
-							i(50625),
-							i(50632)
+						cr(36789, e(1634, {	-- Valithria Dreamwalker
+							i(138832),	-- 
+							i( 50621),	-- 
+							i( 50631),	-- 
+							i( 50626),	-- 
+							i( 50628),	-- 
+							i( 50629),	-- 
+							i( 50630),	-- 
+							i( 50619),	-- 
+							i( 50620),	-- 
+							i( 50623),	-- 
+							i( 50624),	-- 
+							i( 50625),	-- 
+							i( 50632),	-- 
 						})),
-						cr(36853, e(1635, { -- Sindragosa
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
+						cr(36853, e(1635, {	-- Sindragosa
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
 								i(51184),	-- Sanctified Crimson Acolyte Cowl
 								i(51178),	-- Sanctified Crimson Acolyte Hood
 								i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -3560,7 +3585,7 @@ _.Instances =
 								i(51171),	-- Sanctified Lightsworn Legguards
 								i(51161),	-- Sanctified Lightsworn Legplates
 							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
 								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -3592,7 +3617,7 @@ _.Instances =
 								i(51216),	-- Sanctified Ymirjar Lord's Legguards
 								i(51211),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
 								i(51158),	-- Sanctified Bloodmage Hood
 								i(51155),	-- Sanctified Bloodmage Shoulderpads
 								i(51156),	-- Sanctified Bloodmage Robe
@@ -3629,7 +3654,7 @@ _.Instances =
 								i(51131),	-- Sanctified Scourgelord Legguards
 								i(51126),	-- Sanctified Scourgelord Legplates
 							}),
-							i(52030, { -- Conqueror's Mark of Sanctification; Heroic
+							i( 52030, {	-- Conqueror's Mark of Sanctification; Heroic
 								i(51255),	-- Sanctified Crimson Acolyte Cowl
 								i(51261),	-- Sanctified Crimson Acolyte Hood
 								i(51257),	-- Sanctified Crimson Acolyte Mantle
@@ -3662,7 +3687,7 @@ _.Instances =
 								i(51278),	-- Sanctified Lightsworn Legplates
 
 							}),
-							i(52029, { -- Protector's Mark of Sanctifaction; Heroic
+							i( 52029, {	-- Protector's Mark of Sanctifaction; Heroic
 								i(51286),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51288),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51289),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -3694,7 +3719,8 @@ _.Instances =
 								i(51223),	-- Sanctified Ymirjar Lord's Legguards
 								i(51228),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52028, { -- Vanquisher's Mark of Sanctification; Heroic
+							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i( 52028, {	-- Vanquisher's Mark of Sanctification; Heroic
 								i(51281),	-- Sanctified Bloodmage Hood
 								i(51284),	-- Sanctified Bloodmage Shoulderpads
 								i(51283),	-- Sanctified Bloodmage Robe
@@ -3731,11 +3757,10 @@ _.Instances =
 								i(51308),	-- Sanctified Scourgelord Legguards
 								i(51313),	-- Sanctified Scourgelord Legplates
 							}),
-							i(50635),
-							i(142097)
+							i( 50635),	-- 
 						})),
-						cr(36597, e(1636, { -- The Lich King
-							i(52027, { -- Conqueror's Mark of Sanctification; Normal
+						cr(36597, e(1636, {	-- The Lich King
+							i( 52027, {	-- Conqueror's Mark of Sanctification; Normal
 								i(51184),	-- Sanctified Crimson Acolyte Cowl
 								i(51178),	-- Sanctified Crimson Acolyte Hood
 								i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -3767,7 +3792,8 @@ _.Instances =
 								i(51171),	-- Sanctified Lightsworn Legguards
 								i(51161),	-- Sanctified Lightsworn Legplates
 							}),
-							i(52026, { -- Protector's Mark of Sanctifaction; Normal
+							i(138955),	-- Illusion: Rune of Razorice
+							i( 52026, {	-- Protector's Mark of Sanctifaction; Normal
 								i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -3799,7 +3825,7 @@ _.Instances =
 								i(51216),	-- Sanctified Ymirjar Lord's Legguards
 								i(51211),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52025, { -- Vanquisher's Mark of Sanctification; Normal
+							i( 52025, {	-- Vanquisher's Mark of Sanctification; Normal
 								i(51158),	-- Sanctified Bloodmage Hood
 								i(51155),	-- Sanctified Bloodmage Shoulderpads
 								i(51156),	-- Sanctified Bloodmage Robe
@@ -3836,7 +3862,7 @@ _.Instances =
 								i(51131),	-- Sanctified Scourgelord Legguards
 								i(51126),	-- Sanctified Scourgelord Legplates
 							}),
-							i(52030, { -- Conqueror's Mark of Sanctification; Heroic
+							i( 52030, {	-- Conqueror's Mark of Sanctification; Heroic
 								i(51255),	-- Sanctified Crimson Acolyte Cowl
 								i(51261),	-- Sanctified Crimson Acolyte Hood
 								i(51257),	-- Sanctified Crimson Acolyte Mantle
@@ -3869,7 +3895,7 @@ _.Instances =
 								i(51278),	-- Sanctified Lightsworn Legplates
 
 							}),
-							i(52029, { -- Protector's Mark of Sanctifaction; Heroic
+							i( 52029, {	-- Protector's Mark of Sanctifaction; Heroic
 								i(51286),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 								i(51288),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 								i(51289),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -3901,7 +3927,7 @@ _.Instances =
 								i(51223),	-- Sanctified Ymirjar Lord's Legguards
 								i(51228),	-- Sanctified Ymirjar Lord's Legplates
 							}),
-							i(52028, { -- Vanquisher's Mark of Sanctification; Heroic
+							i( 52028, {	-- Vanquisher's Mark of Sanctification; Heroic
 								i(51281),	-- Sanctified Bloodmage Hood
 								i(51284),	-- Sanctified Bloodmage Shoulderpads
 								i(51283),	-- Sanctified Bloodmage Robe
@@ -3938,21 +3964,20 @@ _.Instances =
 								i(51308),	-- Sanctified Scourgelord Legguards
 								i(51313),	-- Sanctified Scourgelord Legplates
 							}),
-							i(138955),
-							i(50730),
-							i(50735),
-							i(50731),
-							i(50732),
-							i(50738),
-							i(50736),
-							i(50737),
-							i(50734),
-							i(50733),
-							i(50818),
-							i(142099),
-							i(122229)
-						}))
-					})
+							i( 50730),	-- 
+							i( 50735),	-- 
+							i( 50731),	-- 
+							i( 50732),	-- 
+							i( 50738),	-- 
+							i( 50736),	-- 
+							i( 50737),	-- 
+							i( 50734),	-- 
+							i( 50733),	-- 
+							i( 50818),	-- 
+							i(142099),	-- 
+							i(122229),	-- Music Roll: Invincible
+						})),
+					}),
 				},
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
