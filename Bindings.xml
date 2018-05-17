@@ -8,6 +8,9 @@
 	<Binding name="ALLTHETHINGS_OPENPROFESSIONMINILIST" category="ADDONS">
 		AllTheThings.OpenMiniListForCurrentProfession();
 	</Binding>
+	<Binding name="ALLTHETHINGS_OPEN_RAID_ASSISTANT" category="ADDONS">
+		AllTheThings:GetWindow("RaidAssistant"):Show();
+	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" category="ADDONS">
 		AllTheThings.ToggleMainList();
 	</Binding>
@@ -19,5 +22,8 @@
 	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLEDEBUGMODE" category="ADDONS">
 		AllTheThings.ToggleDebugMode();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLE_RAID_ASSISTANT" category="ADDONS">
+		AllTheThings:GetWindow("RaidAssistant"):Toggle();
 	</Binding>
 </Bindings>

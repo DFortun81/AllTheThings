@@ -21,12 +21,14 @@ AllTheThings.Locales.enUS = {
 	-- Minimap Icon Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click + drag to move.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
 	["OPEN_MAINLIST"] = "Open Main List";
-	["TOGGLE_MAINLIST"] = "Toggle Main List";
 	["OPEN_MINILIST"] = "Open Mini List";
 	["OPEN_PROFESSIONMINILIST"] = "Open Profession Mini List";
-	["TOGGLE_MINILIST"] = "Toggle Mini List";
+	["OPEN_RAID_ASSISTANT"] = "Open Raid Assistant";
 	["TOGGLE_COMPLETIONIST_MODE"] = "Toggle Completionist Mode";
 	["TOGGLE_DEBUG_MODE"] = "Toggle Debug Mode";
+	["TOGGLE_MAINLIST"] = "Toggle Main List";
+	["TOGGLE_MINILIST"] = "Toggle Mini List";
+	["TOGGLE_RAID_ASSISTANT"] = "Toggle Raid Assistant";
 
 	-- Frame Text
 	["LIST_FRAME_TITLE"] = "ITEM COLLECTION";

@@ -400,7 +400,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,other)
 	
 	local otherFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-otherFrame", child, "ThinBorderTemplate");
-	otherFrame:SetSize(child:GetWidth(),90)
+	otherFrame:SetSize(child:GetWidth(),110)
 	otherFrame:SetPoint("TOPLEFT",other,0,-frameSpacer);
 	addObject(elm,otherFrame)
 	
@@ -441,7 +441,7 @@ local function createGeneralFrame(parent)
 			GameTooltip:Show();
 		end);
 	autoMinilist:SetPoint("TOPLEFT",minimapButton,0,-frameSpacer)
-	addObject(elm,autoMinilist)	
+	addObject(elm,autoMinilist)
 	
 	-- show profession mini list auto
 	local autoProfessionMinilist = createCheckBox("Show the Profession Mini List Automatically", child, function(self)
@@ -464,6 +464,24 @@ local function createGeneralFrame(parent)
 	autoProfessionMinilist.Label:SetWidth(autoProfessionMinilist.Label:GetWidth() * 1.5);
 	addObject(elm,autoProfessionMinilist)
 	
+	-- show raid assistant auto
+	local autoRaidAssistant = createCheckBox("Show the Raid Assistant Automatically", child, function(self)
+			app.SetDataMember("AutoRaidAssistant", self:GetChecked());
+			if self:GetChecked() then
+				app:GetWindow("RaidAssistant"):Show();
+			end
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("AutoRaidAssistant", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nDrag the window and rescale it where you want it to appear.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	autoRaidAssistant:SetPoint("TOPLEFT",autoProfessionMinilist,0,-frameSpacer)
+	addObject(elm,autoRaidAssistant)
+	
 	-- auto minimize when not applicable 
 	local autoMin = createCheckBox("Automatically Minimize Inactive Difficulties in Mini Lists", child, function(self)
 			app.SetDataMember("AutoMinimize", self:GetChecked());
@@ -476,7 +494,7 @@ local function createGeneralFrame(parent)
 			GameTooltip:SetText ("Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	autoMin:SetPoint("TOPLEFT",autoProfessionMinilist,0,-frameSpacer)
+	autoMin:SetPoint("TOPLEFT",autoRaidAssistant,0,-frameSpacer)
 	autoMin.Label:SetWidth(autoMin.Label:GetWidth() * 1.5);
 	addObject(elm,autoMin)
 end
