@@ -7068,6 +7068,8 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		ToggleMainList();
 	elseif cmd == "mini" or cmd == "minilist" then
 		ToggleMiniListForCurrentZone();
+	elseif cmd == "ra" then
+		app:GetWindow("RaidAssistant"):Toggle();
 	elseif string.sub(cmd,1,string.len("load "))=="load " then
 		app.Settings:profileLoad(string.sub(cmd,string.len("load ")))
 	elseif cmd == "load" or cmd =="load " then	
@@ -7106,6 +7108,10 @@ SlashCmdList["AllTheThingsNote"] = function(cmd)
 	print("|cff15abff/attnote|r |cffff9333<note>|r - Write a note for the current map.");
 end
 
+SLASH_AllTheThingsRA1 = "/attra";
+SlashCmdList["AllTheThingsRA"] = function(cmd)
+	app:GetWindow("RaidAssistant"):Toggle();
+end
 
 -- Register Events required at the start
 app:RegisterEvent("BOSS_KILL");
@@ -8171,6 +8177,8 @@ app.events.VARIABLES_LOADED = function()
 	BINDING_NAME_ALLTHETHINGS_TOGGLEMINILIST = L("TOGGLE_MINILIST");
 	BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETIONISTMODE = L("TOGGLE_COMPLETIONIST_MODE");
 	BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L("TOGGLE_DEBUG_MODE");
+	BINDING_NAME_ALLTHETHINGS_OPEN_RAID_ASSISTANT = L("OPEN_RAID_ASSISTANT");
+	BINDING_NAME_ALLTHETHINGS_TOGGLE_RAID_ASSISTANT = L("TOGGLE_RAID_ASSISTANT");
 	
 	-- Cache information about the player.
 	local _, class, classIndex = UnitClass("player");
