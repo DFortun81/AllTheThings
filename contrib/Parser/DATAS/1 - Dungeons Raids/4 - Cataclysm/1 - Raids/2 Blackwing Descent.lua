@@ -8,6 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(73, { 	-- Blackwing Descent
 				["groups"] = {
+					ach(4842),	-- Blackwing Descent
 					n(0, {		-- Zone Drop
 						i(59466),	-- Ironstar's Impenetrable Cover
 						i(59468),	-- Shadowforge's Lightbound Smock
@@ -26,6 +27,7 @@ _.Instances =
 						["groups"] = {
 							e(170, { -- Magmaw
 								["groups"] = {
+									ach(5306),	-- Parasite Evening
 									i(59492),
 									i(59333),
 									i(59328),
@@ -42,6 +44,7 @@ _.Instances =
 							}),
 							e(169, { -- Omnotron Defense System
 								["groups"] = {
+									ach(5307),	-- Achieve-a-tron
 									i(152966), -- Rought-Hewn Remote Pet
 									i(59118),
 									i(59117),
@@ -58,6 +61,7 @@ _.Instances =
 							}),
 							e(173, { -- Maloriak
 								["groups"] = {
+									ach(5310),	-- Aberrant Behavior
 									i(152967), -- Experiment-In-A-Jar Pet
 									i(59347),
 									i(59344),
@@ -75,6 +79,7 @@ _.Instances =
 							}),
 							e(171, { -- Atramedes
 								["groups"] = {
+									ach(5308),	-- Silence is Golden
 									i(59316),
 									i(59317),
 									i(59318),
@@ -90,6 +95,7 @@ _.Instances =
 							}),
 							e(172, { -- Chimaeron
 								["groups"] = {
+									ach(5309),	-- Full of Sound and Fury
 									i(59225),
 									i(59221),
 									i(59223),
@@ -105,6 +111,7 @@ _.Instances =
 							}),
 							e(174, { -- Nefarian's End
 								["groups"] = {
+									ach(4849),	-- Keeping it in the Family
 									i(152968), -- Shadowy Pile of Bones
 									i(138802),
 									i(63679),
@@ -154,6 +161,8 @@ _.Instances =
 						["groups"] = {
 							e(170, { -- Magmaw
 								["groups"] = {
+									ach(5094),	-- Heroic: Magmaw
+									ach(5306),	-- Parasite Evening
 									i(65007),
 									i(65047),
 									i(65041),
@@ -195,6 +204,8 @@ _.Instances =
 							}),
 							e(169, { -- Omintron Defense
 								["groups"] = {
+									ach(5107),	-- Heroic: Omnotron Defense System
+									ach(5307),	-- Achieve-a-tron
 									i(152966), -- Rought-Hewn Remote Pet
 									i(65081),
 									i(65077),
@@ -211,6 +222,8 @@ _.Instances =
 							}),
 							e(173, { -- Maloriak
 								["groups"] = {
+									ach(5108),	-- Heroic: Maloriak
+									ach(5310),	-- Aberrant Behavior									
 									i(152967), -- Experiment-In-A-Jar Pet
 									i(65036),
 									i(65038),
@@ -253,6 +266,8 @@ _.Instances =
 							}),
 							e(171, { -- Atramedes
 								["groups"] = {
+									ach(5109),	-- Heroic: Atramedes
+									ach(5308),	-- Silence is Golden
 									i(65058),
 									i(65052),
 									i(65066),
@@ -268,6 +283,8 @@ _.Instances =
 							}),
 							e(172, { -- Chimaeron
 								["groups"] = {
+									ach(5115),	-- Heroic: Chimaeron
+									ach(5309),	-- Full of Sound and Fury								
 									i(65064),
 									i(65067),
 									i(65028),
@@ -283,6 +300,10 @@ _.Instances =
 							}),
 							e(174, { -- Nefarian's End
 								["groups"] = {
+									ach(5116, {	-- Heroic: Nefarian
+										title(187),	-- , Blackwing's Bane
+									}),
+									ach(4849),	-- Keeping it in the Family
 									i(152968), -- Shadowy Pile of Bones
 									i(138802),
 									i(65003),
