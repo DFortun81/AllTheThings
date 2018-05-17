@@ -3,6 +3,21 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
+	ach(5506, {	-- Defender of a Shattered World
+		ach(5060),	-- Heroic: Blackrock Caverns
+		ach(5063),	-- Heroic: The Stonecore
+		ach(5062),	-- Heroic: Grim Batol
+		ach(5066),	-- Heroic: Lost City of the Tol'vir
+		ach(5093),	-- Heroic: Shadowfang Keep
+		ach(4851),	-- Throne of the Four Winds
+		ach(5061),	-- Heroic: Throne of the Tides
+		ach(5064),	-- Heroic: The Vortex Pinnacle
+		ach(5065),	-- Heroic: Halls of Origination
+		ach(5083),	-- Heroic: Deadmines
+		ach(4842),	-- Blackwing Descent
+		ach(4850),	-- The Bastion of Twilight
+		title(185),	-- , Defender of a Shattered World
+	}),
 	ach(4853, {	-- Glory of the Cataclysm Raider
 		ach(5094),	-- Heroic: Magmaw
 		ach(5108),	-- Heroic: Maloriak
@@ -18,7 +33,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 		ach(5304),	-- Stay Chill
 		ach(5107),	-- Heroic: Omnotron Defense System
 		ach(5109),	-- Heroic: Atramedes
-		ach(5116),	-- Heroic: Nefarian
+		ach(5116, {	-- Heroic: Nefarian
+			title(187),	-- , Blackwing's Bane
+		}),
 		ach(5117),	-- Heroic: Valiona and Theralion
 		ach(5120),	-- Heroic: Cho'gall
 		ach(5123),	-- Heroic: Al'Akir
