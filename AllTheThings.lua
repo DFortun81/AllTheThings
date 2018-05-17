@@ -1659,23 +1659,57 @@ local function OpenMiniList(field, id, label)
 		
 		-- Check to see completion...
 		popout.data = results;
-		ExpandGroupsRecursively(popout.data, true);
 		
 		-- if enabled minimize rows based on difficulty 
 		if GetDataMember("AutoMinimize",true) then
-			local _, _, difficultyID, _, _, _, _, _, _ = GetInstanceInfo();
-			for _, row in ipairs(popout.data.g) do
-				local found = not row["difficultyID"] or (difficultyID == row["difficultyID"]);
-				
-				if not found and row["difficulties"] then
-					for _, value in pairs(row["difficulties"]) do
-						if value == difficultyID then
-							found = true
-						end
+			ExpandGroupsRecursively(popout.data, false);
+			
+			local found = false;
+			local difficultyID = select(3, GetInstanceInfo());
+			if difficultyID and difficultyID > 0 then
+				for _, row in ipairs(popout.data.g) do
+					if (row.difficultyID and row.difficultyID == difficultyID)
+						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+						ExpandGroupsRecursively(row, true);
+						found = true;
 					end
-				end	
-				ExpandGroupsRecursively(row, found);
+				end
 			end
+			if not found then
+				difficultyID = GetDungeonDifficultyID();
+				for _, row in ipairs(popout.data.g) do
+					if (row.difficultyID and row.difficultyID == difficultyID)
+						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+						ExpandGroupsRecursively(row, true);
+						found = true;
+					end
+				end
+			end
+			if not found then
+				difficultyID = GetRaidDifficultyID();
+				for _, row in ipairs(popout.data.g) do
+					if (row.difficultyID and row.difficultyID == difficultyID)
+						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+						ExpandGroupsRecursively(row, true);
+						found = true;
+					end
+				end
+			end
+			if not found then
+				difficultyID = GetLegacyRaidDifficultyID();
+				for _, row in ipairs(popout.data.g) do
+					if (row.difficultyID and row.difficultyID == difficultyID)
+						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+						ExpandGroupsRecursively(row, true);
+						found = true;
+					end
+				end
+				
+				-- Expand them all!
+				if not found then ExpandGroupsRecursively(popout.data, true); end
+			end
+		else
+			ExpandGroupsRecursively(popout.data, true);
 		end
 
 		-- Reset to the first object.
