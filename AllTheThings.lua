@@ -6690,9 +6690,11 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['OnUpdate'] = function(data)
 						if app.Spec then
 							local id, name, description, icon, role, class = GetSpecializationInfoByID(app.Spec);
-							if GetLootSpecialization() == 0 then name = name .. " (Automatic)"; end
-							data.text = name;
-							data.icon = icon;
+							if name then
+								if GetLootSpecialization() == 0 then name = name .. " (Automatic)"; end
+								data.text = name;
+								data.icon = icon;
+							end
 						end
 					end,
 					['back'] = 0.5,
@@ -6993,7 +6995,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				}),
 			},
 		};
-		
 		self.data = raidassistant;
 		
 		-- Setup Event Handlers and register for events
@@ -7010,13 +7011,16 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	app.DungeonDifficulty = GetDungeonDifficultyID() or 1;
 	app.RaidDifficulty = GetRaidDifficultyID() or 14;
 	app.Spec = GetLootSpecialization();
-	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
+	if not app.Spec or app.Spec == 0 then
+		local s = GetSpecialization();
+		if s then app.Spec = select(1, GetSpecializationInfo(s)); end
+	end
 	if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 	for i,g in ipairs(self.data.g) do
 		if g.OnUpdate then g.OnUpdate(g); end
 	end
 	UpdateWindow(self, true);
-end):Show();
+end);
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
