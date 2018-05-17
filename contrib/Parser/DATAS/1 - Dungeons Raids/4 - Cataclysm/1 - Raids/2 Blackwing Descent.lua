@@ -21,111 +21,134 @@ _.Instances =
 						i(63538),	-- Claws of Agony
 						i(68601),	-- Scaleslicer
 						i(59460),	-- Theresa's Booklight
+						i(59461),	-- Fury of Angerforge
 					}),
 					d(1, {	-- Normal
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
 							e(170, { -- Magmaw
 								["groups"] = {
-									ach(5306),	-- Parasite Evening
-									i(59492),
-									i(59333),
-									i(59328),
-									i(59329),
-									i(59341),
-									i(59335),
-									i(59452),
-									i(59340),
-									i(59334),
-									i(59336),
-									i(59331),
+									ach(5306, {	-- Parasite Evening
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
+									i(59492),	-- Akirus the Worm-Breaker
+									i(59333),	-- Lava Spine
+									i(59328),	-- Molten Tantrum Boots
+									i(59329),	-- Parasitic Bands
+									i(59341),	-- Incineratus
+									i(59335),	-- Scorched Wormling Vest
+									i(59452),	-- Crown of Burning Waters
+									i(59340),	-- Breastplate of Avenging Flame
+									i(59334),	-- Lifecycle Waistguard
+									i(59336),	-- Flame Pillar Leggings
+									i(59331),	-- Leggings of Lethal Force
+									i(59332),	-- Symbiotic Worm
 								},
 								["creatureID"] = 41570,
 							}),
 							e(169, { -- Omnotron Defense System
 								["groups"] = {
-									ach(5307),	-- Achieve-a-tron
-									i(152966), -- Rought-Hewn Remote Pet
-									i(59118),
-									i(59117),
-									i(59120),
-									i(59122),
-									i(59218),
-									i(59219),
-									i(63540),
-									i(59119),
-									i(59217),
-									i(59216),
+									ach(5307, {	-- Achieve-a-tron
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
+									i(152966),	-- Rought-Hewn Remote Pet
+									i(59118),	-- Electron Inductor Coils
+									i(59117),	-- Jumbotron Power Belt
+									i(59120),	-- Poison Protocol Pauldrons
+									i(59122),	-- Organic Lifeform Inverter
+									i(59218),	-- Passive Resistor Spaulders
+									i(59219),	-- Power Generator Hood
+									i(63540),	-- Circuit Design Breastplate
+									i(59119),	-- Voltage Source Chestguard
+									i(59217),	-- X-Tron Duct Tape
+									i(59216),	-- Life Force Chargers
+									i(59220),	-- Security Measure Alpha
+									i(59121),	-- Lightning Conductor Band
 								},
 								["creatureID"] = 42179,
 							}),
 							e(173, { -- Maloriak
 								["groups"] = {
-									ach(5310),	-- Aberrant Behavior
-									i(152967), -- Experiment-In-A-Jar Pet
-									i(59347),
-									i(59344),
-									i(59342),
-									i(59348),
-									i(59343),
-									i(59353),
-									i(59346),
-									i(59352),
-									i(59349),
-									i(59351),
-									i(59350),
+									ach(5310, {	-- Aberrant Behavior
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
+									i(152967),	-- Experiment-In-A-Jar Pet
+									i(59347),	-- Mace of Acrid Death
+									i(59344),	-- Dragon Bone Warhelm
+									i(59342),	-- Belt of Absolute Zero
+									i(59348),	-- Cloak of Biting Chill
+									i(59343),	-- Aberration's Leggings
+									i(59353),	-- Leggings of Consuming Flames
+									i(59346),	-- Tunic of Failed Experiments
+									i(59352),	-- Flash Freeze Gauntlets
+									i(59349),	-- Belt of Arcane Storms
+									i(59351),	-- Legwraps of the Greatest Son
+									i(59350),	-- Treads of Flawless Creation
+									i(59354),	-- Jar of Ancient Remedies
 								},
 								["creatureID"] = 41378,
 							}),
 							e(171, { -- Atramedes
 								["groups"] = {
-									ach(5308),	-- Silence is Golden
-									i(59316),
-									i(59317),
-									i(59318),
-									i(59312),
-									i(59320),
-									i(59327),
-									i(59325),
-									i(59322),
-									i(59324),
-									i(59315),
+									ach(5308, {	-- Silence is Golden
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
+									i(59316),	-- Battleplate of Ancient Kings
+									i(59317),	-- Legguards of the Unseeing
+									i(59318),	-- Sark of the Unwatched
+									i(59312),	-- Helm of the Blind Seer
+									i(59320),	-- Themios the Darkbringer
+									i(59327),	-- Kingdom's Heart
+									i(59325),	-- Mantle of Roaring Flames
+									i(59322),	-- Bracers of the Burningeye
+									i(59324),	-- Gloves of Cacophony
+									i(59315),	-- Boots of Vertigo
+									i(59319),	-- Ironstar Amulet
+									i(59326),	-- Bell of Enraging Resonance
 								},
 								["creatureID"] = 41442,
 							}),
 							e(172, { -- Chimaeron
 								["groups"] = {
-									ach(5309),	-- Full of Sound and Fury
-									i(59225),
-									i(59221),
-									i(59223),
-									i(59451),
-									i(59314),
-									i(59311),
-									i(59310),
-									i(59355),
-									i(59313),
-									i(59234),
+									ach(5309, {	-- Full of Sound and Fury
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
+									i(59225),	-- Plated Fists of Provocation
+									i(59221),	-- Massacre Treads
+									i(59223),	-- Double Attack Handguards
+									i(59451),	-- Manacles of the Sleeping Beast
+									i(59314),	-- Finkle's Mixer Upper
+									i(59311),	-- Burden of Mortality
+									i(59310),	-- Chaos Beast Bracers
+									i(59355),	-- Chimaeron Armguards
+									i(59313),	-- Brackish Gloves
+									i(59234),	-- Einhorn's Galoshes
+									i(59224),	-- Heart of Rage
+									i(59233),	-- Bile-O-Tron Nut
 								},
 								["creatureID"] = 43296,
 							}),
 							e(174, { -- Nefarian's End
 								["groups"] = {
-									ach(4849),	-- Keeping it in the Family
-									i(152968), -- Shadowy Pile of Bones
-									i(138802),
-									i(63679),
-									i(59459),
-									i(59356),
-									i(59443),
-									i(59457),
-									i(59321),
-									i(59444),
-									i(59337),
-									i(59222),
-									i(59454),
-									i(59450),
-									i(122195), -- Music Roll: Legends of Azeroth
+									ach(4849, {	-- Keeping it in the Family
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
+									i(152968),	-- Shadowy Pile of Bones
+									i(138802),	-- Illusion: Power Torrent
+									i(63679),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
+									i(59459),	-- Andoros, Fist of the Dragon King
+									i(59356),	-- Pauldrons of the Apocalypse
+									i(59443),	-- Crul'korak, the Lightning's Arc
+									i(59457),	-- Shadow of Dread
+									i(59321),	-- Belt of the Nightmare
+									i(59444),	-- Akmin-Kurai, Dominion's Shield
+									i(59337),	-- Mantle of Nefarius
+									i(59222),	-- Spaulders of the Scarred Lady
+									i(59454),	-- Shadowblaze Robes
+									i(59450),	-- Belt of the Blackhand
+									i(59441),	-- Prestor's Talisman of Machination
+									i(59442),	-- Rage of Ages
+									i(122195),	-- Music Roll: Legends of Azeroth
 									i(63683, {	-- Helm of the Forlorn Conqueror	
 										i(60249),	-- Shadowflame Hood
 										i(60346),	-- Reinforced Sapphirium Helmet
@@ -162,104 +185,114 @@ _.Instances =
 							e(170, { -- Magmaw
 								["groups"] = {
 									ach(5094),	-- Heroic: Magmaw
-									ach(5306),	-- Parasite Evening
-									i(65007),
-									i(65047),
-									i(65041),
-									i(65020),
-									i(65045),
-									i(65042),
-									i(65050),
-									i(65046),
-									i(65044),
-									i(65049),
-									i(65051),
+									ach(5306, {	-- Parasite Evening
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
+									i(65007),	-- Akirus the Worm-Breaker
+									i(65047),	-- Lava Spine
+									i(65041),	-- Incineratus
+									i(65020),	-- Crown of Burning Waters
+									i(65045),	-- Scorched Wormling Vest
+									i(65042),	-- Breastplate of Avenging Flame
+									i(65050),	-- Parasitic Bands
+									i(65046),	-- Lifecycle Waistguard
+									i(65044),	-- Flame Pillar Leggings
+									i(65049),	-- Leggings of Lethal Force
+									i(65051),	-- Molten Tantrum Boots
+									i(65048),	-- Symbiotic Worm
 									i(67429, {	-- Gauntlets of the Forlorn Conqueror
-										i(65259),
-										i(65225),
-										i(65220),
-										i(65215),
-										i(65229),
-										i(65234)
+										i(65259),	-- Shadowflame Handwraps
+										i(65225),	-- Reinforced Sapphirium Handguards
+										i(65220),	-- Reinforced Sapphirium Gloves
+										i(65215),	-- Reinforced Sapphirium Gauntlets
+										i(65229),	-- Mercurial Handwraps
+										i(65234)	-- Mercurial Gloves
 									}),
 									i(67430, {	-- Gauntlets of the Forlorn Protector
-										i(65205),
-										i(65245),
-										i(65250),
-										i(65255),
-										i(65270),
-										i(65265)
+										i(65205),	-- Lightning-Charged Gloves
+										i(65245),	-- Handwraps of the Raging Elements
+										i(65250),	-- Grips of the Raging Elements
+										i(65255),	-- Gloves of the Raging Elements
+										i(65270),	-- Earthen Handguards
+										i(65265)	-- Earthen Gauntlets
 									}),
 									i(67431, {	-- Gauntlets of the Forlorn Vanquisher
-										i(65240),
-										i(65194),
-										i(65189),
-										i(65199),
-										i(65185),
-										i(65180),
-										i(65209)
+										i(65240),	-- Wind Dancer's Gloves
+										i(65194),	-- Stormrider's Handwraps
+										i(65189),	-- Stormrider's Grips
+										i(65199),	-- Stormrider's Gloves
+										i(65185),	-- Magma Plated Handguards
+										i(65180),	-- Magma Plated Gauntlets
+										i(65209)	-- Firelord's Gloves
 									}),
 								},
 								["creatureID"] = 41570,
 							}),
-							e(169, { -- Omintron Defense
+							e(169, { -- Omnotron Defense System
 								["groups"] = {
 									ach(5107),	-- Heroic: Omnotron Defense System
-									ach(5307),	-- Achieve-a-tron
+									ach(5307, {	-- Achieve-a-tron
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
 									i(152966), -- Rought-Hewn Remote Pet
-									i(65081),
-									i(65077),
-									i(65078),
-									i(65083),
-									i(65084),
-									i(65004),
-									i(65085),
-									i(65079),
-									i(65086),
-									i(65080),
+									i(65081),	-- Organic Lifeform Inverter
+									i(65077),	-- Power Generator Hood
+									i(65078),	-- Passive Resistor Spaulders
+									i(65083),	-- Poison Protocol Pauldrons
+									i(65084),	-- Voltage Source Chestguard
+									i(65004),	-- Circuit Design Breastplate
+									i(65085),	-- Electron Inductor Coils
+									i(65079),	-- X-Tron Duct Tape
+									i(65086),	-- Jumbotron Power Belt
+									i(65080),	-- Life Force Chargers
+									i(65082),	-- Lightning Conductor Band
+									i(65076),	-- Security Measure Alpha
 								},
 								["creatureID"] = 42179,
 							}),
 							e(173, { -- Maloriak
 								["groups"] = {
 									ach(5108),	-- Heroic: Maloriak
-									ach(5310),	-- Aberrant Behavior									
+									ach(5310, {	-- Aberrant Behavior
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
 									i(152967), -- Experiment-In-A-Jar Pet
-									i(65036),
-									i(65038),
-									i(65035),
-									i(65037),
-									i(65031),
-									i(65034),
-									i(65040),
-									i(65030),
-									i(65032),
-									i(65039),
-									i(65033),
+									i(65036),	-- Mace of Acrid Death
+									i(65038),	-- Dragon Bone Warhelm
+									i(65035),	-- Cloak of Biting Chill
+									i(65037),	-- Tunic of Failed Experiments
+									i(65031),	-- Flash Freeze Gauntlets
+									i(65034),	-- Belt of Arcane Storms
+									i(65040),	-- Belt of Absolute Zero
+									i(65030),	-- Leggings of Consuming Flames
+									i(65032),	-- Legwraps of the Greatest Son
+									i(65039),	-- Aberration's Leggings
+									i(65033),	-- Treads of Flawless Creation
+									i(65029),	-- Jar of Ancient Remedies
 									i(67428, {	-- Leggings of the Forlorn Conqueror
-										i(65261),
-										i(65217),
-										i(65227),
-										i(65222),
-										i(65231),
-										i(65236)
+										i(65261),	-- Shadowflame Leggings
+										i(65217),	-- Reinforced Sapphirium Legplates
+										i(65227),	-- Reinforced Sapphirium Legguards
+										i(65222),	-- Reinforced Sapphirium Greaves
+										i(65231),	-- Mercurial Legwraps
+										i(65236)	-- Mercurial Leggings
 									}),
 									i(67427, {	-- Leggings of the Forlorn Protector
-										i(65207),
-										i(65247),
-										i(65252),
-										i(65257),
-										i(65267),
-										i(65272)
+										i(65207),	-- Lightning-Charged Legguards
+										i(65247),	-- Legwraps of the Raging Elements
+										i(65252),	-- Legguards of the Raging Elements
+										i(65257),	-- Kilt of the Raging Elements
+										i(65267),	-- Earthen Legplates
+										i(65272)	-- Earthen Legguards
 									}),
 									i(67426, {	-- Leggings of the Forlorn Vanquisher
-										i(65242),
-										i(65196),
-										i(65191),
-										i(65201),
-										i(65182),
-										i(65187),
-										i(65211)
+										i(65242),	-- Wind Dancer's Legguards
+										i(65196),	-- Stormrider's Legwraps
+										i(65191),	-- Stormrider's Legguards
+										i(65201),	-- Stormrider's Leggings
+										i(65182),	-- Magma Plated Legplates
+										i(65187),	-- Magma Plated Legguards
+										i(65211)	-- Firelord's Leggings
 									}),
 								},
 								["creatureID"] = 41378,
@@ -267,34 +300,42 @@ _.Instances =
 							e(171, { -- Atramedes
 								["groups"] = {
 									ach(5109),	-- Heroic: Atramedes
-									ach(5308),	-- Silence is Golden
-									i(65058),
-									i(65052),
-									i(65066),
-									i(65054),
-									i(65060),
-									i(65062),
-									i(65056),
-									i(65055),
-									i(65061),
-									i(65063),
+									ach(5308, {	-- Silence is Golden
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
+									i(65058),	-- Themios the Darkbringer
+									i(65052),	-- Kingdom's Heart
+									i(65066),	-- Helm of the Blind See
+									i(65054),	-- Mantle of Roaring Flames
+									i(65060),	-- Sark of the Unwatched
+									i(65062),	-- Battleplate of Ancient Kings
+									i(65056),	-- Bracers of the Burningeye
+									i(65055),	-- Gloves of Cacophony
+									i(65061),	-- Legguards of the Unseeing
+									i(65063),	-- Boots of Vertigo
+									i(65053),	-- Bell of Enraging Resonance
+									i(65059),	-- Ironstar Amulet
 								},
 								["creatureID"] = 41442,
 							}),
 							e(172, { -- Chimaeron
 								["groups"] = {
 									ach(5115),	-- Heroic: Chimaeron
-									ach(5309),	-- Full of Sound and Fury								
-									i(65064),
-									i(65067),
-									i(65028),
-									i(65068),
-									i(65021),
-									i(65073),
-									i(65071),
-									i(65065),
-									i(65069),
-									i(65075),
+									ach(5309, {	-- Full of Sound and Fury
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
+									i(65064),	-- Finkle's Mixer Upper
+									i(65067),	-- Burden of Mortality
+									i(65028),	-- Chimaeron Armguards
+									i(65068),	-- Chaos Beast Bracers
+									i(65021),	-- Manacles of the Sleeping Beast
+									i(65073),	-- Double Attack Handguards
+									i(65071),	-- Plated Fists of Provocation
+									i(65065),	-- Brackish Gloves
+									i(65069),	-- Einhorn's Galoshes
+									i(65075),	-- Massacre Treads
+									i(65070),	-- Bile-O-Tron Nut
+									i(65072),	-- Heart of Rage
 								},
 								["creatureID"] = 43296,
 							}),
@@ -303,45 +344,49 @@ _.Instances =
 									ach(5116, {	-- Heroic: Nefarian
 										title(187),	-- , Blackwing's Bane
 									}),
-									ach(4849),	-- Keeping it in the Family
+									ach(4849, {	-- Keeping it in the Family
+										["description"] = "Achievement can be completed on Normal or Heroic mode."
+										}),
 									i(152968), -- Shadowy Pile of Bones
-									i(138802),
-									i(65003),
-									i(65024),
-									i(65017),
-									i(65023),
-									i(65043),
-									i(65027),
-									i(65074),
-									i(65018),
-									i(65019),
-									i(65057),
-									i(65022),
+									i(138802),	-- Illusion: Power Torrent
+									i(65003),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
+									i(65024),	-- Crul'korak, the Lightning's Arc
+									i(65017),	-- Andoros, Fist of the Dragon King
+									i(65023),	-- Akmin-Kurai, Dominion's Shield
+									i(65043),	-- Mantle of Nefarius
+									i(65027),	-- Pauldrons of the Apocalypse
+									i(65074),	-- Spaulders of the Scarred Lady
+									i(65018),	-- Shadow of Dread
+									i(65019),	-- Shadowblaze Robes
+									i(65057),	-- Belt of the Nightmare
+									i(65022),	-- Belt of the Blackhand
+									i(65026),	-- Prestor's Talisman of Machination
+									i(65025),	-- Rage of Ages
 									i(122195), -- Music Roll: Legends of Azeroth
 									i(65001, {	-- Crown of the Forlorn Conqueror
-										i(65260),
-										i(65216),
-										i(65221),
-										i(65226),
-										i(65235),
-										i(65230)
+										i(65260),	-- Shadowflame Hood
+										i(65216),	-- Reinforced Sapphirium Helmet
+										i(65221),	-- Reinforced Sapphirium Headguard
+										i(65226),	-- Reinforced Sapphirium Faceguard
+										i(65235),	-- Mercurial Hood
+										i(65230)	-- Mercurial Cowl
 									}),
 									i(65000, {	-- Crown of the Forlorn Protector
-										i(65206),
-										i(65251),
-										i(65256),
-										i(65246),
-										i(65266),
-										i(65271)
+										i(65206),	-- Lightning-Charged Headguard
+										i(65251),	-- Helmet of the Raging Elements
+										i(65256),	-- Headpiece of the Raging Elements
+										i(65246),	-- Faceguard of the Raging Elements
+										i(65266),	-- Earthen Helmet
+										i(65271)	-- Earthen Faceguard
 									}),
 									i(65002, {	-- Crown of the Forlorn Vanquisher
-										i(65241),
-										i(65195),
-										i(65190),
-										i(65200),
-										i(65181),
-										i(65186),
-										i(65210)
+										i(65241),	-- Wind Dancer's Helmet
+										i(65195),	-- Stormrider's Helm
+										i(65190),	-- Stormrider's Headpiece
+										i(65200),	-- Stormrider's Cove
+										i(65181),	-- Magma Plated Helmet
+										i(65186),	-- Magma Plated Faceguard
+										i(65210)	-- Firelord's Hood
 									}),
 								},
 								["creatureID"] = 41376,
