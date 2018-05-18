@@ -147,13 +147,9 @@ _.GroupFinder =
 			i(112363),	-- Icefall Chain Belt
 			i(112358),	-- Icefall Chain Leggings
 			i(112357),	-- Icefall Mail Leggings
-			i(112347),	-- Ice-Encrusted Plate Helm
 			i(112346),	-- Ice-Encrusted Plate Headguard*
 			i(113692),	-- Ice-Encrusted Gauntlets*
-			i(113691),	-- Ice-Encrusted Gloves
 			i(112361),	-- Ice-Encrusted Plate Belt*
-			i(112362),	-- Ice-Encrusted Plate Girdle
-			i(112356),	-- Ice-Encrusted Plate Leggings
 			i(112354),	-- Ice-Encrusted Plate Legguards*
 			i(113685),	-- Coldblood Longcloak*
 			i(113683),	-- Coldwrap Cloak
@@ -210,16 +206,16 @@ _.GroupFinder =
 	})),
 	un(2, i(114641, {	-- Icy Satchel of Helpful Goods 75-80
 		["groups"] = {
-		   i(113685),	-- Coldblood Longcloak
-		   i(113683),	-- Coldwrap Cloak
-		   i(113684),	-- Icecrust Cloak
-		   i(113758),	-- Snow-Coated Cloth Gloves
-		   i(113690),	-- Winterfrost Leather Gloves
-		   i(113689),	-- Winterfrost Leather Knuckledusters
-		   i(113694),	-- Icefall Chain Gloves
-		   i(113693),	-- Icefall Mail Gloves
-		   i(113692),	-- Ice-Encrusted Gauntlets
-		   i(113691),	-- Ice-Encrusted Gloves
+			i(113685),	-- Coldblood Longcloak
+			i(113683),	-- Coldwrap Cloak
+			i(113684),	-- Icecrust Cloak
+			i(113758),	-- Snow-Coated Cloth Gloves
+			i(113690),	-- Winterfrost Leather Gloves
+			i(113689),	-- Winterfrost Leather Knuckledusters
+			i(113694),	-- Icefall Chain Gloves
+			i(113693),	-- Icefall Mail Gloves
+			i(113692),	-- Ice-Encrusted Gauntlets
+			i(113691),	-- Ice-Encrusted Gloves
 		},
 		["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.|r",
 	})),
