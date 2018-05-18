@@ -15,16 +15,19 @@ _.Instances =
 							i(39468),	-- The Stray
 							i(39473),	-- Contortion
 						}),
-						n(-368, { 	-- The Arachnid Quarter
+						n(-368, {	-- The Arachnid Quarter
 							cr(15956, e(1601, {	-- Anub'Rehkan
 								["groups"] = {
 									i(39140),	-- Knife of Incision
+									i(39146),	-- Collar of Dissolution
 									i(39188),	-- Chivalric Chestguard
 									i(39192),	-- Gloves of Dark Gestures
 									i(39190),	-- Agonal Sash
 									i(39191),	-- Splint-Bound Leggings
 									i(39189),	-- Boots of Persistence
 									i(39139),	-- Ravaging Sabaton
+									i(39193),	-- Band of Neglected Pleas
+									i(39141),	-- Deflection Band
 								},
 								["description"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders."
 							})),
@@ -49,10 +52,13 @@ _.Instances =
 									i(39221),	-- Wraith Spear
 									i(39226),	-- Maexxna's Femur
 									i(39233),	-- Aegis of Damnation
+									i(39232),	-- Pendant of Lost Vocations
 									i(39230),	-- Spaulders of the Monstrosity
 									i(39225),	-- Cloak of Armed Strife
 									i(39228),	-- Web Cocoon Grips
 									i(39224),	-- Leggings of Discord
+									i(39231),	-- Timeworn Silken Band
+									i(39229),	-- Embrace of the Spider
 								},
 								["description"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas."
 							})),
@@ -69,6 +75,7 @@ _.Instances =
 									i(39243),	-- Handgrips of the Foredoomed
 									i(39234),	-- Plague-Impervious Boots
 									i(39236),	-- Trespasser's Boots
+									i(39244),	-- Ring of the Fated
 								},
 								["description"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now."
 							})),
@@ -76,12 +83,14 @@ _.Instances =
 								["groups"] = {
 									i(39245),	-- Demise
 									i(39255),	-- Staff of the Plague Beast
+									i(39246),	-- Amulet of Autopsy
 									i(39249),	-- Shoulderplates of Bloodshed
 									i(39248),	-- Tunic of the Lost Pack
 									i(39247),	-- Cuffs of Dark Shadows
 									i(39252),	-- Preceptor's Bindings
 									i(39251),	-- Necrogenic Belt
 									i(39254),	-- Saltarello Shoes
+									i(39250),	-- Ring of Holy Cleansing
 								},
 								["description"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will."
 							})),
@@ -117,6 +126,7 @@ _.Instances =
 									i(39260),	-- Helm of the Corrupted Mind
 									i(39259),	-- Fungi-Stained Coverings
 									i(39258),	-- Legplates of Inescapable Death
+									i(39257),	-- Loatheb's Shadow
 								},
 								["description"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself."
 							})),
@@ -140,12 +150,15 @@ _.Instances =
 							cr(16060, e(1608, {	-- Gothik the Harvester
 								["groups"] = {
 									i(39344),	-- Slayer of the Lifeless
+									i(39392),	-- Veiled Amulet of Life
 									i(39391),	-- Heinous Mail Chestguard
 									i(39386),	-- Tunic of Dislocation
 									i(39390),	-- Resurgent Phantom Bindings
 									i(39345),	-- Girdle of the Ascended Phantom
 									i(39379),	-- Spectral Rider's Girdle
 									i(39369),	-- Sabatons of Deathlike Gloom
+									i(39389),	-- Signet of the Malevolent
+									i(39388),	-- Spirit-World Glass
 								},
 								["description"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead."
 							})),
@@ -205,6 +218,7 @@ _.Instances =
 								["groups"] = {
 									i(39281),	-- Infection Repulser
 									i(39276),	-- The Skull of Ruin
+									i(39282),	-- Bone-Linked Amulet
 									i(39284),	-- Miasma Mantle
 									i(39278),	-- Bands of Anxiety
 									i(39283),	-- Putrescent Bands
@@ -316,6 +330,11 @@ _.Instances =
 									i(39260),	-- Helm of the Corrupted Mind
 									i(39240),	-- Noth's Curse
 									i(39395),	-- Thane's Tainted Greathelm
+									i(39246),	-- Amulet of Autopsy
+									i(39282),	-- Bone-Linked Amulet
+									i(39146),	-- Collar of Dissolution
+									i(39232),	-- Pendant of Lost Vocations
+									i(39392),	-- Veiled Amulet of Life
 									i(39267),	-- Abomination Shoulderblades
 									i(39198),	-- Frostblight Pauldrons									
 									i(39310),	-- Mantle of the Extensive Mind
@@ -381,6 +400,17 @@ _.Instances =
 									i(39254),	-- Saltarello Shoes
 									i(39273),	-- Sullen Cloth Boots									
 									i(39236),	-- Trespasser's Boots
+									i(39193),	-- Band of Neglected Pleas
+									i(39141),	-- Deflection Band
+									i(39250),	-- Band of Holy Cleansing
+									i(39244),	-- Ring of the Fated
+									i(39277),	-- Sealing Ring of Grobbulus
+									i(39389),	-- Signet of the Malevolent
+									i(39231),	-- Timeworn Silken Band
+									i(39229),	-- Embrace of the Spider
+									i(39257),	-- Loatheb's Shadow
+									i(39292),	-- Repelling Charge
+									i(39388),	-- Spirit-World Glass
 								},
 								["description"] = "The foul plague-dog of Naxxramas, was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat."
 							})),
@@ -415,6 +445,7 @@ _.Instances =
 									i(39294),	-- Arc-Scorched Helmet
 									i(39295),	-- Cowl of Sheet Lightning
 									i(39293),	-- Blackened Legplates of Feugen
+									i(39292),	-- Repelling Charge
 								},
 								["description"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh."
 							})),
@@ -434,12 +465,13 @@ _.Instances =
 									i(39415),	-- Shroud of the Citadel
 									i(39398),	-- Massive Skeletal Ribcage
 									i(39408),	-- Leggings of Sapphiron
+									i(39401),	-- Circle of Death
+									i(39407),	-- Circle of Life
 								},
 								["description"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master."
 							})),
 							cr(15990, e(1615, {	-- Kel'Thuzad
 								["groups"] = {
-									i(122197),	-- Music Roll: Wrath of the Lich King (ACHIEVEMENT! NOT IN DJ)
 									i(40616, { -- Helm of the Lost Conqueror
 										i(39635),	-- Heroes' Redemption Helm
 										i(39628),	-- Heroes' Redemption Headpiece
@@ -474,6 +506,7 @@ _.Instances =
 									i(39419),	-- Nerubian Conqueror
 									i(39426),	-- Wand of the Archlich
 									i(39425),	-- Cloak of the Dying
+									i(122197),	-- Music Roll: Wrath of the Lich King
 								},
 								["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects."
 							})),
@@ -494,6 +527,10 @@ _.Instances =
 									i(39714),	-- Webbed Death
 									i(39712),	-- Gemmed Wand of the Nerubians
 									i(39716),	-- Shield of Assimilation
+									i(40071),	-- Chains of Adoration
+									i(40065),	-- Fool's Trial
+									i(40069),	-- Heritage
+									i(40064),	-- Thunderstorm Amulet
 									i(39719),	-- Mantle of the Locusts
 									i(39704),	-- Pauldrons of Unnatural Death
 									i(39702),	-- Arachnoid Gold Band
@@ -505,6 +542,11 @@ _.Instances =
 									i(39701),	-- Dawnwalkers
 									i(39717),	-- Inexorable Sabatons
 									i(39706),	-- Sabatons of Sudden Reprisal
+									i(40080),	-- Lost Jewel
+									i(40075),	-- Ruthlessness
+									i(40107),	-- Sand-Worn Band
+									i(40108),	-- Seized Beauty
+									i(40074),	-- Strong-Handed Ring
 								},
 								["description"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders."
 							})),
@@ -513,6 +555,10 @@ _.Instances =
 									i(39730),	-- Widow's Fury
 									i(39732),	-- Faerlina's Madness
 									i(39723),	-- Fire-Scorched Greathelm
+									i(40071),	-- Chains of Adoration
+									i(40065),	-- Fool's Trial
+									i(40069),	-- Heritage
+									i(40064),	-- Thunderstorm Amulet
 									i(39725),	-- Epaulets of the Grieving Servant
 									i(39724),	-- Cult's Chestguard
 									i(39756),	-- Tunic of Prejudice
@@ -523,6 +569,11 @@ _.Instances =
 									i(39733),	-- Gloves of Token Respect
 									i(39735),	-- Belt of False Dignity
 									i(39734),	-- Atonement Greaves
+									i(40080),	-- Lost Jewel
+									i(40075),	-- Ruthlessness
+									i(40107),	-- Sand-Worn Band
+									i(40108),	-- Seized Beauty
+									i(40074),	-- Strong-Handed Ring
 								},
 								["description"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King."
 							})),
@@ -549,6 +600,10 @@ _.Instances =
 									i(39762),	-- Torn Web Wrapping
 									i(40060),	-- Distorted Limbs
 									i(39761),	-- Infectious Skitterer Leggings
+									i(40257),	-- Defender's Code
+									i(40255),	-- Dying Curse
+									i(40258),	-- Forethought Talisman
+									i(40256),	-- Grim Toll
 								},
 								["description"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas."
 							})),
@@ -558,6 +613,10 @@ _.Instances =
 								["groups"] = {
 									i(40189),	-- Angry Dread
 									i(40192),	-- Accursed Spine
+									i(40071),	-- Chains of Adoration
+									i(40065),	-- Fool's Trial
+									i(40069),	-- Heritage
+									i(40064),	-- Thunderstorm Amulet
 									i(40185),	-- Shoulderguards of Opportunity
 									i(40602),	-- Robes of Mutation
 									i(40193),	-- Tunic of Masked Suffering
@@ -569,6 +628,11 @@ _.Instances =
 									i(40196),	-- Legguards of the Undisturbed
 									i(40184),	-- Crippled Treads
 									i(40187),	-- Poignant Sabatons
+									i(40080),	-- Lost Jewel
+									i(40075),	-- Ruthlessness
+									i(40107),	-- Sand-Worn Band
+									i(40108),	-- Seized Beauty
+									i(40074),	-- Strong-Handed Ring
 								},
 								["description"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now."
 							})),
@@ -593,6 +657,10 @@ _.Instances =
 									i(40237),	-- Eruption-Scarred Boots
 									i(40206),	-- Iron-Spring Jumpers
 									i(40236),	-- Serene Echoes
+									i(40257),	-- Defender's Code
+									i(40255),	-- Dying Curse
+									i(40258),	-- Forethought Talisman
+									i(40256),	-- Grim Toll
 								},
 								["description"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will."
 							})),
@@ -641,6 +709,10 @@ _.Instances =
 						n(-369, { 	-- The Military Quarter
 							cr(16061, e(1607, {	-- Instructor Razuvious
 								["groups"] = {
+									i(40071),	-- Chains of Adoration
+									i(40065),	-- Fool's Trial
+									i(40069),	-- Heritage
+									i(40064),	-- Thunderstorm Amulet
 									i(40315),	-- Shoulderpads of Secret Arts
 									i(40305),	-- Spaulders of Egotism
 									i(40319),	-- Chestpiece of Suspicion
@@ -654,6 +726,11 @@ _.Instances =
 									i(40318),	-- Legplates of Double Strikes
 									i(40326),	-- Boots of Forlorn Wishes
 									i(40320),	-- Faithful Steel Sabatons
+									i(40080),	-- Lost Jewel
+									i(40075),	-- Ruthlessness
+									i(40107),	-- Sand-Worn Band
+									i(40108),	-- Seized Beauty
+									i(40074),	-- Strong-Handed Ring
 								},
 								["description"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might."
 							})),
@@ -677,6 +754,10 @@ _.Instances =
 									i(40341),	-- Shackled Cinch
 									i(40331),	-- Leggings of Failed Escape
 									i(40333),	-- Leggings of Fleeting Moments
+									i(40257),	-- Defender's Code
+									i(40255),	-- Dying Curse
+									i(40258),	-- Forethought Talisman
+									i(40256),	-- Grim Toll
 								},
 								["description"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead."
 							})),
@@ -728,6 +809,10 @@ _.Instances =
 									i(40265),	-- Arrowsong
 									i(40266),	-- Hero's Surrender
 									i(40273),	-- Surplus Limb
+									i(40071),	-- Chains of Adoration
+									i(40065),	-- Fool's Trial
+									i(40069),	-- Heritage
+									i(40064),	-- Thunderstorm Amulet
 									i(40261),	-- Crude Discolored Battlegrips
 									i(40262),	-- Gloves of Calculated Risk
 									i(40260),	-- Belt of the Tortured
@@ -737,6 +822,11 @@ _.Instances =
 									i(40259),	-- Waistguard of Divine Grace
 									i(40269),	-- Boots of Persuasion
 									i(40270),	-- Boots of Septic Wounds
+									i(40080),	-- Lost Jewel
+									i(40075),	-- Ruthlessness
+									i(40107),	-- Sand-Worn Band
+									i(40108),	-- Seized Beauty
+									i(40074),	-- Strong-Handed Ring
 								},
 								["description"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!"
 							})),
@@ -762,6 +852,10 @@ _.Instances =
 									i(40275),	-- Depraved Linked Belt
 									i(40278),	-- Girdle of Chivalry
 									i(40285),	-- Desecrated Past
+									i(40257),	-- Defender's Code
+									i(40255),	-- Dying Curse
+									i(40258),	-- Forethought Talisman
+									i(40256),	-- Grim Toll
 								},
 								["description"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him."
 							})),
@@ -1044,6 +1138,9 @@ _.Instances =
 									},
 									i(40368),	-- Murder
 									i(40366),	-- Platehelm of the Great Wyrm
+									i(40378),	-- Ceaseless Pity
+									i(40374),	-- Cosmic Lights
+									i(40369),	-- Icy Blast Amulet
 									i(40377),	-- Noble Birthright Pauldrons
 									i(40365),	-- Breastplate of Frozen Pain
 									i(40381),	-- Sympathy
@@ -1053,12 +1150,17 @@ _.Instances =
 									i(40363),	-- Legguards of the Boneyard
 									i(40376),	-- Legwraps of the Defeated Dragon
 									i(40367),	-- Boots of the Great Construct
+									i(40370),	-- Gatekeeper
+									i(40375),	-- Ring of Decaying Beauty
+									i(40371),	-- Bandit's Insignia
+									i(40373),	-- Extract of Necromantic Power
+									i(40372),	-- Rune of Repulsion
+									i(40382),	-- Soul of the Dead
 								},
 								["description"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master."
 							})),
 							cr(15990, e(1615, {	-- Kel'Thuzad
 								["groups"] = {
-									i(122197),	-- Music Roll: Wrath of the Lich King (ACHIEVEMENT!  NOT IN DJ)
 									i(40631, { -- Crown of the Lost Conqueror
 										i(40576),	-- Valorous Redemption Helm
 										i(40571),	-- Valorous Redemption Headpiece
@@ -1094,9 +1196,12 @@ _.Instances =
 									i(40385),	-- Envoy of Mortality
 									i(40401),	-- Voice of Reason
 									i(40400),	-- Wall of Terror
+									i(40387),	-- Boundless Ambition
 									i(40405),	-- Cape of the Unworthy Wizard
 									i(40403),	-- Drape of the Deadly Foe
 									i(40398),	-- Leggings of Mortal Arrogance
+									i(40399),	-- Signet of Manifested Pain
+									i(122197),	-- Music Roll: Wrath of the Lich King
 								},
 								["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects."
 							})),
