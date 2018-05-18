@@ -132,14 +132,6 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
-					q( 10664, {	-- Additional Materials
-						["groups"] = {
-						},
-						["qg"] = 21465,	-- David Wayne
-						["sourceQuests"] = { 10663 },	-- The Hermit Smith
-					}),
-
-
 					qh(10702, {	-- A Grunt's Work...
 						["groups"] = {
 						},
@@ -734,7 +726,6 @@ _.Zones =
 					}),
 					q( 10947),	-- An Artifact From the Past
 					q( 11544),	-- Ata'mal Armaments
-					q( 10676),	-- Bane of the Illidari
 					q( 10781),	-- Battle of the Crimson Watch
 					qa(10562),	-- Besieged!
 					qa(10564, {	-- Blast the Infernals!
@@ -768,7 +759,6 @@ _.Zones =
 						i(30968),
 					}),
 					qa(10759),	-- Find the Deserter
-					q( 10665),	-- Fresh from the Mechanar
 					qa(10589),	-- Gaining Access
 					q( 31920),	-- Grand Master Antari
 					q( 11092),	-- Hail, Commander!
@@ -785,7 +775,6 @@ _.Zones =
 						i(30924),
 					}),
 					qa(10703),	-- Put On Yer Kneepads...
-					q( 10679),	-- Quenching the Blade
 					q( 11053),	-- Rise, Overseer!
 					q( 10946),	-- Ruse of the Ashtongue
 					q( 10958),	-- Seek Out the Ashtongue
@@ -801,7 +790,6 @@ _.Zones =
 						i(32870),
 					}),
 					qa(10775),	-- Tabards of the Illidari
-					q( 10670),	-- Tear of the Earthmother
 					qa(10644),	-- Teron Gorefiend - Lore and Legend
 					qa(10645, {	-- Teron Gorefiend, I am...
 						i(31104),
@@ -820,7 +808,6 @@ _.Zones =
 					qa(10662),	-- The Hermit Smith
 					q( 10948),	-- The Hostage Soul
 					q( 10793),	-- The Journal of Val'zareq: Portends of War					
-					q( 10666),	-- The Lexicon Demonica
 					qa(10678),	-- The Main Course!
 					q( 11075),	-- The Netherwing Mines
 					qa(10772),	-- The Path of Conquest
@@ -829,7 +816,6 @@ _.Zones =
 					qa(10569),	-- The Sketh'lon Wreckage
 					qa(10585),	-- The Summoning Chamber
 					qa(10563),	-- To Legion Hold
-					q( 10667),	-- Underworld Loam
 					qa(11044),	-- Visions of Destruction
 					qa(10648, {	-- Wanted: Uvuros, Scourge of Shadowmoon
 						i(31112),
