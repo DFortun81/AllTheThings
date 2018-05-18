@@ -105,7 +105,14 @@ _.Zones =
 					q(10112),	-- A Personal Favor
 					q(11029),	-- A Shabby Disguise
 					q(10210),	-- A'dal
-					q(10664),	-- Additional Materials
+--]]
+					q( 10664, {	-- Additional Materials
+						["groups"] = {
+						},
+						["qg"] = 21465,	-- David Wayne
+						["sourceQuests"] = { 10663 },	-- The Hermit Smith
+					}),
+--[[
 					q(11885),	-- Adversarial Blood
 					q(11024),	-- An Ally in Lower City
 					q(10913),	-- An Improper Burial
@@ -121,8 +128,13 @@ _.Zones =
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 					}),	
---[[					
-					q(10676),	-- Bane of the Illidari
+					q(10676, {	-- Bane of the Illidari
+						["g"] = {
+						},
+						["qg"] = 21465,	-- David Wayne
+						["sourceQuests"] = { 10670, 10667 },	-- Tear of the Earthmother & Underworld Loam
+					}),
+--[[
 					qh(  9891),	-- Because Kilrath is a Coward
 					q(10878),	-- Before Darkness Falls
 					q(9978),	-- By Any Means Necessary
@@ -196,7 +208,14 @@ _.Zones =
 --[[					
 					q(11008),	-- Fires Over Skettis
 					q(10920),	-- For the Fallen
-					q(10665),	-- Fresh from the Mechanar
+--]]
+					qdg(q(10665, {	-- Fresh from the Mechanar
+						["g"] = {
+						},
+						["qg"] = 21465,	-- David Wayne
+						["sourceQuests"] = { 10664 },	-- Additional Materials
+					})),
+--[[
 					q(10929),	-- Fumping
 					qh( 29582),	-- Grek's Crazy Night
 					q(11056),	-- Hazzik's Bargain
@@ -264,11 +283,15 @@ _.Zones =
 					qh( 10023),	-- Patriarch Ironjaw
 					qa( 11882),	-- Playing with Fire
 --]]					
-					q(10679,  {  -- Quenching the Blade
-						i(30788),
-						i(30789),
-						i(30787),
-						i(31745),
+					q(10679, {	-- Quenching the Blade
+						["g"] = {
+							i(30788),	-- Illidari-Bane Broadsword
+							i(30789),	-- Illidari-Bane Claymore
+							i(30787),	-- Illidari-Bane Mageblade
+							i(31745),	-- Illidari-Bane Dagger
+						},
+						["qg"] = 21465,	-- David Wayne
+						["sourceQuests"] = { 10676 },	-- Bane of the Illidari
 					}),
 --[[					
 					q(10037),	-- Rather Be Fishin'
@@ -305,8 +328,13 @@ _.Zones =
 					qh(  9890),	-- Success!
 					qh( 10862),	-- Surrender to the Horde
 					q(10873),	-- Taken in the Night
-					q(10670),	-- Tear of the Earthmother
---]]					
+--]]
+					qdg(q(10670, {	-- Tear of the Earthmother
+						["g"] = {
+						},
+						["qg"] = 21465,	-- David Wayne
+						["sourceQuests"] = { 10665, 10666 },	-- Fresh From the Mechanar & The Lexicon Demonica
+					})),
 					q(11073,  {  -- Terokk's Downfall
 						i(32831),
 						i(32830),
@@ -358,8 +386,13 @@ _.Zones =
 					qa( 10662),	-- The Hermit Smith
 					qh(  9888),	-- The Impotent Leader
 					q(10896),	-- The Infested Protectors
-					q(10666),	-- The Lexicon Demonica
---]]					
+--]]
+					qdg(q(10666, {	-- The Lexicon Demonica
+						["g"] = {
+						},
+						["qg"] = 21465,	-- David Wayne
+						["sourceQuests"] = { 10664 },	-- Additional Materials
+					})),
 					q(11667, { -- The One That Got Away
 						i(34863,  {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
@@ -383,9 +416,14 @@ _.Zones =
 					q(11074),	-- Tokens of the Descendants
 					qh( 10036),	-- Torgos!
 					qa( 10035),	-- Torgos!
-					q(10667),	-- Underworld Loam
-					qa(  9998),	-- Unruly Neighbors
---]]					
+--]]
+					qdg(q(10667, {	-- Underworld Loam
+						["g"] = {
+						},
+						["qg"] = 21465,	-- David Wayne
+						["sourceQuests"] = { 10665, 10666 },	-- Fresh From the Mechanar & The Lexicon Demonica
+					})),
+--					qa(  9998),	-- Unruly Neighbors
 					q(10861,  {  -- Veil Lithic: Preemptive Strike
 						i(25959),
 						i(25961),
