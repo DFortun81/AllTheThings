@@ -144,9 +144,14 @@ _.Achievements =
 	}),
 	n(-9960, { -- Professions
 		["groups"] = {
-			ach(10587), -- Hot Swapper
-			ach(9071), -- Inspector Gagetzan
-			ach(10588), -- The Shortest Distance
+			n(-9970, { -- General
+			}),
+			n(-9971, { -- Cooking
+			}),
+			n(-9972, { -- First Aid
+			}),
+			n(-9973, { -- Archaeology
+			}),
 		},
 	}),
 	n(-9961, { -- Reputation
