@@ -18,6 +18,57 @@ _.Achievements =
 			ach(6193), -- Level 90
 			ach(9060), -- Level 100
 		}),
+		ach(5753, {	-- Cataclysmically Delicious
+			crit(1), -- 
+			crit(2), -- 
+			crit(3), -- 
+			crit(4), -- 
+			crit(5), -- 
+			crit(6), -- 
+			crit(7), -- 
+			crit(8), -- 
+			crit(9), -- 
+			crit(10), -- 
+			crit(11), -- 
+			crit(12), -- 
+			crit(13), -- 
+			crit(14), -- 
+			crit(15), -- 
+			crit(16), -- 
+			crit(17), -- 
+			crit(18), -- 
+			crit(19), -- 
+			crit(20), -- 
+			crit(21), -- 
+			crit(22), -- 
+			crit(23), -- 
+			crit(24), -- 
+			crit(25), -- 
+			crit(26), -- 
+			crit(27), -- 
+			crit(28), -- 
+			crit(29), -- 
+			crit(30), -- 
+			crit(31), -- 
+			crit(32), -- 
+			crit(33), -- 
+			crit(34), -- 
+			crit(35), -- 
+			crit(36), -- 
+			crit(37), -- 
+			crit(38), -- 
+			crit(39), -- 
+			crit(40), -- 
+			crit(41), -- 
+			crit(42), -- 
+			crit(43), -- 
+			crit(44), -- 
+			crit(45), -- 
+			crit(46), -- 
+			crit(47), -- 
+			crit(48), -- 
+		}),	
+		
 	}),
 	n(-9956, { -- Quests
 	}),
