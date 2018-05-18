@@ -664,7 +664,23 @@ AllTheThings.Locales.enUS = {
 		[-9951] = "Interface\\Icons\\ClassIcon_Priest", 						-- Discipline / Holy Spec
 		[-9952] = "Interface\\Icons\\ClassIcon_Druid", 							-- Guardian / Feral Spec
 		[-9953] = "Interface\\Icons\\ClassIcon_Warrior", 						-- Arms / Fury Spec
-		[-9954] = "Interface\\Icons\\ClassIcon_DeathKnight", 					-- Frost / Unholoy Spec
+		[-9954] = "Interface\\Icons\\ClassIcon_DeathKnight", 					-- Frost / Unholy Spec
+		[-9955] = "Interface\\Icons\\Paladin_Protection",						-- General
+		[-9956] = "Interface\\Icons\\Paladin_Protection",						-- Quests
+		[-9957] = "Interface\\Icons\\Paladin_Protection",						-- Exploration
+		[-9958] = "Interface\\Icons\\Paladin_Protection",						-- Player vs Player
+		[-9959] = "Interface\\Icons\\Paladin_Protection",						-- Dungeons & Raids
+		[-9960] = "Interface\\Icons\\Paladin_Protection",						-- Professions
+		[-9961] = "Interface\\Icons\\Paladin_Protection",						-- Reputation
+		[-9962] = "Interface\\Icons\\Paladin_Protection",						-- World Events
+		[-9963] = "Interface\\Icons\\Paladin_Protection",						-- Pet Battles
+		[-9964] = "Interface\\Icons\\Paladin_Protection",						-- Collections
+		[-9965] = "Interface\\Icons\\Paladin_Protection",						-- Class Hall
+		[-9966] = "Interface\\Icons\\Paladin_Protection",						-- Draenor Garrison
+		[-9967] = "Interface\\Icons\\Paladin_Protection",						-- Scenarios
+		[-9968] = "Interface\\Icons\\Paladin_Protection",						-- Legacy
+		[-9969] = "Interface\\Icons\\Paladin_Protection",						-- Feats of Strength
+
 		[-100001] = "Interface\\Icons\\inv_artifact_tome01", 					-- AK Research Book
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1265,6 +1281,8 @@ AllTheThings.Locales.enUS = {
 -- Factions
 		[-9913] = FACTION_HORDE, 													-- Horde
 		[-9914] = FACTION_ALLIANCE, 												-- Alliance
+
+		
 -- Classes
 		[-9915] = GetSpellInfo(137032),	-- Discipline Priest Spec
 		[-9916] = GetSpellInfo(137031),	-- Holy Priest Spec
@@ -1306,6 +1324,22 @@ AllTheThings.Locales.enUS = {
 		[-9952] = GetSpellInfo(234890).." & "..GetSpellInfo(137011), 				-- Guardian / Feral Druid Spec
 		[-9953] = GetSpellInfo(226693).." & "..GetSpellInfo(137050), 				-- Arms / Fury Warrior Spec
 		[-9954] = GetSpellInfo(200078).." & "..GetSpellInfo(137007), 				-- Frost / Unholy Death Knight Spec
+		------ ACHIEVEMENT HEADER SECTION ------
+		[-9955] = STAT_CATEGORY_GENERAL,				-- General
+		[-9956] = QUESTS_LABEL,							-- Quests
+		[-9957] = select(1,GetCategoryInfo(97)),		-- Exploration
+		[-9958] = BUG_CATEGORY14,						-- Player vs Player
+		[-9959] = GROUP_FINDER,							-- Dungeons & Raids
+		[-9960] = TRADE_SKILLS,							-- Professions
+		[-9961] = TUTORIAL_TITLE16,						-- Reputation
+		[-9962] = BATTLE_PET_SOURCE_7,					-- World Events
+		[-9963] = SHOW_PET_BATTLES_ON_MAP_TEXT,			-- Pet Battles
+		[-9964] = COLLECTIONS,							-- Collections
+		[-9965] = select(1,GetCategoryInfo(15281)),		-- Class Hall
+		[-9966] = select(1,GetCategoryInfo(15237)),		-- Draenor Garrison
+		[-9967] = SCENARIOS,							-- Scenarios
+		[-9968] = LFG_LIST_LEGACY,						-- Legacy
+		[-9969] = select(1,GetCategoryInfo(81)),		-- Feats of Strength
 
 		[-100001] = ITEM_QUALITY6_DESC, 											-- Artifact
 

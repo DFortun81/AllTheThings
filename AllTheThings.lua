@@ -6183,13 +6183,22 @@ function app:GetDataCache()
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);
 		end
-		
+	
 		-- Group Finder
 		if app.Categories.GroupFinder then
 			db = app.CreateAchievement(4476, app.Categories.GroupFinder);	-- Looking for More
 			db.f = 0;
 			db.expanded = false;
 			db.text = DUNGEONS_BUTTON;
+			table.insert(g, db);
+		end
+		
+		-- Achievements
+		if app.Categories.Achievements then
+			db = app.CreateAchievement(4496, app.Categories.Achievements);	-- It's Over Nine Thousand
+			db.f = 0;
+			db.expanded = false;
+			db.text = TRACKER_HEADER_ACHIEVEMENTS;
 			table.insert(g, db);
 		end
 		
