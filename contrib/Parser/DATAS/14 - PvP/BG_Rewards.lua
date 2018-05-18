@@ -138,7 +138,7 @@ _.PVP =
 		["groups"] = {
 			n(-302, {	-- Level 80-84
 				["groups"] = {
-					i(134616),	-- Inflammatory Cord
+					i(134616),	-- Inflammatory Cord*
 					i(134615),	-- Inflammatory Hood*
 					i(134614),	-- Inflammatory Treads*
 					i(134622),	-- Incendiary Belt
@@ -152,7 +152,7 @@ _.PVP =
 					i(134629),	-- Firescored Warboots
 					i(134634),	-- Scorching Cloak*
 					i(134607),	-- Scorching Cleaver
-					i(134618),	-- Scorching Gavel
+					i(134618),	-- Scorching Gavel*
 					i(134606),	-- Scorching Greatsword
 					i(134633),	-- Scorching Hacker
 					i(134608),	-- Scorching Longbow

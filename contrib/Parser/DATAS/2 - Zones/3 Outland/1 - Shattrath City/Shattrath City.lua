@@ -781,7 +781,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 23449,	-- Yuula
-								["sourceQuests"] = { 11096 },	-- Threat From Above *UNTESTED*
+								["sourceQuests"] = { 11096 },	-- Threat From Above
 							}),
 							q(11028, {	-- Countdown to Doom
 								["groups"] = {
