@@ -680,6 +680,11 @@ AllTheThings.Locales.enUS = {
 		[-9967] = "Interface\\Icons\\Paladin_Protection",						-- Scenarios
 		[-9968] = "Interface\\Icons\\Paladin_Protection",						-- Legacy
 		[-9969] = "Interface\\Icons\\Paladin_Protection",						-- Feats of Strength
+		[-9970] = "Interface\\Icons\\Paladin_Protection",						-- General
+		[-9971] = "Interface\\Icons\\Paladin_Protection",						-- Cooking
+		[-9972] = "Interface\\Icons\\Paladin_Protection",						-- Fishing
+		[-9973] = "Interface\\Icons\\Paladin_Protection",						-- First Aid
+		[-9974] = "Interface\\Icons\\Paladin_Protection",						-- Archaeology
 
 		[-100001] = "Interface\\Icons\\inv_artifact_tome01", 					-- AK Research Book
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1340,6 +1345,12 @@ AllTheThings.Locales.enUS = {
 		[-9967] = SCENARIOS,							-- Scenarios
 		[-9968] = LFG_LIST_LEGACY,						-- Legacy
 		[-9969] = select(1,GetCategoryInfo(81)),		-- Feats of Strength
+		[-9970] = select(1,GetCategoryInfo(92)),		-- General
+		[-9971] = select(1,GetCategoryInfo(170)),		-- Cooking
+		[-9972] = select(1,GetCategoryInfo(171)),		-- First Aid
+		[-9973] = select(1,GetCategoryInfo(172)),		-- Fishing
+		[-9974] = select(1,GetCategoryInfo(15071)),		-- Archaeology
+
 
 		[-100001] = ITEM_QUALITY6_DESC, 											-- Artifact
 
