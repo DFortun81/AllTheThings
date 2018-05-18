@@ -4,9 +4,12 @@
 
 _.Achievements = 
 {
-	n(-9967, { -- Scenarios
+	n(-9958, { -- Player vs Player
 		["groups"] = {
-			ach(6943), -- Complete 100 Scenarios
+			n(-9997, { -- Ashran
+				["groups"] = {
+				},
+			}),
 		},
 	}),
 };
