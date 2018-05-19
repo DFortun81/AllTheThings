@@ -1105,7 +1105,7 @@ _.Zones =
 
 
 -- DUNGEON QUESTS
-					qdg(q( 10257, {	-- Capturing the Keystone
+					qdg(q( 10257, {	-- Capturing the Keystone (awarded "The Violet Tower" criteria)
 						["groups"] = {
 						},
 						["qg"] = 19481,	-- Archmage Vargoth

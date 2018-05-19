@@ -206,7 +206,6 @@ _.Zones =
 						}),
 					}),	
 --[[					
-					q(11008),	-- Fires Over Skettis
 					q(10920),	-- For the Fallen
 --]]
 					qdg(q(10665, {	-- Fresh from the Mechanar
@@ -471,6 +470,17 @@ _.Zones =
 					q(9979),	-- Wind Trader Lathrai
 					q(11004),	-- World of Shadows	
 --]]
+					faction(1031, {	-- Sha'tari Skyguard
+						["groups"] = {
+							q(11008, {	-- Fires Over Skettis
+								["g"] = {
+								},
+								["qg"] = 23048,	-- Sky Sergeant Doryn
+								["sourceQuests"] = { 11098 },	-- To Skettis!
+							}),
+						},
+						["collectible"] = false,	-- Turn off Collectible flags.
+					}),
 				}),	
 				n(-16, { 	-- Rares
 					n(16810, {	-- Bonechewer Backbreaker
