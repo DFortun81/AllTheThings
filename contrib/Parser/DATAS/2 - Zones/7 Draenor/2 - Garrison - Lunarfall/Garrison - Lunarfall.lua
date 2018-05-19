@@ -2687,13 +2687,6 @@ _.Zones =
 						i(127864), 		-- Toy
 						i(127868), 		-- Pet
 					}),
-			--[[
-					na(88223, { 	-- Sergeant Crowler - Garrison Quartermaster
-						i(141642),
-					}),
-					na(78564, { 	-- Sergeant Crowler  - Garrison Quartermaster
-						i(141642),
-					}),
 					na(91020, { 	-- Enchantress Ismae  (dust trader)
 						i(122711),
 					}),
@@ -2702,26 +2695,67 @@ _.Zones =
 						i(127724),
 						i(127742),
 					}),
-					na(91404, {		-- Samantha Scarlet (herb trader)
-						i(141642),
-						i(122599),
-						i(122600),
-						i(122605),
-						i(122710),
-						i(122713),
-						i(127723),
-						i(127728),
-						i(127741),
-						i(127746),
-						i(128160),
-						i(128161),
-						i(128409),
-						i(128410),
-						i(128411),
-						i(128412),
-						i(128413),
-						i(128414),
+					na(91404, {		-- Samantha Scarlet <Herb Trader>
+						i(108996, {	-- Alchemical Catalyst
+							i(122599, {	-- Tome of Sorcerous Elements
+								["spellID"] = 0,
+								["groups"] = {
+									recipe(181637),	-- Transmute: Sorcerous Air to Earth
+									recipe(181633),	-- Transmute: Sorcerous Air to Fire
+									recipe(181636),	-- Transmute: Sorcerous Air to Water
+									recipe(181631),	-- Transmute: Sorcerous Earth to Air
+									recipe(181632),	-- Transmute: Sorcerous Earth to Fire
+									recipe(181635),	-- Transmute: Sorcerous Earth to Water
+									recipe(181627),	-- Transmute: Sorcerous Fire to Air
+									recipe(181625),	-- Transmute: Sorcerous Fire to Earth
+									recipe(181628),	-- Transmute: Sorcerous Fire to Water
+									recipe(181630),	-- Transmute: Sorcerous Water to Air
+									recipe(181629),	-- Transmute: Sorcerous Water to Earth
+									recipe(181634),	-- Transmute: Sorcerous Water to Fire
+								},
+							}),
+							i(122605, {	-- Tome of the Stones
+								["spellID"] = 0,
+								["groups"] = {
+									recipe(181650),	-- Stone of Fire
+									recipe(181648),	-- Stone of the Earth
+									recipe(181649),	-- Stone of the Waters
+									recipe(181647),	-- Stone of Wind
+								},
+							}),
+							i(122600),	-- Recipe: Savage Blood
+							i(128160),	-- Recipe: Wildswater
+							i(128161),	-- Recipe: Elemental Distillate
+						}),
+						i(114931, {	-- Cerulean Pigment
+							i(128410),	-- Technique: Mass Mill Fireweed
+							i(128409),	-- Technique: Mass Mill Frostweed
+							i(128411),	-- Technique: Mass Mill Gorgrond Flytrap
+							i(128413),	-- Technique: Mass Mill Nagrand Arrowbloom
+							i(128412),	-- Technique: Mass Mill Starflower
+							i(128414),	-- Technique: Mass Mill Talador Orchid
+							i(127723),	-- Technique: Mighty Ensorcelled Tarot
+							i(127728),	-- Technique: Mighty Weapon Crystal
+							i(127741),	-- Technique: Savage Ensorcelled Tarot
+							i(127746),	-- Technique: Savage Weapon Crystal
+							i(141642),	-- Technique: Tome of the Clear Mind
+							i(122713),	-- Technique: The Spirit of War
+						}),
+						i(109125, {	-- Fireweed
+							i(120945),	-- Primal Spirit
+						}),
+						i(109127, {	-- Starflower
+							i(122710),	-- Recipe: Primal Alchemy
+						}),
 					}),	
+					na(88223, { 	-- Sergeant Crowler - Garrison Quartermaster
+						["qgs"] = {78564, 88223},
+						["groups"] = {
+							i(114931, {	-- Cerulean Pigment
+								i(141642),	-- Technique: Tome of the Clear Mind
+							}),
+						},
+					}),
 					na(91024, { 	-- Jake the Fox - Leather Trader
 						i(122715),
 						i(127722),
@@ -2742,28 +2776,6 @@ _.Zones =
 						i(127745),
 						i(127747),
 					}),
-					n(-102, { 		-- Alchemy Lab
-						na(77363, { 		-- Mary Kearie 
-							i(109558), 			-- Teaches alchemical catalyst, crescent oil, Draenic invis, living action, mana, swiftness, water breathing/walking, pure rage, secrets of draenor alchemy
-							i(112023),
-							i(112024),
-							i(112026),
-							i(112027),
-							i(112030),
-							i(112031),
-							i(112033),
-							i(112034),
-							i(112037),
-							i(112038),
-							i(112039),
-							i(112040),
-							i(112041),
-							i(112042),
-							i(112045),
-							i(112047),
-						}),
-					}),
-			]]--							
 					n(-104, { 			-- Barracks
 						na(77379, { 		-- Jonathan Stephens 
 							i(122298), 			-- Toy

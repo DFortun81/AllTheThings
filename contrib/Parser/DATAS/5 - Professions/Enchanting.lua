@@ -2,7 +2,7 @@
 profession(333, { -- Enchanting
 	n(-26, {	-- Drop	-- TODO: Add the drop locations
 		i(111922, {		-- Draenor Enchanting
-			["collectible"] = false,
+			["spellID"] = 0,
 			["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
 			["groups"] = {
 				recipe(177043),	-- Secrets of Draenor Enchanting
@@ -196,7 +196,7 @@ profession(333, { -- Enchanting
 		["groups"] = {
 			na(77354, { 	-- Ayada the White [Alliance]
 				i(111922, {		-- Draenor Enchanting
-					["collectible"] = false,
+					["spellID"] = 0,
 					["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
 					["groups"] = {
 						recipe(177043),	-- Secrets of Draenor Enchanting
@@ -277,7 +277,7 @@ profession(333, { -- Enchanting
 			}),
 			nh(79821, { 	-- Yukla Greenshadow [Horde]
 				i(111922, {		-- Draenor Enchanting
-					["collectible"] = false,
+					["spellID"] = 0,
 					["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
 					["groups"] = {
 						recipe(177043),	-- Secrets of Draenor Enchanting
@@ -915,5 +915,10 @@ profession(333, { -- Enchanting
 			recipe(191000),	-- Word of Strength [Rank 2]
 			recipe(191017),	-- Word of Strength [Rank 3]
 		}),
+		--[[
+		tier(8, {	-- Battle for Azeroth
+			
+		}),
+		]]--
 	}),
 });
