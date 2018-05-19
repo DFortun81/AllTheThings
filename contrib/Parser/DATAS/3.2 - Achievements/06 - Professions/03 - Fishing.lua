@@ -6,7 +6,7 @@ _.Achievements =
 {
 	n(-9960, { -- Professions
 		["groups"] = {
-			n(-9972, { -- First Aid
+			n(-9972, { -- Fishing
 				["groups"] = {
 					--- START ACHIEVEMENTS HERE ---
 				},
