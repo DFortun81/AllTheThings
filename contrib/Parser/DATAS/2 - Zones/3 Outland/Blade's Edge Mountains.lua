@@ -108,20 +108,13 @@ _.Zones =
 --[[					
 					qa( 10795),	-- A Date with Dorgok
 					q(10506),	-- A Dire Situation
-					q(11061),	-- A Father's Duty
-					q(11079),	-- A Fel Whip For Gahk
-					q(11091),	-- A Special Thank You
 					q(10682),	-- A Time for Negotiation...
-					q(11058),	-- An Apexis Relic
-					q(11119),	-- Assault on Bash'ir Landing!
 					q(11051),	-- Banish More Demons
 					q(11026),	-- Banish the Demons
 					qh( 10783),	-- Baron Sablemane
 					qa( 10818),	-- Baron Sablemane Has Requested Your Presence
 					qh( 10749),	-- Baron Sablemane's Poison
 					qh( 10545),	-- Bladespire Kegger
-					q(11023),	-- Bomb Them Again!
-					q(11010),	-- Bombing Run
 					q(11102),	-- Bombing Run
 					qa( 11043),	-- Building a Better Gryphon
 					qa( 12359),	-- Candy Bucket
@@ -212,9 +205,7 @@ _.Zones =
 					}),
 --[[					
 					qa( 10517),	-- Gorr'Dim, Your Time Has Come...
-					q(10998),	-- Grim(oire) Business
 					qh( 10543),	-- Grimnok and Korgaah, I Am For You!
-					q(11059),	-- Guardian of the Monument
 					q(10904),	-- Harvesting the Fel Ammunition
 					qa( 39199),	-- Hero's Call: Blade's Edge Mountains
 					qh( 11843),	-- Honor the Flame
@@ -231,7 +222,6 @@ _.Zones =
 						i(31432),
 					}),
 --[[					
-					q(11000),	-- Into the Soulgrinder
 					qa( 10801),	-- It's a Trap!
 					qh( 10785),	-- It's a Trap!
 					qh( 10928),	-- Killing the Crawlers
@@ -262,9 +252,7 @@ _.Zones =
 					q(10812),	-- Mystery Mask
 					q(10981),	-- Nexus-Prince Shaffar's Personal Chamber
 					qa(  9794),	-- No Time for Curiosity
-					q(11009),	-- Ogre Heaven
 					qh( 10714),	-- On Spirit's Wings
-					q(11030),	-- Our Boy Wants To Be A Skyguard Ranger
 --]]
 					qh(11036, {	-- Out of This World Produce!
 						["groups"] = {
@@ -324,7 +312,7 @@ _.Zones =
 						i(31457),
 						i(31458),
 						i(31459),
-						i(30690), 		-- TOY!
+						i(30690), 	-- TOY!
 					}),
 					qa(10806, {	-- Showdown
 						i(31546),
@@ -386,7 +374,6 @@ _.Zones =
 					}),
 --[[					
 					q(10502),	-- The Bloodmaul Ogres
-					q(11025),	-- The Crystals
 --]]					
 					qa(10690, {	-- The Den Mother
 						i(31423),
@@ -400,8 +387,6 @@ _.Zones =
 					q(10912),	-- The Hound-Master
 					q(10976),	-- The Mark of the Nexus-King
 					qh(  9795),	-- The Ogre Threat
-					q(11080),	-- The Relic's Emanation
-					q(11062),	-- The Skyguard Outpost
 					qh( 10720),	-- The Smallest Creatures
 					qh( 10618),	-- The Softest Wings
 					qh( 10718),	-- The Spirits Have Voices
@@ -415,7 +400,6 @@ _.Zones =
 --[[					
 					qh( 10851),	-- The Totems of My Enemy
 					qa( 10516),	-- The Trappings of a Vindicator
-					q(11057),	-- The Trouble Below
 					q(10825),	-- The Truth Unorbed
 --]]					
 					qh(10867, {	-- There Can Be Only One Response
@@ -427,7 +411,6 @@ _.Zones =
 --[[					
 					qh( 10542),	-- They Stole Me Hookah and Me Brews!
 					qh( 10524),	-- Thunderlord Clan Artifacts
-					q(11078),	-- To Rule The Skies
 					qa( 10674),	-- Trapping the Light Fantastic
 					q(10829),	-- Treebole Must Know
 					qh( 10566),	-- Trial and Error
@@ -456,8 +439,6 @@ _.Zones =
 					}),
 --[[					
 					qh( 10614),	-- Whispers on the Wind
-					q(11066),	-- Wrangle More Aether Rays!
-					q(11065),	-- Wrangle Some Aether Rays!
 					q(10894),	-- Wyrmskull Watcher
 --]]					
 					q(10821, {	-- You're Fired!
@@ -466,6 +447,12 @@ _.Zones =
 					}),
 					faction(1038, {	-- Ogri'la
 						["g"] = {
+							q(11057, {	-- The Trouble Below
+								["g"] = {
+								},
+								["qg"] = 23233,	-- Chu'a'lor
+								["isBreadcrumb"] = true,	-- for following Mog'dorg quests
+							}),
 							q(10997, {	-- Even Gronn Have Standards
 								["g"] = {
 								},
@@ -483,6 +470,113 @@ _.Zones =
 								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10983 },	-- Mog'dorg the Wizened
+							}),
+							q(10998, {	-- Grim(oire) Business
+								["g"] = {
+								},
+								["qg"] = 22941,	-- Mog'dorg the Wizened
+								["sourceQuests"] = { 10997, 10995, 10996 },	-- Even Gronn Have Standards, Grulloc Has Two Skulls, & Maggoc's Treasure Chest
+							}),
+							q(11000, {	-- Into the Soulgrinder
+								["g"] = {
+								},
+								["qg"] = 22941,	-- Mog'dorg the Wizened
+								["sourceQuests"] = { 10998 },	-- Grim(oire) Business
+							}),
+							q(11009, {	-- Ogre Heaven
+								["g"] = {
+								},
+								["qg"] = 22941,	-- Mog'dorg the Wizened
+								["sourceQuests"] = { 11000 },	-- Into the Soulgrinder
+							}),
+							q(11025, {	-- The Crystals
+								["g"] = {
+								},
+								["qg"] = 23233,	-- Chu'a'lor
+							}),
+							q(11058, {	-- An Apexis Relic
+								["g"] = {
+								},
+								["qg"] = 23233,	-- Chu'a'lor
+								["sourceQuests"] = { 11025 },	-- The Crystals
+							}),
+							q(11080, {	-- The Relic's Emanation
+								["g"] = {
+								},
+								["qg"] = 23233,	-- Chu'a'lor
+								["sourceQuests"] = { 11058 },	-- An Apexis Relic
+							}),
+							q(11059, {	-- Guardian of the Monument
+								["g"] = {
+								},
+								["qg"] = 23233,	-- Chu'a'lor
+								["sourceQuests"] = { 11080 },	-- The Relic's Emanation (available before turn-in)
+							}),
+							q(11091, {	-- A Special Thank You
+								["g"] = {
+								},
+								["qg"] = 23233,	-- Chu'a'lor
+								["sourceQuests"] = { 11059 },	-- Guardian of the Monument
+							}),
+							q(11030, {	-- Our Boy Wants To Be A Skyguard Ranger
+								["g"] = {
+								},
+								["qg"] = 23316,	-- Torkus
+								["sourceQuests"] = { 11025 },	-- The Crystals
+							}),
+							q(11061, {	-- A Father's Duty
+								["g"] = {
+								},
+								["qg"] = 23316,	-- Torkus
+								["sourceQuests"] = { 11030 },	-- Our Boy Wants To Be A Skyguard Ranger
+							}),
+							q(11079, {	-- A Fel Whip For Gahk (awarded "Ogres of Ogri'la" criteria)
+								["g"] = {
+								},
+								["qg"] = 23300,	-- Gahk
+								["sourceQuests"] = { 11061 },	-- A Father's Duty
+							}),
+							q(11062, {	-- The Skyguard Outpost
+								["g"] = {
+								},
+								["qg"] = 23233,	-- Chu'a'lor
+								["sourceQuests"] = { 11030 },	-- Our Boy Wants To Be A Skyguard Ranger
+							}),
+							q(11010, {	-- Bombing Run
+								["g"] = {
+								},
+								["qg"] = 23120,	-- Sky Sergeant Vanderlip
+								["sourceQuests"] = { 11062 },	-- The Skyguard Outpost
+							}),
+							q(11023, {	-- Bomb Them Again!
+								["g"] = {
+								},
+								["qg"] = 23120,	-- Sky Sergeant Vanderlip
+								["sourceQuests"] = { 11010 },	-- Bombing Run
+							}),
+							q(11119, {	-- Assault on Bash'ir Landing!
+								["g"] = {
+								},
+								["qg"] = 23334,	-- Sky Commander Keller
+								["sourceQuests"] = { 11010 },	-- Bombing Run
+							}),
+							q(11065, {	-- Wrangle Some Aether Rays!
+								["g"] = {
+								},
+								["qg"] = 23335,	-- Skyguard Khatie
+								["sourceQuests"] = { 11010 },	-- Bombing Run
+							}),
+							q(11066, {	-- Wrangle More Aether Rays!
+								["g"] = {
+								},
+								["qg"] = 23335,	-- Skyguard Khatie
+								["sourceQuests"] = { 11065 },	-- Wrangle Some Aether Rays!
+							}),
+							q(11078, {	-- To Rule The Skies
+								["g"] = {
+								},
+								["qg"] = 23334,	-- Sky Commander Keller
+								["sourceQuests"] = { 11010, 11065 },	-- Bombing Run & Wrangle Some Aether Rays!
 							}),
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
@@ -509,73 +603,75 @@ _.Zones =
 					}),
 				}),
 				n( -2, {	-- Vendors
-					n(23245, {		-- Aether-tech Master
+					n(23245, {	-- Aether-tech Master
 						["groups"] = {
-							i(32626, {	-- Large Copper Metamorphosis Geode
-								i(31568),	-- Mistshoud Helm
-							}),
-							i(32629, {	-- Large Gold Metamorphosis Geode
-								i(31552),	-- Windchanneller's Miter
-							}),
-							i(32624, {	-- Large Iron Metamorphosis Geode
-								i(31576),	-- Slatesteel Helm
-							}),
-							i(32628, {	-- Large Silver Metamorphosis Geode
-								i(31560),	-- Skystalker's Shroud
-							}),
-							i(32627, {	-- Small Copper Metamorphosis Geode
-								i(31575),	-- Mistshroud Gauntlets
-							}),
-							i(32630, {	-- Small Gold Metamorphosis Geode
-								i(31559),	-- Windchanneller's Gloves
-							}),
-							i(32625, {	-- Small Iron Metamorphosis Geode
-								i(31583),	-- Slatesteel Gauntlets
-							}),
-							i(32631, {	-- Small Silver Metamorphosis Geode
-								i(31567),	-- Skystalker's Gloves
+							i(32572, {	-- Apexis Crystal
+								i(32626, {	-- Large Copper Metamorphosis Geode
+									i(31568),	-- Mistshoud Helm
+								}),
+								i(32629, {	-- Large Gold Metamorphosis Geode
+									i(31552),	-- Windchanneller's Miter
+								}),
+								i(32624, {	-- Large Iron Metamorphosis Geode
+									i(31576),	-- Slatesteel Helm
+								}),
+								i(32628, {	-- Large Silver Metamorphosis Geode
+									i(31560),	-- Skystalker's Shroud
+								}),
+								i(32627, {	-- Small Copper Metamorphosis Geode
+									i(31575),	-- Mistshroud Gauntlets
+								}),
+								i(32630, {	-- Small Gold Metamorphosis Geode
+									i(31559),	-- Windchanneller's Gloves
+								}),
+								i(32625, {	-- Small Iron Metamorphosis Geode
+									i(31583),	-- Slatesteel Gauntlets
+								}),
+								i(32631, {	-- Small Silver Metamorphosis Geode
+									i(31567),	-- Skystalker's Gloves
+								}),
 							}),
 						},
 						["description"] = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
 					}),
 					a(n(19499, {	-- Cahill <Weaponsmith>
-						i(30753),		-- Warphorn Spear
-						i(30755),		-- Mag'hari Fighting Claw
+						i(30753),	-- Warphorn Spear
+						i(30755),	-- Mag'hari Fighting Claw
 					})),
-					nh(19837, {		-- Daga Ramba <Potions>
+					nh(19837, {	-- Daga Ramba <Potions>
 						i(22909),	-- Recipe: Elixir of Major Defense
 						i(22911),	-- Recipe: Major Dreamless Sleep Potion
 						i(22907),	-- Recipe: Super Mana Potion
 					}),
-					n(23428, {		-- Jho'nass <Ogri'la Quartermaster>
+					n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 						i(32569, { -- Apexis Shard
-							i(32650),		-- Cerulean Crystal Rod
-							i(32652),		-- Ogri'la Aegis
-							i(32653),		-- Apexis Cloak
-							i(32647),		-- Shard-Bound Bracers
-							i(32648),		-- Vortex Walking Boots
-							i(32651),		-- Crystal Orb of Enlightenment
-							i(32645),		-- Crystalline Crossbow
-							i(32828),		-- Ogri'la Tabard
+							i(32650),	-- Cerulean Crystal Rod
+							i(32652),	-- Ogri'la Aegis
+							i(32653),	-- Apexis Cloak
+							i(32647),	-- Shard-Bound Bracers
+							i(32648),	-- Vortex Walking Boots
+							i(32651),	-- Crystal Orb of Enlightenment
+							i(32645),	-- Crystalline Crossbow
+							i(32828),	-- Ogri'la Tabard
 						}),
 					}),
-					na(21113, {		-- Sassa Weldwell <Trade Goods>
+					na(21113, {	-- Sassa Weldwell <Trade Goods>
 						i(31674),	-- Recipe: Crunchy Serpent
 						i(31675),	-- Recipe: Mok'Nathal Shortribs
 					}),
-					n(22099, {		-- Wyrmcult Provisioner
+					n(22099, {	-- Wyrmcult Provisioner
 						["groups"] = {
 							i(31341),	-- Wyrmcultist's Cloak
 						},
 						["description"] = "To access this vendor, you must be wearing an Overseer Disguise. To get the disguise, you must either be currently on, or have completed, the quest 'Meeting at the Blackwing Coven' which will allow you to loot 'Costume Scraps' from Wyrmcultists. You will need 5 Costume Scraps to make an Overseer Disguise.|r",
 					}),
-					n(20916, {		-- Xerintha Ravenoak <Food & Drink>
+					n(20916, {	-- Xerintha Ravenoak <Food & Drink>
 						i(31674),	-- Recipe: Crunchy Serpent
 						i(31675),	-- Recipe: Mok'Nathal Shortribs
 					}),
-					n(20917, {		-- Zinyen Swiftstrider <Weapon Vendor>
-						i(30753),		-- Warphorn Spear
-						i(30755),		-- Mag'hari Fighting Claw
+					n(20917, {	-- Zinyen Swiftstrider <Weapon Vendor>
+						i(30753),	-- Warphorn Spear
+						i(30755),	-- Mag'hari Fighting Claw
 					}),
 				}),
 				n(  0, {	-- Zone Drop
@@ -755,10 +851,10 @@ _.Zones =
 								i(32663),	-- Apexis Cleaver
 							})),
 							dr(100, i(32683, {	-- Jet Scale of Furywing
-								i(31942),			-- Deathwing Brood Cloak
+								i(31942),		-- Deathwing Brood Cloak
 							})),
 						},
-						["description"] = "Use 35 Apexis Shards for each summon of Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
+						["description"] = "Use 35 Apexis Shards on Furywing's Egg at 66.7, 14.5 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
 					}),
 					n(22281, {	-- Galvanoth
 						dr(1.1, i(32677, {	-- Depleted Cloak
@@ -817,7 +913,7 @@ _.Zones =
 							})),
 							
 						},
-						["description"] = "Use 35 Apexis Shards for each summon of Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
+						["description"] = "Use 35 Apexis Shards on Insidion's Egg at 62.7 7.3 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
 					}),
 					n(23154, {	-- Mana-Debt Slave
 						dr(.01, i(32676, {	-- Depleted Cloth Bracers
@@ -877,10 +973,10 @@ _.Zones =
 								i(32663),	-- Apexis Cleaver
 							})),
 							dr(100, i(32682, {	-- Obsidia Scale
-								i(31942), 			-- Deathwing Brood Cloak
+								i(31942), 		-- Deathwing Brood Cloak
 							})),
 						},
-						["description"] = "Use 35 Apexis Shards for each summon of Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
+						["description"] = "Use 35 Apexis Shards on Obsidia's Egg at 34.0, 54.7 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
 					}),
 					n(24917, {	-- Phase Wyrm
 						dr(.01, i(32674, {	-- Depleted Sword
@@ -914,10 +1010,10 @@ _.Zones =
 								i(32663),	-- Apexis Cleaver
 							})),
 							dr(100, i(32681, {	-- Onyx Scale of Rivendark
-								i(31942), 			-- Deathwing Brood Cloak
+								i(31942), 		-- Deathwing Brood Cloak
 							})),
 						},
-						["description"] = "Use 35 Apexis Shards for each summon of Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
+						["description"] = "Use 35 Apexis Shards on Rivendark's Egg at 27.2, 64.9 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
 					}),
 					n(22180, {	-- Shard-Hide Boar
 						dr(.02, i(32676, {	-- Depleted Cloth Bracers
@@ -940,21 +1036,24 @@ _.Zones =
 						})),
 					}),
 					n(23333, {	-- The Grand Collector
-						dr(4.0, i(32676, {	-- Depleted Cloth Bracers
-							i(32655),	-- Crystalweave Bracers
-						})),
-						dr(3.0, i(32671, {	-- Depleted Mace
-							i(32661),	-- Apexis Crystal Mace
-						})),
-						dr(0.8, i(32679, {	-- Depleted Staff
-							i(32662),	-- Flaming Quartz Staff
-						})),
-						dr(1.9, i(32674, {	-- Depleted Sword
-							i(32660),	-- Crystal Forged Sword
-						})),
-						dr(5.0, i(32670, {	-- Depleted Two-Handed Axe
-							i(32663),	-- Apexis Cleaver
-						})),
+						["g"] = {
+							dr(4.0, i(32676, {	-- Depleted Cloth Bracers
+								i(32655),	-- Crystalweave Bracers
+							})),
+							dr(3.0, i(32671, {	-- Depleted Mace
+								i(32661),	-- Apexis Crystal Mace
+							})),
+							dr(0.8, i(32679, {	-- Depleted Staff
+								i(32662),	-- Flaming Quartz Staff
+							})),
+							dr(1.9, i(32674, {	-- Depleted Sword
+								i(32660),	-- Crystal Forged Sword
+							})),
+							dr(5.0, i(32670, {	-- Depleted Two-Handed Axe
+								i(32663),	-- Apexis Cleaver
+							})),
+						},
+						["description"] = "Once every two hours, there is an event at Bash'ir Landing to defend the NPCs at Bash'ir Crystalforge (54.4, 10.8).  The Grand Collector is the final mob to spawn in this event.",
 					}),
 					n(20557, {	-- Wrath Hound
 						dr(.01, i(32679, {	-- Depleted Staff
