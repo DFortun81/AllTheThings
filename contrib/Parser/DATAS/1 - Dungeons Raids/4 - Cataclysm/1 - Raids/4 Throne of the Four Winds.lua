@@ -103,7 +103,7 @@ _.Instances =
 					d(2, {	-- Heroic
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
-							e(154, {
+							e(154, {	-- The Conclave of Wind
 								["groups"] = {
 									i(152974),	-- Breezy Essence
 									i(65369),	-- Sky Strider Belt
@@ -117,7 +117,7 @@ _.Instances =
 								},
 								["creatureID"] = 45871
 							}),
-							e(155, {
+							e(155, {	-- Al'Akir
 								["groups"] = {
 									i(152973),	-- Zephyr's Call
 									i(138836),	-- Illusion: Windfury

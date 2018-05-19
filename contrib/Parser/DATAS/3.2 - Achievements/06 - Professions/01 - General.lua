@@ -9,7 +9,7 @@ _.Achievements =
 			n(-9970, { -- General
 				["groups"] = {
 					ach(10587), -- Hot Swapper
-					ach(9071), -- Inspector Gagetzan
+					ach(9071),	-- Inspector Gagetzan
 					ach(10588), -- The Shortest Distance
 				},
 			}),

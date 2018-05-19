@@ -1,5 +1,44 @@
 -- Skinning - Skill ID 393 / Spell ID 3273
 profession(129, { -- First Aid
+	ach(131, {	-- Journeyman Medic (150)
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(132, {	-- Expert Medic (225)
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),	
+	ach(133, {	-- Artisan Medic (300)
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(134, {	-- Master Medic (375)
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(135, {	-- Grand Master Medic (450)
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(4918, {	-- Illustrious Grand Master Medic (525)
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(6838, {	-- Zen Master Medic (600)
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(9505, {	-- Draenor Medic (700)
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(10599, {	-- Legion Medic (800)
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(137, {	-- Stocking Up
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(5480, {	-- Preparing for Disaster
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(141, {	-- Ultimate Triage
+		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),					
+	ach(11138, {	-- Is There a Medic in the Zone? (10 of 16)
+		["description"] = "See Field Medic for all 16 items and suggested locations.\nWARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+	}),
 	ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
 		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 		["groups"] = {
