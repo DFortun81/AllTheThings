@@ -675,7 +675,7 @@ _.Zones =
 					}),
 				}),
 				n(  0, {	-- Zone Drop
-					n(19973, {	-- Abyssal Flamebringer
+					n( 19973, {	-- Abyssal Flamebringer
 						dr(.04, i(32673, {	-- Depleted Dagger
 							i(32659),	-- Crystal-Infused Shiv
 						})),
@@ -684,7 +684,7 @@ _.Zones =
 						})),
 						dr(0.8, i(22925)),	-- Recipe: Major Holy Protection Potion
 					}),
-					n(22181, {	-- Aether Ray
+					n( 22181, {	-- Aether Ray
 						dr(.01, i(32677, {	-- Depleted Cloak
 							i(32665),	-- Crystalweave Cape
 						})),
@@ -698,7 +698,7 @@ _.Zones =
 							i(32662),	-- Flaming Quartz Staff
 						})),
 					}),
-					n(22175, {	-- Apexis Flayer
+					n( 22175, {	-- Apexis Flayer
 						dr(.01, i(32677, {	-- Depleted Cloak
 							i(32665),	-- Crystalweave Cape
 						})),
@@ -709,7 +709,7 @@ _.Zones =
 							i(32662),	-- Flaming Quartz Staff
 						})),
 					}),
-					n(22275, {	-- Apexis Guardian
+					n( 22275, {	-- Apexis Guardian
 						dr(3.0, i(32677, {	-- Depleted Cloak
 							i(32665),	-- Crystalweave Cape
 						})),
@@ -735,7 +735,7 @@ _.Zones =
 							i(32663),	-- Apexis Cleaver
 						})),
 					}),
-					n(22243, {	-- Bash'ir Arcanist
+					n( 22243, {	-- Bash'ir Arcanist
 						dr(.01, i(32673, {	-- Depleted Dagger
 							i(32659),	-- Crystal-Infused Shiv
 						})),
@@ -747,7 +747,7 @@ _.Zones =
 						})),
 						dr(0.7, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
 					}),
-					n(22242, {	-- Bash'ir Spell-Thief
+					n( 22242, {	-- Bash'ir Spell-Thief
 						dr(.01, i(32677, {	-- Depleted Cloak
 							i(32665),	-- Crystalweave Cape
 						})),
@@ -759,33 +759,10 @@ _.Zones =
 						})),
 						dr(0.9, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
 					}),
-					n(19952, {	-- Bloodmaul Geomancer
+					n( 19952, {	-- Bloodmaul Geomancer
 						dr(2, i(22534)),	-- Formula: Enchant Bracer - Spellpower
 					}),
-					n(23353, {	-- Braxxus
-						dr(1.4, i(32676, {	-- Depleted Cloth Bracers
-							i(32655),	-- Crystalweave Bracers
-						})),
-						dr(1.8, i(32673, {	-- Depleted Dagger
-							i(32659),	-- Crystal-Infused Shiv
-						})),
-						dr(3.0, i(32671, {	-- Depleted Mace
-							i(32661),	-- Apexis Crystal Mace
-						})),
-						dr(0.2, i(32675, {	-- Depleted Mail Gauntlets
-							i(32656),	-- Crystalhide Handwraps
-						})),
-						dr(2.0, i(32679, {	-- Depleted Staff
-							i(32662),	-- Flaming Quartz Staff
-						})),
-						dr(2.0, i(32674, {	-- Depleted Sword
-							i(32660),	-- Crystal Forged Sword
-						})),
-						dr(5.0, i(32670, {	-- Depleted Two-Handed Axe
-							i(32663),	-- Apexis Cleaver
-						})),
-					}),
-					n(20889, {	-- Ethereum Prisoner (Group Energy Ball)
+					n( 20889, {	-- Ethereum Prisoner (Group Energy Ball)
 						["groups"] = {	
 							n(22827, {	-- Gorgolon the All-Seeing
 								i(31569),	-- Mistshroud Shoulders
@@ -805,12 +782,118 @@ _.Zones =
 						},
 						["description"] = "Once Revered with The Consortium, trade in 5 Ethereum Prison Keys to Image of Commander Ameer to obtain an Ethereum Stasis Chamber Key. The key opens the stasis chamber to reveal 1 of 5 random bosses.",
 					}),
-					n(22204, {	-- Fear Fiend
+					n( 22204, {	-- Fear Fiend
 						dr(.01, i(32677, {	-- Depleted Cloak
 							i(32665),	-- Crystalweave Cape
 						})),
 					}),
-					n(22291, {	-- Furnace Guard
+					o(185927, {	-- Fel Crystal Prism
+						["g"] = {
+							n(23353, {	-- Braxxus
+								dr(1.4, i(32676, {	-- Depleted Cloth Bracers
+									i(32655),	-- Crystalweave Bracers
+								})),
+								dr(1.8, i(32673, {	-- Depleted Dagger
+									i(32659),	-- Crystal-Infused Shiv
+								})),
+								dr(3.0, i(32671, {	-- Depleted Mace
+									i(32661),	-- Apexis Crystal Mace
+								})),
+								dr(0.2, i(32675, {	-- Depleted Mail Gauntlets
+									i(32656),	-- Crystalhide Handwraps
+								})),
+								dr(2.0, i(32679, {	-- Depleted Staff
+									i(32662),	-- Flaming Quartz Staff
+								})),
+								dr(2.0, i(32674, {	-- Depleted Sword
+									i(32660),	-- Crystal Forged Sword
+								})),
+								dr(5.0, i(32670, {	-- Depleted Two-Handed Axe
+									i(32663),	-- Apexis Cleaver
+								})),
+							}),
+							n(22281, {	-- Galvanoth
+								dr(1.1, i(32677, {	-- Depleted Cloak
+									i(32665),	-- Crystalweave Cape
+								})),
+								dr(4.0, i(32676, {	-- Depleted Cloth Bracers
+									i(32655),	-- Crystalweave Bracers
+								})),
+								dr(1.3, i(32673, {	-- Depleted Dagger
+									i(32659),	-- Crystal-Infused Shiv
+								})),
+								dr(2.0, i(32671, {	-- Depleted Mace
+									i(32661),	-- Apexis Crystal Mace
+								})),
+								dr(1.7, i(32675, {	-- Depleted Mail Gauntlets
+									i(32656),	-- Crystalhide Handwraps
+								})),
+								dr(1.8, i(32679, {	-- Depleted Staff
+									i(32662),	-- Flaming Quartz Staff
+								})),
+								dr(2.0, i(32674, {	-- Depleted Sword
+									i(32660),	-- Crystal Forged Sword
+								})),
+								dr(1.0, i(32670, {	-- Depleted Two-Handed Axe
+									i(32663),	-- Apexis Cleaver
+								})),
+							}),
+							n(23354, {	-- Mo'arg Incinerator
+								dr(1.8, i(32677, {	-- Depleted Cloak
+									i(32665),	-- Crystalweave Cape
+								})),
+								dr(1.8, i(32676, {	-- Depleted Cloth Bracers
+									i(32655),	-- Crystalweave Bracers
+								})),
+								dr(1.7, i(32673, {	-- Depleted Dagger
+									i(32659),	-- Crystal-Infused Shiv
+								})),
+								dr(2.0, i(32671, {	-- Depleted Mace
+									i(32661),	-- Apexis Crystal Mace
+								})),
+								dr(1.6, i(32675, {	-- Depleted Mail Gauntlets
+									i(32656),	-- Crystalhide Handwraps
+								})),
+								dr(2.0, i(32679, {	-- Depleted Staff
+									i(32662),	-- Flaming Quartz Staff
+								})),
+								dr(1.5, i(32674, {	-- Depleted Sword
+									i(32660),	-- Crystal Forged Sword
+								})),
+								dr(1.5, i(32670, {	-- Depleted Two-Handed Axe
+									i(32663),	-- Apexis Cleaver
+								})),
+							}),
+							n(23355, {	-- Zarcsin
+								dr(1.8, i(32677, {	-- Depleted Cloak
+									i(32665),	-- Crystalweave Cape
+								})),
+								dr(1.7, i(32676, {	-- Depleted Cloth Bracers
+									i(32655),	-- Crystalweave Bracers
+								})),
+								dr(4.0, i(32673, {	-- Depleted Dagger
+									i(32659),	-- Crystal-Infused Shiv
+								})),
+								dr(3.0, i(32671, {	-- Depleted Mace
+									i(32661),	-- Apexis Crystal Mace
+								})),
+								dr(1.4, i(32675, {	-- Depleted Mail Gauntlets
+									i(32656),	-- Crystalhide Handwraps
+								})),
+								dr(2.0, i(32679, {	-- Depleted Staff
+									i(32662),	-- Flaming Quartz Staff
+								})),
+								dr(1.9, i(32674, {	-- Depleted Sword
+									i(32660),	-- Crystal Forged Sword
+								})),
+								dr(1.3, i(32670, {	-- Depleted Two-Handed Axe
+									i(32663),	-- Apexis Cleaver
+								})),
+							}),
+						},
+						["description"] = "These crystals can be found in the Forge Camps on the west side of the zone (one example is at 35.6, 38.6).  Using 35 Apexis Shards on one will summon one of these four mobs at random.",
+					}),
+					n( 22291, {	-- Furnace Guard
 						dr(.01, i(32676, {	-- Depleted Cloth Bracers
 							i(32655),	-- Crystalweave Bracers
 						})),
@@ -824,7 +907,7 @@ _.Zones =
 							i(32663),	-- Apexis Cleaver
 						})),
 					}),
-					n(23261, {	-- Furywing
+					n( 23261, {	-- Furywing
 						["groups"] = {
 							dr(1.8, i(32677, {	-- Depleted Cloak
 								i(32665),	-- Crystalweave Cape
@@ -856,33 +939,7 @@ _.Zones =
 						},
 						["description"] = "Use 35 Apexis Shards on Furywing's Egg at 66.7, 14.5 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
 					}),
-					n(22281, {	-- Galvanoth
-						dr(1.1, i(32677, {	-- Depleted Cloak
-							i(32665),	-- Crystalweave Cape
-						})),
-						dr(4.0, i(32676, {	-- Depleted Cloth Bracers
-							i(32655),	-- Crystalweave Bracers
-						})),
-						dr(1.3, i(32673, {	-- Depleted Dagger
-							i(32659),	-- Crystal-Infused Shiv
-						})),
-						dr(2.0, i(32671, {	-- Depleted Mace
-							i(32661),	-- Apexis Crystal Mace
-						})),
-						dr(1.7, i(32675, {	-- Depleted Mail Gauntlets
-							i(32656),	-- Crystalhide Handwraps
-						})),
-						dr(1.8, i(32679, {	-- Depleted Staff
-							i(32662),	-- Flaming Quartz Staff
-						})),
-						dr(2.0, i(32674, {	-- Depleted Sword
-							i(32660),	-- Crystal Forged Sword
-						})),
-						dr(1.0, i(32670, {	-- Depleted Two-Handed Axe
-							i(32663),	-- Apexis Cleaver
-						})),
-					}),
-					n(23281, {	-- Insidion
+					n( 23281, {	-- Insidion
 						["groups"] = {
 							dr(1.0, i(32677, {	-- Depleted Cloak
 								i(32665),	-- Crystalweave Cape
@@ -915,38 +972,12 @@ _.Zones =
 						},
 						["description"] = "Use 35 Apexis Shards on Insidion's Egg at 62.7 7.3 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
 					}),
-					n(23154, {	-- Mana-Debt Slave
+					n( 23154, {	-- Mana-Debt Slave
 						dr(.01, i(32676, {	-- Depleted Cloth Bracers
 							i(32655),	-- Crystalweave Bracers
 						})),
 					}),
-					n(23354, {	-- Mo'arg Incinerator
-						dr(1.8, i(32677, {	-- Depleted Cloak
-							i(32665),	-- Crystalweave Cape
-						})),
-						dr(1.8, i(32676, {	-- Depleted Cloth Bracers
-							i(32655),	-- Crystalweave Bracers
-						})),
-						dr(1.7, i(32673, {	-- Depleted Dagger
-							i(32659),	-- Crystal-Infused Shiv
-						})),
-						dr(2.0, i(32671, {	-- Depleted Mace
-							i(32661),	-- Apexis Crystal Mace
-						})),
-						dr(1.6, i(32675, {	-- Depleted Mail Gauntlets
-							i(32656),	-- Crystalhide Handwraps
-						})),
-						dr(2.0, i(32679, {	-- Depleted Staff
-							i(32662),	-- Flaming Quartz Staff
-						})),
-						dr(1.5, i(32674, {	-- Depleted Sword
-							i(32660),	-- Crystal Forged Sword
-						})),
-						dr(1.5, i(32670, {	-- Depleted Two-Handed Axe
-							i(32663),	-- Apexis Cleaver
-						})),
-					}),
-					n(23282, {	-- Obsidia 
+					n( 23282, {	-- Obsidia 
 						["groups"] = {
 							dr(2.0, i(32677, {	-- Depleted Cloak
 								i(32665),	-- Crystalweave Cape
@@ -1071,32 +1102,6 @@ _.Zones =
 							i(32656),	-- Crystalhide Handwraps
 						})),
 						dr(.01, i(32670, {	-- Depleted Two-Handed Axe
-							i(32663),	-- Apexis Cleaver
-						})),
-					}),
-					n(23355, {	-- Zarcsin
-						dr(1.8, i(32677, {	-- Depleted Cloak
-							i(32665),	-- Crystalweave Cape
-						})),
-						dr(1.7, i(32676, {	-- Depleted Cloth Bracers
-							i(32655),	-- Crystalweave Bracers
-						})),
-						dr(4.0, i(32673, {	-- Depleted Dagger
-							i(32659),	-- Crystal-Infused Shiv
-						})),
-						dr(3.0, i(32671, {	-- Depleted Mace
-							i(32661),	-- Apexis Crystal Mace
-						})),
-						dr(1.4, i(32675, {	-- Depleted Mail Gauntlets
-							i(32656),	-- Crystalhide Handwraps
-						})),
-						dr(2.0, i(32679, {	-- Depleted Staff
-							i(32662),	-- Flaming Quartz Staff
-						})),
-						dr(1.9, i(32674, {	-- Depleted Sword
-							i(32660),	-- Crystal Forged Sword
-						})),
-						dr(1.3, i(32670, {	-- Depleted Two-Handed Axe
 							i(32663),	-- Apexis Cleaver
 						})),
 					}),
