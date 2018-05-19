@@ -30,8 +30,7 @@ _.Instances =
 										})
 									})
 								},
-								--["classes"] = { 2, 5, 7, 10, 11 },
-								["description"] = "This can drop from any of the bosses. Need 30 of them."
+								["classes"] = { 2, 5, 7, 10, 11 },
 							}),
 							i(45541),	-- Shroud of Alteration
 							i(45549),	-- Grips of Chaos
@@ -41,60 +40,24 @@ _.Instances =
 							i(45544),	-- Leggings of the Tortured Earth
 							i(45542),	-- Greaves of the Stonewarder
 							i(45605),	-- Daschal's Bite
-							i(45089, {
-								i(45559),
-							}),
-							i(45088, {
-								i(45550),
-							}),
-							i(45092, {
-								i(45551),
-							}),
-							i(45090, {
-								i(45552),
-							}),
-							i(45093, {
-								i(45560),
-							}),
-							i(45091, {
-								i(45561),
-							}),
-							i(45100, {
-								i(45556),
-							}),
-							i(45094, {
-								i(45553),
-							}),
-							i(45096, {
-								i(45554),
-							}),
-							i(45095, {
-								i(45562),
-							}),
-							i(45101, {
-								i(45565),
-							}),
-							i(45098, {
-								i(45555),
-							}),
-							i(45099, {
-								i(45564),
-							}),
-							i(45097, {
-								i(45563),
-							}),
-							i(45104, {
-								i(45558),
-							}),
-							i(45102, {
-								i(45557),
-							}),
-							i(45105, {
-								i(45567),
-							}),
-							i(45103, {
-								i(45566),
-							}),
+							i(45089),
+							i(45088),
+							i(45092),
+							i(45090),
+							i(45093),
+							i(45091),
+							i(45100),
+							i(45094),
+							i(45096),
+							i(45095),
+							i(45101),
+							i(45098),
+							i(45099),
+							i(45097),
+							i(45104),
+							i(45102),
+							i(45105),
+							i(45103),
 						}),
 						cr(33113, e(1637, {	-- Flame Leviathan
 							ach(12320, {	-- Orbit-uary
@@ -108,7 +71,13 @@ _.Instances =
 								i(45135),	-- Boots of Fiery Resolution
 								i(45297),	-- Shimmering Seal
 							}),
-							i(45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(45087),	-- Runed Orb
 							i(45282),	-- Ironsoul
 							i(45287),	-- Firesoul
@@ -137,7 +106,13 @@ _.Instances =
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(33118, e(1638, {	-- Ignis the Furnace Master
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(142086),	-- Red-Hot Coal (PET!)
 							i( 45087),	-- Runed Orb
 							i( 45171),	-- Intensity
@@ -168,7 +143,13 @@ _.Instances =
 							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(33186, e(1639, {	-- Razorscale
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(142087),	-- Ironbound Collar (PET!)
 							i( 45087),	-- Runed Orb
 							i( 45147),	-- Guiding Star
@@ -208,7 +189,13 @@ _.Instances =
 								i(45444),	-- Gloves of the Steady Hand
 								i(45871),	-- Seal of Ulduar
 							}),
-							i(45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(45087),	-- Runed Orb
 							i(45256),	-- Twisted Visage
 							i(45246),	-- Golem-Shard Sticker
@@ -253,7 +240,13 @@ _.Instances =
 									i(45614),	-- Starshine Circle
 								}),
 							}),
-							i(45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(45087),	-- Runed Orb
 							i(45613),	-- Dreambinder
 							i(45612),	-- Constellus
@@ -301,7 +294,13 @@ _.Instances =
 								i(45244),	-- Greaves of Swift Vengeance
 								i(45456),	-- Loop of the Agile
 							}),
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i( 45087),	-- Runed Orb
 							i(142088),	-- Stormforged Rune (PET!)
 							i( 45234),	-- Rapture
@@ -333,7 +332,13 @@ _.Instances =
 							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(32930, e(1642, {	-- Kologarn
-							i(45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(45087),	-- Runed Orb
 							i(45695),	-- Spire of Withering Dreams
 							i(45266),	-- Malice
@@ -361,7 +366,13 @@ _.Instances =
 							i(45263),	-- Wrathstone
 						})),
 						cr(33515, e(1643, {	-- Auriaya
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(142089),	-- Glittering Ball of Yarn (PET!)
 							i( 45087),	-- Runed Orb
 							i( 45437),	-- Runescribed Blade
@@ -430,7 +441,13 @@ _.Instances =
 								i(46130),	-- Conqueror's Kirin Tor Tunic
 								i(46123),	-- Conqueror's Terrorblade Breastplate
 							}),
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(138800),	-- Illusion: Blade Ward
 							i( 45650, {	-- Leggings of the Wayward Conqueror
 								i(45371),	-- Valorous Aegis Greaves
@@ -509,7 +526,13 @@ _.Instances =
 								i(46129),	-- Conqueror's Kirin Tor Hood
 								i(46125),	-- Conqueror's Terrorblade Helmet
 							}),
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(138800),	-- Illusion: Blade Ward
 							i( 45087),	-- Runed Orb
 							i( 45659, {	-- Spaulders of the Wayward Conqueror
@@ -563,7 +586,13 @@ _.Instances =
 								i(45946),	-- Fire Orchid Signet
 							}),
 							i(142091),	-- Blessed Seed (PET!)
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i( 45644, {	-- Gloves of the Wayward Conqueror
 								i(45376),	-- Valorous Aegis Gauntlets
 								i(45370),	-- Valorous Aegis Gloves
@@ -641,7 +670,13 @@ _.Instances =
 								i(45989),	-- Tempered Mercury Greaves
 								i(45495),	-- Conductive Seal
 							}),
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i( 45641, {	-- Gauntlets of the Wayward Conqueror
 								i(46163),	-- 
 								i(46188),	-- 
@@ -719,7 +754,13 @@ _.Instances =
 								i(46034),	-- Leggings of Profound Darkness
 								i(45518),	-- Flare of the Heavens
 							}),
-							i(45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(45087),	-- Runed Orb
 							i(45996),	-- Hoperender
 							i(45498),	-- Lotrafen, Spear of the Damned
@@ -785,7 +826,13 @@ _.Instances =
 								i(45368),	-- Valorous Kirin Tor Tunic
 								i(45396),	-- Valorous Terrorblade Robe
 							}),
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(138801),	-- Illusion: Blood Draining
 							i( 45656, {	-- Mantle of the Wayward Conqueror
 								i(46177),	-- Conqueror's Aegis Shoulderguards
@@ -845,8 +892,7 @@ _.Instances =
 										})
 									})
 								},
-								--["classes"] = { 2, 5, 7, 10, 11 },
-								["description"] = "This can drop from any of the bosses. Need 30 of them."
+								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
 							i(156462),	-- Drape of the Spellweaver
 							-- i(156468),	-- Cloak of the Dormant Blaze	(no equivalent in TW, 'Retrieving Data' on possible item, no data on WoWHead)
@@ -868,7 +914,13 @@ _.Instances =
 							i(156257),	-- Daschal's Bite
 						}),
 						cr(33113, e(1637, {	-- Flame Leviathan
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i( 45087),	-- Runed Orb
 							i(156012),	-- Ironsoul
 							i(156017),	-- Firesoul
@@ -897,7 +949,13 @@ _.Instances =
 							i(156016),	-- Pyrite Infuser
 						})),
 						cr(33118, e(1638, {	-- Ignis the Furnace Master
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(142086),	-- Red-Hot Coal (PET!)
 							i( 45087),	-- Runed Orb
 							i(155961),	-- Intensity
@@ -924,7 +982,13 @@ _.Instances =
 							i(155952),	-- Heart of Iron
 						})),
 						cr(33186, e(1639, {	-- Razorscale
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(142087),	-- Ironbound Collar (PET!)
 							i( 45087),	-- Runed Orb
 							i(155946),	-- Guiding Star
@@ -951,7 +1015,13 @@ _.Instances =
 							i(155947),	-- Living Flame
 						})),
 						cr(33293, e(1640, {	-- XT-002 Deconstructor
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i( 45087),	-- Runed Orb
 							i(156290),	-- Aesir's Edge
 							i(155993),	-- Twisted Visage
@@ -985,7 +1055,13 @@ _.Instances =
 					  --cr(32871, e(1650, {	-- Algalon the Observer
 					  --})),
 						cr(32867, e(1641, {	-- The Assembly of Iron
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i( 45087),	-- Runed Orb
 							i(142088),	-- Stormforged Rune (PET!)
 							i(155973),	-- Rapture
@@ -1019,7 +1095,13 @@ _.Instances =
 							i(155971),	-- Runed Ironhide Boots
 						})),
 						cr(32930, e(1642, {	-- Kologarn
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i( 45087),	-- Runed Orb
 							i(156269),	-- Spire of Withering Dreams
 							i(156003),	-- Malice
@@ -1043,7 +1125,13 @@ _.Instances =
 							i(156000),	-- Wrathstone
 						})),
 						cr(33515, e(1643, {	-- Auriaya
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(142089),	-- Glittering Ball of Yarn (PET!)
 							i( 45087),	-- Runed Orb
 							i(156159),	-- Runescribed Blade
@@ -1070,7 +1158,13 @@ _.Instances =
 							i(156288),	-- Elemental Focus Stone
 						})),
 						cr(32845, e(1644, {	-- Hodir
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(138800),	-- Illusion: Blade Ward
 							i(142090),	-- Ominous Pile of Snow
 							i( 45087),	-- Runed Orb
@@ -1118,7 +1212,13 @@ _.Instances =
 							i(156132),	-- Valorous Worldbreaker Kilt
 						})),
 						cr(32865, e(1645, {	-- Thorim
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(138800),	-- Illusion: Blade Ward
 							i( 45087),	-- Runed Orb
 							i(156309),	-- Combatant's Bootblade
@@ -1166,7 +1266,13 @@ _.Instances =
 						})),
 						cr(32906, e(1646, {	-- Freya
 							i(142091),	-- Blessed Seed
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(138800),	-- Illusion: Blade Ward
 							i( 45087),	-- Runed Orb
 							i(156613),	-- Dreambinder
@@ -1212,7 +1318,13 @@ _.Instances =
 							i(156200),	-- Boots of the Servant
 						})),
 						cr(33350, e(1647, {	-- Mimiron
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(138800),	-- Illusion: Blade Ward
 							i(142092),	-- Overcomplicated Controller
 							i( 45087),	-- Runed Orb
@@ -1262,7 +1374,13 @@ _.Instances =
 							i(156207),	-- Pandora's Plea
 						})),
 						cr(33271, e(1648, {	-- General Vezax
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i( 45087),	-- Runed Orb
 							i(156331),	-- Hoperender
 							i(156215),	-- Lotrafen, Spear of the Damned
@@ -1296,7 +1414,13 @@ _.Instances =
 							ach(12388, {	-- Alone in the Darkness
 								i(45693)	-- Mimiron's Head (MOUNT!)
 							}),	
-							i( 45038),	-- Fragment of Val'anyr
+							i(45038, {	-- Fragment of Val'anyr
+								["groups"] = {
+								},
+								["collectible"] = true,
+								["questID"] = 13629, -- Fragment of Val'anyr
+								["classes"] = { 2, 5, 7, 10, 11 }
+							}),
 							i(138801),	-- Illusion: Blood Draining
 							i( 45087),	-- Runed Orb
 							i(142093),	-- Wriggling Darkness (PET!)
