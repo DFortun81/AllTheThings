@@ -978,6 +978,12 @@ _.Zones =
 						["questID"] = 48629,
 					}),
 				}),
+				n(-2, { -- Vendors
+					n(125346, {	-- Alchemist Funen
+						i(152616),	-- Recipe: Astral Healing Potion
+						i(151710),	-- Recipe: Transmute Primal Sargerite
+					}),
+				}),
 				n(-34, { -- World Quests
 					["groups"] = {
 						n(-322, { -- Cloak
