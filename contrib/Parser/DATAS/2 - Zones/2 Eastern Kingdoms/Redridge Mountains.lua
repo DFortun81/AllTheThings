@@ -45,7 +45,7 @@ _.Zones =
 					qg(65651, qa(31781)),	-- Lindsay (DAILY)
 				}),
 				n(-17, {	-- Quests
-					a(ach(4902, { -- Redridge Mountain Quests
+					a(ach(4902, { -- Redridge Mountains Quests
 						crit(1, { -- The Gnoll Offensive
 							qg(464, qa(26503, {	-- Still Assessing the Threat
 								["groups"] = {
@@ -319,13 +319,13 @@ _.Zones =
 						}),
 						sz(780,3, { -- Three Corners
 							qg(379, qa(26506)),	-- Franks and Beans
-							o(204344, {	-- Wanted!
+							a(o(204344, {	-- Wanted!
 								qa(26504, { -- Wanted: Redridge Gnolls
 									i(60684),	-- Royal Guard Breastplate
 									i(60683),	-- Tower Watch Bracers
 									i(60682),	-- Watch Captain's Cloak
 								}),
-							}),
+							})),
 						}),
 					}),
 				}),
