@@ -274,12 +274,15 @@ _.Instances = { tier(1, {	-- Classic
 					i(19382),	-- Pure Elementium Band
 					i(19379),	-- Neltharion's Tear
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
-					i(13008),	-- Dalewind Trousers
-					i(13075),	-- Direwing Legguards
-					i(13113),	-- Feathermoon Headdress
-					i(13144),	-- Serenity Belt
-					i(13146),	-- Shell Launcher Shotgun
-					i(13072),	-- Stonegrip Gauntlets
+					dr(7.0, i(13008)),	-- Dalewind Trousers
+					dr(3.0, i(13075)),	-- Direwing Legguards
+					dr(5.0, i(13113)),	-- Feathermoon Headdress
+					dr(7.0, i(13144)),	-- Serenity Belt
+					dr(4.0, i(13146)),	-- Shell Launcher Shotgun
+					dr(3.0, i(13072)),	-- Stonegrip Gauntlets
+					dr(5.0, i(13047)),	-- Twig of the World Tree
+				 -- PROFESSIONS
+					dr(1.1, i( 8028)),	-- Plans: Runed Mithril Hammer
 					dr(0.5, i(13518)),	-- Recipe: Potion of Petrification
 					dr(0.5, i(13488)),	-- Recipe: Transmute Life to Earth
 					dr(0.4, i(13489)),	-- Recipe: Transmute Earth to Life
