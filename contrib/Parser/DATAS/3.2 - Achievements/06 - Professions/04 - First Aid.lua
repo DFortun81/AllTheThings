@@ -9,33 +9,35 @@ _.Achievements =
 			n(-9973, { -- First Aid
 				["description"] = "WARNING! All First Aid achievements will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH THEM BEFORE THEN!",
 				["groups"] = {
-					ach(131, {	-- Journeyman Medic (150)
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
-					ach(132, {	-- Expert Medic (225)
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),	
-					ach(133, {	-- Artisan Medic (300)
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
-					ach(134, {	-- Master Medic (375)
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
-					ach(135, {	-- Grand Master Medic (450)
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
-					ach(4918, {	-- Illustrious Grand Master Medic (525)
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
-					ach(6838, {	-- Zen Master Medic (600)
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
-					ach(9505, {	-- Draenor Medic (700)
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
 					ach(10599, {	-- Legion Medic (800)
 						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
+						["groups"] = {
+							ach(131, {	-- Journeyman Medic (150)
+								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+							}),
+							ach(132, {	-- Expert Medic (225)
+								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+							}),
+							ach(133, {	-- Artisan Medic (300)
+								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+							}),					
+							ach(134, {	-- Master Medic (375)
+								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+							}),					
+							ach(135, {	-- Grand Master Medic (450)
+								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+							}),					
+							ach(4918, {	-- Illustrious Grand Master Medic (525)
+								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+							}),					
+							ach(6838, {	-- Zen Master Medic (600)
+								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+							}),					
+							ach(9505, {	-- Draenor Medic (700)
+								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+							}),					
+						},
+					}),			
 					ach(137, {	-- Stocking Up
 						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 					}),					
