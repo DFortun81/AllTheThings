@@ -6673,16 +6673,19 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			self.data = raidassistant;
 			SetDungeonDifficultyID(row.ref.difficultyID);
 			UpdateWindow(self, true);
+			return true;
 		end
 		local switchRaidDifficulty = function(row, button)
 			self.data = raidassistant;
 			SetRaidDifficultyID(row.ref.difficultyID);
 			UpdateWindow(self, true);
+			return true;
 		end
 		local switchLegacyRaidDifficulty = function(row, button)
 			self.data = raidassistant;
 			SetLegacyRaidDifficultyID(row.ref.difficultyID);
 			UpdateWindow(self, true);
+			return true;
 		end
 		raidassistant = {
 			['text'] = "Raid Assistant",
@@ -6700,6 +6703,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['OnClick'] = function(row, button)
 						self.data = lootspecialization;
 						UpdateWindow(self, true);
+						return true;
 					end,
 					['OnUpdate'] = function(data)
 						if app.Spec then
@@ -6722,6 +6726,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['OnClick'] = function(row, button)
 						self.data = lootmethod;
 						UpdateWindow(self, true);
+						return true;
 					end,
 					['OnUpdate'] = function(data)
 						if app.LootMethod then
@@ -6737,6 +6742,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['OnClick'] = function(row, button)
 						self.data = dungeondifficulty;
 						UpdateWindow(self, true);
+						return true;
 					end,
 					['OnUpdate'] = function(data)
 						if app.DungeonDifficulty then
@@ -6754,6 +6760,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
 						self.data = raiddifficulty;
 						UpdateWindow(self, true);
+						return true;
 					end,
 					['OnUpdate'] = function(data)
 						if app.RaidDifficulty then
@@ -6771,6 +6778,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
 						self.data = legacyraiddifficulty;
 						UpdateWindow(self, true);
+						return true;
 					end,
 					['OnUpdate'] = function(data)
 						if app.LegacyRaidDifficulty then
@@ -6788,6 +6796,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			['OnClick'] = function(row, button)
 				self.data = raidassistant;
 				UpdateWindow(self, true);
+				return true;
 			end,
 			['OnUpdate'] = function(data)
 				data.g = {};
@@ -6837,6 +6846,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			['OnClick'] = function(row, button)
 				self.data = raidassistant;
 				UpdateWindow(self, true);
+				return true;
 			end,
 			['visible'] = true, 
 			['expanded'] = true,
@@ -6850,6 +6860,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['visible'] = true,
 					['OnClick'] = function(row, button)
 						setLootMethod(self, row.ref.id);
+						return true;
 					end,
 					['back'] = 0.5,
 				},
@@ -6861,6 +6872,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['visible'] = true,
 					['OnClick'] = function(row, button)
 						setLootMethod(self, row.ref.id);
+						return true;
 					end,
 					['back'] = 0.5,
 				},
@@ -6872,6 +6884,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['visible'] = true,
 					['OnClick'] = function(row, button)
 						setLootMethod(self, row.ref.id);
+						return true;
 					end,
 					['back'] = 0.5,
 				},
@@ -6887,6 +6900,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end
 						self.data = raidassistant;
 						UpdateWindow(self, true);
+						return true;
 					end,
 					['back'] = 0.5,
 				},
@@ -6902,6 +6916,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end
 						self.data = raidassistant;
 						UpdateWindow(self, true);
+						return true;
 					end,
 					['back'] = 0.5,
 				},
@@ -6914,6 +6929,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			['OnClick'] = function(row, button)
 				self.data = raidassistant;
 				UpdateWindow(self, true);
+				return true;
 			end,
 			['visible'] = true, 
 			['expanded'] = true,
@@ -6946,6 +6962,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			['OnClick'] = function(row, button)
 				self.data = raidassistant;
 				UpdateWindow(self, true);
+				return true;
 			end,
 			['visible'] = true, 
 			['expanded'] = true,
@@ -6978,6 +6995,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			['OnClick'] = function(row, button)
 				self.data = raidassistant;
 				UpdateWindow(self, true);
+				return true;
 			end,
 			['visible'] = true, 
 			['expanded'] = true,
