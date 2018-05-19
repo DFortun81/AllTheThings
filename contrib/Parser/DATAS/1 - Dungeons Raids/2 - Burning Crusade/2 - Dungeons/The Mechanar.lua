@@ -10,7 +10,8 @@ _.Instances =
 				["groups"] = {
 					n(0, {	-- Zone Drops
 						model(17916, n(19168, {	-- Sunseeker Astromage
-							dr(1.0, i(21906)), -- Pattern: Arcanoweave Boots
+							dr(1.0, i(21906)), 	-- Pattern: Arcanoweave Boots
+							dr(0.4, i(22920)),	-- Recipe: Major Fire Protection Potion
 						})),
 					}),
 					o(184465, {	-- Cache of the Legion
@@ -34,6 +35,7 @@ _.Instances =
 							i(35582),	-- Schematic: Rocket Boots Xtreme Lite
 						})),
 						cr(19221, e(564, {	-- Nethermancer Sepethrea
+							dr(3.0, i(22920)),	-- Recipe: Major Fire Protection Potion
 							i(28263),	-- Stellaris
 							i(28260),	-- Manual of the Nethermancer
 							i(28275),	-- Beast Lord Helm (7.3.5 - Moved from Pathaleon the Calculator)
@@ -75,6 +77,7 @@ _.Instances =
 								i(35582),	-- Schematic: Rocket Boots Xtreme Lite
 							})),
 							cr(19221, e(564, {	-- Nethermancer Sepethrea
+								dr(3.0, i(22920)),	-- Recipe: Major Fire Protection Potion
 								i(28263),	-- Stellaris
 								i(28260),	-- Manual of the Nethermancer
 								i(28275),	-- Beast Lord Helm (7.3.5 - Moved from Pathaleon the Calculator)

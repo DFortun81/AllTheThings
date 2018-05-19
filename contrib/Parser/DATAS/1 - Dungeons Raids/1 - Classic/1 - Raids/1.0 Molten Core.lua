@@ -311,6 +311,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(0.8, i(18260)),	-- Formula: Enchant Weapon - Healing Power
 				dr(0.8, i(18259)),	-- Formula: Enchant Weapon - Spellpower
 				i(18265),	-- Pattern: Flarecore Wraps
+				dr(0.8, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292),	-- Schematic: Core Marksman Rifle
 				i(18291),	-- Schematic: Force Reactive Disc
 				i(18878),	-- Sorcerous Dagger
@@ -335,6 +336,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(1.1, i(18260)),	-- Formula: Enchant Weapon - Healing Power
 				dr(1.4, i(18259)),	-- Formula: Enchant Weapon - Spellpower
 				i(18265), 	-- Pattern: Flarecore Wraps
+				dr(1.2, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(93034),	-- Blazing Rune (Pet)
@@ -368,6 +370,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(0.6, i(18260)),	-- Formula: Enchant Weapon - Healing Power
 				dr(0.8, i(18259)),	-- Formula: Enchant Weapon - Spellpower
 				i(18265), 	-- Pattern: Flarecore Wraps
+				dr(1.2, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18878),	-- Sorcerous Dagger
@@ -391,6 +394,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(1.0, i(18260)),	-- Formula: Enchant Weapon - Healing Power
 				dr(1.3, i(18259)),	-- Formula: Enchant Weapon - Spellpower
 				i(18265), 	-- Pattern: Flarecore Wraps
+				dr(1.1, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18564, {	-- Bindings of the Windseeker (Right)
@@ -426,6 +430,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(0.7, i(18260)),	-- Formula: Enchant Weapon - Healing Power
 				dr(0.8, i(18259)),	-- Formula: Enchant Weapon - Spellpower
 				i(18265), 	-- Pattern: Flarecore Wraps
+				dr(0.7, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18878),	-- Sorcerous Dagger
@@ -449,6 +454,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(1.1, i(18260)),	-- Formula: Enchant Weapon - Healing Power
 				dr(1.1, i(18259)),	-- Formula: Enchant Weapon - Spellpower
 				i(18265), 	-- Pattern: Flarecore Wraps
+				dr(1.2, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18563, {	-- Bindings of the Windseeker (Left)
@@ -496,6 +502,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(1.2, i(18260)),	-- Formula: Enchant Weapon - Healing Power
 				dr(1.3, i(18259)),	-- Formula: Enchant Weapon - Spellpower
 				i(18265), 	-- Pattern: Flarecore Wraps
+				dr(1.3, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(93035),	-- Core of Hardened Ash (Pet)

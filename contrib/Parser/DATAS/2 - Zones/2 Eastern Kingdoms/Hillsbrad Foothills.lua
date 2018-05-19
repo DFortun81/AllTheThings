@@ -1275,6 +1275,8 @@ _.Zones =
 						dr(01.4, i(6562)),	-- Shimmering Boots
 					}), 
 					n(14278, { 	-- Ro'Bark
+						dr(01.7, i(6211)),	-- Recipe: Elixir of Ogre's Strength
+						dr(00.8, i(3394)),	-- Recipe: Potion of Curing
 						dr(06.0, i(6563)),	-- Shimmering Bracers
 						dr(06.0, i(6570)),	-- Shimmering Sash
 						dr(05.0, i(9772)),	-- Greenweave Leggings
@@ -1305,6 +1307,7 @@ _.Zones =
 						dr(01.1, i(6567)),	-- Shimmering Armor
 					}), 
 					n(14276, { 	-- Scargil
+						dr(01.0, i(11152)),	-- Formula: Enchant Gloves - Fishing
 						dr(09.0, i(6563)),	-- Shimmering Bracers
 						dr(09.0, i(6564)),	-- Shimmering Cloak
 						dr(08.0, i(6581)),	-- Scouting Belt
@@ -1337,7 +1340,6 @@ _.Zones =
 						dr(01.2, i(9812)),	-- Fortified Cloak
 						dr(01.2, i(9773)),	-- Greenweave Robe
 						dr(01.0, i(6568)),	-- Shimmering Trousers
-						dr(01.0, i(11152)),	-- Formula: Enchant Gloves - Fishing
 					}), 
 					n(2452, { 	-- Skhowl
 						dr(76.0, i(3011)),	-- Feathered Headdress
@@ -1456,10 +1458,12 @@ _.Zones =
 					}),
 				}),
 				n( -2, {	-- Vendors
+					n(2480, {	-- Bro'kin <Alchemy Supplies>
+						i(14634),	-- Recipe: Frost Oil
+					}),
 					h(n(2393, {	-- Christoph Jeffcoat <Tradesman>
-						i(5788, {	-- Pattern: Thick Murloc Armor
-							i(5782),	-- Thick Murloc Armor
-						}),
+						i(5788), 	-- Pattern: Thick Murloc Armor
+						i(6054),	-- Recipe: Shadow Protection Potion
 					})),
 					nh(2397, {	-- Derak Nightfall <Cook>
 						i(6330), 	-- Recipe: Bristle Whisker Catfish
@@ -1467,9 +1471,7 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					h(n(2698, {	-- George Candarte <Leatherworking Supplies>
-						i(7613, {	-- Pattern: Green Leather Armor
-							i(4255),	-- Green Leather Armor
-						}),
+						i(7613), 	-- Pattern: Green Leather Armor
 					})),
 					h(n(47712, {	-- Harland Waldek <Weaponsmith>
 						i(4818),	-- Executioner's Sword
@@ -1506,12 +1508,8 @@ _.Zones =
 						i(4796),	-- Owl Bracers
 					}),
 					h(n(2394, {	-- Mallen Swain <Tailoring Supplies>
-						i(6274, {	-- Pattern: Blue Overalls
-							i(6263),	-- Blue Overalls
-						}),
-						i(6401, {	-- Pattern: Dark Silk Shirt
-							i(4333),	-- Dark Silk Shirt
-						}),
+						i(6274), 	-- Pattern: Blue Overalls
+						i(6401),	-- Pattern: Dark Silk Shirt
 					})),
 					h(n(3539, {	-- Ott <Weaponsmith>
 						i(12247),	-- Broad Bladed Knife

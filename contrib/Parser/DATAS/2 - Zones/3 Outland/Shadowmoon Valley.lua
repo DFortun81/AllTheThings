@@ -1195,7 +1195,7 @@ _.Zones =
 --					q( 38845),	-- Unused (NEVER IMPLEMENTED)
 				}),	
 				n(-16, { 	-- Rares
-					n(18695, { -- Ambassador Jerrikar
+					n(18695, {	-- Ambassador Jerrikar
 						["groups"] = {
 							i(31224),
 							i(31223),
@@ -1204,18 +1204,69 @@ _.Zones =
 						},
 						--["achievementID"] = 1312, ["criteriaID"] = 1,
 					}), 
-					n(18694, { -- Collidus the Warp-Watcher
+					n(18694, {	-- Collidus the Warp-Watcher
 						i(31219),
 						i(31220),
 						i(31217),
 						i(31218),
 					}), 
-					n(18696, { -- Kraator
+					n(20887, {	-- Deathforge Imp
+						dr(1.0, i(31681)),	-- Recipe: Fel Regeneration Potion
+					}),
+					n(20878, {	-- Deathforge Guardian
+						dr(0.3, i(23609)),	-- Plans: Khorium Pants
+						dr(0.3, i(31681)),	-- Recipe: Fel Regeneration Potion
+					}),
+					n(19756, {	-- Deathforge Smith
+						dr(0.2, i(31681)),	-- Recipe: Fel Regeneration Potion
+					}),
+					n(19754, {	-- Deathforge Tinkerer
+						dr(0.3, i(31681)),	-- Recipe: Fel Regeneration Potion
+					}),
+					n(19796, {	-- Eclipsion Archmage
+						{
+							["itemID"] = 28276,	-- Formula: Enchant Cloak - Greater Arcane Resistance
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						dr(0.2, i(31682)),	-- Recipe: Fel Mana Potion
+					}),
+					n(19795, {	-- Eclipsion Blood Knight
+						dr(0.19, i(31682)),	-- Recipe: Fel Mana Potion
+					}),
+					n(19806, {	-- Eclipsion Bloodwarder
+						dr(0.19, i(31682)),	-- Recipe: Fel Mana Potion
+					}),
+					n(22018, {	-- Eclipsion Cavalier
+						dr(0.11, i(31682)),	-- Recipe: Fel Mana Potion
+					}),
+					n(19792, {	-- Eclipsion Centurion
+						dr(0.4, i(31682)),	-- Recipe: Fel Mana Potion
+					}),
+					n(22016, {	-- Eclipsion Soldier
+						dr(0.11, i(31682)),	-- Recipe: Fel Mana Potion
+					}),
+					n(22017, {	-- Eclipsion Spellbinder
+						dr(0.09, i(23627)),	-- Plans: Bracers of the Green Fortress
+						dr(0.11, i(31682)),	-- Recipe: Fel Mana Potion
+					}),
+					n(18696, {	-- Kraator
 						i(31213),
 						i(31214),
 						i(31216),
 						i(31215),
 					}), 
+					n(19755, {	-- Mo'arg Weaponsmith
+						dr(0.6, i(23806)),	-- Schematic: Hyper-Vision Goggles
+						dr(0.11, i(31680)),	-- Recipe: Fel Strength Elixir
+					}),
+					n(21302, {	-- Shadow Council Warlock
+						dr(0.3, i(31680)),	-- Recipe: Fel Strength Elixir
+						dr(0.3, i(22924)),	-- Recipe: Major Shadow Protection Potion
+					}),
+					n(21314, {	-- Terrormaster
+						dr(0.2, i(31680)),	-- Recipe: Fel Strength Elixir
+					}),
 					o(240622, {	-- Warden's Scroll Case
 						["groups"] = {
 							i(122228)		-- Music Roll: The Black Temple
@@ -1224,7 +1275,10 @@ _.Zones =
 						["modelScale"] = .5,
 						["icon"] = "Interface\\Icons\\INV_Icon_Daily_Mission_Scroll",
 						["description"] = "|cff66ccffLoot the Warden's Scrollcase inside the Warden's Cage.|r",
-					}),					
+					}),
+					n(19740, {	-- Wrathwalker
+						dr(0.2, i(31680)),	-- Recipe: Fel Strength Elixir
+					}),
 				}),
 				n(-2, {	-- Vendors
 					n(19521, {	-- Arrond <Tailoring Supplies>

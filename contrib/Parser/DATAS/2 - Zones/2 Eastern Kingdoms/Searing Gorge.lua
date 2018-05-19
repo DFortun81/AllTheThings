@@ -236,6 +236,9 @@ _.Zones =
 						dr(01.0, i(9913)),	-- Royal Gown
 						dr(01.0, i(9963)),	-- Warmonger's Circlet					
 					}),
+					n(5844, {	-- Dark Iron Slaver
+						dr(0.06, i(21547)),	-- Recipe: Elixir of Greater Firepower
+					}),
 					n(5840, {	-- Dark Iron Steamsmith
 						["groups"] = {
 							dr(3, i(10463, { -- Pattern: Shadoweave Mask
@@ -243,6 +246,12 @@ _.Zones =
 							}))
 						},
 						["description"] = "As of 7.3, these mobs can now drop |cff3399ffPattern: Shadoweave Mask|r which is required for the |cff3399ffLucid Nightmare|r riddle mount."
+					}),
+					n(5846, {	-- Dark Iron Taskmaster
+						dr(0.04, i(21547)),	-- Recipe: Elixir of Greater Firepower
+					}),
+					n(8637, {	-- Dark Iron Watchman
+						dr(0.01, i(21547)),	-- Recipe: Elixir of Greater Firepower
 					}),
 					o(207496, { -- Dark Iron Treasure Chest
 						["groups"] = {

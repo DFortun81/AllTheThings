@@ -620,6 +620,10 @@ _.Zones =
 							i(52735),	-- Formula: Enchant Weapon - Windwalk
 						}),
 					}),
+					n(16641, {	-- Melaris <Alchemy Supplies>
+						i(22900),	-- Recipe: Elixir of Camouflage
+						i(23574),	-- Recipe: Transmute Primal Might
+					}),
 					n(16677, {	-- Quelis <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish

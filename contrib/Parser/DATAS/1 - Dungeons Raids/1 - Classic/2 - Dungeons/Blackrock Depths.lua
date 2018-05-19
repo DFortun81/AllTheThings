@@ -676,11 +676,8 @@ _.Instances =
 						})),
 						cr(9499, e( 383, {	-- Plugger Spazzring
 							n(-2, { 	-- Vendors
-								i(15759, {	-- Pattern:	Black Dragonscale Breastplate
-									["groups"] = {	
-									},
-									["description"]	= "This is a limited supply pattern.",
-								}),
+								i(15759),	-- Pattern:	Black Dragonscale Breastplate
+								i(13483),	-- Recipe: Transmute Fire to Earth
 							}),
 							i( 12791), 	-- Barman Shanker
 							i( 12793), 	-- Mixologist's Tunic

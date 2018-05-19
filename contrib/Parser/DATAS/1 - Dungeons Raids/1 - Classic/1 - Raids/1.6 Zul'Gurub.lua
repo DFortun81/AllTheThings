@@ -388,26 +388,29 @@ _.Instances = { tier(1, {	-- Classic
 				i(20038),	-- Mandokir's Sting
 				i(19872),	-- Swift Razzashi Raptor
 			}),
-			n(83731, { -- Edge of Madness
-				["groups"] = {
-					n(15082, { -- Gri'lek
-						i(19961),	-- Gri'lek's Grinder
-						i(19962),	-- Gri'lek Carver
-					}),
-					n(15083, { -- Hazza'rah
-						i(19967),	-- Thoughtblighter
-						i(19968),	-- Fiery Retributer
-					}),
-					n(15084, { -- Renataki
-						i(19963),	-- Pitchfork of Madness
-						i(19964),	-- Renataki's Soul Conduit
-					}),
-					n(15085, { -- Wushoolay
-						i(19965),	-- Wushoolay's Poker
-						i(19993),	-- Hoodoo Hunting Bow
-					}),
-				},
-			}),
+			un(7, i(19931, {	-- Gurubashi Mojo Madness
+				un(2, recipe(24266)),	-- Gurubashi Mojo Madness
+				n(15082, { -- Gri'lek
+					un(2, i(19939)),	-- Gri'lek's Blood
+					un(2, i(19961)),	-- Gri'lek's Grinder
+					un(2, i(19962)),	-- Gri'lek Carver
+				}),
+				n(15083, { -- Hazza'rah
+					un(2, i(19942)),	-- Hazza'rah's Dream Thread
+					un(2, i(19967)),	-- Thoughtblighter
+					un(2, i(19968)),	-- Fiery Retributer
+				}),
+				n(15084, { -- Renataki
+					un(2, i(19940)),	-- Renataki's Tooth
+					un(2, i(19963)),	-- Pitchfork of Madness
+					un(2, i(19964)),	-- Renataki's Soul Conduit
+				}),
+				n(15085, { -- Wushoolay
+					un(2, i(19941)),	-- Wushoolay's Mane
+					un(2, i(19965)),	-- Wushoolay's Poker
+					un(2, i(19993)),	-- Hoodoo Hunting Bow
+				}),
+			})),
 			n(14509, { -- High Priest Thekal
 				un(12, ach(880)),	-- Swift Zulian Tiger
 				i(19896),	-- Thekal's Grasp

@@ -949,10 +949,29 @@ _.Zones =
 							qa(719, {	-- A Dwarf and His Tools
 								un(34, i(4978)),	-- Ryedol's Hammer
 							}),
+							qdg(h({
+								["questID"] = 2258,	-- Badlands Reagent Run
+								["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
+							})),
+							qdg(h({
+								["questID"] = 2258,	-- Badlands Reagent Run II
+								["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
+								["sourceQuest"] = 2202,	-- Source Quest: Uldaman Reagent Run
+								["groups"] = {
+									un(2, recipe(11452)),	-- Restorative Potion
+								},
+							})),
 							qdg(qh(4983, {	-- Bijou's Reconnaissance Report (may only have been both factions)
 								un(34, i(15858)),	-- Freewind Gloves
 								un(34, i(15859)),	-- Seapost Girdle
 							})),
+							qdg({
+								["questID"] = 715,	-- Liquid Stone
+								["qg"] = 2920,	-- Quest Giver: Lucien Tosselwrench
+								["groups"] = {
+									un(7, i(4624)),	-- Recipe: Lesser Stoneshield Potion [REMOVED FROM GAME]
+								},
+							}),
 							qdg(qh(4134, {	-- Lost Thunderbrew Recipe
 								un(34, i(11964)),	-- Swiftstrike Cudgel
 								un(34, i(12000)),	-- Limb Cleaver
@@ -987,6 +1006,11 @@ _.Zones =
 								un(34, i(12108)),	-- Basaltscale Armor
 								un(34, i(12111)),	-- Lavaplate Gauntlets
 							})),
+							qdg({
+								["questID"] = 2202,	-- Uldaman Reagent Run
+								["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
+								["sourceQuest"] = 2258,	-- Source Quest: Badlands Reagent Run
+							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(7057, {	-- Digmaster Shovelphlange

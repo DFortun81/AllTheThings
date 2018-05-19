@@ -942,6 +942,9 @@ END OF MICRO-HOLIDAY --]]
 						},
 						["description"] = "Vendor is located upstairs in the northern building in Southwind Village.|r",
 					}),
+					n(15174, {	-- Calandrath <Innkeeper>
+						i(13496),	-- Recipe: Greater Nature Protection Potion
+					}),
 					n(15419, {		-- Kania <Enchanting Supplies>
 						i(20754),	-- Formula: Lesser Mana Oil
 						i(20753),	-- Formula: Lesser Wizard Oil

@@ -790,6 +790,10 @@ _.Zones =
 					a(n(4235, {		-- Turian <Thrown Weapons Merchant>
 						i(12247),	-- Broad Bladed Knife
 					})),
+					na(4226, {		-- Ulthir <Alchemy Supplies>
+						i(5642),	-- Recipe: Free Action Potion
+						i(5643),	-- Recipe: Great Rage Potion
+					}),
 					a(n(4228, {		-- Vaean <Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil

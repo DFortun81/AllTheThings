@@ -307,6 +307,9 @@ _.Zones =
 						i(11306),	-- Sturdy Recurve
 						i(11303)	-- Fine Shortbow
 					}),
+					n(4610, {	-- Algernon <Alchemy Supplies>
+						i(9301),	-- Recipe: Elixir of Shadow Power
+					}),
 					n(4573, {	-- Armand Cromwell <Fishing Trainer>
 						ach(5850, {	-- Fish or Cut Bait: Undercity
 							i(67414, {	-- Bag of Shiny Things

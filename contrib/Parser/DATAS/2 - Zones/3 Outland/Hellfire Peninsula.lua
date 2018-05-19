@@ -933,6 +933,12 @@ _.Zones =
 					}),
 				}),
 				n(-2, {		-- Vendors
+					na(18802, {		-- Alchemist Gribble <Alchemy Trainer>
+						i(22900),	-- Recipe: Elixir of Camouflage
+					}),
+					nh(16588, {		-- Apothecary Antonivich <Alchemy Trainer>
+						i(22900),	-- Recipe: Elixir of Camouflage
+					}),
 					nh(35099, {		-- Bana Wildmane <Wind Rider Keeper>
 						i(25477),	-- Swift Red Wind Rider Mount
 						i(25531),	-- Swift Green Wind Rider Mount
@@ -982,6 +988,17 @@ _.Zones =
 						i(22531),	-- Formula: Enchant Bracer - Superior Healing
 						i(22547),	-- Formula: Enchant Chest - Exceptional Stats
 						i(33150),	-- Formula: Enchant Cloak - Subtlety
+						i(29214, {	-- Pattern: Felstalker Bracers
+							i(25697),	-- Felstalker Bracer
+						}),
+						i(29215, {	-- Pattern: Felstalker Breastplate
+							i(25696),	-- Felstalker Breastplate
+						}),
+						i(29213, {	-- Pattern: Felstalker Belt
+							i(25695),	-- Felstalker Belt
+						}),
+						i(22905),	-- Recipe: Elixir of Major Agility
+						i(25870),	-- Recipe: Transmute Skyfire Diamond
 						i(29166),	-- Hellforged Halberd
 						i(35464),	-- Dreadweave Robe
 						i(35465),	-- Evoker's Silk Amice
@@ -1002,15 +1019,6 @@ _.Zones =
 						i(29153),	-- Blade of the Archmage
 						i(29156),	-- Honor's Call
 						i(25825),	-- Footman's Longsword
-						i(29214, {	-- Pattern: Felstalker Bracers
-							i(25697),	-- Felstalker Bracer
-						}),
-						i(29215, {	-- Pattern: Felstalker Breastplate
-							i(25696),	-- Felstalker Breastplate
-						}),
-						i(29213, {	-- Pattern: Felstalker Belt
-							i(25695),	-- Felstalker Belt
-						}),
 						i(23999),	-- Honor Hold Tabard
 					}),
 					nh(19836, {		-- Mixie Farshot <Gun Merchant>
@@ -1022,6 +1030,17 @@ _.Zones =
 						i(24000),	-- Formula: Enchant Bracer - Superior Healing
 						i(24003),	-- Formula: Enchant Chest - Exceptional Stats
 						i(33151),	-- Formula: Enchant Cloak - Subtlety
+						i(25739, {	-- Pattern: Felstalker Bracers
+							i(25697),	-- Felstalker Bracer
+						}),
+						i(25740, {	-- Pattern: Felstalker Breastplate
+							i(25696),	-- Felstalker Breastplate
+						}),
+						i(25738, {	-- Pattern: Felstalker Belt
+							i(25695),	-- Felstalker Belt
+						}),
+						i(24001),	-- Recipe: Elixir of Major Agility
+						i(29232),	-- Recipe: Transmute Skyfire Diamond
 						i(29167),	-- Blackened Spear
 						i(35332),	-- Dreadweave Robe
 						i(35343),	-- Evoker's Silk Amice
@@ -1042,15 +1061,6 @@ _.Zones =
 						i(29155),	-- Stormcaller
 						i(29165),	-- Warbringer
 						i(25823),	-- Grunt's Waraxe
-						i(25739, {	-- Pattern: Felstalker Bracers
-							i(25697),	-- Felstalker Bracer
-						}),
-						i(25740, {	-- Pattern: Felstalker Breastplate
-							i(25696),	-- Felstalker Breastplate
-						}),
-						i(25738, {	-- Pattern: Felstalker Belt
-							i(25695),	-- Felstalker Belt
-						}),
 						i(24004),	-- Thrallmar Tabard
 					}),
 					na(16826, {		-- Sid Limbardi <Innkeeper>

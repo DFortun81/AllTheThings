@@ -245,6 +245,10 @@ _.Zones =
 				}),
 --]]				
 				n( -2, {	-- Vendors
+					na(16705, {		-- Altaa <Alchemy Supplies>
+						i(22900),	-- Recipe: Elixir of Camouflage
+						i(23574),	-- Recipe: Transmute Primal Might
+					}),
 					a(n(16713, {	-- Arras <Blacksmithing Supplies>
 						i(23591, {	-- Plans: Adamantite Cleaver
 							i(23503),	-- Adamantite Cleaver

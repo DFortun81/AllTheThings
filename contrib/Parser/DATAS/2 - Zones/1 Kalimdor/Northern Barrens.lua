@@ -127,6 +127,7 @@ _.Zones =
 --]]					
 				}),					
 				n(0, {		-- Zone Drops
+					desc(i(6663), "Can drop from any mob in the Barrens."),	-- Recipe: Elixir of Giant Growth
 					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
 					n(3444, {	-- Dig Rat
 						{
@@ -1349,6 +1350,9 @@ _.Zones =
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
 					})),
+					nh(3490, {	-- Hula'mahi <Reagents, Herbs & Poison Supplies>
+						i(6053),	-- Recipe: Holy Protection Potion
+					}),
 					n(3497, {	-- Kilxx <Fisherman>
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(6368),	-- Recipe: Rainbow Fin Albacore
@@ -1359,17 +1363,15 @@ _.Zones =
 						i(4765),	-- Enamelled Broadsword
 						i(4766),	-- Feral Blade
 					}),
-					h(n(3479, {	-- Nargal Deatheye <Weaponsmith>
+					nh(3479, {	-- Nargal Deatheye <Weaponsmith>
 						i(4765),	-- Enamelled Broadsword
 						i(4766),	-- Feral Blade
-					})),
+					}),
 					n(3499, {	-- Ranik <Trade Supplies>
-						i(6275, { -- Pattern: Greater Adept's Robe
-							i(6264) -- Greater Adept's Robe
-						}),
-						i(6272, {	-- Pattern: Blue Linen Robe
-							i(6242),	-- Blue Linen Robe
-						}),
+						i(20855),	-- Design: Wicked Moonstone Ring
+						i(6272), 	-- Pattern: Blue Linen Robe
+						i(6275),	-- Pattern: Greater Adept's Robe
+						i(5640),	-- Recipe: Rage Potion
 					}),
 					nh(8307, {	-- Tarban Hearthgrain <Baker>
 						i(21219),	-- Recipe: Sagefish Delight
@@ -1383,7 +1385,7 @@ _.Zones =
 						i(11304),	-- Fine Longbow
 					})),
 					n(3492, {	-- Vexspindle <Cloth & Leather Armor Merchant>
-						i(4794),	-- Wolf BNracers
+						i(4794),	-- Wolf Bracers
 						i(4795),	-- Bear Bracers
 						i(4796),	-- Owl Bracers
 					}),

@@ -1222,6 +1222,9 @@ _.Zones =
 						dr(01.0, i(7441)),	-- Sentinel Cap
 						dr(01.0, i(7435)),	-- Twilight Mantle					
 					}), 
+					n(1783, {	-- Skeletal Flayer
+						dr(0.03, i(9296)),	-- Recipe: Gift of Arthas
+					}),
 					n(1851, { 	-- The Husk
 						dr(12.0, i(7437)),	-- Twilight Cuffs
 						dr(05.0, i(9868)),	-- Renegade Gauntlets
@@ -1336,18 +1339,12 @@ _.Zones =
 						}),
 					})),
 					n(11278,{	-- Magnus Frostwake
-						i(8030, {	-- Plans: Ebon Shiv
-							i(7947),	-- Ebon Shiv
-						}),
-						i(12823, {	-- Plans: Huge Thorium Battleaxe
-							i(12775),	-- Hugh Thorium Battleaxe
-						}),
-						i(12819, {	-- Plans: Ornate Thorium Handaxe
-							i(12773),	-- Ornate Thorium Handaxe
-						}),
-						i(12703, {	-- Plans: Storm Gauntlets
-							i(12632),	-- Storm Gauntlets
-						}),
+						i(8030),	-- Plans: Ebon Shiv
+						i(12823), 	-- Plans: Huge Thorium Battleaxe
+						i(12819), 	-- Plans: Ornate Thorium Handaxe
+						i(12703),	-- Plans: Storm Gauntlets
+						i(13501),	-- Recipe: Major Mana Potion
+						i(13485),	-- Recipe: Transmute Water to Air
 					}),
 				}),
 				n(-40, {	-- Legacy

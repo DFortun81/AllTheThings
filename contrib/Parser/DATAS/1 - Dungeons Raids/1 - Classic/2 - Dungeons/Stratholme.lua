@@ -128,6 +128,8 @@ _.Instances =
 							i(18716),	-- Ash Covered Boots
 						})),
 						cr(10813, e(449, { 	-- Balnazzar
+							dr(9, i(14512)),	-- Pattern: Truefaith Vestments
+							dr(4, i(13520)),	-- Recipe: Flask of Distilled Wisdom
 							i(13348),	-- Demonshear
 							i(18717),	-- Hammer of the Grand Crusader
 							i(13360),	-- Gift of the Elven Magi
@@ -137,7 +139,6 @@ _.Instances =
 							i(18720),	-- Shroud of the Nathrezim
 							i(13358),	-- Wyrmtongue Shoulders
 							i(13369),	-- Fire Striders
-							i(14512),	-- Pattern: Truefaith Vestments
 						})),
 						n(-40, {	-- Legacy
 							["groups"] = {

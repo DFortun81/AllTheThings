@@ -833,6 +833,9 @@ _.Zones =
 						i(12254),	-- Well Oiled Cloak
 						i(12253),	-- Brilliant Red Cloak
 					})),
+					nh(8177, {	-- Rartar <Alchemy Supplies>
+						i(9300),	-- Recipe: Elixir of Demonslaying
+					}),
 					h(n(984, {	-- Thralosh <Cloth & Leather Armor Merchant>
 						i(12256),	-- Cindercloth Leggings
 						i(12255),	-- Pale Leggings

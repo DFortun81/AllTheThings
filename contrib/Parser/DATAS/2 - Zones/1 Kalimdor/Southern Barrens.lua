@@ -119,6 +119,7 @@ _.Zones =
 					qg(66422, qh(31918)),	-- A Tamer's Homecoming
 				}),
 				n(0, {		-- Zone Drops
+					desc(i(6663), "Can drop from any mob in the Barrens."),	-- Recipe: Elixir of Giant Growth
 					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
 				}),
 				n(-17, {	-- Quests

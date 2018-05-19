@@ -841,6 +841,9 @@ _.Zones =
 						i(28273),	-- Formula: Enchant Gloves - Major Healing
 						i(33153),	-- Formula: Enchant Gloves - Threat
 						i(28281),	-- Formula: Enchant Weapon - Major Healing
+						i(13517),	-- Recipe: Alchemist Stone
+						i(31354),	-- Recipe: Flask of the Titans
+						i(22915),	-- Recipe: Transmute Primal Air to Fire
 						i(29180),	-- Blessed Scale Girdle
 						i(35330),	-- Dreadweave Leggings
 						i(35333),	-- Mooncloth Cowl
@@ -1462,6 +1465,7 @@ _.Zones =
 					}),
 					n(21655, {	-- Nakodu <Lower City Quartermaster>
 						i(33148),	-- Formula: Enchant Cloak - Dodge
+						i(22910),	-- Recipe: Elixir of Major Shadow Power
 						i(30835),	-- Salvager's Hauberk
 						i(30836),	-- Leggings of the Skettis Exile
 						i(35331),	-- Dreadweave Mantle
@@ -1541,10 +1545,6 @@ _.Zones =
 						i(31779),	-- Aldor Tabard
 					}),
 					n(19331, {	-- Quartermaster Enuril <Scryer Quartermaster>
-						i(29131),	-- Retainer's Leggings
-						i(29133),	-- Seer's Cane
-						i(29134),	-- Gauntlets of the Chosen
-						i(29125),	-- Retainer's Blade
 						i(23600, {	-- Plans: Enchanted Adamantite Leggings
 							i(23512),	-- Enchanted Adamantite Leggings
 						}),
@@ -1575,6 +1575,11 @@ _.Zones =
 						i(29701, {	-- Pattern: Enchanted Clefthoof Boots
 							i(29497),	-- Enchanted Clefthoof Boots
 						}),
+						i(22908),	-- Recipe: Elixir of Major Firepower
+						i(29131),	-- Retainer's Leggings
+						i(29133),	-- Seer's Cane
+						i(29134),	-- Gauntlets of the Chosen
+						i(29125),	-- Retainer's Blade
 						i(31780),	-- Scryers Tabard
 					}),
 					n(52268, {	-- Riha <Guild Vendor>
@@ -1764,6 +1769,9 @@ _.Zones =
 							}),
 						},
 						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
+					}),
+					n(19074, {	-- Skreah <Alchemy Supplies>
+						i(23574),	-- Recipe: Transmute Primal Might
 					}),
 					n(19238, {	-- Urumir Stavebright <Staff Vendor>
 						i(12252),	-- Staff of Protection

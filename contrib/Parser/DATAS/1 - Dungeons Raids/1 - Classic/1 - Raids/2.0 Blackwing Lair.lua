@@ -280,6 +280,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(13144),	-- Serenity Belt
 					i(13146),	-- Shell Launcher Shotgun
 					i(13072),	-- Stonegrip Gauntlets
+					dr(0.5, i(13518)),	-- Recipe: Potion of Petrification
+					dr(0.5, i(13488)),	-- Recipe: Transmute Life to Earth
+					dr(0.4, i(13489)),	-- Recipe: Transmute Earth to Life
+					dr(0.5, i(13486)),	-- Recipe: Transmute Undeath to Water
+					dr(0.5, i(13487)),	-- Recipe: Transmute Water to Undeath
 				},
 				["creatureID"] = 11583,
 			})

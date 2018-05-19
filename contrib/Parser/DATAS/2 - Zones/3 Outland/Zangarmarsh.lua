@@ -777,8 +777,33 @@ _.Zones =
 						i(27695),	-- Recipe: Feltail Delight
 					}),
 					n(17904, {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
+						i(33999),	-- Cenarion War Hippogryph Mount
+						i(31804),	-- Cenarion Expedition Tabard
 						i(33149),	-- Formula: Enchant Cloak - Stealth
 						i(28271),	-- Formula: Enchant Gloves - Precise Strikes
+						i(31390, {	-- Plans: Wildguard Breastplate
+							i(31364),	-- Wildguard Breastplate
+						}),
+						i(31391, {	-- Plans: Wildguard Leggings
+							i(31367),	-- Wildguard Leggings
+						}),
+						i(31392, {	-- Plans: Wildguard Helm
+							i(31368),	-- Wildguard Helm
+						}),
+						i(25735, {	-- Pattern: Heavy Clefthoof Vest
+							i(25689),	-- Heavy Clefthoof Vest
+						}),
+						i(25736, {	-- Pattern: Heavy Clefthoof Leggings
+							i(25690),	-- Heavy Clefthoof Leggings
+						}),
+						i(25737, {	-- Pattern: Heavy Clefthoof Boots
+							i(25691),	-- Heavy Clefthoof Boots
+						}),
+						i(32070),	-- Recipe: Earthen Elixir
+						i(31356),	-- Recipe: Flask of Distilled Wisdom
+						i(22922),	-- Recipe: Major Nature Protection Potion
+						i(25869),	-- Recipe: Transmute Earthstorm Diamond
+						i(22918),	-- Recipe: Transmute Primal Water to Air
 						i(29174),	-- Watcher's Cowl
 						i(35329),	-- Dreadweave Hood
 						i(35336),	-- Mooncloth Shoulderpads
@@ -800,29 +825,14 @@ _.Zones =
 						i(25835),	-- Explorer's Walking Stick
 						i(25836),	-- Preserver's Cudgel
 						i(25838),	-- Warden's Hauberk
-						i(31390, {	-- Plans: Wildguard Breastplate
-							i(31364),	-- Wildguard Breastplate
-						}),
-						i(31391, {	-- Plans: Wildguard Leggings
-							i(31367),	-- Wildguard Leggings
-						}),
-						i(31392, {	-- Plans: Wildguard Helm
-							i(31368),	-- Wildguard Helm
-						}),
-						i(25735, {	-- Pattern: Heavy Clefthoof Vest
-							i(25689),	-- Heavy Clefthoof Vest
-						}),
-						i(25736, {	-- Pattern: Heavy Clefthoof Leggings
-							i(25690),	-- Heavy Clefthoof Leggings
-						}),
-						i(25737, {	-- Pattern: Heavy Clefthoof Boots
-							i(25691),	-- Heavy Clefthoof Boots
-						}),
-						i(33999),	-- Cenarion War Hippogryph Mount
-						i(31804),	-- Cenarion Expedition Tabard
 					}),
 					nh(18015, {		-- Gambarinka <Tradesman>
 						i(27694),	-- Recipe: Blackened Trout
+					}),
+					na(18005, {		-- Haalrun <Alchemy Supplies>
+						i(22909),	-- Recipe: Elixir of Major Defense
+						i(22911),	-- Recipe: Major Dreamless Sleep Potion
+						i(22907),	-- Recipe: Super Mana Potion
 					}),
 					nh(18564, {		-- Horde Field Scout
 						i(24581, {	-- Mark of Thrallmar
@@ -865,6 +875,10 @@ _.Zones =
 							i(25827),	-- Muck-Covered Drape
 							i(31775),	-- Sporeggar Tabard
 						}),
+					}),
+					nh(18017, {		-- Seer Janidi <Reagents>
+						i(22902),	-- Recipe: Elixir of Major Frost Power
+						i(22901),	-- Recipe: Sneaking Potion
 					}),
 					nh(18011, {		-- Zurai <Merchant>
 						i(21899),	-- Pattern: Imbued Netherweave Boots

@@ -489,6 +489,9 @@ _.Zones =
 					}),
 				}),
 				n(-16, { 	-- Rares
+					n(19973, {	-- Abyssal Flamebringer
+						dr(0.8, i(22925)),	-- Recipe: Major Holy Protection Potion
+					}),
 					n(22243, {	-- Bash'ir Arcanist
 						dr(0.7, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
 					}),
@@ -599,7 +602,7 @@ _.Zones =
 					}),
 				}),
 				n(-2, {		-- Vendors
-					n(23245, {	-- Aether-tech Master
+					n(23245, {		-- Aether-tech Master
 						["groups"] = {
 							i(32626, {	-- Large Copper Metamorphosis Geode
 								i(31568),	-- Mistshoud Helm
@@ -632,6 +635,11 @@ _.Zones =
 						i(30753),		-- Warphorn Spear
 						i(30755),		-- Mag'hari Fighting Claw
 					})),
+					nh(19837, {		-- Daga Ramba <Potions>
+						i(22909),	-- Recipe: Elixir of Major Defense
+						i(22911),	-- Recipe: Major Dreamless Sleep Potion
+						i(22907),	-- Recipe: Super Mana Potion
+					}),
 					n(23428, {		-- Jho'nass <Ogri'la Quartermaster>
 						i(32569, { -- Apexis Shard
 							i(32650),		-- Cerulean Crystal Rod
