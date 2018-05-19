@@ -588,12 +588,13 @@ _.Instances = { tier(1, {	-- Classic
 				i(18815),	-- Essence of the Pure Flame
 				i(17082),	-- Shard of the Flame
 			 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
-				i(13008),	-- Dalewind Trousers
-				i(13075),	-- Direwing Legguards
-				i(13113),	-- Feathermoon Headdress
-				i(13144),	-- Serenity Belt
-				i(13146),	-- Shell Launcher Shotgun
-				i(13072),	-- Stonegrip Gauntlets
+				dr(8.0, i(13008)),	-- Dalewind Trousers
+				dr(3.0, i(13075)),	-- Direwing Legguards
+				dr(4.0, i(13113)),	-- Feathermoon Headdress
+				dr(7.0, i(13144)),	-- Serenity Belt
+				dr(3.0, i(13146)),	-- Shell Launcher Shotgun
+				dr(3.0, i(13072)),	-- Stonegrip Gauntlets
+				dr(2.0, i(13047)),	-- Twig of the World Tree
 			})),
 		},
 		["isRaid"] = true,
