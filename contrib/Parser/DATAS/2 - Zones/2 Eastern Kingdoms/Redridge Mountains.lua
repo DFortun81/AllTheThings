@@ -45,8 +45,8 @@ _.Zones =
 					qg(65651, qa(31781)),	-- Lindsay (DAILY)
 				}),
 				n(-17, {	-- Quests
-					a(ach(4902, { -- Redridge Mountains Quests
-						crit(1, { -- The Gnoll Offensive
+					a(ach(4902, { -- Redridge Mountain Quests
+						a(crit(1, { -- The Gnoll Offensive
 							qg(464, qa(26503, {	-- Still Assessing the Threat
 								["groups"] = {
 									i(60687),	-- Belt of the Sons
@@ -86,6 +86,7 @@ _.Zones =
 									430,	-- Redridge Mystic
 								},
 								["sourceQuests"] = { 26514 },	-- Canyon Romp
+								["races"] = ALLIANCE_ONLY, -- Alliance Only Races
 							},	
 							qg(382, qa(26513, {	-- Like a Fart in the Wind
 								["groups"] = {
@@ -118,8 +119,8 @@ _.Zones =
 									["sourceQuests"] = {26519},	-- He Who Controls the Ettins							
 								}),
 							}),
-						}),
-						crit(2, { -- Keeshan's Raiders
+						})),
+						a(crit(2, { -- Keeshan's Raiders
 							qg(43221, qa(26567, {	-- John J. Keeshan
 								["groups"] = {
 								},
@@ -192,8 +193,8 @@ _.Zones =
 								},
 								["sourceQuests"] = {26563},	-- Return of the Bravo Company
 							})),
-						}),
-						crit(3, { -- First Blood
+						})),
+						a(crit(3, { -- First Blood
 							qg(43184, qa(26616, {	-- It's Never Over
 								["groups"] = {
 								},
@@ -298,34 +299,40 @@ _.Zones =
 								},
 								["sourceQuests"] = {26714},	-- Darkblaze, Brood of the Worldbreaker
 							})),
-						}),
+						})),
 					})),
 					n(-168, { -- Other Quests
 						sz(780,1, {  -- Lakeshire
-							qg(8965, qa(26508)), -- Nida's Necklace
-							qg(342, qa(26509)),	-- An Unwelcome Guest
-							qg(900, qa(26511, {	-- Lake Everstill Clean Up
-								i(60699),	-- Bailiff's Gloves
-								i(60698),	-- Belt of Recurring Raids
-								i(131539),	-- Chain of Recurring Raids
-								i(157001),	-- Everstill Hewer
-								i(60697),	-- Indiscriminate Wand
-								i(60696),	-- Shield of the Lesson
-							})),
-							qg(900, qa(26728)),	-- Hero's Call: Duskwood! (BREADCRUMB)
-							qg(620, q(3861, {	-- CLUCK!
-								i(11110), -- Chicken Egg
-							})),
+							["groups"] = {
+								qg(8965, qa(26508)), -- Nida's Necklace
+								qg(342, qa(26509)),	-- An Unwelcome Guest
+								qg(900, qa(26511, {	-- Lake Everstill Clean Up
+									i(60699),	-- Bailiff's Gloves
+									i(60698),	-- Belt of Recurring Raids
+									i(131539),	-- Chain of Recurring Raids
+									i(157001),	-- Everstill Hewer
+									i(60697),	-- Indiscriminate Wand
+									i(60696),	-- Shield of the Lesson
+								})),
+								qg(900, qa(26728)),	-- Hero's Call: Duskwood! (BREADCRUMB)
+								qg(620, q(3861, {	-- CLUCK!
+									i(11110), -- Chicken Egg
+								})),
+							},
+							["collectible"] = false,
 						}),
 						sz(780,3, { -- Three Corners
-							qg(379, qa(26506)),	-- Franks and Beans
-							a(o(204344, {	-- Wanted!
-								qa(26504, { -- Wanted: Redridge Gnolls
-									i(60684),	-- Royal Guard Breastplate
-									i(60683),	-- Tower Watch Bracers
-									i(60682),	-- Watch Captain's Cloak
+							["groups"] = {
+								qg(379, qa(26506)),	-- Franks and Beans
+								o(204344, {	-- Wanted!
+									qa(26504, { -- Wanted: Redridge Gnolls
+										i(60684),	-- Royal Guard Breastplate
+										i(60683),	-- Tower Watch Bracers
+										i(60682),	-- Watch Captain's Cloak
+									}),
 								}),
-							})),
+							},
+							["collectible"] = false,
 						}),
 					}),
 				}),
