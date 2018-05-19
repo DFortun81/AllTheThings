@@ -3,14 +3,14 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(466, { 	-- Outland
+	m(466, {	-- Outland
 		m(475, {	-- Blade's Edge Mountains
 			["groups"] = {		
 --[[				
-				n(-3, { 	-- Holidays					
+				n(-3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 913, -- To Honor One's Elders
@@ -18,7 +18,7 @@ _.Zones =
 					}),
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 1693,    -- Fool For Love
@@ -26,7 +26,7 @@ _.Zones =
 					}),
 					n(-51, {     -- Noblegarden
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 2798, -- Noble Gardener
@@ -34,7 +34,7 @@ _.Zones =
 					}),
 					n(-52, {     -- Children's Week
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 1793, -- For The Children
@@ -42,7 +42,7 @@ _.Zones =
 					}),					
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
@@ -50,7 +50,7 @@ _.Zones =
 					}),					
 					n(-56, {     -- Brewfest
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 1683, -- Brewmaster
@@ -58,7 +58,7 @@ _.Zones =
 					}),
 					n(-58, {     -- Hallow's End
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
@@ -66,7 +66,7 @@ _.Zones =
 					}),	
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 3478, -- Pilgrim
@@ -74,7 +74,7 @@ _.Zones =
 					}),
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-17, {	-- Quests
 							}),
 						},
 						["achievementID"] = 1691, -- Merrymaker
@@ -82,24 +82,24 @@ _.Zones =
 					}),						
 				}),				
 --]]				
-				n(-25, { 	-- Pet Battle
-					p(1164), 	-- Cogblade Raptor
-					p(378), 	-- Rabbit
-					p(482), 	-- Rock Viper
-					p(528), 	-- Scalded Basilisk Hatchling
-					p(414), 	-- Scorpid
-					p(637), 	-- Skittering Cavern Crawler
-					p(379), 	-- Squirrel
+				n(-25, {	-- Pet Battle
+					p(1164),	-- Cogblade Raptor
+					p(378),	-- Rabbit
+					p(482),	-- Rock Viper
+					p(528),	-- Scalded Basilisk Hatchling
+					p(414),	-- Scorpid
+					p(637),	-- Skittering Cavern Crawler
+					p(379),	-- Squirrel
 				}),
-				n(-17, { 	-- Quests
-					q(10713,  {  	-- ...and a Time for Action
+				n(-17, {	-- Quests
+					q(10713, {	-- ...and a Time for Action
 						i(31510),
 						i(31512),
 						i(31516),
 						i(31521),
 					}),
 --					qh( 10721),	-- A Boaring Time for Grulloc
-					qh(10544,  {  	-- A Curse Upon Both of Your Clans!
+					qh(10544, {	-- A Curse Upon Both of Your Clans!
 						i(31470),
 						i(31471),
 						i(31472),
@@ -131,13 +131,13 @@ _.Zones =
 					qh( 12393),	-- Candy Bucket
 					q(10567),	-- Creating the Pendant
 --]]					
-					qa(10796,  {  	-- Crush the Bloodmaul Camp!
+					qa(10796, {	-- Crush the Bloodmaul Camp!
 						i(31537),
 						i(31538),
 						i(31539),
 						i(31540),
 					}),
-					qh(10784,  {  	-- Crush the Bloodmaul Camp
+					qh(10784, {	-- Crush the Bloodmaul Camp
 						i(31537),
 						i(31538),
 						i(31539),
@@ -147,7 +147,7 @@ _.Zones =
 					qa( 10608),	-- Crystal Clear
 					q(10753),	-- Culling the Wild
 --]]
-					qa(10632,  {  	-- Cutting Your Teeth
+					qa(10632, {	-- Cutting Your Teeth
 						i(31446),
 						i(31447),
 						i(31448),
@@ -184,13 +184,13 @@ _.Zones =
 						},
 						["description"] = "Wanted Poster",
 					}),
-					q(10771,  {  	-- From the Ashes
+					q(10771, {	-- From the Ashes
 						i(31414),
 						i(31416),
 						i(31415),
 					}),
 --					qh( 10859),	-- Gather the Orbs
-					qa(10594,  {  	-- Gauging the Resonant Frequency
+					qa(10594, {	-- Gauging the Resonant Frequency
 						i(31444),
 						i(31443),
 						i(31445),
@@ -200,12 +200,12 @@ _.Zones =
 					q(10512),	-- Getting the Bladespire Tanked
 					qa( 10800),	-- Goodnight, Gronn
 --]]					
-					qa(10802,  {  	-- Gorgrom the Dragon-Eater
+					qa(10802, {	-- Gorgrom the Dragon-Eater
 						i(31542),
 						i(31541),
 						i(31543),
 					}),
-					qh(10723,  {  	-- Gorgrom the Dragon-Eater
+					qh(10723, {	-- Gorgrom the Dragon-Eater
 						i(31542),
 						i(31541),
 						i(31543),
@@ -224,7 +224,7 @@ _.Zones =
 					qh( 10715),	-- Into the Churning Gulch
 					qa( 10799),	-- Into the Churning Gulch
 --]]					
-					qa(10510,  {  	-- Into the Draenethyst Mine
+					qa(10510, {	-- Into the Draenethyst Mine
 						i(31429),
 						i(31431),
 						i(31430),
@@ -243,7 +243,7 @@ _.Zones =
 					q(10456),	-- Marauding Wolves
 					qa( 10805),	-- Massacre at Gruul's Lair
 --]]					
-					q(10748,  {  	-- Maxnar Must Die!
+					q(10748, {	-- Maxnar Must Die!
 						i(31508),
 						i(31511),
 						i(31514),
@@ -282,7 +282,7 @@ _.Zones =
 					qa( 10798),	-- Pay the Baron a Visit
 					qa( 10584),	-- Picking Up Some Power Converters
 --]]					
-					qa(10518,  {  	-- Planting the Banner
+					qa(10518, {	-- Planting the Banner
 						i(31433),
 						i(31434),
 						i(31435),
@@ -292,13 +292,13 @@ _.Zones =
 					q(10717),	-- Poaching from Poachers
 					qh( 10724),	-- Prisoner of the Bladespire
 --]]					
-					qa(10457,  {  	-- Protecting Our Own
+					qa(10457, {	-- Protecting Our Own
 						i(31418),
 						i(31419),
 						i(31420),
 						i(31421),
 					}),
-					qh(10488,  {  	-- Protecting Our Own
+					qh(10488, {	-- Protecting Our Own
 						i(31481),
 						i(31482),
 						i(31483),
@@ -308,7 +308,7 @@ _.Zones =
 					q(10975),	-- Purging the Chambers of Bash'ir
 					qh( 10709),	-- Reunion
 --]]
-					qa(10657, {  	-- Ride the Lightning
+					qa(10657, { 	-- Ride the Lightning
 						i(31452),
 						i(31453),
 						i(31454),
@@ -319,14 +319,14 @@ _.Zones =
 					qh( 10615),	-- Ruuan Weald
 					q(10556),	-- Scratches
 --]]					
-					qa(10675,  {  	-- Show Them Gnome Mercy!
+					qa(10675, {	-- Show Them Gnome Mercy!
 						i(31456),
 						i(31457),
 						i(31458),
 						i(31459),
 						i(30690), 		-- TOY!
 					}),
-					qa(10806,  {  	-- Showdown
+					qa(10806, {	-- Showdown
 						i(31546),
 						i(31544),
 						i(31545),
@@ -334,7 +334,7 @@ _.Zones =
 						i(31549),
 						i(31548),
 					}),
-					qh(10742,  {  	-- Showdown
+					qh(10742, {	-- Showdown
 						i(31546),
 						i(31544),
 						i(31545),
@@ -348,14 +348,14 @@ _.Zones =
 					qh( 10786),	-- Slaughter at Boulder'mok
 					qa( 10803),	-- Slaughter at Boulder'mok
 --]]					
-					qh(10845,  {  	-- Slay the Brood Mother
+					qh(10845, {	-- Slay the Brood Mother
 						i(31683),
 						i(31685),
 						i(31684),
 						i(31686),
 					}),
 --					qa( 11022),	-- Speak with Mog'dorg
-					qh(10853,  {  	-- Spirit Calling
+					qh(10853, {	-- Spirit Calling
 						i(31711),
 						i(31713),
 						i(31712),
@@ -371,14 +371,14 @@ _.Zones =
 					qa( 10557),	-- Test Flight: The Zephyrium Capacitorium
 					qh( 11047),	-- The Apprentice's Request
 --]]					
-					qa(10504,  {  	-- The Bladespire Ogres
+					qa(10504, {	-- The Bladespire Ogres
 						i(31425),
 						i(31426),
 						i(31427),
 						i(31428),
 					}),
 --					qh( 10503),	-- The Bladespire Threat
-					qh(10505,  {  	-- The Bloodmaul Ogres
+					qh(10505, {	-- The Bloodmaul Ogres
 						i(31477),
 						i(31479),
 						i(31478),
@@ -388,7 +388,7 @@ _.Zones =
 					q(10502),	-- The Bloodmaul Ogres
 					q(11025),	-- The Crystals
 --]]					
-					qa(10690,  {  	-- The Den Mother
+					qa(10690, {	-- The Den Mother
 						i(31423),
 						i(31422),
 						i(31424),
@@ -407,7 +407,7 @@ _.Zones =
 					qh( 10718),	-- The Spirits Have Voices
 					qh( 10565),	-- The Stones of Vekh'nir
 --]]					
-					qh(10526,  {  	-- The Thunderspike
+					qh(10526, {	-- The Thunderspike
 						i(31475),
 						i(31476),
 						i(31474),
@@ -418,7 +418,7 @@ _.Zones =
 					q(11057),	-- The Trouble Below
 					q(10825),	-- The Truth Unorbed
 --]]					
-					qh(10867,  {  	-- There Can Be Only One Response
+					qh(10867, {	-- There Can Be Only One Response
 						i(31687),
 						i(31688),
 						i(31689),
@@ -435,20 +435,20 @@ _.Zones =
 					qh( 10525),	-- Vision Guide
 					qh( 39198),	-- Warchief's Command: Blade's Edge Mountains
 --]]					
-					qa(10609,  {  	-- What Came First, the Drake or the Egg?
+					qa(10609, {	-- What Came First, the Drake or the Egg?
 						i(31438),
 						i(31439),
 						i(31440),
 						i(31441),
 					}),
-					q(10747,  {  	-- Whelps of the Wyrmcult
+					q(10747, {	-- Whelps of the Wyrmcult
 						i(31509),
 						i(31513),
 						i(31515),
 						i(31519),
 					}),
 --					qa( 10580),	-- Where Did Those Darn Gnomes Go?
-					q(10607,  {  	-- Whispers of the Raven God
+					q(10607, {	-- Whispers of the Raven God
 						i(31531),
 						i(31532),
 						i(31533),
@@ -460,7 +460,7 @@ _.Zones =
 					q(11065),	-- Wrangle Some Aether Rays!
 					q(10894),	-- Wyrmskull Watcher
 --]]					
-					q(10821,  {  	-- You're Fired!
+					q(10821, {	-- You're Fired!
 						i(31793),
 						i(31792),
 					}),
@@ -488,120 +488,27 @@ _.Zones =
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 				}),
-				n(-16, { 	-- Rares
-					n(19973, {	-- Abyssal Flamebringer
-						dr(0.8, i(22925)),	-- Recipe: Major Holy Protection Potion
-					}),
-					n(22243, {	-- Bash'ir Arcanist
-						dr(0.7, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
-					}),
-					n(22242, {	-- Bash'ir Spell-Thief
-						dr(0.9, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
-					}),
-					n(19952, {	-- Bloodmaul Geomancer
-						dr(2, i(22534)),	-- Formula: Enchant Bracer - Spellpower
-					}),
-					n(20889, { 	-- Ethereum Prisoner (Group Energy Ball)
-						["groups"] = {	
-							n(22827, { 	-- Gorgolon the All-Seeing
-								i(31569),	-- Mistshroud Shoulders
-							}),
-							n(22826, { 	-- King Dorfbruiser
-								i(31577),	-- Slatesteel Shoulders
-							}),
-							n(22825, { 	-- Matron Li-sahar
-								i(31553),	-- Windchanneller's Mantle
-							}),
-							n(20888, { 	-- Solus the Eternal
-								i(31561),	-- Skystalker's Shoulders
-							}),
-							n(22828, { 	-- Trelopades
-								i(32522),	-- Demonic Bulwark
-							}),
-						},
-						["description"] = "Once Revered with Consortium trade in 5 Ethereum Prison Keys to Image of Commander Ameer to obtain an Ethereum Stasis Chamber Key. The key opens the stasis chamber to reveal 1 of 5 random bosses.",
-					}),
-					n(23261, { 	-- Furywing
-						["groups"] = {	
-							dr(100, i(32683, {	-- Jet Scale of Furywing
-								i(31942),			-- Deathwing Brood Cloak
-							})),
-						},
-						["description"] = "Use 35 Apexis Shards to summon dragon. Summon Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
-					}),				
-					n(18692, { 	-- Hemathion
-						dr(25, i(31155)), 	-- Drakescale Breastplate
+				n(-16, {	-- Rares
+					n(18692, {	-- Hemathion
+						dr(25, i(31155)),	-- Drakescale Breastplate
 						dr(25, i(31156)),	-- Drakescale Hauberk
 						dr(25, i(31158)),	-- Drakeweave Raiment
 						dr(24, i(31157)),	-- Drakehide Tunic
 					}),
-					n(23281, { 	-- Insidion
-						["groups"] = {	
-							dr(100, i(32684, {	-- Insidion's Ebony Scale 
-								i(31942), 			-- Deathwing Brood Cloak
-							})),
-						},
-						["description"] = "Use 35 Apexis Shards to summon dragon. Summon Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
-					}),					
-					n(18690, { 	-- Morcrush
+					n(18690, {	-- Morcrush
 						dr(29, i(31159)),	-- Felstone Pauldrons
 						dr(24, i(31161)),	-- Felstone Spaulders
 						dr(23, i(31160)),	-- Felstone Epaulets
 						dr(23, i(31162)),	-- Felstone Mantle
 					}),
-					n(23282, { 	-- Obsidia 
-						["groups"] = {	
-							dr(100, i(32682, {	-- Obsidia Scale
-								i(31942), 			-- Deathwing Brood Cloak
-							})),
-						},
-						["description"] = "Use 35 Apexis Shards to summon dragon. Summon Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
-					}),					
-					n(23061, { 	-- Rivendark
-						["groups"] = {	
-							dr(100, i(32681, {	-- Onyx Scale of Rivendark
-								i(31942), 			-- Deathwing Brood Cloak
-							})),
-						},
-						["description"] = "Use 35 Apexis Shards to summon dragon. Summon Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
-					}),
-					n(18693, { 	-- Speaker Mar'grom
+					n(18693, {	-- Speaker Mar'grom
 						dr(25, i(31163)),	-- Nethersteel Handguards
 						dr(25, i(31166)),	-- Nethersteel-Lined Handwraps
-						dr(25, i(31165)), 	-- Nethersteel-Reinforced Gloves
-						dr(24, i(31164)), 	-- Nethersteel Gauntlets
-					}), 
-					n(0, { 		-- Zone Drop
-						["groups"] = {
-							i(32677, {	-- Depleted Cloak
-								i(32665),	-- Crystalweave Cape
-							}),
-							i(32676, { 	-- Depleted Cloth Bracers
-								i(32655),	-- Crystalweave Bracers
-							}),
-							i(32673, { 	-- Depleted Dagger
-								i(32659), 	-- Crystal-Infused Shiv
-							}),
-							i(32671, {	-- Depleted Mace
-								i(32661), 	-- Apexis Crystal Mace
-							}),
-							i(32675, { 	-- Depleted Mail Gauntlets
-								i(32656),	-- Crystalhide Handwraps
-							}),
-							i(32679, { 	-- Depleted Staff
-								i(32662), 	-- Flaming Quartz Staff
-							}),
-							i(32674, { 	-- Depleted Sword
-								i(32660),	-- Crystal Forged Sword
-							}),
-							i(32670, { 	-- Depleted Two-Handed Axe
-								i(32663), 	-- Apexis Cleaver
-							}),
-						},
-						["description"] = "These drop from the flying only areas of Blade's Edge Mountains (The Crystal Spine and Ogri'la). Combine 50 apexis shards to create the item.",
+						dr(25, i(31165)),	-- Nethersteel-Reinforced Gloves
+						dr(24, i(31164)),	-- Nethersteel Gauntlets
 					}),
 				}),
-				n(-2, {		-- Vendors
+				n( -2, {	-- Vendors
 					n(23245, {		-- Aether-tech Master
 						["groups"] = {
 							i(32626, {	-- Large Copper Metamorphosis Geode
@@ -653,7 +560,7 @@ _.Zones =
 						}),
 					}),
 					na(21113, {		-- Sassa Weldwell <Trade Goods>
-						i(31674), 	-- Recipe: Crunchy Serpent
+						i(31674),	-- Recipe: Crunchy Serpent
 						i(31675),	-- Recipe: Mok'Nathal Shortribs
 					}),
 					n(22099, {		-- Wyrmcult Provisioner
@@ -663,12 +570,436 @@ _.Zones =
 						["description"] = "To access this vendor, you must be wearing an Overseer Disguise. To get the disguise, you must either be currently on, or have completed, the quest 'Meeting at the Blackwing Coven' which will allow you to loot 'Costume Scraps' from Wyrmcultists. You will need 5 Costume Scraps to make an Overseer Disguise.|r",
 					}),
 					n(20916, {		-- Xerintha Ravenoak <Food & Drink>
-						i(31674), 	-- Recipe: Crunchy Serpent
+						i(31674),	-- Recipe: Crunchy Serpent
 						i(31675),	-- Recipe: Mok'Nathal Shortribs
 					}),
 					n(20917, {		-- Zinyen Swiftstrider <Weapon Vendor>
 						i(30753),		-- Warphorn Spear
 						i(30755),		-- Mag'hari Fighting Claw
+					}),
+				}),
+				n(  0, {	-- Zone Drop
+					n(19973, {	-- Abyssal Flamebringer
+						dr(.04, i(32673, {	-- Depleted Dagger
+							i(32659),	-- Crystal-Infused Shiv
+						})),
+						dr(.01, i(32675, {	-- Depleted Mail Gauntlets
+							i(32656),	-- Crystalhide Handwraps
+						})),
+						dr(0.8, i(22925)),	-- Recipe: Major Holy Protection Potion
+					}),
+					n(22181, {	-- Aether Ray
+						dr(.01, i(32677, {	-- Depleted Cloak
+							i(32665),	-- Crystalweave Cape
+						})),
+						dr(.01, i(32676, {	-- Depleted Cloth Bracers
+							i(32655),	-- Crystalweave Bracers
+						})),
+						dr(.01, i(32673, {	-- Depleted Dagger
+							i(32659),	-- Crystal-Infused Shiv
+						})),
+						dr(.01, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+					}),
+					n(22175, {	-- Apexis Flayer
+						dr(.01, i(32677, {	-- Depleted Cloak
+							i(32665),	-- Crystalweave Cape
+						})),
+						dr(.01, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(.01, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+					}),
+					n(22275, {	-- Apexis Guardian
+						dr(3.0, i(32677, {	-- Depleted Cloak
+							i(32665),	-- Crystalweave Cape
+						})),
+						dr(1.3, i(32676, {	-- Depleted Cloth Bracers
+							i(32655),	-- Crystalweave Bracers
+						})),
+						dr(2.0, i(32673, {	-- Depleted Dagger
+							i(32659),	-- Crystal-Infused Shiv
+						})),
+						dr(3.0, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(1.7, i(32675, {	-- Depleted Mail Gauntlets
+							i(32656),	-- Crystalhide Handwraps
+						})),
+						dr(1.9, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+						dr(2.0, i(32674, {	-- Depleted Sword
+							i(32660),	-- Crystal Forged Sword
+						})),
+						dr(2.0, i(32670, {	-- Depleted Two-Handed Axe
+							i(32663),	-- Apexis Cleaver
+						})),
+					}),
+					n(22243, {	-- Bash'ir Arcanist
+						dr(.01, i(32673, {	-- Depleted Dagger
+							i(32659),	-- Crystal-Infused Shiv
+						})),
+						dr(.01, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(.01, i(32674, {	-- Depleted Sword
+							i(32660),	-- Crystal Forged Sword
+						})),
+						dr(0.7, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
+					}),
+					n(22242, {	-- Bash'ir Spell-Thief
+						dr(.01, i(32677, {	-- Depleted Cloak
+							i(32665),	-- Crystalweave Cape
+						})),
+						dr(.01, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(.01, i(32670, {	-- Depleted Two-Handed Axe
+							i(32663),	-- Apexis Cleaver
+						})),
+						dr(0.9, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
+					}),
+					n(19952, {	-- Bloodmaul Geomancer
+						dr(2, i(22534)),	-- Formula: Enchant Bracer - Spellpower
+					}),
+					n(23353, {	-- Braxxus
+						dr(1.4, i(32676, {	-- Depleted Cloth Bracers
+							i(32655),	-- Crystalweave Bracers
+						})),
+						dr(1.8, i(32673, {	-- Depleted Dagger
+							i(32659),	-- Crystal-Infused Shiv
+						})),
+						dr(3.0, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(0.2, i(32675, {	-- Depleted Mail Gauntlets
+							i(32656),	-- Crystalhide Handwraps
+						})),
+						dr(2.0, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+						dr(2.0, i(32674, {	-- Depleted Sword
+							i(32660),	-- Crystal Forged Sword
+						})),
+						dr(5.0, i(32670, {	-- Depleted Two-Handed Axe
+							i(32663),	-- Apexis Cleaver
+						})),
+					}),
+					n(20889, {	-- Ethereum Prisoner (Group Energy Ball)
+						["groups"] = {	
+							n(22827, {	-- Gorgolon the All-Seeing
+								i(31569),	-- Mistshroud Shoulders
+							}),
+							n(22826, {	-- King Dorfbruiser
+								i(31577),	-- Slatesteel Shoulders
+							}),
+							n(22825, {	-- Matron Li-sahar
+								i(31553),	-- Windchanneller's Mantle
+							}),
+							n(20888, {	-- Solus the Eternal
+								i(31561),	-- Skystalker's Shoulders
+							}),
+							n(22828, {	-- Trelopades
+								i(32522),	-- Demonic Bulwark
+							}),
+						},
+						["description"] = "Once Revered with The Consortium, trade in 5 Ethereum Prison Keys to Image of Commander Ameer to obtain an Ethereum Stasis Chamber Key. The key opens the stasis chamber to reveal 1 of 5 random bosses.",
+					}),
+					n(22204, {	-- Fear Fiend
+						dr(.01, i(32677, {	-- Depleted Cloak
+							i(32665),	-- Crystalweave Cape
+						})),
+					}),
+					n(22291, {	-- Furnace Guard
+						dr(.01, i(32676, {	-- Depleted Cloth Bracers
+							i(32655),	-- Crystalweave Bracers
+						})),
+						dr(.01, i(32675, {	-- Depleted Mail Gauntlets
+							i(32656),	-- Crystalhide Handwraps
+						})),
+						dr(.01, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+						dr(.01, i(32670, {	-- Depleted Two-Handed Axe
+							i(32663),	-- Apexis Cleaver
+						})),
+					}),
+					n(23261, {	-- Furywing
+						["groups"] = {
+							dr(1.8, i(32677, {	-- Depleted Cloak
+								i(32665),	-- Crystalweave Cape
+							})),
+							dr(1.6, i(32676, {	-- Depleted Cloth Bracers
+								i(32655),	-- Crystalweave Bracers
+							})),
+							dr(1.6, i(32673, {	-- Depleted Dagger
+								i(32659),	-- Crystal-Infused Shiv
+							})),
+							dr(1.7, i(32671, {	-- Depleted Mace
+								i(32661),	-- Apexis Crystal Mace
+							})),
+							dr(1.2, i(32675, {	-- Depleted Mail Gauntlets
+								i(32656),	-- Crystalhide Handwraps
+							})),
+							dr(4.0, i(32679, {	-- Depleted Staff
+								i(32662),	-- Flaming Quartz Staff
+							})),
+							dr(0.7, i(32674, {	-- Depleted Sword
+								i(32660),	-- Crystal Forged Sword
+							})),
+							dr(3.0, i(32670, {	-- Depleted Two-Handed Axe
+								i(32663),	-- Apexis Cleaver
+							})),
+							dr(100, i(32683, {	-- Jet Scale of Furywing
+								i(31942),			-- Deathwing Brood Cloak
+							})),
+						},
+						["description"] = "Use 35 Apexis Shards for each summon of Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
+					}),
+					n(22281, {	-- Galvanoth
+						dr(1.1, i(32677, {	-- Depleted Cloak
+							i(32665),	-- Crystalweave Cape
+						})),
+						dr(4.0, i(32676, {	-- Depleted Cloth Bracers
+							i(32655),	-- Crystalweave Bracers
+						})),
+						dr(1.3, i(32673, {	-- Depleted Dagger
+							i(32659),	-- Crystal-Infused Shiv
+						})),
+						dr(2.0, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(1.7, i(32675, {	-- Depleted Mail Gauntlets
+							i(32656),	-- Crystalhide Handwraps
+						})),
+						dr(1.8, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+						dr(2.0, i(32674, {	-- Depleted Sword
+							i(32660),	-- Crystal Forged Sword
+						})),
+						dr(1.0, i(32670, {	-- Depleted Two-Handed Axe
+							i(32663),	-- Apexis Cleaver
+						})),
+					}),
+					n(23281, {	-- Insidion
+						["groups"] = {
+							dr(1.0, i(32677, {	-- Depleted Cloak
+								i(32665),	-- Crystalweave Cape
+							})),
+							dr(1.4, i(32676, {	-- Depleted Cloth Bracers
+								i(32655),	-- Crystalweave Bracers
+							})),
+							dr(1.0, i(32673, {	-- Depleted Dagger
+								i(32659),	-- Crystal-Infused Shiv
+							})),
+							dr(2.0, i(32671, {	-- Depleted Mace
+								i(32661),	-- Apexis Crystal Mace
+							})),
+							dr(3.0, i(32675, {	-- Depleted Mail Gauntlets
+								i(32656),	-- Crystalhide Handwraps
+							})),
+							dr(1.8, i(32679, {	-- Depleted Staff
+								i(32662),	-- Flaming Quartz Staff
+							})),
+							dr(2.0, i(32674, {	-- Depleted Sword
+								i(32660),	-- Crystal Forged Sword
+							})),
+							dr(1.8, i(32670, {	-- Depleted Two-Handed Axe
+								i(32663),	-- Apexis Cleaver
+							})),
+							dr(100, i(32684, {	-- Insidion's Ebony Scale 
+								i(31942),	-- Deathwing Brood Cloak
+							})),
+							
+						},
+						["description"] = "Use 35 Apexis Shards for each summon of Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
+					}),
+					n(23154, {	-- Mana-Debt Slave
+						dr(.01, i(32676, {	-- Depleted Cloth Bracers
+							i(32655),	-- Crystalweave Bracers
+						})),
+					}),
+					n(23354, {	-- Mo'arg Incinerator
+						dr(1.8, i(32677, {	-- Depleted Cloak
+							i(32665),	-- Crystalweave Cape
+						})),
+						dr(1.8, i(32676, {	-- Depleted Cloth Bracers
+							i(32655),	-- Crystalweave Bracers
+						})),
+						dr(1.7, i(32673, {	-- Depleted Dagger
+							i(32659),	-- Crystal-Infused Shiv
+						})),
+						dr(2.0, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(1.6, i(32675, {	-- Depleted Mail Gauntlets
+							i(32656),	-- Crystalhide Handwraps
+						})),
+						dr(2.0, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+						dr(1.5, i(32674, {	-- Depleted Sword
+							i(32660),	-- Crystal Forged Sword
+						})),
+						dr(1.5, i(32670, {	-- Depleted Two-Handed Axe
+							i(32663),	-- Apexis Cleaver
+						})),
+					}),
+					n(23282, {	-- Obsidia 
+						["groups"] = {
+							dr(2.0, i(32677, {	-- Depleted Cloak
+								i(32665),	-- Crystalweave Cape
+							})),
+							dr(1.4, i(32676, {	-- Depleted Cloth Bracers
+								i(32655),	-- Crystalweave Bracers
+							})),
+							dr(1.8, i(32673, {	-- Depleted Dagger
+								i(32659),	-- Crystal-Infused Shiv
+							})),
+							dr(2.0, i(32671, {	-- Depleted Mace
+								i(32661),	-- Apexis Crystal Mace
+							})),
+							dr(1.6, i(32675, {	-- Depleted Mail Gauntlets
+								i(32656),	-- Crystalhide Handwraps
+							})),
+							dr(1.4, i(32679, {	-- Depleted Staff
+								i(32662),	-- Flaming Quartz Staff
+							})),
+							dr(1.6, i(32674, {	-- Depleted Sword
+								i(32660),	-- Crystal Forged Sword
+							})),
+							dr(2.0, i(32670, {	-- Depleted Two-Handed Axe
+								i(32663),	-- Apexis Cleaver
+							})),
+							dr(100, i(32682, {	-- Obsidia Scale
+								i(31942), 			-- Deathwing Brood Cloak
+							})),
+						},
+						["description"] = "Use 35 Apexis Shards for each summon of Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
+					}),
+					n(24917, {	-- Phase Wyrm
+						dr(.01, i(32674, {	-- Depleted Sword
+							i(32660),	-- Crystal Forged Sword
+						})),
+					}),
+					n(23061, {	-- Rivendark
+						["groups"] = {
+							dr(1.6, i(32677, {	-- Depleted Cloak
+								i(32665),	-- Crystalweave Cape
+							})),
+							dr(2.0, i(32676, {	-- Depleted Cloth Bracers
+								i(32655),	-- Crystalweave Bracers
+							})),
+							dr(2.0, i(32673, {	-- Depleted Dagger
+								i(32659),	-- Crystal-Infused Shiv
+							})),
+							dr(2.0, i(32671, {	-- Depleted Mace
+								i(32661),	-- Apexis Crystal Mace
+							})),
+							dr(1.3, i(32675, {	-- Depleted Mail Gauntlets
+								i(32656),	-- Crystalhide Handwraps
+							})),
+							dr(6.0, i(32679, {	-- Depleted Staff
+								i(32662),	-- Flaming Quartz Staff
+							})),
+							dr(1.2, i(32674, {	-- Depleted Sword
+								i(32660),	-- Crystal Forged Sword
+							})),
+							dr(3.0, i(32670, {	-- Depleted Two-Handed Axe
+								i(32663),	-- Apexis Cleaver
+							})),
+							dr(100, i(32681, {	-- Onyx Scale of Rivendark
+								i(31942), 			-- Deathwing Brood Cloak
+							})),
+						},
+						["description"] = "Use 35 Apexis Shards for each summon of Furywing, Insidion, Obsidia, and Rivendark to get the pieces to make the cloak.",
+					}),
+					n(22180, {	-- Shard-Hide Boar
+						dr(.02, i(32676, {	-- Depleted Cloth Bracers
+							i(32655),	-- Crystalweave Bracers
+						})),
+						dr(.01, i(32673, {	-- Depleted Dagger
+							i(32659),	-- Crystal-Infused Shiv
+						})),
+						dr(.01, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(.01, i(32675, {	-- Depleted Mail Gauntlets
+							i(32656),	-- Crystalhide Handwraps
+						})),
+						dr(.01, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+						dr(.01, i(32674, {	-- Depleted Sword
+							i(32660),	-- Crystal Forged Sword
+						})),
+					}),
+					n(23333, {	-- The Grand Collector
+						dr(4.0, i(32676, {	-- Depleted Cloth Bracers
+							i(32655),	-- Crystalweave Bracers
+						})),
+						dr(3.0, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(0.8, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+						dr(1.9, i(32674, {	-- Depleted Sword
+							i(32660),	-- Crystal Forged Sword
+						})),
+						dr(5.0, i(32670, {	-- Depleted Two-Handed Axe
+							i(32663),	-- Apexis Cleaver
+						})),
+					}),
+					n(20557, {	-- Wrath Hound
+						dr(.01, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+						dr(.01, i(32670, {	-- Depleted Two-Handed Axe
+							i(32663),	-- Apexis Cleaver
+						})),
+					}),
+					n(22195, {	-- Wrath Speaker
+						dr(.03, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(.01, i(32675, {	-- Depleted Mail Gauntlets
+							i(32656),	-- Crystalhide Handwraps
+						})),
+						dr(.01, i(32670, {	-- Depleted Two-Handed Axe
+							i(32663),	-- Apexis Cleaver
+						})),
+					}),
+					n(23355, {	-- Zarcsin
+						dr(1.8, i(32677, {	-- Depleted Cloak
+							i(32665),	-- Crystalweave Cape
+						})),
+						dr(1.7, i(32676, {	-- Depleted Cloth Bracers
+							i(32655),	-- Crystalweave Bracers
+						})),
+						dr(4.0, i(32673, {	-- Depleted Dagger
+							i(32659),	-- Crystal-Infused Shiv
+						})),
+						dr(3.0, i(32671, {	-- Depleted Mace
+							i(32661),	-- Apexis Crystal Mace
+						})),
+						dr(1.4, i(32675, {	-- Depleted Mail Gauntlets
+							i(32656),	-- Crystalhide Handwraps
+						})),
+						dr(2.0, i(32679, {	-- Depleted Staff
+							i(32662),	-- Flaming Quartz Staff
+						})),
+						dr(1.9, i(32674, {	-- Depleted Sword
+							i(32660),	-- Crystal Forged Sword
+						})),
+						dr(1.3, i(32670, {	-- Depleted Two-Handed Axe
+							i(32663),	-- Apexis Cleaver
+						})),
 					}),
 				}),
 			},
