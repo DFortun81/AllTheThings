@@ -414,7 +414,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 18481,	-- A'dal
-						-- ["sourceQuests"] = {  },	-- UNKNOWN
+						["sourceQuests"] = { 10884, 10885, 10886 },	-- Trial of the Naaru: Mercy, Strength, & Tenacity
 					})),
 --					q(10888),	-- Trial of the Naaru: Magtheridon (REMOVED / REPLACED WITH PREVIOUS QUEST)
 					qdg(q(10884, {	-- Trial of the Naaru: Mercy

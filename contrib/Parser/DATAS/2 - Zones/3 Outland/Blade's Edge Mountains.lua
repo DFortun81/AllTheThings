@@ -169,7 +169,6 @@ _.Zones =
 					qa( 11766),	-- Desecrate this Fire!
 					q(10719),	-- Did You Get The Note?
 					qh( 10487),	-- Dust from the Drakes
-					q(10997),	-- Even Gronn Have Standards
 					q(10830),	-- Exorcising the Trees
 					qa( 10797),	-- Favor of the Gronn
 					q(10819),	-- Felsworn Gas Mask
@@ -215,7 +214,6 @@ _.Zones =
 					qa( 10517),	-- Gorr'Dim, Your Time Has Come...
 					q(10998),	-- Grim(oire) Business
 					qh( 10543),	-- Grimnok and Korgaah, I Am For You!
-					q(10995),	-- Grulloc Has Two Skulls
 					q(11059),	-- Guardian of the Monument
 					q(10904),	-- Harvesting the Fel Ammunition
 					qa( 39199),	-- Hero's Call: Blade's Edge Mountains
@@ -240,7 +238,6 @@ _.Zones =
 					qa( 10927),	-- Killing the Crawlers
 					q(10770),	-- Little Embers
 					q(10893),	-- Longtail is the Lynchpin
-					q(10996),	-- Maggoc's Treasure Chest
 					q(11514),	-- Maintaining the Sunwell Portal
 					q(10555),	-- Malaise
 					q(10456),	-- Marauding Wolves
@@ -254,7 +251,6 @@ _.Zones =
 					}),
 --[[					
 					q(10722),	-- Meeting at the Blackwing Coven
-					q(10983),	-- Mog'dorg the Wizened
 					q(10989),	-- Mog'dorg the Wizened
 ]]--
 					qh( 10860, {	-- Mok'Nathal Treats
@@ -467,6 +463,29 @@ _.Zones =
 					q(10821,  {  	-- You're Fired!
 						i(31793),
 						i(31792),
+					}),
+					faction(1038, {	-- Ogri'la
+						["g"] = {
+							q(10997, {	-- Even Gronn Have Standards
+								["g"] = {
+								},
+								["qg"] = 22941,	-- Mog'dorg the Wizened
+								["sourceQuests"] = { 10983 },	-- Mog'dorg the Wizened
+							}),
+							q(10995, {	-- Grulloc Has Two Skulls
+								["g"] = {
+								},
+								["qg"] = 22941,	-- Mog'dorg the Wizened
+								["sourceQuests"] = { 10983 },	-- Mog'dorg the Wizened
+							}),
+							q(10996, {	-- Maggoc's Treasure Chest
+								["g"] = {
+								},
+								["qg"] = 22941,	-- Mog'dorg the Wizened
+								["sourceQuests"] = { 10983 },	-- Mog'dorg the Wizened
+							}),
+						},
+						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 				}),
 				n(-16, { 	-- Rares

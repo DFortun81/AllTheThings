@@ -75,6 +75,7 @@ _.Instances =
 								i(27787),	-- Chestguard of No Remorse (7.3.5 - Moved from Hydromancer Thespia)
 								i(27793),	-- Earth Mantle Handwraps
 								i(27795),	-- Sash of Serpentra (7.3.5 - Moved from Warlord Kalithresh)
+								i(23887),	-- Schematic: Rocket Boots Xtreme
 							})),
 							cr(17798, e(575, {	-- Warlord Kalithresh
 								ach(677),	-- Heroic: The Steamvault
