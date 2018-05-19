@@ -432,6 +432,7 @@ _.Zones =
 								qh(6984, { -- A Smokywood Pastures' Thank You
 									["groups"] = {
 										i(17726, { -- Smokywood Pasture's Special Gift
+											un(29, i(17709)),	-- Recipe: Elixir of Frost Power
 											i(17722, {	-- Pattern: Gloves of the Greatfather
 												["groups"] = {
 													i(17721, { -- Gloves of the Greatfather
@@ -695,6 +696,7 @@ _.Zones =
 								q(8769, { 	-- A Ticking Present
 									["groups"] = {
 										i(21327, { -- Ticking Present
+											un(29, i(17709)),	-- Recipe: Elixir of Frost Power
 											un(29, i(17722, {	-- Pattern: Gloves of the Greatfather
 												un(29, i(17721)), -- Gloves of the Greatfather
 											})),
@@ -1983,7 +1985,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						},
 						["description"] = "Tabards are only obtainable by those who have earned them.|r",
 					}),
-					h(n(46572, {	-- Goram <Guild Vendor>
+					n(46572, {	-- Goram <Guild Vendor>
 						["groups"] = {
 							faction(1168, {	-- Your Guild (Faction)
 								["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
@@ -2178,7 +2180,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 							}),
 						},
 						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
-					})),
+					}),
 					n(46555, {	-- Gunra <Justice Quartermaster>
 						i(71523),	-- Immolation Handguards
 						i(71608),	-- Shoulderguards of the Molten Giant
@@ -2389,6 +2391,13 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(71283),	-- Balespider's Leggings
 						i(71284),	-- Balespider's Robes
 						i(71295),	-- Erupting Volcanic Shoulderwraps												
+					}),
+					n(3335, {	-- Hagrus <Reagents>
+						["qgs"] = {72157},	-- Hagrus <Reagents> (SOO)
+						["groups"] = {
+							i(5643),	-- Recipe: Great Rage Potion
+							i(5640),	-- Recipe: Rage Potion
+						}
 					}),
 					n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
 						i(12256),	-- Cindercloth Leggings
@@ -2810,6 +2819,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 							i(52733),	-- Formula: Enchant Weapon - Power Torrent
 							i(52735),	-- Formula: Enchant Weapon - Windwalk
 						}),
+					}),
+					n(3348, {	-- Kor'geld <Alchemy Supplies>
+						i(13478),	-- Recipe: Elixir of Superior Defense
+						i(5642),	-- Recipe: Free Action Potion
 					}),
 					n(45558, {	-- Lizna Goldweaver <Tailoring Supplies>
 						i(10317, {	-- Pattern: Pink Mageweave Shirt

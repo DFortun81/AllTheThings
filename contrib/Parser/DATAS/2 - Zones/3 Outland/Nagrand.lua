@@ -473,9 +473,12 @@ _.Zones =
 						i(31192),
 						i(31189),
 					}), 
-					n(18684, { -- Bro'Gaz the Clanless -- Drops Neck
+					n(18684, {	-- Bro'Gaz the Clanless
 						i(31194),	-- Gronn-Blessed Warbeads
-					}), 	
+					}),
+					n(17150, {	-- Vir'aani Arcanist
+						dr(0.6, i(22923)),	-- Recipe: Major Arcane Protection Potion
+					}),
 					n(18683, { -- Voidhunter Yar
 						i(31197),
 						i(31199),
@@ -553,20 +556,6 @@ _.Zones =
 						}),
 					}),
 					h(n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
-						i(29135),	-- Earthcaller's Headdress
-						i(29137),	-- Hellscream's Will
-						i(29139),	-- Ceremonial Cover
-						i(29141),	-- Tempest Leggings
-						i(29147),	-- Talbuk Hide Spaulders
-						i(25743, {	-- Pattern: Netherfury Boots
-							i(25693),	-- Netherfury Boots
-						}),
-						i(25741, {	-- Pattern: Netherfury Belt
-							i(25694),	-- Netherfury Belt
-						}),
-						i(25742, {	-- Pattern: Netherfury Leggings
-							i(25692),	-- Netherfury Leggings
-						}),
 						i(29102),	-- Reins of the Cobalt War Talbuk
 						i(29103),	-- Reins of the White War Talbuk
 						i(29104),	-- Reins of the Silver War Talbuk
@@ -576,6 +565,21 @@ _.Zones =
 						i(31833),	-- Reins of the Tan Riding Talbuk
 						i(31835),	-- Reins of the White Riding Talbuk
 						i(31773),	-- Mag'har Tabard
+						i(22917),	-- Recipe: Transmute Primal Fire to Earth
+						i(25743, {	-- Pattern: Netherfury Boots
+							i(25693),	-- Netherfury Boots
+						}),
+						i(25741, {	-- Pattern: Netherfury Belt
+							i(25694),	-- Netherfury Belt
+						}),
+						i(25742, {	-- Pattern: Netherfury Leggings
+							i(25692),	-- Netherfury Leggings
+						}),
+						i(29135),	-- Earthcaller's Headdress
+						i(29137),	-- Hellscream's Will
+						i(29139),	-- Ceremonial Cover
+						i(29141),	-- Tempest Leggings
+						i(29147),	-- Talbuk Hide Spaulders
 					})),
 					a(n(18822, {	-- Quartermaster Davian Vaclav
 						i(26045, {	-- Halaa Battle Token
@@ -595,6 +599,8 @@ _.Zones =
 							i(27654),	-- Avenger's Legplates
 						}),
 						i(26044, {	-- Halaa Research Token
+							i(33783),	-- Design: Steady Talasite
+							i(32071),	-- Recipe: Elixir of Ironskin
 							i(27637),	-- Shadowstalker's Sash
 							i(27638),	-- Hierophant's Sash
 							i(27639),	-- Slayer's Waistguard
@@ -629,6 +635,8 @@ _.Zones =
 							i(27654),	-- Avenger's Legplates
 						}),
 						i(26044, {	-- Halaa Research Token
+							i(33783),	-- Design: Steady Talasite
+							i(32071),	-- Recipe: Elixir of Ironskin
 							i(27637),	-- Shadowstalker's Sash
 							i(27638),	-- Hierophant's Sash
 							i(27639),	-- Slayer's Waistguard
@@ -646,20 +654,6 @@ _.Zones =
 						}),
 					})),
 					a(n(20240, {	-- Trader Narasu <Kurenai Quartermaster>
-						i(29136),	-- Far Seer's Helm
-						i(29138),	-- Arechron's Gift
-						i(29140),	-- Cloak of the Ancient Spirit
-						i(29142),	-- Kurenai Kilt
-						i(29148),	-- Blackened Leather Spaulders
-						i(29218, {	-- Pattern: Netherfury Boots
-							i(25693),	-- Netherfury Boots
-						}),
-						i(29217, {	-- Pattern: Netherfury Belt
-							i(25694),	-- Netherfury Belt
-						}),
-						i(29219, {	-- Pattern: Netherfury Leggings
-							i(25692),	-- Netherfury Leggings
-						}),
 						i(29227),	-- Reins of the Cobalt War Talbuk
 						i(29231),	-- Reins of the White War Talbuk
 						i(29229),	-- Reins of the Silver War Talbuk
@@ -669,6 +663,21 @@ _.Zones =
 						i(31834),	-- Reins of the Tan Riding Talbuk
 						i(31836),	-- Reins of the White Riding Talbuk
 						i(31774),	-- Kurenai Tabard
+						i(29218, {	-- Pattern: Netherfury Boots
+							i(25693),	-- Netherfury Boots
+						}),
+						i(29217, {	-- Pattern: Netherfury Belt
+							i(25694),	-- Netherfury Belt
+						}),
+						i(29219, {	-- Pattern: Netherfury Leggings
+							i(25692),	-- Netherfury Leggings
+						}),
+						i(30443),	-- Recipe: Transmute Primal Fire to Earth
+						i(29136),	-- Far Seer's Helm
+						i(29138),	-- Arechron's Gift
+						i(29140),	-- Cloak of the Ancient Spirit
+						i(29142),	-- Kurenai Kilt
+						i(29148),	-- Blackened Leather Spaulders
 					})),
 					na(20096, {		-- Uriku <Cooking Supplies>
 						i(27697),	-- Recipe: Grilled Mudfish

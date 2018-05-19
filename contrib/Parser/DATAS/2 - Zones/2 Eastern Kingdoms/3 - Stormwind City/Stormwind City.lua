@@ -2635,6 +2635,9 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(71284),	-- Balespider's Robes
 						i(71295),	-- Erupting Volcanic Shoulderwraps												
 					}),
+					n(1313, {	-- Maria Lumere <Alchemy Supplies>
+						i(9301),	-- Recipe: Elixir of Shadow Power
+					}),
 					n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster>
 						i(15198),	-- Knight's Colors
 						i(15196),	-- Private's Tabard

@@ -1161,8 +1161,15 @@ _.Zones =
 						i(9305),	-- Recipe: Transmute Mithril to Truesilver
 					}),
 					n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
+						i(25910),	-- Design: Enigmatic Skyfire Diamond
+						i(33160),	-- Design: Facet of Eternity
+						i(24181),	-- Design: Living Ruby Serpent
+						i(24174),	-- Design: Pendant of Frozen Flame
+						i(33158),	-- Design: Stone of Blades
+						i(29713),	-- Pattern: Drums of Panic
 						i(28272),	-- Formula: Enchant Gloves - Major Spellpower
 						i(33152),	-- Formula: Enchant Gloves - Superior Agility
+						i(31355),	-- Recipe: Flask of Supreme Power
 						i(29184),	-- Timewarden's Leggings
 						i(29185),	-- Continuum Blade
 						i(35328),	-- Dreadweave Gloves

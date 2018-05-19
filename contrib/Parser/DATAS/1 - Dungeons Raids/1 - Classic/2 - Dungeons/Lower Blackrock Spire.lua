@@ -34,7 +34,7 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						n(9259, {		-- Firebrand Grunt
+						n(9259, {		-- Firebrand Grunt <Firebrand Legion>
 							dr(1.6, i(15749)),	-- Pattern: Volcanic Breastplate
 							nld({     -- Legacy
 								un(7, i(16680)), 	-- Beaststalker's Belt
@@ -42,7 +42,10 @@ _.Instances =
 								un(7, i(16713)),	-- Shadowcraft Belt
 							}),																				
 						}),
-						n(9260, {		-- Firebrand Legionnaire
+						n(9262, {	-- Firebrand Invoker <Firebrand Legion>
+							dr(11, i(13494)),	-- Recipe: Greater Fire Protection Potion
+						}),
+						n(9260, {		-- Firebrand Legionnaire <Firebrand Legion>
 							dr(8.0, i(15775)),	-- Pattern: Volcanic Shoulders
 							nld({     -- Legacy
 								un(7, i(16680)), 	-- Beaststalker's Belt
@@ -50,8 +53,9 @@ _.Instances =
 								un(7, i(16713)),	-- Shadowcraft Belt
 							}),																				
 						}),
-						n(9264, {		-- Firebrand Pyromancer
+						n(9264, {		-- Firebrand Pyromancer <Firebrand Legion>
 							dr(6.0, i(14513)),	-- Pattern: Robe of the Archmage
+							dr(7.0, i(13494)),	-- Recipe: Greater Fire Protection Potion
 							nld({     -- Legacy
 								un(7, i(16673)), 	-- Cord of Elements
 								un(7, i(16683)),	-- Magister's Bindings

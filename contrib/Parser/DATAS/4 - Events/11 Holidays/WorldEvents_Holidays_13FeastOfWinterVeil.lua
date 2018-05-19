@@ -175,6 +175,7 @@ _.WorldEvents =
 							qh(6984, { -- A Smokywood Pastures' Thank You
 								["groups"] = {
 									i(17726, { -- Smokywood Pasture's Special Gift
+										un(29, i(17709)),	-- Recipe: Elixir of Frost Power
 										i(17722, {	-- Pattern: Gloves of the Greatfather
 											["groups"] = {
 												i(17721, { -- Gloves of the Greatfather
@@ -366,6 +367,7 @@ _.WorldEvents =
 							qa(7045, { -- A Smokywood Pastures' Thank You
 								["groups"] = {
 									i(17726, { -- Smokywood Pasture's Special Gift
+										un(29, i(17709)),	-- Recipe: Elixir of Frost Power
 										i(17722, {	-- Pattern: Gloves of the Greatfather
 											["groups"] = {
 												i(17721, { -- Gloves of the Greatfather
@@ -713,6 +715,7 @@ _.WorldEvents =
 						q(8769, { 	-- A Ticking Present
 							["groups"] = {
 								i(21327, { -- Ticking Present
+									un(29, i(17709)),	-- Recipe: Elixir of Frost Power
 									un(29, i(17722, {	-- Pattern: Gloves of the Greatfather
 										un(29, i(17721)), -- Gloves of the Greatfather
 									})),

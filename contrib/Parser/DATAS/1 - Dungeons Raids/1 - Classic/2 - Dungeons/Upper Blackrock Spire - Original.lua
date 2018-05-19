@@ -165,6 +165,10 @@ _.Instances =
 					}),
 					n(10363, { 	-- General Drakkisath
 						un(12, ach(1307)),	-- Upper Blackrock Spire (Classic)
+						i(15730, { 	-- Pattern: Red Dragonscale Breastplate
+							i(15047),	-- Red Dragonscale Breastplate
+						}),
+						un(7, i(13519)),	-- Recipe: Flask of the Titans
 						i(16674),	-- Beaststalker's Tunic
 						i(12592),	-- Blackblade of Shahram
 						i(16730),	-- Breastplate of Valor
@@ -174,9 +178,6 @@ _.Instances =
 						i(16700),	-- Dreadmist Robe
 						i(16726),	-- Lightforge Breastplate
 						i(16688),	-- Magister's Robe
-						i(15730, { 	-- Pattern: Red Dragonscale Breastplate
-							i(15047),	-- Red Dragonscale Breastplate
-						}),
 						i(16721),	-- Shadowcraft Tunic
 						i(22269),	-- Shadow Prowler's Cloak
 						i(22267),	-- Spellweaver's Turban

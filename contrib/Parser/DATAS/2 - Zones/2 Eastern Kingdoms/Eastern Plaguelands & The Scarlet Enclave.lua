@@ -1092,9 +1092,15 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),					
-						},
+						n(  0, {	-- Zone Drop (Legacy)
+							n(8546, {	-- Dark Adept <Cult of the Damned>
+								un(7, i(13499)),	-- Recipe: Greater Shadow Protection Potion
+							}),
+							n(8550, {	-- Shadowmage <Cult of the Damned>
+								un(7, i(13499)),	-- Recipe: Greater Shadow Protection Potion
+							}),
+						}),					
+					},
 					["u"] = 12,
 				}),
 				m(502, {	-- The Scarlet Enclave

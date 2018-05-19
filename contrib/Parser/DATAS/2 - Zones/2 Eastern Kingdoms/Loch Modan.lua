@@ -718,10 +718,12 @@ _.Zones =
 						i(4777),	-- Ironwood Maul
 					})),
 					a(n(1474, {	-- Rann Flamespinner <Tailoring Supplies>
-						i(6275, {	-- Pattern: Greater Adept's Robe
-							i(6264),	-- Greater Adept's Robe
-						}),
+						i(6275),	-- Pattern: Greater Adept's Robe
 					})),
+					na(1685, {	-- Xandar Goodbeard <General Supplies>
+						i(6053),	-- Recipe: Holy Protection Potion
+						i(5640),	-- Recipe: Rage Potion
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

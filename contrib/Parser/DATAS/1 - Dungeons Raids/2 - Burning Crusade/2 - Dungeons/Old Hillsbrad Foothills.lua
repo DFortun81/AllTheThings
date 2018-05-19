@@ -52,6 +52,7 @@ _.Instances =
 							i(28211),	-- Lieutenant's Signet of Lordaeron
 						})),
 						cr(17862, e(539, {	-- Captain Skarloc
+							i(22927),	-- Recipe: Ironshield Potion
 							i(27424),	-- Amani Venom-Axe
 							i(28216),	-- Dathrohan's Ceremonial Hammer
 							i(27426),	-- Northshire Battlemace
@@ -114,6 +115,7 @@ _.Instances =
 								i(28211),	-- Lieutenant's Signet of Lordaeron
 							})),
 							cr(17862, e(539, {	-- Captain Skarloc
+								i(22927),	-- Recipe: Ironshield Potion
 								i(27424),	-- Amani Venom-Axe
 								i(28216),	-- Dathrohan's Ceremonial Hammer
 								i(27426),	-- Northshire Battlemace

@@ -181,6 +181,7 @@ _.Instances =
 								un(2, i(14577)),	-- Skullsmoke Pants
 							}),
 							n(10508, {	-- Ras  Frostwhisper
+								un(7, i(13521)),	-- Recipe: Flask of Supreme Power
 								un(2, i(13314)),	-- Alanna's Embrace
 								un(2, i(14487)),	-- Bonechill Hammer
 								un(2, i(14525)),	-- Boneclenched Gauntlets

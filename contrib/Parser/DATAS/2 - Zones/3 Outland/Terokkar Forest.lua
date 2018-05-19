@@ -590,6 +590,10 @@ _.Zones =
 						i(27690),	-- Recipe: Blackened Basilisk
 						i(27692),	-- Recipe: Warp Burger
 					}),
+					na(19042, {	-- Leeli Longhaggle <Trade Goods>
+						i(22911),	-- Recipe: Major Dreamless Sleep Potion
+						i(22901),	-- Recipe: Sneaking Potion
+					}),
 					nh(18960, {	-- Rungor <Trade Goods>
 						i(27699),	-- Recipe: Golden Fish Sticks
 						i(27700),	-- Recipe: Spicy Crawdad

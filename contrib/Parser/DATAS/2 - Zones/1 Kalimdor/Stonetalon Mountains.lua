@@ -1069,6 +1069,9 @@ _.Zones =
 					h(n(9549, {	-- Borand <Bowyer>
 						i(11304),	-- Fine Longbow
 					})),
+					nh(4083, {	-- Jeeda <Apprentice Witch Doctor>
+						i(6055),	-- Recipe: Fire Protection Potion
+					}),
 					h(n(42028, {	-- Krom'gar Quartermaster <Quartermaster>
 						i(57501),	-- Krom'gar Champion's Linen Shoulderpads
 						i(57502),	-- Krom'gar Champion's Hide Shoulderguard

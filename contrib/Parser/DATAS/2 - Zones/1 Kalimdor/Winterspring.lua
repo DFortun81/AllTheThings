@@ -357,14 +357,8 @@ _.Zones =
 					})),
 				}),
 				n(-16, {	-- Rares
-					n(0, { 			-- Zone Drop
-						dr(0.01, i(34535)),	-- Azure Whelpling
-						n(7524, {	-- Anguished Highborne
-							dr(2.0, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
-						}),
-						n(7523, {	-- Suffering Highborne
-							dr(0.4, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
-						}),
+					n(7524, {	-- Anguished Highborne
+						dr(2.0, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
 					}),
 					n(51045, { 		-- Arcanus
 						dr(	11	, i(	10276	)), --	Emerald Sabatons
@@ -477,6 +471,9 @@ _.Zones =
 						dr(	1	, i(	10077	)), --	Lord's Breastplate
 						dr(	1	, i(	10126	)), --	Ornate Bracers
 					}), 
+					n(7428, {		-- Frostmaul Giant
+						un(7, dr(0.6, i(13495))),	-- Recipe: Greater Frost Protection Potion
+					}),
 					o(240616, {		-- Frozen Supplies
 						["groups"] = {	
 							i(122224)		-- Music Roll: Mountains
@@ -872,6 +869,9 @@ _.Zones =
 						dr(	1.1	, i(	10184	)), --	Swashbuckler's Bracers
 						dr(	1	, i(	10203	)), --	Overlord's Chestplate
 					}), 
+					n(7523, {	-- Suffering Highborne
+						dr(0.4, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
+					}),
 					n(51028, { 		-- The Deep Tunneler
 						dr(	7	, i(	20768, { dr(1.5, i(20769)) } )), --	Oozing Bag <Disgusting Oozling>
 						dr(	6	, i(	10184	)), --	Swashbuckler's Bracers
@@ -901,11 +901,17 @@ _.Zones =
 						dr(	1	, i(	10203	)), --	Overlord's Chestplate
 					}),
 				}),
+				n(0, { 		-- Zone Drop
+					dr(0.01, i(34535)),	-- Azure Whelpling
+				}),
 				n( -2, {	-- Vendors
 					n(50129, {	-- Daleohm <Blacksmithing Supplies>
 						i(12836, {	-- Plans: Frostguard
 							i(12797),	-- Frostguard
 						}),
+					}),
+					n(11188, {	-- Evie Whirlbrew <Alchemy Supplies>
+						i(20013),	-- Recipe: Living Action Potion
 					}),
 					n(11187, {	-- Himmik <Food & Drink>
 						i(16110),	-- Recipe: Monster Omelet
@@ -963,6 +969,9 @@ _.Zones =
 						n(-16, {	-- Rares (Legacy)
 							n(7449, { 	-- Chillwind Ravager
 								un(7, i(20697)), 	-- Crystalline Threaded Cape
+							}),
+							n(7437, {	-- Cobalt Mageweaver
+								un(2, i(13497)),	-- Recipe: Greater Arcane Protection Potion
 							}),
 						}),
 						--n(  0, {	-- Zone Drop (Legacy)

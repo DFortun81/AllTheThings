@@ -54,19 +54,39 @@ _.Zones =
 --				}),
 				n(-2, {		-- Vendors
 					n(25032, {	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
+						i(35221),	-- Tabard of the Shattered Sun
+						i(35505),	-- Design: Ember Skyfire Diamond
+						i(35502),	-- Design: Eternal Earthstorm Diamond
+						i(35697),	-- Design: Figurine - Crimson Serpent
+						i(35695),	-- Design: Figurine - Empyrean Tortoise
+						i(35696),	-- Design: Figurine - Khorium Boar
+						i(35699),	-- Design: Figurine - Seaspray Albatross
+						i(35698),	-- Design: Figurine - Shadowsong Panther
+						i(35769),	-- Design: Forceful Seaspray Emerald
+						i(35768),	-- Design: Quick Lionseye
+						i(35767),	-- Design: Reckless Pyrestone
+						i(35708),	-- Design: Regal Talasite
+						i(35766),	-- Design: Steady Seaspray Emerald
 						i(35500),	-- Formula: Enchant Chest - Dodge
 						i(34872),	-- Formula: Void Shatter
-						i(34665),	-- Bombadier's Blade
-						i(34666),	-- The Sunbreaker
+						i(35755),	-- Recipe: Assassin's Alchemist Stone
+						i(35752),	-- Recipe: Guardian's Alchemist Stone
+						i(35754),	-- Recipe: Redeemer's Alchemist Stone
+						i(35753),	-- Recipe: Sorcerer's Alchemist Stone
 						i(34667),	-- Archmage's Guile
-						i(34670),	-- Seeker's Gavel
-						i(34671),	-- K'iru's Presage
+						i(34665),	-- Bombadier's Blade
 						i(34672),	-- Inuuro's Blade
+						i(34671),	-- K'iru's Presage
 						i(34673),	-- Legionfoe
+						i(34670),	-- Seeker's Gavel
+						i(34666),	-- The Sunbreaker
 						i(34674),	-- Truestrike Crossbow
-						i(34675),	-- Sunward Crest
 						i(34676),	-- Dawnforged Defender
-						i(35221),	-- Tabard of the Shattered Sun
+						i(34675),	-- Sunward Crest
+						i(34678),	-- Shattered Sun Pendant of Acumen
+						i(34679),	-- Shattered Sun Pendant of Might
+						i(34680),	-- Shattered Sun Pendant of Resolve
+						i(34677),	-- Shattered Sun Pendant of Restoration
 					}),
 					n(26090, {	-- Karynna <Exotic Gear Purveyor>
 						i(27881),	-- Gladiator's Scaled Helm

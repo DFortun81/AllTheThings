@@ -790,12 +790,14 @@ _.Zones =
 						i(12249),	-- Merciless Axe
 					})),
 					n(3134, {	-- Kzixx <Rare Goods>
+						i(6053),	-- Recipe: Holy Protection Potion
+						i(7561),	-- Schematic: Goblin Jumper Cables
+						i(4836),	-- Fireproof Orb
+						i(4838),	-- Orb of Power
 						i(4837),	-- Strength of Will
 						i(4829),	-- Dreamer's Belt
-						i(4827),	-- Wizard's Belt
-						i(4836),	-- Fireproof Orb
 						i(4828),	-- Nightwind Belt
-						i(4838),	-- Orb of Power
+						i(4827),	-- Wizard's Belt
 					}),
 					a(n(226, {	-- Morg Gnarltree <Armorer>
 						i(4797),	-- Fiery Cloak

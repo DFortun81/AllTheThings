@@ -675,10 +675,10 @@ _.Zones =
 								un(2, i(19779)),	-- Plans: Darksoul Breastplate
 								un(2, i(19780)),	-- Plans: Darksoul Leggings
 								un(2, i(19781)),	-- Plans: Darksoul Shoulders
-								un(2, i(20012)),	-- Recipe: Greater Dreamless Sleep
-								un(2, i(20013)),	-- Recipe: Living Action Potion
+								un(2, i(20012)),	-- Recipe: Greater Dreamless Sleep Potion
+								i(20013),	-- Recipe: Living Action Potion [They added this to a Winterspring vendor]
 								un(2, i(20011)),	-- Recipe: Mageblood Potion
-								un(2, i(20014)),	-- Recipe: Major Troll's Blood Potion
+								un(2, i(20014)),	-- Recipe: Mighty Troll's Blood Potion
 								un(2, i(20000)),	-- Schematic: Bloodvine Goggles
 								un(2, i(20001)),	-- Schematic: Bloodvine Lens
 							}),
