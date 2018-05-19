@@ -736,14 +736,10 @@ _.Zones =
 						i(152669), -- Argussian Reach Tabard
 						i(153039), -- Crystalline Campfire Toy				
 						i(153290), -- Krokul Mining Pick
-						i(152964, {	-- Krokul Flute Unlocked
+						i(152964, { -- Krokul Flute
 							["groups"] = {
-								{
-									--["itemID"] = 152964, -- Krokul Flute
-									["collectible"] = true,
-									["questID"] = 49006, -- Krokul Flute Unlocked
-								},
 							},
+							["collectible"] = false,
 						}),
 					}),
 					n(121589, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
