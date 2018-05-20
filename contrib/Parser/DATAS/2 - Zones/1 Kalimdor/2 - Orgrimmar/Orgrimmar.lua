@@ -19,7 +19,8 @@ _.Zones =
 										--}),	
 									},		
 									["description"] = "Location: 52.23, 60",		
-									["qg"] = 15579,	-- Elder Darkhorn	
+									["qg"] = 15579,	-- Elder Darkhorn
+									["u"] = 17,
 								}),
 								q(8873, {	-- The Lunar Festival
 									["groups"] = {
@@ -32,6 +33,7 @@ _.Zones =
 										}),
 									},
 									["qg"] = 15891, -- Lunar Festival Herald
+									["u"] = 17,
 								}),
 							}),
 						},

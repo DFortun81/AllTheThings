@@ -7,20 +7,32 @@ _.WorldEvents =
 		["groups"] = {
 			n(15079, { -- Fishbot 5000
 				q(8221, { -- Rare Fish - Keefer's Angelfish
-					un(30, i(19972)), -- Lucky Fishing Hat
+					["groups"] = {
+						un(30, i(19972)), -- Lucky Fishing Hat
+					},
+					["repeatable"] = true,
 				}),
 				q(8225, { -- Rare Fish -- Brownell's Blue Striped Racer
-					un(30, i(19969)), -- Nat Pagle's Extreme Anglin' Boots
+					["groups"] = {
+						un(30, i(19969)), -- Nat Pagle's Extreme Anglin' Boots
+					},
+					["repeatable"] = true,
 				}),
 			}),
 			n(15077, { -- Riggle Bassbait
 				q(8193, { -- Grand Prize
-					un(30, i(19970)), -- Arcanite Fishing Pole
-					un(30, i(50287)), -- Boots of the Bay
+					["groups"] = {
+						un(30, i(19970)), -- Arcanite Fishing Pole
+						un(30, i(50287)), -- Boots of the Bay
+					},
+					["repeatable"] = true,
 				}),
 				q(44765, { -- Stranglethorn Fishing Extravaganza
-					un(30, i(19970)), -- Arcanite Fishing Pole
-					un(30, i(50287)), -- Boots of the Bay
+					["groups"] = {
+						un(30, i(19970)), -- Arcanite Fishing Pole
+						un(30, i(50287)), -- Boots of the Bay
+					},
+					["repeatable"] = true,
 				}),
 			}),
 		},
