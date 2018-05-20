@@ -207,6 +207,21 @@ profession(171, { -- Alchemy
 		-- i(22918),	-- Recipe: Transmute Primal Water to Air [Cenarion Expedition - DONE]
 		-- i(25870),	-- Recipe: Transmute Skyfire Diamond [Honor Hold - DONE]
 		-- i(29232),	-- Recipe: Transmute Skyfire Diamond [Thrallmar - DONE]
+		
+		-- WRATH RECIPES
+		-- i(44564),	-- Recipe: Mighty Arcane Protection Potion [Icecrown - DONE]
+		-- i(44565),	-- Recipe: Mighty Fire Protection Potion [Icecrown - DONE]
+		-- i(44566),	-- Recipe: Mighty Frost Protection Potion [Icecrown - DONE]
+		-- i(44567),	-- Recipe: Mighty Nature Protection Potion [Icecrown - DONE]
+		-- i(44568),	-- Recipe: Mighty Shadow Protection Potion [Icecrown - DONE]
+		un(1, i(112022)),	-- Recipe: Mighty Shadow Protection Potion [???]
+		
+		-- CATA Recipes
+		-- i(65498),	-- Recipe: Big Cauldron of Battle [Guild Achievement - DONE]
+		-- i(65435),	-- Recipe: Cauldron of Battle [Guild Achievement - DONE]
+		i(67538),	-- Recipe: Vial of the Sands [Archeology - DONE]
+		
+		-- MISTS Recipes
 	}),
 	profession(202, { -- Engineering
 		i(10644),	-- Recipe: Goblin Rocket Fuel [Engineering?!]
@@ -245,6 +260,22 @@ profession(171, { -- Alchemy
 	}),
 	-- Flasks?
 	-- i(75525),	-- Alchemist's Flask
+	-- Potions?
+	i(58488, {	-- Potion of Treasure Finding
+		["description"] = "Drink this potion if you ever go out to farm Cataclysm mobs/quests. Any mob in those zones can drop a Tiny Treasure Chest, due to the demand for the crafting reagents within, this may make your time quite profitable.",
+		["groups"] = {
+			i(67539, {	-- Tiny Treasure Chest
+				i(53010),	-- Embersilk Cloth
+				i(52183),	-- Pyrite Ore
+				i(52185),	-- Elementium Ore
+				i(52328),	-- Volatile Air
+				i(52327),	-- Volatile Earth
+				i(52326),	-- Volatile Water
+				i(52325),	-- Volatile Fire
+				i(52329),	-- Volatile Life
+			}),
+		},
+	}),
 	filter(53, {	-- Trinkets
 		i(9149),	-- Philosopher's Stone
 		i(13503, {	-- Alchemist Stone
@@ -275,6 +306,16 @@ profession(171, { -- Alchemy
 		}),
 		i(127842),	-- Infernal Alchemist Stone
 		i(151607),	-- Astral Alchemist Stone
+	}),
+	n(-17, { 	-- Quests
+		{
+			["questID"] = 14151,	-- Cardinal Ruby
+			["qg"] = 28703,	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
+			["description"] = "This quest is currently broken. Ticket a GM and they can autocomplete the quest for you to get you the recipe.\n\nNOTE FOR BLUES: Please fix this so that we stop bugging Customer Support.\n  - Crieve",
+			["groups"] = {
+				recipe(66659),	-- Transmute: Cardinal Ruby
+			},
+		},
 	}),
 	n(-15, { 	-- Recipes
 		n(-3, { 	-- Holiday
@@ -492,22 +533,167 @@ profession(171, { -- Alchemy
 			recipe(60403),	-- Indestructible Alchemist Stone
 			recipe(60396),	-- Mercurial Alchemist Stone
 			recipe(60405),	-- Mighty Alchemist Stone
+			recipe(58871),	-- Endless Healing Potion
+			recipe(58868),	-- Endless Mana Potion
+			recipe(53840),	-- Elixir of Mighty Agility
+			recipe(53898),	-- Elixir of Mighty Fortitude
+			recipe(54218),	-- Elixir of Mighty Strength
+			recipe(60367),	-- Elixir of Mighty Thoughts
+			recipe(53847),	-- Elixir of Spirit
 			recipe(62409),	-- Ethereal Oil
+			recipe(53903),	-- Flask of Endless Rage
+			recipe(54213),	-- Flask of Pure Mojo
+			recipe(53902),	-- Flask of Stoneblood
+			recipe(53901),	-- Flask of the Frost Wyrm
+			recipe(53848),	-- Guru's Elixir
 			recipe(53839),	-- Icy Mana Potion
+			recipe(53905),	-- Indestructible Potion
+			recipe(53899),	-- Lesser Flask of Toughness
+			recipe(53936),	-- Mighty Arcane Protection Potion
+			recipe(53939),	-- Mighty Fire Protection Potion
+			recipe(53937),	-- Mighty Frost Protection Potion
+			recipe(53942),	-- Mighty Nature Protection Potion
+			recipe(53938),	-- Mighty Shadow Protection Potion
+			recipe(53900),	-- Potion of Nightmares
+			recipe(53812),	-- Pygmy Oil
 			recipe(53838),	-- Resurgent Healing Potion
+			recipe(53836),	-- Runic Healing Potion
+			recipe(53837),	-- Runic Mana Potion
 			recipe(53842),	-- Spellpower Elixir
+			recipe(66658),	-- Transmute: Ametrine
+			recipe(66659),	-- Transmute: Cardinal Ruby
+			recipe(66662),	-- Transmute: Dreadstone
+			recipe(57427),	-- Transmute: Earthsiege Diamond
+			recipe(66664),	-- Transmute: Eye of Zul
+			recipe(66660),	-- Transmute: King's Amber
+			recipe(66663),	-- Transmute: Majestic Zircon
+			recipe(57425),	-- Transmute: Skyflare Diamond
+			recipe(60350),	-- Transmute: Titanium
 			recipe(53841),	-- Wrath Elixir
-			
-			-- NOTE: STOPPED HERE: https://www.wowhead.com/alchemy#recipes:300+17+1
+			recipe(60893, {	-- Northrend Alchemy Research
+				["description"] = "These recipes can be discovered by using this skill.",
+				["groups"] = {
+					recipe(53895),	-- Crazy Alchemist's Potion
+					recipe(60354),	-- Elixir of Accuracy
+					recipe(60365),	-- Elixir of Armor Piercing
+					recipe(60355),	-- Elixir of Deadly Strikes
+					recipe(60357),	-- Elixir of Expertise
+					recipe(60366),	-- Elixir of Lightning Speed
+					recipe(60356),	-- Elixir of Mighty Defense
+					recipe(56519),	-- Elixir of Mighty Mageblood
+					recipe(54220),	-- Elixir of Protection
+					recipe(62410),	-- Elixir of Water Walking
+					recipe(54221),	-- Potion of Speed
+					recipe(54222),	-- Potion of Wild Magic
+					recipe(53904),	-- Powerful Rejuvenation Potion
+				},
+			}),
+			n(-37, {	-- Discovery
+				["description"] = "These recipes can be discovered randomly by transmuting things. To be safe, you may want to reserve the cooldown for Wrath+ transmutations.",
+				["groups"] = {
+					recipe(53777),	-- Transmute: Eternal Air to Earth
+					recipe(53776),	-- Transmute: Eternal Air to Water
+					recipe(53781),	-- Transmute: Eternal Earth to Air
+					recipe(53782),	-- Transmute: Eternal Earth to Shadow
+					recipe(53775),	-- Transmute: Eternal Fire to Life
+					recipe(53774),	-- Transmute: Eternal Fire to Water
+					recipe(53773),	-- Transmute: Eternal Life to Fire
+					recipe(53771),	-- Transmute: Eternal Life to Shadow
+					recipe(53779),	-- Transmute: Eternal Shadow to Earth
+					recipe(53780),	-- Transmute: Eternal Shadow to Life
+					recipe(53783),	-- Transmute: Eternal Water to Air
+					recipe(53784),	-- Transmute: Eternal Water to Fire
+				},
+			}),
 		}),
 		tier(4, {	-- Cata
 			recipe(80508),	-- Lifebound Alchemist Stone
 			recipe(96253),	-- Quicksilver Alchemist Stone
 			recipe(96254),	-- Vibrant Alchemist Stone
 			recipe(96252),	-- Volatile Alchemist Stone
+			recipe(92688),	-- Big Cauldron of Battle
+			recipe(92643),	-- Cauldron of Battle
+			recipe(80479),	-- Deathblood Venom
+			recipe(80486),	-- Deepstone Oil
+			recipe(93935),	-- Draught of War
+			recipe(80478),	-- Earthen Potion
+			recipe(80488),	-- Elixir of Deep Earth
+			recipe(80491),	-- Elixir of Impossible Accuracy
+			recipe(80493),	-- Elixir of Mighty Speed
+			recipe(80484),	-- Elixir of the Cobra
+			recipe(80497),	-- Elixir of the Master
+			recipe(80480),	-- Elixir of the Naga
+			recipe(94162),	-- Flask of Flowing Water
+			recipe(80719),	-- Flask of Steelskin
+			recipe(80720),	-- Flask of the Draconic Mind
+			recipe(80721),	-- Flask of the Winds
+			recipe(80723),	-- Flask of Titanic Strength
+			recipe(80477),	-- Ghost Elixir
+			recipe(80496),	-- Golemblood Potion
+			recipe(80490),	-- Mighty Rejuvenation Potion
+			recipe(80487),	-- Mysterious Potion
+			recipe(80498),	-- Mythical Healing Potion
+			recipe(80494),	-- Mythical Mana Potion
+			recipe(80482),	-- Potion of Concentration
+			recipe(80725),	-- Potion of Deepholm
+			recipe(80269),	-- Potion of Illusion
+			recipe(80495),	-- Potion of the Tol'vir
+			recipe(80726),	-- Potion of Treasure Finding
+			recipe(80492),	-- Prismatic Elixir
+			recipe(80247),	-- Transmute: Amberjewel
+			recipe(80248),	-- Transmute: Demonseye
+			recipe(80251),	-- Transmute: Dream Emerald
+			recipe(80250),	-- Transmute: Ember Topaz
+			recipe(80245),	-- Transmute: Inferno Ruby
+			recipe(78866),	-- Transmute: Living Elements
+			recipe(80244),	-- Transmute: Pyrium Bar
+			recipe(80246),	-- Transmute: Ocean Sapphire
+			recipe(80237),	-- Transmute: Shadowspirit Diamond
+			recipe(80243),	-- Transmute: Truegold
+			recipe(93328),	-- Vial of the Sands
+			recipe(80481),	-- Volcanic Potion
 		}),
 		tier(5, {	-- MoP
 			recipe(136197),	-- Zen Alchemist Stone
+			recipe(114751),	-- Alchemist's Rejuvenation [TODO: Procs Discovery]
+			recipe(114752),	-- Master Healing Potion [TODO: Procs Discovery]
+			n(-37, {	-- Discovery
+				["description"] = "These recipes can be discovered randomly by crafting Mists of Pandaria potions, elixirs, flasks or transmutations.",
+				["groups"] = {
+					recipe(114774),	-- Darkwater Potion
+					recipe(114761),	-- Desecrated Oil
+					recipe(114763),	-- Elixir of Mirrors
+					recipe(114764),	-- Elixir of Peace
+					recipe(114762),	-- Elixir of Perfection
+					recipe(114756),	-- Elixir of Weaponry
+					recipe(114759),	-- Elixir of the Rapids
+					recipe(114772),	-- Flask of Falling Leaves
+					recipe(114769),	-- Flask of Spring Blossoms
+					recipe(114770),	-- Flask of the Earth
+					recipe(114771),	-- Flask of the Warm Sun
+					recipe(114773),	-- Flask of Winter's Bite
+					recipe(114754),	-- Mad Hozen Elixir
+					recipe(114755),	-- Mantid Elixir
+					recipe(114775),	-- Master Mana Potion
+					recipe(114758),	-- Monk's Elixir
+					recipe(114782),	-- Potion of Focus
+					recipe(114760),	-- Potion of Mogu Power
+					recipe(114779),	-- Potion of Luck
+					recipe(114757),	-- Potion of the Jade Serpent
+					recipe(114753),	-- Potion of the Mountains
+					recipe(130326),	-- Riddle of Steel
+					recipe(114777),	-- Transmute: Imperial Amethyst
+					recipe(114780),	-- Transmute: Living Steel
+					recipe(114781),	-- Transmute: Primal Diamond
+					recipe(114784),	-- Transmute: Primordial Ruby
+					recipe(114766),	-- Transmute: River's Heart
+					recipe(114778),	-- Transmute: Sun's Radiance
+					recipe(114783),	-- Transmute: Trillium Bar
+					recipe(114776),	-- Transmute: Vermilion Onyx
+					recipe(114767),	-- Transmute: Wild Jade
+					recipe(114765),	-- Virmen's Bite
+				},
+			}),
 		}),
 		tier(6, {	-- WoD
 			recipe(156587),	-- Alchemical Catalyst
@@ -555,6 +741,7 @@ profession(171, { -- Alchemy
 		}),
 		tier(7, {	-- Legion
 			-- Legion - TODO: Add the recipes and ways to collect these items
+			-- https://www.wowhead.com/legion-alchemy-guide
 			recipe(247694),	-- Astral Alchemist Stone [Rank 1]
 			recipe(247695),	-- Astral Alchemist Stone [Rank 2]
 			recipe(247696),	-- Astral Alchemist Stone [Rank 3]
@@ -644,6 +831,21 @@ profession(171, { -- Alchemy
 			recipe(188800),	-- Wild Transmutation [Rank 1]
 			recipe(188801),	-- Wild Transmutation [Rank 2]
 			recipe(188802),	-- Wild Transmutation [Rank 3]
+			
+			n(-37, {	-- Discovery
+				["description"] = "These recipes can be discovered randomly by using Wild Transmutation.",
+				["groups"] = {
+					recipe(213257),	-- Transmute: Blood of Sargeras
+					recipe(213252),	-- Transmute: Cloth to Herbs
+					recipe(213249),	-- Transmute: Cloth to Skins
+					recipe(213254),	-- Transmute: Fish to Gems
+					recipe(213255),	-- Transmute: Meat to Pants
+					recipe(213256),	-- Transmute: Meat to Pet
+					recipe(213248),	-- Transmute: Ore to Cloth
+					recipe(213251),	-- Transmute: Ore to Herbs
+					recipe(213253),	-- Transmute: Skins to Herbs
+				}
+			}),
 		}),
 		--[[
 		tier(8, {	-- Battle for Azeroth

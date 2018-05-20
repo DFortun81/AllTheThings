@@ -1293,6 +1293,14 @@ _.Zones =
 					}),
 				}),
 				n(-38, { -- Profession
+					prof(171, { -- Alchemy
+						o(211424, {	-- Alchemy Scroll
+							["description"] = "Alchemists can learn the following skill by clicking on the Alchemy Scroll on the road just outside of the Temple of the Jade Serpent in the Jade Forest. It will only appear to alchemists who don't yet know the recipe. might require a skill level of 550, but this is unconfirmed.",
+							["groups"] = {
+								recipe(114769),	-- Flask of Spring Blossoms
+							},
+						}),
+					}),
 					prof(356, { -- Fishing
 						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
 						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
