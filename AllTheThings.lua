@@ -6640,7 +6640,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				else
 					SetLootMethod(meth);
 				end
-				UpdateWindow(self, true);
+				self:Update(true);
 			else
 				if not GroupFinderFrame:IsVisible() then
 					PVEFrame_ShowFrame("GroupFinderFrame")
@@ -6662,7 +6662,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						else
 							SetLootMethod(meth);
 						end
-						UpdateWindow(self, true);
+						self:Update(true);
 					end);
 					f:UnregisterEvent("LFG_LIST_ACTIVE_ENTRY_UPDATE")
 				end)
@@ -6672,19 +6672,19 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		local switchDungeonDifficulty = function(row, button)
 			self.data = raidassistant;
 			SetDungeonDifficultyID(row.ref.difficultyID);
-			UpdateWindow(self, true);
+			self:Update(true);
 			return true;
 		end
 		local switchRaidDifficulty = function(row, button)
 			self.data = raidassistant;
 			SetRaidDifficultyID(row.ref.difficultyID);
-			UpdateWindow(self, true);
+			self:Update(true);
 			return true;
 		end
 		local switchLegacyRaidDifficulty = function(row, button)
 			self.data = raidassistant;
 			SetLegacyRaidDifficultyID(row.ref.difficultyID);
-			UpdateWindow(self, true);
+			self:Update(true);
 			return true;
 		end
 		raidassistant = {
@@ -6702,7 +6702,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['visible'] = true,
 					['OnClick'] = function(row, button)
 						self.data = lootspecialization;
-						UpdateWindow(self, true);
+						self:Update(true);
 						return true;
 					end,
 					['OnUpdate'] = function(data)
@@ -6725,7 +6725,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['visible'] = true,
 					['OnClick'] = function(row, button)
 						self.data = lootmethod;
-						UpdateWindow(self, true);
+						self:Update(true);
 						return true;
 					end,
 					['OnUpdate'] = function(data)
@@ -6741,7 +6741,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['visible'] = true,
 					['OnClick'] = function(row, button)
 						self.data = dungeondifficulty;
-						UpdateWindow(self, true);
+						self:Update(true);
 						return true;
 					end,
 					['OnUpdate'] = function(data)
@@ -6759,7 +6759,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 						if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
 						self.data = raiddifficulty;
-						UpdateWindow(self, true);
+						self:Update(true);
 						return true;
 					end,
 					['OnUpdate'] = function(data)
@@ -6777,7 +6777,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 						if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
 						self.data = legacyraiddifficulty;
-						UpdateWindow(self, true);
+						self:Update(true);
 						return true;
 					end,
 					['OnUpdate'] = function(data)
@@ -6795,7 +6795,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			["description"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant.",
 			['OnClick'] = function(row, button)
 				self.data = raidassistant;
-				UpdateWindow(self, true);
+				self:Update(true);
 				return true;
 			end,
 			['OnUpdate'] = function(data)
@@ -6812,7 +6812,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						['OnClick'] = function(row, button)
 							self.data = raidassistant;
 							SetLootSpecialization(row.ref.id);
-							UpdateWindow(self, true);
+							self:Update(true);
 						end,
 						['back'] = 0.5,
 					});
@@ -6827,7 +6827,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							['OnClick'] = function(row, button)
 								self.data = raidassistant;
 								SetLootSpecialization(row.ref.id);
-								UpdateWindow(self, true);
+								self:Update(true);
 							end,
 							['back'] = 0.5,
 						});
@@ -6845,7 +6845,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			["description"] = "This setting allows you to customize what kind of loot will drop and how much.\n\nThis only works while in a party - If you're by yourself, you can create a Premade Group (just don't invite anyone) and then change it.\n\nClick this row to go back to the Raid Assistant.",
 			['OnClick'] = function(row, button)
 				self.data = raidassistant;
-				UpdateWindow(self, true);
+				self:Update(true);
 				return true;
 			end,
 			['visible'] = true, 
@@ -6928,7 +6928,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			["description"] = "This setting allows you to customize the difficulty of a dungeon.\n\nClick this row to go back to the Raid Assistant.",
 			['OnClick'] = function(row, button)
 				self.data = raidassistant;
-				UpdateWindow(self, true);
+				self:Update(true);
 				return true;
 			end,
 			['visible'] = true, 
@@ -6961,7 +6961,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			["description"] = "This setting allows you to customize the difficulty of a raid.\n\nClick this row to go back to the Raid Assistant.",
 			['OnClick'] = function(row, button)
 				self.data = raidassistant;
-				UpdateWindow(self, true);
+				self:Update(true);
 				return true;
 			end,
 			['visible'] = true, 
@@ -6994,7 +6994,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			["description"] = "This setting allows you to customize the difficulty of a legacy raid. (Pre-Siege of Orgrimmar)\n\nClick this row to go back to the Raid Assistant.",
 			['OnClick'] = function(row, button)
 				self.data = raidassistant;
-				UpdateWindow(self, true);
+				self:Update(true);
 				return true;
 			end,
 			['visible'] = true, 
