@@ -6,7 +6,13 @@ _.ClassHalls =
 	cl(9, { -- Dreadscar Rift -- Warlock
 		["groups"] = {
 			n(-497, { 	-- Demonic Offering Class Hall Ability
+				["icon"] = "Interface\\Icons\\ability_warlock_cremation",
+				["description"] = "This class hall ability allows you and two other members to summon a demon that you must kill. As part of the ritual, one of your party members (or you) will be sacrificed, so make sure to Soulstone yourself prior to summoning. Upon killing them they have a chance of dropping these items. This also has a chance to drop the destruction Hidden Appearance item.",
+				["questID"] = 42481,	-- Daily Quest
 				["groups"] = {
+					i(139577, { -- The Burning Jewel of Sargeras
+						artifact(207), -- Find Hidden Artifact Skin
+					}),
 					i(136900), -- Hateful Eye Pet
 					i(141971), -- Cowl of the Doomed Ritual
 					i(141974), -- Shoulderpads of the Doome Ritual
@@ -14,10 +20,7 @@ _.ClassHalls =
 					i(141970), -- Handwraps of the Doomed Ritual
 					i(141972), -- Leggings of the Doomed Ritual
 					i(141969), -- Sandals of the Doomed Ritual
-					--sp(220729, { i(139577) }), -- The Burning Jewel of Sargeras
 				},
-				["icon"] = "Interface\\Icons\\ability_warlock_cremation",
-				["description"] = "This class hall ability allows you and two other members to summon demons that you must kill.  Upon killing them they have a chance of dropping these items. This has a chance to drop the destruction Hidden Appearance item.",
 			}),
 			n(101979, { -- Dreadscar Battle Plans
 				["groups"] = {
