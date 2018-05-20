@@ -917,6 +917,102 @@ _.Zones =
 						i(43846),
 					}),
 				}),	
+				n(0, {	-- Zone Drops
+					n(32290, {	-- Cult Alchemist <Cult of the Damned>
+						{
+							["itemID"] = 37330,		-- Formula: Enchant Cloak - Superior Nature Resistance
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						{
+							["itemID"] = 44563,		-- Pattern: Fur Lining - Nature Resist
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						dr(0.3, i(44567)),	-- Recipe: Mighty Nature Protection Potion
+					}),
+					n(32297, {	-- Cult Researcher <Cult of the Damned>
+						{
+							["itemID"] = 37330,		-- Formula: Enchant Cloak - Superior Arcane Resistance
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						{
+							["itemID"] = 44563,		-- Pattern: Fur Lining - Arcane Resist
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						dr(0.6, i(44564)),	-- Recipe: Mighty Arcane Protection Potion
+					}),
+					n(32349, {	-- Cultist Shard Watcher <Cult of the Damned>
+						{
+							["itemID"] = 37334,		-- Formula: Enchant Cloak - Superior Shadow Resistance
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						{
+							["itemID"] = 44561,		-- Pattern: Fur Lining - Shadow Resist
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						dr(0.6, i(44568)),	-- Recipe: Mighty Shadow Protection Potion
+					}),
+					n(32289, {	-- Damned Apothecary <Cult of the Damned>
+						{
+							["itemID"] = 37332,		-- Formula: Enchant Cloak - Superior Frost Resistance
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						{
+							["itemID"] = 44560,		-- Pattern: Fur Lining - Frost Resist
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						dr(0.3, i(44566)),	-- Recipe: Mighty Frost Protection Potion
+					}),
+					n(31702, {	-- Frostbrood Spawn
+						{
+							["itemID"] = 37330,		-- Formula: Enchant Cloak - Superior Arcane Resistance
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						{
+							["itemID"] = 44563,		-- Pattern: Fur Lining - Arcane Resist
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						dr(0.18, i(44564)),	-- Recipe: Mighty Arcane Protection Potion
+					}),
+					n(31321, {	-- Skeletal Runesmith
+						{
+							["itemID"] = 37331,		-- Formula: Enchant Cloak - Superior Fire Resistance
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						{
+							["itemID"] = 44559,		-- Pattern: Fur Lining - Fire Resist
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						dr(0.9, i(44565)),	-- Recipe: Mighty Fire Protection Potion
+					}),
+					n(30921, {	-- Skeletal Runesmith
+						{
+							["itemID"] = 37331,		-- Formula: Enchant Cloak - Superior Fire Resistance
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						{
+							["itemID"] = 44559,		-- Pattern: Fur Lining - Fire Resist
+							["collectible"] = false,
+							["u"] = 2,
+						},
+						dr(0.5, i(44565)),	-- Recipe: Mighty Fire Protection Potion
+					}),
+					n(31320, {	-- Umbral Brute
+						dr(0.11, i(44565)),	-- Recipe: Mighty Fire Protection Potion
+					}),
+				}),
 			},
 			["lvl"] = 67,	
 			["achievementID"] = 1270,

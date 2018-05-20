@@ -145,7 +145,17 @@ _.Zones =
 					qg(66824, qh(31986)),	-- The Triumphant Return
 				}),
 				n(-38, {	-- Profession
-					n(-188, { 	-- Mining
+					prof(794, { -- Archaeology
+						sp(91790, {	-- Canopic Jar (Skill)
+							i(64657, {	-- Canopic Jar
+								["description"] = "Alchemy is not required to get the recipe.\n\nNOTE TO BLUES: Why isn't this item BoA? You have the technology!\n  - Crieve",
+								["groups"] = {
+									dr(2.0, i(67538)),	-- Recipe: Vial of the Sands
+								},
+							}),
+						}),
+					}),
+					prof(186, { -- Mining
 						["groups"] = {
 							i(67282), 	-- Pet Elementium Geode
 						},
