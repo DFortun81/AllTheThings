@@ -1968,339 +1968,628 @@ Notation of what is missing from Blizzard's localization
 			["groups"] = {
 				h(n(-9913, { -- Horde
 					n(-372, { -- 10 Man Normal
-						gs(350, { -- Zabra's Regalia
-							i(48068), -- Zabra's Cowl of Conquest
-							i(48071), -- Zabra's Shoulderpads of Conquest
-							i(48070), -- Zabra's Robe of Conquest
-							i(47324), -- Bindings of the Ashen Saint
-							i(48067), -- Zabra's Gloves of Conquest
-							i(47909), -- Belt of the Eternal
-							i(48069), -- Zabra's Leggings of Conquest
-							i(49232), -- Sandals of the Grieving Soul
-						}),
-						gs(723, { -- Sunstrider's Regalia
-							i(47774),-- Sunstrider's Hood of Conquest
-							i(47777), -- Sunstrider's Shoulderpads of Conquest
-							i(47776), -- Sunstrider's Robe of Conquest
-							i(47586), -- Bejeweled Wizard's Bracers
-							i(47773), -- Sunstrider's Gauntlets of Conquest
-							i(47855), -- Icehowl Binding
-							i(47775), -- Sunstrider's Leggings of Conquest
-							i(47321), -- Boots of the Icy Floe
-						}),
-						gs(675, { -- Gul'dan's Regalia
-							i(47801), -- Gul'dan's Hood of Conquest
-							i(47798), -- Gul'dan's Shoulderpads of Conquest
-							i(47799), -- Gul'dan's Robe of Conquest
-							i(47802), -- Gul'dan's Gloves of Conquest
-							i(47286), -- Belt of Biting Cold
-							i(47800), -- Gul'dan's Leggings of Conquest
-							i(47873), -- Sunreaver Magus' Sandals
-						}),
-						gs(826, { -- Runetotem's Battlegear
-							i(48154), -- Runetotem's Headpiece of Conquest
-							i(48157), -- Runetotem's Spaulders of Conquest
-							i(48156), -- Runetotem's Robe of Conquest
-							i(47277), -- Bindings of the Autumn Willow
-							i(48153), -- Runetotem's Handguards of Conquest
-							i(47863), -- Belt of the Bloodhoof Emissary
-							i(48155), -- Runetotem's Leggings of Conquest
-							i(47262), -- Boots of the Harsh Winter
-						}),
-						gs(691, { -- Garona's Battlegear
-							i(48245), -- Garona's Helmet of Conquest
-							i(48247), -- Garona's Pauldrons of Conquest
-							i(48243), -- Garona's Breastplate of Conquest
-							i(47313), -- Armbands of Dark Determination
-							i(48244), -- Garona's Gauntlets of Conquest
-							i(47299), -- Belt of the Pitiless Killer
-							i(48246), -- Garona's Legplates of Conquest
-							i(47853), -- Acidmaw Treads
-						}),
-						gs(738, { -- Windrunner's Pursuit
-							i(48277), -- Windrunner's Headpiece of Conquest
-							i(48279), -- Windrunner's Spaulders of Conquest
-							i(48275), -- Windrunner's Tunic of Conquest
-							i(47850), -- Bracers of the Northern Stalker
-							i(48276), -- Windrunner's Handguards of Conquest
-							i(47311), -- Waistguard of Deathly Dominion
-							i(48278), -- Windrunner's Legguards of Conquest
-							i(47867), -- Warsong Poacher's Greaves
-						}),	
-						gs(641, { -- Thrall's Garb
-							i(48297), -- Thrall's Headpiece of Conquest
-							i(48299), -- Thrall's Spaulders of Conquest
-							i(48295), -- Thrall's Tunic of Conquest
-							i(47580), -- Black Chitin Bracers
-							i(48296), -- Thrall's Handguards of Conquest
-							i(47866), -- Darkspear Ritual Binding
-							i(48298), -- Thrall's Legguards of Conquest
-							i(47295), -- Sabatons of Tremoring Earth
-						}),	
-						gs(707, { -- Liadrin's Plate
-							i(48597), -- Liadrin's Headpiece of Conquest
-							i(48595), -- Liadrin's Spaulders of Conquest
-							i(48599), -- Liadrin's Tunic of Conquest
-							i(47298), -- Armguards of the Shieldmaiden
-							i(48598), -- Liadrin's Gloves of Conquest
-							i(47858), -- Girdle of the Frozen Reach
-							i(48596), -- Liadrin's Greaves of Conquest
-							i(47263), -- Sabatons of the Courageous
-						}),
-						gs(657, { -- Hellscream's Battlegear	
-							i(48388), -- Hellscream's Helmet of Conquest
-							i(48390), -- Hellscream's Shoulderplates of Conquest
-							i(48386), -- Hellscream's Battleplate of Conquest
-							i(47253), -- Boneshatter Vambraces
-							i(48387), -- Hellscream's Gauntlets of Conquest
-							i(47859), -- Belt of the Impaler
-							i(48389), -- Hellscream's Legplates of Conquest
-							i(47312), -- Greaves of the Saronite Citadel
-						}),
-						gs(841, { -- Koltira's Battlegear
-							i(48503), -- Koltira's Helmet of Conquest
-							i(48505), -- Koltira's Shoulderpads of Conquest
-							i(48501), -- Koltira's Battleplate of Conquest
-							i(47869), -- Armplates of the Nether Lord
-							i(48502), -- Koltira's Gauntlets of Conquest
-							i(47268), -- Bloodbath Girdle
-							i(48504), -- Koltira's Legplates of Conquest
-							i(47269), -- Dawnbreaker Sabatons
-						}),
-						-- Tier 9 END
+						gs(350, { -- Zabra's Regalia			
+							["groups"] = {		
+								n(-9951, { -- Holy/Disciple Priest	
+									i(48068), -- Zabra's Cowl of Conquest
+									i(48071), -- Zabra's Shoulderpads of Conquest
+									i(48070), -- Zabra's Robe of Conquest
+									i(47324), -- Bindings of the Ashen Saint
+									i(48067), -- Zabra's Gloves of Conquest
+									i(47909), -- Belt of the Eternal
+									i(48069), -- Zabra's Leggings of Conquest
+									i(49232), -- Sandals of the Grieving Soul
+								}),	
+								n(-9917, { -- Shadow Priest	
+								}),	
+							},		
+							["classes"] = { 5 },		
+						}),			
+						gs(723, { -- Sunstrider's Regalia			
+							["groups"] = {		
+								i(47774),-- Sunstrider's Hood of Conquest	
+								i(47777), -- Sunstrider's Shoulderpads of Conquest	
+								i(47776), -- Sunstrider's Robe of Conquest	
+								i(47586), -- Bejeweled Wizard's Bracers	
+								i(47773), -- Sunstrider's Gauntlets of Conquest	
+								i(47855), -- Icehowl Binding	
+								i(47775), -- Sunstrider's Leggings of Conquest	
+								i(47321), -- Boots of the Icy Floe	
+							},		
+							["classes"] = { 8 },		
+						}),			
+						gs(675, { -- Gul'dan's Regalia			
+							["groups"] = {		
+								i(47801), -- Gul'dan's Hood of Conquest	
+								i(47798), -- Gul'dan's Shoulderpads of Conquest	
+								i(47799), -- Gul'dan's Robe of Conquest	
+								i(47802), -- Gul'dan's Gloves of Conquest	
+								i(47286), -- Belt of Biting Cold	
+								i(47800), -- Gul'dan's Leggings of Conquest	
+								i(47873), -- Sunreaver Magus' Sandals	
+							},		
+							["classes"] = { 9 },		
+						}),			
+						gs(826, { -- Runetotem's Battlegear			
+							["groups"] = {		
+								n(-9952, { -- Guardian / Feral Spec	
+								}),	
+								n(-9926, { -- Balance Spec	
+								}),	
+								n(-9927, { -- Restoration Spec	
+									i(48154), -- Runetotem's Headpiece of Conquest
+									i(48157), -- Runetotem's Spaulders of Conquest
+									i(48156), -- Runetotem's Robe of Conquest
+									i(47277), -- Bindings of the Autumn Willow
+									i(48153), -- Runetotem's Handguards of Conquest
+									i(47863), -- Belt of the Bloodhoof Emissary
+									i(48155), -- Runetotem's Leggings of Conquest
+									i(47262), -- Boots of the Harsh Winter
+								}),	
+							},		
+							["classes"] = { 11 },		
+						}),			
+						gs(691, { -- Garona's Battlegear			
+							["groups"] = {		
+								i(48245), -- Garona's Helmet of Conquest	
+								i(48247), -- Garona's Pauldrons of Conquest	
+								i(48243), -- Garona's Breastplate of Conquest	
+								i(47313), -- Armbands of Dark Determination	
+								i(48244), -- Garona's Gauntlets of Conquest	
+								i(47299), -- Belt of the Pitiless Killer	
+								i(48246), -- Garona's Legplates of Conquest	
+								i(47853), -- Acidmaw Treads	
+							},		
+							["classes"] = { 4 },		
+						}),			
+						gs(738, { -- Windrunner's Pursuit			
+							["groups"] = {		
+								i(48277), -- Windrunner's Headpiece of Conquest	
+								i(48279), -- Windrunner's Spaulders of Conquest	
+								i(48275), -- Windrunner's Tunic of Conquest	
+								i(47850), -- Bracers of the Northern Stalker	
+								i(48276), -- Windrunner's Handguards of Conquest	
+								i(47311), -- Waistguard of Deathly Dominion	
+								i(48278), -- Windrunner's Legguards of Conquest	
+								i(47867), -- Warsong Poacher's Greaves	
+							},		
+							["classes"] = { 3 },		
+						}),			
+						gs(641, { -- Thrall's Garb			
+							["groups"] = {		
+								n(-9939, { -- Elemental Spec	
+								}),	
+								n(-9940, { -- Enhancement Spec	
+								}),	
+								n(-9941, { -- Restoration Spec	
+									i(48297), -- Thrall's Headpiece of Conquest
+									i(48299), -- Thrall's Spaulders of Conquest
+									i(48295), -- Thrall's Tunic of Conquest
+									i(47580), -- Black Chitin Bracers
+									i(48296), -- Thrall's Handguards of Conquest
+									i(47866), -- Darkspear Ritual Binding
+									i(48298), -- Thrall's Legguards of Conquest
+									i(47295), -- Sabatons of Tremoring Earth
+								}),	
+							},		
+							["classes"] = { 7 },		
+						}),			
+						gs(707, { -- Liadrin's Plate			
+							["groups"] = {		
+								n(-9942, { -- Holy Spec	
+									i(48597), -- Liadrin's Headpiece of Conquest
+									i(48595), -- Liadrin's Spaulders of Conquest
+									i(48599), -- Liadrin's Tunic of Conquest
+									i(47298), -- Armguards of the Shieldmaiden
+									i(48598), -- Liadrin's Gloves of Conquest
+									i(47858), -- Girdle of the Frozen Reach
+									i(48596), -- Liadrin's Greaves of Conquest
+									i(47263), -- Sabatons of the Courageous
+								}),	
+								n(-9943, { -- Protection	
+								}),	
+								n(-9944, { -- Retribution	
+								}),	
+							},		
+							["classes"] = { 2 },		
+						}),			
+						gs(657, { -- Hellscream's Battlegear			
+							["groups"] = {		
+								n(-9953, { -- Fury / Arms Spec	
+									i(48388), -- Hellscream's Helmet of Conquest
+									i(48390), -- Hellscream's Shoulderplates of Conquest
+									i(48386), -- Hellscream's Battleplate of Conquest
+									i(47253), -- Boneshatter Vambraces
+									i(48387), -- Hellscream's Gauntlets of Conquest
+									i(47859), -- Belt of the Impaler
+									i(48389), -- Hellscream's Legplates of Conquest
+									i(47312), -- Greaves of the Saronite Citadel
+								}),	
+								n(-9947, { -- Protection Spec	
+								}),	
+							},		
+							["classes"] = { 1 },		
+						}),			
+						gs(841, { -- Koltira's Battlegear			
+							["groups"] = {		
+								n(-9948, { -- Blood Spec	
+								}),	
+								n(-9954, { -- Frost / Unholy Spec	
+									i(48503), -- Koltira's Helmet of Conquest
+									i(48505), -- Koltira's Shoulderpads of Conquest
+									i(48501), -- Koltira's Battleplate of Conquest
+									i(47869), -- Armplates of the Nether Lord
+									i(48502), -- Koltira's Gauntlets of Conquest
+									i(47268), -- Bloodbath Girdle
+									i(48504), -- Koltira's Legplates of Conquest
+									i(47269), -- Dawnbreaker Sabatons
+								}),	
+							},		
+							["classes"] = { 6 },		
+						}),			
 					}),
 					n(-373, { -- 25 Man Normal
-						gs(350, { -- Zabra's Regalia
-							i(48065), -- Zabra's Cowl of Triumph
-							i(48062), -- Zabra's Shoulderpads of Triumph
-							i(48063), -- Zabra's Robe of Triumph
-							i(48066), -- Zabra's Gloves of Triumph
-							i(48064), -- Zabra's Leggings of Triumph
-							i(48095), -- Zabra's Circlet of Triumph
-							i(48092), -- Zabra's Mantle of Triumph
-							i(48093), -- Zabra's Raiments of Triumph
-							i(48096), -- Zabra's Handwraps of Triumph
-							i(48094), -- Zabra's Pants of Triumph
-						}),
-						gs(723, { -- Sunstrider's Regalia
-							i(47771), -- Sunstrider's Hood of Triumph
-							i(47768), -- Sunstrider's Shoulderpads of Triumph
-							i(47769), -- Sunstrider's Robe of Triumph
-							i(47772), -- Sunstrider's Gauntlets of Triumph
-							i(47770), -- Sunstrider's Leggings of Triumph
-						}),
-						gs(675, { -- Gul'dan's Regalia
-							i(47804), -- Gul'dan's Hood of Triumph
-							i(47807), -- Gul'dan's Shoulderpads of Triumph
-							i(47806), -- Gul'dan's Robe of Triumph
-							i(47803), -- Gul'dan's Gloves of Triumph
-							i(47805), -- Gul'dan's Leggings of Triumph
-						}),
-						gs(826, { -- Runetotem's Battlegear
-							i(48194), -- Runetotem's Headguard of Triumph
-							i(48197), -- Runetotem's Shoulderpads of Triumph
-							i(48196), -- Runetotem's Raiments of Triumph
-							i(48193), -- Runetotem's Handgrips of Triumph
-							i(48195), -- Runetotem's Legguards of Triumph
-							i(48181), -- Runetotem's Cover of Triumph
-							i(48178), -- Runetotem's Mantle of Triumph
-							i(48179), -- Runetotem's Vestments of Triumph
-							i(48182), -- Runetotem's Gloves of Triumph
-							i(48180), -- Runetotem's Trousers of Triumph
-							i(48151), -- Runetotem's Headpiece of Triumph
-							i(48148), -- Runetotem's Spaulders of Triumph
-							i(48149), -- Runetotem's Robe of Triumph
-							i(48152), -- Runetotem's Handguards of Triumph
-							i(48150), -- Runetotem's Leggings of Triumph
-						}),
-						gs(691, { -- Garona's Battlegear
-							i(48240), -- Garona's Helmet of Triumph
-							i(48238), -- Garona's Pauldrons of Triumph
-							i(48242), -- Garona's Breastplate of Triumph
-							i(48241), -- Garona's Gauntlets of Triumph
-							i(48239), -- Garona's Legplates of Triumph
-						}),	
-						gs(738, { -- Windrunner's Pursuit
-							i(48272), -- Windrunner's Headpiece of Triumph
-							i(48270), -- Windrunner's Spaulders of Triumph
-							i(48274), -- Windrunner's Tunic of Triumph
-							i(48273), -- Windrunner's Handguards of Triumph
-							i(48271), -- Windrunner's Legguards of Triumph
-						}),
-						gs(641, { -- Thrall's Garb
-							i(48333), -- Thrall's Helm of Triumph
-							i(48331), -- Thrall's Shoulderpads of Triumph
-							i(48335), -- Thrall's Hauberk of Triumph
-							i(48334), -- Thrall's Gloves of Triumph
-							i(48332), -- Thrall's Kilt of Triumph
-							i(48363), -- Thrall's Faceguard of Triumph
-							i(48361), -- Thrall's Shoulderguards of Triumph
-							i(48365), -- Thrall's Chestguard of Triumph
-							i(48364), -- Thrall's Grips of Triumph
-							i(48362), -- Thrall's War-Kilt of Triumph
-							i(48302), -- Thrall's Headpiece of Triumph
-							i(48304), -- Thrall's Spaulders of Triumph
-							i(48300), -- Thrall's Tunic of Triumph
-							i(48301), -- Thrall's Handguards of Triumph
-							i(48303), -- Thrall's Legguards of Triumph
-						}),	
-						gs(707, { -- Liadrin's Plate
-							i(48592), -- Liadrin's Headpiece of Triumph
-							i(48590), -- Liadrin's Spaulders of Triumph
-							i(48594), -- Liadrin's Tunic of Triumph
-							i(48593), -- Liadrin's Gloves of Triumph
-							i(48591), -- Liadrin's Greaves of Triumph
-							i(48659), -- Liadrin's Faceguard of Triumph
-							i(48661), -- Liadrin's Shoulderguards of Triumph
-							i(48657), -- Liadrin's Breastplate of Triumph
-							i(48658), -- Liadrin's Handguards of Triumph
-							i(48660), -- Liadrin's Legguards of Triumph
-							i(48624), -- Liadrin's Helm of Triumph
-							i(48622), -- Liadrin's Shoulderplates of Triumph
-							i(48626), -- Liadrin's Battleplate of Triumph
-							i(48625), -- Liadrin's Gauntlets of Triumph
-							i(48623), -- Liadrin's Legplates of Triumph
-						}),	
-						gs(657, { -- Hellscream's Battlegear	
-							i(48393), -- Hellscream's Helmet of Triumph
-							i(48395), -- Hellscream's Shoulderplates of Triumph
-							i(48391), -- Hellscream's Battleplate of Triumph
-							i(48392), -- Hellscream's Gauntlets of Triumph
-							i(48394), -- Hellscream's Legplates of Triumph
-							i(48463), -- Hellscream's Greathelm of Triumph
-							i(48465), -- Hellscream's Pauldrons of Triumph
-							i(48461), -- Hellscream's Breastplate of Triumph
-							i(48462), -- Hellscream's Handguards of Triumph
-							i(48464), -- Hellscream's Legguards of Triumph
-						}),
-						gs(841, { -- Koltira's Battlegear
-							i(48555), -- Koltira's Faceguard of Triumph
-							i(48553), -- Koltira's Pauldrons of Triumph
-							i(48557), -- Koltira's Chestguard of Triumph
-							i(48556), -- Koltira's Handguards of Triumph
-							i(48554), -- Koltira's Legguards of Triumph
-							i(48498), -- Koltira's Helmet of Triumph
-							i(48496), -- Koltira's Shoulderpads of Triumph
-							i(48500), -- Koltira's Battleplate of Triumph
-							i(48499), -- Koltira's Gauntlets of Triumph
-							i(48497), -- Koltira's Legplates of Triumph
+						gs(350, { -- Zabra's Regalia			
+							["groups"] = {		
+								n(-9951, { -- Holy/Disciple Priest	
+									i(48065), -- Zabra's Cowl of Triumph
+									i(48062), -- Zabra's Shoulderpads of Triumph
+									i(48063), -- Zabra's Robe of Triumph
+									i(47324), -- Bindings of the Ashen Saint
+									i(48066), -- Zabra's Gloves of Triumph
+									i(47909), -- Belt of the Eternal
+									i(48064), -- Zabra's Leggings of Triumph
+									i(49232), -- Sandals of the Grieving Soul
+								}),	
+								n(-9917, { -- Shadow Priest	
+									i(48095), -- Zabra's Circlet of Triumph
+									i(48092), -- Zabra's Mantle of Triumph
+									i(48093), -- Zabra's Raiments of Triumph
+									i(47324), -- Bindings of the Ashen Saint
+									i(48096), -- Zabra's Handwraps of Triumph
+									i(47909), -- Belt of the Eternal
+									i(48094), -- Zabra's Pants of Triumph
+									i(49232), -- Sandals of the Grieving Soul
+								}),	
+							},		
+							["classes"] = { 5 },		
+						}),			
+						gs(723, { -- Sunstrider's Regalia			
+							["groups"] = {		
+								i(47771), -- Sunstrider's Hood of Triumph	
+								i(47768), -- Sunstrider's Shoulderpads of Triumph	
+								i(47769), -- Sunstrider's Robe of Triumph	
+								i(47586), -- Bejeweled Wizard's Bracers	
+								i(47772), -- Sunstrider's Gauntlets of Triumph	
+								i(47855), -- Icehowl Binding	
+								i(47770), -- Sunstrider's Leggings of Triumph	
+								i(47321), -- Boots of the Icy Floe	
+							},		
+							["classes"] = { 8 },		
+						}),			
+						gs(675, { -- Gul'dan's Regalia			
+							["groups"] = {		
+								i(47804), -- Gul'dan's Hood of Triumph	
+								i(47807), -- Gul'dan's Shoulderpads of Triumph	
+								i(47806), -- Gul'dan's Robe of Triumph	
+								i(47803), -- Gul'dan's Gloves of Triumph	
+								i(47286), -- Belt of Biting Cold	
+								i(47805), -- Gul'dan's Leggings of Triumph	
+								i(47873), -- Sunreaver Magus' Sandals	
+							},		
+							["classes"] = { 9 },		
+						}),			
+						gs(826, { -- Runetotem's Battlegear			
+							["groups"] = {		
+								n(-9952, { -- Guardian / Feral Spec	
+									i(48194), -- Runetotem's Headguard of Triumph
+									i(48197), -- Runetotem's Shoulderpads of Triumph
+									i(48196), -- Runetotem's Raiments of Triumph
+									i(47277), -- Bindings of the Autumn Willow
+									i(48193), -- Runetotem's Handgrips of Triumph
+									i(47863), -- Belt of the Bloodhoof Emissary
+									i(48195), -- Runetotem's Legguards of Triumph
+									i(47262), -- Boots of the Harsh Winter
+								}),	
+								n(-9926, { -- Balance Spec	
+									i(48181), -- Runetotem's Cover of Triumph
+									i(48178), -- Runetotem's Mantle of Triumph
+									i(48179), -- Runetotem's Vestments of Triumph
+									i(47277), -- Bindings of the Autumn Willow
+									i(48182), -- Runetotem's Gloves of Triumph
+									i(47863), -- Belt of the Bloodhoof Emissary
+									i(48180), -- Runetotem's Trousers of Triumph
+									i(47262), -- Boots of the Harsh Winter
+								}),	
+								n(-9927, { -- Restoration Spec	
+									i(48151), -- Runetotem's Headpiece of Triumph
+									i(48148), -- Runetotem's Spaulders of Triumph
+									i(48149), -- Runetotem's Robe of Triumph
+									i(47277), -- Bindings of the Autumn Willow
+									i(48152), -- Runetotem's Handguards of Triumph
+									i(47863), -- Belt of the Bloodhoof Emissary
+									i(48150), -- Runetotem's Leggings of Triumph
+									i(47262), -- Boots of the Harsh Winter
+								}),	
+							},		
+							["classes"] = { 11 },		
+						}),			
+						gs(691, { -- Garona's Battlegear			
+							["groups"] = {		
+								i(48240), -- Garona's Helmet of Triumph	
+								i(48238), -- Garona's Pauldrons of Triumph	
+								i(48242), -- Garona's Breastplate of Triumph	
+								i(47313), -- Armbands of Dark Determination	
+								i(48241), -- Garona's Gauntlets of Triumph	
+								i(47299), -- Belt of the Pitiless Killer	
+								i(48239), -- Garona's Legplates of Triumph	
+								i(47853), -- Acidmaw Treads	
+							},		
+							["classes"] = { 4 },		
+						}),			
+						gs(738, { -- Windrunner's Pursuit			
+							["groups"] = {		
+								i(48272), -- Windrunner's Headpiece of Triumph	
+								i(48270), -- Windrunner's Spaulders of Triumph	
+								i(48274), -- Windrunner's Tunic of Triumph	
+								i(47850), -- Bracers of the Northern Stalker	
+								i(48273), -- Windrunner's Handguards of Triumph	
+								i(47311), -- Waistguard of Deathly Dominion	
+								i(48271), -- Windrunner's Legguards of Triumph	
+								i(47867), -- Warsong Poacher's Greaves	
+							},		
+							["classes"] = { 3 },		
+						}),			
+						gs(641, { -- Thrall's Garb			
+							["groups"] = {		
+								n(-9939, { -- Elemental Spec	
+									i(48333), -- Thrall's Helm of Triumph
+									i(48331), -- Thrall's Shoulderpads of Triumph
+									i(48335), -- Thrall's Hauberk of Triumph
+									i(47580), -- Black Chitin Bracers
+									i(48334), -- Thrall's Gloves of Triumph
+									i(47866), -- Darkspear Ritual Binding
+									i(48332), -- Thrall's Kilt of Triumph
+									i(47295), -- Sabatons of Tremoring Earth
+								}),	
+								n(-9940, { -- Enhancement Spec	
+									i(48363), -- Thrall's Faceguard of Triumph
+									i(48361), -- Thrall's Shoulderguards of Triumph
+									i(48365), -- Thrall's Chestguard of Triumph
+									i(47580), -- Black Chitin Bracers
+									i(48364), -- Thrall's Grips of Triumph
+									i(47866), -- Darkspear Ritual Binding
+									i(48362), -- Thrall's War-Kilt of Triumph
+									i(47295), -- Sabatons of Tremoring Earth
+								}),	
+								n(-9941, { -- Restoration Spec	
+									i(48302), -- Thrall's Headpiece of Triumph
+									i(48304), -- Thrall's Spaulders of Triumph
+									i(48300), -- Thrall's Tunic of Triumph
+									i(47580), -- Black Chitin Bracers
+									i(48301), -- Thrall's Handguards of Triumph
+									i(47866), -- Darkspear Ritual Binding
+									i(48303), -- Thrall's Legguards of Triumph
+									i(47295), -- Sabatons of Tremoring Earth
+								}),	
+							},		
+							["classes"] = { 7 },		
+						}),			
+						gs(707, { -- Liadrin's Plate			
+							["groups"] = {		
+								n(-9942, { -- Holy Spec	
+									i(48592), -- Liadrin's Headpiece of Triumph
+									i(48590), -- Liadrin's Spaulders of Triumph
+									i(48594), -- Liadrin's Tunic of Triumph
+									i(47298), -- Armguards of the Shieldmaiden
+									i(48593), -- Liadrin's Gloves of Triumph
+									i(47858), -- Girdle of the Frozen Reach
+									i(48591), -- Liadrin's Greaves of Triumph
+									i(47263), -- Sabatons of the Courageous
+								}),	
+								n(-9943, { -- Protection	
+									i(48659), -- Liadrin's Faceguard of Triumph
+									i(48661), -- Liadrin's Shoulderguards of Triumph
+									i(48657), -- Liadrin's Breastplate of Triumph
+									i(47298), -- Armguards of the Shieldmaiden
+									i(48658), -- Liadrin's Handguards of Triumph
+									i(47858), -- Girdle of the Frozen Reach
+									i(48660), -- Liadrin's Legguards of Triumph
+									i(47263), -- Sabatons of the Courageous
+								}),	
+								n(-9944, { -- Retribution	
+									i(48624), -- Liadrin's Helm of Triumph
+									i(48622), -- Liadrin's Shoulderplates of Triumph
+									i(48626), -- Liadrin's Battleplate of Triumph
+									i(47298), -- Armguards of the Shieldmaiden
+									i(48625), -- Liadrin's Gauntlets of Triumph
+									i(47858), -- Girdle of the Frozen Reach
+									i(48623), -- Liadrin's Legplates of Triumph
+									i(47263), -- Sabatons of the Courageous
+								}),	
+							},		
+							["classes"] = { 2 },		
+						}),			
+						gs(657, { -- Hellscream's Battlegear			
+							["groups"] = {		
+								n(-9953, { -- Fury / Arms Spec	
+									i(48393), -- Hellscream's Helmet of Triumph
+									i(48395), -- Hellscream's Shoulderplates of Triumph
+									i(48391), -- Hellscream's Battleplate of Triumph
+									i(47253), -- Boneshatter Vambraces
+									i(48392), -- Hellscream's Gauntlets of Triumph
+									i(47859), -- Belt of the Impaler
+									i(48394), -- Hellscream's Legplates of Triumph
+									i(47312), -- Greaves of the Saronite Citadel
+								}),	
+								n(-9947, { -- Protection Spec	
+									i(48463), -- Hellscream's Greathelm of Triumph
+									i(48465), -- Hellscream's Pauldrons of Triumph
+									i(48461), -- Hellscream's Breastplate of Triumph
+									i(47253), -- Boneshatter Vambraces
+									i(48462), -- Hellscream's Handguards of Triumph
+									i(47859), -- Belt of the Impaler
+									i(48464), -- Hellscream's Legguards of Triumph
+									i(47312), -- Greaves of the Saronite Citadel
+								}),	
+							},		
+							["classes"] = { 1 },		
+						}),			
+						gs(841, { -- Koltira's Battlegear			
+							["groups"] = {		
+								n(-9948, { -- Blood Spec	
+									i(48555), -- Koltira's Faceguard of Triumph
+									i(48553), -- Koltira's Pauldrons of Triumph
+									i(48557), -- Koltira's Chestguard of Triumph
+									i(47869), -- Armplates of the Nether Lord
+									i(48556), -- Koltira's Handguards of Triumph
+									i(47268), -- Bloodbath Girdle
+									i(48554), -- Koltira's Legguards of Triumph
+									i(47269), -- Dawnbreaker Sabatons
+								}),	
+								n(-9954, { -- Frost / Unholy Spec	
+									i(48498), -- Koltira's Helmet of Triumph
+									i(48496), -- Koltira's Shoulderpads of Triumph
+									i(48500), -- Koltira's Battleplate of Triumph
+									i(47869), -- Armplates of the Nether Lord
+									i(48499), -- Koltira's Gauntlets of Triumph
+									i(47268), -- Bloodbath Girdle
+									i(48497), -- Koltira's Legplates of Triumph
+									i(47269), -- Dawnbreaker Sabatons
+								}),	
+							},		
 						}),
 					}),
 					n(-375, { -- 25 Man Heroic
-						gs(350, { -- Zabra's Regalia
-							i(48058), -- Zabra's Cowl of Triumph
-							i(48061), -- Zabra's Shoulderpads of Triumph
-							i(48060), -- Zabra's Robe of Triumph
-							i(48057), -- Zabra's Gloves of Triumph
-							i(48059), -- Zabra's Leggings of Triumph
-							i(48088), -- Zabra's Circlet of Triumph
-							i(48091), -- Zabra's Mantle of Triumph
-							i(48090), -- Zabra's Raiments of Triumph
-							i(48087), -- Zabra's Handwraps of Triumph
-							i(48089), -- Zabra's Pants of Triumph
-						}),
-						gs(723, { -- Sunstrider's Regalia
-							i(47764), -- Sunstrider's Hood of Triumph
-							i(47767), -- Sunstrider's Shoulderpads of Triumph
-							i(47766), -- Sunstrider's Robe of Triumph
-							i(47763), -- Sunstrider's Gauntlets of Triumph
-							i(47765), -- Sunstrider's Leggings of Triumph
-						}),
-						gs(675, { -- Gul'dan's Regalia
-							i(47796), -- Gul'dan's Hood of Triumph
-							i(47793), -- Gul'dan's Shoulderpads of Triumph
-							i(47794), -- Gul'dan's Robe of Triumph
-							i(47797), -- Gul'dan's Gloves of Triumph
-							i(47795), -- Gul'dan's Leggings of Triumph
-						}),
-						gs(826, { -- Runetotem's Battlegear
-							i(48201), -- Runetotem's Headguard of Triumph
-							i(48198), -- Runetotem's Shoulderpads of Triumph
-							i(48199), -- Runetotem's Raiments of Triumph
-							i(48202), -- Runetotem's Handgrips of Triumph
-							i(48200), -- Runetotem's Legguards of Triumph
-							i(48174), -- Runetotem's Cover of Triumph
-							i(48177), -- Runetotem's Mantle of Triumph
-							i(48176), -- Runetotem's Vestments of Triumph
-							i(48173), -- Runetotem's Gloves of Triumph
-							i(48175), -- Runetotem's Trousers of Triumph
-							i(48144), -- Runetotem's Headpiece of Triumph
-							i(48147), -- Runetotem's Spaulders of Triumph
-							i(48146), -- Runetotem's Robe of Triumph
-							i(48143), -- Runetotem's Handguards of Triumph
-							i(48145), -- Runetotem's Leggings of Triumph
-						}),
-						gs(691, { -- Garona's Battlegear
-							i(48235), -- Garona's Helmet of Triumph
-							i(48237), -- Garona's Pauldrons of Triumph
-							i(48233), -- Garona's Breastplate of Triumph
-							i(48234), -- Garona's Gauntlets of Triumph
-							i(48236), -- Garona's Legplates of Triumph
-						}),
-						gs(738, { -- Windrunner's Pursuit
-							i(48267), -- Windrunner's Headpiece of Triumph
-							i(48269), -- Windrunner's Spaulders of Triumph
-							i(48265), -- Windrunner's Tunic of Triumph
-							i(48266), -- Windrunner's Handguards of Triumph
-							i(48268), -- Windrunner's Legguards of Triumph
-						}),	
-						gs(641, { -- Thrall's Garb
-							i(48328), -- Thrall's Helm of Triumph
-							i(48330), -- Thrall's Shoulderpads of Triumph
-							i(48326), -- Thrall's Hauberk of Triumph
-							i(48327), -- Thrall's Gloves of Triumph
-							i(48329), -- Thrall's Kilt of Triumph
-							i(48358), -- Thrall's Faceguard of Triumph
-							i(48360), -- Thrall's Shoulderguards of Triumph
-							i(48356), -- Thrall's Chestguard of Triumph
-							i(48357), -- Thrall's Grips of Triumph
-							i(48359), -- Thrall's War-Kilt of Triumph
-							i(48307), -- Thrall's Headpiece of Triumph
-							i(48309), -- Thrall's Spaulders of Triumph
-							i(48305), -- Thrall's Tunic of Triumph
-							i(48306), -- Thrall's Handguards of Triumph
-							i(48308), -- Thrall's Legguards of Triumph
-						}),	
-						gs(707, { -- Liadrin's Plate
-							i(48587), -- Liadrin's Headpiece of Triumph
-							i(48585), -- Liadrin's Spaulders of Triumph
-							i(48589), -- Liadrin's Tunic of Triumph
-							i(48588), -- Liadrin's Gloves of Triumph
-							i(48586), -- Liadrin's Greaves of Triumph
-							i(48649), -- Liadrin's Faceguard of Triumph
-							i(48647), -- Liadrin's Shoulderguards of Triumph
-							i(48651), -- Liadrin's Breastplate of Triumph
-							i(48650), -- Liadrin's Handguards of Triumph
-							i(48648), -- Liadrin's Legguards of Triumph
-							i(48619), -- Liadrin's Helm of Triumph
-							i(48621), -- Liadrin's Shoulderplates of Triumph
-							i(48617), -- Liadrin's Battleplate of Triumph
-							i(48618), -- Liadrin's Gauntlets of Triumph
-							i(48620), -- Liadrin's Legplates of Triumph
-						}),
-						gs(657, { -- Hellscream's Battlegear	
-							i(48398), -- Hellscream's Helmet of Triumph
-							i(48400), -- Hellscream's Battleplate of Triumph
-							i(48396), -- Hellscream's Shoulderplates of Triumph
-							i(48397), -- Hellscream's Gauntlets of Triumph
-							i(48399), -- Hellscream's Legplates of Triumph
-							i(48468), -- Hellscream's Greathelm of Triumph
-							i(48470), -- Hellscream's Pauldrons of Triumph
-							i(48466), -- Hellscream's Breastplate of Triumph
-							i(48467), -- Hellscream's Handguards of Triumph
-							i(48469), -- Hellscream's Legguards of Triumph
-						}),
-						gs(841, { -- Koltira's Battlegear
-							i(48550), -- Koltira's Faceguard of Triumph
-							i(48552), -- Koltira's Pauldrons of Triumph
-							i(48548), -- Koltira's Chestguard of Triumph
-							i(48549), -- Koltira's Handguards of Triumph
-							i(48551), -- Koltira's Legguards of Triumph
-							i(48493), -- Koltira's Helmet of Triumph
-							i(48495), -- Koltira's Shoulderpads of Triumph
-							i(48491), -- Koltira's Battleplate of Triumph
-							i(48492), -- Koltira's Gauntlets of Triumph
-							i(48494), -- Koltira's Legplates of Triumph
+						gs(350, { -- Zabra's Regalia			
+							["groups"] = {		
+								n(-9951, { -- Holy/Disciple Priest	
+									i(48058), -- Zabra's Cowl of Triumph
+									i(48061), -- Zabra's Shoulderpads of Triumph
+									i(48060), -- Zabra's Robe of Triumph
+									i(47324), -- Bindings of the Ashen Saint
+									i(48057), -- Zabra's Gloves of Triumph
+									i(47909), -- Belt of the Eternal
+									i(48059), -- Zabra's Leggings of Triumph
+									i(49232), -- Sandals of the Grieving Soul
+								}),	
+								n(-9917, { -- Shadow Priest	
+									i(48088), -- Zabra's Circlet of Triumph
+									i(48091), -- Zabra's Mantle of Triumph
+									i(48090), -- Zabra's Raiments of Triumph
+									i(47324), -- Bindings of the Ashen Saint
+									i(48087), -- Zabra's Handwraps of Triumph
+									i(47909), -- Belt of the Eternal
+									i(48089), -- Zabra's Pants of Triumph
+									i(49232), -- Sandals of the Grieving Soul
+								}),	
+							},		
+							["classes"] = { 5 },		
+						}),			
+						gs(723, { -- Sunstrider's Regalia			
+							["groups"] = {		
+								i(47764), -- Sunstrider's Hood of Triumph	
+								i(47767), -- Sunstrider's Shoulderpads of Triumph	
+								i(47766), -- Sunstrider's Robe of Triumph	
+								i(47586), -- Bejeweled Wizard's Bracers	
+								i(47763), -- Sunstrider's Gauntlets of Triumph	
+								i(47855), -- Icehowl Binding	
+								i(47765), -- Sunstrider's Leggings of Triumph	
+								i(47321), -- Boots of the Icy Floe	
+							},		
+							["classes"] = { 8 },		
+						}),			
+						gs(675, { -- Gul'dan's Regalia			
+							["groups"] = {		
+								i(47796), -- Gul'dan's Hood of Triumph	
+								i(47793), -- Gul'dan's Shoulderpads of Triumph	
+								i(47794), -- Gul'dan's Robe of Triumph	
+								i(47797), -- Gul'dan's Gloves of Triumph	
+								i(47286), -- Belt of Biting Cold	
+								i(47795), -- Gul'dan's Leggings of Triumph	
+								i(47873), -- Sunreaver Magus' Sandals	
+							},		
+							["classes"] = { 9 },		
+						}),			
+						gs(826, { -- Runetotem's Battlegear			
+							["groups"] = {		
+								n(-9952, { -- Guardian / Feral Spec	
+									i(48201), -- Runetotem's Headguard of Triumph
+									i(48198), -- Runetotem's Shoulderpads of Triumph
+									i(48199), -- Runetotem's Raiments of Triumph
+									i(47277), -- Bindings of the Autumn Willow
+									i(48202), -- Runetotem's Handgrips of Triumph
+									i(47863), -- Belt of the Bloodhoof Emissary
+									i(48200), -- Runetotem's Legguards of Triumph
+									i(47262), -- Boots of the Harsh Winter
+								}),	
+								n(-9926, { -- Balance Spec	
+									i(48174), -- Runetotem's Cover of Triumph
+									i(48177), -- Runetotem's Mantle of Triumph
+									i(48176), -- Runetotem's Vestments of Triumph
+									i(47277), -- Bindings of the Autumn Willow
+									i(48173), -- Runetotem's Gloves of Triumph
+									i(47863), -- Belt of the Bloodhoof Emissary
+									i(48175), -- Runetotem's Trousers of Triumph
+									i(47262), -- Boots of the Harsh Winter
+								}),	
+								n(-9927, { -- Restoration Spec	
+									i(48144), -- Runetotem's Headpiece of Triumph
+									i(48147), -- Runetotem's Spaulders of Triumph
+									i(48146), -- Runetotem's Robe of Triumph
+									i(47277), -- Bindings of the Autumn Willow
+									i(48143), -- Runetotem's Handguards of Triumph
+									i(47863), -- Belt of the Bloodhoof Emissary
+									i(48145), -- Runetotem's Leggings of Triumph
+									i(47262), -- Boots of the Harsh Winter
+								}),	
+							},		
+							["classes"] = { 11 },		
+						}),			
+						gs(691, { -- Garona's Battlegear			
+							["groups"] = {		
+								i(48235), -- Garona's Helmet of Triumph	
+								i(48237), -- Garona's Pauldrons of Triumph	
+								i(48233), -- Garona's Breastplate of Triumph	
+								i(47313), -- Armbands of Dark Determination	
+								i(48234), -- Garona's Gauntlets of Triumph	
+								i(47299), -- Belt of the Pitiless Killer	
+								i(48236), -- Garona's Legplates of Triumph	
+								i(47853), -- Acidmaw Treads	
+							},		
+							["classes"] = { 4 },		
+						}),			
+						gs(738, { -- Windrunner's Pursuit			
+							["groups"] = {		
+								i(48267), -- Windrunner's Headpiece of Triumph	
+								i(48269), -- Windrunner's Spaulders of Triumph	
+								i(48265), -- Windrunner's Tunic of Triumph	
+								i(47850), -- Bracers of the Northern Stalker	
+								i(48266), -- Windrunner's Handguards of Triumph	
+								i(47311), -- Waistguard of Deathly Dominion	
+								i(48268), -- Windrunner's Legguards of Triumph	
+								i(47867), -- Warsong Poacher's Greaves	
+							},		
+							["classes"] = { 3 },		
+						}),			
+						gs(641, { -- Thrall's Garb			
+							["groups"] = {		
+								n(-9939, { -- Elemental Spec	
+									i(48328), -- Thrall's Helm of Triumph
+									i(48330), -- Thrall's Shoulderpads of Triumph
+									i(48326), -- Thrall's Hauberk of Triumph
+									i(47580), -- Black Chitin Bracers
+									i(48327), -- Thrall's Gloves of Triumph
+									i(47866), -- Darkspear Ritual Binding
+									i(48329), -- Thrall's Kilt of Triumph
+									i(47295), -- Sabatons of Tremoring Earth
+								}),	
+								n(-9940, { -- Enhancement Spec	
+									i(48358), -- Thrall's Faceguard of Triumph
+									i(48360), -- Thrall's Shoulderguards of Triumph
+									i(48356), -- Thrall's Chestguard of Triumph
+									i(47580), -- Black Chitin Bracers
+									i(48357), -- Thrall's Grips of Triumph
+									i(47866), -- Darkspear Ritual Binding
+									i(48359), -- Thrall's War-Kilt of Triumph
+									i(47295), -- Sabatons of Tremoring Earth
+								}),	
+								n(-9941, { -- Restoration Spec	
+									i(48307), -- Thrall's Headpiece of Triumph
+									i(48309), -- Thrall's Spaulders of Triumph
+									i(48305), -- Thrall's Tunic of Triumph
+									i(47580), -- Black Chitin Bracers
+									i(48306), -- Thrall's Handguards of Triumph
+									i(47866), -- Darkspear Ritual Binding
+									i(48308), -- Thrall's Legguards of Triumph
+									i(47295), -- Sabatons of Tremoring Earth
+								}),	
+							},		
+							["classes"] = { 7 },		
+						}),			
+						gs(707, { -- Liadrin's Plate			
+							["groups"] = {		
+								n(-9942, { -- Holy Spec	
+									i(48587), -- Liadrin's Headpiece of Triumph
+									i(48585), -- Liadrin's Spaulders of Triumph
+									i(48589), -- Liadrin's Tunic of Triumph
+									i(47298), -- Armguards of the Shieldmaiden
+									i(48588), -- Liadrin's Gloves of Triumph
+									i(47858), -- Girdle of the Frozen Reach
+									i(48586), -- Liadrin's Greaves of Triumph
+									i(47263), -- Sabatons of the Courageous
+								}),	
+								n(-9943, { -- Protection	
+									i(48649), -- Liadrin's Faceguard of Triumph
+									i(48647), -- Liadrin's Shoulderguards of Triumph
+									i(48651), -- Liadrin's Breastplate of Triumph
+									i(47298), -- Armguards of the Shieldmaiden
+									i(48650), -- Liadrin's Handguards of Triumph
+									i(47858), -- Girdle of the Frozen Reach
+									i(48648), -- Liadrin's Legguards of Triumph
+									i(47263), -- Sabatons of the Courageous
+								}),	
+								n(-9944, { -- Retribution	
+									i(48619), -- Liadrin's Helm of Triumph
+									i(48621), -- Liadrin's Shoulderplates of Triumph
+									i(48617), -- Liadrin's Battleplate of Triumph
+									i(47298), -- Armguards of the Shieldmaiden
+									i(48618), -- Liadrin's Gauntlets of Triumph
+									i(47858), -- Girdle of the Frozen Reach
+									i(48620), -- Liadrin's Legplates of Triumph
+									i(47263), -- Sabatons of the Courageous
+								}),	
+							},		
+							["classes"] = { 2 },		
+						}),			
+						gs(657, { -- Hellscream's Battlegear			
+							["groups"] = {		
+								n(-9953, { -- Fury / Arms Spec	
+									i(48398), -- Hellscream's Helmet of Triumph
+									i(48400), -- Hellscream's Battleplate of Triumph
+									i(48396), -- Hellscream's Shoulderplates of Triumph
+									i(47253), -- Boneshatter Vambraces
+									i(48397), -- Hellscream's Gauntlets of Triumph
+									i(47859), -- Belt of the Impaler
+									i(48399), -- Hellscream's Legplates of Triumph
+									i(47312), -- Greaves of the Saronite Citadel
+								}),	
+								n(-9947, { -- Protection Spec	
+									i(48468), -- Hellscream's Greathelm of Triumph
+									i(48470), -- Hellscream's Pauldrons of Triumph
+									i(48466), -- Hellscream's Breastplate of Triumph
+									i(47253), -- Boneshatter Vambraces
+									i(48467), -- Hellscream's Handguards of Triumph
+									i(47859), -- Belt of the Impaler
+									i(48469), -- Hellscream's Legguards of Triumph
+									i(47312), -- Greaves of the Saronite Citadel
+								}),	
+							},		
+							["classes"] = { 1 },		
+						}),			
+						gs(841, { -- Koltira's Battlegear			
+							["groups"] = {		
+								n(-9948, { -- Blood Spec	
+									i(48550), -- Koltira's Faceguard of Triumph
+									i(48552), -- Koltira's Pauldrons of Triumph
+									i(48548), -- Koltira's Chestguard of Triumph
+									i(47869), -- Armplates of the Nether Lord
+									i(48549), -- Koltira's Handguards of Triumph
+									i(47268), -- Bloodbath Girdle
+									i(48551), -- Koltira's Legguards of Triumph
+									i(47269), -- Dawnbreaker Sabatons
+								}),	
+								n(-9954, { -- Frost / Unholy Spec	
+									i(48493), -- Koltira's Helmet of Triumph
+									i(48495), -- Koltira's Shoulderpads of Triumph
+									i(48491), -- Koltira's Battleplate of Triumph
+									i(47869), -- Armplates of the Nether Lord
+									i(48492), -- Koltira's Gauntlets of Triumph
+									i(47268), -- Bloodbath Girdle
+									i(48494), -- Koltira's Legplates of Triumph
+									i(47269), -- Dawnbreaker Sabatons
+								}),								
+							},		
 						}),
 					}),
 				})),
@@ -2573,7 +2862,7 @@ Notation of what is missing from Blizzard's localization
 				d(17, {  -- Raid Finder
 					["ids"] = { 3379 }, -- LFR
 					["groups"] = {
-						gs(322, { --n(-4075, { -- Vestments of the Purifier
+						gs(322, { -- Vestments of the Purifier
 							["groups"] = {
 								i(138313), -- Head
 								i(138322), -- Shoulder
@@ -2585,8 +2874,9 @@ Notation of what is missing from Blizzard's localization
 								i(138316), -- Legs
 								i(139194), -- Feet
 							},
+							["classes"] = { 5 },
 						}),
-						gs(989, { --n(-4076, { -- Regalia of Everburning Knowledge
+						gs(989, { -- Regalia of Everburning Knowledge
 							["groups"] = {
 								i(138312), -- Head
 								i(138321), -- Shoulder
@@ -2598,8 +2888,9 @@ Notation of what is missing from Blizzard's localization
 								i(138315), -- Legs
 								i(139195), -- Feet
 							},
+							["classes"] = { 8 },
 						}),
-						gs(941, { --n(-4077, { -- Legacy of Azj'Aqir
+						gs(941, { -- Legacy of Azj'Aqir
 							["groups"] = {
 								i(138314), -- Head
 								i(138323), -- Shoulder
@@ -2611,8 +2902,9 @@ Notation of what is missing from Blizzard's localization
 								i(138317), -- Legs
 								i(140914), -- Feet
 							},
+							["classes"] = { 9 },
 						}),
-						gs(997, { --n(-4078, { -- Garb of the Astral Warden
+						gs(997, { -- Garb of the Astral Warden
 							["groups"] = {
 								i(138330), -- Head
 								i(138336), -- Shoulder
@@ -2624,8 +2916,9 @@ Notation of what is missing from Blizzard's localization
 								i(138333), -- Legs
 								i(140861), -- Feet
 							},
+							["classes"] = { 11 },
 						}),
-						gs(945, { --n(-4079, { -- Doomblade Battlegear
+						gs(945, { -- Doomblade Battlegear
 							["groups"] = {
 								i(138332), -- Head
 								i(138338), -- Shoulder
@@ -2637,8 +2930,9 @@ Notation of what is missing from Blizzard's localization
 								i(138335), -- Legs
 								i(139199), -- Feet
 							},
+							["classes"] = { 4 },
 						}),
-						gs(985, { --n(-4080, { -- Vestments of Enveloped Dissonance
+						gs(985, { -- Vestments of Enveloped Dissonance
 							["groups"] = {
 								i(138331), -- Head
 								i(138337), -- Shoulder
@@ -2650,8 +2944,9 @@ Notation of what is missing from Blizzard's localization
 								i(138334), -- Legs
 								i(140860), -- Feet
 							},
+							["classes"] = { 10 },
 						}),
-						gs(1001, { --n(-4081, { -- Vestment of Second Sight
+						gs(1001, { -- Vestment of Second Sight
 							["groups"] = {
 								i(138378), -- Head
 								i(138380), -- Shoulder
@@ -2663,8 +2958,9 @@ Notation of what is missing from Blizzard's localization
 								i(138379), -- Legs
 								i(139200), -- Feet
 							},
+							["classes"] = { 12 },
 						}),
-						gs(993, { --n(-4082, { -- Eagletalon Battlegear
+						gs(993, { -- Eagletalon Battlegear
 							["groups"] = {
 								i(138342), -- Head
 								i(138347), -- Shoulder
@@ -2676,8 +2972,9 @@ Notation of what is missing from Blizzard's localization
 								i(138344), -- Legs
 								i(141432), -- Feet
 							},
+							["classes"] = { 3 },
 						}),
-						gs(936, { --n(-4083, { -- Regalia of Bound Elements
+						gs(936, { -- Regalia of Bound Elements
 							["groups"] = {
 								i(138343), -- Head
 								i(138348), -- Shoulder
@@ -2689,8 +2986,9 @@ Notation of what is missing from Blizzard's localization
 								i(138345), -- Legs
 								i(139219), -- Feet
 							},
+							["classes"] = { 7 },
 						}),
-						gs(981, { --n(-4084, { -- Battleplate of the Highlord
+						gs(981, { -- Battleplate of the Highlord
 							["groups"] = {
 								i(138356), -- Head
 								i(138362), -- Shoulder
@@ -2702,8 +3000,9 @@ Notation of what is missing from Blizzard's localization
 								i(138359), -- Legs
 								i(140904), -- Feet
 							},
+							["classes"] = { 2 },
 						}),
-						gs(940, { --n(-4085, { -- Warplate of the Obsidian Aspect
+						gs(940, { -- Warplate of the Obsidian Aspect
 							["groups"] = {
 								i(138357), -- Head
 								i(138363), -- Shoulder
@@ -2715,8 +3014,9 @@ Notation of what is missing from Blizzard's localization
 								i(138360), -- Legs
 								i(139234), -- Feet
 							},
+							["classes"] = { 1 },
 						}),
-						gs(1005, { --n(-4086, { -- Dreadwyrm Battleplate
+						gs(1005, { -- Dreadwyrm Battleplate
 							["groups"] = {
 								i(138355), -- Head
 								i(138361), -- Shoulder
@@ -2728,13 +3028,14 @@ Notation of what is missing from Blizzard's localization
 								i(138358), -- Legs
 								i(140891), -- Feet
 							},
+							["classes"] = { 6 },
 						}),
 					},
 				}),
 				d(14, {  -- Normal
 					["ids"] = { 1807 }, -- Normal
 					["groups"] =  {
-						gs(308, { --n(-4075, { -- Vestments of the Purifier
+						gs(308, { -- Vestments of the Purifier
 							["groups"] = {
 								i(138313), -- Head
 								i(138322), -- Shoulder
@@ -2746,8 +3047,9 @@ Notation of what is missing from Blizzard's localization
 								i(138316), -- Legs
 								i(139194), -- Feet
 							},
+							["classes"] = { 5 },
 						}),
-						gs(986, { --n(-4076, { -- Regalia of Everburning Knowledge
+						gs(986, { -- Regalia of Everburning Knowledge
 							["groups"] = {
 								i(138312), -- Head
 								i(138321), -- Shoulder
@@ -2759,8 +3061,9 @@ Notation of what is missing from Blizzard's localization
 								i(138315), -- Legs
 								i(139195), -- Feet
 							},
+							["classes"] = { 8 },
 						}),
-						gs(315, { --n(-4077, { -- Legacy of Azj'Aqir
+						gs(315, { -- Legacy of Azj'Aqir
 							["groups"] = {
 								i(138314), -- Head
 								i(138323), -- Shoulder
@@ -2772,8 +3075,9 @@ Notation of what is missing from Blizzard's localization
 								i(138317), -- Legs
 								i(140914), -- Feet
 							},
+							["classes"] = { 9 },
 						}),
-						gs(994, { --n(-4078, { -- Garb of the Astral Warden
+						gs(994, { -- Garb of the Astral Warden
 							["groups"] = {
 								i(138330), -- Head
 								i(138336), -- Shoulder
@@ -2785,8 +3089,9 @@ Notation of what is missing from Blizzard's localization
 								i(138333), -- Legs
 								i(140861), -- Feet
 							},
+							["classes"] = { 11 },
 						}),
-						gs(942, { --n(-4079, { -- Doomblade Battlegear
+						gs(942, { -- Doomblade Battlegear
 							["groups"] = {
 								i(138332), -- Head
 								i(138338), -- Shoulder
@@ -2798,8 +3103,9 @@ Notation of what is missing from Blizzard's localization
 								i(138335), -- Legs
 								i(139199), -- Feet
 							},
+							["classes"] = { 4 },
 						}),
-						gs(982, { --n(-4080, { -- Vestments of Enveloped Dissonance
+						gs(982, { -- Vestments of Enveloped Dissonance
 							["groups"] = {
 								i(138331), -- Head
 								i(138337), -- Shoulder
@@ -2811,8 +3117,9 @@ Notation of what is missing from Blizzard's localization
 								i(138334), -- Legs
 								i(140860), -- Feet
 							},
+							["classes"] = { 10 },
 						}),
-						gs(998, { --n(-4081, { -- Vestment of Second Sight
+						gs(998, { -- Vestment of Second Sight
 							["groups"] = {
 								i(138378), -- Head
 								i(138380), -- Shoulder
@@ -2824,8 +3131,9 @@ Notation of what is missing from Blizzard's localization
 								i(138379), -- Legs
 								i(139200), -- Feet
 							},
+							["classes"] = { 12 },
 						}),
-						gs(990, { --n(-4082, { -- Eagletalon Battlegear
+						gs(990, { -- Eagletalon Battlegear
 							["groups"] = {
 								i(138342), -- Head
 								i(138347), -- Shoulder
@@ -2837,8 +3145,9 @@ Notation of what is missing from Blizzard's localization
 								i(138344), -- Legs
 								i(141432), -- Feet
 							},
+							["classes"] = { 3 },
 						}),
-						gs(933, { --n(-4083, { -- Regalia of Bound Elements
+						gs(933, { -- Regalia of Bound Elements
 							["groups"] = {
 								i(138343), -- Head
 								i(138348), -- Shoulder
@@ -2850,8 +3159,9 @@ Notation of what is missing from Blizzard's localization
 								i(138345), -- Legs
 								i(139219), -- Feet
 							},
+							["classes"] = { 7 },
 						}),
-						gs(978, { --n(-4084, { -- Battleplate of the Highlord
+						gs(978, { -- Battleplate of the Highlord
 							["groups"] = {
 								i(138356), -- Head
 								i(138362), -- Shoulder
@@ -2863,8 +3173,9 @@ Notation of what is missing from Blizzard's localization
 								i(138359), -- Legs
 								i(140904), -- Feet
 							},
+							["classes"] = { 2 },
 						}),
-						gs(937, { --n(-4085, { -- Warplate of the Obsidian Aspect
+						gs(937, { -- Warplate of the Obsidian Aspect
 							["groups"] = {
 								i(138357), -- Head
 								i(138363), -- Shoulder
@@ -2876,8 +3187,9 @@ Notation of what is missing from Blizzard's localization
 								i(138360), -- Legs
 								i(139234), -- Feet
 							},
+							["classes"] = { 1 },
 						}),
-						gs(1002, { --n(-4086, { -- Dreadwyrm Battleplate
+						gs(1002, { -- Dreadwyrm Battleplate
 							["groups"] = {
 								i(138355), -- Head
 								i(138361), -- Shoulder
@@ -2889,13 +3201,14 @@ Notation of what is missing from Blizzard's localization
 								i(138358), -- Legs
 								i(140891), -- Feet
 							},
+							["classes"] = { 6 },
 						}),
 					},
 				}),
 				d(15, {  -- Heroic
 					["ids"] = { 1805 }, -- Heroic
 					["groups"] =  {
-						gs(309, { --n(-4075, { -- Vestments of the Purifier
+						gs(309, { -- Vestments of the Purifier
 							["groups"] = {
 								i(138313), -- Head
 								i(138322), -- Shoulder
@@ -2907,8 +3220,9 @@ Notation of what is missing from Blizzard's localization
 								i(138316), -- Legs
 								i(139194), -- Feet
 							},
+							["classes"] = { 5 },
 						}),
-						gs(987, { --n(-4076, { -- Regalia of Everburning Knowledge
+						gs(987, { -- Regalia of Everburning Knowledge
 							["groups"] = {
 								i(138312), -- Head
 								i(138321), -- Shoulder
@@ -2920,8 +3234,9 @@ Notation of what is missing from Blizzard's localization
 								i(138315), -- Legs
 								i(139195), -- Feet
 							},
+							["classes"] = { 8 },
 						}),
-						gs(316, { --n(-4077, { -- Legacy of Azj'Aqir
+						gs(316, { -- Legacy of Azj'Aqir
 							["groups"] = {
 								i(138314), -- Head
 								i(138323), -- Shoulder
@@ -2933,8 +3248,9 @@ Notation of what is missing from Blizzard's localization
 								i(138317), -- Legs
 								i(140914), -- Feet
 							},
+							["classes"] = { 9 },
 						}),
-						gs(995, { --n(-4078, { -- Garb of the Astral Warden
+						gs(995, { -- Garb of the Astral Warden
 							["groups"] = {
 								i(138330), -- Head
 								i(138336), -- Shoulder
@@ -2946,8 +3262,9 @@ Notation of what is missing from Blizzard's localization
 								i(138333), -- Legs
 								i(140861), -- Feet
 							},
+							["classes"] = { 11 },
 						}),
-						gs(943, { --n(-4079, { -- Doomblade Battlegear
+						gs(943, { -- Doomblade Battlegear
 							["groups"] = {
 								i(138332), -- Head
 								i(138338), -- Shoulder
@@ -2959,8 +3276,9 @@ Notation of what is missing from Blizzard's localization
 								i(138335), -- Legs
 								i(139199), -- Feet
 							},
+							["classes"] = { 4 },
 						}),
-						gs(983, { --n(-4080, { -- Vestments of Enveloped Dissonance
+						gs(983, { -- Vestments of Enveloped Dissonance
 							["groups"] = {
 								i(138331), -- Head
 								i(138337), -- Shoulder
@@ -2972,8 +3290,9 @@ Notation of what is missing from Blizzard's localization
 								i(138334), -- Legs
 								i(140860), -- Feet
 							},
+							["classes"] = { 10 },
 						}),
-						gs(999, { --n(-4081, { -- Vestment of Second Sight
+						gs(999, { -- Vestment of Second Sight
 							["groups"] = {
 								i(138378), -- Head
 								i(138380), -- Shoulder
@@ -2985,8 +3304,9 @@ Notation of what is missing from Blizzard's localization
 								i(138379), -- Legs
 								i(139200), -- Feet
 							},
+							["classes"] = { 12 },
 						}),
-						gs(991, { --n(-4082, { -- Eagletalon Battlegear
+						gs(991, { -- Eagletalon Battlegear
 							["groups"] = {
 								i(138342), -- Head
 								i(138347), -- Shoulder
@@ -2998,8 +3318,9 @@ Notation of what is missing from Blizzard's localization
 								i(138344), -- Legs
 								i(141432), -- Feet
 							},
+							["classes"] = { 3 },
 						}),
-						gs(934, { --n(-4083, { -- Regalia of Bound Elements
+						gs(934, { -- Regalia of Bound Elements
 							["groups"] = {
 								i(138343), -- Head
 								i(138348), -- Shoulder
@@ -3011,8 +3332,9 @@ Notation of what is missing from Blizzard's localization
 								i(138345), -- Legs
 								i(139219), -- Feet
 							},
+							["classes"] = { 7 },
 						}),
-						gs(979, { --n(-4084, { -- Battleplate of the Highlord
+						gs(979, { -- Battleplate of the Highlord
 							["groups"] = {
 								i(138356), -- Head
 								i(138362), -- Shoulder
@@ -3024,8 +3346,9 @@ Notation of what is missing from Blizzard's localization
 								i(138359), -- Legs
 								i(140904), -- Feet
 							},
+							["classes"] = { 2 },
 						}),
-						gs(938, { --n(-4085, { -- Warplate of the Obsidian Aspect
+						gs(938, { -- Warplate of the Obsidian Aspect
 							["groups"] = {
 								i(138357), -- Head
 								i(138363), -- Shoulder
@@ -3037,8 +3360,9 @@ Notation of what is missing from Blizzard's localization
 								i(138360), -- Legs
 								i(139234), -- Feet
 							},
+							["classes"] = { 1 },
 						}),
-						gs(1003, { --n(-4086, { -- Dreadwyrm Battleplate
+						gs(1003, { -- Dreadwyrm Battleplate
 							["groups"] = {
 								i(138355), -- Head
 								i(138361), -- Shoulder
@@ -3050,13 +3374,14 @@ Notation of what is missing from Blizzard's localization
 								i(138358), -- Legs
 								i(140891), -- Feet
 							},
+							["classes"] = { 6 },
 						}),
 					},
 				}),
 				d(16, {  -- Mythic
 					["ids"] = { 1806 }, -- Mythic
 					["groups"] =  {
-						gs(311, { --n(-4075, { -- Vestments of the Purifier
+						gs(311, { -- Vestments of the Purifier
 							["groups"] = {
 								i(138313), -- Head
 								i(138322), -- Shoulder
@@ -3068,8 +3393,9 @@ Notation of what is missing from Blizzard's localization
 								i(138316), -- Legs
 								i(139194), -- Feet
 							},
+							["classes"] = { 5 },
 						}),
-						gs(988, { --n(-4076, { -- Regalia of Everburning Knowledge
+						gs(988, { -- Regalia of Everburning Knowledge
 							["groups"] = {
 								i(138312), -- Head
 								i(138321), -- Shoulder
@@ -3081,8 +3407,9 @@ Notation of what is missing from Blizzard's localization
 								i(138315), -- Legs
 								i(139195), -- Feet
 							},
+							["classes"] = { 8 },
 						}),
-						gs(321, { --n(-4077, { -- Legacy of Azj'Aqir
+						gs(321, { -- Legacy of Azj'Aqir
 							["groups"] = {
 								i(138314), -- Head
 								i(138323), -- Shoulder
@@ -3094,8 +3421,9 @@ Notation of what is missing from Blizzard's localization
 								i(138317), -- Legs
 								i(140914), -- Feet
 							},
+							["classes"] = { 9 },
 						}),
-						gs(996, { --n(-4078, { -- Garb of the Astral Warden
+						gs(996, { -- Garb of the Astral Warden
 							["groups"] = {
 								i(138330), -- Head
 								i(138336), -- Shoulder
@@ -3107,8 +3435,9 @@ Notation of what is missing from Blizzard's localization
 								i(138333), -- Legs
 								i(140861), -- Feet
 							},
+							["classes"] = { 11 },
 						}),
-						gs(944, { --n(-4079, { -- Doomblade Battlegear
+						gs(944, { -- Doomblade Battlegear
 							["groups"] = {
 								i(138332), -- Head
 								i(138338), -- Shoulder
@@ -3120,8 +3449,9 @@ Notation of what is missing from Blizzard's localization
 								i(138335), -- Legs
 								i(139199), -- Feet
 							},
+							["classes"] = { 4 },
 						}),
-						gs(984, { --n(-4080, { -- Vestments of Enveloped Dissonance
+						gs(984, { -- Vestments of Enveloped Dissonance
 							["groups"] = {
 								i(138331), -- Head
 								i(138337), -- Shoulder
@@ -3133,8 +3463,9 @@ Notation of what is missing from Blizzard's localization
 								i(138334), -- Legs
 								i(140860), -- Feet
 							},
+							["classes"] = { 10 },
 						}),
-						gs(988, { --n(-4081, { -- Vestment of Second Sight
+						gs(988, { -- Vestment of Second Sight
 							["groups"] = {
 								i(138378), -- Head
 								i(138380), -- Shoulder
@@ -3146,8 +3477,9 @@ Notation of what is missing from Blizzard's localization
 								i(138379), -- Legs
 								i(139200), -- Feet
 							},
+							["classes"] = { 12 },
 						}),
-						gs(992, { --n(-4082, { -- Eagletalon Battlegear
+						gs(992, { -- Eagletalon Battlegear
 							["groups"] = {
 								i(138342), -- Head
 								i(138347), -- Shoulder
@@ -3159,8 +3491,9 @@ Notation of what is missing from Blizzard's localization
 								i(138344), -- Legs
 								i(141432), -- Feet
 							},
+							["classes"] = { 3 },
 						}),
-						gs(935, { --n(-4083, { -- Regalia of Bound Elements
+						gs(935, { -- Regalia of Bound Elements
 							["groups"] = {
 								i(138343), -- Head
 								i(138348), -- Shoulder
@@ -3172,8 +3505,9 @@ Notation of what is missing from Blizzard's localization
 								i(138345), -- Legs
 								i(139219), -- Feet
 							},
+							["classes"] = { 7 },
 						}),
-						gs(980, { --n(-4084, { -- Battleplate of the Highlord
+						gs(980, { -- Battleplate of the Highlord
 							["groups"] = {
 								i(138356), -- Head
 								i(138362), -- Shoulder
@@ -3185,8 +3519,9 @@ Notation of what is missing from Blizzard's localization
 								i(138359), -- Legs
 								i(140904), -- Feet
 							},
+							["classes"] = { 2 },
 						}),
-						gs(939, { --n(-4085, { -- Warplate of the Obsidian Aspect
+						gs(939, { -- Warplate of the Obsidian Aspect
 							["groups"] = {
 								i(138357), -- Head
 								i(138363), -- Shoulder
@@ -3198,8 +3533,9 @@ Notation of what is missing from Blizzard's localization
 								i(138360), -- Legs
 								i(139234), -- Feet
 							},
+							["classes"] = { 1 },
 						}),
-						gs(1004, { --n(-4086, { -- Dreadwyrm Battleplate
+						gs(1004, { -- Dreadwyrm Battleplate
 							["groups"] = {
 								i(138355), -- Head
 								i(138361), -- Shoulder
@@ -3211,6 +3547,7 @@ Notation of what is missing from Blizzard's localization
 								i(138358), -- Legs
 								i(140891), -- Feet
 							},
+							["classes"] = { 6 },
 						}),
 				},
 			}),
@@ -3222,7 +3559,7 @@ Notation of what is missing from Blizzard's localization
 				d(17, {  -- Raid Finder
 					["ids"] = { 3379 }, -- LFR
 					["groups"] = {
-						gs(1342, { -- n(-4087, { -- Vestments of Blind Absolution
+						gs(1342, { -- Vestments of Blind Absolution
 							["groups"] = {
 								i(147165), -- Head
 								i(147168), -- Shoulder
@@ -3233,8 +3570,9 @@ Notation of what is missing from Blizzard's localization
 								i(147166), -- Legs
 								i(146987), -- Feet
 							},
+							["classes"] = { 5 },
 						}),
-						gs(1323, { -- n(-4088, { -- Regalia of the Arcane Tempest
+						gs(1323, { -- Regalia of the Arcane Tempest
 							["groups"] = {
 								i(147147), -- Head
 								i(147150), -- Shoulder
@@ -3245,8 +3583,9 @@ Notation of what is missing from Blizzard's localization
 								i(147148), -- Legs
 								i(147422), -- Feet
 							},
+							["classes"] = { 8 },
 						}),
-						gs(1300, { -- n(-4089, { -- Diabolic Raiment
+						gs(1300, { -- Diabolic Raiment
 							["groups"] = {
 								i(147183), -- Head
 								i(147186), -- Shoulder
@@ -3257,8 +3596,9 @@ Notation of what is missing from Blizzard's localization
 								i(147184), -- Legs
 								i(146986), -- Feet
 							},
+							["classes"] = { 9 },
 						}),
-						gs(1331, { -- n(-4090, { -- Stormheart Raiment
+						gs(1331, { -- Stormheart Raiment
 							["groups"] = {
 								i(147136), -- Head
 								i(147138), -- Shoulder
@@ -3269,8 +3609,9 @@ Notation of what is missing from Blizzard's localization
 								i(147137), -- Legs
 								i(147738), -- Feet
 							},
+							["classes"] = { 11 },
 						}),
-						gs(1306, { -- n(-4091, { -- Fanged Slayer's Armor
+						gs(1306, { -- Fanged Slayer's Armor
 							["groups"] = {
 								i(147172), -- Head
 								i(147174), -- Shoulder
@@ -3281,8 +3622,9 @@ Notation of what is missing from Blizzard's localization
 								i(147173), -- Legs
 								i(147030), -- Feet
 							},
+							["classes"] = { 4 },
 						}),
-						gs(1319, { -- n(-4092, { -- Xuen's Battlegear
+						gs(1319, { -- Xuen's Battlegear
 							["groups"] = {
 								i(147154), -- Head
 								i(147156), -- Shoulder
@@ -3293,8 +3635,9 @@ Notation of what is missing from Blizzard's localization
 								i(147155), -- Legs
 								i(147424), -- Feet
 							},
+							["classes"] = { 10 },
 						}),
-						gs(1335, { -- n(-4093, { -- Demonbane Armor
+						gs(1335, { -- Demonbane Armor
 							["groups"] = {
 								i(147130), -- Head
 								i(147132), -- Shoulder
@@ -3305,8 +3648,9 @@ Notation of what is missing from Blizzard's localization
 								i(147131), -- Legs
 								i(147029), -- Feet
 							},
+							["classes"] = { 12 },
 						}),
-						gs(1327, { -- n(-4094, { -- Wildstalker Armor
+						gs(1327, { -- Wildstalker Armor
 							["groups"] = {
 								i(147142), -- Head
 								i(147144), -- Shoulder
@@ -3317,8 +3661,9 @@ Notation of what is missing from Blizzard's localization
 								i(147143), -- Legs
 								i(147046), -- Feet
 							},
+							["classes"] = { 3 },
 						}),
-						gs(1302, { -- n(-4095, { -- Regalia of the Skybreaker
+						gs(1302, { -- Regalia of the Skybreaker
 							["groups"] = {
 								i(147178), -- Head
 								i(147180), -- Shoulder
@@ -3329,8 +3674,9 @@ Notation of what is missing from Blizzard's localization
 								i(147179), -- Legs
 								i(147045), -- Feet
 							},
+							["classes"] = { 7 },
 						}),
-						gs(1315, { -- n(-4096, { -- Radiant Lightbringer Armor
+						gs(1315, { -- Radiant Lightbringer Armor
 							["groups"] = {
 								i(147160), -- Head
 								i(147162), -- Shoulder
@@ -3341,8 +3687,9 @@ Notation of what is missing from Blizzard's localization
 								i(147161), -- Legs
 								i(147060), -- Feet
 							},
+							["classes"] = { 2 },
 						}),
-						gs(1296, { -- n(-4097, { -- Titantic Onslaught Armor
+						gs(1296, { -- Titantic Onslaught Armor
 							["groups"] = {
 								i(147190), -- Head
 								i(147192), -- Shoulder
@@ -3353,8 +3700,9 @@ Notation of what is missing from Blizzard's localization
 								i(147191), -- Legs
 								i(147059), -- Feet
 							},
+							["classes"] = { 1 },
 						}),
-						gs(1339, { -- n(-4098, { -- Gravewarden Armaments
+						gs(1339, { -- Gravewarden Armaments
 							["groups"] = {
 								i(147124), -- Head
 								i(147126), -- Shoulder
@@ -3365,13 +3713,14 @@ Notation of what is missing from Blizzard's localization
 								i(147125), -- Legs
 								i(147428), -- Feet
 							},
+							["classes"] = { 6 },
 						}),
 					},
 				}),
 				d(14, {  -- Normal
 					["ids"] = { 1807 }, -- Normal
 					["groups"] =  {
-						gs(1309, { -- n(-4087, { -- Vestments of Blind Absolution
+						gs(1309, { -- Vestments of Blind Absolution
 							["groups"] = {
 								i(147165), -- Head
 								i(147168), -- Shoulder
@@ -3382,8 +3731,9 @@ Notation of what is missing from Blizzard's localization
 								i(147166), -- Legs
 								i(146987), -- Feet
 							},
+							["classes"] = { 5 },
 						}),
-						gs(1321, { -- n(-4088, { -- Regalia of the Arcane Tempest
+						gs(1321, { -- Regalia of the Arcane Tempest
 							["groups"] = {
 								i(147147), -- Head
 								i(147150), -- Shoulder
@@ -3394,8 +3744,9 @@ Notation of what is missing from Blizzard's localization
 								i(147148), -- Legs
 								i(147422), -- Feet
 							},
+							["classes"] = { 8 },
 						}),
-						gs(1297, { -- n(-4089, { -- Diabolic Raiment
+						gs(1297, { -- Diabolic Raiment
 							["groups"] = {
 								i(147183), -- Head
 								i(147186), -- Shoulder
@@ -3406,8 +3757,9 @@ Notation of what is missing from Blizzard's localization
 								i(147184), -- Legs
 								i(146986), -- Feet
 							},
+							["classes"] = { 9 },
 						}),
-						gs(1329, { -- n(-4090, { -- Stormheart Raiment
+						gs(1329, { -- Stormheart Raiment
 							["groups"] = {
 								i(147136), -- Head
 								i(147138), -- Shoulder
@@ -3418,8 +3770,9 @@ Notation of what is missing from Blizzard's localization
 								i(147137), -- Legs
 								i(147738), -- Feet
 							},
+							["classes"] = { 11 },
 						}),
-						gs(1305, { -- n(-4091, { -- Fanged Slayer's Armor
+						gs(1305, { -- Fanged Slayer's Armor
 							["groups"] = {
 								i(147172), -- Head
 								i(147174), -- Shoulder
@@ -3430,8 +3783,9 @@ Notation of what is missing from Blizzard's localization
 								i(147173), -- Legs
 								i(147030), -- Feet
 							},
+							["classes"] = { 4 },
 						}),
-						gs(1317, { -- n(-4092, { -- Xuen's Battlegear
+						gs(1317, { -- Xuen's Battlegear
 							["groups"] = {
 								i(147154), -- Head
 								i(147156), -- Shoulder
@@ -3442,8 +3796,9 @@ Notation of what is missing from Blizzard's localization
 								i(147155), -- Legs
 								i(147424), -- Feet
 							},
+							["classes"] = { 10 },
 						}),
-						gs(1333, { -- n(-4093, { -- Demonbane Armor
+						gs(1333, { -- Demonbane Armor
 							["groups"] = {
 								i(147130), -- Head
 								i(147132), -- Shoulder
@@ -3454,8 +3809,9 @@ Notation of what is missing from Blizzard's localization
 								i(147131), -- Legs
 								i(147029), -- Feet
 							},
+							["classes"] = { 12 },
 						}),
-						gs(1325, { -- n(-4094, { -- Wildstalker Armor
+						gs(1325, { -- Wildstalker Armor
 							["groups"] = {
 								i(147142), -- Head
 								i(147144), -- Shoulder
@@ -3466,8 +3822,9 @@ Notation of what is missing from Blizzard's localization
 								i(147143), -- Legs
 								i(147046), -- Feet
 							},
+							["classes"] = { 3 },
 						}),
-						gs(1301, { -- n(-4095, { -- Regalia of the Skybreaker
+						gs(1301, { -- Regalia of the Skybreaker
 							["groups"] = {
 								i(147178), -- Head
 								i(147180), -- Shoulder
@@ -3478,8 +3835,9 @@ Notation of what is missing from Blizzard's localization
 								i(147179), -- Legs
 								i(147045), -- Feet
 							},
+							["classes"] = { 7 },
 						}),
-						gs(1313, { -- n(-4096, { -- Radiant Lightbringer Armor
+						gs(1313, { -- Radiant Lightbringer Armor
 							["groups"] = {
 								i(147160), -- Head
 								i(147162), -- Shoulder
@@ -3490,8 +3848,9 @@ Notation of what is missing from Blizzard's localization
 								i(147161), -- Legs
 								i(147060), -- Feet
 							},
+							["classes"] = { 2 },
 						}),
-						gs(1293, { -- n(-4097, { -- Titantic Onslaught Armor
+						gs(1293, { -- Titantic Onslaught Armor
 							["groups"] = {
 								i(147190), -- Head
 								i(147192), -- Shoulder
@@ -3502,8 +3861,9 @@ Notation of what is missing from Blizzard's localization
 								i(147191), -- Legs
 								i(147059), -- Feet
 							},
+							["classes"] = { 1 },
 						}),
-						gs(1337, { -- n(-4098, { -- Gravewarden Armaments
+						gs(1337, { -- Gravewarden Armaments
 							["groups"] = {
 								i(147124), -- Head
 								i(147126), -- Shoulder
@@ -3514,13 +3874,14 @@ Notation of what is missing from Blizzard's localization
 								i(147125), -- Legs
 								i(147428), -- Feet
 							},
+							["classes"] = { 6 },
 						}),
 					},
 				}),
 				d(15, {  -- Heroic
 					["ids"] = { 1805 }, -- Heroic
 					["groups"] =  {
-						gs(1312, { -- n(-4087, { -- Vestments of Blind Absolution
+						gs(1312, { -- Vestments of Blind Absolution
 							["groups"] = {
 								i(147165), -- Head
 								i(147168), -- Shoulder
@@ -3531,8 +3892,9 @@ Notation of what is missing from Blizzard's localization
 								i(147166), -- Legs
 								i(146987), -- Feet
 							},
+							["classes"] = { 5 },
 						}),
-						gs(1324, { -- n(-4088, { -- Regalia of the Arcane Tempest
+						gs(1324, { -- Regalia of the Arcane Tempest
 							["groups"] = {
 								i(147147), -- Head
 								i(147150), -- Shoulder
@@ -3543,8 +3905,9 @@ Notation of what is missing from Blizzard's localization
 								i(147148), -- Legs
 								i(147422), -- Feet
 							},
+							["classes"] = { 8 },
 						}),
-						gs(1298, { -- n(-4089, { -- Diabolic Raiment
+						gs(1298, { -- Diabolic Raiment
 							["groups"] = {
 								i(147183), -- Head
 								i(147186), -- Shoulder
@@ -3555,8 +3918,9 @@ Notation of what is missing from Blizzard's localization
 								i(147184), -- Legs
 								i(146986), -- Feet
 							},
+							["classes"] = { 9 },
 						}),
-						gs(1332, { -- n(-4090, { -- Stormheart Raiment
+						gs(1332, { -- Stormheart Raiment
 							["groups"] = {
 								i(147136), -- Head
 								i(147138), -- Shoulder
@@ -3567,8 +3931,9 @@ Notation of what is missing from Blizzard's localization
 								i(147137), -- Legs
 								i(147738), -- Feet
 							},
+							["classes"] = { 11 },
 						}),
-						gs(1307, { -- n(-4091, { -- Fanged Slayer's Armor
+						gs(1307, { -- Fanged Slayer's Armor
 							["groups"] = {
 								i(147172), -- Head
 								i(147174), -- Shoulder
@@ -3579,8 +3944,9 @@ Notation of what is missing from Blizzard's localization
 								i(147173), -- Legs
 								i(147030), -- Feet
 							},
+							["classes"] = { 4 },
 						}),
-						gs(1320, { -- n(-4092, { -- Xuen's Battlegear
+						gs(1320, { -- Xuen's Battlegear
 							["groups"] = {
 								i(147154), -- Head
 								i(147156), -- Shoulder
@@ -3591,8 +3957,9 @@ Notation of what is missing from Blizzard's localization
 								i(147155), -- Legs
 								i(147424), -- Feet
 							},
+							["classes"] = { 10 },
 						}),
-						gs(1336, { -- n(-4093, { -- Demonbane Armor
+						gs(1336, { -- Demonbane Armor
 							["groups"] = {
 								i(147130), -- Head
 								i(147132), -- Shoulder
@@ -3603,8 +3970,9 @@ Notation of what is missing from Blizzard's localization
 								i(147131), -- Legs
 								i(147029), -- Feet
 							},
+							["classes"] = { 12 },
 						}),
-						gs(1328, { -- n(-4094, { -- Wildstalker Armor
+						gs(1328, { -- Wildstalker Armor
 							["groups"] = {
 								i(147142), -- Head
 								i(147144), -- Shoulder
@@ -3615,8 +3983,9 @@ Notation of what is missing from Blizzard's localization
 								i(147143), -- Legs
 								i(147046), -- Feet
 							},
+							["classes"] = { 3 },
 						}),
-						gs(1303, { -- n(-4095, { -- Regalia of the Skybreaker
+						gs(1303, { -- Regalia of the Skybreaker
 							["groups"] = {
 								i(147178), -- Head
 								i(147180), -- Shoulder
@@ -3627,8 +3996,9 @@ Notation of what is missing from Blizzard's localization
 								i(147179), -- Legs
 								i(147045), -- Feet
 							},
+							["classes"] = { 7 },
 						}),
-						gs(1316, { -- n(-4096, { -- Radiant Lightbringer Armor
+						gs(1316, { -- Radiant Lightbringer Armor
 							["groups"] = {
 								i(147160), -- Head
 								i(147162), -- Shoulder
@@ -3639,8 +4009,9 @@ Notation of what is missing from Blizzard's localization
 								i(147161), -- Legs
 								i(147060), -- Feet
 							},
+							["classes"] = { 2 },
 						}),
-						gs(1294, { -- n(-4097, { -- Titantic Onslaught Armor
+						gs(1294, { -- Titantic Onslaught Armor
 							["groups"] = {
 								i(147190), -- Head
 								i(147192), -- Shoulder
@@ -3651,8 +4022,9 @@ Notation of what is missing from Blizzard's localization
 								i(147191), -- Legs
 								i(147059), -- Feet
 							},
+							["classes"] = { 1 },
 						}),
-						gs(1340, { -- n(-4098, { -- Gravewarden Armaments
+						gs(1340, { -- Gravewarden Armaments
 							["groups"] = {
 								i(147124), -- Head
 								i(147126), -- Shoulder
@@ -3663,13 +4035,14 @@ Notation of what is missing from Blizzard's localization
 								i(147125), -- Legs
 								i(147428), -- Feet
 							},
+							["classes"] = { 6 },
 						}),
 					},
 				}),
 				d(16, {  -- Mythic
 					["ids"] = { 1806 }, -- Mythic
 					["groups"] =  {
-						gs(1310, { -- n(-4087, { -- Vestments of Blind Absolution
+						gs(1310, { -- Vestments of Blind Absolution
 							["groups"] = {
 								i(147165), -- Head
 								i(147168), -- Shoulder
@@ -3680,8 +4053,9 @@ Notation of what is missing from Blizzard's localization
 								i(147166), -- Legs
 								i(146987), -- Feet
 							},
+							["classes"] = { 5 },
 						}),
-						gs(1322, { -- n(-4088, { -- Regalia of the Arcane Tempest
+						gs(1322, { -- Regalia of the Arcane Tempest
 							["groups"] = {
 								i(147147), -- Head
 								i(147150), -- Shoulder
@@ -3692,8 +4066,9 @@ Notation of what is missing from Blizzard's localization
 								i(147148), -- Legs
 								i(147422), -- Feet
 							},
+							["classes"] = { 8 },
 						}),
-						gs(1299, { -- n(-4089, { -- Diabolic Raiment
+						gs(1299, { -- Diabolic Raiment
 							["groups"] = {
 								i(147183), -- Head
 								i(147186), -- Shoulder
@@ -3704,8 +4079,9 @@ Notation of what is missing from Blizzard's localization
 								i(147184), -- Legs
 								i(146986), -- Feet
 							},
+							["classes"] = { 9 },
 						}),
-						gs(1330, { -- n(-4090, { -- Stormheart Raiment
+						gs(1330, { -- Stormheart Raiment
 							["groups"] = {
 								i(147136), -- Head
 								i(147138), -- Shoulder
@@ -3716,8 +4092,9 @@ Notation of what is missing from Blizzard's localization
 								i(147137), -- Legs
 								i(147738), -- Feet
 							},
+							["classes"] = { 11 },
 						}),
-						gs(1308, { -- n(-4091, { -- Fanged Slayer's Armor
+						gs(1308, { -- Fanged Slayer's Armor
 							["groups"] = {
 								i(147172), -- Head
 								i(147174), -- Shoulder
@@ -3728,8 +4105,9 @@ Notation of what is missing from Blizzard's localization
 								i(147173), -- Legs
 								i(147030), -- Feet
 							},
+							["classes"] = { 4 },
 						}),
-						gs(1318, { -- n(-4092, { -- Xuen's Battlegear
+						gs(1318, { -- Xuen's Battlegear
 							["groups"] = {
 								i(147154), -- Head
 								i(147156), -- Shoulder
@@ -3740,8 +4118,9 @@ Notation of what is missing from Blizzard's localization
 								i(147155), -- Legs
 								i(147424), -- Feet
 							},
+							["classes"] = { 10 },
 						}),
-						gs(1334, { -- n(-4093, { -- Demonbane Armor
+						gs(1334, { -- Demonbane Armor
 							["groups"] = {
 								i(147130), -- Head
 								i(147132), -- Shoulder
@@ -3752,8 +4131,9 @@ Notation of what is missing from Blizzard's localization
 								i(147131), -- Legs
 								i(147029), -- Feet
 							},
+							["classes"] = { 12 },
 						}),
-						gs(1326, { -- n(-4094, { -- Wildstalker Armor
+						gs(1326, { -- Wildstalker Armor
 							["groups"] = {
 								i(147142), -- Head
 								i(147144), -- Shoulder
@@ -3764,8 +4144,9 @@ Notation of what is missing from Blizzard's localization
 								i(147143), -- Legs
 								i(147046), -- Feet
 							},
+							["classes"] = { 3 },
 						}),
-						gs(1304, { -- n(-4095, { -- Regalia of the Skybreaker
+						gs(1304, { -- Regalia of the Skybreaker
 							["groups"] = {
 								i(147178), -- Head
 								i(147180), -- Shoulder
@@ -3776,8 +4157,9 @@ Notation of what is missing from Blizzard's localization
 								i(147179), -- Legs
 								i(147045), -- Feet
 							},
+							["classes"] = { 7 },
 						}),
-						gs(1314, { -- n(-4096, { -- Radiant Lightbringer Armor
+						gs(1314, { -- Radiant Lightbringer Armor
 							["groups"] = {
 								i(147160), -- Head
 								i(147162), -- Shoulder
@@ -3788,8 +4170,9 @@ Notation of what is missing from Blizzard's localization
 								i(147161), -- Legs
 								i(147060), -- Feet
 							},
+							["classes"] = { 2 },
 						}),
-						gs(1295, { -- n(-4097, { -- Titantic Onslaught Armor
+						gs(1295, { -- Titantic Onslaught Armor
 							["groups"] = {
 								i(147190), -- Head
 								i(147192), -- Shoulder
@@ -3800,8 +4183,9 @@ Notation of what is missing from Blizzard's localization
 								i(147191), -- Legs
 								i(147059), -- Feet
 							},
+							["classes"] = { 1 },
 						}),
-						gs(1338, { -- n(-4098, { -- Gravewarden Armaments
+						gs(1338, { -- Gravewarden Armaments
 							["groups"] = {
 								i(147124), -- Head
 								i(147126), -- Shoulder
@@ -3812,6 +4196,7 @@ Notation of what is missing from Blizzard's localization
 								i(147125), -- Legs
 								i(147428), -- Feet
 							},
+							["classes"] = { 6 },
 						}),
 					},
 				}),
