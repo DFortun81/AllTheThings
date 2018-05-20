@@ -742,6 +742,12 @@ profession(171, { -- Alchemy
 		tier(7, {	-- Legion
 			-- Legion - TODO: Add the recipes and ways to collect these items
 			-- https://www.wowhead.com/legion-alchemy-guide
+			-- https://www.wowhead.com/item=137594/pile-of-gems#comments
+			-- https://www.wowhead.com/item=137593/pile-of-herbs#contains
+			-- https://www.wowhead.com/item=137600/pile-of-pants
+			-- https://www.wowhead.com/item=137590/pile-of-silk
+			-- https://www.wowhead.com/item=137591/pile-of-skins
+			-- https://www.wowhead.com/item=137599/pulsating-sac
 			recipe(247694),	-- Astral Alchemist Stone [Rank 1]
 			recipe(247695),	-- Astral Alchemist Stone [Rank 2]
 			recipe(247696),	-- Astral Alchemist Stone [Rank 3]
