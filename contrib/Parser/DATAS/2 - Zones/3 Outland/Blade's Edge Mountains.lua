@@ -891,7 +891,7 @@ _.Zones =
 								})),
 							}),
 						},
-						["description"] = "These crystals can be found in the Forge Camps on the west side of the zone (one example is at 35.6, 38.6).  Using 35 Apexis Shards on one will summon one of these four mobs at random.",
+						["description"] = "These crystals can be found in the Forge Camps on the west side of the zone (one example is at 35.7, 36.6).  Using 35 Apexis Shards on one will summon one of these four mobs at random.",
 					}),
 					n( 22291, {	-- Furnace Guard
 						dr(.01, i(32676, {	-- Depleted Cloth Bracers
@@ -1009,12 +1009,12 @@ _.Zones =
 						},
 						["description"] = "Use 35 Apexis Shards on Obsidia's Egg at 34.0, 54.7 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
 					}),
-					n(24917, {	-- Phase Wyrm
+					n( 24917, {	-- Phase Wyrm
 						dr(.01, i(32674, {	-- Depleted Sword
 							i(32660),	-- Crystal Forged Sword
 						})),
 					}),
-					n(23061, {	-- Rivendark
+					n( 23061, {	-- Rivendark
 						["groups"] = {
 							dr(1.6, i(32677, {	-- Depleted Cloak
 								i(32665),	-- Crystalweave Cape
@@ -1046,7 +1046,7 @@ _.Zones =
 						},
 						["description"] = "Use 35 Apexis Shards on Rivendark's Egg at 27.2, 64.9 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
 					}),
-					n(22180, {	-- Shard-Hide Boar
+					n( 22180, {	-- Shard-Hide Boar
 						dr(.02, i(32676, {	-- Depleted Cloth Bracers
 							i(32655),	-- Crystalweave Bracers
 						})),
@@ -1066,7 +1066,7 @@ _.Zones =
 							i(32660),	-- Crystal Forged Sword
 						})),
 					}),
-					n(23333, {	-- The Grand Collector
+					n( 23333, {	-- The Grand Collector
 						["g"] = {
 							dr(4.0, i(32676, {	-- Depleted Cloth Bracers
 								i(32655),	-- Crystalweave Bracers
@@ -1086,7 +1086,7 @@ _.Zones =
 						},
 						["description"] = "Once every two hours, there is an event at Bash'ir Landing to defend the NPCs at Bash'ir Crystalforge (54.4, 10.8).  The Grand Collector is the final mob to spawn in this event.",
 					}),
-					n(20557, {	-- Wrath Hound
+					n( 20557, {	-- Wrath Hound
 						dr(.01, i(32679, {	-- Depleted Staff
 							i(32662),	-- Flaming Quartz Staff
 						})),
@@ -1094,7 +1094,7 @@ _.Zones =
 							i(32663),	-- Apexis Cleaver
 						})),
 					}),
-					n(22195, {	-- Wrath Speaker
+					n( 22195, {	-- Wrath Speaker
 						dr(.03, i(32671, {	-- Depleted Mace
 							i(32661),	-- Apexis Crystal Mace
 						})),
