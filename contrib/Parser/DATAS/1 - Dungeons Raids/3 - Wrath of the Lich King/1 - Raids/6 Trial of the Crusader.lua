@@ -78,7 +78,7 @@ _.Instances =
 								i(47879),	-- Fetish of Volatile Power
 								i(47881),	-- Vengeance of the Forsaken
 							},
-							["races"] = HORDE_ONLY
+							["races"] = HORDE_ONLY,
 						})),
 						cr(34458, e(1621, {	-- Champions of the Horde (34451,34459,34448,34449,34445,34456,34447,34441,34454,34455,34444,34450,34453)
 							["groups"] = {
@@ -93,7 +93,7 @@ _.Instances =
 								i(47726),	-- Talisman of Volatile Power
 								i(47725),	-- Victor's Call
 							},
-							["races"] = ALLIANCE_ONLY
+							["races"] = ALLIANCE_ONLY,
 						})),
 						cr(34497, e(1622, {	-- Twin Val'kyr (34496-Eydis)
 							h(i(47884)),	-- Edge of Agony
@@ -164,33 +164,43 @@ _.Instances =
 						})),
 					}),
 					d(5, {	-- 10-Player Heroic
-						n(-1, {	-- Shared Boss Loot 
-							a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
-							h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
-							a(i(47629)),	-- Pattern: Black Chitin Bracers
-							h(i(47646)),	-- Pattern: Black Chitin Bracers
-							a(i(47635)),	-- Pattern: Bracers of Swift Death
-							h(i(47647)),	-- Pattern: Bracers of Swift Death
-							a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
-							h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
-							a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
-							h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
-							a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
-							h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
-							a(i(47634)),	-- Pattern: Knightbane Carapace
-							h(i(47651)),	-- Pattern: Knightbane Carapace
-							a(i(47632)),	-- Pattern: Lunar Eclipse Robes
-							h(i(47652)),	-- Pattern: Lunar Eclipse Robes
-							a(i(47655)),	-- Pattern: Merlin's Robe
-							h(i(47638)),	-- Pattern: Merlin's Robe
-							a(i(47633)),	-- Pattern: Moonshadow Armguards
-							h(i(47653)),	-- Pattern: Moonshadow Armguards
-							a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
-							h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
-							a(i(47657)),	-- Pattern: Royal Moonshroud Robe
-							h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						}),
 						cr(34797, e(1618, {	-- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
+							a(dr(0.8, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(0.5, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(2, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(2, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(0.4, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(1.2, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(0.5, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(1.7, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(0.7, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(0.8, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(0.8, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(3, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(0.9, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(1.1, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(0.8, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(0.9, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(0.6, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(2, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(2, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(1.6, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(0.7, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(0.7, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(0.7, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(1.6, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(1.4, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(1.7, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(0.6, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(1.2, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(0.5, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(1.2, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(0.6, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(1.3, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(0.4, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(0.6, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(1.2, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(0.6, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							  i(142083),	-- Giant Worm Egg (PET!)
 							  i(142084),	-- Magnataur Hunting Horn (PET!)
@@ -220,6 +230,42 @@ _.Instances =
 							h(i(47993)),	-- Gormok's Band
 						})),
 						cr(34780, e(1619, {	-- Lord Jaraxxus
+							a(dr(0.6, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(0.6, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(2, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(4, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(0.8, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(6, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(1.1, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(1.6, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(0.7, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(1, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(0.8, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(1.3, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(1, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(9, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(1.1, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(0.5, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(0.6, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(0.7, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(1, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(1.9, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(1.1, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(4, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(2, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(1.4, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(0.9, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(0.9, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(0.9, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(1, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(3, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(2, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(0.6, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(1.4, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(0.7, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(0.7, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(1.7, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(0.9, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							a(i(47938)),	-- Dirk of the Night Watch
 							h(i(48010)),	-- Orcish Deathblade
@@ -250,6 +296,24 @@ _.Instances =
 						})),
 						cr(34461, e(1620, {	-- Champions of the Alliance (34460,34469,34467,34468,34465,34471,34466,34473,34472,34463,34470,34474,34475)
 							["groups"] = {
+								h(dr(0.6, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+								h(dr(0.7, i(47646))), -- Pattern: Black Chitin Bracers
+								h(dr(0.8, i(47647))), -- Pattern: Bracers of Swift Death
+								h(dr(0.8, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+								h(dr(0.8, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+								h(dr(0.6, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+								h(dr(0.5, i(47651))), -- Pattern: Knightbane Carapace
+								h(dr(0.7, i(47652))), -- Pattern: Lunar Eclipse Robes
+								h(dr(0.8, i(47638))), -- Pattern: Merlin's Robe
+								h(dr(0.7, i(47653))), -- Pattern: Moonshadow Armguards
+								h(dr(0.6, i(47637))), -- Pattern: Royal Moonshroud Bracers
+								h(dr(0.6, i(47636))), -- Pattern: Royal Moonshroud Robe
+								h(dr(0.6, i(47640))), -- Plans: Breastplate of the White Knight
+								h(dr(2, i(47641))), -- Plans: Saronite Swordbreakers
+								h(dr(0.5, i(47642))), -- Plans: Sunforged Bracers
+								h(dr(0.8, i(47643))), -- Plans: Sunforged Breastplate
+								h(dr(0.8, i(47644))), -- Plans: Titanium Razorplate
+								h(dr(0.7, i(47645))), -- Plans: Titanium Spikeguards
 								i(47556),	-- Crusader Orb
 								i(48013),	-- Sunreaver Disciple's Blade
 								i(48015),	-- Sunreaver Champion's Faceplate
@@ -266,6 +330,24 @@ _.Instances =
 						})),
 						cr(34458, e(1621, {	-- Champions of the Horde (34451,34459,34448,34449,34445,34456,34447,34441,34454,34455,34444,34450,34453)
 							["groups"] = {
+								a(dr(0.5, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+								a(dr(0.8, i(47629))), -- Pattern: Black Chitin Bracers
+								a(dr(2, i(47635))), -- Pattern: Bracers of Swift Death
+								a(dr(1, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+								a(dr(1.2, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+								a(dr(1.1, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+								a(dr(1.3, i(47634))), -- Pattern: Knightbane Carapace
+								a(dr(2, i(47632))), -- Pattern: Lunar Eclipse Robes
+								a(dr(0.8, i(47655))), -- Pattern: Merlin's Robe
+								a(dr(0.5, i(47633))), -- Pattern: Moonshadow Armguards
+								a(dr(1, i(47656))), -- Pattern: Royal Moonshroud Bracers
+								a(dr(0.9, i(47657))), -- Pattern: Royal Moonshroud Robe
+								a(dr(0.9, i(47622))), -- Plans: Breastplate of the White Knight
+								a(dr(0.9, i(47623))), -- Plans: Saronite Swordbreakers
+								a(dr(0.6, i(47627))), -- Plans: Sunforged Bracers
+								a(dr(3, i(47626))), -- Plans: Sunforged Breastplate
+								a(dr(0.4, i(47624))), -- Plans: Titanium Razorplate
+								a(dr(1.6, i(47625))), -- Plans: Titanium Spikeguards
 								i(47556),	-- Crusader Orb
 								i(47941),	-- Blade of the Silver Disciple
 								i(47943),	-- Faceplate of the Silver Champion
@@ -281,7 +363,37 @@ _.Instances =
 							["races"] = ALLIANCE_ONLY
 						})),
 						cr(34497, e(1622, {	-- Twin Val'kyr (34496-Eydis)
-							  i( 47556),	-- Crusader Orb
+							a(dr(1.7, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(0.8, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(1, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(0.9, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(1.1, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(1, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(1.5, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(1.3, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(2, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(1.1, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(0.5, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(1.9, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(1.3, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(0.8, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(1.5, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(0.6, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(1.3, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(0.6, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(1.1, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(1, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(0.7, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(0.7, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(1.1, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(0.8, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(1.9, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(0.6, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(0.8, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(1.1, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(0.5, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(0.7, i(47642))), -- Plans: Sunforged Bracers
+							i( 47556),	-- Crusader Orb
 							h(i(48023)),	-- Edge of Agony
 							a(i(47960)),	-- Enlightenment
 							h(i(48036)),	-- Illumination
@@ -310,6 +422,42 @@ _.Instances =
 							a(i(47955)),	-- Loop of the Twin Val'kyr
 						})),
 						cr(34564, e(1623, {	-- Anub'arak
+							a(dr(2, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(1, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(0.8, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(0.5, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(0.6, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(3, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(6, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(5, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(0.7, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(2, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(0.7, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(0.4, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(0.5, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(0.4, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(0.9, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(0.8, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(3, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(0.7, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(0.6, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(14, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(1, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(0.4, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(1.2, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(1, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(1.2, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(0.7, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(0.9, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(0.7, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(1.6, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(1.4, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(0.4, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(1.3, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(0.5, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(2, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(1.1, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(0.5, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							  i(142085),	-- Nerubian Relic (PET!)
 							h(i(48056)),	-- Anguish
@@ -350,34 +498,44 @@ _.Instances =
 							h(i(48053)),	-- Sunwalker Legguards
 						})),
 					}),
-					d(4, {	-- 25-Player
-						n(-1, {		-- Shared Boss Loot 
-							a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
-							h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
-							a(i(47629)),	-- Pattern: Black Chitin Bracers
-							h(i(47646)),	-- Pattern: Black Chitin Bracers
-							a(i(47635)),	-- Pattern: Bracers of Swift Death
-							h(i(47647)),	-- Pattern: Bracers of Swift Death
-							a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
-							h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
-							a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
-							h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
-							a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
-							h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
-							a(i(47634)),	-- Pattern: Knightbane Carapace
-							h(i(47651)),	-- Pattern: Knightbane Carapace
-							a(i(47632)),	-- Pattern: Lunar Eclipse Robes
-							h(i(47652)),	-- Pattern: Lunar Eclipse Robes
-							a(i(47655)),	-- Pattern: Merlin's Robe
-							h(i(47638)),	-- Pattern: Merlin's Robe
-							a(i(47633)),	-- Pattern: Moonshadow Armguards
-							h(i(47653)),	-- Pattern: Moonshadow Armguards
-							a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
-							h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
-							a(i(47657)),	-- Pattern: Royal Moonshroud Robe
-							h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						}),			
+					d(4, {	-- 25-Player	
 						cr(34797, e(1618, {	-- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
+							a(dr(2, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(0.2, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(1.1, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(0.4, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(0.7, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(0.5, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(1, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(1, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(0.9, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(0.4, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(5, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(1.2, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(0.9, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(1.7, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(0.5, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(0.5, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(1.2, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(3, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(1, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(0.4, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(0.9, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(0.3, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(0.4, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(0.9, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(0.4, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(1.1, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(0.4, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(0.5, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(1.2, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(16, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(0.6, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(0.7, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(1.4, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(0.5, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(0.6, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(0.6, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							  i(142083),	-- Giant Worm Egg (PET!)
 							  i(142084),	-- Magnataur Hunting Horn (PET!)
@@ -414,6 +572,42 @@ _.Instances =
 							h(i(47252)),	-- Ring of the Violent Temperament
 						})),
 						cr(34780, e(1619, {	-- Lord Jaraxxus
+							a(dr(1, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(0.9, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(3, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(0.9, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(0.8, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(0.7, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(1.3, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(0.5, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(0.8, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(0.5, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(1.3, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(0.8, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(1.9, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(0.8, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(0.6, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(0.7, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(4, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(2, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(1.3, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(0.9, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(1.3, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(2, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(2, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(0.7, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(0.6, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(0.3, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(2, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(0.9, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(1.6, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(1, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(0.8, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(11, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(3, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(2, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(1.9, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(3, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							  i( 47242),	-- Trophy of the Crusade
 							h(i(47266)),	-- Blood Fury
@@ -449,6 +643,24 @@ _.Instances =
 						})),
 						cr(34461, e(1620, {	-- Champions of the Alliance (34460,34469,34467,34468,34465,34471,34466,34473,34472,34463,34470,34474,34475)
 							["groups"] = {
+								h(dr(0.9, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+								h(dr(1.1, i(47646))), -- Pattern: Black Chitin Bracers
+								h(dr(0.7, i(47647))), -- Pattern: Bracers of Swift Death
+								h(dr(0.7, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+								h(dr(0.5, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+								h(dr(12, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+								h(dr(0.5, i(47651))), -- Pattern: Knightbane Carapace
+								h(dr(0.7, i(47652))), -- Pattern: Lunar Eclipse Robes
+								h(dr(0.7, i(47638))), -- Pattern: Merlin's Robe
+								h(dr(0.8, i(47653))), -- Pattern: Moonshadow Armguards
+								h(dr(0.3, i(47637))), -- Pattern: Royal Moonshroud Bracers
+								h(dr(0.7, i(47636))), -- Pattern: Royal Moonshroud Robe
+								h(dr(0.6, i(47640))), -- Plans: Breastplate of the White Knight
+								h(dr(4, i(47641))), -- Plans: Saronite Swordbreakers
+								h(dr(0.9, i(47642))), -- Plans: Sunforged Bracers
+								h(dr(0.6, i(47643))), -- Plans: Sunforged Breastplate
+								h(dr(0.5, i(47644))), -- Plans: Titanium Razorplate
+								h(dr(4, i(47645))), -- Plans: Titanium Spikeguards
 								i(47556),	-- Crusader Orb
 								i(47242),	-- Trophy of the Crusade
 								i(47285),	-- Dual-Blade Butcher
@@ -471,6 +683,24 @@ _.Instances =
 						})),
 						cr(34458, e(1621, {	-- Champions of the Horde (34451,34459,34448,34449,34445,34456,34447,34441,34454,34455,34444,34450,34453)
 							["groups"] = {
+								a(dr(0.5, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+								a(dr(1.8, i(47629))), -- Pattern: Black Chitin Bracers
+								a(dr(3, i(47635))), -- Pattern: Bracers of Swift Death
+								a(dr(0.8, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+								a(dr(0.5, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+								a(dr(1.3, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+								a(dr(4, i(47634))), -- Pattern: Knightbane Carapace
+								a(dr(0.4, i(47632))), -- Pattern: Lunar Eclipse Robes
+								a(dr(1.4, i(47655))), -- Pattern: Merlin's Robe
+								a(dr(1.1, i(47633))), -- Pattern: Moonshadow Armguards
+								a(dr(4, i(47656))), -- Pattern: Royal Moonshroud Bracers
+								a(dr(0.6, i(47657))), -- Pattern: Royal Moonshroud Robe
+								a(dr(0.7, i(47622))), -- Plans: Breastplate of the White Knight
+								a(dr(1.1, i(47623))), -- Plans: Saronite Swordbreakers
+								a(dr(0.7, i(47627))), -- Plans: Sunforged Bracers
+								a(dr(0.4, i(47626))), -- Plans: Sunforged Breastplate
+								a(dr(0.8, i(47624))), -- Plans: Titanium Razorplate
+								a(dr(1.3, i(47625))), -- Plans: Titanium Spikeguards
 								i(47556),	-- Crusader Orb
 								i(47242),	-- Trophy of the Crusade
 								i(47069),	-- Justicebringer
@@ -492,6 +722,42 @@ _.Instances =
 							["races"] = ALLIANCE_ONLY
 						})),
 						cr(34497, e(1622, {	-- Twin Val'kyr (34496-Eydis)
+							a(dr(0.8, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(0.9, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(2, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(0.7, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(1.2, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(0.4, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(3, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(0.7, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(4, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(0.9, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(0.8, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(0.8, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(0.9, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(1, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(4, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(1.5, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(1, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(2, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(3, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(0.8, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(1.6, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(0.6, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(0.7, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(0.8, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(1.3, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(1.2, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(0.9, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(0.7, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(0.8, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(0.9, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(2, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(1.1, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(0.9, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(0.6, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(2, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(1.4, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							  i( 47242),	-- Trophy of the Crusade
 							a(i(47114)),	-- Lupine Longstaff
@@ -526,6 +792,42 @@ _.Instances =
 							a(i(47115)),	-- Death's Verdict
 						})),
 						cr(34564, e(1623, {	-- Anub'arak
+							a(dr(0.6, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(0.7, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(0.8, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(0.8, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(3, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(1.3, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(2, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(0.4, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(0.9, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(1.6, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(6, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(1.6, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(1.1, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(1.1, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(1.5, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(1.1, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(1.5, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(0.4, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(0.7, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(0.8, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(1.7, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(0.7, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(1.1, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(0.9, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(1.2, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(1, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(0.9, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(0.6, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(1.5, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(1.5, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(2, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(0.5, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(1.1, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(0.8, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(0.9, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(1.1, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							  i(142085),	-- Nerubian Relic (PET!)
 							  i( 47242),	-- Trophy of the Crusade
@@ -571,34 +873,44 @@ _.Instances =
 							a(i(47182)),	-- Reign of the Unliving
 						})),
 					}),
-					d(6, {	-- 25-Player Heroic
-						n(-1, {	-- Shared Boss Loot 
-							a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
-							h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
-							a(i(47629)),	-- Pattern: Black Chitin Bracers
-							h(i(47646)),	-- Pattern: Black Chitin Bracers
-							a(i(47635)),	-- Pattern: Bracers of Swift Death
-							h(i(47647)),	-- Pattern: Bracers of Swift Death
-							a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
-							h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
-							a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
-							h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
-							a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
-							h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
-							a(i(47634)),	-- Pattern: Knightbane Carapace
-							h(i(47651)),	-- Pattern: Knightbane Carapace
-							a(i(47632)),	-- Pattern: Lunar Eclipse Robes
-							h(i(47652)),	-- Pattern: Lunar Eclipse Robes
-							a(i(47655)),	-- Pattern: Merlin's Robe
-							h(i(47638)),	-- Pattern: Merlin's Robe
-							a(i(47633)),	-- Pattern: Moonshadow Armguards
-							h(i(47653)),	-- Pattern: Moonshadow Armguards
-							a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
-							h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
-							a(i(47657)),	-- Pattern: Royal Moonshroud Robe
-							h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						}),			
+					d(6, {	-- 25-Player Heroic	
 						cr(34797, e(1618, {	-- Northrend Beasts  (34796-Gormok) (35144-Acidmaw) (34799-Dreadscale) (34797-Icehowl)
+							a(dr(1.6, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(0.6, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(1.1, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(0.8, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(0.9, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(1.9, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(2, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(1, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(1.2, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(1, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(0.7, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(0.6, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(0.7, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(2, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(1.5, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(4, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(1.4, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(1.2, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(0.8, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(0.4, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(0.6, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(0.9, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(1.7, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(0.6, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(1.3, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(0.9, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(1, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(1.5, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(3, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(0.8, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(1.3, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(0.9, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(1.3, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(0.6, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(0.5, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(1.2, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							  i(142083),	-- Giant Worm Egg (PET!)
 							  i(142084),	-- Magnataur Hunting Horn (PET!)
@@ -635,6 +947,42 @@ _.Instances =
 							a(i(46966)),	-- Band of the Violent Temperament
 						})),
 						cr(34780, e(1619, {	-- Lord Jaraxxus
+							a(dr(2, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(0.9, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(0.9, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(0.8, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(1.6, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(1.9, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(1.1, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(1.3, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(0.7, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(0.7, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(1, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(0.8, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(1.6, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(0.8, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(1.2, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(1.2, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(1.5, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(0.9, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(4, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(0.5, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(1.1, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(1.6, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(2, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(1.8, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(1.3, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(1.7, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(2, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(0.9, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(1.5, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(0.9, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(0.9, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(1, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(1.1, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(1.1, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(1, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(0.8, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							  i( 47242),	-- Trophy of the Crusade
 							h(i(47427)),	-- Blood Fury
@@ -666,6 +1014,7 @@ _.Instances =
 						})),
 						cr(34461, e(1620, {	-- Champions of the Alliance (34460,34469,34467,34468,34465,34471,34466,34473,34472,34463,34470,34474,34475)
 							["groups"] = {
+								-- WOWHEAD SHOWS NO PATTERN DROPS ON 25H --
 								i(47556),	-- Crusader Orb
 								i(47242),	-- Trophy of the Crusade
 								i(47446),	-- Dual-Blade Butcher
@@ -688,6 +1037,7 @@ _.Instances =
 						})),
 						cr(34458, e(1621, {	-- Champions of the Horde (34451,34459,34448,34449,34445,34456,34447,34441,34454,34455,34444,34450,34453)
 							["groups"] = {
+								-- WOWHEAD SHOWS NO PATTERN DROPS ON 25H --
 								i(47556),	-- Crusader Orb
 								i(47242),	-- Trophy of the Crusade
 								i(47078),	-- Justicebringer
@@ -709,6 +1059,42 @@ _.Instances =
 							["races"] = ALLIANCE_ONLY
 						})),
 						cr(34497, e(1622, {	-- Twin Val'kyr (34496-Eydis)
+							a(dr(1.7, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(6, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(0.7, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(1.3, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(1.4, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(1, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(1.1, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(0.8, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(2, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(0.5, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(1.2, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(0.8, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(1.1, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(1.5, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(1.6, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(1, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(2, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(0.7, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(0.7, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(2, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(0.7, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(0.9, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(1.1, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(1.8, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(1.2, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(0.9, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(1, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(1, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(1.2, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(2, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(0.9, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(1.7, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(1.1, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(0.8, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(1.3, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(1.1, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							  i( 47242),	-- Trophy of the Crusade
 							h(i(47463)),	-- Twin's Pact
@@ -743,6 +1129,42 @@ _.Instances =
 							a(i(47131)),	-- Death's Verdict
 						})),
 						cr(34564, e(1623, {	-- Anub'arak
+							a(dr(1, i(47654))), -- Pattern: Bejeweled Wizard's Bracers
+							h(dr(1.1, i(47639))), -- Pattern: Bejeweled Wizard's Bracers
+							a(dr(0.7, i(47629))), -- Pattern: Black Chitin Bracers
+							h(dr(1.7, i(47646))), -- Pattern: Black Chitin Bracers
+							a(dr(1.6, i(47635))), -- Pattern: Bracers of Swift Death
+							h(dr(1.9, i(47647))), -- Pattern: Bracers of Swift Death
+							a(dr(0.8, i(47622))), -- Plans: Breastplate of the White Knight
+							h(dr(1.2, i(47640))), -- Plans: Breastplate of the White Knight
+							a(dr(1.5, i(47631))), -- Pattern: Crusader's Dragonscale Bracers
+							h(dr(0.9, i(47648))), -- Pattern: Crusader's Dragonscale Bracers
+							a(dr(1.4, i(47630))), -- Pattern: Crusader's Dragonscale Breastplate
+							h(dr(0.8, i(47649))), -- Pattern: Crusader's Dragonscale Breastplate
+							a(dr(1.2, i(47628))), -- Pattern: Ensorcelled Nerubian Breastplate
+							h(dr(1.1, i(47650))), -- Pattern: Ensorcelled Nerubian Breastplate
+							a(dr(0.7, i(47634))), -- Pattern: Knightbane Carapace
+							h(dr(1.1, i(47651))), -- Pattern: Knightbane Carapace
+							a(dr(1.6, i(47632))), -- Pattern: Lunar Eclipse Robes
+							h(dr(1.1, i(47652))), -- Pattern: Lunar Eclipse Robes
+							a(dr(1, i(47655))), -- Pattern: Merlin's Robe
+							h(dr(0.9, i(47638))), -- Pattern: Merlin's Robe
+							a(dr(0.9, i(47633))), -- Pattern: Moonshadow Armguards
+							h(dr(1.5, i(47653))), -- Pattern: Moonshadow Armguards
+							a(dr(0.8, i(47656))), -- Pattern: Royal Moonshroud Bracers
+							h(dr(4, i(47637))), -- Pattern: Royal Moonshroud Bracers
+							a(dr(1.1, i(47657))), -- Pattern: Royal Moonshroud Robe
+							h(dr(0.9, i(47636))), -- Pattern: Royal Moonshroud Robe
+							a(dr(0.9, i(47623))), -- Plans: Saronite Swordbreakers
+							h(dr(0.9, i(47641))), -- Plans: Saronite Swordbreakers
+							a(dr(1.4, i(47627))), -- Plans: Sunforged Bracers
+							h(dr(1.2, i(47642))), -- Plans: Sunforged Bracers
+							a(dr(3, i(47626))), -- Plans: Sunforged Breastplate
+							h(dr(1, i(47643))), -- Plans: Sunforged Breastplate
+							a(dr(1.3, i(47624))), -- Plans: Titanium Razorplate
+							h(dr(1.6, i(47644))), -- Plans: Titanium Razorplate
+							a(dr(1.3, i(47625))), -- Plans: Titanium Spikeguards
+							h(dr(0.8, i(47645))), -- Plans: Titanium Spikeguards
 							  i( 47556),	-- Crusader Orb
 							  i(142085),	-- Nerubian Relic (PET!)
 							  i( 47242),	-- Trophy of the Crusade
