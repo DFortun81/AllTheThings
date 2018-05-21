@@ -125,11 +125,23 @@ _.Achievements =
 						crit(1),	-- Firing Up the Forge
 					}),
 					ach(9454, {	-- Draenic Seed Collector
-						i(111997),	-- Herb Garden, Level 3
+						i(111997, {	-- Herb Garden, Level 3
+							["groups"] = {
+							},
+							["f"] = 200,	-- Recipe
+						}),
 					}),
 					ach(9453, {	-- Draenic Stone Collector
-						a(i(111996)),	-- Lunarfall Excavation, Level 3
-						h(i(116249)),	-- Frostwall Mines, Level 3
+						a(i(111996, {	-- Lunarfall Excavation, Level 3
+							["groups"] = {
+							},
+							["f"] = 200,	-- Recipe
+						})),
+						h(i(116249, {	-- Frostwall Mines, Level 3
+							["groups"] = {
+							},
+							["f"] = 200,	-- Recipe
+						})),
 					}),
 					ach(10587), -- Hot Swapper
 					ach(9071, {	-- Inspector Gagetzan
