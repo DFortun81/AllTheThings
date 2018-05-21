@@ -281,7 +281,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 21024,	-- Earthmender Torlok
-						["sourceQuests"] = { 10681 },	-- The Hand of Gul'dan
+						["breadcrumbQuestID"] = { 10680, 10681 },	-- The Hand of Gul'dan (A/H)
 					}),
 					
 
@@ -581,6 +581,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 21938,	-- Earthmender Splinthoof
+						["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
 					}),
 					
 					
@@ -804,7 +805,12 @@ _.Zones =
 					qa(10573),	-- The Deathforge
 					qa(10583),	-- The Fate of Flanis
 					qa(10612),	-- The Fel and the Furious
-					qa(10680),	-- The Hand of Gul'dan
+					qa(10680, {	-- The Hand of Gul'dan
+						["g"] = {
+						},
+						["qg"] = 21937,	-- Earthmender Sophurus
+						["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
+					}),
 					qa(10662),	-- The Hermit Smith
 					q( 10948),	-- The Hostage Soul
 					q( 10793),	-- The Journal of Val'zareq: Portends of War					
