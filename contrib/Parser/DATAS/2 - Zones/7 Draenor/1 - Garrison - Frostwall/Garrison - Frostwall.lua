@@ -181,6 +181,25 @@ _.Zones =
 					ach(7274, { -- Learning From The Best	
 						i(86596), 	 -- Toy
 					}),	
+					ach(9454, {	-- Draenic Seed Collector
+						i(111997, {	-- Herb Garden, Level 3
+							["groups"] = {
+							},
+							["f"] = 200,	-- Recipe
+						}),
+					}),
+					ach(9453, {	-- Draenic Stone Collector
+						a(i(111996, {	-- Lunarfall Excavation, Level 3
+							["groups"] = {
+							},
+							["f"] = 200,	-- Recipe
+						})),
+						h(i(116249, {	-- Frostwall Mines, Level 3
+							["groups"] = {
+							},
+							["f"] = 200,	-- Recipe
+						})),
+					}),
 					n(-99, { 	 -- Stables
 						ach(9706, {
 							i(116781), -- Mount
