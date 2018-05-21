@@ -337,6 +337,7 @@ _.GroupFinder =
 		   i(113771),	-- Firecracker Slippers
 		   i(113730),	-- Venomtail Helm
 		   i(113753),	-- Venomtail Shoulderguards *
+		   i(113741),	-- Venomtail Chestguard*
 		   i(113747),	-- Venomtail Gauntlets*
 		   i(113779),	-- Venomtail Girdle
 		   i(113778),	-- Venomtail Belt
