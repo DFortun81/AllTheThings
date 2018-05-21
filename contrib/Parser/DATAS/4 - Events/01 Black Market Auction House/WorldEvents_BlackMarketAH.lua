@@ -246,7 +246,7 @@ _.WorldEvents =
 			i(128312),	-- Elixir of the Rapid Mind
 			i(45037),	-- Epic Purple Shirt
 			i(90176),	-- Flintlocke's Blasthammer
-			i(110672),	-- Grimoire of the Four Winds
+			un(2, i(110672)),	-- Grimoire of the Four Winds
 			un(31, i(118572)), 	-- Illusion: Flame of Ragnaros
 			{	-- Kor'kron Shaman's Treasure
 				["groups"] = {
@@ -506,7 +506,7 @@ _.WorldEvents =
 					i(128312),	-- Elixir of the Rapid Mind **
 					i(45037),	-- Epic Purple Shirt
 					i(90176),	-- Flintlocke's Blasthammer **
-					i(110672),	-- Grimoire of the Four Winds **
+					un(2, i(110672)),	-- Grimoire of the Four Winds **
 					un(31, i(118572)), 	-- Illusion: Flame of Ragnaros **
 					{	-- Kor'kron Shaman's Treasure
 						["groups"] = {
