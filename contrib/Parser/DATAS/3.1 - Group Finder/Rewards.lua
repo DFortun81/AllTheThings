@@ -335,10 +335,11 @@ _.GroupFinder =
 		   i(113773),	-- Firecracker Girdle
 		   i(113733),	-- Firecracker Helm
 		   i(113771),	-- Firecracker Slippers
+		   i(113730),	-- Venomtail Helm
+		   i(113753),	-- Venomtail Shoulderguards *
 		   i(113778),	-- Venomtail Belt
 		   i(113777),	-- Venomtail Boots
 		   i(113779),	-- Venomtail Girdle
-		   i(113730),	-- Venomtail Helm
 		   i(113776),	-- Venomtail Treads
 		   i(113732),	-- Venomtail Visor
 		   i(113784),	-- Kyparite Belt
@@ -348,6 +349,8 @@ _.GroupFinder =
 		   i(113728),	-- Kyparite Helm
 		   i(113783),	-- Kyparite Stompers
 		   i(113735),	-- Drifting Cloud Necklace*
+		   i(113755),	-- Ring of Flowing Water*
+		   i(113734),	-- Tranquil Breeze Pendant of the Peerless
 		},
 		["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation",
 		["lvl"] = 80,
