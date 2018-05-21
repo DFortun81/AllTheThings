@@ -10,369 +10,457 @@ _.Instances =
 				["groups"] = {
 					e(139, { -- Argaloth
 						["groups"] = {
-							i(60776),
-							i(60778),
-							i(60340),
-							i(60350),
-							i(60409),
-							i(60508),
-							i(60521),
-							i(60352),
-							i(60342),
-							i(60411),
-							i(60513),
-							i(60509),
-							i(60783),
-							i(60779),
-							i(60786),
-							i(60788),
-							i(60787),
-							i(60285),
-							i(60290),
-							i(60280),
-							i(60443),
-							i(60448),
-							i(60453),
-							i(60583),
-							i(60580),
-							i(60589),
-							i(60586),
-							i(60283),
-							i(60288),
-							i(60278),
-							i(60445),
-							i(60450),
-							i(60455),
-							i(60593),
-							i(60587),
-							i(60607),
-							i(60581),
-							i(60628),
-							i(60634),
-							i(60326),
-							i(60332),
-							i(60247),
-							i(60314),
-							i(60319),
-							i(60312),
-							i(60307),
-							i(60257),
-							i(60275),
-							i(60345),
-							i(60363),
-							i(60355),
-							i(60248),
-							i(60424),
-							i(60478),
-							i(60459),
-							i(60434),
-							i(60439),
-							i(60468),
-							i(60602),
-							i(60419),
-							i(60429),
-							i(60473),
-							i(60414),
-							i(60463),
-							i(60298),
-							i(60505),
-							i(60539),
-							i(60626),
-							i(60612),
-							i(60637),
-							i(60564),
-							i(60555),
-							i(60536),
-							i(60533),
-							i(60330),
-							i(60324),
-							i(60245),
-							i(60316),
-							i(60321),
-							i(60310),
-							i(60305),
-							i(60255),
-							i(60261),
-							i(60361),
-							i(60357),
-							i(60347),
-							i(60250),
-							i(60426),
-							i(60480),
-							i(60461),
-							i(60436),
-							i(60441),
-							i(60470),
-							i(60604),
-							i(60421),
-							i(60431),
-							i(60475),
-							i(60416),
-							i(60465),
-							i(60300),
-							i(60516),
-							i(60540),
-							i(60557),
-							i(60567),
-							i(60554),
-							i(60534),
-							i(60630),
-							i(60613),
-							i(60636),
+							ach(5416),	-- Pit Lord Argaloth
+							i(60776),	-- Vicious Gladiator's Cloak of Alacrity
+							i(60778),	-- Vicious Gladiator's Cloak of Prowess
+							i(60340),	-- Magma Plated Gauntlets
+							i(60350),	-- Magma Plated Handguards
+							i(60409),	-- Vicious Gladiator's Dreadplate Gauntlets
+							i(60508),	-- Vicious Gladiator's Girdle of Cruelty
+							i(60521),	-- Vicious Gladiator's Girdle of Prowess
+							i(60352),	-- Magma Plated Legguards
+							i(60342),	-- Magma Plated Legplates
+							i(60411),	-- Vicious Gladiator's Dreadplate Legguards
+							i(60513),	-- Vicious Gladiator's Warboots of Alacrity
+							i(60509),	-- Vicious Gladiator's Warboots of Cruelty
+							i(60783),	-- Vicious Gladiator's Cape of Cruelty
+							i(60779),	-- Vicious Gladiator's Cape of Prowess
+							i(60786),	-- Vicious Gladiator's Drape of Diffusion
+							i(60788),	-- Vicious Gladiator's Drape of Meditation
+							i(60787),	-- Vicious Gladiator's Drape of Prowess
+							i(60285),	-- Stormrider's Gloves
+							i(60290),	-- Stormrider's Grips
+							i(60280),	-- Stormrider's Handwraps
+							i(60443),	-- Vicious Gladiator's Dragonhide Gloves
+							i(60448),	-- Vicious Gladiator's Kodohide Gloves
+							i(60453),	-- Vicious Gladiator's Wyrmhide Gloves
+							i(60583),	-- Vicious Gladiator's Belt of Cruelty
+							i(60580),	-- Vicious Gladiator's Belt of Meditation
+							i(60589),	-- Vicious Gladiator's Waistband of Accuracy
+							i(60586),	-- Vicious Gladiator's Waistband of Cruelty
+							i(60283),	-- Stormrider's Leggings
+							i(60288),	-- Stormrider's Legguards
+							i(60278),	-- Stormrider's Legwraps
+							i(60445),	-- Vicious Gladiator's Dragonhide Legguards
+							i(60450),	-- Vicious Gladiator's Kodohide Legguards
+							i(60455),	-- Vicious Gladiator's Wyrmhide Legguards
+							i(60593),	-- Vicious Gladiator's Boots of Alacrity
+							i(60587),	-- Vicious Gladiator's Boots of Cruelty
+							i(60607),	-- Vicious Gladiator's Footguards of Alacrity
+							i(60581),	-- Vicious Gladiator's Footguards of Meditation
+							i(60628),	-- Vicious Gladiator's Cuffs of Accuracy
+							i(60634),	-- Vicious Gladiator's Cuffs of Prowess
+							i(60326),	-- Earthen Gauntlets
+							i(60332),	-- Earthen Handguards
+							i(60247),	-- Firelord's Gloves
+							i(60314),	-- Gloves of the Raging Elements
+							i(60319),	-- Grips of the Raging Elements
+							i(60312),	-- Handwraps of the Raging Elements
+							i(60307),	-- Lightning-Charged Gloves
+							i(60257),	-- Mercurial Gloves
+							i(60275),	-- Mercurial Handwraps
+							i(60345),	-- Reinforced Sapphirium Gauntlets
+							i(60363),	-- Reinforced Sapphirium Gloves
+							i(60355),	-- Reinforced Sapphirium Handguards
+							i(60248),	-- Shadowflame Handwraps
+							i(60424),	-- Vicious Gladiator's Chain Gauntlets
+							i(60478),	-- Vicious Gladiator's Felweave Handguards
+							i(60459),	-- Vicious Gladiator's Leather Gloves
+							i(60434),	-- Vicious Gladiator's Linked Gauntlets
+							i(60439),	-- Vicious Gladiator's Mail Gauntlets
+							i(60468),	-- Vicious Gladiator's Mooncloth Gloves
+							i(60602),	-- Vicious Gladiator's Ornamented Gloves
+							i(60419),	-- Vicious Gladiator's Plate Gauntlets
+							i(60429),	-- Vicious Gladiator's Ringmail Gauntlets
+							i(60473),	-- Vicious Gladiator's Satin Gloves
+							i(60414),	-- Vicious Gladiator's Scaled Gauntlets
+							i(60463),	-- Vicious Gladiator's Silk Handguards
+							i(60298),	-- Wind Dancer's Gloves
+							i(60505),	-- Vicious Gladiator's Clasp of Cruelty
+							i(60539),	-- Vicious Gladiator's Clasp of Meditation
+							i(60626),	-- Vicious Gladiator's Cord of Accuracy
+							i(60612),	-- Vicious Gladiator's Cord of Cruelty
+							i(60637),	-- Vicious Gladiator's Cord of Meditation
+							i(60564),	-- Vicious Gladiator's Links of Accuracy
+							i(60555),	-- Vicious Gladiator's Links of Cruelty
+							i(60536),	-- Vicious Gladiator's Waistguard of Cruelty
+							i(60533),	-- Vicious Gladiator's Waistguard of Meditation
+							i(60330),	-- Earthen Legguards
+							i(60324),	-- Earthen Legplates
+							i(60245),	-- Firelord's Leggings
+							i(60316),	-- Kilt of the Raging Elements
+							i(60321),	-- Legguards of the Raging Elements
+							i(60310),	-- Legwraps of the Raging Elements
+							i(60305),	-- Lightning-Charged Legguards
+							i(60255),	-- Mercurial Leggings
+							i(60261),	-- Mercurial Legwraps
+							i(60361),	-- Reinforced Sapphirium Greaves
+							i(60357),	-- Reinforced Sapphirium Legguards
+							i(60347),	-- Reinforced Sapphirium Legplates
+							i(60250),	-- Shadowflame Leggings
+							i(60426),	-- Vicious Gladiator's Chain Leggings
+							i(60480),	-- Vicious Gladiator's Felweave Trousers
+							i(60461),	-- Vicious Gladiator's Leather Legguards
+							i(60436),	-- Vicious Gladiator's Linked Leggings
+							i(60441),	-- Vicious Gladiator's Mail Leggings
+							i(60470),	-- Vicious Gladiator's Mooncloth Leggings
+							i(60604),	-- Vicious Gladiator's Ornamented Legplates
+							i(60421),	-- Vicious Gladiator's Plate Legguards
+							i(60431),	-- Vicious Gladiator's Ringmail Leggings
+							i(60475),	-- Vicious Gladiator's Satin Leggings
+							i(60416),	-- Vicious Gladiator's Scaled Legguards
+							i(60465),	-- Vicious Gladiator's Silk Trousers
+							i(60300),	-- Wind Dancer's Legguards
+							i(60516),	-- Vicious Gladiator's Greaves of Alacrity
+							i(60540),	-- Vicious Gladiator's Greaves of Meditation
+							i(60557),	-- Vicious Gladiator's Sabatons of Alacrity
+							i(60567),	-- Vicious Gladiator's Sabatons of Alacrity
+							i(60554),	-- Vicious Gladiator's Sabatons of Cruelty
+							i(60534),	-- Vicious Gladiator's Sabatons of Meditation
+							i(60630),	-- Vicious Gladiator's Treads of Alacrity
+							i(60613),	-- Vicious Gladiator's Treads of Cruelty
+							i(60636),	-- Vicious Gladiator's Treads of Meditation
+							i(60645),	-- Vicious Gladiator's Band of Cruelty
+							i(60647),	-- Vicious Gladiator's Band of Accuracy
+							i(60649),	-- Vicious Gladiator's Band of Meditation
+							i(60650),	-- Vicious Gladiator's Signet of Cruelty
+							i(60651),	-- Vicious Gladiator's Signet of Accuracy
+							i(60658),	-- Vicious Gladiator's Ring of Accuracy
+							i(60659),	-- Vicious Gladiator's Ring of Cruelty
+							i(60661),	-- Vicious Gladiator's Pendant of Diffusion
+							i(60662),	-- Vicious Gladiator's Pendant of Alacrity
+							i(60664),	-- Vicious Gladiator's Pendant of Meditation
+							i(60668),	-- Vicious Gladiator's Necklace of Prowess
+							i(60669),	-- Vicious Gladiator's Necklace of Proficiency
+							i(60670),	-- Vicious Gladiator's Choker of Proficiency
+							i(60673),	-- Vicious Gladiator's Choker of Accuracy
+							a(i(60794)),	-- Vicious Gladiator's Medallion of Cruelty (Alliance)
+							h(i(60801)),	-- Vicious Gladiator's Medallion of Cruelty (Horde)
+							a(i(60799)),	-- Vicious Gladiator's Medallion of Meditation (Alliance)
+							h(i(60806)),	-- Vicious Gladiator's Medallion of Meditation (Horde)
+							a(i(60800)),	-- Vicious Gladiator's Medallion of Tenacity (Alliance)
+							h(i(60807)),	-- Vicious Gladiator's Medallion of Tenacity (Horde)
+							i(61026),	-- Vicious Gladiator's Emblem of Cruelty
+							i(61031),	-- Vicious Gladiator's Emblem of Meditation
+							i(61032),	-- Vicious Gladiator's Emblem of Tenacity
+							i(61033),	-- Vicious Gladiator's Badge of Conquest
+							i(61045),	-- Vicious Gladiator's Insignia of Dominance
+							i(61046),	-- Vicious Gladiator's Insignia of Victory
+							i(61047),	-- Vicious Gladiator's Insignia of Conquest
 						},
 						["creatureID"] = 47120,
 					}),
 					e(339, { -- Alizabal, Mistress of Hate
 						["groups"] = {
-							i(73495),
-							i(73494),
-							i(73550),
-							i(73551),
-							i(73619),
-							i(76975),
-							i(77009),
-							i(73555),
-							i(73554),
-							i(73617),
-							i(76977),
-							i(77011),
-							i(73552),
-							i(73553),
-							i(73647),
-							i(73646),
-							i(73629),
-							i(73628),
-							i(73630),
-							i(73528),
-							i(73529),
-							i(73608),
-							i(73600),
-							i(73615),
-							i(73607),
-							i(73599),
-							i(77018),
-							i(77014),
-							i(76749),
-							i(73602),
-							i(73610),
-							i(73532),
-							i(73533),
-							i(73613),
-							i(73605),
-							i(73597),
-							i(77020),
-							i(77016),
-							i(76751),
-							i(73530),
-							i(73531),
-							i(73601),
-							i(73609),
-							i(73518),
-							i(73519),
-							i(73561),
-							i(73562),
-							i(73633),
-							i(73631),
-							i(73632),
-							i(73585),
-							i(73586),
-							i(77024),
-							i(73583),
-							i(73487),
-							i(73526),
-							i(73511),
-							i(73505),
-							i(73549),
-							i(73559),
-							i(73481),
-							i(73516),
-							i(73544),
-							i(73570),
-							i(73576),
-							i(76985),
-							i(76989),
-							i(76875),
-							i(76348),
-							i(76766),
-							i(76343),
-							i(77004),
-							i(76357),
-							i(77038),
-							i(77041),
-							i(76757),
-							i(76212),
-							i(77029),
-							i(73566),
-							i(73565),
-							i(73638),
-							i(73639),
-							i(73637),
-							i(73589),
-							i(73590),
-							i(73507),
-							i(73522),
-							i(77026),
-							i(73581),
-							i(73485),
-							i(73524),
-							i(73509),
-							i(73503),
-							i(73547),
-							i(73557),
-							i(73479),
-							i(73514),
-							i(73542),
-							i(73568),
-							i(73574),
-							i(76991),
-							i(76986),
-							i(76768),
-							i(76346),
-							i(76341),
-							i(77006),
-							i(76877),
-							i(76359),
-							i(77036),
-							i(77043),
-							i(76759),
-							i(76214),
-							i(77031),
-							i(73564),
-							i(73563),
-							i(73521),
-							i(73587),
-							i(73588),
-							i(73520),
-							i(73635),
-							i(73636),
-							i(73634),
+							ach(6108),	-- Alizabal
+							i(73495),	-- Cataclysmic Gladiator's Cloak of Alacrity
+							i(73494),	-- Cataclysmic Gladiator's Cloak of Prowess
+							i(73550),	-- Cataclysmic Gladiator's Armplates of Alacrity
+							i(73551),	-- Cataclysmic Gladiator's Armplates of Proficiency
+							i(73619),	-- Cataclysmic Gladiator's Dreadplate Gauntlet
+							i(76975),	-- Necrotic Boneplate Gauntlets
+							i(77009),	-- Necrotic Boneplate Handguards
+							i(73555),	-- Cataclysmic Gladiator's Girdle of Cruelty
+							i(73554),	-- Cataclysmic Gladiator's Girdle of Prowess
+							i(73617),	-- Cataclysmic Gladiator's Dreadplate Legguards
+							i(76977),	-- Necrotic Boneplate Greaves
+							i(77011),	-- Necrotic Boneplate Legguards
+							i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
+							i(73553),	-- Cataclysmic Gladiator's Warboots of Cruelty
+							i(73647),	-- Cataclysmic Gladiator's Cape of Cruelty
+							i(73646),	-- Cataclysmic Gladiator's Cape of Prowess
+							i(73629),	-- Cataclysmic Gladiator's Drape of Diffusion
+							i(73628),	-- Cataclysmic Gladiator's Drape of Meditation
+							i(73630),	-- Cataclysmic Gladiator's Drape of Prowess
+							i(73528),	-- Cataclysmic Gladiator's Armwraps of Accuracy
+							i(73529),	-- Cataclysmic Gladiator's Armwraps of Alacrity
+							i(73608),	-- Cataclysmic Gladiator's Bindings of Meditation
+							i(73600),	-- Cataclysmic Gladiator's Bindings of Prowess
+							i(73615),	-- Cataclysmic Gladiator's Dragonhide Gloves
+							i(73607),	-- Cataclysmic Gladiator's Kodohide Gloves
+							i(73599),	-- Cataclysmic Gladiator's Wyrmhide Gloves
+							i(77018),	-- Deep Earth Gloves
+							i(77014),	-- Deep Earth Grips
+							i(76749),	-- Deep Earth Handwraps
+							i(73602),	-- Cataclysmic Gladiator's Belt of Cruelty
+							i(73610),	-- Cataclysmic Gladiator's Belt of Meditation
+							i(73532),	-- Cataclysmic Gladiator's Waistband of Accuracy
+							i(73533),	-- Cataclysmic Gladiator's Waistband of Cruelty
+							i(73613),	-- Cataclysmic Gladiator's Dragonhide Legguards
+							i(73605),	-- Cataclysmic Gladiator's Kodohide Legguards
+							i(73597),	-- Cataclysmic Gladiator's Wyrmhide Legguards
+							i(77020),	-- Deep Earth Leggings
+							i(77016),	-- Deep Earth Legguards
+							i(76751),	-- Deep Earth Legwraps
+							i(73530),	-- Cataclysmic Gladiator's Boots of Alacrity
+							i(73531),	-- Cataclysmic Gladiator's Boots of Cruelty
+							i(73601),	-- Cataclysmic Gladiator's Footguards of Alacrity
+							i(73609),	-- Cataclysmic Gladiator's Footguards of Meditation
+							i(73518),	-- Cataclysmic Gladiator's Armbands of Meditation
+							i(73519),	-- Cataclysmic Gladiator's Armbands of Prowess
+							i(73561),	-- Cataclysmic Gladiator's Bracers of Meditation
+							i(73562),	-- Cataclysmic Gladiator's Bracers of Prowess
+							i(73633),	-- Cataclysmic Gladiator's Cuffs of Accuracy
+							i(73631),	-- Cataclysmic Gladiator's Cuffs of Meditation
+							i(73632),	-- Cataclysmic Gladiator's Cuffs of Prowess
+							i(73585),	-- Cataclysmic Gladiator's Wristguards of Accuracy
+							i(73586),	-- Cataclysmic Gladiator's Wristguards of Alacrity
+							i(77024),	-- Blackfang Battleweave Gloves
+							i(73583),	-- Cataclysmic Gladiator's Chain Gauntlets
+							i(73487),	-- Cataclysmic Gladiator's Felweave Handguards
+							i(73526),	-- Cataclysmic Gladiator's Leather Gloves
+							i(73511),	-- Cataclysmic Gladiator's Linked Gauntlets
+							i(73505),	-- Cataclysmic Gladiator's Mail Gauntlets
+							i(73549),	-- Cataclysmic Gladiator's Mooncloth Gloves
+							i(73559),	-- Cataclysmic Gladiator's Ornamented Gloves
+							i(73481),	-- Cataclysmic Gladiator's Plate Gauntlets
+							i(73516),	-- Cataclysmic Gladiator's Ringmail Gauntlets
+							i(73544),	-- Cataclysmic Gladiator's Satin Gloves
+							i(73570),	-- Cataclysmic Gladiator's Scaled Gauntlets
+							i(73576),	-- Cataclysmic Gladiator's Silk Handguard
+							i(76985),	-- Colossal Dragonplate Gauntlets
+							i(76989),	-- Colossal Dragonplate Handguards
+							i(76875),	-- Gauntlets of Radiant Glory
+							i(76348),	-- Gloves of Dying Light
+							i(76766),	-- Gloves of Radiant Glory
+							i(76343),	-- Gloves of the Faceless Shroud
+							i(77004),	-- Handguards of Radiant Glory
+							i(76357),	-- Handwraps of Dying Light
+							i(77038),	-- Spiritwalker's Gloves
+							i(77041),	-- Spiritwalker's Grips
+							i(76757),	-- Spiritwalker's Handwraps
+							i(76212),	-- Time Lord's Gloves
+							i(77029),	-- Wyrmstalker's Gloves
+							i(73566),	-- Cataclysmic Gladiator's Clasp of Cruelty
+							i(73565),	-- Cataclysmic Gladiator's Clasp of Meditation
+							i(73638),	-- Cataclysmic Gladiator's Cord of Accuracy
+							i(73639),	-- Cataclysmic Gladiator's Cord of Cruelty
+							i(73637),	-- Cataclysmic Gladiator's Cord of Meditation
+							i(73589),	-- Cataclysmic Gladiator's Links of Accuracy
+							i(73590),	-- Cataclysmic Gladiator's Links of Cruelty
+							i(73507),	-- Cataclysmic Gladiator's Waistguard of Cruelty
+							i(73522),	-- Cataclysmic Gladiator's Waistguard of Meditation
+							i(77026),	-- Blackfang Battleweave Legguards
+							i(73581),	-- Cataclysmic Gladiator's Chain Leggings
+							i(73485),	-- Cataclysmic Gladiator's Felweave Trousers
+							i(73524),	-- Cataclysmic Gladiator's Leather Legguards
+							i(73509),	-- Cataclysmic Gladiator's Linked Leggings
+							i(73503),	-- Cataclysmic Gladiator's Mail Leggings
+							i(73547),	-- Cataclysmic Gladiator's Mooncloth Leggings
+							i(73557),	-- Cataclysmic Gladiator's Ornamented Legplates
+							i(73479),	-- Cataclysmic Gladiator's Plate Legguards
+							i(73514),	-- Cataclysmic Gladiator's Ringmail Leggings
+							i(73542),	-- Cataclysmic Gladiator's Satin Leggings
+							i(73568),	-- Cataclysmic Gladiator's Scaled Legguards
+							i(73574),	-- Cataclysmic Gladiator's Silk Trousers
+							i(76991),	-- Colossal Dragonplate Legguards
+							i(76986),	-- Colossal Dragonplate Legplates
+							i(76768),	-- Greaves of Radiant Glory
+							i(76346),	-- Leggings of Dying Light
+							i(76341),	-- Leggings of the Faceless Shroud
+							i(77006),	-- Legguards of Radiant Glory
+							i(76877),	-- Legplates of Radiant Glory
+							i(76359),	-- Legwraps of Dying Light
+							i(77036),	-- Spiritwalker's Kilt
+							i(77043),	-- Spiritwalker's Legguards
+							i(76759),	-- Spiritwalker's Legwraps
+							i(76214),	-- Time Lord's Leggings
+							i(77031),	-- Wyrmstalker's Legguards
+							i(73564),	-- Cataclysmic Gladiator's Greaves of Alacrity
+							i(73563),	-- Cataclysmic Gladiator's Greaves of Meditation
+							i(73521),	-- Cataclysmic Gladiator's Sabatons of Alacrity
+							i(73587),	-- Cataclysmic Gladiator's Sabatons of Alacrity
+							i(73588),	-- Cataclysmic Gladiator's Sabatons of Cruelty
+							i(73520),	-- Cataclysmic Gladiator's Sabatons of Meditation
+							i(73635),	-- Cataclysmic Gladiator's Treads of Alacrity
+							i(73636),	-- Cataclysmic Gladiator's Treads of Cruelty
+							i(73634),	-- Cataclysmic Gladiator's Treads of Meditation
+							i(73645),	-- Cataclysmic Gladiator's Necklace of Proficiency
+							i(73644),	-- Cataclysmic Gladiator's Necklace of Prowess
+							i(73625),	-- Cataclysmic Gladiator's Pendant of Meditation
+							i(73493),	-- Cataclysmic Gladiator's Choker of Proficiency
+							i(73492),	-- Cataclysmic Gladiator's Choker of Prowess
+							i(73627),	-- Cataclysmic Gladiator's Pendant of Alacrity
+							i(73626),	-- Cataclysmic Gladiator's Pendant of Diffusion
+							i(73640),	-- Cataclysmic Gladiator's Ring of Accuracy
+							i(73623),	-- Cataclysmic Gladiator's Band of Cruelty
+							i(73489),	-- Cataclysmic Gladiator's Signet of Cruelty
+							i(73488),	-- Cataclysmic Gladiator's Signet of Accuracy
+							i(73641),	-- Cataclysmic Gladiator's Ring of Cruelty
+							i(73622),	-- Cataclysmic Gladiator's Band of Accuracy
+							i(73621),	-- Cataclysmic Gladiator's Band of Meditation
+							a(i(73536)),	-- Cataclysmic Gladiator's Medallion of Tenacity (Alliance)
+							h(i(73537)),	-- Cataclysmic Gladiator's Medallion of Tenacity (Horde)
+							h(i(73538)),	-- Cataclysmic Gladiator's Medallion of Cruelty (Horde)
+							a(i(73539)),	-- Cataclysmic Gladiator's Medallion of Cruelty (Alliance)
+							a(i(73535)),	-- Cataclysmic Gladiator's Medallion of Meditation (Alliance)
+							h(i(73534)),	-- Cataclysmic Gladiator's Medallion of Meditation (Horde)
+							i(73648),	-- Cataclysmic Gladiator's Badge of Conquest
+							i(73643),	-- Cataclysmic Gladiator's Insignia of Conquest
+							i(73592),	-- Cataclysmic Gladiator's Emblem of Tenacity
+							i(73591),	-- Cataclysmic Gladiator's Emblem of Meditation
+							i(73498),	-- Cataclysmic Gladiator's Badge of Dominance
+							i(73497),	-- Cataclysmic Gladiator's Insignia of Dominance
+							i(73496),	-- Cataclysmic Gladiator's Badge of Victory
+							i(73491),	-- Cataclysmic Gladiator's Insignia of Victory
+							i(73593),	-- Cataclysmic Gladiator's Emblem of Cruelty
 						},
 						["creatureID"] = 55869,
 					}),
 					e(140, { -- Occu'thar
 						["groups"] = {
-							i(70383),
-							i(70384),
-							i(70322),
-							i(70327),
-							i(71059),
-							i(70953),
-							i(70245),
-							i(70320),
-							i(70326),
-							i(71061),
-							i(70952),
-							i(70247),
-							i(70323),
-							i(70321),
-							i(70386),
-							i(70385),
-							i(70387),
-							i(70389),
-							i(70388),
-							i(70350),
-							i(70352),
-							i(70345),
-							i(70359),
-							i(71107),
-							i(71097),
-							i(71102),
-							i(70279),
-							i(70284),
-							i(70289),
-							i(70346),
-							i(70343),
-							i(70349),
-							i(70347),
-							i(71109),
-							i(71099),
-							i(71104),
-							i(70281),
-							i(70286),
-							i(70291),
-							i(70351),
-							i(70348),
-							i(70358),
-							i(70344),
-							i(70330),
-							i(70342),
-							i(70334),
-							i(70325),
-							i(70363),
-							i(70366),
-							i(70365),
-							i(70340),
-							i(70338),
-							i(71281),
-							i(71046),
-							i(71292),
-							i(71302),
-							i(71297),
-							i(71286),
-							i(71050),
-							i(71069),
-							i(71276),
-							i(70943),
-							i(71271),
-							i(71064),
-							i(71092),
-							i(70949),
-							i(70260),
-							i(70314),
-							i(70295),
-							i(70270),
-							i(70275),
-							i(70304),
-							i(70354),
-							i(70255),
-							i(70265),
-							i(70309),
-							i(70250),
-							i(70299),
-							i(70319),
-							i(70332),
-							i(70362),
-							i(70360),
-							i(70368),
-							i(70339),
-							i(70336),
-							i(70331),
-							i(70328),
-							i(71283),
-							i(71048),
-							i(71294),
-							i(71304),
-							i(71299),
-							i(71288),
-							i(71052),
-							i(71094),
-							i(70947),
-							i(71066),
-							i(71278),
-							i(70942),
-							i(71071),
-							i(71273),
-							i(70262),
-							i(70316),
-							i(70297),
-							i(70272),
-							i(70277),
-							i(70306),
-							i(70356),
-							i(70257),
-							i(70267),
-							i(70311),
-							i(70252),
-							i(70301),
-							i(70324),
-							i(70333),
-							i(70341),
-							i(70337),
-							i(70335),
-							i(70329),
-							i(70364),
-							i(70361),
-							i(70367),
+							ach(6045),	-- Occu'thar
+							i(70383),	-- Ruthless Gladiator's Cloak of Alacrity
+							i(70384),	-- Ruthless Gladiator's Cloak of Prowess
+							i(70322),	-- Ruthless Gladiator's Armplates of Alacrity
+							i(70327),	-- Ruthless Gladiator's Armplates of Proficiency
+							i(71059),	-- Elementium Deathplate Gauntlets
+							i(70953),	-- Elementium Deathplate Handguards
+							i(70245),	-- Ruthless Gladiator's Dreadplate Gauntlets
+							i(70320),	-- Ruthless Gladiator's Girdle of Cruelty
+							i(70326),	-- Ruthless Gladiator's Girdle of Prowess
+							i(71061),	-- Elementium Deathplate Greaves
+							i(70952),	-- Elementium Deathplate Legguards
+							i(70247),	-- Ruthless Gladiator's Dreadplate Legguards
+							i(70323),	-- Ruthless Gladiator's Warboots of Alacrity
+							i(70321),	-- Ruthless Gladiator's Warboots of Cruelty
+							i(70386),	-- Ruthless Gladiator's Cape of Cruelty
+							i(70385),	-- Ruthless Gladiator's Cape of Prowess
+							i(70387),	-- Ruthless Gladiator's Drape of Diffusion
+							i(70389),	-- Ruthless Gladiator's Drape of Meditation
+							i(70388),	-- Ruthless Gladiator's Drape of Prowess
+							i(70350),	-- Ruthless Gladiator's Armwraps of Accuracy
+							i(70352),	-- Ruthless Gladiator's Armwraps of Alacrity
+							i(70345),	-- Ruthless Gladiator's Bindings of Meditation
+							i(70359),	-- Ruthless Gladiator's Bindings of Prowess
+							i(71107),	-- Obsidian Arborweave Gloves
+							i(71097),	-- Obsidian Arborweave Grips
+							i(71102),	-- Obsidian Arborweave Handwraps
+							i(70279),	-- Ruthless Gladiator's Dragonhide Gloves
+							i(70284),	-- Ruthless Gladiator's Kodohide Gloves
+							i(70289),	-- Ruthless Gladiator's Wyrmhide Gloves
+							i(70346),	-- Ruthless Gladiator's Belt of Cruelty
+							i(70343),	-- Ruthless Gladiator's Belt of Meditation
+							i(70349),	-- Ruthless Gladiator's Waistband of Accuracy
+							i(70347),	-- Ruthless Gladiator's Waistband of Cruelty
+							i(71109),	-- Obsidian Arborweave Leggings
+							i(71099),	-- Obsidian Arborweave Legguards
+							i(71104),	-- Obsidian Arborweave Legwraps
+							i(70281),	-- Ruthless Gladiator's Dragonhide Legguards
+							i(70286),	-- Ruthless Gladiator's Kodohide Legguards
+							i(70291),	-- Ruthless Gladiator's Wyrmhide Legguards
+							i(70351),	-- Ruthless Gladiator's Boots of Alacrity
+							i(70348),	-- Ruthless Gladiator's Boots of Cruelty
+							i(70358),	-- Ruthless Gladiator's Footguards of Alacrity
+							i(70344),	-- Ruthless Gladiator's Footguards of Meditation
+							i(70330),	-- Ruthless Gladiator's Armbands of Meditation
+							i(70342),	-- Ruthless Gladiator's Armbands of Prowess
+							i(70334),	-- Ruthless Gladiator's Bracers of Meditation
+							i(70325),	-- Ruthless Gladiator's Bracers of Prowess
+							i(70363),	-- Ruthless Gladiator's Cuffs of Accuracy
+							i(70366),	-- Ruthless Gladiator's Cuffs of Meditation
+							i(70365),	-- Ruthless Gladiator's Cuffs of Prowess
+							i(70340),	-- Ruthless Gladiator's Wristguards of Accuracy
+							i(70338),	-- Ruthless Gladiator's Wristguards of Alacrity
+							i(71281),	-- Balespider's Handwraps
+							i(71046),	-- Dark Phoenix Gloves
+							i(71292),	-- Erupting Volcanic Gloves
+							i(71302),	-- Erupting Volcanic Grips
+							i(71297),	-- Erupting Volcanic Handwraps
+							i(71286),	-- Firehawk Gloves
+							i(71050),	-- Flamewaker's Gloves
+							i(71069),	-- Gauntlets of the Molten Giant
+							i(71276),	-- Gloves of the Cleansing Flame
+							i(70943),	-- Handguards of the Molten Giant
+							i(71271),	-- Handwraps of the Cleansing Flame
+							i(71064),	-- Immolation Gauntlets
+							i(71092),	-- Immolation Gloves
+							i(70949),	-- Immolation Handguards
+							i(70260),	-- Ruthless Gladiator's Chain Gauntlets
+							i(70314),	-- Ruthless Gladiator's Felweave Handguards
+							i(70295),	-- Ruthless Gladiator's Leather Gloves
+							i(70270),	-- Ruthless Gladiator's Linked Gauntlets
+							i(70275),	-- Ruthless Gladiator's Mail Gauntlets
+							i(70304),	-- Erupting Volcanic Legguards
+							i(70354),	-- Ruthless Gladiator's Ornamented Gloves
+							i(70255),	-- Ruthless Gladiator's Plate Gauntlets
+							i(70265),	-- Ruthless Gladiator's Ringmail Gauntlets
+							i(70309),	-- Ruthless Gladiator's Satin Gloves
+							i(70250),	-- Ruthless Gladiator's Scaled Gauntlets
+							i(70299),	-- Ruthless Gladiator's Silk Handguards
+							i(70319),	-- Ruthless Gladiator's Clasp of Cruelty
+							i(70332),	-- Ruthless Gladiator's Clasp of Meditation
+							i(70362),	-- Ruthless Gladiator's Cord of Accuracy
+							i(70360),	-- Ruthless Gladiator's Cord of Cruelty
+							i(70368),	-- Ruthless Gladiator's Cord of Meditation
+							i(70339),	-- Ruthless Gladiator's Links of Accuracy
+							i(70336),	-- Ruthless Gladiator's Links of Cruelty
+							i(70331),	-- Ruthless Gladiator's Waistguard of Cruelty
+							i(70328),	-- Ruthless Gladiator's Waistguard of Meditation
+							i(71283),	-- Balespider's Leggings
+							i(71048),	-- Dark Phoenix Legguards
+							i(71294),	-- Erupting Volcanic Kilt
+							i(71304),	-- Ruthless Gladiator's Mooncloth Gloves
+							i(71299),	-- Erupting Volcanic Legwraps
+							i(71288),	-- Firehawk Leggings
+							i(71052),	-- Flamewaker's Legguards
+							i(71094),	-- Immolation Greaves
+							i(70947),	-- Immolation Legguards
+							i(71066),	-- Immolation Legplates
+							i(71278),	-- Leggings of the Cleansing Flame
+							i(70942),	-- Legguards of the Molten Giant
+							i(71071),	-- Legplates of the Molten Giant
+							i(71273),	-- Legwraps of the Cleansing Flame
+							i(70262),	-- Ruthless Gladiator's Chain Leggings
+							i(70316),	-- Ruthless Gladiator's Felweave Trousers
+							i(70297),	-- Ruthless Gladiator's Leather Legguards
+							i(70272),	-- Ruthless Gladiator's Linked Leggings
+							i(70277),	-- Ruthless Gladiator's Mail Leggings
+							i(70306),	-- Ruthless Gladiator's Mooncloth Legging
+							i(70356),	-- Ruthless Gladiator's Ornamented Legplates
+							i(70257),	-- Ruthless Gladiator's Plate Legguards
+							i(70267),	-- Ruthless Gladiator's Ringmail Leggings
+							i(70311),	-- Ruthless Gladiator's Satin Leggings
+							i(70252),	-- Ruthless Gladiator's Scaled Legguards
+							i(70301),	-- Ruthless Gladiator's Silk Trousers
+							i(70324),	-- Ruthless Gladiator's Greaves of Alacrity
+							i(70333),	-- Ruthless Gladiator's Greaves of Meditation
+							i(70341),	-- Ruthless Gladiator's Sabatons of Alacrity
+							i(70337),	-- Ruthless Gladiator's Sabatons of Alacrity
+							i(70335),	-- Ruthless Gladiator's Sabatons of Cruelty
+							i(70329),	-- Ruthless Gladiator's Sabatons of Meditation
+							i(70364),	-- Ruthless Gladiator's Treads of Alacrity
+							i(70361),	-- Ruthless Gladiator's Treads of Cruelty
+							i(70367),	-- Ruthless Gladiator's Treads of Meditation
+							i(70381),	-- Ruthless Gladiator's Choker of Proficiency
+							i(70382),	-- Ruthless Gladiator's Choker of Accuracy
+							i(70380),	-- Ruthless Gladiator's Necklace of Proficiency
+							i(70376),	-- Ruthless Gladiator's Pendant of Diffusion
+							i(70377),	-- Ruthless Gladiator's Pendant of Alacrity
+							i(70375),	-- Ruthless Gladiator's Ring of Cruelty
+							i(70374),	-- Ruthless Gladiator's Ring of Accuracy
+							i(70371),	-- Ruthless Gladiator's Band of Meditation
+							i(70370),	-- Ruthless Gladiator's Band of Accuracy
+							i(70372),	-- Ruthless Gladiator's Signet of Cruelty
+							i(70369),	-- Ruthless Gladiator's Band of Cruelty
+							i(70373),	-- Ruthless Gladiator's Signet of Accuracy
+							i(70379),	-- Ruthless Gladiator's Necklace of Prowess
+							i(70378),	-- Ruthless Gladiator's Pendant of Meditation
+							a(i(70391)),	-- Ruthless Gladiator's Medallion of Meditation (Alliance)
+							h(i(70394)),	-- Ruthless Gladiator's Medallion of Meditation (Horde)
+							a(i(70390)),	-- Ruthless Gladiator's Medallion of Cruelty (Alliance)
+							h(i(70393)),	-- Ruthless Gladiator's Medallion of Cruelty (Horde)
+							h(i(70395)),	-- Ruthless Gladiator's Medallion of Tenacity (Horde)
+							a(i(70392)),	-- Ruthless Gladiator's Medallion of Tenacity (Alliance)
+							i(70401),	-- Ruthless Gladiator's Badge of Dominance
+							i(70400),	-- Ruthless Gladiator's Badge of Victory
+							i(70399),	-- Ruthless Gladiator's Badge of Conquest
+							i(70398),	-- Ruthless Gladiator's Emblem of Tenacity
+							i(70397),	-- Ruthless Gladiator's Emblem of Meditation
+							i(70396),	-- Ruthless Gladiator's Emblem of Cruelty
+							i(70402),	-- Ruthless Gladiator's Insignia of Dominance
+							i(70403),	-- Ruthless Gladiator's Insignia of Victory
+							i(70404),	-- Ruthless Gladiator's Insignia of Conquest
 						},
 						["creatureID"] = 52363,
 					}),
