@@ -878,9 +878,9 @@ _.GearSets =
 									i(41852),	-- Savage Gladiator's Mooncloth Hood	
 									i(41867),	-- Savage Gladiator's Mooncloth Mantle	
 									i(41857),	-- Savage Gladiator's Mooncloth Robe	
-									i(41878),		
+									i(41878),	-- Hateful Gladiator's Cuffs of Salvation
 									i(41872),	-- Savage Gladiator's Mooncloth Gloves	
-									i(41877),	-- 
+									i(41877),	-- Hateful Gladiator's Cord of Salvation
 									i(41862),	-- Savage Gladiator's Mooncloth Leggings	
 									i(44900),	-- Savage Gladiator's Mooncloth 	
 								}),			
@@ -888,9 +888,9 @@ _.GearSets =
 									i(41913),	-- Savage Gladiator's Satin Hood	
 									i(41931),	-- Savage Gladiator's Satin Mantle	
 									i(41919),	-- Savage Gladiator's Satin Robe	
-									i(41878),		
+									i(41878),	-- Hateful Gladiator's Cuffs of Salvation
 									i(41938),	-- Savage Gladiator's Satin Gloves	
-									i(41877),	-- 
+									i(41877),	-- Hateful Gladiator's Cord of Salvation
 									i(41925),	-- Savage Gladiator's Satin Leggings	
 									i(41879),	-- Savage Gladiator's Satin 	
 								}),			
@@ -902,11 +902,11 @@ _.GearSets =
 								i(41944),	-- Savage Gladiator's Silk Cowl		
 								i(41963),	-- Savage Gladiator's Silk Amice		
 								i(41950),	-- Savage Gladiator's Silk Raiment		
-								i(41907),			
+								i(41907),	-- Hateful Gladiator's Cuffs of Dominance
 								i(41969),	-- Savage Gladiator's Silk Handguards		
-								i(41896),			
+								i(41896),	-- Hateful Gladiator's Cord of Dominance
 								i(41957),	-- Savage Gladiator's Silk Trousers		
-								i(41901),			
+								i(41901),	-- Hateful Gladiator's Slippers of Dominance
 							},				
 							["classes"] = { 8 }, -- Mage				
 						}),					
@@ -915,11 +915,11 @@ _.GearSets =
 								i(41991),	-- Savage Gladiator's Felweave Cowl		
 								i(42009),	-- Savage Gladiator's Felweave Amice		
 								i(42001),	-- Savage Gladiator's Felweave Raiment		
-								i(147586),			
+								i(147586),	-- Hateful Gladiator's Cuffs of Ascendancy
 								i(42015),	-- Savage Gladiator's Felweave Handguards		
-								i(147587),			
+								i(147587),	-- Hateful Gladiator's Cord of Ascendancy
 								i(42003),	-- Savage Gladiator's Felweave Trousers		
-								i(147588),			
+								i(147588),	-- Hateful Gladiator's Slippers of Ascendancy
 							},				
 							["classes"] = { 9 }, -- Warlock				
 						}),					
@@ -929,11 +929,11 @@ _.GearSets =
 									i(41319),	-- Savage Gladiator's Kodohide Helm	
 									i(41273),	-- Savage Gladiator's Kodohide Spaulders	
 									i(41308),	-- Savage Gladiator's Kodohide Robes	
-									i(41638),		
+									i(41638),	-- Hateful Gladiator's Armwraps of Dominance
 									i(41284),	-- Savage Gladiator's Kodohide Gloves	
-									i(41628),		
+									i(41628),	-- Hateful Gladiator's Belt of Dominance
 									i(41296),	-- Savage Gladiator's Kodohide Legguards	
-									i(44891),		
+									i(44891),	-- Titan-Forged Boots of Dominance
 								}),			
 								n(-9926, { -- Balance Druid			
 									i(41325),	-- Savage Gladiator's Wyrmhide Helm	
@@ -963,11 +963,11 @@ _.GearSets =
 								i(41670),	-- Savage Gladiator's Leather Helm		
 								i(41681),	-- Savage Gladiator's Leather Spaulders		
 								i(41648),	-- Savage Gladiator's Leather Tunic		
-								i(41830),			
+								i(41830),	-- Hateful Gladiator's Armwraps of Triumph
 								i(41765),	-- Savage Gladiator's Leather Gloves		
-								i(41827),			
+								i(41827),	-- Hateful Gladiator's Belt of Triumph
 								i(41653),	-- Savage Gladiator's Leather Legguards		
-								i(41828),			
+								i(41828),	-- Hateful Gladiator's Boots of Triumph
 							},				
 							["classes"] = { 4 }, -- Rogue				
 						}),					
@@ -976,11 +976,11 @@ _.GearSets =
 								i(41155),	-- Savage Gladiator's Chain Helm		
 								i(41215),	-- Savage Gladiator's Chain Spaulders		
 								i(41085),	-- Savage Gladiator's Chain Armor		
-								i(41223),			
+								i(41223),	-- Hateful Gladiator's Wristguards of Triumph
 								i(41141),	-- Savage Gladiator's Chain Gauntlets		
-								i(41233),			
+								i(41233),	-- Hateful Gladiator's Waistguard of Triumph
 								i(41203),	-- Savage Gladiator's Chain Leggings		
-								i(41228),			
+								i(41228),	-- Hateful Gladiator's Sabatons of Triumph
 							},				
 							["classes"] = { 3 }, -- Hunter				
 						}),					
@@ -990,11 +990,11 @@ _.GearSets =
 									i(41017),	-- Savage Gladiator's Mail Helm	
 									i(41042),	-- Savage Gladiator's Mail Spaulders	
 									i(40989),	-- Savage Gladiator's Mail Armor	
-									i(41047),		
+									i(41047),	-- Hateful Gladiator's Wristguards of Salvation
 									i(41005),	-- Savage Gladiator's Mail Gauntlets	
-									i(41050),		
+									i(41050),	-- Hateful Gladiator's Waistguard of Salvation
 									i(41031),	-- Savage Gladiator's Mail Leggings	
-									i(44897),		
+									i(44897),	-- Titan-Forged Sabatons of Salvation
 								}),			
 								n(-9940, { -- Enhancement Shaman			
 									i(41149),	-- Savage Gladiator's Linked Helm	
@@ -1025,11 +1025,11 @@ _.GearSets =
 									i(40931),	-- Savage Gladiator's Ornamented Headcover	
 									i(40961),	-- Savage Gladiator's Ornamented Spaulders	
 									i(40904),	-- Savage Gladiator's Ornamented Chestguard	
-									i(40972),		
+									i(40972),	-- Hateful Gladiator's Bracers of Salvation
 									i(40925),	-- Savage Gladiator's Ornamented Gloves	
-									i(40966),		
+									i(40966),	-- Hateful Gladiator's Girdle of Salvation
 									i(40937),	-- Savage Gladiator's Ornamented Legplates	
-									i(44894),		
+									i(44894),	-- Titan-Forged Greaves of Salvation
 								}),			
 								n(-9912, { -- Protection / Retribution Paladin			
 									i(40821),	-- Savage Gladiator's Scaled Helm	
@@ -1049,11 +1049,11 @@ _.GearSets =
 								i(40819),	-- Savage Gladiator's Plate Helm		
 								i(40859),	-- Savage Gladiator's Plate Shoulders		
 								i(40783),	-- Savage Gladiator's Plate Chestpiece		
-								i(40887),			
+								i(40887),	-- Hateful Gladiator's Bracers of Triumph
 								i(40801),	-- Savage Gladiator's Plate 		
-								i(40877),			
+								i(40877),	-- Hateful Gladiator's Girdle of Triumph
 								i(40840),	-- Savage Gladiator's Plate 		
-								i(40878),			
+								i(40878),	-- Hateful Gladiator's Greaves of Triumph
 							},				
 							["classes"] = { 1 }, -- Warrior				
 						}),					
@@ -1062,11 +1062,11 @@ _.GearSets =
 								i(40820),	-- Savage Gladiator's Dreadplate Helm		
 								i(40860),	-- Savage Gladiator's Dreadplate Shoulders		
 								i(40781),	-- Savage Gladiator's Dreadplate Chestpiece		
-								i(147583),			
+								i(147583),	-- Hateful Gladiator's Bracers of Victory
 								i(40803),	-- Savage Gladiator's Dreadplate 		
-								i(147584),			
+								i(147584),	-- Hateful Gladiator's Girdle of Victory
 								i(40841),	-- Savage Gladiator's Dreadplate 		
-								i(147585),			
+								i(147585),	-- Hateful Gladiator's Greaves of Victory
 							},				
 							["classes"] = { 6 }, -- Death Knight				
 						}),					
