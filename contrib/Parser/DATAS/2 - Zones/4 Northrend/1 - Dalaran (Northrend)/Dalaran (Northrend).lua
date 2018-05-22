@@ -4009,6 +4009,76 @@ _.Zones =
 								i(42448),	-- Savage Gladiator's Touch of Defeat
 								i(44415),	-- Savage Gladiator's War Staff
 							}),
+							i(146585, { -- Ensemble: Savage Gladiator's Satin Armor		
+								i(41912),	-- Savage Gladiator's Satin Hood
+								i(41930),	-- Savage Gladiator's Satin Mantle
+								i(41918),	-- Savage Gladiator's Satin Robe
+								i(41937),	-- Savage Gladiator's Satin Gloves
+								i(41924),	-- Savage Gladiator's Satin Leggings
+							}),		
+							i(146587, { -- Ensemble: Savage Gladiator's Silk Armor		
+								i(41943),	-- Savage Gladiator's Silk Cowl
+								i(41962),	-- Savage Gladiator's Silk Amice
+								i(41949),	-- Savage Gladiator's Silk Raiment
+								i(41968),	-- Savage Gladiator's Silk Handguards
+								i(41956),	-- Savage Gladiator's Silk Trousers
+							}),		
+							i(146581, { -- Ensemble: Savage Gladiator's Felweave Armor		
+								i(41990),	-- Savage Gladiator's Felweave Cowl
+								i(42008),	-- Savage Gladiator's Felweave Amice
+								i(41996),	-- Savage Gladiator's Felweave Raiment
+								i(42014),	-- Savage Gladiator's Felweave Handguards
+								i(42002),	-- Savage Gladiator's Felweave Trousers
+							}),		
+							i(146579, { -- Ensemble: Savage Gladiator's Dragonhide Armor		
+								i(41675),	-- Savage Gladiator's Dragonhide Helm
+								i(41712),	-- Savage Gladiator's Dragonhide Spaulders
+								i(41658),	-- Savage Gladiator's Dragonhide Robes
+								i(41770),	-- Savage Gladiator's Dragonhide Gloves
+								i(41664),	-- Savage Gladiator's Dragonhide Legguards
+							}),		
+							i(146582, { -- Ensemble: Savage Gladiator's Leather Armor		
+								i(41644),	-- Savage Gladiator's Leather Helm
+								i(41646),	-- Savage Gladiator's Leather Spaulders
+								i(41647),	-- Savage Gladiator's Leather Tunic
+								i(41643),	-- Savage Gladiator's Leather Gloves
+								i(41645),	-- Savage Gladiator's Leather Legguards
+							}),		
+							i(146578, { -- Ensemble: Savage Gladiator's Chain Armor		
+								i(41154),	-- Savage Gladiator's Chain Helm
+								i(41214),	-- Savage Gladiator's Chain Spaulders
+								i(41084),	-- Savage Gladiator's Chain Armor
+								i(41140),	-- Savage Gladiator's Chain Gauntlets
+								i(41202),	-- Savage Gladiator's Chain Leggings
+							}),		
+							i(146584, { -- Ensemble: Savage Gladiator's Ringmail Armor		
+								i(41010),	-- Savage Gladiator's Ringmail Helm
+								i(41024),	-- Savage Gladiator's Ringmail Spaulders
+								i(40986),	-- Savage Gladiator's Ringmail Armor
+								i(40998),	-- Savage Gladiator's Ringmail Gauntlets
+								i(41023),	-- Savage Gladiator's Ringmail Leggings
+							}),		
+							i(146586, { -- Ensemble: Savage Gladiator's Scaled Armor		
+								i(40818),	-- Savage Gladiator's Scaled Helm
+								i(40858),	-- Savage Gladiator's Scaled Shoulders
+								i(40780),	-- Savage Gladiator's Scaled Chestpiece
+								i(40798),	-- Savage Gladiator's Scaled Gauntlets
+								i(40838),	-- Savage Gladiator's Scaled Legguards
+							}),		
+							i(146583, { -- Ensemble: Savage Gladiator's Plate Armor		
+								i(40816),	-- Savage Gladiator's Plate Helm
+								i(40856),	-- Savage Gladiator's Plate Shoulders
+								i(40778),	-- Savage Gladiator's Plate Chestpiece
+								i(40797),	-- Savage Gladiator's Plate 
+								i(40836),	-- Savage Gladiator's Plate 
+							}),		
+							i(146580, { -- Ensemble: Savage Gladiator's Dreadplate Armor		
+								i(40817),	-- Savage Gladiator's Dreadplate Helm
+								i(40857),	-- Savage Gladiator's Dreadplate Shoulders
+								i(40779),	-- Savage Gladiator's Dreadplate Chestpiece
+								i(40799),	-- Savage Gladiator's Dreadplate 
+								i(40837),	-- Savage Gladiator's Dreadplate 
+							}),		
 							i(41278),	-- Savage Gladiator's Wyrmhide Spaulders
 							i(40778),	-- Savage Gladiator's Plate Chestpiece
 							i(40780),	-- Savage Gladiator's Scaled Chestpiece
