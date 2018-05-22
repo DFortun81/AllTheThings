@@ -590,7 +590,9 @@ _.Instances = { tier(1, {	-- Classic
 			 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
 				dr(8.0, i(13008)),	-- Dalewind Trousers
 				dr(3.0, i(13075)),	-- Direwing Legguards
+				dr(6.0, i(13125)),	-- Elven Chain Boots
 				dr(4.0, i(13113)),	-- Feathermoon Headdress
+				dr(2.0, i(13003)),	-- Lord Alexander's Battle Axe
 				dr(7.0, i(13144)),	-- Serenity Belt
 				dr(3.0, i(13146)),	-- Shell Launcher Shotgun
 				dr(3.0, i(13072)),	-- Stonegrip Gauntlets

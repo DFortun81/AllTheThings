@@ -169,10 +169,10 @@ _.PVP =
 			}),
 			n(-303, {	-- Level 85-89
 				["groups"] = {
-					i(134754),	-- Veiled Cuffs
-					i(134752),	-- Veiled Leggings
-					i(134753),	-- Veiled Mantle
-					i(134751),	-- Veiled Raiment
+					i(134754),	-- Veiled Cuffs*
+					i(134752),	-- Veiled Leggings*
+					i(134753),	-- Veiled Mantle*
+					i(134751),	-- Veiled Raiment*
 					i(134762),	-- Masked Bindings
 					i(134760),	-- Masked Leggings
 					i(134761),	-- Masked Shoulderpads
@@ -187,14 +187,15 @@ _.PVP =
 					i(134769),	-- Concealment Shoulderplates
 					i(134748),	-- Covert Shanker
 					i(134749),	-- Covert Rifle
-					i(134757),	-- Covert Reprieve
+					i(134757),	-- Covert Reprieve*
 					i(134747),	-- Covert Cleaver
 					i(134775),	-- Covert Hacker
-					i(134756),	-- Covert Gavel
+					i(134756),	-- Covert Gavel*
 					i(134758),	-- Covert Mageblade
 					i(134750),	-- Covert Pike
 					i(134774),	-- Covert Barrier
 					i(134746),	-- Covert Greatsword
+					i(134772),	-- Covert Band*
 				},
 				["description"] = "Rewarded for winning a random battleground in the level 85-89 range.",
 				["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
