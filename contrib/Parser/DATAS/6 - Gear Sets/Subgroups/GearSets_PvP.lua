@@ -4,46 +4,6 @@
 _.GearSets = 
 {
 	n(-4189, {	-- PvP Item Sets
-		--[[ TEMPLATE
-		gsh(,{	-- Legion Season 3 & 4
-			["groups"] = {
-				a(n(-9914, {	-- Alliance
-					gssh(, {	-- Combatant
-						["groups"] = {
-						},
-						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
-					}),
-					gssh(, {	-- Gladiator
-						["groups"] = {
-						},
-						["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
-					}),
-					gssh(, {	-- Elite
-						["groups"] = {
-						},
-						["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-					}),
-				})),
-				h(n(-9913, {	-- Horde
-					gssh(, {	-- Combatant
-						["groups"] = {
-						},
-						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
-					}),
-					gssh(, {	-- Gladiator
-						["groups"] = {
-						},
-						["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
-					}),
-					gssh(, {	-- Elite
-						["groups"] = {
-						},
-						["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-					}),
-				})),
-			},
-			["achievementID"] = ,	-- <Achievement Name>
-		}),--]]
 		gsh(973, {	-- Season 1
 			["groups"] = {
 				gs(973, {	-- Gladiator's Satin Armor
@@ -909,6 +869,209 @@ _.GearSets =
 						}),		
 					},
 					["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
+				}),
+				gssh(376, { -- Honor
+					["groups"] = {
+						gs(376, {	-- Savage Gladiator's Satin Armor				
+							["groups"] = {				
+								n(-9951, { -- Holy/Discipline Priest			
+									i(41852),	-- Savage Gladiator's Mooncloth Hood	
+									i(41867),	-- Savage Gladiator's Mooncloth Mantle	
+									i(41857),	-- Savage Gladiator's Mooncloth Robe	
+									i(41878),		
+									i(41872),	-- Savage Gladiator's Mooncloth Gloves	
+									i(41877),	-- 
+									i(41862),	-- Savage Gladiator's Mooncloth Leggings	
+									i(44900),	-- Savage Gladiator's Mooncloth 	
+								}),			
+								n(-9917, { -- Shadow Priest			
+									i(41913),	-- Savage Gladiator's Satin Hood	
+									i(41931),	-- Savage Gladiator's Satin Mantle	
+									i(41919),	-- Savage Gladiator's Satin Robe	
+									i(41878),		
+									i(41938),	-- Savage Gladiator's Satin Gloves	
+									i(41877),	-- 
+									i(41925),	-- Savage Gladiator's Satin Leggings	
+									i(41879),	-- Savage Gladiator's Satin 	
+								}),			
+							},				
+							["classes"] = { 5 }, -- Priest				
+						}),					
+						gs(802, {	-- Savage Gladiator's Silk Armor				
+							["groups"] = {				
+								i(41944),	-- Savage Gladiator's Silk Cowl		
+								i(41963),	-- Savage Gladiator's Silk Amice		
+								i(41950),	-- Savage Gladiator's Silk Raiment		
+								i(41907),			
+								i(41969),	-- Savage Gladiator's Silk Handguards		
+								i(41896),			
+								i(41957),	-- Savage Gladiator's Silk Trousers		
+								i(41901),			
+							},				
+							["classes"] = { 8 }, -- Mage				
+						}),					
+						gs(798, {	-- Savage Gladiator's Felweave Armor				
+							["groups"] = {				
+								i(41991),	-- Savage Gladiator's Felweave Cowl		
+								i(42009),	-- Savage Gladiator's Felweave Amice		
+								i(42001),	-- Savage Gladiator's Felweave Raiment		
+								i(147586),			
+								i(42015),	-- Savage Gladiator's Felweave Handguards		
+								i(147587),			
+								i(42003),	-- Savage Gladiator's Felweave Trousers		
+								i(147588),			
+							},				
+							["classes"] = { 9 }, -- Warlock				
+						}),					
+						gs(804, {	-- Savage Gladiator's Dragonhide Armor				
+							["groups"] = {				
+								n(-9952, { -- Guardian/Feral Druid			
+									i(41319),	-- Savage Gladiator's Kodohide Helm	
+									i(41273),	-- Savage Gladiator's Kodohide Spaulders	
+									i(41308),	-- Savage Gladiator's Kodohide Robes	
+									i(41638),		
+									i(41284),	-- Savage Gladiator's Kodohide Gloves	
+									i(41628),		
+									i(41296),	-- Savage Gladiator's Kodohide Legguards	
+									i(44891),		
+								}),			
+								n(-9926, { -- Balance Druid			
+									i(41325),	-- Savage Gladiator's Wyrmhide Helm	
+									i(41279),	-- Savage Gladiator's Wyrmhide Spaulders	
+									i(41314),	-- Savage Gladiator's Wyrmhide Robes	
+									i(41332),		
+									i(41291),	-- Savage Gladiator's Wyrmhide Gloves	
+									i(41330),		
+									i(41302),	-- Savage Gladiator's Wyrmhide Legguards	
+									i(44892),		
+								}),			
+								n(-9927, { -- Restoration Druid			
+									i(41676),	-- Savage Gladiator's Dragonhide Helm	
+									i(41713),	-- Savage Gladiator's Dragonhide Spaulders	
+									i(41659),	-- Savage Gladiator's Dragonhide Robes	
+									i(41332),		
+									i(41771),	-- Savage Gladiator's Dragonhide Gloves	
+									i(41330),		
+									i(41665),	-- Savage Gladiator's Dragonhide Legguards	
+									i(41633),		
+								}),			
+							},				
+							["classes"] = { 11 }, -- Druid				
+						}),					
+						gs(800, {	-- Savage Gladiator's Leather Armor				
+							["groups"] = {				
+								i(41670),	-- Savage Gladiator's Leather Helm		
+								i(41681),	-- Savage Gladiator's Leather Spaulders		
+								i(41648),	-- Savage Gladiator's Leather Tunic		
+								i(41830),			
+								i(41765),	-- Savage Gladiator's Leather Gloves		
+								i(41827),			
+								i(41653),	-- Savage Gladiator's Leather Legguards		
+								i(41828),			
+							},				
+							["classes"] = { 4 }, -- Rogue				
+						}),					
+						gs(803, {	-- Savage Gladiator's Chain Armor				
+							["groups"] = {				
+								i(41155),	-- Savage Gladiator's Chain Helm		
+								i(41215),	-- Savage Gladiator's Chain Spaulders		
+								i(41085),	-- Savage Gladiator's Chain Armor		
+								i(41223),			
+								i(41141),	-- Savage Gladiator's Chain Gauntlets		
+								i(41233),			
+								i(41203),	-- Savage Gladiator's Chain Leggings		
+								i(41228),			
+							},				
+							["classes"] = { 3 }, -- Hunter				
+						}),					
+						gs(799, {	-- Savage Gladiator's Ringmail Armor				
+							["groups"] = {				
+								n(-9939, { -- Elemental Shaman			
+									i(41017),	-- Savage Gladiator's Mail Helm	
+									i(41042),	-- Savage Gladiator's Mail Spaulders	
+									i(40989),	-- Savage Gladiator's Mail Armor	
+									i(41047),		
+									i(41005),	-- Savage Gladiator's Mail Gauntlets	
+									i(41050),		
+									i(41031),	-- Savage Gladiator's Mail Leggings	
+									i(44897),		
+								}),			
+								n(-9940, { -- Enhancement Shaman			
+									i(41149),	-- Savage Gladiator's Linked Helm	
+									i(41209),	-- Savage Gladiator's Linked Spaulders	
+									i(41079),	-- Savage Gladiator's Linked Armor	
+									i(41063),		
+									i(41135),	-- Savage Gladiator's Linked Gauntlets	
+									i(41068),		
+									i(41162),	-- Savage Gladiator's Linked Leggings	
+									i(41073),		
+								}),			
+								n(-9941, { -- Restoration Shaman			
+									i(41011),	-- Savage Gladiator's Ringmail Helm	
+									i(41036),	-- Savage Gladiator's Ringmail Spaulders	
+									i(40988),	-- Savage Gladiator's Ringmail Armor	
+									i(41047),		
+									i(40999),	-- Savage Gladiator's Ringmail Gauntlets	
+									i(41050),		
+									i(41025),	-- Savage Gladiator's Ringmail Leggings	
+									i(41049),		
+								}),			
+							},				
+							["classes"] = { 7 }, -- Shaman				
+						}),					
+						gs(801, {	-- Savage Gladiator's Scaled Armor				
+							["groups"] = {				
+								n(-9942, { -- Holy Paladin			
+									i(40931),	-- Savage Gladiator's Ornamented Headcover	
+									i(40961),	-- Savage Gladiator's Ornamented Spaulders	
+									i(40904),	-- Savage Gladiator's Ornamented Chestguard	
+									i(40972),		
+									i(40925),	-- Savage Gladiator's Ornamented Gloves	
+									i(40966),		
+									i(40937),	-- Savage Gladiator's Ornamented Legplates	
+									i(44894),		
+								}),			
+								n(-9912, { -- Protection / Retribution Paladin			
+									i(40821),	-- Savage Gladiator's Scaled Helm	
+									i(40861),	-- Savage Gladiator's Scaled Shoulders	
+									i(40782),	-- Savage Gladiator's Scaled Chestpiece	
+									i(40972),		
+									i(40802),	-- Savage Gladiator's Scaled Gauntlets	
+									i(40966),		
+									i(40842),	-- Savage Gladiator's Scaled Legguards	
+									i(40973),		
+								}),			
+							},				
+							["classes"] = { 2 }, -- Paladin				
+						}),					
+						gs(797, {	-- Savage Gladiator's Plate Armor				
+							["groups"] = {				
+								i(40819),	-- Savage Gladiator's Plate Helm		
+								i(40859),	-- Savage Gladiator's Plate Shoulders		
+								i(40783),	-- Savage Gladiator's Plate Chestpiece		
+								i(40887),			
+								i(40801),	-- Savage Gladiator's Plate 		
+								i(40877),			
+								i(40840),	-- Savage Gladiator's Plate 		
+								i(40878),			
+							},				
+							["classes"] = { 1 }, -- Warrior				
+						}),					
+						gs(805, {	-- Savage Gladiator's Dreadplate Armor				
+							["groups"] = {				
+								i(40820),	-- Savage Gladiator's Dreadplate Helm		
+								i(40860),	-- Savage Gladiator's Dreadplate Shoulders		
+								i(40781),	-- Savage Gladiator's Dreadplate Chestpiece		
+								i(147583),			
+								i(40803),	-- Savage Gladiator's Dreadplate 		
+								i(147584),			
+								i(40841),	-- Savage Gladiator's Dreadplate 		
+								i(147585),			
+							},				
+							["classes"] = { 6 }, -- Death Knight				
+						}),					
+					},
+					["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple Skull
 				}),
 			},					
 			["achievementID"] = 11710, -- Lethal Looks					
