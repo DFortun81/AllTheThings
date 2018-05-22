@@ -3,9 +3,9 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(742, { 	-- Blackwing Lair
+	inst(742, {	-- Blackwing Lair
 		["groups"] = {
-			n(0, {		-- Zone Drop
+			n(0, {	-- Zone Drop
 				n(12457, {	-- Blackwing Spellbinder
 					dr(0.4, i(19434)),	-- Band of Dark Dominion
 					dr(0.5, i(19362)),	-- Doom's Edge
@@ -50,7 +50,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(1.4, i(19358)),	-- Draconic Maul
 				}),
 			}),
-			e(1529, { -- Razoregore the Untamed
+			e( 1529, {	-- Razoregore the Untamed
 				["groups"] = {
 					i(93036),	-- Unscathed Egg (Pet)
 					i(19334),	-- The Untamed Blade
@@ -71,7 +71,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["creatureID"] = 12435,
 			}),
-			e(1530, { -- Vaelastrasz the Corrupt
+			e( 1530, {	-- Vaelastrasz the Corrupt
 				["groups"] = {
 					i(19346),	-- Dragonfang Blade
 					i(19348),	-- Red Dragonscale Protector
@@ -91,7 +91,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["creatureID"] = 13020,
 			}),
-			e(1531, { -- Broodlord Lashlayer
+			e( 1531, {	-- Broodlord Lashlayer
 				["groups"] = {
 					i(93037),	-- Blackwing Banner (Pet)
 					i(19351),	-- Maladath, Runed Blade of the Black Flight
@@ -112,7 +112,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["creatureID"] = 12017,
 			}),
-			e(1532, { -- Firemaw
+			e( 1532, {	-- Firemaw
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
@@ -144,7 +144,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(44956),	-- Goblin's Guide to Elementium
 				dr(7, i(18562)),	-- Elementium Ingot
 			}),
-			e(1533, { -- Ebonroc
+			e( 1533, {	-- Ebonroc
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
@@ -170,7 +170,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["creatureID"] = 14601,
 			}),
-			e(1534, { -- Flamegor
+			e( 1534, {	-- Flamegor
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19357),	-- Herald of Woe
@@ -196,7 +196,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["creatureID"] = 11981,
 			}),
-			e(1535, { -- Chromaggus
+			e( 1535, {	-- Chromaggus
 				["groups"] = {
 					i(93038),	-- Whistle of Chromatic Bone
 					i(19352),	-- Chromatically Tempered Sword
@@ -224,7 +224,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["creatureID"] = 14020,
 			}),
-			e(1536, { -- Nefarian
+			e( 1536, {	-- Nefarian
 				["groups"] = {
 					ach(685),	-- Blackwing Lair
 					i(19003, {	-- Head of Nefarian
@@ -276,7 +276,9 @@ _.Instances = { tier(1, {	-- Classic
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
 					dr(7.0, i(13008)),	-- Dalewind Trousers
 					dr(3.0, i(13075)),	-- Direwing Legguards
+					dr(5.0, i(13125)),	-- Elven Chain Boots
 					dr(5.0, i(13113)),	-- Feathermoon Headdress
+					dr(3.0, i(13003)),	-- Lord Alexander's Battle Axe
 					dr(7.0, i(13144)),	-- Serenity Belt
 					dr(4.0, i(13146)),	-- Shell Launcher Shotgun
 					dr(3.0, i(13072)),	-- Stonegrip Gauntlets
