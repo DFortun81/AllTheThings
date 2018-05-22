@@ -611,18 +611,7 @@ AllTheThings.Locales.enUS = {
 		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",			-- Class Trial Item Sets
 		[-5352] = "Interface\\Icons\\creatureportrait_portal_eyeofthestormhorde",	-- Tier Sets
 		[-6012] = "Interface\\Icons\\achievement_bg_masterofallbgs",			-- World Event Item Sets
-		[-9901] = "Interface\\Icons\\ClassIcon_Priest", 						-- Priest
-		[-9902] = "Interface\\Icons\\ClassIcon_Mage", 							-- Mage
-		[-9903] = "Interface\\Icons\\ClassIcon_Warlock", 						-- Warlock
-		[-9904] = "Interface\\Icons\\ClassIcon_Druid", 							-- Druid
-		[-9905] = "Interface\\Icons\\ClassIcon_Rogue", 							-- Rogue
-		[-9906] = "Interface\\Icons\\ClassIcon_Monk", 							-- Monk
-		[-9907] = "Interface\\Icons\\ClassIcon_DemonHunter", 					-- Demon Hunter
-		[-9908] = "Interface\\Icons\\ClassIcon_Hunter", 						-- Hunter
-		[-9909] = "Interface\\Icons\\ClassIcon_Shaman", 						-- Shaman
-		[-9910] = "Interface\\Icons\\ClassIcon_Paladin", 						-- Paladin
-		[-9911] = "Interface\\Icons\\ClassIcon_Warrior", 						-- Warrior
-		[-9912] = "Interface\\Icons\\ClassIcon_DeathKnight", 					-- Death Knight
+		[-9912] = "Interface\\Icons\\ClassIcon_Paladin", 	 					-- Protection / Retribution Spec
 		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance", 				-- Alliance
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde", 					-- Horde
 		[-9915] = "Interface\\Icons\\spell_holy_wordfortitude",					-- Discipline Priest Spec
@@ -1361,6 +1350,7 @@ AllTheThings.Locales.enUS = {
 
 		
 -- Classes
+		[-9912] = GetSpellInfo(42206).." & "..GetSpellInfo(137027),					-- Protection / Retribution Paladin Spec
 		[-9915] = GetSpellInfo(137032),	-- Discipline Priest Spec
 		[-9916] = GetSpellInfo(137031),	-- Holy Priest Spec
 		[-9917] = GetSpellInfo(137033),	-- Shadow Priest Spec
