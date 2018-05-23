@@ -8,7 +8,7 @@ _.Achievements =
 		["groups"] = {
 			n(-9955, { -- General
 				ach(6943), -- Complete 100 Scenarios
-			}).
+			}),
 		},
 	}),
 };
