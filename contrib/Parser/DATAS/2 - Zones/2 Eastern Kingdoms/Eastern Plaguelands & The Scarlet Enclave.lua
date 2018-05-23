@@ -211,6 +211,7 @@ _.Zones =
 						},
 						["qg"] = 48704,	-- Gek Nozzlerocket
 						["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
+						["breadcrumbQuestID"] = { 28579, 28580 },	-- Hero's Call/Warchief's Command: Badlands!
 					}),
 					qg(16134, q(27456, { -- Gathering Some Grub(s)
 						i(62981),
