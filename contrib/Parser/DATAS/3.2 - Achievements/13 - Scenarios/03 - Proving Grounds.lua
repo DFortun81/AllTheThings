@@ -7,7 +7,7 @@ _.Achievements =
 	n(-9967, { -- Scenarios
 		["groups"] = {
 			n(-10042, { -- Proving Grounds
-			}).
+			}),
 		},
 	}),
 };
