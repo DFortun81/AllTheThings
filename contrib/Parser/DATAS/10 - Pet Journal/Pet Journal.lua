@@ -263,7 +263,7 @@ _.PetJournal =
 		p(1810),	-- Thornclaw Broodling
 		p(1236),	-- Tito
 		p(405),		-- Tree Python
-		p(2051),	-- Twilight
+		un(35, p(2051)),	-- Twilight
 		p(505),		-- Twilight Iguana
 		p(470),		-- Twilight Spider
 		p(1344),	-- Vengeful Porcupette
