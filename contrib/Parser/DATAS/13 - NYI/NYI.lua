@@ -413,6 +413,30 @@ _.NeverImplemented =
 		["u"] = 1,
 	}))),
 	
+----------------------------------------------------------------
+-- S P E C I A L			B O N U S I D			I T E M S --
+----------------------------------------------------------------
+	{
+		["itemID"] = 147514,	-- Felguard Destroyer's Legplates
+		["bonusID"] = 0,		-- BoE, Cathedral
+		["modID"] = 0,
+	},
+	{
+		["itemID"] = 147515,	-- Hellblaze Invader's Greaves
+		["bonusID"] = 0,		-- BoE, Cathedral
+		["modID"] = 0,
+	},
+	{
+		["itemID"] = 147516,	-- Legion Stalker's Hood
+		["bonusID"] = 0,		-- BoE, Cathedral
+		["modID"] = 0,
+	},
+	{
+		["itemID"] = 147517,	-- Inquisitor's Battle Cowl
+		["bonusID"] = 0,		-- BoE, Cathedral
+		["modID"] = 0,
+	},
+	
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --
 ------------------------------------------------------------
