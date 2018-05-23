@@ -6,8 +6,7 @@ _.Achievements =
 {
 	n(-9963, { -- Pet Battles
 		["groups"] = {
-			n(-9955, { -- General
-				ach(9712), -- Pet Charmer
+			n(-10027, { -- Collect
 			}),
 		},
 	}),
