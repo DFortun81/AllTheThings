@@ -14,6 +14,13 @@ profession(197, { -- Tailoring
 		}),
 	}),
 	n(-153, { -- Classic
+		nld({		-- Legacy
+			un(8, i(18405)),	-- Belt of the Archmage		
+			un(8, i(18413)),	-- Cloak of Warding
+			un(8, i(18407)),	-- Felcloth Gloves
+			un(8, i(18408)),	-- Inferno Gloves
+			un(8, i(18409)),	-- Mooncloth Gloves
+		}),
 		i(22652),	-- Admiral's Hat
 		i(22654),	-- Azure Silk Hood
 		i(22658),	-- Black Mageweave Headband
@@ -36,19 +43,14 @@ profession(197, { -- Tailoring
 		i(14153),	-- Double-Stitched Woolen Shoulders
 		i(14154),	-- Felcloth Shoulders
 		i(16979),	-- Flarecore Mantle
-		i(18405),	-- Green Silken Shoulders
 		i(14140),	-- Mantle of the Timbermaw
 		i(14146),	-- Mooncloth Shoulders
-		i(18408),	-- Red Mageweave Shoulders
-		i(18409),	-- Reinforced Woolen Shoulders
-		i(18413),	-- Runecloth Shoulders
 		i(14112),	-- Shadoweave Shoulders
 		i(14152),	-- Sylvan Shoulders
-		i(18407),	-- Azure Silk Cloak
 		i(14139),	-- Brightcloth Cloak
 		i(18486),	-- Cindercloth Cloak
 		i(13867),	-- Cloak of Fire
-		i(14106),	-- Cloak of Warding
+		i(14106),	-- Felcloth Robe
 		i(14130),	-- Crimson Silk Cloak
 		i(16980),	-- Gaea's Embrace
 		i(14138),	-- Glacial Cloak

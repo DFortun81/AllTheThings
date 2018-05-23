@@ -105,6 +105,25 @@ _.Zones =
 					p(432), 	-- Stripe-Tailed Scorpid
 				}),
 				n(-17, {	-- Quests
+					qa(27823, {	-- A Dwarf's Got Needs
+						["groups"] = {
+						},
+						["qg"] = 2860,	-- Sigrun Ironhew
+					}),
+
+
+					qa(27792, {	-- All's Fair in Love, War, and Archaeology
+						["g"] = {
+							i(63186),	-- Upstart's Breastplate
+							i(63185),	-- Counterfeit Chainmail
+							i(63184),	-- Excavation Bracers
+							i(63183),	-- Hooligan's Pantaloons
+						},
+						["qg"] = 46760,	-- Lead Prospector Durdin
+						["sourceQuests"] = { 27791 },	-- Dustwind Dig
+					}),
+					
+					
 					qh(27891, {	-- Amakkar, Jack of All Trades
 						["groups"] = {
 						},
@@ -151,10 +170,18 @@ _.Zones =
 					q( 27927, {	-- Down to the Scar
 						["groups"] = {
 						},
-						["qg"] = 46660,	-- Aidan Summerwind
+						["qgs"] = { 46660, 46930 },	-- Aidan Summerwind & Veronica Dolen
 						["isBreadcrumb"] = true,	-- for "The Day that Deathwing Came"
 					}),
 					
+
+					qa(27791, {	-- Dustwind Dig
+						["groups"] = {
+						},
+						["qg"] = 46664,	-- Dr. Hieronymus Blam
+						["sourceQuests"] = { 27789 },	-- Troggish Troubles
+					}),
+
 					
 					q( 27774, {	-- Easily Swayed
 						["groups"] = {
@@ -341,6 +368,19 @@ _.Zones =
 					}),
 					
 					
+					qa(27824, {	-- The Good Stuff
+						["g"] = {
+							i(63168),	-- Ironhew Cloak
+							i(63167),	-- Angor Pauldrons
+							i(63166),	-- Walloper's Chestpiece
+							i(63165),	-- Dust Bowl Shield
+							i(63164),	-- Dustwind Cowl
+						},
+						["qg"] = 2860,	-- Sigrun Ironhew
+						["sourceQuests"] = { 27823 },	-- A Dwarf's Got Needs
+					}),
+					
+					
 					qh(27897, {	-- The Hidden Clutch
 						["groups"] = {
 						},
@@ -371,6 +411,14 @@ _.Zones =
 						}),
 					}),
 					
+
+					qa(27797, {	-- The Sentinel's Pawn
+						["groups"] = {
+						},
+						["qg"] = 46760,	-- Lead Prospector Durdin
+						["sourceQuests"] = { 27792 },	-- All's Fair in Love, War, and Archaeology
+					}),
+
 					
 					qh(27884, {	-- The Sentinel's Pawn
 						["groups"] = {
@@ -409,6 +457,14 @@ _.Zones =
 							},
 							["sourceQuests"] = { 27883 },	-- The Warden's Pawn
 						}),
+					}),
+					
+					
+					qa(27796, {	-- The Warden's Pawn
+						["groups"] = {
+						},
+						["qg"] = 46760,	-- Lead Prospector Durdin
+						["sourceQuests"] = { 27792 },	-- All's Fair in Love, War, and Archaeology
 					}),
 					
 					
@@ -491,16 +547,8 @@ _.Zones =
 					
 					
 					
-					qg( 2860, qa(27823)),	-- A Dwarf's Got Needs
-					qg(46760, qa(27792, {	-- All's Fair in Love, War, and Archaeology
-						i(63186),
-						i(63185),
-						i(63184),
-						i(63183),
-					})),
 					qg(46760, qa(27793)),	-- Ancient Protectors
 					qg(46853, qa(27834)),	-- Baelog, the Glass Cannon (secondary QG ID 46856)
-					qg(46664, qa(27791)),	-- Dustwind Dig
 					qg(46852, qa(27828)),	-- Eric, the Utility Dwarf (secondary QG ID 46855)
 					qg(46972, qa(27833, {	-- Half-Ton Holdouts
 						i(63199),
@@ -513,19 +561,10 @@ _.Zones =
 					qg(46854, qa(27835)),	-- Olaf, the Big Fella' (secondary QG ID 46857)
 					qg(46654, qa(27858)),	-- Rheastrasza's Gift
 					qg(46930, qa(27825)),	-- Survival of the Fattest
-					qg( 2860, qa(27824, {	-- The Good Stuff
-						i(63168),
-						i(63167),
-						i(63166),
-						i(63165),
-						i(63164),
-					})),
 					qg(46654, qa(27832)),	-- The Hidden Clutch
-					qg(46760, qa(27797)),	-- The Sentinel's Pawn
 					qg(46654, qa(27831)),	-- The Sorrow and the Fury
 					qg(46654, qa(27827)),	-- The Swift, the Fierce, and the Stout
 					qa(27912),	-- The Titans' Trove (AUTO OFFERED?)
-					qg(46760, qa(27796)),	-- The Warden's Pawn
 					qg(46855, qa(27829)),	-- The Wrath of a Dragonflight (add'l QGs 46856 and 46857)
 					qg(46654, qa(27830)),	-- Their Hunt Continues
 				}),
@@ -956,7 +995,7 @@ _.Zones =
 							qdg(h({
 								["questID"] = 2258,	-- Badlands Reagent Run II
 								["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
-								["sourceQuest"] = 2202,	-- Source Quest: Uldaman Reagent Run
+								["sourceQuests"] = 2202,	-- Source Quest: Uldaman Reagent Run
 								["groups"] = {
 									un(2, recipe(11452)),	-- Restorative Potion
 								},
@@ -1009,7 +1048,7 @@ _.Zones =
 							qdg({
 								["questID"] = 2202,	-- Uldaman Reagent Run
 								["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
-								["sourceQuest"] = 2258,	-- Source Quest: Badlands Reagent Run
+								["sourceQuests"] = 2258,	-- Source Quest: Badlands Reagent Run
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
