@@ -6,12 +6,7 @@ _.Achievements =
 {
 	n(-9965, { -- Class Hall
 		["groups"] = {
-			n(-9955, { -- General
-				ach(11136, { -- An Epic Campaign
-					ach(10994), -- A Glorious Campaign
-					ach(11135), -- A Heroic Campaign
-				}),
-				ach(11223),  -- Legendary Research
+			n(-10034, { -- Missions
 			}),
 		},
 	}),
