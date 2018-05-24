@@ -14,13 +14,11 @@ profession(197, { -- Tailoring
 		}),
 	}),
 	n(-153, { -- Classic
-		nld({		-- Legacy
-			un(8, i(18405)),	-- Belt of the Archmage		
-			un(8, i(18413)),	-- Cloak of Warding
-			un(8, i(18407)),	-- Felcloth Gloves
-			un(8, i(18408)),	-- Inferno Gloves
-			un(8, i(18409)),	-- Mooncloth Gloves
-		}),
+		un(8, i(18405)),	-- Belt of the Archmage		
+		un(8, i(18413)),	-- Cloak of Warding
+		un(8, i(18407)),	-- Felcloth Gloves
+		un(8, i(18408)),	-- Inferno Gloves
+		un(8, i(18409)),	-- Mooncloth Gloves
 		i(22652),	-- Admiral's Hat
 		i(22654),	-- Azure Silk Hood
 		i(22658),	-- Black Mageweave Headband
