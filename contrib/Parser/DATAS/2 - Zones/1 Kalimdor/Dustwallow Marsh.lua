@@ -114,6 +114,27 @@ _.Zones =
 					qg(66436, qh(31905)),	-- Grazzle the Great
 				}),
 				n(-17, {	-- Quests
+					qa(1258, { --... and Bugs
+						["g"] = {
+							i(57843),	-- Baroque Shield
+							i(57844),	-- Crawling Wand
+							nld({	-- Legacy
+								un(34, i(6801)),	-- Baroque Apron
+							}),
+						},
+						["qg"] = 4794,	-- Morgan Stern
+						["sourceQuests"] = { 1204 },	-- Mudrock Soup and Bugs
+					}),
+					
+					
+					qa(27214, {	-- A Disturbing Development (bcrumb quest for 27234)
+						["g"] = {
+						},
+						["qg"] = 23951,	-- Lieutenant Aden
+						["sourceQuests"] = { 27213 },	-- The End of the Deserters
+					}),
+
+
 					qh( 1168, {	-- Army of the Black Dragon
 						["g"] = {
 							i(10702),	-- Enormous Ogre Boots
@@ -143,6 +164,14 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 23579,	-- Brogg
+					}),
+					
+					
+					qa(27247, {	-- Captain Vimes
+						["g"] = {
+						},
+						["qg"] = 23951,	-- Lieutenant Aden
+						["sourceQuests"] = { 27246 },	-- The Orc Report
 					}),
 					
 					
@@ -218,6 +247,21 @@ _.Zones =
 					}),
 					
 
+					qa(27218, {	-- Dastardly Denizens of the Deep
+						["g"] = {
+						},
+						["qg"] = 23892,	-- Babs Fizzletorque
+						["sourceQuests"] = { 27217 },	-- Thresher Oil
+					}),
+					
+					
+					qa(27234, {	-- Defias in Dustwallow?
+						["g"] = {
+						},
+						["qg"] = 5086,	-- Captain Wymor
+					}),
+					
+					
 					q( 11208, {	-- Delivery for Drazzit
 						["g"] = {
 						},
@@ -237,6 +281,14 @@ _.Zones =
 						["qg"] = 23600,	-- Apprentice Morlann
 					}),
 
+					
+					qa(27212, {	-- Discrediting the Deserters
+						["g"] = {
+						},
+						["qg"] = 23566,	-- Calia Hastings
+						["sourceQuests"] = { 27211 },	-- Propaganda War
+					}),
+					
 					
 					q( 11211, {	-- Help for Mudsprocket (mutually exclusive with "Help Mudsprocket")
 						["g"] = {
@@ -274,6 +326,13 @@ _.Zones =
 					}),
 					
 					
+					qa(27249, {	-- Inspecting the Ruins
+						["g"] = {
+						},
+						["qg"] = 4944,	-- Captain Garran Vimes
+					}),
+					
+					
 					qh(27253, {	-- Inspecting the Ruins
 						["g"] = {
 						},
@@ -281,6 +340,22 @@ _.Zones =
 					}),
 
 
+					qa(27219, {	-- Is it Real?
+						["g"] = {
+						},
+						["qg"] = 23896,	-- "Dirty" Michael Crowe
+						["sourceQuests"] = { 27218 },	-- Dastardly Denizens of the Deep
+					}),
+					
+					
+					qa(27238, {	-- Jaina Must Know
+						["g"] = {
+						},
+						["qg"] = 23569,	-- Renn McGill
+						["sourceQuests"] = { 27237 },	-- Recover the Cargo
+					}),
+					
+					
 					q( 27186, {	-- Jarl Needs a Blade (awarded "'Swamp Eye' Story" criteria)
 						["g"] = {
 							i(  5016),	-- Artisan's Trousers
@@ -312,7 +387,7 @@ _.Zones =
 					}),
 					
 					
-					o(21042, {	-- Theramore Guard Badge
+					o( 21042, {	-- Theramore Guard Badge
 						qh(27260),	-- Lieutenant Paval Reethe
 					}),
 					
@@ -324,7 +399,14 @@ _.Zones =
 							i(131648),	-- Frog Stompers
 						},
 						["qg"] = 4792,	-- "Swamp Eye" Jarl
-						["breadcrumbQuestID"] = { 27182 },	-- The Hermit of Witch Hill
+						["breadcrumbQuestID"] = { 27215, 27182 },	-- The Hermit of Swamplight Manor (A) / Witch Hill (H)
+					}),
+					
+					
+					qa(27248, {	-- Mission to Mudsprocket
+						["g"] = {
+						},
+						["qg"] = 23951,	-- Lieutenant Aden
 					}),
 					
 					
@@ -334,6 +416,13 @@ _.Zones =
 						},
 						["qg"] = 4926,	-- Krog
 						["sourceQuests"] = { 27292 },	-- Return to Krog
+					}),
+					
+					
+					qa( 1204, {	-- Mudrock Soup and Bugs
+						["g"] = {
+						},
+						["qg"] = 4794,	-- Morgan Stern
 					}),
 					
 					
@@ -355,6 +444,22 @@ _.Zones =
 						["requiredSkill"] = 129,	-- Fishing
 					}),
 					
+
+					qa(27220, {	-- Nat's Bargain
+						["g"] = {
+						},
+						["qg"] = 12919,	-- Nat Pagle
+						["sourceQuests"] = { 27219 },	-- Is it Real?
+					}),
+
+					
+					qa(27221, {	-- Oh, It's Real
+						["g"] = {
+						},
+						["qg"] = 12919,	-- Nat Pagle
+						["sourceQuests"] = { 27220 },	-- Nat's Bargain
+					}),
+					
 					
 					qh(27424, {	-- Overlord Mok'Morokk's Concern
 						["g"] = {
@@ -363,6 +468,22 @@ _.Zones =
 							i(131676),	-- Stonemaul Gauntlets
 						},
 						["qg"] = 4500,	-- Overlord Mok'Morokk
+					}),
+					
+					
+					qa(27240, {	-- Proof of Treachery
+						["g"] = {
+						},
+						["qg"] = 4968,	-- Lady Jaina Proudmoore
+						["sourceQuests"] = { 27239 },	-- Survey Alcaz Island
+					}),
+					
+					
+					qa(27211, {	-- Propaganda War
+						["g"] = {
+						},
+						["qg"] = 23566,	-- Calia Hastings
+						["sourceQuests"] = { 27210 },	-- Traitors Among Us
 					}),
 					
 					
@@ -381,6 +502,33 @@ _.Zones =
 						},
 						["qg"] = 6546,	-- Tabetha
 						["sourceQuests"] = { 27295 },	-- Seek Out Tabetha
+					}),
+					
+					
+					qa(27237, {	-- Recover the Cargo!
+						["g"] = {
+							i( 33267),	-- Fleshripper
+							i( 33259),	-- Crimson Barbut
+							i(156977),	-- Serrated Gladius 
+						},
+						["qg"] = 23569,	-- Renn McGill
+						["sourceQuests"] = { 27236 },	-- Secondhand Diving Gear
+					}),
+					
+					
+					qa(27235, {	-- Renn McGill
+						["g"] = {
+						},
+						["qg"] = 5086,	-- Captain Wymor
+						["sourceQuests"] = { 27234 },	-- Defias in Dustwallow?
+					}),
+					
+					
+					qa(27236, {	-- Secondhand Diving Gear
+						["g"] = {
+						},
+						["qg"] = 23569,	-- Renn McGill
+						["sourceQuests"] = { 27235 },	-- Renn McGill
 					}),
 					
 					
@@ -420,9 +568,39 @@ _.Zones =
 					}),
 					
 					
+					qa(27239, {	-- Survey Alcaz Island
+						["g"] = {
+							i( 57851),	-- Swamp Gas Gauntlets
+							i( 33250),	-- Archer's Wristguard
+							i(131253),	-- Archer's Chain Bracer
+						},
+						["qg"] = 4968,	-- Lady Jaina Proudmoore
+						["sourceQuests"] = { 27238 },	-- Jaina Must Know
+					}),
+					
+					
 					o(187273, {	-- Suspicious Hoofprint
 						qa(27262),	-- Suspicious Hoofprints
 						qh(27259),	-- Suspicious Hoofprints
+					}),
+					
+					
+					qa(11212, {	-- Tabetha's Farm
+						["g"] = {
+						},
+						["qg"] = 4921,	-- Guard Byron
+					}),
+					
+					
+					qa(27222, {	-- Take Down Tethyr! (awarded "The Terror of Theramore" criteria)
+						["g"] = {
+							i( 57842),	-- Tower of Theramore
+							i( 33247),	-- Swift Wind Spaulder
+							i( 57849),	-- Seamonster Harpoon
+							i(131659),	-- Swift Wind Shoulders
+						},
+						["qg"] = 23905,	-- Major Mills
+						["sourceQuests"] = { 27221 },	-- Oh, It's Real
 					}),
 					
 					
@@ -522,6 +700,14 @@ _.Zones =
 					}),
 
 					
+					qa(27215, {	-- The Hermit of Swamplight Manor (bcrumb quest for 27183)
+						["g"] = {
+						},
+						["qg"] = 23835,	-- Sergeant Amelyn
+						["sourceQuests"] = { 27213 },	-- The End of the Deserters
+					}),
+					
+					
 					qh(27182, {	-- The Hermit of Witch Hill
 						["g"] = {
 						},
@@ -530,9 +716,22 @@ _.Zones =
 					}),
 					
 					
-					o(20985, {	-- Loose Dirt
+					o( 20985, {	-- Loose Dirt
 						qh(27244),	-- The Lost Report
 						qa(27246),	-- The Orc Report
+					}),
+					
+					
+					qa(27213, {	-- The End of the Deserters (awarded "Disgrace the Defectors" criteria)
+						["g"] = {
+							i( 57832),	-- Journeyman's Helm
+							i( 33249),	-- Boots of the Skirmisher
+							i( 57853),	-- Proudmoore Cloak
+							i(131657),	-- Journeyman's Headguard
+							i(131658),	-- Treads of the Skirmisher
+						},
+						["qg"] = 23566,	-- Calia Hastings
+						["sourceQuests"] = { 27212 },	-- Discrediting the Deserters
 					}),
 					
 					
@@ -577,12 +776,42 @@ _.Zones =
 					}),
 
 					
+					qa(27251, {	-- They Call Him Smiling Jim (unavailable if you've picked up "Inspecting the Ruins")
+						["g"] = {
+						},
+						["qg"] = 4921,	-- Guard Byron
+					}),
+					
+					
+					qa(27216, {	-- This Old Lighthouse
+						["g"] = {
+						},
+						["qg"] = 23835,	-- Sergeant Amelyn
+					}),
+					
+					
+					qa(27217, {	-- Thresher Oil
+						["g"] = {
+						},
+						["qg"] = 23892,	-- Babs Fizzletorque
+						["sourceQuests"] = { 27216 },	-- This Old Lighthouse
+					}),
+					
+					
 					qh(25478, {	-- To the Summit
 						["groups"] = {
 						},
 						["qg"] = 40344,	-- Nyse
 						["isBreadcrumb"] = true,	-- for "The Grimtotem are Coming"
 						["sourceQuests"] = { 28504 },	-- Warchief's Command: Thousand Needles!
+					}),
+					
+					
+					qa(27210, {	-- Traitors Among Us
+						["g"] = {
+						},
+						["qg"] = 23566,	-- Calia Hastings
+						["breadcrumbQuestID"] = { 28552 },	-- Hero's Call: Dustwallow Marsh
 					}),
 					
 					
@@ -626,84 +855,32 @@ _.Zones =
 					}),
 --]]					
 					
-					qg(4794, qa(1258, { --... and Bugs
-						i(57843),	-- Baroque Shield
-						i(57844),	-- Crawling Wand
-						nld({	-- Legacy
-							un(34, i(6801)),	-- Baroque Apron
-						}),
-					})),
-					qg(23951, qa(27214)),	-- A Disturbing Development (bcrumb quest for 27234)
 					qg( 4944, qa(27425)),	-- A Grim Connection
 					qg(23568, qa(27427, {	-- Arms of the Grimtotems
 						i(33268),	-- Bone Dirk
 						i(57837),	-- Biting Greataxe
 					})),
-					qg(23951, qa(27247)),	-- Captain Vimes
 					qg(23568, qa(27426)),	-- Confirming the Suspicion
 					qg( 4948, qa(27286)),	-- Daelin's Men
-					qg(23892, qa(27218)),	-- Dastardly Denizens of the Deep
-					qg( 5086, qa(27234)),	-- Defias in Dustwallow?
-					qg(23566, qa(27212)),	-- Discrediting the Deserters
-					qg( 4944, qa(27249)),	-- Inspecting the Ruins
-					qg(23896, qa(27219)),	-- Is it Real?
-					qg(23569, qa(27238)),	-- Jaina Must Know
 					qg( 6546, qa(27430)),	-- Justice for the Hyals
 					qg( 4944, qa(27264)),	-- Lieutenant Paval Reethe
 					qg(21042, qa(27263)),	-- Lieutenant Paval Reethe
-					qg(23951, qa(27248)),	-- Mission to Mudsprocket
-					qg( 4794, qa( 1204)),	-- Mudrock Soup and Bugs
-					qg(12919, qa(27220)),	-- Nat's Bargain
-					qg(12919, qa(27221)),	-- Oh, It's Real
 					qg( 4944, qa(27291, {	-- Peace at Last
 						i( 33271),
 						i( 57829),
 						i(156976),	-- Staff of Memory 
 					})),
 					qg(23723, qa(27245)),	-- Prisoners of the Grimtotems
-					qg( 4968, qa(27240)),	-- Proof of Treachery
-					qg(23566, qa(27211)),	-- Propaganda War
 					qg(23723, qa(27242)),	-- Raptor Captor
 					qg( 6546, qa(27429)),	-- Raze Direhorn Post!
-					qg(23569, qa(27237, {	-- Recover the Cargo!
-						i( 33267),
-						i( 33259),
-						i(156977),	-- Serrated Gladius 
-					})),
-					qg( 5086, qa(27235)),	-- Renn McGill
-					qg(23569, qa(27236)),	-- Secondhand Diving Gear
 					qg( 4880, qa( 1222)),	-- Stinky's Escape
-					qg( 4968, qa(27239, {	-- Survey Alcaz Island
-						i( 57851),	-- Swamp Gas Gauntlets
-						i( 33250),	-- Archer's Wristguard
-						i(131253),	-- Archer's Chain Bracer
-					})),
 					qg(23568, qa(27428)),	-- Tabetha's Assistance
-					qg( 4921, qa(11212)),	-- Tabetha's Farm
-					qg(23905, qa(27222, {	-- Take Down Tethyr!
-						i( 57842),
-						i( 33247),
-						i( 57849),
-						i(131659),
-					})),
 					qg( 4844, qa(27284)),	-- The Black Shield
 					qg( 4941, qa(27285)),	-- The Black Shield
 					qg( 5089, qa(27288)),	-- The Deserters
 					qg( 4944, qa(27287)),	-- The Deserters
-					qg(23566, qa(27213, {	-- The End of the Deserters
-						i( 57832),
-						i( 33249),
-						i( 57853),
-						i(131657),
-						i(131658),
-					})),
-					qg(23835, qa(27215)),	-- The Hermit of Swamplight Manor (bcrumb quest for 27183)
-					qg( 4921, qa(27251)),	-- They Call Him Smiling Jim (bcrumb quest for 27249)
-					qg(23835, qa(27216)),	-- This Old Lighthouse
-					qg(23892, qa(27217)),	-- Thresher Oil
 					qg(40345, qa(25479)),	-- To New Thalanaar (bcrumb quest for 25486, not available if 25481,28503 are completed)
 					qg(40369, qa(25481)),	-- To New Thalanaar
-					qg(23566, qa(27210)),	-- Traitors Among Us
 					qg(12939, qa( 6624)),	-- Triage
 					qg(23723, qa(27243, {	-- Unleash the Raptors
 						i( 33266),
