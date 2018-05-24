@@ -7,6 +7,15 @@ _.Achievements =
 	n(-9964, { -- Collections
 		["groups"] = {
 			n(-9955, { -- General
+				ach(5755, {	-- Thirty Tabards
+					ach(1021, {	-- Twenty-Five Tabards
+						i(40643),	-- Tabard of the Achiever
+					}),
+					ach(1020),	-- Ten Tabards
+					ach(621),	-- Represent
+				}),
+				ach(1165),	-- My Sack is "Gigantique" (Shattrath City / Haris Pilton)
+				ach(2084),	-- Ring of the Kirin Tor (Dalaran - NR / Harold Winston)
 				ach(8728, {	-- Going To Need A Bigger Bag
 					crit(1), -- Cursed Swabby Helmet
 					crit(2), -- Warped Warning Sign
@@ -65,13 +74,20 @@ _.Achievements =
 					crit(55), -- Azure Crane Chick
 					crit(56), -- Ashleaf Spriteling
 				}),	
-				ach(9909, { -- Heirloom Hoarder
-					i(120968), -- Chauffeured Chopper
-					i(122703), -- Chauffeured Chopper
-					ach(9911), -- Where's the Mailbox?
-					ach(9906), -- Alt-ernative Lifestyle
-					ach(9908), -- Ready for Powerleveling
+				ach(9909, { -- Heirloom Hoarder (35)
+					i(120968), -- Chauffeured Chopper (Horde, recieve both on completing achieve)
+					i(122703), -- Chauffeured Chopper (Alliance, recieve both on completing achieve)
+					ach(9908), -- Ready for Powerleveling (15)
+					ach(9906), -- Alt-ernative Lifestyle (5)
+					ach(9911), -- Where's the Mailbox? (1)
 				}),
+				ach(10053, {	-- I Found Pepe! (Various Draenor see criteria)
+					crit(1),	-- Pirate Pepe (Spires of Arak 54.1 83.6)
+					crit(2),	-- Viking Pepe (Nagrand 80.1 50.4)
+					crit(3),	-- Knight Pepe (Talador 51.0 63.3)
+					crit(4),	-- Ninja Pepe (Gorgrond 47.5 41.3)
+				}),
+				ach(10770),	-- The Tangerine Traveler (Dalaran - NR / See murphymurph's post on wowhead for coords)
 			}),
 		},
 	}),
