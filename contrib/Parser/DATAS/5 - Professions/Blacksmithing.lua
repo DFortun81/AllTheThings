@@ -7,44 +7,11 @@ profession(164, { -- Blacksmithing
 		i(119328),	-- Soul of the Forge
 	}),
 	n(-153, {	-- Classic
-		nld({		-- Legacy
-			n(-319, {	-- Weapons
-				un(8, i(12776)),	-- Enchanted Battlehammer
-				un(8, i(12794)),	-- Masterwork Stormhammer
-				un(8, i(7954)),		-- The Shatterer
-				un(8, i(7960)),		-- Truesilver Champion
-			}),
-			n(-45, { 	-- Mail
-				un(8, i(19690)),	-- Bloodsoul Breastplate
-				un(8, i(19692)),	-- Bloodsoul Gauntlets
-				un(8, i(19691)),	-- Bloodsoul Shoulders
-				un(8, i(9366)),		-- Golden Scale Gauntlets
-				un(8, i(7929)),		-- Orcish War Leggings
-			}),
-			n(-46, { 	-- Plate
-				un(8, i(19693)),	-- Darksoul Breastplate
-				un(8, i(19694)),	-- Darksoul Leggings
-				un(8, i(19695)),	-- Darksoul Shoulders
-				un(8, i(12628)),	-- Demon Forged Breastplate
-				un(8, i(12618)),	-- Enchanted Thorium Breastplate
-				un(8, i(12620)),	-- Enchanted Thorium Helm
-				un(8, i(12619)),	-- Enchanted Thorium Leggings
-				un(8, i(12631)),	-- Fiery Plate Gauntlets
-				un(8, i(22671)),	-- Icebane Bracers
-				un(8, i(22669)),	-- Icebane Breastplate
-				un(8, i(22670)),	-- Icebane Gauntlets
-				un(8, i(7936)),		-- Ornate Mithril Boots
-				un(8, i(7935)),		-- Ornate Mithril Breastplate
-				un(8, i(7927)),		-- Ornate Mithril Gloves
-				un(8, i(7937)),		-- Ornate Mithril Helm
-				un(8, i(7926)),		-- Ornate Mithril Pants
-				un(8, i(7928)),		-- Ornate Mithril Shoulder
-				un(8, i(12613)),	-- Runic Breastplate
-				un(8, i(7939)),		-- Truesilver Breastplate
-				un(8, i(7938)),		-- Truesilver Gauntlets
-			}),
-		}),
 		n(-319, { 	-- Weapons
+			un(8, i(12776)),	-- Enchanted Battlehammer
+			un(8, i(12794)),	-- Masterwork Stormhammer
+			un(8, i(7954)),		-- The Shatterer
+			un(8, i(7960)),		-- Truesilver Champion
 			i(12798),	-- Annihilator
 			i(12790),	-- Arcanite Champion
 			i(12784),	-- Arcanite Reaper
@@ -111,6 +78,11 @@ profession(164, { -- Blacksmithing
 			i(7943),	-- Wicked Mithril Blade
 		}),
 		n(-45, { 	-- Mail
+			un(8, i(19690)),	-- Bloodsoul Breastplate
+			un(8, i(19692)),	-- Bloodsoul Gauntlets
+			un(8, i(19691)),	-- Bloodsoul Shoulders
+			un(8, i(9366)),		-- Golden Scale Gauntlets
+			un(8, i(7929)),		-- Orcish War Leggings
 			i(7916),	-- Barbaric Iron Boots
 			i(7917),	-- Barbaric Iron Gloves
 			i(7915),	-- Barbaric Iron Helm
@@ -173,6 +145,26 @@ profession(164, { -- Blacksmithing
 			i(12624),	-- Wildthorn Mail
 		}),
 		n(-46, { 	-- Plate
+			un(8, i(19693)),	-- Darksoul Breastplate
+			un(8, i(19694)),	-- Darksoul Leggings
+			un(8, i(19695)),	-- Darksoul Shoulders
+			un(8, i(12628)),	-- Demon Forged Breastplate
+			un(8, i(12618)),	-- Enchanted Thorium Breastplate
+			un(8, i(12620)),	-- Enchanted Thorium Helm
+			un(8, i(12619)),	-- Enchanted Thorium Leggings
+			un(8, i(12631)),	-- Fiery Plate Gauntlets
+			un(8, i(22671)),	-- Icebane Bracers
+			un(8, i(22669)),	-- Icebane Breastplate
+			un(8, i(22670)),	-- Icebane Gauntlets
+			un(8, i(7936)),		-- Ornate Mithril Boots
+			un(8, i(7935)),		-- Ornate Mithril Breastplate
+			un(8, i(7927)),		-- Ornate Mithril Gloves
+			un(8, i(7937)),		-- Ornate Mithril Helm
+			un(8, i(7926)),		-- Ornate Mithril Pants
+			un(8, i(7928)),		-- Ornate Mithril Shoulder
+			un(8, i(12613)),	-- Runic Breastplate
+			un(8, i(7939)),		-- Truesilver Breastplate
+			un(8, i(7938)),		-- Truesilver Gauntlets
 			i(7914),	-- Barbaric Iron Breastplate
 			i(20039),	-- Dark Iron Boots
 			i(17014),	-- Dark Iron Bracers
@@ -223,45 +215,27 @@ profession(164, { -- Blacksmithing
 		}),
 	}),
 	n(-154, { 	-- The Burning Crusade
-		nld({ 		-- Legacy
-			n(-319, { 	-- Weapons
-				un(5, i(28432)),	-- Black Planar Edge
-				un(5, i(28427)),	-- Blazefury
-				un(5, i(28426)),	-- Blazeguard
-				un(5, i(28436)),	-- Bloodmoon
-				un(5, i(28441)),	-- Deep Thunder
-				un(5, i(28438)),	-- Dragonmaw
-				un(5, i(28439)),	-- Dragonstrike
-				un(5, i(28437)),	-- Drakefist Hammer
-				un(5, i(28425)),	-- Fireguard
-				un(5, i(30073)),	-- Light Emberforged Hammer
-				un(5, i(30072)),	-- Light Skyforged Axe
-				un(5, i(28428)),	-- Lionheart Blade
-				un(5, i(28429)),	-- Lionheart Champion
-				un(5, i(28430)),	-- Lionheart Executioner
-				un(5, i(28434)),	-- Lunar Crescent
-				un(5, i(28435)),	-- Mooncleaver
-				un(5, i(28442)),	-- Stormherald
-				un(5, i(28431)),	-- The Planar Edge
-				un(5, i(28440)),	-- Thunder
-				un(5, i(28433)),	-- Wicked Edge of the Planes
-			}),
-			n(-45, { 	-- Mail
-				un(5, i(23565)),	-- Embrace of the Twisting Nether
-				un(5, i(23563)),	-- Nether Plate Shirt
-				un(5, i(30076)),	-- Stormforged Hauberk
-				un(5, i(23564)),	-- Twisting Nether Plate Shirt
-				un(5, i(30070)),	-- Windforged Leggings
-			}),
-			n(-46, { 	-- Plate
-				un(5, i(28483)),	-- Breastplate of Kings
-				un(5, i(28484)),	-- Bulwark of Kings
-				un(5, i(28485)),	-- Bulwark of the Ancient Kings
-				un(5, i(30069)),	-- Earthforged Leggings
-				un(5, i(30074)),	-- Heavy Earthforged Breastplate
-			}),
-		}),
 		n(-319, { 	-- Weapons
+			un(5, i(28432)),	-- Black Planar Edge
+			un(5, i(28427)),	-- Blazefury
+			un(5, i(28426)),	-- Blazeguard
+			un(5, i(28436)),	-- Bloodmoon
+			un(5, i(28441)),	-- Deep Thunder
+			un(5, i(28438)),	-- Dragonmaw
+			un(5, i(28439)),	-- Dragonstrike
+			un(5, i(28437)),	-- Drakefist Hammer
+			un(5, i(28425)),	-- Fireguard
+			un(5, i(30073)),	-- Light Emberforged Hammer
+			un(5, i(30072)),	-- Light Skyforged Axe
+			un(5, i(28428)),	-- Lionheart Blade
+			un(5, i(28429)),	-- Lionheart Champion
+			un(5, i(28430)),	-- Lionheart Executioner
+			un(5, i(28434)),	-- Lunar Crescent
+			un(5, i(28435)),	-- Mooncleaver
+			un(5, i(28442)),	-- Stormherald
+			un(5, i(28431)),	-- The Planar Edge
+			un(5, i(28440)),	-- Thunder
+			un(5, i(28433)),	-- Wicked Edge of the Planes
 			i(23503),	-- Adamantite Cleaver
 			i(23504),	-- Adamantite Dagger
 			i(23502),	-- Adamantite Maul
@@ -289,6 +263,11 @@ profession(164, { -- Blacksmithing
 			i(30077),	-- Windforged Rapier
 		}),
 		n(-45, { 	-- Mail
+			un(5, i(23565)),	-- Embrace of the Twisting Nether
+			un(5, i(23563)),	-- Nether Plate Shirt
+			un(5, i(30076)),	-- Stormforged Hauberk
+			un(5, i(23564)),	-- Twisting Nether Plate Shirt
+			un(5, i(30070)),	-- Windforged Leggings
 			i(23527),	-- Earthpeace Breastplate
 			i(23494),	-- Fel Iron Chain Bracers
 			i(23493),	-- Fel Iron Chain Coif
@@ -299,6 +278,11 @@ profession(164, { -- Blacksmithing
 			i(23526),	-- Swiftsteel Gloves
 		}),
 		n(-46, { 	-- Plate
+			un(5, i(28483)),	-- Breastplate of Kings
+			un(5, i(28484)),	-- Bulwark of Kings
+			un(5, i(28485)),	-- Bulwark of the Ancient Kings
+			un(5, i(30069)),	-- Earthforged Leggings
+			un(5, i(30074)),	-- Heavy Earthforged Breastplate
 			i(23507),	-- Adamantite Breastplate
 			i(23506),	-- Adamantite Plate Bracers
 			i(23508),	-- Adamantite Plate Gloves
@@ -357,17 +341,9 @@ profession(164, { -- Blacksmithing
 		}),
 	}),
 	n(-155, { 	-- Wrath of the Lich King
-		nld({ 		-- Legacy
-			n(-319, { 	-- Weapons
-				un(5, i(41186)),	-- Corroded Saronite Edge
-				un(5, i(41187)),	-- Corroded Saronite Woundbringer
-			}),
-			n(-46, { 	-- Plate
-				un(5, i(41189)),	-- Chestplate of Conquest
-				un(5, i(41190)),	-- Legplates of Conquest
-			}),
-		}),
 		n(-319, { 	-- Weapons
+			un(5, i(41186)),	-- Corroded Saronite Edge
+			un(5, i(41187)),	-- Corroded Saronite Woundbringer
 			i(41240),	-- Cobalt Tenderizer
 			i(40668),	-- Cobalt Triangle Shield
 			i(42443),	-- Cudgel of Saronite Justice
@@ -392,6 +368,8 @@ profession(164, { -- Blacksmithing
 			i(45085),	-- Titansteel Spellblade
 		}),
 		n(-46, { 	-- Plate
+			un(5, i(41189)),	-- Chestplate of Conquest
+			un(5, i(41190)),	-- Legplates of Conquest
 			i(45559),	-- Battlelord's Plate Boots
 			i(45550),	-- Belt of the Titans
 			i(49907),	-- Boots of Kingly Upheaval
