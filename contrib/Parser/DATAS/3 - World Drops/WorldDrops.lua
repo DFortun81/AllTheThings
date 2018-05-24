@@ -11,8 +11,6 @@ _.WorldDrops =
 			}),
 			n(-319, { 		-- Weapons	
 			}),
-			n(-38, { -- Professions
-			}),
 		},
 		["tierID"] = 1
 	},		
@@ -77,10 +75,6 @@ _.WorldDrops =
 			}),
 			n(-318, { 		-- Armor
 			}),
-			--[[ Let's comment this out until we get some data in here.
-			n(-319, { 		-- Weapons	
-			}),
-			--]]
 		},
 		["tierID"] = 7
 	}		

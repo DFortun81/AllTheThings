@@ -6232,6 +6232,17 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
+		-- Craftables
+		if app.Categories.Craftables then
+			db = app.CreateAchievement(5035, {});
+			db.expanded = false;
+			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM; -- L("Crafted Items");
+			db.icon = "Interface\\ICONS\\ability_repair";
+			db.g = app.Categories.Craftables;
+			db.collectible = false;
+			table.insert(g, db);
+		end
+		
 		-- Professions
 		if app.Categories.Professions then
 			db = app.CreateAchievement(10583, {});
@@ -6239,6 +6250,7 @@ function app:GetDataCache()
 			db.text = TRADE_SKILLS; -- L("PROFESSIONS");
 			db.icon = "Interface\\ICONS\\INV_Scroll_04";
 			db.g = app.Categories.Professions;
+			db.collectible = false;
 			table.insert(g, db);
 		end
 		
