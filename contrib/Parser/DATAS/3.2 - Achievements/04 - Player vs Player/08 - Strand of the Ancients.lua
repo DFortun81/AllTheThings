@@ -23,10 +23,10 @@ _.Achievements =
 					ach(1765, {	-- Steady Hands
 						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 					}),	
-					a(ach(2200, {	-- Defense of the Ancients (Alliance)
+					a(ach(1757, {	-- Defense of the Ancients (Alliance)
 						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 					})),
-					h(ach(1757, {	-- Defense of the Ancients (Horde)
+					h(ach(2200, {	-- Defense of the Ancients (Horde)
 						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 					})),
 					ach(1761, {	-- The Dapper Sapper
