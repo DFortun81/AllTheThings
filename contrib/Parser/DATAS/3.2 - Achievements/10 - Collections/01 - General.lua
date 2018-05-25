@@ -16,7 +16,7 @@ _.Achievements =
 				}),
 				ach(1165),	-- My Sack is "Gigantique" (Shattrath City / Haris Pilton)
 				ach(2084),	-- Ring of the Kirin Tor (Dalaran - NR / Harold Winston)
-				ach(8728, {	-- Going To Need A Bigger Bag
+				ach(8728, {	-- Going To Need A Bigger Bag (Timeless Isle)
 					crit(1), -- Cursed Swabby Helmet
 					crit(2), -- Warped Warning Sign
 					crit(3), -- Giant Purse of Timeless Coins
@@ -81,11 +81,60 @@ _.Achievements =
 					ach(9906), -- Alt-ernative Lifestyle (5)
 					ach(9911), -- Where's the Mailbox? (1)
 				}),
+				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been (various dungeons & raids)
+					i(12293),	-- Trans-Dimensional Bird Whistle
+					crit(1),	-- Gug'rokk (Bloodmaul Slag Mines)
+					crit(2),	-- Skulloc, Son of Gruul (Iron Docks)
+					crit(3),	-- Warlord Zaela (Upper Blackrock Spire)
+					crit(4),	-- Yalnu (The Everbloom)
+					crit(5),	-- Skylord Tovra (Grimrail Depot)
+					crit(6),	-- High Sage Viryx (Skyreach)
+					crit(7),	-- Ner'zhul (Shadowmoon Burial Grounds)
+					crit(8),	-- Teron'gor (Auchindoun)
+					crit(9),	-- Kargath Bladefist (Highmaul)
+					crit(10),	-- The Butcher (Highmaul)
+					crit(11),	-- Brackenspore (Highmaul)
+					crit(12),	-- Tectus, The Living Mountain (Highmaul)
+					crit(13),	-- Twin Ogron (Highmaul)
+					crit(14),	-- Ko'ragh (Highmaul)
+					crit(15),	-- Imperator Mar'gok (Highmaul)
+					crit(16),	-- Oregorger the Devourer (Blackrock Foundry)
+					crit(17),	-- Gruul (Blackrock Foundry)
+					crit(18),	-- Hans'gar & Franzok (Blackrock Foundry)
+					crit(19),	-- Flamebender Ka'graz (Blackrock Foundry)
+					crit(20),	-- Beastlord Darmac (Blackrock Foundry)
+					crit(21),	-- Operator Thogar (Blackrock Foundry)
+					crit(22),	-- Blast Furnace (Blackrock Foundry)
+					crit(23),	-- Kromog, Legend of the Mountain (Blackrock Foundry)
+					crit(24),	-- The Iron Maidens (Blackrock Foundry)
+					crit(25),	-- Blackhand (Blackrock Foundry)
+					crit(26),	-- Tarlna the Ageless (World Boss - Gorgrond)
+					crit(27),	-- Drov the Ruiner (World Boss - Gorgrond)
+					crit(28),	-- Rukhmar (World Boss - Spires of Arak)
+				}),
 				ach(10053, {	-- I Found Pepe! (Various Draenor see criteria)
-					crit(1),	-- Pirate Pepe (Spires of Arak 54.1 83.6)
-					crit(2),	-- Viking Pepe (Nagrand 80.1 50.4)
-					crit(3),	-- Knight Pepe (Talador 51.0 63.3)
-					crit(4),	-- Ninja Pepe (Gorgrond 47.5 41.3)
+					["groups"] = {
+						{
+							["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
+							["criteriaID"] = 1,	-- Pirate Pepe (Spires of Arak 54.1 83.6)
+							["description"] = "Located in Spires of Arak at 54.1 83.6"
+						},
+						{
+							["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
+							["criteriaID"] = 2,	-- Viking Pepe (Nagrand 80.1 50.4)
+							["description"] = "Located in Nagrand at 80.1 50.4"
+						},
+						{
+							["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
+							["criteriaID"] = 3,	-- Knight Pepe (Talador 51.0 63.3)
+							["description"] = "Located in Talador at 51.0 63.3"
+						},
+						{
+							["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
+							["criteriaID"] = 4,	-- Ninja Pepe (Gorgrond 47.5 41.3)
+							["description"] = "Located in Gorgrond at 47.5 41.3"
+						},
+					},
 				}),
 				ach(10770),	-- The Tangerine Traveler (Dalaran - NR / See murphymurph's post on wowhead for coords)
 			}),
