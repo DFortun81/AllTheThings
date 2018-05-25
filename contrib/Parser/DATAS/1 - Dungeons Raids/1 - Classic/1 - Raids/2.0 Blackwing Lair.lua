@@ -274,15 +274,19 @@ _.Instances = { tier(1, {	-- Classic
 					i(19382),	-- Pure Elementium Band
 					i(19379),	-- Neltharion's Tear
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
-					dr(7.0, i(13008)),	-- Dalewind Trousers
-					dr(3.0, i(13075)),	-- Direwing Legguards
-					dr(5.0, i(13125)),	-- Elven Chain Boots
-					dr(5.0, i(13113)),	-- Feathermoon Headdress
-					dr(3.0, i(13003)),	-- Lord Alexander's Battle Axe
-					dr(7.0, i(13144)),	-- Serenity Belt
-					dr(4.0, i(13146)),	-- Shell Launcher Shotgun
-					dr(3.0, i(13072)),	-- Stonegrip Gauntlets
-					dr(5.0, i(13047)),	-- Twig of the World Tree
+					dr(7.00, i(13008)),	-- Dalewind Trousers
+					dr(3.00, i(13075)),	-- Direwing Legguards
+					dr(9.00, i(13013)),	-- Elder Wizard's Mantle
+					dr(5.00, i(13125)),	-- Elven Chain Boots
+					dr(5.00, i(13113)),	-- Feathermoon Headdress
+					dr(3.00, i(13003)),	-- Lord Alexander's Battle Axe
+					dr(11.0, i(13107)),	-- Magiskull Cuffs
+					dr(4.00, i(13111)),	-- Sandals of the Insurgent
+					dr(7.00, i(13144)),	-- Serenity Belt
+					dr(4.00, i(13146)),	-- Shell Launcher Shotgun
+					dr(3.00, i(13072)),	-- Stonegrip Gauntlets
+					dr(5.00, i(13047)),	-- Twig of the World Tree
+					dr(5.00, i(13130)),	-- Windrunner Legguards
 				 -- PROFESSIONS
 					dr(1.1, i( 8028)),	-- Plans: Runed Mithril Hammer
 					dr(0.5, i(13518)),	-- Recipe: Potion of Petrification
