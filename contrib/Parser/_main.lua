@@ -396,6 +396,12 @@ end
 gb = function(id, t)									-- Create an GARRISON BUILDING Object (Alternative)
 	return struct("buildingID", id, t);
 end
+garrisonMission = function(id, t)						-- Create an GARRISON MISSION Object
+	return struct("missionID", id, t);
+end
+gm = function(id, t)									-- Create an GARRISON MISSION Object (Alternative)
+	return struct("missionID", id, t);
+end
 gs = function(id, t)									-- Create a GEAR SET Object (IE: "Vestments of Prophecy")
 	return struct("setID", id, t);
 end

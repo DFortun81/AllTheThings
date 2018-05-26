@@ -3142,6 +3142,24 @@ app.CreateGarrisonBuilding = function(id, t)
 	return createInstance(constructor(id, t, "buildingID"), app.BaseGarrisonBuilding);
 end
 
+-- Garrison Mission Lib
+app.BaseGarrisonMission = {
+	__index = function(t, key)
+		if key == "key" then
+			return "missionID";
+		elseif key == "text" then
+			return C_Garrison.GetMissionName(t.missionID);
+		elseif key == "icon" then
+			return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateGarrisonMission = function(id, t)
+	return createInstance(constructor(id, t, "missionID"), app.BaseGarrisonMission);
+end
 
 -- Heirloom Lib
 app.BaseHeirloom = {

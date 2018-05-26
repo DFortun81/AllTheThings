@@ -1169,6 +1169,11 @@ _.Zones =
 								i(128310), 		-- Toy
 								i(128311), 		-- Mount
 								i(127748), 		-- Pet
+								garrisonMission(686, {	-- The Consuming Void
+									i(128319, {	-- Void-Shrouded Satchel
+										i(128318),	-- Touch of the Void
+									}),
+								}),
 							},
 							["modelScale"] = 2.5,
 						}),
