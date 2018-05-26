@@ -106,6 +106,7 @@ _.WorldEvents =
 							i(73903), -- Darkmoon Tonk Pet
 							i(73765), -- Darkmoon Turtle Pet					
 							i(73905), -- Darkmoon Zeppelin Pet
+							i(90899), -- Darkmoon Whistle
 						}),
 					}),
 				}),
@@ -120,6 +121,7 @@ _.WorldEvents =
 							i(73903), -- Darkmoon Tonk Pet
 							i(73765), -- Darkmoon Turtle Pet					
 							i(73905), -- Darkmoon Zeppelin Pet
+							i(90899), -- Darkmoon Whistle
 						}),
 					}),
 				}),
@@ -137,6 +139,7 @@ _.WorldEvents =
 							i(73903), -- Darkmoon Tonk Pet
 							i(73765), -- Darkmoon Turtle Pet					
 							i(73905), -- Darkmoon Zeppelin Pet
+							i(90899), -- Darkmoon Whistle
 						}),
 					}),
 					q(37910, {  -- The Real Race
@@ -149,6 +152,7 @@ _.WorldEvents =
 							i(73903), -- Darkmoon Tonk Pet
 							i(73765), -- Darkmoon Turtle Pet					
 							i(73905), -- Darkmoon Zeppelin Pet
+							i(90899), -- Darkmoon Whistle
 						}),
 					}),
 					q(33756), -- Let's Keep Racing!
@@ -164,6 +168,7 @@ _.WorldEvents =
 							i(73903), -- Darkmoon Tonk Pet
 							i(73765), -- Darkmoon Turtle Pet					
 							i(73905), -- Darkmoon Zeppelin Pet
+							i(90899), -- Darkmoon Whistle
 						}),
 					}),
 				}),
@@ -178,6 +183,7 @@ _.WorldEvents =
 							i(73903), -- Darkmoon Tonk Pet
 							i(73765), -- Darkmoon Turtle Pet					
 							i(73905), -- Darkmoon Zeppelin Pet
+							i(90899), -- Darkmoon Whistle
 						}),
 					}),
 				}),
@@ -204,6 +210,7 @@ _.WorldEvents =
 							i(73903), -- Darkmoon Tonk Pet
 							i(73765), -- Darkmoon Turtle Pet					
 							i(73905), -- Darkmoon Zeppelin Pet
+							i(90899), -- Darkmoon Whistle
 						}),
 					}),
 					q(37868), -- More Big Racing!
@@ -254,6 +261,7 @@ _.WorldEvents =
 							i(73903), -- Darkmoon Tonk Pet
 							i(73765), -- Darkmoon Turtle Pet					
 							i(73905), -- Darkmoon Zeppelin Pet
+							i(90899), -- Darkmoon Whistle
 						}),
 					}),
 					q(29518, { -- Rearm, Reuse, Recycle
@@ -306,6 +314,7 @@ _.WorldEvents =
 							i(73903), -- Darkmoon Tonk Pet
 							i(73765), -- Darkmoon Turtle Pet					
 							i(73905), -- Darkmoon Zeppelin Pet
+							i(90899), -- Darkmoon Whistle
 						}),
 					}),
 				}),
@@ -313,18 +322,22 @@ _.WorldEvents =
 			n(-16, { -- Rares
 				n(58336, { -- Darkmoon Rabbit
 					["groups"] = {
-						i(80008),
+						dr(100.0, i(80008, { -- Darkmoon Rabbit
+							["groups"] = {
+							},
+							["description"] = "Drops one per kill",
+						})),
 					},
 					["achievementID"] = 6332, -- That Rabbit's Dynamite!
 				}),
 				n(122899, { -- Death Metal Knight
 					["groups"] = {
-						i(151265), -- Blight Boar Microphone Toy
-						i(151253), -- Cloth Caged Helm
-						i(151254), -- Leather Caged Helm
-						i(151252), -- Mail Caged Helm
-						i(151251), -- Plate Caged Helm
-						i(151255), -- Necromeds, the Death Resonator
+						dr(9.0, i(151265)), -- Blight Boar Microphone
+						dr(3.0, i(151253)), -- Cloth Caged Helm
+						dr(3.0, i(151254)), -- Leather Caged Helm
+						dr(1.6, i(151252)), -- Mail Caged Helm
+						dr(3.0, i(151251)), -- Plate Caged Helm
+						dr(1.5, i(151255)), -- Necromeds, the Death Resonator
 					},
 					["achievementID"] = 11918, -- Hey, You're A Rockstar!
 					["questID"] = 47767,
@@ -332,33 +345,42 @@ _.WorldEvents =
 				}),
 				n(71992, { -- Moonfang
 					["groups"] = {
-						i(105898), -- ["isToy"] = true
-						i(101571), -- ["isToy"] = true
-						i(101570), -- Pet
+						dr(100.0, i(105891, { -- Moonfang's Pelt
+							["groups"] = {
+							},
+							["questID"] = 33354, -- Den Mother's Demise
+						})),
+						dr(5.0, i(101570)), -- Moon Moon
+						dr(21.0, i(101571)), -- Moonfang Shroud
+						dr(22.0, i(105898)), -- Moonfang's Paw
+						dr(21.0, i(101675)), -- Shimmering Moonstone
 					},
 					["icon"] = "Interface\\Icons\\Ability_Shaman_FreedomWolf",
 				}),
 			}),
 			n(-25, { 	-- Pet Battle
 				n(85519, { -- Christoph VonFeasel
-					q(36471, {
-						i(116062, {
-							i(116064), -- Pet
-							i(89139), -- ["isToy"] = true
-							i(44820), -- ["isToy"] = true
+					q(36471, { -- A New Darkmoon Challenger!
+						i(116062, { -- Greater Darkmoon Pet Supplies
+							dr(7.0, i(116064)), -- Syd the Squid
+							dr(1.7, i(89139)), -- Chain Pet Leash
+							dr(1.4, i(44820)), -- Red Ribbon Pet Leash
+							dr(1.6, i(37460)), -- Rope Pet Leash
 						}),
 					}),
 				}),
 				n(67370, { -- Jeremy Feasel
-					q(32175, {
-						i(91086, {
-							i(91040), -- Pet
-							i(89139), -- ["isToy"] = true
-	--						i(37460), -- ["isToy"] = true (posted in stable master)
-							i(44820), -- ["isToy"] = true
+					q(32175, { -- Darkmoon Pet Battle!
+						i(91086, { -- Darkmoon Pet Supplies
+							dr(1.6, i(91040)), -- Darkmoon Eye
+							dr(2.0, i(89139)), -- Chain Pet Leash
+							dr(1.5, i(44820)), -- Red Ribbon Pet Leash
+							dr(1.4, i(37460)), -- Rope Pet Leash
 						}),
 					}),
 				}),
+				p(1068), -- Crow
+				p(1062), -- Darkmoon Glowfly
 			}),	
 			n(-2, { 	-- Vendors
 				n(55072, { -- Barum
