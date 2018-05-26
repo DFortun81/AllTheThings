@@ -1,0 +1,9 @@
+## Author: Aiue
+## Interface: 70300
+## Title: AllTheThings Missing Sources
+## Name: AllTheThings Missing Sources
+## SavedVariables: ATTMissingSources
+## Version 1.0
+## Dependencies: AllTheThings
+
+Sources.lua
