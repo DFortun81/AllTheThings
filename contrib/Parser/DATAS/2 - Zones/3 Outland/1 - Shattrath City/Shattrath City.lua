@@ -1770,6 +1770,30 @@ _.Zones =
 						},
 						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
 					}),
+					n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
+						i(29735, {	-- Holy Dust
+							i(28886),	-- Greater Inscription of Discipline
+							i(28887),	-- Greater Inscription of Faith
+							i(28888),	-- Greater Inscription of Vengeance
+							i(28889),	-- Greater Inscription of Warding
+							i(28881),	-- Inscription of Discipline
+							i(28878),	-- Inscription of Faith
+							i(28885),	-- Inscription of Vengeance
+							i(28882),	-- Inscription of Warding
+						}),
+					}),
+					n(20808, {	-- Scribe Veredis <Scryer Inscriptions>
+						i(29736, {	-- Arcane Rune
+							i(28910),	-- Greater Inscription of the Blade
+							i(28911),	-- Greater Inscription of the Knight
+							i(28912),	-- Greater Inscription of the Oracle
+							i(28909),	-- Greater Inscription of the Orb
+							i(28907),	-- Inscription of the Blade
+							i(28908),	-- Inscription of the Knight
+							i(28904),	-- Inscription of the Oracle
+							i(28903),	-- Inscription of the Orb
+						}),
+					}),
 					n(19074, {	-- Skreah <Alchemy Supplies>
 						i(23574),	-- Recipe: Transmute Primal Might
 					}),
