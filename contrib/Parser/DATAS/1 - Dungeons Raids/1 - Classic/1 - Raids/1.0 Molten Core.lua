@@ -595,10 +595,12 @@ _.Instances = { tier(1, {	-- Classic
 				dr(4.0, i(13113)),	-- Feathermoon Headdress
 				dr(2.0, i(13003)),	-- Lord Alexander's Battle Axe
 				dr(8.0, i(13107)),	-- Magiskull Cuffs
+				dr(1.3, i(13001)), -- Maiden's Circle
 				dr(4.0, i(13111)),	-- Sandals of the Insurgent
 				dr(7.0, i(13144)),	-- Serenity Belt
 				dr(3.0, i(13146)),	-- Shell Launcher Shotgun
 				dr(3.0, i(13072)),	-- Stonegrip Gauntlets
+				dr(3.0, i(13060)), -- The Needler
 				dr(2.0, i(13047)),	-- Twig of the World Tree
 				dr(5.0, i(13130)),	-- Windrunner Legguards
 			})),

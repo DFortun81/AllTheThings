@@ -281,13 +281,17 @@ _.Instances = { tier(1, {	-- Classic
 					dr(5.00, i(13113)),	-- Feathermoon Headdress
 					dr(3.00, i(13003)),	-- Lord Alexander's Battle Axe
 					dr(11.0, i(13107)),	-- Magiskull Cuffs
+					dr(2.00, i(13001)), -- Maiden's Circle
 					dr(4.00, i(13111)),	-- Sandals of the Insurgent
 					dr(7.00, i(13144)),	-- Serenity Belt
 					dr(4.00, i(13146)),	-- Shell Launcher Shotgun
 					dr(3.00, i(13072)),	-- Stonegrip Gauntlets
+					dr(1.90, i(13060)), -- The Needler
 					dr(5.00, i(13047)),	-- Twig of the World Tree
 					dr(5.00, i(13130)),	-- Windrunner Legguards
+					
 				 -- PROFESSIONS
+					
 					dr(1.1, i( 8028)),	-- Plans: Runed Mithril Hammer
 					dr(0.5, i(13518)),	-- Recipe: Potion of Petrification
 					dr(0.5, i(13488)),	-- Recipe: Transmute Life to Earth
