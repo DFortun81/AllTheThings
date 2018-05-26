@@ -5,13 +5,15 @@ _.PVP =
 {
 	n(-216, { -- Prestige
 		ach(10991, { -- First Step into a Larger World [1]
-			i(139775), -- Alliance Enthusiast
-			i(139776), -- Horde Fanatic
+			i(139777, { -- Strange Crate
+				i(139775), -- Alliance Enthusiast
+				i(139776), -- Horde Fanatic
+			}),
 		}),
-		a(ach(10743, { -- The Prestige [1.50]
+		a(ach(10743, { -- The Prestige [2]
 			-- Artifact Appearance
 		})),
-		h(ach(10745, { -- The Prestige [1.50]
+		h(ach(10745, { -- The Prestige [2]
 			-- Artifact Appearance
 		})),
 		ach(10993, { -- Third Time's The Charam [3]
