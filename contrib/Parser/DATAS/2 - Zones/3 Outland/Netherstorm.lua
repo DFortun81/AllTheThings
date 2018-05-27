@@ -2078,28 +2078,35 @@ _.Zones =
 						i(32821),	-- Veteran's Wyrmhide Bracers		
 					}),
 					n(20242, {	-- Karaaz <Consortium Quartermaster>
-						i(22552),	-- Formula: Enchant Weapon - Major Striking
-						i(28274),	-- Formula: Enchant Cloak - PvP Power
-						i(29115),	-- Consortium Blaster
-						i(29116),	-- Nomad's Leggings
-						i(29117),	-- Stormspire Vest
-						i(29122),	-- Nether Runner's Cowl
-						i(29121),	-- Guile of Khoraazi
-						i(29456),	-- Gift of the Ethereal
-						i(29457),	-- Nethershard
-						i(25733, {	-- Pattern: Fel Leather Boots
-							i(25686),	-- Fel Leather Boots
-						}),
-						i(25734, {	-- Pattern: Fel Leather Leggings
-							i(25687),	-- Fel Leather Leggings
-						}),
-						i(25732, {	-- Pattern: Fel Leather Gloves
-							i(25685),	-- Fel Leather Gloves
-						}),
 						i(31776),	-- Consortium Tabard
 						i(138796, {	-- Illusion: Executioner
 							ill(3225),	-- Executioner
 						}),
+						i(33156),	-- Design: Crimson Sun
+						i(23134),	-- Design: Delicate Blood Garnet
+						i(33305),	-- Design: Don Julio's Heart
+						i(24178),	-- Design: Pendant of the Null Rune
+						i(23136),	-- Design: Reckless Flame Spessarite
+						i(33622),	-- Design: Relentless Earthstorm Diamond
+						i(23146),	-- Design: Shifting Shadow Draenite
+						i(23155),	-- Design: Sparkling Azure Moonstone
+						i(23150),	-- Design: Subtle Golden Draenite
+						i(25908),	-- Design: Swift Skyfire Diamond
+						i(28274),	-- Formula: Enchant Cloak - PvP Power
+						i(22552),	-- Formula: Enchant Weapon - Major Striking
+						i(24314),	-- Pattern: Bag of Jewels
+						i(25733), 	-- Pattern: Fel Leather Boots
+						i(25732), 	-- Pattern: Fel Leather Gloves
+						i(25734), 	-- Pattern: Fel Leather Leggings
+						i(23874),	-- Schematic: Elemental Seaforium Charge
+						i(29115),	-- Consortium Blaster
+						i(29456),	-- Gift of the Ethereal
+						i(29121),	-- Guile of Khoraazi
+						i(29457),	-- Nethershard
+						i(29119),	-- Haramad's Bargain
+						i(29122),	-- Nether Runner's Cowl
+						i(29116),	-- Nomad's Leggings
+						i(29117),	-- Stormspire Vest
 					}),
 					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator>
 						i(146615, {	-- Gladiator's Satin Armor		

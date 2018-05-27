@@ -855,12 +855,8 @@ _.Zones =
 						}),
 					}),
 					na(19722, {		-- Muheru the Weaver <Tailoring Supplies>
-						i(21899, {	-- Pattern: Imbued Netherweave Boots
-							i(21860),	-- Netherweave Boots
-						}),
-						i(21898, {	-- Pattern: Imbued Netherweave Pants
-							i(21859),	-- Imbued Netherweave Pants
-						}),
+						i(21899), 	-- Pattern: Imbued Netherweave Boots
+						i(21898), 	-- Pattern: Imbued Netherweave Pants
 					}),
 					n(18382, {		-- Mycah <Sporeggar Quartermaster>
 						i(24245, {	-- Glowcap

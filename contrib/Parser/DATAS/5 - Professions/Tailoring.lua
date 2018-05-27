@@ -129,9 +129,14 @@ profession(197, { -- Tailoring
 		-- i(19215),-- Pattern: Wisdom of the Timbermaw [1 VENDOR - DONE]
 		
 		-- BURNING CRUSADE DROPS
+		-- i(24314),	-- Pattern: Bag of Jewels [2 VENDORS - DONE]
 		-- i(21892),	-- Pattern: Bolt of Imbued Netherweave [3 VENDORS - DONE]
+		-- i(21894),	-- Pattern: Bolt of Soulcloth [4 VENDORS - DONE]
 		-- i(21893),	-- Pattern: Imbued Netherweave Bag [2 VENDORS - DONE]
+		-- i(21898),	-- Pattern: Imbued Netherweave Pants [2 VENDORS - DONE]
 		-- i(24292),	-- Pattern: Mystic Spellthread [1 VENDOR - DONE]
+		-- i(21896),	-- Pattern: Netherweave Robe [3 VENDORS - DONE]
+		-- i(21897),	-- Pattern: Netherweave Tunic [3 VENDORS - DONE]
 		-- i(24293),	-- Pattern: Silver Spellthread [1 VENDOR - DONE]
 	}),
 	n(-160, {	-- Mounts
@@ -1028,10 +1033,13 @@ profession(197, { -- Tailoring
 			recipe(2402),	-- Woolen Cape
 		}),
 		tier(2, {	-- Burning Crusade
+			recipe(31459),	-- Bag of Jewels
 			recipe(26747),	-- Bolt of Imbued Netherweave
 			recipe(26745),	-- Bolt of Netherweave
+			recipe(26750),	-- Bolt of Soulcloth
 			recipe(60969),	-- Flying Carpet
 			recipe(26749),	-- Imbued Netherweave Bag
+			recipe(26775),	-- Imbued Netherweave Pants
 			recipe(31430),	-- Mystic Spellthread
 			recipe(26746),	-- Netherweave Bag
 			recipe(26765),	-- Netherweave Belt
@@ -1040,7 +1048,13 @@ profession(197, { -- Tailoring
 			recipe(26770),	-- Netherweave Gloves
 			recipe(31460),	-- Netherweave Net
 			recipe(26771),	-- Netherweave Pants
+			recipe(26773),	-- Netherweave Robe
+			recipe(26774),	-- Netherweave Tunic
 			recipe(31431),	-- Silver Spellthread
+			
+			-- TODO: https://www.wowhead.com/tailoring#recipes:350+17+1
+			-- STOPPED AT PRIMAL MOONCLOTH!
+			-- https://www.wowhead.com/spell=26751/primal-mooncloth
 		}),
 		tier(3, {	-- Wrath
 			
