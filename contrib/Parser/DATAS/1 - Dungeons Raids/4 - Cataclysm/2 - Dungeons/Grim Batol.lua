@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(71, { 	-- Grim Batol
 				["groups"] = {
-					d(1, {		-- Normal
+					d( 1, {	-- Normal
 						n(-17, {	-- Quests 				
 							q(28854, {	-- Closing A Dark Chapter
 								i(66933),	-- Breastplate of the Witness
@@ -26,11 +26,13 @@ _.Instances =
 							i(56218),	-- Curse-Tainted Leggings		
 						}),			
 						cr(39625, e(131, { -- General Umbriss
-							i(56441),	-- Modgug's Blade
+							i( 56441),	-- Modgug's Blade
 							i(157612), 	-- Dragonkin Ward (Added 7.3.5)
-							i(56443),	-- Wildhammer Riding Helm
-							i(56442),	-- Cursed Skardyn Vest 
+							i( 56443),	-- Wildhammer Riding Helm
+							i( 56442),	-- Cursed Skardyn Vest 
 							i(157596), 	-- Glimmerthread Pantaloons (Added 7.3.5)
+							i( 56444),	-- Umbriss Band
+							i( 56440),	-- Skardyn's Grace
 							nld({    -- Legacy
 								i(56116),	-- Modgud's Blade
 								i(56112),	-- Wildhammer Riding Helm
@@ -39,10 +41,12 @@ _.Instances =
 						})),
 						cr(40177, e(132, { -- Forgemaster Throngus
 							i(157613), 	-- Geomancy Slicer (Added 7.3.5)
-							i(56446),	-- Wand of Untainted Power
+							i( 56446),	-- Wand of Untainted Power
 							i(157597), 	-- Troggstitched Drape (Added 7.3.5)
-							i(56447),	-- Belt of the Forgemaster
-							i(56448),	-- Dark Iron Chain Boots
+							i (56447),	-- Belt of the Forgemaster
+							i( 56448),	-- Dark Iron Chain Boots
+							i( 56445),	-- Ring of Dun Algaz
+							i( 56449),	-- Throngus's Finger
 							nld({    -- Legacy
 								i(56122),	-- Wand of Untainted Power
 								i(56118),	-- Belt of the Forgemaster
@@ -50,13 +54,13 @@ _.Instances =
 							}),
 						})),
 						cr(40319, e(133, { -- Drahga Shadowburner
-							i(56454),	-- Windwalker Blade
+							i( 56454),	-- Windwalker Blade
 							i(157598), 	-- Courier's Dragonriding Spaulders (Added 7.3.5)
-							i(56452),	-- Earthshape Pauldrons
-							i(56450),	-- Azureborne Cloak
-							i(56453),	-- Crimsonborne Bracers
+							i( 56452),	-- Earthshape Pauldrons
+							i( 56450),	-- Azureborne Cloak
+							i( 56453),	-- Crimsonborne Bracers
 							i(157614), 	-- Flame Invoker's Treads (Added 7.3.5)
-							i(56451),	-- Red Scale Boots
+							i( 56451),	-- Red Scale Boots
 							nld({    -- Legacy
 								i(56127),	-- Windwalker Blade
 								i(56124),	-- Earthshaper Pauldrons
@@ -66,13 +70,17 @@ _.Instances =
 							}),
 						})),
 						cr(40484, e(134, { -- Erudax
-							i(56461),	-- Staff of Siphoned Essences
-							i(56456),	-- Wild Hammer
-							i(56459),	-- Mace of Transformed Bone
-							i(56460),	-- Crown of Enfeebled Bodies
-							i(56455),	-- Vest of Misshapen Hides
-							i(56464),	-- Bracers of Umbral Mending 
+							i( 56461),	-- Staff of Siphoned Essences
+							i( 56456),	-- Wild Hammer
+							i( 56459),	-- Mace of Transformed Bone
+							i( 56460),	-- Crown of Enfeebled Bodies
+							i( 56455),	-- Vest of Misshapen Hides
+							i( 56464),	-- Bracers of Umbral Mending 
 							i(157615), 	-- Flamescale Chain Leggings (Added 7.3.5)
+							i( 56457),	-- Circle of Bone
+							i( 56463),	-- Corrupted Egg Shell
+							i( 56462),	-- Gale of Shadows
+							i( 56458),	-- Mark of Khardros
 							nld({    -- Legacy
 								i(56131),	-- Wild Hammer
 								i(56137),	-- Staff of Siphoned Essences
@@ -83,23 +91,27 @@ _.Instances =
 							}),
 						})),
 					}),
-					d(2, {		-- Heroic
+					d( 2, {	-- Heroic
 						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(39625, e(131, { -- General Umbriss
-								i(56441),	-- Modgug's Blade
+								i( 56441),	-- Modgug's Blade
 								i(157612), 	-- Dragonkin Ward (Added 7.3.5)
-								i(56443),	-- Wildhammer Riding Helm
-								i(56442),	-- Cursed Skardyn Vest 
+								i( 56443),	-- Wildhammer Riding Helm
+								i( 56442),	-- Cursed Skardyn Vest 
 								i(157596), 	-- Glimmerthread Pantaloons (Added 7.3.5)
+								i( 56444),	-- Umbriss Band
+								i( 56440),	-- Skardyn's Grace
 							})),
 							cr(40177, e(132, { -- Forgemaster Throngus
 								i(157613), 	-- Geomancy Slicer (Added 7.3.5)
-								i(56446),	-- Wand of Untainted Power
+								i( 56446),	-- Wand of Untainted Power
 								i(157597), 	-- Troggstitched Drape (Added 7.3.5)
-								i(56447),	-- Belt of the Forgemaster
-								i(56448),	-- Dark Iron Chain Boots
+								i( 56447),	-- Belt of the Forgemaster
+								i( 56448),	-- Dark Iron Chain Boots
+								i( 56445),	-- Ring of Dun Algaz
+								i( 56449),	-- Throngus's Finger
 							})),
 							cr(40319, e(133, { -- Drahga Shadowburner
 								n(-50, {    -- Love is in the Air
@@ -117,26 +129,30 @@ _.Instances =
 									["achievementID"] = 1691, -- Merrymaker
 									["u"] = 29,
 								}),
-								i(56454),	-- Windwalker Blade
+								i( 56454),	-- Windwalker Blade
 								i(157598), 	-- Courier's Dragonriding Spaulders (Added 7.3.5)
-								i(56452),	-- Earthshape Pauldrons
-								i(56450),	-- Azureborne Cloak
-								i(56453),	-- Crimsonborne Bracers
+								i( 56452),	-- Earthshape Pauldrons
+								i( 56450),	-- Azureborne Cloak
+								i( 56453),	-- Crimsonborne Bracers
 								i(157614), 	-- Flame Invoker's Treads (Added 7.3.5)
-								i(56451),	-- Red Scale Boots
+								i( 56451),	-- Red Scale Boots
 							})),
 							cr(40484, e(134, { -- Erudax
-								i(56461),	-- Staff of Siphoned Essences
-								i(56456),	-- Wild Hammer
-								i(56459),	-- Mace of Transformed Bone
-								i(56460),	-- Crown of Enfeebled Bodies
-								i(56455),	-- Vest of Misshapen Hides
-								i(56464),	-- Bracers of Umbral Mending 
+								i( 56461),	-- Staff of Siphoned Essences
+								i( 56456),	-- Wild Hammer
+								i( 56459),	-- Mace of Transformed Bone
+								i( 56460),	-- Crown of Enfeebled Bodies
+								i( 56455),	-- Vest of Misshapen Hides
+								i( 56464),	-- Bracers of Umbral Mending 
 								i(157615), 	-- Flamescale Chain Leggings (Added 7.3.5)
+								i( 56457),	-- Circle of Bone
+								i( 56463),	-- Corrupted Egg Shell
+								i( 56462),	-- Gale of Shadows
+								i( 56458),	-- Mark of Khardros
 							})),
-						}
+						},
 					}),
-					d(24, {		-- Timewalking
+					d(24, {	-- Timewalking
 						["lvl"] = 80,
 						["groups"] = {
 							cr(39625, e(131, { -- General Umbriss
@@ -144,6 +160,9 @@ _.Instances =
 								i(133285),	-- Wildhammer Riding Helm
 								i(133284),	-- Cursed Skardyn Vest
 								i(133306),	-- Bracers of Umbral Mending
+								i(133307),	-- Abandoned Dark Iron Ring
+								i(133286),	-- Umbriss Band
+								i(133282),	-- Skardyn's Grace
 							})),
 							cr(40177, e(132, { -- Forgemaster Throngus
 								i(133288),	-- Wand of Untainted Power
@@ -151,6 +170,9 @@ _.Instances =
 								i(133289),	-- Belt of the Forgemaster
 								i(133308),	-- Curse-Tainted Leggings
 								i(133290),	-- Dark Iron Chain Boots
+								i(133287),	-- Ring of Dun Algaz
+								i(133304),	-- Gale of Shadows
+								i(133291),	-- Throngus's Finger
 							})),
 							cr(40319, e(133, { -- Drahga Shadowburner
 								i(133296),	-- Windwalker Blade
@@ -169,9 +191,12 @@ _.Instances =
 								i(133374),	-- Courier's Dragonriding Spaulders
 								i(133309),	-- Shroud of Dark Memories
 								i(133297),	-- Vest of Misshapen Hides
+								i(133299),	-- Circle of Bone
+								i(133305),	-- Corrupted Egg Shell
+								i(133300),	-- Mark of Khardros
 							})),
-						}
-					})
+						},
+					}),
 				},
 				["lvl"] = 83,
 				["mapID"] = 757

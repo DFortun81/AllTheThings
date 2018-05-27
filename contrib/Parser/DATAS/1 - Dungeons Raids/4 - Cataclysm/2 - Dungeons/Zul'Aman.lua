@@ -21,14 +21,14 @@ _.Instances =
 							i(69598),	-- Robes of Dissention
 						})),
 					}),
-					n(0, {		-- Zone Drop
+					n(  0, {	-- Zone Drop
 						i(69801),	-- Amani Armguards
 						i(33865, {	-- Amani Hex Stick
 							n(24396, { 	-- Forest Frog
 								["groups"] = {
-									i(33993) -- Mojo (Pet)
+									i(33993) -- Mojo (PET!)
 								},
-								["description"] = "Occasionally when using an Amani Hex Stick on a Forest Frog Mojo will spawn and hop into your bags.",
+								["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
 							}),
 						}),
 						i(69797),	-- Charmbinder Grips
@@ -38,6 +38,7 @@ _.Instances =
 						i(69552),	-- Bracers of Hidden Purpose
 						i(69549),	-- Wristguards of the Predator
 						i(69550),	-- Leggings of Ancient Magics
+						i(69553),	-- Talonguard Band
 						o(187021, {	-- Bakkalzu's Satchel
 							["groups"] = {
 								i(69584),	-- Recovered Cloak of Frostheim
@@ -84,6 +85,7 @@ _.Instances =
 						i(69559),	-- Amani'shi Bracers
 						i(69561),	-- Hawkscale Waistguard
 						i(69562),	-- Boots of Bad Mojo
+						i(69563),	-- Ring of the Numberless Brood
 						nld({	-- Legacy
 							un(2, i(33357)),	-- Footpads of Madness
 						}),
@@ -107,6 +109,7 @@ _.Instances =
 						i(69565),	-- Breastplate of Primal Fury
 						i(69568),	-- Shadowmender Wristguards
 						i(69567),	-- Wristwraps of Departed Spirits
+						i(69566),	-- Shimmerclaw Band
 						nld({	-- Legacy
 							un(2, i(33317)),	-- Robe of Departed Spirits
 						}),
@@ -133,6 +136,7 @@ _.Instances =
 						i(69572),	-- Hex Lord's Bloody Cloak
 						i(69569),	-- Shadowtooth Trollskin Breastplate
 						i(69570),	-- Waistband of Hexes
+						i(69571),	-- Soul Drain Signet
 						nld({	-- Legacy
 							un(2, i(33453)),	-- Hood of Hexing
 							un(2, i(33463)),	-- Hood of the Third Eye

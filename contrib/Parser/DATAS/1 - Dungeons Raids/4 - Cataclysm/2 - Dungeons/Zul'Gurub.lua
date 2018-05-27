@@ -31,7 +31,7 @@ _.Instances =
 						qg(53023, q(29173)),	-- Secondary Targets
 						qg(53023, q(29172)),	-- The Beasts Within
 					}),
-					n(0, {		-- Zone Drop
+					n(  0, {	-- Zone Drop
 						i(69800),	-- Spiritguard Drape
 						i(69796),	-- Spiritcaller Cloak
 						i(69798),	-- Knotted Handwraps
@@ -42,18 +42,21 @@ _.Instances =
 						i(69600),	-- Belt of Slithering Serpents
 						i(69604),	-- Coils of Hate
 						i(69601),	-- Serpentine Leggings
+						i(69602),	-- Signet of Venoxis
 					})),
 					cr(52151, e(176, {	-- Bloodlord Mandokir
-						i(68823),	-- Armored Razzashi Raptor (Mount)
+						i(68823),	-- Armored Razzashi Raptor (MOUNT!)
 						i(69609),	-- Bloodlord's Protector
 						i(69607),	-- Touch of Discord
+						i(69605),	-- Amulet of the Watcher
 						i(69606),	-- Hakkari Loa Drape
 						i(69608),	-- Deathcharged Wristguards
 					})),
-					n(-41, {		-- "Cache of Madness (Requires 225 Archeology)",
+					n(   -41, {			-- "Cache of Madness (Requires 225 Archeology)",
 						cr(52258, e(177, {	-- Gri'lek
 							i(69631),	-- Zulian Voodoo Stick
 							i(69632),	-- Lost Bag of Whammies
+							i(69635),	-- Amulet of Protection
 							i(69630),	-- Handguards of the Tormented
 							i(69633),	-- Plunderer's Gauntlets
 							i(69634),	-- Fasc's Preserved Boots
@@ -84,11 +87,12 @@ _.Instances =
 						})),
 					}),
 					cr(52059, e(181, {	-- High Priestess Kilnara
-						i(68824),	-- Swift Zulian Panther (Mount)
+						i(68824),	-- Swift Zulian Panther (MOUNT!)
 						i(69614),	-- Roaring Mask of Bethekk
 						i(69612),	-- Claw-Fringe Mantle
 						i(69611),	-- Sash of Anguish
 						i(69613),	-- Leggings of the Pride
+						i(69610),	-- Arlokk's Signet
 					})),
 					cr(52053, e(184, {	-- Zanzil
 						i(69618),	-- Zulian Slicer
@@ -108,7 +112,7 @@ _.Instances =
 						i(69627),	-- Zulian Ward
 						i(69622),	-- The Hexxer's Mask
 						i(69623),	-- Vestments of the Soulflayer
-						h(i(122215)), -- Music Roll: Zul'Gurub Voodoo
+						h(i(122215)),	-- Music Roll: Zul'Gurub Voodoo
 					})),
 				},
 				["lvl"] = 85,
