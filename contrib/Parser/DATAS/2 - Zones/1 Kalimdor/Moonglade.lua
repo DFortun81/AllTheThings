@@ -29,18 +29,39 @@ _.Zones =
 						}),
 						n(-2, { -- Vendors
 							n(15909, { -- Fariel Starsong <Coin of Ancestry Collector>
-								un(17, i(21100, {-- Coin of Ancestry
+								un(17, i(21100, {	-- Coin of Ancestry
+									un(17, i(21741, {	-- Cluster Rocket Recipes
+										un(17, i(21730)),	-- Schematic: Blue Rocket Cluster
+										un(17, i(21731)),	-- Schematic: Green Rocket Cluster
+										un(17, i(21732)),	-- Schematic: Red Rocket Cluster
+									})),
+									un(17, i(21743, {	-- Large Cluster Rocket Recipes
+										un(17, i(21733)),	-- Schematic: Large Blue Rocket Cluster
+										un(17, i(21734)),	-- Schematic: Large Green Rocket Cluster
+										un(17, i(21735)),	-- Schematic: Large Red Rocket Cluster
+									})),
+									un(17, i(21742, {	-- Large Rocket Recipes
+										un(17, i(21727)),	-- Schematic: Large Blue Rocket
+										un(17, i(21728)),	-- Schematic: Large Green Rocket
+										un(17, i(21729)),	-- Schematic: Large Red Rocket
+									})),
+									un(17, i(21740, {	-- Small Rocket Recipes
+										un(17, i(21724)),	-- Schematic: Small Blue Rocket
+										un(17, i(21725)),	-- Schematic: Small Green Rocket
+										un(17, i(21726)),	-- Schematic: Small Red Rocket
+									})),
 									un(17, i(143827)),	-- Dragon Head Costume
 									un(17, i(143828)),	-- Dragon Body Costume
 									un(17, i(143829)),	-- Dragon Tail Costume
 									un(17, i(89999)),	-- Everlasting Alliance Firework
 									un(17, i(90000)),	-- Everlasting Horde Firework
-									un(17, i(44916, {	-- Pattern: Festival Dress
-										un(17, i(151771)), -- Festival Dress
-									})),
-									un(17, i(44917, {	-- Pattern: Festival Suit
-										un(17, i(151772)), -- Festival Suit
-									})),
+									un(17, i(44916)), 	-- Pattern: Festival Dress
+									un(17, i(44917)), 	-- Pattern: Festival Suit
+									un(17, i(116142)),	-- Schematic: Alliance Firework
+									un(17, i(44918)),	-- Schematic: Cluster Launcher
+									un(17, i(44919)),	-- Schematic: Firework Launcher
+									un(17, i(116144)),	-- Schematic: Horde Firework
+									un(17, i(116146)),	-- Schematic: Snake Firework
 								})),
 							}),
 							n(15864, { -- Valadar Starsong <Coin of Ancestry Collector>
@@ -218,7 +239,6 @@ _.Zones =
 						i(136795),	-- Tome of the Wilds: Charm Woodland Creature
 						i(136794),	-- Tome of the Wilds: Flap
 						i(136789),	-- Tome of the Wilds: Stag Form
-						--i(136790),	-- Tome of the Wilds: Track Beasts
 						{
 							["itemID"] = 136790,	-- Tome of the Wilds: Track Beasts
 							["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)

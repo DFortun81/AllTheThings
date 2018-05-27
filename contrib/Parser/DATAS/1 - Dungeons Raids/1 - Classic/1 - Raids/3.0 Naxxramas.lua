@@ -347,6 +347,21 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(-369, { 	-- The Military Quarter
 				["groups"] = {
+					n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
+						["description"] = "Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
+						["groups"] = {
+							un(2, i(22685)),	-- Pattern: Glacial Cloak
+							un(2, i(22684)),	-- Pattern: Glacial Gloves
+							un(2, i(22686)),	-- Pattern: Glacial Vest
+							un(2, i(22687)), 	-- Pattern: Glacial Wrists
+							un(2, i(22719, {	-- Omarion's Handbook
+								["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
+								["groups"] = {
+									un(34, q(9233)),	-- Omarion's Handbook [Quest]
+								},
+							})),
+						},
+					}),
 					n(16061, {	-- Instructor Razuvious	
 						i(23009),	-- Wand of the Whispering Dead
 						i(23014),	-- Iblis, Blade of the Fallen Seraph

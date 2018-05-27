@@ -122,7 +122,8 @@ _.Instances =
 					}),
 					cr(16812, e(1556, {	-- Opera Hall
 						n(17521, {		-- The Big Bad Wolf (Random)	
-							["groups"] = {		
+							["groups"] = {
+								i(138017),	-- Clothes Chest Pattern: Karazhan Opera House
 								i( 97548),	-- Spiky Collar (PET!)
 								i( 28584),	-- Big Bad Wolf's Paw
 								i( 28581),	-- Wolfslayer Sniper Rifle
@@ -138,7 +139,8 @@ _.Instances =
 							["description"] = "This is one of three possible bosses for this event."
 						}),
 						n(17534, {		-- Julianne
-							["groups"] = {		
+							["groups"] = {
+								i(138017),	-- Clothes Chest Pattern: Karazhan Opera House
 								i( 28573),	-- Despair
 								i( 28572),	-- Blade of the Unrequited
 								i( 28593),	-- Eternium Greathelm
@@ -151,7 +153,8 @@ _.Instances =
 							["description"] = "This is one of three possible bosses for this event.  Also, paired with Romulo"
 						}),
 						n(17533, {		-- Romulo
-							["groups"] = {		
+							["groups"] = {
+								i(138017),	-- Clothes Chest Pattern: Karazhan Opera House
 								i( 28573),	-- Despair
 								i( 28572),	-- Blade of the Unrequited
 								i( 28593),	-- Eternium Greathelm
@@ -165,7 +168,8 @@ _.Instances =
 							["description"] = "This is one of three possible bosses for this event. Also paired with Julianne"
 						}),
 						n(18168, {		-- Wizard of Oz - The Crone (Random)
-							["groups"] = {		
+							["groups"] = {
+								i(138017),	-- Clothes Chest Pattern: Karazhan Opera House
 								i( 28587),	-- Legacy
 								i( 28588),	-- Blue Diamond Witchwand
 								i( 28593),	-- Eternium Greathelm

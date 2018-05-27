@@ -404,45 +404,27 @@ _.Zones =
 						i(73839),	-- Swift Mountain Horse
 					})),
 					a(n(4168, {		-- Elynna <Tailoring Supplies>
-						i(10311, {	-- Pattern: Orange Martial Shirt
-							i(10052),	-- Orange Martial Shirt
+						i(54440, {	-- Dreamcloth
+							i(54601),	-- Pattern: Belt of the Depths
+							i(54602),	-- Pattern: Dreamless Belt
+							i(54603),	-- Pattern: Breeches of Mended Nightmares
+							i(54604),	-- Pattern: Flame-Ascended Pantaloons
+							i(54605),	-- Pattern: Illusionary Bag
 						}),
-						i(6275, { -- Pattern: Greater Adept's Robe
-							i(6264),	-- Greater Adept's Robe
+						i(53643, {	-- Bolt of Embersilk Cloth
+							i(68199),	-- Pattern: Black Embersilk Gown
+							i(54600),	-- Pattern: Powerful Ghostly Spellthread
+							i(54599),	-- Pattern: Powerful Enchanted Spellthread
+							i(54593),	-- Pattern: Vicious Embersilk Cowl
+							i(54594),	-- Pattern: Vicious Embersilk Pants
+							i(54595),	-- Pattern: Vicious Embersilk Robe
+							i(54596),	-- Pattern: Vicious Fireweave Cowl
+							i(54597),	-- Pattern: Vicious Fireweave Pants
+							i(54598),	-- Pattern: Vicious Fireweave Robe
 						}),
-						i(6272, {	-- Pattern: Blue Linen Robe
-							i(6242),	-- Blue Linen Robe
-						}),
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							i(75073),	-- Vicious Embersilk Cowl
-						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							i(75072),	-- Vicious Embersilk Pants
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							i(75093),	-- Vicious Embersilk Robe
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							i(75062),	-- Vicious Fireweave Cowl
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							i(75082),	-- Vicious Fireweave Pants
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							i(75088),	-- Vicious Fireweave Robe
-						}),
-						i(54601, {	-- Pattern: Belt of the Depths
-							i(54504),	-- Belt of the Depths
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							i(54503),	-- Dreamless Belt
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							i(54505),	-- Breeches of Mended Nightmares
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							i(54506),	-- Flame-Ascended Pantaloons
-						}),
+						i(6272),	-- Pattern: Blue Linen Robe
+						i(6275),	-- Pattern: Greater Adept's Robe
+						i(10311),	-- Pattern: Orange Martial Shirt
 					})),
 					a(n(4223, {		-- Fyldan <Cooking Supplies>
 						currency(81, {	-- Epicurean's Award

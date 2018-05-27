@@ -175,63 +175,13 @@ _.WorldEvents =
 							qh(6984, { -- A Smokywood Pastures' Thank You
 								["groups"] = {
 									i(17726, { -- Smokywood Pasture's Special Gift
-										un(29, i(17709)),	-- Recipe: Elixir of Frost Power
-										i(17722, {	-- Pattern: Gloves of the Greatfather
-											["groups"] = {
-												i(17721, { -- Gloves of the Greatfather
-													["groups"] = {
-													},
-													["u"] = 29,
-												}),
-											},
-											["u"] = 29,
-											["dr"] = 16,
-										}),
-										i(17724, {	-- Pattern: Green Holiday Shirt
-											["groups"] = {
-												i(17723, { -- Green Holiday Shirt
-													["groups"] = {
-													},
-													["u"] = 29,
-												}),
-											},
-											["u"] = 29,
-											["dr"] = 16,
-										}),
-										i(17706, {	-- Plans: Edge of Winter
-											["groups"] = {
-												i(17704, { -- Edge of Winter
-													["groups"] = {
-													},
-													["u"] = 29,
-												}),
-											},
-											["u"] = 29,
-											["dr"] = 16,
-										}),
-										i(17720, {	-- Schematic: Snowmaster 9000
-											["groups"] = {
-												i(17716, { -- Snowmaster 9000
-													["groups"] = {
-													},
-													["u"] = 29,
-												}),
-											},
-											["u"] = 29,
-											["dr"] = 16,
-										}),
-										i(128649, { -- Illusion: Winter's Grasp
-											["groups"] = {
-											},
-											["u"] = 29,
-											["dr"] = 5,
-										}),
-										i(118572, { -- Illusion: Flame of Ragnaros
-											["groups"] = {
-											},
-											["u"] = 29,
-											["dr"] = 0.5,
-										}),
+										dr(0.5, un(29, i(118572))),	-- Illusion: Flame of Ragnaros
+										dr(5, un(29, i(128649))),	-- Illusion: Winter's Grasp
+										dr(15, un(29, i(17706))),	-- Pattern: Edge of Winter
+										dr(16, un(29, i(17722))),	-- Pattern: Gloves of the Greatfather
+										dr(16, un(29, i(17724))),	-- Pattern: Green Holiday Shirt
+										dr(16, un(29, i(17709))),	-- Recipe: Elixir of Frost Power
+										dr(16, un(29, i(17720))),	-- Schematic: Snowmaster 9000
 									}),
 								},
 								["description"] = "This quest can only be done once per year.",
@@ -367,63 +317,13 @@ _.WorldEvents =
 							qa(7045, { -- A Smokywood Pastures' Thank You
 								["groups"] = {
 									i(17726, { -- Smokywood Pasture's Special Gift
-										un(29, i(17709)),	-- Recipe: Elixir of Frost Power
-										i(17722, {	-- Pattern: Gloves of the Greatfather
-											["groups"] = {
-												i(17721, { -- Gloves of the Greatfather
-													["groups"] = {
-													},
-													["u"] = 29,
-												}),
-											},
-											["u"] = 29,
-											["dr"] = 16,
-										}),
-										i(17724, {	-- Pattern: Green Holiday Shirt
-											["groups"] = {
-												i(17723, { -- Green Holiday Shirt
-													["groups"] = {
-													},
-													["u"] = 29,
-												}),
-											},
-											["u"] = 29,
-											["dr"] = 16,
-										}),
-										i(17706, {	-- Plans: Edge of Winter
-											["groups"] = {
-												i(17704, { -- Edge of Winter
-													["groups"] = {
-													},
-													["u"] = 29,
-												}),
-											},
-											["u"] = 29,
-											["dr"] = 16,
-										}),
-										i(17720, {	-- Schematic: Snowmaster 9000
-											["groups"] = {
-												i(17716, { -- Snowmaster 9000
-													["groups"] = {
-													},
-													["u"] = 29,
-												}),
-											},
-											["u"] = 29,
-											["dr"] = 16,
-										}),
-										i(128649, { -- Illusion: Winter's Grasp
-											["groups"] = {
-											},
-											["u"] = 29,
-											["dr"] = 5,
-										}),
-										i(118572, { -- Illusion: Flame of Ragnaros
-											["groups"] = {
-											},
-											["u"] = 29,
-											["dr"] = 0.5,
-										}),
+										dr(0.5, un(29, i(118572))),	-- Illusion: Flame of Ragnaros
+										dr(5, un(29, i(128649))),	-- Illusion: Winter's Grasp
+										dr(15, un(29, i(17706))),	-- Pattern: Edge of Winter
+										dr(16, un(29, i(17722))),	-- Pattern: Gloves of the Greatfather
+										dr(16, un(29, i(17724))),	-- Pattern: Green Holiday Shirt
+										dr(16, un(29, i(17709))),	-- Recipe: Elixir of Frost Power
+										dr(16, un(29, i(17720))),	-- Schematic: Snowmaster 9000
 									}),
 								},
 								["description"] = "This quest can only be done once per year.",
@@ -586,13 +486,12 @@ _.WorldEvents =
 							})),
 						}),
 						n(13420, { 	-- Penney Copperpinch
-							un(29, i(70923)), -- Gaudy Winter Veil Sweater
-							un(29, i(34261, { -- Pattern: Green Winter Clothes
-								un(29, i(151792)), -- Green Winter Clothes
-							})),
-							un(29, i(34262, { -- Pattern: Winter Boots
-								un(29, i(151791)), -- Winter Boots
-							})),
+							i(34261),	-- Pattern: Green Winter Clothes
+							i(34262),	-- Pattern: Winter Boots
+							i(17200),	-- Recipe: Gingerbread Cookie
+							i(34413),	-- Recipe: Hot Apple Cider
+							i(17201),	-- Recipe: Winter Veil Egg Nog
+							i(70923), 	-- Gaudy Winter Veil Sweater
 						}),
 						n(13432, { 	-- Seersa Jinglepocket
 							un(29, i(70923)), -- Gaudy Winter Veil Sweater
@@ -716,18 +615,10 @@ _.WorldEvents =
 							["groups"] = {
 								i(21327, { -- Ticking Present
 									un(29, i(17709)),	-- Recipe: Elixir of Frost Power
-									un(29, i(17722, {	-- Pattern: Gloves of the Greatfather
-										un(29, i(17721)), -- Gloves of the Greatfather
-									})),
-									un(29, i(17724, {	-- Pattern: Green Holiday Shirt
-										un(29, i(17723)), -- Green Holiday Shirt
-									})),
-									un(29, i(17706, {	-- Plans: Edge of Winter
-										un(29, i(17704)), -- Edge of Winter
-									})),
-									un(29, i(17720, {	-- Schematic: Snowmaster 9000
-										un(29, i(17716)), -- Snowmaster 9000
-									})),
+									un(29, i(17722)),	-- Pattern: Gloves of the Greatfather
+									un(29, i(17724)),	-- Pattern: Green Holiday Shirt
+									un(29, i(17706)), 	-- Plans: Edge of Winter
+									un(29, i(17720)), 	-- Schematic: Snowmaster 9000
 								}),
 							},
 							["lvl"] = 40,

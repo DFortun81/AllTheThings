@@ -127,6 +127,7 @@ _.Instances =
 									i(18258),	-- Gordok Ogre Suit
 								})),
 								qr(qg(14338, q(27120, {	-- The Gordok Ogre Suit
+									un(2, recipe(22813)),	-- Gordok Ogre Suit
 									i(18258),	-- Gordok Ogre Suit
 								}))),
 								qg(14322, q(27114)),	-- The Gordok Taste Test
@@ -297,6 +298,7 @@ _.Instances =
 								}),
 							}),
 							cr(11487, e(408, {	-- Magister Kalendris
+								dr(22, i(22309)),	-- Pattern: Big Bag of Enchantment
 								i(18397),	-- Elder Magus Pendant
 								i(18374),	-- Flamescarred Shoulders
 								i(18350),	-- Amplifying Cloak

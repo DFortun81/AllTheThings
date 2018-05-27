@@ -232,63 +232,13 @@ _.Zones =
 								qa(7045, { -- A Smokywood Pastures' Thank You
 									["groups"] = {
 										i(17726, { -- Smokywood Pasture's Special Gift
-											un(29, i(17709)),	-- Recipe: Elixir of Frost Power
-											i(17722, {	-- Pattern: Gloves of the Greatfather
-												["groups"] = {
-													i(17721, { -- Gloves of the Greatfather
-														["groups"] = {
-														},
-														["u"] = 29,
-													}),
-												},
-												["u"] = 29,
-												["dr"] = 16,
-											}),
-											i(17724, {	-- Pattern: Green Holiday Shirt
-												["groups"] = {
-													i(17723, { -- Green Holiday Shirt
-														["groups"] = {
-														},
-														["u"] = 29,
-													}),
-												},
-												["u"] = 29,
-												["dr"] = 16,
-											}),
-											i(17706, {	-- Plans: Edge of Winter
-												["groups"] = {
-													i(17704, { -- Edge of Winter
-														["groups"] = {
-														},
-														["u"] = 29,
-													}),
-												},
-												["u"] = 29,
-												["dr"] = 16,
-											}),
-											i(17720, {	-- Schematic: Snowmaster 9000
-												["groups"] = {
-													i(17716, { -- Snowmaster 9000
-														["groups"] = {
-														},
-														["u"] = 29,
-													}),
-												},
-												["u"] = 29,
-												["dr"] = 16,
-											}),
-											i(128649, { -- Illusion: Winter's Grasp
-												["groups"] = {
-												},
-												["u"] = 29,
-												["dr"] = 5,
-											}),
-											i(118572, { -- Illusion: Flame of Ragnaros
-												["groups"] = {
-												},
-												["u"] = 29,
-												["dr"] = 0.5,
-											}),
+											dr(0.5, un(29, i(118572))),	-- Illusion: Flame of Ragnaros
+											dr(5, un(29, i(128649))),	-- Illusion: Winter's Grasp
+											dr(15, un(29, i(17706))),	-- Pattern: Edge of Winter
+											dr(16, un(29, i(17722))),	-- Pattern: Gloves of the Greatfather
+											dr(16, un(29, i(17724))),	-- Pattern: Green Holiday Shirt
+											dr(16, un(29, i(17709))),	-- Recipe: Elixir of Frost Power
+											dr(16, un(29, i(17720))),	-- Schematic: Snowmaster 9000
 										}),
 									},
 									["description"] = "This quest can only be done once per year.",
@@ -407,12 +357,12 @@ _.Zones =
 							}),
 							n(-2, { 	-- Vendors
 								n(13433, { -- Wulmort Jinglepocket
-									i(34319),	-- Pattern: Red Winter Clothes
-									i(34262),	-- Pattern: Winter Boots
-									i(17200),	-- Recipe: Gingerbread Cookie
-									i(34413),	-- Recipe: Hot Apple Cider
-									i(17201),	-- Recipe: Winter Veil Egg Nog
-									i(70923), 	-- Gaudy Winter Veil Sweater
+									un(29, i(34319)),	-- Pattern: Red Winter Clothes
+									un(29, i(34262)),	-- Pattern: Winter Boots
+									un(29, i(17200)),	-- Recipe: Gingerbread Cookie
+									un(29, i(34413)),	-- Recipe: Hot Apple Cider
+									un(29, i(17201)),	-- Recipe: Winter Veil Egg Nog
+									un(29, i(70923)), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 							n(54519, { 	-- Winter Veil Tree
@@ -499,18 +449,10 @@ _.Zones =
 									["groups"] = {
 										i(21327, { -- Ticking Present
 											un(29, i(17709)),	-- Recipe: Elixir of Frost Power
-											i(17722, {	-- Pattern: Gloves of the Greatfather
-												i(17721), -- Gloves of the Greatfather
-											}),
-											i(17724, {	-- Pattern: Green Holiday Shirt
-												i(17723), -- Green Holiday Shirt
-											}),
-											i(17706, {	-- Plans: Edge of Winter
-												i(17704), -- Edge of Winter
-											}),
-											i(17720, {	-- Schematic: Snowmaster 9000
-												i(17716), -- Snowmaster 9000
-											}),
+											un(29, i(17722)),	-- Pattern: Gloves of the Greatfather
+											un(29, i(17724)),	-- Pattern: Green Holiday Shirt
+											un(29, i(17706)), 	-- Plans: Edge of Winter
+											un(29, i(17720)), 	-- Schematic: Snowmaster 9000
 										}),
 									},
 									["lvl"] = 40,
@@ -1087,15 +1029,11 @@ _.Zones =
 						i(45578),	-- Gnomeregan Tabard
 					}),
 					n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
-						i(10321, {	-- Pattern: Tuxedo Shirt
-							i(10034),	-- Tuxedo Shirt
-						}),
-						i(10317, {	-- Pattern: Pink Mageweave Shirt
-							i(10055),	-- Pink Mageweave Shirt
-						}),
-						i(10314, {	-- Pattern: Lavender Mageweave Shirt
-							i(10054),	-- Lavender Mageweave Shirt
-						}),
+						i(10314), 	-- Pattern: Lavender Mageweave Shirt
+						i(10317), 	-- Pattern: Pink Mageweave Shirt
+						i(10326), 	-- Pattern: Tuxedo Jacket
+						i(10323), 	-- Pattern: Tuxedo Pants
+						i(10321), 	-- Pattern: Tuxedo Shirt
 					}),
 					n(5154, {	-- Poranna Snowbraid <Tailoring Supplies>
 						i(54593, {	-- Pattern: Vicious Embersilk Cowl

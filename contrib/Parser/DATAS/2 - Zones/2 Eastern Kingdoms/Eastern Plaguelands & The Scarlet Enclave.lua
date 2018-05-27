@@ -951,32 +951,26 @@ _.Zones =
 					}),
 					n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 						{
-							["itemID"] = 136801,	-- Divine Tome
-							["recipeID"] = 121183,	-- Contemplation
+							["itemID"] = 136801,	-- Divine Tome: Contemplation [Paladin]
+							--["recipeID"] = 121183,	-- Contemplation
 						},
 						i(136928),	-- Thaumaturgist's Orb Toy - Priest only
 						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 						i(19447),	-- Formula: Enchant Bracer - Healing Power
 						i(19442),	-- Formula: Powerful Anti-Venom
-						i(19217, {	-- Pattern: Argent Shoulders
-							i(19059)	-- Argent Shoulders
-						}),
-						i(19216, {	-- Pattern: Argent Boots
-							i(19056)	-- Argent Boots
-						}),
-						i(19328, {	-- Pattern: Dawn Treaders
-							i(19052)	-- Dawn Treaders
-						}),
-						i(19329, {	-- Pattern: Golden Mantle of the Dawn
-							i(19058)	-- Golden Mantle of the Dawn
-						}),
-						i(19203, {	-- Plans: Girdle of the Dawn
-							i(19051)	-- Girdle of the Dawn
-						}),
-						i(19205, {	-- Plans: Gloves of the Dawn
-							i(19057)	-- Gloves of the Dawn
-						}),
+						i(19216), 	-- Pattern: Argent Boots
+						i(19217), 	-- Pattern: Argent Shoulders
+						i(19328), 	-- Pattern: Dawn Treaders
+						i(19329), 	-- Pattern: Golden Mantle of the Dawn
+						i(19203), 	-- Plans: Girdle of the Dawn
+						i(19205), 	-- Plans: Gloves of the Dawn
 						i(13482),	-- Recipe: Transmute Air to Fire
+						i(18171),	-- Arcane Mantle of the Dawn
+						i(18182),	-- Chromatic Mantle of the Dawn
+						i(18169),	-- Flame Mantle of the Dawn
+						i(18170),	-- Frost Mantle of the Dawn
+						i(18172),	-- Nature Mantle of the Dawn
+						i(18173),	-- Shadow Mantle of the Dawn
 					}),
 					n(28512, {	-- Quartermaster Ozorg
 						i(34652), -- Archerus Knight's Hood
@@ -1067,6 +1061,9 @@ _.Zones =
 								un(34, i(22688)),	-- Verimonde's Last Resort
 								un(34, i(22690)),	-- Leggings of the Plague Hunter
 								un(34, i(22689)),	-- Sanctified Leather Helm
+							})),
+							qg(16376, q(9237, {	-- Glacial Cloak [Quest]
+								un(34, i(22658)),	-- Glacial Cloak
 							})),
 							q(6024, {	-- Hameya's Plea
 								un(34, i(15814)),	-- Hameya's Slayer

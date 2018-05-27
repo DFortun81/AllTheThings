@@ -158,12 +158,12 @@ _.Zones =
 									}),
 								}),
 								nh(96304, { -- Tradurjo Jinglepocket
-									i(34319),	-- Pattern: Red Winter Clothes
-									i(34262),	-- Pattern: Winter Boots
-									i(17200),	-- Recipe: Gingerbread Cookie
-									i(34413),	-- Recipe: Hot Apple Cider
-									i(17201),	-- Recipe: Winter Veil Egg Nog
-									i(70923), 	-- Gaudy Winter Veil Sweater
+									un(29, i(34319)),	-- Pattern: Red Winter Clothes
+									un(29, i(34262)),	-- Pattern: Winter Boots
+									un(29, i(17200)),	-- Recipe: Gingerbread Cookie
+									un(29, i(34413)),	-- Recipe: Hot Apple Cider
+									un(29, i(17201)),	-- Recipe: Winter Veil Egg Nog
+									un(29, i(70923)), 	-- Gaudy Winter Veil Sweater
 								}),																			
 							}),
 						},

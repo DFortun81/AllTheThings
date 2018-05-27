@@ -781,9 +781,7 @@ _.Zones =
 						i(11304),	-- Fine Longbow
 					})),
 					a(n(2668, {	-- Danielle Zipstitch <Tailoring Supplies>
-						i(14627, {	-- Pattern: Bright Yellow Shirt
-							i(4332),	-- Bright Yellow Shirt
-						}),
+						i(14627), 	-- Pattern: Bright Yellow Shirt
 					})),
 					a(n(225, {	-- Gavin Gnarltree <Weaponsmith>
 						i(12247),	-- Broad Bladed Knife
@@ -807,12 +805,8 @@ _.Zones =
 						i(4800),	-- Mighty Chain Pants
 					})),
 					a(n(2669, {	-- Sheri Zipstitch <Tailoring Supplies>
-						i(6401, {	-- Pattern: Dark Silk Shirt
-							i(4333),	-- Dark Silk Shirt
-						}),
-						i(6275, {	-- Pattern: Greater Adept's Robe
-							i(6264),	-- Greater Adept's Robe
-						}),
+						i(6401), 	-- Pattern: Dark Silk Shirt
+						i(6275), 	-- Pattern: Greater Adept's Robe
 					})),
 				}),
 				n( -40, {	-- Legacy
@@ -857,6 +851,9 @@ _.Zones =
 							n(771, {	-- Commander Felstrom
 								un(7, i(4465)),	-- Felstrom's Gauntlets
 								un(7, i(4464)),	-- Trouncing Boots
+							}),
+							n(910, {	-- Defias Enchanter
+								un(7, i(5773)),	-- Pattern: Robes of Arcana
 							}),
 							n(1270, { 	-- Fetid Corpse
 								un(7, i(2014)),	-- Black Metal Greatsword

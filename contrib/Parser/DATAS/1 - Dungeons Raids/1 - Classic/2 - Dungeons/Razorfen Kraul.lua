@@ -50,6 +50,7 @@ _.Instances =
 							dr(0.01, i(776)),	-- Vendetta
 						}),
 						n(74551, {	-- Razorfen Beast Stalker
+							dr(0.05, i(4354)),	-- Pattern: Rich Purple Silk Shirt
 							dr(0.03, i(4438)),	-- Pugilist Bracers
 							dr(0.02, i(1975)),	-- Pysan's Old Greatsword
 							dr(0.02, i(1976)),	-- Slaghammer

@@ -1131,8 +1131,11 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
+						n(  0, {	-- Zone Drop (Legacy)
+							n(2337, {	-- Dark Strand Voidcaller
+								un(7, i(5773)),	-- Pattern: Robes of Arcana
+							}),
+						}),
 					},
 					["u"] = 12,
 				}),

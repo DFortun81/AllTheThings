@@ -297,10 +297,13 @@ _.Zones =
 						i(15822),
 						i(15823),
 					})),
---[[
-					qg(48459, q(28360)),	-- Running Their Course
-					qg(11557, q(6032)),	-- Sacred Cloth
---]]					
+					--qg(48459, q(28360)),	-- Running Their Course
+					qg(11557, q(6032, {	-- Sacred Cloth
+						["requireSkill"] = 197,	-- Requires: Tailoring
+						["groups"] = {
+							recipe(19435),	-- Mooncloth Boots
+						},
+					})),	
 --[[				qa(4112),	-- Salve via Disenchanting (this block of quests REMOVED per wowhead comments)
 					qh(5886),	-- Salve via Disenchanting
 					qa(4107),	-- Salve via Disenchanting

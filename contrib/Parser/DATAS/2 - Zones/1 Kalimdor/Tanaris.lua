@@ -1459,6 +1459,11 @@ _.Zones =
 						un(7, i(21025)), -- Recipe: Dirge's Kickin' Chimaerok Chops
 						i(18046),	-- Recipe: Tender Wolf Steak
 					}),
+					n(40572, {	-- Haughty Modiste <Fashion Designer>
+						i(37915),	-- Pattern: Dress Shoes
+						i(38327),	-- Pattern: Haliscan Jacket
+						i(38328),	-- Pattern: Haliscan Pantaloons
+					}),
 					n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>
 						i(6047, {	-- Plans: Golden Scale Coif
 							i(3837),	-- Golden Scale Coif
@@ -1803,9 +1808,8 @@ _.Zones =
 						i(64878),	-- Bloodthirsty Gladiator's Wyrmhide Spaulders					
 					}),
 					n(6568, {	-- Vizzklick <Tailoring Supplies>
-						i(7088, {	-- Pattern: Crimson Silk Robe
-							i(7063),	-- Crimson Silk Robe
-						}),
+						i(7088), 	-- Pattern: Crimson Silk Robe
+						i(21358),	-- Pattern: Soul Pouch
 					}),
 				}),
 				n(-40, {	-- Legacy

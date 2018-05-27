@@ -622,9 +622,8 @@ _.Zones =
 				}),					
 				n( -2, {	-- Vendors
 					a(n(777, {	-- Amy Davenport <Tradeswoman>
-						i(20576, {	-- Pattern: Black Whelp Tunic
-							i(20575),	-- Black Whelp Tunic
-						}),
+						i(5772),	-- Pattern: Red Woolen Bag
+						i(20576), 	-- Pattern: Black Whelp Tunic
 					})),
 					a(n(844, {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {

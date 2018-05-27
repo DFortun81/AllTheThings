@@ -1345,6 +1345,9 @@ _.Zones =
 						dr(76.0, i(3011)),	-- Feathered Headdress
 						dr(23.0, i(6331)),	-- Howling Blade
 					}), 
+					n(2242, {	-- Syndicate Spy
+						dr(0.05, i(5775)),	-- Pattern: Black Silk Pack
+					}),
 					nh(14275, { -- Tamra Stormpike
 						dr(06.0, i(9805)),	-- Superior Cloak
 						dr(05.0, i(9814)),	-- Fortified Belt
@@ -1513,7 +1516,7 @@ _.Zones =
 					})),
 					h(n(3539, {	-- Ott <Weaponsmith>
 						i(12247),	-- Broad Bladed Knife
-						i(12249),	-- Meciless Axe
+						i(12249),	-- Merciless Axe
 						i(4825),	-- Callous Axe
 						i(4824),	-- Blurred Axe
 						i(4826),	-- Marauder Axe

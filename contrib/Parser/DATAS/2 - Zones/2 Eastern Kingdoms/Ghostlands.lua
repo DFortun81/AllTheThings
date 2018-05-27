@@ -559,20 +559,10 @@ _.Zones =
 						i(132571),	-- Woodrunner's Footpads
 						i(132572),	-- Deathstalker's Hauberk
 					}),
+					n(16224, {	-- Rathis Tomber <Trade Supplies>
+						i(5771),	-- Pattern: Red Linen Bag
+					}),
 				}),
---[[
-				n(-40, {	-- Legacy
-					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
-						n(-17, {	-- Quests (Legacy)
-						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
-					},
-					["u"] = 12,
-				}),
---]]
 			},
 			["lvl"] = 10,
 			["achievementID"] = 858,

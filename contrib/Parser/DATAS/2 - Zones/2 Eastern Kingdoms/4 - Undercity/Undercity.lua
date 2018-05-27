@@ -326,6 +326,9 @@ _.Zones =
 						i(64922),	-- Mantle of Undercity
 						i(45583)	-- Undercity Tabard
 					}),
+					n(3522, {	-- Constance Brisboise <Apprentice Clothier>
+						i(6270),	-- Pattern: Blue Linen Vest
+					}),
 					n(4561, {	-- Daniel Bartlett <Trade Supplies>
 						i(20854),	-- Design: Amulet of the Moon
 						i(16217),	-- Formula: Enchant Shield - Greater Stamina
@@ -770,42 +773,29 @@ _.Zones =
 						["description"] = "Tabards are only obtainable by those who have earned them.|r",
 					}),
 					n(4577, {	-- Millie Gregorian <Tailoring Supplies>
-						i(6275, { -- Pattern: Greater Adept's Robe
-							i(6264) -- Greater Adept's Robe
+						i(54440, {	-- Dreamcloth
+							i(54601),	-- Pattern: Belt of the Depths
+							i(54602),	-- Pattern: Dreamless Belt
+							i(54603),	-- Pattern: Breeches of Mended Nightmares
+							i(54604),	-- Pattern: Flame-Ascended Pantaloons
+							i(54605),	-- Pattern: Illusionary Bag
 						}),
-						i(10321, { -- Pattern: Tuxedo Shirt
-							i(10034) -- Tuxedo Shirt
+						i(53643, {	-- Bolt of Embersilk Cloth
+							i(68199),	-- Pattern: Black Embersilk Gown
+							i(54600),	-- Pattern: Powerful Ghostly Spellthread
+							i(54599),	-- Pattern: Powerful Enchanted Spellthread
+							i(54593),	-- Pattern: Vicious Embersilk Cowl
+							i(54594),	-- Pattern: Vicious Embersilk Pants
+							i(54595),	-- Pattern: Vicious Embersilk Robe
+							i(54596),	-- Pattern: Vicious Fireweave Cowl
+							i(54597),	-- Pattern: Vicious Fireweave Pants
+							i(54598),	-- Pattern: Vicious Fireweave Robe
 						}),
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							i(75073),	-- Vicious Embersilk Cowl
-						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							i(75072),	-- Vicious Embersilk Pants
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							i(75093),	-- Vicious Embersilk Robe
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							i(75062),	-- Vicious Fireweave Cowl
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							i(75082),	-- Vicious Fireweave Pants
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							i(75088),	-- Vicious Fireweave Robe
-						}),
-						i(54601, {	-- Pattern: Belt of the Depths
-							i(54504),	-- Belt of the Depths
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							i(54503),	-- Dreamless Belt
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							i(54505),	-- Breeches of Mended Nightmares
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							i(54506),	-- Flame-Ascended Pantaloons
-						}),
+						i(6275),	-- Pattern: Greater Adept's Robe
+						i(5772),	-- Pattern: Red Woolen Bag
+						i(10326),	-- Pattern: Tuxedo Jacket
+						i(10323),	-- Pattern: Tuxedo Pants
+						i(10321),	-- Pattern: Tuxedo Shirt
 					}),
 					n(4553, {	-- Ronald Burch <Cooking Supplies>
 						currency(81, {	-- Epicurean's Award
