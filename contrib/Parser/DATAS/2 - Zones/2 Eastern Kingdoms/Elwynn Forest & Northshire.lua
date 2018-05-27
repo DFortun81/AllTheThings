@@ -529,9 +529,7 @@ _.Zones =
 						i(8488),	-- Cat Carrier (Silver Tabby)
 					})),
 					a(n(1250, {	-- Drake Lindgren <General & Trade Supplies>
-						i(6272, {	-- Pattern: Blue Linen Robe
-							i(6242),	-- Blue Linen Robe
-						}),
+						i(6272),	-- Pattern: Blue Linen Robe
 					})),
 					a(n(384, {	-- Katie Hunter <Horse Breeder>
 						i(18777),	-- Swift Brown Steed

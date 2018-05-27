@@ -135,12 +135,12 @@ _.Zones =
 							}),	
 							n(-2, { -- Vendors
 								n(23010, { -- Wolgren Jinglepocket
-									i(34319),	-- Pattern: Red Winter Clothes
-									i(34262),	-- Pattern: Winter Boots
-									i(17200),	-- Recipe: Gingerbread Cookie
-									i(34413),	-- Recipe: Hot Apple Cider
-									i(17201),	-- Recipe: Winter Veil Egg Nog
-									i(70923), 	-- Gaudy Winter Veil Sweater
+									un(29, i(34319)),	-- Pattern: Red Winter Clothes
+									un(29, i(34262)),	-- Pattern: Winter Boots
+									un(29, i(17200)),	-- Recipe: Gingerbread Cookie
+									un(29, i(34413)),	-- Recipe: Hot Apple Cider
+									un(29, i(17201)),	-- Recipe: Winter Veil Egg Nog
+									un(29, i(70923)), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 						},
@@ -567,42 +567,28 @@ _.Zones =
 						i(45580),	-- Exodar Tabard
 					})),
 					a(n(16767, {	-- Neii <Tailoring Supplies>
-						i(21897, {	-- Pattern: Netherweave Tunic
-							i(21855),	-- Netherweave Tunic
+						i(54440, {	-- Dreamcloth
+							i(54601),	-- Pattern: Belt of the Depths
+							i(54602),	-- Pattern: Dreamless Belt
+							i(54603),	-- Pattern: Breeches of Mended Nightmares
+							i(54604),	-- Pattern: Flame-Ascended Pantaloons
+							i(54605),	-- Pattern: Illusionary Bag
 						}),
-						i(21896, {	-- Pattern: Netherweave Robe
-							i(21854),	-- Netherweave Robe
+						i(53643, {	-- Bolt of Embersilk Cloth
+							i(68199),	-- Pattern: Black Embersilk Gown
+							i(54600),	-- Pattern: Powerful Ghostly Spellthread
+							i(54599),	-- Pattern: Powerful Enchanted Spellthread
+							i(54593),	-- Pattern: Vicious Embersilk Cowl
+							i(54594),	-- Pattern: Vicious Embersilk Pants
+							i(54595),	-- Pattern: Vicious Embersilk Robe
+							i(54596),	-- Pattern: Vicious Fireweave Cowl
+							i(54597),	-- Pattern: Vicious Fireweave Pants
+							i(54598),	-- Pattern: Vicious Fireweave Robe
 						}),
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							i(75073),	-- Vicious Embersilk Cowl
-						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							i(75072),	-- Vicious Embersilk Pants
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							i(75093),	-- Vicious Embersilk Robe
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							i(75062),	-- Vicious Fireweave Cowl
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							i(75082),	-- Vicious Fireweave Pants
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							i(75088),	-- Vicious Fireweave Robe
-						}),
-						i(54601, {	-- Pattern: Belt of the Depths
-							i(54504),	-- Belt of the Depths
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							i(54503),	-- Dreamless Belt
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							i(54505),	-- Breeches of Mended Nightmares
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							i(54506),	-- Flame-Ascended Pantaloons
-						}),
+						i(21892),	-- Pattern: Bolt of Imbued Netherweave
+						i(21894),	-- Pattern: Bolt of Soulcloth
+						i(21896), 	-- Pattern: Netherweave Robe
+						i(21897), 	-- Pattern: Netherweave Tunic
 					})),
 					a(n(51501, {	-- Nuri <Guild Vendor>
 						["groups"] = {

@@ -719,6 +719,7 @@ _.Zones =
 					})),
 					a(n(1474, {	-- Rann Flamespinner <Tailoring Supplies>
 						i(6275),	-- Pattern: Greater Adept's Robe
+						i(5772),	-- Pattern: Red Woolen Bag
 					})),
 					na(1685, {	-- Xandar Goodbeard <General Supplies>
 						i(6053),	-- Recipe: Holy Protection Potion

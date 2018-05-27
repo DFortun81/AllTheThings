@@ -521,9 +521,9 @@ _.Zones =
 						i(138490),	-- Waterspeaker's Totem - Shaman only - Toy
 					}),
 					h(n(19015, {	-- Mathar G'ochar <Trade Supplies>
-						i(21902, {	-- Pattern: Soulcloth Gloves
-							i(21863),	-- Soulcloth Gloves
-						}),
+						i(21894),	-- Pattern: Bolt of Soulcloth
+						i(21893),	-- Pattern: Imbued Netherweave Bag
+						i(21902), 	-- Pattern: Soulcloth Gloves
 					})),
 					nh(20097, {		-- Nula the Butcher <Cooking Supplies>
 						i(27697),	-- Recipe: Grilled Mudfish

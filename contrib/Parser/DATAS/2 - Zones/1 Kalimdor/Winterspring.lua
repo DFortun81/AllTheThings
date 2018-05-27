@@ -971,6 +971,7 @@ _.Zones =
 								un(7, i(20697)), 	-- Crystalline Threaded Cape
 							}),
 							n(7437, {	-- Cobalt Mageweaver
+								un(2, i(14493)),	-- Pattern: Robe of Winter Night
 								un(2, i(13497)),	-- Recipe: Greater Arcane Protection Potion
 							}),
 						}),

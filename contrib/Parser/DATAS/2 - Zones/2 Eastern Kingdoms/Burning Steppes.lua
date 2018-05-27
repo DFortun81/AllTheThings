@@ -1187,6 +1187,10 @@ _.Zones =
 						dr(01.0, i(10209)),	-- Overlord's Spaulders
 						dr(01.0, i(10131)),	-- Revenant Boots					
 					}), 
+					n(7037, {	-- Thaurissan Firewalker
+						dr(5, i(14482)),	-- Pattern: Cindercloth Cloak
+						dr(5, i(14490)),	-- Pattern: Cindercloth Pants
+					}),
 					n(50730, { 	-- Venomspine
 						dr(23.0, i(10130)),	-- Revenant Girdle
 						dr(23.0, i(10134)),	-- Revenant Shoulders

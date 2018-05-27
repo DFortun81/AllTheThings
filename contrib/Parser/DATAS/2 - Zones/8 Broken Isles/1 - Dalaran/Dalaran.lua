@@ -3819,6 +3819,23 @@ _.Zones =
 						i(44606), -- Toy Train Set Toy
 						i(45057), -- Wind-Up Train Wreck Toy
 					}),
+					n(93524, {	-- Lalla Brightweave <Tailoring Supplies>
+						i(137965),	-- Pattern: Imbued Silkweave Bracers [Rank 2]
+						i(137967),	-- Pattern: Imbued Silkweave Epaulets [Rank 2]
+						i(137970),	-- Pattern: Imbued Silkweave Gloves [Rank 2]
+						i(137969),	-- Pattern: Imbued Silkweave Hood [Rank 2]
+						i(137968),	-- Pattern: Imbued Silkweave Pantaloons [Rank 2]
+						i(137972),	-- Pattern: Imbued Silkweave Robe [Rank 2]
+						i(137971),	-- Pattern: Imbued Silkweave Slippers [Rank 2]
+						i(137953),	-- Pattern: Silkweave Bracers [Rank 2]
+						i(137957),	-- Pattern: Silkweave Hood [Rank 2]
+						i(137955),	-- Pattern: Silkweave Epaulets [Rank 2]
+						i(137958),	-- Pattern: Silkweave Gloves [Rank 2]
+						i(137956),	-- Pattern: Silkweave Pantaloons [Rank 2]
+						i(137960),	-- Pattern: Silkweave Robe [Rank 2]
+						i(138011),	-- Pattern: Silkweave Satchel
+						i(137959),	-- Pattern: Silkweave Slippers [Rank 2]
+					}),
 					a(n(106930, { -- Lieutenant Surtees <Legion Gladiator>
 						gssh(1071, { -- Combatant
 							["groups"] = {
@@ -7096,6 +7113,13 @@ _.Zones =
 						},
 					}),
 					n(-2, {	-- Vendors
+						n(97362, {	-- Dazzik "Proudmoore" <Magical Things>
+							currency(1149, { -- Sightless Eyes
+								i(137826),	-- Design: Sorcerous Shadowruby Pendant [Rank 2]
+								i(138016),	-- Clothes Chest Pattern: Dalaran Citizens
+								i(139427),	-- Wild Mana Wand
+							}),	
+						}),
 						n(97363, {	-- K'huta <Portals and Jujus>
 							currency(1149, { -- Sightless Eyes
 								i(128625),	-- Formula: Leylight Brazier

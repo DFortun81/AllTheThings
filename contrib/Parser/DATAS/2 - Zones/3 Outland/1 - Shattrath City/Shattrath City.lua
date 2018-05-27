@@ -1158,12 +1158,10 @@ _.Zones =
 						}),
 					}),
 					n(19213, {	-- Eiin <Specialty Tailoring Supplies>
-						i(21897, {	-- Pattern: Netherweave Tunic
-							i(21855),	-- Netherweave Tunic
-						}),
-						i(21896, {	-- Pattern: Netherweave Robe
-							i(21854),	-- Netherweave Robe
-						}),
+						i(21892),	-- Pattern: Bolt of Imbued Netherweave
+						i(21894),	-- Pattern: Bolt of Soulcloth
+						i(21896), 	-- Pattern: Netherweave Robe
+						i(21897), 	-- Pattern: Netherweave Tunic
 					}),
 					n(33633, {	-- Enchantress Andiala <Enchanting Trainer>
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -1499,88 +1497,58 @@ _.Zones =
 						}),
 					}),
 					n(19321, {	-- Quartermaster Endarin <Aldor Quartermaster>
-						i(29127),	-- Vindicator's Hauberk
-						i(29129),	-- Anchorite's Robes
+						i(31779),	-- Aldor Tabard
+						i(24177),	-- Design: Pendant of Shadow's End
+						i(23145),	-- Design: Purified Shadow Draenite
+						i(23149),	-- Design: Smooth Golden Draenite
+						i(29704),	-- Pattern: Blastguard Belt
+						i(29703),	-- Pattern: Blastguard Boots
+						i(29702),	-- Pattern: Blastguard Pants
+						i(30842),	-- Pattern: Flameheart Bracers
+						i(30843),	-- Pattern: Flameheart Gloves
+						i(30844),	-- Pattern: Flameheart Vest
+						i(29693),	-- Pattern: Flamescale Belt
+						i(29691),	-- Pattern: Flamescale Boots
+						i(29689),	-- Pattern: Flamescale Leggings
+						i(24295),	-- Pattern: Golden Spellthread
+						i(24293),	-- Pattern: Silver Spellthread
+						i(25721),	-- Pattern: Vindicator's Armor Kit
+						i(23601),	-- Plans: Flamebane Bracers
+						i(23604),	-- Plans: Flamebane Breastplate
+						i(23603),	-- Plans: Flamebane Gloves
+						i(23602),	-- Plans: Flamebane Helm
 						i(29130),	-- Auchenai Staff
 						i(29124),	-- Vindicator's Brand
-						i(23604, {	-- Plans: Flamebane Breastplate
-							i(23513),	-- Flamebane Breastplate
-						}),
-						i(23603, {	-- Plans: Flamebane Gloves
-							i(23514),	-- Flamebane Gloves
-						}),
-						i(23602, {	--Plans: Flamebane Helm
-							i(23516),	-- Flamebane Helm
-						}),
-						i(23601, {	-- Plans: Flamebane Bracers
-							i(23515),	-- Flamebane Bracers
-						}),
-						i(29689, {	-- Pattern: Flamescale Leggings
-							i(29492),	-- Flamescale Leggings
-						}),
-						i(29691, {	-- Pattern: Flamescale Boots
-							i(29493),	-- Flamescale Boots
-						}),
-						i(29693, {	-- Pattern: Flamescale Belt
-							i(29494),	-- Flamescale Belt
-						}),
-						i(29702, {	-- Pattern: Blastguard Pants
-							i(29498),	-- Blastguard Pants
-						}),
-						i(29703, {	-- Pattern: Blastguard Boots
-							i(29499),	-- Blastguard Boots
-						}),
-						i(29704, {	-- Pattern: Blastguard Belt
-							i(29500),	-- Blastguard Belt
-						}),
-						i(30842, {	-- Pattern: Flameheart Bracers
-							i(30837),	-- Flameheart Bracers
-						}),
-						i(30843, {	-- Pattern: Flameheart Gloves
-							i(30838),	-- Flameheart Gloves
-						}),
-						i(30844, {	-- Pattern: Flameheart Vest
-							i(30839),	-- Flameheart Vest
-						}),
-						i(31779),	-- Aldor Tabard
+						i(29123),	-- Medallion of the Lightbearer
+						i(29129),	-- Anchorite's Robes
+						i(29127),	-- Vindicator's Hauberk
+						i(29128),	-- Lightwarden's Band
 					}),
 					n(19331, {	-- Quartermaster Enuril <Scryer Quartermaster>
-						i(23600, {	-- Plans: Enchanted Adamantite Leggings
-							i(23512),	-- Enchanted Adamantite Leggings
-						}),
-						i(23599, {	-- Plans: Enchanted Adamantite Breastplate
-							i(23509),	-- Enchanted Adamantite Breastplate
-						}),
-						i(23597, {	-- Plans: Enchanted Adamantite Belt
-							i(23510),	-- Enchanted Adamantite Belt
-						}),
-						i(23598, {	-- Plans: Enchanted Adamantite Boots
-							i(23511),	-- Enchanted Adamantite Boots
-						}),
-						i(29677, {	-- Pattern: Enchanted Felscale Leggings
-							i(29489),	-- Enchanted Felscale Leggings
-						}),
-						i(29682, {	-- Pattern: Enchanted Felscale Gloves
-							i(29490),	-- Enchanted Felscale Gloves
-						}),
-						i(29684, {	-- Pattern: Enchanted Felscale Boots
-							i(29491),	-- Enchanted Felscale Boots
-						}),
-						i(29698, {	-- Pattern: Enchanted Clefthoof Leggings
-							i(29495),	-- Enchanted Clefthoof Leggings
-						}),
-						i(29700, {	-- Pattern: Enchanted Clefthoof Gloves
-							i(29496),	-- Enchanted Clefthoof Gloves
-						}),
-						i(29701, {	-- Pattern: Enchanted Clefthoof Boots
-							i(29497),	-- Enchanted Clefthoof Boots
-						}),
+						i(31780),	-- Scryers Tabard
+						i(23133),	-- Design: Brilliant Blood Garnet
+						i(24176),	-- Design: Pendant of Withering
+						i(24292),	-- Pattern: Mystic Spellthread
+						i(29701),	-- Pattern: Enchanted Clefthoof Boots
+						i(29700),	-- Pattern: Enchanted Clefthoof Gloves
+						i(29698),	-- Pattern: Enchanted Clefthoof Leggings
+						i(29684),	-- Pattern: Enchanted Felscale Boots
+						i(29682),	-- Pattern: Enchanted Felscale Gloves
+						i(29677),	-- Pattern: Enchanted Felscale Leggings
+						i(25722),	-- Pattern: Magister's Armor Kit
+						i(24292),	-- Pattern: Mystic Spellthread
+						i(24294),	-- Pattern: Runic Spellthread
+						i(23597),	-- Plans: Enchanted Adamantite Belt
+						i(23598),	-- Plans: Enchanted Adamantite Boots
+						i(23599),	-- Plans: Enchanted Adamantite Breastplate
+						i(23600),	-- Plans: Enchanted Adamantite Leggings
 						i(22908),	-- Recipe: Elixir of Major Firepower
-						i(29131),	-- Retainer's Leggings
+						i(29125),	-- Retainer's Blade
 						i(29133),	-- Seer's Cane
 						i(29134),	-- Gauntlets of the Chosen
-						i(29125),	-- Retainer's Blade
-						i(31780),	-- Scryers Tabard
+						i(29126),	-- Seer's Signet
+						i(29131),	-- Retainer's Leggings
+						i(29132),	-- Scryer's Bloodgem
 					}),
 					n(52268, {	-- Riha <Guild Vendor>
 						["groups"] = {

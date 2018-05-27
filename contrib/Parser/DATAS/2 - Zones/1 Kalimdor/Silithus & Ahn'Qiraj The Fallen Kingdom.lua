@@ -301,25 +301,13 @@ _.Zones =
 					})),
 					qr(q(  8324, {	-- Still Believing
 						["groups"] = {
-							i(20469, {
-								i(20548, {	-- Pattern: Runed Stygian Belt
-									i(20539),	-- Runed Stygian Belt
-								}),
-								i(20554, {	-- Plans: Darkrune Breastplate
-									i(20550),	-- Darkrune Breastplate
-								}),
-								i(20546, {	-- Pattern: Runed Stygian Leggings
-									i(20538),	-- Runed Stygian Leggings
-								}),
-								i(20555, {	-- Plans: Darkrune Helm
-									i(20551),	-- Darkrune Helm
-								}),
-								i(20547, {	-- Pattern: Stygian Boots
-									i(20537),	-- Stygian Boots
-								}),
-								i(20553, {	-- Plans: Darkrune Gauntlets
-									i(20549),	-- Darkrune Gauntlets
-								}),
+							i(20469, {	-- Decoded True Believer Clippings
+								i(20547), 	-- Pattern: Runed Stygian Boots
+								i(20548), 	-- Pattern: Runed Stygian Belt
+								i(20546), 	-- Pattern: Runed Stygian Leggings
+								i(20554), 	-- Plans: Darkrune Breastplate
+								i(20553), 	-- Plans: Darkrune Gauntlets
+								i(20555), 	-- Plans: Darkrune Helm
 							}),
 						},
 						["qg"] = 15194,	-- Hermit Ortell
@@ -945,7 +933,7 @@ END OF MICRO-HOLIDAY --]]
 					n(15174, {	-- Calandrath <Innkeeper>
 						i(13496),	-- Recipe: Greater Nature Protection Potion
 					}),
-					n(15419, {		-- Kania <Enchanting Supplies>
+					n(15419, {	-- Kania <Enchanting Supplies>
 						i(20754),	-- Formula: Lesser Mana Oil
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
@@ -955,21 +943,13 @@ END OF MICRO-HOLIDAY --]]
 						i(22308),	-- Pattern: Enchanted Runecloth Bag
 					}),
 					n(15179, {	-- Mishta <Trade Supplies>
-						i(22683, {	-- Pattern: Gaea's Embrace
-							i(22660),	-- Gaea's Embrace
-						}),
-						i(22772, {	-- Pattern: Sylvan Shoulders
-							i(22758),	-- Sylvan Shoulders
-						}),
-						i(22773, {	-- Pattern: Sylvan Crown
-							i(22757),	-- Sylvan Crown
-						}),
-						i(22774, {	-- Pattern: Sylvan Vest
-							i(22756),	-- Sylvan Vest
-						}),
-						i(21952, {	-- Design: Emerald Crown of Destruction
-							i(21774),	-- Emerald Crown of Destruction
-						}),
+						i(21952), 	-- Design: Emerald Crown of Destruction
+						i(22310),	-- Pattern: Cenarion Herb Bag
+						i(22683),	-- Pattern: Gaea's Embrace
+						i(22312),	-- Pattern: Satchel of Cenarius
+						i(22773),	-- Pattern: Sylvan Crown
+						i(22772),	-- Pattern: Sylvan Shoulders
+						i(22774),	-- Pattern: Sylvan Vest
 					}),
 					n(15176, {	-- Vargus <Blacksmith>
 						i(22766, {	-- Plans: Ironvine Breastplate

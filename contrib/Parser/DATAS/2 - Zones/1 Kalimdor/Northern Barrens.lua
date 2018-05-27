@@ -1401,12 +1401,9 @@ _.Zones =
 						i(4766),	-- Feral Blade
 					})),
 					h(n(3485, {	-- Wrahk <Tailoring Supplies>
-						i(6272, {	-- Pattern: Blue Linen Robe
-							i(6242),	-- Blue Linen Robe
-						}),
-						i(6270, {	-- Pattern: Blue Linen Vest
-							i(6240),	-- Blue Linen Vest
-						}),
+						i(6272),	-- Pattern: Blue Linen Robe
+						i(6270),	-- Pattern: Blue Linen Vest
+						i(5772),	-- Pattern: Red Woolen Bag
 					})),
 					nh(3489, {	-- Zargh <Butcher>
 						i(3735), 	-- Recipe: Hot Lion Chops

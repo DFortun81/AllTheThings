@@ -774,9 +774,7 @@ _.Zones =
 						}),	
 					}),
 					n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
-						i(10318, {	-- Pattern: Admiral's Hat
-							i(10030),	-- Admiral's Hat
-						}),
+						i(10318), 	-- Pattern: Admiral's Hat
 					}),
 					n(2845, {	-- Fargon Mortalak <Superior Armorer>
 						i(12257),	-- Heavy Notched Belt
@@ -822,9 +820,7 @@ _.Zones =
 						i(16767),	-- Recipe: Undermine Clam Chowder
 					}),
 					n(2663, {	-- Narkk <Pirate Supplies>
-						i(10728, {	-- Pattern: Black Swashbuckler's Shirt
-							i(4336),	-- Black Swashbuckler's Shirt
-						}),
+						i(10728), 	-- Pattern: Black Swashbuckler's Shirt
 						i(8495),	-- Parrot Cage (Senegal) pet
 						i(8496),	-- Parrot Cage (Cockatiel) pet
 					}),
@@ -837,19 +833,13 @@ _.Zones =
 						}),
 					}),
 					n(2670, {	-- Xizk Goodstitch <Tailoring Supplies>
-						i(7087, {	-- Pattern: Crimson Silk Cloak
-							i(7056),	-- Crimson Silk Cloak
-						}),
-						i(14630, {	-- Pattern: Enchanter's Cowl
-							i(4322),	-- Enchanter's Cowl
-						}),
+						i(7087), 	-- Pattern: Crimson Silk Cloak
+						i(14630), 	-- Pattern: Enchanter's Cowl
 					}),
 					n(2482, {	-- Zarena Cromwind <Superior Weaponsmith>
 						i(12252),	-- Staff of Protection
 						i(12251),	-- Big Stick
-						i(12163, {	-- Plans: Moonsteel Broadsword
-							i(3853),	-- Moonsteel Broadsword
-						}),
+						i(12163), 	-- Plans: Moonsteel Broadsword
 					}),
 				}),
 				n(-40, {	-- Legacy

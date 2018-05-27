@@ -540,15 +540,10 @@ _.Zones =
 						["description"] = "This vendor travels in a big circuit from Elwynn Forest(stopping in Goldshire) to Westfall(stopping in Sentinel Hill) to Duskwood(stopping in Darkshire) to Redridge Mountains(stopping in Lakeshire) and then back to Elwynn Forest, so if you cannot find him in this zone, check one of the other three zones.|r",
 					}),
 					n(843, {	-- Gina MacGregor <Trade Supplies>
-						i(6274, {	-- Pattern: Blue Overalls
-							i(6263),	-- Blue Overalls
-						}),
-						i(5787, {	-- Pattern: Murloc Scale Breastplate
-							i(5781),	-- Murloc Scale Breastplate
-						}),
-						i(5786, {	-- Pattern: Murloc Scale Belt
-							i(5780),	-- Murloc Scale Belt
-						}),
+						i(6274),	-- Pattern: Blue Overalls
+						i(5787), 	-- Pattern: Murloc Scale Breastplate
+						i(5786), 	-- Pattern: Murloc Scale Belt
+						i(5771),	-- Pattern: Red Linen Bag
 					}),
 					n(4305, {	-- Kriggon Talsone <Fisherman>
 						i(5528),	-- Recipe: Clam Chowder

@@ -434,63 +434,13 @@ _.Zones =
 								qh(6984, { -- A Smokywood Pastures' Thank You
 									["groups"] = {
 										i(17726, { -- Smokywood Pasture's Special Gift
-											un(29, i(17709)),	-- Recipe: Elixir of Frost Power
-											i(17722, {	-- Pattern: Gloves of the Greatfather
-												["groups"] = {
-													i(17721, { -- Gloves of the Greatfather
-														["groups"] = {
-														},
-														["u"] = 29,
-													}),
-												},
-												["u"] = 29,
-												["dr"] = 16,
-											}),
-											i(17724, {	-- Pattern: Green Holiday Shirt
-												["groups"] = {
-													i(17723, { -- Green Holiday Shirt
-														["groups"] = {
-														},
-														["u"] = 29,
-													}),
-												},
-												["u"] = 29,
-												["dr"] = 16,
-											}),
-											i(17706, {	-- Plans: Edge of Winter
-												["groups"] = {
-													i(17704, { -- Edge of Winter
-														["groups"] = {
-														},
-														["u"] = 29,
-													}),
-												},
-												["u"] = 29,
-												["dr"] = 16,
-											}),
-											i(17720, {	-- Schematic: Snowmaster 9000
-												["groups"] = {
-													i(17716, { -- Snowmaster 9000
-														["groups"] = {
-														},
-														["u"] = 29,
-													}),
-												},
-												["u"] = 29,
-												["dr"] = 16,
-											}),
-											i(128649, { -- Illusion: Winter's Grasp
-												["groups"] = {
-												},
-												["u"] = 29,
-												["dr"] = 5,
-											}),
-											i(118572, { -- Illusion: Flame of Ragnaros
-												["groups"] = {
-												},
-												["u"] = 29,
-												["dr"] = 0.5,
-											}),
+											dr(0.5, un(29, i(118572))),	-- Illusion: Flame of Ragnaros
+											dr(5, un(29, i(128649))),	-- Illusion: Winter's Grasp
+											dr(15, un(29, i(17706))),	-- Pattern: Edge of Winter
+											dr(16, un(29, i(17722))),	-- Pattern: Gloves of the Greatfather
+											dr(16, un(29, i(17724))),	-- Pattern: Green Holiday Shirt
+											dr(16, un(29, i(17709))),	-- Recipe: Elixir of Frost Power
+											dr(16, un(29, i(17720))),	-- Schematic: Snowmaster 9000
 										}),
 									},
 									["description"] = "This quest can only be done once per year.",
@@ -607,12 +557,12 @@ _.Zones =
 							}),
 							n(-2, { 	-- Vendors
 								n(13420, { -- Penney Copperpinch
-									i(34261),	-- Pattern: Green Winter Clothes
-									i(34262),	-- Pattern: Winter Boots
-									i(17200),	-- Recipe: Gingerbread Cookie
-									i(34413),	-- Recipe: Hot Apple Cider
-									i(17201),	-- Recipe: Winter Veil Egg Nog
-									i(70923), 	-- Gaudy Winter Veil Sweater
+									un(29, i(34261)),	-- Pattern: Green Winter Clothes
+									un(29, i(34262)),	-- Pattern: Winter Boots
+									un(29, i(17200)),	-- Recipe: Gingerbread Cookie
+									un(29, i(34413)),	-- Recipe: Hot Apple Cider
+									un(29, i(17201)),	-- Recipe: Winter Veil Egg Nog
+									un(29, i(70923)), 	-- Gaudy Winter Veil Sweater
 								}),
 							}),
 							n(54519, { 	-- Winter Veil Tree
@@ -699,18 +649,10 @@ _.Zones =
 									["groups"] = {
 										i(21327, { -- Ticking Present
 											un(29, i(17709)),	-- Recipe: Elixir of Frost Power
-											un(29, i(17722, {	-- Pattern: Gloves of the Greatfather
-												un(29, i(17721)), -- Gloves of the Greatfather
-											})),
-											un(29, i(17724, {	-- Pattern: Green Holiday Shirt
-												un(29, i(17723)), -- Green Holiday Shirt
-											})),
-											un(29, i(17706, {	-- Plans: Edge of Winter
-												un(29, i(17704)), -- Edge of Winter
-											})),
-											un(29, i(17720, {	-- Schematic: Snowmaster 9000
-												un(29, i(17716)), -- Snowmaster 9000
-											})),
+											un(29, i(17722)),	-- Pattern: Gloves of the Greatfather
+											un(29, i(17724)),	-- Pattern: Green Holiday Shirt
+											un(29, i(17706)), 	-- Plans: Edge of Winter
+											un(29, i(17720)), 	-- Schematic: Snowmaster 9000
 										}),
 									},
 									["lvl"] = 40,
@@ -1778,48 +1720,29 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(70389),	-- Ruthless Gladiator's Drape of Meditation
 					}),
 					n(3364, {	-- Borya <Tailoring Supplies>
-						i(10317, {	-- Pattern: Pink Mageweave Shirt
-							i(10055),	-- Pink Mageweave Shirt
+						i(54440, {	-- Dreamcloth
+							i(54601),	-- Pattern: Belt of the Depths
+							i(54602),	-- Pattern: Dreamless Belt
+							i(54603),	-- Pattern: Breeches of Mended Nightmares
+							i(54604),	-- Pattern: Flame-Ascended Pantaloons
+							i(54605),	-- Pattern: Illusionary Bag
 						}),
-						i(10314, {	-- Pattern: Lavender Mageweave Shirt
-							i(10054),	-- Lavender Mageweave Shirt
+						i(53643, {	-- Bolt of Embersilk Cloth
+							i(68199),	-- Pattern: Black Embersilk Gown
+							i(54600),	-- Pattern: Powerful Ghostly Spellthread
+							i(54599),	-- Pattern: Powerful Enchanted Spellthread
+							i(54593),	-- Pattern: Vicious Embersilk Cowl
+							i(54594),	-- Pattern: Vicious Embersilk Pants
+							i(54595),	-- Pattern: Vicious Embersilk Robe
+							i(54596),	-- Pattern: Vicious Fireweave Cowl
+							i(54597),	-- Pattern: Vicious Fireweave Pants
+							i(54598),	-- Pattern: Vicious Fireweave Robe
 						}),
-						i(6270, {	-- Pattern: Blue Linen Vest
-							i(6240),	-- Blue Linen Vest
-						}),
-						i(6274, {	-- Pattern: Blue Overalls
-							i(6263),	-- Blue Overalls
-						}),
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							i(75073),	-- Vicious Embersilk Cowl
-						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							i(75072),	-- Vicious Embersilk Pants
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							i(75093),	-- Vicious Embersilk Robe
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							i(75062),	-- Vicious Fireweave Cowl
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							i(75082),	-- Vicious Fireweave Pants
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							i(75088),	-- Vicious Fireweave Robe
-						}),
-						i(54601, {	-- Pattern: Belt of the Depths
-							i(54504),	-- Belt of the Depths
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							i(54503),	-- Dreamless Belt
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							i(54505),	-- Breeches of Mended Nightmares
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							i(54506),	-- Flame-Ascended Pantaloons
-						}),
+						i(6270),	-- Pattern: Blue Linen Vest
+						i(6274),	-- Pattern: Blue Overalls
+						i(10314),	-- Pattern: Lavender Mageweave Shirt
+						i(10317),	-- Pattern: Pink Mageweave Shirt
+						i(5772),	-- Pattern: Red Woolen Bag
 					}),
 					n(12793, {	-- Brave Stonehide <Accessories Quartermaster>
 						i(15199),	-- Stone Guard's Herald
@@ -2826,49 +2749,37 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(13478),	-- Recipe: Elixir of Superior Defense
 						i(5642),	-- Recipe: Free Action Potion
 					}),
+					n(133239, {	-- Leyweaver Aurielle
+						i(6270),	-- Pattern: Blue Linen Vest
+						i(6274),	-- Pattern: Blue Overalls
+						i(10314),	-- Pattern: Lavender Mageweave Shirt
+						i(10317),	-- Pattern: Pink Mageweave Shirt
+						i(5772),	-- Pattern: Red Woolen Bag
+					}),
 					n(45558, {	-- Lizna Goldweaver <Tailoring Supplies>
-						i(10317, {	-- Pattern: Pink Mageweave Shirt
-							i(10055),	-- Pink Mageweave Shirt
+						i(54440, {	-- Dreamcloth
+							i(54601),	-- Pattern: Belt of the Depths
+							i(54602),	-- Pattern: Dreamless Belt
+							i(54603),	-- Pattern: Breeches of Mended Nightmares
+							i(54604),	-- Pattern: Flame-Ascended Pantaloons
+							i(54605),	-- Pattern: Illusionary Bag
 						}),
-						i(10314, {	-- Pattern: Lavender Mageweave Shirt
-							i(10054),	-- Lavender Mageweave Shirt
+						i(53643, {	-- Bolt of Embersilk Cloth
+							i(68199),	-- Pattern: Black Embersilk Gown
+							i(54600),	-- Pattern: Powerful Ghostly Spellthread
+							i(54599),	-- Pattern: Powerful Enchanted Spellthread
+							i(54593),	-- Pattern: Vicious Embersilk Cowl
+							i(54594),	-- Pattern: Vicious Embersilk Pants
+							i(54595),	-- Pattern: Vicious Embersilk Robe
+							i(54596),	-- Pattern: Vicious Fireweave Cowl
+							i(54597),	-- Pattern: Vicious Fireweave Pants
+							i(54598),	-- Pattern: Vicious Fireweave Robe
 						}),
-						i(6270, {	-- Pattern: Blue Linen Vest
-							i(6240),	-- Blue Linen Vest
-						}),
-						i(6274, {	-- Pattern: Blue Overalls
-							i(6263),	-- Blue Overalls
-						}),
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							i(75073),	-- Vicious Embersilk Cowl
-						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							i(75072),	-- Vicious Embersilk Pants
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							i(75093),	-- Vicious Embersilk Robe
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							i(75062),	-- Vicious Fireweave Cowl
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							i(75082),	-- Vicious Fireweave Pants
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							i(75088),	-- Vicious Fireweave Robe
-						}),
-						i(54601, {	-- Pattern: Belt of the Depths
-							i(54504),	-- Belt of the Depths
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							i(54503),	-- Dreamless Belt
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							i(54505),	-- Breeches of Mended Nightmares
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							i(54506),	-- Flame-Ascended Pantaloons
-						}),
+						i(6270),	-- Pattern: Blue Linen Vest
+						i(6274),	-- Pattern: Blue Overalls
+						i(10314),	-- Pattern: Lavender Mageweave Shirt
+						i(10317),	-- Pattern: Pink Mageweave Shirt
+						i(5772),	-- Pattern: Red Woolen Bag
 					}),
 					n(3362, { -- Ogunaro Wolfrunner <Kennel Master>
 						i(18796),	-- Horn of the Swift Brown Wolf

@@ -5635,8 +5635,13 @@ local function RowOnClick(self, button)
 				local link = reference.link or reference.silentLink;
 				if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
 				
-				-- Default behaviour is to Refresh Collections.
-				RefreshCollections(reference);
+				-- If you're looking at the Profession Window, Shift Clicking will replace the search string instead.
+				if app:GetWindow("Tradeskills"):IsShown() then
+					
+				else
+					-- Default behaviour is to Refresh Collections.
+					RefreshCollections(reference);
+				end
 				return true;
 			end
 		end

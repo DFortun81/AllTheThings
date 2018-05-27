@@ -291,7 +291,11 @@ _.Instances = { tier(1, {	-- Classic
 					dr(5.00, i(13130)),	-- Windrunner Legguards
 					
 				 -- PROFESSIONS
-					
+					dr(0.2, i(14511)),	-- Pattern: Gloves of Spell Mastery
+					dr(0.7, i(14509)),	-- Pattern: Mooncloth Circlet
+					dr(0.4, i(14497)),	-- Pattern: Mooncloth Leggings
+					dr(0.6, i(14507)),	-- Pattern: Mooncloth Shoulders
+					dr(0.4, i(14501)),	-- Pattern: Mooncloth Vest
 					dr(1.1, i( 8028)),	-- Plans: Runed Mithril Hammer
 					dr(0.5, i(13518)),	-- Recipe: Potion of Petrification
 					dr(0.5, i(13488)),	-- Recipe: Transmute Life to Earth

@@ -1548,9 +1548,7 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					h(n(6567, {	-- Ghok'kah <Tailoring Supplies>
-						i(4355, {	-- Pattern: Icy Cloak
-							i(4327),	-- Icy Cloak
-						}),
+						i(4355), 	-- Pattern: Icy Cloak
 					})),
 					a(n(4885, {	-- Gregor MacVince <Horse Breeder>
 						i(18777),	-- Swift Brown Steed

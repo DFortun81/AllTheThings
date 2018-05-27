@@ -714,14 +714,13 @@ _.Zones =
 						i(4818),	-- Executioner's Sword
 					})),
 					a(n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
-						i(6275, {	-- Pattern: Greater Adept's Robe
-							i(6264),	-- Greater Adept's Robe
-						}),
-						i(4829),	-- Dreamer's Belt
+						i(6275),	-- Pattern: Greater Adept's Robe
+						i(5772),	-- Pattern: Red Woolen Bag
 						i(4790),	-- Inferno Cloak
-						i(4828),	-- Nightwind Belt
 						i(4792),	-- Spirit Cloak
 						i(4793),	-- Sylvan Cloak
+						i(4829),	-- Dreamer's Belt
+						i(4828),	-- Nightwind Belt
 						i(4827),	-- Wizard's Belt
 					})),
 					a(n(1459, {	-- Naela Trance <Bowyer>
@@ -739,23 +738,17 @@ _.Zones =
 						i(2414),	-- Pinto Bridle Mount
 					})),
 					a(n(2679, {	-- Wenna Silkbeard <Special Goods Dealer>
-						i(7114, {	-- Pattern: Azure Silk Gloves
-							i(4319),	-- Azure Silk Gloves
-						}),
-						i(7613, {	-- Pattern: Green Leather Armor
-							i(4255),	-- Green Leather Armor
-						}),
-						i(7290, {	-- Pattern: Red Whelp Gloves
-							i(7284),	-- Red Whelp Gloves
-						}),
-						i(4829),	-- Dreamer's Belt
+						i(7114), 	-- Pattern: Azure Silk Gloves
+						i(7613), 	-- Pattern: Green Leather Armor
+						i(7290), 	-- Pattern: Red Whelp Gloves
 						i(4835),	-- Elite Shoulders
 						i(4833),	-- Glorious Shoulders
-						i(4832),	-- Mystic Sarong
+						i(4829),	-- Dreamer's Belt
 						i(4828),	-- Nightwind Belt
+						i(4827),	-- Wizard's Belt
+						i(4832),	-- Mystic Sarong
 						i(4830),	-- Saber Leggings
 						i(4831),	-- Stalking Pants
-						i(4827),	-- Wizard's Belt
 					})),
 				}),
 				n(-40, {	-- Legacy

@@ -151,6 +151,12 @@ _.Instances =
 								un(2, i(23139)),	-- Lord Blackwood's Buckler
 							}),
 							n(10503, {	-- Jandice Barov
+								un(2, o(180794, {	-- Journal of Jandice Barov
+									["description"] = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
+									["groups"] = {
+										un(2, recipe(26086)),	-- Felcloth Bag
+									},
+								})),
 								un(2, i(14541)),	-- Barovian Family Sword
 								un(2, i(16701)),	-- Dreadmist Mantle
 								un(2, i(14545)),	-- Ghostloom Leggings
@@ -368,6 +374,7 @@ _.Instances =
 								un(7, i(16716)),	-- Wildheart Belt
 							}),
 							n(1853, {	-- Darkmaster Gandling
+								un(7, i(14514)),	-- Pattern: Robe of the Void
 								un(2, i(16677)),	-- Beastalker's Cap
 								un(2, i(13938)),	-- Bonecreeper Stylus
 								un(2, i(13398)),	-- Boots of the Shrieker
@@ -384,9 +391,6 @@ _.Instances =
 								un(2, i(13951)),	-- Vigorsteel Vambraces
 								un(2, i(16720)),	-- Wildheart Cowl
 								un(2, i(13964)),	-- Witchblade
-								un(7, i(14514, {	-- Pattern: Robe of the  Void
-									un(5, i(14153)),	-- Robe of the Void
-								})),
 							}),
 						},
 						["u"] = 12,
