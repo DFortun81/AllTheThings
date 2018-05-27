@@ -21,7 +21,7 @@ _.Instances =
 							i(72879),
 						}),
 					}),
-					n(0, { 		-- Zone Drop
+					n(  0, {	-- Zone Drop
 						i(76158),	-- Courtier's Slippers
 						i(76157),	-- Waterworn Handguards
 						i(76159),	-- Legion Bindings		
@@ -32,6 +32,7 @@ _.Instances =
 						i(72829),	-- Orb of the First Satyrs
 						i(72832),	-- Girdle of the Queen's Champion
 						i(72830),	-- Peroth'arn's Belt
+						i(72831),	-- Horned Band
 					})),
 					cr(54853, e(291, {	-- Queen Azshara
 						i(72833),	-- Scepter of Azshara
@@ -39,6 +40,7 @@ _.Instances =
 						i(72834),	-- Breastplate of the Queen's Guard
 						i(72835),	-- Puppeteer's Pantaloons
 						i(72836),	-- Slippers of Wizardry
+						i(72837),	-- Queen's Boon
 					})),
 					cr(54969, e(292, {	-- Mannoroth
 						i(72844),	-- Pit Lord's Destroyer
@@ -50,7 +52,10 @@ _.Instances =
 						i(72840),	-- Spaulders of Eternity
 						i(72841),	-- Demonsbane Chestguard
 						i(72848),	-- Leggings of the Legion
-					}))
+						i(72845),	-- Mannoroth's Signet
+						i(72898),	-- Foul Gift of the Demon Lord
+						i(72899),	-- Varo'then's Brooch
+					})),
 				},
 				["lvl"] = 85,
 				["mapID"] = 816
