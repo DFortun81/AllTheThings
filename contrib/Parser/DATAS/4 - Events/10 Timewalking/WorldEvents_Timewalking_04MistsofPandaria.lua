@@ -12,7 +12,7 @@ _.WorldEvents =
 							["groups"] = {
 							},
 							["qg"] = 118828, -- Mistweaver Xia
-							["repatable"] = true,
+							["repeatable"] = true,
 						}),
 					}),
 					currency(1166, { -- Timewarped Badge
