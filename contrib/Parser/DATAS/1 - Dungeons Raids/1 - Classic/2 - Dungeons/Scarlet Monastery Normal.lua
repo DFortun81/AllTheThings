@@ -69,10 +69,6 @@ _.Instances =
 								dr(.03, i(7754)),	-- Harbinger Boots
 								dr(.01, i(7727)),	-- Watchman Pauldrons
 							}),
-							n( 3976, {	-- Scarlet Commander Mograine
-								dr(.01, i(7761)),	-- Steelclaw Reaver
-								dr(.04, i(8226)),	-- The Butcher
-							}),
 							n(58590, {	-- Scarlet Zealot
 								dr(.01, i(7729)),	-- Chesterfall Musket
 								dr(.01, i(7752)),	-- Dreamslayer
@@ -91,7 +87,9 @@ _.Instances =
 							i(10328),	-- Scarlet Chestpiece
 							i(10331),	-- Scarlet Gauntlets
 							i(10333),	-- Scarlet Wristguards
+							i( 7761),	-- Steelclaw Reaver
 							i( 1992),	-- Swampchill Fetish
+							i( 8226),	-- The Butcher
 							i( 7760),	-- Warchief Kilt
 							i( 7757),	-- Windweaver Staff
 						}),
