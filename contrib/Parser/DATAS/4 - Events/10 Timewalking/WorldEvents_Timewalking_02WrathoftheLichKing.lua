@@ -12,12 +12,14 @@ _.WorldEvents =
 							["groups"] = {
 							},
 							["qg"] = 98690, -- Auzin
+							["repatable"] = true,
 						}),
 					}),
 					q(50316, { -- Disturbance Detected: Ulduar
 						["groups"] = {
 						},
 						["qg"] = 130654, -- Vormu
+						["repatable"] = true,
 					}),
 					currency(1166, { -- Timewarped Badge
 						i(129922), -- Bridle of the Ironbound Wraithcharger Mount
