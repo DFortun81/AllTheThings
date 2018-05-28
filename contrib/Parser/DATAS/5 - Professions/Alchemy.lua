@@ -219,6 +219,11 @@ profession(171, { -- Alchemy
 		-- CATA Recipes
 		-- i(65498),	-- Recipe: Big Cauldron of Battle [Guild Achievement - DONE]
 		-- i(65435),	-- Recipe: Cauldron of Battle [Guild Achievement - DONE]
+		{
+			["itemID"] = 71955,	-- Recipe: Transmute Deepholm Iolite
+			["spellID"] = 0,	-- Not Learnable
+			["u"] = 1,	--  Never Added
+		},
 		i(67538),	-- Recipe: Vial of the Sands [Archeology - DONE]
 		
 		-- MISTS Recipes

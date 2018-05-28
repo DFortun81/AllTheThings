@@ -765,7 +765,7 @@ local function createAccountFrame(parent)
 	addObject(elm,unobtainable)
 	
 	local unobtainableFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-unobtainableFrame", child, "ThinBorderTemplate");
-	unobtainableFrame:SetSize(child:GetWidth(),480)
+	unobtainableFrame:SetSize(child:GetWidth(),500)
 	unobtainableFrame:SetPoint("TOPLEFT",unobtainable,0,-frameSpacer);
 	addObject(elm,unobtainableFrame)
 	
@@ -1081,7 +1081,7 @@ local function createAccountFrame(parent)
 	addObject(elm,legacy)
 	
 	local legacyFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-legacyFrame", child, "ThinBorderTemplate");
-	legacyFrame:SetSize(unobtainableFrame:GetWidth()-20,60)
+	legacyFrame:SetSize(unobtainableFrame:GetWidth()-20,80)
 	legacyFrame:SetPoint("TOPLEFT",legacy,0,-frameSpacer);
 	addObject(elm,legacyFrame)
 	
