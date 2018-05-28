@@ -19,9 +19,9 @@ _.Zones =
 								recipe(158907),	-- Breath of Critical Strike [Ring]
 								recipe(158908),	-- Breath of Haste [Ring]
 								recipe(158909),	-- Breath of Mastery
+								recipe(158896),	-- Breath of Versatility [Neck]
 								un(1, recipe(158910)),	-- Breath of Mastery
 								recipe(158911),	-- Breath of Versatility
-								recipe(158896),	-- Breath of Versatility (Rank 2?)
 								recipe(159236),	-- Mark of the Shattered Hand
 							},
 						}),

@@ -1141,8 +1141,11 @@ _.GearSets =
 					i(40829),	-- Relentless Gladiator's Plate Helm
 					i(40870),	-- Relentless Gladiator's Plate Shoulders
 					i(40790),	-- Relentless Gladiator's Plate Chestpiece
+					i(40984),	-- Relentless Gladiator's Bracers of Salvation
 					i(40810),	-- Relentless Gladiator's Plate Gauntlets
+					i(40978),	-- Relentless Gladiator's Girdle of Salvation
 					i(40850),	-- Relentless Gladiator's Plate Legguards
+					i(40979),	-- Relentless Gladiator's Greaves of Salvation
 				}),		
 				gs(778, {	-- Relentless Gladiator's Dreaplate Armor
 					i(40830),	-- Relentless Gladiator's Dreadplate Helm

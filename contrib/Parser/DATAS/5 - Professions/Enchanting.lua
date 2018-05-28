@@ -14,7 +14,6 @@ profession(333, { -- Enchanting
 				recipe(158909),	-- Breath of Mastery
 				un(1, recipe(158910)),	-- Breath of Mastery
 				recipe(158911),	-- Breath of Versatility
-				recipe(158896),	-- Breath of Versatility (Rank 2?)
 				recipe(159236),	-- Mark of the Shattered Hand
 			},
 		}),
@@ -208,7 +207,6 @@ profession(333, { -- Enchanting
 						recipe(158909),	-- Breath of Mastery
 						un(1, recipe(158910)),	-- Breath of Mastery
 						recipe(158911),	-- Breath of Versatility
-						recipe(158896),	-- Breath of Versatility (Rank 2?)
 						recipe(159236),	-- Mark of the Shattered Hand
 					},
 				}),
@@ -289,7 +287,6 @@ profession(333, { -- Enchanting
 						recipe(158909),	-- Breath of Mastery
 						un(1, recipe(158910)),	-- Breath of Mastery
 						recipe(158911),	-- Breath of Versatility
-						recipe(158896),	-- Breath of Versatility (Rank 2?)
 						recipe(159236),	-- Mark of the Shattered Hand
 					},
 				}),
