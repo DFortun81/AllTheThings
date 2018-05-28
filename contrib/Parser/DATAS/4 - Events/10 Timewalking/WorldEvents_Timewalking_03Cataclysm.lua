@@ -12,7 +12,7 @@ _.WorldEvents =
 							["groups"] = {
 							},
 							["qg"] = 101759, -- Kiatke
-							["repatable"] = true,
+							["repeatable"] = true,
 						}),
 					}),
 					i(133377, { -- Smoldering Timewarped Ember [Horde]
@@ -20,7 +20,7 @@ _.WorldEvents =
 							["groups"] = {
 							},
 							["qg"] = 101759, -- Kiatke
-							["repatable"] = true,
+							["repeatable"] = true,
 						}),
 					}),
 					currency(1166, { -- Timewarped Badge

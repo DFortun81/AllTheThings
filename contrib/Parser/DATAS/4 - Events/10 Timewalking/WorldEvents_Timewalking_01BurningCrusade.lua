@@ -12,14 +12,14 @@ _.WorldEvents =
 							["groups"]= {
 							},
 							["qg"] = 98685, -- Cupri
-							["repatable"] = true,
+							["repeatable"] = true,
 						}),
 					}),
 					q(47523, { -- Disturbance Detected: Black Temple
 						["groups"] = {
 						},
 						["qg"] = 123252, -- Vormu
-						["repatable"] = true,
+						["repeatable"] = true,
 					}),
 					currency(1166, { -- Timewarped Badge
 						i(129929), -- Ever-Shifting Mirror
