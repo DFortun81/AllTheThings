@@ -865,15 +865,11 @@ _.Zones =
 						i(31781),	-- Sha'tar Tabard
 					}),
 					n(22212, {	-- Andrion Darkspinner <Shadoweave Tailoring Specialist>
-						i(21913, {	-- Pattern: Frozen Shadoweave Robe
-							i(21871),	-- Frozen Shadoweave Robe
-						}),
-						i(21914, {	-- Pattern: Frozen Shadoweave Boots
-							i(21870),	-- Frozen Shadoweave Boots
-						}),
-						i(21912, {	-- Pattern: Frozen Shadoweave Shoulders
-							i(21869),	-- Frozen Shadoweave Shoulders
-						}),
+						i(21915),	-- Pattern: Ebon Shadowbag
+						i(21914),	-- Pattern: Frozen Shadoweave Boots
+						i(21912),	-- Pattern: Frozen Shadoweave Shoulders
+						i(21913),	-- Pattern: Frozen Shadoweave Robe
+						i(30483),	-- Pattern: Shadowcloth
 					}),
 					n(27667, { -- Anwehu <Weapons & Armorsmith>
 						i(34925), -- Adorned Supernal Legwraps
@@ -1275,15 +1271,11 @@ _.Zones =
 						i(33589), -- Wristguards of Tranquil Thought
 					}),
 					n(22213, {	-- Gidge Spellweaver <Spellfire Tailoring Specialist>
-						i(21910, {	-- Pattern: Spellfire Robe
-							i(21848),	-- Spellfire Robe
-						}),
-						i(21909, {	-- Pattern: Spellfire Gloves
-							i(21847),	-- Spellfire Gloves
-						}),
-						i(21908, {	-- Pattern: Spellfire Belt
-							i(21846),	-- Spellfire Belt
-						}),
+						i(24316),	-- Pattern: Spellcloth
+						i(21911),	-- Pattern: Spellfire Bag
+						i(21908),	-- Pattern: Spellfire Belt
+						i(21909),	-- Pattern: Spellfire Gloves
+						i(21910),	-- Pattern: Spellfire Robe
 					}),
 					n(18756, {	-- Haris Pilton <Socialite>
 						i(134007),	-- Eternal Black Diamond Ring Toy
@@ -1462,39 +1454,42 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 					n(21655, {	-- Nakodu <Lower City Quartermaster>
+						i(31778),	-- Lower City Tabard
+						i(33157),	-- Design: Falling Star
+						i(24179),	-- Design: Felsteel Boar
+						i(24175),	-- Design: Pendant of Thawing
+						i(23138),	-- Design: Potent Flame Spessarite
 						i(33148),	-- Formula: Enchant Cloak - Dodge
+						i(30833),	-- Pattern: Cloak of Arcane Evasion
 						i(22910),	-- Recipe: Elixir of Major Shadow Power
-						i(30835),	-- Salvager's Hauberk
-						i(30836),	-- Leggings of the Skettis Exile
-						i(35331),	-- Dreadweave Mantle
-						i(35335),	-- Mooncloth Mitts
-						i(35340),	-- Satin Leggings
-						i(35344),	-- Evoker's Silk Cowl
+						i(30832),	-- Gavel of Unearthed Secrets
+						i(30830),	-- Trident of the Outcast Tribe
 						i(35357),	-- Dragonhide Helm
-						i(35361),	-- Kodohide Gloves
-						i(35370),	-- Oportunist's Leather Tunic
-						i(35373),	-- Wyrmhide Legguards
+						i(35344),	-- Evoker's Silk Cowl
 						i(35378),	-- Stalker's Chain Helm
-						i(35382),	-- Seer's Linked Gauntlets
-						i(35389),	-- Seer's Mail Leggings
-						i(35391),	-- Seer's Ringmail Chestguard
-						i(35405),	-- Crusader's Ornamented Leggings
+						i(35331),	-- Dreadweave Mantle
 						i(35411),	-- Savage Plate Shoulders
 						i(35412),	-- Crusader's Scaled Chestpiece
-						i(30830),	-- Trident of the Outcast Tribe
-						i(30832),	-- Gavel of Unearthed Secrets
-						i(31778),	-- Lower City Tabard
+						i(35370),	-- Opportunist's Leather Tunic
+						i(30835),	-- Salvager's Hauberk
+						i(35391),	-- Seer's Ringmail Chestguard
+						i(35361),	-- Kodohide Gloves
+						i(35335),	-- Mooncloth Mitts
+						i(35382),	-- Seer's Linked Gauntlets
+						i(30834),	-- Shapeshifter's Signet
+						i(35405),	-- Crusader's Ornamented Leggings
+						i(30836),	-- Leggings of the Skettis Exile
+						i(35340),	-- Satin Leggings
+						i(35389),	-- Seer's Mail Leggings
+						i(35373),	-- Wyrmhide Legguards
+						i(30841),	-- Lower City Prayerbook
 					}),
 					n(22208, {	-- Nasmara Moonsong <Mooncloth Tailoring Specialist>
-						i(21917, {	-- Pattern: Primal Mooncloth Robe
-							i(21875),	-- Primal Mooncloth Robe
-						}),
-						i(21918, {	-- Pattern: Primal Mooncloth Shoulders
-							i(21874),	-- Primal Mooncloth Shoulders
-						}),
-						i(21916, {	-- Pattern: Primal Mooncloth Belt
-							i(21873),	-- Primal Mooncloth Belt
-						}),
+						i(21895),	-- Pattern: Primal Mooncloth
+						i(21919),	-- Pattern: Primal Mooncloth Bag
+						i(21916),	-- Pattern: Primal Mooncloth Belt
+						i(21917),	-- Pattern: Primal Mooncloth Robe
+						i(21918),	-- Pattern: Primal Mooncloth Shoulders
 					}),
 					n(19321, {	-- Quartermaster Endarin <Aldor Quartermaster>
 						i(31779),	-- Aldor Tabard

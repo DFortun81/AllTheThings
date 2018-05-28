@@ -423,12 +423,12 @@ _.Zones =
 					qh( 32726),	-- So You Want to Be a Blacksmith...	
 --]]					
 				}),
-				n(-2, {	-- Vendors
-					nh(64067, {	-- Barleyflower <Cooking Supplies>
+				nh(-2, {	-- Vendors
+					n(64067, {	-- Barleyflower <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					nh(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor>
+					n(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor>
 						i(99667, {	-- Gauntlets of the Cursed Protector
 							i(99064),	-- Gauntlets of Saven Sacred Seals
 							i(99034),	-- Gauntlets of the Prehistoric Marauder
@@ -690,11 +690,11 @@ _.Zones =
 						i(99090),	-- Leggings of Celestial HarmonyShaman
 						i(99091),	-- Shoulderwraps of Celestial HarmonyShaman
 					}),
-					nh(64062, {	-- Gentle Dari <First Aid Supplies>
+					n(64062, {	-- Gentle Dari <First Aid Supplies>
 						i(44693),	-- Wound Dressing Shirt
 						i(44694),	-- Antiseptic-Soaked Dressing Shirt
 					}),
-					nh(74012, {	-- Ki'agnuu <Heroic Vendor>
+					n(74012, {	-- Ki'agnuu <Heroic Vendor>
 						i(99692, {	-- Gauntlets of the Cursed Protector
 							i(99141),	-- Gauntlets of Saven Sacred Seals
 							i(99198),	-- Gauntlets of the Prehistoric Marauder
@@ -956,7 +956,7 @@ _.Zones =
 						i(99205),	-- Mantle of the Horned NightmareWarlock
 						i(99206),	-- Helmet of the Prehistoric MarauderWarrior
 					}),
-					nh(74010, {	-- Nadina Stargem <Raid Vendor>
+					n(74010, {	-- Nadina Stargem <Raid Vendor>
 						i(99754, {	-- Shoulders of the Cursed Vanquisher
 							i(99664),	-- Shoulderguards of the Shattered Vale
 							i(99621),	-- Shoulderwraps of the Shattered Vale
@@ -1218,11 +1218,31 @@ _.Zones =
 						i(99665),	-- Headguard of Winged Triumph
 						i(99666),	-- Greaves of Winged Triumph
 					}),
-					nh(64126, {	-- Stephen Wong <Cooking Supplies>
+					n(64052, {	-- Raishen the Needle <Tailoring Supplies>
+						i(76061, {	-- Spirit of Harmony
+							i(86361),	-- Pattern: Contender's Satin Amice
+							i(86367),	-- Pattern: Contender's Satin Belt
+							i(86360),	-- Pattern: Contender's Satin Cowl
+							i(86365),	-- Pattern: Contender's Satin Cuffs
+							i(86366),	-- Pattern: Contender's Satin Footwraps
+							i(86363),	-- Pattern: Contender's Satin Handwraps
+							i(86364),	-- Pattern: Contender's Satin Pants
+							i(86362),	-- Pattern: Contender's Satin Raiment
+							i(86353),	-- Pattern: Contender's Silk Amice
+							i(86359),	-- Pattern: Contender's Silk Belt
+							i(86352),	-- Pattern: Contender's Silk Cowl
+							i(86357),	-- Pattern: Contender's Silk Cuffs
+							i(86358),	-- Pattern: Contender's Silk Footwraps
+							i(86355),	-- Pattern: Contender's Silk Handwraps
+							i(86356),	-- Pattern: Contender's Silk Pants
+							i(86354),	-- Pattern: Contender's Silk Raiment
+						}),
+					}),
+					n(64126, {	-- Stephen Wong <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					nh(74019, {	-- Tu'aho Pathcutter <Mythic Vendor>
+					n(74019, {	-- Tu'aho Pathcutter <Mythic Vendor>
 						i(99717, {	-- Shoulders of the Cursed Vanquisher
 							i(99423),	-- Shoulderguards of the Shattered Vale
 							i(99428),	-- Shoulderwraps of the Shattered Vale
@@ -1484,7 +1504,7 @@ _.Zones =
 						i(99352),	-- Handwraps of Celestial Harmony
 						i(99388),	-- Handwraps of Seven Sacred Seals
 					}),
-					h(n(67014, { -- Warpweaver Shafiee (Horde / Shrine of Two Moons)
+					n(67014, { -- Warpweaver Shafiee (Horde / Shrine of Two Moons)
 						i(151116), -- Fashionable Undershirt
 						{ -- Ensemble: Mana-Etched  Regalia
 							["groups"] = {
@@ -1540,7 +1560,7 @@ _.Zones =
 							["ignoreBonus"] = true,
 							["itemID"] = 151120
 						},
-					})),
+					}),
 				}),
 			},
 			["lvl"] = 78,

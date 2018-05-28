@@ -1288,12 +1288,8 @@ _.Zones =
 				}),
 				n(-2, {	-- Vendors
 					n(19521, {	-- Arrond <Tailoring Supplies>
-						i(21900, {	-- Pattern: Imbued Netherweave Robe
-							i(21861),	-- Imbued Netherweave Robe
-						}),
-						i(21901, {	-- Pattern: Imbued Netherweave Tunic
-							i(21862),	-- Imbued Netherweave Tunic
-						}),
+						i(21900), 	-- Pattern: Imbued Netherweave Robe
+						i(21901), 	-- Pattern: Imbued Netherweave Tunic
 					}),
 					a(n(20510, {	-- Brunn Flamebeard <Gryphon Keeper>	
 						i(25473),	-- Swift Blue Gryphon Mount

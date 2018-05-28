@@ -1705,9 +1705,9 @@ _.Zones =
 					n(29512, { 	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
 						i(21895),	-- Pattern: Primal Mooncloth
 						i(21919),	-- Pattern: Primal Mooncloth Bag
-						i(21918),	-- Pattern: Primal Mooncloth Shoulders
-						i(21917),	-- Pattern: Primal Mooncloth Robe
 						i(21916),	-- Pattern: Primal Mooncloth Belt
+						i(21917),	-- Pattern: Primal Mooncloth Robe
+						i(21918),	-- Pattern: Primal Mooncloth Shoulders
 					}),
 					n(29628, { 	-- Angelique Butler <First Aid Supplies>
 						i(44694),	-- Antiseptic-Soaked Dressing
@@ -1909,6 +1909,17 @@ _.Zones =
 						i(129826),	-- Nursery Spider Pet
 						i(44820),	-- Red Ribbon Pet Leash Toy
 	--					i(37460),	-- Rope Pet Leash Toy (posted in stable master)
+					}),
+					n(28699, {	-- Charles Worth <Tailoring Trainer>
+						["description"] = "Your Tailor has to have completed Loremaster of Northrend for Deathchill Cloak and Northrend Dungeonmaster for Wispcloak, and not just via account wide. If you have done them account wide, but not exclusively on your tailor, you will need to go back, and finish them up to get the recipes from Charles Worth.",
+						["groups"] = {
+							ach(41, {	-- Loremaster of Northrend
+								recipe(56017),	-- Deathchill Cloak
+							}),
+							ach(1288, {	-- Northrend Dungeonmaster
+								recipe(56016),	-- Wispcloak
+							}),
+						},
 					}),
 					n(29716, { 	-- Clockwork Assistant <Jepetto's Companion>
 						i(54436),	-- Blue Clockwork Rocket Bot Pet
@@ -2392,16 +2403,16 @@ _.Zones =
 					n(29511, {  -- Lalla Brightweave <Spellfire Tailoring Specialist>
 						i(24316),	-- Pattern: Spellcloth
 						i(21911),	-- Pattern: Spellfire Bag
-						i(21910),	-- Pattern: Spellfire Robe
-						i(21909),	-- Pattern: Spellfire Gloves
 						i(21908),	-- Pattern: Spellfire Belt
+						i(21909),	-- Pattern: Spellfire Gloves
+						i(21910),	-- Pattern: Spellfire Robe
 					}),
 					n(29510, {  -- Linna Bruder <Shadoweave Tailoring Specialist>
-						i(30483),	-- Pattern: Shadowcloth
 						i(21915),	-- Pattern: Ebon Shadowbag
+						i(21914),	-- Pattern: Frozen Shadoweave Boots
 						i(21912),	-- Pattern: Frozen Shadoweave Shoulders
 						i(21913),	-- Pattern: Frozen Shadoweave Robe
-						i(21914),	-- Pattern: Frozen Shadoweave Boots
+						i(30483),	-- Pattern: Shadowcloth
 					}),
 					n(35500, {  -- Matilda Brightlink <Mail Armor Merchant>
 						a(i(48250)),	-- Windrunner's Headpiece of Conquest

@@ -10,6 +10,9 @@ _.Instances =
 				["groups"] = {
 					d(14, {	-- Normal
 						n(0, {		-- Zone Drop
+							i(45104),	-- Pattern: Cord of the White Dawn
+							i(45102),	-- Pattern: Sash of Ancient Power
+							i(45105),	-- Pattern: Savior's Slippers
 							i(46341),	-- Drape of the Spellweaver
 							i(46347),	-- Cloak of the Dormant Blaze
 							i(46344),	-- Iceshear Mantle

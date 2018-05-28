@@ -3,78 +3,24 @@
 -----------------------------------------------------
 local PATTERNS_ILVL_496 = {		-- Patterns with iLvl 496 (Mogu, HoF, ToEs)
 	["groups"] = {
-		{	-- Pattern: Legacy of the Emperor
-			["groups"] = { i(86312), },	-- Legacy of the Emperor
-			["itemID"] = 86381
-		},
-		{	-- Pattern: Robe of Eternal Rule
-			["groups"] = { i(86311), },	-- Robe of Eternal Rule
-			["itemID"] = 86379
-		},
-		{	-- Pattern: Imperial Silk Gloves
-			["groups"] = { i(86313), },	-- Imperial Silk Gloves
-			["itemID"] = 86380
-		},
-		{	-- Pattern: Touch of the Light
-			["groups"] = { i(86314), },	-- Touch of the Light
-			["itemID"] = 86382
-		},
-		{	-- Pattern: Chestguard of Nemeses
-			["groups"] = { i(85788), },	-- Chestguard of Nemeses
-			["itemID"] = 86238
-		},
-		{	-- Pattern: Nightfire Robe
-			["groups"] = { i(85829), },	-- Nightfire Robe
-			["itemID"] = 86281
-		},
-		{	-- Pattern: Liferuned Leather Gloves
-			["groups"] = { i(85827), },	-- Liferuned Leather Gloves
-			["itemID"] = 86279
-		},
-		{	-- Pattern: Murderer's Gloves
-			["groups"] = { i(85828), },	-- Murderer's Gloves
-			["itemID"] = 86280
-		},
-		{	-- Pattern: Raiment of Blood and Bone
-			["groups"] = { i(85830), },	-- Raiment of Blood and Bone
-			["itemID"] = 86283
-		},
-		{	-- Pattern: Stormbreaker Chestguard
-			["groups"] = { i(85840), },	-- Stormbreaker Chestguard
-			["itemID"] = 86297
-		},
-		{	-- Pattern: Fists of Lightning
-			["groups"] = { i(85821), },	-- Fists of Lightning
-			["itemID"] = 86272
-		},
-		{	-- Pattern: Raven Lord's Gloves
-			["groups"] = { i(85831), },	-- Raven Lord's Gloves
-			["itemID"] = 86284
-		},
-		{	-- Plans: Chestplate of Limitless Faith
-			["groups"] = { i(87403), },	-- Chestplate of Limitless Faith
-			["itemID"] = 87412
-		},
-		{	-- Plans: Ornate Battleplate of the Master
-			["groups"] = { i(87402), },	-- Ornate Battleplate of the Master
-			["itemID"] = 87410
-		},
-		{	-- Plans: Unyielding Bloodplate
-			["groups"] = { i(87405), },	-- Unyielding Bloodplate
-			["itemID"] = 87408
-		},
-		{	-- Plans: Bloodforged Warfists
-			["groups"] = { i(87407), },	-- Bloodforged Warfists
-			["itemID"] = 87411
-		},
-		{	-- Plans: Gauntlets of Battle Command
-			["groups"] = { i(87406), },	-- Gauntlets of Battle Command
-			["itemID"] = 87409
-		},
-		{	-- Plans: Gauntlets of Unbound Devotion
-			["groups"] = { i(87404), },	-- Gauntlets of Unbound Devotion
-			["itemID"] = 87413
-		},
+		i(86272),	-- Pattern: Fists of Lightning
+		i(86380),	-- Pattern: Imperial Silk Gloves
+		i(86279),	-- Pattern: Liferuned Leather Gloves
+		i(86280),	-- Pattern: Murderer's Gloves
+		i(86284),	-- Pattern: Raven Lord's Gloves
+		i(86382),	-- Pattern: Touch of the Light
+		i(86238),	-- Pattern: Chestguard of Nemeses
+		i(86381),	-- Pattern: Legacy of the Emperor
+		i(86281),	-- Pattern: Nightfire Robe
+		i(86283),	-- Pattern: Raiment of Blood and Bone
+		i(86379),	-- Pattern: Robe of Eternal Rule
+		i(86297),	-- Pattern: Stormbreaker Chestguard
+		i(87411),	-- Plans: Bloodforged Warfists
+		i(87409),	-- Plans: Gauntlets of Battle Command
+		i(87413),	-- Plans: Gauntlets of Unbound Devotion
+		i(87412),	-- Plans: Chestplate of Limitless Faith
+		i(87410),	-- Plans: Ornate Battleplate of the Master
+		i(87408),	-- Plans: Unyielding Bloodplate
 	},
 	["npcID"] = -15
 };
