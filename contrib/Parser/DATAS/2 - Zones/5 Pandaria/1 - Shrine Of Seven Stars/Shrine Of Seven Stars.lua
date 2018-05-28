@@ -684,26 +684,6 @@ _.Zones =
 						i(99205),	-- Mantle of the Horned NightmareWarlock
 						i(99206),	-- Helmet of the Prehistoric MarauderWarrior
 					}),
-					n(64051, {	-- Esha the Loommaiden <Tailoring Supplies>
-						i(76061, {	-- Spirit of Harmony
-							i(86361),	-- Pattern: Contender's Satin Amice
-							i(86367),	-- Pattern: Contender's Satin Belt
-							i(86360),	-- Pattern: Contender's Satin Cowl
-							i(86365),	-- Pattern: Contender's Satin Cuffs
-							i(86366),	-- Pattern: Contender's Satin Footwraps
-							i(86363),	-- Pattern: Contender's Satin Handwraps
-							i(86364),	-- Pattern: Contender's Satin Pants
-							i(86362),	-- Pattern: Contender's Satin Raiment
-							i(86353),	-- Pattern: Contender's Silk Amice
-							i(86359),	-- Pattern: Contender's Silk Belt
-							i(86352),	-- Pattern: Contender's Silk Cowl
-							i(86357),	-- Pattern: Contender's Silk Cuffs
-							i(86358),	-- Pattern: Contender's Silk Footwraps
-							i(86355),	-- Pattern: Contender's Silk Handwraps
-							i(86356),	-- Pattern: Contender's Silk Pants
-							i(86354),	-- Pattern: Contender's Silk Raiment
-						}),
-					}),
 					n(74027, {	-- Ivory Warmheart <Mythic Vendor>
 						i(99717, {	-- Shoulders of the Cursed Vanquisher
 							i(99423),	-- Shoulderguards of the Shattered Vale
@@ -969,6 +949,26 @@ _.Zones =
 					n(64084, {	-- Jojo <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
+					}),
+					n(64052, {	-- Raishen the Needle <Tailoring Supplies>
+						i(76061, {	-- Spirit of Harmony
+							i(86361),	-- Pattern: Contender's Satin Amice
+							i(86367),	-- Pattern: Contender's Satin Belt
+							i(86360),	-- Pattern: Contender's Satin Cowl
+							i(86365),	-- Pattern: Contender's Satin Cuffs
+							i(86366),	-- Pattern: Contender's Satin Footwraps
+							i(86363),	-- Pattern: Contender's Satin Handwraps
+							i(86364),	-- Pattern: Contender's Satin Pants
+							i(86362),	-- Pattern: Contender's Satin Raiment
+							i(86353),	-- Pattern: Contender's Silk Amice
+							i(86359),	-- Pattern: Contender's Silk Belt
+							i(86352),	-- Pattern: Contender's Silk Cowl
+							i(86357),	-- Pattern: Contender's Silk Cuffs
+							i(86358),	-- Pattern: Contender's Silk Footwraps
+							i(86355),	-- Pattern: Contender's Silk Handwraps
+							i(86356),	-- Pattern: Contender's Silk Pants
+							i(86354),	-- Pattern: Contender's Silk Raiment
+						}),
 					}),
 					n(64096, {	-- Serenka <First Aid Supplies>
 						i(44693),	-- Wound Dressing Shirt

@@ -157,6 +157,7 @@ profession(197, { -- Tailoring
 		-- i(21912),	-- Pattern: Frozen Shadoweave Shoulders [2 DROPS - DONE]
 		i(24303),	-- Pattern: Girdle of Ruination [WORLD DROP]
 		-- i(24295),	-- Pattern: Golden Spellthread [1 VENDOR - DONE]
+		un(1, i(24315)),	-- Pattern: Heavy Netherweave Net [1 VENDOR - DONE] [REMOVED FROM GAME]
 		-- i(35205),	-- Pattern: Hands of Eternal Light [SUNWELL - DROP]
 		-- i(21893),	-- Pattern: Imbued Netherweave Bag [2 VENDORS - DONE]
 		-- i(21899),	-- Pattern: Imbued Netherweave Boots [2 VENDORS - DONE]
@@ -264,6 +265,12 @@ profession(197, { -- Tailoring
 		-- i(72000),	-- Pattern: World Mender's Pants [DRAGON SOUL - DROP - DONE]
 		
 		-- MOP Recipes
+		i(100863, {	-- Pattern: Celestial Cloth and Its Uses
+			["description"] = "Can drop from any Mists of Pandaria mob.",
+			["groups"] = {
+				recipe(143011),	-- Celestial Cloth
+			},
+		}),
 		-- i(86361),	-- Pattern: Contender's Satin Amice [2 VENDORS - DONE]
 		-- i(86367),	-- Pattern: Contender's Satin Belt [2 VENDORS - DONE]
 		-- i(86360),	-- Pattern: Contender's Satin Cowl [2 VENDORS - DONE]
@@ -283,11 +290,20 @@ profession(197, { -- Tailoring
 		-- i(86371),	-- Pattern: Gloves of Creation [1 VENDOR - DONE]
 		-- i(86376),	-- Pattern: Greater Cerulean Spellthread [1 VENDOR - DONE]
 		-- i(86375),	-- Pattern: Greater Pearlescent Spellthread [1 VENDOR - DONE]
-		-- i(86380),	-- Pattern: Imperial Silk Gloves [WORLD DROP - DONE]
-		-- i(86381),	-- Pattern: Legacy of the Emperor [WORLD DROP - DONE]
+		-- i(86380),	-- Pattern: Imperial Silk Gloves [RAID DROP - DONE]
+		-- i(86381),	-- Pattern: Legacy of the Emperor [RAID DROP - DONE]
 		-- i(86370),	-- Pattern: Robes of Creation [1 VENDOR - DONE]
-		-- i(86379),	-- Pattern: Robe of Eternal Rule [WORLD DROP - DONE]
+		-- i(86379),	-- Pattern: Robe of Eternal Rule [RAID DROP - DONE]
 		-- i(86377),	-- Pattern: Royal Satchel [2 VENDORS - DONE]
+		-- i(86369),	-- Pattern: Spelltwister's Gloves [1 VENDOR - DONE]
+		-- i(86368),	-- Pattern: Spelltwister's Grand Robe [1 VENDOR - DONE]
+		-- i(86382),	-- Pattern: Touch of the Light [RAID DROP - DONE]
+		
+		-- WoD Recipes
+		un(1, i(118098)),	-- Pattern: Murloc Chew Toy
+		
+		-- Legion Recipes
+		-- i(137681),	-- Recipe: Bloodtotem Saddle Blanket [Highmountain - DONE]
 	}),
 	n(-160, {	-- Mounts
 		i(115363),	-- Creeping Carpet
@@ -1434,6 +1450,7 @@ profession(197, { -- Tailoring
 		tier(5, {	-- Mists
 			recipe(146925),	-- Accelerated Celestial Cloth
 			recipe(125551),	-- Bolt of Windwool Cloth
+			recipe(143011),	-- Celestial Cloth
 			recipe(125553),	-- Cerulean Spellthread
 			recipe(125540),	-- Contender's Satin Amice
 			recipe(125546),	-- Contender's Satin Belt
@@ -1464,6 +1481,9 @@ profession(197, { -- Tailoring
 			recipe(125556),	-- Royal Satchel
 			recipe(125497),	-- Sanctified Spellthread
 			recipe(130325),	-- Song of Harmony
+			recipe(125548),	-- Spelltwister's Gloves
+			recipe(125547),	-- Spelltwister's Grand Robe
+			recipe(125561),	-- Touch of the Light
 			recipe(125530),	-- Windwool Belt
 			recipe(125529),	-- Windwool Boots
 			recipe(125528),	-- Windwool Bracers
@@ -1472,6 +1492,95 @@ profession(197, { -- Tailoring
 			recipe(125527),	-- Windwool Pants
 			recipe(125524),	-- Windwool Shoulders
 			recipe(125525),	-- Windwool Tunic
+			n(-37, {	-- Discovery
+				["description"] = "These recipes can be discovered by crafting Imperial Silk or 143011 on the daily cooldown.\n\nIf you haven't finished this yet, I'm really really sorry.\n  - Crieve",
+				["groups"] = {
+					recipe(143011, {	-- Celestial Cloth
+						recipe(142964),	-- Belt of the Night Sky
+						recipe(142955),	-- Leggings of the Night Sky
+						recipe(142960),	-- White Cloud Belt
+						recipe(142951),	-- White Cloud Leggings
+						recipe(143053),	-- Crafted Malevolent Gladiator's Cape of Cruelty
+						recipe(143054),	-- Crafted Malevolent Gladiator's Cape of Prowess
+						recipe(143082),	-- Crafted Malevolent Gladiator's Cloak of Alacrity
+						recipe(143083),	-- Crafted Malevolent Gladiator's Cloak of Prowess
+						recipe(143056),	-- Crafted Malevolent Gladiator's Cord of Accuracy
+						recipe(143055),	-- Crafted Malevolent Gladiator's Cord of Cruelty
+						recipe(143057),	-- Crafted Malevolent Gladiator's Cord of Meditation
+						recipe(143061),	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
+						recipe(143063),	-- Crafted Malevolent Gladiator's Cuffs of Meditation
+						recipe(143062),	-- Crafted Malevolent Gladiator's Cuffs of Prowess
+						recipe(143064),	-- Crafted Malevolent Gladiator's Drape of Cruelty
+						recipe(143066),	-- Crafted Malevolent Gladiator's Drape of Meditation
+						recipe(143065),	-- Crafted Malevolent Gladiator's Drape of Prowess
+						recipe(143088),	-- Crafted Malevolent Gladiator's Felweave Amice
+						recipe(143085),	-- Crafted Malevolent Gladiator's Felweave Cowl
+						recipe(143084),	-- Crafted Malevolent Gladiator's Felweave Handguards
+						recipe(143087),	-- Crafted Malevolent Gladiator's Felweave Raiment
+						recipe(143086),	-- Crafted Malevolent Gladiator's Felweave Trousers
+						recipe(143072),	-- Crafted Malevolent Gladiator's Mooncloth Gloves
+						recipe(143073),	-- Crafted Malevolent Gladiator's Mooncloth Helm
+						recipe(143074),	-- Crafted Malevolent Gladiator's Mooncloth Leggings
+						recipe(143076),	-- Crafted Malevolent Gladiator's Mooncloth Mantle
+						recipe(143075),	-- Crafted Malevolent Gladiator's Mooncloth Robe
+						recipe(143077),	-- Crafted Malevolent Gladiator's Satin Gloves
+						recipe(143078),	-- Crafted Malevolent Gladiator's Satin Hood
+						recipe(143079),	-- Crafted Malevolent Gladiator's Satin Leggings
+						recipe(143081),	-- Crafted Malevolent Gladiator's Satin Mantle
+						recipe(143080),	-- Crafted Malevolent Gladiator's Satin Robe
+						recipe(143071),	-- Crafted Malevolent Gladiator's Silk Amice
+						recipe(143068),	-- Crafted Malevolent Gladiator's Silk Cowl
+						recipe(143067),	-- Crafted Malevolent Gladiator's Silk Handguards
+						recipe(143070),	-- Crafted Malevolent Gladiator's Silk Robe
+						recipe(143069),	-- Crafted Malevolent Gladiator's Silk Trousers
+						recipe(143059),	-- Crafted Malevolent Gladiator's Treads of Alacrity
+						recipe(143058),	-- Crafted Malevolent Gladiator's Treads of Cruelty
+						recipe(143060),	-- Crafted Malevolent Gladiator's Treads of Meditation
+					}),
+					recipe(125557, {	-- Imperial Silk
+						recipe(138598),	-- Falling Blossom Cowl
+						recipe(138600),	-- Falling Blossom Hood
+						recipe(138599),	-- Falling Blossom Sandals
+						recipe(138597),	-- Falling Blossom Treads
+						recipe(137907),	-- Crafted Dreadful Gladiator's Cape of Cruelty
+						recipe(137908),	-- Crafted Dreadful Gladiator's Cape of Prowess
+						recipe(137936),	-- Crafted Dreadful Gladiator's Cloak of Alacrity
+						recipe(137937),	-- Crafted Dreadful Gladiator's Cloak of Prowess
+						recipe(137910),	-- Crafted Dreadful Gladiator's Cord of Accuracy
+						recipe(137909),	-- Crafted Dreadful Gladiator's Cord of Cruelty
+						recipe(137911),	-- Crafted Dreadful Gladiator's Cord of Meditation
+						recipe(137915),	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
+						recipe(137917),	-- Crafted Dreadful Gladiator's Cuffs of Meditation
+						recipe(137916),	-- Crafted Dreadful Gladiator's Cuffs of Prowess
+						recipe(137918),	-- Crafted Dreadful Gladiator's Drape of Cruelty
+						recipe(137920),	-- Crafted Dreadful Gladiator's Drape of Meditation
+						recipe(137919),	-- Crafted Dreadful Gladiator's Drape of Prowess
+						recipe(137942),	-- Crafted Dreadful Gladiator's Felweave Amice
+						recipe(137939),	-- Crafted Dreadful Gladiator's Felweave Cowl
+						recipe(137938),	-- Crafted Dreadful Gladiator's Felweave Handguards
+						recipe(137941),	-- Crafted Dreadful Gladiator's Felweave Raiment
+						recipe(137940),	-- Crafted Dreadful Gladiator's Felweave Trousers
+						recipe(137926),	-- Crafted Dreadful Gladiator's Mooncloth Gloves
+						recipe(137927),	-- Crafted Dreadful Gladiator's Mooncloth Helm
+						recipe(137928),	-- Crafted Dreadful Gladiator's Mooncloth Leggings
+						recipe(137930),	-- Crafted Dreadful Gladiator's Mooncloth Mantle
+						recipe(137929),	-- Crafted Dreadful Gladiator's Mooncloth Robe
+						recipe(137931),	-- Crafted Dreadful Gladiator's Satin Gloves
+						recipe(137932),	-- Crafted Dreadful Gladiator's Satin Hood
+						recipe(137933),	-- Crafted Dreadful Gladiator's Satin Leggings
+						recipe(137935),	-- Crafted Dreadful Gladiator's Satin Mantle
+						recipe(137934),	-- Crafted Dreadful Gladiator's Satin Robe
+						recipe(137925),	-- Crafted Dreadful Gladiator's Silk Amice
+						recipe(137922),	-- Crafted Dreadful Gladiator's Silk Cowl
+						recipe(137921),	-- Crafted Dreadful Gladiator's Silk Handguards
+						recipe(137924),	-- Crafted Dreadful Gladiator's Silk Robe
+						recipe(137923),	-- Crafted Dreadful Gladiator's Silk Trousers
+						recipe(137913),	-- Crafted Dreadful Gladiator's Treads of Alacrity
+						recipe(137912),	-- Crafted Dreadful Gladiator's Treads of Cruelty
+						recipe(137914),	-- Crafted Dreadful Gladiator's Treads of Meditation
+					}),
+				},
+			}),
 		}),
 		tier(6, {	-- WoD
 			recipe(168847),	-- Brilliant Hexweave Cloak
@@ -1501,27 +1610,35 @@ profession(197, { -- Tailoring
 		}),
 		tier(7, {	-- Legion
 			-- TRAINING [NOT LEARNABLE]
-			spell(186799),	-- Basic Silkweave Robe
-			spell(186801),	-- Embroidered Silkweave Robe
-			spell(186803),	-- Handcrafted Silkweave Bag
-			spell(187060),	-- Handcrafted Silkweave Hood
-			spell(186738),	-- Handcrafted Silkweave Robe
-			spell(187066),	-- Masterwork Silkweave Bracers
-			spell(186764),	-- Rune-Threaded Silkweave Bracers
-			spell(187065),	-- Silkweave Bracer: Outer Layer
-			spell(187064),	-- Silkweave Bracer Lining
-			spell(187059),	-- Silkweave Hood: Outer Layer
-			spell(187058),	-- Silkweave Hood Lining
+			un(15, spell(186799)),	-- Basic Silkweave Robe
+			un(15, spell(186801)),	-- Embroidered Silkweave Robe
+			un(15, spell(186803)),	-- Handcrafted Silkweave Bag
+			un(15, spell(187060)),	-- Handcrafted Silkweave Hood
+			un(15, spell(186738)),	-- Handcrafted Silkweave Robe
+			un(15, spell(187066)),	-- Masterwork Silkweave Bracers
+			un(15, spell(186764)),	-- Rune-Threaded Silkweave Bracers
+			un(15, spell(187065)),	-- Silkweave Bracer: Outer Layer
+			un(15, spell(187064)),	-- Silkweave Bracer Lining
+			un(15, spell(187059)),	-- Silkweave Hood: Outer Layer
+			un(15, spell(187058)),	-- Silkweave Hood Lining
 			
 			-- EVERYTHING ELSE
 			-- Legion - TODO: Add the recipes and ways to collect these items
+			recipe(220511),	-- Bloodtotem Saddle Blanket
+			recipe(239412),	-- Celumbra, the Night's Dichotomy
 			recipe(213035),	-- Clothes Chest: Dalaran Citizens
 			recipe(213036),	-- Clothes Chest: Karazhan Opera House
 			recipe(213037),	-- Clothes Chest: Molten Core
 			
+			recipe(185962),	-- Imbued Silkweave
+			
 			recipe(229041),	-- Imbued Silkweave Bag [Rank 1]
 			recipe(229043),	-- Imbued Silkweave Bag [Rank 2]
 			recipe(229045),	-- Imbued Silkweave Bag [Rank 3]
+			
+			recipe(185926),	-- Imbued Silkweave Bracers [Rank 1]
+			recipe(185946),	-- Imbued Silkweave Bracers [Rank 2]
+			recipe(185954),	-- Imbued Silkweave Bracers [Rank 3]
 			
 			recipe(185927),	-- Imbued Silkweave Cinch [Rank 1]
 			recipe(185947),	-- Imbued Silkweave Cinch [Rank 2]
