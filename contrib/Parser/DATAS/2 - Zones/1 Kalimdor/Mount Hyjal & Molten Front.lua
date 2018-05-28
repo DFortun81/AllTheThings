@@ -1057,9 +1057,16 @@ _.Zones =
 							}),
 							n(53881, { -- Ayla Shadowstorm
 								["groups"] = {
-									i(70112), -- Globe of Moonlight
-									i(70160), -- Crimson Lasher Pet
-									i(70161), -- Mushroom Chair Toy
+									i(70160),	-- Crimson Lasher [Pet]
+									i(70161),	-- Mushroom Chair [Toy]
+									i(70176),	-- Pattern: Luxurious Silk Gem Bag
+									i(70174),	-- Pattern: Royal Scribe's Satchel
+									i(70175),	-- Pattern: Triple-Reinforced Mining Bag
+									i(70112),	-- Globe of Moonlight
+									i(70110),	-- Band of Glittering Lights
+									i(70113),	-- Moon Blessed Band
+									i(70142),	-- Moonwell Chalice
+									i(70143),	-- Moonwell Phial
 								},
 								["description"] = "This Vendor unlocks once you complete the quest Filling the Moonwell.|r",
 							}),

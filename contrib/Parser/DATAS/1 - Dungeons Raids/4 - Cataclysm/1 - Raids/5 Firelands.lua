@@ -45,7 +45,7 @@ _.Instances =
 					n(  0, {	-- Zone Drop
 						n(-15, { --  Recipes
 							i(69976),	-- Pattern: Boots of the Black Flame		
-							i(69966),	-- Pattern: Don Tayo's  Inferno Mittens	
+							i(69966),	-- Pattern: Don Tayo's Inferno Mittens	
 							i(69975),	-- Pattern: Endless Dream  Walkers		
 							i(69965),	-- Pattern: Grips of Altered Reality	
 							i(69962),	-- Pattern: Clutches of Evil		
@@ -54,7 +54,7 @@ _.Instances =
 							i(69974),	-- Pattern: Ethereal Footfalls	
 							i(69972),	-- Pattern: Footwraps of Quenched Fire	
 							i(69961),	-- Pattern: Gloves of Unforgiving Flame	
-							i(69963),	-- Pattern: Heavenly  Gloves of the Moon	
+							i(69963),	-- Pattern: Heavenly Gloves of the Moon	
 							i(69973),	-- Pattern: Treads of the Craft
 							i(69970),	-- Plans: Emberforged Elementium Boots
 							i(69969),	-- Plans: Mirrored Boots

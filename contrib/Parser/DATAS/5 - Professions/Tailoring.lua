@@ -129,15 +129,165 @@ profession(197, { -- Tailoring
 		-- i(19215),-- Pattern: Wisdom of the Timbermaw [1 VENDOR - DONE]
 		
 		-- BURNING CRUSADE DROPS
+		-- i(21906),	-- Pattern: Arcanoweave Boots [1 DROP - DONE]
+		-- i(21905),	-- Pattern: Arcanoweave Bracers [1 DROP - DONE]
+		-- i(21907),	-- Pattern: Arcanoweave Robe [1 DROP - DONE]
 		-- i(24314),	-- Pattern: Bag of Jewels [2 VENDORS - DONE]
+		-- i(24313),	-- Pattern: Battlecast Hood [1 DROP - DONE]
+		-- i(24310),	-- Pattern: Battlecast Pants [1 DROP - DONE]
+		-- i(30280),	-- Pattern: Belt of Blasting [EYE + SSC - DONE]
+		-- i(30281),	-- Pattern: Belt of the Long Road [EYE + SSC - DONE]
+		i(24298),	-- Pattern: Blackstrike Bracers [WORLD DROP]
+		i(24304),	-- Pattern: Black Belt of Knowledge [WORLD DROP]
 		-- i(21892),	-- Pattern: Bolt of Imbued Netherweave [3 VENDORS - DONE]
 		-- i(21894),	-- Pattern: Bolt of Soulcloth [4 VENDORS - DONE]
+		-- i(30282),	-- Pattern: Boots of Blasting [EYE + SSC - DONE]
+		-- i(30283),	-- Pattern: Boots of the Long Road [EYE + SSC - DONE]
+		i(24297),	-- Pattern: Bracers of Havok [WORLD DROP]
+		-- i(32754),	-- Pattern: Bracers of Nimble Thought [BLACK TEMPLE - DONE]
+		-- i(30833),	-- Pattern: Cloak of Arcane Evasion [1 VENDOR - DONE]
+		i(24300),	-- Pattern: Cloak of Eternity [WORLD DROP]
+		i(24299),	-- Pattern: Cloak of the Black Void [WORLD DROP]
+		-- i(21915),	-- Pattern: Ebon Shadowbag [2 VENDORS - DONE]
+		-- i(30842),	-- Pattern: Flameheart Bracers [1 VENDOR - DONE]
+		-- i(30843),	-- Pattern: Flameheart Gloves [1 VENDOR - DONE]
+		-- i(30844),	-- Pattern: Flameheart Vest [1 VENDOR - DONE]
+		-- i(21914),	-- Pattern: Frozen Shadoweave Boots [2 VENDORS - DONE]
+		-- i(21913),	-- Pattern: Frozen Shadoweave Robe [2 VENDORS - DONE]
+		-- i(21912),	-- Pattern: Frozen Shadoweave Shoulders [2 DROPS - DONE]
+		i(24303),	-- Pattern: Girdle of Ruination [WORLD DROP]
+		-- i(24295),	-- Pattern: Golden Spellthread [1 VENDOR - DONE]
+		-- i(35205),	-- Pattern: Hands of Eternal Light [SUNWELL - DROP]
 		-- i(21893),	-- Pattern: Imbued Netherweave Bag [2 VENDORS - DONE]
+		-- i(21899),	-- Pattern: Imbued Netherweave Boots [2 VENDORS - DONE]
 		-- i(21898),	-- Pattern: Imbued Netherweave Pants [2 VENDORS - DONE]
+		-- i(21900),	-- Pattern: Imbued Netherweave Robe [1 VENDOR - DONE]
+		-- i(21901),	-- Pattern: Imbued Netherweave Tunic [1 VENDOR - DONE]
+		i(24307),	-- Pattern: Manaweave Cloak [WORLD DROP]
+		-- i(32755),	-- Pattern: Mantle of Nimble Thought [HYJAL - DONE]
+		-- i(38229),	-- Pattern: Mycah's Botanical Bag [1 VENDOR - DONE]
 		-- i(24292),	-- Pattern: Mystic Spellthread [1 VENDOR - DONE]
 		-- i(21896),	-- Pattern: Netherweave Robe [3 VENDORS - DONE]
 		-- i(21897),	-- Pattern: Netherweave Tunic [3 VENDORS - DONE]
+		-- i(32447),	-- Pattern: Night's End [1 VENDOR - DONE]
+		-- i(21895),	-- Pattern: Primal Mooncloth [2 VENDORS - DONE]
+		-- i(21919),	-- Pattern: Primal Mooncloth Bag [2 VENDORS - 1 DROP - DONE]
+		-- i(21916),	-- Pattern: Primal Mooncloth Belt [2 VENDORS - DONE]
+		-- i(21917),	-- Pattern: Primal Mooncloth Robe [2 VENDORS - DONE]
+		-- i(21918),	-- Pattern: Primal Mooncloth Shoulders [2 VENDORS - DONE]
+		i(24305),	-- Pattern: Resolute Cape [WORLD DROP]
+		-- i(35207),	-- Pattern: Robe of Eternal Light [SUNWELL - DROP]
+		-- i(24294),	-- Pattern: Runic Spellthread [1 VENDOR - DONE]
+		-- i(30483),	-- Pattern: Shadowcloth [2 VENDORS - DONE]
 		-- i(24293),	-- Pattern: Silver Spellthread [1 VENDOR - DONE]
+		-- i(21902),	-- Pattern: Soulcloth Gloves [2 VENDORS - DONE]
+		-- i(21903),	-- Pattern: Soulcloth Shoulders [1 DROP - DONE]
+		-- i(21904),	-- Pattern: Soulcloth Vest [1 DROP - DONE]
+		-- i(32438),	-- Pattern: Soulguard Bracers [1 VENDOR - DONE]
+		-- i(32440),	-- Pattern: Soulguard Girdle [1 VENDOR - DONE]
+		-- i(32439),	-- Pattern: Soulguard Leggings [1 VENDOR - DONE]
+		-- i(32437),	-- Pattern: Soulguard Slippers [1 VENDOR - DONE]
+		-- i(24316),	-- Pattern: Spellcloth [2 VENDORS - DONE]
+		-- i(21911),	-- Pattern: Spellfire Bag [2 VENDORS - 1 DROP - DONE]
+		-- i(21908),	-- Pattern: Spellfire Belt [2 VENDORS - DONE]
+		-- i(21909),	-- Pattern: Spellfire Gloves [2 VENDORS - DONE]
+		-- i(21910),	-- Pattern: Spellfire Robe [2 VENDORS - DONE]
+		-- i(24312),	-- Pattern: Spellstrike Hood [1 DROP - DONE]
+		-- i(24309),	-- Pattern: Spellstrike Pants [1 DROP - DONE]
+		-- i(35204),	-- Pattern: Sunfire Handwraps [SUNWELL - DROP]
+		-- i(35206),	-- Pattern: Sunfire Robe [SUNWELL - DROP]
+		-- i(32753),	-- Pattern: Swiftheal Mantle [BLACK TEMPLE - DONE]
+		-- i(32752),	-- Pattern: Swiftheal Wraps [HYJAL - DONE]
+		i(24296),	-- Pattern: Unyielding Bracers [WORLD DROP]
+		-- i(35308),	-- Pattern: Unyielding Bracers [KAELTHAS]
+		i(24302),	-- Pattern: Unyielding Girdle [WORLD DROP]
+		-- i(35309),	-- Pattern: Unyielding Girdle [KAELTHAS]
+		i(24306),	-- Pattern: Vengeance Wrap [WORLD DROP]
+		-- i(24311),	-- Pattern: Whitemend Hood [1 DROP - DONE]
+		-- i(24308),	-- Pattern: Whitemend Pants [1 DROP - DONE]
+		i(24301),	-- Pattern: White Remedy Cape [WORLD DROP]
+		
+		-- WRATH RECIPES
+		-- i(42183),	-- Pattern: Abyssal Bag [1 VENDOR - DONE]
+		-- i(47654),	-- Pattern: Bejeweled Wizard's Bracers [ALLIANCE ONLY - TOC]
+		-- i(47639),	-- Pattern: Bejeweled Wizard's Bracers [HORDE ONLY - TOC]
+		i(42173),	-- Pattern: Blue Lumberjack Shirt [WORLD DROP]
+		i(42176),	-- Pattern: Blue Workman's Shirt [WORLD DROP]
+		-- i(42187),	-- Pattern: Brilliant Spellthread [1 VENDOR - DONE]
+		-- i(45104),	-- Pattern: Cord of the White Dawn [ULDUAR - DONE]
+		-- i(49954),	-- Pattern: Deathfrost Boots [1 VENDOR - ICC - DONE]
+		-- i(45774),	-- Pattern: Emerald Bag [2 VENDORS - DONE]
+		-- i(54798),	-- Pattern: Frosty Flying Carpet [1 VENDOR - DONE]
+		-- i(42184),	-- Pattern: Glacial Bag [1 VENDOR - DONE]
+		i(42175),	-- Pattern: Green Lumberjack Shirt [WORLD DROP]
+		-- i(49953),	-- Pattern: Leggings of Woven Death [1 VENDOR - ICC - DONE]
+		-- i(49955),	-- Pattern: Lightweave Leggings [1 VENDOR - ICC - DONE]
+		-- i(47655),	-- Pattern: Merlin's Robe [ALLIANCE ONLY - TOC]
+		-- i(47638),	-- Pattern: Merlin's Robe [HORDE ONLY - TOC]
+		-- i(42185),	-- Pattern: Mysterious Bag [1 VENDOR - DONE]
+		i(42172),	-- Pattern: Red Lumberjack Shirt [WORLD DROP]
+		-- i(47656),	-- Pattern: Royal Moonshroud Bracers [ALLIANCE ONLY - TOC]
+		-- i(47637),	-- Pattern: Royal Moonshroud Bracers [HORDE ONLY - TOC]
+		-- i(47657),	-- Pattern: Royal Moonshroud Robe [ALLIANCE ONLY - TOC]
+		-- i(47636),	-- Pattern: Royal Moonshroud Robe [HORDE ONLY - TOC]
+		i(42178),	-- Pattern: Rustic Workman's Shirt [WORLD DROP]
+		-- i(49956),	-- Pattern: Sandals of Consecration [1 VENDOR - ICC - DONE]
+		-- i(42188),	-- Pattern: Sapphire Spellthread [1 VENDOR - DONE]
+		-- i(45102),	-- Pattern: Sash of Ancient Power [ULDUAR - DONE]
+		-- i(45105),	-- Pattern: Savior's Slippers [ULDUAR - DONE]
+		-- i(45103),	-- Pattern: Spellslinger's Slippers [ULDUAR - DONE]
+		
+		-- CATA Recipe
+		-- i(54601),	-- Pattern: Belt of the Depths [11 VENDORS - DONE]
+		-- i(68199),	-- Pattern: Black Embersilk Gown [11 VENDORS - DONE]
+		-- i(69976),	-- Pattern: Boots of the Black Flame [FIRELANDS - DROP - DONE]
+		-- i(72004),	-- Pattern: Bracers of Unconquered Power [DRAGON SOUL - DROP - DONE]
+		-- i(54603),	-- Pattern: Breeches of Mended Nightmares [11 VENDORS - DONE]
+		-- i(69966),	-- Pattern: Don Tayo's Inferno Mittens [FIRELANDS - DROP - DONE]
+		-- i(54602),	-- Pattern: Dreamless Belt [11 VENDORS - DONE]
+		-- i(72003),	-- Pattern: Dreamwraps of the Light [DRAGON SOUL - DROP - DONE]
+		-- i(69975),	-- Pattern: Endless Dream Walkers [FIRELANDS - DROP - DONE]
+		-- i(54604),	-- Pattern: Flame-Ascended Pantaloons [11 VENDORS - DONE]
+		-- i(69965),	-- Pattern: Grips of Altered Reality [FIRELANDS - DROP - DONE]
+		i(67541),	-- Pattern: High Society Top Hat [WORLD DROP][WORLD BOSSES - CATA - DONE]
+		-- i(54605),	-- Pattern: Illusionary Bag [11 VENDORS - DONE]
+		-- i(72002),	-- Pattern: Lavaquake Legwraps [DRAGON SOUL - DROP - DONE]
+		-- i(70176),	-- Pattern: Luxurious Silk Gem Bag [1 VENDOR - DONE]
+		-- i(54599),	-- Pattern: Powerful Enchanted Spellthread [11 VENDORS - DONE]
+		-- i(54600),	-- Pattern: Powerful Ghostly Spellthread [11 VENDORS - DONE]
+		-- i(54593),	-- Pattern: Vicious Embersilk Cowl [11 VENDORS - DONE]
+		-- i(54594),	-- Pattern: Vicious Embersilk Pants [11 VENDORS - DONE]
+		-- i(54595),	-- Pattern: Vicious Embersilk Robe [11 VENDORS - DONE]
+		-- i(54596),	-- Pattern: Vicious Fireweave Cowl [11 VENDORS - DONE]
+		-- i(54597),	-- Pattern: Vicious Fireweave Pants [11 VENDORS - DONE]
+		-- i(54598),	-- Pattern: Vicious Fireweave Robe [11 VENDORS - DONE]
+		-- i(72000),	-- Pattern: World Mender's Pants [DRAGON SOUL - DROP - DONE]
+		
+		-- MOP Recipes
+		-- i(86361),	-- Pattern: Contender's Satin Amice [2 VENDORS - DONE]
+		-- i(86367),	-- Pattern: Contender's Satin Belt [2 VENDORS - DONE]
+		-- i(86360),	-- Pattern: Contender's Satin Cowl [2 VENDORS - DONE]
+		-- i(86365),	-- Pattern: Contender's Satin Cuffs [2 VENDORS - DONE]
+		-- i(86366),	-- Pattern: Contender's Satin Footwraps [2 VENDORS - DONE]
+		-- i(86363),	-- Pattern: Contender's Satin Handwraps [2 VENDORS - DONE]
+		-- i(86364),	-- Pattern: Contender's Satin Pants [2 VENDORS - DONE]
+		-- i(86362),	-- Pattern: Contender's Satin Raiment [2 VENDORS - DONE]
+		-- i(86353),	-- Pattern: Contender's Silk Amice [2 VENDORS - DONE]
+		-- i(86359),	-- Pattern: Contender's Silk Belt [2 VENDORS - DONE]
+		-- i(86352),	-- Pattern: Contender's Silk Cowl [2 VENDORS - DONE]
+		-- i(86357),	-- Pattern: Contender's Silk Cuffs [2 VENDORS - DONE]
+		-- i(86358),	-- Pattern: Contender's Silk Footwraps [2 VENDORS - DONE]
+		-- i(86355),	-- Pattern: Contender's Silk Handwraps [2 VENDORS - DONE]
+		-- i(86356),	-- Pattern: Contender's Silk Pants [2 VENDORS - DONE]
+		-- i(86354),	-- Pattern: Contender's Silk Raiment [2 VENDORS - DONE]
+		-- i(86371),	-- Pattern: Gloves of Creation [1 VENDOR - DONE]
+		-- i(86376),	-- Pattern: Greater Cerulean Spellthread [1 VENDOR - DONE]
+		-- i(86375),	-- Pattern: Greater Pearlescent Spellthread [1 VENDOR - DONE]
+		-- i(86380),	-- Pattern: Imperial Silk Gloves [WORLD DROP - DONE]
+		-- i(86381),	-- Pattern: Legacy of the Emperor [WORLD DROP - DONE]
+		-- i(86370),	-- Pattern: Robes of Creation [1 VENDOR - DONE]
+		-- i(86379),	-- Pattern: Robe of Eternal Rule [WORLD DROP - DONE]
+		-- i(86377),	-- Pattern: Royal Satchel [2 VENDORS - DONE]
 	}),
 	n(-160, {	-- Mounts
 		i(115363),	-- Creeping Carpet
@@ -1033,13 +1183,45 @@ profession(197, { -- Tailoring
 			recipe(2402),	-- Woolen Cape
 		}),
 		tier(2, {	-- Burning Crusade
+			recipe(26783),	-- Arcanoweave Boots
+			recipe(26782),	-- Arcanoweave Bracers
+			recipe(26784),	-- Arcanoweave Robe
 			recipe(31459),	-- Bag of Jewels
+			recipe(31456),	-- Battlecast Hood
+			recipe(31453),	-- Battlecast Pants
+			recipe(36315),	-- Belt of Blasting
+			recipe(36316),	-- Belt of the Long Road
+			recipe(31437),	-- Blackstrike Bracers
+			recipe(31444),	-- Black Belt of Knowledge
 			recipe(26747),	-- Bolt of Imbued Netherweave
 			recipe(26745),	-- Bolt of Netherweave
 			recipe(26750),	-- Bolt of Soulcloth
+			recipe(36317),	-- Boots of Blasting
+			recipe(36318),	-- Boots of the Long Road
+			recipe(31435),	-- Bracers of Havok
+			recipe(41205),	-- Bracers of Nimble Thought
+			recipe(37873),	-- Cloak of Arcane Evasion
+			recipe(31440),	-- Cloak of Eternity
+			recipe(31438),	-- Cloak of the Black Void
+			recipe(26759),	-- Ebon Shadowbag
+			recipe(37882),	-- Flameheart Bracers
+			recipe(37883),	-- Flameheart Gloves
+			recipe(37884),	-- Flameheart Vest
 			recipe(60969),	-- Flying Carpet
+			recipe(26757),	-- Frozen Shadoweave Boots
+			recipe(26758),	-- Frozen Shadoweave Robe
+			recipe(26756),	-- Frozen Shadoweave Shoulders
+			recipe(31443),	-- Girdle of Ruination
+			recipe(31433),	-- Golden Spellthread
+			recipe(46129),	-- Hands of Eternal Light
 			recipe(26749),	-- Imbued Netherweave Bag
+			recipe(26776),	-- Imbued Netherweave Boots
 			recipe(26775),	-- Imbued Netherweave Pants
+			recipe(26777),	-- Imbued Netherweave Robe
+			recipe(26778),	-- Imbued Netherweave Tunic
+			recipe(31450),	-- Manaweave Cloak
+			recipe(41206),	-- Mantle of Nimble Thought
+			recipe(50194),	-- Mycah's Botanical Bag
 			recipe(31430),	-- Mystic Spellthread
 			recipe(26746),	-- Netherweave Bag
 			recipe(26765),	-- Netherweave Belt
@@ -1050,20 +1232,246 @@ profession(197, { -- Tailoring
 			recipe(26771),	-- Netherweave Pants
 			recipe(26773),	-- Netherweave Robe
 			recipe(26774),	-- Netherweave Tunic
+			recipe(40060),	-- Night's End
+			recipe(26751),	-- Primal Mooncloth
+			recipe(26763),	-- Primal Mooncloth Bag
+			recipe(26760),	-- Primal Mooncloth Belt
+			recipe(26762),	-- Primal Mooncloth Robe
+			recipe(26761),	-- Primal Mooncloth Shoulders
+			recipe(31448),	-- Resolute Cape
+			recipe(46131),	-- Robe of Eternal Light
+			recipe(31432),	-- Runic Spellthread
+			recipe(36686),	-- Shadowcloth
 			recipe(31431),	-- Silver Spellthread
+			recipe(26779),	-- Soulcloth Gloves
+			recipe(26780),	-- Soulcloth Shoulders
+			recipe(26781),	-- Soulcloth Vest
+			recipe(40021),	-- Soulguard Bracers
+			recipe(40024),	-- Soulguard Girdle
+			recipe(40023),	-- Soulguard Leggings
+			recipe(40020),	-- Soulguard Slippers
+			recipe(31373),	-- Spellcloth
+			recipe(26755),	-- Spellfire Bag
+			recipe(26752),	-- Spellfire Belt
+			recipe(26753),	-- Spellfire Gloves
+			recipe(26754),	-- Spellfire Robe
+			recipe(31455),	-- Spellstrike Hood
+			recipe(31452),	-- Spellstrike Pants
+			recipe(46128),	-- Sunfire Handwraps
+			recipe(46130),	-- Sunfire Robe
+			recipe(41208),	-- Swiftheal Mantle
+			recipe(41207),	-- Swiftheal Wraps
+			recipe(31434),	-- Unyielding Bracers
+			recipe(31442),	-- Unyielding Girdle
+			recipe(31449),	-- Vengeance Wrap
+			recipe(31454),	-- Whitemend Hood
+			recipe(31451),	-- Whitemend Pants
+			recipe(31441),	-- White Remedy Cape
 			
 			-- TODO: https://www.wowhead.com/tailoring#recipes:350+17+1
-			-- STOPPED AT PRIMAL MOONCLOTH!
-			-- https://www.wowhead.com/spell=26751/primal-mooncloth
 		}),
 		tier(3, {	-- Wrath
-			
+			recipe(56004),	-- Abyssal Bag
+			recipe(56023),	-- Aurora Slippers
+			recipe(56010),	-- Azure Spellthread
+			a(recipe(67079)),	-- Bejeweled Wizard's Bracers [ALLIANCE ONLY]
+			h(recipe(67145)),	-- Bejeweled Wizard's Bracers [HORDE ONLY]
+			recipe(55925),	-- Black Duskweave Leggings
+			recipe(55941),	-- Black Duskweave Robe
+			recipe(55943),	-- Black Duskweave Wristwraps
+			recipe(55994),	-- Blue Lumberjack Shirt
+			recipe(55998),	-- Blue Workman's Shirt
+			recipe(55899),	-- Bolt of Frostweave
+			recipe(55900),	-- Bolt of Imbued Frostweave
+			recipe(56009),	-- Brilliant Spellthread
+			recipe(64730),	-- Cloak of Crimson Snow
+			recipe(56015),	-- Cloak of Frozen Spirits
+			recipe(56014),	-- Cloak of the Moon
+			recipe(63205),	-- Cord of the White Dawn
+			recipe(56017),	-- Deathchill Cloak
+			recipe(70551),	-- Deathfrost Boots
+			recipe(56020),	-- Deep Frozen Cord
+			recipe(55914),	-- Duskweave Belt
+			recipe(55924),	-- Duskweave Boots
+			recipe(55919),	-- Duskweave Cowl
+			recipe(55922),	-- Duskweave Gloves
+			recipe(55901),	-- Duskweave Leggings
+			recipe(55921),	-- Duskweave Robe
+			recipe(55923),	-- Duskweave Shoulders
+			recipe(55920),	-- Duskweave Wristwraps
+			recipe(56002),	-- Ebonweave
+			recipe(56027),	-- Ebonweave Gloves
+			recipe(56026),	-- Ebonweave Robe
+			recipe(63924),	-- Emerald Bag
+			recipe(64729),	-- Frostguard Drape
+			recipe(56021),	-- Frostmoon Pants
+			recipe(59582),	-- Frostsavage Belt
+			recipe(59585),	-- Frostsavage Boots
+			recipe(59583),	-- Frostsavage Bracers
+			recipe(59589),	-- Frostsavage Cowl
+			recipe(59586),	-- Frostsavage Gloves
+			recipe(59588),	-- Frostsavage Leggings
+			recipe(59587),	-- Frostsavage Robe
+			recipe(59584),	-- Frostsavage Shoulders
+			recipe(56007),	-- Frostweave Bag
+			recipe(55898),	-- Frostweave Net
+			recipe(55908),	-- Frostwoven Belt
+			recipe(55906),	-- Frostwoven Boots
+			recipe(55907),	-- Frostwoven Cowl
+			recipe(55904),	-- Frostwoven Gloves
+			recipe(56030),	-- Frostwoven Leggings
+			recipe(55903),	-- Frostwoven Robe
+			recipe(55902),	-- Frostwoven Shoulders
+			recipe(56031),	-- Frostwoven Wristwraps
+			recipe(75597),	-- Frosty Flying Carpet
+			recipe(56005),	-- Glacial Bag
+			recipe(60993),	-- Glacial Robe
+			recipe(60994),	-- Glacial Slippers
+			recipe(60990),	-- Glacial Waistband
+			recipe(55996),	-- Green Lumberjack Shirt
+			recipe(56000),	-- Green Workman's Shirt
+			recipe(56018),	-- Hat of Wintry Doom
+			recipe(70550),	-- Leggings of Woven Death
+			recipe(70552),	-- Lightweave Leggings
+			recipe(56022),	-- Light Blessed Mittens
+			recipe(60971),	-- Magnificent Flying Carpet
+			a(recipe(67066)),	-- Merlin's Robe [ALLIANCE ONLY]
+			h(recipe(67146)),	-- Merlin's Robe [HORDE ONLY]
+			recipe(56001),	-- Moonshroud
+			recipe(56025),	-- Moonshroud Gloves
+			recipe(56024),	-- Moonshroud Robe
+			recipe(56006),	-- Mysterious Bag
+			recipe(55910),	-- Mystic Frostwoven Shoulders
+			recipe(55911),	-- Mystic Frostwoven Robe
+			recipe(55913),	-- Mystic Frostwoven Wristwraps
+			recipe(55993),	-- Red Lumberjack Shirt
+			recipe(55997),	-- Red Workman's Shirt
+			a(recipe(67065)),	-- Royal Moonshroud Bracers [ALLIANCE ONLY]
+			h(recipe(67147)),	-- Royal Moonshroud Bracers [HORDE ONLY]
+			a(recipe(67064)),	-- Royal Moonshroud Robe [ALLIANCE ONLY]
+			h(recipe(67144)),	-- Royal Moonshroud Robe [HORDE ONLY]
+			recipe(55999),	-- Rustic Workman's Shirt
+			recipe(70553),	-- Sandals of Consecration
+			recipe(56011),	-- Sapphire Spellthread
+			recipe(63203),	-- Sash of Ancient Power
+			recipe(63206),	-- Savior's Slippers
+			recipe(56008),	-- Shining Spellthread
+			recipe(56019),	-- Silky Iceshard Boots
+			recipe(63204),	-- Spellslinger's Slippers
+			recipe(56003),	-- Spellweave
+			recipe(56029),	-- Spellweave Gloves
+			recipe(56028),	-- Spellweave Robe
+			recipe(56016),	-- Wispcloak
+			recipe(55995),	-- Yellow Lumberjack Shirt
 		}),
 		tier(4, {	-- Cata
-			
+			recipe(75298),	-- Belt of the Depths
+			recipe(134585),	-- Bipsi's Gloves
+			recipe(75288),	-- Black Embersilk Gown
+			recipe(74964),	-- Bolt of Embersilk Cloth
+			recipe(99460),	-- Boots of the Black Flame
+			recipe(101923),	-- Bracers of Unconquered Power
+			recipe(75300),	-- Breeches of Mended Nightmares
+			recipe(75248),	-- Deathsilk Belt
+			recipe(75252),	-- Deathsilk Boots
+			recipe(75249),	-- Deathsilk Bracers
+			recipe(75256),	-- Deathsilk Cowl
+			recipe(75253),	-- Deathsilk Gloves
+			recipe(75254),	-- Deathsilk Leggings
+			recipe(75257),	-- Deathsilk Robe
+			recipe(75251),	-- Deathsilk Shoulders
+			recipe(99449),	-- Don Tayo's Inferno Mittens
+			recipe(75299),	-- Dreamless Belt
+			recipe(101922),	-- Dreamwraps of the Light
+			recipe(75146),	-- Dream of Azshara
+			recipe(75142),	-- Dream of Deepholm
+			recipe(94743),	-- Dream of Destruction
+			recipe(75144),	-- Dream of Hyjal
+			recipe(75145),	-- Dream of Ragnaros
+			recipe(75141),	-- Dream of Skywall
+			recipe(75264),	-- Embersilk Bag
+			recipe(75247),	-- Embersilk Net
+			recipe(75250),	-- Enchanted Spellthread
+			recipe(99459),	-- Endless Dream Walkers
+			recipe(75301),	-- Flame-Ascended Pantaloons
+			recipe(75255),	-- Ghostly Spellthread
+			recipe(99448),	-- Grips of Altered Reality
+			recipe(75289),	-- High Society Top Hat
+			recipe(75268),	-- Hyjal Expedition Bag
+			recipe(75308),	-- Illusionary Bag
+			recipe(101921),	-- Lavaquake Legwraps
+			recipe(100585),	-- Luxurious Silk Gem Bag
+			recipe(75265),	-- Otherworldly Bag
+			recipe(75309),	-- Powerful Enchanted Spellthread
+			recipe(75310),	-- Powerful Ghostly Spellthread
+			recipe(75258),	-- Spiritmend Belt
+			recipe(75261),	-- Spiritmend Boots
+			recipe(75259),	-- Spiritmend Bracers
+			recipe(75266),	-- Spiritmend Cowl
+			recipe(75262),	-- Spiritmend Gloves
+			recipe(75263),	-- Spiritmend Leggings
+			recipe(75267),	-- Spiritmend Robe
+			recipe(75260),	-- Spiritmend Shoulders
+			recipe(75293),	-- Vicious Embersilk Belt
+			recipe(75297),	-- Vicious Embersilk Boots
+			recipe(75270),	-- Vicious Embersilk Bracers
+			recipe(99537),	-- Vicious Embersilk Cape
+			recipe(75306),	-- Vicious Embersilk Cowl
+			recipe(75295),	-- Vicious Embersilk Gloves
+			recipe(75307),	-- Vicious Embersilk Pants
+			recipe(75305),	-- Vicious Embersilk Robe
+			recipe(75291),	-- Vicious Embersilk Shoulders
+			recipe(75269),	-- Vicious Fireweave Belt
+			recipe(75294),	-- Vicious Fireweave Boots
+			recipe(75290),	-- Vicious Fireweave Bracers
+			recipe(75304),	-- Vicious Fireweave Cowl
+			recipe(75296),	-- Vicious Fireweave Gloves
+			recipe(75302),	-- Vicious Fireweave Pants
+			recipe(75303),	-- Vicious Fireweave Robe
+			recipe(75292),	-- Vicious Fireweave Shoulders
+			recipe(101920),	-- World Mender's Pants
 		}),
 		tier(5, {	-- Mists
-			
+			recipe(146925),	-- Accelerated Celestial Cloth
+			recipe(125551),	-- Bolt of Windwool Cloth
+			recipe(125553),	-- Cerulean Spellthread
+			recipe(125540),	-- Contender's Satin Amice
+			recipe(125546),	-- Contender's Satin Belt
+			recipe(125539),	-- Contender's Satin Cowl
+			recipe(125544),	-- Contender's Satin Cuffs
+			recipe(125545),	-- Contender's Satin Footwraps
+			recipe(125542),	-- Contender's Satin Handwraps
+			recipe(125543),	-- Contender's Satin Pants
+			recipe(125541),	-- Contender's Satin Raiment
+			recipe(125532),	-- Contender's Silk Amice
+			recipe(125538),	-- Contender's Silk Belt
+			recipe(125531),	-- Contender's Silk Cowl
+			recipe(125536),	-- Contender's Silk Cuffs
+			recipe(125537),	-- Contender's Silk Footwraps
+			recipe(125534),	-- Contender's Silk Handwraps
+			recipe(125535),	-- Contender's Silk Pants
+			recipe(125533),	-- Contender's Silk Raiment
+			recipe(125550),	-- Gloves of Creation
+			recipe(125555),	-- Greater Cerulean Spellthread
+			recipe(125554),	-- Greater Pearlescent Spellthread
+			recipe(125557),	-- Imperial Silk
+			recipe(125559),	-- Imperial Silk Gloves
+			recipe(125560),	-- Legacy of the Emperor
+			recipe(125496),	-- Master's Spellthread
+			recipe(125552),	-- Pearlescent Spellthread
+			recipe(125549),	-- Robes of Creation
+			recipe(125558),	-- Robe of Eternal Rule
+			recipe(125556),	-- Royal Satchel
+			recipe(125497),	-- Sanctified Spellthread
+			recipe(130325),	-- Song of Harmony
+			recipe(125530),	-- Windwool Belt
+			recipe(125529),	-- Windwool Boots
+			recipe(125528),	-- Windwool Bracers
+			recipe(125526),	-- Windwool Gloves
+			recipe(125523),	-- Windwool Hood
+			recipe(125527),	-- Windwool Pants
+			recipe(125524),	-- Windwool Shoulders
+			recipe(125525),	-- Windwool Tunic
 		}),
 		tier(6, {	-- WoD
 			recipe(168847),	-- Brilliant Hexweave Cloak

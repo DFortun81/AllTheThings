@@ -768,35 +768,23 @@ _.Zones =
 						}),
 					})),
 					h(n(50433, {	-- Aristaleon Sunweaver <Cloth Trader>
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							i(75073),	-- Vicious Embersilk Cowl
+						i(54440, {	-- Dreamcloth
+							i(54601),	-- Pattern: Belt of the Depths
+							i(54602),	-- Pattern: Dreamless Belt
+							i(54603),	-- Pattern: Breeches of Mended Nightmares
+							i(54604),	-- Pattern: Flame-Ascended Pantaloons
+							i(54605),	-- Pattern: Illusionary Bag
 						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							i(75072),	-- Vicious Embersilk Pants
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							i(75093),	-- Vicious Embersilk Robe
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							i(75062),	-- Vicious Fireweave Cowl
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							i(75082),	-- Vicious Fireweave Pants
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							i(75088),	-- Vicious Fireweave Robe
-						}),
-						i(54601, {	-- Pattern: Belt of the Depths
-							i(54504),	-- Belt of the Depths
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							i(54503),	-- Dreamless Belt
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							i(54505),	-- Breeches of Mended Nightmares
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							i(54506),	-- Flame-Ascended Pantaloons
+						i(53643, {	-- Bolt of Embersilk Cloth
+							i(68199),	-- Pattern: Black Embersilk Gown
+							i(54600),	-- Pattern: Powerful Ghostly Spellthread
+							i(54599),	-- Pattern: Powerful Enchanted Spellthread
+							i(54593),	-- Pattern: Vicious Embersilk Cowl
+							i(54594),	-- Pattern: Vicious Embersilk Pants
+							i(54595),	-- Pattern: Vicious Embersilk Robe
+							i(54596),	-- Pattern: Vicious Fireweave Cowl
+							i(54597),	-- Pattern: Vicious Fireweave Pants
+							i(54598),	-- Pattern: Vicious Fireweave Robe
 						}),
 					})),
 					a(n(49605, {	-- Brian Terrel <Bowyer>
@@ -1147,35 +1135,23 @@ _.Zones =
 						}),
 					})),
 					a(n(50386, {	-- Sal Ferraga <Cloth Trader>
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							i(75073),	-- Vicious Embersilk Cowl
+						i(54440, {	-- Dreamcloth
+							i(54601),	-- Pattern: Belt of the Depths
+							i(54602),	-- Pattern: Dreamless Belt
+							i(54603),	-- Pattern: Breeches of Mended Nightmares
+							i(54604),	-- Pattern: Flame-Ascended Pantaloons
+							i(54605),	-- Pattern: Illusionary Bag
 						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							i(75072),	-- Vicious Embersilk Pants
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							i(75093),	-- Vicious Embersilk Robe
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							i(75062),	-- Vicious Fireweave Cowl
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							i(75082),	-- Vicious Fireweave Pants
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							i(75088),	-- Vicious Fireweave Robe
-						}),
-						i(54601, {	-- Pattern: Belt of the Depths
-							i(54504),	-- Belt of the Depths
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							i(54503),	-- Dreamless Belt
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							i(54505),	-- Breeches of Mended Nightmares
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							i(54506),	-- Flame-Ascended Pantaloons
+						i(53643, {	-- Bolt of Embersilk Cloth
+							i(68199),	-- Pattern: Black Embersilk Gown
+							i(54600),	-- Pattern: Powerful Ghostly Spellthread
+							i(54599),	-- Pattern: Powerful Enchanted Spellthread
+							i(54593),	-- Pattern: Vicious Embersilk Cowl
+							i(54594),	-- Pattern: Vicious Embersilk Pants
+							i(54595),	-- Pattern: Vicious Embersilk Robe
+							i(54596),	-- Pattern: Vicious Fireweave Cowl
+							i(54597),	-- Pattern: Vicious Fireweave Pants
+							i(54598),	-- Pattern: Vicious Fireweave Robe
 						}),
 					})),
 					a(n(50134, {	-- Senthii <Shard Trader>

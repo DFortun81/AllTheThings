@@ -3008,6 +3008,9 @@ _.Zones =
 				}),
 				n(  0, {	-- Zone Drop
 					["groups"] = {
+						n(18872, {	-- Disembodied Vindicator
+							dr(0.05, i(21919)),	-- Pattern: Primal Mooncloth Bag
+						}),
 						i(29460, {	-- Ethereum Prison Key (required to summon/"release" mobs)
 							n(20520, {	-- Ethereum Prisoner (multiple named mobs with the same ID once spawned)
 								dr(01.5, i(31581)),	-- Slatesteel Boots
@@ -3028,6 +3031,9 @@ _.Zones =
 								dr(00.9, i(31925)),	-- Fiery Band
 								dr(00.9, i(31927)),	-- Living Band
 							}),
+						}),
+						n(20134, {	-- Sunfury Arcanist
+							dr(0.06, i(21911)),	-- Pattern: Spellfire Bag
 						}),
 						n(20136, {	-- Sunfury Researcher
 							dr(2, i(22551)),	-- Formula: Enchant Weapon - Major Intellect

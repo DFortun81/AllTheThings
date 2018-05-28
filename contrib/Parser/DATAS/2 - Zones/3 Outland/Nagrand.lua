@@ -499,9 +499,8 @@ _.Zones =
 						}),
 					})),
 					a(n(19017, {	-- Borto <Trade Supplies>
-						i(21902, {	-- Pattern: Soulcloth Gloves
-							i(21863),	-- Soulcloth Gloves
-						}),
+						i(21894),	-- Pattern: Bolt of Soulcloth
+						i(21902), 	-- Pattern: Soulcloth Gloves
 					})),
 					h(n(21474, {	-- Coreiel <Blade Merchant>
 						i(30570),	-- Arkadian Claymore

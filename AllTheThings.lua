@@ -3169,7 +3169,16 @@ app.BaseHeirloom = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			return C_Heirloom.PlayerHasHeirloom(t.itemID) or (t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s));
+			if C_Heirloom.PlayerHasHeirloom(t.itemID) or (t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s)) then return 1; end
+			if t.factionID then
+				-- This is used for the Grand Commendations unlocking Bonus Reputation
+				if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
+				if select(15, GetFactionInfoByID(t.factionID)) then
+					SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+					SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+					return 1;
+				end
+			end
 		elseif key == "f" then
 			return 109;
 		elseif key == "modID" then

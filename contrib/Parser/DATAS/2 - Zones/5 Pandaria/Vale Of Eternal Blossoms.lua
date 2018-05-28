@@ -573,72 +573,65 @@ _.Zones =
 						["description"] = "Can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon.  You can only buy the set for your class.",
 					}),
 					n(59908, {	-- Jaluu the Generous <The Golden Lotus Quartermaster>
-						i(89339),	-- Tenderheart Shoulders
-						i(89340),	-- Mantle of the Golden Sun
-						i(89341),	-- Imperion Spaulders
-						i(89342),	-- Whitepetal Shouldergarb
-						i(89343),	-- Mindbender Shoulders
-						i(89344),	-- Windwalker Spaulders
-						i(89345),	-- Stonetoe Spaulders
-						i(89346),	-- Shoulders of Autumnlight
-						i(89347),	-- Paleblade Shoulderguards
-						i(89420),	-- Dawnblade's Chestguard
-						i(89421),	-- Cuirass od the Twin Monoliths
-						i(89423),	-- Battleguard of Guo-Lai
-						i(89429),	-- Robes of the Setting Sun
-						i(89430),	-- Breastplate of the Golden Pagoda
-						i(89431),	-- Softfoot Silentwraps
-						i(89432),	-- Mistfall Robes
-						i(89433),	-- Vestments of Thundering Skies
-						i(89434),	-- Robe of the Five Sisters
-						i(89642),	-- Bracers of Eternal Resolve
-						i(89643),	-- Tranquility Bindings
-						i(89648),	-- Bracers of Inner Light
-						i(89649),	-- Serrated Forearm Guards
-						i(89652),	-- Wandering Friar's Gloves
-						i(89653),	-- Surehand Grips
-						i(89662),	-- Snowpack Waders
-						i(89663),	-- Leggings of Twisted Vines
+						i(89797),	-- Golden Lotus Tabard
 						i(87781),	-- Reins of the Azure Riding Crane Mount
 						i(87782),	-- Reins of the Golden Riding Crane Mount
 						i(87783),	-- Reins of the Regal Riding Crane Mount
-						i(89797),	-- Golden Lotus Tabard
-						i(86237, {	-- Pattern: Chestguard of Earthen Harmony
-							i(85787),
-						}),
-						i(86273, {	-- Pattern: Gloves of Earthen Harmony
-							i(85822),
-						}),
-						i(86274, {	-- Pattern: Greyshadow Chestguard
-							i(85823),
-						}),
-						i(86275, {	-- Pattern: Greyshadow Gloves
-							i(85824),
-						}),
-						i(86277, {	-- Pattern: Lifekeeper's Gloves
-							i(85825),
-						}),
-						i(86278, {	-- Pattern: Lifekeeper's Robe
-							i(85826),
-						}),
-						i(86308, {	-- Pattern: Wildblood Gloves
-							i(85849),
-						}),
-						i(86309, {	-- Pattern: Wildblood Vest
-							i(85850),
-						}),
-						i(86368, {	-- Pattern: Spelltwister's Grand Robe
-							i(82437),
-						}),
-						i(86369, {	-- Pattern: Spelltwister's Gloves
-							i(82438),
-						}),
-						i(86370, {	-- Pattern: Robes of Creation
-							i(82439),
-						}),
-						i(86371, {	-- Pattern: Gloves of Creation
-							i(82440),
-						}),
+						i(93215),	-- Grand Commendation of the Golden Lotus
+						i(86235),	-- Pattern: Angerhide Leg Armor
+						i(86237),	-- Pattern: Chestguard of Earthen Harmony
+						i(86371),	-- Pattern: Gloves of Creation
+						i(86273),	-- Pattern: Gloves of Earthen Harmony
+						i(86376),	-- Pattern: Greater Cerulean Spellthread
+						i(86375),	-- Pattern: Greater Pearlescent Spellthread
+						i(86274),	-- Pattern: Greyshadow Chestguard
+						i(86275),	-- Pattern: Greyshadow Gloves
+						i(86276),	-- Pattern: Ironscale Leg Armor
+						i(86277),	-- Pattern: Lifekeeper's Gloves
+						i(86278),	-- Pattern: Lifekeeper's Robe
+						i(86370),	-- Pattern: Robes of Creation
+						i(86295),	-- Pattern: Shadowleather Leg Armor
+						i(86369),	-- Pattern: Spelltwister's Gloves
+						i(86368),	-- Pattern: Spelltwister's Grand Robe
+						i(86308),	-- Pattern: Wildblood Gloves
+						i(86309),	-- Pattern: Wildblood Vest
+						i(89527),	-- Amulet of Swirling Mists [Necklace]
+						i(89531),	-- Gorget of Usurped Kings [Necklace]
+						i(89528),	-- Necklace of Jade Pearls [Necklace]
+						i(89529),	-- Pendant of Endless Inquisition [Necklace]
+						i(89530),	-- Triumphant Conqueror's Chain [Necklace]
+						i(89071),	-- Alani's Inflexible Ring [Ring]
+						i(89070),	-- Anji's Keepsake [Ring]
+						i(89073),	-- Leven's Circle of Hope [Ring]
+						i(89069),	-- Ring of the Golden Stair [Ring]
+						i(89072),	-- Simple Harmonious Ring [Ring]
+						i(89341),	-- Imperion Spaulders [Shoulders]
+						i(89340),	-- Mantle of the Golden Sun [Shoulders]
+						i(89343),	-- Mindbender Shoulders [Shoulders]
+						i(89347),	-- Paleblade Shoulderguards [Shoulders]
+						i(89346),	-- Shoulders of Autumnlight [Shoulders]
+						i(89345),	-- Stonetoe Spaulders [Shoulders]
+						i(89339),	-- Tenderheart Shoulders [Shoulders]
+						i(89342),	-- Whitepetal Shouldergarb [Shoulders]
+						i(89344),	-- Windwalker Spaulders [Shoulders]
+						i(89642),	-- Bracers of Eternal Resolve [Bracers]
+						i(89648),	-- Bracers of Inner Light [Bracers]
+						i(89649),	-- Serrated Forearm Guards [Bracers]
+						i(89643),	-- Tranquility Bindings [Bracers]
+						i(89653),	-- Surehand Grips [Hands]
+						i(89652),	-- Wandering Friar's Gloves [Hands]
+						i(89423),	-- Battleguard of Guo-Lai [Chest]
+						i(89430),	-- Breastplate of the Golden Pagoda [Chest]
+						i(89421),	-- Cuirass of the Twin Monoliths [Chest]
+						i(89420),	-- Dawnblade's Chestguard [Chest]
+						i(89432),	-- Mistfall Robes [Chest]
+						i(89434),	-- Robe of the Five Sisters [Chest]
+						i(89429),	-- Robes of the Setting Sun [Chest]
+						i(89431),	-- Softfoot Silentwrap [Chest]
+						i(89433),	-- Vestments of Thundering Skies [Chest]
+						i(89663),	-- Leggings of Twisted Vines [Legs]
+						i(89662),	-- Snowpack Waders [Legs]
+						i(89232),	-- Mogu Rune of Paralysis [Trinket]
 					}),
 					n(66973, {	-- Kai Featherfall <Phoenix Egg Trader>
 						i(89154),	-- Reins of the Crimson Pandaren Phoenix
@@ -742,103 +735,110 @@ _.Zones =
 						i(83275),	-- Wasteland Axe
 					}),
 					nh(64001, {	-- Sage Lotusbloom <The August Celestials Quartermaster>
+						i(89799),	-- August Celestials Tabard
 						i(89304),	-- Reins of the Thundering August Cloud Serpent Mount
+						i(86377),	-- Pattern: Royal Satchel
 						i(84561),	-- Formula: Enchant Bracer - Exceptional Strength
 						i(84557),	-- Formula: Enchant Bracer - Greater Agility
 						i(84559),	-- Formula: Enchant Bracer - Super Intellect
-						i(88741),	-- Gloves of Red Feathers
-						i(88742),	-- Sunspeaker's Flared Gloves
-						i(88743),	-- Ogo's Elder Gloves
-						i(88744),	-- Fingers of the Loneliest Monk
-						i(88745),	-- Sentinel Commander's Gauntlets
-						i(88746),	-- Gloves of the Overwhelming Swarm
-						i(88747),	-- Streetfighter's Iron Knuckles
-						i(88748),	-- Ravenmane's Gloves
-						i(88749),	-- Gauntlets of Jade Sutras
-						i(88862),	-- Tankiss Warstompers
-						i(88864),	-- Yu'lon Guardian Boots
-						i(88865),	-- Bramblestaff Boots
-						i(88866),	-- Steps of the War Serpent
-						i(88867),	-- Sandals of the Elder Sage
-						i(88868),	-- Tukka-Tuk's Hairy Boots
-						i(88876),	-- Boots of the High Adept
-						i(88877),	-- Storm-Sing Sandals
-						i(88878),	-- Void Flame Slippers
-						i(88879),	-- Braided Black and White Bracers
-						i(88880),	-- Battle Shadow Bracers
-						i(88881),	-- Fallen Sentinel Bracers
-						i(88882),	-- Tiger-Striped Wristguards
-						i(88883),	-- Brewmaster Chani's Bracers
-						i(88884),	-- Quillpaw Family Bracers
-						i(88885),	-- Clever Ashyo's Armbands
-						i(88892),	-- Bracers of Inlaid Jade
-						i(88893),	-- Minh's Beaten Bracers
-						i(89532),	-- Bladesong Cloak
-						i(89533),	-- Cloak of Ancient Curses
-						i(89534),	-- Pressed Flower Cloak
-						i(89535),	-- Ribcracker's Cloak
-						i(89537),	-- Cloak of the Silent Mountain
-						i(89658),	-- Subversive Leggings
-						i(89659),	-- Leggings of Unfinished Conquest
-						i(89664),	-- Valiant's Shinguards
-						i(89665),	-- Leggings of Ponderous Advance
-						i(89666),	-- Vestment of the Ascendant Tribe
-						i(89667),	-- Refurbished Zandalari Vestment
-						i(89668),	-- Mountain Stream Ringmail
-						i(89669),	-- Undergrowth Stalker Chestpiece
-						i(89799),	-- August Celestials Tabard
+						i(93224),	-- Grand Commendation of the August Celestials
+						i(89124),	-- Celestial Offering
+						i(89532),	-- Bladesong Cloak [Back]
+						i(89533),	-- Cloak of Ancient Curses [Back]
+						i(89537),	-- Cloak of the Silent Mountain [Back]
+						i(89534),	-- Pressed Flower Cloak [Back]
+						i(89535),	-- Ribcracker's Cloak [Back]
+						i(88880),	-- Battle Shadow Bracers [Wrists]
+						i(88892),	-- Bracers of Inlaid Jade [Wrists]
+						i(88879),	-- Braided Black and White Bracer [Wrists]
+						i(88883),	-- Brewmaster Chani's Bracers [Wrists]
+						i(88885),	-- Clever Ashyo's Armbands [Wrists]
+						i(88881),	-- Fallen Sentinel Bracers [Wrists]
+						i(88893),	-- Minh's Beaten Bracers [Wrists]
+						i(88884),	-- Quillpaw Family Bracers [Wrists]
+						i(88882),	-- Tiger-Striped Wristguards [Wrists]
+						i(88749),	-- Gauntlets of Jade Sutras [Hands]
+						i(88741),	-- Gloves of Red Feathers [Hands]
+						i(88746),	-- Gloves of the Overwhelming Swarm [Hands]
+						i(88743),	-- Ogo's Elder Gloves [Hands]
+						i(88748),	-- Ravenmane's Gloves [Hands]
+						i(88745),	-- Sentinel Commander's Gauntlets [Hands]
+						i(88747),	-- Streetfighter's Iron Knuckles [Hands]
+						i(88742),	-- Sunspeaker's Flared Gloves [Hands]
+						i(88744),	-- Fingers of the Loneliest Monk [Ring]
+						i(89668),	-- Mountain Stream Ringmail [Chest]
+						i(89667),	-- Refurbished Zandalari Vestment [Chest]
+						i(89669),	-- Undergrowth Stalker Chestpiece [Chest]
+						i(89666),	-- Vestment of the Ascendant Tribe [Chest]
+						i(89665),	-- Leggings of Ponderous Advance [Legs]
+						i(89659),	-- Leggings of Unfinished Conquest [Legs]
+						i(89658),	-- Subversive Leggings [Legs]
+						i(89664),	-- Valiant's Shinguards [Legs]
+						i(88876),	-- Boots of the High Adept [Feet]
+						i(88865),	-- Bramblestaff Boots [Feet]
+						i(88867),	-- Sandals of the Elder Sage [Feet]
+						i(88866),	-- Steps of the War Serpent [Feet]
+						i(88877),	-- Storm-Sing Sandals [Feet]
+						i(88862),	-- Tankiss Warstompers [Feet]
+						i(88868),	-- Tukka-Tuk's Hairy Boots [Feet]
+						i(88878),	-- Void Flame Slippers [Feet]
+						i(88864),	-- Yu'lon Guardian Boots [Feet]
 					}),
 					na(64032, {	-- Sage Whiteheart <The August Celestials Quartermaster>
+						i(89799),	-- August Celestials Tabard
 						i(89304),	-- Reins of the Thundering August Cloud Serpent Mount
+						i(86377),	-- Pattern: Royal Satchel
 						i(84561),	-- Formula: Enchant Bracer - Exceptional Strength
 						i(84557),	-- Formula: Enchant Bracer - Greater Agility
 						i(84559),	-- Formula: Enchant Bracer - Super Intellect
-						i(88741),	-- Gloves of Red Feathers
-						i(88742),	-- Sunspeaker's Flared Gloves
-						i(88743),	-- Ogo's Elder Gloves
-						i(88744),	-- Fingers of the Loneliest Monk
-						i(88745),	-- Sentinel Commander's Gauntlets
-						i(88746),	-- Gloves of the Overwhelming Swarm
-						i(88747),	-- Streetfighter's Iron Knuckles
-						i(88748),	-- Ravenmane's Gloves
-						i(88749),	-- Gauntlets of Jade Sutras
-						i(88862),	-- Tankiss Warstompers
-						i(88864),	-- Yu'lon Guardian Boots
-						i(88865),	-- Bramblestaff Boots
-						i(88866),	-- Steps of the War Serpent
-						i(88867),	-- Sandals of the Elder Sage
-						i(88868),	-- Tukka-Tuk's Hairy Boots
-						i(88876),	-- Boots of the High Adept
-						i(88877),	-- Storm-Sing Sandals
-						i(88878),	-- Void Flame Slippers
-						i(88879),	-- Braided Black and White Bracers
-						i(88880),	-- Battle Shadow Bracers
-						i(88881),	-- Fallen Sentinel Bracers
-						i(88882),	-- Tiger-Striped Wristguards
-						i(88883),	-- Brewmaster Chani's Bracers
-						i(88884),	-- Quillpaw Family Bracers
-						i(88885),	-- Clever Ashyo's Armbands
-						i(88892),	-- Bracers of Inlaid Jade
-						i(88893),	-- Minh's Beaten Bracers
-						i(89532),	-- Bladesong Cloak
-						i(89533),	-- Cloak of Ancient Curses
-						i(89534),	-- Pressed Flower Cloak
-						i(89535),	-- Ribcracker's Cloak
-						i(89537),	-- Cloak of the Silent Mountain
-						i(89658),	-- Subversive Leggings
-						i(89659),	-- Leggings of Unfinished Conquest
-						i(89664),	-- Valiant's Shinguards
-						i(89665),	-- Leggings of Ponderous Advance
-						i(89666),	-- Vestment of the Ascendant Tribe
-						i(89667),	-- Refurbished Zandalari Vestment
-						i(89668),	-- Mountain Stream Ringmail
-						i(89669),	-- Undergrowth Stalker Chestpiece
-						i(89799),	-- August Celestials Tabard
+						i(93224),	-- Grand Commendation of the August Celestials
+						i(89124),	-- Celestial Offering
+						i(89532),	-- Bladesong Cloak [Back]
+						i(89533),	-- Cloak of Ancient Curses [Back]
+						i(89537),	-- Cloak of the Silent Mountain [Back]
+						i(89534),	-- Pressed Flower Cloak [Back]
+						i(89535),	-- Ribcracker's Cloak [Back]
+						i(88880),	-- Battle Shadow Bracers [Wrists]
+						i(88892),	-- Bracers of Inlaid Jade [Wrists]
+						i(88879),	-- Braided Black and White Bracer [Wrists]
+						i(88883),	-- Brewmaster Chani's Bracers [Wrists]
+						i(88885),	-- Clever Ashyo's Armbands [Wrists]
+						i(88881),	-- Fallen Sentinel Bracers [Wrists]
+						i(88893),	-- Minh's Beaten Bracers [Wrists]
+						i(88884),	-- Quillpaw Family Bracers [Wrists]
+						i(88882),	-- Tiger-Striped Wristguards [Wrists]
+						i(88749),	-- Gauntlets of Jade Sutras [Hands]
+						i(88741),	-- Gloves of Red Feathers [Hands]
+						i(88746),	-- Gloves of the Overwhelming Swarm [Hands]
+						i(88743),	-- Ogo's Elder Gloves [Hands]
+						i(88748),	-- Ravenmane's Gloves [Hands]
+						i(88745),	-- Sentinel Commander's Gauntlets [Hands]
+						i(88747),	-- Streetfighter's Iron Knuckles [Hands]
+						i(88742),	-- Sunspeaker's Flared Gloves [Hands]
+						i(88744),	-- Fingers of the Loneliest Monk [Ring]
+						i(89668),	-- Mountain Stream Ringmail [Chest]
+						i(89667),	-- Refurbished Zandalari Vestment [Chest]
+						i(89669),	-- Undergrowth Stalker Chestpiece [Chest]
+						i(89666),	-- Vestment of the Ascendant Tribe [Chest]
+						i(89665),	-- Leggings of Ponderous Advance [Legs]
+						i(89659),	-- Leggings of Unfinished Conquest [Legs]
+						i(89658),	-- Subversive Leggings [Legs]
+						i(89664),	-- Valiant's Shinguards [Legs]
+						i(88876),	-- Boots of the High Adept [Feet]
+						i(88865),	-- Bramblestaff Boots [Feet]
+						i(88867),	-- Sandals of the Elder Sage [Feet]
+						i(88866),	-- Steps of the War Serpent [Feet]
+						i(88877),	-- Storm-Sing Sandals [Feet]
+						i(88862),	-- Tankiss Warstompers [Feet]
+						i(88868),	-- Tukka-Tuk's Hairy Boots [Feet]
+						i(88878),	-- Void Flame Slippers [Feet]
+						i(88864),	-- Yu'lon Guardian Boots [Feet]
 					}),
 					n(64605, {	-- Tan Shin Tiao <Lorewalkers Quartermaster>
-						i(122221),	-- Music Roll: Song of Liu Lang
 						i(89363),	-- Disc of the Red Flying Cloud Mount
+						i(122221),	-- Music Roll: Song of Liu Lang
 						i(89795),	-- Lorewalkers Tabard
+						i(93230),	-- Grand Commendation of the Lorewalkers
 					}),
 				}),
 				n(-38, { -- Profession
