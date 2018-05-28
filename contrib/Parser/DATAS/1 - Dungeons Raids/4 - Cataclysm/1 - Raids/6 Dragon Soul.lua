@@ -4,11 +4,11 @@
 
 _.Instances = 
 {
-	{ -- Cataclysm
+	{	-- Cataclysm
 		["groups"] = {
 			inst(187, { 	-- Dragon Soul
 				["groups"] = {
-					d(7, {		-- LFR
+					d(7, {	-- LFR
 						["ignoreBonus"] = true,
 						["groups"] = {
 							ach(6106, {	-- Siege of Wyrmrest Temple
@@ -25,7 +25,6 @@ _.Instances =
 									i(78376),	-- Sporebeard Gauntlets
 									i(78385),	-- Girdle of Shattered Stone
 									i(78386),	-- Pillarfoot Greaves
-								 -- SHARED BOSS LOOT
 									i(78497),	-- Breathstealer Band
 									i(78498),	-- Hardheart Ring
 									i(78495),	-- Infinite Loop
@@ -39,29 +38,29 @@ _.Instances =
 								})),
 								cr(55308, e(324, {	-- Warlord Zon'ozz
 									i(78866, {	-- Gauntlets of the Corrupted Conqueror
-										i(78778),	-- 
-										i(78772),	-- 
-										i(78776),	-- 
-										i(78768),	-- 
-										i(78777),	-- 
-										i(78770),	-- 
+										i(78770),	-- Gauntlets of Radiant Glory
+										i(78768),	-- Gloves of Radiant Glory
+										i(78772),	-- Handguards of Radiant Glory
+										i(78777),	-- Gloves of Dying Light
+										i(78778),	-- Handwraps of Dying Light
+										i(78776),	-- Gloves of the Faceless Shroud
 									}),
 									i(78867, {	-- Gauntlets of the Corrupted Protector
-										i(78769),	-- 
-										i(78767),	-- 
-										i(78762),	-- 
-										i(78761),	-- 
-										i(78764),	-- 
-										i(78763),	-- 
+										i(78769),	-- Wyrmstalker's Gloves
+										i(78761),	-- Spiritwalker's Gloves
+										i(78762),	-- Spiritwalker's Grips
+										i(78767),	-- Spiritwalker's Handwraps
+										i(78763),	-- Colossal Dragonplate Gauntlets
+										i(78764),	-- Colossal Dragonplate Handguards
 									}),
 									i(78865, {	-- Gauntlets of the Corrupted Vanquisher
-										i(78766),	-- 
-										i(78773),	-- 
-										i(78765),	-- 
-										i(78775),	-- 
-										i(78779),	-- 
-										i(78771),	-- 
-										i(78774),	-- 
+										i(78765),	-- Necrotic Boneplate Gauntlets
+										i(78773),	-- Necrotic Boneplate Handguards
+										i(78771),	-- Deep Earth Gloves
+										i(78779),	-- Deep Earth Grips
+										i(78775),	-- Deep Earth Handwraps
+										i(78766),	-- Time Lord's Gloves
+										i(78774),	-- Blackfang Battleweave Gloves
 									}),									
 									i(78399),	-- Finger of Zon'ozz
 									i(78394),	-- Horrifying Horn Arbalest (not listed on drop table on wowhead)
@@ -83,162 +82,214 @@ _.Instances =
 									i(77981),	-- Windward Heart
 								})),
 								cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-									i(152979),	-- Puddle of Black Liquid
-									i(78408),	-- 
-									i(78411),	-- 
-									i(78412),	-- 
-									i(78409),	-- 
-									i(78407),	-- 
-									i(78410),	-- 
-									i(78872, {	-- Leggings of the Corrupted Conqueror
-										i(78814),	-- 
-										i(78807),	-- 
-										i(78810),	-- 
-										i(78816),	-- 
-										i(78817),	-- 
-										i(78812),	-- 
+									i( 78872, {	-- Leggings of the Corrupted Conqueror
+										i(78812),	-- Greaves of Radiant Glory
+										i(78810),	-- Legguards of Radiant Glory
+										i(78807),	-- Legplates of Radiant Glory
+										i(78817),	-- Leggings of Dying Light
+										i(78814),	-- Legwraps of Dying Light
+										i(78816),	-- Leggings of the Faceless Shroud
 									}),
-									i(78873, {	-- Leggings of the Corrupted Protector
-										i(78804),	-- 
-										i(78813),	-- 
-										i(78799),	-- 
-										i(78806),	-- 
-										i(78801),	-- 
-										i(78800),	-- 
+									i( 78873, {	-- Leggings of the Corrupted Protector
+										i(78804),	-- Wyrmstalker's Legguards
+										i(78806),	-- Spiritwalker's Kilt
+										i(78799),	-- Spiritwalker's Legguards
+										i(78813),	-- Spiritwalker's Legwraps
+										i(78800),	-- Colossal Dragonplate Legguards
+										i(78801),	-- Colossal Dragonplate Legplates
 									}),
-									i(78871, {	-- Leggings of the Corrupted Vanquisher
-										i(78815),	-- 
-										i(78811),	-- 
-										i(78802),	-- 
-										i(78805),	-- 
-										i(78808),	-- 
-										i(78809),	-- 
-										i(78803),	-- 
+									i( 78871, {	-- Leggings of the Corrupted Vanquisher
+										i(78802),	-- Necrotic Boneplate Greaves
+										i(78811),	-- Necrotic Boneplate Legguards
+										i(78809),	-- Deep Earth Leggings
+										i(78808),	-- Deep Earth Legguards
+										i(78805),	-- Deep Earth Legwraps
+										i(78815),	-- Time Lord's Leggings
+										i(78803),	-- Blackfang Battleweave Legguards
 									}),
+									i(152979),	-- Puddle of Black Liquid (PET!)
+									i( 78409),	-- Experimental Specimen Slicer
+									i( 78407),	-- Spire of Coagulated Globules
+									i( 78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
+									i( 78412),	-- Heartblood Wristplates
+									i( 78408),	-- Interrogator's Bloody Footpads
+									i( 78411),	-- Mindstrainer Treads
+									i( 78497),	-- Breathstealer Band
+									i( 78498),	-- Hardheart Ring
+									i( 78495),	-- Infinite Loop
+									i( 78494),	-- Seal of Primordial Shadow
+									i( 78496),	-- Signet of Suturing
+									i( 77982),	-- Bone-Link Fetish
+									i( 77980),	-- Cunning of the Cruel
+									i( 77983),	-- Indomitable Pride
+									i( 77971),	-- Insignia of the Corrupted Mind
+									i( 77970),	-- Soulshifter Vortex
+									i( 77979),	-- Vial of Shadows
+									i( 77981),	-- Windward Heart
 								})),
 								cr(55689, e(317, {	-- Hagara the Stormbinder
-									i(78425),	-- 
-									i(78428),	-- 
-									i(78423),	-- 
-									i(78424),	-- 
-									i(78422),	-- 
-									i(78426),	-- 
 									i(78875, {	-- Shoulders of the Corrupted Conqueror
-										i(78840),	-- 
-										i(78837),	-- 
-										i(78844),	-- 
-										i(78841),	-- 
-										i(78842),	-- 
-										i(78845),	-- 
+										i(78841),	-- Mantle of Radiant Glory
+										i(78837),	-- Pauldrons of Radiant Glory
+										i(78840),	-- Shoulderguards of Radiant Glory
+										i(78842),	-- Mantle of Dying Light
+										i(78845),	-- Mantle of Dying Light
+										i(78844),	-- Mantle of the Faceless Shroud
 									}),
 									i(78876, {	-- Shoulders of the Corrupted Protector
-										i(78832),	-- 
-										i(78828),	-- 
-										i(78836),	-- 
-										i(78834),	-- 
-										i(78829),	-- 
-										i(78830),	-- 
+										i(78832),	-- Wyrmstalker's Spaulders
+										i(78834),	-- Spiritwalker's Mantle
+										i(78836),	-- Spiritwalker's Shoulderwraps
+										i(78828),	-- Spiritwalker's Spaulders
+										i(78830),	-- Colossal Dragonplate Pauldrons
+										i(78829),	-- Colossal Dragonplate Shoulderguards
 									}),
 									i(78874, {	-- Shoulders of the Corrupted Vanquisher
-										i(78843),	-- 
-										i(78846),	-- 
-										i(78831),	-- 
-										i(78838),	-- 
-										i(78839),	-- 
-										i(78835),	-- 
-										i(78833),	-- 
+										i(78831),	-- Necrotic Boneplate Pauldrons
+										i(78846),	-- Necrotic Boneplate Shoulderguards
+										i(78835),	-- Deep Earth Mantle
+										i(78839),	-- Deep Earth Shoulderwraps
+										i(78838),	-- Deep Earth Spaulders
+										i(78843),	-- Time Lord's Mantle
+										i(78833),	-- Blackfang Battleweave Spaulders
 									}),
+									i(78426),	-- Lightning Rod
+									i(78422),	-- Electrowing Dagger
+									i(78425),	-- Bracers of the Banished
+									i(78428),	-- Girdle of the Grotesque
+									i(78424),	-- Runescriven Demon Collar
+									i(78423),	-- Treads of Dormant Dreams
+									i(78497),	-- Breathstealer Band
+									i(78498),	-- Hardheart Ring
+									i(78495),	-- Infinite Loop
+									i(78427),	-- Ring of the Riven
+									i(78494),	-- Seal of Primordial Shadow
+									i(78421),	-- Signet of Grasping Mouths
+									i(78496),	-- Signet of Suturing
+									i(77982),	-- Bone-Link Fetish
+									i(77980),	-- Cunning of the Cruel
+									i(77983),	-- Indomitable Pride
+									i(77979),	-- Vial of Shadows
+									i(77981),	-- Windward Heart
 								})),
 							}),
-							ach(6107, { 	-- Fall of Deathwing	
+							ach(6107, {	-- Fall of Deathwing	
 								cr(55294, e(331, {	-- Ultraxion
-									i(78442),	-- 
-									i(78443),	-- 
-									i(78438),	-- 
-									i(78444),	-- 
-									i(78439),	-- 
-									i(78441),	-- 
-									i(78437),	-- 
 									i(78863, {	-- Chest of the Corrupted Conqueror
-										i(78825),	-- 
-										i(78823),	-- 
-										i(78826),	-- 
-										i(78827),	-- 
-										i(78821),	-- 
-										i(78822),	-- 
+										i(78822),	-- Battleplate of Radiant Glory
+										i(78821),	-- Breastplate of Radiant Glory
+										i(78827),	-- Chestguard of Radiant Glory
+										i(78823),	-- Robes of Dying Light
+										i(78826),	-- Robes of Dying Light
+										i(78825),	-- Robes of the Faceless Shroud
 									}),
 									i(78864, {	-- Chest of the Corrupted Protector
-										i(78756),	-- 
-										i(78820),	-- 
-										i(78818),	-- 
-										i(78819),	-- 
-										i(78753),	-- 
-										i(78752),	-- 
+										i(78756),	-- Wyrmstalker's Tunic
+										i(78819),	-- Spiritwalker's Cuirass
+										i(78818),	-- Spiritwalker's Hauberk
+										i(78820),	-- Spiritwalker's Tunic
+										i(78752),	-- Colossal Dragonplate Battleplate
+										i(78753),	-- Colossal Dragonplate Chestguard
 									}),
 									i(78862, {	-- Chest of the Corrupted Vanquisher
-										i(78824),	-- 
-										i(78758),	-- 
-										i(78754),	-- 
-										i(78757),	-- 
-										i(78755),	-- 
-										i(78760),	-- 
-										i(78759),	-- 
+										i(78754),	-- Necrotic Boneplate Breastplate
+										i(78758),	-- Necrotic Boneplate Chestguard
+										i(78760),	-- Deep Earth Raiment
+										i(78755),	-- Deep Earth Robes
+										i(78757),	-- Deep Earth Vestment
+										i(78824),	-- Time Lord's Robes
+										i(78759),	-- Blackfang Battleweave Tunic
 									}),
+									i(78437),	-- Morningstar of Heroic Will
+									i(78441),	-- Ledger of Revolting Rituals
+									i(78443),	-- Imperfect Specimens 27 and 28
+									i(78438),	-- Bracers of Looming Darkness
+									i(78444),	-- Dragonfracture Belt
+									i(78439),	-- Stillheart Warboots
+									i(78442),	-- Treads of Sordid Screams
+									i(78497),	-- Breathstealer Band
+									i(78440),	-- Curled Twilight Claw
+									i(77972),	-- Creche of the Final Dragon
+									i(78498),	-- Hardheart Ring
+									i(78495),	-- Infinite Loop
+									i(78494),	-- Seal of Primordial Shadow
+									i(78496),	-- Signet of Suturing
+									i(77982),	-- Bone-Link Fetish
+									i(77980),	-- Cunning of the Cruel
+									i(77983),	-- Indomitable Pride
+									i(77979),	-- Vial of Shadows
+									i(77981),	-- Windward Heart
 								})),
 								cr(56427, e(332, {	-- Warmaster Blackthorn
-									i(78457),	-- 
-									i(78454),	-- 
-									i(78455),	-- 
-									i(78460),	-- 
-									i(78456),	-- 
-									i(78458),	-- 
-									i(78453),	-- 
-									i(78459),	-- 
 									i(78869, {	-- Crown of the Corrupted Conqueror
-										i(78797),	-- 
-										i(78798),	-- 
-										i(78788),	-- 
-										i(78787),	-- 
-										i(78790),	-- 
-										i(78795),	-- 
+										i(78790),	-- Faceguard of Radiant Glory
+										i(78787),	-- Headguard of Radiant Glory
+										i(78788),	-- Helmet of Radiant Glory
+										i(78795),	-- Cowl of Dying Light
+										i(78798),	-- Hood of Dying Light
+										i(78797),	-- Hood of the Faceless Shroud
 									}),
 									i(78870, {	-- Crown of the Corrupted Protector
-										i(78793),	-- 
-										i(78781),	-- 
-										i(78780),	-- 
-										i(78786),	-- 
-										i(78783),	-- 
-										i(78784),	-- 
+										i(78793),	-- Wyrmstalker's Headguard
+										i(78786),	-- Spiritwalker's Faceguard
+										i(78780),	-- Spiritwalker's Headpiece
+										i(78781),	-- Spiritwalker's Helmet
+										i(78784),	-- Colossal Dragonplate Faceguard
+										i(78783),	-- Colossal Dragonplate Helmet
 									}),
 									i(78868, {	-- Crown of the Corrupted Vanquisher
-										i(78796),	-- 
-										i(78782),	-- 
-										i(78792),	-- 
-										i(78785),	-- 
-										i(78789),	-- 
-										i(78791),	-- 
-										i(78794),	-- 
+										i(78792),	-- Necrotic Boneplate Faceguard
+										i(78782),	-- Necrotic Boneplate Helmet
+										i(78791),	-- Deep Earth Cover
+										i(78789),	-- Deep Earth Headpiece
+										i(78785),	-- Deep Earth Helm
+										i(78796),	-- Time Lord's Hoodd
+										i(78794),	-- Blackfang Battleweave Helmet
 									}),
+									i(78453),	-- Ataraxis, Cudgel of the Warmaster
+									i(78459),	-- Visage of the Destroyer
+									i(78456),	-- Blackhorn's Mighty Bulwark
+									i(78458),	-- Timepiece of the Bronze Flight
+									i(78454),	-- Shadow Wing Armbands
+									i(78455),	-- Belt of the Beloved Companion
+									i(78460),	-- Goriona's Collar
+									i(78457),	-- Janglespur Jackboots
+									i(78497),	-- Breathstealer Band
+									i(78498),	-- Hardheart Ring
+									i(78495),	-- Infinite Loop
+									i(78494),	-- Seal of Primordial Shadow
+									i(78496),	-- Signet of Suturing
+									i(77982),	-- Bone-Link Fetish
+									i(77980),	-- Cunning of the Cruel
+									i(77983),	-- Indomitable Pride
+									i(77973),	-- Starcatcher Compass
+									i(77979),	-- Vial of Shadows
+									i(77981),	-- Windward Heart
 								})),
 								cr(53879, e(318, {	-- Spine of Deathwing
-									i(152980), -- Elementium Back Plate
-									i(78466),	-- 
-									i(78467),	-- 
-									i(78468),	-- 
-									i(78470),	-- 
-									i(78469),	-- 
+									i(152980),	-- Elementium Back Plate (PET!)
+									i( 78470),	-- Backbreaker Spaulders
+									i( 78466),	-- Gloves of Liquid Smoke
+									i( 78469),	-- Gauntlets of the Golden Thorn
+									i( 78467),	-- Molten Blood Footpads
+									i( 78468),	-- Belt of Shattered Elementium
+									i( 77977),	-- Eye of Unmaking
+									i( 77976),	-- Heart of Unliving
+									i( 77978),	-- Resolve of Undying
+									i( 77975),	-- Will of Unbinding
+									i( 77974),	-- Wrath of Unchaining
 								})),
 								cr(56173, e(333, {	-- Madness of Deathwing
-									i(152981), -- Severed Tentacle
-									i(78484),	-- 
-									i(78483),	-- 
-									i(78488),	-- 
-									i(78487),	-- 
-									i(78481),	-- 
-									i(78485),	-- 
-									i(78482),	-- 
-									i(78486),	-- 
-									i(78480),	-- 
+									i(152981),	-- Severed Tentacle (PET!)
+									i( 78482),	-- Kiril, Fury of Beasts
+									i( 78487),	-- Gurthalak, Voice of the Deeps
+									i( 78483),	-- Blade of the Unmaker
+									i( 78485),	-- Maw of the Dragonlord
+									i( 78481),	-- No'Kaled, the Elements of Death
+									i( 78484),	-- Rathrak, the Poisonous Mind
+									i( 78488),	-- Souldrinker
+									i( 78486),	-- Ti'tahk, the Steps of Time
+									i( 78480),	-- Vishanka, Jaws of the Earth
 								})),
 							}),	
 						},
@@ -701,210 +752,292 @@ _.Instances =
 								},
 							}),
 							cr(55265, e(311, {	-- Morchok
-								i(77212),	-- 
-								i(77214),	-- 
-								i(77268),	-- 
-								i(77270),	-- 
-								i(77271),	-- 
-								i(77261),	-- 
-								i(77267),	-- 
-								i(77263),	-- 
-								i(77269),	-- 
-								i(77266),	-- 
-								i(77265),	-- 
+								i(71998),	-- Essence of Destruction
+								i(77212),	-- Hand of Morchok
+								i(77214),	-- Vagaries of Time
+								i(77262),	-- Petrified Fungal Heart
+								i(77268),	-- Brackenshell Shoulderplates
+								i(77267),	-- Mosswrought Shoulderguards
+								i(77271),	-- Underdweller's Spaulders
+								i(77263),	-- Robe of Glowing Stone
+								i(77261),	-- Mycosynth Wristguards
+								i(77270),	-- Rockhide Bracers
+								i(77269),	-- Sporebeard Gauntlets
+								i(77266),	-- Girdle of Shattered Stone
+								i(77265),	-- Pillarfoot Greaves
+								i(77230),	-- Breathstealer Band
+								i(77232),	-- Hardheart Ring
+								i(77228),	-- Infinite Loop
+								i(77231),	-- Seal of Primordial Shadow
+								i(77229),	-- Signet of Suturing
+								i(77210),	-- Bone-Link Fetish
+								i(77208),	-- Cunning of the Cruel
+								i(77211),	-- Indomitable Pride
+								i(77207),	-- Vial of Shadows
+								i(77209),	-- Windward Heart
 							})),
 							cr(55308, e(324, {	-- Warlord Zon'ozz
-								i(77258),	-- 
-								i(77259),	-- 
-								i(77260),	-- 
-								i(77216),	-- 
-								i(77215),	-- 
-								i(77257),	-- 
-								i(77255),	-- 
+								i(71998),	-- Essence of Destruction
 								i(78183, {	-- Gauntlets of the Corrupted Conqueror
-									i(76357),	-- 
-									i(77004),	-- 
-									i(76343),	-- 
-									i(76766),	-- 
-									i(76348),	-- 
-									i(76875),	-- 
+									i(76875),	-- Gauntlets of Radiant Glory
+									i(76766),	-- Gloves of Radiant Glory
+									i(77004),	-- Handguards of Radiant Glory
+									i(76348),	-- Gloves of Dying Light
+									i(76357),	-- Handwraps of Dying Light
+									i(76343),	-- Gloves of the Faceless Shroud
 								}),
 								i(78178, {	-- Gauntlets of the Corrupted Protector
-									i(77029),	-- 
-									i(76757),	-- 
-									i(77041),	-- 
-									i(77038),	-- 
-									i(76989),	-- 
-									i(76985),	-- 
+									i(77029),	-- Wyrmstalker's Gloves
+									i(77038),	-- Spiritwalker's Gloves
+									i(77041),	-- Spiritwalker's Grips
+									i(76757),	-- Spiritwalker's Handwraps
+									i(76985),	-- Colossal Dragonplate Gauntlets
+									i(76989),	-- Colossal Dragonplate Handguards
 								}),
 								i(78173, {	-- Gauntlets of the Corrupted Vanquisher
-									i(76212),	-- 
-									i(77009),	-- 
-									i(76975),	-- 
-									i(76749),	-- 
-									i(77014),	-- 
-									i(77018),	-- 
-									i(77024),	-- 
+									i(76975),	-- Necrotic Boneplate Gauntlets
+									i(77009),	-- Necrotic Boneplate Handguards
+									i(77018),	-- Deep Earth Gloves
+									i(77014),	-- Deep Earth Grips
+									i(76749),	-- Deep Earth Handwraps
+									i(76212),	-- Time Lord's Gloves
+									i(77024),	-- Blackfang Battleweave Gloves
 								}),
+								i(77216),	-- Finger of Zon'ozz
+								i(77215),	-- Horrifying Horn Arbalest
+								i(77258),	-- Graveheart Bracers
+								i(77257),	-- Grotesquely Writhing Bracers
+								i(77260),	-- Belt of Flayed Skin
+								i(77255),	-- Cord of the Slain Champion
+								i(77259),	-- Treads of Crushed Flesh
+								i(77230),	-- Breathstealer Band
+								i(77232),	-- Hardheart Ring
+								i(77228),	-- Infinite Loop
+								i(77231),	-- Seal of Primordial Shadow
+								i(77229),	-- Signet of Suturing
+								i(77210),	-- Bone-Link Fetish
+								i(77208),	-- Cunning of the Cruel
+								i(77211),	-- Indomitable Pride
+								i(77204),	-- Seal of the Seven Signs
+								i(77207),	-- Vial of Shadows
+								i(77209),	-- Windward Heart
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-								i(152979), -- Puddle of Black Liquid
-								i(77217),	-- 
-								i(77254),	-- 
-								i(77218),	-- 
-								i(77219),	-- 
-								i(77253),	-- 
-								i(77252),	-- 
-								i(78181, {	-- Leggings of the Corrupted Conqueror
-									i(76359),	-- 
-									i(76877),	-- 
-									i(77006),	-- 
-									i(76341),	-- 
-									i(76346),	-- 
-									i(76768),	-- 
+								i( 71998),	-- Essence of Destruction
+								i( 78181, {	-- Leggings of the Corrupted Conqueror
+									i(76768),	-- Greaves of Radiant Glory
+									i(77006),	-- Legguards of Radiant Glory
+									i(76877),	-- Legplates of Radiant Glory
+									i(76346),	-- Leggings of Dying Light
+									i(76359),	-- Legwraps of Dying Light
+									i(76341),	-- Leggings of the Faceless Shroud
 								}),
-								i(78176, {	-- Leggings of the Corrupted Protector
-									i(77031),	-- 
-									i(76759),	-- 
-									i(77043),	-- 
-									i(77036),	-- 
-									i(76986),	-- 
-									i(76991),	-- 
+								i( 78176, {	-- Leggings of the Corrupted Protector
+									i(77031),	-- Wyrmstalker's Legguards
+									i(77036),	-- Spiritwalker's Kilt
+									i(77043),	-- Spiritwalker's Legguards
+									i(76759),	-- Spiritwalker's Legwraps
+									i(76991),	-- Colossal Dragonplate Legguards
+									i(76986),	-- Colossal Dragonplate Legplates
 								}),
-								i(78171, {	-- Leggings of the Corrupted Vanquisher
-									i(76214),	-- 
-									i(77011),	-- 
-									i(76977),	-- 
-									i(76751),	-- 
-									i(77016),	-- 
-									i(77020),	-- 
-									i(77026),	-- 
+								i( 78171, {	-- Leggings of the Corrupted Vanquisher
+									i(76977),	-- Necrotic Boneplate Greaves
+									i(77011),	-- Necrotic Boneplate Legguards
+									i(77020),	-- Deep Earth Leggings
+									i(77016),	-- Deep Earth Legguards
+									i(76751),	-- Deep Earth Legwraps
+									i(76214),	-- Time Lord's Leggings
+									i(77026),	-- Blackfang Battleweave Legguards
 								}),
+								i(152979),	-- Puddle of Black Liquid (PET!)
+								i( 77217),	-- Experimental Specimen Slicer
+								i( 77218),	-- Spire of Coagulated Globules
+								i( 77219),	-- Scalpel of Unrelenting Agony
+								i( 77253),	-- Heartblood Wristplates
+								i( 77254),	-- Interrogator's Bloody Footpads
+								i( 77252),	-- Mindstrainer Treads
+								i( 77230),	-- Breathstealer Band
+								i( 77232),	-- Hardheart Ring
+								i( 77228),	-- Infinite Loop
+								i( 77231),	-- Seal of Primordial Shadow
+								i( 77229),	-- Signet of Suturing
+								i( 77210),	-- Bone-Link Fetish
+								i( 77208),	-- Cunning of the Cruel
+								i( 77211),	-- Indomitable Pride
+								i( 77203),	-- Insignia of the Corrupted Mind
+								i( 77206),	-- Soulshifter Vortex
+								i( 77207),	-- Vial of Shadows
+								i( 77209),	-- Windward Heart
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
-								i(77250),	-- 
-								i(77221),	-- 
-								i(77220),	-- 
-								i(77248),	-- 
-								i(77249),	-- 
-								i(77251),	-- 
+								i(71998),	-- Essence of Destruction
 								i(78180, {	-- Shoulders of the Corrupted Conqueror
-									i(77007),	-- 
-									i(76878),	-- 
-									i(76339),	-- 
-									i(76769),	-- 
-									i(76344),	-- 
-									i(76361),	-- 
+									i(76769),	-- Mantle of Radiant Glory
+									i(76878),	-- Pauldrons of Radiant Glory
+									i(77007),	-- Shoulderguards of Radiant Glory
+									i(76344),	-- Mantle of Dying Light
+									i(76361),	-- Mantle of Dying Light
+									i(76339),	-- Mantle of the Faceless Shroud
 								}),
 								i(78175, {	-- Shoulders of the Corrupted Protector
-									i(77032),	-- 
-									i(77044),	-- 
-									i(77035),	-- 
-									i(76760),	-- 
-									i(76992),	-- 
-									i(76987),	-- 
+									i(77032),	-- Wyrmstalker's Spaulders
+									i(76760),	-- Spiritwalker's Mantle
+									i(77044),	-- Spiritwalker's Spaulders
+									i(77035),	-- Spiritwalker's Shoulderwraps
+									i(76987),	-- Colossal Dragonplate Pauldrons
+									i(76992),	-- Colossal Dragonplate Shoulderguards
 								}),
 								i(78170, {	-- Shoulders of the Corrupted Vanquisher
-									i(76216),	-- 
-									i(77012),	-- 
-									i(76978),	-- 
-									i(77017),	-- 
-									i(77022),	-- 
-									i(76753),	-- 
-									i(77027),	-- 
+									i(76978),	-- Necrotic Boneplate Pauldrons
+									i(77012),	-- Necrotic Boneplate Shoulderguards
+									i(76753),	-- Deep Earth Mantle
+									i(77022),	-- Deep Earth Shoulderwraps
+									i(77017),	-- Deep Earth Spaulders
+									i(76216),	-- Time Lord's Mantle
+									i(77027),	-- Blackfang Battleweave Spaulders
 								}),
+								i(77221),	-- Lightning Rod
+								i(77220),	-- Electrowing Dagger
+								i(77249),	-- Bracers of the Banished
+								i(77248),	-- Girdle of the Grotesque
+								i(77250),	-- Runescriven Demon Collar
+								i(77251),	-- Treads of Dormant Dreams
+								i(77230),	-- Breathstealer Band
+								i(77232),	-- Hardheart Ring
+								i(77228),	-- Infinite Loop
+								i(78012),	-- Ring of the Riven
+								i(77231),	-- Seal of Primordial Shadow
+								i(78011),	-- Signet of Grasping Mouths
+								i(77229),	-- Signet of Suturing
+								i(77210),	-- Bone-Link Fetish
+								i(77208),	-- Cunning of the Cruel
+								i(77211),	-- Indomitable Pride
+								i(77207),	-- Vial of Shadows
+								i(77209),	-- Windward Heart
 							})),
 							cr(55294, e(331, {	-- Ultraxion
-								i(77223),	-- 
-								i(77246),	-- 
-								i(77245),	-- 
-								i(77243),	-- 
-								i(77242),	-- 
-								i(77247),	-- 
-								i(77244),	-- 
-								i(78919),	-- 
 								i(78184, {	-- Chest of the Corrupted Conqueror
-									i(76340),	-- 
-									i(76345),	-- 
-									i(76360),	-- 
-									i(77003),	-- 
-									i(76765),	-- 
-									i(76874),	-- 
+									i(76874),	-- Battleplate of Radiant Glory
+									i(76765),	-- Breastplate of Radiant Glory
+									i(77003),	-- Chestguard of Radiant Glory
+									i(76345),	-- Robes of Dying Light
+									i(76360),	-- Robes of Dying Light
+									i(76340),	-- Robes of the Faceless Shroud
 								}),
 								i(78179, {	-- Chest of the Corrupted Protector
-									i(77028),	-- 
-									i(76756),	-- 
-									i(77039),	-- 
-									i(77040),	-- 
-									i(76988),	-- 
-									i(76984),	-- 
+									i(77028),	-- Wyrmstalker's Tunic
+									i(77040),	-- Spiritwalker's Cuirass
+									i(77039),	-- Spiritwalker's Hauberk
+									i(76756),	-- Spiritwalker's Tunic
+									i(76984),	-- Colossal Dragonplate Battleplate
+									i(76988),	-- Colossal Dragonplate Chestguard
 								}),
 								i(78174, {	-- Chest of the Corrupted Vanquisher
-									i(76215),	-- 
-									i(77008),	-- 
-									i(76974),	-- 
-									i(77021),	-- 
-									i(76752),	-- 
-									i(77013),	-- 
-									i(77023),	-- 
+									i(76974),	-- Necrotic Boneplate Breastplate
+									i(77008),	-- Necrotic Boneplate Chestguard
+									i(77013),	-- Deep Earth Raiment
+									i(76752),	-- Deep Earth Robes
+									i(77021),	-- Deep Earth Vestment
+									i(76215),	-- Time Lord's Robes
+									i(77023),	-- Blackfang Battleweave Tunic
 								}),
+								i(71998),	-- Essence of Destruction
+								i(78919),	-- Experiment 12-B (MOUNT!)
+								i(77223),	-- Morningstar of Heroic Will
+								i(77245),	-- Ledger of Revolting Rituals
+								i(77242),	-- Imperfect Specimens 27 and 28
+								i(77247),	-- Bracers of Looming Darkness
+								i(77244),	-- Dragonfracture Belt
+								i(77246),	-- Stillheart Warboots
+								i(77243),	-- Treads of Sordid Screams
+								i(77230),	-- Breathstealer Band
+								i(78013),	-- Curled Twilight Claw
+								i(77232),	-- Hardheart Ring
+								i(77228),	-- Infinite Loop
+								i(77231),	-- Seal of Primordial Shadow
+								i(77229),	-- Signet of Suturing
+								i(77210),	-- Bone-Link Fetish
+								i(77205),	-- Creche of the Final Dragon
+								i(77208),	-- Cunning of the Cruel
+								i(77211),	-- Indomitable Pride
+								i(77207),	-- Vial of Shadows
+								i(77209),	-- Windward Heart
 							})),
 							cr(56427, e(332, {	-- Warmaster Blackthorn
-								i(77224),	-- 
-								i(77239),	-- 
-								i(77240),	-- 
-								i(77225),	-- 
-								i(77226),	-- 
-								i(77227),	-- 
-								i(77241),	-- 
-								i(77234),	-- 
 								i(78182, {	-- Crown of the Corrupted Conqueror
-									i(76342),	-- 
-									i(76347),	-- 
-									i(76876),	-- 
-									i(76767),	-- 
-									i(77005),	-- 
-									i(76358),	-- 
+									i(77005),	-- Faceguard of Radiant Glory
+									i(76767),	-- Headguard of Radiant Glory
+									i(76876),	-- Helmet of Radiant Glory
+									i(76358),	-- Cowl of Dying Light
+									i(76347),	-- Hood of Dying Light
+									i(76342),	-- Hood of the Faceless Shroud
 								}),
 								i(78177, {	-- Crown of the Corrupted Protector
-									i(77030),	-- 
-									i(77042),	-- 
-									i(77037),	-- 
-									i(76758),	-- 
-									i(76983),	-- 
-									i(76990),	-- 
+									i(77030),	-- Wyrmstalker's Headguard
+									i(76758),	-- Spiritwalker's Faceguard
+									i(77037),	-- Spiritwalker's Headpiece
+									i(77042),	-- Spiritwalker's Helmet
+									i(76990),	-- Colossal Dragonplate Faceguard
+									i(76983),	-- Colossal Dragonplate Helmet
 								}),
 								i(78172, {	-- Crown of the Corrupted Vanquisher
-									i(76213),	-- 
-									i(76976),	-- 
-									i(77010),	-- 
-									i(76750),	-- 
-									i(77015),	-- 
-									i(77019),	-- 
-									i(77025),	-- 
+									i(77010),	-- Necrotic Boneplate Faceguard
+									i(76976),	-- Necrotic Boneplate Helmet
+									i(77019),	-- Deep Earth Cover
+									i(77015),	-- Deep Earth Headpiece
+									i(76750),	-- Deep Earth Helm
+									i(76213),	-- Time Lord's Hood
+									i(77025),	-- Blackfang Battleweave Helmet
 								}),
+								i(71998),	-- Essence of Destruction
+								i(77224),	-- Ataraxis, Cudgel of the Warmaster
+								i(77225),	-- Visage of the Destroyer
+								i(77226),	-- Blackhorn's Mighty Bulwark
+								i(77227),	-- Timepiece of the Bronze Flight
+								i(77240),	-- Shadow Wing Armbands
+								i(77241),	-- Belt of the Beloved Companion
+								i(77239),	-- Goriona's Collar
+								i(77234),	-- Janglespur Jackboots
+								i(77230),	-- Breathstealer Band
+								i(77232),	-- Hardheart Ring
+								i(77228),	-- Infinite Loop
+								i(77231),	-- Seal of Primordial Shadow
+								i(77229),	-- Signet of Suturing
+								i(77210),	-- Bone-Link Fetish
+								i(77208),	-- Cunning of the Cruel
+								i(77211),	-- Indomitable Pride
+								i(77202),	-- Starcatcher Compass
+								i(77207),	-- Vial of Shadows
+								i(77209),	-- Windward Heart
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
-								i(152980), -- Elementium Back Plate
-								i(77236),	-- 
-								i(77238),	-- 
-								i(77235),	-- 
-								i(78357),	-- 
-								i(77237),	-- 
+								i(152980),	-- Elementium Back Plate (PET!)
+								i( 71998),	-- Essence of Destruction
+								i( 77236),	-- Backbreaker Spaulders
+								i( 77235),	-- Gauntlets of the Golden Thorn
+								i( 78357),	-- Gloves of Liquid Smoke
+								i( 77237),	-- Belt of Shattered Elementium
+								i( 77238),	-- Molten Blood Footpads
+								i( 77200),	-- Eye of Unmaking
+								i( 77199),	-- Heart of Unliving
+								i( 77201),	-- Resolve of Undying
+								i( 77198),	-- Will of Unbinding
+								i( 77197),	-- Wrath of Unchaining
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
-								i(152981), -- Severed Tentacle
-								i( 77191),	-- 
-								i( 77194),	-- 
-								i( 77196),	-- 
-								i( 77193),	-- 
-								i( 77188),	-- 
-								i( 77190),	-- 
-								i( 77189),	-- 
-								i( 77195),	-- 
-								i( 78359),	-- 
-								i( 77067),	-- 
-								i(122198),	-- 
+								i( 71998),	-- Essence of Destruction
+								i( 77067),	-- Reins of the Blazing Drake (MOUNT!)
+								i(152981),	-- Severed Tentacle (PET)!
+								i( 77191),	-- Gurthalak, Voice of the Deeps
+								i( 77194),	-- Kiril, Fury of Beasts
+								i( 77190),	-- Ti'tahk, the Steps of Time
+								i( 77189),	-- Blade of the Unmaker
+								i( 77196),	-- Maw of the Dragonlord
+								i( 77188),	-- No'Kaled, the Elements of Death
+								i( 77195),	-- Rathrak, the Poisonous Mind
+								i( 77193),	-- Souldrinker
+								i( 78359),	-- Vishanka, Jaws of the Earth
+								i(122198),	-- Music Roll: The Shattering
 							})),
 						},
 					}),
@@ -1365,211 +1498,293 @@ _.Instances =
 								},
 							}),						
 							cr(55265, e(311, {	-- Morchok
-								i(78371),	-- 
-								i(78363),	-- 
-								i(78367),	-- 
-								i(78373),	-- 
-								i(78368),	-- 
-								i(78372),	-- 
-								i(78366),	-- 
-								i(78365),	-- 
-								i(78362),	-- 
-								i(78370),	-- 
-								i(78361),	-- 
+								i(71998),	-- Essence of Destruction
+								i(78371),	-- Hand of Morchok
+								i(78363),	-- Vagaries of Time
+								i(78364),	-- Petrified Fungal Heart
+								i(78367),	-- Brackenshell Shoulderplates
+								i(78366),	-- Mosswrought Shoulderguards
+								i(78368),	-- Underdweller's Spaulders
+								i(78365),	-- Robe of Glowing Stone
+								i(78372),	-- Mycosynth Wristguards
+								i(78373),	-- Rockhide Bracers
+								i(78362),	-- Sporebeard Gauntlets
+								i(78370),	-- Girdle of Shattered Stone
+								i(78361),	-- Pillarfoot Greaves
+								i(78492),	-- Breathstealer Band
+								i(78493),	-- Hardheart Ring
+								i(78490),	-- Infinite Loop
+								i(78489),	-- Seal of Primordial Shadow
+								i(78491),	-- Signet of Suturing
+								i(78002),	-- Bone-Link Fetish
+								i(78000),	-- Cunning of the Cruel
+								i(78003),	-- Indomitable Pride
+								i(77999),	-- Vial of Shadows
+								i(78001),	-- Windward Heart
 							})),
 							cr(55308, e(324, {	-- Warlord Zon'ozz
-								i(78390),	-- 
-								i(78389),	-- 
-								i(78388),	-- 
-								i(78392),	-- 
-								i(78387),	-- 
-								i(78393),	-- 
-								i(78391),	-- 
+								i(71998),	-- Essence of Destruction
 								i(78853, {	-- Gauntlets of the Corrupted Conqueror
-									i(78683),	-- 
-									i(78677),	-- 
-									i(78681),	-- 
-									i(78673),	-- 
-									i(78682),	-- 
-									i(78675),	-- 
+									i(78675),	-- Gauntlets of Radiant Glory
+									i(78673),	-- Gloves of Radiant Glory
+									i(78677),	-- Handguards of Radiant Glory
+									i(78682),	-- Gloves of Dying Light
+									i(78683),	-- Handwraps of Dying Light
+									i(78681),	-- Gloves of the Faceless Shroud
 								}),
 								i(78854, {	-- Gauntlets of the Corrupted Protector
-									i(78674),	-- 
-									i(78672),	-- 
-									i(78667),	-- 
-									i(78666),	-- 
-									i(78669),	-- 
-									i(78668),	-- 
+									i(78674),	-- Wyrmstalker's Gloves
+									i(78666),	-- Spiritwalker's Gloves
+									i(78667),	-- Spiritwalker's Grips
+									i(78672),	-- Spiritwalker's Handwraps
+									i(78668),	-- Colossal Dragonplate Gauntlets
+									i(78669),	-- Colossal Dragonplate Handguards
 								}),
 								i(78855, {	-- Gauntlets of the Corrupted Vanquisher
-									i(78671),	-- 
-									i(78678),	-- 
-									i(78670),	-- 
-									i(78680),	-- 
-									i(78684),	-- 
-									i(78676),	-- 
-									i(78679),	-- 
+									i(78670),	-- Necrotic Boneplate Gauntlets
+									i(78678),	-- Necrotic Boneplate Handguards
+									i(78676),	-- Deep Earth Gloves
+									i(78684),	-- Deep Earth Grips
+									i(78680),	-- Deep Earth Handwraps
+									i(78671),	-- Time Lord's Gloves
+									i(78679),	-- Blackfang Battleweave Gloves
 								}),
+								i(78392),	-- Finger of Zon'ozz
+								i(78387),	-- Horrifying Horn Arbalest
+								i(78390),	-- Graveheart Bracers
+								i(78393),	-- Grotesquely Writhing Bracers
+								i(78388),	-- Belt of Flayed Skin
+								i(78391),	-- Cord of the Slain Champion
+								i(78389),	-- Treads of Crushed Flesh
+								i(78492),	-- Breathstealer Band
+								i(78493),	-- Hardheart Ring
+								i(78490),	-- Infinite Loop
+								i(78489),	-- Seal of Primordial Shadow
+								i(78491),	-- Signet of Suturing
+								i(78002),	-- Bone-Link Fetish
+								i(78000),	-- Cunning of the Cruel
+								i(78003),	-- Indomitable Pride
+								i(77989),	-- Seal of the Seven Signs
+								i(77999),	-- Vial of Shadows
+								i(78001),	-- Windward Heart
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-								i(152979), -- Puddle of Black Liquid
-								i(78403),	-- 
-								i(78402),	-- 
-								i(78401),	-- 
-								i(78404),	-- 
-								i(78406),	-- 
-								i(78405),	-- 
-								i(78856, {	-- Leggings of the Corrupted Conqueror
-									i(78719),	-- 
-									i(78712),	-- 
-									i(78715),	-- 
-									i(78721),	-- 
-									i(78722),	-- 
-									i(78717),	-- 
+								i( 71998),	-- Essence of Destruction
+								i( 78856, {	-- Leggings of the Corrupted Conqueror
+									i(78717),	-- Greaves of Radiant Glory
+									i(78715),	-- Legguards of Radiant Glory
+									i(78712),	-- Legplates of Radiant Glory
+									i(78722),	-- Leggings of Dying Light
+									i(78719),	-- Legwraps of Dying Light
+									i(78721),	-- Leggings of the Faceless Shroud
 								}),
-								i(78857, {	-- Leggings of the Corrupted Protector
-									i(78709),	-- 
-									i(78718),	-- 
-									i(78704),	-- 
-									i(78711),	-- 
-									i(78706),	-- 
-									i(78705),	-- 
+								i( 78857, {	-- Leggings of the Corrupted Protector
+									i(78709),	-- Wyrmstalker's Legguards
+									i(78711),	-- Spiritwalker's Kilt
+									i(78704),	-- Spiritwalker's Legguards
+									i(78718),	-- Spiritwalker's Legwraps
+									i(78705),	-- Colossal Dragonplate Legguards
+									i(78706),	-- Colossal Dragonplate Legplates
 								}),
-								i(78858, {	-- Leggings of the Corrupted Vanquisher
-									i(78720),	-- 
-									i(78716),	-- 
-									i(78707),	-- 
-									i(78710),	-- 
-									i(78713),	-- 
-									i(78714),	-- 
-									i(78708),	-- 
+								i( 78858, {	-- Leggings of the Corrupted Vanquisher
+									i(78707),	-- Necrotic Boneplate Greaves
+									i(78716),	-- Necrotic Boneplate Legguards
+									i(78714),	-- Deep Earth Leggings
+									i(78713),	-- Deep Earth Legguards
+									i(78710),	-- Deep Earth Legwraps
+									i(78720),	-- Time Lord's Leggings
+									i(78708),	-- Blackfang Battleweave Legguards
 								}),
+								i(152979),	-- Puddle of Black Liquid (PET!)
+								i( 78403),	-- Experimental Specimen Slicer
+								i( 78401),	-- Spire of Coagulated Globules
+								i( 78404),	-- Scalpel of Unrelenting Agony
+								i( 78406),	-- Heartblood Wristplates
+								i( 78402),	-- Interrogator's Bloody Footpads
+								i( 78405),	-- Mindstrainer Treads
+								i( 78492),	-- Breathstealer Band
+								i( 78493),	-- Hardheart Ring
+								i( 78490),	-- Infinite Loop
+								i( 78489),	-- Seal of Primordial Shadow
+								i( 78491),	-- Signet of Suturing
+								i( 78002),	-- Bone-Link Fetish
+								i( 78000),	-- Cunning of the Cruel
+								i( 78003),	-- Indomitable Pride
+								i( 77991),	-- Insignia of the Corrupted Mind
+								i( 77990),	-- Soulshifter Vortex
+								i( 77999),	-- Vial of Shadows
+								i( 78001),	-- Windward Heart
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
-								i(78416),	-- 
-								i(78418),	-- 
-								i(78414),	-- 
-								i(78420),	-- 
-								i(78417),	-- 
-								i(78415),	-- 
+								i(71998),	-- Essence of Destruction
 								i(78859, {	-- Shoulders of the Corrupted Conqueror
-									i(78745),	-- 
-									i(78742),	-- 
-									i(78749),	-- 
-									i(78746),	-- 
-									i(78747),	-- 
-									i(78750),	-- 
+									i(78746),	-- Mantle of Radiant Glory
+									i(78742),	-- Pauldrons of Radiant Glory
+									i(78745),	-- Shoulderguards of Radiant Glory
+									i(78747),	-- Mantle of Dying Light
+									i(78750),	-- Mantle of Dying Light
+									i(78749),	-- Mantle of the Faceless Shroud
 								}),
 								i(78860, {	-- Shoulders of the Corrupted Protector
-									i(78737),	-- 
-									i(78733),	-- 
-									i(78741),	-- 
-									i(78739),	-- 
-									i(78734),	-- 
-									i(78735),	-- 
+									i(78737),	-- Wyrmstalker's Spaulders
+									i(78739),	-- Spiritwalker's Mantle
+									i(78741),	-- Spiritwalker's Shoulderwraps
+									i(78733),	-- Spiritwalker's Spaulders
+									i(78735),	-- Colossal Dragonplate Pauldrons
+									i(78734),	-- Colossal Dragonplate Shoulderguards
 								}),
 								i(78861, {	-- Shoulders of the Corrupted Vanquisher
-									i(78748),	-- 
-									i(78751),	-- 
-									i(78736),	-- 
-									i(78743),	-- 
-									i(78744),	-- 
-									i(78740),	-- 
-									i(78738),	-- 
+									i(78736),	-- Necrotic Boneplate Pauldrons
+									i(78751),	-- Necrotic Boneplate Shoulderguards
+									i(78740),	-- Deep Earth Mantle
+									i(78744),	-- Deep Earth Shoulderwraps
+									i(78743),	-- Deep Earth Spaulders
+									i(78748),	-- Time Lord's Mantle
+									i(78738),	-- Blackfang Battleweave Spaulders
 								}),
+								i(78418),	-- Lightning Rod
+								i(78414),	-- Electrowing Dagger
+								i(78417),	-- Bracers of the Banished
+								i(78420),	-- Girdle of the Grotesque
+								i(78416),	-- Runescriven Demon Collar
+								i(78415),	-- Treads of Dormant Dreams
+								i(78492),	-- Breathstealer Band
+								i(78493),	-- Hardheart Ring
+								i(78490),	-- Infinite Loop
+								i(78419),	-- Ring of the Riven
+								i(78489),	-- Seal of Primordial Shadow
+								i(78413),	-- Signet of Grasping Mouths
+								i(78491),	-- Signet of Suturing
+								i(78002),	-- Bone-Link Fetish
+								i(78000),	-- Cunning of the Cruel
+								i(78003),	-- Indomitable Pride
+								i(77999),	-- Vial of Shadows
+								i(78001),	-- Windward Heart
 							})),
 							cr(55294, e(331, {	-- Ultraxion
-								i(78429),	-- 
-								i(78431),	-- 
-								i(78433),	-- 
-								i(78434),	-- 
-								i(78435),	-- 
-								i(78430),	-- 
-								i(78436),	-- 
-								i(78919),	-- 
 								i(78847, {	-- Chest of the Corrupted Conqueror
-									i(78730),	-- 
-									i(78728),	-- 
-									i(78731),	-- 
-									i(78732),	-- 
-									i(78726),	-- 
-									i(78727),	-- 
+									i(78727),	-- Battleplate of Radiant Glory
+									i(78726),	-- Breastplate of Radiant Glory
+									i(78732),	-- Chestguard of Radiant Glory
+									i(78728),	-- Robes of Dying Light
+									i(78731),	-- Robes of Dying Light
+									i(78730),	-- Robes of the Faceless Shroud
 								}),
 								i(78848, {	-- Chest of the Corrupted Protector
-									i(78661),	-- 
-									i(78725),	-- 
-									i(78723),	-- 
-									i(78724),	-- 
-									i(78658),	-- 
-									i(78657),	-- 
+									i(78661),	-- Wyrmstalker's Tunic
+									i(78724),	-- Spiritwalker's Cuirass
+									i(78723),	-- Spiritwalker's Hauberk
+									i(78725),	-- Spiritwalker's Tunic
+									i(78657),	-- Colossal Dragonplate Battleplate
+									i(78658),	-- Colossal Dragonplate Chestguard
 								}),
 								i(78849, {	-- Chest of the Corrupted Vanquisher
-									i(78729),	-- 
-									i(78663),	-- 
-									i(78659),	-- 
-									i(78662),	-- 
-									i(78660),	-- 
-									i(78665),	-- 
-									i(78664),	-- 
+									i(78659),	-- Necrotic Boneplate Breastplate
+									i(78663),	-- Necrotic Boneplate Chestguard
+									i(78665),	-- Deep Earth Raiment
+									i(78660),	-- Deep Earth Robes
+									i(78662),	-- Deep Earth Vestment
+									i(78729),	-- Time Lord's Robes
+									i(78664),	-- Blackfang Battleweave Tunic
 								}),
+								i(71998),	-- Essence of Destruction
+								i(78919),	-- Experiment 12-B (MOUNT!)
+								i(78429),	-- Morningstar of Heroic Will
+								i(78433),	-- Ledger of Revolting Rituals
+								i(78435),	-- Imperfect Specimens 27 and 28
+								i(78430),	-- Bracers of Looming Darkness
+								i(78436),	-- Dragonfracture Belt
+								i(78431),	-- Stillheart Warboots
+								i(78434),	-- Treads of Sordid Screams
+								i(78492),	-- Breathstealer Band
+								i(78432),	-- Curled Twilight Claw
+								i(78493),	-- Hardheart Ring
+								i(78490),	-- Infinite Loop
+								i(78489),	-- Seal of Primordial Shadow
+								i(78491),	-- Signet of Suturing
+								i(78002),	-- Bone-Link Fetish
+								i(77992),	-- Creche of the Final Dragon
+								i(78000),	-- Cunning of the Cruel
+								i(78003),	-- Indomitable Pride
+								i(77999),	-- Vial of Shadows
+								i(78001),	-- Windward Heart
 							})),
 							cr(56427, e(332, {	-- Warmaster Blackthorn
-								i(78445),	-- 
-								i(78452),	-- 
-								i(78446),	-- 
-								i(78451),	-- 
-								i(78448),	-- 
-								i(78450),	-- 
-								i(78447),	-- 
-								i(78449),	-- 
 								i(78850, {	-- Crown of the Corrupted Conqueror
-									i(78702),	-- 
-									i(78703),	-- 
-									i(78693),	-- 
-									i(78692),	-- 
-									i(78695),	-- 
-									i(78700),	-- 
+									i(78695),	-- Faceguard of Radiant Glory
+									i(78692),	-- Headguard of Radiant Glory
+									i(78693),	-- Helmet of Radiant Glory
+									i(78700),	-- Cowl of Dying Light
+									i(78703),	-- Hood of Dying Light
+									i(78702),	-- Hood of the Faceless Shroud
 								}),
 								i(78851, {	-- Crown of the Corrupted Protector
-									i(78698),	-- 
-									i(78686),	-- 
-									i(78685),	-- 
-									i(78691),	-- 
-									i(78688),	-- 
-									i(78689),	-- 
+									i(78698),	-- Wyrmstalker's Headguard
+									i(78691),	-- Spiritwalker's Faceguard
+									i(78685),	-- Spiritwalker's Headpiece
+									i(78686),	-- Spiritwalker's Helmet
+									i(78689),	-- Colossal Dragonplate Faceguard
+									i(78688),	-- Colossal Dragonplate Helmet
 								}),
 								i(78852, {	-- Crown of the Corrupted Vanquisher
-									i(78701),	-- 
-									i(78687),	-- 
-									i(78697),	-- 
-									i(78690),	-- 
-									i(78694),	-- 
-									i(78696),	-- 
-									i(78699),	-- 
+									i(78697),	-- Necrotic Boneplate Faceguard
+									i(78687),	-- Necrotic Boneplate Helmet
+									i(78696),	-- Deep Earth Cover
+									i(78694),	-- Deep Earth Headpiece
+									i(78690),	-- Deep Earth Helm
+									i(78701),	-- Time Lord's Hood
+									i(78699),	-- Blackfang Battleweave Helmet
 								}),
+								i(71998),	-- Essence of Destruction
+								i(78445),	-- Ataraxis, Cudgel of the Warmaster
+								i(78451),	-- Visage of the Destroyer
+								i(78448),	-- Blackhorn's Mighty Bulwark
+								i(78450),	-- Timepiece of the Bronze Flight
+								i(78446),	-- Shadow Wing Armbands
+								i(78447),	-- Belt of the Beloved Companion
+								i(78452),	-- Goriona's Collar
+								i(78449),	-- Janglespur Jackboots
+								i(78492),	-- Breathstealer Band
+								i(78493),	-- Hardheart Ring
+								i(78490),	-- Infinite Loop
+								i(78489),	-- Seal of Primordial Shadow
+								i(78491),	-- Signet of Suturing
+								i(78002),	-- Bone-Link Fetish
+								i(78000),	-- Cunning of the Cruel
+								i(78003),	-- Indomitable Pride
+								i(77993),	-- Starcatcher Compass
+								i(77999),	-- Vial of Shadows
+								i(78001),	-- Windward Heart
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
-								i(152980), -- Elementium Back Plate
-								i(78465),	-- 
-								i(78462),	-- 
-								i(78464),	-- 
-								i(78461),	-- 
-								i(78463),	-- 
+								i(152980),	-- Elementium Back Plate (PET!)
+								i( 71998),	-- Essence of Destruction
+								i( 78465),	-- Backbreaker Spaulders
+								i( 78464),	-- Gauntlets of the Golden Thorn
+								i( 78461),	-- Gloves of Liquid Smoke
+								i( 78463),	-- Belt of Shattered Elementium
+								i( 78462),	-- Molten Blood Footpads
+								i( 77997),	-- Eye of Unmaking
+								i( 77996),	-- Heart of Unliving
+								i( 77998),	-- Resolve of Undying
+								i( 77995),	-- Will of Unbinding
+								i( 77994),	-- Wrath of Unchaining
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
-								i(152981), -- Severed Tentacle
-								i(78478),	-- 
-								i(78473),	-- 
-								i(78476),	-- 
-								i(78479),	-- 
-								i(78472),	-- 
-								i(78477),	-- 
-								i(78474),	-- 
-								i(78475),	-- 
-								i(78471),	-- 
-								i(77069),	-- 
-								i(77067),	-- 
-								i(122198),	-- 
+								i( 71998),	-- Essence of Destruction
+								i( 77069),	-- Life-Binder's Handmaiden (MOUNT!)
+								i( 77067),	-- Reins of the Blazing Drake (MOUNT!)
+								i(152981),	-- Severed Tentacle (PET!)
+								i( 78478),	-- Gurthalak, Voice of the Deeps
+								i( 78473),	-- Kiril, Fury of Beasts
+								i( 78477),	-- Ti'tahk, the Steps of Time
+								i( 78474),	-- Blade of the Unmaker
+								i( 78476),	-- Maw of the Dragonlord
+								i( 78472),	-- No'Kaled, the Elements of Death
+								i( 78475),	-- Rathrak, the Poisonous Mind
+								i( 78479),	-- Souldrinker
+								i( 78471),	-- Vishanka, Jaws of the Earth
+								i(122198),	-- Music Roll: The Shattering
 							})),
 						},
 					}),
