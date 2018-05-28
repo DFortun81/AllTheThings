@@ -690,6 +690,26 @@ _.Zones =
 						i(99090),	-- Leggings of Celestial HarmonyShaman
 						i(99091),	-- Shoulderwraps of Celestial HarmonyShaman
 					}),
+					n(64051, {	-- Esha the Loommaiden <Tailoring Supplies>
+						i(76061, {	-- Spirit of Harmony
+							i(86361),	-- Pattern: Contender's Satin Amice
+							i(86367),	-- Pattern: Contender's Satin Belt
+							i(86360),	-- Pattern: Contender's Satin Cowl
+							i(86365),	-- Pattern: Contender's Satin Cuffs
+							i(86366),	-- Pattern: Contender's Satin Footwraps
+							i(86363),	-- Pattern: Contender's Satin Handwraps
+							i(86364),	-- Pattern: Contender's Satin Pants
+							i(86362),	-- Pattern: Contender's Satin Raiment
+							i(86353),	-- Pattern: Contender's Silk Amice
+							i(86359),	-- Pattern: Contender's Silk Belt
+							i(86352),	-- Pattern: Contender's Silk Cowl
+							i(86357),	-- Pattern: Contender's Silk Cuffs
+							i(86358),	-- Pattern: Contender's Silk Footwraps
+							i(86355),	-- Pattern: Contender's Silk Handwraps
+							i(86356),	-- Pattern: Contender's Silk Pants
+							i(86354),	-- Pattern: Contender's Silk Raiment
+						}),
+					}),
 					n(64062, {	-- Gentle Dari <First Aid Supplies>
 						i(44693),	-- Wound Dressing Shirt
 						i(44694),	-- Antiseptic-Soaked Dressing Shirt
@@ -1217,26 +1237,6 @@ _.Zones =
 						i(99664),	-- Shoulderguards of the Stattered Vale
 						i(99665),	-- Headguard of Winged Triumph
 						i(99666),	-- Greaves of Winged Triumph
-					}),
-					n(64052, {	-- Raishen the Needle <Tailoring Supplies>
-						i(76061, {	-- Spirit of Harmony
-							i(86361),	-- Pattern: Contender's Satin Amice
-							i(86367),	-- Pattern: Contender's Satin Belt
-							i(86360),	-- Pattern: Contender's Satin Cowl
-							i(86365),	-- Pattern: Contender's Satin Cuffs
-							i(86366),	-- Pattern: Contender's Satin Footwraps
-							i(86363),	-- Pattern: Contender's Satin Handwraps
-							i(86364),	-- Pattern: Contender's Satin Pants
-							i(86362),	-- Pattern: Contender's Satin Raiment
-							i(86353),	-- Pattern: Contender's Silk Amice
-							i(86359),	-- Pattern: Contender's Silk Belt
-							i(86352),	-- Pattern: Contender's Silk Cowl
-							i(86357),	-- Pattern: Contender's Silk Cuffs
-							i(86358),	-- Pattern: Contender's Silk Footwraps
-							i(86355),	-- Pattern: Contender's Silk Handwraps
-							i(86356),	-- Pattern: Contender's Silk Pants
-							i(86354),	-- Pattern: Contender's Silk Raiment
-						}),
 					}),
 					n(64126, {	-- Stephen Wong <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight

@@ -779,6 +779,7 @@ _.Zones =
 					n(17904, {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
 						i(33999),	-- Cenarion War Hippogryph Mount
 						i(31804),	-- Cenarion Expedition Tabard
+						un(1, i(24315)),	-- Pattern: Heavy Netherweave Net
 						i(33149),	-- Formula: Enchant Cloak - Stealth
 						i(28271),	-- Formula: Enchant Gloves - Precise Strikes
 						i(31390, {	-- Plans: Wildguard Breastplate

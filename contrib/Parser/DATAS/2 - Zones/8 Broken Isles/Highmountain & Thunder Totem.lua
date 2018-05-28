@@ -1843,6 +1843,9 @@ _.Zones =
 							}),
 						}),
 					}),
+					prof(197, {	-- Tailoring
+						desc(i(137681), "Can drop from any Feltotem."),	-- Recipe: Bloodtotem Saddle Blanket
+					}),
 				}),
 				n(-34, { 	-- World Quests
 					n(-322, { -- Cloak
