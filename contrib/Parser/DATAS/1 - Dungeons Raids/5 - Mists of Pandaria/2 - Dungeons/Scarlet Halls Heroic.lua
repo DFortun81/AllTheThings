@@ -29,7 +29,8 @@ _.Instances =
 								i(143966),	-- Canine Commander's Breastplate
 								i(144191),	-- Commanding Bracers
 								i(144192),	-- Hound Trainer's Gloves
-								nld({     		-- Legacy
+								i(144177),	-- Beastbinder Ring
+								nld({	-- Legacy
 									un(2, i(81693)),	-- Houndmaster's Compound Crossbow (7.1 - Removed from Game!)
 									un(2, i(81696)),	-- Canine Commander's Breastplate (7.1 - Removed from Game!)
 									un(2, i(81694)),	-- Commanding Bracers (7.1 - Removed from Game!)
@@ -37,12 +38,13 @@ _.Instances =
 								}),
 							})),
 							cr(58632, e(654, {	-- Armsmaster Harlan
-								i(23192),	-- Tabard of the Scarlet Crusade
+								i(23192),	-- Tabard of the Scarlet Crusade (not in Dungeon Journal)
 								i(144193),	-- The Gleaming Ravager
+								i(144182),	-- Armsmaster's Sealed Locket
 								i(144006),	-- Harlan's Shoulder
 								i(144194),	-- Lightblade Bracer
 								i(144007),	-- Scarlet Sandals
-								nld({     		-- Legacy
+								nld({	-- Legacy
 									un(2, i(81697)),	-- The Gleaming Ravager (7.1 - Removed from Game!)
 									un(2, i(81698)),	-- Harlan's Shoulder (7.1 - Removed from Game!)
 									un(2, i(81700)),	-- Lightblade Bracer (7.1 - Removed from Game!)
@@ -53,12 +55,15 @@ _.Instances =
 								i(144196),	-- Mograine's Immaculate Might
 								i(144195),	-- Koegler's Ritual Knife
 								i(144198),	-- Melted Hypnotic Blade
+								i(144178),	-- Scorched Scarlet Key
+								i(144179),	-- Temperature-Sensing Necklace
 								i(144009),	-- Robes of Koegler
 								i(144199),	-- Vellum-Ripper Gloves
 								i(144197),	-- Bindburner Belt
 								i(144010),	-- Bradbury's Entropic Legguards
 								i(144008),	-- Pyretic Legguards
-								nld({     		-- Legacy
+								i(144220),	-- Vithrak, Gaze of the Deadman
+								nld({	-- Legacy
 									un(2, i(82814)),	-- Mograine's Immaculate Might (7.1 - Removed from Game!)
 									un(2, i(82813)),	-- Koegler's Ritual Knife (7.1 - Removed from Game!)
 									un(2, i(82816)),	-- Melted Hypnotic Blade (7.1 - Removed from Game!)

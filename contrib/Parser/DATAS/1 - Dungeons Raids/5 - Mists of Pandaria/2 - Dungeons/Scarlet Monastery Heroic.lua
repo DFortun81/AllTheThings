@@ -31,7 +31,8 @@ _.Instances =
 								i(144183),	-- Soulrender Greatcloak
 								i(144184),	-- Bracers of the Fallen Crusader
 								i(144002),	-- Legguards of the Crimson Magus
-								nld({     		-- Legacy
+								i(144174),	-- Signet of the Hidden Door
+								nld({	-- Legacy
 									un(2, i(81569)),	-- Forgotten Bloodmage Mantle (7.1 - Removed from Game!)
 									un(2, i(81571)),	-- Soulrender Greatcloak (7.1 - Removed from Game!)
 									un(2, i(81572)),	-- Bracers of the Fallen Crusader (7.1 - Removed from Game!)
@@ -43,7 +44,8 @@ _.Instances =
 								i(144026),	-- Helm of Rising Flame
 								i(144185),	-- Scorched Earth Cloak
 								i(143965),	-- Korloff's Raiment
-								nld({     		-- Legacy
+								i(144175),	-- Firefinger Ring
+								nld({	-- Legacy
 									un(2, i(81576)),	-- Firestorm Greatstaff (7.1 - Removed from Game!)
 									un(2, i(81574)),	-- Helm of Rising Flame (7.1 - Removed from Game!)
 									un(2, i(81575)),	-- Scorched Earth Cloak (7.1 - Removed from Game!)
@@ -55,10 +57,13 @@ _.Instances =
 								i(144187),	-- Lightbreaker Greatsword
 								i(144027),	-- Crown of Holy Flame
 								i(144028),	-- Whitemane's Embroidered Chapeau
+								i(144221),	-- Helios, Durand's Soul of Purity
 								i(144005),	-- Incarnadine Scarlet Spaulders
 								i(144188),	-- Waistplate of Imminent Resurrection
 								i(144004),	-- Leggings of Hallowed Fire
 								i(144003),	-- Dashing Strike Treads
+								i(144176),	-- Triune Signet
+								i(144158),	-- Flashing Steel Talisman
 								nld({     		-- Legacy
 									un(2, i(81691)),	-- Greatstaff of Righteousness (7.1 - Removed from Game!)
 									un(2, i(81577)),	-- Lightbreaker Greatsword (7.1 - Removed from Game!)
