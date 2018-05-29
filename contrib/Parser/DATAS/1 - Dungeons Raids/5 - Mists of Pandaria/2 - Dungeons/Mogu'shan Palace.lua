@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(321, { 	-- Mogu'shan Palace
 				["groups"] = {
-					d(1, {		-- Normal
+					d( 1, {	-- Normal
 						["ids"] = { 3541 },	-- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 						
@@ -38,9 +38,10 @@ _.Instances =
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
 								i(144020),	-- Crest of the Clan Lords	
 								i(144021),	-- Meteoric Greathelm
+								i(144144),	-- Whirling Dervish Choker
 								i(144145),	-- Conflagrating Gloves
 								i(144143),	-- Hurricane Belt
-								nld({     		-- Legacy
+								nld({	-- Legacy
 									un(2, i(85175)),	-- Crest of the Clan Lords (7.1 - Removed from Game!)
 									un(2, i(85179)),	-- Meteoric Greathelm (7.1 - Removed from Game!)
 									un(2, i(85178)),	-- Conflagrating Gloves (7.1 - Removed from Game!)
@@ -52,7 +53,8 @@ _.Instances =
 								i(144147),	-- Cloak of Cleansing Flames
 								i(144149),	-- Hexxer's Lethargic Gloves
 								i(143992),	-- Glintrok Sollerets
-								nld({     		-- Legacy
+								i(144146),	-- Iron Protector Talisman
+								nld({	-- Legacy
 									un(2, i(85183)),	-- Claws of Gekkan (7.1 - Removed from Game!)
 									un(2, i(85182)),	-- Cloak of Cleansing Flames (7.1 - Removed from Game!)
 									un(2, i(85184)),	-- Hexxer's Lethargic Gloves (7.1 - Removed from Game!)
@@ -63,13 +65,15 @@ _.Instances =
 								i(144150),	-- Ghostheart
 								i(144214),	-- Mogu'Dar, Blade of the Thousand Slaves
 								i(144154),	-- Firescribe Dagger
+								i(144155),	-- Mindcapture Pendant
 								i(143995),	-- Regal Silk Shoulderpads
 								i(143956),	-- Mind's Eye Breastplate
 								i(144153),	-- Groundshaker Bracer
 								i(144151),	-- Axebreaker Gauntlets
 								i(143993),	-- Boots of Plummeting Death
 								i(143994),	-- Soulbinder Treads
-								nld({     		-- Legacy
+								i(144152),	-- Blade Trap Signet
+								nld({	-- Legacy
 									un(2, i(85185)),	-- Ghostheart (7.1 - Removed from Game!)
 									un(2, i(85190)),	-- Firescribe Dagger (7.1 - Removed from Game!)
 									un(2, i(85194)),	-- Regal Silk Shoulderpads (7.1 - Removed from Game!)
@@ -79,19 +83,20 @@ _.Instances =
 									un(2, i(85187)),	-- Boots of Plummeting Death (7.1 - Removed from Game!)
 									un(2, i(85192)),	-- Soulbinder Treads (7.1 - Removed from Game!)
 								}),
-							}))
-						}
+							})),
+						},
 					}),
-					d(2, {		-- Heroic
+					d( 2, {	-- Heroic
 						["ids"] = { 524 },	-- Heroic
 						["lvl"] = 90,
 						["groups"] = {
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
 								i(144020),	-- Crest of the Clan Lords	
 								i(144021),	-- Meteoric Greathelm
+								i(144144),	-- Whirling Dervish Choker
 								i(144145),	-- Conflagrating Gloves
 								i(144143),	-- Hurricane Belt
-								nld({     		-- Legacy
+								nld({	-- Legacy
 									un(2, i(81237)),	-- Crest of the Clan Lords (7.1 - Removed from Game!)
 									un(2, i(81241)),	-- Meteoric Greathelm (7.1 - Removed from Game!)
 									un(2, i(81240)),	-- Conflagrating Gloves (7.1 - Removed from Game!)
@@ -103,7 +108,8 @@ _.Instances =
 								i(144147),	-- Cloak of Cleansing Flames
 								i(144149),	-- Hexxer's Lethargic Gloves
 								i(143992),	-- Glintrok Sollerets
-								nld({     		-- Legacy
+								i(144146),	-- Iron Protector Talisman
+								nld({	-- Legacy
 									un(2, i(81245)),	-- Claws of Gekkan (7.1 - Removed from Game!)
 									un(2, i(81244)),	-- Cloak of Cleansing Flames (7.1 - Removed from Game!)
 									un(2, i(81246)),	-- Hexxer's Lethargic Gloves (7.1 - Removed from Game!)
@@ -114,13 +120,15 @@ _.Instances =
 								i(144150),	-- Ghostheart
 								i(144214),	-- Mogu'Dar, Blade of the Thousand Slaves
 								i(144154),	-- Firescribe Dagger
+								i(144155),	-- Mindcapture Pendant
 								i(143995),	-- Regal Silk Shoulderpads
 								i(143956),	-- Mind's Eye Breastplate
 								i(144153),	-- Groundshaker Bracer
 								i(144151),	-- Axebreaker Gauntlets
 								i(143993),	-- Boots of Plummeting Death
 								i(143994),	-- Soulbinder Treads
-								nld({     		-- Legacy
+								i(144152),	-- Blade Trap Signet
+								nld({	-- Legacy
 									un(2, i(81247)),	-- Ghostheart (7.1 - Removed from Game!)
 									un(2, i(87542)),	-- Mogu'Dar, Blade of the Thousand Slaves (7.1 - Removed from Game!)
 									un(2, i(81253)),	-- Firescribe Dagger (7.1 - Removed from Game!)
@@ -131,38 +139,42 @@ _.Instances =
 									un(2, i(81249)),	-- Boots of Plummeting Death (7.1 - Removed from Game!)
 									un(2, i(81255)),	-- Soulbinder Treads (7.1 - Removed from Game!)
 								}),
-							}))
-						}
+							})),
+						},
 					}),
-					d(24, {		-- Timewalking
+					d(24, {	-- Timewalking
 						["ids"] = { 615 },	-- Timewalking
 						["lvl"] = 85,
 						["groups"] = {
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
 								i(144020),	-- Crest of the Clan Lords	
 								i(144021),	-- Meteoric Greathelm
+								i(144144),	-- Whirling Dervish Choker
 								i(144145),	-- Conflagrating Gloves
-								i(144143)	-- Hurricane Belt
+								i(144143),	-- Hurricane Belt
 							})),
 							cr(61243, e(690, {	-- Gekkan
 								i(144148),	-- Claws of Gekkan
 								i(144147),	-- Cloak of Cleansing Flames
 								i(144149),	-- Hexxer's Lethargic Gloves
-								i(143992)	-- Glintrok Sollerets
+								i(143992),	-- Glintrok Sollerets
+								i(144146),	-- Iron Protector Talisman
 							})),
 							cr(61398, e(698, {	-- Xin the Weaponmaster
 								i(144150),	-- Ghostheart
 								i(144214),	-- Mogu'Dar, Blade of the Thousand Slaves
 								i(144154),	-- Firescribe Dagger
+								i(144155),	-- Firescribe Dagger
 								i(143995),	-- Regal Silk Shoulderpads
 								i(143956),	-- Mind's Eye Breastplate
 								i(144153),	-- Groundshaker Bracer
 								i(144151),	-- Axebreaker Gauntlets
 								i(143993),	-- Boots of Plummeting Death
-								i(143994)	-- Soulbinder Treads
-							}))
-						}
-					})
+								i(143994),	-- Soulbinder Treads
+								i(144152),	-- Blade Trap Signet
+							})),
+						},
+					}),
 				},
 				["lvl"] = 87,
 				["mapID"] = 885

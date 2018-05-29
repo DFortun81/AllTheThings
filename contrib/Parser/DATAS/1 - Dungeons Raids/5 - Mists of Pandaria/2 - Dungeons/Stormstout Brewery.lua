@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(302, { 	-- Stormstout Brewery
 				["groups"] = {
-					d(1, {		-- Normal
+					d( 1, {	-- Normal
 						["ids"] = { 3543 }, -- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 						
@@ -36,7 +36,8 @@ _.Instances =
 								i(143957),	-- Nimbletoe Chestguard
 								i(144087),	-- Bracers of Displaced Air
 								i(143989),	-- Barreldodger Boots
-								nld({     		-- Legacy
+								i(144119),	-- Empty Fruit Barrel
+								nld({	-- Legacy
 									un(2, i(80892)),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
 									un(2, i(80896)),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
 									un(2, i(80897)),	-- Bracers of Displaced Air (7.1 - Removed from Game!)
@@ -48,7 +49,7 @@ _.Instances =
 								i(144088),	-- Bubble-Breaker Bracers
 								i(144120),	-- Belt of Brazen Inebriation
 								i(143975),	-- Hopping Mad Leggings
-								nld({     		-- Legacy
+								nld({	-- Legacy
 									un(2, i(80893)),	-- Bottle of Potent Potables (7.1 - Removed from Game!)
 									un(2, i(80899)),	-- Bubble-Breaker Bracers (7.1 - Removed from Game!)
 									un(2, i(80898)),	-- Hopping Mad Leggings (7.1 - Removed from Game!)
@@ -63,7 +64,10 @@ _.Instances =
 								i(143958),	-- Uncasked Chestguard
 								i(144082),	-- Fermenting Belt
 								i(143976),	-- Sudsy Legplates
-								nld({     		-- Legacy
+								i(144125),	-- Alemental Seal
+								i(144123),	-- Lime-Rimmed Signet
+								i(144122),	-- Carbonic Carbuncle
+								nld({	-- Legacy
 									un(2, i(80894)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
 									un(2, i(80895)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
 									un(2, i(80900)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
@@ -71,10 +75,10 @@ _.Instances =
 									un(2, i(80903)),	-- Fermenting Belt (7.1 - Removed from Game!)
 									un(2, i(80901)),	-- Sudsy Legplates (7.1 - Removed from Game!)
 								}),
-							}))
-						}
+							})),
+						},
 					}),
-					d(2, {		-- Heroic
+					d( 2, {	-- Heroic
 						["ids"] = { 524 }, -- Heroic
 						["lvl"] = 90,
 						["groups"] = {
@@ -83,7 +87,8 @@ _.Instances =
 								i(143957),	-- Nimbletoe Chestguard
 								i(144087),	-- Bracers of Displaced Air
 								i(143989),	-- Barreldodger Boots
-								nld({     		-- Legacy
+								i(144119),	-- Empty Fruit Barrel
+								nld({	-- Legacy
 									un(2, i(81061)),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
 									un(2, i(81080)),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
 									un(2, i(81064)),	-- Bracers of Displaced Air (7.1 - Removed from Game!)
@@ -96,7 +101,7 @@ _.Instances =
 								i(144088),	-- Bubble-Breaker Bracers
 								i(144120),	-- Belt of Brazen Inebriation
 								i(143975),	-- Hopping Mad Leggings
-								nld({     		-- Legacy
+								nld({	-- Legacy
 									un(2, i(81076)),	-- Bottle of Potent Potables (7.1 - Removed from Game!)
 									un(2, i(81136)),	-- Cloak of Hidden Flasks (7.1 - Removed from Game!)
 									un(2, i(81065)),	-- Bubble-Breaker Bracers (7.1 - Removed from Game!)
@@ -113,7 +118,10 @@ _.Instances =
 								i(143958),	-- Uncasked Chestguard
 								i(144082),	-- Fermenting Belt
 								i(143976),	-- Sudsy Legplates
-								nld({     		-- Legacy
+								i(144125),	-- Alemental Seal
+								i(144123),	-- Lime-Rimmed Signet
+								i(144122),	-- Carbonic Carbuncle
+								nld({	-- Legacy
 									un(2, i(81140)),	-- Wort Stirring Rod (7.1 - Removed from Game!)
 									un(2, i(81062)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
 									un(2, i(87545)),	-- Inelava, Spirit of Inebriation (7.1 - Removed from Game!)
@@ -123,10 +131,10 @@ _.Instances =
 									un(2, i(81059)),	-- Fermenting Belt (7.1 - Removed from Game!)
 									un(2, i(81078)),	-- Sudsy Legplates (7.1 - Removed from Game!)
 								}),
-							}))
-						}
+							})),
+						},
 					}),
-					d(24, {		-- Timewalking
+					d(24, {	-- Timewalking
 						["ids"] = { 615 }, -- Timewalking
 						["lvl"] = 85,
 						["groups"] = {
@@ -134,14 +142,15 @@ _.Instances =
 								i(144084),	-- Ook's Hozen Slicer
 								i(143957),	-- Nimbletoe Chestguard
 								i(144087),	-- Bracers of Displaced Air
-								i(143989)	-- Barreldodger Boots
+								i(143989),	-- Barreldodger Boots
+								i(144119),	-- Empty Fruit Barrel
 							})),
 							cr(56717, e(669, {	-- Hoptallus
 								i(144092),	-- Bottle of Potent Potables
 								i(144121),	-- Cloak of Hidden Flasks
 								i(144088),	-- Bubble-Breaker Bracers
 								i(144120),	-- Belt of Brazen Inebriation
-								i(143975)	-- Hopping Mad Leggings
+								i(143975),	-- Hopping Mad Leggings
 							})),
 							cr(59479, e(670, {	-- Yan-Zhu the Uncasked
 								i(144124),	-- Wort Stirring Rod
@@ -151,10 +160,13 @@ _.Instances =
 								i(143969),	-- Fizzy Spaulders
 								i(143958),	-- Uncasked Chestguard
 								i(144082),	-- Fermenting Belt
-								i(143976)	-- Sudsy Legplates
-							}))
-						}
-					})
+								i(143976),	-- Sudsy Legplates
+								i(144125),	-- Alemental Seal
+								i(144123),	-- Lime-Rimmed Signet
+								i(144122),	-- Carbonic Carbuncle
+							})),
+						},
+					}),
 				},
 				["lvl"] = 85,
 				["mapID"] = 876

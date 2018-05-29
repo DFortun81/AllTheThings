@@ -4,12 +4,12 @@
 
 _.Instances = 
 {
-	{ -- Mists of Pandaria
+	{	-- Mists of Pandaria
 		["groups"] = {
 			inst(313, { 	-- Temple of the Jade Serpent
 				["groups"] = {
-					d(1, {		-- Normal
-						["ids"] = { 3543 }, -- Normal
+					d( 1, {	-- Normal
+						["ids"] = { 3543 },	-- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 					
 								q(31356, {
@@ -48,50 +48,54 @@ _.Instances =
 								sq(33020, o(221413, q(33107))),	-- Lin Family Scroll / Bad Feeling, Worse Result
 							}),
 							cr(56448, e(672, {	-- Wise Mari
-								i(144017), -- Waterburst Helm
-								i(144111), -- Wind-Soaked 
-								i(143960), -- Riverbed Chestguard
-								i(143973), -- Treads of Corrupted Water
-								nld({     		-- Legacy
+								i(144017),	-- Waterburst Helm
+								i(144111),	-- Wind-Soaked 
+								i(143960),	-- Riverbed Chestguard
+								i(143973),	-- Treads of Corrupted Water
+								i(144112),	-- Crystallized Droplet
+								nld({	-- Legacy
 									un(2, i(80860)),	-- Waterburst Helm (7.1 - Removed from Game!)
 									un(2, i(80861)),	-- Riverbed Chestguard (7.1 - Removed from Game!)
 									un(2, i(80862)),	-- Treads of Corrupted Water (7.1 - Removed from Game!)
 								}),
 							})),
 							cr(56843, e(664, {	-- Lorewalker Stonestep
-								i(144081), -- Girdle of Endemic Anger
-								i(144083), -- Sunheart Waistband
-								i(143987), -- Leggings of Whispered Dreams
-								i(143974), -- Stonestep Boots
-								nld({     		-- Legacy
+								i(144081),	-- Girdle of Endemic Anger
+								i(144083),	-- Sunheart Waistband
+								i(143987),	-- Leggings of Whispered Dreams
+								i(143974),	-- Stonestep Boots
+								i(144113),	-- Windswept Pages
+								nld({	-- Legacy
 									un(2, i(80864)),	-- Girdle of Endemic Anger (7.1 - Removed from Game!)
 									un(2, i(80865)),	-- Sunheart Waistband (7.1 - Removed from Game!)
 									un(2, i(80863)),	-- Stonestep Boots (7.1 - Removed from Game!)
 								}),
 							})),
 							cr(56732, e(658, {	-- Liu Flameheart
-								i(144090), -- Firebelcher Hand Cannon
-								i(143971), -- Serpentstrike Shoulderpads
-								i(144094), -- Cape of Entaglement
-								i(143988), -- Flameheart Sandals
-								nld({     		-- Legacy
+								i(144090),	-- Firebelcher Hand Cannon
+								i(143971),	-- Serpentstrike Shoulderpads
+								i(144094),	-- Cape of Entaglement
+								i(143988),	-- Flameheart Sandals
+								i(144114),	-- Signet of Dancing Jade
+								nld({	-- Legacy
 									un(2, i(80872)),	-- Firebelcher Hand Cannon (7.1 - Removed from Game!)
 									un(2, i(80867)),	-- Serpentstrike Shoulderpads (7.1 - Removed from Game!)
 									un(2, i(80866)),	-- Cape of Entaglement (7.1 - Removed from Game!)
 								}),
 							})),
 							cr(56439, e(335, {	-- Sha of Doubt
-								i(144093), -- Staff of Trembling Will
-								i(144086), -- Dubious Handaxe
-								i(144216), -- Je'lyu, Spirit of the Serpent
-								i(143972), -- Doubtridden Shoulderguards
-								i(143970), -- Neverdare Shoulders
-								i(144115), -- Cloak of Failing Will
-								i(143959), -- Chestguard of Despair
-								i(144091), -- Hopecrusher Gauntlets
-								i(144118), -- Paralyzing Gloves
-								i(144116), -- Binding of Broken Dreams
-								nld({     		-- Legacy
+								i(144093),	-- Staff of Trembling Will
+								i(144086),	-- Dubious Handaxe
+								i(144216),	-- Je'lyu, Spirit of the Serpent
+								i(144117),	-- Mindbreaker Pendant
+								i(143972),	-- Doubtridden Shoulderguards
+								i(143970),	-- Neverdare Shoulders
+								i(144115),	-- Cloak of Failing Will
+								i(143959),	-- Chestguard of Despair
+								i(144091),	-- Hopecrusher Gauntlets
+								i(144118),	-- Paralyzing Gloves
+								i(144116),	-- Binding of Broken Dreams
+								nld({	-- Legacy
 									un(2, i(80874)),	-- Staff of Trembling Will (7.1 - Removed from Game!)
 									un(2, i(80873)),	-- Dubious Handaxe (7.1 - Removed from Game!)
 									un(2, i(80868)),	-- Doubtridden Shoulderguards (7.1 - Removed from Game!)
@@ -99,19 +103,20 @@ _.Instances =
 									un(2, i(80870)),	-- Chestguard of Despair (7.1 - Removed from Game!)
 									un(2, i(80869)),	-- Hopecrusher Gauntlets (7.1 - Removed from Game!)
 								}),
-							}))
-						}
+							})),
+						},
 					}),
-					d(2, {		-- Heroic
-						["ids"] = { 524 }, -- Heroic
+					d( 2, {	-- Heroic
+						["ids"] = { 524 },	-- Heroic
 						["lvl"] = 90,
 						["groups"] = {
 							cr(56448, e(672, {	-- Wise Mari
-								i(144017), -- Waterburst Helm
-								i(144111), -- Wind-Soaked 
-								i(143960), -- Riverbed Chestguard
-								i(143973), -- Treads of Corrupted Water
-								nld({     		-- Legacy
+								i(144017),	-- Waterburst Helm
+								i(144111),	-- Wind-Soaked 
+								i(143960),	-- Riverbed Chestguard
+								i(143973),	-- Treads of Corrupted Water
+								i(144112),	-- Crystallized Droplet
+								nld({	-- Legacy
 									un(2, i(81075)),	-- Waterburst Helm (7.1 - Removed from Game!)
 									un(2, i(81123)),	-- Riverbed Chestguard (7.1 - Removed from Game!)
 									un(2, i(81083)),	-- Riverbed Chestguard (7.1 - Removed from Game!)
@@ -119,11 +124,12 @@ _.Instances =
 								}),
 							})),
 							cr(56843, e(664, {	-- Lorewalker Stonestep
-								i(144081), -- Girdle of Endemic Anger
-								i(144083), -- Sunheart Waistband
-								i(143987), -- Leggings of Whispered Dreams
-								i(143974), -- Stonestep Boots
-								nld({     		-- Legacy
+								i(144081),	-- Girdle of Endemic Anger
+								i(144083),	-- Sunheart Waistband
+								i(143987),	-- Leggings of Whispered Dreams
+								i(143974),	-- Stonestep Boots
+								i(144113),	-- Windswept Pages
+								nld({	-- Legacy
 									un(2, i(81058)),	-- Girdle of Endemic Anger (7.1 - Removed from Game!)
 									un(2, i(81060)),	-- Sunheart Waistband (7.1 - Removed from Game!)
 									un(2, i(81126)),	-- Leggings of Whispered Dreams (7.1 - Removed from Game!)
@@ -131,11 +137,12 @@ _.Instances =
 								}),
 							})),
 							cr(56732, e(658, {	-- Liu Flameheart
-								i(144090), -- Firebelcher Hand Cannon
-								i(143971), -- Serpentstrike Shoulderpads
-								i(144094), -- Cape of Entaglement
-								i(143988), -- Flameheart Sandals
-								nld({     		-- Legacy
+								i(144090),	-- Firebelcher Hand Cannon
+								i(143971),	-- Serpentstrike Shoulderpads
+								i(144094),	-- Cape of Entaglement
+								i(143988),	-- Flameheart Sandals
+								i(144114),	-- Signet of Dancing Jade
+								nld({	-- Legacy
 									un(2, i(81067)),	-- Firebelcher Hand Cannon (7.1 - Removed from Game!)
 									un(2, i(81070)),	-- Serpentstrike Shoulderpads (7.1 - Removed from Game!)
 									un(2, i(81084)),	-- Cape of Entaglement (7.1 - Removed from Game!)
@@ -143,17 +150,18 @@ _.Instances =
 								}),
 							})),
 							cr(56439, e(335, {	-- Sha of Doubt
-								i(144093), -- Staff of Trembling Will
-								i(144086), -- Dubious Handaxe
-								i(144216), -- Je'lyu, Spirit of the Serpent
-								i(143972), -- Doubtridden Shoulderguards
-								i(143970), -- Neverdare Shoulders
-								i(144115), -- Cloak of Failing Will
-								i(143959), -- Chestguard of Despair
-								i(144091), -- Hopecrusher Gauntlets
-								i(144118), -- Paralyzing Gloves
-								i(144116), -- Binding of Broken Dreams
-								nld({     		-- Legacy
+								i(144093),	-- Staff of Trembling Will
+								i(144086),	-- Dubious Handaxe
+								i(144216),	-- Je'lyu, Spirit of the Serpent
+								i(144117),	-- Mindbreaker Pendant
+								i(143972),	-- Doubtridden Shoulderguards
+								i(143970),	-- Neverdare Shoulders
+								i(144115),	-- Cloak of Failing Will
+								i(143959),	-- Chestguard of Despair
+								i(144091),	-- Hopecrusher Gauntlets
+								i(144118),	-- Paralyzing Gloves
+								i(144116),	-- Binding of Broken Dreams
+								nld({	-- Legacy
 									un(2, i(81079)),	-- Staff of Trembling Will (7.1 - Removed from Game!)
 									un(2, i(81063)),	-- Dubious Handaxe (7.1 - Removed from Game!)
 									un(2, i(87544)),	-- Je'lyu, Spirit of the Serpent (7.1 - Removed from Game!)
@@ -165,45 +173,49 @@ _.Instances =
 									un(2, i(81132)),	-- Paralyzing Gloves (7.1 - Removed from Game!)
 									un(2, i(81130)),	-- Binding of Broken Dreams (7.1 - Removed from Game!)
 								}),
-							}))
-						}
+							})),
+						},
 					}),
-					d(24, {		-- Timewalking
-						["ids"] = { 615 }, -- Timewalking
+					d(24, {	-- Timewalking
+						["ids"] = { 615 },	-- Timewalking
 						["lvl"] = 85,
 						["groups"] = {
 							cr(56448, e(672, {	-- Wise Mari
-								i(144017), -- Waterburst Helm
-								i(144111), -- Wind-Soaked 
-								i(143960), -- Riverbed Chestguard
-								i(143973) -- Treads of Corrupted Water
+								i(144017),	-- Waterburst Helm
+								i(144111),	-- Wind-Soaked 
+								i(143960),	-- Riverbed Chestguard
+								i(143973),	-- Treads of Corrupted Water
+								i(144112),	-- Crystallized Droplet
 							})),
 							cr(56843, e(664, {	-- Lorewalker Stonestep
-								i(144081), -- Girdle of Endemic Anger
-								i(144083), -- Sunheart Waistband
-								i(143987), -- Leggings of Whispered Dreams
-								i(143974) -- Stonestep Boots
+								i(144081),	-- Girdle of Endemic Anger
+								i(144083),	-- Sunheart Waistband
+								i(143987),	-- Leggings of Whispered Dreams
+								i(143974),	-- Stonestep Boots
+								i(144113),	-- Windswept Pages
 							})),
 							cr(56732, e(658, {	-- Liu Flameheart
-								i(144090), -- Firebelcher Hand Cannon
-								i(143971), -- Serpentstrike Shoulderpads
-								i(144094), -- Cape of Entaglement
-								i(143988) -- Flameheart Sandals
+								i(144090),	-- Firebelcher Hand Cannon
+								i(143971),	-- Serpentstrike Shoulderpads
+								i(144094),	-- Cape of Entaglement
+								i(143988),	-- Flameheart Sandals
+								i(144114),	-- Signet of Dancing Jade
 							})),
 							cr(56439, e(335, {	-- Sha of Doubt
-								i(144093), -- Staff of Trembling Will
-								i(144086), -- Dubious Handaxe
-								i(144216), -- Je'lyu, Spirit of the Serpent
-								i(143972), -- Doubtridden Shoulderguards
-								i(143970), -- Neverdare Shoulders
-								i(144115), -- Cloak of Failing Will
-								i(143959), -- Chestguard of Despair
-								i(144091), -- Hopecrusher Gauntlets
-								i(144118), -- Paralyzing Gloves
-								i(144116) -- Binding of Broken Dreams
-							}))
-						}
-					})
+								i(144093),	-- Staff of Trembling Will
+								i(144086),	-- Dubious Handaxe
+								i(144216),	-- Je'lyu, Spirit of the Serpent
+								i(144117),	-- Mindbreaker Pendant
+								i(143972),	-- Doubtridden Shoulderguards
+								i(143970),	-- Neverdare Shoulders
+								i(144115),	-- Cloak of Failing Will
+								i(143959),	-- Chestguard of Despair
+								i(144091),	-- Hopecrusher Gauntlets
+								i(144118),	-- Paralyzing Gloves
+								i(144116),	-- Binding of Broken Dreams
+							})),
+						},
+					}),
 				},
 				["lvl"] = 85,
 				["mapID"] = 867
