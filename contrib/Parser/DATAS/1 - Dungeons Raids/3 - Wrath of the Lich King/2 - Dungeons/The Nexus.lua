@@ -204,7 +204,6 @@ _.Instances =
 								i(127578),	-- Belt of Draconic Runes
 							})),
 							cr(26763, e(619, {	-- Anomalus
-								i(127574),	-- Drakonid Arm Blade
 								i(127575), 	-- Chiseled Stalagmite Pauldrons
 								i(127590), 	-- Gloves of the Crystal Gardener
 								i(127589), 	-- Girdle of Ice
@@ -212,6 +211,7 @@ _.Instances =
 								i(127602), 	-- Cavern Leather Treads
 								i(127576),	-- Greaves of the Blue Flight
 								i(127588),	-- Band of Frosted Thorns
+								i(127572),	-- Gauntlets of Serpent Scales [DJ Doesn't have it; #errors confirmed it drops confirmed 5-29-18]
 							})),
 							cr(26794, e(620, {	-- Ormorok the Tree-Shaper
 								i(127568),	-- Glacier Sharpened Vileblade
@@ -223,6 +223,7 @@ _.Instances =
 								i(127605),	-- Cleric's Linen Shoes
 								i(127570),	-- Band of Glittering Permafrost
 								i(127594),	-- Sphere of Red Dragon's Blood
+								i(127574),	-- Drakonid Arm Blade [DJ Shows Anomalus, but it's actually Ormorok; #errors confirmed 5-29-18]
 							})),
 							cr(26723, e(621, {	-- Keristrasza
 								i(127596),	-- War Mace of Unrequited Love
