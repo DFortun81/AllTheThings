@@ -634,10 +634,12 @@ _.Zones =
 						i(89232),	-- Mogu Rune of Paralysis [Trinket]
 					}),
 					n(66973, {	-- Kai Featherfall <Phoenix Egg Trader>
-						i(89154),	-- Reins of the Crimson Pandaren Phoenix
-						i(90710),	-- Reins of the Ashen Pandaren Phoenix
-						i(90711),	-- Reins of the Emerald Pandaren Phoenix
-						i(90712),	-- Reins of the Violet Pandaren Phoenix
+						un(2, i(90045, {	-- Ancestral Phoenix Egg
+							i(89154),	-- Reins of the Crimson Pandaren Phoenix
+							i(90710),	-- Reins of the Ashen Pandaren Phoenix
+							i(90711),	-- Reins of the Emerald Pandaren Phoenix
+							i(90712),	-- Reins of the Violet Pandaren Phoenix
+						})),
 					}),
 					n(65172, {	-- Len at Arms <Adventuring Supplies>
 						i(83158),	-- Wasteland Satin Hood

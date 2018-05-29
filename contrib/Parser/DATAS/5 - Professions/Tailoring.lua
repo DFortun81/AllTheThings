@@ -267,6 +267,7 @@ profession(197, { -- Tailoring
 		-- MOP Recipes
 		i(100863, {	-- Pattern: Celestial Cloth and Its Uses
 			["description"] = "Can drop from any Mists of Pandaria mob.",
+			["spellID"] = 0,	-- Not learnable.
 			["groups"] = {
 				recipe(143011),	-- Celestial Cloth
 			},
