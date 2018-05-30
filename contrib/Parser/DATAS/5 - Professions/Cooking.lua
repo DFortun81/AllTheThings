@@ -513,6 +513,7 @@ profession(185, { -- Cooking
 			recipe(125078),	-- Roasted Barley Tea
 			recipe(124234),	-- Skewered Peanut Chicken
 			recipe(125117), -- Sliced Peaches
+			recipe(125123),	-- Spicy Vegetable Chips
 			recipe(124230),	-- Tangy Yogurt
 			recipe(124225),	-- Toasted Fish Jerky
 			recipe(125121),	-- Wildfowl Ginseng Soup
