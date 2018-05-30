@@ -6358,7 +6358,7 @@ function app:GetDataCache()
 			db.text = "Never Implemented";
 			table.insert(g, db);
 		end
-		
+		--]]
 		-- Unsorted
 		if app.Categories.Unsorted then
 			db = {};
@@ -6379,7 +6379,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
-		]]--
+		
 		
 		-- Illusions (Dynamic)
 		--[[
