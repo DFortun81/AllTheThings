@@ -543,6 +543,7 @@ _.Zones =
 							i( 52592),	-- Woolgathering Gloves
 							i( 52600),	-- Oblivious Leggings
 							i(131318),	-- Absentminded Legguards
+							i( 52671),  -- Bahrum's Bad Mood Ring
 						},
 						["qg"] = 34343,	-- Prospector Remtravel
 					}),
@@ -690,6 +691,7 @@ _.Zones =
 							i( 52610),	-- Strap of the Ancient Horn
 							i( 52630),	-- Horn Sounder's Bracers
 							i(131317),	-- Cord of the Ancient Horn
+							i( 55135),  -- Tia's Ring
 						},
 						["qg"] = 34423,	-- 
 						["sourceQuests"] = {  },	-- The Darkscale Warlord
@@ -729,6 +731,7 @@ _.Zones =
 						["groups"] = {
 							i(52644),	-- Scaling Knife
 							i(52640),	-- Grove Keeper's Branch
+							i(52673),   -- Felros' Signet
 						},
 						["qg"] = 34403,	-- Felros
 						["sourceQuests"] = { 13953 },	-- Naga in Our Midst

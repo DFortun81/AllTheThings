@@ -563,6 +563,7 @@ _.Zones =
 					qg(3897, qa(13989, {	-- King of the Foulweald
 						["groups"] = {
 							i(56706),
+							i(56707), -- Band of Perserverence
 						},
 						["sourceQuests"] = {26480},
 					})),
@@ -571,6 +572,7 @@ _.Zones =
 							i(17005),
 							i(17006),
 							i(131234),
+							i(56703), -- Jalin's Recompense
 						},
 						["sourceQuests"] = {13967},
 					})),
@@ -608,11 +610,17 @@ _.Zones =
 					})),
 					qg(17303, qa(26445, {	-- Never Again!
 						["groups"] = {
+							i(24119), -- Band of Argus
+							i(24120), -- Seal of Argus
+							i(24118), -- Signet of Argus
 						},
 						["sourceQuests"] = {26443},
 					})),
 					qg(17355, qh(26449, {	-- Never Again!
 						["groups"] = {
+							i(24119), -- Band of Argus
+							i(24120), -- Seal of Argus
+							i(24118), -- Signet of Argus
 						},
 						["sourceQuests"] = {26447},
 					})),
@@ -660,6 +668,7 @@ _.Zones =
 							i(56711),
 							i(56712),
 							i(56713),
+							i(56714), -- Band of Foul Strength
 						},
 						["sourceQuests"] = {13797},
 					})),
@@ -816,6 +825,7 @@ _.Zones =
 						i(56704),
 						i(56705),
 						i(131326),
+						i(56703), -- Jalin's Recompense
 					})),
 					qg(34604, qa(13987, {	-- The Last Stand
 						["groups"] = {
@@ -859,6 +869,7 @@ _.Zones =
 					qg(34596, qh(13980, {	-- They're Out There!
 						["groups"] = {
 							i(56692),
+							i(56693), -- Backwatcher's Ring
 						},
 						["sourceQuests"] = {13977},
 					})),
@@ -896,6 +907,7 @@ _.Zones =
 					qg(34251, qa(13876, {	-- Too Far Gone
 						["groups"] = {
 							i(56623),
+							i(56622), -- Thistle Ring
 						},
 						["sourceQuests"] = {13868},
 					})),
@@ -930,7 +942,9 @@ _.Zones =
 						}),
 					}),
 					qg(3901, qa(26467)),	-- Vile Satyr! Dryads in Danger! (No Prereq)
-					qg(12717, qh( 6641)),	-- Vorsha the Lasher (No Prereq)
+					qg(12717, qh( 6641, {	-- Vorsha the Lasher (No Prereq)
+						i(17692), -- Horn Ring
+					})),
 					qg(34289, qa(13886, {	-- Vortex
 						["groups"] = {
 							i(56683),

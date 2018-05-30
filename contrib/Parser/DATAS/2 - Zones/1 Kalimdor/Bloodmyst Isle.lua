@@ -239,6 +239,8 @@ _.Zones =
 					qg(17468, q(9762, {	--  The Unwritten Prophecy - Wowhead incorrectly states any Alliance can get this quest. It's still Draenei only.
 						["groups"] = {
 							i(24344),	-- Tabard of the Hand
+							i(24349),   -- Signet Ring of the Hand
+							i(24350),   -- Signet Ring of the Hand
 						},
 						["races"] = {11},
 					})),

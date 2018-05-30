@@ -133,7 +133,14 @@ _.Zones =
 					o(208159, {	-- Candy Bucket
 						qa(28995),	-- Candy Bucket (HOLIDAY)
 					}),
-					qg(48333, qh(28340)),	-- A Bomb Deal
+--]]
+					qh(28340, {	-- A Bomb Deal
+						["groups"] = {
+						},
+						["qg"] = 48333, -- Foreman Pikwik
+						["sourceQuests"] = { 28380 }, -- Pikwik in Peril
+					}),
+					--[[
 					qg(47923, q(28218)),	-- A Destiny of Flame and Sorrow
 					qg(48127, qh(28334)),	-- A Flare Fight
 					qg(47696, q(28207)),	-- A Slimy Situation
@@ -141,7 +148,7 @@ _.Zones =
 					qg(10923, q(28150)),	-- An Arcane Ally
 					qg(48469, qh(28372)),	-- Back to Business
 					qg(48493, qa(28388)),	-- Bloody Wages
---]]					
+					]]--
 					qg(48493, qa(28386, {	-- Borrowed Bombs
 						i(65342),
 						i(65291),
@@ -238,8 +245,9 @@ _.Zones =
 --]]					
 					o(207104, {	-- Master Control Pump
 						qh(28368,  {  -- Fire in the Hole!
-							i(65346),
-							i(65349),
+							i(65346),   -- Gauntlets of Raw Strength
+							i(65349),   -- Everburning Cloak
+							i(65352),   -- Drilldozer Band
 						}),
 					}),
 --					qg(11019, q(28121)),	-- Forces of Jaedenar
@@ -290,8 +298,9 @@ _.Zones =
 						i(65287),
 					})),
 					qg(48493, qa(28389,  {  -- Report to the Denmother
-						i(65292),
-						i(65311),
+						i(65292),   -- Fists of the Pack
+						i(65311),   -- Denmother's Cloak
+						i(65330),   -- Token of the Bond
 					})),
 					qg(11557, q(6031,  {  -- Runecloth
 						i(15822),

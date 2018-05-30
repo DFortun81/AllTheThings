@@ -164,6 +164,63 @@ _.Zones =
 					qa(31851),	-- Bill Buckler
 				}),
 				n(-17, {	-- Quests
+					ach(4905, { -- Cape of Strangelthorn Quests
+						crit(1, { -- The Trolls of Zul'Gurub
+							qa( 26826, {	-- Dask "The Flask" Gobfizzle
+								["qg"] = 44082, -- Bronwyn Hewstrike
+								["description"] = "This quest is only available if you DID NOT complete [The Source of the Corruption] and [The Mosh'Ogg Bounty] in Northern Stranglethorn.",
+							}),
+							qa( 26825, {	-- Dask "The Flask" Gobfizzle
+								["qg"] = 44082, -- Bronwyn Hewstrike
+								["description"] = "This quest is only available if you DID complete [The Source of the Corruption] and [The Mosh'Ogg Bounty] in Northern Stranglethorn.",
+							}),
+							qa(26822, { -- Good-Fer-Nothin' Slither-Dogs
+								["groups"] = {
+									i(61525), -- Goris' Medallion
+									i(61526), -- Staff of First Occurrences
+									i(61527), -- Slither-Dog Headguard
+									i(131611), -- Slither-Dog Helm
+								},
+								["qg"] = 44100, -- Goris
+							}),
+							qa( 26823, {	-- Too Big For His Britches
+								["qg"] = 44099, -- Dask "The Flask" Gobfizzle
+								["sourceQuests"] = {26825,26826},
+							}),
+							qa(26817, {	-- Perfectly Pure
+								["qg"] = 44099, -- Dask "The Flask" Gobfizzle
+								["sourceQuests"] = {26823},
+							}),
+							qa(26815, {	-- Zanzil's Secret
+								["qg"] = 44099,
+								["sourceQuests"] = {26817},
+							}),
+							qa(26818, { -- Plush Pelts
+								["groups"] = {
+									i(61513),  -- Fuzzy Legwarmers
+									i(61514),  -- Velvety Vest
+									i(61515),  -- Supple Gloves
+									i(61516),  -- Hambone's Spare Collar
+									i(131609), -- Supple Support Harness
+									i(131610), -- Velvet-Lined Chain Gloves
+								},
+								["qg"] = 44083, -- Linzi Hewstrike
+								["sourceQuests"] = {26823},
+							}),
+							qa(26819, {	-- Akiris by the Bundle
+								["qg"] = 44083, -- Linzi Hewstrike
+								["sourceQuests"] = {26823},
+							}),
+							qa(26820, { -- If They're Just Going to Leave Them Lying Around...
+								["groups"] = {
+									i(61521), -- Amulet of Brilliant Talent
+									i(61522), -- Helm of Secrets
+								},
+								["qg"] = 44083, -- Linzi Hewstrike
+								["sourceQuests"] = {26823},
+							}),
+						}),
+					}),
 --[[
 					qg(, q(26602)),	-- A Dish Best Served Huge
 					qg(, q(40847)),	-- A Friendly Accord
@@ -181,7 +238,6 @@ _.Zones =
 					qg(, qa(31917)),	-- A Tamer's Homecoming
 					qg(, qh(26404)),	-- Above My Pay Grade
 					qg(, qa(26821)),	-- Airwyn Bantamflax
-					qg(, qa(26819)),	-- Akiris by the Bundle
 					qg(, qh(26487)),	-- Akiris by the Bundle
 					qg(, q(26617)),	-- An Old Sea Dog
 --]]					
@@ -262,8 +318,8 @@ _.Zones =
 					qg(, q(26635)),	-- Cannonball Swim
 					qg(, qh( 26495)),	-- Chabal
 					qg(, qa( 11356)),	-- Costumed Orphan Matron
-					qg(, qa( 26826)),	-- Dask "The Flask" Gobfizzle
-					qg(, qa( 26825)),	-- Dask "The Flask" Gobfizzle
+					--]]
+					--[[
 					qa( 11580),	-- Desecrate this Fire!
 					qa( 11755),	-- Desecrate this Fire!
 					qa( 11732),	-- Desecrate this Fire!
@@ -301,11 +357,6 @@ _.Zones =
 					qg(, q(26839)),	-- Get Away From It All!
 					qg(, q(26624)),	-- Getting In With the Bloodsail
 --]]
-					qg(44100, qa(26822, { -- Good-Fer-Nothin' Slither-Dogs
-						i(61526),
-						i(61527),
-						i(131611),
-					})),
 --[[					
 					qg(, q(8193)),	-- Grand Prize
 					qg(, q(26605)),	-- Grubby Little Paws
@@ -330,9 +381,6 @@ _.Zones =
 					qg(, qh(11837)),	-- Honor the Flame
 					qg(, qh(26435)),	-- I'm A Huge Liar and a Fraud
 --]]					
-					qg(44083, qa(26820, { -- If They're Just Going to Leave Them Lying Around...
-						i(61522),
-					})),
 					qg(43095, qh(26450, { -- If They're Just Going to Leave Them Lying Around...
 						i(61517),
 						i(61518),
@@ -392,21 +440,12 @@ _.Zones =
 						i(156952),	-- Adversarial Blackjack
 					})),
 --[[
-					qg(, qa(26817)),	-- Perfectly Pure
 					qg(, qa(14022)),	-- Pilgrim's Bounty
 					qg(, qh(14036)),	-- Pilgrim's Bounty
 					qg(, qa(11882)),	-- Playing with Fire
 					qg(, q(26813)),	-- Plunging Into Zul'Gurub
 					qg(, q(26554)),	-- Plunging Into Zul'Gurub
 --]]
-					qg(44083, qa(26818, { -- Plush Pelts
-						i(61513),
-						i(61514),
-						i(61515),
-						i(61516),
-						i(131609),
-						i(131610),
-					})),
 --					qg(, q(26695)),	-- Prepare for Takeoff
 					qg(43096, qh(26434, { -- Primal Reagents of Power
 						i(61529),
@@ -432,7 +471,7 @@ _.Zones =
 						i(131551),
 					})),
 --[[					
-					qg(, qa(26824)),	-- Results: Inconclusive
+					qa(26824),	-- Results: Inconclusive
 					qg(, q(26594)),	-- Return to MacKinley
 					qg(, q(26679)),	-- Return to Revilgaz
 					qg(, q(26593)),	-- Scaring Shaky
@@ -473,7 +512,7 @@ _.Zones =
 					qg(, q(26700)),	-- The Damsel's (Bad) Luck
 					qg(, q(26650)),	-- The Damsel's Luck
 					qg(, q(40849)),	-- The Dreadblades
-					qg(, q(26837)),	-- The Explorers' League Digsite
+					q(26837),	-- The Explorers' League Digsite //REMOVED
 --]]
 					qg(2496, q(26697, { -- The Final Voyage of the Brashtide
 						i(61608),
@@ -495,8 +534,7 @@ _.Zones =
 					qg(, q(32436)),	-- Third Place
 					qg(, q(26811)),	-- Through the Troll Hole
 					qg(, q(26552)),	-- Through the Troll Hole
-					qg(, qa(26805)),	-- To the Cape!
-					qg(, qa(26823)),	-- Too Big For His Britches
+					qa(26805),	-- To the Cape! //Starts in Northern Stranglethorn
 					qg(, q(9259)),	-- Traitor to the Bloodsail
 --]]
 					qg(2487, q(26699, { -- Turning the Brashtide
@@ -511,7 +549,6 @@ _.Zones =
 					qg(, q(8674)),	-- Winterhoof the Elder
 					qg(, q(42758)),	-- You're Gonna Need A Bigger Boat!
 					qg(, q(26631)),	-- Your First Day as a Pirate
-					qg(, qa(26815)),	-- Zanzil's Secret
 					qg(, qh(26533)),	-- Zanzil's Secret	
 --]]
 --[[					nlq({     -- Legacy Quests 

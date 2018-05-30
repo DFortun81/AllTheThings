@@ -412,6 +412,7 @@ _.Zones =
 					
 					qh(27294, {	-- More than Coincidence
 						["g"] = {
+							i(33264),   -- Glowing Tourmaline Ring
 							i(57852),	-- Grimtotem Cloak
 						},
 						["qg"] = 4926,	-- Krog
@@ -857,6 +858,7 @@ _.Zones =
 					
 					qg( 4944, qa(27425)),	-- A Grim Connection
 					qg(23568, qa(27427, {	-- Arms of the Grimtotems
+						i(33264),   -- Glowing Tourmaline Ring
 						i(33268),	-- Bone Dirk
 						i(57837),	-- Biting Greataxe
 					})),
@@ -883,9 +885,10 @@ _.Zones =
 					qg(40369, qa(25481)),	-- To New Thalanaar
 					qg(12939, qa( 6624)),	-- Triage
 					qg(23723, qa(27243, {	-- Unleash the Raptors
-						i( 33266),
-						i( 33248),
-						i(131662),
+						i( 33266),   -- Book of the Adept
+						i( 33248),   -- Crested Shoulderguards
+						i( 33265),   -- Pendant of Ferocity
+						i(131662),   -- Crested Chain Epaulets
 					})),
 				}),
 				n(-16, {	-- Rares	

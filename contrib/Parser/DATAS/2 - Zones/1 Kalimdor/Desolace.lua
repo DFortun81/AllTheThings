@@ -198,8 +198,10 @@ _.Zones =
 					}),
 					qh(14334, {	-- Blubbergut
 						["groups"] = {
+							i(55955),   -- Whalefang's Pendant
 							i(55956),	-- Blubber-Stained Grips
 							i(55957),	-- Orca-Oiled Spaulders
+							i(55958),   -- Orca-Tooth Ring
 						},
 						["qg"] = 12031,	-- Mai'Lahii
 						["breadcrumbQuestID"] = { 14337 },	-- Shadowprey Village
@@ -355,8 +357,10 @@ _.Zones =
 					})),
 					qa(14354, {	-- Elune's Gifts
 						["groups"] = {
+							i(55951),   -- Choker of Renewal
 							i(55952),	-- Gloves of Nurture
 							i(55953),	-- Shoulderguards of Protection
+							i(55954),   -- Demonslayer's Signet
 						},
 						["qg"] = 5642,	-- Vahlarriel Demonslayer
 						["sourceQuests"] = { 14387 },	-- Lay of the Land
@@ -592,12 +596,16 @@ _.Zones =
 					}),
 					qa(14364, {	-- Putting Their Heads Together
 						["groups"] = {
+							i(55924),   -- Ring of Vigorous Interruption
+							i(55925),   -- Grounding Choker
 							i(55926),	-- Skull-Scorched Cloak
 						},
 						["sourceQuests"] = { 14363 },	-- You'll Know it When You See It
 					}),
 					qh(14227, {	-- Putting Their Heads Together
 						["groups"] = {
+							i(55927),   -- Ring of Vigorous Interruption
+							i(55928),   -- Grounding Choker
 							i(55929),	-- Skull-Scorched Cloak
 						},
 						["sourceQuests"] = { 14225 },	-- You'll Know it When You See It
@@ -624,6 +632,7 @@ _.Zones =
 						["groups"] = {
 							i(55963),	-- Tranquility of Furien
 							i(55962),	-- Nimblefinger Cloak
+							i(55964),   -- Flashfire Collar
 						},
 						["sourceQuests"] = { 14196 },	-- Firestarter
 					}),
