@@ -836,6 +836,7 @@ _.Zones =
 --					qh(28876),	-- To the Mor'shan Rampart (REMOVED? speculation on wowhead and I could not get it in game whether I had done the Warchief's Command breadcrumb or not)
 					qh(13712, {	-- To the Rescue!
 						["groups"] = {
+							i(60644), -- Gorka's Band
 						},
 						["qg"] = 8582,	-- Kadrak
 						["sourceQuests"] = { 13653 },	-- Crisis at Splintertree

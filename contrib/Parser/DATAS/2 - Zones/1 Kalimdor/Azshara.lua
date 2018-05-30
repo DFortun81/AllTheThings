@@ -551,6 +551,9 @@ _.Zones =
 					}),
 					qh(14477, {	-- Push the Button!
 						["groups"] = {
+							i(53408), -- Detonation Ring
+							i(53424), -- Kroum's Signet
+							i(53444), -- Sniper's Band
 						},
 						["qg"] = 36785,	-- Bombardier Captain Smooks
 						["sourceQuests"] = { 14476 },	-- Rigged to Blow

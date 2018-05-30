@@ -1066,6 +1066,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 --]]					
 					qg(14720, qh(13842, {	-- Dread Head Redemption
 						i(119325),	-- Bow of Fire
+						i(119326),  -- Ring of Pardons
 						i(119327),	-- Durak's Downfall
 					})),
 --[[					
