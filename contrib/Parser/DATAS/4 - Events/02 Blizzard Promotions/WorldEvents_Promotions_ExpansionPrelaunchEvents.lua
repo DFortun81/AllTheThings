@@ -202,6 +202,7 @@ _.WorldEvents =
 									["groups"] = {
 										i(139048, { -- Small Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -254,6 +255,7 @@ _.WorldEvents =
 										}),	
 										i(139049, { -- Large Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -310,6 +312,7 @@ _.WorldEvents =
 									["groups"] = {
 										i(139048, { -- Small Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -362,6 +365,7 @@ _.WorldEvents =
 										}),	
 										i(139049, { -- Large Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -418,6 +422,7 @@ _.WorldEvents =
 									["groups"] = {
 										i(139048, { -- Small Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -470,6 +475,7 @@ _.WorldEvents =
 										}),	
 										i(139049, { -- Large Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -526,6 +532,7 @@ _.WorldEvents =
 									["groups"] = {
 										i(139048, { -- Small Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -578,6 +585,7 @@ _.WorldEvents =
 										}),	
 										i(139049, { -- Large Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -634,6 +642,7 @@ _.WorldEvents =
 									["groups"] = {
 										i(139048, { -- Small Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -686,6 +695,7 @@ _.WorldEvents =
 										}),	
 										i(139049, { -- Large Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -742,6 +752,7 @@ _.WorldEvents =
 									["groups"] = {
 										i(139048, { -- Small Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear
@@ -794,6 +805,7 @@ _.WorldEvents =
 										}),	
 										i(139049, { -- Large Legion Chest
 											un(3, i(141597)), -- Corrupted Argus Gavel
+											un(3, i(141609)), -- Corrupted Argus Gavel
 											un(3, i(141595)), -- Eredar Battle Blade
 											un(3, i(141602)), -- Eredar Splitter
 											un(3, i(141599)), -- Fel Barbed Spear

@@ -1297,10 +1297,12 @@ _.Zones =
 								},
 								{ -- Arsenal: Armaments of the Silver Hand
 									["groups"] = {
-											i(141653), -- 2H Yellow
-											i(141368), -- 2H Blue
-											i(141370), -- Shield
-											i(141367), -- 1H Mace					
+											i(141370), -- Ardent Defender
+											i(150953), -- Ardent Gavel
+											i(141367), -- Ardent Hammer			
+											i(141368), -- Ardent Warhammer
+											i(141654), -- Gilded Defender
+											i(141653), -- Gilded Warhammer		
 									},
 									["ignoreBonus"] = true,
 									["itemID"] = 141371,

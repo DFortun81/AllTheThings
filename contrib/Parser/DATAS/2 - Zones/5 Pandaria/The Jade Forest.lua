@@ -655,6 +655,7 @@ _.Zones =
 						i(90383),
 						i(90378),
 						i(90374),
+						i(90331), -- Face Smasher Warhammer [Not listed in quest, but unlocks since Skyfire Trooper's Mace converts to a horde item]
 					}),
 					qh(31239,  {  	-- What's in a Name Name?
 						i(84105), 		-- PET! Fishy
