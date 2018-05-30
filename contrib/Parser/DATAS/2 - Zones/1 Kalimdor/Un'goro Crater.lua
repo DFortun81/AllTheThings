@@ -277,12 +277,15 @@ _.Zones =
 						i(53579),
 					})),
 --					qg(9272, q(24708)),	-- The Fossil-Finder 3000
-					desc(q(24718), "This quest should pop up when you enter the cave to do The Apes of Un'Goro.", { -- The Mighty U'cha
-						i(53583),
-						i(53584),
-						i(156995),	-- Beastflayer
+					q(24718, { -- The Mighty U'cha
+						["groups"] = {
+							i(53583), -- Beast Clobberer
+							i(53584),
+							i(156995),	-- Beastflayer
+						},
+						["description"] = "This quest should pop up when you enter the cave to do The Apes of Un'Goro.",
 					}),
---[[					
+					--[[					
 					qg(38275, q(24722)),	-- The Northern Pylon
 					qg(9619, q(24732)),	-- The Scent of Lar'korwi
 					qg(38504, q(24694)),	-- The Shaper's Terrace

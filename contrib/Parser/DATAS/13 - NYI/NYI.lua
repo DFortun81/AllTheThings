@@ -3,6 +3,10 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	i(7188), --  Stormwind Guard Shield [This is used by NPC's]
+	i(18303), -- Nimble Buckler
+	i(18342), -- Quel'dorei Guard [NPC Shield I believe]
+	i(20502), -- Ironbark Shield [NPC Shield]
 	i(110591), -- Flintlocke's Blasthammer [This version NYI since old one was still good for transmog]
 	i(151377), -- Arne Test Heirloom - Bloodied Arcanite Reaper
 	i(157751), -- Drape of New Beginnings
