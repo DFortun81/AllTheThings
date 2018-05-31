@@ -746,6 +746,7 @@ AllTheThings.Locales.enUS = {
 		[-10044] = "Interface\\Icons\\Paladin_Protection",						-- Raids
 		[-10045] = "Interface\\Icons\\Paladin_Protection",						-- Currencies
 		[-10046] = "Interface\\Icons\\Paladin_Protection",						-- Promotions
+		[-10046] = "Interface\\Icons\\Paladin_Protection",						-- Events
 
 		[-100001] = "Interface\\Icons\\inv_artifact_tome01", 					-- AK Research Book
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1484,6 +1485,7 @@ AllTheThings.Locales.enUS = {
 		[-10044] = select(1,GetCategoryInfo(15271)),	-- Raids
 		[-10045] = select(1,GetCategoryInfo(15280)),	-- Currencies
 		[-10046] = select(1,GetCategoryInfo(15268)),	-- Promotions
+		[-10047] = select(1,GetCategoryInfo(15274)),	-- Events
 
 
 		[-100001] = ITEM_QUALITY6_DESC, 											-- Artifact
@@ -1492,14 +1494,6 @@ AllTheThings.Locales.enUS = {
   -- Val'sharah
 		[-101801] = "Lunarwing Shallows",
 		[-101802] = "Lostlight Grotto",
-
--- Staff Picks
-		[-999995] = "Mage Set",
-		[-999996] = "Lucetia",
-		[-999997] = "Warrior Set",
-		[-999998] = "Crieve",
-		[-999999] = "Staff Picks",
-	},
 
 	["OBJECT_ID_ICONS"] = {
 		[31] = "Interface\\Icons\\INV_Mount_AllianceLionG",
