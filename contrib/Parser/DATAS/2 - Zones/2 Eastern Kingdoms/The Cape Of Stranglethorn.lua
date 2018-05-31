@@ -174,6 +174,415 @@ _.Zones =
 								["qg"] = 44082, -- Bronwyn Hewstrike
 								["description"] = "This quest is only available if you DID complete [The Source of the Corruption] and [The Mosh'Ogg Bounty] in Northern Stranglethorn.",
 							}),
+							qa( 26823, {	-- Too Big For His Britches
+								["qg"] = 44099, -- Dask "The Flask" Gobfizzle
+								["sourceQuests"] = {26825,26826},
+							}),
+							qa(26819, {	-- Akiris by the Bundle
+								["qg"] = 44083, -- Linzi Hewstrike
+								["sourceQuests"] = {26823},
+							}),
+							qa(26808, {	-- Maywiki
+								["qg"] = 44084, -- Maywiki
+								["sourceQuests"] = {26819},
+							}),
+							qa(26809, { -- Backdoor Dealings
+								["groups"] = {
+									i(61531),  -- Veil of the Silent Listener
+									i(61532),  -- Monnion of the Bat
+									i(61533),  -- Small Pouch of Incense
+									i(131606), -- Spaulders of the Bat
+								},
+								["qg"] = 44084, -- Maywiki
+								["sourceQuests"] = {26808},
+							}),
+							qa(26810, {	-- Eliminate the Outcast
+								["qg"] = 44084,
+								["sourceQuests"] = {26809},
+							}), 
+							qa(26811,{	-- Through the Troll Hole
+								["sourceQuests"] = {26810},
+							}), 
+							qa(26812, {	-- High Priestess Jeklik
+								["sourceQuests"] = {26811},
+							}), 
+							qa(26813, {	-- Plunging Into Zul'Gurub
+								["sourceQuests"] = {26812},
+							}), 
+							qa(26814, { -- High Priest Venoxis
+								["groups"] = {
+									i(61549),  -- Maywiki's Favorite Ring
+									i(61550),  -- Boots of the Foolhardy
+									i(61551),  -- Cloak of Great Endeavors
+									i(131607), -- Treads of the Foolhardy
+								},
+								["sourceQuests"] = {26813},
+							}),
+							qh(26487, {	-- Akiris by the Bundle
+								["qg"] = 43095, -- Sassy Hardwrench
+								["sourceQuests"] = {26404,28704},
+							}),
+							qh(26489, {	-- It's You!!
+								["qg"] = 43095, -- Sassy Hardwrench
+								["sourceQuests"] = {26404,28704},
+								["races"] = {9},
+								["description"] = "This is only available to Goblin players who have not accepted [Akiris by the Bundle]."
+							}),
+							qh(26450, { -- If They're Just Going to Leave Them Lying Around...
+								["groups"] = {
+									i(61517),  -- Sassy Pantaloons
+									i(61518),  -- Iconic Vest
+									i(61519),  -- Wandering Hands
+									i(61520),  -- Corpsepump Belt
+									i(131530), -- Iconic Breastplate
+									i(131531), -- Sassy Grippers
+								},
+								["qg"] = 43095, -- Sassy Hardwrench
+							}),
+							qh(26493, { -- There's Somebody Out There Who Wants It
+								["groups"] = {
+									i(61523), -- Basilisk Scale Necklace
+									i(61524), -- Helm of Secrets
+								},
+								["qg"] = 43095, -- Sassy Hardwrench
+								["sourceQuests"] = {26487,26489,26450},
+							}),
+							qh( 26495, {	-- Chabal
+								["qg"] = 43095, -- Sassy Hardwrench
+								["sourceQuests"] = {26493},
+							}),
+							qh(26550, { -- Backdoor Dealings
+								["groups"] = {
+									i(61534),  -- Veil of the Silent Listener
+									i(61535),  -- Monnion of the Bat
+									i(61536),  -- Small Pouch of Incense
+									i(131554), -- Spaulders of the Bat
+								},
+								["qg"] = 43098, -- Chabal
+								["sourceQuests"] = {26495},
+							}),
+							qh(26551, {	-- Eliminate the Outcast
+								["qg"] = 43098, -- Chabal
+								["sourceQuests"] = {26550},
+							}),
+							qh(26552, {	-- Through the Troll Hole
+								["sourceQuests"] = {26551},
+							}),
+							qh(26553, {	-- High Priestess Jeklik
+								["sourceQuests"] = {26552},
+							}),
+							qh(26554, {	-- Plunging Into Zul'Gurub
+								["sourceQuests"] = {26553},
+							}),
+							qh(26555, { -- High Priest Venoxis
+								["groups"] = {
+									i(61552),  -- Chabal's Favorite Ring
+									i(61553),  -- Boots of the Foolhardy
+									i(61554),  -- Cloak of Great Endeavors
+									i(131555), -- Treads of the Foolhardy
+								},
+								["sourceQuests"] = {26554},
+							}),
+						}),
+						crit(2, { -- Bustling Booty Bay
+							["groups"] = {
+								q(26599, { -- The Captain's Chest
+									["groups"] = {
+										i(11469), -- Bloodband Bracers 
+									},
+									["qg"] = 2500,
+								}),
+								q(26600, {-- A Giant's Feast
+									["qg"] = 2500,
+									["sourceQuests"] = {26599},
+								}),
+								q(26602, {	-- A Dish Best Served Huge
+									["groups"] = {
+										i(4130), -- Smott's COmpass
+									},
+									["qg"] = 2500,
+									["sourceQuests"] = {26600},
+								}),
+								q(26601, { -- Mok'rash the Cleaver
+									["groups"] = {
+										i( 61562),  -- Smott's SIgnet
+										i( 61564),  -- Sea Song Epaulettes
+										i( 61566),  -- Landlubber Headband
+										i( 61568),  -- Sea Legs
+										i(131561),  -- Landlubber Helm
+									},
+									["qg"] = 2500,
+									["sourceQuests"] = {26602},
+								}),
+								o(204406, {-- Half-Buried Bottle
+									q(26603, {	-- Message in a Bottle
+									}),
+								}),
+								q(26604, {	-- Protecting Her Royal Highness Poobah
+									["qg"] = 2634, -- Princess Poobah
+									["sourceQuests"] = {26603},
+								}),
+								q(26605, {	-- Grubby Little Paws
+									["qg"] = 2634, -- Princess Poobah
+									["sourceQuests"] = {26604},
+								}),
+								q(26606, { -- Mukla's Demise
+									["groups"] = {
+										i(61586),  -- Princess Poobah's Dress
+										i(61588),  -- Princess Poobah's Bracelets
+										i(61588),  -- Princess Poobah's Tiara
+										i(131562), -- Princess Poobah's Bangles
+									},
+									["qg"] = 2634, -- Princess Poobah
+									["sourceQuests"] = {26605},
+								}),
+								q(26593, {	-- Scaring Shaky
+									["qg"] = 2501, -- "Sea Wolf" MacKinley
+								}),
+								q(26594, {	-- Return to MacKinley
+									["qg"] = 2502, -- "Shaky" Phillipe
+									["sourceQuests"] = {26593},
+								}),
+								q(26595, { -- Kill-Collect
+									["groups"] = {
+										i(61538),  -- Nice Shorts
+										i(61540),  -- Phase Three Bracers
+										i(61542),  -- Forceful Shield
+										i(131558), -- Phase Three Leggings
+										i(131559), -- Nice Cuffs
+									},
+									["qg"] = 2501, -- "Sea Wolf" MacKinley
+									["sourceQuests"] = {26594},
+								}),
+								q(26609, {	-- The Bloodsail Buccaneers
+									["qg"] = 2490, -- First Mate Crazz
+									["sourceQuests"] = {26595,26601,26606},
+									["description"] = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
+								}),
+								o(2083, { -- Bloodsail Correspondence
+									q(26610, {	-- Bloodsail Treachery
+										["sourceQuests"] = {26609},
+									}),
+								}),
+								q(26611, {	-- The Baron Must Be Told
+									["qg"] = 2490, -- First Mate Crazz
+									["sourceQuests"] = {26610},
+								}),
+								q(26612, { -- Details of the Attack
+									["groups"] = {
+										i(61570),  -- Informant's Gloves
+										i(61572),  -- Belt of Supremacy
+										i(61574),  -- Sea Baron's Breastplate
+										i(61576),  -- Pirate's Musket
+										i(131563), -- Cord of Supremecy
+									},
+									["qg"] = 2496, -- Baron Revilgaz
+									["sourceQuests"] = {26611},
+								}),
+								q(26613, {	-- Up to Snuff
+									["qg"] = 2488, -- Deeg
+									["sourceQuests"] = {26611},
+								}),
+								q(26614, { -- Keep An Eye Out
+									["groups"] = {
+										i(4114), -- Darktide Cape
+									},
+									["qg"] = 2493, -- Dizzy One-Eye
+									["sourceQuests"] = {26611},
+								}),
+							},
+							["description"] = "You only need to complete one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to earn full credit.",
+						}),
+						crit(3, { -- A Pirate's Life For You
+							q(26624, {	-- Getting In With the Bloodsail
+								["qg"] = 2496, -- Baron Revilgaz
+								["sourceQuests"] = {26612},
+							}),
+							q(26629, {	-- Seeing Where Your Loyalties Lie
+								["qg"] = 43504, -- Yancey Grillsen
+								["sourceQuests"] = {26624},
+							}),
+							q(26630, {	-- Looks Like a Tauren Pirate to Me
+								["qg"] = 2487, -- Fleet Master Seahorn
+								["sourceQuests"] = {26629},
+							}),
+							q(26631, {	-- Your First Day as a Pirate
+								["qg"] = 43504, -- Yancey Grillsen
+								["sourceQuests"] = {26629},
+							}),
+							q(26633, { -- Swabbing Duty
+								["groups"] = {
+									i(61578),  -- Cleaning Britches
+									i(61580),  -- Swabbie's Booties
+									i(61582),  -- Riptide Vest
+									i(61584),  -- Keelhaul Shackles
+									i(131567), -- Riptide Boots
+									i(131568), -- Keelhaul Harness
+								},
+								["qg"] = 2548, -- Captain Keelhaul
+								["sourceQuests"] = {26631},
+							}),
+							q(26634, {	-- The Bane of Many A Pirate
+								["qg"] = 2549, -- Garr Salthoof
+								["sourceQuests"] = {26631},
+							}),
+							q(26635, {	-- Cannonball Swim
+								["qg"] = 2545, -- "Pretty Boy" Duncan
+								["sourceQuests"] = {26631},
+							}),
+							q(26644, {	-- Attracting Attention
+								["qg"] = 2548, -- Captain Keelhaul
+								["sourceQuests"] = {26633,26634,26635},
+							}),
+							q(26647, {	-- Ol' Blasty
+								["qg"] = 2547, -- Ironpatch
+								["sourceQuests"] = {26644},
+							}),
+							q(26649, { -- Drive-By Piracy
+								["groups"] = {
+									i(61592),  -- Black Gold Buckler
+									i(61594),  -- Venture Blaster
+									i(61596),  -- Slippery Glovelettes
+									i(61598),  -- Ironpatch Shoulderguards
+									i(131573), -- Ironpatch Handguards
+								},
+								["qg"] = 2547, -- Ironpatch
+								["sourceQuests"] = {26647},
+							}),
+							q(26648, { -- Our Mortal Enemies
+								["groups"] = {
+									i(61600),  -- Mortal Naginata
+									i(61604),  -- Other-Eye Patch
+									i(61606),  -- Pauldrons of the Eternal Battle
+									i(131572), -- One-Eye Patch
+									i(156952), -- Adversarial Blackjack
+								},
+								["qg"] = 43556, -- "Dead-Eye" Drederick McGumm
+								["sourceQuests"] = {26644},
+							}),
+							q(26650, {	-- The Damsel's Luck
+								["qg"] = 2546, --Fleet Master Firallon
+								["sourceQuests"] = {26648,26649},
+							}),
+							o(204450, { -- Captain Stillwater's Charts
+								q(26662, {	-- The Brashtide Crew
+									["sourceQuests"] = {26550},
+								}),
+								q(26663, {	-- Sinking From Within
+									["sourceQuests"] = {26550},
+								}),
+								q(26664, { -- Making Mutiny
+									["groups"] = {
+										i(61614), -- Supposed Mace
+										i(61616), -- Accusing Finger
+										i(61618), -- Mutineer's Noose
+									},
+									["sourceQuests"] = {26550},
+								}),
+								q(26665, {	-- Call of Booty
+									["sourceQuests"] = {26662,26663,26664},
+								}),
+							}),
+						}),
+						crit(4, { -- Bloodsail and Brashtide
+							q(26678, {	-- Doublerum
+								["qg"] = 2496, -- Baron Revilgaz
+								["sourceQuests"] = {26665},
+							}),
+							o(204578, { -- Barrel of Doublerum
+								q(26679, {	-- Return to Revilgaz
+									["sourceQuests"] = {26678},
+								}),
+							}),
+							q(26695, {	-- Prepare for Takeoff
+								["qg"] = 2496, -- Baron Revilgaz
+								["sourceQuests"] = {26679},
+							}),
+							q(26697, { -- The Final Voyage of the Brashtide
+								["groups"] = {
+									i(61608),  -- Mongrel Shooter
+									i(61610),  -- Flight Master's Gift
+									i(61612),  -- Baron's Baton
+									i(157000), -- Fuse-Cutter Knife
+								},
+								["qg"] = 2496, -- Baron Revilgaz
+								["sourceQuests"] = {26695},
+							}),
+							q(26698, {	-- Seeking Seahorn
+								["qg"] = 2496, -- Baron Revilgaz
+								["sourceQuests"] = {26679},
+							}),
+							q(26699, { -- Turning the Brashtide
+								["groups"] = {
+									i(61620),  -- Revilgaz's Cutlass
+									i(61622),  -- Bruised Vest
+									i(61624),  -- Brash Cloak
+									i(131585), -- Revilgaz's Tunic
+								},
+								["qg"] = 2487, -- Fleet Master Seahorn
+								["sourceQuests"] = {26698},
+							}),
+							q(26700, {	-- The Damsel's (Bad) Luck
+								["qg"] = 2487, -- Fleet Master Seahorn
+								["sourceQuests"] = {26698},
+							}),
+							q(26703, { -- Bloodsail's End
+								["groups"] = {
+									i(61626),  -- Booty Bay Pendant
+									i(61630),  -- Booty Bay Pantaloons
+									i(61632),  -- Booty Bay Helm
+									i(131586), -- Booty Bay Trousers
+									i(61628),  -- Star of Stranglethorn
+								},
+								["qg"] = 2496, -- Baron Revilgaz
+								["sourceQuests"] = {26697,26699,26700},
+							}),	
+						}),
+					}),
+					n(-168, { -- Other Quests
+					-- From Explorer's League Digsite (Using Crystalvein Mine for now to keep them organized)
+						sz(4995,1, { -- Booty Bay
+							qa(26596, {	-- The Call of Kalimdor
+								["qg"] = 48808,
+							}),
+							qh(26696, {	-- The Call of Kalimdor
+								["qg"] = 48797,
+							}),
+							q(26597, { -- Stranglethorn Fever
+								["groups"] = {
+									i(61556),  -- Feverish Bracers
+									i(61558),  -- Savage Handwraps
+									i(61560),  -- Chestpiece of Returning Strength
+									i(131560), -- Savage Handguards
+								},
+								["qg"] = 2486, -- Fin Fizracket
+							}),
+							q(26598, {	-- The Heart of Mokk
+								["qg"] = 1449, -- Witch Doctor Unbagwa
+								["description"] = "This quest is only available while you are on the [Stranglethorn Fever] quest.",
+							}),
+							qh(28750, {	-- The Battle for Andorhal
+								["qg"] = 49636, -- Arcanist Arman
+							}),
+							qa(28749, {	-- The Battle for Andorhal
+								["qg"] = 49635, -- War-Mage Erallier
+							}),
+							i(59143, { -- Weather-Beaten Coin
+								q(26617, { -- An Old Sea Dog
+									["qg"] = 43454 -- "Good-Boy" Bruce
+								}),
+							}),
+							q(1036, {   -- Avast Ye, Scallywag
+								["qg"] = 2545, -- "Pretty Boy" Duncan
+							}),
+							q(4621, {	-- Avast Ye, Admiral!
+								["groups"] = {
+									i(12185),	-- Bloodsail Admiral's Hat
+								},
+								["qg"] = 2546, -- Fleet Master Firallon
+							}),	
+						}),
+						sz(4995,2, { -- Crystalvein Mine
 							qa(26822, { -- Good-Fer-Nothin' Slither-Dogs
 								["groups"] = {
 									i(61525), -- Goris' Medallion
@@ -183,18 +592,32 @@ _.Zones =
 								},
 								["qg"] = 44100, -- Goris
 							}),
-							qa( 26823, {	-- Too Big For His Britches
-								["qg"] = 44099, -- Dask "The Flask" Gobfizzle
-								["sourceQuests"] = {26825,26826},
-							}),
 							qa(26817, {	-- Perfectly Pure
 								["qg"] = 44099, -- Dask "The Flask" Gobfizzle
 								["sourceQuests"] = {26823},
 							}),
 							qa(26815, {	-- Zanzil's Secret
-								["qg"] = 44099,
+								["qg"] = 44099, -- Dask "The Flask" Gobfizzle
 								["sourceQuests"] = {26817},
 							}),
+							qa(26824, {	-- Results: Inconclusive
+								["qg"] = 44099, -- Dask "The Flask" Gobfizzle
+								["sourceQuests"] = {26815},
+							}),
+							qa(26821, {	-- Airwyn Bantamflax
+								["qg"] = 44082, -- Bronwyn Hewstrike
+								["sourceQuests"] = {26824},
+							}),
+							qa(26816, { -- Recipe for Disaster
+								["groups"] = {
+									i(61543),  -- Dask's Cloak
+									i(61544),  -- Leggings with Mysterious Stains
+									i(61545),  -- Glass Encrusted Boots
+									i(131608), -- Pantaloons with Myserious Stains
+								},
+								["qg"] = 44099, -- Dask "The Flask" Gobfizzle
+								["sourceQuests"] = {26815},
+							}),	
 							qa(26818, { -- Plush Pelts
 								["groups"] = {
 									i(61513),  -- Fuzzy Legwarmers
@@ -207,10 +630,6 @@ _.Zones =
 								["qg"] = 44083, -- Linzi Hewstrike
 								["sourceQuests"] = {26823},
 							}),
-							qa(26819, {	-- Akiris by the Bundle
-								["qg"] = 44083, -- Linzi Hewstrike
-								["sourceQuests"] = {26823},
-							}),
 							qa(26820, { -- If They're Just Going to Leave Them Lying Around...
 								["groups"] = {
 									i(61521), -- Amulet of Brilliant Talent
@@ -220,11 +639,21 @@ _.Zones =
 								["sourceQuests"] = {26823},
 							}),
 						}),
-					}),
+						sz(4995,4, { -- Hardwrench Hideaway
+							qg(43096, qh(26434, { -- Primal Reagents of Power
+								i(61529),
+								i(61530),
+								i(131529),
+							})),	
+							qg(43097, qh(26535, { -- Recipe for Disaster
+								i(61546),
+								i(61547),
+								i(61548),
+								i(131551),
+							})),
+						}),
 --[[
-					qg(, q(26602)),	-- A Dish Best Served Huge
 					qg(, q(40847)),	-- A Friendly Accord
-					qg(, q(26600)),	-- A Giant's Feast
 					qg(, qh(29400)),	-- A Season for Celebration
 					qg(, qa(29074)),	-- A Season for Celebration
 --]]					
@@ -237,9 +666,6 @@ _.Zones =
 --[[
 					qg(, qa(31917)),	-- A Tamer's Homecoming
 					qg(, qh(26404)),	-- Above My Pay Grade
-					qg(, qa(26821)),	-- Airwyn Bantamflax
-					qg(, qh(26487)),	-- Akiris by the Bundle
-					qg(, q(26617)),	-- An Old Sea Dog
 --]]					
 					qg(7406, q(3721, { -- An OOX of Your Own
 						["groups"] = {
@@ -278,48 +704,17 @@ _.Zones =
 					qg(, q(8194)),	-- Apprentice Angler
 					qg(14508, q(7838)),	-- Arena Grandmaster
 					qg(, q(7810)),	-- Arena Master
-					qg(, q(26644)),	-- Attracting Attention
---]]					
-					qg(2546, q(4621, {	-- Avast Ye, Admiral!
-						i(12185),	-- Bloodsail Admiral's Hat
-					})),
-					qg(2545, q(1036)),	-- Avast Ye, Scallywag
-					qg(44084, qa(26809, { -- Backdoor Dealings
-						i(61531),
-						i(61532),
-						i(131606),
-					})),
-					qg(43098, qh(26550, { -- Backdoor Dealings
-						i(61534),
-						i(61535),
-						i(131554),
-					})),
---[[					
 					qg(, q(31851)),	-- Bill Buckler
 					qg(, q(31728)),	-- Bill Buckler
-					qg(, q(26610)),	-- Bloodsail Treachery
---]]
-					qg(2496, q(26703, { -- Bloodsail's End
-						i(61630),
-						i(61632),
-						i(131586),
-						i(61628),
-					})),
---[[					
 					qg(, qh( 29252)),	-- Booty Bay's Interests
 					qg(, qh( 29251)),	-- Booty Bay's Interests
 					qg(, qa( 29153)),	-- Booty Bay's Interests
 					qg(, qa( 29154)),	-- Booty Bay's Interests
 					qg(, q(26718)),	-- Breadcrumb to Badlands
 					qg(, qh( 11446)),	-- Brewfest!
-					qg(, q(26665)),	-- Call of Booty
 					q(12397),	-- Candy Bucket
 					qh( 28969),	-- Candy Bucket
-					qg(, q(26635)),	-- Cannonball Swim
-					qg(, qh( 26495)),	-- Chabal
 					qg(, qa( 11356)),	-- Costumed Orphan Matron
-					--]]
-					--[[
 					qa( 11580),	-- Desecrate this Fire!
 					qa( 11755),	-- Desecrate this Fire!
 					qa( 11732),	-- Desecrate this Fire!
@@ -330,225 +725,44 @@ _.Zones =
 					qh( 11749),	-- Desecrate this Fire!
 					qh( 11581),	-- Desecrate this Fire!
 					qh( 11761),	-- Desecrate this Fire!
---]]					
-					qg(2496, q(26612, { -- Details of the Attack
-						i(61570),
-						i(61572),
-						i(61574),
-						i(61576),
-						i(131563),
-					})),
---[[					
 					qg(, qh(26592)),	-- Diffractory Chromascope
-					qg(, q(26678)),	-- Doublerum
 					qg(, q(9272)),	-- Dressing the Part
---]]
-					qg(2547, q(26649, { -- Drive-By Piracy
-						i(61592),
-						i(61594),
-						i(61596),
-						i(61598),
-						i(131573),
-					})),
---[[					
-					qg(, qa(26810)),	-- Eliminate the Outcast
-					qg(, qh(26551)),	-- Eliminate the Outcast
 					qg(, q(38399)),	-- Fencing the Rose
 					qg(, q(26839)),	-- Get Away From It All!
-					qg(, q(26624)),	-- Getting In With the Bloodsail
---]]
---[[					
 					qg(, q(8193)),	-- Grand Prize
-					qg(, q(26605)),	-- Grubby Little Paws
 					qg(, q(26452)),	-- Gurubashi Challenge
 					qg(, q(26451)),	-- Gurubashi Challenge: Free-For-All Arena Combat
 					qg(, qa(28702)),	-- Hero's Call: The Cape of Stranglethorn!
---]]
-					qa(26814, { -- High Priest Venoxis (quest chain starts with Akiris by the Bundle, not sure how specific quest is obtained)
-						i(61550),
-						i(61551),
-						i(131607),
-					}),
-					qh(26555, { -- High Priest Venoxis (quest chain starts with Chabal, not sure how specific quest is obtained)
-						i(61553),
-						i(61554),
-						i(131555),
-					}),
---[[					
-					qg(, q(26553)),	-- High Priestess Jeklik
-					qg(, q(26812)),	-- High Priestess Jeklik
 					qg(, qa(11832)),	-- Honor the Flame
 					qg(, qh(11837)),	-- Honor the Flame
 					qg(, qh(26435)),	-- I'm A Huge Liar and a Fraud
---]]					
-					qg(43095, qh(26450, { -- If They're Just Going to Leave Them Lying Around...
-						i(61517),
-						i(61518),
-						i(61519),
-						i(61520),
-						i(131530),
-						i(131531),
-					})),
---					qg(, qh(26489)),	-- It's You!!
-					qg(2493, q(26614, { -- Keep An Eye Out
-						i(4114),
-					})),
-					qg(2501, q(26595, { -- Kill-Collect
-						i(61538),
-						i(61540),
-						i(61542),
-						i(131558),
-						i(131559),
-					})),
---[[					
 					qg(, qh(26534)),	-- Let's See What You've Got, Zanzil
 					qg(, q(26630)),	-- Looks Like a Tauren Pirate to Me
 					qg(, qa(29152)),	-- Making Contact
 					qg(, qh(29250)),	-- Making Contact
---]]
-					o(204450, {	-- Captain Stillwater's Charts
-						q(26664, { -- Making Mutiny
-							i(61614),
-							i(61616),
-							i(61618),
-						}),
-					}),
---[[					
 					qg(, qh(11357)),	-- Masked Orphan Matron
-					qg(, qa(26808)),	-- Maywiki
-					qg(, q(26603)),	-- Message in a Bottle
 					qg(, qh(26494)),	-- Mixmaster Jasper
---]]
-					qg(2500, q(26601, { -- Mok'rash the Cleaver
-						i( 61564),
-						i( 61566),
-						i( 61568),
-						i(131561),
-					})),
-					qg(2634, q(26606, { -- Mukla's Demise
-						i(61586),
-						i(61588),
-						i(61588),
-						i(131562),
-					})),
---					qg(, q(26647)),	-- Ol' Blasty
-					qg(43556, q(26648, { -- Our Mortal Enemies
-						i(61600),
-						i(61604),
-						i(61606),
-						i(131572),
-						i(156952),	-- Adversarial Blackjack
-					})),
---[[
 					qg(, qa(14022)),	-- Pilgrim's Bounty
 					qg(, qh(14036)),	-- Pilgrim's Bounty
 					qg(, qa(11882)),	-- Playing with Fire
-					qg(, q(26813)),	-- Plunging Into Zul'Gurub
-					qg(, q(26554)),	-- Plunging Into Zul'Gurub
---]]
---					qg(, q(26695)),	-- Prepare for Takeoff
-					qg(43096, qh(26434, { -- Primal Reagents of Power
-						i(61529),
-						i(61530),
-						i(131529),
-					})),	
---[[					
-					qg(, q(26604)),	-- Protecting Her Royal Highness Poobah
 					qg(, q(8225)),	-- Rare Fish - Brownell's Blue Striped Racer
 					qg(, q(8224)),	-- Rare Fish - Dezian Queenfish
 					qg(, q(8221)),	-- Rare Fish - Keefer's Angelfish
---]]
-					qg(44099, qa(26816, { -- Recipe for Disaster
-						i(61543),
-						i(61544),
-						i(61545),
-						i(131608),
-					})),
-					qg(43097, qh(26535, { -- Recipe for Disaster
-						i(61546),
-						i(61547),
-						i(61548),
-						i(131551),
-					})),
---[[					
-					qa(26824),	-- Results: Inconclusive
-					qg(, q(26594)),	-- Return to MacKinley
-					qg(, q(26679)),	-- Return to Revilgaz
-					qg(, q(26593)),	-- Scaring Shaky
 					qg(, q(32435)),	-- Second Place
-					qg(, q(26629)),	-- Seeing Where Your Loyalties Lie
-					qg(, q(26698)),	-- Seeking Seahorn
-					qg(, q(26663)),	-- Sinking From Within
---]]
-					qg(2486, q(26597, { -- Stranglethorn Fever
-						i(61556),
-						i(61558),
-						i(61560),
-						i(131560),
-					})),
---					qg(, q(44765)),	-- Stranglethorn Fishing Extravaganza
-					qg(2548, q(26633, { -- Swabbing Duty
-						i(61578),
-						i(61580),
-						i(61582),
-						i(61584),
-						i(131567),
-						i(131568),
-					})),
---[[
-					qg(, q(26634)),	-- The Bane of Many A Pirate
-					qg(, q(26611)),	-- The Baron Must Be Told
-					qg(, qh(28750)),	-- The Battle for Andorhal
-					qg(, qa(28749)),	-- The Battle for Andorhal
-					qg(, q(26609)),	-- The Bloodsail Buccaneers
-					qg(, q(26662)),	-- The Brashtide Crew
-					qg(48808, qa(26596)),	-- The Call of Kalimdor
-					qg(48797, qh(26696)),	-- The Call of Kalimdor
---]]
-					qg(2500, q(26599, { -- The Captain's Chest
-						i(11469),
-					})),
---[[
-					qg(, q(26700)),	-- The Damsel's (Bad) Luck
-					qg(, q(26650)),	-- The Damsel's Luck
+					qg(, q(44765)),	-- Stranglethorn Fishing Extravaganza
 					qg(, q(40849)),	-- The Dreadblades
 					q(26837),	-- The Explorers' League Digsite //REMOVED
---]]
-					qg(2496, q(26697, { -- The Final Voyage of the Brashtide
-						i(61608),
-						i(61612),
-						i(157000), -- Fuse-Cutter Knife
-					})),
---[[					
 					qg(, qa(47709)),	-- The Great Gnomeregan Race
-					qg(, q(26598)),	-- The Heart of Mokk
 					qg(, qh(26590)),	-- The Holy Water of Clarity
 					qg(, qh(26433)),	-- The Holy Water of Clarity
 					qg(, qa(11970)),	-- The Master of Summer Lore
 					qg(, qh(11971)),	-- The Spinner of Summer Tales
---]]
-					qg(43095, qh(26493, { -- There's Somebody Out There Who Wants It
-						i(61524),
-					})),
---[[					
 					qg(, q(32436)),	-- Third Place
-					qg(, q(26811)),	-- Through the Troll Hole
-					qg(, q(26552)),	-- Through the Troll Hole
 					qa(26805),	-- To the Cape! //Starts in Northern Stranglethorn
 					qg(, q(9259)),	-- Traitor to the Bloodsail
---]]
-					qg(2487, q(26699, { -- Turning the Brashtide
-						i(61620),
-						i(61622),
-						i(61624),
-						i(131585),
-					})),
---[[					
-					qg(, q(26613)),	-- Up to Snuff
 					qg(, qh(28704)),	-- Warchief's Command: The Cape of Stranglethorn!
 					qg(, q(8674)),	-- Winterhoof the Elder
 					qg(, q(42758)),	-- You're Gonna Need A Bigger Boat!
-					qg(, q(26631)),	-- Your First Day as a Pirate
 					qg(, qh(26533)),	-- Zanzil's Secret	
 --]]
 --[[					nlq({     -- Legacy Quests 
@@ -563,6 +777,7 @@ _.Zones =
 						}),
 					}),--]]
 				}),
+			}),
 				n(-16, {	-- Rares
 					o(179697, {	-- Arena Treasure Chest (FFA PvP)
 						["groups"] = {
