@@ -4035,9 +4035,9 @@ end
 	local tierLevel = {
 		1, 		-- Classic
 		57,		-- Burning Crusade
-		67,		-- Wrath
+		57,		-- Wrath
 		77,		-- Cata
-		86,		-- Mists
+		77,		-- Mists
 		90,		-- WoD
 		98		-- Legion
 	};
