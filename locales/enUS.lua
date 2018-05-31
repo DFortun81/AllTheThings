@@ -151,7 +151,7 @@ AllTheThings.Locales.enUS = {
 		["ALL THE THINGS"] = "ATT",
 		["Dungeons & Raids"] = "D&R",
 		["Classic -> "] = "",
-		["Burning Crusade"] = "BC",
+		["The Burning Crusade"] = "TBC",
 		["Wrath of the Lich King"] = "WotLK",
 		["Cataclysm"] = "CATA",
 		["Mists of Pandaria"] = "MoP",
@@ -241,7 +241,7 @@ AllTheThings.Locales.enUS = {
 		[109] = HEIRLOOMS, 										-- Heirlooms
 		[110] = "Titles", 										-- Titles
 		[111] = "Glyphs", 										-- Glyphs
-		[112] = "Factions", 									-- Factions
+		[112] = FACTION, 										-- Factions
 		[113] = "Bags", 										-- Bags
 
 		-- "Recipes"
@@ -611,6 +611,7 @@ AllTheThings.Locales.enUS = {
 		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",			-- Class Trial Item Sets
 		[-5352] = "Interface\\Icons\\creatureportrait_portal_eyeofthestormhorde",	-- Tier Sets
 		[-6012] = "Interface\\Icons\\achievement_bg_masterofallbgs",			-- World Event Item Sets
+		[-6013] = "Interface\\Icons\\achievement_reputation_08",				-- Faction
 		[-9912] = "Interface\\Icons\\ClassIcon_Paladin", 	 					-- Protection / Retribution Spec
 		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance", 				-- Alliance
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde", 					-- Horde
@@ -1345,6 +1346,7 @@ AllTheThings.Locales.enUS = {
 		[-5992] = GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, -- Tier 9 Sets
 --]]
 		[-6012] = BATTLE_PET_SOURCE_7.." "..WARDROBE_SETS, 							-- World Event Item Sets
+		[-6013] = FACTION,															-- Faction
 -- Factions
 		[-9913] = FACTION_HORDE, 													-- Horde
 		[-9914] = FACTION_ALLIANCE, 												-- Alliance
