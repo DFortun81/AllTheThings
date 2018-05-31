@@ -8,33 +8,18 @@ _.Achievements =
 			n(-9955, { -- General
 				["groups"] = {
 					ach(11177, { -- 70 Exalted Reputations
-						ach(522), -- Somebody Likes Me
-						ach(523), -- 5 Exalted Reputations
-						ach(524), -- 10 Exalted Reputations
-						ach(521), -- 15 Exalted Reputations
-						ach(520), -- 20 Exalted Reputations
-						ach(519), -- 25 Exalted Reputations
-						ach(518), -- 30 Exalted Reputations
-						ach(1014), -- 35 Exalted Reputations
-						ach(1015, { -- 40 Exalted Reputations
-							style(1, title(46)), -- <Name> the Exalted
-						}),
-						ach(5374), -- 45 Exalted Reputations
-						ach(5723), -- 50 Exalted Reputations
-						ach(6826), -- 55 Exalted Reputations
-						ach(6742, { -- 60 Exalted Reputations
-							style(1, title(197)), -- <Name> the eBeloved
-						}),
 						n(-6013, { -- Faction
 							faction(1168), -- Guild
 							a(n(-9914, { -- Alliance
-								faction(69), -- Darnassus
-								faction(930), -- Exodar
-								faction(1134), -- Gilneas
-								faction(54), -- Gnomeregan
-								faction(47), -- Ironforge
-								faction(72), -- Stormwind
-								faction(1353), -- Tushui Pandaren
+								n(-6014, { -- Cities
+									faction(69), -- Darnassus
+									faction(930), -- Exodar
+									faction(1134), -- Gilneas
+									faction(54), -- Gnomeregan
+									faction(47), -- Ironforge
+									faction(72), -- Stormwind
+									faction(1353), -- Tushui Pandaren
+								}),
 								n(-304, { -- Battlegrounds
 									faction(890), -- Silverwing Sentinels
 									faction(730), -- Stormpike Guards
@@ -78,13 +63,15 @@ _.Achievements =
 								--]]
 							})),
 							h(n(-9913, { -- Horde
-								faction(1133), -- Bilgewater Cartel
-								faction(530), -- Darkspear Trolls
-								faction(1352), -- Huojin Pandaren
-								faction(76), -- Orgrimmar
-								faction(911), -- Silvermoon City
-								faction(81), -- Thunder Bluff
-								faction(68), -- Undercity
+								n(-6014, { -- Cities
+									faction(1133), -- Bilgewater Cartel
+									faction(530), -- Darkspear Trolls
+									faction(1352), -- Huojin Pandaren
+									faction(76), -- Orgrimmar
+									faction(911), -- Silvermoon City
+									faction(81), -- Thunder Bluff
+									faction(68), -- Undercity
+								}),
 								n(-304, { -- Battlegrounds
 									faction(729), -- Frostwolf Clan	
 									faction(510), -- The Defilers	
@@ -144,6 +131,7 @@ _.Achievements =
 									faction(470), -- Ratchet
 								},
 								["collectible"] = false,
+								["icon"] = "Interface\\Icons\\achievement_Goblinheaddead",
 							}),
 							n(-154, { -- The Burning Crusade
 								faction(1012), -- Ashtongue Deathsworn
@@ -220,6 +208,23 @@ _.Achievements =
 								un(2, faction(809)), -- Shen'dralar
 								un(2, faction(270)), -- Zandalar Tribe
 							}),
+						}),
+						ach(522), -- Somebody Likes Me
+						ach(523), -- 5 Exalted Reputations
+						ach(524), -- 10 Exalted Reputations
+						ach(521), -- 15 Exalted Reputations
+						ach(520), -- 20 Exalted Reputations
+						ach(519), -- 25 Exalted Reputations
+						ach(518), -- 30 Exalted Reputations
+						ach(1014), -- 35 Exalted Reputations
+						ach(1015, { -- 40 Exalted Reputations
+							style(1, title(46)), -- <Name> the Exalted
+						}),
+						ach(5374), -- 45 Exalted Reputations
+						ach(5723), -- 50 Exalted Reputations
+						ach(6826), -- 55 Exalted Reputations
+						ach(6742, { -- 60 Exalted Reputations
+							style(1, title(197)), -- <Name> the eBeloved
 						}),
 					}),
 					ach(5794), -- Time Flies When You're Having Fun

@@ -612,6 +612,7 @@ AllTheThings.Locales.enUS = {
 		[-5352] = "Interface\\Icons\\creatureportrait_portal_eyeofthestormhorde",	-- Tier Sets
 		[-6012] = "Interface\\Icons\\achievement_bg_masterofallbgs",			-- World Event Item Sets
 		[-6013] = "Interface\\Icons\\achievement_reputation_08",				-- Faction
+		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",				-- Cities
 		[-9912] = "Interface\\Icons\\ClassIcon_Paladin", 	 					-- Protection / Retribution Spec
 		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance", 				-- Alliance
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde", 					-- Horde
@@ -1347,6 +1348,7 @@ AllTheThings.Locales.enUS = {
 --]]
 		[-6012] = BATTLE_PET_SOURCE_7.." "..WARDROBE_SETS, 							-- World Event Item Sets
 		[-6013] = FACTION,															-- Faction
+		[-6014] = BUG_CATEGORY4,													-- Cities
 -- Factions
 		[-9913] = FACTION_HORDE, 													-- Horde
 		[-9914] = FACTION_ALLIANCE, 												-- Alliance
