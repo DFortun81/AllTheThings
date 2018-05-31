@@ -6,11 +6,7 @@ _.Achievements =
 {
 	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
-			n(-9955, { -- General
-				["groups"] = {
-					n(-10044, { -- Raids
-					}),
-				},
+			n(-10044, { -- Raids
 			}),
 		},
 	}),
