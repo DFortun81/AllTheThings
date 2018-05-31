@@ -746,7 +746,7 @@ AllTheThings.Locales.enUS = {
 		[-10044] = "Interface\\Icons\\Paladin_Protection",						-- Raids
 		[-10045] = "Interface\\Icons\\Paladin_Protection",						-- Currencies
 		[-10046] = "Interface\\Icons\\Paladin_Protection",						-- Promotions
-		[-10046] = "Interface\\Icons\\Paladin_Protection",						-- Events
+		[-10047] = "Interface\\Icons\\Paladin_Protection",						-- Events
 
 		[-100001] = "Interface\\Icons\\inv_artifact_tome01", 					-- AK Research Book
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1488,12 +1488,14 @@ AllTheThings.Locales.enUS = {
 		[-10047] = select(1,GetCategoryInfo(15274)),	-- Events
 
 
-		[-100001] = ITEM_QUALITY6_DESC, 											-- Artifact
+		[-100001] = ITEM_QUALITY6_DESC, 				-- Artifact
 
 -- Custom Subzone Names that we can't pull from the API because Blizz hates us
   -- Val'sharah
 		[-101801] = "Lunarwing Shallows",
 		[-101802] = "Lostlight Grotto",
+
+	},
 
 	["OBJECT_ID_ICONS"] = {
 		[31] = "Interface\\Icons\\INV_Mount_AllianceLionG",
