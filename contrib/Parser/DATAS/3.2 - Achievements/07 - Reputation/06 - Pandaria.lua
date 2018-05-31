@@ -7,6 +7,8 @@ _.Achievements =
 	n(-9961, { -- Reputation
 		["groups"] = {
 			n(-9980, { -- Pandaria
+				["groups"] = {
+				},
 			}),
 		},
 	}),

@@ -7,6 +7,8 @@ _.Achievements =
 	n(-9959, { -- Dungeons & Raids
 		["groups"] = {
 			n(-9981, { -- Draenor
+				["groups"] = {
+				},
 			}),
 		},
 	}),
