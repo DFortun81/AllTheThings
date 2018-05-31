@@ -6,7 +6,9 @@ _.Achievements =
 {
 	n(-9961, { -- Reputation
 		["groups"] = {
-			ach(5794), -- Time Flies When You're Having Fun
+			n(-9955, { -- General
+				ach(5794), -- Time Flies When You're Having Fun
+			}),
 		},
 	}),
 };
