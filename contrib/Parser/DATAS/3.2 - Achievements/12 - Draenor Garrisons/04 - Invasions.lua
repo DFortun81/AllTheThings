@@ -6,10 +6,8 @@ _.Achievements =
 {
 	n(-9966, { -- Draenor Garrison
 		["groups"] = {
-			n(-9955, { -- General
+			n(-10037, { -- Invasions
 				["groups"] = {
-					ach(9132), -- Garrison Buddies
-					ach(8933), -- Staying Regular
 				},
 			}),
 		},
