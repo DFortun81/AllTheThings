@@ -422,23 +422,35 @@ _.NeverImplemented =
 ----------------------------------------------------------------
 	{
 		["itemID"] = 147514,	-- Felguard Destroyer's Legplates
-		["bonusID"] = 0,		-- BoE, Cathedral
-		["modID"] = 0,
+		["modID"] = 2,
 	},
 	{
 		["itemID"] = 147515,	-- Hellblaze Invader's Greaves
-		["bonusID"] = 0,		-- BoE, Cathedral
-		["modID"] = 0,
+		["modID"] = 2,
 	},
 	{
 		["itemID"] = 147516,	-- Legion Stalker's Hood
-		["bonusID"] = 0,		-- BoE, Cathedral
-		["modID"] = 0,
+		["modID"] = 2,
 	},
 	{
 		["itemID"] = 147517,	-- Inquisitor's Battle Cowl
-		["bonusID"] = 0,		-- BoE, Cathedral
-		["modID"] = 0,
+		["modID"] = 2,
+	},
+		{
+		["itemID"] = 147514,	-- Felguard Destroyer's Legplates
+		["modID"] = 23,
+	},
+	{
+		["itemID"] = 147515,	-- Hellblaze Invader's Greaves
+		["modID"] = 23,
+	},
+	{
+		["itemID"] = 147516,	-- Legion Stalker's Hood
+		["modID"] = 23,
+	},
+	{
+		["itemID"] = 147517,	-- Inquisitor's Battle Cowl
+		["modID"] = 23,
 	},
 	
 ------------------------------------------------------------
