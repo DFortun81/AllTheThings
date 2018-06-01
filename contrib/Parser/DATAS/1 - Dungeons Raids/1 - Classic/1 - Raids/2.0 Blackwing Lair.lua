@@ -275,6 +275,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19379),	-- Neltharion's Tear
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
 					dr(7.00, i(13008)),	-- Dalewind Trousers
+					dr(4.00, i(13120)),	-- Deepfury Bracers
 					dr(3.00, i(13075)),	-- Direwing Legguards
 					dr(9.00, i(13013)),	-- Elder Wizard's Mantle
 					dr(5.00, i(13125)),	-- Elven Chain Boots

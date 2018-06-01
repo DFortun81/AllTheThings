@@ -33,7 +33,7 @@ _.Instances =
 					d(7, {		-- LFR		-- Looking for Raid
 						["ignoreBonus"] = true,
 						["groups"] = {
-							n(0, {			-- Zone Drop
+							n(0, {	-- Zone Drop
 								i(86850),	-- Darting Damselfly Cuffs
 								i(86844),	-- Gleaming Moth Cuffs
 								i(86841),	-- Shining Cicada Bracers
@@ -46,7 +46,7 @@ _.Instances =
 								i(86848),	-- Serrated Wasp Bracers
 								--i(95619),	-- Amber Encased Treasure Pouch
 							}),
-							ach(6718, { 	-- The Dread Approach
+							ach(6718, {	-- The Dread Approach
 								cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 									i(86812),	-- Hisek's Chrysanthemum Cape
 									i(86815),	-- Attenuating Bracers
