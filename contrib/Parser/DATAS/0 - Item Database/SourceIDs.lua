@@ -23,3 +23,13 @@ i(5197, 1, 1989);		-- Cookie's Tenderizer
 i(130064, 1, 74444);	-- Deadeye Monocle	
 i(139300, 1, 80594);	-- Finely-Tailored Green Holiday Hat
 i(139299, 1, 80593);	-- Finely-Tailored Red Holiday Hat
+
+i(19022, 1, 7546); 		-- Nat Pagle's Extreme Angler FC-5000
+i(37892, 1, 18084);		-- Green Brewfest Stein
+i(41755, 1, 20156);		-- The Fire Extinguisher
+i(45991, 1, 22166);		-- Bone Fishing Pole
+i(45992, 1, 22167);		-- Jeweled Fishing Pole
+i(56836, 1, 27941);		-- Overflowing Purple Brewfest Stein
+i(88535, 1, 45845);		-- Sharpened Tuskarr Spear
+
+
