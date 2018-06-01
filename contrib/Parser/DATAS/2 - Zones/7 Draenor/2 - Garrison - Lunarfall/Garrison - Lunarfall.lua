@@ -201,11 +201,12 @@ _.Zones =
 						})),
 					}),
 					n(-99, { 			-- Stables
-						ach(9540, {
-							i(116781), 		-- Mount
+						ach(9540, {	-- The Stable Master
+							i(116781),	-- Armoured Frostwolf MOUNT!
+							title(277),	-- Stable Master
 						}),
-						ach(9539, {
-							i(116668), 		-- Mount
+						ach(9539, {	-- Advanced Husbandry
+							i(116668),	-- Armoured Frostboar MOUNT!
 						}),
 					}),					
 				}),
