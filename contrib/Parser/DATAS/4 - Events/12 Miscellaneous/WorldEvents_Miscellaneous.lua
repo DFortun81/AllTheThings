@@ -115,7 +115,21 @@ _.WorldEvents =
 						dr(0.02, i(11989)), -- Vanadium Loop      
 					}),
 					i(29569, { 	-- Strong Junkbox
-						i(31331),	-- The Night Blade
+						dr(0.2, i(12002)), -- Formula: Enchant Bracer Superior Stamina   
+						dr(0.3, i(15746)), -- Plans: Radiant Leggings     
+						dr(0.01, i(2163)), -- The Night Blade 
+						dr(0.01, i(16218)), -- Demonic Bone Ring     
+						dr(0.03, i(12046)), -- Dragonscale Band      
+						dr(0.06, i(12034)), -- Granite Necklace      
+						dr(0.02, i(12004)), -- Jungle Ring      
+						dr(0.01, i(12035)), -- Obsidian Band      
+						dr(0.3, i(14494)), -- Obsidian Pendant      
+						dr(0.01, i(15755)), -- Prismatic Pendant      
+						dr(0.02, i(15743)), -- Quicksilver Pendant      
+						dr(0.07, i(14499)), -- Quicksilver Ring      
+						dr(0.06, i(12689)), -- Ring Of The Heavens    
+						dr(0.01, i(12695)), -- Swamp Pendant      
+						dr(0.01, i(12683)), -- Vermilion Necklace      
 					}),
 					i(43575, { 	-- Reinforced Junkbox
 						i(43613),	-- The Dusk Blade
