@@ -75,10 +75,44 @@ _.WorldEvents =
 						dr(0.02, i(11975)), -- Topaz  Ring
 						dr(0.05, i(12024)), -- Vanadium Talisman
 					}),
-					i(16885, { 	-- Heavy Junkbox
-						i(2163),	-- Shadowblade
-						i(1728),	-- Teebu's Blazing Longsword
-						i(14555),	-- Alcor's Sunrazor
+					i(16885, { 	-- Heavy Junkbox      
+						dr(0.04, i(16215)), -- Formula: Enchant Boots Greater Stamina   
+						dr(0.02, i(16218)), -- Formula: Enchant Bracer Superior Versatility 
+						dr(0.03, i(14494)), -- Pattern: Brightcloth Pants     
+						dr(0.02, i(15746)), -- Pattern: Chimeric Leggings     
+						dr(0.05, i(15755)), -- Pattern: Chimeric Vest     
+						dr(0.008, i(15743)), -- Pattern: Heavy Scorpid Belt    
+						dr(0.02, i(14499)), -- Pattern: Mooncloth Bag     
+						dr(0.05, i(12689)), -- Plans: Radiant Breastplate     
+						dr(0.008, i(12695)), -- Plans: Radiant Gloves     
+						dr(0.05, i(12683)), -- Plans: Thorium Belt     
+						dr(0.02, i(12693)), -- Plans: Thorium Boots     
+						dr(0.02, i(12684)), -- Plans: Thorium Bracers     
+						dr(0.03, i(12694)), -- Plans: Thorium Helm     
+						dr(0.04, i(12704)), -- Plans: Thorium Leggings     
+						dr(0.02, i(12691)), -- Plans: Wildthorn Mail     
+						dr(0.02, i(2163)), -- Shadowblade       
+						dr(0.02, i(12044)), -- Arctic Pendant      
+						dr(0.02, i(12014)), -- Arctic Ring      
+						dr(0.04, i(21953)), -- Design Emerald Owl     
+						dr(0.05, i(21949)), -- Design Ruby Serpent     
+						dr(0.03, i(12057)), -- Dragonscale Band  
+						dr(0.02, i(12046)), -- Jungle Necklace      
+						dr(0.04, i(12002)), -- Marble Circle      
+						dr(0.008, i(12034)), -- Marble Necklace      
+						dr(0.08, i(12004)), -- Obsidian Band      
+						dr(0.008, i(12035)), -- Obsidian Pendant
+						dr(0.02, i(12026)), -- Quicksilver Pendant      
+						dr(0.02, i(11991)), -- Quicksilver Ring      
+						dr(0.04, i(12056)), -- Ring Of The Heavens    
+						dr(0.02, i(11976)), -- Sardonyx Knuckle      
+						dr(0.06, i(12025)), -- Selenium Chain      
+						dr(0.03, i(11990)), -- Selenium Loop      
+						dr(0.008, i(11977)), -- Serpentine Loop      
+						dr(0.08, i(7910)), -- Star Ruby      
+						dr(0.03, i(12055)), -- Stardust Band      
+						dr(0.04, i(12015)), -- Swamp Ring      
+						dr(0.02, i(11989)), -- Vanadium Loop      
 					}),
 					i(29569, { 	-- Strong Junkbox
 						i(31331),	-- The Night Blade
