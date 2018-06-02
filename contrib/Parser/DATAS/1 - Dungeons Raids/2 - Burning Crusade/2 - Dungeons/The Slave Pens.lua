@@ -17,10 +17,32 @@ _.Instances =
 											ach(263),	-- Ice the Frost Lord
 											i(35498),	-- Formula: Enchant Weapon - Deathfrost [Drops from Ahune, the Frost Lord]
 											i(117394, {
+												un(2, i(35514)), -- Frostscythe of Lord Ahune
+												un(2, i(54806)), -- Frostscythe of Lord Ahune
+												un(2, i(69771)), -- Frostscythe of Lord Ahune
+												un(2, i(95426)), -- Frostscythe of Lord Ahune
 												i(117373),
 												i(138838),	-- Illusion Deathfrost
 												i(53641), -- pet
 											}),
+											un(2, i(35494)), -- Shroud of Winter's Chill
+											un(2, i(35495)), -- The Frost Lord's War Cloak
+											un(2, i(35496)), -- Icebound Cloak
+											un(2, i(35497)), -- Cloak of the Frigid Winds
+											un(2, i(54801)), -- Icebound Cloak
+											un(2, i(54802)), -- The Frost Lord's War Cloak
+											un(2, i(54803)), -- The Frost Lord's Battle Shroud
+											un(2, i(54804)), -- Shroud of Winter's Chill
+											un(2, i(69766)), -- The Frost Lord's War Cloak
+											un(2, i(69767)), -- The Frost Lord's Battle Shroud
+											un(2, i(69768)), -- Shroud of Winter's Chill
+											un(2, i(69769)), -- Cloak of the Frigid Winds
+											un(2, i(69770)), -- Icebound Cloak
+											un(2, i(95425)), -- Cloak of the Frigid Winds
+											un(2, i(95427)), -- Cloak of the Frigid Winds
+											un(2, i(95428)), -- Shroud of Winter's Chill
+											un(2, i(95429)), -- The Frost Lord's Battle Shroud
+											un(2, i(95430)), -- The Frost Lord's War Cloak
 											i(117372),
 											i(117374),
 											i(117375),

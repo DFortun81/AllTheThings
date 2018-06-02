@@ -1163,8 +1163,8 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 							i(67414, {	-- Bag of Shiny Things
 								dr(1.1, i(44983)),	-- Strand Crawler Pet
 								dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
-								dr(0.5, i(45991)),	-- Bone Fishing Pole - not moggable
-								dr(0.5, i(45992)),	-- Jeweled Fishing Pole - not Moggable
+								dr(0.5, i(45991)),	-- Bone Fishing Pole
+								dr(0.5, i(45992)),	-- Jeweled Fishing Pole
 							}),
 						}),
 					}),
@@ -2078,8 +2078,8 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 								i(67414, {	-- Bag of Shiny Things
 									dr(1.1, i(44983)),	-- Strand Crawler Pet
 									dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
-									dr(0.5, i(45991)),	-- Bone Fishing Pole - not moggable
-									dr(0.5, i(45992)),	-- Jeweled Fishing Pole - not Moggable
+									dr(0.5, i(45991)),	-- Bone Fishing Pole
+									dr(0.5, i(45992)),	-- Jeweled Fishing Pole
 								}),
 							}),
 						},
