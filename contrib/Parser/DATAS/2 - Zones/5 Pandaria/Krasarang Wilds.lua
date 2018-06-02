@@ -791,6 +791,7 @@ _.Zones =
 				}),
 				n(-2, {		-- Vendor
 					na(69059, {	-- Agent Malley <Operation: Shieldwall Quartermaster>
+						i(93231),	-- Grand Commendation of Operation: Shieldwall
 						i(93272),	-- Sabatons of the Sullied Shore
 						i(93273),	-- Sea-Soaked Sollerets
 						i(93274),	-- Greatboots of Flashing Light
@@ -812,6 +813,7 @@ _.Zones =
 						i(93168),	-- Grand Armored Gryphon Mount
 					}),
 					n(63721, {	-- Nat Pagle <The Anglers Quartermaster>
+						i(93225),	-- Grand Commendation of the Anglers
 						i(85505),	-- Recipe: Krasarang Fritters
 						i(85502),	-- Recipe: Viseclaw Soup
 						i(81354),	-- Reins of the Azure Water Strider Mount
@@ -848,6 +850,7 @@ _.Zones =
 						}),
 					}),
 					nh(69060, {	-- Tuskripper Grukna <Dominance Offensive Quartermaster>
+						i(93232),	-- Grand Commendation of the Dominance Offensive
 						i(93263),	-- Groundbreaker Sabatons
 						i(93264),	-- Cragchewer Sollerets
 						i(93265),	-- Scar Swallower Greatboots

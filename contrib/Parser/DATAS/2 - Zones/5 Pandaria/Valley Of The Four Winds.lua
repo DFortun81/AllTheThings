@@ -1327,6 +1327,7 @@ _.Zones =
 						i(103332),	-- Grievous Gladiator's Plate Shoulders
 					}),
 					n(58706, {	-- Gina Mudclaw <Tillers Quartermaster>
+						i(93226),	-- Grand Commendation of the Tillers
 						i(74657),	-- Recipe: Spicy Salmon
 						i(74658),	-- Recipe: Spicy Vegetable Chips
 						i(90175),	-- Gin'Ji Knife Set Toy

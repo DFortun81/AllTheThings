@@ -1081,25 +1081,16 @@ _.Zones =
 						i(81686),	-- Faded Forest Axe
 					}),
 					n(58414, { 		-- San Redscale <Serpent Keeper>
+						i(93229),	-- Grand Commendation of the Order of the Cloud Serpent
 						i(89222),	-- Cloud Ring Toy
 						i(85430),	-- Reins of the Azure Cloud Serpent Mount
 						i(85429),	-- Reins of the Golden Cloud Serpent Mount
 						i(79802),	-- Reins of the Jade Cloud Serpent Mount
-						i(83845, {	-- Design: Jade Panther
-							i(83088), -- Jade Panther Mount
-						}),
-						i(83877, {	-- Design: Jeweled Onyx Panther
-							i(82453),	-- Jeweled Onyx Panther Mount
-						}),
-						i(83931, {	-- Design: Ruby Panther
-							i(83087),	-- Ruby Panther Mount
-						}),
-						i(83932, {	-- Design: Sapphire Panther
-							i(83090),	-- Sapphire Panther Mount
-						}),
-						i(83830, {	-- Design: Sunstone Panther
-							i(83089),	-- Sunstone Panther Mount
-						}),
+						i(83845),	-- Design: Jade Panther
+						i(83877),	-- Design: Jeweled Onyx Panther
+						i(83931),	-- Design: Ruby Panther
+						i(83932),	-- Design: Sapphire Panther
+						i(83830),	-- Design: Sunstone Panther
 						i(89796),	-- Order of the Cloud Serpent Tabard
 					}),
 					na(61598, {		-- Silkweaver Rui <Adventuring Supplies>
