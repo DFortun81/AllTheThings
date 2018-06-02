@@ -372,6 +372,13 @@ _.Zones =
 					}),
 				}),
 				n(-16, { 	-- Rares
+					n(50772, { -- Eshelon
+						i(87625),	-- Congealed Mist Amulet
+						i(87623),	-- Razor-Sharp Chitin Choker
+						i(87626),	-- Suna's Shattered Locket
+						i(87624),	-- Yaungol Mist-Shaman's Amulet
+						i(87622),	-- Yoke of Niuzao
+					}),
 					n(66467, {		-- G'nathus
 						dr(92, i(94595)),
 					}),
@@ -406,6 +413,25 @@ _.Zones =
 							}),
 							dr(8, i(90718)),
 						})),
+						i(87625),	-- Congealed Mist Amulet
+						i(87623),	-- Razor-Sharp Chitin Choker
+						i(87626),	-- Suna's Shattered Locket
+						i(87624),	-- Yaungol Mist-Shaman's Amulet
+						i(87622),	-- Yoke of Niuzao
+					}),
+					n(50734, { -- Lith'ik the Stalker
+						i(87625),	-- Congealed Mist Amulet
+						i(87623),	-- Razor-Sharp Chitin Choker
+						i(87626),	-- Suna's Shattered Locket
+						i(87624),	-- Yaungol Mist-Shaman's Amulet
+						i(87622),	-- Yoke of Niuzao
+					}),
+					n(50333, { -- Lon the Bull
+						i(87625),	-- Congealed Mist Amulet
+						i(87623),	-- Razor-Sharp Chitin Choker
+						i(87626),	-- Suna's Shattered Locket
+						i(87624),	-- Yaungol Mist-Shaman's Amulet
+						i(87622),	-- Yoke of Niuzao
 					}),
 					n(50344, { 		-- Norlaxx
 						dr(9, i(87220, {
@@ -433,12 +459,38 @@ _.Zones =
 								i(90724),
 							}),
 						})),
+						i(87625),	-- Congealed Mist Amulet
+						i(87623),	-- Razor-Sharp Chitin Choker
+						i(87626),	-- Suna's Shattered Locket
+						i(87624),	-- Yaungol Mist-Shaman's Amulet
+						i(87622),	-- Yoke of Niuzao
+					}),
+					n(50791, { -- Siltriss the Sharpener
+						i(87625),	-- Congealed Mist Amulet
+						i(87623),	-- Razor-Sharp Chitin Choker
+						i(87626),	-- Suna's Shattered Locket
+						i(87624),	-- Yaungol Mist-Shaman's Amulet
+						i(87622),	-- Yoke of Niuzao
 					}),
 					o(213960, {		-- Yaungol Fire Carrier
 						["groups"] = {
 							i(86518),	-- Yaungol Fire Carrier
 						},
 						["questID"] = 31425,
+					}),
+					n(50832, {  -- The Yowler
+						i(87625),	-- Congealed Mist Amulet
+						i(87623),	-- Razor-Sharp Chitin Choker
+						i(87626),	-- Suna's Shattered Locket
+						i(87624),	-- Yaungol Mist-Shaman's Amulet
+						i(87622),	-- Yoke of Niuzao
+					}),
+					n(50820, { -- Yul  Wildpaw
+						i(87625),	-- Congealed Mist Amulet
+						i(87623),	-- Razor-Sharp Chitin Choker
+						i(87626),	-- Suna's Shattered Locket
+						i(87624),	-- Yaungol Mist-Shaman's Amulet
+						i(87622),	-- Yoke of Niuzao
 					}),
 					n(69769, { 		-- Zandalari Warbringer
 						dr(30, {
@@ -1528,41 +1580,52 @@ _.Zones =
 						i(86738),	-- Red Crane Spaulders
 					}),
 					n(64595, {	-- Rushi the Fox <Shado-Pan Quartermaster>
-						i(93220),	-- Grand Commendation of the Shado-Pan
-						i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan
+						i(89076),	-- Blackguard Cape
+						i(89081),	-- Blossom of Pure Snow
+						i(89660),	-- Brambleguard Leggings
+						i(89655),	-- Brushcutter's Gloves
+						i(89077),	-- Cloak of Snow Blossoms
+						i(89074),	-- Cloak of the Dark Disciple
+						i(89523),	-- Etched Golden Loop
+						i(89337),	-- Firecracker Corona
 						i(84584),	-- Formula: Enchant Weapon - Dancing Steel
 						i(84583),	-- Formula: Enchant Weapon - Jade Spirit
 						i(84580),	-- Formula: Enchant Weapon - River's Song
-						i(89074),	-- Cloak of the Dark Disciple
-						i(89075),	-- Yi's Cloak of Courage
-						i(89076),	-- Blackguard Cape
-						i(89077),	-- Cloak of Snow Blossoms
-						i(89078),	-- Sagewhisper's Wrap
-						i(89096),	-- Six Pool's Open Helm
-						i(89216),	-- Yi's Least Favorite Helmet
-						i(89280),	-- Voice Amplifying Greathelm
+						i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan
+						i(89656),	-- Gauntlets of Restraint
+						i(89654),	-- Gloves of Forgotten Wisdom
+						i(93220),	-- Grand Commendation of the Shado-Pan
 						i(89291),	-- Hawkmaster's Headguard
+						i(89082),	-- Hawkmaster's Talon
+						i(89083),	-- Iron Belly Wok
+						i(89079),	-- Lao-Chin's Liquid Courage
+						i(89522),	-- Mark of the Dancing Crane
 						i(89296),	-- Nightwatcher's Helm
 						i(89300),	-- Red Smoke Bandana
-						i(89308),	-- Snowdrift Helm
-						i(89337),	-- Firecracker Corona
-						i(89338),	-- Yalia's Cowl
-						i(89654),	-- Gloves of Forgotten Wisdom
-						i(89655),	-- Brushcutter's Gloves
-						i(89656),	-- Gauntlets of Restraint
-						i(89657),	-- Wall Breaker Gauntlets
-						i(89660),	-- Brambleguard Leggings
-						i(89661),	-- Tough Mushanhide Leggings
-						i(89672),	-- Robe of Quiet Meditation
+						i(89307),	-- Reins of the Blue Shado-Pan Riding Tiger
+						i(89305),	-- Reins of the Green Shado-Pan Riding Tiger
+						i(89306),	-- Reins of the Red Shado-Pan Riding Tiger
+						i(90846),	-- Replica Shado-Pan Helmet
+						i(90845),	-- Replica Shado-Pan Helmet
+						i(90844),	-- Replica Shado-Pan Helmet
+						i(89801),	-- Replica Shado-Pan Helmet
 						i(89673),	-- Robe of Eternal Dynasty
-						i(89305),	-- Reins of the Green Shado-Pan Riding Tiger Mount
-						i(89306),	-- Reins of the Red Shado-Pan Riding Tiger Mount
-						i(89307),	-- Reins of the Blue Shado-Pan Riding Tiger Mount
+						i(89672),	-- Robe of Quiet Meditation
+						i(89078),	-- Sagewhisper's Wrap
+						i(89080),	-- Scroll of Revered Ancestors
+						i(88995),	-- Shado-Pan Dragon Gun
 						i(89800),	-- Shado-Pan Tabard
-						i(89801),	-- Replica Shado-Pan Helmet - Cloth
-						i(90844),	-- Replica Shado-Pan Helmet - Leather
-						i(90845),	-- Replica Shado-Pan Helmet - Mail
-						i(90846),	-- Replica Shado-Pan Helmet - Plate
+						i(89526),	-- Signet of the Slumbering Emperor
+						i(89096),	-- Six Pool's Open Helm
+						i(89308),	-- Snowdrift Helm
+						i(89524),	-- Sorcerer-King's Seal
+						i(89525),	-- Thunderstone Ring
+						i(89661),	-- Tough Mushanhide Leggings
+						i(89280),	-- Voice Amplyifying Greathelm
+						i(89657),	-- Wall Breaker Gauntlets
+						i(89338),	-- Yalia's Cowl
+						i(89075),	-- Yi's Cloak of Courage
+						i(89216),	-- Yi's Least Favorite Helmet
 					}),
 					n(62737, {	-- Supplier Xin
 						i(83158),	-- Wasteland Satin Hood

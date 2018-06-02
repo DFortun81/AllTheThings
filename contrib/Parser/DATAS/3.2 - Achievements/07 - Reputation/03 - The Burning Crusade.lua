@@ -42,7 +42,7 @@ _.Achievements =
 						faction(942), -- Cenarion Expediton
 						faction(989), -- Keepers of Time
 						faction(1011), -- Lower City
-						faction(941), -- The Sha'tar
+						faction(935), -- The Sha'tar
 						faction(947), -- Thrallmar
 					})),	
 					a(ach(764, { -- The Burning Crusader [Alliance]	
@@ -50,7 +50,7 @@ _.Achievements =
 						faction(946), -- Honor Hold
 						faction(989), -- Keepers of Time
 						faction(1011), -- Lower City
-						faction(941), -- The Sha'tar
+						faction(935), -- The Sha'tar
 					})),	
 					ach(900, { -- The Czar of Sporeggar	
 						faction(970), -- Sporeggar
