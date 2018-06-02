@@ -1301,10 +1301,12 @@ _.Zones =
 					}),
 					n(73082, {	-- Master Li <Celestial Tournament Host>
 						["groups"] = {
-							i(101771), -- PET! Xu-Fu, Cub of Xuen
-							i(102146), -- PET! Zao, Calfling of Niuzao
-							i(102145), -- PET! Chi-Chi, Hatchling of Chi-Ji
-							i(102147), -- PET! Yu'la, Broodling of Yu'lon
+							i(101529, { -- Celestial Coin
+								i(102145), -- Chi-Chi, Hatchling of Chi-Ji
+								i(101771), -- Xu-Fu, Cub of Xuen
+								i(102147), -- Yu'la, Broodling of Yu'lon
+								i(102146), -- Zao, Calfling of Niuzao
+							}),
 						},
 						["description"] = "Must have leveled at least 15 pets to 25 in order to enter the tournament."
 					}),
