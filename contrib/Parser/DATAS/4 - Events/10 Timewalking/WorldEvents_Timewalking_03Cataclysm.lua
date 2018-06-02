@@ -5,7 +5,7 @@ _.WorldEvents =
 {
 	n(-173, {  -- Timewalking
 		["groups"] = {
-			n(-156, { 	-- Catacylsm
+			tier(4, { 	-- Catacylsm
 				["groups"] = {
 					i(133378, { -- Smoldering Timewarped Ember [Alliance]
 						qa(40787, { -- The Smoldering Ember

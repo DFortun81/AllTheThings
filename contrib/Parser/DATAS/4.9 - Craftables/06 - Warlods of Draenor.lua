@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	n(-158, { -- Warlords of Draneor
+	tier(6, { -- Warlords of Draneor
 		n(-181, { -- Blacksmithing
 			i(116427),	-- Smoldering Breastplate
 			i(116425),	-- Smoldering Greaves

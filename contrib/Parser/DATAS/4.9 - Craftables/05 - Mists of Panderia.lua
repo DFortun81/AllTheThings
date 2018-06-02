@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	n(-157, { -- Mists of Pandaria
+	tier(5, { -- Mists of Pandaria
 		n(-181, { -- Blacksmithing
 			i(98607),	-- Avenger's Trillium Legplates
 			i(98616),	-- Avenger's Trillium Waistplate

@@ -77,7 +77,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -112,7 +112,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -149,7 +149,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -195,7 +195,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -246,7 +246,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -300,7 +300,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -338,7 +338,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -372,7 +372,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -447,7 +447,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -532,7 +532,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -592,7 +592,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -676,7 +676,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -760,7 +760,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -832,7 +832,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -920,7 +920,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -955,7 +955,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -988,7 +988,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -1021,7 +1021,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -1061,7 +1061,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -1101,7 +1101,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -1131,7 +1131,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -1164,7 +1164,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -1218,7 +1218,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -1272,7 +1272,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -1324,7 +1324,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -1380,7 +1380,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
@@ -1420,7 +1420,7 @@ _.Instances =
 							i(45038, {	-- Fragment of Val'anyr
 								["groups"] = {
 								},
-								["collectible"] = true,
+								
 								["questID"] = 13629, -- Fragment of Val'anyr
 								["classes"] = { 2, 5, 7, 10, 11 }
 							}),

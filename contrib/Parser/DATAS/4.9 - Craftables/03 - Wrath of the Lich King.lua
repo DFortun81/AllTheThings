@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	n(-155, { -- Wrath of the Lich King
+	tier(3, { -- Wrath of the Lich King
 		n(-181, { -- Blacksmithing
 			i(45559),	-- Battlelord's Plate Boots
 			i(45550),	-- Belt of the Titans

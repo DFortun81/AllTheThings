@@ -422,22 +422,22 @@ profession(356, { 	-- Fishing
 		desc(i(44505), "Can be caught in schools or open water in Northrend."),	-- Dustbringer
 		desc(un(15, i(44703)), "Can be caught from Fangtooth Herring Schools in Howling Fjord."), -- Dark Herring
 	}),
-	n(-153, {	-- Classic
+	tier(1, {	-- Classic
 		
 	}),
-	n(-154, { 	-- The Burning Crusade
+	tier(2, { 	-- The Burning Crusade
 	
 	}),
-	n(-155, { 	-- Wrath of the Lich King
+	tier(3, { 	-- Wrath of the Lich King
 	
 	}),
-	n(-156, { 	-- Cataclysm
+	tier(4, { 	-- Cataclysm
 		
 	}),
-	n(-158, { 	-- Warlords of Draenor
+	tier(6, { 	-- Warlords of Draenor
 		
 	}),
-	n(-159, { 	-- Legion
+	tier(7, { 	-- Legion
 		faction(1975, {	-- Conjurer Margoss
 			["groups"] = {
 				q(42911),	-- Drowned Mana (Quest)

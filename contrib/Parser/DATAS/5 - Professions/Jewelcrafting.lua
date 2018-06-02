@@ -15,7 +15,7 @@ profession(755, { -- Jewelcrafting
 		i(130254), -- Chatterstone
 		i(130251), -- Jewelcraft
 	}),
-	n(-154, { -- The Burning Crusade
+	tier(2, { -- The Burning Crusade
 		i(24123),	-- Circlet of Arcane Might
 		i(24122),	-- Coronet of Verdant Flame
 		i(32776),	-- Crown of the Sea Witch
@@ -24,7 +24,7 @@ profession(755, { -- Jewelcrafting
 		i(20832),	-- Moonsoul Crown
 		i(20969),	-- Ruby Crown of Restoration
 	}),
-	n(-156, { -- Cataclysm
+	tier(4, { -- Cataclysm
 		i(52492),	-- Carnelian Spikes
 		i(52493),	-- The Perforator
 		i(52487),	-- Jeweler's Amber Monocle
@@ -32,7 +32,7 @@ profession(755, { -- Jewelcrafting
 		i(52486),	-- Jeweler's Sapphire Monocle
 		i(52489),	-- Rhinestone Sunglasses
 	}),
-	n(-159, { -- Legion
+	tier(7, { -- Legion
 		i(151587),	-- Empyrial Cosmic Crown
 		i(151588),	-- Empyrial Deep Crown
 		i(151589),	-- Empyrial Elemental Crown

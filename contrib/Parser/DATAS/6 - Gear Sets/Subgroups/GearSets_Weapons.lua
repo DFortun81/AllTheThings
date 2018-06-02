@@ -6,7 +6,7 @@ _.GearSets =
 	n(-366, { -- Weapon Sets
 		["groups"] = {
 			n(-9, { -- PvP
-				n(-154, { -- Burning Crusade
+				tier(2, { -- Burning Crusade
 					["groups"] = {  -- COMPLETE
 						i(146650, { -- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
 							["groups"] = {
@@ -146,7 +146,7 @@ _.GearSets =
 						}),
 					},
 				}),
-				n(-155, { -- Wrath of the Lich King
+				tier(3, { -- Wrath of the Lich King
 					["groups"] = {  -- COMPLETE
 						i(146647, { -- Arsenal: Savage Gladiator's Weapons [ Horde / Alliance / Tested ]
 							i(42557), -- Savage Gladiator's Barrier
@@ -385,7 +385,7 @@ _.GearSets =
 						}),
 					},
 				}),
-				n(-156, { -- Cataclysm
+				tier(4, { -- Cataclysm
 					["groups"] = { -- COMPLETE
 						i(146641, { -- Arsenal: Vicious Gladiator's Weapons
 							i(61360),	-- Vicious Gladiator's Barrier
@@ -489,7 +489,7 @@ _.GearSets =
 						}),
 					},
 				}),
-				n(-157, { -- Mists of Pandaria
+				tier(5, { -- Mists of Pandaria
 					["groups"] = { -- COMPLETE
 						i(144243, { -- Arsenal: Malevolent Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["groups"] = { -- Alliance & Horde / Tested
@@ -850,7 +850,7 @@ _.GearSets =
 						}),
 					},
 				}),
-				n(-158, { -- Warlords of Draenor
+				tier(6, { -- Warlords of Draenor
 					["groups"] = { -- MISSING: Wild Combatant (W S2)
 						i(138625, { -- Arsenal: Primal Combatant's Weapons [ Alliance / Tested ]
 							["groups"] = {

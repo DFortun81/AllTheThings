@@ -5,7 +5,7 @@ _.WorldEvents =
 {
 	n(-173, {  -- Timewalking
 		["groups"] = {
-			n(-154, { 	-- Burning Crusade
+			tier(2, { 	-- Burning Crusade
 				["groups"] = {
 					i(129747, { -- Swirling Timewarped Vial
 						q(40168, { -- The Swirling Vial
