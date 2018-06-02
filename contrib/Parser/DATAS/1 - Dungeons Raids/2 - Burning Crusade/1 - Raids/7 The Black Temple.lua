@@ -61,7 +61,9 @@ _.Instances =
 					d(14, {	-- Normal	
 						["groups"] = {
 							ach(958),	-- Sworn to the Deathsworn
-							ach(426),	-- Warglaives of Azzinoth
+							ach(426, {	-- Warglaives of Azzinoth
+								["f"] = 35,	-- Warglaives
+							}),
 							cr(22887, e(1582, {	-- High Warlord Naj'entus
 								i(122104),	-- Leviathan Egg (PET!)
 								i( 32248),	-- Halberd of Desolation
@@ -294,8 +296,8 @@ _.Instances =
 									i(31028),	-- Slayer's Chestguard
 								}),
 								i( 32374),	-- Zhar'doom, Greatstaff ot the Devourer
-								i( 32837),	-- Warglaive of Azzinoth (MH)
-								i( 32838),	-- Warglaive of Azzinoth (OH)
+								i( 32837),	-- Warglaive of Azzinoth (LEGENDARY!  MH)
+								i( 32838),	-- Warglaive of Azzinoth (LEGENDARY!  OH)
 								i( 32500),	-- Crystal Spire of Karabor
 								i( 32471),	-- Shard of Azzinoth
 								i( 32336),	-- Black Bow of the Betrayer
