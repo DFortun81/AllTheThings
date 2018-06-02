@@ -1227,10 +1227,6 @@ local function GetRelativeInstanceID(group)
 	end
 end
 local function SearchForFieldRecursively(group, field, value)
-	if group[field] == value then
-		-- OH BOY, WE FOUND IT!
-		return { group };
-	end
 	if group.g then
 		-- Go through the sub groups and determine if any of them have a response.
 		local first = nil;
@@ -1239,14 +1235,27 @@ local function SearchForFieldRecursively(group, field, value)
 			if g then
 				if first then
 					-- Merge!
-					tinsert(first, g[1]);
+					for j,data in ipairs(g) do
+						tinsert(first, data);
+					end
 				else
 					-- Cool! (This should be the most common occurance)
 					first = g;
 				end
 			end
 		end
+		if group[field] == value then
+			-- OH BOY, WE FOUND IT!
+			if first then
+				return tinsert(first, group);
+			else
+				return { group };
+			end
+		end
 		return first;
+	elseif group[field] == value then
+		-- OH BOY, WE FOUND IT!
+		return { group };
 	end
 end
 local function SearchForFieldContainer(field)
