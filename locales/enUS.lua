@@ -2305,7 +2305,7 @@ AllTheThings.Locales.enUS = {
 		{4, "|CFFFF0000This is legacy content and the original version has been removed.|r", "Legacy Content"}; -- 12
 		{1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache"}; -- 13
 		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator"}, -- 14
-		{1, "|CFFFF0000This item has a Source ID, but apparently cannot be used for transmog and will likely be unlearnable.|r", "Untransmoggable"}, -- 15
+		{1, "|CFFFF0000This item has a Source ID, but can't be learned.|r", "Unlearnable"}, -- 15
 		{2, "|CFFFF0000These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.|r", "Blizzcon"},--16
 		{6, "|CFF00FFDEIn order to obtain this item it may require Lunar Festival to be active.|r", "Lunar Festival"};--17
 		{7, "|CFF00FFDEIn order to obtain this item it may require Love is In the Air to be active.|r", "Love is In the Air"};--18

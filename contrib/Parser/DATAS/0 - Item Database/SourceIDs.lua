@@ -44,9 +44,9 @@ i(37597, 1, 17888);		-- Direbrew's Shanker
 i(86559, 1, 44498);		-- Frying Pan
 
 
----------------------------------
--- F I S H I N G     P O L E S --
----------------------------------
+----------------------------------
+-- F I S H I N G      P O L E S --
+----------------------------------
 
 i(19970, 1, 7884);		-- Arcanite Fishing Pole
 i(45991, 1, 22166);		-- Bone Fishing Pole
@@ -62,3 +62,14 @@ i(116825, 1, 65557);	-- Savage Fishing Pole
 i(25978, 1, 10687);		-- Seth's Graphite Fishing Pole
 i(88535, 1, 45845);		-- Sharpened Tuskarr Spear
 i(120163, 1, 67918);	-- Thruk's Fishing Rod
+
+--------------------------------------------
+-- H I D D E N      A P P E A R A N C E S --
+--------------------------------------------
+i(119601, 1, 67418);	-- Mistdancer Shoulders [Hidden Shoulder Appearance]
+i(119588, 1, 67410);	-- Mistdancer Pauldrons [Hidden Shoulder Appearance]
+i(119585, 1, 67407);	-- Mistdancer Handguards [Hidden Glove Appearance]
+i(119556, 1, 67388);	-- Trailseeker Spaulders [Hidden Shoulder Appearance]
+i(129485, 1, 74101);	-- Mistdancer Pauldrons [Hidden Shoulders]
+i(129482, 1, 74098);	-- Mistdancer Handguards
+i(129714, 1, 74250); 	-- Trailseeker Spaulders [Hidden Shoulders]

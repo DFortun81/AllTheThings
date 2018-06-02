@@ -509,13 +509,13 @@ _.Zones =
 					}),
 					qa(26485, {	-- Snapjaws, Lad!
 						["groups"] = {
-							un(15, i(19022)),	-- Nat Pagle's Extreme Angler FC-5000
+							i(19022),	-- Nat Pagle's Extreme Angler FC-5000
 						},
 						["qg"] = 43109,	-- Dron Blastbrew
 					}),
 					qh(26211, {	-- Snapjaws, Mon!
 						["groups"] = {
-							un(15, i(19022)),	-- Nat Pagle's Extreme Angler FC-5000
+							i(19022),	-- Nat Pagle's Extreme Angler FC-5000
 						},
 						["qg"] = 14740,	-- Katoom the Angler
 					}),

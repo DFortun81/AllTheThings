@@ -923,7 +923,7 @@ _.Zones =
 				n(  -38, {	-- Profession
 					prof(356, { -- Fishing
 						["groups"] = {
-							un(15, i(34486)),		-- Old Crafty
+							i(34486),		-- Old Crafty
 						},
 						["description"] = "Go fishing for a bit in Orgrimmar.",	
 					}),
@@ -1313,7 +1313,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 --					qh(40786),	-- The Smoldering Ember (QG item received from final boss in TW dungeons)
 					qg(53371, qh(29309, {  	-- The Stuff of Legends
 						["groups"] = {
-							un(15, i(71086)),	-- Dragonwrath, Tarecgosa's Rest (LEGENDARY!)
+							i(71086),	-- Dragonwrath, Tarecgosa's Rest (LEGENDARY!)
 						},
 						["classes"] = {5,7,8,9,10,11},
 					})),

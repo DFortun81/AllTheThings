@@ -38,17 +38,17 @@ profession(356, { 	-- Fishing
 	}),
 	n(-167, { 	-- Fishing Poles
 		["groups"] = {	
-			desc(un(15, i(19970)), "Reward from winning Stranglethorn Fishing Extravaganza."),	-- Arcanite Fishing Pole
-			desc(un(15, i(45991)), "Can be obtained via a drop from the lunarfall or frostdeep cavedweller's in the garrison."), -- Bone Fishing Pole
-			desc(un(15, a(i(116826))), "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin."),	-- Draenic Fishing Pole
-			desc(un(15, i(84661)), "Bought from Nat Pagle in Krasarang Wilds after obtaining Revered with The Anglers for 400g."),	-- Dragon Fishing Pole
-			desc(un(15, i(45992)), "Drop from Lunarfall or Frostdeep Cavedwellers in the garrison."),	-- Jeweled Fishing Pole
-			desc(un(15, i(44050)), "Bought from Sairuk or Tanaika after obtaining Exalted with Kalu'ak for 102g73s17c."),	-- Mastercraft Kalu'ak Fishing Pole
-			desc(un(15, i(19022)), "Reward from quest in The Hinterlands."),	-- Nat Pagle's Extreme Angler FC-5000
-			desc(un(15, i(45858)), "Reward from Nat Pagle, Angler Extreme quest in Duskwallow Marsh."),	-- Nat's Lucky Fishing Pole
-			desc(un(15, i(84660)), "Bought from Nat Pagle in Krasarang Wilds after obtaining Honored with The Anglers for 20g."),	-- Pandaren Fishing Pole
-			desc(un(15, h(i(116825))), "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin."),	-- Savage Fishing Pole
-			desc(un(15, i(25978)), "Reward from quest Rather Be Fishin' in Terokkar Forest."),	-- Seth's Graphite Fishing Pole
+			desc(i(19970), "Reward from winning Stranglethorn Fishing Extravaganza."),	-- Arcanite Fishing Pole
+			desc(i(45991), "Can be obtained via a drop from the lunarfall or frostdeep cavedweller's in the garrison."), -- Bone Fishing Pole
+			desc(a(i(116826)), "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin."),	-- Draenic Fishing Pole
+			desc(i(84661), "Bought from Nat Pagle in Krasarang Wilds after obtaining Revered with The Anglers for 400g."),	-- Dragon Fishing Pole
+			desc(i(45992), "Drop from Lunarfall or Frostdeep Cavedwellers in the garrison."),	-- Jeweled Fishing Pole
+			desc(i(44050), "Bought from Sairuk or Tanaika after obtaining Exalted with Kalu'ak for 102g73s17c."),	-- Mastercraft Kalu'ak Fishing Pole
+			desc(i(19022), "Reward from quest in The Hinterlands."),	-- Nat Pagle's Extreme Angler FC-5000
+			desc(i(45858), "Reward from Nat Pagle, Angler Extreme quest in Duskwallow Marsh."),	-- Nat's Lucky Fishing Pole
+			desc(i(84660), "Bought from Nat Pagle in Krasarang Wilds after obtaining Honored with The Anglers for 20g."),	-- Pandaren Fishing Pole
+			desc(h(i(116825)), "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin."),	-- Savage Fishing Pole
+			desc(i(25978), "Reward from quest Rather Be Fishin' in Terokkar Forest."),	-- Seth's Graphite Fishing Pole
 		},
 		["icon"] = "Interface\\Icons\\inv_fishingpole_02",
 	}),	
@@ -415,12 +415,12 @@ profession(356, { 	-- Fishing
 		desc(p(163), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."),	-- Toothy
 	}),
 	n(-319, { 	-- Weapons
-		desc(un(15, i(34486)), "Can be caught in Orgrimmar."), 	-- Old Crafty
-		desc(un(15, i(34484)), "Can be caught in Ironforge."), 	-- Old Ironjaw
-		desc(un(15, i(6360)), "Can be caught in Darkmoon Island, Northern Stranglethorn, and Wetlands in open water."),	-- Steelscale Crushfish
-		desc(un(15, i(19808)), "Can be caught in The Cape of Stranglethorn or Northern Stranglethorn during the Stranglethorn Fishing Extravaganza from pools."), 	-- Rockhide Strongfish
+		desc(i(34486), "Can be caught in Orgrimmar."), 	-- Old Crafty
+		desc(i(34484), "Can be caught in Ironforge."), 	-- Old Ironjaw
+		desc(i(6360), "Can be caught in Darkmoon Island, Northern Stranglethorn, and Wetlands in open water."),	-- Steelscale Crushfish
+		desc(i(19808), "Can be caught in The Cape of Stranglethorn or Northern Stranglethorn during the Stranglethorn Fishing Extravaganza from pools."), 	-- Rockhide Strongfish
 		desc(i(44505), "Can be caught in schools or open water in Northrend."),	-- Dustbringer
-		desc(un(15, i(44703)), "Can be caught from Fangtooth Herring Schools in Howling Fjord."), -- Dark Herring
+		desc(i(44703), "Can be caught from Fangtooth Herring Schools in Howling Fjord."), -- Dark Herring
 	}),
 	tier(1, {	-- Classic
 		
