@@ -6,58 +6,8 @@ _.Zones =
 	m(962, { 	-- Draenor
 		h(m(976, {	-- Frostwall other mapid's 976, 980, 981, 982,
 			 -- Lucetia: MapID 990 was used and only worked in Frostfire Ridge.  Changing it to 976 should work.
-			["groups"] = {						
+			["groups"] = {
 				nh(-3, { 	 -- Holidays					
---[[					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
---]]					
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							nh(-25, { 	 -- Pet Battle
@@ -1653,419 +1603,6 @@ _.Zones =
 					}),
 				}),
 				nh(-17, { 	 -- Quests
---[[				
-					q(38243),	-- A Bit of Ore
-					q(39020),	-- A Burning Path Through Time
-					q(39040),	-- A Call to Battle
-					q(39021),	-- A Frozen Path Through Time
-					q(37228),	-- A Fruitful Proposition
-					qh( 34592),	-- A Gronnling Problem
-					q(37237),	-- A Hero's Quest is Never Complete
-					q(37235),	-- A Plea to the Sky
-					q(40792),	-- A Shattered Path Through Time
-					qh( 33815),	-- A Song of Frost and Fire
-					qh( 36248),	-- A Stolen Heart
-					q(36611),	-- A True Draenor Angler
-					qh( 35075),	-- Abyssal Gulper Eel
-					q(36802),	-- Abyssal Gulper Lunker
-					q(37270),	-- Alchemy Experiment
-					qh( 38574),	-- All Hands on Deck
-					qa( 37852),	-- Amulet of Rukhmar: The Apexis Device
-					qh( 37993),	-- Amulet of Rukhmar: The Apexis Device
-					qh( 37849),	-- Amulet of Rukhmar: The First Key
-					q(36616),	-- An Angler on Our Team
-					q(37243),	-- An Axe to Grind
-					q(37167),	-- And No Maces!
-					qh( 36132),	-- Anglin' In Our Garrison
-					q(34653),	-- Arakkoa Exodus
-					q(36951),	-- Arakkoa Exodus
-					qh( 37757),	-- Arcane Sanctum: Ko'ragh
-					qh( 36706),	-- Ashran Appearance
-					qh( 36692),	-- Assault on Darktide Roost
-					qh( 36690),	-- Assault on Lost Veil Anzu
-					qh( 36697),	-- Assault on Magnarok
-					qh( 36693),	-- Assault on Mok'gol Watchpost
-					qh( 36689),	-- Assault on Pillars of Fate
-					qh( 36667),	-- Assault on Shattrath Harbor
-					qh( 36688),	-- Assault on Skettis
-					qh( 36691),	-- Assault on Socrethar's Rise
-					qh( 36669),	-- Assault on Stonefury Cliffs
-					qh( 36694),	-- Assault on the Broken Precipice
-					qh( 36695),	-- Assault on the Everbloom Wilds
-					qh( 36699),	-- Assault on the Heart of Shattrath
-					qh( 36696),	-- Assault on the Iron Siegeworks
-					qh( 36701),	-- Assault on the Pit
-					qh( 37780),	-- Auchindoun
-					qh( 37014),	-- Auctioning for Parts
-					q(37159),	-- Aviana's Request
-					qh( 34375),	-- Back to Work
-					qh( 36698),	-- Battle in Ashran
-					q(40329),	-- Battle Pet Tamers: Warlords
-					qh( 36944),	-- Besting a Boar
-					qh( 36627),	-- Big Frostfire Gun
-					qh( 36567),	-- Bigger is Better
-					qa( 36274),	-- Bigger Trap, Better Rewards
-					qh( 36346),	-- Bigger Trap, Better Rewards
-					q(39299),	-- Black Marketeering
-					qh( 37765),	-- Blackhand's Crucible: Blackhand
-					qh( 35074),	-- Blackwater Whiptail
-					q(36803),	-- Blackwater Whiptail Lunker
-					q(36804),	-- Blind Lake Lunker
-					qh( 35073),	-- Blind Lake Sturgeon
-					qh( 37781),	-- Bloodmaul Slag Mines
-					q(37230),	-- Bloody Expensive
-					qh( 37034),	-- Boar Training: Bulbapore
-					qh( 37035),	-- Boar Training: Cruel Ogres
-					qh( 37036),	-- Boar Training: Darkwing Roc
-					qh( 37033),	-- Boar Training: Gezz'ran
-					qh( 37039),	-- Boar Training: Ironbore
-					qh( 37037),	-- Boar Training: Moth of Wrath
-					qh( 37040),	-- Boar Training: Orc Hunters
-					qh( 37032),	-- Boar Training: Riplash
-					qh( 37041),	-- Boar Training: The Garn
-					qh( 37038),	-- Boar Training: Thundercall
-					qh( 36653),	-- Botani Invasion!
-					qa( 36271),	-- Breaking into the Trap Game
-					qh( 36345),	-- Breaking into the Trap Game
-					qh( 37961),	-- Bringing the Bass
-					qh( 35786),	-- Bronze Victory
-					q(37145),	-- Budd's Gambit
-					qh( 34461),	-- Build Your Barracks
-					qh( 37669),	-- Building for Professions
-					q(37082),	-- Call of the Gladiator
-					q(39657),	-- Candy Bucket
-					qh( 36912),	-- Capturing a Clefthoof
-					q(37165),	-- Cenarion Concerns
-					qh( 36700),	-- Challenge at the Ring of Blood
-					qh( 34193),	-- Clearing the Garden
-					q(37160),	-- Cleaving Time
-					qh( 37052),	-- Clefthoof Training: Bulbapore
-					qh( 37053),	-- Clefthoof Training: Cruel Ogres
-					qh( 37054),	-- Clefthoof Training: Darkwing Roc
-					qh( 37051),	-- Clefthoof Training: Gezz'ran
-					qh( 37048),	-- Clefthoof Training: Great-Tusk
-					qh( 37057),	-- Clefthoof Training: Ironbore
-					qh( 37055),	-- Clefthoof Training: Moth of Wrath
-					qh( 37058),	-- Clefthoof Training: Orc Hunters
-					qh( 37049),	-- Clefthoof Training: Rakkiri
-					qh( 37050),	-- Clefthoof Training: Riplash
-					qh( 37059),	-- Clefthoof Training: The Garn
-					qh( 37056),	-- Clefthoof Training: Thundercall
-					q(37151),	-- Cold Steel
-					q(37209),	-- Cold Steel Part II					
-					qh( 38300),	-- Critters of Draenor
-					q(37152),	-- Cro's Revenge
-					q(39721),	-- Culling the Crew
-					q(37162),	-- Damsels and Dragons
-					qa( 37885),	-- Dark Grimoire: Breaching the Barrier
-					qh( 37994),	-- Dark Grimoire: Breaching the Barrier
-					qh( 37884),	-- Dark Grimoire: The Final Ingredient
-					qh( 37813),	-- Death to Amethon!
-					qh( 37814),	-- Death to Gor'thul!
-					qh( 37818),	-- Death to Hivelord Ik'rix!
-					qh( 37815),	-- Death to Nullifier Darkoor!
-					qh( 37949),	-- Death to Nullifier Darkoor!
-					qh( 37817),	-- Death to Tremor!
-					qh( 37816),	-- Death to Undertow!
-					qh( 34379),	-- Den of Wolves
-					qh( 38570),	-- Derailment
-					qh( 39231),	-- Destructor's Rise
-					qh( 37997),	-- Dream of Argus: The Crystal Reborn
-					qa( 37979),	-- Dream of Argus: The Crystal Reborn
-					qh( 36137),	-- Easing into Lumberjacking
-					qh( 37063),	-- Elekk Training: Cruel Ogres
-					qh( 37064),	-- Elekk Training: Darkwing Roc
-					qh( 37067),	-- Elekk Training: Ironbore
-					qh( 37065),	-- Elekk Training: Moth of Wrath
-					qh( 37068),	-- Elekk Training: Orc Hunters
-					qh( 37069),	-- Elekk Training: The Garn
-					qh( 37066),	-- Elekk Training: Thundercall
-					q(39034),	-- Emissary of War
-					qh( 36255),	-- Enchanted Highmaul Bracer
-					qh( 36946),	-- Entangling an Elekk
-					qh( 34378),	-- Establish Your Garrison
-					q(37161),	-- Family Traditions
-					qh( 35072),	-- Fat Sleeper
-					q(36805),	-- Fat Sleeper Lunker
-					q(37239),	-- Fate of the Fallen
-					qa( 36272),	-- Feeding An Army
-					qh( 36344),	-- Feeding An Army
-					q(37157),	-- Feeling A Bit Morose
-					q(39283),	-- Felmouth Frenzy Lunker
-					q(36608),	-- Finding Nat Pagle
-					qh( 35066),	-- Fire Ammonite
-					q(36800),	-- Fire Ammonite Lunker
-					q(37244),	-- Flamefly Trap
-					q(37150),	-- For the Birds
-					q(37179),	-- For The Children!
-					qh( 34364),	-- For the Horde!
-					qa( 35196),	-- Forging Ahead
-					qh( 35197),	-- Forging Ahead
-					q(39720),	-- Foul Fertilizer
-					qh( 36136),	-- Garrison Campaign: Awakening
-					qh( 35876),	-- Garrison Campaign: Darktide Roost
-					qh( 35843),	-- Garrison Campaign: Deep Recon
-					qh( 32979),	-- Garrison Campaign: Farseer's Rock
-					qh( 34034),	-- Garrison Campaign: Grinding Gears
-					qh( 36261),	-- Garrison Campaign: Missing Grunt
-					qa( 35985),	-- Garrison Campaign: The Broken Precipice
-					qh( 36117),	-- Garrison Campaign: The Broken Precipice
-					qa( 35679),	-- Garrison Campaign: The Fall of Shattrath
-					qh( 35680),	-- Garrison Campaign: The Fall of Shattrath
-					q(36281),	-- Garrison Campaign: The Ring of Blood
-					q(36219),	-- Garrison Campaign: The Ring of Blood
-					q(36282),	-- Garrison Campaign: The Ring of Blood
-					q(36280),	-- Garrison Campaign: The Ring of Blood
-					q(35186),	-- Garrison Campaign: The Sargerei
-					qa( 35185),	-- Garrison Campaign: The Sargerei
-					qh( 34309),	-- Garrison Campaign: The Search for Shadow Hunter Bwu'ja
-					qh( 38567),	-- Garrison Campaign: War Council
-					qh( 39175),	-- Gems of the Apexis
-					q(37158),	-- Gloriously Incandescent
-					q(37146),	-- Go Fetch
-					qh( 35788),	-- Gold Victory
-					qh( 35142),	-- Goren Invasion!
-					qa(  7023),	-- Greatfather Winter is Here!
-					qh( 37782),	-- Grimrail Depot
-					qa( 37919),	-- Gronnsbane: The Blessing of Beasts
-					qh( 37995),	-- Gronnsbane: The Blessing of Beasts
-					qa( 37917),	-- Gronnsbane: The Blessing of Fire
-					qh( 37916),	-- Gronnsbane: The Broken Spear
-					q(39651),	-- Grumpus
-					qa( 37811),	-- Gutrek's Cleaver: The Spirit Forge
-					qh( 37992),	-- Gutrek's Cleaver: The Spirit Forge
-					qh( 36589),	-- Heavy Arms
-					q(38296),	-- Herbs Galore
-					qh( 37758),	-- Imperator's Rise: Imperator Mar'gok
-					qh( 35846),	-- Intercepting the Orders
-					qh( 37764),	-- Iron Assembly: Admiral Gar'an
-					qh( 37783),	-- Iron Docks
-					qh( 35935),	-- Iron Horde Invasion!
-					qh( 36953),	-- It's a Matter of Strategy
-					qh( 34681),	-- It's a Matter of Strategy
-					qh( 35071),	-- Jawless Skulker
-					q(36806),	-- Jawless Skulker Lunker
-					q(37320),	-- Jewelcrafting Special Order: A Fine Choker
-					q(37321),	-- Jewelcrafting Special Order: A Yellow Brighter Than Gold
-					q(37323),	-- Jewelcrafting Special Order: Blue the Shade of Sky and Sea
-					q(37319),	-- Jewelcrafting Special Order: Wedding Bands
-					q(37242),	-- Learning Is Painful
-					q(36385),	-- Legacy of the Ancients
-					q(37241),	-- Lessons of the Past
-					q(37229),	-- Like A Dwarf In A Mine					
-					q(37236),	-- Like Father, Like Son
-					qh( 36352),	-- Locating the Lapidarist
-					qh( 34758),	-- Looking For Help
-					qh( 37060),	-- Lost in Transition
-					qh( 36612),	-- Luring Nat
-					qh( 37645),	-- Mastering the Menagerie
-					qh( 39225),	-- Maw of Souls
-					q(39649),	-- Menacing Grumplings
-					qh( 34775),	-- Mission Probable
-					qh( 38182),	-- Missive: Assault on Darktide Roost
-					qh( 38184),	-- Missive: Assault on Lost Veil Anzu
-					qh( 38177),	-- Missive: Assault on Magnarok
-					qh( 38181),	-- Missive: Assault on Mok'gol Watchpost
-					qh( 38185),	-- Missive: Assault on Pillars of Fate
-					qh( 38187),	-- Missive: Assault on Shattrath Harbor
-					qh( 38186),	-- Missive: Assault on Skettis
-					qh( 38183),	-- Missive: Assault on Socrethar's Rise
-					qh( 38176),	-- Missive: Assault on Stonefury Cliffs
-					qh( 38180),	-- Missive: Assault on the Broken Precipice
-					qh( 38179),	-- Missive: Assault on the Everbloom Wilds
-					qh( 40943),	-- Missive: Assault on the Heart of Shattrath
-					qh( 38178),	-- Missive: Assault on the Iron Siegeworks
-					qh( 40941),	-- Missive: Assault on the Pit
-					q(39719),	-- Mutiny on the Boneship
-					qh( 36614),	-- My Very Own Fortress
-					qh( 38306),	-- Mystery Notebook
-					qh( 36929),	-- Nemesis: Becoming Death
-					qh( 36897),	-- Nemesis: Becoming Death
-					qh( 36927),	-- Nemesis: Becoming Death
-					qh( 36923),	-- Nemesis: Becoming Death
-					qh( 36931),	-- Nemesis: Becoming Death
-					qh( 36925),	-- Nemesis: Becoming Death
-					qh( 36933),	-- Nemesis: Becoming Death
-					qh( 36930),	-- Nemesis: Draenei Destroyer
-					qh( 36924),	-- Nemesis: Dwarfstalker
-					qh( 36926),	-- Nemesis: Gnomebane
-					qh( 36889),	-- Nemesis: Hunter - Hunted
-					qh( 36921),	-- Nemesis: Manslayer
-					qh( 36932),	-- Nemesis: Scourge of the Kaldorei
-					qh( 36934),	-- Nemesis: Terror of the Tushui
-					qh( 36928),	-- Nemesis: Worgen Hunter
-					qh( 38427),	-- New Goods
-					qa( 37517),	-- News for Nixxie
-					qh( 37516),	-- News for Nixxie
-					qh( 36602),	-- News from Nagrand
-					qh( 36607),	-- News from Nagrand
-					qh( 35537),	-- News from Spires of Arak
-					qh( 36494),	-- News from Talador
-					qh( 38573),	-- Nothing Remains
-					q(37142),	-- Ogre Ancestry
-					qh( 36623),	-- Ogre Invasion!
-					q(36848),	-- Ogre Waygates
-					q(37148),	-- Oralius' Adventure
-					qh( 33427),	-- Ours is the Fury
-					q(37324),	-- Out of Stock: Blackrock Ore
-					q(37325),	-- Out of Stock: True Iron Ore
-					qh( 36290),	-- Out of the Shadows
-					qh( 34078),	-- Payment Due for Services Rendered
-					qh( 36469),	-- Pets Versus Pests
-					qh( 36862),	-- Pinchwhistle Gearworks
-					qh( 39221),	-- Pits of Mannoroth
-					qh( 35845),	-- Plans of War
-					qh( 38351),	-- Portable Portals
-					qh( 36342),	-- Primal Fury
-					qh( 37434),	-- Proving Grounds
-					q(37227),	-- Put a Bird on It
-					qh( 35842),	-- Putting Down the Packleader
-					q(38287),	-- Raw Beast Hides
-					qh( 36449),	-- Reduction in Force
-					qh( 36945),	-- Requisition a Riverbeast
-					qh( 33493),	-- Return to the Pack
-					qh( 37072),	-- Riverbeast Training: Bulbapore
-					qh( 37073),	-- Riverbeast Training: Cruel Ogres
-					qh( 37074),	-- Riverbeast Training: Darkwing Roc
-					qh( 37071),	-- Riverbeast Training: Gezz'ran
-					qh( 37077),	-- Riverbeast Training: Ironbore
-					qh( 37075),	-- Riverbeast Training: Moth of Wrath
-					qh( 37078),	-- Riverbeast Training: Orc Hunters
-					qh( 37079),	-- Riverbeast Training: The Garn
-					qh( 37076),	-- Riverbeast Training: Thundercall
-					qh( 37045),	-- Salvaging the Situation
-					qh( 37192),	-- Sanketsu, The Burning Blade
-					qh( 38188),	-- Scrap Meltdown
-					qh( 36662),	-- Scrappin'
-					qh( 37043),	-- Scraps of Iron
-					q(38406),	-- Sea Scorpion Lunker
-					q(37238),	-- Secrets of Soulbinding
-					q(34733),	-- Services of Dagg
-					qh( 36831),	-- Shadow Council Invasion!
-					qh( 37784),	-- Shadowmoon Burial Grounds
-					qh( 36414),	-- Shadowmoon Invasion!
-					q(37163),	-- Shadowy Secrets
-					qh( 36142),	-- Sharper Blades, Bigger Timber
-					qh( 35787),	-- Silver Victory
-					q(37147),	-- Sky Dancers
-					qh( 37785),	-- Skyreach
-					qh( 37762),	-- Slagworks: Heart of the Mountain
-					q(39716),	-- Smashing Squashlings
-					q(36522),	-- Solidarity in Death
-					q(38290),	-- Some Dust					
-					q(37232),	-- Soulcarver Voss
-					qh( 36594),	-- "Spare" Parts
-					q(36813),	-- Subversive Infestation
-					q(38293),	-- Sumptuous Fur
-					qh( 36952),	-- Taking the Fight to Nagrand
-					qh( 34794),	-- Taking the Fight to Nagrand
-					qh( 37097),	-- Talbuk Training: Bulbapore
-					qh( 37098),	-- Talbuk Training: Cruel Ogres
-					qh( 37099),	-- Talbuk Training: Darkwing Roc
-					qh( 37096),	-- Talbuk Training: Gezz'ran
-					qh( 37093),	-- Talbuk Training: Great-Tusk
-					qh( 37102),	-- Talbuk Training: Ironbore
-					qh( 37100),	-- Talbuk Training: Moth of Wrath
-					qh( 37103),	-- Talbuk Training: Orc Hunters
-					qh( 37094),	-- Talbuk Training: Rakkiri
-					qh( 37095),	-- Talbuk Training: Riplash
-					qh( 37104),	-- Talbuk Training: The Garn
-					qh( 37101),	-- Talbuk Training: Thundercall
-					qh( 36917),	-- Taming a Talbuk
-					qh( 37124),	-- Teeth of a Predator
-					qh( 39228),	-- Temple of Tyranny
-					qh( 35103),	-- The Alchemist
-					qh( 36256),	-- The Arakkoan Enchanter
-					q(39041),	-- The Arena Calls
-					qh( 34341),	-- The Beating Heart
-					qh( 37123),	-- The Black Claw
-					qh( 37763),	-- The Black Forge: Kromog
-					qh( 39232),	-- The Black Gate
-					q(37155),	-- The Brass Compass
-					q(37154),	-- The Cure For Death
-					q(37234),	-- The Dark Within
-					qh( 34765),	-- The Den of Skog
-					qh( 37786),	-- The Everbloom
-					qh( 36609),	-- The Great Angler Returns
-					qh( 37046),	-- The Headhunter's Harvest
-					qh( 33868),	-- The Home of the Frostwolves
-					q(37164),	-- The Huntresses
-					qh( 36314),	-- The Intricate Pendant
-					qh( 33010),	-- The Iron Wolf
-					qh( 34960),	-- The Land Provides
-					q(37240),	-- The Leaf-Reader
-					qh( 35058),	-- The Mysterious Flask
-					qh( 34823),	-- The Ogron Live?
-					q(37231),	-- The Search Continues
-					qh( 35557),	-- The Secrets of Gorgrond
-					qh( 37996),	-- The Silent Skull: Taking from the Taker
-					qa( 37945),	-- The Silent Skull: Taking from the Taker
-					q(37156),	-- The Soulcutter
-					q(39033),	-- The Time to Strike
-					qh( 38571),	-- The Train Gang
-					q(39042),	-- The Very Best
-					q(37149),	-- The Void-Gate
-					qh( 35154),	-- Things Are Not Goren Our Way
-					qh( 37291),	-- Thunderlord Invasion!
-					q(37153),	-- Time-Lost Vikings
-					q(37166),	-- Titanic Evolution
-					qh( 40417),	-- To Tanaan!
-					qh( 32796),	-- To the Garrison
-					q(37848),	-- Treasure Contract: Amulet of Rukhmar
-					q(37881),	-- Treasure Contract: Explosive Discoveries
-					q(37788),	-- Treasure Contract: Gutrek's Cleaver
-					q(37973),	-- Treasure Contract: The Artificer
-					q(37941),	-- Treasure Contract: The Infected Orc
-					q(37914),	-- Treasure Contract: The Thunderlord Sage
-					q(34937),	-- Treasure: Skaggit's Extra Stash
-					qh( 36182),	-- Tree-i-cide
-					qh( 37062),	-- Tricks of the Trade
-					qh( 36138),	-- Turning Timber into Profit
-					qh( 37044),	-- Unconventional Inventions
-					qh( 38242),	-- Unearthed Magic
-					qh( 37290),	-- Upgrades in Ashran
-					qh( 37787),	-- Upper Blackrock Spire
-					q(37233),	-- Vessel of Virtue
-					qh( 34209),	-- Vouchsafe Our Arrival
-					qh( 37756),	-- Walled City: Brackenspore
-					qh( 33918),	-- Wanted: Grondo's Bounty
-					qh( 36874),	-- Warlord of Draenor
-					qh( 34736),	-- We Be Needin' Supplies
-					qh( 38568),	-- We Need a Shipwright
-					qh( 34861),	-- We Need An Army
-					q(39668),	-- What Horrible Presents!
-					qh( 34824),	-- What We Got
-					qh( 34822),	-- What We Need
-					q(39648),	-- Where Are the Children?
-					qh( 36242),	-- Where There Is Smoke...
-					q(37245),	-- Whispers in the Darkness
-					qh( 34462),	-- Winds of Change
-					qh( 37105),	-- Wolf Training: Cruel Ogres
-					qh( 37106),	-- Wolf Training: Darkwing Roc
-					qh( 37109),	-- Wolf Training: Ironbore
-					qh( 37107),	-- Wolf Training: Moth of Wrath
-					qh( 37110),	-- Wolf Training: Orc Hunters
-					qh( 37111),	-- Wolf Training: The Garn
-					qh( 37108),	-- Wolf Training: Thundercall
-					qh( 36950),	-- Wrangling a Wolf
-					qh( 35736),	-- Writing in the Snow
-					qh( 37568),	-- Your First Alchemy Work Order
-					qh( 37569),	-- Your First Blacksmithing Work Order
-					qh( 37570),	-- Your First Enchanting Work Order
-					qh( 37571),	-- Your First Engineering Work Order
-					qh( 37572),	-- Your First Inscription Work Order
-					qh( 37573),	-- Your First Jewelcrafting Work Order
-					qh( 37574),	-- Your First Leatherworking Work Order
-					qh( 37575),	-- Your First Tailoring Work Order
-					q(36838),	-- Your Second Alchemy Work Order
-					q(35172),	-- Your Second Blacksmithing Work Order
-					q(36839),	-- Your Second Enchanting Work Order
-					qh( 37590),	-- Your Second Engineering Work Order
-					q(36841),	-- Your Second Inscription Work Order
-					q(36842),	-- Your Second Jewelcrafting Work Order
-					q(36844),	-- Your Second Leatherworking Work Order
-					q(36845),	-- Your Second Tailoring Work Order
---]]
 					qh(37961, { -- Bringing the Bass					
 						i(122613, { -- Stash of Dusty Music Rolls
 							i(122210), -- Music Roll: Orgrimmar
@@ -7056,18 +6593,6 @@ _.Zones =
 								i(119688),
 								i(119689),
 								i(119690),
---[[							
-								i(119666),\
-								i(119667), \
-								i(119668),  \
-								i(119669),   \
-								i(119670),    \_________Doesn't appear to have ever been added.
-								i(119675),    /
-								i(119677),   /
-								i(119678),  /
-								i(119679), /
-								i(119681),/
-]]--
 							},
 							["classes"] = {5}
 						}),
@@ -7083,7 +6608,6 @@ _.Zones =
 								i(119767),
 								i(119768),
 								i(119770),
---								i(119769),>---------Doesn't appear to have ever been added.
 							},
 							["classes"] = {9}
 						}),
@@ -7100,18 +6624,6 @@ _.Zones =
 								i(119477),
 								i(119478),
 								i(119499),
---[[								
-								i(119479),\
-								i(119485), \
-								i(119486),  \
-								i(119487),   \
-								i(119488),    \_________Doesn't appear to have ever been added.
-								i(119489),    /
-								i(119490),   /
-								i(119496),  /
-								i(119497), /
-								i(119498),/
-]]--										
 							},
 							["classes"] = {6}
 						}),
@@ -7128,7 +6640,6 @@ _.Zones =
 								i(119705),
 								i(119706),
 								i(119707),
---								i(119691),>---------Doesn't appear to have ever been added.
 							},
 							["classes"] = {4}
 						}),
@@ -7137,26 +6648,14 @@ _.Zones =
 								i(119581),
 								i(119583),
 								i(119584),
-								un(2, i(119585)), -- Mistdancer Handguards
+								i(119585), -- Mistdancer Handguards
 								i(119586),
 								i(119587),
-								un(2, i(119588)), -- Mistdancer Pauldrons
+								i(119588), -- Mistdancer Pauldrons
 								i(119589),
 								i(119590),
 								i(119602),
 								i(119605),
---[[									
-								i(119591),\
-								i(119592), \
-								i(119593),  \
-								i(119594),   \
-								i(119596),    \_________Doesn't appear to have ever been added.
-								i(119601),    /
-								i(119603),   /
-								i(119604),	/
-								i(119611), /
-								i(119612),/
-]]--								
 							},
 							["classes"] = {10}
 						}),
@@ -7172,7 +6671,6 @@ _.Zones =
 								i(119573),
 								i(119574),
 								i(119576),
---								i(119575),>---------Doesn't appear to have ever been added.
 							},
 							["classes"] = {8}
 						}),		
@@ -7190,18 +6688,6 @@ _.Zones =
 								i(119780),
 								i(119781),
 								i(119782),
---[[	
-								i(119783),\
-								i(119790), \
-								i(119791),  \
-								i(119792),   \
-								i(119793),    \_________Doesn't appear to have ever been added.
-								i(119794),    /
-								i(119800),   /
-								i(119801),  /
-								i(119802), /
-								i(119789),/ 
-]]--
 							},
 							["classes"] = {1}
 						}),		
@@ -7218,28 +6704,6 @@ _.Zones =
 								i(119514),
 								i(119525),
 								i(119544),
---[[									
-								i(119500),\
-								i(119520), \
-								i(119521),  \
-								i(119522),   \
-								i(119523),    \
-								i(119524),	   \
-								i(119526),      \
-								i(119527),       \
-								i(119528),        \
-								i(119529),         \_________Doesn't appear to have ever been added.
-								i(119535),         /
-								i(119536),        /
-								i(119537),       /
-								i(119538),      /
-								i(119539),     /
-								i(119540),    /
-								i(119541),   /
-								i(119542),  /
-								i(119543), /
-								i(119803),/
-]]--
 							},
 							["classes"] = {11}
 						}),		
@@ -7258,27 +6722,6 @@ _.Zones =
 								i(119729),
 								i(119745),	
 								i(119751),	
---[[
-								i(119708),\
-								i(119730), \
-								i(119731),  \
-								i(119732),   \
-								i(119733),    \
-								i(119734),     \
-								i(119735),      \
-								i(119736),       \
-								i(119737),        \
-								i(119738),         >---------Doesn't appear to have ever been added.
-								i(119744),        /
-								i(119746),       /
-								i(119747),      /
-								i(119748),     /
-								i(119749),    /
-								i(119750),   /
-								i(119752),  /
-								i(119753), /
-								i(119754),/
-]]--
 							},
 							["classes"] = {7}
 						}),		
@@ -7297,28 +6740,6 @@ _.Zones =
 								i(119637),
 								i(119638),
 								i(119639),	
---[[									
-								i(119620),\
-								i(119621), \
-								i(119622),  \
-								i(119623),   \
-								i(119624),    \
-								i(119625),     \
-								i(119626),      \
-								i(119632),       \
-								i(119633),        \
-								i(119634),         \_________Doesn't appear to have ever been added.
-								i(119640),         /
-								i(119646),        /
-								i(119647),       /
-								i(119648),      /
-								i(119649),     /
-								i(119650),    /
-								i(119651),   /
-								i(119657),  /
-								i(119658), /
-								i(119659),/
-]]--
 							},
 							["classes"] = {2}
 						}),		
@@ -7333,7 +6754,7 @@ _.Zones =
 								i(119557),
 								i(119558),
 								i(119559),
-								un(2, i(119556)), -- Trailseeker Spaulders
+								i(119556), -- Trailseeker Spaulders
 							},
 							["classes"] = {3}
 						}),

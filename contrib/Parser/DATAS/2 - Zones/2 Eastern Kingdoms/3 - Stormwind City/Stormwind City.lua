@@ -818,7 +818,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 --]]					
 					qg(53466, qa(29312,  {  	-- The Stuff of Legends
 						["groups"] = {
-							un(15, i(71086)),	-- Dragonwrath, Tarecgosa's Rest
+							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 						},
 						["classes"] = {5,7,8,9,10,11},
 					})),
