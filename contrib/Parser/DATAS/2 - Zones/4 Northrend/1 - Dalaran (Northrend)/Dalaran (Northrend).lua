@@ -1914,10 +1914,16 @@ _.Zones =
 						["description"] = "Your Tailor has to have completed Loremaster of Northrend for Deathchill Cloak and Northrend Dungeonmaster for Wispcloak, and not just via account wide. If you have done them account wide, but not exclusively on your tailor, you will need to go back, and finish them up to get the recipes from Charles Worth.",
 						["groups"] = {
 							ach(41, {	-- Loremaster of Northrend
-								recipe(56017),	-- Deathchill Cloak
+								{
+									["recipeID"] = 56017,	-- Deathchill Cloak
+									["requireSkill"] = 197,	-- Tailoring
+								},
 							}),
 							ach(1288, {	-- Northrend Dungeonmaster
-								recipe(56016),	-- Wispcloak
+								{
+									["recipeID"] = 56016,	-- Wispcloak
+									["requireSkill"] = 197,	-- Tailoring
+								},
 							}),
 						},
 					}),
