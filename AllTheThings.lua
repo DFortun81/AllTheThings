@@ -4308,8 +4308,26 @@ function app.FilterItemBind(item)
 	return item.b == 2; -- BoE
 end
 function app.FilterItemClass(item)
+	if item.f then
+		if item.f == 58 then	-- Containers
+			if item.total then
+				return app.GroupVisibilityFilter(item);
+			elseif not item.collectible then
+				return app.CollectedItemVisibilityFilter(item);
+			end
+		elseif item.f == 56 then	-- Reagents
+			if app.FilterItemClass_RequireItemFilter(item.f) then
+				return true;
+			end
+			if item.total then
+				return app.GroupVisibilityFilter(item);
+			elseif item.collectible then
+				return app.CollectedItemVisibilityFilter(item);
+			end
+		end
+	end
 	return app.ItemBindFilter(item)
-		or (app.FilterItemClass_RequireItemFilter(item.f)--
+		or (app.FilterItemClass_RequireItemFilter(item.f)
 			and app.RequireBindingFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)
