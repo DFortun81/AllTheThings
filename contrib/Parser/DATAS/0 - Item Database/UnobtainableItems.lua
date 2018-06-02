@@ -1596,9 +1596,7 @@ u(5197, 15);	-- Cookie's Tenderizer
 u(6360, 15);	-- Steelscale Crushfish
 u(11930, 15);	-- The Emperor's New Cape
 u(12584, 15);	-- Grand Marshal's Longsword
-u(12731, 15);	-- Pristine Hide of the Beast
 u(12791, 15); 	-- Barman Shanker
-u(12871, 15);	-- Chromatic Carapace
 u(16342, 15);	-- Sergeant's Cape
 u(16345, 15);	-- High Warlord's Blade
 u(16437, 15);	-- Marshal's Silk Footwraps
@@ -1662,8 +1660,6 @@ u(18454, 15);	-- Sergeant Major's Dragonhide Armsplints
 u(18455, 15);	-- Sergeant Major's Dragonhide Armsplints
 u(18456, 15);	-- Sergeant Major's Silk Cuffs
 u(18457, 15);	-- Sergeant Major's Silk Cuffs
-u(18769, 15);	-- Enchanted Thorium Platemail
-u(18779, 15);	-- Bottom Half of Advanced Armorsmithing: Volume 1
 u(18825, 15);	-- Grand Marshal's Aegis
 u(18826, 15);	-- High Warlord's Shield Wall
 u(18827, 15);	-- Grand Marshal's Handaxe
@@ -1694,7 +1690,6 @@ u(18874, 15);	-- High Warlord's War Staff
 u(18876, 15);	-- Grand Marshal's Claymore
 u(18877, 15);	-- High Warlord's Greatsword
 u(19808, 15);	-- Rockhide Strongfish
-u(19970, 15);   -- Arcanite Fishing Pole
 u(23272, 15);	-- Knight-Captain's Lamellar Breastplate
 u(23273, 15);	-- Knight-Captain's Lamellar Leggings
 u(23274, 15);	-- Knight-Lieutenant's Lamellar Gauntlets
@@ -1755,7 +1750,6 @@ u(23466, 15);	-- High Warlord's Spellblade
 u(23467, 15);	-- High Warlord's Quickblade
 u(23468, 15);	-- High Warlord's Tome of Destruction
 u(23469, 15);	-- High Warlord's Tome of Mending
-u(25978, 15);	-- Seth's Graphite Fishing Pole
 u(28379, 15);	-- Sergeant's Heavy Cape
 u(28380, 15);	-- Sergeant's Heavy Cloak
 u(29594, 15);	-- Knight-Lieutenant's Mail Greaves
@@ -1770,50 +1764,20 @@ u(29608, 15);	-- Marshal's Mail Leggings
 u(29609, 15);	-- Field Marshal's Mail Armor
 u(29610, 15);	-- Field Marshal's Mail Helm
 u(29611, 15);	-- Field Marshal's Mail Spaulders
-u(32912, 15);   -- Yellow Brewfest Stein
-u(32915, 15);   -- Filled Yellow Brewfest Stein [Barleybrew Clear]
-u(32917, 15);   -- Filled Yellow Brewfest Stein [Thunder 45]
-u(32918, 15);   -- Filled Yellow Brewfest Stein [Gordok Grog]
-u(32919, 15);   -- Filled Yellow Brewfest Stein [Small Step]
-u(32920, 15);   -- Filled Yellow Brewfest Stein [Jungle River Water]
-u(33016, 15); 	-- Blue Brewfest Stein
-u(33017, 15);   -- Filled Blue Brewfest Stein [Barleybrew Clear]
-u(33018, 15);   -- Filled Blue Brewfest Stein [Thunder 45]
-u(33019, 15);   -- Filled Blue Brewfest Stein [Gordok Grog]
-u(33020, 15);   -- Filled Blue Brewfest Stein [Small Step]
-u(33021, 15);   -- Filled Blue Brewfest Stein [Jungle River Water]
-u(37892, 15);   -- Green Brewfest Stein
-u(37893, 15);   -- Filled Green Brewfest Stein [Barleybrew Clear]
-u(37894, 15);   -- Filled Green Brewfest Stein [Thunder 45]
-u(37895, 15);   -- Filled Green Brewfest Stein [Gordok Grog]
-u(37896, 15);   -- Filled Green Brewfest Stein [Small Step]
-u(37897, 15);   -- Filled Green Brewfest Stein [Jungle River Water]
-u(44050, 15);	-- Mastercraft Kalu'ak Fishing Pole
 u(44703, 15);	-- Dark Herring
 u(45067, 15);	-- Egg Basket
-u(45858, 15);	-- Nat's Lucky Fishing Pole
-u(45991, 15);	-- Bone Fishing Pole
-u(45992, 15);	-- Jeweled Fishing Pole
-u(50287, 15); 	-- Boots of the Bay
 u(52485, 15);	-- Jeweler's Ruby Monocle
 u(52486, 15);	-- Jeweler's Sapphire Monocle
 u(52487, 15);	-- Jeweler's Amber Monocle
 u(52489, 15);	-- Rhinestone Sunglasses
 u(52653, 15); 	-- Unidentified Cooking Utensil
-u(56836, 15); 	-- Overflowing Purple Brewfest Stein
 u(68194, 15);	-- Oggleflint's Inspirer
-u(84660, 15);	-- Pandaren Fishing Pole
-u(84661, 15);	-- Dragon Fishing Pole
 u(85777, 15);	-- Ancient Pandaren Mining Pick
 u(86558, 15);	-- Rolling Pin
 u(86559, 15);	-- Frying Pan
 u(87213, 15); 	-- Mist-Piercing Goggles
-u(88535, 15);	-- Sharpened Tuskarr Pole
 u(88710, 15);	-- Nat's Hat
-u(116825, 15);	-- Savage Fishing Pole
-u(116826, 15);	-- Draenic Fishing Pole
 u(116913, 15);	-- Peon's Mining Pick
-u(120164, 15);	-- Thruk's Heavy Duty Fishing Pole (staff)
 u(130064, 15);	-- Deadeye Monocle
 u(153290, 15);  -- Krokul Mining Pick
 
