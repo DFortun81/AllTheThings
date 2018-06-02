@@ -603,6 +603,7 @@ _.Zones =
 				}),
 				n(-2, {	-- Vendors
 					a(n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>
+						i(95545),	-- Grand Commendation of the Kirin Tor Offensive
 						i(95564),	-- Reins of the Golden Primal Direhorn (MOUNT!)
 						i(95567),	-- Kirin Tor Beacon (TOY!)
 						i(95591),	-- Kirin Tor Offensive Tabard
@@ -1035,6 +1036,7 @@ _.Zones =
 						i(97131),	-- Shadow-Pan Assault Tabard
 					}),
 					h(n(67672, {	-- Vasarin Redmorn <Sunreaver Onslaught Quartermaster>
+						i(95548),	-- Grand Commendation of the Sunreaver Onslaught
 						i(95565),	-- Reins of the Crimson Primal Direhorn Mount
 						i(95592),	-- Sunreaver Onslaught Tabard
 						i(95568),	-- Sunreaver Beacon Toy

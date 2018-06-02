@@ -1528,6 +1528,7 @@ _.Zones =
 						i(86738),	-- Red Crane Spaulders
 					}),
 					n(64595, {	-- Rushi the Fox <Shado-Pan Quartermaster>
+						i(93220),	-- Grand Commendation of the Shado-Pan
 						i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan
 						i(84584),	-- Formula: Enchant Weapon - Dancing Steel
 						i(84583),	-- Formula: Enchant Weapon - Jade Spirit

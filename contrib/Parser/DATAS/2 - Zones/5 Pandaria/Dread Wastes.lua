@@ -638,6 +638,7 @@ _.Zones =
 				}),
 				n(-2, {		-- Vendors
 					n(64599, {	-- Ambersmith Zikk <Klaxxi Quartermaster>
+						i(92522),	-- Grand Commendation of the Klaxxi
 						i(89093),	-- Kovok's Riven Legguards
 						i(89089),	-- Wind-Reaver Greaves
 						i(89056),	-- Klaxxi Lash of the Consumer
