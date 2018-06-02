@@ -34,7 +34,7 @@ _.WorldEvents =
 				["groups"] = {
 					i(98543),		-- Wraps of the Blood-Soaked Brawler
 				},
-				["description"] = "This Legacy Achievement and it's reward shirt are reportedly still obtainable. Good luck!|r",
+				["description"] = "This Legacy Achievement and its reward shirt are reportedly still obtainable. Good luck!|r",
 			})),
 			i(142319, {		-- Bag of Chipped Dice
 				nh(117208, {	-- a Seagull
