@@ -4673,9 +4673,13 @@ UpdateGroup = function(parent, group)
 					group.visible = true;
 					
 					-- We only want to filter out Consumables, Reagents, and Miscellaneous items if they can't be used to collect something
-					if group.f and (group.f == 58 or group.f == 56 or group.f == 50) then
-						if not GetPersonalDataSubMember("ItemFilters", group.f, true) then
-							group.visible = false;
+					if group.f then
+						if group.f == 56 or group.f == 50 then
+							if not GetPersonalDataSubMember("ItemFilters", group.f, true) then
+								group.visible = false;
+							end
+						elseif group.f == 58 then
+							group.visible = app.CollectedItemVisibilityFilter(group);
 						end
 					end
 				end
