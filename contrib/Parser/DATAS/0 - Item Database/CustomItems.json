@@ -14,6 +14,11 @@
 			"lvl": 20
 		},
 		{
+			"name":"The Fire Extinguisher",
+			"itemID":41755,
+			"f": 2
+		},
+		{
 			"name": "Whistle of the Mottled Red Raptor",
 			"itemID": 8586,
 			"equippable": false,

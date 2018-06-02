@@ -229,6 +229,7 @@ AllTheThings.Locales.enUS = {
 		[55] = "Consumables",									-- Consumable (Artifact Power, etc)
 		[56] = GetItemClassInfo(5),								-- Reagents (Crafting, etc)
 		[57] = GetItemSubClassInfo(2,20),						-- Fishing Poles
+		[58] = "Containers",									-- Containers (Tier Tokens, Timeless Isle BoA gear tokens, Bags of loot, etc)
 
 		-- "Non-Equipment Types"
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
