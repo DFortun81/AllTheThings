@@ -4,251 +4,239 @@
 
 _.Instances = 
 {
-	{ -- Mists of Pandaria
+	{	-- Mists of Pandaria
 		["groups"] = {
 			inst(362, { 	-- Throne of Thunder
 				["groups"] = {
-					n(-17, { -- Quests
-						qh(32589, { -- Life Blood
-							i(95590), -- Glorious Standard of the Sunreaver Onslaught Toy
+					n(-17, {	-- Quests
+						qh(32589, {	-- Life Blood
+							i(95590),	-- Glorious Standard of the Sunreaver Onslaught Toy
 						}),
-						qa(32599, { -- Securing A Future
-							i(95589), -- Glorious Standard of the Kirin Tor Offensive Toy
+						qa(32599, {	-- Securing A Future
+							i(95589),	-- Glorious Standard of the Kirin Tor Offensive Toy
 						}),
 					}),
-					d(7, {		-- LFR
+					d(  7, {	-- LFR
 						["groups"] = {
-							n(-29, {-- Raid Finder Bag
+							n(-29, {	-- Raid Finder Bag
 								["groups"] = {
-									i(95343, { -- Treasures of the Thunder King LFR Loot Bag
-										i(94295, { -- Primal Egg
-											i(94296, {  -- Cracked Primal Egg
-												i(94292), -- Reins of the Black Primal Raptor
-												i(94293), -- Reins of the Green Primal Raptor
-												i(94291), -- Reins of the Red Primal Raptor
+									i(95343, {	-- Treasures of the Thunder King LFR Loot Bag
+										i(94295, {	-- Primal Egg
+											i(94296, { 	-- Cracked Primal Egg
+												i(94292),	-- Reins of the Black Primal Raptor
+												i(94293),	-- Reins of the Green Primal Raptor
+												i(94291),	-- Reins of the Red Primal Raptor
 											}),
 										}),
 									}),
 								},
-								["description"] = "This bag is drop by doing the Raid Finder queue.  Upon each boss kill you will either receive a piece of Raid Finder loot or this satchel. \nThis satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Raid Finder quality. \nThis satchel also contains a chance at various pets."
+								["description"] = "This bag is drop by doing the Raid Finder queue.  Upon each boss kill you will either receive a piece of Raid Finder loot or this satchel. \nThis satchel has the chance to drop the Primal Egg as well as any trash mob loot from Normal/Heroic at Raid Finder quality. \nThis satchel also contains a chance at various pets."
 							}),
-							ach(8069, { 			-- Last Stand of the Zandalari
+							ach(8069, {	-- Last Stand of the Zandalari
 								["groups"] = {
 									cr(69465, e(827, {	-- Jin'rokh the Breaker
-										i(95639),
-										i(95636),
-										i(95637),
-										i(95634),
-										i(95635),
-										i(95626),
-										i(95642),
-										i(95628),
-										i(95627),
-										i(95643),
-										i(95630),
-										i(95644),
-										i(95631),
-										i(95629),
-										i(95640),
-										i(95632),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
-											}),	
-										}),		
+										i(95877),	-- Bo-Ris, Horror in the Night
+										i(95862),	-- Darkwood Spiritstaff
+										i(95875),	-- Greatsword of Frozen Hells
+										i(95858),	-- Invocation of the Dawn
+										i(95876),	-- Do-tharak, the Swordbreaker
+										i(95860),	-- Fyn's Flickering Dagger
+										i(95867),	-- Jerthud, Graceful Hand of the Savior
+										i(95640),	-- Soulblade of the Breaking Storm
+										i(97129),	-- Tia-Tia, the Scything Star
+										i(95632),	-- Worldbreaker's Stormscythe
+										i(95866),	-- Nadagast's Exsanguinator
+										i(95861),	-- Zeeg's Ancient Kegsmasher
+										i(95859),	-- Miracoran, the Vehement Chord
+										i(95878),	-- Visage of the Doomed
+										i(95626),	-- Lightning-Eye Hood
+										i(95870),	-- Abandoned Spaulders of Arrowflight
+										i(95871),	-- Abandoned Spaulders of Renewal
+										i(95636),	-- Fissure-Split Shoulderwraps
+										i(95868),	-- Forgotten Mantle of the Moon
+										i(95869),	-- Forgotten Mantle of the Sun
+										i(95863),	-- Lost Shoulders of Fire
+										i(95865),	-- Lost Shoulders of Fluidity
+										i(95864),	-- Lost Shoulders of Healing
+										i(95874),	-- Reconstructed Bloody Shoulderplates
+										i(95873),	-- Reconstructed Furious Shoulderplates
+										i(95872),	-- Reconstructed Holy Shoulderplates
+										i(95628),	-- Static-Shot Shoulderguards
+										i(95639),	-- Drape of Booming Nights
+										i(95630),	-- Chestplate of Violent Detonation
+										i(95644),	-- Ionized Yojamban Carapace
+										i(95637),	-- Robes of Static Bursts
+										i(95631),	-- Bracers of Constant Implosion
+										i(95642),	-- Infinitely Conducting Bracers
+										i(95634),	-- Lightningweaver Gauntlets
+										i(95629),	-- Cloudbreaker Greatbelt
+										i(95635),	-- Al'set's Tormented Leggings
+										i(95627),	-- Spearman's Jingling Leggings
+										i(95643),	-- Ghostbinder Greatboots
+										i(95638),	-- Jin'rokh's Dreamshard
+										i(95633),	-- Jin'rokh's Soulcrystal
+										i(95624),	-- Sign of the Bloodied God
+										i(95625),	-- Renataki's Soul Charm
+										i(95343, {	-- Treasures of the Thunder King
+											i(95961),	-- Abandoned  Zandalari Firecord
+											i(95962),	-- Abandoned Zandalari Shadowgirdle
+											i(95965),	-- Home-Warding Slippers
+											i(95963),	-- Silentflame Sandals
+											i(95971),	-- Abandoned Zandalari Moonstrap
+											i(95970),	-- Abandoned Zandalari Silentbelt
+											i(95966),	-- Deeproot Treads
+											i(95959),	-- Spiderweb Tabi
+											i(95972),	-- Abandoned Zandalarai Arrowlinks
+											i(95973),	-- Abandoned Zandarlari Waterchain
+											i(95960),	-- Scalehide Spurs
+											i(95967),	-- Spiritbound Boots
+											i(95976),	-- Abandoned Zandalari Bucklebreaker
+											i(95975),	-- Abandoned Zandalari Goreplate
+											i(95974),	-- Abandoned Zandalari Greatbelt
+											i(95979),	-- Columnbreaker Stompers
+											i(95978),	-- Locksmasher Greaves
+											i(95968),	-- Vaultwalker Sabatons
+											i(94295, {	-- Primal Egg
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
+											}),
+										}),
 									})),
 									cr(68476, e(819, {	-- Horridon
-										i(95653),
-										i(95645),
-										i(95655),
-										i(95656),
-										i(95662),
-										i(95648),
-										i(95661),
-										i(95649),
-										i(95663),
-										i(95652),
-										i(95664),
-										i(95650),
-										i(95651),
-										i(95657),
-										i(95647),
-										i(95660),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(94574),	-- Pygmy Direhorn (PET!)
+										i(95877),	-- Bo-Ris, Horror in the Night
+										i(95862),	-- Darkwood Spiritstaff
+										i(95657),	-- Dinomancer's Spiritbinding Spire
+										i(95875),	-- Greatsword of Frozen Hells
+										i(95858),	-- Invocation of the Dawn
+										i(95647),	-- Jalak's Maelstrom Staff
+										i(95876),	-- Do-tharak, the Swordbreaker
+										i(95860),	-- Fyn's Flickering Dagger
+										i(95867),	-- Jerthud, Graceful Hand of the Savior
+										i(95866),	-- Nadagast's Exsanguinator
+										i(97129),	-- Tia-Tia, the Scything Star
+										i(95861),	-- Zeeg's Ancient Kegsmasher
+										i(95859),	-- Miracoran, the Vehement Chord
+										i(95660),	-- Venomlord's Totemic Wand
+										i(95878),	-- Visage of the Doomed
+										i(95655),	-- Flamecaster's Burning Crown
+										i(95652),	-- Puncture-Proof Greathelm
+										i(95870),	-- Abandoned Spaulders of Arrowflight
+										i(95871),	-- Abandoned Spaulders of Renewal
+										i(95868),	-- Forgotten Mantle of the Moon
+										i(95869),	-- Forgotten Mantle of the Sun
+										i(95863),	-- Lost Shoulders of Fire
+										i(95865),	-- Lost Shoulders of Fluidity
+										i(95864),	-- Lost Shoulders of Healing
+										i(95874),	-- Reconstructed Bloody Shoulderplates
+										i(95873),	-- Reconstructed Furious Shoulderplates
+										i(95872),	-- Reconstructed Holy Shoulderplates
+										i(95658),	-- Horridon's Tusk Fragment
+										i(95646),	-- Talisman of Living Poison
+										i(95662),	-- Spaulders of Dinomancy
+										i(95653),	-- Horn-Rimmed Doomcloak
+										i(95645),	-- Wastewalker's Sandblasted Drape
+										i(95649),	-- Sul'lithuz Sandmail
+										i(95664),	-- Armplates of the Vanquished Abomination
+										i(95648),	-- Bindings of Multiplicative Strikes
+										i(95650),	-- Frozen Warlord's Bracers
+										i(95656),	-- Vaccinator's Armwraps
+										i(95651),	-- Bloodlord's Bloodsoaked Legplates
+										i(95663),	-- Legguards of Scintillating Scales
+										i(95661),	-- Roots of Rampaging Earth
+										i(95659),	-- Petrified Eye of the Basilisk
+										i(95641),	-- Horridon's Last Gasp
+										i(95654),	-- Spark of Zandalar
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
 									cr(69134, e(816, {	-- Council of Elders (Kazra'jin)
-										i(95668),
-										i(95667),
-										i(95671),
-										i(95672),
-										i(95673),
-										i(95674),
-										i(95670),
-										i(95666),
-										i(95675),
-										i(94125),
+										i(95668),	-- 
+										i(95667),	-- 
+										i(95671),	-- 
+										i(95672),	-- 
+										i(95673),	-- 
+										i(95674),	-- 
+										i(95670),	-- 
+										i(95666),	-- 
+										i(95675),	-- 
+										i(94125),	-- 
 										i(95856, {		-- Gauntlets of the Crackling Conqueror
-											i(95911),
-											i(95916),
-											i(95921),
-											i(95925),
-											i(95930),
-											i(95981),
+											i(95911),	-- 
+											i(95916),	-- 
+											i(95921),	-- 
+											i(95925),	-- 
+											i(95930),	-- 
+											i(95981),	-- 
 										}),
 										i(95857, {		-- Gauntlets of the Crackling Protector
-											i(95883),
-											i(95896),
-											i(95900),
-											i(95906),
-											i(95941),
-											i(95946),
-											i(95951),
-											i(95988),
-											i(95992),
+											i(95883),	-- 
+											i(95896),	-- 
+											i(95900),	-- 
+											i(95906),	-- 
+											i(95941),	-- 
+											i(95946),	-- 
+											i(95951),	-- 
+											i(95988),	-- 
+											i(95992),	-- 
 										}),
 										i(95855, {		-- Gauntlets of the Crackling Vanquisher
-											i(95826),
-											i(95831),
-											i(95836),
-											i(95840),
-											i(95845),
-											i(95851),
-											i(95890),
-											i(95936),
+											i(95826),	-- 
+											i(95831),	-- 
+											i(95836),	-- 
+											i(95840),	-- 
+											i(95845),	-- 
+											i(95851),	-- 
+											i(95890),	-- 
+											i(95936),	-- 
 										}),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
@@ -257,7 +245,7 @@ _.Instances =
 							}),
 							ach(8070, { 			-- Forgotten Depths
 								["groups"] = {
-									i(98132, { -- Shado-Pan Geyser Gun
+									i(98132, {	-- Shado-Pan Geyser Gun
 										["groups"] = {
 										},
 										["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
@@ -281,52 +269,30 @@ _.Instances =
 										i(95696),
 										i(95686),
 										i(95678),
-										i(95692),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(95692),	
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
@@ -344,51 +310,29 @@ _.Instances =
 										i(95716),
 										i(95698),
 										i(95710),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
@@ -438,51 +382,29 @@ _.Instances =
 											i(95847),	-- Leggings of the Haunted Forest
 											i(95853),	-- Breeches of the Haunted Forest
 										}),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
@@ -510,51 +432,29 @@ _.Instances =
 										i(95734),
 										i(95743),
 										i(95728),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
@@ -577,51 +477,29 @@ _.Instances =
 										i(95758),
 										i(95768),
 										i(97959),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
@@ -664,51 +542,29 @@ _.Instances =
 											i(95848),
 											i(95850),
 										}),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
@@ -757,51 +613,29 @@ _.Instances =
 											i(95844),
 											i(95849),
 										}),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
@@ -843,51 +677,29 @@ _.Instances =
 											i(95846),
 											i(95852),
 										}),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
@@ -907,51 +719,29 @@ _.Instances =
 										i(95809),
 										i(95810),
 										i(95818),
-										i(95863), -- Lost Shoulders of Fire		
-										i(95865), -- Lost Shoulders of Fluidity		
-										i(95864), -- Lost Shoulders of Healing		
-										i(95868), -- Forgotten Mantle of the Moon		
-										i(95869), -- Forgotten Mantle of the Sun		
-										i(95870), -- Abandoned Spauldeers of Arrowflight		
-										i(95871), -- Abandoned Spaulders of Renewal		
-										i(95874), -- Reconstructed Bloody Shoulderplates		
-										i(95873), -- Reconstructed Furious Shoulderplates		
-										i(95872), -- Reconstructed Holy Shoulderplates		
-										i(95877), -- Bo-Ris, Horror in the Night		
-										i(95862), -- Darkwood Spiritstaff		
-										i(95876), -- Do-tharak, the Swordbreaker		
-										i(95860), -- Fyn's Flickering Dagger		
-										i(95875), -- Greatsword of Frozen Hells		
-										i(95858), -- Invocation of thee Daawn		
-										i(95867), -- Jerthud, Graceful Hand of the Savior		
-										i(95859), -- Miracoran, the Vehement Chord		
-										i(95866), -- Mnadagast's Exsanguinator		
-										i(97129), -- Tia-Tia, the Scything Stara		
-										i(95861), -- Zeeg's Ancient Kegsmasher		
-										i(95878), -- Visage of the Doomed		
-										i(95343, { -- Treasures of the Thunder King		
-											i(95961), -- Abandoned  Zandalari Firecord	
-											i(95962), -- Abandoned Zandalari Shadowgirdle	
-											i(95965), -- Home-Warding Slippers	
-											i(95963), -- Silentflame Sandals	
-											i(95971), -- Abandoned Zandalari Moonstrap	
-											i(95970), -- Abandoned Zandalari Silentbelt	
-											i(95966), -- Deeproot Treads	
-											i(95959), -- Spiderweb Tabi	
-											i(95972), -- Abandoned Zandalarai Arrowlinks	
-											i(95973), -- Abandoned Zandarlari Waterchain	
-											i(95960), -- Scalehide Spurs	
-											i(95967), -- Spiritbound Boots	
-											i(95976), -- Abandoned Zandalari Bucklebreaker	
-											i(95975), -- Abandoned Zandalari Goreplate	
-											i(95974), -- Abandoned Zandalari Greatbelt	
-											i(95979), -- Columnbreaker Stompers	
-											i(95978), -- Locksmasher Greaves	
-											i(95968), -- Vaultwalker Sabatons	
-											i(94295, { -- Primal Egg	
-												i(94291), -- Red Primal Raptor
-												i(94292), -- Black Primal Raptor
-												i(94293) -- Green Primal Raptor
+										i(95343, {	-- Treasures of the Thunder King		
+											i(95961),	-- Abandoned  Zandalari Firecord	
+											i(95962),	-- Abandoned Zandalari Shadowgirdle	
+											i(95965),	-- Home-Warding Slippers	
+											i(95963),	-- Silentflame Sandals	
+											i(95971),	-- Abandoned Zandalari Moonstrap	
+											i(95970),	-- Abandoned Zandalari Silentbelt	
+											i(95966),	-- Deeproot Treads	
+											i(95959),	-- Spiderweb Tabi	
+											i(95972),	-- Abandoned Zandalarai Arrowlinks	
+											i(95973),	-- Abandoned Zandarlari Waterchain	
+											i(95960),	-- Scalehide Spurs	
+											i(95967),	-- Spiritbound Boots	
+											i(95976),	-- Abandoned Zandalari Bucklebreaker	
+											i(95975),	-- Abandoned Zandalari Goreplate	
+											i(95974),	-- Abandoned Zandalari Greatbelt	
+											i(95979),	-- Columnbreaker Stompers	
+											i(95978),	-- Locksmasher Greaves	
+											i(95968),	-- Vaultwalker Sabatons	
+											i(94295, {	-- Primal Egg	
+												i(94291),	-- Red Primal Raptor
+												i(94292),	-- Black Primal Raptor
+												i(94293)	-- Green Primal Raptor
 											}),	
 										}),		
 									})),
@@ -960,24 +750,24 @@ _.Instances =
 							}),
 						}
 					}),
-					d(1, {		-- Normal
+					d(  1, {	-- Normal
 						["ignoreBonus"] = true,
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
-							ach(8124), -- Glory of the Thundering Raider
-							ach(8069), -- Last Stand of the Zandalari
-							ach(8070), -- Forgotten Depths
-							ach(8071), -- Halls of Flesh-Shaping
-							ach(8072), -- Pinnacle of Storms
+							ach(8124),	-- Glory of the Thundering Raider
+							ach(8069),	-- Last Stand of the Zandalari
+							ach(8070),	-- Forgotten Depths
+							ach(8071),	-- Halls of Flesh-Shaping
+							ach(8072),	-- Pinnacle of Storms
 							n(-17, {	-- Quests 
-								q(32711, { -- Agony and Anima
+								q(32711, {	-- Agony and Anima
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -985,14 +775,14 @@ _.Instances =
 									["repeatable"] = true,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Normal quality."
 								}),
-								q(32710, { -- Something Fouls is Afoot
+								q(32710, {	-- Something Fouls is Afoot
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -1000,14 +790,14 @@ _.Instances =
 									["repeatable"] = true,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Normal quality."
 								}),
-								q(32712, { -- Zao'cho the Wicked
+								q(32712, {	-- Zao'cho the Wicked
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -1015,14 +805,14 @@ _.Instances =
 									["repeatable"] = true,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Normal quality."
 								}),
-								q(32716, { -- Eyes of the Thunder King
+								q(32716, {	-- Eyes of the Thunder King
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -1030,14 +820,14 @@ _.Instances =
 									["repeatable"] = true,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Normal quality."
 								}),
-								q(32715, { -- Requiem for a Queen
+								q(32715, {	-- Requiem for a Queen
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -1045,14 +835,14 @@ _.Instances =
 									["repeatable"] = true,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Normal quality."
 								}),
-								q(32713, { -- Rocks Fall, People Die
+								q(32713, {	-- Rocks Fall, People Die
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -1060,14 +850,14 @@ _.Instances =
 									["repeatable"] = true,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Normal quality."
 								}),
-								q(32714, { -- Taming the Tempest
+								q(32714, {	-- Taming the Tempest
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -1077,1563 +867,1563 @@ _.Instances =
 								}),
 							}),
 							n(0, {		-- Zone Drop
-								n(69909, { -- Amani'shi Flame Chanter	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69909, {	-- Amani'shi Flame Chanter	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70448, { -- Ancient Python	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons	
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70448, {	-- Ancient Python	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons	
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(68221, { -- Bore Worm	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(68221, {	-- Bore Worm	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(68222, { -- Bow Fly Swarm	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers
-									n(-355, { -- Thunderforged	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers
+								n(68222, {	-- Bow Fly Swarm	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers
+									n(-355, {	-- Thunderforged	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers
 									}),
 								}),
-								n(70589, { -- Cavern Burrower	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70589, {	-- Cavern Burrower	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69702, { -- Dark Ritualist	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons	
+								n(69702, {	-- Dark Ritualist	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons	
 									}),
 								}),
-								n(69910, { -- Drakkari Frost Warden	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69910, {	-- Drakkari Frost Warden	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70586, { -- Eternal Guardian	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70586, {	-- Eternal Guardian	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69899, { -- Farraki Sand Conjurer	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons	
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69899, {	-- Farraki Sand Conjurer	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons	
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70153, { -- Fungal Growth	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70153, {	-- Fungal Growth	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(68220, { -- Gastropod	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(68220, {	-- Gastropod	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69351, { -- Greater Cave Bat	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69351, {	-- Greater Cave Bat	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69916, { -- Gurubashi Berserker	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69916, {	-- Gurubashi Berserker	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69905, { -- Gurubashi Berserker	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons	
+								n(69905, {	-- Gurubashi Berserker	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons	
 									}),
 								}),
-								n(69375, { -- Hidden Fog	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69375, {	-- Hidden Fog	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69834, { -- Lightning Guardian	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
+								n(69834, {	-- Lightning Guardian	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
 									}),
 								}),
-								n(70202, { -- Manchu	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70202, {	-- Manchu	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70594, { -- Mist Lurker	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70594, {	-- Mist Lurker	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70179, { -- Ritual Guard	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70179, {	-- Ritual Guard	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(68313, { -- Roaming Fog	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(68313, {	-- Roaming Fog	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70430, { -- Rocky Horror	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95224), -- Home-Warding Slippers
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96337), -- Home-Warding Slippers
+								n(70430, {	-- Rocky Horror	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95224),	-- Home-Warding Slippers
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96337),	-- Home-Warding Slippers
 									}),
 								}),
-								n(70224, { -- Rotting Scavenger	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95224), -- Home-Warding Slippers
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96337), -- Home-Warding Slippers
+								n(70224, {	-- Rotting Scavenger	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95224),	-- Home-Warding Slippers
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96337),	-- Home-Warding Slippers
 									}),
 								}),
-								n(69944, { -- Sand Elemental
-									i(94125), -- Living Sandling
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69944, {	-- Sand Elemental
+									i(94125),	-- Living Sandling
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70587, { -- Shale Stalker	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70587, {	-- Shale Stalker	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70240, { -- Shan'ze Celestial Shaper	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70240, {	-- Shan'ze Celestial Shaper	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70227, { -- Skittering Spiderling	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70227, {	-- Skittering Spiderling	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70445, { -- Stormbringer Draz'kil	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70445, {	-- Stormbringer Draz'kil	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69821, { -- Thunder Lord	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69821, {	-- Thunder Lord	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70341, { -- Tormented Spirit	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70341, {	-- Tormented Spirit	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70230, { -- Zandalari Blade Initiate	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons	
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70230, {	-- Zandalari Blade Initiate	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons	
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69906, { -- Zandalari High Priest	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons	
+								n(69906, {	-- Zandalari High Priest	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons	
 									}),
 								}),
-								n(69927, { -- Zandalari Prelate	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons	
+								n(69927, {	-- Zandalari Prelate	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons	
 									}),
 								}),
-								n(70557, { -- Zandalari Prophet	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70557, {	-- Zandalari Prophet	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69388, { -- Zandalari Spear-Shaper	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons	
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69388, {	-- Zandalari Spear-Shaper	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons	
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69390, { -- Zandalari Storm-Caller	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69390, {	-- Zandalari Storm-Caller	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70236, { -- Zandalari Storm-Caller	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70236, {	-- Zandalari Storm-Caller	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69911, { -- Zandalari Warlord	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69911, {	-- Zandalari Warlord	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69455, { -- Zandalari Water-Binder	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69455, {	-- Zandalari Water-Binder	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
 							}),
 							cr(69465, e(827, {	-- Jin'rokh the Breaker
-								ach(8094), -- Lightning Overload
-								i(94735), -- Drape of Booming Nights
-								i(94733), -- Fissure-Split Shoulderwraps
-								i(94731), -- Robes of Static Bursts
-								i(94737), -- Lightningweaver Gauntlets
-								i(94739), -- Al'set's Tormented Leggings
-								i(94724), -- Lightning-Eye Hood
-								i(94732), -- Infinitely Conducting Bracers
-								i(94725), -- Static-Shot Shoulderguards
-								i(94728), -- Spearman's Jingling Leggings
-								i(94736), -- Ghostbinder Greatboots
-								i(94723), -- Chestplate of Violent Detonation
-								i(94734), -- Ionized Yojamban Carapace
-								i(94727), -- Bracers of Constant Implosion
-								i(94726), -- Cloudbreaker Greatbelt
-								i(94730), -- Soulblade of the Breaking Storm
-								i(94722), -- Worldbreaker's Stormscythe
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96011), -- Drape of Booming Nights
-									i(96008), -- Fissure-Split Shoulderwraps
-									i(96009), -- Robes of Static Bursts
-									i(96006), -- Lightningweaver Gauntlets
-									i(96007), -- Al'set's Tormented Leggings
-									i(95998), -- Lightning-Eye Hood
-									i(96014), -- Infinitely Conducting Bracers
-									i(96000), -- Static-Shot Shoulderguards
-									i(95999), -- Spearman's Jingling Leggings
-									i(96015), -- Ghostbinder Greatboots
-									i(96002), -- Chestplate of Violent Detonation
-									i(96016), -- Ionized Yojamban Carapace
-									i(96003), -- Bracers of Constant Implosion
-									i(96001), -- Cloudbreaker Greatbelt
-									i(96012), -- Soulblade of the Breaking Storm
-									i(96004), -- Worldbreaker's Stormscythe
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed									
+								ach(8094),	-- Lightning Overload
+								i(94735),	-- Drape of Booming Nights
+								i(94733),	-- Fissure-Split Shoulderwraps
+								i(94731),	-- Robes of Static Bursts
+								i(94737),	-- Lightningweaver Gauntlets
+								i(94739),	-- Al'set's Tormented Leggings
+								i(94724),	-- Lightning-Eye Hood
+								i(94732),	-- Infinitely Conducting Bracers
+								i(94725),	-- Static-Shot Shoulderguards
+								i(94728),	-- Spearman's Jingling Leggings
+								i(94736),	-- Ghostbinder Greatboots
+								i(94723),	-- Chestplate of Violent Detonation
+								i(94734),	-- Ionized Yojamban Carapace
+								i(94727),	-- Bracers of Constant Implosion
+								i(94726),	-- Cloudbreaker Greatbelt
+								i(94730),	-- Soulblade of the Breaking Storm
+								i(94722),	-- Worldbreaker's Stormscythe
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96011),	-- Drape of Booming Nights
+									i(96008),	-- Fissure-Split Shoulderwraps
+									i(96009),	-- Robes of Static Bursts
+									i(96006),	-- Lightningweaver Gauntlets
+									i(96007),	-- Al'set's Tormented Leggings
+									i(95998),	-- Lightning-Eye Hood
+									i(96014),	-- Infinitely Conducting Bracers
+									i(96000),	-- Static-Shot Shoulderguards
+									i(95999),	-- Spearman's Jingling Leggings
+									i(96015),	-- Ghostbinder Greatboots
+									i(96002),	-- Chestplate of Violent Detonation
+									i(96016),	-- Ionized Yojamban Carapace
+									i(96003),	-- Bracers of Constant Implosion
+									i(96001),	-- Cloudbreaker Greatbelt
+									i(96012),	-- Soulblade of the Breaking Storm
+									i(96004),	-- Worldbreaker's Stormscythe
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed									
 								}),	
 							})),
 							cr(68476, e(819, {	-- Horridon
-								ach(8038), -- Cretaceous Collector
-								i(94745), -- Horn-Rimmed Doomcloak
-								i(94748), -- Wastewalker's Sandblasted Drape
-								i(94752), -- Flamecaster's Burning Crown
-								i(94750), -- Vaccinator's Armwraps
-								i(94753), -- Spaulders of Dinomancy
-								i(94743), -- Bindings of Multiplicative Strikes
-								i(94756), -- Roots of Rampaging Earth
-								i(94741), -- Sul'lithuz Sandmail
-								i(94975), -- Legguards of Scintillating Scales
-								i(94744), -- Puncture-Proof Greathelm
-								i(94751), -- Armplates of the Vanquished Abomination
-								i(94742), -- Frozen Warlord's Bracers
-								i(94747), -- Bloodlord's Bloodsoaked Legplates
-								i(94749), -- Dinomancer's Spiritbinding Spire
-								i(94740), -- Jalak's Maelstrom Staff
-								i(94755), -- Venomlord's Totemic Wand
-								i(94574), -- Pygmy Direhorn
-								i(93666), -- Spawn of Horridon
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged
-									i(96025), -- Horn-Rimmed Doomcloak
-									i(96017), -- Wastewalker's Sandblasted Drape
-									i(96027), -- Flamecaster's Burning Crown
-									i(96028), -- Vaccinator's Armwraps
-									i(96034), -- Spaulders of Dinomancy
-									i(96020), -- Bindings of Multiplicative Strikes
-									i(96033), -- Roots of Rampaging Earth
-									i(96021), -- Sul'lithuz Sandmail
-									i(96035), -- Legguards of Scintillating Scales
-									i(96024), -- Puncture-Proof Greathelm
-									i(96036), -- Armplates of the Vanquished Abomination
-									i(96022), -- Frozen Warlord's Bracers
-									i(96023), -- Bloodlord's Bloodsoaked Legplates
-									i(96029), -- Dinomancer's Spiritbinding Spire
-									i(96019), -- Jalak's Maelstrom Staff
-									i(96032), -- Venomlord's Totemic Wand
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								ach(8038),	-- Cretaceous Collector
+								i(94745),	-- Horn-Rimmed Doomcloak
+								i(94748),	-- Wastewalker's Sandblasted Drape
+								i(94752),	-- Flamecaster's Burning Crown
+								i(94750),	-- Vaccinator's Armwraps
+								i(94753),	-- Spaulders of Dinomancy
+								i(94743),	-- Bindings of Multiplicative Strikes
+								i(94756),	-- Roots of Rampaging Earth
+								i(94741),	-- Sul'lithuz Sandmail
+								i(94975),	-- Legguards of Scintillating Scales
+								i(94744),	-- Puncture-Proof Greathelm
+								i(94751),	-- Armplates of the Vanquished Abomination
+								i(94742),	-- Frozen Warlord's Bracers
+								i(94747),	-- Bloodlord's Bloodsoaked Legplates
+								i(94749),	-- Dinomancer's Spiritbinding Spire
+								i(94740),	-- Jalak's Maelstrom Staff
+								i(94755),	-- Venomlord's Totemic Wand
+								i(94574),	-- Pygmy Direhorn
+								i(93666),	-- Spawn of Horridon
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged
+									i(96025),	-- Horn-Rimmed Doomcloak
+									i(96017),	-- Wastewalker's Sandblasted Drape
+									i(96027),	-- Flamecaster's Burning Crown
+									i(96028),	-- Vaccinator's Armwraps
+									i(96034),	-- Spaulders of Dinomancy
+									i(96020),	-- Bindings of Multiplicative Strikes
+									i(96033),	-- Roots of Rampaging Earth
+									i(96021),	-- Sul'lithuz Sandmail
+									i(96035),	-- Legguards of Scintillating Scales
+									i(96024),	-- Puncture-Proof Greathelm
+									i(96036),	-- Armplates of the Vanquished Abomination
+									i(96022),	-- Frozen Warlord's Bracers
+									i(96023),	-- Bloodlord's Bloodsoaked Legplates
+									i(96029),	-- Dinomancer's Spiritbinding Spire
+									i(96019),	-- Jalak's Maelstrom Staff
+									i(96032),	-- Venomlord's Totemic Wand
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(69134, e(816, {	-- Council of Elders (Kazra'jin)
-								ach(8073), -- Cage Match
-								i(94761), -- Zandalari Robes of the Final Rite
-								i(94762), -- Mar'li's Bloodstained Sandals
-								i(94765), -- Robes of Treacherous Ground
-								i(94763), -- Gaze of Gara'jal
-								i(94767), -- Loa-Ridden Bracers
-								i(94764), -- Overloaded Bladebreaker Cuirass
-								i(94760), -- Amun-Thoth, Sul's Spiritrending Talons
-								i(94759), -- Kura-Kura, Kazra'jin's Skullcleaver
-								i(94758), -- Zerat, Malakk's Soulburning Greatsword
+								ach(8073),	-- Cage Match
+								i(94761),	-- Zandalari Robes of the Final Rite
+								i(94762),	-- Mar'li's Bloodstained Sandals
+								i(94765),	-- Robes of Treacherous Ground
+								i(94763),	-- Gaze of Gara'jal
+								i(94767),	-- Loa-Ridden Bracers
+								i(94764),	-- Overloaded Bladebreaker Cuirass
+								i(94760),	-- Amun-Thoth, Sul's Spiritrending Talons
+								i(94759),	-- Kura-Kura, Kazra'jin's Skullcleaver
+								i(94758),	-- Zerat, Malakk's Soulburning Greatsword
 								i(95575, {	-- Gauntlets of the Crackling Conqueror
 									i(95281),
 									i(95286),
@@ -2663,239 +2453,239 @@ _.Instances =
 									i(95231),
 									i(95236),
 								}),
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged
-									i(96040), -- Zandalari Robes of the Final Rite
-									i(96039), -- Mar'li's Bloodstained Sandals
-									i(96043), -- Robes of Treacherous Ground
-									i(96044), -- Gaze of Gara'jal
-									i(96045), -- Loa-Ridden Bracers
-									i(96046), -- Overloaded Bladebreaker Cuirass
-									i(96042), -- Amun-Thoth, Sul's Spiritrending Talons
-									i(96038), -- Kura-Kura, Kazra'jin's Skullcleaver
-									i(96047), -- Zerat, Malakk's Soulburning Greatsword
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged
+									i(96040),	-- Zandalari Robes of the Final Rite
+									i(96039),	-- Mar'li's Bloodstained Sandals
+									i(96043),	-- Robes of Treacherous Ground
+									i(96044),	-- Gaze of Gara'jal
+									i(96045),	-- Loa-Ridden Bracers
+									i(96046),	-- Overloaded Bladebreaker Cuirass
+									i(96042),	-- Amun-Thoth, Sul's Spiritrending Talons
+									i(96038),	-- Kura-Kura, Kazra'jin's Skullcleaver
+									i(96047),	-- Zerat, Malakk's Soulburning Greatsword
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							})),
-							i(98132, { -- Shado-Pan Geyser Gun
+							i(98132, {	-- Shado-Pan Geyser Gun
 								["groups"] = {
 								},
 								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 							}),
 							cr(67977, e(825, {	-- Tortos
-								ach(8077), -- One-Up
-								i(94774), -- Beakbreaker Greatcloak
-								i(94785), -- Shimmershell Cape
-								i(94782), -- Stonegaze Hood
-								i(94781), -- Azure Shell Bracers
-								i(94780), -- Crystal-Claw Gloves
-								i(94779), -- Robes of Concussive Shocks
-								i(94770), -- Rockfall Ribwraps
-								i(94786), -- Vampire Bat-Hide Bracers
-								i(94777), -- Grips of Vampiric Cruelty
-								i(94783), -- Spaulders of Quaking Fear
-								i(94775), -- Beady-Eye Bracers
-								i(94772), -- Quakestompers
-								i(94773), -- Shoulderguards of Centripetal Destruction
-								i(94771), -- Shell-Coated Wristplates
-								i(94787), -- Tortos' Shellseizers
-								i(94784), -- Refreshing Abalone Girdle
-								i(94768), -- Shellsplitter Greataxe
-								i(94769), -- Shattered Tortoiseshell Longbow
-								i(94778), -- Tortos' Discarded Shell
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged
-									i(96059), -- Beakbreaker Greatcloak
-									i(96063), -- Shimmershell Cape
-									i(96061), -- Stonegaze Hood
-									i(96060), -- Azure Shell Bracers
-									i(96062), -- Crystal-Claw Gloves
-									i(96066), -- Robes of Concussive Shocks
-									i(96051), -- Rockfall Ribwraps
-									i(96065), -- Vampire Bat-Hide Bracers
-									i(96052), -- Grips of Vampiric Cruelty
-									i(96067), -- Spaulders of Quaking Fear
-									i(96053), -- Beady-Eye Bracers
-									i(96054), -- Quakestompers
-									i(96055), -- Shoulderguards of Centripetal Destruction
-									i(96056), -- Shell-Coated Wristplates
-									i(96069), -- Tortos' Shellseizers
-									i(96068), -- Refreshing Abalone Girdle
-									i(96058), -- Shellsplitter Greataxe
-									i(96050), -- Shattered Tortoiseshell Longbow
-									i(96064), -- Tortos' Discarded Shell
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								ach(8077),	-- One-Up
+								i(94774),	-- Beakbreaker Greatcloak
+								i(94785),	-- Shimmershell Cape
+								i(94782),	-- Stonegaze Hood
+								i(94781),	-- Azure Shell Bracers
+								i(94780),	-- Crystal-Claw Gloves
+								i(94779),	-- Robes of Concussive Shocks
+								i(94770),	-- Rockfall Ribwraps
+								i(94786),	-- Vampire Bat-Hide Bracers
+								i(94777),	-- Grips of Vampiric Cruelty
+								i(94783),	-- Spaulders of Quaking Fear
+								i(94775),	-- Beady-Eye Bracers
+								i(94772),	-- Quakestompers
+								i(94773),	-- Shoulderguards of Centripetal Destruction
+								i(94771),	-- Shell-Coated Wristplates
+								i(94787),	-- Tortos' Shellseizers
+								i(94784),	-- Refreshing Abalone Girdle
+								i(94768),	-- Shellsplitter Greataxe
+								i(94769),	-- Shattered Tortoiseshell Longbow
+								i(94778),	-- Tortos' Discarded Shell
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged
+									i(96059),	-- Beakbreaker Greatcloak
+									i(96063),	-- Shimmershell Cape
+									i(96061),	-- Stonegaze Hood
+									i(96060),	-- Azure Shell Bracers
+									i(96062),	-- Crystal-Claw Gloves
+									i(96066),	-- Robes of Concussive Shocks
+									i(96051),	-- Rockfall Ribwraps
+									i(96065),	-- Vampire Bat-Hide Bracers
+									i(96052),	-- Grips of Vampiric Cruelty
+									i(96067),	-- Spaulders of Quaking Fear
+									i(96053),	-- Beady-Eye Bracers
+									i(96054),	-- Quakestompers
+									i(96055),	-- Shoulderguards of Centripetal Destruction
+									i(96056),	-- Shell-Coated Wristplates
+									i(96069),	-- Tortos' Shellseizers
+									i(96068),	-- Refreshing Abalone Girdle
+									i(96058),	-- Shellsplitter Greataxe
+									i(96050),	-- Shattered Tortoiseshell Longbow
+									i(96064),	-- Tortos' Discarded Shell
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(70212, e(821, {	-- Megaera (Flaming Head)
-								ach(8082), -- Head Case
-								i(94801), -- Gleaming-Eye Shoulderpads
-								i(94804), -- Frostborn Wristwraps
-								i(94799), -- Sandals of Arcane Fury
-								i(94800), -- Hood of Smoldering Flesh
-								i(94791), -- Poisonblood Bladeshoulders
-								i(94797), -- Chain of Consuming Magic
-								i(94790), -- Grips of Cinderflesh
-								i(94802), -- Links of the Bifurcated Tongue
-								i(94789), -- Rot-Proof Greatplate
-								i(94792), -- Plated Toothbreaker Girdle
-								i(94798), -- Ice-Scored Treads
-								i(94788), -- Megaera's Poisoned Fang
-								i(94796), -- Fetish of the Hydra
-								i(94771), -- Shell-Coated Wristplates
-								i(94787), -- Tortos' Shellseizers
-								i(94784), -- Refreshing Abalone Girdle
-								i(94768), -- Shellsplitter Greataxe
-								i(94769), -- Shattered Tortoiseshell Longbow
-								i(94778), -- Tortos' Discarded Shell
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96079), -- Gleaming-Eye Shoulderpads
-									i(96080), -- Frostborn Wristwraps
-									i(96078), -- Sandals of Arcane Fury
-									i(96085), -- Hood of Smoldering Flesh
-									i(96072), -- Poisonblood Bladeshoulders
-									i(96087), -- Chain of Consuming Magic
-									i(96073), -- Grips of Cinderflesh
-									i(96086), -- Links of the Bifurcated Tongue
-									i(96075), -- Rot-Proof Greatplate
-									i(96074), -- Plated Toothbreaker Girdle
-									i(96088), -- Ice-Scored Treads
-									i(96070), -- Megaera's Poisoned Fang
-									i(96082), -- Fetish of the Hydra
-									i(96056), -- Shell-Coated Wristplates
-									i(96069), -- Tortos' Shellseizers
-									i(96068), -- Refreshing Abalone Girdle
-									i(96058), -- Shellsplitter Greataxe
-									i(96050), -- Shattered Tortoiseshell Longbow
-									i(96064), -- Tortos' Discarded Shell
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								ach(8082),	-- Head Case
+								i(94801),	-- Gleaming-Eye Shoulderpads
+								i(94804),	-- Frostborn Wristwraps
+								i(94799),	-- Sandals of Arcane Fury
+								i(94800),	-- Hood of Smoldering Flesh
+								i(94791),	-- Poisonblood Bladeshoulders
+								i(94797),	-- Chain of Consuming Magic
+								i(94790),	-- Grips of Cinderflesh
+								i(94802),	-- Links of the Bifurcated Tongue
+								i(94789),	-- Rot-Proof Greatplate
+								i(94792),	-- Plated Toothbreaker Girdle
+								i(94798),	-- Ice-Scored Treads
+								i(94788),	-- Megaera's Poisoned Fang
+								i(94796),	-- Fetish of the Hydra
+								i(94771),	-- Shell-Coated Wristplates
+								i(94787),	-- Tortos' Shellseizers
+								i(94784),	-- Refreshing Abalone Girdle
+								i(94768),	-- Shellsplitter Greataxe
+								i(94769),	-- Shattered Tortoiseshell Longbow
+								i(94778),	-- Tortos' Discarded Shell
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96079),	-- Gleaming-Eye Shoulderpads
+									i(96080),	-- Frostborn Wristwraps
+									i(96078),	-- Sandals of Arcane Fury
+									i(96085),	-- Hood of Smoldering Flesh
+									i(96072),	-- Poisonblood Bladeshoulders
+									i(96087),	-- Chain of Consuming Magic
+									i(96073),	-- Grips of Cinderflesh
+									i(96086),	-- Links of the Bifurcated Tongue
+									i(96075),	-- Rot-Proof Greatplate
+									i(96074),	-- Plated Toothbreaker Girdle
+									i(96088),	-- Ice-Scored Treads
+									i(96070),	-- Megaera's Poisoned Fang
+									i(96082),	-- Fetish of the Hydra
+									i(96056),	-- Shell-Coated Wristplates
+									i(96069),	-- Tortos' Shellseizers
+									i(96068),	-- Refreshing Abalone Girdle
+									i(96058),	-- Shellsplitter Greataxe
+									i(96050),	-- Shattered Tortoiseshell Longbow
+									i(96064),	-- Tortos' Discarded Shell
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							})),
 							n(68220, {	-- Gastropod
@@ -2905,303 +2695,303 @@ _.Instances =
 									["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range."								
 							}),
 							cr(69712, e(828, {	-- Ji-Kun
-								ach(8097), -- Soft Hands
-								i(94812), -- Pinionfeather Greatcloak
-								i(94806), -- Robe of Midnight Down
-								i(94813), -- Cord of Cacophonous Cawing
-								i(94811), -- Featherflight Belt
-								i(94808), -- Grasp of the Ruthless Mother
-								i(94809), -- Crown of Potentiated Birth
-								i(94810), -- Talonrender Chestplate
-								i(94807), -- Egg-Shard Grips
-								i(94805), -- Giorgio's Caduceus of Pure Moods
-								i(94792), -- Plated Toothbreaker Girdle
-								i(94798), -- Ice-Scored Treads
-								i(94788), -- Megaera's Poisoned Fang
-								i(94796), -- Fetish of the Hydra
-								i(94771), -- Shell-Coated Wristplates
-								i(94787), -- Tortos' Shellseizers
-								i(94784), -- Refreshing Abalone Girdle
-								i(94768), -- Shellsplitter Greataxe
-								i(94769), -- Shattered Tortoiseshell Longbow
-								i(94778), -- Tortos' Discarded Shell
-								i(95059), -- Clutch of Ji-Kun
-								i(94835), -- Ji-Kun Hatchling
+								ach(8097),	-- Soft Hands
+								i(94812),	-- Pinionfeather Greatcloak
+								i(94806),	-- Robe of Midnight Down
+								i(94813),	-- Cord of Cacophonous Cawing
+								i(94811),	-- Featherflight Belt
+								i(94808),	-- Grasp of the Ruthless Mother
+								i(94809),	-- Crown of Potentiated Birth
+								i(94810),	-- Talonrender Chestplate
+								i(94807),	-- Egg-Shard Grips
+								i(94805),	-- Giorgio's Caduceus of Pure Moods
+								i(94792),	-- Plated Toothbreaker Girdle
+								i(94798),	-- Ice-Scored Treads
+								i(94788),	-- Megaera's Poisoned Fang
+								i(94796),	-- Fetish of the Hydra
+								i(94771),	-- Shell-Coated Wristplates
+								i(94787),	-- Tortos' Shellseizers
+								i(94784),	-- Refreshing Abalone Girdle
+								i(94768),	-- Shellsplitter Greataxe
+								i(94769),	-- Shattered Tortoiseshell Longbow
+								i(94778),	-- Tortos' Discarded Shell
+								i(95059),	-- Clutch of Ji-Kun
+								i(94835),	-- Ji-Kun Hatchling
 								i(95576, {	-- Leggings of the Crackling Conqueror
-									i(95283), -- 
-									i(95288), -- 
-									i(95293), -- 
-									i(95297), -- 
-									i(95302), -- 
-									i(95327), -- 
+									i(95283),	-- 
+									i(95288),	-- 
+									i(95293),	-- 
+									i(95297),	-- 
+									i(95302),	-- 
+									i(95327),	-- 
 								}),
 								i(95581, {	-- Leggings of the Crackling Protector
-									i(95318), -- 
-									i(95323), -- 
-									i(95333), -- 
-									i(95338), -- 
-									i(95258), -- 
-									i(95268), -- 
-									i(95272), -- 
-									i(95278), -- 
-									i(95313), -- 
+									i(95318),	-- 
+									i(95323),	-- 
+									i(95333),	-- 
+									i(95338),	-- 
+									i(95258),	-- 
+									i(95268),	-- 
+									i(95272),	-- 
+									i(95278),	-- 
+									i(95313),	-- 
 								}),
 								i(95572, {	-- Leggings of the Crackling Vanquisher
-									i(95242), -- 
-									i(95247), -- 
-									i(95253), -- 
-									i(95262), -- 
-									i(95308), -- 
-									i(95228), -- 
-									i(95233), -- 
-									i(95238), -- 
+									i(95242),	-- 
+									i(95247),	-- 
+									i(95253),	-- 
+									i(95262),	-- 
+									i(95308),	-- 
+									i(95228),	-- 
+									i(95233),	-- 
+									i(95238),	-- 
 								}),
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged
-									i(96089), -- Pinionfeather Greatcloak
-									i(96091), -- Robe of Midnight Down
-									i(96090), -- Cord of Cacophonous Cawing
-									i(96093), -- Featherflight Belt
-									i(96094), -- Grasp of the Ruthless Mother
-									i(96095), -- Crown of Potentiated Birth
-									i(96096), -- Talonrender Chestplate
-									i(96097), -- Egg-Shard Grips
-									i(96092), -- Giorgio's Caduceus of Pure Moods
-									i(96074), -- Plated Toothbreaker Girdle
-									i(96088), -- Ice-Scored Treads
-									i(96070), -- Megaera's Poisoned Fang
-									i(96082), -- Fetish of the Hydra
-									i(96056), -- Shell-Coated Wristplates
-									i(96069), -- Tortos' Shellseizers
-									i(96068), -- Refreshing Abalone Girdle
-									i(96058), -- Shellsplitter Greataxe
-									i(96050), -- Shattered Tortoiseshell Longbow
-									i(96064), -- Tortos' Discarded Shell
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged
+									i(96089),	-- Pinionfeather Greatcloak
+									i(96091),	-- Robe of Midnight Down
+									i(96090),	-- Cord of Cacophonous Cawing
+									i(96093),	-- Featherflight Belt
+									i(96094),	-- Grasp of the Ruthless Mother
+									i(96095),	-- Crown of Potentiated Birth
+									i(96096),	-- Talonrender Chestplate
+									i(96097),	-- Egg-Shard Grips
+									i(96092),	-- Giorgio's Caduceus of Pure Moods
+									i(96074),	-- Plated Toothbreaker Girdle
+									i(96088),	-- Ice-Scored Treads
+									i(96070),	-- Megaera's Poisoned Fang
+									i(96082),	-- Fetish of the Hydra
+									i(96056),	-- Shell-Coated Wristplates
+									i(96069),	-- Tortos' Shellseizers
+									i(96068),	-- Refreshing Abalone Girdle
+									i(96058),	-- Shellsplitter Greataxe
+									i(96050),	-- Shattered Tortoiseshell Longbow
+									i(96064),	-- Tortos' Discarded Shell
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(68036, e(818, {	-- Durumu the Forgotten
-								ach(8098), -- You Said Crossing the Streams Was Bad
-								i(94929), -- Deadly Glare Cape
-								i(94822), -- Reinforced Mirror-Sheen Cloak
-								i(94928), -- Chilblain Spaulders
-								i(94925), -- Lifedrainer's Sordid Grip
-								i(94923), -- Leggings of Pulsing Blood
-								i(94816), -- Crimson Bloom Legguards
-								i(94927), -- Sandals of the Starving Eye
-								i(94818), -- Aberrant Chestguard of Torment
-								i(94926), -- Vein-Cover Bracers
-								i(94819), -- Links of the Disintegrator
-								i(94820), -- Caustic Spike Bracers
-								i(94821), -- Artery Rippers
-								i(94924), -- Iceshatter Gauntlets
-								i(94930), -- Legplates of Re-Emergence
-								i(94815), -- Legplates of the Dark Parasite
-								i(94817), -- Treads of the Blind Eye
-								i(94922), -- Ritual Dagger of the Mind's Eye
-								i(94814), -- Durumu's Baleful Gaze
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96113), -- Deadly Glare Cape
-									i(96108), -- Reinforced Mirror-Sheen Cloak
-									i(96112), -- Chilblain Spaulders
-									i(96110), -- Lifedrainer's Sordid Grip
-									i(96111), -- Leggings of Pulsing Blood
-									i(96101), -- Crimson Bloom Legguards
-									i(96116), -- Sandals of the Starving Eye
-									i(96103), -- Aberrant Chestguard of Torment
-									i(96117), -- Vein-Cover Bracers
-									i(96102), -- Links of the Disintegrator
-									i(96104), -- Caustic Spike Bracers
-									i(96107), -- Artery Rippers
-									i(96118), -- Iceshatter Gauntlets
-									i(96119), -- Legplates of Re-Emergence
-									i(96105), -- Legplates of the Dark Parasite
-									i(96106), -- Treads of the Blind Eye
-									i(96115), -- Ritual Dagger of the Mind's Eye
-									i(96100), -- Durumu's Baleful Gaze
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								ach(8098),	-- You Said Crossing the Streams Was Bad
+								i(94929),	-- Deadly Glare Cape
+								i(94822),	-- Reinforced Mirror-Sheen Cloak
+								i(94928),	-- Chilblain Spaulders
+								i(94925),	-- Lifedrainer's Sordid Grip
+								i(94923),	-- Leggings of Pulsing Blood
+								i(94816),	-- Crimson Bloom Legguards
+								i(94927),	-- Sandals of the Starving Eye
+								i(94818),	-- Aberrant Chestguard of Torment
+								i(94926),	-- Vein-Cover Bracers
+								i(94819),	-- Links of the Disintegrator
+								i(94820),	-- Caustic Spike Bracers
+								i(94821),	-- Artery Rippers
+								i(94924),	-- Iceshatter Gauntlets
+								i(94930),	-- Legplates of Re-Emergence
+								i(94815),	-- Legplates of the Dark Parasite
+								i(94817),	-- Treads of the Blind Eye
+								i(94922),	-- Ritual Dagger of the Mind's Eye
+								i(94814),	-- Durumu's Baleful Gaze
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96113),	-- Deadly Glare Cape
+									i(96108),	-- Reinforced Mirror-Sheen Cloak
+									i(96112),	-- Chilblain Spaulders
+									i(96110),	-- Lifedrainer's Sordid Grip
+									i(96111),	-- Leggings of Pulsing Blood
+									i(96101),	-- Crimson Bloom Legguards
+									i(96116),	-- Sandals of the Starving Eye
+									i(96103),	-- Aberrant Chestguard of Torment
+									i(96117),	-- Vein-Cover Bracers
+									i(96102),	-- Links of the Disintegrator
+									i(96104),	-- Caustic Spike Bracers
+									i(96107),	-- Artery Rippers
+									i(96118),	-- Iceshatter Gauntlets
+									i(96119),	-- Legplates of Re-Emergence
+									i(96105),	-- Legplates of the Dark Parasite
+									i(96106),	-- Treads of the Blind Eye
+									i(96115),	-- Ritual Dagger of the Mind's Eye
+									i(96100),	-- Durumu's Baleful Gaze
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(69017, e(820, {	-- Primordius
-								ach(8037), -- Genectically Unmodified Organism
-								i(94942), -- Hydra-Scale Bloodcloak
-								i(94951), -- Robes of Mutagenic Blood
-								i(94948), -- Bracers of Fragile Bone
-								i(94947), -- Helix-Breaker Gloves
-								i(94953), -- Leggings of Ebon Veins
-								i(94939), -- Gloves of Cushioned Air
-								i(94946), -- Leggings of the Malformed Sapling
-								i(94949), -- Clear-Mind Helm
-								i(94940), -- Bracers of Mutagenic Fervor
-								i(94943), -- Synapse-String Handguards
-								i(94941), -- Metabolically Boosted Shoulderplates
-								i(94950), -- Spaulders of Primordial Growth
-								i(94952), -- Bonemender Bracers
-								i(94938), -- Pathogenic Gauntlets
-								i(94944), -- Black Blood Legplates
-								i(94937), -- Acid-Spine Bonemace
-								i(94945), -- Greatshield of the Gloaming
-								i(97960), -- Viscous Horror
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96127), -- Hydra-Scale Bloodcloak
-									i(96131), -- Robes of Mutagenic Blood
-									i(96134), -- Bracers of Fragile Bone
-									i(96132), -- Helix-Breaker Gloves
-									i(96133), -- Leggings of Ebon Veins
-									i(96121), -- Gloves of Cushioned Air
-									i(96136), -- Leggings of the Malformed Sapling
-									i(96137), -- Clear-Mind Helm
-									i(96122), -- Bracers of Mutagenic Fervor
-									i(96123), -- Synapse-String Handguards
-									i(96126), -- Metabolically Boosted Shoulderplates
-									i(96139), -- Spaulders of Primordial Growth
-									i(96138), -- Bonemender Bracers
-									i(96124), -- Pathogenic Gauntlets
-									i(96125), -- Black Blood Legplates
-									i(96130), -- Acid-Spine Bonemace
-									i(96140), -- Greatshield of the Gloaming
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								ach(8037),	-- Genectically Unmodified Organism
+								i(94942),	-- Hydra-Scale Bloodcloak
+								i(94951),	-- Robes of Mutagenic Blood
+								i(94948),	-- Bracers of Fragile Bone
+								i(94947),	-- Helix-Breaker Gloves
+								i(94953),	-- Leggings of Ebon Veins
+								i(94939),	-- Gloves of Cushioned Air
+								i(94946),	-- Leggings of the Malformed Sapling
+								i(94949),	-- Clear-Mind Helm
+								i(94940),	-- Bracers of Mutagenic Fervor
+								i(94943),	-- Synapse-String Handguards
+								i(94941),	-- Metabolically Boosted Shoulderplates
+								i(94950),	-- Spaulders of Primordial Growth
+								i(94952),	-- Bonemender Bracers
+								i(94938),	-- Pathogenic Gauntlets
+								i(94944),	-- Black Blood Legplates
+								i(94937),	-- Acid-Spine Bonemace
+								i(94945),	-- Greatshield of the Gloaming
+								i(97960),	-- Viscous Horror
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96127),	-- Hydra-Scale Bloodcloak
+									i(96131),	-- Robes of Mutagenic Blood
+									i(96134),	-- Bracers of Fragile Bone
+									i(96132),	-- Helix-Breaker Gloves
+									i(96133),	-- Leggings of Ebon Veins
+									i(96121),	-- Gloves of Cushioned Air
+									i(96136),	-- Leggings of the Malformed Sapling
+									i(96137),	-- Clear-Mind Helm
+									i(96122),	-- Bracers of Mutagenic Fervor
+									i(96123),	-- Synapse-String Handguards
+									i(96126),	-- Metabolically Boosted Shoulderplates
+									i(96139),	-- Spaulders of Primordial Growth
+									i(96138),	-- Bonemender Bracers
+									i(96124),	-- Pathogenic Gauntlets
+									i(96125),	-- Black Blood Legplates
+									i(96130),	-- Acid-Spine Bonemace
+									i(96140),	-- Greatshield of the Gloaming
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(69427, e(824, {	-- Dark Animus
-								ach(8081), -- Ritualist Who?
-								i(94960), -- Constantly Accelerating Cloak
-								i(94959), -- Hood of the Crimson Wake
-								i(94957), -- Anima-Ringed Fingers
-								i(94962), -- Worldbinder Leggings
-								i(94958), -- Crown of the Golden Golem
-								i(94956), -- Matter-Swapped Legplates
-								i(94955), -- Athame of the Sanguine Ritual
-								i(94954), -- Hand of the Dark Animus
-								i(94152), -- Son of Animus
+								ach(8081),	-- Ritualist Who?
+								i(94960),	-- Constantly Accelerating Cloak
+								i(94959),	-- Hood of the Crimson Wake
+								i(94957),	-- Anima-Ringed Fingers
+								i(94962),	-- Worldbinder Leggings
+								i(94958),	-- Crown of the Golden Golem
+								i(94956),	-- Matter-Swapped Legplates
+								i(94955),	-- Athame of the Sanguine Ritual
+								i(94954),	-- Hand of the Dark Animus
+								i(94152),	-- Son of Animus
 								i(95574, {	-- Chest of the Crackling Conqueror
 									i(95280),
 									i(95285),
@@ -3231,73 +3021,73 @@ _.Instances =
 									i(95248),
 									i(95250),
 								}),
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96145), -- Constantly Accelerating Cloak
-									i(96143), -- Hood of the Crimson Wake
-									i(96148), -- Anima-Ringed Fingers
-									i(96147), -- Worldbinder Leggings
-									i(96150), -- Crown of the Golden Golem
-									i(96149), -- Matter-Swapped Legplates
-									i(96146), -- Athame of the Sanguine Ritual
-									i(96142), -- Hand of the Dark Animus
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96145),	-- Constantly Accelerating Cloak
+									i(96143),	-- Hood of the Crimson Wake
+									i(96148),	-- Anima-Ringed Fingers
+									i(96147),	-- Worldbinder Leggings
+									i(96150),	-- Crown of the Golden Golem
+									i(96149),	-- Matter-Swapped Legplates
+									i(96146),	-- Athame of the Sanguine Ritual
+									i(96142),	-- Hand of the Dark Animus
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(68078, e(817, {	-- Iron Qon
-								ach(8087), -- Can't Touch This
-								i(94970), -- Quet'zal's Crackling Cord
-								i(94966), -- Saddle-Scarred Leggings
-								i(94968), -- Dam'ren's Frozen Footguards
-								i(94967), -- Spurs of the Storm Cavalry
-								i(94969), -- Ro'shak's Molten Chain
-								i(94972), -- Rein-Binder's Fists
-								i(94971), -- Iron Qon's Boot Knife
-								i(94964), -- Qon's Flaming Scimitar
-								i(94963), -- Voice of the Quilen
-								i(94965), -- Orb of Arcing Lightning
+								ach(8087),	-- Can't Touch This
+								i(94970),	-- Quet'zal's Crackling Cord
+								i(94966),	-- Saddle-Scarred Leggings
+								i(94968),	-- Dam'ren's Frozen Footguards
+								i(94967),	-- Spurs of the Storm Cavalry
+								i(94969),	-- Ro'shak's Molten Chain
+								i(94972),	-- Rein-Binder's Fists
+								i(94971),	-- Iron Qon's Boot Knife
+								i(94964),	-- Qon's Flaming Scimitar
+								i(94963),	-- Voice of the Quilen
+								i(94965),	-- Orb of Arcing Lightning
 								i(95578, {	-- Shoulders of the Crackling Conqueror
 									i(95284),
 									i(95289),
@@ -3327,72 +3117,72 @@ _.Instances =
 									i(95244),
 									i(95249),
 								}),
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96154), -- Quet'zal's Crackling Cord
-									i(96155), -- Saddle-Scarred Leggings
-									i(96156), -- Dam'ren's Frozen Footguards
-									i(96159), -- Spurs of the Storm Cavalry
-									i(96160), -- Ro'shak's Molten Chain
-									i(96161), -- Rein-Binder's Fists
-									i(96152), -- Iron Qon's Boot Knife
-									i(96162), -- Qon's Flaming Scimitar
-									i(96153), -- Voice of the Quilen
-									i(96158), -- Orb of Arcing Lightning
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96154),	-- Quet'zal's Crackling Cord
+									i(96155),	-- Saddle-Scarred Leggings
+									i(96156),	-- Dam'ren's Frozen Footguards
+									i(96159),	-- Spurs of the Storm Cavalry
+									i(96160),	-- Ro'shak's Molten Chain
+									i(96161),	-- Rein-Binder's Fists
+									i(96152),	-- Iron Qon's Boot Knife
+									i(96162),	-- Qon's Flaming Scimitar
+									i(96153),	-- Voice of the Quilen
+									i(96158),	-- Orb of Arcing Lightning
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(68905, e(829, {	-- Twin Consorts (Lu'lin)
-								i(94977), -- Robes of the Moon Lotus
-								i(94979), -- Bracers of the Midnight Comet
-								i(94978), -- Girdle of Night and Day
-								i(94757), -- Fingers of the Night
-								i(94976), -- Tidal Force Treads
-								i(94974), -- Suen-Wo, Spire of the Falling Sun
-								i(94973), -- Wu-Lai, Bladed Fan of the Consorts
-								i(95515), -- Shield of Twinned Despair
+								i(94977),	-- Robes of the Moon Lotus
+								i(94979),	-- Bracers of the Midnight Comet
+								i(94978),	-- Girdle of Night and Day
+								i(94757),	-- Fingers of the Night
+								i(94976),	-- Tidal Force Treads
+								i(94974),	-- Suen-Wo, Spire of the Falling Sun
+								i(94973),	-- Wu-Lai, Bladed Fan of the Consorts
+								i(95515),	-- Shield of Twinned Despair
 								i(95577, {	-- Helm of the Crackling Conqueror
 									i(95282),
 									i(95287),
@@ -3422,167 +3212,167 @@ _.Instances =
 									i(95227),
 									i(95232),
 								}),
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96164), -- Robes of the Moon Lotus
-									i(96168), -- Bracers of the Midnight Comet
-									i(96169), -- Girdle of Night and Day
-									i(96173), -- Fingers of the Night
-									i(96170), -- Tidal Force Treads
-									i(96167), -- Suen-Wo, Spire of the Falling Sun
-									i(96163), -- Wu-Lai, Bladed Fan of the Consorts
-									i(96166), -- Shield of Twinned Despair
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96164),	-- Robes of the Moon Lotus
+									i(96168),	-- Bracers of the Midnight Comet
+									i(96169),	-- Girdle of Night and Day
+									i(96173),	-- Fingers of the Night
+									i(96170),	-- Tidal Force Treads
+									i(96167),	-- Suen-Wo, Spire of the Falling Sun
+									i(96163),	-- Wu-Lai, Bladed Fan of the Consorts
+									i(96166),	-- Shield of Twinned Despair
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(68397, e(832, {	-- Lei Shen
-								ach(8090), -- A Complete Circuit
-								un(2, ach(8249)), -- Ahead of the Curve: Lei Shen
-								i(94993), -- Gloves of the Maimed Vizier
-								i(94990), -- Legwraps of Cardinality
-								i(94987), -- Fusion Slasher Chestguard
-								i(94991), -- Grips of Slicing Electricity
-								i(94986), -- Conduit-Breaker Chain Leggings
-								i(94992), -- Leggings of the Violent Gale
-								i(94984), -- Doomed Crown of Lei Shen
-								i(94989), -- Lei Shen's Grounded Carapace
-								i(95535), -- Legplates of the Lightning Throne
-								i(94985), -- Legplates of Whipping Ionization
-								i(94983), -- Shan-Dun, Breaker of Hope
-								i(94988), -- Torall, Rod of the Shattered Throne
-								i(94982), -- Uroe, Harbinger of Terror
-								i(95472), -- Ultimate Protection of the Emperor
-								i(95473), -- Lei Shen's Orb of Command
-								i(95061), -- Lost Shoulders of Fire	
-								i(95067), -- Lost Shoulders of Fluidity	
-								i(95066), -- Lost Shoulders of Healing	
-								i(95065), -- Forgotten Mantle of the Moon	
-								i(95062), -- Forgotten Mantle of the Sun	
-								i(95060), -- Abandoned Spaulders of Arrowflight	
-								i(95064), -- Abandoned Spaulders of Renewal	
-								i(95068), -- Reconstructed Bloody Shoulderplates	
-								i(95063), -- Reconstructed Furious Shoulderplates	
-								i(95069), -- Reconstructed Holy Shoulderplates	
-								i(95498), -- Bo-Ris, Horror in the Night	
-								i(95507), -- Darkwood Spiritstaff	
-								i(95502), -- Do-tharak, the Swordbreaker	
-								i(95501), -- Fyn's Flickering Dagger	
-								i(95505), -- Greatsword of Frozen Hells	
-								i(95499), -- Invocation of the Dawn	
-								i(95500), -- Jerthud, Graceful Hand of the Savior	
-								i(95503), -- Miracoran, the Vehement Chord	
-								i(95506), -- Nadagast's Exsanguinator	
-								i(97126), -- Tia-Tia, the Scything Star	
-								i(95504), -- Zeeg's Ancient Kegsmasher	
-								i(95516), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96185), -- Gloves of the Maimed Vizier
-									i(96184), -- Legwraps of Cardinality
-									i(96176), -- Fusion Slasher Chestguard
-									i(96191), -- Grips of Slicing Electricity
-									i(96177), -- Conduit-Breaker Chain Leggings
-									i(96192), -- Leggings of the Violent Gale
-									i(96178), -- Doomed Crown of Lei Shen
-									i(96193), -- Lei Shen's Grounded Carapace
-									i(96179), -- Legplates of the Lightning Throne
-									i(96180), -- Legplates of Whipping Ionization
-									i(96175), -- Shan-Dun, Breaker of Hope
-									i(96187), -- Torall, Rod of the Shattered Throne
-									i(96181), -- Uroe, Harbinger of Terror
-									i(96182), -- Ultimate Protection of the Emperor
-									i(96190), -- Lei Shen's Orb of Command
-									i(96235), -- Lost Shoulders of Fire
-									i(96237), -- Lost Shoulders of Fluidity
-									i(96236), -- Lost Shoulders of Healing
-									i(96240), -- Forgotten Mantle of the Moon
-									i(96241), -- Forgotten Mantle of the Sun
-									i(96242), -- Abandoned Spaulders of Arrowflight
-									i(96243), -- Abandoned Spaulders of Renewal
-									i(96246), -- Reconstructed Bloody Shoulderplates
-									i(96245), -- Reconstructed Furious Shoulderplates
-									i(96244), -- Reconstructed Holy Shoulderplates
-									i(96249), -- Bo-Ris, Horror in the Night
-									i(96234), -- Darkwood Spiritstaff
-									i(96248), -- Do-tharak, the Swordbreaker
-									i(96232), -- Fyn's Flickering Dagger
-									i(96247), -- Greatsword of Frozen Hells
-									i(96230), -- Invocation of the Dawn
-									i(96239), -- Jerthud, Graceful Hand of the Savior
-									i(96231), -- Miracoran, the Vehement Chord
-									i(96238), -- Nadagast's Exsanguinator
-									i(97128), -- Tia-Tia, the Scything Star
-									i(96233), -- Zeeg's Ancient Kegsmasher
-									i(96250), -- Visage of the Doomed
+								ach(8090),	-- A Complete Circuit
+								un(2, ach(8249)),	-- Ahead of the Curve: Lei Shen
+								i(94993),	-- Gloves of the Maimed Vizier
+								i(94990),	-- Legwraps of Cardinality
+								i(94987),	-- Fusion Slasher Chestguard
+								i(94991),	-- Grips of Slicing Electricity
+								i(94986),	-- Conduit-Breaker Chain Leggings
+								i(94992),	-- Leggings of the Violent Gale
+								i(94984),	-- Doomed Crown of Lei Shen
+								i(94989),	-- Lei Shen's Grounded Carapace
+								i(95535),	-- Legplates of the Lightning Throne
+								i(94985),	-- Legplates of Whipping Ionization
+								i(94983),	-- Shan-Dun, Breaker of Hope
+								i(94988),	-- Torall, Rod of the Shattered Throne
+								i(94982),	-- Uroe, Harbinger of Terror
+								i(95472),	-- Ultimate Protection of the Emperor
+								i(95473),	-- Lei Shen's Orb of Command
+								i(95061),	-- Lost Shoulders of Fire	
+								i(95067),	-- Lost Shoulders of Fluidity	
+								i(95066),	-- Lost Shoulders of Healing	
+								i(95065),	-- Forgotten Mantle of the Moon	
+								i(95062),	-- Forgotten Mantle of the Sun	
+								i(95060),	-- Abandoned Spaulders of Arrowflight	
+								i(95064),	-- Abandoned Spaulders of Renewal	
+								i(95068),	-- Reconstructed Bloody Shoulderplates	
+								i(95063),	-- Reconstructed Furious Shoulderplates	
+								i(95069),	-- Reconstructed Holy Shoulderplates	
+								i(95498),	-- Bo-Ris, Horror in the Night	
+								i(95507),	-- Darkwood Spiritstaff	
+								i(95502),	-- Do-tharak, the Swordbreaker	
+								i(95501),	-- Fyn's Flickering Dagger	
+								i(95505),	-- Greatsword of Frozen Hells	
+								i(95499),	-- Invocation of the Dawn	
+								i(95500),	-- Jerthud, Graceful Hand of the Savior	
+								i(95503),	-- Miracoran, the Vehement Chord	
+								i(95506),	-- Nadagast's Exsanguinator	
+								i(97126),	-- Tia-Tia, the Scything Star	
+								i(95504),	-- Zeeg's Ancient Kegsmasher	
+								i(95516),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96185),	-- Gloves of the Maimed Vizier
+									i(96184),	-- Legwraps of Cardinality
+									i(96176),	-- Fusion Slasher Chestguard
+									i(96191),	-- Grips of Slicing Electricity
+									i(96177),	-- Conduit-Breaker Chain Leggings
+									i(96192),	-- Leggings of the Violent Gale
+									i(96178),	-- Doomed Crown of Lei Shen
+									i(96193),	-- Lei Shen's Grounded Carapace
+									i(96179),	-- Legplates of the Lightning Throne
+									i(96180),	-- Legplates of Whipping Ionization
+									i(96175),	-- Shan-Dun, Breaker of Hope
+									i(96187),	-- Torall, Rod of the Shattered Throne
+									i(96181),	-- Uroe, Harbinger of Terror
+									i(96182),	-- Ultimate Protection of the Emperor
+									i(96190),	-- Lei Shen's Orb of Command
+									i(96235),	-- Lost Shoulders of Fire
+									i(96237),	-- Lost Shoulders of Fluidity
+									i(96236),	-- Lost Shoulders of Healing
+									i(96240),	-- Forgotten Mantle of the Moon
+									i(96241),	-- Forgotten Mantle of the Sun
+									i(96242),	-- Abandoned Spaulders of Arrowflight
+									i(96243),	-- Abandoned Spaulders of Renewal
+									i(96246),	-- Reconstructed Bloody Shoulderplates
+									i(96245),	-- Reconstructed Furious Shoulderplates
+									i(96244),	-- Reconstructed Holy Shoulderplates
+									i(96249),	-- Bo-Ris, Horror in the Night
+									i(96234),	-- Darkwood Spiritstaff
+									i(96248),	-- Do-tharak, the Swordbreaker
+									i(96232),	-- Fyn's Flickering Dagger
+									i(96247),	-- Greatsword of Frozen Hells
+									i(96230),	-- Invocation of the Dawn
+									i(96239),	-- Jerthud, Graceful Hand of the Savior
+									i(96231),	-- Miracoran, the Vehement Chord
+									i(96238),	-- Nadagast's Exsanguinator
+									i(97128),	-- Tia-Tia, the Scything Star
+									i(96233),	-- Zeeg's Ancient Kegsmasher
+									i(96250),	-- Visage of the Doomed
 								}),	
 							}))
 						},
 					}),
-					d(2, {		-- Heroic
+					d(  2, {	-- Heroic
 						["ignoreBonus"] = true,
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
-							ach(8124), -- Glory of the Thundering Raider
-							ach(8069), -- Last Stand of the Zandalari
-							ach(8070), -- Forgotten Depths
-							ach(8071), -- Halls of Flesh-Shaping
-							ach(8072), -- Pinnacle of Storms
+							ach(8124),	-- Glory of the Thundering Raider
+							ach(8069),	-- Last Stand of the Zandalari
+							ach(8070),	-- Forgotten Depths
+							ach(8071),	-- Halls of Flesh-Shaping
+							ach(8072),	-- Pinnacle of Storms
 							n(-17, {	-- Quests 					
-								qh(32589, { -- Life Blood
-									i(95590), -- Glorious Standard of the Sunreaver Onslaught Toy
+								qh(32589, {	-- Life Blood
+									i(95590),	-- Glorious Standard of the Sunreaver Onslaught Toy
 								}),
-								qa(32599, { -- Securing A Future
-									i(95589), -- Glorious Standard of the Kirin Tor Offensive Toy
+								qa(32599, {	-- Securing A Future
+									i(95589),	-- Glorious Standard of the Kirin Tor Offensive Toy
 								}),
-								q(32711, { -- Agony and Anima
+								q(32711, {	-- Agony and Anima
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -3590,14 +3380,14 @@ _.Instances =
 									["collectible"] = false,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Heroic quality."
 								}),
-								q(32710, { -- Something Fouls is Afoot
+								q(32710, {	-- Something Fouls is Afoot
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -3605,14 +3395,14 @@ _.Instances =
 									["collectible"] = false,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Heroic quality."
 								}),
-								q(32712, { -- Zao'cho the Wicked
+								q(32712, {	-- Zao'cho the Wicked
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -3620,14 +3410,14 @@ _.Instances =
 									["collectible"] = false,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Heroic quality."
 								}),
-								q(32716, { -- Eyes of the Thunder King
+								q(32716, {	-- Eyes of the Thunder King
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -3635,14 +3425,14 @@ _.Instances =
 									["collectible"] = false,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Heroic quality."
 								}),
-								q(32715, { -- Requiem for a Queen
+								q(32715, {	-- Requiem for a Queen
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -3650,14 +3440,14 @@ _.Instances =
 									["collectible"] = false,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Heroic quality."
 								}),
-								q(32713, { -- Rocks Fall, People Die
+								q(32713, {	-- Rocks Fall, People Die
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -3665,14 +3455,14 @@ _.Instances =
 									["collectible"] = false,
 									["description"] = "This bag is by the one of the weekly random quests inside the dungeon.This satchel has the chance to drop the below Primal Egg as well as any trash mob loot from Normal/Heroic at Heroic quality."
 								}),
-								q(32714, { -- Taming the Tempest
+								q(32714, {	-- Taming the Tempest
 									["groups"] = {
-										i(97153, { -- Spoils of the Thunder King Weekly Quest Reward
-											i(94295, { -- Primal Egg
-												i(94296, {  -- Cracked Primal Egg
-													i(94292), -- Reins of the Black Primal Raptor
-													i(94293), -- Reins of the Green Primal Raptor
-													i(94291), -- Reins of the Red Primal Raptor
+										i(97153, {	-- Spoils of the Thunder King Weekly Quest Reward
+											i(94295, {	-- Primal Egg
+												i(94296, { 	-- Cracked Primal Egg
+													i(94292),	-- Reins of the Black Primal Raptor
+													i(94293),	-- Reins of the Green Primal Raptor
+													i(94291),	-- Reins of the Red Primal Raptor
 												}),
 											}),
 										}),
@@ -3682,1624 +3472,1624 @@ _.Instances =
 								}),
 							}),
 							n(0, {		-- Zone Drop
-								n(69909, { -- Amani'shi Flame Chanter	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69909, {	-- Amani'shi Flame Chanter	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70448, { -- Ancient Python	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons	
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70448, {	-- Ancient Python	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons	
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(68221, { -- Bore Worm	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(68221, {	-- Bore Worm	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(68222, { -- Bow Fly Swarm	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers
-									n(-355, { -- Thunderforged	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers
+								n(68222, {	-- Bow Fly Swarm	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers
+									n(-355, {	-- Thunderforged	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers
 									}),
 								}),
-								n(70589, { -- Cavern Burrower	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70589, {	-- Cavern Burrower	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69702, { -- Dark Ritualist	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons	
+								n(69702, {	-- Dark Ritualist	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons	
 									}),
 								}),
-								n(69910, { -- Drakkari Frost Warden	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69910, {	-- Drakkari Frost Warden	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70586, { -- Eternal Guardian	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70586, {	-- Eternal Guardian	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69899, { -- Farraki Sand Conjurer	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons	
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69899, {	-- Farraki Sand Conjurer	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons	
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70153, { -- Fungal Growth	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70153, {	-- Fungal Growth	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(68220, { -- Gastropod	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(68220, {	-- Gastropod	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69351, { -- Greater Cave Bat	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69351, {	-- Greater Cave Bat	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69916, { -- Gurubashi Berserker	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69916, {	-- Gurubashi Berserker	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69905, { -- Gurubashi Berserker	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons	
+								n(69905, {	-- Gurubashi Berserker	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons	
 									}),
 								}),
-								n(69375, { -- Hidden Fog	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69375, {	-- Hidden Fog	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69834, { -- Lightning Guardian	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
+								n(69834, {	-- Lightning Guardian	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
 									}),
 								}),
-								n(70202, { -- Manchu	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70202, {	-- Manchu	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70594, { -- Mist Lurker	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70594, {	-- Mist Lurker	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70179, { -- Ritual Guard	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70179, {	-- Ritual Guard	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(68313, { -- Roaming Fog	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(68313, {	-- Roaming Fog	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70430, { -- Rocky Horror	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95224), -- Home-Warding Slippers
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96337), -- Home-Warding Slippers
+								n(70430, {	-- Rocky Horror	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95224),	-- Home-Warding Slippers
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96337),	-- Home-Warding Slippers
 									}),
 								}),
-								n(70224, { -- Rotting Scavenger	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95224), -- Home-Warding Slippers
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96337), -- Home-Warding Slippers
+								n(70224, {	-- Rotting Scavenger	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95224),	-- Home-Warding Slippers
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96337),	-- Home-Warding Slippers
 									}),
 								}),
-								n(69944, { -- Sand Elemental
-									i(94125), -- Living Sandling
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69944, {	-- Sand Elemental
+									i(94125),	-- Living Sandling
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70587, { -- Shale Stalker	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70587, {	-- Shale Stalker	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70240, { -- Shan'ze Celestial Shaper	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70240, {	-- Shan'ze Celestial Shaper	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70227, { -- Skittering Spiderling	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70227, {	-- Skittering Spiderling	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70445, { -- Stormbringer Draz'kil	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70445, {	-- Stormbringer Draz'kil	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69821, { -- Thunder Lord	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69821, {	-- Thunder Lord	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70341, { -- Tormented Spirit	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70341, {	-- Tormented Spirit	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70230, { -- Zandalari Blade Initiate	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons	
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70230, {	-- Zandalari Blade Initiate	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons	
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69906, { -- Zandalari High Priest	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons	
+								n(69906, {	-- Zandalari High Priest	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons	
 									}),
 								}),
-								n(69927, { -- Zandalari Prelate	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons	
+								n(69927, {	-- Zandalari Prelate	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons	
 									}),
 								}),
-								n(70557, { -- Zandalari Prophet	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70557, {	-- Zandalari Prophet	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69388, { -- Zandalari Spear-Shaper	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons	
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69388, {	-- Zandalari Spear-Shaper	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons	
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69390, { -- Zandalari Storm-Caller	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69390, {	-- Zandalari Storm-Caller	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(70236, { -- Zandalari Storm-Caller	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(70236, {	-- Zandalari Storm-Caller	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69911, { -- Zandalari Warlord	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95224), -- Home-Warding Slippers	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle
-										i(96337), -- Home-Warding Slippers	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69911, {	-- Zandalari Warlord	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95224),	-- Home-Warding Slippers	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle
+										i(96337),	-- Home-Warding Slippers	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
-								n(69455, { -- Zandalari Water-Binder	
-									i(95207), -- Abandoned Zandalari Firecord	
-									i(95208), -- Abandoned Zandalari Shadowgirdle	
-									i(95223), -- Silentflame Sandals	
-									i(95210), -- Abandoned Zandalari Moonstrap	
-									i(95209), -- Abandoned Zandalari Silentbelt	
-									i(95221), -- Deeproot Treads	
-									i(95219), -- Spiderweb Tabi	
-									i(95211), -- Abandoned Zandalari Arrowlinks	
-									i(95212), -- Abandoned Zandalari Waterchain	
-									i(95220), -- Scalehide Spurs	
-									i(95222), -- Spiritbound Boots	
-									i(95215), -- Abandoned Zandalari Bucklebreaker	
-									i(95214), -- Abandoned Zandalari Goreplate	
-									i(95213), -- Abandoned Zandalari Greatbelt	
-									i(95218), -- Columnbreaker Stompers	
-									i(95217), -- Locksmasher Greaves	
-									i(95216), -- Vaultwalker Sabatons
-									n(-355, { -- Thunderforged	
-										i(96333), -- Abandoned Zandalari Firecord	
-										i(96334), -- Abandoned Zandalari Shadowgirdle	
-										i(96335), -- Silentflame Sandals	
-										i(96343), -- Abandoned Zandalari Moonstrap	
-										i(96342), -- Abandoned Zandalari Silentbelt	
-										i(96338), -- Deeproot Treads	
-										i(96331), -- Spiderweb Tabi	
-										i(96344), -- Abandoned Zandalari Arrowlinks	
-										i(96345), -- Abandoned Zandalari Waterchain	
-										i(96332), -- Scalehide Spurs	
-										i(96339), -- Spiritbound Boots	
-										i(96348), -- Abandoned Zandalari Bucklebreaker	
-										i(96347), -- Abandoned Zandalari Goreplate	
-										i(96346), -- Abandoned Zandalari Greatbelt	
-										i(96351), -- Columnbreaker Stompers	
-										i(96350), -- Locksmasher Greaves	
-										i(96340), -- Vaultwalker Sabatons
+								n(69455, {	-- Zandalari Water-Binder	
+									i(95207),	-- Abandoned Zandalari Firecord	
+									i(95208),	-- Abandoned Zandalari Shadowgirdle	
+									i(95223),	-- Silentflame Sandals	
+									i(95210),	-- Abandoned Zandalari Moonstrap	
+									i(95209),	-- Abandoned Zandalari Silentbelt	
+									i(95221),	-- Deeproot Treads	
+									i(95219),	-- Spiderweb Tabi	
+									i(95211),	-- Abandoned Zandalari Arrowlinks	
+									i(95212),	-- Abandoned Zandalari Waterchain	
+									i(95220),	-- Scalehide Spurs	
+									i(95222),	-- Spiritbound Boots	
+									i(95215),	-- Abandoned Zandalari Bucklebreaker	
+									i(95214),	-- Abandoned Zandalari Goreplate	
+									i(95213),	-- Abandoned Zandalari Greatbelt	
+									i(95218),	-- Columnbreaker Stompers	
+									i(95217),	-- Locksmasher Greaves	
+									i(95216),	-- Vaultwalker Sabatons
+									n(-355, {	-- Thunderforged	
+										i(96333),	-- Abandoned Zandalari Firecord	
+										i(96334),	-- Abandoned Zandalari Shadowgirdle	
+										i(96335),	-- Silentflame Sandals	
+										i(96343),	-- Abandoned Zandalari Moonstrap	
+										i(96342),	-- Abandoned Zandalari Silentbelt	
+										i(96338),	-- Deeproot Treads	
+										i(96331),	-- Spiderweb Tabi	
+										i(96344),	-- Abandoned Zandalari Arrowlinks	
+										i(96345),	-- Abandoned Zandalari Waterchain	
+										i(96332),	-- Scalehide Spurs	
+										i(96339),	-- Spiritbound Boots	
+										i(96348),	-- Abandoned Zandalari Bucklebreaker	
+										i(96347),	-- Abandoned Zandalari Goreplate	
+										i(96346),	-- Abandoned Zandalari Greatbelt	
+										i(96351),	-- Columnbreaker Stompers	
+										i(96350),	-- Locksmasher Greaves	
+										i(96340),	-- Vaultwalker Sabatons
 									}),
 								}),
 							}),
 							cr(69465, e(827, {			-- Jin'rokh the Breaker
-								ach(8056), -- Heroic: Jin'rokh the Breaker
-								ach(8094), -- Lightning Overload
-								i(96383), -- Drape of Booming Nights	
-								i(96380), -- Fissure-Split Shoulderwraps	
-								i(96381), -- Robes of Static Bursts	
-								i(96378), -- Lightningweaver Gauntlets	
-								i(96379), -- Al'set's Tormented Leggings	
-								i(96370), -- Lightning-Eye Hood	
-								i(96386), -- Infinitely Conducting Bracers	
-								i(96372), -- Static-Shot Shoulderguards	
-								i(96371), -- Spearman's Jingling Leggings	
-								i(96387), -- Ghostbinder Greatboots	
-								i(96374), -- Chestplate of Violent Detonation	
-								i(96388), -- Ionized Yojamban Carapace	
-								i(96375), -- Bracers of Constant Implosion	
-								i(96373), -- Cloudbreaker Greatbelt	
-								i(96384), -- Soulblade of the Breaking Storm	
-								i(96376), -- Worldbreaker's Stormscythe	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96755), -- Drape of Booming Nights
-									i(96752), -- Fissure-Split Shoulderwraps
-									i(96753), -- Robes of Static Bursts
-									i(96750), -- Lightningweaver Gauntlets
-									i(96751), -- Al'set's Tormented Leggings
-									i(96742), -- Lightning-Eye Hood
-									i(96758), -- Infinitely Conducting Bracers
-									i(96744), -- Static-Shot Shoulderguards
-									i(96743), -- Spearman's Jingling Leggings
-									i(96759), -- Ghostbinder Greatboots
-									i(96746), -- Chestplate of Violent Detonation
-									i(96760), -- Ionized Yojamban Carapace
-									i(96747), -- Bracers of Constant Implosion
-									i(96745), -- Cloudbreaker Greatbelt
-									i(96756), -- Soulblade of the Breaking Storm
-									i(96748), -- Worldbreaker's Stormscythe
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8056),	-- Heroic: Jin'rokh the Breaker
+								ach(8094),	-- Lightning Overload
+								i(96383),	-- Drape of Booming Nights	
+								i(96380),	-- Fissure-Split Shoulderwraps	
+								i(96381),	-- Robes of Static Bursts	
+								i(96378),	-- Lightningweaver Gauntlets	
+								i(96379),	-- Al'set's Tormented Leggings	
+								i(96370),	-- Lightning-Eye Hood	
+								i(96386),	-- Infinitely Conducting Bracers	
+								i(96372),	-- Static-Shot Shoulderguards	
+								i(96371),	-- Spearman's Jingling Leggings	
+								i(96387),	-- Ghostbinder Greatboots	
+								i(96374),	-- Chestplate of Violent Detonation	
+								i(96388),	-- Ionized Yojamban Carapace	
+								i(96375),	-- Bracers of Constant Implosion	
+								i(96373),	-- Cloudbreaker Greatbelt	
+								i(96384),	-- Soulblade of the Breaking Storm	
+								i(96376),	-- Worldbreaker's Stormscythe	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96755),	-- Drape of Booming Nights
+									i(96752),	-- Fissure-Split Shoulderwraps
+									i(96753),	-- Robes of Static Bursts
+									i(96750),	-- Lightningweaver Gauntlets
+									i(96751),	-- Al'set's Tormented Leggings
+									i(96742),	-- Lightning-Eye Hood
+									i(96758),	-- Infinitely Conducting Bracers
+									i(96744),	-- Static-Shot Shoulderguards
+									i(96743),	-- Spearman's Jingling Leggings
+									i(96759),	-- Ghostbinder Greatboots
+									i(96746),	-- Chestplate of Violent Detonation
+									i(96760),	-- Ionized Yojamban Carapace
+									i(96747),	-- Bracers of Constant Implosion
+									i(96745),	-- Cloudbreaker Greatbelt
+									i(96756),	-- Soulblade of the Breaking Storm
+									i(96748),	-- Worldbreaker's Stormscythe
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(68476, e(819, {			-- Horridon
-								ach(8038), -- Cretaceous Collector
-								ach(8057), -- Heroic: Horridon
-								i(96397), -- Horn-Rimmed Doomcloak	
-								i(96389), -- Wastewalker's Sandblasted Drape	
-								i(96399), -- Flamecaster's Burning Crown	
-								i(96400), -- Vaccinator's Armwraps	
-								i(96406), -- Spaulders of Dinomancy	
-								i(96392), -- Bindings of Multiplicative Strikes	
-								i(96405), -- Roots of Rampaging Earth	
-								i(96393), -- Sul'lithuz Sandmail	
-								i(96407), -- Legguards of Scintillating Scales	
-								i(96396), -- Puncture-Proof Greathelm	
-								i(96408), -- Armplates of the Vanquished Abomination	
-								i(96394), -- Frozen Warlord's Bracers	
-								i(96395), -- Bloodlord's Bloodsoaked Legplates	
-								i(96401), -- Dinomancer's Spiritbinding Spire	
-								i(96391), -- Jalak's Maelstrom Staff	
-								i(96404), -- Venomlord's Totemic Wand	
-								i(96487), -- Ritual Dagger of the Mind's Eye	
-								i(96472), -- Durumu's Baleful Gaze	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96769), -- Horn-Rimmed Doomcloak
-									i(96761), -- Wastewalker's Sandblasted Drape
-									i(96771), -- Flamecaster's Burning Crown
-									i(96772), -- Vaccinator's Armwraps
-									i(96778), -- Spaulders of Dinomancy
-									i(96764), -- Bindings of Multiplicative Strikes
-									i(96777), -- Roots of Rampaging Earth
-									i(96765), -- Sul'lithuz Sandmail
-									i(96779), -- Legguards of Scintillating Scales
-									i(96768), -- Puncture-Proof Greathelm
-									i(96780), -- Armplates of the Vanquished Abomination
-									i(96766), -- Frozen Warlord's Bracers
-									i(96767), -- Bloodlord's Bloodsoaked Legplates
-									i(96773), -- Dinomancer's Spiritbinding Spire
-									i(96763), -- Jalak's Maelstrom Staff
-									i(96776), -- Venomlord's Totemic Wand
-									i(96859), -- Ritual Dagger of the Mind's Eye
-									i(96844), -- Durumu's Baleful Gaze
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8038),	-- Cretaceous Collector
+								ach(8057),	-- Heroic: Horridon
+								i(96397),	-- Horn-Rimmed Doomcloak	
+								i(96389),	-- Wastewalker's Sandblasted Drape	
+								i(96399),	-- Flamecaster's Burning Crown	
+								i(96400),	-- Vaccinator's Armwraps	
+								i(96406),	-- Spaulders of Dinomancy	
+								i(96392),	-- Bindings of Multiplicative Strikes	
+								i(96405),	-- Roots of Rampaging Earth	
+								i(96393),	-- Sul'lithuz Sandmail	
+								i(96407),	-- Legguards of Scintillating Scales	
+								i(96396),	-- Puncture-Proof Greathelm	
+								i(96408),	-- Armplates of the Vanquished Abomination	
+								i(96394),	-- Frozen Warlord's Bracers	
+								i(96395),	-- Bloodlord's Bloodsoaked Legplates	
+								i(96401),	-- Dinomancer's Spiritbinding Spire	
+								i(96391),	-- Jalak's Maelstrom Staff	
+								i(96404),	-- Venomlord's Totemic Wand	
+								i(96487),	-- Ritual Dagger of the Mind's Eye	
+								i(96472),	-- Durumu's Baleful Gaze	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96769),	-- Horn-Rimmed Doomcloak
+									i(96761),	-- Wastewalker's Sandblasted Drape
+									i(96771),	-- Flamecaster's Burning Crown
+									i(96772),	-- Vaccinator's Armwraps
+									i(96778),	-- Spaulders of Dinomancy
+									i(96764),	-- Bindings of Multiplicative Strikes
+									i(96777),	-- Roots of Rampaging Earth
+									i(96765),	-- Sul'lithuz Sandmail
+									i(96779),	-- Legguards of Scintillating Scales
+									i(96768),	-- Puncture-Proof Greathelm
+									i(96780),	-- Armplates of the Vanquished Abomination
+									i(96766),	-- Frozen Warlord's Bracers
+									i(96767),	-- Bloodlord's Bloodsoaked Legplates
+									i(96773),	-- Dinomancer's Spiritbinding Spire
+									i(96763),	-- Jalak's Maelstrom Staff
+									i(96776),	-- Venomlord's Totemic Wand
+									i(96859),	-- Ritual Dagger of the Mind's Eye
+									i(96844),	-- Durumu's Baleful Gaze
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 								i(94574),
 								i(93666),
 							})),
 							cr(69134, e(816, {			-- Council of Elders (Kazra'jin)
-								ach(8073), -- Cage Match
-								ach(8058), -- Heroic: Council of Elders
-								i(96412), -- Zandalari Robes of the Final Rite	
-								i(96411), -- Mar'li's Bloodstained Sandals	
-								i(96415), -- Robes of Treacherous Ground	
-								i(96416), -- Gaze of Gara'jal	
-								i(96417), -- Loa-Ridden Bracers	
-								i(96418), -- Overloaded Bladebreaker Cuirass	
-								i(96414), -- Amun-Thoth, Sul's Spiritrending Talons	
-								i(96410), -- Kura-Kura, Kazra'jin's Skullcleaver	
-								i(96419), -- Zerat, Malakk's Soulburning Greatsword	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96784), -- Zandalari Robes of the Final Rite
-									i(96783), -- Mar'li's Bloodstained Sandals
-									i(96787), -- Robes of Treacherous Ground
-									i(96788), -- Gaze of Gara'jal
-									i(96789), -- Loa-Ridden Bracers
-									i(96790), -- Overloaded Bladebreaker Cuirass
-									i(96786), -- Amun-Thoth, Sul's Spiritrending Talons
-									i(96782), -- Kura-Kura, Kazra'jin's Skullcleaver
-									i(96791), -- Zerat, Malakk's Soulburning Greatsword
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8073),	-- Cage Match
+								ach(8058),	-- Heroic: Council of Elders
+								i(96412),	-- Zandalari Robes of the Final Rite	
+								i(96411),	-- Mar'li's Bloodstained Sandals	
+								i(96415),	-- Robes of Treacherous Ground	
+								i(96416),	-- Gaze of Gara'jal	
+								i(96417),	-- Loa-Ridden Bracers	
+								i(96418),	-- Overloaded Bladebreaker Cuirass	
+								i(96414),	-- Amun-Thoth, Sul's Spiritrending Talons	
+								i(96410),	-- Kura-Kura, Kazra'jin's Skullcleaver	
+								i(96419),	-- Zerat, Malakk's Soulburning Greatsword	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96784),	-- Zandalari Robes of the Final Rite
+									i(96783),	-- Mar'li's Bloodstained Sandals
+									i(96787),	-- Robes of Treacherous Ground
+									i(96788),	-- Gaze of Gara'jal
+									i(96789),	-- Loa-Ridden Bracers
+									i(96790),	-- Overloaded Bladebreaker Cuirass
+									i(96786),	-- Amun-Thoth, Sul's Spiritrending Talons
+									i(96782),	-- Kura-Kura, Kazra'jin's Skullcleaver
+									i(96791),	-- Zerat, Malakk's Soulburning Greatsword
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 								i(96600, {	-- Gauntlets of the Crackling Conqueror
 									i(96655),
@@ -5331,173 +5121,173 @@ _.Instances =
 									i(96680),
 								}),
 							})),
-							i(98132, { -- Shado-Pan Geyser Gun
+							i(98132, {	-- Shado-Pan Geyser Gun
 								["groups"] = {
 								},
 								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 							}),
 							cr(67977, e(825, {			-- Tortos
-								ach(8059), -- Heroic: Tortos
-								ach(8077), -- One-Up
-								i(96431), -- Beakbreaker Greatcloak	
-								i(96435), -- Shimmershell Cape	
-								i(96433), -- Stonegaze Hood	
-								i(96432), -- Azure Shell Bracers	
-								i(96434), -- Crystal-Claw Gloves	
-								i(96438), -- Robes of Concussive Shocks	
-								i(96423), -- Rockfall Ribwraps	
-								i(96437), -- Vampire Bat-Hide Bracers	
-								i(96424), -- Grips of Vampiric Cruelty	
-								i(96439), -- Spaulders of Quaking Fear	
-								i(96425), -- Beady-Eye Bracers	
-								i(96426), -- Quakestompers	
-								i(96427), -- Shoulderguards of Centripetal Destruction	
-								i(96428), -- Shell-Coated Wristplates	
-								i(96441), -- Tortos' Shellseizers	
-								i(96440), -- Refreshing Abalone Girdle	
-								i(96430), -- Shellsplitter Greataxe	
-								i(96422), -- Shattered Tortoiseshell Longbow	
-								i(96436), -- Tortos' Discarded Shell	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96803), -- Beakbreaker Greatcloak
-									i(96807), -- Shimmershell Cape
-									i(96805), -- Stonegaze Hood
-									i(96804), -- Azure Shell Bracers
-									i(96806), -- Crystal-Claw Gloves
-									i(96810), -- Robes of Concussive Shocks
-									i(96795), -- Rockfall Ribwraps
-									i(96809), -- Vampire Bat-Hide Bracers
-									i(96796), -- Grips of Vampiric Cruelty
-									i(96811), -- Spaulders of Quaking Fear
-									i(96797), -- Beady-Eye Bracers
-									i(96798), -- Quakestompers
-									i(96799), -- Shoulderguards of Centripetal Destruction
-									i(96800), -- Shell-Coated Wristplates
-									i(96813), -- Tortos' Shellseizers
-									i(96812), -- Refreshing Abalone Girdle
-									i(96802), -- Shellsplitter Greataxe
-									i(96794), -- Shattered Tortoiseshell Longbow
-									i(96808), -- Tortos' Discarded Shell
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8059),	-- Heroic: Tortos
+								ach(8077),	-- One-Up
+								i(96431),	-- Beakbreaker Greatcloak	
+								i(96435),	-- Shimmershell Cape	
+								i(96433),	-- Stonegaze Hood	
+								i(96432),	-- Azure Shell Bracers	
+								i(96434),	-- Crystal-Claw Gloves	
+								i(96438),	-- Robes of Concussive Shocks	
+								i(96423),	-- Rockfall Ribwraps	
+								i(96437),	-- Vampire Bat-Hide Bracers	
+								i(96424),	-- Grips of Vampiric Cruelty	
+								i(96439),	-- Spaulders of Quaking Fear	
+								i(96425),	-- Beady-Eye Bracers	
+								i(96426),	-- Quakestompers	
+								i(96427),	-- Shoulderguards of Centripetal Destruction	
+								i(96428),	-- Shell-Coated Wristplates	
+								i(96441),	-- Tortos' Shellseizers	
+								i(96440),	-- Refreshing Abalone Girdle	
+								i(96430),	-- Shellsplitter Greataxe	
+								i(96422),	-- Shattered Tortoiseshell Longbow	
+								i(96436),	-- Tortos' Discarded Shell	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96803),	-- Beakbreaker Greatcloak
+									i(96807),	-- Shimmershell Cape
+									i(96805),	-- Stonegaze Hood
+									i(96804),	-- Azure Shell Bracers
+									i(96806),	-- Crystal-Claw Gloves
+									i(96810),	-- Robes of Concussive Shocks
+									i(96795),	-- Rockfall Ribwraps
+									i(96809),	-- Vampire Bat-Hide Bracers
+									i(96796),	-- Grips of Vampiric Cruelty
+									i(96811),	-- Spaulders of Quaking Fear
+									i(96797),	-- Beady-Eye Bracers
+									i(96798),	-- Quakestompers
+									i(96799),	-- Shoulderguards of Centripetal Destruction
+									i(96800),	-- Shell-Coated Wristplates
+									i(96813),	-- Tortos' Shellseizers
+									i(96812),	-- Refreshing Abalone Girdle
+									i(96802),	-- Shellsplitter Greataxe
+									i(96794),	-- Shattered Tortoiseshell Longbow
+									i(96808),	-- Tortos' Discarded Shell
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(70212, e(821, {			-- Megaera (Flaming Head)
-								ach(8082), -- Head Case
-								ach(8060), -- Heroic: Megaera
-								i(96451), -- Gleaming-Eye Shoulderpads	
-								i(96452), -- Frostborn Wristwraps	
-								i(96450), -- Sandals of Arcane Fury	
-								i(96457), -- Hood of Smoldering Flesh	
-								i(96444), -- Poisonblood Bladeshoulders	
-								i(96459), -- Chain of Consuming Magic	
-								i(96445), -- Grips of Cinderflesh	
-								i(96458), -- Links of the Bifurcated Tongue	
-								i(96447), -- Rot-Proof Greatplate	
-								i(96446), -- Plated Toothbreaker Girdle	
-								i(96460), -- Ice-Scored Treads	
-								i(96442), -- Megaera's Poisoned Fang	
-								i(96454), -- Fetish of the Hydra	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96823), -- Gleaming-Eye Shoulderpads
-									i(96824), -- Frostborn Wristwraps
-									i(96822), -- Sandals of Arcane Fury
-									i(96829), -- Hood of Smoldering Flesh
-									i(96816), -- Poisonblood Bladeshoulders
-									i(96831), -- Chain of Consuming Magic
-									i(96817), -- Grips of Cinderflesh
-									i(96830), -- Links of the Bifurcated Tongue
-									i(96819), -- Rot-Proof Greatplate
-									i(96818), -- Plated Toothbreaker Girdle
-									i(96832), -- Ice-Scored Treads
-									i(96814), -- Megaera's Poisoned Fang
-									i(96826), -- Fetish of the Hydra
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8082),	-- Head Case
+								ach(8060),	-- Heroic: Megaera
+								i(96451),	-- Gleaming-Eye Shoulderpads	
+								i(96452),	-- Frostborn Wristwraps	
+								i(96450),	-- Sandals of Arcane Fury	
+								i(96457),	-- Hood of Smoldering Flesh	
+								i(96444),	-- Poisonblood Bladeshoulders	
+								i(96459),	-- Chain of Consuming Magic	
+								i(96445),	-- Grips of Cinderflesh	
+								i(96458),	-- Links of the Bifurcated Tongue	
+								i(96447),	-- Rot-Proof Greatplate	
+								i(96446),	-- Plated Toothbreaker Girdle	
+								i(96460),	-- Ice-Scored Treads	
+								i(96442),	-- Megaera's Poisoned Fang	
+								i(96454),	-- Fetish of the Hydra	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96823),	-- Gleaming-Eye Shoulderpads
+									i(96824),	-- Frostborn Wristwraps
+									i(96822),	-- Sandals of Arcane Fury
+									i(96829),	-- Hood of Smoldering Flesh
+									i(96816),	-- Poisonblood Bladeshoulders
+									i(96831),	-- Chain of Consuming Magic
+									i(96817),	-- Grips of Cinderflesh
+									i(96830),	-- Links of the Bifurcated Tongue
+									i(96819),	-- Rot-Proof Greatplate
+									i(96818),	-- Plated Toothbreaker Girdle
+									i(96832),	-- Ice-Scored Treads
+									i(96814),	-- Megaera's Poisoned Fang
+									i(96826),	-- Fetish of the Hydra
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 							})),
 							n(68220, {	-- Gastropod
@@ -5507,71 +5297,71 @@ _.Instances =
 									["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range."								
 							}),
 							cr(69712, e(828, {			-- Ji-Kun
-								ach(8061), -- Heroic: Ji-Kun
-								ach(8097), -- Soft Hands
-								i(96461), -- Pinionfeather Greatcloak	
-								i(96463), -- Robe of Midnight Down	
-								i(96462), -- Cord of Cacophonous Cawing	
-								i(96465), -- Featherflight Belt	
-								i(96466), -- Grasp of the Ruthless Mother	
-								i(96467), -- Crown of Potentiated Birth	
-								i(96468), -- Talonrender Chestplate	
-								i(96469), -- Egg-Shard Grips	
-								i(96464), -- Giorgio's Caduceus of Pure Moods	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96833), -- Pinionfeather Greatcloak
-									i(96835), -- Robe of Midnight Down
-									i(96834), -- Cord of Cacophonous Cawing
-									i(96837), -- Featherflight Belt
-									i(96838), -- Grasp of the Ruthless Mother
-									i(96839), -- Crown of Potentiated Birth
-									i(96840), -- Talonrender Chestplate
-									i(96841), -- Egg-Shard Grips
-									i(96836), -- Giorgio's Caduceus of Pure Moods
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8061),	-- Heroic: Ji-Kun
+								ach(8097),	-- Soft Hands
+								i(96461),	-- Pinionfeather Greatcloak	
+								i(96463),	-- Robe of Midnight Down	
+								i(96462),	-- Cord of Cacophonous Cawing	
+								i(96465),	-- Featherflight Belt	
+								i(96466),	-- Grasp of the Ruthless Mother	
+								i(96467),	-- Crown of Potentiated Birth	
+								i(96468),	-- Talonrender Chestplate	
+								i(96469),	-- Egg-Shard Grips	
+								i(96464),	-- Giorgio's Caduceus of Pure Moods	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96833),	-- Pinionfeather Greatcloak
+									i(96835),	-- Robe of Midnight Down
+									i(96834),	-- Cord of Cacophonous Cawing
+									i(96837),	-- Featherflight Belt
+									i(96838),	-- Grasp of the Ruthless Mother
+									i(96839),	-- Crown of Potentiated Birth
+									i(96840),	-- Talonrender Chestplate
+									i(96841),	-- Egg-Shard Grips
+									i(96836),	-- Giorgio's Caduceus of Pure Moods
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 								i(95059),
 								i(94835),
@@ -5606,240 +5396,240 @@ _.Instances =
 								}),
 							})),
 							cr(68036, e(818, {			-- Durumu the Forgotten
-								ach(8062), -- Heroic: Durumu the Forgotten
-								ach(8098), -- You Said Crossing the Streams Was Bad
-								i(96485), -- Deadly Glare Cape	
-								i(96480), -- Reinforced Mirror-Sheen Cloak	
-								i(96484), -- Chilblain Spaulders	
-								i(96482), -- Lifedrainer's Sordid Grip	
-								i(96483), -- Leggings of Pulsing Blood	
-								i(96473), -- Crimson Bloom Legguards	
-								i(96488), -- Sandals of the Starving Eye	
-								i(96475), -- Aberrant Chestguard of Torment	
-								i(96489), -- Vein-Cover Bracers	
-								i(96474), -- Links of the Disintegrator	
-								i(96476), -- Caustic Spike Bracers	
-								i(96479), -- Artery Rippers	
-								i(96490), -- Iceshatter Gauntlets	
-								i(96491), -- Legplates of Re-Emergence	
-								i(96477), -- Legplates of the Dark Parasite	
-								i(96478), -- Treads of the Blind Eye	
-								i(96487), -- Ritual Dagger of the Mind's Eye	
-								i(96472), -- Durumu's Baleful Gaze	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96857), -- Deadly Glare Cape
-									i(96852), -- Reinforced Mirror-Sheen Cloak
-									i(96856), -- Chilblain Spaulders
-									i(96854), -- Lifedrainer's Sordid Grip
-									i(96855), -- Leggings of Pulsing Blood
-									i(96845), -- Crimson Bloom Legguards
-									i(96860), -- Sandals of the Starving Eye
-									i(96847), -- Aberrant Chestguard of Torment
-									i(96861), -- Vein-Cover Bracers
-									i(96846), -- Links of the Disintegrator
-									i(96848), -- Caustic Spike Bracers
-									i(96851), -- Artery Rippers
-									i(96862), -- Iceshatter Gauntlets
-									i(96863), -- Legplates of Re-Emergence
-									i(96849), -- Legplates of the Dark Parasite
-									i(96850), -- Treads of the Blind Eye
-									i(96859), -- Ritual Dagger of the Mind's Eye
-									i(96844), -- Durumu's Baleful Gaze
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8062),	-- Heroic: Durumu the Forgotten
+								ach(8098),	-- You Said Crossing the Streams Was Bad
+								i(96485),	-- Deadly Glare Cape	
+								i(96480),	-- Reinforced Mirror-Sheen Cloak	
+								i(96484),	-- Chilblain Spaulders	
+								i(96482),	-- Lifedrainer's Sordid Grip	
+								i(96483),	-- Leggings of Pulsing Blood	
+								i(96473),	-- Crimson Bloom Legguards	
+								i(96488),	-- Sandals of the Starving Eye	
+								i(96475),	-- Aberrant Chestguard of Torment	
+								i(96489),	-- Vein-Cover Bracers	
+								i(96474),	-- Links of the Disintegrator	
+								i(96476),	-- Caustic Spike Bracers	
+								i(96479),	-- Artery Rippers	
+								i(96490),	-- Iceshatter Gauntlets	
+								i(96491),	-- Legplates of Re-Emergence	
+								i(96477),	-- Legplates of the Dark Parasite	
+								i(96478),	-- Treads of the Blind Eye	
+								i(96487),	-- Ritual Dagger of the Mind's Eye	
+								i(96472),	-- Durumu's Baleful Gaze	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96857),	-- Deadly Glare Cape
+									i(96852),	-- Reinforced Mirror-Sheen Cloak
+									i(96856),	-- Chilblain Spaulders
+									i(96854),	-- Lifedrainer's Sordid Grip
+									i(96855),	-- Leggings of Pulsing Blood
+									i(96845),	-- Crimson Bloom Legguards
+									i(96860),	-- Sandals of the Starving Eye
+									i(96847),	-- Aberrant Chestguard of Torment
+									i(96861),	-- Vein-Cover Bracers
+									i(96846),	-- Links of the Disintegrator
+									i(96848),	-- Caustic Spike Bracers
+									i(96851),	-- Artery Rippers
+									i(96862),	-- Iceshatter Gauntlets
+									i(96863),	-- Legplates of Re-Emergence
+									i(96849),	-- Legplates of the Dark Parasite
+									i(96850),	-- Treads of the Blind Eye
+									i(96859),	-- Ritual Dagger of the Mind's Eye
+									i(96844),	-- Durumu's Baleful Gaze
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(69017, e(820, {			-- Primordius
-								ach(8037), -- Genectically Unmodified Organism
-								ach(8063), -- Heroic: Primordius
-								i(96499), -- Hydra-Scale Bloodcloak	
-								i(96503), -- Robes of Mutagenic Blood	
-								i(96506), -- Bracers of Fragile Bone	
-								i(96504), -- Helix-Breaker Gloves	
-								i(96505), -- Leggings of Ebon Veins	
-								i(96493), -- Gloves of Cushioned Air	
-								i(96508), -- Leggings of the Malformed Sapling	
-								i(96509), -- Clear-Mind Helm	
-								i(96494), -- Bracers of Mutagenic Fervor	
-								i(96495), -- Synapse-String Handguards	
-								i(96498), -- Metabolically Boosted Shoulderplates	
-								i(96511), -- Spaulders of Primordial Growth	
-								i(96510), -- Bonemender Bracers	
-								i(96496), -- Pathogenic Gauntlets	
-								i(96497), -- Black Blood Legplates	
-								i(96502), -- Acid-Spine Bonemace	
-								i(96512), -- Greatshield of the Gloaming
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96871), -- Hydra-Scale Bloodcloak
-									i(96875), -- Robes of Mutagenic Blood
-									i(96878), -- Bracers of Fragile Bone
-									i(96876), -- Helix-Breaker Gloves
-									i(96877), -- Leggings of Ebon Veins
-									i(96865), -- Gloves of Cushioned Air
-									i(96880), -- Leggings of the Malformed Sapling
-									i(96881), -- Clear-Mind Helm
-									i(96866), -- Bracers of Mutagenic Fervor
-									i(96867), -- Synapse-String Handguards
-									i(96870), -- Metabolically Boosted Shoulderplates
-									i(96883), -- Spaulders of Primordial Growth
-									i(96882), -- Bonemender Bracers
-									i(96868), -- Pathogenic Gauntlets
-									i(96869), -- Black Blood Legplates
-									i(96874), -- Acid-Spine Bonemace
-									i(96884), -- Greatshield of the Gloaming
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8037),	-- Genectically Unmodified Organism
+								ach(8063),	-- Heroic: Primordius
+								i(96499),	-- Hydra-Scale Bloodcloak	
+								i(96503),	-- Robes of Mutagenic Blood	
+								i(96506),	-- Bracers of Fragile Bone	
+								i(96504),	-- Helix-Breaker Gloves	
+								i(96505),	-- Leggings of Ebon Veins	
+								i(96493),	-- Gloves of Cushioned Air	
+								i(96508),	-- Leggings of the Malformed Sapling	
+								i(96509),	-- Clear-Mind Helm	
+								i(96494),	-- Bracers of Mutagenic Fervor	
+								i(96495),	-- Synapse-String Handguards	
+								i(96498),	-- Metabolically Boosted Shoulderplates	
+								i(96511),	-- Spaulders of Primordial Growth	
+								i(96510),	-- Bonemender Bracers	
+								i(96496),	-- Pathogenic Gauntlets	
+								i(96497),	-- Black Blood Legplates	
+								i(96502),	-- Acid-Spine Bonemace	
+								i(96512),	-- Greatshield of the Gloaming
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96871),	-- Hydra-Scale Bloodcloak
+									i(96875),	-- Robes of Mutagenic Blood
+									i(96878),	-- Bracers of Fragile Bone
+									i(96876),	-- Helix-Breaker Gloves
+									i(96877),	-- Leggings of Ebon Veins
+									i(96865),	-- Gloves of Cushioned Air
+									i(96880),	-- Leggings of the Malformed Sapling
+									i(96881),	-- Clear-Mind Helm
+									i(96866),	-- Bracers of Mutagenic Fervor
+									i(96867),	-- Synapse-String Handguards
+									i(96870),	-- Metabolically Boosted Shoulderplates
+									i(96883),	-- Spaulders of Primordial Growth
+									i(96882),	-- Bonemender Bracers
+									i(96868),	-- Pathogenic Gauntlets
+									i(96869),	-- Black Blood Legplates
+									i(96874),	-- Acid-Spine Bonemace
+									i(96884),	-- Greatshield of the Gloaming
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 								i(97960)
 							})),
 							cr(69427, e(824, {			-- Dark Animus
-								ach(8064), -- Heroic: Dark Animus
-								ach(8081), -- Ritualist Who?
-								i(96517), -- Constantly Accelerating Cloak	
-								i(96515), -- Hood of the Crimson Wake	
-								i(96520), -- Anima-Ringed Fingers	
-								i(96519), -- Worldbinder Leggings	
-								i(96522), -- Crown of the Golden Golem	
-								i(96521), -- Matter-Swapped Legplates	
-								i(96518), -- Athame of the Sanguine Ritual	
-								i(96514), -- Hand of the Dark Animus	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96889), -- Constantly Accelerating Cloak
-									i(96887), -- Hood of the Crimson Wake
-									i(96892), -- Anima-Ringed Fingers
-									i(96891), -- Worldbinder Leggings
-									i(96894), -- Crown of the Golden Golem
-									i(96893), -- Matter-Swapped Legplates
-									i(96890), -- Athame of the Sanguine Ritual
-									i(96886), -- Hand of the Dark Animus
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8064),	-- Heroic: Dark Animus
+								ach(8081),	-- Ritualist Who?
+								i(96517),	-- Constantly Accelerating Cloak	
+								i(96515),	-- Hood of the Crimson Wake	
+								i(96520),	-- Anima-Ringed Fingers	
+								i(96519),	-- Worldbinder Leggings	
+								i(96522),	-- Crown of the Golden Golem	
+								i(96521),	-- Matter-Swapped Legplates	
+								i(96518),	-- Athame of the Sanguine Ritual	
+								i(96514),	-- Hand of the Dark Animus	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96889),	-- Constantly Accelerating Cloak
+									i(96887),	-- Hood of the Crimson Wake
+									i(96892),	-- Anima-Ringed Fingers
+									i(96891),	-- Worldbinder Leggings
+									i(96894),	-- Crown of the Golden Golem
+									i(96893),	-- Matter-Swapped Legplates
+									i(96890),	-- Athame of the Sanguine Ritual
+									i(96886),	-- Hand of the Dark Animus
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 								i(94152),
 								i(96567, {	-- Chest of the Crackling Conqueror
@@ -5873,73 +5663,73 @@ _.Instances =
 								}),
 							})),
 							cr(68078, e(817, {			-- Iron Qon
-								ach(8087), -- Can't Touch This
-								ach(8065), -- Heroic: Iron Qon
-								i(96526), -- Quet'zal's Crackling Cord	
-								i(96527), -- Saddle-Scarred Leggings	
-								i(96528), -- Dam'ren's Frozen Footguards	
-								i(96531), -- Spurs of the Storm Cavalry	
-								i(96532), -- Ro'shak's Molten Chain	
-								i(96533), -- Rein-Binder's Fists	
-								i(96524), -- Iron Qon's Boot Knife	
-								i(96534), -- Qon's Flaming Scimitar	
-								i(96525), -- Voice of the Quilen	
-								i(96530), -- Orb of Arcing Lightning	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96898), -- Quet'zal's Crackling Cord
-									i(96899), -- Saddle-Scarred Leggings
-									i(96900), -- Dam'ren's Frozen Footguards
-									i(96903), -- Spurs of the Storm Cavalry
-									i(96904), -- Ro'shak's Molten Chain
-									i(96905), -- Rein-Binder's Fists
-									i(96896), -- Iron Qon's Boot Knife
-									i(96906), -- Qon's Flaming Scimitar
-									i(96897), -- Voice of the Quilen
-									i(96902), -- Orb of Arcing Lightning
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8087),	-- Can't Touch This
+								ach(8065),	-- Heroic: Iron Qon
+								i(96526),	-- Quet'zal's Crackling Cord	
+								i(96527),	-- Saddle-Scarred Leggings	
+								i(96528),	-- Dam'ren's Frozen Footguards	
+								i(96531),	-- Spurs of the Storm Cavalry	
+								i(96532),	-- Ro'shak's Molten Chain	
+								i(96533),	-- Rein-Binder's Fists	
+								i(96524),	-- Iron Qon's Boot Knife	
+								i(96534),	-- Qon's Flaming Scimitar	
+								i(96525),	-- Voice of the Quilen	
+								i(96530),	-- Orb of Arcing Lightning	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96898),	-- Quet'zal's Crackling Cord
+									i(96899),	-- Saddle-Scarred Leggings
+									i(96900),	-- Dam'ren's Frozen Footguards
+									i(96903),	-- Spurs of the Storm Cavalry
+									i(96904),	-- Ro'shak's Molten Chain
+									i(96905),	-- Rein-Binder's Fists
+									i(96896),	-- Iron Qon's Boot Knife
+									i(96906),	-- Qon's Flaming Scimitar
+									i(96897),	-- Voice of the Quilen
+									i(96902),	-- Orb of Arcing Lightning
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 								i(96700, {	-- Shoulders of the Crackling Conqueror
 									i(96658),
@@ -5972,68 +5762,68 @@ _.Instances =
 								}),
 							})),
 							cr(68905, e(829, {			-- Twin Consorts (Lu'lin)
-								ach(8066), -- Heroic: Twin Consorts
-								i(96536), -- Robes of the Moon Lotus	
-								i(96540), -- Bracers of the Midnight Comet	
-								i(96541), -- Girdle of Night and Day	
-								i(96545), -- Fingers of the Night	
-								i(96542), -- Tidal Force Treads	
-								i(96539), -- Suen-Wo, Spire of the Falling Sun	
-								i(96535), -- Wu-Lai, Bladed Fan of the Consorts	
-								i(96538), -- Shield of Twinned Despair	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96908), -- Robes of the Moon Lotus
-									i(96912), -- Bracers of the Midnight Comet
-									i(96913), -- Girdle of Night and Day
-									i(96917), -- Fingers of the Night
-									i(96914), -- Tidal Force Treads
-									i(96911), -- Suen-Wo, Spire of the Falling Sun
-									i(96907), -- Wu-Lai, Bladed Fan of the Consorts
-									i(96910), -- Shield of Twinned Despair
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8066),	-- Heroic: Twin Consorts
+								i(96536),	-- Robes of the Moon Lotus	
+								i(96540),	-- Bracers of the Midnight Comet	
+								i(96541),	-- Girdle of Night and Day	
+								i(96545),	-- Fingers of the Night	
+								i(96542),	-- Tidal Force Treads	
+								i(96539),	-- Suen-Wo, Spire of the Falling Sun	
+								i(96535),	-- Wu-Lai, Bladed Fan of the Consorts	
+								i(96538),	-- Shield of Twinned Despair	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96908),	-- Robes of the Moon Lotus
+									i(96912),	-- Bracers of the Midnight Comet
+									i(96913),	-- Girdle of Night and Day
+									i(96917),	-- Fingers of the Night
+									i(96914),	-- Tidal Force Treads
+									i(96911),	-- Suen-Wo, Spire of the Falling Sun
+									i(96907),	-- Wu-Lai, Bladed Fan of the Consorts
+									i(96910),	-- Shield of Twinned Despair
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 								i(96624, {	-- Helm of the Crackling Conqueror
 									i(96670),
@@ -6066,90 +5856,90 @@ _.Instances =
 								}),
 							})),
 							cr(68397, e(832, {			-- Lei Shen
-								ach(8090), -- A Complete Circuit
-								un(2, ach(8238)), -- Cutting Edge: Lei Shen
-								ach(8067), -- Heroic: Lei Shen								
-								i(96557), -- Gloves of the Maimed Vizier	
-								i(96556), -- Legwraps of Cardinality	
-								i(96548), -- Fusion Slasher Chestguard	
-								i(96563), -- Grips of Slicing Electricity	
-								i(96549), -- Conduit-Breaker Chain Leggings	
-								i(96564), -- Leggings of the Violent Gale	
-								i(96550), -- Doomed Crown of Lei Shen	
-								i(96565), -- Lei Shen's Grounded Carapace	
-								i(96551), -- Legplates of the Lightning Throne	
-								i(96552), -- Legplates of Whipping Ionization	
-								i(96547), -- Shan-Dun, Breaker of Hope	
-								i(96559), -- Torall, Rod of the Shattered Throne	
-								i(96553), -- Uroe, Harbinger of Terror	
-								i(96554), -- Ultimate Protection of the Emperor	
-								i(96562), -- Lei Shen's Orb of Command	
-								i(96607), -- Lost Shoulders of Fire	
-								i(96609), -- Lost Shoulders of Fluidity	
-								i(96608), -- Lost Shoulders of Healing	
-								i(96612), -- Forgotten Mantle of the Moon	
-								i(96613), -- Forgotten Mantle of the Sun	
-								i(96614), -- Abandoned Spaulders of Arrowflight	
-								i(96615), -- Abandoned Spaulders of Renewal	
-								i(96618), -- Reconstructed Bloody Shoulderplates	
-								i(96617), -- Reconstructed Furious Shoulderplates	
-								i(96616), -- Reconstructed Holy Shoulderplates	
-								i(96621), -- Bo-Ris, Horror in the Night	
-								i(96606), -- Darkwood Spiritstaff	
-								i(96620), -- Do-tharak, the Swordbreaker	
-								i(96604), -- Fyn's Flickering Dagger	
-								i(96619), -- Greatsword of Frozen Hells	
-								i(96602), -- Invocation of the Dawn	
-								i(96611), -- Jerthud, Graceful Hand of the Savior	
-								i(96603), -- Miracoran, the Vehement Chord	
-								i(96610), -- Nadagast's Exsanguinator	
-								i(97127), -- Tia-Tia, the Scything Star	
-								i(96605), -- Zeeg's Ancient Kegsmasher	
-								i(96622), -- Visage of the Doomed	
-								n(-355, { -- Thunderforged	
-									i(96929), -- Gloves of the Maimed Vizier
-									i(96928), -- Legwraps of Cardinality
-									i(96920), -- Fusion Slasher Chestguard
-									i(96935), -- Grips of Slicing Electricity
-									i(96921), -- Conduit-Breaker Chain Leggings
-									i(96936), -- Leggings of the Violent Gale
-									i(96922), -- Doomed Crown of Lei Shen
-									i(96937), -- Lei Shen's Grounded Carapace
-									i(96923), -- Legplates of the Lightning Throne
-									i(96924), -- Legplates of Whipping Ionization
-									i(96919), -- Shan-Dun, Breaker of Hope
-									i(96931), -- Torall, Rod of the Shattered Throne
-									i(96925), -- Uroe, Harbinger of Terror
-									i(96926), -- Ultimate Protection of the Emperor
-									i(96934), -- Lei Shen's Orb of Command
-									i(96979), -- Lost Shoulders of Fire
-									i(96981), -- Lost Shoulders of Fluidity
-									i(96980), -- Lost Shoulders of Healing
-									i(96984), -- Forgotten Mantle of the Moon
-									i(96985), -- Forgotten Mantle of the Sun
-									i(96986), -- Abandoned Spaulders of Arrowflight
-									i(96987), -- Abandoned Spaulders of Renewal
-									i(96990), -- Reconstructed Bloody Shoulderplates
-									i(96989), -- Reconstructed Furious Shoulderplates
-									i(96988), -- Reconstructed Holy Shoulderplates
-									i(96993), -- Bo-Ris, Horror in the Night
-									i(96978), -- Darkwood Spiritstaff
-									i(96992), -- Do-tharak, the Swordbreaker
-									i(96976), -- Fyn's Flickering Dagger
-									i(96991), -- Greatsword of Frozen Hells
-									i(96974), -- Invocation of the Dawn
-									i(96983), -- Jerthud, Graceful Hand of the Savior
-									i(96975), -- Miracoran, the Vehement Chord
-									i(96982), -- Nadagast's Exsanguinator
-									i(97130), -- Tia-Tia, the Scything Star
-									i(96977), -- Zeeg's Ancient Kegsmasher
-									i(96994), -- Visage of the Doomed
+								ach(8090),	-- A Complete Circuit
+								un(2, ach(8238)),	-- Cutting Edge: Lei Shen
+								ach(8067),	-- Heroic: Lei Shen								
+								i(96557),	-- Gloves of the Maimed Vizier	
+								i(96556),	-- Legwraps of Cardinality	
+								i(96548),	-- Fusion Slasher Chestguard	
+								i(96563),	-- Grips of Slicing Electricity	
+								i(96549),	-- Conduit-Breaker Chain Leggings	
+								i(96564),	-- Leggings of the Violent Gale	
+								i(96550),	-- Doomed Crown of Lei Shen	
+								i(96565),	-- Lei Shen's Grounded Carapace	
+								i(96551),	-- Legplates of the Lightning Throne	
+								i(96552),	-- Legplates of Whipping Ionization	
+								i(96547),	-- Shan-Dun, Breaker of Hope	
+								i(96559),	-- Torall, Rod of the Shattered Throne	
+								i(96553),	-- Uroe, Harbinger of Terror	
+								i(96554),	-- Ultimate Protection of the Emperor	
+								i(96562),	-- Lei Shen's Orb of Command	
+								i(96607),	-- Lost Shoulders of Fire	
+								i(96609),	-- Lost Shoulders of Fluidity	
+								i(96608),	-- Lost Shoulders of Healing	
+								i(96612),	-- Forgotten Mantle of the Moon	
+								i(96613),	-- Forgotten Mantle of the Sun	
+								i(96614),	-- Abandoned Spaulders of Arrowflight	
+								i(96615),	-- Abandoned Spaulders of Renewal	
+								i(96618),	-- Reconstructed Bloody Shoulderplates	
+								i(96617),	-- Reconstructed Furious Shoulderplates	
+								i(96616),	-- Reconstructed Holy Shoulderplates	
+								i(96621),	-- Bo-Ris, Horror in the Night	
+								i(96606),	-- Darkwood Spiritstaff	
+								i(96620),	-- Do-tharak, the Swordbreaker	
+								i(96604),	-- Fyn's Flickering Dagger	
+								i(96619),	-- Greatsword of Frozen Hells	
+								i(96602),	-- Invocation of the Dawn	
+								i(96611),	-- Jerthud, Graceful Hand of the Savior	
+								i(96603),	-- Miracoran, the Vehement Chord	
+								i(96610),	-- Nadagast's Exsanguinator	
+								i(97127),	-- Tia-Tia, the Scything Star	
+								i(96605),	-- Zeeg's Ancient Kegsmasher	
+								i(96622),	-- Visage of the Doomed	
+								n(-355, {	-- Thunderforged	
+									i(96929),	-- Gloves of the Maimed Vizier
+									i(96928),	-- Legwraps of Cardinality
+									i(96920),	-- Fusion Slasher Chestguard
+									i(96935),	-- Grips of Slicing Electricity
+									i(96921),	-- Conduit-Breaker Chain Leggings
+									i(96936),	-- Leggings of the Violent Gale
+									i(96922),	-- Doomed Crown of Lei Shen
+									i(96937),	-- Lei Shen's Grounded Carapace
+									i(96923),	-- Legplates of the Lightning Throne
+									i(96924),	-- Legplates of Whipping Ionization
+									i(96919),	-- Shan-Dun, Breaker of Hope
+									i(96931),	-- Torall, Rod of the Shattered Throne
+									i(96925),	-- Uroe, Harbinger of Terror
+									i(96926),	-- Ultimate Protection of the Emperor
+									i(96934),	-- Lei Shen's Orb of Command
+									i(96979),	-- Lost Shoulders of Fire
+									i(96981),	-- Lost Shoulders of Fluidity
+									i(96980),	-- Lost Shoulders of Healing
+									i(96984),	-- Forgotten Mantle of the Moon
+									i(96985),	-- Forgotten Mantle of the Sun
+									i(96986),	-- Abandoned Spaulders of Arrowflight
+									i(96987),	-- Abandoned Spaulders of Renewal
+									i(96990),	-- Reconstructed Bloody Shoulderplates
+									i(96989),	-- Reconstructed Furious Shoulderplates
+									i(96988),	-- Reconstructed Holy Shoulderplates
+									i(96993),	-- Bo-Ris, Horror in the Night
+									i(96978),	-- Darkwood Spiritstaff
+									i(96992),	-- Do-tharak, the Swordbreaker
+									i(96976),	-- Fyn's Flickering Dagger
+									i(96991),	-- Greatsword of Frozen Hells
+									i(96974),	-- Invocation of the Dawn
+									i(96983),	-- Jerthud, Graceful Hand of the Savior
+									i(96975),	-- Miracoran, the Vehement Chord
+									i(96982),	-- Nadagast's Exsanguinator
+									i(97130),	-- Tia-Tia, the Scything Star
+									i(96977),	-- Zeeg's Ancient Kegsmasher
+									i(96994),	-- Visage of the Doomed
 								}),	
 							})),
 							cr(69473, e(831, {			-- Ra-den
-								un(2, ach(8260)), -- Cutting Edge: Ra-den
-								ach(8068), -- Heroic: Ra-den
-								un(2, ach(8089)), -- I Thought He Was Supposeed to Be Hard?
+								un(2, ach(8260)),	-- Cutting Edge: Ra-den
+								ach(8068),	-- Heroic: Ra-den
+								un(2, ach(8089)),	-- I Thought He Was Supposeed to Be Hard?
 								i(95016),
 								i(95017),
 								i(95038),
