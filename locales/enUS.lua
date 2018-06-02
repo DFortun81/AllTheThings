@@ -227,7 +227,8 @@ AllTheThings.Locales.enUS = {
 		[53] = INVTYPE_TRINKET,									-- Trinket
 		[54] = GetItemSubClassInfo(3,11),						-- Relic
 		[55] = "Consumables",									-- Consumable (Artifact Power, etc)
-		[56] = "Reagents",										-- Reagents (Crafting, etc)
+		[56] = GetItemClassInfo(5),								-- Reagents (Crafting, etc)
+		[57] = GetItemSubClassInfo(2,20),						-- Fishing Poles
 
 		-- "Non-Equipment Types"
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
@@ -241,9 +242,9 @@ AllTheThings.Locales.enUS = {
 		[108] = ENABLE_MUSIC.." "..ROLL,						-- Music Rolls
 		[109] = HEIRLOOMS, 										-- Heirlooms
 		[110] = "Titles", 										-- Titles
-		[111] = "Glyphs", 										-- Glyphs
+		[111] = GetItemClassInfo(16), 							-- Glyph
 		[112] = FACTION, 										-- Factions
-		[113] = "Bags", 										-- Bags
+		[113] = INVTYPE_BAG, 									-- Bags
 
 		-- "Recipes"
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes

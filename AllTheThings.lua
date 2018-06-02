@@ -4309,7 +4309,7 @@ function app.FilterItemBind(item)
 end
 function app.FilterItemClass(item)
 	return app.ItemBindFilter(item)
-		or ((app.FilterItemClass_RequireItemFilter(item.f) or (item.g and app.GroupVisibilityFilter(item)))
+		or ((app.FilterItemClass_RequireItemFilter(item.f) or (item.g and item.total and item.total > 0))
 			and app.RequireBindingFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)
@@ -4636,7 +4636,7 @@ UpdateGroup = function(parent, group)
 				if app.ShowIncompleteQuests(group) then
 					group.visible = not group.saved or app.GroupVisibilityFilter(group) or GetDataMember("ShowCompletedGroups");
 				else
-					group.visible = app.GroupVisibilityFilter(group); -- group.total > 0 and 
+					group.visible = app.GroupVisibilityFilter(group);
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
