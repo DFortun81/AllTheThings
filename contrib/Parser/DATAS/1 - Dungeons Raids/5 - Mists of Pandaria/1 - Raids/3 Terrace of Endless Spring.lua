@@ -300,13 +300,12 @@ _.Instances =
 								i( 89234, {	-- Helm of the Shadowy Vanquisher
 									i(85316),	-- Faceguard of the Lost Catacomb
 									i(85336),	-- Helmet of the Lost Catacomb
-
-									i(85377),	-- 
-									i(85381),	-- 
-									i(85301),	-- 
-									i(85307),	-- 
-									i(85311),	-- 
-									i(85357),	-- 
+									i(85307),	-- Eternal Blossom Cover
+									i(85381),	-- Eternal Blossom Headguard
+									i(85311),	-- Eternal Blossom Headpiece
+									i(85357),	-- Eternal Blossom Helm
+									i(85377),	-- Hood of the Burning Scroll
+									i(85301),	-- Helmet of the Thousandfold Blades
 								}),
 								i(138805),	-- Illusion: Jade Spirit
 								i( 86386),	-- Shin'ka, Execution of Dominion
@@ -325,134 +324,150 @@ _.Instances =
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
 							cr(60583, e(683, {	-- Protectors of the Endless
-								i(87145),	-- 
-								i(90506),	-- 
-								i(87146),	-- 
-								i(90507),	-- 
-								i(90504),	-- 
-								i(89943),	-- 
-								i(87152),	-- 
-								i(90513),	-- 
-								i(87150),	-- 
-								i(90512),	-- 
-								i(87153),	-- 
-								i(90514),	-- 
-								i(87155),	-- 
-								i(90516),	-- 
-								i(90505),	-- 
-								i(89944),	-- 
-								i(87149),	-- 
-								i(90510),	-- 
-								i(87154),	-- 
-								i(90515),	-- 
+								i(87152),	-- Regail's Crackling Dagger
+								i(87155),	-- Casque of Expelled Corruption
+								i(87148),	-- Kaolan's Withering Necklace
+								i(87147),	-- Shackle of Eversparks
+								i(89944),	-- Waterborne Shoulderguards
+								i(87150),	-- Cloak of Overwhelming Corruption
+								i(87145),	-- Bracers of Defiled Earth
+								i(87149),	-- Cuffs of the Corrupted Waters
+								i(89943),	-- Legguards of Failing Purification
+								i(87153),	-- Asani's Uncleansed Sandals
+								i(87146),	-- Deepwater Greatboots
+								i(87154),	-- Lightning Prisoner's Boots
+								i(90515),	-- Lightning Prisoner's Boots (Elite)
+								i(87144),	-- Regail's Band of the Endless
+								i(87151),	-- Watersoul Signet
+								n(-355, {	-- Thunderforged (Elite)
+									i(90513),	-- Regail's Crackling Dagger (Elite)
+									i(90516),	-- Casque of Expelled Corruption (Elite)
+									i(90509),	-- Kaolan's Withering Necklace (Elite)
+									i(90508),	-- Shackle of Eversparks (Elite)
+									i(90505),	-- Waterborne Shoulderguards (Elite)
+									i(90512),	-- Cloak of Overwhelming Corruption (Elite)
+									i(90506),	-- Bracers of Defiled Earth (Elite)
+									i(90510),	-- Cuffs of the Corrupted Waters (Elite)
+									i(90504),	-- Legguards of Failing Purification (Elite)
+									i(90514),	-- Asani's Uncleansed Sandals (Elite)
+									i(90507),	-- Deepwater Greatboots (Elite)
+									i(90503),	-- Regail's Band of the Endless (Elite)
+									i(90511),	-- Watersoul Signet (Elite)
+								}),
 							})),
 							cr(62442, e(742, {	-- Tsulong
-								i(87159),	-- 
-								i(89946),	-- 
-								i(87186),	-- 
-								i(87185),	-- 
-								i(87164),	-- 
-								i(89945),	-- 
-								i(87180),	-- 
-								i(87156),	-- 
-								i(87181),	-- 
-								i(89948),	-- 
-								i(89947),	-- 
-								i(87157),	-- 
-								i(87161),	-- 
-								i(87183),	-- 
-								i(87178),	-- 
-								i(87177),	-- 
-								i(87184),	-- 
-								i(87182),	-- 
-								i(87179),	-- 
-								i(87162),	-- 
-								i(87165),	-- 
+								i(87156),	-- Gao-Rei, Staff of the Legendary Protector
+								i(87164),	-- Loshan, Terror Incarnate
+								i(89947),	-- Shoulderpads of Twisted Fate
+								i(87159),	-- Daybreak Drape
+								i(87157),	-- Sunwrought Mail Hauberk
+								i(89945),	-- Gauntlets of the Shadow's Caress
+								i(89946),	-- Grasps of Serpentine Might
+								i(87161),	-- Belt of Embodied Terror
+								i(87183),	-- Binder's Chain of Unending Summer
+								i(87178),	-- Healer's Belt of Final Winter
+								i(87177),	-- Invoker's Belt of Final Winter
+								i(87184),	-- Mender's Girdle of Endless Spring
+								i(87186),	-- Patroller's Girdle of Endless Spring
+								i(87185),	-- Protector's Girdle of Endless Spring
+								i(87182),	-- Ranger's Chain of Unending Summer
+								i(87179),	-- Sorceror's Belt of Final Winter
+								i(87180),	-- Stalker's Cord of Eternal Autumn
+								i(87181),	-- Weaver's Cord of Eternal Autumn
+								i(89948),	-- Fear-Blackened Leggings
+								i(87162),	-- Sandals of the Blackest Night
+								i(87165),	-- Sollerets of Instability
+								i(87158),	-- Dread Shadow Ring
+								i(87163),	-- Spirits of the Sun
+								i(87160),	-- Stuff of Nightmares
 							})),
 							cr(62983, e(729, {	-- Lei Shi
-								i(87171),	-- 
-								i(87186),	-- 
-								i(87185),	-- 
-								i(87180),	-- 
-								i(87170),	-- 
-								i(87166),	-- 
-								i(87181),	-- 
-								i(87168),	-- 
-								i(87169),	-- 
-								i(87183),	-- 
-								i(87178),	-- 
-								i(87177),	-- 
-								i(87184),	-- 
-								i(87182),	-- 
-								i(87179),	-- 
 								i(89262, {	-- Shoulders of the Shadowy Conqueror
-									i(87103),	-- 
-									i(87108),	-- 
-									i(87113),	-- 
-									i(87118),	-- 
-									i(87123),	-- 
-									i(87191),	-- 
+									i(87108),	-- White Tiger Mantle
+									i(87103),	-- White Tiger Pauldrons
+									i(87113),	-- White Tiger Shoulderguards
+									i(87118),	-- Guardian Serpent Mantle
+									i(87123),	-- Guardian Serpent Shoulderguards
+									i(87191),	-- Sha-Skin Mantle
 								}),
 								i(89263, {	-- Shoulders of the Shadowy Protector
-									i(87088),	-- 
-									i(87093),	-- 
-									i(87098),	-- 
-									i(87133),	-- 
-									i(87138),	-- 
-									i(87143),	-- 
-									i(87196),	-- 
-									i(87201),	-- 
-									i(87006),	-- 
+									i(87006),	-- Yaungol Slayer's Spaulders
+									i(87093),	-- Red Crane Mantle
+									i(87098),	-- Red Crane Shoulderguards
+									i(87088),	-- Red Crane Spaulders
+									i(87133),	-- Firebird's Mantle
+									i(87143),	-- Firebird's Shoulderwraps
+									i(87138),	-- Firebird's Spaulders
+									i(87196),	-- Pauldrons of Resounding Rings
+									i(87201),	-- Shoulderguards of Resounding Rings
 								}),
 								i(89261, {	-- Shoulders of the Shadowy Vanquisher
-									i(86927),	-- 
-									i(86932),	-- 
-									i(86937),	-- 
-									i(86942),	-- 
-									i(87011),	-- 
-									i(87128),	-- 
-									i(86917),	-- 
-									i(86922),	-- 
+									i(86917),	-- Pauldrons of the Lost Catacomb
+									i(86922),	-- Shoulderguards of the Lost Catacomb
+									i(86932),	-- Eternal Blossom Mantle
+									i(86942),	-- Eternal Blossom Shoulderguards
+									i(86937),	-- Eternal Blossom Shoulderwraps
+									i(86927),	-- Eternal Blossom Spaulders
+									i(87011),	-- Mantle of the Burning Scroll
+									i(87128),	-- Spaulders of the Thousandfold Blades
 								}),
+								i(87170),	-- Jin'ya, Orb of the Waterspeaker
+								i(87166),	-- Spiritsever
+								i(87168),	-- Taoren, the Soul Burner
+								i(87171),	-- Cuirass of the Animated Protector
+								i(87169),	-- Robes of the Unknown Fear
+								i(87183),	-- Binder's Chain of Unending Summer
+								i(87178),	-- Healer's Belt of Final Winter
+								i(87177),	-- Invoker's Belt of Final Winter
+								i(87184),	-- Mender's Girdle of Endless Spring
+								i(87186),	-- Patroller's Girdle of Endless Spring
+								i(87185),	-- Protector's Girdle of Endless Spring
+								i(87182),	-- Ranger's Chain of Unending Summer
+								i(87179),	-- Sorceror's Belt of Final Winter
+								i(87180),	-- Stalker's Cord of Eternal Autumn
+								i(87181),	-- Weaver's Cord of Eternal Autumn
+								i(87172),	-- Darkmist Vortex
+								i(87167),	-- Terror in the Mists
 							})),
 							cr(60999, e(709, {	-- Sha of Fear
-								i(138805),
+								i( 89259, {	-- Helm of the Shadowy Conqueror
+									i(87111),	-- White Tiger Faceguard
+									i(87106),	-- White Tiger Headguard
+									i(87101),	-- White Tiger Helmet
+									i(87115),	-- Guardian Serpent Cowl
+									i(87120),	-- Guardian Serpent Hood
+									i(87188),	-- Sha-Skin Hood
+								}),
+								i( 89260, {	-- Helm of the Shadowy Protector
+									i(87004),	-- Yaungol Slayer's Hood
+									i(87096),	-- Red Crane Crown
+									i(87086),	-- Red Crane Headpiece
+									i(87090),	-- Red Crane Helm
+									i(87131),	-- Firebird's Faceguard
+									i(87141),	-- Firebird's Headpiece
+									i(87136),	-- Firebird's Helmet
+									i(87199),	-- Faceguard of Resounding Rings
+									i(87192),	-- Helmet of Resounding Rings
+								}),
+								i( 89258, {	-- Helm of the Shadowy Vanquisher
+									i(86920),	-- Faceguard of the Lost Catacomb
+									i(86915),	-- Helmet of the Lost Catacomb
+									i(86934),	-- Eternal Blossom Cover
+									i(86940),	-- Eternal Blossom Headguard
+									i(86925),	-- Eternal Blossom Headpiece
+									i(86929),	-- Eternal Blossom Helm
+									i(87008),	-- Hood of the Burning Scroll
+									i(87126),	-- Helmet of the Thousandfold Blades
+								}),
+								i(138805),	-- Illusion: Jade Spirit
+								i( 87176),	-- Shin'ka, Execution of Dominion
+								i( 87173),	-- Kilrak, Jaws of Terror
+								i( 89949),	-- Robes of Pinioned Eyes
+								i( 89950),	-- Wrap of Instant Petrification
+								i( 89951),	-- Shadowgrip Girdle
+								i( 87174),	-- Dreadwoven Leggings of Failure
+								i( 87175),	-- Essence of Terror
                                 i(122199),	-- Music Roll: Heart of Pandaria
-								i(87176),	-- 
-								i(87173),	-- 
-								i(89950),	-- 
-								i(89949),	-- 
-								i(89951),	-- 
-								i(87174),	-- 
-								i(89259, {	-- Helm of the Shadowy Conqueror
-									i(87101),	-- 
-									i(87106),	-- 
-									i(87111),	-- 
-									i(87115),	-- 
-									i(87120),	-- 
-									i(87188),	-- 
-								}),
-								i(89260, {	-- Helm of the Shadowy Protector
-									i(87086),	-- 
-									i(87090),	-- 
-									i(87096),	-- 
-									i(87131),	-- 
-									i(87136),	-- 
-									i(87141),	-- 
-									i(87192),	-- 
-									i(87199),	-- 
-									i(87004),	-- 
-								}),
-								i(89258, {	-- Helm of the Shadowy Vanquisher
-									i(86925),	-- 
-									i(86929),	-- 
-									i(86934),	-- 
-									i(86940),	-- 
-									i(87008),	-- 
-									i(87126),	-- 
-									i(86915),	-- 
-									i(86920),	-- 
-								}),
 							})),
 						},
 					}),
