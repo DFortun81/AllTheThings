@@ -4308,39 +4308,22 @@ function app.FilterItemBind(item)
 	return item.b == 2; -- BoE
 end
 function app.FilterItemClass(item)
-	if item.f then
-		if item.f == 58 then	-- Containers
-			if item.total then
-				return app.GroupVisibilityFilter(item);
-			elseif not item.collectible then
-				return app.CollectedItemVisibilityFilter(item);
-			end
-		elseif item.f == 56 then	-- Reagents
-			if app.FilterItemClass_RequireItemFilter(item.f) then
-				return true;
-			end
-			if item.total then
-				return app.GroupVisibilityFilter(item);
-			elseif item.collectible then
-				return app.CollectedItemVisibilityFilter(item);
-			end
-		end
-	end
-	return app.ItemBindFilter(item)
-		or (app.FilterItemClass_RequireItemFilter(item.f)
+	-- If the item is Bind on Equip, return Visible.
+	if app.ItemBindFilter(item) then return true; end
+	return app.FilterItemClass_RequireItemFilter(item.f)
 			and app.RequireBindingFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)
 			and app.UnobtainableItemFilter(item.u)
 		        and app.SeasonalFilter(item.u)
 			and app.PersonalLootFilter(item)
-			and app.RequiredSkillFilter(item.requireSkill));
+			and app.RequiredSkillFilter(item.requireSkill);
 end
 function app.FilterItemClass_RequireClasses(item)
 	return not item.nmc;
 end
 function app.FilterItemClass_RequireItemFilter(f)
-	if f and not GetPersonalDataSubMember("ItemFilters", f, true) then return false; end
+	if f and not GetPersonalDataSubMember("ItemFilters", f, true) and not (f == 58 or f == 56) then return false; end
 	return true;
 end
 function app.FilterItemClass_RequirePersonalLoot(item)
@@ -4651,10 +4634,12 @@ UpdateGroup = function(parent, group)
 				parent.progress = (parent.progress or 0) + group.progress;
 				
 				-- If this group is trackable, then we should show it.
-				if app.ShowIncompleteQuests(group) then
-					group.visible = not group.saved or app.GroupVisibilityFilter(group) or GetDataMember("ShowCompletedGroups");
+				if app.GroupVisibilityFilter(group) or GetDataMember("ShowCompletedGroups") then
+					group.visible = true;
+				elseif app.ShowIncompleteQuests(group) then
+					group.visible = not group.saved;
 				else
-					group.visible = app.GroupVisibilityFilter(group);
+					group.visible = false;
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
@@ -4686,6 +4671,13 @@ UpdateGroup = function(parent, group)
 				else
 					-- Show this group.
 					group.visible = true;
+					
+					-- We only want to filter out Consumables, Reagents, and Miscellaneous items if they can't be used to collect something
+					if group.f and (group.f == 58 or group.f == 56 or group.f == 50) then
+						if not GetPersonalDataSubMember("ItemFilters", group.f, true) then
+							group.visible = false;
+						end
+					end
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
