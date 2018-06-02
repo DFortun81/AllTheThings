@@ -754,7 +754,7 @@ _.Zones =
 					i(45584),	-- Thunder Bluff Tabard
 					currency(241, { -- Champion's Seal
 						i(45725),	-- Argent Hippogryph Mount 
-						i(46750),	-- Great Golden Mount
+						i(46755),	-- Great Golden Kodo
 						i(45592),	-- Thunder Bluff Mount
 						i(122232),	-- Music Roll: The Argent Tournament
 						i(44980),	-- Mulgore Hatchling Pet
@@ -782,7 +782,7 @@ _.Zones =
 					currency(241, { -- Champion's Seal
 						i(45725),	-- Argent Hippogryph Mount 
 						i(45597),	-- Forsaken Mount
-						i(46746),	-- White Skeletal Warhorse Mount
+						i(46764),	-- White Skeletal Warhorse Mount
 						i(122232),	-- Music Roll: The Argent Tournament
 						i(44971),	-- Tirisfal Batling Pet					
 						i(45016),	-- Undercity Banner Toy
@@ -809,7 +809,7 @@ _.Zones =
 					currency(241, { -- Champion's Seal
 						i(45725),	-- Argent Hippogryph Mount 
 						i(45595),	-- Orgrimmar Wolf Mount
-						i(46749),	-- Swift Burgundy Mount
+						i(46757),	-- Swift Burgundy Mount
 						i(122232),	-- Music Roll: The Argent Tournament
 						i(44973),	-- Durotar Scorpion Pet
 						i(45014),	-- Orgrimmar Banner Toy
@@ -1055,7 +1055,7 @@ _.Zones =
 					currency(241, { -- Champion's Seal
 						i(45725),	-- Argent Hippogryph Mount 
 						i(45593),	-- Darkspear Raptor Mount
-						i(46743),	-- Swift Purple Raptor Mount
+						i(46760),	-- Swift Purple Raptor Mount
 						i(122232),	-- Music Roll: The Argent Tournament
 						i(45606),	-- Sen'jin Fetish Pet
 						i(45015),	-- Sen'jin Banner Toy

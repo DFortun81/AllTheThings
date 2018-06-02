@@ -3817,121 +3817,73 @@ Legacy				qh( 1436),	-- Alliance Relations
 							},
 							["races"] = {25,26},
 						}),			
-						i(87795, { 	-- Black Dragon Turtle
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),
+						i(87795), 	-- Black Dragon Turtle
 						i(91009, {	-- Blue Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(87796, { 	-- Blue Dragon Turtle 
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),
+						i(87796), 	-- Blue Dragon Turtle 
 						i(91005, { 	-- Brown Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(87797, { 	-- Brown Dragon Turtle 
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),
-						i(91011,  {	-- Great Black Dragon Turtle (Panda)
+						i(87797),	-- Brown Dragon Turtle 
+						i(91011, {	-- Great Black Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(87802,  {	-- Great Black Dragon Turtle 
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),			
-						i(91013,  {	-- Great Blue Dragon Turtle (Panda)
+						i(87802),	-- Great Black Dragon Turtle 
+						i(91013, {	-- Great Blue Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(87803,  {	-- Great Blue Dragon Turtle 
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),	
-						i(91014,  {	-- Great Brown Dragon Turtle (Panda)
+						i(87803),	-- Great Blue Dragon Turtle
+						i(91014, {	-- Great Brown Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(87804,  {	-- Great Brown Dragon Turtle
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),			
-						i(91012,  {	-- Great Green Dragon Turtle (Panda)
+						i(87804),	-- Great Brown Dragon Turtle
+						i(91012, {	-- Great Green Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(87801,  {	-- Great Green Dragon Turtle 
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),		
-						i(91015,  {	-- Great Purple Dragon Turtle (Panda)
+						i(87801),	-- Great Green Dragon Turtle
+						i(91015, {	-- Great Purple Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(87805,  {	-- Great Purple Dragon Turtle 
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),	
-						i(91010,  {	-- Great Red Dragon Turtle (Panda)
+						i(87805),	-- Great Purple Dragon Turtle 
+						i(91010, {	-- Great Red Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(82811,  {	-- Great Red Dragon Turtle 
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),	
-						i(91004,  {	-- Green Dragon Turtle (Panda)
+						i(82811),	-- Great Red Dragon Turtle 
+						i(91004, {	-- Green Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(82765,  {	-- Green Dragon Turtle
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),		
+						i(82765),	-- Green Dragon Turtle
 						i(91006, {	-- Purple Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(87799,  {	-- Purple Dragon Turtle
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),	
-						i(91007, 	{	-- Red Dragon Turtle (Panda)
+						i(87799),	-- Purple Dragon Turtle
+						i(91007, {	-- Red Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(87800,  {	-- Red Dragon Turtle 
-							["groups"] = {
-							},
-							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
-						}),
+						i(87800),	-- Red Dragon Turtle 
 					}),
 					n(8404, {	-- Xan'tish <Snake Vendor>
 						i(10360),	-- Black Kingsnake
