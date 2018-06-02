@@ -4309,7 +4309,7 @@ function app.FilterItemBind(item)
 end
 function app.FilterItemClass(item)
 	return app.ItemBindFilter(item)
-		or ((app.FilterItemClass_RequireItemFilter(item.f) or (item.g and item.total and item.total > 0))
+		or (app.FilterItemClass_RequireItemFilter(item.f)--
 			and app.RequireBindingFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)

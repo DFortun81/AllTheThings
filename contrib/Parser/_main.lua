@@ -305,6 +305,16 @@ WOD_CRAFTED_ITEM = function(id)
 end
 
 -- Construct a commonly formatted object.
+bubbleDown = function(data, t)
+	for i, group in ipairs(t) do
+		for key, value in pairs(data) do
+			group[key] = value;
+		end
+		if group.groups then bubbleDown(data, group.groups); end
+		if group.g then bubbleDown(data, group.g); end
+	end
+	return t;
+end
 local bubbleUp = function(t)
 	local t2 = {};
 	for i, group in pairs(t) do
@@ -315,13 +325,26 @@ local bubbleUp = function(t)
 		else
 			if group.bubble then
 				-- this isn't just a normal group object, merge up the contents.
-				for j,subgroup in pairs(group.groups) do
-					if type(i) ~= "number" then
-						print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
-					elseif type(group) ~= "table" then
-						print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
-					else
-						table.insert(t2, subgroup);
+				if group.groups then
+					for j,subgroup in pairs(group.groups) do
+						if type(i) ~= "number" then
+							print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
+						elseif type(group) ~= "table" then
+							print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
+						else
+							table.insert(t2, subgroup);
+						end
+					end
+				end
+				if group.g then
+					for j,subgroup in pairs(group.g) do
+						if type(i) ~= "number" then
+							print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
+						elseif type(group) ~= "table" then
+							print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
+						else
+							table.insert(t2, subgroup);
+						end
 					end
 				end
 			else
