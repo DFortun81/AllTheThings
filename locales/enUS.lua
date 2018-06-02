@@ -227,6 +227,7 @@ AllTheThings.Locales.enUS = {
 		[53] = INVTYPE_TRINKET,									-- Trinket
 		[54] = GetItemSubClassInfo(3,11),						-- Relic
 		[55] = "Consumables",									-- Consumable (Artifact Power, etc)
+		[56] = "Reagents",										-- Reagents (Crafting, etc)
 
 		-- "Non-Equipment Types"
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
