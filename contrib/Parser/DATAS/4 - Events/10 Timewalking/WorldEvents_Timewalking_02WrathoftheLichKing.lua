@@ -5,7 +5,7 @@ _.WorldEvents =
 {
 	n(-173, {  -- Timewalking
 		["groups"] = {
-			n(-155, { 	-- Wrath of the Lich King
+			tier(3, { 	-- Wrath of the Lich King
 				["groups"] = {
 					i(129928, { -- Frigid Timewarped Prism
 						q(40173, { -- The Unstable Prism

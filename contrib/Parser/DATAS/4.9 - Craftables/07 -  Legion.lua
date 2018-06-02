@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	n(-159, { -- Legion
+	tier(7, { -- Legion
 		n(-181, { -- Blacksmithing
 			i(123917),	-- Demonsteel Armguards
 			i(123911),	-- Demonsteel Boots

@@ -34,7 +34,7 @@ profession(773, { -- Inscription
 		},
 		["icon"] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",
 	}),
-	n(-155, { -- Wrath of the Lich King
+	tier(3, { -- Wrath of the Lich King
 		i(43667),	-- Book of Clever Tricks
 		i(43661),	-- Book of Stars
 		i(43655),	-- Book of Survival
@@ -51,14 +51,14 @@ profession(773, { -- Inscription
 		i(43654),	-- Tome of the Dawn
 		i(45849),	-- Twilight Tome
 	}),
-	n(-156, { -- Cataclysm
+	tier(4, { -- Cataclysm
 		i(62236),	-- Battle Tome
 		i(62231),	-- Book of Blood
 		i(62235),	-- Divine Companion
 		i(62234),	-- Dungeoneering Guide
 		i(62233),	-- Lord Rottington's Pressed Wisp Book
 	}),
-	n(-157, { -- Mists of Pandaria
+	tier(5, { -- Mists of Pandaria
 		i(79342, {	-- Ghost Iron Staff
 			i(79343),	-- Inscribed Tiger Staff
 		}),
@@ -77,7 +77,7 @@ profession(773, { -- Inscription
 		i(87561),	-- Silver Inlaid Staff
 
 	}),
-	n(-158, { -- Warlords of Draenor
+	tier(6, { -- Warlords of Draenor
 		WOD_CRAFTED_ITEM(113134),	-- Crystalfire Spellstaff
 		WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
 		WOD_CRAFTED_ITEM(113270),	-- Shadowtome

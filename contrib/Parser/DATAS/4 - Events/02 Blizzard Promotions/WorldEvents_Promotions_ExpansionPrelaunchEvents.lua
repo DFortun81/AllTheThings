@@ -9,27 +9,27 @@ _.WorldEvents =
 				["groups"] = {
 					n(-521, { -- Burning Crusade
 						["groups"] = {
-							{
+							ach(2079, { -- Tabard of the Protector
 								["groups"] = {
 									un(3, i(28788)), -- Tabard of the Protector
 								},
-								["achievementID"] = 2079,
-							},
+								["collectible"] = false,
+							}),
 						},
 						["icon"] = "Interface\\Icons\\expansionicon_burningcrusade",
 					}),
 					n(-522, { -- Wrath of the Lich King
 						["groups"] = {
+							ach(2116, { -- Tabard of the Argent Dawn
+								["groups"] = {
+									un(3, i(22999)),	-- Argent Dawn Tabard
+								},
+								["collectible"] = false,
+							}),
 							n(28194, { -- Prince Tenris Mirkblood
 								un(3, i(38658)), -- Vampiric Batling Pet
 								un(9, i(39769)), -- Arcanite Ripper
 							}),
-							{
-								["groups"] = {
-									un(3, i(22999)),	-- Argent Dawn Tabard
-								},
-								["achievementID"] = 2116,
-							},
 							n(-3218, { -- Blessed Regalia of Undead Cleansing
 								["groups"] = {
 									un(3, i(43074)),	-- Blessed Mantle of Undead Cleansing
@@ -71,53 +71,53 @@ _.WorldEvents =
 					}),
 					n(-523, { -- Cataclysm
 						["groups"] = {
-							{
+							ach(4786, { -- Operation: Gnomeregan
 								["groups"] = {
 									un(3, i(54651)), -- Gnomeregan Pride Toy
 								},
-								["achievementID"] = 4786, -- Operation: Gnomeregan
-							},
-							{
+								["collectible"] = false,
+							}),
+							ach(4790, { -- Zalazane's Fall
 								["groups"] = {
 									un(3, i(54653)), -- Darkspear Pride Toy
 								},
-								["achievementID"] = 4790, -- Zalazane's Fall
-							},
-							n(-499, { -- Elemental Bosses (Cataclysm)
-								["groups"] = {
-									un(3, i(53496)), -- Barrier of the Earth Princess
-									un(3, i(53506)), -- Cloak of Mocking Winds
-									un(3, i(53498)), -- Earth's Bride Gown
-									un(3, i(53504)), -- Flamewalker's Treads
-									un(3, i(53494)), -- Girdle of Oblation
-									un(3, i(53508)), -- Pulmonary Casing
-									un(3, i(53493)), -- Sacrificial Mail
-									un(3, i(53505)), -- Salamander Skin
-									un(3, i(53507)), -- Sandfury Sandals
-									un(3, i(53491)), -- Twilight Offering Bands
-									un(3, i(53497)), -- Zaetar's Deathshroud
-								},
-								["achievementID"] = 4887, -- Tripping the Rifts
+								["collectible"] = false,
 							}),
+						ach(4887, { -- Tripping the Rifts
+							["groups"] = {
+								un(3, i(53496)), -- Barrier of the Earth Princess
+								un(3, i(53506)), -- Cloak of Mocking Winds
+								un(3, i(53498)), -- Earth's Bride Gown
+								un(3, i(53504)), -- Flamewalker's Treads
+								un(3, i(53494)), -- Girdle of Oblation
+								un(3, i(53508)), -- Pulmonary Casing
+								un(3, i(53493)), -- Sacrificial Mail
+								un(3, i(53505)), -- Salamander Skin
+								un(3, i(53507)), -- Sandfury Sandals
+								un(3, i(53491)), -- Twilight Offering Bands
+								un(3, i(53497)), -- Zaetar's Deathshroud
+							},
+							["collectible"] = false,
+						}),
 						},
 						["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
 					}),
-					n(-524, { -- Mists of Pandaria
+					tier(5, { -- Mists of Pandaria
 						["groups"] = {
-							{
+							ach(7467, { -- Theramore's Fall
 								["groups"] = {
 									un(4, i(89196)), -- Theramore Tabard
 								},
-								["achievementID"] = 7467, -- Theramore's Fall
+								["collectible"] = false,
 								["description"] = "Can be bought from Zidormi in Duskwallow Marsh if you completed the level 85 version of the Theramore's Fall Scenario.",
-							},
-							{
+							}),
+							ach(7468, { -- Theramore's Fall
 								["groups"] = {
 									un(4, i(89205)), -- Mini Mana Bomb Toy
 								},
-								["achievementID"] = 7468, -- Theramore's Fall
+								["collectible"] = false,
 								["description"] = "Can be bought from Zidormi in Duskwallow Marsh if you completed the level 85 version of the Theramore's Fall Scenario.",
-							},
+							}),
 						},
 						["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
 					}),

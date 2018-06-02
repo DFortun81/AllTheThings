@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	n(-154, { -- The Burning Crusade
+	tier(2, { -- The Burning Crusade
 		n(-181, { -- Blacksmithing
 			i(23507),	-- Adamantite Breastplate
 			i(23503),	-- Adamantite Cleaver

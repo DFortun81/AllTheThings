@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	n(-153, { -- Classic
+	tier(1, { -- Classic
 		n(-181, { -- Blacksmithing
 				i(12798),	-- Annihilator
 				i(12790),	-- Arcanite Champion

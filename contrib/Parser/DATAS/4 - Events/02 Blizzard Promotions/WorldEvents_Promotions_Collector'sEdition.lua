@@ -41,7 +41,7 @@ _.WorldEvents =
 					}),
 				}),
 				n(-544, {	-- WoW Collector's Edition
-					n(-153, {	-- Classic
+					tier(1, {	-- Classic
 						ach(662, {	-- Collector's Edition: Mini-Diablo
 							un(6, i(13584)),	-- Diablo Stone (Mini-Diablo)
 						}),
@@ -52,7 +52,7 @@ _.WorldEvents =
 							un(6, i(13582)),	-- Zergling Leash (Zergling)
 						}),
 					}),
-					n(-154, {	-- Burning Crusade
+					tier(2, {	-- Burning Crusade
 						ach(665, {	-- Collector's Edition: Netherwhelp
 							un(6, i(25535)),	-- Netherwhelp's Collar (Netherwhelp)
 						}),
@@ -60,17 +60,17 @@ _.WorldEvents =
 							un(6, i(30360)),	-- Lurky's Egg (Lurky)
 						}),
 					}),
-					n(-155, {	-- Wrath of the Lich King
+					tier(3, {	-- Wrath of the Lich King
 						ach(683, {	-- Collector's Edition: Frost Wyrm Whelp
 							un(6, i(39286)),	-- Frosty's Collar (Frosty)
 						}),
 					}),
-					n(-156, {	-- Cataclysm
+					tier(4, {	-- Cataclysm
 						ach(5377, {	-- Collector's Edition: Lil' Deathwing
 							un(6, i(62540)),	-- Lil' Deathwing
 						}),
 					}),
-					n(-157, {	-- Mists of Pandaria
+					tier(5, {	-- Mists of Pandaria
 						ach(6849, {	-- Collector's Edition: Imperial Quilen
 							un(6, i(85870)),	-- Imperial Quilen
 						}),
@@ -78,7 +78,7 @@ _.WorldEvents =
 							un(6, i(85871)),	-- Lucky Quilen Cub
 						}),
 					}),
-					n(-158, {	-- Warlords of Draenor
+					tier(6, {	-- Warlords of Draenor
 						ach(8917, {	-- Collector's Edition: Dread Hatchling
 							un(6, i(109014)),	-- Dread Hatchling
 						}),
@@ -86,7 +86,7 @@ _.WorldEvents =
 							un(6, i(109013)),	-- Reins of the Dread Raven
 						}),
 					}),
-					n(-159, {	-- Legion
+					tier(7, {	-- Legion
 						ach(10321, {	-- Collector's Edition: Nibbles
 							un(6, i(128426)),	-- Nibbles
 						}),

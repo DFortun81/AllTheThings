@@ -929,7 +929,7 @@ _.GearSets =
 									i(41319),	-- Hateful Gladiator's Kodohide Helm	
 									i(41273),	-- Hateful Gladiator's Kodohide Spaulders	
 									i(41308),	-- Hateful Gladiator's Kodohide Robes	
-									i(41638),	-- Hateful Gladiator's Armwraps of Dominance
+									i(41638),	-- Hateful Gladiator's Armwraps of Salvation
 									i(41284),	-- Hateful Gladiator's Kodohide Gloves	
 									i(41628),	-- Hateful Gladiator's Belt of Dominance
 									i(41296),	-- Hateful Gladiator's Kodohide Legguards	
@@ -939,11 +939,11 @@ _.GearSets =
 									i(41325),	-- Hateful Gladiator's Wyrmhide Helm	
 									i(41279),	-- Hateful Gladiator's Wyrmhide Spaulders	
 									i(41314),	-- Hateful Gladiator's Wyrmhide Robes	
-									i(41332),	-- Hateful Gladiator's Armwraps of Triump
+									i(41332),	-- Hateful Gladiator's Armwraps of Salvation
 									i(41291),	-- Hateful Gladiator's Wyrmhide Gloves	
-									i(41330),	-- Hateful Gladiator's Belt of Triumph
+									i(41330),	-- Hateful Gladiator's Belt of Salvation
 									i(41302),	-- Hateful Gladiator's Wyrmhide Legguards	
-									i(44892),	-- Hateful Gladiator's Boots of Triumph
+									i(y),	-- Hateful Gladiator's Boots of Salvation
 								}),			
 								n(-9927, { -- Restoration Druid			
 									i(41676),	-- Hateful Gladiator's Dragonhide Helm	
@@ -951,9 +951,9 @@ _.GearSets =
 									i(41659),	-- Hateful Gladiator's Dragonhide Robes	
 									i(41332),	-- Hateful Gladiator's Wristguards of Triumph
 									i(41771),	-- Hateful Gladiator's Dragonhide Gloves	
-									i(41330),	-- Hateful Gladiator's Waistguard of Triumph
+									i(41330),	-- Hateful Gladiator's Waistguard of Salvation
 									i(41665),	-- Hateful Gladiator's Dragonhide Legguards	
-									i(41633),	-- Hateful Gladiator's Sabatons of Triumph
+									i(41633),	-- Hateful Gladiator's Sabatons of Dominance
 								}),			
 							},				
 							["classes"] = { 11 }, -- Druid				
@@ -1076,6 +1076,7 @@ _.GearSets =
 			},					
 			["achievementID"] = 11710, -- Lethal Looks					
 		}),						
+		-- DK Switches from Victory to Triumph S6
 		gsh(373, {	-- Season 7
 			["groups"] = {
 				gs(373, {	-- Relentless Gladiator's Satin Armor
@@ -1120,14 +1121,20 @@ _.GearSets =
 					i(41158),	-- Relentless Gladiator's Chain Helm
 					i(41218),	-- Relentless Gladiator's Chain Spaulders
 					i(41088),	-- Relentless Gladiator's Chain Armor
+					i(41226),	-- Relentless Gladiator's Wristguards of Triumph
 					i(41144),	-- Relentless Gladiator's Chain Gauntlets
+					i(41236),	-- Relentless Gladiator's Waistguard of Triumph
 					i(41206),	-- Relentless Gladiator's Chain Leggings
+					i(41231),	-- Relentless Gladiator's Sabatons of Triumph
 				}),
 				gs(772, {	-- Relentless Gladiator's Ringmail Armor
 					i(41014),	-- Relentless Gladiator's Ringmail Helm
 					i(41039),	-- Relentless Gladiator's Ringmail Spaulders
 					i(40994),	-- Relentless Gladiator's Ringmail Armor
+					
 					i(41002),	-- Relentless Gladiator's Ringmail Gauntlets
+					
+					
 					i(41028),	-- Relentless Gladiator's Ringmail Leggings
 				}),
 				gs(774, {	-- Relentless Gladiator's Scaled Armor
@@ -1151,8 +1158,11 @@ _.GearSets =
 					i(40830),	-- Relentless Gladiator's Dreadplate Helm
 					i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
 					i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
+					i(40890),	-- Relentless Gladiator's Bracers of Triumph
 					i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
+					i(40883),	-- Relentless Gladiator's Girlde of Triumph
 					i(40851),	-- Relentless Gladiator's Dreadplate Legguards
+					i(147601),	-- Relentless Gladiator's Greaves of Victory
 				}),
 			},
 			["achievementID"] = 11712,	-- Relentlessly Good Looking

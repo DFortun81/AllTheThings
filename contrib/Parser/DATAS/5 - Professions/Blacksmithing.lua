@@ -6,7 +6,7 @@ profession(164, { -- Blacksmithing
 	n(-25, { -- Pet Battles
 		i(119328),	-- Soul of the Forge
 	}),
-	n(-153, {	-- Classic
+	tier(1, {	-- Classic
 		n(-319, { 	-- Weapons
 			un(8, i(12776)),	-- Enchanted Battlehammer
 			un(8, i(12794)),	-- Masterwork Stormhammer
@@ -214,7 +214,7 @@ profession(164, { -- Blacksmithing
 			i(12633),	-- Whitesoul Helm
 		}),
 	}),
-	n(-154, { 	-- The Burning Crusade
+	tier(2, { 	-- The Burning Crusade
 		n(-319, { 	-- Weapons
 			un(5, i(28432)),	-- Black Planar Edge
 			un(5, i(28427)),	-- Blazefury
@@ -340,7 +340,7 @@ profession(164, { -- Blacksmithing
 			i(31367),	-- Wildguard Leggings
 		}),
 	}),
-	n(-155, { 	-- Wrath of the Lich King
+	tier(3, { 	-- Wrath of the Lich King
 		n(-319, { 	-- Weapons
 			un(5, i(41186)),	-- Corroded Saronite Edge
 			un(5, i(41187)),	-- Corroded Saronite Woundbringer
@@ -464,7 +464,7 @@ profession(164, { -- Blacksmithing
 			i(41355),	-- Vengeance Bindings
 		}),
 	}),
-	n(-156, { 	-- Cataclysm
+	tier(4, { 	-- Cataclysm
 		n(-319, { 	-- Weapons
 			i(70155),	-- Brainsplinter
 			i(55044),	-- Cold-Forged Shank
@@ -553,7 +553,7 @@ profession(164, { -- Blacksmithing
 			i(69946),	-- Warboots of Mighty Lords
 		}),
 	}),
-	n(-157, { -- Mists of Pandaria
+	tier(5, { -- Mists of Pandaria
 		n(-319, { -- Weapons
 			i(94587, {	-- Fireguard, Reborn
 				i(94589, {	-- Blazeguard, Reborn
@@ -734,7 +734,7 @@ profession(164, { -- Blacksmithing
 			i(87405),	-- Unyielding Bloodplate
 		}),
 	}),
-	n(-158, { -- Warlords of Draenor
+	tier(6, { -- Warlords of Draenor
 		n(-319, { -- Weapons
 			i(128016, { -- Steelforged Essence
 				WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
@@ -762,7 +762,7 @@ profession(164, { -- Blacksmithing
 			}),
 		}),
 	}),
-	n(-159, { -- Legion
+	tier(7, { -- Legion
 		i(146667),	-- Rethu's Incessant Courage
 		i(123913),	-- Demonsteel Helm
 		i(123915),	-- Demonsteel Pauldrons

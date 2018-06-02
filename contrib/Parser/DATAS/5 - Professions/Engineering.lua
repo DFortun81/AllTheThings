@@ -116,7 +116,7 @@ profession(202, { -- Engineering
 		i(48933),	-- Wormhole Generator: Northrend
 		i(87215),	-- Wormhole Generator: Pandaria		
 	}),
-	n(-153, { -- Classic
+	tier(1, { -- Classic
 		i(18282),	-- Core Marksman Rifle
 		i(16004),	-- Dark Iron Rifle
 		i(4369),	-- Deadly Blunderbuss
@@ -154,7 +154,7 @@ profession(202, { -- Engineering
 		i(10724),	-- Gnomish Rocket Boots
 		i(7189),	-- Goblin Rocket Boots
 	}),
-	n(-154, { -- The Burning Crusade
+	tier(2, { -- The Burning Crusade
 		i(23746),	-- Adamantite Rifle
 		i(23742),	-- Fel Iron Musket
 		i(23747),	-- Felsteel Boomstick
@@ -194,7 +194,7 @@ profession(202, { -- Engineering
 		i(23824),	-- Rocket Boots Xtreme
 		i(35581),	-- Rocket Boots Xtreme Lite
 	}),
-	n(-155, { -- Wrath of the Lich King
+	tier(3, { -- Wrath of the Lich King
 		i(41168),	-- Armor Plated Combat Shotgun
 		i(39688),	-- Mark "S" Boomstick
 		i(44504),	-- Nesingwary 4000
@@ -211,7 +211,7 @@ profession(202, { -- Engineering
 		i(42553),	-- Visage Liquification Goggles
 		i(42550),	-- Weakness Spectralizers
 	}),
-	n(-156, { -- Cataclysm
+	tier(4, { -- Cataclysm
 		i(71077),	-- Extreme-Impact Hole Puncher
 		i(59598),	-- Finely-Tuned Throat Needler
 		i(59367),	-- Kickback 5000
@@ -225,7 +225,7 @@ profession(202, { -- Engineering
 		i(59359),	-- Reinforced Bio-Optic Killshades
 		i(59448),	-- Specialized Bio-Optic Killshades
 	}),
-	n(-157, { -- Mists of Pandaria
+	tier(5, { -- Mists of Pandaria
 		i(77527),	-- Big Game Hunter
 		i(77528),	-- Long-Range Trillium Sniper
 		i(77534),	-- Agile Retinal Armor
@@ -237,7 +237,7 @@ profession(202, { -- Engineering
 		i(77539),	-- Reinforced Retinal Armor
 		i(77538),	-- Specialized Retinal Armor
 	}),
-	n(-158, { -- Warlords of Draenor
+	tier(6, { -- Warlords of Draenor
 		i(128011, { -- Linkgrease Locksprocket
 			WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
 			WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades
@@ -246,7 +246,7 @@ profession(202, { -- Engineering
 			WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
 		}),
 	}),
-	n(-159, { -- Legion
+	tier(7, { -- Legion
 		i(132500),	-- Blink-Trigger Headgun
 		i(132502),	-- Bolt-Action Headgun
 		i(144333),	-- Chain Skullblasters

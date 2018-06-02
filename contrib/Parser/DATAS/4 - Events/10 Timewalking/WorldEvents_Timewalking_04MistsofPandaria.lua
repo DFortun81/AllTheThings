@@ -5,7 +5,7 @@ _.WorldEvents =
 {
 	n(-173, {  -- Timewalking
 		["groups"] = {
-			n(-157, { 	-- Mists of Pandaria
+			tier(5, { 	-- Mists of Pandaria
 				["groups"] = {
 					i(143776, { -- Shrouded Timewarped Coin
 						q(45563, { -- The Shrouded Coin

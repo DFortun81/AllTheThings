@@ -119,13 +119,13 @@ _.WorldEvents =
 	n(-62, { -- Stranglethorn Fishing Extravaganza
 	}),
 	n(-173, { -- Timewalking
-		n(-154, { -- Burning Crusade
+		tier(2, { -- Burning Crusade
 		}),
-		n(-155, { -- Wrath of the Lich King
+		tier(3, { -- Wrath of the Lich King
 		}),
-		n(-156, { -- Cataclysm
+		tier(4, { -- Cataclysm
 		}),
-		n(-157, { -- Mists of Pandaria
+		tier(5, { -- Mists of Pandaria
 		}),
 	}),
 };

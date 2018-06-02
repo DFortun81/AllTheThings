@@ -319,7 +319,7 @@ profession(197, { -- Tailoring
 			dr(10.0, i(90902)),	-- Imperial Silkworm
 		}),
 	}),
-	n(-153, {	-- Classic
+	tier(1, {	-- Classic
 		un(8, i(18405)),	-- Belt of the Archmage		
 		un(8, i(18413)),	-- Cloak of Warding
 		un(8, i(18407)),	-- Felcloth Gloves
@@ -505,7 +505,7 @@ profession(197, { -- Tailoring
 		i(6238),	-- Spidersilk Boots
 		i(6241),	-- Woolen Boots
 	}),
-	n(-154, {	-- The Burning Crusade
+	tier(2, {	-- The Burning Crusade
 		i(24267),	-- Battlecast Hood
 		i(24266),	-- Spellstrike Hood
 		i(24264),	-- Whitemend Hood
@@ -572,7 +572,7 @@ profession(197, { -- Tailoring
 		i(21853),	-- Netherweave Boots
 		i(32391),	-- Soulguard Slippers
 	}),
-	n(-155, {	-- Wrath of the Lich King
+	tier(3, {	-- Wrath of the Lich King
 		i(41546),	-- Duskweave Cowl
 		i(43971),	-- Frostsavage Cowl
 		i(41521),	-- Frostwoven Cowl
@@ -650,7 +650,7 @@ profession(197, { -- Tailoring
 		i(41985),	-- Silky Iceshard Boots
 		i(45566),	-- Spellslinger's Slippers
 	}),
-	n(-156, {	-- Cataclysm
+	tier(4, {	-- Cataclysm
 		i(54476),	-- Deathsilk Cowl
 		i(54485),	-- Spiritmend Cowl
 		i(75073),	-- Vicious Embersilk Cowl
@@ -697,7 +697,7 @@ profession(197, { -- Tailoring
 		i(75095),	-- Vicious Embersilk Boots
 		i(75087),	-- Vicious Fireweave Boots
 	}),
-	n(-157, {	-- Mists of Pandaria
+	tier(5, {	-- Mists of Pandaria
 		i(82429),	-- Contender's Satin Cowl
 		i(82421),	-- Contender's Silk Cowl
 		i(93616),	-- Crafted Dreadful Gladiator's Felweave Cowl
@@ -820,7 +820,7 @@ profession(197, { -- Tailoring
 		i(90473),	-- Windwool Boots
 		i(82403),	-- Windwool Boots
 	}),
-	n(-158, {	-- Warlords of Draenor
+	tier(6, {	-- Warlords of Draenor
 		n(-322, {	-- Cloak
 			i(128012, { -- Hexweave Essence
 				WOD_CRAFTED_ITEM(114819),	-- Brilliant Hexweave Cloak
@@ -844,7 +844,7 @@ profession(197, { -- Tailoring
 			}),
 		}),
 	}),
-	n(-159, {	-- Legion
+	tier(7, {	-- Legion
 		i(126998),	-- Imbued Silkweave Hood
 		i(126990),	-- Silkweave Hood
 		i(146666),	-- Celumbra, the Night's Dichotomy

@@ -10,7 +10,7 @@ profession(165, { -- Leatherworking
 		i(129960), -- Leather Pet Bed
 		i(129958), -- Leather Pet Leash
 	}),
-	n(-153, { 	-- Classic
+	tier(1, { 	-- Classic
 		nld({		-- Legacy
 			n(-322, {	-- Cloak
 				un(8, i(18509)),	-- Chromatic Cloak
@@ -228,7 +228,7 @@ profession(165, { -- Leatherworking
 			i(8185),	-- Turtle Scale Leggings
 		}),
 	}),
-	n(-154, { 	-- The Burning Crusade
+	tier(2, { 	-- The Burning Crusade
 		nld({ 		-- Legacy
 			n(-44, { 	-- Leather
 				un(5, i(29526)),	-- Primalstrike Belt
@@ -350,7 +350,7 @@ profession(165, { -- Leatherworking
 			i(29509),	-- Windstrike Gloves
 		}),
 	}),
-	n(-155, { 	-- Wrath of the Lich King
+	tier(3, { 	-- Wrath of the Lich King
 		n(-322, { 	-- Cloak
 			i(38441),	-- Cloak of Harsh Winds
 			i(41238),	-- Cloak of Tormented Skies
@@ -497,7 +497,7 @@ profession(165, { -- Leatherworking
 			i(43130),	-- Virulent Spaulders
 		}),
 	}),
-	n(-156, { 	-- Cataclysm
+	tier(4, { 	-- Cataclysm
 		n(-322, { 	-- Cloak
 			i(56518),	-- Cloak of Beasts
 			i(56519),	-- Cloak of War
@@ -585,7 +585,7 @@ profession(165, { -- Leatherworking
 			i(75116),	-- Vicious Dragonscale Shoulders
 		}),
 	}),
-	n(-157, { 	-- Mists of Pandaria
+	tier(5, { 	-- Mists of Pandaria
 		n(-322, { 	-- Cloak
 			i(85851),	-- Misthide Drape
 			i(85852),	-- Quick Strike Cloak
@@ -840,7 +840,7 @@ profession(165, { -- Leatherworking
 			i(85848),	-- Stormscale Shoulders
 		}),
 	}),
-	n(-158, { 	-- Warlords of Draenor
+	tier(6, { 	-- Warlords of Draenor
 		n(-322, { 	-- Cloak
 			i(128014, { -- Burnished Essence
 				WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
@@ -879,7 +879,7 @@ profession(165, { -- Leatherworking
 			}),
 		}),
 	}),
-	n(-159, { 	-- Legion
+	tier(7, { 	-- Legion
 		n(-349, { 	-- Cosmetic		
 			un(29, i(151791)),	-- Winter Boots
 		}),

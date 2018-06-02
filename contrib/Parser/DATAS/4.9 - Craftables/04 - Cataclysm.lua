@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	n(-156, { -- Cataclysm
+	tier(4, { -- Cataclysm
 		n(-181, { -- Blacksmithing
 			i(71992),	-- Bracers of Destructive Strength
 			i(70155),	-- Brainsplinter
