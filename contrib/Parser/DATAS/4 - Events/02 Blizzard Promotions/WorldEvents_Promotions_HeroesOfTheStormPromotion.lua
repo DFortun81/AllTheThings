@@ -9,9 +9,9 @@ _.WorldEvents =
 				ach(9926, {		-- Hero of the Storm
 					p(1639),		-- Graves
 				}),
-				ach(11425, {	-- Herald of Flames
+				un(3, ach(11425, {	-- Herald of Flames
 					un(3, i(143631)),	-- Primal Flamesaber
-				}),
+				})),
 			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",

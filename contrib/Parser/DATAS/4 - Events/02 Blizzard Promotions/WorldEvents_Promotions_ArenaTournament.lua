@@ -6,10 +6,10 @@ _.WorldEvents =
 	n(-65, {	-- Blizzard Promotions
 		["groups"] = {
 			n(-556, {	-- Arena Tournament
-				ach(3618, {	--Murkimus the Gladiator
+				un(3, ach(3618, {	-- Murkimus the Gladiator
 					un(3, i(45180)),	-- Murkimus' Little Spear (Murkimus the Gladiator)
 					un(3, i(46892)),	-- Murkimus' Tiny Spear (Murkimus the Gladiator)
-				}),
+				})),
 			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",
