@@ -261,7 +261,7 @@ _.PVP =
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 100-109 range, or Ashran quests.|r",
 			["lvl"] = 100,
 		}),
-		i(126919, { -- Champion's Stronbox		
+		i(126919, { -- Champion's Strongbox		
 			["groups"] = {	
 				i(141889), -- Glory of the Melee
 				i(141858), -- Soldier's Worth
@@ -269,7 +269,7 @@ _.PVP =
 			["races"] = ALLIANCE_ONLY,	
 			["u"] = 2,	
 		}),		
-		i(126920, { -- Champion's Stronbox		
+		i(126920, { -- Champion's Strongbox		
 			["groups"] = {	
 				i(141889), -- Glory of the Melee
 				i(141858), -- Soldier's Worth
@@ -277,7 +277,7 @@ _.PVP =
 			["races"] = HORDE_ONLY,	
 			["u"] = 2,	
 		}),		
-		i(126923, { -- Champion's Stronbox		
+		i(126923, { -- Champion's Strongbox		
 			["groups"] = {	
 				i(141889), -- Glory of the Melee
 				i(141858), -- Soldier's Worth
@@ -285,7 +285,7 @@ _.PVP =
 			["races"] = ALLIANCE_ONLY,	
 			["u"] = 2,	
 		}),		
-		i(126924, { -- Champion's Stronbox		
+		i(126924, { -- Champion's Strongbox		
 			["groups"] = {	
 				i(141889), -- Glory of the Melee
 				i(141858), -- Soldier's Worth
@@ -293,7 +293,7 @@ _.PVP =
 			["races"] = HORDE_ONLY,	
 			["u"] = 2,	
 		}),		
-		i(138469, { -- Champion's Stronbox		
+		i(138469, { -- Champion's Strongbox		
 			["groups"] = {	
 				i(141889), -- Glory of the Melee
 				i(141858), -- Soldier's Worth
@@ -301,7 +301,7 @@ _.PVP =
 			["races"] = HORDE_ONLY,	
 			["u"] = 2,	
 		}),		
-		i(138474, { -- Champion's Stronbox		
+		i(138474, { -- Champion's Strongbox		
 			["groups"] = {	
 				i(141889), -- Glory of the Melee
 				i(141858), -- Soldier's Worth
@@ -309,12 +309,19 @@ _.PVP =
 			["races"] = ALLIANCE_ONLY,	
 			["u"] = 2,	
 		}),		
-		i(151557, { -- Champion's Stronbox		
+		i(151557, { -- Champion's Strongbox		
 			["groups"] = {	
 				i(141889), -- Glory of the Melee
 				i(141858), -- Soldier's Worth
 			},	
 			["races"] = ALLIANCE_ONLY,	
-		}),		
+		}),
+		i(151558, { -- Champion's Strongbox		
+			["groups"] = {	
+				i(141889), -- Glory of the Melee
+				i(141858), -- Soldier's Worth
+			},	
+			["races"] = HORDE_ONLY,	
+		}),			
 	}),
 };
