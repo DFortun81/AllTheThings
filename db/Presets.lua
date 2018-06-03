@@ -141,7 +141,7 @@ AllTheThings.Presets = {
 		false, -- [32]
 		false, -- [33]
 		true, -- [34]
-		true, -- [35]
+		false, -- [35]
 		true, -- [36]
 		[103] = true,
 		[100] = true,
@@ -193,7 +193,7 @@ AllTheThings.Presets = {
 		true, -- [32]
 		true, -- [33]
 		true, -- [34]
-		true, -- [35]
+		false, -- [35]
 		true, -- [36]
 		[106] = true,
 		[101] = true,
@@ -297,7 +297,7 @@ AllTheThings.Presets = {
 		false, -- [32]
 		false, -- [33]
 		true, -- [34]
-		true, -- [35]
+		false, -- [35]
 		true, -- [36]
 		[103] = true,
 		[100] = true,
@@ -406,6 +406,7 @@ AllTheThings.Presets = {
 		[54] = false,
 		[55] = false,
 		[113] = false,
+		[35] = false,
 	},
 	["ROGUE"] = {
 		true, -- [1]
@@ -442,6 +443,7 @@ AllTheThings.Presets = {
 		true, -- [32]
 		true, -- [33]
 		true, -- [34]
+		false, -- [35]
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -496,6 +498,7 @@ AllTheThings.Presets = {
 		[54] = false,
 		[55] = false,
 		[113] = false,
+		[35] = false,
 	},
 	["WARLOCK"] = {
 		true, -- [1]
@@ -572,7 +575,7 @@ AllTheThings.Presets = {
 		true, -- [32]
 		true, -- [33]
 		true, -- [34]
-		true, -- [35]
+		false, -- [35]
 		true, -- [36]
 		[103] = true,
 		[100] = true,
