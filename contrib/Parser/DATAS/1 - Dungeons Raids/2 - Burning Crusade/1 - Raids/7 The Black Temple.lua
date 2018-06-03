@@ -62,7 +62,9 @@ _.Instances =
 						["groups"] = {
 							ach(958),	-- Sworn to the Deathsworn
 							ach(426, {	-- Warglaives of Azzinoth
-								["f"] = 35,	-- Warglaives
+								["g"] = {
+								},
+								["classes"] = { 6, 12, 10, 4, 1 },	-- DK, DH, Monk, Rogue, Warrior
 							}),
 							cr(22887, e(1582, {	-- High Warlord Naj'entus
 								i(122104),	-- Leviathan Egg (PET!)
