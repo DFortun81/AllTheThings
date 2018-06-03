@@ -402,8 +402,12 @@ _.Instances = { tier(1, {	-- Classic
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18564, {	-- Bindings of the Windseeker (Right)
-					ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
-						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
+					["g"] = {
+						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
+							ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
+						}),
+					},
+					["f"] = 25,	-- One-Handed Swords
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(17105),	-- Aurastone Hammer
@@ -464,8 +468,12 @@ _.Instances = { tier(1, {	-- Classic
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18563, {	-- Bindings of the Windseeker (Left)
-					ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
-						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
+					["g"] = {
+						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
+							ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
+						}),
+					},
+					["f"] = 25,	-- One-Handed Swords
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(19142),	-- Fire Runed Grimoire
@@ -569,8 +577,12 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(138018),	-- Clothes Chest Pattern: Molten Core
 				i(17204, {	-- Eye of Sulfuras
-					ach(429),	-- Sulfuras, Hand of Ragnaros
-						i(17182), 	-- Sulfuras, Hand of Ragnaros
+					["g"] = {
+						i(17182, { 	-- Sulfuras, Hand of Ragnaros
+							ach(429),	-- Sulfuras, Hand of Ragnaros
+						}),
+					},
+					["f"] = 24,	-- Two-Handed Maces
 				}),
 				i(138833),	-- Illusion: Flametongue (Shaman)
 				i(17076),	-- Bonereaver's Edge
