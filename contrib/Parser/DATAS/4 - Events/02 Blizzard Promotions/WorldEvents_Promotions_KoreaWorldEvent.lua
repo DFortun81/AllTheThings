@@ -7,9 +7,9 @@ _.WorldEvents =
 		["groups"] = {
 			n(-557, {	-- Korea World Event
 				n(-549, {	--Korea Only
-					ach(3896, {	-- Onyx Panther
+					un(3, ach(3896, {	-- Onyx Panther
 						un(3, i(48527)),	-- Enchanted Onyx (Onyx Panther)
-					}),
+					})),
 				}),
 			}),
 		},

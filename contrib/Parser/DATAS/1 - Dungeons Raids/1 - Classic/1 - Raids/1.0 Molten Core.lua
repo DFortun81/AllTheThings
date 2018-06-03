@@ -402,12 +402,12 @@ _.Instances = { tier(1, {	-- Classic
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18564, {	-- Bindings of the Windseeker (Right)
-					["g"] = {
+					["groups"] = {
 						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
 							ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
 						}),
 					},
-					["f"] = 25,	-- One-Handed Swords
+					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 }, -- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(17105),	-- Aurastone Hammer
@@ -468,12 +468,12 @@ _.Instances = { tier(1, {	-- Classic
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18563, {	-- Bindings of the Windseeker (Left)
-					["g"] = {
+					["groups"] = {
 						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
 							ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
 						}),
 					},
-					["f"] = 25,	-- One-Handed Swords
+					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 }, -- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(19142),	-- Fire Runed Grimoire
@@ -560,7 +560,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(11502, e(1528, { -- Ragnaros
 				ach(686),	-- Molten Core
-				ach(8820, { -- 10th Anniversary
+				un(2, ach(8820, { -- 10th Anniversary
 					["groups"] = {
 						ach(9550, { -- Boldly, You Sought the Power of Ragnaros
 							un(9, i(115484)), -- Core Hound Chain
@@ -574,15 +574,15 @@ _.Instances = { tier(1, {	-- Classic
 						un(7, i(118574)), -- Hatespark the Tiny
 					},
 					["u"] = 12,
-				}),
+				})),
 				i(138018),	-- Clothes Chest Pattern: Molten Core
 				i(17204, {	-- Eye of Sulfuras
-					["g"] = {
+					["groups"] = {
 						i(17182, { 	-- Sulfuras, Hand of Ragnaros
 							ach(429),	-- Sulfuras, Hand of Ragnaros
 						}),
 					},
-					["f"] = 24,	-- Two-Handed Maces
+					["classes"] = { 6, 11, 2, 7, 1 }, -- Death Knight / Druid / Paladin / Shaman / Warrior
 				}),
 				i(138833),	-- Illusion: Flametongue (Shaman)
 				i(17076),	-- Bonereaver's Edge

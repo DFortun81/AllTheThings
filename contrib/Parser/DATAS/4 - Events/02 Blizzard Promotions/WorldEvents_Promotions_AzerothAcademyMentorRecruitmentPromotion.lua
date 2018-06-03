@@ -6,9 +6,12 @@ _.WorldEvents =
 	n(-65, {	-- Blizzard Promotions
 		["groups"] = {
 			n(-569, {	-- Azeroth Academy Mentor Recruitment Promotion
-				n(-548, {	-- China Only
-					i(103630),	-- Lucky Riding Turtle
-				}),
+				["groups"] = {
+					n(-548, {	-- China Only
+						i(103630),	-- Lucky Riding Turtle
+					}),
+				},
+				["u"] = 3,
 			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",

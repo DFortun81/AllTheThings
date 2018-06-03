@@ -9,23 +9,23 @@ _.WorldEvents =
 				["groups"] = {
 					n(-521, { -- Burning Crusade
 						["groups"] = {
-							ach(2079, { -- Tabard of the Protector
+							un(3, ach(2079, { -- Tabard of the Protector
 								["groups"] = {
 									un(3, i(28788)), -- Tabard of the Protector
 								},
 								["collectible"] = false,
-							}),
+							})),
 						},
 						["icon"] = "Interface\\Icons\\expansionicon_burningcrusade",
 					}),
 					n(-522, { -- Wrath of the Lich King
 						["groups"] = {
-							ach(2116, { -- Tabard of the Argent Dawn
+							un(3, ach(2116, { -- Tabard of the Argent Dawn
 								["groups"] = {
 									un(3, i(22999)),	-- Argent Dawn Tabard
 								},
 								["collectible"] = false,
-							}),
+							})),
 							n(28194, { -- Prince Tenris Mirkblood
 								un(3, i(38658)), -- Vampiric Batling Pet
 								un(9, i(39769)), -- Arcanite Ripper
@@ -71,18 +71,18 @@ _.WorldEvents =
 					}),
 					n(-523, { -- Cataclysm
 						["groups"] = {
-							ach(4786, { -- Operation: Gnomeregan
+							un(3, ach(4786, { -- Operation: Gnomeregan
 								["groups"] = {
 									un(3, i(54651)), -- Gnomeregan Pride Toy
 								},
 								["collectible"] = false,
-							}),
-							ach(4790, { -- Zalazane's Fall
+							})),
+							un(3, ach(4790, { -- Zalazane's Fall
 								["groups"] = {
 									un(3, i(54653)), -- Darkspear Pride Toy
 								},
 								["collectible"] = false,
-							}),
+							})),
 						ach(4887, { -- Tripping the Rifts
 							["groups"] = {
 								un(3, i(53496)), -- Barrier of the Earth Princess
@@ -104,20 +104,20 @@ _.WorldEvents =
 					}),
 					tier(5, { -- Mists of Pandaria
 						["groups"] = {
-							ach(7467, { -- Theramore's Fall
+							un(3, ach(7467, { -- Theramore's Fall
 								["groups"] = {
 									un(4, i(89196)), -- Theramore Tabard
 								},
 								["collectible"] = false,
 								["description"] = "Can be bought from Zidormi in Duskwallow Marsh if you completed the level 85 version of the Theramore's Fall Scenario.",
-							}),
-							ach(7468, { -- Theramore's Fall
+							})),
+							un(3, ach(7468, { -- Theramore's Fall
 								["groups"] = {
 									un(4, i(89205)), -- Mini Mana Bomb Toy
 								},
 								["collectible"] = false,
 								["description"] = "Can be bought from Zidormi in Duskwallow Marsh if you completed the level 85 version of the Theramore's Fall Scenario.",
-							}),
+							})),
 						},
 						["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
 					}),

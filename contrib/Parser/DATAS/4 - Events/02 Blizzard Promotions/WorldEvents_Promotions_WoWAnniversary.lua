@@ -7,28 +7,28 @@ _.WorldEvents =
 		["groups"] = {
 			n(-500, { 	-- WoW Anniversary
 				["groups"] = {
-					ach(2398, { -- 4th Anniverary
+					un(36, ach(2398, { -- 4th Anniverary
 						un(36, i(44819)),  -- Baby Blizzard Bear (Pet)
-					}),
-					ach(4400, { -- 5th Anniverary
+					})),
+					un(36, ach(4400, { -- 5th Anniverary
 						un(36, i(49362)),  -- Onyxian Whelpling (Pet)
-					}),
-					ach(8820, { -- 10th Anniversary
-						ach(9550, { -- Boldly, You Sought the Power of Ragnaros
+					})),
+					un(36, ach(8820, { -- 10th Anniversary
+						un(36, ach(9550, { -- Boldly, You Sought the Power of Ragnaros
 							un(9, i(115484)), -- Core Hound Chain
 							un(36, i(115301)), -- Molten Corgi
 							un(36, i(118942)), -- Crown of Power
 							un(36, i(118941)), -- Crown of Woe
 							un(36, i(118939)), -- Crown of Destruction
 							un(36, i(118940)), -- Crown of Desolation
-						}),
+						})),
 						un(31, i(118572)), -- Illusion: Flames of Ragnaros
 						un(7, i(118574)), -- Hatespark the Tiny
-					}),
-					ach(10741, { -- 12th Anniversary
+					})),
+					un(36, ach(10741, { -- 12th Anniversary
 						un(31, i(136925)), -- Corgi Pup (Pet)
-					}),
-					ach(11848, { -- 13th Anniversary
+					})),
+					un(36, ach(11848, { -- 13th Anniversary
 						n(-7, { -- World Bosses
 							n(121820, { -- Azuregos
 								["groups"] = {
@@ -146,7 +146,7 @@ _.WorldEvents =
 								un(31, i(147885)), -- Bronze-Tinted Sunglasses
 							})),
 						}),
-					}),
+					})),
 				},
 				["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 			}),

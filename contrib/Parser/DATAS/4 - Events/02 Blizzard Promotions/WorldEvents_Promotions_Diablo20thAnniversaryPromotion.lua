@@ -26,6 +26,7 @@ _.WorldEvents =
 					}),
 				}, 
 				["achievementID"] = 11395, -- Diablo's 20th Anniversary
+				["u"] = 3,
 			}),
 		},
 	}),

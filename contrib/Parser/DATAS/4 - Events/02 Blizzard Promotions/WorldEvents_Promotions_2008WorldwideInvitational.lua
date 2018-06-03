@@ -6,9 +6,9 @@ _.WorldEvents =
 	n(-65, {	-- Blizzard Promotions
 		["groups"] = {
 			n(-562, {	-- 2008 Worldwide Invitational
-				ach(414, {	-- Tyrael's Hilt
-					un(4, i(39656)),	-- Tyrael's Hilt (Mini Tyrael)
-				}),
+				un(3, ach(414, {	-- Tyrael's Hilt
+					un(3, i(39656)),	-- Tyrael's Hilt (Mini Tyrael)
+				})),
 			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",
