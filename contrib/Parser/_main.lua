@@ -525,7 +525,7 @@ dr = function(dropRate, t)										-- Add a Drop Rate to an object.
 	end
 end
 h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
-lvl = function(lvl, t) t.lvl = id; return t; end				-- Add a Level Requirement to an object.
+lvl = function(lvl, t) t.lvl = lvl; return t; end				-- Add a Level Requirement to an object.
 modID = function(modID, t) t.modID = modID; return t; end		-- Add a Mod ID to an object.
 qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object 
 qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object

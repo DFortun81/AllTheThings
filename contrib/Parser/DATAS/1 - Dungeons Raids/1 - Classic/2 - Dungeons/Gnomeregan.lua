@@ -287,6 +287,7 @@ _.Instances =
 						["description"] = "This is a rare that is not always present.",
 					}),
 					n(113621, {			-- Endgineer Omegaplugg
+						["lvl"] = 110,
 						["groups"] = {
 							i(141331), -- Vial of Green Goo (TOY!)
 						},
