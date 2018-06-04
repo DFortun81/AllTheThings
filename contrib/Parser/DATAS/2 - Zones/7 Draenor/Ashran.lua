@@ -5,120 +5,1737 @@ _.Zones =
 {
 	m(962, { 	-- Draenor
 		m(978, {	-- Ashran
-			["groups"] = {	
---[[			
-				n(-17, { 	-- Quests				
-					qa( 35872),	-- A Bunch of Artifact Fragments
-					qh( 36064),	-- A Bunch of Artifact Fragments
-					qa( 35690),	-- A Bunch of Artifact Fragments
-					qh( 36067),	-- A Bunch of Artifact Fragments
-					qh( 36031),	-- A Bunch of Artifact Fragments
-					qa( 35264),	-- A Bunch of Artifact Fragments
-					qa( 35868),	-- A Bunch of Artifact Fragments
-					qh( 36026),	-- A Bunch of Artifact Fragments
-					qa( 35638),	-- A Few Artifact Fragments
-					qh( 36063),	-- A Few Artifact Fragments
-					qa( 35867),	-- A Few Artifact Fragments
-					q(35866),	-- A Few Artifact Fragments
-					qa( 35871),	-- A Few Artifact Fragments
-					qa( 35689),	-- A Few Artifact Fragments
-					qh( 36030),	-- A Few Artifact Fragments
-					qh( 36024),	-- A Few Artifact Fragments
-					qh( 36066),	-- A Few Artifact Fragments
-					qa( 36630),	-- A Surly Dwarf
-					qh( 36025),	-- A TON of Artifact Fragments
-					qa( 35873),	-- A TON of Artifact Fragments
-					qh( 36068),	-- A TON of Artifact Fragments
-					qh( 36032),	-- A TON of Artifact Fragments
-					qa( 35639),	-- A TON of Artifact Fragments
-					qa( 35691),	-- A TON of Artifact Fragments
-					qh( 36065),	-- A TON of Artifact Fragments
-					qa( 35869),	-- A TON of Artifact Fragments
-					q(37478),	-- Amphitheater of Annihilation
-					q(45180),	-- An Island of War
-					q(37476),	-- Ashmaul Burial Grounds
-					qa( 36624),	-- Ashran Appearance
-					qh( 36706),	-- Ashran Appearance
-					q(39292),	-- Ashran Dominance
-					qh( 38923),	-- Ashran Dominance
-					qa( 38925),	-- Ashran Dominance
-					q(39263),	-- Ashran Excavation
-					qa( 35937),	-- Blood Elf Ear
-					q(39264),	-- Bonus Objective: Ashran Excavation
-					q(37479),	-- Bonus Objective: Kill Alliance Leaders
-					q(37480),	-- Bonus Objective: Kill Alliance Leaders
-					q(37481),	-- Bonus Objective: Kill Horde Leaders
-					q(37482),	-- Bonus Objective: Kill Horde Leaders
-					q(37299),	-- Bonus Objective: Kill Stormshield Priests
-					q(37298),	-- Bonus Objective: Kill Warspear Priests
-					q(37477),	-- Brute's Rise
-					q(35578),	-- Building an Ancient of War
-					qh( 36709),	-- Burning Beauty
-					qh( 37484),	-- Captain's Whistle
-					qa( 37483),	-- Captian's Whistle
-					qh( 38924),	-- Continue the Domination
-					qa( 38926),	-- Continue the Domination
-					qa( 36633),	-- Delvar Ironfist
-					qh( 39233),	-- Don't Hate, Excavate!
-					qa( 39217),	-- Don't Hate, Excavate!
-					qh( 36041),	-- Draenei Tail
-					qh( 36034),	-- Dwarf Spine
-					qa( 35927),	-- Forsaken Brains
-					q(36492),	-- Garrison Pet Battle
-					qa( 35938),	-- Goblin Nose
-					qa( 36626),	-- Host Howell
-					qh( 36042),	-- Human Bone Chip
-					qa( 36629),	-- Inspiring Ashran
-					qh( 36708),	-- Inspiring Ashran
-					qa( 36123),	-- Into The Wilderness
-					qh( 36228),	-- Into The Wilderness
-					q(37297),	-- Kill Jeron Emberfall
-					q(37295),	-- Kill Rylai Crestfall
-					q(37475),	-- Molten Quarry
-					qa( 35940),	-- Orc Tooth
-					qa( 35942),	-- Pandaren Hide
-					qh( 36038),	-- Pandaren Hide
-					qh( 36935),	-- Phantom Potion
-					qa( 36791),	-- Phantom Potion
-					qh( 36197),	-- Reporting For Duty
-					qa( 36130),	-- Reporting For Duty
-					qa( 37288),	-- Resources in Ashran
-					q(36055),	-- Sealing Fate: Apexis Crystals
-					q(37458),	-- Sealing Fate: Extended Honor
-					q(36056),	-- Sealing Fate: Garrison Resources
-					q(36054),	-- Sealing Fate: Gold
-					q(37452),	-- Sealing Fate: Heap of Apexis Crystals
-					q(36057),	-- Sealing Fate: Honor
-					q(37455),	-- Sealing Fate: Immense Fortune of Gold
-					q(37459),	-- Sealing Fate: Monumental Honor
-					q(37453),	-- Sealing Fate: Mountain of Apexis Crystals
-					q(37454),	-- Sealing Fate: Piles of Gold
-					q(37456),	-- Sealing Fate: Stockpiled Garrison Resources
-					q(37457),	-- Sealing Fate: Tremendous Garrison Resources
-					qh( 36033),	-- Severed Night Elf Head
-					qa( 39096),	-- Slay Them All!
-					qh( 39090),	-- Slay Them All!
-					qa( 36127),	-- Survey Ashran
-					qh( 36226),	-- Survey Ashran
-					qa( 35939),	-- Tauren Hoof
-					qh( 35243),	-- The Dark Lady's Gift
-					qh( 36227),	-- The Road of Glory
-					qa( 36125),	-- The Road of Glory
-					q(38008),	-- The Road of Glory
-					qa( 35941),	-- Troll Feet
-					qh( 36040),	-- Tuft of Gnome Hair
-					qa( 36133),	-- Uncovering the Artifact Fragments				
-					qh( 36198),	-- Uncovering the Artifact Fragments
-					qh( 37290), -- Upgrades in Ashran
-					qa( 36741),	-- Vintage Free Action Potion
-					qh( 36741),	-- Vintage Free Action Potion
-					qh( 36707),	-- Warspear Welcome
-					qa( 36119),	-- Welcome to Ashran
-					qh( 36196),	-- Welcome to Ashran
-					qh( 36884),	-- Worgen Snout
+			["groups"] = {
+				n(-17, { -- Quests
+					qa(35872, {	-- A Bunch of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36064, {	-- A Bunch of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35690, {	-- A Bunch of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36067, {	-- A Bunch of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36031, {	-- A Bunch of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35264, {	-- A Bunch of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35868, {	-- A Bunch of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36026, {	-- A Bunch of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35638, {	-- A Few Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36063, {	-- A Few Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35867, {	-- A Few Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35871, {	-- A Few Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35689, {	-- A Few Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36030, {	-- A Few Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36024, {	-- A Few Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36066, {	-- A Few Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(36630, {	-- A Surly Dwarf
+						["groups"] = {
+						},
+						["sourceQuest"] = 36629, -- Inspiring Ashran
+					}),
+					qh(36025, {	-- A TON of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35873, {	-- A TON of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36068, {	-- A TON of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36032, {	-- A TON of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35639, {	-- A TON of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35691, {	-- A TON of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qh(36065, {	-- A TON of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(35869, {	-- A TON of Artifact Fragments
+						["groups"] = {
+						},
+						["repeatable"] = true,
+					}),
+					qa(38925, { -- Ashran Dominance
+						["groups"] = {
+							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
+								["groups"] = {
+									i(135578), -- Battle Touched Banner
+									i(135568), -- Battle Touched Blood of the Fallen
+									i(135574), -- Battle Touched Blossom
+									i(135573), -- Battle Touched Chain Link
+									i(135565), -- Battle Touched Elemental Spark
+									i(135571), -- Battle Touched Ember
+									i(135576), -- Battle Touched Fetish
+									i(135570), -- Battle Touched Helfrost
+									i(135569), -- Battle Touched Infernal Shard
+									i(135572), -- Battle Touched Martyr Stone
+									i(134696), -- Cascading Amice
+									i(134694), -- Cascading Cord
+									i(134697), -- Cascading Cuffs
+									i(134695), -- Cascading Trousers
+									i(134714), -- Crushing Armplates
+									i(134711), -- Crushing Girdle
+									i(134712), -- Crushing Legguards
+									i(134713), -- Crushing Pauldrons
+									i(134692), -- Enveloping Accolade
+									i(134715), -- Enveloping Badge
+									i(134716), -- Enveloping Cloak
+									i(134698), -- Enveloping Distinction
+									i(134709), -- Enveloping Pendant
+									i(134707), -- Surging Armbands
+									i(134705), -- Surging Chain Leggings
+									i(134706), -- Surging Spaulders
+									i(134704), -- Surging Waistguard
+									i(134700), -- Swarming Belt
+									i(134703), -- Swarming Bindings
+									i(134701), -- Swarming Legguards
+									i(134702), -- Swarming Shoulders
+								},
+							}),
+						},
+						["repeatable"] = true,
+					}),
+					qh(98923, { -- Ashran Dominance
+						["groups"] = {
+							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
+								["groups"] = {
+									i(135578), -- Battle Touched Banner
+									i(135568), -- Battle Touched Blood of the Fallen
+									i(135574), -- Battle Touched Blossom
+									i(135573), -- Battle Touched Chain Link
+									i(135565), -- Battle Touched Elemental Spark
+									i(135571), -- Battle Touched Ember
+									i(135576), -- Battle Touched Fetish
+									i(135570), -- Battle Touched Helfrost
+									i(135569), -- Battle Touched Infernal Shard
+									i(135572), -- Battle Touched Martyr Stone
+									i(134696), -- Cascading Amice
+									i(134694), -- Cascading Cord
+									i(134697), -- Cascading Cuffs
+									i(134695), -- Cascading Trousers
+									i(134714), -- Crushing Armplates
+									i(134711), -- Crushing Girdle
+									i(134712), -- Crushing Legguards
+									i(134713), -- Crushing Pauldrons
+									i(134692), -- Enveloping Accolade
+									i(134715), -- Enveloping Badge
+									i(134716), -- Enveloping Cloak
+									i(134698), -- Enveloping Distinction
+									i(134709), -- Enveloping Pendant
+									i(134707), -- Surging Armbands
+									i(134705), -- Surging Chain Leggings
+									i(134706), -- Surging Spaulders
+									i(134704), -- Surging Waistguard
+									i(134700), -- Swarming Belt
+									i(134703), -- Swarming Bindings
+									i(134701), -- Swarming Legguards
+									i(134702), -- Swarming Shoulders
+								},
+							}),
+						},
+						["repeatable"] = true,
+					}),
+					qa(36626, { -- Host Howell
+						["groups"] = {
+						},
+						["sourceQuest"] = 36624, -- Ashran Appearance
+					}),
+					qa(36629, { -- Inspiring Ashran
+						["groups"] = {
+						},
+						["sourceQuest"] = 36626, -- Host Howell
+					}),
+					qa(39096, { -- Slay Them All!
+						["groups"] = {
+							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
+								["groups"] = {
+									i(135578), -- Battle Touched Banner
+									i(135568), -- Battle Touched Blood of the Fallen
+									i(135574), -- Battle Touched Blossom
+									i(135573), -- Battle Touched Chain Link
+									i(135565), -- Battle Touched Elemental Spark
+									i(135571), -- Battle Touched Ember
+									i(135576), -- Battle Touched Fetish
+									i(135570), -- Battle Touched Helfrost
+									i(135569), -- Battle Touched Infernal Shard
+									i(135572), -- Battle Touched Martyr Stone
+									i(134696), -- Cascading Amice
+									i(134694), -- Cascading Cord
+									i(134697), -- Cascading Cuffs
+									i(134695), -- Cascading Trousers
+									i(134714), -- Crushing Armplates
+									i(134711), -- Crushing Girdle
+									i(134712), -- Crushing Legguards
+									i(134713), -- Crushing Pauldrons
+									i(134692), -- Enveloping Accolade
+									i(134715), -- Enveloping Badge
+									i(134716), -- Enveloping Cloak
+									i(134698), -- Enveloping Distinction
+									i(134709), -- Enveloping Pendant
+									i(134707), -- Surging Armbands
+									i(134705), -- Surging Chain Leggings
+									i(134706), -- Surging Spaulders
+									i(134704), -- Surging Waistguard
+									i(134700), -- Swarming Belt
+									i(134703), -- Swarming Bindings
+									i(134701), -- Swarming Legguards
+									i(134702), -- Swarming Shoulders
+								},
+							}),
+						},
+						["repeatable"] = true,
+					}),
+					qh(39090, { -- Slay Them All!
+						["groups"] = {
+							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
+								["groups"] = {
+									i(135578), -- Battle Touched Banner
+									i(135568), -- Battle Touched Blood of the Fallen
+									i(135574), -- Battle Touched Blossom
+									i(135573), -- Battle Touched Chain Link
+									i(135565), -- Battle Touched Elemental Spark
+									i(135571), -- Battle Touched Ember
+									i(135576), -- Battle Touched Fetish
+									i(135570), -- Battle Touched Helfrost
+									i(135569), -- Battle Touched Infernal Shard
+									i(135572), -- Battle Touched Martyr Stone
+									i(134696), -- Cascading Amice
+									i(134694), -- Cascading Cord
+									i(134697), -- Cascading Cuffs
+									i(134695), -- Cascading Trousers
+									i(134714), -- Crushing Armplates
+									i(134711), -- Crushing Girdle
+									i(134712), -- Crushing Legguards
+									i(134713), -- Crushing Pauldrons
+									i(134692), -- Enveloping Accolade
+									i(134715), -- Enveloping Badge
+									i(134716), -- Enveloping Cloak
+									i(134698), -- Enveloping Distinction
+									i(134709), -- Enveloping Pendant
+									i(134707), -- Surging Armbands
+									i(134705), -- Surging Chain Leggings
+									i(134706), -- Surging Spaulders
+									i(134704), -- Surging Waistguard
+									i(134700), -- Swarming Belt
+									i(134703), -- Swarming Bindings
+									i(134701), -- Swarming Legguards
+									i(134702), -- Swarming Shoulders
+								},
+							}),
+						},
+						["repeatable"] = true,
+					}),
+					i(112128, { -- Blood Elf Ear
+						["groups"] = {
+							i(128216, { -- Dented Ashmaul Strongbox
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126255),	-- Warmongering Aspirant's Accolade of Victory
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126206),	-- Warmongering Aspirant's Band of Contemplation
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126205),	-- Warmongering Aspirant's Band of Meditation
+								i(126204),	-- Warmongering Aspirant's Band of Prowess
+								i(126207),	-- Warmongering Aspirant's Belt of Prowess
+								i(126209),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126208),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126194),	-- Warmongering Aspirant's Chain Armor
+								i(126195),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126197),	-- Warmongering Aspirant's Chain Leggings
+								i(126198),	-- Warmongering Aspirant's Chain Spaulders
+								i(126247),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126246),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126181),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126183),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126189),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126190),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126191),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126193),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126192),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126186),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126187),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126188),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126262),	-- Warmongering Aspirant's Felweave Amice
+								i(126259),	-- Warmongering Aspirant's Felweave Cowl
+								i(126258),	-- Warmongering Aspirant's Felweave Handguards
+								i(126261),	-- Warmongering Aspirant's Felweave Raiment
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126218),	-- Warmongering Aspirant's Ironskin Gloves
+								i(126219),	-- Warmongering Aspirant's Ironskin Helm
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126222),	-- Warmongering Aspirant's Ironskin Tunic
+								i(126237),	-- Warmongering Aspirant's Leather Gloves
+								i(126238),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126240),	-- Warmongering Aspirant's Leather Spaulders
+								i(126236),	-- Warmongering Aspirant's Leather Tunic
+								i(126178),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126202),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126264),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126265),	-- Warmongering Aspirant's Plate Helm
+								i(126266),	-- Warmongering Aspirant's Plate Legguards
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126180),	-- Warmongering Aspirant's Ring of Prowess
+								i(126242),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126243),	-- Warmongering Aspirant's Ringmail Helm
+								i(126231),	-- Warmongering Aspirant's Satin Gloves
+								i(126232),	-- Warmongering Aspirant's Satin Hood
+								i(126233),	-- Warmongering Aspirant's Satin Leggings
+								i(126235),	-- Warmongering Aspirant's Satin Mantle
+								i(126234),	-- Warmongering Aspirant's Satin Robe
+								i(126223),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126224),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126225),	-- Warmongering Aspirant's Scaled Helm
+								i(126226),	-- Warmongering Aspirant's Scaled Legguards
+								i(126227),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127120),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126248),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126251),	-- Warmongering Aspirant's Signet of Dedication
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126214),	-- Warmongering Aspirant's Silk Amice
+								i(126211),	-- Warmongering Aspirant's Silk Cowl
+								i(126210),	-- Warmongering Aspirant's Silk Handguards
+								i(126213),	-- Warmongering Aspirant's Silk Robe
+								i(126212),	-- Warmongering Aspirant's Silk Trousers
+								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
+								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+							}),
+						},
+						["questID"] = 35937, -- Blood Elf Ear
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(112121, { -- Draenei Tail
+						["groups"] = {
+							i(128215, { -- Dented Ashmaul Strongbox
+								i(134705),	-- Surging Chain Leggings
+								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126731),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126734),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126733),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126732),	-- Warmongering Aspirant's Accolade of Victory
+								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126683),	-- Warmongering Aspirant's Band of Contemplation
+								i(126680),	-- Warmongering Aspirant's Band of Cruelty
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126682),	-- Warmongering Aspirant's Band of Meditation
+								i(126681),	-- Warmongering Aspirant's Band of Prowess
+								i(126684),	-- Warmongering Aspirant's Belt of Prowess
+								i(126686),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126685),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126654),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126671),	-- Warmongering Aspirant's Chain Armor
+								i(126672),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126673),	-- Warmongering Aspirant's Chain Helm
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126674),	-- Warmongering Aspirant's Chain Leggings
+								i(126675),	-- Warmongering Aspirant's Chain Spaulders
+								i(126724),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126727),	-- Warmongering Aspirant's Choker of Endurance
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126723),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126726),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126658),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126660),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126666),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126667),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126668),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126670),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126669),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126676),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126677),	-- Warmongering Aspirant's Drape of Meditation
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126663),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126664),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126665),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126739),	-- Warmongering Aspirant's Felweave Amice
+								i(126736),	-- Warmongering Aspirant's Felweave Cowl
+								i(126735),	-- Warmongering Aspirant's Felweave Handguards
+								i(126738),	-- Warmongering Aspirant's Felweave Raiment
+								i(126737),	-- Warmongering Aspirant's Felweave Trousers
+								i(126693),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126705),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126696),	-- Warmongering Aspirant's Ironskin Helm
+								i(126697),	-- Warmongering Aspirant's Ironskin Legguards
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126714),	-- Warmongering Aspirant's Leather Gloves
+								i(126715),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126716),	-- Warmongering Aspirant's Leather Legguards
+								i(126717),	-- Warmongering Aspirant's Leather Spaulders
+								i(126713),	-- Warmongering Aspirant's Leather Tunic
+								i(126655),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126678),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126679),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126740),	-- Warmongering Aspirant's Plate Chestpiece
+								i(126741),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126742),	-- Warmongering Aspirant's Plate Helm
+								i(126743),	-- Warmongering Aspirant's Plate Legguards
+								i(126744),	-- Warmongering Aspirant's Plate Shoulders
+								i(126656),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126657),	-- Warmongering Aspirant's Ring of Prowess
+								i(126718),	-- Warmongering Aspirant's Ringmail Armor
+								i(126719),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126720),	-- Warmongering Aspirant's Ringmail Helm
+								i(126721),	-- Warmongering Aspirant's Ringmail Leggings
+								i(126722),	-- Warmongering Aspirant's Ringmail Spaulders
+								i(126708),	-- Warmongering Aspirant's Satin Gloves
+								i(126709),	-- Warmongering Aspirant's Satin Hood
+								i(126710),	-- Warmongering Aspirant's Satin Leggings
+								i(126712),	-- Warmongering Aspirant's Satin Mantle
+								i(126711),	-- Warmongering Aspirant's Satin Robe
+								i(126700),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126701),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126702),	-- Warmongering Aspirant's Scaled Helm
+								i(126703),	-- Warmongering Aspirant's Scaled Legguards
+								i(126704),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127121),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126725),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+							}),
+						},
+						["questID"] = 36041, -- Draenei Tail
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+					}),
+					i(112126, { -- Dwarf Spine
+						["groups"] = {
+							i(128215, { -- Dented Ashmaul Strongbox
+								i(134705),	-- Surging Chain Leggings
+								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126731),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126734),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126733),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126732),	-- Warmongering Aspirant's Accolade of Victory
+								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126683),	-- Warmongering Aspirant's Band of Contemplation
+								i(126680),	-- Warmongering Aspirant's Band of Cruelty
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126682),	-- Warmongering Aspirant's Band of Meditation
+								i(126681),	-- Warmongering Aspirant's Band of Prowess
+								i(126684),	-- Warmongering Aspirant's Belt of Prowess
+								i(126686),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126685),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126654),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126671),	-- Warmongering Aspirant's Chain Armor
+								i(126672),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126673),	-- Warmongering Aspirant's Chain Helm
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126674),	-- Warmongering Aspirant's Chain Leggings
+								i(126675),	-- Warmongering Aspirant's Chain Spaulders
+								i(126724),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126727),	-- Warmongering Aspirant's Choker of Endurance
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126723),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126726),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126658),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126660),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126666),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126667),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126668),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126670),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126669),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126676),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126677),	-- Warmongering Aspirant's Drape of Meditation
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126663),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126664),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126665),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126739),	-- Warmongering Aspirant's Felweave Amice
+								i(126736),	-- Warmongering Aspirant's Felweave Cowl
+								i(126735),	-- Warmongering Aspirant's Felweave Handguards
+								i(126738),	-- Warmongering Aspirant's Felweave Raiment
+								i(126737),	-- Warmongering Aspirant's Felweave Trousers
+								i(126693),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126705),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126696),	-- Warmongering Aspirant's Ironskin Helm
+								i(126697),	-- Warmongering Aspirant's Ironskin Legguards
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126714),	-- Warmongering Aspirant's Leather Gloves
+								i(126715),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126716),	-- Warmongering Aspirant's Leather Legguards
+								i(126717),	-- Warmongering Aspirant's Leather Spaulders
+								i(126713),	-- Warmongering Aspirant's Leather Tunic
+								i(126655),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126678),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126679),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126740),	-- Warmongering Aspirant's Plate Chestpiece
+								i(126741),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126742),	-- Warmongering Aspirant's Plate Helm
+								i(126743),	-- Warmongering Aspirant's Plate Legguards
+								i(126744),	-- Warmongering Aspirant's Plate Shoulders
+								i(126656),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126657),	-- Warmongering Aspirant's Ring of Prowess
+								i(126718),	-- Warmongering Aspirant's Ringmail Armor
+								i(126719),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126720),	-- Warmongering Aspirant's Ringmail Helm
+								i(126721),	-- Warmongering Aspirant's Ringmail Leggings
+								i(126722),	-- Warmongering Aspirant's Ringmail Spaulders
+								i(126708),	-- Warmongering Aspirant's Satin Gloves
+								i(126709),	-- Warmongering Aspirant's Satin Hood
+								i(126710),	-- Warmongering Aspirant's Satin Leggings
+								i(126712),	-- Warmongering Aspirant's Satin Mantle
+								i(126711),	-- Warmongering Aspirant's Satin Robe
+								i(126700),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126701),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126702),	-- Warmongering Aspirant's Scaled Helm
+								i(126703),	-- Warmongering Aspirant's Scaled Legguards
+								i(126704),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127121),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126725),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+							}),
+						},
+						["questID"] = 36034, -- Dwarf Spine
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+					}),
+					i(112015, { -- Forsaken Brains
+						["groups"] = {
+							i(128216, { -- Dented Ashmaul Strongbox
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126255),	-- Warmongering Aspirant's Accolade of Victory
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126206),	-- Warmongering Aspirant's Band of Contemplation
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126205),	-- Warmongering Aspirant's Band of Meditation
+								i(126204),	-- Warmongering Aspirant's Band of Prowess
+								i(126207),	-- Warmongering Aspirant's Belt of Prowess
+								i(126209),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126208),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126194),	-- Warmongering Aspirant's Chain Armor
+								i(126195),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126197),	-- Warmongering Aspirant's Chain Leggings
+								i(126198),	-- Warmongering Aspirant's Chain Spaulders
+								i(126247),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126246),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126181),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126183),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126189),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126190),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126191),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126193),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126192),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126186),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126187),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126188),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126262),	-- Warmongering Aspirant's Felweave Amice
+								i(126259),	-- Warmongering Aspirant's Felweave Cowl
+								i(126258),	-- Warmongering Aspirant's Felweave Handguards
+								i(126261),	-- Warmongering Aspirant's Felweave Raiment
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126218),	-- Warmongering Aspirant's Ironskin Gloves
+								i(126219),	-- Warmongering Aspirant's Ironskin Helm
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126222),	-- Warmongering Aspirant's Ironskin Tunic
+								i(126237),	-- Warmongering Aspirant's Leather Gloves
+								i(126238),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126240),	-- Warmongering Aspirant's Leather Spaulders
+								i(126236),	-- Warmongering Aspirant's Leather Tunic
+								i(126178),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126202),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126264),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126265),	-- Warmongering Aspirant's Plate Helm
+								i(126266),	-- Warmongering Aspirant's Plate Legguards
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126180),	-- Warmongering Aspirant's Ring of Prowess
+								i(126242),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126243),	-- Warmongering Aspirant's Ringmail Helm
+								i(126231),	-- Warmongering Aspirant's Satin Gloves
+								i(126232),	-- Warmongering Aspirant's Satin Hood
+								i(126233),	-- Warmongering Aspirant's Satin Leggings
+								i(126235),	-- Warmongering Aspirant's Satin Mantle
+								i(126234),	-- Warmongering Aspirant's Satin Robe
+								i(126223),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126224),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126225),	-- Warmongering Aspirant's Scaled Helm
+								i(126226),	-- Warmongering Aspirant's Scaled Legguards
+								i(126227),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127120),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126248),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126251),	-- Warmongering Aspirant's Signet of Dedication
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126214),	-- Warmongering Aspirant's Silk Amice
+								i(126211),	-- Warmongering Aspirant's Silk Cowl
+								i(126210),	-- Warmongering Aspirant's Silk Handguards
+								i(126213),	-- Warmongering Aspirant's Silk Robe
+								i(126212),	-- Warmongering Aspirant's Silk Trousers
+								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
+								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+							}),
+						},
+						["questID"] = 35927, -- Forsaken Brains
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(112125, { -- Goblin Nose
+						["groups"] = {
+							i(128216, { -- Dented Ashmaul Strongbox
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126255),	-- Warmongering Aspirant's Accolade of Victory
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126206),	-- Warmongering Aspirant's Band of Contemplation
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126205),	-- Warmongering Aspirant's Band of Meditation
+								i(126204),	-- Warmongering Aspirant's Band of Prowess
+								i(126207),	-- Warmongering Aspirant's Belt of Prowess
+								i(126209),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126208),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126194),	-- Warmongering Aspirant's Chain Armor
+								i(126195),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126197),	-- Warmongering Aspirant's Chain Leggings
+								i(126198),	-- Warmongering Aspirant's Chain Spaulders
+								i(126247),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126246),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126181),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126183),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126189),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126190),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126191),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126193),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126192),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126186),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126187),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126188),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126262),	-- Warmongering Aspirant's Felweave Amice
+								i(126259),	-- Warmongering Aspirant's Felweave Cowl
+								i(126258),	-- Warmongering Aspirant's Felweave Handguards
+								i(126261),	-- Warmongering Aspirant's Felweave Raiment
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126218),	-- Warmongering Aspirant's Ironskin Gloves
+								i(126219),	-- Warmongering Aspirant's Ironskin Helm
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126222),	-- Warmongering Aspirant's Ironskin Tunic
+								i(126237),	-- Warmongering Aspirant's Leather Gloves
+								i(126238),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126240),	-- Warmongering Aspirant's Leather Spaulders
+								i(126236),	-- Warmongering Aspirant's Leather Tunic
+								i(126178),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126202),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126264),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126265),	-- Warmongering Aspirant's Plate Helm
+								i(126266),	-- Warmongering Aspirant's Plate Legguards
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126180),	-- Warmongering Aspirant's Ring of Prowess
+								i(126242),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126243),	-- Warmongering Aspirant's Ringmail Helm
+								i(126231),	-- Warmongering Aspirant's Satin Gloves
+								i(126232),	-- Warmongering Aspirant's Satin Hood
+								i(126233),	-- Warmongering Aspirant's Satin Leggings
+								i(126235),	-- Warmongering Aspirant's Satin Mantle
+								i(126234),	-- Warmongering Aspirant's Satin Robe
+								i(126223),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126224),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126225),	-- Warmongering Aspirant's Scaled Helm
+								i(126226),	-- Warmongering Aspirant's Scaled Legguards
+								i(126227),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127120),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126248),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126251),	-- Warmongering Aspirant's Signet of Dedication
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126214),	-- Warmongering Aspirant's Silk Amice
+								i(126211),	-- Warmongering Aspirant's Silk Cowl
+								i(126210),	-- Warmongering Aspirant's Silk Handguards
+								i(126213),	-- Warmongering Aspirant's Silk Robe
+								i(126212),	-- Warmongering Aspirant's Silk Trousers
+								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
+								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+							}),
+						},
+						["questID"] = 35938, -- Goblin Nose
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(112131, { -- Human Bone Chip
+						["groups"] = {
+							i(128215, { -- Dented Ashmaul Strongbox
+								i(134705),	-- Surging Chain Leggings
+								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126731),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126734),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126733),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126732),	-- Warmongering Aspirant's Accolade of Victory
+								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126683),	-- Warmongering Aspirant's Band of Contemplation
+								i(126680),	-- Warmongering Aspirant's Band of Cruelty
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126682),	-- Warmongering Aspirant's Band of Meditation
+								i(126681),	-- Warmongering Aspirant's Band of Prowess
+								i(126684),	-- Warmongering Aspirant's Belt of Prowess
+								i(126686),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126685),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126654),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126671),	-- Warmongering Aspirant's Chain Armor
+								i(126672),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126673),	-- Warmongering Aspirant's Chain Helm
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126674),	-- Warmongering Aspirant's Chain Leggings
+								i(126675),	-- Warmongering Aspirant's Chain Spaulders
+								i(126724),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126727),	-- Warmongering Aspirant's Choker of Endurance
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126723),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126726),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126658),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126660),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126666),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126667),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126668),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126670),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126669),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126676),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126677),	-- Warmongering Aspirant's Drape of Meditation
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126663),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126664),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126665),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126739),	-- Warmongering Aspirant's Felweave Amice
+								i(126736),	-- Warmongering Aspirant's Felweave Cowl
+								i(126735),	-- Warmongering Aspirant's Felweave Handguards
+								i(126738),	-- Warmongering Aspirant's Felweave Raiment
+								i(126737),	-- Warmongering Aspirant's Felweave Trousers
+								i(126693),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126705),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126696),	-- Warmongering Aspirant's Ironskin Helm
+								i(126697),	-- Warmongering Aspirant's Ironskin Legguards
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126714),	-- Warmongering Aspirant's Leather Gloves
+								i(126715),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126716),	-- Warmongering Aspirant's Leather Legguards
+								i(126717),	-- Warmongering Aspirant's Leather Spaulders
+								i(126713),	-- Warmongering Aspirant's Leather Tunic
+								i(126655),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126678),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126679),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126740),	-- Warmongering Aspirant's Plate Chestpiece
+								i(126741),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126742),	-- Warmongering Aspirant's Plate Helm
+								i(126743),	-- Warmongering Aspirant's Plate Legguards
+								i(126744),	-- Warmongering Aspirant's Plate Shoulders
+								i(126656),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126657),	-- Warmongering Aspirant's Ring of Prowess
+								i(126718),	-- Warmongering Aspirant's Ringmail Armor
+								i(126719),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126720),	-- Warmongering Aspirant's Ringmail Helm
+								i(126721),	-- Warmongering Aspirant's Ringmail Leggings
+								i(126722),	-- Warmongering Aspirant's Ringmail Spaulders
+								i(126708),	-- Warmongering Aspirant's Satin Gloves
+								i(126709),	-- Warmongering Aspirant's Satin Hood
+								i(126710),	-- Warmongering Aspirant's Satin Leggings
+								i(126712),	-- Warmongering Aspirant's Satin Mantle
+								i(126711),	-- Warmongering Aspirant's Satin Robe
+								i(126700),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126701),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126702),	-- Warmongering Aspirant's Scaled Helm
+								i(126703),	-- Warmongering Aspirant's Scaled Legguards
+								i(126704),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127121),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126725),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+							}),
+						},
+						["questID"] = 36042, -- Human Bone Chip
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+					}),
+					i(112122, { -- Orc Tooth
+						["groups"] = {
+							i(128216, { -- Dented Ashmaul Strongbox
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126255),	-- Warmongering Aspirant's Accolade of Victory
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126206),	-- Warmongering Aspirant's Band of Contemplation
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126205),	-- Warmongering Aspirant's Band of Meditation
+								i(126204),	-- Warmongering Aspirant's Band of Prowess
+								i(126207),	-- Warmongering Aspirant's Belt of Prowess
+								i(126209),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126208),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126194),	-- Warmongering Aspirant's Chain Armor
+								i(126195),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126197),	-- Warmongering Aspirant's Chain Leggings
+								i(126198),	-- Warmongering Aspirant's Chain Spaulders
+								i(126247),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126246),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126181),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126183),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126189),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126190),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126191),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126193),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126192),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126186),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126187),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126188),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126262),	-- Warmongering Aspirant's Felweave Amice
+								i(126259),	-- Warmongering Aspirant's Felweave Cowl
+								i(126258),	-- Warmongering Aspirant's Felweave Handguards
+								i(126261),	-- Warmongering Aspirant's Felweave Raiment
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126218),	-- Warmongering Aspirant's Ironskin Gloves
+								i(126219),	-- Warmongering Aspirant's Ironskin Helm
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126222),	-- Warmongering Aspirant's Ironskin Tunic
+								i(126237),	-- Warmongering Aspirant's Leather Gloves
+								i(126238),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126240),	-- Warmongering Aspirant's Leather Spaulders
+								i(126236),	-- Warmongering Aspirant's Leather Tunic
+								i(126178),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126202),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126264),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126265),	-- Warmongering Aspirant's Plate Helm
+								i(126266),	-- Warmongering Aspirant's Plate Legguards
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126180),	-- Warmongering Aspirant's Ring of Prowess
+								i(126242),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126243),	-- Warmongering Aspirant's Ringmail Helm
+								i(126231),	-- Warmongering Aspirant's Satin Gloves
+								i(126232),	-- Warmongering Aspirant's Satin Hood
+								i(126233),	-- Warmongering Aspirant's Satin Leggings
+								i(126235),	-- Warmongering Aspirant's Satin Mantle
+								i(126234),	-- Warmongering Aspirant's Satin Robe
+								i(126223),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126224),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126225),	-- Warmongering Aspirant's Scaled Helm
+								i(126226),	-- Warmongering Aspirant's Scaled Legguards
+								i(126227),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127120),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126248),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126251),	-- Warmongering Aspirant's Signet of Dedication
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126214),	-- Warmongering Aspirant's Silk Amice
+								i(126211),	-- Warmongering Aspirant's Silk Cowl
+								i(126210),	-- Warmongering Aspirant's Silk Handguards
+								i(126213),	-- Warmongering Aspirant's Silk Robe
+								i(126212),	-- Warmongering Aspirant's Silk Trousers
+								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
+								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+							}),
+						},
+						["questID"] = 35940, -- Orc Tooth
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(112113, { -- Pandaren Hide
+						["groups"] = {
+							i(128216, { -- Dented Ashmaul Strongbox
+								["groups"] = {
+									i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+									i(126254),	-- Warmongering Aspirant's Accolade of Dominance
+									i(126257),	-- Warmongering Aspirant's Accolade of Endurance
+									i(126256),	-- Warmongering Aspirant's Accolade of Meditation
+									i(126255),	-- Warmongering Aspirant's Accolade of Victory
+									i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+									i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+									i(126206),	-- Warmongering Aspirant's Band of Contemplation
+									i(126203),	-- Warmongering Aspirant's Band of Cruelty
+									i(126205),	-- Warmongering Aspirant's Band of Meditation
+									i(126204),	-- Warmongering Aspirant's Band of Prowess
+									i(126207),	-- Warmongering Aspirant's Belt of Prowess
+									i(126209),	-- Warmongering Aspirant's Bindings of Cruelty
+									i(126208),	-- Warmongering Aspirant's Boots of Cruelty
+									i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+									i(126194),	-- Warmongering Aspirant's Chain Armor
+									i(126195),	-- Warmongering Aspirant's Chain Gauntlets
+									i(126196),	-- Warmongering Aspirant's Chain Helm
+									i(126197),	-- Warmongering Aspirant's Chain Leggings
+									i(126198),	-- Warmongering Aspirant's Chain Spaulders
+									i(126247),	-- Warmongering Aspirant's Choker of Cruelty
+									i(126250),	-- Warmongering Aspirant's Choker of Endurance
+									i(126246),	-- Warmongering Aspirant's Cloak of Cruelty
+									i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+									i(126181),	-- Warmongering Aspirant's Cord of Cruelty
+									i(126183),	-- Warmongering Aspirant's Cuffs of Prowess
+									i(126189),	-- Warmongering Aspirant's Dragonhide Gloves
+									i(126190),	-- Warmongering Aspirant's Dragonhide Helm
+									i(126191),	-- Warmongering Aspirant's Dragonhide Legguards
+									i(126193),	-- Warmongering Aspirant's Dragonhide Spaulders
+									i(126192),	-- Warmongering Aspirant's Dragonhide Tunic
+									i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+									i(126200),	-- Warmongering Aspirant's Drape of Meditation
+									i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece
+									i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets
+									i(126186),	-- Warmongering Aspirant's Dreadplate Helm
+									i(126187),	-- Warmongering Aspirant's Dreadplate Legguards
+									i(126188),	-- Warmongering Aspirant's Dreadplate Shoulders
+									i(126262),	-- Warmongering Aspirant's Felweave Amice
+									i(126259),	-- Warmongering Aspirant's Felweave Cowl
+									i(126258),	-- Warmongering Aspirant's Felweave Handguards
+									i(126261),	-- Warmongering Aspirant's Felweave Raiment
+									i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+									i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+									i(126218),	-- Warmongering Aspirant's Ironskin Gloves
+									i(126219),	-- Warmongering Aspirant's Ironskin Helm
+									i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+									i(126222),	-- Warmongering Aspirant's Ironskin Tunic
+									i(126237),	-- Warmongering Aspirant's Leather Gloves
+									i(126238),	-- Warmongering Aspirant's Leather Helm
+									i(126239),	-- Warmongering Aspirant's Leather Legguards
+									i(126240),	-- Warmongering Aspirant's Leather Spaulders
+									i(126236),	-- Warmongering Aspirant's Leather Tunic
+									i(126178),	-- Warmongering Aspirant's Necklace of Cruelty
+									i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+									i(126202),	-- Warmongering Aspirant's Pendant of Meditation
+									i(126264),	-- Warmongering Aspirant's Plate Gauntlets
+									i(126265),	-- Warmongering Aspirant's Plate Helm
+									i(126266),	-- Warmongering Aspirant's Plate Legguards
+									i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+									i(126180),	-- Warmongering Aspirant's Ring of Prowess
+									i(126242),	-- Warmongering Aspirant's Ringmail Gauntlets
+									i(126243),	-- Warmongering Aspirant's Ringmail Helm
+									i(126231),	-- Warmongering Aspirant's Satin Gloves
+									i(126232),	-- Warmongering Aspirant's Satin Hood
+									i(126233),	-- Warmongering Aspirant's Satin Leggings
+									i(126235),	-- Warmongering Aspirant's Satin Mantle
+									i(126234),	-- Warmongering Aspirant's Satin Robe
+									i(126223),	-- Warmongering Aspirant's Scaled Chestpiece
+									i(126224),	-- Warmongering Aspirant's Scaled Gauntlets
+									i(126225),	-- Warmongering Aspirant's Scaled Helm
+									i(126226),	-- Warmongering Aspirant's Scaled Legguards
+									i(126227),	-- Warmongering Aspirant's Scaled Shoulders
+									i(127120),	-- Warmongering Aspirant's Signet of Accuracy
+									i(126248),	-- Warmongering Aspirant's Signet of Cruelty
+									i(126251),	-- Warmongering Aspirant's Signet of Dedication
+									i(126252),	-- Warmongering Aspirant's Signet of Endurance
+									i(126214),	-- Warmongering Aspirant's Silk Amice
+									i(126211),	-- Warmongering Aspirant's Silk Cowl
+									i(126210),	-- Warmongering Aspirant's Silk Handguards
+									i(126213),	-- Warmongering Aspirant's Silk Robe
+									i(126212),	-- Warmongering Aspirant's Silk Trousers
+									i(126182),	-- Warmongering Aspirant's Treads of Cruelty
+									i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
+									i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+								},
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(128215, { -- Dented Ashmaul Strongbox
+								["groups"] = {
+									i(134705),	-- Surging Chain Leggings
+									i(126730),	-- Warmongering Aspirant's Accolade of Conquest
+									i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+									i(126731),	-- Warmongering Aspirant's Accolade of Dominance
+									i(126734),	-- Warmongering Aspirant's Accolade of Endurance
+									i(126733),	-- Warmongering Aspirant's Accolade of Meditation
+									i(126732),	-- Warmongering Aspirant's Accolade of Victory
+									i(126694),	-- Warmongering Aspirant's Armbands of Prowess
+									i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+									i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+									i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+									i(126683),	-- Warmongering Aspirant's Band of Contemplation
+									i(126680),	-- Warmongering Aspirant's Band of Cruelty
+									i(126203),	-- Warmongering Aspirant's Band of Cruelty
+									i(126682),	-- Warmongering Aspirant's Band of Meditation
+									i(126681),	-- Warmongering Aspirant's Band of Prowess
+									i(126684),	-- Warmongering Aspirant's Belt of Prowess
+									i(126686),	-- Warmongering Aspirant's Bindings of Cruelty
+									i(126685),	-- Warmongering Aspirant's Boots of Cruelty
+									i(126654),	-- Warmongering Aspirant's Cape of Cruelty
+									i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+									i(126671),	-- Warmongering Aspirant's Chain Armor
+									i(126672),	-- Warmongering Aspirant's Chain Gauntlets
+									i(126673),	-- Warmongering Aspirant's Chain Helm
+									i(126196),	-- Warmongering Aspirant's Chain Helm
+									i(126674),	-- Warmongering Aspirant's Chain Leggings
+									i(126675),	-- Warmongering Aspirant's Chain Spaulders
+									i(126724),	-- Warmongering Aspirant's Choker of Cruelty
+									i(126727),	-- Warmongering Aspirant's Choker of Endurance
+									i(126250),	-- Warmongering Aspirant's Choker of Endurance
+									i(126723),	-- Warmongering Aspirant's Cloak of Cruelty
+									i(126726),	-- Warmongering Aspirant's Cloak of Endurance
+									i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+									i(126658),	-- Warmongering Aspirant's Cord of Cruelty
+									i(126660),	-- Warmongering Aspirant's Cuffs of Prowess
+									i(126666),	-- Warmongering Aspirant's Dragonhide Gloves
+									i(126667),	-- Warmongering Aspirant's Dragonhide Helm
+									i(126668),	-- Warmongering Aspirant's Dragonhide Legguards
+									i(126670),	-- Warmongering Aspirant's Dragonhide Spaulders
+									i(126669),	-- Warmongering Aspirant's Dragonhide Tunic
+									i(126676),	-- Warmongering Aspirant's Drape of Cruelty
+									i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+									i(126677),	-- Warmongering Aspirant's Drape of Meditation
+									i(126200),	-- Warmongering Aspirant's Drape of Meditation
+									i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece
+									i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets
+									i(126663),	-- Warmongering Aspirant's Dreadplate Helm
+									i(126664),	-- Warmongering Aspirant's Dreadplate Legguards
+									i(126665),	-- Warmongering Aspirant's Dreadplate Shoulders
+									i(126739),	-- Warmongering Aspirant's Felweave Amice
+									i(126736),	-- Warmongering Aspirant's Felweave Cowl
+									i(126735),	-- Warmongering Aspirant's Felweave Handguards
+									i(126738),	-- Warmongering Aspirant's Felweave Raiment
+									i(126737),	-- Warmongering Aspirant's Felweave Trousers
+									i(126693),	-- Warmongering Aspirant's Footguards of Cruelty
+									i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+									i(126705),	-- Warmongering Aspirant's Girdle of Cruelty
+									i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+									i(126696),	-- Warmongering Aspirant's Ironskin Helm
+									i(126697),	-- Warmongering Aspirant's Ironskin Legguards
+									i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+									i(126714),	-- Warmongering Aspirant's Leather Gloves
+									i(126715),	-- Warmongering Aspirant's Leather Helm
+									i(126239),	-- Warmongering Aspirant's Leather Legguards
+									i(126716),	-- Warmongering Aspirant's Leather Legguards
+									i(126717),	-- Warmongering Aspirant's Leather Spaulders
+									i(126713),	-- Warmongering Aspirant's Leather Tunic
+									i(126655),	-- Warmongering Aspirant's Necklace of Cruelty
+									i(126678),	-- Warmongering Aspirant's Pendant of Cruelty
+									i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+									i(126679),	-- Warmongering Aspirant's Pendant of Meditation
+									i(126740),	-- Warmongering Aspirant's Plate Chestpiece
+									i(126741),	-- Warmongering Aspirant's Plate Gauntlets
+									i(126742),	-- Warmongering Aspirant's Plate Helm
+									i(126743),	-- Warmongering Aspirant's Plate Legguards
+									i(126744),	-- Warmongering Aspirant's Plate Shoulders
+									i(126656),	-- Warmongering Aspirant's Ring of Cruelty
+									i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+									i(126657),	-- Warmongering Aspirant's Ring of Prowess
+									i(126718),	-- Warmongering Aspirant's Ringmail Armor
+									i(126719),	-- Warmongering Aspirant's Ringmail Gauntlets
+									i(126720),	-- Warmongering Aspirant's Ringmail Helm
+									i(126721),	-- Warmongering Aspirant's Ringmail Leggings
+									i(126722),	-- Warmongering Aspirant's Ringmail Spaulders
+									i(126708),	-- Warmongering Aspirant's Satin Gloves
+									i(126709),	-- Warmongering Aspirant's Satin Hood
+									i(126710),	-- Warmongering Aspirant's Satin Leggings
+									i(126712),	-- Warmongering Aspirant's Satin Mantle
+									i(126711),	-- Warmongering Aspirant's Satin Robe
+									i(126700),	-- Warmongering Aspirant's Scaled Chestpiece
+									i(126701),	-- Warmongering Aspirant's Scaled Gauntlets
+									i(126702),	-- Warmongering Aspirant's Scaled Helm
+									i(126703),	-- Warmongering Aspirant's Scaled Legguards
+									i(126704),	-- Warmongering Aspirant's Scaled Shoulders
+									i(127121),	-- Warmongering Aspirant's Signet of Accuracy
+									i(126725),	-- Warmongering Aspirant's Signet of Cruelty
+									i(126728),	-- Warmongering Aspirant's Signet of Dedication
+									i(126728),	-- Warmongering Aspirant's Signet of Dedication
+									i(126729),	-- Warmongering Aspirant's Signet of Endurance
+									i(126252),	-- Warmongering Aspirant's Signet of Endurance
+									i(126729),	-- Warmongering Aspirant's Signet of Endurance
+									i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								},
+								["races"] = HORDE_ONLY,
+							}),
+						},
+						["questID"] = 35942, -- Pandaren Hide
+						["repeatable"] = true,
+					}),
+					i(112124, { -- Severed Night Elf Head
+						["groups"] = {
+							i(128215, { -- Dented Ashmaul Strongbox
+								i(134705),	-- Surging Chain Leggings
+								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126731),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126734),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126733),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126732),	-- Warmongering Aspirant's Accolade of Victory
+								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126683),	-- Warmongering Aspirant's Band of Contemplation
+								i(126680),	-- Warmongering Aspirant's Band of Cruelty
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126682),	-- Warmongering Aspirant's Band of Meditation
+								i(126681),	-- Warmongering Aspirant's Band of Prowess
+								i(126684),	-- Warmongering Aspirant's Belt of Prowess
+								i(126686),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126685),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126654),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126671),	-- Warmongering Aspirant's Chain Armor
+								i(126672),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126673),	-- Warmongering Aspirant's Chain Helm
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126674),	-- Warmongering Aspirant's Chain Leggings
+								i(126675),	-- Warmongering Aspirant's Chain Spaulders
+								i(126724),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126727),	-- Warmongering Aspirant's Choker of Endurance
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126723),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126726),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126658),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126660),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126666),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126667),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126668),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126670),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126669),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126676),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126677),	-- Warmongering Aspirant's Drape of Meditation
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126663),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126664),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126665),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126739),	-- Warmongering Aspirant's Felweave Amice
+								i(126736),	-- Warmongering Aspirant's Felweave Cowl
+								i(126735),	-- Warmongering Aspirant's Felweave Handguards
+								i(126738),	-- Warmongering Aspirant's Felweave Raiment
+								i(126737),	-- Warmongering Aspirant's Felweave Trousers
+								i(126693),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126705),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126696),	-- Warmongering Aspirant's Ironskin Helm
+								i(126697),	-- Warmongering Aspirant's Ironskin Legguards
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126714),	-- Warmongering Aspirant's Leather Gloves
+								i(126715),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126716),	-- Warmongering Aspirant's Leather Legguards
+								i(126717),	-- Warmongering Aspirant's Leather Spaulders
+								i(126713),	-- Warmongering Aspirant's Leather Tunic
+								i(126655),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126678),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126679),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126740),	-- Warmongering Aspirant's Plate Chestpiece
+								i(126741),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126742),	-- Warmongering Aspirant's Plate Helm
+								i(126743),	-- Warmongering Aspirant's Plate Legguards
+								i(126744),	-- Warmongering Aspirant's Plate Shoulders
+								i(126656),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126657),	-- Warmongering Aspirant's Ring of Prowess
+								i(126718),	-- Warmongering Aspirant's Ringmail Armor
+								i(126719),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126720),	-- Warmongering Aspirant's Ringmail Helm
+								i(126721),	-- Warmongering Aspirant's Ringmail Leggings
+								i(126722),	-- Warmongering Aspirant's Ringmail Spaulders
+								i(126708),	-- Warmongering Aspirant's Satin Gloves
+								i(126709),	-- Warmongering Aspirant's Satin Hood
+								i(126710),	-- Warmongering Aspirant's Satin Leggings
+								i(126712),	-- Warmongering Aspirant's Satin Mantle
+								i(126711),	-- Warmongering Aspirant's Satin Robe
+								i(126700),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126701),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126702),	-- Warmongering Aspirant's Scaled Helm
+								i(126703),	-- Warmongering Aspirant's Scaled Legguards
+								i(126704),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127121),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126725),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+							}),
+						},
+						["questID"] = 36033, -- Severed Night Elf Head
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+					}),
+					i(112123, { -- Tauren Hoof
+						["groups"] = {
+							i(128216, { -- Dented Ashmaul Strongbox
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126255),	-- Warmongering Aspirant's Accolade of Victory
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126206),	-- Warmongering Aspirant's Band of Contemplation
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126205),	-- Warmongering Aspirant's Band of Meditation
+								i(126204),	-- Warmongering Aspirant's Band of Prowess
+								i(126207),	-- Warmongering Aspirant's Belt of Prowess
+								i(126209),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126208),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126194),	-- Warmongering Aspirant's Chain Armor
+								i(126195),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126197),	-- Warmongering Aspirant's Chain Leggings
+								i(126198),	-- Warmongering Aspirant's Chain Spaulders
+								i(126247),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126246),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126181),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126183),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126189),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126190),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126191),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126193),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126192),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126186),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126187),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126188),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126262),	-- Warmongering Aspirant's Felweave Amice
+								i(126259),	-- Warmongering Aspirant's Felweave Cowl
+								i(126258),	-- Warmongering Aspirant's Felweave Handguards
+								i(126261),	-- Warmongering Aspirant's Felweave Raiment
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126218),	-- Warmongering Aspirant's Ironskin Gloves
+								i(126219),	-- Warmongering Aspirant's Ironskin Helm
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126222),	-- Warmongering Aspirant's Ironskin Tunic
+								i(126237),	-- Warmongering Aspirant's Leather Gloves
+								i(126238),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126240),	-- Warmongering Aspirant's Leather Spaulders
+								i(126236),	-- Warmongering Aspirant's Leather Tunic
+								i(126178),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126202),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126264),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126265),	-- Warmongering Aspirant's Plate Helm
+								i(126266),	-- Warmongering Aspirant's Plate Legguards
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126180),	-- Warmongering Aspirant's Ring of Prowess
+								i(126242),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126243),	-- Warmongering Aspirant's Ringmail Helm
+								i(126231),	-- Warmongering Aspirant's Satin Gloves
+								i(126232),	-- Warmongering Aspirant's Satin Hood
+								i(126233),	-- Warmongering Aspirant's Satin Leggings
+								i(126235),	-- Warmongering Aspirant's Satin Mantle
+								i(126234),	-- Warmongering Aspirant's Satin Robe
+								i(126223),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126224),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126225),	-- Warmongering Aspirant's Scaled Helm
+								i(126226),	-- Warmongering Aspirant's Scaled Legguards
+								i(126227),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127120),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126248),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126251),	-- Warmongering Aspirant's Signet of Dedication
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126214),	-- Warmongering Aspirant's Silk Amice
+								i(126211),	-- Warmongering Aspirant's Silk Cowl
+								i(126210),	-- Warmongering Aspirant's Silk Handguards
+								i(126213),	-- Warmongering Aspirant's Silk Robe
+								i(126212),	-- Warmongering Aspirant's Silk Trousers
+								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
+								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+							}),
+						},
+						["questID"] = 35939, -- Tauren Hoof
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(112120, { -- Troll Feet
+						["groups"] = {
+							i(128216, { -- Dented Ashmaul Strongbox
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126255),	-- Warmongering Aspirant's Accolade of Victory
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126206),	-- Warmongering Aspirant's Band of Contemplation
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126205),	-- Warmongering Aspirant's Band of Meditation
+								i(126204),	-- Warmongering Aspirant's Band of Prowess
+								i(126207),	-- Warmongering Aspirant's Belt of Prowess
+								i(126209),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126208),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126194),	-- Warmongering Aspirant's Chain Armor
+								i(126195),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126197),	-- Warmongering Aspirant's Chain Leggings
+								i(126198),	-- Warmongering Aspirant's Chain Spaulders
+								i(126247),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126246),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126181),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126183),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126189),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126190),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126191),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126193),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126192),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126186),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126187),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126188),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126262),	-- Warmongering Aspirant's Felweave Amice
+								i(126259),	-- Warmongering Aspirant's Felweave Cowl
+								i(126258),	-- Warmongering Aspirant's Felweave Handguards
+								i(126261),	-- Warmongering Aspirant's Felweave Raiment
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126218),	-- Warmongering Aspirant's Ironskin Gloves
+								i(126219),	-- Warmongering Aspirant's Ironskin Helm
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126222),	-- Warmongering Aspirant's Ironskin Tunic
+								i(126237),	-- Warmongering Aspirant's Leather Gloves
+								i(126238),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126240),	-- Warmongering Aspirant's Leather Spaulders
+								i(126236),	-- Warmongering Aspirant's Leather Tunic
+								i(126178),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126202),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126264),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126265),	-- Warmongering Aspirant's Plate Helm
+								i(126266),	-- Warmongering Aspirant's Plate Legguards
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126180),	-- Warmongering Aspirant's Ring of Prowess
+								i(126242),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126243),	-- Warmongering Aspirant's Ringmail Helm
+								i(126231),	-- Warmongering Aspirant's Satin Gloves
+								i(126232),	-- Warmongering Aspirant's Satin Hood
+								i(126233),	-- Warmongering Aspirant's Satin Leggings
+								i(126235),	-- Warmongering Aspirant's Satin Mantle
+								i(126234),	-- Warmongering Aspirant's Satin Robe
+								i(126223),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126224),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126225),	-- Warmongering Aspirant's Scaled Helm
+								i(126226),	-- Warmongering Aspirant's Scaled Legguards
+								i(126227),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127120),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126248),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126251),	-- Warmongering Aspirant's Signet of Dedication
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126214),	-- Warmongering Aspirant's Silk Amice
+								i(126211),	-- Warmongering Aspirant's Silk Cowl
+								i(126210),	-- Warmongering Aspirant's Silk Handguards
+								i(126213),	-- Warmongering Aspirant's Silk Robe
+								i(126212),	-- Warmongering Aspirant's Silk Trousers
+								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
+								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+							}),
+						},
+						["questID"] = 35941, -- Troll Feet
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(112127, { -- Tuft of Gnome Hair
+						["groups"] = {
+							i(128215, { -- Dented Ashmaul Strongbox
+								i(134705),	-- Surging Chain Leggings
+								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126731),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126734),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126733),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126732),	-- Warmongering Aspirant's Accolade of Victory
+								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126683),	-- Warmongering Aspirant's Band of Contemplation
+								i(126680),	-- Warmongering Aspirant's Band of Cruelty
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126682),	-- Warmongering Aspirant's Band of Meditation
+								i(126681),	-- Warmongering Aspirant's Band of Prowess
+								i(126684),	-- Warmongering Aspirant's Belt of Prowess
+								i(126686),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126685),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126654),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126671),	-- Warmongering Aspirant's Chain Armor
+								i(126672),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126673),	-- Warmongering Aspirant's Chain Helm
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126674),	-- Warmongering Aspirant's Chain Leggings
+								i(126675),	-- Warmongering Aspirant's Chain Spaulders
+								i(126724),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126727),	-- Warmongering Aspirant's Choker of Endurance
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126723),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126726),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126658),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126660),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126666),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126667),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126668),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126670),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126669),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126676),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126677),	-- Warmongering Aspirant's Drape of Meditation
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126663),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126664),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126665),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126739),	-- Warmongering Aspirant's Felweave Amice
+								i(126736),	-- Warmongering Aspirant's Felweave Cowl
+								i(126735),	-- Warmongering Aspirant's Felweave Handguards
+								i(126738),	-- Warmongering Aspirant's Felweave Raiment
+								i(126737),	-- Warmongering Aspirant's Felweave Trousers
+								i(126693),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126705),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126696),	-- Warmongering Aspirant's Ironskin Helm
+								i(126697),	-- Warmongering Aspirant's Ironskin Legguards
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126714),	-- Warmongering Aspirant's Leather Gloves
+								i(126715),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126716),	-- Warmongering Aspirant's Leather Legguards
+								i(126717),	-- Warmongering Aspirant's Leather Spaulders
+								i(126713),	-- Warmongering Aspirant's Leather Tunic
+								i(126655),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126678),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126679),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126740),	-- Warmongering Aspirant's Plate Chestpiece
+								i(126741),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126742),	-- Warmongering Aspirant's Plate Helm
+								i(126743),	-- Warmongering Aspirant's Plate Legguards
+								i(126744),	-- Warmongering Aspirant's Plate Shoulders
+								i(126656),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126657),	-- Warmongering Aspirant's Ring of Prowess
+								i(126718),	-- Warmongering Aspirant's Ringmail Armor
+								i(126719),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126720),	-- Warmongering Aspirant's Ringmail Helm
+								i(126721),	-- Warmongering Aspirant's Ringmail Leggings
+								i(126722),	-- Warmongering Aspirant's Ringmail Spaulders
+								i(126708),	-- Warmongering Aspirant's Satin Gloves
+								i(126709),	-- Warmongering Aspirant's Satin Hood
+								i(126710),	-- Warmongering Aspirant's Satin Leggings
+								i(126712),	-- Warmongering Aspirant's Satin Mantle
+								i(126711),	-- Warmongering Aspirant's Satin Robe
+								i(126700),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126701),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126702),	-- Warmongering Aspirant's Scaled Helm
+								i(126703),	-- Warmongering Aspirant's Scaled Legguards
+								i(126704),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127121),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126725),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+							}),
+						},
+						["questID"] = 36040, -- Tuft of Gnome Hair
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+					}),
+					i(112119, { -- Worgen Snout
+						["groups"] = {
+							i(128215, { -- Dented Ashmaul Strongbox
+								i(134705),	-- Surging Chain Leggings
+								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126731),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126734),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126733),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126732),	-- Warmongering Aspirant's Accolade of Victory
+								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126683),	-- Warmongering Aspirant's Band of Contemplation
+								i(126680),	-- Warmongering Aspirant's Band of Cruelty
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126682),	-- Warmongering Aspirant's Band of Meditation
+								i(126681),	-- Warmongering Aspirant's Band of Prowess
+								i(126684),	-- Warmongering Aspirant's Belt of Prowess
+								i(126686),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126685),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126654),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126671),	-- Warmongering Aspirant's Chain Armor
+								i(126672),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126673),	-- Warmongering Aspirant's Chain Helm
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126674),	-- Warmongering Aspirant's Chain Leggings
+								i(126675),	-- Warmongering Aspirant's Chain Spaulders
+								i(126724),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126727),	-- Warmongering Aspirant's Choker of Endurance
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126723),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126726),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126658),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126660),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126666),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126667),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126668),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126670),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126669),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126676),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126677),	-- Warmongering Aspirant's Drape of Meditation
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126663),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126664),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126665),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126739),	-- Warmongering Aspirant's Felweave Amice
+								i(126736),	-- Warmongering Aspirant's Felweave Cowl
+								i(126735),	-- Warmongering Aspirant's Felweave Handguards
+								i(126738),	-- Warmongering Aspirant's Felweave Raiment
+								i(126737),	-- Warmongering Aspirant's Felweave Trousers
+								i(126693),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126705),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126696),	-- Warmongering Aspirant's Ironskin Helm
+								i(126697),	-- Warmongering Aspirant's Ironskin Legguards
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126714),	-- Warmongering Aspirant's Leather Gloves
+								i(126715),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126716),	-- Warmongering Aspirant's Leather Legguards
+								i(126717),	-- Warmongering Aspirant's Leather Spaulders
+								i(126713),	-- Warmongering Aspirant's Leather Tunic
+								i(126655),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126678),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126679),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126740),	-- Warmongering Aspirant's Plate Chestpiece
+								i(126741),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126742),	-- Warmongering Aspirant's Plate Helm
+								i(126743),	-- Warmongering Aspirant's Plate Legguards
+								i(126744),	-- Warmongering Aspirant's Plate Shoulders
+								i(126656),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126657),	-- Warmongering Aspirant's Ring of Prowess
+								i(126718),	-- Warmongering Aspirant's Ringmail Armor
+								i(126719),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126720),	-- Warmongering Aspirant's Ringmail Helm
+								i(126721),	-- Warmongering Aspirant's Ringmail Leggings
+								i(126722),	-- Warmongering Aspirant's Ringmail Spaulders
+								i(126708),	-- Warmongering Aspirant's Satin Gloves
+								i(126709),	-- Warmongering Aspirant's Satin Hood
+								i(126710),	-- Warmongering Aspirant's Satin Leggings
+								i(126712),	-- Warmongering Aspirant's Satin Mantle
+								i(126711),	-- Warmongering Aspirant's Satin Robe
+								i(126700),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126701),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126702),	-- Warmongering Aspirant's Scaled Helm
+								i(126703),	-- Warmongering Aspirant's Scaled Legguards
+								i(126704),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127121),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126725),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126728),	-- Warmongering Aspirant's Signet of Dedication
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126729),	-- Warmongering Aspirant's Signet of Endurance
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+							}),
+						},
+						["questID"] = 36884, -- Worgen Snout
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+					}),
 				}),
---]]				
-				--[[ Let's comment this out until we get some data in here
 				n(-16, { 	-- Rares
 				--	n(82876, { -- Grand Marshal Tremblade	}), 
 				--	n(82877, { -- High Warlord Volrath	}), 
