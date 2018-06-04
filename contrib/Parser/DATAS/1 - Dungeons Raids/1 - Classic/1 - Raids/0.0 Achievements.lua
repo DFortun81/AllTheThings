@@ -3,13 +3,13 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	ach(1285, {	-- Classic Raider
+	lvl(50, ach(1285, {	-- Classic Raider
 		ach(685),	-- Blackwing Lair
 		ach(687),	-- Temple of Ahn'Qiraj
 		ach(686),	-- Molten Core
 		ach(689),	-- Ruins of Ahn'Qiraj
-	}),
-	ach(7934, { -- Raiding with Leashes
+	})),
+	lvl(50, ach(7934, { -- Raiding with Leashes
 		i(93031), -- Mr. Bigglesworth
-	}),
+	})),
 })};
