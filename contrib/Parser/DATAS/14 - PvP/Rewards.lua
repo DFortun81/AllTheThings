@@ -240,23 +240,37 @@ _.PVP =
 		}),
 		i(135546, {	-- Fel-Touched Crate of Battlefield Goods 100-109 / Ashran
 			["groups"] = {
-				i(134716),	-- Enveloping Cloak
-				i(134696),	-- Cascading Amice
-				i(134694),	-- Cascading Cord
-				i(134697),	-- Cascading Cuffs
-				i(134695),	-- Cascading Trousers
-				i(134700),	-- Swarming Belt
-				i(134703),	-- Swarming Bindings
-				i(134701),	-- Swarming Legguards
-				i(134702),	-- Swarming Shoulders
-				i(134707),	-- Surging Armbands
-				i(134705),	-- Surging Chain Leggings
-				i(134706),	-- Surging Spaulders
-				i(134704),	-- Surging Waistguard
-				i(134714),	-- Crushing Armplates
-				i(134711),	-- Crushing Girdle
-				i(134712),	-- Crushing Legguards
-				i(134713),	-- Crushing Pauldrons
+				i(135578), -- Battle Touched Banner
+				i(135568), -- Battle Touched Blood of the Fallen
+				i(135574), -- Battle Touched Blossom
+				i(135573), -- Battle Touched Chain Link
+				i(135565), -- Battle Touched Elemental Spark
+				i(135571), -- Battle Touched Ember
+				i(135576), -- Battle Touched Fetish
+				i(135570), -- Battle Touched Helfrost
+				i(135569), -- Battle Touched Infernal Shard
+				i(135572), -- Battle Touched Martyr Stone
+				i(134696), -- Cascading Amice
+				i(134694), -- Cascading Cord
+				i(134697), -- Cascading Cuffs
+				i(134695), -- Cascading Trousers
+				i(134714), -- Crushing Armplates
+				i(134711), -- Crushing Girdle
+				i(134712), -- Crushing Legguards
+				i(134713), -- Crushing Pauldrons
+				i(134692), -- Enveloping Accolade
+				i(134715), -- Enveloping Badge
+				i(134716), -- Enveloping Cloak
+				i(134698), -- Enveloping Distinction
+				i(134709), -- Enveloping Pendant
+				i(134707), -- Surging Armbands
+				i(134705), -- Surging Chain Leggings
+				i(134706), -- Surging Spaulders
+				i(134704), -- Surging Waistguard
+				i(134700), -- Swarming Belt
+				i(134703), -- Swarming Bindings
+				i(134701), -- Swarming Legguards
+				i(134702), -- Swarming Shoulders
 			},
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 100-109 range, or Ashran quests.|r",
 			["lvl"] = 100,
