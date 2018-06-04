@@ -2291,44 +2291,44 @@ AllTheThings.Locales.enUS = {
 	};
 	["UNOBTAINABLE_ITEM_REASONS"] = {
 		-- {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
-		{1, "|CFFFF0000The source of this item has been removed or was never available to players.|r", "Never Available"}, -- No Hope -- 1
-		{1, "|CFFFF0000The source of this item has been removed and the item is Bind on Pickup or Bind on Account.|r", "BoP / BoA Item"}, -- No Hope -- 2
-		{1, "|CFFFF0000This was obtainable only during a special promotion or one time event by Blizzard.|r", "Blizzard Promotion"}, -- No Hope -- 3
-		{1, "|CFFFF0000This item is purchaseable from a vendor provided you meet certain qualifications.|r", "Legacy Achievement"},	-- Little Hope -- 4
-		{2, "|CFFFF0000The recipe to learn to craft this item has been removed, the item is bind on pickup and only available to a crafter with the recipe.|r", "Recipe: BoP Craftable Removed"}, -- Little Hope -- 5
-		{2, "|CFFFF0000Item is included in Collector's Edition's, you can still find these for sale online in very low quantities.|r", "Collector's Edition"}, -- Little Hope -- 6
-		{3, "|CFFFF0000The source of this item has been removed, but the item is Bind on Equip or a cageable pet.|r", "BoE Item"}, -- There is Hope -- 7
-		{3, "|CFFFF0000The recipe to learn to craft this item has been removed and the item is Bind on Equip. This can be crafted or posted on the Auction House.|r", "Recipe: BoE Craftable Removed"}, -- There is Hope -- 8
-		{3, "|CFFFF0000The source of this item has been removed and is only available with the Black Market Auction House.|r", "Black Market AH (BMAH)"}, -- There is Hope -- 9
-		{3, "|CFFFF0000Item from TCG card is no longer in print, but still purchaseable online, sometimes BMAH, and possibly AH.|r", "Trading Card  Game (TCG)"}, -- There is Hope -- 10
-		{3, "|CFFFF0000This item is Bind on Pickup but can be obtained if you have access to the items to summon the boss.|r", "Requires Summoning Items"}, -- There is Hope -- 11
-		{4, "|CFFFF0000This is legacy content and the original version has been removed.|r", "Legacy Content"}; -- 12
-		{1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache"}; -- 13
-		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator"}, -- 14
-		{1, "|CFFFF0000This item has a Source ID, but can't be learned.|r", "Unlearnable"}, -- 15
-		{2, "|CFFFF0000These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.|r", "Blizzcon"},--16
-		{6, "|CFF00FFDEIn order to obtain this item it may require Lunar Festival to be active.|r", "Lunar Festival"};--17
-		{7, "|CFF00FFDEIn order to obtain this item it may require Love is In the Air to be active.|r", "Love is In the Air"};--18
-		{8, "|CFF00FFDEIn order to obtain this item it may require Noblegarden to be active.|r", "Noblegarden"};--19
-		{9, "|CFF00FFDEIn order to obtain this item it may require Children's Week to be active.|r", "Children's Week"};--20
-		{10, "|CFF00FFDEIn order to obtain this item it may require Midsummer Fire Festival to be active.|r", "Midsummer Fire Festival"};--21
-		{11, "|CFF00FFDEIn order to obtain this item it may require Trial of Style to be active.|r", "Trial of Style"};--22
-		{12, "|CFF00FFDEIn order to obtain this item it may require Pirate's Day to be active.|r", "Pirate's Day"};--23
-		{13, "|CFF00FFDEIn order to obtain this item it may require Brewfest to be active.|r", "Brewfest"};--24
-		{14, "|CFF00FFDEIn order to obtain this item it may require Harvest Festival to be active.|r", "Harvest Festival"};--25
-		{15, "|CFF00FFDEIn order to obtain this item it may require Hallow's End to be active.|r", "Hallow's End"};--26
-		{16, "|CFF00FFDEIn order to obtain this item it may require Day of the Dead to be active.|r", "Day of the Dead"};--27
-		{17, "|CFF00FFDEIn order to obtain this item it may require Pilgrim's Bounty to be active.|r", "Pilgrim's Bounty"};--28
-		{18, "|CFF00FFDEIn order to obtain this item it may require Feast of Winter Veil to be active.|r", "Feast of Winter Veil"};--29
-		{19, "|CFF00FFDEIn order to obtain this item it may require Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza"};--30
-		{20, "|CFF00FFDEThis is obtainable only during the WoW Anniversary it was active. It's a possibility future anniversaries may include this item.|r\n", "WoW Anniversary"};--31
-		{4, "|CFFFF0000This is an original vanilla reward for this quest. The quest was later reworked with new rewards. If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "Classic Rewards"};--32
-		{4, "|CFFFF0000This vendor is no longer available in this spot or in game.|r", "Legacy Vendors"}; -- 33
-		{4, "|CFFFF0000This item was a quest award from a Legacy Quest that is no longer obtainable.|r", "Legacy Quest Reward"}; --34
-		{3, "|CFFFF0000This item is purchased from the In-Game Store.|r", "In-Game Store"}; --35
-		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed]"}; -- 36
-		{1, "|CFFFF0000This title is no longer obtainable in game.|r", "Titles"}; --37
-		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria|r", "Ordos - Legendary Cloak"}; --38
+		{1, "|CFFFF0000The source of this item has been removed or was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
+		{1, "|CFFFF0000The source of this item has been removed and the item is Bind on Pickup or Bind on Account.|r", "BoP / BoA Item (2)"}, -- No Hope -- 2
+		{1, "|CFFFF0000This was obtainable only during a special promotion or one time event by Blizzard.|r", "Blizzard Promotion (3)"}, -- No Hope -- 3
+		{1, "|CFFFF0000This item is purchaseable from a vendor provided you meet certain qualifications.|r", "Legacy Achievement (4)"},	-- Little Hope -- 4
+		{2, "|CFFFF0000The recipe to learn to craft this item has been removed, the item is bind on pickup and only available to a crafter with the recipe.|r", "Recipe: BoP Craftable Removed (5)"}, -- Little Hope -- 5
+		{2, "|CFFFF0000Item is included in Collector's Edition's, you can still find these for sale online in very low quantities.|r", "Collector's Edition (6)"}, -- Little Hope -- 6
+		{3, "|CFFFF0000The source of this item has been removed, but the item is Bind on Equip or a cageable pet.|r", "BoE Item (7)"}, -- There is Hope -- 7
+		{3, "|CFFFF0000The recipe to learn to craft this item has been removed and the item is Bind on Equip. This can be crafted or posted on the Auction House.|r", "Recipe: BoE Craftable Removed (8)"}, -- There is Hope -- 8
+		{3, "|CFFFF0000The source of this item has been removed and is only available with the Black Market Auction House.|r", "Black Market AH [BMAH] (9)"}, -- There is Hope -- 9
+		{3, "|CFFFF0000Item from TCG card is no longer in print, but still purchaseable online, sometimes BMAH, and possibly AH.|r", "Trading Card  Game [TCG] (10)"}, -- There is Hope -- 10
+		{3, "|CFFFF0000This item is Bind on Pickup but can be obtained if you have access to the items to summon the boss.|r", "Requires Summoning Items (11)"}, -- There is Hope -- 11
+		{4, "|CFFFF0000This is legacy content and the original version has been removed.|r", "Legacy Content (12)"}; -- 12
+		{1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache (13)"}; -- 13
+		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
+		{1, "|CFFFF0000This item has a Source ID, but can't be learned.|r", "Unlearnable (15)"}, -- 15
+		{2, "|CFFFF0000These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.|r", "Blizzcon (16)"},--16
+		{6, "|CFF00FFDEIn order to obtain this item it may require Lunar Festival to be active.|r", "Lunar Festival (17)"};--17
+		{7, "|CFF00FFDEIn order to obtain this item it may require Love is In the Air to be active.|r", "Love is In the Air (18)"};--18
+		{8, "|CFF00FFDEIn order to obtain this item it may require Noblegarden to be active.|r", "Noblegarden (19)"};--19
+		{9, "|CFF00FFDEIn order to obtain this item it may require Children's Week to be active.|r", "Children's Week (20)"};--20
+		{10, "|CFF00FFDEIn order to obtain this item it may require Midsummer Fire Festival to be active.|r", "Midsummer Fire Festival (21)"};--21
+		{11, "|CFF00FFDEIn order to obtain this item it may require Trial of Style to be active.|r", "Trial of Style (22)"};--22
+		{12, "|CFF00FFDEIn order to obtain this item it may require Pirate's Day to be active.|r", "Pirate's Day (23)"};--23
+		{13, "|CFF00FFDEIn order to obtain this item it may require Brewfest to be active.|r", "Brewfest (24)"};--24
+		{14, "|CFF00FFDEIn order to obtain this item it may require Harvest Festival to be active.|r", "Harvest Festival (25)"};--25
+		{15, "|CFF00FFDEIn order to obtain this item it may require Hallow's End to be active.|r", "Hallow's End (26)"};--26
+		{16, "|CFF00FFDEIn order to obtain this item it may require Day of the Dead to be active.|r", "Day of the Dead (27)"};--27
+		{17, "|CFF00FFDEIn order to obtain this item it may require Pilgrim's Bounty to be active.|r", "Pilgrim's Bounty (28)"};--28
+		{18, "|CFF00FFDEIn order to obtain this item it may require Feast of Winter Veil to be active.|r", "Feast of Winter Veil (29)"};--29
+		{19, "|CFF00FFDEIn order to obtain this item it may require Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza (30) "};--30
+		{20, "|CFF00FFDEThis is obtainable only during the WoW Anniversary it was active. It's a possibility future anniversaries may include this item.|r\n", "WoW Anniversary (31)"};--31
+		{4, "|CFFFF0000This is an original vanilla reward for this quest. The quest was later reworked with new rewards. If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "Classic Rewards (32)"};--32
+		{4, "|CFFFF0000This vendor is no longer available in this spot or in game.|r", "Legacy Vendors (33)"}; -- 33
+		{4, "|CFFFF0000This item was a quest award from a Legacy Quest that is no longer obtainable.|r", "Legacy Quest Reward (34)"}; --34
+		{3, "|CFFFF0000This item is purchased from the In-Game Store.|r", "In-Game Store (35)"}; --35
+		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed] (36)"}; -- 36
+		{1, "|CFFFF0000This title is no longer obtainable in game.|r", "Titles (37)"}; --37
+		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria|r", "Ordos - Legendary Cloak (38)"}; --38
 	};
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you, please post in Discord where you got it!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";

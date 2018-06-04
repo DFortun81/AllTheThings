@@ -528,5 +528,6 @@ _.WorldEvents =
 		},
 		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
 		["maps"] = { 1014 }, -- Dalaran: Broken Isles
+		["u"] = 9,
 	}),
 };
