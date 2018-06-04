@@ -1114,214 +1114,223 @@ _.Zones =
 
 -- FACTION QUESTS					
 					faction(932, {	-- The Aldor
-						q(10263, {	-- Assisting the Consortium
-							["groups"] = {
-							},
-							["qg"] = 19467,	-- Anchorite Karja
-							["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						}),
-						q(10241, {	-- Distraction at Manaforge B'naar
-							["groups"] = {
-							},
-							["qg"] = 19466,	-- Exarch Orelis
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-							["breadcrumbQuestID"] = { 11038 },	-- Assist Exarch Orelis
-						}),
-						q(10313, {	-- Measuring Warp Energies
-							["groups"] = {
-								i(30362),	-- Energized Helm
-								i(30363),	-- Warp-Shielded Hauberk
-								i(30364),	-- Resonating Axe
-								i(30521),	-- Warpweaver's Gloves
-							},
-							["qg"] = 19466,	-- Exarch Orelis
-							["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
-						}),
-						q(10243, {	-- Naaru Technology
-							["groups"] = {
-							},
-							["qg"] = 19467,	-- Anchorite Karja
-							["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
-						}),
-						o(183770, {	-- B'naar Control Console
-							q(10245, {	-- B'naar Console Transcription
+						["groups"] = {
+							q(10263, {	-- Assisting the Consortium
 								["groups"] = {
 								},
-								["sourceQuests"] = { 10243 },	-- Naaru Technology
+								["qg"] = 19467,	-- Anchorite Karja
+								["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
-						}),
-						q(10299, {	-- Shutting Down Manaforge B'naar
-							["groups"] = {
-							},
-							["qg"] = 19467,	-- Anchorite Karja
-							["sourceQuests"] = { 10245 },	-- B'naar Console Transcription
-						}),
-						q(10246, {	-- Attack on Manaforge Coruu
-							["groups"] = {
-							},
-							["qg"] = 19466,	-- Exarch Orelis
-							["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
-						}),
-						q(10321, {	-- Shutting Down Manaforge Coruu
-							["groups"] = {
-							},
-							["qg"] = 19467,	-- Anchorite Karja
-							["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
-						}),
-						q(10322, {	-- Shutting Down Manaforge Duro
-							["groups"] = {
-							},
-							["qg"] = 19467,	-- Anchorite Karja
-							["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
-						}),
-						q(10323, {	-- Shutting Down Manaforge Ara
-							["groups"] = {
-							},
-							["qg"] = 19467,	-- Anchorite Karja
-							["sourceQuests"] = { 10322 },	-- Shutting Down Manaforge Duro
-						}),
-						q(10328, {	-- Sunfury Briefings
-							["groups"] = {
-							},
-							["qg"] = 19466,	-- Exarch Orelis
-							["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
-						}),
-						q(10431, {	-- Outside Assistance
-							["groups"] = {
-							},
-							["qg"] = 19466,	-- Exarch Orelis
-							["sourceQuests"] = { 10328 },	-- Sunfury Briefings
-						}),
-						q(10380, {	-- A Dark Pact
-							["groups"] = {
-							},
-							["qg"] = 20780,	-- Kaylaan
-							["sourceQuests"] = { 10431 },	-- Outside Assistance
-						}),
-						q(10381, {	-- Aldor No More
-							["groups"] = {
-								i(30382),	-- Aldor Ceremonial Wraps
-								i(30379),	-- Vindicator's Light Vest
-								i(30381),	-- Kaylaan's Spaulders
-								i(30380),	-- Girdle of the Lost Vindicator
-							},
-							["qg"] = 20780,	-- Kaylaan
-							["sourceQuests"] = { 10380 },	-- A Dark Pact
-						}),
-						q(10407, {	-- Socrethar's Shadow
-							["groups"] = {
-							},
-							["qg"] = 19467,	-- Anchorite Karja
-							["sourceQuests"] = { 10323, 10381 },	-- Shutting Down Manaforge Ara & Aldor No More
-						}),
-						q(10410, {	-- Ishanah's Help
-							["groups"] = {
-							},
-							["qg"] = 19467,	-- Anchorite Karja
-							["sourceQuests"] = { 10407 },	-- Socrethar's Shadow
-						}),
+							q(10241, {	-- Distraction at Manaforge B'naar
+								["groups"] = {
+								},
+								["qg"] = 19466,	-- Exarch Orelis
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+								["breadcrumbQuestID"] = { 11038 },	-- Assist Exarch Orelis
+							}),
+							q(10313, {	-- Measuring Warp Energies
+								["groups"] = {
+									i(30362),	-- Energized Helm
+									i(30363),	-- Warp-Shielded Hauberk
+									i(30364),	-- Resonating Axe
+									i(30521),	-- Warpweaver's Gloves
+								},
+								["qg"] = 19466,	-- Exarch Orelis
+								["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
+							}),
+							q(10243, {	-- Naaru Technology
+								["groups"] = {
+								},
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
+							}),
+							o(183770, {	-- B'naar Control Console
+								q(10245, {	-- B'naar Console Transcription
+									["groups"] = {
+									},
+									["sourceQuests"] = { 10243 },	-- Naaru Technology
+								}),
+							}),
+							q(10299, {	-- Shutting Down Manaforge B'naar
+								["groups"] = {
+								},
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10245 },	-- B'naar Console Transcription
+							}),
+							q(10246, {	-- Attack on Manaforge Coruu
+								["groups"] = {
+								},
+								["qg"] = 19466,	-- Exarch Orelis
+								["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
+							}),
+							q(10321, {	-- Shutting Down Manaforge Coruu
+								["groups"] = {
+								},
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
+							}),
+							q(10322, {	-- Shutting Down Manaforge Duro
+								["groups"] = {
+								},
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
+							}),
+							q(10323, {	-- Shutting Down Manaforge Ara
+								["groups"] = {
+								},
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10322 },	-- Shutting Down Manaforge Duro
+							}),
+							q(10328, {	-- Sunfury Briefings
+								["groups"] = {
+								},
+								["qg"] = 19466,	-- Exarch Orelis
+								["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
+							}),
+							q(10431, {	-- Outside Assistance
+								["groups"] = {
+								},
+								["qg"] = 19466,	-- Exarch Orelis
+								["sourceQuests"] = { 10328 },	-- Sunfury Briefings
+							}),
+							q(10380, {	-- A Dark Pact
+								["groups"] = {
+								},
+								["qg"] = 20780,	-- Kaylaan
+								["sourceQuests"] = { 10431 },	-- Outside Assistance
+							}),
+							q(10381, {	-- Aldor No More
+								["groups"] = {
+									i(30382),	-- Aldor Ceremonial Wraps
+									i(30379),	-- Vindicator's Light Vest
+									i(30381),	-- Kaylaan's Spaulders
+									i(30380),	-- Girdle of the Lost Vindicator
+								},
+								["qg"] = 20780,	-- Kaylaan
+								["sourceQuests"] = { 10380 },	-- A Dark Pact
+							}),
+							q(10407, {	-- Socrethar's Shadow
+								["groups"] = {
+								},
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10323, 10381 },	-- Shutting Down Manaforge Ara & Aldor No More
+							}),
+							q(10410, {	-- Ishanah's Help
+								["groups"] = {
+								},
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10407 },	-- Socrethar's Shadow
+							}),
+						},
+						["collectible"] = false,
 					}),
 					faction(933, {	-- The Consortium
-						q( 10265, {	-- Consortium Crystal Collection
-							["groups"] = {
-							},
-							["qg"] = 19880,	-- Nether-Stalker Khay'ji
-						}),
-						q( 10262, {	-- A Heap of Ethereals
-							["groups"] = {
-							},
-							["qg"] = 19880,	-- Nether-Stalker Khay'ji
-							["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
-						}),
-						qr(q(10308, {	-- Another Heap of Ethereals
-							["groups"] = {
-							},
-							["qg"] = 19880,	-- Nether-Stalker Khay'ji
-							["description"] = "Gives reputation through Exalted.",
-							["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
-						})),
-						q( 10969, {	-- Seek Out Ameer
-							["groups"] = {
-							},
-							["qg"] = 22899,	-- Protectorate Advisor Rahim
-							["description"] = "Requires Honored with The Consortium.",
-							["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
-						}),
-						q( 10970, {	-- A Mission of Mercy
-							["groups"] = {
-							},
-							["qg"] = 20448,	-- Commander Ameer
-							["description"] = "Requires Honored with The Consortium.",
-						}),
-						q( 10971, {	-- Ethereum Secrets
-							["groups"] = {
-							},
-							["qg"] = 20448,	-- Commander Ameer
-							["sourceQuests"] = { 10970 },	-- A Mission of Mercy
-						}),
-						qr(q(10972, {	-- Ethereum Prisoner I.D. Catalogue
-							["groups"] = {
-							},
-							["qg"] = 20448,	-- Commander Ameer
-							["description"] = "Gives reputation through Exalted.",
-							["sourceQuests"] = { 10971},	-- Ethereum Secrets
-						})),
-						q( 10973, {	-- A Thousand Worlds
-							["groups"] = {
-							},
-							["qg"] = 20448,	-- 
-							["description"] = "Requires Revered with The Consortium.",
-						}),
-						q( 10974, {	-- Stasis Chambers of Bash'ir
-							["groups"] = {
-							},
-							["qg"] = 20448,	-- Commander Ameer
-							["sourceQuests"] = { 10973 },	-- A Thousand Worlds
-						}),
+						["groups"] = {
+							q( 10265, {	-- Consortium Crystal Collection
+								["groups"] = {
+								},
+								["qg"] = 19880,	-- Nether-Stalker Khay'ji
+							}),
+							q( 10262, {	-- A Heap of Ethereals
+								["groups"] = {
+								},
+								["qg"] = 19880,	-- Nether-Stalker Khay'ji
+								["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
+							}),
+							qr(q(10308, {	-- Another Heap of Ethereals
+								["groups"] = {
+								},
+								["qg"] = 19880,	-- Nether-Stalker Khay'ji
+								["description"] = "Gives reputation through Exalted.",
+								["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
+							})),
+							q( 10969, {	-- Seek Out Ameer
+								["groups"] = {
+								},
+								["qg"] = 22899,	-- Protectorate Advisor Rahim
+								["description"] = "Requires Honored with The Consortium.",
+								["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
+							}),
+							q( 10970, {	-- A Mission of Mercy
+								["groups"] = {
+								},
+								["qg"] = 20448,	-- Commander Ameer
+								["description"] = "Requires Honored with The Consortium.",
+							}),
+							q( 10971, {	-- Ethereum Secrets
+								["groups"] = {
+								},
+								["qg"] = 20448,	-- Commander Ameer
+								["sourceQuests"] = { 10970 },	-- A Mission of Mercy
+							}),
+							qr(q(10972, {	-- Ethereum Prisoner I.D. Catalogue
+								["groups"] = {
+								},
+								["qg"] = 20448,	-- Commander Ameer
+								["description"] = "Gives reputation through Exalted.",
+								["sourceQuests"] = { 10971},	-- Ethereum Secrets
+							})),
+							q( 10973, {	-- A Thousand Worlds
+								["groups"] = {
+								},
+								["qg"] = 20448,	-- 
+								["description"] = "Requires Revered with The Consortium.",
+							}),
+							q( 10974, {	-- Stasis Chambers of Bash'ir
+								["groups"] = {
+								},
+								["qg"] = 20448,	-- Commander Ameer
+								["sourceQuests"] = { 10973 },	-- A Thousand Worlds
+							}),
+						},
+						["collectible"] = false,
 					}),
 					faction(934, {	-- The Scryers
-						q( 10264, {	-- Assisting the Consortium
-							["groups"] = {
-							},
-							["qg"] = 19468,	-- Spymaster Thalodien
-							["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
-						}),
-						q( 11039),	-- Report to Spymaster Thalodien
-						q( 10189),	-- Manaforge B'naar
-						q( 10193),	-- High Value Targets
-						q( 10329),	-- Shutting Down Manaforge B'naar
-						q( 10194),	-- Stealth Flight
-						q( 10652),	-- Behind Enemy Lines
-						q( 10197),	-- A Convincing Disguise
-						q( 10198, {	-- Information Gathering - Scryer
-							i(30397),
-							i(30383),
-							i(30384),
-							i(30386),
-						}),
-						q( 10330),	-- Shutting Down Manaforge Coruu
-						q( 10200),	-- Return to Thalodien
-						q( 10338),	-- Shutting Down Manaforge Duro
-						q( 10365),	-- Shutting Down Manaforge Ara
-						q( 10341, {	-- Kick Them While They're Down - Scryer
-							i(30395),
-							i(30394),
-							i(30396),
-							i(30522),
-						}),
-						q( 10202),	-- A Defector
-						q( 10432),	-- Damning Evidence
-						q( 10508),	-- A Gift for Voren'thal
-						q( 10509),	-- Bound for Glory
-						q( 10507, {	-- Turning Point - Scryer
-							i(30375),
-							i(30372),
-							i(30373),
-							i(30374),
-							i(30859),
-						}),
-						q( 10204),	-- Bloodgem Crystals
+						["groups"] = {
+							q( 10264, {	-- Assisting the Consortium
+								["groups"] = {
+								},
+								["qg"] = 19468,	-- Spymaster Thalodien
+								["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
+							}),
+							q( 11039),	-- Report to Spymaster Thalodien
+							q( 10189),	-- Manaforge B'naar
+							q( 10193),	-- High Value Targets
+							q( 10329),	-- Shutting Down Manaforge B'naar
+							q( 10194),	-- Stealth Flight
+							q( 10652),	-- Behind Enemy Lines
+							q( 10197),	-- A Convincing Disguise
+							q( 10198, {	-- Information Gathering - Scryer
+								i(30397),
+								i(30383),
+								i(30384),
+								i(30386),
+							}),
+							q( 10330),	-- Shutting Down Manaforge Coruu
+							q( 10200),	-- Return to Thalodien
+							q( 10338),	-- Shutting Down Manaforge Duro
+							q( 10365),	-- Shutting Down Manaforge Ara
+							q( 10341, {	-- Kick Them While They're Down - Scryer
+								i(30395),
+								i(30394),
+								i(30396),
+								i(30522),
+							}),
+							q( 10202),	-- A Defector
+							q( 10432),	-- Damning Evidence
+							q( 10508),	-- A Gift for Voren'thal
+							q( 10509),	-- Bound for Glory
+							q( 10507, {	-- Turning Point - Scryer
+								i(30375),
+								i(30372),
+								i(30373),
+								i(30374),
+								i(30859),
+							}),
+							q( 10204),	-- Bloodgem Crystals
+						},
+						["collectible"] = false,
 					}),
 				}),	
 				n(-16, {	-- Rares	
