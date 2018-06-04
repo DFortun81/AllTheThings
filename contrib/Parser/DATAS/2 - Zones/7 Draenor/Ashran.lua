@@ -172,7 +172,7 @@ _.Zones =
 						},
 						["repeatable"] = true,
 					}),
-					qh(98923, { -- Ashran Dominance
+					qh(38923, { -- Ashran Dominance
 						["groups"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["groups"] = {
