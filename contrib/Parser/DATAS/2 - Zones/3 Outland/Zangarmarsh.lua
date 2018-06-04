@@ -659,88 +659,94 @@ _.Zones =
 
 -- CENARION EXPEDITION QUESTS
 					faction(942, {	-- Cenarion Expedition
-						qr(q(9784, {	-- Identify Plant Parts
-							["groups"] = {
-							},
-							["qg"] = 17909,	-- Lauranna Thar'well
-							["description"] = "Only available until you are Honored with Cenarion Expedition.",
-							["sourceQuests"] = { 9802 },	-- Plants of Zangarmarsh
-						})),
-						i(24402, {	-- Package of Identified Plants
-							i(24407, {	-- Uncatalogued Species
-								qr(q(9875, {	-- Uncatalogued Species
-									["groups"] = {
-									},
-									["description"] = "Only available until you are Honored with Cenarion Expedition.",
-									["sourceQuests"] = { 9784 },	-- Identify Plant Parts
-								})),
+						["groups"] = {
+							qr(q(9784, {	-- Identify Plant Parts
+								["groups"] = {
+								},
+								["qg"] = 17909,	-- Lauranna Thar'well
+								["description"] = "Only available until you are Honored with Cenarion Expedition.",
+								["sourceQuests"] = { 9802 },	-- Plants of Zangarmarsh
+							})),
+							i(24402, {	-- Package of Identified Plants
+								i(24407, {	-- Uncatalogued Species
+									qr(q(9875, {	-- Uncatalogued Species
+										["groups"] = {
+										},
+										["description"] = "Only available until you are Honored with Cenarion Expedition.",
+										["sourceQuests"] = { 9784 },	-- Identify Plant Parts
+									})),
+								}),
 							}),
-						}),
+						},
+						["collectible"] = false,
 					}),
 -- SPOREGGAR QUESTS
 					faction(970, {	-- Sporeggar
-						q(  9806, {	-- Fertile Spores
-							["groups"] = {
-							},
-							["qg"] = 17925,	-- Gshaff
-							["description"] = "Invisible until you reach Neutral with Sporeggar.",
-						}),
-						q(  9808, {	-- Glowcap Mushrooms
-							["groups"] = {
-							},
-							["qg"] = 17924,	-- Msshi'fn
-							["description"] = "Available from Neutral to Friendly with Sporeggar.",
-						}),
---						q(  9809),	-- More Glowcaps (removed?)
-						q(  9742, {	-- More Spore Sacs
-							["groups"] = {
-							},
-							["qg"] = 17923,	-- Fahssn
-							["description"] = "Unavailable after you reach Friendly with Sporeggar.",
-						}),
-						q(  9744, {	-- More Tendrils!
-							["groups"] = {
-							},
-							["qg"] = 17923,	-- Fahssn
-							["description"] = "Unavailable after you reach Friendly with Sporeggar.",
-						}),
-						qr(q(9807, {	-- More Fertile Spores
-							["groups"] = {
-							},
-							["qg"] = 17925,	-- Gshaff
-							["sourceQuests"] = { 9806 },	-- Fertile Spores
-						})),
-						q(  9919, {	-- Sporeggar (awarded "A Trip With the Sporelings" criteria)
-							["groups"] = {
-							},
-							["qg"] = 17923,	-- Fahssn
-							["description"] = "Invisible until you reach Neutral with Sporeggar.",
-						}),
-						q(  9726, {	-- Now That We're Friends...
-							["groups"] = {
-								i(27749),	-- Staff of the Wild
-								i(27751),	-- Survivalist's Pike
-								i(27750),	-- Hammer of the Sporelings
-								i(27752),	-- Zangarmarsh Claymore
-							},
-							["qg"] = 17856,	-- Gzhun'tt
-							["description"] = "Invisible until you reach Friendly with Sporeggar.",	
-						}),
-						qr(q(9727, {	-- Now That We're Still Friends...
-							["groups"] = {
-							},
-							["qg"] = 17856,	-- Gzhun'tt
-							["sourceQuests"] = { 9726 },	-- Now That We're Friends...
-						})),
-						q(  9729, {	-- Fhwoor Smash!
-							["groups"] = {
-								i(25537),	-- Hewing Axe of the Marsh
-								i(25538),	-- Sporeling Claw
-								i(25536),	-- Sporeggar Smasher
-							},
-							["qg"] = 17877,	-- Fhwoor
-							["description"] = "Invisible until you reach Honored with Sporeggar.",	
-						}),
+						["groups"] = {
+							q(  9806, {	-- Fertile Spores
+								["groups"] = {
+								},
+								["qg"] = 17925,	-- Gshaff
+								["description"] = "Invisible until you reach Neutral with Sporeggar.",
+							}),
+							q(  9808, {	-- Glowcap Mushrooms
+								["groups"] = {
+								},
+								["qg"] = 17924,	-- Msshi'fn
+								["description"] = "Available from Neutral to Friendly with Sporeggar.",
+							}),
+	--						q(  9809),	-- More Glowcaps (removed?)
+							q(  9742, {	-- More Spore Sacs
+								["groups"] = {
+								},
+								["qg"] = 17923,	-- Fahssn
+								["description"] = "Unavailable after you reach Friendly with Sporeggar.",
+							}),
+							q(  9744, {	-- More Tendrils!
+								["groups"] = {
+								},
+								["qg"] = 17923,	-- Fahssn
+								["description"] = "Unavailable after you reach Friendly with Sporeggar.",
+							}),
+							qr(q(9807, {	-- More Fertile Spores
+								["groups"] = {
+								},
+								["qg"] = 17925,	-- Gshaff
+								["sourceQuests"] = { 9806 },	-- Fertile Spores
+							})),
+							q(  9919, {	-- Sporeggar (awarded "A Trip With the Sporelings" criteria)
+								["groups"] = {
+								},
+								["qg"] = 17923,	-- Fahssn
+								["description"] = "Invisible until you reach Neutral with Sporeggar.",
+							}),
+							q(  9726, {	-- Now That We're Friends...
+								["groups"] = {
+									i(27749),	-- Staff of the Wild
+									i(27751),	-- Survivalist's Pike
+									i(27750),	-- Hammer of the Sporelings
+									i(27752),	-- Zangarmarsh Claymore
+								},
+								["qg"] = 17856,	-- Gzhun'tt
+								["description"] = "Invisible until you reach Friendly with Sporeggar.",	
+							}),
+							qr(q(9727, {	-- Now That We're Still Friends...
+								["groups"] = {
+								},
+								["qg"] = 17856,	-- Gzhun'tt
+								["sourceQuests"] = { 9726 },	-- Now That We're Friends...
+							})),
+							q(  9729, {	-- Fhwoor Smash!
+								["groups"] = {
+									i(25537),	-- Hewing Axe of the Marsh
+									i(25538),	-- Sporeling Claw
+									i(25536),	-- Sporeggar Smasher
+								},
+								["qg"] = 17877,	-- Fhwoor
+								["description"] = "Invisible until you reach Honored with Sporeggar.",	
+							}),
+						},
+						["collectible"] = false,
 					}),
 				}),
 				n(-16, {	-- Rares
