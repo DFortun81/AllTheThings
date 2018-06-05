@@ -579,7 +579,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(17204, {	-- Eye of Sulfuras
 					["groups"] = {
 						i(17182, { 	-- Sulfuras, Hand of Ragnaros
-							ach(429),	-- Sulfuras, Hand of Ragnaros
+							ach(429, {	-- Sulfuras, Hand of Ragnaros
+								["groups"] = {
+								},
+								["collectible"] = false,
+							}),
 						}),
 					},
 					["classes"] = { 6, 11, 2, 7, 1 }, -- Death Knight / Druid / Paladin / Shaman / Warrior
