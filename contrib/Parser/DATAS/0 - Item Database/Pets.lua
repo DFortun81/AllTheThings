@@ -142,6 +142,7 @@ pet(46707, 166); 		-- Pint-Sized Pink Pachyderm
 model(29348, pet(46802, 228)); 	-- Heavy Murloc Egg (Grunty)
 pet(46820, 229); 		-- Shimmering Wyrmling(Alliance)
 pet(46821, 229); 		-- Shimmering Wyrmling(Horde)
+pet(69992, 229);		-- Shimmering Wyrmling (No Rep Requirement)
 pet(46831, 1351); 		-- Macabre Marionette
 pet(46892, 217);		-- Murkimus' Tiny Spear (Murkimus the Gladiator)
 pet(48112, 232); 		-- Darting Hatchling

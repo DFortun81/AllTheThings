@@ -8,6 +8,73 @@ _.Zones =
 			["groups"] = {
 				cr(60491, e(691, { 	-- Sha of Anger
 					["groups"] = {
+						i(90839, { -- Cache of Sha-Touched Gold
+							i(86884),	-- Belt of Embodied Terror
+							i(86900),	-- Binder's Chain of Unending Summer
+							i(86850),	-- Darting Damselfly Cuffs
+							i(86844),	-- Gleaming Moth Cuffs
+							i(86895),	-- Healer's Belt of Final Winter
+							i(86846),	-- Inlaid Cricket Bracers
+							i(86896),	-- Invoker's Belt of Final Winter
+							i(86772),	-- Jade Bandit Figurine
+							i(86771),	-- Jade Charioteer Figurine
+							i(86774),	-- Jade Courtesan Figurine
+							i(86773),	-- Jade Magistrate Figurine
+							i(86775),	-- Jade Warlord Figurine
+							i(86847),	-- Jagged Hornet Bracers
+							i(86842),	-- Luminescent Firefly Wristguards
+							i(86902),	-- Mender's Girdle of Endless Spring
+							i(86904),	-- Patroller's Girdle of Endless Spring
+							i(86845),	-- Pearlescent Butterfly Wristbands
+							i(86849),	-- Plated Locust Bracers
+							i(86903),	-- Protector's Girdle of Endless Spring
+							i(86901),	-- Ranger's Chain of Unending Summer
+							i(86848),	-- Serrated Wasp Bracers
+							i(86841),	-- Shining Cicada Bracers
+							i(86843),	-- Smooth Beetle Wristbands
+							i(86897),	-- Sorcerer's Belt of Final Winter
+							i(86899),	-- Stalker's Cord of Eternal Autumn
+							i(86898),	-- Weaver's Cord of Eternal Autumn
+							i(44984),	-- Ammen Vale Lashling
+							i(54436),	-- Blue Clockwork Rocket Bot
+							i(44970),	-- Dun Morogh Cub
+							i(44973),	-- Durotar Scorpion
+							i(67282),	-- Elementium Geode
+							i(44974),	-- Elwynn Lamb
+							i(44982),	-- Enchanted Broom
+							i(64403),	-- Fox Kit
+							i(43698),	-- Giant Sewer Rat
+							i(45002),	-- Mechanopeep
+							i(44980),	-- Mulgore Hatchling
+							i(94295, {	 -- Primal Egg
+								i(94296, {  -- Cracked Primal Egg
+									i(94292), -- Reins of the Black Primal Raptor
+									i(94293), -- Reins of the Green Primal Raptor
+									i(94291), -- Reins of the Red Primal Raptor
+								}),
+							}),
+							i(45606),	-- Sen'jin Fetish
+							i(69992),	-- Shimmering Wyrmling
+							i(44965),	-- Teldrassil Sproutling
+							i(69991),	-- Tiny Sporebat
+							i(44971),	-- Tirisfal Batling
+							i(10360),	-- Black Kingsnake
+							i(29960),	-- Captured Firefly
+							i(8491),	-- Cat Carrier (Black Tabby)
+							i(46398),	-- Cat Carrier (Calico Cat)
+							i(8487),	-- Cat Carrier (Orange Tabby)
+							i(8488),	-- Cat Carrier (Silver Tabby)
+							i(10822),	-- Dark Whelpling
+							i(29953),	-- Golden Dragonhawk Hatchling
+							i(48116),	-- Gundrak Hatchling
+							i(48118),	-- Leaping Hatchling
+							i(48120),	-- Obsidian Hatchling
+							i(8496),	-- Parrot Cage (Cockatiel)
+							i(8492),	-- Parrot Cage (Green Wing Macaw)
+							i(8495),	-- Parrot Cage (Senegal)
+							i(48124),	-- Razormaw Hatchling
+							i(48126),	-- Razzashi Hatchling
+						}),
 						i(84806),
 						i(84801),
 						i(84807),
