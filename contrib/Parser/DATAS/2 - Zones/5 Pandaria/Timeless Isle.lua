@@ -1311,108 +1311,116 @@ _.Zones =
 						["description"] = "Must have leveled at least 15 pets to 25 in order to enter the tournament."
 					}),
 					n(73305, {	-- Mistweaver Ai <Timeless Artifacts>
-						i(104013, {	-- Time Cloth Armor Cache
-							["groups"] = {
-								i(101801),	-- Amaranthine Cord
-								i(101802),	-- Amaranthine Cowl
-								i(101803),	-- Amaranthine Handwraps
-								i(101804),	-- Amaranthine Leggings
-								i(101806),	-- Amaranthine Robe
-								i(101807),	-- Amaranthine Sandals
-								i(101808),	-- Amaranthine Shoulderpads
-								i(101810),	-- Amaranthine Wristwraps
-								i(101811),	-- Cloudscorcher Belt
-								i(101812),	-- Cloudscorcher Cowl
-								i(101813),	-- Cloudscorcher Handwraps
-								i(101814),	-- Cloudscorcher Leggings
-								i(101815),	-- Cloudscorcher Robe
-								i(101816),	-- Cloudscorcher Sandals
-								i(101817),	-- Cloudscorcher Shoulderpads
-								i(101818),	-- Cloudscorcher Wristwraps
-							},
-							["description"] = "Item created will be class and spec specific.|r",
+						currency(777, { -- Timeless Coin
+							i(103989),	-- Alacrity of Xuen
+							i(103982),	-- Burden of Eternity
+							i(105921),	-- Cloudscorcher Greatstaff
+							i(103988),	-- Contemplation of Chi-Ji
+							i(105923),	-- Contemplation of Shaohao
+							i(105919),	-- Daylight Protectorate
+							i(103986),	-- Discipline of Xuen
+							i(105927),	-- Featherdraw Longbow
+							i(105924),	-- Hozen Can Opener
+							i(105926),	-- Ordon Sacrificial Dagger
+							i(105920),	-- Pandaren Peace Offering
+							i(103990),	-- Resolve of Niuzao
+							i(105929),	-- Scavenged Pandaren Dagger
+							i(105922),	-- Shield of the Eternal Noon
+							i(104013, {	-- Timeless Cloth Armor Cache
+								["groups"] = {
+									i(101801),	-- Amaranthine Cord
+									i(101802),	-- Amaranthine Cowl
+									i(101803),	-- Amaranthine Handwraps
+									i(101804),	-- Amaranthine Leggings
+									i(101806),	-- Amaranthine Robe
+									i(101807),	-- Amaranthine Sandals
+									i(101808),	-- Amaranthine Shoulderpads
+									i(101810),	-- Amaranthine Wristwraps
+									i(101811),	-- Cloudscorcher Belt
+									i(101812),	-- Cloudscorcher Cowl
+									i(101813),	-- Cloudscorcher Handwraps
+									i(101814),	-- Cloudscorcher Leggings
+									i(101815),	-- Cloudscorcher Robe
+									i(101816),	-- Cloudscorcher Sandals
+									i(101817),	-- Cloudscorcher Shoulderpads
+									i(101818),	-- Cloudscorcher Wristwraps
+								},
+								["description"] = "Item created will be class and spec specific.|r",
+							}),
+							i(104012, {	-- Timeless Leather Armor Cache
+								["groups"] = {
+									i(101862),	-- Cranefeather Bindings
+									i(101863),	-- Cranefeather Boots
+									i(101864),	-- Cranefeather Britches
+									i(101865),	-- Cranefeather Gloves
+									i(101866),	-- Cranefeather Hood
+									i(101867),	-- Cranefeather Ferkin
+									i(101868),	-- Cranefeather Shoulders
+									i(101869),	-- Cranefeather Waistband
+									i(101781),	-- Fire-Chanter Bindings
+									i(101782),	-- Fire-Chanter Boots
+									i(101783),	-- Fire-Chanter Britches
+									i(101784),	-- Fire-Chanter Gloves
+									i(101785),	-- Fire-Chanter Hood
+									i(101786),	-- Fire-Chanter Jerkin
+									i(101787),	-- Fire-Chanter Shoulders
+									i(101788),	-- Fire-Chanter Waistband
+								},
+								["description"] = "Item created will be class and spec specific.|r",
+							}),
+							i(104010, {	-- Timeless Mail Armor Cache
+								["groups"] = {
+									i(101838),	-- Crimsonscale Belt
+									i(101839),	-- Crimsonscale Bracers
+									i(101840),	-- Crimsonscale Gauntlets
+									i(101841),	-- Crimsonscale Greaves
+									i(101842),	-- Crimsonscale Helm
+									i(101843),	-- Crimsonscale Legguards
+									i(101844),	-- Crimsonscale Spaulders
+									i(101845),	-- Crimsonscale Vest
+									i(101830),	-- Ordon Leagend-Keeper Belt
+									i(101831),	-- Ordon Leagend-Keeper Bracers
+									i(101832),	-- Ordon Leagend-Keeper Gauntlets
+									i(101833),	-- Ordon Leagend-Keeper Greaves
+									i(101834),	-- Ordon Leagend-Keeper Helm
+									i(101835),	-- Ordon Leagend-Keeper Legguards
+									i(101836),	-- Ordon Leagend-Keeper Spaulders
+									i(101837),	-- Ordon Leagend-Keeper Vestments
+								},
+								["description"] = "Item created will be class and spec specific.|r",
+							}),
+							i(104009, {	-- Timeless Plate Armor Cache
+								["groups"] = {
+									i(101789),	-- Cliffbreaker Breastplate
+									i(101791),	-- Cliffbreaker Gauntlets
+									i(101792),	-- Cliffbreaker Girdle
+									i(101793),	-- Cliffbreaker Helm
+									i(101794),	-- Cliffbreaker Legplates
+									i(101796),	-- Cliffbreaker Pauldrons
+									i(101797),	-- Cliffbreaker Sabatons
+									i(101799),	-- Cliffbreaker Vambraces
+									i(101851),	-- Elder Tortoiseshell Breastplate
+									i(101853),	-- Elder Tortoiseshell Gauntlets
+									i(101854),	-- Elder Tortoiseshell Girdle
+									i(101855),	-- Elder Tortoiseshell Helm
+									i(101856),	-- Elder Tortoiseshell Legplates
+									i(101858),	-- Elder Tortoiseshell Pauldrons
+									i(101859),	-- Elder Tortoiseshell Sabatons
+									i(101861),	-- Elder Tortoiseshell Vambraces
+									i(101819),	-- Everbright Breastplate
+									i(101820),	-- Everbright Gauntlets
+									i(101821),	-- Everbright Girdle
+									i(101822),	-- Everbright Helm
+									i(101823),	-- Everbright Legplates
+									i(101824),	-- Everbright Pauldrons
+									i(101825),	-- Everbright Sabatons
+									i(101826),	-- Everbright Vambraces
+								},
+								["description"] = "Item created will be class and spec specific.|r",
+							}),
+							i(105925),	-- Yak-Herder's Longstaff
+							i(103987),	-- Yu'lon's Bite
 						}),
-						i(104012, {	-- Timeless Leather Armor Cache
-							["groups"] = {
-								i(101862),	-- Cranefeather Bindings
-								i(101863),	-- Cranefeather Boots
-								i(101864),	-- Cranefeather Britches
-								i(101865),	-- Cranefeather Gloves
-								i(101866),	-- Cranefeather Hood
-								i(101867),	-- Cranefeather Ferkin
-								i(101868),	-- Cranefeather Shoulders
-								i(101869),	-- Cranefeather Waistband
-								i(101781),	-- Fire-Chanter Bindings
-								i(101782),	-- Fire-Chanter Boots
-								i(101783),	-- Fire-Chanter Britches
-								i(101784),	-- Fire-Chanter Gloves
-								i(101785),	-- Fire-Chanter Hood
-								i(101786),	-- Fire-Chanter Jerkin
-								i(101787),	-- Fire-Chanter Shoulders
-								i(101788),	-- Fire-Chanter Waistband
-							},
-							["description"] = "Item created will be class and spec specific.|r",
-						}),
-						i(104010, {	-- Timeless Mail Armor Cache
-							["groups"] = {
-								i(101838),	-- Crimsonscale Belt
-								i(101839),	-- Crimsonscale Bracers
-								i(101840),	-- Crimsonscale Gauntlets
-								i(101841),	-- Crimsonscale Greaves
-								i(101842),	-- Crimsonscale Helm
-								i(101843),	-- Crimsonscale Legguards
-								i(101844),	-- Crimsonscale Spaulders
-								i(101845),	-- Crimsonscale Vest
-								i(101830),	-- Ordon Leagend-Keeper Belt
-								i(101831),	-- Ordon Leagend-Keeper Bracers
-								i(101832),	-- Ordon Leagend-Keeper Gauntlets
-								i(101833),	-- Ordon Leagend-Keeper Greaves
-								i(101834),	-- Ordon Leagend-Keeper Helm
-								i(101835),	-- Ordon Leagend-Keeper Legguards
-								i(101836),	-- Ordon Leagend-Keeper Spaulders
-								i(101837),	-- Ordon Leagend-Keeper Vestments
-							},
-							["description"] = "Item created will be class and spec specific.|r",
-						}),
-						i(104009, {	-- Timeless Plate Armor Cache
-							["groups"] = {
-								i(101789),	-- Cliffbreaker Breastplate
-								i(101791),	-- Cliffbreaker Gauntlets
-								i(101792),	-- Cliffbreaker Girdle
-								i(101793),	-- Cliffbreaker Helm
-								i(101794),	-- Cliffbreaker Legplates
-								i(101796),	-- Cliffbreaker Pauldrons
-								i(101797),	-- Cliffbreaker Sabatons
-								i(101799),	-- Cliffbreaker Vambraces
-								i(101851),	-- Elder Tortoiseshell Breastplate
-								i(101853),	-- Elder Tortoiseshell Gauntlets
-								i(101854),	-- Elder Tortoiseshell Girdle
-								i(101855),	-- Elder Tortoiseshell Helm
-								i(101856),	-- Elder Tortoiseshell Legplates
-								i(101858),	-- Elder Tortoiseshell Pauldrons
-								i(101859),	-- Elder Tortoiseshell Sabatons
-								i(101861),	-- Elder Tortoiseshell Vambraces
-								i(101819),	-- Everbright Breastplate
-								i(101820),	-- Everbright Gauntlets
-								i(101821),	-- Everbright Girdle
-								i(101822),	-- Everbright Helm
-								i(101823),	-- Everbright Legplates
-								i(101824),	-- Everbright Pauldrons
-								i(101825),	-- Everbright Sabatons
-								i(101826),	-- Everbright Vambraces
-							},
-							["description"] = "Item created will be class and spec specific.|r",
-						}),
-						i(105919),	-- Daylight Protectorate
-						i(105920),	-- Pandaren Peace Offering
-						i(105921),	-- Cloudscorcher Greatstaff
-						i(105922),	-- Shield of the Eternal Noon
-						i(105923),	-- Contemplation of Shaohao
-						i(105924),	-- Hozen Can Opener
-						i(105925),	-- Yak-Herder's Longstaff
-						i(105926),	-- Ordon Sacrificial Dagger
-						i(105927),	-- Featherdraw Longbow
-						i(105929),	-- Scavenged Pandaren Dagger
 					}),
 					n(73306, {	-- Mistweaver Ku <Lost Treasures of Shaohao>
 						i(104295),	-- Harmonious Purcupette Pet
@@ -1450,12 +1458,20 @@ _.Zones =
 						["ids"] = { 692 },
 					}),
 					n(73819, {	-- Ku-Mo <Hand-Made Kites>
-						i(104332),	-- Sky Lantern Pet
+						currency(777, { -- Timeless Coin
+							i(104332),	-- Sky Lantern Pet
+						}),
 					}),
 					n(73307, {	-- Speaker Gulan <Emissary of Ordos>
-						i(102467),	-- Censer of Eternal Agony Toy
-						i(103638),	-- Reins of the Ashhide Mushan Beast Mount
-						i(103637),	-- Vengeful Porcupette Pet
+						currency(789, { -- Bloody Coin
+							i(103639),	-- Pouch of White Ash
+							i(103638),	-- Reins of the Ashhide Mushan Beast Mount
+							i(103637),	-- Vengeful Porcupette Pet
+						}),
+						currency(777, { -- Timeless Coin
+							i(102467),	-- Censer of Eternal Agony Toy
+							i(102463),	-- Fire-Watcher's Oath
+						}),
 					}),
 				}),
 				n(0, { -- Zone Drops

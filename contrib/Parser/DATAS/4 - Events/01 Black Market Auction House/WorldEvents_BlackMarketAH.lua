@@ -87,7 +87,7 @@ _.WorldEvents =
 				i(48126),	-- Razzashi Hatchling
 				i(34492),	-- Rocket Chicken
 				i(45606),	-- Sen'jin Fetish Pet
-				i(46820),	-- Shimmering Wyrmling
+				i(69992),	-- Shimmering Wyrmling
 				i(94152),	-- Son of Animus
 				i(38050),	-- Soul-Trader Beacon
 				i(49343),	-- Spectral Tiger Cub
@@ -347,7 +347,7 @@ _.WorldEvents =
 						i(48126),	-- Razzashi Hatchling **
 						i(34492),	-- Rocket Chicken **
 						i(45606),	-- Sen'jin Fetish Pet **
-						i(46820),	-- Shimmering Wyrmling **
+						i(69992),	-- Shimmering Wyrmling **
 						i(94152),	-- Son of Animus **
 						i(38050),	-- Soul-Trader Beacon **
 						i(49343),	-- Spectral Tiger Cub **

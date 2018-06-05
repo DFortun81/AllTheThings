@@ -9,13 +9,53 @@ _.Zones =
 				cr(69161, e(826, { 	-- Oondasta
 					["groups"] = {	
 						i(95601, { -- Shiny Pile of Refuse
-							i(94295, { -- Primal Egg
+							i(95972),	-- Abandoned Zandalari Arrowlinks
+							i(95976),	-- Abandoned Zandalari Bucklebreaker
+							i(95961),	-- Abandoned Zandalari Firecord
+							i(95975),	-- Abandoned Zandalari Goreplate
+							i(95974),	-- Abandoned Zandalari Greatbelt
+							i(95971),	-- Abandoned Zandalari Moonstrap
+							i(95962),	-- Abandoned Zandalari Shadowgirdle
+							i(95970),	-- Abandoned Zandalari Silentbelt
+							i(95973),	-- Abandoned Zandalari Waterchain
+							i(44984),	-- Ammen Vale Lashling
+							i(54436),	-- Blue Clockwork Rocket Bot
+							i(44970),	-- Dun Morogh Cub
+							i(44973),	-- Durotar Scorpion
+							i(67282),	-- Elementium Geode
+							i(44974),	-- Elwynn Lamb
+							i(44982),	-- Enchanted Broom
+							i(64403),	-- Fox Kit
+							i(43698),	-- Giant Sewer Rat
+							i(45002),	-- Mechanopeep
+							i(44980),	-- Mulgore Hatchling
+							i(94295, { 	-- Primal Egg
 								i(94296, {  -- Cracked Primal Egg
 									i(94292), -- Reins of the Black Primal Raptor
 									i(94293), -- Reins of the Green Primal Raptor
 									i(94291), -- Reins of the Red Primal Raptor
 								}),
 							}),
+							i(69992),	-- Shimmering Wyrmling
+							i(44965),	-- Teldrassil Sproutling
+							i(69991),	-- Tiny Sporebat
+							i(44971),	-- Tirisfal Batling
+							i(10360),	-- Black Kingsnake
+							i(29960),	-- Captured Firefly
+							i(8491),	-- Cat Carrier (Black Tabby)
+							i(46398),	-- Cat Carrier (Calico Cat)
+							i(8487),	-- Cat Carrier (Orange Tabby)
+							i(8488),	-- Cat Carrier (Silver Tabby)
+							i(10822),	-- Dark Whelpling
+							i(29953),	-- Golden Dragonhawk Hatchling
+							i(48116),	-- Gundrak Hatchling
+							i(48118),	-- Leaping Hatchling
+							i(48120),	-- Obsidian Hatchling
+							i(8496),	-- Parrot Cage (Cockatiel)
+							i(8492),	-- Parrot Cage (Green Wing Macaw)
+							i(8495),	-- Parrot Cage (Senegal)
+							i(48124),	-- Razormaw Hatchling
+							i(48126),	-- Razzashi Hatchling
 						}),
 						i(95183),
 						i(95182),

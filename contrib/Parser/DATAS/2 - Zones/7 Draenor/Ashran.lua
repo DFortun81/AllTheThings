@@ -1771,7 +1771,7 @@ _.Zones =
 						i(116776),	-- Pale Thorngrazer MOUNT!
 						i(115517),	-- Wrynn's Vanguard Tabard
 					}),
-					nh(128759, {	-- Dazzerian <Warspear Quartermaster>
+					nh(85115, {	-- Dazzerian <Warspear Quartermaster>
 						i(116775),	-- Breezestrider Stallion MOUNT!
 						i(115518),	-- Vol'jin's Spear Tabard
 					}),
