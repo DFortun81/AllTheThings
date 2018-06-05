@@ -15,7 +15,7 @@ _.WorldDrops =
 					i(55286),	-- Mardenholde Axe
 					i(55287),	-- Bladefist Axe
 					i(55288),	-- Irontree Axe
-					i(55289),	-- Rustmaul Axe
+					un(7, i(55289)),	-- Rustmaul Axe
 					i(59462),	-- Maimgor's Bite
 					i(66952),	-- Belmont's Vampire Hacker
 					i(66981),	-- Axe of the Deadly Price
@@ -30,7 +30,7 @@ _.WorldDrops =
 					i(55295),	-- Mardenholde Broadaxe
 					i(55296),	-- Bladefist Broadaxe
 					i(55297),	-- Irontree Broadaxe
-					i(55298),	-- Rustmaul Broadaxe
+					un(7, i(55298)),	-- Rustmaul Broadaxe
 					i(66985),	-- Termination Axe
 				}),	
 				n(-346, { -- Bows
@@ -43,7 +43,7 @@ _.WorldDrops =
 					i(55304),	-- Mardenholde Bow
 					i(55305),	-- Bladefist Bow
 					i(55306),	-- Irontree Bow
-					i(55307),	-- Rustmaul Bow
+					un(7, i(55307)),	-- Rustmaul Bow
 					i(66973),	-- Ravenheart Longbow
 				}),
 				n(-347, { -- Crossbows
@@ -55,7 +55,7 @@ _.WorldDrops =
 					i(55322),	-- Mardenholde Crossbow
 					i(55323),	-- Bladefist Crossbow
 					i(55324),	-- Irontree Crossbow
-					i(55325),	-- Rustmaul Crossbow
+					un(7, i(55325)),	-- Rustmaul Crossbow
 					i(71366),	-- Lava Bolt Crossbow
 				}),			
 				n(-333, { -- Daggers	
@@ -68,7 +68,7 @@ _.WorldDrops =
 					i(55331),	-- Mardenholde Dagger
 					i(55332),	-- Bladefist Dagger
 					i(55333),	-- Irontree Dagger
-					i(55334),	-- Rustmaul Dagger
+					un(7, i(55334)),	-- Rustmaul Dagger
 					i(55434),	-- Moonbrook Spellblade
 					i(55435),	-- Swamplight Spellblade
 					i(55436),	-- Sishir Spellblade
@@ -97,7 +97,7 @@ _.WorldDrops =
 					i(55349),	-- Mardenholde Knuckles
 					i(55350),	-- Bladefist Knuckles
 					i(55351),	-- Irontree Knuckles
-					i(55352),	-- Rustmaul Knuckles
+					un(7, i(55352)),	-- Rustmaul Knuckles
 					i(63537),	-- Claws of Torment
 					i(63538),	-- Claws of Agony
 					i(66972),	-- Crystalline Geoknife
@@ -111,7 +111,7 @@ _.WorldDrops =
 					i(55358),	-- Mardenholde Gun
 					i(55359),	-- Bladefist Gun
 					i(55360),	-- Irontree Gun
-					i(55361),	-- Rustmaul Gun
+					un(7, i(55361)),	-- Rustmaul Gun
 					i(60210),	-- Crossfire Carbine
 					i(66953),	-- Snub-Nosed Pistol
 					i(67045),	-- Abatement Cannon
@@ -150,7 +150,7 @@ _.WorldDrops =
 					i(55385),	-- Mardenholde Mace
 					i(55386),	-- Bladefist Mace
 					i(55387),	-- Irontree Mace
-					i(55388),	-- Rustmaul Mace
+					un(7, i(55388)),	-- Rustmaul Mace
 					i(55822),	-- Heavy Geode Mace
 					i(66990),	-- Downfall Hammer
 					i(67029),	-- Death Pyre Mace
@@ -166,7 +166,7 @@ _.WorldDrops =
 					i(55394),	-- Mardenholde Hammer
 					i(55395),	-- Bladefist Hammer
 					i(55396),	-- Irontree Hammer
-					i(55397),	-- Rustmaul Hammer
+					un(7, i(55397)),	-- Rustmaul Hammer
 					i(66993),	-- Sorrow's End
 					i(67243),	-- Armagedillo's Tail
 				}),
@@ -179,7 +179,7 @@ _.WorldDrops =
 					i(55412),	-- Mardenholde Spear
 					i(55413),	-- Bladefist Spear
 					i(55414),	-- Irontree Spear
-					i(55415),	-- Rustmaul Spear
+					un(7, i(55415)),	-- Rustmaul Spear
 					i(66964),	-- Sand Tracker's Spear
 					i(69843),	-- Mobus's Dripping Halberd
 					i(71361),	-- Ranseur of Hatred
@@ -209,7 +209,7 @@ _.WorldDrops =
 					i(55340),	-- Mardenholde Staff
 					i(55341),	-- Bladefist Staff
 					i(55342),	-- Irontree Staff
-					i(55343),	-- Rustmaul Staff
+					un(7, i(55343)),	-- Rustmaul Staff
 					i(55443),	-- Razorwind Staff
 					i(55444),	-- Steelspark Staff
 					i(55445),	-- Angerfang Staff
@@ -218,7 +218,7 @@ _.WorldDrops =
 					i(55448),	-- Mardenholde Staff
 					i(55449),	-- Bladefist Staff
 					i(55450),	-- Irontree Staff
-					i(55451),	-- Rustmaul Staff
+					un(7, i(55451)),	-- Rustmaul Staff
 					i(55789),	-- Berto's Staff
 					i(59525),	-- Chelley's Staff of Dark Mending
 					i(66940),	-- Staff of Solemn Secrecy
@@ -235,7 +235,7 @@ _.WorldDrops =
 					i(55457),	-- Mardenholde Sword
 					i(55458),	-- Bladefist Sword
 					i(55459),	-- Irontree Sword
-					i(55460),	-- Rustmaul Sword
+					un(7, i(55460)),	-- Rustmaul Sword
 					i(59463),	-- Maldo's Sword Cane
 					i(59521),	-- Soul Blade
 					i(66916),	-- Delicate Blade of Meaning
@@ -253,7 +253,7 @@ _.WorldDrops =
 					i(55466),	-- Mardenholde Greatsword
 					i(55467),	-- Bladefist Greatsword
 					i(55468),	-- Irontree Greatsword
-					i(55469),	-- Rustmaul Greatsword
+					un(7, i(55469)),	-- Rustmaul Greatsword
 					i(66978),	-- Rage-Possessed Greatsword
 				}),
 				n(-341, { -- Wands
