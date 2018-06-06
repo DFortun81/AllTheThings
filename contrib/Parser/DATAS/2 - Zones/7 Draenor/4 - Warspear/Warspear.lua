@@ -235,104 +235,69 @@ _.Zones =
 						i(119136),	-- Arakkoa Outcasts Tabard
 					}),
 					n(93917, {	-- Malukah Lightsong <Warmongering Gladiator>
-						{ -- Arsenal: Warmongering Gladiator's Weapons
+						i(138636, { -- Arsenal: Warmongering Gladiator's Weapons [ Horde ]
 							["groups"] = {
-								i(138636, { -- Arsenal: Warmongering Gladiator's Weapons [ Horde ]
-									["groups"] = {
-										i(125863),	-- Warmongering Gladiator's Barrier
-										i(126342),	-- Warmongering Gladiator's Barrier
-										i(125843),	-- Warmongering Gladiator's Baton of Light
-										i(126322),	-- Warmongering Gladiator's Baton of Light
-										i(125845),	-- Warmongering Gladiator's Battle Staff
-										i(126324),	-- Warmongering Gladiator's Battle Staff
-										i(125953),	-- Warmongering Gladiator's Bonecracker
-										i(126432),	-- Warmongering Gladiator's Bonecracker
-										i(125956),	-- Warmongering Gladiator's Bonegrinder
-										i(126435),	-- Warmongering Gladiator's Bonegrinder
-										i(125789),	-- Warmongering Gladiator's Cleaver
-										i(126268),	-- Warmongering Gladiator's Cleaver
-										i(125955),	-- Warmongering Gladiator's Decapitator
-										i(126434),	-- Warmongering Gladiator's Decapitator
-										i(125855),	-- Warmongering Gladiator's Endgame
-										i(126334),	-- Warmongering Gladiator's Endgame
-										i(125846),	-- Warmongering Gladiator's Energy Staff
-										i(126325),	-- Warmongering Gladiator's Energy Staff
-										i(125841),	-- Warmongering Gladiator's Gavel
-										i(126320),	-- Warmongering Gladiator's Gavel
-										i(125957),	-- Warmongering Gladiator's Greatsword
-										i(126436),	-- Warmongering Gladiator's Greatsword
-										i(125951),	-- Warmongering Gladiator's Hacker
-										i(126430),	-- Warmongering Gladiator's Hacker
-										i(125795),	-- Warmongering Gladiator's Heavy Crossbow
-										i(126274),	-- Warmongering Gladiator's Heavy Crossbow
-										i(125794),	-- Warmongering Gladiator's Longbow
-										i(126273),	-- Warmongering Gladiator's Longbow
-										i(125842),	-- Warmongering Gladiator's Mageblade
-										i(126321),	-- Warmongering Gladiator's Mageblade
-										i(125797),	-- Warmongering Gladiator's Pike
-										i(126276),	-- Warmongering Gladiator's Pike
-										i(125792),	-- Warmongering Gladiator's Pummeler
-										i(126271),	-- Warmongering Gladiator's Pummeler
-										i(125793),	-- Warmongering Gladiator's Quickblade
-										i(126272),	-- Warmongering Gladiator's Quickblade
-										i(125862),	-- Warmongering Gladiator's Redoubt
-										i(126341),	-- Warmongering Gladiator's Redoubt
-										i(125952),	-- Warmongering Gladiator's Render
-										i(126431),	-- Warmongering Gladiator's Render
-										i(125856),	-- Warmongering Gladiator's Reprieve
-										i(126335),	-- Warmongering Gladiator's Reprieve
-										i(125796),	-- Warmongering Gladiator's Rifle
-										i(126275),	-- Warmongering Gladiator's Rifle
-										i(125791),	-- Warmongering Gladiator's Ripper
-										i(126270),	-- Warmongering Gladiator's Ripper
-										i(125790),	-- Warmongering Gladiator's Shanker
-										i(126269),	-- Warmongering Gladiator's Shanker
-										i(125965),	-- Warmongering Gladiator's Shield Wall
-										i(126444),	-- Warmongering Gladiator's Shield Wall
-										i(125954),	-- Warmongering Gladiator's Slicer
-										i(126433),	-- Warmongering Gladiator's Slicer
-										i(125840),	-- Warmongering Gladiator's Spellblade
-										i(126319),	-- Warmongering Gladiator's Spellblade
-										i(125798),	-- Warmongering Gladiator's Staff
-										i(126277),	-- Warmongering Gladiator's Staff
-										i(125844),	-- Warmongering Gladiator's Touch of Defeat
-										i(126323),	-- Warmongering Gladiator's Touch of Defeat
-									},
-									["races"] = { 2, 5, 6, 8, 9, 10, 26 },
-								}),
-								i(126342),-- Warmongering Gladiator's Barrier
-								i(126322),-- Warmongering Gladiator's Baton of Light
-								i(126324),-- Warmongering Gladiator's Battle Staff
-								i(126432),-- Warmongering Gladiator's Bonecracker
-								i(126435),-- Warmongering Gladiator's Bonegrinder
-								i(126268),-- Warmongering Gladiator's Cleaver
-								i(126434),-- Warmongering Gladiator's Decapitator
-								i(126334),-- Warmongering Gladiator's Endgame
-								i(126325),-- Warmongering Gladiator's Energy Staff
-								i(126320),-- Warmongering Gladiator's Gavel
-								i(126436),-- Warmongering Gladiator's Greatsword
-								i(126430),-- Warmongering Gladiator's Hacker
-								i(126274),-- Warmongering Gladiator's Heavy Crossbow
-								i(126273),-- Warmongering Gladiator's Longbow
-								i(126321),-- Warmongering Gladiator's Mageblade
-								i(126276),-- Warmongering Gladiator's Pike
-								i(126271),-- Warmongering Gladiator's Pummeler
-								i(126272),-- Warmongering Gladiator's Quickblade
-								i(126341),-- Warmongering Gladiator's Redoubt
-								i(126431),-- Warmongering Gladiator's Render
-								i(126335),-- Warmongering Gladiator's Reprieve
-								i(126275),-- Warmongering Gladiator's Rifle
-								i(126270),-- Warmongering Gladiator's Ripper
-								i(126269),-- Warmongering Gladiator's Shanker
-								i(126444),-- Warmongering Gladiator's Shield Wall
-								i(126433),-- Warmongering Gladiator's Slicer
-								i(126319),-- Warmongering Gladiator's Spellblade
-								i(126277),-- Warmongering Gladiator's Staff
-								i(126323),-- Warmongering Gladiator's Touch of Defeat
+								i(125863),	-- Warmongering Gladiator's Barrier
+								i(126342),	-- Warmongering Gladiator's Barrier
+								i(125843),	-- Warmongering Gladiator's Baton of Light
+								i(126322),	-- Warmongering Gladiator's Baton of Light
+								i(125845),	-- Warmongering Gladiator's Battle Staff
+								i(126324),	-- Warmongering Gladiator's Battle Staff
+								i(125953),	-- Warmongering Gladiator's Bonecracker
+								i(126432),	-- Warmongering Gladiator's Bonecracker
+								i(125956),	-- Warmongering Gladiator's Bonegrinder
+								i(126435),	-- Warmongering Gladiator's Bonegrinder
+								i(125789),	-- Warmongering Gladiator's Cleaver
+								i(126268),	-- Warmongering Gladiator's Cleaver
+								i(125955),	-- Warmongering Gladiator's Decapitator
+								i(126434),	-- Warmongering Gladiator's Decapitator
+								i(125855),	-- Warmongering Gladiator's Endgame
+								i(126334),	-- Warmongering Gladiator's Endgame
+								i(125846),	-- Warmongering Gladiator's Energy Staff
+								i(126325),	-- Warmongering Gladiator's Energy Staff
+								i(125841),	-- Warmongering Gladiator's Gavel
+								i(126320),	-- Warmongering Gladiator's Gavel
+								i(125957),	-- Warmongering Gladiator's Greatsword
+								i(126436),	-- Warmongering Gladiator's Greatsword
+								i(125951),	-- Warmongering Gladiator's Hacker
+								i(126430),	-- Warmongering Gladiator's Hacker
+								i(125795),	-- Warmongering Gladiator's Heavy Crossbow
+								i(126274),	-- Warmongering Gladiator's Heavy Crossbow
+								i(125794),	-- Warmongering Gladiator's Longbow
+								i(126273),	-- Warmongering Gladiator's Longbow
+								i(125842),	-- Warmongering Gladiator's Mageblade
+								i(126321),	-- Warmongering Gladiator's Mageblade
+								i(125797),	-- Warmongering Gladiator's Pike
+								i(126276),	-- Warmongering Gladiator's Pike
+								i(125792),	-- Warmongering Gladiator's Pummeler
+								i(126271),	-- Warmongering Gladiator's Pummeler
+								i(125793),	-- Warmongering Gladiator's Quickblade
+								i(126272),	-- Warmongering Gladiator's Quickblade
+								i(125862),	-- Warmongering Gladiator's Redoubt
+								i(126341),	-- Warmongering Gladiator's Redoubt
+								i(125952),	-- Warmongering Gladiator's Render
+								i(126431),	-- Warmongering Gladiator's Render
+								i(125856),	-- Warmongering Gladiator's Reprieve
+								i(126335),	-- Warmongering Gladiator's Reprieve
+								i(125796),	-- Warmongering Gladiator's Rifle
+								i(126275),	-- Warmongering Gladiator's Rifle
+								i(125791),	-- Warmongering Gladiator's Ripper
+								i(126270),	-- Warmongering Gladiator's Ripper
+								i(125790),	-- Warmongering Gladiator's Shanker
+								i(126269),	-- Warmongering Gladiator's Shanker
+								i(125965),	-- Warmongering Gladiator's Shield Wall
+								i(126444),	-- Warmongering Gladiator's Shield Wall
+								i(125954),	-- Warmongering Gladiator's Slicer
+								i(126433),	-- Warmongering Gladiator's Slicer
+								i(125840),	-- Warmongering Gladiator's Spellblade
+								i(126319),	-- Warmongering Gladiator's Spellblade
+								i(125798),	-- Warmongering Gladiator's Staff
+								i(126277),	-- Warmongering Gladiator's Staff
+								i(125844),	-- Warmongering Gladiator's Touch of Defeat
+								i(126323),	-- Warmongering Gladiator's Touch of Defeat
 							},
-							["ignoreBonus"] = true,
-							["itemID"] = 138636,
-						},
+							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+						}),	
 						i(126342),-- Warmongering Gladiator's Barrier
 						i(126322),-- Warmongering Gladiator's Baton of Light
 						i(126324),-- Warmongering Gladiator's Battle Staff
