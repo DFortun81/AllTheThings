@@ -7137,6 +7137,195 @@ _.Zones =
 					n(86639, { -- Altar of Bones
 						["groups"] = {
 							i(118043, { -- Broken Bones
+								i(125984),	-- Warmongering Gladiator's Accolade of Conquest
+								i(125985),	-- Warmongering Gladiator's Accolade of Dominance
+								i(125988),	-- Warmongering Gladiator's Accolade of Endurance
+								i(125987),	-- Warmongering Gladiator's Accolade of Meditation
+								i(125986),	-- Warmongering Gladiator's Accolade of Victory
+								i(125819),	-- Warmongering Gladiator's Amice of Prowess
+								i(139031),	-- Warmongering Gladiator's Armbands of Alacrity
+								i(125895),	-- Warmongering Gladiator's Armbands of Cruelty
+								i(125894),	-- Warmongering Gladiator's Armbands of Prowess
+								i(125896),	-- Warmongering Gladiator's Armbands of Victory
+								i(125897),	-- Warmongering Gladiator's Armor
+								i(125923),	-- Warmongering Gladiator's Armplates of Cruelty
+								i(125924),	-- Warmongering Gladiator's Armplates of Prowess
+								i(125925),	-- Warmongering Gladiator's Armplates of Victory
+								i(125983),	-- Warmongering Gladiator's Badge of Adaptation
+								i(125970),	-- Warmongering Gladiator's Badge of Conquest
+								i(125975),	-- Warmongering Gladiator's Badge of Dominance
+								i(125981),	-- Warmongering Gladiator's Badge of Victory
+								i(125861),	-- Warmongering Gladiator's Band of Contemplation
+								i(125857),	-- Warmongering Gladiator's Band of Cruelty
+								i(125860),	-- Warmongering Gladiator's Band of Meditation
+								i(125858),	-- Warmongering Gladiator's Band of Prowess
+								i(125859),	-- Warmongering Gladiator's Band of Victory
+								i(125863),	-- Warmongering Gladiator's Barrier
+								i(125865),	-- Warmongering Gladiator's Belt of Cruelty
+								i(125864),	-- Warmongering Gladiator's Belt of Prowess
+								i(125866),	-- Warmongering Gladiator's Belt of Victory
+								i(125870),	-- Warmongering Gladiator's Bindings of Cruelty
+								i(125871),	-- Warmongering Gladiator's Bindings of Prowess
+								i(125872),	-- Warmongering Gladiator's Bindings of Victory
+								i(125867),	-- Warmongering Gladiator's Boots of Cruelty
+								i(125868),	-- Warmongering Gladiator's Boots of Prowess
+								i(125869),	-- Warmongering Gladiator's Boots of Victory
+								i(125799),	-- Warmongering Gladiator's Cape of Cruelty
+								i(125800),	-- Warmongering Gladiator's Cape of Prowess
+								i(125835),	-- Warmongering Gladiator's Chain Armor
+								i(125836),	-- Warmongering Gladiator's Chain Gauntlets
+								i(125837),	-- Warmongering Gladiator's Chain Helm
+								i(125838),	-- Warmongering Gladiator's Chain Leggings
+								i(125839),	-- Warmongering Gladiator's Chain Spaulders
+								i(125878),	-- Warmongering Gladiator's Chestguard
+								i(125902),	-- Warmongering Gladiator's Chestguard
+								i(125960),	-- Warmongering Gladiator's Choker of Cruelty
+								i(125967),	-- Warmongering Gladiator's Choker of Endurance
+								i(125961),	-- Warmongering Gladiator's Choker of Prowess
+								i(125958),	-- Warmongering Gladiator's Cloak of Cruelty
+								i(125966),	-- Warmongering Gladiator's Cloak of Endurance
+								i(125959),	-- Warmongering Gladiator's Cloak of Prowess
+								i(125904),	-- Warmongering Gladiator's Coif
+								i(125806),	-- Warmongering Gladiator's Cord of Cruelty
+								i(125807),	-- Warmongering Gladiator's Cord of Prowess
+								i(125808),	-- Warmongering Gladiator's Cord of Victory
+								i(125821),	-- Warmongering Gladiator's Cowl of Cruelty
+								i(125813),	-- Warmongering Gladiator's Cuffs of Cruelty
+								i(125812),	-- Warmongering Gladiator's Cuffs of Prowess
+								i(125814),	-- Warmongering Gladiator's Cuffs of Victory
+								i(125830),	-- Warmongering Gladiator's Dragonhide Gloves
+								i(125831),	-- Warmongering Gladiator's Dragonhide Helm
+								i(125832),	-- Warmongering Gladiator's Dragonhide Legguards
+								i(125833),	-- Warmongering Gladiator's Dragonhide Robes
+								i(125834),	-- Warmongering Gladiator's Dragonhide Spaulders
+								i(125850),	-- Warmongering Gladiator's Drape of Contemplation
+								i(125847),	-- Warmongering Gladiator's Drape of Cruelty
+								i(125849),	-- Warmongering Gladiator's Drape of Meditation
+								i(125848),	-- Warmongering Gladiator's Drape of Prowess
+								i(125825),	-- Warmongering Gladiator's Dreadplate Chestpiece
+								i(125826),	-- Warmongering Gladiator's Dreadplate Gauntlets
+								i(125827),	-- Warmongering Gladiator's Dreadplate Helm
+								i(125828),	-- Warmongering Gladiator's Dreadplate Legguards
+								i(125829),	-- Warmongering Gladiator's Dreadplate Shoulders
+								i(125972),	-- Warmongering Gladiator's Emblem of Cruelty
+								i(125974),	-- Warmongering Gladiator's Emblem of Meditation
+								i(125973),	-- Warmongering Gladiator's Emblem of Tenacity
+								i(125855),	-- Warmongering Gladiator's Endgame
+								i(125993),	-- Warmongering Gladiator's Felweave Amice
+								i(125990),	-- Warmongering Gladiator's Felweave Cowl
+								i(125989),	-- Warmongering Gladiator's Felweave Handguards
+								i(125992),	-- Warmongering Gladiator's Felweave Raiment
+								i(125991),	-- Warmongering Gladiator's Felweave Trousers
+								i(125891),	-- Warmongering Gladiator's Footguards of Cruelty
+								i(125892),	-- Warmongering Gladiator's Footguards of Prowess
+								i(125893),	-- Warmongering Gladiator's Footguards of Victory
+								i(125898),	-- Warmongering Gladiator's Gauntlets
+								i(125917),	-- Warmongering Gladiator's Girdle of Cruelty
+								i(125918),	-- Warmongering Gladiator's Girdle of Prowess
+								i(125919),	-- Warmongering Gladiator's Girdle of Victory
+								i(125874),	-- Warmongering Gladiator's Gloves
+								i(125903),	-- Warmongering Gladiator's Gloves
+								i(125815),	-- Warmongering Gladiator's Gloves of Prowess
+								i(127377),	-- Warmongering Gladiator's Greatcloak
+								i(125879),	-- Warmongering Gladiator's Grips
+								i(125820),	-- Warmongering Gladiator's Handguards of Cruelty
+								i(125880),	-- Warmongering Gladiator's Headcover
+								i(125875),	-- Warmongering Gladiator's Helm
+								i(125899),	-- Warmongering Gladiator's Helm
+								i(125816),	-- Warmongering Gladiator's Hood of Prowess
+								i(125971),	-- Warmongering Gladiator's Insignia of Conquest
+								i(125976),	-- Warmongering Gladiator's Insignia of Dominance
+								i(125982),	-- Warmongering Gladiator's Insignia of Victory
+								i(125907),	-- Warmongering Gladiator's Ironskin Gloves
+								i(125908),	-- Warmongering Gladiator's Ironskin Helm
+								i(125909),	-- Warmongering Gladiator's Ironskin Legguards
+								i(125910),	-- Warmongering Gladiator's Ironskin Spaulders
+								i(125911),	-- Warmongering Gladiator's Ironskin Tunic
+								i(125942),	-- Warmongering Gladiator's Leather Gloves
+								i(125943),	-- Warmongering Gladiator's Leather Helm
+								i(125944),	-- Warmongering Gladiator's Leather Legguards
+								i(125945),	-- Warmongering Gladiator's Leather Spaulders
+								i(125941),	-- Warmongering Gladiator's Leather Tunic
+								i(125900),	-- Warmongering Gladiator's Leggings
+								i(125881),	-- Warmongering Gladiator's Leggings
+								i(125905),	-- Warmongering Gladiator's Leggings
+								i(125817),	-- Warmongering Gladiator's Leggings of Prowess
+								i(125876),	-- Warmongering Gladiator's Legguards
+								i(125929),	-- Warmongering Gladiator's Legplates
+								i(125824),	-- Warmongering Gladiator's Mantle of Cruelty
+								i(127125),	-- Warmongering Gladiator's Medallion of Adaptation
+								i(125977),	-- Warmongering Gladiator's Medallion of Cruelty
+								i(125980),	-- Warmongering Gladiator's Medallion of Meditation
+								i(125979),	-- Warmongering Gladiator's Medallion of Tenacity
+								i(125801),	-- Warmongering Gladiator's Necklace of Cruelty
+								i(125802),	-- Warmongering Gladiator's Necklace of Prowess
+								i(125882),	-- Warmongering Gladiator's Pauldrons
+								i(125906),	-- Warmongering Gladiator's Pauldrons
+								i(125854),	-- Warmongering Gladiator's Pendant of Contemplation
+								i(125851),	-- Warmongering Gladiator's Pendant of Cruelty
+								i(125853),	-- Warmongering Gladiator's Pendant of Meditation
+								i(125852),	-- Warmongering Gladiator's Pendant of Prowess
+								i(125926),	-- Warmongering Gladiator's Plate Breastplate
+								i(125931),	-- Warmongering Gladiator's Plate Chestguard
+								i(125994),	-- Warmongering Gladiator's Plate Chestpiece
+								i(125995),	-- Warmongering Gladiator's Plate Gauntlets
+								i(125927),	-- Warmongering Gladiator's Plate Gloves
+								i(125932),	-- Warmongering Gladiator's Plate Grips
+								i(125996),	-- Warmongering Gladiator's Plate Helm
+								i(125928),	-- Warmongering Gladiator's Plate Helmet
+								i(125934),	-- Warmongering Gladiator's Plate Leggings
+								i(125997),	-- Warmongering Gladiator's Plate Legguards
+								i(125935),	-- Warmongering Gladiator's Plate Pauldrons
+								i(125998),	-- Warmongering Gladiator's Plate Shoulders
+								i(125933),	-- Warmongering Gladiator's Plate Visor
+								i(125823),	-- Warmongering Gladiator's Raiment of Cruelty
+								i(125862),	-- Warmongering Gladiator's Redoubt
+								i(125856),	-- Warmongering Gladiator's Reprieve
+								i(125803),	-- Warmongering Gladiator's Ring of Cruelty
+								i(125804),	-- Warmongering Gladiator's Ring of Prowess
+								i(125805),	-- Warmongering Gladiator's Ring of Triumph
+								i(125946),	-- Warmongering Gladiator's Ringmail Armor
+								i(125947),	-- Warmongering Gladiator's Ringmail Gauntlets
+								i(125948),	-- Warmongering Gladiator's Ringmail Helm
+								i(125949),	-- Warmongering Gladiator's Ringmail Kilt
+								i(125950),	-- Warmongering Gladiator's Ringmail Spaulders
+								i(125818),	-- Warmongering Gladiator's Robes of Prowess
+								i(125936),	-- Warmongering Gladiator's Satin Gloves
+								i(125937),	-- Warmongering Gladiator's Satin Hood
+								i(125938),	-- Warmongering Gladiator's Satin Leggings
+								i(125940),	-- Warmongering Gladiator's Satin Mantle
+								i(125939),	-- Warmongering Gladiator's Satin Robe
+								i(125912),	-- Warmongering Gladiator's Scaled Chestpiece
+								i(125913),	-- Warmongering Gladiator's Scaled Gauntlets
+								i(125914),	-- Warmongering Gladiator's Scaled Helm
+								i(125915),	-- Warmongering Gladiator's Scaled Legguards
+								i(125916),	-- Warmongering Gladiator's Scaled Shoulders
+								i(125965),	-- Warmongering Gladiator's Shield Wall
+								i(125930),	-- Warmongering Gladiator's Shoulderplates
+								i(125963),	-- Warmongering Gladiator's Signet of Accuracy
+								i(125962),	-- Warmongering Gladiator's Signet of Cruelty
+								i(125968),	-- Warmongering Gladiator's Signet of Dedication
+								i(125969),	-- Warmongering Gladiator's Signet of Endurance
+								i(125964),	-- Warmongering Gladiator's Signet of Ruthlessness
+								i(125887),	-- Warmongering Gladiator's Silk Amice
+								i(125884),	-- Warmongering Gladiator's Silk Cowl
+								i(125883),	-- Warmongering Gladiator's Silk Handguards
+								i(125886),	-- Warmongering Gladiator's Silk Robe
+								i(125885),	-- Warmongering Gladiator's Silk Trousers
+								i(125877),	-- Warmongering Gladiator's Spaulders
+								i(125901),	-- Warmongering Gladiator's Spaulders
+								i(127369),	-- Warmongering Gladiator's Tabard
+								i(125809),	-- Warmongering Gladiator's Treads of Cruelty
+								i(125810),	-- Warmongering Gladiator's Treads of Prowess
+								i(125811),	-- Warmongering Gladiator's Treads of Victory
+								i(125822),	-- Warmongering Gladiator's Trousers of Cruelty
+								i(125873),	-- Warmongering Gladiator's Tunic
+								i(125888),	-- Warmongering Gladiator's Waistguard of Cruelty
+								i(125889),	-- Warmongering Gladiator's Waistguard of Prowess
+								i(125890),	-- Warmongering Gladiator's Waistguard of Victory
+								i(125920),	-- Warmongering Gladiator's Warboots of Cruelty
+								i(125921),	-- Warmongering Gladiator's Warboots of Prowess
+								i(125922),	-- Warmongering Gladiator's Warboots of Victory
 								i(126158),	-- Warmongering Combatant's Accolade of Conquest
 								i(126159),	-- Warmongering Combatant's Accolade of Dominance
 								i(126162),	-- Warmongering Combatant's Accolade of Endurance
