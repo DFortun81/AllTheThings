@@ -7,7 +7,7 @@ _.Zones =
 		a(m(971, {	-- Lunarfall other mapid's 971, 973, 974, 975
 					-- Lucetia: MapID 991 was used and only worked in Shadowmoon Valley.  Changing it to 971 should work.
 			["groups"] = {				
-				na(-3, { 	 -- Holidays
+				na(-3, { 	-- Holidays
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							na(-25, { 	 -- Pet Battle
@@ -121,7 +121,7 @@ _.Zones =
 						["u"] = 29,
 					}),						
 				}),								
-				na(-4, { 	 -- Achievements
+				na(-4, { 	-- Achievements
 					ach(9912, { 		-- Azeroth's Top Twenty Tunes
 						i(122700), 			-- Toy
 					}),
@@ -160,7 +160,7 @@ _.Zones =
 						}),
 					}),					
 				}),
-				na(-136, { 	 -- Invasions
+				na(-136, { 	-- Invasions
 					["groups"] = {
 						i(120320, { -- Invader's Abandoned Sack
 							["groups"] = {
@@ -570,7 +570,7 @@ _.Zones =
 					},
 					["description"] = "To trigger an invasion, you need to do an assault quest or purchase a scouting missive from the garrison quartermaster. \n\nBotani Invasion -- Assault on Lost Veil Anzu, Assault on the Everbloom Wilds \n\nGoren Invasion -- Assault on Magnarok, Assault on the Broken Precipice \n\nIron Horde Invasion -- Assault on Mok'gol Watchpost, Assault on the Iron Siegeworks, Assault on the Pit, Battle in Ashran \n\nOgre Invasion -- Assault on Stonefury Cliffs, Assault on the Gorian Proving Grounds, Challenge at the Ring of Blood \n\nShadow Council Invasion -- Assault on Shattrath Harbor, Assault on the Heart of Shattrath \n\nShadowmoon Invasion -- Assault on Darktide Roost, Assault on Pillars of Fate, Assault on Skettis, Assault on Socrethar's Rise \n\nYou can earn Bronze, Silver, Gold, and Platinum rewards once per week per toon.",
 				}),					
-				na(-299, {   -- Missions
+				na(-299, {  -- Missions
 					["groups"] = {
 						n(84698, { 		-- Command Table
 							["groups"] = {
@@ -1582,7 +1582,7 @@ _.Zones =
 					},
 					["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r"
 				}),	
-				na(-25, { 	 -- Pet Battle
+				na(-25, { 	-- Pet Battle
 					qa(38299, { 
 						i(122535, {
 							i(122532), 	-- Pet
@@ -1602,7 +1602,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				na(-17, { 	 -- Quests
+				na(-17, { 	-- Quests
 					qa(38356, { -- Bringing the Bass
 						i(122613, { -- Stash of Dusty Music Rolls
 							i(122209), -- Music Roll: Curse of the Worgen
@@ -6553,7 +6553,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				na(-16, { 	 -- Rares
+				na(-16, { 	-- Rares
 					n(-103, { 			-- Barn
 						o(239171, { 		-- Glass of Warm Milk
 							["groups"] = {	
@@ -6571,7 +6571,7 @@ _.Zones =
 						}),
 					}),					
 				}),
-				na(-113, { 	 -- Salvage Yard
+				na(-113, { 	-- Salvage Yard
 						i(140590, {
 						n(-140, { 	-- Communal
 							["groups"] = {
@@ -6753,13 +6753,13 @@ _.Zones =
 						}),
 					}),
 				}),
-				a(n(82717, { -- Soulare of Andorhal
+				na(82717, { -- Soulare of Andorhal
 					["groups"] = {
 						i(117573), 		-- Toy
 					},
 					["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit from Lunarfall Inn using either Magic Debuff or Wild Aggression. |r\n|cff3399ffStep 2:|r |cff66ccffDo a /tired emote and he will award the toy. |r\n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison.|r"
-				})),
-				na(-2, { 	 -- Vendors
+				}),
+				na(-2, { 	-- Vendors
 					na(80159, { 	-- Arsenio Zerep <Cook>
 						i(122556),	-- Recipe: Buttered Sturgeon
 						i(122557),	-- Recipe: Jumbo Sea Dog
@@ -7133,6 +7133,126 @@ _.Zones =
 						}),	
 					}),
 				}),
+				na(-153, { -- Work Orders
+					n(86639, { -- Altar of Bones
+						["groups"] = {
+							i(118043, { -- Broken Bones
+								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
+								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
+								i(126255),	-- Warmongering Aspirant's Accolade of Victory
+								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126206),	-- Warmongering Aspirant's Band of Contemplation
+								i(126203),	-- Warmongering Aspirant's Band of Cruelty
+								i(126205),	-- Warmongering Aspirant's Band of Meditation
+								i(126204),	-- Warmongering Aspirant's Band of Prowess
+								i(126207),	-- Warmongering Aspirant's Belt of Prowess
+								i(126209),	-- Warmongering Aspirant's Bindings of Cruelty
+								i(126208),	-- Warmongering Aspirant's Boots of Cruelty
+								i(126177),	-- Warmongering Aspirant's Cape of Cruelty
+								i(126194),	-- Warmongering Aspirant's Chain Armor
+								i(126195),	-- Warmongering Aspirant's Chain Gauntlets
+								i(126196),	-- Warmongering Aspirant's Chain Helm
+								i(126197),	-- Warmongering Aspirant's Chain Leggings
+								i(126198),	-- Warmongering Aspirant's Chain Spaulders
+								i(126247),	-- Warmongering Aspirant's Choker of Cruelty
+								i(126250),	-- Warmongering Aspirant's Choker of Endurance
+								i(126246),	-- Warmongering Aspirant's Cloak of Cruelty
+								i(126249),	-- Warmongering Aspirant's Cloak of Endurance
+								i(126181),	-- Warmongering Aspirant's Cord of Cruelty
+								i(126183),	-- Warmongering Aspirant's Cuffs of Prowess
+								i(126189),	-- Warmongering Aspirant's Dragonhide Gloves
+								i(126190),	-- Warmongering Aspirant's Dragonhide Helm
+								i(126191),	-- Warmongering Aspirant's Dragonhide Legguards
+								i(126193),	-- Warmongering Aspirant's Dragonhide Spaulders
+								i(126192),	-- Warmongering Aspirant's Dragonhide Tunic
+								i(126199),	-- Warmongering Aspirant's Drape of Cruelty
+								i(126200),	-- Warmongering Aspirant's Drape of Meditation
+								i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece
+								i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets
+								i(126186),	-- Warmongering Aspirant's Dreadplate Helm
+								i(126187),	-- Warmongering Aspirant's Dreadplate Legguards
+								i(126188),	-- Warmongering Aspirant's Dreadplate Shoulders
+								i(126262),	-- Warmongering Aspirant's Felweave Amice
+								i(126259),	-- Warmongering Aspirant's Felweave Cowl
+								i(126258),	-- Warmongering Aspirant's Felweave Handguards
+								i(126261),	-- Warmongering Aspirant's Felweave Raiment
+								i(126260),	-- Warmongering Aspirant's Felweave Trousers
+								i(126216),	-- Warmongering Aspirant's Footguards of Cruelty
+								i(126228),	-- Warmongering Aspirant's Girdle of Cruelty
+								i(126218),	-- Warmongering Aspirant's Ironskin Gloves
+								i(126219),	-- Warmongering Aspirant's Ironskin Helm
+								i(126220),	-- Warmongering Aspirant's Ironskin Legguards
+								i(126221),	-- Warmongering Aspirant's Ironskin Spaulders
+								i(126222),	-- Warmongering Aspirant's Ironskin Tunic
+								i(126237),	-- Warmongering Aspirant's Leather Gloves
+								i(126238),	-- Warmongering Aspirant's Leather Helm
+								i(126239),	-- Warmongering Aspirant's Leather Legguards
+								i(126240),	-- Warmongering Aspirant's Leather Spaulders
+								i(126236),	-- Warmongering Aspirant's Leather Tunic
+								i(126178),	-- Warmongering Aspirant's Necklace of Cruelty
+								i(126201),	-- Warmongering Aspirant's Pendant of Cruelty
+								i(126202),	-- Warmongering Aspirant's Pendant of Meditation
+								i(126263),	-- Warmongering Aspirant's Plate Chestpiece
+								i(126264),	-- Warmongering Aspirant's Plate Gauntlets
+								i(126265),	-- Warmongering Aspirant's Plate Helm
+								i(126266),	-- Warmongering Aspirant's Plate Legguards
+								i(126267),	-- Warmongering Aspirant's Plate Shoulders
+								i(126179),	-- Warmongering Aspirant's Ring of Cruelty
+								i(126180),	-- Warmongering Aspirant's Ring of Prowess
+								i(126241),	-- Warmongering Aspirant's Ringmail Armor
+								i(126242),	-- Warmongering Aspirant's Ringmail Gauntlets
+								i(126243),	-- Warmongering Aspirant's Ringmail Helm
+								i(126244),	-- Warmongering Aspirant's Ringmail Leggings
+								i(126245),	-- Warmongering Aspirant's Ringmail Spaulders
+								i(126231),	-- Warmongering Aspirant's Satin Gloves
+								i(126232),	-- Warmongering Aspirant's Satin Hood
+								i(126233),	-- Warmongering Aspirant's Satin Leggings
+								i(126235),	-- Warmongering Aspirant's Satin Mantle
+								i(126234),	-- Warmongering Aspirant's Satin Robe
+								i(126223),	-- Warmongering Aspirant's Scaled Chestpiece
+								i(126224),	-- Warmongering Aspirant's Scaled Gauntlets
+								i(126225),	-- Warmongering Aspirant's Scaled Helm
+								i(126226),	-- Warmongering Aspirant's Scaled Legguards
+								i(126227),	-- Warmongering Aspirant's Scaled Shoulders
+								i(127120),	-- Warmongering Aspirant's Signet of Accuracy
+								i(126248),	-- Warmongering Aspirant's Signet of Cruelty
+								i(126251),	-- Warmongering Aspirant's Signet of Dedication
+								i(126252),	-- Warmongering Aspirant's Signet of Endurance
+								i(126214),	-- Warmongering Aspirant's Silk Amice
+								i(126211),	-- Warmongering Aspirant's Silk Cowl
+								i(126210),	-- Warmongering Aspirant's Silk Handguards
+								i(126213),	-- Warmongering Aspirant's Silk Robe
+								i(126212),	-- Warmongering Aspirant's Silk Trousers
+								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
+								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+								i(125116),	-- Wild Aspirant's Armplates of Cruelty
+								i(125070),	-- Wild Aspirant's Dreadplate Chestpiece
+								i(125071),	-- Wild Aspirant's Dreadplate Gauntlets
+								i(125072),	-- Wild Aspirant's Dreadplate Helm
+								i(125073),	-- Wild Aspirant's Dreadplate Legguards
+								i(125074),	-- Wild Aspirant's Dreadplate Shoulders
+								i(125114),	-- Wild Aspirant's Girdle of Cruelty
+								i(125149),	-- Wild Aspirant's Plate Chestpiece
+								i(125150),	-- Wild Aspirant's Plate Gauntlets
+								i(125151),	-- Wild Aspirant's Plate Helm
+								i(125152),	-- Wild Aspirant's Plate Legguards
+								i(125153),	-- Wild Aspirant's Plate Shoulders
+								i(125109),	-- Wild Aspirant's Scaled Chestpiece
+								i(125110),	-- Wild Aspirant's Scaled Gauntlets
+								i(125111),	-- Wild Aspirant's Scaled Helm
+								i(125112),	-- Wild Aspirant's Scaled Legguards
+								i(125113),	-- Wild Aspirant's Scaled Shoulders
+								i(125115),	-- Wild Aspirant's Warboots of Cruelty
+							}),
+						},
+						["description"] = "Gladiator's Sanctum",
+					}),
+				}),
+				
 			},
 			["lvl"] = 90,
 			["isRaid"] = true,
