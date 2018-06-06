@@ -915,6 +915,7 @@ AllTheThings.Locales.enUS = {
 		[-150] = "Trailseeker",
 		[-151] = "Soulare of Andorhal",
 		[-152] = "Garrison Campaign",
+		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 -- Expansions
 		[-160] = TUTORIAL_TITLE53,												-- Mounts
 -- Other
