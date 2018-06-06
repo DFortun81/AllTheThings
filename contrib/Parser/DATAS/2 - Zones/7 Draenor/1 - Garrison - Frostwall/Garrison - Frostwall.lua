@@ -7228,7 +7228,6 @@ _.Zones =
 								i(126353),	-- Warmongering Gladiator's Gloves
 								i(126382),	-- Warmongering Gladiator's Gloves
 								i(126294),	-- Warmongering Gladiator's Gloves of Prowess
-								i(127376),	-- Warmongering Gladiator's Greatcloak
 								i(126358),	-- Warmongering Gladiator's Grips
 								i(126299),	-- Warmongering Gladiator's Handguards of Cruelty
 								i(126359),	-- Warmongering Gladiator's Headcover
@@ -7316,7 +7315,6 @@ _.Zones =
 								i(126364),	-- Warmongering Gladiator's Silk Trousers
 								i(126356),	-- Warmongering Gladiator's Spaulders
 								i(126380),	-- Warmongering Gladiator's Spaulders
-								i(127371),	-- Warmongering Gladiator's Tabard
 								i(126288),	-- Warmongering Gladiator's Treads of Cruelty
 								i(126289),	-- Warmongering Gladiator's Treads of Prowess
 								i(126290),	-- Warmongering Gladiator's Treads of Victory
