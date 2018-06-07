@@ -116,6 +116,106 @@ _.Zones =
 					qg(66512, q(31911)),	-- Deiza Plaguehorn
 				}),
 				n(-17, {	-- Quests
+					ach(4892, { -- Eastern Plaugelands Quests
+						crit(1, { -- The Paladin Pals
+							q(27684, {	-- Visitors
+								["groups"] = {
+								},
+								["qg"] = 11034,	-- Lord Maxwell Tyrosus
+								["isBreadcrumb"] = true,	-- for "Gidwin Goldbraids"
+							}),
+							 q(27367, {	-- Gidwin Goldbraids
+								["groups"] = {
+								},
+								["qg"] = 45417,	-- Fiona
+								["breadcrumbQuestID"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
+							}),
+							q(27368, {	-- Just Encased
+								["groups"] = {
+								},
+								["qg"] = 45428,	-- Gidwin Goldbraids
+								["sourceQuests"] = { 27367 },	-- Gidwin Goldbraids
+							}),
+							q(27369, { -- Greasing the Wheel (secondary QG ID 45431)
+								["groups"] = {
+								i(62938),  -- Giddy's Old Gloves
+								i(62937),  -- Thorondoril River Boots
+								i(62936),  -- Treads of Banshee Bells
+								i(62935),  -- Flower Picker's Gloves
+								i(131668), -- Stem-Laced Boots
+								},
+								["qg"] = 42428, -- Gidwin Goldbraids
+								["sourceQuests"] = { 27368 },	-- Just Encased
+							}),
+							q(27370, {	-- Tarenar Sunstrike
+								["groups"] = {
+								},
+								["qg"] = 45417,	-- Fiona
+								["breadcrumbQuestID"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
+							}),
+							q(27371, {  -- What I Do Best
+								["groups"] = {
+								},
+								["qg"] = 45429, -- Tarenar Sunstrike
+								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
+							}),
+							q(27372, { -- A Gift For Fiona
+								["groups"] = {
+									i(62943),  -- Helm of Thoughtful Gifts
+									i(62942),  -- Gentling Breastplate
+									i(62941),  -- Plaguehound Armbands
+									i(62940),  -- Belt of Appeasement
+									i(62939),  -- Caravan Sash
+									i(131669), -- Plaguehound Bracers
+									i(131670), -- Cinch of Good Will
+								},
+								["qg"] = 45429, -- Tarenar Sunstrike
+								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
+							}),
+							q(27373, {	-- Onward, to Light's Hope Chapel
+								["groups"] = {
+								},
+								["qg"] = 45417,	-- Fiona
+							}),
+						}),
+						crit(2, { -- The Redpaths of Darrowshire
+						}),
+						crit(3, { -- Tyr's Hand
+						}),
+						crit(4, { -- Serving the Argent Crusade
+						}),
+						crit(5, { -- Journey's End
+						}),
+					}),
+					--[[
+					n(-168, { -- Other Quests
+						Exploration Achievement: 771
+					1	Thondroril River
+					2	The Marris Stead
+					3	The Undercroft
+					4	Crown Guard Tower
+					5	The Fungal Vale
+					6	Darrowshire
+					7	Pestilent Scar
+					8	Corin's Crossing
+					9	Lake Mereldar
+					10	Tyr's Hand
+					11	Light's Hope Chapel
+					12	The Infectis Scar
+					13	The Noxious Glade
+					14	Eastwall Tower
+					15	Blackwood Lake
+					16	Northdale
+					17	Zul'Mashar
+					18	Northpass Tower
+					19	Quel'Lithien Lodge
+					20	Terrordale
+					21	Plaguewood
+					22	Stratholme
+					23	Ruins of the Scarlet Enclave
+					})
+					--]]
+
 --					qg(45431, q(27463)),	-- A Boyhood Dream
 					qdg(qg(45482, q(27422))),	-- A City Under Siege
 					qg(12384, q(27533, { -- A Fate Worse Than Butchery
@@ -123,15 +223,6 @@ _.Zones =
 						i(63005),
 						i(63004),
 						i(63003),
-					})),
-					qg(45429, q(27372, { -- A Gift For Fiona
-						i(62943),
-						i(62942),
-						i(62941),
-						i(62940),
-						i(62939),
-						i(131669),
-						i(131670),
 					})),
 --					qg(11063, q(27386)),	-- A Strange Historian
 					qdg(qg(49856, q(28756))),	-- Aberrations of Bone
@@ -219,18 +310,8 @@ _.Zones =
 						i(62979),
 					})),
 --[[
-					qg(45417, q(27367)),	-- Gidwin Goldbraids
 					qg(45729, q(27526)),	-- Gidwin's Fate Revealed
 					qg(45400, q(27556)),	-- Gidwin's Weapon Oil
---]]
-					qg(45428, q(27369, { -- Greasing the Wheel (secondary QG ID 45431)
-						i(62938),
-						i(62937),
-						i(62936),
-						i(62935),
-						i(131668),
-					})),
---[[
 					qg(45729, q(27525)),	-- Guardians of Stratholme
 					qg(10667, q(27388)),	-- Heroes of Darrowshire
 --]]
@@ -268,7 +349,6 @@ _.Zones =
 					})),
 --[[
 					qg(45828, q(27535)),	-- Just a Little Touched
-					qg(45428, q(27368)),	-- Just Encased
 --]]
 					qg(16116, q(27620, { -- Like Rats
 						i(62998),
@@ -278,7 +358,6 @@ _.Zones =
 					qg(11063, q(27383)),	-- Little Pamela
 					qg(10667, q(27389)),	-- Marauders of Darrowshire
 					qg(45729, q(27489)),	-- Nobody to Blame but Myself
-					qg(45417, q(27373)),	-- Onward, to Light's Hope Chapel
 					qg(45574, q(27481)),	-- Out of the Ziggurat
 					qg(45400, q(27558)),	-- Pamela's Doll
 					qg(10926, q(27384)),	-- Pamela's Doll
@@ -299,7 +378,6 @@ _.Zones =
 					qg(45831, q(27528)),	-- Scourged Mass
 					qg(11033, q(27458)),	-- Smokey and the Bandage
 					qg(16116, q(27460)),	-- Soft Landing
-					qg(45417, q(27370)),	-- Tarenar Sunstrike
 					qg(45400, q(27557)),	-- Tarenar's Talisman
 --]]
 					qg(16115, q(27613, { -- The Assassin
@@ -366,8 +444,6 @@ _.Zones =
 						i(62951),
 					})),
 --[[
-					qg(11034, q(27684)),	-- Visitors
-					qg(45429, q(27371)),	-- What I Do Best
 					qg(31084, qa(13188)),	-- Where Kings Walk
 					qg(45826, q(27521)),	-- Wretched Hive of Scum and Villainy
 					qg(45500, q(27432)),	-- Zaeldarr the Outcast
