@@ -105,7 +105,7 @@ _.PetJournal =
 		p(716),		-- Amethyst Spiderling
 		p(2122),	-- Antoran Bile Larva
 		p(558),		-- Arctic Fox Kit
-		p(1603),	-- Argi
+		un(35, p(1603)),	-- Argi
 		p(632),		-- Ash Lizard
 		p(427),		-- Ash Spiderling
 		p(425),		-- Ash Viper
@@ -196,7 +196,7 @@ _.PetJournal =
 		p(450),		-- Maggot
 		p(1446),	-- Meadowstomper Calf
 		p(2064),	-- Mining Monkey
-		p(1936),	-- Mischief
+		un(35, p(1936)),	-- Mischief
 		p(1744),	-- Mist Fox Kit
 		p(422),		-- Moccasin
 		p(428),		-- Molten Hatchling
@@ -275,7 +275,7 @@ _.PetJournal =
 		p(418),		-- Water Snake
 		p(46),		-- White Kitten
 		p(400),		-- Widow Spiderling
-		p(246),		-- Wind Rider Cub
+		un(2, p(246)),		-- Wind Rider Cub
 		p(306),		-- Winterspring Cub
 		p(89),		-- Worg Pup
 		p(1266),	-- Xu-Fu, Cub of Xuen
