@@ -1149,7 +1149,7 @@ _.Zones =
 								i(102790),	-- Grievous Gladiator's Touch of Defeat
 								i(103177),	-- Grievous Gladiator's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(102895),	-- Grievous Gladiator's Warboots of Cruelty
 						i(102787),	-- Grievous Gladiator's Gavel
@@ -1943,7 +1943,7 @@ _.Zones =
 								i(102593),	-- Prideful Gladiator's Touch of Defeat
 								i(103374),	-- Prideful Gladiator's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(103444),	-- Prideful Gladiator's Clasp of Cruelty
 						i(147362),	-- Prideful Gladiator's Cord of Prowess

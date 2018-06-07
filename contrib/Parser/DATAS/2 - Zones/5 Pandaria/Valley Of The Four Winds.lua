@@ -1222,7 +1222,7 @@ _.Zones =
 								i(102790),	-- Grievous Gladiator's Touch of Defeat
 								i(103177),	-- Grievous Gladiator's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(103139),	-- Grievous Gladiator's Decapitator
 						i(103141),	-- Grievous Gladiator's Greatsword
@@ -1883,7 +1883,7 @@ _.Zones =
 								i(102593),	-- Prideful Gladiator's Touch of Defeat
 								i(103374),	-- Prideful Gladiator's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(102610),	-- Prideful Gladiator's Decapitator
 						i(102599),	-- Prideful Gladiator's Greatsword
