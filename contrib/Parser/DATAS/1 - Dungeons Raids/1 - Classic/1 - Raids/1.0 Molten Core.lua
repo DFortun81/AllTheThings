@@ -404,7 +404,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(18564, {	-- Bindings of the Windseeker (Right)
 					["groups"] = {
 						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
-							ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
+							ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
+								["groups"] = {
+								},
+								["collectible"] = false,
+							}),
 						}),
 					},
 					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 }, -- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
@@ -470,7 +474,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(18563, {	-- Bindings of the Windseeker (Left)
 					["groups"] = {
 						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
-							ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
+							ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
+								["groups"] = {
+								},
+								["collectible"] = false,
+							}),
 						}),
 					},
 					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 }, -- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
