@@ -296,7 +296,7 @@ _.Zones =
 								i(125844),	-- Warmongering Gladiator's Touch of Defeat
 								i(126323),	-- Warmongering Gladiator's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),	
 						i(126342),-- Warmongering Gladiator's Barrier
 						i(126322),-- Warmongering Gladiator's Baton of Light
@@ -546,7 +546,7 @@ _.Zones =
 								i(124730),	-- Wild Gladiator's Touch of Defeat
 								i(125209),	-- Wild Gladiator's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(125154),	-- Wild Gladiator's Cleaver
 						i(125155),	-- Wild Gladiator's Shanker
@@ -778,7 +778,7 @@ _.Zones =
 								i(111121),	-- Primal Gladiator's Touch of Defeat
 								i(115648),	-- Primal Gladiator's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(111067),	-- Primal Gladiator's Cleaver
 						i(111068),	-- Primal Gladiator's Shanker
@@ -1011,7 +1011,7 @@ _.Zones =
 								i(126046),	-- Warmongering Combatant's Touch of Defeat
 								i(126523),	-- Warmongering Combatant's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(126476),	-- Warmongering Combatant's Cleaver
 						i(126477),	-- Warmongering Combatant's Shanker
@@ -1166,7 +1166,7 @@ _.Zones =
 								i(125371),	-- Wild Combatant's Staff
 								i(125409),	-- Wild Combatant's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(125362),	-- Wild Combatant's Cleaver
 						i(125363),	-- Wild Combatant's Shanker
@@ -1345,7 +1345,7 @@ _.Zones =
 								i(115068),	-- Primal Combatant's Touch of Defeat
 								i(120067),	-- Primal Combatant's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(115024),	-- Primal Combatant's Cleaver
 						i(115025),	-- Primal Combatant's Shanker

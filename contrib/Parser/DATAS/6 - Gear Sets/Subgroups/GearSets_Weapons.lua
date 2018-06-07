@@ -568,7 +568,7 @@ _.GearSets =
 								i(99824),	-- Tyrannical Gladiator's Staff
 								i(99968),	-- Tyrannical Gladiator's Staff
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(144246, { -- Arsenal: Tyrannical Gladiator's Weapons [ Alliance ]
 							["groups"] = {
@@ -618,7 +618,7 @@ _.GearSets =
 								i(99824),	-- Tyrannical Gladiator's Staff
 								i(99968),	-- Tyrannical Gladiator's Staff
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(144251, { -- Arsenal: Grievous Gladiator's Weapons [ Horde / Tested ]
 							["groups"] = {
@@ -675,7 +675,7 @@ _.GearSets =
 								i(102790),	-- Grievous Gladiator's Touch of Defeat
 								i(103177),	-- Grievous Gladiator's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(144252, { -- Arsenal: Grievous Gladiator's Weapons [ Alliance ]
 							["groups"] = {
@@ -732,7 +732,7 @@ _.GearSets =
 								i(102790),	-- Grievous Gladiator's Touch of Defeat
 								i(103177),	-- Grievous Gladiator's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(144248, { -- Arsenal: Prideful Gladiator's Weapons [ Alliance ]
 							["groups"] = {
@@ -789,7 +789,7 @@ _.GearSets =
 								i(102593),	-- Prideful Gladiator's Touch of Defeat
 								i(103374),	-- Prideful Gladiator's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(144250, { -- Arsenal: Prideful Gladiator's Weapons [ Horde / Tested ]
 							["groups"] = {
@@ -846,7 +846,7 @@ _.GearSets =
 								i(102593),	-- Prideful Gladiator's Touch of Defeat
 								i(103374),	-- Prideful Gladiator's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
@@ -909,7 +909,7 @@ _.GearSets =
 								i(115068),	-- Primal Combatant's Touch of Defeat
 								i(120067),	-- Primal Combatant's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(138626, { -- Arsenal: Primal Combatant's Weapons [ Horde ]
 							["groups"] = {
@@ -968,7 +968,7 @@ _.GearSets =
 								i(115068),	-- Primal Combatant's Touch of Defeat
 								i(120067),	-- Primal Combatant's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(138631, { -- Arsenal: Primal Gladiator's Weapons [ Alliance ]
 							["groups"] = {
@@ -1027,7 +1027,7 @@ _.GearSets =
 								i(111121),	-- Primal Gladiator's Touch of Defeat
 								i(115648),	-- Primal Gladiator's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(138632, { -- Arsenal: Primal Gladiator's Weapons [ Horde / Tested ]
 							["groups"] = {
@@ -1086,7 +1086,7 @@ _.GearSets =
 								i(111121),	-- Primal Gladiator's Touch of Defeat
 								i(115648),	-- Primal Gladiator's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(138629, { -- Arsenal: Wild Combatant's Weapons [ Horde / Tested ]
 							["groups"] = {
@@ -1130,7 +1130,7 @@ _.GearSets =
 								i(125371),	-- Wild Combatant's Staff
 								i(125409),	-- Wild Combatant's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(138630, { -- Arsenal: Wild Combatant's Weapons [ Alliance ]
 							["groups"] = {
@@ -1174,7 +1174,7 @@ _.GearSets =
 								i(125371),	-- Wild Combatant's Staff
 								i(125409),	-- Wild Combatant's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(138633, { -- Arsenal: Wild Gladiator's Weapons [ Alliance / Tested ]
 							["groups"] = {
@@ -1239,7 +1239,7 @@ _.GearSets =
 								i(124730),	-- Wild Gladiator's Touch of Defeat
 								i(125209),	-- Wild Gladiator's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(138634, { -- Arsenal: Wild Gladiator's Weapons [ Horde ]
 							["groups"] = {
@@ -1304,7 +1304,7 @@ _.GearSets =
 								i(124730),	-- Wild Gladiator's Touch of Defeat
 								i(125209),	-- Wild Gladiator's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(138627, { -- Arsenal: Warmongering Combatant's Weapons [ Horde ]
 							["groups"] = {
@@ -1368,7 +1368,7 @@ _.GearSets =
 								i(126046),	-- Warmongering Combatant's Touch of Defeat
 								i(126523),	-- Warmongering Combatant's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(138628, { -- Arsenal: Warmongering Combatant's Weapons [ Alliance / Tested ]
 							["groups"] = {
@@ -1432,7 +1432,7 @@ _.GearSets =
 								i(126046),	-- Warmongering Combatant's Touch of Defeat
 								i(126523),	-- Warmongering Combatant's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(138635, { -- Arsenal: Warmongering Gladiator's Weapons [ Alliance / Tested ]
 							["groups"] = {
@@ -1495,7 +1495,7 @@ _.GearSets =
 								i(125844),	-- Warmongering Gladiator's Touch of Defeat
 								i(126323),	-- Warmongering Gladiator's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(138636, { -- Arsenal: Warmongering Gladiator's Weapons [ Horde ]
 							["groups"] = {
@@ -1558,7 +1558,7 @@ _.GearSets =
 								i(125844),	-- Warmongering Gladiator's Touch of Defeat
 								i(126323),	-- Warmongering Gladiator's Touch of Defeat
 							},
-							["races"] = { 2, 5, 6, 8, 9, 10, 26 },
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),

@@ -296,7 +296,7 @@ _.Zones =
 								i(125844),	-- Warmongering Gladiator's Touch of Defeat
 								i(126323),	-- Warmongering Gladiator's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(125789),	-- Warmongering Gladiator's Cleaver
 						i(125790),	-- Warmongering Gladiator's Shanker
@@ -533,7 +533,7 @@ _.Zones =
 								i(124730),	-- Wild Gladiator's Touch of Defeat
 								i(125209),	-- Wild Gladiator's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(124675),	-- Wild Gladiator's Cleaver
 						i(124676),	-- Wild Gladiator's Shanker
@@ -766,7 +766,7 @@ _.Zones =
 								i(111121),	-- Primal Gladiator's Touch of Defeat
 								i(115648),	-- Primal Gladiator's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(115594),	-- Primal Gladiator's Cleaver
 						i(115595),	-- Primal Gladiator's Shanker
@@ -999,7 +999,7 @@ _.Zones =
 								i(126046),	-- Warmongering Combatant's Touch of Defeat
 								i(126523),	-- Warmongering Combatant's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(125999),	-- Warmongering Combatant's Cleaver
 						i(126000),	-- Warmongering Combatant's Shanker
@@ -1163,7 +1163,7 @@ _.Zones =
 								i(125371),	-- Wild Combatant's Staff
 								i(125409),	-- Wild Combatant's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(124885),	-- Wild Combatant's Cleaver
 						i(124886),	-- Wild Combatant's Shanker
@@ -1342,7 +1342,7 @@ _.Zones =
 								i(115068),	-- Primal Combatant's Touch of Defeat
 								i(120067),	-- Primal Combatant's Touch of Defeat
 							},
-							["races"] = { 1, 3, 4, 7, 11, 22, 25 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(120053),	-- Primal Combatant's Cleaver
 						i(120054),	-- Primal Combatant's Shanker
