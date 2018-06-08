@@ -124,7 +124,7 @@ _.Zones =
 								["qg"] = 11034,	-- Lord Maxwell Tyrosus
 								["isBreadcrumb"] = true,	-- for "Gidwin Goldbraids"
 							}),
-							 q(27367, {	-- Gidwin Goldbraids
+							q(27367, {	-- Gidwin Goldbraids
 								["groups"] = {
 								},
 								["qg"] = 45417,	-- Fiona
@@ -136,7 +136,7 @@ _.Zones =
 								["qg"] = 45428,	-- Gidwin Goldbraids
 								["sourceQuests"] = { 27367 },	-- Gidwin Goldbraids
 							}),
-							q(27369, { -- Greasing the Wheel (secondary QG ID 45431)
+							q(27369, { -- Greasing the Wheel
 								["groups"] = {
 								i(62938),  -- Giddy's Old Gloves
 								i(62937),  -- Thorondoril River Boots
@@ -176,9 +176,84 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 45417,	-- Fiona
+								["sourceQuests"] = { 27369, 27372 },	-- "Greasing the Wheel", "A Gift For Fiona"
 							}),
 						}),
 						crit(2, { -- The Redpaths of Darrowshire
+							q(27383, {	-- Little Pamela
+								["groups"] = {
+								},
+								["qg"] = 11063,	-- Carlin Redpath
+							}),
+							q(27384, {	-- Pamela's Doll
+								["groups"] = {
+								},
+								["qg"] = 10926,	-- Pamela Redpath
+								["sourceQuests"] = { 27383 },	-- "Little Pamela"
+							}),
+							q(27392, { -- I'm Not Supposed to Tell You This
+								["groups"] = {
+									i(62950), -- Joseph's Spare Belt
+									i(62949), -- Finder's Keepers
+									i(62948), -- Hide of the Lone Hunter
+									},
+								["qg"] = 10926,	-- Pamela Redpath
+								["sourceQuests"] = { 27383 },	-- "Little Pamela"
+							}),
+							q(27385, {	-- Uncle Carlin
+								["groups"] = {
+								},
+								["qg"] = 10926,	-- Pamela Redpath
+								["sourceQuests"] = { 27384,27392 },	-- "Little Pamela"
+							}),
+							q(27386, {	-- A Strange Historian
+								["groups"] = {
+								},
+								["qg"] = 11063,	-- Carlin Redpath
+								["sourceQuests"] = { 27385 },	-- "Little Pamela"
+							}),
+							q(27387, { -- Villians of Darrowshire
+								["groups"] = {
+									i(62954), -- Seeker's Britches
+									i(62953), -- Vest of Discovery
+									i(62952), -- Chromie's Mirror
+									i(62951), -- Cowl of Revision
+								},
+								["qg"] = 10667,	-- Chromie
+								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
+							}),
+							q(27388, {	-- Heroes of Darrowshire
+								["groups"] = {
+								},
+								["qg"] = 10667,	-- Chromie
+								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
+							}),
+							q(27389, {	-- Marauders of Darrowshire
+								["groups"] = {
+								},
+								["qg"] = 10667,	-- Chromie
+								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
+							}),
+							q(27390, { -- The Battle of Darrowshire
+								["groups"] = {
+									i(62957), -- Homecoming Wrap
+									i(62956), -- Sweet-Tempered Breastplate
+									i(62955), -- Pauldrons of Darrowshire
+								},
+								["qg"] = 10667,	-- Chromie
+								["sourceQuests"] = { 27387,27388,27389 },	-- "Villains of Darrowshire", "Heroes of Darrowshire", "Marauders of Darrowshire"
+							}),
+							q(27391, { -- Hidden Treasures
+								["groups"] = {
+									i(62961),   -- Redpath Bracers
+									i(62960),   -- Brightening Wand
+									i(62959),   -- Hidden Treasure
+									i(62958),   -- Militia Hatchet
+									i(157007),	-- Militia Dagger
+									},
+								["qg"] = 10926,	-- Pamela Redpath
+								["sourceQuests"] = { 27390 },	-- "The Battle of Darrowshire"
+							}),
 						}),
 						crit(3, { -- Tyr's Hand
 						}),
@@ -187,8 +262,177 @@ _.Zones =
 						crit(5, { -- Journey's End
 						}),
 					}),
-					--[[
+					ach(5442, { -- Full Caravan
+						crit(1, { -- Fiona
+							q(27684, {	-- Visitors
+								["groups"] = {
+								},
+								["qg"] = 11034,	-- Lord Maxwell Tyrosus
+							}),
+						}),
+						crit(2, { -- Gidwin Goldbraids
+							q(27367, {	-- Gidwin Goldbraids
+								["groups"] = {
+								},
+								["qg"] = 45417,	-- Fiona
+								["breadcrumbQuestID"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
+							}),
+							q(27368, {	-- Just Encased
+								["groups"] = {
+								},
+								["qg"] = 45428,	-- Gidwin Goldbraids
+								["sourceQuests"] = { 27367 },	-- Gidwin Goldbraids
+							}),
+							q(27369, { -- Greasing the Wheel
+								["groups"] = {
+								i(62938),  -- Giddy's Old Gloves
+								i(62937),  -- Thorondoril River Boots
+								i(62936),  -- Treads of Banshee Bells
+								i(62935),  -- Flower Picker's Gloves
+								i(131668), -- Stem-Laced Boots
+								},
+								["qg"] = 42428, -- Gidwin Goldbraids
+								["sourceQuests"] = { 27368 },	-- Just Encased
+							}),
+						}),
+						crit(3, { -- Tarenar Sunstrike
+							q(27370, {	-- Tarenar Sunstrike
+								["groups"] = {
+								},
+								["qg"] = 45417,	-- Fiona
+								["breadcrumbQuestID"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
+							}),
+							q(27371, {  -- What I Do Best
+								["groups"] = {
+								},
+								["qg"] = 45429, -- Tarenar Sunstrike
+								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
+							}),
+							q(27372, { -- A Gift For Fiona
+								["groups"] = {
+									i(62943),  -- Helm of Thoughtful Gifts
+									i(62942),  -- Gentling Breastplate
+									i(62941),  -- Plaguehound Armbands
+									i(62940),  -- Belt of Appeasement
+									i(62939),  -- Caravan Sash
+									i(131669), -- Plaguehound Bracers
+									i(131670), -- Cinch of Good Will
+								},
+								["qg"] = 45429, -- Tarenar Sunstrike
+								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
+							}),
+						}),
+						crit(4, { -- Argus Highbeacon
+							q(27381, {	-- Traveling Companions
+								["groups"] = {
+								},
+								["qg"] = 45429,	-- Tarenar Sunstrike
+								["sourceQuests"] = { 27373 },	-- Onward, to Light's Hope Chapel
+							}),
+							q(27382, { -- Rough Roads
+								["groups"] = {
+									i(62947), -- Treads of Youth
+									i(62946), -- Crown Guard Armbands
+									i(62945), -- Plaguebat Vest
+									i(62944), -- Slippers of the Lonely Road
+									},
+								["qg"] = 45451,	-- Argus Highbeacon
+							}),
+							q(27448, {	-- The Trek Continues
+								["groups"] = {
+								},
+								["qg"] = 45417,	-- Fiona
+								["sourceQuests"] = { 27381,27382 },	-- "Traveling Companion", "Rough Roads"
+							}),
+						}),
+						crit(5, { -- Pamela Redpath
+							q(27383, {	-- Little Pamela
+								["groups"] = {
+								},
+								["qg"] = 11063,	-- Carlin Redpath
+							}),
+							q(27384, {	-- Pamela's Doll
+								["groups"] = {
+								},
+								["qg"] = 10926,	-- Pamela Redpath
+								["sourceQuests"] = { 27383 },	-- "Little Pamela"
+							}),
+							q(27392, { -- I'm Not Supposed to Tell You This
+								["groups"] = {
+									i(62950), -- Joseph's Spare Belt
+									i(62949), -- Finder's Keepers
+									i(62948), -- Hide of the Lone Hunter
+									},
+								["qg"] = 10926,	-- Pamela Redpath
+								["sourceQuests"] = { 27383 },	-- "Little Pamela"
+							}),
+							q(27385, {	-- Uncle Carlin
+								["groups"] = {
+								},
+								["qg"] = 10926,	-- Pamela Redpath
+								["sourceQuests"] = { 27384,27392 },	-- "Little Pamela"
+							}),
+							q(27386, {	-- A Strange Historian
+								["groups"] = {
+								},
+								["qg"] = 11063,	-- Carlin Redpath
+								["sourceQuests"] = { 27385 },	-- "Little Pamela"
+							}),
+							q(27387, { -- Villians of Darrowshire
+								["groups"] = {
+									i(62954), -- Seeker's Britches
+									i(62953), -- Vest of Discovery
+									i(62952), -- Chromie's Mirror
+									i(62951), -- Cowl of Revision
+								},
+								["qg"] = 10667,	-- Chromie
+								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
+							}),
+							q(27388, {	-- Heroes of Darrowshire
+								["groups"] = {
+								},
+								["qg"] = 10667,	-- Chromie
+								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
+							}),
+							q(27389, {	-- Marauders of Darrowshire
+								["groups"] = {
+								},
+								["qg"] = 10667,	-- Chromie
+								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
+							}),
+							q(27390, { -- The Battle of Darrowshire
+								["groups"] = {
+									i(62957), -- Homecoming Wrap
+									i(62956), -- Sweet-Tempered Breastplate
+									i(62955), -- Pauldrons of Darrowshire
+								},
+								["qg"] = 10667,	-- Chromie
+								["sourceQuests"] = { 27387,27388,27389 },	-- "Villains of Darrowshire", "Heroes of Darrowshire", "Marauders of Darrowshire"
+							}),
+						}),
+						crit(6, { -- Vex'thul
+							q(27432, {	-- Zaeldarr the Outcast
+								["groups"] = {
+								},
+								["qg"] = 45500,	-- Urk Gagbaz
+							}),
+						}),
+						crit(7, { -- Rimblat Earthshatter
+						}),
+						crit(8, { -- Beezil Linkspanner
+						}),
+					}),
 					n(-168, { -- Other Quests
+						sz(771, 4, { -- Crown Guard Tower
+							q(27544, {	-- Cenarion Tenacity
+								["groups"] = {
+								},
+								["qg"] = 45500,	-- Urk Gagbaz
+								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
+								["isBreadcrumb"] = true, -- for "Postponing the Inevitable"
+							}),
+						}),
+					--[[
 						Exploration Achievement: 771
 					1	Thondroril River
 					2	The Marris Stead
@@ -213,7 +457,6 @@ _.Zones =
 					21	Plaguewood
 					22	Stratholme
 					23	Ruins of the Scarlet Enclave
-					})
 					--]]
 
 --					qg(45431, q(27463)),	-- A Boyhood Dream
@@ -224,7 +467,6 @@ _.Zones =
 						i(63004),
 						i(63003),
 					})),
---					qg(11063, q(27386)),	-- A Strange Historian
 					qdg(qg(49856, q(28756))),	-- Aberrations of Bone
 					qg(45831, q(27539, { -- Add'em to the Pile
 						i(63014),
@@ -265,7 +507,6 @@ _.Zones =
 					})),
 --[[
 					qg(11035, q(27453)),	-- Catalysm
-					qg(45500, q(27544)),	-- Cenarion Tenacity
 					qg(90251, q(43492)),	-- Champion: Aponi Brightmane
 					qg(99997, q(43785)),	-- Champion: Arator the Redeemer
 					qg(113299, q(43933)),	-- Champion: Delas Moonfang
@@ -313,21 +554,9 @@ _.Zones =
 					qg(45729, q(27526)),	-- Gidwin's Fate Revealed
 					qg(45400, q(27556)),	-- Gidwin's Weapon Oil
 					qg(45729, q(27525)),	-- Guardians of Stratholme
-					qg(10667, q(27388)),	-- Heroes of Darrowshire
+					qg(45574, q(27449)),	-- Honor and Strength
+					qg(45729, q(27488)),	-- Impatience
 --]]
-					qg(10926, q(27391, { -- Hidden Treasure
-						i(62961),
-						i(62960),
-						i(62958),
-						i(157007),	-- Militia Dagger
-					})),
---					qg(45574, q(27449)),	-- Honor and Strength
-					qg(10926, q(27392, { -- I'm Not Supposed to Tell You This
-						i(62950),
-						i(62949),
-						i(62948),
-					})),
---					qg(45729, q(27488)),	-- Impatience
 					qg(45574, q(27482, { -- Into the Flames
 						i(62991),
 					})),
@@ -355,24 +584,13 @@ _.Zones =
 						i(62997),
 					})),
 --[[
-					qg(11063, q(27383)),	-- Little Pamela
-					qg(10667, q(27389)),	-- Marauders of Darrowshire
 					qg(45729, q(27489)),	-- Nobody to Blame but Myself
 					qg(45574, q(27481)),	-- Out of the Ziggurat
 					qg(45400, q(27558)),	-- Pamela's Doll
-					qg(10926, q(27384)),	-- Pamela's Doll
 					qg(16135, q(27420)),	-- Postponing the Inevitable
 					qg(45736, q(27479)),	-- Righteous Indignation
 					qg(45400, q(27561)),	-- Rimblat's Stone
 					qg(90259, q(39696)),	-- Rise, Champions
---]]
-					qg(45451, q(27382, { -- Rough Roads
-						i(62947),
-						i(62946),
-						i(62945),
-						i(62944),
-					})),
---[[
 					qg(31084, qh(13189)),	-- Saurfang's Blessing
 					qg(16112, q(27614)),	-- Scarlet Salvage
 					qg(45831, q(27528)),	-- Scourged Mass
@@ -400,13 +618,8 @@ _.Zones =
 						},
 						["classes"] = {6}, -- Death Knight
 					})),
+					qg(11036, q(27459)),	-- The Brotherhood of Light
 --]]
-					qg(10667, q(27390, { -- The Battle of Darrowshire
-						i(62957),
-						i(62956),
-						i(62955),
-					})),
---					qg(11036, q(27459)),	-- The Brotherhood of Light
 					qg(16112, q(27619, { -- The Commander
 						i(62971),
 						i(62970),
@@ -425,29 +638,18 @@ _.Zones =
 					qg(16112, q(27616)),	-- The Huntsman
 					qg(45451, q(27532)),	-- The Plaguewood Tower
 					qg(90259, q(42919)),	-- The Scion's Legacy
-					qg(45417, q(27448)),	-- The Trek Continues
 					qg(16112, q(27615)),	-- The Wrathcaster
 					qg(11035, q(27451)),	-- To Kill With Purpose
 					o(205875, {	-- Crusader's Flare
 						q(27461),	-- To Take the Abbey
 						q(27462),	-- To Take the Barracks
 					}),
-					qg(45429, q(27381)),	-- Traveling Companions
-					qg(10926, q(27385)),	-- Uncle Carlin
 					qg(45400, q(27559)),	-- Vex'tul's Armbands
 					qg(16115, q(27612)),	-- Victory From Within
---]]
-					qg(10667, q(27387, { -- Villians of Darrowshire
-						i(62954),
-						i(62953),
-						i(62952),
-						i(62951),
-					})),
---[[
 					qg(31084, qa(13188)),	-- Where Kings Walk
 					qg(45826, q(27521)),	-- Wretched Hive of Scum and Villainy
-					qg(45500, q(27432)),	-- Zaeldarr the Outcast
 --]]
+					}),
 				}),
 				n(-16, {	-- Rares
 					n(10819, { 	-- Baron Bloodbane
