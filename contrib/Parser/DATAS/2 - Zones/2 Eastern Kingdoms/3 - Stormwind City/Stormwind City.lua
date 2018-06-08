@@ -2317,7 +2317,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(35906),	-- Reins of the Black War Elekk Mount
 						i(29471),	-- Reins of the Black War Tiger Mount
 					}),
-					n(64422, {	-- Lieutenant Tristia <Vicious Gladiator>
+					n(54660, {	-- Lieutenant Tristia <Vicious Gladiator>
 						i(146641, { --  Arsenal: Vicious Gladiator's Weapons
 							i(61360),	-- Vicious Gladiator's Barrier
 							i(61351),	-- Vicious Gladiator's Baton of Light
