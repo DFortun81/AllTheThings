@@ -2783,7 +2783,10 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 						q(37157, {	-- Feeling A Bit Morose
-							i(119092), -- Moroes' Famous Polish ["isToy"] = True
+							["groups"] = {
+								i(119092), -- Moroes' Famous Polish ["isToy"] = True
+							},
+							["qg"] = 87994, -- Moroes <Tower Steward>
 						}),	
 						q(37244, {	-- Flamefly Trap
 							["groups"] = {
