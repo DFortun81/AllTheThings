@@ -502,7 +502,16 @@ bc = function(t) t.isBreadcrumb = true; end						-- Flag as a Breadcrumb
 classes = function(classes, t)									-- Make an object only available for a set number of classes.
 	t.classes = classes;
 	return t;
-end 
+end
+cr = function(id, t)											-- Add a Creature List to an object.
+	if type(id) == "number" then
+		t.cr = id;
+	else
+		t.crs = id;
+	end
+	return t;
+end
+crs = cr;
 desc = function(t, description)									-- Add a description to an object.
 	t.description = description;
 	return t;
@@ -537,6 +546,7 @@ qg = function(id, t)											-- Add a Quest Giver to an object.
 	end
 	return t;
 end
+qgs = qg;														-- Add a Quest Giver to an object. (Alternative)
 races = function(races, t) t.races = races; return t; end		-- Make an object only available for a set number of races.
 sq = function(id, t)											-- Add a 'sourceQuests' field to an object.
 	if type(id) == "number" then

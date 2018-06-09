@@ -1845,6 +1845,35 @@ local function createDebugFrame(parent)
 	uncollected:SetPoint("TOPLEFT",child:GetWidth()/2,-10)
 	addObject(elm,uncollected)
 	
+	-- This creates the "Show Creature List" checkBox 
+	local creatureLists = createCheckBox("Show Creature List", child, function(self)
+			app.SetDataMember("ShowCreatures", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("ShowCreatures"));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see the full list of creatures in the tooltip.\n\nNOTE: We only use this option for zone drops and other extremely long NPC ID lists.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	creatureLists:SetPoint("TOPLEFT",uncollected,0,-frameSpacer)
+	addObject(elm,creatureLists)
+	
+	-- This creates the "Show Quest Givers" checkBox 
+	local questGiverLists = createCheckBox("Show Quest Givers", child, function(self)
+			app.SetDataMember("ShowQuestGivers", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("ShowQuestGivers", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see the full list of quest givers in the tooltip.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	questGiverLists:SetPoint("TOPLEFT",creatureLists,0,-frameSpacer)
+	addObject(elm,questGiverLists)
 end
 local function createAboutFrame(parent)
 	local tabName = "About"
