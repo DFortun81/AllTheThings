@@ -916,6 +916,7 @@ local function CacheArrayFieldIDs(group, field, arrayField)
 				fieldCache[field][fieldID] = fieldCache_f;
 			end
 			tinsert(fieldCache_f, group);
+			--tinsert(fieldCache_f, {["g"] = { group }, ["parent"] = group, [field] = fieldID });
 		end
 	end
 end
@@ -940,13 +941,14 @@ local function CacheSubFieldID(group, field, subfield)
 			fieldCache_f = {};
 			fieldCache[field][firldCache_g] = fieldCache_f;
 		end
-		--tinsert(fieldCache_f, group);
-		tinsert(fieldCache_f, {["g"] = { group }, ["parent"] = group, [subfield] = firldCache_g });
+		tinsert(fieldCache_f, group);
+		-- tinsert(fieldCache_f, {["g"] = { group }, ["parent"] = group, [subfield] = firldCache_g });
 	end
 end
 local function CacheFields(group)
 	CacheFieldID(group, "creatureID");
 	CacheFieldID(group, "currencyID");
+	CacheArrayFieldIDs(group, "creatureID", "crs");
 	CacheArrayFieldIDs(group, "creatureID", "qgs");
 	CacheFieldID(group, "encounterID");
 	CacheFieldID(group, "objectID");
@@ -1278,13 +1280,13 @@ local function SearchForFieldAndSummarizeForCurrentDifficulty(field, value)
 	local group = SearchForField(field, value);
 	if group then
 		local _, _, difficultyID = GetInstanceInfo();
+		local subgroup = {};
 		for i,j in ipairs(group) do
 			if GetRelativeDifficulty(j, difficultyID) then
-				group = {j};
-				break;
+				tinsert(subgroup, j);
 			end
 		end
-		return {}, group;
+		return {}, #subgroup > 0 and subgroup or group;
 	end
 end
 local function SearchForItemIDRecursively(group, itemID)
@@ -4233,6 +4235,29 @@ app.BaseVignette = {
 					end
 					return t.name;
 				end
+			elseif t.crs then
+				local all = true;
+				for i,cr in ipairs(t.crs) do
+					if not NPCNameFromID[cr] then
+						all = false;
+					end
+				end
+				if all then
+					t.name = nil;
+					local count = #t.crs;
+					for i=1,count,1 do
+						local cr = t.crs[i];
+						if t.name then
+							t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
+						else
+							t.name = NPCNameFromID[cr];
+						end
+						if not t.title then
+							t.title = NPCTitlesFromID[cr];
+						end
+					end
+					return t.name;
+				end
 			elseif t.qg then
 				if NPCNameFromID[t.qg] then
 					t.name = NPCNameFromID[t.qg];
@@ -5892,22 +5917,44 @@ local function RowOnEnter(self)
 		if reference.questID then
 			if GetDataMember("ShowQuestID") then GameTooltip:AddDoubleLine(L("QUEST_ID"), tostring(reference.questID)); end
 		end
-		if reference.qgs then
+		if reference.qgs and GetDataMember("ShowQuestGivers") then
 			if #reference.qgs > 1 then
 				if GetDataMember("ShowCreatureID") then 
 					for i,qg in ipairs(reference.qgs) do
-						GameTooltip:AddDoubleLine(L("QUEST_GIVER"), tostring(qg > 0 and NPCNameFromID[qg] or ("NPC #" .. qg)));
-						GameTooltip:AddDoubleLine(L("CREATURE_ID"), tostring(qg));
+						GameTooltip:AddDoubleLine(i == 1 and L("QUEST_GIVERS") or " ", tostring(qg > 0 and NPCNameFromID[qg] or "NPC") .. " (" .. qg .. ")");
 					end
 				else
 					for i,qg in ipairs(reference.qgs) do
-						GameTooltip:AddDoubleLine(L("QUEST_GIVER"), tostring(qg > 0 and NPCNameFromID[qg] or ("NPC #" .. qg)));
+						GameTooltip:AddDoubleLine(i == 1 and L("QUEST_GIVERS") or " ", tostring(qg > 0 and NPCNameFromID[qg] or ("NPC (" .. qg .. ")")));
 					end
 				end
 			else
 				local qg = reference.qgs[1];
-				GameTooltip:AddDoubleLine(L("QUEST_GIVER"), tostring(qg > 0 and NPCNameFromID[qg] or ("NPC #" .. qg)));
-				if GetDataMember("ShowCreatureID") then GameTooltip:AddDoubleLine(L("CREATURE_ID"), tostring(qg)); end
+				if GetDataMember("ShowCreatureID") then 
+					GameTooltip:AddDoubleLine(L("QUEST_GIVER"), tostring(qg > 0 and NPCNameFromID[qg] or "NPC") .. " (" .. qg .. ")");
+				else
+					GameTooltip:AddDoubleLine(L("QUEST_GIVER"), tostring(qg > 0 and NPCNameFromID[qg] or ("NPC (" .. qg .. ")")));
+				end
+			end
+		end
+		if reference.crs and GetDataMember("ShowCreatures") then
+			if #reference.crs > 1 then
+				if GetDataMember("ShowCreatureID") then 
+					for i,cr in ipairs(reference.crs) do
+						GameTooltip:AddDoubleLine(i == 1 and L("CREATURES") or " ", tostring(cr > 0 and NPCNameFromID[cr] or "NPC") .. " (" .. cr .. ")");
+					end
+				else
+					for i,cr in ipairs(reference.crs) do
+						GameTooltip:AddDoubleLine(i == 1 and L("CREATURES") or " ", tostring(cr > 0 and NPCNameFromID[cr] or ("NPC (" .. cr .. ")")));
+					end
+				end
+			else
+				local cr = reference.crs[1];
+				if GetDataMember("ShowCreatureID") then 
+					GameTooltip:AddDoubleLine(L("CREATURE_ID"), tostring(cr > 0 and NPCNameFromID[cr] or "NPC") .. " (" .. cr .. ")");
+				else
+					GameTooltip:AddDoubleLine(L("CREATURE_ID"), tostring(cr > 0 and NPCNameFromID[cr] or ("NPC (" .. cr .. ")")));
+				end
 			end
 		end
 		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
@@ -6813,6 +6860,12 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['OnUpdate'] = function(data)
 						if app.DungeonDifficulty then
 							data.difficultyID = app.DungeonDifficulty;
+							local name, instanceType, instanceDifficulty, difficultyName = GetInstanceInfo();
+							if instanceDifficulty and data.difficultyID ~= instanceDifficulty and instanceType == 'party' then
+								data.name = GetDifficultyInfo(data.difficultyID) .. " (" .. difficultyName .. ")";
+							else
+								data.name = GetDifficultyInfo(data.difficultyID);
+							end
 						end
 					end,
 					['back'] = 0.5,
@@ -6831,6 +6884,12 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['OnUpdate'] = function(data)
 						if app.RaidDifficulty then
 							data.difficultyID = app.RaidDifficulty;
+							local name, instanceType, instanceDifficulty, difficultyName = GetInstanceInfo();
+							if instanceDifficulty and data.difficultyID ~= instanceDifficulty and instanceType == 'raid' then
+								data.name = GetDifficultyInfo(data.difficultyID) .. " (" .. difficultyName .. ")";
+							else
+								data.name = GetDifficultyInfo(data.difficultyID);
+							end
 						end
 					end,
 					['back'] = 0.5,
@@ -7101,6 +7160,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 		self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
 		self:RegisterEvent("CHAT_MSG_SYSTEM");
+		self:RegisterEvent("SCENARIO_UPDATE");
+		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 	end
 	
 	-- Update the window and all of its row data
