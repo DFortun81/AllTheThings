@@ -169,16 +169,22 @@ _.Zones =
 					})),
 --[[					
 					qg(41005, q(25663)),	-- An Offering for Aviana
-					qg(115802, q(44877, {	-- Attack on the Roost (add'l QG 119982)
-						["groups"] = {
-						},
-						["classes"]= {11},
-					})),
-					qg(119982, q(44888, {	-- Aviana's Grace
-						["groups"] = {
-						},
-						["classes"]= {11},
-					})),
+]]--
+					{
+						["questID"] = 44877,	-- Attack on the Roost
+						["qgs"] = { 115802, 119982 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
+						["sourceQuest"]	= 44869,	-- Source Quest: Talon Terror
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
+					{
+						["questID"] = 44888,	-- Aviana's Grace
+						["qgs"] = { 115802, 119982 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
+						["sourceQuests"] = { 44877, 45532 },	-- Source Quest: Attack on the Roost / Mother's Orders
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
+--[[
 					qg(40289, q(27874)),	-- Aviana's Legacy (add'l QGs 46987 and 46998)
 					qg(52669, q(29125)),	-- Between the Trees
 --]]					
@@ -350,12 +356,16 @@ _.Zones =
 					qg(39927, q(25940)),	-- Last Stand at Whistling Grove (add'l QG 39928)
 					qg(52838, q(29200)),	-- Leyara
 					qg(39432, qh(25355)),	-- Lightning in a Bottle
-					qg(39433, qa(25353)),	-- Lightning in a Bottle					
-					qg(115749, q(44921), {	-- Lone Wolf
-						["groups"] = {
-						},
-						["classes"]= {11},
-					}),
+					qg(39433, qa(25353)),	-- Lightning in a Bottle
+--]]
+					{
+						["questID"] = 44921,	-- Lone Wolf
+						["qg"] = 115749,	-- Quest Givers: Aviana <Ancient>
+						["sourceQuest"]	= 44888,	-- Source Quest: Aviana's Grace
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
+--[[
 					qg(41507, q(25881)),	-- Lost Wardens
 --]]					
 					qg(39433, qa(25273, { -- Lycanthoth the Corruptor
@@ -384,6 +394,15 @@ _.Zones =
 						},
 						["classes"]= {11},
 					})),
+]]--
+					{
+						["questID"] = 45532,	-- Mother's Orders
+						["qgs"] = { 115802, 119982 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
+						["sourceQuest"]	= 44869,	-- Source Quest: Talon Terror
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
+--[[
 					qg(52671, q(29162)),	-- Nature's Blessing
 					qg(52669, q(29280)),	-- Nourishing Waters
 --]]					
@@ -507,12 +526,15 @@ _.Zones =
 					qg(52669, q(29126)),	-- The Power of Malorne
 					qg(53073, q(29128)),	-- The Protectors of Hyjal
 --]]					
-					q(29311, { -- The Rest is History
-						["groups"] = {	
-							i(71259),  -- TOY! Leyera's Locket
+					{
+						["questID"] = 29311,	-- The Rest is History
+						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
+						["sourceQuest"] = 29310,	-- Source Quest: The Tipping Point
+						["lvl"] = 85,
+						["groups"] = {
+							i(71259),	-- Leyara's Locket
 						},
-						["description"] = "This quest is auto given after finishing The Tipping Point quest.",
-					}),
+					},
 					qg(39857, q(25464, { -- The Return of Baron Geddon
 						i(57303),
 						i(57305),
@@ -941,7 +963,16 @@ _.Zones =
 					["u"] = 12,
 				}),	--]]
 				m(795, {	-- Molten Front
-					["groups"] = {			
+					["groups"] = {
+						ach(5859, {	-- Legacy of Leyara
+							crit(1),
+							crit(2),
+							crit(3),
+							{
+								["itemID"] = 69854,		-- Smoke-Stained Locket
+								["questID"] = 29298,	-- Quest: A Smoke-Stained Locket
+							},
+						}),
 --[[
 					n(-17, { -- Quests						
 							qg(53196, q(29263)),	-- A Bitter Pill

@@ -10,11 +10,11 @@ _.Zones =
 					nld({		-- Legacy	
 						n(14889, { -- Emeriss
 							["groups"] = {
-								un(2, i(20644, { -- Nightmare Engulfed Object
-									q(8446, { -- Shrouded in Nightmare
-										q(8447), -- Waking Legends
-									}),
-								})),
+								{
+									["itemID"] = 20644, -- Nightmare Engulfed Object
+									["questID"] = 8446,	-- Quest: Shrouded in Nightmare
+									["u"] = 2,	-- Removed from Game
+								},
 								un(2, i(20580)), -- Hammer of Bestial Fury
 								un(2, i(20581)), -- Staff of Rampant Growth
 								un(2, i(20582)), -- Trance Stone
@@ -34,11 +34,11 @@ _.Zones =
 						}),
 						n(14888, { -- Lethon
 							["groups"] = {
-								un(2, i(20644, { -- Nightmare Engulfed Object
-									q(8446, { -- Shrouded in Nightmare
-										q(8447), -- Waking Legends
-									}),
-								})),
+								{
+									["itemID"] = 20644, -- Nightmare Engulfed Object
+									["questID"] = 8446,	-- Quest: Shrouded in Nightmare
+									["u"] = 2,	-- Removed from Game
+								},
 								un(2, i(20580)), -- Hammer of Bestial Fury
 								un(2, i(20581)), -- Staff of Rampant Growth
 								un(2, i(20582)), -- Trance Stone
@@ -61,11 +61,11 @@ _.Zones =
 						}),
 						n(14890, { -- Taerar
 							["groups"] = {
-								un(2, i(20644, { -- Nightmare Engulfed Object
-									q(8446, { -- Shrouded in Nightmare
-										q(8447), -- Waking Legends
-									}),
-								})),
+								{
+									["itemID"] = 20644, -- Nightmare Engulfed Object
+									["questID"] = 8446,	-- Quest: Shrouded in Nightmare
+									["u"] = 2,	-- Removed from Game
+								},
 								un(2, i(20580)), -- Hammer of Bestial Fury
 								un(2, i(20581)), -- Staff of Rampant Growth
 								un(2, i(20582)), -- Trance Stone
@@ -86,11 +86,11 @@ _.Zones =
 						}),
 						n(14887, { -- Ysondre
 							["groups"] = {
-								un(2, i(20644, { -- Nightmare Engulfed Object
-									q(8446, { -- Shrouded in Nightmare
-										q(8447), -- Waking Legends
-									}),
-								})),
+								{
+									["itemID"] = 20644, -- Nightmare Engulfed Object
+									["questID"] = 8446,	-- Quest: Shrouded in Nightmare
+									["u"] = 2,	-- Removed from Game
+								},
 								un(2, i(20580)), -- Hammer of Bestial Fury
 								un(2, i(20581)), -- Staff of Rampant Growth
 								un(2, i(20582)), -- Trance Stone

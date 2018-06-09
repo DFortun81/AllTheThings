@@ -9,23 +9,27 @@ _.Zones =
 				n(-47, {     -- Lunar Festival
 					["groups"] = {
 						n(-17, { 	-- Quests
-							q(8868, { -- Elune's Blessing
-								i(21540),	-- Elune's Lantern
-								--[[
-								i(21640, {	-- Lunar Festival Fireworks Pack
-									i(21558),	-- Small Blue Rocket x4
-									i(21559),	-- Small Green Rocket x4
-									i(21557),	-- Small Red Rocket x4
-									i(21561),	-- Small White Rocket x4
-									i(21562),	-- Small Yellow Rocket x4
-									i(21589),	-- Large Blue Rocket
-									i(21590),	-- Large Green Rocket 
-									i(21592),	-- Large Red Rocket
-									i(21593),	-- Large White Rocket
-									i(21595),	-- Large Yello Rocket
-								--]]
-								--i(7912),	-- Solid Stone x3
-							}),
+							{
+								["questID"] = 8868,	-- Elune's Blessing
+								["qg"] = 15864,	-- Quest Giver: Valadar Starsong <Coin of Ancestry Collector>
+								["groups"] = {
+									i(21540),	-- Elune's Lantern
+									--[[
+									i(21640, {	-- Lunar Festival Fireworks Pack
+										i(21558),	-- Small Blue Rocket x4
+										i(21559),	-- Small Green Rocket x4
+										i(21557),	-- Small Red Rocket x4
+										i(21561),	-- Small White Rocket x4
+										i(21562),	-- Small Yellow Rocket x4
+										i(21589),	-- Large Blue Rocket
+										i(21590),	-- Large Green Rocket 
+										i(21592),	-- Large Red Rocket
+										i(21593),	-- Large White Rocket
+										i(21595),	-- Large Yello Rocket
+									--]]
+									--i(7912),	-- Solid Stone x3
+								},
+							},
 						}),
 						n(-2, { -- Vendors
 							n(15909, { -- Fariel Starsong <Coin of Ancestry Collector>
@@ -84,149 +88,179 @@ _.Zones =
 					},
 					["achievementID"] = 913, -- To Honor One's Elders
 				}),
-					--[[					
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),				
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),		
---]]							
 				n(-25, { 	-- Pet Battle
 					p(478), -- Forest Moth
 					p(378), -- Rabbit
 					p(379), -- Squirrel
 					qg(66412, qh(31908)),	-- Elena Flutterfly
 				}),
---[[
-				n(-17, { 	-- Quests	
---					qg(, q(29298)),	-- A Smoke-Stained Locket (ends in Moonglade, starts from quest item mailed after Hyjal/Molten Front, so not sure what zone this quest should be in)
-					qart(qg(101061, q(40643), {	-- A Summons From Moonglade (QG in Broken Isles Dalaran)
-						["groups"] = {
-						},
-						["classes"]= {11},
-					})),
-					qg(39865, q(25316)),	-- As Hyjal Burns
-					qart(qg(101064, q(41106), {	-- Call of the Wilds
-						["groups"] = {
-						},
-						["classes"]= {11},
-					})),
-					qg(11832, q(13074)),	-- Hope Within the Emerald Nightmare
-					qg(120032, q(45498), {	-- Let Sleeping Dogs Lie
-						["groups"] = {
-						},
-						["classes"]= {11},
-					}),
-					qg(122134, q(47430)),	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
-					qg(115750, q(45426), {	-- Nature's Advance
-						["groups"] = {
-						},
-						["classes"]= {11},
-					}),
-					qg(120032, q(45528), {	-- The Befouled Barrows
-						["groups"] = {
-						},
-						["classes"]= {11},
-					}),
-					qg(11832, q(13075)),	-- The Boon of Remulos
---]]
-					qdg(q(28343, {	-- The Breath of Cenarius
-						["groups"] = {
-							i(65617),	-- Headdress of the Verdant Circle
-							i(65638),	-- Headdress of the Green Circle
-						},
-						["qg"] = 12042,	-- Loganaar
+				n(-17, { 	-- Quests
+					{
+						["questID"] = 5527,	-- A Reliquary of Purity
+						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
+						["u"] = 12,	-- LEGACY
+						["lvl"] = 56,
+					},
+					{
+						["questID"] = 25316,	-- As Hyjal Burns
+						["qg"] = 39865,	-- Quest Giver: Emissary Windsong
+						["sourceQuests"] = { 49855, 27726, 27721 },	-- Source Quests: Disaster at Mount Hyjal / Hero's Call: Mount Hyjal! / Warchief's Command: Mount Hyjal!
+						["lvl"] = 80,
+					},
+					{
+						["questID"] = 41106,	-- Call of the Wilds
+						["qg"] = 101064,	-- Quest Giver: Archdruid Hamuul Runetotem
+						["sourceQuest"] = 40643,	-- Source Quest: A Summons From Moonglade
 						["classes"]= { 11 },	-- Druid
-					})),
---[[
-					qdg(qg(12042, qa(27356)), {	-- The Circle's Future
+						["lvl"] = 98,
+					},
+					un(2, {
+						["questID"] = 40962,	-- Dark Waters
+						["qg"] = 102432,	-- Malfurion Stormrage
+						["sourceQuest"] = 40904,	-- Shadow of the Defiler
+						["lvl"] = 100,
 						["groups"] = {
+							i(128422),	-- Reins of the Grove Warden
 						},
-						["classes"]= {11},
 					}),
-					qdg(qg(12042, qh(27404)), {	-- The Circle's Future
+					{
+						["questID"] = 13074,	-- Hope Within the Emerald Nightmare
+						["qg"] = 11832, -- Quest Giver: Keeper Remulos
+						["sourceQuest"] = 13073,	-- Source Quest: The Keeper's Favor
+						["lvl"] = 67,
+					},
+					{
+						["questID"] = 45498,	-- Let Sleeping Dogs Lie
+						["qgs"] = {120032, 120041},	-- Quest Givers: Thisalee Crow / Druid of the Talon
+						["sourceQuest"]	= 44921,	-- Source Quest: Lone Wolf
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
+					{
+						["questID"] = 47430,	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
+						["qg"] = 122134,	-- Makkaw <Moonkin Festival>
+						["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
+						["collectible"] = false,
 						["groups"] = {
+							{
+								["titleID"] = 358,	-- %s, Adventuring Instructor
+								["collectible"] = false,
+							},
 						},
-						["classes"]= {11},
+					},
+					{
+						["questID"] = 45426,	-- Nature's Advance
+						["qg"] = 115750,	-- Quest Giver: Goldrinn <Ancient>
+						["sourceQuest"] = 46924,	-- Source Quest: The Wolf's Tale
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
+					{
+						["questID"] = 5526,	-- Shards of the Felvine
+						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
+						["u"] = 12,	-- LEGACY
+						["lvl"] = 56,
+						["groups"] = {
+							un(34, i(18535)),	-- Milli's Shield
+							un(34, i(18536)),	-- Milli's Lexicon
+						},
+					},
+					{
+						["questID"] = 45528,	-- The Befouled Barrows
+						["qgs"] = {120032, 120041},	-- Quest Givers: Thisalee Crow / Druid of the Talon
+						["sourceQuest"]	= 44921,	-- Source Quest: Lone Wolf
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
+					{
+						["questID"] = 13075,	-- The Boon of Remulos
+						["qg"] = 11832, -- Quest Giver: Keeper Remulos
+						["sourceQuest"] = 13074,	-- Source Quest: Hope Within the Emerald Nightmare
+						["lvl"] = 67,
+					},
+					{
+						["questID"] = 28343,	-- The Breath of Cenarius
+						["qg"] = 12042,	-- Quest Giver: Loganaar
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 47,
+						["groups"] = {
+							i(65638),	-- Headdress of the Green Circle
+							i(65617),	-- Headdress of the Verdant Circle
+						},
+					},
+					a({
+						["questID"] = 27356,	-- The Circle's Future
+						["qg"] = 12042,	-- Quest Giver: Loganaar
+						["classes"]= { 11 },	-- Druid
+						["sourceQuest"] = 27273,	-- Source Quest: An Invitation from Moonglade
+						["lvl"] = 20,
+						["groups"] = {
+							i(65461),	-- Staff of the Green Circle
+							i(65462),	-- Staff of the Verdant Circle
+						},
 					}),
-					qart(qg(101064, q(40644)), {	-- The Dreamway
+					h({
+						["questID"] = 27404,	-- The Circle's Future
+						["qg"] = 12042,	-- Quest Giver: Loganaar
+						["classes"]= { 11 },	-- Druid
+						["sourceQuest"] = 27283,	-- Source Quest: A Journey to Moonglade
+						["lvl"] = 20,
 						["groups"] = {
+							i(65463),	-- Staff of the Green Circle
+							i(65464),	-- Staff of the Verdant Circle
 						},
-						["classes"]= {11},
 					}),
-					qg(120041, q(46924), {	-- The Wolf's Tale (QG location unknown, possibly in the Dreamgrove as that's where previous quest in the line ends)
+					{
+						["questID"] = 40644,	-- The Dreamway
+						["qg"] = 101064,	-- Quest Giver: Archdruid Hamuul Runetotem
+						["sourceQuest"] = 41106,	-- Source Quest: Call of the Wilds
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 98,
+					},
+					{
+						["questID"] = 46924,	-- The Wolf's Tale
+						["qgs"] = {120032, 120041},	-- Quest Givers: Thisalee Crow / Druid of the Talon
+						["sourceQuests"] = {45498, 45528},	-- Source Quest: Let Sleeping Dogs Lie / The Befouled Barrows
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
+					{
+						["questID"] = 40645,	-- To The Dreamgrove
+						["qg"] = 103875,	-- Quest Giver: Malfurion Stormrage
+						["sourceQuest"] = 40644,	-- Source Quest: The Dreamway
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 98,
+					},
+					{
+						["questID"] = 29303,	-- Tragedy and Family
+						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
+						["sourceQuest"] = 29302,	-- Source Quest: Unlocking the Secrets Within
+						["lvl"] = 85,
+					},
+					{
+						["questID"] = 29302,	-- Unlocking the Secrets Within
+						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
+						["sourceQuest"] = 29298,	-- Source Quest: A Smoke-Stained Locket
+						["lvl"] = 85,
+					},
+					{
+						["questID"] = 8447,	-- Waking Legends
+						["qg"] = 11832,	-- Quest Giver: Keeper Remulos
+						["sourceQuest"] = 8446,	-- Source Quest: Shrouded in Nightmare
+						["u"] = 12,	-- LEGACY
+						["lvl"] = 60,
 						["groups"] = {
+							un(34, i(20600)),	-- Malfurion's Signet Ring
 						},
-						["classes"]= {11},
-					}),
-					qart(qg(103875, q(40645), {	-- To The Dreamgrove
-						["groups"] = {
-						},
-						["classes"]= {11},
-					})),
-					qg(11801, q(29303)),	-- Tragedy and Family
-					qg(11801, q(29302)),	-- Unlocking the Secrets Within		
+					},
+					{
+						["questID"] = 1124,	-- Wasteland
+						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
+						["sourceQuest"] = 1123,	-- Source Quest: Rabine Saturna
+						["u"] = 12,	-- LEGACY
+						["lvl"] = 56,
+					},
 				}),
---]]				
 				n(-2, {		-- Vendors
 					n(12023, {	-- Kharedon <Light Armor Merchant>
 						i(12254),	-- Well Oiled Cloak
@@ -249,29 +283,6 @@ _.Zones =
 						i(11308),	-- Sylvan Shortbow
 					}),
 				}),
-				n(-40, {	-- Legacy
-					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
-						n(-17, {	-- Quests (Legacy)
-							q(5526, {	-- Shards of the Felvine
-								un(34, i(18535)),	-- Milli's Shield
-								un(34, i(18536)),	-- Milli's Lexicon
-							}),
---[[							q(40962),	-- Dark Waters (LEGACY - quest awarded the Reins of the Grove Warden)
-							n(91331, {	-- Archimonde
-								i(133762, {	-- Remnant of Chaos
-									q(40904),	-- Shadow of the Defiler (LEGACY - started in HFC and began questline that rewarded Grove Warden)
-								}),
-							}),
-							q(8446),	-- Shrouded in Nightmare (LEGACY - item that began quest dropped from original Dragons of Nightmare)
-							q(8447),	-- Waking Legends (LEGACY - same as above)--]]
-						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
-					},
-					["u"] = 12,
-				}),	--]]
 			},
 			["achievementID"] = 855,
 			["lvl"] = 10,

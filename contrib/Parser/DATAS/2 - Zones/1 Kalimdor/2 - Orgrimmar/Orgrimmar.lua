@@ -962,16 +962,14 @@ _.Zones =
 --[[				
 					qp129(qg(43239, qh( 26588))),	-- A Furious Catch
 					qp129(qg(43239, qh( 26572))),	-- A Golden Opportunity
-					qg(44978, qh( 27283, {	-- A Journey to Moonglade
-						["groups"] = {
-						},
-						["classes"] = {11},
-					})),
-COORDINATES			qg(44726, qh( 27283, {	-- A Journey to Moonglade
-						["groups"] = {
-						},
-						["classes"] = {11},
-					})),				
+					--]]
+					{
+						["questID"] = 27283,	-- A Journey to Moonglade
+						["qgs"] = {44978, 44726},	-- Quest Givers: Sesebi <Druid Trainer> / Shalla Whiteleaf <Druid Trainer>
+						["classes"] = {11},	-- Druid Only
+						["isBreadcrumb"] = true,
+					},
+--[[
 					ql(qg(52382, qh( 29129))),	-- A Legendary Engagement
 --]]
 					qdg(qh( 27395, {	-- A Marksman's Weapon

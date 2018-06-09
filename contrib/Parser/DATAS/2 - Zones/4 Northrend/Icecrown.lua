@@ -120,7 +120,6 @@ _.Zones =
 					qh( 13738),	-- A Champion Rises
 					qa( 13734),	-- A Champion Rises
 					q(13070),	-- A Cold Front Approaches
-					q(13072),	-- A Hero Remains
 					qa( 14074),	-- A Leg Up
 					qh( 14143),	-- A Leg Up
 					qa( 20439),	-- A Meeting With The Magister
@@ -128,7 +127,7 @@ _.Zones =
 					qh( 13263),	-- A Short Fuse
 					qh( 24556),	-- A Suitable Disguise
 					qa( 20438),	-- A Suitable Disguise
-					q(13068),	-- A Tale of Valor
+					
 					qa( 13689),	-- A Valiant Of Darnassus
 					qa( 13688),	-- A Valiant Of Gnomeregan
 					qa( 13685),	-- A Valiant Of Ironforge
@@ -462,7 +461,6 @@ _.Zones =
 					qa( 13400),	-- The Hunter and the Prince
 					qa( 13337),	-- The Ironwall Rampart
 					qh( 13312),	-- The Ironwall Rampart
-					q(13073),	-- The Keeper's Favor
 					q(13086),	-- The Last Line Of Defense
 					qh( 14144),	-- The Light's Mercy
 					qa( 14077),	-- The Light's Mercy
@@ -566,6 +564,18 @@ _.Zones =
 					qh(13736,  {  -- A Champion Rises
 						i(45022),
 					}),
+					{
+						["questID"] = 13072,	-- A Hero Remains
+						["qg"] = 30562, -- Quest Giver: Crusader Bridenbrad
+						["sourceQuest"] = 13068,	-- Source Quest: A Tale of Valor
+						["lvl"] = 67,
+					},
+					{
+						["questID"] = 13068,	-- A Tale of Valor
+						["qg"] = 31044, -- Quest Giver: Highlord Tirion Fordring
+						["lvl"] = 67,
+						["description"] = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.",
+					},
 					qa(24795,  {  -- A Victory For The Silver Covenant
 						i(50046),
 						i(50047),
@@ -835,6 +845,12 @@ _.Zones =
 						i(39066),
 						i(39108),
 					}),
+					{
+						["questID"] = 13073,	-- The Keeper's Favor
+						["qg"] = 31044, -- Quest Giver: Highlord Tirion Fordring
+						["sourceQuest"] = 13072,	-- Source Quest: A Hero Remains
+						["lvl"] = 67,
+					},
 					q(13110,  {  -- The Restless Dead
 						i(43833),
 						i(43832),

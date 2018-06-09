@@ -61,7 +61,12 @@ _.ClassHalls =
 				q(42096),	-- Champion: Naralex
 				q(42056),	-- Champion: Remulos
 				q(42039),	-- Champion: Sylendra Gladesong
-				q(46044),	-- Champion: Thisalee Crow
+				{
+					["questID"] = 46044,	-- Champion: Thisalee Crow
+					["qg"] = 106299,	-- Quest Giver: Thisalee Crow
+					["sourceQuest"] = 46677,	-- Source Quest: Prick of a Thistle
+					["lvl"] = 110,
+				},
 				q(40650),	-- Champion: Zen'tabra
 				q(41689),	-- Cleansing the Mother Tree
 				q(44275),	-- Court of Stars
@@ -80,7 +85,12 @@ _.ClassHalls =
 				q(44271),	-- Eye of Azshara
 				q(44077),	-- Eye of Azshara: Essence of Balance
 				q(42365),	-- Focusing the Energies
-				q(46786),	-- Further Advancement
+				{
+					["questID"] = 46786,	-- Further Advancement
+					["qg"] = 98002,	-- Quest Giver: Skylord Omnuron <Mission Specialist>
+					["sourceQuest"] = 46044,	-- Source Quest: Champion: Thisalee Crow
+					["lvl"] = 110,
+				},
 				q(46154),	-- Furthering Knowledge
 				q(42037),	-- Gathering the Dreamweavers
 				q(45425),	-- Grovebound
@@ -108,7 +118,6 @@ _.ClassHalls =
 				q(40649),	-- Meet with Mylune
 				q(41468),	-- Mistress of the Claw
 				q(44431),	-- More Weapons of Old
-				q(45426),	-- Nature's Advance
 				q(41422),	-- Necessary Preparations
 				q(44264),	-- Neltharion's Lair
 				q(44265),	-- Neltharion's Lair
@@ -126,6 +135,11 @@ _.ClassHalls =
 				q(42584),	-- Sister Lilith
 				q(41255),	-- Sowing The Seed
 				q(44869),	-- Talon Terror
+				{
+					["questID"] = 44869,	-- Talon Terror (Champions of Legionfall quest chain)
+					["qg"] = 106299,	-- Quest Givers: Thisalee Crow
+					["lvl"] = 110,
+				},
 				q(46317),	-- Talon's Call
 				q(44263),	-- The Arcway
 				q(40900),	-- The Burden Borne
@@ -154,7 +168,12 @@ _.ClassHalls =
 				q(43882),	-- The Nighthold: Vaults
 				q(43501),	-- The Power Within
 				q(43496),	-- The Power Within
-				q(46674),	-- The Preservation of Nature
+				{
+					["questID"] = 46674,	-- The Preservation of Nature
+					["qg"] = 101195,	-- Quest Giver: Rensar Greathoof <Archdruid of the Grove>
+					["sourceQuest"] = 45426,	-- Source Quest: Nature's Advance
+					["lvl"] = 110,
+				},
 				q(43991),	-- The Protectors
 				qart(qg(103778, q(40783))),	-- The Scythe of Elune
 				q(40651),	-- The Seed of Ages
@@ -168,7 +187,11 @@ _.ClassHalls =
 				q(44261),	-- Vault of the Wardens
 				q(44259),	-- Violet Hold
 				q(44058),	-- Volpin the Elusive
-				q(40646),	-- Weapons of Legend
+				{
+					["questID"] = 40646,	-- Weapons of Legend
+					["qg"] = 101195,	-- Quest Giver: Rensar Greathoof <Archdruid of the Grove>
+					["sourceQuest"] = 40644,	-- Source Quest: To The Dreamgrove
+				},
 				q(44443),	-- Weapons of the Ancients
 				q(41413),	-- What Could Go Wrong?
 				q(45179),	-- Win the Crowd

@@ -640,6 +640,38 @@ _.Zones =
 							["classes"] = { 11 },  -- Druid
 						}),
 					}),
+					-- Druid Champions of Legionfall Quest Chain Parts
+					{
+						["questID"] = 45425,	-- Grovebound
+						["qgs"] = { 120070, 120084 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
+						["sourceQuest"] = 46677,	-- Source Quest: Prick of a Thistle
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+						["groups"] = {
+							i(147461),	-- Unblemished Leaf of Shaladrassil
+						},
+					},
+					{
+						["questID"] = 46676,	-- Nature's Touch
+						["qgs"] = { 120070, 120084 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
+						["sourceQuest"]	= 46674,	-- Source Quest: The Preservation of Nature
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
+					{
+						["questID"] = 46677,	-- Prick of a Thistle
+						["qgs"] = { 120070, 120084 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
+						["sourceQuests"] = { 46676, 46675 },	-- Source Quests: Nature's Touch / To Track a Demon
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
+					{
+						["questID"] = 46675,	-- To Track a Demon
+						["qgs"] = { 120070, 120084 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
+						["sourceQuest"]	= 46674,	-- Source Quest: The Preservation of Nature
+						["classes"]= { 11 },	-- Druid
+						["lvl"] = 110,
+					},
 					--[[
 					n(-34, {	-- World Quests
 						q(46209),	-- A Flare In The Dark
