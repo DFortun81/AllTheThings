@@ -2333,15 +2333,15 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 								rightSide:SetText(GetProgressColorText(progress, total));
 								if #items > 0 then
 									self:AddLine("Contains:");
-									if #items < 36 then
+									if #items < 10 then
 										for i,pair in ipairs(items) do
 											self:AddDoubleLine(pair[1], pair[2]);
 										end
 									elseif #parents < 2 then
-										for i=1,math.min(36, #items) do
+										for i=1,math.min(10, #items) do
 											self:AddDoubleLine(items[i][1], items[i][2]);
 										end
-										self:AddLine("And " .. (#items - 36) .. " more...");
+										self:AddLine("And " .. (#items - 10) .. " more...");
 									else
 										for i,j in ipairs(parents) do
 											local title = "  ";
@@ -6423,6 +6423,7 @@ function app:GetDataCache()
 			db.text = "Never Implemented";
 			table.insert(g, db);
 		end
+		--]]
 		-- Unsorted
 		if app.Categories.Unsorted then
 			db = {};
@@ -6431,7 +6432,7 @@ function app:GetDataCache()
 			db.text = "Unsorted";
 			table.insert(g, db);
 		end
-		
+		--[[
 		-- Titles (Dynamic)
 		db = app.CreateAchievement(2188, GetTitleCache());
 		db.expanded = false;
