@@ -7,6 +7,9 @@ _.Zones =
 		m(1021, { 	-- Broken Shore
 			["groups"] = {
 				n(-7, { 	-- World Bosses
+					["description"] = "|cff66ccffOnly one of these World Bosses are up at a time and only spawn when the Nether Disruptor is active.  \nThese are independent of the other Broken Isle rares and both can be up.|r",
+					["achievementID"] = 11786,	-- Terrors of the Shore
+					["bonusID"] = 1482, -- Sets ilvl to 900
 					["groups"] = {
 						cr(121124, e(1956, { -- Apocron 
 							["groups"] = {
@@ -29,7 +32,6 @@ _.Zones =
 								i(147732)
 							},
 							["questID"] = 46947, -- Change to tracking quest later.
-							["creatureID"] = 117239,
 							["isRaid"] = true,
 						})),	
 						cr(117303, e(1884, { -- Malificus 
@@ -59,9 +61,6 @@ _.Zones =
 							["isRaid"] = true,
 						})),
 					},
-					["description"] = "|cff66ccffOnly one of these World Bosses are up at a time and only spawn when the Nether Disruptor is active.  \nThese are independent of the other Broken Isle rares and both can be up.|r",
-					["bonusID"] = 1482, -- Sets ilvl to 900
-					--["modID"] = 3
 				}),		
 				n(120434, { -- Command Center
 					["groups"] =  {
@@ -81,6 +80,14 @@ _.Zones =
 						}),
 					},
 					["achievementID"] = 11736, -- Assume Command
+				}),
+				n(119305, {	-- Legionfall Construction Table
+					ach(11735),	-- Take Command
+					ach(11736),	-- Assume Command
+					ach(11731),	-- A Magic Contribution
+					ach(11732),	-- A Magnificent Contribution
+					ach(11737),	-- Disrupting the Nether
+					ach(11738),	-- It'll Nether Happen
 				}),
 				--[[
 				n(-41, { 	-- Mage Tower
@@ -1098,64 +1105,171 @@ _.Zones =
 				--]]
 				}),
 				n(-16, { 	-- Rares
+					{
+						["achievementID"] = 11841,	-- Naxt Victim
+						["description"] = "How to summon the specific bosses is very simple. Each different Sentinax Beacon summons mobs that drop additional Sentinax Beacons for that specific Beacon and ultimately the Portal Stone (boss).\n\nYou get the Uncommon (green quality) Sentinax Beacons from the standard mobs in the area, you then need to farm the mobs that come out of the Sentinax Portal until they drop a Rare (blue quality) Sentinax Beacon and use it to empower the portal, it is only after this that the Portal Stone can drop. Keep using all the Rare Sentinax Beacons you get to extend the duration of the Sentinax Beacon.",
+						["groups"] = {
+							i(146919, {	-- Portal-Stone: An'thyna
+								{
+									["creatureID"] = 120675,	-- An'thyna <Venom Queen>
+									["achievementID"] = 11841,	-- Naxt Victim
+									["criteriaID"] = 4,
+								},
+							}),
+							i(146920, {	-- Portal-Stone: Fel Obliterator
+								{
+									["creatureID"] = 120681,	-- Fel Obliterator
+									["achievementID"] = 11841,	-- Naxt Victim
+									["criteriaID"] = 5,	-- Fel Obliterator
+								},
+							}),
+							i(146918, {	-- Portal-Stone: Force-Commander Xillious
+								{
+									["creatureID"] = 120665,	-- Force-Commander Xillious
+									["achievementID"] = 11841,	-- Naxt Victim
+									["criteriaID"] = 3,	-- Force-Commander Xillious
+								},
+							}),
+							i(146921, {	-- Portal-Stone: Illisthyndria
+								{
+									["creatureID"] = 120686,	-- Illisthyndria <Keeper of Knives>
+									["achievementID"] = 11841,	-- Naxt Victim
+									["criteriaID"] = 6,	-- Illisthyndria
+								},
+							}),
+							i(146917, {	-- Portal-Stone: Skulguloth
+								{
+									["creatureID"] = 120641,	-- Skulguloth
+									["achievementID"] = 11841,	-- Naxt Victim
+									["criteriaID"] = 2,	-- Skulguloth
+								},
+							}),
+							i(146916, {	-- Portal-Stone: Than'otalion
+								{
+									["creatureID"] = 120583,	-- Than'otalion
+									["achievementID"] = 11841,	-- Naxt Victim
+									["criteriaID"] = 1,	-- Than'otalion
+								},
+							}),
+						},
+					},
+					{
+						["itemID"] = 147775,	-- Nether Portal Disruptor
+						["description"] = "Can be used to summon rare elite mobs from Nether Portals while the Nether Disruptor is up. You can only kill 50 elites per day. It is consumed on use.\n\nCan be bought or sold on the Auction House.",
+						["groups"] = {
+							n(121092),	-- Anomalous Observer
+							n(121049),	-- Baleful Knight-Captain
+							n(121090),	-- Demented Shivarra
+							n(121073),	-- Deranged Succubus
+							n(121077),	-- Lambent Felhunter
+							n(121056),	-- Malformed Terrorguard
+							n(121108),	-- Ruinous Overfiend
+						},
+					},
+					{
+						["npcID"] = 121016,		-- Aqueux
+						["questID"] = 46953,	-- Rare Elite 18
+					},
+					{
+						["npcID"] = 121029,		-- Brood Mother Nix
+						["questID"] = 46965,	-- Rare Elite 19
+					},
+					{
+						["npcID"] = 121046,		-- Brother Badatin
+						["questID"] = 47001,	-- Rare Elite 21
+					},
+					{
+						["npcID"] = 116953,		-- Corrupted Bonebreaker
+						["questID"] = 46101,	-- Rare Elite 12
+					},
+					{
+						["npcID"] = 117136,		-- Doombringer Zar'thoz
+						["questID"] = 46097,	-- Rare Elite 08
+					},
+					{
+						["npcID"] = 117095,		-- Dreadblade Annihilator
+						["questID"] = 46098,	-- Rare Elite 09
+					},
+					{
+						["npcID"] = 118993,		-- Dreadeye
+						["questID"] = 46202,	-- Rare Elite 14
+					},
+					{
+						["npcID"] = 121134,		-- Duke Sithizi
+						["questID"] = 47036,	-- Rare Elite 24
+					},
+					{
+						["npcID"] = 117086,		-- Emberfire
+						["questID"] = 46093,	-- Rare Elite 04
+					},
+					{
+						["npcID"] = 116166,		-- Eye of Gurgh
+						["questID"] = 47068,	-- Rare Elite 25
+					},
+					{
+						["npcID"] = 117093,		-- Felbringer Xar'thok
+						["questID"] = 46099,	-- Rare Elite 10
+					},
+					{
+						["npcID"] = 117103,		-- Felcaller Zelthae
+						["questID"] = 46102,	-- Rare Elite 13
+					},
+					{
+						["npcID"] = 117091,		-- Felmaw Emberfiend
+						["questID"] = 46095,	-- Rare Elite 06
+					},
+					{
+						["npcID"] = 120998,		-- Flllurlokkr
+						["questID"] = 46951,	-- Rare Elite 17
+					},
+					{
+						["npcID"] = 121037,		-- Grossir
+						["questID"] = 46995,	-- Rare Elite 20
+					},
+					{
+						["npcID"] = 119718,		-- Imp Mother Bruva
+						["questID"] = 46313,	-- Rare Elite 16
+					},
+					{
+						["npcID"] = 117089,		-- Inquisitor Chillbane
+						["questID"] = 46096,	-- Rare Elite 07
+					},
+					{
+						["npcID"] = 121107,		-- Lady Eldrathe
+						["questID"] = 47026,	-- Rare Elite 22
+					},
 					n(119629, { -- Lord Hel'Nurath 
 						["groups"] = {
 							i(142233), -- Shadowy Reins of the Accursed Wrathsteed
 						},
-						["questID"] = 46304,
+						["questID"] = 46304,	-- Rare Elite 15
 						["classes"] = {9},
 						["description"] = "|cff66ccffThis mount is only available to warlocks who have completed|r |cFFFFD700The Wrathsteed of Xoroth|r |cff66ccffquest from the class mount campaign. \nOnce completed you can kill Lord Hel'Nurath for a 100% chance at getting the mount skin.|r"
-					}),				
---[[
-					n(121016, { -- Aqueux
 					}),
-					n(121029, { -- Brood Mother Nix
-					}),
-					n(121046, { -- Brother Badatin			
-					}),
-					n(116953, { -- Corrupted Bonebreaker
-					}),
-					n(117136, { -- Doombringer Zar'thoz
-					}),
-					n(117095, { -- Dreadblade Annihilator
-					}),
-					n(118993, { -- Dreadeye
-					}),
-					n(121134, { -- Duke Sithizi
-					}),
-					n(117086, { -- Emberfire
-					}),
-					n(116166, { -- Eye of Gurgh
-					}),
-					n(117093, { -- Felbringer Xar'thok
-					}),
-					n(117103, { -- Felcaller Zelthae
-					}),
-					n(117091, { -- Felmaw Emberfiend
-					}),
-					n(120998, { -- Flllurlokkr
-					}),
-					n(121037, { -- Grossir
-					}),
-					n(121107, { -- Lady Eldrathe
-					}),
-					n(119718, { -- Imp Mother Bruva
-					}),
-					n(117089, { -- Inquisitor Chillbane
-					}),
-					n(117141, { -- Malgrazoth
-					}),
-					n(117094, { -- Malorus the Soulkeeper
-					}),
-					n(117096, { -- Potionmaster Gloop
-					}),
-					n(117140, { -- Salethan the Broodwalker	
-					}),
-					n(121112, { -- Somber Dawn
-					}),
-					n(117090, { -- Xorogun the Flamecarver
-					}),
---]]
+					{
+						["npcID"] = 117141,		-- Malgrazoth
+						["questID"] = 46090,	-- Rare Elite 01
+					},
+					{
+						["npcID"] = 117094,		-- Malorus the Soulkeeper
+						["questID"] = 46092,	-- Rare Elite 03
+					},
+					{
+						["npcID"] = 117096,		-- Potionmaster Gloop
+						["questID"] = 46094,	-- Rare Elite 05
+					},
+					{
+						["npcID"] = 117140,		-- Salethan the Broodwalker
+						["questID"] = 46091,	-- Rare Elite 02
+					},
+					{
+						["npcID"] = 121112,		-- Somber Dawn
+						["questID"] = 47028,	-- Rare Elite 23
+					},
+					{
+						["npcID"] = 117090,		-- Xorogun the Flamecarver
+						["questID"] = 46100,	-- Rare Elite 11
+					},
 				}),
 				n(-77, { 	-- Special
 					["groups"] = {
@@ -1307,13 +1421,15 @@ _.Zones =
 									["ignoreBonus"] = true,
 									["itemID"] = 141371,
 								},
-								i(147708); -- Legion Invasion Simulator Toy
-								i(130199); -- Legion Pocket Poral Toy
-								i(147205); -- Legionfall Tabard
-								--[[	
-								sp(246984, { i(151541) }), -- Technique: Glyph of Floating 
-								sp(225559, { i(141067) }), -- Technique: Glyph of Wrathguard
-								--]]
+								i(147708), -- Legion Invasion Simulator Toy
+								i(130199), -- Legion Pocket Poral Toy
+								i(147205), -- Legionfall Tabard
+								{
+									["itemID"] = 147775,	-- Nether Portal Disruptor
+									["description"] = "Can be used to summon rare elite mobs from Nether Portals while the Nether Disruptor is up. Can be bought or sold on the Auction House.",
+								},
+								i(151541), -- Technique: Glyph of Floating 
+								i(141067), -- Technique: Glyph of Wrathguard
 								i(147216, { -- Dauntless Hood
 									i(147241), -- Cloth
 									i(147242), -- Leather
