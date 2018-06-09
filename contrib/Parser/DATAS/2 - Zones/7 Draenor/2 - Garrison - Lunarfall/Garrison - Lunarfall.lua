@@ -3550,7 +3550,6 @@ _.Zones =
 								i(125860),	-- Warmongering Gladiator's Band of Meditation
 								i(125858),	-- Warmongering Gladiator's Band of Prowess
 								i(125859),	-- Warmongering Gladiator's Band of Victory
-								i(125863),	-- Warmongering Gladiator's Barrier
 								i(125865),	-- Warmongering Gladiator's Belt of Cruelty
 								i(125864),	-- Warmongering Gladiator's Belt of Prowess
 								i(125866),	-- Warmongering Gladiator's Belt of Victory
@@ -3600,7 +3599,6 @@ _.Zones =
 								i(125972),	-- Warmongering Gladiator's Emblem of Cruelty
 								i(125974),	-- Warmongering Gladiator's Emblem of Meditation
 								i(125973),	-- Warmongering Gladiator's Emblem of Tenacity
-								i(125855),	-- Warmongering Gladiator's Endgame
 								i(125993),	-- Warmongering Gladiator's Felweave Amice
 								i(125990),	-- Warmongering Gladiator's Felweave Cowl
 								i(125989),	-- Warmongering Gladiator's Felweave Handguards
@@ -3668,8 +3666,6 @@ _.Zones =
 								i(125998),	-- Warmongering Gladiator's Plate Shoulders
 								i(125933),	-- Warmongering Gladiator's Plate Visor
 								i(125823),	-- Warmongering Gladiator's Raiment of Cruelty
-								i(125862),	-- Warmongering Gladiator's Redoubt
-								i(125856),	-- Warmongering Gladiator's Reprieve
 								i(125803),	-- Warmongering Gladiator's Ring of Cruelty
 								i(125804),	-- Warmongering Gladiator's Ring of Prowess
 								i(125805),	-- Warmongering Gladiator's Ring of Triumph
@@ -3689,7 +3685,6 @@ _.Zones =
 								i(125914),	-- Warmongering Gladiator's Scaled Helm
 								i(125915),	-- Warmongering Gladiator's Scaled Legguards
 								i(125916),	-- Warmongering Gladiator's Scaled Shoulders
-								i(125965),	-- Warmongering Gladiator's Shield Wall
 								i(125930),	-- Warmongering Gladiator's Shoulderplates
 								i(125963),	-- Warmongering Gladiator's Signet of Accuracy
 								i(125962),	-- Warmongering Gladiator's Signet of Cruelty
@@ -3734,7 +3729,6 @@ _.Zones =
 								i(126062),	-- Warmongering Combatant's Band of Meditation
 								i(126060),	-- Warmongering Combatant's Band of Prowess
 								i(126061),	-- Warmongering Combatant's Band of Victory
-								i(126065),	-- Warmongering Combatant's Barrier
 								i(126067),	-- Warmongering Combatant's Belt of Cruelty
 								i(126066),	-- Warmongering Combatant's Belt of Prowess
 								i(126070),	-- Warmongering Combatant's Bindings of Cruelty
@@ -3775,7 +3769,6 @@ _.Zones =
 								i(126146),	-- Warmongering Combatant's Emblem of Cruelty
 								i(126148),	-- Warmongering Combatant's Emblem of Meditation
 								i(126147),	-- Warmongering Combatant's Emblem of Tenacity
-								i(126057),	-- Warmongering Combatant's Endgame
 								i(126171),	-- Warmongering Combatant's Felweave Amice
 								i(126168),	-- Warmongering Combatant's Felweave Cowl
 								i(126167),	-- Warmongering Combatant's Felweave Handguards
@@ -3826,8 +3819,6 @@ _.Zones =
 								i(126111),	-- Warmongering Combatant's Plate Helmet
 								i(126175),	-- Warmongering Combatant's Plate Legguards
 								i(126176),	-- Warmongering Combatant's Plate Shoulders
-								i(126064),	-- Warmongering Combatant's Redoubt
-								i(126058),	-- Warmongering Combatant's Reprieve
 								i(126013),	-- Warmongering Combatant's Ring of Cruelty
 								i(126014),	-- Warmongering Combatant's Ring of Prowess
 								i(126015),	-- Warmongering Combatant's Ring of Triumph
@@ -3847,7 +3838,6 @@ _.Zones =
 								i(126100),	-- Warmongering Combatant's Scaled Helm
 								i(126101),	-- Warmongering Combatant's Scaled Legguards
 								i(126102),	-- Warmongering Combatant's Scaled Shoulders
-								i(126143),	-- Warmongering Combatant's Shield Wall
 								i(126113),	-- Warmongering Combatant's Shoulderplates
 								i(126141),	-- Warmongering Combatant's Signet of Accuracy
 								i(126140),	-- Warmongering Combatant's Signet of Cruelty
