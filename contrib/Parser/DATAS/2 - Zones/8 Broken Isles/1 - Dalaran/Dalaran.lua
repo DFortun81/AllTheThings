@@ -1335,6 +1335,11 @@ _.Zones =
 					q(37448),	-- A Simple Plan
 					q(40017),	-- A Slip of the Hand
 					q(38564),	-- A Sweet Bargain
+					{
+						["questID"] = 40643,	-- A Summons From Moonglade
+						["qg"] = 101061,	-- Quest Giver: Archdruid Hamuul Runetotem
+						["classes"] = {11},	-- Druid Only
+					},
 					q(44159),	-- A Ticket for Marin
 					q(47663),	-- A Timely Summons from Shattrath
 					q(49472),	-- A Titanic Effort
