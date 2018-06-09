@@ -2304,6 +2304,8 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 										elseif app.ShowIncompleteQuests(j) then
 											right = L("NOT_COLLECTED_ICON");
 										end
+									elseif j.visible then
+										right = "---";
 									end
 									
 									-- If there's progress to display, then let's summarize a bit better.
@@ -2322,13 +2324,6 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 										end
 										
 										-- Insert into the display.
-										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
-										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
-										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
-										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
-										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
-										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
-										-- "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA)
 										tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), right });
 									end
 								end
