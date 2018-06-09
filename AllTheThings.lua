@@ -6423,7 +6423,6 @@ function app:GetDataCache()
 			db.text = "Never Implemented";
 			table.insert(g, db);
 		end
-		--]]
 		-- Unsorted
 		if app.Categories.Unsorted then
 			db = {};
@@ -6432,7 +6431,6 @@ function app:GetDataCache()
 			db.text = "Unsorted";
 			table.insert(g, db);
 		end
-		--[[
 		-- Titles (Dynamic)
 		db = app.CreateAchievement(2188, GetTitleCache());
 		db.expanded = false;
