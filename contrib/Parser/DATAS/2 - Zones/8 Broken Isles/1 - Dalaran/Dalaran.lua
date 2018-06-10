@@ -1691,7 +1691,6 @@ _.Zones =
 					q(38777),	-- Leystone Deposit Sample
 					q(38523),	-- Leystone Hoofplates
 					q(38784),	-- Leystone Seam Sample
-					q(44153),	-- Light's Charge
 					q(39340),	-- Lining the Crucible
 					q(38960),	-- Lining Them Up
 					q(40187),	-- Links in the Chain

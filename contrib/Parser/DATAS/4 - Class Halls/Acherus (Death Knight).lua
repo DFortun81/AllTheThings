@@ -18,48 +18,6 @@ _.ClassHalls =
 				q(44246, { -- Champion: Rottgut
 					i(139680), -- Bracers
 				}),
-				q(44153, { -- Light's Charge [Quests are in order of the chain]
-					["groups"] = {
-						q(44004, { -- Bringer of the Light
-							i(140617), -- Rakeesh's Pauldron
-							i(140611), -- Fel Commander's Vambraces
-						}),
-						q(43705, {	-- Nobundo's Last Stand
-							["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario shortly after the Falling Star quest begins.",
-							["groups"] = {
-								i(140609),	-- Slippers of the Earthen Healer
-								i(140608),	-- Boots of the Broken
-								i(140607),	-- Elementally-Infused Boots
-								i(140606),	-- Earth-Crushing Sabatons
-								i(140605),	-- Earthmender's Pantaloons
-								i(140604),	-- Britches of Elemental Protection
-								i(140603),	-- Nobundo's Earthshaper Kilt
-								i(140602),	-- Earth-Plate Legguards
-							}
-						}),
-						q(44479, { -- Ravencrest's Legacy
-							i(139994), -- Breastplate of the Guard
-							i(139995), -- Siegebreaker's Gauntlets
-						}),
-						q(44416, { -- Hunter of Night
-							i(140002), -- Broxigar's Girdle
-						}),
-						q(44481, { -- Destiny Unfulfilled
-							["groups"] = {
-								i(140005), -- Impenetrable Faceplate
-							},
-						}),
-						q(45175, { -- Soul Prism of the Illidari
-							i(140000), -- Girdle of the Nethertouched
-							i(140014), -- Sabatons of the Illidari Crusade
-						}),
-						q(45176, { -- Trial of Valor: The Once and Future Lord of Shadows
-							i(140021), -- Crusader's Inferno Pauldrons
-							i(139996), -- The Soulbinder's Gauntlets
-						}),
-					},
-					["icon"] = "Interface\\Icons\\achievement_boss_illidan",
-				}),
 			}),
 			n(97379, { -- Scouting Map
 				["groups"] = {
@@ -1003,7 +961,5 @@ _.ClassHalls =
 		},
 		["mapID"] = 1021,
 		["lvl"] = 98,
-		--["icon"] = "Interface\\Icons\\Classicon_deathknight",
-		--["classes"] = {6}
 	}),
 };
