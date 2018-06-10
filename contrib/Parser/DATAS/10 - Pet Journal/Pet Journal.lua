@@ -456,7 +456,7 @@ _.PetJournal =
 		p(196),		-- Proto-Drake Whelp
 		p(143),		-- Red Dragonhawk Hatchling
 		p(144),		-- Silver Dragonhawk Hatchling
-		p(347),		-- Soul of the Aspects
+		un(35, p(347)),		-- Soul of the Aspects
 		p(489),		-- Spawn of Onyxia
 		un(3, p(179)),	-- Spirit of Competition
 		p(87),		-- Sprite Darter Hatchling
