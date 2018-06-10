@@ -296,6 +296,246 @@ _.Zones =
 					},
 					["lvl"] = 110,
 				}),
+				n(113857, {	-- Light's Heart
+					["icon"] = "Interface\\Icons\\achievement_boss_illidan",
+					["description"] = "Light's Heart is the sentience core of the naaru prime Xe'ra sent as a last resort by High Exarch Turalyon who battles on Argus, to be handed to Prophet Velen. It fell from the Felstorm along the coast of Suramar, in the Broken Isles.\n\nThe Order of the Silver Hand witnessed the event and informed Archmage Khadgar, who then tasked order leaders with recovering it before the Burning Legion did. It has since been kept safe in a class order hall.\n\nUnlocked by the Tear of Elune, Xe'ra communicates through it with the order leader in order to provide insight into the history of Illidan Stormrage. She revealed that Light's Heart was to serve as the vessel for Illidan Stormrage's rebirth. After Illidan's soul was put into a prism to keep it safe, it was brought to Light's Heart where the prism was \"seemingly consumed\". Light's Heart, with Illidan's soul inside, is then brought to Khadgar with instructions to call forth the vessel's power when Gul'dan attempts to summon Sargeras, thus releasing Illidan's soul into his body before Sargeras can possess his empty shell.",
+					["maps"] = {
+						-- Order Halls
+						1021,	-- Death Knight
+						1052,	-- Demon Hunter
+						1077,	-- Druid
+						1048,	-- Druid (Dreamway)
+						1072,	-- Hunter
+						1068,	-- Mage
+						1044,	-- Monk
+						23,		-- Paladin (Eastern Plaguelands - Should probably fix this in BFA)
+						1040,	-- Priest
+						1014,	-- Rogue (Dalaran - Should probably fix this in BFA)
+						1057,	-- Shaman
+						1050,	-- Warlock
+						1035,	-- Warrior
+					},
+					["groups"] = {
+						{
+							["questID"] = 44009,	-- A Falling Star
+							["qg"] = 90417,	-- Quest Giver: Archmage Khadgar
+						},
+						{
+							["questID"] = 44004,	-- Bringer of the Light
+							["qg"] = 112130,	-- Quest Giver: Archmage Khadgar
+							["sourceQuest"] = 44009,	-- Source Quest: A Falling Star
+							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
+							["maps"] = { 1091 },	-- Scenario: In Defense of the Exodar
+							["groups"] = {
+								{
+									["npcID"] = 110486,	-- Huk'roth the Huntmaster
+									["groups"] = {
+										i(140533),	-- Huntmaster's Injector
+									},
+								},
+								{
+									["questID"] = 43705,	-- Nobundo's Last Stand
+									["qg"] = 110695,	-- Quest Giver: Farseer Nobundo
+									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. If you want to complete this optional quest, you MUST pick it up before completing the Step 2 objectives (Portals and Terrified Citizens) or else it will not be available!",
+									["groups"] = {
+										i(140608),	-- Boots of the Broken
+										i(140604),	-- Britches of Elemental Protection
+										i(140606),	-- Earth-Crushing Sabatons
+										i(140602),	-- Earth-Plate Legguards
+										i(140605),	-- Earthmender's Pantaloons
+										i(140607),	-- Elementally-Infused Boots
+										i(140603),	-- Nobundo's Earthshaper Kilt
+										i(140609),	-- Slippers of the Earthen Healer
+									}
+								},
+								i(140614),	-- Amice of Steadfast Allies
+								i(140616),	-- Annihilator's Mantle
+								i(140613),	-- Bracers of Lost Lineage
+								i(140612),	-- Bracers of the Fallen
+								i(140611),	-- Fel Commander's Vambraces
+								i(140615),	-- Felstalking Shoulders
+								i(140617),	-- Rakeesh's Pauldron
+								i(140610),	-- Wristwraps of the Grieving Prophet
+							},
+						},
+						{
+							["questID"] = 44153,	-- Light's Charge
+							["qg"] = 90417,	-- Quest Giver: Archmage Khadgar
+							["sourceQuest"] = 44004,	-- Source Quest: Bringer of the Light
+							["groups"] = {
+								{
+									["achievementID"] = 10461,	-- Fighting with Style: Classic
+									["criteriaID"] = 2,	-- Complete the quest, "Light's Charge."
+								},
+							},
+						},
+						{
+							["questID"] = 44337,	-- Goddess Watch Over You
+							["sourceQuest"] = 44153,	-- Source Quest: Light's Charge
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["description"] = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that have.",
+							["lvl"] = 110,
+						},
+						{
+							["questID"] = 44338,	-- Goddess Watch Over You
+							["sourceQuest"] = 44153,	-- Source Quest: Light's Charge
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["description"] = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that haven't.",
+							["lvl"] = 110,
+						},
+						{
+							["questID"] = 44448,	-- In the House of Light and Shadow
+							["sourceQuests"] = { 44337, 44338 },	-- Source Quest: Goddess Watch Over You (either version)
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["lvl"] = 110,
+						},
+						{
+							["questID"] = 44464,	-- Awakenings
+							["sourceQuest"] = 44448,	-- Source Quest: In the House of Light and Shadow
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["lvl"] = 110,
+						},
+						{
+							["questID"] = 44466,	-- An Unclear Path
+							["sourceQuest"] = 44464,	-- Source Quest: Awakenings
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["lvl"] = 110,
+						},
+						{
+							["questID"] = 44479,	-- Ravencrest's Legacy
+							["sourceQuest"] = 44466,	-- Source Quest: An Unclear Path
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["description"] = "This quest sends you to a scenario involving Kur'talos Ravencrest, Illidan Stormrage, and the ill-fated Moonguard. Before you kill the final boss, make sure to do everything contained within!",
+							["maps"] = { 1099 },	-- Scenario: Black Rook Hold
+							["lvl"] = 110,
+							["groups"] = {
+								{
+									["questID"] = 44414,	-- Felspawns of Lothros
+									["qgs"] = { 113361, 113829 },	-- Quest Giver: Captain Jarod Shadowsong
+									["sourceQuest"] = 44479,	-- Source Quest: Ravencrest's Legacy
+									["lvl"] = 110,
+								},
+								{
+									["questID"] = 44415,	-- The Red Axe
+									["qgs"] = { 113361, 113829 },	-- Quest Giver: Captain Jarod Shadowsong
+									["sourceQuest"] = 44414,	-- Source Quest: Felspawns of Lothros
+									["lvl"] = 110,
+								},
+								{
+									["questID"] = 44416,	-- Hunter of Night
+									["qg"] = 113355,	-- Quest Giver: Broxigar the Red
+									["sourceQuest"] = 44415,	-- Source Quest: The Red Axe
+									["lvl"] = 110,
+									["groups"] = {
+										i(139932),	-- Belt of Shadowsong
+										i(140002),	-- Broxigar's Girdle
+										i(139902),	-- Defiler's Cord
+										i(139962),	-- Pit Lord's Chain
+										i(121802),	-- Ring of the Displaced Mage
+									},
+								},
+								i(139994),	-- Breastplate of the Guard
+								i(139903),	-- Felblaze Handwraps
+								i(139942),	-- Felspawn Gloves
+								i(139954),	-- Moon Guard Robes
+								i(139984),	-- Ravencrest Chainmail
+								i(139920),	-- Robes of Elune
+								i(139995),	-- Siegebreaker's Gauntlets
+								i(139963),	-- Skyguard Grips
+							},
+						},
+						{
+							["questID"] = 44480,	-- In My Father's House
+							["sourceQuest"] = 44479,	-- Source Quest: Ravencrest's Legacy
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["lvl"] = 110,
+						},
+						{
+							["questID"] = 44496,	-- Destiny Unfulfilled
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["sourceQuest"] = 44480,	-- Source Quest: In My Father's House
+							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that haven't killed him.",
+							["lvl"] = 110,
+							["groups"] = {
+								i(121745),	-- Helm of the Betrayed
+								i(139909),	-- Illidari High Lord's Cowl
+								i(140005),	-- Impenetrable Faceplate
+								i(139946),	-- Purified Vision of Sargeras
+							},
+						},
+						{
+							["questID"] = 44497,	-- Destiny Unfulfilled
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["sourceQuest"] = 44480,	-- Source Quest: In My Father's House
+							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for Hunters and Demon Hunters only.",
+							["lvl"] = 110,
+							["classes"] = { 3, 12 },	-- Hunters / Demon Hunters Only
+							["groups"] = {
+								i(121745),	-- Helm of the Betrayed
+								i(139909),	-- Illidari High Lord's Cowl
+								i(140005),	-- Impenetrable Faceplate
+								i(139946),	-- Purified Vision of Sargeras
+							},
+						},
+						{
+							["questID"] = 44481,	-- Destiny Unfulfilled
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["sourceQuest"] = 44480,	-- Source Quest: In My Father's House
+							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that have defeated him.",
+							["lvl"] = 110,
+							["groups"] = {
+								i(121745),	-- Helm of the Betrayed
+								i(139909),	-- Illidari High Lord's Cowl
+								i(140005),	-- Impenetrable Faceplate
+								i(139946),	-- Purified Vision of Sargeras
+							},
+						},
+						{
+							["questID"] = 45174,	-- The Hunt for Illidan Stormrage
+							["sourceQuests"] = { 44496, 44497, 44481 },	-- Source Quest: Destiny Unfulfilled (any of the three)
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["lvl"] = 110,
+						},
+						{
+							["questID"] = 45175,	-- Soul Prism of the Illidari
+							["sourceQuest"] = 45174,	-- Source Quest: The Hunt for Illidan Stormrage
+							["qg"] = 89398,	-- Quest Giver: Allari the Souleater <Illidari>
+							["lvl"] = 110,
+							["groups"] = {
+								i(139930),	-- Belt of the Netherwalker
+								i(139978),	-- Boots of the Illidari Crusade
+								i(139933),	-- Footpads of the Illidari Crusade
+								i(140000),	-- Girdle of the Nethertouched
+								i(139900),	-- Nethertether Cord
+								i(139960),	-- Netherwrested Chain Belt
+								i(140014),	-- Sabatons of the Illidari Crusade
+								i(139921),	-- Slippers of the Illidari Crusade
+							},
+						},
+						{
+							["questID"] = 45176,	-- Trial of Valor: The Once and Future Lord of Shadows
+							["sourceQuest"] = 45175,	-- Source Quest: Soul Prism of the Illidari
+							["qg"] = 89398,	-- Quest Giver: Allari the Souleater <Illidari>
+							["lvl"] = 110,
+							["groups"] = {
+								i(139988),	-- Blazing Purpose Mantle
+								i(140021),	-- Crusader's Inferno Pauldrons
+								i(139941),	-- Gloves of the Shadow's Return
+								i(139964),	-- Grips of Death's Grasp
+								i(139904),	-- Handwraps of Soulwringing
+								i(139958),	-- Inferno's March Shoulderpads
+								i(139928),	-- Netherworld's March Amice
+								i(139996),	-- The Soulbinder's Gauntlets
+							},
+						},
+						{
+							["questID"] = 45177,	-- The Nighthold
+							["sourceQuest"] = 45176,	-- Source Quest: Trial of Valor: The Once and Future Lord of Shadows
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["lvl"] = 110,
+						},
+					},
+				}),
 			},
 			["lvl"] = 98,
 		}),

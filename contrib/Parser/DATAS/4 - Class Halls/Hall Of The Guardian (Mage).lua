@@ -174,48 +174,6 @@ _.ClassHalls =
 					sp(219663) -- Heroic Weapons [No item associated]
 				}),
 				--]]
-				q(44153, { -- Light's Charge [Quests are in order of the chain]
-					["groups"] = {
-						q(44004, { -- Bringer of the Light
-							i(140614), -- Amice of Steadfast Allies
-							i(140610), -- Wristwraps of the Grieving Prophet
-						}),
-						q(43705, {	-- Nobundo's Last Stand
-							["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario shortly after the Falling Star quest begins.",
-							["groups"] = {
-								i(140609),	-- Slippers of the Earthen Healer
-								i(140608),	-- Boots of the Broken
-								i(140607),	-- Elementally-Infused Boots
-								i(140606),	-- Earth-Crushing Sabatons
-								i(140605),	-- Earthmender's Pantaloons
-								i(140604),	-- Britches of Elemental Protection
-								i(140603),	-- Nobundo's Earthshaper Kilt
-								i(140602),	-- Earth-Plate Legguards
-							}
-						}),
-						q(44479, { -- Ravencrest's Legacy
-							i(139920), -- Robes of Elune
-							i(139903), -- Felblaze Handwraps
-						}),
-						q(44416, { -- Hunter of Night
-							i(139902), -- Defiler's Cord
-						}),
-						q(44481, { -- Destiny Unfulfilled
-							["groups"] = {
-								i(139909), -- Illidari High Lord's Cowl
-							},
-						}),
-						q(45175, { -- Soul Prism of the Illidari
-							i(139900), -- Nethertether Cord
-							i(139921), -- Slippers of the Illidari Crusade
-						}),
-						q(45176, { -- Trial of Valor: The Once and Future Lord of Shadows
-							i(139928), -- Netherworld's March Amice
-							i(139904), -- Handwraps of Soulwringing
-						}),
-					},
-					["icon"] = "Interface\\Icons\\achievement_boss_illidan",
-				}),
 			}),
 			n(98695, { -- Scouting Map
 				["groups"] = {
@@ -1135,7 +1093,5 @@ _.ClassHalls =
 		},
 		["lvl"] = 98,
 		["mapID"] = 1068,
-		--["icon"] = "Interface\\Icons\\Classicon_mage",
-		--["classes"] = {8}
 	}),
 };

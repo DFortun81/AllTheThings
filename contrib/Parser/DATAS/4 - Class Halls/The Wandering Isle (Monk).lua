@@ -266,48 +266,6 @@ _.ClassHalls =
 					sp(219663) -- Heroic Weapons [No item associated]
 				}),
 				--]]
-				q(44153, { -- Light's Charge [Quests are in order of the chain]
-					["groups"] = {
-						q(44004, { -- Bringer of the Light
-							i(140615), -- Felstalking Shoulders
-							i(140613), -- Bracers of Lost Lineage
-						}),
-						q(43705, {	-- Nobundo's Last Stand
-							["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario shortly after the Falling Star quest begins.",
-							["groups"] = {
-								i(140609),	-- Slippers of the Earthen Healer
-								i(140608),	-- Boots of the Broken
-								i(140607),	-- Elementally-Infused Boots
-								i(140606),	-- Earth-Crushing Sabatons
-								i(140605),	-- Earthmender's Pantaloons
-								i(140604),	-- Britches of Elemental Protection
-								i(140603),	-- Nobundo's Earthshaper Kilt
-								i(140602),	-- Earth-Plate Legguards
-							}
-						}),
-						q(44479, { -- Ravencrest's Legacy
-							i(139954), -- Moon Guard Robes
-							i(139942), -- Felspawn Gloves
-						}),
-						q(44416, { -- Hunter of Night
-							i(139932), -- Belt of Shadowsong
-						}),
-						q(44481, { -- Destiny Unfulfilled
-							["groups"] = {
-								i(139946), -- Purified Vision of Sargeras
-							},
-						}),
-						q(45175, { -- Soul Prism of the Illidari
-							i(139930), -- Belt of the Netherwalker
-							i(139933), -- Footpads of the Illidari Crusade
-						}),
-						q(45176, { -- Trial of Valor: The Once and Future Lord of Shadows
-							i(139958), -- Inferno's March Shoulderpads
-							i(139941), -- Gloves of the Shadow's Return
-						}),
-					},
-					["icon"] = "Interface\\Icons\\achievement_boss_illidan",
-				}),
 			}),
 			n(99041, { -- Scouting Map
 				["groups"] = {
@@ -1225,7 +1183,5 @@ _.ClassHalls =
 		},
 		["lvl"] = 98,
 		["mapID"] = 1044,
-		--["icon"] = "Interface\\Icons\\classicon_monk",
-		--["classes"] = {10}
 	}),
 };
