@@ -233,6 +233,10 @@ _.Zones =
 					}),
 					q( 28087, {	-- Death to all Trappers!
 						["groups"] = {
+							i(63648),	-- Swift Mountain Boots
+							i(63649),	-- Trapper's Helm
+							i(63650),	-- Pao'ka's Belt
+							i(63651),	-- Trapper Punchers
 						},
 						["qg"] = 47471,	-- Pao'ka Swiftmountain
 						["sourceQuests"] = { 28085 },	-- Trouble at Highperch
