@@ -1808,6 +1808,16 @@ _.Zones =
 						un(1, i(87237)),	-- Recipe: Great Banquet of the Pot
 						recipe(125597),	-- Great Banquet of the Pot
 					}),
+					n(58718, { 	-- Merchant Greenfield
+						["groups"] = {
+							i(85219, { -- Ominous Seeds
+								["groups"] = {
+									i(85220), -- Terrible Turnip
+								},
+								["description"] = "You get this seed by planting any seeds this vendor sells and wait for it to drop.  Once dropped then plant and wait a day.",
+							}),
+						},
+					}),
 					n(64395, { 	-- Nam Ironpaw <Stockmaster>
 						currency(402, {	-- Ironpaw Token
 							i(75013),	-- Recipe: Pandaren Banquet
@@ -1826,6 +1836,16 @@ _.Zones =
 					n(55143, {	-- Sally Fizzlefury <Engineering Trainer>
 						i(88802),	-- Foxicopter Controller Toy
 						i(91904),	-- Stackable Stag Toy
+					}),
+					faction(1278, { -- Sho
+						["groups"] = {
+							i(85497, { -- Chirping Package
+								["groups"] = {
+									i(85222), -- Red Cricket
+								},
+								["description"] = "Once you hit exalted with Sho you receive this in the mail.",
+							}),
+						},
 					}),
 					na(78456, {	-- Starlight Sinclair <Prideful Gladiator>
 						i(144248, { -- Arsenal: Prideful Gladiator's Weapons [ Alliance ]
