@@ -54,6 +54,157 @@ _.Zones =
 							i(118398),	-- Soul Eater
 							i(118399),	-- Suneater
 							i(118410),	-- Tesseract Timepiece	
+							i(118996),	-- Blackfire Amulet
+							un(2, i(119032, { -- Rusted Challenger's Strongbox
+								["groups"] = {
+									un(2, i(118997)),	-- Blackfire Cape
+									un(2, i(118998)),	-- Blackfire Crystal
+									un(2, i(118999)),	-- Blackfire Ring
+									un(2, i(118988)),	-- Blackfire Scepter
+									un(2, i(118984)),	-- Blackfire Spellblade
+									un(2, i(118995)),	-- Blackfire Wand
+									un(2, i(119012)),	-- Blazemender Cabochon
+									un(2, i(119016)),	-- Blazemender Cloak
+									un(2, i(119006)),	-- Blazemender Loop
+									un(2, i(118946)),	-- Bouldercrush Breastplate
+									un(2, i(118947)),	-- Bouldercrush Gauntlets
+									un(2, i(118948)),	-- Bouldercrush Girdle
+									un(2, i(118949)),	-- Bouldercrush Helm
+									un(2, i(118950)),	-- Bouldercrush Legplates
+									un(2, i(118951)),	-- Bouldercrush Pauldrons
+									un(2, i(118952)),	-- Bouldercrush Sabatons
+									un(2, i(118953)),	-- Bouldercrush Shield
+									un(2, i(118954)),	-- Bouldercrush Vambraces
+									un(2, i(119007)),	-- Dark Night Band
+									un(2, i(119009)),	-- Dark Night Choker
+									un(2, i(119013)),	-- Dark Night Cloak
+									un(2, i(119010)),	-- Doomchain Collar
+									un(2, i(119014)),	-- Doomchain Drape
+									un(2, i(119008)),	-- Doomchain Signet
+									un(2, i(118979)),	-- Expeditious Axe
+									un(2, i(119017)),	-- Expeditious Axe
+									un(2, i(118981)),	-- Expeditious Bow
+									un(2, i(118980)),	-- Expeditious Broadaxe
+									un(2, i(118982)),	-- Expeditious Crossbow
+									un(2, i(118983)),	-- Expeditious Dagger
+									un(2, i(118994)),	-- Expeditious Greatsword
+									un(2, i(118986)),	-- Expeditious Gun
+									un(2, i(118989)),	-- Expeditious Hammer
+									un(2, i(119018)),	-- Expeditious Knuckles
+									un(2, i(118985)),	-- Expeditious Knuckles
+									un(2, i(118987)),	-- Expeditious Mace
+									un(2, i(119019)),	-- Expeditious Mace
+									un(2, i(118990)),	-- Expeditious Spear
+									un(2, i(118992)),	-- Expeditious Staff
+									un(2, i(118991)),	-- Expeditious Staff
+									un(2, i(118993)),	-- Expeditious Sword
+									un(2, i(119020)),	-- Expeditious Sword
+									un(2, i(118963)),	-- Ironburner Cord
+									un(2, i(118964)),	-- Ironburner Cowl
+									un(2, i(118965)),	-- Ironburner Handwraps
+									un(2, i(118966)),	-- Ironburner Leggings
+									un(2, i(118967)),	-- Ironburner Robe
+									un(2, i(118968)),	-- Ironburner Sandals
+									un(2, i(118969)),	-- Ironburner Spaulders
+									un(2, i(118970)),	-- Ironburner Wristwraps
+									un(2, i(118971)),	-- Longshot Belt
+									un(2, i(118972)),	-- Longshot Bracers
+									un(2, i(118973)),	-- Longshot Gauntlets
+									un(2, i(118974)),	-- Longshot Greaves
+									un(2, i(118975)),	-- Longshot Helm
+									un(2, i(118976)),	-- Longshot Legguards
+									un(2, i(118977)),	-- Longshot Shoulderguards
+									un(2, i(118978)),	-- Longshot Vest
+									un(2, i(119011)),	-- Mordant Gorget
+									un(2, i(119015)),	-- Mordant Greatcloak
+									un(2, i(119005)),	-- Mordant Signet
+									un(2, i(118955)),	-- Railwalker Bindings
+									un(2, i(118956)),	-- Railwalker Boots
+									un(2, i(118957)),	-- Railwalker Britches
+									un(2, i(118958)),	-- Railwalker Gloves
+									un(2, i(118959)),	-- Railwalker Hood
+									un(2, i(118960)),	-- Railwalker Jerkin
+									un(2, i(118961)),	-- Railwalker Shoulders
+									un(2, i(118962)),	-- Railwalker Waistband
+									un(2, i(119021)),	-- Stonebinder Shield
+								},
+								["description"] = "This box was from the WoD Challenge Mode Dailies.",
+							})),
+							un(2, i(127831, { -- Challenger's Strongbox
+								["groups"] = {
+									un(2, i(118997)),	-- Blackfire Cape
+									un(2, i(118998)),	-- Blackfire Crystal
+									un(2, i(118999)),	-- Blackfire Ring
+									un(2, i(118988)),	-- Blackfire Scepter
+									un(2, i(118984)),	-- Blackfire Spellblade
+									un(2, i(118995)),	-- Blackfire Wand
+									un(2, i(119012)),	-- Blazemender Cabochon
+									un(2, i(119016)),	-- Blazemender Cloak
+									un(2, i(119006)),	-- Blazemender Loop
+									un(2, i(118946)),	-- Bouldercrush Breastplate
+									un(2, i(118947)),	-- Bouldercrush Gauntlets
+									un(2, i(118948)),	-- Bouldercrush Girdle
+									un(2, i(118949)),	-- Bouldercrush Helm
+									un(2, i(118950)),	-- Bouldercrush Legplates
+									un(2, i(118951)),	-- Bouldercrush Pauldrons
+									un(2, i(118952)),	-- Bouldercrush Sabatons
+									un(2, i(118953)),	-- Bouldercrush Shield
+									un(2, i(118954)),	-- Bouldercrush Vambraces
+									un(2, i(119007)),	-- Dark Night Band
+									un(2, i(119009)),	-- Dark Night Choker
+									un(2, i(119013)),	-- Dark Night Cloak
+									un(2, i(119010)),	-- Doomchain Collar
+									un(2, i(119014)),	-- Doomchain Drape
+									un(2, i(119008)),	-- Doomchain Signet
+									un(2, i(118979)),	-- Expeditious Axe
+									un(2, i(119017)),	-- Expeditious Axe
+									un(2, i(118981)),	-- Expeditious Bow
+									un(2, i(118980)),	-- Expeditious Broadaxe
+									un(2, i(118982)),	-- Expeditious Crossbow
+									un(2, i(118983)),	-- Expeditious Dagger
+									un(2, i(118994)),	-- Expeditious Greatsword
+									un(2, i(118986)),	-- Expeditious Gun
+									un(2, i(118989)),	-- Expeditious Hammer
+									un(2, i(119018)),	-- Expeditious Knuckles
+									un(2, i(118985)),	-- Expeditious Knuckles
+									un(2, i(118987)),	-- Expeditious Mace
+									un(2, i(119019)),	-- Expeditious Mace
+									un(2, i(118990)),	-- Expeditious Spear
+									un(2, i(118992)),	-- Expeditious Staff
+									un(2, i(118991)),	-- Expeditious Staff
+									un(2, i(118993)),	-- Expeditious Sword
+									un(2, i(119020)),	-- Expeditious Sword
+									un(2, i(118963)),	-- Ironburner Cord
+									un(2, i(118964)),	-- Ironburner Cowl
+									un(2, i(118965)),	-- Ironburner Handwraps
+									un(2, i(118966)),	-- Ironburner Leggings
+									un(2, i(118967)),	-- Ironburner Robe
+									un(2, i(118968)),	-- Ironburner Sandals
+									un(2, i(118969)),	-- Ironburner Spaulders
+									un(2, i(118970)),	-- Ironburner Wristwraps
+									un(2, i(118971)),	-- Longshot Belt
+									un(2, i(118972)),	-- Longshot Bracers
+									un(2, i(118973)),	-- Longshot Gauntlets
+									un(2, i(118974)),	-- Longshot Greaves
+									un(2, i(118975)),	-- Longshot Helm
+									un(2, i(118976)),	-- Longshot Legguards
+									un(2, i(118977)),	-- Longshot Shoulderguards
+									un(2, i(118978)),	-- Longshot Vest
+									un(2, i(119011)),	-- Mordant Gorget
+									un(2, i(119015)),	-- Mordant Greatcloak
+									un(2, i(119005)),	-- Mordant Signet
+									un(2, i(118955)),	-- Railwalker Bindings
+									un(2, i(118956)),	-- Railwalker Boots
+									un(2, i(118957)),	-- Railwalker Britches
+									un(2, i(118958)),	-- Railwalker Gloves
+									un(2, i(118959)),	-- Railwalker Hood
+									un(2, i(118960)),	-- Railwalker Jerkin
+									un(2, i(118961)),	-- Railwalker Shoulders
+									un(2, i(118962)),	-- Railwalker Waistband
+									un(2, i(119021)),	-- Stonebinder Shield
+								},
+								["description"] = "This box was from the WoD Challenge Mode Dailies.",
+							})),
 						},
 						["description"] = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
 					}),
@@ -1487,6 +1638,7 @@ _.Zones =
 			["isRaid"] = true,
 			["achievementID"] = 9215, -- Hero of Warspear
 			["lvl"] = 100,
+			["races"] = HORDE_ONLY,
 		}),
 	}),
 };

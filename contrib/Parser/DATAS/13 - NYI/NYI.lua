@@ -3,6 +3,19 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	i(157650), -- Tracker's Spear
+	i(157648), -- Oakenstaff Protector
+	i(157620), -- Halberd of Ferocity
+	i(150613), -- Survivalist's Hunting Spear
+	i(150611), -- Guardian's Oaken Spear
+	i(150584), -- Pike of Feral Rage
+	i(141611), -- Fel Barbed Spear [This version wasn't added]
+	i(140716), -- Guardian's Oaken Spear
+	i(140689), -- Pike of Feral Rage
+	i(129899), -- The Eagle Spear
+	i(119408), -- Foereaver Polearm [This version wasn't added]
+	i(115297), -- Spectral Polearm
+	i(32184), -- Chancellor's Painsaw
 	i(7188), --  Stormwind Guard Shield [This is used by NPC's]
 	i(18303), -- Nimble Buckler
 	i(18342), -- Quel'dorei Guard [NPC Shield I believe]
