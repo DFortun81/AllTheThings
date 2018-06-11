@@ -256,10 +256,183 @@ _.Zones =
 							}),
 						}),
 						crit(3, { -- Tyr's Hand
+							q(27459, {	-- The Brotherhood of Light
+								["groups"] = {
+								},
+								["qg"] = 11036,	-- Leonid Barthalomew the Revered
+							}),
+							q(27460, {	-- Soft Landing
+								["groups"] = {
+								},
+								["qg"] = 16116,	-- 
+								["sourceQuests"] = {27459},
+							}),
+							o(205875, {	-- Crusader's Flare
+								q(27461, {	-- To Take the Abbey
+									["groups"] = {
+									},
+									["sourceQuests"] = {27460},
+								}),
+								q(27462, {	-- To Take the Barracks
+									["groups"] = {
+									},
+									["sourceQuests"] = {27460},
+								}),
+							}),
+							q(27612, {	-- Victory From Within
+								["groups"] = {
+								},
+								["qg"] = 16115,
+								["sourceQuests"] = {27461},
+							}),
+							q(27613, {	-- The Assassin
+								["groups"] = {
+									i(62968),
+									i(62967),
+									i(62966),
+								},
+								["qg"] = 16115,
+								["sourceQuests"] = {27461},
+							}),
+							q(27617, {	-- Befouled No More
+								["groups"] = {
+								},
+								["qg"] = 16115,
+								["sourceQuests"] = {27612,27613},
+							}),
+							q(27614, {	-- Scarlet Salvage
+								["groups"] = {
+								},
+								["qg"] = 16112,
+								["sourceQuests"] = {27462},
+							}),
+							q(27615, {	-- The Wrathcaster
+								["groups"] = {
+								},
+								["qg"] = 16112,
+								["sourceQuests"] = {27462},
+							}),
+							q(27616, {	-- The Huntsman
+								["groups"] = {
+								},
+								["qg"] = 16112,
+								["sourceQuests"] = {27462},
+							}),
+							q(27619, { -- The Commander
+								["groups"] = {
+									i(62971),
+									i(62970),
+									i(62969),
+								},
+								["qg"] = 16112,
+								["sourceQuests"] = {27462},
+							}),
+							q(27618, {	-- Argent Upheaval
+								["groups"] = {
+								},
+								["qg"] = 16112,
+								["sourceQuests"] = {27614,27615,27616,27619},
+							}),
+							q(27620, { -- Like Rats
+								["groups"] = {
+									i(62998),
+									i(62997),
+									i(62996),
+								},
+								["qg"] = 16116,
+								["sourceQuests"] = {27618,27619},
+							}),
 						}),
 						crit(4, { -- Serving the Argent Crusade
+							q(27463, {	-- A Boyhood Dream
+								["groups"] = {
+								},
+								["qg"] = 45431,	-- Gidwin Goldbraids
+								["sourceQuests"] = {27455}, -- "Boys Will Be Boys"
+							}),
+							q(27464, {	-- Argent Call: The Trial of the Crypt
+								["groups"] = {
+								},
+								["qg"] = 11034,	-- Lord Maxwell Tyrosus
+								["sourceQuests"] = {27463}, -- "A Boyhood Dream"
+							}),
+							q(27465, {	-- Argent Call: The Noxious Glade
+								["groups"] = {
+								},
+								["qg"] = 11034,	-- Lord Maxwell Tyrosus
+								["sourceQuests"] = {27464}, -- "Argent Call: The Trial of the Crypt"
+							}),
+							q(27466, {	-- Argent Call: Northdale
+								["groups"] = {
+								},
+								["qg"] = 45729,	-- Tarenar Sunstrike
+								["sourceQuests"] = {27465}, -- "Argent Call: The Noxious Glade"
+							}),
+							q(27487, { -- Ix'lar the Underlord
+								["groups"] = {
+									i(62995), -- Underlord's Mandible
+									i(62994), -- Rash Gloves
+									i(62993), -- Belt of Delay
+									i(62992), -- Pendant of the Ill-Advised
+								},
+								["qg"] = 45729,	-- Tarenar Sunstrike
+								["sourceQuests"] = {27466}, -- "Argent Call: Northdale"
+							}),
+							q(27488, {	-- Impatience
+								["groups"] = {
+								},
+								["qg"] = 45729,	-- Tarenar Sunstrike
+								["sourceQuests"] = {27487}, -- "Ix'lar the Underlord"
+							}),
+							q(27489, {	-- Nobody to Blame but Myself
+								["groups"] = {
+								},
+								["qg"] = 45729,	-- Tarenar Sunstrike
+								["sourceQuests"] = {27488}, -- "Impatience"
+							}),
 						}),
 						crit(5, { -- Journey's End
+							q(27522, {	-- Beat it Out of Them
+								["groups"] = {
+								},
+								["qg"] = 45729,	-- Tarenar Sunstrike
+								["sourceQuests"] = {27489}, -- "Nobody to Blame but Myself"
+							}),
+							q(27524, {	-- Blind Fury
+								["groups"] = {
+								},
+								["qg"] = 45417,	-- Tarenar Sunstrike
+								["sourceQuests"] = {27522}, -- "Beat it Out of Them"
+							}),
+							q(27525, {	-- Guardians of Stratholme
+								["groups"] = {
+								},
+								["qg"] = 45729,	-- Tarenar Sunstrike
+								["sourceQuests"] = {27524}, -- "Blind Fury"
+							}),
+							i(61378, {	-- The Baroness' Missive
+								q(27551, {	-- The Baroness' Missive
+									["groups"] = {
+									},
+									["qgs"] = {45868,45867}, 
+									["sourceQuests"] = {27525}, -- "Guardians of Stratholme"
+								}),
+							}),
+ 							q(27526, {	-- Gidwin's Fate Revealed
+								["groups"] = {
+								},
+								["qg"] = 45729,	-- Tarenar Sunstrike
+								["sourceQuests"] = {27551}, -- "The Baroness' Missive"
+							}),
+							q(27527, { -- Journey's End
+								["groups"] = {
+									i(63021),
+									i(63020),
+									i(63019),
+									},
+								["qg"] = 45730,	-- Tarenar Sunstrike
+								["sourceQuests"] = {27526}, -- "Gidwin's Fate Revealed"
+							}),
 						}),
 					}),
 					ach(5442, { -- Full Caravan
@@ -416,8 +589,28 @@ _.Zones =
 								},
 								["qg"] = 45500,	-- Urk Gagbaz
 							}),
+							q(27449, {	-- Honor and Strength
+								["groups"] = {
+								},
+								["qg"] = 45574,	-- Vex'tul
+								["sourceQuests"] = {27432}, -- Zaeldarr the Outcast
+							}),
 						}),
 						crit(7, { -- Rimblat Earthshatter
+							q(27456, { -- Gathering Some Grub(s)
+								["groups"] = {
+									i(62981),
+									i(62980),
+									i(62979),
+								},
+								["qg"] = 16134,	-- Rimblat Earthshatter
+							}),
+							q(27457, {	-- An Opportune Alliance
+								["groups"] = {
+								},
+								["qg"] = 16134,	-- Rimblat Earthshatter
+								["sourceQuests"] = {27456,27465}, -- "Gathering Some Grub(s)", "Argent Call: The Noxious Glade"
+							}),
 						}),
 						crit(8, { -- Beezil Linkspanner
 						}),
@@ -430,6 +623,215 @@ _.Zones =
 								["qg"] = 45500,	-- Urk Gagbaz
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 								["isBreadcrumb"] = true, -- for "Postponing the Inevitable"
+							}),
+						}),
+						sz(771, 5, { -- The Fungal Vale
+							q(27420, {	-- Postponing the Inevitable
+								["groups"] = {
+								},
+								["qg"] = 16135,	-- Rayne
+								["breadcrumbQuestID"] = {27544}, -- for "Cenarion Tenacity"
+							}),
+							q(27421, { -- Amidst Death, Life
+								["groups"] = {
+									i(62965), -- Ring of New Life
+									i(62964), -- Pauldrons of Blooming Hope
+									i(62963), -- Rayne's Scarf
+									i(62962), -- Fungal Vale Cloak
+								},
+								["qg"] = 16135,	-- Rayne
+							}),
+						}),
+						sz(771, 11, { -- Light's Hope Chapel
+							q(27458, {	-- Smokey and the Bandage
+								["groups"] = {
+								},
+								["qg"] = 11033,	-- Smokey LaRue
+							}),
+							q(27467, { -- Buried Blades
+								["groups"] = {
+									i(62984), -- Omarion's Gift
+									i(62983), -- Cowl of the Noxious Glade		
+								},
+								["qg"] = 16365,	-- Master Craftsman Omarion
+							}),
+ 							qdg(q(28756, {	-- Aberrations of Bone
+								["groups"] = {
+								},
+								["qg"] = 49856,	-- 
+								["sourceQuests"] = {27464},
+							})),
+							qdg(q(28755, {	-- Annals of the Silver Hand
+								["groups"] = {
+								},
+								["qg"] = 49856,	-- 
+								["sourceQuests"] = {27464},
+							})),
+							q( 27762, {	-- Fuselight, Ho!
+								["groups"] = {
+								},
+								["qg"] = 48704,	-- Gek Nozzlerocket
+								["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
+								["breadcrumbQuestID"] = { 28579, 28580 },	-- Hero's Call/Warchief's Command: Badlands!
+							}),
+						}),
+						sz(771, 12, { -- The Infectis Scar
+							q(27450, { -- Frederick's Fish Fancy
+							["groups"] = {
+								i(62974), -- Infectis Scuttler Helm
+								i(62973), -- Infectis Puffer Gloves
+								i(62972), -- Infectis Incher Leggings
+								},
+							["qg"] = 45575,	-- Frederick Calston
+							}),
+							q(27451, {	-- To Kill With Purpose
+								["groups"] = {
+								},
+								["qg"] = 11035,	-- Betina Bigglezink
+							}),
+							q(27452, {	-- Dark Garb
+								["groups"] = {
+								},
+								["qg"] = 11035,	-- Betina Bigglezink
+							}),
+							q(27453, {	-- Catalysm
+								["groups"] = {
+								},
+								["qg"] = 11035,	-- Betina Bigglezink
+								["sourceQuests"] = {27451,27452} -- "To Kill With Purpose", "Dark Garb"
+							}),
+							q(27454, { -- Just a Drop in the Bucket
+								["groups"] = {
+									i(62977),  -- Light's Shield
+									i(62976),  -- Breastplate of the Droplet
+									i(62975),  -- Plaguefix Launcher
+									i(156978), -- Cauldron Cracker
+									i(156979), -- Cauldron Dredger
+								},
+								["qg"] = 11035,	-- Betina Bigglezink
+								["sourceQuests"] = {27453} -- "Catalysm"
+							}),
+							q(27455, {	-- Boys Will Be Boys
+								["groups"] = {
+								},
+								["qg"] = 45417,	-- Fiona
+								["sourceQuests"] = {27448} -- "The Trek Continues"
+							}),
+						}),
+						sz(771, 14, { -- Eastwall Tower
+							q(27481, {	-- Out of the Ziggurat
+								["groups"] = {
+								},
+								["qg"] = 45574,	-- Vex'tul
+								["sourceQuests"] = {27449,27465} -- "Honor and Strength", "Argent Call: The Noxious Glade"
+							}),
+							q(27482, { -- Into the Flames
+								["groups"] = {
+									i(62991), -- Strength's Supremacy
+								},
+								["qg"] = 45574,	-- Vex'tul
+								["sourceQuests"] = {27481} -- "Out of the Ziggurat"
+							}),
+							q(27479, {	-- Righteous Indignation
+								["groups"] = {
+								},
+								["qg"] = 45736,	-- Deacon Andaal
+							}),
+							q(27477, { -- The Corpulent One
+								["groups"] = {
+									i(62987), -- Eastwall Gauntlets
+									i(62986), -- Borelgore's Skin
+									i(62985), -- Corpulent Shoulderpads
+									},
+								["qg"] = 45735,	-- Gamella Cracklefizz
+							}),
+						}),
+						sz(771, 18, { -- Northpass Tower
+ 							qdg(q(27422, {	-- A City Under Siege
+								["groups"] = {
+								},
+								["qg"] = 45482,	-- Argent Officer Irizarry
+							})),
+ 							q(27521, {	-- Wretched Hive of Scum and Villainy
+								["groups"] = {
+								},
+								["qg"] = 45826,	-- Kirkian Dawnshield
+							}),
+							q(27523, { -- Duskwing, Oh How I Hate Thee...
+								["groups"] = {
+									i(63001),
+									i(63000),
+									i(62999),
+									i(62990),
+									},
+								["qg"] = 45816,	-- Corpseburner Tim
+							}),
+							q(27532, {	-- The Plaguewood Tower
+								["groups"] = {
+								},
+								["qg"] = 45451,	-- Argus Highbeacon
+								["sourceQuests"] = {27522} , -- "Beat it Out of Them"
+							}),
+						}),
+						sz(771, 21, { -- The Plaguewood
+							q(27528, {	-- Scourged Mass
+								["groups"] = {
+								},
+								["qg"] = 45831,	-- Crusader Kevin Frost
+							}),
+							q(27529, {	-- Defenders of Darrowshire
+								["groups"] = {
+								},
+								["qg"] = 45831,	-- Crusader Kevin Frost
+							}),
+							q(27539, { -- Add'em to the Pile
+								["groups"] = {
+									i(63014),
+									i(63013),
+									i(63011),
+									i(62989),
+									},
+								["qg"] = 45831,	-- Crusader Kevin Frost
+							}),
+							q(27530, { -- The Corpsebeasts
+								["groups"] = {
+									i(63017),
+									i(63016),
+									i(63015),
+									},
+								["qg"] = 45831,	-- Crusader Kevin Frost
+								["sourceQuests"] = {27528,27529,27539}, 
+							}),
+							q(27535, {	-- Just a Little Touched
+								["groups"] = {
+								},
+								["qg"] = 45828,	-- Argent Apotehcary Judkins
+								["isBreadcrumb"] = true,
+							}),
+							q(27531, { -- Counter-Plague Research
+								["groups"] = {
+									i(63010),
+									i(63009),
+									i(63008),
+									i(63007),
+								},
+								["qg"] = 45828,	-- Argent Apotehcary Judkins
+								["breadcrumbQuestID"] = 27532,
+							}),
+							q(27534, {	-- Augustus' Receipt Book
+								["groups"] = {
+								},
+								["qg"] = 12384,	-- Augustus the Touched
+							}),
+							q(27533, { -- A Fate Worse Than Butchery
+								["groups"] = {
+									i(63006),
+									i(63005),
+									i(63004),
+									i(63003),
+								},
+								["qg"] = 12384,	-- Augustus the Touched
+								["breadcrumbQuestID"] = 27535,
 							}),
 						}),
 					--[[
@@ -459,54 +861,26 @@ _.Zones =
 					23	Ruins of the Scarlet Enclave
 					--]]
 
---					qg(45431, q(27463)),	-- A Boyhood Dream
-					qdg(qg(45482, q(27422))),	-- A City Under Siege
-					qg(12384, q(27533, { -- A Fate Worse Than Butchery
-						i(63006),
-						i(63005),
-						i(63004),
-						i(63003),
-					})),
-					qdg(qg(49856, q(28756))),	-- Aberrations of Bone
-					qg(45831, q(27539, { -- Add'em to the Pile
-						i(63014),
-						i(63013),
-						i(63011),
-						i(62989),
-					})),
---[[
+					--[[
+					Fiona's Caravan Repeatable Quests (for a zone-wide buff)
+					qg(45400, q(27560)),	-- Argus' Journal
+					qg(45400, q(27562)),	-- Beezil's Cog
+					qg(45400, q(27555)),	-- Fiona's Lucky Charm
+					qg(45400, q(27556)),	-- Gidwin's Weapon Oil
+					qg(45400, q(27558)),	-- Pamela's Doll
+					qg(45400, q(27561)),	-- Rimblat's Stone
+					qg(45400, q(27557)),	-- Tarenar's Talisman
+					qg(45400, q(27559)),	-- Vex'tul's Armbands
+					--]]
+
+					--[[
+					Class Hall Quests
 					qg(111616, q(43797, {	-- Aiding the Conclave (QG in Paladin order hall?)
 						["groups"] = {
 						},
 						["classes"] = {5}, -- Priest
 					})),
---					qg(110969, q(43491)),	-- Allies of the Light (in scenario?)
---]]
-					qg(16135, q(27421, { -- Amidst Death, Life
-						i(62964),
-						i(62963),
-						i(62962),
-					})),
---					qg(16134, q(27457)),	-- An Opportune Alliance
-					qdg(qg(49856, q(28755))),	-- Annals of the Silver Hand
---[[
-					qg(45729, q(27466)),	-- Argent Call: Northdale
-					qg(11034, q(27465)),	-- Argent Call: The Noxious Glade
-					qg(11034, q(27464)),	-- Argent Call: The Trial of the Crypt
-					qg(16112, q(27618)),	-- Argent Upheaval
-					qg(45400, q(27560)),	-- Argus' Journal
-					qg(12384, q(27534)),	-- Augustus' Receipt Book
-					qg(45729, q(27522)),	-- Beat it Out of Them
-					qg(45400, q(27562)),	-- Beezil's Cog
-					qg(16115, q(27617)),	-- Befouled No More
-					qg(45417, q(27524)),	-- Blind Fury
-					qg(45417, q(27455)),	-- Boys Will Be Boys
---]]
-					qg(16365, q(27467, { -- Buried Blades
-						i(62983),
-					})),
---[[
-					qg(11035, q(27453)),	-- Catalysm
+					qg(110969, q(43491)),	-- Allies of the Light (in scenario?)
 					qg(90251, q(43492)),	-- Champion: Aponi Brightmane
 					qg(99997, q(43785)),	-- Champion: Arator the Redeemer
 					qg(113299, q(43933)),	-- Champion: Delas Moonfang
@@ -515,139 +889,18 @@ _.Zones =
 					qg(109105, q(43701)),	-- Champion: Lothraxion
 					qg(119545, q(46045)),	-- Champion: Nerus Moonfang
 					qg(94175, q(42851)),	-- Champion: Vindicator Boros
---]]
-					qg(45828, q(27531, { -- Counter-Plague Research
-						i(63010),
-						i(63009),
-						i(63008),
-						i(63007),
-					})),
---[[
-					qg(11035, q(27452)),	-- Dark Garb
-					qg(45831, q(27529)),	-- Defenders of Darrowshire
---]]
-					qg(45816, q(27523, { -- Duskwing, Oh How I Hate Thee...
-						i(63001),
-						i(63000),
-						i(62999),
-						i(62990),
-					})),
---					qg(45400, q(27555)),	-- Fiona's Lucky Charm
-					qg(45575, q(27450, { -- Frederick's Fish Fancy
-						i(62974),
-						i(62973),
-						i(62972),
-					})),
-					q( 27762, {	-- Fuselight, Ho!
-						["groups"] = {
-						},
-						["qg"] = 48704,	-- Gek Nozzlerocket
-						["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
-						["breadcrumbQuestID"] = { 28579, 28580 },	-- Hero's Call/Warchief's Command: Badlands!
-					}),
-					qg(16134, q(27456, { -- Gathering Some Grub(s)
-						i(62981),
-						i(62980),
-						i(62979),
-					})),
---[[
-					qg(45729, q(27526)),	-- Gidwin's Fate Revealed
-					qg(45400, q(27556)),	-- Gidwin's Weapon Oil
-					qg(45729, q(27525)),	-- Guardians of Stratholme
-					qg(45574, q(27449)),	-- Honor and Strength
-					qg(45729, q(27488)),	-- Impatience
---]]
-					qg(45574, q(27482, { -- Into the Flames
-						i(62991),
-					})),
-					qg(45729, q(27487, { -- Ix'lar the Underlord
-						i(62994),
-						i(62993),
-					})),
-					qg(45730, q(27527, { -- Journey's End
-						i(63021),
-						i(63020),
-						i(63019),
-					})),
-					qg(11035, q(27454, { -- Just a Drop in the Bucket
-						i(62977),
-						i(62976),
-						i(62975),
-						i(156978), -- Cauldron Cracker
-						i(156979), -- Cauldron Dredger
-					})),
---[[
-					qg(45828, q(27535)),	-- Just a Little Touched
---]]
-					qg(16116, q(27620, { -- Like Rats
-						i(62998),
-						i(62997),
-					})),
---[[
-					qg(45729, q(27489)),	-- Nobody to Blame but Myself
-					qg(45574, q(27481)),	-- Out of the Ziggurat
-					qg(45400, q(27558)),	-- Pamela's Doll
-					qg(16135, q(27420)),	-- Postponing the Inevitable
-					qg(45736, q(27479)),	-- Righteous Indignation
-					qg(45400, q(27561)),	-- Rimblat's Stone
 					qg(90259, q(39696)),	-- Rise, Champions
-					qg(31084, qh(13189)),	-- Saurfang's Blessing
-					qg(16112, q(27614)),	-- Scarlet Salvage
-					qg(45831, q(27528)),	-- Scourged Mass
-					qg(11033, q(27458)),	-- Smokey and the Bandage
-					qg(16116, q(27460)),	-- Soft Landing
-					qg(45400, q(27557)),	-- Tarenar's Talisman
---]]
-					qg(16115, q(27613, { -- The Assassin
-						i(62968),
-						i(62967),
-					})),
+					qg(90259, q(42919)),	-- The Scion's Legacy
+					--]]
+
 --[[
-					n(45868, {	-- Karthis Darkrune
-						i(61378, {	-- The Baroness' Missive
-							q(27551),	-- The Baroness' Missive
-						}),
-					}),
-					n(45867, {	-- Omasum Blighthoof
-						i(61378, {	-- The Baroness' Missive
-							q(27551),	-- The Baroness' Missive
-						}),
-					}),
+					qg(31084, qh(13189)),	-- Saurfang's Blessing
 					qg(31084, q(13166, {	-- The Battle For The Ebon Hold
 						["groups"] = {
 						},
 						["classes"] = {6}, -- Death Knight
 					})),
-					qg(11036, q(27459)),	-- The Brotherhood of Light
---]]
-					qg(16112, q(27619, { -- The Commander
-						i(62971),
-						i(62970),
-					})),
-					qg(45831, q(27530, { -- The Corpsebeasts
-						i(63017),
-						i(63016),
-						i(63015),
-					})),
-					qg(45735, q(27477, { -- The Corpulent One
-						i(62987),
-						i(62986),
-						i(62985),
-					})),
---[[
-					qg(16112, q(27616)),	-- The Huntsman
-					qg(45451, q(27532)),	-- The Plaguewood Tower
-					qg(90259, q(42919)),	-- The Scion's Legacy
-					qg(16112, q(27615)),	-- The Wrathcaster
-					qg(11035, q(27451)),	-- To Kill With Purpose
-					o(205875, {	-- Crusader's Flare
-						q(27461),	-- To Take the Abbey
-						q(27462),	-- To Take the Barracks
-					}),
-					qg(45400, q(27559)),	-- Vex'tul's Armbands
-					qg(16115, q(27612)),	-- Victory From Within
 					qg(31084, qa(13188)),	-- Where Kings Walk
-					qg(45826, q(27521)),	-- Wretched Hive of Scum and Villainy
 --]]
 					}),
 				}),
