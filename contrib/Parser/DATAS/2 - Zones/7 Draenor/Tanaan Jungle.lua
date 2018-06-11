@@ -774,9 +774,13 @@ _.Zones =
 						}),		
 						i(124556, {	-- Baleful Spaulders	
 							i(124587),	-- Felcast Mantle
+							i(128349),	-- Felcast Mantle [Warforged]
 							i(124588),	-- Bladefang Spaulders
+							i(128350),	-- Bladefang Spaulders [Warforged]
 							i(124589),	-- Axeclaw Spaulders
+							i(128351),	-- Axeclaw Spaulders [Warforged]
 							i(124590),	-- Felbane Shoulderguard
+							i(128352),	-- Felbane Shoulderguard [Warforged]
 						}),		
 						i(124560, {	-- Baleful Cloak	
 							i(124613),	-- Marshwater Cloak - Druid, Hunter, Shaman, Rogue, Monk, Demon Hunter
