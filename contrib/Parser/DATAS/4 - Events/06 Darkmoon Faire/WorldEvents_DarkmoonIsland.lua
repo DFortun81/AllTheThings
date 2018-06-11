@@ -5,7 +5,7 @@ _.WorldEvents =
 {
 	m(823, { 	-- Darkmoon Island
 		["groups"] = {
-			n(-4, { -- Achievements Group
+			n(-4, {	 -- Achievements
 				{
 					["achievementID"] = 9885,
 					["groups"] = {
@@ -67,7 +67,34 @@ _.WorldEvents =
 					},
 				},
 			}),
-			n(-17, { -- Quests Group
+			n(-25, { -- Pet Battle
+				n(85519, { -- Christoph VonFeasel
+					q(36471, { -- A New Darkmoon Challenger!
+						i(116062, { -- Greater Darkmoon Pet Supplies
+							dr(7.0, i(116064)), -- Syd the Squid
+							dr(1.7, i(89139)), -- Chain Pet Leash
+							dr(1.4, i(44820)), -- Red Ribbon Pet Leash
+							dr(1.6, i(37460)), -- Rope Pet Leash
+						}),
+					}),
+				}),
+				n(67370, { -- Jeremy Feasel
+					q(32175, { -- Darkmoon Pet Battle!
+						i(91086, { -- Darkmoon Pet Supplies
+							dr(1.6, i(91040)), -- Darkmoon Eye
+							dr(2.0, i(89139)), -- Chain Pet Leash
+							dr(1.5, i(44820)), -- Red Ribbon Pet Leash
+							dr(1.4, i(37460)), -- Rope Pet Leash
+						}),
+					}),
+				}),
+				n(-33, { -- Fishing
+					i(73953), -- Sea Pony
+				}),
+				p(1068), -- Crow
+				p(1062), -- Darkmoon Glowfly
+			}),	
+			n(-17, { -- Quests
 				n(14833, { -- Chronos <He Who Never Forgets!>
 					q(29514, { -- Herbs for Healing
 						["requiredSkill"] = 182, -- Herbalism
@@ -358,31 +385,7 @@ _.WorldEvents =
 					["icon"] = "Interface\\Icons\\Ability_Shaman_FreedomWolf",
 				}),
 			}),
-			n(-25, { 	-- Pet Battle
-				n(85519, { -- Christoph VonFeasel
-					q(36471, { -- A New Darkmoon Challenger!
-						i(116062, { -- Greater Darkmoon Pet Supplies
-							dr(7.0, i(116064)), -- Syd the Squid
-							dr(1.7, i(89139)), -- Chain Pet Leash
-							dr(1.4, i(44820)), -- Red Ribbon Pet Leash
-							dr(1.6, i(37460)), -- Rope Pet Leash
-						}),
-					}),
-				}),
-				n(67370, { -- Jeremy Feasel
-					q(32175, { -- Darkmoon Pet Battle!
-						i(91086, { -- Darkmoon Pet Supplies
-							dr(1.6, i(91040)), -- Darkmoon Eye
-							dr(2.0, i(89139)), -- Chain Pet Leash
-							dr(1.5, i(44820)), -- Red Ribbon Pet Leash
-							dr(1.4, i(37460)), -- Rope Pet Leash
-						}),
-					}),
-				}),
-				p(1068), -- Crow
-				p(1062), -- Darkmoon Glowfly
-			}),	
-			n(-2, { 	-- Vendors
+			n(-2, {  -- Vendors
 				n(55072, { -- Barum
 					gs(359, { -- Devout Set
 						i(78205),  -- Helm

@@ -1031,6 +1031,9 @@ _.Zones =
 						},
 						["questID"] = 36472,
 					}), 
+					n(82050, { -- Varasha
+						i(118207), -- Hydraling
+					}),
 					n(85078, { 		-- Voidreaver Urnae
 						["groups"] = {	
 							dr(40, i(119392)),	-- Voidreaver's Axe
