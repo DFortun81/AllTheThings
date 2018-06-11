@@ -3863,7 +3863,7 @@ app.BaseQuest = {
 		elseif key == "collectible" then
 			return not t.isDaily and GetDataMember("TreatIncompleteQuestsAsCollectible");
 		elseif key == "collected" then
-			return t.collectible and t.saved;
+			return t.saved;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID);
 		else
