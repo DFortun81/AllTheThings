@@ -1105,3 +1105,15 @@ i(146840);		--[[Cinch of the Ferocious Gladiator]]
 i(146841);		--[[Treads of the Ferocious Gladiator]]
 i(146842);		--[[Bracers of the Ferocious Gladiator]]
 i(146843);		--[[Cloak of the Ferocious Gladiator]]
+
+i(118927);		-- Maximillian's Laundry
+i(118924);		-- Cache of Arms
+i(118930);		-- Bag of Everbloom Herbs
+i(118926);		-- Huge Pile of Skins
+i(118929);		-- Sack of Mined Ore
+i(118928);		-- Faintly-Sparkling Cache
+i(118925);		-- Plundered Booty
+i(118931);		-- Leonid's Bag of Supplies
+i(119040);		-- Cache of Mingled Treasures
+i(119036);		-- Box of Storied Treasures
+i(119037);		-- Supply of Storied Rarities
