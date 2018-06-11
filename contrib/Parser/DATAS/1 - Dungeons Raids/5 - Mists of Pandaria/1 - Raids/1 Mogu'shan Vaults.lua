@@ -35,6 +35,7 @@ _.Instances =
 						["groups"] = {
 							ach(6458, {	-- Guardians of Mogu'shan
 								cr(60047, e(679, {	-- The Stone Guard (60051,60043,59915)
+									i(86739),	-- Beads of the Mogu'shi
 									i(86748),	-- Cape of Three Lanterns
 									i(89966),	-- Claws of Amethyst
 									i(89965),	-- Ruby-Linked Girdle
@@ -50,6 +51,9 @@ _.Instances =
 									i(86741),	-- Dagger of the Seven Stars
 								})),
 								cr(60009, e(689, {	-- Feng the Accursed
+									i(86754),	-- Amulet of Seven Curses
+									i(89968),	-- Feng's Ring of Dreams
+									i(89967),	-- Feng's Seal of Binding
 									i(86782),	-- Arrow Breaking Windcloak
 									i(86753),	-- Cloak of Peacock Feathers
 									i(86758),	-- Imperial Ghostbinder's Robes
@@ -63,6 +67,8 @@ _.Instances =
 									i(89426),	-- Fan of Fiery Winds
 								})),
 								cr(60143, e(682, {	-- Gara'jal the Spiritbinder
+									i(86767),	-- Circuit of the Frail Soul
+									i(86759),	-- Soulgrasp Choker
 									i(86770),	-- Shadowsummoner Spaulders
 									i(86765),	-- Sandals of the Severed Soul
 									i(86763),	-- Netherrealm Shoulderpads
@@ -78,6 +84,8 @@ _.Instances =
 							}),
 							ach(6844, { 	-- The Vault of Mysteries
 								cr(60701, e(687, {	-- The Spirit Kings (60708,60709,60710)
+									i(86776),	-- Amulet of the Hidden Kings
+									i(86783),	-- Zian's Choker of Coalesced Shadow
 									i(86782),	-- Arrow Breaking Windcloak
 									i(89971),	-- Mindshard Drape
 									i(86788),	-- Hood of Blind Eyes
@@ -93,6 +101,10 @@ _.Instances =
 									i(86778),	-- Steelskin, Qiang's Impervious Shield
 								})),
 								cr(60410, e(726, {	-- Elegon
+									i(89972),	-- Band of Bursting Novas
+									i(86791),	-- Bottle of Infinite Stars
+									i(86792),	-- Light of the Cosmos
+									i(86790),	-- Vial of Dragon's Blood
 									i(89973),	-- Galaxyfire Girdle
 									i(86798),	-- Orbital Belt
 									i(86795),	-- Chestguard of Total Annihilation
@@ -105,6 +117,9 @@ _.Instances =
 									i(86796),	-- Torch of the Celestial Spark
 								})),
 								cr(60400, e(677, {	-- Will of the Emperor (60399)
+									i(86802),	-- Lei Shen's Final Orders
+									i(86805),	-- Qin-xi's Polarizing Seal
+									i(86810),	-- Worldwaker Cabochon
 									i(86809),	-- Hood of Focused Energy
 									i(86804),	-- Crown of Opportunistic Strikes
 									i(86808),	-- Magnetized Leggings
