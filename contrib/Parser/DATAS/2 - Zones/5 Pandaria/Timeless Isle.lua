@@ -1460,6 +1460,7 @@ _.Zones =
 					n(73819, {	-- Ku-Mo <Hand-Made Kites>
 						currency(777, { -- Timeless Coin
 							i(104332),	-- Sky Lantern Pet
+							i(104333),	-- Flimsy Sky Lantern
 						}),
 					}),
 					n(73307, {	-- Speaker Gulan <Emissary of Ordos>

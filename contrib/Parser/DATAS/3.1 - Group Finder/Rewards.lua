@@ -613,7 +613,7 @@ _.GroupFinder =
 			un(2, i(93137)),	-- Scavenged Pandaren Mace
 			i(93144),	-- Scavenged Pandaren Mace
 			i(93132),	-- Scavenged Pandaren Scepter
-			un(2, i(93141)),	-- Scavenged Pandaren Spear
+			i(93141),	-- Scavenged Pandaren Spear
 			i(93131),	-- Scavenged Pandaren Spellblade
 			i(93126),	-- Scavenged Pandaren Staff
 			un(2, i(93129)),	-- Scavenged Pandaren Staff

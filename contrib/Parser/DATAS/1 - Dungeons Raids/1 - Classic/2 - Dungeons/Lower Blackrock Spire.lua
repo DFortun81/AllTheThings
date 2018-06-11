@@ -222,6 +222,7 @@ _.Instances =
 						i( 13143),	-- Mark of the Dragon Lord
 						i( 22321),	-- Heart of Wyrmthalak
 						i(142370),	-- Plans: Arcanite Champion
+						un(2, i(13148)), -- Chillpike [Disappeared sometime around 3.0]
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {

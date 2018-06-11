@@ -193,6 +193,9 @@ _.Instances =
 								n(4428, {	-- Death Speaker Jargba
 									un(2, i(6682)),	-- Death Speaker Robes
 								}),
+								n(4438, { -- Razorfen Spearhide
+									un(2, i(6679)), -- Armor Piercer
+								}),
 							}),
 						},
 						["u"] = 12,
