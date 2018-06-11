@@ -468,8 +468,8 @@ _.Mounts =
 		h(i(13332)),			-- Blue Skeletal Horse
 		h(i(25475)),			-- Blue Wind Rider
 		i(116775),				-- Breezestrider Stallion
-		a(i(128481)),			-- Bristling Hellboar (Alliance)
-		h(i(128480)),			-- Bristling Hellboar (Horde)
+		i(128481),			-- Bristling Hellboar (Alliance)
+		--h(i(128480)),			-- Bristling Hellboar (Horde) [NO IDEA WHAT THIS REALLY IS.  IT'S NOT ON THE VENDOR]
 		{
 		["itemID"] = 91005,		-- Brown Dragon Turtle (Panda)
 		["races"] = {25,26},
