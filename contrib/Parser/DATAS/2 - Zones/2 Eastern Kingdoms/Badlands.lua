@@ -105,6 +105,45 @@ _.Zones =
 					p(432), 	-- Stripe-Tailed Scorpid
 				}),
 				n(-17, {	-- Quests
+					ach(4900, { -- Badlands Quests
+						crit(1, { --	Rhea
+							q( 27763, {	-- To Fuselight Proper
+								["groups"] = {
+								},
+								["qg"] = 46650,	-- Eddie Flofizzle
+								["isBreadcrumb"] = true,	-- for "Easily Swayed"
+								["breadcrumbQuestID"] = { 27762 },	-- Fuselight Ho!
+							}),
+						}),
+						crit(2, { --	The Fate of a Dragonflight
+						}),
+						crit(3, { --	The Titan's Knowledge (A/H)
+						}),
+						crit(4, { --	The Day that Deathwing Came
+						}),
+					}),
+					n(-168, { -- Other Quests
+						sz(765, 1, {	-- Lethlor Ravine
+						}),
+						sz(765, 2, {	-- Agmond's End
+						}),
+						sz(765, 3, {	-- Uldaman
+						}),
+						sz(765, 4, {	-- Camp Cagg
+						}),
+						sz(765, 5, {	-- Scar of the Worldbreaker
+						}),
+						sz(765, 6, {	-- The Dustbowl
+						}),
+						sz(765, 7, {	-- Angor Fortress
+						}),
+						sz(765, 8, {	-- Camp Kosh
+						}),
+						sz(765, 9, {	-- Bloodwatcher Point
+						}),
+						sz(765, 10, {	-- New Kargath
+						}),
+					}),
 					qa(27823, {	-- A Dwarf's Got Needs
 						["groups"] = {
 						},
@@ -501,13 +540,6 @@ _.Zones =
 						},
 						["qg"] = 46654,	-- Rhea
 						["sourceQuests"] = { 27770 },	-- Lifting the Veil
-					}),
-					q( 27763, {	-- To Fuselight Proper
-						["groups"] = {
-						},
-						["qg"] = 46650,	-- Eddie Flofizzle
-						["isBreadcrumb"] = true,	-- for "Easily Swayed"
-						["breadcrumbQuestID"] = { 27762 },	-- Fuselight Ho!
 					}),
 					q( 28512, {	-- To the Aid of the Thorium Brotherhood
 						["groups"] = {
