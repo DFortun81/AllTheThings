@@ -426,10 +426,12 @@ _.Zones =
 							}),
 							q(27527, { -- Journey's End
 								["groups"] = {
+									i(63022),
 									i(63021),
 									i(63020),
 									i(63019),
-									},
+									i(63018),
+								},
 								["qg"] = 45730,	-- Tarenar Sunstrike
 								["sourceQuests"] = {27526}, -- "Gidwin's Fate Revealed"
 							}),
@@ -602,6 +604,7 @@ _.Zones =
 									i(62981),
 									i(62980),
 									i(62979),
+									i(62978),
 								},
 								["qg"] = 16134,	-- Rimblat Earthshatter
 							}),
@@ -652,6 +655,7 @@ _.Zones =
 								["groups"] = {
 									i(62984), -- Omarion's Gift
 									i(62983), -- Cowl of the Noxious Glade		
+									i(62982), -- Light-Touched Pendant
 								},
 								["qg"] = 16365,	-- Master Craftsman Omarion
 							}),

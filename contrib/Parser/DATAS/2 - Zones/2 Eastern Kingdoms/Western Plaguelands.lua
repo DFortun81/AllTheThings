@@ -248,6 +248,7 @@ _.Zones =
 									i( 62159),	-- Bear Hunter's Rifle
 									i( 62158),	-- Homestead Helm
 									i( 62157),	-- Farmer's Vest
+									i( 62156),  -- Grant's Signet
 									i(131646),	-- Leather Stitched Chain Tunic
 								},
 								["qg"] = 45165,	-- Thurman Grant
@@ -270,6 +271,7 @@ _.Zones =
 										i(62167),	-- Cloak of the Unrestful
 										i(62166),	-- Spiritual Barrier
 										i(62165),	-- Cryptkeeper's Belt
+										i(62164),   -- Valorfist Band
 									},
 									["sourceQuests"] = { 27170 },	-- The Abandoned Crypt
 								}),
@@ -324,6 +326,7 @@ _.Zones =
 							}),
 							qa(27198, {	-- Supporting the Troops
 								["groups"] = {
+									i( 62205),  -- Defender's Band
 									i( 62204),	-- Gloves of the Able
 									i( 62203),	-- Belt of the Unafraid
 									i( 62202),	-- Bracers of Envy
@@ -356,6 +359,7 @@ _.Zones =
 									i( 62213),	-- Minuteman Pike
 									i( 62212),	-- Quelling Bracers
 									i( 62211),	-- Shoulderwraps of the Enthralled
+									i( 62210),  -- Pack Leader's Band
 									i(131655),	-- Bracer of Grievance
 								},
 								["qg"] = 45165,	-- Thurman Grant
@@ -393,6 +397,7 @@ _.Zones =
 							}),
 							qh(27085, {	-- Supporting the Troops
 								["groups"] = {
+									i( 62209),  -- Deathguard Band
 									i( 62208),	-- Gloves of the Able
 									i( 62207),	-- Belt of the Unafraid
 									i( 62206),	-- Bracers of Envy
@@ -419,6 +424,7 @@ _.Zones =
 									i( 62217),	-- Minuteman Pike
 									i( 62216),	-- Lurid Bracers
 									i( 62215),	-- Shoulderwraps of the Enthralled
+									i( 62214),  -- Ring of Aces
 									i(131639),	-- Forsaken Trooper Armguards
 								},
 								["qg"] = 44451,	-- Lady Sylvanas Windrunner
@@ -489,6 +495,7 @@ _.Zones =
 							}),
 							q( 27001, {	-- This Means WAR (Wild Arachnid Roundup)
 								["groups"] = {
+									i(62180),   -- Band of the Arachnid Wrangler
 									i(62179),	-- Spider Frier
 								--i(62178),	-- Not Transmoggable
 								},
@@ -529,6 +536,7 @@ _.Zones =
 								["groups"] = {
 									i(62191),	-- Highlord's Favor
 									i(62190),	-- Light-Imbued Lantern
+									i(62189),   -- Argent Medallion
 								},
 								["sourceQuests"] = { 27154 },	-- Bagging Bisp
 							}),
@@ -580,6 +588,7 @@ _.Zones =
 								["groups"] = {
 									i( 62194),	-- Breastplate of the Patient
 									i( 62193),	-- Leggings of the Slipper Shifter
+									i( 62192),  -- Zen'Kiki's Thanks
 									i(131627),	-- Scaled Pants of Patience
 								},
 								["qg"] = 44456,	-- Adrine Towhide
@@ -637,6 +646,7 @@ _.Zones =
 							}),
 							q( 27017, {	-- Memories from a Lost Past
 								["groups"] = {
+									i( 62198),  -- Andrea's Locket
 									i( 62197),	-- Gahrron's Shoulderguard
 									i( 62196),	-- Gloria's Work Vest
 									i( 62195),	-- Footfalls of Memories
