@@ -504,12 +504,12 @@ _.Zones =
 								["sourceQuests"] = { 27775 },	-- When the Going Gets Tough, Cheat
 							}),
 						}),
-						sz(765, 2, {	-- Agmond's End
-						}),
-						sz(765, 3, {	-- Uldaman
-						}),
-						sz(765, 4, {	-- Camp Cagg
-						}),
+						-- sz(765, 2, {	-- Agmond's End
+						-- }),
+						-- sz(765, 3, {	-- Uldaman
+						-- }),
+						-- sz(765, 4, {	-- Camp Cagg
+						-- }),
 						sz(765, 5, {	-- Scar of the Worldbreaker
 							qa(27833, {	-- Half-Ton Holdouts
 								["g"] = {
@@ -566,10 +566,10 @@ _.Zones =
 								["sourceQuests"] = { 27823 },	-- A Dwarf's Got Needs
 							}),
 						}),
-						sz(765, 7, {	-- Angor Fortress
-						}),
-						sz(765, 8, {	-- Camp Kosh
-						}),
+						-- sz(765, 7, {	-- Angor Fortress
+						-- }),
+						-- sz(765, 8, {	-- Camp Kosh
+						-- }),
 						sz(765, 9, {	-- Bloodwatcher Point
 							qh(27878, {	-- Forcible Acquisition
 								["groups"] = {
@@ -582,8 +582,8 @@ _.Zones =
 								["qg"] = 46758,	-- Aoren Sunglow
 							}),
 						}),
-						sz(765, 10, {	-- New Kargath
-						}),
+						-- sz(765, 10, {	-- New Kargath
+						-- }),
 					}),
 					qh(27877, {	-- The Morons' League
 						["groups"] = {
