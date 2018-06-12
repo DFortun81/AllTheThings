@@ -541,8 +541,30 @@ _.Zones =
 								},
 								["qg"] = 46660,	-- Aidan Summerwind
 							}),
+							q( 28512, {	-- To the Aid of the Thorium Brotherhood
+								["groups"] = {
+								},
+								["qgs"] = { 46930, 46660 },	-- Victoria Dolen (A) & Aidan Summerwind (H)
+								["isBreadcrumb"] = true,	-- for "A New Master... But Who?" in Searing Gorge, mutually exclusive with other bcrumb quests for SG
+							}),
 						}),
 						sz(765, 6, {	-- The Dustbowl
+							qa(27823, {	-- A Dwarf's Got Needs
+								["groups"] = {
+								},
+								["qg"] = 2860,	-- Sigrun Ironhew
+							}),
+							qa(27824, {	-- The Good Stuff
+								["g"] = {
+									i(63168),	-- Ironhew Cloak
+									i(63167),	-- Angor Pauldrons
+									i(63166),	-- Walloper's Chestpiece
+									i(63165),	-- Dust Bowl Shield
+									i(63164),	-- Dustwind Cowl
+								},
+								["qg"] = 2860,	-- Sigrun Ironhew
+								["sourceQuests"] = { 27823 },	-- A Dwarf's Got Needs
+							}),
 						}),
 						sz(765, 7, {	-- Angor Fortress
 						}),
@@ -563,32 +585,10 @@ _.Zones =
 						sz(765, 10, {	-- New Kargath
 						}),
 					}),
-					qa(27823, {	-- A Dwarf's Got Needs
-						["groups"] = {
-						},
-						["qg"] = 2860,	-- Sigrun Ironhew
-					}),
-					qa(27824, {	-- The Good Stuff
-						["g"] = {
-							i(63168),	-- Ironhew Cloak
-							i(63167),	-- Angor Pauldrons
-							i(63166),	-- Walloper's Chestpiece
-							i(63165),	-- Dust Bowl Shield
-							i(63164),	-- Dustwind Cowl
-						},
-						["qg"] = 2860,	-- Sigrun Ironhew
-						["sourceQuests"] = { 27823 },	-- A Dwarf's Got Needs
-					}),
 					qh(27877, {	-- The Morons' League
 						["groups"] = {
 						},
 						["qg"] = 46759,	-- Lidia Sunglow
-					}),
-					q( 28512, {	-- To the Aid of the Thorium Brotherhood
-						["groups"] = {
-						},
-						["qgs"] = { 46930, 46660 },	-- Victoria Dolen (A) & Aidan Summerwind (H)
-						["isBreadcrumb"] = true,	-- for "A New Master... But Who?" in Searing Gorge, mutually exclusive with other bcrumb quests for SG
 					}),
 				}),
 				n(-16, {	-- Rares
