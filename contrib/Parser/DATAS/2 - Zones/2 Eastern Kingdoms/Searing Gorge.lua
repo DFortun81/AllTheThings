@@ -328,8 +328,8 @@ _.Zones =
 								["qg"] = 14625,	-- Overseer Oilfist
 							})),
 						}),
-						sz(774, 3, { -- Blackchar Cave
-						}),
+						-- sz(774, 3, { -- Blackchar Cave
+						-- }),
 						sz(774, 4, { -- The Sea of Cinders NOTE: Should be Iron Summit
 							q(28032, { -- The Mysteries of the Fire-Gizzard
 								["groups"] = {
@@ -391,8 +391,8 @@ _.Zones =
 								["sourceQuests"] = { 27960 }, -- The Fewer, the Better
 							}),
 						}),
-						sz(774, 6, { -- Dustfire Valley
-						}),
+						-- sz(774, 6, { -- Dustfire Valley
+						-- }),
 						sz(774, 7, { -- Thorium Point
 							qh(28515, {	--Mouton Flamestar
 								["groups"] = {
@@ -429,8 +429,8 @@ _.Zones =
 								["sourceQuests"] = { 28064 },
 							}),
 						}),
-						sz(774, 8, { -- Blackrock Mountain
-						}),
+						-- sz(774, 8, { -- Blackrock Mountain
+						-- }),
 					}),
 				}),
 				n(-16, {	-- Rares	
