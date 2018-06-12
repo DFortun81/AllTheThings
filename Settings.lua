@@ -1884,8 +1884,8 @@ local function createAboutFrame(parent)
 	
 	local text = {}
 	text.introString = "|CFFADD8E6\nDo you find yourself completing old content just so that you can get literally everything for your Collections? Say no more! ALL THE THINGS will help you with your endeavor by giving you the ability to track your completion for everything.|r";
-	text.featureString = "|CFFADD8E6Features: \n • Supports tracking of Appearances, Illusions, Mounts, Pets, Toys, Music Rolls and Titles \n • Primary Collections Window is moveable and resizeable \n • Auto Minilist \n • Datatext Support \n • Multiple Database modules to keep the addon from having to access Blizzard API \n • Filters to allow you to customize the addon to your preferences \n • Extra tooltip information (Models, Icons, Descriptions, etc) \n • Fanfare music when you learn anything new.|r";
-	text.endString = "|CFFADD8E6Author -- Imoldgregg \nContributers -- Daktar, Lucetia, Avella, Oiche, Gold, Infamous, Aiue, Blueyleader \nDiscord -- https://discord.gg/VHe8JC2 |r";
+	text.featureString = "|CFFADD8E6Features: \n • Supports tracking of Achievements, Appearances, Illusions, Mounts, Music Rolls, Pets, Quests, Titles & Toys \n • Primary Collections Window is moveable and resizeable \n • Auto Minilist \n • Datatext Support \n • Filters to allow you to customize the addon to your preferences \n • Extra tooltip information (Models, Icons, Descriptions, etc) \n • Fanfare music when you learn anything new. \n|r";
+	text.endString = "|CFFADD8E6Author -- Imoldgregg \nContributers -- Lucetia, Daktar, Slumber, Avella, Oiche, Gold, Aiue, Blueyleader, Iyanden \nDiscord -- https://discord.gg/Uv9XAr |r";
 		
 	local about = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 	about:SetPoint("TOPLEFT", 16, -10)
@@ -1906,28 +1906,32 @@ local function createAboutFrame(parent)
 	
 	local message = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 	
-	text.q1 = "|CFFADD8E6Q) What is completionist filter? \n|r";
-	text.a1 = "A) When turned on shows you ALL items you are missing the appearances from. Turn off if you only want to collect the appearance id. \n \n";
+	text.q1 = "|CFFADD8E6\nQ) What is completionist filter? \n|r";
+	text.a1 = "A) When turned on shows you ALL items you are missing the actual sources from. Turn off if you only want to collect the appearance. \n \n";
 	text.q2 = "|CFFADD8E6Q) What does ignore filters for BOE/BOA do?  \n|r";
 	text.a2 = "A) This ignores all filters for any items that are Bind on Equip or Bind on Account. Turn off if you only want to see BOE or BOA items for your filter settings.\n \n";
 	text.q3 = "|CFFADD8E6Q) Why do I see unobtainable items?  \n|r";
-	text.a3 = "A) We here at ALL THE THINGS strive to add every item known to man to the database. There is a filter to not show these.\n \n";
+	text.a3 = "A) We here at ALL THE THINGS strive to add every item known to man to the database. You can adjust the filters for these under Account Filters and checking each one you want to enable.\n \n";
 	text.q4 = "|CFFADD8E6Q) How do I make the addon not pop-up when changing zones?  \n|r";
-	text.a4 = "A) You would uncheck the Auto Mini List filter in settings, or you can make a macro to pop minilist up in current zone.\n \n";
+	text.a4 = "A) Uncheck the 'Show the Mini List Automatically' under General, or you can make a macro to pop minilist up in current zone.\n \n";
 	text.q5 =  "|CFFADD8E6Q) Why is ALL THE THINGS showing me recipes my character already knows?  \n|r";
-	text.a5 ="A) Because  is not tracking the recipe, but is tracking the item that the recipe makes.\n \n";
+	text.a5 ="A) In order to track your recipes you will need to open up your profession window.  This is due to how Blizzard will only send the information from the API once it's opened.  If it does not properly track you can try turning on 'Show the Profession Mini List Automatically' as right now having it not enabled could cause issues.\n \n";
 	text.q6 = "|CFFADD8E6Q) Why does ALL THE THINGS show me items I have collected from another source with Completionist mode off?  \n|r";
-	text.a6 = "A) One reason is if the appearance that you have collected is not transmoggable on the character you are on. If you have a hunter only piece, alternate appearances will still show up on your shaman as your shaman can not transmog the hunter piece.\n \n"
+	text.a6 = "A) Under the General tab check the box that says 'I only care about my main'.  The reason is if the appearance that you have collected is not transmoggable on the character you are on. If you have a hunter only piece, alternate appearances will still show up on your shaman as your shaman can not transmog the hunter piece.\n \n"
 	text.q7 = "|CFFADD8E6Q) Why do I not see any mounts?  \n|r";
-	text.a7 = "A) There are some other mount addons that interfere with ALL THE THINGS ability to detect mount collection at startup. Please disable any you have, ReloadUI, and check to see if you now have mounts. ATT will cache the information so you are free to enable any addons you disabled.\n \n"
-	text.q8 = "|CFFADD8E6Q)What do I do if I have a suggestion, complaint, etc?\n|r";
-	text.a8 = "A) Feel free to post at \nhttps://mods.curse.com/addons/wow/267285-all-the-things \nhttp://www.mmo-champion.com/threads/2227927-ALL-THE-THINGS-New-Transmog-Addon \nor join our discord -- https://discord.gg/bV5aECp";
+	text.a7 = "A) There are some other mount addons that interfere with ALL THE THINGS ability to detect mount collection at startup. Please disable any you have, ReloadUI, and check to see if you now have mounts. ATT will cache the information so you are free to enable any addons you disabled.\n \n";
+	text.q8 = "|CFFADD8E6Q) Why am I seeing necklaces, trinkets, rings, relics and other non-collectible consumables and containers? \n|r";
+	text.a8 = "A) This is because we want to include all the possible loot drops for each npc.  If you wish to disable this you can go to the Mini List tab and uncheck the appropriate items there.  This will remove them from the listings, however if you leave them enabled they do not count against your number as they are indicated by a ---.\n \n";
+	text.q9 = "|CFFADD8E6Q) Is there any way to filter out PvP items? \n|r";
+	text.a9 = "PvP items are not able to be filtered out.  This is because about a third to a half of the available appearances come from PvP gear and are purchasable with Marks of Honor, obtainable via PvE World Quests in Legion. You can filter out PvP items that are unobtainable or only available to top-tier PvPers, like Elite and Gladiator items by turning on the 'PvP Elite/Gladiator' filter under 'Account Filters'  Current season gear is excluded from this filter as it is still obtainable at the time (this may change in the future).\n \n";
+	text.q10 = "|CFFADD8E6Q)What do I do if I have a suggestion, complaint, etc?\n|r";
+	text.a10 = "A) Feel free to post at \nhttps://github.com/DFortun81/AllTheThings/issues \nhttps://mods.curse.com/addons/wow/267285-all-the-things \nhttp://www.mmo-champion.com/threads/2227927-ALL-THE-THINGS-New-Transmog-Addon \nor join our discord -- https://discord.gg/Uv9XAr";
 	
 	message = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 	message:SetPoint("TOPLEFT",faq,5,-frameSpacer)
 	message:SetJustifyH("LEFT");   -- aligns the text to the left
 	--message:SetText(message.qOne.. message.qOneA.. message.qTwo.. message.qTwoA.. message.qThree.. message.qThreeA.. message.qFour.. message.qFourA.. message.qFive.. message.qFiveA.. message.qSix.. message.qSixA.. message.qSeven.. message.qSevenA.. message.qEight.. message.qEightA);
-	message:SetText(text.q1 .. text.a1 .. text.q2 .. text.a2 .. text.q3 .. text.a3 .. text.q4 .. text.a4 .. text.q5 .. text.a5 .. text.q6 .. text.a6 .. text.q7 .. text.a7 .. text.q8 .. text.a8)
+	message:SetText(text.q1 .. text.a1 .. text.q2 .. text.a2 .. text.q3 .. text.a3 .. text.q4 .. text.a4 .. text.q5 .. text.a5 .. text.q6 .. text.a6 .. text.q7 .. text.a7 .. text.q8 .. text.a8 .. text.q9 .. text.a9 .. text.q10 .. text.a10)
 	message:SetWidth(child:GetWidth()-10);
 	addObject(elm,message)
 	
