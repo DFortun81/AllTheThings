@@ -504,12 +504,12 @@ _.Zones =
 								["sourceQuests"] = { 27775 },	-- When the Going Gets Tough, Cheat
 							}),
 						}),
-						sz(765, 2, {	-- Agmond's End
-						}),
-						sz(765, 3, {	-- Uldaman
-						}),
-						sz(765, 4, {	-- Camp Cagg
-						}),
+						-- sz(765, 2, {	-- Agmond's End
+						-- }),
+						-- sz(765, 3, {	-- Uldaman
+						-- }),
+						-- sz(765, 4, {	-- Camp Cagg
+						-- }),
 						sz(765, 5, {	-- Scar of the Worldbreaker
 							qa(27833, {	-- Half-Ton Holdouts
 								["g"] = {
@@ -541,13 +541,35 @@ _.Zones =
 								},
 								["qg"] = 46660,	-- Aidan Summerwind
 							}),
+							q( 28512, {	-- To the Aid of the Thorium Brotherhood
+								["groups"] = {
+								},
+								["qgs"] = { 46930, 46660 },	-- Victoria Dolen (A) & Aidan Summerwind (H)
+								["isBreadcrumb"] = true,	-- for "A New Master... But Who?" in Searing Gorge, mutually exclusive with other bcrumb quests for SG
+							}),
 						}),
 						sz(765, 6, {	-- The Dustbowl
+							qa(27823, {	-- A Dwarf's Got Needs
+								["groups"] = {
+								},
+								["qg"] = 2860,	-- Sigrun Ironhew
+							}),
+							qa(27824, {	-- The Good Stuff
+								["g"] = {
+									i(63168),	-- Ironhew Cloak
+									i(63167),	-- Angor Pauldrons
+									i(63166),	-- Walloper's Chestpiece
+									i(63165),	-- Dust Bowl Shield
+									i(63164),	-- Dustwind Cowl
+								},
+								["qg"] = 2860,	-- Sigrun Ironhew
+								["sourceQuests"] = { 27823 },	-- A Dwarf's Got Needs
+							}),
 						}),
-						sz(765, 7, {	-- Angor Fortress
-						}),
-						sz(765, 8, {	-- Camp Kosh
-						}),
+						-- sz(765, 7, {	-- Angor Fortress
+						-- }),
+						-- sz(765, 8, {	-- Camp Kosh
+						-- }),
 						sz(765, 9, {	-- Bloodwatcher Point
 							qh(27878, {	-- Forcible Acquisition
 								["groups"] = {
@@ -560,35 +582,13 @@ _.Zones =
 								["qg"] = 46758,	-- Aoren Sunglow
 							}),
 						}),
-						sz(765, 10, {	-- New Kargath
-						}),
-					}),
-					qa(27823, {	-- A Dwarf's Got Needs
-						["groups"] = {
-						},
-						["qg"] = 2860,	-- Sigrun Ironhew
-					}),
-					qa(27824, {	-- The Good Stuff
-						["g"] = {
-							i(63168),	-- Ironhew Cloak
-							i(63167),	-- Angor Pauldrons
-							i(63166),	-- Walloper's Chestpiece
-							i(63165),	-- Dust Bowl Shield
-							i(63164),	-- Dustwind Cowl
-						},
-						["qg"] = 2860,	-- Sigrun Ironhew
-						["sourceQuests"] = { 27823 },	-- A Dwarf's Got Needs
+						-- sz(765, 10, {	-- New Kargath
+						-- }),
 					}),
 					qh(27877, {	-- The Morons' League
 						["groups"] = {
 						},
 						["qg"] = 46759,	-- Lidia Sunglow
-					}),
-					q( 28512, {	-- To the Aid of the Thorium Brotherhood
-						["groups"] = {
-						},
-						["qgs"] = { 46930, 46660 },	-- Victoria Dolen (A) & Aidan Summerwind (H)
-						["isBreadcrumb"] = true,	-- for "A New Master... But Who?" in Searing Gorge, mutually exclusive with other bcrumb quests for SG
 					}),
 				}),
 				n(-16, {	-- Rares
