@@ -34,17 +34,17 @@ local function createSettingFrame(self)
 	local line = self:CreateTexture(nil, "BACKGROUND")
 	line:SetPoint('BOTTOMLEFT',11,11)
 	line:SetPoint('BOTTOMRIGHT',-11,11)
-	line:SetColorTexture(1, 1, 1, 1)
+	line:SetColorTexture(1, 1, 1, 0.4)
 	
 	local line1 = self:CreateTexture(nil, "BACKGROUND")
 	line1:SetPoint('TOPLEFT',11,-60)
 	line1:SetPoint('BOTTOMLEFT',11,11)
-	line1:SetColorTexture(1, 1, 1, 1)
+	line1:SetColorTexture(1, 1, 1, 0.4)
 	
 	local line2 = self:CreateTexture(nil, "BACKGROUND")
 	line2:SetPoint('TOPRIGHT',-11,-60)
 	line2:SetPoint('BOTTOMRIGHT',-11,11)
-	line2:SetColorTexture(1, 1, 1, 1)
+	line2:SetColorTexture(1, 1, 1, 0.4)
 end
 
 local function onClickTab(self)
@@ -221,6 +221,7 @@ local function createGeneralFrame(parent)
 	local modeFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-modeFrame", child, "ThinBorderTemplate");
 	modeFrame:SetSize(child:GetWidth(),80)
 	modeFrame:SetPoint("TOPLEFT",mode,0,-frameSpacer);
+	modeFrame:SetAlpha(0.3);
 	addObject(elm,modeFrame)
 	
 	-- debug mode
@@ -287,6 +288,7 @@ local function createGeneralFrame(parent)
 	local alertsFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-alertsFrame", child, "ThinBorderTemplate");
 	alertsFrame:SetSize(child:GetWidth(),80)
 	alertsFrame:SetPoint("TOPLEFT",alerts,0,-frameSpacer);
+	alertsFrame:SetAlpha(0.3);
 	addObject(elm,alertsFrame)
 	
 	-- This creates the "Notify me when I Collect Things" Checkbox --
@@ -343,6 +345,7 @@ local function createGeneralFrame(parent)
 	local specFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-specFrame", child, "ThinBorderTemplate");
 	specFrame:SetSize(child:GetWidth(),80)
 	specFrame:SetPoint("TOPLEFT",spec,0,-frameSpacer);
+	specFrame:SetAlpha(0.3);
 	addObject(elm,specFrame)
 	
 	-- Show Loot Specializations
@@ -402,6 +405,7 @@ local function createGeneralFrame(parent)
 	local otherFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-otherFrame", child, "ThinBorderTemplate");
 	otherFrame:SetSize(child:GetWidth(),110)
 	otherFrame:SetPoint("TOPLEFT",other,0,-frameSpacer);
+	otherFrame:SetAlpha(0.3);
 	addObject(elm,otherFrame)
 	
 	-- mini map button
@@ -1176,6 +1180,7 @@ local function createMiniListFrame(parent)
 	local profileFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-profileFrame", child, "ThinBorderTemplate");
 	profileFrame:SetSize(child:GetWidth(),40)
 	profileFrame:SetPoint("TOPLEFT",profile,0,-frameSpacer);
+	profileFrame:SetAlpha(0.3);
 	addObject(elm,profileFrame)
 	
 	local dropdown = CreateFrame("Frame", name .. "-dropdown", child, "Lib_UIDropDownMenuTemplate")
@@ -1295,6 +1300,7 @@ local function createMiniListFrame(parent)
 	local showFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-showFrame", child, "ThinBorderTemplate");
 	showFrame:SetSize(child:GetWidth()/2.5,140)
 	showFrame:SetPoint("TOPLEFT",show,0,-frameSpacer);
+	showFrame:SetAlpha(0.3);
 	addObject(elm,showFrame)
 	
 	local showComp = createCheckBox("Show Completed Groups", child, function(self)
@@ -1357,19 +1363,34 @@ local function createMiniListFrame(parent)
 	showIncomp:SetPoint("TOPLEFT",showCollected,0,-20)
 	addObject(elm,showIncomp)
 
-	local showTreat = createCheckBox("Treat as Collectible", child, function(self)
-			app.SetDataMember("TreatIncompleteQuestsAsCollectible", self:GetChecked());
+	local achievementsAsCollectible = createCheckBox("Treat Achievements as Collectible", child, function(self)
+			app.SetDataMember("TreatAchievementsAsCollectible", self:GetChecked());
 			app:RefreshData();
 		end, 
 		function(self) 
-			self:SetChecked(app.GetDataMember("TreatIncompleteQuestsAsCollectible"));
+			self:SetChecked(app.GetDataMember("TreatAchievementsAsCollectible"));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to track Achievements as Collectible Things.\n\nThis means that quests will naturally appear in the listing and will add to the total once you complete them on your character.\n\nNOTE: Some Achievements are not Account-Wide, so if you are trying to collect ALL THE THINGS on ALL OF YOUR CHARACTERS, you might want to turn on Account-Wide Tracking as well.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	achievementsAsCollectible:SetPoint("TOPLEFT",showIncomp,5,-20)
+	addObject(elm,achievementsAsCollectible)
+
+	local showTreat = createCheckBox("Treat Quests as Collectible", child, function(self)
+			app.SetDataMember("TreatQuestsAsCollectible", self:GetChecked());
+			app:RefreshData();
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("TreatQuestsAsCollectible"));
 		end,
 		function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
 			GameTooltip:SetText ("Enable this option if you want to track non-Daily Quests as Collectible Things.\n\nThis means that quests will naturally appear in the listing and will add to the total once you complete them on your character.\n\nNOTE: Quests are not usually Account-Wide, so if you are trying to collect ALL THE THINGS on ALL OF YOUR CHARACTERS, you might want to disable this option.\n\nIt can be very useful when questing through a zone, though.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	showTreat:SetPoint("TOPLEFT",showIncomp,5,-20)
+	showTreat:SetPoint("TOPLEFT",achievementsAsCollectible,5,-20)
 	addObject(elm,showTreat)
 	
 	-- Show Descriptions
@@ -1403,6 +1424,7 @@ local function createMiniListFrame(parent)
 	local itemFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-itemFrame", child, "ThinBorderTemplate");
 	itemFrame:SetSize(child:GetWidth()/2.5,280)
 	itemFrame:SetPoint("TOPLEFT",item,0,-frameSpacer);
+	itemFrame:SetAlpha(0.3);
 	addObject(elm,itemFrame)
 	
 	local itemFilterNames = app.L("FILTER_ID_TYPES");
@@ -1454,6 +1476,7 @@ local function createMiniListFrame(parent)
 	local equipFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-equipFrame", child, "ThinBorderTemplate");
 	equipFrame:SetSize(child:GetWidth(),410)
 	equipFrame:SetPoint("TOPLEFT",equip,0,-frameSpacer);
+	equipFrame:SetAlpha(0.3);
 	addObject(elm,equipFrame)
 	
 	local allEquipment = createCheckBox("All Equipment", child, function(self)
@@ -1527,6 +1550,7 @@ local function createMiniListFrame(parent)
 	local armorFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-armorFrame", child, "ThinBorderTemplate");
 	armorFrame:SetSize(child:GetWidth()/2.25,350)
 	armorFrame:SetPoint("TOPLEFT",armor,0,-frameSpacer);
+	armorFrame:SetAlpha(0.3);
 	addObject(elm,armorFrame)
 	
 	last = armor;
@@ -1558,6 +1582,7 @@ local function createMiniListFrame(parent)
 	local weaponFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-weaponFrame", child, "ThinBorderTemplate");
 	weaponFrame:SetSize(armorFrame:GetWidth(),armorFrame:GetHeight())
 	weaponFrame:SetPoint("TOPLEFT",weapon,0,-frameSpacer);
+	weaponFrame:SetAlpha(0.3);
 	addObject(elm,weaponFrame)
 	
 	last = weapon;

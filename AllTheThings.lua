@@ -2692,7 +2692,7 @@ app.BaseAchievement = {
 		--elseif key == "saved" then
 		--	return select(4, GetAchievementInfo(t.achievementID));
 		elseif key == "collectible" then
-			return true;
+			return GetDataMember("TreatAchievementsAsCollectible");
 		elseif key == "collected" then
 			return select(4, GetAchievementInfo(t.achievementID));
 		else
@@ -2736,7 +2736,7 @@ app.BaseAchievementCriteria = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return true;
+			return GetDataMember("TreatAchievementsAsCollectible");
 		elseif key == "saved" or key == "collected" then
 			return select(4, GetAchievementInfo(t.achievementID)) or select(3, GetAchievementCriteriaInfo(t.achievementID, math.min(t.criteriaID, GetAchievementNumCriteria(t.achievementID))));
 		else
@@ -3412,12 +3412,12 @@ app.BaseItem = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
-			return t.s or (t.questID and GetDataMember("TreatIncompleteQuestsAsCollectible"));
+			return t.s or (t.questID and not t.repeatable and GetDataMember("TreatQuestsAsCollectible"));
 		elseif key == "collected" then
 			if t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s) then
 				return 1;
 			end
-			return t.questID and GetDataMember("TreatIncompleteQuestsAsCollectible") and t.saved;
+			return t.saved;
 		elseif key == "text" then
 			return t.link;
 		elseif key == "link" then
@@ -3456,8 +3456,10 @@ app.BaseItem = {
 			end
 		elseif key == "trackable" then
 			return t.questID;
+		elseif key == "repeatable" then
+			return t.isDaily or t.isWeekly;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID);
+			return t.questID and IsQuestFlaggedCompleted(t.questID);
 		elseif key == "modID" then
 			return 1;
 		elseif key == "name" then
@@ -3836,8 +3838,6 @@ app.BaseQuest = {
 	__index = function(t, key)
 		if key == "key" then
 			return "questID";
-		elseif key == "f" then
-			return 104;
 		elseif key == "text" then
 			local questName = QuestTitleFromID[t.questID];
 			if questName then
@@ -3861,9 +3861,11 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return not t.isDaily and GetDataMember("TreatIncompleteQuestsAsCollectible");
+			return not t.repeatable and GetDataMember("TreatQuestsAsCollectible");
 		elseif key == "collected" then
 			return t.saved;
+		elseif key == "repeatable" then
+			return t.isDaily or t.isWeekly;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID);
 		else
@@ -4303,9 +4305,11 @@ app.BaseVignette = {
 		elseif key == "icon" then
 			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
 		elseif key == "collectible" then
-			return not t.isDaily and GetDataMember("TreatIncompleteQuestsAsCollectible");
+			return not t.repeatable and GetDataMember("TreatQuestsAsCollectible");
 		elseif key == "collected" then
 			return t.collectible and t.saved;
+		elseif key == "repeatable" then
+			return t.isDaily or t.isWeekly;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID);
 		else
@@ -5083,7 +5087,7 @@ function app.QuestCompletionHelper(questID)
 	local searchResults = SearchForQuestID(questID);
 	if searchResults and #searchResults > 0 then
 		-- Only increase progress for Quests as Collectible users.
-		if GetDataMember("TreatIncompleteQuestsAsCollectible") then
+		if GetDataMember("TreatQuestsAsCollectible") then
 			-- Attempt to cleanly refresh the data.
 			for i,result in ipairs(searchResults) do
 				if result.visible and result.parent and result.parent.total then
@@ -8491,7 +8495,8 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("OnlyShowRelevantDatabaseLocations", true);
 	GetDataMember("OnlyShowRelevantSharedAppearances", false);
 	GetDataMember("ShowLootSpecializationRequirements", true);
-	GetDataMember("TreatIncompleteQuestsAsCollectible", false);
+	GetDataMember("TreatAchievementsAsCollectible", true);
+	GetDataMember("TreatQuestsAsCollectible", false);
 	GetDataMember("ShowCompleteSourceLocations", true);
 	GetDataMember("EnableTooltipInformation", true);
 	GetDataMember("DisplayTooltipsInCombat", true);
