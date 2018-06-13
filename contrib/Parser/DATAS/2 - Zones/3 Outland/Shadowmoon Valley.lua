@@ -845,138 +845,129 @@ _.Zones =
 					
 					
 					
-					faction(932, {	-- The Aldor
-						qr(q(10828, {	-- Single Mark of Sargeras
-							["groups"] = {
-							},
-							["qg"] = 22214,	-- Harbinger Saronen
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						})),
-						qr(q(10827, {	-- More Marks of Sargeras
-							["groups"] = {
-							},
-							["qg"] = 22214,	-- Harbinger Saronen
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						})),
-						q(10619, {	-- The Ashtongue Tribe
-							["groups"] = {
-							},
-							["qg"] = 21822,	-- Vindicator Aluumen
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						}),
-						q(10816, {	-- Reclaiming Holy Ground
-							["groups"] = {
-								i(30940),	-- Aged Leather Bindings
-								i(30961),	-- Ash-Covered Helm
-								i(30922),	-- Ata'mai Crown
-								i(30958),	-- Blackened Chain Greaves
-							},
-							["qg"] = 21822,	-- Vindicator Aluumen
-							["sourceQuests"] = { 10619 },	-- The Ashtongue Tribe
-						}),
-						
-						
-						q(10587, {	-- Karabor Training Grounds
-							["groups"] = {
-							},
-							["qg"] = 21860,	-- Exarch Onaala
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						}),
-						q(10637, {	-- A Necessary Distraction
-							["groups"] = {
-							},
-							["qg"] = 21860,	-- Exarch Onaala
-							["sourceQuests"] = { 10587 },	-- Karabor Training Grounds
-						}),
-						q(10640, {	-- Altruis
-							["groups"] = {
-							},
-							["qg"] = 21860,	-- Exarch Onaala
-							["sourceQuests"] = { 10637 },	-- A Necessary Distraction
-						}),
-						q(10651, {	-- Varedis Must Be Stopped (awarded "Borrowed Power" criteria)
-							["groups"] = {
-								i(31013),	-- Ceremonial Kris
-								i(30933),	-- Hauberk of Karabor
-								i(31010),	-- Slayer's Axe
-								i(31002),	-- Summoner's Blade
-								i(30948),	-- Sunfury Legguards
-								i(31009),	-- Wildcaller
-							},
-							["qg"] = 21860,	-- Exarch Onaala
-							["sourceQuests"] = { 10650 },  	-- Return to the Aldor
-						}),
-						
-						
-						q(10568, {	-- Tablets of Baa'ri
-							["groups"] = {
-							},
-							["qg"] = 21402,	-- Anchorite Ceyla
-							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						}),
-						q(10571, {	-- Oronu the Elder
-							["groups"] = {
-							},
-							["qg"] = 21402,	-- Anchorite Ceyla
-							["sourceQuests"] = { 10568 },	-- Tablets of Baa'ri
-						}),
-						q(10574, {	-- The Ashtongue Corruptors
-							["groups"] = {
-							},
-							["qg"] = 21402,	-- Anchorite Ceyla
-							["sourceQuests"] = { 10571 },	-- Oronu the Elder
-						}),
-						q(10575, {	-- The Warden's Cage
-							["groups"] = {
-							},
-							["qg"] = 21402,	-- Anchorite Ceyla
-							["sourceQuests"] = { 10574 },	-- The Ashtongue Corruptors
-						}),
-						q(10622, {	-- Proof of Allegiance
-							["groups"] = {
-							},
-							["qg"] = 21826,	-- Sanoru
-							["sourceQuests"] = { 10575 },	-- The Warden's Cage
-						}),
-						q(10628, {	-- Akama
-							["groups"] = {
-							},
-							["qg"] = 21826,	-- Sanoru
-							["sourceQuests"] = { 10622 },	-- Proof of Allegiance
-						}),
-						qdg(q(10705, {	-- Seer Udalo
-							["groups"] = {
-							},
-							["qg"] = 21700,	-- Akama
-							["sourceQuests"] = { 10628 },	-- Akama
-						})),
-						q(10707, {	-- The Ata'mal Terrace
-							["groups"] = {
-							},
-							["qg"] = 21770,	-- Akama
-							["sourceQuests"] = { 10706 },	-- A Mysterious Portent
-						}),
-						q(10708, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
-							["groups"] = {
-								i(30932),	-- Akama's Sash
-								i(30999),	-- Ashtongue Blade
-								i(31000),	-- Bloodwarder's Rifle
-								i(30943),	-- Verdant Gloves
-								i(30984),	-- Spellbreaker's Buckler
-								i(31417),	-- Staff of the Ashtongue Deathsworn
-							},
-							["qg"] = 21700,	-- Akama
-							["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
-						}),
-						
-						
-						
+					faction( 932, {	-- The Aldor
+						["g"] = {
+							qr(q(10828, {	-- Single Mark of Sargeras
+								["groups"] = {
+								},
+								["qg"] = 22214,	-- Harbinger Saronen
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							})),
+							qr(q(10827, {	-- More Marks of Sargeras
+								["groups"] = {
+								},
+								["qg"] = 22214,	-- Harbinger Saronen
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							})),
+							q(10619, {	-- The Ashtongue Tribe
+								["groups"] = {
+								},
+								["qg"] = 21822,	-- Vindicator Aluumen
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(10816, {	-- Reclaiming Holy Ground
+								["groups"] = {
+									i(30940),	-- Aged Leather Bindings
+									i(30961),	-- Ash-Covered Helm
+									i(30922),	-- Ata'mai Crown
+									i(30958),	-- Blackened Chain Greaves
+								},
+								["qg"] = 21822,	-- Vindicator Aluumen
+								["sourceQuests"] = { 10619 },	-- The Ashtongue Tribe
+							}),
+							q(10587, {	-- Karabor Training Grounds
+								["groups"] = {
+								},
+								["qg"] = 21860,	-- Exarch Onaala
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(10637, {	-- A Necessary Distraction
+								["groups"] = {
+								},
+								["qg"] = 21860,	-- Exarch Onaala
+								["sourceQuests"] = { 10587 },	-- Karabor Training Grounds
+							}),
+							q(10640, {	-- Altruis
+								["groups"] = {
+								},
+								["qg"] = 21860,	-- Exarch Onaala
+								["sourceQuests"] = { 10637 },	-- A Necessary Distraction
+							}),
+							q(10651, {	-- Varedis Must Be Stopped (awarded "Borrowed Power" criteria)
+								["groups"] = {
+									i(31013),	-- Ceremonial Kris
+									i(30933),	-- Hauberk of Karabor
+									i(31010),	-- Slayer's Axe
+									i(31002),	-- Summoner's Blade
+									i(30948),	-- Sunfury Legguards
+									i(31009),	-- Wildcaller
+								},
+								["qg"] = 21860,	-- Exarch Onaala
+								["sourceQuests"] = { 10650 },  	-- Return to the Aldor
+							}),
+							q(10568, {	-- Tablets of Baa'ri
+								["groups"] = {
+								},
+								["qg"] = 21402,	-- Anchorite Ceyla
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(10571, {	-- Oronu the Elder
+								["groups"] = {
+								},
+								["qg"] = 21402,	-- Anchorite Ceyla
+								["sourceQuests"] = { 10568 },	-- Tablets of Baa'ri
+							}),
+							q(10574, {	-- The Ashtongue Corruptors
+								["groups"] = {
+								},
+								["qg"] = 21402,	-- Anchorite Ceyla
+								["sourceQuests"] = { 10571 },	-- Oronu the Elder
+							}),
+							q(10575, {	-- The Warden's Cage
+								["groups"] = {
+								},
+								["qg"] = 21402,	-- Anchorite Ceyla
+								["sourceQuests"] = { 10574 },	-- The Ashtongue Corruptors
+							}),
+							q(10622, {	-- Proof of Allegiance
+								["groups"] = {
+								},
+								["qg"] = 21826,	-- Sanoru
+								["sourceQuests"] = { 10575 },	-- The Warden's Cage
+							}),
+							q(10628, {	-- Akama
+								["groups"] = {
+								},
+								["qg"] = 21826,	-- Sanoru
+								["sourceQuests"] = { 10622 },	-- Proof of Allegiance
+							}),
+							qdg(q(10705, {	-- Seer Udalo
+								["groups"] = {
+								},
+								["qg"] = 21700,	-- Akama
+								["sourceQuests"] = { 10628 },	-- Akama
+							})),
+							q(10707, {	-- The Ata'mal Terrace
+								["groups"] = {
+								},
+								["qg"] = 21770,	-- Akama
+								["sourceQuests"] = { 10706 },	-- A Mysterious Portent
+							}),
+							q(10708, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
+								["groups"] = {
+									i(30932),	-- Akama's Sash
+									i(30999),	-- Ashtongue Blade
+									i(31000),	-- Bloodwarder's Rifle
+									i(30943),	-- Verdant Gloves
+									i(30984),	-- Spellbreaker's Buckler
+									i(31417),	-- Staff of the Ashtongue Deathsworn
+								},
+								["qg"] = 21700,	-- Akama
+								["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
+							}),
+						},
+						["collectible"] = false,
 					}),
-					
-					
-					
-					
-					
 					faction(1015, {	-- Netherwing
 						q( 10804, {	-- Kindness
 							["groups"] = {
@@ -1160,42 +1151,35 @@ _.Zones =
 							["description"] = "For players aligned with The Scryers.",
 						}),
 					}),
-					
-					
-					
-					
-					
-					faction(934, {	-- The Scryers
-						q( 10688),	-- A Necessary Distraction
-						q( 10689),	-- Altruis
-						q( 10684),	-- Oronu the Elder
-						q( 10691),	-- Return to the Scryers
-						q( 10685),	-- The Ashtongue Corruptors
-						q( 10686),	-- The Warden's Cage
-						q( 10692, {	-- Varedis Must Be Stopped
-							i(31013),
-							i(30933),
-							i(31010),
-							i(31002),
-							i(30948),
-							i(31009),
-						}),
-						q( 10683),	-- Tablets of Baa'ri
-						q( 10807),	-- The Ashtongue Broken
-						q( 10824),	-- Sunfury Signets
-						q( 10687),	-- Karabor Training Grounds
-						q( 10817, {	-- The Great Retribution
-							i(30940),
-							i(30961),
-							i(30922),
-							i(30958),
-						}),
+					faction( 934, {	-- The Scryers
+						["g"] = {
+							q( 10688),	-- A Necessary Distraction
+							q( 10689),	-- Altruis
+							q( 10684),	-- Oronu the Elder
+							q( 10691),	-- Return to the Scryers
+							q( 10685),	-- The Ashtongue Corruptors
+							q( 10686),	-- The Warden's Cage
+							q( 10692, {	-- Varedis Must Be Stopped
+								i(31013),
+								i(30933),
+								i(31010),
+								i(31002),
+								i(30948),
+								i(31009),
+							}),
+							q( 10683),	-- Tablets of Baa'ri
+							q( 10807),	-- The Ashtongue Broken
+							q( 10824),	-- Sunfury Signets
+							q( 10687),	-- Karabor Training Grounds
+							q( 10817, {	-- The Great Retribution
+								i(30940),
+								i(30961),
+								i(30922),
+								i(30958),
+							}),
+						},
+						["collectible"] = false,
 					}),
-					
-					
-					
-					
-					
 --					qh(11498),	-- Learning to Fly (REMOVED)
 --					qa(11497),	-- Learning to Fly (REMOVED)					
 --					q( 38845),	-- Unused (NEVER IMPLEMENTED)
