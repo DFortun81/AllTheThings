@@ -572,8 +572,52 @@ _.Zones =
 				}),					
 				nh(-299, {  -- Missions
 					["groups"] = {
-						n(85805, { -- Command Table
+						n(85805, { -- Command Table [Garrison Level 3]
 							["groups"] = {
+								ach(9900, { -- Exploration Mission Master
+									ach(9150), -- Exploration Mission Specialist
+								}),
+								ach(9147, { -- Mission Specialist
+									ach(9523), -- Patrolling Draenor [Yes this is a pre-req]
+									ach(9145), -- Treasure Mission Specialist
+								}),
+								ach(9140, { -- On A Metric Ton of Missions
+									ach(9133), -- On a Mission
+									ach(9134), -- On a Few Missions
+									ach(9138), -- On a Lot of Missions
+									ach(9139), -- On a Massive Numbeer of Missions
+								}),
+								ach(9523, { -- Patrolling Draenor
+									i(111971, { -- Barracks, Level 3 [Blueprints]
+										["groups"] = {
+										},
+										["f"] = 200, -- Recipe
+									}),
+								}),
+								ach(9143, { -- The Rarer the Better
+									ach(9141), -- A Rare Mission
+									ach(9142), -- Keeping It Rare
+								}),
+								ach(9524, { -- Treasure Master
+									ach(9145), -- Treasure Mission Specialist
+								}),
+								garrisonMission(2, { -- Gronnlings Abound
+									i(112737, { -- Contract: Ka'la of the Frostwolves
+										follower(153, { -- Ka'la
+											["groups"] = {
+											},
+											["description"] = "Press Shift+Click to refresh or relog once you obtain this follower",
+										}),
+									}),
+								}),
+								i(114053, { -- Shimmering Gauntlets
+									["groups"] = {
+										i(112810),	-- Windowhanger Wraps
+										i(112812),	-- Softfinger Grips
+										i(112809),	-- Beastminder Chain Gloves
+										i(112811),	-- Wallbuilder Gauntlets
+									},
+								}),
 								i(118529, { -- Cache of Highmaul Treasures [Normal]
 									["groups"] = {
 										i(113666),	-- Absalom's Bloody Bulwark
@@ -624,7 +668,7 @@ _.Zones =
 									},
 									["modID"] = 3,
 								}),
-								i(118530, {-- Cache of Highmaul Treasures [Heroic]
+								i(118530, { -- Cache of Highmaul Treasures [Heroic]
 									["groups"] = {
 										i(113666),	-- Absalom's Bloody Bulwark
 										i(113653),	-- Maw of Souls
@@ -674,7 +718,7 @@ _.Zones =
 									},
 									["modID"] = 5,
 								}),
-								i(118531, {-- Cache of Highmaul Treasures [Mythic]
+								i(118531, { -- Cache of Highmaul Treasures [Mythic]
 									["groups"] = {
 										i(113666),	-- Absalom's Bloody Bulwark
 										i(113653),	-- Maw of Souls
@@ -934,199 +978,230 @@ _.Zones =
 									},
 									["modID"] = 6,
 								}),
-								i(114053, { -- Shimmering Gauntlets
-									i(112810),	-- Windowhanger Wraps
-									i(112812),	-- Softfinger Grips
-									i(112809),	-- Beastminder Chain Gloves
-									i(112811),	-- Wallbuilder Gauntlets
+								i(114108, { -- Tormented Armament
+									i(115303),	-- Tormented Axe
+									i(115306),	-- Tormented Dagger
+									i(115304),	-- Tormented Greataxe
+									i(115305),	-- Tormented Longbow
+									i(115308),	-- Tormented Polearm
+									i(115310),	-- Tormented Scepter
+									i(115309),	-- Tormented Spire
+									i(115307),	-- Tormented Warmace
+								}),	
+								i(114098, { -- Tormented Hood
+									i(114326), -- Mantisweave Hood
+									i(114327), -- Shadow-Gorged Hood
+									i(114328), -- Helm of Meditative Focus
+									i(114329), -- Salt-Scorched Greathelm
+								}),	
+								i(114100, { -- Tormented Spaulders
+									i(114334), -- Mantisweave Mantle
+									i(114335), -- Shadow-Gorged Spaulders
+									i(114336), -- Spaulders of Meditative Focus
+									i(114337), -- Salt-Scorched Shoulderguard
+								}),	
+								i(114094, { -- Tormented Bracers
+									i(114310), -- Mantisweave Bracers 
+									i(114311), -- Shadow-Gorged Bracers
+									i(114312), -- Bracers of Meditative Focus
+									i(114313), -- Salt-Scorched Bracers
+								}),	
+								i(114097, { -- Tormented Gauntlets
+									i(114322), -- Mantisweave Gloves
+									i(114323), -- Shadow-Gorged Gauntlets
+									i(114324), -- Gauntlets of Meditative Focus
+									i(114325), -- Salt-Scorched Gauntlets
+								}),	
+								i(114101, { -- Tormented Girdle
+									i(114338), -- Mantisweave Cord
+									i(114339), -- Shadow-Gorged Belt
+									i(114340), -- Belt of Meditative Focus
+									i(114341), -- Salt-Scorched Girdle
 								}),
-								n(-3310, { -- Tormented Set
-									["groups"] = {
-										i(114108, { -- Weapon
-											i(115303),	-- Tormented Axe
-											i(115306),	-- Tormented Dagger
-											i(115304),	-- Tormented Greataxe
-											i(115305),	-- Tormented Longbow
-											i(115308),	-- Tormented Polearm
-											i(115310),	-- Tormented Scepter
-											i(115309),	-- Tormented Spire
-											i(115307),	-- Tormented Warmace
-										}),	
-										i(114098, { -- Helm
-											i(114328),
-											i(114326),
-											i(114329),
-											i(114327),
-										}),	
-										i(114100, { -- Shoulders
-											i(114334),
-											i(114337),
-											i(114335),
-											i(114336),
-										}),	
-										i(114094, { -- Bracers
-											i(114312),
-											i(114310),
-											i(114313),
-											i(114311),
-										}),	
-										i(114097, { -- Hands
-											i(114324),
-											i(114322),
-											i(114325),
-											i(114323),
-										}),	
-										i(114101, { -- Waist
-											i(114338),	-- Mantisweave Cord
-											i(114339),	-- Shadow-Gorged Belt
-											i(114340),	-- Belt of Meditative Focus
-											i(114341),	-- Salt-Scorched Girdle
-										}),
-										i(114099, { -- Legs
-											i(114332),
-											i(114330),
-											i(114333),
-											i(114331),
-										}),	
-										i(114096, { -- Feet
-											i(114320),
-											i(114318),
-											i(114321),
-											i(114319),
-										}),	
-									},
-									["icon"] = "Interface\\Icons\\inv_helmet_cloth_reputation_c_01",
+								i(114099, { -- Tormented Leggings
+									i(114330), -- Mantisweave Trousers
+									i(114331), -- Shadow-Gorged Legguards
+									i(114332), -- Legguards of Meditative Focus
+									i(114333), -- Salt-Scorched Legplates
+								}),	
+								i(114096, { -- Tormented Treads
+									i(114318), -- Mantisweave Sandals
+									i(114319), -- Shadow-Gorged Boots
+									i(114320), -- Boots of Meditative Focus
+									i(114321), -- Salt-Scorched Greaves
+								}),	
+								i(114105, { -- Tormented Trinket
+									i(114367),	-- Tormented Emblem of Flame
+									i(114369),	-- Tormented Fang of Gore
+									i(114368),	-- Tormented Insignia of Dreams
+									i(114370),	-- Tormented Seal of Fortitude
+									i(114366),	-- Tormented Tooth of Ferocity
 								}),
-								n(-3311, { -- Munificent Set
-									["groups"] = {
-										i(114109, { -- Weapon
-											i(115311),
-											i(115314),
-											i(115312),
-											i(115313),
-											i(115316),
-											i(115318),
-											i(115317),
-											i(115315),
-										}),	
-										i(114063, { -- Shoulders
-											i(114397),
-											i(114395),
-											i(114398),
-											i(114396),
-										}),	
-										i(114058, { -- Chest
-											i(114377),
-											i(114375),
-											i(114376),
-											i(114378),
-										}),	
-										i(114057, { -- Bracers
-											i(114372),
-											i(114374),
-											i(114371),
-											i(114373),
-										}),
-										i(114059, { -- Feet
-											i(114380),
-											i(114381),
-											i(114382),
-											i(114379),
-										}),	
-									},
-									["icon"] = "Interface\\Icons\\inv_shoulder_cloth_reputation_c_01",
+								i(114109, { -- Munificent Armament
+									i(115311), -- Munificent Axe
+									i(115314), -- Munificent Dagger
+									i(115312), -- Munificent Greataxe
+									i(115313), -- Munificent Longbow
+									i(115316), -- Munificent Polearm
+									i(115318), -- Munificent Scepter
+									i(115317), -- Munificent Spire
+									i(115315), -- Munificent Warmace
+								}),	
+								i(114066, { -- Munificent Choker
+									i(114417),	-- Choker of Averted Doom
+									i(114416),	-- Goldleaf Bloom
+									i(114415),	-- Gorget of Whirling Blades
+									i(114418),	-- Ripcurrent Chain
+									i(114419),	-- Torq of Noble Primacy
 								}),
-								n(-3312, { -- Turbulent Set
-									["groups"] = {
-										i(114110, { -- Weapon
-											i(115319),
-											i(115322),
-											i(115320),
-											i(115321),
-											i(115324),
-											i(115326),
-											i(115325),
-											i(115323),
-										}),
-										i(114075, { -- Shoulders
-											i(114456),
-											i(114459),
-											i(114458),
-											i(114457),
-										}),
-										
-										i(114070, { -- Chest
-											i(114438),
-											i(114437),
-											i(114439),
-											i(114436),
-										}),	
-										i(114069, { -- Bracers
-											i(114434),
-											i(114435),
-											i(114432),
-											i(114433),
-										}),	
-										i(114071, { -- Feet
-											i(114442),
-											i(114440),
-											i(114443),
-											i(114441),
-										}),	
-									},
-									["icon"] = "Interface\\Icons\\inv_chest_cloth_reputation_c_01",
+								i(114063, { -- Munificent Spaulders
+									i(114395), -- Mantle of Hooded Nightmares
+									i(114396), -- Spaulders of Falling Leaves
+									i(114397), -- Element-Binder Spaulders 
+									i(114398), -- Shoulderguard of Grievous Storms
+								}),	
+								i(114058, { -- Munificent Robes
+									i(114378), -- Robes of Hooded Nightmares
+									i(114375), -- Chestguard of Falling Leaves
+									i(114376), -- Element-Binder Chestguard
+									i(114377), -- Brestplate of Grievous Storms
+								}),	
+								i(114057, { -- Munificent Bracers
+									i(114371), -- Bracers of Hooded Nightmares
+									i(114372), -- Bracers of Falling Leaves
+									i(114373), -- Element-Binder Bracers
+									i(114374), -- Bracers of Grievous Storms
 								}),
-								n(-3313, { -- Grandiose Set
-									["groups"] = {
-										i(114112, { -- Weapons
-											i(115327),
-											i(115330),
-											i(115328),
-											i(115329),
-											i(115332),
-											i(115334),
-											i(115333),
-											i(115331),
-										}),	
-										i(114085, { -- Shoulders
-											i(114520),
-											i(114517),
-											i(114518),
-											i(114519),
-										}),	
-										i(114083, { -- Robes
-											i(114497),
-											i(114499),
-											i(114500),
-											i(114498),
-										}),	
-										i(114082, { -- Bracers
-											i(114494),
-											i(114493),
-											i(114496),
-											i(114495),
-										}),	
-										i(114084, { -- Feet
-											i(114502),
-											i(114504),
-											i(114501),
-											i(114503),
-										}),	
-									},
-									["icon"] = "Interface\\Icons\\inv_chest_cloth_reputation_c_01",
+								i(114059, { -- Munificent Treads
+									i(114379), -- Sandals of Hooded Nightmares
+									i(114380), -- Boots of Falling Leaves
+									i(114381), -- Element-Binder Boots
+									i(114382), -- Greaves of Grievous Storms
+								}),	
+								i(114068, { -- Munificent Trinket
+									i(114430),	-- Munificent Bonds of Fury
+									i(114429),	-- Munificent Censer of Tranquility
+									i(114427),	-- Munificent Emblem of Terror
+									i(114428),	-- Munificent Orb of Ice
+									i(114431),	-- Munificent Soul of Compassion
 								}),
-								i(122674), -- Toy
-								i(118191), -- Toy	
-								i(128310), -- Toy
-								i(128311), -- Mount
-								i(127748), -- Pet
-								garrisonMission(686, {	-- The Consuming Void
-									i(128319, {	-- Void-Shrouded Satchel
-										i(128318),	-- Touch of the Void
-									}),
+								i(114110, { -- Turbulent Armament
+									i(115319), -- Turbulent Axe
+									i(115322), -- Turbulent Dagger
+									i(115320), -- Turbulent Greataxe
+									i(115321), -- Turbulent Longboww
+									i(115324), -- Turbulent Polearm
+									i(115326), -- Turbulent Scepter
+									i(115325), -- Turbulent Spire
+									i(115323), -- Turbulent Warmace
+								}),
+								i(114078, { -- Turbulent Choker
+									i(114477),	-- Arcane Master's Chain
+									i(114476),	-- Beastminder Cabochon
+									i(114480),	-- Chainwrecker Gorget
+									i(114479),	-- Rageflame Choker
+									i(114478),	-- Torq of Soothing Waters
+								}),
+								i(114075, { -- Turbulent Spaulders
+									i(114456), -- Firelash Mantle
+									i(114457), -- Spireflame Spaulders
+									i(114458), -- Spaulders of Elemental Torment
+									i(114459), -- Shoulderguard of Vaulted Skies
+								}),
+								i(114070, { -- Turbulent Robes
+									i(114439), -- Firelash Robes
+									i(114436), -- Spireflame Chestguard
+									i(114437), -- Chestguard of Elemental Torment
+									i(114438), -- Breastplate of Vaulted Skies
+								}),	
+								i(114069, { -- Turbulent Bracers
+									i(114432), -- Firelash Bracers
+									i(114433), -- Spireflame Bracers
+									i(114434), -- Bracers of Elemental Torment
+									i(114435), -- Bracers of Vaulted Skies
+								}),	
+								i(114071, { -- Turbulent Treads
+									i(114440), -- Firelash Sandls
+									i(114441), -- Spireflame Boots
+									i(114442), -- Boots of Elemental Torment
+									i(114443), -- Greaves of Vaulted Skies
+								}),	
+								i(114080, { -- Turbulent Trinket
+									i(114491),	-- Turbulent Emblem
+									i(114489),	-- Turbulent Focusing Crystal
+									i(114490),	-- Turbulent Relic of Mendacity
+									i(114492),	-- Turbulent Seal of Defiance
+									i(114488),	-- Turbulent Vial of 
+								}),
+								i(114112, { -- Grandiose Armament
+									i(115327), -- Grandiose Axe
+									i(115330), -- Grandiose Dagger
+									i(115328), -- Grandiose Greataxe
+									i(115329), -- Grandiose Longbow
+									i(115332), -- Grandiose Polearm
+									i(115334), -- Grandiose Scepter
+									i(115333), -- Grandiose Spire
+									i(115331), -- Grandiose Warmace
+								}),	
+								i(114086, { -- Grandiose Choker
+									i(114538),	-- Bleak Temple Choker
+									i(114539),	-- Dreamsleep Locket
+									i(114537),	-- Gorefeather Pendant
+									i(114541),	-- Lightbender Locket
+									i(114540),	-- Spirewalker's Chain
+								}),
+								i(114085, { -- Grandiose Spaulders
+									i(114520), -- Crazed Bomber's Shoulderguard
+									i(114517), -- Mantle of Volatile Ice
+									i(114518), -- Spaulders of Determined Resolve
+									i(114519), -- Undying Spaulders
+								}),	
+								i(114083, { -- Grandiose Robes
+									i(114497), -- Chestguard of Determined Resolve
+									i(114499), -- Crazed Bomber's Breastplate
+									i(114500), -- Robes of Volatile Ice
+									i(114498), -- Undying Chestguard
+								}),	
+								i(114082, { -- Grandiose Bracers
+									i(114494), -- Bracers of Determined Resolve
+									i(114493), -- Bracers of Volatile Ice
+									i(114496), -- Crazed Bomber's Bracers
+									i(114495), -- Undying Bracers
+								}),	
+								i(114084, { -- Grandiose Treads
+									i(114502), -- Boots of Determined Resolve
+									i(114504), -- Crazed Bomber's Greaves
+									i(114501), -- Sandals of Volatile Ice
+									i(114503), -- Undying Boots 
+								}),	
+								i(114087, { -- Grandiose Trinket
+									i(114552),	-- Grandiose Carnage
+									i(114549),	-- Grandiose Plans
+									i(114550),	-- Grandiose Power
+									i(114551),	-- Grandiose Prescience
+									i(114553),	-- Grandiose Resistance
+								}),
+								i(114052, { -- Gleaming Ring
+									i(112800),	-- Bloodbone Ring
+									i(112799),	-- Loop of Vile Lesions
+									i(112798),	-- Mindsworn Band
+									i(112802),	-- Seal of Sullied Mending
+									i(112801),	-- Signet of Durable Dreams
+								}),
+								i(122674), -- S.E.L.F.I.E. Cameria MkII
+								i(118191), -- Archmage Vargoth's Spare Toy
+								i(128310), -- Burning Blad
+								i(128311), -- Coaalfist Gronnling
+								i(127748), -- Cinder Pup
+								i(128319, {	-- Void-Shrouded Satchel
+									i(128318),	-- Touch of the Void
 								}),
 							},
 							["modelScale"] = 2.5,
+							["crs"] = {
+								80432, -- Garrison Level 1 Command Table
+								86031, -- Garrison Level 2 Command Table
+							},
 						}),
 						n(94398, { -- Fleet Command Table
 							["groups"] = {

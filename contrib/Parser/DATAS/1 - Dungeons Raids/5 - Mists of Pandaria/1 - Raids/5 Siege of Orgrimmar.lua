@@ -28,8 +28,132 @@ _.Instances =
 										i(105817),	-- Siid's Silent Stranglers
 										i(105825),	-- Turtleshell Greatcloak
 										i(105822),	-- Zoid's Molten Gauntlets
+										i(44984),	-- Ammen Vale Lashling
+										i(54436),	-- Blue Clockwork Rocket Bot
+										i(44970),	-- Dun Morogh Cub
+										i(44973),	-- Durotar Scorpion
+										i(67282),	-- Elementium Geode
+										i(44974),	-- Elwynn Lamb
+										i(44982),	-- Enchanted Broom
+										i(64403),	-- Fox Kit
+										i(43698),	-- Giant Sewer Rat
+										i(45002),	-- Mechanopeep
+										i(44980),	-- Mulgore Hatchling
+										i(94295, { 	-- Primal Egg
+											i(94296, {  -- Cracked Primal Egg
+												i(94292), -- Reins of the Black Primal Raptor
+												i(94293), -- Reins of the Green Primal Raptor
+												i(94291), -- Reins of the Red Primal Raptor
+											}),
+										}),
+										i(69992),	-- Shimmering Wyrmling
+										i(44965),	-- Teldrassil Sproutling
+										i(69991),	-- Tiny Sporebat
+										i(44971),	-- Tirisfal Batling
+										i(10360),	-- Black Kingsnake
+										i(29960),	-- Captured Firefly
+										i(8491),	-- Cat Carrier (Black Tabby)
+										i(46398),	-- Cat Carrier (Calico Cat)
+										i(8487),	-- Cat Carrier (Orange Tabby)
+										i(8488),	-- Cat Carrier (Silver Tabby)
+										i(10822),	-- Dark Whelpling
+										i(29953),	-- Golden Dragonhawk Hatchling
+										i(48116),	-- Gundrak Hatchling
+										i(48118),	-- Leaping Hatchling
+										i(48120),	-- Obsidian Hatchling
+										i(8496),	-- Parrot Cage (Cockatiel)
+										i(8492),	-- Parrot Cage (Green Wing Macaw)
+										i(8495),	-- Parrot Cage (Senegal)
+										i(48124),	-- Razormaw Hatchling
+										i(48126),	-- Razzashi Hatchling
 									},
-									["description"] = "Please let us know if you get any of these from this box. Wowhead says they are unavailable but comments have differing reports.",
+									["description"] = "Please let us know if you get any of these from this box. Wowhead says they are unavailable but comments have differing reports. In BfA this will only drop if you are 91-99 as legacy loot mode will cause it to not drop.",
+									["crs"] = {
+										71543, -- Immerseus
+										71479, -- He Softfoot [The Fallen Protectors]
+										71475, -- Rook Stonetoe [The Fallen Protectors]
+										71480, -- Sun Tenderheart [The Fallen Protectors]
+										72276, -- Amalgam of Corruption
+										71734, -- Sha of Pride
+									},
+								}),
+								i(105714, {	-- Coalesced Turmoil
+									["groups"] = {
+										i(105824),	-- Aeth's Swiftcinder Cloak
+										i(105816),	-- Brave Niunai's Cloak
+										i(105812),	-- Cape of the Alpha
+										i(105818),	-- Crimson Gauntlets of Death
+										i(105815),	-- Drape of the Omega
+										i(105823),	-- Gauntlets of Discarded Time
+										i(105813),	-- Kalaena's Arcane Handwraps
+										i(105819),	-- Keengrip Arrowpullers
+										i(105820),	-- Marco's Crackling Gloves
+										i(105821),	-- Romy's Reliable Grips
+										i(105814),	-- Seebo's Sainted Touch
+										i(105817),	-- Siid's Silent Stranglers
+										i(105825),	-- Turtleshell Greatcloak
+										i(105822),	-- Zoid's Molten Gauntlets
+										i(44984),	-- Ammen Vale Lashling
+										i(54436),	-- Blue Clockwork Rocket Bot
+										i(44970),	-- Dun Morogh Cub
+										i(44973),	-- Durotar Scorpion
+										i(67282),	-- Elementium Geode
+										i(44974),	-- Elwynn Lamb
+										i(44982),	-- Enchanted Broom
+										i(64403),	-- Fox Kit
+										i(43698),	-- Giant Sewer Rat
+										i(45002),	-- Mechanopeep
+										i(44980),	-- Mulgore Hatchling
+										i(94295, { 	-- Primal Egg
+											i(94296, {  -- Cracked Primal Egg
+												i(94292), -- Reins of the Black Primal Raptor
+												i(94293), -- Reins of the Green Primal Raptor
+												i(94291), -- Reins of the Red Primal Raptor
+											}),
+										}),
+										i(69992),	-- Shimmering Wyrmling
+										i(44965),	-- Teldrassil Sproutling
+										i(69991),	-- Tiny Sporebat
+										i(44971),	-- Tirisfal Batling
+										i(10360),	-- Black Kingsnake
+										i(29960),	-- Captured Firefly
+										i(8491),	-- Cat Carrier (Black Tabby)
+										i(46398),	-- Cat Carrier (Calico Cat)
+										i(8487),	-- Cat Carrier (Orange Tabby)
+										i(8488),	-- Cat Carrier (Silver Tabby)
+										i(10822),	-- Dark Whelpling
+										i(29953),	-- Golden Dragonhawk Hatchling
+										i(48116),	-- Gundrak Hatchling
+										i(48118),	-- Leaping Hatchling
+										i(48120),	-- Obsidian Hatchling
+										i(8496),	-- Parrot Cage (Cockatiel)
+										i(8492),	-- Parrot Cage (Green Wing Macaw)
+										i(8495),	-- Parrot Cage (Senegal)
+										i(48124),	-- Razormaw Hatchling
+										i(48126),	-- Razzashi Hatchling
+									},
+									["description"] = "Please let us know if you get any of these from this box. Wowhead says they are unavailable but comments have differing reports. In BfA this will only drop if you are 91-99 as legacy loot mode will cause it to not drop.",
+									["crs"] = {
+										72249, -- Galakras
+										71466, -- Iron Juggernaut
+										71859, -- Earthbreaker Haromm [Kor'kron Dark Shaman]
+										71858, -- Wavebindeer Kardris [Kor'kron Dark Shaman]
+										71515, -- General Nazgrim
+										71454, -- Malkorok
+										71889, -- Spoils of Pandari
+										71529, -- Thok the Bloodthirsty
+										71504, -- Siegecrafter Blackfuse
+										71153, -- Hisek the Swarmkeeper [Paragons of the Klaxxi]
+										71160, -- Iyyokuk the Lucid [Paragons of the Klaxxi]
+										71154, -- Ka'roz the Locust [Paragons of the Klaxxi]
+										71156, -- Kaz'tik thee Manipulator [Paragons of the Klaxxi]
+										71161, -- Kil'ruk the Wind-Reaver [Paragons of the Klaxxi]
+										71155, -- Korven the Prime [Paragons of the Klaxxi]
+										71158, -- Rik'kal the Dissector [Paragons of the Klaxxi]
+										71152, -- Skeer the Bloodseaker [Paragons of the Klaxxi]
+										71157, -- Xaril the Poisoned Mind
+										71865, -- Garrosh Hellscream
+									},
 								}),
 							}),
 							ach(8458, {	-- Vale of Eternal Sorrows
@@ -404,47 +528,49 @@ _.Instances =
 									i(112879),	-- Ticking Ebon Detonator
 								})),
 								cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-									i(104165),	-- Kovok (PET!)
-									i( 99675, {	-- Leggings of the Cursed Conqueror
-										i(98980),	-- Greaves of Winged Triumph
-										i(99026),	-- Legguards of Winged Triumph
-										i(98986),	-- Legplates of Winged Triumph
-										i(99021),	-- Leggings of the Ternion Glory
-										i(99025),	-- Legwraps of the Ternion Glory
-										i(99055),	-- Leggings of the Horned Nightmare
-									}),
-									i( 99676, {	-- Leggings of the Cursed Protector
-										i(99081),	-- Legguards of the Unblinking Vigil
-										i(99074),	-- Leggings of Seven Sacred Seals
-										i(99050),	-- Legguards of Seven Sacred Seals
-										i(99070),	-- Legwraps of Seven Sacred Seals
-										i(99090),	-- Leggings of Celestial Harmony
-										i(98984),	-- Legguards of Celestial Harmony
-										i(98990),	-- Legwraps of Celestial Harmony
-										i(99033),	-- Legguards of the Prehistoric Marauder
-										i(99035),	-- Legplates of the Prehistoric Marauder
-									}),
-									i( 99674, {	-- Leggings of the Cursed Vanquisher
-										i(99058),	-- Greaves of Cyclopean Dread
-										i(99039),	-- Legguards of Cyclopean Dread
-										i(98981),	-- Breeches of the Shattered Vale
-										i(98996),	-- Leggings of the Shattered Vale
-										i(99044),	-- Legguards of the Shattered Vale
-										i(99014),	-- Legwraps of the Shattered Vale
-										i(99077),	-- Chronomancer Leggings
-										i(99009),	-- Legguards of the Barbed Assassin
-									}),
-									i(112921),	-- Kil'ruk's Furious Blade
-									i(112920),	-- Korven's Crimson Crescent
-									i(112922),	-- Rik'kal's Bloody Scalpel
-									i(112918),	-- Hisek's Reserve Longbow
-									i(112923),	-- Amber Parasite Wraps
-									i(112919),	-- Chestguard of Toxic Injections
-									i(112914),	-- Bracers of Sonic Projection
-									i(112915),	-- Gauntlets of Insane Calculations
-									i(112916),	-- Iyyokuk's Hereditary Seal
-									i(112917),	-- Kil'ruk's Band of Ascendancy
-									i(112913),	-- Skeer's Bloodsoaked Talisman
+									["groups"] = {
+										i(104165),	-- Kovok (PET!)
+										i( 99675, {	-- Leggings of the Cursed Conqueror
+											i(98980),	-- Greaves of Winged Triumph
+											i(99026),	-- Legguards of Winged Triumph
+											i(98986),	-- Legplates of Winged Triumph
+											i(99021),	-- Leggings of the Ternion Glory
+											i(99025),	-- Legwraps of the Ternion Glory
+											i(99055),	-- Leggings of the Horned Nightmare
+										}),
+										i( 99676, {	-- Leggings of the Cursed Protector
+											i(99081),	-- Legguards of the Unblinking Vigil
+											i(99074),	-- Leggings of Seven Sacred Seals
+											i(99050),	-- Legguards of Seven Sacred Seals
+											i(99070),	-- Legwraps of Seven Sacred Seals
+											i(99090),	-- Leggings of Celestial Harmony
+											i(98984),	-- Legguards of Celestial Harmony
+											i(98990),	-- Legwraps of Celestial Harmony
+											i(99033),	-- Legguards of the Prehistoric Marauder
+											i(99035),	-- Legplates of the Prehistoric Marauder
+										}),
+										i( 99674, {	-- Leggings of the Cursed Vanquisher
+											i(99058),	-- Greaves of Cyclopean Dread
+											i(99039),	-- Legguards of Cyclopean Dread
+											i(98981),	-- Breeches of the Shattered Vale
+											i(98996),	-- Leggings of the Shattered Vale
+											i(99044),	-- Legguards of the Shattered Vale
+											i(99014),	-- Legwraps of the Shattered Vale
+											i(99077),	-- Chronomancer Leggings
+											i(99009),	-- Legguards of the Barbed Assassin
+										}),
+										i(112921),	-- Kil'ruk's Furious Blade
+										i(112920),	-- Korven's Crimson Crescent
+										i(112922),	-- Rik'kal's Bloody Scalpel
+										i(112918),	-- Hisek's Reserve Longbow
+										i(112923),	-- Amber Parasite Wraps
+										i(112919),	-- Chestguard of Toxic Injections
+										i(112914),	-- Bracers of Sonic Projection
+										i(112915),	-- Gauntlets of Insane Calculations
+										i(112916),	-- Iyyokuk's Hereditary Seal
+										i(112917),	-- Kil'ruk's Band of Ascendancy
+										i(112913),	-- Skeer's Bloodsoaked Talisman
+									},
 								})),
 								cr(71865, e(869, {	-- Garrosh Hellscream
 									i(105861),	-- Essence of the Cursed Conqueror

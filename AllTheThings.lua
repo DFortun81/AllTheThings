@@ -2333,15 +2333,15 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 								rightSide:SetText(GetProgressColorText(progress, total));
 								if #items > 0 then
 									self:AddLine("Contains:");
-									if #items < 10 then
+									if #items < 5 then
 										for i,pair in ipairs(items) do
 											self:AddDoubleLine(pair[1], pair[2]);
 										end
 									elseif #parents < 2 then
-										for i=1,math.min(10, #items) do
+										for i=1,math.min(5, #items) do
 											self:AddDoubleLine(items[i][1], items[i][2]);
 										end
-										self:AddLine("And " .. (#items - 10) .. " more...");
+										self:AddLine("And " .. (#items - 5) .. " more...");
 									else
 										for i,j in ipairs(parents) do
 											local title = "  ";

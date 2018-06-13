@@ -6,6 +6,33 @@ _.Zones =
 	m(962, { 	-- Draenor
 		m(1009, {	-- Stormshield
 			["groups"] = {
+				n(-17, {	-- Quests
+					q(36626, { -- Host Howell
+						["groups"] = {
+						},
+						["qg"] = 86065, -- Private Tristan
+						["sourceQuests"] = { 36624 }, -- Ashran Appearance
+					}),
+					q(36629, { -- Inspiring Ashran
+						["groups"] = {
+						},
+						["qg"] = 86069, -- Lieutenant Howell
+						["sourceQuests"] = { 36626 }, -- Host Howell
+					}),
+					q(36630 , { -- A Surly Dwarf
+						["groups"] = {
+						},
+						["qg"] = 86069, -- Lieutenant Howell
+						["sourceQuests"] = { 36629 }, -- Inspiring Ashran
+					}),
+					q(36633, { -- Delvar Ironfist
+						["groups"] = {
+							follower(216), -- Delvar Ironfist
+						},
+						["qg"] = 86084, -- Delvar Ironfist
+						["sourceQuests"] = { 36630 }, -- A Surly Dwarf
+					}),
+				}),
 				na(-2, {	-- Vendors
 					n(87022, {	-- Bob <Enchanting Recipes>
 						i(111922, {		-- Draenor Enchanting
