@@ -21,12 +21,15 @@ _.Instances =
 							["sourceQuests"] = { 29675 },	-- Hey There Dalliah
 						}),
 						faction(932, {	-- The Aldor
-							q(10706, {	-- A Mysterious Portent
-								["groups"] = {
-								},
-								["qg"] = 21962,	-- Udalo
-								["sourceQuests"] = { 10705 },	-- Seer Udalo
-							}),
+							["g"] = {
+								q(10706, {	-- A Mysterious Portent
+									["groups"] = {
+									},
+									["qg"] = 21962,	-- Udalo
+									["sourceQuests"] = { 10705 },	-- Seer Udalo
+								}),
+							},
+							["collectible"] = false,
 						}),
 					}),
 					n(  0, {	-- Zone Drop

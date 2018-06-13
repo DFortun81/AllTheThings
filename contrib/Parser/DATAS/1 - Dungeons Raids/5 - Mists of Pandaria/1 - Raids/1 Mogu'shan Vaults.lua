@@ -35,36 +35,37 @@ _.Instances =
 						["groups"] = {
 							ach(6458, {	-- Guardians of Mogu'shan
 								cr(60047, e(679, {	-- The Stone Guard (60051,60043,59915)
+									i(86741),	-- Dagger of the Seven Stars
+									i(86745),	-- Sixteen-Fanged Crown
 									i(86739),	-- Beads of the Mogu'shi
 									i(86748),	-- Cape of Three Lanterns
-									i(89966),	-- Claws of Amethyst
-									i(89965),	-- Ruby-Linked Girdle
-									i(86747),	-- Jade Dust Leggings
-									i(86746),	-- Stonebound Cinch
-									i(86743),	-- Stoneflesh Leggings
-									i(86745),	-- Sixteen-Fanged Crown
 									i(89964),	-- Stonefang Chestguard
 									i(86740),	-- Stonemaw Armguards
+									i(89966),	-- Claws of Amethyst
+									i(89965),	-- Ruby-Linked Girdle
 									i(86793),	-- Star-Stealer Waistguard
+									i(86746),	-- Stonebound Cinch
+									i(86747),	-- Jade Dust Leggings
+									i(86743),	-- Stoneflesh Leggings
 									i(86744),	-- Heavenly Jade Greatboots
 									i(86742),	-- Jasper Clawfeet
-									i(86741),	-- Dagger of the Seven Stars
 								})),
 								cr(60009, e(689, {	-- Feng the Accursed
+									i(89426),	-- Fan of Fiery Winds
+									i(86757),	-- Hood of Cursed Dreams
+									i(86752),	-- Nullification Greathelm
 									i(86754),	-- Amulet of Seven Curses
+
 									i(89968),	-- Feng's Ring of Dreams
 									i(89967),	-- Feng's Seal of Binding
 									i(86782),	-- Arrow Breaking Windcloak
 									i(86753),	-- Cloak of Peacock Feathers
 									i(86758),	-- Imperial Ghostbinder's Robes
-									i(86757),	-- Hood of Cursed Dreams
 									i(86750),	-- Tomb Raider's Girdle
 									i(86755),	-- Chain of Shadow
 									i(86749),	-- Wildfire Worldwalkers
-									i(86752),	-- Nullification Greathelm
 									i(86751),	-- Bracers of Six Oxen
 									i(86756),	-- Legplates of Sagacious Shadows
-									i(89426),	-- Fan of Fiery Winds
 								})),
 								cr(60143, e(682, {	-- Gara'jal the Spiritbinder
 									i(86767),	-- Circuit of the Frail Soul

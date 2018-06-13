@@ -280,6 +280,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(3.00, i(13075)),	-- Direwing Legguards
 					dr(9.00, i(13013)),	-- Elder Wizard's Mantle
 					dr(5.00, i(13125)),	-- Elven Chain Boots
+					dr(3.00, i( 2564)),	-- Elven Spirit Claws
 					dr(5.00, i(13113)),	-- Feathermoon Headdress
 					dr(5.00, i(13077)),	-- Girdle of Uther
 					dr(3.00, i(13003)),	-- Lord Alexander's Battle Axe

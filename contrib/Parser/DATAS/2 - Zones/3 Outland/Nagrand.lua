@@ -423,48 +423,46 @@ _.Zones =
 					
 					
 					faction(932, {	-- The Aldor
-						q(10641, {	-- Against the Legion
-							["groups"] = {
-							},
-							["qg"] = 18417,	-- Altruis the Sufferer
-							["sourceQuests"] = { 10640 },	-- Altruis
-						}),
-						q(10668, {	-- Against the Illidari
-							["groups"] = {
-							},
-							["qg"] = 18417,	-- Altruis the Sufferer
-							["sourceQuests"] = { 10640 },	-- Altruis
-						}),
-						q(10669, {	-- Against All Odds
-							["groups"] = {
-							},
-							["qg"] = 18417,	-- Altruis the Sufferer
-							["sourceQuests"] = { 10640 },	-- Altruis
-						}),
-						q(10646, {	-- Illidan's Pupil
-							["groups"] = {
-							},
-							["qg"] = 18417,	-- Altruis
-							["sourceQuests"] = { 10641, 10668, 10669 },	-- Against the Legion, Against the Illidari, & Against All Odds
-						}),
-						qdg(q(10649, {	-- The Book of Fel Names
-							["groups"] = {
-							},
-							["qg"] = 18417,	-- Altruis
-							["sourceQuests"] = { 10646 },	-- Illidan's Pupil
-						})),
-						q(10650, {	-- Return to the Aldor
-							["groups"] = {
-							},
-							["qg"] = 18417,	-- Altruis the Sufferer
-							["sourceQuests"] = { 10649 },	-- The Book of Fel Names
-						}),
+						["g"] = {
+							q(10641, {	-- Against the Legion
+								["groups"] = {
+								},
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["sourceQuests"] = { 10640 },	-- Altruis
+							}),
+							q(10668, {	-- Against the Illidari
+								["groups"] = {
+								},
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["sourceQuests"] = { 10640 },	-- Altruis
+							}),
+							q(10669, {	-- Against All Odds
+								["groups"] = {
+								},
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["sourceQuests"] = { 10640 },	-- Altruis
+							}),
+							q(10646, {	-- Illidan's Pupil
+								["groups"] = {
+								},
+								["qg"] = 18417,	-- Altruis
+								["sourceQuests"] = { 10641, 10668, 10669 },	-- Against the Legion, Against the Illidari, & Against All Odds
+							}),
+							qdg(q(10649, {	-- The Book of Fel Names
+								["groups"] = {
+								},
+								["qg"] = 18417,	-- Altruis
+								["sourceQuests"] = { 10646 },	-- Illidan's Pupil
+							})),
+							q(10650, {	-- Return to the Aldor
+								["groups"] = {
+								},
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["sourceQuests"] = { 10649 },	-- The Book of Fel Names
+							}),
+						},
+						["collectible"] = false,
 					}),
-					
-					
-					
-					
-					
 				}),
 				n(-16, { 	-- Rares	
 					n(17144, { -- Goretooth
