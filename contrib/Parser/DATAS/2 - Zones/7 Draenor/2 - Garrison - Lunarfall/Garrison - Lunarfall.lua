@@ -1678,7 +1678,12 @@ _.Zones =
 					}),
 				}),
 				na(-17, { 	-- Quests
-					qa(38356, { -- Bringing the Bass
+					q(36624, { -- Ashran Appearance
+						["groups"] = {
+						},
+						["qg"] = 79953, -- Lieutenant Thorn
+					}),
+					q(38356, { -- Bringing the Bass
 						i(122613, { -- Stash of Dusty Music Rolls
 							i(122209), -- Music Roll: Curse of the Worgen
 							i(122208), -- Music Roll: Exodar
@@ -1690,7 +1695,7 @@ _.Zones =
 							i(122207), -- Tinkertown
 						}),
 					}),									
-					qa(34583, { -- For the Alliance
+					q(34583, { -- For the Alliance
 						i(108908),
 						i(108909),
 						i(108910),
@@ -1700,7 +1705,7 @@ _.Zones =
 						i(108918),
 						i(108919),
 					}),
-					qa(37433, { -- Proving Grounds
+					q(37433, { -- Proving Grounds
 						i(119463),
 						i(119458),
 						i(119462),
