@@ -1845,7 +1845,7 @@ _.Zones =
 										i(114503), -- Undying Boots
 									}),
 								},
-								["description"] = "This satchel is awarded by High Overlord Saurfang on all of the raid quests.",
+								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebear on all of the Garrison Raid Quests.",
 							}),
 							q(37757, { 	-- Arcane Sanctum: Ko'ragh
 								i(123975, { -- Greater Bounty Spoils
