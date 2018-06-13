@@ -22,7 +22,7 @@ _.Zones =
 					q(36709, { -- Burning Beauty
 						["groups"] = {
 						},
-						["qg"]  = 86312, -- Lieutenant Kragil
+						["qg"] = 86312, -- Lieutenant Kragil
 						["sourceQuests"] = { 36708 }, -- Inspiring Ashran
 					}),
 					q(35243, { -- The Dark Lady's Gift
