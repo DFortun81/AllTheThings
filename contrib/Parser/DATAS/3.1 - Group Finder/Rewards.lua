@@ -4,7 +4,7 @@
 
 _.GroupFinder = 
 {
-	i(156683, {	-- Satchel of Helpful Goods [Level 15-60]			
+	i(156683, {			-- Satchel of Helpful Goods [Level 15-60]			
 		["groups"] = {
 			i(51982),	-- Earthbound Boots*
 			un(2, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
@@ -99,7 +99,7 @@ _.GroupFinder =
 		},
 		["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 56-60 range.|r",
 	})),
-	i(156682, {	-- Otherworldy Satchel of Helpful Goods
+	i(156682, {			-- Otherworldy Satchel of Helpful Goods
 		["groups"] = {
 			i(51969),	-- Enumerated Shoulders*
 			i(51972),	-- Enumerated Bracers*
@@ -125,7 +125,7 @@ _.GroupFinder =
 		["lvl"] = 60,
 		-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: unsure about start/end points -- I *think* but am not positive that they opened at 58 and I'm not sure when they become unavailable.  Still available for a 70 character.  Commenting this out until confirmation.
 	}),
-	i(156688, {	-- Icy Satchel of Helpful Goods
+	i(156688, {			-- Icy Satchel of Helpful Goods
 		["groups"] = {
 			i(112348),	-- Snow-Coated Cloth Cap*
 			i(113758),	-- Snow-Coated Cloth Gloves*
@@ -219,7 +219,7 @@ _.GroupFinder =
 		},
 		["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.|r",
 	})),
-	i(156689, {	-- Scorched Satchel of Helpful Goods (80 - ?)
+	i(156689, {			-- Scorched Satchel of Helpful Goods (80 - ?)
 		["groups"] = {
 		   i(113760),	-- Smoldercloth Bracers*
 		   i(113759),	-- Smoldercloth Cap*
@@ -322,7 +322,7 @@ _.GroupFinder =
 		},
 		["description"] = "This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",
 	})),
-	i(156698, {	-- Tranquil Satchel of Helpful Goods
+	i(156698, {			-- Tranquil Satchel of Helpful Goods
 		["groups"] = {
 		   i(113788),	-- Blossoming Belt*
 		   i(113764),	-- Blossoming Cap*
@@ -410,8 +410,8 @@ _.GroupFinder =
 		},
 		["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.|r",	-- Again, saying 89 because at level 90 you can no longer queue for this.
 	})),
-	i(98133, {	-- Greater Cache of Treasures
-		["g"] = {
+	i(98133, {			-- Greater Cache of Treasures
+		["groups"] = {
 			i(92821),	-- Bladesnap Breastplate
 			i(92881),	-- Bladesnap Drape
 			i(92820),	-- Bladesnap Gauntlets
@@ -497,9 +497,9 @@ _.GroupFinder =
 			i(92882),	-- Stormcrier Ring
 		},
 		["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",
-		["lvl"] = 90,
+		["lvl"] = 85,
 	}),
-	un(2, i(92813, {	-- Greater Cache of Treasures
+	un(2, i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
 		["groups"] = {
 			i(92821),	-- Bladesnap Breastplate
 			i(92881),	-- Bladesnap Drape
@@ -517,24 +517,23 @@ _.GroupFinder =
 			un(2, i(89493)),	-- Brewmoon Cowl
 			un(2, i(89494)),	-- Brewmoon Handwraps
 			un(2, i(89495)),	-- Brewmoon Leggings
+			i(89509),	-- Brewmoon Necklace
 			un(2, i(89496)),	-- Brewmoon Robe
 			un(2, i(89497)),	-- Brewmoon Sandals
 			un(2, i(89498)),	-- Brewmoon Shoulderpads
-			un(2, i(89499)),	-- Brewmoon Wristwraps
-			i(89509),	-- Brewmoon Necklace
 			i(89507),	-- Brewmoon Signet
+			un(2, i(89499)),	-- Brewmoon Wristwraps
+			i(92879),	-- Bubblebrew Cloak
 			un(2, i(92870)),	-- Bubblebrew Cord
 			un(2, i(92871)),	-- Bubblebrew Cowl
 			un(2, i(92872)),	-- Bubblebrew Handwraps
 			un(2, i(92873)),	-- Bubblebrew Leggings
+			i(92887),	-- Bubblebrew Necklace
 			un(2, i(92874)),	-- Bubblebrew Robe
 			un(2, i(92875)),	-- Bubblebrew Sandals
 			un(2, i(92876)),	-- Bubblebrew Shoulderpads
-			un(2, i(92877)),	-- Bubblebrew Wristwraps
-			i(92879),	-- Bubblebrew Cloak
-			i(92887),	-- Bubblebrew Necklace
 			i(92885),	-- Bubblebrew Signet
-			i(92877),	-- Bubblebrew Wristwraps
+			un(2, i(92877)),	-- Bubblebrew Wristwraps
 			i(92869),	-- Cordwoven Cord
 			i(92868),	-- Cordwoven Cowl
 			i(92867),	-- Cordwoven Handwraps
@@ -613,7 +612,7 @@ _.GroupFinder =
 			un(2, i(93137)),	-- Scavenged Pandaren Mace
 			i(93144),	-- Scavenged Pandaren Mace
 			i(93132),	-- Scavenged Pandaren Scepter
-			i(93141),	-- Scavenged Pandaren Spear
+			un(2, i(93141)),	-- Scavenged Pandaren Spear
 			i(93131),	-- Scavenged Pandaren Spellblade
 			i(93126),	-- Scavenged Pandaren Staff
 			un(2, i(93129)),	-- Scavenged Pandaren Staff
@@ -637,7 +636,7 @@ _.GroupFinder =
 		-- ["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",
 		["lvl"] = 90,
 	})),
-	i(98134, {	-- Heroic Cache of Treasures
+	i(98134, {			-- Heroic Cache of Treasures
 		["groups"] = {
 			i(98209),	-- Ale-Boiled Bindings
 			i(98203),	-- Ale-Boiled Boots
