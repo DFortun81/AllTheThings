@@ -1712,151 +1712,168 @@ _.Zones =
 					}),
 					n(89763, { 	-- Muradin Bronzebeard
 						["groups"] = {
-							qa(37767, { 	-- Arcane Sanctum: Ko'ragh
-								i(123975, {		-- Greater Bounty Spoils
-									i(114111, {		-- Formidable Armament
-										i(115335),		-- Formidable Axe
-										i(115338),		-- Formidable Dagger
-										i(115336),		-- Formidable Greataxe
-										i(115337),		-- Formidable Longbow
-										i(115340),		-- Formidable Polearm
-										i(115342),		-- Formidable Scepter
-										i(115341),		-- Formidable Spire
-										i(115339),		-- Formidable Warmace
+							i(123975, { -- Greater Bounty Spoils
+								["groups"] = {
+									i(114111, { -- Formidable Armament
+										i(115335), -- Formidable Axe
+										i(115338), -- Formidable Dagger
+										i(115336), -- Formidable Greataxe
+										i(115337), -- Formidable Longbow
+										i(115340), -- Formidable Polearm
+										i(115342), -- Formidable Scepter
+										i(115341), -- Formidable Spire
+										i(115339), -- Formidable Warmace
 									}),
-									i(114088, {		-- Formidable Bracers
-										i(114554),		-- Aerial Acolyte's Bracers
-										i(114557),		-- Crimson Carapace Bracers
-										i(114556),		-- Sickened Scale Bracers
-										i(114555),		-- Yeti-Hide Bracers
+									i(114088, { -- Formidable Bracers
+										i(114554), -- Aerial Acolyte's Bracers
+										i(114557), -- Crimson Carapace Bracers
+										i(114556), -- Sickened Scale Bracers
+										i(114555), -- Yeti-Hide Bracers
 									}),
-									i(119125, {		-- Formidable Cloak
-										i(114607),		-- Bloodstained Miser's Cloak
-										i(114604),		-- Cloak of Blind Focus
-										i(114605),		-- Doomwake Drape
-										i(114606),		-- Fathom-Ripped Cape
-										i(114608),		-- Ultimate Greatcloak
+									i(119125, { -- Formidable Cloak
+										i(114607), -- Bloodstained Miser's Cloak
+										i(114604), -- Cloak of Blind Focus
+										i(114605), -- Doomwake Drape
+										i(114606), -- Fathom-Ripped Cape
+										i(114608), -- Ultimate Greatcloak
 									}),
-									i(119115, {		-- Formidable Gauntlets
-										i(114566),		-- Aerial Acolyte's Gloves
-										i(114569),		-- Crimson Carapace Gauntlets
-										i(114568),		-- Sickened Scale Gauntlets
-										i(114567),		-- Yeti-Hide Gauntlets
+									i(119115, { -- Formidable Gauntlets
+										i(114566), -- Aerial Acolyte's Gloves
+										i(114569), -- Crimson Carapace Gauntlets
+										i(114568), -- Sickened Scale Gauntlets
+										i(114567), -- Yeti-Hide Gauntlets
 									}),
-									i(119121, {		-- Formidable Girdle
-										i(114582),		-- Aerial Acolyte's Cord
-										i(114585),		-- Crimson Carapace Girdle
-										i(114584),		-- Sickened Scale Belt
-										i(114583),		-- Yeti-Hide Belt
+									i(119121, { -- Formidable Girdle
+										i(114582), -- Aerial Acolyte's Cord
+										i(114585), -- Crimson Carapace Girdle
+										i(114584), -- Sickened Scale Belt
+										i(114583), -- Yeti-Hide Belt
 									}),
-									i(119117, {		-- Formidable Hood
-										i(114570),		-- Aerial Acolyte's Hood
-										i(114573),		-- Crimson Carapace Greathelm
-										i(114572),		-- Sickened Scale Helm
-										i(114571),		-- Yeti-Hide Hood
+									i(119117, { -- Formidable Hood
+										i(114570), -- Aerial Acolyte's Hood
+										i(114573), -- Crimson Carapace Greathelm
+										i(114572), -- Sickened Scale Helm
+										i(114571), -- Yeti-Hide Hood
 									}),
-									i(119119, {		-- Formidable Leggings
-										i(114574),		-- Aerial Acolyte's Trousers
-										i(114577),		-- Crimson Carapace Legplates
-										i(114576),		-- Sickened Scale Legguards
-										i(114575),		-- Yeti-Hide Legguards
+									i(119119, { -- Formidable Leggings
+										i(114574), -- Aerial Acolyte's Trousers
+										i(114577), -- Crimson Carapace Legplates
+										i(114576), -- Sickened Scale Legguards
+										i(114575), -- Yeti-Hide Legguards
 									}),
-									i(114089, {		-- Formidable Robes
-										i(114561),		-- Aerial Acolyte's Robes
-										i(114560),		-- Crimson Carapace Breastplate
-										i(114559),		-- Sickened Scale Chestguard
-										i(114558),		-- Yeti-Hide Chestguard
+									i(114089, { -- Formidable Robes
+										i(114561), -- Aerial Acolyte's Robes
+										i(114560), -- Crimson Carapace Breastplate
+										i(114559), -- Sickened Scale Chestguard
+										i(114558), -- Yeti-Hide Chestguard
 									}),
-									i(114091, {		-- Formidable Spaulders
-										i(114578),		-- Aerial Acolyte's Mantle
-										i(114581),		-- Crimson Carapace Shoulderguard
-										i(114580),		-- Sickened Scale Spaulders
-										i(114579),		-- Yeti-Hide Spaulders
+									i(114091, { -- Formidable Spaulders
+										i(114578), -- Aerial Acolyte's Mantle
+										i(114581), -- Crimson Carapace Shoulderguard
+										i(114580), -- Sickened Scale Spaulders
+										i(114579), -- Yeti-Hide Spaulders
 									}),
-									i(114090, {		-- Formidable Treads
-										i(114562),		-- Aerial Acolyte's Sandals
-										i(114565),		-- Crimson Carapace Greaves
-										i(114564),		-- Sickened Scale Boots
-										i(114563),		-- Yeti-Hide Boots
+									i(114090, { -- Formidable Treads
+										i(114562), -- Aerial Acolyte's Sandals
+										i(114565), -- Crimson Carapace Greaves
+										i(114564), -- Sickened Scale Boots
+										i(114563), -- Yeti-Hide Boots
 									}),											
 									i(114112, { 	-- Grandiose Armament
-										i(115327),		-- Grandiose Axe
-										i(115330),		-- Grandiose Dagger
-										i(115328),		-- Grandiose Greataxe
-										i(115329),		-- Grandiose Longbow
-										i(115332),		-- Grandiose Polearm
-										i(115334),		-- Grandiose Scepter
-										i(115333),		-- Grandiose Spire
-										i(115331),		-- Grandiose Warmace
+										i(115327), -- Grandiose Axe
+										i(115330), -- Grandiose Dagger
+										i(115328), -- Grandiose Greataxe
+										i(115329), -- Grandiose Longbow
+										i(115332), -- Grandiose Polearm
+										i(115334), -- Grandiose Scepter
+										i(115333), -- Grandiose Spire
+										i(115331), -- Grandiose Warmace
 									}),
 									i(114082, { 	-- Grandiose Bracers
-										i(114494),		-- Bracers Of Determined Resolve
-										i(114493),		-- Bracers of Volatile Ice
-										i(114496),		-- Crazed Bomber's Bracers
-										i(114495),		-- Undying Bracers
+										i(114494), -- Bracers Of Determined Resolve
+										i(114493), -- Bracers of Volatile Ice
+										i(114496), -- Crazed Bomber's Bracers
+										i(114495), -- Undying Bracers
 									}),
 									i(119124, { 	-- Grandiose Cloak
-										i(114544),		-- Drape of Surging Stars
-										i(114545),		-- Hearthhealer Cloak
-										i(114543),		-- Keen-Eye Forestcloak
-										i(114547),		-- Reinforced Moonsong Cloak
-										i(114546),		-- Warmonger's Bloodcloak
+										i(114544), -- Drape of Surging Stars
+										i(114545), -- Hearthhealer Cloak
+										i(114543), -- Keen-Eye Forestcloak
+										i(114547), -- Reinforced Moonsong Cloak
+										i(114546), -- Warmonger's Bloodcloak
 									}),
 									i(119114, { 	-- Grandiose Gauntlets
-										i(114508),		-- Crazed Bomber's Gauntlets
-										i(114506),		-- Gauntlets of Determined Resolve
-										i(114505),		-- Gloves of Volatile Ice
-										i(114507),		-- Undying Gauntlets
+										i(114508), -- Crazed Bomber's Gauntlets
+										i(114506), -- Gauntlets of Determined Resolve
+										i(114505), -- Gloves of Volatile Ice
+										i(114507), -- Undying Gauntlets
 									}),
 									i(119120, { 	-- Grandiose Girdle
-										i(114522),		-- Belt of Determined Resolve
-										i(114521),		-- Cord of Volatile Ice
-										i(114524),		-- Crazed Bomber's Girdle
-										i(114523),		-- Undying Belt
+										i(114522), -- Belt of Determined Resolve
+										i(114521), -- Cord of Volatile Ice
+										i(114524), -- Crazed Bomber's Girdle
+										i(114523), -- Undying Belt
 									}),
 									i(119116, { 	-- Grandiose Hood
-										i(114512),		-- Crazed Bomber's Greathelm
-										i(114510),		-- Hood of Determined Resolve
-										i(114509),		-- Hood of Volatile Ice
-										i(114511),		-- Undying Helm
+										i(114512), -- Crazed Bomber's Greathelm
+										i(114510), -- Hood of Determined Resolve
+										i(114509), -- Hood of Volatile Ice
+										i(114511), -- Undying Helm
 									}),
 									i(119118, { 	-- Grandiose Leggings
-										i(114516),		-- Crazed Bomber's Legplates
-										i(114514),		-- Legguards of Determined Resolve
-										i(114513),		-- Trousers of Volatile Ice
-										i(114515),		-- Undying Legguards
+										i(114516), -- Crazed Bomber's Legplates
+										i(114514), -- Legguards of Determined Resolve
+										i(114513), -- Trousers of Volatile Ice
+										i(114515), -- Undying Legguards
 									}),
 									i(114083, { 	-- Grandiose Robes
-										i(114497),		-- Chestguard of Determined Resolve
-										i(114499),		-- Crazed Bomber's Breastplate
-										i(114500),		-- Robes of Volatile Ice
-										i(114498),		-- Undying Chestguard
+										i(114497), -- Chestguard of Determined Resolve
+										i(114499), -- Crazed Bomber's Breastplate
+										i(114500), -- Robes of Volatile Ice
+										i(114498), -- Undying Chestguard
 									}),
 									i(114085, { 	-- Grandiose Spaulders
-										i(114520),		-- Crazed Bomber's Shoulderguard
-										i(114517),		-- Mantle of Volatile Ice
-										i(114518),		-- Spaulders of Determined Resolve
-										i(114519),		-- Undying Spaulders
+										i(114520), -- Crazed Bomber's Shoulderguard
+										i(114517), -- Mantle of Volatile Ice
+										i(114518), -- Spaulders of Determined Resolve
+										i(114519), -- Undying Spaulders
 									}),
 									i(114084, { 	-- Grandiose Treads
-										i(114502),		-- Boots of Determined Resolve
-										i(114504),		-- Crazed Bomber's Greaves
-										i(114501),		-- Sandals of Volatile Ice
-										i(114503),		-- Undying Boots
+										i(114502), -- Boots of Determined Resolve
+										i(114504), -- Crazed Bomber's Greaves
+										i(114501), -- Sandals of Volatile Ice
+										i(114503), -- Undying Boots
 									}),
+								},
+								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebear on all of the Garrison Raid Quests.",
+							}),
+							q(37767, { 	-- Arcane Sanctum: Ko'ragh
+								i(123975, { -- Greater Bounty Spoils
 								}),
 							}),
-							qa(37772, { 	-- Blackhand's Crucible: Blackhand
+							q(37772, { 	-- Blackhand's Crucible: Blackhand
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
-							qa(37768, { 	-- Imperator's Rise: Imperator Mar'gok
+							q(37768, { 	-- Imperator's Rise: Imperator Mar'gok
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
-							qa(37771, { 	-- Iron Assembly: Admiral Gar'an
+							q(37771, { 	-- Iron Assembly: Admiral Gar'an
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
-							qa(37769, { 	-- Slagworks: Heart of the Mountain
+							q(37769, { 	-- Slagworks: Heart of the Mountain
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
-							qa(37770, { 	-- The Black Forge: Kromog
+							q(37770, { 	-- The Black Forge: Kromog
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
-							qa(37766, { 	-- Walled City: Brackenspore
+							q(37766, { 	-- Walled City: Brackenspore
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
 						},
 						["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
