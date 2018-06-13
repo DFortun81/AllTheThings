@@ -6,6 +6,33 @@ _.Zones =
 	m(962, { 	-- Draenor
 		m(1011, {	-- Warspear
 			["groups"] = {
+				n(-17, {	-- Quests
+					q(36707, { -- Warspear Welcome
+						["groups"] = {
+						},
+						["qg"] = 86315, -- Stomphoof
+						["sourceQuests"] = { 36706 }, -- Ashran Appearance
+					}),
+					q(36708, { -- Inspiring Ashran
+						["groups"] = {
+						},
+						["qg"] = 86312, -- Lieutenant Kragil
+						["sourceQuests"] = { 36707 }, -- Warspear Welcome
+					}),
+					q(36709, { -- Burning Beauty
+						["groups"] = {
+						},
+						["qg"]  = 86312, -- Lieutenant Kragil
+						["sourceQuests"] = { 36708 }, -- Inspiring Ashran
+					}),
+					q(35243, { -- The Dark Lady's Gift
+						["groups"] = {
+							follower(216), -- Vivianne
+						},
+						["qg"] = 81765, -- Vivianne
+						["sourceQuests"] = { 36709 }, -- Burning Beauty
+					}),
+				}),
 				nh(-2, {	-- Vendors
 					n(86036, {	-- Beska Redtusk <Frostwolf Orcs Quartermaster>
 						--i(118662),	-- Bladespire Relic - Not a Toy, Yet.
