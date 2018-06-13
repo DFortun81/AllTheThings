@@ -1712,8 +1712,8 @@ _.Zones =
 					}),
 					n(89753, { 	-- High Overlord Saurfang
 						["groups"] = {
-							qh(37757, { 	-- Arcane Sanctum: Ko'ragh
-								i(123975, { -- Greater Bounty Spoils
+							i(123975, { -- Greater Bounty Spoils
+								["groups"] = {
 									i(114111, { -- Formidable Armament
 										i(115335), -- Formidable Axe
 										i(115338), -- Formidable Dagger
@@ -1844,20 +1844,36 @@ _.Zones =
 										i(114501), -- Sandals of Volatile Ice
 										i(114503), -- Undying Boots
 									}),
+								},
+								["description"] = "This satchel is awarded by High Overlord Saurfang on all of the raid quests.",
+							}),
+							q(37757, { 	-- Arcane Sanctum: Ko'ragh
+								i(123975, { -- Greater Bounty Spoils
 								}),
 							}),
---[[							
-							qh(37765, { 	-- Blackhand's Crucible: Blackhand
+							q(37765, { -- Blackhand's Crucible: Blackhand
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
-							qh(37758, { 	-- Imperator's Rise: Imperator Mar'gok
+							q(37758, { 	-- Imperator's Rise: Imperator Mar'gok
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
-							qh(37764, { 	-- Iron Assembly: Admiral Gar'an
+							q(37764, { 	-- Iron Assembly: Admiral Gar'an
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
-							qh(37762, { 	-- Slagworks: Heart of the Mountain
+							q(37762, { 	-- Slagworks: Heart of the Mountain
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
-							qh(37763, { 	-- The Black Forge: Kromog
+							q(37763, { 	-- The Black Forge: Kromog
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
-							qh(37756, { 	-- Walled City: Brackenspore
+							q(37756, { 	-- Walled City: Brackenspore
+								i(123975, { -- Greater Bounty Spoils
+								}),
 							}),
 --]]							
 						},
