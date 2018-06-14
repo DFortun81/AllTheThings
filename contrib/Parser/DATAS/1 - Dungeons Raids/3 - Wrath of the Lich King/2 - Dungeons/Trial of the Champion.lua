@@ -34,6 +34,18 @@ _.Instances =
 									i(47243), -- Mark of the Relentless
 									i(47213), -- Abyssal Rune
 								},
+								["crs"] = {
+									34705, -- Marshal Jacob Alerius
+									34702, -- Ambrose Boltspark
+									34701, -- Colosos
+									34657, -- Jaelyne Evensong
+									34703, -- Lana Stouthammer
+									35572, -- Mokra the Skullcrusher
+									35569, -- Eressea Dawnsinger
+									35571, -- Runok Wildmane
+									35570, -- Zul'tore
+									35617, -- Deathstalker Visceri
+								},
 							}),
 							cr(35119, e(635, {	-- Eadric the Pure
 								i(47508), -- Aledar's Battlestar
@@ -138,6 +150,18 @@ _.Instances =
 									i(47248), -- Treads of Dismal Fortune
 									i(47243), -- Mark of the Relentless
 									i(47213), -- Abyssal Rune
+								},
+								["crs"] = {
+									34705, -- Marshal Jacob Alerius
+									34702, -- Ambrose Boltspark
+									34701, -- Colosos
+									34657, -- Jaelyne Evensong
+									34703, -- Lana Stouthammer
+									35572, -- Mokra the Skullcrusher
+									35569, -- Eressea Dawnsinger
+									35571, -- Runok Wildmane
+									35570, -- Zul'tore
+									35617, -- Deathstalker Visceri
 								},
 							}),
 							cr(35119, e(635, {	-- Eadric the Pure
