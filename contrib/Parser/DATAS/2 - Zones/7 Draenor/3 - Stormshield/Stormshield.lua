@@ -6,6 +6,12 @@ _.Zones =
 	m(962, { 	-- Draenor
 		m(1009, {	-- Stormshield
 			["groups"] = {
+				follower(467, { -- Fen Tao
+					["groups"] = {
+					},
+					["creatureID"] = 91483, -- Fen Tao
+					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
+				}),
 				n(-17, {	-- Quests
 					q(36626, { -- Host Howell
 						["groups"] = {
