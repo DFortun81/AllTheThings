@@ -45,7 +45,19 @@ _.Zones =
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qg(25962, qa( 11882)),	-- Playing with Fire
-							}),
+								-- qg(, qa(11781)),	-- Desecrate this Fire!
+								-- qg(, qa(11786)),	-- Desecrate this Fire!
+								-- qg(, qh(28916)),	-- Desecrate this Fire!
+								-- qg(, qa(11732)),	-- Desecrate this Fire!
+								-- qg(, qa(11580)),	-- Desecrate this Fire!
+								-- qg(, qa(11766)),	-- Desecrate this Fire!
+								-- qg(, qh(11581)),	-- Desecrate this Fire!
+								-- qg(, qh(11745)),	-- Desecrate this Fire!
+								-- qg(, qh(11749)),	-- Desecrate this Fire!
+								-- qg(, qa(11755)),	-- Desecrate this Fire!
+								-- qg(, qa(28929)),	-- Honor the Flame
+								-- qg(, qh(11857)),	-- Honor the Flame
+									}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
 						["u"] = 21,
@@ -62,6 +74,9 @@ _.Zones =
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
+							qh(12384),	-- Candy Bucket
+							qa(28968),	-- Candy Bucket
+							q(28967),	-- Candy Bucket
 							}),
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
@@ -86,6 +101,11 @@ _.Zones =
 --]]				
 				}),								
 				n(-25, {	-- Pet Battle
+							-- q(31913, {	-- Everessa
+							-- 	["groups"] = {
+							-- 	},
+							-- 	["qg"] = ,
+							-- }),
 					p(648), 	-- Huge Toad
 					p(422), 	-- Moccasin
 					p(403), 	-- Parrot
@@ -95,196 +115,405 @@ _.Zones =
 					p(418), 	-- Water Snake
 				}),
 				n(-17, {	-- Quests
-					qg(46676, qa(27849, { -- Assault on Stonard
-						i(64623),
-						i(64595),
-						i(64605),
-						i(64614),
-						i(64621),
-					})),
---					qg(, q(27740)),	-- Baba Bogbrew
-					q(27914, {	-- Blessing of the Green Dragonflight
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius (may be outside instance?)
+					ach(4904, { -- Swamp of Sorrows Quests
+						crit(1, { -- Bogpaddle
+							q(27587, {	-- Maliciously Delicious
+								["groups"] = {
+								},
+								["qg"] = 45786,
+								["breadcrumbQuestID"] = { 28569,28570,28675,28677 },
+							}),
+							q(27536, { -- Mostly Harmless
+								["groups"] = {
+									i(64589),
+									i(64599),
+									i(64608),
+								},
+								["qg"] = 45786,
+								["sourceQuests"] = { 27587 },
+							}),
+							q(27656, {	-- Croc-Out
+								["groups"] = {
+								},
+								["qg"] = 45786,
+								["sourceQuests"] = { 27587 },
+							}),
+							q(27597, {	-- Crazy Larry
+								["groups"] = {
+								},
+								["qg"] = 45786,
+								["sourceQuests"] = { 27536,27656 },
+							}),
+							q(27598, {	-- Kill Gil
+								["groups"] = {
+								},
+								["qg"] = 45948,
+								["sourceQuests"] = { 27597 },
+							}),
+							q(27599, { -- Can't Take It With Them
+								["groups"] = {
+									i(64590),
+									i(64600),
+									i(64609),
+									i(64617),
+								},
+								["qg"] = 45948,
+								["sourceQuests"] = { 27597 },
+							}),
+							q(27600, { -- In With a Bang
+								["groups"] = {
+									i(64591),
+									i(64601),
+									i(64610),
+									i(64618),
+								},
+								["qg"] = 45948,
+								["sourceQuests"] = { 27598,27599 },
+							}),
+						}),
+						crit(2, { -- The Bloodmire
+						}),
+						crit(3, { -- The Shifting Mire
+						}),
+						crit(4, { -- The Sunken Temple
+						}),
 					}),
---					qg(, qa(27904)),	-- Breath of Mist
-					qg(45948, q(27599, { -- Can't Take It With Them
-						i(64590),
-						i(64600),
-						i(64609),
-						i(64617),
-					})),
---[[					
-					qh(12384),	-- Candy Bucket
-					qa(28968),	-- Candy Bucket
-					q(28967),	-- Candy Bucket
-					qg(, q(27597)),	-- Crazy Larry
-					qg(, q(27656)),	-- Croc-Out
-					qg(, qa(27851)),	-- Cutting Supply
-					qg(, qa(11781)),	-- Desecrate this Fire!
-					qg(, qa(11786)),	-- Desecrate this Fire!
-					qg(, qh(28916)),	-- Desecrate this Fire!
-					qg(, qa(11732)),	-- Desecrate this Fire!
-					qg(, qa(11580)),	-- Desecrate this Fire!
-					qg(, qa(11766)),	-- Desecrate this Fire!
-					qg(, qh(11581)),	-- Desecrate this Fire!
-					qg(, qh(11745)),	-- Desecrate this Fire!
-					qg(, qh(11749)),	-- Desecrate this Fire!
-					qg(, qa(11755)),	-- Desecrate this Fire!
-					qg(, qa(27840)),	-- Draenethyst Crystals
---]]
-					qg(46010, q(27592, { -- Drinks on the Rocks
-						i(64622),
-						i(64588),
-						i(64598),
-						i(64607),
-						i(64616),
-						i(157012), -- Broken Silversnap Bottle
-					})),
---[[
-					qg(, q(31913)),	-- Everessa
-					qg(, qa( 1393)),	-- Galen's Escape
-					qg(, qa(28675)),	-- Hero's Call: Swamp of Sorrows!
-					qg(, qa(28929)),	-- Honor the Flame
-					qg(, qh(11857)),	-- Honor the Flame
---]]
-					qg(45948, q(27600, { -- In With a Bang
-						i(64591),
-						i(64601),
-						i(64610),
-						i(64618),
-					})),
---[[
-					qg(, q(27598)),	-- Kill Gil
-					qg(, qh(27910)),	-- Last Regrets
---]]
-					q(27704, {	-- Legends of the Sunken Temple
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
+					n(-168, { -- Other Quests
+						sz(782,  1, { -- Misty Valley
+						}),
+						sz(782,  2, { -- The Harborage
+						}),
+						sz(782,  3, { -- Splinterspear Junction
+						}),
+						sz(782,  4, { -- The Shifting Mire
+						}),
+						sz(782,  5, { -- Stonard
+						}),
+						sz(782,  6, { -- Pool of Tears
+						}),
+						sz(782,  7, { -- Stagalbog
+						}),
+						sz(782,  8, { -- Sorrowmurk
+						}),
+						sz(782,  9, { -- Bogpaddle
+						}),
+						sz(782, 10, { -- Misty Reed Strand
+						}),
+						sz(782, 11, { -- Purespring Cavern
+						}),
+						sz(782, 12, { -- Marshtide Watch
+						}),
+						n(-383, { -- Miscellaneous NOTE: This will be removed once quests have been organized
+							qa(27849, { -- Assault on Stonard
+								["groups"] = {
+									i(64623),
+									i(64595),
+									i(64605),
+									i(64614),
+									i(64621),
+								},
+								["qg"] = 46676,
+								["sourceQuests"] = { 27795,27843,27845 },
+							}),
+							q(27740, {	-- Baba Bogbrew
+								["groups"] = {
+								},
+								["qg"] = 45948,
+								["sourceQuests"] = { 27600 },
+							}),
+							q(27914, {	-- Blessing of the Green Dragonflight
+								["groups"] = {
+									i(64596), -- Dream Pendant
+									i(64606), -- Dream Amulet
+									i(64615), -- Dream Medallion
+								},
+								["qg"] = 46071,	-- Lord Itharius (may be outside instance?)
+								["sourceQuests"] = { 27773 },
+							}),
+							qa(27904, {	-- Breath of Mist
+								["groups"] = {
+								},
+								["qg"] = 17127,
+								["sourceQuests"] = { 27875 },
+							}),
+							qa(27851, {	-- Cutting Supply
+								["groups"] = {
+								},
+								["qg"] = 46676,
+								["sourceQuests"] = { 27795,27843,27845 },
+							}),
+							qa(27840, {	-- Draenethyst Crystals
+								["groups"] = {
+								},
+								["qg"] = 18221,
+							}),
+							q(27592, { -- Drinks on the Rocks
+								["groups"] = {
+									i(64622),
+									i(64588),
+									i(64598),
+									i(64607),
+									i(64616),
+									i(157012), -- Broken Silversnap Bottle
+								},
+								["qg"] = 46010,
+							}),
+							-- qa(28675, {	-- Hero's Call: Swamp of Sorrows!
+							-- 	["groups"] = {
+							-- 	},
+							-- 	["qg"] = ,
+							-- }),
+							qh(27910, {	-- Last Regrets
+								["groups"] = {
+								},
+								["qg"] = 47041,
+							}),
+							q(27704, {	-- Legends of the Sunken Temple
+								["groups"] = {
+								},
+								["qg"] = 46071,	-- Lord Itharius
+								["sourceQuests"] = { 27694 },
+							}),
+							qa(27822, { -- Lumbering Oafs
+								["groups"] = {
+									i(64593),
+									i(64603),
+									i(64612),
+								},
+								["qg"] = 46676,
+								["breadcrumbQuestID"] = { 27870 },
+							}),
+							qh(27853, { -- Lumbering Oafs
+								["groups"] = {
+									i(64624),
+									i(64628),
+									i(64631),
+								},
+								["qg"] = 7623,
+								["breadcrumbQuestID"] = { 27870 },
+							}),
+							qh(27856, {	-- Marking the Fallen
+								["groups"] = {
+								},
+								["qg"] = 7623,
+							}),
+							qa(27845, {	-- Marking the Fallen
+								["groups"] = {
+								},
+								["qg"] = 46676,
+								["sourceQuests"] = { 27821,27822 },
+							}),
+							q(27691, {	-- Marshfin Madness
+								["groups"] = {
+								},
+								["qg"] = 46172,
+							}),
+							qh(27906, {	-- Neeka Bloodscar
+								["groups"] = {
+								},
+								["qg"] = 7623,
+							}),
+							qh(28553, {	-- Okrilla and the Blasted Lands
+								["groups"] = {
+								},
+								["qg"] = 7623,
+								["sourceQuests"] = { 27196 },
+							}),
+							qa(27919, {	-- Onward to the Blasted Lands
+								["groups"] = {
+								},
+								["qg"] = 17127,
+							}),
+							qa(27821, {	-- Orcs and Humans
+								["groups"] = {
+								},
+								["qg"] = 46676,
+								["breadcrumbQuestID"] = { 27870 },
+							}),
+							qh(27852, {	-- Orcs and Humans
+								["groups"] = {
+								},
+								["qg"] = 7623,
+							}),
+							q(27694, {	-- Pool of Tears
+								["groups"] = {
+								},
+								["qg"] = 46071,	-- Lord Itharius
+								["breadcrumbQuestID"] = { 27869 },
+							}),
+							qh(27907, {	-- Prayerblossom
+								["groups"] = {
+								},
+								["qg"] = 47041,
+							}),
+							qa(27875, {	-- Prayerblossom
+								["groups"] = {
+								},
+								["qg"] = 17127,
+							}),
+							qa(27843, {	-- Reinforcements Denied
+								["groups"] = {
+								},
+								["qg"] = 46676,
+								["sourceQuests"] = { 27821,27822 },
+							}),
+							qh(27855, {	-- Reinforcements Denied
+								["groups"] = {
+								},
+								["qg"] = 7623,
+							}),
+							qa(24913, {	-- Remember the Light
+								["groups"] = {
+									i(64597), -- Light's Embrace
+								},
+								["qg"] = 17127,
+								["sourceQuests"] = { 27902 },
+							}),
+							qh(27916, {	-- Ruag's Report
+								["groups"] = {
+								},
+								["qg"] = 47041,
+								["sourceQuests"] = { 27911 },
+							}),
+							qh(27908, {	-- Secrets of the Mire
+								["groups"] = {
+								},
+								["qg"] = 47041,
+							}),
+							qa(27876, {	-- Secrets of the Mire
+								["groups"] = {
+								},
+								["qg"] = 17127,
+							}),
+							q(27818, {	-- Slithering Signs
+								["groups"] = {
+								},
+								["qg"] = 46172,
+								["sourceQuests"] = { 27757 },
+							}),
+							q(27705, {	-- Step One: The Priestess
+								["groups"] = {
+								},
+								["qg"] = 46071,	-- Lord Itharius
+								["sourceQuests"] = { 27704 },
+							}),
+							q(27773, {	-- Step Three: Prophet
+								["groups"] = {
+								},
+								["qg"] = 46071,	-- Lord Itharius
+								["sourceQuests"] = { 27768 },
+							}),
+							q(27768, {	-- Step Two: The Bloodletter
+								["groups"] = {
+								},
+								["qg"] = 46071,	-- Lord Itharius
+								["sourceQuests"] = { 27705 },
+							}),
+							q(27663, {	-- Tastes Like Strider
+								["groups"] = {
+								},
+								["qg"] = 46182,
+								["sourceQuests"] = { 27587 },
+							}),
+							q(27757, { -- The Darkest Depths
+								["groups"] = {
+									i(64592),
+									i(64602),
+									i(64611),
+									i(64619),
+								},
+								["qg"] = 46172,
+								["sourceQuests"] = { 27691 },
+							}),
+							q(27869, {	-- The Dragon and the Temple
+								["groups"] = {
+								},
+								["qg"] = 46172,	-- Baba Bogbrew
+								["sourceQuests"] = { 27818 },
+							}),
+							qa(27918, {	-- The Harborage
+								["groups"] = {
+								},
+								["qg"] = 18221,
+								["sourceQuests"] = { 27840,27860 },
+							}),
+							q(27915, {	-- The Heart of the Temple
+								["groups"] = {
+								},
+								["qg"] = 46071,	-- Lord Itharius
+								["sourceQuests"] = { 27914 },
+							}),
+							qa(27860, {	-- The Lost Ones
+								["groups"] = {
+								},
+								["qg"] = 18221,
+							}),
+							qa(27902, {	-- The Purespring
+								["groups"] = {
+								},
+								["qg"] = 17127,
+								["sourceQuests"] = { 27875,27876 },
+							}),
+							qh(27909, {	-- The Purespring
+								["groups"] = {
+								},
+								["qg"] = 47041,
+							}),
+							qa(27795, { -- Tides of Darkness
+								["groups"] = {
+									i(64594),
+									i(64620),
+									i(64613),
+									i(64604),
+									i(157013), -- Ogre Mage Club
+								},
+								["qg"] = 46676,
+								["sourceQuests"] = { 27821,28722 },
+							}),
+							qh(27854, { -- Tides of Darkness
+								["groups"] = {
+									i(64625),
+									i(64634),
+									i(64632),
+									i(64629),
+									i(157013), -- Ogre Mage Club
+								},
+								["qg"] = 7623,
+							}),
+							qa(27870, {	-- To Marshtide Watch
+								["groups"] = {
+								},
+								["qg"] = 46071,	-- Lord Itharius
+								["sourceQuests"] = { 27914 },
+							}),
+							qh(27871, {	-- To Stonard
+								["groups"] = {
+								},
+								["qg"] = 46071,	-- Lord Itharius
+							}),
+							-- qh(28677, {	-- Warchief's Command: Swamp of Sorrows!
+							-- 	["groups"] = {
+							-- 	},
+							-- 	["qg"] = ,
+							-- }),
+							qh(27857, { -- We're Under Attack!
+								["groups"] = {
+									i(64636),
+									i(64626),
+									i(64630),
+									i(64633),
+									i(64635),
+								},
+								["qg"] = 7623,
+							}),
+							qh(27911, {	-- With Dying Breath
+								["groups"] = {
+									i(64627), -- Dying Breath
+								},
+								["qg"] = 47041,
+							}),
+						}),
 					}),
-					qg(46676, qa(27822, { -- Lumbering Oafs
-						i(64593),
-						i(64603),
-						i(64612),
-					})),
-					qg(7623, qh(27853, { -- Lumbering Oafs
-						i(64624),
-						i(64628),
-						i(64631),
-					})),
---[[					
-					qg(, q(27587)),	-- Maliciously Delicious
-					qg(, qh(27856)),	-- Marking the Fallen
-					qg(, qa(27845)),	-- Marking the Fallen
-					qg(, q(27691)),	-- Marshfin Madness
---]]
-					qg(45786, q(27536, { -- Mostly Harmless
-						i(64589),
-						i(64599),
-						i(64608),
-					})),
---[[					
-					qg(, qh(27906)),	-- Neeka Bloodscar
-					qg(, q(1392)),	-- Noboru the Cudgel
-					qg(, qh(28553)),	-- Okrilla and the Blasted Lands
-					qg(, qa(27919)),	-- Onward to the Blasted Lands
-					qg(, qa(27821)),	-- Orcs and Humans
-					qg(, qh(27852)),	-- Orcs and Humans
-					qg(, qa(11882)),	-- Playing with Fire
---]]
-					q(27694, {	-- Pool of Tears
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
---[[
-					qg(, qh(27907)),	-- Prayerblossom
-					qg(, qa(27875)),	-- Prayerblossom
-					qg(, qa(27843)),	-- Reinforcements Denied
-					qg(, qh(27855)),	-- Reinforcements Denied
-					qg(, qa(24913)),	-- Remember the Light
-					qg(, qh(27916)),	-- Ruag's Report
-					qg(, qh(27908)),	-- Secrets of the Mire
-					qg(, qa(27876)),	-- Secrets of the Mire
-					qg(, q(27818)),	-- Slithering Signs
---]]
-					q(27705, {	-- Step One: The Priestess
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
-					q(27773, {	-- Step Three: Prophet
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
-					q(27768, {	-- Step Two: The Bloodletter
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
---[[
-					qg(, q(27663)),	-- Tastes Like Strider
-					qg(, qh(28570)),	-- The Bogpaddle Bullet
-					qg(, qa(28569)),	-- The Bogpaddle Bullet
---]]
-					qg(46172, q(27757, { -- The Darkest Depths
-						i(64592),
-						i(64602),
-						i(64611),
-						i(64619),
-					})),
-					q(27869, {	-- The Dragon and the Temple
-						["groups"] = {
-						},
-						["qg"] = 46172,	-- Baba Bogbrew
-					}),
---					qg(, qa(27918)),	-- The Harborage
-					q(27915, {	-- The Heart of the Temple
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
---[[
-					qg(, qa(27860)),	-- The Lost Ones
-					qg(, qa(27902)),	-- The Purespring
-					qg(, qh(27909)),	-- The Purespring
---]]					
-					qg(46676, qa(27795, { -- Tides of Darkness
-						i(64594),
-						i(64620),
-						i(64613),
-						i(64604),
-						i(157013), -- Ogre Mage Club
-					})),
-					qg(7623, qh(27854, { -- Tides of Darkness
-						i(64625),
-						i(64634),
-						i(64632),
-						i(64629),
-						i(157013), -- Ogre Mage Club
-					})),
-					qa(27870, {	-- To Marshtide Watch
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
-					qh(27871, {	-- To Stonard
-						["groups"] = {
-						},
-						["qg"] = 46071,	-- Lord Itharius
-					}),
---					qg(, qh(28677)),	-- Warchief's Command: Swamp of Sorrows!
-					qg(7623, qh(27857, { -- We're Under Attack!
-						i(64636),
-						i(64626),
-						i(64630),
-						i(64633),
-						i(64635),
-					})),
---					qg(, qh(27911)),	-- With Dying Breath
 				}),
 				n(-16, {	-- Rares	
 					n(14445, { 	-- Captain Wyrmak
