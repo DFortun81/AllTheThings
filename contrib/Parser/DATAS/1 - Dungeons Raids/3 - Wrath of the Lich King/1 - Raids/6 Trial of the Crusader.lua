@@ -164,7 +164,7 @@ _.Instances =
 								a(i(47700)),	-- Loop of the Twin Val'kyr
 							},
 							["crs"] = {
-								34497, -- Fjola Lightbane	
+								34496, -- Eydis Darkbane	
 							},
 						})),
 						cr(34564, e(1623, {	-- Anub'arak
@@ -749,7 +749,7 @@ _.Instances =
 								a(i(47115)),	-- Death's Verdict
 							},
 							["crs"] = {
-								34497, -- Fjola Lightbane	
+								34496, -- Eydis Darkbane	
 							},
 						})),
 						cr(34564, e(1623, {	-- Anub'arak
