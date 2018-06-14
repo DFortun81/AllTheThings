@@ -283,56 +283,56 @@ _.Zones =
 								["qg"] = 48568,	-- Eitrigg
 								["sourceQuests"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
 							}),
-							qa( 28202, {	-- A Perfect Costume
+							q( 28202, {	-- A Perfect Costume
 								["groups"] = {
 								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 3, 29 },	-- Dwarf, Void Elf
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
-							qa( 28203, {	-- A Perfect Costume
+							q( 28203, {	-- A Perfect Costume
 								["groups"] = {
 								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 11, 22 },	-- Draenei, Worgen, Lightforged Draenei
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
-							qa( 28204, {	-- A Perfect Costume
+							q( 28204, {	-- A Perfect Costume
 								["groups"] = {
 								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 7 },	-- Gnome
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
-							qa( 28205, {	-- A Perfect Costume
+							q( 28205, {	-- A Perfect Costume
 								["groups"] = {
 								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 4 },	-- Night Elf
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
-							qh( 28428, {	-- A Perfect Costume
+							q( 28428, {	-- A Perfect Costume
 								["groups"] = {
 								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 2, 5 },	-- Orc, Undead
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
-							qh( 28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
+							q( 28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
 								["groups"] = {
 								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 6, 26, 28 },	-- Tauren, Pandaren, Highmountain Tauren (UNCONFIRMED)
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
-							qh( 28430, {	-- A Perfect Costume
+							q( 28430, {	-- A Perfect Costume
 								["groups"] = {
 								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 9 },	-- Goblin
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
-							qh( 28431, {	-- A Perfect Costume
+							q( 28431, {	-- A Perfect Costume
 								["groups"] = {
 								},
 								["qg"] = 48001,	-- Thelaron Direneedle
@@ -453,6 +453,18 @@ _.Zones =
 								["qg"] = 48133,	-- General Thorg'izog
 								["sourceQuests"] = { 28437 },	-- General Thorg'izog
 							}),
+							qa(28278, {	-- I Am the Law and I Am the Lash
+								["groups"] = {
+								},
+								["qg"] = 48133,	-- General Thorg'izog
+								["sourceQuests"] = { 28266 },	-- Trial by Magma
+							}),
+							qh(28439, {	-- I Am the Law and I Am the Lash
+								["groups"] = {
+								},
+								["qg"] = 48133,	-- General Thorg'izog
+								["sourceQuests"] = { 28438 },	-- Trial by Magma
+							}),
 							qa(28279, {	-- Abuse of Power
 								["groups"] = {
 								},
@@ -483,6 +495,12 @@ _.Zones =
 							}),
 						}),
 						crit(4, { -- Anticipation (28326)
+							qa(28310, {	-- Morgan's Vigil
+								["groups"] = {
+								},
+								["qg"] = 48110,	-- Colonel Troteman
+								["sourceQuests"] = { 28286 },	-- Enough Damage for One Day
+							}),
 							qh(28442, {	-- Flame Crest
 								["groups"] = {
 								},
@@ -684,24 +702,75 @@ _.Zones =
 						}),
 					}),
 					n(-168, { -- Other Quests
-						sz(775, 1, { -- Dreadmaul Rock
-						}),
+						-- sz(775, 1, { -- Dreadmaul Rock
+						-- }),
 						sz(775, 2, { -- Morgan's Vigil
+							qdg(qa(27471, {	-- Blackrock Anomaly
+								["groups"] = {
+								},
+								["qg"] = 9562,	-- Hellendis Riverhorn
+							})),
+							qa(28569, {	-- The Bogpaddle Bullet (mutually exclusive with "Hero's Call: Swamp of Sorrows!")
+								["groups"] = {
+								},
+								["qg"] = 9177,	-- Oralius
+								["isBreadcrumb"] = true,
+							}),
+							qa(28415, {	-- SEVEN! YUP!
+								["groups"] = {
+									i(64554),	-- Gor'Tesh's Boots
+									i(64553),	-- Flamefly Spaulders
+									i(64552),	-- Belly Rubbers
+									i(66080),	-- PET! Tiny Flamefly
+								},
+								["qg"] = 9177,	-- Oralius
+								["sourceQuests"] = { 28310 },	-- Morgan's Vigil
+							}),
 						}),
-						sz(775, 3, { -- Terror Wing Path
+						-- sz(775, 3, { -- Terror Wing Path
+						-- }),
+						-- sz(775, 4, { -- Blackrock Pass
+						-- }),
+						sz(775, 5, { -- Ruins of Thaurissan NOTE: Should be Flame Crest
+							qh(28570, {	-- The Bogpaddle Bullet (mutually exclusive with "Warchief's Command: Swamp of Sorrows!")
+								["groups"] = {
+								},
+								["qg"] = 10260,	-- Kibler
+								["lvl"] = 40,
+								["isBreadcrumb"] = true,
+							}),
+							qh(28491, {	-- Not Fireflies, Flameflies
+								["groups"] = {
+									i(64558),	-- Lava Boots
+									i(64557),	-- Flamefly Spaulders
+									i(64556),	-- Petting Gloves
+									i(66080),	-- PET! Tiny Flamefly
+								},
+								["qg"] = 10260,	-- Kibler
+								["sourceQuests"] = { 28442 },	-- Flame Crest
+							}),
 						}),
-						sz(775, 4, { -- Blackrock Pass
-						}),
-						sz(775, 5, { -- Ruins of Thaurissan
-						}),
-						sz(775, 6, { -- Black Tooth Hovel
-						}),
+						-- sz(775, 6, { -- Black Tooth Hovel
+						-- }),
 						sz(775, 7, { -- Blackrock Stronghold
+							i(142344, {	-- Broken Axe Blade
+								["groups"] = {
+									q(44926, {	-- A Familiar Axe to Grind
+										q(44927, {	-- Worth Its Weight in Steel
+											i(142346, {	-- Plans: Bleakwood Hew
+												i(12769),	-- Bleakwood Hew
+											}),
+										}),
+									}),
+								},
+								["requiredSkill"] = 164,	-- Blacksmithing
+								["description"] = "The Broken Axe Blade is dropped by the mobs in and around Blackrock Stronghold in Burning Steppes.|r",
+							}),
 						}),
-						sz(775, 8, { -- The Whelping Downs
-						}),
-						sz(775, 9, { -- Altar of Storms
-						}),
+						-- sz(775, 8, { -- The Whelping Downs
+						-- }),
+						-- sz(775, 9, { -- Altar of Storms
+						-- }),
 						sz(775, 10, { -- Blackrock Mountain
 							qdg(q(7848, {	-- Attunement to the Core
 								["groups"] = {
@@ -716,24 +785,6 @@ _.Zones =
 						o(207303, {	-- Adventure Board
 							qdg(qh(28069)),	-- Adventurers Wanted: Blackrock Depths
 						}), --]]					
-						qdg(qa(27471, {	-- Blackrock Anomaly
-							["groups"] = {
-							},
-							["qg"] = 9562,	-- Hellendis Riverhorn
-						})),
-						i(142344, {	-- Broken Axe Blade
-							["groups"] = {
-								q(44926, {	-- A Familiar Axe to Grind
-									q(44927, {	-- Worth Its Weight in Steel
-										i(142346, {	-- Plans: Bleakwood Hew
-											i(12769),	-- Bleakwood Hew
-										}),
-									}),
-								}),
-							},
-							["requiredSkill"] = 164,	-- Blacksmithing
-							["description"] = "The Broken Axe Blade is dropped by the mobs in and around Blackrock Stronghold in Burning Steppes.|r",
-						}),
 	--[[				qdg(qg(9563, qa(27469))),	-- Friends on The Other Side (Alliance NPC doesn't seem to offer the quest - marked Horde NPC as "q" instead of "qh")
 							["groups"] = {
 							},
@@ -744,57 +795,6 @@ _.Zones =
 							},
 							["qg"] = 56899,	-- Ragged Jong
 						})),
-						qa(28278, {	-- I Am the Law and I Am the Lash
-							["groups"] = {
-							},
-							["qg"] = 48133,	-- General Thorg'izog
-							["sourceQuests"] = { 28266 },	-- Trial by Magma
-						}),
-						qh(28439, {	-- I Am the Law and I Am the Lash
-							["groups"] = {
-							},
-							["qg"] = 48133,	-- General Thorg'izog
-							["sourceQuests"] = { 28438 },	-- Trial by Magma
-						}),
-						qa(28310, {	-- Morgan's Vigil
-							["groups"] = {
-							},
-							["qg"] = 48110,	-- Colonel Troteman
-							["sourceQuests"] = { 28286 },	-- Enough Damage for One Day
-						}),
-						qh(28491, {	-- Not Fireflies, Flameflies
-							["groups"] = {
-								i(64558),	-- Lava Boots
-								i(64557),	-- Flamefly Spaulders
-								i(64556),	-- Petting Gloves
-								i(66080),	-- PET! Tiny Flamefly
-							},
-							["qg"] = 10260,	-- Kibler
-							["sourceQuests"] = { 28442 },	-- Flame Crest
-						}),
-						qa(28415, {	-- SEVEN! YUP!
-							["groups"] = {
-								i(64554),	-- Gor'Tesh's Boots
-								i(64553),	-- Flamefly Spaulders
-								i(64552),	-- Belly Rubbers
-								i(66080),	-- PET! Tiny Flamefly
-							},
-							["qg"] = 9177,	-- Oralius
-							["sourceQuests"] = { 28310 },	-- Morgan's Vigil
-						}),
-						qa(28569, {	-- The Bogpaddle Bullet (mutually exclusive with "Hero's Call: Swamp of Sorrows!")
-							["groups"] = {
-							},
-							["qg"] = 9177,	-- Oralius
-							["isBreadcrumb"] = true,
-						}),
-						qh(28570, {	-- The Bogpaddle Bullet (mutually exclusive with "Warchief's Command: Swamp of Sorrows!")
-							["groups"] = {
-							},
-							["qg"] = 10260,	-- Kibler
-							["lvl"] = 40,
-							["isBreadcrumb"] = true,
-						}),
 					}),
 				}),
 				n(-16, { 	-- Rares	
