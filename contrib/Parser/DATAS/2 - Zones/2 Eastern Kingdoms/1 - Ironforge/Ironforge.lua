@@ -575,8 +575,14 @@ _.Zones =
 					qg(16817, qa( 9365, {	-- A Thief's Reward
 						i(23323),	-- Crown of the Fire Festival (reportedly transmoggable since 6.2.1)
 					})),
+					qa( 6625, {	-- Alliance Trauma
+						["g"] = {
+						},
+						["qg"] = 5150,	-- Nissa Firestone
+						["isBreadcrumb"] = true,	-- for Triage
+						["requiredSkill"] = 129,	-- First Aid
+					}),
 --[[
-					qp356(qg(5150, qa( 6625))),	-- Alliance Trauma
 					qg(23127, qa(27270, {	-- An Audience with the Farseer
 						["groups"] = {
 						},
