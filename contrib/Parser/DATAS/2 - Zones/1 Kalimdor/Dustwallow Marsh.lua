@@ -125,16 +125,27 @@ _.Zones =
 						["qg"] = 4794,	-- Morgan Stern
 						["sourceQuests"] = { 1204 },	-- Mudrock Soup and Bugs
 					}),
-					
-					
 					qa(27214, {	-- A Disturbing Development (bcrumb quest for 27234)
 						["g"] = {
 						},
 						["qg"] = 23951,	-- Lieutenant Aden
 						["sourceQuests"] = { 27213 },	-- The End of the Deserters
 					}),
-
-
+					qa(27425, {	-- A Grim Connection
+						["g"] = {
+						},
+						["qg"] = 4944,	-- Captain Garran Vimes
+						["sourceQuests"] = { 27288 },	-- The Deserters
+					}),
+					qa(27427, {	-- Arms of the Grimtotems
+						["g"] = {
+							i(33264),	-- Glowing Tourmaline Ring
+							i(33268),	-- Bone Dirk
+							i(57837),	-- Biting Greataxe
+						},
+						["qg"] = 23568,	-- Captain Darill
+						["sourceQuests"] = { 27425 },	-- A Grim Connection
+					}),
 					qh( 1168, {	-- Army of the Black Dragon
 						["g"] = {
 							i(10702),	-- Enormous Ogre Boots
@@ -142,39 +153,29 @@ _.Zones =
 						},
 						["qg"] = 4502,	-- Tharg
 					}),
-					
-
 					qh(26682, {	-- A Shambling Threat (awarded "Wild Threats" criteria)
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
 						["breadcrumbQuestID"] = { 28554 },	-- Warchief's Command: Dustwallow Marsh!
 					}),
-
-					
 					q( 27408, {	-- Banner of the Stonemaul
 						["g"] = {
 						},
 						["qg"] = 23579,	-- Brogg
 						["sourceQuests"] = { 27407 },	-- Bloodfen Feathers
 					}),
-					
-					
 					q( 27407, {	-- Bloodfen Feathers
 						["g"] = {
 						},
 						["qg"] = 23579,	-- Brogg
 					}),
-					
-					
 					qa(27247, {	-- Captain Vimes
 						["g"] = {
 						},
 						["qg"] = 23951,	-- Lieutenant Aden
 						["sourceQuests"] = { 27246 },	-- The Orc Report
 					}),
-					
-					
 					q( 27413, {	-- Catch a Dragon by the Tail
 						["g"] = {
 							i( 33235),	-- Journeyman's Epaulets
@@ -183,8 +184,6 @@ _.Zones =
 						},
 						["qg"] = 23570,	-- Gizzix Grimegurgle
 					}),
-					
-					
 					qh(27418, {	-- Challenge Overlord Mok'Morokk (awarded "Challening the Overlord" criteria + overall quest achievement for the zone)
 						["g"] = {
 							i( 57846),	-- Overlord's Trophy Shoulders
@@ -196,8 +195,6 @@ _.Zones =
 						["qg"] = 4500,	-- Overlord Mok'Morokk
 						["sourceQuests"] = { 27415 },	-- The Brood of Onyxia (#3)
 					}),
-					
-					
 					q( 27411, {	-- Challenge to the Black Dragonflight (awarded "The Challenge of the Stonemaul" criteria)
 						["g"] = {
 							i(33231),	-- Oversized Stonemaul Hood
@@ -207,15 +204,11 @@ _.Zones =
 						["qg"] = 23579,	-- Brogg
 						["sourceQuests"] = { 27410 },	-- Spirits of Stonemaul Hold
 					}),
-					
-					
 					qh(11213, {	-- Check Up on Tabetha
 						["g"] = {
 						},
 						["qg"] = 4791,	-- Nazeer Bloodpike
 					}),
-
-
 					q( 27190, {	-- Cleansing Witch Hill
 						["g"] = {
 							i( 33229),	-- Mordant's Travel Tunic
@@ -226,8 +219,12 @@ _.Zones =
 						["qg"] = 23843,	-- Mordant Grimsby
 						["sourceQuests"] = { 27189 },	-- The Witch's Bane
 					}),
-					
-					
+					qa(27426, {	-- Confirming the Suspicion
+						["g"] = {
+						},
+						["qg"] = 23568,	-- Captain Darill
+						["sourceQuests"] = { 27425 },	-- A Grim Connection
+					}),
 					q( 27347, {	-- Corrosion Prevention
 						["g"] = {
 							i( 33233),	-- Cobalt-Threaded Gloves
@@ -238,38 +235,34 @@ _.Zones =
 						},
 						["qg"] = 23797,	-- Moxie Steelgrille
 					}),
-					
-					
+					qa(27286, {	-- Daelin's Men
+						["g"] = {
+						},
+						["qg"] = 4948,	-- Adjutant Tesoran
+						["sourceQuests"] = { 27264 },	-- Lieutenant Paval Reethe
+					}),
 					qh(25051, {	-- Darkmist Extermination
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
 					}),
-					
-
 					qa(27218, {	-- Dastardly Denizens of the Deep
 						["g"] = {
 						},
 						["qg"] = 23892,	-- Babs Fizzletorque
 						["sourceQuests"] = { 27217 },	-- Thresher Oil
 					}),
-					
-					
 					qa(27234, {	-- Defias in Dustwallow?
 						["g"] = {
 						},
 						["qg"] = 5086,	-- Captain Wymor
 					}),
-					
-					
 					q( 11208, {	-- Delivery for Drazzit
 						["g"] = {
 						},
 						["qg"] = 23797,	-- Moxie Steelgrille
 						["sourceQuests"] = { 27348 },	-- Secure the Cargo!
 					}),
-					
-					
 					q( 27340, {	-- Direhorn Raiders
 						["g"] = {
 							i( 33240),	-- Grimtotem Earthbinder's Tunic
@@ -280,30 +273,22 @@ _.Zones =
 						},
 						["qg"] = 23600,	-- Apprentice Morlann
 					}),
-
-					
 					qa(27212, {	-- Discrediting the Deserters
 						["g"] = {
 						},
 						["qg"] = 23566,	-- Calia Hastings
 						["sourceQuests"] = { 27211 },	-- Propaganda War
 					}),
-					
-					
 					q( 11211, {	-- Help for Mudsprocket (mutually exclusive with "Help Mudsprocket")
 						["g"] = {
 						},
 						["qg"] = 6546,	-- Tabetha
 					}),
-					
-					
 					qh(11215, {	-- Help Mudsprocket
 						["g"] = {
 						},
 						["qg"] = 4791,	-- Nazeer Bloodpike
 					}),
-					
-
 					q( 27191, {	-- Hungry as an Ogre!
 						["g"] = {
 							i(  9518),	-- Mud's Crushers
@@ -313,8 +298,6 @@ _.Zones =
 						["qg"] = 4792,	-- "Swamp Eye" Jarl
 						["sourceQuests"] = { 27184 },	-- Jarl Needs Eyes
 					}),
-					
-					
 					qh(27414, {	-- Identifying the Brood
 						["g"] = {
 							i( 57833),	-- Brooding Mask
@@ -324,38 +307,28 @@ _.Zones =
 						},
 						["qg"] = 4501,	-- Draz'Zilb
 					}),
-					
-					
 					qa(27249, {	-- Inspecting the Ruins
 						["g"] = {
 						},
 						["qg"] = 4944,	-- Captain Garran Vimes
 					}),
-					
-					
 					qh(27253, {	-- Inspecting the Ruins
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
 					}),
-
-
 					qa(27219, {	-- Is it Real?
 						["g"] = {
 						},
 						["qg"] = 23896,	-- "Dirty" Michael Crowe
 						["sourceQuests"] = { 27218 },	-- Dastardly Denizens of the Deep
 					}),
-					
-					
 					qa(27238, {	-- Jaina Must Know
 						["g"] = {
 						},
 						["qg"] = 23569,	-- Renn McGill
 						["sourceQuests"] = { 27237 },	-- Recover the Cargo
 					}),
-					
-					
 					q( 27186, {	-- Jarl Needs a Blade (awarded "'Swamp Eye' Story" criteria)
 						["g"] = {
 							i(  5016),	-- Artisan's Trousers
@@ -366,16 +339,12 @@ _.Zones =
 						["qg"] = 4792,	-- "Swamp Eye" Jarl
 						["sourceQuests"] = { 27184 },	-- Jarl Needs Eyes
 					}),
-					
-					
 					q( 27184, {	-- Jarl Needs Eyes
 						["g"] = {
 						},
 						["qg"] = 4792,	-- "Swamp Eye" Jarl
 						["sourceQuests"] = { 27183 },	-- Marsh Frog Legs
 					}),
-
-					
 					qh(27297, {	-- Justice Dispensed (awarded "Connection to the Grimtotem" criteria)
 						["g"] = {
 							i( 33271),	-- Battlecaster's Edge
@@ -385,13 +354,26 @@ _.Zones =
 						["qg"] = 6546,	-- Tabetha
 						["sourceQuests"] = { 27296 },	-- Raze Direhorn Post!
 					}),
-					
-					
+					qa(27430, {	-- Justice for the Hyals
+						["g"] = {
+						},
+						["qg"] = 6546,	-- Tabetha
+						["sourceQuests"] = { 27429 },	-- Raze Direhorn Post!
+					}),
 					o( 21042, {	-- Theramore Guard Badge
+						qa(27263, {	-- Lieutenant Paval Reethe
+							["g"] = {
+							},
+							["sourceQuests"] = { 27249 },	-- Inspecting the Ruins
+						}),
 						qh(27260),	-- Lieutenant Paval Reethe
 					}),
-					
-					
+					qa(27264, {	-- Lieutenant Paval Reethe
+						["g"] = {
+						},
+						["qg"] = 4944,	-- Captain Garran Vimes
+						["sourceQuests"] = { 27263 },	-- Lieutenant Paval Reethe
+					}),
 					q( 27183, {	-- Marsh Frog Legs
 						["g"] = {
 							i( 57834),	-- Frog Boots
@@ -401,15 +383,11 @@ _.Zones =
 						["qg"] = 4792,	-- "Swamp Eye" Jarl
 						["breadcrumbQuestID"] = { 27215, 27182 },	-- The Hermit of Swamplight Manor (A) / Witch Hill (H)
 					}),
-					
-					
 					qa(27248, {	-- Mission to Mudsprocket
 						["g"] = {
 						},
 						["qg"] = 23951,	-- Lieutenant Aden
 					}),
-					
-					
 					qh(27294, {	-- More than Coincidence
 						["g"] = {
 							i(57852),	-- Grimtotem Cloak
@@ -417,15 +395,11 @@ _.Zones =
 						["qg"] = 4926,	-- Krog
 						["sourceQuests"] = { 27292 },	-- Return to Krog
 					}),
-					
-					
 					qa( 1204, {	-- Mudrock Soup and Bugs
 						["g"] = {
 						},
 						["qg"] = 4794,	-- Morgan Stern
 					}),
-					
-					
 					q(  6607, {	-- Nat Pagle, Angler Extreme
 						["g"] = {
 							i(45858)	-- Nat's Lucky Fishing Pole
@@ -433,8 +407,6 @@ _.Zones =
 						["qg"] = 12919,	-- Nat Pagle
 						["requiredSkill"] = 129,	-- Fishing
 					}),
-					
-					
 					q( 13826, {	-- Nat Pagle, Angler Extreme
 						["g"] = {
 							i(45858),	-- Nat's Lucky Fishing Pole
@@ -443,24 +415,18 @@ _.Zones =
 						["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
 						["requiredSkill"] = 129,	-- Fishing
 					}),
-					
-
 					qa(27220, {	-- Nat's Bargain
 						["g"] = {
 						},
 						["qg"] = 12919,	-- Nat Pagle
 						["sourceQuests"] = { 27219 },	-- Is it Real?
 					}),
-
-					
 					qa(27221, {	-- Oh, It's Real
 						["g"] = {
 						},
 						["qg"] = 12919,	-- Nat Pagle
 						["sourceQuests"] = { 27220 },	-- Nat's Bargain
 					}),
-					
-					
 					qh(27424, {	-- Overlord Mok'Morokk's Concern
 						["g"] = {
 							i( 57848),	-- Mok'Morokk's Grog Bottle
@@ -469,24 +435,33 @@ _.Zones =
 						},
 						["qg"] = 4500,	-- Overlord Mok'Morokk
 					}),
-					
-					
+					qa(27291, {	-- Peace at Last
+						["g"] = {
+							i( 33271),	-- Battlecaster's Edge
+							i( 57829),	-- Steel-Backed Hauberk
+							i(156976),	-- Staff of Memory 
+						},
+						["qg"] = 4944,	-- Captain Garran Vimes
+						["sourceQuests"] = { 27430 },	-- Justice for the Hyals
+					}),
+					qa(27245, {	-- Prisoners of the Grimtotems (awarded "Prisoners of the Grimtotem" criteria)
+						["g"] = {
+						},
+						["qg"] = 23723,	-- Sergeant Lukas
+						["sourceQuests"] = { 27242 },	-- Raptor Captor
+					}),
 					qa(27240, {	-- Proof of Treachery
 						["g"] = {
 						},
 						["qg"] = 4968,	-- Lady Jaina Proudmoore
 						["sourceQuests"] = { 27239 },	-- Survey Alcaz Island
 					}),
-					
-					
 					qa(27211, {	-- Propaganda War
 						["g"] = {
 						},
 						["qg"] = 23566,	-- Calia Hastings
 						["sourceQuests"] = { 27210 },	-- Traitors Among Us
 					}),
-					
-					
 					qh(27261, {	-- Questioning Reethe
 						["g"] = {
 							i(6797),	-- Eyepoker
@@ -495,16 +470,23 @@ _.Zones =
 						["qg"] = 4983,	-- Ogron
 						["sourceQuests"] = { 27306 },	-- Talk to Ogron
 					}),
-					
-					
+					qa(27242, {	-- Raptor Captor
+						["g"] = {
+						},
+						["qg"] = 23723,	-- Sergeant Lukas
+					}),
+					qa(27429, {	-- Raze Direhorn Post!
+						["g"] = {
+						},
+						["qg"] = 6546,	-- Tabetha
+						["sourceQuests"] = { 27428 },	-- Tabetha's Assistance
+					}),
 					qh(27296, {	-- Raze Direhorn Post!
 						["g"] = {
 						},
 						["qg"] = 6546,	-- Tabetha
 						["sourceQuests"] = { 27295 },	-- Seek Out Tabetha
 					}),
-					
-					
 					qa(27237, {	-- Recover the Cargo!
 						["g"] = {
 							i( 33267),	-- Fleshripper
@@ -514,60 +496,49 @@ _.Zones =
 						["qg"] = 23569,	-- Renn McGill
 						["sourceQuests"] = { 27236 },	-- Secondhand Diving Gear
 					}),
-					
-					
 					qa(27235, {	-- Renn McGill
 						["g"] = {
 						},
 						["qg"] = 5086,	-- Captain Wymor
 						["sourceQuests"] = { 27234 },	-- Defias in Dustwallow?
 					}),
-					
-					
 					qa(27236, {	-- Secondhand Diving Gear
 						["g"] = {
 						},
 						["qg"] = 23569,	-- Renn McGill
 						["sourceQuests"] = { 27235 },	-- Renn McGill
 					}),
-					
-					
 					q( 27348, {	-- Secure the Cargo!
 						["g"] = {
 						},
 						["qg"] = 23797,	-- Moxie Steelgrille
 						["breadcrumbQuestID"] = { 27346 },	-- The Zeppelin Crash
 					}),
-					
-					
 					qh(27295, {	-- Seek Out Tabetha
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
 						["sourceQuests"] = { 27294, 27293 },	-- More Than Coincidence & The Grimtotem Plot
 					}),
-					
-					
 					o(205332, {	-- Wanted Poster
 						qh(27229),	-- SMASH BROODQUEEN
 					}),
-					
-					
 					q( 27410, {	-- Spirits of Stonemaul Hold
 						["g"] = {
 						},
 						["qg"] = 23579,	-- Brogg
 						["sourceQuests"] = { 27408, 27409 },	-- Banner of the Stonemaul & The Essence of Enmity
 					}),
-					
-					
+					qa( 1222, {	-- Stinky's Escape
+						["g"] = {
+						},
+						["qg"] = 4880,	-- "Stinky" Ignatz
+					}),
 					qh( 1270, {	-- Stinky's Escape
 						["g"] = {
 						},
 						["qg"] = 4880,	-- "Stinky" Ignatz
 					}),
-					
-					
 					qa(27239, {	-- Survey Alcaz Island
 						["g"] = {
 							i( 57851),	-- Swamp Gas Gauntlets
@@ -577,21 +548,25 @@ _.Zones =
 						["qg"] = 4968,	-- Lady Jaina Proudmoore
 						["sourceQuests"] = { 27238 },	-- Jaina Must Know
 					}),
-					
-					
 					o(187273, {	-- Suspicious Hoofprint
-						qa(27262),	-- Suspicious Hoofprints
+						qa(27262, {	-- Suspicious Hoofprints
+							["g"] = { 
+							},
+							["sourceQuests"] = { 27249 },	-- Inspecting the Ruins
+						}),
 						qh(27259),	-- Suspicious Hoofprints
 					}),
-					
-					
+					qa(27428, {	-- Tabetha's Assistance
+						["g"] = {
+						},
+						["qg"] = 23568,	-- Captain Darill
+						["sourceQuests"] = { 27427, 27426 },	-- Arms of the Grimtotems & Confirming the Suspicion
+					}),
 					qa(11212, {	-- Tabetha's Farm
 						["g"] = {
 						},
 						["qg"] = 4921,	-- Guard Byron
 					}),
-					
-					
 					qa(27222, {	-- Take Down Tethyr! (awarded "The Terror of Theramore" criteria)
 						["g"] = {
 							i( 57842),	-- Tower of Theramore
@@ -602,70 +577,68 @@ _.Zones =
 						["qg"] = 23905,	-- Major Mills
 						["sourceQuests"] = { 27221 },	-- Oh, It's Real
 					}),
-					
-					
 					qh(27306, {	-- Talk to Ogron
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
 						["sourceQuests"] = { 27260 },	-- Lieutenant Paval Reethe
 					}),
-
-					
 					o( 20992, {	-- Black Shield
-						qa(27252),	-- The Black Shield
+						qa(27252, {	-- The Black Shield (#1)	
+							["g"] = {
+							},
+							["sourceQuests"] = { 27249 },	-- Inspecting the Ruins
+						}),
 						qh(27254),	-- The Black Shield (#1)
 					}),
-					
-					
+					qa(27284, {	-- The Black Shield (#2)
+						["g"] = {
+						},
+						["qg"] = 4944,	-- Captain Garran Vimes
+						["sourceQuests"] = { 27252 },	-- The Black Shield (#1)
+					}),
 					qh(27255, {	-- The Black Shield (#2)
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
 						["sourceQuests"] = { 27254 },	-- The Black Shield (#1)
 					}),
-					
-					
+					qa(27285, {	-- The Black Shield (#3)
+						["g"] = {
+						},
+						["qg"] = 4941,	-- Caz Twosprocket
+						["sourceQuests"] = { 27284 },	-- The Black Shield (#2)
+					}),
 					qh(27256, {	-- The Black Shield (#3)
 						["g"] = {
 						},
 						["qg"] = 5087,	-- Do'gol
 						["sourceQuests"] = { 27255 },	-- The Black Shield (#2)
 					}),
-					
-
 					qh(27257, {	-- The Black Shield (#4)
 						["g"] = {
 						},
 						["qg"] = 5087,	-- Do'gol
 						["sourceQuests"] = { 27256 },	-- The Black Shield (#3)
 					}),
-
-					
 					qh(27258, {	-- The Black Shield (offshoot)
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
 						["sourceQuests"] = { 27261 },	-- Questioning Reethe
 					}),
-					
-
 					qh(27416, {	-- The Brood of Onyxia (#1)
 						["g"] = {
 						},
 						["qg"] = 4501,	-- Draz'Zilb
 						["sourceQuests"] = { 27414 },	-- Identifying the Brood
 					}),
-					
-					
 					qh(27417, {	-- The Brood of Onyxia (#2)
 						["g"] = {
 						},
 						["qg"] = 4500,	-- Overlord Mok'Morokk
 						["sourceQuests"] = { 27416 },	-- The Brood of Onyxia (#1)
 					}),
-					
-					
 					qh(27415, {	-- The Brood of Onyxia (#3) (awarded "Onyxia's Brood" criteria)
 						["g"] = {
 							i( 57836),	-- Encarmine Spaulders
@@ -675,53 +648,51 @@ _.Zones =
 						["qg"] = 4501,	-- Draz'Zilb
 						["sourceQuests"] = { 27417 },	-- The Brood of Onyxia (#2) (possibly available after #1)
 					}),
-					
-					
 					q( 27409, {	-- The Essence of Enmity
 						["g"] = {
 						},
 						["qg"] = 23579,	-- Brogg
 						["sourceQuests"] = { 27407 },	-- Bloodfen Feathers
 					}),
-
-					
 					qh(27293, {	-- The Grimtotem Plot
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
 						["sourceQuests"] = { 27292 },	-- Return to Krog
 					}),
-					
-
 					q( 27336, {	-- The Grimtotem Weapon
 						["g"] = {
 						},
 						["qg"] = 23601,	-- Apprentice Garion
 					}),
-
-					
 					qa(27215, {	-- The Hermit of Swamplight Manor (bcrumb quest for 27183)
 						["g"] = {
 						},
 						["qg"] = 23835,	-- Sergeant Amelyn
 						["sourceQuests"] = { 27213 },	-- The End of the Deserters
 					}),
-					
-					
 					qh(27182, {	-- The Hermit of Witch Hill
 						["g"] = {
 						},
 						["qg"] = 4501,	-- Draz'Zilb
 						-- ["isBreadcrumb"] = true,	-- for "Marsh Frog Legs"
 					}),
-					
-					
 					o( 20985, {	-- Loose Dirt
 						qh(27244),	-- The Lost Report
 						qa(27246),	-- The Orc Report
 					}),
-					
-					
+					qa(27287, {	-- The Deserters
+						["g"] = {
+						},
+						["qg"] = 4944,	-- Captain Garran Vimes
+						["sourceQuests"] = { 27286 },	-- Daelin's Men
+					}),
+					qa(27288, {	-- The Deserters
+						["g"] = {
+						},
+						["qg"] = 5089,	-- Balos Jacken
+						["sourceQuests"] = { 27287 },	-- The Deserters
+					}),
 					qa(27213, {	-- The End of the Deserters (awarded "Disgrace the Defectors" criteria)
 						["g"] = {
 							i( 57832),	-- Journeyman's Helm
@@ -733,15 +704,11 @@ _.Zones =
 						["qg"] = 23566,	-- Calia Hastings
 						["sourceQuests"] = { 27212 },	-- Discrediting the Deserters
 					}),
-					
-					
 					qh( 1201, {	-- Theramore Spies
 						["g"] = {
 						},
 						["qg"] = 4791,	-- Nazeer Bloodpike
 					}),
-					
-
 					q( 27339, {	-- The Reagent Thief
 						["g"] = {
 							i( 33260),	-- Spellbound Cloak
@@ -751,53 +718,46 @@ _.Zones =
 						},
 						["qg"] = 23601,	-- Apprentice Garion
 					}),
-					
-					
 					qh( 1202, {	-- The Theramore Docks (awarded "Work Left Undone" criteria)
 						["g"] = {
 						},
 						["qg"] = 4791,	-- Nazeer Bloodpike
 						["sourceQuests"] = { 1201 },	-- Theramore Spies
 					}),
-
-
 					q( 27189, {	-- The Witch's Bane
 						["g"] = {
 						},
 						["qg"] = 23843,	-- Mordant Grimsby
 						["sourceQuests"] = { 27188 },	-- What's Haunting Witch Hill?
 					}),
-
-
 					q( 27346, {	-- The Zeppelin Crash
 						["g"] = {
 						},
 						["qg"] = 23600,	-- Apprentice Morlann
+						["isBreadcrumb"] = true,	-- for Secure the Cargo!
 					}),
-
-					
 					qa(27251, {	-- They Call Him Smiling Jim (unavailable if you've picked up "Inspecting the Ruins")
 						["g"] = {
 						},
 						["qg"] = 4921,	-- Guard Byron
 					}),
-					
-					
 					qa(27216, {	-- This Old Lighthouse
 						["g"] = {
 						},
 						["qg"] = 23835,	-- Sergeant Amelyn
 					}),
-					
-					
 					qa(27217, {	-- Thresher Oil
 						["g"] = {
 						},
 						["qg"] = 23892,	-- Babs Fizzletorque
 						["sourceQuests"] = { 27216 },	-- This Old Lighthouse
 					}),
-					
-					
+					qa(25479, {	-- To New Thalanaar
+						["g"] = {
+						},
+						["qg"] = 40345,	-- Thyssiana
+						["isBreadcrumb"] = true,	-- for The Grimtotem are Coming - mutually exclusive with 25481 and 28503
+					}),
 					qh(25478, {	-- To the Summit
 						["groups"] = {
 						},
@@ -805,16 +765,19 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for "The Grimtotem are Coming"
 						["sourceQuests"] = { 28504 },	-- Warchief's Command: Thousand Needles!
 					}),
-					
-					
 					qa(27210, {	-- Traitors Among Us
 						["g"] = {
 						},
 						["qg"] = 23566,	-- Calia Hastings
 						["breadcrumbQuestID"] = { 28552 },	-- Hero's Call: Dustwallow Marsh
 					}),
-					
-					
+					qa( 6624, {	-- Triage
+						["g"] = {
+						},
+						["qg"] = 12939,	-- Doctor Gustaf VanHowzen
+						["requiredSkill"] = 129,	-- First Aid
+						["breadcrumbQuestID"] = { 6625 },	-- Alliance Trauma
+					}),
 					qh( 9437, {	-- Twilight of the Dawn Runner
 						["g"] = {
 							i( 33250),	-- Archer's Wristguard
@@ -827,8 +790,16 @@ _.Zones =
 						},
 						["qg"] = 17095,	-- Balandar Brightstar
 					}),
-					
-					
+					qa(27243, {	-- Unleash the Raptors
+						["g"] = {
+							i( 33266),	-- Book of the Adept
+							i( 33248),	-- Crested Shoulderguard
+							i( 33265),	-- Pendant of Ferocity
+							i(131662),	-- Crested Chain Epaulets
+						},
+						["qg"] = 23723,	-- Sergeant Lukas
+						["sourceQuests"] = { 27242 },	-- Raptor Captor
+					}),
 					o(186426, {	-- Wanted Poster
 						q(27412, {	-- WANTED: Goreclaw the Ravenous
 							i( 33258),	-- Protective Engineer's Leggings
@@ -837,56 +808,11 @@ _.Zones =
 							i(131671),	-- Raptorhide Chain Leggings
 						}),
 					}),
-					
-					
 					q( 27188, {	-- What's Haunting Witch Hill?
 						["g"] = {
 						},
 						["qg"] = 23843,	-- Mordant Grimsby
 					}),
-					
-					
-					
---[[
-						["g"] = {
-						},
-						["qg"] = ,	-- 
-						["sourceQuests"] = {  },	-- 
-					}),
---]]					
-					
-					qg( 4944, qa(27425)),	-- A Grim Connection
-					qg(23568, qa(27427, {	-- Arms of the Grimtotems
-						i(33268),	-- Bone Dirk
-						i(57837),	-- Biting Greataxe
-					})),
-					qg(23568, qa(27426)),	-- Confirming the Suspicion
-					qg( 4948, qa(27286)),	-- Daelin's Men
-					qg( 6546, qa(27430)),	-- Justice for the Hyals
-					qg( 4944, qa(27264)),	-- Lieutenant Paval Reethe
-					qg(21042, qa(27263)),	-- Lieutenant Paval Reethe
-					qg( 4944, qa(27291, {	-- Peace at Last
-						i( 33271),
-						i( 57829),
-						i(156976),	-- Staff of Memory 
-					})),
-					qg(23723, qa(27245)),	-- Prisoners of the Grimtotems
-					qg(23723, qa(27242)),	-- Raptor Captor
-					qg( 6546, qa(27429)),	-- Raze Direhorn Post!
-					qg( 4880, qa( 1222)),	-- Stinky's Escape
-					qg(23568, qa(27428)),	-- Tabetha's Assistance
-					qg( 4844, qa(27284)),	-- The Black Shield
-					qg( 4941, qa(27285)),	-- The Black Shield
-					qg( 5089, qa(27288)),	-- The Deserters
-					qg( 4944, qa(27287)),	-- The Deserters
-					qg(40345, qa(25479)),	-- To New Thalanaar (bcrumb quest for 25486, not available if 25481,28503 are completed)
-					qg(40369, qa(25481)),	-- To New Thalanaar
-					qg(12939, qa( 6624)),	-- Triage
-					qg(23723, qa(27243, {	-- Unleash the Raptors
-						i( 33266),
-						i( 33248),
-						i(131662),
-					})),
 				}),
 				n(-16, {	-- Rares	
 					n(50784, { 		-- Anith
