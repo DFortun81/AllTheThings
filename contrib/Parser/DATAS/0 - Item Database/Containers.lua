@@ -5,6 +5,8 @@ local i = function(itemID)
 	return item;
 end
 
+i(47242);		-- Trophy of the Crusade
+
 i(51999);		--[[Satchel of Helpful Goods]]
 i(52000);		--[[Satchel of Helpful Goods]]
 i(52001);		--[[Satchel of Helpful Goods]]
