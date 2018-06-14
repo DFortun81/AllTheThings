@@ -521,8 +521,19 @@ _.Zones =
 					qa( 13391),	-- Time to Hide
 					qh( 13275),	-- Time to Hide
 					q(13076),	-- Time Yet Remains
-					qa( 13403),	-- Tirion's Gambit
-					qh( 13364),	-- Tirion's Gambit
+--]]
+					qa(13403, {	-- Tirion's Gambit
+						i(44745),	-- Blade of the Empty Void
+						i(44746),	-- Knife of the Tarnished Soul
+						i(44747),	-- Hammer of Wrenching Change
+						i(44748),	-- Stave of Youthful Sorrow
+					}),
+					qh(13364, {	-- Tirion's Gambit
+						i(44745),	-- Blade of the Empty Void
+						i(44747),	-- Hammer of Wrenching Change
+						i(44746),	-- Knife of the Tarnished Soul
+						i(44748),	-- Stave of the Youthful Sorrow
+					}),
 					qa( 13402),	-- Tirion's Help
 					q(12806),	-- To the Rise with all Due Haste!
 					qa( 13671),	-- Training In The Field
