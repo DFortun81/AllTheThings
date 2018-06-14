@@ -10,7 +10,7 @@ _.Zones =
 					q(36626, { -- Host Howell
 						["groups"] = {
 						},
-						["qg"] = 86065, -- Private Tristan
+						["qg"] = 86095, -- Private Tristan
 						["sourceQuests"] = { 36624 }, -- Ashran Appearance
 					}),
 					q(36629, { -- Inspiring Ashran
