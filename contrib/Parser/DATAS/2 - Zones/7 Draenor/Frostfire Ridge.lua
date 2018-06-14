@@ -7,72 +7,6 @@ _.Zones =
 		m(941, { 	-- Frostfire Ridge
 			["groups"] = {							
 				n(-3, { 	-- Holidays					
---[[					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
---]]					
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 --							n(-17, { 	-- Quests
@@ -101,303 +35,221 @@ _.Zones =
 					p(1464), 	-- Twilight Wasp
 				}),
 				n(-17, { 	-- Quests
---[[				
-					qh( 34228),	-- A Clew of Worms
-					qh( 34067),	-- A Collection of Coils
-					qh( 34264),	-- A Collection of Coils
-					q(33957),	-- A Gift for Raa'la
-					qh( 34592),	-- A Gronnling Problem
-					qh( 33125),	-- A Proper Parting
-					qh( 33815),	-- A Song of Frost and Fire
-					qh( 39676),	-- A True Naval Commander
-					q(35346),	-- Abatha, the Alchemist
-					qh( 34280),	-- All is Revealed
-					q(35292),	-- Ang'kra, the Alchemist
-					qh( 33344),	-- Armed and Dangerous
-					qh( 32804),	-- Articles of the Fallen
-					q(34321),	-- Ashes Of The Past
-					qh( 34070),	-- At the End of Your Rope
-					qh( 37014),	-- Auctioning for Parts
-					qh( 33473),	-- Back to Bladespire Citadel
-					qh( 34375),	-- Back to Work
-					q(33443),	-- Barrier Destroyed
-					q(39783),	-- Battle Pet - Terky
-					qh( 34730),	-- Blood Oath of Lokra
-					qh( 34729),	-- Blood Oath of Na'Shra
-					qh( 36345),	-- Breaking into the Trap Game
-					qh( 34073),	-- Burn Them Down
-					qa( 36916),	-- Capturing a Clefthoof
-					qh( 36912),	-- Capturing a Clefthoof
-					q(33456),	-- Catapult Vision
-					q(33458),	-- Catapult Vision
-					q(33457),	-- Catapult Vision
-					q(35252),	-- Chest Reward Tracking Quest
-					qh( 37049),	-- Clefthoof Training: Rakkiri
-					qa( 36984),	-- Clefthoof Training: Rakkiri
-					qh( 33546),	-- Deeds Left Undone
-					qh( 35341),	-- Defection of Gronnstalker Rokash
-					qh( 34379),	-- Den of Wolves
-					qh( 34278),	-- Desecration of the Dead
-					qh( 39401),	-- Destroying the Competition
-					qh( 36137),	-- Easing into Lumberjacking
-					qh( 34292),	-- Eliminate the Shadow Council
-					qh( 34293),	-- Eliminate the Shadow Council
-					q(34063),	-- Enemies Above
-					qh( 32994),	-- Enfilade
-					q(34473),	-- Envoy's Log
-					qh( 39675),	-- Equipping Our Fleet
-					qh( 34378),	-- Establish Your Garrison
-					qh( 34230),	-- Eye Need That
-					q(34325),	-- Flames Of The Earth
-					qh( 34364),	-- For the Horde!
-					q(34505),	-- Forbidden Glacier
-					qh( 33807),	-- Free Our Brothers and Sisters
-					q(34501),	-- Frostbite Hollow
-					qh( 34346),	-- Frosted Fury
-					q(34714),	-- Frostfire Ridge: (RRP) - Treasure - Pale Leather Cache
-					qh( 32783),	-- Ga'nar's Vengeance
-					q(37544),	-- Garrison Follower: Greatmother Geyah
-					q(37545),	-- Garrison Follower: Kal'gor the Honorable
-					qh( 34093),	-- Getting the Points
-					qh( 34069),	-- Getting the Points
-					qh( 33784),	-- Gormaul Tower
-					qh( 33408),	-- Great Balls of Fire!
-					q(33145),	-- Grimfrost Hill
-					qh( 37995),	-- Gronnsbane: The Blessing of Beasts
-					qa( 37919),	-- Gronnsbane: The Blessing of Beasts
-					qa( 37917),	-- Gronnsbane: The Blessing of Fire
-					q(37918),	-- Gronnsbane: The Blessing of Frost
-					qh( 37916),	-- Gronnsbane: The Broken Spear
-					q(39651),	-- Grumpus
-					qh( 33132),	-- Gut Guttra
-					qh( 34291),	-- Have a Heart
-					qh( 33816),	-- Honor Has Its Rewards
-					qh( 39604),	-- I Sunk Your Battleship
-					qh( 39674),	-- If At First You Fail, Try Again!
-					qh( 32991),	-- Into the Boneslag
-					qh( 36953),	-- It's a Matter of Strategy
-					qh( 34681),	-- It's a Matter of Strategy
-					qh( 33785),	-- Karg Unchained					
-					qh( 34681),	-- It's a Matter of Strategy
-					qh( 33785),	-- Karg Unchained
-					qh( 33527),	-- Last Steps
-					qh( 32792),	-- Leave Nothing Behind!
-					qh( 32791),	-- Let the Hunt Begin!
-					qh( 39236),	-- Let's Get To Work
-					qh( 37060),	-- Lost in Transition
-					qh( 34344),	-- Lurkers
-					qh( 33955),	-- Missing Pack
-					q(34079),	-- Mission Successful
-					qh( 33412),	-- Mopping Up
-					qh( 33657),	-- Moving In
-					qh( 32992),	-- Moving Target
-					qh( 34732),	-- Mulverick's Offer of Service
-					qh( 33483),	-- Mulverick's Plight
-					qh( 39243),	-- Naval Commander
-					qh( 39246),	-- Naval Domination
-					qh( 36897),	-- Nemesis: Becoming Death
-					qh( 36931),	-- Nemesis: Becoming Death
-					qh( 36925),	-- Nemesis: Becoming Death
-					qh( 36923),	-- Nemesis: Becoming Death
-					qh( 36933),	-- Nemesis: Becoming Death
-					qh( 36929),	-- Nemesis: Becoming Death
-					qh( 36927),	-- Nemesis: Becoming Death
-					qh( 36930),	-- Nemesis: Draenei Destroyer
-					qh( 36924),	-- Nemesis: Dwarfstalker
-					qh( 36926),	-- Nemesis: Gnomebane
-					qh( 36889),	-- Nemesis: Hunter - Hunted
-					qh( 36921),	-- Nemesis: Manslayer
-					qh( 36932),	-- Nemesis: Scourge of the Kaldorei
-					qh( 36934),	-- Nemesis: Terror of the Tushui
-					qh( 36928),	-- Nemesis: Worgen Hunter
-					qh( 34731),	-- Oath of Shadow Hunter Rala
-					qh( 33013),	-- Of Fire and Thunder
-					qh( 34402),	-- Of Wolves and Warriors
-					qh( 32981),	-- Only the Winner
-					q(36296),	-- Phylarch the Evergreen
-					qh( 33470),	-- Pool of Visions
-					qh( 34345),	-- Poulticide
-					qh( 34380),	-- Rally the Frostwolves
-					qh( 33493),	-- Return to the Pack
-					qh( 37045),	-- Salvaging the Situation
-					qh( 34066),	-- Savage Vengeance
-					qh( 33468),	-- Save Wolf Home
-					qa( 37092),	-- Scraps of Iron
-					qh( 37043),	-- Scraps of Iron
-					qh( 32989),	-- Securing the South
-					q(34733),	-- Services of Dagg
-					qh( 36142),	-- Sharper Blades, Bigger Timber
-					qh( 39242),	-- Ship Shape
-					qh( 39241),	-- Shipbuilding
-					qh( 33929),	-- Shivertail's Den
-					qh( 33119),	-- Slavery and Strife
-					qh( 33898),	-- Slaying Slavers
-					qh( 33838),	-- Smeltcraft
-					qh( 34277),	-- Stop the Flow
-					qa( 36972),	-- Talbuk Training: Rakkiri
-					qh( 37094),	-- Talbuk Training: Rakkiri
-					qh( 34072),	-- Tar Get of Opportunity
-					qh( 34124),	-- The Battle of Thunder Pass
-					q(34588),	-- The Bounty of Bladespire
-					qh( 33410),	-- The Butcher of Bladespire
-					qh( 33454),	-- The Cure
-					qh( 35243),	-- The Dark Lady's Gift
-					qh( 34765),	-- The Den of Skog
-					qh( 32795),	-- The Eldest
-					qh( 33467),	-- The Fall of the Warlord
-					qh( 33469),	-- The Farseer
-					qh( 34294),	-- The Fel Crystals
-					qa( 35883),	-- The Fists of Vaandaam
-					qh( 37563),	-- The Frostwolves Stand Ready
-					qh( 37046),	-- The Headhunter's Harvest
-					qa( 37119),	-- The Headhunter's Harvest
-					qh( 33868),	-- The Home of the Frostwolves
-					qh( 35882),	-- The Interest of Bruto
-					qh( 33010),	-- The Iron Wolf
-					qh( 34960),	-- The Land Provides
-					qh( 34102),	-- The Mark of Defiance
-					qh( 33828),	-- The Master Siegesmith
-					q(34377),	-- The Portal Home
-					qh( 34348),	-- The Real Prey
-					qh( 36427),	-- The Rise and Fall of Barov Industries: Alexi Barov
-					qa( 36429),	-- The Rise and Fall of Barov Industries: Weldon Barov
-					qh( 33484),	-- The Slavemaster's Demise
-					qh( 34229),	-- The Sleeper Has Awakened
-					qh( 32993),	-- The Strength of Our Bonds
-					qh( 33450),	-- The Warlord's Guard
-					qh( 33526),	-- These Colors Don't Run
-					qh( 32929),	-- They Rely on Numbers
-					qh( 32990),	-- They Who Held Fast
-					q(33441),	-- Thrall Vision
-					q(33462),	-- Thunderlord for a Day
-					qh( 34295),	-- To Capture Gul'dan
-					qh( 32796),	-- To the Garrison
-					qh( 33622),	-- To the Slaughter
-					qh( 34123),	-- To Thunder Pass
-					qh( 36182),	-- Tree-i-cide
-					qh( 37062),	-- Tricks of the Trade
-					qa( 37088),	-- Tricks of the Trade
-					qh( 36138),	-- Turning Timber into Profit
-					qh( 39245),	-- Upgrading The Fleet
-					qh( 34209),	-- Vouchsafe Our Arrival
-					qh( 34075),	-- Vul'gath's End
-					qh( 33918),	-- Wanted: Grondo's Bounty
-					qh( 33919),	-- Wanted: Gutsmash the Destroyer
-					qh( 36874),	-- Warlord of Draenor
-					qh( 34736),	-- We Be Needin' Supplies
-					qh( 34227),	-- What Must Be Done
-					qh( 33826),	-- Where's My Wolf?!
-					qh( 32794),	-- Wrath of Gronn
-					qh( 33915),	-- Young Hearts		
---]]					
-					qh(36516, { 	-- Cut 'Em Out! - Horde Leatherworking quest
-						["groups"] = { 	
-							i(117566),
-						},
-						["description"] = "|cff66ccffRequires Leatherworking|r"
-					}),
-					qh(36380,  {  	-- Diamonds Are Forever
-						["groups"] = {
-							i(115503),
-						},
-						["description"] = "|cff66ccffRequires Jewelcrafting|r"
-					}),
-					qh(33784,  {  	-- Gormaul Tower
-						i(106164),
-						i(106136),
-						i(106168),
-						i(106154),
-					}),
-					qh(32985,  {  	-- Fury of Frostfire
-						i(119145), 		-- Firefury Totem
-					}),
-					qh(33527,  {  	-- Last Steps
-						i(106157),
-						i(106135),
-						i(107302),
-						i(106149),
-					}),
-					qh(32792,  {  	-- Leave Nothing Behind!
-						i(111917),
-						i(111918),
-						i(117505),
-						i(117506),
-						i(117507),
-						i(117508),
-					}),
-					qh(34344,  {  	-- Lurkers
-						i(106161),
-						i(106140),
-						i(106172),
-						i(107311),
-					}),
-					qh(33483,  {  	-- Mulverick's Plight
-						i(108953),
-						i(108954),
-						i(108955),
-					}),
-					qh(33470,  {  	-- Pool of Visions
-						i(106162),
-						i(106141),
-						i(106152),
-						i(106173),
-					}),
-					qh(34066,  {  	-- Savage Vengeance
-						i(117509),
-						i(117510),
-						i(117511),
-						i(117512),
-					}),
-					qh(34124,  {  	-- The Battle of Thunder Pass
-						i(107397),
-						i(106137),
-						i(106169),
-						i(106146),
-					}),
-					qh(33410,  {  	-- The Butcher of Bladespire
-						i(106159),
-						i(106138),
-						i(106170),
-						i(106148),
-					}),
-					qh(32795,  {  	-- The Eldest
-						i(117501),
-						i(117502),
-						i(117503),
-						i(117504),
-					}),
-					qh(33010,  {  	-- The Iron Wolf
-						i(111909),
-						i(111911),
-						i(111912),
-						i(111913),
-						i(111914),
-						i(111915),
-						i(111916),
-					}),
-					qh(33828,  {  	-- The Master Siegesmith
-						i(113249),
-						i(113250),
-						i(113251),
-						i(113252),
-					}),
-					qh(33450,  {  	-- The Warlord's Guard
-						i(106158),
-						i(106134),
-						i(106177),
-						i(106145),
-					}),
-					qh(34295,  {  	-- To Capture Gul'dan
-						i(113148),
-						i(113150),
-						i(113149),
-					}),
-					qh(34075,  {  	-- Vul'gath's End
-						i(117513),
-						i(117514),
-						i(117515),
-						i(117516),
-					}),
+					["groups"] = {
+						ach(8671, { -- Frostfire Ridge
+							["groups"] = {
+								crit(1, { -- Foothold in a Savage Land
+									q(33868, { -- The Home of the Frostwolves	
+										["groups"] = {
+										},
+									}),	
+									q(33815, { -- A Song of Frost and Fire	
+										["groups"] = {
+										},
+										["qg"] = 76411, -- Farseer Drek'Thar
+										["breadcrumbQuestID"] = { 33868 }, -- The Home of the Frostwolves
+									}),	
+									q(34402, { -- of Wolves and  Warriors	
+										["groups"] = {
+										},
+										["qg"] = 78272, -- Durotan
+										["sourceQuests"] = { 33815 }, -- A Song of Frost and Fire
+									}),	
+									q(34364, { -- For the Horde!	
+										["groups"] = {
+											i(111540), -- Frostwolf Augury Staff
+											i(111539), -- Frostwolf Boot Knife
+											i(111536), -- Frostwolf Cleaver
+											i(111537), -- Frostwolf Greataxe
+											i(111535), -- Frostwolf Hand Axe
+											i(111538), -- Frostwolf Hunting Crossbow
+											i(111541), -- Frostwolf Mountaineering Stick
+											i(111542), -- Frostwolf Wind-Talker Cudgel
+										},
+										["qg"] = 70859, -- Thrall
+										["sourceQuests"] = { 34402 }, -- of Wolves and  Warriors
+									}),
+									q(34375, { -- Back to Work	
+										["groups"] = {
+										},
+										["qg"] = 78466, -- Gazlowe
+										["sourceQuests"] = { 34364 }, -- For the Horde!
+									}),	
+									q(34592, { -- A Gronnling Problem	
+										["groups"] = {
+										},
+										["qg"] = 78466, -- Gazlowe
+										["sourceQuests"] = { 34364 }, -- For the Horde!
+									}),	
+									q(34765, { -- The Den of Skog	
+										["groups"] = {
+										},
+										["qg"] = 78466, -- Gazlowe
+										["sourceQuests"] = { 34592, 34375 }, -- A Gronnling Problem / Back to Work
+									}),	
+									q(34378, { -- Establish Your Garrison	
+										["groups"] = {
+											i(110560), -- Garrison Hearthstone
+										},
+										["qg"] = 78466, -- Gazlowe
+										["sourceQuests"] = { 34765 }, -- The Den of Skog
+									}),	
+									q(34823, { -- The Ogron Live?	
+										["groups"] = {
+										},
+										["qg"] = 78487, -- Rokhan
+										["sourceQuests"] = { 34378 }, -- Establish Your Garrison
+									}),	
+									q(34824, { -- What We Got	
+										["groups"] = {
+										},
+										["qg"] = 78466, -- Gazlowe
+										["sourceQuests"] = { 34378 }, -- Establish Your Garrison
+									}),	
+									q(34822, { -- What We Need	
+										["groups"] = {
+										},
+										["qg"] = 78466, -- Gazlowe
+										["sourceQuests"] = { 34378 }, -- Establish Your Garrison
+									}),	
+									q(34461, { -- Build Your Barracks	
+										["groups"] = {
+										},
+										["qg"] = 78466, -- Gazlowe
+										["sourceQuests"] = { 34823, 34824, 34822 }, -- The Ogron Live? / What We Got / What We Need
+									}),	
+									q(34861, { -- We Need An Army	
+										["groups"] = {
+										},
+										["qg"] = 78466, -- Gazlowe
+										["sourceQuests"] = { 34461 }, -- Build Your Barracks
+									}),	
+									q(34462, { -- Winds of Change	
+										["groups"] = {
+										},
+										["qg"] = 79740, -- Warmaster Zog
+										["sourceQuests"] = { 34861 }, -- We Need An Army
+									}),	
+									
+									q(34775, { -- Mission  Probable	
+										["groups"] = {
+										},
+										["qg"] = 79740, -- Warmaster Zog
+										["sourceQuests"] = { 34462 }, -- Winds of Change
+									}),	
+								}),
+							},
+							["races"] = HORDE_ONLY,
+						}),
+						qh(36516, { 	-- Cut 'Em Out! - Horde Leatherworking quest
+							["groups"] = { 	
+								i(117566),
+							},
+							["description"] = "|cff66ccffRequires Leatherworking|r"
+						}),
+						qh(36380,  {  	-- Diamonds Are Forever
+							["groups"] = {
+								i(115503),
+							},
+							["description"] = "|cff66ccffRequires Jewelcrafting|r"
+						}),
+						qh(33784,  {  	-- Gormaul Tower
+							i(106164),
+							i(106136),
+							i(106168),
+							i(106154),
+						}),
+						qh(32985,  {  	-- Fury of Frostfire
+							i(119145), 		-- Firefury Totem
+						}),
+						qh(33527,  {  	-- Last Steps
+							i(106157),
+							i(106135),
+							i(107302),
+							i(106149),
+						}),
+						qh(32792,  {  	-- Leave Nothing Behind!
+							i(111917),
+							i(111918),
+							i(117505),
+							i(117506),
+							i(117507),
+							i(117508),
+						}),
+						qh(34344,  {  	-- Lurkers
+							i(106161),
+							i(106140),
+							i(106172),
+							i(107311),
+						}),
+						qh(33483,  {  	-- Mulverick's Plight
+							i(108953),
+							i(108954),
+							i(108955),
+						}),
+						qh(33470,  {  	-- Pool of Visions
+							i(106162),
+							i(106141),
+							i(106152),
+							i(106173),
+						}),
+						qh(34066,  {  	-- Savage Vengeance
+							i(117509),
+							i(117510),
+							i(117511),
+							i(117512),
+						}),
+						qh(34124,  {  	-- The Battle of Thunder Pass
+							i(107397),
+							i(106137),
+							i(106169),
+							i(106146),
+						}),
+						qh(33410,  {  	-- The Butcher of Bladespire
+							i(106159),
+							i(106138),
+							i(106170),
+							i(106148),
+						}),
+						qh(32795,  {  	-- The Eldest
+							i(117501),
+							i(117502),
+							i(117503),
+							i(117504),
+						}),
+						qh(33010,  {  	-- The Iron Wolf
+							i(111909),
+							i(111911),
+							i(111912),
+							i(111913),
+							i(111914),
+							i(111915),
+							i(111916),
+						}),
+						qh(33828,  {  	-- The Master Siegesmith
+							i(113249),
+							i(113250),
+							i(113251),
+							i(113252),
+						}),
+						qh(33450,  {  	-- The Warlord's Guard
+							i(106158),
+							i(106134),
+							i(106177),
+							i(106145),
+						}),
+						qh(34295,  {  	-- To Capture Gul'dan
+							i(113148),
+							i(113150),
+							i(113149),
+						}),
+						qh(34075,  {  	-- Vul'gath's End
+							i(117513),
+							i(117514),
+							i(117515),
+							i(117516),
+						}),
+					},
 				}),	
 				n(-16, { 	-- Rares
 					n(84378, { 		-- Ak'ox the Slaughterer

@@ -89,7 +89,7 @@ _.Zones =
 				}),
 			},
 			["icon"] = "Interface\\Icons\\INV_Misc_Fish_Turtle_03",
-			["race"] = { 24, 25, 26 }, -- Neutral Pandas and Alliance/Horde Pandas [Adding faction just to be safe]
+			["races"] = { 24, 25, 26 }, -- Neutral Pandas and Alliance/Horde Pandas [Adding faction just to be safe]
 		}),
 	}),
 };
