@@ -96,7 +96,6 @@ _.Instances =
 							i(17736),	-- Rockgrip Gauntlets
 							i(17713),	-- Blackstone Ring
 							nld({     -- Legacy
-								un(2, i(17736)), 	-- Rockgrip Gauntlets
 								un(2, i(17733)), 	-- Fist of Stone
 							}),
 						})),
