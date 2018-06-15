@@ -89,7 +89,6 @@ _.Zones =
 									}),	
 									q(34378, { -- Establish Your Garrison	
 										["groups"] = {
-											i(110560), -- Garrison Hearthstone
 										},
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34765 }, -- The Den of Skog
