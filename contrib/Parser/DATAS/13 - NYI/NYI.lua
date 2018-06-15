@@ -3,6 +3,7 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	i(129738), -- Verus
 	i(147204), -- Black Apron - TEST
 	i(23388), -- Tranquillen Tabard
 	i(49086), -- Relentless Gladiator's Tabard [Elite Rating]

@@ -4,14 +4,14 @@
 _.Zones =
 {
 	m(962, { 	-- Draenor
-		a(m(971, {	-- Lunarfall other mapid's 971, 973, 974, 975
+		m(971, {	-- Lunrfall other mapid's 971, 973, 974, 975
 					-- Lucetia: MapID 991 was used and only worked in Shadowmoon Valley.  Changing it to 971 should work.
 			["groups"] = {				
-				na(-3, { 	-- Holidays
+				n(-3, { 	-- Holidays
 					n(-58, {     -- Hallow's End
 						["groups"] = {
-							na(-25, { 	 -- Pet Battle
-								na(96362, { -- Izzy Hollyfizzle events coordinator
+							n(-25, { 	 -- Pet Battle
+								n(96362, { -- Izzy Hollyfizzle events coordintor
 									["groups"] = {	
 										un(25, i(128658, { -- Spooky Supplies
 											i(128664, { -- Creepy Crawlers
@@ -24,25 +24,25 @@ _.Zones =
 											}),	
 										})),
 									},
-									["description"] = "Purchasing Ghoulish Guises, Hallow's Glow, Seer's Invitation, Witch's Brew or Creepy Crawlers for 5x|cFFFFD700Spooky Supplies|r will enable you to use the decorations year round.",
+									["description"] = "Purchasing Ghoulish Guises, Hallow's Glow, Seer's Invitation, Witch's Brew or Creepy Crawlers for 5x|cFFFFD700Spooky Supplies|r will enble you to use the decorations year round.",
 								}),	
 							}),
-							na(-17, { 	 -- Quests
+							n(-17, { 	 -- Quests
 								["groups"] = {
-									na(96705, { 	-- Orukan
+									n(96705, { 	-- Orukan
 										["groups"] = {
-											qa(39721), 	-- Culling the Crew
-											qa(39720), 	-- Foul Fertilizer
-											qa(39719),	-- Mutiny on the Boneship
-											qa(39716), 	-- Smashing Squashlings
+											q(39721), 	-- Culling the Crew
+											q(39720), 	-- Foul Fertilizer
+											q(39719),	-- Mutiny on the Boneship
+											q(39716), 	-- Smashing Squashlings
 										},
 										["description"] = "These daily quests take place in Shadowmoon Valley and reward |cFFFFD700Spooky Supplies|r.",
 									}),
 								},
 								["u"] = 26,					
 							}),									
-							na(-2, { 	 -- Vendors
-								na(96362, { -- Izzy Hollyfizzle events coordinator
+							n(-2, { 	 -- Vendors
+								n(96362, { -- Izzy Hollyfizzle events coordintor
 									["groups"] = {	
 										un(25, i(128658, { -- Spooky Supplies
 											i(128664, { -- Creepy Crawlers
@@ -56,44 +56,34 @@ _.Zones =
 											}),	
 										})),
 									},
-									["description"] = "Purchasing Ghoulish Guises, Hallow's Glow, Seer's Invitation, Witch's Brew or Creepy Crawlers for 5x|cFFFFD700Spooky Supplies|r will enable you to use the decorations year round.",
+									["description"] = "Purchasing Ghoulish Guises, Hallow's Glow, Seer's Invitation, Witch's Brew or Creepy Crawlers for 5x|cFFFFD700Spooky Supplies|r will enble you to use the decorations year round.",
 								}),													
 							}),								
 						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
+						["achievementID"] = 1656, -- Hallowed Be Thy nme
 						["u"] = 26,
 					}),	
---[[					
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
---]]					
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
-							na(-17, { 	 -- Quests
+							n(-17, { 	 -- Quests
 								["groups"] = {
-									na(96451, { -- Almie
+									n(96451, { -- Almie
 										["groups"] = {	
-											qa(39651), 	-- Grumpus
-											qa(39649), 	-- Menacing Grumplings
-											qa(39668), 	-- What Horrible Presents
-											qa(39648), 	-- Where Are the Children?
+											q(39651), 	-- Grumpus
+											q(39649), 	-- Mencing Grumplings
+											q(39668), 	-- What Horrible Presents
+											q(39648), 	-- Where Are the Children?
 										},
 										["description"] = "These daily quests take place in Frostfire Ridge and reward |cFFFFD700Merry Supplies|r.", 
 									}),
-									na(96304, { -- Tradurjo Jinglepocket
-										qa(6961), 	-- Greatfather Winter is Here!
+									n(96304, { -- Tradurjo Jinglepocket
+										q(6961), 	-- Greatfather Winter is Here!
 									}),
 								},
 								["u"] = 29,					
 							}),
-							na(-2, { 	 -- Vendors
-								na(96362, { -- Izzy Hollyfizzle events coordinator
+							n(-2, { 	 -- Vendors
+								n(96362, { -- Izzy Hollyfizzle events coordintor
 									i(128659, { -- Merry Supplies
 										["groups"] = {
 											i(108635), -- Crashin' Thrashin' Killdozer Controller
@@ -104,10 +94,10 @@ _.Zones =
 												["description"] = "In order to purchase this gift you need to have 5x|cFFFFD700Merry Supplies|r and then you can then purchase it from Izzy Hollyfizzle.",			
 											}),
 										},
-										["description"] = "Purchasing Ball of Tangled Lights, Imported Trees, Little Helpers, Festive Outfits, and Old Box of Decorations for 5x|cFFFFD700Merry Supplies|r will enable you to use the decorations year round.",
+										["description"] = "Purchasing Ball of Tangled Lights, Imported Trees, Little Helpers, Festive Outfits, and Old Box of Decorations for 5x|cFFFFD700Merry Supplies|r will enble you to use the decorations year round.",
 									}),
 								}),	
-								na(96304, { -- Tradurjo Jinglepocket
+								n(96304, { -- Tradurjo Jinglepocket
 									un(29, i(34319)),	-- Pattern: Red Winter Clothes
 									un(29, i(34262)),	-- Pattern: Winter Boots
 									un(29, i(17200)),	-- Recipe: Gingerbread Cookie
@@ -121,46 +111,45 @@ _.Zones =
 						["u"] = 29,
 					}),						
 				}),								
-				na(-4, { 	-- Achievements
-					ach(9912, { 		-- Azeroth's Top Twenty Tunes
-						i(122700), 			-- Toy
+				n(-4, { 	-- Achievements
+					ach(9912, {  -- Azeroth's Top Twenty Tunes
+						i(122700), 	-- Portable Audiophone
 					}),
-					ach(10256, { 		-- Charting a Course
-						i(128365),
+					ach(10256, { -- Charting a Course
+						i(128365), -- Fleet Commander's Hat
 					}),
-					ach(7274, { 		-- Learning From The Best	
-						i(86596), 			-- Toy
+					ach(7274, {  -- Learning From The Best	
+						i(86596), -- Nat's Fishing Chair
 					}),
-					ach(9454, {	-- Draenic Seed Collector
+					ach(9454, {	 -- Draenic Seed Collector
 						i(111997, {	-- Herb Garden, Level 3
 							["groups"] = {
 							},
 							["f"] = 200,	-- Recipe
 						}),
 					}),
-					ach(9453, {	-- Draenic Stone Collector
-						a(i(111996, {	-- Lunarfall Excavation, Level 3
+					ach(9453, {	 -- Draenic Stone Collector
+						i(111996, {	-- Lunarfall Excavation, Level 3
 							["groups"] = {
 							},
 							["f"] = 200,	-- Recipe
-						})),
-						h(i(116249, {	-- Frostwall Mines, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						})),
-					}),
-					n(-99, { 			-- Stables
-						ach(9540, {	-- The Stable Master
-							i(116781),	-- Armoured Frostwolf MOUNT!
-							title(277),	-- Stable Master
-						}),
-						ach(9539, {	-- Advanced Husbandry
-							i(116668),	-- Armoured Frostboar MOUNT!
 						}),
 					}),					
 				}),
-				na(-136, { 	-- Invasions
+				n(-3310, { -- Garrison Architect
+					n(-99, { -- Stables
+						["groups"] = {
+							ach(9540, {	-- The Stable Master
+								title(277),	-- Stable Master
+								i(116781),	-- Armoured Frostwolf
+							}),
+							ach(9539, {	-- Advanced Husbandry
+								i(116668),	-- Armoured Frostboar
+							}),
+						},
+					}),
+				}),
+				n(-136, { 	-- Invasions
 					["groups"] = {
 						i(120320, { -- Invader's Abandoned Sack
 							["groups"] = {
@@ -168,12 +157,12 @@ _.Zones =
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
 								i(115424),	-- Mace of Amaranthine Power
-								i(115423),	-- Megana's Staff of Knowledge
-								i(115420),	-- Scherer's Culinary Chopper
+								i(115423),	-- Megan's Staff of Knowledge
+								i(115420),	-- Scherer's Culinry Chopper
 								i(115419),	-- Wall-Watcher's Longbow
 								i(115421),	-- Zolvolt's Shocking Mace
 								i(115405),	-- Cowl of Grim Shadows
-								i(115404),	-- Oana's Observant Gaze
+								i(115404),	-- Oan's Observant Gaze
 								i(115406),	-- One-Eyed Chain Helm
 								i(115407),	-- Tehax's Penetrating Visage
 								i(115414),	-- Gruntslayer Shoulderguards
@@ -194,12 +183,12 @@ _.Zones =
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
 								i(115424),	-- Mace of Amaranthine Power
-								i(115423),	-- Megana's Staff of Knowledge
-								i(115420),	-- Scherer's Culinary Chopper
+								i(115423),	-- Megan's Staff of Knowledge
+								i(115420),	-- Scherer's Culinry Chopper
 								i(115419),	-- Wall-Watcher's Longbow
 								i(115421),	-- Zolvolt's Shocking Mace
 								i(115405),	-- Cowl of Grim Shadows
-								i(115404),	-- Oana's Observant Gaze
+								i(115404),	-- Oan's Observant Gaze
 								i(115406),	-- One-Eyed Chain Helm
 								i(115407),	-- Tehax's Penetrating Visage
 								i(115414),	-- Gruntslayer Shoulderguards
@@ -224,12 +213,12 @@ _.Zones =
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
 								i(115424),	-- Mace of Amaranthine Power
-								i(115423),	-- Megana's Staff of Knowledge
-								i(115420),	-- Scherer's Culinary Chopper
+								i(115423),	-- Megan's Staff of Knowledge
+								i(115420),	-- Scherer's Culinry Chopper
 								i(115419),	-- Wall-Watcher's Longbow
 								i(115421),	-- Zolvolt's Shocking Mace
 								i(115405),	-- Cowl of Grim Shadows
-								i(115404),	-- Oana's Observant Gaze
+								i(115404),	-- Oan's Observant Gaze
 								i(115406),	-- One-Eyed Chain Helm
 								i(115407),	-- Tehax's Penetrating Visage
 								i(115414),	-- Gruntslayer Shoulderguards
@@ -254,8 +243,8 @@ _.Zones =
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
 								i(115424),	-- Mace of Amaranthine Power
-								i(115423),	-- Megana's Staff of Knowledge
-								i(115420),	-- Scherer's Culinary Chopper
+								i(115423),	-- Megan's Staff of Knowledge
+								i(115420),	-- Scherer's Culinry Chopper
 								i(115419),	-- Wall-Watcher's Longbow
 								i(115421),	-- Zolvolt's Shocking Mace
 								i(122186),	-- Blackrock Ironweave Cloak
@@ -263,7 +252,7 @@ _.Zones =
 								i(122181),	-- Gorian Strategy Map
 								i(122185),	-- Starblotter's Spellwrap
 								i(122182),	-- Voidwhisper Drape
-								i(115404),	-- Oana's Observant Gaze
+								i(115404),	-- Oan's Observant Gaze
 								i(115412),	-- Wall-Breaker's Shoulderpads
 								i(122167),	-- Pact-Bound Velvet Gloves
 								i(122174),	-- Wriggling Vineweave Cinch
@@ -301,8 +290,8 @@ _.Zones =
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
 								i(115424),	-- Mace of Amaranthine Power
-								i(115423),	-- Megana's Staff of Knowledge
-								i(115420),	-- Scherer's Culinary Chopper
+								i(115423),	-- Megan's Staff of Knowledge
+								i(115420),	-- Scherer's Culinry Chopper
 								i(115419),	-- Wall-Watcher's Longbow
 								i(115421),	-- Zolvolt's Shocking Mace
 								i(122186),	-- Blackrock Ironweave Cloak
@@ -310,7 +299,7 @@ _.Zones =
 								i(122181),	-- Gorian Strategy Map
 								i(122185),	-- Starblotter's Spellwrap
 								i(122182),	-- Voidwhisper Drape
-								i(115404),	-- Oana's Observant Gaze
+								i(115404),	-- Oan's Observant Gaze
 								i(115412),	-- Wall-Breaker's Shoulderpads
 								i(122167),	-- Pact-Bound Velvet Gloves
 								i(122174),	-- Wriggling Vineweave Cinch
@@ -347,8 +336,8 @@ _.Zones =
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
 								i(115424),	-- Mace of Amaranthine Power
-								i(115423),	-- Megana's Staff of Knowledge
-								i(115420),	-- Scherer's Culinary Chopper
+								i(115423),	-- Megan's Staff of Knowledge
+								i(115420),	-- Scherer's Culinry Chopper
 								i(115419),	-- Wall-Watcher's Longbow
 								i(115421),	-- Zolvolt's Shocking Mace
 								i(122186),	-- Blackrock Ironweave Cloak
@@ -356,7 +345,7 @@ _.Zones =
 								i(122181),	-- Gorian Strategy Map
 								i(122185),	-- Starblotter's Spellwrap
 								i(122182),	-- Voidwhisper Drape
-								i(115404),	-- Oana's Observant Gaze
+								i(115404),	-- Oan's Observant Gaze
 								i(115412),	-- Wall-Breaker's Shoulderpads
 								i(122167),	-- Pact-Bound Velvet Gloves
 								i(122174),	-- Wriggling Vineweave Cinch
@@ -393,8 +382,8 @@ _.Zones =
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
 								i(115424),	-- Mace of Amaranthine Power
-								i(115423),	-- Megana's Staff of Knowledge
-								i(115420),	-- Scherer's Culinary Chopper
+								i(115423),	-- Megan's Staff of Knowledge
+								i(115420),	-- Scherer's Culinry Chopper
 								i(115419),	-- Wall-Watcher's Longbow
 								i(115421),	-- Zolvolt's Shocking Mace
 								i(122186),	-- Blackrock Ironweave Cloak
@@ -402,7 +391,7 @@ _.Zones =
 								i(122181),	-- Gorian Strategy Map
 								i(122185),	-- Starblotter's Spellwrap
 								i(122182),	-- Voidwhisper Drape
-								i(115404),	-- Oana's Observant Gaze
+								i(115404),	-- Oan's Observant Gaze
 								i(115412),	-- Wall-Breaker's Shoulderpads
 								i(122167),	-- Pact-Bound Velvet Gloves
 								i(122174),	-- Wriggling Vineweave Cinch
@@ -439,8 +428,8 @@ _.Zones =
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
 								i(115424),	-- Mace of Amaranthine Power
-								i(115423),	-- Megana's Staff of Knowledge
-								i(115420),	-- Scherer's Culinary Chopper
+								i(115423),	-- Megan's Staff of Knowledge
+								i(115420),	-- Scherer's Culinry Chopper
 								i(115419),	-- Wall-Watcher's Longbow
 								i(115421),	-- Zolvolt's Shocking Mace
 								i(122186),	-- Blackrock Ironweave Cloak
@@ -448,7 +437,7 @@ _.Zones =
 								i(122181),	-- Gorian Strategy Map
 								i(122185),	-- Starblotter's Spellwrap
 								i(122182),	-- Voidwhisper Drape
-								i(115404),	-- Oana's Observant Gaze
+								i(115404),	-- Oan's Observant Gaze
 								i(115412),	-- Wall-Breaker's Shoulderpads
 								i(122167),	-- Pact-Bound Velvet Gloves
 								i(122174),	-- Wriggling Vineweave Cinch
@@ -475,7 +464,7 @@ _.Zones =
 							},
 							["description"] = "Legion Beacon summons this boss. It has a chance to be obtained during a Shadow Council Invasion.",
 						}),
-						n(90995, { -- Mage Lord Gogg'nathog
+						n(90995, { -- Mage Lord Gogg'nthog
 							["groups"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
@@ -485,8 +474,8 @@ _.Zones =
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
 								i(115424),	-- Mace of Amaranthine Power
-								i(115423),	-- Megana's Staff of Knowledge
-								i(115420),	-- Scherer's Culinary Chopper
+								i(115423),	-- Megan's Staff of Knowledge
+								i(115420),	-- Scherer's Culinry Chopper
 								i(115419),	-- Wall-Watcher's Longbow
 								i(115421),	-- Zolvolt's Shocking Mace
 								i(122186),	-- Blackrock Ironweave Cloak
@@ -494,7 +483,7 @@ _.Zones =
 								i(122181),	-- Gorian Strategy Map
 								i(122185),	-- Starblotter's Spellwrap
 								i(122182),	-- Voidwhisper Drape
-								i(115404),	-- Oana's Observant Gaze
+								i(115404),	-- Oan's Observant Gaze
 								i(115412),	-- Wall-Breaker's Shoulderpads
 								i(122167),	-- Pact-Bound Velvet Gloves
 								i(122174),	-- Wriggling Vineweave Cinch
@@ -531,8 +520,8 @@ _.Zones =
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
 								i(115424),	-- Mace of Amaranthine Power
-								i(115423),	-- Megana's Staff of Knowledge
-								i(115420),	-- Scherer's Culinary Chopper
+								i(115423),	-- Megan's Staff of Knowledge
+								i(115420),	-- Scherer's Culinry Chopper
 								i(115419),	-- Wall-Watcher's Longbow
 								i(115421),	-- Zolvolt's Shocking Mace
 								i(122186),	-- Blackrock Ironweave Cloak
@@ -540,7 +529,7 @@ _.Zones =
 								i(122181),	-- Gorian Strategy Map
 								i(122185),	-- Starblotter's Spellwrap
 								i(122182),	-- Voidwhisper Drape
-								i(115404),	-- Oana's Observant Gaze
+								i(115404),	-- Oan's Observant Gaze
 								i(115412),	-- Wall-Breaker's Shoulderpads
 								i(122167),	-- Pact-Bound Velvet Gloves
 								i(122174),	-- Wriggling Vineweave Cinch
@@ -568,9 +557,9 @@ _.Zones =
 							["description"] = "Heart of Oak summons this boss. It has a chance to be obtained during a Botani Invasion.",
 						}),
 					},
-					["description"] = "To trigger an invasion, you need to do an assault quest or purchase a scouting missive from the garrison quartermaster. \n\nBotani Invasion -- Assault on Lost Veil Anzu, Assault on the Everbloom Wilds \n\nGoren Invasion -- Assault on Magnarok, Assault on the Broken Precipice \n\nIron Horde Invasion -- Assault on Mok'gol Watchpost, Assault on the Iron Siegeworks, Assault on the Pit, Battle in Ashran \n\nOgre Invasion -- Assault on Stonefury Cliffs, Assault on the Gorian Proving Grounds, Challenge at the Ring of Blood \n\nShadow Council Invasion -- Assault on Shattrath Harbor, Assault on the Heart of Shattrath \n\nShadowmoon Invasion -- Assault on Darktide Roost, Assault on Pillars of Fate, Assault on Skettis, Assault on Socrethar's Rise \n\nYou can earn Bronze, Silver, Gold, and Platinum rewards once per week per toon.",
+					["description"] = "To trigger an invasion, you need to do an assault quest or purchase a scouting missive from the garrison quartermaster. \n\nBotani Invasion -- Assault on Lost Veil Anzu, Assault on the Everbloom Wilds \n\nGoren Invasion -- Assault on Magnrok, Assault on the Broken Precipice \n\nIron Horde Invasion -- Assault on Mok'gol Watchpost, Assault on the Iron Siegeworks, Assault on the Pit, Battle in Ashran \n\nOgre Invasion -- Assault on Stonefury Cliffs, Assault on the Gorian Proving Grounds, Challenge at the Ring of Blood \n\nShadow Council Invasion -- Assault on Shattrath Harbor, Assault on the Heart of Shattrath \n\nShadowmoon Invasion -- Assault on Darktide Roost, Assault on Pillars of Fate, Assault on Skettis, Assault on Socrethar's Rise \n\nYou can earn Bronze, Silver, Gold, and Platinum rewards once per week per toon.",
 				}),					
-				na(-299, {  -- Missions
+				n(-299, {  -- Missions
 					["groups"] = {
 						n(84698, { 		-- Command Table
 							["groups"] = {
@@ -623,7 +612,7 @@ _.Zones =
 										i(113666),	-- Absalom's Bloody Bulwark
 										i(113653),	-- Maw of Souls
 										i(113600),	-- Casque of the Iron Bomber
-										i(113608),	-- Hood of Dispassionate Execution
+										i(113608),	-- Hood of Dispassionte Execution
 										i(113845),	-- Rune-Enscribed Hood
 										i(113596),	-- Vilebreath Mask
 										i(113661),	-- Deep Walker Paulders
@@ -632,7 +621,7 @@ _.Zones =
 										i(113855),	-- Uncrushable Shoulderplates
 										i(113657),	-- Cloak of Creeping Necrosis
 										i(113637),	-- Cloak of Frenzied Rage
-										i(113830),	-- Cloak of Ruminant Deception
+										i(113830),	-- Cloak of Ruminnt Deception
 										i(113847),	-- Cloak of Searing Shadows
 										i(113605),	-- Fireproof Greatcloak
 										i(113852),	-- Force Nova Cloak
@@ -673,7 +662,7 @@ _.Zones =
 										i(113666),	-- Absalom's Bloody Bulwark
 										i(113653),	-- Maw of Souls
 										i(113600),	-- Casque of the Iron Bomber
-										i(113608),	-- Hood of Dispassionate Execution
+										i(113608),	-- Hood of Dispassionte Execution
 										i(113845),	-- Rune-Enscribed Hood
 										i(113596),	-- Vilebreath Mask
 										i(113661),	-- Deep Walker Paulders
@@ -682,7 +671,7 @@ _.Zones =
 										i(113855),	-- Uncrushable Shoulderplates
 										i(113657),	-- Cloak of Creeping Necrosis
 										i(113637),	-- Cloak of Frenzied Rage
-										i(113830),	-- Cloak of Ruminant Deception
+										i(113830),	-- Cloak of Ruminnt Deception
 										i(113847),	-- Cloak of Searing Shadows
 										i(113605),	-- Fireproof Greatcloak
 										i(113852),	-- Force Nova Cloak
@@ -723,7 +712,7 @@ _.Zones =
 										i(113666),	-- Absalom's Bloody Bulwark
 										i(113653),	-- Maw of Souls
 										i(113600),	-- Casque of the Iron Bomber
-										i(113608),	-- Hood of Dispassionate Execution
+										i(113608),	-- Hood of Dispassionte Execution
 										i(113845),	-- Rune-Enscribed Hood
 										i(113596),	-- Vilebreath Mask
 										i(113661),	-- Deep Walker Paulders
@@ -732,7 +721,7 @@ _.Zones =
 										i(113855),	-- Uncrushable Shoulderplates
 										i(113657),	-- Cloak of Creeping Necrosis
 										i(113637),	-- Cloak of Frenzied Rage
-										i(113830),	-- Cloak of Ruminant Deception
+										i(113830),	-- Cloak of Ruminnt Deception
 										i(113847),	-- Cloak of Searing Shadows
 										i(113605),	-- Fireproof Greatcloak
 										i(113852),	-- Force Nova Cloak
@@ -819,7 +808,7 @@ _.Zones =
 										i(113967),	-- Deckhand's Rope Belt
 										i(113930),	-- Earthgrasp Girdle
 										i(113907),	-- Girdle of Unconquered Glory
-										i(113955),	-- Grenadier's Belt
+										i(113955),	-- Grendier's Belt
 										i(113941),	-- Seeking Ember Girdle
 										i(113875),	-- Corrosion-Proof Legguards
 										i(113921),	-- Firestorm Legplates
@@ -828,7 +817,7 @@ _.Zones =
 										i(113989),	-- Shattering Smash Leggings
 										i(113970),	-- Turret Mechanic's Legwraps
 										i(113864),	-- Cavedweller's Climbers
-										i(113895),	-- Furnace Tender's Treads
+										i(113895),	-- Furnce Tender's Treads
 										i(113942),	-- Inferno Breath Sandals
 										i(113961),	-- Iron Bellow Sabatons
 										i(113954),	-- Railwalker's Ratcheted Boots
@@ -889,7 +878,7 @@ _.Zones =
 										i(113967),	-- Deckhand's Rope Belt
 										i(113930),	-- Earthgrasp Girdle
 										i(113907),	-- Girdle of Unconquered Glory
-										i(113955),	-- Grenadier's Belt
+										i(113955),	-- Grendier's Belt
 										i(113941),	-- Seeking Ember Girdle
 										i(113875),	-- Corrosion-Proof Legguards
 										i(113921),	-- Firestorm Legplates
@@ -898,7 +887,7 @@ _.Zones =
 										i(113989),	-- Shattering Smash Leggings
 										i(113970),	-- Turret Mechanic's Legwraps
 										i(113864),	-- Cavedweller's Climbers
-										i(113895),	-- Furnace Tender's Treads
+										i(113895),	-- Furnce Tender's Treads
 										i(113942),	-- Inferno Breath Sandals
 										i(113961),	-- Iron Bellow Sabatons
 										i(113954),	-- Railwalker's Ratcheted Boots
@@ -959,7 +948,7 @@ _.Zones =
 										i(113967),	-- Deckhand's Rope Belt
 										i(113930),	-- Earthgrasp Girdle
 										i(113907),	-- Girdle of Unconquered Glory
-										i(113955),	-- Grenadier's Belt
+										i(113955),	-- Grendier's Belt
 										i(113941),	-- Seeking Ember Girdle
 										i(113875),	-- Corrosion-Proof Legguards
 										i(113921),	-- Firestorm Legplates
@@ -968,7 +957,7 @@ _.Zones =
 										i(113989),	-- Shattering Smash Leggings
 										i(113970),	-- Turret Mechanic's Legwraps
 										i(113864),	-- Cavedweller's Climbers
-										i(113895),	-- Furnace Tender's Treads
+										i(113895),	-- Furnce Tender's Treads
 										i(113942),	-- Inferno Breath Sandals
 										i(113961),	-- Iron Bellow Sabatons
 										i(113954),	-- Railwalker's Ratcheted Boots
@@ -1175,7 +1164,7 @@ _.Zones =
 									i(114503), -- Undying Boots 
 								}),	
 								i(114087, { -- Grandiose Trinket
-									i(114552),	-- Grandiose Carnage
+									i(114552),	-- Grandiose Carnge
 									i(114549),	-- Grandiose Plans
 									i(114550),	-- Grandiose Power
 									i(114551),	-- Grandiose Prescience
@@ -1210,7 +1199,7 @@ _.Zones =
 								}),
 								i(128391, { -- Iron Fleet Treasure Chest [Raid Finder]
 									["groups"] = {
-										i(128194),	-- Snarlwood Recurve Bow
+										i(128194),	-- Snrlwood Recurve Bow
 										i(128079),	-- Boisterous Bellower's Hood
 										i(128134),	-- Demonbreaker Helm
 										i(128128),	-- Felfume Hood
@@ -1263,7 +1252,7 @@ _.Zones =
 									["groups"] = {
 										i(124331),	-- Casque of Foul Concentration
 										i(124294),	-- Coif of Untrue Sight
-										i(124158),	-- Countenance of the Revenant
+										i(124158),	-- Countennce of the Revennt
 										i(124157),	-- Cowl of a Thousand Hungers
 										i(124159),	-- Demon Prince's Ascendant Crown
 										i(124258),	-- Gurtogg's Discarded Hood
@@ -1292,13 +1281,13 @@ _.Zones =
 										i(124145),	-- Ironthread Greatcloak
 										i(124139),	-- Polymorphic Cloak of Absorption
 										i(124142),	-- Rugged Bloodcaked Drape
-										i(124137),	-- Shawl of Sanguinary Ritual
+										i(124137),	-- Shawl of Sanguinry Ritual
 										i(124143),	-- Soulbinder's Greatcloak
 										i(124136),	-- Sparkburnt Welder's Cloak
 										i(124147),	-- Void Lord's Wizened Cloak
 										i(124133),	-- Windswept Wanderer's Drape
 										i(124169),	-- Ancient Gorestained Wrap
-										i(124244),	-- Chestguard of Gnawing Desire
+										i(124244),	-- Chestguard of Gnwing Desire
 										i(124316),	-- Chestguard of Ill Fate
 										i(124168),	-- Felgrease-Smudged Robes
 										i(124281),	-- Jungle Flayer's Chestguard
@@ -1316,7 +1305,7 @@ _.Zones =
 										i(124184),	-- Cursed Blood Bracers
 										i(124278),	-- Gorebound Wristguards
 										i(124351),	-- Hot-Rolled Iron Bracers
-										i(124280),	-- Manacles of the Multitudes
+										i(124280),	-- Mancles of the Multitudes
 										i(124183),	-- Powder-Singed Bracers
 										i(124185),	-- Pristine Man'ari Cuffs
 										i(124352),	-- Wristplate of the Wretched
@@ -1326,7 +1315,7 @@ _.Zones =
 										i(124254),	-- Felfinger Runegloves
 										i(124289),	-- Hand Loader Gauntlets
 										i(124253),	-- Insulated Wirer's Gloves
-										i(124290),	-- Mitts of Eternal Famishment
+										i(124290),	-- Mitts of Eternl Famishment
 										i(124153),	-- Satin Gloves of Injustice
 										i(124152),	-- Velvet Bloodweaver Gloves
 										i(124275),	-- Belt of Misconceived Loyalty
@@ -1344,9 +1333,9 @@ _.Zones =
 										i(124300),	-- Haughty Chain Legguards
 										i(124298),	-- Iron Dragoon's Pantaloons
 										i(124299),	-- Kilt of Self-Reflection
-										i(124265),	-- Leggings of Eternal Terror
+										i(124265),	-- Leggings of Eternl Terror
 										i(124164),	-- Leggings of the Iron Summoner
-										i(124337),	-- Legguards of Grievous Consonances
+										i(124337),	-- Legguards of Grievous Consonnces
 										i(124285),	-- Die-Cast Ringmail Sabatons
 										i(124251),	-- Oppressor's Merciless Treads
 										i(124320),	-- Shell-Resistant Stompers
@@ -1361,7 +1350,7 @@ _.Zones =
 									["groups"] = {
 										i(124331),	-- Casque of Foul Concentration
 										i(124294),	-- Coif of Untrue Sight
-										i(124158),	-- Countenance of the Revenant
+										i(124158),	-- Countennce of the Revennt
 										i(124157),	-- Cowl of a Thousand Hungers
 										i(124159),	-- Demon Prince's Ascendant Crown
 										i(124258),	-- Gurtogg's Discarded Hood
@@ -1390,13 +1379,13 @@ _.Zones =
 										i(124145),	-- Ironthread Greatcloak
 										i(124139),	-- Polymorphic Cloak of Absorption
 										i(124142),	-- Rugged Bloodcaked Drape
-										i(124137),	-- Shawl of Sanguinary Ritual
+										i(124137),	-- Shawl of Sanguinry Ritual
 										i(124143),	-- Soulbinder's Greatcloak
 										i(124136),	-- Sparkburnt Welder's Cloak
 										i(124147),	-- Void Lord's Wizened Cloak
 										i(124133),	-- Windswept Wanderer's Drape
 										i(124169),	-- Ancient Gorestained Wrap
-										i(124244),	-- Chestguard of Gnawing Desire
+										i(124244),	-- Chestguard of Gnwing Desire
 										i(124316),	-- Chestguard of Ill Fate
 										i(124168),	-- Felgrease-Smudged Robes
 										i(124281),	-- Jungle Flayer's Chestguard
@@ -1414,7 +1403,7 @@ _.Zones =
 										i(124184),	-- Cursed Blood Bracers
 										i(124278),	-- Gorebound Wristguards
 										i(124351),	-- Hot-Rolled Iron Bracers
-										i(124280),	-- Manacles of the Multitudes
+										i(124280),	-- Mancles of the Multitudes
 										i(124183),	-- Powder-Singed Bracers
 										i(124185),	-- Pristine Man'ari Cuffs
 										i(124352),	-- Wristplate of the Wretched
@@ -1424,7 +1413,7 @@ _.Zones =
 										i(124254),	-- Felfinger Runegloves
 										i(124289),	-- Hand Loader Gauntlets
 										i(124253),	-- Insulated Wirer's Gloves
-										i(124290),	-- Mitts of Eternal Famishment
+										i(124290),	-- Mitts of Eternl Famishment
 										i(124153),	-- Satin Gloves of Injustice
 										i(124152),	-- Velvet Bloodweaver Gloves
 										i(124275),	-- Belt of Misconceived Loyalty
@@ -1442,9 +1431,9 @@ _.Zones =
 										i(124300),	-- Haughty Chain Legguards
 										i(124298),	-- Iron Dragoon's Pantaloons
 										i(124299),	-- Kilt of Self-Reflection
-										i(124265),	-- Leggings of Eternal Terror
+										i(124265),	-- Leggings of Eternl Terror
 										i(124164),	-- Leggings of the Iron Summoner
-										i(124337),	-- Legguards of Grievous Consonances
+										i(124337),	-- Legguards of Grievous Consonnces
 										i(124285),	-- Die-Cast Ringmail Sabatons
 										i(124251),	-- Oppressor's Merciless Treads
 										i(124320),	-- Shell-Resistant Stompers
@@ -1459,7 +1448,7 @@ _.Zones =
 									["groups"] = {
 										i(124331),	-- Casque of Foul Concentration
 										i(124294),	-- Coif of Untrue Sight
-										i(124158),	-- Countenance of the Revenant
+										i(124158),	-- Countennce of the Revennt
 										i(124157),	-- Cowl of a Thousand Hungers
 										i(124159),	-- Demon Prince's Ascendant Crown
 										i(124258),	-- Gurtogg's Discarded Hood
@@ -1488,13 +1477,13 @@ _.Zones =
 										i(124145),	-- Ironthread Greatcloak
 										i(124139),	-- Polymorphic Cloak of Absorption
 										i(124142),	-- Rugged Bloodcaked Drape
-										i(124137),	-- Shawl of Sanguinary Ritual
+										i(124137),	-- Shawl of Sanguinry Ritual
 										i(124143),	-- Soulbinder's Greatcloak
 										i(124136),	-- Sparkburnt Welder's Cloak
 										i(124147),	-- Void Lord's Wizened Cloak
 										i(124133),	-- Windswept Wanderer's Drape
 										i(124169),	-- Ancient Gorestained Wrap
-										i(124244),	-- Chestguard of Gnawing Desire
+										i(124244),	-- Chestguard of Gnwing Desire
 										i(124316),	-- Chestguard of Ill Fate
 										i(124168),	-- Felgrease-Smudged Robes
 										i(124281),	-- Jungle Flayer's Chestguard
@@ -1512,7 +1501,7 @@ _.Zones =
 										i(124184),	-- Cursed Blood Bracers
 										i(124278),	-- Gorebound Wristguards
 										i(124351),	-- Hot-Rolled Iron Bracers
-										i(124280),	-- Manacles of the Multitudes
+										i(124280),	-- Mancles of the Multitudes
 										i(124183),	-- Powder-Singed Bracers
 										i(124185),	-- Pristine Man'ari Cuffs
 										i(124352),	-- Wristplate of the Wretched
@@ -1522,7 +1511,7 @@ _.Zones =
 										i(124254),	-- Felfinger Runegloves
 										i(124289),	-- Hand Loader Gauntlets
 										i(124253),	-- Insulated Wirer's Gloves
-										i(124290),	-- Mitts of Eternal Famishment
+										i(124290),	-- Mitts of Eternl Famishment
 										i(124153),	-- Satin Gloves of Injustice
 										i(124152),	-- Velvet Bloodweaver Gloves
 										i(124275),	-- Belt of Misconceived Loyalty
@@ -1540,9 +1529,9 @@ _.Zones =
 										i(124300),	-- Haughty Chain Legguards
 										i(124298),	-- Iron Dragoon's Pantaloons
 										i(124299),	-- Kilt of Self-Reflection
-										i(124265),	-- Leggings of Eternal Terror
+										i(124265),	-- Leggings of Eternl Terror
 										i(124164),	-- Leggings of the Iron Summoner
-										i(124337),	-- Legguards of Grievous Consonances
+										i(124337),	-- Legguards of Grievous Consonnces
 										i(124285),	-- Die-Cast Ringmail Sabatons
 										i(124251),	-- Oppressor's Merciless Treads
 										i(124320),	-- Shell-Resistant Stompers
@@ -1657,15 +1646,15 @@ _.Zones =
 					},
 					["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r"
 				}),	
-				na(-25, { 	-- Pet Battle
-					qa(38299, { 
+				n(-25, { 	-- Pet Battle
+					q(38299, { 
 						i(122535, {
 							i(122532), 	-- Pet
 							i(122534), 	-- Pet
 							i(122533), 	-- Pet
 						}),
 					}),
-					qa(37644, {
+					q(37644, {
 						i(118697, {
 							i(118578), 	-- Pet
 							i(113623), 	-- Pet
@@ -1677,11 +1666,11 @@ _.Zones =
 						}),
 					}),
 				}),
-				na(-17, { 	-- Quests
+				n(-17, { 	-- Quests
 					q(36624, { -- Ashran Appearance
 						["groups"] = {
 						},
-						["qg"] = 79953, -- Lieutenant Thorn
+						["qg"] = 79953, -- Lieutennt Thorn
 					}),
 					q(38356, { -- Bringing the Bass
 						i(122613, { -- Stash of Dusty Music Rolls
@@ -1884,7 +1873,7 @@ _.Zones =
 						["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
 					}),
 					n(-125, { -- Dwarven Bunker
-						qa(37092, {
+						q(37092, {
 							i(118365),
 						}),
 					}),
@@ -1918,7 +1907,7 @@ _.Zones =
 							i(115506), -- Toy
 						}),
 					}),
-					n(-128, { -- Lunarfall Inn
+					n(-128, { -- Lunrfall Inn
 						desc(i(119036, { -- Box of Storied Treasures [4]
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109779),	-- Ancient Draenic Loop
@@ -2015,14 +2004,14 @@ _.Zones =
 							i(109970),	-- Hood of Arcane Mystery
 							i(109975),	-- Hood of Burning Focus
 							i(109972),	-- Hood of Swirling Light
-							i(109876),	-- Incarnadine Bracers
-							i(109892),	-- Incarnadine Breastplate
-							i(109856),	-- Incarnadine Gauntlets
-							i(109837),	-- Incarnadine Girdle
-							i(109985),	-- Incarnadine Greathelm
-							i(109793),	-- Incarnadine Greaves
-							i(109818),	-- Incarnadine Legplates
-							i(109943),	-- Incarnadine Shoulderguard
+							i(109876),	-- Incarndine Bracers
+							i(109892),	-- Incarndine Breastplate
+							i(109856),	-- Incarndine Gauntlets
+							i(109837),	-- Incarndine Girdle
+							i(109985),	-- Incarndine Greathelm
+							i(109793),	-- Incarndine Greaves
+							i(109818),	-- Incarndine Legplates
+							i(109943),	-- Incarndine Shoulderguard
 							i(109875),	-- Lavalink Bracers
 							i(109836),	-- Lavalink Girdle
 							i(109855),	-- Lavalink Grips
@@ -2219,14 +2208,14 @@ _.Zones =
 							i(109970),	-- Hood of Arcane Mystery
 							i(109975),	-- Hood of Burning Focus
 							i(109972),	-- Hood of Swirling Light
-							i(109876),	-- Incarnadine Bracers
-							i(109892),	-- Incarnadine Breastplate
-							i(109856),	-- Incarnadine Gauntlets
-							i(109837),	-- Incarnadine Girdle
-							i(109985),	-- Incarnadine Greathelm
-							i(109793),	-- Incarnadine Greaves
-							i(109818),	-- Incarnadine Legplates
-							i(109943),	-- Incarnadine Shoulderguard
+							i(109876),	-- Incarndine Bracers
+							i(109892),	-- Incarndine Breastplate
+							i(109856),	-- Incarndine Gauntlets
+							i(109837),	-- Incarndine Girdle
+							i(109985),	-- Incarndine Greathelm
+							i(109793),	-- Incarndine Greaves
+							i(109818),	-- Incarndine Legplates
+							i(109943),	-- Incarndine Shoulderguard
 							i(109875),	-- Lavalink Bracers
 							i(109836),	-- Lavalink Girdle
 							i(109983),	-- Lavalink Helm
@@ -2346,7 +2335,7 @@ _.Zones =
 								i(119037), -- Supply of Storied Rarities
 							},
 							["qg"] = 87999, --  Skylord Omnuron
-							["sourceQuests"] = { 37159 }, -- Aviana's Request
+							["sourceQuests"] = { 37159 }, -- Avian's Request
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
@@ -2391,9 +2380,9 @@ _.Zones =
 							},
 							["qg"] = 88006, -- Lonika Stillblade
 						}),
-						q(37159, {	-- Aviana's Request
+						q(37159, {	-- Avian's Request
 							["group"] = {
-								i(119093), -- Aviana's Feather
+								i(119093), -- Avian's Feather
 							},
 							["qg"] = 87999, --  Skylord Omnuron
 						}),
@@ -2453,12 +2442,12 @@ _.Zones =
 									i(109970),	-- Hood of Arcane Mystery
 									i(109975),	-- Hood of Burning Focus
 									i(109972),	-- Hood of Swirling Light
-									i(109876),	-- Incarnadine Bracers
-									i(109892),	-- Incarnadine Breastplate
-									i(109837),	-- Incarnadine Girdle
-									i(109985),	-- Incarnadine Greathelm
-									i(109793),	-- Incarnadine Greaves
-									i(109772),	-- Knucklebone of Lo'Dronar
+									i(109876),	-- Incarndine Bracers
+									i(109892),	-- Incarndine Breastplate
+									i(109837),	-- Incarndine Girdle
+									i(109985),	-- Incarndine Greathelm
+									i(109793),	-- Incarndine Greaves
+									i(109772),	-- Knucklebone of Lo'Dronr
 									i(109890),	-- Lavalink Ringmail
 									i(109800),	-- Lavalink Stompers
 									i(109978),	-- Leafmender Hood
@@ -2499,7 +2488,7 @@ _.Zones =
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
-						q(37165, {	-- Cenarion Concerns
+						q(37165, {	-- Cenrion Concerns
 							["groups"]  = {
 								i(118935), -- Ever-Blooming Frond 
 							},
@@ -2513,7 +2502,7 @@ _.Zones =
 						}),	
 						q(37151, {	-- Cold Steel
 							["groups"] = {
-								i(118918),  -- Bloody Bandanna
+								i(118918),  -- Bloody Bandann
 							},
 							["qg"] = 88026, -- John J. Keeshan
 						}),	
@@ -2576,10 +2565,10 @@ _.Zones =
 						}),
 						q(37179, {	-- For the Children!
 							["groups"] = {
-								i(118938), -- Manastorm's Duplicator 
-								follower(455), -- Millhouse Manastorm
+								i(118938), -- Manstorm's Duplicator 
+								follower(455), -- Millhouse Manstorm
 							},
-							["qg"] = 88009, -- Millhouse Manastorm
+							["qg"] = 88009, -- Millhouse Manstorm
 						}),
 						q(37146, {	-- Go Fetch
 							["groups"] = {
@@ -2664,15 +2653,15 @@ _.Zones =
 									i(109970),	-- Hood of Arcane Mystery
 									i(109975),	-- Hood of Burning Focus
 									i(109972),	-- Hood of Swirling Light
-									i(109876),	-- Incarnadine Bracers
-									i(109892),	-- Incarnadine Breastplate
-									i(109856),	-- Incarnadine Gauntlets
-									i(109837),	-- Incarnadine Girdle
-									i(109985),	-- Incarnadine Greathelm
-									i(109793),	-- Incarnadine Greaves
-									i(109818),	-- Incarnadine Legplates
-									i(109943),	-- Incarnadine Shoulderguard
-									i(109772),	-- Knucklebone of Lo'Dronar
+									i(109876),	-- Incarndine Bracers
+									i(109892),	-- Incarndine Breastplate
+									i(109856),	-- Incarndine Gauntlets
+									i(109837),	-- Incarndine Girdle
+									i(109985),	-- Incarndine Greathelm
+									i(109793),	-- Incarndine Greaves
+									i(109818),	-- Incarndine Legplates
+									i(109943),	-- Incarndine Shoulderguard
+									i(109772),	-- Knucklebone of Lo'Dronr
 									i(109875),	-- Lavalink Bracers
 									i(109855),	-- Lavalink Grips
 									i(109816),	-- Lavalink Legguards
@@ -2852,13 +2841,13 @@ _.Zones =
 									i(109970),	-- Hood of Arcane Mystery
 									i(109975),	-- Hood of Burning Focus
 									i(109972),	-- Hood of Swirling Light
-									i(109876),	-- Incarnadine Bracers
-									i(109892),	-- Incarnadine Breastplate
-									i(109837),	-- Incarnadine Girdle
-									i(109985),	-- Incarnadine Greathelm
-									i(109793),	-- Incarnadine Greaves
-									i(109818),	-- Incarnadine Legplates
-									i(109772),	-- Knucklebone of Lo'Dronar
+									i(109876),	-- Incarndine Bracers
+									i(109892),	-- Incarndine Breastplate
+									i(109837),	-- Incarndine Girdle
+									i(109985),	-- Incarndine Greathelm
+									i(109793),	-- Incarndine Greaves
+									i(109818),	-- Incarndine Legplates
+									i(109772),	-- Knucklebone of Lo'Dronr
 									i(109890),	-- Lavalink Ringmail
 									i(109800),	-- Lavalink Stompers
 									i(109978),	-- Leafmender Hood
@@ -3017,14 +3006,14 @@ _.Zones =
 									i(109958),	-- Healing Leaf Necklace
 									i(109975),	-- Hood of Burning Focus
 									i(109972),	-- Hood of Swirling Light
-									i(109876),	-- Incarnadine Bracers
-									i(109892),	-- Incarnadine Breastplate
-									i(109856),	-- Incarnadine Gauntlets
-									i(109837),	-- Incarnadine Girdle
-									i(109985),	-- Incarnadine Greathelm
-									i(109793),	-- Incarnadine Greaves
-									i(109818),	-- Incarnadine Legplates
-									i(109772),	-- Knucklebone of Lo'Dronar
+									i(109876),	-- Incarndine Bracers
+									i(109892),	-- Incarndine Breastplate
+									i(109856),	-- Incarndine Gauntlets
+									i(109837),	-- Incarndine Girdle
+									i(109985),	-- Incarndine Greathelm
+									i(109793),	-- Incarndine Greaves
+									i(109818),	-- Incarndine Legplates
+									i(109772),	-- Knucklebone of Lo'Dronr
 									i(109875),	-- Lavalink Bracers
 									i(109836),	-- Lavalink Girdle
 									i(109855),	-- Lavalink Grips
@@ -3166,7 +3155,7 @@ _.Zones =
 								i(119037),  -- Supply of Storied Rarities
 							},	
 							["qg"] = 88004, --  Zen'kiki
-							["sourceQuests"] = { 37165 }, -- Cenarion Concerns
+							["sourceQuests"] = { 37165 }, -- Cenrion Concerns
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
@@ -3223,27 +3212,27 @@ _.Zones =
 						}),
 					}),
 					n(-99, { -- Stables
-						qa(37004, {
+						q(37004, {
 							i(116675), -- Mount
 						}),
-						qa(36994, {
+						q(36994, {
 							i(116656), -- Mount
 						}),
-						qa(37021, {
+						q(37021, {
 							i(116662), -- Mount
 						}),
-						qa(37013, { 
+						q(37013, { 
 							i(116676), -- Mount
 						}),
-						qa(36982, {
+						q(36982, {
 							i(116774), -- Mount
 						}),
-						qa(37028, {
+						q(37028, {
 							i(116784), -- Mount
 						}),
 					}),
 				}),
-				na(-16, { 	-- Rares
+				n(-16, { 	-- Rares
 					n(-103, { 			-- Barn
 						o(239171, { 		-- Glass of Warm Milk
 							["groups"] = {	
@@ -3261,9 +3250,9 @@ _.Zones =
 						}),
 					}),					
 				}),
-				na(-113, { 	-- Salvage Yard
+				n(-113, { 	-- Salvage Yard
 						i(140590, {
-						n(-140, { 	-- Communal
+						n(-140, { 	-- Communl
 							["groups"] = {
 								i(119665),
 								i(119680),
@@ -3443,14 +3432,14 @@ _.Zones =
 						}),
 					}),
 				}),
-				na(82717, { -- Soulare of Andorhal
+				n(82717, { -- Soulare of Andorhal
 					["groups"] = {
 						i(117573), 		-- Toy
 					},
-					["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit from Lunarfall Inn using either Magic Debuff or Wild Aggression. |r\n|cff3399ffStep 2:|r |cff66ccffDo a /tired emote and he will award the toy. |r\n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison.|r"
+					["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit from Lunrfall Inn using either Magic Debuff or Wild Aggression. |r\n|cff3399ffStep 2:|r |cff66ccffDo a /tired emote and he will award the toy. |r\n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison.|r"
 				}),
-				na(-2, { 	-- Vendors
-					na(80159, { 	-- Arsenio Zerep <Cook>
+				n(-2, { 	-- Vendors
+					n(80159, { 	-- Arsenio Zerep <Cook>
 						i(122556),	-- Recipe: Buttered Sturgeon
 						i(122557),	-- Recipe: Jumbo Sea Dog
 						i(122558),	-- Recipe: Pickled Eel
@@ -3468,21 +3457,21 @@ _.Zones =
 						},
 						["description"] = "|cff66ccffFound at 37.4,60.2 in Frostfire Ridge - Speak with him and have him visit your garrison.|r"
 					}),
-					na(95470, { 		-- Trader Araanda 
+					n(95470, { 		-- Trader Araanda 
 						i(116655), 		-- Mount
 						i(116667), 		-- Mount
 						i(127864), 		-- Toy
 						i(127868), 		-- Pet
 					}),
-					na(91020, { 	-- Enchantress Ismae  (dust trader)
+					n(91020, { 	-- Enchantress Ismae  (dust trader)
 						i(122711),
 					}),
-					na(91025, 	{	-- Dorothy "Two"  (fur trader)
+					n(91025, 	{	-- Dorothy "Two"  (fur trader)
 						i(122716),
 						i(127724),
 						i(127742),
 					}),
-					na(91404, {		-- Samantha Scarlet <Herb Trader>
+					n(91404, {		-- Samantha Scarlet <Herb Trader>
 						i(108996, {	-- Alchemical Catalyst
 							i(122599, {	-- Tome of Sorcerous Elements
 								["spellID"] = 0,
@@ -3518,7 +3507,7 @@ _.Zones =
 							i(128410),	-- Technique: Mass Mill Fireweed
 							i(128409),	-- Technique: Mass Mill Frostweed
 							i(128411),	-- Technique: Mass Mill Gorgrond Flytrap
-							i(128413),	-- Technique: Mass Mill Nagrand Arrowbloom
+							i(128413),	-- Technique: Mass Mill ngrand Arrowbloom
 							i(128412),	-- Technique: Mass Mill Starflower
 							i(128414),	-- Technique: Mass Mill Talador Orchid
 							i(127723),	-- Technique: Mighty Ensorcelled Tarot
@@ -3535,7 +3524,7 @@ _.Zones =
 							i(122710),	-- Recipe: Primal Alchemy
 						}),
 					}),	
-					na(88223, { 	-- Sergeant Crowler - Garrison Quartermaster
+					n(88223, { 	-- Sergeant Crowler - Garrison Quartermaster
 						["qgs"] = {78564, 88223},
 						["groups"] = {
 							i(114931, {	-- Cerulean Pigment
@@ -3543,12 +3532,12 @@ _.Zones =
 							}),
 						},
 					}),
-					na(91024, { 	-- Jake the Fox - Leather Trader
+					n(91024, { 	-- Jake the Fox - Leather Trader
 						i(122715),
 						i(127722),
 						i(127740),
 					}),
-					na(90894, { 	-- Alexi Hackercam  - Ore Trader
+					n(90894, { 	-- Alexi Hackercam  - Ore Trader
 						i(122705),
 						i(122712),
 						i(122714),
@@ -3564,12 +3553,12 @@ _.Zones =
 						i(127747),
 					}),
 					n(-104, { 			-- Barracks
-						na(77379, { 		-- Jonathan Stephens 
+						n(77379, { 		-- Jonthan Stephens 
 							i(122298), 			-- Toy
 						}),
 					}),
 					n(-125, {	-- Dwarven Bunker
-						na(77377, {	-- Kristen Stoneforge
+						n(77377, {	-- Kristen Stoneforge
 							i(113681, { -- Iron Horde Scraps
 								n(-131 , {	-- Shadowmoon Set
 									i(113801),	-- Shadowmoon Cowl
@@ -3626,7 +3615,7 @@ _.Zones =
 					}),
 			--[[							
 					n(-106, { 		-- Engineering Works
-					na(77365, { 		-- Zaren Hoffle 
+					n(77365, { 		-- Zaren Hoffle 
 							i(111921), 		-- Teaches Gearspring parts, ultimate gnomish army knife, goblin glider kit, mecha-blast rocket, secrets of draenor engineering, shieldtronic shield, stealthman 54
 							i(118476),
 							i(118477),
@@ -3652,7 +3641,7 @@ _.Zones =
 					}),
 			]]--							
 					n(-107, { 			-- Fishing Shack
-						n(85984, { 			-- Nat Pagle 
+						n(85984, { 			-- nt Pagle 
 							i(114919), 			-- Pet
 							i(117404), 			-- Pet
 							i(87791), 			-- Mount
@@ -3660,7 +3649,7 @@ _.Zones =
 					}),
 			--[[						
 					n(-108, { 		-- Gem Boutique
-						na(77356, { 		-- Costan Highwall 
+						n(77356, { 		-- Costan Highwall 
 							i(115539), 			-- Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
 							i(116078),		
 							i(116079),
@@ -3686,7 +3675,7 @@ _.Zones =
 					}),
 			]]--							
 					n(-110, { 			-- Herb Garden
-						na(85344, { 		-- Naron Bloomthistle  
+						n(85344, { 		-- nron Bloomthistle  
 							i(110721), 			-- Pet
 							i(118559),
 							i(118560),
@@ -3695,13 +3684,13 @@ _.Zones =
 							i(118568),
 						}),
 					}),
-					n(-128, { 			-- Lunarfall Inn
-						na(77368, { 		-- Madison Clark 
+					n(-128, { 			-- Lunrfall Inn
+						n(77368, { 		-- Madison Clark 
 							i(119207), 
 						}),
 					}),
-					n(-112, { 			-- Menagerie
-						na(94512, { 		-- Tiffy Trapspring 
+					n(-112, { 			-- Mengerie
+						n(94512, { 		-- Tiffy Trapspring 
 							i(116415, { -- Pet Charm
 								i(127704), -- Bloodthorn Hatchling
 								i(127703), -- Dusty Sporewing
@@ -3715,7 +3704,7 @@ _.Zones =
 					}),
 			--[[						
 					n(-114, { 		-- Scribe's Quarters
-						na(77372, { 	-- Eric Broadoak 
+						n(77372, { 	-- Eric Broadoak 
 							i(111923), 		-- Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 							i(118605),
 							i(118606),
@@ -3728,7 +3717,7 @@ _.Zones =
 						}),			
 					}),
 					n(-116, { 		-- Tailoring Emporium
-						na(77382, { 	-- Christopher Macdonald 
+						n(77382, { 	-- Christopher Macdonld 
 							i(115357), 		-- Teaches Sumptious cowl,leggings, robes, hexweave cloth, secrets of draenor tailoring
 							i(114852),
 							i(114853),
@@ -3749,7 +3738,7 @@ _.Zones =
 						}),	
 					}),
 					n(-117, { 		-- The Forge
-						na(77359, { 	-- Auria Irondreamer
+						n(77359, { 	-- Auria Irondreamer
 							i(115356),		-- Teaches Smoldering Breastplate, Greaves, Helm, Truesteel Ingot, Secrets of Draenor Blacksmithing
 							i(116729),
 							i(116730),
@@ -3774,7 +3763,7 @@ _.Zones =
 						}),
 					}),
 					n(-118, { 		-- The Tannery
-						na(77383, { 	-- Anders Longstitch
+						n(77383, { 	-- Anders Longstitch
 							i(115358),		-- Teaches Journeying helm, robes, slacks -- Traveling helm, leggings, tunic, burnished leather, secrets of draenor leatherworking
 							i(116325),
 							i(116326),
@@ -3806,7 +3795,7 @@ _.Zones =
 					}),
 			]]--							
 					n(-119, { 			-- Trading Post
-						na(85427, { 	-- Maaria - Laughing Skull Quartermaster 
+						n(85427, { 	-- Maaria - Laughing Skull Quartermaster 
 							i(119182), 		-- Toy
 							i(119150), 		-- Pet
 							i(119422),
@@ -3823,12 +3812,12 @@ _.Zones =
 						}),	
 					}),
 				}),
-				na(-153, { -- Work Orders
+				n(-153, {	-- Work Orders
 					n(86639, { -- Altar of Bones
 						["groups"] = {
 							i(118043, { -- Broken Bones
 								i(125984),	-- Warmongering Gladiator's Accolade of Conquest
-								i(125985),	-- Warmongering Gladiator's Accolade of Dominance
+								i(125985),	-- Warmongering Gladiator's Accolade of Dominnce
 								i(125988),	-- Warmongering Gladiator's Accolade of Endurance
 								i(125987),	-- Warmongering Gladiator's Accolade of Meditation
 								i(125986),	-- Warmongering Gladiator's Accolade of Victory
@@ -3843,7 +3832,7 @@ _.Zones =
 								i(125925),	-- Warmongering Gladiator's Armplates of Victory
 								i(125983),	-- Warmongering Gladiator's Badge of Adaptation
 								i(125970),	-- Warmongering Gladiator's Badge of Conquest
-								i(125975),	-- Warmongering Gladiator's Badge of Dominance
+								i(125975),	-- Warmongering Gladiator's Badge of Dominnce
 								i(125981),	-- Warmongering Gladiator's Badge of Victory
 								i(125861),	-- Warmongering Gladiator's Band of Contemplation
 								i(125857),	-- Warmongering Gladiator's Band of Cruelty
@@ -3898,7 +3887,7 @@ _.Zones =
 								i(125829),	-- Warmongering Gladiator's Dreadplate Shoulders
 								i(125972),	-- Warmongering Gladiator's Emblem of Cruelty
 								i(125974),	-- Warmongering Gladiator's Emblem of Meditation
-								i(125973),	-- Warmongering Gladiator's Emblem of Tenacity
+								i(125973),	-- Warmongering Gladiator's Emblem of Tencity
 								i(125993),	-- Warmongering Gladiator's Felweave Amice
 								i(125990),	-- Warmongering Gladiator's Felweave Cowl
 								i(125989),	-- Warmongering Gladiator's Felweave Handguards
@@ -3921,7 +3910,7 @@ _.Zones =
 								i(125899),	-- Warmongering Gladiator's Helm
 								i(125816),	-- Warmongering Gladiator's Hood of Prowess
 								i(125971),	-- Warmongering Gladiator's Insignia of Conquest
-								i(125976),	-- Warmongering Gladiator's Insignia of Dominance
+								i(125976),	-- Warmongering Gladiator's Insignia of Dominnce
 								i(125982),	-- Warmongering Gladiator's Insignia of Victory
 								i(125907),	-- Warmongering Gladiator's Ironskin Gloves
 								i(125908),	-- Warmongering Gladiator's Ironskin Helm
@@ -3943,7 +3932,7 @@ _.Zones =
 								i(127125),	-- Warmongering Gladiator's Medallion of Adaptation
 								i(125977),	-- Warmongering Gladiator's Medallion of Cruelty
 								i(125980),	-- Warmongering Gladiator's Medallion of Meditation
-								i(125979),	-- Warmongering Gladiator's Medallion of Tenacity
+								i(125979),	-- Warmongering Gladiator's Medallion of Tencity
 								i(125801),	-- Warmongering Gladiator's Necklace of Cruelty
 								i(125802),	-- Warmongering Gladiator's Necklace of Prowess
 								i(125882),	-- Warmongering Gladiator's Pauldrons
@@ -4010,7 +3999,7 @@ _.Zones =
 								i(125921),	-- Warmongering Gladiator's Warboots of Prowess
 								i(125922),	-- Warmongering Gladiator's Warboots of Victory
 								i(126158),	-- Warmongering Combatant's Accolade of Conquest
-								i(126159),	-- Warmongering Combatant's Accolade of Dominance
+								i(126159),	-- Warmongering Combatant's Accolade of Dominnce
 								i(126162),	-- Warmongering Combatant's Accolade of Endurance
 								i(126161),	-- Warmongering Combatant's Accolade of Meditation
 								i(126160),	-- Warmongering Combatant's Accolade of Victory
@@ -4022,7 +4011,7 @@ _.Zones =
 								i(126108),	-- Warmongering Combatant's Armplates of Prowess
 								i(126157),	-- Warmongering Combatant's Badge of Adaptation
 								i(126144),	-- Warmongering Combatant's Badge of Conquest
-								i(126149),	-- Warmongering Combatant's Badge of Dominance
+								i(126149),	-- Warmongering Combatant's Badge of Dominnce
 								i(126155),	-- Warmongering Combatant's Badge of Victory
 								i(126063),	-- Warmongering Combatant's Band of Contemplation
 								i(126059),	-- Warmongering Combatant's Band of Cruelty
@@ -4068,7 +4057,7 @@ _.Zones =
 								i(126031),	-- Warmongering Combatant's Dreadplate Shoulders
 								i(126146),	-- Warmongering Combatant's Emblem of Cruelty
 								i(126148),	-- Warmongering Combatant's Emblem of Meditation
-								i(126147),	-- Warmongering Combatant's Emblem of Tenacity
+								i(126147),	-- Warmongering Combatant's Emblem of Tencity
 								i(126171),	-- Warmongering Combatant's Felweave Amice
 								i(126168),	-- Warmongering Combatant's Felweave Cowl
 								i(126167),	-- Warmongering Combatant's Felweave Handguards
@@ -4085,7 +4074,7 @@ _.Zones =
 								i(126090),	-- Warmongering Combatant's Helm
 								i(126023),	-- Warmongering Combatant's Hood of Prowess
 								i(126145),	-- Warmongering Combatant's Insignia of Conquest
-								i(126150),	-- Warmongering Combatant's Insignia of Dominance
+								i(126150),	-- Warmongering Combatant's Insignia of Dominnce
 								i(126156),	-- Warmongering Combatant's Insignia of Victory
 								i(126093),	-- Warmongering Combatant's Ironskin Gloves
 								i(126094),	-- Warmongering Combatant's Ironskin Helm
@@ -4104,7 +4093,7 @@ _.Zones =
 								i(126152),	-- Warmongering Combatant's Medallion of Adaptation
 								i(126151),	-- Warmongering Combatant's Medallion of Cruelty
 								i(126154),	-- Warmongering Combatant's Medallion of Meditation
-								i(126153),	-- Warmongering Combatant's Medallion of Tenacity
+								i(126153),	-- Warmongering Combatant's Medallion of Tencity
 								i(126011),	-- Warmongering Combatant's Necklace of Cruelty
 								i(126012),	-- Warmongering Combatant's Necklace of Prowess
 								i(126056),	-- Warmongering Combatant's Pendant of Contemplation
@@ -4159,7 +4148,7 @@ _.Zones =
 								i(126105),	-- Warmongering Combatant's Warboots of Cruelty
 								i(126106),	-- Warmongering Combatant's Warboots of Prowess
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
-								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
+								i(126254),	-- Warmongering Aspirant's Accolade of Dominnce
 								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
@@ -4259,9 +4248,10 @@ _.Zones =
 			},
 			["lvl"] = 90,
 			["isRaid"] = true,
+			["races"] = ALLIANCE_ONLY,
 			["maps"] = {973, 974, 975},
 			["icon"] = "Interface\\Icons\\achievement_garrison_tier01_alliance",
-			["description"] = "|cff66ccffLunarfall is the Alliance Garrison, located in Shadowmoon Valley. Several Shadowmoon clan ruins dotted the area before the garrison was built. A fully-upgraded Lunarfall garrison is considered to be a castle.|r",
-		})),	
+			["description"] = "|cff66ccffLunrfall is the Alliance Garrison, located in Shadowmoon Valley. Several Shadowmoon clan ruins dotted the area before the garrison was built. A fully-upgraded Lunrfall garrison is considered to be a castle.|r",
+		}),	
 	}),
 };

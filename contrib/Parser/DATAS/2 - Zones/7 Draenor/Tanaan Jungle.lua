@@ -899,12 +899,12 @@ _.Zones =
 							i(128352),	-- Felbane Shoulderguard [Warforged]
 						}),		
 						i(124560, {	-- Baleful Cloak	
-							i(124613),	-- Marshwater Cloak - Druid, Hunter, Shaman, Rogue, Monk, Demon Hunter
-							i(124616),	-- Marshwater Cloak - Paladin, Warrior, Death Knight
-							i(124614),	-- Marshwater Mantle - Mage, Paladin, Druid, Priest, Shaman, Warlock, Monk
-							i(124615),	-- Shadowthrash Cloak - Mage, Paladin, Druid, Priest, Shaman, Warlock, Monk
-							i(124618),	-- Unfailing Cloak - Paladin, Warrior, Druid, Death Knight, Hunter, Rogue, Shaman, Monk, Demon Hunter
-							i(124617),	-- Unfailing Mantle - Paladin, Warrior, Druid, Death Knight, Hunter, Rogue, Shaman, Monk, Demon Hunter
+							i(124613),	-- Marshwater Cloak
+							i(124616),	-- Marshwater Cloak
+							i(124614),	-- Marshwater Mantle
+							i(124615),	-- Shadowthrash Cloak
+							i(124618),	-- Unfailing Cloak
+							i(124617),	-- Unfailing Mantle
 						}),		
 						i(124551, {	-- Baleful Tunic	
 							i(124570),	-- Felcast Robes
