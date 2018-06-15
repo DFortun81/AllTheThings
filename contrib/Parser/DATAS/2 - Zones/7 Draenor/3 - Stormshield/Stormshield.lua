@@ -418,6 +418,7 @@ _.Zones =
 						i(115472),	-- Permanent Time Bubble TOY!
 					}),
 					n(93914, {	-- Holly McTilla <Warmongering Gladiator>
+						un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
 						i(138635, { -- Arsenal: Warmongering Gladiator's Weapons [ Alliance / Tested ]
 							["groups"] = {
 								i(125863),	-- Warmongering Gladiator's Barrier

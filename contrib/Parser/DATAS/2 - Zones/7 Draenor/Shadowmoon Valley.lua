@@ -7,56 +7,6 @@ _.Zones =
 		m(947, { 	-- Shadowmoon Valley
 			["groups"] = {								
 				n(-3, { 	-- Holidays					
---[[					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
---]]					
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 --							n(-17, { 	-- Quests
@@ -82,24 +32,6 @@ _.Zones =
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,
 					}),	
---[[					
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
---]]				
 				}),							
 				n(-25, { 	-- Pet Battle
 					p(407), 	-- Forest Spiderling
@@ -112,181 +44,6 @@ _.Zones =
 					p(1582), 	-- Zangar Crawler
 				}),
 				n(-17, { 	-- Quests
---[[				
-					qa( 33120),	-- A Curse Upon the Woods
-					qa( 33077),	-- A Grandmother's Remedy
-					qa( 33075),	-- A Hero's Welcome
-					q(33266),	-- A Light in the Dark - Tracking Quest
-					qa( 33419),	-- A Matter of Life and Death
-					qa( 39665),	-- A True Naval Commander
-					qa( 33795),	-- Across the Stars
-					q(33910),	-- Aklana Rescue
-					qa( 33082),	-- Ancestor's Memory
-					q(35626),	-- Apprentice Artificer Andren
-					qa( 35614),	-- Artificer Romuul
-					qa( 36948),	-- Auctioning for Parts
-					qa( 35014),	-- Blademoon Bloom
-					q(34504),	-- Bloodthorn Cave
-					qa( 34995),	-- Botani Beatdown
-					qa( 33111),	-- Bounty: Twisted Ancient
-					qa( 36271),	-- Breaking into the Trap Game
-					qa( 33331),	-- Captured Critters
-					qa( 33062),	-- Catching His Eye
-					qa( 33586),	-- Chasing Shadows
-					q(37114),	-- Choluna
-					qa( 34779),	-- Circle the Wagon
-					qa( 33269),	-- Cleaning Up Gul'var
-					qa( 33135),	-- Cleaning Up Gul'var
-					qa( 36983),	-- Clefthoof Training: Great-Tusk
-					qh( 37048),	-- Clefthoof Training: Great-Tusk
-					qa( 33905),	-- Closing the Door
-					qa( 33788),	-- Cooking With Unstable Herbs
-					qa( 33786),	-- Crippled Caravan
-					q(39721),	-- Culling the Crew
-					qh( 37994),	-- Dark Grimoire: Breaching the Barrier
-					qa( 37885),	-- Dark Grimoire: Breaching the Barrier
-					qh( 37884),	-- Dark Grimoire: The Final Ingredient
-					q(37882),	-- Dark Grimoire: The First Ingredient
-					q(37883),	-- Dark Grimoire: The Second Ingredient
-					qa( 34043),	-- Darkest Night
-					qa( 33837),	-- Darkness Falls
-					qa( 34781),	-- Defenstrations
-					qa( 39404),	-- Destroying the Competition
-					qa( 37979),	-- Dream of Argus: The Crystal Reborn
-					qh( 37997),	-- Dream of Argus: The Crystal Reborn
-					q(37978),	-- Dream of Argus: The Final Fragment
-					q(37976),	-- Dream of Argus: The First Fragment
-					q(37977),	-- Dream of Argus: The Second Fragment
-					qa( 36189),	-- Easing into Lumberjacking
-					qa( 34786),	-- Engorged Goren
-					qa( 39666),	-- Equipping Our Fleet
-					qa( 33081),	-- Escape From Shaz'gul
-					qa( 34787),	-- Exarch Maladaar
-					qa( 33814),	-- Fast Expansion
-					q(33323),	-- Finale - Tracking Quest
-					qa( 34582),	-- Finding a Foothold
-					qa( 35617),	-- Fiona
-					qa( 33787),	-- Fiona's Solution
-					qa( 34583),	-- For the Alliance!
-					qa( 34847),	-- Forbidden Love
-					qa( 34994),	-- Forever Young
-					qa( 33114),	-- Forging the Soul Trap
-					qa( 34788),	-- Friend of the Exarchs
-					qa( 34784),	-- Fun with Fungus
-					qa( 37332),	-- Fungal Bundle
-					qa( 33271),	-- Game of Thorns
-					qa( 35015),	-- Gestating Genesaur
-					q(35618),	-- Gidwin Goldbraids
-					qa( 33461),	-- Gloomshade Game Hunter
-					qa( 33263),	-- Gloomshade Grove
-					qa( 33080),	-- Going Undercover
-					qa( 33793),	-- Harbingers of the Void
-					qa( 34785),	-- Hataaru, the Artificer
-					qa( 33168),	-- Heart On Fire
-					qa( 39601),	-- I Sunk Your Battleship
-					qa( 39655),	-- If At First You Fail, Try Again!
-					qa( 33813),	-- In Need of a Hero
-					qa( 35032),	-- Into Anguish
-					qa( 33072),	-- Into Twilight
-					qa( 34780),	-- Invisible Ramparts
-					qa( 35176),	-- Keeping it Together
-					q(33782),	-- Keeping the Balance					
-					qa( 34584),	-- Looking for Lumber
-					qa( 34876),	-- Loola's Lost Love
-					qa( 37087),	-- Lost in Transition
-					qa( 34820),	-- Lost Lumberjacks
-					qa( 34836),	-- Lunarblossom
-					qa( 33359),	-- Meet Us at Starfall Outpost
-					qa( 34778),	-- Migrant Workers
-					qa( 34783),	-- Naielle, The Rangari
-					qa( 39056),	-- Naval Commander
-					qa( 39068),	-- Naval Domination
-					qa( 36965),	-- Nemesis: Becoming Death
-					qa( 36969),	-- Nemesis: Becoming Death
-					qa( 36967),	-- Nemesis: Becoming Death
-					qa( 36963),	-- Nemesis: Becoming Death
-					qa( 36961),	-- Nemesis: Becoming Death
-					qa( 36957),	-- Nemesis: Becoming Death
-					qa( 36959),	-- Nemesis: Becoming Death
-					qa( 36960),	-- Nemesis: Death Stalker
-					qa( 36955),	-- Nemesis: Hunter - Hunted
-					qa( 36968),	-- Nemesis: Huojin's Fall
-					qa( 36970),	-- Nemesis: Killer of Kezan
-					qa( 36964),	-- Nemesis: Orcslayer
-					qa( 36958),	-- Nemesis: Slayer of Sin'dorei
-					qa( 36962),	-- Nemesis: The Butcher
-					qa( 36966),	-- Nemesis: Troll Hunter
-					qa( 33112),	-- Ominous Portents
-					qa( 33083),	-- On the Offensive
-					qa( 35174),	-- Pale Moonlight
-					qa( 35006),	-- Poison Paralysis
-					qa( 34806),	-- Prune the Podlings
-					qa( 34646),	-- Qiana Moonshadow
-					qa( 34585),	-- Quakefist
-					q(35628),	-- Rangari Chel
-					qa( 34897),	-- Rangari Roundup
-					qa( 34616),	-- Ravenous Ravens
-					qa( 34996),	-- Rotting Riverbeasts
-					qa( 35631),	-- Rulkan
-					qa( 37086),	-- Salvaging the Situation
-					qa( 33113),	-- Shadowmoonwell
-					qa( 36194),	-- Sharper Blades, Bigger Timber
-					qa( 35625),	-- Shelly Hamby
-					qa( 35166),	-- Ship Salvage
-					qa( 39055),	-- Ship Shape
-					qa( 39054),	-- Shipbuilding
-					qa( 33115),	-- Shrouding Stones
-					qa( 35070),	-- Shut 'er Down
-					qa( 34997),	-- Slumberbloom
-					qa( 33066),	-- Soul Shards of Summoning
-					qa( 34789),	-- Speaker for the Dead
-					qa( 34575),	-- Step Three: Prophet!
-					qa( 39276),	-- Strange Tools
-					qa( 35905),	-- Supply Drop
-					qa( 33808),	-- Swamplighter Queen
-					qa( 36971),	-- Talbuk Training: Great-Tusk
-					qh( 37093),	-- Talbuk Training: Great-Tusk
-					qh( 36917),	-- Taming a Talbuk
-					qa( 36911),	-- Taming a Talbuk
-					q(35621),	-- Tarenar Sunstrike
-					qa( 33084),	-- The Big Haul
-					q(34076),	-- The Burial Fields
-					qa( 33076),	-- The Clarity Elixir
-					qa( 34676),	-- The Critical Path
-					qa( 37183),	-- The Critical Path
-					qa( 35093),	-- The Dark Side of the Moon
-					qa( 34054),	-- The Dark Side of the Moon
-					qa( 33078),	-- The Dark that Blinds Us
-					qa( 33256),	-- The Defense of Karabor
-					q(33079),	-- The Demons Among Us - Alliance
-					qa( 34782),	-- The Exarch Council
-					qa( 33059),	-- The Fate of Karabor
-					qa( 33794),	-- The Great Salvation
-					q(34496),	-- The Hills of Valuun
-					qa( 37322),	-- The Prophet's Final Message
-					qa( 33255),	-- The Righteous March
-					q(34728),	-- The Shimmer Moor
-					qa( 35459),	-- The Southern Wilds
-					qa( 35450),	-- The Southern Wilds
-					qa( 35444),	-- The Southern Wilds
-					qa( 34790),	-- The Sting
-					qa( 34792),	-- The Traitor's True Name
-					qa( 33070),	-- Think of the Children!
-					q(37113),	-- Thisalee Crow
-					qa( 33116),	-- To Catch a Shadow
-					q(37973),	-- Treasure Contract: The Artificer
-					qa( 36195),	-- Tree-i-cide
-					q(34077),	-- Trouble to the South
-					qa( 35552),	-- Trust No One
-					qa( 36192),	-- Turning Timber into Profit
-					qa( 39067),	-- Upgrading The Fleet
-					q(35629),	-- Vindicator Onaala
-					qa( 33834),	-- Wanted: Kliaa's Stinger
-					qa( 33833),	-- Wanted: Kuu'rat's Tusks
-					qa( 33836),	-- Wanted: Maa'run's Hoof
-					qa( 36876),	-- Warlord of Draenor
-					qa( 34791),	-- Warning the Exarchs
---]]
 					qa(33082,  {  -- Ancestor's Memory
 						i(106151),
 						i(107301),
@@ -473,6 +230,7 @@ _.Zones =
 					}),
 					o(236755, { 	-- Dusty Lockbox
 						["groups"] = {
+							i(116465),				-- Frostbitten Mace
 							dr(06.0, i(116487)),	-- Lunarglow Staff
 							dr(05.0, i(116466)),	-- Coldsinger Scepter
 							dr(05.0, i(116468)),	-- Frostbitten Spear

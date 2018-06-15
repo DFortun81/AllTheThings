@@ -1321,6 +1321,9 @@ _.Zones =
 						i(102983),	-- Grievous Gladiator's Endgame
 					}),
 					nh(75693, { -- Doris Chiltonius
+						un(2, i(98162)),	-- Tyrannical Gladiator's Tabard [Elite Rating]
+						un(2, i(101697)),	-- Grievous Gladiator's Tabard [Elite Rating]
+						un(2, i(103636)),	-- Prideful Gladiator's Tabard [Elite Rating]
 						i(144243, { -- Arsenal: Malevolent Gladiator's Weapons
 							i(91482),	-- Malevolent Gladiator's Barrier
 							i(91486),	-- Malevolent Gladiator's Battle Staff
@@ -1888,6 +1891,7 @@ _.Zones =
 						i(99993),	-- Tyrannical Gladiator's Plate Helm
 					}),
 					nh(78461, { -- Shonn Su
+						un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 						i(144250, { -- Arsenal: Prideful Gladiator's Weapons [ Horde / Tested ]
 							["groups"] = {
 								i(102785),	-- Prideful Gladiator's Barrier

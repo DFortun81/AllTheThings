@@ -3,6 +3,9 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	i(147204), -- Black Apron - TEST
+	i(23388), -- Tranquillen Tabard
+	i(49086), -- Relentless Gladiator's Tabard [Elite Rating]
 	i(157650), -- Tracker's Spear
 	i(157648), -- Oakenstaff Protector
 	i(157620), -- Halberd of Ferocity

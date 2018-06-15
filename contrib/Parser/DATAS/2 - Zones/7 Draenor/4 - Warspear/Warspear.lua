@@ -419,6 +419,7 @@ _.Zones =
 						i(119136),	-- Arakkoa Outcasts Tabard
 					}),
 					n(93917, {	-- Malukah Lightsong <Warmongering Gladiator>
+						un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
 						i(138636, { -- Arsenal: Warmongering Gladiator's Weapons [ Horde ]
 							["groups"] = {
 								i(125863),	-- Warmongering Gladiator's Barrier

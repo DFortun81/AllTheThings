@@ -477,7 +477,7 @@ _.Zones =
 										i(152055), -- Kin'garoth's Oil-Sump
 										i(151945), -- Lady Dacidion's Silk Slippers
 										i(152003), -- Legguards of Numbing Gloom
-										i(152424), -- Legwraps of the Seasoned Exterminator
+										i(152424), -- Legwraps of the { Legion Seasoned Exterminator
 										i(151981), -- Life-Bearing Footpads
 										i(152043), -- Lightshield Amplifier
 										i(152688), -- Loop of the Life-Binder
@@ -640,7 +640,7 @@ _.Zones =
 										i(152055), -- Kin'garoth's Oil-Sump
 										i(151945), -- Lady Dacidion's Silk Slippers
 										i(152003), -- Legguards of Numbing Gloom
-										i(152424), -- Legwraps of the Seasoned Exterminator
+										i(152424), -- Legwraps of the { Legion Seasoned Exterminator
 										i(151981), -- Life-Bearing Footpads
 										i(152043), -- Lightshield Amplifier
 										i(152688), -- Loop of the Life-Binder
@@ -803,7 +803,7 @@ _.Zones =
 										i(152055), -- Kin'garoth's Oil-Sump
 										i(151945), -- Lady Dacidion's Silk Slippers
 										i(152003), -- Legguards of Numbing Gloom
-										i(152424), -- Legwraps of the Seasoned Exterminator
+										i(152424), -- Legwraps of the { Legion Seasoned Exterminator
 										i(151981), -- Life-Bearing Footpads
 										i(152043), -- Lightshield Amplifier
 										i(152688), -- Loop of the Life-Binder
@@ -966,7 +966,7 @@ _.Zones =
 										i(152055), -- Kin'garoth's Oil-Sump
 										i(151945), -- Lady Dacidion's Silk Slippers
 										i(152003), -- Legguards of Numbing Gloom
-										i(152424), -- Legwraps of the Seasoned Exterminator
+										i(152424), -- Legwraps of the { Legion Seasoned Exterminator
 										i(151981), -- Life-Bearing Footpads
 										i(152043), -- Lightshield Amplifier
 										i(152688), -- Loop of the Life-Binder
@@ -1129,7 +1129,7 @@ _.Zones =
 										i(152055), -- Kin'garoth's Oil-Sump
 										i(151945), -- Lady Dacidion's Silk Slippers
 										i(152003), -- Legguards of Numbing Gloom
-										i(152424), -- Legwraps of the Seasoned Exterminator
+										i(152424), -- Legwraps of the { Legion Seasoned Exterminator
 										i(151981), -- Life-Bearing Footpads
 										i(152043), -- Lightshield Amplifier
 										i(152688), -- Loop of the Life-Binder
@@ -2276,7 +2276,7 @@ _.Zones =
 					h(n(119486, { -- Apothecary Lee <Legion Gladiator>
 						gssh(1071, { -- Combatant
 							["groups"] = {
-								-- LEGION SEASON 1 AND 2
+								-- LEGION { Legion Season 1 AND 2
 								i(146159, { -- Vindictive Combatant's Satin Armor		
 									i(135980),	-- Vindictive Combatant's Satin Hood
 									i(135983),	-- Vindictive Combatant's Satin Mantle
@@ -2412,7 +2412,7 @@ _.Zones =
 									i(135934),	-- Vindictive Combatant's Dreadplate Legguards
 									i(135931),	-- Vindictive Combatant's Dreadplate Sabatons
 								}),
-								-- LEGION SEASON 3 & 4
+								-- LEGION & 4
 								i(147687, { -- Cruel Combatant's Satin Armor		
 									i(145173),	-- Cruel Combatant's Satin Hood
 									i(145179),	-- Cruel Combatant's Satin Mantle
@@ -2553,7 +2553,7 @@ _.Zones =
 						}),
 						gssh(1414, { -- Gladiator
 							["groups"] = {
-								-- LEGION SEASON 1 & 2
+								-- LEGION { Legion Season 1 & 2
 								i(146149, { -- Vindictive Gladiator's Satin Armor		
 									i(135754),	-- Vindictive Gladiator's Satin Hood
 									i(135757),	-- Vindictive Gladiator's Satin Mantle
@@ -2687,7 +2687,7 @@ _.Zones =
 									i(135705),	-- Vindictive Gladiator's Dreadplate Sabatons
 									
 								}),
-								-- LEGION SEASON 3 & 4
+								-- LEGION & 4
 								i(147664, { -- Cruel Gladiator's Satin Armor		
 									i(144681),	-- Cruel Gladiator's Satin Hood
 									i(144687),	-- Cruel Gladiator's Satin Mantle
@@ -3273,19 +3273,19 @@ _.Zones =
 						i(147778),	-- Enchanter's Illusion - Demonic Tyranny
 						i(139775),	-- Alliance Enthusiast
 						i(142379),	-- Dutiful Squire
-						un(14, i(147337)),	-- Cruel Gladiator's Tabard Season 3 No Longer Obtainable
-						un(14, i(147360)),	-- Cruel Gladiator's Cloak Season 3 No Longer Obtainable
-						un(14, i(147339)),	-- Ferocious Gladiator's Tabard Season 4 No Longer Obtainable
-						un(14, i(147364)),	-- Ferocious Gladiator's Cloak Season 4 No Longer Obtainable
-						un(14, i(149443)),	-- Fierce Gladiator's Tabard Season 5 No Longer Obtainable
-						un(14, i(149445)),	-- Fierce Gladiator's Cloak Season 5 No Longer Obtainable
-						un(14, i(149447)),	-- Dominant Gladiator's Tabard Season 6 No Longer Obtainable
-						un(14, i(149449)),	-- Dominant Gladiator's Cloak Season 6 No Longer Obtainable
-						i(149451),	-- Demonic Gladiator's Tabard Season 7
-						i(149453),	-- Demonic Gladiator's Cloak Season 7
+						un(14, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
+						un(14, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
+						un(14, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
+						un(14, i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
+						un(14, i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
+						un(14, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
+						un(14, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
+						un(14, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
+						i(149451),	-- Demonic Gladiator's Tabard [Elite Rating]
+						i(149453),	-- Demonic Gladiator's Cloak [Elite Rating]
 						gssh(1391, { -- Elite
 							["groups"] = {
-								-- Legion Season 1 & 2
+								-- Legion { Legion Season 1 & 2
 								i(146236, { -- Vindictive Gladiator's Satin Armor		
 									i(136093),	-- Vindictive Gladiator's Satin Hood
 									i(136096),	-- Vindictive Gladiator's Satin Mantle
@@ -3421,7 +3421,7 @@ _.Zones =
 									i(136047),	-- Vindictive Gladiator's Dreadplate Legguards
 									i(136044),	-- Vindictive Gladiator's Dreadplate Sabatons
 								}),			
-								-- LEGION SEASON 3 & 4
+								-- LEGION & 4
 								i(147640, { -- Cruel Gladiator's Satin Armor		
 									i(144926),	-- Cruel Gladiator's Satin Hood
 									i(144932),	-- Cruel Gladiator's Satin Mantle
@@ -3843,7 +3843,7 @@ _.Zones =
 					a(n(106930, { -- Lieutenant Surtees <Legion Gladiator>
 						gssh(1071, { -- Combatant
 							["groups"] = {
-								-- LEGION SEASON 1 & 2
+								-- LEGION { Legion Season 1 & 2
 								i(146158, { -- Vindictive Combatant's Satin Armor		
 									i(135867),	-- Vindictive Combatant's Satin Hood
 									i(135870),	-- Vindictive Combatant's Satin Mantle
@@ -3979,7 +3979,7 @@ _.Zones =
 									i(135821),	-- Vindictive Combatant's Dreadplate Legguards
 									i(135818),	-- Vindictive Combatant's Dreadplate Sabatons
 								}),	
-								-- LEGION SEASON 3 & 4
+								-- LEGION & 4
 								i(147688, { -- Cruel Combatant's Satin Armor		
 									i(145172),	-- Cruel Combatant's Satin Hood
 									i(145178),	-- Cruel Combatant's Satin Mantle
@@ -4120,7 +4120,7 @@ _.Zones =
 						}),
 						gssh(1414, { -- Gladiator
 							["groups"] = {
-								-- LEGION SEASON 1 & 2
+								-- LEGION { Legion Season 1 & 2
 								i(146148, { -- Vindictive Gladiator's Satin Armor		
 									i(135641),	-- Vindictive Gladiator's Satin Hood
 									i(135644),	-- Vindictive Gladiator's Satin Mantle
@@ -4256,7 +4256,7 @@ _.Zones =
 									i(135595),	-- Vindictive Gladiator's Dreadplate Legguards
 									i(135592),	-- Vindictive Gladiator's Dreadplate Sabatons
 								}),		
-								-- LEGION SEASON 3 &4
+								-- LEGION &4
 								i(147663, { -- Cruel Gladiator's Satin Armor		
 									i(144680),	-- Cruel Gladiator's Satin Hood
 									i(144686),	-- Cruel Gladiator's Satin Mantle
@@ -5533,19 +5533,19 @@ _.Zones =
 						i(147778),	-- Enchanter's Illusion - Demonic Tyranny
 						i(142380),	-- Dutiful Gruntling
 						i(139776),	-- Horde Fanatic
-						un(14, i(147336)),	-- Cruel Gladiator's Tabard Season 3 No Longer Obtainable
-						un(14, i(147357)),	-- Cruel Gladiator's Cloak Season 3 No Longer Obtainable
-						un(14, i(147338)),	-- Ferocious Gladiator's Tabard Season 4 No Longer Obtainable
-						un(14, i(147363)),	-- Ferocious Gladiator's Cloak Season 4 No Longer Obtainable
-						un(14, i(149442)),	-- Fierce Gladiator's Tabard Season 5 No Longer Obtainable
-						un(14, i(149444)),	-- Fierce Gladiator's Cloak Season 5 No Longer Obtainable
-						un(14, i(149446)),	-- Dominant Gladiator's Tabard Season 6 No Longer Obtainable
-						un(14, i(149448)),	-- Dominant Gladiator's Cloak Season 6 No Longer Obtainable
-						i(149450),	-- Demonic Gladiator's Tabard Season 7
-						i(149452),	-- Demonic Gladiator's Cloak Season 7
+						un(14, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]
+						un(14, i(147357)),	-- Cruel Gladiator's Cloak [Elite Rating]
+						un(14, i(147338)),	-- Ferocious Gladiator's Tabard [Elite Rating]
+						un(14, i(147363)),	-- Ferocious Gladiator's Cloak [Elite Rating]
+						un(14, i(149442)),	-- Fierce Gladiator's Tabard [Elite Rating]
+						un(14, i(149444)),	-- Fierce Gladiator's Cloak [Elite Rating]
+						un(14, i(149446)),	-- Dominant Gladiator's Tabard [Elite Rating]
+						un(14, i(149448)),	-- Dominant Gladiator's Cloak [Elite Rating]
+						i(149450),	-- Demonic Gladiator's Tabard [Elite Rating]
+						i(149452),	-- Demonic Gladiator's Cloak [Elite Rating]
 						gssh(1391, { -- Elite
 							["groups"] = {
-								-- LEGION SEASON 1 & 2
+								-- LEGION { Legion Season 1 & 2
 								i(146237, { -- Vindictive Gladiator's Satin Armor		
 									i(136206),	-- Vindictive Gladiator's Satin Hood
 									i(136209),	-- Vindictive Gladiator's Satin Mantle
@@ -5681,7 +5681,7 @@ _.Zones =
 									i(136160),	-- Vindictive Gladiator's Dreadplate Legguards
 									i(136157),	-- Vindictive Gladiator's Dreadplate Sabatons
 								}),	
-								-- LEGION SEASON 3 & 4
+								-- LEGION & 4
 								i(147639, { -- Cruel Gladiator's Satin Armor		
 									i(144927),	-- Cruel Gladiator's Satin Hood
 									i(144933),	-- Cruel Gladiator's Satin Mantle

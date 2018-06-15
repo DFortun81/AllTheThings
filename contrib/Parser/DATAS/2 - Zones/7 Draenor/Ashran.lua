@@ -1775,6 +1775,32 @@ _.Zones =
 						i(116775),	-- Breezestrider Stallion MOUNT!
 						i(115518),	-- Vol'jin's Spear Tabard
 					}),
+					na(82876, { -- Grand Marshal Tremblade
+						["groups"] = {
+							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
+							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
+							un(2, i(115979)),	-- Primal Gladiator's Greatcloak
+							un(2, i(115972)),	-- Primal Gladiator's Tabard
+							un(2, i(127377)),	-- Warmongering Gladiator's Greatcloak
+							un(2, i(127369)),	-- Warmongering Gladiator's Tabard
+							un(2, i(127375)),	-- Wild Gladiator's Greatcloak
+							un(2, i(127366)),	-- Wild Gladiator's Tabard
+						},
+						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
+					}),
+					nh(82877, { -- High Warlord Volrath
+						["groups"] = {
+							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
+							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
+							un(2, i(115979)),	-- Primal Gladiator's Greatcloak
+							un(2, i(115972)),	-- Primal Gladiator's Tabard
+							un(2, i(127376)),	-- Warmongering Gladiator's Greatcloak
+							un(2, i(127371)),	-- Warmongering Gladiator's Tabard
+							un(2, i(127374)),	-- Wild Gladiator's Greatcloak
+							un(2, i(127365)),	-- Wild Gladiator's Tabard
+						},
+						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
+					}),
 				}),
 			},
 			["maps"] = {1009, 1011},	-- We want to show Ashran in both maps.
