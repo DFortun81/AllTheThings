@@ -316,4 +316,16 @@ _.IllusionDB = {
 		["illusionID"] = 5924,
 		["text"] = "Demonic Tyranny",
 	}, -- 
+	-- Glorious Tyranny
+	{
+		["itemID"] = 120286, -- Enchanter's Illusion - Glorious Tyranny
+		["illusionID"] = 5396,
+		["text"] = "Glorious Tyranny",
+	},
+	-- Primal Victory
+	{
+		["itemID"] = 120287, -- Enchanter's Illusion - Primal Victory
+		["illusionID"] = 5397,
+		["text"] = "Primal Victory",
+	},
 };

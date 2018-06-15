@@ -1601,6 +1601,9 @@ _.Zones =
 						recipe(125142),	-- Great Banquet of the Grill
 					}),
 					n(75689, {	-- Lucan Malory <Malevolent Gladiator>
+						un(2, i(98162)),	-- Tyrannical Gladiator's Tabard [Elite Rating]
+						un(2, i(101697)),	-- Grievous Gladiator's Tabard [Elite Rating]
+						un(2, i(103636)),	-- Prideful Gladiator's Tabard [Elite Rating]
 						i(144243, { -- Arsenal: Malevolent Gladiator's Weapons
 							i(91482),	-- Malevolent Gladiator's Barrier
 							i(91486),	-- Malevolent Gladiator's Battle Staff
@@ -1848,6 +1851,7 @@ _.Zones =
 						},
 					}),
 					na(78456, {	-- Starlight Sinclair <Prideful Gladiator>
+						un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 						i(144248, { -- Arsenal: Prideful Gladiator's Weapons [ Alliance ]
 							["groups"] = {
 								i(102785),	-- Prideful Gladiator's Barrier
@@ -2205,7 +2209,7 @@ _.Zones =
 						recipe(125599),	-- Great Banquet of the Steamer
 					}),
 				}),
-				n(-38, { -- Profession
+				n(-38, {	-- Profession
 					prof(356, { -- Fishing
 						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
 						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
