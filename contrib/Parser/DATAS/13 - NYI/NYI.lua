@@ -433,49 +433,36 @@ _.NeverImplemented =
 		},
 		["u"] = 1,
 	}))),
-	
-----------------------------------------------------------------
--- S P E C I A L			B O N U S I D			I T E M S --
-----------------------------------------------------------------
-	{
-		["itemID"] = 147514,	-- Felguard Destroyer's Legplates
-		["modID"] = 2,
-	},
-	{
-		["itemID"] = 147515,	-- Hellblaze Invader's Greaves
-		["modID"] = 2,
-	},
-	{
-		["itemID"] = 147516,	-- Legion Stalker's Hood
-		["modID"] = 2,
-	},
-	{
-		["itemID"] = 147517,	-- Inquisitor's Battle Cowl
-		["modID"] = 2,
-	},
-		{
-		["itemID"] = 147514,	-- Felguard Destroyer's Legplates
-		["modID"] = 23,
-	},
-	{
-		["itemID"] = 147515,	-- Hellblaze Invader's Greaves
-		["modID"] = 23,
-	},
-	{
-		["itemID"] = 147516,	-- Legion Stalker's Hood
-		["modID"] = 23,
-	},
-	{
-		["itemID"] = 147517,	-- Inquisitor's Battle Cowl
-		["modID"] = 23,
-	},
+
+	i(20560),
+	i(41596),
+	i(43016),
+	i(52446),
+	i(62898),
+
+
+------------------------------------------------------------
+--			R E T R I E V I N G 			D A T A 	  --
+------------------------------------------------------------
+
+i(120370),
+i(120371),
+i(23351),
+i(23470),
+i(46103),
+i(49402),
+i(49405),
+i(49410),
+i(49414),
+i(49418),
+i(49422),
+i(54331),
+i(55047),
+i(21163),
 	
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --
 ------------------------------------------------------------
-i(118381), -- Ephemeral Fishing Pole
-i(118380), -- Hightfish Cap
-i(118393), -- Tentacled Hat
 
 -----------------------
 -- TRASH GREYS/WHITES -
