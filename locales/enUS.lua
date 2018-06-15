@@ -605,6 +605,7 @@ AllTheThings.Locales.enUS = {
 		[-3273] = "Interface\\Icons\\inv_helm_mail_draenorlfr_c_01",				-- Fel-Treated Set
 		[-3285] = "Interface\\Icons\\inv_helm_leather_draenorlfr_c_01",			-- Galvanized Stormscale Set
 		[-3310] = "Interface\\Icons\\Achievement_Garrison_blueprint_large",		-- Garrison Architect
+		[-3311] = "Interface\\Icons\\achievement_bg_killflagcarriers_grabflag_capit", -- Call To Arms [LFD Queue]
 		[-3314] = "Interface\\Icons\\inv_plate_draenorlfr_c_01helm",				-- Storm-Tempered Set
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",				-- Instance Item Sets, PvP
 		[-5349] = "Interface\\Icons\\achievement_challengemode_scarletmonastery_gold",	-- Miscellaneous Item Sets
@@ -1295,7 +1296,7 @@ AllTheThings.Locales.enUS = {
 		[-3314] = "Storm-Tempered Set",
 -- Garrison Mission Table Sets
 		[-3310] = GARRISON_ARCHITECT,		-- Garrison Architect
-		[-3311] = "Munificent Set",
+		[-3311] = BATTLEGROUND_HOLIDAY,		-- Call To Arms [LFD Queue]
 		[-3312] = "Turbulent Set",
 		[-3313] = "Grandiose Set",
 -- PvP Sets
