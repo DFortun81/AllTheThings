@@ -1211,12 +1211,16 @@ _.Zones =
 							["qg"] = 111246, -- Archmage Timear
 						}),
 					}),
-					q(44400, {	-- Assault on Violet Hold: Purple Pain
-						i(141359),
-						i(141358),
-						i(141357),
-						i(141356),
-					}),
+					{
+						["questID"] = 44400,	-- Assault on Violet Hold: Purple Pain
+						["qg"] = 113813,	-- Quest Giver: Lieutenant Sinclari
+						["groups"] = {
+							i(141359),	-- Violet Guardian's Corona
+							i(141358),	-- Violet Guardian's Cowl
+							i(141356),	-- Violet Guardian's Faceguard
+							i(141357),	-- Violet Guardian's Helm
+						},
+					},
 --[[					
 					n(-34, {	-- World Quests
 						q(42442),	-- Fight Night: Amalia
