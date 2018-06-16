@@ -301,7 +301,6 @@ profession(185, { -- Cooking
 			recipe(28267),	-- Crunchy Spider Surprise
 			{
 				["itemID"] = 7678,		-- Recipe: Thistle Tea (Removed from Game!)
-				["recipeID"] = 9513,	-- Thistle Tea
 				["description"] = "Do not attempt to buy this to learn on your non-Rogue characters, it won't let you. Also, you'd have to spend a couple million gold to get ahold of one.",
 				["u"] = 1,
 			},
