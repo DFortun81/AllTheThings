@@ -216,7 +216,7 @@ _.Zones =
 					qp185(qg(3026, qh(29364))),	-- Corn Mash
 					qg(34679, qh(14041)),	-- Cranberry Chutney
 					qp129(qg(3028, qh(29349))),	-- Craving Crayfish
-					qg(3045, qh(27334, {	-- Dark Cleric Cecille
+					qg(3045, q(27334, {	-- Dark Cleric Cecille
 						["groups"] = {
 						},
 						["classes"] = {5},
@@ -242,7 +242,7 @@ _.Zones =
 						},
 						["classes"] = {3},
 					})),
-					qg(43870, qh(27335, {	-- Journey to Orgrimmar
+					qg(43870, q(27335, {	-- Journey to Orgrimmar
 						["groups"] = {
 						},
 						["classes"] = {5},
@@ -256,7 +256,7 @@ _.Zones =
 					})),
 					qp185(qg(3026, qh(29362))),	-- "Magic" Mushrooms
 					qg(3045, qh(28323)),	-- Meet with Brother Silverhallow
-					qg(3045, qh(28304, {	-- Meet with Dark Cleric Cecille
+					qg(3045, q(28304, {	-- Meet with Dark Cleric Cecille
 						["groups"] = {
 						},
 						["classes"] = {5},
@@ -272,7 +272,7 @@ _.Zones =
 						},
 						["classes"] = {9},
 					})),
-					qg(437950, qh(28303, {	-- Meet with Master Pyreanor
+					qg(437950, q(28303, {	-- Meet with Master Pyreanor
 						["groups"] = {
 						},
 						["classes"] = {2},
@@ -294,7 +294,7 @@ _.Zones =
 						},
 						["classes"] = {7},
 					})),
-					qg(30458, qh(28307, {	-- Meet with Tyelis
+					qg(30458, q(28307, {	-- Meet with Tyelis
 						["groups"] = {
 						},
 						["classes"] = {5},
@@ -326,7 +326,7 @@ _.Zones =
 						["sourceQuests"] = { 27258 },	-- The Black Shield
 					}),
 --[[					
-					qg(2995, qh( 6364, {	-- Return to Varg
+					qg(2995, q( 6364, {	-- Return to Varg
 						["groups"] = {
 						},
 						["races"]= {6},
@@ -336,20 +336,20 @@ _.Zones =
 						},
 						["classes"] = {5},
 					})),
-					qg(43795, qh(27298, {	-- Seek Out Master Pyreanor
+					qg(43795, q(27298, {	-- Seek Out Master Pyreanor
 						["groups"] = {
 						},
 						["classes"] = {2},
 						["races"] = {10},
 					})),
-					qg(43870, qh(27332, {	-- Seek the Shadow-Walker
+					qg(43870, q(27332, {	-- Seek the Shadow-Walker
 						["groups"] = {
 						},
 						["classes"] = {5},
 						["races"] = {8},
 					})),
 					qp129(qg(3028, qh(29354))),	-- Shiny Baubles
-					qg(8359, qh( 6363, {	-- Tal the Wind Rider Master
+					qg(8359, q( 6363, {	-- Tal the Wind Rider Master
 						["groups"] = {
 						},
 						["races"]= {6},
@@ -368,22 +368,24 @@ _.Zones =
 						["classes"] = {5},
 					})),
 					qg(5543, qh(  264)),	-- Until Death Do Us Part
-					qg(36648, qh(26397, {	-- Walk With The Earth Mother					
+					qg(36648, q(26397, {	-- Walk With The Earth Mother					
 						["groups"] = {
 						},
 						["races"] = {6},
 					})),
 --]]					
-					qg(36648, qh(24540,  {  -- War Dance
+					q( 24540, {	-- War Dance
 						["groups"] = {
-							i(57241),
-							i(57230),
-							i(57214),
-							i(57239),
-							i(156986), -- Kodo Gavel
+							i( 57241),	-- Dreamwalking Staff
+							i( 57230),	-- Kodo Mallet
+							i( 57214),	-- Stunted Tree Root
+							i( 57239),	-- Sunwalker's Stunner
+							i(156986),	-- Kodo Gavel
 						},
-						["races"] = {6},
-					})),
+						["qg"] = 36648,	-- Baine Bloodhoof
+						["races"] = { 6 },
+						["sourceQuests"] = { 24550 },	-- Journey into Thunder Bluff
+					}),
 --[[					
 					o(207323, { 	-- Warchief's Command Board (TB)
 						qh(29390),	-- Guardians of Hyjal: Call of the Ancients
