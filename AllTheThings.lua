@@ -3105,6 +3105,8 @@ app.BaseFollower = {
 		elseif key == "text" then
 			local info = t.info;
 			return info and info.name;
+		elseif key == "description" then
+			return "Followers must be collected on a per-character basis. You can filter this out by unchecking Settings -> Mini List -> Followers.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
 		elseif key == "info" then
 			-- https://wow.gamepedia.com/API_C_Garrison.GetFollowerInfo
 			return C_Garrison.GetFollowerInfo(t.followerID);
@@ -3132,12 +3134,35 @@ app.BaseGarrisonBuilding = {
 	__index = function(t, key)
 		if key == "key" then
 			return "buildingID";
+		elseif key == "f" then
+			if t.itemID then return 200; end
 		elseif key == "text" then
-			return select(2, C_Garrison.GetBuildingInfo(t.buildingID));
+			return t.link or select(2, C_Garrison.GetBuildingInfo(t.buildingID));
 		elseif key == "icon" then
+			if t.itemID then
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+				if link then
+					t.link = link;
+					t.icon = icon;
+					return link;
+				end
+			end
 			return select(4, C_Garrison.GetBuildingInfo(t.buildingID));
+		elseif key == "link" then
+			if t.itemID then
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+				if link then
+					t.link = link;
+					t.icon = icon;
+					return link;
+				end
+			end
 		elseif key == "description" then
 			return select(5, C_Garrison.GetBuildingInfo(t.buildingID));
+		elseif key == "collectible" then
+			return t.itemID;
+		elseif key == "collected" then
+			return not select(11, C_Garrison.GetBuildingInfo(t.buildingID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3668,7 +3693,7 @@ app.BaseMusicRoll = {
 				return link;
 			end
 		elseif key == "description" then
-			return "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.";
+			return "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
 		else
 			-- Something that isn't dynamic.
 			return table[key];
