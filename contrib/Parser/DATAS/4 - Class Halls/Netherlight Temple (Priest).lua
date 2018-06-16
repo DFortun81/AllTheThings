@@ -1,17 +1,12 @@
 ---------------------------------------------------
 --      C L A S S   H A L L    M O D U L E       --
 ---------------------------------------------------
-dofile("./DATAS/4 - Class Halls/Common/Raid Caches.lua");
 _.ClassHalls =
 {
 	cl(5, { -- Netherlight Temple -- Priest
 		["groups"] =  {
 			n(102589, { -- Command Map
 				["groups"] = {
-					EMERALD_NIGHTMARE_CACHE_LIST,
-					NIGHTHOLD_CACHE_LIST,
-					TOMB_OF_SARGERAS_CACHE_LIST,
-					ANTORUS_CACHE_LIST,
 					q(48601, { -- Felfire Shattering
 						i(153130), -- Man'ari Training Amulet
 					}),

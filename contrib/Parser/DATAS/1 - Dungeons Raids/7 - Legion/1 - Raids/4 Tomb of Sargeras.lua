@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
+dofile("./DATAS/4 - Class Halls/Common/Raid Caches.lua");
 _.Instances = 
 {
 	{ -- Legion
@@ -9,8 +9,44 @@ _.Instances =
 			inst(875, { 	-- Tomb of Sargeras
 				["groups"] = {
 					d(17, {		-- LFR
-						["ids"] = { 3379 }, 
+						["ids"] = { 3379 },
 						["groups"] = {
+							n(-17, { 	-- Quests
+								["crs"] = CLASS_HALL_MISSION_TABLES,
+								["groups"] = {
+									i(147518, {	-- Cache of Fel Treasures [Raid Finder]
+										
+									}),
+									{
+										["itemID"] = 147497,	-- Encrusted Naga Scale [Raid Finder]
+										["questID"] = 47114,	-- Tomb of Sargeras: The Tomb's Mistress [Raid Finder]
+										["groups"] = {
+											i(147518),	-- Cache of Fel Treasures [Raid Finder]
+										},
+									},
+									{
+										["itemID"] = 147509,	-- Seal of the Deceiver [Raid Finder]
+										["questID"] = 47126,	-- Tomb of Sargeras: The Deceiver [Raid Finder]
+										["groups"] = {
+											i(147518),	-- Cache of Fel Treasures [Raid Finder]
+										},
+									},
+									{
+										["itemID"] = 147505,	-- Wailing Soul [Raid Finder]
+										["questID"] = 47122,	-- Tomb of Sargeras: The Fallen Avatar [Raid Finder]
+										["groups"] = {
+											i(147518),	-- Cache of Fel Treasures [Raid Finder]
+										},
+									},
+									{
+										["itemID"] = 147501,	-- Worshipper's Scrawlings [Raid Finder]
+										["questID"] = 47118,	-- Tomb of Sargeras: Free The Tormented [Raid Finder]
+										["groups"] = {
+											i(147518),	-- Cache of Fel Treasures [Raid Finder]
+										},
+									},
+								},
+							}),
 							n(0, { 		-- Zone Drop
 								i(147423),
 								i(147422),
@@ -196,6 +232,42 @@ _.Instances =
 					d(14, {		-- Normal
 						["ids"] = { 1807 }, -- Normal
 						["groups"] = {
+							n(-17, { 	-- Quests
+								["crs"] = CLASS_HALL_MISSION_TABLES,
+								["groups"] = {
+									i(147519, {	-- Cache of Fel Treasures [Normal]
+										
+									}),
+									{
+										["itemID"] = 147498,	-- Encrusted Naga Scale [Normal]
+										["questID"] = 47115,	-- Tomb of Sargeras: The Tomb's Mistress [Normal]
+										["groups"] = {
+											i(147519),	-- Cache of Fel Treasures [Normal]
+										},
+									},
+									{
+										["itemID"] = 147510,	-- Seal of the Deceiver [Normal]
+										["questID"] = 47127,	-- Tomb of Sargeras: The Deceiver [Normal]
+										["groups"] = {
+											i(147519),	-- Cache of Fel Treasures [Normal]
+										},
+									},
+									{
+										["itemID"] = 147506,	-- Wailing Soul [Normal]
+										["questID"] = 47123,	-- Tomb of Sargeras: The Fallen Avatar [Normal]
+										["groups"] = {
+											i(147519),	-- Cache of Fel Treasures [Normal]
+										},
+									},
+									{
+										["itemID"] = 147502,	-- Worshipper's Scrawlings [Normal]
+										["questID"] = 47119,	-- Tomb of Sargeras: Free The Tormented [Normal]
+										["groups"] = {
+											i(147519),	-- Cache of Fel Treasures [Normal]
+										},
+									},
+								},
+							}),
 							n(0, { 		-- Zone Drop
 								i(147423),
 								i(147422),
@@ -373,6 +445,42 @@ _.Instances =
 					d(15, {		-- Heroic
 						["ids"] = { 1805 }, -- Heroic
 						["groups"] = {
+							n(-17, { 	-- Quests
+								["crs"] = CLASS_HALL_MISSION_TABLES,
+								["groups"] = {
+									i(147520, {	-- Cache of Fel Treasures [Heroic]
+										
+									}),
+									{
+										["itemID"] = 147499,	-- Encrusted Naga Scale [Heroic]
+										["questID"] = 47116,	-- Tomb of Sargeras: The Tomb's Mistress [Heroic]
+										["groups"] = {
+											i(147520),	-- Cache of Fel Treasures [Heroic]
+										},
+									},
+									{
+										["itemID"] = 147511,	-- Seal of the Deceiver [Heroic]
+										["questID"] = 47128,	-- Tomb of Sargeras: The Deceiver [Heroic]
+										["groups"] = {
+											i(147520),	-- Cache of Fel Treasures [Heroic]
+										},
+									},
+									{
+										["itemID"] = 147507,	-- Wailing Soul [Heroic]
+										["questID"] = 47124,	-- Tomb of Sargeras: The Fallen Avatar [Heroic]
+										["groups"] = {
+											i(147520),	-- Cache of Fel Treasures [Heroic]
+										},
+									},
+									{
+										["itemID"] = 147503,	-- Worshipper's Scrawlings [Heroic]
+										["questID"] = 47120,	-- Tomb of Sargeras: Free The Tormented [Heroic]
+										["groups"] = {
+											i(147520),	-- Cache of Fel Treasures [Heroic]
+										},
+									},
+								},
+							}),
 							n(0, { 		-- Zone Drop
 								i(147423),
 								i(147422),
@@ -550,6 +658,42 @@ _.Instances =
 					d(16, {		-- Mythic
 						["ids"] = { 1806 }, -- Mythic
 						["groups"] = {
+							n(-17, { 	-- Quests
+								["crs"] = CLASS_HALL_MISSION_TABLES,
+								["groups"] = {
+									i(147521, {	-- Cache of Fel Treasures [Mythic]
+										
+									}),
+									{
+										["itemID"] = 147500,	-- Encrusted Naga Scale [Mythic]
+										["questID"] = 47117,	-- Tomb of Sargeras: The Tomb's Mistress [Mythic]
+										["groups"] = {
+											i(147521),	-- Cache of Fel Treasures [Mythic]
+										},
+									},
+									{
+										["itemID"] = 147512,	-- Seal of the Deceiver [Mythic]
+										["questID"] = 47129,	-- Tomb of Sargeras: The Deceiver [Mythic]
+										["groups"] = {
+											i(147521),	-- Cache of Fel Treasures [Mythic]
+										},
+									},
+									{
+										["itemID"] = 147508,	-- Wailing Soul [Mythic]
+										["questID"] = 47125,	-- Tomb of Sargeras: The Fallen Avatar [Mythic]
+										["groups"] = {
+											i(147521),	-- Cache of Fel Treasures [Mythic]
+										},
+									},
+									{
+										["itemID"] = 147504,	-- Worshipper's Scrawlings [Mythic]
+										["questID"] = 47121,	-- Tomb of Sargeras: Free The Tormented [Mythic]
+										["groups"] = {
+											i(147521),	-- Cache of Fel Treasures [Mythic]
+										},
+									},
+								},
+							}),
 							n(0, { 		-- Zone Drop
 								i(147423),
 								i(147422),
