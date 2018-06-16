@@ -97,18 +97,6 @@ _.ClassHalls =
 				q(42516),	-- Growing Power
 				q(44075),	-- Halls of Valor: Essence of Ferocity
 				q(42036),	-- Idol of the Wilds
-				q(43906),	-- Into the Nightmare: Fall of Cenarius
-				q(43904),	-- Into the Nightmare: Fall of Cenarius
-				q(43902),	-- Into the Nightmare: Fall of Cenarius
-				q(43908),	-- Into the Nightmare: Fall of Cenarius
-				q(43546),	-- Into the Nightmare: Il'gynoth
-				q(43547),	-- Into the Nightmare: Il'gynoth
-				q(43548),	-- Into the Nightmare: Il'gynoth
-				q(43549),	-- Into the Nightmare: Il'gynoth
-				q(43909),	-- Into the Nightmare: Xavius
-				q(43905),	-- Into the Nightmare: Xavius
-				q(43903),	-- Into the Nightmare: Xavius
-				q(43907),	-- Into the Nightmare: Xavius
 				q(46027),	-- Investigate the Broken Shore
 				q(41449),	-- Join the Dreamer
 				q(40653),	-- Making Trails
@@ -150,22 +138,6 @@ _.ClassHalls =
 				q(44232),	-- The Grove Provides
 				q(44277),	-- The Lord of Black Rook Hold
 				q(44276),	-- The Lord of Black Rook Hold
-				q(43911),	-- The Nighthold: Elisande
-				q(43920),	-- The Nighthold: Elisande
-				q(43917),	-- The Nighthold: Elisande
-				q(43914),	-- The Nighthold: Elisande
-				q(43918),	-- The Nighthold: Gul'dan
-				q(43921),	-- The Nighthold: Gul'dan
-				q(43912),	-- The Nighthold: Gul'dan
-				q(43915),	-- The Nighthold: Gul'dan							
-				q(43913),	-- The Nighthold: High Botanist Tel'arn
-				q(43910),	-- The Nighthold: High Botanist Tel'arn
-				q(43916),	-- The Nighthold: High Botanist Tel'arn
-				q(43919),	-- The Nighthold: High Botanist Tel'arn
-				q(43891),	-- The Nighthold: Vaults
-				q(43889),	-- The Nighthold: Vaults
-				q(43890),	-- The Nighthold: Vaults
-				q(43882),	-- The Nighthold: Vaults
 				q(43501),	-- The Power Within
 				q(43496),	-- The Power Within
 				{

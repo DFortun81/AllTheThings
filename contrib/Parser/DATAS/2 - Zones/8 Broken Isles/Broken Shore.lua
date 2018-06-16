@@ -903,18 +903,6 @@ _.Zones =
 					q(40151),	-- Immaculate Stormscale
 					q(45971),	-- Infernal Phenomena
 					q(45794),	-- Informing the Council
-					q(43908),	-- Into the Nightmare: Fall of Cenarius
-					q(43902),	-- Into the Nightmare: Fall of Cenarius
-					q(43904),	-- Into the Nightmare: Fall of Cenarius
-					q(43906),	-- Into the Nightmare: Fall of Cenarius
-					q(43549),	-- Into the Nightmare: Il'gynoth
-					q(43548),	-- Into the Nightmare: Il'gynoth
-					q(43547),	-- Into the Nightmare: Il'gynoth
-					q(43546),	-- Into the Nightmare: Il'gynoth
-					q(43907),	-- Into the Nightmare: Xavius
-					q(43905),	-- Into the Nightmare: Xavius
-					q(43903),	-- Into the Nightmare: Xavius
-					q(43909),	-- Into the Nightmare: Xavius
 					q(46252),	-- Intolerable Infestation
 					q(46031),	-- Investigate the Broken Shore
 					q(39757),	-- Keeping Your Edge
@@ -1062,22 +1050,6 @@ _.Zones =
 					q(46772),	-- The Mage Tower
 					q(46666),	-- The Motherlode
 					q(46774),	-- The Nether Disruptor
-					q(43911),	-- The Nighthold: Elisande
-					q(43920),	-- The Nighthold: Elisande
-					q(43914),	-- The Nighthold: Elisande
-					q(43917),	-- The Nighthold: Elisande
-					q(43912),	-- The Nighthold: Gul'dan
-					q(43918),	-- The Nighthold: Gul'dan
-					q(43921),	-- The Nighthold: Gul'dan
-					q(43915),	-- The Nighthold: Gul'dan
-					q(43919),	-- The Nighthold: High Botanist Tel'arn
-					q(43910),	-- The Nighthold: High Botanist Tel'arn
-					q(43916),	-- The Nighthold: High Botanist Tel'arn
-					q(43913),	-- The Nighthold: High Botanist Tel'arn
-					q(43882),	-- The Nighthold: Vaults
-					q(43889),	-- The Nighthold: Vaults
-					q(43890),	-- The Nighthold: Vaults
-					q(43891),	-- The Nighthold: Vaults
 					q(45553),	-- The Nighthuntress Beckons
 					q(46692),	-- The Owl and the Dreadlord
 					q(46693),	-- The Owl and the Observer
@@ -1093,10 +1065,6 @@ _.Zones =
 					q(46679),	-- The Thread of Shadow
 					q(46681),	-- The Thread of Souls
 					q(46680),	-- The Thread of Starlight
-					q(47117),	-- The Tomb's Mistress
-					q(47115),	-- The Tomb's Mistress
-					q(47116),	-- The Tomb's Mistress
-					q(47114),	-- The Tomb's Mistress
 					q(46687),	-- The Wisp and the Nightmare
 					q(46686),	-- The Wisp and the Sea
 					q(46685),	-- The Wisp and the Shadow
