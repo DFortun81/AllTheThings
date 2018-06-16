@@ -562,8 +562,11 @@ local function GetProgressColor(p)
 	return progress_colors[p];
 end
 local function GetProgressColorText(progress, total)
-	local percent = progress / total;
-	return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. tostring(floor(percent * 100)) .. "%)|r";
+	if total and total > 0 then
+		local percent = progress / total;
+		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. tostring(floor(percent * 100)) .. "%)|r";
+	end
+	return "---";
 end
 CS:Hide();
 
@@ -1178,7 +1181,7 @@ local function GetGearSetCache()
 end
 local function GetProgressText(data)
 	if data.total and data.total > 0 then
-		return GetProgressColorText(data.progress, data.total);
+		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.trackable then
 		return GetCompletionIcon(data.saved);
 	elseif data.collectible then
@@ -2281,7 +2284,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 									
 									local right = nil;
 									if j.total and j.total > 0 then
-										progress = progress + j.progress;
+										progress = progress + (j.progress or 0);
 										total = total + j.total;
 										if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
 											right = GetProgressColorText(j.progress, j.total);
@@ -2376,7 +2379,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 							for i,j in ipairs(group.g) do
 								if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
 									if j.total and j.total > 1 then
-										progress = progress + j.progress;
+										progress = progress + (j.progress or 0);
 										total = total + j.total;
 									else
 										total = total + 1;

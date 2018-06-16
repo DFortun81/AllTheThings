@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
+dofile("./DATAS/4 - Class Halls/Common/Raid Caches.lua");
 _.Instances = 
 {
 	{ -- Legion
@@ -11,8 +11,41 @@ _.Instances =
 					d(17, {		-- LFR
 						["ids"] = { 3379 }, 
 						["groups"] = {
-							i(140148, { -- Cache of Nightborne Treasures [Raid Finder]
-								
+							n(-17, { 	-- Quests
+								["crs"] = CLASS_HALL_MISSION_TABLES,
+								["groups"] = {
+									i(140148, { -- Cache of Nightborne Treasures [Raid Finder]
+										
+									}),
+									{
+										["itemID"] = 140172,	-- Ancient Nightborne Tome [Raid Finder]
+										["questID"] = 43911,	-- The Nighthold: Elisande [Raid Finder]
+										["groups"] = {
+											i(140148),	-- Cache of Nightborne Treasures [Raid Finder]
+										},
+									},
+									{
+										["itemID"] = 140171,	-- Glowing Lily [Raid Finder]
+										["questID"] = 43910,	-- The Nighthold: High Botanist Tel'arn [Raid Finder]
+										["groups"] = {
+											i(140148),	-- Cache of Nightborne Treasures [Raid Finder]
+										},
+									},
+									{
+										["itemID"] = 140147,	-- Pulsauron Bindings [Raid Finder]
+										["questID"] = 43882,	-- The Nighthold: Vaults [Raid Finder]
+										["groups"] = {
+											i(140148),	-- Cache of Nightborne Treasures [Raid Finder]
+										},
+									},
+									{
+										["itemID"] = 140173,	-- Shred of Tattered Robe [Raid Finder]
+										["questID"] = 43912,	-- The Nighthold: Gul'dan [Raid Finder]
+										["groups"] = {
+											i(140148),	-- Cache of Nightborne Treasures [Raid Finder]
+										},
+									},
+								},
 							}),
 							n(0, { 		-- Zone Drop
 								i(144404),
@@ -203,8 +236,41 @@ _.Instances =
 					d(14, {		-- Normal
 						["ids"] = { 1807 }, -- Normal
 						["groups"] = {
-							i(140150, { -- Cache of Nightborne Treasures [Normal]
-								
+							n(-17, { 	-- Quests
+								["crs"] = CLASS_HALL_MISSION_TABLES,
+								["groups"] = {
+									i(140150, { -- Cache of Nightborne Treasures [Normal]
+										
+									}),
+									{
+										["itemID"] = 140175,	-- Ancient Nightborne Tome [Normal]
+										["questID"] = 43914,	-- The Nighthold: Elisande [Normal]
+										["groups"] = {
+											i(140150),	-- Cache of Nightborne Treasures [Normal]
+										},
+									},
+									{
+										["itemID"] = 140174,	-- Glowing Lily [Normal]
+										["questID"] = 43913,	-- The Nighthold: High Botanist Tel'arn [Normal]
+										["groups"] = {
+											i(140150),	-- Cache of Nightborne Treasures [Normal]
+										},
+									},
+									{
+										["itemID"] = 140149,	-- Pulsauron Bindings [Normal]
+										["questID"] = 43889,	-- The Nighthold: Vaults [Normal]
+										["groups"] = {
+											i(140150),	-- Cache of Nightborne Treasures [Normal]
+										},
+									},
+									{
+										["itemID"] = 140177,	-- Shred of Tattered Robe [Normal]
+										["questID"] = 43915,	-- The Nighthold: Gul'dan [Normal]
+										["groups"] = {
+											i(140150),	-- Cache of Nightborne Treasures [Normal]
+										},
+									},
+								},
 							}),
 							n(0, { 		-- Zone Drop
 								i(144404),
@@ -388,8 +454,41 @@ _.Instances =
 					d(15, {		-- Heroic
 						["ids"] = { 1805 }, -- Heroic
 						["groups"] = {
-							i(140152, { -- Cache of Nightborne Treasures [Heroic]
-								
+							n(-17, { 	-- Quests
+								["crs"] = CLASS_HALL_MISSION_TABLES,
+								["groups"] = {
+									i(140152, { -- Cache of Nightborne Treasures [Heroic]
+										
+									}),
+									{
+										["itemID"] = 140472,	-- Ancient Nightborne Tome [Heroic]
+										["questID"] = 43917,	-- The Nighthold: Elisande [Heroic]
+										["groups"] = {
+											i(140152),	-- Cache of Nightborne Treasures [Heroic]
+										},
+									},
+									{
+										["itemID"] = 140178,	-- Glowing Lily [Heroic]
+										["questID"] = 43916,	-- The Nighthold: High Botanist Tel'arn [Heroic]
+										["groups"] = {
+											i(140152),	-- Cache of Nightborne Treasures [Heroic]
+										},
+									},
+									{
+										["itemID"] = 140151,	-- Pulsauron Bindings [Heroic]
+										["questID"] = 43890,	-- The Nighthold: Vaults [Heroic]
+										["groups"] = {
+											i(140152),	-- Cache of Nightborne Treasures [Heroic]
+										},
+									},
+									{
+										["itemID"] = 140180,	-- Shred of Tattered Robe [Heroic]
+										["questID"] = 43918,	-- The Nighthold: Gul'dan [Heroic]
+										["groups"] = {
+											i(140152),	-- Cache of Nightborne Treasures [Heroic]
+										},
+									},
+								},
 							}),
 							n(0, { 		-- Zone Drop
 								i(144404),
@@ -573,8 +672,41 @@ _.Instances =
 					d(16, {		-- Mythic
 						["ids"] = { 1806 }, -- Mythic
 						["groups"] = {
-							i(140154, { -- Cache of Nightborne Treasures [Mythic]
-								
+							n(-17, { 	-- Quests
+								["crs"] = CLASS_HALL_MISSION_TABLES,
+								["groups"] = {
+									i(140154, { -- Cache of Nightborne Treasures [Mythic]
+										
+									}),
+									{
+										["itemID"] = 140182,	-- Ancient Nightborne Tome [Mythic]
+										["questID"] = 43920,	-- The Nighthold: Elisande [Mythic]
+										["groups"] = {
+											i(140154),	-- Cache of Nightborne Treasures [Mythic]
+										},
+									},
+									{
+										["itemID"] = 140181,	-- Glowing Lily [Mythic]
+										["questID"] = 43919,	-- The Nighthold: High Botanist Tel'arn [Mythic]
+										["groups"] = {
+											i(140154),	-- Cache of Nightborne Treasures [Mythic]
+										},
+									},
+									{
+										["itemID"] = 140153,	-- Pulsauron Bindings [Mythic]
+										["questID"] = 43891,	-- The Nighthold: Vaults [Mythic]
+										["groups"] = {
+											i(140154),	-- Cache of Nightborne Treasures [Mythic]
+										},
+									},
+									{
+										["itemID"] = 140183,	-- Shred of Tattered Robe [Mythic]
+										["questID"] = 43921,	-- The Nighthold: Gul'dan [Mythic]
+										["groups"] = {
+											i(140154),	-- Cache of Nightborne Treasures [Mythic]
+										},
+									},
+								},
 							}),
 							n(0, { 		-- Zone Drop
 								i(144404),
