@@ -11,6 +11,9 @@ _.Instances =
 					d(17, {		-- LFR
 						["ids"] = { 3379 }, 
 						["groups"] = {
+							i(140148, { -- Cache of Nightborne Treasures [Raid Finder]
+								
+							}),
 							n(0, { 		-- Zone Drop
 								i(144404),
 								i(144405),
@@ -200,6 +203,9 @@ _.Instances =
 					d(14, {		-- Normal
 						["ids"] = { 1807 }, -- Normal
 						["groups"] = {
+							i(140150, { -- Cache of Nightborne Treasures [Normal]
+								
+							}),
 							n(0, { 		-- Zone Drop
 								i(144404),
 								i(144405),
@@ -382,6 +388,9 @@ _.Instances =
 					d(15, {		-- Heroic
 						["ids"] = { 1805 }, -- Heroic
 						["groups"] = {
+							i(140152, { -- Cache of Nightborne Treasures [Heroic]
+								
+							}),
 							n(0, { 		-- Zone Drop
 								i(144404),
 								i(144405),
@@ -564,6 +573,9 @@ _.Instances =
 					d(16, {		-- Mythic
 						["ids"] = { 1806 }, -- Mythic
 						["groups"] = {
+							i(140154, { -- Cache of Nightborne Treasures [Mythic]
+								
+							}),
 							n(0, { 		-- Zone Drop
 								i(144404),
 								i(144405),
