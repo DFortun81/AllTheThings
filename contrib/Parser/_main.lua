@@ -279,24 +279,18 @@ WOD_CRAFTED_ITEM = function(id)
 					{
 						["itemID"] = id,
 						["bonusID"] = 559,
-						["groups"] = {
-							{
-								["itemID"] = id,
-								["bonusID"] = 594,
-								["groups"] = {
-									{
-										["itemID"] = id,
-										["bonusID"] = 619,
-										["groups"] = {
-											{
-												["itemID"] = id,
-												["bonusID"] = 620,
-											}
-										}
-									}
-								}
-							}
-						}
+					},
+					{
+						["itemID"] = id,
+						["bonusID"] = 594,
+					},
+					{
+						["itemID"] = id,
+						["bonusID"] = 619,
+					},
+					{
+						["itemID"] = id,
+						["bonusID"] = 620,
 					}
 				}
 			}
