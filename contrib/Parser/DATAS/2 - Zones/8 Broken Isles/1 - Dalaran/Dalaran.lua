@@ -889,18 +889,6 @@ _.Zones =
 					q(39790),	-- Infernal Brimstone Theory
 					q(40995),	-- Injection of Power
 					q(40038),	-- Insane Ramblings
-					q(43904),	-- Into the Nightmare: Fall of Cenarius
-					q(43908),	-- Into the Nightmare: Fall of Cenarius
-					q(43902),	-- Into the Nightmare: Fall of Cenarius
-					q(43906),	-- Into the Nightmare: Fall of Cenarius
-					q(43546),	-- Into the Nightmare: Il'gynoth
-					q(43547),	-- Into the Nightmare: Il'gynoth
-					q(43549),	-- Into the Nightmare: Il'gynoth
-					q(43548),	-- Into the Nightmare: Il'gynoth
-					q(43907),	-- Into the Nightmare: Xavius
-					q(43905),	-- Into the Nightmare: Xavius
-					q(43903),	-- Into the Nightmare: Xavius
-					q(43909),	-- Into the Nightmare: Xavius
 					q(45992),	-- Investigate the Broken Shore
 					q(40865),	-- It's Not Rocket Science
 					q(40879),	-- It's On With Automatons
@@ -1201,21 +1189,6 @@ _.Zones =
 					q(45207),	-- The Nightborne Apprentice
 					q(38967),	-- The Nightborne Connection
 					q(45177),	-- The Nighthold
-					q(43917),	-- The Nighthold: Elisande
-					q(43914),	-- The Nighthold: Elisande
-					q(43911),	-- The Nighthold: Elisande
-					q(43920),	-- The Nighthold: Elisande
-					q(43912),	-- The Nighthold: Gul'dan
-					q(43918),	-- The Nighthold: Gul'dan
-					q(43921),	-- The Nighthold: Gul'dan
-					q(43915),	-- The Nighthold: Gul'dan
-					q(43919),	-- The Nighthold: High Botanist Tel'arn
-					q(43916),	-- The Nighthold: High Botanist Tel'arn
-					q(43910),	-- The Nighthold: High Botanist Tel'arn
-					q(43882),	-- The Nighthold: Vaults
-					q(43890),	-- The Nighthold: Vaults
-					q(43889),	-- The Nighthold: Vaults
-					q(43891),	-- The Nighthold: Vaults
 					q(41113),	-- The Only Way to Travel
 					q(38962),	-- The Path to Suramar City
 					q(40028),	-- The Pied Picker

@@ -1237,18 +1237,6 @@ _.Zones =
 									q(42405),	-- Informing Our Allies
 									q(41047),	-- Infused with Power
 									q(42376),	-- Inquisitor Tivos
-									q(43908),	-- Into the Nightmare: Fall of Cenarius
-									q(43904),	-- Into the Nightmare: Fall of Cenarius
-									q(43906),	-- Into the Nightmare: Fall of Cenarius
-									q(43902),	-- Into the Nightmare: Fall of Cenarius										
-									q(43548),	-- Into the Nightmare: Il'gynoth
-									q(43549),	-- Into the Nightmare: Il'gynoth
-									q(43547),	-- Into the Nightmare: Il'gynoth
-									q(43546),	-- Into the Nightmare: Il'gynoth
-									q(43907),	-- Into the Nightmare: Xavius
-									q(43909),	-- Into the Nightmare: Xavius
-									q(43905),	-- Into the Nightmare: Xavius
-									q(43903),	-- Into the Nightmare: Xavius
 									q(46023),	-- Investigate the Broken Shore
 									q(39699),	-- Ironhorn Leysmithing
 									q(43957),	-- Jade Darkhaven
@@ -1361,22 +1349,6 @@ _.Zones =
 									q(43182),	-- The Missing Vessel
 									q(44671),	-- The Muscle
 									q(42407),	-- The Nature of the Beast
-									q(43911),	-- The Nighthold: Elisande
-									q(43920),	-- The Nighthold: Elisande
-									q(43917),	-- The Nighthold: Elisande
-									q(43914),	-- The Nighthold: Elisande
-									q(43921),	-- The Nighthold: Gul'dan
-									q(43915),	-- The Nighthold: Gul'dan
-									q(43912),	-- The Nighthold: Gul'dan
-									q(43918),	-- The Nighthold: Gul'dan
-									q(43910),	-- The Nighthold: High Botanist Tel'arn
-									q(43919),	-- The Nighthold: High Botanist Tel'arn
-									q(43916),	-- The Nighthold: High Botanist Tel'arn
-									q(43913),	-- The Nighthold: High Botanist Tel'arn
-									q(43889),	-- The Nighthold: Vaults
-									q(43882),	-- The Nighthold: Vaults
-									q(43890),	-- The Nighthold: Vaults
-									q(43891),	-- The Nighthold: Vaults
 									q(43496),	-- The Power Within
 									q(43501),	-- The Power Within
 									q(41192),	-- The Right Path

@@ -142,17 +142,6 @@ _.ClassHalls =
 				q(44379),	-- In Pursuit of Power
 				q(42665),	-- Into Our Ranks
 				q(39741),	-- Into Our Ranks
-				q(43906),	-- Into the Nightmare: Fall of Cenarius
-				q(43908),	-- Into the Nightmare: Fall of Cenarius
-				q(43902),	-- Into the Nightmare: Fall of Cenarius
-				q(43904),	-- Into the Nightmare: Fall of Cenarius
-				q(43548),	-- Into the Nightmare: Il'gynoth
-				q(43547),	-- Into the Nightmare: Il'gynoth
-				q(43549),	-- Into the Nightmare: Il'gynoth
-				q(43546),	-- Into the Nightmare: Il'gynoth
-				q(43907),	-- Into the Nightmare: Xavius
-				q(43909),	-- Into the Nightmare: Xavius
-				q(43903),	-- Into the Nightmare: Xavius
 				q(45994),	-- Investigate the Broken Shore
 				q(42754),	-- Jump-Capable
 				q(42132),	-- Last, But Not Least
@@ -198,21 +187,6 @@ _.ClassHalls =
 				q(42920),	-- The Invasion of Niskara
 				q(44276),	-- The Lord of Black Rook Hold
 				q(44277),	-- The Lord of Black Rook Hold
-				q(43914),	-- The Nighthold: Elisande
-				q(43920),	-- The Nighthold: Elisande
-				q(43911),	-- The Nighthold: Elisande
-				q(43917),	-- The Nighthold: Elisande
-				q(43912),	-- The Nighthold: Gul'dan
-				q(43915),	-- The Nighthold: Gul'dan
-				q(43921),	-- The Nighthold: Gul'dan
-				q(43918),	-- The Nighthold: Gul'dan
-				q(43910),	-- The Nighthold: High Botanist Tel'arn
-				q(43913),	-- The Nighthold: High Botanist Tel'arn
-				q(43916),	-- The Nighthold: High Botanist Tel'arn
-				q(43890),	-- The Nighthold: Vaults
-				q(43882),	-- The Nighthold: Vaults
-				q(43889),	-- The Nighthold: Vaults
-				q(43891),	-- The Nighthold: Vaults
 				q(43501),	-- The Power Within
 				q(43496),	-- The Power Within
 				q(42677),	-- Things Gaardoun Needs

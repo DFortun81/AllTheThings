@@ -82,18 +82,6 @@ _.ClassHalls =
 				q(46238),	-- If You Build It
 				q(42603),	-- Information at Any Cost
 				q(45794),	-- Informing the Council
-				q(43908),	-- Into the Nightmare: Fall of Cenarius
-				q(43904),	-- Into the Nightmare: Fall of Cenarius
-				q(43902),	-- Into the Nightmare: Fall of Cenarius
-				q(43906),	-- Into the Nightmare: Fall of Cenarius
-				q(43549),	-- Into the Nightmare: Il'gynoth
-				q(43548),	-- Into the Nightmare: Il'gynoth
-				q(43546),	-- Into the Nightmare: Il'gynoth
-				q(43547),	-- Into the Nightmare: Il'gynoth
-				q(43905),	-- Into the Nightmare: Xavius
-				q(43907),	-- Into the Nightmare: Xavius
-				q(43903),	-- Into the Nightmare: Xavius
-				q(43909),	-- Into the Nightmare: Xavius
 				q(45990),	-- Investigate the Broken Shore
 				q(42103),	-- Let it Feed
 				q(41793),	-- Lulubelle on Loan
@@ -129,22 +117,6 @@ _.ClassHalls =
 				q(44277),	-- The Lord of Black Rook Hold
 				qa( 46241),	-- The Minions of Hel'nurath
 				q(40729),	-- The New Blood
-				q(43914),	-- The Nighthold: Elisande
-				q(43911),	-- The Nighthold: Elisande
-				q(43920),	-- The Nighthold: Elisande
-				q(43917),	-- The Nighthold: Elisande
-				q(43912),	-- The Nighthold: Gul'dan
-				q(43915),	-- The Nighthold: Gul'dan
-				q(43921),	-- The Nighthold: Gul'dan
-				q(43918),	-- The Nighthold: Gul'dan
-				q(43913),	-- The Nighthold: High Botanist Tel'arn
-				q(43919),	-- The Nighthold: High Botanist Tel'arn
-				q(43916),	-- The Nighthold: High Botanist Tel'arn
-				q(43910),	-- The Nighthold: High Botanist Tel'arn
-				q(43890),	-- The Nighthold: Vaults
-				q(43889),	-- The Nighthold: Vaults
-				q(43882),	-- The Nighthold: Vaults
-				q(43891),	-- The Nighthold: Vaults
 				q(40824),	-- The Path of the Dreadscar
 				q(41156),	-- The Power Possessed
 				q(40712),	-- The Power Possessed

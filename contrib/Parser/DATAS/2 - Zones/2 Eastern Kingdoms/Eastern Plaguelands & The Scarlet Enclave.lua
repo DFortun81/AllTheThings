@@ -1653,9 +1653,6 @@ _.Zones =
 								q(38710),	-- An Urgent Gathering
 								q(45974),	-- An Urgent Warning
 								q(45890),	-- Ancestors and Enemies
-								q(48288),	-- Antoran High Command
-								q(48299),	-- Antoran High Command
-								q(48295),	-- Antoran High Command
 								q(44259),	-- Assault on Violet Hold: Into the Violet Hold
 								q(44258),	-- Assault on Violet Hold: Into the Violet Hold
 								q(43493),	-- Black Rook Hold: Lord Ravencrest
@@ -1720,21 +1717,7 @@ _.Zones =
 								q(42850),	-- Tech It Up a Notch
 								q(44263),	-- The Arcway: Into the Arcway
 								q(42846),	-- The Blood Matriarch
-								q(48301),	-- The Burning Coven
-								q(48293),	-- The Burning Coven
 								q(42890),	-- The Codex of Command
-								q(43902),	-- The Emerald Nightmare: Fall of Cenarius
-								q(43906),	-- The Emerald Nightmare: Fall of Cenarius
-								q(43904),	-- The Emerald Nightmare: Fall of Cenarius
-								q(43908),	-- The Emerald Nightmare: Fall of Cenarius
-								q(43548),	-- The Emerald Nightmare: Il'gynoth
-								q(43549),	-- The Emerald Nightmare: Il'gynoth
-								q(43547),	-- The Emerald Nightmare: Il'gynoth
-								q(43546),	-- The Emerald Nightmare: Il'gynoth
-								q(43909),	-- The Emerald Nightmare: Xavius
-								q(43907),	-- The Emerald Nightmare: Xavius
-								q(43903),	-- The Emerald Nightmare: Xavius
-								q(43905),	-- The Emerald Nightmare: Xavius
 								q(46071),	-- The Hammer of Dalaran
 								q(42885),	-- The Highlord's Command
 								qa( 42967),	-- The Highlord's Command
@@ -1742,30 +1725,11 @@ _.Zones =
 								q(42966),	-- The Highlord's Command
 								q(43540),	-- The Mind of the Enemy
 								q(42231),	-- The Mysterious Paladin
-								q(43917),	-- The Nighthold: Elisande
-								q(43911),	-- The Nighthold: Elisande
-								q(43914),	-- The Nighthold: Elisande
-								q(43920),	-- The Nighthold: Elisande
-								q(43921),	-- The Nighthold: Gul'dan
-								q(43918),	-- The Nighthold: Gul'dan
-								q(43912),	-- The Nighthold: Gul'dan
-								q(43915),	-- The Nighthold: Gul'dan
-								q(43910),	-- The Nighthold: High Botanist Tel'arn
-								q(43919),	-- The Nighthold: High Botanist Tel'arn
-								q(43916),	-- The Nighthold: High Botanist Tel'arn
-								q(43913),	-- The Nighthold: High Botanist Tel'arn
-								q(43889),	-- The Nighthold: Vaults
-								q(43891),	-- The Nighthold: Vaults
-								q(43882),	-- The Nighthold: Vaults
-								q(43890),	-- The Nighthold: Vaults
 								q(43496),	-- The Power Within
 								q(43501),	-- The Power Within
 								q(42919),	-- The Scion's Legacy
 								q(38376),	-- The Search for the Highlord
 								q(42120),	-- The Silver Hand
-								q(48300),	-- The Soulhunter
-								q(48296),	-- The Soulhunter
-								qa( 48294),	-- The Unmaker
 								q(45172),	-- To Battle!
 								q(42886),	-- To Faronaar
 								q(43489),	-- To Felblaze Ingress
