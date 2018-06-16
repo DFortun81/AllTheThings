@@ -528,6 +528,10 @@ _.WorldEvents =
 		},
 		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
 		["maps"] = { 1014 }, -- Dalaran: Broken Isles
+		["crs"] = {
+			103791,	-- Madam Gosu [Rogue Class Hall]
+			100986,	-- Madam Goya [Underbelly]
+		},
 		["u"] = 9,
 	}),
 };
