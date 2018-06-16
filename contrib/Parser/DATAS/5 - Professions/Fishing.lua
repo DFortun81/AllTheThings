@@ -453,6 +453,15 @@ profession(356, { 	-- Fishing
 			["requiredSkill"] = 356,
 			["creatureID"] = 108825
 		}),
+		spell(201943, { -- Better Luck Next Time
+			["groups"] = {
+				i(139408), -- Deck Sandals
+				i(139406), -- Sea Dog Boots
+				i(139407), -- Diver's Chain Boots
+				i(139405), -- Kul'Tiras Marine Issue Boots
+			},
+			["maps"] = { 1015, 1021, 1096, 1024, 1017, 1033, 1018 }, -- Azsuna / Broken Shore / Eye of Azshara / Highmountain / Stormheim / Suramar / Val'sharah
+		}),
 		ach(10596, {	-- Bigger Fish to Fry
 			{
 				["achievementID"] = 10596,	-- Bigger Fish to Fry
@@ -877,6 +886,7 @@ profession(356, { 	-- Fishing
 			["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
 			["requiredSkill"] = 356,
 		}),
+		
 	}),
 });
 	
