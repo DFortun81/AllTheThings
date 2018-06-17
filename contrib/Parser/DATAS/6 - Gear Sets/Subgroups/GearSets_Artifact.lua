@@ -3755,8 +3755,8 @@ _.GearSets =
 								["modelRotation"] = 45,
 								["groups"] = {
 								races({8}, artifact(266)), -- Standard Troll
-								races({6}, artifact(265)), -- Standard Tauren
-								races({22}, artifact(264)), -- Standard Worgen
+								races({22}, artifact(265)), -- Standard Worgen
+								races({6}, artifact(264)), -- Standard Tauren
 								races({4}, artifact(121)), -- Standard Night Elf
 								artifact(267), -- Recover one of the Pillars
 								artifact(268), -- Recover Light's Heart
@@ -3838,8 +3838,8 @@ _.GearSets =
 								["modelRotation"] = 45,
 								["groups"] = {
 								races({8}, artifact(266)), -- Standard Troll
-								races({6}, artifact(265)), -- Standard Tauren
-								races({22}, artifact(264)), -- Standard Worgen
+								races({22}, artifact(265)), -- Standard Worgen
+								races({6}, artifact(264)), -- Standard Tauren
 								races({4}, artifact(121)), -- Standard Night Elf
 								artifact(267), -- Recover one of the Pillars
 								artifact(268), -- Recover Light's Heart
