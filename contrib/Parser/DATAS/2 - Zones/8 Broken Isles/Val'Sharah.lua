@@ -44,11 +44,19 @@ _.Zones =
 					["groups"] = {
 						cr(108879, e(1770, { -- Humongris 
 							["groups"] = {
+								{
+									["itemID"] = 139895,	-- Skinning Technique: Legion Butchery
+									["collectible"] = false,
+									["dr"] = 100,
+									["groups"] = {
+										recipe(194173),	-- Legion Butchery
+									},
+								},
 								i(141426),
 								i(141445),
 								i(141416),
 								i(141422),
-								i(141540)
+								i(141540),
 							},
 							["questID"] = 42819, -- Change to tracking quest later.
 							["isRaid"] = true,
@@ -67,57 +75,7 @@ _.Zones =
 					},
 					["modID"] = 3
 				}),
-				n(-3, { 	-- Holidays					
---[[					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
---]]					
+				n(-3, { 	-- Holidays
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -134,25 +92,7 @@ _.Zones =
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,
 					}),
---[[					
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
---]]				
-				}),					
+				}),	
 				n(-25, { 	-- Pet Battles
 					p(1738), 	-- Auburn Ringtail
 					p(398), 	-- Black Rat
@@ -1768,22 +1708,6 @@ _.Zones =
 								["creatureID"] = 120456
 							}),
 						}),
-					}),
-					prof(393, { -- Skinning
-						cr(108879, e(1770, { -- Humongris 
-							["groups"] = {
-								{
-									["itemID"] = 139895,	-- Skinning Technique: Legion Butchery
-									["collectible"] = false,
-									["dr"] = 100,
-									["groups"] = {
-										recipe(194173),	-- Legion Butchery
-									},
-								},
-							},
-							["questID"] = 42819,
-							["isRaid"] = true,
-						})),
 					}),
 				}),
 				n(-34, { 	-- World Quests
