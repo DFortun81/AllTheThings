@@ -218,13 +218,13 @@ _.Achievements =
 						ach(518), -- 30 Exalted Reputations
 						ach(1014), -- 35 Exalted Reputations
 						ach(1015, { -- 40 Exalted Reputations
-							style(1, title(46)), -- <Name> the Exalted
+							title(46), -- <Name> the Exalted
 						}),
 						ach(5374), -- 45 Exalted Reputations
 						ach(5723), -- 50 Exalted Reputations
 						ach(6826), -- 55 Exalted Reputations
 						ach(6742, { -- 60 Exalted Reputations
-							style(1, title(197)), -- <Name> the eBeloved
+							title(197), -- <Name> the Beloved
 						}),
 					}),
 					ach(5794), -- Time Flies When You're Having Fun
