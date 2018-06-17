@@ -872,7 +872,7 @@ local function GetCachedSearchResults(search, method, ...)
 						end
 					end
 				end
-				if #group > 0 and group[1].u then
+				if #group > 0 and group[1].itemID and group[1].u then
 					tinsert(listing, 1, L("UNOBTAINABLE_ITEM_REASONS")[group[1].u][2]);
 				end
 			else
