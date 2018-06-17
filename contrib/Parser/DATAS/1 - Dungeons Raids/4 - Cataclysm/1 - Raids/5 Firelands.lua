@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 _.Instances = 
 {
 	{ -- Cataclysm
@@ -43,7 +42,7 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						n(-15, { --  Recipes
+						["groups"] = {
 							i(69976),	-- Pattern: Boots of the Black Flame		
 							i(69966),	-- Pattern: Don Tayo's Inferno Mittens	
 							i(69975),	-- Pattern: Endless Dream  Walkers		
@@ -62,84 +61,162 @@ _.Instances =
 							i(69958),	-- Plans: Eternal Elementium Handguards
 							i(69957),	-- Plans: Fists of Fury
 							i(69959),	-- Plans: Holy Flame Gauntlets
-						}),
-						i(71640, {	-- Riplimb's Lost Collar
-							i(71617, {	-- Crystallized Firestone
-								i(71641),	-- Riplimb's Lost Collar
-							})
-						}),
-						i(71365, {	-- Hide-Bound Chains
-							i(71617, {	-- Crystallized Firestone
-								i(71561),	-- Hide-Bound Chains
+							i(71640, {	-- Riplimb's Lost Collar
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										i(71641),	-- Riplimb's Lost Collar
+									})
+								},
 							}),
-						}),
-						i(71359, {	-- Chelley's Sterilized Scalpel
-							i(71617, {	-- Crystallized Firestone
-								i(71560),	-- Chelley's Sterilized Scalpel
+							i(71365, {	-- Hide-Bound Chains
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										i(71561),	-- Hide-Bound Chains
+									}),
+								},
 							}),
-						}),
-						i(71362, {	-- Obsidium Cleaver
-							i(71617, {	-- Crystallized Firestone
-								i(71562),	-- Obsidium Cleaver
+							i(71359, {	-- Chelley's Sterilized Scalpel
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										i(71560),	-- Chelley's Sterilized Scalpel
+									}),
+								},							
 							}),
-						}),
-						i(71361, {	-- Ranseur of Hatred
-							i(71617, {	-- Crystallized Firestone
-								i(71557),	-- Ranseur of Hatred
+							i(71362, {	-- Obsidium Cleaver
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										i(71562),	-- Obsidium Cleaver
+									}),
+								},						
 							}),
-						}),
-						i(71360, {	-- Spire of Scarlet Pain
-							i(71617, {	-- Crystallized Firestone
-								i(71559),	-- Spire of Scarlet Pain
+							i(71361, {	-- Ranseur of Hatred
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										i(71557),	-- Ranseur of Hatred
+									}),
+								},
 							}),
-						}),
-						i(71366, {	-- Lava Bolt Crossbow
-							i(71617, {	-- Crystallized Firestone
-								i(71558),	-- Lava Bolt Crossbow
+							i(71360, {	-- Spire of Scarlet Pain
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										i(71559),	-- Spire of Scarlet Pain
+									}),
+								},
 							}),
-						}),
+							i(71366, {	-- Lava Bolt Crossbow
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										i(71558),	-- Lava Bolt Crossbow
+									}),
+								},
+							}),
+							i(68972, { 	-- Apparatus of Khaz'goroth
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										 i(69113),	-- Apparatus of Khaz'goroth
+									}),
+								},
+							}),
+							i(70929, {  -- Firebound Gorget
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										i(71563),	-- Firebound Gorget
+									}),
+								},
+							}),
+							i(68915, { 	-- Scales of Life
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										i(69109),	-- Scales of Life
+									}),
+								},
+							}),
+							i(71367, {	-- Theck's Emberseal
+								["groups"] = {
+									i(71617, {	-- Crystallized Firestone
+										i(71564),	-- Theck's Emberseal
+									}),
+								},
+							}),
+						},
+						["crs"] = {
+							53134,	-- Ancient Core Hound
+							53635,	-- Cinderweb Drone
+							53642,	-- Cinderweb Spinner
+							53096,	-- Fire Turtle Hatchling
+							54161,	-- Flame Archon
+							53187,	-- Flamewaker Animator
+							53223,	-- Flamewaker Beast Handler
+							53121,	-- Flamewaker Cauterizer
+							53639,	-- Flamewaker Cauterizer
+							53222,	-- Flamewaker Centurion
+							53119,	-- Flamewaker Forward Guard
+							54073,	-- Flamewaker Hound Master
+							53185,	-- Flamewaker Overseer
+							53120,	-- Flamewaker Pathfinder
+							53640,	-- Flamewaker Sentinel
+							53188,	-- Flamewaker Subjugator
+							53224,	-- Flamewaker Taskmaster
+							53244,	-- Flamewaker Trainee
+							53128,	-- Giant Fire Scorpion
+							53206,	-- Hell Hound
+							53616,	-- Kar the Everburning<Firelord>
+							53575,	-- Lava Wielder
+							54143,	-- Molten Flamefather
+							53115,	-- Molten Lord
+							53141,	-- Molten Surger
+							53167,	-- Unbound Pyrelord
+							53732,	-- Unbound Smoldering Elemental
+							53901,	-- Unstable Magma
+						},
 					}),
 					d(  1, {	-- Normal
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
-							e(192, {	-- Beth'tilac		
-								["groups"] = {		
-									i(152976),	-- Cinderweb Egg (PET!)
-									i( 69237),	-- Living Ember
-									i( 71039),	-- Funeral Pyre
-									i( 71775),	-- Smoldering Censer of Purity
-									i( 71780),	-- Zoid's Firelit Greatsword
-									i( 71779),	-- Avool's Incendiary Shanker
-									i( 71787),	-- Entrail Disgorger
-									i( 71776),	-- Eye of Purification
-									i( 71785),	-- Firethorn Mindslicer
-									i( 70922),	-- Mandible of Beth'tilac
-									i( 71782),	-- Shatterskull Bonecrusher
-									i( 71038),	-- Ward of the Red Widow
-									i( 71040),	-- Cowl of the Clicking Menace
-									i( 71030),	-- Flickering Shoulders
-									i( 71043),	-- Spaulders of Manifold Eyes
-									i( 70914),	-- Carapace of Imbibed Flame
-									i( 71041),	-- Robes of Smoldering Devastation
-									i( 71044),	-- Cindersilk Gloves
-									i( 71031),	-- Cinderweb Leggings
-									i( 71042),	-- Thoracic Flame Kilt
-									i( 71029),	-- Arachnaflame Treads
-									i( 71032),	-- Widow's Kiss
-									i( 68981),	-- Spidersilk Spindle
-								},
-								["creatureID"] = 52498,		
-							}),			
-							e(193, {	-- Lord Rhyolith		
+							n(-1, { -- Common Boss Drops
 								["groups"] = {
-									i(69237),	-- Living Ember
 									i(71775),	-- Smoldering Censer of Purity
 									i(71780),	-- Zoid's Firelit Greatsword
 									i(71779),	-- Avool's Incendiary Shanker
 									i(71787),	-- Entrail Disgorger
 									i(71776),	-- Eye of Purification
 									i(71785),	-- Firethorn Mindslicer
+									i(70922),	-- Mandible of Beth'tilac
 									i(71782),	-- Shatterskull Bonecrusher
+								},
+								["crs"] = {
+									52498, -- Beth'tilac
+									52558, -- Lord Rhyolith
+									52530, -- Alysrazor
+									53691, -- Shannox
+									53494, -- Baleroc
+									52571, -- Majordomo Staghelm
+								},
+							}),
+							e(192, {	-- Beth'tilac		
+								["groups"] = {		
+									i(152976),	-- Cinderweb Egg (PET!)
+									i(69237),	-- Living Ember
+									i(71039),	-- Funeral Pyre
+									i(70922),	-- Mandible of Beth'tilac
+									i(71038),	-- Ward of the Red Widow
+									i(71040),	-- Cowl of the Clicking Menace
+									i(71030),	-- Flickering Shoulders
+									i(71043),	-- Spaulders of Manifold Eyes
+									i(70914),	-- Carapace of Imbibed Flame
+									i(71041),	-- Robes of Smoldering Devastation
+									i(71044),	-- Cindersilk Gloves
+									i(71031),	-- Cinderweb Leggings
+									i(71042),	-- Thoracic Flame Kilt
+									i(71029),	-- Arachnaflame Treads
+									i(71032),	-- Widow's Kiss
+									i(68981),	-- Spidersilk Spindle
+								},
+								["creatureID"] = 52498,		
+							}),			
+							e(193, {	-- Lord Rhyolith		
+								["groups"] = {
+									i(69237),	-- Living Ember
 									i(71006),	-- Volcanospike
 									i(70991),	-- Arbalest of Erupting Fury
 									i(71011),	-- Flickering Cowl
@@ -160,14 +237,7 @@ _.Instances =
 								["groups"] = {		
 									i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 									i(69237),	-- Living Ember
-									i(71775),	-- Smoldering Censer of Purity
-									i(71780),	-- Zoid's Firelit Greatsword
 									i(70733),	-- Alysra's Razor
-									i(71779),	-- Avool's Incendiary Shanker
-									i(71787),	-- Entrail Disgorger
-									i(71776),	-- Eye of Purification
-									i(71785),	-- Firethorn Mindslicer
-									i(71782),	-- Shatterskull Bonecrusher
 									i(70734),	-- Greathelm of the Voracious Maw
 									i(70985),	-- Craterflame Spaulders
 									i(70737),	-- Spaulders of Recurring Flame
@@ -186,56 +256,42 @@ _.Instances =
 							}),			
 							e(195, {	-- Shannox		
 								["groups"] = {
-									i( 69237),	-- Living Ember
+									i(69237),	-- Living Ember
 									i(152975),	-- Smoldering Treat (PET!)
-									i( 71014),	-- Skullstealer Greataxe
-									i( 71775),	-- Smoldering Censer of Purity
-									i( 71780),	-- Zoid's Firelit Greatsword
-									i( 71779),	-- Avool's Incendiary Shanker
-									i( 71787),	-- Entrail Disgorger
-									i( 71776),	-- Eye of Purification
-									i( 71013),	-- Feeding Frenzy
-									i( 71785),	-- Firethorn Mindslicer
-									i( 71782),	-- Shatterskull Bonecrusher
-									i( 71022),	-- Goblet of Anger
-									i( 71018),	-- Scalp of the Bandit Prince
-									i( 71019),	-- Necklace of Fetishes
-									i( 71025),	-- Flickering Shoulderpads
-									i( 71026),	-- Bracers of the Dread Hunter
-									i( 71020),	-- Gloves of Dissolving Smoke
-									i( 71021),	-- Uncrushable Belt of Fury
-									i( 71028),	-- Legplates of Absolute Control
-									i( 70913),	-- Legplates of Frenzied Devotion
-									i( 71023),	-- Coalwalker Sandals
-									i( 71027),	-- Treads of Implicit Obedience
-									i( 71024),	-- Crystal Prison Band
+									i(71014),	-- Skullstealer Greataxe
+									i(71013),	-- Feeding Frenzy
+									i(71022),	-- Goblet of Anger
+									i(71018),	-- Scalp of the Bandit Prince
+									i(71019),	-- Necklace of Fetishes
+									i(71025),	-- Flickering Shoulderpads
+									i(71026),	-- Bracers of the Dread Hunter
+									i(71020),	-- Gloves of Dissolving Smoke
+									i(71021),	-- Uncrushable Belt of Fury
+									i(71028),	-- Legplates of Absolute Control
+									i(70913),	-- Legplates of Frenzied Devotion
+									i(71023),	-- Coalwalker Sandals
+									i(71027),	-- Treads of Implicit Obedience
+									i(71024),	-- Crystal Prison Band
 								},
 								["creatureID"] = 53691,		
 							}),			
 							e(196, {	-- Baleroc, the Gatekeeper		
 								["groups"] = {
-									i( 69237),	-- Living Ember
+									i(69237),	-- Living Ember
 									i(152977),	-- Vibrating Stone (PET!)
-									i( 71775),	-- Smoldering Censer of Purity
-									i( 71780),	-- Zoid's Firelit Greatsword
-									i( 71779),	-- Avool's Incendiary Shanker
-									i( 71787),	-- Entrail Disgorger
-									i( 71776),	-- Eye of Purification
-									i( 71785),	-- Firethorn Mindslicer
-									i( 71312),	-- Gatecrasher
-									i( 71782),	-- Shatterskull Bonecrusher
-									i( 70915),	-- Shard of Torment
-									i( 71323),	-- Molten Scream
-									i( 71342),	-- Casque of Flame
-									i( 70916),	-- Helm of Blazing Glory
-									i( 71343),	-- Mantle of Closed Doors
-									i( 71345),	-- Shoulderpads of the Forgotten Gate
-									i( 71314),	-- Breastplate of the Incendiary Soul
-									i( 71340),	-- Gatekeeper's Embrace
-									i( 71341),	-- Glowing Wing Bracers
-									i( 70917),	-- Flickering Handguards
-									i( 71315),	-- Decimation Treads
-									i( 68982),	-- Necromantic Focus
+									i(71312),	-- Gatecrasher
+									i(70915),	-- Shard of Torment
+									i(71323),	-- Molten Scream
+									i(71342),	-- Casque of Flame
+									i(70916),	-- Helm of Blazing Glory
+									i(71343),	-- Mantle of Closed Doors
+									i(71345),	-- Shoulderpads of the Forgotten Gate
+									i(71314),	-- Breastplate of the Incendiary Soul
+									i(71340),	-- Gatekeeper's Embrace
+									i(71341),	-- Glowing Wing Bracers
+									i(70917),	-- Flickering Handguards
+									i(71315),	-- Decimation Treads
+									i(68982),	-- Necromantic Focus
 								},
 								["creatureID"] = 53494,		
 							}),			
@@ -243,8 +299,8 @@ _.Instances =
 								["groups"] = {		
 									i(152978),	-- Fandral's Pet Carrier (PET!)
 									i(122304),	-- Fandral's Seed Pouch (TOY!)
-									i( 69237),	-- Living Ember
-									i( 71681, {	-- Mantle of the Fiery Conqueror		
+									i(69237),	-- Living Ember
+									i(71681, {	-- Mantle of the Fiery Conqueror		
 										i(71275),	-- Mantle of the Cleansing Flame	
 										i(71280),	-- Shoulderwraps of the Cleansing Flame	
 										i(71285),	-- Balespider's Mantle	
@@ -252,7 +308,7 @@ _.Instances =
 										i(71067),	-- Immolation Pauldrons	
 										i(70946),	-- Immolation Shoulderguards	
 									}),			
-									i( 71688, {	-- Mantle of the Fiery Protector		
+									i(71688, {	-- Mantle of the Fiery Protector		
 										i(71053),	-- Flamewaker's Spaulders	
 										i(71305),	-- Erupting Volcanic Spaulders	
 										i(71295),	-- Erupting Volcanic Shoulderwraps	
@@ -260,7 +316,7 @@ _.Instances =
 										i(71072),	-- Pauldrons of the Molten Giant	
 										i(70941),	-- Shoulderguards of the Molten Giant	
 									}),			
-									i( 71674, {	-- Mantle of the Fiery Vanquisher		
+									i(71674, {	-- Mantle of the Fiery Vanquisher		
 										i(71290),	-- Firehawk Mantle	
 										i(71101),	-- Obsidian Arborweave Spaulders	
 										i(71106),	-- Obsidian Arborweave Mantle	
@@ -269,25 +325,18 @@ _.Instances =
 										i(70951),	-- Elementium Deathplate Shoulderguards	
 										i(71062),	-- Elementium Deathplate Pauldrons	
 									}),			
-									i( 69897),	-- Fandral's Flamescythe
-									i( 71775),	-- Smoldering Censer of Purity
-									i( 71780),	-- Zoid's Firelit Greatsword
-									i( 71779),	-- Avool's Incendiary Shanker
-									i( 71787),	-- Entrail Disgorger
-									i( 71776),	-- Eye of Purification
-									i( 71785),	-- Firethorn Mindslicer
-									i( 71782),	-- Shatterskull Bonecrusher
-									i( 71347),	-- Stinger of the Flaming Scorpion
-									i( 71348),	-- Flowform Choker
-									i( 71344),	-- Breastplate of Shifting Visions
-									i( 70920),	-- Bracers of the Fiery Path
-									i( 71350),	-- Wristwraps of Arrogant Doom
-									i( 71346),	-- Grips of Unerring Precision
-									i( 71349),	-- Firecat Leggings
-									i( 71313),	-- Sandals of Leaping Coals
-									i( 71351),	-- Treads of the Penitent Man
-									i( 68926),	-- Jaws of Defeat
-									i( 68927),	-- The Hungerer
+									i(69897),	-- Fandral's Flamescythe
+									i(71347),	-- Stinger of the Flaming Scorpion
+									i(71348),	-- Flowform Choker
+									i(71344),	-- Breastplate of Shifting Visions
+									i(70920),	-- Bracers of the Fiery Path
+									i(71350),	-- Wristwraps of Arrogant Doom
+									i(71346),	-- Grips of Unerring Precision
+									i(71349),	-- Firecat Leggings
+									i(71313),	-- Sandals of Leaping Coals
+									i(71351),	-- Treads of the Penitent Man
+									i(68926),	-- Jaws of Defeat
+									i(68927),	-- The Hungerer
 								},		
 								["creatureID"] = 52571,		
 							}),			
@@ -321,15 +370,8 @@ _.Instances =
 									i(69237),	-- Living Ember
 									i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 									i(71798),	-- Sho'ravon, Greatstaff of Annihilation
-									i(71775),	-- Smoldering Censer of Purity
 									i(71352),	-- Sulfuras, the Extinguished Hand
-									i(71780),	-- Zoid's Firelit Greatsword
-									i(71779),	-- Avool's Incendiary Shanker
-									i(71787),	-- Entrail Disgorger
-									i(71776),	-- Eye of Purification
-									i(71785),	-- Firethorn Mindslicer
 									i(71355),	-- Ko'gun, Hammer of the Firelord
-									i(71782),	-- Shatterskull Bonecrusher
 									i(71353),	-- Arathar, the Eye of Flame
 									i(71356),	-- Crown of Flame
 									i(71354),	-- Choker of the Vanquished Lord
@@ -347,32 +389,44 @@ _.Instances =
 					d(  2, {	-- Heroic
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
+							n(-1, { -- Common Boss Drops
+								["groups"] = {
+									i(71774),	-- Smoldering Censer of Purity
+									i(71781),	-- Zoid's Firelit Greatsword
+									i(71778),	-- Avool's Incendiary Shanker
+									i(71786),	-- Entrail Disgorger
+									i(71777),	-- Eye of Purification
+									i(71784),	-- Firethorn Mindslicer
+									i(71406),	-- Mandible of Beth'tilac
+									i(71783),	-- Shatterskull Bonecrusher
+								},
+								["crs"] = {
+									52498, -- Beth'tilac
+									52558, -- Lord Rhyolith
+									52530, -- Alysrazor
+									53691, -- Shannox
+									53494, -- Baleroc
+									52571, -- Majordomo Staghelm
+								},
+							}),
 							e(192, {	-- Beth'tilac		
 								["groups"] = {		
 									i(152976),	-- Cinderweb Egg (PET!)
-									i( 71617),	-- Crystallized Firestone
-									i( 69237),	-- Living Ember
-									i( 71409),	-- Funeral Pyre
-									i( 71774),	-- Smoldering Censer of Purity
-									i( 71781),	-- Zoid's Firelit Greatsword
-									i( 71778),	-- Avool's Incendiary Shanker
-									i( 71786),	-- Entrail Disgorger
-									i( 71777),	-- Eye of Purification
-									i( 71784),	-- Firethorn Mindslicer
-									i( 71406),	-- Mandible of Beth'tilac
-									i( 71783),	-- Shatterskull Bonecrusher
-									i( 71408),	-- Ward of the Red Widow
-									i( 71411),	-- Cowl of the Clicking Menace
-									i( 71403),	-- Flickering Shoulders
-									i( 71413),	-- Spaulders of Manifold Eyes
-									i( 71405),	-- Carapace of Imbibed Flame
-									i( 71407),	-- Robes of Smoldering Devastation
-									i( 71410),	-- Cindersilk Gloves
-									i( 71402),	-- Cinderweb Leggings
-									i( 71412),	-- Thoracic Flame Kilt
-									i( 71404),	-- Arachnaflame Treads
-									i( 71401),	-- Widow's Kiss
-									i( 69138),	-- Spidersilk Spindle
+									i(71617),	-- Crystallized Firestone
+									i(69237),	-- Living Ember
+									i(71409),	-- Funeral Pyre
+									i(71408),	-- Ward of the Red Widow
+									i(71411),	-- Cowl of the Clicking Menace
+									i(71403),	-- Flickering Shoulders
+									i(71413),	-- Spaulders of Manifold Eyes
+									i(71405),	-- Carapace of Imbibed Flame
+									i(71407),	-- Robes of Smoldering Devastation
+									i(71410),	-- Cindersilk Gloves
+									i(71402),	-- Cinderweb Leggings
+									i(71412),	-- Thoracic Flame Kilt
+									i(71404),	-- Arachnaflame Treads
+									i(71401),	-- Widow's Kiss
+									i(69138),	-- Spidersilk Spindle
 								},		
 								["creatureID"] = 52498,		
 							}),			
@@ -380,13 +434,6 @@ _.Instances =
 								["groups"] = {		
 									i(71617),	-- Crystallized Firestone
 									i(69237),	-- Living Ember
-									i(71774),	-- Smoldering Censer of Purity
-									i(71781),	-- Zoid's Firelit Greatsword
-									i(71778),	-- Avool's Incendiary Shanker
-									i(71786),	-- Entrail Disgorger
-									i(71777),	-- Eye of Purification
-									i(71784),	-- Firethorn Mindslicer
-									i(71783),	-- Shatterskull Bonecrusher
 									i(71422),	-- Volcanospike
 									i(71414),	-- Arbalest of Erupting Fury
 									i(71421),	-- Flickering Cowl
@@ -433,14 +480,7 @@ _.Instances =
 									i(71617),	-- Crystallized Firestone
 									i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 									i(69237),	-- Living Ember
-									i(71774),	-- Smoldering Censer of Purity
-									i(71781),	-- Zoid's Firelit Greatsword
 									i(71427),	-- Alysra's Razor
-									i(71778),	-- Avool's Incendiary Shanker
-									i(71786),	-- Entrail Disgorger
-									i(71777),	-- Eye of Purification
-									i(71784),	-- Firethorn Mindslicer
-									i(71783),	-- Shatterskull Bonecrusher
 									i(71430),	-- Greathelm of the Voracious Maw
 									i(71438),	-- Craterflame Spaulders
 									i(71432),	-- Spaulders of Recurring Flame
@@ -459,8 +499,8 @@ _.Instances =
 							}),			
 							e(195, {	-- Shannox		
 								["groups"] = {		
-									i( 71617),	-- Crystallized Firestone
-									i( 71678, {	-- Leggings of the Fiery Conqueror	
+									i(71617),	-- Crystallized Firestone
+									i(71678, {	-- Leggings of the Fiery Conqueror	
 										i(71529),	-- Legwraps of the Cleansing Flame
 										i(71534),	-- Leggings of the Cleansing Flame
 										i(71596),	-- Balespider's Leggings
@@ -468,7 +508,7 @@ _.Instances =
 										i(71520),	-- Immolation Greaves
 										i(71525),	-- Immolation Legguards
 									}),		
-									i( 71685, {	-- Leggings of the Fiery Protector	
+									i(71685, {	-- Leggings of the Fiery Protector	
 										i(71504),	-- Flamewaker's Legguards
 										i(71545),	-- Erupting Volcanic Legwraps
 										i(71550),	-- Erupting Volcanic Legguards
@@ -476,7 +516,7 @@ _.Instances =
 										i(71602),	-- Legplates of the Molten Giant
 										i(71607),	-- Legguards of the Molten Giant
 									}),		
-									i( 71671, {	-- Leggings of the Fiery Vanquisher	
+									i(71671, {	-- Leggings of the Fiery Vanquisher	
 										i(71509),	-- Firehawk Leggings
 										i(71489),	-- Obsidian Arborweave Legguards
 										i(71493),	-- Obsidian Arborweave Legwraps
@@ -485,36 +525,29 @@ _.Instances =
 										i(71479),	-- Elementium Deathplate Greaves
 										i(71484),	-- Elementium Deathplate Legguards
 									}),		
-									i( 69237),	-- Living Ember
+									i(69237),	-- Living Ember
 									i(152975),	-- Smoldering Treat (PET!)
-									i( 71445),	-- Skullstealer Greataxe
-									i( 71774),	-- Smoldering Censer of Purity
-									i( 71781),	-- Zoid's Firelit Greatsword
-									i( 71778),	-- Avool's Incendiary Shanker
-									i( 71786),	-- Entrail Disgorger
-									i( 71777),	-- Eye of Purification
-									i( 71441),	-- Feeding Frenzy
-									i( 71784),	-- Firethorn Mindslicer
-									i( 71783),	-- Shatterskull Bonecrusher
-									i( 71448),	-- Goblet of Anger
-									i( 71442),	-- Scalp of the Bandit Prince
-									i( 71446),	-- Necklace of Fetishes
-									i( 71450),	-- Flickering Shoulderpads
-									i( 71452),	-- Bracers of the Dread Hunter
-									i( 71440),	-- Gloves of Dissolving Smoke
-									i( 71443),	-- Uncrushable Belt of Fury
-									i( 71453),	-- Legplates of Absolute Control
-									i( 71444),	-- Legplates of Frenzied Devotion
-									i( 71447),	-- Coalwalker Sandals
-									i( 71451),	-- Treads of Implicit Obedience
-									i( 71449),	-- Crystal Prison Band
+									i(71445),	-- Skullstealer Greataxe
+									i(71441),	-- Feeding Frenzy
+									i(71448),	-- Goblet of Anger
+									i(71442),	-- Scalp of the Bandit Prince
+									i(71446),	-- Necklace of Fetishes
+									i(71450),	-- Flickering Shoulderpads
+									i(71452),	-- Bracers of the Dread Hunter
+									i(71440),	-- Gloves of Dissolving Smoke
+									i(71443),	-- Uncrushable Belt of Fury
+									i(71453),	-- Legplates of Absolute Control
+									i(71444),	-- Legplates of Frenzied Devotion
+									i(71447),	-- Coalwalker Sandals
+									i(71451),	-- Treads of Implicit Obedience
+									i(71449),	-- Crystal Prison Band
 								},		
 								["creatureID"] = 53691,		
 							}),			
 							e(196, {	-- Baleroc, the Gatekeeper		
 								["groups"] = {		
-									i( 71617),	-- Crystallized Firestone
-									i( 71676, {	-- Gauntlets of the Fiery Conqueror	
+									i(71617),	-- Crystallized Firestone
+									i(71676, {	-- Gauntlets of the Fiery Conqueror	
 										i(71527),	-- Handwraps of the Cleansing Flame
 										i(71532),	-- Gloves of the Cleansing Flame
 										i(71594),	-- Balespider's Handwraps
@@ -522,7 +555,7 @@ _.Instances =
 										i(71518),	-- Immolation Gloves
 										i(71523),	-- Immolation Handguards
 									}),		
-									i( 71683, {	-- Gauntlets of the Fiery Protector	
+									i(71683, {	-- Gauntlets of the Fiery Protector	
 										i(71502),	-- Flamewaker's Gloves
 										i(71543),	-- Erupting Volcanic Handwraps
 										i(71548),	-- Erupting Volcanic Grips
@@ -530,7 +563,7 @@ _.Instances =
 										i(71601),	-- Gauntlets of the Molten Giant
 										i(71605),	-- Handguards of the Molten Giant
 									}),		
-									i( 71669, {	-- Gauntlets of the Fiery Vanquisher	
+									i(71669, {	-- Gauntlets of the Fiery Vanquisher	
 										i(71507),	-- Firehawk Gloves
 										i(71487),	-- Obsidian Arborweave Grips
 										i(71491),	-- Obsidian Arborweave Handwraps
@@ -539,38 +572,31 @@ _.Instances =
 										i(71482),	-- Elementium Deathplate Handguards
 										i(71477),	-- Elementium Deathplate Gauntlets
 									}),		
-									i( 69237),	-- Living Ember
+									i(69237),	-- Living Ember
 									i(152977),	-- Vibrating Stone (PET!)
-									i( 71774),	-- Smoldering Censer of Purity
-									i( 71781),	-- Zoid's Firelit Greatsword
-									i( 71778),	-- Avool's Incendiary Shanker
-									i( 71786),	-- Entrail Disgorger
-									i( 71777),	-- Eye of Purification
-									i( 71784),	-- Firethorn Mindslicer
-									i( 71454),	-- Gatecrasher
-									i( 71783),	-- Shatterskull Bonecrusher
-									i( 71460),	-- Shard of Torment
-									i( 71462),	-- Molten Scream
-									i( 71465),	-- Casque of Flame
-									i( 71459),	-- Helm of Blazing Glory
-									i( 71461),	-- Mantle of Closed Doors
-									i( 71456),	-- Shoulderpads of the Forgotten Gate
-									i( 71455),	-- Breastplate of the Incendiary Soul
-									i( 71464),	-- Gatekeeper's Embrace
-									i( 71463),	-- Glowing Wing Bracers
-									i( 71458),	-- Flickering Handguards
-									i( 71457),	-- Decimation Treads
-									i( 69139),	-- Necromantic Focus
+									i(71454),	-- Gatecrasher
+									i(71460),	-- Shard of Torment
+									i(71462),	-- Molten Scream
+									i(71465),	-- Casque of Flame
+									i(71459),	-- Helm of Blazing Glory
+									i(71461),	-- Mantle of Closed Doors
+									i(71456),	-- Shoulderpads of the Forgotten Gate
+									i(71455),	-- Breastplate of the Incendiary Soul
+									i(71464),	-- Gatekeeper's Embrace
+									i(71463),	-- Glowing Wing Bracers
+									i(71458),	-- Flickering Handguards
+									i(71457),	-- Decimation Treads
+									i(69139),	-- Necromantic Focus
 								},
 								["creatureID"] = 53494,		
 							}),			
 							e(197, {	-- Majordomo Staghelm		
 								["groups"] = {		
-									i( 71617),	-- Crystallized Firestone
+									i(71617),	-- Crystallized Firestone
 									i(152978),	-- Fandral's Pet Carrier (PET!)
 									i(122304),	-- Fandral's Seed Pouch (TOY!)
-									i( 69237),	-- Living Ember
-									i( 71680, {	-- Shoulders of the Fiery Conqueror	
+									i(69237),	-- Living Ember
+									i(71680, {	-- Shoulders of the Fiery Conqueror	
 										i(71531),	-- Mantle of the Cleansing Flame
 										i(71536),	-- Shoulderwraps of the Cleansing Flame
 										i(71598),	-- Balespider's Mantle
@@ -578,7 +604,7 @@ _.Instances =
 										i(71521),	-- Immolation Mantle
 										i(71526),	-- Immolation Shoulderguards
 									}),		
-									i( 71687, {	-- Shoulders of the Fiery Protector	
+									i(71687, {	-- Shoulders of the Fiery Protector	
 										i(71505),	-- Flamewaker's Spaulders
 										i(71546),	-- Erupting Volcanic Mantle
 										i(71551),	-- Erupting Volcanic Spaulders
@@ -586,7 +612,7 @@ _.Instances =
 										i(71603),	-- Pauldrons of the Molten Giant
 										i(71608),	-- Shoulderguards of the Molten Giant
 									}),		
-									i( 71673, {	-- Shoulders of the Fiery Vanquisher	
+									i(71673, {	-- Shoulders of the Fiery Vanquisher	
 										i(71511),	-- Firehawk Mantle
 										i(71490),	-- Obsidian Arborweave Spaulders
 										i(71495),	-- Obsidian Arborweave Mantle
@@ -595,25 +621,18 @@ _.Instances =
 										i(71480),	-- Elementium Deathplate Pauldrons
 										i(71485),	-- Elementium Deathplate Shoulderguards
 									}),		
-									i( 71466),	-- Fandral's Flamescythe
-									i( 71774),	-- Smoldering Censer of Purity
-									i( 71781),	-- Zoid's Firelit Greatsword
-									i( 71778),	-- Avool's Incendiary Shanker
-									i( 71786),	-- Entrail Disgorger
-									i( 71777),	-- Eye of Purification
-									i( 71784),	-- Firethorn Mindslicer
-									i( 71783),	-- Shatterskull Bonecrusher
-									i( 71473),	-- Stinger of the Flaming Scorpion
-									i( 71472),	-- Flowform Choker
-									i( 71469),	-- Breastplate of Shifting Visions
-									i( 71470),	-- Bracers of the Fiery Path
-									i( 71471),	-- Wristwraps of Arrogant Doom
-									i( 71468),	-- Grips of Unerring Precision
-									i( 71474),	-- Firecat Leggings
-									i( 71467),	-- Sandals of Leaping Coals
-									i( 71475),	-- Treads of the Penitent Man
-									i( 69111),	-- Jaws of Defeat
-									i( 69112),	-- The Hungerer
+									i(71466),	-- Fandral's Flamescythe
+									i(71473),	-- Stinger of the Flaming Scorpion
+									i(71472),	-- Flowform Choker
+									i(71469),	-- Breastplate of Shifting Visions
+									i(71470),	-- Bracers of the Fiery Path
+									i(71471),	-- Wristwraps of Arrogant Doom
+									i(71468),	-- Grips of Unerring Precision
+									i(71474),	-- Firecat Leggings
+									i(71467),	-- Sandals of Leaping Coals
+									i(71475),	-- Treads of the Penitent Man
+									i(69111),	-- Jaws of Defeat
+									i(69112),	-- The Hungerer
 								},
 								["creatureID"] = 52571,		
 							}),			
@@ -648,15 +667,8 @@ _.Instances =
 									i(69237),	-- Living Ember
 									i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 									i(71797),	-- Sho'ravon, Greatstaff of Annihilation
-									i(71774),	-- Smoldering Censer of Purity
 									i(70723),	-- Sulfuras, the Extinguished Hand
-									i(71781),	-- Zoid's Firelit Greatsword
-									i(71778),	-- Avool's Incendiary Shanker
-									i(71786),	-- Entrail Disgorger
-									i(71777),	-- Eye of Purification
-									i(71784),	-- Firethorn Mindslicer
 									i(71615),	-- Ko'gun, Hammer of the Firelord
-									i(71783),	-- Shatterskull Bonecrusher
 									i(71611),	-- Arathar, the Eye of Flame
 									i(71616),	-- Crown of Flame
 									i(71610),	-- Choker of the Vanquished Lord
