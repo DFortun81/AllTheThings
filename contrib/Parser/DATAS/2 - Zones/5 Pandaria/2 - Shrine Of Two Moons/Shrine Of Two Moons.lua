@@ -1545,7 +1545,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["maps"] = 811,
+			["maps"] = { 811 },
 			["lvl"] = 78,
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\achievement_doublejeopardyhorde",
