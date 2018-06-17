@@ -36,11 +36,7 @@ _.Achievements =
 						ach(9139), -- On a Massive Numbeer of Missions
 					}),
 					ach(9523, { -- Patrolling Draenor
-						i(111971, { -- Barracks, Level 3 [Blueprints]
-							["groups"] = {
-							},
-							["f"] = 200, -- Recipe
-						}),
+						i(111971), -- Barracks, Level 3 [Blueprints]
 					}),
 					ach(9143, { -- The Rarer the Better
 						ach(9141), -- A Rare Mission

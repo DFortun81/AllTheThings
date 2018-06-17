@@ -14,16 +14,8 @@ _.Achievements =
 						ach(9107),	-- Follow the Leader (5)
 					}),
 					ach(9129, {	-- Filling the Ranks (20 - lvl 100)
-						a(i(111967, {	-- Dwarven Bunker, Level 3
-							["groups"] = {
-							},
-							["f"] = 200, 	-- Recipe
-						})),
-						h(i(116186, {	-- War Mill, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						})),
+						a(i(111967)),	-- Dwarven Bunker, Level 3
+						h(i(116186)),	-- War Mill, Level 3
 						ach(9111),	-- Raising the Bar (10 - lvl 100)
 						ach(9110),	-- Following Up (1 - lvl 100)
 					}),

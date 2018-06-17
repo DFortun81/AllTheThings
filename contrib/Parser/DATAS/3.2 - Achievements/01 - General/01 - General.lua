@@ -35,11 +35,7 @@ _.Achievements =
 				ach(1176),	-- Got My Mind On My Money (100)
 			}),
 			ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
-				i(111983, {	-- Storehouse, Level 3 (Garrison)
-					["groups"] = {
-					},
-					["f"] = 200,	-- Recipe
-				}),
+				i(111983),	-- Storehouse, Level 3 (Garrison)
 			}),
 			ach(5180, {	-- Breaking The Sound Barrier (Master)
 				ach(892),	-- The Right Stuff (Artisan)
