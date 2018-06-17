@@ -531,6 +531,7 @@ _.WorldEvents =
 		["crs"] = {
 			103791,	-- Madam Gosu [Rogue Class Hall]
 			100986,	-- Madam Goya [Underbelly]
+			94829, -- Zhang Yeog [Garrison]
 		},
 		["u"] = 9,
 	}),
