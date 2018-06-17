@@ -283,6 +283,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(3.00, i( 2564)),	-- Elven Spirit Claws
 					dr(5.00, i(13113)),	-- Feathermoon Headdress
 					dr(5.00, i(13077)),	-- Girdle of Uther
+					i(13040), -- Heartseeking Crossbow
 					dr(3.00, i(13003)),	-- Lord Alexander's Battle Axe
 					dr(8.00, i(13007)),	-- Mageflame Cloak
 					dr(11.0, i(13107)),	-- Magiskull Cuffs
@@ -292,6 +293,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(7.00, i(13144)),	-- Serenity Belt
 					dr(4.00, i(13146)),	-- Shell Launcher Shotgun
 					dr(3.00, i(13072)),	-- Stonegrip Gauntlets
+					i(6622), -- Sword of Zeal
 					dr(1.90, i(13060)), -- The Needler
 					dr(5.00, i(13047)),	-- Twig of the World Tree
 					dr(5.00, i(13130)),	-- Windrunner Legguards

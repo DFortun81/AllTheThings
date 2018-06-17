@@ -7,47 +7,6 @@ _.Zones =
 		m(905, { 	-- Shrine of Seven Stars
 			["groups"] = {		
 				n(-3, { 	-- Holidays					
---[[					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
---]]
 					n(-63, { -- Trial of Style
 						["groups"] = {
 							na(64573, { -- Warpweaver Ramahesh (Alliance / Shrine of Seven Stars)
@@ -1581,6 +1540,7 @@ _.Zones =
 					}),
 				}),
 			},
+			["maps"] = 811,
 			["lvl"] = 78,
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\achievement_doublejeopardyally",
