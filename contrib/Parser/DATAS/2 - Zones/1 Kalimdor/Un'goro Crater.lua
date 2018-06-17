@@ -117,22 +117,31 @@ _.Zones =
 					p(405), 	-- Tree Python
 				}),
 				n(  0, {	-- Zone Drops
-					i(142377, { -- Badly Broken Dark Spear
-						["groups"] = {
-							q(45044, { -- Weapon No More
-								q(45051, { -- Reverse  Blacksmithing
-									q(45055, { -- A Taste of Their Own Medicine
-										q(45057, { -- Saving My Head
-											i(142383, { -- Plans: Darkspear
-												i(12802), -- Darkspear
-											}),
-										}),
-									}),
-								}),
-							}),
-						},
+					{
+						["itemID"] = 142377,	-- Badly Broken Dark Spear
+						["questID"] = 45044,	-- Weapon No More
 						["requiredSkill"] = 164, -- Blacksmithing
-					}),
+						["groups"] = {
+							{
+								["questID"] = 45051,	-- Reverse Blacksmithing
+								["qg"] = 115923,	-- Quest Giver: Ko'Zan <Courier>
+								["sourceQuest"] = 45044,	-- Source Quest: Weapon No More
+							},
+							{
+								["questID"] = 45055,	-- A Taste of Their Own Medicine
+								["qg"] = 115923,	-- Quest Giver: Ko'Zan <Courier>
+								["sourceQuest"] = 45051,	-- Source Quest: Reverse Blacksmithing
+							},
+							{
+								["questID"] = 45057,	-- Saving My Head
+								["qg"] = 115923,	-- Quest Giver: Ko'Zan <Courier>
+								["sourceQuest"] = 45055,	-- Source Quest: A Taste of Their Own Medicine
+								["groups"] = {
+									i(142383),	-- Plans: Darkspear
+								},
+							},
+						},
+					},
 				}),
 				n(-17, {	-- Quests
 					qg(9999, q(24735, { -- A Little Help From My Friends
@@ -201,12 +210,10 @@ _.Zones =
 						i(53592),
 						i(53593),
 					})),
---[					
 					qg(38276, q(24700)),	-- Hard to Harvest
 					o(202135, {	-- Dadanga's Grave
 						q(24702),	-- Here Lies Dadanga
 					}),
---]]					
 					qg(38270, q(24697, { -- How to Make Meat Fresh Again
 						i(53563),
 						i(53564),
@@ -532,26 +539,16 @@ _.Zones =
 				}),
 				n( -2, {	-- Vendors
 					n(38561, {	-- Dramm Riverhorn <Light Armor Merchant>
-						i(12719, {	-- Plans: Runic Plate Leggings
-							i(12614),	-- Runic Plate Leggings
-						}),
-						i(12714, {	-- Plans: Runic Plate Helm
-							i(12612),	-- Runic Plate Helm
-						}),
-						i(12706, {	-- Plans: Runic Plate Shoulders
-							i(12610),	-- Runic Plate Shoulders
-						}),
-						i(12707, {	-- Plans: Runic Plate Boots
-							i(12611),	-- Runic Plate Boots
-						}),
+						i(12719),	-- Plans: Runic Plate Leggings
+						i(12714),	-- Plans: Runic Plate Helm
+						i(12706),	-- Plans: Runic Plate Shoulders
+						i(12707),	-- Plans: Runic Plate Boots
 					}),
 					n(115923, {	-- Ko'Zan <Courier>
 						["groups"] = {
-							i(142383, {	-- Plans: Darkspear
-								i(12802),	-- Darkspear
-							}),
+							i(142383),	-- Plans: Darkspear
 						},
-						["description"] = "Vendor only sells plans to those who have completed the quest 'Saving My Head'|r",
+						["description"] = "Vendor only sells plans to those who have completed the quest 'Saving My Head'.",
 					}),
 					n(12959, {	-- Nergal <General Goods>
 						i(15772, {	-- Pattern: Devilsaur Leggings
@@ -591,7 +588,7 @@ _.Zones =
 			},
 			["achievementID"] = 854,
 			["lvl"] = 40,
-			["description"] = "|cff66ccffUn'goro Crater is a lush zone in southern Kalimdor, surrounded by three desert zones. It is filled with devilsaurs, exotic crystals, dinosaurs, and elementals. In the center of Un'goro crater is Fire Plume Ridge, a volcanic mountain. Before Cataclysm, there was a long quest series referencing Nintendo characters such as Link.|r",
+			["description"] = "Un'goro Crater is a lush zone in southern Kalimdor, surrounded by three desert zones. It is filled with devilsaurs, exotic crystals, dinosaurs, and elementals. In the center of Un'goro crater is Fire Plume Ridge, a volcanic mountain. Before Cataclysm, there was a long quest series referencing Nintendo characters such as Link.",
 		}),
 	}),
 };
