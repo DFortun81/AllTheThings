@@ -51,11 +51,7 @@ _.Achievements =
 						ach(9076),	-- Choppin' Some Logs (10)
 					})),
 					ach(9429, {	-- Upgrading the Mill
-						i(109255, {	-- Lumber Mill, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						}),
+						i(109255),	-- Lumber Mill, Level 3
 						crit(1), 	-- Place 75 Work Order at the Lumber Mill
 						crit(2),	-- Legacy of the Ancients
 						crit(3),	-- Reduction in Force
@@ -65,80 +61,33 @@ _.Achievements =
 					}),
 					ach(9407, {	-- Working Many Orders (750)
 						ach(9406, {	-- Working More Orders (250)
-							i(111930, {	-- Alchemy Lab, Level 3
-								["groups"] = {
-								},
-								["f"] = 200,	-- Recipe
-							}),
-							i(111973, {	-- Enchanter's Study, Level 3
-								["groups"] = {
-								},
-								["f"] = 200,	-- Recipe
-							}),
-							i(111975, {	-- Gem Boutique, Level 3
-								["groups"] = {
-								},
-								["f"] = 200,	-- Recipe
-							}),
-							i(111979, {	-- Scribe's Quarters, Level 3
-								["groups"] = {
-								},
-								["f"] = 200,	-- Recipe
-							}),
-							i(111989, {	-- The Tannery, Level 3
-								["groups"] = {
-								},
-								["f"] = 200,	-- Recipe
-							}),
-							i(111991, {	-- The Forge, Level 3
-								["groups"] = {
-								},
-								["f"] = 200,	-- Recipe
-							}),
-							i(111993, {	-- Tailoring Emporium, Level 3
-								["groups"] = {
-								},
-								["f"] = 200,	-- Recipe
-							}),
+							i(111930),	-- Alchemy Lab, Level 3
+							i(111973),	-- Enchanter's Study, Level 3
+							i(109257),	-- Engineering Works, Level 3
+							i(111975),	-- Gem Boutique, Level 3
+							i(111979),	-- Scribe's Quarters, Level 3
+							i(111989),	-- The Tannery, Level 3
+							i(111991),	-- The Forge, Level 3
+							i(111993),	-- Tailoring Emporium, Level 3
 						}),
 						ach(9405),	-- Working Some Orders (125)
 					}),
 					ach(9452, {	-- Trap Superstar (500)
 						ach(9451),	-- Trapper's Delight (250)
 						ach(9565, {	-- Master Trapper (125)
-							i(111969, {	-- Barn, Level 3
-								["groups"] = {
-								},
-								["f"] = 200,	-- Recipe
-							}),
+							i(111969),	-- Barn, Level 3
 						}),
 						ach(9450),	-- The Trap Game (50)
 					}),
 					ach(9468, {	-- Salvaging Pays Off
-						i(111977, {	-- Salvage Yard, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						}),
+						i(111977),	-- Salvage Yard, Level 3
 					}),
 					ach(9495, {	-- The Bone Collector
-						i(111981, {	-- Gladiator's Sanctum, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						}),
+						i(111981),	-- Gladiator's Sanctum, Level 3
 					}),
 					ach(9497, {	-- Finding Your Waystones
-						a(i(109063, {	-- Mage Tower, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						})),
-						h(i(116197, {	-- Spirit Lodge, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						})),
+						a(i(109063)),	-- Mage Tower, Level 3
+						h(i(116197)),	-- Spirit Lodge, Level 3
 					}),
 					ach(9499, {	-- Wingmen
 						crit(1),	-- Leorajh
@@ -149,11 +98,7 @@ _.Achievements =
 						ach(9498),	-- Wingman
 					}),
 					ach(9526, {	-- Master of Mounts
-						i(112003, {	-- Stables, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						}),
+						i(112003),	-- Stables, Level 3
 						crit(1),	-- Wolf Trained
 						crit(2),	-- Talbuk Trained
 						crit(3),	-- Clefthoof Trained
@@ -208,16 +153,8 @@ _.Achievements =
 						crit(6),	-- Karak Killed
 					})),
 					ach(9527, {	-- Terrific Technology
-						a(i(111985, {	-- Gnomish Gearworks, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						})),
-						h(i(116201, {	-- Goblin Workshop, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						})),
+						a(i(111985)),	-- Gnomish Gearworks, Level 3
+						h(i(116201)),	-- Goblin Workshop, Level 3
 						crit(1),	-- Robo-Rooster
 						crit(2),	-- Sticky Grenade
 						crit(3),	-- Pneumatic Power Gauntlet
@@ -229,16 +166,8 @@ _.Achievements =
 						crit(9),	-- Paint Target
 					}),
 					ach(9703, {	-- Stay Awhile and Listen
-						a(i(109065, {	-- Lunarfall Inn, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						})),
-						h(i(116432, {	-- Frostwall Tavern, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						})),
+						a(i(109065)),	-- Lunarfall Inn, Level 3
+						h(i(116432)),	-- Frostwall Tavern, Level 3
 						crit(1),	-- Cro's Revenge (H Bloodmaul Slag Mines - Gug'rokk)
 						crit(2),	-- Time-Lost Vikings (H Bloodmaul Slag Mines - Gug'rokk)
 						crit(3),	-- Feeling A Bit Morose (H Iron Docks - Skulloc)
