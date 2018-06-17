@@ -4,7 +4,7 @@
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9961, { -- Reputation
 		["groups"] = {
 			n(-9981, { -- Draenor
 				["groups"] = {
