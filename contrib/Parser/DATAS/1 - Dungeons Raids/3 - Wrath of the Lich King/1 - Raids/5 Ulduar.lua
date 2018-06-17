@@ -10,57 +10,82 @@ _.Instances =
 				["groups"] = {
 					d(14, {	-- Normal
 						n(0, {		-- Zone Drop
-							i(45104),	-- Pattern: Cord of the White Dawn
-							i(45102),	-- Pattern: Sash of Ancient Power
-							i(45105),	-- Pattern: Savior's Slippers
-							i(46341),	-- Drape of the Spellweaver
-							i(46347),	-- Cloak of the Dormant Blaze
-							i(46344),	-- Iceshear Mantle
-							i(46346),	-- Boots of Unsettled Prey
-							i(46345),	-- Bracers of Righteous Reformation
-							i(46340),	-- Adamant Handguards
-							i(46339),	-- Mimiron's Repeater
-							i(46351),	-- Bloodcrush Cudgel
-							i(46350),	-- Pillar of Fortitude
-							i(46342),	-- Golemheart Longbow
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-									i(45039, {	-- Shattered Fragments of Val'anyr
-										q(13622, {	-- Ancient History
-											q(13629, {	-- Val'anyr, Hammer of Ancient Kings
-												i(46017) 	-- Val'anyr, Hammer of Ancient Kings
-											})
-										})
-									})
-								},
-								["classes"] = { 2, 5, 7, 10, 11 },
-							}),
-							i(45541),	-- Shroud of Alteration
-							i(45549),	-- Grips of Chaos
-							i(45547),	-- Relic Hunter's Cord
-							i(45548),	-- Belt of the Sleeper
-							i(45543),	-- Shoulders of Misfortune
-							i(45544),	-- Leggings of the Tortured Earth
-							i(45542),	-- Greaves of the Stonewarder
-							i(45605),	-- Daschal's Bite
-							i(45089),
-							i(45088),
-							i(45092),
-							i(45090),
-							i(45093),
-							i(45091),
-							i(45100),
-							i(45094),
-							i(45096),
-							i(45095),
-							i(45101),
-							i(45098),
-							i(45099),
-							i(45097),
-							i(45104),
-							i(45102),
-							i(45105),
-							i(45103),
+							["groups"] = {
+								i(45104),	-- Pattern: Cord of the White Dawn
+								i(45102),	-- Pattern: Sash of Ancient Power
+								i(45105),	-- Pattern: Savior's Slippers
+								i(46341),	-- Drape of the Spellweaver
+								i(46347),	-- Cloak of the Dormant Blaze
+								i(46344),	-- Iceshear Mantle
+								i(46346),	-- Boots of Unsettled Prey
+								i(46345),	-- Bracers of Righteous Reformation
+								i(46340),	-- Adamant Handguards
+								i(46339),	-- Mimiron's Repeater
+								i(46351),	-- Bloodcrush Cudgel
+								i(46350),	-- Pillar of Fortitude
+								i(46342),	-- Golemheart Longbow
+								i(45541),	-- Shroud of Alteration
+								i(45549),	-- Grips of Chaos
+								i(45547),	-- Relic Hunter's Cord
+								i(45548),	-- Belt of the Sleeper
+								i(45543),	-- Shoulders of Misfortune
+								i(45544),	-- Leggings of the Tortured Earth
+								i(45542),	-- Greaves of the Stonewarder
+								i(45605),	-- Daschal's Bite
+								i(45089),
+								i(45088),
+								i(45092),
+								i(45090),
+								i(45093),
+								i(45091),
+								i(45100),
+								i(45094),
+								i(45096),
+								i(45095),
+								i(45101),
+								i(45098),
+								i(45099),
+								i(45097),
+								i(45104),
+								i(45102),
+								i(45105),
+								i(45103),
+							},
+							["crs"] = {
+								34183,	-- Arachnopod Destroyer
+								34197,	-- Chamber Overseer
+								34133,	-- Champion of Hodir
+								34193,	-- Clockwork Sapper
+								33354,	-- Corrupted Servitor
+								33755,	-- Dark Rune Ravager
+								33754,	-- Dark Rune Thunderer
+								33772,	-- Faceless Horror
+								34085,	-- Forge Construct
+								33430,	-- Guardian Lasher
+								33528,	-- Guardian of Life
+								34190,	-- Hardened Iron Golem
+								34198,	-- Iron Mender
+								33526,	-- Ironroot Lasher
+								34199,	-- Lightning Charged Iron Dwarf
+								34086,	-- Magma Rager
+								33525,	-- Mangrove Ent
+								33355,	-- Misguided Nymph
+								34069,	-- Molten Colossus
+								33527,	-- Nature's Blade
+								34196,	-- Rune Etched Sentry
+								33722,	-- Storm Tempered Keeper
+								33699,	-- Storm Tempered Keeper
+								33818,	-- Twilight Adherent
+								33819,	-- Twilight Frost Mage
+								33822,	-- Twilight Guardian
+								33820,	-- Twilight Pyromancer
+								33824,	-- Twilight Shadowblade
+								33823,	-- Twilight Slayer
+								34134,	-- Winter Revenant
+								34135,	-- Winter Rumbler
+								34271,	-- XD-175 Compactobot
+								34269,	-- XR-949 Salvagebot
+							},
 						}),
 						cr(33113, e(1637, {	-- Flame Leviathan
 							ach(12320, {	-- Orbit-uary
