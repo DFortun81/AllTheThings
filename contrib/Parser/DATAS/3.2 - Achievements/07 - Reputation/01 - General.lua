@@ -122,16 +122,16 @@ _.Achievements =
 								faction(349), -- Ravenholdt
 								faction(59), -- Thorium Brotherhood
 								faction(576), -- Timbermaw Hold
-							}),
-							faction(169, { -- Steamwheedle Cartel
-								["groups"] = {
-									faction(21), -- Booty Bay
-									faction(577), -- Everlook
-									faction(369), -- Gadgetzan
-									faction(470), -- Ratchet
-								},
-								["collectible"] = false,
-								["icon"] = "Interface\\Icons\\achievement_Goblinheaddead",
+								faction(169, { -- Steamwheedle Cartel
+									["groups"] = {
+										faction(21), -- Booty Bay
+										faction(577), -- Everlook
+										faction(369), -- Gadgetzan
+										faction(470), -- Ratchet
+									},
+									["collectible"] = false,
+									["icon"] = "Interface\\Icons\\achievement_Goblinheaddead",
+								}),
 							}),
 							tier(2, { -- The Burning Crusade
 								faction(1012), -- Ashtongue Deathsworn
@@ -228,6 +228,46 @@ _.Achievements =
 						}),
 					}),
 					ach(5794), -- Time Flies When You're Having Fun
+					a(ach(948, {	-- Ambassador of the Alliance
+						title(98),	-- Ambassador
+						faction(69),	-- Darnassus
+						faction(930),	-- Exodar
+						faction(1134),	-- Gilneas
+						faction(54),	-- Gnomeregan
+						faction(47),	-- Ironforge
+						faction(72),	-- Stormwind
+					})),
+					h(ach(762, {	-- Ambassador of the Horde
+						title(98),	-- Ambassador
+						faction(1133),	-- Bilgewater Cartel
+						faction(530),	-- Darkspear Trolls
+						faction(76),	-- Orgrimmar
+						faction(911),	-- Silvermoon City
+						faction(81),	-- Thunder Bluff
+						faction(68),	-- Undercity
+					})),
+					a(ach(942, {	-- The Diplomat (Alliance)
+						title(48),	-- the Diplomat
+						faction(576),	-- Timbermaw Hold
+						faction(978),	-- Kurenai
+						faction(970),	-- Sporeggar
+					})),
+					h(ach(943, {	-- The Diplomat (Horde)
+						title(48),	-- the Diplomat
+						faction(576),	-- Timbermaw Hold
+						faction(941),	-- The Mag'har
+						faction(970),	-- Sporeggar
+					})),
+					ach(945, {	-- The Argent Champion
+						title(99),	-- the Argent Champion
+						faction(529),	-- Argent Dawn
+						faction(1106),	-- Argent Crusade
+					}),
+					ach(953, {	-- Guardian of Cenarius
+						title(100),	-- ,Guardian of Cenarius
+						faction(609),	-- Cenarion Circle
+						faction(942),	-- Cenarion Expedition
+					}),
 				},
 			}),
 		},

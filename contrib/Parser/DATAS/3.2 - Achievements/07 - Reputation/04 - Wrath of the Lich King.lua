@@ -32,8 +32,8 @@ _.Achievements =
 						faction(1106), -- Argent Crusade
 					}),	
 					ach(4598, { -- The Ashen Verdict	
+						title(141), -- <Name> of the Ashen Verdict
 						faction(1156), -- The Ashen Verdict
-						style(1, title(141)), -- <Name> of the Ashen Verdict
 					}),	
 					ach(1008, { -- The Kirin Tor	
 						faction(1090), -- Kirin Tor

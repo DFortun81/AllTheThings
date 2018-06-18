@@ -35,7 +35,7 @@ _.Achievements =
 						faction(934), -- The Aldor
 					}),	
 					ach(1638), -- Skyshattered	
-					ach(958, { -- Sword to the Deathsworn	
+					ach(958, { -- Sworn to the Deathsworn	
 						faction(1012), -- Ashtongue Deathsworn
 					}),	
 					h(ach(763, { -- The Burning Crusader [Horde]	
