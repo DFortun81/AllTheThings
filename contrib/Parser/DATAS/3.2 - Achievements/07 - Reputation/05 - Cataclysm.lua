@@ -9,8 +9,8 @@ _.Achievements =
 			n(-9979, { -- Cataclysm
 				["groups"] = {
 					ach(5827, { -- Avengers of Hyjal	
+						title(188), -- <Name>, Avenger of Hyjal
 						faction(1204), -- Avengers of Hyjal
-						style(2, title(188)), -- <Name>, Avenger of Hyjal
 					}),	
 					a(ach(5375, { -- Bardin's Wardens	
 						faction(1177), -- Bardin's Wardens
