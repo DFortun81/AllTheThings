@@ -1121,6 +1121,20 @@ _.Zones =
 						},
 						["questID"] = 33294,
 					}), 
+					n(72898, { 		-- High Priest of Ordos
+						["groups"] = {
+							i(104329, { -- Ash-Covered Horn
+								["groups"] = {
+								},
+								["dr"] = 1.3,
+								["crs"] = { -- Listing these three here rather than individuall because drop rate is really low
+									72897, -- Blazebound Chanter [0%]
+									72896, -- Eternal Kilnmaster [0.01%]
+									72888, -- Molten Guardian [0.02%]
+								},
+							}),
+						},
+					}),
 					n(73167, { 		-- Huolon
 						["groups"] = {	
 							dr(1, i(104269)),
