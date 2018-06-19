@@ -1431,168 +1431,203 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0, { -- Zone Drops
+				n(0, {		-- Zone Drops
 					["groups"] = {
+						i(141290, { -- Dreamgrove Sproutling
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121181, { -- Mangler's Mark
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121180, { -- Mark of Lore
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121179, { -- Mark of Malorne
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(141291, { -- Shal'nir Sproutling
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121193, { -- Vale Walker's Pendant
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121192, { -- Vale Walker's Cirlce
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121214, {	-- Crescent Vale Cowl
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121219, {	-- Crescent Vale Shoulderpads
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121217, {	-- Crescent Vale Robe
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121220, {	-- Crescent Vale Wristwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121215, {	-- Crescent Vale Handwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121213, {	-- Crescent Vale Cord
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121216, {	-- Crescent Vale Leggings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121218, {	-- Crescent Vale Sandals
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121186, {	-- Smolderhide Hood
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121188, {	-- Smolderhide Shoulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121187, {	-- Smolderhide Jerkin
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121182, {	-- Smolderhide Bindings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121185, {	-- Smolderhide Gloves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121189, {	-- Smolderhide Waistband
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121184, {	-- Smolderhide Britches
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121183, {	-- Smolderhide Boots
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121209, {	-- Dreadroot Linked Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121211, {	-- Dreadroot Linked Spaulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121212, {	-- Dreadroot Linked Vest
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121206, {	-- Dreadroot Linked Bracers
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121207, {	-- Dreadroot Linked Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121205, {	-- Dreadroot Linked Belt
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121210, {	-- Dreadroot Linked Legguards
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121208, {	-- Dreadroot Linked Greaves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121169, {	-- Kal'delar Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121171, {	-- Kal'delar Pauldrons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121166, {	-- Kal'delar Breastplate
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121173, {	-- Kal'delar Vambraces
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121167, {	-- Kal'delar Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121168, {	-- Kal'delar Girdle
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121170, {	-- Kal'delar Legplates
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121172, {	-- Kal'delar Sabatons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 					},
 					["modID"] = 0,
 					["crs"] = {
@@ -1731,7 +1766,6 @@ _.Zones =
 						95319,	-- Xandris the Dishonored
 					},
 				}),
-				
 			},
 			["lvl"] = 98,	
 			["achievementID"] = 10666,
