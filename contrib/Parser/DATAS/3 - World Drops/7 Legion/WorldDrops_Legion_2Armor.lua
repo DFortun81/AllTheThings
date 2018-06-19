@@ -19,10 +19,26 @@ _.WorldDrops =
 				}),
 				n(-322, { -- Back
 					i(121012),	-- Azurewing Defender's Drape
-					i(121067),	-- Thunder Totem Cloak
-					i(121122),	-- Stormwing Drape
-					i(121177),	-- Vale Walker's Cloak
-					i(121232),	-- Nightfallen Outcast's Cloak
+					i(121067, {	-- Thunder Totem Cloak
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121122, {	-- Stormwing Drape
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121177, {	-- Vale Walker's Cloak
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121232, {	-- Nightfallen Outcast's Cloak
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
 					i(141589),	-- Treia's Handcrafted Shroud
 					i(141590),	-- Cloak of Martayl Oceanstrider
 					i(142541),	-- Drape of the Forgotten Souls
@@ -62,10 +78,26 @@ _.WorldDrops =
 					i(141574),	-- Ulfgor's Greaves of Bravery
 				}),
 				n(-330, { -- Feet
-					i(139405),	-- Kul'Tiras Marine Issue Boots
-					i(139406),	-- Sea Dog Boots
-					i(139407),	-- Diver's Chain Boots
-					i(139408),	-- Deck Sandals
+					i(139405, {	-- Kul'Tiras Marine Issue Boots
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(139406, {	-- Sea Dog Boots
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(139407, {	-- Diver's Chain Boots
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(139408, {	-- Deck Sandals
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
 					i(141572),	-- Geta of Tay'Shute
 					i(141578),	-- Claud's War-Ravaged Boots
 					i(147422),	-- Acolyte's Abandoned Footwraps
