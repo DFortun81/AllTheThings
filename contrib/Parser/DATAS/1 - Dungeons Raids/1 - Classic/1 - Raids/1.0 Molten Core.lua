@@ -620,6 +620,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18815),	-- Essence of the Pure Flame
 				i(17082),	-- Shard of the Flame
 			 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
+				dr(2.0, i(13036)),	-- Assassination Blade
 				dr(4.0, i(13126)),	-- Battlecaller Gauntlets
 				dr(8.0, i(13008)),	-- Dalewind Trousers
 				dr(4.0, i(13120)),	-- Deepfury Bracers
@@ -629,7 +630,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(3.0, i( 2564)),	-- Elven Spirit Claws
 				dr(4.0, i(13113)),	-- Feathermoon Headdress
 				dr(4.0, i(13077)),	-- Girdle of Uther
-				i(13040), -- Heartseeking Crossbow
+				dr(2.0, i(13040)),	-- Heartseeking Crossbow
 				dr(2.0, i(13003)),	-- Lord Alexander's Battle Axe
 				dr(8.0, i(13007)),	-- Mageflame Cloak
 				dr(8.0, i(13107)),	-- Magiskull Cuffs
@@ -639,7 +640,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(7.0, i(13144)),	-- Serenity Belt
 				dr(3.0, i(13146)),	-- Shell Launcher Shotgun
 				dr(3.0, i(13072)),	-- Stonegrip Gauntlets
-				i(6622), -- Sword of Zeal
+				dr(3.0, i( 6622)),	-- Sword of Zeal
 				dr(3.0, i(13060)),	-- The Needler
 				dr(2.0, i(13047)),	-- Twig of the World Tree
 				dr(5.0, i(13130)),	-- Windrunner Legguards

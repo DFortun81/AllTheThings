@@ -55,32 +55,31 @@ _.Instances =
 									i(86757),	-- Hood of Cursed Dreams
 									i(86752),	-- Nullification Greathelm
 									i(86754),	-- Amulet of Seven Curses
-
-									i(89968),	-- Feng's Ring of Dreams
-									i(89967),	-- Feng's Seal of Binding
 									i(86782),	-- Arrow Breaking Windcloak
 									i(86753),	-- Cloak of Peacock Feathers
 									i(86758),	-- Imperial Ghostbinder's Robes
-									i(86750),	-- Tomb Raider's Girdle
-									i(86755),	-- Chain of Shadow
-									i(86749),	-- Wildfire Worldwalkers
 									i(86751),	-- Bracers of Six Oxen
+									i(86755),	-- Chain of Shadow
+									i(86750),	-- Tomb Raider's Girdle
 									i(86756),	-- Legplates of Sagacious Shadows
+									i(86749),	-- Wildfire Worldwalkers
+									i(89968),	-- Feng's Ring of Dreams
+									i(89967),	-- Feng's Seal of Binding
 								})),
 								cr(60143, e(682, {	-- Gara'jal the Spiritbinder
-									i(86767),	-- Circuit of the Frail Soul
-									i(86759),	-- Soulgrasp Choker
-									i(86770),	-- Shadowsummoner Spaulders
-									i(86765),	-- Sandals of the Severed Soul
-									i(86763),	-- Netherrealm Shoulderpads
-									i(86768),	-- Spaulders of the Divided Mind
-									i(86761),	-- Fetters of Death
-									i(86769),	-- Leggings of Imprisoned Will
-									i(86766),	-- Bindings of Ancient Spirits
-									i(89969),	-- Bonded Soul Bracers
-									i(86760),	-- Sollerets of Spirit Splitting
 									i(86762),	-- Gara'kal, Fist of the Spiritbinder
 									i(86764),	-- Eye of the Ancient Spirit
+									i(86759),	-- Soulgrasp Choker
+									i(86763),	-- Netherrealm Shoulderpads
+									i(86770),	-- Shadowsummoner Spaulders
+									i(86768),	-- Spaulders of the Divided Mind
+									i(86766),	-- Bindings of Ancient Spirits
+									i(89969),	-- Bonded Soul Bracers
+									i(86761),	-- Fetters of Death
+									i(86769),	-- Leggings of Imprisoned Will
+									i(86765),	-- Sandals of the Severed Soul
+									i(86760),	-- Sollerets of Spirit Splitting
+									i(86767),	-- Circuit of the Frail Soul
 								})),
 							}),
 							ach(6844, { 	-- The Vault of Mysteries
