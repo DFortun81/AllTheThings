@@ -660,164 +660,208 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17, { 	-- Quests
---[[					
-					n(-34, {	-- World Quests
-						q(45924),	-- Abyssal Monstrosity
-						q(45922),	-- Agmozuul
-						q(45812),	-- Assault on Val'sharah
-						q(44033),	-- Aw, Nuts!
-						q(45070),	-- Barrels o' Fun
-						q(42080),	-- Bastion of Bradensbrook
-						q(41961),	-- Black Rook Holdings
-						q(42023),	-- Black Rook Rumble
-						q(41955),	-- Bloodline of Stone
-						q(42075),	-- Botanical Backlash
-						q(41486),	-- Brimstone Destroyer
-						q(41484),	-- Brimstone Destroyer
-						q(41487),	-- Brimstone Destroyer
-						q(41336),	-- Bristly Musken Hide
-						q(41273),	-- Buoy Fishing
-						q(41532),	-- Bushy Dreamleaf
-						q(42174),	-- Champions of Elune
-						q(43738),	-- Coastal Gloom
-						q(43344),	-- DANGER: Aodh Witherpetal
-						q(43346),	-- DANGER: Ealdis
-						q(43345),	-- DANGER: Harbinger of Screams
-						q(42870),	-- DANGER: Kathaw the Savage
-						q(43152),	-- DANGER: Lytheron
-						q(42927),	-- DANGER: Malisandra
-						q(43333),	-- DANGER: Nylaathria the Forgotten
-						q(43347),	-- DANGER: Rabxach
-						q(41700),	-- DANGER: Shalas'aman
-						q(43101),	-- DANGER: Witchdoctor Grgl-Brgl
-						q(41995),	-- Dark Corruption
-						q(41860),	-- Dealing with Satyrs
-						q(44884),	-- Defense of Emerald Bay
-						q(41291),	-- Dreamleaf Cluster
-						q(41546),	-- Dreamleaf Cluster
-						q(41295),	-- Dreamleaf-Covered Ancient
-						q(46763),	-- Drol'maz
-						q(43756),	-- Enigmatic
-						q(41439),	-- Exquisite Leystone Deposits
-						q(38842),	-- Faerie Fracas
-						q(41565),	-- Felhide
-						q(41566),	-- Felhide
-						q(41567),	-- Felhide
-						q(41516),	-- Felwort
-						q(41518),	-- Felwort
-						q(41517),	-- Felwort
-						q(41294),	-- Flourishing Dreamleaf
-						q(41533),	-- Fragrant Dreamleaf
-						q(45928),	-- Gelthrak
-						q(45923),	-- Gloth
-						q(42087),	-- Green Horror
-						q(43332),	-- Grell in a Handbasket
-						q(42124),	-- Hags and Hexes
-						q(41458),	-- Hardened Leystone Outcropping
-						q(41612),	-- Huge Mossgill Perch
-						q(41270),	-- Huge Mossgill Perch
-						q(41613),	-- Huge Mossgill Perch
-						q(45804),	-- Impvasion!
-						q(42028),	-- Into the Nightmare
-						q(41271),	-- Into the Whirlpool
-						q(41531),	-- Iridescent Dreamleaf
-						q(42150),	-- Kal'delar Naga Incursion
-						q(42094),	-- Keepers of the Dream
-						q(43753),	-- Ley Race
-						q(41503),	-- Leystone Basilisks
-						q(41504),	-- Leystone Basilisks
-						q(41502),	-- Leystone Basilisks
-						q(45047),	-- Like the Wind					
-						q(41530),	-- Lively Dreamleaf
-						q(41269),	-- Lively Mossgill Perch
-						q(41600),	-- Lively Mossgill Perch
-						q(41601),	-- Lively Mossgill Perch
-						q(44011),	-- Lost Wisp
-						q(41965),	-- Lunarwing Liberation
-						q(41440),	-- Magnificent Leystone Deposits
-						q(41861),	-- Meet The Maw
-						q(41334),	-- Musky Bear Hide
-						q(45925),	-- Nez'val
-						q(41862),	-- Only Pets Can Prevent Forest Fires
-						q(42145),	-- Out of the Woodwork
-						q(41956),	-- Petrified Acolytes
-						q(42819),	-- Pocket Wizard
-						q(41964),	-- Poisoned Waters
-						q(41337),	-- Pristine Stag Hide
-						q(43336),	-- Purge of the Nightmare
-						q(41457),	-- Radiant Leystone Outcropping
-						q(43324),	-- Rage of the Owlbeasts
-						q(44730),	-- Ravaged Dreams
-						q(41496),	-- Raw Leystone Seams
-						q(41333),	-- Rugged Wolf Hide
-						q(43709),	-- Seal Clubbing
-						q(42076),	-- Shadowfen Village
-						q(44895),	-- Sharptalon Swarm!
-						q(41554),	-- Slab of Bacon
-						q(41260),	-- Slab of Bacon
-						q(41553),	-- Slab of Bacon
-						q(41855),	-- Stand Up to Bullies
-						q(41441),	-- Superior Leystone Deposits
-						q(41293),	-- Supplies Needed: Dreamleaf
-						q(41316),	-- Supplies Needed: Leystone
-						q(41339),	-- Supplies Needed: Stonehide Leather
-						q(41996),	-- Tangled Nightmare
-						q(41980),	-- Temple Defense
-						q(45921),	-- Thal'xur
-						q(46265),	-- The Fel and the Fawns
-						q(43755),	-- The Magic of Flight
-						q(42779),	-- The Sleeping Corruption
-						q(46261),	-- The Taste of Corruption
-						q(44759),	-- The Vale of Dread
-						q(43303),	-- Time to Rumble!
-						q(40279),	-- Training with Durian
-						q(41992),	-- Twisted Ash
-						q(46766),	-- Ulgthax
-						q(41664),	-- Vantus Rune Work Order: Dragons of Nightmare
-						q(42077),	-- Waking Nightmares
-						q(44301),	-- WANTED: Bahagar
-						q(44305),	-- WANTED: Bahagar
-						q(44299),	-- WANTED: Darkshade
-						q(44304),	-- WANTED: Darkshade
-						q(44298),	-- WANTED: Dreadbog
-						q(44303),	-- WANTED: Dreadbog
-						q(43460),	-- WANTED: Kiranys Duskwhisper
-						q(43629),	-- WANTED: Kiranys Duskwhisper
-						q(43458),	-- WANTED: Perrexx
-						q(43630),	-- WANTED: Perrexx
-						q(44300),	-- WANTED: Seersei
-						q(44302),	-- WANTED: Seersei
-						q(43456),	-- WANTED: Skul'vrax
-						q(43631),	-- WANTED: Skul'vrax
-						q(43457),	-- WANTED: Theryssia
-						q(43632),	-- WANTED: Theryssia
-						q(43459),	-- WANTED: Thondrax
-						q(43633),	-- WANTED: Thondrax
-						q(43248),	-- Warden Tower Assault: Darkfollow's Spire
-						q(43247),	-- Warden Tower Assault: Darkfollow's Spire
-						q(42070),	-- Warden Tower Assault: Starstalker's Point
-						q(43183),	-- Warden Tower Assault: Starstalker's Point
-						q(43784),	-- What a Nightmare
-						q(43759),	-- Where's the Reef?
-						q(43758),	-- Wherever I May Gloam
-						q(42190),	-- Wildlife Conservationist
-						q(41652),	-- Work Order: Deep Amber Loop
-						q(41292),	-- Work Order: Dreamleaf
-						q(41312),	-- Work Order: Leystone
-						q(41634),	-- Work Order: Leystone Armguards
-						q(41272),	-- Work Order: Mossgill Perch
-						q(41676),	-- Work Order: Pump-Action Bandage Gun
-						q(41646),	-- Work Order: Silkweave Gloves
-						q(41338),	-- Work Order: Stonehide Leather
-						q(41658),	-- Work Order: Sylvan Elixirs
-						q(41640),	-- Work Order: Warhide Mask
-						q(41670),	-- Work Order: Word of Agility
-						q(45927),	-- Zagmothar
-						q(45926),	-- Zar'teth					
+				n(-38, { 	-- Profession
+					prof(356, { -- Fishing
+						n(-100001, { 	-- Artifact
+							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["lvl"] = 110,
+							["groups"] = {
+								{
+									["itemID"] = 133887,	-- Luminous Pearl (Item)
+									["questID"] = 40960,	-- Luminous Pearl (Quest)
+								}
+							},
+						}),
+						ach(10596, {	-- Bigger Fish to Fry
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+							i(133708, {		-- Drowned Thistleleaf
+								["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
+								["groups"] = {
+									spell(202067, {		-- Blessing of the Thistleleaf
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
+											["itemID"] = 133729,		-- Thorned Flounder (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
+											["itemID"] = 139656,		-- Thorned Flounder (Item)
+										},
+									}),
+								},
+							}),
+							i(133707, {		-- Nightmare Nightcrawler
+								["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 17,		-- Terrorfin (Criteria)
+										["itemID"] = 133728,		-- Terrorfin (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 17,		-- Terrorfin (Criteria)
+										["itemID"] = 139655,		-- Terrorfin (Item)
+									},
+								},
+							}),
+							i(133705, {		-- Rotten Fishbone
+								["description"] = "This item that will attract a Lorlathil Druid that casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
+								["groups"] = {
+									n(102349, {		-- Lorlathil Druid
+										["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
+										["groups"] = {
+											spell(201809, {		-- The Cat's Meow (Spell)
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
+													["itemID"] = 133730,		-- Ancient Mossgill (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
+													["itemID"] = 139657,		-- Ancient Mossgill (Item)
+												},
+											}),
+										},
+									}),
+								},
+							}),
+						}),
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2098, {	-- Keeper Raynae
+								["groups"] = {
+									i(146959, {		-- Corrupted Globule
+										i(147309), 	-- Face of the Forest
+										i(152565),	-- Recipe: Feast of the Fishes
+										i(133708, {		-- Drowned Thistleleaf
+											["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
+											["groups"] = {
+												spell(202067, {		-- Blessing of the Thistleleaf
+													{
+														["achievementID"] = 10596,	-- Bigger Fish to Fry
+														["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
+														["itemID"] = 133729,		-- Thorned Flounder (Item)
+													},
+													{
+														["achievementID"] = 10596,	-- Bigger Fish to Fry
+														["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
+														["itemID"] = 139656,		-- Thorned Flounder (Item)
+													},
+												}),
+											},
+										}),
+										i(133707, {		-- Nightmare Nightcrawler
+											["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 17,		-- Terrorfin (Criteria)
+													["itemID"] = 133728,		-- Terrorfin (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 17,		-- Terrorfin (Criteria)
+													["itemID"] = 139655,		-- Terrorfin (Item)
+												},
+											},
+										}),
+										i(133705, {		-- Rotten Fishbone
+											["description"] = "This item that will attract a Lorlathil Druid that casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
+											["groups"] = {
+												n(102349, {		-- Lorlathil Druid
+													["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
+													["groups"] = {
+														spell(201809, {		-- The Cat's Meow (Spell)
+															{
+																["achievementID"] = 10596,	-- Bigger Fish to Fry
+																["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
+																["itemID"] = 133730,		-- Ancient Mossgill (Item)
+															},
+															{
+																["achievementID"] = 10596,	-- Bigger Fish to Fry
+																["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
+																["itemID"] = 139657,		-- Ancient Mossgill (Item)
+															},
+														}),
+													},
+												}),
+											},
+										}),
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF53.41, 72.86|r in Lorlathil.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requiredSkill"] = 356,
+								["creatureID"] = 120456
+							}),
+						}),
 					}),
---]]		
---
+				}),
+				n(-17, { 	-- Quests
 					ach(10698, { -- That's Val'sharah Folks!
 						q(39731),	-- The Tranquil Forest
 						q(39861),	-- Tying Up Loose Ends
@@ -1117,240 +1161,6 @@ _.Zones =
 							q(42857),	-- Moist Around the Hedges
 						}),
 					}),
-				  
-				--[[ These quests will be organized soon™
-					q(39726),	-- ...And the Anvil
-					q(44057),	-- A "Noble" Event
-					q(41173),	-- A Beacon of Hope
-					q(42586),	-- A Glade Defense
-					q(43409),	-- A Hero's Weapon
-					q(42046),	-- A New Beginning
-					q(39032),	-- A Summons from Saylanna
-					q(41183),	-- Academic Exploration
-					q(42439),	-- Aid for the Ashen
-					q(46079),	-- Aid on the Front Lines
-					q(40862),	-- All Charged Up
-					q(38737),	-- An End To War
-					q(45180),	-- An Island of War
-					q(46026),	-- An Urgent Warning
-					q(45890),	-- Ancestors and Enemies
-					q(44237),	-- Ancients of War
-					q(43980),	-- Another Weapon of Old
-					q(41332),	-- Ascending The Circle
-					q(42387),	-- Assassin Entrapment
-					q(46962),	-- Assault Treasure
-					q(46958),	-- Assault Treasure
-					q(46960),	-- Assault Treasure
-					q(46963),	-- Assault Treasure
-					q(46959),	-- Assault Treasure
-					q(46956),	-- Assault Treasure
-					q(46961),	-- Assault Treasure
-					q(46954),	-- Assault Treasure
-					q(45856),	-- Battle for Val'sharah
-					q(46830),	-- Battlefield
-					q(39680),	-- Between the Hammer...
-					q(43259),	-- Beware of the Crooked Tree
-					q(38716),	-- Black Rook Hold
-					q(42678),	-- Black Rook Hold: Into Black Rook Hold
-					q(39011),	-- Black Rook Invasion
-					q(38648),	-- Black Rook Orders
-					q(38469),	-- Bonus Objective: The Moonclaw Vale
-					q(41784),	-- Borrowed Time
-					q(42588),	-- Branching Out
-					q(44457),	-- Brotherly Love
-					q(40536),	-- Bruls Before Jewels
---					q(38305),	-- Cenarius, Keeper of the Grove REMOVED?
-					q(42038),	-- Champion: Broll Bearmantle
-					q(42047),	-- Champion: Hamuul Runetotem
-					q(42048),	-- Champion: Mylune
-					q(42096),	-- Champion: Naralex
-					q(42056),	-- Champion: Remulos
-					q(42039),	-- Champion: Sylendra Gladesong
-					q(46044),	-- Champion: Thisalee Crow
-					q(40650),	-- Champion: Zen'tabra
-					q(40022),	-- Choked by Nightmare
-					q(38660),	-- Cleansing the Corruption
-					q(41689),	-- Cleansing the Mother Tree
-					q(44275),	-- Court of Stars
-					q(46106),	-- Cutting off the Heads
-					q(46259),	-- Darkbinder Dilemma
-					q(44272),	-- Darkheart Thicket
-					q(44273),	-- Darkheart Thicket
-					q(44076),	-- Darkheart Thicket: Essence of Regrowth
-					q(39882),	-- Darkheart Thicket: The Glamour Has Faded
-					q(39029),	-- Defend The Temple
-					q(38219),	-- Defending The Grove
-					q(43403),	-- Defending the Isles
-					q(46318),	-- Defense of Aviana
-					q(42658),	-- Delicate Enchantments
-					q(47075),	-- Delivering Lost Knowledge
-					q(41880),	-- Den of Shadows
-					q(45173),	-- Desperate Times
-					q(42031),	-- Dire Growth
-					q(38839),	-- Done with Waiting
-					q(41780),	-- Doom and Gloom
-					q(40654),	-- Druids of the Claw						
-					q(41172),	-- Echoes of My Ancestors
-					q(42051),	-- Enter Nightmare
-					q(44235),	-- Essence of Fate
-					q(44236),	-- Essence of Fate
-					q(43252),	-- Eternal Unrest
-					q(41178),	-- Explosive Results
-					q(44270),	-- Eye of Azshara
-					q(44271),	-- Eye of Azshara
-					q(44077),	-- Eye of Azshara: Essence of Balance
-					q(39881),	-- Fey Enchantments
-					q(38840),	-- Fishy Business
-					q(41175),	-- Fit for an Elven Queen
-					q(43241),	-- Flow of the Nightmare
-					q(42365),	-- Focusing the Energies
-					q(39337),	-- Forlorn Filter
-					q(41875),	-- Found First Clue
-					q(46786),	-- Further Advancement
-					q(46154),	-- Furthering Knowledge
-					q(44070),	-- Gathenak
-					q(42037),	-- Gathering the Dreamweavers
-					q(41177),	-- Goblin Archaeology
-					q(42034),	-- Grip of Nightmare
-					q(45425),	-- Grovebound
-					q(42516),	-- Growing Power
-					q(44075),	-- Halls of Valor: Essence of Ferocity
-					q(38341),	-- Halting the Nightmare
-					q(38745),	-- Hard Lessons
-					q(41781),	-- Herding Goats
-					q(44789),	-- Holding the Ramparts
-					qa( 47006),	-- Holy: The Bradensbrook Investigation
-					qa( 46078),	-- Holy: The Bradensbrook Investigation
-					q(44575),	-- Honor the Flame
-					q(42036),	-- Idol of the Wilds
-					q(40861),	-- In My Sights
-					q(43251),	-- In Search of the Eye
-					q(46027),	-- Investigate the Broken Shore
-					q(41449),	-- Join the Dreamer
-					q(39889),	-- Led Astray
-					q(39702),	-- Legend of Black Rook Hold
-					q(42385),	-- Lending a Hand
-					q(41769),	-- Mad Ernie the Alchemist
-					q(43151),	-- Making A Trade
-					q(40653),	-- Making Trails
-					q(42033),	-- Malorne's Refuge
-					q(38656),	-- Mark of the Demon
-					q(44266),	-- Maw of Souls
-					q(44267),	-- Maw of Souls
-					q(40649),	-- Meet with Mylune
-					q(42657),	-- Meeting in Moonclaw Vale
-					q(38285),	-- Menacing Sprites
-					q(39431),	-- Mending the Filter
-					q(41468),	-- Mistress of the Claw
-					qa( 47005),	-- Mistweaver: The Bradensbrook Investigation
-					q(39393),	-- Moonclaw Vale
-					q(39388),	-- Moonclaw's Wisdom
-					qg(119209, q(45145, {	-- Moonfang Family Relics
-						["groups"] = {
-						},
-						["classes"] = {2}, -- Paladin
-					})),
-					q(44431),	-- More Weapons of Old
-					q(41181),	-- Narrowing Down
-					q(45426),	-- Nature's Advance
-					q(41422),	-- Necessary Preparations
-					q(44264),	-- Neltharion's Lair
-					q(44265),	-- Neltharion's Lair
-					q(43554),	-- Neltharion's Lair
-					q(44074),	-- Neltharion's Lair: Essence of Tenacity
-					q(38661),	-- Nightmare Bombs
-					q(39884),	-- No Longer Worthy
-					q(44268),	-- Odyn's Challenge
-					q(43509),	-- Odyn's Challenge
-					q(44269),	-- Odyn's Challenge
-					q(43250),	-- Off to Court
-					q(40021),	-- One Dead Plant is One Too Many
-					q(46797),	-- Paragon of the Dreamweavers
-					q(39382),	-- Perrexx the Corruptor
-					q(42049),	-- Powering the Portal
-					q(38708),	-- Purge the River
-					q(40535),	-- Raising the Drogbar
-					q(41690),	-- Reconvene
-					q(42585),	-- Recruiting the Troops
-					q(38353),	-- Rescued From Darkness
-					qa( 47004),	-- Restoration: The Bradensbrook Investigation
-					qa( 47003),	-- Restoration: The Bradensbrook Investigation
-					q(40860),	-- Resupplying the Line
-					q(38793),	-- Rethu's Experience
-					q(38794),	-- Rethu's Sacrifice
-					q(39338),	-- Return the Filter
-					q(44917),	-- Return to Karazhan: The Tower of Power
-					q(38803),	-- Rin'thissa
-					q(42583),	-- Rise, Champions
-					q(42386),	-- Rising Troubles
-					q(38748),	-- Ruins of Shala'nir
-					q(42133),	-- Same Day Delivery
-					q(42032),	-- Sampling the Nightmare
-					q(42438),	-- Seeds of Renewal
-					q(46082),	-- Shadowsong's Return
-					q(41176),	-- Sifting Through the Rubble						
-					q(42584),	-- Sister Lilith
-					q(41255),	-- Sowing The Seed
-					q(40131),	-- Stonehide Leather Sample
-					q(41874),	-- Talked to Tyrande to Start Events
-					q(44869),	-- Talon Terror
-					q(46317),	-- Talon's Call
-					q(44263),	-- The Arcway
-					q(40900),	-- The Burden Borne
-					q(42055),	-- The Demi-God's Return
-					q(41918),	-- The Dreamer Returns
-					q(42432),	-- The Emerald Nightmare: The Emerald Nightmare
-					q(42430),	-- The Fangs of Ashamane
-					q(44232),	-- The Grove Provides
-					q(41185),	-- The Keys to Success
-					q(39729),	-- The Knowledge of Black Rook
-					q(40023),	-- The Last Straw
-					q(44276),	-- The Lord of Black Rook Hold
-					q(44277),	-- The Lord of Black Rook Hold
-					q(43501),	-- The Power Within
-					q(43496),	-- The Power Within
-					q(46674),	-- The Preservation of Nature
-					q(43991),	-- The Protectors
-					q(41171),	-- The Reliquary Calls
-					q(40783),	-- The Scythe of Elune
-					q(40651),	-- The Seed of Ages
-					q(42440),	-- The Shrine in Peril
-					q(42428),	-- The Shrine of Ashamane
-					q(38697),	-- The Sword of Truth
-					q(38711),	-- The Warden's Signet
-					q(42040),	-- The Way to Nordrassil
-					q(38673),	-- The Wormtalon Crone
-					q(45172),	-- To Battle!
-					q(40645),	-- To The Dreamgrove
-					q(41782),	-- To The Hills
-					q(42035),	-- Tracking the Enemy
-					q(44112),	-- Trading for Dreams
-					q(38277),	-- Treasure: Honey Hive
-					q(41184),	-- Tried and True
-					q(40020),	-- Twisted to Death
-					q(41876),	-- Umbraxis Tracker
-					q(38938),	-- Unbearable
-					q(41182),	-- Uncovering the Orb of Sciallax
-					q(41180),	-- Unspeakable Power
-					q(42388),	-- Urgent Summons
-					q(38304),	-- Val'sharah
-					q(43556),	-- Vault of the Wardens
-					q(44261),	-- Vault of the Wardens
-					q(44260),	-- Vault of the Wardens
-					q(44259),	-- Violet Hold
-					q(44058),	-- Volpin the Elusive
-					q(40646),	-- Weapons of Legend
-					q(44443),	-- Weapons of the Ancients
-					q(41413),	-- What Could Go Wrong?
-					q(41179),	-- What Once Was Lost
-					q(45179),	-- Win the Crowd
-					q(40652),	-- Word on the Winds
-					q(41174),	-- Worth Its Weight
-					q(46819),	-- Wrecked Cart
-					q(38372),	-- Wretched Sisters
-					q(46319),	-- You Can't Take the Sky from Me
-					SOON™
-					--]]
 				}),
 				n(-16, { 	-- Rares
 					n(110562, { 		-- Bahagar
@@ -1509,207 +1319,6 @@ _.Zones =
 						i(140667), -- Tabard of the Dreamweavers
 					}),
 				}),
-				n(-38, { 	-- Profession
-					prof(356, { -- Fishing
-						n(-100001, { 	-- Artifact
-							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-							["lvl"] = 110,
-							["groups"] = {
-								{
-									["itemID"] = 133887,	-- Luminous Pearl (Item)
-									["questID"] = 40960,	-- Luminous Pearl (Quest)
-								}
-							},
-						}),
-						ach(10596, {	-- Bigger Fish to Fry
-							n(-218, {		-- Coastal
-								i(133722, {		-- Axefish Lure
-									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 133740,		-- Axefish (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 139667,		-- Axefish (Item)
-										},
-									},
-								}),
-								i(133724, {		-- Decayed Whale Blubber
-									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["groups"] = {
-										i(133795),	-- Ravenous Fly
-									}
-								}),
-								i(133721, {		-- Message in a Bottle
-									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["groups"] = {
-										i(133722)		-- Axefish Lure
-									},
-								}),
-								i(133795, {		-- Ravenous Fly
-									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-										},
-									},
-								}),
-								i(133723, {		-- Stunned, Angry Shark
-									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["groups"] = {
-										n(102359, {		-- Landlocked Shark
-											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["groups"] = {
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 133741,		-- Seabottom Squid (Item)
-												},
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 139668,		-- Seabottom Squid (Item)
-												},
-											},
-										})
-									},
-								}),
-							}),
-							i(133708, {		-- Drowned Thistleleaf
-								["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
-								["groups"] = {
-									spell(202067, {		-- Blessing of the Thistleleaf
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
-											["itemID"] = 133729,		-- Thorned Flounder (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
-											["itemID"] = 139656,		-- Thorned Flounder (Item)
-										},
-									}),
-								},
-							}),
-							i(133707, {		-- Nightmare Nightcrawler
-								["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 17,		-- Terrorfin (Criteria)
-										["itemID"] = 133728,		-- Terrorfin (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 17,		-- Terrorfin (Criteria)
-										["itemID"] = 139655,		-- Terrorfin (Item)
-									},
-								},
-							}),
-							i(133705, {		-- Rotten Fishbone
-								["description"] = "This item that will attract a Lorlathil Druid that casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-								["groups"] = {
-									n(102349, {		-- Lorlathil Druid
-										["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-										["groups"] = {
-											spell(201809, {		-- The Cat's Meow (Spell)
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
-													["itemID"] = 133730,		-- Ancient Mossgill (Item)
-												},
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
-													["itemID"] = 139657,		-- Ancient Mossgill (Item)
-												},
-											}),
-										},
-									}),
-								},
-							}),
-						}),
-						ach(11725, { 	-- Fisherfriend of the Isles
-							faction(2098, {	-- Keeper Raynae
-								["groups"] = {
-									i(146959, {		-- Corrupted Globule
-										i(147309), 	-- Face of the Forest
-										i(152565),	-- Recipe: Feast of the Fishes
-										i(133708, {		-- Drowned Thistleleaf
-											["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
-											["groups"] = {
-												spell(202067, {		-- Blessing of the Thistleleaf
-													{
-														["achievementID"] = 10596,	-- Bigger Fish to Fry
-														["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
-														["itemID"] = 133729,		-- Thorned Flounder (Item)
-													},
-													{
-														["achievementID"] = 10596,	-- Bigger Fish to Fry
-														["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
-														["itemID"] = 139656,		-- Thorned Flounder (Item)
-													},
-												}),
-											},
-										}),
-										i(133707, {		-- Nightmare Nightcrawler
-											["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
-											["groups"] = {
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 17,		-- Terrorfin (Criteria)
-													["itemID"] = 133728,		-- Terrorfin (Item)
-												},
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 17,		-- Terrorfin (Criteria)
-													["itemID"] = 139655,		-- Terrorfin (Item)
-												},
-											},
-										}),
-										i(133705, {		-- Rotten Fishbone
-											["description"] = "This item that will attract a Lorlathil Druid that casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-											["groups"] = {
-												n(102349, {		-- Lorlathil Druid
-													["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-													["groups"] = {
-														spell(201809, {		-- The Cat's Meow (Spell)
-															{
-																["achievementID"] = 10596,	-- Bigger Fish to Fry
-																["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
-																["itemID"] = 133730,		-- Ancient Mossgill (Item)
-															},
-															{
-																["achievementID"] = 10596,	-- Bigger Fish to Fry
-																["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
-																["itemID"] = 139657,		-- Ancient Mossgill (Item)
-															},
-														}),
-													},
-												}),
-											},
-										}),
-									}),
-								},
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF53.41, 72.86|r in Lorlathil.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requiredSkill"] = 356,
-								["creatureID"] = 120456
-							}),
-						}),
-					}),
-				}),
 				n(-34, { 	-- World Quests
 					["groups"] = {
 						n(-322, { -- Cloak
@@ -1822,6 +1431,307 @@ _.Zones =
 						}),
 					},
 				}),
+				n(0, { -- Zone Drops
+					["groups"] = {
+						i(121214, {	-- Crescent Vale Cowl
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121219, {	-- Crescent Vale Shoulderpads
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121217, {	-- Crescent Vale Robe
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121220, {	-- Crescent Vale Wristwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121215, {	-- Crescent Vale Handwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121213, {	-- Crescent Vale Cord
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121216, {	-- Crescent Vale Leggings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121218, {	-- Crescent Vale Sandals
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121186, {	-- Smolderhide Hood
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121188, {	-- Smolderhide Shoulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121187, {	-- Smolderhide Jerkin
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121182, {	-- Smolderhide Bindings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121185, {	-- Smolderhide Gloves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121189, {	-- Smolderhide Waistband
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121184, {	-- Smolderhide Britches
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121183, {	-- Smolderhide Boots
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121209, {	-- Dreadroot Linked Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121211, {	-- Dreadroot Linked Spaulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121212, {	-- Dreadroot Linked Vest
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121206, {	-- Dreadroot Linked Bracers
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121207, {	-- Dreadroot Linked Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121205, {	-- Dreadroot Linked Belt
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121210, {	-- Dreadroot Linked Legguards
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121208, {	-- Dreadroot Linked Greaves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121169, {	-- Kal'delar Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121171, {	-- Kal'delar Pauldrons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121166, {	-- Kal'delar Breastplate
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121173, {	-- Kal'delar Vambraces
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121167, {	-- Kal'delar Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121168, {	-- Kal'delar Girdle
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121170, {	-- Kal'delar Legplates
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+						i(121172, {	-- Kal'delar Sabatons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					},
+					["modID"] = 0,
+					["crs"] = {
+						110896,	-- Ancient Annihilator
+						110346,	-- Aodh Witherpetal
+						105933,	-- Apostle of Lyrathos
+						92419,	-- Araxxas
+						93319,	-- Ashmaw Cub
+						93318,	-- Ashmaw Mauler
+						110562,	-- Bahagar
+						93064,	-- Black Rook Falcon
+						95247,	-- Black Rook Spectral Officer
+						109189,	-- Captain Tevaris
+						111472,	-- Clackbrine Matron
+						111473,	-- Clackbrine Pincer
+						111474,	-- Clackbrine Snapper
+						120156,	-- Corrupted Rooksguard
+						106358,	-- Cragtalon Hexenwitch
+						106369,	-- Cragtalon Huntress
+						106384,	-- Cragtalon Witchmother
+						112856,	-- Crazed Owlbeast
+						109714,	-- Crazed Undergrell
+						106842,	-- Creeping Horror
+						118127,	-- Dark Ritualist
+						95727,	-- Darkfiend Corruptor
+						93111,	-- Darkfiend Defiler
+						92789,	-- Darkfiend Dreadbringer
+						92788,	-- Darkfiend Dreamtwister
+						91645,	-- Darkfiend Dreamworg
+						105897,	-- Darkfiend Raider
+						91044,	-- Darkfiend Tormentor
+						111207,	-- Darkfiend Trickster
+						95726,	-- Darkfiend Zealot
+						105932,	-- Darkgrove Cultivator
+						109809,	-- Deepwoods Owl
+						113646,	-- Defiled Grovewalker
+						93157,	-- Defiled Grovewalker
+						93159,	-- Desecrated Ancient
+						97517,	-- Dreadbog
+						112021,	-- Dreadheart Ruiner
+						95951,	-- Dreadsting Lurker
+						100409,	-- Dusky Howler
+						110367,	-- Ealdis
+						115656,	-- Filthy Drudge
+						109694,	-- Frantic Mauler
+						93679,	-- Gathenak the Subjugator
+						93314,	-- Gleamhoof Doe
+						92802,	-- Gravax the Desecrator
+						95123,	-- Grelda the Hag
+						105104,	-- Greyhorn Goat
+						110361,	-- Harbinger of Screams
+						92332,	-- Hulking Gnarlvine
+						93030,	-- Ironbranch<Ancient of War>
+						93686,	-- Jinikki the Puncturer
+						95320,	-- Kagraxxis the Corruptor
+						109125,	-- Kathaw the Savage
+						92971,	-- Kester Farseeker<Captain of the Watch>
+						94414,	-- Kiranys Duskwhisper
+						94366,	-- Lelyn Swiftshadow
+						92707,	-- Lowlands Goat
+						92335,	-- Lyrathos Darkgrove<Portent of the Nightmare>
+						109692,	-- Lytheron
+						111383,	-- Lytheron Gloomscale
+						115021,	-- Macabre Scavenger
+						106340,	-- Maelisandra Venitox
+						91130,	-- Magula<Stoneblood Witchmother>
+						109281,	-- Malisandra
+						92321,	-- Mature Deathblossom
+						108675,	-- Mooncrazed Owlbeast
+						108259,	-- Moonlost Owlbeast
+						91045,	-- Morphael
+						102088,	-- Murkwater Myrmidon
+						102622,	-- Murkwater Oracle
+						101967,	-- Murkwater Slaver
+						109990,	-- Nylaathria the Forgotten
+						95318,	-- Perrexx
+						108941,	-- Phantom Officer
+						106331,	-- Poisonous Slime
+						94485,	-- Pollous the Fetid
+						110342,	-- Rabxach
+						98141,	-- Razzok
+						91860,	-- Reanimated Archer
+						118759,	-- Risen Archer
+						94046,	-- Risen Assassin
+						91847,	-- Risen Hound
+						93061,	-- Risen Saber
+						118757,	-- Risen Scout
+						114442,	-- Risen Soldier
+						118758,	-- Risen Soldier
+						92954,	-- Risen Soldier
+						108876,	-- Risen Vanguard
+						114676,	-- Risen Vanguard
+						94383,	-- Rotbeak
+						92383,	-- Rotwood Creeper
+						92180,	-- Seersei
+						95430,	-- Servant of Ravencrest
+						104523,	-- Shalas'aman
+						94974,	-- Sirius Ebonwing
+						93654,	-- Skul'vrax
+						93577,	-- Smolderhide Chanter
+						93578,	-- Smolderhide Hunter
+						91288,	-- Smolderhide Warrior
+						92963,	-- Starlys Strongbow<Mistress of the Hunt>
+						94208,	-- Stoneblood Elderwitch
+						91122,	-- Stoneblood Elderwitch
+						91121,	-- Stoneblood Ravager
+						94207,	-- Stoneblood Ravager
+						91598,	-- Stoneblood Temptress
+						106288,	-- Sylvan Bear
+						92794,	-- Terrorfiend Bat
+						95399,	-- Thaon Moonclaw<Servant of Xavius>
+						111278,	-- Thistleleaf Lilydancer
+						91472,	-- Thistleleaf Menace
+						111280,	-- Thistleleaf Petalpeeler
+						91474,	-- Thistleleaf Ruffian
+						91354,	-- Thistleleaf Ruffian
+						93444,	-- Thistleleaf Thorndancer
+						111279,	-- Thistleleaf Twigsnapper
+						93205,	-- Thondrax<Darkgrove Keeper>
+						93155,	-- Tormented Dryad
+						110350,	-- Tormented Shadowrunner
+						97337,	-- Twisted Keeper
+						109708,	-- Undergrell Ringleader
+						111460,	-- Underlight Crusader
+						106467,	-- Vale Bear
+						92989,	-- Varethos
+						112052,	-- Vilepetal Rooter
+						105973,	-- Waking Nightmare
+						109819,	-- Wild Dreamrunner
+						109807,	-- Wild Nightsaber
+						109045,	-- Wildeyed Undergrell
+						109648,	-- Witchdoctor Grgl-Brgl
+						95152,	-- Wormtalon Huntress
+						95138,	-- Wormtalon Witch
+						97504,	-- Wraithtalon
+						95319,	-- Xandris the Dishonored
+					},
+				}),
+				
 			},
 			["lvl"] = 98,	
 			["achievementID"] = 10666,
