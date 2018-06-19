@@ -55,6 +55,16 @@ _.GearSets =
 					["groups"] = {
 						i(129583), -- Springrain Spear
 						i(129570), -- Springrain Stave
+						i(129573), -- Springrain Medallion
+						i(129559), -- Springrain Choker
+						i(129575), -- Springrain Band of Destruction
+						i(129576), -- Springrain Band of Destruction
+						i(129561), -- Springrain Ring of Onslaught
+						i(129562), -- Springrain Ring of Onslaught
+						i(129577), -- Springrain Stone of Destruction
+						i(129574), -- Springrain Idol of Destruction
+						i(129560), -- Springrain Idol of Rage
+						i(129563), -- Springrain Stone of Rage
 						n(-9926, { -- Balance	
 							["groups"] = {
 								i(129567), -- Springrain Headpiece
@@ -69,7 +79,7 @@ _.GearSets =
 							},
 							["icon"] = "Interface\\Icons\\spell_nature_starfall", -- Moonfire
 						}),
-						n(-9927, { -- Feral
+						n(-9925, { -- Feral
 							["groups"] = {
 								i(129581), -- Springrain Helm
 								i(129584), -- Springrain Pauldrons
