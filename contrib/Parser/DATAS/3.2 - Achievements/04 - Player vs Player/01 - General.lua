@@ -171,7 +171,7 @@ _.Achievements =
 						crit(5),	-- Master of Strand of the Ancients
 					})),
 					a(ach(8052, {	-- Khan (Alliance)
-						style(1, title(220)),	-- Khan
+						style(2, title(220)),	-- Khan
 						crit(1),	-- Master of the Battle for Gilneas
 						crit(2),	-- Master of Isle of Conquest
 						crit(3),	-- Master of Twin Peaks
@@ -179,7 +179,7 @@ _.Achievements =
 						crit(5),	-- Master of Temple of Kotmogu
 					})),
 					h(ach(8055, {	-- Khan (Horde)
-						style(1, title(220)),	-- Khan
+						style(2, title(220)),	-- Khan
 						crit(1),	-- Master of the Battle for Gilneas
 						crit(2),	-- Master of Isle of Conquest
 						crit(3),	-- Master of Twin Peaks
