@@ -84,37 +84,36 @@ _.Instances =
 							}),
 							ach(6844, { 	-- The Vault of Mysteries
 								cr(60701, e(687, {	-- The Spirit Kings (60708,60709,60710)
-									i(86776),	-- Amulet of the Hidden Kings
-									i(86783),	-- Zian's Choker of Coalesced Shadow
-									i(86782),	-- Arrow Breaking Windcloak
-									i(89971),	-- Mindshard Drape
-									i(86788),	-- Hood of Blind Eyes
-									i(86787),	-- Undying Shadow Grips
-									i(86786),	-- Bracers of Dark Thoughts
-									i(89970),	-- Bracers of Violent Meditation
-									i(86781),	-- Subetai's Pillaging Leggings
-									i(86784),	-- Meng's Treads of Insanity
-									i(86780),	-- Shoulderguards of the Unflanked
-									i(86779),	-- Breastplate of the Kings' Guard
-									i(86785),	-- Girdle of Delirious Visions
 									i(86777),	-- Screaming Tiger, Qiang's Unbreakable Polearm
 									i(86778),	-- Steelskin, Qiang's Impervious Shield
+									i(86788),	-- Hood of Blind Eyes
+									i(86776),	-- Amulet of the Hidden Kings
+									i(86783),	-- Zian's Choker of Coalesced Shadow
+									i(86780),	-- Shoulderguards of the Unflanked
+									i(89971),	-- Mindshard Drape
+									i(86779),	-- Breastplate of the Kings' Guard
+									i(86786),	-- Bracers of Dark Thoughts
+									i(89970),	-- Bracers of Violent Meditation
+									i(86787),	-- Undying Shadow Grips
+									i(86785),	-- Girdle of Delirious Visions
+									i(86781),	-- Subetai's Pillaging Leggings
+									i(86784),	-- Meng's Treads of Insanity
 								})),
 								cr(60410, e(726, {	-- Elegon
+									i(86799),	-- Starshatter
+									i(86789),	-- Elegion, the Fanged Crescent
+									i(86796),	-- Torch of the Celestial Spark
+									i(89974),	-- Crown of Keening Stars
+									i(86800),	-- Shoulders of Empyreal Focus
+									i(86795),	-- Chestguard of Total Annihilation
+									i(86794),	-- Starcrusher Gauntlets
+									i(89973),	-- Galaxyfire Girdle
+									i(86798),	-- Orbital Belt
+									i(86797),	-- Phasewalker Striders
 									i(89972),	-- Band of Bursting Novas
 									i(86791),	-- Bottle of Infinite Stars
 									i(86792),	-- Light of the Cosmos
 									i(86790),	-- Vial of Dragon's Blood
-									i(89973),	-- Galaxyfire Girdle
-									i(86798),	-- Orbital Belt
-									i(86795),	-- Chestguard of Total Annihilation
-									i(86797),	-- Phasewalker Striders
-									i(86800),	-- Shoulders of Empyreal Focus
-									i(89974),	-- Crown of Keening Stars
-									i(86794),	-- Starcrusher Gauntlets
-									i(86789),	-- Elegion, the Fanged Crescent
-									i(86799),	-- Starshatter
-									i(86796),	-- Torch of the Celestial Spark
 								})),
 								cr(60400, e(677, {	-- Will of the Emperor (60399)
 									i(86802),	-- Lei Shen's Final Orders

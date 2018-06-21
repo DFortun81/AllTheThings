@@ -625,6 +625,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(8.0, i(13008)),	-- Dalewind Trousers
 				dr(4.0, i(13120)),	-- Deepfury Bracers
 				dr(3.0, i(13075)),	-- Direwing Legguards
+				dr(4.0, i(13053)),	-- Doombringer
 				dr(7.0, i(13013)),	-- Elder Wizard's Mantle
 				dr(6.0, i(13125)),	-- Elven Chain Boots
 				dr(3.0, i( 2564)),	-- Elven Spirit Claws
