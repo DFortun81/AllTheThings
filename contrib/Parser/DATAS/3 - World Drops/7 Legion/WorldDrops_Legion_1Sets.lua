@@ -47,6 +47,46 @@ _.WorldDrops =
 						},
 						["bonusID"] = 1812,
 					}),
+					i(121044, {	-- Faronaar Chain Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121046, {	-- Faronaar Chain Spaulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121047, {	-- Faronaar Chain Vest
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121041, {	-- Faronaar Chain Bracers
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121042, {	-- Faronaar Chain Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121040, {	-- Faronaar Chain Belt
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121045, {	-- Faronaar Chain Legguards
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121043, {	-- Faronaar Chain Greaves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
 					i(121224, {	-- Jandvik Helm
 						["groups"] = {
 						},
@@ -87,6 +127,46 @@ _.WorldDrops =
 						},
 						["bonusID"] = 1812,
 					}),
+					i(121021, {	-- Llothien Hood
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121023, {	-- Llothien Shoulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121022, {	-- Llothien Jerkin
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121017, {	-- Llothien Bindings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121020, {	-- Llothien Gloves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121024, {	-- Llothien Waistband
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121019, {	-- Llothien Britches
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121018, {	-- Llothien Boots
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
 					i(121269, {	-- Moonfall Cowl
 						["groups"] = {
 						},
@@ -123,6 +203,86 @@ _.WorldDrops =
 						["bonusID"] = 1812,
 					}),
 					i(121273, {	-- Moonfall Sandals
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121004, {	-- Rhut'van Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121006, {	-- Rhut'van Pauldrons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121001, {	-- Rhut'van Breastplate
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121008, {	-- Rhut'van Vambraces
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121002, {	-- Rhut'van Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121003, {	-- Rhut'van Girdle
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121005, {	-- Rhut'van Legplates
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121007, {	-- Rhut'van Sabatons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121049, {	-- Temporal Scholar's Cowl
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121054, {	-- Temporal Scholar's Shoulderpads
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121052, {	-- Temporal Scholar's Robe
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121055, {	-- Temporal Scholar's Wristwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121050, {	-- Temporal Scholar's Handwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121048, {	-- Temporal Scholar's Cord
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),						
+					i(121051, {	-- Temporal Scholar's Leggings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121053, {	-- Temporal Scholar's Sandals
 						["groups"] = {
 						},
 						["bonusID"] = 1812,
@@ -168,166 +328,6 @@ _.WorldDrops =
 						["bonusID"] = 1812,
 					}),
 					-- UNORGANIZED --
-					i(121001, {	-- Rhut'van Breastplate
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121002, {	-- Rhut'van Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121003, {	-- Rhut'van Girdle
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121004, {	-- Rhut'van Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121005, {	-- Rhut'van Legplates
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121006, {	-- Rhut'van Pauldrons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121007, {	-- Rhut'van Sabatons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121008, {	-- Rhut'van Vambraces
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121017, {	-- Llothien Bindings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121018, {	-- Llothien Boots
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121019, {	-- Llothien Britches
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121020, {	-- Llothien Gloves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121021, {	-- Llothien Hood
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121022, {	-- Llothien Jerkin
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121023, {	-- Llothien Shoulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121024, {	-- Llothien Waistband
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121040, {	-- Faronaar Chain Belt
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121041, {	-- Faronaar Chain Bracers
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121042, {	-- Faronaar Chain Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121043, {	-- Faronaar Chain Greaves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121044, {	-- Faronaar Chain Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121045, {	-- Faronaar Chain Legguards
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121046, {	-- Faronaar Chain Spaulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121047, {	-- Faronaar Chain Vest
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121048, {	-- Temporal Scholar's Cord
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121049, {	-- Temporal Scholar's Cowl
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121050, {	-- Temporal Scholar's Handwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121051, {	-- Temporal Scholar's Leggings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121052, {	-- Temporal Scholar's Robe
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121053, {	-- Temporal Scholar's Sandals
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121054, {	-- Temporal Scholar's Shoulderpads
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121055, {	-- Temporal Scholar's Wristwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
 					i(121056, {	-- Ettinbone Breastplate
 						["groups"] = {
 						},

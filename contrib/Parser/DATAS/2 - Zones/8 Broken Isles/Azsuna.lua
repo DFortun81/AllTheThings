@@ -2564,7 +2564,319 @@ _.Zones =
 						},		
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 					}),			
-				}),		
+				}),	
+				n(0, { -- Zone Drops
+					["groups"] = {
+						i(121049, {	-- Temporal Scholar's Cowl
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121054, {	-- Temporal Scholar's Shoulderpads
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121052, {	-- Temporal Scholar's Robe
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121055, {	-- Temporal Scholar's Wristwraps
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121050, {	-- Temporal Scholar's Handwraps
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121048, {	-- Temporal Scholar's Cord
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),						
+						i(121051, {	-- Temporal Scholar's Leggings
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121053, {	-- Temporal Scholar's Sandals
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121021, {	-- Llothien Hood
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121023, {	-- Llothien Shoulders
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121022, {	-- Llothien Jerkin
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121017, {	-- Llothien Bindings
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121020, {	-- Llothien Gloves
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121024, {	-- Llothien Waistband
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121019, {	-- Llothien Britches
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121018, {	-- Llothien Boots
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121044, {	-- Faronaar Chain Helm
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121046, {	-- Faronaar Chain Spaulders
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121047, {	-- Faronaar Chain Vest
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121041, {	-- Faronaar Chain Bracers
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121042, {	-- Faronaar Chain Gauntlets
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121040, {	-- Faronaar Chain Belt
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121045, {	-- Faronaar Chain Legguards
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121043, {	-- Faronaar Chain Greaves
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121004, {	-- Rhut'van Helm
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121006, {	-- Rhut'van Pauldrons
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121001, {	-- Rhut'van Breastplate
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121008, {	-- Rhut'van Vambraces
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121002, {	-- Rhut'van Gauntlets
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121003, {	-- Rhut'van Girdle
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121005, {	-- Rhut'van Legplates
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121007, {	-- Rhut'van Sabatons
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+					},
+					["crs"] = {
+						108721,	-- Ael'Yith
+						107715,	-- Agonized Spirit
+						108338,	-- Ancient Arcanist
+						108340,	-- Ancient Chillwitch
+						108339,	-- Ancient Flamecaller
+						108335,	-- Ancient Flamewraith
+						107657,	-- Arcanist Shal'iman
+						109641,	-- Arcanor Prime
+						88855,	-- Athissa
+						89385,	-- Azsuna Fox
+						89013,	-- Azsuna Lion Seal
+						111752,	-- Beguiled Inquisitor
+						110114,	-- Bitterbrine Miner
+						89284,	-- Bitterbrine Saltcaster
+						89283,	-- Bitterbrine Venomer
+						108146,	-- Blacksail Gunner
+						108139,	-- Blacksail Keelhauler
+						108133,	-- Blacksail Salvor
+						106629,	-- Blerg
+						89050,	-- Boss Whalebelly
+						107127,	-- Brawlgoth
+						108453,	-- Brilliant Familiar
+						107105,	-- Broodmother Lizax
+						111766,	-- Burning Fiend
+						89056,	-- Captain Feargus
+						109677,	-- Chief Treasurer Jabrill
+						108255,	-- Coura, Mistress of Arcana
+						89097,	-- Cove Skrog
+						89391,	-- Cursefeather Owl
+						111508,	-- Darkfire Felwing
+						112637,	-- Devious Sunrunner
+						91579,	-- Doomlord Kazrok
+						90661,	-- Eredar Supplicant
+						103162,	-- Eredar Supplicant
+						91756,	-- Eternal Guardian
+						91074,	-- Fallen Priestess
+						88090,	-- Fathom-Commander Zarrin
+						107335,	-- Felflame Imp
+						111821,	-- Felsworn Adept
+						102059,	-- Felsworn Adept
+						103972,	-- Felsworn Betrayer
+						111823,	-- Felsworn Betrayer
+						111929,	-- Felsworn Defiler
+						109584,	-- Fjordun
+						89884,	-- Flog the Captain-Eater
+						119515,	-- Foul Dreadbringer
+						119516,	-- Frenzied Dedicant
+						89653,	-- Gangamesh
+						108454,	-- Glacial Familiar
+						108441,	-- Grulk
+						88870,	-- Hatecoil Ambusher
+						88089,	-- Hatecoil Enchantress
+						89024,	-- Hatecoil Fathom-Stalker
+						109154,	-- Hatecoil Gargantuan
+						111481,	-- Hatecoil Guardian
+						107447,	-- Hatecoil Harpooner
+						112727,	-- Hatecoil Myrmidon
+						88084,	-- Hatecoil Raider
+						111438,	-- Hatecoil Ravager
+						88086,	-- Hatecoil Riptail
+						89802,	-- Hatecoil Skrog
+						90109,	-- Hatecoil Slavemaster
+						107367,	-- Hatecoil Slaver
+						89025,	-- Hatecoil Spitespeaker
+						88087,	-- Hatecoil Stormcaller
+						111457,	-- Hatecoil Stormspeaker
+						89696,	-- Horned Leatherback
+						107136,	-- Houndmaster Stroxis
+						108349,	-- Icy Familiar
+						109630,	-- Immolian
+						90662,	-- Imp Mother Fecunda
+						90803,	-- Infernal Lord
+						90389,	-- Ishkaneth
+						113804,	-- Justice Bentzel
+						113811,	-- Kelli Greenfield
+						110909,	-- Kol'roz the Everburning
+						110468,	-- Kroniss
+						89199,	-- Lady Sssurine
+						107363,	-- Legion Felsmith
+						107216,	-- Legion Jailer
+						107201,	-- Legion Willbreaker
+						91265,	-- Llothien Fox
+						91269,	-- Llothien Owl
+						90663,	-- Lord Perdition
+						90526,	-- Lost Laborer
+						111939,	-- Lysanis Shadesoul
+						89053,	-- Mak'rana Warrior
+						107135,	-- Manastalker
+						109653,	-- Marblub the Massive
+						93622,	-- Mortiferous
+						110619,	-- Mother Ozram
+						91459,	-- Naga Brute
+						107328,	-- Netherflame Infernal
+						106695,	-- Nightborne Animator
+						106782,	-- Nightborne Foehunter
+						109826,	-- Nightfallen Hungerer
+						90616,	-- Nightfallen Overseer
+						90621,	-- Nightglaive the Traitor
+						102066,	-- Ocean Guardian
+						86535,	-- Overseer Lykill
+						108348,	-- Potent Familiar
+						89101,	-- Prince Oceanus
+						102666,	-- Reef Ravager
+						88099,	-- Salteye Hookblade
+						111598,	-- Salteye Oracle
+						88100,	-- Salteye Shoresprinter
+						102338,	-- Salteye Skrog-Hunter
+						88871,	-- Salteye Spearwaver
+						111586,	-- Salteye Warrior
+						116204,	-- Savage Dreadstalker
+						111434,	-- Sea King Tidross
+						108521,	-- Sea Skrog
+						88888,	-- Sentry Brute
+						111571,	-- Siltshore Crab
+						93513,	-- Skrog Ambassador
+						107362,	-- Soulreaver
+						91431,	-- Spectral Student
+						111456,	-- Spiderling
+						113388,	-- Squigglefin Crablord
+						113387,	-- Squigglefin Wavecaller
+						113810,	-- Steve McClory
+						109594,	-- Stormfeather
+						89850,	-- The Oracle
+						109620,	-- The Whisperer
+						89803,	-- Tide Breaker
+						108450,	-- Timeless Coldwight
+						108446,	-- Timeless Leymage
+						108447,	-- Timeless Pyromancer
+						105360,	-- Timeworn Raider
+						105362,	-- Timeworn Stormcaller
+						110347,	-- Timeworn Taskmaster
+						102064,	-- Torrentius
+						90390,	-- Tyndrissen
+						110073,	-- Ursaaj
+						89650,	-- Valiyaka the Stormbringer
+						109351,	-- Veil Prowler
+						109349,	-- Veil Shadowrunner
+						107628,	-- Vengeful Soul
+						111479,	-- Venomspinner
+						90379,	-- Withered Exile
+						90318,	-- Withered Fanatic
+						90377,	-- Withered Leyfeeder
+						90380,	-- Withered Mana-Rager
+						110102,	-- Withered Ravager
+						89801,	-- Withered Scavenger
+						121039,	-- Wrathguard Harbinger
+					},
+				}),
 			},
 			["achievementID"] = 10665,
 			["lvl"] = 98,
