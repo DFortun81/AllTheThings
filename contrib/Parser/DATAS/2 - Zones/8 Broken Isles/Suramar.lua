@@ -1715,6 +1715,312 @@ _.Zones =
 						}),
 					},
 				}),
+				n(0, { -- Zone Drops
+					["groups"] = {
+						i(141292),	-- Crystallizing Mana
+						i(121236),	-- Dawnswood Hunter's Fletchings
+						i(121247),	-- Nightfall Loop
+						i(121232),	-- Nightfallen Outcast's Cloak
+						i(141293),	-- Spellfire Oil
+						i(121269, {	-- Moonfall Cowl
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121274, {	-- Moonfall Shoulderpads
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121272, {	-- Moonfall Robe
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121275, {	-- Moonfall Wristwraps
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121270, {	-- Moonfall Handwraps
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121268, {	-- Moonfall Cord
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121271, {	-- Moonfall Leggings
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121273, {	-- Moonfall Sandals
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121241, {	-- Ambervale Hood
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121243, {	-- Ambervale Shoulders
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121242, {	-- Ambervale Jerkin
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121237, {	-- Ambervale Bindings
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121240, {	-- Ambervale Gloves
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121244, {	-- Ambervale Waistband
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121239, {	-- Ambervale Britches
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121238, {	-- Ambervale Boots
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121264, {	-- Warpwind Helm
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121266, {	-- Warpwind Spaulders
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121267, {	-- Warpwind Vest
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121261, {	-- Warpwind Bracers
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121262, {	-- Warpwind Gauntlets
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121260, {	-- Warpwind Belt
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121265, {	-- Warpwind Legguards
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121263, {	-- Warpwind Greaves
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121224, {	-- Jandvik Helm
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121226, {	-- Jandvik Pauldrons
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121221, {	-- Jandvik Breastplate
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121228, {	-- Jandvik Vambraces
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121222, {	-- Jandvik Gauntlets
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121223, {	-- Jandvik Girdle
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121225, {	-- Jandvik Legplates
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121227, {	-- Jandvik Sabatons
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+					},
+					["crs"] = {
+						112705,	-- Achronos
+						104521,	-- Alteria
+						102016,	-- Ambushing Husk
+						111197,	-- Anax
+						110870,	-- Apothecary Faldren
+						100058,	-- Arcanist Kel'danath
+						112759,	-- Az'jatar
+						107717,	-- Burning Chaplain
+						112489,	-- Callus
+						115241,	-- Captain Ilessa
+						109670,	-- Chronarch Defender
+						99593,	-- Cliffclutch Matriarch
+						113573,	-- Cliffclutch Thornwitch
+						104519,	-- Colerian
+						114916,	-- Combat Construct
+						112016,	-- Corvelyn
+						115926,	-- Darnassus Sentinel
+						115924,	-- Dawnguard Magus
+						97729,	-- Disturbed Apparition
+						97732,	-- Disturbed Spectre
+						113633,	-- Doomguard Executioner
+						113765,	-- Doomguard Felbreather
+						113706,	-- Duskwatch Astralite
+						115253,	-- Duskwatch Battle-Magus
+						111446,	-- Duskwatch Battlemaster
+						114929,	-- Duskwatch Defender
+						111621,	-- Duskwatch Executor
+						115561,	-- Duskwatch Felblade
+						114474,	-- Duskwatch Highblade
+						111612,	-- Duskwatch Moonscythe
+						106654,	-- Duskwatch Moonscythe
+						113848,	-- Duskwatch Saberguard
+						114924,	-- Duskwatch Saberguard
+						109650,	-- Duskwatch Spell-Fencer
+						107342,	-- Duskwatch Spell-Fencer
+						111485,	-- Duskwatch Spellshield
+						111484,	-- Duskwatch Spellshield
+						115216,	-- Duskwatch Veteran
+						99792,	-- Elfbane
+						112796,	-- Exiled Scavenger
+						105685,	-- Fal'dorei Broodlord
+						105785,	-- Fal'dorei Conjurer
+						103497,	-- Feathermane Hunter
+						116116,	-- Felblade Protector
+						111750,	-- Felborne Collaborator
+						111749,	-- Felborne Collaborator
+						114868,	-- Felborne Enforcer
+						116118,	-- Felborne Magus
+						115724,	-- Felborne Marauder
+						117412,	-- Felborne Trapper
+						116434,	-- Felguard Raider
+						111556,	-- Felsoul Courtesan
+						99764,	-- Felsoul Crusher
+						100047,	-- Felsoul Doomguard
+						108314,	-- Felsoul Ravener
+						111747,	-- Felsworn Noble
+						107720,	-- Felwing Doombringer
+						99585,	-- Feorias
+						112334,	-- Frenzied Riverbug
+						112530,	-- Garion
+						112972,	-- Giant Thicketstomper
+						104226,	-- Gloomfang
+						110944,	-- Guardian Thor'el
+						108004,	-- Haunting Protector
+						103223,	-- Hertha Grimdottir
+						111530,	-- Imperial Arcanist
+						109647,	-- Imperial Arcbinder
+						103639,	-- Ivory Tufted Crane
+						103827,	-- King Morgalash
+						99791,	-- Koralune Ettin
+						112531,	-- Leleyna
+						100237,	-- Ley Line Hunter
+						111872,	-- Leyline Researcher
+						102303,	-- Lieutenant Strathmar
+						111273,	-- Lowland Manashell
+						111490,	-- Loyalist Sycophant
+						109463,	-- Magisterial Escort
+						108190,	-- Magisterial Sleuth
+						112757,	-- Magistrix Vilessa
+						112497,	-- Maia the White
+						113185,	-- Mana-Infused Bushtail
+						111653,	-- Miasu
+						101784,	-- Nightborne Infiltrator
+						99267,	-- Nightborne Scion
+						105372,	-- Nightborne Steward
+						112345,	-- Noble Celebrant
+						105899,	-- Oglok the Furious
+						105232,	-- Oldus
+						107333,	-- Overseer Durant
+						113694,	-- Pashya
+						115880,	-- Qui'mar
+						112789,	-- Ravenous Feaster
+						99893,	-- Razortail Hammerhead
+						112370,	-- Ruins Recluse
+						105739,	-- Sanaar
+						99770,	-- Sashj'tar Deep Witch
+						100998,	-- Sashj'tar Myrmidon
+						102685,	-- Sashj'tar Overseer
+						113124,	-- Screeching Hag-Sister
+						105728,	-- Scythemaster Cil'raman
+						104522,	-- Selenyi
+						103841,	-- Shadowquill
+						112595,	-- Shal'dorei Archmage
+						112319,	-- Shal'dorei Peacekeeper
+						114869,	-- Soul Engine Executioner
+						114904,	-- Soul Engine Jailer
+						109509,	-- Spellsinger Quiris
+						105884,	-- Spellwyrm
+						104220,	-- Starving Ettin
+						115566,	-- Starving Felstalker
+						111992,	-- Stelleris Vigilant
+						112006,	-- Stelleris Vigilant
+						110050,	-- Stillwater Snapper
+						113619,	-- Suramar Loyalist
+						113618,	-- Suramar Loyalist
+						106055,	-- Suramar Loyalist
+						104224,	-- Suramar Snarler
+						99588,	-- Tallian
+						102748,	-- Tamed Manasaber
+						102747,	-- Tamed Owl
+						101581,	-- Tanzanite Borer
+						109180,	-- Tattered Silkwing
+						104404,	-- Thicket Hunter
+						104359,	-- Tidemistress Sashj'tar
+						104454,	-- Trenchwalker Guardian
+						115954,	-- Valthis Ama'ran
+						105292,	-- Venlis Swiftsea
+						108528,	-- Vile Lurker
+						108875,	-- Vineyard Enforcer
+						108871,	-- Vineyard Warden
+						112760,	-- Volshax, Breaker of Will
+						116626,	-- Warp Aberration
+						100014,	-- Withered Husk
+						98555,	-- Withered Shambler
+						114874,	-- Wyrmtongue Pilferer
+					},
+				}),
 			},
 			["lvl"] = 98,	
 			["achievementID"] = 10669,

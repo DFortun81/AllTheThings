@@ -7,6 +7,167 @@ _.WorldDrops =
 		["groups"] = {
 			n(-1000, { -- Sets
 				["groups"] = {
+					i(121241, {	-- Ambervale Hood
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121243, {	-- Ambervale Shoulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121242, {	-- Ambervale Jerkin
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121237, {	-- Ambervale Bindings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121240, {	-- Ambervale Gloves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121244, {	-- Ambervale Waistband
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121239, {	-- Ambervale Britches
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121238, {	-- Ambervale Boots
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121224, {	-- Jandvik Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121226, {	-- Jandvik Pauldrons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121221, {	-- Jandvik Breastplate
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121228, {	-- Jandvik Vambraces
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121222, {	-- Jandvik Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121223, {	-- Jandvik Girdle
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121225, {	-- Jandvik Legplates
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121227, {	-- Jandvik Sabatons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121269, {	-- Moonfall Cowl
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121274, {	-- Moonfall Shoulderpads
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121272, {	-- Moonfall Robe
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121275, {	-- Moonfall Wristwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121270, {	-- Moonfall Handwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121268, {	-- Moonfall Cord
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121271, {	-- Moonfall Leggings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121273, {	-- Moonfall Sandals
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121264, {	-- Warpwind Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121266, {	-- Warpwind Spaulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121267, {	-- Warpwind Vest
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121261, {	-- Warpwind Bracers
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121262, {	-- Warpwind Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121260, {	-- Warpwind Belt
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121265, {	-- Warpwind Legguards
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121263, {	-- Warpwind Greaves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					-- UNORGANIZED --
 					i(121001, {	-- Rhut'van Breastplate
 						["groups"] = {
 						},
@@ -643,166 +804,6 @@ _.WorldDrops =
 						["bonusID"] = 1812,
 					}),
 					i(121220, {	-- Crescent Vale Wristwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121221, {	-- Jandvik Breastplate
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121222, {	-- Jandvik Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121223, {	-- Jandvik Girdle
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121224, {	-- Jandvik Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121225, {	-- Jandvik Legplates
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121226, {	-- Jandvik Pauldrons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121227, {	-- Jandvik Sabatons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121228, {	-- Jandvik Vambraces
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121237, {	-- Ambervale Bindings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121238, {	-- Ambervale Boots
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121239, {	-- Ambervale Britches
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121240, {	-- Ambervale Gloves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121241, {	-- Ambervale Hood
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121242, {	-- Ambervale Jerkin
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121243, {	-- Ambervale Shoulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121244, {	-- Ambervale Waistband
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121260, {	-- Warpwind Belt
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121261, {	-- Warpwind Bracers
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121262, {	-- Warpwind Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121263, {	-- Warpwind Greaves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121264, {	-- Warpwind Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121265, {	-- Warpwind Legguards
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121266, {	-- Warpwind Spaulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121267, {	-- Warpwind Vest
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121268, {	-- Moonfall Cord
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121269, {	-- Moonfall Cowl
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121270, {	-- Moonfall Handwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121271, {	-- Moonfall Leggings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121272, {	-- Moonfall Robe
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121273, {	-- Moonfall Sandals
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121274, {	-- Moonfall Shoulderpads
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121275, {	-- Moonfall Wristwraps
 						["groups"] = {
 						},
 						["bonusID"] = 1812,
