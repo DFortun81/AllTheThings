@@ -632,6 +632,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(4.0, i(13113)),	-- Feathermoon Headdress
 				dr(4.0, i(13077)),	-- Girdle of Uther
 				dr(2.0, i(13040)),	-- Heartseeking Crossbow
+				dr(1.0, i( 4696)),	-- Lapidis Tankard of Tidesippe
 				dr(2.0, i(13003)),	-- Lord Alexander's Battle Axe
 				dr(8.0, i(13007)),	-- Mageflame Cloak
 				dr(8.0, i(13107)),	-- Magiskull Cuffs
