@@ -3560,56 +3560,54 @@ _.Zones =
 					n(-125, {	-- Dwarven Bunker
 						n(77377, {	-- Kristen Stoneforge
 							i(113681, { -- Iron Horde Scraps
-								n(-131 , {	-- Shadowmoon Set
-									i(113801),	-- Shadowmoon Cowl
-									i(113803),	-- Shadowmoon Shoulderguards
+								["groups"] = {
+									i(113821, { -- Battered Iron Horde Helmet
+										i(113801),	-- Shadowmoon Cowl
+										i(113817),	-- Warsong Hood
+										i(113793),	-- Thunderlord Helm
+										i(113809),	-- Blackrock Greathelm
+										i(117406),	-- Stormwind Helm
+									}),
+									i(113823, { -- Crusted Iron Horde Pauldrons
+										i(113803),	-- Shadowmoon Shoulderguards
+										i(113819),	-- Warsong Spaulders
+										i(113791),	-- Thunderlord Chestguard
+										i(113811),	-- Blackrock Pauldrons
+										i(117407),	-- Stormwind Shoulderguards
+									}),
+									i(113822, { -- Ravaged Iron Horde Belt
+										i(113797),	-- Shadowmoon Sash
+										i(113813),	-- Warsong Cord
+										i(113789),	-- Thunderlord Girdle
+										i(113805),	-- Blackrock Girth
+										i(117410),	-- Stormwind Belt
+									}),
 									i(113799),	-- Shadowmoon Robes
 									i(113804),	-- Shadowmoon Bracers
 									i(113800),	-- Shadowmoon Grips
-									i(113797),	-- Shadowmoon Sash
 									i(113802),	-- Shadowmoon Leggings
 									i(113798),	-- Shadowmoon Treads
-								}),
-								n(-133 , {	-- Warsong Set
-									i(113817),	-- Warsong Hood
-									i(113819),	-- Warsong Spaulders
 									i(113815),	-- Warsong Wraps
 									i(113820),	-- Warsong Bracers
 									i(113816),	-- Warsong Gloves
-									i(113813),	-- Warsong Cord
 									i(113818),	-- Warsong Leggings
 									i(113814),	-- Warsong Boots
-								}),
-								n(-130 , { 	-- Thunderlord Set
-									i(113793),	-- Thunderlord Helm
 									i(113795),	-- Thunderlord Shoulderguards
-									i(113791),	-- Thunderlord Chestguard
 									i(113796),	-- Thunderlord Bracers
 									i(113792),	-- Thunderlord Gloves
-									i(113789),	-- Thunderlord Girdle
 									i(113794),	-- Thunderlord Leggings
 									i(113790),	-- Thunderlord Sabatons
-								}),
-								n(-132 , {	-- Blackrock Set
-									i(113809),	-- Blackrock Greathelm
-									i(113811),	-- Blackrock Pauldrons
 									i(113807),	-- Blackrock Chestplate
 									i(113812),	-- Blackrock Wristguards
 									i(113808),	-- Blackrock Gauntlets
-									i(113805),	-- Blackrock Girth
 									i(113810),	-- Blackrock Legplates
 									i(113806),	-- Blackrock Greaves
-								}),
-								n(-135 , {	-- Stormwind Set
 									i(117413),	-- Stormwind Shield
-									i(117406),	-- Stormwind Helm
-									i(117407),	-- Stormwind Shoulderguards
 									i(117408),	-- Stormwind Chestguard
 									i(117409),	-- Stormwind Grips
-									i(117410),	-- Stormwind Belt
 									i(117411),	-- Stormwind Leggings
 									i(117412),	-- Stormwind Boots
-								}),
+								},
 							}),
 						}),
 					}),
