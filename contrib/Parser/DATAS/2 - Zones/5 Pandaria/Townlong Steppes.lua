@@ -21,18 +21,18 @@ _.Zones =
 					p(740), 	-- Yakrat
 					q(31991, { -- Grand Master Zusshi
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					}),
 					q(32434, { -- Burning Pandaren Spirit
 						["groups"] = {
 							i(93146, { -- Pandaren Spirit Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
-								i(92798),	-- PET! Pandaren Fire Spirit
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
+								i(92798),	-- Pandaren Fire Spirit
 							})
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
@@ -181,7 +181,7 @@ _.Zones =
 					q(31062),	-- When The Dead Speak
 --]]
 					q(31032,  {  	-- Choking the Skies
-						i(88589), 		-- TOY! Cremating Torch
+						i(88589), 		-- Cremating Torch
 					}),
 					q(30979,  {  	-- Devastation Below
 						i(84587),
@@ -224,7 +224,7 @@ _.Zones =
 						i(84604),
 					}),
 					q(30783,  {  	-- Hatred Becomes Us
-						i(88584), 		-- TOY! Totem of Harmony
+						i(88584), 		-- Totem of Harmony
 					}),
 					q(30895,  {  	-- Improvised Ammunition
 						i(88104),
@@ -294,7 +294,7 @@ _.Zones =
 						i(83679),
 					}),
 					q(31277,  {  	-- Surprise Attack!
-						i(87768),  		-- MOUNT! Reins of the Onyx Cloud Serpent
+						i(87768),  		-- Reins of the Onyx Cloud Serpent
 					}),
 					q(30815,  {  	-- The Death of Me
 						i(83756),

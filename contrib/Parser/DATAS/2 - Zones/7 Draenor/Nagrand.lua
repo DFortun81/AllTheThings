@@ -309,7 +309,7 @@ _.Zones =
 						q(34869, { -- Tastes Like Chicken
 							q(34819, { -- Fruitful Ventures
 								q(34900,  {	-- New Babies
-									i(114834),	-- Meadowstomper Calf PET!
+									i(114834),	-- Meadowstomper Calf
 								}),
 							}),
 						}),
@@ -1805,16 +1805,26 @@ _.Zones =
 --]]
 				}),
 				n(-2, {		-- Vendors
-					model(60298, n(87394, {	-- Kwilax Fuseshiv <Reputation Vendor>
-						i(119137),	-- Steamwheedle "Preservation" Society Tabard
-						i(116672),	-- Domesticated Razorback MOUNT!
-						i(119148),	-- Indentured Albino River Calf PET!
-						i(119149),	-- Captured Forest Sproutling PET!
-					})),
-					model(57244, n(82754, {	-- Nurse Lizz <First Aid>
+					n(87394, {	-- Kwilax Fuseshiv <Reputation Vendor>
+						["groups"] = {
+							currency(823, { -- Apexis Crystal
+								["groups"] = {
+									i(119149),	-- Captured Forest Sproutling
+									i(116672),	-- Domesticated Razorback
+									i(119148),	-- Indentured Albino River Calf
+								},
+							}),
+							i(119165, {	-- Contract: Professor Felblast
+								follower(460),	-- Professor Felblast
+							}),
+							i(118683),	-- Portable Goon Squad
+							i(119137),	-- Steamwheedle "Preservation" Society Tabard
+						},
+					}),
+					n(82754, {	-- Nurse Lizz <First Aid>
 						i(44693),	-- Wound Dressing
 						i(44694),	-- Antiseptic-Soaked Dressing
-					})),
+					}),
 				}),
 			},
 			["lvl"] = 98,	

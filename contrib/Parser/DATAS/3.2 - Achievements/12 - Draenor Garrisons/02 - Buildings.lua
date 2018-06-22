@@ -115,7 +115,7 @@ _.Achievements =
 						}),
 					}),
 					a(ach(9539, {	-- Advanced Husbandry (Alliance)
-						i(116668),	-- Armored Frostboar MOUNT!
+						i(116668),	-- Armored Frostboar
 						crit(1),	-- Maimclaw Killed
 						crit(2),	-- Beast-Lasher Killed
 						crit(3),	-- Moth of Wrath Killed
@@ -124,7 +124,7 @@ _.Achievements =
 						crit(6),	-- Karak Killed
 					})),
 					h(ach(9705, {	-- Advanced Husbandry (Horde)
-						i(116668),	-- Armored Frostboar MOUNT!
+						i(116668),	-- Armored Frostboar
 						crit(1),	-- Maimclaw Killed
 						crit(2),	-- Beast-Lasher Killed
 						crit(3),	-- Moth of Wrath Killed
@@ -133,7 +133,7 @@ _.Achievements =
 						crit(6),	-- Karak Killed
 					})),
 					a(ach(9540, {	-- The Stable Master (Alliance)
-						i(116781),	-- Armored Frostwolf MOUNT!
+						i(116781),	-- Armored Frostwolf
 						title(277),	-- Stable Master
 						crit(1),	-- Maimclaw Killed
 						crit(2),	-- Beast-Lasher Killed
@@ -143,7 +143,7 @@ _.Achievements =
 						crit(6),	-- Karak Killed
 					})),
 					h(ach(9706, {	-- The Stable Master (Horde)
-						i(116781),	-- Armored Frostwolf MOUNT!
+						i(116781),	-- Armored Frostwolf
 						title(277),	-- Stable Master
 						crit(1),	-- Maimclaw Killed
 						crit(2),	-- Beast-Lasher Killed

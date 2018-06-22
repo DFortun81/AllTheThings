@@ -126,7 +126,7 @@ _.Achievements =
 					}),
 					ach(10627),	-- Going Up (Stormheim)
 					ach(11066, {	-- Underbelly Tycoon
-						i(138387),	-- Ratstallion MOUNT!
+						i(138387),	-- Ratstallion
 					}),
 					ach(11175, {	-- Higher Dimensional Learning (Azsuna)
 						i(140493),	-- Adept's Guide to Dimensional Rifting
@@ -423,7 +423,7 @@ _.Achievements =
 					ach(12104, {	-- And We're All Out of Mana Buns
 						title(367),	-- Demonslayer
 						ach(12103, {	-- ...And Chew Mana Buns
-							i(153041),	-- Bleakhoof Ruinstrider MOUNT!
+							i(153041),	-- Bleakhoof Ruinstrider
 						}),
 						ach(12102),	-- To Kill Demons...
 						ach(12101),	-- We Came Here For Two Reasons

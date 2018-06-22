@@ -535,10 +535,10 @@ _.Zones =
 					qh( 32564),	-- Zandalari on the Rise
 --]]
 					qa(32681, { 	-- The Storm Gathers
-						i(95567), 		-- TOY! Kirin Tor Beacon
+						i(95567), 		-- Kirin Tor Beacon
 					}),
 					qh(32680, { 	-- The Storm Gathers
-						i(95568), 		-- TOY! Sunreaver Beacon
+						i(95568), 		-- Sunreaver Beacon
 					}),
 				}),
 				n(-16, { 	-- Rares

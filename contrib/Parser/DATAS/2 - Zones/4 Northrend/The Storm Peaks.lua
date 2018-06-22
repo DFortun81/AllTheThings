@@ -297,7 +297,7 @@ _.Zones =
 					p(1238), 	-- Unborn Val'kyr
 					ach(11320, { -- Raiding With Leashes IV: Wrath of the Lick King
 						q(44767, { -- A Celestial Invitation
-							i(142100), -- PET! Stardust
+							i(142100), -- Stardust
 						}),
 					}),
 				}),

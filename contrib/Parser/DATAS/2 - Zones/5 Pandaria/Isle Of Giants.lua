@@ -96,10 +96,10 @@ _.Zones =
 						q(32614),	-- More Giant Dinosaur Bones
 						q(32615),	-- Many More Giant Dinosaur Bones	
 						q(32616,  {  -- A Large Pile of Dinosaur Bones
-							i(94190),  -- PET! Spectral Porcupette
+							i(94190),  -- Spectral Porcupette
 						}),
 						q(32617,  {  -- A Mountian of Dinosaur Bones
-							i(94290),  -- MOUNT! Bone-White Primal Raptor
+							i(94290),  -- Bone-White Primal Raptor
 						}),
 					}),
 				}),

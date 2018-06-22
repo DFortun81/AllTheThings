@@ -172,16 +172,16 @@ _.Zones =
 					p(419), 	-- Small Frog
 					qg(66135, qh(31814, { -- Analynn
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					})),					
 					qg(66135, qh(31819)),	-- Dagra the Fierce
 					qg(115286, q(45083, {	-- Crysa's Flyers
 						i(142447, {	-- Torn Sack of Pet Supplies
-							i(142448),	-- PET! Albino Buzzard
-							i(89587),	-- PET! Porcupette
+							i(142448),	-- Albino Buzzard
+							i(89587),	-- Porcupette
 						}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
 					})),					
 					qg(116781, q(45423, {	-- Wailing Critters
@@ -192,9 +192,9 @@ _.Zones =
 						qg(116781, q(45539, {	-- Pet Battle Challenge: WC
 							["groups"] = {
 								i(143753, {	-- Damp Pet Supplies
-									i(143754), 	-- PET! Cavern Moccasin
-									i(143755),	-- PET! Young Venomfang
-									i(143756),	-- PET! Everliving Spore
+									i(143754), 	-- Cavern Moccasin
+									i(143755),	-- Young Venomfang
+									i(143756),	-- Everliving Spore
 								}), -- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
 							},
 							["description"] = "Account-Wide Weekly quest.|r",

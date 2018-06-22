@@ -1768,11 +1768,19 @@ _.Zones =
 				--]]
 				n(-2, {		-- Vendors
 					na(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
-						i(116776),	-- Pale Thorngrazer MOUNT!
-						i(115517),	-- Wrynn's Vanguard Tabard
+						["groups"] = {
+							currency(823, { -- Apexis Crystal
+								["groups"] = {
+									i(116776),	-- Pale Thorngrazer
+								},
+							}),
+							i(115517),	-- Wrynn's Vanguard Tabard
+						},
 					}),
 					nh(85115, {	-- Dazzerian <Warspear Quartermaster>
-						i(116775),	-- Breezestrider Stallion MOUNT!
+						currency(823, { -- Apexis Crystal
+							i(116775),	-- Breezestrider Stallion
+						}),
 						i(115518),	-- Vol'jin's Spear Tabard
 					}),
 					na(82876, { -- Grand Marshal Tremblade

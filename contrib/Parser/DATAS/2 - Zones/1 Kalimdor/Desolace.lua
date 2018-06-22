@@ -119,9 +119,9 @@ _.Zones =
 					p(480), 	-- Topaz Shale Hatchling
 					qh(31870, {	-- Cassandra Kaboom
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					}),	
 					qh(31872, {	-- Merda Stronghoof

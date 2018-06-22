@@ -9,7 +9,7 @@ _.Achievements =
 			n(-9955, { -- General
 				["groups"] = {
 					ach(4478, { -- Looking For Multitudes
-						i(49912), -- Perky Pug PET!
+						i(49912), -- Perky Pug
 						ach(4477, { -- Looking For Many
 							title(137), -- the Patient
 						}),
@@ -135,7 +135,7 @@ _.Achievements =
 						crit(15),	-- Heroic: Gal'darah
 					}),
 					ach(2136, {	-- Glory of the Hero
-						i(44160),	-- Reins of the Red Proto-Drake MOUNT!
+						i(44160),	-- Reins of the Red Proto-Drake
 						crit(1),	-- On The Rocks
 						crit(2),	-- Split Personality
 						crit(3),	-- Intense Cold
@@ -212,8 +212,8 @@ _.Achievements =
 						crit(16),	-- Just Can't Get Enough (25 player)
 					}),
 					ach(12401, {	-- Glory of the Ulduar Raider
-						i(45802),	-- Reins of the Rusted Proto-Drake MOUNT!
-						i(45801),	-- Reins of the Ironbound Proto-Drake MOUNT!
+						i(45802),	-- Reins of the Rusted Proto-Drake
+						i(45801),	-- Reins of the Ironbound Proto-Drake
 						crit(1),	-- Orbit-uary
 						crit(2),	-- Stokin' the Furnace
 						crit(3),	-- Iron Dwarf, Medium Rare
@@ -229,7 +229,7 @@ _.Achievements =
 						crit(13),	-- One Light in the Darkness
 					}),
 					ach(4602, {	-- Glory of the Icecrown Raider (10 player)
-						i(51954),	-- Reins of the Bloodbathed Frostbrood Vanquisher MOUNT!
+						i(51954),	-- Reins of the Bloodbathed Frostbrood Vanquisher
 						crit(1),	-- Heroic: Storming the Citadel (10 player)
 						crit(2),	-- Heroic: The Plagueworks (10 player)
 						crit(3),	-- Heroic: The Crimson Hall (10 player)
@@ -248,7 +248,7 @@ _.Achievements =
 						crit(16),	-- Been Waiting a Long Time for This (10 player)
 					}),
 					ach(4603, {	-- Glory of the Icecrown Raider (25 player)
-						i(51955),	-- Reins of the Icebound Frostbrood Vanquisher MOUNT!
+						i(51955),	-- Reins of the Icebound Frostbrood Vanquisher
 						crit(1),	-- Heroic: Storming the Citadel (25 player)
 						crit(2),	-- Heroic: The Plagueworks (25 player)
 						crit(3),	-- Heroic: The Crimson Hall (25 player)
@@ -294,7 +294,7 @@ _.Achievements =
 						crit(12),	-- The Bastion of Twilight
 					}),
 					ach(4845, {	-- Glory of the Cataclysm Hero
-						i(62900),	-- Reins of the Volcanic Stone Drake MOUNT!
+						i(62900),	-- Reins of the Volcanic Stone Drake
 						crit(1),	-- Cataclysm Dungeon Hero
 						crit(2),	-- Crushing Bones and Cracking Skulls
 						crit(3),	-- Arrested Development
@@ -325,7 +325,7 @@ _.Achievements =
 						crit(28),	-- Don't Need to Break Eggs to Make an Omelet
 					}),
 					ach(4853, {	-- Glory of the Cataclysm Raider
-						i(62901),	-- Reins of the Drake of the East Wind MOUNT!
+						i(62901),	-- Reins of the Drake of the East Wind
 						crit(1),	-- Heroic: Magmaw
 						crit(2),	-- Heroic: Golem Council
 						crit(3),	-- Heroic: Maloriak
@@ -352,7 +352,7 @@ _.Achievements =
 						crit(24),	-- Four Play
 					}),
 					ach(5828, {	-- Glory of the Firelands Raider
-						i(69230),	-- Corrupted Egg of Millagazor MOUNT!
+						i(69230),	-- Corrupted Egg of Millagazor
 						crit(1),	-- Heroic: Beth'tilac
 						crit(2),	-- Heroic: Lord Rhyolith
 						crit(3),	-- Heroic: Shannox
@@ -367,7 +367,7 @@ _.Achievements =
 						crit(12),	-- Only the Penitent...
 					}),
 					ach(6169, {	-- Glory of the Dragon Soul Raider
-						i(77068),	-- Reins of the Twilight Harbinger MOUNT!
+						i(77068),	-- Reins of the Twilight Harbinger
 						crit(1),	-- Heroic: Morchok
 						crit(2),	-- Heroic: Warlord Zon'ozz
 						crit(3),	-- Heroic: Yor'sahj the Unsleeping
@@ -403,7 +403,7 @@ _.Achievements =
 						crit(6),	-- Sha of Fear (Normal or Heroic)
 					}),
 					ach(6927, {	-- Glory of the Pandaria Hero
-						i(87769),	-- Reins of the Crimson Cloud Serpent MOUNT!
+						i(87769),	-- Reins of the Crimson Cloud Serpent
 						crit(1),	-- Pandaria Dungeon Hero
 						crit(2),	-- Hydrophobia
 						crit(3),	-- Cleaning Up
@@ -434,7 +434,7 @@ _.Achievements =
 						crit(28),	-- Polyformic Acid Science
 					}),
 					ach(6932, {	-- Glory of the Pandaria Raider
-						i(87773),	-- Reins of the Heavenly Crimson Cloud Serpent MOUNT!
+						i(87773),	-- Reins of the Heavenly Crimson Cloud Serpent
 						crit(1),	-- Must Love Dogs
 						crit(2),	-- Anything You Can Do, I Can Do Better...
 						crit(3),	-- Sorry, Were You Looking for This?
@@ -466,7 +466,7 @@ _.Achievements =
 						crit(29),	-- Heroic: Lei Shi
 					}),
 					ach(8124, {	-- Glory of the Thundering Raider
-						i(93662),	-- Reins of the Armored Skyscreamer MOUNT!
+						i(93662),	-- Reins of the Armored Skyscreamer
 						crit(1),	-- Heroic: Jin'rokh the Breaker
 						crit(2),	-- Heroic: Horridon
 						crit(3),	-- Heroic: Council of Elders
@@ -492,7 +492,7 @@ _.Achievements =
 						crit(23),	-- A Complete Circuit
 					}),
 					ach(8454, {	-- Glory of the Orgrimmar Raider
-						i(104208),	-- Reins of Galakras MOUNT!
+						i(104208),	-- Reins of Galakras
 						crit(1),	-- No More Tears
 						crit(2),	-- Go Long
 						crit(3),	-- None Shall Pass
@@ -532,7 +532,7 @@ _.Achievements =
 						crit(10),	-- Warlord Blackhand (Blackrock Foundry)
 					}),
 					ach(9396, {	-- Glory of the Draenor Hero
-						i(116670),	-- Frostplains Battleboar MOUNT!
+						i(116670),	-- Frostplains Battleboar
 						crit(1),	-- Draenor Dungeon Hero
 						crit(2),	-- A Gift of Earth and Fire
 						crit(3),	-- Come With Me If You Want to Live
@@ -558,7 +558,7 @@ _.Achievements =
 						crit(23),	-- Dragonmaw? More Like Dragonfall!
 					}),
 					ach(8985, {	-- Glory of the Draenor Raider
-						i(116383),	-- Gorestrider Gronnling MOUNT!
+						i(116383),	-- Gorestrider Gronnling
 						crit(1),	-- Flame On!
 						crit(2),	-- Hurry Up, Maggot!
 						crit(3),	-- More Like Wrecked-us
@@ -578,7 +578,7 @@ _.Achievements =
 						crit(17),	-- Ashes, Ashes...
 					}),
 					ach(10149, {	-- Glory of the Hellfire Raider
-						i(127140),	-- Infernal Direwolf MOUNT!
+						i(127140),	-- Infernal Direwolf
 						crit(1),	-- Nearly Indestructible
 						crit(2),	-- Turning the Tide
 						crit(3),	-- Waves Came Crashing Down All Around
@@ -604,7 +604,7 @@ _.Achievements =
 						crit(8),	-- Heroic: Maw of Souls
 					}),
 					ach(11163, {	-- Glory of the Legion Hero
-						i(141217),	-- Reins of the Leyfeather Hippogryph MOUNT!
+						i(141217),	-- Reins of the Leyfeather Hippogryph
 						crit(1),	-- But You Say He's Just a Friend
 						crit(2),	-- Stay Salty
 						crit(3),	-- Ready for Raiding V
@@ -633,7 +633,7 @@ _.Achievements =
 						crit(26),	-- Dropping Some Eaves
 					}),
 					ach(11180, {	-- Glory of the Legion Raider
-						i(141216),	-- Defiled Reins MOUNT!
+						i(141216),	-- Defiled Reins
 						crit(1),	-- Buggy Fight
 						crit(2),	-- Webbing Crashers
 						crit(3),	-- Scare Bear
@@ -665,7 +665,7 @@ _.Achievements =
 						crit(9),	-- Grand Fin-ale
 					}),
 					ach(11987, {	-- Glory of the Argus Raider
-						i(152815),	-- Antoran Gloomhound MOUNT!
+						i(152815),	-- Antoran Gloomhound
 						crit(1),	-- Hard to Kill
 						crit(2),	-- Together We Stand
 						crit(3),	-- Worm-monger

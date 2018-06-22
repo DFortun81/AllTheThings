@@ -128,9 +128,9 @@ _.Zones =
 					p(713), 	-- Softshell Snapling
 					q(31955, { -- Grand Master Nishi
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					}),
 				}),
@@ -548,7 +548,7 @@ _.Zones =
 						i(81853),
 					}),
 					q(29944,  {  	-- Leaders Among Breeders
-						i(88375),  -- TOY! Turnip Punching Bag
+						i(88375),  -- Turnip Punching Bag
 					}),
 					q(30058,  {  	-- Mathallus!
 						i(88034),
@@ -686,7 +686,7 @@ _.Zones =
 						i(84339),
 					}),
 					q(29945,  {  	-- Yellow and Red Make Orange
-						i(88377), 		-- TOY! Turnip Paint "Gun"
+						i(88377), 		-- Turnip Paint "Gun"
 					}),
 				}),
 				n(-16, { 	-- Rares

@@ -249,8 +249,8 @@ _.Zones =
 						i(57317),
 					})),
 					qg(40578, q(25560, { -- Egg Wave
-						i(65662), -- PET! Gold Mini Jouster
-						i(65661), -- PET! Blue Mini Jouster
+						i(65662), -- Gold Mini Jouster
+						i(65661), -- Blue Mini Jouster
 					})),
 					q(29331, { -- Elemental Bonds: The Vow (QG unknown, possibly 54168)
 						i(71268),

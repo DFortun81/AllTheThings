@@ -16,18 +16,18 @@ _.Zones =
 					p(741), 	-- Silent Hedgehog
 					q(31957, { -- Grand Master Shu
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					}),
 					q(32439, { -- Flowing Pandaren Spirit
 						["groups"] = {
 							i(93147, { -- Pandaren Spirit Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
-								i(90173),	-- PET! Pandaren Water Spirit
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
+								i(90173),	-- Pandaren Water Spirit
 							})
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
@@ -280,7 +280,7 @@ _.Zones =
 						i(84036),
 					}),
 					q(31083,  {  	-- Promises of Gold
-						i(88417), -- TOY! Gokk'lok's Shell
+						i(88417), -- Gokk'lok's Shell
 					}),
 					q(31072,  {  	-- Rending Daggers
 						i(88131),

@@ -37,9 +37,9 @@ _.Zones =
 					p(424), 	-- Roach
 					qg(65651, qa(31726, { -- Eric Davidson
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					})),
 					qg(65651, qa(31781)),	-- Lindsay (DAILY)

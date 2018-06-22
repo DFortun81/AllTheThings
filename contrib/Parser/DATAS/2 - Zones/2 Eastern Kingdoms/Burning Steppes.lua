@@ -721,7 +721,7 @@ _.Zones =
 									i(64554),	-- Gor'Tesh's Boots
 									i(64553),	-- Flamefly Spaulders
 									i(64552),	-- Belly Rubbers
-									i(66080),	-- PET! Tiny Flamefly
+									i(66080),	-- Tiny Flamefly
 								},
 								["qg"] = 9177,	-- Oralius
 								["sourceQuests"] = { 28310 },	-- Morgan's Vigil
@@ -744,7 +744,7 @@ _.Zones =
 									i(64558),	-- Lava Boots
 									i(64557),	-- Flamefly Spaulders
 									i(64556),	-- Petting Gloves
-									i(66080),	-- PET! Tiny Flamefly
+									i(66080),	-- Tiny Flamefly
 								},
 								["qg"] = 10260,	-- Kibler
 								["sourceQuests"] = { 28442 },	-- Flame Crest

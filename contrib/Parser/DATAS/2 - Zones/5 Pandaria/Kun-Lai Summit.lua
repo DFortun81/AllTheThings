@@ -211,18 +211,18 @@ _.Zones =
 					p(731), 	-- Zooey Snake
 					q(31956, { 	-- Grand Master Yon
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					}),
 					q(32441, { 	-- Thundering Pandaren Spirit
 						["groups"] = {
 							i(93146, { -- Pandaren Spirit Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
-								i(92800),	-- PET! Pandaren Earth Spirit
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
+								i(92800),	-- Pandaren Earth Spirit
 							})
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
@@ -556,10 +556,10 @@ _.Zones =
 						i(82504),
 					}),
 					q(30599,  {  	-- A Monkey Idol
-						i(88385),  		-- TOY! Hozen Idol
+						i(88385),  		-- Hozen Idol
 					}),
 					qh(32399,  {  	-- Breath of Darkest Shadow
-						i(93386),  		-- MOUNT! Grand Wyvern
+						i(93386),  		-- Grand Wyvern
 					}),
 					q(30457,  { 	-- Call Out Their Leader
 						i(84537),
@@ -572,7 +572,7 @@ _.Zones =
 						i(90468),
 					}),
 					q(30991,  {  	-- Do a Barrel Roll!
-						i(88531),  		-- TOY! Lao Chin's Last Mug
+						i(88531),  		-- Lao Chin's Last Mug
 					}),
 					q(30468,  {  	-- Enraged Vengeance
 						i(84528),
@@ -586,7 +586,7 @@ _.Zones =
 						i(84536),
 					}),
 					q(30682,  {  	-- Holed Up
-						i(88579),  		-- TOY! Jin Warmkeg's Brew
+						i(88579),  		-- Jin Warmkeg's Brew
 					}),
 					q(30942,  {  	-- Make A Fighter Out of Me
 						i(82599),
@@ -665,7 +665,7 @@ _.Zones =
 						i(88062),
 					}),
 					q(30617,  {  	-- Roadside Assistance
-						i(88381),  		-- TOY! Silversage Incence
+						i(88381),  		-- Silversage Incence
 					}),
 					qa(30575,  {  	-- Round 'Em Up
 						i(84509),

@@ -1157,7 +1157,7 @@ _.Zones =
 						["groups"] = {
 							na(82459, { -- Honest Jim
 								["groups"] = {
-									i(113096), -- TOY! Bloodmane Charm
+									i(113096), -- Bloodmane Charm
 								},
 								["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
 							}),
@@ -1168,7 +1168,7 @@ _.Zones =
 						["groups"] = {
 							nh(84243, { -- Linny "The Skinny" Leadpockets
 								["groups"] = {
-									i(113096), -- TOY! Bloodmane Charm
+									i(113096), -- Bloodmane Charm
 								},
 								["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
 							}),	
@@ -1183,8 +1183,8 @@ _.Zones =
 					}),
 					n(87123, {	-- Vesharr
 						["groups"] = {
-							i(120050),	-- Veilwatcher Hatchling PET!
-							i(120051),	-- Kaliri Hatchling PET!
+							i(120050),	-- Veilwatcher Hatchling
+							i(120051),	-- Kaliri Hatchling
 						},
 						["description"] = "Items will be unavailable until you complete the pet battle daily quest 'Vesharr'. |r",
 					}),

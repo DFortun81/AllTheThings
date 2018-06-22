@@ -88,10 +88,10 @@ _.Achievements =
 					}),
 					ach(11189),	-- Variety is the Spice of Life
 					ach(10774, {	-- Hatchling of the Talon
-						i(139773),	-- Emerald Winds TOY!
+						i(139773),	-- Emerald Winds
 					}),
 					ach(11427, {	-- No Shellfish Endeavor
-						i(143660),	-- Mrgrglhjorn TOY!
+						i(143660),	-- Mrgrglhjorn
 						crit(1),	-- Now That's Just Clawful!
 						crit(2),	-- Oh, the Clawdacity!
 						crit(3),	-- Claws for Alarm!
@@ -136,7 +136,7 @@ _.Achievements =
 					}),
 					ach(10398),	-- Drum Circle (Highmountain)
 					ach(10626, {	-- Zoom! (Highmountain)
-						i(137298),	-- Zoon PET!
+						i(137298),	-- Zoon
 					}),
 					ach(11732, {	-- A Magnificent Contribution (Broken Shore)
 						ach(11731),	-- A Magic Contribution
@@ -186,7 +186,7 @@ _.Achievements =
 					}),
 					ach(12416),	-- The Total Package (Dalaran)
 					ach(12431, {	-- Post Haste
-						i(156721),	-- Mailemental PET!
+						i(156721),	-- Mailemental
 					}),
 					ach(12439, {	-- Priority Mail
 						title(372),	-- Postmaster

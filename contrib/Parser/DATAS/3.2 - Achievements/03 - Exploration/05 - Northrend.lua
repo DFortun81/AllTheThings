@@ -183,8 +183,8 @@ _.Achievements =
 						ach(2256),	-- Northern Exposure
 					}),
 					ach(1956, {	-- Higher Learning (Dalaran)
-						i(43824),	-- The Schools of Arcane Magic - Mastery TOY!
-						i(44738),	-- Kirin Tor Familiar PET!
+						i(43824),	-- The Schools of Arcane Magic - Mastery
+						i(44738),	-- Kirin Tor Familiar
 						crit(1),	-- The Schools of Arcane Magic - Introduction
 						crit(2),	-- The Schools of Arcane Magic - Abjuration
 						crit(3),	-- The Schools of Arcane Magic - Conjuration

@@ -76,7 +76,7 @@ _.Achievements =
 					ach(10413),	-- Instant Karma
 					ach(10411),	-- Helheim Hath No Fury
 					ach(10412, {	-- Poor Unfortunate Souls
-						i(140323),	-- Lagan PET!
+						i(140323),	-- Lagan
 					}),
 					ach(10813),	-- Mythic: The Arcway
 					ach(10776),	-- No Time to Waste

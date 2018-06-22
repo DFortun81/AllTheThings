@@ -291,7 +291,7 @@ _.Zones =
 					}),
 					qh(14392, {	-- Farewell, Minnow (awarded "The Best Apprentice" criteria)
 						["groups"] = {
-							i(53057),	-- TOY! Faded Wizard Hat
+							i(53057),	-- Faded Wizard Hat
 						},
 						["qg"] = 36676,	-- Azuregos
 						["sourceQuests"] = { 24467, 14261, 14297 },	-- Fade to Black, Ice Cold, Pro-liberation

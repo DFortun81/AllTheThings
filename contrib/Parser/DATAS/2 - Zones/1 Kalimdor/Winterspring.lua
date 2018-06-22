@@ -137,16 +137,16 @@ _.Zones =
 					desc(p(69), "Starts spawning December 21st. Stops spawning March 20th"), -- Snowy Owl
 					qg(66466, q(31897, {	-- Grand Master Trixxy (NON-DAILY version)
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					})),
 					qg(66466, q(31909, { 	-- Grand Master Trixxy (DAILY version)
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					})),
 					qg(66466, qh(31977)),	-- The Returning Champion

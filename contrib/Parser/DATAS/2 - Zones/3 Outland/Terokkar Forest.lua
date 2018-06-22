@@ -149,10 +149,10 @@ _.Zones =
 					q(11665,  {  -- Crocolisks in the City
 						["groups"] = {
 							i(35348,  { -- Bag of Fishing Treasures
-								i(35350),  -- PET! Chuck's Bucket
-								i(33818),  -- PET! Muckbreath's Bucket
-								i(35349),  -- PET! Snarly's Bucket
-								i(33816),  -- PET! Toothy's Bucket
+								i(35350),  -- Chuck's Bucket
+								i(33818),  -- Muckbreath's Bucket
+								i(35349),  -- Snarly's Bucket
+								i(33816),  -- Toothy's Bucket
 								i(33820),  -- Weather-Beaten Fishing Hat
 							}),
 						},	

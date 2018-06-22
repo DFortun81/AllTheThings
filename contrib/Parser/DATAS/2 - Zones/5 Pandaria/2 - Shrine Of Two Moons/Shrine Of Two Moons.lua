@@ -173,28 +173,28 @@ _.Zones =
 					q(32863, { -- What We've Been Training For
 						["groups"] = {
 							i(98095, {	-- Brawler's Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						},
 						["description"] = "Account-Wide Weekly Quest.|r",
 					}),
 					q(32603, { -- Beasts of Fable
 						["groups"] = {
-							i(94025),	-- PET! Red Panda
+							i(94025),	-- Red Panda
 						},
 						["description"] = "Account-Wide Quest.|r",
 					}),
 					q(32604, { -- Beasts of Fable Book I
 						["groups"] = {
 							i(94207, { -- Fabled Pandaren Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
-								i(94210),	-- PET! Mountain Panda
-								i(94209),	-- PET! Snowy Panda
-								i(94208),	-- PET! Sunfur Panda
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
+								i(94210),	-- Mountain Panda
+								i(94209),	-- Snowy Panda
+								i(94208),	-- Sunfur Panda
 							}),
 						},
 						["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
@@ -202,12 +202,12 @@ _.Zones =
 					q(32868, { -- Beasts of Fable Book II
 						["groups"] = {
 							i(94207, { -- Fabled Pandaren Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
-								i(94210),	-- PET! Mountain Panda
-								i(94209),	-- PET! Snowy Panda
-								i(94208),	-- PET! Sunfur Panda
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
+								i(94210),	-- Mountain Panda
+								i(94209),	-- Snowy Panda
+								i(94208),	-- Sunfur Panda
 							}),
 						},
 						["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
@@ -215,12 +215,12 @@ _.Zones =
 					q(32869, { -- Beasts of Fable Book III
 						["groups"] = {
 							i(94207, { -- Fabled Pandaren Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
-								i(94210),	-- PET! Mountain Panda
-								i(94209),	-- PET! Snowy Panda
-								i(94208),	-- PET! Sunfur Panda
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
+								i(94210),	-- Mountain Panda
+								i(94209),	-- Snowy Panda
+								i(94208),	-- Sunfur Panda
 							}),
 						},
 						["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",

@@ -107,7 +107,7 @@ _.Achievements =
 					ach(9428),	-- Calavera (Day of the Dead)
 					ach(3478, {	-- Pilgrim (Pilgrim's Bounty)
 						title(133),	-- the Pilgrim
-						i(44810),	-- Turkey Cage PET!
+						i(44810),	-- Turkey Cage
 						crit(1),	-- "FOOD FIGHT!"
 						crit(2),	-- Now We're Cookin'
 						crit(3),	-- Pilgrim's Paunch
@@ -133,7 +133,7 @@ _.Achievements =
 						crit(11),	-- A Frosty Shake
 					}),
 					ach(2144, {	-- What a Long, Strange Trip It's Been
-						i(44177),	-- Reins of the Violet Proto-Drake MOUNT!
+						i(44177),	-- Reins of the Violet Proto-Drake
 						crit(1),	-- To Honor One's Elders
 						crit(2),	-- Fool For Love
 						crit(3),	-- Noble Gardener

@@ -5,7 +5,7 @@ _.Zones =
 {
 	n(-48, { 	-- Stable Master
 		["groups"] = {
-			i(37460), -- Rope Pet Leash TOY!
+			i(37460), -- Rope Pet Leash
 		},
 		["description"] = "Any one of the 300+ Stable Masters out in the world can get you this item.",
 		["icon"] = "Interface\\Icons\\garrison_building_stables",

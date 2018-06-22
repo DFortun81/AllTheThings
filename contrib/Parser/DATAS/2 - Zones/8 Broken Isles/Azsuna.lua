@@ -177,13 +177,13 @@ _.Zones =
 						["groups"] = {
 							p(1977),  	-- Bloodgazer Hatchling
 							q(45008, { -- Bloodgazer Bonding
-								i(142494), -- TOY! Purple Blossom
+								i(142494), -- Purple Blossom
 							}),
 							q(45020, { -- Bloodgazer Reunion
-								i(137577), -- Mount! Predatory Bloodgazer
+								i(137577), -- Predatory Bloodgazer
 							}),
 						},
-						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling pet!|r",
+						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling|r",
 					}),	
 				}),
 				n(-169, { 	-- Emissary Quests
@@ -1503,7 +1503,7 @@ _.Zones =
 							}),
 							q(37857), -- Runas Knows the Way
 							q(37959,  {  	-- The Hunger Returns
-								i(138876), 		-- TOY! Runas' Crystal Grinder
+								i(138876), 		-- Runas' Crystal Grinder
 							}),
 							q(37960), -- Leyline Abuse
 							q(37860), -- You Scratch My Back...
@@ -1529,7 +1529,7 @@ _.Zones =
 								i(132917),
 							}),
 							q(38015,  {  	-- On the Brink
-								i(129178),  	-- PET! Emmigosa
+								i(129178),  	-- Emmigosa
 							}),	
 							q(42567), -- Cursed to Wither
 							q(42756), -- Hunger's End
@@ -1564,7 +1564,7 @@ _.Zones =
 							q(37467), -- The Walk of Shame
 							q(37468), -- Into the Academy
 							q(37736,  {  	-- Dressing With Class
-								i(138873),  	-- TOY! Mystical Frosh Hat
+								i(138873),  	-- Mystical Frosh Hat
 							}),
 							q(37678,  {  	-- Hit the Books
 								i(138843),
@@ -1733,7 +1733,7 @@ _.Zones =
 							q(38460), -- Let's Make A Deal
 							q(38232), -- Minion! Kill Them!
 							q(38237,  {  	-- This IS In My Contract
-								i(138878), 		-- TOY! Copy of Daglop's Contract
+								i(138878), 		-- Copy of Daglop's Contract
 							}),
 						}),
 						sz(10665,6, { -- The Lost Orchard

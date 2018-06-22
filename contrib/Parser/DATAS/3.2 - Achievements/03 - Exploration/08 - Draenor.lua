@@ -9,7 +9,7 @@ _.Achievements =
 			n(-9981, { -- Draenor
 				["groups"] = {
 					ach(10018, {	-- Draenor Pathfinder
-						i(128706),	-- Soaring Skyterror MOUNT!
+						i(128706),	-- Soaring Skyterror
 						crit(1),	-- Draenor Explorer
 						crit(2),	-- Loremaster of Draenor
 						crit(3),	-- Securing Draenor
