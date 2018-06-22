@@ -288,7 +288,7 @@ _.Zones =
 					qg(47341, q(28288, {	-- Open Their Eyes
 						i(65278),
 						i(65298),
-						i(133998),  -- TOY! Rainbow Generator
+						i(133998),  -- Rainbow Generator
 					})),
 --[[					
 					qg(48127, qh(28380)),	-- Pikwik in Peril

@@ -41,10 +41,10 @@ _.Zones =
 					ach(10052, { 	-- Tiny Terrors in Tanaan
 						["groups"] = {
 							i(127751, {	-- Fel-Touched Pet Supplies
-								i(127753),	-- PET! Nightmare Bell
-								i(127754),	-- PET! Periwinkle Calf
-								i(118105),	-- PET! Seaborne Spore
-								i(118101),	-- PET! Zangar Spore
+								i(127753),	-- Nightmare Bell
+								i(127754),	-- Periwinkle Calf
+								i(118105),	-- Seaborne Spore
+								i(118101),	-- Zangar Spore
 							}),
 						},
 						["description"] = "Fel-Touched Pet Supplies is the reward for defeating any of the Tiny Terrors in Tanaan. You can defeat each Tiny Terror once per character per day.|r",
@@ -857,91 +857,104 @@ _.Zones =
 				}),
 				n(-2, {	 -- Vendors
 					n(95424, {	-- Dawn-Seeker Krisek <Order of the Awakened>
-						i(128478),	-- Blazing Firehawk PET!
-						i(128441, { -- Contract: Solar Priest Vayx
-							["groups"] = {
-								follower(582),  -- Solar Priest Vayx
-							},
-						}),
-						i(128502),	-- Hunter's Seeking Crystal
-						i(128503),	-- Master Hunter's Seeking Crystal
-						i(128450),	-- Order of the Awakened
-						i(123974),	-- Reins of the Corrupted Dreadwing
-						i(122283),	-- Rukhmar's Sacred Memory
-						a(i(128487)),	-- Ship: The Awakener
-						h(i(128488)),	-- Ship: The Awakener
+						["groups"] = {
+							currency(823, { -- Apexis Crystals
+								["groups"] = {
+									i(128478),	-- Blazing Firehawk
+									i(128441, { -- Contract: Solar Priest Vayx
+										["groups"] = {
+											follower(582),  -- Solar Priest Vayx
+										},
+									}),
+									i(123974),	-- Reins of the Corrupted Dreadwing
+									i(122283),	-- Rukhmar's Sacred Memory
+								},
+							}),
+							i(128502, {	-- Hunter's Seeking Crystal
+								i(128503),	-- Master Hunter's Seeking Crystal
+							}),
+							i(128450),	-- Order of the Awakened Tabard
+							a(i(128487)),	-- Ship: The Awakener
+							h(i(128488)),	-- Ship: The Awakener
+						},
 					}),
 					n(96130, {	-- Ravenspeaker Thelnaas <Order of the Awakened>
-						i(124562, {	-- Baleful Armament	
-							i(124627),	-- Baleful Dagger - Rogue
-							i(124628),	-- Baleful Greataxe - Rogue, Shaman, Monk, Demon Hunter
-							i(124625),	-- Baleful Greatsword - Paladin, Warrior, Death Knight
-							i(124629),	-- Baleful Polearm - Druid, Hunter, Monk
-							i(124626),	-- Baleful Rifle - Hunter
-							i(124631),	-- Baleful Scepter - Paladin, Druid, Priest, Shaman, Monk
-							i(124630),	-- Baleful Spire - Mage, Druid, Priest, Shaman, Warlock, Monk
-							i(124624),	-- Baleful Sword - Paladin, Warrior, Death Knight
-						}),		
-						i(124554, {	-- Baleful Hood	
-							i(124579),	-- Felcast Hood
-							i(124580),	-- Bladefang Hood
-							i(124581),	-- Axeclaw Helm
-							i(124582),	-- Felbane Greathelm
-						}),		
-						i(124556, {	-- Baleful Spaulders	
-							i(124587),	-- Felcast Mantle
-							i(128349),	-- Felcast Mantle [Warforged]
-							i(124588),	-- Bladefang Spaulders
-							i(128350),	-- Bladefang Spaulders [Warforged]
-							i(124589),	-- Axeclaw Spaulders
-							i(128351),	-- Axeclaw Spaulders [Warforged]
-							i(124590),	-- Felbane Shoulderguard
-							i(128352),	-- Felbane Shoulderguard [Warforged]
-						}),		
-						i(124560, {	-- Baleful Cloak	
-							i(124613),	-- Marshwater Cloak
-							i(124616),	-- Marshwater Cloak
-							i(124614),	-- Marshwater Mantle
-							i(124615),	-- Shadowthrash Cloak
-							i(124618),	-- Unfailing Cloak
-							i(124617),	-- Unfailing Mantle
-						}),		
-						i(124551, {	-- Baleful Tunic	
-							i(124570),	-- Felcast Robes
-							i(124567),	-- Bladefang Chestguard
-							i(124568),	-- Axeclaw Chestguard
-							i(124569),	-- Felbane Breastplate
-						}),		
-						i(124550, {	-- Baleful Bracers	
-							i(124563),	-- Felcast Bracers
-							i(124564),	-- Bladefang Bracers
-							i(124565),	-- Axeclaw Bracers
-							i(124566),	-- Felbane Bracers
-						}),		
-						i(124553, {	-- Baleful Gauntlets	
-							i(124575),	-- Felcast Gloves
-							i(124576),	-- Bladefang Gauntlets
-							i(124577),	-- Axeclaw Gauntlets
-							i(124578),	-- Felbane Gauntlets
-						}),		
-						i(124557, {	-- Baleful Girdle	
-							i(124591),	-- Felcast Cord
-							i(124592),	-- Bladefang Belt
-							i(124593),	-- Axeclaw Belt
-							i(124594),	-- Felbane Girdle
-						}),		
-						i(124555, {	-- Baleful Leggings	
-							i(124583),	-- Felcast Trousers
-							i(124584),	-- Bladefang Legguards
-							i(124585),	-- Axeclaw Legguards
-							i(124586),	-- Felbane Legplates
-						}),		
-						i(124552, {	-- Baleful Treads	
-							i(124571),	-- Felcast Sandles
-							i(124572),	-- Bladefang Boots
-							i(124573),	-- Axeclaw Boots
-							i(124574),	-- Felbane Greaves
-						}),		
+						["groups"] = {
+							currency(823, { -- Apexis Crystals
+								["groups"] = {
+									i(124562, {	-- Baleful Armament	
+										i(124627),	-- Baleful Dagger - Rogue
+										i(124628),	-- Baleful Greataxe - Rogue, Shaman, Monk, Demon Hunter
+										i(124625),	-- Baleful Greatsword - Paladin, Warrior, Death Knight
+										i(124629),	-- Baleful Polearm - Druid, Hunter, Monk
+										i(124626),	-- Baleful Rifle - Hunter
+										i(124631),	-- Baleful Scepter - Paladin, Druid, Priest, Shaman, Monk
+										i(124630),	-- Baleful Spire - Mage, Druid, Priest, Shaman, Warlock, Monk
+										i(124624),	-- Baleful Sword - Paladin, Warrior, Death Knight
+									}),		
+									i(124554, {	-- Baleful Hood	
+										i(124579),	-- Felcast Hood
+										i(124580),	-- Bladefang Hood
+										i(124581),	-- Axeclaw Helm
+										i(124582),	-- Felbane Greathelm
+									}),		
+									i(124556, {	-- Baleful Spaulders	
+										i(124587),	-- Felcast Mantle
+										i(128349),	-- Felcast Mantle [Warforged]
+										i(124588),	-- Bladefang Spaulders
+										i(128350),	-- Bladefang Spaulders [Warforged]
+										i(124589),	-- Axeclaw Spaulders
+										i(128351),	-- Axeclaw Spaulders [Warforged]
+										i(124590),	-- Felbane Shoulderguard
+										i(128352),	-- Felbane Shoulderguard [Warforged]
+									}),		
+									i(124560, {	-- Baleful Cloak	
+										i(124613),	-- Marshwater Cloak
+										i(124616),	-- Marshwater Cloak
+										i(124614),	-- Marshwater Mantle
+										i(124615),	-- Shadowthrash Cloak
+										i(124618),	-- Unfailing Cloak
+										i(124617),	-- Unfailing Mantle
+									}),		
+									i(124551, {	-- Baleful Tunic	
+										i(124570),	-- Felcast Robes
+										i(124567),	-- Bladefang Chestguard
+										i(124568),	-- Axeclaw Chestguard
+										i(124569),	-- Felbane Breastplate
+									}),		
+									i(124550, {	-- Baleful Bracers	
+										i(124563),	-- Felcast Bracers
+										i(124564),	-- Bladefang Bracers
+										i(124565),	-- Axeclaw Bracers
+										i(124566),	-- Felbane Bracers
+									}),		
+									i(124553, {	-- Baleful Gauntlets	
+										i(124575),	-- Felcast Gloves
+										i(124576),	-- Bladefang Gauntlets
+										i(124577),	-- Axeclaw Gauntlets
+										i(124578),	-- Felbane Gauntlets
+									}),		
+									i(124557, {	-- Baleful Girdle	
+										i(124591),	-- Felcast Cord
+										i(124592),	-- Bladefang Belt
+										i(124593),	-- Axeclaw Belt
+										i(124594),	-- Felbane Girdle
+									}),		
+									i(124555, {	-- Baleful Leggings	
+										i(124583),	-- Felcast Trousers
+										i(124584),	-- Bladefang Legguards
+										i(124585),	-- Axeclaw Legguards
+										i(124586),	-- Felbane Legplates
+									}),		
+									i(124552, {	-- Baleful Treads	
+										i(124571),	-- Felcast Sandles
+										i(124572),	-- Bladefang Boots
+										i(124573),	-- Axeclaw Boots
+										i(124574),	-- Felbane Greaves
+									}),		
+								},
+							}),
+						},
 					}),
 					nh(96014, {	-- Shadow Hunter Denjai <Vol'jin's Headhunters>
 						i(128472, {	-- Battlegear of the Frostwolves
@@ -1033,9 +1046,9 @@ _.Zones =
 					n(92805, {	-- Z'tenga the Walker <Saberstalker Quartermaster>
 						i(124099, { -- Blackfang Claw
 							i(128449),	-- Saberstalkers Tabard
-							i(116671),	-- Wild Goretusk MOUNT!
-							i(128481),	-- Bristling Hellboar MOUNT!
-							i(128477),	-- Savage Cub PET!
+							i(116671),	-- Wild Goretusk
+							i(128481),	-- Bristling Hellboar
+							i(128477),	-- Savage Cub
 							i(128439, { -- Contract: Pallas
 								follower(580), -- Pallas
 							}),

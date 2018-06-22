@@ -40,7 +40,7 @@ _.Achievements =
 						faction(1271), -- Order of the Cloud Serpent
 					}),
 					a(ach(6828, {	-- Pandaren Ambassador (Alliance)
-						a(i(89785)),	-- Pandaren Kite String MOUNT!
+						a(i(89785)),	-- Pandaren Kite String
 						faction(1269), -- Golden Lotus
 						faction(1341), -- The August Celestials
 						faction(1270), -- Shado-Pan
@@ -52,7 +52,7 @@ _.Achievements =
 						faction(1353), -- Tushui Pandaren
 					})),
 					h(ach(6827, {	-- Pandaren Ambassador (Horde)
-						h(i(81559)),	-- Pandaren Kite String MOUNT!
+						h(i(81559)),	-- Pandaren Kite String
 						faction(1269), -- Golden Lotus
 						faction(1341), -- The August Celestials
 						faction(1270), -- Shado-Pan

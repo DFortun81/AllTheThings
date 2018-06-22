@@ -696,7 +696,7 @@ _.Zones =
 								},
 								["description"] = "This beacon is found in Feralas.",
 							}),
-							i(10398), -- PET! Mechanical Chicken
+							i(10398), -- Mechanical Chicken
 						},
 						["description"] = "Must have completed 'Rescue OOX/FE!' 'Rescue OOX 17/TN!' and 'Rescue OOX-09/HL!'"
 					})),

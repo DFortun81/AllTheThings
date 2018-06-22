@@ -337,9 +337,9 @@ _.Zones =
 					}),
 					qg(66126, qh(31813, { -- Dagra the Fierce
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					})),
 					desc(qg(63061, qh(31571)), "This quest is part of a chain initiated by learning Battle Pet Training."),	-- Learning the Ropes

@@ -165,13 +165,13 @@ _.Zones =
 						["groups"] = {
 							p(1975), 	-- Direbeak Hatchling
 							q(44982, { -- Direbeak Bonding
-								i(142495), -- TOY! Fake Teeth
+								i(142495), -- Fake Teeth
 							}),
 							q(44988, { -- Direbeak Reunion
-								i(137579), -- Mount! Brilliant Direbeak
+								i(137579), -- Brilliant Direbeak
 							}),
 						},
-						["description"] = "1. Buy Pungent Vrykul Gamalost from Steward Dayton in Stormheim.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy new Direbeak Hatchling pet!|r",
+						["description"] = "1. Buy Pungent Vrykul Gamalost from Steward Dayton in Stormheim.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy new Direbeak Hatchling|r",
 					}),
 				}),
 				n(-169, { -- Emissary Quests
@@ -1049,7 +1049,7 @@ _.Zones =
 						}),
 						--I don't know where these quests belong. My Horde toons haven't done anything in Legion yet.
 						qh(38317,  {  -- Masters of Disguise -  listed on Wowhead as neutral, but turns in to a Horde NPC
-							i(129093), -- TOY! Ravenbear Disguise
+							i(129093), -- Ravenbear Disguise
 						}),
 						qh(38358,  {  -- Pump it Up
 							i(134554),
@@ -1442,9 +1442,9 @@ _.Zones =
 						i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
 					}),
 					n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
-						i(136920), -- PET! Sunborn Val'kyr
-						i(129149), -- TOY! Death's Door Charm
-						i(129367), -- TOY! Vrykul Toy Boat Kit
+						i(136920), -- Sunborn Val'kyr
+						i(129149), -- Death's Door Charm
+						i(129367), -- Vrykul Toy Boat Kit
 						i(139598), -- Legplates of Forgotten Myth
 						i(139602), -- Valarjar Runepriest's Vesture
 						i(140579), -- Valarjar Tabard

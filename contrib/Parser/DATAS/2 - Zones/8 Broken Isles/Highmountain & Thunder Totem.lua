@@ -166,19 +166,19 @@ _.Zones =
 					p(379), 	-- Squirrel
 					p(1590), 	-- Swamplighter Firefly
 					ach(10626, { 	-- Zoom!
-						i(137298), 		-- PET! Zoom
+						i(137298), 		-- Zoom
 					}),
 					n(115737, {	-- Orphaned Snowfeather
 						["groups"] = {
 							p(1974),  	-- Snowfeather Hatchling
 							q(44959, { -- Snowfeather Bonding
-								i(142497), -- TOY! Tiny Pack
+								i(142497), -- Tiny Pack
 							}),
 							q(44969, { -- Snowfeather Reunion
-								i(137578), -- Mount! Snowfeather Hunter
+								i(137578), -- Snowfeather Hunter
 							}),
 						},
-						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling pet!|r",
+						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",
 					}),	
 				}),
 				n(-169, { 	-- Emissary Quests
@@ -1056,7 +1056,7 @@ _.Zones =
 								q(39670),	-- Critter Scatter Shot
 								q(40000),	-- A True Hunter
 								q(39656,  {  	-- Wolf Pack Attack
-									i(131933), 		-- TOY! Critter Hand Cannon
+									i(131933), 		-- Critter Hand Cannon
 								}),	
 								q(39417),	-- Rating Razik
 							}),
@@ -1081,7 +1081,7 @@ _.Zones =
 								q(40069),	-- Fledgling Worm Guts
 								q(42425),	-- Going Down, Going Up
 								q(39305,  {  	-- Empty Nest
-									i(129277), 		-- PET! Skyhorn Nestling
+									i(129277), 		-- Skyhorn Nestling
 								}),
 							}),
 							sz(10667,1, { -- Bloodhunt Highlands
@@ -1628,9 +1628,9 @@ _.Zones =
 						}),
 					}),
 					n(106902, {	-- Ransa Greyfeather <Highmountain Emissary>
-						i(136919), -- PET! Baby Elderhorn
-						i(131812), -- TOY! Darkshard Fragment
-						i(131814), -- TOY! Whitewater Carp
+						i(136919), -- Baby Elderhorn
+						i(131812), -- Darkshard Fragment
+						i(131814), -- Whitewater Carp
 						i(139601), -- Harpy-Hunter's Gloves
 						i(139597), -- Mountainforged Chain Hauberk
 						i(140576), -- Tabard of the Hightmountain

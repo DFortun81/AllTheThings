@@ -100,40 +100,40 @@ _.Achievements =
 					})),
 					ach(6332),	-- That Rabbit's Dynamite!
 					ach(9252, {	-- Brood of Alysrazor (50)
-						i(116115),	-- Blazing Wings TOY!
+						i(116115),	-- Blazing Wings
 						ach(9251),	-- Ringmaster (25)
 						ach(9250),	-- Flying High (10)
 					}),
 					ach(9885, {	-- Ace Tonk Commander
-						i(122122),	-- Darkmoon Tonk Controller TOY!
+						i(122122),	-- Darkmoon Tonk Controller
 					}),
 					ach(9894, {	-- Triumphant Turtle Tossing
-						i(122123),	-- Darkmoon Ring-Flinger TOY!
+						i(122123),	-- Darkmoon Ring-Flinger
 					}),
 					ach(9983, {	-- That's Whack!
-						i(123862),	-- Hogs' Studded Collar PET!
+						i(123862),	-- Hogs' Studded Collar
 					}),
 					ach(9755),	-- Darkmoon Race Enthusiast
 					ach(9761, {	-- Darkmoon Racer Roadhog (11 tolls)
-						i(122129),	-- Fire-Eater's Vial TOY!
+						i(122129),	-- Fire-Eater's Vial
 						ach(9760),	-- Darkmoon Racer Leadfoot (15 tolls)
 						ach(9759),	-- Darkmoon Racer Jockey (20 tolls)
 						ach(9756),	-- Darkmoon Racer Novice (25 tolls)
 					}),
 					ach(9764, {	-- Rocketeer: Gold (11 tolls)
-						i(122119),	-- Everlasting Darkmoon Firework TOY!
+						i(122119),	-- Everlasting Darkmoon Firework
 						ach(9766),	-- Rocketeer: Silver (15 tolls)
 						ach(9769),	-- Rocketeer: Bronze (20 tolls)
 						ach(9770),	-- Blast Off! (25 tolls)
 					}),
 					ach(9792, {	-- Wanderluster: Gold (11 tolls)
-						i(122126),	-- Attraction Sign TOY!
+						i(122126),	-- Attraction Sign
 						ach(9790),	-- Wanderluster: Silver (15 tolls)
 						ach(9787),	-- Wanderluster: Bronze (20 tolls)
 						ach(9786),	-- Wayfarer (25 tolls)
 					}),
 					ach(9785, {	-- Powermonger: Gold (11 tolls)
-						i(122120),	-- Gaze of the Darkmoon TOY!
+						i(122120),	-- Gaze of the Darkmoon
 						ach(9783),	-- Powermonger: Silver (15 tolls)
 						ach(9781),	-- Powermonger: Bronze (20 tolls)
 						ach(9780),	-- Go-Getter (25 tolls)
@@ -146,13 +146,13 @@ _.Achievements =
 						ach(9793),	-- Big Race Enthusiast (40 tolls)
 					}),
 					ach(9805, {	-- Big Rocketeer: Gold (20 tolls)
-						i(122125),	-- Race MiniZep Controller PET!
+						i(122125),	-- Race MiniZep Controller
 						ach(9803),	-- Big Rocketeer: Silver (25 tolls)
 						ach(9801),	-- Big Rocketeer: Bronze (30 tolls)
 						ach(9800),	-- Rocket Man (40 tolls)
 					}),
 					ach(9811, {	-- Big Wanderluster: Gold (20 tolls)
-						i(122121),	-- Darkmoon Gazer TOY!
+						i(122121),	-- Darkmoon Gazer
 						ach(9809),	-- Big Wanderluster: Silver (25 tolls)
 						ach(9807),	-- Big Wanderluster: Bronze (30 tolls)
 						ach(9806),	-- Vagabond (40 tolls)

@@ -803,68 +803,68 @@ _.Zones =
 						qh(32009),	-- Varzok
 						qh(31812, {	-- Zunta, The Pet Tamer
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						}),
 						qh(31813, { -- Dagra the Fierce
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						}),
 						qh(31814, { -- Analynn
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						}),
 						qh(31815, { -- Zonya the Sadist
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						}),
 						qh(31817, { -- Merda Stronghoof
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						}),
 						qh(31870, { -- Cassandra Kaboom
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						}),
 						qh(31918),  -- A Tamer's Homecoming
 						qg(63626, qh(31891, { -- Battle Pet Tamers: Kalimdor
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						})),
 						qh(31909, { -- Grand Master Trixxy
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						}),	
 					})),
 					qg(63626, qh(31903, { -- Battle Pet Tamers: Eastern Kingdoms
 						["groups"] = {
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						},
 						["description"] = "Account-Wide Quest.|r",
@@ -872,9 +872,9 @@ _.Zones =
 					qg(63626, qh(31921, { -- Battle Pet Tamers: Outland
 						["groups"] = {
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						},
 						["description"] = "Account-Wide Quest.|r",
@@ -882,9 +882,9 @@ _.Zones =
 					qg(63626, qh(31929, { -- Battle Pet Tamers: Northrend
 						["groups"] = {
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						},
 						["description"] = "Account-Wide Quest.|r",
@@ -892,9 +892,9 @@ _.Zones =
 					qg(63626, qh(31967, { -- Battle Pet Tamers: Cataclysm
 						["groups"] = {
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						},
 						["description"] = "Account-Wide Quest.|r",
@@ -902,9 +902,9 @@ _.Zones =
 					qg(63626, qh(31952, { -- Battle Pet Tamers: Pandaria
 						["groups"] = {
 							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						},
 						["description"] = "Account-Wide Quest.|r",
@@ -912,9 +912,9 @@ _.Zones =
 					q(32863, { -- What We've Been Training For
 						["groups"] = {
 							i(98095, {	-- Brawler's Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
 							}),
 						},
 						["description"] = "Account-Wide Weekly Quest.|r",

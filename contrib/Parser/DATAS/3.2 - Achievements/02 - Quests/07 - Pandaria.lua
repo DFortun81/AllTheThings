@@ -241,7 +241,7 @@ _.Achievements =
 						crit(2),	-- Complete The Thunder Below without taking any damage.
 					}),
 					a(ach(7928, {	-- Operation: Shieldwall Campaign
-						i(93385),	-- Grand Gryphon MOUNT!
+						i(93385),	-- Grand Gryphon
 						crit(1),	-- Lion's Landing
 						crit(2),	-- The Man With a Thousand Faces
 						crit(3),	-- The Voice of the Gods

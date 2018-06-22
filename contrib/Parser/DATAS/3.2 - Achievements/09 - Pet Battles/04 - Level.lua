@@ -20,7 +20,7 @@ _.Achievements =
 						ach(6579),	-- Rookie Pet Group (15)
 					}),
 					ach(6582, {	-- Pro Pet Mob (75)
-						i(88147),	-- Singing Cricket Cage PET!
+						i(88147),	-- Singing Cricket Cage
 						ach(6581),	-- Pro Pet Crew (30)
 						ach(6578),	-- Pro Pet Group (15)
 					}),

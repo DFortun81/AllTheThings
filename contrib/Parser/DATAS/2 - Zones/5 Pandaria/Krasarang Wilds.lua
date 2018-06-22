@@ -29,9 +29,9 @@ _.Zones =
 					}),
 					q(31954, { 	-- Grand Master Mo'ruk
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					}),
 				}),
@@ -379,7 +379,7 @@ _.Zones =
 						i(81502),
 					}),
 					q(30169, { 		-- Raid Leader Slovan
-						i(88387), 		-- TOY! Shushen's Spittoon
+						i(88387), 		-- Shushen's Spittoon
 					}),
 					qa(30355,  {  	-- Re-Reclaim
 						i(81503),
@@ -440,7 +440,7 @@ _.Zones =
 						i(81541),
 					}),
 					qa(32455,  {  	-- The Silence
-						i(93385), 		-- MOUNT! Grand Gryphon
+						i(93385), 		-- Grand Gryphon
 					}),
 					qa(30357,  {  	-- The Stoneplow Convoy
 						["groups"] = {
@@ -497,7 +497,7 @@ _.Zones =
 						i(88035),
 					}),
 					q(30090,  {  	-- Zhu's Despair
-						i(88580),  		-- TOY! Ken-Ken's Mask
+						i(88580),  		-- Ken-Ken's Mask
 					}),
 				}),
 				n(-16, { 	-- Rares
@@ -820,7 +820,7 @@ _.Zones =
 						i(85447),	-- Tiny Goldfish Pet
 						i(85500),	-- Angler's Fishing Raft Toy
 						i(86596),	-- Nat's Fishing Chair Toy
-						i(107950),	-- Bipsi's Bobbing Berg -- Mage only! Also NOT A TOY! yet!
+						i(107950),	-- Bipsi's Bobbing Berg -- Mage only! Also NOT A yet!
 						i(84660),	-- Pandaren Fishing Pole -- NOT MOGGABLE
 						i(84661),	-- Dragon Fishing Pole -- NOT MOGGABLE
 						i(88710),	-- Nat's Hat -- NOT MOGGABLE

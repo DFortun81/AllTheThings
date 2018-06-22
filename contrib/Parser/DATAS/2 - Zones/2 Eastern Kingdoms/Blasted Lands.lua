@@ -296,7 +296,7 @@ _.Zones =
 					qg(42264, qa(25713)),	-- Remove Their Arms
 --]]					
 					qg(84929, qa(36941, {	-- Report to the King
-						i(111660),	-- PET! Iron Starlette
+						i(111660),	-- Iron Starlette
 					})),
 --[[					
 					qg(41134, qh(25681)),	-- Some People Just Need Killing
@@ -388,7 +388,7 @@ _.Zones =
 					qg(82851, qh(35746)),	-- Under Siege (secondary QG ID 84928)
 --]]					
 					qg(84928, qh(36940, {	-- Warning Orgrimmar
-						i(111600),	-- PET! Iron Starlette
+						i(111600),	-- Iron Starlette
 					})),
 --					qg(5393, qa(25714)),	-- Watcher Mahar Ba (add'l QG 9540)
 					qg(16841, qa(26174, { -- Watching Our Back

@@ -281,7 +281,25 @@ _.Zones =
 						},
 						["description"] = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",		
 					}),
+					n(128758, { -- Crafticus Mindbender
+						["groups"] = {
+							currency(823, { -- Apexis Crystal
+								["groups"] = {
+									i(116776),	-- Pale Thorngrazer
+								},
+							}),
+							i(115517),	-- Wrynn's Vanguard Tabard
+						},
+					}),
 					n(92501, {	-- Dawn-Seeker Kasrek <Apexis Belt Trader>
+						currency(823, { -- Apexis Crystal
+							["groups"] = {
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									follower(462),	-- Dawnseeker Rukaryx
+								}),
+								i(116768),	-- Mosshide Riverwallow
+							},
+						}),
 						i(122320),	-- Ethereal Windcrystal Cord
 						i(122321),	-- Ethereal Crystalhide Belt
 						i(122322),	-- Ethereal Crystal-Leaf Chain
@@ -298,9 +316,16 @@ _.Zones =
 						i(115379),	-- Crystalhide Belt
 						i(115380),	-- Crystal-Leaf Chain
 						i(115381),	-- Crystal-Plated Greatbelt
-						i(116768),	-- Mosshide Riverwallow MOUNT!
 					}),
 					n(86391, {	-- Dawn-Seeker Krek <Apexis Leggings Trader>
+						currency(823, { -- Apexis Crystal
+							["groups"] = {
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									follower(462),	-- Dawnseeker Rukaryx
+								}),
+								i(116768),	-- Mosshide Riverwallow
+							},
+						}),
 						i(122316),	-- Ethereal Windcrystal Leggings
 						i(122317),	-- Ethereal Crystalhide Legguards
 						i(122318),	-- Ethereal Crystal-Leaf Legguards
@@ -317,9 +342,16 @@ _.Zones =
 						i(115375),	-- Crystalhide Legguards
 						i(115376),	-- Crystal-Leaf Legguards
 						i(115377),	-- Crystal-Plated Legplates
-						i(116768),	-- Mosshide Riverwallow MOUNT!
 					}),
 					n(86387, {	-- Dawn-Seeker Rilak <Apexis Helm Trader>
+						currency(823, { -- Apexis Crystal
+							["groups"] = {
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									follower(462),	-- Dawnseeker Rukaryx
+								}),
+								i(116768),	-- Mosshide Riverwallow
+							},
+						}),
 						i(122308),	-- Ethereal Windcrystal Hood
 						i(122309),	-- Ethereal Crystalhide Cowl
 						i(122310),	-- Ethereal Crystal-Leaf Helm
@@ -336,9 +368,16 @@ _.Zones =
 						i(116954),	-- Crystalhide Cowl
 						i(116955),	-- Crystal-Leaf Helm
 						i(116956),	-- Crystal-Plated Greathelm
-						i(116768),	-- Mosshide Riverwallow MOUNT!
 					}),
 					n(91321, {	-- Dawn-Seeker Skelak <Apexis Bracer Trader>
+						currency(823, { -- Apexis Crystal
+							["groups"] = {
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									follower(462),	-- Dawnseeker Rukaryx
+								}),
+								i(116768),	-- Mosshide Riverwallow
+							},
+						}),
 						i(122312),	-- Ethereal Windcrystal Bracers
 						i(122313),	-- Ethereal Crystalhide Bracers
 						i(122314),	-- Ethereal Crystal-Leaf Bracers
@@ -355,9 +394,16 @@ _.Zones =
 						i(116966),	-- Crystalhide Bracers
 						i(116967),	-- Crystal-Leaf Bracers
 						i(116968),	-- Crystal-Plated Bracers
-						i(116768),	-- Mosshide Riverwallow MOUNT!
 					}),
 					n(86390, {	-- Dawn-Seeker Vallar <Apexis Glove Trader>
+						currency(823, { -- Apexis Crystal
+							["groups"] = {
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									follower(462),	-- Dawnseeker Rukaryx
+								}),
+								i(116768),	-- Mosshide Riverwallow
+							},
+						}),
 						i(122324),	-- Ethereal Windcrystal Wraps
 						i(122325),	-- Ethereal Crystalhide Grips
 						i(122326),	-- Ethereal Crystal-Leaf Gloves
@@ -374,9 +420,16 @@ _.Zones =
 						i(116944),	-- Crystalhide Grips
 						i(116945),	-- Crystal-Leaf Gloves
 						i(116946),	-- Crystal-Plated Gauntlets
-						i(116768),	-- Mosshide Riverwallow MOUNT!
 					}),
 					n(86389, {	-- Dawn-Seeker Verroak <Apexis Cloak Trader>
+						currency(823, { -- Apexis Crystal
+							["groups"] = {
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									follower(462),	-- Dawnseeker Rukaryx
+								}),
+								i(116768),	-- Mosshide Riverwallow
+							},
+						}),
 						i(122328),	-- Ethereal Shard-Covered Dreadcloak
 						i(122329),	-- Ethereal Crystal-Edged Bladecloak
 						i(122330),	-- Ethereal Crystalclasp Stormcloak
@@ -397,25 +450,51 @@ _.Zones =
 						i(116974),	-- Crystalclasp Stormcloak
 						i(116975),	-- Refractory Heartcloak
 						i(116976),	-- Crystal Reinforced Doomcloak
-						i(116768),	-- Mosshide Riverwallow MOUNT!
 					}),
 					n(88482, {	-- Gazrix Gearlock <Steamwheedle "Preservation" Society Quartermaster>
-						i(116672),	-- Domesticated Razorback MOUNT!
-						i(119148),	-- Indentured Albino River Calf PET!
-						i(119149),	-- Captured Forest Sproutling PET!
-						i(119137),	-- Steamwheedle "Preservation" Society Tabard
+						["groups"] = {
+							currency(823, { -- Apexis Crystal
+								["groups"] = {
+									i(119149),	-- Captured Forest Sproutling
+									i(116672),	-- Domesticated Razorback
+									i(119148),	-- Indentured Albino River Calf
+								},
+							}),
+							i(119165, {	-- Contract: Professor Felblast
+								follower(460),	-- Professor Felblast
+							}),
+							i(118683),	-- Portable Goon Squad
+							i(119137),	-- Steamwheedle "Preservation" Society Tabard
+						},
 					}),
 					n(85946, {	-- Shadow Sage Brakoss <Arakkoa Outcasts Quartermaster>
-						i(116772),	-- Shadowmane Charger MOUNT!
-						i(119143),	-- Son of Sethe PET!
-						i(119136),	-- Arakkoa Outcasts Tabard
+						["groups"] = {
+							currency (823, { -- Apexis Crystal
+								["groups"] = {
+									i(116772),	-- Shadowmane Charger
+									i(119143),	-- Son of Sethe
+								},
+							}),
+							i(119136),	-- Arakkoa Outcasts Tabard
+							i(118682),	-- Saberon Protector
+						},
 					}),	
 					n(85932, {	-- Vindicator Nuurem <Council of Exarchs Quartermaster>
-						--i(118663),	-- Relic of Karabor - Not a Toy, Yet.
-						i(116664),	-- Dusty Rockhide MOUNT!
-						i(119142),	-- Draenei Micro Defender PET!
-						i(119135),	-- Council of Exarchs Tabard
-						i(115472),	-- Permanent Time Bubble TOY!
+						["groups"] = {
+							currency(823, { -- Apexis Crystal
+								["groups"] = {
+									i(119142),	-- Draenei Micro Defender
+									i(116664),	-- Dusty Rockhide
+								},
+							}),
+							i(119162, { -- Contract: Cleric Maluuf
+								follower(459), -- Cleric Maluuf
+							}),
+							i(119135),	-- Council of Exarchs Tabard
+							i(115472),	-- Permanent Time Bubble
+							i(118663),	-- Relic of Karabor
+							i(118680),	-- Tranquility of the Exarchs
+						},
 					}),
 					n(93914, {	-- Holly McTilla <Warmongering Gladiator>
 						un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory

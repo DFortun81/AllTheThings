@@ -112,13 +112,13 @@ _.Zones =
 						["groups"] = {
 							p(1976), 	-- Sharptalon Hatchling
 							q(45007, { -- Sharptalon Bonding
-								i(142496), -- TOY! Dirty Spoon
+								i(142496), -- Dirty Spoon
 							}),
 							q(45019, { -- Sharptalon Reunion
-								i(137580), -- Mount! Viridian Sharptalon
+								i(137580), -- Viridian Sharptalon
 							}),
 						},
-						["description"] = "1. Buy Dried Bilberries from Fialla Sweetberry in Dalaran.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling pet!|r",
+						["description"] = "1. Buy Dried Bilberries from Fialla Sweetberry in Dalaran.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling|r",
 					}),	
 				}),
 				n(-169, { 	-- Emissary Quess
@@ -1114,7 +1114,7 @@ _.Zones =
 					n(-168, { -- Other Quests
 						sz(10666,3, { -- Bradensbrook
 							q(39015,  {  -- Grumpy
-								i(128354), -- PET! Grumpy
+								i(128354), -- Grumpy
 							}),
 						}),
 						sz(10666,6, { -- Grove of Cenarius
@@ -1137,7 +1137,7 @@ _.Zones =
 						n(-101801, { -- Lunarwing Shallows
 							q(38889,  {  -- Adopting the Adorable
 								["groups"] = {
-									i(128690), -- PET! Ashmaw Cub
+									i(128690), -- Ashmaw Cub
 								},
 								["description"] = "|cff66ccffHave to kill Jinikki the Puncturer to get this quest.|n",
 							}),
@@ -1309,10 +1309,10 @@ _.Zones =
 						sp(185927, { i(127001) }), -- Imbued Silkweave Cinch
 					}),
 					n(106901, {	-- Sylvia Hartshorn <Dreamweaver Emissary>
-						i(23712), -- PET! Ash'ana
-						i(130232), -- TOY! Moonfeather Statue
-						i(130158), -- TOY! Path of Elothir
-						i(130170), -- TOY! Tear of the Green Aspect
+						i(23712), -- Ash'ana
+						i(130232), -- Moonfeather Statue
+						i(130158), -- Path of Elothir
+						i(130170), -- Tear of the Green Aspect
 						i(140578), -- Dreamweaver Initiate's Tabard
 						i(139596), -- Pauldrons of Entwined Roots
 						--i(140652), --Seed of Solar Fire - Druid Artifact Skin

@@ -17,24 +17,24 @@ _.Achievements =
 						h(ach(5269)),	-- In Service of the Horde (1)
 					})),
 					a(ach(5329, {	-- Warbound Veteran of the Alliance
-						a(i(70909)),	-- Reins of the Vicious War Steed MOUNT!
+						a(i(70909)),	-- Reins of the Vicious War Steed
 						a(title(145)),	-- Warbound 
 						a(ach(5823, {	-- Veteran of the Alliance II
-							a(i(70909)),	-- Reins of the Vicious War Steed MOUNT!
+							a(i(70909)),	-- Reins of the Vicious War Steed
 						})),
 						a(ach(5328, {	-- Veteran of the Alliance
-							a(i(70909)),	-- Reins of the Vicious War Steed MOUNT!
+							a(i(70909)),	-- Reins of the Vicious War Steed
 							a(title(152)),	-- Veteran of the Alliance
 						})),
 					})),
 					h(ach(5326, {	-- Warbringer of the Horde
-						h(i(70910)),	-- Horn of the Vicious War Wolf MOUNT!
+						h(i(70910)),	-- Horn of the Vicious War Wolf
 						h(title(144)),	-- Warbringer
 						h(ach(5824, {	-- Veteran of the Horde II
-							h(i(70910)),	-- Horn of the Vicious War Wolf MOUNT!
+							h(i(70910)),	-- Horn of the Vicious War Wolf
 						})),
 						h(ach(5325, {	-- Veteran of the Horde
-							h(i(70910)),	-- Horn of the Vicious War Wolf MOUNT!
+							h(i(70910)),	-- Horn of the Vicious War Wolf
 							h(title(153)),	-- Veteran of the Horde
 						})),
 					})),

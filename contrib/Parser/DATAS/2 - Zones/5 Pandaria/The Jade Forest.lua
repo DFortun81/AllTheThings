@@ -32,18 +32,18 @@ _.Zones =
 					p(817), 	-- Wild Jade Hatchling
 					q(31953, { -- Grand Master Hyuna
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					}),
 					q(32440, { -- Whispering Pandaren Spirit
 						["groups"] = {
 							i(93146, { -- Pandaren Spirit Pet Supplies
-								i(89139),	-- TOY! Chain Pet Leash
-								i(37460),	-- TOY! Rope Pet Leash
-								i(44820),	-- TOY! Red Ribbon Pet Leash
-								i(92799),	-- PET! Pandaren Air Spirit
+								i(89139),	-- Chain Pet Leash
+								i(37460),	-- Rope Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
+								i(92799),	-- Pandaren Air Spirit
 							})
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
@@ -482,7 +482,7 @@ _.Zones =
 						i(90372),
 					}),
 					qa(29905,  {  	-- Let Them Burn
-						i(84105),  		-- PET! Fishy
+						i(84105),  		-- Fishy
 					}),
 					qh(31999,  {  	-- Nazgrim's Command
 						i(90293),
@@ -549,9 +549,9 @@ _.Zones =
 					}),
 					q(30188,  {  	-- Riding the Skies - actually three different quests but completing one completes all three so I combined them and put a description
 						["groups"] = {
-							i(79802), 	-- MOUNT! Reins of the Jade Cloud Serpent
-							i(85430), 	-- MOUNT! Reins of the Azure Cloud Serpent
-							i(85429), 	-- MOUNT! Reins of the Golden Cloud Serpent
+							i(79802), 	-- Reins of the Jade Cloud Serpent
+							i(85430), 	-- Reins of the Azure Cloud Serpent
+							i(85429), 	-- Reins of the Golden Cloud Serpent
 						},
 						["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
 					}),
@@ -658,7 +658,7 @@ _.Zones =
 						i(90331), -- Face Smasher Warhammer [Not listed in quest, but unlocks since Skyfire Trooper's Mace converts to a horde item]
 					}),
 					qh(31239,  {  	-- What's in a Name Name?
-						i(84105), 		-- PET! Fishy
+						i(84105), 		-- Fishy
 					}),
 					q(29930,  {  	-- What's Mined Is Yours
 						i(80783),

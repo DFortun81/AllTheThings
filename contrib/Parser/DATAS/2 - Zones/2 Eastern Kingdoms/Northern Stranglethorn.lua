@@ -747,9 +747,9 @@ _.Zones =
 					p(405), 	-- Tree Python
 					qa(31728, { -- Bill Buckler
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					}),
 --					qg(63194, q(31852)),	-- Steven Lisbane (DAILY VERSION)
@@ -927,10 +927,10 @@ _.Zones =
 					qg 2495(, q(26344)),	-- Some Assembly Required
 --]]
 					qa(29267, { -- Some Good Will Come (The Zandalar Representative questline)
-						i(68833), -- PET! Panther Cub
+						i(68833), -- Panther Cub
 					}),
 					qh(29268, { -- Some Good Will Come (The Zandalari Menace questline)
-						i(68833), -- PET! Panther Cub
+						i(68833), -- Panther Cub
 					}),
 --					qg(469, qa(26736)),	-- Spared from Madness
 					o(2076, {	-- Bubbling Cauldron

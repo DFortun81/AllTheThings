@@ -75,7 +75,7 @@ _.Achievements =
 					ach(4624),	-- Tough Love (Shadowfang Keep)
 					ach(9389),	-- It Might Just Save Your Life
 					ach(9394, {	-- 	They Really Love Me! (50)
-						i(116651),	-- True Love Prism TOY!
+						i(116651),	-- True Love Prism
 						ach(9393),	-- Beacon of Love (25)
 						ach(9392),	-- Love Magnet (10)
 					}),

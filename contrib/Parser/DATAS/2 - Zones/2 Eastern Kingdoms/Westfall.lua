@@ -60,9 +60,9 @@ _.Zones =
 					}),
 					qa(31725, { -- Lindsay
 						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- TOY! Chain Pet Leash
-							i(37460),	-- TOY! Rope Pet Leash
-							i(44820),	-- TOY! Red Ribbon Pet Leash
+							i(89139),	-- Chain Pet Leash
+							i(37460),	-- Rope Pet Leash
+							i(44820),	-- Red Ribbon Pet Leash
 						}),
 					}),
 					qa(31780), 	-- Old MacDonald
@@ -70,9 +70,9 @@ _.Zones =
 						i(151632), -- Mining Monkey
 						model(64432, n(119390, { -- Marcus "Bagman" Brown
 							["groups"] = {
-								i(150742), -- PET! Pet Reaper 0.9
-								i(150741), -- PET! Tricorne
-								i(150739), -- PET! Pocket Cannon
+								i(150742), -- Pet Reaper 0.9
+								i(150741), -- Tricorne
+								i(150739), -- Pocket Cannon
 							},
 							["description"] = "Must have completed the Wailing Caverns Pet Battle Dungeon quest Wailing Critters and the breadcrumb quest Deadmines, Part Three?."
 						})),

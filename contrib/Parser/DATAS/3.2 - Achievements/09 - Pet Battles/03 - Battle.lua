@@ -59,7 +59,7 @@ _.Achievements =
 					ach(8301, {	-- Deadly Pet Brawler (1000)
 						title(227),	-- Trainer
 						ach(8300, {	-- Brutal Pet Brawler (250)
-							i(94191),	-- Stunted Direhorn PET!
+							i(94191),	-- Stunted Direhorn
 						}),
 						ach(8298),	-- Vengeful Pet Brawler (50)
 						ach(8297),	-- Merciless Pet Brawler (10)
@@ -155,7 +155,7 @@ _.Achievements =
 						crit(13),	-- Yu'la, Broodling of Yu'lon
 					}),
 					ach(9069, {	-- An Awfully Big Adventure
-						i(120121),	-- Trunks PET!
+						i(120121),	-- Trunks
 						crit(1),	-- Aki the Chosen (Vale of Eternal Blossoms)
 						crit(2),	-- Ashlei (Shadowmoon Valley)
 						crit(3),	-- Beegle Blastfuse (Howling Fjord)
@@ -429,7 +429,7 @@ _.Achievements =
 						crit(15),	-- Xorvasc (Val'sharah)
 					}),
 					ach(9696, {	-- Family Familiar
-						i(140761),	-- Nightmare Treant PET!
+						i(140761),	-- Nightmare Treant
 						crit(1),	-- Aquatic Acquiescence
 						crit(2),	-- Best of the Beasts
 						crit(3),	-- Mousing Around
@@ -685,7 +685,7 @@ _.Achievements =
 						crit(18),	-- One-of-Many (Antoran Wastes)
 					}),
 					ach(12100, {	-- Family Fighter
-						i(153040),	-- Felclaw Marsuul PET!
+						i(153040),	-- Felclaw Marsuul
 						crit(1),	-- Aquatic Assault
 						crit(2),	-- Beast Blitz
 						crit(3),	-- Critical Critters

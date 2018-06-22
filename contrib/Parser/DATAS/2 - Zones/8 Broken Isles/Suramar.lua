@@ -1206,25 +1206,25 @@ _.Zones =
 						i(121804),
 					}),
 					q(42837,  {  -- Balance to Spare
-						i(139790), -- PET! Untethered Wyrmling
+						i(139790), -- Untethered Wyrmling
 					}),
 					q(45239,  {  -- Cubic Coalescing 
-						i(142536), -- TOY! Memory Cube
+						i(142536), -- Memory Cube
 					}),
 					q(45372,  {  -- Fate of the Nightborn 
-						i(142436), -- MOUNT! Arcanist's Manasaber
+						i(142436), -- Arcanist's Manasaber
 					}),
 					q(42722,  {  -- Friends in Cages
-						i(130209), -- TOY! Never Ending Toy Chest
+						i(130209), -- Never Ending Toy Chest
 					}),
 					q(41143,  {  -- Mglrgrs Of Our Grmlgrlr
-						i(141879), -- TOY! Berglrgl Perrgl Girggrlf
+						i(141879), -- Berglrgl Perrgl Girggrlf
 					}),
 					q(44058,  {  -- Voliune the Elusive - Order Hall quest
 						i(137573), -- Reins of the Llothien Prowler
 					}),
 					q(41197,  {  -- You've Got to Be Kitten Me Right Meow
-						i(139791), -- PET! Lurking Owl Kitten
+						i(139791), -- Lurking Owl Kitten
 					}),	
 				}),
 				n(-16, { -- Rares

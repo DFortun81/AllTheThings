@@ -152,11 +152,11 @@ _.Zones =
 					}),
 					n(-99, { 	 -- Stables
 						ach(9706, {	-- The Stable Master
-							i(116781),	-- Armoured Frostwolf MOUNT!
+							i(116781),	-- Armoured Frostwolf
 							title(277),	-- Stable Master
 						}),
 						ach(9705, {	-- Advanced Husbandry
-							i(116668),	-- Armoured Frostboar MOUNT!
+							i(116668),	-- Armoured Frostboar
 						}),
 					}),
 				}),
@@ -3752,14 +3752,28 @@ _.Zones =
 			]]--							
 					n(-119, { 	 -- Trading Post
 						nh(87015, { -- Kil'rip - Laughing Skull Quartermaster 
-							i(119160), 	 -- Toy
-							i(119146), 	 -- Pet
-							i(118671),
-							i(118672),
-							i(118674),
-							i(119138), 
-							i(116782), 	 -- Mount
-							i(118673),
+							["groups"] = {
+								currency(823, { -- Apexis Crystals
+									["groups"] = {
+										i(119146), 	-- Bone Wasp
+										i(118672),	-- Bloody Visage of the Laughing Skull
+										i(118671),	-- Frozen Visage of the Laughing Skull
+										i(118673),	-- Golden Visage of the Laughing Skull
+										i(116782),	-- Ironside Warwolf
+										i(118674),	-- Visage of the Laughing Skull
+									},
+								}),
+								i(119166, { -- Contract: Cacklebone
+									follower(458),	-- Cacklebone
+								}),
+								i(119159),	-- Happy Fun Skull
+								i(119138), 	-- Laughing Skull Orc Tabard
+								i(118684),	-- Maniacal Grimace
+								i(119160), 	-- Tickle Totem
+							},
+							["crs"] = {
+								86698, -- Kil'rip
+							},
 						}),
 					}),
 					n(-124, {	-- War Mill

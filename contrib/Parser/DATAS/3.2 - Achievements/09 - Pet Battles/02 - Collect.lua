@@ -9,27 +9,27 @@ _.Achievements =
 			n(-10027, { -- Collect (need to review locations for future use, some from wowhead are questionable)
 				["groups"] = {
 					ach(9643, {	-- So. Many. Pets. (600)
-						i(118577),	-- Stormwing PET!
+						i(118577),	-- Stormwing
 						ach(7501, {	-- That's a Lot of Pet Food (400)
-							i(89736),	-- Venus PET!
+							i(89736),	-- Venus
 						}),
 						ach(7500, {	-- Going to Need More Leashes(250)
-							i(85578),	-- Feral Vermling PET!
+							i(85578),	-- Feral Vermling
 						}),
 						ach(5875, {	-- Littlest Pet Shop (150)
-							i(54810),	-- Celestial Dragon PET!
+							i(54810),	-- Celestial Dragon
 						}),
 						ach(5877, {	-- Menagerie (125)
-							i(71387),	-- Brilliant Kaliri PET!
+							i(71387),	-- Brilliant Kaliri
 						}),
 						ach(5876, {	-- Petting Zoo (100)
-							i(71140),	-- Nuts' Acorn PET!
+							i(71140),	-- Nuts' Acorn
 						}),
 						ach(2516, {	-- Lil' Game Hunter (75)
-							i(44841),	-- Little Fawn's Salt Lick PET!
+							i(44841),	-- Little Fawn's Salt Lick
 						}),
 						ach(1250, {	-- Shop Smart, Shop Pet...Smart (50)
-							i(40653),	-- Reeking Pet Carrier PET!
+							i(40653),	-- Reeking Pet Carrier
 						}),
 						ach(1248),	-- Plethora of Pets (25)
 						ach(15),	-- Plenty of Pets (15)
@@ -458,7 +458,7 @@ _.Achievements =
 						crit(55),	-- Zooey Snake (Kun-Lai Summit)
 					}),
 					ach(9685, {	-- Draenor Safari
-						i(111866),	-- Royal Peacock PET!
+						i(111866),	-- Royal Peacock
 						crit(1),	-- Amberbarb Wasp (Gorgrond)
 						crit(2),	-- Axebeak Hatchling (Gorgrond)
 						crit(3),	-- Bloodsting Wasp (Spires of Arak)
@@ -567,7 +567,7 @@ _.Achievements =
 						crit(26),	-- Xu-Fu, Cub of Xuen
 					}),
 					ach(7934, {	-- Raiding with Leashes
-						i(93031),	-- Mr. Bigglesworth PET!
+						i(93031),	-- Mr. Bigglesworth
 						crit(1),	-- Mini Mindslayer (Temple of Ahn'Qiraj - The Prophet Skeram)
 						crit(2),	-- Anubisath Idol (Temple of Ahn'Qiraj - Emperor Vek'tor)
 						crit(3),	-- Giant Bone Spider (Naxxramas - Maexxna)
@@ -582,7 +582,7 @@ _.Achievements =
 						crit(12),	-- Viscidus Globule (Temple of Ahn'Qiraj - Viscidus)
 					}),
 					ach(8293, {	-- Raiding with Leashes II: Attunement Edition
-						i(97558),	-- Tito's Basket PET!
+						i(97558),	-- Tito's Basket
 						crit(1),	-- Lil' Bad Wolf (Karazhan - The Big Bad Wolf)
 						crit(2),	-- Menagerie Custodian (Karazhan - The Curator)
 						crit(3),	-- Netherspace Abyssal (Karazhan - Prince Malchezaar)
@@ -595,7 +595,7 @@ _.Achievements =
 						crit(10),	-- Phoenix Hawk Hatchling (The Eye - Al'ar)
 					}),
 					ach(9824, {	-- Raiding with Leashes III: Drinkin' From the Sunwell
-						i(122116),	-- Holy Chime PET!
+						i(122116),	-- Holy Chime
 						crit(1),	-- Grotesque (Hyjal Summit - Azgalor)
 						crit(2),	-- Leviathan Hatchling (Black Temple - High Warlord Naj'entus)
 						crit(3),	-- Abyssius (Black Temple - Supremus)
@@ -629,7 +629,7 @@ _.Achievements =
 						crit(16),	-- Wicked Soul (Icecrown Citadel - The Lich King)
 					}),
 					ach(12079, {	-- Raiding with Leashes V: Cuteaclysm
-						i(152963),	-- Amalgam of Destruction PET!
+						i(152963),	-- Amalgam of Destruction
 						crit(1),	-- Tinytron (Blackwing Descent - Magmatron)
 						crit(2),	-- Discarded Experiment (Blackwing Descent - Maloriak)
 						crit(3),	-- Rattlejaw (Blackwing Descent - Nefarian)

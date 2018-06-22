@@ -9,13 +9,13 @@ _.Achievements =
 			n(-9955, { -- General
 				["groups"] = {
 					ach(7521, {	-- Time to Open a Pet Store (400)
-						i(89686),	-- Jade Tentacle PET!
+						i(89686),	-- Jade Tentacle
 						ach(6600),	-- Ultimate Trainer (300)
 						ach(7483),	-- Battle Master (200)
 						ach(7482),	-- Trainer Extraordinaire (100)
 					}),
 					ach(7499, {	-- Taming the World (40)
-						i(92738),	-- Safari Hat TOY!
+						i(92738),	-- Safari Hat
 						ach(7498),	-- Taming the Great Outdoors (15)
 						ach(6601),	-- Taming the Wild (1)
 					}),
@@ -143,10 +143,10 @@ _.Achievements =
 						crit(41),	-- Durin Darkhammer (Burning Steppes) / Analynn (Ashenvale)
 					}),
 					ach(11765, {	-- Pet Battle Challenge: Wailing Caverns
-						i(147543),	-- Son of Skum PET!
+						i(147543),	-- Son of Skum
 					}),
 					ach(11856, {	-- Pet Battle Challenge: Deadmines
-						i(151632),	-- Mining Monkey PET!
+						i(151632),	-- Mining Monkey
 					}),
 				},
 			}),

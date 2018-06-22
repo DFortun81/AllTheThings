@@ -83,7 +83,7 @@ _.Achievements =
 					a(ach(612)),	-- Downing the Dark Lady
 					a(ach(613)),	-- Killed in Quel'Thalas
 					a(ach(614, {	-- For the Alliance!
-						a(i(44223)),	-- Reins of the Black War Bear MOUNT!
+						a(i(44223)),	-- Reins of the Black War Bear
 						crit(1),	-- Orgrimmar Offensive
 						crit(2),	-- Bleeding Bloodhoof
 						crit(3),	-- Downing the Dark Lady
@@ -94,7 +94,7 @@ _.Achievements =
 					h(ach(618)),	-- Putting Out the Light
 					h(ach(615)),	-- Storming Stormwind
 					h(ach(619, {	-- For the Horde!
-						h(i(44224)),	-- Reins of the Black War Bear MOUNT!
+						h(i(44224)),	-- Reins of the Black War Bear
 						crit(1),	-- Storming Stormwind
 						crit(2),	-- Overthrow the Council
 						crit(3),	-- Immortal No More
@@ -187,22 +187,22 @@ _.Achievements =
 						crit(5),	-- Master of Temple of Kotmogu
 					})),
 					a(ach(12137, {	-- Dominant Combatant (Alliance)
-						i(103533),	-- Vicious Saddle MOUNT!
+						i(103533),	-- Vicious Saddle
 						crit(1),	-- Win 100 Arena (3v3) matches in Legion Season 6
 						crit(2),	-- 	Win 40 Rated Battleground Matches in Legion Season 6
 					})),
 					h(ach(12136, {	-- Dominant Combatant (Horde)
-						i(103533),	-- Vicious Saddle MOUNT!
+						i(103533),	-- Vicious Saddle
 						crit(1),	-- Win 100 Arena (3v3) matches in Legion Season 6
 						crit(2),	-- 	Win 40 Rated Battleground Matches in Legion Season 6
 					})),
 					a(ach(12200, {	-- Demonic Combatant (Alliance)
-						i(103533),	-- Vicious Saddle MOUNT!
+						i(103533),	-- Vicious Saddle
 						crit(1),	-- Win 100 Arena (3v3) matches in Legion Season 7
 						crit(2),	-- 	Win 40 Rated Battleground Matches in Legion Season 7
 					})),
 					h(ach(12199, {	-- Demonic Combatant (Horde)
-						i(103533),	-- Vicious Saddle MOUNT!
+						i(103533),	-- Vicious Saddle
 						crit(1),	-- Win 100 Arena (3v3) matches in Legion Season 7
 						crit(2),	-- 	Win 40 Rated Battleground Matches in Legion Season 7
 					})),

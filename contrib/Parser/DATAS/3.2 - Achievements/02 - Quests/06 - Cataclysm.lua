@@ -82,8 +82,8 @@ _.Achievements =
 						i(69838, {	-- Chirping Box (Blue / Gold Mini Jouster - which ever wasnt picked during !Vigilance on Wings)
 							["description"] = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
 							["groups"] = {
-								i(65661),	-- Blue Mini Jouster PET!
-								i(65662),	-- Gold Mini Jouster PET!
+								i(65661),	-- Blue Mini Jouster
+								i(65662),	-- Gold Mini Jouster
 							},
 						}),
 					}),
@@ -94,7 +94,7 @@ _.Achievements =
 					ach(5445),	-- Fungalophobia (Deepholm)
 					ach(5446),	-- The Glop Family Line (Deepholm)
 					ach(5449, {	-- Rock Lover (Deepholm)
-						i(60869),	-- Pebble PET!
+						i(60869),	-- Pebble
 					}),
 					ach(5450),	-- Fungal Frenzy (Deepholm)
 					ach(5447),	-- My Very Own Broodmother (Deepholm)
@@ -138,7 +138,7 @@ _.Achievements =
 							}),
 							q(29311, {	-- The Rest is History
 								["groups"] = {
-									i(71259),	-- Leyara's Locket TOY!
+									i(71259),	-- Leyara's Locket
 								},
 								["sourceQuests"] = {29310},	-- A Smoke-Stained Locket
 							}),
@@ -148,7 +148,7 @@ _.Achievements =
 						crit(3),	-- Into the Depths
 					}),
 					ach(5866, {	-- The Molten Front Offensive (Mount Hyjal - The Molten Front)
-						i(69213),	-- Flameward Hippogryph MOUNT!
+						i(69213),	-- Flameward Hippogryph
 						crit(1),	-- Stop the assault on the Sanctuary of Malorne
 						crit(2),	-- Gain access to the Molten Front
 						crit(3),	-- Recruit the Druids of the Talon
