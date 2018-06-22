@@ -290,6 +290,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(8.00, i(13007)),	-- Mageflame Cloak
 					dr(11.0, i(13107)),	-- Magiskull Cuffs
 					dr(2.00, i(13001)), -- Maiden's Circle
+					dr(3.00, i(13073)),	-- Mugthol's Helm
 					dr(4.00, i(13111)),	-- Sandals of the Insurgent
 					dr(5.00, i( 5267)),	-- Scarlet Kris
 					dr(7.00, i(13144)),	-- Serenity Belt
