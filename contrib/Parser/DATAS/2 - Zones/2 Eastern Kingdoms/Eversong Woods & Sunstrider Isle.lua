@@ -673,76 +673,79 @@ _.Zones =
 				m(893, {	-- Sunstrider Isle
 					["groups"] = {					
 						n(-17, {	-- Quests
-							qh(37440, {	-- A Fistful of Slivers
-								["groups"] = {
-								},
-								["qg"] = 15296,	-- Arcanist Ithanas
-								["sourceQuests"] = { 8326 },	-- Unfortunate Measures
-							}),
-							qh( 8334, {	-- Aggression
-								["groups"] = {
-								},
-								["qg"] = 15281,	-- Lanthan Perilon
-								["sourceQuests"] = { 8327 },	-- Report to Lanthan Perilon
-							}),
-							qh( 8347, {	-- Aiding the Outrunners
-								["groups"] = {
-								},
-								["qg"] = 15281,	-- Lanthan Perilon
-								["sourceQuests"] = { 8335 },	-- Felendren the Banished
-							}),
-							qh( 8335, {	-- Felendren the Banished
-								["groups"] = {
-								},
-								["qg"] = 15281,	-- Lanthan Perilon
-								["sourceQuests"] = { 8334 },	-- Aggression
-							}),
-							qh( 8325, {	-- Reclaiming Sunstrider Isle
-								["groups"] = {
-								},
-								["qg"] = 15278,	-- Magistrix Erona
-							}),
-							qh( 8327, {	-- Report to Lanthan Perilon
-								["groups"] = {
-								},
-								["qg"] = 15278,	-- Magistrix Erona
-								["sourceQuests"] = { 8326 },	-- Unfortunate Measures
-							}),
-							qh(37443, {	-- Solanian's Belongings
-								["groups"] = {
-								},
-								["qg"] = 15295,	-- Well Watcher Solanian
-								["sourceQuests"] = { 8326 },	-- Unfortunate Measures
-							}),
-							n(15298, {	-- Tainted Arcane Wraith
-								i(20483, {	-- Tainted Arcane Sliver
-									qh(8338),	-- Tainted Arcane Sliver
+							["groups"] = {
+								qh(37440, {	-- A Fistful of Slivers
+									["groups"] = {
+									},
+									["qg"] = 15296,	-- Arcanist Ithanas
+									["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 								}),
-							}),
-							qh(37442, {	-- The Shrine of Dath'Remar
-								["groups"] = {
-								},
-								["qg"] = 15295,	-- Well Watcher Solanian
-								["sourceQuests"] = { 8326 },	-- Unfortunate Measures
-							}),
-							qh(37439, {	-- Thirst Unending
-								["groups"] = {
-								},
-								["qg"] = 15297,	-- Arcanist Helion
-								["sourceQuests"] = { 8326 },	-- Unfortunate Measures
-							}),
-							qh( 8326, {	-- Unfortunate Measures
-								["groups"] = {
-								},
-								["qg"] = 15278,	-- Magistrix Erona
-								["sourceQuests"] = { 8325 },	-- Reclaiming Sunstrider Isle
-							}),
---[[						It appears these four quests were replaced with newer versions.
-							qg(15296, qh( 8336)),	-- A Fistful of Slivers
-							qg(15295, qh( 8330)),	-- Solanian's Belongings
-							qg(15295, q(8345)),	-- The Shrine of Dath'Remar
-							qg(15297, qh( 8346)),	-- Thirst Unending
---]]
+								qh( 8334, {	-- Aggression
+									["groups"] = {
+									},
+									["qg"] = 15281,	-- Lanthan Perilon
+									["sourceQuests"] = { 8327 },	-- Report to Lanthan Perilon
+								}),
+								qh( 8347, {	-- Aiding the Outrunners
+									["groups"] = {
+									},
+									["qg"] = 15281,	-- Lanthan Perilon
+									["sourceQuests"] = { 8335 },	-- Felendren the Banished
+								}),
+								qh( 8335, {	-- Felendren the Banished
+									["groups"] = {
+									},
+									["qg"] = 15281,	-- Lanthan Perilon
+									["sourceQuests"] = { 8334 },	-- Aggression
+								}),
+								qh( 8325, {	-- Reclaiming Sunstrider Isle
+									["groups"] = {
+									},
+									["qg"] = 15278,	-- Magistrix Erona
+								}),
+								qh( 8327, {	-- Report to Lanthan Perilon
+									["groups"] = {
+									},
+									["qg"] = 15278,	-- Magistrix Erona
+									["sourceQuests"] = { 8326 },	-- Unfortunate Measures
+								}),
+								qh(37443, {	-- Solanian's Belongings
+									["groups"] = {
+									},
+									["qg"] = 15295,	-- Well Watcher Solanian
+									["sourceQuests"] = { 8326 },	-- Unfortunate Measures
+								}),
+								n(15298, {	-- Tainted Arcane Wraith
+									i(20483, {	-- Tainted Arcane Sliver
+										qh(8338),	-- Tainted Arcane Sliver
+									}),
+								}),
+								qh(37442, {	-- The Shrine of Dath'Remar
+									["groups"] = {
+									},
+									["qg"] = 15295,	-- Well Watcher Solanian
+									["sourceQuests"] = { 8326 },	-- Unfortunate Measures
+								}),
+								qh(37439, {	-- Thirst Unending
+									["groups"] = {
+									},
+									["qg"] = 15297,	-- Arcanist Helion
+									["sourceQuests"] = { 8326 },	-- Unfortunate Measures
+								}),
+								qh( 8326, {	-- Unfortunate Measures
+									["groups"] = {
+									},
+									["qg"] = 15278,	-- Magistrix Erona
+									["sourceQuests"] = { 8325 },	-- Reclaiming Sunstrider Isle
+								}),
+	--[[						It appears these four quests were replaced with newer versions.
+								qg(15296, qh( 8336)),	-- A Fistful of Slivers
+								qg(15295, qh( 8330)),	-- Solanian's Belongings
+								qg(15295, q(8345)),	-- The Shrine of Dath'Remar
+								qg(15297, qh( 8346)),	-- Thirst Unending
+	--]]
+							},
+							["races"]={10},
 						}),
 --[[
 						n(-40, {	-- Legacy
