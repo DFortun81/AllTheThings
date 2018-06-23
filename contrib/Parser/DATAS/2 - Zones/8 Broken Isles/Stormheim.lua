@@ -1758,6 +1758,52 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\achievement_boss_helyra",	
 					["description"] = "|cff66ccffHelheim is the desolate realm of the val'kyr Helya. She created it below the Halls of Valor after having sealed Odyn's fortress in an impregnable barrier. Here, the spirits of the dishonorable spend eternity in an endless futile battle, always seeking glory but never able to attain it. It has recently become connected to Haustvald.|r",
 				}),
+				n(0, { -- Zone Drops
+					["groups"] = {
+						i(141287, { -- Law of Strength
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(141286, { -- Rite  of the Val'kyr
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121125, { -- Rune-Etched Bark
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121124, { -- Stormforged Idol
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121137, { -- Stormwing Band
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121138, { -- Stormwing Chain
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121122, { -- Stormwing Drape
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121126, { -- Stormwing Tail Tip
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+					},
+					["crs"] = {
+					},
+				}),
 			},
 			["lvl"] = 98,	
 			["achievementID"] = 10668,
