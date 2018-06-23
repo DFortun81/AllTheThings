@@ -6446,7 +6446,7 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		--
+		--[[
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
 			db = {};
