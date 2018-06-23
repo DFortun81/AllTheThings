@@ -3765,10 +3765,14 @@ app.BaseObject = {
 			return name;
 		elseif key == "icon" then
 			return L("OBJECT_ID_ICONS")[t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
+		elseif key == "collectible" then
+			return t.questID and not t.repeatable and GetDataMember("TreatQuestsAsCollectible");
+		elseif key == "collected" then
+			return t.saved;
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID);
+			return t.questID and IsQuestFlaggedCompleted(t.questID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
