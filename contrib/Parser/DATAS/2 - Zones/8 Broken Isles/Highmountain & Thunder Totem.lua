@@ -816,7 +816,7 @@ _.Zones =
 						q(46279),	-- Zargrom
 					}),
 --]]					
-					n(-17, { 	-- Quests
+				n(-17, { 	-- Quests
 						ach(10059, { -- Ain't No Mountain High Enough
 							crit(1, { -- The Rivermane Tribe
 							  q(39733),	-- The Lone Mountain
@@ -1915,7 +1915,106 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
 				}),
-				
+				n(0, { -- Zone Drops
+					["groups"] = {
+						i(121104, {	-- Hagfeather Cowl
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121109, {	-- Hagfeather Shoulderpads
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121107, {	-- Hagfeather Robe
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121110, {	-- Hagfeather Wristwraps
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121105, {	-- Hagfeather Handwraps
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121103, {	-- Hagfeather Cord
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121106, {	-- Hagfeather Leggings
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121108, {	-- Hagfeather Sandals
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121076, {	-- Icepine Hood
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121078, {	-- Icepine Shoulders
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121077, {	-- Icepine Jerkin
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121072, {	-- Icepine Bindings
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121075, {	-- Icepine Gloves
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121079, {	-- Icepine Waistband
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121074, {	-- Icepine Britches
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121073, {	-- Icepine Boots
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						
+						
+						
+						
+						
+						
+					
+						
+						
+						
+						
+						
+						
+						
+					},
+					["crs"] = {
+					},
+				}),
 			},
 			["lvl"] = 98,	
 			["achievementID"] = 10667,

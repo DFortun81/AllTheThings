@@ -47,6 +47,126 @@ _.WorldDrops =
 						},
 						["bonusID"] = 1812,
 					}),
+					i(121214, {	-- Crescent Vale Cowl
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121219, {	-- Crescent Vale Shoulderpads
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121217, {	-- Crescent Vale Robe
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121220, {	-- Crescent Vale Wristwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121215, {	-- Crescent Vale Handwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121213, {	-- Crescent Vale Cord
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121216, {	-- Crescent Vale Leggings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121218, {	-- Crescent Vale Sandals
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121209, {	-- Dreadroot Linked Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121211, {	-- Dreadroot Linked Spaulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121212, {	-- Dreadroot Linked Vest
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121206, {	-- Dreadroot Linked Bracers
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121207, {	-- Dreadroot Linked Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121205, {	-- Dreadroot Linked Belt
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121210, {	-- Dreadroot Linked Legguards
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121208, {	-- Dreadroot Linked Greaves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121059, {	-- Ettinbone Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121061, {	-- Ettinbone Pauldrons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121056, {	-- Ettinbone Breastplate
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121063, {	-- Ettinbone Vambraces
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121057, {	-- Ettinbone Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121058, {	-- Ettinbone Girdle
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121060, {	-- Ettinbone Legplates
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121062, {	-- Ettinbone Sabatons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
 					i(121044, {	-- Faronaar Chain Helm
 						["groups"] = {
 						},
@@ -87,6 +207,126 @@ _.WorldDrops =
 						},
 						["bonusID"] = 1812,
 					}),
+					i(121104, {	-- Hagfeather Cowl
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121109, {	-- Hagfeather Shoulderpads
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121107, {	-- Hagfeather Robe
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121110, {	-- Hagfeather Wristwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121105, {	-- Hagfeather Handwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121103, {	-- Hagfeather Cord
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121106, {	-- Hagfeather Leggings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121108, {	-- Hagfeather Sandals
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121099, {	-- Hillstride Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121101, {	-- Hillstride Spaulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121102, {	-- Hillstride Vest
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121096, {	-- Hillstride Bracers
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121097, {	-- Hillstride Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121095, {	-- Hillstride Belt
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121100, {	-- Hillstride Legguards
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121098, {	-- Hillstride Greaves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121076, {	-- Icepine Hood
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121078, {	-- Icepine Shoulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121077, {	-- Icepine Jerkin
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121072, {	-- Icepine Bindings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121075, {	-- Icepine Gloves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121079, {	-- Icepine Waistband
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121074, {	-- Icepine Britches
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121073, {	-- Icepine Boots
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
 					i(121224, {	-- Jandvik Helm
 						["groups"] = {
 						},
@@ -123,6 +363,46 @@ _.WorldDrops =
 						["bonusID"] = 1812,
 					}),
 					i(121227, {	-- Jandvik Sabatons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121169, {	-- Kal'delar Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121171, {	-- Kal'delar Pauldrons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121166, {	-- Kal'delar Breastplate
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121173, {	-- Kal'delar Vambraces
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121167, {	-- Kal'delar Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121168, {	-- Kal'delar Girdle
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121170, {	-- Kal'delar Legplates
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121172, {	-- Kal'delar Sabatons
 						["groups"] = {
 						},
 						["bonusID"] = 1812,
@@ -247,6 +527,46 @@ _.WorldDrops =
 						},
 						["bonusID"] = 1812,
 					}),
+					i(121186, {	-- Smolderhide Hood
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121188, {	-- Smolderhide Shoulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121187, {	-- Smolderhide Jerkin
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121182, {	-- Smolderhide Bindings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121185, {	-- Smolderhide Gloves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121189, {	-- Smolderhide Waistband
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121184, {	-- Smolderhide Britches
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121183, {	-- Smolderhide Boots
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
 					i(121049, {	-- Temporal Scholar's Cowl
 						["groups"] = {
 						},
@@ -328,166 +648,6 @@ _.WorldDrops =
 						["bonusID"] = 1812,
 					}),
 					-- UNORGANIZED --
-					i(121056, {	-- Ettinbone Breastplate
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121057, {	-- Ettinbone Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121058, {	-- Ettinbone Girdle
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121059, {	-- Ettinbone Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121060, {	-- Ettinbone Legplates
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121061, {	-- Ettinbone Pauldrons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121062, {	-- Ettinbone Sabatons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121063, {	-- Ettinbone Vambraces
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121072, {	-- Icepine Bindings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121073, {	-- Icepine Boots
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121074, {	-- Icepine Britches
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121075, {	-- Icepine Gloves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121076, {	-- Icepine Hood
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121077, {	-- Icepine Jerkin
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121078, {	-- Icepine Shoulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121079, {	-- Icepine Waistband
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121095, {	-- Hillstride Belt
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121096, {	-- Hillstride Bracers
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121097, {	-- Hillstride Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121098, {	-- Hillstride Greaves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121099, {	-- Hillstride Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121100, {	-- Hillstride Legguards
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121101, {	-- Hillstride Spaulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121102, {	-- Hillstride Vest
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121103, {	-- Hagfeather Cord
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121104, {	-- Hagfeather Cowl
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121105, {	-- Hagfeather Handwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121106, {	-- Hagfeather Leggings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121107, {	-- Hagfeather Robe
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121108, {	-- Hagfeather Sandals
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121109, {	-- Hagfeather Shoulderpads
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121110, {	-- Hagfeather Wristwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
 					i(121111, {	-- Valarsmidd Breastplate
 						["groups"] = {
 						},
@@ -648,167 +808,6 @@ _.WorldDrops =
 						},
 						["bonusID"] = 1812,
 					}),
-					i(121166, {	-- Kal'delar Breastplate
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121167, {	-- Kal'delar Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121168, {	-- Kal'delar Girdle
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121169, {	-- Kal'delar Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121170, {	-- Kal'delar Legplates
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121171, {	-- Kal'delar Pauldrons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121172, {	-- Kal'delar Sabatons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121173, {	-- Kal'delar Vambraces
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121182, {	-- Smolderhide Bindings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121183, {	-- Smolderhide Boots
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121184, {	-- Smolderhide Britches
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121185, {	-- Smolderhide Gloves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121186, {	-- Smolderhide Hood
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121187, {	-- Smolderhide Jerkin
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121188, {	-- Smolderhide Shoulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121189, {	-- Smolderhide Waistband
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121205, {	-- Dreadroot Linked Belt
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121206, {	-- Dreadroot Linked Bracers
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121207, {	-- Dreadroot Linked Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121208, {	-- Dreadroot Linked Greaves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121209, {	-- Dreadroot Linked Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121210, {	-- Dreadroot Linked Legguards
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121211, {	-- Dreadroot Linked Spaulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121212, {	-- Dreadroot Linked Vest
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121213, {	-- Crescent Vale Cord
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121214, {	-- Crescent Vale Cowl
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121215, {	-- Crescent Vale Handwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121216, {	-- Crescent Vale Leggings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121217, {	-- Crescent Vale Robe
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121218, {	-- Crescent Vale Sandals
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121219, {	-- Crescent Vale Shoulderpads
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121220, {	-- Crescent Vale Wristwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					
 					-- Cathedral BoEs (rage)
 					{
 						["itemID"] = 147514,	-- Felguard Destroyer's Legplates
