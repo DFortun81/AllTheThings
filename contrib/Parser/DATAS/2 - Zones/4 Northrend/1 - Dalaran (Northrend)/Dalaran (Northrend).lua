@@ -3946,7 +3946,6 @@ _.Zones =
 								i(42391),	-- Furious Gladiator's Staff
 								i(42503),	-- Furious Gladiator's Touch of Defeat
 								i(44421),	-- Furious Gladiator's War Staff
-								i(42238),	-- Furious Gladiator's Waraxe
 								i(41859),	-- Furious Gladiator's Mooncloth Robe
 								i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
 								i(40789),	-- Furious Gladiator's Plate Chestpiece
