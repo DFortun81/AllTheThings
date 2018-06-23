@@ -247,6 +247,47 @@ _.WorldDrops =
 						},
 						["bonusID"] = 1812,
 					}),
+					i(121131, {	-- Haustvelt Hood
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121133, {	-- Haustvelt Shoulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					
+					i(121132, {	-- Haustvelt Jerkin
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121127, {	-- Haustvelt Bindings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121130, {	-- Haustvelt Gloves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121134, {	-- Haustvelt Waistband
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121129, {	-- Haustvelt Britches
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121128, {	-- Haustvelt Boots
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
 					i(121099, {	-- Hillstride Helm
 						["groups"] = {
 						},
@@ -283,6 +324,46 @@ _.WorldDrops =
 						["bonusID"] = 1812,
 					}),
 					i(121098, {	-- Hillstride Greaves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121159, {	-- Hrydshal Cowl
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121164, {	-- Hrydshal Shoulderpads
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121162, {	-- Hrydshal Robe
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121165, {	-- Hrydshal Wristwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121160, {	-- Hrydshal Handwraps
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121158, {	-- Hrydshal Cord
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121161, {	-- Hrydshal Leggings
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121163, {	-- Hrydshal Sandals
 						["groups"] = {
 						},
 						["bonusID"] = 1812,
@@ -607,6 +688,86 @@ _.WorldDrops =
 						},
 						["bonusID"] = 1812,
 					}),
+					i(121114, {	-- Valarsmidd Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121116, {	-- Valarsmidd Pauldrons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121111, {	-- Valarsmidd Breastplate
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121118, {	-- Valarsmidd Vambraces
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121112, {	-- Valarsmidd Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121113, {	-- Valarsmidd Girdle
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121115, {	-- Valarsmidd Legplates
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121117, {	-- Valarsmidd Sabatons
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121154, {	-- Valisdall Helm
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121156, {	-- Valisdall Spaulders
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121157, {	-- Valisdall Vest
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121151, {	-- Valisdall Bracers
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121152, {	-- Valisdall Gauntlets
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121150, {	-- Valisdall Belt
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121155, {	-- Valisdall Legguards
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
+					i(121153, {	-- Valisdall Greaves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+					}),
 					i(121264, {	-- Warpwind Helm
 						["groups"] = {
 						},
@@ -647,184 +808,31 @@ _.WorldDrops =
 						},
 						["bonusID"] = 1812,
 					}),
-					-- UNORGANIZED --
-					i(121111, {	-- Valarsmidd Breastplate
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121112, {	-- Valarsmidd Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121113, {	-- Valarsmidd Girdle
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121114, {	-- Valarsmidd Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121115, {	-- Valarsmidd Legplates
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121116, {	-- Valarsmidd Pauldrons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121117, {	-- Valarsmidd Sabatons
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121118, {	-- Valarsmidd Vambraces
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121127, {	-- Haustvelt Bindings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121128, {	-- Haustvelt Boots
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121129, {	-- Haustvelt Britches
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121130, {	-- Haustvelt Gloves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121131, {	-- Haustvelt Hood
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121132, {	-- Haustvelt Jerkin
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121133, {	-- Haustvelt Shoulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121134, {	-- Haustvelt Waistband
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121150, {	-- Valisdall Belt
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121151, {	-- Valisdall Bracers
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121152, {	-- Valisdall Gauntlets
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121153, {	-- Valisdall Greaves
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121154, {	-- Valisdall Helm
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121155, {	-- Valisdall Legguards
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121156, {	-- Valisdall Spaulders
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121157, {	-- Valisdall Vest
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121158, {	-- Hrydshal Cord
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121159, {	-- Hrydshal Cowl
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121160, {	-- Hrydshal Handwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121161, {	-- Hrydshal Leggings
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121162, {	-- Hrydshal Robe
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121163, {	-- Hrydshal Sandals
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121164, {	-- Hrydshal Shoulderpads
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
-					i(121165, {	-- Hrydshal Wristwraps
-						["groups"] = {
-						},
-						["bonusID"] = 1812,
-					}),
 					-- Cathedral BoEs (rage)
-					{
-						["itemID"] = 147514,	-- Felguard Destroyer's Legplates
-						["bonusID"] = 1812,		-- BoE, Cathedral
-					},
-					{
-						["itemID"] = 147515,	-- Hellblaze Invader's Greaves
-						["bonusID"] = 1812,		-- BoE, Cathedral
-					},
-					{
-						["itemID"] = 147516,	-- Legion Stalker's Hood
-						["bonusID"] = 1812,		-- BoE, Cathedral
-					},
-					{
-						["itemID"] = 147517,	-- Inquisitor's Battle Cowl
-						["bonusID"] = 1812,		-- BoE, Cathedral
-					},
+					i(147517, { -- Inquisitor's Battle Cowl
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+						["modID"] = 0,
+					}),
+					i(147516, { -- Legion Stalker's Hood
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+						["modID"] = 0,
+					}),
+					i(147515, { -- Hellblaze Invader's Greaves
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+						["modID"] = 0,
+					}),
+					i(147514, { -- Felguard Destroyer's Legplates
+						["groups"] = {
+						},
+						["bonusID"] = 1812,
+						["modID"] = 0,
+					}),
 				},
 			}),
 		},
