@@ -2567,6 +2567,46 @@ _.Zones =
 				}),	
 				n(0, { -- Zone Drops
 					["groups"] = {
+						i(121015, { -- Academy Faculty Pin
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121012, { -- Azurewing Defender's Drape
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121028, { -- Azurewing Pendant
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121027, { -- Azurewing Signet
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121016, { -- Corsair's Spyglass
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(141285, { -- Nar'thalas Writ
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(141284, { -- Nor'danil Ampoule
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121014, { -- Preserved Blue Dragon Scale
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121049, {	-- Temporal Scholar's Cowl
 							["groups"] = {
 							},

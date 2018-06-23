@@ -1463,7 +1463,12 @@ _.Zones =
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121192, { -- Vale Walker's Cirlce
+						i(121192, { -- Vale Walker's Circle
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121177, { -- Vale Walker's Cloak
 							["groups"] = {
 							},
 							["bonusID"] = 1812,

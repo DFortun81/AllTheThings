@@ -1717,11 +1717,46 @@ _.Zones =
 				}),
 				n(0, { -- Zone Drops
 					["groups"] = {
-						i(141292),	-- Crystallizing Mana
-						i(121236),	-- Dawnswood Hunter's Fletchings
-						i(121247),	-- Nightfall Loop
-						i(121232),	-- Nightfallen Outcast's Cloak
-						i(141293),	-- Spellfire Oil
+						i(141292, {	-- Crystallizing Mana
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121236, {	-- Dawnswood Hunter's Fletchings
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121234, { -- Koralune Keepsake
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121248, { -- Nightfall Chain
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121247, {	-- Nightfall Loop
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121232, {	-- Nightfallen Outcast's Cloak
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(121235, { -- Sashj'tar Brooch
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
+						i(141293, {	-- Spellfire Oil
+							["groups"] = {
+							},
+							["bonusID"] = 1812,
+						}),
 						i(121269, {	-- Moonfall Cowl
 							["groups"] = {
 							},
