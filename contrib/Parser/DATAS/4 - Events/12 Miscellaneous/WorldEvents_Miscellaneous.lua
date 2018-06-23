@@ -37,7 +37,7 @@ _.WorldEvents =
 						dr(0.007, i(12007)), -- Prairie Ring
 						dr(0.01, i(3396)), -- Recipe: Elixir of Lesser Agility
 						dr(0.007, i(12008)), -- Savannah Ring
-						un(7, i(5756)), -- Silverblade
+						i(5756), -- Silverblade
 						dr(0.007, i(11967)), -- Zircon Band
 					}),
 					i(16884, { 	-- Sturdy Junkbox
