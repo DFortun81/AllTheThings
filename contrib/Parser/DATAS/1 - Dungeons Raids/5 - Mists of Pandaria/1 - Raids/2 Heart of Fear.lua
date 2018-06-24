@@ -1,29 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local PATTERNS_ILVL_496 = {		-- Patterns with iLvl 496 (Mogu, HoF, ToEs)
-	["groups"] = {
-		i(86272),	-- Pattern: Fists of Lightning
-		i(86380),	-- Pattern: Imperial Silk Gloves
-		i(86279),	-- Pattern: Liferuned Leather Gloves
-		i(86280),	-- Pattern: Murderer's Gloves
-		i(86284),	-- Pattern: Raven Lord's Gloves
-		i(86382),	-- Pattern: Touch of the Light
-		i(86238),	-- Pattern: Chestguard of Nemeses
-		i(86381),	-- Pattern: Legacy of the Emperor
-		i(86281),	-- Pattern: Nightfire Robe
-		i(86283),	-- Pattern: Raiment of Blood and Bone
-		i(86379),	-- Pattern: Robe of Eternal Rule
-		i(86297),	-- Pattern: Stormbreaker Chestguard
-		i(87411),	-- Plans: Bloodforged Warfists
-		i(87409),	-- Plans: Gauntlets of Battle Command
-		i(87413),	-- Plans: Gauntlets of Unbound Devotion
-		i(87412),	-- Plans: Chestplate of Limitless Faith
-		i(87410),	-- Plans: Ornate Battleplate of the Master
-		i(87408),	-- Plans: Unyielding Bloodplate
-	},
-	["npcID"] = -15
-};
 _.Instances = 
 {
 	{ -- Mists of Pandaria
@@ -33,18 +10,83 @@ _.Instances =
 					d(7, {		-- LFR		-- Looking for Raid
 						["ignoreBonus"] = true,
 						["groups"] = {
-							n(0, {	-- Zone Drop
-								i(86850),	-- Darting Damselfly Cuffs
-								i(86844),	-- Gleaming Moth Cuffs
-								i(86841),	-- Shining Cicada Bracers
-								i(86845),	-- Pearlescent Butterfly Wristbands
-								i(86843),	-- Smooth Beetle Wristbands
-								i(86847),	-- Jagged Hornet Bracers
-								i(86842),	-- Luminescent Firefly Wristguards
-								i(86846),	-- Inlaid Cricket Bracers
-								i(86849),	-- Plated Locust Bracers
-								i(86848),	-- Serrated Wasp Bracers
-								--i(95619),	-- Amber Encased Treasure Pouch
+							n(-1, {	-- Common Boss Drop
+								["groups"] = {
+									i(95619, {	-- Amber Encased Treasure Pouch
+										["groups"] = {
+											i(86884),	-- Belt of Embodied Terror
+											i(86900),	-- Binder's Chain of Unending Summer
+											i(86850),	-- Darting Damselfly Cuffs
+											i(86844),	-- Gleaming Moth Cuffs
+											i(86895),	-- Healer's Belt of Final Winter
+											i(86846),	-- Inlaid Cricket Bracers
+											i(86896),	-- Invoker's Belt of Final Winter
+											i(86772),	-- Jade Bandit Figurine
+											i(86771),	-- Jade Charioteer Figurine
+											i(86774),	-- Jade Courtesan Figurine
+											i(86773),	-- Jade Magistrate Figurine
+											i(86775),	-- Jade Warlord Figurine
+											i(86847),	-- Jagged Hornet Bracers
+											i(86842),	-- Luminescent Firefly Wristguards
+											i(86902),	-- Mender's Girdle of Endless Spring
+											i(86904),	-- Patroller's Girdle of Endless Spring
+											i(86845),	-- Pearlescent Butterfly Wristbands
+											i(86849),	-- Plated Locust Bracers
+											i(86903),	-- Protector's Girdle of Endless Spring
+											i(86901),	-- Ranger's Chain of Unending Summer
+											i(86848),	-- Serrated Wasp Bracers
+											i(86841),	-- Shining Cicada Bracers
+											i(86843),	-- Smooth Beetle Wristbands
+											i(86897),	-- Sorcerer's Belt of Final Winter
+											i(86899),	-- Stalker's Cord of Eternal Autumn
+											i(86898),	-- Weaver's Cord of Eternal Autumn
+											i(44984),	-- Ammen Vale Lashling
+											i(54436),	-- Blue Clockwork Rocket Bot
+											i(44970),	-- Dun Morogh Cub
+											i(44973),	-- Durotar Scorpion
+											i(67282),	-- Elementium Geode
+											i(44974),	-- Elwynn Lamb
+											i(44982),	-- Enchanted Broom
+											i(64403),	-- Fox Kit
+											i(43698),	-- Giant Sewer Rat
+											i(45002),	-- Mechanopeep
+											i(44980),	-- Mulgore Hatchling
+											i(64403),	-- Fox Kit
+											i(43698),	-- Giant Sewer Rat
+											i(45002),	-- Mechanopeep
+											i(44980),	-- Mulgore Hatchling
+											i(45606),	-- Sen'jin Fetish
+											i(69992),	-- Shimmering Wyrmling
+											i(44965),	-- Teldrassil Sproutling
+											i(69991),	-- Tiny Sporebat
+											i(44971),	-- Tirisfal Batling
+											i(10360),	-- Black Kingsnake
+											i(29960),	-- Captured Firefly
+											i(8491),	-- Cat Carrier (Black Tabby)
+											i(46398),	-- Cat Carrier (Calico Cat)
+											i(8487),	-- Cat Carrier (Orange Tabby)
+											i(8488),	-- Cat Carrier (Silver Tabby)
+											i(10822),	-- Dark Whelpling
+											i(29953),	-- Golden Dragonhawk Hatchling
+											i(48116),	-- Gundrak Hatchling
+											i(48118),	-- Leaping Hatchling
+											i(48120),	-- Obsidian Hatchling
+											i(8496),	-- Parrot Cage (Cockatiel)
+											i(8492),	-- Parrot Cage (Green Wing Macaw)
+											i(8495),	-- Parrot Cage (Senegal)
+											i(48124),	-- Razormaw Hatchling
+											i(48126),	-- Razzashi Hatchling
+										},
+									}),
+								},
+								["crs"] = {
+									62980,	-- Imperial Vizier Zor'lok
+									62543,  -- Blade Lord Ta'yak
+									62164,	-- Garalon
+									62397,	-- Wind Lord Mel'jarak
+									62511,	-- Amber-Shaper Un'sok
+									62837,	-- Grand Empress Shek'zeer
+								},
 							}),
 							ach(6718, {	-- The Dread Approach
 								cr(62980, e(745, {	-- Imperial Vizier Zor'lok
@@ -210,18 +252,67 @@ _.Instances =
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
 							n(0, {		-- Zone Drop
-								i(86192),	-- Darting Damselfly Cuffs
-								i(86186),	-- Gleaming Moth Cuffs
-								i(86183),	-- Shining Cicada Bracers
-								i(86187),	-- Pearlescent Butterfly Wristbands
-								i(86185),	-- Smooth Beetle Wristbands
-								i(86189),	-- Jagged Hornet Bracers
-								i(86184),	-- Luminescent Firefly Wristguards
-								i(86188),	-- Inlaid Cricket Bracers
-								i(86191),	-- Plated Locust Bracers
-								i(86190),	-- Serrated Wasp Bracers
+								["groups"] = {
+									i(86192),	-- Darting Damselfly Cuffs
+									i(86186),	-- Gleaming Moth Cuffs
+									i(86183),	-- Shining Cicada Bracers
+									i(86187),	-- Pearlescent Butterfly Wristbands
+									i(86185),	-- Smooth Beetle Wristbands
+									i(86189),	-- Jagged Hornet Bracers
+									i(86184),	-- Luminescent Firefly Wristguards
+									i(86188),	-- Inlaid Cricket Bracers
+									i(86191),	-- Plated Locust Bracers
+									i(86190),	-- Serrated Wasp Bracers
+									i(86272),	-- Pattern: Fists of Lightning
+									i(86380),	-- Pattern: Imperial Silk Gloves
+									i(86279),	-- Pattern: Liferuned Leather Gloves
+									i(86280),	-- Pattern: Murderer's Gloves
+									i(86284),	-- Pattern: Raven Lord's Gloves
+									i(86382),	-- Pattern: Touch of the Light
+									i(86238),	-- Pattern: Chestguard of Nemeses
+									i(86381),	-- Pattern: Legacy of the Emperor
+									i(86281),	-- Pattern: Nightfire Robe
+									i(86283),	-- Pattern: Raiment of Blood and Bone
+									i(86379),	-- Pattern: Robe of Eternal Rule
+									i(86297),	-- Pattern: Stormbreaker Chestguard
+									i(87411),	-- Plans: Bloodforged Warfists
+									i(87409),	-- Plans: Gauntlets of Battle Command
+									i(87413),	-- Plans: Gauntlets of Unbound Devotion
+									i(87412),	-- Plans: Chestplate of Limitless Faith
+									i(87410),	-- Plans: Ornate Battleplate of the Master
+									i(87408),	-- Plans: Unyielding Bloodplate
+								},
+								["crs"] = {
+									62980,	-- Imperial Vizier Zor'lok
+									62543,  -- Blade Lord Ta'yak
+									62164,	-- Garalon
+									62397,	-- Wind Lord Mel'jarak
+									62511,	-- Amber-Shaper Un'sok
+									62837,	-- Grand Empress Shek'zeer
+									63569,	-- Amber Searsting
+									63568,	-- Amber-Ridden Mushan
+									63030,	-- Enslaved Bonesmasher
+									63191,	-- Garalon
+									64338,	-- Instructor Kli'thak
+									64340,	-- Instructor Maltik
+									64339,	-- Instructor Tak'thok
+									64341,	-- Instructor Zarik
+									63036,	-- Kor'thik Extremist
+									64902,	-- Kor'thik Fleshrender
+									63048,	-- Kor'thik Slicer
+									64916,	-- Kor'thik Swarmguard
+									64458,	-- Kor'thik Warsinger
+									63031,	-- Set'thik Fanatic
+									63049,	-- Set'thik Swiftblade
+									64453,	-- Set'thik Windblade
+									63593,	-- Set'thik Zephyrian
+									64917,	-- Sra'thik Ambercaller
+									63570,	-- Sra'thik Pool-Tender
+									63032,	-- Sra'thik Shield Master
+									64454,	-- Zar'thik Augurer
+									63035,	-- Zar'thik Zealot
+								},
 							}),
-							PATTERNS_ILVL_496,
 							cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 								i(86154),
 								i(89826),
@@ -380,19 +471,68 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
-							n(0, {			-- Zone Drop
-								un(7, i(86993)),	-- Darting Damselfly Cuffs
-								un(7, i(86994)),	-- Gleaming Moth Cuffs
-								un(7, i(86992)),	-- Shining Cicada Bracers
-								un(7, i(86996)),	-- Pearlescent Butterfly Wristbands
-								un(7, i(86995)),	-- Smooth Beetle Wristbands
-								un(7, i(86997)),	-- Jagged Hornet Bracers
-								un(7, i(86998)),	-- Luminescent Firefly Wristguards
-								un(7, i(86999)),	-- Inlaid Cricket Bracers
-								un(7, i(87000)),	-- Plated Locust Bracers
-								un(7, i(87001)),	-- Serrated Wasp Bracers
-							}),
-							PATTERNS_ILVL_496,							
+							n(0, {		-- Zone Drop
+								["groups"] = {
+									un(7, i(86993)),	-- Darting Damselfly Cuffs
+									un(7, i(86994)),	-- Gleaming Moth Cuffs
+									un(7, i(86992)),	-- Shining Cicada Bracers
+									un(7, i(86996)),	-- Pearlescent Butterfly Wristbands
+									un(7, i(86995)),	-- Smooth Beetle Wristbands
+									un(7, i(86997)),	-- Jagged Hornet Bracers
+									un(7, i(86998)),	-- Luminescent Firefly Wristguards
+									un(7, i(86999)),	-- Inlaid Cricket Bracers
+									un(7, i(87000)),	-- Plated Locust Bracers
+									un(7, i(87001)),	-- Serrated Wasp Bracers
+									i(86272),	-- Pattern: Fists of Lightning
+									i(86380),	-- Pattern: Imperial Silk Gloves
+									i(86279),	-- Pattern: Liferuned Leather Gloves
+									i(86280),	-- Pattern: Murderer's Gloves
+									i(86284),	-- Pattern: Raven Lord's Gloves
+									i(86382),	-- Pattern: Touch of the Light
+									i(86238),	-- Pattern: Chestguard of Nemeses
+									i(86381),	-- Pattern: Legacy of the Emperor
+									i(86281),	-- Pattern: Nightfire Robe
+									i(86283),	-- Pattern: Raiment of Blood and Bone
+									i(86379),	-- Pattern: Robe of Eternal Rule
+									i(86297),	-- Pattern: Stormbreaker Chestguard
+									i(87411),	-- Plans: Bloodforged Warfists
+									i(87409),	-- Plans: Gauntlets of Battle Command
+									i(87413),	-- Plans: Gauntlets of Unbound Devotion
+									i(87412),	-- Plans: Chestplate of Limitless Faith
+									i(87410),	-- Plans: Ornate Battleplate of the Master
+									i(87408),	-- Plans: Unyielding Bloodplate
+								},
+								["crs"] = {
+									62980,	-- Imperial Vizier Zor'lok
+									62543,  -- Blade Lord Ta'yak
+									62164,	-- Garalon
+									62397,	-- Wind Lord Mel'jarak
+									62511,	-- Amber-Shaper Un'sok
+									62837,	-- Grand Empress Shek'zeer
+									63569,	-- Amber Searsting
+									63568,	-- Amber-Ridden Mushan
+									63030,	-- Enslaved Bonesmasher
+									63191,	-- Garalon
+									64338,	-- Instructor Kli'thak
+									64340,	-- Instructor Maltik
+									64339,	-- Instructor Tak'thok
+									64341,	-- Instructor Zarik
+									63036,	-- Kor'thik Extremist
+									64902,	-- Kor'thik Fleshrender
+									63048,	-- Kor'thik Slicer
+									64916,	-- Kor'thik Swarmguard
+									64458,	-- Kor'thik Warsinger
+									63031,	-- Set'thik Fanatic
+									63049,	-- Set'thik Swiftblade
+									64453,	-- Set'thik Windblade
+									63593,	-- Set'thik Zephyrian
+									64917,	-- Sra'thik Ambercaller
+									63570,	-- Sra'thik Pool-Tender
+									63032,	-- Sra'thik Shield Master
+									64454,	-- Zar'thik Augurer
+									63035,	-- Zar'thik Zealot
+								},
+							}),						
 							cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 								i(86945),
 								i(89919),

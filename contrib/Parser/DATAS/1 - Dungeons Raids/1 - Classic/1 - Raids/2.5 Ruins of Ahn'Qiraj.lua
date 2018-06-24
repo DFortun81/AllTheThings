@@ -5,14 +5,14 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(743, { 	-- Ruins of Ahn'Qiraj
 		["groups"] = {
-			e(1537, { 	-- Kurinnaxx
+			n(-1, { -- Common Boss Drop
 				["groups"] = {
-					dr(0.8, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(0.5, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(0.5, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(0.4, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(0.5, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(0.6, i(20736)),	-- Formula: Enchant Cloak - Dodge
+					i(20729),	-- Formula: Enchant Gloves - Fire Power
+					i(20728),	-- Formula: Enchant Gloves - Frost Power
+					i(20730),	-- Formula: Enchant Gloves - Healing Power
+					i(20727),	-- Formula: Enchant Gloves - Shadow Power
+					i(20731),	-- Formula: Enchant Gloves - Superior Agility
+					i(20736),	-- Formula: Enchant Cloak - Dodge
 					i(20888, { -- Qiraji Ceremonial Ring
 						{
 							["questID"] = 8701, -- Band of Veiled Shadows (Quest)
@@ -165,6 +165,18 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 					}),
+				},
+				["crs"] = {
+					15348, -- Kurinnaxx
+					15341, -- General Rajaxx
+					15370, -- Buru the Gorger
+					15369, -- Ayamiss the Hunter
+					15339, -- Ossirian the Unscarred
+					15340, -- Moam
+				},
+			}),
+			e(1537, { 	-- Kurinnaxx
+				["groups"] = {
 					i(21498),	-- Qiraji Sacrificial Dagger
 					i(21499),	-- Vestments of the Shifting Sands
 					i(21502),	-- Sand Reaver Wristguards
@@ -183,164 +195,6 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1538, { 	-- General Rajaxx
 				["groups"] = {
-					dr(0.5, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(1.2, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(1.0, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(0.6, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(0.7, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(0.5, i(20736)),	-- Formula: Enchant Cloak - Dodge
-					i(20888, { -- Qiraji Ceremonial Ring
-						{
-							["questID"] = 8701, -- Band of Veiled Shadows (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21405),	-- Band of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8697, -- Ring of Infinite Wisdom (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21411),	-- Ring of Infinite Wisdom
-							},
-						},
-						{
-							["questID"] = 8702, -- Ring of Unspoken Names (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21417),	-- Ring of Unspoken Names
-							},
-						},
-						{
-							["questID"] = 8704, -- Signet of the Unseen Path (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21402),	-- Signet of the Unseen Path
-							},
-						},
-					}),
-					i(20884, { -- Qiraji Magisterial Ring
-						{
-							["questID"] = 8700, -- Band of Unending Life (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21408),	-- Band of Unending Life
-							},
-						},
-						{
-							["questID"] = 8699, -- Band of Vaulted Secrets (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21414),	-- Band of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8703, -- Ring of Eternal Justice (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21396),	-- Ring of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8698, -- Ring of the Gathering Storm (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21399),	-- Ring of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8556, -- Signet of Unyielding Strength (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21393),	-- Signet of Unyielding Strength
-							},
-						},
-					}),
-					i(20885, { -- Qiraji Martial Drape
-						{
-							["questID"] = 8693, -- Cloak of Veiled Shadows (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21406),	-- Cloak of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8557, -- Drape of Unyielding Strength (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21394),	-- Drape of Unyielding Strength
-							},
-						},
-						{
-							["questID"] = 8691, -- Drape of Vaulted Secrets (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21415),	-- Drape of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8689, -- Shroud of Infinite Wisdom (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21412),	-- Shroud of Infinite Wisdom
-							},
-						},
-					}),
-					i(20889, { -- Qiraji Regal Drape
-						{
-							["questID"] = 8695, -- Cape of Eternal Justice (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21397),	-- Cape of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8690, -- Cloak of the Gathering Storm (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21400),	-- Cloak of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8696, -- Cloak of the Unseen Path (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21403),	-- Cloak of the Unseen Path
-							},
-						},
-						{
-							["questID"] = 8692, -- Cloak of Unending Life (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21409),	-- Cloak of Unending Life
-							},
-						},
-						{
-							["questID"] = 8694, -- Shroud of Unspoken Names (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21418),	-- Shroud of Unspoken Names
-							},
-						},
-					}),
 					i(21492),	-- Manslayer of the Qiraji
 					i(21496),	-- Bracers of Qiraji Command
 					i(21494),	-- Southwind's Grasp
@@ -391,164 +245,6 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1540, { 	-- Buru the Gorger
 				["groups"] = {
-					dr(0.7, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(0.4, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(0.3, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(0.5, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(0.8, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(0.8, i(20736)),	-- Formula: Enchant Cloak - Dodge
-					i(20888, { -- Qiraji Ceremonial Ring
-						{
-							["questID"] = 8701, -- Band of Veiled Shadows (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21405),	-- Band of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8697, -- Ring of Infinite Wisdom (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21411),	-- Ring of Infinite Wisdom
-							},
-						},
-						{
-							["questID"] = 8702, -- Ring of Unspoken Names (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21417),	-- Ring of Unspoken Names
-							},
-						},
-						{
-							["questID"] = 8704, -- Signet of the Unseen Path (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21402),	-- Signet of the Unseen Path
-							},
-						},
-					}),
-					i(20884, { -- Qiraji Magisterial Ring
-						{
-							["questID"] = 8700, -- Band of Unending Life (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21408),	-- Band of Unending Life
-							},
-						},
-						{
-							["questID"] = 8699, -- Band of Vaulted Secrets (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21414),	-- Band of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8703, -- Ring of Eternal Justice (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21396),	-- Ring of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8698, -- Ring of the Gathering Storm (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21399),	-- Ring of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8556, -- Signet of Unyielding Strength (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21393),	-- Signet of Unyielding Strength
-							},
-						},
-					}),
-					i(20885, { -- Qiraji Martial Drape
-						{
-							["questID"] = 8693, -- Cloak of Veiled Shadows (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21406),	-- Cloak of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8557, -- Drape of Unyielding Strength (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21394),	-- Drape of Unyielding Strength
-							},
-						},
-						{
-							["questID"] = 8691, -- Drape of Vaulted Secrets (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21415),	-- Drape of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8689, -- Shroud of Infinite Wisdom (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21412),	-- Shroud of Infinite Wisdom
-							},
-						},
-					}),
-					i(20889, { -- Qiraji Regal Drape
-						{
-							["questID"] = 8695, -- Cape of Eternal Justice (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21397),	-- Cape of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8690, -- Cloak of the Gathering Storm (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21400),	-- Cloak of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8696, -- Cloak of the Unseen Path (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21403),	-- Cloak of the Unseen Path
-							},
-						},
-						{
-							["questID"] = 8692, -- Cloak of Unending Life (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21409),	-- Cloak of Unending Life
-							},
-						},
-						{
-							["questID"] = 8694, -- Shroud of Unspoken Names (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21418),	-- Shroud of Unspoken Names
-							},
-						},
-					}),
 					i(20890, { -- Qiraji Ornate Hilt
 						{
 							["questID"] = 8707, -- Blade of Vaulted Secrets (Quest)
@@ -664,164 +360,6 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1541, { 	-- Ayamiss the Hunter
 				["groups"] = {
-					dr(0.3, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(0.8, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(0.6, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(0.4, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(0.5, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(0.7, i(20736)),	-- Formula: Enchant Cloak - Dodge
-					i(20888, { -- Qiraji Ceremonial Ring
-						{
-							["questID"] = 8701, -- Band of Veiled Shadows (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21405),	-- Band of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8697, -- Ring of Infinite Wisdom (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21411),	-- Ring of Infinite Wisdom
-							},
-						},
-						{
-							["questID"] = 8702, -- Ring of Unspoken Names (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21417),	-- Ring of Unspoken Names
-							},
-						},
-						{
-							["questID"] = 8704, -- Signet of the Unseen Path (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21402),	-- Signet of the Unseen Path
-							},
-						},
-					}),
-					i(20884, { -- Qiraji Magisterial Ring
-						{
-							["questID"] = 8700, -- Band of Unending Life (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21408),	-- Band of Unending Life
-							},
-						},
-						{
-							["questID"] = 8699, -- Band of Vaulted Secrets (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21414),	-- Band of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8703, -- Ring of Eternal Justice (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21396),	-- Ring of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8698, -- Ring of the Gathering Storm (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21399),	-- Ring of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8556, -- Signet of Unyielding Strength (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21393),	-- Signet of Unyielding Strength
-							},
-						},
-					}),
-					i(20885, { -- Qiraji Martial Drape
-						{
-							["questID"] = 8693, -- Cloak of Veiled Shadows (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21406),	-- Cloak of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8557, -- Drape of Unyielding Strength (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21394),	-- Drape of Unyielding Strength
-							},
-						},
-						{
-							["questID"] = 8691, -- Drape of Vaulted Secrets (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21415),	-- Drape of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8689, -- Shroud of Infinite Wisdom (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21412),	-- Shroud of Infinite Wisdom
-							},
-						},
-					}),
-					i(20889, { -- Qiraji Regal Drape
-						{
-							["questID"] = 8695, -- Cape of Eternal Justice (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21397),	-- Cape of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8690, -- Cloak of the Gathering Storm (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21400),	-- Cloak of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8696, -- Cloak of the Unseen Path (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21403),	-- Cloak of the Unseen Path
-							},
-						},
-						{
-							["questID"] = 8692, -- Cloak of Unending Life (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21409),	-- Cloak of Unending Life
-							},
-						},
-						{
-							["questID"] = 8694, -- Shroud of Unspoken Names (Quest)
-							["qg"] = 15500,		-- Quest Giver: Keyl Swiftclaw
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21418),	-- Shroud of Unspoken Names
-							},
-						},
-					}),
 					i(20890, { -- Qiraji Ornate Hilt
 						{
 							["questID"] = 8707, -- Blade of Vaulted Secrets (Quest)
@@ -911,12 +449,6 @@ _.Instances = { tier(1, {	-- Classic
 			e(1542, { 	-- Ossirian the Unscarred
 				["groups"] = {
 					ach(689),	-- Ruins of Ahn'Qiraj
-					dr(0.7, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(0.6, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(1.2, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(0.5, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(0.6, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(0.7, i(20736)),	-- Formula: Enchant Cloak - Dodge
 					{
 						["itemID"] = 21220,	-- Head of Ossirian the Unscarred
 						["questID"] = 8791,	-- The Fall of Ossirian
@@ -927,82 +459,6 @@ _.Instances = { tier(1, {	-- Classic
 							i(21506),	-- Pendant of the Shifting Sands
 						},
 					},
-					i(20888, { 	-- Qiraji Ceremonial Ring
-						{
-							["questID"] = 8701, -- Band of Veiled Shadows (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21405),	-- Band of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8697, -- Ring of Infinite Wisdom (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21411),	-- Ring of Infinite Wisdom
-							},
-						},
-						{
-							["questID"] = 8702, -- Ring of Unspoken Names (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21417),	-- Ring of Unspoken Names
-							},
-						},
-						{
-							["questID"] = 8704, -- Signet of the Unseen Path (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21402),	-- Signet of the Unseen Path
-							},
-						},
-					}),
-					i(20884, { 	-- Qiraji Magisterial Ring
-						{
-							["questID"] = 8700, -- Band of Unending Life (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21408),	-- Band of Unending Life
-							},
-						},
-						{
-							["questID"] = 8699, -- Band of Vaulted Secrets (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21414),	-- Band of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8703, -- Ring of Eternal Justice (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21396),	-- Ring of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8698, -- Ring of the Gathering Storm (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21399),	-- Ring of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8556, -- Signet of Unyielding Strength (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21393),	-- Signet of Unyielding Strength
-							},
-						},
-					}),
 					i(20890, { 	-- Qiraji Ornate Hilt
 						{
 							["questID"] = 8707, -- Blade of Vaulted Secrets (Quest)
@@ -1097,89 +553,6 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1539, { 	-- Moam
 				["groups"] = {
-					dr(0.6, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(0.9, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(0.5, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(0.4, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(0.7, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(0.5, i(20736)),	-- Formula: Enchant Cloak - Dodge
-					i(22220),	-- Plans: Black Grasp of the Destroyer
-					i(20888, { 	-- Qiraji Ceremonial Ring
-						{
-							["questID"] = 8701, -- Band of Veiled Shadows (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21405),	-- Band of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8697, -- Ring of Infinite Wisdom (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21411),	-- Ring of Infinite Wisdom
-							},
-						},
-						{
-							["questID"] = 8702, -- Ring of Unspoken Names (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21417),	-- Ring of Unspoken Names
-							},
-						},
-						{
-							["questID"] = 8704, -- Signet of the Unseen Path (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21402),	-- Signet of the Unseen Path
-							},
-						},
-					}),
-					i(20884, { 	-- Qiraji Magisterial Ring
-						{
-							["questID"] = 8700, -- Band of Unending Life (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21408),	-- Band of Unending Life
-							},
-						},
-						{
-							["questID"] = 8699, -- Band of Vaulted Secrets (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21414),	-- Band of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8703, -- Ring of Eternal Justice (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21396),	-- Ring of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8698, -- Ring of the Gathering Storm (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21399),	-- Ring of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8556, -- Signet of Unyielding Strength (Quest)
-							["qg"] = 15498,		-- Quest Giver: Windcaller Yessendra
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21393),	-- Signet of Unyielding Strength
-							},
-						},
-					}),
 					i(20890, { 	-- Qiraji Ornate Hilt
 						{
 							["questID"] = 8707, -- Blade of Vaulted Secrets (Quest)
