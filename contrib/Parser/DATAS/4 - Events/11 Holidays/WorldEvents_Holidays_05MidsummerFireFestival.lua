@@ -29,6 +29,32 @@ _.WorldEvents =
 							ach(271, { -- Burning Hot Pole Dance
 							}),
 							ach(1145, { -- King of the Fire Festival
+								{
+									["questID"] = 9324, -- Stealing Orgrimmar's Flame
+									["itemID"] = 23179, -- Flame of Orgrimmar
+								},
+								{
+									["questID"] = 9325, -- Stealing Thunder Bluff's Flame
+									["itemID"] = 23180, -- Flame of Thunder Bluff
+								},
+								{
+									["questID"] = 9326, -- Stealing the Undercity's Flame
+									["itemID"] = 23181, -- Flame of the Undercity
+								},
+								{
+									["questID"] = 11935, -- Stealing Silvermoon's Flame
+									["itemID"] = 35568, -- Flame of Silvermoon
+								},
+								q(9365, { -- A Thief's Reward
+									["groups"] = {
+										un(21, i(23323)), -- Crown of the Fire Festival
+									},
+									["qg"] = 16817, -- Festival Loremaster
+									["races"] = ALLIANCE_ONLY,
+									["sourceQuests"] = {
+										9324, 9325, 9326, 11935
+									},
+								}),
 							}),
 							ach(272, { -- Torch Juggler
 							}),
@@ -54,6 +80,32 @@ _.WorldEvents =
 							ach(263, { -- Ice the Frost Lord
 							}),
 							ach(1145, { -- King of the Fire Festival
+								{
+									["questID"] = 9330,
+									["itemID"] = 23182,
+								},
+								{
+									["questID"] = 9331,
+									["itemID"] = 23183,
+								},
+								{
+									["questID"] = 9332,
+									["itemID"] = 23184,
+								},
+								{
+									["questID"] = 11933,
+									["itemID"] = 35569,
+								},
+								q(9339, { -- A Thief's Reward
+									["groups"] = {
+										un(21, i(23323)), -- Crown of the Fire Festival
+									},
+									["qg"] = 16818, -- Festival Talespinner
+									["races"] = HORDE_ONLY,
+									["sourceQuests"] = {
+										9330, 9331, 9332, 11933
+									},
+								}),
 							}),
 							ach(272, { -- Torch Juggler
 							}),
@@ -110,96 +162,99 @@ _.WorldEvents =
 						}),
 					}),
 					n(-17, { -- Quests
-					-- Kalimdor
-						m(101, { -- Desolace
-							["groups"] = {
-								{
-									["objectID"] = 187957, -- Horde Bonfire
-									["questID"] = 11769, -- Desecrate this Fire!
-									["races"] = ALLIANCE_ONLY,
-								},	
-								{
-									["objectID"] = 187924, -- Alliance Bonfire
-									["questID"] = 11741, -- Desecrate this Fire!
-									["races"] = HORDE_ONLY,
-								},						
-								q(11812, { -- Honor the Flame
-									["groups"] = {},
-									["qg"] = 25894, -- Desolace Flame Warden
-									["races"] = ALLIANCE_ONLY,
-								}),
-								q(11882, {	-- Playing with Fire
-									["groups"] = {},
-									["qg"] = 25962,	-- Fire Eater
-									["races"] = ALLIANCE_ONLY,
-								}),
-								q(11845, {	-- Honor the Flame
-									["groups"] = {},
-									["qg"] = 25928,	-- Desolace Flame Keeper
-									["races"] = HORDE_ONLY,
-								}),									
-							},
-						}), -- End of Desolace
-						m(4, { -- Durotar
-							["groups"] = {
-								{
-									["objectID"] = 187958, -- Horde Bonfire
-									["questID"] = 11770, -- Desecrate this Fire!
-									["races"] = ALLIANCE_ONLY,
+						m(13, { -- Kalimdor
+							m(101, { -- Desolace
+								["groups"] = {
+									{
+										["objectID"] = 187957, -- Horde Bonfire
+										["questID"] = 11769, -- Desecrate this Fire!
+										["races"] = ALLIANCE_ONLY,
+									},	
+									{
+										["objectID"] = 187924, -- Alliance Bonfire
+										["questID"] = 11741, -- Desecrate this Fire!
+										["races"] = HORDE_ONLY,
+									},						
+									q(11812, { -- Honor the Flame
+										["groups"] = {},
+										["qg"] = 25894, -- Desolace Flame Warden
+										["races"] = ALLIANCE_ONLY,
+									}),
+									q(11882, {	-- Playing with Fire
+										["groups"] = {},
+										["qg"] = 25962,	-- Fire Eater
+										["races"] = ALLIANCE_ONLY,
+									}),
+									q(11845, {	-- Honor the Flame
+										["groups"] = {},
+										["qg"] = 25928,	-- Desolace Flame Keeper
+										["races"] = HORDE_ONLY,
+									}),									
 								},
-								q(11966, {	-- Incense for the Festival Scorchlings
-									["g"] = {},
-									["qg"] = 16818,	-- Festival Talespinner
-									["races"] = HORDE_ONLY,
-								}),									
-								q(11846, { -- Honor the Flame
-									["groups"] = {},
-									["qg"] = 25929, -- Durotar Flame Keeper
-									["races"] = HORDE_ONLY,
-								}),
-								q(11915, {	-- Playing with Fire
-									["groups"] = {},
-									["qg"] = 25994,	-- Fire Eater
-									["races"] = HORDE_ONLY,
-								}),									
-							},
-						}), -- End of Durotar
-						m(141, { -- Dustwallow Marsh
-							["groups"] = {
-								{
-									["objectID"] = 187927, -- Alliance Bonfire
-									["questID"] = 11744, -- Desecrate this Fire!
-									["races"] = HORDE_ONLY,
+							}), -- End of Desolace
+							m(4, { -- Durotar
+								["groups"] = {
+									{
+										["objectID"] = 187958, -- Horde Bonfire
+										["questID"] = 11770, -- Desecrate this Fire!
+										["races"] = ALLIANCE_ONLY,
+									},
+									q(11966, {	-- Incense for the Festival Scorchlings
+										["g"] = {},
+										["qg"] = 16818,	-- Festival Talespinner
+										["races"] = HORDE_ONLY,
+									}),									
+									q(11846, { -- Honor the Flame
+										["groups"] = {},
+										["qg"] = 25929, -- Durotar Flame Keeper
+										["races"] = HORDE_ONLY,
+									}),
+									q(11915, {	-- Playing with Fire
+										["groups"] = {},
+										["qg"] = 25994,	-- Fire Eater
+										["races"] = HORDE_ONLY,
+									}),									
 								},
-								{
-									["objectID"] = 187959, -- Horde Bonfire
-									["questID"] = 11771, -- Desecrate this Fire!
-									["races"] = ALLIANCE_ONLY,
+							}), -- End of Durotar
+							m(141, { -- Dustwallow Marsh
+								["groups"] = {
+									{
+										["objectID"] = 187927, -- Alliance Bonfire
+										["questID"] = 11744, -- Desecrate this Fire!
+										["races"] = HORDE_ONLY,
+									},
+									{
+										["objectID"] = 187959, -- Horde Bonfire
+										["questID"] = 11771, -- Desecrate this Fire!
+										["races"] = ALLIANCE_ONLY,
+									},
+									q(11815, {	-- Honor the Flame
+										["groups"] = {},
+										["qg"] = 25894,	-- Dustwallow Marsh Flame Warden
+										["races"] = ALLIANCE_ONLY,
+									}),
+									q(11882, {	-- Playing with Fire
+										["groups"] = {},
+										["qg"] = 25962,	-- Fire Eater
+										["races"] = ALLIANCE_ONLY,
+									}),
+									q(11847, {	-- Honor the Flame
+										["groups"] = {},
+										["qg"] = 25930,	-- Dustwallow Marsh Flame Keeper
+										["races"] = HORDE_ONLY,
+									}),
 								},
-								q(11815, {	-- Honor the Flame
-									["groups"] = {},
-									["qg"] = 25894,	-- Dustwallow Marsh Flame Warden
-									["races"] = ALLIANCE_ONLY,
-								}),
-								q(11882, {	-- Playing with Fire
-									["groups"] = {},
-									["qg"] = 25962,	-- Fire Eater
-									["races"] = ALLIANCE_ONLY,
-								}),
-								q(11847, {	-- Honor the Flame
-									["groups"] = {},
-									["qg"] = 25930,	-- Dustwallow Marsh Flame Keeper
-									["races"] = HORDE_ONLY,
-								}),
-							},
-						}), -- End of Dustwallow Marsh
-						q(9365, {	-- A Thief's Reward
-							un(21, i(23323)),	-- Crown of the Fire Festival
+							}), -- End of Dustwallow Marsh
 						}),
-						q(11972, {	-- Shards of Ahune
-							un(21, i(35279)),	-- Tabard of Summer Skies
-							un(21, i(35280)),	-- Tabard of Summer Flames
-						}),
+						{
+							["questID"] = 11972, -- Shards of Ahune
+							["itemID"] = 35723, -- Shards of Ahune (Item)
+							["groups"] = {
+								un(21, i(35279)),	-- Tabard of Summer Skies
+								un(21, i(35280)),	-- Tabard of Summer Flames
+							},
+							["description"] = "This item can be looted and completed once per character, but has no level requirement.",
+						},
 					}),
 					n(-2, { -- Vendors
 						a(n(26123, { -- Midsummer Supplier (Alliance Vendor)
