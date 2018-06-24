@@ -7,41 +7,6 @@ _.Zones =
 		m(467, {	-- Zangarmarsh
 			["groups"] = {			
 				n( -3, {	-- Holidays
---[[					
-					n(-47, {    	-- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913,	-- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {    	-- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,   	-- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {    	-- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798,	-- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {    	-- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qh(10945),	-- Hch'uu and the Mushroom People (not sure where this quest starts)
-							}),
-						},
-						["achievementID"] = 1793,	-- For The Children
-						["u"] = 20,
-					}),
---]]					
 					n(-53, {    	-- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -54,16 +19,6 @@ _.Zones =
 						["achievementID"] = 1038,	-- The Flame Warden
 						["u"] = 21,
 					}),
---[[					
-					n(-56, {    	-- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683,	-- Brewmaster
-						["u"] = 24,
-					}),
---]]
 					n(-58, {    	-- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -76,24 +31,6 @@ _.Zones =
 						["achievementID"] = 1656,	-- Hallowed Be Thy Name
 						["u"] = 26,
 					}),	
---[[
-					n(-60, {    	-- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478,	-- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {    	-- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691,	-- Merrymaker
-						["u"] = 29,
-					}),		
---]]				
 				}),				
 				n(-25, {	-- Pet Battle
 					p(419), 	-- Small Frog 
@@ -788,24 +725,12 @@ _.Zones =
 						un(1, i(24315)),	-- Pattern: Heavy Netherweave Net
 						i(33149),	-- Formula: Enchant Cloak - Stealth
 						i(28271),	-- Formula: Enchant Gloves - Precise Strikes
-						i(31390, {	-- Plans: Wildguard Breastplate
-							i(31364),	-- Wildguard Breastplate
-						}),
-						i(31391, {	-- Plans: Wildguard Leggings
-							i(31367),	-- Wildguard Leggings
-						}),
-						i(31392, {	-- Plans: Wildguard Helm
-							i(31368),	-- Wildguard Helm
-						}),
-						i(25735, {	-- Pattern: Heavy Clefthoof Vest
-							i(25689),	-- Heavy Clefthoof Vest
-						}),
-						i(25736, {	-- Pattern: Heavy Clefthoof Leggings
-							i(25690),	-- Heavy Clefthoof Leggings
-						}),
-						i(25737, {	-- Pattern: Heavy Clefthoof Boots
-							i(25691),	-- Heavy Clefthoof Boots
-						}),
+						i(31390),	-- Plans: Wildguard Breastplate
+						i(31391),	-- Plans: Wildguard Leggings
+						i(31392),	-- Plans: Wildguard Helm
+						i(25735),	-- Pattern: Heavy Clefthoof Vest
+						i(25736),	-- Pattern: Heavy Clefthoof Leggings
+						i(25737),	-- Pattern: Heavy Clefthoof Boots
 						i(32070),	-- Recipe: Earthen Elixir
 						i(31356),	-- Recipe: Flask of Distilled Wisdom
 						i(22922),	-- Recipe: Major Nature Protection Potion
