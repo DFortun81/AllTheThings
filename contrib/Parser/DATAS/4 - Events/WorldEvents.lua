@@ -89,9 +89,7 @@ _.WorldEvents =
 		}),
 --		n(-52, { -- Children's Week
 --		}),
-		n(-53, { -- Midsummer Fire Festival [Alliance]
-		}),
-		n(-54, { -- Midsummer Fire Festival [Horde]
+		n(-53, { -- Midsummer Fire Festival
 		}),
 		n(-63, { -- Trial of Style
 		}),
