@@ -10,20 +10,27 @@ _.WorldEvents =
 					n(-4, { -- Achievements
 						a(ach(1038, { -- The Flame Warden
 							un(21, title(44)), -- Flame Warden
-							ach(1034, { -- The Fires of Azeroth
+							a(ach(1034, { -- The Fires of Azeroth
 								un(21, ach(1022)), -- Flame Warden of Eastern Kingdoms
 								un(21, ach(1023)), -- Flame Warden of Kalimdor
 								un(21, ach(1024)), -- Flame Warden of Outland
 								un(21, ach(6008)), -- Flame Warden of Northrend
 								un(21, ach(6011)), -- Flame Warden of Cataclysm
-							}),
-							ach(1035, { -- Desecration of the Horde
-								un(21, ach(1028)), -- Extinguishing Eastern Kingdoms
-								un(21, ach(1029)), -- Extinguishing Kalimdor
+							})),
+							a(ach(1035, { -- Desecration of the Horde
+								a(un(21, ach(1028))), 	-- Extinguishing Eastern Kingdoms
+								a(un(21, ach(1029, {	-- Extinguishing Kalimdor
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 4,			-- Durotar [Criteria]
+										--["objectID"] = 187924, 		-- Alliance Bonfire
+										["maps"] = { 4 }, 			-- Durotar
+									},
+								}))), 
 								un(21, ach(1030)), -- Extinguishing Outland
 								un(21, ach(6007)), -- Extinguishing Northrend
 								un(21, ach(6013)), -- Extinguishing the Cataclysm
-							}),
+							})),
 							ach(263, { -- Ice the Frost Lord
 							}),
 							ach(271, { -- Burning Hot Pole Dance
@@ -61,13 +68,21 @@ _.WorldEvents =
 						})),
 						h(ach(1039, { -- The Flame Keeper
 							un(21, title(45)), -- Flame Keeper
-							ach(1036, { -- The Fires of Azeroth
-								un(21, ach(1025)), -- Flame Keeper of Eastern Kingdoms
-								un(21, ach(1026)), -- Flame Keeper of Kalimdor
+							h(ach(1036, { -- The Fires of Azeroth
+								h(un(21, ach(1025))), 	-- Flame Keeper of Eastern Kingdoms
+								h(un(21, ach(1026, {	-- Flame Keeper of Kalimdor
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 4,			-- Durotar [Criteria]
+										["questID"] = 11846, 		-- Honor the Flame [Durotar]
+										["qg"] = 25929, -- Quest Giver: Durotar Flame Keeper
+										["maps"] = { 4 }, 			-- Durotar
+									},
+								}))),
 								un(21, ach(1027)), -- Flame Keeper of Outland
 								un(21, ach(6009)), -- Flame Keeper of Northrend
 								un(21, ach(6012)), -- Flame Keeper of Cataclysm
-							}),
+							})),
 							ach(1037, { -- Desecration of the Alliance
 								un(21, ach(1031)), -- Extinguishing Eastern Kingdoms
 								un(21, ach(1032)), -- Extinguishing Kalimdor

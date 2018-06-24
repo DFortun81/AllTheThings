@@ -1225,6 +1225,16 @@ local function GetRelativeDifficulty(group, difficultyID)
 		if group.parent then return GetRelativeDifficulty(group.parent, difficultyID); end
 	end
 end
+local function GetRelativeField(group, field, value)
+	if group then
+		if group[field] then
+			if group[field] == value then
+				return true;
+			end
+		end
+		if group.parent then return GetRelativeField(group.parent, field, value); end
+	end
+end
 local function GetRelativeInstanceID(group)
 	if group then
 		if group.instanceID then return group.instanceID, group; end
@@ -1656,13 +1666,61 @@ local function OpenMiniList(field, id, label)
 			results = setmetatable({ back = 1 }, { __index = results[1] });
 		else
 			-- A couple of objects matched, let's make a header.
-			local header = { g = {}, baseIndent = -1, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, back = 1, total = 0, progress = 0 };
+			local header, holiday = { g = {}, baseIndent = -1, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, total = 0, progress = 0 };
 			for i, group in ipairs(results) do
 				header.progress = header.progress + (group.progress or 0);
 				header.total = header.total + (group.total or 0);
 				header.parent = group.parent;
-				tinsert(header.g, group);
+				
+				-- If this is relative to a holiday, let's do something special
+				if GetRelativeField(group, "npcID", -3) then
+					if not holiday then
+						holiday = app.CreateNPC(-3, { g = {}, expanded = true, visible = true, total = 0, progress = 0 });
+						holiday.parent = header;
+						tinsert(header.g, 1, holiday);
+					end
+					if group.achievementID then
+						if group.criteriaID then
+							if group.parent.achievementID then
+								group = app.CreateAchievement(group.parent.achievementID, 
+									{ g = { group }, total = group.total, progress = group.progress, 
+										u = group.parent.u, races = group.parent.races, classes = group.parent.classes, nmc = group.parent.nmc, nmr = group.parent.nmr });
+							else
+								group = app.CreateAchievement(group.achievementID,
+									{ g = { group }, total = group.total, progress = group.progress,
+										u = group.u, races = group.races, classes = group.classes, nmc = group.nmc, nmr = group.nmr });
+							end
+						end
+					elseif group.criteriaID and group.parent.achievementID then
+						group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
+							u = group.parent.u, races = group.parent.races, classes = group.parent.classes, nmc = group.parent.nmc, nmr = group.parent.nmr });
+					end
+					
+					holiday.progress = holiday.progress + (group.progress or 0);
+					holiday.total = holiday.total + (group.total or 0);
+					tinsert(holiday.g, group);
+				elseif group.achievementID then
+					if group.criteriaID then
+						if group.parent.achievementID then
+							group = app.CreateAchievement(group.parent.achievementID, 
+								{ g = { group }, total = group.total, progress = group.progress, u = group.parent.u });
+						else
+							group = app.CreateAchievement(group.achievementID,
+								{ g = { group }, total = group.total, progress = group.progress, u = group.u });
+						end
+						tinsert(header.g, 1, group);
+					else
+						tinsert(header.g, group);
+					end
+				elseif group.criteriaID and group.parent.achievementID then
+					group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, u = group.parent.u });
+					tinsert(header.g, 1, group);
+				else
+					tinsert(header.g, group);
+				end
 			end
+			
+			if holiday then app.UpdateGroups(holiday, holiday.g, 1); end
 			
 			-- Swap out the map data for the header.
 			results = header;
@@ -6193,6 +6251,12 @@ local function UpdateWindow(self, force)
 		wipe(self.rowData);
 	end
 	if self.data and (force or self:IsVisible()) then
+		if force and self.data and self.data.g and not self.data.refreshed then
+			self.data.refreshed = true;
+			--self.data.progress = 0;
+			--self.data.total = 0;
+			UpdateGroups(self.data, self.data.g, 1);
+		end
 		self.data.expanded = true;
 		if self.data.baseIndent and self.data.g then
 			-- This is Mini Listed Data
@@ -6255,6 +6319,12 @@ function app:UpdateWindows(force)
 		if window:Update(force) then
 			--print(name .. ": Updated");
 			anyUpdated = true;
+		end
+	end
+	if force then
+		-- Only refresh each data set one time.
+		for name, window in pairs(app.Windows) do
+			if window.data then window.data.refreshed = nil; end
 		end
 	end
 	return anyUpdated;
@@ -6660,6 +6730,7 @@ function app:RefreshData(lazy, safely)
 		if app.refreshDataForce then
 			app.refreshDataForce = nil;
 			local allData = app:GetDataCache();
+			allData.refreshed = true;
 			allData.progress = 0;
 			allData.total = 0;
 			UpdateGroups(allData, allData.g, 1);
