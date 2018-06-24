@@ -281,7 +281,7 @@ _.Zones =
 						},
 						["description"] = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",		
 					}),
-					n(128758, { -- Crafticus Mindbender
+					n(128756, { -- Crafticus Mindbender
 						["groups"] = {
 							currency(823, { -- Apexis Crystal
 								["groups"] = {

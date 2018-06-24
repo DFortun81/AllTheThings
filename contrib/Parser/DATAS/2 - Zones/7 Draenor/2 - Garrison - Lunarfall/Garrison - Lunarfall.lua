@@ -3794,19 +3794,29 @@ _.Zones =
 			]]--							
 					n(-119, { 			-- Trading Post
 						n(85427, { 	-- Maaria - Laughing Skull Quartermaster 
-							i(119182), 		-- Toy
-							i(119150), 		-- Pet
-							i(119422),
-							i(119423),
-							i(119424),
-							i(119425), 
-							i(119426),
-							i(119427),
-							i(119428),
-							i(119429),
-							i(119421), 		-- Toy
-							i(119140),
-							i(116665), 		-- Mount
+							["groups"] = {
+								currency(823, { -- Apexis Crystal
+									["groups"] = {
+										i(116665), 	-- Armored Irontusk
+										i(119150), 	-- Sky Fry
+									},
+								}),
+								i(119167, { -- Contract: Vindicator Heluun
+									follower(458), -- Vindicator Heluun
+								}),
+								i(119428), 	-- Greathelm of the Sha'tari Defense
+								i(119427), 	-- Shoulderguards of the Sha'tari Defense
+								i(119422), 	-- Breastplate of the Sha'tari Defense
+								i(119429), 	-- Bracers of the Sha'tari Defense
+								i(119426), 	-- Gauntlets of the Sha'tari Defense
+								i(119425),  -- Belt of the Sha'tari Defense
+								i(119424), 	-- Legplates of the Sha'tari Defense
+								i(119423), 	-- Boots of the Sha'tari Defense
+								i(119421), 	-- Sha'tari Defender's Medallion
+								i(119140), 	-- Sha'tari Defense Tabard
+								i(118685),	-- Sha'tari Protector
+								i(119182), 	-- Soul Evacuation Crystal
+							},
 						}),	
 					}),
 				}),
