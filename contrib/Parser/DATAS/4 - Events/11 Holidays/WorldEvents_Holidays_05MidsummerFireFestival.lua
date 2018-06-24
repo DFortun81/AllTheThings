@@ -9,7 +9,7 @@ _.WorldEvents =
 				["groups"] = {
 					n(-4, { -- Achievements
 						a(ach(1038, { -- The Flame Warden
-							un(21, title(75)), -- Flame Warden
+							un(21, title(44)), -- Flame Warden
 							ach(1034, { -- The Fires of Azeroth
 								un(21, ach(1022)), -- Flame Warden of Eastern Kingdoms
 								un(21, ach(1023)), -- Flame Warden of Kalimdor
@@ -17,6 +17,51 @@ _.WorldEvents =
 								un(21, ach(6008)), -- Flame Warden of Northrend
 								un(21, ach(6011)), -- Flame Warden of Cataclysm
 							}),
+							ach(1035, { -- Desecration of the Horde
+								un(21, ach(1028)), -- Extinguishing Eastern Kingdoms
+								un(21, ach(1029)), -- Extinguishing Kalimdor
+								un(21, ach(1030)), -- Extinguishing Outland
+								un(21, ach(6007)), -- Extinguishing Northrend
+								un(21, ach(6013)), -- Extinguishing the Cataclysm
+							}),
+							ach(263, { -- Ice the Frost Lord
+							}),
+							ach(271, { -- Burning Hot Pole Dance
+							}),
+							ach(1145, { -- King of the Fire Festival
+							}),
+							ach(272, { -- Torch Juggler
+							}),
+						})),
+						h(ach(1039, { -- The Flame Keeper
+							un(21, title(45)), -- Flame Keeper
+							ach(1036, { -- The Fires of Azeroth
+								un(21, ach(1025)), -- Flame Keeper of Eastern Kingdoms
+								un(21, ach(1026)), -- Flame Keeper of Kalimdor
+								un(21, ach(1027)), -- Flame Keeper of Outland
+								un(21, ach(6009)), -- Flame Keeper of Northrend
+								un(21, ach(6012)), -- Flame Keeper of Cataclysm
+							}),
+							ach(1037, { -- Desecration of the Alliance
+								un(21, ach(1031)), -- Extinguishing Eastern Kingdoms
+								un(21, ach(1032)), -- Extinguishing Kalimdor
+								un(21, ach(1033)), -- Extinguishing Outland
+								un(21, ach(6010)), -- Extinguishing Northrend
+								un(21, ach(6014)), -- Extinguishing the Cataclysm
+							}),
+							ach(271, { -- Burning Hot Pole Dance
+							}),
+							ach(263, { -- Ice the Frost Lord
+							}),
+							ach(1145, { -- King of the Fire Festival
+							}),
+							ach(272, { -- Torch Juggler
+							}),
+							{
+								["achievementID"] = 272,	-- Torch Juggler
+								["criteriaID"] = 6,			-- Torch Juggler Criteria
+								["itemID"] = 34599,			-- Juggling Torch (Item)
+							},
 						})),
 					}),
 					n(-139, { -- Bosses
@@ -161,8 +206,8 @@ _.WorldEvents =
 							un(21, i(35280)),	-- Tabard of Summer Flames
 						}),
 					}),
-					n(-2, {
-						n(26123, { -- Midsummer Supplier  Alliance Vendor
+					n(-2, { -- Vendors
+						a(n(26123, { -- Midsummer Supplier (Alliance Vendor)
 							un(21, i(23247, { -- Burning Blossom
 								n(-3199, {
 									["groups"] = { -- Midsummer Reveler Set
@@ -171,6 +216,12 @@ _.WorldEvents =
 										un(21, i(34683)), -- Sandals of Summer
 									},
 								}),
+								{
+									["achievementID"] = 272,	-- Torch Juggler
+									["criteriaID"] = 6,			-- Torch Juggler Criteria
+									["itemID"] = 34599,			-- Juggling Torch (Item)
+								},
+								un(21, i(34686)),	-- Brazier of Dancing Flames
 								un(21, i(116439)), 	-- Blazing Cindercrawler Pet
 								un(21, i(23083)), 	-- Captured Flame Pet
 								un(21, i(141714)), 	-- Igneous Flameling Pet
@@ -179,7 +230,31 @@ _.WorldEvents =
 								un(21, i(141649)), 	-- Set of Matches Toy
 								un(21, i(74278)), 	-- Helm of the Fire Festival
 							})),
-						}),
+						})),
+						h(n(26124, { -- Midsummer Merchant (Horde Vendor)
+							un(21, i(23247, { -- Burning Blossom
+								n(-3199, {
+									["groups"] = { -- Midsummer Reveler Set
+										un(21, i(23324)), -- Mantle of the Fire Festival
+										un(21, i(34685)), -- Vestment of Summer
+										un(21, i(34683)), -- Sandals of Summer
+									},
+								}),
+								{
+									["achievementID"] = 272,	-- Torch Juggler
+									["criteriaID"] = 6,			-- Torch Juggler Criteria
+									["itemID"] = 34599,			-- Juggling Torch (Item)
+								},
+								un(21, i(34686)),	-- Brazier of Dancing Flames
+								un(21, i(116439)), 	-- Blazing Cindercrawler Pet
+								un(21, i(23083)), 	-- Captured Flame Pet
+								un(21, i(141714)), 	-- Igneous Flameling Pet
+								un(21, i(116440)), 	-- Burning Defender's Medallion Toy
+								un(21, i(116435)), 	-- Cozy Bonfire Toy
+								un(21, i(141649)), 	-- Set of Matches Toy
+								un(21, i(74278)), 	-- Helm of the Fire Festival
+							})),
+						})),
 					}),
 				},
 				--["achievementID"] = 1038, -- The Flame Warden
