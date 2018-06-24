@@ -96,20 +96,20 @@ _.WorldEvents =
 							}),
 							ach(1145, { -- King of the Fire Festival
 								{
-									["questID"] = 9330,
-									["itemID"] = 23182,
+									["questID"] = 9330, -- Stealing Stormwind's Flame
+									["itemID"] = 23182, -- Flame of Stormwind
 								},
 								{
-									["questID"] = 9331,
-									["itemID"] = 23183,
+									["questID"] = 9331, -- Stealing Ironforge's Flame
+									["itemID"] = 23183, -- Flame of Ironforge
 								},
 								{
-									["questID"] = 9332,
-									["itemID"] = 23184,
+									["questID"] = 9332, -- Stealing Darnassus's Flame
+									["itemID"] = 23184, -- Flame of Darnassus
 								},
 								{
-									["questID"] = 11933,
-									["itemID"] = 35569,
+									["questID"] = 11933, -- Stealing the Exodar's Flame
+									["itemID"] = 35569, -- Flame of the Exodar
 								},
 								q(9339, { -- A Thief's Reward
 									["groups"] = {
