@@ -328,6 +328,7 @@ AllTheThings.Locales.enUS = {
 		[-98] = "Interface\\Icons\\inv_garrison_resource",						-- Garrisons
 		[-99] = "Interface\\Icons\\garrison_building_stables", 					-- Stables
 		[-100] = "Interface\\Icons\\Inv_misc_book_17", 							-- Legacy
+		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",		-- Followers
 		[-102] = "Interface\\Icons\\trade_alchemy", 							-- Alchemy Lab
 		[-103] = "Interface\\Icons\\garrison_building_barn", 					-- Barn
 		[-104] = "Interface\\Icons\\garrison_building_barracks", 				-- Barracks
@@ -866,6 +867,7 @@ AllTheThings.Locales.enUS = {
 -- Garrison Note: These will be changed into a new class soon(TM)
 		[-99] = select(2,C_Garrison.GetBuildingInfo(65) ), 						-- Stables
 		[-100] = LFG_LIST_LEGACY, 												-- Legacy (Unassociated with shortcut)
+		[-101] = GARRISON_FOLLOWERS,											-- Followers
 		[-102] = select(2,C_Garrison.GetBuildingInfo(76)),						-- Alchemy Lab
 		[-103] = select(2,C_Garrison.GetBuildingInfo(24)),						-- Barn
 		[-104] = select(2,C_Garrison.GetBuildingInfo(26)),						-- Barracks
