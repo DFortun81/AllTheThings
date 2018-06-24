@@ -490,20 +490,20 @@ _.Toys =
 		}),
 		a(n(-53, {  -- Midsummer Fire Festival (Alliance)
 			["groups"] = {
-				un(21, a(i(34686))), 	-- Brazier of Dancing Flames
-				un(21, a(i(116440))), 	-- Burning Defender's Medallion
-				un(21, a(i(116435))),	-- Cozy Bonfire
-				un(21, a(i(141649))),	-- Set of Matches
+				i(34686), 	-- Brazier of Dancing Flames
+				i(116440), 	-- Burning Defender's Medallion
+				i(116435),	-- Cozy Bonfire
+				i(141649),	-- Set of Matches
 			},
 			["achievementID"] = 1038, -- The Flame Warden
 			["u"] = 21,
 		})),
 		h(n(-54, {	-- Midsummer Fire Festival (Horde)
 			["groups"] = {
-				un(21, h(i(34686))), 	-- Brazier of Dancing Flames
-				un(21, h(i(116440))), 	-- Burning Defender's Medallion
-				un(21, h(i(116435))),	-- Cozy Bonfire
-				un(21, h(i(141649))),	-- Set of Matches
+				i(34686), 	-- Brazier of Dancing Flames
+				i(116440), 	-- Burning Defender's Medallion
+				i(116435),	-- Cozy Bonfire
+				i(141649),	-- Set of Matches
 			},
 			["achievementID"] = 1039, -- The Flame Keeper
 			["u"] = 21,
