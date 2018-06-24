@@ -90,11 +90,11 @@ _.Zones =
 									Shattrath City, Sholazar Basin, Grizzly Hills, Elwynn Forest, Western Plaguelands, Northern Stranglethorn, 
 									Wetlands, Duskwood, Badlands, Blasted Lands, Swamp of Sorrows, Loch Modan, Westfall, Zul'Drak, The Storm Peaks, Teldrassil, 
 									Darkshore, Ashenvale, Dragonblight, Redridge Mountains, The Hinterlands, Arathi Highlands, and Burning Steppes --]]
-								o(181334, {	-- Flame of Darnassus
-									i(23184, {	-- Flame of Darnassus
-										qh(9332),	-- Stealing Darnassus's Flame
-									}),
-								}),
+								{
+									["questID"] = 9332, -- Stealing Darnassus's Flame
+									["itemID"] = 23184, -- Flame of Darnassus
+									["races"] = HORDE_ONLY,
+								},
 								qg(26221, q(11954)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
 								qg(26221, q(11917)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
 								qg(26221, q(11947)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)

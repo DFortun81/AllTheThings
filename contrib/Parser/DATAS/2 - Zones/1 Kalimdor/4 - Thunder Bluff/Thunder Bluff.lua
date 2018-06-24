@@ -91,11 +91,11 @@ _.Zones =
 								qg(16818, qh(11966)),	-- Incense for the Festival Scorchlings
 								qg(26113, qh(11925)),	-- More Torch Catching
 								qg(26113, qh(11926)),	-- More Torch Tossing
-								o(181337, {	-- Flame of Thunder Bluff (QG in Thunder Bluff)
-									i(23180, {	-- Flame of Thunder Bluff
-										qa( 9325),	-- Stealing Thunder Bluff's Flame
-									}),
-								}),
+								{
+									["questID"] = 9325, -- Stealing Thunder Bluff's Flame
+									["itemID"] = 23180, -- Flame of Thunder Bluff
+									["races"] = ALLIANCE_ONLY,
+								},
 								qg(26221, q(11917)),	-- Striking Back (16)
 								qg(26221, q(11947)),	-- Striking Back (29)
 								qg(26221, q(11948)),	-- Striking Back (39)

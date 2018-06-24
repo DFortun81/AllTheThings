@@ -67,11 +67,11 @@ _.Zones =
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qg(16817, qa( 11964)),	-- Incense for the Summer Scorchlings
-								o(181332, {	-- Flame of Stormwind
-									i(23182, {	-- Flame of Stormwind
-										qh(9330),	-- Stealing Stormwind's Flame
-									}),
-								}),
+								{
+									["questID"] = 9330, -- Stealing Stormwind's Flame
+									["itemID"] = 23182, -- Flame of Stormwind
+									["races"] = HORDE_ONLY,
+								},
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden

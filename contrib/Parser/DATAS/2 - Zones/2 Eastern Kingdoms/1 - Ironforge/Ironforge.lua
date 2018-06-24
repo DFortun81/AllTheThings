@@ -75,19 +75,16 @@ _.Zones =
 						},
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
-					}),					
-					--[[					
+					}),										
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qg(16817, qa( 11964)),	-- Incense for the Summer Scorchlings
-								o(181333, {	-- Flame of Ironforge
-									i(23183, {	-- Flame of Ironforge
-										qh(  9331),	-- Stealing Ironforge's Flame
-									}),
-								}),
-								qg(25975, qa(11924)),	-- More Torch Catching
-								qg(25975, qa(11921)),	-- More Torch Tossing
+								{
+									["questID"] = 9331, -- Stealing Ironforge's Flame
+									["itemID"] = 23183, -- Flame of Ironforge
+									["races"] = HORDE_ONLY,
+								},
 								qg(19148, qa(11970)),	-- The Master of Summer Lore (add'l QG 19172)
 								qg(25975, qa(11657)),	-- Torch Catching
 								qg(25975, qa(11731)),	-- Torch Tossing

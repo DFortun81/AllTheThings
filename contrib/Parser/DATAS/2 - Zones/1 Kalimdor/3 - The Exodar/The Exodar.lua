@@ -64,11 +64,11 @@ _.Zones =
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qg(16817, qa( 11964)),	-- Incense for the Summer Scorchlings
-								o(188128, {	-- Flame of the Exodar
-									i(35569, {	-- Flame of the Exodar
-										qh( 11933),	-- Stealing the Exodar's Flame
-									}),
-								}),
+								{
+									["questID"] = 11933, -- Stealing the Exodar's Flame
+									["itemID"] = 35569, -- Flame of the Exodar
+									["races"] = HORDE_ONLY,
+								},
 								qg(25975, qa(11924)),	-- More Torch Catching
 								qg(25975, qa(11921)),	-- More Torch Tossing
 								qg(26221, q(11917)),	-- Striking Back (16)

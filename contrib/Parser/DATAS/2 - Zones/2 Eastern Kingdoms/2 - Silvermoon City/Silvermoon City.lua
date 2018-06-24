@@ -67,11 +67,11 @@ _.Zones =
 					n(-53, {     -- Midsummer Fire Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
-								o(188129, {	-- Flame of Silvermoon (QG in Silvermoon City)
-									i(35568, {	-- Flame of Silvermoon
-										qa(11935),	-- Stealing Silvermoon's Flame
-									}),
-								}),
+								{
+									["questID"] = 11935, -- Stealing Silvermoon's Flame
+									["itemID"] = 35568, -- Flame of Silvermoon
+									["races"] = ALLIANCE_ONLY,
+								},
 							}),
 						},
 						["achievementID"] = 1038, -- The Flame Warden
