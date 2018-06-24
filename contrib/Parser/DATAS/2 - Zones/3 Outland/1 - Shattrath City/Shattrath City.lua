@@ -821,18 +821,10 @@ _.Zones =
 				}),	
 				n( -2, {	-- Vendors
 					n(19662, {	-- Aaron Hollman <Blacksmithing Supplies>
-						i(23593, {	-- Plans: Adamantite Rapier
-							i(23505),	-- Adamantite Rapier
-						}),
-						i(23591, {	-- Plans: Adamantite Cleaver
-							i(23503),	-- Adamantite Cleaver
-						}),
-						i(23592, {	-- Plans: Adamantite Dagger
-							i(23504),	-- Adamantite Dagger
-						}),
-						i(23590, {	-- Plans: Adamantite Maul
-							i(23502),	-- Adamantite MAul
-						}),
+						i(23593),	-- Plans: Adamantite Rapier
+						i(23591),	-- Plans: Adamantite Cleaver
+						i(23592),	-- Plans: Adamantite Dagger
+						i(23590),	-- Plans: Adamantite Maul
 					}),
 					n(19043, {	-- Ahemen <Staff Vendor>
 						i(12251),	-- Big Stick
@@ -1422,24 +1414,12 @@ _.Zones =
 					}),
 					n(115546, {	-- Lunelli <Keeper of Lost Recipes>
 						["groups"] = {
-						i(142279,  {  -- Plans: Windforged Rapier
-							i(30077),
-						}),
-						i(142283,  {  -- Plans: Skyforged Great Axe
-							i(30088),
-						}),
-						i(142282,  {  -- Plans: Stormforged Axe
-							i(30087),
-						}),
-						i(142284,  {  -- Plans: Stoneforged Claymore
-							i(30086),
-						}),
-						i(142287,  {  -- Plans: Great Earthforged Hammer
-							i(30093),
-						}),
-						i(142286,  {  -- Plans: Lavaforged Warhammer
-							i(30089),
-						}),
+							i(142279),  -- Plans: Windforged Rapier
+							i(142283),  -- Plans: Skyforged Great Axe
+							i(142282),  -- Plans: Stormforged Axe
+							i(142284),  -- Plans: Stoneforged Claymore
+							i(142287),  -- Plans: Great Earthforged Hammer
+							i(142286),  -- Plans: Lavaforged Warhammer
 						},
 						["description"] = "Will only sell these recipes to those who have completed the quests that reward them.|r",
 					}),
