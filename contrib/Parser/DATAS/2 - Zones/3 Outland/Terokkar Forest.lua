@@ -599,30 +599,42 @@ _.Zones =
 						i(27700),	-- Recipe: Spicy Crawdad
 					}),
 					nh(19772, {	-- Spirit Sage Gartok
-						i(28559),	-- Exorcist's Plate Helm
-						i(28560),	-- Exorcist's Lamellar Helm
-						i(28561),	-- Exorcist's Leather Helm
-						i(28574),	-- Exorcist's Dragonhide Helm
-						i(28575),	-- Exorcist's Wyrmhide Helm
-						i(28576),	-- Exorcist's Chain Helm
-						i(28577),	-- Exorcist's Linked Helm
-						i(28758),	-- Exorcist's Mail Helm
-						i(28759),	-- Exorcist's Dreadweave Hood
-						i(28760),	-- Exorcist's Silk Hood
-						i(28761),	-- Exorcist's Scaled Helm
+						["groups"] = {
+							item(28558, { -- Spirit Shard
+								["groups"] = {
+									i(28559),	-- Exorcist's Plate Helm
+									i(28560),	-- Exorcist's Lamellar Helm
+									i(28561),	-- Exorcist's Leather Helm
+									i(28574),	-- Exorcist's Dragonhide Helm
+									i(28575),	-- Exorcist's Wyrmhide Helm
+									i(28576),	-- Exorcist's Chain Helm
+									i(28577),	-- Exorcist's Linked Helm
+									i(28758),	-- Exorcist's Mail Helm
+									i(28759),	-- Exorcist's Dreadweave Hood
+									i(28760),	-- Exorcist's Silk Hood
+									i(28761),	-- Exorcist's Scaled Helm
+								},
+							}),
+						},
 					}),
 					na(19773, {	-- Spirit Sage Zran
-						i(28559),	-- Exorcist's Plate Helm
-						i(28560),	-- Exorcist's Lamellar Helm
-						i(28561),	-- Exorcist's Leather Helm
-						i(28574),	-- Exorcist's Dragonhide Helm
-						i(28575),	-- Exorcist's Wyrmhide Helm
-						i(28576),	-- Exorcist's Chain Helm
-						i(28577),	-- Exorcist's Linked Helm
-						i(28758),	-- Exorcist's Mail Helm
-						i(28759),	-- Exorcist's Dreadweave Hood
-						i(28760),	-- Exorcist's Silk Hood
-						i(28761),	-- Exorcist's Scaled Helm
+						["groups"] = {
+							item(28558, { -- Spirit Shard
+								["groups"] = {
+									i(28559),	-- Exorcist's Plate Helm
+									i(28560),	-- Exorcist's Lamellar Helm
+									i(28561),	-- Exorcist's Leather Helm
+									i(28574),	-- Exorcist's Dragonhide Helm
+									i(28575),	-- Exorcist's Wyrmhide Helm
+									i(28576),	-- Exorcist's Chain Helm
+									i(28577),	-- Exorcist's Linked Helm
+									i(28758),	-- Exorcist's Mail Helm
+									i(28759),	-- Exorcist's Dreadweave Hood
+									i(28760),	-- Exorcist's Silk Hood
+									i(28761),	-- Exorcist's Scaled Helm
+								},
+							}),
+						},
 					}),
 					na(19038, {	-- Supply Officer Mills <Rations>
 						i(27690),	-- Recipe: Blackened Basilisk
