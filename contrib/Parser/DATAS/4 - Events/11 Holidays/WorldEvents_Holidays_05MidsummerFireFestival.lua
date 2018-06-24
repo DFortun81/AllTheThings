@@ -246,6 +246,40 @@ _.WorldEvents =
 								},
 							}), -- End of Dustwallow Marsh
 						}),
+						q(11970, { -- The Master of Summer Lore
+							["groups"] = {},
+							-- Human, Dwarf, Draenei, Gnome, Night Elf, Goblin Commoners
+							["qgs"] = { 18927, 19148, 19171, 19172, 19173, 20102 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(11731, { -- Torch Tossing
+							["groups"] = {},
+							["qg"] = 25975,	-- Master Fire Eater
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(11657, { -- Torch Catching
+							["groups"] = {},
+							["qg"] = 25975,	-- Master Fire Eater
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = { 11731 },
+						}),
+						q(11971, { -- The Spinner of Summer Tales
+							["groups"] = {},
+							-- Blood Elf, Orc, Tauren, Troll, Forsaken, Goblin Commoners
+							["qgs"] = { 19169, 19175, 19176, 19177, 19178, 20102 },
+							["races"] = HORDE_ONLY,
+						}),
+						q(11922, {	-- Torch Tossing
+							["groups"] = {},
+							["qg"] = 26113,	-- Master Flame Eater
+							["races"] = HORDE_ONLY,
+						}),
+						q(11923, {	-- Torch Catching
+							["groups"] = {},
+							["qg"] = 26113,	-- Master Flame Eater
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 11922 },
+						}),
 						{
 							["questID"] = 11972, -- Shards of Ahune
 							["itemID"] = 35723, -- Shards of Ahune (Item)
@@ -255,6 +289,20 @@ _.WorldEvents =
 							},
 							["description"] = "This item can be looted and completed once per character, but has no level requirement.",
 						},
+						q(11886, {	-- Unusual Activity
+							["groups"] = {},
+							["qg"] = 26221,	-- Earthen Ring Elder
+						}),
+						q(11891, {	-- An Innocent Disguise
+							["groups"] = {},
+							["qg"] = 25324,	-- Earthen Ring Guide
+							["sourceQuests"] = { 11886 },
+						}),
+						q(12012, {	-- Inform the Elder
+							["groups"] = {},
+							["qg"] = 25324,	-- Earthen Ring Guide
+							["sourceQuests"] = { 11891 },
+						}),
 					}),
 					n(-2, { -- Vendors
 						a(n(26123, { -- Midsummer Supplier (Alliance Vendor)
@@ -270,6 +318,7 @@ _.WorldEvents =
 									["achievementID"] = 272,	-- Torch Juggler
 									["criteriaID"] = 1,			-- Torch Juggler Criteria
 									["itemID"] = 34599,			-- Juggling Torch (Item)
+									["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
 								},
 								un(21, i(34686)),	-- Brazier of Dancing Flames
 								un(21, i(116439)), 	-- Blazing Cindercrawler Pet
@@ -294,6 +343,7 @@ _.WorldEvents =
 									["achievementID"] = 272,	-- Torch Juggler
 									["criteriaID"] = 1,			-- Torch Juggler Criteria
 									["itemID"] = 34599,			-- Juggling Torch (Item)
+									["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
 								},
 								un(21, i(34686)),	-- Brazier of Dancing Flames
 								un(21, i(116439)), 	-- Blazing Cindercrawler Pet
