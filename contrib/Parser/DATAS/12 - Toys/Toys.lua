@@ -6,7 +6,7 @@ _.Toys =
 	n(-4, { 	-- Achievement
 		i(139773),		-- Emerald Winds
 		i(87528),		-- Honorary Brewmaster Keg
-		un(4, h(i(89205))), 	-- Mini Mana Bomb (Horde) No Longer Available
+		un(4, i(89205)), 	-- Mini Mana Bomb (Horde) No Longer Available
 		i(143660), 		-- Mrgrglhjorn
 		i(86596),		-- Nat's Fishing Chair
 		i(122700), 		-- Portable Audiophone
@@ -208,7 +208,7 @@ _.Toys =
 			i(60854),		-- Loot-A-Rang
 			i(40768),		-- MOLL-E
 			i(108745),		-- Personal Hologram
-			un(29, i(17716)),	-- Snowmaster 9000
+			i(17716),		-- Snowmaster 9000
 			i(109183),		-- World Shrinker
 			i(112059), 		-- Wormhole Centrifuge
 			i(151652),  	-- Wormhole Generator: Argus
@@ -251,7 +251,7 @@ _.Toys =
 			i(129211),		-- Steamy Romance Novel Kit
 		}),
 		n(-186, {	-- Jewelcrafting
-			h(i(115503)),	-- Blazing Diamond Pendant (Horde)
+			i(115503),	-- Blazing Diamond Pendant (Horde)
 			i(130254),		-- Chatterstone
 			i(130251),		-- JewelCraft
 		}),
@@ -264,15 +264,15 @@ _.Toys =
 		}),
 	}),
 	n(-31, { 	-- Promotion
-		un(3, h(i(54653))),	-- Darkspear Pride (Horde) No Longer Available
-		un(3, a(i(54651))),	-- Gnomeregan Pride (Alliance) No Longer Available
+		un(3, i(54653)),	-- Darkspear Pride (Horde) No Longer Available
+		un(3, i(54651)),	-- Gnomeregan Pride (Alliance) No Longer Available
 		un(16, i(33079)), 	-- Murloc Costume
 		un(3, i(142542)), 	-- Tome of Town Portal
 		un(3, i(143543)), 	-- Twelve-String Guitar
 	}),
 	n(-17, { 	-- Quest
 		i(147838), 		-- Akazamzarak's Spare Hat
-		a(i(119217)), 	-- Alliance Flag of Victory (Alliance)
+		i(119217), 	-- Alliance Flag of Victory (Alliance)
 		i(118191), 		-- Archmage Vargoth's Spare Staff
 		i(118427),		-- Autographed Hearthstone Card
 		i(119093),		-- Aviana's Feather
@@ -285,19 +285,19 @@ _.Toys =
 		i(131933),		-- Critter Hand Cannon
 		i(142496),		-- Dirty Spoon
 		i(118935),		-- Ever-Blooming Frond
-		h(i(53057)),	-- Faded Wizard Hat (Horde)
+		i(53057),	-- Faded Wizard Hat (Horde)
 		i(142495),		-- Fake Teeth
-		h(i(119145)),	-- Firefury Totem (Horde)
+		i(119145),	-- Firefury Totem (Horde)
 		i(119083),		-- Fruit Basket
 		i(118937), 		-- Gamon's Braid
-		a(i(95589)),	-- Glorious Standard of the Kirin Tor Offensive (Alliance)
+		i(95589),	-- Glorious Standard of the Kirin Tor Offensive (Alliance)
 		i(95590),		-- Glorious Standard of the Sunreaver Onslaught (Horde)
 		i(88417),		-- Gokk'lok's Shell
-		h(i(119218)),	-- Horde Flag of Victory (Horde)
+		i(119218),	-- Horde Flag of Victory (Horde)
 		i(88385),		-- Hozen Idol
 		i(88579), 		-- Jin Warmkeg's Brew
 		i(88580),		-- Ken-Ken's Mask
-		a(i(95567)),	-- Kirin Tor Beacon (Alliance)
+		i(95567),	-- Kirin Tor Beacon (Alliance)
 		i(88531),		-- Lao Chin's Last Mug
 		i(71259), 		-- Leyara's Locket
 		i(119039), 		-- Lilian's Warning Sign
@@ -308,7 +308,7 @@ _.Toys =
 		i(138873),		-- Mystical Frosh Hat
 		i(130209), 		-- Never Ending Toy Chest
 		i(123851),		-- Photo B.O.M.B.
-		a(i(30690)),	-- Power Converter (Alliance)
+		i(30690),	-- Power Converter (Alliance)
 		i(88370), 		-- Puntable Marmot
 		i(142494),		-- Purple Blossom
 		i(133998),		-- Rainbow Generator
@@ -319,12 +319,12 @@ _.Toys =
 		i(122674),		-- S.E.L.F.I.E. Camera MkII
 		i(88387), 		-- Shushen's Spittoon
 		i(88381), 		-- Silversage Incense
-		h(i(95568)),	-- Sunreaver Beacon (Horde)
+		i(95568),	-- Sunreaver Beacon (Horde)
 		i(52253), 		-- Sylvanas' Music Box
 		i(80822), 		-- The Golden Banana
 		i(142497),		-- Tiny Pack
 		i(88584), 		-- Totem of Harmony
-		a(i(119144)),	-- Touch of the Naaru (Alliance)
+		i(119144),	-- Touch of the Naaru (Alliance)
 		i(115506), 		-- Treessassin's Guise
 		i(88377),		-- Turnip Paint \"Gun\"
 		i(88375), 		-- Turnip Punching Bag
@@ -391,99 +391,99 @@ _.Toys =
 		}),
 		n(-56, {    -- Brewfest
 			["groups"] = {
-				un(24, i(116758)),	-- Brewfest Banner
-				un(24, i(71137)), 	-- Brewfest Keg Pony
-				un(24, i(33927)),	-- Brewfest Pony Keg
-				un(24, i(138900)),	-- Gravil Goldbraid's Famous Sausage Hat
-				un(24, i(90427)),	-- Pandaren Brewpack
-				un(24, i(116757)),	-- Steamworks Sausage Grill
+				i(116758),	-- Brewfest Banner
+				i(71137), 	-- Brewfest Keg Pony
+				i(33927),	-- Brewfest Pony Keg
+				i(138900),	-- Gravil Goldbraid's Famous Sausage Hat
+				i(90427),	-- Pandaren Brewpack
+				i(116757),	-- Steamworks Sausage Grill
 			},
 			["achievementID"] = 1683, -- Brewmaster
 			["u"] = 24,
 		}),
 		n(-52, {    -- Children's Week
 			["groups"] = {
-				un(20, i(69895)), 	-- Green Balloon
-				un(20, i(69896)), 	-- Yellow Balloon
+				i(69895), 	-- Green Balloon
+				i(69896), 	-- Yellow Balloon
 			},
 			["achievementID"] = 1793, -- For The Children
 			["u"] = 20,
 		}),
 		n(-59, {    -- Day of the Dead
 			["groups"] = {
-				un(27, i(116856)),	-- \"Blooming Rose\" Contender's Costume
-				un(27, i(116888)),	-- \"Night Demon\" Contender's Costume
-				un(27, i(116889)),	-- \"Purple Phantom\" Contender's Costume
-				un(27, i(116890)),	-- \"Santo's Sun\" Contender's Costume
-				un(27, i(116891)),	-- \"Snowy Owl\" Contender's Costume
+				i(116856),	-- "Blooming Rose" Contender's Costume
+				i(116888),	-- "Night Demon" Contender's Costume
+				i(116889),	-- "Purple Phantom" Contender's Costume
+				i(116890),	-- "Santo's Sun" Contender's Costume
+				i(116891),	-- "Snowy Owl" Contender's Costume
 			},
 			["achievementID"] = 3456, -- Dead Man's Party
 			["u"] = 27,
 		}),
 		n(-61, {    -- Feast of Winter Veil
 			["groups"] = {
-				un(29, i(54343)), 	-- Blue Crashin' Thrashin' Racer Controller
-				un(29, i(108632)), 	-- Crashin' Thrashin' Flamer Controller
-				un(29, i(104318)), 	-- Crashin' Thrashin' Flyer Controller
-				un(29, i(108635)), 	-- Crashin' Thrashin' Killdozer Controller
-				un(29, i(37710)), 	-- Crashin' Thrashin' Racer Controller
-				un(29, i(116763)), 	-- Crashin' Thrashin' Shredder Controller
-				un(29, i(139337)),	-- Disposable Winter Veil Suits
-				un(29, i(128636)),	-- Endothermic Blaster
-				un(29, i(90888)),	-- Foot Ball
-				un(29, i(104324)),	-- Foot Ball
-				un(29, i(116692)), 	-- Fuzzy Green Lounge Cushion
-				un(29, a(i(151343))), 	-- Hearthstation [Alliance]
-				un(29, h(i(151344))), 	-- Hearthstation [Horde]
-				un(29, i(46709)), 	-- MiniZep Controller
-				un(29, i(116689)), 	-- Pineapple Lounge Cushion
-				un(29, i(128776)),	-- Red Wooden Sled
-				un(29, i(116690)), 	-- Safari Lounge Cushion
-				un(29, i(116456)),	-- Scroll of Storytelling
-				un(29, i(90883)),	-- The Pigskin
-				un(29, i(104323)),	-- The Pigskin
-				un(29, i(54438)),	-- Tiny Blue Ragdoll
-				un(29, i(54437)),	-- Tiny Green Ragdoll
-				un(29, i(44606)),	-- Toy Train Set
-				un(29, a(i(151349))), 	-- Toy Weapon Set [Alliance]
-				un(29, h(i(151348))), 	-- Toy Weapon Set [Horde]
-				un(29, i(45057)), 	-- Wind-Up Train Wrecker
-				un(29, i(17712)), 	-- Winter Veil Disguise Kit
-				un(29, i(116691)), 	-- Zhevra Lounge Cushion
+				i(54343), 	-- Blue Crashin' Thrashin' Racer Controller
+				i(108632), 	-- Crashin' Thrashin' Flamer Controller
+				i(104318), 	-- Crashin' Thrashin' Flyer Controller
+				i(108635), 	-- Crashin' Thrashin' Killdozer Controller
+				i(37710), 	-- Crashin' Thrashin' Racer Controller
+				i(116763), 	-- Crashin' Thrashin' Shredder Controller
+				i(139337),	-- Disposable Winter Veil Suits
+				i(128636),	-- Endothermic Blaster
+				i(90888),	-- Foot Ball
+				i(104324),	-- Foot Ball
+				i(116692), 	-- Fuzzy Green Lounge Cushion
+				i(151343), 	-- Hearthstation [Alliance]
+				i(151344), 	-- Hearthstation [Horde]
+				i(46709), 	-- MiniZep Controller
+				i(116689), 	-- Pineapple Lounge Cushion
+				i(128776),	-- Red Wooden Sled
+				i(116690), 	-- Safari Lounge Cushion
+				i(116456),	-- Scroll of Storytelling
+				i(90883),	-- The Pigskin
+				i(104323),	-- The Pigskin
+				i(54438),	-- Tiny Blue Ragdoll
+				i(54437),	-- Tiny Green Ragdoll
+				i(44606),	-- Toy Train Set
+				i(151349), 	-- Toy Weapon Set [Alliance]
+				i(151348), 	-- Toy Weapon Set [Horde]
+				i(45057), 	-- Wind-Up Train Wrecker
+				i(17712), 	-- Winter Veil Disguise Kit
+				i(116691), 	-- Zhevra Lounge Cushion
 			},
 			["achievementID"] = 1691, -- Merrymaker
 			["u"] = 29,
 		}),
 		n(-58, {    -- Hallow's End
 			["groups"] = {
-				un(26, i(128807)),	-- Coin of Many Faces
-				un(26, i(151271)), 	-- Horse Head Costume
-				un(26, i(151270)), 	-- Horse Tail Costume
-				un(26, i(70722)),	-- Little Wickerman
-				un(26, i(128794)), 	-- Sack of Spectral Spiders
+				i(128807),	-- Coin of Many Faces
+				i(151271), 	-- Horse Head Costume
+				i(151270), 	-- Horse Tail Costume
+				i(70722),	-- Little Wickerman
+				i(128794), 	-- Sack of Spectral Spiders
 			},
 			["achievementID"] = 1656, -- Hallowed Be Thy Name
 			["u"] = 26,
 		}),
 		n(-50, {    -- Love is in the Air
 			["groups"] = {
-				un(18, i(142341)), 	-- Love Boat
-				un(18, i(34480)),	-- Romantic Picnic Basket
-				un(18, i(144339)), 	-- Sturdy Love Fool
-				un(18, i(50471)),	-- The Heartbreaker
-				un(18, i(116651)),	-- True Love Prism
+				i(142341), 	-- Love Boat
+				i(34480),	-- Romantic Picnic Basket
+				i(144339), 	-- Sturdy Love Fool
+				i(50471),	-- The Heartbreaker
+				i(116651),	-- True Love Prism
 			},
 			["achievementID"] = 1693,    -- Fool For Love
 			["u"] = 18,
 		}),
 		n(-47, {    -- Lunar Festival
 			["groups"] = {
-				un(17, i(143828)), 	-- Dragon Body Costume
-				un(17, i(143827)), 	-- Dragon Head Costume
-				un(17, i(143829)), 	-- Dragon Tail Costume
-				un(17, i(21540)),	-- Elune's Lantern
-				un(17, a(i(89999))),	-- Everlasting Alliance Firework (Alliance)
-				un(17, h(i(90000))),	-- Everlasting Horde Firework (Horde)
+				i(143828), 	-- Dragon Body Costume
+				i(143827), 	-- Dragon Head Costume
+				i(143829), 	-- Dragon Tail Costume
+				i(21540),	-- Elune's Lantern
+				i(89999),	-- Everlasting Alliance Firework (Alliance)
+				i(90000),	-- Everlasting Horde Firework (Horde)
 			},
 			["achievementID"] = 913, -- To Honor One's Elders
 			["u"] = 17,
@@ -517,8 +517,8 @@ _.Toys =
 		}),
 		n(-55, {    -- Pirate's Day
 			["groups"] = {
-				un(23, i(150547)),	-- Jolly Roger
-				un(23, i(138415)),	-- Slightly-Chewed Insult Book
+				i(150547),	-- Jolly Roger
+				i(138415),	-- Slightly-Chewed Insult Book
 			},
 			["achievementID"] = 3457, -- The Captain's Booty
 			["u"] = 23,
@@ -555,17 +555,17 @@ _.Toys =
 			["classes"] = {8},
 		}),
 		i(131812),		-- Darkshard Fragment
-		a(i(45021)),	-- Darnassus Banner (Alliance)
+		i(45021),		-- Darnassus Banner (Alliance)
 		i(129149),		-- Death's Door Charm
 		i(129279), 		-- Enchanted Stone Whistle
 		i(134007),		-- Eternal Black Diamond Ring
-		a(i(45020)),	-- Exodar Banner (Alliance)
+		i(45020),		-- Exodar Banner (Alliance)
 		i(136846),		-- Familiar Stone
 		i(88802), 		-- Foxicopter Controller
 		i(44719), 		-- Frenzyheart Brew
-		h(i(128471)),	-- Frostwolf Grunt's Battlegear (Horde)
+		i(128471),		-- Frostwolf Grunt's Battlegear (Horde)
 		i(90175), 		-- Gin-Ji Knife Set
-		a(i(45019)),	-- Gnomeregan Banner (Alliance)
+		i(45019),		-- Gnomeregan Banner (Alliance)
 		i(119210), 		-- Hearthstone Board
 		i(140325),		-- Home Made Party Mask
 		i(136855, {		-- Hunter's Call -- only Hunter
@@ -575,9 +575,9 @@ _.Toys =
 		}),
 		i(127707),		-- Indestructible Bone
 		i(43499), 		-- Iron Boot Flask
-		a(i(45018)),	-- Ironforge Banner (Alliance)
+		i(45018),		-- Ironforge Banner (Alliance)
 		i(68806), 		-- Kalytha's Haunted Locket
-		a(i(128462)),	-- Karabor Councilor's Attire (Alliance)
+		i(128462),		-- Karabor Councilor's Attire (Alliance)
 		i(147708), 		-- Legion Invasion Simulator
 		i(130199), 		-- Legion Pocket Portal
 		i(142452), 		-- Lingering Wyrmtongue Essence
@@ -595,11 +595,11 @@ _.Toys =
 			["classes"] = {11},
 		}),
 		i(134004),		-- Noble's Eternal Elementium Signet
-		h(i(45014)),	-- Orgrimmar Banner (Horde)
+		i(45014),	-- Orgrimmar Banner (Horde)
 		i(89869), 		-- Pandaren Scarecrow
 		i(130158),		-- Path of Elothir
-		h(i(115468)),	-- Permanent Frost Essence (Horde)
-		a(i(115472)),	-- Permanent Time Bubble (Alliance)
+		i(115468),	-- Permanent Frost Essence (Horde)
+		i(115472),	-- Permanent Time Bubble (Alliance)
 		i(127864),		-- Personal Spotlight
 		i(140309),		-- Prismatic Bauble
 		i(136934, { 	-- Raging Elemental Stone -- only Shaman
@@ -615,17 +615,17 @@ _.Toys =
 			},
 			["classes"] = {5},
 		}),
-		h(i(45015)),	-- Sen'jin Banner (Horde)
+		i(45015),	-- Sen'jin Banner (Horde)
 		i(97942), 		-- Sen'jin Spirit Drum
-		a(i(119421)), 	-- Sha'tari Defender's Medallion (Alliance)
-		h(i(45017)),	-- Silvermoon City Banner (Horde)
+		i(119421), 	-- Sha'tari Defender's Medallion (Alliance)
+		i(45017),	-- Silvermoon City Banner (Horde)
 		i(137663),		-- Soft Foam Sword
-		a(i(119182)),	-- Soul Evacuation Crystal (Alliance)
+		i(119182),	-- Soul Evacuation Crystal (Alliance)
 		i(127695),		-- Spirit Wand
 		i(91904), 		-- Stackable Stag
 		i(66888), 		-- Stave of Fur and Claw
-		a(i(45011)),	-- Stormwind Banner (Alliance)
-		a(i(150743)),	-- Surviving Kalimdor (Alliance)
+		i(45011),	-- Stormwind Banner (Alliance)
+		i(150743),	-- Surviving Kalimdor (Alliance)
 		i(130157),		-- Syxsehnz Rod
 		i(136935, {		-- Tadpole Cloudseeder -- only Shaman
 			["groups"] = {
@@ -639,20 +639,20 @@ _.Toys =
 			["classes"] = {5},
 		}),
 		i(130151),		-- The "Devilsaur" Lunchbox
-		h(i(150745)),	-- The Azeroth Campaign (Horde)
-		h(i(45013)),	-- Thunder Bluff Banner (Horde)
-		h(i(119160)),	-- Tickle Totem (Horde)
-		a(i(150746)),	-- To Modernize the Provisioning of Azeroth (Alliance)
-		a(i(63141)),	-- Tol Barad Searchlight (Alliance)
-		h(i(64997)),	-- Tol Barad Searchlight (Horde)
+		i(150745),	-- The Azeroth Campaign (Horde)
+		i(45013),	-- Thunder Bluff Banner (Horde)
+		i(119160),	-- Tickle Totem (Horde)
+		i(150746),	-- To Modernize the Provisioning of Azeroth (Alliance)
+		i(63141),	-- Tol Barad Searchlight (Alliance)
+		i(64997),	-- Tol Barad Searchlight (Horde)
 		i(130191), 		-- Trapped Treasure Chest Kit
-		h(i(45016)),	-- Undercity Banner (Horde)
+		i(45016),	-- Undercity Banner (Horde)
 		i(136937, { 	-- Vol'jin's Serpent Totem -- only Shaman
 			["groups"] = {
 			},
 			["classes"] = {7},
 		}),
-		h(i(150744)),	-- Walking Kalimdor with the Earthmother (Horde)
+		i(150744),	-- Walking Kalimdor with the Earthmother (Horde)
 		i(138490, {		-- Waterspeaker's Totem -- only Shaman
 			["groups"] = {
 			},
