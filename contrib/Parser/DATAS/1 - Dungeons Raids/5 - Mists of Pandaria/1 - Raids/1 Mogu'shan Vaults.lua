@@ -1,29 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local PATTERNS_ILVL_496 = {		-- Patterns with iLvl 496 (Mogu, HoF, ToEs)
-	["groups"] = {
-		i(86272),	-- Pattern: Fists of Lightning
-		i(86380),	-- Pattern: Imperial Silk Gloves
-		i(86279),	-- Pattern: Liferuned Leather Gloves
-		i(86280),	-- Pattern: Murderer's Gloves
-		i(86284),	-- Pattern: Raven Lord's Gloves
-		i(86382),	-- Pattern: Touch of the Light
-		i(86238),	-- Pattern: Chestguard of Nemeses
-		i(86381),	-- Pattern: Legacy of the Emperor
-		i(86281),	-- Pattern: Nightfire Robe
-		i(86283),	-- Pattern: Raiment of Blood and Bone
-		i(86379),	-- Pattern: Robe of Eternal Rule
-		i(86297),	-- Pattern: Stormbreaker Chestguard
-		i(87411),	-- Plans: Bloodforged Warfists
-		i(87409),	-- Plans: Gauntlets of Battle Command
-		i(87413),	-- Plans: Gauntlets of Unbound Devotion
-		i(87412),	-- Plans: Chestplate of Limitless Faith
-		i(87410),	-- Plans: Ornate Battleplate of the Master
-		i(87408),	-- Plans: Unyielding Bloodplate
-	},
-	["npcID"] = -15
-};
 _.Instances = 
 {
 	{	-- Mists of Pandaria
@@ -33,6 +10,91 @@ _.Instances =
 					d(7, {	-- LFR	
 						["ignoreBonus"] = true,
 						["groups"] = {
+							n(-1, {	-- Common Boss Drop
+								["groups"] = {
+									i(95618, { -- Cache of Mogu Riches
+										["groups"] = {
+											i(86884),	-- Belt of Embodied Terror
+											i(86900),	-- Binder's Chain of Unending Summer
+											i(86850),	-- Darting Damselfly Cuffs
+											i(86844),	-- Gleaming Moth Cuffs
+											i(86895),	-- Healer's Belt of Final Winter
+											i(86846),	-- Inlaid Cricket Bracers
+											i(86896),	-- Invoker's Belt of Final Winter
+											i(86772),	-- Jade Bandit Figurine
+											i(86771),	-- Jade Charioteer Figurine
+											i(86774),	-- Jade Courtesan Figurine
+											i(86773),	-- Jade Magistrate Figurine
+											i(86775),	-- Jade Warlord Figurine
+											i(86847),	-- Jagged Hornet Bracers
+											i(86842),	-- Luminescent Firefly Wristguards
+											i(86902),	-- Mender's Girdle of Endless Spring
+											i(86904),	-- Patroller's Girdle of Endless Spring
+											i(86845),	-- Pearlescent Butterfly Wristbands
+											i(86849),	-- Plated Locust Bracers
+											i(86903),	-- Protector's Girdle of Endless Spring
+											i(86901),	-- Ranger's Chain of Unending Summer
+											i(86848),	-- Serrated Wasp Bracers
+											i(86841),	-- Shining Cicada Bracers
+											i(86843),	-- Smooth Beetle Wristbands
+											i(86897),	-- Sorcerer's Belt of Final Winter
+											i(86899),	-- Stalker's Cord of Eternal Autumn
+											i(86898),	-- Weaver's Cord of Eternal Autumn
+											i(44984),	-- Ammen Vale Lashling
+											i(54436),	-- Blue Clockwork Rocket Bot
+											i(44970),	-- Dun Morogh Cub
+											i(44973),	-- Durotar Scorpion
+											i(67282),	-- Elementium Geode
+											i(44974),	-- Elwynn Lamb
+											i(44982),	-- Enchanted Broom
+											i(64403),	-- Fox Kit
+											i(43698),	-- Giant Sewer Rat
+											i(45002),	-- Mechanopeep
+											i(44980),	-- Mulgore Hatchling
+											i(64403),	-- Fox Kit
+											i(43698),	-- Giant Sewer Rat
+											i(45002),	-- Mechanopeep
+											i(44980),	-- Mulgore Hatchling
+											i(45606),	-- Sen'jin Fetish
+											i(69992),	-- Shimmering Wyrmling
+											i(44965),	-- Teldrassil Sproutling
+											i(69991),	-- Tiny Sporebat
+											i(44971),	-- Tirisfal Batling
+											i(10360),	-- Black Kingsnake
+											i(29960),	-- Captured Firefly
+											i(8491),	-- Cat Carrier (Black Tabby)
+											i(46398),	-- Cat Carrier (Calico Cat)
+											i(8487),	-- Cat Carrier (Orange Tabby)
+											i(8488),	-- Cat Carrier (Silver Tabby)
+											i(10822),	-- Dark Whelpling
+											i(29953),	-- Golden Dragonhawk Hatchling
+											i(48116),	-- Gundrak Hatchling
+											i(48118),	-- Leaping Hatchling
+											i(48120),	-- Obsidian Hatchling
+											i(8496),	-- Parrot Cage (Cockatiel)
+											i(8492),	-- Parrot Cage (Green Wing Macaw)
+											i(8495),	-- Parrot Cage (Senegal)
+											i(48124),	-- Razormaw Hatchling
+											i(48126),	-- Razzashi Hatchling
+										},
+									}),
+								},
+								["crs"] = {
+									60047, 	-- Amethyst Guardian
+									60051, 	-- Cobalt Guardian
+									60043, 	-- Jade Guardian
+									59915, 	-- Jasper Guardian
+									60009, 	-- Feng the Accursed
+									60143, 	-- Gara'jal the Spiritbindre
+									60701, 	-- Zian of the Endless Shadow <Sorcer King>
+									60708, 	-- Meng the Demented <Mad King>
+									60709, 	-- Qiang the Merciless <Warlord King>
+									60710, 	-- Subetai the Swift <Bandit King>
+									60410, 	-- Elegon
+									60400, 	-- Jan-xi <Emperor's Open Hand>
+									60399,	-- Qin-xi <Emperor's Closed Fist>
+								},
+							}),
 							ach(6458, {	-- Guardians of Mogu'shan
 								cr(60047, e(679, {	-- The Stone Guard (60051,60043,59915)
 									i(86741),	-- Dagger of the Seven Stars
@@ -82,7 +144,7 @@ _.Instances =
 									i(86767),	-- Circuit of the Frail Soul
 								})),
 							}),
-							ach(6844, { 	-- The Vault of Mysteries
+							ach(6844, { -- The Vault of Mysteries
 								cr(60701, e(687, {	-- The Spirit Kings (60708,60709,60710)
 									i(86777),	-- Screaming Tiger, Qiang's Unbreakable Polearm
 									i(86778),	-- Steelskin, Qiang's Impervious Shield
@@ -139,21 +201,82 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
-							PATTERNS_ILVL_496,
-							cr(60047, e(679, {	-- The Stone Guard (60051,60043,59915)
-								i(86134),	-- 
-								i(85925),	-- 
-								i(85926),	-- 
-								i(85924),	-- 
-								i(85979),	-- 
-								i(85977),	-- 
-								i(85976),	-- 
-								i(89766),	-- 
-								i(85923),	-- 
-								i(89768),	-- 
-								i(89767),	-- 
-								i(85978),	-- 
-								i(85975),	-- 
+							n(-0, { -- Common Zone Drop
+								["groups"] = {
+									i(86272),	-- Pattern: Fists of Lightning
+									i(86380),	-- Pattern: Imperial Silk Gloves
+									i(86279),	-- Pattern: Liferuned Leather Gloves
+									i(86280),	-- Pattern: Murderer's Gloves
+									i(86284),	-- Pattern: Raven Lord's Gloves
+									i(86382),	-- Pattern: Touch of the Light
+									i(86238),	-- Pattern: Chestguard of Nemeses
+									i(86381),	-- Pattern: Legacy of the Emperor
+									i(86281),	-- Pattern: Nightfire Robe
+									i(86283),	-- Pattern: Raiment of Blood and Bone
+									i(86379),	-- Pattern: Robe of Eternal Rule
+									i(86297),	-- Pattern: Stormbreaker Chestguard
+									i(87411),	-- Plans: Bloodforged Warfists
+									i(87409),	-- Plans: Gauntlets of Battle Command
+									i(87413),	-- Plans: Gauntlets of Unbound Devotion
+									i(87412),	-- Plans: Chestplate of Limitless Faith
+									i(87410),	-- Plans: Ornate Battleplate of the Master
+									i(87408),	-- Plans: Unyielding Bloodplate
+								},
+								["crs"] = {
+									60047, 	-- Amethyst Guardian
+									60051, 	-- Cobalt Guardian
+									60043, 	-- Jade Guardian
+									59915, 	-- Jasper Guardian
+									60009, 	-- Feng the Accursed
+									60143, 	-- Gara'jal the Spiritbindre
+									60701, 	-- Zian of the Endless Shadow <Sorcer King>
+									60708, 	-- Meng the Demented <Mad King>
+									60709, 	-- Qiang the Merciless <Warlord King>
+									60710, 	-- Subetai the Swift <Bandit King>
+									60410, 	-- Elegon
+									60400, 	-- Jan-xi <Emperor's Open Hand>
+									60399,	-- Qin-xi <Emperor's Closed Fist>
+									60043,	-- Jade Guardian
+									61989,	-- Cursed Mogu Sculpture
+									61334,	-- Cursed Mogu Sculpture
+									64183,	-- Enormous Stone Quilen
+									61347,	-- Kingsguard
+									61345,	-- Mogu Archer
+									64063,	-- Mogu'shan Arcanist
+									64068,	-- Mogu'shan Engine Keeper
+									61131,	-- Mogu'shan Secret-Keeper
+									64061,	-- Mogu'shan Warden
+									64947,	-- Mogu'shan Warden
+									61341,	-- Mounted Mogu
+									61250,	-- Sorcerer Mogu
+									60402,	-- Zandalari Fire-Dancer
+									60381,	-- Zandalari Infiltrator
+									60375,	-- Zandalari Skullcharger
+									60386,	-- Zandalari Terror Rider
+								},
+							}),
+							cr(60047, e(679, {	-- The Stone Guard
+								["groups"] = {
+									i(86134),	-- 
+									i(85925),	-- 
+									i(85926),	-- 
+									i(85924),	-- 
+									i(85979),	-- 
+									i(85977),	-- 
+									i(85976),	-- 
+									i(89766),	-- 
+									i(85923),	-- 
+									i(89768),	-- 
+									i(89767),	-- 
+									i(85978),	-- 
+									i(85975),	-- 
+								},
+								["crs"] = {
+									60047, -- Amethyst Guardian
+									60051, -- Cobalt Guardian
+									60043, -- Jade Guardian
+									59915, -- Jasper Guardian
+								},
 							})),
 							cr(60009, e(689, {	-- Feng the Accursed
 								i(85984),	-- 
@@ -181,19 +304,27 @@ _.Instances =
 								i(86040),	-- 
 								i(85997),	-- 
 							})),
-							cr(60701, e(687, {	-- The Spirit Kings (60708,60709,60710)
-								i(86071),	-- 
-								i(86080),	-- 
-								i(86076),	-- 
-								i(89818),	-- 
-								i(89819),	-- 
-								i(86127),	-- 
-								i(86075),	-- 
-								i(86129),	-- 
-								i(86128),	-- 
-								i(86086),	-- 
-								i(86081),	-- 
-								i(86084),	-- 
+							cr(60701, e(687, {	-- The Spirit Kings
+								["groups"] = {
+									i(86071),	-- 
+									i(86080),	-- 
+									i(86076),	-- 
+									i(89818),	-- 
+									i(89819),	-- 
+									i(86127),	-- 
+									i(86075),	-- 
+									i(86129),	-- 
+									i(86128),	-- 
+									i(86086),	-- 
+									i(86081),	-- 
+									i(86084),	-- 
+								},
+								["crs"] = {
+									60701, -- Zian of the Endless Shadow <Sorcer King>
+									60708, -- Meng the Demented <Mad King>
+									60709, -- Qiang the Merciless <Warlord King>
+									60710, -- Subetai the Swift <Bandit King>
+								},
 							})),
 							cr(60410, e(726, {	-- Elegon
 								i(86140),	-- 
@@ -208,19 +339,25 @@ _.Instances =
 								i(86139),	-- 
 								i(87777),	-- 
 							})),
-							cr(60400, e(677, {	-- Will of the Emperor (60399)
-								i(138804),	-- 
-								i(86148),	-- 
-								i(89823),	-- 
-								i(86145),	-- 
-								i(86146),	-- 
-								i(86150),	-- 
-								i(86142),	-- 
-								i(89820),	-- 
-								i(86151),	-- 
-								i(86149),	-- 
-								i(89825),	-- 
-								i(87827),	-- 
+							cr(60400, e(677, {	-- Will of the Emperor
+								["groups"] = {
+									i(138804),	-- 
+									i(86148),	-- 
+									i(89823),	-- 
+									i(86145),	-- 
+									i(86146),	-- 
+									i(86150),	-- 
+									i(86142),	-- 
+									i(89820),	-- 
+									i(86151),	-- 
+									i(86149),	-- 
+									i(89825),	-- 
+									i(87827),	-- 
+								},
+								["crs"] = {
+									60400, -- Jan-xi <Emperor's Open Hand>
+									60399, -- Qin-xi <Emperor's Closed Fist>
+								},
 							})),
 						},
 					}),
@@ -228,20 +365,82 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
-							cr(60047, e(679, {	-- The Stone Guard (60051,60043,59915)
-								i(87060),	-- 
-								i(87015),	-- 
-								i(87013),	-- 
-								i(87012),	-- 
-								i(87018),	-- 
-								i(87019),	-- 
-								i(87020),	-- 
-								i(89929),	-- 
-								i(87014),	-- 
-								i(89931),	-- 
-								i(89930),	-- 
-								i(87017),	-- 
-								i(87021),	-- 
+							n(0, { -- Zone Drop
+								["groups"] = {
+									i(86272),	-- Pattern: Fists of Lightning
+									i(86380),	-- Pattern: Imperial Silk Gloves
+									i(86279),	-- Pattern: Liferuned Leather Gloves
+									i(86280),	-- Pattern: Murderer's Gloves
+									i(86284),	-- Pattern: Raven Lord's Gloves
+									i(86382),	-- Pattern: Touch of the Light
+									i(86238),	-- Pattern: Chestguard of Nemeses
+									i(86381),	-- Pattern: Legacy of the Emperor
+									i(86281),	-- Pattern: Nightfire Robe
+									i(86283),	-- Pattern: Raiment of Blood and Bone
+									i(86379),	-- Pattern: Robe of Eternal Rule
+									i(86297),	-- Pattern: Stormbreaker Chestguard
+									i(87411),	-- Plans: Bloodforged Warfists
+									i(87409),	-- Plans: Gauntlets of Battle Command
+									i(87413),	-- Plans: Gauntlets of Unbound Devotion
+									i(87412),	-- Plans: Chestplate of Limitless Faith
+									i(87410),	-- Plans: Ornate Battleplate of the Master
+									i(87408),	-- Plans: Unyielding Bloodplate
+								},
+								["crs"] = {
+									60047, 	-- Amethyst Guardian
+									60051, 	-- Cobalt Guardian
+									60043, 	-- Jade Guardian
+									59915, 	-- Jasper Guardian
+									60009, 	-- Feng the Accursed
+									60143, 	-- Gara'jal the Spiritbindre
+									60701, 	-- Zian of the Endless Shadow <Sorcer King>
+									60708, 	-- Meng the Demented <Mad King>
+									60709, 	-- Qiang the Merciless <Warlord King>
+									60710, 	-- Subetai the Swift <Bandit King>
+									60410, 	-- Elegon
+									60400, 	-- Jan-xi <Emperor's Open Hand>
+									60399,	-- Qin-xi <Emperor's Closed Fist>
+									60043,	-- Jade Guardian
+									61989,	-- Cursed Mogu Sculpture
+									61334,	-- Cursed Mogu Sculpture
+									64183,	-- Enormous Stone Quilen
+									61347,	-- Kingsguard
+									61345,	-- Mogu Archer
+									64063,	-- Mogu'shan Arcanist
+									64068,	-- Mogu'shan Engine Keeper
+									61131,	-- Mogu'shan Secret-Keeper
+									64061,	-- Mogu'shan Warden
+									64947,	-- Mogu'shan Warden
+									61341,	-- Mounted Mogu
+									61250,	-- Sorcerer Mogu
+									60402,	-- Zandalari Fire-Dancer
+									60381,	-- Zandalari Infiltrator
+									60375,	-- Zandalari Skullcharger
+									60386,	-- Zandalari Terror Rider
+								},
+							}),
+							cr(60047, e(679, {	-- The Stone Guard
+								["groups"] = {
+									i(87060),	-- 
+									i(87015),	-- 
+									i(87013),	-- 
+									i(87012),	-- 
+									i(87018),	-- 
+									i(87019),	-- 
+									i(87020),	-- 
+									i(89929),	-- 
+									i(87014),	-- 
+									i(89931),	-- 
+									i(89930),	-- 
+									i(87017),	-- 
+									i(87021),	-- 
+								},
+								["crs"] = {
+									60047, -- Amethyst Guardian
+									60051, -- Cobalt Guardian
+									60043, -- Jade Guardian
+									59915, -- Jasper Guardian
+								},
 							})),
 							cr(60009, e(689, {	-- Feng the Accursed
 								i(87024),	-- 
@@ -269,19 +468,27 @@ _.Instances =
 								i(87042),	-- 
 								i(87037),	-- 
 							})),
-							cr(60701, e(687, {	-- The Spirit Kings (60708,60709,60710)
-								i(87046),	-- 
-								i(87049),	-- 
-								i(87048),	-- 
-								i(89935),	-- 
-								i(89936),	-- 
-								i(87054),	-- 
-								i(87050),	-- 
-								i(87051),	-- 
-								i(87052),	-- 
-								i(87056),	-- 
-								i(87047),	-- 
-								i(87055),	-- 
+							cr(60701, e(687, {	-- The Spirit Kings
+								["groups"] = {
+									i(87046),	-- 
+									i(87049),	-- 
+									i(87048),	-- 
+									i(89935),	-- 
+									i(89936),	-- 
+									i(87054),	-- 
+									i(87050),	-- 
+									i(87051),	-- 
+									i(87052),	-- 
+									i(87056),	-- 
+									i(87047),	-- 
+									i(87055),	-- 
+								},
+								["crs"] = {
+									60701, -- Zian of the Endless Shadow <Sorcer King>
+									60708, -- Meng the Demented <Mad King>
+									60709, -- Qiang the Merciless <Warlord King>
+									60710, -- Subetai the Swift <Bandit King>
+								},
 							})),
 							cr(60410, e(726, {	-- Elegon
 								i(87061),	-- 
@@ -296,19 +503,25 @@ _.Instances =
 								i(87064),	-- 
 								i(87777),	-- 
 							})),
-							cr(60400, e(677, {	-- Will of the Emperor (60399)
-								i(138804),	-- 
-								i(87074),	-- 
-								i(89941),	-- 
-								i(87071),	-- 
-								i(87070),	-- 
-								i(87077),	-- 
-								i(87069),	-- 
-								i(89940),	-- 
-								i(87073),	-- 
-								i(87078),	-- 
-								i(89942),	-- 
-								i(87825),	-- 
+							cr(60400, e(677, {	-- Will of the Emperor
+								["groups"] = {
+									i(138804),	-- 
+									i(87074),	-- 
+									i(89941),	-- 
+									i(87071),	-- 
+									i(87070),	-- 
+									i(87077),	-- 
+									i(87069),	-- 
+									i(89940),	-- 
+									i(87073),	-- 
+									i(87078),	-- 
+									i(89942),	-- 
+									i(87825),	-- 
+								},
+								["crs"] = {
+									60400, -- Jan-xi <Emperor's Open Hand>
+									60399, -- Qin-xi <Emperor's Closed Fist>
+								},
 							})),
 						},
 					}),

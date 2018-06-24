@@ -193,102 +193,106 @@ _.WorldEvents =
 								["groups"] = {
 									i(73792, { -- Stolen Present
 										["groups"] = {
-											un(29, i(54436)), 	-- Blue Clockwork Rocket Bot
-											un(29, i(34425)), 	-- Clockwork Rocket Bot Toy
-											un(29, i(37710)), 	-- Crashin' Thrashin' Racer Controller Toy
-											un(29, i(73797)), 	-- Lump of Coal
+											i(54436), 	-- Blue Clockwork Rocket Bot
+											i(34425), 	-- Clockwork Rocket Bot Toy
+											i(37710), 	-- Crashin' Thrashin' Racer Controller Toy
+											i(73797), 	-- Lump of Coal
 											un(7, i(66540)), 	-- Miniature Winter Veil Tree
-											un(29, i(46709)), 	-- MiniZep Controller Toy
-											un(29, i(54438)), 	-- Tiny Blue Ragdoll
-											un(29, i(54437)), 	-- Tiny Green Ragdoll
-											un(29, i(44606)), 	-- Toy Train Set
+											i(46709), 	-- MiniZep Controller Toy
+											i(54438), 	-- Tiny Blue Ragdoll
+											i(54437), 	-- Tiny Green Ragdoll
+											i(44606), 	-- Toy Train Set
 										},
 										["description"] = "This particular box was offered in 2012.",
+										["u"] = 2,
 									}),
 									i(93626, { -- Stolen Present
 										["groups"] = {
-											un(29, i(54436)), 	-- Blue Clockwork Rocket Bot
-											un(29, i(54343)), 	-- Blue Crashin' Thrashin' Racer Controller
-											un(29, i(34425)), 	-- Clockwork Rocket Bot Toy
-											un(29, i(37710)), 	-- Crashin' Thrashin' Racer Controller Toy
-											un(29, i(90888)), 	-- Foot Ball
-											un(29, i(70923)), 	-- Gaudy Winter Veil Sweater
-											un(29, i(73797)), 	-- Lump of Coal
-											un(29, i(93625)), 	-- Miniature Winter Veil Tree
-											un(29, i(46709)), 	-- MiniZep Controller Toy
-											un(29, i(104317)), 	-- Rotten Helper Box
-											un(29, i(90883)), 	-- The Pigskin
-											un(29, i(54438)), 	-- Tiny Blue Ragdoll
-											un(29, i(54437)), 	-- Tiny Green Ragdoll
-											un(29, i(44606)), 	-- Toy Train Set
+											i(54436), 	-- Blue Clockwork Rocket Bot
+											i(54343), 	-- Blue Crashin' Thrashin' Racer Controller
+											i(34425), 	-- Clockwork Rocket Bot Toy
+											i(37710), 	-- Crashin' Thrashin' Racer Controller Toy
+											i(90888), 	-- Foot Ball
+											i(70923), 	-- Gaudy Winter Veil Sweater
+											i(73797), 	-- Lump of Coal
+											i(93625), 	-- Miniature Winter Veil Tree
+											i(46709), 	-- MiniZep Controller Toy
+											i(104317), 	-- Rotten Helper Box
+											i(90883), 	-- The Pigskin
+											i(54438), 	-- Tiny Blue Ragdoll
+											i(54437), 	-- Tiny Green Ragdoll
+											i(44606), 	-- Toy Train Set
 										},
 										["description"] = "This particular box was offered in 2013.",
+										["u"] = 2,
 									}),
 									i(149503, { -- Stolen Gift
 										["groups"] = {
-											un(29, dr(19.0, i(116456))), 	-- Scroll of Storytelling
-											un(29, dr(4.0, i(54438))), 		-- Tiny Blue Ragdoll
-											un(29, dr(4.0, i(54437))), 		-- Tiny Green Ragdoll
-											un(29, dr(3.0, i(90888))), 		-- Foot Ball
-											un(29, dr(3.0, i(70923))), 		-- Gaudy Winter Veil Sweater
-											un(29, dr(3.0, i(104317))), 	-- Rotten Helper Box
-											un(29, dr(2.0, i(34425))), 		-- Clockwork Rocket Bot Toy
-											un(29, dr(2.0, i(37710))), 		-- Crashin' Thrashin' Racer Controller Toy
-											un(29, dr(2.0, i(73797))), 		-- Lump of Coal
-											un(29, dr(2.0, i(46709))), 		-- MiniZep Controller Toy
-											un(29, dr(2.0, i(90883))), 		-- The Pigskin
-											un(29, dr(1.7, i(116692))), 	-- Fuzzy Green Lounge Cushion
-											un(29, dr(1.7, i(116691))), 	-- Zhevra Lounge Cusion
-											un(29, dr(1.6, i(116689))), 	-- Pineapple Lounge Cushion
-											un(29, dr(1.5, i(116763))), 	-- Crashin' Thrashin' Shredder Controller
-											un(29, dr(1.5, i(116690))), 	-- Safarai Lounge Cushion
-											un(29, dr(1.14, i(128649))), 	-- Illusion: Winter's Grasp
-											un(29, dr(0.8, i(108632))), 	-- Crashin' Thrashin' Flamer Controller
-											un(29, dr(0.8, i(104318))), 	-- Crashin' Thrashin' Flyer Controller
-											un(29, dr(0.7, i(128776))), 	-- Red Wooden Sled
-											un(29, dr(0.6, i(117371))), 	-- Miniature Winter Veil Tree
-											un(29, dr(0.4, i(143898))), 	-- Miniature Winter Veil Tree
-											un(29, dr(0.16, i(45057))), 	-- Wind-Up Train Wrecker
-											un(29, dr(0.11, i(44606))), 	-- Toy Train Set
-											un(29, dr(0.1, i(54343))), 		-- Blue Crashin' Thrashin' Racer Controller
-											un(29, dr(0.1, i(118572))), 	-- Illusion: Flame of Ragnaros
-											un(29, dr(0.08, i(54436))), 	-- Blue Clockwork Rocket Bot
+											dr(19.0, i(116456)), 	-- Scroll of Storytelling
+											dr(4.0, i(54438)), 		-- Tiny Blue Ragdoll
+											dr(4.0, i(54437)), 		-- Tiny Green Ragdoll
+											dr(3.0, i(90888)), 		-- Foot Ball
+											dr(3.0, i(70923)), 		-- Gaudy Winter Veil Sweater
+											dr(3.0, i(104317)), 	-- Rotten Helper Box
+											dr(2.0, i(34425)), 		-- Clockwork Rocket Bot Toy
+											dr(2.0, i(37710)), 		-- Crashin' Thrashin' Racer Controller Toy
+											dr(2.0, i(73797)), 		-- Lump of Coal
+											dr(2.0, i(46709)), 		-- MiniZep Controller Toy
+											dr(2.0, i(90883)), 		-- The Pigskin
+											dr(1.7, i(116692)), 	-- Fuzzy Green Lounge Cushion
+											dr(1.7, i(116691)), 	-- Zhevra Lounge Cusion
+											dr(1.6, i(116689)), 	-- Pineapple Lounge Cushion
+											dr(1.5, i(116763)), 	-- Crashin' Thrashin' Shredder Controller
+											dr(1.5, i(116690)), 	-- Safarai Lounge Cushion
+											dr(1.14, i(128649)), 	-- Illusion: Winter's Grasp
+											dr(0.8, i(108632)), 	-- Crashin' Thrashin' Flamer Controller
+											dr(0.8, i(104318)), 	-- Crashin' Thrashin' Flyer Controller
+											dr(0.7, i(128776)), 	-- Red Wooden Sled
+											dr(0.6, i(117371)), 	-- Miniature Winter Veil Tree
+											dr(0.4, i(143898)), 	-- Miniature Winter Veil Tree
+											dr(0.16, i(45057)), 	-- Wind-Up Train Wrecker
+											dr(0.11, i(44606)), 	-- Toy Train Set
+											dr(0.1, i(54343)), 		-- Blue Crashin' Thrashin' Racer Controller
+											dr(0.1, i(118572)), 	-- Illusion: Flame of Ragnaros
+											dr(0.08, i(54436)), 	-- Blue Clockwork Rocket Bot
 										},
-										["description"] = "This gift is for characters below level 100.  Not all of the contents are 100% sure yet"
+										["description"] = "This gift is for characters below level 100.  Not all of the contents are 100% sure yet",
+										["u"] = 29,
 									}),
 									i(116762, { -- Stolen Present
 										["groups"] = {
-											un(29, dr(19.0, i(116456))), 	-- Scroll of Storytelling
-											un(29, dr(4.0, i(54438))), 		-- Tiny Blue Ragdoll
-											un(29, dr(4.0, i(54437))), 		-- Tiny Green Ragdoll
-											un(29, dr(3.0, i(90888))), 		-- Foot Ball
-											un(29, dr(3.0, i(70923))), 		-- Gaudy Winter Veil Sweater
-											un(29, dr(3.0, i(104317))), 	-- Rotten Helper Box
-											un(29, dr(2.0, i(34425))), 		-- Clockwork Rocket Bot Toy
-											un(29, dr(2.0, i(37710))), 		-- Crashin' Thrashin' Racer Controller Toy
-											un(29, dr(2.0, i(73797))), 		-- Lump of Coal
-											un(29, dr(2.0, i(46709))), 		-- MiniZep Controller Toy
-											un(29, dr(2.0, i(90883))), 		-- The Pigskin
-											un(29, dr(1.7, i(116692))), 	-- Fuzzy Green Lounge Cushion
-											un(29, dr(1.7, i(116691))), 	-- Zhevra Lounge Cusion
-											un(29, dr(1.6, i(116689))), 	-- Pineapple Lounge Cushion
-											un(29, dr(1.5, i(116763))), 	-- Crashin' Thrashin' Shredder Controller
-											un(29, dr(1.5, i(116690))), 	-- Safarai Lounge Cushion
-											un(29, dr(1.14, i(128649))), 	-- Illusion: Winter's Grasp
-											un(29, dr(0.8, i(108632))), 	-- Crashin' Thrashin' Flamer Controller
-											un(29, dr(0.8, i(104318))), 	-- Crashin' Thrashin' Flyer Controller
-											un(29, dr(0.7, i(128776))), 	-- Red Wooden Sled
-											un(29, dr(0.6, i(117371))), 	-- Miniature Winter Veil Tree
-											un(29, dr(0.4, i(143898))), 	-- Miniature Winter Veil Tree
-											un(29, dr(0.16, i(45057))), 	-- Wind-Up Train Wrecker
-											un(29, dr(0.11, i(44606))), 	-- Toy Train Set
-											un(29, dr(0.1, i(54343))), 		-- Blue Crashin' Thrashin' Racer Controller
-											un(29, dr(0.1, i(118572))), 	-- Illusion: Flame of Ragnaros
-											un(29, dr(0.08, i(54436))), 	-- Blue Clockwork Rocket Bot
+											dr(19.0, i(116456)), 	-- Scroll of Storytelling
+											dr(4.0, i(54438)), 		-- Tiny Blue Ragdoll
+											dr(4.0, i(54437)), 		-- Tiny Green Ragdoll
+											dr(3.0, i(90888)), 		-- Foot Ball
+											dr(3.0, i(70923)), 		-- Gaudy Winter Veil Sweater
+											dr(3.0, i(104317)), 	-- Rotten Helper Box
+											dr(2.0, i(34425)), 		-- Clockwork Rocket Bot Toy
+											dr(2.0, i(37710)), 		-- Crashin' Thrashin' Racer Controller Toy
+											dr(2.0, i(73797)), 		-- Lump of Coal
+											dr(2.0, i(46709)), 		-- MiniZep Controller Toy
+											dr(2.0, i(90883)), 		-- The Pigskin
+											dr(1.7, i(116692)), 	-- Fuzzy Green Lounge Cushion
+											dr(1.7, i(116691)), 	-- Zhevra Lounge Cusion
+											dr(1.6, i(116689)), 	-- Pineapple Lounge Cushion
+											dr(1.5, i(116763)), 	-- Crashin' Thrashin' Shredder Controller
+											dr(1.5, i(116690)), 	-- Safarai Lounge Cushion
+											dr(1.14, i(128649)), 	-- Illusion: Winter's Grasp
+											dr(0.8, i(108632)), 	-- Crashin' Thrashin' Flamer Controller
+											dr(0.8, i(104318)), 	-- Crashin' Thrashin' Flyer Controller
+											dr(0.7, i(128776)), 	-- Red Wooden Sled
+											dr(0.6, i(117371)), 	-- Miniature Winter Veil Tree
+											dr(0.4, i(143898)), 	-- Miniature Winter Veil Tree
+											dr(0.16, i(45057)), 	-- Wind-Up Train Wrecker
+											dr(0.11, i(44606)), 	-- Toy Train Set
+											dr(0.1, i(54343)), 		-- Blue Crashin' Thrashin' Racer Controller
+											dr(0.1, i(118572)), 	-- Illusion: Flame of Ragnaros
+											dr(0.08, i(54436)), 	-- Blue Clockwork Rocket Bot
 										},
+										["description"] = "This quest can be completed daily!",
+										["u"] = 29,
 									}),
 								},
-								["description"] = "This quest can be completed daily!",
 							})),
 						}),
 						n(13435, { -- Khole Jinglepocket
@@ -333,104 +337,108 @@ _.WorldEvents =
 							a(q(7022)), -- Greatfather Winter is Here!
 							a(q(7043, { -- You're A Mean One
 								["groups"] = {
-									i(73792, {  -- Stolen Present
+									i(73792, { -- Stolen Present
 										["groups"] = {
-											un(29, i(54436)), 	-- Blue Clockwork Rocket Bot
-											un(29, i(34425)), 	-- Clockwork Rocket Bot Toy
-											un(29, i(37710)), 	-- Crashin' Thrashin' Racer Controller Toy
-											un(29, i(73797)), 	-- Lump of Coal
+											i(54436), 	-- Blue Clockwork Rocket Bot
+											i(34425), 	-- Clockwork Rocket Bot Toy
+											i(37710), 	-- Crashin' Thrashin' Racer Controller Toy
+											i(73797), 	-- Lump of Coal
 											un(7, i(66540)), 	-- Miniature Winter Veil Tree
-											un(29, i(46709)), 	-- MiniZep Controller Toy
-											un(29, i(54438)), 	-- Tiny Blue Ragdoll
-											un(29, i(54437)), 	-- Tiny Green Ragdoll
-											un(29, i(44606)), 	-- Toy Train Set
+											i(46709), 	-- MiniZep Controller Toy
+											i(54438), 	-- Tiny Blue Ragdoll
+											i(54437), 	-- Tiny Green Ragdoll
+											i(44606), 	-- Toy Train Set
 										},
 										["description"] = "This particular box was offered in 2012.",
+										["u"] = 2,
 									}),
-									i(93626, {  -- Stolen Present
+									i(93626, { -- Stolen Present
 										["groups"] = {
-											un(29, i(54436)), 	-- Blue Clockwork Rocket Bot
-											un(29, i(54343)), 	-- Blue Crashin' Thrashin' Racer Controller
-											un(29, i(34425)), 	-- Clockwork Rocket Bot Toy
-											un(29, i(37710)), 	-- Crashin' Thrashin' Racer Controller Toy
-											un(29, i(90888)), 	-- Foot Ball
-											un(29, i(70923)), 	-- Gaudy Winter Veil Sweater
-											un(29, i(73797)), 	-- Lump of Coal
-											un(29, i(93625)), 	-- Miniature Winter Veil Tree
-											un(29, i(46709)), 	-- MiniZep Controller Toy
-											un(29, i(104317)), 	-- Rotten Helper Box
-											un(29, i(90883)), 	-- The Pigskin
-											un(29, i(54438)), 	-- Tiny Blue Ragdoll
-											un(29, i(54437)), 	-- Tiny Green Ragdoll
-											un(29, i(44606)), 	-- Toy Train Set
+											i(54436), 	-- Blue Clockwork Rocket Bot
+											i(54343), 	-- Blue Crashin' Thrashin' Racer Controller
+											i(34425), 	-- Clockwork Rocket Bot Toy
+											i(37710), 	-- Crashin' Thrashin' Racer Controller Toy
+											i(90888), 	-- Foot Ball
+											i(70923), 	-- Gaudy Winter Veil Sweater
+											i(73797), 	-- Lump of Coal
+											i(93625), 	-- Miniature Winter Veil Tree
+											i(46709), 	-- MiniZep Controller Toy
+											i(104317), 	-- Rotten Helper Box
+											i(90883), 	-- The Pigskin
+											i(54438), 	-- Tiny Blue Ragdoll
+											i(54437), 	-- Tiny Green Ragdoll
+											i(44606), 	-- Toy Train Set
 										},
 										["description"] = "This particular box was offered in 2013.",
+										["u"] = 2,
 									}),
 									i(149503, { -- Stolen Gift
 										["groups"] = {
-											un(29, dr(19.0, i(116456))), 	-- Scroll of Storytelling
-											un(29, dr(4.0, i(54438))), 		-- Tiny Blue Ragdoll
-											un(29, dr(4.0, i(54437))), 		-- Tiny Green Ragdoll
-											un(29, dr(3.0, i(90888))), 		-- Foot Ball
-											un(29, dr(3.0, i(70923))), 		-- Gaudy Winter Veil Sweater
-											un(29, dr(3.0, i(104317))), 	-- Rotten Helper Box
-											un(29, dr(2.0, i(34425))), 		-- Clockwork Rocket Bot Toy
-											un(29, dr(2.0, i(37710))), 		-- Crashin' Thrashin' Racer Controller Toy
-											un(29, dr(2.0, i(73797))), 		-- Lump of Coal
-											un(29, dr(2.0, i(46709))), 		-- MiniZep Controller Toy
-											un(29, dr(2.0, i(90883))), 		-- The Pigskin
-											un(29, dr(1.7, i(116692))), 	-- Fuzzy Green Lounge Cushion
-											un(29, dr(1.7, i(116691))), 	-- Zhevra Lounge Cusion
-											un(29, dr(1.6, i(116689))), 	-- Pineapple Lounge Cushion
-											un(29, dr(1.5, i(116763))), 	-- Crashin' Thrashin' Shredder Controller
-											un(29, dr(1.5, i(116690))), 	-- Safarai Lounge Cushion
-											un(29, dr(1.14, i(128649))), 	-- Illusion: Winter's Grasp
-											un(29, dr(0.8, i(108632))), 	-- Crashin' Thrashin' Flamer Controller
-											un(29, dr(0.8, i(104318))), 	-- Crashin' Thrashin' Flyer Controller
-											un(29, dr(0.7, i(128776))), 	-- Red Wooden Sled
-											un(29, dr(0.6, i(117371))), 	-- Miniature Winter Veil Tree
-											un(29, dr(0.4, i(143898))), 	-- Miniature Winter Veil Tree
-											un(29, dr(0.16, i(45057))), 	-- Wind-Up Train Wrecker
-											un(29, dr(0.11, i(44606))), 	-- Toy Train Set
-											un(29, dr(0.1, i(54343))), 		-- Blue Crashin' Thrashin' Racer Controller
-											un(29, dr(0.1, i(118572))), 	-- Illusion: Flame of Ragnaros
-											un(29, dr(0.08, i(54436))), 	-- Blue Clockwork Rocket Bot
+											dr(19.0, i(116456)), 	-- Scroll of Storytelling
+											dr(4.0, i(54438)), 		-- Tiny Blue Ragdoll
+											dr(4.0, i(54437)), 		-- Tiny Green Ragdoll
+											dr(3.0, i(90888)), 		-- Foot Ball
+											dr(3.0, i(70923)), 		-- Gaudy Winter Veil Sweater
+											dr(3.0, i(104317)), 	-- Rotten Helper Box
+											dr(2.0, i(34425)), 		-- Clockwork Rocket Bot Toy
+											dr(2.0, i(37710)), 		-- Crashin' Thrashin' Racer Controller Toy
+											dr(2.0, i(73797)), 		-- Lump of Coal
+											dr(2.0, i(46709)), 		-- MiniZep Controller Toy
+											dr(2.0, i(90883)), 		-- The Pigskin
+											dr(1.7, i(116692)), 	-- Fuzzy Green Lounge Cushion
+											dr(1.7, i(116691)), 	-- Zhevra Lounge Cusion
+											dr(1.6, i(116689)), 	-- Pineapple Lounge Cushion
+											dr(1.5, i(116763)), 	-- Crashin' Thrashin' Shredder Controller
+											dr(1.5, i(116690)), 	-- Safarai Lounge Cushion
+											dr(1.14, i(128649)), 	-- Illusion: Winter's Grasp
+											dr(0.8, i(108632)), 	-- Crashin' Thrashin' Flamer Controller
+											dr(0.8, i(104318)), 	-- Crashin' Thrashin' Flyer Controller
+											dr(0.7, i(128776)), 	-- Red Wooden Sled
+											dr(0.6, i(117371)), 	-- Miniature Winter Veil Tree
+											dr(0.4, i(143898)), 	-- Miniature Winter Veil Tree
+											dr(0.16, i(45057)), 	-- Wind-Up Train Wrecker
+											dr(0.11, i(44606)), 	-- Toy Train Set
+											dr(0.1, i(54343)), 		-- Blue Crashin' Thrashin' Racer Controller
+											dr(0.1, i(118572)), 	-- Illusion: Flame of Ragnaros
+											dr(0.08, i(54436)), 	-- Blue Clockwork Rocket Bot
 										},
-										["description"] = "This gift is for characters below level 100.  Not all of the contents are 100% sure yet"
+										["description"] = "This gift is for characters below level 100.  Not all of the contents are 100% sure yet",
+										["u"] = 29,
 									}),
 									i(116762, { -- Stolen Present
 										["groups"] = {
-											un(29, dr(19.0, i(116456))), 	-- Scroll of Storytelling
-											un(29, dr(4.0, i(54438))), 		-- Tiny Blue Ragdoll
-											un(29, dr(4.0, i(54437))), 		-- Tiny Green Ragdoll
-											un(29, dr(3.0, i(90888))), 		-- Foot Ball
-											un(29, dr(3.0, i(70923))), 		-- Gaudy Winter Veil Sweater
-											un(29, dr(3.0, i(104317))), 	-- Rotten Helper Box
-											un(29, dr(2.0, i(34425))), 		-- Clockwork Rocket Bot Toy
-											un(29, dr(2.0, i(37710))), 		-- Crashin' Thrashin' Racer Controller Toy
-											un(29, dr(2.0, i(73797))), 		-- Lump of Coal
-											un(29, dr(2.0, i(46709))), 		-- MiniZep Controller Toy
-											un(29, dr(2.0, i(90883))), 		-- The Pigskin
-											un(29, dr(1.7, i(116692))), 	-- Fuzzy Green Lounge Cushion
-											un(29, dr(1.7, i(116691))), 	-- Zhevra Lounge Cusion
-											un(29, dr(1.6, i(116689))), 	-- Pineapple Lounge Cushion
-											un(29, dr(1.5, i(116763))), 	-- Crashin' Thrashin' Shredder Controller
-											un(29, dr(1.5, i(116690))), 	-- Safarai Lounge Cushion
-											un(29, dr(1.14, i(128649))), 	-- Illusion: Winter's Grasp
-											un(29, dr(0.8, i(108632))), 	-- Crashin' Thrashin' Flamer Controller
-											un(29, dr(0.8, i(104318))), 	-- Crashin' Thrashin' Flyer Controller
-											un(29, dr(0.7, i(128776))), 	-- Red Wooden Sled
-											un(29, dr(0.6, i(117371))), 	-- Miniature Winter Veil Tree
-											un(29, dr(0.4, i(143898))), 	-- Miniature Winter Veil Tree
-											un(29, dr(0.16, i(45057))), 	-- Wind-Up Train Wrecker
-											un(29, dr(0.11, i(44606))), 	-- Toy Train Set
-											un(29, dr(0.1, i(54343))), 		-- Blue Crashin' Thrashin' Racer Controller
-											un(29, dr(0.1, i(118572))), 	-- Illusion: Flame of Ragnaros
-											un(29, dr(0.08, i(54436))), 	-- Blue Clockwork Rocket Bot
+											dr(19.0, i(116456)), 	-- Scroll of Storytelling
+											dr(4.0, i(54438)), 		-- Tiny Blue Ragdoll
+											dr(4.0, i(54437)), 		-- Tiny Green Ragdoll
+											dr(3.0, i(90888)), 		-- Foot Ball
+											dr(3.0, i(70923)), 		-- Gaudy Winter Veil Sweater
+											dr(3.0, i(104317)), 	-- Rotten Helper Box
+											dr(2.0, i(34425)), 		-- Clockwork Rocket Bot Toy
+											dr(2.0, i(37710)), 		-- Crashin' Thrashin' Racer Controller Toy
+											dr(2.0, i(73797)), 		-- Lump of Coal
+											dr(2.0, i(46709)), 		-- MiniZep Controller Toy
+											dr(2.0, i(90883)), 		-- The Pigskin
+											dr(1.7, i(116692)), 	-- Fuzzy Green Lounge Cushion
+											dr(1.7, i(116691)), 	-- Zhevra Lounge Cusion
+											dr(1.6, i(116689)), 	-- Pineapple Lounge Cushion
+											dr(1.5, i(116763)), 	-- Crashin' Thrashin' Shredder Controller
+											dr(1.5, i(116690)), 	-- Safarai Lounge Cushion
+											dr(1.14, i(128649)), 	-- Illusion: Winter's Grasp
+											dr(0.8, i(108632)), 	-- Crashin' Thrashin' Flamer Controller
+											dr(0.8, i(104318)), 	-- Crashin' Thrashin' Flyer Controller
+											dr(0.7, i(128776)), 	-- Red Wooden Sled
+											dr(0.6, i(117371)), 	-- Miniature Winter Veil Tree
+											dr(0.4, i(143898)), 	-- Miniature Winter Veil Tree
+											dr(0.16, i(45057)), 	-- Wind-Up Train Wrecker
+											dr(0.11, i(44606)), 	-- Toy Train Set
+											dr(0.1, i(54343)), 		-- Blue Crashin' Thrashin' Racer Controller
+											dr(0.1, i(118572)), 	-- Illusion: Flame of Ragnaros
+											dr(0.08, i(54436)), 	-- Blue Clockwork Rocket Bot
 										},
+										["description"] = "This quest can be completed daily!",
+										["u"] = 29,
 									}),
 								},
-								["description"] = "This quest can be completed daily!",
 							})),
 						}),
 					}),
