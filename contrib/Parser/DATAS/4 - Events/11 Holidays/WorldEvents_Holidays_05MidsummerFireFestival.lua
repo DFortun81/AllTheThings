@@ -57,11 +57,6 @@ _.WorldEvents =
 							}),
 							ach(272, { -- Torch Juggler
 							}),
-							{
-								["achievementID"] = 272,	-- Torch Juggler
-								["criteriaID"] = 6,			-- Torch Juggler Criteria
-								["itemID"] = 34599,			-- Juggling Torch (Item)
-							},
 						})),
 					}),
 					n(-139, { -- Bosses
@@ -218,7 +213,7 @@ _.WorldEvents =
 								}),
 								{
 									["achievementID"] = 272,	-- Torch Juggler
-									["criteriaID"] = 6,			-- Torch Juggler Criteria
+									["criteriaID"] = 1,			-- Torch Juggler Criteria
 									["itemID"] = 34599,			-- Juggling Torch (Item)
 								},
 								un(21, i(34686)),	-- Brazier of Dancing Flames
@@ -242,7 +237,7 @@ _.WorldEvents =
 								}),
 								{
 									["achievementID"] = 272,	-- Torch Juggler
-									["criteriaID"] = 6,			-- Torch Juggler Criteria
+									["criteriaID"] = 1,			-- Torch Juggler Criteria
 									["itemID"] = 34599,			-- Juggling Torch (Item)
 								},
 								un(21, i(34686)),	-- Brazier of Dancing Flames
