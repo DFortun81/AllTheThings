@@ -3428,8 +3428,8 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 								un(34, i(10748)),	-- Wanderlust Boots
 							}),
 							qc8(q(1861, {	-- Mirror Lake
-								un(34, i(7508)),	-- Ley Orb
-								un(34, i(9513)),	-- Ley Staff
+								i(7508),	-- Ley Orb
+								i(9513),	-- Ley Staff
 							})),
 							q(167, {		-- Oh Brother...
 								un(34, i(1893)),	-- Miner's Revenge
