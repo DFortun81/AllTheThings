@@ -69,7 +69,106 @@ _.WorldEvents =
 						h(ach(1039, { -- The Flame Keeper
 							un(21, title(45)), -- Flame Keeper
 							h(ach(1036, { -- The Fires of Azeroth
-								h(un(21, ach(1025))), 	-- Flame Keeper of Eastern Kingdoms
+								h(un(21, ach(1025, { 	-- Flame Keeper of Eastern Kingdoms
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 1,			-- Arathi Highlands [Criteria]
+										["questID"] = 11840, 		-- Honor the Flame [Arathi Highlands]
+										["qg"] = 25923,				-- Arathi Flame Keeper
+										["maps"] = { 16 }, 			-- Arathi Highlands
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 2,			-- Badlands [Criteria]
+										["questID"] = 11842, 		-- Honor the Flame [Badlands]
+										["qg"] = 25925,				-- Badlands Flame Keeper
+										["maps"] = { 17 }, 			-- Badlands
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 3,			-- Blasted Lands [Criteria]
+										["questID"] = 28930, 		-- Honor the Flame [Blasted Lands]
+										["qg"] = 51603,				-- Blasted Lands Flame Keeper
+										["maps"] = { 19 }, 			-- Blasted Lands
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 4,			-- Burning Steppes [Criteria]
+										["questID"] = 11844, 		-- Honor the Flame [Burning Steppes]
+										["qg"] = 25927,				-- Burning Steppes Flame Keeper
+										["maps"] = { 29 }, 			-- Burning Steppes
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 5,			-- Eversong Woods [Criteria]
+										["questID"] = 11848, 		-- Honor the Flame [Eversong Woods]
+										["qg"] = 25931,				-- Eversong Woods Flame Keeper
+										["maps"] = { 462 }, 		-- Eversong Woods
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 6,			-- Ghostlands [Criteria]
+										["questID"] = 11850, 		-- Honor the Flame [Ghostlands]
+										["qg"] = 25933,				-- Ghostlands Flame Keeper
+										["maps"] = { 463 }, 		-- Ghostlands
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 7,			-- Hillsbrad Foothills [Criteria]
+										["questID"] = 11853, 		-- Honor the Flame [Hillsbrad Foothills]
+										["qg"] = 25935,				-- Hillsbrad Flame Keeper
+										["maps"] = { 24 }, 			-- Hillsbrad Foothills
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 8,			-- Northern Stranglethorn [Criteria]
+										["questID"] = 28924, 		-- Honor the Flame [Northern Stranglethorn]
+										["qg"] = 51582,				-- Northern Stranglethorn Vale Flame Keeper
+										["maps"] = { 37 }, 			-- Northern Stranglethorn
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 9,			-- Silverpine Forest [Criteria]
+										["questID"] = 11584, 		-- Honor the Flame [Silverpine Forest]
+										["qg"] = 25939,				-- Silverpine Forest Flame Keeper
+										["maps"] = { 21 }, 			-- Silverpine Forest
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 10,		-- Swamp of Sorrows [Criteria]
+										["questID"] = 11857, 		-- Honor the Flame [Swamp of Sorrows]
+										["qg"] = 25941,				-- Swamp of Sorrows Flame Keeper
+										["maps"] = { 38 }, 			-- Swamp of Sorrows
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 11,		-- The Cape of Stranglethorn [Criteria]
+										["questID"] = 11837, 		-- Honor the Flame [The Cape of Stranglethorn]
+										["qg"] = 25920,				-- Cape of Stranglethorn Flame Keeper
+										["maps"] = { 673 }, 		-- The Cape of Stranglethorn
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 12,		-- The Hinterlands [Criteria]
+										["questID"] = 11860, 		-- Honor the Flame [The Hinterlands]
+										["qg"] = 25944,				-- The Hinterlands Flame Keeper
+										["maps"] = { 26 }, 			-- The Hinterlands
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 13,		-- Tirisfal Glades [Criteria]
+										["questID"] = 11862, 		-- Honor the Flame [Tirisfal Glades]
+										["qg"] = 25946,				-- Tirisfal Glades Flame Keeper
+										["maps"] = { 20 }, 			-- Tirisfal Glades
+									},
+									{
+										["achievementID"] = 1025,	-- Flame Keeper of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 14,		-- Western Plaguelands [Criteria]
+										["questID"] = 28931, 		-- Honor the Flame [Western Plaguelands]
+										["qg"] = 51604,				-- Western Plaguelands Flame Keeper
+										["maps"] = { 22 }, 			-- Western Plaguelands
+									},									
+								}))),
 								h(un(21, ach(1026, {	-- Flame Keeper of Kalimdor
 									{
 										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
@@ -170,9 +269,277 @@ _.WorldEvents =
 										["maps"] = { 281 }, 		-- Winterspring
 									},
 								}))),
-								un(21, ach(1027)), 					-- Flame Keeper of Outland
-								un(21, ach(6009)), 					-- Flame Keeper of Northrend
-								un(21, ach(6012)), 					-- Flame Keeper of Cataclysm
+								h(un(21, ach(1027, { 	-- Flame Keeper of Outland
+									{
+										["achievementID"] = 1027,	-- Flame Keeper of Outland [Achievement]
+										["criteriaID"] = 1,			-- Blade's Edge Mountains [Criteria]
+										["questID"] = 11843,		-- Honor the Flame [Blade's Edge Mountains]
+										["qg"] = 25926,				-- Blade's Edge Flame Keeper
+										["maps"] = { 475 },			-- Blade's Edge Mountains
+									},
+									{
+										["achievementID"] = 1027,	-- Flame Keeper of Outland [Achievement]
+										["criteriaID"] = 2,			-- Hellfire Peninsula [Criteria]
+										["questID"] = 11851,		-- Honor the Flame [Hellfire Peninsula]
+										["qg"] = 25934,				-- Hellfire Peninsula Flame Keeper
+										["maps"] = { 465 },			-- Hellfire Peninsula
+									},
+									{
+										["achievementID"] = 1027,	-- Flame Keeper of Outland [Achievement]
+										["criteriaID"] = 3,			-- Nagrand [Criteria]
+										["questID"] = 11854,		-- Honor the Flame [Nagrand]
+										["qg"] = 25937,				-- Nagrand Flame Keeper
+										["maps"] = { 477 },			-- Nagrand
+									},
+									{
+										["achievementID"] = 1027,	-- Flame Keeper of Outland [Achievement]
+										["criteriaID"] = 4,			-- Netherstorm [Criteria]
+										["questID"] = 11835,		-- Honor the Flame [Netherstorm]
+										["qg"] = 25918,				-- Netherstorm Flame Keeper
+										["maps"] = { 479 },			-- Netherstorm
+									},
+									{
+										["achievementID"] = 1027,	-- Flame Keeper of Outland [Achievement]
+										["criteriaID"] = 5,			-- Shadowmoon Valley [Criteria]
+										["questID"] = 11855,		-- Honor the Flame [Shadowmoon Valley]
+										["qg"] = 25938,				-- Shadowmoon Valley Flame Keeper
+										["maps"] = { 473 },			-- Shadowmoon Valley
+									},
+									{
+										["achievementID"] = 1027,	-- Flame Keeper of Outland [Achievement]
+										["criteriaID"] = 6,			-- Terokkar Forest [Criteria]
+										["questID"] = 11858,		-- Honor the Flame [Terokkar Forest]
+										["qg"] = 25942,				-- Terokkar Forest Flame Keeper
+										["maps"] = { 478 },			-- Terokkar Forest
+									},
+									{
+										["achievementID"] = 1027,	-- Flame Keeper of Outland [Achievement]
+										["criteriaID"] = 7,			-- Zangarmarsh [Criteria]
+										["questID"] = 11863,		-- Honor the Flame [Zangarmarsh]
+										["qg"] = 25947,				-- Zangarmarsh Flame Keeper
+										["maps"] = { 467 },			-- Zangarmarsh
+									},
+								}))),
+								h(un(21, ach(6009, { 	-- Flame Keeper of Northrend
+									{
+										["achievementID"] = 6009,	-- Flame Keeper of Northrend [Achievement]
+										["criteriaID"] = 1,			-- Dragonblight [Criteria]
+										["questID"] = 13495,		-- Honor the Flame [Dragonblight]
+										["qg"] = 32811,				-- Dragonblight Flame Keeper
+										["maps"] = { 488 },			-- Dragonblight
+									},
+									{
+										["achievementID"] = 6009,	-- Flame Keeper of Northrend [Achievement]
+										["criteriaID"] = 2,			-- Borean Tundra [Criteria]
+										["questID"] = 13493,		-- Honor the Flame [Borean Tundra]
+										["qg"] = 32809,				-- Borean Tundra Flame Keeper
+										["maps"] = { 486 },			-- Borean Tundra
+									},
+									{
+										["achievementID"] = 6009,	-- Flame Keeper of Northrend [Achievement]
+										["criteriaID"] = 3,			-- Howling Fjord [Criteria]
+										["questID"] = 13496,		-- Honor the Flame [Howling Fjord]
+										["qg"] = 32812,				-- Howling Fjord Flame Keeper
+										["maps"] = { 491 },			-- Howling Fjord
+									},
+									{
+										["achievementID"] = 6009,	-- Flame Keeper of Northrend [Achievement]
+										["criteriaID"] = 4,			-- Sholazar Basin [Criteria]
+										["questID"] = 13494,		-- Honor the Flame [Sholazar Basin]
+										["qg"] = 32810,				-- Sholazar Basin Flame Keeper
+										["maps"] = { 493 },			-- Sholazar Basin
+									},
+									{
+										["achievementID"] = 6009,	-- Flame Keeper of Northrend [Achievement]
+										["criteriaID"] = 5,			-- Storm Peaks [Criteria]
+										["questID"] = 13498,		-- Honor the Flame [Storm Peaks]
+										["qg"] = 32814,				-- Storm Peaks Flame Keeper
+										["maps"] = { 495 },			-- Storm Peaks
+									},
+									{
+										["achievementID"] = 6009,	-- Flame Keeper of Northrend [Achievement]
+										["criteriaID"] = 6,			-- Zul'Drak [Criteria]
+										["questID"] = 13500,		-- Honor the Flame [Zul'Drak]
+										["qg"] = 32816,				-- Zul'Drak Flame Keeper
+										["maps"] = { 496 },			-- Zul'Drak
+									},
+									{
+										["achievementID"] = 6009,	-- Flame Keeper of Northrend [Achievement]
+										["criteriaID"] = 7,			-- Grizzly Hills [Criteria]
+										["questID"] = 13497,		-- Honor the Flame [Grizzly Hills]
+										["qg"] = 32813,				-- Grizzly Hills Flame Keeper
+										["maps"] = { 490 },			-- Grizzly Hills
+									},
+									{
+										["achievementID"] = 6009,	-- Flame Keeper of Northrend [Achievement]
+										["criteriaID"] = 8,			-- Crystalsong Forest [Criteria]
+										["questID"] = 13499,		-- Honor the Flame [Crystalsong Forest]
+										["qg"] = 32815,				-- Crystalsong Forest Flame Keeper
+										["maps"] = { 510 },			-- Crystalsong Forest
+									},
+								}))),
+								h(un(21, ach(6012, {	-- Flame Keeper of Cataclysm
+									{
+										["achievementID"] = 6012,	-- Flame Keeper of Cataclysm [Achievement]
+										["criteriaID"] = 1,			-- Vashj'ir [Criteria]
+										["questID"] = 29031,		-- Honor the Flame [Vashj'ir]
+										["qg"] = 51697,				-- Vashj'ir Flame Guardian
+										["maps"] = { 613 },			-- Vashj'ir
+									},
+									{
+										["achievementID"] = 6012,	-- Flame Keeper of Cataclysm [Achievement]
+										["criteriaID"] = 2,			-- Twilight Highlands [Criteria]
+										["questID"] = 28946,		-- Honor the Flame [Twilight Highlands]
+										["qg"] = 51651,				-- Twilight Highlands Flame Keeper
+										["maps"] = { 700 },			-- Twilight Highlands
+									},
+									{
+										["achievementID"] = 6012,	-- Flame Keeper of Cataclysm [Achievement]
+										["criteriaID"] = 3,			-- Hyjal [Criteria]
+										["questID"] = 29030,		-- Honor the Flame [Hyjal]
+										["qg"] = 51682,				-- Hyjal Flame Guardian
+										["maps"] = { 606 },			-- Hyjal
+									},
+									{
+										["achievementID"] = 6012,	-- Flame Keeper of Cataclysm [Achievement]
+										["criteriaID"] = 4,			-- Deepholm [Criteria]
+										["questID"] = 29036,		-- Honor the Flame [Deepholm]
+										["qg"] = 51698,				-- Deepholm Flame Guardian
+										["maps"] = { 640 },			-- Deepholm
+									},
+									{
+										["achievementID"] = 6012,	-- Flame Keeper of Cataclysm [Achievement]
+										["criteriaID"] = 5,			-- Uldum [Criteria]
+										["questID"] = 28949,		-- Honor the Flame [Uldum]
+										["qg"] = 51652,				-- Uldum Flame Keeper
+										["maps"] = { 720 },			-- Uldum
+									},
+								}))),
+							})),
+							h(ach(8044, { -- Flame Keeper of Pandaria
+								{
+									["achievementID"] = 8044,	-- Flame Keeper of Pandaria [Achievement]
+									["criteriaID"] = 1,			-- Dread Wastes [Criteria]
+									["questID"] = 32497,		-- Honor the Flame [Dread Wastes]
+									["qg"] = 69522,				-- Dread Wastes Flame Guardian
+									["maps"] = { 858 },			-- Dread Wastes
+								},
+								{
+									["achievementID"] = 8044,	-- Flame Keeper of Pandaria [Achievement]
+									["criteriaID"] = 2,			-- Jade Forest [Criteria]
+									["questID"] = 32498,		-- Honor the Flame [Jade Forest]
+									["qg"] = 69529,				-- Jade Forest Flame Guardian
+									["maps"] = { 806 },			-- Jade Forest
+								},
+								{
+									["achievementID"] = 8044,	-- Flame Keeper of Pandaria [Achievement]
+									["criteriaID"] = 3,			-- Krasarang Wilds [Criteria]
+									["questID"] = 32499,		-- Honor the Flame [Krasarang Wilds]
+									["qg"] = 69533,				-- Krasarang Wilds Flame Guardian
+									["maps"] = { 857 },			-- Krasarang Wilds
+								},
+								{
+									["achievementID"] = 8044,	-- Flame Keeper of Pandaria [Achievement]
+									["criteriaID"] = 4,			-- Kun-Lai Summit [Criteria]
+									["questID"] = 32500,		-- Honor the Flame [Kun-Lai Summit]
+									["qg"] = 69535,				-- Kun-Lai Summit Flame Guardian
+									["maps"] = { 809 },			-- Kun-Lai Summit
+								},
+								{
+									["achievementID"] = 8044,	-- Flame Keeper of Pandaria [Achievement]
+									["criteriaID"] = 5,			-- Townlong Steppes [Criteria]
+									["questID"] = 32501,		-- Honor the Flame [Townlong Steppes]
+									["qg"] = 69536,				-- Townlong Steppes Flame Guardian
+									["maps"] = { 810 },			-- Townlong Steppes
+								},
+								{
+									["achievementID"] = 8044,	-- Flame Keeper of Pandaria [Achievement]
+									["criteriaID"] = 6,			-- Vale of Eternal Blossoms [Criteria]
+									["questID"] = 32509,		-- Honor the Flame [Vale of Eternal Blossoms]
+									["qg"] = 69551,				-- Vale of Eternal Blossoms Flame Keeper
+									["maps"] = { 811 },			-- Vale of Eternal Blossoms
+								},
+								{
+									["achievementID"] = 8044,	-- Flame Keeper of Pandaria [Achievement]
+									["criteriaID"] = 7,			-- Valley of the Four Winds [Criteria]
+									["questID"] = 32502,		-- Honor the Flame [Valley of the Four Winds]
+									["qg"] = 69550,				-- Valley of the Four Winds Flame Guardian
+									["maps"] = { 807 },			-- Valley of the Four Winds
+								},
+							})),
+							h(ach(11284, { -- Flame Keeper of Draenor
+								{
+									["achievementID"] = 11284,	-- Flame Keeper of Draenor [Achievement]
+									["criteriaID"] = 1,			-- Spires of Arak [Criteria]
+									["questID"] = 44570,		-- Honor the Flame [Spires of Arak]
+									["qg"] = 114488,			-- Spires of Arak Flame Guardian
+									["maps"] = { 948 },			-- Spires of Arak
+								},
+								{
+									["achievementID"] = 11284,	-- Flame Keeper of Draenor [Achievement]
+									["criteriaID"] = 2,			-- Talador [Criteria]
+									["questID"] = 44571,		-- Honor the Flame [Talador]
+									["qg"] = 114489,			-- Talador Flame Guardian
+									["maps"] = { 946 },			-- Talador
+								},
+								{
+									["achievementID"] = 11284,	-- Flame Keeper of Draenor [Achievement]
+									["criteriaID"] = 3,			-- Nagrand [Criteria]
+									["questID"] = 44572,		-- Honor the Flame [Nagrand]
+									["qg"] = 114490,			-- Nagrand Flame Guardian
+									["maps"] = { 950 },			-- Nagrand
+								},
+								{
+									["achievementID"] = 11284,	-- Flame Keeper of Draenor [Achievement]
+									["criteriaID"] = 4,			-- Gorgrond [Criteria]
+									["questID"] = 44573,		-- Honor the Flame [Gorgrond]
+									["qg"] = 114491,			-- Gorgrond Flame Guardian
+									["maps"] = { 949 },			-- Gorgrond
+								},
+								{
+									["achievementID"] = 11284,	-- Flame Keeper of Draenor [Achievement]
+									["criteriaID"] = 5,			-- Frostfire Ridge [Criteria]
+									["questID"] = 44580,		-- Honor the Flame [Frostfire Ridge]
+									["qg"] = 114499,			-- Frostfire Ridge Flame Keeper
+									["maps"] = { 941 },			-- Frostfire Ridge
+								},
+							})),
+							h(ach(11282, { -- Flame Keeper of the Broken Isles
+								{
+									["achievementID"] = 11282,	-- Flame Keeper of the Broken Isles [Achievement]
+									["criteriaID"] = 1,			-- Azsuna [Criteria]
+									["questID"] = 44574,		-- Honor the Flame [Azsuna]
+									["qg"] = 114492,			-- Azsuna Flame Guardian
+									["maps"] = { 1015 },		-- Azsuna
+								},
+								{
+									["achievementID"] = 11282,	-- Flame Keeper of the Broken Isles [Achievement]
+									["criteriaID"] = 2,			-- Val'sharah [Criteria]
+									["questID"] = 44575,		-- Honor the Flame [Val'sharah]
+									["qg"] = 114493,			-- Val'sharah Flame Guardian
+									["maps"] = { 1018 },		-- Val'sharah
+								},
+								{
+									["achievementID"] = 11282,	-- Flame Keeper of the Broken Isles [Achievement]
+									["criteriaID"] = 3,			-- Highmountain [Criteria]
+									["questID"] = 44576,		-- Honor the Flame [Highmountain]
+									["qg"] = 114494,			-- Highmountain Flame Guardian
+									["maps"] = { 1024 },		-- Highmountain
+								},
+								{
+									["achievementID"] = 11282,	-- Flame Keeper of the Broken Isles [Achievement]
+									["criteriaID"] = 4,			-- Stormheim [Criteria]
+									["questID"] = 44577,		-- Honor the Flame [Stormheim]
+									["qg"] = 114496,			-- Stormheim Flame Guardian
+									["maps"] = { 1017 },		-- Stormheim
+								},
+								{
+									["achievementID"] = 11282,	-- Flame Keeper of the Broken Isles [Achievement]
+									["criteriaID"] = 5,			-- Suramar [Criteria]
+									["questID"] = 44614,		-- Honor the Flame [Suramar]
+									["qg"] = 114518,			-- Suramar Flame Keeper
+									["maps"] = { 1033 },		-- Suramar
+								},							
 							})),
 							h(ach(1037, { -- Desecration of the Alliance
 								h(un(21, ach(1031))), 				-- Extinguishing Eastern Kingdoms
