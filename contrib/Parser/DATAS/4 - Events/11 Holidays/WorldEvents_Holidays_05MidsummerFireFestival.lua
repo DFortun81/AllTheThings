@@ -73,23 +73,122 @@ _.WorldEvents =
 								h(un(21, ach(1026, {	-- Flame Keeper of Kalimdor
 									{
 										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 1,			-- Ashenvale [Criteria]
+										["questID"] = 11841, 		-- Honor the Flame [Ashenvale]
+										["qg"] = 25884,				-- Ashenvale Flame Keeper
+										["maps"] = { 43 }, 			-- Ashenvale
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 2,			-- Azshara [Criteria]
+										["questID"] = 28923, 		-- Honor the Flame [Azshara]
+										["qg"] = 51575,				-- Azshara Flame Keeper
+										["maps"] = { 181 }, 		-- Azshara
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 3,			-- Desolace [Criteria]
+										["questID"] = 11845, 		-- Honor the Flame [Desolace]
+										["qg"] = 25928,				-- Desolace Flame Keeper
+										["maps"] = { 101 }, 		-- Desolace
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
 										["criteriaID"] = 4,			-- Durotar [Criteria]
 										["questID"] = 11846, 		-- Honor the Flame [Durotar]
-										["qg"] = 25929, -- Quest Giver: Durotar Flame Keeper
+										["qg"] = 25929,				-- Durotar Flame Keeper
 										["maps"] = { 4 }, 			-- Durotar
 									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 5,			-- Dustwallow Marsh [Criteria]
+										["questID"] = 11847, 		-- Honor the Flame [Dustwallow Marsh]
+										["qg"] = 25930,				-- Dustwallow Marsh Flame Keeper
+										["maps"] = { 141 }, 		-- Dustwallow Marsh
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 6,			-- Feralas [Criteria]
+										["questID"] = 11849, 		-- Honor the Flame [Feralas]
+										["qg"] = 25932,				-- Feralas Flame Keeper
+										["maps"] = { 121 }, 		-- Feralas
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 7,			-- Mulgore [Criteria]
+										["questID"] = 11852, 		-- Honor the Flame [Mulgore]
+										["qg"] = 25936,				-- Mulgore Flame Keeper
+										["maps"] = { 9 }, 			-- Mulgore
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 8,			-- Northern Barrens [Criteria]
+										["questID"] = 11859, 		-- Honor the Flame [Northern Barrens]
+										["qg"] = 25943,				-- The Northern Barrens Flame Keeper
+										["maps"] = { 11 }, 			-- Northern Barrens
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 9,			-- Silithus [Criteria]
+										["questID"] = 11836, 		-- Honor the Flame [Silithus]
+										["qg"] = 25919,				-- Silithus Flame Keeper
+										["maps"] = { 261 }, 		-- Silithus
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 10,		-- Southern Barrens [Criteria]
+										["questID"] = 28927, 		-- Honor the Flame [Southern Barrens]
+										["qg"] = 51587,				-- The Southern Barrens Flame Keeper
+										["maps"] = { 11 }, 			-- Southern Barrens
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 11,		-- Stonetalon Mountains [Criteria]
+										["questID"] = 11856, 		-- Honor the Flame [Stonetalon Mountains]
+										["qg"] = 25940,				-- Stonetalon Flame Keeper
+										["maps"] = { 81 }, 			-- Stonetalon Mountains
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 12,		-- Tanaris [Criteria]
+										["questID"] = 11838, 		-- Honor the Flame [Tanaris]
+										["qg"] = 25921,				-- Tanaris Flame Keeper
+										["maps"] = { 161 }, 		-- Tanaris
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 13,		-- Un'goro Crater [Criteria]
+										["questID"] = 28933, 		-- Honor the Flame [Un'goro Crater]
+										["qg"] = 51607,				-- Un'Goro Flame Keeper
+										["maps"] = { 201 }, 		-- Un'goro Crater
+									},
+									{
+										["achievementID"] = 1026,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 14,		-- Winterspring [Criteria]
+										["questID"] = 11839, 		-- Honor the Flame [Winterspring]
+										["qg"] = 25922,				-- Winterspring Flame Keeper
+										["maps"] = { 281 }, 		-- Winterspring
+									},
 								}))),
-								un(21, ach(1027)), -- Flame Keeper of Outland
-								un(21, ach(6009)), -- Flame Keeper of Northrend
-								un(21, ach(6012)), -- Flame Keeper of Cataclysm
+								un(21, ach(1027)), 					-- Flame Keeper of Outland
+								un(21, ach(6009)), 					-- Flame Keeper of Northrend
+								un(21, ach(6012)), 					-- Flame Keeper of Cataclysm
 							})),
-							ach(1037, { -- Desecration of the Alliance
-								un(21, ach(1031)), -- Extinguishing Eastern Kingdoms
-								un(21, ach(1032)), -- Extinguishing Kalimdor
-								un(21, ach(1033)), -- Extinguishing Outland
-								un(21, ach(6010)), -- Extinguishing Northrend
-								un(21, ach(6014)), -- Extinguishing the Cataclysm
-							}),
+							h(ach(1037, { -- Desecration of the Alliance
+								h(un(21, ach(1031))), 				-- Extinguishing Eastern Kingdoms
+								h(un(21, ach(1032, { 				-- Extinguishing Kalimdor
+									{
+										["achievementID"] = 1032,	-- Flame Keeper of Kalimdor [Achievement]
+										["criteriaID"] = 5,			-- Desolace [Criteria]
+										["maps"] = { 101 }, 		-- Desolace
+									},
+									{
+									},
+								}))),
+								un(21, ach(1033)), 				-- Extinguishing Outland
+								un(21, ach(6010)), 				-- Extinguishing Northrend
+								un(21, ach(6014)), 				-- Extinguishing the Cataclysm
+							})),
 							ach(271, { -- Burning Hot Pole Dance
 							}),
 							ach(263, { -- Ice the Frost Lord
@@ -195,6 +294,9 @@ _.WorldEvents =
 							["races"] = HORDE_ONLY,
 							["maps"] = {
 								4,		-- Durotar
+								9,		-- Mulgore
+								20,		-- Tirisfal Glades
+								462,	-- Eversong Woods
 							},
 						},
 						{
@@ -210,97 +312,30 @@ _.WorldEvents =
 							["qg"] = 25994,	-- Fire Eater
 							["races"] = HORDE_ONLY,
 							["maps"] = {
+								20,		-- Tirisfal Glades
+								321,	-- Orgrimmar
+								362,	-- Thunder Bluff
+								382,	-- Undercity
+								480,	-- Silvermoon City
+							--[[
 								4,		-- Durotar
+								9,		-- Mulgore
+								11,		-- Northern Barrens
+								20,		-- Tirisfal Glades
+								43,		-- Ashenvale
+								161,	-- Tanaris
+								181,	-- Azshara
+								201,	-- Un'goro Crater
+								281,	-- Winterspring
+								462,	-- Eversong Woods
+								465,	-- Hellfire Peninsula
+								467,	-- Zangarmarsh
+								491,	-- Howling Fjord
+								493,	-- Sholazar Basin
+								720,	-- Uldum
+								]]--
 							},
 						},
-						m(13, { -- Kalimdor
-							m(101, { -- Desolace
-								["groups"] = {
-									{
-										["objectID"] = 187957, -- Horde Bonfire
-										["questID"] = 11769, -- Desecrate this Fire!
-										["races"] = ALLIANCE_ONLY,
-									},	
-									{
-										["objectID"] = 187924, -- Alliance Bonfire
-										["questID"] = 11741, -- Desecrate this Fire!
-										["races"] = HORDE_ONLY,
-									},						
-									q(11812, { -- Honor the Flame
-										["groups"] = {},
-										["qg"] = 25894, -- Desolace Flame Warden
-										["races"] = ALLIANCE_ONLY,
-									}),
-									--[[
-									q(11882, {	-- Playing with Fire
-										["groups"] = {},
-										["qg"] = 25962,	-- Fire Eater
-										["races"] = ALLIANCE_ONLY,
-									}),
-									]]--
-									q(11845, {	-- Honor the Flame
-										["groups"] = {},
-										["qg"] = 25928,	-- Desolace Flame Keeper
-										["races"] = HORDE_ONLY,
-									}),									
-								},
-							}), -- End of Desolace
-							--[[
-							m(4, { -- Durotar
-								["groups"] = {
-									{
-										["objectID"] = 187958, -- Horde Bonfire
-										["questID"] = 11770, -- Desecrate this Fire!
-										["races"] = ALLIANCE_ONLY,
-									},
-									q(11966, {	-- Incense for the Festival Scorchlings
-										["g"] = {},
-										["qg"] = 16818,	-- Festival Talespinner
-										["races"] = HORDE_ONLY,
-									}),
-									q(11846, { -- Honor the Flame
-										["groups"] = {},
-										["qg"] = 25929, -- Durotar Flame Keeper
-										["races"] = HORDE_ONLY,
-									}),
-									q(11915, {	-- Playing with Fire
-										["groups"] = {},
-										["qg"] = 25994,	-- Fire Eater
-										["races"] = HORDE_ONLY,
-									}),	
-								},
-							}), -- End of Durotar
-							]]--
-							m(141, { -- Dustwallow Marsh
-								["groups"] = {
-									{
-										["objectID"] = 187927, -- Alliance Bonfire
-										["questID"] = 11744, -- Desecrate this Fire!
-										["races"] = HORDE_ONLY,
-									},
-									{
-										["objectID"] = 187959, -- Horde Bonfire
-										["questID"] = 11771, -- Desecrate this Fire!
-										["races"] = ALLIANCE_ONLY,
-									},
-									q(11815, {	-- Honor the Flame
-										["groups"] = {},
-										["qg"] = 25894,	-- Dustwallow Marsh Flame Warden
-										["races"] = ALLIANCE_ONLY,
-									}),
-									q(11882, {	-- Playing with Fire
-										["groups"] = {},
-										["qg"] = 25962,	-- Fire Eater
-										["races"] = ALLIANCE_ONLY,
-									}),
-									q(11847, {	-- Honor the Flame
-										["groups"] = {},
-										["qg"] = 25930,	-- Dustwallow Marsh Flame Keeper
-										["races"] = HORDE_ONLY,
-									}),
-								},
-							}), -- End of Dustwallow Marsh
-						}),
 						q(11970, { -- The Master of Summer Lore
 							["groups"] = {},
 							-- Human, Dwarf, Draenei, Gnome, Night Elf, Goblin Commoners
@@ -335,20 +370,34 @@ _.WorldEvents =
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 11922 },
 						}),
-						q(11886, {	-- Unusual Activity
-							["groups"] = {},
-							["qg"] = 26221,	-- Earthen Ring Elder
-						}),
-						q(11891, {	-- An Innocent Disguise
-							["groups"] = {},
-							["qg"] = 25324,	-- Earthen Ring Guide
-							["sourceQuests"] = { 11886 },
-						}),
-						q(12012, {	-- Inform the Elder
-							["groups"] = {},
-							["qg"] = 25324,	-- Earthen Ring Guide
-							["sourceQuests"] = { 11891 },
-						}),
+						{
+							["questID"] = 11886, -- Unusual Activity
+							["qg"] = 26221, -- Earthen Ring Elder
+							["maps"] = {
+								20,		-- Tirisfal Glades
+								301,	-- Stormwind City
+								321,	-- Orgrimmar
+								341,	-- Ironforge
+								362,	-- Thunder Bluff
+								381,	-- Darnassus
+								382,	-- Undercity
+								471,	-- The Exodar
+								480,	-- Silvermoon City
+								481,	-- Shattrath City
+							},
+						},
+						{
+							["questID"] = 11891, -- An Innocent Disguise
+							["qg"] = 25324,		 -- Earthen Ring Guide
+							["sourceQuests"] = { 11886 }, -- Unusual Activity
+							["maps"] = { 43 },	 -- Ashenvale
+						},
+						{
+							["questID"] = 12012, -- Inform the Elder
+							["qg"] = 25324,		 -- Earthen Ring Guide
+							["sourceQuests"] = { 11891 }, -- An Innocent Disguise
+							["maps"] = { 43 },	 -- Ashenvale
+						},
 					}),
 					n(-2, { -- Vendors
 						a(n(26123, { -- Midsummer Supplier (Alliance Vendor)
@@ -378,8 +427,8 @@ _.WorldEvents =
 						})),
 						h(n(26124, { -- Midsummer Merchant (Horde Vendor)
 							un(21, i(23247, { -- Burning Blossom
-								n(-3199, {
-									["groups"] = { -- Midsummer Reveler Set
+								n(-3199, { -- Midsummer Reveler Set
+									["groups"] = {
 										un(21, i(23324)), -- Mantle of the Fire Festival
 										un(21, i(34685)), -- Vestment of Summer
 										un(21, i(34683)), -- Sandals of Summer
