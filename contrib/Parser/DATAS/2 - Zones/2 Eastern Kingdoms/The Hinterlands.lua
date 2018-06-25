@@ -147,31 +147,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,	-- Lunar Festival
 					}),
-					n(-53, {	-- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(11784),	-- Desecrate this Fire!  (these appear to be the same quest/fire - on wowhead, this one displays only in Hinterlands and the other displays in all bonfire zones - need to check when Midsummer is active)
---								qa(11755),	-- Desecrate this Fire!
-								qa(11826, {	-- Honor the Flame
-									["groups"] = {
-									},
-									["qg"] = 25908,	-- The Hinterlands Flame Warden
-								}),
-								qh(11860, {	-- Honor the Flame
-									["groups"] = {
-									},
-									["qg"] = 25944,	-- The Hinterlands Flame Keeper
-								}),
-								qa(11882, {	-- Playing with Fire
-									["groups"] = {
-									},
-									["qg"] = 25962,	-- Fire Eater
-								}),
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,	-- Midsummer Fire Festival
-					}),
 					n(-58, {	-- Hallow's End
 						["groups"] = {
 							n(-17, {	-- Quests

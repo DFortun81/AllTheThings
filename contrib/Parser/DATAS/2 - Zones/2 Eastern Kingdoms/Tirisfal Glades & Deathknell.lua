@@ -74,18 +74,6 @@ _.Zones =
 						["u"] = 20,
 					}),
 --]]					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								o(187559, {	-- Horde Bonfire (Tirisfal Glades)
-									qa(11786),	-- Desecrate this Fire!
-								}),
-								qg(25994, qh( 11915)),	-- Playing with Fire
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 --[[					
 					n(-56, {     -- Brewfest
 						["groups"] = {

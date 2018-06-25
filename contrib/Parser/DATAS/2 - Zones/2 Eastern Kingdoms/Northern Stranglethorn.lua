@@ -706,23 +706,6 @@ _.Zones =
 						["u"] = 17,
 					}),				
 --[[
-					n(-53, {	-- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, {	-- Quests
-								o(207983, {	-- Horde Bonfire
-									qa(28911),	-- Desecrate this Fire!
-									qg(51574, qa(28922)),	-- Honor the Flame
-									qg(51582, qh(28924)),	-- Honor the Flame
-								}),
-								o(207982, {	-- Alliance Bonfire
-									qh(28910),	-- Desecrate this Fire!
-								}),
-								qg(25962, qa( 11882)),	-- Playing with Fire
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests

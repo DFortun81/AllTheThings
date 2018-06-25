@@ -6,18 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(36, {		-- Redridge Mountains
 			["groups"] = {							
-				n( -3, {	-- Holidays					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qh(11751),	-- Desecrate this Fire!							
-								qg(25904, qa(11822)),	-- Honor the Flame
-								qg(25962, qa(11882)),	-- Playing with Fire
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),						
+				n( -3, {	-- Holidays										
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests

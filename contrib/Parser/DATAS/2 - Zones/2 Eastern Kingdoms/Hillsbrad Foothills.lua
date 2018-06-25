@@ -7,16 +7,6 @@ _.Zones =
 		m(24, {		-- Hillsbrad Foothills
 			["groups"] = {				
 				n( -3, {	-- Holidays					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(11776),	-- Desecrate this Fire!
-								qg(25935, qh(11853)),	-- Honor the Flame
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
