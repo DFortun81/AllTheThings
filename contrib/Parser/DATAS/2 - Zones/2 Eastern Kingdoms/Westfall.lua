@@ -26,18 +26,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								o(187564, {	-- Alliance Bonfire
-									qh(11581),	-- Desecrate this Fire!
-								}),
-								qg(25962, qa( 11882)),	-- Playing with Fire
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),	
 				}),								
 				n(0, {		-- Zone Drops
 					desc(i(2698), "Can drop from any mob in the zone, would recommend farming the murlocs in the north."),	-- Recipe: Cooked Crab Claw
