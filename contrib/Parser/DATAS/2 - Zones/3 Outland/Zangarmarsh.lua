@@ -7,18 +7,6 @@ _.Zones =
 		m(467, {	-- Zangarmarsh
 			["groups"] = {			
 				n( -3, {	-- Holidays
-					n(-53, {    	-- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(11787),	-- Desecrate this Fire!
-								qh(11758),	-- Desecrate this Fire!
-								qg(25962, qa(11882)),	-- Playing with Fire
-								qg(25994, qh(11915)),	-- Playing with Fire
-							}),
-						},
-						["achievementID"] = 1038,	-- The Flame Warden
-						["u"] = 21,
-					}),
 					n(-58, {    	-- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
