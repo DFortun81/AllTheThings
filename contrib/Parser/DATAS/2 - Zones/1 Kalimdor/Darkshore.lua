@@ -51,30 +51,7 @@ _.Zones =
 						["achievementID"] = 1793,	-- For The Children
 						["u"] = 20,
 					}),	
---]]					
-					n(-53, {    	-- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								o(187564, {	-- Alliance Bonfire (Loch Modan)
-									qh(11749),	-- Desecrate this Fire!
-								}),
-								o(187564, {	-- Alliance Bonfire (Westfall)
-									qh(11581),	-- Desecrate this Fire!
-								}),
-								o(187564, {	-- Alliance Bonfire (Elwynn Forest)
-									qh(11745),	-- Desecrate this Fire!
-								}),
-								o(187923, {	-- Alliance Bonfire
-									qh(11740),	-- Desecrate this Fire!
-								}),
-								qg(25893, qa(11811)),	-- Honor the Flame
-								qg(16817, qa(11964)),	-- Incense for the Summer Scorchlings (quest can END in Darkshore but starts in Shattrath City, The Exodar, Ironforge, and Stormwind City)
-								qg(25962, qa(11882)),	-- Playing with Fire
-							}),
-						},
-						["achievementID"] = 1038,	-- The Flame Warden
-						["u"] = 21,
-					}),
+--]]
 --[[					
 					n(-56, {    	-- Brewfest
 						["groups"] = {

@@ -164,26 +164,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qh( 11749),	-- Desecrate this Fire!
-								qa( 11580),	-- Desecrate this Fire!
-								qa( 11755),	-- Desecrate this Fire!
-								qh( 11745),	-- Desecrate this Fire!
-								qh( 11581),	-- Desecrate this Fire!
-								qa( 11766),	-- Desecrate this Fire!
-								qa( 11786),	-- Desecrate this Fire!
-								qa( 11732),	-- Desecrate this Fire!
-								qh( 11746),	-- Desecrate this Fire!
-								qa( 11773),	-- Desecrate this Fire!
-								qa(11817),	-- Honor the Flame
-								qh(11849),	-- Honor the Flame
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
