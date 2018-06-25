@@ -177,6 +177,30 @@ _.WorldEvents =
 						}),
 					}),
 					n(-17, { -- Quests
+						{
+							["questID"] = 11966,	-- Incense for the Festival Scorchlings
+							["qg"] = 16818,	-- Festival Talespinner
+							["races"] = HORDE_ONLY,
+							["maps"] = {
+								4,		-- Durotar
+							},
+						},
+						{
+							["questID"] = 11882,	-- Playing with Fire
+							["qg"] = 25962,	-- Fire Eater
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = {
+								101,	-- Desolace
+							},
+						},
+						{
+							["questID"] = 11915,	-- Playing with Fire
+							["qg"] = 25994,	-- Fire Eater
+							["races"] = HORDE_ONLY,
+							["maps"] = {
+								4,		-- Durotar
+							},
+						},
 						m(13, { -- Kalimdor
 							m(101, { -- Desolace
 								["groups"] = {
@@ -195,11 +219,13 @@ _.WorldEvents =
 										["qg"] = 25894, -- Desolace Flame Warden
 										["races"] = ALLIANCE_ONLY,
 									}),
+									--[[
 									q(11882, {	-- Playing with Fire
 										["groups"] = {},
 										["qg"] = 25962,	-- Fire Eater
 										["races"] = ALLIANCE_ONLY,
 									}),
+									]]--
 									q(11845, {	-- Honor the Flame
 										["groups"] = {},
 										["qg"] = 25928,	-- Desolace Flame Keeper
@@ -207,6 +233,7 @@ _.WorldEvents =
 									}),									
 								},
 							}), -- End of Desolace
+							--[[
 							m(4, { -- Durotar
 								["groups"] = {
 									{
@@ -218,7 +245,7 @@ _.WorldEvents =
 										["g"] = {},
 										["qg"] = 16818,	-- Festival Talespinner
 										["races"] = HORDE_ONLY,
-									}),									
+									}),
 									q(11846, { -- Honor the Flame
 										["groups"] = {},
 										["qg"] = 25929, -- Durotar Flame Keeper
@@ -228,9 +255,10 @@ _.WorldEvents =
 										["groups"] = {},
 										["qg"] = 25994,	-- Fire Eater
 										["races"] = HORDE_ONLY,
-									}),									
+									}),	
 								},
 							}), -- End of Durotar
+							]]--
 							m(141, { -- Dustwallow Marsh
 								["groups"] = {
 									{
