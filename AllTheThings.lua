@@ -1674,8 +1674,15 @@ local function OpenMiniList(field, id, label)
 				
 				-- If this is relative to a holiday, let's do something special
 				if GetRelativeField(group, "npcID", -3) then
+					local clone = {};
+					for key,value in pairs(group) do
+						clone[key] = value;
+					end
+					clone["maps"] = nil;
+					setmetatable(clone, getmetatable(group));
+					group = clone;
 					if not holiday then
-						holiday = app.CreateNPC(-3, { g = {}, expanded = true, visible = true, total = 0, progress = 0 });
+						holiday = app.CreateNPC(-3, { g = {}, expanded = true, visible = true, back = 1, total = 0, progress = 0 });
 						holiday.parent = header;
 						tinsert(header.g, 1, holiday);
 					end
