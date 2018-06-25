@@ -23,50 +23,6 @@ _.Zones =
 					}),
 				}),
 				n(-3, { 	-- Holidays	
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(11775, { -- Desecrate this Fire!
-									["groups"] = {
-									},
-									["description"] = "Thrallmar 57.3, 41,8", -- Location
-									["u"] = 21, -- Midsummer Fire Festival
-								}),
-								qh(11747, { -- Desecrate this Fire!
-									["groups"] = {
-									},
-									["description"] = "Honor Hold 61.9, 58.5", -- Location
-									["u"] = 21, -- Midsummer Fire Festival
-								}),
-								qa(11818, { -- Honor the Flame
-									["groups"] = {
-									},
-									["qg"] = 25900, -- Hellfire Peninsulaa Flame Warden
-									["u"] = 21, -- Midsummer Fire Festival
-								}),
-								qh(11851, { -- Honor the Flame
-									["groups"] = {
-									},
-									["qg"] = 25934, -- Hellfire Peninsulaa Flame Warden
-									["u"] = 21, -- Midsummer Fire Festival
-								}),
-								qa(11882, { -- Playing With Fire
-									["groups"] = {
-									},
-									["qg"] = 25962, -- Flame Eater
-									["u"] = 21, -- Midsummer Fire Festival
-								}),
-								qh(11915, { -- Playing With Fire
-									["groups"] = {
-									},
-									["qg"] = 25994, -- Flame Eater
-									["u"] = 21, -- Midsummer Fire Festival
-								}),
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests

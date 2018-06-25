@@ -41,15 +41,6 @@ _.Zones =
 						["u"] = 20,
 					}),	
 --]]					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(44570), -- Honor The Flame
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),	
 --[[					
 					n(-56, {     -- Brewfest
 						["groups"] = {

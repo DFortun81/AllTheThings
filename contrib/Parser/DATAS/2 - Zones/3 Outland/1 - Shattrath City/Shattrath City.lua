@@ -60,47 +60,6 @@ _.Zones =
 						},
 						["achievementID"] = 1793, -- For The Children
 						["u"] = 20,
-					}),	
-					n(-53, {	-- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa( 9365, {	-- A Thief's Reward
-									["groups"] = {
-									},
-									["qg"] = 16817,	-- Festival Loremaster
-								}),
-								qh( 9339, {	-- A Thief's Reward
-									["groups"] = {
-									},
-									["qg"] = 16818,	-- Festival Talespinner
-								}),
-								qg(16817, qa(11964)),	-- Incense for the Summer Scorchlings
-								qg(16818, qh(11966)),	-- Incense for the Festival Scorchlings
-								qg(25962, qa(11882)),	-- Playing with Fire
-								q( 11954, {	-- Striking Back
-									["groups"] = {
-									},
-									["qg"] = 26221,	-- Earthen Ring Elder
-								}),
-								qa(11970, {	-- The Master of Summer Lore
-									["groups"] = {
-									},
-									["qg"] = 20102,	-- Goblin Commoner
-								}),
-								qh(11971, {	-- The Spinner of Summer Tales
-									["groups"] = {
-									},
-									["qg"] = 20102,	-- Goblin Commoner
-								}),
-								q( 11886, {	-- Unusual Activity
-									["groups"] = {
-									},
-									["qg"] = 26221,	-- Earthen Ring Elder
-								}),
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
 					}),
 					n(-58, {	-- Hallow's End
 						["groups"] = {
