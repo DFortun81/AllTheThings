@@ -72,38 +72,7 @@ _.Zones =
 						["achievementID"] = 1793, -- For The Children
 						["u"] = 20,
 					}),
---]]
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(25929, qh(11846)),	-- Honor the Flame
-								o(187559, {	-- Horde Bonfire (Tirisfal Glades)
-									qa(11786),	-- Desecrate this Fire!
-								}),
-								o(187559, {	-- Horde Bonfire (Badlands)
-									qa(11766),	-- Desecrate this Fire!
-								}),
-								o(187559, {	-- Horde Bonfire (Hinterlands)
-									qa(11755),	-- Desecrate this Fire!
-								}),
-								o(187958, {	--	Horde Bonfire
-									qa(11770),	-- Desecrate this Fire!
-								}),
-								o(187559, {	--	Horde Bonfire (Silverpine)
-									qa(11580),	-- Desecrate this Fire!
-								}),
-								o(187559, {	-- Horde Bonfire (Arathi Highlands)
-									qa(11732),	-- Desecrate this Fire!
-								}),
-								qg(16818, qh(11966)),	-- Incense for the Festival Scorchlings (QG in Shattrath City, Tirisfal Glades, Silvermoon City, Undercity, Orgrimmar, and Thunder Bluff)
-								qg(25994, qh(11915)),	-- Playing with Fire 
-									--[[(QG also in Uldum, Tirisfal Glades, Sholazar Basin, Zangarmarsh, Hellfire Peninsula, Eversong Woods, Winterspring, Mulgore, Northern Barrens, 
-									Howling Fjord, Ungoro Crater, Tanaris)--]]
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
+--]]				
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-4, { 	-- Achievement

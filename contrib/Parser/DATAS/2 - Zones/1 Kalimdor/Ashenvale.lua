@@ -152,27 +152,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(25994, qh(11915)),	-- Playing with Fire
-								qg(25962, qa(11882)),	-- Playing with Fire
-								qg(25324, q(11891)),	-- An Innocent Disguise
-								o(187948, { 	-- Horde Bonfire
-									qa( 11765),	-- Desecrate this Fire!
-								}),
-								o(187916, { 	-- Alliance Bonfire
-									qh( 11734),	-- Desecrate this Fire!
-								}),
-								qg(25884, qh(11841)),	-- Honor the Flame
-								qg(25883, qa(11805)),	-- Honor the Flame
-								qg(25324, q(12012)),	-- Inform the Elder
-								qg(25324, qa(29092)),	-- Inform the Elder
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests

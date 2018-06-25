@@ -7,28 +7,6 @@ _.Zones =
 		m(476, {	-- Bloodmyst Isle
 			["groups"] = {
 				n(-3, {		-- Holidays
-					n(-53, {	-- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								o(187564, {	-- Alliance Bonfire
-									qh(11581),	-- Desecrate this Fire!
-								}),
-								o(187564, {	--	Alliance Bonfire
-									qh(11749),	-- Desecrate this Fire!
-								}),
-								o(187921, {	--	Alliance Bonfire
-									qh(11738),	-- Desecrate this Fire!
-								}),
-								o(187564, {	--	Alliance Bonfire
-									qh(11745),	-- Desecrate this Fire!
-								}),
-								qg(25891, qa(11809)),	-- Honor the Flame
-								qg(16817, qa(11964)),	-- Incense for the Summer Scorchlings (quest can END in Bloodmyst Isle, but starts in Shattrath, The Exodar, Ironforge, and Stormwind City)
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 					n(-58, {	-- Hallow's End
 						["groups"] = {
 							n(-17, {	-- Quests

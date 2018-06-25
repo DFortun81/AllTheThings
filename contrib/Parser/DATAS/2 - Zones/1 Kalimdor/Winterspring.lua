@@ -66,23 +66,7 @@ _.Zones =
 						["achievementID"] = 1793, -- For The Children
 						["u"] = 20,
 					}),	
---]]					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(11803),	-- Desecrate this Fire!
-								qh(11763),	-- Desecrate this Fire!
-								qg(25922, qh(11839)),	-- Honor the Flame
-								qg(25917, qa(11834)),	-- Honor the Flame
-								qg(25994, qh(11915)),	-- Playing with Fire
-								qg(25962, qa(11882)),	-- Playing with Fire
-								qg(20102, qa(11970)),	-- The Master of Summer Lore
-								qg(20102, qh(11971)),	-- The Spinner of Summer Tales
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
+--]]				
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests

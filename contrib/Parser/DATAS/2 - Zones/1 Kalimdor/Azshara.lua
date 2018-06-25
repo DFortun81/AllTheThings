@@ -69,19 +69,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					h(n(-54, {     -- Midsummer Fire Festival (Horde)
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(51575, qh(28923)),	-- Honor the Flame
-								o(207991, {	-- Horde Bonfire
-									qa(28919),	-- Desecrate this Fire!
-								}),
-								qg(25994, qh(11915)),	-- Playing with Fire
-							}),
-						},
-						["achievementID"] = 1039, -- The Flame Keeper
-						["u"] = 21,
-					})),
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
