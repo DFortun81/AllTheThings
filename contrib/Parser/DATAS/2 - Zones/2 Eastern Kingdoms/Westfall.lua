@@ -47,11 +47,7 @@ _.Zones =
 						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, Farmer Saldean, sells the Special Chicken Feed you need."
 					}),
 					qa(31725, { -- Lindsay
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					}),
 					qa(31780), 	-- Old MacDonald
 					ach(11856, { -- Pet Battle Challenge: Wailing Caverns

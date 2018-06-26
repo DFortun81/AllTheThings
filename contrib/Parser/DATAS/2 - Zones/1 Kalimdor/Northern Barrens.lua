@@ -158,11 +158,7 @@ _.Zones =
 					p(386), 	-- Prairie Dog
 					p(419), 	-- Small Frog
 					qg(66135, qh(31814, { -- Analynn
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					})),					
 					qg(66135, qh(31819)),	-- Dagra the Fierce
 					qg(115286, q(45083, {	-- Crysa's Flyers

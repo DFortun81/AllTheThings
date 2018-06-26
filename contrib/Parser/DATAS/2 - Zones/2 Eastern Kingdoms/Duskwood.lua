@@ -179,11 +179,7 @@ _.Zones =
 					p(400), 	-- Widow Spiderling
 					qg(65655, q(31850)),	-- Eric Davidson
 					qg(65655, qa(31729, { -- Steven Lisbane
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					})),
 				}),
 				n( -17, {	-- Quests

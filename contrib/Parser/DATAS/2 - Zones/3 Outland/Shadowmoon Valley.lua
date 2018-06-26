@@ -112,11 +112,7 @@ _.Zones =
 						["qg"] = 66557,	-- Bloodknight Antari
 					}),
 					q( 31926, { 	-- Grand Master Antari
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					}),
 				}),
 				n(-17, { 	-- Quests

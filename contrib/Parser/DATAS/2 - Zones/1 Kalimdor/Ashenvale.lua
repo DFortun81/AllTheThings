@@ -188,11 +188,7 @@ _.Zones =
 					qh( 31814),	-- Analynn
 					qg(66136, qh(31815, { -- Zonya the Sadist
 						["groups"] = {
-							i(89125, {	-- Sack of Pet Supplies
-								i(89139),	-- Chain Pet Leash
-								i(37460),	-- Rope Pet Leash
-								i(44820),	-- Red Ribbon Pet Leash
-							}),
+							i(89125),	-- Sack of Pet Supplies
 						},
 						["repeatable"] = true,
 					})),

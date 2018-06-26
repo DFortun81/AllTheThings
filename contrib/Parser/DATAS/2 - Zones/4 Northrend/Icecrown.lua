@@ -85,11 +85,7 @@ _.Zones =
 					p(538),		-- Scourged Whelpling
 					p(1238),	-- Unborn Val'kyr
 					q(31928, { 	-- Grand Master Payne
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					}),
 				}),
 				n(-17, { 	-- Quests

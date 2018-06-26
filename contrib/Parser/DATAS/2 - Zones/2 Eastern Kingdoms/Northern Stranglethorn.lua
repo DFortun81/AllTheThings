@@ -729,11 +729,7 @@ _.Zones =
 					p(401), 	-- Strand Crab
 					p(405), 	-- Tree Python
 					qa(31728, { -- Bill Buckler
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					}),
 --					qg(63194, q(31852)),	-- Steven Lisbane (DAILY VERSION)
 				}),

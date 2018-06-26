@@ -31,11 +31,7 @@ _.Zones =
 					p(818), 	-- Wild Golden Hatchling
 					p(817), 	-- Wild Jade Hatchling
 					q(31953, { -- Grand Master Hyuna
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					}),
 					q(32440, { -- Whispering Pandaren Spirit
 						["groups"] = {

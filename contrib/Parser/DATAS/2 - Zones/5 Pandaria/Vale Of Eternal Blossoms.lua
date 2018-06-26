@@ -83,11 +83,7 @@ _.Zones =
 					p(750), 	-- Golden Civet Kitten
 					p(752), 	-- Yellow-Bellied Bullfrog
 					q(31958, { -- Grand Master Aki
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					}),
 				}),
 --[[

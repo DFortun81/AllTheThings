@@ -101,11 +101,7 @@ _.Zones =
 					desc(p(485), "This wild pet can be found in the south eastern area of Desolace. It only spawns at night."),	-- Stone Armadillo
 					p(480), 	-- Topaz Shale Hatchling
 					qh(31870, {	-- Cassandra Kaboom
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					}),	
 					qh(31872, {	-- Merda Stronghoof
 						["groups"] = {

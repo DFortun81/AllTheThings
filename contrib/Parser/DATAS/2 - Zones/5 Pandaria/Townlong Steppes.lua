@@ -20,11 +20,7 @@ _.Zones =
 					p(729), 	-- Tolai Hare
 					p(740), 	-- Yakrat
 					q(31991, { -- Grand Master Zusshi
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					}),
 					q(32434, { -- Burning Pandaren Spirit
 						["groups"] = {
