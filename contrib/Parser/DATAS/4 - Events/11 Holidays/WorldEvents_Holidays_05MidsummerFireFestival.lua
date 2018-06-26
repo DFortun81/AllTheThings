@@ -505,18 +505,247 @@ _.WorldEvents =
 								},							
 							})),
 							a(ach(1035, { 				-- Desecration of the Horde
-								a(un(21, ach(1028))), 	-- Extinguishing Eastern Kingdoms
+								a(un(21, ach(1028, { 	-- Extinguishing Eastern Kingdoms
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 1,			-- Arathi Highlands [Criteria]
+										["maps"] = { 16 }, 			-- Arathi Highlands
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 2,			-- Badlands [Criteria]
+										["maps"] = { 17 }, 			-- Badlands
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 3,			-- Blasted Lands [Criteria]
+										["maps"] = { 19 }, 			-- Blasted Lands
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 4,			-- Burning Steppes [Criteria]
+										["maps"] = { 29 }, 			-- Burning Steppes
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 5,			-- Eversong Woods [Criteria]
+										["maps"] = { 462 }, 		-- Eversong Woods
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 6,			-- Ghostlands [Criteria]
+										["maps"] = { 463 }, 		-- Ghostlands
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 7,			-- Hillsbrad Foothills [Criteria]
+										["maps"] = { 24 }, 			-- Hillsbrad Foothills
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 8,			-- Northern Stranglethorn [Criteria]
+										["maps"] = { 37 }, 			-- Northern Stranglethorn
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 9,		-- Silverpine Forest [Criteria]
+										["maps"] = { 21 }, 			-- Silverpine Forest
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 10,		-- Swamp of Sorrows [Criteria]
+										["maps"] = { 38 }, 			-- Swamp of Sorrows
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 11,		-- The Cape of Stranglethorn [Criteria]
+										["maps"] = { 673 }, 		-- The Cape of Stranglethorn
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 12,		-- The Hinterlands [Criteria]
+										["maps"] = { 26 }, 			-- The Hinterlands
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 13,		-- Tirisfal Glades [Criteria]
+										["maps"] = { 20 }, 			-- Tirisfal Glades
+									},
+									{
+										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 14,		-- Western Plaguelands [Criteria]
+										["maps"] = { 22 }, 			-- Western Plaguelands
+									},								
+								}))),
 								a(un(21, ach(1029, {	-- Extinguishing Kalimdor
 									{
 										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 1,			-- Ashenvale [Criteria]
+										["maps"] = { 43 },			-- Ashenvale
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 2,			-- Azshara [Criteria]
+										["maps"] = { 181 },			-- Azshara
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 3,			-- Desolace [Criteria]
+										["maps"] = { 101 }, 		-- Desolace
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
 										["criteriaID"] = 4,			-- Durotar [Criteria]
-										--["objectID"] = 187924, 		-- Alliance Bonfire
 										["maps"] = { 4 }, 			-- Durotar
 									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 5,			-- Dustwallow Marsh [Criteria]
+										["maps"] = { 141 },			-- Dustwallow Marsh
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 6,			-- Feralas [Criteria]
+										["maps"] = { 121 },			-- Feralas
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 7,			-- Mulgore [Criteria]
+										["maps"] = { 9 },			-- Mulgore
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 8,			-- Northern Barrens [Criteria]
+										["maps"] = { 11 },			-- Northern Barrens
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 9,			-- Silithus [Criteria]
+										["maps"] = { 261 },			-- Silithus
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 10,		-- Southern Barrens [Criteria]
+										["maps"] = { 607 },			-- Southern Barrens
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 11,		-- Stonetalon Mountains [Criteria]
+										["maps"] = { 81 },			-- Stonetalon Mountains
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 12,		-- Tanaris [Criteria]
+										["maps"] = { 161 },			-- Tanaris
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 13,		-- Un'Goro Crater [Criteria]
+										["maps"] = { 201 },			-- Un'Goro Crater
+									},
+									{
+										["achievementID"] = 1029,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 14,		-- Winterspring [Criteria]
+										["maps"] = { 281 },			-- Winterspring
+									},								
 								}))), 
-								un(21, ach(1030)), -- Extinguishing Outland
-								un(21, ach(6007)), -- Extinguishing Northrend
-								un(21, ach(6013)), -- Extinguishing the Cataclysm
+								a(un(21, ach(1030, { 	-- Extinguishing Outland
+									{
+										["achievementID"] = 1030,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 1,			-- Blade's Edge Mountains [Criteria]
+										["maps"] = { 475 },			-- Blade's Edge Mountains
+									},
+									{
+										["achievementID"] = 1030,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 2,			-- Hellfire Peninsula [Criteria]
+										["maps"] = { 465 },			-- Hellfire Peninsula
+									},
+									{
+										["achievementID"] = 1030,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 3,			-- Nagrand [Criteria]
+										["maps"] = { 477 },			-- Nagrand
+									},
+									{
+										["achievementID"] = 1030,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 4,			-- Netherstorm [Criteria]
+										["maps"] = { 479 },			-- Netherstorm
+									},
+									{
+										["achievementID"] = 1030,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 5,			-- Shadowmoon Valley [Criteria]
+										["maps"] = { 473 }, 		-- Shadowmoon Valley
+									},
+									{
+										["achievementID"] = 1030,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 6,			-- Terokkar Forest [Criteria]
+										["maps"] = { 478 },			-- Terokkar Forest
+									},
+									{
+										["achievementID"] = 1030,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 7,			-- Zangarmarsh [Criteria]
+										["maps"] = { 467 },			-- Zangarmarsh
+									},								
+								}))),
+								a(un(21, ach(6007, {	-- Extinguishing Northrend
+									{
+										["achievementID"] = 6007,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 1,			-- Borean Tundra [Criteria]
+										["maps"] = { 486 },			-- Borean Tundra
+									},
+									{
+										["achievementID"] = 6007,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 2,			-- Storm Peaks [Criteria]
+										["maps"] = { 495 }, 		-- Storm Peaks
+									},
+									{
+										["achievementID"] = 6007,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 3,			-- Zul'Drak [Criteria]
+										["maps"] = { 496 },			-- Zul'Drak
+									},
+									{
+										["achievementID"] = 6007,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 4,			-- Grizzly Hills [Criteria]
+										["maps"] = { 490 },			-- Grizzly Hills
+									},
+									{
+										["achievementID"] = 6007,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 5,			-- Howling Fjord [Criteria]
+										["maps"] = { 491 },			-- Howling Fjord
+									},
+									{
+										["achievementID"] = 6007,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 6,			-- Crystalsong Forest [Criteria]
+										["maps"] = { 510 },			-- Crystalsong Forest
+									},
+									{
+										["achievementID"] = 6007,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 7,			-- Sholazar Basin [Criteria]
+										["maps"] = { 493 },			-- Sholazar Basin
+									},
+									{
+										["achievementID"] = 6007,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 8,			-- Dragonblight [Criteria]
+										["maps"] = { 488 },			-- Dragonblight
+									},									
+								}))),
+								a(un(21, ach(6013, {	-- Extinguishing the Cataclysm
+									{
+										["achievementID"] = 6013,	-- Extinguishing the Cataclysm [Achievement]
+										["criteriaID"] = 1,			-- Twilight Highlands [Criteria]
+										["maps"] = { 700 },			-- Twilight Highlands
+									},
+									{
+										["achievementID"] = 6013,	-- Extinguishing the Cataclysm [Achievement]
+										["criteriaID"] = 2,			-- Uldum [Criteria]
+										["maps"] = { 720 },			-- Uldum
+									},
+								}))),
+							})),
+							a(ach(8042, {					-- Extinguishing Pandaria
+							})),
+							a(ach(11276, {					-- Extinguishing Draenor
+							})),
+							a(ach(11278, {					-- Extinguishing the Broken Isles
 							})),
 							ach(263, { -- Ice the Frost Lord
 							}),
@@ -1434,6 +1663,18 @@ _.WorldEvents =
 					}),
 					n(-17, { -- Quests
 						{
+							["questID"] = 11964,	-- Incense for the Summer Scorchlings
+							["qg"] = 16817,	-- Festival Loremaster
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = {
+								301,	-- Stormwind City
+								341,	-- Ironforge
+								381,	-- Darnassus
+								471,	-- The Exodar
+								481,	-- Shattrath City
+							},
+						},
+						{
 							["questID"] = 11966,	-- Incense for the Festival Scorchlings
 							["qg"] = 16818,	-- Festival Talespinner
 							["races"] = HORDE_ONLY,
@@ -1518,11 +1759,11 @@ _.WorldEvents =
 						q(11970, { -- The Master of Summer Lore
 							["groups"] = {},
 							["qgs"] = {
-								19169, -- Blood Elf Commoner
-								19175, -- Orc Commoner
-								19176, -- Tauren Commoner
-								19177, -- Troll Commoner
-								19178, -- Forsaken Commoner
+								18927, -- Human Commoner
+								19148, -- Dwarf Commoner
+								19171, -- Draenei Commoner
+								19172, -- Gnome Commoner
+								19173, -- Night Elf Commoner
 								20102, -- Goblin Commoner
 							},
 							["races"] = ALLIANCE_ONLY,
