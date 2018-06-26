@@ -127,11 +127,7 @@ _.Zones =
 					p(711), 	-- Sifang Otter
 					p(713), 	-- Softshell Snapling
 					q(31955, { -- Grand Master Nishi
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					}),
 				}),
 				n(-17, { 	-- Quests

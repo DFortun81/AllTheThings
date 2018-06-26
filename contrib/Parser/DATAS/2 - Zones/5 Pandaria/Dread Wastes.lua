@@ -15,11 +15,7 @@ _.Zones =
 					p(744), 	-- Resilient Roach
 					p(741), 	-- Silent Hedgehog
 					q(31957, { -- Grand Master Shu
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					}),
 					q(32439, { -- Flowing Pandaren Spirit
 						["groups"] = {

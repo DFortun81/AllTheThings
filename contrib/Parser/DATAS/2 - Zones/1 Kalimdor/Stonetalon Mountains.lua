@@ -96,11 +96,7 @@ _.Zones =
 					p(412), 	-- Spider
 					desc(p(506), "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders."), -- Venomspitter Hatchling
 					qg(66137, qh(31817, { -- Merda Stronghoof
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					})),
 					qg(66137, qh(31862)),	-- Zonya the Sadist
 				}),

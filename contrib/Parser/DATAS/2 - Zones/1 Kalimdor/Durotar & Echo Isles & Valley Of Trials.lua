@@ -305,11 +305,7 @@ _.Zones =
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
 					qg(66126, qh(31813, { -- Dagra the Fierce
-						i(89125, {	-- Sack of Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(37460),	-- Rope Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
+						i(89125),	-- Sack of Pet Supplies
 					})),
 					desc(qg(63061, qh(31571)), "This quest is part of a chain initiated by learning Battle Pet Training."),	-- Learning the Ropes
 					qg(63061, qh(37572)),	-- On The Mend

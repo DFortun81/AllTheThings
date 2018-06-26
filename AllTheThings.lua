@@ -6432,6 +6432,17 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
+		-- Pet Battles
+		if app.Categories.PetBattles then
+			db = app.CreateAchievement(6622, app.Categories.PetBattles); -- Big City Pet Brawler
+			db.f = 0;
+			db.lvl = 5; -- Must be 5 to train
+			db.expanded = false;
+			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
+			db.g = app.Categories.PetBattles;
+			table.insert(g, db);
+		end
+		
 		-- PvP
 		if app.Categories.PVP then
 			db = {};
