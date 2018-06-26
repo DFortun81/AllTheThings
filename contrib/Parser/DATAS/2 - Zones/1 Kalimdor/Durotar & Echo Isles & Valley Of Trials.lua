@@ -634,267 +634,249 @@ _.Zones =
 							p(466), 	-- Spiny Lizard
 						}),
 						n(-17, { 	-- Quests
-							qg(38247, qh(24779, {	-- A Rough Start
-								["groups"] = {
-								},
-								["classes"]= {3},
-							})),
-							qg(38246, qh(24753, {	-- A Rough Start
-								["groups"] = {
-								},
-								["classes"]= {8},
-							})),
-							qg(38242, qh(24761, {	-- A Rough Start
-								["groups"] = {
-								},
-								["classes"]= {7},
-							})),
-							qg(63310, qh(31160, {	-- A Rough Start
-								["groups"] = {
-								},
-								["classes"]= {10},
-							})),
-							qg(38244, qh(24773, {	-- A Rough Start
-								["groups"] = {
-								},
-								["classes"]= {4},
-							})),
-							qg(38245, qh(24785, {	-- A Rough Start
-								["groups"] = {
-								},
-								["classes"]= {5},
-							})),
-							qg(38037, qh(24641, {	-- A Rough Start
-								["groups"] = {
-								},
-								["classes"]= {1},
-							})),
-							qg(42618, qh(26275, {	-- A Rough Start
-								["groups"] = {
-								},
-								["classes"]= {9},
-							})),
-							qg(38243, qh(24767, {	-- A Rough Start
-								["groups"] = {
-								},
-								["classes"]= {11},
-							})),
-							qg(38005, qh(24622)),	-- A Troll's Truest Companion
-							qg(38442, qh(24814)),	-- An Ancient Enemy
-							qg(38440, qh(25035)),	-- Breaking the Line
-							qg(37987, qh(24625)),	-- Consort of the Sea Witch
-							qg(39007, qh(25037)),	-- Crab Fishin'
-							qg(68025, qh(32372, {	-- De-Subjugation
-								["sourceQuests"] = { 32320 } -- The Horde is Family
-							})),
-							qg(37987, qh(24624)),	-- Mercy for the Lost
-							qg(38966, qh(25064)),	-- Moraya
-							qg(38247, qh(24781, {	-- More Than Expected
-								["groups"] = {
-								},
-								["classes"] = {3},
-							})),
-							qg(63310, qh(31163, {	-- More Than Expected
-								["groups"] = {
-								},
-								["classes"] = {10},
-							})),
-							qg(38245, qh(24787, {	-- More Than Expected					
-								["groups"] = {
-								},
-								["classes"] = {5},
-							})),
-							qg(38244, qh(24775, {	-- More Than Expected
-								["groups"] = {
-								},
-								["classes"] = {4},
-							})),
-							qg(38242, qh(24763, {	-- More Than Expected
-								["groups"] = {
-								},
-								["classes"] = {7},
-							})),
-							qg(38246, qh(24755, {	-- More Than Expected
-								["groups"] = {
-								},
-								["classes"] = {8},
-							})),
-							qg(42618, qh(26277, {	-- More Than Expected
-								["groups"] = {
-								},
-								["classes"] = {9},
-							})),
-							qg(38037, qh(24643, {	-- More Than Expected
-								["groups"] = {
-								},
+							qg(37951, qh(24607, {	-- The Rise of the Darkspear
 								["classes"] = {1},
 							})),
-							qg(38243, qh(24769, {	-- More Than Expected
-								["groups"] = {
-								},
-								["classes"] = {11},
+							qg(38005, qh(24622, {	-- A Troll's Truest Companion
+								["sourceQuests"] = { 25064 } -- Moraya
 							})),
-							qg(38442, qh(24812)),	-- No More Mercy
+							qg(37969, qh(24623, {	-- Saving the Young
+								["sourceQuests"] = { 24622 }
+							})),
+							qg(37987, qh(24624, {	-- Mercy for the Lost
+								["sourceQuests"] = { 24622 }
+							})),
+							qg(37987, qh(24625, {	-- Consort of the Sea Witch
+								["sourceQuests"] = { 24622 }
+							})),
+							qg(37969, qh(24626, {	-- Young and Vicious
+								["sourceQuests"] = { 24625 } -- Consort of the Sea Witch
+							})),
+							qg(38037, qh(24639, {	-- The Basics: Hitting Things
+								["sourceQuests"] = { 24607 }, -- The Rise of the Darkspear
+								["classes"]= {1},
+							})),
+							qg(38037, qh(24641, {	-- A Rough Start
+								["sourceQuests"] = { 24639 }, -- The Basics: Hitting Things
+								["classes"]= {1},
+							})),
+							qg(38037, qh(24642, {	-- Proving Pit (warrior)
+								["groups"] = {
+									i(52876),
+								},
+								["sourceQuests"] = { 24641 }, -- A Rough Start (warrior)
+								["classes"] = {1},
+							})),
+							qg(38037, qh(24643, {	-- More Than Expected (warrior)
+								["sourceQuests"] = { 24642 }, -- Proving Pit (warrior)
+								["classes"] = {1},
+							})),
+							qg(37951, qh(24750, {	-- The Rise of the Darkspear
+								["classes"] = {8},
+							})),
+							qg(38246, qh(24751, {	-- The Basics: Hitting Things
+								["sourceQuests"] = { 24750 }, -- The Rise of the Darkspear
+								["classes"]= {8},
+							})),
+							-- qg(38246, qh(24752)) -- The Arts of a Mage (removed from game)
+							qg(38246, qh(24753, {	-- A Rough Start
+								["sourceQuests"] = { 24751 }, -- The Basics: Hitting Things
+								["classes"]= {8},
+							})),
 							qg(38246, qh(24754, {	-- Proving Pit (mage)
 								["groups"] = {
 									i(52873),
 								},
+								["sourceQuests"] = { 24753 }, -- A Rough Start (mage)
 								["classes"] = {8},
+							})),
+							qg(38246, qh(24755, {	-- More Than Expected (mage)
+								["sourceQuests"] = { 24754 }, -- Proving Pit (mage)
+								["classes"] = {8},
+							})),
+							qg(37951, qh(24758, {	-- The Rise of the Darkspear
+								["classes"] = {7},
+							})),
+							qg(38242, qh(24759, {	-- The Basics: Hitting Things
+								["sourceQuests"] = { 24758 }, -- The Rise of the Darkspear
+								["classes"]= {7},
+							})),
+							qg(38242, qh(24761, {	-- A Rough Start
+								["sourceQuests"] = { 24759 }, -- The Basics: Hitting Things
+								["classes"]= {7},
 							})),
 							qg(38242, qh(24762, {	-- Proving Pit (shaman)
 								["groups"] = {
 									i(52875),
 								},
+								["sourceQuests"] = { 24761 }, -- A Rough Start (shaman)
 								["classes"] = {7},
+							})),
+							qg(38242, qh(24763, {	-- More Than Expected (shaman)
+								["sourceQuests"] = { 24762 }, -- Proving Pit (shaman)
+								["classes"] = {7},
+							})),
+							qg(37951, qh(24764, {	-- The Rise of the Darkspear
+								["classes"] = {11},
+							})),
+							qg(38243, qh(24765, {	-- The Basics: Hitting Things
+								["sourceQuests"] = { 24764 }, -- The Rise of the Darkspear
+								["classes"]= {11},
+							})),
+							qg(38243, qh(24767, {	-- A Rough Start
+								["sourceQuests"] = { 24765 }, -- The Basics: Hitting Things
+								["classes"]= {11},
+							})),
+							qg(38243, qh(24768, {	-- Proving Pit (druid)
+								["groups"] = {
+									i(52870),
+								},
+								["sourceQuests"] = { 24767 }, -- A Rough Start (druid)
+								["classes"] = {11},
+							})),
+							qg(38243, qh(24769, {	-- More Than Expected (druid)
+								["sourceQuests"] = { 24768 },  -- Proving Pit (druid)
+								["classes"] = {11},
+							})),
+							qg(37951, qh(24770, {	-- The Rise of the Darkspear
+								["classes"] = {4},
+							})),
+							qg(38244, qh(24771, {	-- The Basics: Hitting Things
+								["sourceQuests"] = { 24770 }, -- The Rise of the Darkspear
+								["classes"]= {4},
+							})),
+							qg(38244, qh(24773, {	-- A Rough Start
+								["sourceQuests"] = { 24770 }, -- The Basics: Hitting Things
+								["classes"]= {4},
 							})),
 							qg(38244, qh(24774, {	-- Proving Pit (rogue)
 								["groups"] = {
 									i(52889),
 								},
+								["sourceQuests"] = { 24773 }, -- A Rough Start (rogue)
 								["classes"] = {4},
 							})),
-							qg(38247, qh(24780, { -- Proving Pit (hunter)
+							qg(38244, qh(24775, {	-- More Than Expected (rogue)
+								["sourceQuests"] = { 24774 }, -- Proving Pit (rogue)
+								["classes"] = {4},
+							})),
+							qg(37951, qh(24776, {	-- The Rise of the Darkspear
+								["classes"] = {3},
+							})),
+							qg(38247, qh(24777, {	-- The Basics: Hitting Things
+								["sourceQuests"] = { 24776 }, -- The Rise of the Darkspear
+								["classes"]= {3},
+							})),
+							qg(38247, qh(24779, {	-- A Rough Start
+								["sourceQuests"] = { 24777 }, -- The Basics: Hitting Things
+								["classes"]= {3},
+							})),
+							qg(38247, qh(24780, {	-- Proving Pit (hunter)
 								["groups"] = {
 									i(52872),
 								},
+								["sourceQuests"] = { 24779 }, -- A Rough Start (hunter)
 								["classes"] = {3},
 							})),
-							qg(38245, qh(24786, { -- Proving Pit (priest)
+							qg(38247, qh(24781, {	-- More Than Expected (hunter)
+								["sourceQuests"] = { 24780 }, -- Proving Pit (hunter)
+								["classes"] = {3},
+							})),
+							qg(37951, qh(24782, {	-- The Rise of the Darkspear
+								["classes"] = {5},
+							})),
+							qg(38245, qh(24783, {	-- The Basics: Hitting Things
+								["sourceQuests"] = { 24782 }, -- The Rise of the Darkspear
+								["classes"]= {5},
+							})),
+							qg(38245, qh(24785, {	-- A Rough Start
+								["sourceQuests"] = { 24783 }, -- The Basics: Hitting Things
+								["classes"]= {5},
+							})),
+							qg(38245, qh(24786, {	-- Proving Pit (priest)
 								["groups"] = {
 									i(52874),
 								},
+								["sourceQuests"] = { 24785 }, -- A Rough Start (priest)
 								["classes"] = {5},
 							})),
-							qg(63310, qh(31161, { -- Proving Pit (monk)
-								["groups"] = {
-									i(85574),
-								},
-								["classes"] = {10},
+							qg(38245, qh(24787, {	-- More Than Expected (priest)
+								["sourceQuests"] = { 24786 },  -- Proving Pit (priest)
+								["classes"] = {5},
 							})),
-							qg(38037, qh(24642, { -- Proving Pit (warrior)
-								["groups"] = {
-									i(52876),
-								},
-								["classes"] = {1},
+							qg(38442, qh(24812, {	-- No More Mercy
+								["sourceQuests"] = { 25035 } -- Breaking the Line
 							})),
-							qg(38243, qh(24768, { -- Proving Pit (druid)
-								["groups"] = {
-									i(52870),
-								},
-								["classes"] = {11},
+							qg(38442, qh(24813, {	-- Territorial Fetish
+								["sourceQuests"] = { 25035 } -- Breaking the Line
 							})),
-							qg(42618, qh(26276, { -- Proving Pit (warlock)
+							qg(38442, qh(24814, {	-- An Ancient Enemy
+								["sourceQuests"] = { 24812, 24813 } -- No more Mercy, Territorial Fetish
+							})),
+							qg(38440, qh(25035, {	-- Breaking the Line
+								["sourceQuests"] = { 24626 } -- Young and Vicious
+							})),
+							qg(39007, qh(25037, {	-- Crab Fishin'
+								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769} -- More Than Expected (all classes)
+							})),
+							qg(38966, qh(25064, {	-- Moraya
+								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769} -- More Than Expected (all classes)
+							})),
+							qg(38966, qh(25073, {	-- Sen'jin Village (breadcrumb quest for 25167)
+								["sourceQuests"] = { 24814 }, -- An Ancient Enemy
+								["races"] = {6,8,10},
+								["breadcrumbQuestID"] = { 25167 }
+							})),
+							qg(37951, qh(26272, {	-- The Rise of the Darkspear
+								["classes"] = {9},
+							})),
+							qg(42618, qh(26273, {	-- The Basics: Hitting Things
+								["sourceQuests"] = { 26272 }, -- The Rise of the Darkspear
+								["classes"]= {9},
+							})),
+							qg(42618, qh(26275, {	-- A Rough Start
+								["sourceQuests"] = { 26273 }, -- The Basics: Hitting Things
+								["classes"]= {9},
+							})),
+							qg(42618, qh(26276, {	-- Proving Pit (warlock)
 								["groups"] = {
 									i(52873),
 								},
+								["sourceQuests"] = { 26275 }, -- A Rough Start (warlock)
 								["classes"] = {9},
 							})),
-							qg(37969, qh(24623)),	-- Saving the Young
-							qg(38966, qh(25073, {	-- Sen'jin Village (breadcrumb quest for 25167)
-								["groups"] = {
-								},
-								["races"]= {6,8,10},
-							})),
-							qg(38442, qh(24813)),	-- Territorial Fetish
-							qg(38246, qh(24752, {	-- The Arts of a Mage
-								["groups"] = {
-								},
-								["classes"]= {8},
-							})),
-							qg(38242, qh(24759, {	-- The Basics: Hitting Things
-								["groups"] = {
-								},
-								["classes"]= {7},
-							})),
-							qg(38245, qh(24783, {	-- The Basics: Hitting Things
-								["groups"] = {
-								},
-								["classes"]= {5},
-							})),
-							qg(38246, qh(24751, {	-- The Basics: Hitting Things
-								["groups"] = {
-								},
-								["classes"]= {8},
-							})),
-							qg(38247, qh(24777, {	-- The Basics: Hitting Things
-								["groups"] = {
-								},
-								["classes"]= {3},
+							qg(42618, qh(26277, {	-- More Than Expected (warlock)
+								["sourceQuests"] = { 26276 }, -- Proving Pit (warlock)
+								["classes"] = {9},
 							})),
 							qg(63310, qh(31158, {	-- The Basics: Hitting Things
-								["groups"] = {
-								},
+								["sourceQuests"] = { 31159 }, -- The Rise of the Darkspear
 								["classes"]= {10},
 							})),
-							qg(38244, qh(24771, {	-- The Basics: Hitting Things
-								["groups"] = {
-								},
-								["classes"]= {4},
+							qg(37951, qh(31159, {	-- The Rise of the Darkspear
+								["classes"] = {10},
 							})),
-							qg(38037, qh(24639, {	-- The Basics: Hitting Things
-								["groups"] = {
-								},
-								["classes"]= {1},
+							qg(63310, qh(31160, {	-- A Rough Start
+								["sourceQuests"] = { 31158 }, -- The Basics: Hitting Things
+								["classes"]= {10},
 							})),
-							qg(38243, qh(24765, {	-- The Basics: Hitting Things
+							qg(63310, qh(31161, {	-- Proving Pit (monk)
 								["groups"] = {
+									i(85574),
 								},
-								["classes"]= {11},
+								["sourceQuests"] = { 31160 }, -- A Rough Start (monk)
+								["classes"] = {10},
 							})),
-							qg(42618, qh(26273, {	-- The Basics: Hitting Things
-								["groups"] = {
-								},
-								["classes"]= {9},
+							qg(63310, qh(31163, {	-- More Than Expected (monk)
+								["sourceQuests"] = { 31161 }, -- Proving Pit (monk)
+								["classes"] = {10},
 							})),
 							qg(68025, qh(32320, {	-- The Horde is Family
 								["sourceQuests"] = { 32319 } -- Find Thrall!
 							})),
-							qg(37951, qh(24758, {	-- The Rise of the Darkspear
-								["groups"] = {
-								},
-								["classes"] = {7},
+							qg(68025, qh(32372, {	-- De-Subjugation
+								["sourceQuests"] = { 32320 } -- The Horde is Family
 							})),
-							qg(37951, qh(24750, {	-- The Rise of the Darkspear
-								["groups"] = {
-								},
-								["classes"] = {8},
-							})),
-							qg(37951, qh(24782, {	-- The Rise of the Darkspear
-								["groups"] = {
-								},
-								["classes"] = {5},
-							})),
-							qg(37951, qh(24776, {	-- The Rise of the Darkspear
-								["groups"] = {
-								},
-								["classes"] = {3},
-							})),
-							qg(37951, qh(31159, {	-- The Rise of the Darkspear
-								["groups"] = {
-								},
-								["classes"] = {10},
-							})),
-							qg(37951, qh(24770, {	-- The Rise of the Darkspear
-								["groups"] = {
-								},
-								["classes"] = {4},
-							})),
-							qg(37951, qh(26272, {	-- The Rise of the Darkspear
-								["groups"] = {
-								},
-								["classes"] = {9},
-							})),
-							qg(37951, qh(24764, {	-- The Rise of the Darkspear
-								["groups"] = {
-								},
-								["classes"] = {11},
-							})),
-							qg(37951, qh(24607, {	-- The Rise of the Darkspear
-								["groups"] = {
-								},
-								["classes"] = {1},
-							})),
-							qg(37969, qh(24626)),	-- Young and Vicious
 						}),
 						n( -2, { 	-- Vendors
 							h(n(113615, {	-- Ravika <Darkspear Quartermaster>
