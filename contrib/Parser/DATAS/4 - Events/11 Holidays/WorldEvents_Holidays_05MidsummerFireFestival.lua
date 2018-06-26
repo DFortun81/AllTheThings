@@ -417,7 +417,7 @@ _.WorldEvents =
 									},
 								}))),
 							})),
-							h(ach(8044, { -- Flame Keeper of Pandaria
+							h(ach(8044, { 				-- Flame Keeper of Pandaria
 								{
 									["achievementID"] = 8044,	-- Flame Keeper of Pandaria [Achievement]
 									["criteriaID"] = 1,			-- Dread Wastes [Criteria]
@@ -468,7 +468,7 @@ _.WorldEvents =
 									["maps"] = { 807 },			-- Valley of the Four Winds
 								},
 							})),
-							h(ach(11284, { -- Flame Keeper of Draenor
+							h(ach(11284, { 				-- Flame Keeper of Draenor
 								{
 									["achievementID"] = 11284,	-- Flame Keeper of Draenor [Achievement]
 									["criteriaID"] = 1,			-- Spires of Arak [Criteria]
@@ -505,7 +505,7 @@ _.WorldEvents =
 									["maps"] = { 941 },			-- Frostfire Ridge
 								},
 							})),
-							h(ach(11282, { -- Flame Keeper of the Broken Isles
+							h(ach(11282, { 				-- Flame Keeper of the Broken Isles
 								{
 									["achievementID"] = 11282,	-- Flame Keeper of the Broken Isles [Achievement]
 									["criteriaID"] = 1,			-- Azsuna [Criteria]
@@ -542,7 +542,7 @@ _.WorldEvents =
 									["maps"] = { 1033 },		-- Suramar
 								},							
 							})),
-							h(ach(1037, { -- Desecration of the Alliance
+							h(ach(1037, { 				-- Desecration of the Alliance
 								h(un(21, ach(1031, { 	-- Extinguishing Eastern Kingdoms
 									{
 										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
@@ -647,7 +647,7 @@ _.WorldEvents =
 										["maps"] = { 42 },			-- Darkshore
 									},
 									{
-										["achievementID"] = 1032,	-- Flame Keeper of Kalimdor [Achievement]
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
 										["criteriaID"] = 5,			-- Desolace [Criteria]
 										["maps"] = { 101 }, 		-- Desolace
 									},
@@ -697,9 +697,103 @@ _.WorldEvents =
 										["maps"] = { 281 },			-- Winterspring
 									},
 								}))),
-								un(21, ach(1033)), 				-- Extinguishing Outland
-								un(21, ach(6010)), 				-- Extinguishing Northrend
-								un(21, ach(6014)), 				-- Extinguishing the Cataclysm
+								h(un(21, ach(1033, { 	-- Extinguishing Outland
+									{
+										["achievementID"] = 1033,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 1,			-- Blade's Edge Mountains [Criteria]
+										["maps"] = { 475 },			-- Blade's Edge Mountains
+									},
+									{
+										["achievementID"] = 1033,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 2,			-- Hellfire Peninsula [Criteria]
+										["maps"] = { 465 },			-- Hellfire Peninsula
+									},
+									{
+										["achievementID"] = 1033,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 3,			-- Nagrand [Criteria]
+										["maps"] = { 477 },			-- Nagrand
+									},
+									{
+										["achievementID"] = 1033,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 4,			-- Netherstorm [Criteria]
+										["maps"] = { 479 },			-- Netherstorm
+									},
+									{
+										["achievementID"] = 1033,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 5,			-- Shadowmoon Valley [Criteria]
+										["maps"] = { 473 }, 		-- Shadowmoon Valley
+									},
+									{
+										["achievementID"] = 1033,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 6,			-- Terokkar Forest [Criteria]
+										["maps"] = { 478 },			-- Terokkar Forest
+									},
+									{
+										["achievementID"] = 1033,	-- Extinguishing Outland [Achievement]
+										["criteriaID"] = 7,			-- Zangarmarsh [Criteria]
+										["maps"] = { 467 },			-- Zangarmarsh
+									},
+								}))),
+								h(un(21, ach(6010, { 	-- Extinguishing Northrend
+									{
+										["achievementID"] = 6010,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 1,			-- Dragonblight [Criteria]
+										["maps"] = { 488 },			-- Dragonblight
+									},
+									{
+										["achievementID"] = 6010,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 2,			-- Borean Tundra [Criteria]
+										["maps"] = { 486 },			-- Borean Tundra
+									},
+									{
+										["achievementID"] = 6010,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 3,			-- Howling Fjord [Criteria]
+										["maps"] = { 491 },			-- Howling Fjord
+									},
+									{
+										["achievementID"] = 6010,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 4,			-- Sholazar Basin [Criteria]
+										["maps"] = { 493 },			-- Sholazar Basin
+									},
+									{
+										["achievementID"] = 6010,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 5,			-- Storm Peaks [Criteria]
+										["maps"] = { 495 }, 		-- Storm Peaks
+									},
+									{
+										["achievementID"] = 6010,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 6,			-- Zul'Drak [Criteria]
+										["maps"] = { 496 },			-- Zul'Drak
+									},
+									{
+										["achievementID"] = 6010,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 7,			-- Grizzly Hills [Criteria]
+										["maps"] = { 490 },			-- Grizzly Hills
+									},
+									{
+										["achievementID"] = 6010,	-- Extinguishing Northrend [Achievement]
+										["criteriaID"] = 8,			-- Crystalsong Forest [Criteria]
+										["maps"] = { 510 },			-- Crystalsong Forest
+									},
+								}))),
+								h(un(21, ach(6014, { 	-- Extinguishing the Cataclysm
+									{
+										["achievementID"] = 6014,	-- Extinguishing the Cataclysm [Achievement]
+										["criteriaID"] = 1,			-- Twilight Highlands [Criteria]
+										["maps"] = { 700 },			-- Twilight Highlands
+									},
+									{
+										["achievementID"] = 6014,	-- Extinguishing the Cataclysm [Achievement]
+										["criteriaID"] = 2,			-- Uldum [Criteria]
+										["maps"] = { 720 },			-- Uldum
+									},
+								}))),
+							})),
+							h(ach(8043, {				-- Extinguishing Pandaria
+							})),
+							h(ach(11277, {				-- Extinguishing Draenor
+							})),
+							h(ach(11279, {				-- Extinguishing the Broken Isles
 							})),
 							ach(271, { -- Burning Hot Pole Dance
 								["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
@@ -712,7 +806,7 @@ _.WorldEvents =
 									["itemID"] = 23182, -- Flame of Stormwind
 									["races"] = HORDE_ONLY,
 									["maps"] = {
-									-- Stormwind MapID here
+										301,	-- Stormwind City
 									},
 								},
 								{
@@ -720,7 +814,7 @@ _.WorldEvents =
 									["itemID"] = 23183, -- Flame of Ironforge
 									["races"] = HORDE_ONLY,
 									["maps"] = {
-									 -- Ironforge MapID here
+										341,	-- Ironforge
 									},
 								},
 								{
@@ -728,7 +822,7 @@ _.WorldEvents =
 									["itemID"] = 23184, -- Flame of Darnassus
 									["races"] = HORDE_ONLY,
 									["maps"] = {
-									-- Darnassus MapID here
+										381,	-- Darnassus
 									},
 								},
 								{
@@ -736,7 +830,7 @@ _.WorldEvents =
 									["itemID"] = 35569, -- Flame of the Exodar
 									["races"] = HORDE_ONLY,
 									["maps"] = {
-									-- Exodar MapID here
+										471,	-- The Exodar
 									},
 								},
 								q(9339, { -- A Thief's Reward
