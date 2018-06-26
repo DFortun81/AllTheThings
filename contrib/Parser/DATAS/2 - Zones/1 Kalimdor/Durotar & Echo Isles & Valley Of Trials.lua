@@ -684,7 +684,9 @@ _.Zones =
 							qg(38440, qh(25035)),	-- Breaking the Line
 							qg(37987, qh(24625)),	-- Consort of the Sea Witch
 							qg(39007, qh(25037)),	-- Crab Fishin'
-							qg(68025, qh(32372)),	-- De-Subjugation
+							qg(68025, qh(32372, {	-- De-Subjugation
+								["sourceQuests"] = { 32320 } -- The Horde is Family
+							})),
 							qg(37987, qh(24624)),	-- Mercy for the Lost
 							qg(38966, qh(25064)),	-- Moraya
 							qg(38247, qh(24781, {	-- More Than Expected
@@ -844,7 +846,9 @@ _.Zones =
 								},
 								["classes"]= {9},
 							})),
-							qg(68025, qh(32320)),	-- The Horde Is Family
+							qg(68025, qh(32320, {	-- The Horde is Family
+								["sourceQuests"] = { 32319 } -- Find Thrall!
+							})),
 							qg(37951, qh(24758, {	-- The Rise of the Darkspear
 								["groups"] = {
 								},
@@ -913,18 +917,45 @@ _.Zones =
 							p(448), -- Hare
 						}),
 						n(-17, { -- Quests
-							qg(3287, qh(25130)),	-- Back to the Den
-							qg(3143, qh(25126)),	-- Cutting Teeth
-							qg(68025, qh(32372)),	-- De-Subjugation
-							qg(9796, qh(25136)),	-- Galgar's Cactus Apple Surprise
-							qg(5887, qh(25128)),	-- Hana'zua
-							qg(3143, qh(25172)),	-- Invaders in Our Home
-							qg(3145, qh(25133)),	-- Report to Sen'jin Village (breadcrumb quest for 25167)
-							qg(3287, qh(25129)),	-- Sarkoth
-							qg(3143, qh(25127)),	-- Sting of the Scorpid
-							qg(11378, qh(25135)),	-- Thazz'ril's Pick
-							qg(3145, qh(25131)),	-- Vile Familiars
+							qg(3143, qh(25126, {	-- Cutting Teeth
+								["sourceQuests"] = { 25152 } -- Your Place In The World
+							})),
+							qg(3143, qh(25127, {	-- Sting of the Scorpid
+								["sourceQuests"] = { 25172 } -- Invaders in our Home
+							})),
+							qg(5887, qh(25128, {	-- Hana'zua
+								["sourceQuests"] = { 25127 }, -- Invaders in our Home
+								["description"] = "Unavailable if quest \"Sarkoth\" has been completed or is in your questlog"
+							})),
+							qg(3287, qh(25129, {	-- Sarkoth
+								["breadcrumbQuestID"] = { 25128 } -- Hana'zua
+							})),
+							qg(3287, qh(25130, {	-- Back to the Den
+								["sourceQuests"] = { 25129 } -- Sarkoth
+							})),
+							qg(3145, qh(25131, {	-- Vile Familiars
+								["sourceQuests"] = { 25127 } -- Sting of the Scorpid
+							})),
+							qg(3145, qh(25132, {	-- Burning Blade Medallion
+								["sourceQuests"] = { 25131 } -- Vile Familiars
+							})),
+							qg(3145, qh(25133, {	-- Report to Sen'jin Village (breadcrumb quest for 25167)
+								["sourceQuests"] = { 25132 } -- Burning Blade Medallion
+							})),
+							--qg(11378, qh(25134)), -- lazy peons (replaced by 37446)
+							qg(11378, qh(25135, {	-- Thazz'ril's Pick
+								["sourceQuests"] = { 25131 } -- Vile Familiars
+							})),
+							qg(9796, qh(25136, {	-- Galgar's Cactus Apple Surprise
+								["sourceQuests"] = { 25126 } -- Cutting Teeth
+							})),
 							qg(10176, qh(25152)),	-- Your Place In The World
+							qg(3143, qh(25172, {	-- Invaders in our Home
+								["sourceQuests"] = { 25126 } -- Cutting Teeth
+							})),
+							qg(11378, qh(37446, {	-- Lazy Peons
+								["sourceQuests"] = { 25172 }
+							}))
 						}),
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
