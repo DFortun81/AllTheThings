@@ -74,19 +74,6 @@ _.Zones =
 						["u"] = 20,
 					}),
 --]]					
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								{
-									["questID"] = 9326, -- Stealing the Undercity's Flame
-									["itemID"] = 23181, -- Flame of the Undercity
-									["races"] = ALLIANCE_ONLY,
-								},
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 --[[					
 					n(-56, {     -- Brewfest
 						["groups"] = {

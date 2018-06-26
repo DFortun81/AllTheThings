@@ -64,19 +64,6 @@ _.Zones =
 						["u"] = 20,
 					}),
 --]]
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								{
-									["questID"] = 11935, -- Stealing Silvermoon's Flame
-									["itemID"] = 35568, -- Flame of Silvermoon
-									["races"] = ALLIANCE_ONLY,
-								},
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 --[[
 					n(-56, {     -- Brewfest
 						["groups"] = {
