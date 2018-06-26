@@ -10,14 +10,501 @@ _.WorldEvents =
 					n(-4, { -- Achievements
 						a(ach(1038, { -- The Flame Warden
 							un(21, title(44)), -- Flame Warden
-							a(ach(1034, { -- The Fires of Azeroth
-								un(21, ach(1022)), -- Flame Warden of Eastern Kingdoms
-								un(21, ach(1023)), -- Flame Warden of Kalimdor
-								un(21, ach(1024)), -- Flame Warden of Outland
-								un(21, ach(6008)), -- Flame Warden of Northrend
-								un(21, ach(6011)), -- Flame Warden of Cataclysm
+							a(ach(1034, { 				-- The Fires of Azeroth
+								a(un(21, ach(1022, { 	-- Flame Warden of Eastern Kingdoms
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 1,			-- Arathi Highlands [Criteria]
+										["questID"] = 11804, 		-- Honor the Flame [Arathi Highlands]
+										["qg"] = 25887,				-- Arathi Flame Warden
+										["maps"] = { 16 }, 			-- Arathi Highlands
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 2,			-- Badlands [Criteria]
+										["questID"] = 28925, 		-- Honor the Flame [Badlands]
+										["qg"] = 51585,				-- Badlands Flame Warden
+										["maps"] = { 17 }, 			-- Badlands
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 3,			-- Blasted Lands [Criteria]
+										["questID"] = 11808, 		-- Honor the Flame [Blasted Lands]
+										["qg"] = 25890,				-- Blasted Lands Flame Warden
+										["maps"] = { 19 }, 			-- Blasted Lands
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 4,			-- Burning Steppes [Criteria]
+										["questID"] = 11810, 		-- Honor the Flame [Burning Steppes]
+										["qg"] = 25892,				-- Burning Steppes Flame Warden
+										["maps"] = { 29 }, 			-- Burning Steppes
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 5,			-- Dun Morogh [Criteria]
+										["questID"] = 11813, 		-- Honor the Flame [Dun Morogh]
+										["qg"] = 25895,				-- Dun Morogh Flame Warden
+										["maps"] = { 27 }, 			-- Dun Morogh
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 6,			-- Duskwood [Criteria]
+										["questID"] = 11814, 		-- Honor the Flame [Duskwood]
+										["qg"] = 25896,				-- Duskwood Flame Warden
+										["maps"] = { 34 }, 			-- Duskwood
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 7,			-- Elwynn Forest [Criteria]
+										["questID"] = 11816, 		-- Honor the Flame [Elwynn Forest]
+										["qg"] = 25898,				-- Elwynn Forest Flame Warden
+										["maps"] = { 30 }, 			-- Elwynn Forest
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 8,			-- Loch Modan [Criteria]
+										["questID"] = 11820, 		-- Honor the Flame [Loch Modan]
+										["qg"] = 25902,				-- Loch Modan Flame Warden
+										["maps"] = { 35 }, 			-- Loch Modan
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 9,			-- Northern Stranglethorn [Criteria]
+										["questID"] = 28922, 		-- Honor the Flame [Northern Stranglethorn]
+										["qg"] = 51574,				-- Northern Stranglethorn Flame Warden
+										["maps"] = { 37 }, 			-- Northern Stranglethorn
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 10,		-- Redridge Mountains [Criteria]
+										["questID"] = 11822, 		-- Honor the Flame [Redridge Mountains]
+										["qg"] = 25904,				-- Redridge Flame Warden
+										["maps"] = { 36 }, 			-- Redridge Mountains
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 11,		-- Swamp of Sorrows [Criteria]
+										["questID"] = 28929, 		-- Honor the Flame [Swamp of Sorrows]
+										["qg"] = 51602,				-- Swamp of Sorrows Flame Warden
+										["maps"] = { 38 }, 			-- Swamp of Sorrows
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 12,		-- The Cape of Stranglethorn [Criteria]
+										["questID"] = 11832, 		-- Honor the Flame [The Cape of Stranglethorn]
+										["qg"] = 25915,				-- Cape of Stranglethorn Flame Warden
+										["maps"] = { 673 }, 		-- The Cape of Stranglethorn
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 13,		-- The Hinterlands [Criteria]
+										["questID"] = 11826, 		-- Honor the Flame [The Hinterlands]
+										["qg"] = 25908,				-- The Hinterlands Flame Warden
+										["maps"] = { 26 }, 			-- The Hinterlands
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 14,		-- Western Plaguelands [Criteria]
+										["questID"] = 11827, 		-- Honor the Flame [Western Plaguelands]
+										["qg"] = 25909,				-- Western Plaguelands Flame Warden
+										["maps"] = { 22 }, 			-- Western Plaguelands
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 15,		-- Westfall [Criteria]
+										["questID"] = 11583, 		-- Honor the Flame [Westfall]
+										["qg"] = 25910,				-- Westfall Flame Warden
+										["maps"] = { 39 }, 			-- Westfall
+									},
+									{
+										["achievementID"] = 1022,	-- Flame Warden of Eastern Kingdoms [Achievement]
+										["criteriaID"] = 16,		-- Wetlands [Criteria]
+										["questID"] = 11828, 		-- Honor the Flame [Wetlands]
+										["qg"] = 25911,				-- Wetlands Flame Warden
+										["maps"] = { 40 }, 			-- Wetlands
+									},									
+								}))),
+								a(un(21, ach(1023, { 	-- Flame Warden of Kalimdor
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 1,			-- Ashenvale [Criteria]
+										["questID"] = 11805, 		-- Honor the Flame [Ashenvale]
+										["qg"] = 25883,				-- Ashenvale Flame Warden
+										["maps"] = { 43 }, 			-- Ashenvale
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 2,			-- Azuremyst Isle [Criteria]
+										["questID"] = 11806, 		-- Honor the Flame [Azuremyst Isle]
+										["qg"] = 25888,				-- Azuremyst Isle Flame Warden
+										["maps"] = { 464 }, 		-- Azuremyst Isle
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 3,			-- Bloodmyst Isle [Criteria]
+										["questID"] = 11809, 		-- Honor the Flame [Bloodmyst Isle]
+										["qg"] = 25891,				-- Bloodmyst Isle Flame Warden
+										["maps"] = { 476 }, 		-- Bloodmyst Isle
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 4,			-- Darkshore [Criteria]
+										["questID"] = 11811, 		-- Honor the Flame [Darkshore]
+										["qg"] = 25893,				-- Darkshore Flame Warden
+										["maps"] = { 42 }, 			-- Darkshore
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 5,			-- Desolace [Criteria]
+										["questID"] = 11812, 		-- Honor the Flame [Desolace]
+										["qg"] = 25894,				-- Desolace Flame Warden
+										["maps"] = { 101 }, 		-- Desolace
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 6,			-- Dustwallow Marsh [Criteria]
+										["questID"] = 11815, 		-- Honor the Flame [Dustwallow Marsh]
+										["qg"] = 25897,				-- Dustwallow Marsh Flame Warden
+										["maps"] = { 141 }, 		-- Dustwallow Marsh
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 7,			-- Feralas [Criteria]
+										["questID"] = 11817, 		-- Honor the Flame [Feralas]
+										["qg"] = 25899,				-- Feralas Flame Warden
+										["maps"] = { 121 }, 		-- Feralas
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 8,			-- Silithus [Criteria]
+										["questID"] = 11831, 		-- Honor the Flame [Silithus]
+										["qg"] = 25914,				-- Silithus Flame Warden
+										["maps"] = { 261 }, 		-- Silithus
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 9,			-- Southern Barrens [Criteria]
+										["questID"] = 28926, 		-- Honor the Flame [Southern Barrens]
+										["qg"] = 51586,				-- Southern Barrens Flame Warden
+										["maps"] = { 607 }, 		-- Southern Barrens
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 10,		-- Stonetalon Mountains [Criteria]
+										["questID"] = 28928, 		-- Honor the Flame [Stonetalon Mountains]
+										["qg"] = 51588,				-- Stonetalon Mountains Flame Warden
+										["maps"] = { 81 }, 			-- Stonetalon Mountains
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 11,		-- Stonetalon Mountains [Criteria]
+										["questID"] = 11856, 		-- Honor the Flame [Stonetalon Mountains]
+										["qg"] = 25940,				-- Stonetalon Flame Warden
+										["maps"] = { 81 }, 			-- Stonetalon Mountains
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 12,		-- Tanaris [Criteria]
+										["questID"] = 11833, 		-- Honor the Flame [Tanaris]
+										["qg"] = 25916,				-- Tanaris Flame Warden
+										["maps"] = { 161 }, 		-- Tanaris
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 13,		-- Teldrassil [Criteria]
+										["questID"] = 11824, 		-- Honor the Flame [Teldrassil]
+										["qg"] = 25906,				-- The Teldrassil Flame Warden
+										["maps"] = { 41 }, 			-- Teldrassil
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 14,		-- Un'goro Crater [Criteria]
+										["questID"] = 28932, 		-- Honor the Flame [Un'goro Crater]
+										["qg"] = 51606,				-- Un'Goro Crater Flame Warden
+										["maps"] = { 201 }, 		-- Un'goro Crater
+									},
+									{
+										["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
+										["criteriaID"] = 15,		-- Winterspring [Criteria]
+										["questID"] = 11834, 		-- Honor the Flame [Winterspring]
+										["qg"] = 25917,				-- Winterspring Flame Warden
+										["maps"] = { 281 }, 		-- Winterspring
+									},
+								}))),
+								a(un(21, ach(1024, { 	-- Flame Warden of Outland
+									{
+										["achievementID"] = 1024,	-- Flame Warden of Outland [Achievement]
+										["criteriaID"] = 1,			-- Blade's Edge Mountains [Criteria]
+										["questID"] = 11807,		-- Honor the Flame [Blade's Edge Mountains]
+										["qg"] = 25889,				-- Blade's Edge Flame Warden
+										["maps"] = { 475 },			-- Blade's Edge Mountains
+									},
+									{
+										["achievementID"] = 1024,	-- Flame Warden of Outland [Achievement]
+										["criteriaID"] = 2,			-- Hellfire Peninsula [Criteria]
+										["questID"] = 11818,		-- Honor the Flame [Hellfire Peninsula]
+										["qg"] = 25900,				-- Hellfire Peninsula Flame Warden
+										["maps"] = { 465 },			-- Hellfire Peninsula
+									},
+									{
+										["achievementID"] = 1024,	-- Flame Warden of Outland [Achievement]
+										["criteriaID"] = 3,			-- Nagrand [Criteria]
+										["questID"] = 11821,		-- Honor the Flame [Nagrand]
+										["qg"] = 25903,				-- Nagrand Flame Warden
+										["maps"] = { 477 },			-- Nagrand
+									},
+									{
+										["achievementID"] = 1024,	-- Flame Warden of Outland [Achievement]
+										["criteriaID"] = 4,			-- Netherstorm [Criteria]
+										["questID"] = 11830,		-- Honor the Flame [Netherstorm]
+										["qg"] = 25913,				-- Netherstorm Flame Warden
+										["maps"] = { 479 },			-- Netherstorm
+									},
+									{
+										["achievementID"] = 1024,	-- Flame Warden of Outland [Achievement]
+										["criteriaID"] = 5,			-- Shadowmoon Valley [Criteria]
+										["questID"] = 11823,		-- Honor the Flame [Shadowmoon Valley]
+										["qg"] = 25905,				-- Shadowmoon Valley Flame Warden
+										["maps"] = { 473 },			-- Shadowmoon Valley
+									},
+									{
+										["achievementID"] = 1024,	-- Flame Warden of Outland [Achievement]
+										["criteriaID"] = 6,			-- Terokkar Forest [Criteria]
+										["questID"] = 11825,		-- Honor the Flame [Terokkar Forest]
+										["qg"] = 25907,				-- Terokkar Forest Flame Warden
+										["maps"] = { 478 },			-- Terokkar Forest
+									},
+									{
+										["achievementID"] = 1024,	-- Flame Warden of Outland [Achievement]
+										["criteriaID"] = 7,			-- Zangarmarsh [Criteria]
+										["questID"] = 11829,		-- Honor the Flame [Zangarmarsh]
+										["qg"] = 25912,				-- Zangarmarsh Flame Warden
+										["maps"] = { 467 },			-- Zangarmarsh
+									},
+								}))),
+								a(un(21, ach(6008, { 	-- Flame Warden of Northrend
+									{
+										["achievementID"] = 6008,	-- Flame Warden of Northrend [Achievement]
+										["criteriaID"] = 1,			-- Dragonblight [Criteria]
+										["questID"] = 13487,		-- Honor the Flame [Dragonblight]
+										["qg"] = 32803,				-- Dragonblight Flame Warden
+										["maps"] = { 488 },			-- Dragonblight
+									},
+									{
+										["achievementID"] = 6008,	-- Flame Warden of Northrend [Achievement]
+										["criteriaID"] = 2,			-- Crystalsong Forest [Criteria]
+										["questID"] = 13491,		-- Honor the Flame [Crystalsong Forest]
+										["qg"] = 32807,				-- Crystalsong Forest Flame Warden
+										["maps"] = { 510 },			-- Crystalsong Forest
+									},
+									{
+										["achievementID"] = 6008,	-- Flame Warden of Northrend [Achievement]
+										["criteriaID"] = 3,			-- Howling Fjord [Criteria]
+										["questID"] = 13488,		-- Honor the Flame [Howling Fjord]
+										["qg"] = 32804,				-- Howling Fjord Flame Warden
+										["maps"] = { 491 },			-- Howling Fjord
+									},
+									{
+										["achievementID"] = 6008,	-- Flame Warden of Northrend [Achievement]
+										["criteriaID"] = 4,			-- Sholazar Basin [Criteria]
+										["questID"] = 13486,		-- Honor the Flame [Sholazar Basin]
+										["qg"] = 32802,				-- Sholazar Basin Flame Warden
+										["maps"] = { 493 },			-- Sholazar Basin
+									},
+									{
+										["achievementID"] = 6008,	-- Flame Warden of Northrend [Achievement]
+										["criteriaID"] = 5,			-- Storm Peaks [Criteria]
+										["questID"] = 13490,		-- Honor the Flame [Storm Peaks]
+										["qg"] = 32806,				-- Storm Peaks Flame Warden
+										["maps"] = { 495 },			-- Storm Peaks
+									},
+									{
+										["achievementID"] = 6008,	-- Flame Warden of Northrend [Achievement]
+										["criteriaID"] = 6,			-- Zul'Drak [Criteria]
+										["questID"] = 13492,		-- Honor the Flame [Zul'Drak]
+										["qg"] = 32808,				-- Zul'Drak Flame Warden
+										["maps"] = { 496 },			-- Zul'Drak
+									},
+									{
+										["achievementID"] = 6008,	-- Flame Warden of Northrend [Achievement]
+										["criteriaID"] = 7,			-- Grizzly Hills [Criteria]
+										["questID"] = 13489,		-- Honor the Flame [Grizzly Hills]
+										["qg"] = 32805,				-- Grizzly Hills Flame Warden
+										["maps"] = { 490 },			-- Grizzly Hills
+									},
+									{
+										["achievementID"] = 6008,	-- Flame Warden of Northrend [Achievement]
+										["criteriaID"] = 8,			-- Borean Tundra [Criteria]
+										["questID"] = 13485,		-- Honor the Flame [Borean Tundra]
+										["qg"] = 32801,				-- Borean Tundra Flame Warden
+										["maps"] = { 486 },			-- Borean Tundra
+									},									
+								}))),
+								a(un(21, ach(6011, { 	-- Flame Warden of Cataclysm
+									{
+										["achievementID"] = 6011,	-- Flame Warden of Cataclysm [Achievement]
+										["criteriaID"] = 1,			-- Uldum [Criteria]
+										["questID"] = 28950,		-- Honor the Flame [Uldum]
+										["qg"] = 51653,				-- Uldum Flame Warden
+										["maps"] = { 720 },			-- Uldum
+									},
+									{
+										["achievementID"] = 6011,	-- Flame Warden of Cataclysm [Achievement]
+										["criteriaID"] = 2,			-- Deepholm [Criteria]
+										["questID"] = 29036,		-- Honor the Flame [Deepholm]
+										["qg"] = 51698,				-- Deepholm Flame Guardian
+										["maps"] = { 640 },			-- Deepholm
+									},
+									{
+										["achievementID"] = 6011,	-- Flame Warden of Cataclysm [Achievement]
+										["criteriaID"] = 3,			-- Twilight Highlands [Criteria]
+										["questID"] = 28945,		-- Honor the Flame [Twilight Highlands]
+										["qg"] = 51650,				-- Twilight Highlands Flame Warden
+										["maps"] = { 700 },			-- Twilight Highlands
+									},
+									{
+										["achievementID"] = 6011,	-- Flame Warden of Cataclysm [Achievement]
+										["criteriaID"] = 4,			-- Vashj'ir [Criteria]
+										["questID"] = 29031,		-- Honor the Flame [Vashj'ir]
+										["qg"] = 51697,				-- Vashj'ir Flame Guardian
+										["maps"] = { 613 },			-- Vashj'ir
+									},
+									{
+										["achievementID"] = 6011,	-- Flame Warden of Cataclysm [Achievement]
+										["criteriaID"] = 5,			-- Hyjal [Criteria]
+										["questID"] = 29030,		-- Honor the Flame [Hyjal]
+										["qg"] = 51682,				-- Hyjal Flame Guardian
+										["maps"] = { 606 },			-- Hyjal
+									},
+								}))),
 							})),
-							a(ach(1035, { -- Desecration of the Horde
+							a(ach(8045, { 				-- Flame Warden of Pandaria
+								{
+									["achievementID"] = 8045,	-- Flame Warden of Pandaria [Achievement]
+									["criteriaID"] = 1,			-- Dread Wastes [Criteria]
+									["questID"] = 32497,		-- Honor the Flame [Dread Wastes]
+									["qg"] = 69522,				-- Dread Wastes Flame Guardian
+									["maps"] = { 858 },			-- Dread Wastes
+								},
+								{
+									["achievementID"] = 8045,	-- Flame Warden of Pandaria [Achievement]
+									["criteriaID"] = 2,			-- Jade Forest [Criteria]
+									["questID"] = 32498,		-- Honor the Flame [Jade Forest]
+									["qg"] = 69529,				-- Jade Forest Flame Guardian
+									["maps"] = { 806 },			-- Jade Forest
+								},
+								{
+									["achievementID"] = 8045,	-- Flame Warden of Pandaria [Achievement]
+									["criteriaID"] = 3,			-- Krasarang Wilds [Criteria]
+									["questID"] = 32499,		-- Honor the Flame [Krasarang Wilds]
+									["qg"] = 69533,				-- Krasarang Wilds Flame Guardian
+									["maps"] = { 857 },			-- Krasarang Wilds
+								},
+								{
+									["achievementID"] = 8045,	-- Flame Warden of Pandaria [Achievement]
+									["criteriaID"] = 4,			-- Kun-Lai Summit [Criteria]
+									["questID"] = 32500,		-- Honor the Flame [Kun-Lai Summit]
+									["qg"] = 69535,				-- Kun-Lai Summit Flame Guardian
+									["maps"] = { 809 },			-- Kun-Lai Summit
+								},
+								{
+									["achievementID"] = 8045,	-- Flame Warden of Pandaria [Achievement]
+									["criteriaID"] = 5,			-- Townlong Steppes [Criteria]
+									["questID"] = 32501,		-- Honor the Flame [Townlong Steppes]
+									["qg"] = 69536,				-- Townlong Steppes Flame Guardian
+									["maps"] = { 810 },			-- Townlong Steppes
+								},
+								{
+									["achievementID"] = 8045,	-- Flame Warden of Pandaria [Achievement]
+									["criteriaID"] = 6,			-- Vale of Eternal Blossoms [Criteria]
+									["questID"] = 32510,		-- Honor the Flame [Vale of Eternal Blossoms]
+									["qg"] = 69572,				-- Vale of Eternal Blossoms Flame Warden
+									["maps"] = { 811 },			-- Vale of Eternal Blossoms
+								},
+								{
+									["achievementID"] = 8045,	-- Flame Warden of Pandaria [Achievement]
+									["criteriaID"] = 7,			-- Valley of the Four Winds [Criteria]
+									["questID"] = 32502,		-- Honor the Flame [Valley of the Four Winds]
+									["qg"] = 69550,				-- Valley of the Four Winds Flame Guardian
+									["maps"] = { 807 },			-- Valley of the Four Winds
+								},						
+							})),
+							a(ach(11283, {				-- Flame Warden of Draenor
+								{
+									["achievementID"] = 11283,	-- Flame Warden of Draenor [Achievement]
+									["criteriaID"] = 1,			-- Spires of Arak [Criteria]
+									["questID"] = 44570,		-- Honor the Flame [Spires of Arak]
+									["qg"] = 114488,			-- Spires of Arak Flame Guardian
+									["maps"] = { 948 },			-- Spires of Arak
+								},
+								{
+									["achievementID"] = 11283,	-- Flame Warden of Draenor [Achievement]
+									["criteriaID"] = 2,			-- Talador [Criteria]
+									["questID"] = 44571,		-- Honor the Flame [Talador]
+									["qg"] = 114489,			-- Talador Flame Guardian
+									["maps"] = { 946 },			-- Talador
+								},
+								{
+									["achievementID"] = 11283,	-- Flame Warden of Draenor [Achievement]
+									["criteriaID"] = 3,			-- Nagrand [Criteria]
+									["questID"] = 44572,		-- Honor the Flame [Nagrand]
+									["qg"] = 114490,			-- Nagrand Flame Guardian
+									["maps"] = { 950 },			-- Nagrand
+								},
+								{
+									["achievementID"] = 11283,	-- Flame Warden of Draenor [Achievement]
+									["criteriaID"] = 4,			-- Gorgrond [Criteria]
+									["questID"] = 44573,		-- Honor the Flame [Gorgrond]
+									["qg"] = 114491,			-- Gorgrond Flame Guardian
+									["maps"] = { 949 },			-- Gorgrond
+								},
+								{
+									["achievementID"] = 11283,	-- Flame Warden of Draenor [Achievement]
+									["criteriaID"] = 5,			-- Shadowmoon Valley [Criteria]
+									["questID"] = 44579,		-- Honor the Flame [Shadowmoon Valley]
+									["qg"] = 114500,			-- Shadowmoon Valley Flame Warden
+									["maps"] = { 941 },			-- Shadowmoon Valley
+								},							
+							})),
+							a(ach(11280, {				-- Flame Warden of the Broken Isles
+								{
+									["achievementID"] = 11280,	-- Flame Warden of the Broken Isles [Achievement]
+									["criteriaID"] = 1,			-- Azsuna [Criteria]
+									["questID"] = 44574,		-- Honor the Flame [Azsuna]
+									["qg"] = 114492,			-- Azsuna Flame Guardian
+									["maps"] = { 1015 },		-- Azsuna
+								},
+								{
+									["achievementID"] = 11280,	-- Flame Warden of the Broken Isles [Achievement]
+									["criteriaID"] = 2,			-- Val'sharah [Criteria]
+									["questID"] = 44575,		-- Honor the Flame [Val'sharah]
+									["qg"] = 114493,			-- Val'sharah Flame Guardian
+									["maps"] = { 1018 },		-- Val'sharah
+								},
+								{
+									["achievementID"] = 11280,	-- Flame Warden of the Broken Isles [Achievement]
+									["criteriaID"] = 3,			-- Highmountain [Criteria]
+									["questID"] = 44576,		-- Honor the Flame [Highmountain]
+									["qg"] = 114494,			-- Highmountain Flame Guardian
+									["maps"] = { 1024 },		-- Highmountain
+								},
+								{
+									["achievementID"] = 11280,	-- Flame Warden of the Broken Isles [Achievement]
+									["criteriaID"] = 4,			-- Stormheim [Criteria]
+									["questID"] = 44577,		-- Honor the Flame [Stormheim]
+									["qg"] = 114496,			-- Stormheim Flame Guardian
+									["maps"] = { 1017 },		-- Stormheim
+								},
+								{
+									["achievementID"] = 11280,	-- Flame Warden of the Broken Isles [Achievement]
+									["criteriaID"] = 5,			-- Suramar [Criteria]
+									["questID"] = 44613,		-- Honor the Flame [Suramar]
+									["qg"] = 114519,			-- Suramar Flame Warden
+									["maps"] = { 1033 },		-- Suramar
+								},							
+							})),
+							a(ach(1035, { 				-- Desecration of the Horde
 								a(un(21, ach(1028))), 	-- Extinguishing Eastern Kingdoms
 								a(un(21, ach(1029, {	-- Extinguishing Kalimdor
 									{
@@ -40,18 +527,34 @@ _.WorldEvents =
 								{
 									["questID"] = 9324, -- Stealing Orgrimmar's Flame
 									["itemID"] = 23179, -- Flame of Orgrimmar
+									["races"] = ALLIANCE_ONLY,
+									["maps"] = {
+										321,	-- Orgrimmar
+									},
 								},
 								{
 									["questID"] = 9325, -- Stealing Thunder Bluff's Flame
 									["itemID"] = 23180, -- Flame of Thunder Bluff
+									["races"] = ALLIANCE_ONLY,
+									["maps"] = {
+										362,	-- Thunder Bluff
+									},
 								},
 								{
 									["questID"] = 9326, -- Stealing the Undercity's Flame
 									["itemID"] = 23181, -- Flame of the Undercity
+									["races"] = ALLIANCE_ONLY,
+									["maps"] = {
+										382,	-- Undercity
+									},
 								},
 								{
 									["questID"] = 11935, -- Stealing Silvermoon's Flame
 									["itemID"] = 35568, -- Flame of Silvermoon
+									["races"] = ALLIANCE_ONLY,
+									["maps"] = {
+										480,	-- Silvermoon City
+									},
 								},
 								q(9365, { -- A Thief's Reward
 									["groups"] = {
@@ -60,8 +563,17 @@ _.WorldEvents =
 									["qg"] = 16817, -- Festival Loremaster
 									["races"] = ALLIANCE_ONLY,
 									["sourceQuests"] = {
-										9324, 9325, 9326, 11935
+										9324, -- Stealing Orgrimmar's Flame
+										9325, -- Stealing Thunder Bluff's Flame
+										9326, -- Stealing the Undercity's Flame
+										11935, -- Stealing Silvermoon's Flame
 									},
+									["maps"] = {
+										301,	-- Stormwind City
+										341,	-- Ironforge
+										381,	-- Darnassus
+										471,	-- The Exodar
+									}
 								}),
 							}),
 							ach(272, { -- Torch Juggler
@@ -839,15 +1351,18 @@ _.WorldEvents =
 									},
 									["qg"] = 16818, -- Festival Talespinner
 									["races"] = HORDE_ONLY,
+									["sourceQuests"] = {
+										9330, -- Stealing Stormwind's Flame
+										9331, -- Stealing Ironforge's Flame
+										9332, -- Stealing Darnassus's Flame
+										11933, -- Stealing the Exodar's Flame
+									},
 									["maps"] = {
 										321,	-- Orgrimmar
 										362,	-- Thunder Bluff
 										382,	-- Undercity
 										480,	-- Silvermoon City
 										481,	-- Shattrath City
-									},
-									["sourceQuests"] = {
-										9330, 9331, 9332, 11933
 									},
 								}),
 							}),
@@ -935,7 +1450,47 @@ _.WorldEvents =
 							["qg"] = 25962,	-- Fire Eater
 							["races"] = ALLIANCE_ONLY,
 							["maps"] = {
+								16,		-- Arathi Highlands
+								17,		-- Badlands
+								19,		-- Blasted Lands
+								22, 	-- Western Plaguelands
+								26,		-- The Hinterlands
+								27,		-- Dun Morogh
+								29,		-- Burning Steppes
+								30,		-- Elwynn Forest
+								34,		-- Duskwood
+								35,		-- Loch Modan
+								36,		-- Redridge Mountains
+								37,		-- Northern Stranglethorn
+								38,		-- Swamp of Sorrows
+								39,		-- Westfall
+								40,		-- Wetlands
+								41,		-- Teldrassil
+								42,		-- Darkshore
+								43,		-- Ashenvale
+								81,		-- Stonetalon Mountains
 								101,	-- Desolace
+								141,	-- Dustwallow Marsh
+								161,	-- Tanaris
+								281,	-- Winterspring
+								464,	-- Azuremyst Isle
+								465,	-- Hellfire Peninsula
+								467,	-- Zangarmarsh
+								478,	-- Terokkar Forest
+								479,	-- Netherstorm
+								481,	-- Shattrath City
+								486,	-- Borean Tundra
+								488,	-- Dragonblight
+								490,	-- Grizzly Hills
+								491,	-- Howling Fjord
+								493,	-- Sholazar Basin
+								495,	-- The Storm Peaks
+								496,	-- Zul'Drak
+								510,	-- Crystalsong Forest
+								607,	-- Southern Barrens
+								673,	-- The Cape of Stranglethorn
+								700,	-- Twilight Highlands
+								720,	-- Uldum
 							},
 						},
 						{
@@ -962,20 +1517,53 @@ _.WorldEvents =
 						},
 						q(11970, { -- The Master of Summer Lore
 							["groups"] = {},
-							-- Human, Dwarf, Draenei, Gnome, Night Elf, Goblin Commoners
-							["qgs"] = { 18927, 19148, 19171, 19172, 19173, 20102 },
+							["qgs"] = {
+								19169, -- Blood Elf Commoner
+								19175, -- Orc Commoner
+								19176, -- Tauren Commoner
+								19177, -- Troll Commoner
+								19178, -- Forsaken Commoner
+								20102, -- Goblin Commoner
+							},
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = {
+								11,		-- Northern Barrens
+								161,	-- Tanaris
+								281,	-- Winterspring
+								301,	-- Stormwind City
+								341,	-- Ironforge
+								381,	-- Darnassus
+								471,	-- The Exodar
+								479,	-- Netherstorm
+								495,	-- The Storm Peaks
+								673,	-- The Cape of Stranglethorn
+								928,	-- Isle of Thunder
+							}
 						}),
 						q(11731, { -- Torch Tossing
 							["groups"] = {},
 							["qg"] = 25975,	-- Master Fire Eater
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = {
+								301,	-- Stormwind City
+								341,	-- Ironforge
+								381,	-- Darnassus
+								471,	-- The Exodar
+							},
 						}),
 						q(11657, { -- Torch Catching
 							["groups"] = {},
 							["qg"] = 25975,	-- Master Fire Eater
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 11731 },
+							["sourceQuests"] = {
+								11731, -- Torch Tossing
+							},
+							["maps"] = {
+								301,	-- Stormwind City
+								341,	-- Ironforge
+								381,	-- Darnassus
+								471,	-- The Exodar
+							}
 						}),
 						q(11971, { -- The Spinner of Summer Tales
 							["groups"] = {},
