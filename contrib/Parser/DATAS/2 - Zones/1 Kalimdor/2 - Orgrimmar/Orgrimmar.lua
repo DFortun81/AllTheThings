@@ -119,36 +119,7 @@ _.Zones =
 						},
 						["achievementID"] = 1793, -- For The Children
 						["u"] = 20,
-					}),					
-					n(-53, { 		-- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(16818, qh( 9339)),	-- A Thief's Reward
-								qg(16818, qh(11966)),	-- Incense for the Festival Scorchlings
-								qg(26113, qh(11925)),	-- More Torch Catching
-								qg(26113, qh(11926)),	-- More Torch Tossing
-								{
-									["questID"] = 9324, -- Stealing Orgrimmar's Flame
-									["itemID"] = 23179, -- Flame of Orgrimmar
-									["races"] = ALLIANCE_ONLY,
-								},
-								qg(26221, q(11917)),	-- Striking Back (16)
-								qg(26221, q(11947)),	-- Striking Back (29)
-								qg(26221, q(11948)),	-- Striking Back (39)
-								qg(26221, q(11952)),	-- Striking Back (49)
-								qg(26221, q(11953)),	-- Striking Back (56)
-								qg(26221, q(11954)),	-- Striking Back (64)
-								qg(19175, qh(11971)),	-- The Spinner of Summer Tales
--- COORDINATES					qg(19176, qh(11971)),	-- The Spinner of Summer Tales
--- COORDINATES					qg(19177, qh(11971)),	-- The Spinner of Summer Tales
-								qg(26113, qh(11923)),	-- Torch Catching
-								qg(26113, qh(11922)),	-- Torch Tossing
-								qg(26221, q(11886)),	-- Unusual Activity
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),					
+					}),									
 					n(-63, { 		-- Trial of Style
 						["groups"] = {
 							n(54473, { -- Warpweaver Dushar (Horde / Orgrimmar)
