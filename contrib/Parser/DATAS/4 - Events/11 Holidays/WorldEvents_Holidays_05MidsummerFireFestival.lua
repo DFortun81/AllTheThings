@@ -34,6 +34,7 @@ _.WorldEvents =
 							ach(263, { -- Ice the Frost Lord
 							}),
 							ach(271, { -- Burning Hot Pole Dance
+								["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
 							}),
 							ach(1145, { -- King of the Fire Festival
 								{
@@ -542,14 +543,158 @@ _.WorldEvents =
 								},							
 							})),
 							h(ach(1037, { -- Desecration of the Alliance
-								h(un(21, ach(1031))), 				-- Extinguishing Eastern Kingdoms
-								h(un(21, ach(1032, { 				-- Extinguishing Kalimdor
+								h(un(21, ach(1031, { 	-- Extinguishing Eastern Kingdoms
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 1,			-- Arathi Highlands [Criteria]
+										["maps"] = { 16 }, 			-- Arathi Highlands
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 2,			-- Badlands [Criteria]
+										["maps"] = { 17 }, 			-- Badlands
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 3,			-- Blasted Lands [Criteria]
+										["maps"] = { 19 }, 			-- Blasted Lands
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 4,			-- Burning Steppes [Criteria]
+										["maps"] = { 29 }, 			-- Burning Steppes
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 5,			-- Dun Morogh [Criteria]
+										["maps"] = { 27 }, 			-- Dun Morogh
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 6,			-- Duskwood [Criteria]
+										["maps"] = { 34 }, 			-- Duskwood
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 7,			-- Elwynn Forest [Criteria]
+										["maps"] = { 30 }, 			-- Elwynn Forest
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 8,			-- Loch Modan [Criteria]
+										["maps"] = { 35 }, 			-- Loch Modan
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 9,			-- Northern Stranglethorn [Criteria]
+										["maps"] = { 37 }, 			-- Northern Stranglethorn
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 10,		-- Redridge Mountains [Criteria]
+										["maps"] = { 36 }, 			-- Redridge Mountains
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 11,		-- Swamp of Sorrows [Criteria]
+										["maps"] = { 38 }, 			-- Swamp of Sorrows
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 12,		-- The Cape of Stranglethorn [Criteria]
+										["maps"] = { 673 }, 		-- The Cape of Stranglethorn
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 13,		-- The Hinterlands [Criteria]
+										["maps"] = { 26 }, 			-- The Hinterlands
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 14,		-- Western Plaguelands [Criteria]
+										["maps"] = { 22 }, 			-- Western Plaguelands
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 15,		-- Westfall [Criteria]
+										["maps"] = { 39 }, 			-- Westfall
+									},
+									{
+										["achievementID"] = 1031,	-- Extinguishing Eastern Kingdoms [Achievement]
+										["criteriaID"] = 16,		-- Wetlands [Criteria]
+										["maps"] = { 40 }, 			-- Wetlands
+									},
+								}))),
+								h(un(21, ach(1032, { 	-- Extinguishing Kalimdor
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 1,			-- Ashenvale [Criteria]
+										["maps"] = { 43 },			-- Ashenvale
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 2,			-- Azuremyst Isle [Criteria]
+										["maps"] = { 464 },			-- Azuremyst Isle
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 3,			-- Bloodmyst Isle [Criteria]
+										["maps"] = { 476 },			-- Bloodmyst Isle
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 4,			-- Darkshore [Criteria]
+										["maps"] = { 42 },			-- Darkshore
+									},
 									{
 										["achievementID"] = 1032,	-- Flame Keeper of Kalimdor [Achievement]
 										["criteriaID"] = 5,			-- Desolace [Criteria]
 										["maps"] = { 101 }, 		-- Desolace
 									},
 									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 6,			-- Dustwallow Marsh [Criteria]
+										["maps"] = { 141 },			-- Dustwallow Marsh
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 7,			-- Feralas [Criteria]
+										["maps"] = { 121 },			-- Feralas
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 8,			-- Silithus [Criteria]
+										["maps"] = { 261 },			-- Silithus
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 9,			-- Southern Barrens [Criteria]
+										["maps"] = { 607 },			-- Southern Barrens
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 10,		-- Stonetalon Mountains [Criteria]
+										["maps"] = { 81 },			-- Stonetalon Mountains
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 11,		-- Tanaris [Criteria]
+										["maps"] = { 161 },			-- Tanaris
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 12,		-- Teldrassil [Criteria]
+										["maps"] = { 41 },			-- Teldrassil
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 13,		-- Un'Goro Crater [Criteria]
+										["maps"] = { 201 },			-- Un'Goro Crater
+									},
+									{
+										["achievementID"] = 1032,	-- Extinguishing Kalimdor [Achievement]
+										["criteriaID"] = 14,		-- Winterspring [Criteria]
+										["maps"] = { 281 },			-- Winterspring
 									},
 								}))),
 								un(21, ach(1033)), 				-- Extinguishing Outland
@@ -557,6 +702,7 @@ _.WorldEvents =
 								un(21, ach(6014)), 				-- Extinguishing the Cataclysm
 							})),
 							ach(271, { -- Burning Hot Pole Dance
+								["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
 							}),
 							ach(263, { -- Ice the Frost Lord
 							}),
@@ -564,18 +710,34 @@ _.WorldEvents =
 								{
 									["questID"] = 9330, -- Stealing Stormwind's Flame
 									["itemID"] = 23182, -- Flame of Stormwind
+									["races"] = HORDE_ONLY,
+									["maps"] = {
+									-- Stormwind MapID here
+									},
 								},
 								{
 									["questID"] = 9331, -- Stealing Ironforge's Flame
 									["itemID"] = 23183, -- Flame of Ironforge
+									["races"] = HORDE_ONLY,
+									["maps"] = {
+									 -- Ironforge MapID here
+									},
 								},
 								{
 									["questID"] = 9332, -- Stealing Darnassus's Flame
 									["itemID"] = 23184, -- Flame of Darnassus
+									["races"] = HORDE_ONLY,
+									["maps"] = {
+									-- Darnassus MapID here
+									},
 								},
 								{
 									["questID"] = 11933, -- Stealing the Exodar's Flame
 									["itemID"] = 35569, -- Flame of the Exodar
+									["races"] = HORDE_ONLY,
+									["maps"] = {
+									-- Exodar MapID here
+									},
 								},
 								q(9339, { -- A Thief's Reward
 									["groups"] = {
@@ -583,6 +745,13 @@ _.WorldEvents =
 									},
 									["qg"] = 16818, -- Festival Talespinner
 									["races"] = HORDE_ONLY,
+									["maps"] = {
+										321,	-- Orgrimmar
+										362,	-- Thunder Bluff
+										382,	-- Undercity
+										480,	-- Silvermoon City
+										481,	-- Shattrath City
+									},
 									["sourceQuests"] = {
 										9330, 9331, 9332, 11933
 									},
@@ -660,10 +829,11 @@ _.WorldEvents =
 							["qg"] = 16818,	-- Festival Talespinner
 							["races"] = HORDE_ONLY,
 							["maps"] = {
-								4,		-- Durotar
-								9,		-- Mulgore
-								20,		-- Tirisfal Glades
-								462,	-- Eversong Woods
+								321,	-- Orgrimmar
+								362,	-- Thunder Bluff
+								382,	-- Undercity
+								480,	-- Silvermoon City
+								481,	-- Shattrath City
 							},
 						},
 						{
@@ -679,12 +849,6 @@ _.WorldEvents =
 							["qg"] = 25994,	-- Fire Eater
 							["races"] = HORDE_ONLY,
 							["maps"] = {
-								20,		-- Tirisfal Glades
-								321,	-- Orgrimmar
-								362,	-- Thunder Bluff
-								382,	-- Undercity
-								480,	-- Silvermoon City
-							--[[
 								4,		-- Durotar
 								9,		-- Mulgore
 								11,		-- Northern Barrens
@@ -700,7 +864,6 @@ _.WorldEvents =
 								491,	-- Howling Fjord
 								493,	-- Sholazar Basin
 								720,	-- Uldum
-								]]--
 							},
 						},
 						q(11970, { -- The Master of Summer Lore
@@ -722,26 +885,60 @@ _.WorldEvents =
 						}),
 						q(11971, { -- The Spinner of Summer Tales
 							["groups"] = {},
-							-- Blood Elf, Orc, Tauren, Troll, Forsaken, Goblin Commoners
-							["qgs"] = { 19169, 19175, 19176, 19177, 19178, 20102 },
+							["qgs"] = {
+								19169, -- Blood Elf Commoner
+								19175, -- Orc Commoner
+								19176, -- Tauren Commoner
+								19177, -- Troll Commoner
+								19178, -- Forsaken Commoner
+								20102, -- Goblin Commoner
+							},
 							["races"] = HORDE_ONLY,
+							["maps"] = {
+								11,		-- Northern Barrens
+								161,	-- Tanaris
+								281,	-- Winterspring
+								321,	-- Orgrimmar
+								362,	-- Thunder Bluff
+								382,	-- Undercity
+								462,	-- Eversong Woods
+								479,	-- Netherstorm
+								480,	-- Silvermoon City
+								481,	-- Shattrath City
+								495,	-- The Storm Peaks
+								504,	-- Dalaran (Northrend)
+								673,	-- The Cape of Stranglethorn
+							},
 						}),
 						q(11922, {	-- Torch Tossing
 							["groups"] = {},
 							["qg"] = 26113,	-- Master Flame Eater
 							["races"] = HORDE_ONLY,
+							["maps"] = {
+								321,	-- Orgrimmar
+								362,	-- Thunder Bluff
+								382,	-- Undercity
+								481,	-- Silvermoon City
+							},
 						}),
 						q(11923, {	-- Torch Catching
 							["groups"] = {},
 							["qg"] = 26113,	-- Master Flame Eater
 							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 11922 },
+							["sourceQuests"] = {
+								11922, -- Torch Tossing
+							},
+							["maps"] = {
+								321,	-- Orgrimmar
+								362,	-- Thunder Bluff
+								382,	-- Undercity
+								481,	-- Silvermoon City
+							},
 						}),
 						{
 							["questID"] = 11886, -- Unusual Activity
 							["qg"] = 26221, -- Earthen Ring Elder
 							["maps"] = {
-								20,		-- Tirisfal Glades
 								301,	-- Stormwind City
 								321,	-- Orgrimmar
 								341,	-- Ironforge
@@ -756,14 +953,22 @@ _.WorldEvents =
 						{
 							["questID"] = 11891, -- An Innocent Disguise
 							["qg"] = 25324,		 -- Earthen Ring Guide
-							["sourceQuests"] = { 11886 }, -- Unusual Activity
-							["maps"] = { 43 },	 -- Ashenvale
+							["sourceQuests"] = {
+								11886, -- Unusual Activity
+							},
+							["maps"] = {
+								43, -- Ashenvale
+							},	 
 						},
 						{
 							["questID"] = 12012, -- Inform the Elder
 							["qg"] = 25324,		 -- Earthen Ring Guide
-							["sourceQuests"] = { 11891 }, -- An Innocent Disguise
-							["maps"] = { 43 },	 -- Ashenvale
+							["sourceQuests"] = {
+								11891, -- An Innocent Disguise
+							},
+							["maps"] = {
+								43, -- Ashenvale
+							},
 						},
 					}),
 					n(-2, { -- Vendors
@@ -819,7 +1024,6 @@ _.WorldEvents =
 						})),
 					}),
 				},
-				--["achievementID"] = 1038, -- The Flame Warden
 				["u"] = 21,
 			}),
 		},
