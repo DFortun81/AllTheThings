@@ -75,24 +75,6 @@ _.Zones =
 					},
 					["modID"] = 3
 				}),
-				n(-3, { 	-- Holidays
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(43162, { -- Under the Crooked Tree
-									i(139137, { -- Hag's Belongings
-										dr(5.0, i(139133)), -- Hat of the First Sister
-										dr(5.0, i(139134)), -- Hat of the Second Sister
-										dr(5.0, i(139135)), -- Hat of the Third Sister
-										dr(2.0, i(139136)), -- Hat of the Youngest Sister
-									}),
-								}),
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),
-				}),	
 				n(-25, { 	-- Pet Battles
 					p(1738), 	-- Auburn Ringtail
 					p(398), 	-- Black Rat

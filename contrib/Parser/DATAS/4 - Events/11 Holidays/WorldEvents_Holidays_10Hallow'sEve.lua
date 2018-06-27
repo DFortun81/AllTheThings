@@ -1549,12 +1549,16 @@ _.WorldEvents =
 					}),
 					n(-17, { -- Quests
 						q(43162, { -- Under the Crooked Tree
-							i(139137, { -- Hag's Belongings
-								un(26, dr(5.0, i(139133))), -- Hat of the First Sister
-								un(26, dr(5.0, i(139134))), -- Hat of the Second Sister
-								un(26, dr(5.0, i(139135))), -- Hat of the Third Sister
-								un(26, dr(2.0, i(139136))), -- Hat of the Youngest Sister
-							}),
+							["groups"] = {
+								i(139137, { -- Hag's Belongings
+									un(26, dr(8.0, i(139133))), -- Hat of the First Sister
+									un(26, dr(8.0, i(139134))), -- Hat of the Second Sister
+									un(26, dr(8.0, i(139135))), -- Hat of the Third Sister
+									un(26, dr(7.0, i(139136))), -- Hat of the Youngest Sister
+								}),
+							},
+							["qg"] = 109734, -- Hag of the Crooked Tree
+							["maps"] = { 1018 }, -- Val'sharah
 						}),
 					}),
 					n(-96, { -- Quest NPCs
