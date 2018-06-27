@@ -2322,10 +2322,10 @@ AllTheThings.Locales.enUS = {
 		{3, "|CFFFF0000The source of this item has been removed and is only available with the Black Market Auction House.|r", "Black Market AH [BMAH] (9)"}, -- There is Hope -- 9
 		{3, "|CFFFF0000Item from TCG card is no longer in print, but still purchaseable online, sometimes BMAH, and possibly AH.|r", "Trading Card  Game [TCG] (10)"}, -- There is Hope -- 10
 		{3, "|CFFFF0000This item is Bind on Pickup but can be obtained if you have access to the items to summon the boss.|r", "Requires Summoning Items (11)"}, -- There is Hope -- 11
-		{4, "|CFFFF0000This is legacy content and the original version has been removed.|r", "Legacy Content (12)"}; -- 12
+		{4, "|CFFFF0000This is legacy achievement that is no longer availablee.|r", "Legacy Achievement (12)"}; -- 12
 		{1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache (13)"}; -- 13
 		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
-		{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes (15)"}, -- 15 
+		{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes (15)"}, -- 15
 		{2, "|CFFFF0000These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.|r", "Blizzcon (16)"},--16
 		{6, "|CFF00FFDEIn order to obtain this item it may require Lunar Festival to be active.|r", "Lunar Festival (17)"};--17
 		{7, "|CFF00FFDEIn order to obtain this item it may require Love is In the Air to be active.|r", "Love is In the Air (18)"};--18
@@ -2349,8 +2349,9 @@ AllTheThings.Locales.enUS = {
 		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed] (36)"}; -- 36
 		{1, "|CFFFF0000This title is no longer obtainable in game.|r", "Titles (37)"}; --37
 		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria|r", "Ordos - Legendary Cloak (38)"}; --38
+		{4, "|CFFFF0000This title is no longer available.|r", "Legacy Titles (39)"}; --38
 	};
-	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you, please post in Discord where you got it!|r";
+	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you, please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
 };

@@ -6,7 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(37, {		-- Northern Stranglethorn
 			["groups"] = {
-				un(12, faction(270, {	-- Zandalar Tribe
+				un(2, faction(270, {	-- Zandalar Tribe
 					["creatureID"] = 14875,	-- Molthor <Hand of Rastakhan>
 					["maps"] = {793},	-- Zul'Gurub
 					["groups"] = {
