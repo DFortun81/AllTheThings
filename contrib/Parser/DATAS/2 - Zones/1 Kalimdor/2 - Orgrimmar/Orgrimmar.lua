@@ -857,6 +857,12 @@ _.Zones =
 						["qg"] = 132254, -- Nathanos Blightcaller
 						["sourceQuests"] = { 49977 } , -- Summons  to Orgrimmar
 					}),	
+					qh(49982, {	-- Witness to the Wound
+						["groups"] = {
+						},
+						["qg"] = 132254, -- Nathanos Blightcaller
+						["sourceQuests"] = { 50341 } , -- A Recent Discovery
+					}),
 					qdg(qh(27400, {	-- Mastering the Arcane
 						["groups"] = {
 							i(65468),	-- Staff of the Arcane Path
