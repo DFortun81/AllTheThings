@@ -212,8 +212,16 @@ _.Achievements =
 					un(12, h(ach(10105))),	-- Soldier of the Horde: Warlords Season 2
 					un(12, h(ach(10121))),	-- Soldier of the Horde: Warlords Season 3
 					ach(9725, {	-- The Last of Us
-						title(302),	-- ,Lord of War (Gender specific title, must log in with both genders to recieve both titles)
-						title(303),	-- ,Lady of War (Gender specific title, must log in with both genders to recieve both titles)
+						title(302, {	-- ,Lord of War (Gender specific title, must log in with both genders to recieve both titles)
+							["groups"] = {
+							},
+							["description"] = "Must login with a male character.",
+						}),
+						title(303, {	-- ,Lady of War (Gender specific title, must log in with both genders to recieve both titles)
+							["groups"] = {
+							},
+							["description"] = "Must login with a female character.",
+						}),
 					}),
 					un(12, ach(8392, {	-- Tournament Glory 2013
 						un(12, title(128)),	-- Vanquisher
