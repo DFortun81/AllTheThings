@@ -1056,12 +1056,6 @@ END OF MICRO-HOLIDAY --]]
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
-								qh(49982, {	-- Witness to the Wound
-									["groups"] = {
-									},
-									["qg"] = 132254, -- Nathanos Blightcaller
-									["sourceQuests"] = { 50341 } , -- A Recent Discovery
-								}),	
 								qh(50053, {	-- Lazy Prospectors
 									["groups"] = {
 									},
