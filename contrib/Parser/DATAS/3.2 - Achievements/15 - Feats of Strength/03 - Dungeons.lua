@@ -57,8 +57,16 @@ _.Achievements =
 						un(12, title(298)),	-- the Violet Guardian
 					})),
 					un(12, ach(9627, {	-- Challenge Master: Upper Blackrock Spire
-						un(12, title(296)),	-- ,Lord of Blackrock
-						un(12, title(297)),	-- ,Lady of Blackrock
+						un(12, title(296, {	-- ,Lord of Blackrock
+							["groups"] = {
+							},
+							["description"] = "Must login with a male character.",
+						})),
+						un(12, title(297, {	-- ,Lady of Blackrock
+							["groups"] = {
+							},
+							["description"] = "Must login with a female character.",
+						})),
 					})),
 					un(12, ach(8903, {	-- Mistwalker
 						un(12, title(255)),	-- Mistwalker
