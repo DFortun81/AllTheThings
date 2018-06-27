@@ -12,105 +12,135 @@ _.Instances =
 					["groups"] = {
 						m(1190, { -- Invasion Point: Aurinor
 							["groups"] = {
-								i(153320), --Ardent Vindicator's Demolisher
 								i(153265), --Enclave Aspirant's Battleaxe
-								i(153264), --Enclave Aspirant's Splitter
-								i(153262), --Forlorn Artificer's Gavel
 								i(153261), --Forlorn Artificer's Hammer
-								i(153258), --Forlorn Artificer's Mace
-								i(153254), --Isolon Anchorite's Mace
-								i(153300), --Militant Exarch's Saber
-								i(153301), --Militant Exarch's Slicer
-								i(153307), --Oronaar Miner's Pickaxe
-								i(153297), --Spectral Consul's Broadsword
-								i(153295), --Spectral Consul's Quickblade
 							},
 							["icon"] = "Interface\\Icons\\inv_legionadventure",
+							["crs"] = {
+								125666,	-- Baldrazar
+								125252,	-- Dread Knight Zak'gal
+								125527,	-- Dreadbringer Valus
+								125272,	-- Fel Lord Kaz'ral
+								125655,	-- Flamebringer Az'rothel
+								125280,	-- Flamecaller Vezrah
+								125314,	-- Flameweaver Verathix
+								125148,	-- Gorgoloth
+								125483,	-- Harbinger Drel'nathar
+								125578,	-- Malphazel
+								125137,	-- Mazgoroth
+								125634,	-- Vel'thrak the Punisher
+								125587,	-- Vogrethar the Defiled
+							},
 						}),
 						m(1191, { -- Invasion Point: Bonich
 							["groups"] = {
 								i(153320), --Ardent Vindicator's Demolisher
-								i(153265), --Enclave Aspirant's Battleaxe
-								i(153264), --Enclave Aspirant's Splitter
-								i(153262), --Forlorn Artificer's Gavel
-								i(153261), --Forlorn Artificer's Hammer
-								i(153258), --Forlorn Artificer's Mace
-								i(153254), --Isolon Anchorite's Mace
-								i(153300), --Militant Exarch's Saber
-								i(153301), --Militant Exarch's Slicer
-								i(153307), --Oronaar Miner's Pickaxe
-								i(153297), --Spectral Consul's Broadsword
 								i(153295), --Spectral Consul's Quickblade
 							},
 							["icon"] = "Interface\\Icons\\inv_legionadventure",
+							["crs"] = {
+								125666,	-- Baldrazar
+								125252,	-- Dread Knight Zak'gal
+								125527,	-- Dreadbringer Valus
+								125272,	-- Fel Lord Kaz'ral
+								125655,	-- Flamebringer Az'rothel
+								125280,	-- Flamecaller Vezrah
+								125314,	-- Flameweaver Verathix
+								125148,	-- Gorgoloth
+								125483,	-- Harbinger Drel'nathar
+								125578,	-- Malphazel
+								125137,	-- Mazgoroth
+								125634,	-- Vel'thrak the Punisher
+								125587,	-- Vogrethar the Defiled
+							},
 						}),
 						m(1192, { -- Invasion Point: Cen'gar
 							["groups"] = {
-								i(153320), --Ardent Vindicator's Demolisher
-								i(153265), --Enclave Aspirant's Battleaxe
-								i(153264), --Enclave Aspirant's Splitter
 								i(153262), --Forlorn Artificer's Gavel
-								i(153261), --Forlorn Artificer's Hammer
-								i(153258), --Forlorn Artificer's Mace
-								i(153254), --Isolon Anchorite's Mace
 								i(153300), --Militant Exarch's Saber
-								i(153301), --Militant Exarch's Slicer
-								i(153307), --Oronaar Miner's Pickaxe
-								i(153297), --Spectral Consul's Broadsword
-								i(153295), --Spectral Consul's Quickblade
 							},
 							["icon"] = "Interface\\Icons\\inv_legionadventure",
+							["crs"] = {
+								125666,	-- Baldrazar
+								125252,	-- Dread Knight Zak'gal
+								125527,	-- Dreadbringer Valus
+								125272,	-- Fel Lord Kaz'ral
+								125655,	-- Flamebringer Az'rothel
+								125280,	-- Flamecaller Vezrah
+								125314,	-- Flameweaver Verathix
+								125148,	-- Gorgoloth
+								125483,	-- Harbinger Drel'nathar
+								125578,	-- Malphazel
+								125137,	-- Mazgoroth
+								125634,	-- Vel'thrak the Punisher
+								125587,	-- Vogrethar the Defiled
+							},
 						}),
 						m(1193, { -- Invasion Point: Naigtal
 							["groups"] = {
-								i(153320), --Ardent Vindicator's Demolisher
-								i(153265), --Enclave Aspirant's Battleaxe
 								i(153264), --Enclave Aspirant's Splitter
-								i(153262), --Forlorn Artificer's Gavel
-								i(153261), --Forlorn Artificer's Hammer
-								i(153258), --Forlorn Artificer's Mace
-								i(153254), --Isolon Anchorite's Mace
-								i(153300), --Militant Exarch's Saber
 								i(153301), --Militant Exarch's Slicer
-								i(153307), --Oronaar Miner's Pickaxe
-								i(153297), --Spectral Consul's Broadsword
-								i(153295), --Spectral Consul's Quickblade
 							},
 							["icon"] = "Interface\\Icons\\inv_legionadventure",
+							["crs"] = {
+								125666,	-- Baldrazar
+								125252,	-- Dread Knight Zak'gal
+								125527,	-- Dreadbringer Valus
+								125272,	-- Fel Lord Kaz'ral
+								125655,	-- Flamebringer Az'rothel
+								125280,	-- Flamecaller Vezrah
+								125314,	-- Flameweaver Verathix
+								125148,	-- Gorgoloth
+								125483,	-- Harbinger Drel'nathar
+								125578,	-- Malphazel
+								125137,	-- Mazgoroth
+								125634,	-- Vel'thrak the Punisher
+								125587,	-- Vogrethar the Defiled
+							},
 						}),
 						m(1194, { -- Invasion Point: Sangua
 							["groups"] = {
-								i(153320), --Ardent Vindicator's Demolisher
-								i(153265), --Enclave Aspirant's Battleaxe
-								i(153264), --Enclave Aspirant's Splitter
-								i(153262), --Forlorn Artificer's Gavel
-								i(153261), --Forlorn Artificer's Hammer
-								i(153258), --Forlorn Artificer's Mace
-								i(153254), --Isolon Anchorite's Mace
-								i(153300), --Militant Exarch's Saber
-								i(153301), --Militant Exarch's Slicer
 								i(153307), --Oronaar Miner's Pickaxe
 								i(153297), --Spectral Consul's Broadsword
-								i(153295), --Spectral Consul's Quickblade
 							},
 							["icon"] = "Interface\\Icons\\inv_legionadventure",
+							["crs"] = {
+								125666,	-- Baldrazar
+								125252,	-- Dread Knight Zak'gal
+								125527,	-- Dreadbringer Valus
+								125272,	-- Fel Lord Kaz'ral
+								125655,	-- Flamebringer Az'rothel
+								125280,	-- Flamecaller Vezrah
+								125314,	-- Flameweaver Verathix
+								125148,	-- Gorgoloth
+								125483,	-- Harbinger Drel'nathar
+								125578,	-- Malphazel
+								125137,	-- Mazgoroth
+								125634,	-- Vel'thrak the Punisher
+								125587,	-- Vogrethar the Defiled
+							},
 						}),
 						m(1195, { -- Invasion Point: Val
 							["groups"] = {
-								i(153320), --Ardent Vindicator's Demolisher
-								i(153265), --Enclave Aspirant's Battleaxe
-								i(153264), --Enclave Aspirant's Splitter
-								i(153262), --Forlorn Artificer's Gavel
-								i(153261), --Forlorn Artificer's Hammer
 								i(153258), --Forlorn Artificer's Mace
 								i(153254), --Isolon Anchorite's Mace
-								i(153300), --Militant Exarch's Saber
-								i(153301), --Militant Exarch's Slicer
-								i(153307), --Oronaar Miner's Pickaxe
-								i(153297), --Spectral Consul's Broadsword
-								i(153295), --Spectral Consul's Quickblade
 							},
 							["icon"] = "Interface\\Icons\\inv_legionadventure",
+							["crs"] = {
+								125666,	-- Baldrazar
+								125252,	-- Dread Knight Zak'gal
+								125527,	-- Dreadbringer Valus
+								125272,	-- Fel Lord Kaz'ral
+								125655,	-- Flamebringer Az'rothel
+								125280,	-- Flamecaller Vezrah
+								125314,	-- Flameweaver Verathix
+								125148,	-- Gorgoloth
+								125483,	-- Harbinger Drel'nathar
+								125578,	-- Malphazel
+								125137,	-- Mazgoroth
+								125634,	-- Vel'thrak the Punisher
+								125587,	-- Vogrethar the Defiled
+							},
 						}),
 					},
 					["achievementID"] = 12028, -- Envision Invasion Eradication

@@ -265,7 +265,8 @@ _.Zones =
 									i(60724),	-- Bravo Company Shoulderguards
 									i(131589),	-- Bravo Company Spaulders
 								},
-								["sourceQuests"] = {26694},	-- The Grand Magus Doane
+								["description"] = "Shadowhide Extinction isn't really a prerequisite, since you can pick these both up at the same time, but until you complete it you'll be phased and unable to turn in this quest.",
+								["sourceQuests"] = {26692, 26694},	-- Shadowhide Extinction, The Grand Magus Doane
 							})),
 							qg(43733, qa(26713, {	-- Showdown at Stonewatch
 								["groups"] = {
