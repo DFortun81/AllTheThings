@@ -307,11 +307,25 @@ _.Zones =
 					qg(66126, qh(31813, { -- Dagra the Fierce
 						i(89125),	-- Sack of Pet Supplies
 					})),
-					desc(qg(63061, qh(31571)), "This quest is part of a chain initiated by learning Battle Pet Training."),	-- Learning the Ropes
-					qg(63061, qh(37572)),	-- On The Mend
-					qg(63061, qh(37830)),	-- Level Up!
-					qg(63061, qh(31570)), 	-- Got one!
-					qg(66126, qh(31818)),	-- Zunta
+					qh(31571, {	-- Learning the Ropes
+						["qg"] = 63061, -- Narzak
+						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+					}),
+					qh(31570, {	-- Got one!
+						["qg"] = 63061, -- Narzak
+						["sourceQuests"] = { 31830 }, -- Level Up!
+					}),
+					qh(31572, {	-- On The Mend
+						["qg"] = 63061, -- Narzak
+						["sourceQuests"] = { 31571 }, -- Learning the Ropes
+					}),
+					qh(31818, {	-- Zunta
+						["qg"] = 66126, -- Zunta
+					}),
+					qh(31830, {	-- Level Up!
+						["qg"] = 63061, -- Narzak
+						["sourceQuests"] = { 31572 }, -- On The Mend
+					}),
 				}),
 				n(-17, {	-- Quests
 --[[				
@@ -328,11 +342,8 @@ _.Zones =
 						["classes"]= {12},
 					})),
 					qg(39379, qh(25648)),	-- Beyond Durotar (not available if 28496 is completed)
-					qg(3188, qh(25167)),	-- Breaking the Chain
-					qg(3145, qh(25132)),	-- Burning Blade Medallion
 					qg(41621, qh(25924)),	-- Call of Duty
 					qg(27216, qh(12191)),	-- Chug and Chuck!
-					qg(10578, qh(25170)),	-- Cleaning Up the Coastline
 					qg(3336, qh(  840)),	-- Conscript of the Horde (breadcrumb quest for 871)
 					qg(100873, qh(40983, {	-- Demons Among Them
 						["groups"] = {
@@ -346,6 +357,29 @@ _.Zones =
 					qg(54142, qh(29416)),	-- Fencing the Goods
 					qg(68023, qh(32319)),	-- Find Thrall! (QG in Kun-Lai Summit)
 --]]					
+					qh(25165, {	-- Never Trust a Big Barb and a Smile
+						["qg"] = 10578, -- Bom'bay
+						["sourceQuests"] = { 25170 }, -- Cleaning up the Coastline
+					}),
+					qh(25167, {	-- Breaking the Chain
+						["qg"] = 3188, -- Master Gadrin
+					}),
+					qh(25168, {	-- Purge the Valley
+						["qg"] = 3188, -- Master Gadrin
+						["sourceQuests"] = { 25167 }, -- Breaking the Chain
+					}),
+					qh(25169, {	-- The War of Northwatch Aggression
+						["qg"] = 3140, -- Lar Prowltusk
+						["sourceQuests"] = { 25167 }, -- Breaking the Chain
+					}),
+					qh(25170, {	-- Cleaning Up the Coastline
+						["qg"] = 10578, -- Bom'bay
+					}),
+					qh(25171, {	-- Riding On
+						["qg"] = 3188, -- Master Gadrin
+						["sourceQuests"] = { 25168 }, -- Purge the Valley
+					}),
+					
 					qg(39379, qh(25260, {	-- Fizzled
 						i(53369),
 						i(53366),
@@ -372,8 +406,6 @@ _.Zones =
 					qg(55054, qh(29690)),	-- Into the Mists
 					qg(60570, qh(31012)),	-- Joining the Horde
 					qg(101035, qh(40605)),	-- Keep Your Friends Close
-					qg(11378, qh(37446)),	-- Lazy Peons
---					qg(11378, qh(25134)),	-- Lazy Peons (REPLACED with previous line per wowhead comments)
 					desc(qh(32671), "This quest is available to Trolls upon reaching level 20.", {	-- Learn To Ride
 						["groups"] = {
 						},
@@ -406,8 +438,6 @@ _.Zones =
 						["races"] = {9},
 					})),
 --[[					
-					qg(10578, qh(25165)),	-- Never Trust a Big Barb and a Smile
-					qg(3188, qh(25168)),	-- Purge the Valley
 					qg(39326, qh(25192)),	-- Raggaran's Fury
 					qg(39326, qh(25190)),	-- Raggaran's Rage
 					qg(3139, qh(26806, {	-- Reports to Orgrimmar
@@ -430,7 +460,6 @@ _.Zones =
 						},
 						["races"] = {2,6,8},
 					})),
-					qg(3188, qh(25171)),	-- Riding On
 					qg(100873, qh(40982, {	-- Second Sight
 						["groups"] = {
 						},
@@ -492,7 +521,6 @@ _.Zones =
 						["races"] = {9},
 					})),
 					desc(qh(47835), "This quest will be automatically offered upon completion of the Assault on Broken Shore scenario and returning to Dalaran.  You may also choose the option to skip the scenario when speaking to Khadgar."),	-- The Hand of Fate (QG in Broken Isles Dalaran)
-					qg(3140, qh(25169)),	-- The War of Northwatch Aggression
 					qg(96683, qh(38307)),	-- The Warchief Beckons (QG also in Dalaran)
 					qg(39380, qh(25205)),	-- The Wolf and The Kodo
 					qg(24497, qh(11412)),	-- There and Back Again					
@@ -630,249 +658,309 @@ _.Zones =
 							p(466), 	-- Spiny Lizard
 						}),
 						n(-17, { 	-- Quests
-							qg(37951, qh(24607, {	-- The Rise of the Darkspear
+							qh(24607, {	-- The Rise of the Darkspear
+								["qg"] = 37951, -- Jin'thala
 								["classes"] = {1},
-							})),
-							qg(38005, qh(24622, {	-- A Troll's Truest Companion
+							}),
+							qh(24622, {	-- A Troll's Truest Companion
+								["qg"] = 38005, -- Moraya
 								["sourceQuests"] = { 25064 } -- Moraya
-							})),
-							qg(37969, qh(24623, {	-- Saving the Young
+							}),
+							qh(24623, {	-- Saving the Young
+								["qg"] = 37969, -- Kijara
 								["sourceQuests"] = { 24622 }
-							})),
-							qg(37987, qh(24624, {	-- Mercy for the Lost
+							}),
+							qh(24624, {	-- Mercy for the Lost
+								["qg"] = 37987, -- Tegashi
 								["sourceQuests"] = { 24622 }
-							})),
-							qg(37987, qh(24625, {	-- Consort of the Sea Witch
+							}),
+							qh(24625, {	-- Consort of the Sea Witch
+								["qg"] = 37987, -- Tegashi
 								["sourceQuests"] = { 24622 }
-							})),
-							qg(37969, qh(24626, {	-- Young and Vicious
+							}),
+							qh(24626, {	-- Young and Vicious
+								["qg"] = 37969, -- Kijara
 								["sourceQuests"] = { 24625 } -- Consort of the Sea Witch
-							})),
-							qg(38037, qh(24639, {	-- The Basics: Hitting Things
+							}),
+							qh(24639, {	-- The Basics: Hitting Things
+								["qg"] = 38037, -- Nortet
 								["sourceQuests"] = { 24607 }, -- The Rise of the Darkspear
 								["classes"]= {1},
-							})),
-							qg(38037, qh(24641, {	-- A Rough Start
+							}),
+							qh(24641, {	-- A Rough Start
+								["qg"] = 38037, -- Nortet
 								["sourceQuests"] = { 24639 }, -- The Basics: Hitting Things
 								["classes"]= {1},
-							})),
-							qg(38037, qh(24642, {	-- Proving Pit (warrior)
+							}),
+							qh(24642, {	-- Proving Pit (warrior)
 								["groups"] = {
 									i(52876),
 								},
+								["qg"] = 38037, -- Nortet
 								["sourceQuests"] = { 24641 }, -- A Rough Start (warrior)
 								["classes"] = {1},
-							})),
-							qg(38037, qh(24643, {	-- More Than Expected (warrior)
+							}),
+							qh(24643, {	-- More Than Expected (warrior)
+								["qg"] = 38037, -- Nortet
 								["sourceQuests"] = { 24642 }, -- Proving Pit (warrior)
 								["classes"] = {1},
-							})),
-							qg(37951, qh(24750, {	-- The Rise of the Darkspear
+							}),
+							qh(24750, {	-- The Rise of the Darkspear
+								["qg"] = 37951, -- Jin'thala
 								["classes"] = {8},
-							})),
-							qg(38246, qh(24751, {	-- The Basics: Hitting Things
+							}),
+							qh(24751, {	-- The Basics: Hitting Things
+								["qg"] = 38246, -- Soratha
 								["sourceQuests"] = { 24750 }, -- The Rise of the Darkspear
 								["classes"]= {8},
-							})),
+							}),
 							-- qg(38246, qh(24752)) -- The Arts of a Mage (removed from game)
-							qg(38246, qh(24753, {	-- A Rough Start
+							qh(24753, {	-- A Rough Start
+								["qg"] = 38246, -- Soratha
 								["sourceQuests"] = { 24751 }, -- The Basics: Hitting Things
 								["classes"]= {8},
-							})),
-							qg(38246, qh(24754, {	-- Proving Pit (mage)
+							}),
+							qh(24754, {	-- Proving Pit (mage)
 								["groups"] = {
 									i(52873),
 								},
+								["qg"] = 38246, -- Soratha
 								["sourceQuests"] = { 24753 }, -- A Rough Start (mage)
 								["classes"] = {8},
-							})),
-							qg(38246, qh(24755, {	-- More Than Expected (mage)
+							}),
+							qh(24755, {	-- More Than Expected (mage)
+								["qg"] = 38246, -- Soratha
 								["sourceQuests"] = { 24754 }, -- Proving Pit (mage)
 								["classes"] = {8},
-							})),
-							qg(37951, qh(24758, {	-- The Rise of the Darkspear
+							}),
+							qh(24758, {	-- The Rise of the Darkspear
+								["qg"] = 37951, -- Jin'thala
 								["classes"] = {7},
-							})),
-							qg(38242, qh(24759, {	-- The Basics: Hitting Things
+							}),
+							qh(24759, {	-- The Basics: Hitting Things
+								["qg"] = 38242, -- Nekali
 								["sourceQuests"] = { 24758 }, -- The Rise of the Darkspear
 								["classes"]= {7},
-							})),
-							qg(38242, qh(24761, {	-- A Rough Start
+							}),
+							qh(24761, {	-- A Rough Start
+								["qg"] = 38242, -- Nekali
 								["sourceQuests"] = { 24759 }, -- The Basics: Hitting Things
 								["classes"]= {7},
-							})),
-							qg(38242, qh(24762, {	-- Proving Pit (shaman)
+							}),
+							qh(24762, {	-- Proving Pit (shaman)
 								["groups"] = {
 									i(52875),
 								},
+								["qg"] = 38242, -- Nekali
 								["sourceQuests"] = { 24761 }, -- A Rough Start (shaman)
 								["classes"] = {7},
-							})),
-							qg(38242, qh(24763, {	-- More Than Expected (shaman)
+							}),
+							qh(24763, {	-- More Than Expected (shaman)
+								["qg"] = 38242, -- Nekali
 								["sourceQuests"] = { 24762 }, -- Proving Pit (shaman)
 								["classes"] = {7},
-							})),
-							qg(37951, qh(24764, {	-- The Rise of the Darkspear
+							}),
+							qh(24764, {	-- The Rise of the Darkspear
+								["qg"] = 37951, -- Jin'thala
 								["classes"] = {11},
-							})),
-							qg(38243, qh(24765, {	-- The Basics: Hitting Things
+							}),
+							qh(24765, {	-- The Basics: Hitting Things
+								["qg"] = 38243, -- Zen'tabra
 								["sourceQuests"] = { 24764 }, -- The Rise of the Darkspear
 								["classes"]= {11},
-							})),
-							qg(38243, qh(24767, {	-- A Rough Start
+							}),
+							qh(24767, {	-- A Rough Start
+								["qg"] = 38243, -- Zen'tabra
 								["sourceQuests"] = { 24765 }, -- The Basics: Hitting Things
 								["classes"]= {11},
-							})),
-							qg(38243, qh(24768, {	-- Proving Pit (druid)
+							}),
+							qh(24768, {	-- Proving Pit (druid)
 								["groups"] = {
 									i(52870),
 								},
+								["qg"] = 38243, -- Zen'tabra
 								["sourceQuests"] = { 24767 }, -- A Rough Start (druid)
 								["classes"] = {11},
-							})),
-							qg(38243, qh(24769, {	-- More Than Expected (druid)
+							}),
+							qh(24769, {	-- More Than Expected (druid)
+								["qg"] = 38243, -- Zen'tabra
 								["sourceQuests"] = { 24768 },  -- Proving Pit (druid)
 								["classes"] = {11},
-							})),
-							qg(37951, qh(24770, {	-- The Rise of the Darkspear
+							}),
+							qh(24770, {	-- The Rise of the Darkspear
+								["qg"] = 37951, -- Jin'thala
 								["classes"] = {4},
-							})),
-							qg(38244, qh(24771, {	-- The Basics: Hitting Things
+							}),
+							qh(24771, {	-- The Basics: Hitting Things
+								["qg"] = 38244, -- Legati
 								["sourceQuests"] = { 24770 }, -- The Rise of the Darkspear
 								["classes"]= {4},
-							})),
-							qg(38244, qh(24773, {	-- A Rough Start
+							}),
+							qh(24773, {	-- A Rough Start
+								["qg"] = 38244, -- Legati
 								["sourceQuests"] = { 24770 }, -- The Basics: Hitting Things
 								["classes"]= {4},
-							})),
-							qg(38244, qh(24774, {	-- Proving Pit (rogue)
+							}),
+							qh(24774, {	-- Proving Pit (rogue)
 								["groups"] = {
 									i(52889),
 								},
+								["qg"] = 38244, -- Legati
 								["sourceQuests"] = { 24773 }, -- A Rough Start (rogue)
 								["classes"] = {4},
-							})),
-							qg(38244, qh(24775, {	-- More Than Expected (rogue)
+							}),
+							qh(24775, {	-- More Than Expected (rogue)
+								["qg"] = 38244, -- Legati
 								["sourceQuests"] = { 24774 }, -- Proving Pit (rogue)
 								["classes"] = {4},
-							})),
-							qg(37951, qh(24776, {	-- The Rise of the Darkspear
+							}),
+							qh(24776, {	-- The Rise of the Darkspear
+								["qg"] = 37951, -- Jin'thala
 								["classes"] = {3},
-							})),
-							qg(38247, qh(24777, {	-- The Basics: Hitting Things
+							}),
+							qh(24777, {	-- The Basics: Hitting Things
+								["qg"] = 38247, -- Ortezza
 								["sourceQuests"] = { 24776 }, -- The Rise of the Darkspear
 								["classes"]= {3},
-							})),
-							qg(38247, qh(24779, {	-- A Rough Start
+							}),
+							qh(24779, {	-- A Rough Start
+								["qg"] = 38247, -- Ortezza
 								["sourceQuests"] = { 24777 }, -- The Basics: Hitting Things
 								["classes"]= {3},
-							})),
-							qg(38247, qh(24780, {	-- Proving Pit (hunter)
+							}),
+							qh(24780, {	-- Proving Pit (hunter)
 								["groups"] = {
 									i(52872),
 								},
+								["qg"] = 38247, -- Ortezza
 								["sourceQuests"] = { 24779 }, -- A Rough Start (hunter)
 								["classes"] = {3},
-							})),
-							qg(38247, qh(24781, {	-- More Than Expected (hunter)
+							}),
+							qh(24781, {	-- More Than Expected (hunter)
+								["qg"] = 38247, -- Ortezza
 								["sourceQuests"] = { 24780 }, -- Proving Pit (hunter)
 								["classes"] = {3},
-							})),
-							qg(37951, qh(24782, {	-- The Rise of the Darkspear
+							}),
+							qh(24782, {	-- The Rise of the Darkspear
+								["qg"] = 37951, -- Jin'thala
 								["classes"] = {5},
-							})),
-							qg(38245, qh(24783, {	-- The Basics: Hitting Things
+							}),
+							qh(24783, {	-- The Basics: Hitting Things
+								["qg"] = 38245, -- Tunari
 								["sourceQuests"] = { 24782 }, -- The Rise of the Darkspear
 								["classes"]= {5},
-							})),
-							qg(38245, qh(24785, {	-- A Rough Start
+							}),
+							qh(24785, {	-- A Rough Start
+								["qg"] = 38245, -- Tunari
 								["sourceQuests"] = { 24783 }, -- The Basics: Hitting Things
 								["classes"]= {5},
-							})),
-							qg(38245, qh(24786, {	-- Proving Pit (priest)
+							}),
+							qh(24786, {	-- Proving Pit (priest)
 								["groups"] = {
 									i(52874),
 								},
+								["qg"] = 38245, -- Tunari
 								["sourceQuests"] = { 24785 }, -- A Rough Start (priest)
 								["classes"] = {5},
-							})),
-							qg(38245, qh(24787, {	-- More Than Expected (priest)
+							}),
+							qh(24787, {	-- More Than Expected (priest)
+								["qg"] = 38245, -- Tunari
 								["sourceQuests"] = { 24786 },  -- Proving Pit (priest)
 								["classes"] = {5},
-							})),
-							qg(38442, qh(24812, {	-- No More Mercy
+							}),
+							qh(24812, {	-- No More Mercy
+								["qg"] = 38442, -- Morakki
 								["sourceQuests"] = { 25035 } -- Breaking the Line
-							})),
-							qg(38442, qh(24813, {	-- Territorial Fetish
+							}),
+							qh(24813, {	-- Territorial Fetish
+								["qg"] = 38442, -- Morakki
 								["sourceQuests"] = { 25035 } -- Breaking the Line
-							})),
-							qg(38442, qh(24814, {	-- An Ancient Enemy
+							}),
+							qh(24814, {	-- An Ancient Enemy
+								["qg"] = 38442, -- Morakki
 								["sourceQuests"] = { 24812, 24813 } -- No more Mercy, Territorial Fetish
-							})),
-							qg(38440, qh(25035, {	-- Breaking the Line
+							}),
+							qh(25035, {	-- Breaking the Line
+								["qg"] = 38440, -- Tortunga
 								["sourceQuests"] = { 24626 } -- Young and Vicious
-							})),
-							qg(39007, qh(25037, {	-- Crab Fishin'
-								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769} -- More Than Expected (all classes)
-							})),
-							qg(38966, qh(25064, {	-- Moraya
-								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769} -- More Than Expected (all classes)
-							})),
-							qg(38966, qh(25073, {	-- Sen'jin Village (breadcrumb quest for 25167)
+							}),
+							qh(25037, {	-- Crab Fishin'
+								["qg"] = 39007, -- Tora'jin
+								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769}, -- More Than Expected (all classes)
+							}),
+							qh(25064, {	-- Moraya
+								["qg"] = 38966, -- Vol'jin
+								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769}, -- More Than Expected (all classes)
+							}),
+							qh(25073, {	-- Sen'jin Village
+								["qg"] = 38966, -- Vol'jin
 								["sourceQuests"] = { 24814 }, -- An Ancient Enemy
+								["description"] = "Unavailable if \"Report to Sen'jin Village\" has been completed in the Valley of Trials",
 								["races"] = {6,8,10},
-								["breadcrumbQuestID"] = { 25167 }
-							})),
-							qg(37951, qh(26272, {	-- The Rise of the Darkspear
+								["isBreadcrumb"] = true,
+							}),
+							qh(26272, {	-- The Rise of the Darkspear
+								["qg"] = 37951, -- Jin'thala
 								["classes"] = {9},
-							})),
-							qg(42618, qh(26273, {	-- The Basics: Hitting Things
+							}),
+							qh(26273, {	-- The Basics: Hitting Things
+								["qg"] = 42618, -- Voldreka
 								["sourceQuests"] = { 26272 }, -- The Rise of the Darkspear
 								["classes"]= {9},
-							})),
-							qg(42618, qh(26275, {	-- A Rough Start
+							}),
+							qh(26275, {	-- A Rough Start
+								["qg"] = 42618, -- Voldreka
 								["sourceQuests"] = { 26273 }, -- The Basics: Hitting Things
 								["classes"]= {9},
-							})),
-							qg(42618, qh(26276, {	-- Proving Pit (warlock)
+							}),
+							qh(26276, {	-- Proving Pit (warlock)
 								["groups"] = {
 									i(52873),
 								},
+								["qg"] = 42618, -- Voldreka
 								["sourceQuests"] = { 26275 }, -- A Rough Start (warlock)
 								["classes"] = {9},
-							})),
-							qg(42618, qh(26277, {	-- More Than Expected (warlock)
+							}),
+							qh(26277, {	-- More Than Expected (warlock)
+								["qg"] = 42618, -- Voldreka
 								["sourceQuests"] = { 26276 }, -- Proving Pit (warlock)
 								["classes"] = {9},
-							})),
-							qg(63310, qh(31158, {	-- The Basics: Hitting Things
+							}),
+							qh(31158, {	-- The Basics: Hitting Things
+								["qg"] = 63310, -- Zabrax
 								["sourceQuests"] = { 31159 }, -- The Rise of the Darkspear
 								["classes"]= {10},
-							})),
-							qg(37951, qh(31159, {	-- The Rise of the Darkspear
+							}),
+							qh(31159, {	-- The Rise of the Darkspear
+								["qg"] = 37951, -- Jin'thala
 								["classes"] = {10},
-							})),
-							qg(63310, qh(31160, {	-- A Rough Start
+							}),
+							qh(31160, {	-- A Rough Start
+								["qg"] = 63310, -- Zabrax
 								["sourceQuests"] = { 31158 }, -- The Basics: Hitting Things
 								["classes"]= {10},
-							})),
-							qg(63310, qh(31161, {	-- Proving Pit (monk)
+							}),
+							qh(31161, {	-- Proving Pit (monk)
 								["groups"] = {
 									i(85574),
 								},
+								["qg"] = 63310, -- Zabrax
 								["sourceQuests"] = { 31160 }, -- A Rough Start (monk)
 								["classes"] = {10},
-							})),
-							qg(63310, qh(31163, {	-- More Than Expected (monk)
+							}),
+							qh(31163, {	-- More Than Expected (monk)
+								["qg"] = 63310, -- Zabrax
 								["sourceQuests"] = { 31161 }, -- Proving Pit (monk)
 								["classes"] = {10},
-							})),
-							qg(68025, qh(32320, {	-- The Horde is Family
+							}),
+							qh(32320, {	-- The Horde is Family
+								["qg"] = 68025, -- Thrall
 								["sourceQuests"] = { 32319 } -- Find Thrall!
-							})),
-							qg(68025, qh(32372, {	-- De-Subjugation
+							}),
+							qh(32372, {	-- De-Subjugation
+								["qg"] = 68025, -- Thrall
 								["sourceQuests"] = { 32320 } -- The Horde is Family
-							})),
+							}),
 						}),
 						n( -2, { 	-- Vendors
 							h(n(113615, {	-- Ravika <Darkspear Quartermaster>
@@ -895,45 +983,62 @@ _.Zones =
 							p(448), -- Hare
 						}),
 						n(-17, { -- Quests
-							qg(3143, qh(25126, {	-- Cutting Teeth
+							qh(25126, {	-- Cutting Teeth
+								["qg"] = 3143, -- Gornek
 								["sourceQuests"] = { 25152 } -- Your Place In The World
-							})),
-							qg(3143, qh(25127, {	-- Sting of the Scorpid
+							}),
+							qh(25127, {	-- Sting of the Scorpid
+								["qg"] = 3143, -- Gornek
 								["sourceQuests"] = { 25172 } -- Invaders in our Home
-							})),
-							qg(5887, qh(25128, {	-- Hana'zua
+							}),
+							qh(25128, {	-- Hana'zua
+								["qg"] = 5887, -- Canaga Earthcaller
 								["sourceQuests"] = { 25127 }, -- Invaders in our Home
-								["description"] = "Unavailable if quest \"Sarkoth\" has been completed or is in your questlog"
-							})),
-							qg(3287, qh(25129, {	-- Sarkoth
+								["description"] = "Unavailable if quest \"Sarkoth\" has been completed or is in your questlog",
+								["isBreadcrumb"] = true,
+							}),
+							qh(25129, {	-- Sarkoth
+								["qg"] = 3287, -- Hana'zua
 								["breadcrumbQuestID"] = { 25128 } -- Hana'zua
-							})),
-							qg(3287, qh(25130, {	-- Back to the Den
+							}),
+							qh(25130, {	-- Back to the Den
+								["qg"] = 3287, -- Hana'zua
 								["sourceQuests"] = { 25129 } -- Sarkoth
-							})),
-							qg(3145, qh(25131, {	-- Vile Familiars
+							}),
+							qh(25131, {	-- Vile Familiars
+								["qg"] = 3145, -- Zureetha Fargaze
 								["sourceQuests"] = { 25127 } -- Sting of the Scorpid
-							})),
-							qg(3145, qh(25132, {	-- Burning Blade Medallion
+							}),
+							qh(25132, {	-- Burning Blade Medallion
+								["qg"] = 3145, -- Zureetha Fargaze
 								["sourceQuests"] = { 25131 } -- Vile Familiars
-							})),
-							qg(3145, qh(25133, {	-- Report to Sen'jin Village (breadcrumb quest for 25167)
-								["sourceQuests"] = { 25132 } -- Burning Blade Medallion
-							})),
-							--qg(11378, qh(25134)), -- lazy peons (replaced by 37446)
-							qg(11378, qh(25135, {	-- Thazz'ril's Pick
+							}),
+							qh(25133, {	-- Report to Sen'jin Village
+								["qg"] = 3145, -- Zureetha Fargaze
+								["sourceQuests"] = { 25132 }, -- Burning Blade Medallion
+								["description"] = "Unavailable if \"Sen'jin Village\" has been completed in the Echo Isles",
+								["isBreadcrumb"] = true,
+							}),
+							--qh(25134), -- lazy peons (replaced by 37446)
+							qh(25135, {	-- Thazz'ril's Pick
+								["qg"] = 11378, -- Foreman Thazz'ril
 								["sourceQuests"] = { 25131 } -- Vile Familiars
-							})),
-							qg(9796, qh(25136, {	-- Galgar's Cactus Apple Surprise
+							}),
+							qh(25136, {	-- Galgar's Cactus Apple Surprise
+								["qg"] = 9796, -- Galgar
 								["sourceQuests"] = { 25126 } -- Cutting Teeth
-							})),
-							qg(10176, qh(25152)),	-- Your Place In The World
-							qg(3143, qh(25172, {	-- Invaders in our Home
+							}),
+							qh(25152, {	-- Your Place In The World
+								["qg"] = 10176, -- Kaltunk
+							}),
+							qh(25172, {	-- Invaders in our Home
+								["qg"] = 3143, -- Gornek
 								["sourceQuests"] = { 25126 } -- Cutting Teeth
-							})),
-							qg(11378, qh(37446, {	-- Lazy Peons
+							}),
+							qh(37446, {	-- Lazy Peons
+								["qg"] = 11378, -- Foreman Thazz'ril
 								["sourceQuests"] = { 25172 }
-							}))
+							}),
 						}),
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
