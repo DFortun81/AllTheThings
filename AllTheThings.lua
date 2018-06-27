@@ -1666,7 +1666,10 @@ local function OpenMiniList(field, id, label)
 			results = setmetatable({ back = 1 }, { __index = results[1] });
 		else
 			-- A couple of objects matched, let's make a header.
-			local header, holiday = { g = {}, baseIndent = -1, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, total = 0, progress = 0 };
+			local header = { g = {}, baseIndent = -1, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, total = 0, progress = 0 };
+			table.wipe(app.HolidayHeader.g);
+			app.HolidayHeader.progress = 0;
+			app.HolidayHeader.total = 0;
 			for i, group in ipairs(results) do
 				header.progress = header.progress + (group.progress or 0);
 				header.total = header.total + (group.total or 0);
@@ -1681,11 +1684,6 @@ local function OpenMiniList(field, id, label)
 					clone["maps"] = nil;
 					setmetatable(clone, getmetatable(group));
 					group = clone;
-					if not holiday then
-						holiday = app.CreateNPC(-3, { g = {}, expanded = true, visible = true, back = 1, total = 0, progress = 0 });
-						holiday.parent = header;
-						tinsert(header.g, 1, holiday);
-					end
 					if group.achievementID then
 						if group.criteriaID then
 							if group.parent.achievementID then
@@ -1703,9 +1701,9 @@ local function OpenMiniList(field, id, label)
 							u = group.parent.u, races = group.parent.races, classes = group.parent.classes, nmc = group.parent.nmc, nmr = group.parent.nmr });
 					end
 					
-					holiday.progress = holiday.progress + (group.progress or 0);
-					holiday.total = holiday.total + (group.total or 0);
-					tinsert(holiday.g, group);
+					app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
+					app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
+					tinsert(app.HolidayHeader.g, group);
 				elseif group.achievementID then
 					if group.criteriaID then
 						if group.parent.achievementID then
@@ -1727,7 +1725,16 @@ local function OpenMiniList(field, id, label)
 				end
 			end
 			
-			if holiday then app.UpdateGroups(holiday, holiday.g, 1); end
+			if #app.HolidayHeader.g > 0 then
+				app.HolidayHeader.expanded = true;
+				app.HolidayHeader.visible = true;
+				app.HolidayHeader.parent = header;
+				tinsert(header.g, 1, app.HolidayHeader);
+				app.UpdateGroups(app.HolidayHeader, app.HolidayHeader.g, 1);
+				app.HolidayHeader.visible = app.GroupVisibilityFilter(app.HolidayHeader);
+			else
+				app.HolidayHeader.visible = false;
+			end
 			
 			-- Swap out the map data for the header.
 			results = header;
@@ -3817,6 +3824,7 @@ app.BaseNPC = {
 app.CreateNPC = function(id, t)
 	return createInstance(constructor(id, t, "npcID"), app.BaseNPC);
 end
+app.HolidayHeader = app.CreateNPC(-3, { g = {}, expanded = true, visible = false, back = 1, total = 0, progress = 0 });
 
 -- Object Lib (as in "World Object")
 app.BaseObject = {
@@ -6258,12 +6266,6 @@ local function UpdateWindow(self, force)
 		wipe(self.rowData);
 	end
 	if self.data and (force or self:IsVisible()) then
-		if force and self.data and self.data.g and not self.data.refreshed then
-			self.data.refreshed = true;
-			--self.data.progress = 0;
-			--self.data.total = 0;
-			UpdateGroups(self.data, self.data.g, 1);
-		end
 		self.data.expanded = true;
 		if self.data.baseIndent and self.data.g then
 			-- This is Mini Listed Data
@@ -6326,12 +6328,6 @@ function app:UpdateWindows(force)
 		if window:Update(force) then
 			--print(name .. ": Updated");
 			anyUpdated = true;
-		end
-	end
-	if force then
-		-- Only refresh each data set one time.
-		for name, window in pairs(app.Windows) do
-			if window.data then window.data.refreshed = nil; end
 		end
 	end
 	return anyUpdated;
@@ -6748,11 +6744,13 @@ function app:RefreshData(lazy, safely)
 		if app.refreshDataForce then
 			app.refreshDataForce = nil;
 			local allData = app:GetDataCache();
-			allData.refreshed = true;
 			allData.progress = 0;
 			allData.total = 0;
 			UpdateGroups(allData, allData.g, 1);
-			--print(tostring(allData.progress or 0) .. " / " .. tostring(allData.total or 0));
+			app.HolidayHeader.progress = 0;
+			app.HolidayHeader.total = 0;
+			UpdateGroups(app.HolidayHeader, app.HolidayHeader.g, 1);
+			app.HolidayHeader.visible = app.GroupVisibilityFilter(app.HolidayHeader);
 			
 			-- Forcibly update the windows.
 			app:UpdateWindows(true);
