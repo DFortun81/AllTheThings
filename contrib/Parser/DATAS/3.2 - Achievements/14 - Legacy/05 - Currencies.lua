@@ -6,7 +6,7 @@ _.Achievements =
 {
 	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
-			n(-10046, { -- Currencies
+			n(-10045, { -- Currencies
 			}),
 		},
 	}),

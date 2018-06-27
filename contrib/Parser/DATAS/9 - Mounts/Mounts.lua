@@ -918,5 +918,14 @@ _.Mounts =
 		un(2, ach(11061, {	-- Gladiator: Legion Season 4
 			un(2, i(141846)),		-- Ferocious Gladiator's Storm Dragon
 		})),
+		un(2, ach(12010, {	-- Fierce Gladiator: Legion Season 5
+			un(2, i(141847)),	-- Fierce Gladiator's Storm Dragon
+		})),
+		un(2, ach(12134, {	-- Dominant Gladiator: Legion Season 6
+			un(2, i(141848)),	-- Dominant Gladiator's Storm Dragon
+		})),
+		ach(12168, {	-- Gladiator: Legion Season 7
+			i(153493),	-- Demonic Gladiator's Storm Dragon
+		}),
 	}),
 };
