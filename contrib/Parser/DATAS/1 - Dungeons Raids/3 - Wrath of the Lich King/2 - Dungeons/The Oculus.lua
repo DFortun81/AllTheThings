@@ -22,13 +22,13 @@ _.Instances =
 							["groups"] = {
 							},
 							["qg"] = 27658,	-- Belgaristrasz
-							["sourceQuests"] = 13124,
+							["sourceQuest"] = 13124,
 						}),
 						q(13127, {	-- Mage-Lord Urom
 							["groups"] = {
 							},
 							["qg"] = 28012,	-- Image of Belgaristrasz
-							["sourceQuests"] = 13126,
+							["sourceQuest"] = 13126,
 						}),
 						q(13128, { 	-- A Wing and a Prayer
 							["groups"] = {
@@ -38,7 +38,7 @@ _.Instances =
 								i(44339), 	-- Soaring Wristwraps
 							},
 							["qg"] = 28012,	-- Image of Belgaristrasz
-							["sourceQuests"] = 13127,
+							["sourceQuest"] = 13127,
 						}),
 					}),
 					d(  1, {	-- Normal
