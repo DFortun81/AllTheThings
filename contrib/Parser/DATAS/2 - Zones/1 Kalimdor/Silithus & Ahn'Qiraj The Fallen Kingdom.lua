@@ -1068,13 +1068,13 @@ END OF MICRO-HOLIDAY --]]
 									["qg"] = 130030, -- Kelsey Steelspark
 									["sourceQuests"] = { 49981 } , -- Witness to the Wound
 								}),	
-								qa(50372, {	-- Desert Research
+								qa(50228, {	-- The Twilight Survivor
 									["groups"] = {
 									},
 									["qg"] = 131963, -- Nolan Speed
 									["sourceQuests"] = { 50047 , 50046 } , -- Free Samples / It's a Sabotage
 								}),	
-								qa(50228, {	-- The Twilight Survivor
+								qa(50372, {	-- Desert Research
 									["groups"] = {
 									},
 									["qg"] = 131963, -- Nolan Speed
@@ -1084,13 +1084,37 @@ END OF MICRO-HOLIDAY --]]
 									["groups"] = {
 									},
 									["qg"] = 132606, -- Tammy Tinkspinner
-									["sourceQuests"] = { 50228 } , -- The Twilight Survivor
+									["sourceQuests"] = { 50372 } , -- Desert Research
 								}),	
 								qa(50226, {	-- The Source of Power
 									["groups"] = {
 									},
 									["qg"] = 132606, -- Tammy Tinkspinner
-									["sourceQuests"] = { 50228 } , -- The Twilight Survivor
+									["sourceQuests"] = { 50372 } , -- Desert Research
+								}),	
+								qa(50373, {	-- A Recent Arrival
+									["groups"] = {
+									},
+									["qg"] = 131963, -- Nolan Speed
+									["sourceQuests"] = { 50228 ,50227 , 50226 } , -- The Twilight Survivor / Larvae By The Dozen / The Source of Power
+								}),	
+								qa(50049, {	-- The Speaker's Perspective
+									["groups"] = {
+									},
+									["qg"] = 130032, -- Archmage Khadgar
+									["sourceQuests"] = { 50373 } , -- A Recent Arrival
+								}),	
+								qa(50374, {	-- The Blood of Azeroth
+									["groups"] = {
+									},
+									["qg"] = 130216, -- Magni Bronzebeard
+									["sourceQuests"] = { 50049 } , -- The Speaker's Perspective
+								}),	
+								qa(50056, {	-- The Speaker's Call
+									["groups"] = {
+									},
+									["qg"] = 131963, -- Nolan Speed
+									["sourceQuests"] = { 50374 } , -- The Blood of Azeroth
 								}),	
 								qh(50053, {	-- Lazy Prospectors
 									["groups"] = {
@@ -1128,11 +1152,11 @@ END OF MICRO-HOLIDAY --]]
 									["qg"] = 132040, -- Pixni Rustbomb
 									["sourceQuests"] = { 50358 } , -- Desert Research
 								}),	
-								qh(50229, {	-- A Wee Bit O' Cloth
+								q(50229, {	-- A Wee Bit O' Cloth
 									["groups"] = {
 									},
 									["description"] = "You get this quest by visiting the Twilight Outhouse located at 29.6, 69.6",
-									["sourceQuests"] = { 50358 } , -- Desert Research 
+									["sourceQuests"] = { 50358, 50372 } , -- Desert Research 
 								}),	
 								qh(50360, {	-- Khadgar's Request
 									["groups"] = {
@@ -1158,11 +1182,11 @@ END OF MICRO-HOLIDAY --]]
 									["qg"] = 132147, -- Grol Warblade
 									["sourceQuests"] = { 50364 } , -- The Blood of Azeroth
 								}),	
-								qh(50057, {	-- The Power in Our Hands
+								q(50057, {	-- The Power in Our Hands
 									["groups"] = {
 									},
 									["qg"] = 133388, -- Magni Bronzebeard
-									["sourceQuests"] = { 50300 } , -- The Speaker's Call
+									["sourceQuests"] = { 50300, 50056 } , -- The Speaker's Call
 								}),	
 							},
 						}),
