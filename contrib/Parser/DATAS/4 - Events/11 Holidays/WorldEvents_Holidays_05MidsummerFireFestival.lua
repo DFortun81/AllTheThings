@@ -548,7 +548,7 @@ _.WorldEvents =
 									},
 									{
 										["achievementID"] = 1028,	-- Extinguishing Eastern Kingdoms [Achievement]
-										["criteriaID"] = 9,		-- Silverpine Forest [Criteria]
+										["criteriaID"] = 9,			-- Silverpine Forest [Criteria]
 										["maps"] = { 21 }, 			-- Silverpine Forest
 									},
 									{
