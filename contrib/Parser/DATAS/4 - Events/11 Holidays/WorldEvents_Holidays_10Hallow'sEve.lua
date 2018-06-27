@@ -175,7 +175,7 @@ _.WorldEvents =
 								un(26, i(33292)), -- Hallowed Helm
 							}),
 							ach(971, {		-- Tricks and Treats of Azeroth
-								a(ach(966, {	-- Tricks and Treats of Eastern Kingdoms
+								a(ach(966, {	-- Tricks and Treats of Eastern Kingdoms (Alliance)
 										{
 											["achievementID"] = 966,	-- Tricks and Treats of Eastern Kingdoms [Achievement]
 											["criteriaID"] = 1,			-- Arathi Highlands, Refuge Point [Criteria]
@@ -307,7 +307,517 @@ _.WorldEvents =
 											["maps"] = { 40 }, 			-- Wetlands
 										},
 								})),
+								a(ach(963, { 	-- Tricks and Treats of Kalimdor (Alliance)
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 1,			-- Ashenvale, Astranaar [Criteria]
+										["maps"] = { 43 }, 			-- Ashenvale
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 2,			-- Azuremyst Isle, Azure Watch [Criteria]
+										["maps"] = { 464 }, 		-- Azuremyst Isle
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 3,			-- Bloodmyst Isle, Blood Watch [Criteria]
+										["maps"] = { 476 }, 		-- Bloodmyst Isle
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 4,			-- Darkshore, Lor'danel [Criteria]
+										["maps"] = { 42 }, 			-- Darkshore
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 5,			-- Darnassus, Craftsmen's Terrace [Criteria]
+										["maps"] = { 381 }, 		-- Darnassus
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 6,			-- Desolace, Karnum's Glade [Criteria]
+										["maps"] = { 101 },			-- Desolace
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 7,			-- Desolace, Nijel's Point [Criteria]
+										["maps"] = { 101 },			-- Desolace
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 8,			-- Dustwallow Marsh, Mudsprocket [Criteria]
+										["maps"] = { 141 }, 		-- Dustwallow Marsh
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 9,			-- Exodar, Seat of the Naaru [Criteria]
+										["maps"] = { 471 }, 		-- The Exodar
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 10,		-- Felwood, Talonbranch Glade [Criteria]
+										["maps"] = { 182 },			-- Felwood
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 11,		-- Felwood, Whisperwind Grove [Criteria]
+										["maps"] = { 182 },			-- Felwood
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 12,		-- Feralas, Dreamer's Rest [Criteria]
+										["maps"] = { 121 },			-- Feralas
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 13,		-- Feralas, Feathermoon Stronghold [Criteria]
+										["maps"] = { 121 },			-- Feralas
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 14,		-- Northern Barrens, Ratchet [Criteria]
+										["maps"] = { 11 },			-- Northern Barrens
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 15,		-- Silithus, Cenarion Hold [Criteria]
+										["maps"] = { 261 }, 		-- Silithus
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 16,		-- Southern Barrens, Fort Triumph [Criteria]
+										["maps"] = { 607 }, 		-- Southern Barrens
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 17,		-- Southern Barrens, Honor's Stand [Criteria]
+										["maps"] = { 607 }, 		-- Southern Barrens
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 18,		-- Southern Barrens, Northwatch Hold [Criteria]
+										["maps"] = { 607 }, 		-- Southern Barrens
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 19,		-- Stonetalon Mountains, Farwatcher's Glen [Criteria]
+										["maps"] = { 81 }, 			-- Stonetalon Mountains
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 20,		-- Stonetalon Mountains, Northwatch Expedition Base [Criteria]
+										["maps"] = { 81 }, 			-- Stonetalon Mountains
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 21,		-- Stonetalon Mountains, Thal'darah Overlook [Criteria]
+										["maps"] = { 81 }, 			-- Stonetalon Mountains
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 22,		-- Stonetalon Mountains, Windshear Hold [Criteria]
+										["maps"] = { 81 }, 			-- Stonetalon Mountains
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 23,		-- Tanaris, Bootlegger Outpost [Criteria]
+										["maps"] = { 161 }, 		-- Tanaris
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 24,		-- Tanaris, Gadgetzan [Criteria]
+										["maps"] = { 161 }, 		-- Tanaris
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 25,		-- Teldrassil, Dolanaar [Criteria]
+										["maps"] = { 41 }, 			-- Teldrassil
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 26,		-- Un'goro Crater, Marshal's Stand [Criteria]
+										["maps"] = { 201 }, 		-- Un'goro Crater
+									},
+									{
+										["achievementID"] = 963,	-- Tricks and Treats of Kalimdor [Achievement]
+										["criteriaID"] = 27,		-- Winterspring, Everlook [Criteria]
+										["maps"] = { 281 }, 		-- Winterspring
+									},
+								})),
+								a(ach(969, {	-- Tricks and Treats of Outland (Alliance)
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 1,			-- Blade's Edge Mountains, Evergrove [Criteria]
+										["maps"] = { 475 },			-- Blade's Edge Mountains
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 2,			-- Blade's Edge Mountains, Sylvanaar [Criteria]
+										["maps"] = { 475 },			-- Blade's Edge Mountains
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 3,			-- Blade's Edge Mountains, Toshley's Station [Criteria]
+										["maps"] = { 475 },			-- Blade's Edge Mountains
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 4,			-- Hellfire Peninsula, Honor Hold [Criteria]
+										["maps"] = { 465 },			-- Hellfire Peninsula
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 5,			-- Hellfire Peninsula, Temple of Telhamat [Criteria]
+										["maps"] = { 465 },			-- Hellfire Peninsula
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 6,			-- Nagrand, Telaar [Criteria]
+										["maps"] = { 477 },			-- Nagrand
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 7,			-- Netherstorm, Area 52 [Criteria]
+										["maps"] = { 479 },			-- Netherstorm
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 8,			-- Netherstorm, The Stormspire [Criteria]
+										["maps"] = { 479 },			-- Netherstorm
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 9,			-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars [Criteria]
+										["maps"] = { 473 },			-- Shadowmoon Valley
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 10,		-- Shadowmoon Valley, Wildhammer Stronghold [Criteria]
+										["maps"] = { 473 },			-- Shadowmoon Valley
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 11,		-- Shattrath City, Aldor Rise or Scryer's Tier [Criteria]
+										["maps"] = { 481 },			-- Shattrath City
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 12,		-- Terokkar Forest, Allerian Stronghold [Criteria]
+										["maps"] = { 478 },			-- Terokkar Forest
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 13,		-- Zangarmarsh, Cenarion Refuge [Criteria]
+										["maps"] = { 467 },			-- Zangarmarsh
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 14,		-- Zangarmarsh, Orebor Harborage [Criteria]
+										["maps"] = { 467 },			-- Zangarmarsh
+									},
+									{
+										["achievementID"] = 969,	-- Tricks and Treats of Outland [Achievement]
+										["criteriaID"] = 15,		-- Zangarmarsh, Telredor [Criteria]
+										["maps"] = { 467 },			-- Zangarmarsh
+									},
+								})),
 							}),
+							a(ach(5836, {	-- Tricks and Treats of Northrend (Alliance)
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 1,			-- Borean Tundra, Fizzcrank Airstrip [Criteria]
+									["maps"] = { 486 },			-- Borean Tundra
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 2,			-- Borean Tundra, Unu'pe [Criteria]
+									["maps"] = { 486 },			-- Borean Tundra
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 3,			-- Borean Tundra, Valiance Keep [Criteria]
+									["maps"] = { 486 },			-- Borean Tundra
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 4,			-- Dalaran, The Legerdemain Lounge (Northrend) [Criteria]
+									["maps"] = { 504 },			-- Dalaran (Northrend)
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 5,			-- Dalaran, Silver Enclave (Northrend) [Criteria]
+									["maps"] = { 504 },			-- Dalaran (Northrend)
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 6,			-- Dalaran, The Underbelly (Northrend) [Criteria]
+									["maps"] = { 504 },			-- Dalaran (Northrend)
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 7,			-- Dragonblight, Moa'ki Harbor [Criteria]
+									["maps"] = { 488 },			-- Dragonblight
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 8,			-- Dragonblight, Stars' Rest [Criteria]
+									["maps"] = { 488 },			-- Dragonblight
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 9,			-- Dragonblight, Wintergarde Keep [Criteria]
+									["maps"] = { 488 },			-- Dragonblight
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 10,		-- Dragonblight, Wyrmrest Temple [Criteria]
+									["maps"] = { 488 },			-- Dragonblight
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 11,		-- Grizzly Hills, Amberpine Lodge [Criteria]
+									["maps"] = { 490 },			-- Grizzly Hills
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 12,		-- Grizzly Hills, Westfall Brigade [Criteria]
+									["maps"] = { 490 },			-- Grizzly Hills
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 13,		-- Howling Fjord, Fort Wildervar [Criteria]
+									["maps"] = { 491 },			-- Howling Fjord
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 14,		-- Howling Fjord, Kamagua [Criteria]
+									["maps"] = { 491 },			-- Howling Fjord
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 15,		-- Howling Fjord, Valgarde [Criteria]
+									["maps"] = { 491 },			-- Howling Fjord
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 16,		-- Howling Fjord, Westguard Keep [Criteria]
+									["maps"] = { 491 },			-- Howling Fjord
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 17,		-- Sholazar Basin, Nesingwary Base Camp [Criteria]
+									["maps"] = { 493 },			-- Sholazar Basin
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 18,		-- Storm Peaks, Bouldercrag's Refuge [Criteria]
+									["maps"] = { 495 },			-- Storm Peaks
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 19,		-- Storm Peaks, Frosthold [Criteria]
+									["maps"] = { 495 },			-- Storm Peaks
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 20,		-- Storm Peaks, K3 [Criteria]
+									["maps"] = { 495 },			-- Storm Peaks
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 21,		-- Zul'Drak, The Argent Stand [Criteria]
+									["maps"] = { 496 },			-- Zul'Drak
+								},
+								{
+									["achievementID"] = 5836,	-- Tricks and Treats of Northrend [Achievement]
+									["criteriaID"] = 22,		-- Zul'Drak, Zim'Torga [Criteria]
+									["maps"] = { 496 },			-- Zul'Drak
+								},
+							})),
+							a(ach(5837, {	-- Tricks and Treats of the Cataclysm (Alliance)
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 1,			-- Deepholm, Temple of Earth [Criteria]
+									["maps"] = { 640 },			-- Deepholm
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 2,			-- Mount Hyjal, Grove of Aessina [Criteria]
+									["maps"] = { 606 },			-- Mount Hyjal
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 3,			-- Mount Hyjal, Nordrassil [Criteria]
+									["maps"] = { 606 },			-- Mount Hyjal
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 4,			-- Mount Hyjal, Shrine of Aviana [Criteria]
+									["maps"] = { 606 },			-- Mount Hyjal
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 5,			-- Twilight Highlands, Firebeard's Patrol [Criteria]
+									["maps"] = { 700 },			-- Twilight Highlands
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 6,			-- Twilight Highlands, Highbank [Criteria]
+									["maps"] = { 700 },			-- Twilight Highlands
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 7,			-- Twilight Highlands, Thundermar [Criteria]
+									["maps"] = { 700 },			-- Twilight Highlands
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 8,			-- Twilight Highlands, Victor's Point [Criteria]
+									["maps"] = { 700 },			-- Twilight Highlands
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 9,			-- Uldum, Oasis of Vir'sar [Criteria]
+									["maps"] = { 720 },			-- Uldum
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 10,		-- Uldum, Ramkahen [Criteria]
+									["maps"] = { 720 },			-- Uldum
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 11,		-- Vashj'ir, Darkbreak Cove [Criteria]
+									["maps"] = { 613 },			-- Vashj'ir
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 12,		-- Vashj'ir, Deepmist Grotto [Criteria]
+									["maps"] = { 613 },			-- Vashj'ir
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 13,		-- Vashj'ir, Silver Tide Hollow [Criteria]
+									["maps"] = { 613 },			-- Vashj'ir
+								},
+								{
+									["achievementID"] = 5837,	-- Tricks and Treats of the Cataclysm [Achievement]
+									["criteriaID"] = 14,		-- Vashj'ir, Tranquil Wash [Criteria]
+									["maps"] = { 613 },			-- Vashj'ir
+								},
+							})),
+							a(ach(7601, {	-- Tricks and Treats of Pandaria (Alliance)
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 1,			-- Dread Wastes, Klaxxi'vess [Criteria]
+									["maps"] = { 858 },			-- Dread Wastes
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 2,			-- Dread Wastes, Soggy's Gamble [Criteria]
+									["maps"] = { 858 },			-- Dread Wastes
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 3,			-- Jade Forest, Dawn's Blossom [Criteria]
+									["maps"] = { 806 },			-- Jade Forest
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 4,			-- Jade Forest, Greenstone Village [Criteria]
+									["maps"] = { 806 },			-- Jade Forest
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 5,			-- Jade Forest, Jade Temple Grounds [Criteria]
+									["maps"] = { 806 },			-- Jade Forest
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 6,			-- Jade Forest, Paw'don Village [Criteria]
+									["maps"] = { 806 },			-- Jade Forest
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 7,			-- Jade Forest, Pearlfin Village [Criteria]
+									["maps"] = { 806 },			-- Jade Forest
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 8,			-- Jade Forest, Sri-La Village [Criteria]
+									["maps"] = { 806 },			-- Jade Forest
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 9,			-- Jade Forest, Tian Monastery [Criteria]
+									["maps"] = { 806 },			-- Jade Forest
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 10,		-- Krasarang Wilds, Marista [Criteria]
+									["maps"] = { 857 },			-- Krasarang Wilds
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 11,		-- Krasarang Wilds, Zhu's Watch [Criteria]
+									["maps"] = { 857 },			-- Krasarang Wilds
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 12,		-- Kun-Lai Summit, Binan Village [Criteria]
+									["maps"] = { 809 },			-- Kun-Lai Summit
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 13,		-- Kun-Lai Summit, The Grummle Bazaar [Criteria]
+									["maps"] = { 809 },			-- Kun-Lai Summit
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 14,		-- Kun-Lai Summit, One Keg [Criteria]
+									["maps"] = { 809 },			-- Kun-Lai Summit
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 15,		-- Kun-Lai Summit, Westwind Rest [Criteria]
+									["maps"] = { 809 },			-- Kun-Lai Summit
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 16,		-- Kun-Lai Summit, Zouchin Village [Criteria]
+									["maps"] = { 809 },			-- Kun-Lai Summit
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 17,		-- The Veiled Stair, Tavern in the Mists [Criteria]
+									["maps"] = { 873 },			-- The Veiled Stair
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 18,		-- Townlong Steppes, Longying Outpost [Criteria]
+									["maps"] = { 810 },			-- Townlong Steppes
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 19,		-- Vale of Eternal Blossoms, Mistfall Village [Criteria]
+									["maps"] = { 811 },			-- Vale of Eternal Blossoms
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 20,		-- Vale of Eternal Blossoms, Shrine of Seven Stars [Criteria]
+									["maps"] = { 811 },			-- Vale of Eternal Blossoms
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 21,		-- Valley of the Four Winds, Pang's Stead [Criteria]
+									["maps"] = { 807 },			-- Valley of the Four Winds
+								},
+								{
+									["achievementID"] = 7601,	-- Tricks and Treats of Pandaria [Achievement]
+									["criteriaID"] = 22,		-- Valley of the Four Winds, Stoneplow [Criteria]
+									["maps"] = { 807 },			-- Valley of the Four Winds
+								},
+							})),
 						}),
 						ach(980, { 			-- The Horseman's Reins
 							un(26, i(37012)), -- The Horseman's Reins
@@ -315,6 +825,8 @@ _.WorldEvents =
 					}),
 					n(-139, { -- Bosses
 						n(97042, { -- Headless Horseman
+							["description"] = "|cff66ccffYou can only loot the Loot-Stuffed/Filled Pumpkins once per day per toon by completing your first run of the day.|r",
+							["maps"] = { 874 },	-- Scarlet Monastery
 							["groups"] = {
 								i(149574, { -- Loot-Stuffed Pumpkin [Uncommon Quality]
 									["groups"] = {
@@ -323,7 +835,7 @@ _.WorldEvents =
 										un(26, i(33808)), 	-- The Horseman's Helm (i110)
 										un(26, i(49126)), 	-- The Horseman's Horrific Helm (i200)
 										un(26, i(71326)), 	-- The Horseman's Horrific Helm (i365)
-										un(26, i(87569)), 	--  The Horseman's Horrific Hood (i470)
+										un(26, i(87569)), 	-- The Horseman's Horrific Hood (i470)
 										un(26, i(117355)), 	-- The Horseman's Horrific Hood (i600)
 										un(26, i(38175)), 	-- The Horseman's Blade (i110)
 										un(26, i(49128)), 	-- The Horseman's Baleful Blade (i200)
@@ -341,7 +853,7 @@ _.WorldEvents =
 										un(26, i(33808)), 	-- The Horseman's Helm (i110)
 										un(26, i(49126)), 	-- The Horseman's Horrific Helm (i200)
 										un(26, i(71326)), 	-- The Horseman's Horrific Helm (i365)
-										un(26, i(87569)), 	--  The Horseman's Horrific Hood (i470)
+										un(26, i(87569)), 	-- The Horseman's Horrific Hood (i470)
 										un(26, i(117355)), 	-- The Horseman's Horrific Hood (i600)
 										un(26, i(38175)), 	-- The Horseman's Blade (i110)
 										un(26, i(49128)), 	-- The Horseman's Baleful Blade (i200)
@@ -352,7 +864,6 @@ _.WorldEvents =
 									["lvl"] = 98,
 								}),
 							},
-							["description"] = "|cff66ccffYou can only loot the bag once per day per toon by running it through the Dungeon queue on your first run.|r",
 							["displayID"] = 25159,
 							["modelScale"] = 1.5,
 						}),
@@ -447,7 +958,6 @@ _.WorldEvents =
 							})),						})),
 					}),
 				},
-				--["achievementID"] = 1656, -- Hallowed Be Thy Name
 				["u"] = 26,
 			}),
 		},
