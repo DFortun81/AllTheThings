@@ -1056,6 +1056,42 @@ END OF MICRO-HOLIDAY --]]
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
+								qa(50047, {	-- Free Samples
+									["groups"] = {
+									},
+									["qg"] = 131963, -- Nolan Speed
+									["sourceQuests"] = { 49981 } , -- Witness to the Wound
+								}),	
+								qa(50046, {	-- It's a Sabotage
+									["groups"] = {
+									},
+									["qg"] = 130030, -- Kelsey Steelspark
+									["sourceQuests"] = { 49981 } , -- Witness to the Wound
+								}),	
+								qa(50372, {	-- Desert Research
+									["groups"] = {
+									},
+									["qg"] = 131963, -- Nolan Speed
+									["sourceQuests"] = { 50047 , 50046 } , -- Free Samples / It's a Sabotage
+								}),	
+								qa(50228, {	-- The Twilight Survivor
+									["groups"] = {
+									},
+									["qg"] = 131963, -- Nolan Speed
+									["sourceQuests"] = { 50047 , 50046 } , -- Free Samples / It's a Sabotage
+								}),	
+								qa(50227, {	-- Larvae By The Dozen
+									["groups"] = {
+									},
+									["qg"] = 132606, -- Tammy Tinkspinner
+									["sourceQuests"] = { 50228 } , -- The Twilight Survivor
+								}),	
+								qa(50226, {	-- The Source of Power
+									["groups"] = {
+									},
+									["qg"] = 132606, -- Tammy Tinkspinner
+									["sourceQuests"] = { 50228 } , -- The Twilight Survivor
+								}),	
 								qh(50053, {	-- Lazy Prospectors
 									["groups"] = {
 									},
