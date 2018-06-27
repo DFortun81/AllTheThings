@@ -129,18 +129,18 @@ _.Achievements =
 						title(59),	-- Predator
 					}),
 					un(12, ach(3259, {	-- Realm First! Celestial Defender
-						un(12, title(125)),	-- the Celestial Defender
+						un(39, title(125)),	-- the Celestial Defender
 					})),
 					un(12, ach(6433)),	-- Realm First! Challenge Conqueror: Gold
 					un(12, ach(1402, {	-- Realm First! Conqueror of Naxxramas
-						un(12, title(90)),	-- ,Conqueror of Naxxramas
+						un(39, title(90)),	-- ,Conqueror of Naxxramas
 					})),
 					un(12, ach(3117, {	-- Realm First! Death's Demise
-						un(12, title(124)),	-- ,Death's Demise
+						un(39, title(124)),	-- ,Death's Demise
 					})),
 					un(12, ach(4576)),	-- Realm First! Fall of the Lich King
 					un(12, ach(4078, {	-- Realm First! Grand Crusader
-						un(12, title(135)),	-- Grand Crusader
+						un(39, title(135)),	-- Grand Crusader
 					})),
 					un(12, ach(1415)),	-- Realm First! Grand Master Alchemist
 					un(12, ach(1420)),	-- Realm First! Grand Master Angler
@@ -218,11 +218,11 @@ _.Achievements =
 					un(12, ach(6746)),	-- Realm First! Level 90 Warlock
 					un(12, ach(6750)),	-- Realm First! Level 90 Warrior
 					un(12, ach(1400, {	-- Realm First! Magic Seeker
-						un(12, title(88)),	-- the Magic Seeker
+						un(39, title(88)),	-- the Magic Seeker
 					})),
 					un(12, ach(1463)),	-- Realm First! Northrend Vanguard
 					un(12, ach(456, {	-- Realm First! Obsidian Slayer
-						un(12, title(106)),	-- Obsidian Slayer
+						un(39, title(106)),	-- Obsidian Slayer
 					})),
 					un(12, ach(6829)),	-- Realm First! Pandaren Ambassador
 					un(12, ach(6859)),	-- Realm First! Zen Master Alchemist

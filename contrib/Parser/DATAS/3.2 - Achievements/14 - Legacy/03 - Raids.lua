@@ -9,7 +9,7 @@ _.Achievements =
 			n(-10044, { -- Raids
 				["groups"] = {
 					un(12, ach(4080, {	-- A Tribute to Dedicated Insanity
-						un(12, title(136)),	-- the Argent Defender
+						un(39, title(136)),	-- the Argent Defender
 						un(12, ach(3810)),	-- A Tribute to Insanity (10 player)
 						un(12, ach(3809)),	-- A Tribute to Mad Skill (10 player)
 						un(12, ach(3808)),	-- A Tribute to Skill (10 player)
@@ -33,17 +33,17 @@ _.Achievements =
 					un(12, ach(2947)),	-- Can't Do That While Stunned (10 player)
 					un(12, ach(2948)),	-- Can't Do That While Stunned (25 player)
 					un(12, ach(432, {	-- Champion of the Naaru
-						un(12, title(36)),	-- ,Champion of the Naaru
+						un(39, title(36)),	-- ,Champion of the Naaru
 					})),
 					un(12, ach(29030, {	-- Champion of Ulduar
-						un(12, title(127)),	-- ,Champion of Ulduar
+						un(39, title(127)),	-- ,Champion of Ulduar
 					})),
 					un(12, ach(2961)),	-- Cheese the Freeze (10 player)
 					un(12, ach(2962)),	-- Cheese the Freeze (25 player)
 					un(12, ach(2980)),	-- Con-speed-atory (10 player)
 					un(12, ach(2981)),	-- Con-speed-atory (25 player)
 					un(12, ach(2904, {	-- Conqueror of Ulduar
-						un(12, title(126)),	-- ,Conqueror of Ulduar
+						un(39, title(126)),	-- ,Conqueror of Ulduar
 					})),
 					un(12, ach(3006)),	-- Crazy Cat Lady (10 player)
 					un(12, ach(3007)),	-- Crazy Cat Lady (25 player)
@@ -67,7 +67,7 @@ _.Achievements =
 					un(12, ach(2957)),	-- Glory of the Ulduar Raider (10 player)
 					un(12, ach(2958)),	-- Glory of the Ulduar Raider (25 player)
 					un(12, ach(431, {	-- Hand of A'dal
-						un(12, title(39)),	-- ,Hand of A'dal
+						un(39, title(39)),	-- ,Hand of A'dal
 					})),
 					un(12, ach(3012)),	-- He's Not Getting Any Older (10 player)
 					un(12, ach(3013)),	-- He's Not Getting Any Older (25 player)
@@ -96,12 +96,12 @@ _.Achievements =
 					un(12, ach(3009)),	-- Kiss and Make Up (10 player)
 					un(12, ach(3011)),	-- Kiss and Make Up (25 player)
 					un(12, ach(3179, {	-- Knock, Knock, Knock on Wood (10 player)
-						un(12, ach(3178)),	-- Knock, Knock on Wood (10 player)
-						un(12, ach(3177)),	-- Knock on Wood (10 player)
+						un(2, ach(3178)),	-- Knock, Knock on Wood (10 player)
+						un(2, ach(3177)),	-- Knock on Wood (10 player)
 					})),
 					un(12, ach(3187, {	-- Knock, Knock, Knock on Wood (25 player)
-						un(12, ach(3186)),	-- Knock, Knock on Wood (25 player)
-						un(12, ach(3185)),	-- Knock on Wood (25 player)
+						un(2, ach(3186)),	-- Knock, Knock on Wood (25 player)
+						un(2, ach(3185)),	-- Knock on Wood (25 player)
 					})),
 					un(12, ach(3176, {	-- Lose Your Illusion (10 player)
 						un(12, ach(2977)),	-- Siffed (10 player)

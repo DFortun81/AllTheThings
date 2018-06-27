@@ -30,6 +30,7 @@ _.Instances =
 								125137,	-- Mazgoroth
 								125634,	-- Vel'thrak the Punisher
 								125587,	-- Vogrethar the Defiled
+								125849, -- Invasion Point: Aurinor
 							},
 						}),
 						m(1191, { -- Invasion Point: Bonich
@@ -52,6 +53,7 @@ _.Instances =
 								125137,	-- Mazgoroth
 								125634,	-- Vel'thrak the Punisher
 								125587,	-- Vogrethar the Defiled
+								126547, -- Invasion Point: Bonich
 							},
 						}),
 						m(1192, { -- Invasion Point: Cen'gar
@@ -74,6 +76,7 @@ _.Instances =
 								125137,	-- Mazgoroth
 								125634,	-- Vel'thrak the Punisher
 								125587,	-- Vogrethar the Defiled
+								126120, -- Invasion Point: Cen'gar
 							},
 						}),
 						m(1193, { -- Invasion Point: Naigtal
@@ -96,6 +99,7 @@ _.Instances =
 								125137,	-- Mazgoroth
 								125634,	-- Vel'thrak the Punisher
 								125587,	-- Vogrethar the Defiled
+								126593, -- Invasion Point: Naigtal
 							},
 						}),
 						m(1194, { -- Invasion Point: Sangua
@@ -118,6 +122,7 @@ _.Instances =
 								125137,	-- Mazgoroth
 								125634,	-- Vel'thrak the Punisher
 								125587,	-- Vogrethar the Defiled
+								125863, -- Invasion Point: Sanguaa
 							},
 						}),
 						m(1195, { -- Invasion Point: Val
@@ -140,6 +145,7 @@ _.Instances =
 								125137,	-- Mazgoroth
 								125634,	-- Vel'thrak the Punisher
 								125587,	-- Vogrethar the Defiled
+								126499, -- Invasion Point: Val
 							},
 						}),
 					},
@@ -166,6 +172,9 @@ _.Instances =
 							["mapID"] = 1198,
 							["modelScale"] = 0.65,
 							["creatureID"] = 124514,
+							["crs"] = {
+								127528, -- Greater Invasion Point: Matron Folnuna
+							},
 						}),
 						e(2011, { -- Mistress Alluradel
 							["groups"] = {
@@ -186,6 +195,9 @@ _.Instances =
 							["questID"] = 49167,
 							["modelScale"] = 0.95,
 							["creatureID"] = 124625,
+							["crs"] = {
+								127536, -- Greater Invasion Point: Mistress Alluradel
+							},
 						}),
 						e(2012, { -- Inquisitor Meto
 							["groups"] = {
@@ -206,6 +218,9 @@ _.Instances =
 							["mapID"] = 1199,
 							["modelScale"] = 0.85,
 							["creatureID"] = 124592,
+							["crs"] = {
+								127535, -- Greater Invasion Point: Inquisitor Meto
+							},
 						}),
 						e(2013, { -- Occularus
 							["groups"] = {
@@ -225,6 +240,9 @@ _.Instances =
 							["mapID"] = 1201,
 							["modelScale"] = 0.50,
 							["creatureID"] = 124492,
+							["crs"] = {
+								127533, -- Greater Invasion Point: Occularus
+							},
 						}),
 						e(2014, { -- Sotanathor
 							["groups"] = {
@@ -245,6 +263,9 @@ _.Instances =
 							["mapID"] = 1200,
 							["modelScale"] = 0.75,
 							["creatureID"] = 124555,
+							["crs"] = {
+								127532, -- Greater Invasion Point: Sotanathor
+							},
 						}),
 						e(2015, { -- Pit Lord Vilemus
 							["groups"] = {
@@ -265,6 +286,9 @@ _.Instances =
 							["mapID"] = 1196,
 							["modelScale"] = 1.15,
 							["creatureID"] = 124719,
+							["crs"] = {
+								127531, -- Greater Invasion Point: Pit Lord Vilemus
+							},
 						}),
 					},
 					["achievementID"] = 12026, -- Invasion Obliteration

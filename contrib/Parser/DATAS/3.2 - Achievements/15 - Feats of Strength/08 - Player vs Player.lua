@@ -26,7 +26,7 @@ _.Achievements =
 					un(12, h(ach(11005))),	-- Cruel Combatant (Horde)
 					un(12, ach(11697)),	-- Cruel Elite
 					un(12, ach(11037, {	-- Cruel Gladiator: Legion Season 3
-						un(12, title(359)),	-- Cruel Gladiator
+						un(39, title(359)),	-- Cruel Gladiator
 					})),
 					un(12, ach(3336)),	-- Deadly Gladiator
 					un(12, a(ach(11022))),	-- Defender of the Alliance: Legion Season 1
@@ -54,7 +54,7 @@ _.Achievements =
 					})),
 					un(12, ach(12135)),	-- Dominant Elite
 					un(12, ach(12134, {	-- Dominant Gladiator: Legion Season 6
-						un(12, title(368)),	-- Dominant Gladiator
+						un(39, title(368)),	-- Dominant Gladiator
 					})),
 					un(12, ach(11015)),	-- Duelist: Legion Season 1
 					un(12, ach(11026)),	-- Duelist: Legion Season 2
@@ -72,19 +72,19 @@ _.Achievements =
 					un(12, h(ach(11003))),	-- Fearless Combatant (Horde)
 					un(12, ach(11579)),	-- Fearless Elite
 					un(12, ach(11014, {	-- Fearless Gladiator: Legion Season 2
-						un(12, title(355)),	-- Fearless Gladiator
+						un(39, title(355)),	-- Fearless Gladiator
 					})),
 					un(12, a(ach(11010))),	-- Ferocious Combatant (Alliance)
 					un(12, h(ach(11009))),	-- Ferocious Combatant (Horde)
 					un(12, ach(11698)),	-- Ferocious Elite
 					un(12, ach(11062, {	-- Ferocious Gladiator: Legion Season 4
-						un(12, title(360)),	-- Ferocious Gladiator
+						un(39, title(360)),	-- Ferocious Gladiator
 					})),
 					un(12, a(ach(12032))),	-- Fierce Combatant (Alliance)
 					un(12, h(ach(12031))),	-- Fierce Combatant (Horde)
 					un(12, ach(12090)),	-- Fierce Elite
 					un(12, ach(12010, {	-- Fierce Gladiator: Legion Season 5
-						un(12, title(363)),	-- Fierce Gladiator
+						un(39, title(363)),	-- Fierce Gladiator
 					})),
 					un(12, ach(3436)),	-- Furious Gladiator
 					un(12, ach(11011)),	-- Gladiator: Legion Season 1
@@ -106,7 +106,7 @@ _.Achievements =
 						un(12, i(128282)),	-- Warmongering Gladiator's Felblood Gronnling
 					})),
 					un(12, ach(8643, {	-- Grievous Gladiator: Season 14
-						un(12, title(253)),	-- Grievous Gladiator
+						un(39, title(253)),	-- Grievous Gladiator
 					})),
 					un(12, a(ach(11020))),	-- Guardian of the Alliance: Legion Season 1
 					un(12, a(ach(11032))),	-- Guardian of the Alliance: Legion Season 2
@@ -172,10 +172,10 @@ _.Achievements =
 					un(12, ach(418)),	-- Merciless Gladiator
 					un(12, ach(3618)),	-- Murkimus the Gladiator
 					un(12, ach(8666, {	-- Prideful Gladiator: Season 15
-						un(12, title(254)),	-- Prideful Gladiator
+						un(39, title(254)),	-- Prideful Gladiator
 					})),
 					un(12, ach(9232, {	-- Primal Gladiator: Warlords Season 1
-						un(12, title(308)),	-- Primal Gladiator
+						un(39, title(308)),	-- Primal Gladiator
 					})),
 					un(12, ach(3758)),	-- Relentless Gladiator
 					un(12, ach(11016)),	-- Rival: Legion Season 1
@@ -224,7 +224,7 @@ _.Achievements =
 						}),
 					}),
 					un(12, ach(8392, {	-- Tournament Glory 2013
-						un(12, title(128)),	-- Vanquisher
+						un(39, title(128)),	-- Vanquisher
 					})),
 					un(12, ach(8391)),	-- Tournament Participation 2013
 					un(12, ach(8791)),	-- Tyrannical Gladiator
@@ -234,15 +234,15 @@ _.Achievements =
 					un(12, h(ach(10997))),	-- Vindictive Combatant (Horde)
 					un(12, ach(11578)),	-- Vindictive Elite
 					un(12, ach(11012, {	-- Vindictive Gladiator: Legion Season 1
-						un(12, title(353)),	-- Vindictive Gladiator
+						un(39, title(353)),	-- Vindictive Gladiator
 					})),
 					un(12, a(ach(10095))),	-- Warmongering Combatant (Alliance)
 					un(12, h(ach(10094))),	-- Warmongering Combatant (Horde)
 					un(12, ach(10097, {	-- Warmongering Gladiator: Warlords Season 3
-						un(12, title(316)),	-- Warmongering Gladiator
+						un(39, title(316)),	-- Warmongering Gladiator
 					})),
 					un(12, ach(10096, {	-- Wild Gladiator: Warlords Season 2
-						un(12, title(315)),	-- Wild Gladiator
+						un(39, title(315)),	-- Wild Gladiator
 					})),
 					un(12, ach(4599)),	-- Wrathful Gladiator
 				},
