@@ -9,15 +9,37 @@ _.Instances =
 			inst(282, { 	-- The Oculus
 				["groups"] = {
 					n(-17, {	-- Quests
-						q(13126),	-- A Unified Front
-						q(13128,{ 	-- A Wing and a Prayer
-							i(44340), 	-- Bindings of Raelorasz
-							i(44341),	-- Bracers of Reverence
-							i(44338), 	-- Cuffs of Gratitude
-							i(44339), 	-- Soaring Wristwraps
+						q(13124, {	-- The Struggle Persists
+							["groups"] = {
+								i(44334),	-- Ring of Temerity
+								i(44335),	-- Band of Motivation
+								i(44336),	-- Flourishing Band
+								i(44337),	-- Staunch Signet
+							},
+							["qg"] = 26117,	-- Raelorasz
 						}),
-						q(13127),	-- Mage-Lord Urom
-						q(13124),	-- The Struggle Persists (Ring rewards, essentially nothing.)
+						q(13126, {	-- A Unified Front
+							["groups"] = {
+							},
+							["qg"] = 27658,	-- Belgaristrasz
+							["sourceQuests"] = 13124,
+						}),
+						q(13127, {	-- Mage-Lord Urom
+							["groups"] = {
+							},
+							["qg"] = 28012,	-- Image of Belgaristrasz
+							["sourceQuests"] = 13126,
+						}),
+						q(13128, { 	-- A Wing and a Prayer
+							["groups"] = {
+								i(44340), 	-- Bindings of Raelorasz
+								i(44341),	-- Bracers of Reverence
+								i(44338), 	-- Cuffs of Gratitude
+								i(44339), 	-- Soaring Wristwraps
+							},
+							["qg"] = 28012,	-- Image of Belgaristrasz
+							["sourceQuests"] = 13127,
+						}),
 					}),
 					d(  1, {	-- Normal
 						n(0, {		-- Zone Drop
