@@ -37,42 +37,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
---[[					
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),	
---]]
---[[					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
---]]					
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -82,24 +46,6 @@ _.Zones =
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,
 					}),	
---[[					
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),		
---]]					
 				}),					
 				n(-25, {	-- Pet Battle
 					p(406), -- Beetle
@@ -279,7 +225,6 @@ _.Zones =
 								i(20647),	-- Black Crystal Dagger
 						}),
 					}),
-
 -- REPEATABLE QUESTS
 					qr(q(8319, {	-- Encrypted Twilight Texts
 						["groups"] = {
@@ -302,7 +247,6 @@ _.Zones =
 						["sourceQuests"] = { 8323 },	-- True Believers
 						["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in and has a chance to contain one or more of the recipes. Quest is repeatable.|r", 
 					})),
-					
 -- LEGENDARY QUESTS
 					ql(q(7785, {	-- Examine the Vessel
 						["groups"] = {
@@ -327,7 +271,6 @@ _.Zones =
 						["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
 						["sourceQuests"] = { 7785 },	-- Examine the Vessel
 					})),
-
 -- CLASS HALL QUESTS
 					q(43002, {	-- Blessed Blade of the Windseeker
 						["groups"] = {
@@ -335,7 +278,6 @@ _.Zones =
 						["qg"] = 14347,	-- Highlord Demitrian
 						["classes"]= { 7 },	-- Shaman
 					}),
-
 --[[ MICRO-HOLIDAY - CALL OF THE SCARAB
 					desc(qwe(qh(45785)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
 					desc(qwe(qa(45787)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
@@ -853,33 +795,6 @@ END OF MICRO-HOLIDAY --]]
 						dr(	1	, i(	10199	)), --	Crusader's Leggings
 						dr(	1	, i(	10183	)), --	Swashbuckler's Boots
 					}), 
-					n(-93, {		-- Silithus (The Wound)
-						["groups"] = {
-							n(132591, {	-- Ogmot the Mad
-								["groups"] = {},
-								["questID"] = 50334,
-							}),
-							n(132578, {	-- Qroshekx
-								["groups"] = {
-									dr(11, i(156851)),	-- Silithid Mini-Tank
-								},
-								["questID"] = 50255,
-							}),
-							n(132580, {	-- Ssinkrix
-								["groups"] = {
-									dr(10, i(156851)),	-- Silithid Mini-Tank
-								},
-								["questID"] = 50223,
-							}),
-							n(132584, {	-- Xaarshej
-								["groups"] = {
-									dr(9, i(156851)),	-- Silithid Mini-Tank
-								},
-								["questID"] = 50224,
-							}),
-						},
-						["lvl"] = 110,
-					}),
 	--				n(54533, { 		-- Prince Lakma - no loot			}), 
 				}),
 				n( -2, {	-- Vendors
@@ -1136,7 +1051,118 @@ END OF MICRO-HOLIDAY --]]
 					},
 					["icon"] = "Interface\\Icons\\achievement_zone_silithus_01",
 					["description"] = "|cff66ccffThis is an outdoor zone, a non-instanced version of Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj. There are no mobs or entrances to the interior of the Ahn'Qiraj temple.|r",					
-				}),	
+				}),
+				n(-93, {	-- Silithus (The Wound)
+					["groups"] = {
+						n(-17, { -- Quests
+							["groups"] = {
+								qh(49982, {	-- Witness to the Wound
+									["groups"] = {
+									},
+									["qg"] = 132254, -- Nathanos Blightcaller
+									["sourceQuests"] = { 50341 } , -- A Recent Discovery
+								}),	
+								qh(50053, {	-- Lazy Prospectors
+									["groups"] = {
+									},
+									["qg"] = 132147, -- Grol Warblade
+									["sourceQuests"] = { 49982 } , -- Witness to the Wound
+								}),	
+								qh(50052, {	-- No Spies Allowed
+									["groups"] = {
+									},
+									["qg"] = 132045, -- Gizmax Greasebolt
+									["sourceQuests"] = { 49982 } , -- Witness to the Wound
+								}),	
+								qh(50232, {	-- The Twilight Survivor
+									["groups"] = {
+									},
+									["qg"] = 132147, -- Grol Warblade
+									["sourceQuests"] = { 50053 , 50052 } , -- Lazy Prospectors / No Spies Allowed
+								}),	
+								qh(50358, {	-- Desert Research
+									["groups"] = {
+									},
+									["qg"] = 132147, -- Grol Warblade
+									["sourceQuests"] = { 50053 , 50052 } , -- Lazy Prospectors / No Spies Allowed
+								}),	
+								qh(50231, {	-- Larvae By The Dozen
+									["groups"] = {
+									},
+									["qg"] = 132040, -- Pixni Rustbomb
+									["sourceQuests"] = { 50358 } , -- Desert Research
+								}),	
+								qh(50230, {	-- The Source of Power
+									["groups"] = {
+									},
+									["qg"] = 132040, -- Pixni Rustbomb
+									["sourceQuests"] = { 50358 } , -- Desert Research
+								}),	
+								qh(50229, {	-- A Wee Bit O' Cloth
+									["groups"] = {
+									},
+									["description"] = "You get this quest by visiting the Twilight Outhouse located at 29.6, 69.6",
+									["sourceQuests"] = { 50358 } , -- Desert Research 
+								}),	
+								qh(50360, {	-- Khadgar's Request
+									["groups"] = {
+									},
+									["qg"] = 132147, -- Grol Warblade
+									["sourceQuests"] = { 50232 ,50231 , 50230 } , -- The Twilight Survivor / Larvae By The Dozen / The Source of Power
+								}),	
+								qh(50055, {	-- The Speaker's Perspective
+									["groups"] = {
+									},
+									["qg"] = 130033, -- Archmage Khadgar
+									["sourceQuests"] = { 50360 } , -- Khadgar's Request
+								}),	
+								qh(50364, {	-- The Blood of Azeroth
+									["groups"] = {
+									},
+									["qg"] = 130216, -- Magni Bronzebear
+									["sourceQuests"] = { 50055 } , -- The Speaker's Perspective
+								}),	
+								qh(50300, {	-- The Speaker's Call
+									["groups"] = {
+									},
+									["qg"] = 132147, -- Grol Warblade
+									["sourceQuests"] = { 50364 } , -- The Blood of Azeroth
+								}),	
+								qh(50057, {	-- The Power in Our Hands
+									["groups"] = {
+									},
+									["qg"] = 133388, -- Magni Bronzebeard
+									["sourceQuests"] = { 50300 } , -- The Speaker's Call
+								}),	
+							},
+						}),
+						n(-16, { -- Rares
+							n(132591, {	-- Ogmot the Mad
+								["groups"] = {
+								},
+								["questID"] = 50334,
+							}),
+							n(132578, {	-- Qroshekx
+								["groups"] = {
+									i(156851),	-- Silithid Mini-Tank
+								},
+								["questID"] = 50255,
+							}),
+							n(132580, {	-- Ssinkrix
+								["groups"] = {
+									i(156851),	-- Silithid Mini-Tank
+								},
+								["questID"] = 50223,
+							}),
+							n(132584, {	-- Xaarshej
+								["groups"] = {
+									i(156851),	-- Silithid Mini-Tank
+								},
+								["questID"] = 50224,
+							}),
+						}),
+					},
+				}),
 			},		
 			["achievementID"] = 856,
 			["lvl"] = 40,

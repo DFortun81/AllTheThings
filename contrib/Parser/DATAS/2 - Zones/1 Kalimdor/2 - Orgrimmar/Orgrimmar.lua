@@ -847,6 +847,16 @@ _.Zones =
 					}),
 				}),
 				h(n(-17, {	-- Quests
+					q(49977, {	-- Summons to Orgrimmar
+						["groups"] = {
+						},
+					}),	
+					q(50341, {	-- A Recent Discovery
+						["groups"] = {
+						},
+						["qg"] = 132254, -- Nathanos Blightcaller
+						["sourceQuests"] = { 49977 } , -- Summons  to Orgrimmar
+					}),	
 					qdg(qh(27400, {	-- Mastering the Arcane
 						["groups"] = {
 							i(65468),	-- Staff of the Arcane Path
