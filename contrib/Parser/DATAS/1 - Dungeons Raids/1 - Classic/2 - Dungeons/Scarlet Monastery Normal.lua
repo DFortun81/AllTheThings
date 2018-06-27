@@ -9,49 +9,6 @@ _.Instances =
 			inst(316, { 	-- Scarlet Monastery
 				["groups"] = {
 					d(1, {		-- Normal
-						n( -3, {	-- Holiday
-							["groups"] = {
-								n(23682, { -- Headless Horseman
-									["groups"] = {
-										i(149574, { -- Loot-Stuffed Pumpkin [Rare Quality]
-											i( 33292), 	-- Hallowed Helm
-											i(117356), 	-- The Horseman's Sinister Slicer (i600)
-											i(117355), 	-- The Horseman's Horrific Hood (i600)
-											i( 33154), 	-- Sinister Squashling
-											nld({    -- Legacy
-												i(38175), 	-- The Horseman's Blade (i110)
-												i(49128), 	-- The Horseman's Baleful Blade (i200)
-												i(33808), 	-- The Horseman's Helm (i110)
-												i(49126), 	-- The Horseman's Horrific Helm (i200)
-												i(71326), 	-- The Horseman's Horrific Helm (i365)
-												i(87569), 	-- The Horseman's Horrific Hood (i470)
-												i(71325), 	-- The Horseman's Sinister Saber (i365)
-												i(87570), 	-- The Horseman's Sinister Slicer (i470)
-											}),
-										}),
-										i(117392, { -- Loot-Stuffed Pumpkin [Epic Quality]
-											i( 33292), 	-- Hallowed Helm
-											i( 33808), 	-- The Horseman's Helm (i110)
-											i(117355), 	-- The Horseman's Horrific Hood (i600)
-											i(117356), 	-- The Horseman's Sinister Slicer (i600)
-											i( 33154), 	-- Sinister Squashling
-											i( 37012), 	-- The Horseman's Reins
-											nld({    -- Legacy
-												i(38175), 	-- The Horseman's Blade (i110)
-												i(49128), 	-- The Horseman's Baleful Blade (i200)
-												i(49126), 	-- The Horseman's Horrific Helm (i200)
-												i(71326), 	-- The Horseman's Horrific Helm (i365)
-												i(87569), 	-- The Horseman's Horrific Hood (i470)
-												i(71325), 	-- The Horseman's Sinister Saber (i365)
-												i(87570), 	-- The Horseman's Sinister Slicer (i470)
-											}),
-										}),
-									},
-									["description"] = "|cff66ccffYou can only loot the bag once per day per toon by running it through the Dungeon queue on your first run.|r",
-									["u"] = 26,
-								}),
-							},
-						}),
 						n(-17, {	-- Quests
 							qg(64827, q(31513)),	-- Blades of the Anointed
 							qg(64854, q(31514)),	-- Unto Dust Thou Shalt Return

@@ -1601,17 +1601,17 @@ _.WorldEvents =
 					}),
 					n(-139, { -- Bosses
 						n(25740, { -- Ahune
-							["description"] = "|cff66ccffYou can only loot the satchel once per day per toon by running it through the Dungeon queue on your first run.|r",
+							["description"] = "|cff66ccffYou can only loot the satchels once per day per toon by completing your first run of the day.|r",
 							["maps"] = { 728 },	-- The Slave Pens
 							["groups"] = {
 								ach(263),	-- Ice the Frost Lord
-								un(21, i(149753, { -- Knapsack of Chilled Goods
+								un(21, i(149753, { -- Knapsack of Chilled Goods [Uncommon Quality]
 									["groups"] = {
 										un(21, dr(5, i(117373))),	-- Frostscythe of Lord Ahune
 									},
 									["lvl"] = 23,
 								})),
-								un(21, i(117394, {	-- Satchel of Chilled Goods
+								un(21, i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
 									["groups"] = {
 										un(21, dr(6, i(138838))), 	-- Illusion: Deathfrost
 										un(21, dr(5, i(117373))),	-- Frostscythe of Lord Ahune
@@ -1796,9 +1796,7 @@ _.WorldEvents =
 							["groups"] = {},
 							["qg"] = 25975,	-- Master Fire Eater
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								11731, -- Torch Tossing
-							},
+							["sourceQuests"] = 11731, -- Torch Tossing
 							["maps"] = {
 								301,	-- Stormwind City
 								341,	-- Ironforge
@@ -1848,9 +1846,7 @@ _.WorldEvents =
 							["groups"] = {},
 							["qg"] = 26113,	-- Master Flame Eater
 							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								11922, -- Torch Tossing
-							},
+							["sourceQuests"] = 11922, -- Torch Tossing
 							["maps"] = {
 								321,	-- Orgrimmar
 								362,	-- Thunder Bluff
@@ -1876,22 +1872,14 @@ _.WorldEvents =
 						{
 							["questID"] = 11891, -- An Innocent Disguise
 							["qg"] = 25324,		 -- Earthen Ring Guide
-							["sourceQuests"] = {
-								11886, -- Unusual Activity
-							},
-							["maps"] = {
-								43, -- Ashenvale
-							},	 
+							["sourceQuests"] = 11886, -- Unusual Activity
+							["maps"] = { 43, } -- Ashenvale	 
 						},
 						{
 							["questID"] = 12012, -- Inform the Elder
 							["qg"] = 25324,		 -- Earthen Ring Guide
-							["sourceQuests"] = {
-								11891, -- An Innocent Disguise
-							},
-							["maps"] = {
-								43, -- Ashenvale
-							},
+							["sourceQuests"] = 11891, -- An Innocent Disguise
+							["maps"] = { 43, } -- Ashenvale
 						},
 					}),
 					n(-2, { -- Vendors
