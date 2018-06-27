@@ -50,8 +50,16 @@ _.Achievements =
 						crit(8),	-- Shake Your Bunny-Maker
 					}),
 					ach(1793, {	-- For the Children (Children's WeeK)
-						title(104),	-- Matron
-						title(105),	-- Patron
+						title(104, {	-- Matron
+							["groups"] = {
+							},
+							["description"] = "Must login with a female character.",
+						}),
+						title(105, {	-- Patron
+							["groups"] = {
+							},
+							["description"] = "Must login with a male character.",
+						}),
 						crit(1),	-- Home Alone
 						crit(2),	-- Bad Example
 						crit(3),	-- Daily Chores
