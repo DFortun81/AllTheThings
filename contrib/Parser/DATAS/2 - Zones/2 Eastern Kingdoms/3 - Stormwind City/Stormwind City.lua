@@ -342,6 +342,22 @@ _.Zones =
 					}),
 				}),
 				na(-17, {	-- Quests
+					qa(50371, {	-- Summons to Stormwind
+						["groups"] = {
+						},
+					}),	
+					qa(49976, {	-- Gifts of the Fallen
+						["groups"] = {
+						},
+						["qg"] = 132255, -- Master Mathias Shawa
+						["sourceQuests"] = { 50371 } , -- Summons to Stormwind
+					}),	
+					qa(49981, {	-- Witness to the Wound
+						["groups"] = {
+						},
+						["qg"] = 132255, -- Master Mathias Shawa
+						["sourceQuests"] = { 49976 } , -- Gifts of the Fallen
+					}),	
 					qdg(qa(27355, {	-- A Boon for the Powerful
 						["groups"] = {
 							i(65496),	-- Staff of Justified Sins
