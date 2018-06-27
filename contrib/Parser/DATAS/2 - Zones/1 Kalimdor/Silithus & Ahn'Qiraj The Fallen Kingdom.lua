@@ -1096,7 +1096,7 @@ END OF MICRO-HOLIDAY --]]
 									["groups"] = {
 									},
 									["qg"] = 131963, -- Nolan Speed
-									["sourceQuests"] = { 50228 ,50227 , 50226 } , -- The Twilight Survivor / Larvae By The Dozen / The Source of Power
+									["sourceQuests"] = { 50228 } , -- The Twilight Survivor
 								}),	
 								qa(50049, {	-- The Speaker's Perspective
 									["groups"] = {
@@ -1162,7 +1162,7 @@ END OF MICRO-HOLIDAY --]]
 									["groups"] = {
 									},
 									["qg"] = 132147, -- Grol Warblade
-									["sourceQuests"] = { 50232 ,50231 , 50230 } , -- The Twilight Survivor / Larvae By The Dozen / The Source of Power
+									["sourceQuests"] = { 50232 } , -- The Twilight Survivor
 								}),	
 								qh(50055, {	-- The Speaker's Perspective
 									["groups"] = {
