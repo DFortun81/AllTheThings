@@ -1796,6 +1796,78 @@ _.WorldEvents =
 								["u"] = 26, -- Hallow's End
 							}),
 						}),
+						q(8356, { -- Flexing for Nougat (Alliance)
+							["qg"] = 6740,	-- Innkeeper Allison
+							["maps"] = { 301 }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 26, -- Hallow's End
+						}),
+						q(8355, { -- Incoming Gumdrop (Alliance)
+							["qg"] = 5111,	-- Innkeeper Firebrew
+							["maps"] = { 341 }, -- Ironforge
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 26, -- Hallow's End
+						}),
+						q(8353, { -- Chicken Clucking for a Mint (Alliance)
+							["qg"] = 6740,	-- Innkeeper Allison
+							["maps"] = { 301 }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 26, -- Hallow's End
+						}),
+						q(8357, { -- Dancing for Marzipan (Alliance)
+							["qg"] = 6735,	-- Innkeeper Saelienne
+							["maps"] = { 381 }, -- Darnassus
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 26, -- Hallow's End
+						}),
+						q(8311, { -- Hallow's End Treats for Jesper!
+							["qg"] = 15310,	-- Jesper
+							["maps"] = { 30 }, -- Elwynn Forest
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
+								8356, -- Flexing for Nougat (Alliance)
+								8355, -- Incoming Gumdrop (Alliance)
+								8353, -- Chicken Clucking for a Mint (Alliance)
+								8357, -- Dancing for Marzipan (Alliance)
+							},
+							["u"] = 26, -- Hallow's End
+						}),
+						q(8359, { -- Flexing for Nougat (Horde)
+							["qg"] = 6929,	-- Innkeeper Gryshka
+							["maps"] = { 321 }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
+							["u"] = 26, -- Hallow's End
+						}),
+						q(8358, { -- Incoming Gumdrop (Horde)
+							["qg"] = 11814,	-- Kali Remik
+							["maps"] = { 321 }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
+							["u"] = 26, -- Hallow's End
+						}),
+						q(8354, { -- Chicken Clucking for a Mint (Horde)
+							["qg"] = 6741,	-- Innkeeper Norman
+							["maps"] = { 382 }, -- Undercity
+							["races"] = HORDE_ONLY,
+							["u"] = 26, -- Hallow's End
+						}),
+						q(8360, { -- Dancing for Marzipan (Horde)
+							["qg"] = 6746,	-- Innkeeper Pala
+							["maps"] = { 362 }, -- Thunder Bluff
+							["races"] = HORDE_ONLY,
+							["u"] = 26, -- Hallow's End
+						}),
+						q(8312, { -- Hallow's End Treats for Spoops!
+							["qg"] = 15309,	-- Spoops
+							["maps"] = { 382 }, -- Undercity
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								8359, -- Flexing for Nougat (Horde)
+								8358, -- Incoming Gumdrop (Horde)
+								8354, -- Chicken Clucking for a Mint (Horde)
+								8360, -- Dancing for Marzipan (Horde)
+							},
+							["u"] = 26, -- Hallow's End
+						}),
 					}),
 					n(-96, { -- Quest NPCs
 						["groups"] = {
@@ -1819,17 +1891,20 @@ _.WorldEvents =
 						["u"] = 26, -- Hallow's End
 					}),
 					n(-16, { -- Rares
-						["groups"] = {
-							n(96323, { -- Arachnis
-								["groups"] = {
-									i(128794), -- Sack of Spectral Spiders
-								},
-								["questID"] = 39617,
-								["maps"] = { 971, 973, 974, 975, 991, 976, 980, 981, 982, 976, 990 }, -- Lunarfall [971-991]; Frostwall [976-990]
-								["description"] = "Arachnis is only present in your Garrison if you've applied the |cFFFFD700Creepy Crawlers|r decoration. This can be purchased with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your Garrison.",	
-								["u"] = 26, -- Hallow's End
-							}),
-						},
+						i(128664, { -- Creepy Crawlers
+							["groups"] = {
+								n(96323, { -- Arachnis
+									["groups"] = {
+										i(128794), -- Sack of Spectral Spiders
+									},
+									["questID"] = 39617,
+									["maps"] = { 971, 973, 974, 975, 991, 976, 980, 981, 982, 976, 990 }, -- Lunarfall [971-991]; Frostwall [976-990]	
+									["u"] = 26, -- Hallow's End
+								}),
+							},
+						["u"] = 26, -- Hallow's End
+						["description"] = "Arachnis is only present in your Garrison if you've applied the |cFFFFD700Creepy Crawlers|r decoration. This can be purchased with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your Garrison.",
+						}),
 					}),
 					n(-2, { -- Vendors
 						n(53757, { -- Chub <Candy & Toy Vendor>
