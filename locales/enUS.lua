@@ -1996,6 +1996,7 @@ AllTheThings.Locales.enUS = {
 		[208535] = "Dried Acorn",
 		[209072] = "Stolen Crate",
 		[209076] = "Anson's Crate",
+		[209094] = "Stolen Crate",
 		[209095] = "Edgar's Crate",
 		[209270] = "Step 2: Page 78",
 		[209620] = "Darkmoon Treasure Chest",
