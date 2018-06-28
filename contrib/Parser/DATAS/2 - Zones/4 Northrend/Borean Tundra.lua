@@ -708,7 +708,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25590,	-- Fizzcrank Fullthrottle
-								["sourceQuest"] = 11708,
+								["sourceQuest"] = 11707,
 							}),
 							q(11704, {	--  King Mrgl-Mrgl [A]
 								["groups"] = {
@@ -2218,6 +2218,18 @@ _.Zones =
 								["qg"] = 25477,	-- Crafty Wobblesprocket
 								["sourceQuest"] = 11729,
 							}),
+							qa(11710, {	--  What's the Matter with the Transmatter? [A]
+								["groups"] = {
+								},
+								["qg"] = 25702,	-- Mordle Cogspinner
+								["sourceQuest"] = 11708,
+							}),
+							qa(11692, {	--  Check in With Bixie [A]
+								["groups"] = {
+								},
+								["qg"] = 25702,	-- Mordle Cogspinner
+								["sourceQuest"] = 11710,
+							}),
 						})),
 						h(sz(1264, 12, {	-- The Geyser Fields NOTE: Should be Taunka'le Village
 							q(11647, {	-- Neutralizing the Cauldrons [H]
@@ -2345,18 +2357,6 @@ _.Zones =
 								},
 								["qg"] = 25604,	-- Sage Highmesa
 								["sourceQuest"] = 11687,
-							}),
-							qa(11710, {	--  What's the Matter with the Transmatter? [A]
-								["groups"] = {
-								},
-								["qg"] = 25702,	-- Mordle Cogspinner
-								["sourceQuest"] = 11708,
-							}),
-							qa(11692, {	--  Check in With Bixie [A]
-								["groups"] = {
-								},
-								["qg"] = 25702,	-- Mordle Cogspinner
-								["sourceQuest"] = 11710,
 							}),
 							qa(11693, {	--  Oh Great... Plagued Magnataur! [A]
 								["groups"] = {
