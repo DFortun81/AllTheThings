@@ -340,6 +340,32 @@ _.Zones =
 									["sourceQuest"] = 11901,
 								}),
 							}),
+							q(11913, {	-- Take No Chances [A]
+								["groups"] = {
+									i(37205),  -- Transborean Mantle
+									i(37404),  -- Floodplain Cover
+									i(37481),  -- Chestguard of Salved Wounds
+									i(37524),  -- Scout's Signet Ring
+								},
+								["qg"] = 26085,	-- Wendy Darren
+								["sourceQuest"] = 11902,
+							}),
+							q(11908, {	--  Reference Material [A]
+								["groups"] = {
+								},
+								["qg"] = 26084,	-- Jeremiah Hawning
+								["sourceQuest"] = 11902,
+							}),
+							q(12035, {	-- Repurposed Technology [A]
+								["groups"] = {
+									i(37206),  -- Weathered Worker Cloak
+									i(37403),  -- Marshwalker Boots
+									i(37417),  -- Westrift Handcovers
+									i(37482),  -- Mightstone Legplates
+								},
+								["qg"] = 26084,	-- Jeremiah Hawning
+								["sourceQuest"] = 11908,
+							}),
 							q(11903, {	-- It's Time for Action [A]
 								["groups"] = {
 									i(37208),  -- Transborean Bracers
@@ -485,6 +511,99 @@ _.Zones =
 							}),
 						}),
 						crit(4, {	-- The Blue Dragonflight
+						--Note: Need to determine if Coldarra quests are part of this criteria.
+						--		Monitoring the Rift quests are confirmed
+							q(11576, {	--  Monitoring the Rift: Cleftcliff Anomaly
+								["groups"] = {
+								},
+								["qg"] = 25291,	-- Librarian Garren
+							}),
+							q(11582, {	--  Monitoring the Rift: Sundered Chasm
+								["groups"] = {
+								},
+								["qg"] = 25291,	-- Librarian Garren
+								["sourceQuest"] = 11576,
+							}),
+							q(12728, {	-- Monitoring the Rift: Winterfin Cavern
+								["groups"] = {
+									i(37282),  -- Cavernous Gauntlets
+									i(37320),  -- Spaulders of Echoing Truth
+									i(37458),  -- Wristguards of Rocky Horror
+									i(37471),  -- Girdle of Ripped Space
+								},
+								["qg"] = 25291,	-- Librarian Garren
+								["sourceQuest"] = 11582,
+							}),
+							q(11587, {	--  Prison Break
+								["groups"] = {
+								},
+								["qg"] = 25262,	-- Librarian Donathan
+								["breadcrumbQuestID"] = {11574,11575},
+							}),
+							q(11590, {	--  Abduction
+								["groups"] = {
+								},
+								["qg"] = 25262,	-- Librarian Donathan
+								["sourceQuest"] = 11587,
+							}),
+							q(11646, {	--  The Borean Inquisition
+								["groups"] = {
+								},
+								["qg"] = 25262,	-- Librarian Donathan
+								["sourceQuest"] = 11590,
+							}),
+							q(11648, {	--  The Art of Persuasion
+								["groups"] = {
+								},
+								["qg"] = 25480,	-- Librarian Normantis
+								["sourceQuest"] = 11646,
+							}),
+							q(11663, {	--  Sharing Intelligence
+								["groups"] = {
+								},
+								["qg"] = 25480,	-- Librarian Normantis
+								["sourceQuest"] = 11648,
+							}),
+							q(11671, {	--  A Race Against Time
+								["groups"] = {
+								},
+								["qg"] = 25262,	-- Librarian Donathan
+								["sourceQuest"] = 11663,
+							}),
+							q(11679, {	--  Reforging the Key
+								["groups"] = {
+								},
+								["qg"] = 25262,	-- Librarian Donathan
+								["sourceQuest"] = 11671,
+							}),
+							q(11680, {	--  Taking Wing
+								["groups"] = {
+								},
+								["qg"] = 24795,	-- Surristrasz
+								["sourceQuest"] = 11679,
+							}),
+							q(11681, {	-- Rescuing Evanor
+								["groups"] = {
+									i(37224),  -- Sweltering Belt
+									i(37387),  -- Charred Treads
+									i(37429),  -- Glimmering Ringmail Gloves
+									i(37509),  -- Seething Waistguard
+								},
+								["qg"] = 25356,	-- Warmage Anzim
+								["sourceQuest"] = 11680,
+							}),
+							q(11682, {	--  Dragonspeak
+								["groups"] = {
+								},
+								["qg"] = 25785,	-- Archmage Evanor
+								["sourceQuest"] = 11681,
+							}),
+							q(11733, {	--  Traversing the Rift
+								["groups"] = {
+								},
+								["qg"] = 24795,	-- Surristrasz
+								["sourceQuest"] = 11682,
+							}),
 							q(11912, {	--  Nuts for Berries
 								["groups"] = {
 								},
@@ -502,6 +621,50 @@ _.Zones =
 							}),
 						}),
 						crit(5, {	-- Friends from the Sea
+							q(11613, {	-- Karuk's Oath
+								["groups"] = {
+									i(37025),  -- Blubber Carver
+									i(37023),  -- Compact Arrow Launcher
+									i(37024),  -- Medicine Stick
+									i(37022),  -- Shark Stabber
+									i(37021),  -- Claw of the Tuskarr
+									i(37026),  -- Spirit Channeller's Rod
+								},
+								["qg"] = 25435,	-- Karuk
+								["breadcrumbQuestID"] = {12141, 11662},
+							}),
+							q(11619, {	-- Gamel the Cruel
+								["groups"] = {
+									i(37209),  -- Wharfmaster's Hat
+									i(37419),  -- Seaspeaker Mantle
+									i(37541),  -- Giant Turtle Collar
+									i(37523),  -- Rigid Tuskring
+								},
+								["qg"] = 25435,	-- Karuk
+								["sourceQuest"] = 11613,
+							}),
+							q(11620, {	--  A Father's Words
+								["groups"] = {
+								},
+								["qg"] = 25435,	-- Karuk
+								["sourceQuest"] = 11619,
+							}),
+							q(11625, {	--  The Trident of Naz'jan
+								["groups"] = {
+								},
+								["qg"] = 25450,	-- Veehja
+								["sourceQuest"] = 11620,
+							}),
+							q(11626, {	-- The Emissary
+								["groups"] = {
+									i(37213),  -- Iceflow Wristwraps
+									i(37396),  -- Whalehunter Gloves
+									i(37423),  -- Sharkproof Coif
+									i(37487),  -- Seabone Legplates
+								},
+								["qg"] = 25450,	-- Veehja
+								["sourceQuest"] = 11625,
+							}),
 							q(11949, {	--  Not Without a Fight!
 								["groups"] = {
 									i(37211),  -- Iceflow Footwraps
@@ -572,6 +735,68 @@ _.Zones =
 								["qg"] = 25199,	-- Brglmurgl
 								["sourceQuest"] = 11559,
 							}),
+							q(11560, {	-- Oh Noes, the Tadpoles!
+								["groups"] = {
+									i(37034),  -- Lobstrock Slicer
+									i(37508),  -- Sinking Pauldrons
+									i(37558),  -- Tidal Boon
+									i(37527),  -- Shimmering Band
+								},
+								["qg"] = 25197,	-- King Mrgl-Mrgl
+								["sourceQuest"] = 11559,
+							}),
+							q(11562, {	--  I'm Being Blackmailed By My Cleaner
+								["groups"] = {
+								},
+								["qg"] = 25197,	-- King Mrgl-Mrgl
+								["sourceQuest"] = 11560,
+							}),
+							q(11564, {	--  Succulent Orca Stew
+								["groups"] = {
+								},
+								["qg"] = 25211,	-- Cleaver Bmurglbrm
+								["sourceQuest"] = 11562,
+							}),
+							q(11563, {	--  Grmmurggll Mrllggrl Glrggl!!!
+								["groups"] = {
+								},
+								["qg"] = 25205,	-- Mrmrglmr
+								["sourceQuest"] = 11562,
+							}),
+							q(11565, {	--  The Spare Suit
+								["groups"] = {
+								},
+								["qg"] = 25205,	-- Mrmrglmr
+								["sourceQuest"] = 11563,
+							}),
+							q(11566, {	-- Surrender... Not!
+								["groups"] = {
+									i(37215),  -- Lost Sea Oculus
+									i(37392),  -- Soggy Hide Pauldrons
+									i(37426),  -- Rusty Mesh Leggings
+									i(37506),  -- Bogstrok Plate Gloves
+								},
+								["qg"] = 25197,	-- King Mrgl-Mrgl
+								["sourceQuest"] = 11565,
+							}),
+							q(11569, {	--  Keymaster Urmgrgl
+								["groups"] = {
+								},
+								["qg"] = 28375,	-- Glrglrglr
+								["sourceQuest"] = 11571,
+							}),
+							q(11570, {	-- Escape from the Winterfin Caverns
+								["groups"] = {
+									i(37046),  -- Shell Smasher
+									i(37044),  -- Amphibious Speargun
+									i(37041),  -- Scepter of the Winterfin
+									i(37036),  -- Fish-Eye Poker
+									i(37039),  -- Mrgl Blade
+									i(37042),  -- Glimmering Orca Tooth
+								},
+								["qg"] = 25208,	-- Lurgglbr
+								["sourceQuest"] = 11571,
+							}),
 						}),
 						crit(7, {	-- A Family Reunion
 							q(11927, {	--  Word on the Street [A]
@@ -579,12 +804,13 @@ _.Zones =
 								},
 								["qg"] = 26155,	-- Mark Hanes
 								["sourceQuest"] = 11897,
+								["isBreadcrumb"] = true,
 							}),
 							q(11599, {	--  Thassarian, My Brother [A]
 								["groups"] = {
 								},
 								["qg"] = 25251,	-- Leryssa
-								["sourceQuest"] = 11927,
+								["breadcrumbQuestID"] = 11927,
 							}),
 							q(11600, {	-- The Late William Allerton [A]
 								["groups"] = {
@@ -999,7 +1225,7 @@ _.Zones =
 							}),
 						}),
 						crit(7, {	-- Participant Observation
-							q(11702, {	--  King Mrgl-Mrgl [H]
+							q(11702, {	--  King Mrgl-Mrgl [A]
 								["groups"] = {
 								},
 								["qg"] = 25736,	-- Supply Master Taz'ishi
@@ -1009,7 +1235,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
-								["breadcrumbQuestID"] = 11702,
+								["breadcrumbQuestID"] = 11704,
 							}),
 							q(11559, {	--  Winterfin Commerce
 								["groups"] = {
@@ -1022,6 +1248,68 @@ _.Zones =
 								},
 								["qg"] = 25199,	-- Brglmurgl
 								["sourceQuest"] = 11559,
+							}),
+							q(11560, {	-- Oh Noes, the Tadpoles!
+								["groups"] = {
+									i(37034),  -- Lobstrock Slicer
+									i(37508),  -- Sinking Pauldrons
+									i(37558),  -- Tidal Boon
+									i(37527),  -- Shimmering Band
+								},
+								["qg"] = 25197,	-- King Mrgl-Mrgl
+								["sourceQuest"] = 11559,
+							}),
+							q(11562, {	--  I'm Being Blackmailed By My Cleaner
+								["groups"] = {
+								},
+								["qg"] = 25197,	-- King Mrgl-Mrgl
+								["sourceQuest"] = 11560,
+							}),
+							q(11564, {	--  Succulent Orca Stew
+								["groups"] = {
+								},
+								["qg"] = 25211,	-- Cleaver Bmurglbrm
+								["sourceQuest"] = 11562,
+							}),
+							q(11563, {	--  Grmmurggll Mrllggrl Glrggl!!!
+								["groups"] = {
+								},
+								["qg"] = 25205,	-- Mrmrglmr
+								["sourceQuest"] = 11562,
+							}),
+							q(11565, {	--  The Spare Suit
+								["groups"] = {
+								},
+								["qg"] = 25205,	-- Mrmrglmr
+								["sourceQuest"] = 11563,
+							}),
+							q(11566, {	-- Surrender... Not!
+								["groups"] = {
+									i(37215),  -- Lost Sea Oculus
+									i(37392),  -- Soggy Hide Pauldrons
+									i(37426),  -- Rusty Mesh Leggings
+									i(37506),  -- Bogstrok Plate Gloves
+								},
+								["qg"] = 25197,	-- King Mrgl-Mrgl
+								["sourceQuest"] = 11565,
+							}),
+							q(11569, {	--  Keymaster Urmgrgl
+								["groups"] = {
+								},
+								["qg"] = 28375,	-- Glrglrglr
+								["sourceQuest"] = 11571,
+							}),
+							q(11570, {	-- Escape from the Winterfin Caverns
+								["groups"] = {
+									i(37046),  -- Shell Smasher
+									i(37044),  -- Amphibious Speargun
+									i(37041),  -- Scepter of the Winterfin
+									i(37036),  -- Fish-Eye Poker
+									i(37039),  -- Mrgl Blade
+									i(37042),  -- Glimmering Orca Tooth
+								},
+								["qg"] = 25208,	-- Lurgglbr
+								["sourceQuest"] = 11571,
 							}),
 						}),
 						crit(8, {	-- Hellscream's Champion
@@ -1295,7 +1583,7 @@ _.Zones =
 									},
 								}),
 							}),
-							q(11659, {	--  Shatter the Orbs! [H]
+							qh(11659, {	--  Shatter the Orbs! [H]
 								["groups"] = {
 								},
 								["qg"] = 25516,	-- Snow Tracker Grumm
@@ -1325,49 +1613,10 @@ _.Zones =
 							}),
 						})),
 						sz(1264, 3, {	-- Riplash Strand
-							q(11613, {	-- Karuk's Oath
-								["groups"] = {
-									i(37025),  -- Blubber Carver
-									i(37023),  -- Compact Arrow Launcher
-									i(37024),  -- Medicine Stick
-									i(37022),  -- Shark Stabber
-									i(37021),  -- Claw of the Tuskarr
-									i(37026),  -- Spirit Channeller's Rod
-								},
-								["qg"] = 25435,	-- Karuk
-								["breadcrumbQuestID"] = {12141, 11662},
-							}),
-							q(11619, {	-- Gamel the Cruel
-								["groups"] = {
-									i(37209),  -- Wharfmaster's Hat
-									i(37419),  -- Seaspeaker Mantle
-									i(37541),  -- Giant Turtle Collar
-									i(37523),  -- Rigid Tuskring
-								},
-								["qg"] = 25435,	-- Karuk
-								["sourceQuest"] = 11613,
-							}),
-							q(11620, {	--  A Father's Words
+							q(12471, {	--  Cruelty of the Kvaldir
 								["groups"] = {
 								},
-								["qg"] = 25435,	-- Karuk
-								["sourceQuest"] = 11619,
-							}),
-							q(11625, {	--  The Trident of Naz'jan
-								["groups"] = {
-								},
-								["qg"] = 25450,	-- Veehja
-								["sourceQuest"] = 11620,
-							}),
-							q(11626, {	-- The Emissary
-								["groups"] = {
-									i(37213),  -- Iceflow Wristwraps
-									i(37396),  -- Whalehunter Gloves
-									i(37423),  -- Sharkproof Coif
-									i(37487),  -- Seabone Legplates
-								},
-								["qg"] = 25450,	-- Veehja
-								["sourceQuest"] = 11625,
+								["qg"] = 25636,	-- Captured Tuskarr Prisoner
 							}),
 						}),
 						sz(1264, 4, {	-- Kaskala
@@ -1439,11 +1688,6 @@ _.Zones =
 							}),
 						})),
 						sz(1264, 6, {	-- Death's Stand
-							q(12471, {	--  Cruelty of the Kvaldir
-								["groups"] = {
-								},
-								["qg"] = 25636,	-- Captured Tuskarr Prisoner
-							}),
 							qa(12157, {	--  The Lost Courier [A]
 								["groups"] = {
 								},
@@ -1675,99 +1919,8 @@ _.Zones =
 								["qg"] = 25326,	-- Overlord Bor'gorok
 							}),
 						})),
-						sz(1264, 9, {	-- Amber Ledge
-							q(11576, {	--  Monitoring the Rift: Cleftcliff Anomaly
-								["groups"] = {
-								},
-								["qg"] = 25291,	-- Librarian Garren
-							}),
-							q(11582, {	--  Monitoring the Rift: Sundered Chasm
-								["groups"] = {
-								},
-								["qg"] = 25291,	-- Librarian Garren
-								["sourceQuest"] = 11576,
-							}),
-							q(12728, {	-- Monitoring the Rift: Winterfin Cavern
-								["groups"] = {
-									i(37282),  -- Cavernous Gauntlets
-									i(37320),  -- Spaulders of Echoing Truth
-									i(37458),  -- Wristguards of Rocky Horror
-									i(37471),  -- Girdle of Ripped Space
-								},
-								["qg"] = 25291,	-- Librarian Garren
-								["sourceQuest"] = 11582,
-							}),
-							q(11587, {	--  Prison Break
-								["groups"] = {
-								},
-								["qg"] = 25262,	-- Librarian Donathan
-								["breadcrumbQuestID"] = {11574,11575},
-							}),
-							q(11590, {	--  Abduction
-								["groups"] = {
-								},
-								["qg"] = 25262,	-- Librarian Donathan
-								["sourceQuest"] = 11587,
-							}),
-							q(11646, {	--  The Borean Inquisition
-								["groups"] = {
-								},
-								["qg"] = 25262,	-- Librarian Donathan
-								["sourceQuest"] = 11590,
-							}),
-							q(11648, {	--  The Art of Persuasion
-								["groups"] = {
-								},
-								["qg"] = 25480,	-- Librarian Normantis
-								["sourceQuest"] = 11646,
-							}),
-							q(11663, {	--  Sharing Intelligence
-								["groups"] = {
-								},
-								["qg"] = 25480,	-- Librarian Normantis
-								["sourceQuest"] = 11648,
-							}),
-							q(11671, {	--  A Race Against Time
-								["groups"] = {
-								},
-								["qg"] = 25262,	-- Librarian Donathan
-								["sourceQuest"] = 11663,
-							}),
-							q(11679, {	--  Reforging the Key
-								["groups"] = {
-								},
-								["qg"] = 25262,	-- Librarian Donathan
-								["sourceQuest"] = 11671,
-							}),
-							q(11680, {	--  Taking Wing
-								["groups"] = {
-								},
-								["qg"] = 24795,	-- Surristrasz
-								["sourceQuest"] = 11679,
-							}),
-							q(11681, {	-- Rescuing Evanor
-								["groups"] = {
-									i(37224),  -- Sweltering Belt
-									i(37387),  -- Charred Treads
-									i(37429),  -- Glimmering Ringmail Gloves
-									i(37509),  -- Seething Waistguard
-								},
-								["qg"] = 25356,	-- Warmage Anzim
-								["sourceQuest"] = 11680,
-							}),
-							q(11682, {	--  Dragonspeak
-								["groups"] = {
-								},
-								["qg"] = 25785,	-- Archmage Evanor
-								["sourceQuest"] = 11681,
-							}),
-							q(11733, {	--  Traversing the Rift
-								["groups"] = {
-								},
-								["qg"] = 24795,	-- Surristrasz
-								["sourceQuest"] = 11682,
-							}),
-						}),
+						-- sz(1264, 9, {	-- Amber Ledge
+						-- }),
 						h(sz(1264, 10, {	-- Warsong Hold
 							q(11574, {	--  Too Close For Comfort [H]
 								["groups"] = {
@@ -1905,32 +2058,6 @@ _.Zones =
 								},
 								["qg"] = 25249,	-- Midge
 								["sourceQuest"] = 11897,
-							}),
-							q(11908, {	--  Reference Material [A]
-								["groups"] = {
-								},
-								["qg"] = 26084,	-- Jeremiah Hawning
-								["sourceQuest"] = 11902,
-							}),
-							q(11913, {	-- Take No Chances [A]
-								["groups"] = {
-									i(37205),  -- Transborean Mantle
-									i(37404),  -- Floodplain Cover
-									i(37481),  -- Chestguard of Salved Wounds
-									i(37524),  -- Scout's Signet Ring
-								},
-								["qg"] = 26085,	-- Wendy Darren
-								["sourceQuest"] = 11902,
-							}),
-							q(12035, {	-- Repurposed Technology [A]
-								["groups"] = {
-									i(37206),  -- Weathered Worker Cloak
-									i(37403),  -- Marshwalker Boots
-									i(37417),  -- Westrift Handcovers
-									i(37482),  -- Mightstone Legplates
-								},
-								["qg"] = 26084,	-- Jeremiah Hawning
-								["sourceQuest"] = 11908,
 							}),
 						})),
 						a(sz(1264, 12, {	-- The Geyser Fields NOTE: Should be Fizzcrank Airstrip
@@ -2333,69 +2460,6 @@ _.Zones =
 								},
 								["sourceQuest"] = 11609,
 							}),
-						}),
-						-- Need "Winterfin Retreat" Header
-						q(11560, {	-- Oh Noes, the Tadpoles!
-							["groups"] = {
-								i(37034),  -- Lobstrock Slicer
-								i(37508),  -- Sinking Pauldrons
-								i(37558),  -- Tidal Boon
-								i(37527),  -- Shimmering Band
-							},
-							["qg"] = 25197,	-- King Mrgl-Mrgl
-							["sourceQuest"] = 11559,
-						}),
-						q(11562, {	--  I'm Being Blackmailed By My Cleaner
-							["groups"] = {
-							},
-							["qg"] = 25197,	-- King Mrgl-Mrgl
-							["sourceQuest"] = 11560,
-						}),
-						q(11564, {	--  Succulent Orca Stew
-							["groups"] = {
-							},
-							["qg"] = 25211,	-- Cleaver Bmurglbrm
-							["sourceQuest"] = 11562,
-						}),
-						q(11563, {	--  Grmmurggll Mrllggrl Glrggl!!!
-							["groups"] = {
-							},
-							["qg"] = 25205,	-- Mrmrglmr
-							["sourceQuest"] = 11562,
-						}),
-						q(11565, {	--  The Spare Suit
-							["groups"] = {
-							},
-							["qg"] = 25205,	-- Mrmrglmr
-							["sourceQuest"] = 11563,
-						}),
-						q(11566, {	-- Surrender... Not!
-							["groups"] = {
-								i(37215),  -- Lost Sea Oculus
-								i(37392),  -- Soggy Hide Pauldrons
-								i(37426),  -- Rusty Mesh Leggings
-								i(37506),  -- Bogstrok Plate Gloves
-							},
-							["qg"] = 25197,	-- King Mrgl-Mrgl
-							["sourceQuest"] = 11565,
-						}),
-						q(11569, {	--  Keymaster Urmgrgl
-							["groups"] = {
-							},
-							["qg"] = 28375,	-- Glrglrglr
-							["sourceQuest"] = 11571,
-						}),
-						q(11570, {	-- Escape from the Winterfin Caverns
-							["groups"] = {
-								i(37046),  -- Shell Smasher
-								i(37044),  -- Amphibious Speargun
-								i(37041),  -- Scepter of the Winterfin
-								i(37036),  -- Fish-Eye Poker
-								i(37039),  -- Mrgl Blade
-								i(37042),  -- Glimmering Orca Tooth
-							},
-							["qg"] = 25208,	-- Lurgglbr
-							["sourceQuest"] = 11571,
 						}),
 						-- Need "Bloodspore Plains" Header
 						o(187905, {	-- Massive Glowing Egg
