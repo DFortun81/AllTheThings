@@ -147,7 +147,7 @@ _.PetJournal =
 		p(508),		-- Darkshore Cub
 		p(232),		-- Darting Hatchling
 		p(1330),	-- Death Adder Hatchling
-		p(1449),	-- Deathwatch Hatchling
+		un(4, p(1449)),	-- Deathwatch Hatchling
 		p(484),		-- Desert Spider
 		p(233),		-- Deviate Hatchling
 		p(523),		-- Devouring Maggot

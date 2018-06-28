@@ -3,6 +3,15 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	un(1, i(138489)), 	-- Kargath's Sacrified Hands (seems like this never made it to live and has been replaced by other legendaries in Legion)
+	un(1, i(77588)),	-- Replica High Warlord's Quickblade [This version wasn't added]
+	un(1, i(77586)),	-- Replica High Warlord's Spellblade [This version wasn't added]
+	un(1, i(77570)),	-- Replica High Warlord's Battle Mace [This version wasn't added]
+	un(1, i(32192)),	-- Chancellor's Barricade
+	un(1, i(32175)),	-- Chancellor's Hacker
+	un(1, i(32190)),	-- Chancellor's Spellblade
+	un(1, i(32183)),	-- Chancellor's Maul
+	un(1, i(77587)),	-- Replica High Warlord's Destroyer [This version wasn't added]
 	i(129738), -- Verus
 	i(147204), -- Black Apron - TEST
 	i(23388), -- Tranquillen Tabard

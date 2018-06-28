@@ -434,18 +434,17 @@ _.GearSets =
 				i(137088), -- Ceann-Ar Charger
 				i(151823), -- The Great Storm's Eye
 				i(143728), -- Timeless Stratagem
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
 				i(137053), -- Kazzalax, Fujieda's Fury
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
-				i(102246), -- Xing-Ho, Breath of Yu'lon
 				i(137018), -- Destiny Driver
 				i(137107), -- Mannoroth's Bloodletting Manacles
 				i(137060), -- Archavon's Heavy Hand
 				i(137108), -- Kakushan's Stormscale Gauntlets
-				--i(138489), -- Kargath's Sacrified Hands
 				i(137087), -- Naj'entus's Vertebrae
 				i(146667), -- Rethu's Incessant Courage (Paladin, Warrior, Death Knight)
 				i(137089), -- Thundergod's Vigor 

@@ -1847,7 +1847,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 									ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
 										["collectible"] = false,
 										["groups"] = {
-											i(114968),	-- Deathwatch Hatchling - Revered
+											un(4, i(114968)),	-- Deathwatch Hatchling - Revered
 										},
 										["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
 									}),
