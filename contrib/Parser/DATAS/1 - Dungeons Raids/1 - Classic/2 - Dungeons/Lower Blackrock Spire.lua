@@ -125,10 +125,10 @@ _.Instances =
 					n( 16080, {			-- Mor Greyhoof Summonable Read Description
 						["groups"] = {
 							i(22057, {	
-								i(22325), -- Belt of the Trickster
-								i(22322), -- The Jaw Breaker
-								i(22306), -- Ironweave Belt
-								i(22319), -- Tome of Divine Right
+								un(11, i(22325)), -- Belt of the Trickster
+								un(11, i(22322)), -- The Jaw Breaker
+								un(11, i(22306)), -- Ironweave Belt
+								un(11, i(22319)), -- Tome of Divine Right
 							}),
 						},
 						["description"] = "Requires Brazier of Invocation (Dungeon Set 2 Questline) to summon this boss.",
