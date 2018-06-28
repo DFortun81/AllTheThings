@@ -1736,6 +1736,66 @@ _.WorldEvents =
 								["u"] = 26, -- Hallow's End
 							}),
 						}),
+						q(29431, { -- A Friend in Need (Horde)
+							["qg"] = 53763,	-- Gretchen Fenlow
+							["maps"] = { 382 }, -- Undercity
+							["races"] = HORDE_ONLY,
+							["u"] = 26, -- Hallow's End
+						}),
+						q(29415, { -- Missing Heirlooms (Horde)
+							["qg"] = 54141,	-- Edgar Goodwin
+							["maps"] = { 321 }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 29431, -- A Friend in Need (Horde)
+							["u"] = 26, -- Hallow's End
+						}),
+						q(29416, { -- Fencing the Goods (Horde)
+							["qg"] = 54142,	-- Hired Courier
+							["maps"] = { 321 }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 29415, -- Missing Heirlooms (Horde)
+							["u"] = 26, -- Hallow's End
+						}),
+						q(29425, { -- Shopping Around (Horde)
+							["qg"] = 44866,	-- Auctioneer Drezmit
+							["maps"] = { 321 }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 29416, -- Fencing the Goods (Horde)
+							["u"] = 26, -- Hallow's End
+						}),
+						q(29426, { -- Taking Precautions (Horde)
+							["qg"] = 54146,	-- Delian Sunshade
+							["maps"] = { 321 }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 29425, -- Shopping Around (Horde)
+							["u"] = 26, -- Hallow's End
+						}),
+						q(29427, { -- The Collector's Agent (Horde)
+							["qg"] = 54146,	-- Delian Sunshade
+							["maps"] = { 321 }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 29426, -- Taking Precautions (HORDE)
+							["u"] = 26, -- Hallow's End
+						}),
+						o(209094, { -- Stolen Crate
+							q(29428, { -- What Now? (Horde)
+								["maps"] = { 321, }, -- Orgrimmar
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 29427, -- The Collector's Agent (Horde)
+								["u"] = 26, -- Hallow's End
+							}),
+						}),
+						o(209095, { -- Edgar's Crate
+							q(29429, { -- The Creepy Crate (Horde)
+								["groups"] = {
+									un(26, i(71076)), -- Creepy Crate (Pet)
+								},
+								["maps"] = { 321, }, -- Orgrimmar
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 29428, -- What Now? (Horde)
+								["u"] = 26, -- Hallow's End
+							}),
+						}),
 					}),
 					n(-96, { -- Quest NPCs
 						["groups"] = {
