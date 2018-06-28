@@ -566,188 +566,188 @@ _.Zones =
 				}),
 				n(-2, {		-- Vendors
 					na(64028, {	-- Challenger Soong <Challenge Dungeons>
-						["groups"] = {	
-							i(90049),	-- Girdle of the Lich Lord
-							i(90050),	-- Treads of the Lich Lord
-							i(90051),	-- Chestguard of the Lich Lord
-							i(90052),	-- Grasps of the Lich Lord
-							i(90053),	-- Crown of the Lich Lord
-							i(90054),	-- Legplates of the Lich Lord
-							i(90055),	-- Shoulderplates of the Lich Lord
-							i(90056),	-- Bracers of the Lich Lord
-							i(90059),	-- Waistguard of the Cycle
-							i(90060),	-- Sandals of the Cycle
-							i(90061),	-- Gloves of the Cycle
-							i(90062),	-- Hood of the Cycle
-							i(90063),	-- Leggings of the Cycle
-							i(90064),	-- Robes of the Cycle
-							i(90065),	-- Branches of the Cycle
-							i(90066),	-- Bracers of the Cycle
-							i(90068),	-- Cinch of the Howling Beast
-							i(90069),	-- Boots of the Howling Beast
-							i(90070),	-- Chestguard of the Howling Beast
-							i(90071),	-- Grips of the Howling Beast
-							i(90072),	-- Helm of the Howling Beast
-							i(90073),	-- Legguards of the Howling Beast
-							i(90074),	-- Shoulderguards of the Howling Beast
-							i(90075),	-- Wristwraps of the Howling Beast
-							i(90079),	-- Girdle of the Elemental Triad
-							i(90080),	-- Boots of the Elemental Triad
-							i(90081),	-- Gloves of the Elemental Triad
-							i(90082),	-- Hood of the Elemental Triad
-							i(90083),	-- Leggings of the Elemental Triad
-							i(90084),	-- Robes of the Elemental Triad
-							i(90085),	-- Spaulders of the Elemental Triad
-							i(90086),	-- Bracers of the Elemental Triad
-							i(90088),	-- Greatbelt of the Regal Lord
-							i(90089),	-- Treads of the Regal Lord
-							i(90090),	-- Chestwrap of the Regal Lord
-							i(90091),	-- Handwraps of the Regal Lord
-							i(90092),	-- Crown of the Regal Lord
-							i(90093),	-- Legwraps of the Regal Lord
-							i(90094),	-- Shoulderguards of the Regal Lord
-							i(90095),	-- Bracers of the Regal Lord
-							i(90096),	-- Girdle of the Holy Warrior
-							i(90097),	-- Greatboots of the Holy Warrior
-							i(90098),	-- Chestplate of the Holy Warrior
-							i(90099),	-- Gauntlets of the Holy Warrior
-							i(90100),	-- Greathelm of the Holy Warrior
-							i(90101),	-- Legplates of the Holy Warrior
-							i(90102),	-- Shoulderplate of the Holy Warrior
-							i(90103),	-- Wristguards of the Holy Warrior
-							i(90110),	-- Cord of the Light
-							i(90111),	-- Steps of the Light
-							i(90112),	-- Bracers of the Light
-							i(90113),	-- Pauldrons of the Light
-							i(90114),	-- Robes of the Light
-							i(90115),	-- Hands of the Light
-							i(90116),	-- Cowl of the Light
-							i(90117),	-- Leggings of the Light
-							i(90119),	-- Girdle of the Silent Assassin
-							i(90120),	-- Hood of the Silent Assassin
-							i(90121),	-- Tabi of the Silent Assassin
-							i(90122),	-- Shadowwrap of the Silent Assassin
-							i(90123),	-- Gloves of the Silent Assassin
-							i(90124),	-- Leggings of the Silent Assassin
-							i(90125),	-- Spaulders of the Silent Assassin
-							i(90126),	-- Bracers of the Silent Assassin
-							i(90127),	-- Windfury Bracers
-							i(90128),	-- Windfury Belt
-							i(90129),	-- Windfury Sandals
-							i(90130),	-- Windfury Harness
-							i(90131),	-- Windfury Crushers
-							i(90132),	-- Windfury Mask
-							i(90133),	-- Windfury Legguards
-							i(90134),	-- Windfury Spirit Guides
-							i(90136),	-- Belt of the Betrayer
-							i(90137),	-- Boots of the Betrayer
-							i(90138),	-- Amice of the Betrayer
-							i(90139),	-- Bracers of the Betrayer
-							i(90140),	-- Robes of the Betrayer
-							i(90141),	-- Handguards of the Betrayer
-							i(90142),	-- Horns of the Betrayer
-							i(90143),	-- Leggings of the Betrayer
-							i(90147),	-- Girdle of the Golden King
-							i(90148),	-- Greatboots of the Golden King
-							i(90149),	-- Chestplate of the Golden King
-							i(90150),	-- Reach of the Golden King
-							i(90151),	-- Crown of the Golden King
-							i(90152),	-- Greaves of the Golden King
-							i(90153),	-- Mantle of the Golden King
-							i(90154),	-- Bracers of the Golden King
+						["groups"] = {
+							un(4, i(90049)),	-- Girdle of the Lich Lord
+							un(4, i(90050)),	-- Treads of the Lich Lord
+							un(4, i(90051)),	-- Chestguard of the Lich Lord
+							un(4, i(90052)),	-- Grasps of the Lich Lord
+							un(4, i(90053)),	-- Crown of the Lich Lord
+							un(4, i(90054)),	-- Legplates of the Lich Lord
+							un(4, i(90055)),	-- Shoulderplates of the Lich Lord
+							un(4, i(90056)),	-- Bracers of the Lich Lord
+							un(4, i(90059)),	-- Waistguard of the Cycle
+							un(4, i(90060)),	-- Sandals of the Cycle
+							un(4, i(90061)),	-- Gloves of the Cycle
+							un(4, i(90062)),	-- Hood of the Cycle
+							un(4, i(90063)),	-- Leggings of the Cycle
+							un(4, i(90064)),	-- Robes of the Cycle
+							un(4, i(90065)),	-- Branches of the Cycle
+							un(4, i(90066)),	-- Bracers of the Cycle
+							un(4, i(90068)),	-- Cinch of the Howling Beast
+							un(4, i(90069)),	-- Boots of the Howling Beast
+							un(4, i(90070)),	-- Chestguard of the Howling Beast
+							un(4, i(90071)),	-- Grips of the Howling Beast
+							un(4, i(90072)),	-- Helm of the Howling Beast
+							un(4, i(90073)),	-- Legguards of the Howling Beast
+							un(4, i(90074)),	-- Shoulderguards of the Howling Beast
+							un(4, i(90075)),	-- Wristwraps of the Howling Beast
+							un(4, i(90079)),	-- Girdle of the Elemental Triad
+							un(4, i(90080)),	-- Boots of the Elemental Triad
+							un(4, i(90081)),	-- Gloves of the Elemental Triad
+							un(4, i(90082)),	-- Hood of the Elemental Triad
+							un(4, i(90083)),	-- Leggings of the Elemental Triad
+							un(4, i(90084)),	-- Robes of the Elemental Triad
+							un(4, i(90085)),	-- Spaulders of the Elemental Triad
+							un(4, i(90086)),	-- Bracers of the Elemental Triad
+							un(4, i(90088)),	-- Greatbelt of the Regal Lord
+							un(4, i(90089)),	-- Treads of the Regal Lord
+							un(4, i(90090)),	-- Chestwrap of the Regal Lord
+							un(4, i(90091)),	-- Handwraps of the Regal Lord
+							un(4, i(90092)),	-- Crown of the Regal Lord
+							un(4, i(90093)),	-- Legwraps of the Regal Lord
+							un(4, i(90094)),	-- Shoulderguards of the Regal Lord
+							un(4, i(90095)),	-- Bracers of the Regal Lord
+							un(4, i(90096)),	-- Girdle of the Holy Warrior
+							un(4, i(90097)),	-- Greatboots of the Holy Warrior
+							un(4, i(90098)),	-- Chestplate of the Holy Warrior
+							un(4, i(90099)),	-- Gauntlets of the Holy Warrior
+							un(4, i(90100)),	-- Greathelm of the Holy Warrior
+							un(4, i(90101)),	-- Legplates of the Holy Warrior
+							un(4, i(90102)),	-- Shoulderplate of the Holy Warrior
+							un(4, i(90103)),	-- Wristguards of the Holy Warrior
+							un(4, i(90110)),	-- Cord of the Light
+							un(4, i(90111)),	-- Steps of the Light
+							un(4, i(90112)),	-- Bracers of the Light
+							un(4, i(90113)),	-- Pauldrons of the Light
+							un(4, i(90114)),	-- Robes of the Light
+							un(4, i(90115)),	-- Hands of the Light
+							un(4, i(90116)),	-- Cowl of the Light
+							un(4, i(90117)),	-- Leggings of the Light
+							un(4, i(90119)),	-- Girdle of the Silent Assassin
+							un(4, i(90120)),	-- Hood of the Silent Assassin
+							un(4, i(90121)),	-- Tabi of the Silent Assassin
+							un(4, i(90122)),	-- Shadowwrap of the Silent Assassin
+							un(4, i(90123)),	-- Gloves of the Silent Assassin
+							un(4, i(90124)),	-- Leggings of the Silent Assassin
+							un(4, i(90125)),	-- Spaulders of the Silent Assassin
+							un(4, i(90126)),	-- Bracers of the Silent Assassin
+							un(4, i(90127)),	-- Windfury Bracers
+							un(4, i(90128)),	-- Windfury Belt
+							un(4, i(90129)),	-- Windfury Sandals
+							un(4, i(90130)),	-- Windfury Harness
+							un(4, i(90131)),	-- Windfury Crushers
+							un(4, i(90132)),	-- Windfury Mask
+							un(4, i(90133)),	-- Windfury Legguards
+							un(4, i(90134)),	-- Windfury Spirit Guides
+							un(4, i(90136)),	-- Belt of the Betrayer
+							un(4, i(90137)),	-- Boots of the Betrayer
+							un(4, i(90138)),	-- Amice of the Betrayer
+							un(4, i(90139)),	-- Bracers of the Betrayer
+							un(4, i(90140)),	-- Robes of the Betrayer
+							un(4, i(90141)),	-- Handguards of the Betrayer
+							un(4, i(90142)),	-- Horns of the Betrayer
+							un(4, i(90143)),	-- Leggings of the Betrayer
+							un(4, i(90147)),	-- Girdle of the Golden King
+							un(4, i(90148)),	-- Greatboots of the Golden King
+							un(4, i(90149)),	-- Chestplate of the Golden King
+							un(4, i(90150)),	-- Reach of the Golden King
+							un(4, i(90151)),	-- Crown of the Golden King
+							un(4, i(90152)),	-- Greaves of the Golden King
+							un(4, i(90153)),	-- Mantle of the Golden King
+							un(4, i(90154)),	-- Bracers of the Golden King
 						},
 						["description"] = "Can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon.  You can only buy the set for your class.",
 					}),
 					nh(63994, {	-- Challenger Wuli <Challenge Dungeons>
 						["groups"] = {	
-							i(90049),	-- Girdle of the Lich Lord
-							i(90050),	-- Treads of the Lich Lord
-							i(90051),	-- Chestguard of the Lich Lord
-							i(90052),	-- Grasps of the Lich Lord
-							i(90053),	-- Crown of the Lich Lord
-							i(90054),	-- Legplates of the Lich Lord
-							i(90055),	-- Shoulderplates of the Lich Lord
-							i(90056),	-- Bracers of the Lich Lord
-							i(90059),	-- Waistguard of the Cycle
-							i(90060),	-- Sandals of the Cycle
-							i(90061),	-- Gloves of the Cycle
-							i(90062),	-- Hood of the Cycle
-							i(90063),	-- Leggings of the Cycle
-							i(90064),	-- Robes of the Cycle
-							i(90065),	-- Branches of the Cycle
-							i(90066),	-- Bracers of the Cycle
-							i(90068),	-- Cinch of the Howling Beast
-							i(90069),	-- Boots of the Howling Beast
-							i(90070),	-- Chestguard of the Howling Beast
-							i(90071),	-- Grips of the Howling Beast
-							i(90072),	-- Helm of the Howling Beast
-							i(90073),	-- Legguards of the Howling Beast
-							i(90074),	-- Shoulderguards of the Howling Beast
-							i(90075),	-- Wristwraps of the Howling Beast
-							i(90079),	-- Girdle of the Elemental Triad
-							i(90080),	-- Boots of the Elemental Triad
-							i(90081),	-- Gloves of the Elemental Triad
-							i(90082),	-- Hood of the Elemental Triad
-							i(90083),	-- Leggings of the Elemental Triad
-							i(90084),	-- Robes of the Elemental Triad
-							i(90085),	-- Spaulders of the Elemental Triad
-							i(90086),	-- Bracers of the Elemental Triad
-							i(90088),	-- Greatbelt of the Regal Lord
-							i(90089),	-- Treads of the Regal Lord
-							i(90090),	-- Chestwrap of the Regal Lord
-							i(90091),	-- Handwraps of the Regal Lord
-							i(90092),	-- Crown of the Regal Lord
-							i(90093),	-- Legwraps of the Regal Lord
-							i(90094),	-- Shoulderguards of the Regal Lord
-							i(90095),	-- Bracers of the Regal Lord
-							i(90096),	-- Girdle of the Holy Warrior
-							i(90097),	-- Greatboots of the Holy Warrior
-							i(90098),	-- Chestplate of the Holy Warrior
-							i(90099),	-- Gauntlets of the Holy Warrior
-							i(90100),	-- Greathelm of the Holy Warrior
-							i(90101),	-- Legplates of the Holy Warrior
-							i(90102),	-- Shoulderplate of the Holy Warrior
-							i(90103),	-- Wristguards of the Holy Warrior
-							i(90110),	-- Cord of the Light
-							i(90111),	-- Steps of the Light
-							i(90112),	-- Bracers of the Light
-							i(90113),	-- Pauldrons of the Light
-							i(90114),	-- Robes of the Light
-							i(90115),	-- Hands of the Light
-							i(90116),	-- Cowl of the Light
-							i(90117),	-- Leggings of the Light
-							i(90119),	-- Girdle of the Silent Assassin
-							i(90120),	-- Hood of the Silent Assassin
-							i(90121),	-- Tabi of the Silent Assassin
-							i(90122),	-- Shadowwrap of the Silent Assassin
-							i(90123),	-- Gloves of the Silent Assassin
-							i(90124),	-- Leggings of the Silent Assassin
-							i(90125),	-- Spaulders of the Silent Assassin
-							i(90126),	-- Bracers of the Silent Assassin
-							i(90127),	-- Windfury Bracers
-							i(90128),	-- Windfury Belt
-							i(90129),	-- Windfury Sandals
-							i(90130),	-- Windfury Harness
-							i(90131),	-- Windfury Crushers
-							i(90132),	-- Windfury Mask
-							i(90133),	-- Windfury Legguards
-							i(90134),	-- Windfury Spirit Guides
-							i(90136),	-- Belt of the Betrayer
-							i(90137),	-- Boots of the Betrayer
-							i(90138),	-- Amice of the Betrayer
-							i(90139),	-- Bracers of the Betrayer
-							i(90140),	-- Robes of the Betrayer
-							i(90141),	-- Handguards of the Betrayer
-							i(90142),	-- Horns of the Betrayer
-							i(90143),	-- Leggings of the Betrayer
-							i(90147),	-- Girdle of the Golden King
-							i(90148),	-- Greatboots of the Golden King
-							i(90149),	-- Chestplate of the Golden King
-							i(90150),	-- Reach of the Golden King
-							i(90151),	-- Crown of the Golden King
-							i(90152),	-- Greaves of the Golden King
-							i(90153),	-- Mantle of the Golden King
-							i(90154),	-- Bracers of the Golden King
+							un(4, i(90049)),	-- Girdle of the Lich Lord
+							un(4, i(90050)),	-- Treads of the Lich Lord
+							un(4, i(90051)),	-- Chestguard of the Lich Lord
+							un(4, i(90052)),	-- Grasps of the Lich Lord
+							un(4, i(90053)),	-- Crown of the Lich Lord
+							un(4, i(90054)),	-- Legplates of the Lich Lord
+							un(4, i(90055)),	-- Shoulderplates of the Lich Lord
+							un(4, i(90056)),	-- Bracers of the Lich Lord
+							un(4, i(90059)),	-- Waistguard of the Cycle
+							un(4, i(90060)),	-- Sandals of the Cycle
+							un(4, i(90061)),	-- Gloves of the Cycle
+							un(4, i(90062)),	-- Hood of the Cycle
+							un(4, i(90063)),	-- Leggings of the Cycle
+							un(4, i(90064)),	-- Robes of the Cycle
+							un(4, i(90065)),	-- Branches of the Cycle
+							un(4, i(90066)),	-- Bracers of the Cycle
+							un(4, i(90068)),	-- Cinch of the Howling Beast
+							un(4, i(90069)),	-- Boots of the Howling Beast
+							un(4, i(90070)),	-- Chestguard of the Howling Beast
+							un(4, i(90071)),	-- Grips of the Howling Beast
+							un(4, i(90072)),	-- Helm of the Howling Beast
+							un(4, i(90073)),	-- Legguards of the Howling Beast
+							un(4, i(90074)),	-- Shoulderguards of the Howling Beast
+							un(4, i(90075)),	-- Wristwraps of the Howling Beast
+							un(4, i(90079)),	-- Girdle of the Elemental Triad
+							un(4, i(90080)),	-- Boots of the Elemental Triad
+							un(4, i(90081)),	-- Gloves of the Elemental Triad
+							un(4, i(90082)),	-- Hood of the Elemental Triad
+							un(4, i(90083)),	-- Leggings of the Elemental Triad
+							un(4, i(90084)),	-- Robes of the Elemental Triad
+							un(4, i(90085)),	-- Spaulders of the Elemental Triad
+							un(4, i(90086)),	-- Bracers of the Elemental Triad
+							un(4, i(90088)),	-- Greatbelt of the Regal Lord
+							un(4, i(90089)),	-- Treads of the Regal Lord
+							un(4, i(90090)),	-- Chestwrap of the Regal Lord
+							un(4, i(90091)),	-- Handwraps of the Regal Lord
+							un(4, i(90092)),	-- Crown of the Regal Lord
+							un(4, i(90093)),	-- Legwraps of the Regal Lord
+							un(4, i(90094)),	-- Shoulderguards of the Regal Lord
+							un(4, i(90095)),	-- Bracers of the Regal Lord
+							un(4, i(90096)),	-- Girdle of the Holy Warrior
+							un(4, i(90097)),	-- Greatboots of the Holy Warrior
+							un(4, i(90098)),	-- Chestplate of the Holy Warrior
+							un(4, i(90099)),	-- Gauntlets of the Holy Warrior
+							un(4, i(90100)),	-- Greathelm of the Holy Warrior
+							un(4, i(90101)),	-- Legplates of the Holy Warrior
+							un(4, i(90102)),	-- Shoulderplate of the Holy Warrior
+							un(4, i(90103)),	-- Wristguards of the Holy Warrior
+							un(4, i(90110)),	-- Cord of the Light
+							un(4, i(90111)),	-- Steps of the Light
+							un(4, i(90112)),	-- Bracers of the Light
+							un(4, i(90113)),	-- Pauldrons of the Light
+							un(4, i(90114)),	-- Robes of the Light
+							un(4, i(90115)),	-- Hands of the Light
+							un(4, i(90116)),	-- Cowl of the Light
+							un(4, i(90117)),	-- Leggings of the Light
+							un(4, i(90119)),	-- Girdle of the Silent Assassin
+							un(4, i(90120)),	-- Hood of the Silent Assassin
+							un(4, i(90121)),	-- Tabi of the Silent Assassin
+							un(4, i(90122)),	-- Shadowwrap of the Silent Assassin
+							un(4, i(90123)),	-- Gloves of the Silent Assassin
+							un(4, i(90124)),	-- Leggings of the Silent Assassin
+							un(4, i(90125)),	-- Spaulders of the Silent Assassin
+							un(4, i(90126)),	-- Bracers of the Silent Assassin
+							un(4, i(90127)),	-- Windfury Bracers
+							un(4, i(90128)),	-- Windfury Belt
+							un(4, i(90129)),	-- Windfury Sandals
+							un(4, i(90130)),	-- Windfury Harness
+							un(4, i(90131)),	-- Windfury Crushers
+							un(4, i(90132)),	-- Windfury Mask
+							un(4, i(90133)),	-- Windfury Legguards
+							un(4, i(90134)),	-- Windfury Spirit Guides
+							un(4, i(90136)),	-- Belt of the Betrayer
+							un(4, i(90137)),	-- Boots of the Betrayer
+							un(4, i(90138)),	-- Amice of the Betrayer
+							un(4, i(90139)),	-- Bracers of the Betrayer
+							un(4, i(90140)),	-- Robes of the Betrayer
+							un(4, i(90141)),	-- Handguards of the Betrayer
+							un(4, i(90142)),	-- Horns of the Betrayer
+							un(4, i(90143)),	-- Leggings of the Betrayer
+							un(4, i(90147)),	-- Girdle of the Golden King
+							un(4, i(90148)),	-- Greatboots of the Golden King
+							un(4, i(90149)),	-- Chestplate of the Golden King
+							un(4, i(90150)),	-- Reach of the Golden King
+							un(4, i(90151)),	-- Crown of the Golden King
+							un(4, i(90152)),	-- Greaves of the Golden King
+							un(4, i(90153)),	-- Mantle of the Golden King
+							un(4, i(90154)),	-- Bracers of the Golden King
 						},
 						["description"] = "Can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon.  You can only buy the set for your class.",
 					}),

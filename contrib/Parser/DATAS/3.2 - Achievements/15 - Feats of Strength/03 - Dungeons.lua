@@ -60,12 +60,12 @@ _.Achievements =
 						un(39, title(296, {	-- ,Lord of Blackrock
 							["groups"] = {
 							},
-							["description"] = "Must login with a male character.",
+							["description"] = "Must earn with a male character.",
 						})),
 						un(39, title(297, {	-- ,Lady of Blackrock
 							["groups"] = {
 							},
-							["description"] = "Must login with a female character.",
+							["description"] = "Must earn with a female character.",
 						})),
 					})),
 					un(12, ach(8903, {	-- Mistwalker
