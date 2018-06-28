@@ -1652,16 +1652,12 @@ _.WorldEvents =
 					}),
 					n(-25, { -- Pet Battles
 						["groups"] = {
-							i(128664, { -- Creepy Crawlers
-								["groups"] = {
-									un(26, p(1741)), -- Ghastly Rat
-									un(26, p(1740)), -- Ghost Maggot
-									un(26, p(1730)), -- Spectral Spinner
-								},
-								["u"] = 26, -- Hallow's End
-								["description"] = "In order to summon |cFFFFD700Ghastly Rats, Ghost Maggots, and Spectral Spinners|r you will need to do the dailies in your Garrison.  Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause |cFFFFD700Ghastly Rats, Ghost Maggots, and Spectral Spinners to spawn|r."								
-							}),
+							un(26, p(1741)), -- Ghastly Rat
+							un(26, p(1740)), -- Ghost Maggot
+							un(26, p(1730)), -- Spectral Spinner
 						},
+						["u"] = 26, -- Hallow's End
+						["description"] = "The |cFFFFD700Ghastly Rat|r, |cFFFFD700Ghost Maggot|r, and |cFFFFD700Spectral Spinner|r are only active if you've applied the |cFFFFD700Creepy Crawlers|r decoration to your Garrison. This can be purchased with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your Garrison.",								
 					}),
 					n(-17, { -- Quests
 						q(43162, { -- Under the Crooked Tree
@@ -1679,6 +1675,66 @@ _.WorldEvents =
 							["u"] = 26, -- Hallow's End
 							["qg"] = 109734, -- Hag of the Crooked Tree
 							["maps"] = { 1018 }, -- Val'sharah
+						}),
+						q(29430, { -- A Friend in Need (Alliance)
+							["qg"] = 51934,	-- Gretchen Fenlow
+							["maps"] = { 30 }, -- Elwynn Forest
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 26, -- Hallow's End
+						}),
+						q(29392, { -- Missing Heirlooms (Alliance)
+							["qg"] = 53949,	-- Anson Hastings
+							["maps"] = { 301 }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 29430, -- A Friend in Need (Alliance)
+							["u"] = 26, -- Hallow's End
+						}),
+						q(29398, { -- Fencing the Goods (Alliance)
+							["qg"] = 53950,	-- Hired Courier
+							["maps"] = { 301 }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 29392, -- Missing Heirlooms (Alliance)
+							["u"] = 26, -- Hallow's End
+						}),
+						q(29399, { -- Shopping Around (Alliance)
+							["qg"] = 8719,	-- Auctioneer Fitch
+							["maps"] = { 301 }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 29398, -- Fencing the Goods (Alliance)
+							["u"] = 26, -- Hallow's End
+						}),
+						q(29402, { -- Taking Precautions (Alliance)
+							["qg"] = 54021,	-- Hudson Barnes
+							["maps"] = { 301 }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 29399, -- Shopping Around (Alliance)
+							["u"] = 26, -- Hallow's End
+						}),
+						q(29403, { -- The Collector's Agent (Alliance)
+							["qg"] = 54021,	-- Hudson Barnes
+							["maps"] = { 301 }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 29402, -- Taking Precautions (Alliance)
+							["u"] = 26, -- Hallow's End
+						}),
+						o(209072, { -- Stolen Crate
+							q(29411, { -- What Now? (Alliance)
+								["maps"] = { 301, }, -- Stormwind City
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 29403, -- The Collector's Agent (Alliance)
+								["u"] = 26, -- Hallow's End
+							}),
+						}),
+						o(209076, { -- Anson's Crate
+							q(29413, { -- The Creepy Crate (Alliance)
+								["groups"] = {
+									un(26, i(71076)), -- Creepy Crate (Pet)
+								},
+								["maps"] = { 301, }, -- Stormwind City
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 29411, -- What Now? (Alliance)
+								["u"] = 26, -- Hallow's End
+							}),
 						}),
 					}),
 					n(-96, { -- Quest NPCs
@@ -1699,25 +1755,21 @@ _.WorldEvents =
 								un(26, i(128807)), -- Coin of Many Faces
 							}),
 						},
-						["maps"] = { 947 }, -- Shadowmoon Valleey
+						["maps"] = { 947 }, -- Shadowmoon Valley (Draenor)
+						["u"] = 26, -- Hallow's End
 					}),
 					n(-16, { -- Rares
 						["groups"] = {
-							i(128664, { -- Creepy Crawlers
+							n(96323, { -- Arachnis
 								["groups"] = {
-									n(96323, { -- Arachnis
-										["groups"] = {
-											i(128794), -- Sack of Spectral Spiders
-										},
-										["questID"] = 39617,
-										["u"] = 26,
-									}),
+									i(128794), -- Sack of Spectral Spiders
 								},
-								["description"] = "In order to summon |cFFFFD700Arachnis|r you will need to do the dailies in your Garrison.  Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause |cFFFFD700Arachnis|r to spawn.  This rare can be spawned year round."								
+								["questID"] = 39617,
+								["maps"] = { 971, 973, 974, 975, 991, 976, 980, 981, 982, 976, 990 }, -- Lunarfall [971-991]; Frostwall [976-990]
+								["description"] = "Arachnis is only present in your Garrison if you've applied the |cFFFFD700Creepy Crawlers|r decoration. This can be purchased with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your Garrison.",	
+								["u"] = 26, -- Hallow's End
 							}),
 						},
-						["u"] = 26, -- Hallow's End
-						["maps"] = { 971, 973, 974, 975, 991, 976, 980, 981, 982, 976, 990 } -- Lunarfall [971-991]; Frostwall [976-990]
 					}),
 					n(-2, { -- Vendors
 						n(53757, { -- Chub <Candy & Toy Vendor>

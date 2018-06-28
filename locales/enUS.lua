@@ -1994,6 +1994,7 @@ AllTheThings.Locales.enUS = {
 		[208159] = "Candy Bucket",
 		[208365] = "Recently Disturbed Dirt Mound",
 		[208535] = "Dried Acorn",
+		[209072] = "Stolen Crate",
 		[209076] = "Anson's Crate",
 		[209095] = "Edgar's Crate",
 		[209270] = "Step 2: Page 78",

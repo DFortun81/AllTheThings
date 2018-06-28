@@ -202,19 +202,6 @@ _.Zones =
 							}),
 						},
 						["u"] = 22,
-					}),
-					n(-58, { 		-- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								o(209076, {	-- Anson's Crate
-									qa(29413, {	-- The Creepy Crate
-										un(26, i(71076)),	-- Creepy Crate (Pet)
-									}),
-								}),
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
 					}),					
 					ach(11848, { 	-- 13th Anniversary
 						["groups"] = {
