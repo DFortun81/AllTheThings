@@ -1132,13 +1132,13 @@ END OF MICRO-HOLIDAY --]]
 									["groups"] = {
 									},
 									["qg"] = 132147, -- Grol Warblade
-									["sourceQuests"] = { 50053 , 50052 } , -- Lazy Prospectors / No Spies Allowed
+									["sourceQuests"] = { 50053 } , -- Lazy Prospectors
 								}),	
 								qh(50358, {	-- Desert Research
 									["groups"] = {
 									},
 									["qg"] = 132147, -- Grol Warblade
-									["sourceQuests"] = { 50053 , 50052 } , -- Lazy Prospectors / No Spies Allowed
+									["sourceQuests"] = { 50053 } , -- Lazy Prospectors
 								}),	
 								qh(50231, {	-- Larvae By The Dozen
 									["groups"] = {
@@ -1184,6 +1184,7 @@ END OF MICRO-HOLIDAY --]]
 								}),	
 								q(50057, {	-- The Power in Our Hands
 									["groups"] = {
+										ach(12071), -- Crucible's Promise
 									},
 									["qg"] = 133388, -- Magni Bronzebeard
 									["sourceQuests"] = { 50300, 50056 } , -- The Speaker's Call
