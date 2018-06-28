@@ -1400,20 +1400,6 @@ u(44924, 9);	-- Sun-Lute of the Phoenix King
 u(85513, 9);	-- Thundering Serpent Hatchling
 u(90176, 9);	-- Flintlocke's Blasthammer
 
---------------------------------------------------------------------------------------------------------------------------------------------
---                            11 This item is Bind on Pickup but can be obtained under certain circumstances.                             --
---------------------------------------------------------------------------------------------------------------------------------------------
--- Template: u(, 11);		--
-
-u(22305, 11);	-- Ironweave Mantle
-u(22306, 11); 	-- Ironweave Belt
-u(22317, 11); 	-- Lefty's Brass Knuckle
-u(22318, 11); 	-- Malgen's Long Bow
-u(22319, 11); 	-- Tome of Divine Right
-u(22322, 11); 	-- The Jaw Breaker
-u(22325, 11); 	-- Belt of the Trickster
-u(22330, 11); 	-- Shroud of Arcane Mastery
-
 -----------------------------------------------------
 --                PVP GEAR SECTION:                --
 --  PLEASE DO NOT MOVE AT ALL SO I CAN KEEP TRACK  --

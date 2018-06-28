@@ -425,10 +425,10 @@ _.Instances =
 						o(181074, { 		-- Arena Spoils Summonable Read Description
 							["groups"] = {
 								i(21986, { 		-- Banner of Provocation
-									i(22305), 		-- Ironweave Mantle 
-									i(22317), 		-- Lefty's Brass Knuckle 
-									i(22318), 		-- Malgen's Long Bow
-									i(22330), 		-- Shroud of Arcane Mastery 
+									un(11, i(22305)), 		-- Ironweave Mantle 
+									un(11, i(22317)), 		-- Lefty's Brass Knuckle 
+									un(11, i(22318)), 		-- Malgen's Long Bow
+									un(11, i(22330)), 		-- Shroud of Arcane Mastery 
 								}),
 							},
 							["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot grey chest on grey grate after killing the mobs.",
