@@ -96,12 +96,12 @@ _.Achievements =
 					un(12, ach(3009)),	-- Kiss and Make Up (10 player)
 					un(12, ach(3011)),	-- Kiss and Make Up (25 player)
 					un(12, ach(3179, {	-- Knock, Knock, Knock on Wood (10 player)
-						un(2, ach(3178)),	-- Knock, Knock on Wood (10 player)
-						un(2, ach(3177)),	-- Knock on Wood (10 player)
+						un(12, ach(3178)),	-- Knock, Knock on Wood (10 player)
+						un(12, ach(3177)),	-- Knock on Wood (10 player)
 					})),
 					un(12, ach(3187, {	-- Knock, Knock, Knock on Wood (25 player)
-						un(2, ach(3186)),	-- Knock, Knock on Wood (25 player)
-						un(2, ach(3185)),	-- Knock on Wood (25 player)
+						un(12, ach(3186)),	-- Knock, Knock on Wood (25 player)
+						un(12, ach(3185)),	-- Knock on Wood (25 player)
 					})),
 					un(12, ach(3176, {	-- Lose Your Illusion (10 player)
 						un(12, ach(2977)),	-- Siffed (10 player)
@@ -122,6 +122,67 @@ _.Achievements =
 					un(12, ach(3076)),	-- Nine Lives (10 player)
 					un(12, ach(3077)),	-- Nine Lives (25 player)
 					un(12, ach(3138)),	-- Not-So-Friendly Fire (10 player)
+					un(12, ach(2995)),	-- Not-So-Friendly Fire (25 player)
+					un(12, ach(3036)),	-- Observed (10 player)
+					un(12, ach(3037)),	-- Observed (25 player)
+					un(12, ach(684)),	-- Onyxia's Lair (Level 60)
+					un(12, ach(3056, {	-- Orbit-uary (10 player)
+						un(12, ach(2915)),	-- Nuked from Orbit (10 player)
+						un(12, ach(2914)),	-- Orbital Devastation (10 player)
+						un(12, ach(2913)),	-- Orbital Bombardment (10 player)
+					})),						
+					un(12, ach(3057, {	-- Orbit-uary (25 player)
+						un(12, ach(2917)),	-- Nuked from Orbit (25 player)
+						un(12, ach(2916)),	-- Orbital Devastation (25 player)
+						un(12, ach(2918)),	-- Orbital Bombardment (25 player)
+					})),
+					un(38, ach(8533)),	-- Ordos
+					un(12, ach(2959)),	-- Rubble and Roll (10 player)
+					un(12, ach(2960)),	-- Rubble and Roll (25 player)
+					un(12, ach(2989)),	-- Set Up Us the Bomb (10 player)
+					un(12, ach(3237)),	-- Set Up Us the Bomb (25 player)
+					un(12, ach(2996)),	-- Shadowdodger (10 player)
+					un(12, ach(2997)),	-- Shadowdodger (25 player)
+					un(12, ach(2925)),	-- Shattered (10 player)
+					un(12, ach(2926)),	-- Shattered (25 player)
+					un(12, ach(2911)),	-- Shutout (10 player)
+					un(12, ach(2912)),	-- Shutout (25 player)
+					un(12, ach(2969)),	-- Staying Buffed All Winter (10 player)
+					un(12, ach(2970)),	-- Staying Buffed All Winter (25 player)
+					un(12, ach(2930)),	-- Stokin' the Furnace (10 player)
+					un(12, ach(2929)),	-- Stokin' the Furnace (25 player)
+					un(12, ach(3003)),	-- Supermassive (10 player)
+					un(12, ach(3002)),	-- Supermassive (25 player)
+					un(12, ach(2909)),	-- Take Out Those Turrets (10 player)
+					un(12, ach(2910)),	-- Take Out Those Turrets (25 player)
+					un(12, ach(2888)),	-- The Antechamber of Ulduar (10 player)
+					un(12, ach(2889)),	-- The Antechamber of Ulduar (25 player)
+					un(12, ach(2892)),	-- The Descent into Madness (10 player)
+					un(12, ach(2893)),	-- The Descent into Madness (25 player)
+					un(12, ach(2186, {	-- The Immortal
+						un(39, title(108)),	-- the Immortal
+					})),
+					un(12, ach(2890)),	-- The Keepers of Ulduar (10 player)
+					un(12, ach(2891)),	-- The Keepers of Ulduar (25 player)
+					un(12, ach(2894)),	-- The Secrets of Ulduar (10 player)
+					un(12, ach(2895)),	-- The Secrets of Ulduar (25 player)
+					un(12, ach(2886)),	-- The Siege of Ulduar (10 player)
+					un(12, ach(2887)),	-- The Siege of Ulduar (25 player)
+					un(12, ach(2187, {	-- The Undying
+						un(39, title(109)),	-- the Undying
+					})),
+					un(12, ach(3014)),	-- They're Coming Out of the Walls (10 player)
+					un(12, ach(3017)),	-- They're Coming Out of the Walls (25 player)
+					un(12, ach(2907)),	-- Three Car Garage (10 player)
+					un(12, ach(2908)),	-- Three Car Garage (25 player)
+					un(12, ach(2905)),	-- Unbroken (10 player)
+					un(12, ach(2906)),	-- Unbroken (25 player)
+					un(12, ach(2975)),	-- Who Needs Bloodlust? (10 player)
+					un(12, ach(2976)),	-- Who Needs Bloodlust? (25 player)
+					un(12, ach(2951)),	-- With Open Arms (10 player)
+					un(12, ach(2952)),	-- With Open Arms (25 player)
+					un(12, ach(691)),	-- Zul'Aman
+					un(12, ach(688)),	-- Zul'Gurub
 				},
 			}),
 		},
