@@ -990,12 +990,17 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qp129(qg(43239, qh(26543))),	-- Clammy Hands
 					qg(15116, qh( 8228)),	-- Could I get a Fishing Flier?
 					qp185(qg(42506, qh(26226))),	-- Crawfish Creole
-					qg(6929, q( 6385, {	-- Doras the Wind Rider Master
-						["groups"] = {
-						},
-						["races"] = {2,6,8},
-					})),
 --]]					
+					qh(6385, {	-- Doras the Wind Rider Master
+						["qg"] = 6929, --  Innkeeper Gryshka
+						["sourceQuests"] = { 6384 }, -- Ride to Orgrimmar
+						["races"] = {2,6,8},
+					}),
+					qh(6386, {	-- Return to Razor Hill
+						["qg"] = 3310, -- Doras
+						["sourceQuests"] = { 6385 }, -- Doras the Wind Rider Master
+						["races"] = {2,8},
+					}),
 					qg(14720, qh(13842, {	-- Dread Head Redemption
 						i(119325),	-- Bow of Fire
 						i(119326),  -- Ring of Pardons
@@ -1115,11 +1120,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qg(35068, qh(26642)),	-- Preserving the Barrens
 --					qg(95234, qh(44092)),	-- Protect the Home Front (LEGACY - pre-Legion)
 					qg(14720, qh(25275)),	-- Report to the Labor Captain (QG in Orgrimmar, additional QGs 39605 and 86832, previous Horde leaders)
-					qg( 3310, q(  6386, {	-- Return to Razor Hill
-						["groups"] = {
-						},
-						["races"] = {2,8},
-					})),
+					
 					qg(14720, qh( 26840)),	-- Return to the Highlands (add'l QGs 39605 and 86832, previous Horde leaders)
 --]]
 					qh(28909, {	-- Sauranok Will Point the Way

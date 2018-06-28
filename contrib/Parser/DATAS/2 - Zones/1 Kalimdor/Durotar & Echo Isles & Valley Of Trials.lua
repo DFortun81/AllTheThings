@@ -118,6 +118,7 @@ _.Zones =
 								}),
 							}),
 							n(-17, { 	-- Quests
+								qg(24497, qh(11412)),	-- There and Back Again
 								qg(24510, qh(29396, { -- A New Supplier of Souvenirs
 									i(56836), -- Overflowing Purple Brefest Stein
 								})),
@@ -330,21 +331,13 @@ _.Zones =
 				n(-17, {	-- Quests
 --[[				
 					qg(56013, q(31450)),	-- A New Fate (QG on The Wandering Isle)
-					qg(101035, qh(41002, {	-- A Weapon of the Horde
-						["groups"] = {
-						},
-						["classes"]= {12},
-					})),
-					qg(	3208, qh(25263)),	-- Arnak Fireblade
 					qg(97296, qh(40976, {	-- Audience with the Warchief
 						["groups"] = {
 						},
 						["classes"]= {12},
 					})),
-					qg(39379, qh(25648)),	-- Beyond Durotar (not available if 28496 is completed)
 					qg(41621, qh(25924)),	-- Call of Duty
 					qg(27216, qh(12191)),	-- Chug and Chuck!
-					qg(3336, qh(  840)),	-- Conscript of the Horde (breadcrumb quest for 871)
 					qg(100873, qh(40983, {	-- Demons Among Them
 						["groups"] = {
 						},
@@ -352,11 +345,31 @@ _.Zones =
 					})),
 					qg(100873, qh(40607)),	-- Demons Among Us
 					qg(100866, qh(40760)),	-- Emissary
-					qg(39423, qh(25176)),	-- Exploiting the Situation
 					qg(100453, qh(40522)),	-- Fate of the Horde
 					qg(54142, qh(29416)),	-- Fencing the Goods
 					qg(68023, qh(32319)),	-- Find Thrall! (QG in Kun-Lai Summit)
 --]]					
+
+					q(834, {	-- Winds in the Desert
+						["qg"] = 3293, -- Rezlak
+					}),
+					q(835, {	-- Securing the Lines
+						["qg"] = 3293, -- Rezlak
+					}),
+					qh(840, {	-- Conscript of the Horde (breadcrumb quest for 871)
+						["qg"] = 3336, -- Takrin Pathseeker
+						["sourceQuests"] = { 25188 }, -- Watershed Patrol
+						["isBreadcrumb"] = true,
+					}),
+					q(6365, {	-- Meats to Orgrimmar (add'l QG 3881)
+						["qg"] = 3489, -- Grimtak
+						["races"] = {2,8},
+					}),
+					q(6384, {	-- Ride to Orgrimmar
+						["qg"] = 41140, -- Burok
+						["sourceQuests"] = { 6365 }, -- Meats to Orgrimmar
+						["races"] = {2,6,8},
+					}),
 					qh(25165, {	-- Never Trust a Big Barb and a Smile
 						["qg"] = 10578, -- Bom'bay
 						["sourceQuests"] = { 25170 }, -- Cleaning up the Coastline
@@ -379,51 +392,128 @@ _.Zones =
 						["qg"] = 3188, -- Master Gadrin
 						["sourceQuests"] = { 25168 }, -- Purge the Valley
 					}),
-					
-					qg(39379, qh(25260, {	-- Fizzled
-						i(53369),
-						i(53366),
-						i(131413),
-					})),
---[[					
-					qg(3310, qh(26804, {	-- Flight to Razor Hill
-						["groups"] = {
-						},
-						["races"]= {9},
-					})),
-					qg(3139, qh(25173)),	-- From Bad to Worse
-					qg(39590, qh(25259)),	-- Gaur Icehorn
-					qg(39590, qh(25257)),	-- Ghislania
-					qg(39590, qh(25258)),	-- Griswold Hanniston
-					qg(15012, qh( 8150)),	-- Honoring a Hero
---]]					
-					qg(39379, qh(25206, {	-- Ignoring the Warnings
-						i(53368),
-						i(53374),
-						i(131410),
-					})),
---[[					
-					qg(55054, qh(29690)),	-- Into the Mists
-					qg(60570, qh(31012)),	-- Joining the Horde
-					qg(101035, qh(40605)),	-- Keep Your Friends Close
-					desc(qh(32671), "This quest is available to Trolls upon reaching level 20.", {	-- Learn To Ride
-						["groups"] = {
-						},
-						["races"] = {8},
+					qh(25173, {	-- From Bad to Worse
+						["qg"] = 3139, -- Gar'Thok
 					}),
---					qh(14088),	-- Learn to Ride in Durotar (REMOVED; replaced with race-specific quests)
-					desc(qg(39270, qh(25179)), "There is no exclamation point for this quest - speak to one of the injured orcs on the beach to initiate it."),	-- Loss Reduction
-					qg(3193, qh(25193)),	-- Lost But Not Forgotten
-					qg(39323, qh(25187)),	-- Lost in the Floods
-					qg(96686, qh(39698)),	-- Making the Rounds
-					qg(39379, qh(25261)),	-- Margoz
-					qg(3489, qh( 6365, {	-- Meats to Orgrimmar (add'l QG 3881)
+					qh(25176, {	-- Exploiting the Situation
+						["qg"] = 39423, -- Gail Nozzywig
+					}),
+					qh(25177, {	-- Storming the Beaches
+						["qg"] = 3139, -- Gar'Thok
+						["sourceQuests"] = { 25173 }, -- From Bad to Worse
+					}),
+					qh(25178, {	-- Shipwreck Searching
+						["qg"] = 39423, -- Gail Nozzywig
+						["sourceQuests"] = { 25176 }, -- Exploiting the Situation
+					}),
+					qh(25196, {	-- The Dranosh'ar Blockade
+						["qg"] = 3142, -- Orgnil Soulscar
+						["sourceQuests"] = { 25232 }, -- The Burning Blade
+					}),
+					qh(25179, {	-- Loss Reduction
+						["qg"] = 39270, -- Injured Razor Hill Grunt
+						["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
+						["sourceQuests"] = { 25173 }, -- From Bad to Worse
+					}),
+					qh(25187, {	-- Lost in the Floods
+						["qg"] = 39323, -- Gail Nozzywig
+					}),
+					qh(25188, {	-- Watershed Patrol
+						["qg"] = 39323, -- Gail Nozzywig
+						["sourceQuests"] = { 25187 }, -- Lost in the Floods
+					}),
+					qh(25190, {	-- Raggaran's Rage
+						["qg"] = 39326, -- Raggaran
+						["sourceQuests"] = { 25187 }, -- Lost in the Floods
+					}),
+					qh(25192, {	-- Raggaran's Fury
+						["qg"] = 39326, -- Raggaran
+						["sourceQuests"] = { 25190 }, -- Raggaran's Rage
+					}),
+					qh(25193, {	-- Lost But Not Forgotten
+						["qg"] = 3193, -- Misha Tor'kren
+						["sourceQuests"] = { 25187 }, -- Lost in the Floods
+					}),
+					qh(25194, {	-- Unbidden Visitors
+						["qg"] = 39324, -- Zen'Taji
+						["sourceQuests"] = { 25187 }, -- Lost in the Floods
+					}),
+					qh(25195, {	-- That's the End of That Raptor
+						["qg"] = 39324, -- Zen'Taji
+						["sourceQuests"] = { 25194 }, -- Unbidden Visitors
+					}),
+					qh(25205, {	-- The Wolf and The Kodo
+						["qg"] = 39380, -- Shin Stonepillar
+					}),
+					qh(25206, {	-- Ignoring the Warnings
 						["groups"] = {
+							i(53368), -- Feckless Armbands
+							i(53374), -- Heedless Treads
+							i(131410), -- Bindings of Disregard
 						},
+						["qg"] = 39379, -- Gor the Enforcer
+						["sourceQuests"] = { 25205 }, -- The Wolf and The Kodo
+					}),
+					qh(25227, {	-- Thonk
+						["qg"] = 39423, -- Gail Nozzywig
+						["sourceQuests"] = { 25178 }, -- Shipwreck Searching
+						["isBreadcrumb"] = true,
+					}),
+					qh(25236, {	-- Thunder Down Under
+						["qg"] = 39379, -- Gor the Enforcer
+					}),
+					qh(25232, {	-- The Burning Blade
+						["qg"] = 3142, -- Orgnil Soulscar
+					}),
+					qh(25256, {	-- Sent for Help
+						["qg"] = 39604, -- Vek'nag
+					}),
+					qh(25257, {	-- Ghislania
+						["qg"] = 39590, -- Spiketooth
+						["sourceQuests"] = { 25256 } -- Sent for Help
+					}),
+					qh(25258, {	-- Griswold Hanniston
+						["qg"] = 39590, -- Spiketooth
+						["sourceQuests"] = { 25256 } -- Sent for Help
+					}),
+					qh(25259, {	-- Gaur Icehorn
+						["qg"] = 39590, -- Spiketooth
+						["sourceQuests"] = { 25256 } -- Sent for Help
+					}),
+					qh(25260, {	-- Fizzled
+						["groups"] = {
+							i(53369), -- Fizzle's Gloves
+							i(53366), -- Enforcer's Gloves
+							i(131413), -- Gor's Re-Inforced Gloves
+						},
+						["qg"] = 39379, -- Gor the Enforcer
+						["sourceQuests"] = { 25196 }, -- The Dranosh'ar Blockade
+					}),
+					q(25261, {	-- Margoz
+						["qg"] = 39379, -- Gor the Enforcer
 						["races"] = {2,8},
-					})),
---]]					
-					qg(86884, q(25267,  {	-- Message for Saurfang
+						["sourceQuests"] = { 25260 }, -- Fizzled
+					}),
+					qh(25262, {	-- Skull Rock
+						["groups"] = {
+							i(53358), -- Blade Cultist Slippers
+							i(53387), -- Searing Bracers
+							i(53390), -- Skull Rock Belt
+							i(131414), -- Burning Armbands
+						},
+						["qg"] = 3208, -- Margoz
+						["sourceQuests"] = { 25261 }, -- Margoz
+					}),
+					qh(25263, {	-- Arnak Fireblade
+						["qg"] = 3208, -- Margoz
+						["sourceQuests"] = { 25262 }, -- Skull Rock
+					}),
+					q(25266, {	-- Warchief's Emissary (QG in The Lost Isles, MAY NO LONGER BE IN GAME per wowhead comments)
+						["qg"] = 38935, -- Thrall
+						["sourceQuests"] = { 25265 }, -- Victory!
+						["races"] = {9},
+					}),
+					q(25267,  {	-- Message for Saurfang
 						["groups"] = {
 							i(118217),	-- Staff of Dubious Pacts
 							i(118219),	-- Harness of Forward Directions
@@ -435,76 +525,94 @@ _.Zones =
 								un(34, i(67156)),	-- Girdle of Servitude
 							}),
 						},
+						["qg"] = 86884, -- Darkspear Loyalist (additional QG 39609)
 						["races"] = {9},
-					})),
+						["sourceQuests"] = { 25266 } -- Warchief's Emissary
+					}),
+					qh(25648, {	-- Beyond Durotar
+						["qg"] = 39379, -- Gor the Enforcer
+						["description"] = "Not available if \"Warchief's Command: Azshara!\" is complete.",
+						["sourceQuests"] = { 25236, 25205, 25206 }, -- Thunder Down Under, The Wolf and The Kodo, Ignoring the Warnings
+						["isBreadcrumb"] = true,
+					}),
+					q(26804, {	-- Flight to Razor Hill
+						["qg"] = 3310, -- Doras
+						["sourceQuests"] = { 26803 }, -- Missing Reports
+						["races"]= {9},
+					}),
+					q(26806, {	-- Reports to Orgrimmar
+						["qg"] = 3139, -- Gar'Thok
+						["sourceQuests"] = { 26804 }, -- Flight to Razor Hill
+						["races"] = {9},
+					}),
+					q(26807, {	-- Return to Eitrigg
+						["qg"] = 41140, -- Burok
+						["sourceQuests"] = { 26806 }, -- Reports to Orgrimmar
+						["races"] = {9},
+					}),
+					qh(29690, {	-- Into the Mists
+						["qg"] = 55054, -- General Nazrim
+						["sourceQuests"] = { 31853 }, -- All Aboard!
+					}),
+					q(31012, {	-- Joining the Horde
+						["qg"] = 60570, -- Ji Firepaw
+						["races"] = { 24 },
+					}),
+					qh(40518, {	-- The Battle for Broken Shore
+						["groups"] = {
+							i(136582), -- Bonegrinder of the Horde Vanguard
+							i(136583), -- Longbow of the Horde Vanguard
+							i(136584), -- Dagger of the Horde Vanguard
+							i(136587), -- Poleaxe of the Horde Vanguard
+							i(136588), -- Quickblade of the Horde Vanguard
+							i(136589), -- Battle mace of the Horde Vanguard
+							i(136590), -- Staff of the Horde Vanguard
+							i(136595), -- Mageblade of the Horde Vanguard
+							i(136591), -- Waraxe of the Horde Vanguard
+							i(139292), -- Splitter of the Horde Vanguard
+						},
+						["qg"] = 113547, -- Stone Guard Mukar
+						["description"] = "Legion expansion introduction quest.|r",
+						["sourceQuests"] = { 44281 }, -- To Be Prepared
+					}),
+					qh(40605, {	-- Keep Your Friends Close
+						["qg"] = 101035, -- Lady Sylvanas Windrunner
+						["classes"] = { 12 },
+					}),
+					qh(40982, {	-- Second Sight
+						["qg"] = 100873, -- Allari the Souleater
+						["classes"] = { 12 },
+					}),
+					qh(41002, {	-- A Weapon of the Horde
+						["qg"] = 101035, -- Lady Sylvanas Windrunner
+						["classes"]= { 12 },
+					}),
+					q(42484, {	-- The Firstborn Rises (DK class campaign)
+						["qg"] = 107554, -- Thassarian
+						["classes"] = { 6 },
+					}),
+					qh(44281, {	-- To Be Prepared
+						["qg"] = 4311, -- Holgar Stormaxe
+						["sourceQuests"] = { 43926 } -- The Legion Returns
+					}),
+					
 --[[					
-					qg(39326, qh(25192)),	-- Raggaran's Fury
-					qg(39326, qh(25190)),	-- Raggaran's Rage
-					qg(3139, qh(26806, {	-- Reports to Orgrimmar
+					qg(15012, qh( 8150)),	-- Honoring a Hero
+					desc(qh(32671), "This quest is available to Trolls upon reaching level 20.", {	-- Learn To Ride
 						["groups"] = {
 						},
-						["races"] = {9},
-					})),
+						["races"] = {8},
+					}),
+--					qh(14088),	-- Learn to Ride in Durotar (REMOVED; replaced with race-specific quests)
+					qg(96686, qh(39698)),	-- Making the Rounds
 					qg(93437, q(42449, {	-- Return of the Four Horsemen (QG listed in Broken Shore, may be in DK order hall)
 						["groups"] = {
 						},
 						["classes"] = {6},
 					})),
-					qg(41140, qh(26807, {	-- Return to Eitrigg
-						["groups"] = {
-						},
-						["races"] = {9},
-					})),
-					qg(41140, qh( 6384, {	-- Ride to Orgrimmar
-						["groups"] = {
-						},
-						["races"] = {2,6,8},
-					})),
-					qg(100873, qh(40982, {	-- Second Sight
-						["groups"] = {
-						},
-						["classes"] = {12},
-					})),
-					qg(3293, q(835)),	-- Securing the Lines
-					qg(39604, qh(25256)),	-- Sent for Help
-					qg(39423, qh(25178)),	-- Shipwreck Searching
---]]					
-					qg(3208, qh(25262, {	-- Skull Rock
-						i(53358),
-						i(53387),
-						i(53390),
-						i(131414),
-					})),
---[[					
 --					qh( 39864),	-- Stormheim (not sure, but I THINK this quest was replaced with the next one)
 					qg(107460, qh(44701)),	-- Stormheim (QG in Stormheim)
-					qg(3139, qh(25177)),	-- Storming the Beaches
-					qg(39324, qh(25195)),	-- That's the End of That Raptor
 --					qh(44543),	-- The Battle for Broken Shore (looks like this is an auto-popup quest to take a wind rider from the ship to the shore, no QG)
---]]
-					qg(113547, qh(40518, {	-- The Battle for Broken Shore
-						["groups"] = {
-							i(136582),
-							i(136583),
-							i(136584),
-							i(136587),
-							i(136588),
-							i(136589),
-							i(136590),
-							i(136595),
-							i(136591),
-							i(139292),
-						},
-						["description"] = "Legion expansion introduction quest.|r",
-					})),
---[[					
-					qg(3142, qh(25232)),	-- The Burning Blade
-					qg(3142, qh(25196)),	-- The Dranosh'ar Blockade
-					qg(107554, q(42484, {	-- The Firstborn Rises (DK class campaign)
-						["groups"] = {
-						},
-						["classes"] = {6},
-					})),
 					qg(34477, qh(14175, {	-- The Grateful Dead (HOLIDAY - day of the dead)
 						["groups"] = {
 						},
@@ -522,24 +630,8 @@ _.Zones =
 					})),
 					desc(qh(47835), "This quest will be automatically offered upon completion of the Assault on Broken Shore scenario and returning to Dalaran.  You may also choose the option to skip the scenario when speaking to Khadgar."),	-- The Hand of Fate (QG in Broken Isles Dalaran)
 					qg(96683, qh(38307)),	-- The Warchief Beckons (QG also in Dalaran)
-					qg(39380, qh(25205)),	-- The Wolf and The Kodo
-					qg(24497, qh(11412)),	-- There and Back Again					
-					qg(39423, qh(25227)),	-- Thonk (breadcrumb quest for 25187)
-					qg(39379, qh(25236)),	-- Thunder Down Under
-					qg(4311, qh(44281)),	-- To Be Prepared
 --					q(40658),	-- Tracking Quest - W1 - See Demon Attack (legacy/removed/never in game?)
 					qg(122065, qh(47867)),	-- Two If By Sea
-					qg(39324, qh(25194)),	-- Unbidden Visitors
---]]					
---[[				qg(38935, qh(25266), {	-- Warchief's Emissary (QG in The Lost Isles, MAY NO LONGER BE IN GAME per wowhead comments)
-						["groups"] = {
-						},
-						["races"] = {9},
-					}),
---]]
---[[
-					qg(39323, qh(25188)),	-- Watershed Patrol
-					qg(3293, q(834)),	-- Winds in the Desert
 --]]
 				}),
 				n(-16, {	-- Rares
@@ -985,11 +1077,11 @@ _.Zones =
 						n(-17, { -- Quests
 							qh(25126, {	-- Cutting Teeth
 								["qg"] = 3143, -- Gornek
-								["sourceQuests"] = { 25152 } -- Your Place In The World
+								["sourceQuests"] = { 25152 }, -- Your Place In The World
 							}),
 							qh(25127, {	-- Sting of the Scorpid
 								["qg"] = 3143, -- Gornek
-								["sourceQuests"] = { 25172 } -- Invaders in our Home
+								["sourceQuests"] = { 25172 }, -- Invaders in our Home
 							}),
 							qh(25128, {	-- Hana'zua
 								["qg"] = 5887, -- Canaga Earthcaller
