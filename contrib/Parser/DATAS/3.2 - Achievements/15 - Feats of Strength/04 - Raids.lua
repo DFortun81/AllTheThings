@@ -17,10 +17,10 @@ _.Achievements =
 					ach(12110),	-- Ahead of the Curve: Argus the Unmaker (change to un(12) once first BfA raid opens)
 					un(12, ach(9444)),	-- Ahead of the Curve: Blackhand's Crucible
 					un(12, ach(8398, {	-- Ahead of the Curve: Garrosh Hellscream (10 player)
-						un(12, i(104246)),	-- Reins of the Kor'kron War Wolf
+						un(2, i(104246)),	-- Reins of the Kor'kron War Wolf
 					})),
 					un(12, ach(8399, {	-- Ahead of the Curve: Garrosh Hellscream (25 player)
-						un(12, i(104246)),	-- Reins of the Kor'kron War Wolf
+						un(2, i(104246)),	-- Reins of the Kor'kron War Wolf
 					})),
 					un(12, ach(8246)),	-- Ahead of the Curve: Grand Empress Shek'zeer
 					un(12, ach(11195)),	-- Ahead of the Curve: Gul'dan

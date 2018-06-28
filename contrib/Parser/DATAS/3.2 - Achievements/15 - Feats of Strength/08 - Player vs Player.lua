@@ -97,13 +97,13 @@ _.Achievements =
 					un(12, ach(8644)),	-- Gladiator: Season 14
 					un(12, ach(8667)),	-- Gladiator: Season 15
 					un(12, ach(9239, {	-- Gladiator: Warlords Season 1
-						un(12, i(128277)),	-- Primal Gladiator's Felblood Gronnling
+						un(2, i(128277)),	-- Primal Gladiator's Felblood Gronnling
 					})),
 					un(12, ach(10098, {	-- Gladiator: Warlords Season 2
-						un(12, i(128281)),	-- Wild Gladiator's Felblood Gronnling
+						un(2, i(128281)),	-- Wild Gladiator's Felblood Gronnling
 					})),
 					un(12, ach(10110, {	-- Gladiator: Warlords Season 3
-						un(12, i(128282)),	-- Warmongering Gladiator's Felblood Gronnling
+						un(2, i(128282)),	-- Warmongering Gladiator's Felblood Gronnling
 					})),
 					un(12, ach(8643, {	-- Grievous Gladiator: Season 14
 						un(39, title(253)),	-- Grievous Gladiator
@@ -215,12 +215,12 @@ _.Achievements =
 						title(302, {	-- ,Lord of War (Gender specific title, must log in with both genders to recieve both titles)
 							["groups"] = {
 							},
-							["description"] = "Must login with a male character.",
+							["description"] = "Must earn with a male character.",
 						}),
 						title(303, {	-- ,Lady of War (Gender specific title, must log in with both genders to recieve both titles)
 							["groups"] = {
 							},
-							["description"] = "Must login with a female character.",
+							["description"] = "Must earn with a female character.",
 						}),
 					}),
 					un(12, ach(8392, {	-- Tournament Glory 2013

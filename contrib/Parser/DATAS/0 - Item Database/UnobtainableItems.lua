@@ -1024,94 +1024,6 @@ u(77585, 4);	-- Replica High Warlord's Crossbow
 u(77592, 4);	-- Replica High Warlord's Tome of Mending
 u(77593, 4);	-- Replica High Warlord's Tome of Destruction
 u(77597, 4);	-- Replica High Warlord's Shield Wall
-u(90049, 4);	-- Girdle of the Lich Lord
-u(90050, 4);	-- Treads of the Lich Lord
-u(90051, 4);	-- Chestguard of the Lich Lord
-u(90052, 4);	-- Grasps of the Lich Lord
-u(90053, 4);	-- Crown of the Lich Lord
-u(90054, 4);	-- Legplates of the Lich Lord
-u(90055, 4);	-- Shoulderplates of the Lich Lord
-u(90056, 4);	-- Bracers of the Lich Lord
-u(90059, 4);	-- Waistguard of the Cycle
-u(90060, 4);	-- Sandals of the Cycle
-u(90061, 4);	-- Gloves of the Cycle
-u(90062, 4);	-- Hood of the Cycle
-u(90063, 4);	-- Leggings of the Cycle
-u(90064, 4);	-- Robes of the Cycle
-u(90065, 4);	-- Branches of the Cycle
-u(90066, 4);	-- Bracers of the Cycle
-u(90068, 4);	-- Cinch of the Howling Beast
-u(90069, 4);	-- Boots of the Howling Beast
-u(90070, 4);	-- Chestguard of the Howling Beast
-u(90071, 4);	-- Grips of the Howling Beast
-u(90072, 4);	-- Helm of the Howling Beast
-u(90073, 4);	-- Legguards of the Howling Beast
-u(90074, 4);	-- Shoulderguards of the Howling Beast
-u(90075, 4);	-- Wristwraps of the Howling Beast
-u(90079, 4);	-- Girdle of the Elemental Triad
-u(90080, 4);	-- Boots of the Elemental Triad
-u(90081, 4);	-- Gloves of the Elemental Triad
-u(90082, 4);	-- Hood of the Elemental Triad
-u(90083, 4);	-- Leggings of the Elemental Triad
-u(90084, 4);	-- Robes of the Elemental Triad
-u(90085, 4);	-- Spaulders of the Elemental Triad
-u(90086, 4);	-- Bracers of the Elemental Triad
-u(90088, 4);	-- Greatbelt of the Regal Lord
-u(90089, 4);	-- Treads of the Regal Lord
-u(90090, 4);	-- Chestwrap of the Regal Lord
-u(90091, 4);	-- Handwraps of the Regal Lord
-u(90092, 4);	-- Crown of the Regal Lord
-u(90093, 4);	-- Legwraps of the Regal Lord
-u(90094, 4);	-- Shoulderguards of the Regal Lord
-u(90095, 4);	-- Bracers of the Regal Lord
-u(90096, 4);	-- Girdle of the Holy Warrior
-u(90097, 4);	-- Greatboots of the Holy Warrior
-u(90098, 4);	-- Chestplate of the Holy Warrior
-u(90099, 4);	-- Gauntlets of the Holy Warrior
-u(90100, 4);	-- Greathelm of the Holy Warrior
-u(90101, 4);	-- Legplates of the Holy Warrior
-u(90102, 4);	-- Shoulderplate of the Holy Warrior
-u(90103, 4);	-- Wristguards of the Holy Warrior
-u(90110, 4);	-- Cord of the Light
-u(90111, 4);	-- Steps of the Light
-u(90112, 4);	-- Bracers of the Light
-u(90113, 4);	-- Pauldrons of the Light
-u(90114, 4);	-- Robes of the Light
-u(90115, 4);	-- Hands of the Light
-u(90116, 4);	-- Cowl of the Light
-u(90117, 4);	-- Leggings of the Light
-u(90119, 4);	-- Girdle of the Silent Assassin
-u(90120, 4);	-- Hood of the Silent Assassin
-u(90121, 4);	-- Tabi of the Silent Assassin
-u(90122, 4);	-- Shadowwrap of the Silent Assassin
-u(90123, 4);	-- Gloves of the Silent Assassin
-u(90124, 4);	-- Leggings of the Silent Assassin
-u(90125, 4);	-- Spaulders of the Silent Assassin
-u(90126, 4);	-- Bracers of the Silent Assassin
-u(90127, 4);	-- Windfury Bracers
-u(90128, 4);	-- Windfury Belt
-u(90129, 4);	-- Windfury Sandals
-u(90130, 4);	-- Windfury Harness
-u(90131, 4);	-- Windfury Crushers
-u(90132, 4);	-- Windfury Mask
-u(90133, 4);	-- Windfury Legguards
-u(90134, 4);	-- Windfury Spirit Guides
-u(90136, 4);	-- Belt of the Betrayer
-u(90137, 4);	-- Boots of the Betrayer
-u(90138, 4);	-- Amice of the Betrayer
-u(90139, 4);	-- Bracers of the Betrayer
-u(90140, 4);	-- Robes of the Betrayer
-u(90141, 4);	-- Handguards of the Betrayer
-u(90142, 4);	-- Horns of the Betrayer
-u(90143, 4);	-- Leggings of the Betrayer
-u(90147, 4);	-- Girdle of the Golden King
-u(90148, 4);	-- Greatboots of the Golden King
-u(90149, 4);	-- Chestplate of the Golden King
-u(90150, 4);	-- Reach of the Golden King
-u(90151, 4);	-- Crown of the Golden King
-u(90152, 4);	-- Greaves of the Golden King
-u(90153, 4);	-- Mantle of the Golden King
-u(90154, 4);	-- Bracers of the Golden King
 u(98146, 4);	-- Oxhorn Bladebreaker
 u(98147, 4);	-- Tigerclaw Cape
 u(98148, 4);	-- Tigerfang Wrap
@@ -1125,24 +1037,6 @@ u(102248, 4); 	-- Fen-Yu, Fury of Xuen
 u(102249, 4); 	-- Gon-Lu, Strength of Xuen
 u(102250, 4); 	-- Qian-Ying, Fortitude of Niuzao
 u(114968, 4);	-- Deathwatch Hatchling
-u(118395, 4);	-- Claws of Creation
-u(118396, 4);	-- Bloodmaw Gargoyle
-u(118397, 4);	-- Equus
-u(118398, 4);	-- Soul Eater
-u(118399, 4);	-- Suneater
-u(118401, 4);	-- Arcana Shard Spire
-u(118402, 4);	-- Greatstaff of Infinite Knowledge
-u(118403, 4);	-- Dimension-Ripper's Staff
-u(118404, 4);	-- Living Longbow
-u(118405, 4);	-- Shifting Felblade
-u(118406, 4);	-- Furnace of the Great Machine
-u(118407, 4);	-- Face of the Guardian
-u(118408, 4);	-- Elemental Crescent
-u(118409, 4);	-- Cloudsong Glaive
-u(118410, 4);	-- Tesseract Timepiece
-u(118411, 4);	-- Crystal-Shot Longrifle
-u(118412, 4);	-- Greatsword of the Inferno
-u(118413, 4);	-- Flamegrinder
 u(133762, 4);	-- Remnant of Chaos
 u(141843, 4); 	-- Vindictive Gladiator's Storm Dragon
 u(141844, 4); 	-- Fearless Gladiator's Storm Dragon

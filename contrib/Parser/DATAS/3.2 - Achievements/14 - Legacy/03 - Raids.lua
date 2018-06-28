@@ -35,7 +35,7 @@ _.Achievements =
 					un(12, ach(432, {	-- Champion of the Naaru
 						un(39, title(36)),	-- ,Champion of the Naaru
 					})),
-					un(12, ach(29030, {	-- Champion of Ulduar
+					un(12, ach(2903, {	-- Champion of Ulduar
 						un(39, title(127)),	-- ,Champion of Ulduar
 					})),
 					un(12, ach(2961)),	-- Cheese the Freeze (10 player)
