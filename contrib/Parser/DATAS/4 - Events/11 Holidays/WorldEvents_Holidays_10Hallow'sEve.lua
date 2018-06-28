@@ -1651,13 +1651,15 @@ _.WorldEvents =
 						}),
 					}),
 					n(-25, { -- Pet Battles
-						["groups"] = {
-							un(26, p(1741)), -- Ghastly Rat
-							un(26, p(1740)), -- Ghost Maggot
-							un(26, p(1730)), -- Spectral Spinner
-						},
-						["u"] = 26, -- Hallow's End
-						["description"] = "The |cFFFFD700Ghastly Rat|r, |cFFFFD700Ghost Maggot|r, and |cFFFFD700Spectral Spinner|r are only active if you've applied the |cFFFFD700Creepy Crawlers|r decoration to your Garrison. This can be purchased with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your Garrison.",								
+						i(128664, { -- Creepy Crawlers
+							["groups"] = {
+								un(26, p(1741)), -- Ghastly Rat
+								un(26, p(1740)), -- Ghost Maggot
+								un(26, p(1730)), -- Spectral Spinner
+							},
+							["u"] = 26, -- Hallow's End
+							["description"] = "In order to summon |cFFFFD700Ghastly Rats, Ghost Maggots, and Spectral Spinners|r you will need to do the dailies in your Garrison.  Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause |cFFFFD700Ghastly Rats, Ghost Maggots, and Spectral Spinners to spawn|r."								
+						}),							
 					}),
 					n(-17, { -- Quests
 						q(43162, { -- Under the Crooked Tree
@@ -1820,16 +1822,21 @@ _.WorldEvents =
 					}),
 					n(-16, { -- Rares
 						["groups"] = {
-							n(96323, { -- Arachnis
+							i(128664, { -- Creepy Crawlers
 								["groups"] = {
-									i(128794), -- Sack of Spectral Spiders
+									n(96323, { -- Arachnis
+										["groups"] = {
+											i(128794), -- Sack of Spectral Spiders
+										},
+										["questID"] = 39617,
+										["u"] = 26,
+									}),
 								},
-								["questID"] = 39617,
-								["maps"] = { 971, 973, 974, 975, 991, 976, 980, 981, 982, 976, 990 }, -- Lunarfall [971-991]; Frostwall [976-990]
-								["description"] = "Arachnis is only present in your Garrison if you've applied the |cFFFFD700Creepy Crawlers|r decoration. This can be purchased with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your Garrison.",	
-								["u"] = 26, -- Hallow's End
+								["description"] = "In order to summon |cFFFFD700Arachnis|r you will need to do the dailies in your Garrison.  Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause |cFFFFD700Arachnis|r to spawn.  This rare can be spawned year round."								
 							}),
 						},
+						["u"] = 26, -- Hallow's End
+						["maps"] = { 971, 973, 974, 975, 991, 976, 980, 981, 982, 976, 990 } -- Lunarfall [971-991]; Frostwall [976-990]
 					}),
 					n(-2, { -- Vendors
 						n(53757, { -- Chub <Candy & Toy Vendor>
