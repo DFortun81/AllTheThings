@@ -1033,11 +1033,11 @@ _.Instances =
 								i(124164),	-- Leggings of the Iron Summoner
 							})),
 							cr(91331, e(1438, {	-- Archimonde
-								i(133762, {
+								un(2, i(133762, {
 									q(40962, {
-										un(2, ig(128422)),  -- Reins of the Grove Warden Mount
+										un(2, i(128422)),  -- Reins of the Grove Warden Mount
 									}),
-								}),
+								})),
 								i(124389),	-- Calamity's Edge
 								i(124382),	-- Edict of Argus
 								i(124372),	-- Gavel of the Eredar
