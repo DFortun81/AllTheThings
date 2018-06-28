@@ -285,31 +285,6 @@ _.Zones =
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),					
-					n(-58, { 		-- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(19175, qh(29400)),	-- A Season for Celebration
--- COORDINATES					qg(19176, qh(29400)),	-- A Season for Celebration
--- COORDINATES					qg(19177, qh(29400)),	-- A Season for Celebration
-								qh(12366),	-- Candy Bucket
-								qg(6929, qh( 8359)),	-- Flexing for Nougat
-								qg(11814, qh( 8358)),	-- Incoming Gumdrop
-								qg(19175, qh(11357)),	-- Masked Orphan Matron
--- COORDINATES					qg(19176, qh(11357)),	-- Masked Orphan Matron
--- COORDINATES					qg(19177, qh(11357)),	-- Masked Orphan Matron
-								qg(44866, qh(29425)),	-- Shopping Around
-								qg(54146, qh(29426)),	-- Taking Precautions
-								qg(54146, qh(29427)),	-- The Collector's Agent	
-								o(209095, {	-- Edgar's Crate
-									qh(29429, {	-- The Creepy Crate
-										un(26, i(71076)),	-- Creepy Crate (Pet)
-									}),
-								}),								
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),						
 					ach(11848, { 	-- 13th Anniversary
 						["groups"] = {
 							h(n(110035, { -- Historian Ju'pa
