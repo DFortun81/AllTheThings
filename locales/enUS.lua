@@ -178,16 +178,22 @@ AllTheThings.Locales.enUS = {
 	};
 
 	-- Music / Sound Management (You can add your own sounds for this if you want.)
+	["AUDIO_COMPLETE_TABLE"] = {
+		"Interface\\AddOns\\AllTheThings\\assets\\complete1.ogg",
+	};
 	["AUDIO_FANFARE_TABLE"] = {
 		"Interface\\AddOns\\AllTheThings\\assets\\fanfare1.ogg",
 		"Interface\\AddOns\\AllTheThings\\assets\\fanfare2.ogg",
 		"Interface\\AddOns\\AllTheThings\\assets\\fanfare3.ogg",
 		"Interface\\AddOns\\AllTheThings\\assets\\fanfare4.ogg",
 		"Interface\\AddOns\\AllTheThings\\assets\\fanfare5.ogg",
-		"Interface\\AddOns\\AllTheThings\\assets\\fanfare6.ogg"
+		"Interface\\AddOns\\AllTheThings\\assets\\fanfare6.ogg",
+	};
+	["AUDIO_RAREFIND_TABLE"] = {
+		"Interface\\AddOns\\AllTheThings\\assets\\rarefind1.ogg",
 	};
 	["AUDIO_REMOVE_TABLE"] = {
-		"Interface\\AddOns\\AllTheThings\\assets\\remove1.ogg"
+		"Interface\\AddOns\\AllTheThings\\assets\\remove1.ogg",
 	};
 
 	["FILTER_ID_TYPES"] = {
