@@ -6315,21 +6315,31 @@ local function UpdateWindow(self, force)
 		end
 		
 		-- Does this user have everything?
-		if self.data.total and self.data.total == self.data.progress then
-			if #self.rowData < 1 then
-				self.data.back = 1;
-				tinsert(self.rowData, self.data);
+		if self.data.total then
+			if self.data.total <= self.data.progress then
+				if #self.rowData < 1 then
+					self.data.back = 1;
+					tinsert(self.rowData, self.data);
+				end
+				if self.missingData then
+					app:PlayCompleteSound();
+					self.missingData = nil;
+				end
+				tinsert(self.rowData, {
+					["text"] = "No entries matching your filters were found.",
+					["description"] = GetDataMember("ShowCompletedGroups") and 
+						"If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
+						or "Toggle 'Show Completed Groups' in the options menu to review your accomplishments.\n\nIf you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
+					["indent"] = 1,
+					["collectible"] = 1,
+					["collected"] = 1,
+					["back"] = 0.7
+				});
+			else
+				self.missingData = true;
 			end
-			tinsert(self.rowData, {
-				["text"] = "No entries matching your filters were found.",
-				["description"] = GetDataMember("ShowCompletedGroups") and 
-					"If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
-					or "Toggle 'Show Completed Groups' in the options menu to review your accomplishments.\n\nIf you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
-				["indent"] = 1,
-				["collectible"] = 1,
-				["collected"] = 1,
-				["back"] = 0.7
-			});
+		else
+			self.missingData = nil;
 		end
 		
 		UpdateVisibleRowData(self);
