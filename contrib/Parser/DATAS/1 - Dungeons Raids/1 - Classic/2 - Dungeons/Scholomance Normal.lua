@@ -236,7 +236,7 @@ _.Instances =
 								un(2, i(14632)),	-- Necropile Leggings
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
-								un(7, i(14617)),	-- Sawbones Shirt
+								un(9, i(14617)),	-- Sawbones Shirt
 							}),
 							n(10901, {	-- Lorekeeper Polkelt
 								un(2, i(18680)),	-- Ancient Bone Bow

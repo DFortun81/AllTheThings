@@ -3,15 +3,15 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
-	un(1, i(138489)), 	-- Kargath's Sacrified Hands (seems like this never made it to live and has been replaced by other legendaries in Legion)
-	un(1, i(77588)),	-- Replica High Warlord's Quickblade [This version wasn't added]
-	un(1, i(77586)),	-- Replica High Warlord's Spellblade [This version wasn't added]
-	un(1, i(77570)),	-- Replica High Warlord's Battle Mace [This version wasn't added]
+	un(1, i(138489)), 	-- Kargath's Sacrified Hands
+	un(1, i(77588)),	-- Replica High Warlord's Quickblade
+	un(1, i(77586)),	-- Replica High Warlord's Spellblade
+	un(1, i(77570)),	-- Replica High Warlord's Battle Mace
 	un(1, i(32192)),	-- Chancellor's Barricade
 	un(1, i(32175)),	-- Chancellor's Hacker
 	un(1, i(32190)),	-- Chancellor's Spellblade
 	un(1, i(32183)),	-- Chancellor's Maul
-	un(1, i(77587)),	-- Replica High Warlord's Destroyer [This version wasn't added]
+	un(1, i(77587)),	-- Replica High Warlord's Destroyer
 	i(129738), -- Verus
 	i(147204), -- Black Apron - TEST
 	i(23388), -- Tranquillen Tabard
@@ -33,7 +33,7 @@ _.NeverImplemented =
 	i(18303), -- Nimble Buckler
 	i(18342), -- Quel'dorei Guard [NPC Shield I believe]
 	i(20502), -- Ironbark Shield [NPC Shield]
-	i(110591), -- Flintlocke's Blasthammer [This version NYI since old one was still good for transmog]
+	un(1, i(110591)), -- Flintlocke's Blasthammer
 	i(151377), -- Arne Test Heirloom - Bloodied Arcanite Reaper
 	i(157751), -- Drape of New Beginnings
 	i(134693), -- Enveloping Cape
@@ -377,7 +377,6 @@ _.NeverImplemented =
 	un(1, model(65670, i(136907, { 	-- Black Piglet	 						(Never added in Game)
 		p(1758),
 	}))),	
-	un(1, i(138489)), 	-- Kargath's Sacrified Hands							(Never added in Game)
 	un(1, i(140779)),	-- Falanaar Echo
 	un(1, i(141300)), 	-- Magi Focusing Crystal
 	un(1, i(142360)),	-- Blazing Ember Signet

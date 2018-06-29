@@ -8,7 +8,7 @@ _.WorldEvents =
 			n(-160, { -- Mounts
 				i(32458),	-- Ashes of Alar
 				i(95059),	-- Clutch of Ji-Kun
-				un(31, i(115484)),	-- Core Hound Chain
+				un(9, i(115484)),	-- Core Hound Chain
 				i(13335),	-- Deathcharger's Reins
 				i(78919),	-- Experiment 12-B
 				i(30480),	-- Fiery Warhorse's Reins 
@@ -27,7 +27,7 @@ _.WorldEvents =
 				i(44707),	-- Reins of the Green Proto-Drake
 				i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent
 				i(49636),	-- Reins of the Onyxian Drake
-				i(44175),	-- Reins of the Plagued Proto-Drake
+				un(9, i(44175)),	-- Reins of the Plagued Proto-Drake
 				i(32768),	-- Reins of the Raven Lord
 				i(45802),	-- Reins of the Rusted Proto-Drake
 				i(95057),	-- Reins of the Thundering Cobalt Cloud Serpent
@@ -38,9 +38,9 @@ _.WorldEvents =
 				i(23720),	-- Riding Turtle
 				i(69224),	-- Smoldering Egg of Millagazor
 				i(89783),	-- Son of Galleon's Saddle
-				i(19872),	-- Swift Razzashi Raptor
+				un(9, i(19872)),	-- Swift Razzashi Raptor
 				i(35513),	-- Swift White Hawkstrider
-				i(19902),	-- Swift Zulian Tiger
+				un(9, i(19902)),	-- Swift Zulian Tiger
 				i(54068),	-- Wooly White Rhino
 				i(49286),	-- X-51 Nether-Rocket X-TREME
 
@@ -110,94 +110,94 @@ _.WorldEvents =
 			n(-3179, { -- Tier 3 (Naxxramas - Vanilla)
 				["groups"] = {
 					gs(355, {	-- Vestments of Faith	
-						i(22514),	-- Circlet of Faith
-						i(22515),	-- Shoulderpads of Faith
-						i(22512),	-- Robe of Faith
-						i(22519),	-- Bindings of Faith
-						i(22517),	-- Gloves of Faith
-						i(22518),	-- Belt of Faith
-						i(22513),	-- Leggings of Faith
-						i(22516),	-- Sandals of Faith
+						un(9, i(22514)),	-- Circlet of Faith
+						un(9, i(22515)),	-- Shoulderpads of Faith
+						un(9, i(22512)),	-- Robe of Faith
+						un(9, i(22519)),	-- Bindings of Faith
+						un(9, i(22517)),	-- Gloves of Faith
+						un(9, i(22518)),	-- Belt of Faith
+						un(9, i(22513)),	-- Leggings of Faith
+						un(9, i(22516)),	-- Sandals of Faith
 					}),		
 					gs(907, {	-- Frostfire Regalia	
-						i(22498),	-- Frostfire Circlet
-						i(22499),	-- Frostfire Shoulderpads
-						i(22496),	-- Frostfire Robe
-						i(22503),	-- Frostfire Bindings
-						i(22501),	-- Frostfire Gloves
-						i(22502),	-- Frostfire Belt
-						i(22497),	-- Frostfire Leggings
-						i(22500),	-- Frostfire Sandals
+						un(9, i(22498)),	-- Frostfire Circlet
+						un(9, i(22499)),	-- Frostfire Shoulderpads
+						un(9, i(22496)),	-- Frostfire Robe
+						un(9, i(22503)),	-- Frostfire Bindings
+						un(9, i(22501)),	-- Frostfire Gloves
+						un(9, i(22502)),	-- Frostfire Belt
+						un(9, i(22497)),	-- Frostfire Leggings
+						un(9, i(22500)),	-- Frostfire Sandals
 					}),		
 					gs(865, {	-- Plagueheart Raiment	
-						i(22506),	-- Plagueheart Circlet
-						i(22507),	-- Plagueheart Shoulderpads
-						i(22504),	-- Plagueheart Robe
-						i(22511),	-- Plagueheart Bindings
-						i(22509),	-- Plagueheart Gloves
-						i(22510),	-- Plagueheart Belt
-						i(22505),	-- Plagueheart Leggings
-						i(22508),	-- Plagueheart Sandals
+						un(9, i(22506)),	-- Plagueheart Circlet
+						un(9, i(22507)),	-- Plagueheart Shoulderpads
+						un(9, i(22504)),	-- Plagueheart Robe
+						un(9, i(22511)),	-- Plagueheart Bindings
+						un(9, i(22509)),	-- Plagueheart Gloves
+						un(9, i(22510)),	-- Plagueheart Belt
+						un(9, i(22505)),	-- Plagueheart Leggings
+						un(9, i(22508)),	-- Plagueheart Sandals
 					}),		
 					gs(924, {	--Dreamwalker Raiment	
-						i(22490),	-- Dreamwalker Headpiece
-						i(22491),	-- Dreamwalker Spaulders
-						i(22488),	-- Dreamwalker Tunic
-						i(22495),	-- Dreamwalker Wristguards
-						i(22493),	-- Dreamwalker Handguards
-						i(22494),	-- Dreamwalker Girdle
-						i(22489),	-- Dreamwalker Legguards
-						i(22492),	-- Dreamwalker Boots
+						un(9, i(22490)),	-- Dreamwalker Headpiece
+						un(9, i(22491)),	-- Dreamwalker Spaulders
+						un(9, i(22488)),	-- Dreamwalker Tunic
+						un(9, i(22495)),	-- Dreamwalker Wristguards
+						un(9, i(22493)),	-- Dreamwalker Handguards
+						un(9, i(22494)),	-- Dreamwalker Girdle
+						un(9, i(22489)),	-- Dreamwalker Legguards
+						un(9, i(22492)),	-- Dreamwalker Boots
 					}),		
 					gs(891, {	-- Bonescythe Armor	
-						i(22478),	-- Bonescythe Helmet
-						i(22479),	-- Bonescythe Pauldrons
-						i(22476),	-- Bonescythe Breastplate
-						i(22483),	-- Bonescythe Bracers
-						i(22481),	-- Bonescythe Gauntlets
-						i(22482),	-- Bonescythe Waistguard
-						i(22477),	-- Bonescythe Legplates
-						i(22480),	-- Bonescythe Sabatons
+						un(9, i(22478)),	-- Bonescythe Helmet
+						un(9, i(22479)),	-- Bonescythe Pauldrons
+						un(9, i(22476)),	-- Bonescythe Breastplate
+						un(9, i(22483)),	-- Bonescythe Bracers
+						un(9, i(22481)),	-- Bonescythe Gauntlets
+						un(9, i(22482)),	-- Bonescythe Waistguard
+						un(9, i(22477)),	-- Bonescythe Legplates
+						un(9, i(22480)),	-- Bonescythe Sabatons
 					}),		
 					gs(914, {	-- Cryptstalker Armor	
-						i(22438),	-- Cryptstalker Headpiece
-						i(22439),	-- Cryptstalker Spaulders
-						i(22436),	-- Cryptstalker Tunic
-						i(22443),	-- Cryptstalker Wristguards
-						i(22441),	-- Cryptstalker Handguards
-						i(22442),	-- Cryptstalker Girdle
-						i(22437),	-- Cryptstalker Legguards
-						i(22440),	-- Cryptstalker Boots
+						un(9, i(22438)),	-- Cryptstalker Headpiece
+						un(9, i(22439)),	-- Cryptstalker Spaulders
+						un(9, i(22436)),	-- Cryptstalker Tunic
+						un(9, i(22443)),	-- Cryptstalker Wristguards
+						un(9, i(22441)),	-- Cryptstalker Handguards
+						un(9, i(22442)),	-- Cryptstalker Girdle
+						un(9, i(22437)),	-- Cryptstalker Legguards
+						un(9, i(22440)),	-- Cryptstalker Boots
 					}),		
 					gs(873, {	-- The Earthshatter	
-						i(22466),	-- Earthshatter Headpiece
-						i(22467),	-- Earthshatter Spaulders
-						i(22464),	-- Earthshatter Tunic
-						i(22471),	-- Earthshatter Wristguards
-						i(22469),	-- Earthshatter Handguards
-						i(22470),	-- Earthshatter Girdle
-						i(22465),	-- Earthshatter Legguards
-						i(22468),	-- Earthshatter Boots
+						un(9, i(22466)),	-- Earthshatter Headpiece
+						un(9, i(22467)),	-- Earthshatter Spaulders
+						un(9, i(22464)),	-- Earthshatter Tunic
+						un(9, i(22471)),	-- Earthshatter Wristguards
+						un(9, i(22469)),	-- Earthshatter Handguards
+						un(9, i(22470)),	-- Earthshatter Girdle
+						un(9, i(22465)),	-- Earthshatter Legguards
+						un(9, i(22468)),	-- Earthshatter Boots
 					}),		
 					gs(899, {	-- Redemption  Armor	
-						i(22428),	-- Redemption Headpiece
-						i(22429),	-- Redemption Spaulders
-						i(22425),	-- Redemption Tunic
-						i(22424),	-- Redemption Wristguards
-						i(22426),	-- Redemption Handguards
-						i(22431),	-- Redemption Girdle
-						i(22427),	-- Redemption Legguards
-						i(22430),	-- Redemption Boots
+						un(9, i(22428)),	-- Redemption Headpiece
+						un(9, i(22429)),	-- Redemption Spaulders
+						un(9, i(22425)),	-- Redemption Tunic
+						un(9, i(22424)),	-- Redemption Wristguards
+						un(9, i(22426)),	-- Redemption Handguards
+						un(9, i(22431)),	-- Redemption Girdle
+						un(9, i(22427)),	-- Redemption Legguards
+						un(9, i(22430)),	-- Redemption Boots
 					}),		
 					gs(850, {	-- Dreadnaught's Battlegear	
-						i(22418),	-- Dreadnaught Helmet
-						i(22419),	-- Dreadnaught Pauldrons
-						i(22416),	-- Dreadnaught Breastplate
-						i(22423),	-- Dreadnaught Bracers
-						i(22421),	-- Dreadnaught Gauntlets
-						i(22422),	-- Dreadnaught Waistguard
-						i(22417),	-- Dreadnaught Legplates
-						i(22420),	-- Dreadnaught Sabatons
+						un(9, i(22418)),	-- Dreadnaught Helmet
+						un(9, i(22419)),	-- Dreadnaught Pauldrons
+						un(9, i(22416)),	-- Dreadnaught Breastplate
+						un(9, i(22423)),	-- Dreadnaught Bracers
+						un(9, i(22421)),	-- Dreadnaught Gauntlets
+						un(9, i(22422)),	-- Dreadnaught Waistguard
+						un(9, i(22417)),	-- Dreadnaught Legplates
+						un(9, i(22420)),	-- Dreadnaught Sabatons
 					}),		
 				},
 				["achievementID"] = 11744, -- Drop Dead, Gorgeous
@@ -213,7 +213,7 @@ _.WorldEvents =
 				i(32566),	-- Picnic Basket
 				i(38578),	-- The Flag of Ownership
 			}),
-			i(39769),	-- Arcanite Ripper
+			un(9, i(39769)),	-- Arcanite Ripper
 			i(50379, {	-- Battered Hilt (Alliance)
 				["groups"] = {
 					i(50050),	-- Cudgel of Furious Justice
@@ -244,9 +244,9 @@ _.WorldEvents =
 				["description"] = "Contains 250-500 Darkmoon Faire Tickets",
 			}),
 			i(128312),	-- Elixir of the Rapid Mind
-			i(45037),	-- Epic Purple Shirt
-			i(90176),	-- Flintlocke's Blasthammer
-			un(2, i(110672)),	-- Grimoire of the Four Winds
+			un(9, i(45037)),	-- Epic Purple Shirt
+			un(9, i(90176)),	-- Flintlocke's Blasthammer
+			un(9, i(110672)),	-- Grimoire of the Four Winds
 			un(31, i(118572)), 	-- Illusion: Flame of Ragnaros
 			{	-- Kor'kron Shaman's Treasure
 				["groups"] = {
@@ -262,13 +262,13 @@ _.WorldEvents =
 				["itemID"] = 105751,
 			},
 			i(14617),	-- Sawbones Shirt
-			i(44924),	-- Sun-Lute of the Phoenix King 
+			un(9, i(44924)),	-- Sun-Lute of the Phoenix King 
 			i(141995, { --  Unclaimed Black Market Container
 				["groups"] = {
 					n(-160, { -- Mounts **
 						i(32458),	-- Ashes of Alar **
 						i(95059),	-- Clutch of Ji-Kun **
-						un(31, i(115484)),	-- Core Hound Chain **
+						un(9, i(115484)),	-- Core Hound Chain **
 						i(13335),	-- Deathcharger's Reins **
 						i(78919),	-- Experiment 12-B **
 						i(30480),	-- Fiery Warhorse's Reins **
@@ -287,7 +287,7 @@ _.WorldEvents =
 						i(44707),	-- Reins of the Green Proto-Drake **
 						i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent **
 						i(49636),	-- Reins of the Onyxian Drake **
-						i(44175),	-- Reins of the Plagued Proto-Drake **
+						un(9, i(44175)),	-- Reins of the Plagued Proto-Drake **
 						i(32768),	-- Reins of the Raven Lord **
 						i(45802),	-- Reins of the Rusted Proto-Drake **
 						i(95057),	-- Reins of the Thundering Cobalt Cloud Serpent **
@@ -298,9 +298,9 @@ _.WorldEvents =
 						i(23720),	-- Riding Turtle **
 						i(69224),	-- Smoldering Egg of Millagazor **
 						i(89783),	-- Son of Galleon's Saddle **
-						i(19872),	-- Swift Razzashi Raptor **
+						un(9, i(19872)),	-- Swift Razzashi Raptor **
 						i(35513),	-- Swift White Hawkstrider **
-						i(19902),	-- Swift Zulian Tiger **
+						un(9, i(19902)),	-- Swift Zulian Tiger **
 						i(54068),	-- Wooly White Rhino **
 						i(49286),	-- X-51 Nether-Rocket X-TREME **
 
@@ -352,6 +352,7 @@ _.WorldEvents =
 						i(38050),	-- Soul-Trader Beacon **
 						i(49343),	-- Spectral Tiger Cub **
 						i(44965),	-- Teldrassil Sproutling Pet **
+						un(9, i(85513)),	-- Thundering Serpent Hatchling** Only availble from Unclaimed Container
 						i(8499),	-- Tiny Crimson Whelping **
 						i(69991),	-- Tiny Sporebat **
 						i(44971),	-- Tirisfal Batling Pet **
@@ -370,94 +371,94 @@ _.WorldEvents =
 					n(-3179, { -- Tier 3 (Naxxramas - Vanilla) **
 						["groups"] = {
 							gs(355, {	-- Vestments of Faith	
-								i(22514),	-- Circlet of Faith
-								i(22515),	-- Shoulderpads of Faith
-								i(22512),	-- Robe of Faith
-								i(22519),	-- Bindings of Faith
-								i(22517),	-- Gloves of Faith
-								i(22518),	-- Belt of Faith
-								i(22513),	-- Leggings of Faith
-								i(22516),	-- Sandals of Faith
+								un(9, i(22514)),	-- Circlet of Faith
+								un(9, i(22515)),	-- Shoulderpads of Faith
+								un(9, i(22512)),	-- Robe of Faith
+								un(9, i(22519)),	-- Bindings of Faith
+								un(9, i(22517)),	-- Gloves of Faith
+								un(9, i(22518)),	-- Belt of Faith
+								un(9, i(22513)),	-- Leggings of Faith
+								un(9, i(22516)),	-- Sandals of Faith
 							}),		
 							gs(907, {	-- Frostfire Regalia	
-								i(22498),	-- Frostfire Circlet
-								i(22499),	-- Frostfire Shoulderpads
-								i(22496),	-- Frostfire Robe
-								i(22503),	-- Frostfire Bindings
-								i(22501),	-- Frostfire Gloves
-								i(22502),	-- Frostfire Belt
-								i(22497),	-- Frostfire Leggings
-								i(22500),	-- Frostfire Sandals
+								un(9, i(22498)),	-- Frostfire Circlet
+								un(9, i(22499)),	-- Frostfire Shoulderpads
+								un(9, i(22496)),	-- Frostfire Robe
+								un(9, i(22503)),	-- Frostfire Bindings
+								un(9, i(22501)),	-- Frostfire Gloves
+								un(9, i(22502)),	-- Frostfire Belt
+								un(9, i(22497)),	-- Frostfire Leggings
+								un(9, i(22500)),	-- Frostfire Sandals
 							}),		
 							gs(865, {	-- Plagueheart Raiment	
-								i(22506),	-- Plagueheart Circlet
-								i(22507),	-- Plagueheart Shoulderpads
-								i(22504),	-- Plagueheart Robe
-								i(22511),	-- Plagueheart Bindings
-								i(22509),	-- Plagueheart Gloves
-								i(22510),	-- Plagueheart Belt
-								i(22505),	-- Plagueheart Leggings
-								i(22508),	-- Plagueheart Sandals
+								un(9, i(22506)),	-- Plagueheart Circlet
+								un(9, i(22507)),	-- Plagueheart Shoulderpads
+								un(9, i(22504)),	-- Plagueheart Robe
+								un(9, i(22511)),	-- Plagueheart Bindings
+								un(9, i(22509)),	-- Plagueheart Gloves
+								un(9, i(22510)),	-- Plagueheart Belt
+								un(9, i(22505)),	-- Plagueheart Leggings
+								un(9, i(22508)),	-- Plagueheart Sandals
 							}),		
 							gs(924, {	--Dreamwalker Raiment	
-								i(22490),	-- Dreamwalker Headpiece
-								i(22491),	-- Dreamwalker Spaulders
-								i(22488),	-- Dreamwalker Tunic
-								i(22495),	-- Dreamwalker Wristguards
-								i(22493),	-- Dreamwalker Handguards
-								i(22494),	-- Dreamwalker Girdle
-								i(22489),	-- Dreamwalker Legguards
-								i(22492),	-- Dreamwalker Boots
+								un(9, i(22490)),	-- Dreamwalker Headpiece
+								un(9, i(22491)),	-- Dreamwalker Spaulders
+								un(9, i(22488)),	-- Dreamwalker Tunic
+								un(9, i(22495)),	-- Dreamwalker Wristguards
+								un(9, i(22493)),	-- Dreamwalker Handguards
+								un(9, i(22494)),	-- Dreamwalker Girdle
+								un(9, i(22489)),	-- Dreamwalker Legguards
+								un(9, i(22492)),	-- Dreamwalker Boots
 							}),		
-							gs(891, {	-- Bonescythe Armor	
-								i(22478),	-- Bonescythe Helmet
-								i(22479),	-- Bonescythe Pauldrons
-								i(22476),	-- Bonescythe Breastplate
-								i(22483),	-- Bonescythe Bracers
-								i(22481),	-- Bonescythe Gauntlets
-								i(22482),	-- Bonescythe Waistguard
-								i(22477),	-- Bonescythe Legplates
-								i(22480),	-- Bonescythe Sabatons
+							gs(891, {	-- Bonescythe Armor
+								un(9, i(22478)),	-- Bonescythe Helmet
+								un(9, i(22479)),	-- Bonescythe Pauldrons
+								un(9, i(22476)),	-- Bonescythe Breastplate
+								un(9, i(22483)),	-- Bonescythe Bracers
+								un(9, i(22481)),	-- Bonescythe Gauntlets
+								un(9, i(22482)),	-- Bonescythe Waistguard
+								un(9, i(22477)),	-- Bonescythe Legplates
+								un(9, i(22480)),	-- Bonescythe Sabatons
 							}),		
 							gs(914, {	-- Cryptstalker Armor	
-								i(22438),	-- Cryptstalker Headpiece
-								i(22439),	-- Cryptstalker Spaulders
-								i(22436),	-- Cryptstalker Tunic
-								i(22443),	-- Cryptstalker Wristguards
-								i(22441),	-- Cryptstalker Handguards
-								i(22442),	-- Cryptstalker Girdle
-								i(22437),	-- Cryptstalker Legguards
-								i(22440),	-- Cryptstalker Boots
+								un(9, i(22438)),	-- Cryptstalker Headpiece
+								un(9, i(22439)),	-- Cryptstalker Spaulders
+								un(9, i(22436)),	-- Cryptstalker Tunic
+								un(9, i(22443)),	-- Cryptstalker Wristguards
+								un(9, i(22441)),	-- Cryptstalker Handguards
+								un(9, i(22442)),	-- Cryptstalker Girdle
+								un(9, i(22437)),	-- Cryptstalker Legguards
+								un(9, i(22440)),	-- Cryptstalker Boots
 							}),		
 							gs(873, {	-- The Earthshatter	
-								i(22466),	-- Earthshatter Headpiece
-								i(22467),	-- Earthshatter Spaulders
-								i(22464),	-- Earthshatter Tunic
-								i(22471),	-- Earthshatter Wristguards
-								i(22469),	-- Earthshatter Handguards
-								i(22470),	-- Earthshatter Girdle
-								i(22465),	-- Earthshatter Legguards
-								i(22468),	-- Earthshatter Boots
+								un(9, i(22466)),	-- Earthshatter Headpiece
+								un(9, i(22467)),	-- Earthshatter Spaulders
+								un(9, i(22464)),	-- Earthshatter Tunic
+								un(9, i(22471)),	-- Earthshatter Wristguards
+								un(9, i(22469)),	-- Earthshatter Handguards
+								un(9, i(22470)),	-- Earthshatter Girdle
+								un(9, i(22465)),	-- Earthshatter Legguards
+								un(9, i(22468)),	-- Earthshatter Boots
 							}),		
 							gs(899, {	-- Redemption  Armor	
-								i(22428),	-- Redemption Headpiece
-								i(22429),	-- Redemption Spaulders
-								i(22425),	-- Redemption Tunic
-								i(22424),	-- Redemption Wristguards
-								i(22426),	-- Redemption Handguards
-								i(22431),	-- Redemption Girdle
-								i(22427),	-- Redemption Legguards
-								i(22430),	-- Redemption Boots
+								un(9, i(22428)),	-- Redemption Headpiece
+								un(9, i(22429)),	-- Redemption Spaulders
+								un(9, i(22425)),	-- Redemption Tunic
+								un(9, i(22424)),	-- Redemption Wristguards
+								un(9, i(22426)),	-- Redemption Handguards
+								un(9, i(22431)),	-- Redemption Girdle
+								un(9, i(22427)),	-- Redemption Legguards
+								un(9, i(22430)),	-- Redemption Boots
 							}),		
 							gs(850, {	-- Dreadnaught's Battlegear	
-								i(22418),	-- Dreadnaught Helmet
-								i(22419),	-- Dreadnaught Pauldrons
-								i(22416),	-- Dreadnaught Breastplate
-								i(22423),	-- Dreadnaught Bracers
-								i(22421),	-- Dreadnaught Gauntlets
-								i(22422),	-- Dreadnaught Waistguard
-								i(22417),	-- Dreadnaught Legplates
-								i(22420),	-- Dreadnaught Sabatons
+								un(9, i(22418)),	-- Dreadnaught Helmet
+								un(9, i(22419)),	-- Dreadnaught Pauldrons
+								un(9, i(22416)),	-- Dreadnaught Breastplate
+								un(9, i(22423)),	-- Dreadnaught Bracers
+								un(9, i(22421)),	-- Dreadnaught Gauntlets
+								un(9, i(22422)),	-- Dreadnaught Waistguard
+								un(9, i(22417)),	-- Dreadnaught Legplates
+								un(9, i(22420)),	-- Dreadnaught Sabatons
 							}),		
 						},
 						["achievementID"] = 11744, -- Drop Dead, Gorgeous
@@ -473,7 +474,7 @@ _.WorldEvents =
 						i(32566),	-- Picnic Basket **
 						i(38578),	-- The Flag of Ownership **
 					}),
-					i(39769),	-- Arcanite Ripper **
+					un(9, i(39769)),	-- Arcanite Ripper **
 					i(50379, {	-- Battered Hilt (Alliance) **
 						["groups"] = {
 							i(50050),	-- Cudgel of Furious Justice
@@ -504,9 +505,9 @@ _.WorldEvents =
 						["description"] = "Contains 250-500 Darkmoon Faire Tickets",
 					}),
 					i(128312),	-- Elixir of the Rapid Mind **
-					i(45037),	-- Epic Purple Shirt
-					i(90176),	-- Flintlocke's Blasthammer **
-					un(2, i(110672)),	-- Grimoire of the Four Winds **
+					un(9, i(45037)),	-- Epic Purple Shirt
+					un(9, i(90176)),	-- Flintlocke's Blasthammer **
+					un(9, i(110672)),	-- Grimoire of the Four Winds **
 					un(31, i(118572)), 	-- Illusion: Flame of Ragnaros **
 					{	-- Kor'kron Shaman's Treasure
 						["groups"] = {
@@ -522,7 +523,7 @@ _.WorldEvents =
 						["itemID"] = 105751,
 					},
 					i(14617),	-- Sawbones Shirt **
-					i(44924),	-- Sun-Lute of the Phoenix King **
+					un(9, i(44924)),	-- Sun-Lute of the Phoenix King **
 				},
 			}),
 		},

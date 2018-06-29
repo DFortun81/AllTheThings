@@ -239,6 +239,7 @@ _.Zones =
 						i(53589),
 						i(53590),
 						i(53591),
+						un(2, i(11917)),	-- Shizzle's Nozzle Wiper
 					})),
 --[[					
 					qg(10302, q(24794)),	-- Speak With Spraggle
