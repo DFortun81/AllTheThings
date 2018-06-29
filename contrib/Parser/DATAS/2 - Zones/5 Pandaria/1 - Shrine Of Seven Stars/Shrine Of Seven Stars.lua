@@ -132,42 +132,8 @@ _.Zones =
 							}),
 						},
 						["u"] = 22,
+						["races"] = ALLIANCE_ONLY,
 					}),
---[[					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),				
---]]			
 				}),
 				n(-25, { 	-- Pet Battle
 					q(32863, { 	-- What We've Been Training For
@@ -211,26 +177,6 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests	
---[[				
-					qa( 31512),	-- A Witness to History
-					qa( 32315),	-- Anduin's Plea
---]]
---[[ CHALLENGE MODE DAILIES -- REMOVED?
-					qdg(qa(32007, {	-- A Worthy Challenge: Darkmaster Gandling
-						i(98134),	-- Heroic Cache of Treasures
-					})),
-					qdg(qa(32005, {	-- A Worthy Challenge: Durand
-						i(98134),	-- Heroic Cache of Treasures
-					})),
-					qdg(qa(32006, {	-- A Worthy Challenge: Flameweaver Koegler
-						i(98134),	-- Heroic Cache of Treasures
-					})),
---]]
---[[
-					qa( 32052),	-- Candy Bucket
-					q(31486),	-- Everything I Know About Cooking
-					qa( 32316),	-- Heart Of The Alliance
---]]					
 					qa(32900,  {  -- Heroic Deeds
 						["groups"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
@@ -1187,63 +1133,6 @@ _.Zones =
 						i(99664),	-- Shoulderguards of the Stattered Vale
 						i(99665),	-- Headguard of Winged Triumph
 						i(99666),	-- Greaves of Winged Triumph
-					}),
-					n(64573, { -- Warpweaver Ramahesh (Alliance / Shrine of Seven Stars)
-						i(151116), -- Fashionable Undershirt
-						{ -- Ensemble: Mana-Etched  Regalia
-							["groups"] = {
-								i(151885), -- Mana-Etched Crown
-								i(151886), -- Mana-Etched Spaulders
-								i(151882), -- Mana-Etched Vestments
-								i(151884), -- Mana-Etched Gloves
-								i(151887), -- Glpyh-Lined Sash
-								i(151883), -- Mana-Etched Pantaloons
-								i(151888), -- Sigil-Laced Boots
-							},
-								["ignoreBonus"] = true,
-								["itemID"] = 151117,
-						},
-						{ -- Ensemble: Obsidian Prowler's Garb
-							["groups"] = {
-								i(151891), -- Savage Mask of the Lynx Lord
-								i(151889), -- Sun-Gilded Shouldercaps
-								i(151895), -- Chestguard of the Proweler
-								i(151892), -- Predatory Gloves
-								i(151894), -- Epoch's Whispering Cinch
-								i(151893), -- Mennu's Scaled Leggings
-								i(151890), -- Silent-Strider Kneeboots
-							},
-							["ignoreBonus"] = true,
-							["itemID"] = 151118
-						},
-						{ -- Ensemble: Der'izu Armor
-							["groups"] = {
-							i(151898), -- Der'izu Helm
-							i(151896), -- Der'izu Spaulders
-							i(151901), -- Der'izu Chestpiece
-							i(151902), -- Der'izu Bracer
-							i(151900), -- Der'izu Fists
-							i(151903), -- Der'izu Belt
-							i(151897), -- Der'izu Legguards
-							i(151899), -- Der'izu Greaves
-							},
-							["ignoreBonus"] = true,
-							["itemID"] = 151119
-						},
-						{ -- Ensemble: Righteous Battleplate
-							["groups"] = {
-								i(151906), -- Helm of the Righteous
-								i(151904), -- Spaulders of the Righteous
-								i(151908), -- Breastlate of the Righteous
-								i(151911), -- Bracers of Dignity
-								i(151907), -- Gauntlets of the Righteous
-								i(151910), -- Girdle of Valorous Deeds
-								i(151905), -- Legplates of the Righteous
-								i(151909), -- Boots of the Righteous Path
-							},
-							["ignoreBonus"] = true,
-							["itemID"] = 151120
-						},
 					}),
 					n(74020, {	-- Welbiz Cheerwhistle <Raid Finder Vendor>
 						i(105861, {	-- Essence of the Cursed Conqueror
