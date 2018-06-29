@@ -1904,7 +1904,7 @@ _.WorldEvents =
 										["u"] = 26,
 									}),
 								},
-								["description"] = "Arachnis is only active if you've applied the |cFFFFD700Creepy Crawlers|r decoration to your Garrison. This can be purchased with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your Garrison.",								
+								["description"] = "In order to summon |cFFFFD700Ghastly Rats, Ghost Maggots, and Spectral Spinners|r you will need to do the dailies in your Garrison.  Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause |cFFFFD700Ghastly Rats, Ghost Maggots, and Spectral Spinners to spawn|r."								
 							}),
 						},
 						["u"] = 26, -- Hallow's End

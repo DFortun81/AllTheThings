@@ -20,98 +20,28 @@ _.Instances =
 							["sourceQuests"] = { 13149 },	-- Dispelling Illusions
 						})),
 					}),
-					n(  0, {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						["groups"] = {
-							n(27731, { -- Acolyte
-								["groups"] = {
-									dr(0.2, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.2, i(37116)), -- Epaulets of Market Row
-									i(37699), -- Festival Lane Girdle
-									dr(0.2, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(28201, { -- Bile Golem
-								["groups"] = {
-									dr(0.5, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.6, i(37116)), -- Epaulets of Market Row
-									dr(0.5, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(27734, { -- Crypt Fiend
-								["groups"] = {
-									dr(0.4, i(37115)), -- Crusader's Square Pauldrons
-									dr(1.0, i(37116)), -- Epaulets of Market Row
-									dr(0.7, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(28200, { -- Dark Necromancer
-								["groups"] = {
-									dr(0.7, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.6, i(37116)), -- Epaulets of Market Row
-									dr(0.8, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(28249, { -- Devouring Ghoul
-								["groups"] = {
-									dr(1.0, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.8, i(37116)), -- Epaulets of Market Row
-									i(37699), -- Festival Lane Girdle
-									dr(0.9, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(27729, { -- Enraging Ghoul
-								["groups"] = {
-									dr(0.9, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.9, i(37116)), -- Epaulets of Market Row
-									i(37699), -- Festival Lane Girdle
-									dr(0.9, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(27742, { -- Infinite Adversary
-								["groups"] = {
-									dr(0.7, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.7, i(37116)), -- Epaulets of Market Row
-									i(37699), -- Festival Lane Girdle
-									dr(0.7, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(27744, { -- Infinite Agent
-								["groups"] = {
-									dr(0.7, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.8, i(37116)), -- Epaulets of Market Row
-									dr(0.7, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(27743, { -- Infinite Hunter
-								["groups"] = {
-									dr(0.7, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.6, i(37116)), -- Epaulets of Market Row
-									dr(0.8, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(27732, { -- Master Necromancer
-								["groups"] = {
-									dr(0.7, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.8, i(37116)), -- Epaulets of Market Row
-									i(37699), -- Festival Lane Girdle
-									dr(0.4, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(27736, { -- Patchwork Construct
-								["groups"] = {
-									dr(0.6, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.6, i(37116)), -- Epaulets of Market Row
-									i(37699), -- Festival Lane Girdle
-									dr(0.6, i(37117)), -- King's Square Bracers
-								},
-							}),
-							n(28199, { -- Tomb Stalker
-								["groups"] = {
-									dr(0.6, i(37115)), -- Crusader's Square Pauldrons
-									dr(0.7, i(37116)), -- Epaulets of Market Row
-									dr(0.8, i(37117)), -- King's Square Bracers
-								},
-							}),
+							i(37115), -- Crusader's Square Pauldrons
+							i(37116), -- Epaulets of Market Row
+							i(37699), -- Festival Lane Girdle
+							i(37781), -- Grips of  the Warming Heart
+							i(37117), -- King's Square Bracers
+							i(37698), -- Spaulders of Elder's Square
+						},
+						["crs"] = {
+							27731, -- Acolyte	
+							28201, -- Bile Golem	
+							27734, -- Crypt Fiend	
+							28200, -- Dark Necromancer	
+							28249, -- Devouring Ghoul	
+							27729, -- Enraging Ghoul	
+							27742, -- Infinite Adversary	
+							27744, -- Infinite Agent	
+							27743, -- Infinite Hunter	
+							27732, -- Master Necromancer	
+							27736, -- Patchwork Construct	
+							28199, -- Tomb Stalker	
 						},
 					}),
 					d(  1, {	-- Normal
