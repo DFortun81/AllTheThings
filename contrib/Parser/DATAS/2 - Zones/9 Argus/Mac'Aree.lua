@@ -98,9 +98,8 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-25, {
-					["f"] = 101,
-					["groups"] = bubbleDown({ ["f"] = 101 }, {	-- Pet Battle
+				n(-25, {	-- Pet Battle
+					["groups"] = {
 						ach(12088, { -- Anomalous Animals of Argus
 							{
 								["achievementID"] = 12088,	-- Anomalous Animals of Argus
@@ -399,7 +398,7 @@ _.Zones =
 						p(2130), 	-- Void Shardling
 						p(2129), 	-- Voidstalker Runt
 						p(2128), 	-- Warpstalker Runt
-					}),
+					},
 				}),
 --[[
 				n(-17, { 	-- Quests						

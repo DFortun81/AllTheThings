@@ -39,9 +39,8 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-25, {
-					["f"] = 101,
-					["groups"] = bubbleDown({ ["f"] = 101 }, {	-- Pet Battle
+				n(-25, {	-- Pet Battle
+					["groups"] = {
 						ach(12088, { -- Anomalous Animals of Argus
 							{
 								["achievementID"] = 12088,	-- Anomalous Animals of Argus
@@ -336,7 +335,7 @@ _.Zones =
 						p(2123),	-- Bile Larva
 						p(2124), 	-- Bilescourge
 						p(2127), 	-- Flickering Argunite
-					}),
+					}
 				}),
 				n(-17, {	-- Quests
 					["groups"] = {
@@ -595,193 +594,151 @@ _.Zones =
 								}),	
 							}),
 						}),
-						spell(253365, { -- Krokuun Equipment
-							q(48460, { -- The Wranglers [Breadcrumb - Required]	
-								["groups"] = {
-								},
-								["qg"] = 119388, -- Chieftain Hatuun
-								["sourceQuests"] = { 48199 }, -- The Burning Heart
-							}),	
-							q(47967, { -- An Argus Roper	
-								["groups"] = {
-								},
-								["qg"] = 126160, -- Lead Rider Jerek
-								["sourceQuests"] = { 48460 }, -- The Wranglers [Breadcrumb - Required]
-							}),	
-							q(48455, { -- Duskcloak Problem	
-								["groups"] = {
-								},
-								["qg"] = 126160, -- Lead Rider Jerek
-								["sourceQuests"] = { 48460 }, -- The Wranglers [Breadcrumb - Required]
-							}),	
-							q(48453, { -- Strike Back	
-								["groups"] = {
-								},
-								["qg"] = 126160, -- Lead Rider Jerek
-								["sourceQuests"] = { 48460 }, -- The Wranglers [Breadcrumb - Required]
-							}),	
-							q(48544, { -- Woah, Nelly	
-								["groups"] = {
-								},
-								["qg"] = 126160, -- Lead Rider Jerek
-								["sourceQuests"] = { 47967, 48455, 48453 }, -- An Argus Roper / Duskcloak Problem / Strike Back
-							}),	
-							q(48441, { -- Remnants of Darkfall Ridge	
-								["groups"] = {
-								},
-								["qg"] = 119388, -- Chieftain Hatuun
-								["sourceQuests"] = { 48544 }, -- Woah, Nelly
-							}),	
-							q(48442, { -- Nath'raxas Hold: Preparations	
-								["groups"] = {
-								},
-								["qg"] = 119388, -- Chieftain Hatuun
-								["sourceQuests"] = { 48441 }, -- Remnants of Darkfall Ridge
-							}),	
-							q(48910, { -- Supplying Krokuun	
-								["groups"] = {
-									i(152095), -- Krokul Ridgestalker
-								},
-								["qg"] = 119388, -- Chieftain Hatuun
-								["sourceQuests"] = { 48442 }, -- Nath'raxas Hold: Preparations
-							}),	
-							q(48443, { -- Nath'raxas Hold: Rescue Mission	
-								["groups"] = {
-								},
-								["qg"] = 119388, -- Chieftain Hatuun
-								["sourceQuests"] = { 48910 }, -- Supplying Krokuun
-							}),	
-							q(48634, { -- Further Supplying Krokuun	
-								["groups"] = {
-									i(152095), -- Krokul Ridgestalker
-								},
-								["qg"] = 119388, -- Chieftain Hatuun
-								["sourceQuests"] = { 48443 }, -- Nath'raxas Hold: Rescue Mission
-							}),	
-						}),
---[[							
-						n(-34, {	-- World Quests
-							q(48285),	-- Aerial Superiority
-							q(49043),	-- Baneglow
-							q(47705),	-- Behind Legion Lines
-							q(47724),	-- Besieged
-							q(47561),	-- Blistermaw
-							q(47496),	-- Bunker Buster
-							q(47624),	-- Bury It
-							q(47456),	-- Calming the Void
-							q(48511),	-- Commander Endaxis
-							q(48509),	-- Commander Sathrenael
-							q(48510),	-- Commander Vecaya
-							q(48286),	-- Crystal Methods
-							q(49045),	-- Deathscreech
-							q(47720),	-- Eternal Vengeance
-							q(49042),	-- Foulclaw
-							q(47566),	-- Gar'zoth
-							q(49046),	-- Gnasher
-							q(48287),	-- Harvesters of Sorrow
-							q(48592),	-- Holding the Spire
-							q(48282),	-- Imp Mother Laglath
-							q(47507),	-- Khazaduum
-							q(47551),	-- Lessons of Fire and Pain
-							q(47707),	-- Melting Down
-							q(47552),	-- Mistress Il'thendra
-							q(48502),	-- Naroua, King of the Forest							
-							q(48467),	-- Puscilla
-							q(48284),	-- Reap the Fields
-							q(49044),	-- Retch
-							q(47646),	-- Rope Around
-							q(49041),	-- Ruinhoof
-							q(47542),	-- Siegemaster Voraan
-							q(48512),	-- Sister Subversia
-							q(47563),	-- Spirits of the Fallen
-							q(48338),	-- Supplies Needed: Astral Glory
-							q(48358),	-- Supplies Needed: Empyrium
-							q(48360),	-- Supplies Needed: Fiendish Leather
-							q(48374),	-- Supplies Needed: Lightweave Cloth
-							q(47728),	-- Talestra the Vile
-							q(48192),	-- Tar Spitter
-							q(47953),	-- Tereck the Selector
-							q(47712),	-- The Devastator
-							q(47625),	-- The Ritual We Share
-							q(48091),	-- Vagath the Betrayed
-							q(47288),	-- Valuable Fossils
-							q(48466),	-- Ven'orn
-							q(48465),	-- Vrax'thul
-							q(48615),	-- War Never Changes
-							q(48614),	-- Woeful Implications
-							q(48337),	-- Work Order: Astral Glory
-							q(48349),	-- Work Order: Empyrium
-							q(48359),	-- Work Order: Fiendish Leather
-							q(48363),	-- Work Order: Florid Malachite
-							q(48364),	-- Work Order: Hesselian
-							q(48318),	-- Work Order: Lightblood Elixirs
-							q(48373),	-- Work Order: Lightweave Cloth
-							q(48323),	-- Work Order: Tears of the Naaru
-						}),	
---]]
-						i(152204, { -- Glowing Key Fragment
-							q(48231, { -- Armor of the Triumvirate
-								{ -- Ensemble: Light-Woven Triumvirate Regalia
+						n(-168, { -- Other Quests
+							["groups"] = {
+								q(49014, { -- The Burning Throne
 									["groups"] = {
-										i(151337), -- Head
-										i(151299), -- Shoulder
-										i(151635), -- Cloak
-										i(151303), -- Chest
-										i(151305), -- Wrist
-										i(151300), -- Hands
-										i(151302), -- Waist
-										i(151304), -- Legs
-										i(151301), -- Feet
 									},
-									["ignoreBonus"] = true,
-									["itemID"] = 152241,
-								},
-								{ -- Ensemble: Burnished Triumvirate Armor
+									["qg"] = 124312, -- High Exarch Turalyon
+									["sourceQuests"] = { 48559 }, -- An Oferring of Light
+								}),
+								q(49015, { -- Antorus, the Burning Throne: The Death of a Titan
 									["groups"] = {
-										i(151336), -- Head
-										i(151319), -- Shoulder
-										i(151306), -- Cloak
-										i(151313), -- Chest
-										i(151315), -- Wrist
-										i(151318), -- Hands
-										i(151316), -- Waist
-										i(151314), -- Legs
-										i(151317), -- Feet
+										i(152984), -- Boon of the Pantheon
+										i(152626), -- Insignia of the Grand Army
 									},
-									["ignoreBonus"] = true,
-									["itemID"] = 152242,
-								},
-								{ -- Ensemble: Sterling Triumvirate Chainmail
-									["groups"] = {
-										i(151324), -- Head
-										i(151323), -- Shoulder
-										i(151634), -- Cloak
-										i(151325), -- Chest
-										i(151321), -- Wrist
-										i(151322), -- Hands
-										i(151326), -- Waist
-										i(151338), -- Legs
-										i(151320), -- Feet
-									},
-									["ignoreBonus"] = true,
-									["itemID"] = 152243,
-								},
-								{ -- Ensemble: Venerated Triumvirate Battleplate
-									["groups"] = {
-										i(151333), -- Head
-										i(151331), -- Shoulder
-										i(151298), -- Cloak
-										i(151329), -- Chest
-										i(151328), -- Wrist
-										i(151332), -- Hands
-										i(151327), -- Waist
-										i(151339), -- Legs
-										i(151330), -- Feet
-									},
-									["ignoreBonus"] = true,
-									["itemID"] = 152244,
-								},
-							}),
+									["qg"] = 120533, -- Prophet Velen
+									["sourceQuests"] = { 49014 }, -- The Burning Throne
+								}),
+								spell(253365, { -- Krokuun Equipment
+									q(48460, { -- The Wranglers [Breadcrumb - Required]	
+										["groups"] = {
+										},
+										["qg"] = 119388, -- Chieftain Hatuun
+										["sourceQuests"] = { 48199 }, -- The Burning Heart
+									}),	
+									q(47967, { -- An Argus Roper	
+										["groups"] = {
+										},
+										["qg"] = 126160, -- Lead Rider Jerek
+										["sourceQuests"] = { 48460 }, -- The Wranglers [Breadcrumb - Required]
+									}),	
+									q(48455, { -- Duskcloak Problem	
+										["groups"] = {
+										},
+										["qg"] = 126160, -- Lead Rider Jerek
+										["sourceQuests"] = { 48460 }, -- The Wranglers [Breadcrumb - Required]
+									}),	
+									q(48453, { -- Strike Back	
+										["groups"] = {
+										},
+										["qg"] = 126160, -- Lead Rider Jerek
+										["sourceQuests"] = { 48460 }, -- The Wranglers [Breadcrumb - Required]
+									}),	
+									q(48544, { -- Woah, Nelly	
+										["groups"] = {
+										},
+										["qg"] = 126160, -- Lead Rider Jerek
+										["sourceQuests"] = { 47967, 48455, 48453 }, -- An Argus Roper / Duskcloak Problem / Strike Back
+									}),	
+									q(48441, { -- Remnants of Darkfall Ridge	
+										["groups"] = {
+										},
+										["qg"] = 119388, -- Chieftain Hatuun
+										["sourceQuests"] = { 48544 }, -- Woah, Nelly
+									}),	
+									q(48442, { -- Nath'raxas Hold: Preparations	
+										["groups"] = {
+										},
+										["qg"] = 119388, -- Chieftain Hatuun
+										["sourceQuests"] = { 48441 }, -- Remnants of Darkfall Ridge
+									}),	
+									q(48910, { -- Supplying Krokuun	
+										["groups"] = {
+											i(152095), -- Krokul Ridgestalker
+										},
+										["qg"] = 119388, -- Chieftain Hatuun
+										["sourceQuests"] = { 48442 }, -- Nath'raxas Hold: Preparations
+									}),	
+									q(48443, { -- Nath'raxas Hold: Rescue Mission	
+										["groups"] = {
+										},
+										["qg"] = 119388, -- Chieftain Hatuun
+										["sourceQuests"] = { 48910 }, -- Supplying Krokuun
+									}),	
+									q(48634, { -- Further Supplying Krokuun	
+										["groups"] = {
+											i(152095), -- Krokul Ridgestalker
+										},
+										["qg"] = 119388, -- Chieftain Hatuun
+										["sourceQuests"] = { 48443 }, -- Nath'raxas Hold: Rescue Mission
+									}),	
+								}),
+								i(152204, { -- Glowing Key Fragment
+									q(48231, { -- Armor of the Triumvirate
+										{ -- Ensemble: Light-Woven Triumvirate Regalia
+											["groups"] = {
+												i(151337), -- Head
+												i(151299), -- Shoulder
+												i(151635), -- Cloak
+												i(151303), -- Chest
+												i(151305), -- Wrist
+												i(151300), -- Hands
+												i(151302), -- Waist
+												i(151304), -- Legs
+												i(151301), -- Feet
+											},
+											["ignoreBonus"] = true,
+											["itemID"] = 152241,
+										},
+										{ -- Ensemble: Burnished Triumvirate Armor
+											["groups"] = {
+												i(151336), -- Head
+												i(151319), -- Shoulder
+												i(151306), -- Cloak
+												i(151313), -- Chest
+												i(151315), -- Wrist
+												i(151318), -- Hands
+												i(151316), -- Waist
+												i(151314), -- Legs
+												i(151317), -- Feet
+											},
+											["ignoreBonus"] = true,
+											["itemID"] = 152242,
+										},
+										{ -- Ensemble: Sterling Triumvirate Chainmail
+											["groups"] = {
+												i(151324), -- Head
+												i(151323), -- Shoulder
+												i(151634), -- Cloak
+												i(151325), -- Chest
+												i(151321), -- Wrist
+												i(151322), -- Hands
+												i(151326), -- Waist
+												i(151338), -- Legs
+												i(151320), -- Feet
+											},
+											["ignoreBonus"] = true,
+											["itemID"] = 152243,
+										},
+										{ -- Ensemble: Venerated Triumvirate Battleplate
+											["groups"] = {
+												i(151333), -- Head
+												i(151331), -- Shoulder
+												i(151298), -- Cloak
+												i(151329), -- Chest
+												i(151328), -- Wrist
+												i(151332), -- Hands
+												i(151327), -- Waist
+												i(151339), -- Legs
+												i(151330), -- Feet
+											},
+											["ignoreBonus"] = true,
+											["itemID"] = 152244,
+										},
+									}),
+								}),
+							},
 						}),
 					},
 					["description"] = "\nThis quest ends in Krokuun after you finish |cFFFFD700Seat of the Triumvirate|r dungeon quest\n",
