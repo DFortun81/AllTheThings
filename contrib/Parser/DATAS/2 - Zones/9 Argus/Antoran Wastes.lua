@@ -40,9 +40,8 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-25, {
-					["f"] = 101,
-					["groups"] = bubbleDown({ ["f"] = 101 }, {	-- Pet Battle
+				n(-25, {	-- Pet Battle
+					["groups"] = {
 						ach(12088, { -- Anomalous Animals of Argus
 							{
 								["achievementID"] = 12088,	-- Anomalous Animals of Argus
@@ -336,7 +335,7 @@ _.Zones =
 						}),
 						p(2122), 	-- Antoran Bile Larva
 						p(2126), 	-- Antoran Bilescourge
-					}),
+					},
 				}),
 --[[
 				n(-17, { 	-- Quests						
