@@ -1899,7 +1899,7 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 			
 				-- If something new was "learned", then refresh the data.
 				if learned > 0 then
-					app:RefreshData(false, true);
+					app:RefreshData(false, true, true);
 					app.print("Cached " .. learned .. " known recipes!");
 				end
 			end
@@ -2098,7 +2098,7 @@ local function RefreshSavesCoroutine()
 	end
 	
 	-- Mark that we're done now.
-	app:UpdateWindows();
+	app:UpdateWindows(nil, true);
 end
 local function RefreshSaves()
 	StartCoroutine("RefreshSaves", RefreshSavesCoroutine);
@@ -2196,7 +2196,7 @@ local function RefreshMountCollection()
 		coroutine.yield();
 		
 		-- Refresh the Collection Windows!
-		app:RefreshData(false, true);
+		app:RefreshData(false, true, true);
 		
 		-- Wait 2 frames before refreshing states.
 		coroutine.yield();
@@ -4924,7 +4924,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		end
 		
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true);
+		app:RefreshData(fresh, true, true);
 	else
 		-- Show the collection message.
 		if GetDataMember("ShowNotifications", true) then
@@ -5036,7 +5036,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		end
 		
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true);
+		app:RefreshData(fresh, true, true);
 	end
 end
 function app.UniqueModeItemCollectionHelper(sourceID, oldState)
@@ -5081,7 +5081,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 		end
 		
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true);
+		app:RefreshData(fresh, true, true);
 	else
 		-- Show the collection message.
 		if GetDataMember("ShowNotifications", true) then
@@ -5099,7 +5099,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 		end
 		
 		-- If the item isn't in the list, then don't bother refreshing the data.
-		-- app:RefreshData(true, true);
+		-- app:RefreshData(true, true, true);
 	end
 end
 function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
@@ -5196,7 +5196,7 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 		end
 		
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true);
+		app:RefreshData(fresh, true, true);
 	end
 end
 function app.UniqueModeItemRemovalHelper(sourceID, oldState)
@@ -5244,7 +5244,7 @@ function app.QuestCompletionHelper(questID)
 		end
 		
 		-- Don't force a full refresh.
-		app:RefreshData(true, true);
+		app:RefreshData(true, true, true);
 	end
 end
 
@@ -5402,7 +5402,7 @@ local function CreateMiniListForGroup(group)
 						-- Only care about the first search result.
 						if app.GroupFilter(sourceQuest[1]) then
 							sourceQuest = setmetatable({ ['collectible'] = true, ['visible'] = true, ['hideText'] = true }, { __index = sourceQuest[1] });
-							if sourceQuest.sourceQuests and #sourceQuest.sourceQuests > 0 then
+							if sourceQuest.sourceQuests and #sourceQuest.sourceQuests > 0 and (not sourceQuest.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
 								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
 								for j, subsourceQuests in ipairs(sourceQuest.sourceQuests) do
 									subSourceQuests[subsourceQuests] = true;
@@ -6277,7 +6277,7 @@ function app:ToggleWindow(suffix)
 	local window = app.Windows[suffix];
 	if window then ToggleWindow(window); end
 end
-local function UpdateWindow(self, force)
+local function UpdateWindow(self, force, got)
 	-- If this window doesn't have data, do nothing.
 	if not self.data then return; end
 	if not self.rowData then
@@ -6322,7 +6322,7 @@ local function UpdateWindow(self, force)
 					tinsert(self.rowData, self.data);
 				end
 				if self.missingData then
-					app:PlayCompleteSound();
+					if got then app:PlayCompleteSound(); end
 					self.missingData = nil;
 				end
 				tinsert(self.rowData, {
@@ -6352,10 +6352,10 @@ local function UpdateWindowColor(self, suffix)
 	self:SetBackdropBorderColor(1, 1, 1, 1);
 	self:SetBackdropColor(0, 0, 0, 1);
 end
-function app:UpdateWindows(force)
+function app:UpdateWindows(force, got)
 	local anyUpdated = false;
 	for name, window in pairs(app.Windows) do
-		if window:Update(force) then
+		if window:Update(force, got) then
 			--print(name .. ": Updated");
 			anyUpdated = true;
 		end
@@ -6760,7 +6760,7 @@ function app:GetDataCache()
 	end
 	return allData;
 end
-function app:RefreshData(lazy, safely)
+function app:RefreshData(lazy, safely, got)
 	--print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(safely or false) .. ")");
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	StartCoroutine("RefreshData", function()
@@ -6783,9 +6783,9 @@ function app:RefreshData(lazy, safely)
 			app.HolidayHeader.visible = app.GroupVisibilityFilter(app.HolidayHeader);
 			
 			-- Forcibly update the windows.
-			app:UpdateWindows(true);
+			app:UpdateWindows(true, got);
 		else
-			app:UpdateWindows();
+			app:UpdateWindows(nil, got);
 		end
 	end);
 end
@@ -8819,7 +8819,7 @@ end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not GetDataSubMember("CollectedToys", itemID) then
 		SetDataSubMember("CollectedToys", itemID, true);
-		app:RefreshData(false, true);
+		app:RefreshData(false, true, true);
 		app:PlayFanfare();
 		wipe(searchCache);
 		
@@ -8890,7 +8890,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		end
 		
 		-- Refresh the Data and Cry!
-		app:RefreshData(false, true);
+		app:RefreshData(false, true, true);
 		app:PlayRemoveSound();
 		wipe(searchCache);
 	end
