@@ -492,7 +492,17 @@ end
 
 -- audio lib
 local lastPlayedFanfare;
-local function PlayFanfare()
+function app:PlayCompleteSound()
+	if GetDataMember("PlayCompleteSound", true) then
+		-- Play a random complete sound from the locale table
+		local t = L("AUDIO_COMPLETE_TABLE");
+		if t and type(t) == "table" then
+			local id = math.random(1, #t);
+			if t[id] then PlaySoundFile(t[id], "master"); end
+		end
+	end
+end
+function app:PlayFanfare()
 	if GetDataMember("PlayFanfare", true) then
 		-- Don't spam the users. It's nice sometimes, but let's put a delay of at least 1 second on there.
 		local now = time();
@@ -507,7 +517,17 @@ local function PlayFanfare()
 		end
 	end
 end
-local function PlayRemoveSound()
+function app:PlayRareFindSound()
+	if GetDataMember("PlayRareFindSound", true) then
+		-- Play a random rarefind sound from the locale table
+		local t = L("AUDIO_RAREFIND_TABLE");
+		if t and type(t) == "table" then
+			local id = math.random(1, #t);
+			if t[id] then PlaySoundFile(t[id], "master"); end
+		end
+	end
+end
+function app:PlayRemoveSound()
 	if GetDataMember("PlayRemoveSound", true) then
 		-- Play a random fanfare from the locale table
 		local t = L("AUDIO_REMOVE_TABLE");
@@ -2185,9 +2205,9 @@ local function RefreshMountCollection()
 		-- Compare progress
 		local progress = app:GetDataCache().progress or 0;
 		if progress < previousProgress then
-			PlayRemoveSound();
+			app:PlayRemoveSound();
 		elseif progress > previousProgress then
-			PlayFanfare();
+			app:PlayFanfare();
 		end
 		wipe(searchCache);
 		collectgarbage();
@@ -8790,7 +8810,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not GetDataSubMember("CollectedToys", itemID) then
 		SetDataSubMember("CollectedToys", itemID, true);
 		app:RefreshData(false, true);
-		PlayFanfare();
+		app:PlayFanfare();
 		wipe(searchCache);
 		
 		if GetDataMember("ShowNotifications", true) then
@@ -8818,7 +8838,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 		if oldState ~= 1 then
 			SetDataSubMember("CollectedSources", sourceID, 1);
 			app.ActiveItemCollectionHelper(sourceID, oldState);
-			PlayFanfare();
+			app:PlayFanfare();
 			wipe(searchCache);
 		end
 	end
@@ -8861,7 +8881,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		
 		-- Refresh the Data and Cry!
 		app:RefreshData(false, true);
-		PlayRemoveSound();
+		app:PlayRemoveSound();
 		wipe(searchCache);
 	end
 end
