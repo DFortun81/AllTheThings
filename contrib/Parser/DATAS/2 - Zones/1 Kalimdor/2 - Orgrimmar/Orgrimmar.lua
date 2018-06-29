@@ -12,11 +12,11 @@ _.Zones =
 							n(-17, { 	-- Quests
 								q(8677, {	-- Darkhorn the Elder		
 									["groups"] = {		
-										-- i(21100),	-- Coin of Ancestry
-										-- i(21746, {	-- Lucky Red Envelope
-											--i(21745),
-											--i(21744),
-										--}),	
+										i(21100),	-- Coin of Ancestry
+										i(21746, {	-- Lucky Red Envelope
+											i(21745),
+											i(21744),
+										}),	
 									},		
 									["description"] = "Location: 52.23, 60",		
 									["qg"] = 15579,	-- Elder Darkhorn
@@ -44,7 +44,6 @@ _.Zones =
 							n(-17, { 	-- Quests
 								qg(37675, q(24635)),	-- A Cloudlet of Classy Cologne
 								qg(37172, qh(24576)),	-- A Friendly Chat...
--- COORDINATES					qg(38328, qh(24576)),	-- A Friendly Chat...
 								qg(38042, qh(24612)),	-- A Gift for High Overlord Saurfang
 								qg(37675, q(24629)),	-- A Perfect Puff of Perfume
 								qg(37675, q(24636)),	-- Bonbon Blitz
@@ -90,9 +89,7 @@ _.Zones =
 					n(-51, {		-- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(19176, qh(13483)),	-- Spring Gatherers
--- Coordinates					qg(19175, qh(13483)),	-- Spring Gatherers
--- Coordinates					qg(19177, qh(13483)),	-- Spring Gatherers								
+								qg(19176, qh(13483)),	-- Spring Gatherers							
 							}),
 						},
 						["achievementID"] = 2798, -- Noble Gardener
@@ -245,6 +242,7 @@ _.Zones =
 							}),
 						},
 						["u"] = 22,
+						["races"] = HORDE_ONLY,
 					}),
 					n(-56, { 		-- Brewfest
 						["groups"] = {
@@ -254,10 +252,7 @@ _.Zones =
 										qh(12306),	-- Brew of the Month Club
 									}),
 								}),
---								qh(12421),	-- Brew of the Month Club (LEGACY? looks like an old or unused version of previous quest -- the item that begins this one isn't listed as being sold by any NPC)
 								qg(19175, qh(11446)),	-- Brewfest!
--- COORDINATES					qg(19176, qh(11446)),	-- Brewfest!
--- COORDINATES					qg(19177, qh(11446)),	-- Brewfest!
 							}),
 							n(-2, { -- Vendors
 								h(n(27489, { -- Ray'ma
@@ -302,8 +297,6 @@ _.Zones =
 						["groups"]  = {
 							n(-17, { 	-- Quests
 								qg(19175, qh(14036)),	-- Pilgrim's Bounty
--- COORDINATES					qg(19176, qh(14036)),	-- Pilgrim's Bounty
--- COORDINATES					qg(19177, qh(14036)),	-- Pilgrim's Bounty
 							}),
 						},
 						["achievementID"] = 3478, -- Pilgrim
@@ -322,13 +315,11 @@ _.Zones =
 										un(29, i(37710)), -- Crashin' Thrashin' Racer Controller
 									}),
 								}),
-								--[[  NOTHING COLLECTIBLE =(
 								ach(6059, { -- (2009)
 									i(46740, { -- Winter Veil Gift
 										i(46725), -- Red Rider Air Rifle
 									}),
 								}),
-								--]]
 								ach(6060, { -- MiniZep Controller (2010)
 									i(67443, { -- Winter Veil Gift
 										un(29, i(46709)), -- MiniZep Controller

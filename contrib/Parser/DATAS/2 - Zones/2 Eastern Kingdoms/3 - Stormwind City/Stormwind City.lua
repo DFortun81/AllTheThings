@@ -202,6 +202,7 @@ _.Zones =
 							}),
 						},
 						["u"] = 22,
+						["races"] = ALLIANCE_ONLY,
 					}),					
 					ach(11848, { 	-- 13th Anniversary
 						["groups"] = {

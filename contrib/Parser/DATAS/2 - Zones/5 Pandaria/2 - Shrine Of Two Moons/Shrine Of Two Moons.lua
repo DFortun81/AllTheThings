@@ -132,6 +132,7 @@ _.Zones =
 							})),
 						},
 						["u"] = 22,
+						["races"] = HORDE_ONLY,
 					}),
 	--[[					
 					n(-56, {     -- Brewfest
@@ -1460,63 +1461,6 @@ _.Zones =
 						i(99408),	-- Handguards of the Prehistoric Marauder
 						i(99352),	-- Handwraps of Celestial Harmony
 						i(99388),	-- Handwraps of Seven Sacred Seals
-					}),
-					n(67014, { -- Warpweaver Shafiee (Horde / Shrine of Two Moons)
-						i(151116), -- Fashionable Undershirt
-						{ -- Ensemble: Mana-Etched  Regalia
-							["groups"] = {
-								i(151885), -- Mana-Etched Crown
-								i(151886), -- Mana-Etched Spaulders
-								i(151882), -- Mana-Etched Vestments
-								i(151884), -- Mana-Etched Gloves
-								i(151887), -- Glpyh-Lined Sash
-								i(151883), -- Mana-Etched Pantaloons
-								i(151888), -- Sigil-Laced Boots
-							},
-								["ignoreBonus"] = true,
-								["itemID"] = 151117,
-						},
-						{ -- Ensemble: Obsidian Prowler's Garb
-							["groups"] = {
-								i(151891), -- Savage Mask of the Lynx Lord
-								i(151889), -- Sun-Gilded Shouldercaps
-								i(151895), -- Chestguard of the Proweler
-								i(151892), -- Predatory Gloves
-								i(151894), -- Epoch's Whispering Cinch
-								i(151893), -- Mennu's Scaled Leggings
-								i(151890), -- Silent-Strider Kneeboots
-							},
-							["ignoreBonus"] = true,
-							["itemID"] = 151118
-						},
-						{ -- Ensemble: Der'izu Armor
-							["groups"] = {
-							i(151898), -- Der'izu Helm
-							i(151896), -- Der'izu Spaulders
-							i(151901), -- Der'izu Chestpiece
-							i(151902), -- Der'izu Bracer
-							i(151900), -- Der'izu Fists
-							i(151903), -- Der'izu Belt
-							i(151897), -- Der'izu Legguards
-							i(151899), -- Der'izu Greaves
-							},
-							["ignoreBonus"] = true,
-							["itemID"] = 151119
-						},
-						{ -- Ensemble: Righteous Battleplate
-							["groups"] = {
-								i(151906), -- Helm of the Righteous
-								i(151904), -- Spaulders of the Righteous
-								i(151908), -- Breastlate of the Righteous
-								i(151911), -- Bracers of Dignity
-								i(151907), -- Gauntlets of the Righteous
-								i(151910), -- Girdle of Valorous Deeds
-								i(151905), -- Legplates of the Righteous
-								i(151909), -- Boots of the Righteous Path
-							},
-							["ignoreBonus"] = true,
-							["itemID"] = 151120
-						},
 					}),
 				}),
 			},
