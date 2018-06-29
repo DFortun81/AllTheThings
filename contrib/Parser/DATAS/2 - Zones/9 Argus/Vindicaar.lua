@@ -740,6 +740,7 @@ _.Zones =
 							["groups"] = {
 							},
 							["collectible"] = false,
+							["f"] = 55, -- Consumables
 						}),
 					}),
 					n(121589, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
