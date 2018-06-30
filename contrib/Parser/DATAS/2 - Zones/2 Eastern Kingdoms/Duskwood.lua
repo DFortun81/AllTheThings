@@ -111,26 +111,6 @@ _.Zones =
 							["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
 						}),
 					}),
-					n(-500, { 	-- WoW Anniversary
-						n(121913, { -- Emeriss		
-							["groups"] = {
-								un(31, i(150429)), -- Emerald Dragonfang
-								un(31, i(150412)), -- Hammer of Bestial Fury
-								un(31, i(150393)), -- Nightmare Blade
-								un(31, i(150403)), -- Polished Ironwood Crossbow
-								un(31, i(150408)), -- Staff of Rampant Growth
-								un(31, i(150411)), -- Green Dragonskin Cloak
-								un(31, i(150410)), -- Acid Inscribed Greaves
-								un(31, i(150406)), -- Boots of the Endless Moor
-								un(31, i(150405)), -- Circlet of Restless Dreams
-								un(31, i(150415)), -- Dragonspur Wraps
-								un(31, i(150416)), -- Gloves of Delusional Power
-							},
-							["u"] = 31,
-							["isRaid"] = true,
-							["questID"] = 47463,
-						}),	
-					}),
 				}),
 				n(-538, {	-- Diablo 20th Anniversary Promotion
 					["groups"] = {	
@@ -154,17 +134,6 @@ _.Zones =
 					},
 					["u"] = 12,					
 				}),				
-				n(  -3, {	-- Holidays					
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests	
-								qa(12344),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-				}),								
 				n( -25, {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(646), 	-- Chicken

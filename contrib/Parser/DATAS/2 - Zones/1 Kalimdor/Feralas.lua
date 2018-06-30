@@ -110,28 +110,7 @@ _.Zones =
 							["isRaid"] = true,
 							["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
 						}),
-					}),
-					n(-500, { 	-- WoW Anniversary
-						n(121912, { -- Ysondre
-							["groups"] = {
-								un(31, i(150429)),	-- Emerald Dragonfang
-								un(31, i(150412)),	-- Hammer of Bestial Fury
-								un(31, i(150393)),	-- Nightmare Blade
-								un(31, i(150403)),	-- Polished Ironwood Crossbow
-								un(31, i(150408)),	-- Staff of Rampant Growth
-								un(31, i(150411)),	-- Green Dragonskin Cloak
-								un(31, i(150387)), 	-- Acid Inscribed Pauldrons
-								un(31, i(150397)),	-- Belt of the Dark Bog
-								un(31, i(150396)),	-- Boots of Fright
-								un(31, i(150391)),	-- Jade Inlaid Vestments
-								un(31, i(150389)),	-- Leggings of the Demented Mind
-								un(31, i(150409)),	-- Trance Stone
-							},
-							["u"] = 31,
-							["isRaid"] = true,
-							["questID"] = 47463,
-						}),
-					}),					
+					}),				
 				}),
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
@@ -164,19 +143,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa( 12350),	-- Candy Bucket
-								qh( 28998),	-- Candy Bucket
-								qh( 28996),	-- Candy Bucket
-								qh( 12386),	-- Candy Bucket
-								qa( 28952),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
 				}),			
 				n(-25, { 	-- Pet Battle
 					desc(p(557), "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas."), -- Nether Faerie Dragon

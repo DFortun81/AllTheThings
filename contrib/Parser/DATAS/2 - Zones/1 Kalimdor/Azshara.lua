@@ -29,25 +29,6 @@ _.Zones =
 							["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
 						}),
 					}),
-					n(-500, { 	-- WoW Anniversary
-						n(121820, { -- Azuregos
-							["groups"] = {
-								un(31, i(150424)),	-- Cold Snap
-								un(31, i(150428)),	-- Eskhandar's Left Claw
-								un(31, i(150423)),	-- Fang of the Mystics
-								un(31, i(150421)),	-- Typhoon
-								un(31, i(150417)),	-- Drape of Benediction
-								un(31, i(150419)),	-- Crystal Adorned Crown
-								un(31, i(150425)),	-- Snowblind Shoes
-								un(31, i(150543)), 	-- Sapphire-Encrusted Tunic
-								un(31, i(150544)), 	-- Mana-Frosted Pauldrons
-								un(31, i(150422)),	-- Unmelting Ice Girdle
-							},
-							["u"] = 31,
-							["isRaid"] = true,
-							["questID"] = 47462,
-						}),
-					}),	
 				}),
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
