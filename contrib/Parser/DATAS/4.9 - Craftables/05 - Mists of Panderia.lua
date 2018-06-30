@@ -236,6 +236,259 @@ _.Craftables =
 		n(-186, { -- Jewelcrafting
 		}),
 		n(-187, { -- Leatherworking
+			n(-322, { 	-- Cloak
+				i(85851),	-- Misthide Drape
+				i(85852),	-- Quick Strike Cloak
+				i(85853),	-- Stormscale Drape
+			}),
+			n(-44, { 	-- Leather
+				i(85788),	-- Chestguard of Nemeses
+				i(85797),	-- Contender's Leather Belt
+				i(85798),	-- Contender's Leather Boots
+				i(85799),	-- Contender's Leather Bracers
+				i(85800),	-- Contender's Leather Chestguard
+				i(85801),	-- Contender's Leather Gloves
+				i(85802),	-- Contender's Leather Helm
+				i(85803),	-- Contender's Leather Leggings
+				i(85804),	-- Contender's Leather Shoulders
+				i(85813),	-- Contender's Wyrmhide Belt
+				i(85814),	-- Contender's Wyrmhide Boots
+				i(85815),	-- Contender's Wyrmhide Bracers
+				i(85816),	-- Contender's Wyrmhide Chestguard
+				i(85817),	-- Contender's Wyrmhide Gloves
+				i(85818),	-- Contender's Wyrmhide Helm
+				i(85819),	-- Contender's Wyrmhide Leggings
+				i(85820),	-- Contender's Wyrmhide Shoulders
+				i(93506),	-- Crafted Dreadful Gladiator's Armwraps of Accuracy
+				i(93568),	-- Crafted Dreadful Gladiator's Armwraps of Alacrity
+				i(93472),	-- Crafted Dreadful Gladiator's Belt of Cruelty
+				i(93463),	-- Crafted Dreadful Gladiator's Belt of Meditation
+				i(93465),	-- Crafted Dreadful Gladiator's Bindings of Meditation
+				i(93474),	-- Crafted Dreadful Gladiator's Bindings of Prowess
+				i(93505),	-- Crafted Dreadful Gladiator's Boots of Alacrity
+				i(93567),	-- Crafted Dreadful Gladiator's Boots of Cruelty
+				i(93517),	-- Crafted Dreadful Gladiator's Copperskin Gloves
+				i(93519),	-- Crafted Dreadful Gladiator's Copperskin Helm
+				i(93521),	-- Crafted Dreadful Gladiator's Copperskin Legguards
+				i(93523),	-- Crafted Dreadful Gladiator's Copperskin Spaulders
+				i(93525),	-- Crafted Dreadful Gladiator's Copperskin Tunic
+				i(93458),	-- Crafted Dreadful Gladiator's Dragonhide Gloves
+				i(93459),	-- Crafted Dreadful Gladiator's Dragonhide Helm
+				i(93460),	-- Crafted Dreadful Gladiator's Dragonhide Legguards
+				i(93461),	-- Crafted Dreadful Gladiator's Dragonhide Robes
+				i(93462),	-- Crafted Dreadful Gladiator's Dragonhide Spaulders
+				i(93507),	-- Crafted Dreadful Gladiator's Ironskin Gloves
+				i(93509),	-- Crafted Dreadful Gladiator's Ironskin Helm
+				i(93511),	-- Crafted Dreadful Gladiator's Ironskin Legguards
+				i(93513),	-- Crafted Dreadful Gladiator's Ironskin Spaulders
+				i(93515),	-- Crafted Dreadful Gladiator's Ironskin Tunic
+				i(93466),	-- Crafted Dreadful Gladiator's Kodohide Gloves
+				i(93467),	-- Crafted Dreadful Gladiator's Kodohide Helm
+				i(93468),	-- Crafted Dreadful Gladiator's Kodohide Legguards
+				i(93469),	-- Crafted Dreadful Gladiator's Kodohide Robes
+				i(93470),	-- Crafted Dreadful Gladiator's Kodohide Spaulders
+				i(93473),	-- Crafted Dreadful Gladiator's Leather Footguards of Alacrity
+				i(93464),	-- Crafted Dreadful Gladiator's Leather Footguards of Meditation
+				i(93570),	-- Crafted Dreadful Gladiator's Leather Gloves
+				i(93571),	-- Crafted Dreadful Gladiator's Leather Helm
+				i(93572),	-- Crafted Dreadful Gladiator's Leather Legguards
+				i(93573),	-- Crafted Dreadful Gladiator's Leather Spaulders
+				i(93569),	-- Crafted Dreadful Gladiator's Leather Tunic
+				i(93566),	-- Crafted Dreadful Gladiator's Waistband of Accuracy
+				i(93504),	-- Crafted Dreadful Gladiator's Waistband of Cruelty
+				i(93475),	-- Crafted Dreadful Gladiator's Wyrmhide Gloves
+				i(93476),	-- Crafted Dreadful Gladiator's Wyrmhide Helm
+				i(93477),	-- Crafted Dreadful Gladiator's Wyrmhide Legguards
+				i(93478),	-- Crafted Dreadful Gladiator's Wyrmhide Robes
+				i(93479),	-- Crafted Dreadful Gladiator's Wyrmhide Spaulders
+				i(98832),	-- Crafted Malevolent Gladiator's Armwraps of Accuracy
+				i(98883),	-- Crafted Malevolent Gladiator's Armwraps of Alacrity
+				i(98802),	-- Crafted Malevolent Gladiator's Belt of Cruelty
+				i(98794),	-- Crafted Malevolent Gladiator's Belt of Meditation
+				i(98796),	-- Crafted Malevolent Gladiator's Bindings of Meditation
+				i(98804),	-- Crafted Malevolent Gladiator's Bindings of Prowess
+				i(98831),	-- Crafted Malevolent Gladiator's Boots of Alacrity
+				i(98882),	-- Crafted Malevolent Gladiator's Boots of Cruelty
+				i(98838),	-- Crafted Malevolent Gladiator's Copperskin Gloves
+				i(98839),	-- Crafted Malevolent Gladiator's Copperskin Helm
+				i(98840),	-- Crafted Malevolent Gladiator's Copperskin Legguards
+				i(98841),	-- Crafted Malevolent Gladiator's Copperskin Spaulders
+				i(98842),	-- Crafted Malevolent Gladiator's Copperskin Tunic
+				i(98789),	-- Crafted Malevolent Gladiator's Dragonhide Gloves
+				i(98790),	-- Crafted Malevolent Gladiator's Dragonhide Helm
+				i(98791),	-- Crafted Malevolent Gladiator's Dragonhide Legguards
+				i(98792),	-- Crafted Malevolent Gladiator's Dragonhide Robes
+				i(98793),	-- Crafted Malevolent Gladiator's Dragonhide Spaulders
+				i(98803),	-- Crafted Malevolent Gladiator's Footguards of Alacrity
+				i(98795),	-- Crafted Malevolent Gladiator's Footguards of Meditation
+				i(98833),	-- Crafted Malevolent Gladiator's Ironskin Gloves
+				i(98834),	-- Crafted Malevolent Gladiator's Ironskin Helm
+				i(98835),	-- Crafted Malevolent Gladiator's Ironskin Legguards
+				i(98836),	-- Crafted Malevolent Gladiator's Ironskin Spaulders
+				i(98837),	-- Crafted Malevolent Gladiator's Ironskin Tunic
+				i(98797),	-- Crafted Malevolent Gladiator's Kodohide Gloves
+				i(98798),	-- Crafted Malevolent Gladiator's Kodohide Helm
+				i(98799),	-- Crafted Malevolent Gladiator's Kodohide Legguards
+				i(98800),	-- Crafted Malevolent Gladiator's Kodohide Robes
+				i(98801),	-- Crafted Malevolent Gladiator's Kodohide Spaulders
+				i(98885),	-- Crafted Malevolent Gladiator's Leather Gloves
+				i(98886),	-- Crafted Malevolent Gladiator's Leather Helm
+				i(98887),	-- Crafted Malevolent Gladiator's Leather Legguards
+				i(98888),	-- Crafted Malevolent Gladiator's Leather Spaulders
+				i(98884),	-- Crafted Malevolent Gladiator's Leather Tunic
+				i(98881),	-- Crafted Malevolent Gladiator's Waistband of Accuracy
+				i(98830),	-- Crafted Malevolent Gladiator's Waistband of Cruelty
+				i(98805),	-- Crafted Malevolent Gladiator's Wyrmhide Gloves
+				i(98806),	-- Crafted Malevolent Gladiator's Wyrmhide Helm
+				i(98807),	-- Crafted Malevolent Gladiator's Wyrmhide Legguards
+				i(98808),	-- Crafted Malevolent Gladiator's Wyrmhide Robes
+				i(98809),	-- Crafted Malevolent Gladiator's Wyrmhide Spaulders
+				i(85823),	-- Greyshadow Chestguard
+				i(85824),	-- Greyshadow Gloves
+				i(85827),	-- Liferuned Leather Gloves
+				i(90497),	-- Misthide Belt
+				i(85832),	-- Misthide Belt
+				i(90496),	-- Misthide Boots
+				i(85833),	-- Misthide Boots
+				i(90495),	-- Misthide Bracers
+				i(85834),	-- Misthide Bracers
+				i(90494),	-- Misthide Chestguard
+				i(85835),	-- Misthide Chestguard
+				i(90493),	-- Misthide Gloves
+				i(85836),	-- Misthide Gloves
+				i(90492),	-- Misthide Helm
+				i(85837),	-- Misthide Helm
+				i(90491),	-- Misthide Leggings
+				i(85838),	-- Misthide Leggings
+				i(90490),	-- Misthide Shoulders
+				i(85839),	-- Misthide Shoulders
+				i(85828),	-- Murderer's Gloves
+				i(85829),	-- Nightfire Robe
+				i(98609),	-- Pennyroyal Belt
+				i(98600),	-- Pennyroyal Leggings
+				i(94269),	-- Quilen Hide Boots
+				i(94270),	-- Quilen Hide Helm
+				i(98613),	-- Snow Lily Belt
+				i(98604),	-- Snow Lily Britches
+				i(94273),	-- Spirit Keeper Footguards
+				i(94274),	-- Spirit Keeper Helm
+				i(85849),	-- Wildblood Gloves
+				i(85850),	-- Wildblood Vest
+			}),
+			n(-45, { 	-- Mail
+				i(85787),	-- Chestguard of Earthen Harmony
+				i(94276),	-- Cloud Serpent Helm
+				i(94275),	-- Cloud Serpent Sabatons
+				i(85789),	-- Contender's Dragonscale Belt
+				i(85790),	-- Contender's Dragonscale Boots
+				i(85791),	-- Contender's Dragonscale Bracers
+				i(85792),	-- Contender's Dragonscale Chestguard
+				i(85793),	-- Contender's Dragonscale Gloves
+				i(85794),	-- Contender's Dragonscale Helm
+				i(85795),	-- Contender's Dragonscale Leggings
+				i(85796),	-- Contender's Dragonscale Shoulders
+				i(85805),	-- Contender's Scale Belt
+				i(85806),	-- Contender's Scale Boots
+				i(85807),	-- Contender's Scale Bracers
+				i(85808),	-- Contender's Scale Chestguard
+				i(85809),	-- Contender's Scale Gloves
+				i(85810),	-- Contender's Scale Helm
+				i(85811),	-- Contender's Scale Leggings
+				i(85812),	-- Contender's Scale Shoulders
+				i(93578),	-- Crafted Dreadful Gladiator's Armbands of Meditation
+				i(93577),	-- Crafted Dreadful Gladiator's Armbands of Prowess
+				i(93494),	-- Crafted Dreadful Gladiator's Chain Armor
+				i(93495),	-- Crafted Dreadful Gladiator's Chain Gauntlets
+				i(93496),	-- Crafted Dreadful Gladiator's Chain Helm
+				i(93497),	-- Crafted Dreadful Gladiator's Chain Leggings
+				i(93498),	-- Crafted Dreadful Gladiator's Chain Spaulders
+				i(93584),	-- Crafted Dreadful Gladiator's Linked Armor
+				i(93585),	-- Crafted Dreadful Gladiator's Linked Gauntlets
+				i(93586),	-- Crafted Dreadful Gladiator's Linked Helm
+				i(93587),	-- Crafted Dreadful Gladiator's Linked Leggings
+				i(93588),	-- Crafted Dreadful Gladiator's Linked Spaulders
+				i(93489),	-- Crafted Dreadful Gladiator's Links of Accuracy
+				i(93488),	-- Crafted Dreadful Gladiator's Links of Cruelty
+				i(93590),	-- Crafted Dreadful Gladiator's Mail Armor
+				i(93575),	-- Crafted Dreadful Gladiator's Mail Footguards of Alacrity
+				i(93576),	-- Crafted Dreadful Gladiator's Mail Footguards of Meditation
+				i(93591),	-- Crafted Dreadful Gladiator's Mail Gauntlets
+				i(93592),	-- Crafted Dreadful Gladiator's Mail Helm
+				i(93593),	-- Crafted Dreadful Gladiator's Mail Leggings
+				i(93594),	-- Crafted Dreadful Gladiator's Mail Spaulders
+				i(93579),	-- Crafted Dreadful Gladiator's Ringmail Armor
+				i(93580),	-- Crafted Dreadful Gladiator's Ringmail Gauntlets
+				i(93581),	-- Crafted Dreadful Gladiator's Ringmail Helm
+				i(93582),	-- Crafted Dreadful Gladiator's Ringmail Leggings
+				i(93583),	-- Crafted Dreadful Gladiator's Ringmail Spaulders
+				i(93491),	-- Crafted Dreadful Gladiator's Sabatons of Alacrity
+				i(93490),	-- Crafted Dreadful Gladiator's Sabatons of Cruelty
+				i(93589),	-- Crafted Dreadful Gladiator's Waistguard of Cruelty
+				i(93574),	-- Crafted Dreadful Gladiator's Waistguard of Meditation
+				i(93493),	-- Crafted Dreadful Gladiator's Wristguards of Accuracy
+				i(93492),	-- Crafted Dreadful Gladiator's Wristguards of Alacrity
+				i(98893),	-- Crafted Malevolent Gladiator's Armbands of Meditation
+				i(98892),	-- Crafted Malevolent Gladiator's Armbands of Prowess
+				i(98820),	-- Crafted Malevolent Gladiator's Chain Armor
+				i(98821),	-- Crafted Malevolent Gladiator's Chain Gauntlets
+				i(98822),	-- Crafted Malevolent Gladiator's Chain Helm
+				i(98823),	-- Crafted Malevolent Gladiator's Chain Leggings
+				i(98824),	-- Crafted Malevolent Gladiator's Chain Spaulders
+				i(98890),	-- Crafted Malevolent Gladiator's Footguards of Alacrity
+				i(98891),	-- Crafted Malevolent Gladiator's Footguards of Meditation
+				i(98899),	-- Crafted Malevolent Gladiator's Linked Armor
+				i(98900),	-- Crafted Malevolent Gladiator's Linked Gauntlets
+				i(98901),	-- Crafted Malevolent Gladiator's Linked Helm
+				i(98902),	-- Crafted Malevolent Gladiator's Linked Leggings
+				i(98903),	-- Crafted Malevolent Gladiator's Linked Spaulders
+				i(98815),	-- Crafted Malevolent Gladiator's Links of Accuracy
+				i(98814),	-- Crafted Malevolent Gladiator's Links of Cruelty
+				i(98905),	-- Crafted Malevolent Gladiator's Mail Armor
+				i(98906),	-- Crafted Malevolent Gladiator's Mail Gauntlets
+				i(98907),	-- Crafted Malevolent Gladiator's Mail Helm
+				i(98908),	-- Crafted Malevolent Gladiator's Mail Leggings
+				i(98909),	-- Crafted Malevolent Gladiator's Mail Spaulders
+				i(98894),	-- Crafted Malevolent Gladiator's Ringmail Armor
+				i(98895),	-- Crafted Malevolent Gladiator's Ringmail Gauntlets
+				i(98896),	-- Crafted Malevolent Gladiator's Ringmail Helm
+				i(98897),	-- Crafted Malevolent Gladiator's Ringmail Leggings
+				i(98898),	-- Crafted Malevolent Gladiator's Ringmail Spaulders
+				i(98817),	-- Crafted Malevolent Gladiator's Sabatons of Alacrity
+				i(98816),	-- Crafted Malevolent Gladiator's Sabatons of Cruelty
+				i(98904),	-- Crafted Malevolent Gladiator's Waistguard of Cruelty
+				i(98889),	-- Crafted Malevolent Gladiator's Waistguard of Meditation
+				i(98819),	-- Crafted Malevolent Gladiator's Wristguards of Accuracy
+				i(98818),	-- Crafted Malevolent Gladiator's Wristguards of Alacrity
+				i(94272),	-- Dreadrunner Helm
+				i(94271),	-- Dreadrunner Sabatons
+				i(85821),	-- Fists of Lightning
+				i(85822),	-- Gloves of Earthen Harmony
+				i(98614),	-- Gorge Stalker Belt
+				i(98605),	-- Gorge Stalker Legplates
+				i(98610),	-- Krasari Prowler Belt
+				i(98601),	-- Krasari Prowler Britches
+				i(85825),	-- Lifekeeper's Gloves
+				i(85826),	-- Lifekeeper's Robe
+				i(85830),	-- Raiment of Blood and Bone
+				i(85831),	-- Raven Lord's Gloves
+				i(85840),	-- Stormbreaker Chestguard
+				i(90480),	-- Stormscale Belt
+				i(85841),	-- Stormscale Belt
+				i(90481),	-- Stormscale Boots
+				i(85842),	-- Stormscale Boots
+				i(90482),	-- Stormscale Bracers
+				i(85843),	-- Stormscale Bracers
+				i(90483),	-- Stormscale Chestguard
+				i(85844),	-- Stormscale Chestguard
+				i(90484),	-- Stormscale Gloves
+				i(85845),	-- Stormscale Gloves
+				i(90485),	-- Stormscale Helm
+				i(85846),	-- Stormscale Helm
+				i(90486),	-- Stormscale Leggings
+				i(85847),	-- Stormscale Leggings
+				i(90487),	-- Stormscale Shoulders
+				i(85848),	-- Stormscale Shoulders
+			}),
 		}),
 		n(-190, { -- Tailoring
 			i(98612),	-- Belt of the Night Sky
