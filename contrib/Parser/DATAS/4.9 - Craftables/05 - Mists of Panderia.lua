@@ -185,11 +185,53 @@ _.Craftables =
 				i(87405),	-- Unyielding Bloodplate
 			}),
 		}),
-		n(-182, { -- Enchanting
-		}),
 		n(-183, { -- Engineering
+			n(-494, { -- Miscellaneous
+				n(43929, { -- Blingtron 4000
+					i(86623, { -- Blingtron 4000 Gift Package
+						["groups"] = {
+							dr(0.01, i(87250)), -- Depleted-Kyparium Rocket Mount
+							dr(0.01, i(87251)), -- Geosynchronous World Spinner Mount
+							dr(0.01, i(41508)), -- Mechano-Hog Mount
+							dr(0.01, i(44413)), -- Mekgineer's Chopper Mount
+							dr(0.5, i(103670)), -- Lil'Bling Pet
+							dr(0.02, i(15996)), -- Lifelike Mechanical Toad Pet
+							dr(0.02, i(11826)), -- Lil' Smoky Pet
+							dr(0.02, i(4401)), -- Mechanical Squirrel Box Pet
+							dr(0.02, i(11825)), -- Pet Bombling
+							dr(0.02, i(21277)), -- Tranquil Mechanical Yeti Pet
+						},
+						["questID"] = 31752,
+					}),
+				}),
+			}),
+			i(77527),	-- Big Game Hunter
+			i(77528),	-- Long-Range Trillium Sniper
+			i(77534),	-- Agile Retinal Armor
+			i(77535),	-- Camouflage Retinal Armor
+			i(77536),	-- Deadly Retinal Armor
+			i(77537),	-- Energized Retinal Armor
+			i(77533),	-- Lightweight Retinal Armor
+			i(87213),	-- Mist-Piercing Goggles
+			i(77539),	-- Reinforced Retinal Armor
+			i(77538),	-- Specialized Retinal Armor
 		}),
 		n(-185, { -- Inscription
+			i(79342, {	-- Ghost Iron Staff
+				i(79343),	-- Inscribed Tiger Staff
+			}),
+			i(79333, {	-- Inscribed Fan
+				i(79334),	-- Inscribed Jade Fan
+				i(79335),	-- Inscribed Red Fan
+			}),
+			i(87565),	-- Key to the Planes
+			i(79339, {	-- Rain Poppy Staff
+				i(79340),	-- Inscribed Crane Staff
+				i(79341),	-- Inscribed Serpent Staff
+			}),
+			i(87562),	-- Rosethorn Staff
+			i(87566),	-- Runed Staff
+			i(87561),	-- Silver Inlaid Staff
 		}),
 		n(-186, { -- Jewelcrafting
 		}),

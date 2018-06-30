@@ -213,8 +213,48 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { -- Enchanting
+			i(11288),	-- Greater Magic Wand
+			i(11290),	-- Greater Mystic Wan
+			i(11287),	-- Lesser Magic Wand
+			i(11289),	-- Lesser Mystic Wand
 		}),
 		n(-183, { -- Engineering
+			i(18282),	-- Core Marksman Rifle
+			i(16004),	-- Dark Iron Rifle
+			i(4369),	-- Deadly Blunderbuss
+			un(8, i(16007)),	-- Flawless Arcanite Rifle
+			i(18168),	-- Force Reactive Disk
+			i(4372),	-- Lovingly Crafted Boomstick
+			i(10508),	-- Mithril Blunderbuss
+			i(10510),	-- Mithril Heavy-Bore Rifle
+			i(4383),	-- Moonsight Rifle
+			i(4362),	-- Rough Boomstick
+			i(4379),	-- Silver-Plated Shotgun
+			i(15995),	-- Thorium Rifle
+			un(8, i(19999)),	-- Bloodvine Goggles
+			un(8, i(19998)),	-- Bloodvine Lens
+			i(10499),	-- Bright-Eye Goggles
+			i(10501),	-- Catseye Ultra Goggles
+			i(4393),	-- Craftsman's Monocle
+			i(10506),	-- Deepdive Helmet
+			i(10500),	-- Fire Goggles
+			i(4368),	-- Flying Tiger Goggles
+			i(10545),	-- Gnomish Goggles
+			i(10726),	-- Gnomish Mind Control Cap
+			i(10543),	-- Goblin Construction Helmet
+			i(10542),	-- Goblin Mining Helmet
+			i(10588),	-- Goblin Rocket Helmet
+			i(10504),	-- Green Lens
+			i(4385),	-- Green Tinted Goggles
+			i(16008),	-- Master Engineer's Goggles
+			i(10503),	-- Rose Colored Goggles
+			i(4373),	-- Shadow Goggles
+			i(10502),	-- Spellpower Goggles Xtreme
+			i(15999),	-- Spellpower Goggles Xtreme Plus
+			i(10518),	-- Parachute Cloak
+			i(10721),	-- Gnomish Harm Prevention Belt
+			i(10724),	-- Gnomish Rocket Boots
+			i(7189),	-- Goblin Rocket Boots
 		}),
 		n(-187, { -- Leatherworking
 		}),

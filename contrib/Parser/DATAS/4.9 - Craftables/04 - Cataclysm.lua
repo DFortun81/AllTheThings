@@ -5,95 +5,114 @@ _.Craftables =
 {
 	tier(4, { -- Cataclysm
 		n(-181, { -- Blacksmithing
-			i(71992),	-- Bracers of Destructive Strength
-			i(70155),	-- Brainsplinter
-			i(55044),	-- Cold-Forged Shank
-			i(55043),	-- Decapitator's Razor
-			i(55067),	-- Elementium Bonesplitter
-			i(55060),	-- Elementium Deathplate
-			i(55069),	-- Elementium Earthguard
-			i(55061),	-- Elementium Girdle of Pain
-			i(67602),	-- Elementium Gutslicer
-			i(55065),	-- Elementium Hammer
-			i(55066),	-- Elementium Poleaxe
-			i(55068),	-- Elementium Shank
-			i(55064),	-- Elementium Spellblade
-			i(55070),	-- Elementium Stormshield
-			i(70158),	-- Elementium-Edged Scalper
-			i(69948),	-- Emberforged Elementium Boots
-			i(69937),	-- Eternal Elementium Handguards
-			i(55045),	-- Fire-Etched Dagger
-			i(69936),	-- Fists of Fury
-			i(67605),	-- Forged Elementium Mindcrusher
-			i(71984),	-- Foundations of Courage
-			i(55059),	-- Hardened Elementium Girdle
-			i(55058),	-- Hardened Elementium Hauberk
-			i(54853),	-- Hardened Obsidium Belt
-			i(54854),	-- Hardened Obsidium Boots
-			i(54850),	-- Hardened Obsidium Bracers
-			i(55024),	-- Hardened Obsidium Breastplate
-			i(54852),	-- Hardened Obsidium Gauntlets
-			i(55023),	-- Hardened Obsidium Helm
-			i(55022),	-- Hardened Obsidium Legguards
-			i(55041),	-- Hardened Obsidium Shield
-			i(54876),	-- Hardened Obsidium Shoulders
-			i(69938),	-- Holy Flame Gauntlets
-			i(55046),	-- Lifeforce Hammer
-			i(55063),	-- Light Elementium Belt
-			i(55062),	-- Light Elementium Chestguard
-			i(70157),	-- Lightforged Elementium Hammer
-			i(70164),	-- Masterwork Elementium Deathblade
-			i(70156),	-- Masterwork Elementium Spellblade
-			i(69947),	-- Mirrored Boots
-			i(55246),	-- Obsidium Bladespear
-			i(55052),	-- Obsidium Executioner
-			i(71982),	-- Pyrium Legplates of Purified Evil
-			i(70162),	-- Pyrium Spellward
-			i(55027),	-- Redsteel Belt
-			i(55028),	-- Redsteel Boots
-			i(55025),	-- Redsteel Bracers
-			i(55032),	-- Redsteel Breastplate
-			i(55026),	-- Redsteel Gauntlets
-			i(55031),	-- Redsteel Helm
-			i(55030),	-- Redsteel Legguards
-			i(55029),	-- Redsteel Shoulders
-			i(71991),	-- Soul Redeemer Bracers
-			i(55035),	-- Stormforged Belt
-			i(55036),	-- Stormforged Boots
-			i(55033),	-- Stormforged Bracers
-			i(55040),	-- Stormforged Breastplate
-			i(55034),	-- Stormforged Gauntlets
-			i(55039),	-- Stormforged Helm
-			i(55038),	-- Stormforged Legguards
-			i(55042),	-- Stormforged Shield
-			i(55037),	-- Stormforged Shoulders
-			i(71993),	-- Titanguard Wristplates
-			i(70163),	-- Unbreakable Guardian
-			i(71983),	-- Unstoppable Destroyer's Legplates
-			i(75118),	-- Vicious Ornate Pyrium Belt
-			i(75132),	-- Vicious Ornate Pyrium Boots
-			i(75125),	-- Vicious Ornate Pyrium Bracers
-			i(75128),	-- Vicious Ornate Pyrium Breastplate
-			i(75121),	-- Vicious Ornate Pyrium Gauntlets
-			i(75129),	-- Vicious Ornate Pyrium Helm
-			i(75133),	-- Vicious Ornate Pyrium Legguards
-			i(75134),	-- Vicious Ornate Pyrium Shoulders
-			i(75123),	-- Vicious Pyrium Belt
-			i(75120),	-- Vicious Pyrium Boots
-			i(75124),	-- Vicious Pyrium Bracers
-			i(75135),	-- Vicious Pyrium Breastplate
-			i(75122),	-- Vicious Pyrium Gauntlets
-			i(75126),	-- Vicious Pyrium Helm
-			i(75136),	-- Vicious Pyrium Legguards
-			i(75119),	-- Vicious Pyrium Shoulders
-			i(69946),	-- Warboots of Mighty Lords
-			i(70165),	-- Witch-Hunter's Harvester
-		}),
-		n(-182, { -- Enchanting
+			n(-319, { 	-- Weapons
+				i(70155),	-- Brainsplinter
+				i(55044),	-- Cold-Forged Shank
+				i(55043),	-- Decapitator's Razor
+				i(55067),	-- Elementium Bonesplitter
+				i(55069),	-- Elementium Earthguard
+				i(67602),	-- Elementium Gutslicer
+				i(55065),	-- Elementium Hammer
+				i(55066),	-- Elementium Poleaxe
+				i(55068),	-- Elementium Shank
+				i(55064),	-- Elementium Spellblade
+				i(55070),	-- Elementium Stormshield
+				i(70158),	-- Elementium-Edged Scalper
+				i(55045),	-- Fire-Etched Dagger
+				i(67605),	-- Forged Elementium Mindcrusher
+				i(55041),	-- Hardened Obsidium Shield
+				i(55046),	-- Lifeforce Hammer
+				i(70157),	-- Lightforged Elementium Hammer
+				i(70164),	-- Masterwork Elementium Deathblade
+				i(70156),	-- Masterwork Elementium Spellblade
+				i(55246),	-- Obsidium Bladespear
+				i(55052),	-- Obsidium Executioner
+				i(70162),	-- Pyrium Spellward
+				i(55042),	-- Stormforged Shield
+				i(70163),	-- Unbreakable Guardian
+				i(70165),	-- Witch-Hunter's Harvester
+			}),
+			n(-46, { 	-- Plate
+				i(71992),	-- Bracers of Destructive Strength
+				i(55060),	-- Elementium Deathplate
+				i(55061),	-- Elementium Girdle of Pain
+				i(69948),	-- Emberforged Elementium Boots
+				i(69937),	-- Eternal Elementium Handguards
+				i(69936),	-- Fists of Fury
+				i(71984),	-- Foundations of Courage
+				i(55059),	-- Hardened Elementium Girdle
+				i(55058),	-- Hardened Elementium Hauberk
+				i(54853),	-- Hardened Obsidium Belt
+				i(54854),	-- Hardened Obsidium Boots
+				i(54850),	-- Hardened Obsidium Bracers
+				i(55024),	-- Hardened Obsidium Breastplate
+				i(54852),	-- Hardened Obsidium Gauntlets
+				i(55023),	-- Hardened Obsidium Helm
+				i(55022),	-- Hardened Obsidium Legguards
+				i(54876),	-- Hardened Obsidium Shoulders
+				i(69938),	-- Holy Flame Gauntlets
+				i(55063),	-- Light Elementium Belt
+				i(55062),	-- Light Elementium Chestguard
+				i(69947),	-- Mirrored Boots
+				i(71982),	-- Pyrium Legplates of Purified Evil
+				i(55027),	-- Redsteel Belt
+				i(55028),	-- Redsteel Boots
+				i(55025),	-- Redsteel Bracers
+				i(55032),	-- Redsteel Breastplate
+				i(55026),	-- Redsteel Gauntlets
+				i(55031),	-- Redsteel Helm
+				i(55030),	-- Redsteel Legguards
+				i(55029),	-- Redsteel Shoulders
+				i(71991),	-- Soul Redeemer Bracers
+				i(55035),	-- Stormforged Belt
+				i(55036),	-- Stormforged Boots
+				i(55033),	-- Stormforged Bracers
+				i(55040),	-- Stormforged Breastplate
+				i(55034),	-- Stormforged Gauntlets
+				i(55039),	-- Stormforged Helm
+				i(55038),	-- Stormforged Legguards
+				i(55037),	-- Stormforged Shoulders
+				i(71993),	-- Titanguard Wristplates
+				i(71983),	-- Unstoppable Destroyer's Legplates
+				i(75118),	-- Vicious Ornate Pyrium Belt
+				i(75132),	-- Vicious Ornate Pyrium Boots
+				i(75125),	-- Vicious Ornate Pyrium Bracers
+				i(75128),	-- Vicious Ornate Pyrium Breastplate
+				i(75121),	-- Vicious Ornate Pyrium Gauntlets
+				i(75129),	-- Vicious Ornate Pyrium Helm
+				i(75133),	-- Vicious Ornate Pyrium Legguards
+				i(75134),	-- Vicious Ornate Pyrium Shoulders
+				i(75123),	-- Vicious Pyrium Belt
+				i(75120),	-- Vicious Pyrium Boots
+				i(75124),	-- Vicious Pyrium Bracers
+				i(75135),	-- Vicious Pyrium Breastplate
+				i(75122),	-- Vicious Pyrium Gauntlets
+				i(75126),	-- Vicious Pyrium Helm
+				i(75136),	-- Vicious Pyrium Legguards
+				i(75119),	-- Vicious Pyrium Shoulders
+				i(69946),	-- Warboots of Mighty Lords
+			}),
 		}),
 		n(-183, { -- Engineering
+			i(71077),	-- Extreme-Impact Hole Puncher
+			i(59598),	-- Finely-Tuned Throat Needler
+			i(59367),	-- Kickback 5000
+			i(59364),	-- Overpowered Chicken Splitter
+			i(59599),	-- Volatile Thunderstick
+			i(59455),	-- Agile Bio-Optic Killshades
+			i(59453),	-- Camouflage Bio-Optic Killshades
+			i(59456),	-- Deadly Bio-Optic Killshades
+			i(59458),	-- Energized Bio-Optic Killshades
+			i(59449),	-- Lightweight Bio-Optic Killshades
+			i(59359),	-- Reinforced Bio-Optic Killshades
+			i(59448),	-- Specialized Bio-Optic Killshades
 		}),
 		n(-185, { -- Inscription
+			i(62236),	-- Battle Tome
+			i(62231),	-- Book of Blood
+			i(62235),	-- Divine Companion
+			i(62234),	-- Dungeoneering Guide
+			i(62233),	-- Lord Rottington's Pressed Wisp Book
 		}),
 		n(-186, { -- Jewelcrafting
 		}),

@@ -32,11 +32,39 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-182, { -- Enchanting
-		}),
 		n(-183, { -- Engineering
+			n(-494, { -- Miscellaneous
+				n(77789, { -- Blingtron 5000
+					i(113258, { -- Blingtron 5000 Gift Package
+						["groups"] = {
+							dr(0.01, i(87250)), -- Depleted-Kyparium Rocket Mount
+							dr(0.01, i(87251)), -- Geosynchronous World Spinner Mount
+							dr(0.01, i(41508)), -- Mechano-Hog Mount
+							dr(0.01, i(44413)), -- Mekgineer's Chopper Mount
+							dr(0.5, i(103670)), -- Lil'Bling Pet
+							dr(0.02, i(15996)), -- Lifelike Mechanical Toad Pet
+							dr(0.02, i(11826)), -- Lil' Smoky Pet
+							dr(0.02, i(4401)), -- Mechanical Squirrel Box Pet
+							dr(0.02, i(11825)), -- Pet Bombling
+							dr(0.4, i(115483)), -- Sky-Bo Pet
+							dr(0.02, i(21277)), -- Tranquil Mechanical Yeti Pet
+							dr(0.5, i(123851)), -- Photo B.O.M.B. Toy
+						},
+						["questID"] = 34774,
+					}),
+				}),
+			}),
+			WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
+			WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades
+			WOD_CRAFTED_ITEM(109171),	-- Night-Vision Mechshades
+			WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades
+			WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
 		}),
 		n(-185, { -- Inscription
+			WOD_CRAFTED_ITEM(113134),	-- Crystalfire Spellstaff
+			WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
+			WOD_CRAFTED_ITEM(113270),	-- Shadowtome
+			WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 		}),
 		n(-186, { -- Jewelcrafting
 		}),
