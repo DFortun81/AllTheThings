@@ -128,11 +128,66 @@ _.Craftables =
 				i(41355),	-- Vengeance Bindings
 			}),
 		}),
-		n(-182, { -- Enchanting
-		}),
 		n(-183, { -- Engineering
+			i(41168),	-- Armor Plated Combat Shotgun
+			i(39688),	-- Mark "S" Boomstick
+			i(44504),	-- Nesingwary 4000
+			i(42549),	-- Armored Titanium Goggles
+			i(42552),	-- Charged Titanium Specs
+			i(42555),	-- Electroflux Sight Enhancers
+			i(42554),	-- Greensight Gogs
+			i(41112),	-- Mechanized Snow Goggles
+			i(44740),	-- Mechanized Snow Goggles
+			i(44741),	-- Mechanized Snow Goggles
+			i(44742),	-- Mechanized Snow Goggles
+			i(42551),	-- Truesight Ice Blinders
+			i(44949),	-- Unbreakable Healing Amplifiers
+			i(42553),	-- Visage Liquification Goggles
+			i(42550),	-- Weakness Spectralizers
 		}),
 		n(-185, { -- Inscription
+			n(-491, { -- Tarot Cards
+				["groups"] = {
+					sp(48247, {	-- Mysterious Tarot
+						i(37163, {	-- Rogues Deck
+							i(38318),
+							i(39507),
+							i(39509),
+						}),
+					}),
+					sp(59480, {	-- Strange Tarot
+						i(37164, {	-- Swords Deck
+							i(131277),
+							i(39894),
+							i(39895),
+							i(39897),
+						}),
+					}),
+					sp(59491, {	-- Shadowy Tarot
+						i(44158, {	-- Demons Deck
+							i(44217),
+							i(44218),
+							i(44219)
+						})
+					}),
+				},
+				["icon"] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",
+			}),
+			i(43667),	-- Book of Clever Tricks
+			i(43661),	-- Book of Stars
+			i(43655),	-- Book of Survival
+			i(44210),	-- Faces of Doom
+			i(43660),	-- Fire Eater's Guide
+			i(43666),	-- Hellfire Tome
+			i(38322),	-- Iron-Bound Tome
+			i(43664),	-- Manual of Clouds
+			i(43515),	-- Mystic Tome
+			i(45854),	-- Rituals of the New Moon
+			i(43657),	-- Royal Guide of Escape Routes
+			i(43663),	-- Stormbound Tome
+			i(43656),	-- Tome of Kings
+			i(43654),	-- Tome of the Dawn
+			i(45849),	-- Twilight Tome
 		}),
 		n(-186, { -- Jewelcrafting
 		}),

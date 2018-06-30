@@ -24,9 +24,45 @@ _.Craftables =
 			i(123895),	-- Leystone Greaves
 			i(123892),	-- Leystone Boots
 		}),
-		n(-182, { -- Enchanting
-		}),
 		n(-183, { -- Engineering
+			n(-494, { -- Miscellaneous
+				n(101527, { -- Blingtron 6000
+					i(132892, { -- Blingtron 6000 Gift Package
+						["groups"] = {
+							dr(0.01, i(87250)), -- Depleted-Kyparium Rocket Mount
+							dr(0.01, i(87251)), -- Geosynchronous World Spinner Mount
+							dr(0.01, i(41508)), -- Mechano-Hog Mount
+							dr(0.01, i(44413)), -- Mekgineer's Chopper Mount
+							dr(0.01, i(136911)), -- Knockoff Blingtron
+							dr(0.5, i(103670)), -- Lil'Bling Pet
+							dr(0.02, i(15996)), -- Lifelike Mechanical Toad Pet
+							dr(0.02, i(11826)), -- Lil' Smoky Pet
+							dr(0.02, i(4401)), -- Mechanical Squirrel Box Pet
+							dr(0.02, i(11825)), -- Pet Bombling
+							dr(0.4, i(115483)), -- Sky-Bo Pet
+							dr(0.02, i(21277)), -- Tranquil Mechanical Yeti Pet
+							dr(0.5, i(123851)), -- Photo B.O.M.B. Toy
+							dr(1.3, i(136631)), -- Surface-to-Infernal Rocket Launcher
+							dr(1.2, i(136630)), -- "Twirling Bottom" Repeaater"
+							dr(1.1, i(136629)), -- Felgibber Shotgun
+							dr(1.0, i(136632)), -- Chaos Blaster
+						},
+						["questID"] = 40753,
+					}),
+				}),
+			}),
+			i(132500),	-- Blink-Trigger Headgun
+			i(132502),	-- Bolt-Action Headgun
+			i(144333),	-- Chain Skullblasters
+			i(132506),	-- Double-Barreled Cranial Cannon
+			i(144334),	-- Heavy Skullblasters
+			i(132507),	-- Ironsight Cranial Cannon
+			i(132503),	-- Reinforced Headgun
+			i(144332),	-- Rugged Skullblasters
+			i(132505),	-- Sawed-Off Cranial Cannon
+			i(132504),	-- Semi-Automagic Cranial Cannon
+			i(132501),	-- Tactical Headgun
+			i(144331),	-- Tailored Skullblasters
 		}),
 		n(-185, { -- Inscription
 		}),
