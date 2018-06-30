@@ -6,22 +6,6 @@ _.Zones =
 	m(466, { 	-- Outland
 		m(465, {	-- Hellfire Peninsula			
 			["groups"] = {
-				n(-7, { -- World Bosses
-					n(18728, { 	-- Doom Lord Kazzak
-						["groups"] = {
-							i(30735),	-- Ancient Spellcloak of the Highborne
-							i(30734),	-- Leggings of the Seventh Circle
-							i(30737),	-- Gold-Leaf Wildboots
-							i(30739),	-- Scaled Greaves of the Marksman
-							i(30740),	-- Ripfiend Shoulderplates
-							i(30741),	-- Topaz-Studded Battlegrips
-							i(30733),	-- Hope Ender
-							i(30732),	-- Exodar Life-Staff
-						},
-						["description"] = "|cff66ccffLocated at the Throne of Kil'jaeden, Hellfire Penninsula|r",
-						["isRaid"] = true,
-					}),
-				}),
 				n(-3, { 	-- Holidays	
 					n(-58, {     -- Hallow's End
 						["groups"] = {

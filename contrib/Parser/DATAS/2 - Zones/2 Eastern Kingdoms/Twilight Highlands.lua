@@ -37,66 +37,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					--[[
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),	
---]]					
---[[					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
---]]				
 				}),								
 				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat
@@ -715,25 +655,6 @@ _.Zones =
 					}), 
 					n(50086, { -- Tarvus the Vile
 						i(67245), -- Tarvus's Poison-Scarred Boots
-					}), 
-					n(50089, { -- Julak-Doom
-						dr(55, i(69844)),	-- Vitreous Beak of Julak-Doom
-						dr(3, i(67150)),	-- Arrowsinger Legguards
-						dr(3, i(67145)),	-- Blockade's Lost Shield
-						dr(1.5, i(67141)),	-- Corefire Legplates
-						dr(3, i(67133)),	-- Dizze's Whirling Robe
-						dr(1.4, i(67134)),	-- Dory's Finery
-						dr(4, i(67140)),	-- Drape of Inimitable Fate
-						dr(3, i(67132)),	-- Grips of the Failed Immortal
-						dr(4, i(67149)),	-- Heartbound Tome
-						dr(2, i(67143)),	-- Icebone Hauberk
-						dr(3, i(67147)),	-- Je'Tze's Sparkling Tiara
-						dr(1.7, i(67148)),	-- Kilt of Trollish Dreams
-						dr(1.5, i(67135)),	-- Morrie's Waywalker Wrap
-						dr(3, i(67144)),	-- Pauldrons of Edward the Odd
-						dr(1.1, i(67131)),	-- Ritssyn's Ruminous Drape
-						dr(1.9, i(67146)),	-- Woundsplicer Handwraps
-						dr(4, i(67142)),	-- Zom's Electrostatic Cloak
 					}), 
 				}),
 				n( -2, {	-- Vendors

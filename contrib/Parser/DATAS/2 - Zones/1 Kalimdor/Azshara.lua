@@ -6,30 +6,6 @@ _.Zones =
 	m(13, { 	-- Kalimdor
 		m(181, {	-- Azshara
 			["groups"] = {
-				n(-7, { 	-- World Bosses
-					nld({		-- Legacy
-						n(6109, { 	-- Azuregos
-							["groups"] = {
-								un(2, i(18704, { -- Mature Blue Dragon Sinew
-									q(7634), -- Ancient Sinew Wrapped Lamina
-								})),
-								un(2, i(19130)), -- Cold Snap
-								i(18202), -- Eskhandar's Left Claw
-								un(2, i(17070)), -- Fang of the Mystics
-								un(2, i(18542)), -- Typhoon
-								un(2, i(18208)), -- Drape of Benediction
-								un(2, i(18541)), -- Puissant Cape
-								un(2, i(19132)), -- Crystal Adorned Crown
-								un(2, i(18545)), -- Leggings of Arcane Supremacy
-								un(2, i(19131)), -- Snowblind Shoes
-								un(2, i(18547)), -- Unmelting Ice Girdle
-							},
-							["u"] = 12,
-							["isRaid"] = true,
-							["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
-						}),
-					}),
-				}),
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
