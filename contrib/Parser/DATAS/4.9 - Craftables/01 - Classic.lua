@@ -467,6 +467,190 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { -- Tailoring
+			un(8, i(18405)),	-- Belt of the Archmage		
+			un(8, i(18413)),	-- Cloak of Warding
+			un(8, i(18407)),	-- Felcloth Gloves
+			un(8, i(18408)),	-- Inferno Gloves
+			un(8, i(18409)),	-- Mooncloth Gloves
+			i(22652),	-- Admiral's Hat
+			i(22654),	-- Azure Silk Hood
+			i(22658),	-- Black Mageweave Headband
+			i(22655),	-- Dreamweave Circlet
+			i(22660),	-- Enchanter's Cowl
+			i(22756),	-- Felcloth Hood
+			i(22758),	-- Mooncloth Circlet
+			i(19165),	-- Red Mageweave Headband
+			i(22757),	-- Runecloth Headband
+			i(19156),	-- Shadow Hood
+			i(19683),	-- Shadoweave Mask
+			i(19682),	-- Silk Headband
+			i(19684),	-- Sylvan Crown
+			i(18263),	-- White Bandit Mask
+			i(19050),	-- Wizardweave Turban
+			i(19059),	-- Argent Shoulders
+			i(20537),	-- Azure Shoulders
+			i(20538),	-- Black Mageweave Shoulders
+			i(20539),	-- Crimson Silk Shoulders
+			i(14153),	-- Double-Stitched Woolen Shoulders
+			i(14154),	-- Felcloth Shoulders
+			i(16979),	-- Flarecore Mantle
+			i(14140),	-- Mantle of the Timbermaw
+			i(14146),	-- Mooncloth Shoulders
+			i(14112),	-- Shadoweave Shoulders
+			i(14152),	-- Sylvan Shoulders
+			i(14139),	-- Brightcloth Cloak
+			i(18486),	-- Cindercloth Cloak
+			i(13867),	-- Cloak of Fire
+			i(14106),	-- Felcloth Robe
+			i(14130),	-- Crimson Silk Cloak
+			i(16980),	-- Gaea's Embrace
+			i(14138),	-- Glacial Cloak
+			i(14128),	-- Heavy Woolen Cloak
+			i(13866),	-- Icy Cloak
+			i(19047),	-- Long Silken Cloak
+			i(19056),	-- Pearl-Clasped Cloak
+			i(14104),	-- Reinforced Linen Cape
+			i(14111),	-- Runecloth Cloak
+			i(14144),	-- Azure Silk Vest
+			i(14137),	-- Barbaric Linen Vest
+			i(14136),	-- Black Mageweave Robe
+			i(13865),	-- Black Mageweave Vest
+			i(14108),	-- Bloodvine Vest
+			i(13864),	-- Blue Linen Robe
+			i(13871),	-- Blue Linen Vest
+			i(15802),	-- Blue Overalls
+			i(14045),	-- Brightcloth Robe
+			i(14044),	-- Brown Linen Robe
+			i(14107),	-- Cindercloth Robe
+			i(14132),	-- Cindercloth Vest
+			i(14141),	-- Crimson Silk Robe
+			i(13863),	-- Crimson Silk Vest
+			i(14103),	-- Dreamweave Vest
+			i(14134),	-- Earthen Vest
+			i(14043),	-- Felcloth Robe
+			i(14142),	-- Flarecore Robe
+			i(14100),	-- Frostweave Robe
+			i(14101),	-- Frostweave Tunic
+			i(13870),	-- Ghostweave Vest
+			i(14143),	-- Glacial Vest
+			i(13860),	-- Gray Woolen Robe
+			i(13858),	-- Greater Adept's Robe
+			i(14042),	-- Green Silk Armor
+			i(13857),	-- Green Woolen Vest
+			i(13868),	-- Lesser Wizard's Robe
+			i(13856),	-- Mooncloth Robe
+			i(13869),	-- Mooncloth Vest
+			i(10041),	-- Red Linen Robe
+			i(10025),	-- Red Linen Vest
+			i(10044),	-- Red Mageweave Vest
+			i(10030),	-- Robe of Power
+			i(10031),	-- Robe of the Archmage
+			i(10033),	-- Robe of the Void
+			i(10029),	-- Robe of Winter Night
+			i(10028),	-- Robes of Arcana
+			i(10024),	-- Runecloth Robe
+			i(10027),	-- Runecloth Tunic
+			i(10026),	-- Shadoweave Robe
+			i(10019),	-- Sylvan Vest
+			i(10021),	-- Truefaith Vestments
+			i(10018),	-- White Linen Robe
+			i(10023),	-- Wizardweave Robe
+			i(17723),	-- Black Swashbuckler's Shirt
+			i(2576),	-- Blue Linen Shirt
+			i(2577),	-- Bright Yellow Shirt
+			i(2579),	-- Brown Linen Shirt
+			i(2587),	-- Dark Silk Shirt
+			i(4330),	-- Formal White Shirt
+			i(4332),	-- Gray Woolen Shirt
+			i(4333),	-- Green Holiday Shirt
+			i(4334),	-- Green Linen Shirt
+			i(4335),	-- Lavender Mageweave Shirt
+			i(4336),	-- Orange Mageweave Shirt
+			i(4344),	-- Orange Martial Shirt
+			i(6384),	-- Pink Mageweave Shirt
+			i(6385),	-- Red Linen Shirt
+			i(6795),	-- Red Swashbuckler's Shirt
+			i(6796),	-- Rich Purple Silk Shirt
+			i(10034),	-- Stylish Blue Shirt
+			i(10052),	-- Stylish Green Shirt
+			i(10054),	-- Stylish Red Shirt
+			i(10055),	-- Tuxedo Shirt
+			i(10056),	-- White Linen Shirt
+			i(2575),	-- White Swashbuckler's Shirt
+			i(10042),	-- Flarecore Wraps
+			i(10003),	-- Glacial Wrists
+			i(10004),	-- Green Linen Bracers
+			i(10007),	-- Azure Silk Gloves
+			i(10008),	-- Black Mageweave Gloves
+			i(10009),	-- Brightcloth Gloves
+			i(7064),	-- Cindercloth Gloves
+			i(10001),	-- Crimson Silk Gloves
+			i(10002),	-- Dreamweave Gloves
+			i(9998),	-- Felcloth Gloves
+			i(9999),	-- Flarecore Gloves
+			i(7063),	-- Frostweave Gloves
+			i(4327),	-- Ghostweave Gloves
+			i(4329),	-- Glacial Gloves
+			i(7061),	-- Gloves of Meditation
+			i(7062),	-- Gloves of Spell Mastery
+			i(7054),	-- Hands of Darkness
+			i(7059),	-- Heavy Linen Gloves
+			i(7060),	-- Heavy Woolen Gloves
+			i(4326),	-- Inferno Gloves
+			i(4328),	-- Mooncloth Gloves
+			i(7056),	-- Phoenix Gloves
+			i(7057),	-- Red Mageweave Gloves
+			i(7052),	-- Runecloth Gloves
+			i(7053),	-- Shadoweave Gloves
+			i(7055),	-- Truefaith Gloves
+			i(7058),	-- Azure Silk Belt
+			i(4325),	-- Belt of the Archmage
+			i(7051),	-- Crimson Silk Belt
+			i(4323),	-- Earthen Silk Belt
+			i(4322),	-- Ghostweave Belt
+			i(7065),	-- Runecloth Belt
+			i(7050),	-- Runed Stygian Belt
+			i(4324),	-- Spider Belt
+			i(7049),	-- Star Belt
+			i(5770),	-- Wisdom of the Timbermaw
+			i(4319),	-- Azure Silk Pants
+			i(7047),	-- Black Mageweave Leggings
+			i(7048),	-- Bloodvine Leggings
+			i(4321),	-- Brightcloth Pants
+			i(7046),	-- Brown Linen Pants
+			i(5766),	-- Cindercloth Pants
+			i(4318),	-- Colorful Kilt
+			i(4317),	-- Crimson Silk Pantaloons
+			i(4331),	-- Felcloth Pants
+			i(4320),	-- Flarecore Leggings
+			i(4315),	-- Frostweave Pants
+			i(10048),	-- Ghostweave Pants
+			i(6264),	-- Handstitched Linen Britches
+			i(4314),	-- Heavy Woolen Pants
+			i(4316),	-- Mooncloth Leggings
+			i(2585),	-- Phoenix Pants
+			i(4311),	-- Red Mageweave Pants
+			i(4313),	-- Runecloth Pants
+			i(6263),	-- Runed Stygian Leggings
+			i(5542),	-- Shadoweave Pants
+			i(2583),	-- Simple Kilt
+			i(4310),	-- Wizardweave Leggings
+			i(2582),	-- Argent Boots
+			i(4312),	-- Black Mageweave Boots
+			i(10047),	-- Bloodvine Boots
+			i(2578),	-- Boots of the Enchanter
+			i(4309),	-- Cindercloth Boots
+			i(6242),	-- Felcloth Boots
+			i(2569),	-- Linen Boots
+			i(4308),	-- Mooncloth Boots
+			i(6239),	-- Red Woolen Boots
+			i(6240),	-- Runecloth Boots
+			i(2580),	-- Runed Stygian Boots
+			i(2572),	-- Shadoweave Boots
+			i(4307),	-- Soft-Soled Linen Boots
+			i(4343),	-- Spider Silk Slippers
+			i(6238),	-- Spidersilk Boots
+			i(6241),	-- Woolen Boots
 		}),
 	}),
 };
