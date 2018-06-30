@@ -49,24 +49,6 @@ _.Zones =
 							["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
 						}),
 					}),
-					n(-500, { 	-- WoW Anniversary
-						n(121818, { -- Lord Kazzak
-							["groups"] = {
-								un(31, i(150383)),	-- Amberseal Keeper
-								un(31, i(150427)),	-- Empyrean Demolisher
-								un(31, i(150380)),	-- Eskhandar's Pelt
-								un(31, i(150386)),	-- Blacklight Bracer
-								un(31, i(150385)),	-- Fel Infused Leggings
-								un(31, i(150382)),	-- Doomhide Gauntlets
-								un(31, i(150381)),	-- Flayed Doomguard Belt
-								un(31, i(150379)),	-- Infernal Headcage
-							},
-							["u"] = 31,
-							["isRaid"] = true,
-							["questID"] = 47461,
-						}),						
-					}),
-
 				}),							
 				n( -3, {	-- Holidays										
 					n(-47, {     -- Lunar Festival
@@ -88,71 +70,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
---[[					
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),
---]]						
---[[					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
---]]					
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(28960),	-- Candy Bucket
-								qh(28959),	-- Candy Bucket
-								qa(28961),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
---[[					
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
---]]				
 				}),								
 				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
