@@ -5,24 +5,24 @@ _.Craftables =
 {
 	tier(7, { -- Legion
 		n(-181, { -- Blacksmithing
-			i(123917),	-- Demonsteel Armguards
-			i(123911),	-- Demonsteel Boots
-			i(123910),	-- Demonsteel Breastplate
-			i(123912),	-- Demonsteel Gauntlets
-			i(123914),	-- Demonsteel Greaves
+			i(146667),	-- Rethu's Incessant Courage
 			i(123913),	-- Demonsteel Helm
 			i(123915),	-- Demonsteel Pauldrons
+			i(123910),	-- Demonsteel Breastplate
+			i(123917),	-- Demonsteel Armguards
+			i(123912),	-- Demonsteel Gauntlets
 			i(123916),	-- Demonsteel Waistguard
+			i(123914),	-- Demonsteel Greaves
+			i(123911),	-- Demonsteel Boots
 			i(151576),	-- Empyrial Breastplate
-			i(123898),	-- Leystone Armguards
-			i(123892),	-- Leystone Boots
-			i(123891),	-- Leystone Breastplate
-			i(123893),	-- Leystone Gauntlets
-			i(123895),	-- Leystone Greaves
 			i(123894),	-- Leystone Helm
 			i(123896),	-- Leystone Pauldrons
+			i(123891),	-- Leystone Breastplate
+			i(123898),	-- Leystone Armguards
+			i(123893),	-- Leystone Gauntlets
 			i(123897),	-- Leystone Waistguard
-			i(146667),	-- Rethu's Incessant Courage
+			i(123895),	-- Leystone Greaves
+			i(123892),	-- Leystone Boots
 		}),
 		n(-182, { -- Enchanting
 		}),
