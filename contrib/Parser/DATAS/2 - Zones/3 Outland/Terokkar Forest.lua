@@ -635,6 +635,12 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							qdg(q(10165, {	-- Undercutting the Competition
+								un(34, i(29343)),	-- Haramad's Leggings of the Third Coin
+								un(34, i(29342)),	-- Consortium Plated Legguards
+								un(34, i(29345)),	-- Haramad's Leg Wraps
+								un(34, i(29344)),	-- Haramad's Linked Chain Pantaloons
+							})),
 							qdg(q(10218, {	-- Someone Else's Hard Work Pays Off
 								un(34, i(29328)),	-- Consortium Prince's Wrap
 								un(34, i(29327)),	-- Cryo-mitts

@@ -120,7 +120,7 @@ profession(202, { -- Engineering
 		i(18282),	-- Core Marksman Rifle
 		i(16004),	-- Dark Iron Rifle
 		i(4369),	-- Deadly Blunderbuss
-		i(16007),	-- Flawless Arcanite Rifle
+		un(8, i(16007)),	-- Flawless Arcanite Rifle
 		i(18168),	-- Force Reactive Disk
 		i(4372),	-- Lovingly Crafted Boomstick
 		i(10508),	-- Mithril Blunderbuss
@@ -129,8 +129,8 @@ profession(202, { -- Engineering
 		i(4362),	-- Rough Boomstick
 		i(4379),	-- Silver-Plated Shotgun
 		i(15995),	-- Thorium Rifle
-		i(19999),	-- Bloodvine Goggles
-		i(19998),	-- Bloodvine Lens
+		un(8, i(19999)),	-- Bloodvine Goggles
+		un(8, i(19998)),	-- Bloodvine Lens
 		i(10499),	-- Bright-Eye Goggles
 		i(10501),	-- Catseye Ultra Goggles
 		i(4393),	-- Craftsman's Monocle

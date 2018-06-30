@@ -3,6 +3,11 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	un(1, i(20703)),	-- Cenarion Reservist's Leggings (Leather)
+	un(1, i(22230)),	-- Frightmaw Hide (Cloak)
+	un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
+	un(1, i(54655)),	-- Stormshroud Armor (Leather)
+----
 	un(1, i(138489)), 	-- Kargath's Sacrified Hands
 	un(1, i(77588)),	-- Replica High Warlord's Quickblade
 	un(1, i(77586)),	-- Replica High Warlord's Spellblade
