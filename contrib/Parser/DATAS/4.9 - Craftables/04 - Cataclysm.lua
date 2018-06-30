@@ -117,6 +117,92 @@ _.Craftables =
 		n(-186, { -- Jewelcrafting
 		}),
 		n(-187, { -- Leatherworking
+			n(-322, { 	-- Cloak
+				i(56518),	-- Cloak of Beasts
+				i(56519),	-- Cloak of War
+				i(56489),	-- Hardened Scale Cloak
+				i(56548),	-- Razor-Edged Cloak
+				i(56480),	-- Savage Cloak
+				i(56549),	-- Twilight Dragonscale Cloak
+				i(75076),	-- Vicious Fur Cloak
+				i(75077),	-- Vicious Hide Cloak
+			}),
+			n(-44, { 	-- Leather
+				i(56562),	-- Assassin's Chestplate
+				i(56537),	-- Belt of Nefarious Whispers
+				i(71985),	-- Bladeshadow Leggings
+				i(71994),	-- Bladeshadow Wristguards
+				i(71995),	-- Bracers of Flowing Serenity
+				i(56561),	-- Chestguard of Nature's Fury
+				i(69942),	-- Clutches of Evil
+				i(56499),	-- Darkbrand Belt
+				i(56491),	-- Darkbrand Boots
+				i(56483),	-- Darkbrand Bracers
+				i(56509),	-- Darkbrand Chestguard
+				i(56484),	-- Darkbrand Gloves
+				i(56505),	-- Darkbrand Helm
+				i(56513),	-- Darkbrand Leggings
+				i(56495),	-- Darkbrand Shoulders
+				i(69952),	-- Ethereal Footfalls
+				i(69943),	-- Heavenly Gloves of the Moon
+				i(71986),	-- Leggings of Nature's Champion
+				i(56536),	-- Lightning Lash
+				i(69951),	-- Treads of the Craft
+				i(75127),	-- Vicious Leather Belt
+				i(75130),	-- Vicious Leather Boots
+				i(75131),	-- Vicious Leather Bracers
+				i(75103),	-- Vicious Leather Chest
+				i(75104),	-- Vicious Leather Gloves
+				i(75105),	-- Vicious Leather Helm
+				i(75112),	-- Vicious Leather Legs
+				i(75113),	-- Vicious Leather Shoulders
+				i(75117),	-- Vicious Wyrmhide Belt
+				i(75101),	-- Vicious Wyrmhide Boots
+				i(75106),	-- Vicious Wyrmhide Bracers
+				i(75107),	-- Vicious Wyrmhide Chest
+				i(75109),	-- Vicious Wyrmhide Gloves
+				i(75111),	-- Vicious Wyrmhide Helm
+				i(75080),	-- Vicious Wyrmhide Legs
+				i(75099),	-- Vicious Wyrmhide Shoulders
+			}),
+			n(-45, { 	-- Mail
+				i(71996),	-- Bracers of the Hunter-Killer
+				i(56539),	-- Corded Viper Belt
+				i(71988),	-- Deathscale Leggings
+				i(69939),	-- Dragonfire Gloves
+				i(56564),	-- Dragonkiller Tunic
+				i(69949),	-- Earthen Scale Sabatons
+				i(69950),	-- Footwraps of Quenched Fire
+				i(69941),	-- Gloves of Unforgiving Flame
+				i(71987),	-- Rended Earth Leggings
+				i(56538),	-- Stormleather Sash
+				i(71997),	-- Thundering Deathscale Wristguards
+				i(56482),	-- Tsunami Belt
+				i(56494),	-- Tsunami Boots
+				i(56481),	-- Tsunami Bracers
+				i(56504),	-- Tsunami Chestguard
+				i(56490),	-- Tsunami Gloves
+				i(56512),	-- Tsunami Helm
+				i(56508),	-- Tsunami Leggings
+				i(56498),	-- Tsunami Shoulders
+				i(56563),	-- Twilight Scale Chestguard
+				i(75083),	-- Vicious Charscale Belt
+				i(75092),	-- Vicious Charscale Boots
+				i(75094),	-- Vicious Charscale Bracers
+				i(75084),	-- Vicious Charscale Chest
+				i(75085),	-- Vicious Charscale Gloves
+				i(75090),	-- Vicious Charscale Helm
+				i(75097),	-- Vicious Charscale Legs
+				i(75061),	-- Vicious Charscale Shoulders
+				i(75100),	-- Vicious Dragonscale Belt
+				i(75110),	-- Vicious Dragonscale Boots
+				i(75114),	-- Vicious Dragonscale Bracers
+				i(75115),	-- Vicious Dragonscale Chest
+				i(75081),	-- Vicious Dragonscale Gloves
+				i(75102),	-- Vicious Dragonscale Helm
+				i(75108),	-- Vicious Dragonscale Legs
+				i(75116),	-- Vicious Dragonscale Shoulders
+			}),
 		}),
 		n(-190, { -- Tailoring
 			i(54504),	-- Belt of the Depths

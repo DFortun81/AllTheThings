@@ -192,6 +192,151 @@ _.Craftables =
 		n(-186, { -- Jewelcrafting
 		}),
 		n(-187, { -- Leatherworking
+			n(-322, { 	-- Cloak
+				i(38441),	-- Cloak of Harsh Winds
+				i(41238),	-- Cloak of Tormented Skies
+				i(43565),	-- Durable Nerubhide Cape
+				i(43566),	-- Ice Striker's Cloak
+			}),
+			n(-44, { 	-- Leather
+				i(38405),	-- Arctic Belt
+				i(38404),	-- Arctic Boots
+				i(38400),	-- Arctic Chestpiece
+				i(38403),	-- Arctic Gloves
+				i(38437),	-- Arctic Helm
+				i(38401),	-- Arctic Leggings
+				i(38402),	-- Arctic Shoulderpads
+				i(38433),	-- Arctic Wristguards
+				i(45556),	-- Belt of Arctic Life
+				i(38590),	-- Black Chitinguard Boots
+				i(49899),	-- Bladeborn Leggings
+				i(49894),	-- Blessed Cenarion Boots
+				i(45565),	-- Boots of Wintry Endurance
+				i(47581),	-- Bracers of Swift Death
+				i(47582),	-- Bracers of Swift Death
+				i(44442),	-- Bugsquashers
+				i(38592),	-- Dark Arctic Chestpiece
+				i(38591),	-- Dark Arctic Leggings
+				i(44441),	-- Dark Iceborne Chestguard
+				i(44440),	-- Dark Iceborne Leggings
+				i(45555),	-- Death-Warmed Belt
+				i(43502),	-- Earthgiving Boots
+				i(43495),	-- Earthgiving Legguards
+				i(43435),	-- Eviscerator's Bindings
+				i(43434),	-- Eviscerator's Chestguard
+				i(43260),	-- Eviscerator's Facemask
+				i(43436),	-- Eviscerator's Gauntlets
+				i(43438),	-- Eviscerator's Legguards
+				i(43433),	-- Eviscerator's Shoulderpads
+				i(43439),	-- Eviscerator's Treads
+				i(43437),	-- Eviscerator's Waistguard
+				i(49895),	-- Footpads of Impending Death
+				i(45564),	-- Footpads of Silence
+				i(38406),	-- Iceborne Belt
+				i(38407),	-- Iceborne Boots
+				i(38408),	-- Iceborne Chestguard
+				i(38409),	-- Iceborne Gloves
+				i(38438),	-- Iceborne Helm
+				i(38410),	-- Iceborne Leggings
+				i(38411),	-- Iceborne Shoulderpads
+				i(38434),	-- Iceborne Wristguards
+				i(43256),	-- Jormscale Footpads
+				i(47599),	-- Knightbane Carapace
+				i(47600),	-- Knightbane Carapace
+				i(42731),	-- Leggings of Visceral Strikes
+				i(49898),	-- Legwraps of Unleashed Nature
+				i(47601),	-- Lunar Eclipse Robes
+				i(47602),	-- Lunar Eclipse Robes
+				i(47583),	-- Moonshadow Armguards
+				i(47584),	-- Moonshadow Armguards
+				i(43266),	-- Overcast Belt
+				i(43273),	-- Overcast Boots
+				i(43264),	-- Overcast Bracers
+				i(43263),	-- Overcast Chestguard
+				i(43265),	-- Overcast Handwraps
+				i(43261),	-- Overcast Headguard
+				i(43271),	-- Overcast Leggings
+				i(43262),	-- Overcast Spaulders
+				i(43592),	-- Polar Boots
+				i(43591),	-- Polar Cord
+				i(43590),	-- Polar Vest
+				i(43258),	-- Purehorn Spaulders
+				i(43255),	-- Seafoam Gauntlets
+				i(43484),	-- Trollwoven Girdle
+				i(43481),	-- Trollwoven Spaulders
+				i(29970),	-- Wildfeather Leggings
+				i(43257),	-- Wildscale Breastplate
+				i(44930),	-- Windripper Boots
+				i(44931),	-- Windripper Leggings
+			}),
+			n(-45, { 	-- Mail
+				i(45553),	-- Belt of Dragons
+				i(47580),	-- Black Chitin Bracers
+				i(47579),	-- Black Chitin Bracers
+				i(45554),	-- Blue Belt of Chaos
+				i(45562),	-- Boots of Living Scale
+				i(47577),	-- Crusader's Dragonscale Bracers
+				i(47576),	-- Crusader's Dragonscale Bracers
+				i(47595),	-- Crusader's Dragonscale Breastplate
+				i(47596),	-- Crusader's Dragonscale Breastplate
+				i(44437),	-- Dark Frostscale Breastplate
+				i(44436),	-- Dark Frostscale Leggings
+				i(44444),	-- Dark Nerubian Chestpiece
+				i(44443),	-- Dark Nerubian Leggings
+				i(49901),	-- Draconic Bonesplinter Legguards
+				i(44438),	-- Dragonstompers
+				i(43131),	-- Eaglebane Bracers
+				i(49896),	-- Earthsoul Boots
+				i(47597),	-- Ensorcelled Nerubian Breastplate
+				i(47598),	-- Ensorcelled Nerubian Breastplate
+				i(38412),	-- Frostscale Belt
+				i(38413),	-- Frostscale Boots
+				i(38436),	-- Frostscale Bracers
+				i(38414),	-- Frostscale Chestguard
+				i(38415),	-- Frostscale Gloves
+				i(38440),	-- Frostscale Helm
+				i(38416),	-- Frostscale Leggings
+				i(38424),	-- Frostscale Shoulders
+				i(43459),	-- Giantmaim Bracers
+				i(43458),	-- Giantmaim Legguards
+				i(43594),	-- Icy Scale Belt
+				i(43595),	-- Icy Scale Boots
+				i(43593),	-- Icy Scale Chestguard
+				i(45563),	-- Lightning Grounded Boots
+				i(49900),	-- Lightning-Infused Leggings
+				i(38418),	-- Nerubian Belt
+				i(38419),	-- Nerubian Boots
+				i(38435),	-- Nerubian Bracers
+				i(38420),	-- Nerubian Chestguard
+				i(38421),	-- Nerubian Gloves
+				i(38439),	-- Nerubian Helm
+				i(38422),	-- Nerubian Legguards
+				i(38417),	-- Nerubian Shoulders
+				i(43133),	-- Nightshock Girdle
+				i(43132),	-- Nightshock Hood
+				i(43129),	-- Razorstrike Breastplate
+				i(43461),	-- Revenant's Breastplate
+				i(43469),	-- Revenant's Treads
+				i(49897),	-- Rock-Steady Treads
+				i(44445),	-- Scaled Icewalkers
+				i(43450),	-- Stormhide Belt
+				i(43455),	-- Stormhide Crown
+				i(43454),	-- Stormhide Grips
+				i(43453),	-- Stormhide Hauberk
+				i(43456),	-- Stormhide Legguards
+				i(43457),	-- Stormhide Shoulders
+				i(43451),	-- Stormhide Stompers
+				i(43452),	-- Stormhide Wristguards
+				i(43442),	-- Swiftarrow Belt
+				i(43443),	-- Swiftarrow Boots
+				i(43444),	-- Swiftarrow Bracers
+				i(43446),	-- Swiftarrow Gauntlets
+				i(43445),	-- Swiftarrow Hauberk
+				i(43447),	-- Swiftarrow Helm
+				i(43448),	-- Swiftarrow Leggings
+				i(43449),	-- Swiftarrow Shoulderguards
+				i(43130),	-- Virulent Spaulders
+			}),
 		}),
 		n(-190, { -- Tailoring
 			i(42096),	-- Aurora Slippers

@@ -173,6 +173,120 @@ _.Craftables =
 		n(-186, { -- Jewelcrafting
 		}),
 		n(-187, { -- Leatherworking
+			n(-322, { 	-- Cloak
+				i(33122),	-- Cloak of Darkness
+			}),
+			n(-44, { 	-- Leather
+				un(5, i(29526)),	-- Primalstrike Belt
+				un(5, i(29527)),	-- Primalstrike Bracers
+				un(5, i(29525)),	-- Primalstrike Vest
+				un(5, i(29524)),	-- Windhawk Belt
+				un(5, i(29523)),	-- Windhawk Bracers
+				un(5, i(29522)),	-- Windhawk Hauberk
+				i(30040),	-- Belt of Deep Shadow
+				i(30042),	-- Belt of Natural Power
+				i(29964),	-- Blackstorm Leggings
+				i(29500),	-- Blastguard Belt
+				i(29499),	-- Blastguard Boots
+				i(29498),	-- Blastguard Pants
+				i(30041),	-- Boots of Natural Grace
+				i(30039),	-- Boots of Utter Darkness
+				i(32582),	-- Bracers of Renewed Life
+				i(34369),	-- Carapace of Sun and Shadow
+				i(29503),	-- Cobrascale Gloves
+				i(29502),	-- Cobrascale Hood
+				i(29497),	-- Enchanted Clefthoof Boots
+				i(29496),	-- Enchanted Clefthoof Gloves
+				i(29495),	-- Enchanted Clefthoof Leggings
+				i(25686),	-- Fel Leather Boots
+				i(25685),	-- Fel Leather Gloves
+				i(25687),	-- Fel Leather Leggings
+				i(34370),	-- Gloves of Immortal Dusk
+				i(29506),	-- Gloves of the Living Touch
+				i(25691),	-- Heavy Clefthoof Boots
+				i(25690),	-- Heavy Clefthoof Leggings
+				i(25689),	-- Heavy Clefthoof Vest
+				i(29505),	-- Hood of Primal Life
+				i(34371),	-- Leather Chestguard of the Sun
+				i(34372),	-- Leather Gauntlets of the Sun
+				i(29974),	-- Living Crystal Breastplate
+				i(29973),	-- Primalstorm Breastplate
+				i(32393),	-- Redeemed Soul Cinch
+				i(32396),	-- Redeemed Soul Legguards
+				i(32394),	-- Redeemed Soul Moccasins
+				i(32395),	-- Redeemed Soul Wristguards
+				i(33204),	-- Shadowprowler's Chestguard
+				i(32583),	-- Shoulderpads of Renewed Life
+				i(25682),	-- Stylin' Jungle Hat
+				i(25680),	-- Stylin' Purple Hat
+				i(32580),	-- Swiftstrike Bracers
+				i(32581),	-- Swiftstrike Shoulders
+				i(25668),	-- Thick Draenic Boots
+				i(25669),	-- Thick Draenic Gloves
+				i(25670),	-- Thick Draenic Pants
+				i(25671),	-- Thick Draenic Vest
+				i(25673),	-- Wild Draenish Boots
+				i(25674),	-- Wild Draenish Gloves
+				i(25675),	-- Wild Draenish Leggings
+				i(25676),	-- Wild Draenish Vest
+				i(29970),	-- Wildfeather Leggings
+				i(29504),	-- Windscale Hood
+				i(29507),	-- Windslayer Wraps
+			}),
+			n(-45, { 	-- Mail
+				un(5, i(29516)),	-- Ebon Netherscale Belt
+				un(5, i(29517)),	-- Ebon Netherscale Bracers
+				un(5, i(29515)),	-- Ebon Netherscale Breastplate
+				un(5, i(29520)),	-- Netherstrike Belt
+				un(5, i(29521)),	-- Netherstrike Bracers
+				un(5, i(29519)),	-- Netherstrike Breastplate
+				i(30046),	-- Belt of the Black Eagle
+				i(32574),	-- Bindings of Lightning Reflexes
+				i(32398),	-- Boots of Shackled Souls
+				i(30045),	-- Boots of the Crimson Hawk
+				i(32399),	-- Bracers of Shackled Souls
+				i(29971),	-- Dragonstrike Leggings
+				i(29512),	-- Earthen Netherscale Boots
+				i(34373),	-- Embrace of the Phoenix
+				i(29491),	-- Enchanted Felscale Boots
+				i(29490),	-- Enchanted Felscale Gloves
+				i(29489),	-- Enchanted Felscale Leggings
+				i(25655),	-- Felscale Boots
+				i(25657),	-- Felscale Breastplate
+				i(25654),	-- Felscale Gloves
+				i(25656),	-- Felscale Pants
+				i(25695),	-- Felstalker Belt
+				i(25697),	-- Felstalker Bracers
+				i(25696),	-- Felstalker Breastplate
+				i(29494),	-- Flamescale Belt
+				i(29493),	-- Flamescale Boots
+				i(29492),	-- Flamescale Leggings
+				i(34374),	-- Fletcher's Gloves of the Phoenix
+				i(29975),	-- Golden Dragonstrike Breastplate
+				i(32400),	-- Greaves of Shackled Souls
+				i(30043),	-- Hurricane Boots
+				i(29508),	-- Living Dragonscale Helm
+				i(32577),	-- Living Earth Bindings
+				i(32579),	-- Living Earth Shoulders
+				i(30044),	-- Monsoon Belt
+				i(29511),	-- Netherdrake Gloves
+				i(29510),	-- Netherdrake Helm
+				i(25694),	-- Netherfury Belt
+				i(25693),	-- Netherfury Boots
+				i(25692),	-- Netherfury Leggings
+				i(25659),	-- Scaled Draenic Boots
+				i(25661),	-- Scaled Draenic Gloves
+				i(25662),	-- Scaled Draenic Pants
+				i(25660),	-- Scaled Draenic Vest
+				i(32575),	-- Shoulders of Lightning Reflexes
+				i(25681),	-- Stylin' Adventure Hat
+				i(25683),	-- Stylin' Crimson Hat
+				i(34375),	-- Sun-Drenched Scale Chestguard
+				i(34376),	-- Sun-Drenched Scale Gloves
+				i(29514),	-- Thick Netherscale Breastplate
+				i(32397),	-- Waistguard of Shackled Souls
+				i(29509),	-- Windstrike Gloves
+			}),
 		}),
 		n(-190, { -- Tailoring
 			i(21867),	-- Arcanoweave Boots
