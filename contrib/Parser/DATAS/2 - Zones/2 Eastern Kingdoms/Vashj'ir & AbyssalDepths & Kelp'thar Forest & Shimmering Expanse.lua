@@ -8,74 +8,6 @@ _.Zones =
 			["groups"] = {
 				m(614, {	-- Abyssal Depths
 					["groups"] = {			
---[[
-						n( -3, { 	-- Holidays					
-							n(-47, {     -- Lunar Festival
-								["groups"] = {
-									n(-17, { 	-- Quests
-									}),
-								},
-								["achievementID"] = 913, -- To Honor One's Elders
-								["u"] = 17,
-							}),
-							n(-50, {     -- Love is in the Air
-								["groups"] = {
-									n(-17, { 	-- Quests
-									}),
-								},
-								["achievementID"] = 1693,    -- Fool For Love
-								["u"] = 18,
-							}),
-							n(-51, {     -- Noblegarden
-								["groups"] = {
-									n(-17, { 	-- Quests
-									}),
-								},
-								["achievementID"] = 2798, -- Noble Gardener
-								["u"] = 19,
-							}),
-							n(-52, {     -- Children's Week
-								["groups"] = {
-									n(-17, { 	-- Quests
-									}),
-								},
-								["achievementID"] = 1793, -- For The Children
-								["u"] = 20,
-							}),									
-							n(-56, {     -- Brewfest
-								["groups"] = {
-									n(-17, { 	-- Quests
-									}),
-								},
-								["achievementID"] = 1683, -- Brewmaster
-								["u"] = 24,
-							}),
-							n(-58, {     -- Hallow's End
-								["groups"] = {
-									n(-17, { 	-- Quests
-									}),
-								},
-								["achievementID"] = 1656, -- Hallowed Be Thy Name
-								["u"] = 26,
-							}),	
-							n(-60, {     -- Pilgrim's Bounty
-								["groups"]  = {
-									n(-17, { 	-- Quests
-									}),
-								},
-								["achievementID"] = 3478, -- Pilgrim
-								["u"] = 28,
-							}),
-							n(-61, {     -- Feast of Winter Veil
-								["groups"] = {
-									n(-17, { 	-- Quests
-									}),
-								},
-								["achievementID"] = 1691, -- Merrymaker
-								["u"] = 29,
-							}),
-						}),
---]]
 						n(-17, { -- Quests
 --							qg(, qa(26017)),  	-- A Lure
 							qg(41667, qa(25977, {  	-- A Standard Day for Azrajar
@@ -236,14 +168,6 @@ _.Zones =
 								dr(1.4, i(67141)), -- Corefire Legplates
 								dr(1.4, i(67133)), -- Dizze's Whirling Robe
 								dr(1.4, i(67134)), -- Dory's Finery
-							}), 
-							n(50009, { -- Mobus
-								dr(65.0, i(69843)),		-- Mobus's Dripping Halberd
-								dr(07.0, i(67135)),	-- Morrie's Waywalker Wrap
-								dr(06.0, i(67133)),	-- Dizze's Whirling Robe
-								dr(05.0, i(67140)),	-- Drape of Inimitable Fate
-								dr(05.0, i(67146)),	-- Woundsplicer Handwraps
-								dr(04.0, i(67148)),	-- Kilt of Trollish Dreams
 							}), 
 							n(50050, { -- Shok'sharak
 								dr(100, i(67233))	-- Sussurating Treads of Shok'sharak

@@ -37,71 +37,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
---[[					
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),	
---]]
---[[		
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
---]]				
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(29001),	-- Candy Bucket
-								q(28999),	-- Candy Bucket
-								q(29000),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
---[[
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),	
---]]
 				}),
 				n(-25, {	-- Pet Battle
 					p(487), 	-- Alpine Chipmunk
@@ -599,25 +534,6 @@ _.Zones =
 				n(-16, {	-- Rares	
 					n(50057, { 		-- Blazewing
 						dr( 100, i(67236)),	-- Blazewing's Furious Kilt
-					}), 
-					n(50056, { 		-- Garr
-						dr(65.0, i(69842)), --	Garr's Reinforced Girdle of Memories
-						dr(	5.0, i(67147)), --	Je'Tze's Sparkling Tiara
-						dr(	4.0, i(67150)), --	Arrowsinger Legguards
-						dr(	4.0, i(67141)), --	Corefire Legplates
-						dr(	4.0, i(67140)), --	Drape of Inimitable Fate
-						dr(	4.0, i(67143)), --	Icebone Hauberk
-						dr(	3.0, i(67145)), --	Blockade's Lost Shield
-						dr(	3.0, i(67133)), --	Dizze's Whirling Robe
-						dr(	3.0, i(67134)), --	Dory's Finery
-						dr(	3.0, i(67144)), --	Pauldrons of Edward the Odd
-						dr(	3.0, i(67131)), --	Ritssyn's Ruminous Drape
-						dr(	3.0, i(67146)), --	Woundsplicer Handwraps
-						dr(	3.0, i(67142)), --	Zom's Electrostatic Cloak
-						dr(	2.0, i(67149)), --	Heartbound Tome
-						dr(	1.9, i(67148)), --	Kilt of Trollish Dreams
-						dr(	1.6, i(67135)), --	Morrie's Waywalker Wrap
-						dr(	1.3, i(67132)), --	Grips of the Failed Immortal
 					}), 
 					n(50053, { 		-- Thartuk the Exile
 						dr( 100, i(67234)),	-- Thartuk's Inimitable Gauntlets

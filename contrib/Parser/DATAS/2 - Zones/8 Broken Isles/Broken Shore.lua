@@ -6,62 +6,6 @@ _.Zones =
 	m(1007, { 	-- The Broken Isles
 		m(1021, { 	-- Broken Shore
 			["groups"] = {
-				n(-7, { 	-- World Bosses
-					["description"] = "|cff66ccffOnly one of these World Bosses are up at a time and only spawn when the Nether Disruptor is active.  \nThese are independent of the other Broken Isle rares and both can be up.|r",
-					["achievementID"] = 11786,	-- Terrors of the Shore
-					["bonusID"] = 1482, -- Sets ilvl to 900
-					["groups"] = {
-						cr(121124, e(1956, { -- Apocron 
-							["groups"] = {
-								i(147734),
-								i(147743),
-								i(147730),
-								i(147753),
-								i(147738)
-							},
-							["questID"] = 47061, -- Change to tracking quest later
-							["isRaid"] = true,
-						})),
-						cr(117239, e(1883, { -- Brutallus 
-							["groups"] = {
-								i(147749),
-								i(147742),
-								i(147747),
-								i(147739),
-								i(147748),
-								i(147732)
-							},
-							["questID"] = 46947, -- Change to tracking quest later.
-							["isRaid"] = true,
-						})),	
-						cr(117303, e(1884, { -- Malificus 
-							["groups"] = {
-								i(147740),
-								i(147764),
-								i(147733),
-								i(147735),
-								i(147745),
-								i(147741),
-								i(147750),
-								i(147744)
-							},
-							["questID"] = 47086,
-							["isRaid"] = true,
-						})),	
-						cr(117470, e(1885, { -- Si'vash 
-							["groups"] = {
-								i(147731),
-								i(147752),
-								i(147751),
-								i(147737),
-								i(147736),
-								i(147746)
-							},
-							["questID"] = 46945, -- Change to tracking quest later.
-							["isRaid"] = true,
-						})),
-					},
-				}),		
 				n(120434, { -- Command Center
 					["groups"] =  {
 						n(122719, { -- Scouting Map

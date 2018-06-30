@@ -5,51 +5,7 @@ _.Zones =
 {
 	m(14, { 	-- Eastern Kingdoms
 		m(19, {		-- Blasted Lands
-			["groups"] = {
-				n( -7, {	-- World Bosses
-					nld({		-- Legacy	
-						n(18338, { -- Highlord Kruul
-							["groups"] = {
-								un(2, i(18665, { -- The Eye of Shadow
-									un(2, i(18609)), -- Anathema
-									un(2, i(18608)), -- Benediction
-								})),
-								un(2, i(17113)), -- Amberseal Keeper
-								un(2, i(17112)), -- Empyrean Demolisher
-								un(2, i(18204)), -- Eskhandar's Pelt
-								un(2, i(19135)), -- Blacklight Bracer
-								un(2, i(19133)), -- Fel Infused Leggings
-								un(2, i(18544)), -- Doomhide Gauntlets
-								un(2, i(19134)), -- Flayed Doomguard Belt
-								un(2, i(18546)), -- Infernal Headcage
-							},
-							["u"] = 12,
-							["isRaid"] = true,
-						}),
-						n(12397, { -- Lord Kazzak
-							["groups"] = {
-								un(2, i(18665, { -- The Eye of Shadow
-									["groups"] = {
-										un(2, i(18609)), -- Anathema
-										un(2, i(18608)), -- Benediction
-									},
-									["classes"] = { 5 },
-								})),
-								un(2, i(17113)), -- Amberseal Keeper
-								un(2, i(17112)), -- Empyrean Demolisher
-								un(2, i(18204)), -- Eskhandar's Pelt
-								un(2, i(19135)), -- Blacklight Bracer
-								un(2, i(19133)), -- Fel Infused Leggings
-								un(2, i(18544)), -- Doomhide Gauntlets
-								un(2, i(19134)), -- Flayed Doomguard Belt
-								un(2, i(18546)), -- Infernal Headcage
-							},
-							["u"] = 12,
-							["isRaid"] = true,
-							["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
-						}),
-					}),
-				}),							
+			["groups"] = {					
 				n( -3, {	-- Holidays										
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
