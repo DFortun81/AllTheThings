@@ -325,19 +325,20 @@ profession(197, { -- Tailoring
 		un(8, i(18407)),	-- Felcloth Gloves
 		un(8, i(18408)),	-- Inferno Gloves
 		un(8, i(18409)),	-- Mooncloth Gloves
-		i(22652),	-- Admiral's Hat
-		i(22654),	-- Azure Silk Hood
-		i(22658),	-- Black Mageweave Headband
-		i(22655),	-- Dreamweave Circlet
-		i(22660),	-- Enchanter's Cowl
-		i(22756),	-- Felcloth Hood
-		i(22758),	-- Mooncloth Circlet
-		i(19165),	-- Red Mageweave Headband
-		i(22757),	-- Runecloth Headband
-		i(19156),	-- Shadow Hood
+		un(8, i(22652)),	-- Glacial Vest (Admiral's Hat - incorrect name)
+		un(8, i(22654)),	-- Glacial Gloves (Azure Silk Hood - incorrect name)
+		un(8, i(22658)),	-- Glacial Cloak (Black Mageweave Headband - incorrect name)
+		un(8, i(22655)),	-- Glacial Wrists (Dreamweave Circlet - incorrect name)
+		i(22660),	-- Gaea's Embrace (Enchanter's Cowl - incorrect name)
+		i(22756),	-- Sylvan Vest (Felcloth Hood - incorrect name)
+		i(22758),	-- Sylvan Shoulders (Mooncloth Circlet - incorrect name)
+		i(19165),	-- Flarecore Leggings (Red Mageweave Headband - incorrect name)
+		i(22757),	-- Sylvan Crown (Runecloth Headband - incorrect name)
+		i(19156),	-- Flarecore Robe (Shadow Hood - incorrect name)
 		desc(i(10025), "Required for the |cff3399ffLucid Nightmare|r riddle mount."),	-- Shadoweave Mask
-		i(19682),	-- Silk Headband
-		i(19684),	-- Sylvan Crown
+		un(8, i(19682)),	-- Bloodvine Vest (Silk Headband - incorrect name)
+		un(8, i(19684)),	-- Bloodvine Boots
+		un(8, i(19683)),	-- Bloodvine Leggings
 		i(18263),	-- White Bandit Mask
 		i(19050),	-- Wizardweave Turban
 		i(19059),	-- Argent Shoulders
@@ -348,7 +349,7 @@ profession(197, { -- Tailoring
 		i(14154),	-- Felcloth Shoulders
 		i(16979),	-- Flarecore Mantle
 		i(14140),	-- Mantle of the Timbermaw
-		i(14146),	-- Mooncloth Shoulders
+		i(14146),	-- Gloves of Spell Mastery (Mooncloth Shoulders - incorrect name)
 		i(14112),	-- Shadoweave Shoulders
 		i(14152),	-- Sylvan Shoulders
 		i(14139),	-- Brightcloth Cloak
@@ -366,7 +367,7 @@ profession(197, { -- Tailoring
 		i(14111),	-- Runecloth Cloak
 		i(14144),	-- Azure Silk Vest
 		i(14137),	-- Barbaric Linen Vest
-		i(14136),	-- Black Mageweave Robe
+		un(8, i(14136)),	-- Robe of Winter Night (Black Mageweave Robe - incorrect name)
 		i(13865),	-- Black Mageweave Vest
 		i(14108),	-- Bloodvine Vest
 		i(13864),	-- Blue Linen Robe
@@ -465,7 +466,7 @@ profession(197, { -- Tailoring
 		i(7050),	-- Runed Stygian Belt
 		i(4324),	-- Spider Belt
 		i(7049),	-- Star Belt
-		i(5770),	-- Wisdom of the Timbermaw
+		un(8, i(5770)),	-- Robes of Arcana (Wisdom of the Timbermaw - incorrect name)
 		i(4319),	-- Azure Silk Pants
 		i(7047),	-- Black Mageweave Leggings
 		i(7048),	-- Bloodvine Leggings
