@@ -2876,7 +2876,11 @@ app.BaseArtifact = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			return select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID));
+			if GetDataSubMember("CollectedArtifacts", t.artifactID) then return true; end
+			if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
+				SetDataSubMember("CollectedArtifacts", t.artifactID, 1);
+				return true;
+			end
 		elseif key == "text" then
 			return Colorize("Variant " .. t.info[4], RGBToHex(t.info[9] * 255, t.info[10] * 255, t.info[11] * 255));
 		elseif key == "title" then
