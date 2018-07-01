@@ -1969,8 +1969,7 @@ _.Zones =
 						["groups"] = {					
 							i(129078),
 						},
-						["quests"] = 37649,	
-						
+						["questID"] = 37649,
 						["displayID"] = 71077,
 						["modelScale"] = 1.5,
 						["description"] = "|cff66ccffThis chest is underground in the Oceanus Cove caves on the ground of gold coins next to Lady Sssurine.|r",

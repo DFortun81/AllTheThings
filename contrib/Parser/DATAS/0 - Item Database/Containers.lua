@@ -1119,3 +1119,6 @@ i(118931);		-- Leonid's Bag of Supplies
 i(119040);		-- Cache of Mingled Treasures
 i(119036);		-- Box of Storied Treasures
 i(119037);		-- Supply of Storied Rarities
+
+i(137642);		-- Mark of Honor
+i(51315);		-- Sealed Chest
