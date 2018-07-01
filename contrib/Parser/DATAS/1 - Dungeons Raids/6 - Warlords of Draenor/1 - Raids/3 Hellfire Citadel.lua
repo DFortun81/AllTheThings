@@ -8,11 +8,13 @@ _.Instances =
 		["groups"] = {
 			inst(669, { 	-- Hellfire Citadel
 				["groups"] = {
-					d(17, {		-- LFR LFR
+					d(17, {		-- LFR
+						["ids"] = { 3524 }, 
 						["groups"] = {
 							--[[
 							{
 								["npcID"] = -2,
+								["ids"] = { 451 },
 								["groups"] = {
 									cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 										i(128092),
@@ -179,6 +181,7 @@ _.Instances =
 							},
 							{
 								["npcID"] = -3,
+								["ids"] = {},
 								["groups"] = {
 									cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 										i(128092),
@@ -786,7 +789,7 @@ _.Instances =
 						}))
 					}),
 					d(15, {		-- Heroic
-						
+						["ids"] = { 566 }, -- Heroic
 						["groups"] = {
 							n(0, {				-- Zone Drop
 								i(124182),	-- Cord of Unhinged Malice
@@ -1051,7 +1054,7 @@ _.Instances =
 						}
 					}),
 					d(16, {		-- Mythic
-						
+						["ids"] = { 567 }, -- Mythic
 						["groups"] = {
 							n(0, {				-- Zone Drop
 								i(124182),	-- Cord of Unhinged Malice

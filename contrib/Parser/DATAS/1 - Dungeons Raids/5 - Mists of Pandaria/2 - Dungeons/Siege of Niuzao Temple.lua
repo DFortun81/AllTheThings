@@ -9,7 +9,7 @@ _.Instances =
 			inst(324, { 	-- Siege of Niuzao Temple
 				["groups"] = {
 					d( 1, {	-- Normal
-						
+						["ids"] = { 3543 }, -- Normal
 						["groups"] = {
 							cr(61567, e(693, {	-- Vizier Jin'bak
 								i(144022),	-- Hood of Viridian Residue
@@ -78,7 +78,7 @@ _.Instances =
 						},
 					}),
 					d( 2, {	-- Heroic
-						
+						["ids"] = { 524 }, -- Heroic
 						["lvl"] = 90,
 						["groups"] = {
 							cr(61567, e(693, {	-- Vizier Jin'bak
@@ -148,7 +148,7 @@ _.Instances =
 							})),
 						}}),
 					d(24, {	-- Timewalking
-						
+						["ids"] = { 615 }, -- Timewalking
 						["lvl"] = 85,
 						["groups"] = {
 							cr(61567, e(693, {	-- Vizier Jin'bak
