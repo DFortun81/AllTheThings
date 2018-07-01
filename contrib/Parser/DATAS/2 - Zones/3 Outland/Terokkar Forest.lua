@@ -312,7 +312,6 @@ _.Zones =
 						},
 						["qg"] = 18446,	-- Earthbinder Tavgren
 						["sourceQuests"] = { 9957 },	-- What's Wrong at Cenarion Thicket?
-						["isBreadcrumb"] = true,
 					}),
 					qa(  9986),	-- Stymying the Arakkoa
 					qh(  9987),	-- Stymying the Arakkoa

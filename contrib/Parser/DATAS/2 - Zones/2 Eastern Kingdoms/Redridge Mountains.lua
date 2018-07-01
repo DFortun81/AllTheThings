@@ -40,7 +40,6 @@ _.Zones =
 									i(60685),	-- Yowling Cloak
 								},
 								["sourceQuests"] = {26365},	-- Hero's Call: Redridge Mountains!
-								["isBreadcrumb"] = true,
 							})),
 							qg(464, qa(26505, {	-- Parker's Report					
 								["groups"] = {

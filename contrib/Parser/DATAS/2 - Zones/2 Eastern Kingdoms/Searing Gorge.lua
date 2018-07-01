@@ -106,7 +106,6 @@ _.Zones =
 									},
 								["qg"] = 47266,	-- Jack Rockleg
 								["sourceQuests"] = { 28512,28581,28582 }, -- "To the Aid of the Thorium Brotherhood", "Warchief's Command: Searing Gorge", "Hero's Call: Searing Gorge"
-								["isBreadcrumb"] = true,
 							}),
 							q(27964, {	--Dig-Boss Dinwhisker
 								["groups"] = {

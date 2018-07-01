@@ -121,7 +121,6 @@ _.Zones =
 								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
-								["isBreadcrumb"] = true,
 							}),
 							q(27368, {	-- Just Encased
 								["groups"] = {
@@ -145,7 +144,6 @@ _.Zones =
 								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
-								["isBreadcrumb"] = true,
 							}),
 							q(27371, {  -- What I Do Best
 								["groups"] = {
@@ -445,7 +443,6 @@ _.Zones =
 								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
-								["isBreadcrumb"] = true,
 							}),
 							q(27368, {	-- Just Encased
 								["groups"] = {
@@ -471,7 +468,6 @@ _.Zones =
 								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
-								["isBreadcrumb"] = true,
 							}),
 							q(27371, {  -- What I Do Best
 								["groups"] = {
@@ -630,7 +626,6 @@ _.Zones =
 								},
 								["qg"] = 16135,	-- Rayne
 								["sourceQuests"] = {27544}, -- for "Cenarion Tenacity"
-								["isBreadcrumb"] = true,
 							}),
 							q(27421, { -- Amidst Death, Life
 								["groups"] = {
@@ -674,7 +669,6 @@ _.Zones =
 								["qg"] = 48704,	-- Gek Nozzlerocket
 								["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
 								["sourceQuests"] = { 28579, 28580 },	-- Hero's Call/Warchief's Command: Badlands!
-								["isBreadcrumb"] = true,
 							}),
 						}),
 						sz(771, 12, { -- The Infectis Scar
@@ -700,7 +694,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 11035,	-- Betina Bigglezink
-								["sourceQuests"] = {27451,27452}, -- "To Kill With Purpose", "Dark Garb"
+								["sourceQuests"] = {27451,27452} -- "To Kill With Purpose", "Dark Garb"
 							}),
 							q(27454, { -- Just a Drop in the Bucket
 								["groups"] = {
@@ -711,13 +705,13 @@ _.Zones =
 									i(156979), -- Cauldron Dredger
 								},
 								["qg"] = 11035,	-- Betina Bigglezink
-								["sourceQuests"] = {27453}, -- "Catalysm"
+								["sourceQuests"] = {27453} -- "Catalysm"
 							}),
 							q(27455, {	-- Boys Will Be Boys
 								["groups"] = {
 								},
 								["qg"] = 45417,	-- Fiona
-								["sourceQuests"] = {27448}, -- "The Trek Continues"
+								["sourceQuests"] = {27448} -- "The Trek Continues"
 							}),
 						}),
 						sz(771, 14, { -- Eastwall Tower
@@ -725,14 +719,14 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 45574,	-- Vex'tul
-								["sourceQuests"] = {27449,27465}, -- "Honor and Strength", "Argent Call: The Noxious Glade"
+								["sourceQuests"] = {27449,27465} -- "Honor and Strength", "Argent Call: The Noxious Glade"
 							}),
 							q(27482, { -- Into the Flames
 								["groups"] = {
 									i(62991), -- Strength's Supremacy
 								},
 								["qg"] = 45574,	-- Vex'tul
-								["sourceQuests"] = {27481}, -- "Out of the Ziggurat"
+								["sourceQuests"] = {27481} -- "Out of the Ziggurat"
 							}),
 							q(27479, {	-- Righteous Indignation
 								["groups"] = {
@@ -818,8 +812,7 @@ _.Zones =
 									i(63007),
 								},
 								["qg"] = 45828,	-- Argent Apotehcary Judkins
-								["sourceQuests"] = { 27532 },
-								["isBreadcrumb"] = true,
+								["sourceQuests"] = 27532,
 							}),
 							q(27534, {	-- Augustus' Receipt Book
 								["groups"] = {
@@ -834,8 +827,7 @@ _.Zones =
 									i(63003),
 								},
 								["qg"] = 12384,	-- Augustus the Touched
-								["sourceQuests"] = { 27535 },
-								["isBreadcrumb"] = true,
+								["sourceQuests"] = 27535,
 							}),
 						}),
 					--[[

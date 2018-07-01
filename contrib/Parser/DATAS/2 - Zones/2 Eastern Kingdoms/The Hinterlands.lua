@@ -57,7 +57,6 @@ _.Zones =
 						},
 						["qg"] = 5636,	-- Gryphon Master Talonaxe
 						["sourceQuests"] = { 26542 },	-- Hero's Call: The Hinterlands!
-						["isBreadcrumb"] = true,
 					}),
 					qa(26641, {	-- Can't Make An Omelette Without...
 						["groups"] = {
@@ -372,7 +371,6 @@ _.Zones =
 						},
 						["qg"] = 42642,	-- Primal Torntusk
 						["sourceQuests"] = { 26432 },	-- The Fall of Jintha'Alor
-						["isBreadcrumb"] = true,
 					}),
 					qa(26643, {	-- Starvation Diet
 						["groups"] = {
@@ -468,7 +466,6 @@ _.Zones =
 						},
 						["qg"] = 42613,	-- Elder Torntusk
 						["sourceQuests"] = { 28574 },	-- Warchief's Command: The Hinterlands!
-						["isBreadcrumb"] = true,
 					}),
 					qa(26530, {	-- The Shell of Shadra
 						["groups"] = {
@@ -526,7 +523,6 @@ _.Zones =
 						},
 						["qg"] = 43157,	-- Doran Steelwing
 						["sourceQuests"] = { 26496 },	-- Down with the Vilebranch
-						["isBreadcrumb"] = true,
 					}),
 				}),
 				n(-16, {	-- Rares

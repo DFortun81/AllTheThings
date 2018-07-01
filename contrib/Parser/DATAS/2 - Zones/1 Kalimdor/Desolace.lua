@@ -184,7 +184,6 @@ _.Zones =
 						},
 						["qg"] = 12031,	-- Mai'Lahii
 						["sourceQuests"] = { 14337 },	-- Shadowprey Village
-						["isBreadcrumb"] = true,
 					}),
 					q(5501, {	-- Bone Collector
 						["groups"] = {
@@ -273,7 +272,6 @@ _.Zones =
 						},
 						["qg"] = 4498,	-- Maurin Bonesplitter
 						["sourceQuests"] = { 14338 },	-- Ghost Walker Post
-						["isBreadcrumb"] = true,
 					}),
 					q(14246, {	-- Early Adoption
 						["groups"] = {
@@ -507,7 +505,6 @@ _.Zones =
 						},
 						["qg"] = 35286,	-- Furien
 						["sourceQuests"] = { 28548 },	-- Warchief's Command: Desolace!
-						["isBreadcrumb"] = true,
 					}),
 					q(14327, {	-- My Word is My Bond (awarded "Karnum's Glade" criteria)
 						["groups"] = {
@@ -597,7 +594,6 @@ _.Zones =
 						},
 						["qg"] = 36410,	-- Officer Jankie
 						["sourceQuests"] = { 28531 },	-- Hero's Call: Desolace!
-						["isBreadcrumb"] = true,
 					}),
 					q(14301, { 	-- Return and Report
 						["groups"] = {
@@ -670,7 +666,6 @@ _.Zones =
 						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
 						["sourceQuests"] = { 14365, 14255 },	-- Ethel Rethor (A, H versions)
-						["isBreadcrumb"] = true,
 					}),
 					q(14292, {	-- The Enemy of Our Enemy
 						["groups"] = {

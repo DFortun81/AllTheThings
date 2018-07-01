@@ -100,14 +100,12 @@ _.Zones =
 								["qg"] = 46650,	-- Eddie Flofizzle
 								["isBreadcrumb"] = true,	-- for "Easily Swayed"
 								["sourceQuests"] = { 27762 },	-- Fuselight Ho!
-						["isBreadcrumb"] = true,
 							}),
 							q( 27774, {	-- Easily Swayed
 								["groups"] = {
 								},
 								["qg"] = 46652,	-- Dolph Blastus
 								["sourceQuests"] = { 27763 },	-- To Fuselight Proper
-						["isBreadcrumb"] = true,
 							}),
 							q( 27764, {	-- A Strange Request
 								["groups"] = {
@@ -453,7 +451,6 @@ _.Zones =
 								},
 								["qg"] = 2785,	-- Theldurin the Lost
 								["sourceQuests"] = { 27927 },	-- Down to the Scar
-						["isBreadcrumb"] = true,
 							}),
 							q( 27714, {	-- The Day that Deathwing Came: The Real Story
 								["groups"] = {
@@ -472,7 +469,6 @@ _.Zones =
 								["qg"] = 4618,	-- Martek the Exiled
 								["sourceQuests"] = { 27714 },	-- The Day that Deathwing Came: The Real Story
 								["sourceQuests"] = { 27927 },	-- Down to the Scar
-						["isBreadcrumb"] = true,
 							}),
 						}),
 					}),

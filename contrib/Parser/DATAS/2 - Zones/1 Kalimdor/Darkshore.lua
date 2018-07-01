@@ -557,7 +557,6 @@ _.Zones =
 						},
 						["qg"] = 32967,	-- Elder Brolg
 						["sourceQuests"] = { 13525 },	-- What's Happening to the Blackwood Furbolg?
-						["isBreadcrumb"] = true,
 					}),
 					qa(13520, {	-- The Boon of the Seas
 						["groups"] = {
@@ -652,7 +651,6 @@ _.Zones =
 						},
 						["qg"] = 32973,	-- Dentaria Silverglade
 						["sourceQuests"] = { 28490 },	-- Hero's Call: Darkshore!
-						["isBreadcrumb"] = true,
 					}),
 					qa(13844, {	-- The Looting of Althalaxx
 						["groups"] = {
@@ -803,7 +801,6 @@ _.Zones =
 						},
 						["qg"] = 33250,	-- Foriel Broadleaf
 						["isBreadcrumb"] = true,	-- for "The Bear's Paw"
-						["isBreadcrumb"] = true,
 					}),
 					i(64450, {	-- Writings of the Dark Herald
 						qa(28529, {	-- Writings of the Void

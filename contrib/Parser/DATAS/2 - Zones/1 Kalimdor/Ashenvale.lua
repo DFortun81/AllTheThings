@@ -60,7 +60,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuests"] = {26453},
-						["isBreadcrumb"] = true,
 					})),
 					qg(11806, qa(13624)),	-- A Squad of Your Own (No Prereq)
 					qg(3894, qa(13919, {	-- A Trip to the Moonwell
@@ -285,7 +284,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuests"] = {26408, 28492},
-						["isBreadcrumb"] = true,
 					})),
 					qg(3691, qa(26476, {	-- Dryad Delivery
 						["groups"] = {
@@ -527,7 +525,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuests"] = {13964},
-						["isBreadcrumb"] = true,
 					})),
 					qg(4079, qa(13853, {	-- Return Fire
 						["groups"] = {
@@ -627,7 +624,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuests"] = {13617},
-						["isBreadcrumb"] = true,
 					})),
 					n(12759, {				-- Tideress (No Prereq)
 						i(16408, { 	-- Befouled Water Globe
@@ -695,7 +691,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuests"] = { 28539 },	-- Hero's Call: Stonetalon Mountains!
-						["isBreadcrumb"] = true,
 					})),
 					qg(34596, qh(13980, {	-- They're Out There!
 						["groups"] = {
@@ -709,7 +704,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuests"] = {13965},
-						["isBreadcrumb"] = true,
 					})),
 					qg(34510, qh(13879, {	-- Thunder Peak
 						["groups"] = {
@@ -721,7 +715,7 @@ _.Zones =
 						},
 						["sourceQuests"] = {13920},
 					})),
-					qg(3847, qa(13645, {	-- To Raene Wounner
+					qg(3847, qa(13645, {	-- To Raene Wolfrunner
 						["groups"] = {
 						},
 						["sourceQuests"] = {26464},
@@ -762,7 +756,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuests"] = {13923},
-						["isBreadcrumb"] = true,
 					})),
 					qg(34395, qh(13974, {	-- Tweedle's Tiny Package
 						["groups"] = {
@@ -800,7 +793,6 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuests"] = {28532},
-						["isBreadcrumb"] = true,
 					})),
 					qg(43063, qh(26416)),	-- Well, Come to the Jungle (No Prereq)
 					qg(33187, qa(13617, {	-- West to the Strand (breadcrumb quest for 26465)

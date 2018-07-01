@@ -159,7 +159,6 @@ _.Zones =
 						},
 						["qg"] = 35091,	-- Horzak Zignibble
 						["sourceQuests"] = { 14162 },	-- Report to Horzak
-						["isBreadcrumb"] = true,
 					}),
 					o(204050, {	-- Foebreaker Blueprints
 						qh(26337, {	-- Beating the Market
@@ -425,7 +424,6 @@ _.Zones =
 						},
 						["qg"] = 36500,	-- Subject Nine
 						["sourceQuests"] = { 14442 },	-- My Favorite Subject
-						["isBreadcrumb"] = true,
 					}),
 					o(201578, { -- Wrenchman Recruitment Poster
 						qh(14478, {	-- Operation Fishgut
@@ -591,7 +589,6 @@ _.Zones =
 						},
 						["qg"] = 35086,	-- Labor Captain Grabbit
 						["sourceQuests"] = { 28496 },	-- Warchief's Command: Azshara!
-						["isBreadcrumb"] = true,
 					}),
 					o(195676, {	-- Secret Lab Squawkbox
 						qh(14310, {	-- Segmentation Fault: Core Dumped
@@ -833,7 +830,6 @@ _.Zones =
 						},
 						["qg"] = 36077,	-- Assistant Greely
 						["sourceQuests"] = { 14424 },	-- Need More Science
-						["isBreadcrumb"] = true,
 					}),
 					qh(14462, {	-- Where's My Head?
 						["groups"] = {

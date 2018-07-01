@@ -145,7 +145,6 @@ _.Zones =
 						},
 						["qg"] = 3418,	-- Kirge Sternhorn
 						["sourceQuests"] = { 24543 },	-- A Family Divided
-						["isBreadcrumb"] = true,
 					}),
 					q( 24570, {	-- Adder Subtraction
 						["groups"] = {
@@ -264,7 +263,6 @@ _.Zones =
 						},
 						["qg"] = 37135,	-- Nura Pathfinder
 						["sourceQuests"] = { 28549 },	-- Warchief's Command: Southern Barrens!
-						["isBreadcrumb"] = true,
 					}),
 					qh(24604, {	-- Concern for Mankrik
 						["groups"] = {
@@ -461,7 +459,6 @@ _.Zones =
 						},
 						["qg"] = 38871,	-- Corporal Teegan
 						["sourceQuests"] = { 25036 },	-- Teegan's Troubles
-						["isBreadcrumb"] = true,
 					}),
 					qa(25085, {	-- Mangletooth
 						["groups"] = {
@@ -572,7 +569,6 @@ _.Zones =
 						},
 						["qg"] = 38623,	-- Dockmaster Lewis
 						["sourceQuests"] = { 28551, 28550 },	-- Hero's Call: Southern Barrens! (same quest name, different IDs)
-						["isBreadcrumb"] = true,
 					}),
 					qa(25087, {	-- Report to Twinbraid
 						["groups"] = {

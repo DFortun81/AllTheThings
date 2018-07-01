@@ -92,7 +92,6 @@ _.Zones =
 						},
 						["qg"] = 15399,	-- Lieutenant Dawnrunner
 						["sourceQuests"] = { 9359 },	-- Farstrider Retreat
-						["isBreadcrumb"] = true,
 					}),
 					i( 23249, {	-- Amani Invasion Plans
 						qh(9360, {	-- Amani Invasion
@@ -177,7 +176,6 @@ _.Zones =
 						},
 						["qg"] = 15924,	-- Apprentice Loralthalis
 						["sourceQuests"] = { 8888 },	-- The Magister's Apprentice
-						["isBreadcrumb"] = true,
 					}),
 					qh( 9252, {	-- Defending Fairbreeze Village
 						["groups"] = {
@@ -350,7 +348,6 @@ _.Zones =
 						},
 						["qg"] = 15939,	-- Ranger Degolien
 						["sourceQuests"] = { 9256 },	-- Fairbreeze Village
-						["isBreadcrumb"] = true,
 					}),
 					q(  9134, {	-- Skymistress Gloaming
 						["groups"] = {
@@ -364,14 +361,12 @@ _.Zones =
 						},
 						["qg"] = 15301,	-- Outrunner Alarion
 						["sourceQuests"] = { 8347 },	-- Aiding the Outrunners (BLOOD ELF ONLY)
-						["isBreadcrumb"] = true,
 					}),
 					qh( 9062, {	-- Soaked Pages
 						["groups"] = {
 						},
 						["qg"] = 15945,	-- Apprentice Meledor
 						["sourceQuests"] = { 9035 },	-- Roadside Ambush
-						["isBreadcrumb"] = true,
 						["description"] = "If you are working towards Loremaster, make sure you pick up Roadside Ambush before doing this quest - it counts toward the achievement and is unavailable after turning in Soaked Pages.",
 					}),
 					qh( 9066, {	-- Swift Discipline
@@ -402,7 +397,6 @@ _.Zones =
 						},
 						["qg"] = 16196,	-- Apothecary Thedra
 						["sourceQuests"] = { 9144 },	-- Missing in the Ghostlands
-						["isBreadcrumb"] = true,
 					}),
 --[[					
 					q( 14171, {	-- The Grateful Dead (HOLIDAY! Day of the Dead)

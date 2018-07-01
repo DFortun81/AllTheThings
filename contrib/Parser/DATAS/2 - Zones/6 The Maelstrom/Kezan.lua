@@ -165,7 +165,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 34668, -- Sassy Hardwrench
-						["sourceQuests"] = { 14122, 14123, 14121, 14124 }, -- The Great Bank Heist / Waltz Right In / Robbing Hoods / Liberate the Kaja'mite
+						["sourceQuests"] = { 14122, 14123, 14121, 14124 } -- The Great Bank Heist / Waltz Right In / Robbing Hoods / Liberate the Kaja'mite
 					}),
 					q(14126, { -- Life Savings
 						["groups"] = {
