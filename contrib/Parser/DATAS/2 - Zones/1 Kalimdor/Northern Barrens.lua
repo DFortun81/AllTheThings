@@ -411,13 +411,14 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 3449,	-- Darsok Swiftdagger
-						["breadcrumbQuestID"] = { 29094 },	-- The Short Way Home
+						["sourceQuests"] = { 29094 },	-- The Short Way Home
 					}),
 					qh(  867, {	-- Harpy Raiders
 						["groups"] = {
 						},
 						["qg"] = 3449,	-- Darsok Swiftdagger
-						["breadcrumbQuestID"] = { 29094 },	-- The Short Way Home
+						["sourceQuests"] = { 29094 },	-- The Short Way Home
+						["isBreadcrumb"] = true,
 					}),
 					qh(  852, {	-- Hezrul Bloodmark
 						["groups"] = {
@@ -448,7 +449,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 3337,	-- Kargal Battlescar
-						["breadcrumbQuestID"] = { 28494 },	-- Warchief's Command: Northern Barrens!
+						["sourceQuests"] = { 28494 },	-- Warchief's Command: Northern Barrens!
+						["isBreadcrumb"] = true,
 					}),
 					qh(13998, {	-- In Fungus We Trust
 						["groups"] = {
@@ -473,7 +475,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 3464,	-- Gazrog
-						["breadcrumbQuestID"] = { 13991 },	-- The Purloined Payroll
+						["sourceQuests"] = { 13991 },	-- The Purloined Payroll
+						["isBreadcrumb"] = true,
 					}),
 					q(   865, {	-- It's Gotta be the Horn
 						["groups"] = {
@@ -551,7 +554,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 8582,	-- Kadrak
-						["breadcrumbQuestID"] = { 29111, 28493 },	-- Mor'shan Caravan Delivery & Warchief's Command: Ashenvale!
+						["sourceQuests"] = { 29111, 28493 },	-- Mor'shan Caravan Delivery & Warchief's Command: Ashenvale!
+						["isBreadcrumb"] = true,
 					}),
 					qh(14063, { -- Mutiny, Mon!
 						["groups"] = {

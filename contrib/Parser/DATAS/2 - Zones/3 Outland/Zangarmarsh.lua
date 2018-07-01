@@ -88,7 +88,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 17858,	-- Warden Hamoot
-						["breadcrumbQuestID"] = { 9778 },	-- Warden Hamoot
+						["sourceQuests"] = { 9778 },	-- Warden Hamoot
+						["isBreadcrumb"] = true,
 					}),
 
 
@@ -118,7 +119,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 17841,	-- Ysiel Windsinger
-						["breadcrumbQuestID"] = { 39181, 39180 },	-- Hero's Call: Zangarmarsh! & Warchief's Command: Zangarmarsh!
+						["sourceQuests"] = { 39181, 39180 },	-- Hero's Call: Zangarmarsh! & Warchief's Command: Zangarmarsh!
+						["isBreadcrumb"] = true,
 					}),
 					
 					
@@ -254,7 +256,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 17831,	-- Watcher Leesa'oh
-						["breadcrumbQuestID"] = { 9697 },	-- Watcher Leesa'oh
+						["sourceQuests"] = { 9697 },	-- Watcher Leesa'oh
+						["isBreadcrumb"] = true,
 					}),
 					
 					
@@ -412,7 +415,7 @@ _.Zones =
 					qa( 9636, {	-- The Zapthrottle Mote Extractor!
 						["groups"] = {
 						},
-						["qg"] = 17634,	-- K. Lee Smallfry
+						["qg"] = 17634,	-- K. Lee Smaly
 						["description"] = "Invisible until 305 Engineering.",
 						["requiredSkill"] = 202,	-- Engineering
 					}),

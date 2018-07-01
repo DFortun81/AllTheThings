@@ -285,7 +285,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25307,	-- Recruitment Officer Blythe
-								["breadcrumbQuestID"] = {28709},
+								["sourceQuests"] = {28709},
+								["isBreadcrumb"] = true,
 							}),
 							q(11727, {	--  A Time for Heroes [A]
 								["groups"] = {
@@ -331,7 +332,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 26083,	-- Gerald Green
-								["breadcrumbQuestID"] = {11928},
+								["sourceQuests"] = {11928},
+								["isBreadcrumb"] = true,
 							}),
 							o(188085, { -- Plagued Grain
 								q(11902, {	--  Pernicious Evidence [A]
@@ -538,7 +540,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25262,	-- Librarian Donathan
-								["breadcrumbQuestID"] = {11574,11575},
+								["sourceQuests"] = {11574,11575},
+								["isBreadcrumb"] = true,
 							}),
 							q(11590, {	--  Abduction
 								["groups"] = {
@@ -631,7 +634,8 @@ _.Zones =
 									i(37026),  -- Spirit Channeller's Rod
 								},
 								["qg"] = 25435,	-- Karuk
-								["breadcrumbQuestID"] = {12141, 11662},
+								["sourceQuests"] = {12141, 11662},
+								["isBreadcrumb"] = true,
 							}),
 							q(11619, {	-- Gamel the Cruel
 								["groups"] = {
@@ -721,7 +725,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
-								["breadcrumbQuestID"] = 11704,
+								["sourceQuests"] = { 11704 },
+								["isBreadcrumb"] = true,
 							}),
 							q(11559, {	--  Winterfin Commerce
 								["groups"] = {
@@ -810,7 +815,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25251,	-- Leryssa
-								["breadcrumbQuestID"] = 11927,
+								["sourceQuests"] = { 11927 },
+								["isBreadcrumb"] = true,
 							}),
 							q(11600, {	-- The Late William Allerton [A]
 								["groups"] = {
@@ -1235,7 +1241,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
-								["breadcrumbQuestID"] = 11704,
+								["sourceQuests"] = { 11704 },
+								["isBreadcrumb"] = true,
 							}),
 							q(11559, {	--  Winterfin Commerce
 								["groups"] = {
@@ -1595,7 +1602,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25336,	-- Grunt Ragefist
-								["breadcrumbQuestID"] = 11591,
+								["sourceQuests"] = { 11591 },
+								["isBreadcrumb"] = true,
 							}),
 							q(11592, {	-- We Strike! [H]
 								["groups"] = {
@@ -1873,7 +1881,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25339,	-- Spirit Talker Snarlfang
-								["breadcrumbQuestID"] = 12486,
+								["sourceQuests"] = { 12486 },
+								["isBreadcrumb"] = true,
 							}),
 							q(11627, {	--  Boiling Point [H]
 								["groups"] = {
@@ -1926,7 +1935,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25247,	-- Endorah
-								["breadcrumbQuestID"] = {11595,11596,11597},
+								["sourceQuests"] = {11595,11596,11597},
+								["isBreadcrumb"] = true,
 							}),
 							q(13270, {	--  Cloth Scavenging [H]
 								["groups"] = {
@@ -1958,13 +1968,15 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25978,	-- Ambassador Talonga
-								["breadcrumbQuestID"] = {11595,11596,11597},
+								["sourceQuests"] = {11595,11596,11597},
+								["isBreadcrumb"] = true,
 							}),
 							q(12486, {	--  To Bor'gorok Outpost, Quickly! [H]
 								["groups"] = {
 								},
 								["qg"] = 25272,	-- Sauranok the Mystic
-								["breadcrumbQuestID"] = {11595,11596,11597},
+								["sourceQuests"] = {11595,11596,11597},
+								["isBreadcrumb"] = true,
 							}),
 							i(34777, {	-- Ith'rix's Hardened Carapace
 								q(11632, {	-- What the Cold Wind Brings... [H]

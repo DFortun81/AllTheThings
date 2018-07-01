@@ -1329,21 +1329,21 @@ _.Zones =
 							i(131761),
 						},
 						["questID"] = 40405,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(94877, { 		-- Brogrul the Mighty 
 						["groups"] = {
 							i(138396),
 						},
 						["questID"] = 39235,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(97933, { 		-- Crab Rider Grmlrml
 						["groups"] = {	
 							i(131798),
 						},
 						["questID"] = 39994,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(97345, { 		-- Crawshuk the Hungry
 						["groups"] = {	
@@ -1358,7 +1358,7 @@ _.Zones =
 							i(131780), 
 						},
 						["questID"] = 40414,	
-						["ids"] = {1794},
+						
 						["description"] = "|cff66ccffClick all candles to summon mob|r"
 					}), 
 					n(96072, { 		-- Durguth
@@ -1366,14 +1366,14 @@ _.Zones =
 							i(131796),
 						},
 						["questID"] = 45508,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(97793, { 		-- Flamescale
 						["groups"] = {
 							i(131773),
 						},
 						["questID"] = 39963,	
-						["ids"] = {1794},
+						
 						["description"] = "|cff66ccffClick on Abandoned Fishing Pole to summon Flamescale|r"
 					}), 					
 					n(96590, { 		-- Gurbog da Basher
@@ -1381,14 +1381,14 @@ _.Zones =
 							i(131775),
 						},
 						["questID"] = 40347,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(98024, { 		-- Luggut the Eggeater
 						["groups"] = {	
 							i(131776),
 						},
 						["questID"] = 40406,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(96410, { 		-- Majestic Elderhorn
 						["groups"] = {
@@ -1401,7 +1401,7 @@ _.Zones =
 							i(131793),
 						},
 						["questID"] = 39435,	
-						["ids"] = {1794},	
+							
 					}), 
 					{
 						["vignetteID"] = 40423,	-- Unethical Adventurers
@@ -1426,7 +1426,7 @@ _.Zones =
 							i(131792),
 						},
 						["questID"] = 39866,	
-						["ids"] = {1794},
+						
 						["description"] = "|cff66ccffSpeak to Scout Harefoot and Mynta Talonscreech will spawn.|r",
 					}), 
 					n(97093, { 		-- Shara Felbreath 
@@ -1434,21 +1434,21 @@ _.Zones =
 							i(131791),
 						},
 						["questID"] = 39762,	
-						["ids"] = {1794},
+						
 					}),
 					n(101077, { 	-- Sekhan 
 						["groups"] = {
 							i(131730),
 						},
 						["questID"] = 40681,	
-						["ids"] = {1794},
+						
 					}),
 					n(95872, { 		-- Skullhat 
 						["groups"] = {
 							i(131769),
 						},
 						["questID"] = 39465,	
-						["ids"] = {1794},
+						
 					}), 
 					n(97653, { 		-- Taurson
 						["groups"] = {
@@ -1460,14 +1460,14 @@ _.Zones =
 							}),
 						},
 						["questID"] = 39872,	
-						["ids"] = {1794},		
+								
 					}), 
 					n(97203, { 		-- Tenpak Flametotem
 						["groups"] = {	
 							i(129175), -- Pet
 						},
 						["questID"] = 39782,	
-						["ids"] = {1794},
+						
 					}), 
 					n(97116, { 		-- Treasure Chest 244519
 						["groups"] = {

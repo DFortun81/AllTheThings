@@ -1908,7 +1908,7 @@ _.WorldEvents =
 							}),
 						},
 						["u"] = 26, -- Hallow's End
-						["maps"] = { 971, 973, 974, 975, 991, 976, 980, 981, 982, 976, 990 } -- Lunarfall [971-991]; Frostwall [976-990]
+						["maps"] = { 971, 973, 974, 975, 991, 976, 980, 981, 982, 976, 990 }, -- Lunarfall [971-991]; Frostwall [976-990]
 					}),
 					n(-2, { -- Vendors
 						n(53757, { -- Chub <Candy & Toy Vendor>

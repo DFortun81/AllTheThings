@@ -17,7 +17,7 @@ _.Instances =
 						}),	
 					}),	
 					d(1, {		-- Normal
-						["ids"] = { 1826 }, -- Normal
+						
 						["groups"] = {
 							cr(91784, e(1480, {	-- Warlord Parjesh
 								i(134240),
@@ -70,7 +70,7 @@ _.Instances =
 						}
 					}),
 					d(2, {		-- Heroic
-						["ids"] = { 1726 }, -- Heroic
+						
 						["lvl"] = 110,
 						["groups"] = {
 							cr(91784, e(1480, {	-- Warlord Parjesh
@@ -124,7 +124,7 @@ _.Instances =
 						}
 					}),
 					d(23, {		-- Mythic
-						["ids"] = { 1727 }, -- Mythic
+						
 						["lvl"] = 110,
 						["groups"] = {
 							cr(91784, e(1480, {	-- Warlord Parjesh

@@ -38,7 +38,8 @@ _.Instances =
 							["groups"] = {
 							},
 							["qg"] = 44556,	-- Murd Doc
-							["breadcrumbQuestID"] = { 26944, 26943 },	-- Exploring Gnomeregan OR Home Sweet Gnome
+							["sourceQuests"] = { 26944, 26943 },	-- Exploring Gnomeregan OR Home Sweet Gnome
+							["isBreadcrumb"] = true,
 						}),
 						qg(44560, qa(26941, {	-- The G-Team
 							["groups"] = {

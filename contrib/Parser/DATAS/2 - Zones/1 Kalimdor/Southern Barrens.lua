@@ -144,7 +144,8 @@ _.Zones =
 							i(131375),	-- Taurajo Greaves
 						},
 						["qg"] = 3418,	-- Kirge Sternhorn
-						["breadcrumbQuestID"] = { 24543 },	-- A Family Divided
+						["sourceQuests"] = { 24543 },	-- A Family Divided
+						["isBreadcrumb"] = true,
 					}),
 					q( 24570, {	-- Adder Subtraction
 						["groups"] = {
@@ -262,7 +263,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 37135,	-- Nura Pathfinder
-						["breadcrumbQuestID"] = { 28549 },	-- Warchief's Command: Southern Barrens!
+						["sourceQuests"] = { 28549 },	-- Warchief's Command: Southern Barrens!
+						["isBreadcrumb"] = true,
 					}),
 					qh(24604, {	-- Concern for Mankrik
 						["groups"] = {
@@ -458,7 +460,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 38871,	-- Corporal Teegan
-						["breadcrumbQuestID"] = { 25036 },	-- Teegan's Troubles
+						["sourceQuests"] = { 25036 },	-- Teegan's Troubles
+						["isBreadcrumb"] = true,
 					}),
 					qa(25085, {	-- Mangletooth
 						["groups"] = {
@@ -568,7 +571,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 38623,	-- Dockmaster Lewis
-						["breadcrumbQuestID"] = { 28551, 28550 },	-- Hero's Call: Southern Barrens! (same quest name, different IDs)
+						["sourceQuests"] = { 28551, 28550 },	-- Hero's Call: Southern Barrens! (same quest name, different IDs)
+						["isBreadcrumb"] = true,
 					}),
 					qa(25087, {	-- Report to Twinbraid
 						["groups"] = {

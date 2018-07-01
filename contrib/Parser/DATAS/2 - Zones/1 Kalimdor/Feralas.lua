@@ -236,7 +236,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 39946,	-- Caryssia Moonhunter
-						["breadcrumbQuestID"] = { 28503 },	-- Hero's Call: Thousand Needles!
+						["sourceQuests"] = { 28503 },	-- Hero's Call: Thousand Needles!
+						["isBreadcrumb"] = true,
 					}),
 --[[
 					qdg(qg(7875, qh(27132))),	-- The Highborne

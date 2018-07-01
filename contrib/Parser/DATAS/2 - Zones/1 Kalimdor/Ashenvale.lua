@@ -59,7 +59,8 @@ _.Zones =
 					qg(17291, qa(26454, {	-- A Shameful Waste (No Prereq)
 						["groups"] = {
 						},
-						["breadcrumbQuestID"] = {26453},
+						["sourceQuests"] = {26453},
+						["isBreadcrumb"] = true,
 					})),
 					qg(11806, qa(13624)),	-- A Squad of Your Own (No Prereq)
 					qg(3894, qa(13919, {	-- A Trip to the Moonwell
@@ -283,7 +284,8 @@ _.Zones =
 					qg(33187, qa(13594, {	-- Don't Forget the Horde (No Prereq)
 						["groups"] = {
 						},
-						["breadcrumbQuestID"] = {26408, 28492},
+						["sourceQuests"] = {26408, 28492},
+						["isBreadcrumb"] = true,
 					})),
 					qg(3691, qa(26476, {	-- Dryad Delivery
 						["groups"] = {
@@ -524,7 +526,8 @@ _.Zones =
 					qg(3885, qa(26470, {	-- Retaking Mystral Lake (No Prereq)
 						["groups"] = {
 						},
-						["breadcrumbQuestID"] = {13964},
+						["sourceQuests"] = {13964},
+						["isBreadcrumb"] = true,
 					})),
 					qg(4079, qa(13853, {	-- Return Fire
 						["groups"] = {
@@ -623,7 +626,8 @@ _.Zones =
 					qg(3846, qa(26465, {	-- The Ancient Statuettes (No Prereq)
 						["groups"] = {
 						},
-						["breadcrumbQuestID"] = {13617},
+						["sourceQuests"] = {13617},
+						["isBreadcrumb"] = true,
 					})),
 					n(12759, {				-- Tideress (No Prereq)
 						i(16408, { 	-- Befouled Water Globe
@@ -690,7 +694,8 @@ _.Zones =
 					qg(34354, qa(13913, {	-- They Took Our Gnomes
 						["groups"] = {
 						},
-						["breadcrumbQuestID"] = { 28539 },	-- Hero's Call: Stonetalon Mountains!
+						["sourceQuests"] = { 28539 },	-- Hero's Call: Stonetalon Mountains!
+						["isBreadcrumb"] = true,
 					})),
 					qg(34596, qh(13980, {	-- They're Out There!
 						["groups"] = {
@@ -703,7 +708,8 @@ _.Zones =
 					qg(24739, qa(13976, {	-- Three Friends of the Forest (No Prereq)
 						["groups"] = {
 						},
-						["breadcrumbQuestID"] = {13965},
+						["sourceQuests"] = {13965},
+						["isBreadcrumb"] = true,
 					})),
 					qg(34510, qh(13879, {	-- Thunder Peak
 						["groups"] = {
@@ -715,7 +721,7 @@ _.Zones =
 						},
 						["sourceQuests"] = {13920},
 					})),
-					qg(3847, qa(13645, {	-- To Raene Wolfrunner
+					qg(3847, qa(13645, {	-- To Raene Wounner
 						["groups"] = {
 						},
 						["sourceQuests"] = {26464},
@@ -755,7 +761,8 @@ _.Zones =
 					qg(34359, qh(13936, {	-- Tweedle's Dumb (No Prereq)
 						["groups"] = {
 						},
-						["breadcrumbQuestID"] = {13923},
+						["sourceQuests"] = {13923},
+						["isBreadcrumb"] = true,
 					})),
 					qg(34395, qh(13974, {	-- Tweedle's Tiny Package
 						["groups"] = {
@@ -792,7 +799,8 @@ _.Zones =
 					qg(41678, qh(25945, {	-- We're Here to Do One Thing, Maybe Two... (No Prereq)
 						["groups"] = {
 						},
-						["breadcrumbQuestID"] = {28532},
+						["sourceQuests"] = {28532},
+						["isBreadcrumb"] = true,
 					})),
 					qg(43063, qh(26416)),	-- Well, Come to the Jungle (No Prereq)
 					qg(33187, qa(13617, {	-- West to the Strand (breadcrumb quest for 26465)

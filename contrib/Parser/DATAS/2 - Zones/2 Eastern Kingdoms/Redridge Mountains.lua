@@ -39,7 +39,8 @@ _.Zones =
 									i(131538),	-- Striders of the Prolific Sire
 									i(60685),	-- Yowling Cloak
 								},
-								["breadcrumbQuestID"] = {26365},	-- Hero's Call: Redridge Mountains!
+								["sourceQuests"] = {26365},	-- Hero's Call: Redridge Mountains!
+								["isBreadcrumb"] = true,
 							})),
 							qg(464, qa(26505, {	-- Parker's Report					
 								["groups"] = {

@@ -402,7 +402,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 44615,	-- Grand Executor Mortuus
-						["breadcrumbQuestID"] = { 26964 },	-- Warchief's Command: Silverpine Forest!
+						["sourceQuests"] = { 26964 },	-- Warchief's Command: Silverpine Forest!
+						["isBreadcrumb"] = true,
 					}),
 					qh(27065, {	-- The Warchief's Fleet
 						["groups"] = {

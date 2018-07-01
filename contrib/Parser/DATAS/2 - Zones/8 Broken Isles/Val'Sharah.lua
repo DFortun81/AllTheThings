@@ -1115,7 +1115,7 @@ _.Zones =
 							i(130135),
 						},
 						["questID"] = 43446,	
-						["ids"] = {1794},	
+							
 					}),
 					n(92965, { 		-- Darkshade
 						["groups"] = {
@@ -1128,14 +1128,14 @@ _.Zones =
 							i(130125),
 						},
 						["questID"] = 39858,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(109225, { 	-- Elandris Bladesong (Undergrell Attack)
 						["groups"] = {	
 							i(130133),
 						},
 						["questID"] = 43176,
-						["ids"] = {1794},
+						
 						["description"] = "|cff66ccffSpeak to Elandris Bladesong to start event. Kill waves of enemies and then the Crazed Undergrell.|r",
 					}), 
 					n(92334, { 		-- Elindya Featherlight (Skul'vrax)
@@ -1143,7 +1143,7 @@ _.Zones =
 							i(130115)
 						},
 						["questID"] = 38887,	
-						["ids"] = {1794},						
+												
 						["description"] = "|cff66ccffRevive Elindya Featherlight, follow her to Swiftflight and Skul'vrax will spawn.|r",
 					}), 
 					n(93679, { 		-- Gathenak the Subjugator
@@ -1151,7 +1151,7 @@ _.Zones =
 							i(132359),
 						},
 						["questID"] = 44070,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(92117, { 		-- Gorebeak
 						["groups"] = {	
@@ -1172,42 +1172,42 @@ _.Zones =
 							i(130118),
 						},
 						["questID"] = 40079,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(95221, { 		-- Mad Henryk
 						["groups"] = {
 							i(130214),
 						},
 						["questID"] = 39357,	
-						["ids"] = {1794},
+						
 					}), 
 					n(95318, { 		-- Perrexx
 						["groups"] = {	
 							i(130137),
 						},
 						["questID"] = 39596,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(94485, { 		-- Pollous the Fetid
 						["groups"] = {
 							i(130168),
 						},
 						["questID"] = 39130,	
-						["ids"] = {1794},
+						
 					}), 
 					n(92180, { 		-- Seersei
 						["groups"] = {	
 							i(130171),
 						},
 						["questID"] = 38479,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(92423, { 		-- Theryssia
 						["groups"] = {
 							i(130136),
 						},
 						["questID"] = 38772,	
-						["ids"] = {1794},						
+												
 						["description"] = "|cff66ccffClick on nameplate Thertssia on the grave stone.|r",
 					}), 
 					n(93205, { 		-- Thondrax
@@ -1215,7 +1215,7 @@ _.Zones =
 							i(130121),
 						},
 						["questID"] = 38780,	
-						["ids"] = {1794},	
+							
 					}),
 					{
 						["objectID"] = 241128,	-- Unguarded Thistleleaf Treasure
@@ -1229,7 +1229,7 @@ _.Zones =
 							i(130116),
 						},
 						["questID"] = 39856,	
-						["ids"] = {1794},	
+							
 					}), 
 --[[
 				--	n(93758, { 		-- Antydas Nightcaller	}), 

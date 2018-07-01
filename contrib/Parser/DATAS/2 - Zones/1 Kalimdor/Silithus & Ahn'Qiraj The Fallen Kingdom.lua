@@ -161,7 +161,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15191,	-- Windcaller Proudhorn
-						["breadcrumbQuestID"] = { 28528, 28527 },	-- Hero's Call: Silithus! & Warchief's Command: Silithus!
+						["sourceQuests"] = { 28528, 28527 },	-- Hero's Call: Silithus! & Warchief's Command: Silithus!
+						["isBreadcrumb"] = true,
 					}),
 					o(180503, {	-- Sandy Cookbook
 						q(8313, {	-- Sharing the Knowledge

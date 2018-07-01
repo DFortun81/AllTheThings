@@ -105,7 +105,8 @@ _.Zones =
 									i(63216), -- Jack's Lucky Charm
 									},
 								["qg"] = 47266,	-- Jack Rockleg
-								["breadcrumbQuestID"] = { 28512,28581,28582 }, -- "To the Aid of the Thorium Brotherhood", "Warchief's Command: Searing Gorge", "Hero's Call: Searing Gorge"
+								["sourceQuests"] = { 28512,28581,28582 }, -- "To the Aid of the Thorium Brotherhood", "Warchief's Command: Searing Gorge", "Hero's Call: Searing Gorge"
+								["isBreadcrumb"] = true,
 							}),
 							q(27964, {	--Dig-Boss Dinwhisker
 								["groups"] = {

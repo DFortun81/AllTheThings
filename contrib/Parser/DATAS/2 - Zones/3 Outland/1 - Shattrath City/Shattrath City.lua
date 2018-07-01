@@ -347,7 +347,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 22292,	-- Rilak the Redeemed
-						["breadcrumbQuestID"] = { 10863, 10908, 10862 },	-- Secrets of the Arakkoa, Speak with Rilak the Redeemed, or Surrender to the Horde
+						["sourceQuests"] = { 10863, 10908, 10862 },	-- Secrets of the Arakkoa, Speak with Rilak the Redeemed, or Surrender to the Horde
+						["isBreadcrumb"] = true,
 					}),
 					q( 10251, {	-- The Master's Grand Design?
 						["groups"] = {
@@ -673,7 +674,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 22940,	-- Grok
-								["breadcrumbQuestID"] = { 10984 },	-- Speak with the Ogre
+								["sourceQuests"] = { 10984 },	-- Speak with the Ogre
+								["isBreadcrumb"] = true,
 							}),
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.

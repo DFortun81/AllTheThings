@@ -9,7 +9,7 @@ _.Instances =
 			inst(246, { 	-- Scholomance
 				["groups"] = {
 					d(2, {		-- Heroic
-						["ids"] = { 524 }, -- Heroic
+						
 						["lvl"] = 90,
 						["groups"] = {
 							n(-17, {	-- Quests 			

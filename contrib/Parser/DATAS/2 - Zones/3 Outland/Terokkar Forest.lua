@@ -311,7 +311,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 18446,	-- Earthbinder Tavgren
-						["breadcrumbQuestID"] = { 9957 },	-- What's Wrong at Cenarion Thicket?
+						["sourceQuests"] = { 9957 },	-- What's Wrong at Cenarion Thicket?
+						["isBreadcrumb"] = true,
 					}),
 					qa(  9986),	-- Stymying the Arakkoa
 					qh(  9987),	-- Stymying the Arakkoa
