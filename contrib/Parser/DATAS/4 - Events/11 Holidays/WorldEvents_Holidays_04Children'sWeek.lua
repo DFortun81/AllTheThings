@@ -468,14 +468,18 @@ _.WorldEvents =
 					}),
 					n(-2, { -- Vendors
 						na(52358, { -- Craggle Wobbletop <Toys and Novelties>
-							un(20, i(69895)), -- Green Balloon
-							un(20, i(69896)), -- Yellow Balloon
+							["groups"] = {
+								un(20, i(69895)), -- Green Balloon
+								un(20, i(69896)), -- Yellow Balloon
+							},
 							["maps"] = { 301, }, -- Stormwind City
 							["u"] = 20, -- Children's Week
 						}),
 						nh(52809, { -- Blax Bottlerocket <Toys and Novelties>
-							un(20, i(69895)), -- Green Balloon
-							un(20, i(69896)), -- Yellow Balloon
+							["groups"] = {
+								un(20, i(69895)), -- Green Balloon
+								un(20, i(69896)), -- Yellow Balloon
+							},
 							["maps"] = { 321, }, -- Orgrimmar
 							["u"] = 20, -- Children's Week
 						}),
