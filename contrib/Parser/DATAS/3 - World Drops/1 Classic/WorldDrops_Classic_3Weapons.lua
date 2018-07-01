@@ -53,7 +53,7 @@ _.WorldDrops =
 					un(7, i(826)), -- Brutish Riverpaw Axe
 					i(863),		-- Gloom Reaper
 					i(871),		-- Flurry Axe
-					i(885),		-- Black Metal Axe
+					un(7, i(885)),		-- Black Metal Axe
 					i(934),		-- Stalvan's Reaper
 					i(9378),	-- Shovelphlange's Mining Axe
 					i(9465),	-- Digmaster 5000
@@ -83,10 +83,10 @@ _.WorldDrops =
 					i(1639),	-- Grinning Axe
 					i(1640),	-- Monstrous War Axe
 					i(1680),	-- Headchopper
-					i(2015),	-- Black Metal War Axe
+					un(7, i(2015)),	-- Black Metal War Axe
 					un(7, i(2175)), -- Shadowhide Battle Axe
 					un(7, i(2203)), -- Brashclaw's Chopper
-					i(2227),	-- Heavy Ogre War Axe
+					un(7, i(2227)),	-- Heavy Ogre War Axe
 					i(2291),	-- Kang the Decapitator
 					i(2299),	-- Burning War Axe
 					un(7, i(2823)),	-- Mo'grosh Can Opener
@@ -97,7 +97,7 @@ _.WorldDrops =
 					i(4562),	-- Severing Axe
 					i(5423),	-- Boahn's Fang
 					i(5749),	-- Scythe Axe
-					i(756),		-- Tunnel Pick
+					un(7, i(756)),		-- Tunnel Pick
 					i(7753),	-- Bloodspiller
 					i(870),		-- Fiery War Axe
 					i(9383),	-- Obsidian Cleaver
@@ -136,7 +136,7 @@ _.WorldDrops =
 					i(3037),	-- Whipwood Recurve Bow
 					i(3039),	-- Short Ash Bow
 					i(4087),	-- Trueshot Bow
-					i(4474),	-- Ravenwood Bow
+					un(7, i(4474)),	-- Ravenwood Bow
 					i(4576),	-- Light Bow
 					i(8180),	-- Hunting Bow
 					i(8183),	-- Precision Bow
@@ -147,7 +147,7 @@ _.WorldDrops =
 					i(13038),	-- Swiftwind
 					i(13039),	-- Skull Splitting Crossbow
 					i(13040),	-- Heartseeking Crossbow
-					i(6315),	-- Steelarrow Crossbow
+					un(7, i(6315)),	-- Steelarrow Crossbow
 				}),			
 				n(-333, { -- Daggers	
 					i(10625),	-- Stealthblade
@@ -168,7 +168,7 @@ _.WorldDrops =
 					i(1917),	-- Jeweled Dagger
 					i(1935),	-- Assassin's Blade
 					i(1936),	-- Goblin Screwdriver
-					i(2020),	-- Hollowfang Blade
+					un(7, i(2020)),	-- Hollowfang Blade
 					i(20720),	-- Dark Whisper Blade
 					i(2088),	-- Long Crawler Limb
 					i(2140),	-- Carving Knife
@@ -190,7 +190,7 @@ _.WorldDrops =
 					i(4088),	-- Dreadblade
 					i(4091),	-- Widowmaker
 					i(4446),	-- Blackvenom Blade
-					i(4449),	-- Naraxis' Fang
+					un(7, i(4449)),	-- Naraxis' Fang
 					un(7, i(4454)), -- Talon of Vultros
 					i(4571),	-- War Knife
 					i(5112),	-- Ritual Blade
@@ -206,7 +206,7 @@ _.WorldDrops =
 					i(8006),	-- The Ziggler
 					un(7, i(816)), -- Small Hand Blade
 					i(820),		-- Slicer Blade
-					i(899),		-- Venom Web Fang
+					un(7, i(899)),		-- Venom Web Fang
 					i(9384),	-- Stonevault Shiv
 				}),
 				n(-348, { -- Fist Weapons	
@@ -380,7 +380,7 @@ _.WorldDrops =
 					i(827),		-- Wicked Blackjack
 					i(865),		-- Leaden Mace
 					i(868),		-- Ardent Custodian
-					i(920),		-- Wicked Spiked Mace
+					un(7, i(920)),		-- Wicked Spiked Mace
 					i(9359),	-- Wirt's Third Leg
 					i(936),		-- Midnight Mace
 					i(9386),	-- Excavator's Brand
@@ -388,6 +388,7 @@ _.WorldDrops =
 					i(9488),	-- Oscillating Power Hammer
 				}),
 				n(-337, { -- 2H Maces
+					un(7, i(911)),	-- Ironwood Treebranch
 					i(10626),	-- Ragehammer
 					un(7, i(1218)), -- Heavy Gnoll War Club
 					i(12528),	-- The Judge's Gavel
@@ -529,7 +530,7 @@ _.WorldDrops =
 					i(15991),	-- Warleader's Shield
 					i(18673),	-- Avalanchion's Stony Hide
 					i(1979),	-- Wall of the Dead
-					i(2021),	-- Green Carapace Shield
+					un(7, i(2021)),	-- Green Carapace Shield
 					i(2040),	-- Troll Protector
 					i(25073),	-- Emperor Shield
 					i(25075),	-- Hardened Steel Shield
@@ -548,7 +549,7 @@ _.WorldDrops =
 					i(4070),	-- Jouster's Crest
 					un(7, i(4290)), -- Dust Bowl
 					i(4444),	-- Black Husk Shield
-					i(4477),	-- Nefarious Buckler
+					un(7, i(4477)),	-- Nefarious Buckler
 					i(4820),	-- Guardian Buckler
 					i(4821),	-- Bear Buckler
 					i(4822),	-- Owl's Disk
@@ -615,15 +616,15 @@ _.WorldDrops =
 					un(7, i(1928)), -- Defias Mage Staff
 					un(7, i(1933)), -- Staff of Conjuring
 					i(1998),	-- Bloodscalp Channeling Staff
-					i(2013),	-- Cryptbone Staff
+					un(7, i(2013)),	-- Cryptbone Staff
 					i(20258),	-- Zulian Ceremonial Staff
 					i(2072),	-- Dwarven Magestaff
 					i(2077),	-- Magician Staff
-					i(2226),	-- Ogremage Staff
+					un(7, i(2226)),	-- Ogremage Staff
 					i(2271),	-- Staff of the Blessed Seer
 					i(2549),	-- Staff of the Shade
 					i(3185),	-- Acrobatic Staff
-					i(3227),	-- Nightbane Staff
+					un(7, i(3227)),	-- Nightbane Staff
 					i(3415),	-- Staff of the Friar
 					un(7, i(3902)), -- Staff of Nobles
 					i(4437),	-- Channeler's Staff
@@ -634,7 +635,7 @@ _.WorldDrops =
 					i(812),		-- Glowing Brightwood Staff
 					i(866),		-- Monk's Staff
 					i(873),		-- Staff of Jordan
-					i(880),		-- Staff of Horrors
+					un(7, i(880)),		-- Staff of Horrors
 					i(890),		-- Twisted Chanter's Staff
 					i(937),		-- Black Duskwood Staff
 					i(943),		-- Warden Staff
@@ -673,9 +674,9 @@ _.WorldDrops =
 					un(7, i(1925)), -- Defias Rapier
 					i(1951),	-- Blackwater Cutlass
 					i(2011),	-- Twisted Sabre
-					i(2018),	-- Skeletal Longsword
+					un(7, i(2018)),	-- Skeletal Longsword
 					i(2035),	-- Sword of the Night Sky
-					i(2046),	-- Bluegill Kukri
+					un(7, i(2046)),	-- Bluegill Kukri
 					i(20698),	-- Elemental Attuned Blade
 					i(2078),	-- Northern Shortsword
 					i(2244),	-- Krol Blade
@@ -687,7 +688,7 @@ _.WorldDrops =
 					i(5744),	-- Pale Skinner
 					i(6622),	-- Sword of Zeal
 					i(727),		-- Notched Shortsword
-					i(753),		-- Dragonmaw Shortsword
+					un(7, i(753)),		-- Dragonmaw Shortsword
 					i(754),		-- Shortsword of Vengeance
 					i(809),		-- Bloodrazor
 					i(8190),	-- Hanzo Sword
@@ -741,8 +742,8 @@ _.WorldDrops =
 					i(1975),	-- Pysan's Old Greatsword
 					i(1982),	-- Nightblade
 					i(1986),	-- Gutrender
-					i(2014),	-- Black Metal Greatsword
-					i(2084),	-- Darksteel Bastard Sword
+					un(7, i(2014)),	-- Black Metal Greatsword
+					un(7, i(2084)),	-- Darksteel Bastard Sword
 					un(7, i(2204)), -- Brashclaw's Skewer
 					i(2205),	-- Duskbringer
 					i(2801),	-- Blade of Hanna

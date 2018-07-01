@@ -789,7 +789,7 @@ _.Zones =
 							n(1027, { 	-- Bluegill Warrior
 								un(7, i(2046)),	-- Bluegill Kukri
 							}),
-							n(1043, { 	-- Crimson Whelp
+							n(1069, { 	-- Crimson Whelp
 								un(7, i(3073)), 	-- Smoldering Pants
 							}),
 							n(1054, { 	-- Dark Iron Demolitionist

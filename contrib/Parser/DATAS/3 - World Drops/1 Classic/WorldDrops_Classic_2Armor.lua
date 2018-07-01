@@ -41,7 +41,7 @@ _.WorldDrops =
 					i(5624),	-- Circlet of the Order
 					i(5753),	-- Ruffled Chaplet
 					i(5819),	-- Sunblaze Coif
-					i(6204),	-- Tribal Worg Helm
+					un(7, i(6204)),	-- Tribal Worg Helm
 					i(9375),	-- Expert Goldminer's Helmet
 					i(9420),	-- Adventurer's Pith Helmet
 					i(9429),	-- Miner's Hat of the Deep
@@ -200,10 +200,10 @@ _.WorldDrops =
 					un(7, i(2241)), -- Desperado Cape
 					desc(un(7, i(22782)), "Added in WOD only to Big Crate of Salvage"),	-- Sin'dorei Cloak of Warding
 					un(7, i(2284)),	-- Rat Cloth Cloak
-					i(3018),	-- Hide of Lupos
+					un(7, i(3018)),	-- Hide of Lupos
 					i(3475),	-- Cloak of Flames
 					un(7, i(4447)), -- Cloak of Night
-					i(4462),	-- Cloak of Rot
+					un(7, i(4462)),	-- Cloak of Rot
 					i(4695),	-- Burnished Cloak
 					i(4701),	-- Inscribed Cloak
 					i(4706),	-- Lambent Scale Cloak
@@ -326,7 +326,7 @@ _.WorldDrops =
 					un(7, i(2016)),	-- Dusty Chain Armor
 					i(2034),	-- Scholarly Robes
 					i(2087),	-- Hard Crawler Carapace
-					i(2234),	-- Nightwalker Armor
+					un(7, i(2234)),	-- Nightwalker Armor
 					un(7, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
 					i(2292),	-- Necrology Robes
 					i(24808),	-- Unyielding Chain Vest
@@ -338,8 +338,8 @@ _.WorldDrops =
 					i(3330),	-- Dargol's Hauberk
 					i(3416),	-- Martyr's Chain
 					i(3569),	-- Vicar's Robe
-					i(4448),	-- Husk of Naraxis
-					i(4476),	-- Beastwalker Robe
+					un(7, i(4448)),	-- Husk of Naraxis
+					un(7, i(4476)),	-- Beastwalker Robe
 					i(4781),	-- Whispering Vest
 					i(4782),	-- Solstice Robe
 					i(4861),	-- Sleek Feathered Tunic
@@ -350,7 +350,7 @@ _.WorldDrops =
 					i(7728),	-- Beguiler Robes
 					i(7759),	-- Archon Chestpiece
 					i(821),		-- Riverpaw Leather Vest
-					i(914),		-- Large Ogre Chain Armor
+					un(7, i(914)),		-- Large Ogre Chain Armor
 					i(940),		-- Robes of Insight
 					i(9406),	-- Spirewind Fetter
 					i(9434),	-- Elemental Raiment
@@ -438,14 +438,14 @@ _.WorldDrops =
 					i(18712),	-- Arena Vambraces
 					i(18741),	-- Morlune's Bracer
 					i(1974),	-- Mindthrust Bracers
-					i(2017),	-- Glowing Leather Bracers
+					un(7, i(2017)),	-- Glowing Leather Bracers
 					i(3204),	-- Deepwood Bracers
 					i(4438),	-- Pugilist Bracers
 					i(4794),	-- Wolf Bracers
 					i(4795),	-- Bear Bracers
 					i(4796),	-- Owl Bracers
 					i(6198),	-- Jurassic Wristguards
-					i(897),		-- Madwolf Bracers
+					un(7, i(897)),		-- Madwolf Bracers
 					i(9428),	-- Unearthed Bands
 					i(9432),	-- Skullplate Bracers
 					i(9433),	-- Forgotten Wraps
@@ -484,13 +484,13 @@ _.WorldDrops =
 					i(2564),	-- Elven Spirit Claws
 					i(31126),	-- Gloves of Ferocity
 					i(3341),	-- Gauntlets of Ogre Strength
-					i(4465),	-- Felstrom's Gauntlets
+					un(7, i(4465)),	-- Felstrom's Gauntlets
 					i(4767),	-- Coppercloth Gloves
 					i(4768),	-- Adept's Gloves
 					i(6628),	-- Raven's Claws
 					i(720),		-- Brawler Gloves
 					i(867),		-- Gloves of Holy Might
-					i(892),		-- Gnoll Casting Gloves
+					un(7, i(892)),		-- Gnoll Casting Gloves
 					i(9395),	-- Gloves of Old
 					i(9435),	-- Reticulated Bone Gauntlets
 					i(9491),	-- Hotshot Pilot's Gloves
@@ -568,9 +568,9 @@ _.WorldDrops =
 					i(18745),	-- Sacred Cloth Leggings
 					i(1943),	-- Goblin Mail Leggings
 					i(2166),	-- Foreman's Leggings
-					i(2233),	-- Shadow Weaver Leggings
+					un(7, i(2233)),	-- Shadow Weaver Leggings
 					i(2277),	-- Necromancer Leggings
-					i(3022),	-- Bluegill Breeches
+					un(7, i(3022)),	-- Bluegill Breeches
 					un(7, i(3563)),	-- Seafarer's Pantaloons
 					i(38513),	-- Boarhide Leggings
 					un(7, i(4434)),	-- Scarecrow Trousers
@@ -608,14 +608,14 @@ _.WorldDrops =
 					i(132548),	-- Shamanic Treads
 					i(13260),	-- Wind Dancer Boots
 					i(14549),	-- Boots of Avoidance
-					i(1560),	-- Bluegill Sandals
+					un(7, i(1560)),	-- Bluegill Sandals
 					i(1678),	-- Black Ogre Kickers
 					i(18295),	-- Phasing Boots
 					i(18697),	-- Coldstone Slippers
-					i(1955),	-- Dragonmaw Chain Boots
-					i(2232),	-- Dark Runner Boots
+					un(7, i(1955)),	-- Dragonmaw Chain Boots
+					un(7, i(2232)),	-- Dark Runner Boots
 					i(2276),	-- Swampwalker Boots
-					i(4464),	-- Trouncing Boots
+					un(7, i(4464)),	-- Trouncing Boots
 					un(7, i(4660)), -- Walking Boots
 					i(4788),	-- Agile Boots
 					i(4789),	-- Stable Boots

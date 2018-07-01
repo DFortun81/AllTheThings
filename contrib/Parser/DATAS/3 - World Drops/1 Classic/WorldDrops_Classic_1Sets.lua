@@ -270,10 +270,10 @@ _.WorldDrops =
 				i(31256),	-- Silvermoon Armor
 				i(31264),	-- Silvermoon Robes
 				i(31263),	-- Silvermoon Tunic
-				i(3076),	-- Smoldering Boots
-				i(3074),	-- Smoldering Gloves
-				i(3073),	-- Smoldering Pants
-				i(3072),	-- Smoldering Robe
+				un(7, i(3076)),	-- Smoldering Boots
+				un(7, i(3074)),	-- Smoldering Gloves
+				un(7, i(3073)),	-- Smoldering Pants
+				un(7, i(3072)),	-- Smoldering Robe
 				i(6545),	-- Soldier's Armor
 				i(6551),	-- Soldier's Boots
 				i(6547),	-- Soldier's Gauntlets
