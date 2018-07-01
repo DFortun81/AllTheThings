@@ -9,7 +9,7 @@ _.Instances =
 			inst(321, { 	-- Mogu'shan Palace
 				["groups"] = {
 					d( 1, {	-- Normal
-						["ids"] = { 3541 },	-- Normal
+						
 						["groups"] = {
 							n(-17, {	-- Quests 						
 								q(31360, {	-- A New Lesson for the Master
@@ -87,7 +87,7 @@ _.Instances =
 						},
 					}),
 					d( 2, {	-- Heroic
-						["ids"] = { 524 },	-- Heroic
+						
 						["lvl"] = 90,
 						["groups"] = {
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
@@ -143,7 +143,7 @@ _.Instances =
 						},
 					}),
 					d(24, {	-- Timewalking
-						["ids"] = { 615 },	-- Timewalking
+						
 						["lvl"] = 85,
 						["groups"] = {
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)

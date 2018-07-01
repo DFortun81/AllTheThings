@@ -29,7 +29,7 @@ _.Zones =
 												-- i(21711), -- Lunar Festival Invitation
 											},
 											["qg"] = 15895, -- Lunar Festival Harbinger
-											["breadcrumbQuestID"] = { 15891 }, -- The Lunar Festival
+											["sourceQuests"] = { 15891 }, -- The Lunar Festival
 										}),
 									},
 									["qg"] = 15891, -- Lunar Festival Herald
@@ -1039,7 +1039,8 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["groups"] = {
 						},
 						["qg"] = 14720,	-- High Overlord Saurfang
-						["breadcrumbQuestID"] = { 28717 },	-- Warchief's Command: Twilight Highlands!
+						["sourceQuests"] = { 28717 },	-- Warchief's Command: Twilight Highlands!
+						["isBreadcrumb"] = true,
 					}),
 					qdg(qh(27400, {	-- Mastering the Arcane
 						["groups"] = {
@@ -2682,7 +2683,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(10317),	-- Pattern: Pink Mageweave Shirt
 						i(5772),	-- Pattern: Red Woolen Bag
 					}),
-					n(3362, { -- Ogunaro Wolfrunner <Kennel Master>
+					n(3362, { -- Ogunaro Wounner <Kennel Master>
 						i(18796),	-- Horn of the Swift Brown Wolf
 						i(18797),	-- Horn of the Swift Timber Wolf
 						i(18798),	-- Horn of the Swift Grey Wolf

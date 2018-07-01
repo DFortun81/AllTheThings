@@ -68,7 +68,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 21359,	-- Blood Guard Gulmok
-						["breadcrumbQuestID"] = { 49532 },	-- Warchief's Command: Shadowmoon Valley!
+						["sourceQuests"] = { 49532 },	-- Warchief's Command: Shadowmoon Valley!
+						["isBreadcrumb"] = true,
 					}),
 					
 					
@@ -175,7 +176,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 21024,	-- Earthmender Torlok
-						["breadcrumbQuestID"] = { 10680, 10681 },	-- The Hand of Gul'dan (A/H)
+						["sourceQuests"] = { 10680, 10681 },	-- The Hand of Gul'dan (A/H)
+						["isBreadcrumb"] = true,
 					}),
 					
 

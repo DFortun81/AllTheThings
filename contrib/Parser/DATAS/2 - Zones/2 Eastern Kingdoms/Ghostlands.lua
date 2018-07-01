@@ -389,7 +389,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 16197,	-- Arcanist Vandril
-						["races"] = {10} -- Blood Elf
+						["races"] = {10}, -- Blood Elf
 					}),
 					q(  9329, {	-- The Forsaken
 						["groups"] = {
@@ -428,7 +428,7 @@ _.Zones =
 --[[				qh( 9529, {	-- The Stone (LEGACY?  no information on where to pick up and most recent wowhead comment speculates it has been removed)
 						["groups"] = {
 						},
-						["classes"] = {9} -- Warlock
+						["classes"] = {9}, -- Warlock
 					}),									--]]
 					qh( 9167, {	-- The Traitor's Destruction
 						["groups"] = {

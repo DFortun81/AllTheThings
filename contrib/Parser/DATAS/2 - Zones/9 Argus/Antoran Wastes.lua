@@ -899,7 +899,7 @@ _.Zones =
 							i(152912), -- Pond Nettle [Note: Fishing]
 						}),
 					},
-					["ids"] = { 3629 },
+					
 					["description"] = "|cFFFFD700Pond Nettle|r can be fished up from the fel waters of Argus.\n\n|cFFFFD700Unsullied tokens|r can drop off any mob, rare or treasure chest in the zone.\n\nTreasure items can drop from treasure chests only.",
 				}),
 				n(-74, { 	-- Zone Wide

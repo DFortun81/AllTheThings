@@ -719,7 +719,8 @@ _.Zones =
 							i(29979),	-- Netherstorm Eyepatch
 						},
 						["qg"] = 20281,	-- Drijya
-						["breadcrumbQuestID"] = { 10311 },	-- Drijya Needs Your Help
+						["sourceQuests"] = { 10311 },	-- Drijya Needs Your Help
+						["isBreadcrumb"] = true,
 					}),
 					
 					
@@ -1009,7 +1010,8 @@ _.Zones =
 							i(30515),	-- Junior Technician 3rd Grade Goggles
 						},
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
-						["breadcrumbQuestID"] = { 39201 },	-- Warchief's Command: Netherstorm!
+						["sourceQuests"] = { 39201 },	-- Warchief's Command: Netherstorm!
+						["isBreadcrumb"] = true,
 					}),
 					
 					
@@ -1074,7 +1076,8 @@ _.Zones =
 								},
 								["qg"] = 19466,	-- Exarch Orelis
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-								["breadcrumbQuestID"] = { 11038 },	-- Assist Exarch Orelis
+								["sourceQuests"] = { 11038 },	-- Assist Exarch Orelis
+								["isBreadcrumb"] = true,
 							}),
 							q(10313, {	-- Measuring Warp Energies
 								["groups"] = {

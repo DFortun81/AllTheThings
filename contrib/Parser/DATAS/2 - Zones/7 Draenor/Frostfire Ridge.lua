@@ -47,7 +47,8 @@ _.Zones =
 										["groups"] = {
 										},
 										["qg"] = 76411, -- Farseer Drek'Thar
-										["breadcrumbQuestID"] = { 33868 }, -- The Home of the Frostwolves
+										["sourceQuests"] = { 33868 }, -- The Home of the Frostwolves
+										["isBreadcrumb"] = true,
 									}),	
 									q(34402, { -- of Wolves and  Warriors	
 										["groups"] = {

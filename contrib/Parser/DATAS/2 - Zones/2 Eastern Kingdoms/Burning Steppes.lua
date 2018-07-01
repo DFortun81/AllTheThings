@@ -129,21 +129,24 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 47811,	-- John J. Keeshan
-								["breadcrumbQuestID"] = { 28666 },	-- Hero's Call: Burning Steppes!
+								["sourceQuests"] = { 28666 },	-- Hero's Call: Burning Steppes!
+								["isBreadcrumb"] = true,
 								["description"] = "This version of the quest is provided for players who DID NOT complete John J. Keeshan's questline in Redridge Mountains."
 							}),
 							qa(28416, {	-- Burning Vengeance (for players who completed Redridge Keeshan questline)
 								["groups"] = {
 								},
 								["qg"] = 47811,	-- John J. Keeshan
-								["breadcrumbQuestID"] = { 28666 },	-- Hero's Call: Burning Steppes!
+								["sourceQuests"] = { 28666 },	-- Hero's Call: Burning Steppes!
+								["isBreadcrumb"] = true,
 								["description"] = "This version of the quest is provided for players who DID complete John J. Keeshan's questline in Redridge Mountains."
 							}),
 							qh(28418, {	-- Burning Vengeance
 								["groups"] = {
 								},
 								["qg"] = 48559,	-- Ariok
-								["breadcrumbQuestID"] = { 28667 },	-- Warchief's Command: Burning Steppes!
+								["sourceQuests"] = { 28667 },	-- Warchief's Command: Burning Steppes!
+								["isBreadcrumb"] = true,
 							}),
 							qa(28177, {	-- Stocking Up
 								["groups"] = {

@@ -49,7 +49,8 @@ _.Instances =
 								i(65979),	-- Staff of the Unknown Road
 							},
 							["qg"] = 40712,	-- Mazoga's Spirit
-							["breadcrumbQuestID"] = { 25556 },	-- Into Zul'Farrak
+							["sourceQuests"] = { 25556 },	-- Into Zul'Farrak
+							["isBreadcrumb"] = true,
 						}),
 						q(27071, {	-- Wrath of the Sandfury
 							["groups"] = {

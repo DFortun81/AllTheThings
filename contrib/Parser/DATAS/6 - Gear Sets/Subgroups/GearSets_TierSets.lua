@@ -2860,7 +2860,7 @@ Notation of what is missing from Blizzard's localization
 		n(-3162, { -- Tier 19 (The Nighthold)
 			["groups"] = {
 				d(17, {  -- Raid Finder
-					["ids"] = { 3379 }, -- LFR
+					 -- 
 					["groups"] = {
 						gs(322, { -- Vestments of the Purifier
 							["groups"] = {
@@ -3033,7 +3033,7 @@ Notation of what is missing from Blizzard's localization
 					},
 				}),
 				d(14, {  -- Normal
-					["ids"] = { 1807 }, -- Normal
+					
 					["groups"] =  {
 						gs(308, { -- Vestments of the Purifier
 							["groups"] = {
@@ -3206,7 +3206,7 @@ Notation of what is missing from Blizzard's localization
 					},
 				}),
 				d(15, {  -- Heroic
-					["ids"] = { 1805 }, -- Heroic
+					
 					["groups"] =  {
 						gs(309, { -- Vestments of the Purifier
 							["groups"] = {
@@ -3379,7 +3379,7 @@ Notation of what is missing from Blizzard's localization
 					},
 				}),
 				d(16, {  -- Mythic
-					["ids"] = { 1806 }, -- Mythic
+					
 					["groups"] =  {
 						gs(311, { -- Vestments of the Purifier
 							["groups"] = {
@@ -3557,7 +3557,7 @@ Notation of what is missing from Blizzard's localization
 		n(-3161, { -- Tier 20 (Tomb of Sargeras)
 			["groups"] = {
 				d(17, {  -- Raid Finder
-					["ids"] = { 3379 }, -- LFR
+					 -- 
 					["groups"] = {
 						gs(1342, { -- Vestments of Blind Absolution
 							["groups"] = {
@@ -3718,7 +3718,7 @@ Notation of what is missing from Blizzard's localization
 					},
 				}),
 				d(14, {  -- Normal
-					["ids"] = { 1807 }, -- Normal
+					
 					["groups"] =  {
 						gs(1309, { -- Vestments of Blind Absolution
 							["groups"] = {
@@ -3879,7 +3879,7 @@ Notation of what is missing from Blizzard's localization
 					},
 				}),
 				d(15, {  -- Heroic
-					["ids"] = { 1805 }, -- Heroic
+					
 					["groups"] =  {
 						gs(1312, { -- Vestments of Blind Absolution
 							["groups"] = {
@@ -4040,7 +4040,7 @@ Notation of what is missing from Blizzard's localization
 					},
 				}),
 				d(16, {  -- Mythic
-					["ids"] = { 1806 }, -- Mythic
+					
 					["groups"] =  {
 						gs(1310, { -- Vestments of Blind Absolution
 							["groups"] = {

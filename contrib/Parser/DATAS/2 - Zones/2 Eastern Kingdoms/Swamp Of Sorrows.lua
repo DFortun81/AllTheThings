@@ -100,7 +100,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 45786,
-								["breadcrumbQuestID"] = { 28569,28570,28675,28677 },
+								["sourceQuests"] = { 28569,28570,28675,28677 },
+								["isBreadcrumb"] = true,
 							}),
 							q(27536, { -- Mostly Harmless
 								["groups"] = {
@@ -155,7 +156,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 46676,
-								["breadcrumbQuestID"] = { 27870 },
+								["sourceQuests"] = { 27870 },
+								["isBreadcrumb"] = true,
 							}),
 							qa(27822, { -- Lumbering Oafs
 								["groups"] = {
@@ -164,7 +166,8 @@ _.Zones =
 									i(64612),
 								},
 								["qg"] = 46676,
-								["breadcrumbQuestID"] = { 27870 },
+								["sourceQuests"] = { 27870 },
+								["isBreadcrumb"] = true,
 							}),
 							qa(27795, { -- Tides of Darkness
 								["groups"] = {
@@ -276,7 +279,8 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 46071,	-- Lord Itharius
-								["breadcrumbQuestID"] = { 27869 },
+								["sourceQuests"] = { 27869 },
+								["isBreadcrumb"] = true,
 							}),
 							q(27704, {	-- Legends of the Sunken Temple
 								["groups"] = {
@@ -367,7 +371,8 @@ _.Zones =
 									i(64631),
 								},
 								["qg"] = 7623,
-								["breadcrumbQuestID"] = { 27870 },
+								["sourceQuests"] = { 27870 },
+								["isBreadcrumb"] = true,
 							}),
 							qh(27856, {	-- Marking the Fallen
 								["groups"] = {

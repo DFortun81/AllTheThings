@@ -46,7 +46,7 @@ _.Instances =
 						},
 					}),
 					d(2, {		-- Heroic
-						["ids"] = { 1726 }, -- Heroic
+						
 						["groups"] = {
 							cr(117193, e(1905, {	-- Agronox
 								i(144469),
@@ -89,7 +89,7 @@ _.Instances =
 						}
 					}),
 					d(23, {		-- Mythic
-						["ids"] = { 1727 }, -- Mythic
+						
 						["groups"] = {
 							cr(117193, e(1905, {	-- Agronox
 								i(144469),

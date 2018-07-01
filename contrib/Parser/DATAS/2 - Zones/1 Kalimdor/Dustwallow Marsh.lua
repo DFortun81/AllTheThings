@@ -140,7 +140,8 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 4926,	-- Krog
-						["breadcrumbQuestID"] = { 28554 },	-- Warchief's Command: Dustwallow Marsh!
+						["sourceQuests"] = { 28554 },	-- Warchief's Command: Dustwallow Marsh!
+						["isBreadcrumb"] = true,
 					}),
 					q( 27408, {	-- Banner of the Stonemaul
 						["g"] = {
@@ -364,7 +365,8 @@ _.Zones =
 							i(131648),	-- Frog Stompers
 						},
 						["qg"] = 4792,	-- "Swamp Eye" Jarl
-						["breadcrumbQuestID"] = { 27215, 27182 },	-- The Hermit of Swamplight Manor (A) / Witch Hill (H)
+						["sourceQuests"] = { 27215, 27182 },	-- The Hermit of Swamplight Manor (A) / Witch Hill (H)
+						["isBreadcrumb"] = true,
 					}),
 					qa(27248, {	-- Mission to Mudsprocket
 						["g"] = {
@@ -495,7 +497,8 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 23797,	-- Moxie Steelgrille
-						["breadcrumbQuestID"] = { 27346 },	-- The Zeppelin Crash
+						["sourceQuests"] = { 27346 },	-- The Zeppelin Crash
+						["isBreadcrumb"] = true,
 					}),
 					qh(27295, {	-- Seek Out Tabetha
 						["g"] = {
@@ -658,7 +661,7 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 4501,	-- Draz'Zilb
-						-- ["isBreadcrumb"] = true,	-- for "Marsh Frog Legs"
+						["isBreadcrumb"] = true,	-- for "Marsh Frog Legs"
 					}),
 					o( 20985, {	-- Loose Dirt
 						qh(27244),	-- The Lost Report
@@ -752,14 +755,16 @@ _.Zones =
 						["g"] = {
 						},
 						["qg"] = 23566,	-- Calia Hastings
-						["breadcrumbQuestID"] = { 28552 },	-- Hero's Call: Dustwallow Marsh
+						["sourceQuests"] = { 28552 },	-- Hero's Call: Dustwallow Marsh
+						["isBreadcrumb"] = true,
 					}),
 					qa( 6624, {	-- Triage
 						["g"] = {
 						},
 						["qg"] = 12939,	-- Doctor Gustaf VanHowzen
 						["requiredSkill"] = 129,	-- First Aid
-						["breadcrumbQuestID"] = { 6625 },	-- Alliance Trauma
+						["sourceQuests"] = { 6625 },	-- Alliance Trauma
+						["isBreadcrumb"] = true,
 					}),
 					qh( 9437, {	-- Twilight of the Dawn Runner
 						["g"] = {

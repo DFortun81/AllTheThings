@@ -1876,14 +1876,14 @@ _.Zones =
 							i(141868),
 						},
 						["questID"] = 42505,
-						["ids"] = {1794},
+						
 					}), 
 					n(90244, { 		-- Arcavellus
 						["groups"] = {
 							i(129085),
 						},
 						["questID"] = 37932,	
-						["ids"] = {1794},
+						
 						["description"] = "|cff66ccffClick Unbound Rift in Ley-Ruins of Zarkhenar to start event. Arcavellus will spawn after a few waves of enemies.|r",
 					}), 
 					n(91187, { 		-- Beacher
@@ -1891,28 +1891,28 @@ _.Zones =
 							i(129067),
 						},
 						["questID"] = 38238,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(107327, { 	-- Bilebrain
 						["groups"] = {
 							i(129079),
 						},
 						["questID"] = 42417,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(107127, { 	-- Brawlgoth
 						["groups"] = {
 							i(129086),
 						},
 						["questID"] = 42450,	
-						["ids"] = {1794},		
+								
 					}), 
 					n(91100, { 		-- Brogozog
 						["groups"] = {	
 							i(129068),
 						},
 						["questID"] = 38212,	
-						["ids"] = {1794},
+						
 						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
 					}),
 					n(107105, { 	-- Broodmother Lizax
@@ -1920,42 +1920,42 @@ _.Zones =
 							i(141869),
 						},
 						["questID"] = 44670,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(91289, { 		-- Cailyn Paledoom 
 						["groups"] = {
 							i(129063),
 						},
 						["questID"] = 38268,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(89846, { 		-- Captain Volo'ren
 						["groups"] = {	
 							i(129066),
 						},
 						["questID"] = 37821,	
-						["ids"] = {1794},	
+							
 					}),				
 					n(107266, { 	-- Commander Soraax
 						["groups"] = {	
 							i(141871),
 						},
 						["questID"] = 44673,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(90057, { 		-- Daggerbeak
 						["groups"] = {	
 							i(129084),
 						},
 						["questID"] = 37869,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(105938, { 	-- Felwing (Felbats)
 						["groups"] = {
 							i(129087),
 						},
 						["questID"] = 42069,	
-						["ids"] = {1794},
+						
 						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
 					}), 
 					n(89884, { 		-- Flog the Captain-Eater
@@ -1963,14 +1963,14 @@ _.Zones =
 							i(129090),
 						},
 						["questID"] = 37824,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(109564, { 	-- Glimmering Treasure Chest
 						["groups"] = {					
 							i(129078),
 						},
 						["quests"] = 37649,	
-						["ids"] = {1794},
+						
 						["displayID"] = 71077,
 						["modelScale"] = 1.5,
 						["description"] = "|cff66ccffThis chest is underground in the Oceanus Cove caves on the ground of gold coins next to Lady Sssurine.|r",
@@ -1980,14 +1980,14 @@ _.Zones =
 							i(141873),
 						},
 						["questID"] = 42286,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(90803, { 		-- Infernal Lord
 						["groups"] = {	
 							i(129083),
 						},
 						["questID"] = 38037,	
-						["ids"] = {1794},
+						
 						["description"] = "|cff66ccffClick Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.|r",
 					}), 
 					n(107269, { 	-- Inquisitor Tivos
@@ -1995,63 +1995,63 @@ _.Zones =
 							i(141874),
 						},
 						["questID"] = 42376,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(90217, { 		-- Normantis the Deposed
 						["groups"] = {
 							i(129061),
 						},
 						["questID"] = 37928,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(90901, { 		-- Pridelord Meowl
 						["groups"] = {
 							i(138395),
 						},
 						["questID"] = 38061,	
-						["ids"] = {1794},	
+							
 					}),
 					n(109504, { 	-- Ragemaw
 						["groups"] = {
 							i(129075),
 						},
 						["questID"] = 44108,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(89016, { 		-- Ravyn-Drath
 						["groups"] = {
 							i(129080),
 						},
 						["questID"] = 37537,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(90505, { 		-- Syphonus
 						["groups"] = {
 							i(129064),
 						},
 						["questID"] = 37989,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(108136, { 	-- The Muscle
 						["groups"] = {	
 							i(129081),
 						},
 						["questID"] = 44671,	
-						["ids"] = {1794},	
+							
 					}),
 					n(89850, { 		-- The Oracle
 						["groups"] = {	
 							i(129065),
 						},
 						["questID"] = 37822,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(91113, { 		-- Tide Behemoth
 						["groups"] = {	
 							i(129062),
 						},
 						["questID"] = 38217,	
-						["ids"] = {1794},	
+							
 					}),
 						n(97116, { -- Treasure Chest
                         ["groups"] = {
@@ -2065,21 +2065,21 @@ _.Zones =
 							i(129082),
 						},
 						["questID"] = 37726,	
-						["ids"] = {1794},	
+							
 					}),
 					n(107113, { 	-- Vorthax
 						["groups"] = {
 							i(141875),
 						},
 						["questID"] = 42280,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(90164, { 		-- Warbringer Mox'na
 						["groups"] = {	
 							i(129069),
 						},
 						["questID"] = 37909,	
-						["ids"] = {1794},	
+							
 					}), 
 --[[	
 	--				n(109641, { 	-- Arcanor Prime }), 

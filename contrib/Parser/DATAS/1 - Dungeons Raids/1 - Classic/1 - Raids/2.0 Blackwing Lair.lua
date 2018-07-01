@@ -6,49 +6,73 @@ _.Instances = { tier(1, {	-- Classic
 	inst(742, {	-- Blackwing Lair
 		["groups"] = {
 			n(0, {	-- Zone Drop
-				n(12457, {	-- Blackwing Spellbinder
-					dr(0.4, i(19434)),	-- Band of Dark Dominion
-					dr(0.5, i(19362)),	-- Doom's Edge
-					dr(0.9, i(19435)),	-- Essence Gatherer
-				}),
-				n(13996, {	-- Blackwing Technician
-					dr(7.0, i(18562)),	-- Elementium Ingot
-				}),
-				n(12459, {	-- Blackwing Warlock
-					dr(0.6, i(19434)),	-- Band of Dark Dominion
-					dr(0.6, i(19362)),	-- Doom's Edge
-					dr(0.4, i(19435)),	-- Essence Gatherer
-				}),
-				n(12467, {	-- Death Talon Captain
-					dr(3.0, i(19437)),	-- Boots of Pure Thought
-					dr(4.0, i(19436)),	-- Cloak of Dragonic Might
-					dr(3.0, i(19358)),	-- Draconic Maul
-				}),
-				n(12463, {	-- Death Talon Flamescale
-					dr(1.7, i(19437)),	-- Boots of Pure Thought
-					dr(0.9, i(19436)),	-- Cloak of Dragonic Might
-					dr(1.2, i(19358)),	-- Draconic Maul
-				}),
-				n(12461, {	-- Death Talon Overseer
-					dr(0.7, i(19434)),	-- Band of Dark Dominion
-					dr(0.8, i(19362)),	-- Doom's Edge
-					dr(0.6, i(19435)),	-- Essence Gatherer
-				}),
-				n(12464, {	-- Death Talon Seether
-					dr(1.7, i(19437)),	-- Boots of Pure Thought
-					dr(1.8, i(19436)),	-- Cloak of Dragonic Might
-					dr(1.3, i(19358)),	-- Draconic Maul
-				}),
-				n(12460, {	-- Death Talon Wyrmguard
-					dr(4.0, i(19354)),	-- Draconic Avenger
-					dr(4.0, i(19439)),	-- Interlaced Shadow Jerkin
-					dr(4.0, i(19438)),	-- Ringo's Blizzard Boots
-				}),
-				n(12465, {	-- Death Talon Wyrmkin
-					dr(1.7, i(19437)),	-- Boots of Pure Thought
-					dr(1.2, i(19436)),	-- Cloak of Dragonic Might
-					dr(1.4, i(19358)),	-- Draconic Maul
-				}),
+				["groups"] = {
+					n(13996, {	-- Blackwing Technician
+						dr(7.0, i(18562)),	-- Elementium Ingot
+					}),
+					n(12460, {	-- Death Talon Wyrmguard
+						dr(4.0, i(19354)),	-- Draconic Avenger
+						dr(4.0, i(19439)),	-- Interlaced Shadow Jerkin
+						dr(4.0, i(19438)),	-- Ringo's Blizzard Boots
+					}),
+					i(19434, {	-- Band of Dark Dominion
+						["groups"] = {
+						},
+						["crs"] = {
+							12457, -- Blackwing Spellbinder
+							12459, -- Blackwing Warlock
+							12461, -- Death Talon Overseer
+						},
+					}),					
+					i(19362, {	-- Doom's Edge
+						["groups"] = {
+						},
+						["crs"] = {
+							12457, -- Blackwing Spellbinder
+							12459, -- Blackwing Warlock
+							12461, -- Death Talon Overseer
+						},
+					}),					
+					i(19435, {	-- Essence Gatherer
+						["groups"] = {
+						},
+						["crs"] = {
+							12457, -- Blackwing Spellbinder
+							12459, -- Blackwing Warlock
+							12461, -- Death Talon Overseer
+						},
+					}),
+					i(19437, {	-- Boots of Pure Thought
+						["groups"] = {
+						},
+						["crs"] = {
+							12467, -- Death Talon Captain
+							12463, -- Death Talon Flamescale
+							12464, -- Death Talon Seether
+							12465, -- Death Talon Wyrmkin
+						},
+					}),
+					i(19436, {	-- Cloak of Dragonic Might
+						["groups"] = {
+						},
+						["crs"] = {
+							12467, -- Death Talon Captain
+							12463, -- Death Talon Flamescale
+							12464, -- Death Talon Seether
+							12465, -- Death Talon Wyrmkin
+						},
+					}),
+					i(19358, {	-- Draconic Maul
+						["groups"] = {
+						},
+						["crs"] = {
+							12467, -- Death Talon Captain
+							12463, -- Death Talon Flamescale
+							12464, -- Death Talon Seether
+							12465, -- Death Talon Wyrmkin
+						},
+					}),
+				},
 			}),
 			e( 1529, {	-- Razoregore the Untamed
 				["groups"] = {
@@ -274,34 +298,61 @@ _.Instances = { tier(1, {	-- Classic
 					i(19382),	-- Pure Elementium Band
 					i(19379),	-- Neltharion's Tear
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
-					dr(4.00, i(13036)),	-- Assassination Blade
-					dr(6.00, i(13126)),	-- Battlecaller Gauntlets
-					dr(7.00, i(13008)),	-- Dalewind Trousers
-					dr(4.00, i(13120)),	-- Deepfury Bracers
-					dr(3.00, i(13075)),	-- Direwing Legguards
-					dr(2.00, i(13053)),	-- Doombringer
-					dr(9.00, i(13013)),	-- Elder Wizard's Mantle
-					dr(5.00, i(13125)),	-- Elven Chain Boots
-					dr(3.00, i( 2564)),	-- Elven Spirit Claws
-					dr(5.00, i(13113)),	-- Feathermoon Headdress
-					dr(5.00, i(13077)),	-- Girdle of Uther
-					dr(4.00, i(13040)),	-- Heartseeking Crossbow
-					dr(0.90, i( 4696)),	-- Lapidis Tankard of Tidesippe
-					dr(3.00, i(13003)),	-- Lord Alexander's Battle Axe
-					dr(8.00, i(13007)),	-- Mageflame Cloak
-					dr(11.0, i(13107)),	-- Magiskull Cuffs
-					dr(2.00, i(13001)), -- Maiden's Circle
-					dr(3.00, i(13073)),	-- Mugthol's Helm
-					dr(4.00, i(13111)),	-- Sandals of the Insurgent
-					dr(5.00, i( 5267)),	-- Scarlet Kris
-					dr(7.00, i(13144)),	-- Serenity Belt
-					dr(4.00, i(13146)),	-- Shell Launcher Shotgun
-					dr(3.00, i(13072)),	-- Stonegrip Gauntlets
-					dr(3.00, i( 6622)),	-- Sword of Zeal
-					dr(1.90, i(13060)), -- The Needler
-					dr(5.00, i(13047)),	-- Twig of the World Tree
-					dr(5.00, i(13130)),	-- Windrunner Legguards
-					
+					i(1203),	-- Aegis of Stormwind
+					dr(2.0, i(13036)),	-- Assassination Blade
+					i(13096),	-- Band of the Hierophant
+					i(13030),	-- Basilisk Bone
+					dr(4.0, i(13126)),	-- Battlecaller Gauntlets
+					i(13046),	-- Blanchard's Stout
+					i(13009),	-- Cow King's Hide
+					dr(8.0, i(13008)),	-- Dalewind Trousers
+					dr(4.0, i(13120)),	-- Deepfury Bracers
+					dr(3.0, i(13075)),	-- Direwing Legguards
+					dr(4.0, i(13053)),	-- Doombringer
+					i(13133),	-- Drakesfire Epaulets
+					i(13123),	-- Dreamwalker Armor
+					i(9402),	-- Earthborn Kilt
+					dr(7.0, i(13013)),	-- Elder Wizard's Mantle
+					dr(6.0, i(13125)),	-- Elven Chain Boots
+					dr(3.0, i( 2564)),	-- Elven Spirit Claws
+					i(5266),	-- Eye of Adaegus
+					dr(4.0, i(13113)),	-- Feathermoon Headdress
+					i(13083),	-- Garrett Family Crest
+					dr(4.0, i(13077)),	-- Girdle of Uther
+					i(13139),	-- Guttbuster
+					dr(2.0, i(13040)),	-- Heartseeking Crossbow
+					i(13085),	-- Horizon Choker
+					i(13067),	-- Hydralick Armor
+					i(13002),	-- Lady Alizabeth's Pendant
+					dr(1.0, i( 4696)),	-- Lapidis Tankard of Tidesippe
+					dr(2.0, i(13003)),	-- Lord Alexander's Battle Axe
+					i(13135),	-- Lordly Armguards
+					dr(8.0, i(13007)),	-- Mageflame Cloak
+					dr(8.0, i(13107)),	-- Magiskull Cuffs
+					dr(1.3, i(13001)),	-- Maiden's Circle
+					i(13006),	-- Mass of McGowan
+					i(13091),	-- Medallion of Grand Marshal Morris
+					dr(4.0, i(13073)),	-- Mugthol's Helm
+					i(1973),	-- Orb of Deception
+					dr(4.0, i(13111)),	-- Sandals of the Insurgent
+					i(13070),	-- Sapphiron's Scale Boots
+					dr(3.0, i( 5267)),	-- Scarlet Kris
+					i(13015),	-- Serathil
+					dr(7.0, i(13144)),	-- Serenity Belt
+					i(13118),	-- Serpentine Sash
+					dr(3.0, i(13146)),	-- Shell Launcher Shotgun
+					i(7734),	-- Six Demon Bag
+					i(13116),	-- Spaulders of the Unseen
+					i(13000),	-- Staff of Hale Magefire
+					dr(3.0, i(13072)),	-- Stonegrip Gauntlets
+					dr(3.0, i( 6622)),	-- Sword of Zeal
+					dr(3.0, i(13060)),	-- The Needler
+					i(13004),	-- Torch of Austen
+					dr(2.0, i(13047)),	-- Twig of the World Tree
+					i(11302),	-- Uther's Strength
+					i(13065),	-- Wand of Allistarj
+					dr(5.0, i(13130)),	-- Windrunner Legguards
+					i(13066),	-- Wyrmslayer 
 				 -- PROFESSIONS
 					dr(0.2, i(14511)),	-- Pattern: Gloves of Spell Mastery
 					dr(0.7, i(14509)),	-- Pattern: Mooncloth Circlet

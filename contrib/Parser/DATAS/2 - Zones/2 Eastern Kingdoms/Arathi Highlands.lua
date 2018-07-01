@@ -177,7 +177,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 41949,	-- Dark Ranger Alina
-						["breadcrumbQuestID"] = { 28619 },	-- Warchief's Command: Arathi Highlands!
+						["sourceQuests"] = { 28619 },	-- Warchief's Command: Arathi Highlands!
+						["isBreadcrumb"] = true,
 					}),
 					qa(26117, {	-- For Southshore
 						["groups"] = {
@@ -234,7 +235,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 2700,	-- Captain Nials
-						["breadcrumbQuestID"] = { 28573 },	-- Hero's Call: Arathi Highlands!
+						["sourceQuests"] = { 28573 },	-- Hero's Call: Arathi Highlands!
+						["isBreadcrumb"] = true,
 					}),
 					qa(26113, {	-- Quae and Kinelory
 						["groups"] = {
@@ -326,7 +328,8 @@ _.Zones =
 						q(26039, {	-- The Princess Trapped
 							["groups"] = {
 							},
-							["breadcrumbQuestID"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
+							["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
+							["isBreadcrumb"] = true,
 						}),
 					}),
 					qa(26049, {	-- The Princess Unleashed
@@ -406,7 +409,8 @@ _.Zones =
 						["qg"] = 12920,	--	Doctor Gregory Victor
 						["description"] = "This quest requires a skill of 225 in First Aid.",
 						["requiredSkill"] = 356,	-- First Aid
-						["breadcrumbQuestID"] = { 6623 },	-- Horde Trauma
+						["sourceQuests"] = { 6623 },	-- Horde Trauma
+						["isBreadcrumb"] = true,
 					}),
 					qh(26033, {	-- Trol'kalar
 						["groups"] = {

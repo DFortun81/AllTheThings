@@ -1115,21 +1115,21 @@ _.Zones =
 							i(129048),
 						},
 						["questID"] = 38431,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(92685, { 		-- Captain Brvet
 						["groups"] = {
 							i(129123),
 						},
 						["questID"] = 38642,	
-						["ids"] = {1794},
+						
 					}), 
 					nh(92343, { 	-- Captain Tomas (Mother Clacker)
 						["groups"] = {
 							i(129040),
 						},
 						["questID"] = 38422,	
-						["ids"] = {1794},
+						
 						["description"] = "Speak to Captain Tomas to summon Mother Clacker. Alliance can tag Mother Clacker after it is summoned.",
 					}),
 					h({
@@ -1150,7 +1150,7 @@ _.Zones =
 							i(129144),
 						},
 						["questID"] = 39048,	
-						["ids"] = {1794},
+						
 					}),
 					a({
 						["vignetteID"] = 38630,	-- Horde Kill Squad (Alliance Only)
@@ -1170,35 +1170,35 @@ _.Zones =
 							i(130134),
 						},
 						["questID"] = 43343,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(98188, { 		-- Egyl the Enduring
 						["groups"] = {	
 							i(132898),
 						},
 						["questID"] = 40068,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(91529, { 		-- Glimar Ironfist
 						["groups"] = {
 							i(129291),
 						},
 						["questID"] = 38333,	
-						["ids"] = {1794},
+						
 					}), 
 					n(98503, { 		-- Grrvrgull the Conqueror
 						["groups"] = {	
 							i(138421),
 						},
 						["questID"] = 40113,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(107926, { 		-- Hannval the Butcher
 						["groups"] = {	
 							i(138417),
 						},
 						["questID"] = 42591,	
-						["ids"] = {1794},	
+							
 					}),
 					a({
 						["vignetteID"] = 38625,	-- Hook and Sinker (Alliance Only)
@@ -1215,28 +1215,28 @@ _.Zones =
 							i(129037),
 						},
 						["questID"] = 38712,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(90139, { 		-- Inquisitor Ernstenbok
 						["groups"] = {	
 							i(140686), 
 						},
 						["questID"] = 37908,	
-						["ids"] = {1794},
+						
 					}), 
 					n(94413, { 		-- Isel the Hammer
 						["groups"] = {
 							i(129133),
 						},
 						["questID"] = 39120,	
-						["ids"] = {1794},
+						
 					}), 
 					n(98421, { 		-- Kottr Vondyr
 						["groups"] = {	
 							i(138419),
 						},
 						["questID"] = 40109,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(93371, { 		-- Mordvigbjorn
 						["groups"] = {	
@@ -1244,21 +1244,21 @@ _.Zones =
 							i(129035),	-- Indomitable Bearskin Cloak
 						},
 						["questID"] = 38837,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(110363, { 		-- Roteye
 						["groups"] = {	
 							i(139387),
 						},
 						["questID"] = 43342,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(107487, { 		-- Starbuck
 						["groups"] = {	
 							i(130132),
 						},
 						["questID"] = 42437,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(91795, { 		-- Stormwing Matriarch
 						["groups"] = {	
@@ -1266,21 +1266,21 @@ _.Zones =
 							i(129110),
 						},
 						["questID"] = 38423,	
-						["ids"] = {1794},	
+							
 					}), 
 					n(91892, { 		-- Thane Irglov the Merciless
 						["groups"] = {
 							i(129113)	-- Faintly Glowing Flagon of Mead
 						},
 						["questID"] = 38424,	
-						["ids"] = {1794},
+						
 					}), 
 					n(92763, { 		-- The Nameless King
 						["groups"] = {	
 							i(129041),
 						},
 						["questID"] = 38685,	
-						["ids"] = {1794},
+						
 						["description"] = "|cff66ccffClick on the offering shrine that spawns in front of the sign to summon The Nameless King.|r",
 					}), 
 					n(93401, { 		-- Urgev the Flayer
@@ -1288,14 +1288,14 @@ _.Zones =
 							i(129219),
 						},
 						["questID"] = 38847,	
-						["ids"] = {1794},
+						
 					}), 
 					n(92152, { 		-- Whitewater Typhoon
 						["groups"] = {	
 							i(138418),
 						},
 						["questID"] = 38472,	
-						["ids"] = {1794},	
+							
 					}),
 --[[
 				--	n(108885, { 	-- Aegir Wavecrusher	}), 
@@ -1612,7 +1612,7 @@ _.Zones =
 								i(132827), -- Gaze of Helya	
 								i(132824), -- Helheim Waylight	
 								i(132828), -- Helhound Core	
-								i(132829), -- Silver of Helfrost	
+								i(132829), -- Silver of Heost	
 								i(132825), -- Val'kyra Boon	
 								i(132834), -- Wailing Wings	
 								i(132831), -- Worthy Soul	

@@ -65,7 +65,7 @@ _.Instances =
 									["questID"] = 32711,	-- Agony and Anima
 									["qg"] = 70243,	-- Quest Giver: Archritualist Kelada
 									["collectible"] = false,
-									["weekly"] = true,
+									["isWeekly"] = true,
 									["groups"] = {
 										i(97153),	-- Spoils of the Thunder King
 									},
@@ -74,7 +74,7 @@ _.Instances =
 									["questID"] = 32716,	-- Eyes of the Thunder King
 									["qgs"] = {70238, 70249},	-- Quest Giver: Focused Eye / Unblinking Eye
 									["collectible"] = false,
-									["weekly"] = true,
+									["isWeekly"] = true,
 									["groups"] = {
 										i(97153),	-- Spoils of the Thunder King
 									},
@@ -83,7 +83,7 @@ _.Instances =
 									["questID"] = 32715,	-- Requiem for a Queen
 									["qg"] = 70440,	-- Quest Giver: Monara <The Last Queen>
 									["collectible"] = false,
-									["weekly"] = true,
+									["isWeekly"] = true,
 									["groups"] = {
 										i(97153),	-- Spoils of the Thunder King
 									},
@@ -92,7 +92,7 @@ _.Instances =
 									["questID"] = 32713,	-- Rocks Fall, People Die
 									["qg"] = 70430,	-- Quest Giver: Rocky Horror
 									["collectible"] = false,
-									["weekly"] = true,
+									["isWeekly"] = true,
 									["groups"] = {
 										i(97153),	-- Spoils of the Thunder King
 									},
@@ -101,7 +101,7 @@ _.Instances =
 									["questID"] = 32710,	-- Something Fouls is Afoot
 									["qg"] = 70429,	-- Quest Giver: Flesh'rok the Diseased <Primordial Saurok Horror>
 									["collectible"] = false,
-									["weekly"] = true,
+									["isWeekly"] = true,
 									["groups"] = {
 										i(97153),	-- Spoils of the Thunder King
 									},
@@ -110,7 +110,7 @@ _.Instances =
 									["questID"] = 32714,	-- Taming the Tempest
 									["qg"] = 70276,	-- Quest Giver: No'ku Stormsayer <Lord of Tempest>
 									["collectible"] = false,
-									["weekly"] = true,
+									["isWeekly"] = true,
 									["groups"] = {
 										i(97153),	-- Spoils of the Thunder King
 									},
@@ -119,7 +119,7 @@ _.Instances =
 									["questID"] = 32712,	-- Zao'cho the Wicked
 									["qg"] = 69843,	-- Quest Giver: Zao'cho <The Emperor's Shield>
 									["collectible"] = false,
-									["weekly"] = true,
+									["isWeekly"] = true,
 									["groups"] = {
 										i(97153),	-- Spoils of the Thunder King
 									},

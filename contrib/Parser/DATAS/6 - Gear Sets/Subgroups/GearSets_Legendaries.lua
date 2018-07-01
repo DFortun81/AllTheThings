@@ -420,7 +420,7 @@ _.GearSets =
 				i(154172), -- Aman'Thul's Vision
 				i(144259), -- Kil'jaeden's Burning Wish
 				i(132444), -- Prydaz, Xavric's Magnum Opus
-				i(132369), -- Wilfred's Sigil of Superior Summoning
+				i(132369), -- Wied's Sigil of Superior Summoning
 				i(132378), -- Sacrolash's Dark Strike
 				i(132460), -- Alythess's Pyrogenics
 				i(151649), -- Soul of the Netherlord

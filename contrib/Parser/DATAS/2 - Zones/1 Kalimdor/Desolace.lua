@@ -183,7 +183,8 @@ _.Zones =
 							i(55958),   -- Orca-Tooth Ring
 						},
 						["qg"] = 12031,	-- Mai'Lahii
-						["breadcrumbQuestID"] = { 14337 },	-- Shadowprey Village
+						["sourceQuests"] = { 14337 },	-- Shadowprey Village
+						["isBreadcrumb"] = true,
 					}),
 					q(5501, {	-- Bone Collector
 						["groups"] = {
@@ -271,7 +272,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 4498,	-- Maurin Bonesplitter
-						["breadcrumbQuestID"] = { 14338 },	-- Ghost Walker Post
+						["sourceQuests"] = { 14338 },	-- Ghost Walker Post
+						["isBreadcrumb"] = true,
 					}),
 					q(14246, {	-- Early Adoption
 						["groups"] = {
@@ -504,7 +506,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 35286,	-- Furien
-						["breadcrumbQuestID"] = { 28548 },	-- Warchief's Command: Desolace!
+						["sourceQuests"] = { 28548 },	-- Warchief's Command: Desolace!
+						["isBreadcrumb"] = true,
 					}),
 					q(14327, {	-- My Word is My Bond (awarded "Karnum's Glade" criteria)
 						["groups"] = {
@@ -593,7 +596,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 36410,	-- Officer Jankie
-						["breadcrumbQuestID"] = { 28531 },	-- Hero's Call: Desolace!
+						["sourceQuests"] = { 28531 },	-- Hero's Call: Desolace!
+						["isBreadcrumb"] = true,
 					}),
 					q(14301, { 	-- Return and Report
 						["groups"] = {
@@ -665,7 +669,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
-						["breadcrumbQuestID"] = { 14365, 14255 },	-- Ethel Rethor (A, H versions)
+						["sourceQuests"] = { 14365, 14255 },	-- Ethel Rethor (A, H versions)
+						["isBreadcrumb"] = true,
 					}),
 					q(14292, {	-- The Enemy of Our Enemy
 						["groups"] = {

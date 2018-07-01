@@ -10,7 +10,7 @@ _.Instances =
 				["groups"] = {
 					d(1, {		-- Normal
 						["modID"] = 18,
-						["ids"] = { 519 }, -- Normal
+						
 						["groups"] = {
 							cr(81305, e(1235, {	-- Fleshrender Nok'gar
 								i(110055),	-- Gutwrench Goreaxe
@@ -170,7 +170,7 @@ _.Instances =
 						},
 					}),
 					d(2, {		-- Heroic
-						["ids"] = { 524 }, -- Heroic
+						
 						["lvl"] = 100,
 						["groups"] = {
 							n(-17, {	-- Quests 		
@@ -336,7 +336,7 @@ _.Instances =
 						},
 					}),
 					d(23, {		-- Mythic
-						["ids"] = { 642 }, -- Mythic
+						
 						["lvl"] = 100,
 						["groups"] = {
 							cr(81305, e(1235, {	-- Fleshrender Nok'gar

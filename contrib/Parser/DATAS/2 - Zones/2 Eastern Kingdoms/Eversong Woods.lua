@@ -91,7 +91,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15399,	-- Lieutenant Dawnrunner
-						["breadcrumbQuestID"] = { 9359 },	-- Farstrider Retreat
+						["sourceQuests"] = { 9359 },	-- Farstrider Retreat
+						["isBreadcrumb"] = true,
 					}),
 					i( 23249, {	-- Amani Invasion Plans
 						qh(9360, {	-- Amani Invasion
@@ -175,7 +176,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15924,	-- Apprentice Loralthalis
-						["breadcrumbQuestID"] = { 8888 },	-- The Magister's Apprentice
+						["sourceQuests"] = { 8888 },	-- The Magister's Apprentice
+						["isBreadcrumb"] = true,
 					}),
 					qh( 9252, {	-- Defending Fairbreeze Village
 						["groups"] = {
@@ -347,7 +349,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15939,	-- Ranger Degolien
-						["breadcrumbQuestID"] = { 9256 },	-- Fairbreeze Village
+						["sourceQuests"] = { 9256 },	-- Fairbreeze Village
+						["isBreadcrumb"] = true,
 					}),
 					q(  9134, {	-- Skymistress Gloaming
 						["groups"] = {
@@ -360,13 +363,15 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 15301,	-- Outrunner Alarion
-						["breadcrumbQuestID"] = { 8347 },	-- Aiding the Outrunners (BLOOD ELF ONLY)
+						["sourceQuests"] = { 8347 },	-- Aiding the Outrunners (BLOOD ELF ONLY)
+						["isBreadcrumb"] = true,
 					}),
 					qh( 9062, {	-- Soaked Pages
 						["groups"] = {
 						},
 						["qg"] = 15945,	-- Apprentice Meledor
-						["breadcrumbQuestID"] = { 9035 },	-- Roadside Ambush
+						["sourceQuests"] = { 9035 },	-- Roadside Ambush
+						["isBreadcrumb"] = true,
 						["description"] = "If you are working towards Loremaster, make sure you pick up Roadside Ambush before doing this quest - it counts toward the achievement and is unavailable after turning in Soaked Pages.",
 					}),
 					qh( 9066, {	-- Swift Discipline
@@ -396,7 +401,8 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 16196,	-- Apothecary Thedra
-						["breadcrumbQuestID"] = { 9144 },	-- Missing in the Ghostlands
+						["sourceQuests"] = { 9144 },	-- Missing in the Ghostlands
+						["isBreadcrumb"] = true,
 					}),
 --[[					
 					q( 14171, {	-- The Grateful Dead (HOLIDAY! Day of the Dead)
