@@ -26,7 +26,7 @@ _.WorldDrops =
 					i(15238),	-- Warlord's Axe
 					i(15239),	-- Felstone Reaver
 					i(15240),	-- Demon's Claw
-					i(1602),	-- Sickle Axe
+					un(7, i(1602)),	-- Sickle Axe
 					i(1927),	-- Deadmines Cleaver
 					i(19921),	-- Zulian Hacker
 					i(1994),	-- Ebonclaw Reaver
@@ -162,7 +162,7 @@ _.WorldDrops =
 					i(15242),	-- Honed Stiletto
 					i(15243),	-- Deadly Kris
 					i(15244),	-- Razor Blade
-					i(15245),	-- Vorpal Dagger
+					un(7, i(15245)),	-- Vorpal Dagger
 					i(15246),	-- Demon Blade
 					i(15247),	-- Bloodstrike Dagger
 					i(1917),	-- Jeweled Dagger
@@ -193,7 +193,7 @@ _.WorldDrops =
 					un(7, i(4449)),	-- Naraxis' Fang
 					un(7, i(4454)), -- Talon of Vultros
 					i(4571),	-- War Knife
-					i(5112),	-- Ritual Blade
+					un(7, i(5112)),	-- Ritual Blade
 					i(5267),	-- Scarlet Kris
 					i(5616),	-- Gutwrencher
 					i(5742),	-- Gemstone Dagger
@@ -305,13 +305,13 @@ _.WorldDrops =
 					i(4837),	-- Strength of Will
 					i(4838),	-- Orb of Power
 					i(5028),	-- Lord Sakrasis' Scepter
-					i(5183),	-- Pulsating Hydra Heart
+					un(7, i(5183)),	-- Pulsating Hydra Heart
 					i(7554),	-- Willow Branch
 					i(7555),	-- Regal Star
 					i(7556),	-- Twilight Orb
 					i(7557),	-- Gossamer Rod
 					i(7558),	-- Shimmering Stave
-					i(7559),	-- Runic Cane
+					un(7, i(7559)),	-- Runic Cane
 					i(7608),	-- Seer's Fine Stein
 					i(7609),	-- Elder's Amber Stave
 					i(7610),	-- Aurora Sphere
@@ -758,7 +758,7 @@ _.WorldDrops =
 					i(4567),	-- Merc Sword
 					i(4817),	-- Blessed Claymore
 					i(4818),	-- Executioner's Sword
-					i(5182),	-- Shiver Blade
+					un(7, i(5182)),	-- Shiver Blade
 					i(647),		-- Destiny
 					i(8178),	-- Training Sword
 					i(8199),	-- Battlefield Destroyer

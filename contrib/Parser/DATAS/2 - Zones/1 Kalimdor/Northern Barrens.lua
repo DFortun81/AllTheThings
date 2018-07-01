@@ -902,7 +902,7 @@ _.Zones =
 						dr(	1	, i(	9765	)), --	Cadet Vest
 						dr(	1	, i(	9749	)), --	Simple Blouse
 						nld({     -- Legacy
-							i(7559),	-- Runic Cane
+							un(7, i(7559)),	-- Runic Cane
 						}),		
 					}), 
 					n(5865, { 		-- Dishu
@@ -956,8 +956,8 @@ _.Zones =
 						dr(	1.2	, i(	4768	)), --	Adept's Gloves
 						dr(	1	, i(	4771	)), --	Harvest Cloak
 						nld({     -- Legacy
-							i(4768), 	-- Adept's Gloves
-							i(4771),	-- Harvest Cloak
+							un(7, i(4768)), -- Adept's Gloves
+							un(7, i(4771)),	-- Harvest Cloak
 						}),		
 					}), 
 					n(5836, { 		-- Engineer Whirleygig
@@ -1060,8 +1060,8 @@ _.Zones =
 						dr(	1.2	, i(	9788	)), --	Raider's Belt
 						dr(	1.1	, i(	9766	)), --	Greenweave Sash
 						nld({     -- Legacy
-							i(5183),	-- Pulsating Hydra Heart
-							i(5182), 	-- Shiver Blade
+							un(7, i(5183)),	-- Pulsating Hydra Heart
+							un(7, i(5182)), -- Shiver Blade
 						}),		
 					}), 
 					n(5828, { 		-- Humar the Pridelord
@@ -1118,8 +1118,8 @@ _.Zones =
 						dr(	1	, i(	6564	)), --	Shimmering Cloak
 						dr(	1	, i(	9787	)), --	Raider's Gauntlets	
 						nld({     -- Legacy
-							i(5111),	-- Rathorian's Cape		
-							i(5112), 	-- Ritual Blade
+							un(7, i(5111)),	-- Rathorian's Cape		
+							un(7, i(5112)), -- Ritual Blade
 						}),							
 					}), 
 					n(5841, { 		-- Rocklance
@@ -1250,7 +1250,7 @@ _.Zones =
 						dr(	1.2	, i(	9785	)), --	Raider's Bracers
 						dr(	1.1	, i(	6554	)), --	Bard's Gloves
 						nld({     -- Legacy
-							i(1355), 	-- Buckskin Cape						
+							un(7, i(1355)), 	-- Buckskin Cape						
 						}),	
 					}), 
 					n(5831, { 		-- Swiftmane

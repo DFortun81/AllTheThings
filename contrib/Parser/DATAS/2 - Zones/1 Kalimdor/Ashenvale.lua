@@ -1120,7 +1120,7 @@ _.Zones =
 						dr(01.0, i(9810)),	-- Fortified Boots
 						dr(01.0, i(9803)),	-- Superior Bracers
 						nld({     -- Legacy
-							i(5753), 	-- Ruffled Chaplet
+							un(7, i(5753)), 	-- Ruffled Chaplet
 						}),
 					}),
 					n(12037, { 	-- Ursol'lok
@@ -1234,7 +1234,7 @@ _.Zones =
 						}),
 						n(-16, {	-- Rares (Legacy)
 							na(3808, { 	-- Forsaken Dark Stalker
-								un( 7, i(1351)),	-- Fingerbone Bracers
+								un(7, i(1351)),	-- Fingerbone Bracers
 							}),
 						}),
 						--n(  0, {	-- Zone Drop (Legacy)
