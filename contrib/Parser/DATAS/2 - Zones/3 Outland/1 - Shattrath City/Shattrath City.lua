@@ -348,7 +348,6 @@ _.Zones =
 						},
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["sourceQuests"] = { 10863, 10908, 10862 },	-- Secrets of the Arakkoa, Speak with Rilak the Redeemed, or Surrender to the Horde
-						["isBreadcrumb"] = true,
 					}),
 					q( 10251, {	-- The Master's Grand Design?
 						["groups"] = {
@@ -675,7 +674,6 @@ _.Zones =
 								},
 								["qg"] = 22940,	-- Grok
 								["sourceQuests"] = { 10984 },	-- Speak with the Ogre
-								["isBreadcrumb"] = true,
 							}),
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.

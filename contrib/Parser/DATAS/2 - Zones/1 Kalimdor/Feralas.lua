@@ -237,7 +237,6 @@ _.Zones =
 						},
 						["qg"] = 39946,	-- Caryssia Moonhunter
 						["sourceQuests"] = { 28503 },	-- Hero's Call: Thousand Needles!
-						["isBreadcrumb"] = true,
 					}),
 --[[
 					qdg(qg(7875, qh(27132))),	-- The Highborne

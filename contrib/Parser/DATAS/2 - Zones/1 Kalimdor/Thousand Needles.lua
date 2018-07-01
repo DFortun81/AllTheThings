@@ -720,7 +720,6 @@ _.Zones =
 						},
 						["qg"] = 39895,	-- Kanati Greycloud
 						["sourceQuests"] = { 25478 },	-- To the Summit
-						["isBreadcrumb"] = true,
 					}),
 					q( 25704, {	-- The Mad Magus
 						["groups"] = {
@@ -737,14 +736,12 @@ _.Zones =
 						},
 						["sourceQuests"] = { 27275 },	-- Together Again
 						["sourceQuests"] = { 28283 },	-- What's that Rattle?
-						["isBreadcrumb"] = true,
 					}),
 					qh(27317, {	-- The Rattle of Bones
 						["groups"] = {
 						},
 						["sourceQuests"] = { 27276 },	-- Together Again
 						["sourceQuests"] = { 28284 },	-- What's that Rattle?
-						["isBreadcrumb"] = true,
 					}),
 					q( 28098, {	-- The Twilight Skymaster (awarded "Mind the Drop" criteria)
 						["groups"] = {

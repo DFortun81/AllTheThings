@@ -124,7 +124,6 @@ _.Zones =
 								["qg"] = 44453,	-- Thassarian
 								-- TODO: There are four breadcrumb quests that lead here.
 								["sourceQuests"] = { 28576,28749,28505,27158 },	-- Hero's Call: Western Plaguelands!
-								["isBreadcrumb"] = true,
 							}),
 							qa(27160, {	-- War Machines
 								["groups"] = {
@@ -177,7 +176,6 @@ _.Zones =
 								},
 								["qg"] = 44452,	-- Koltira Deathweaver
 								["sourceQuests"] = { 28575 },	-- Warchief's Command: Western Plaguelands!
-								["isBreadcrumb"] = true,
 							}),
 							qh(26923, {	-- War Machines
 								["groups"] = {
@@ -468,7 +466,6 @@ _.Zones =
 								},
 								["qg"] = 44454,	-- Field Agent Kaartish
 								["sourceQuests"] = { 27175, 27233, 26952 },	-- The Menders' Stead (A/A/H versions)
-								["isBreadcrumb"] = true,
 							}),
 							q( 26935, {	-- Northridge Lumber Mill
 								["groups"] = {
@@ -482,7 +479,6 @@ _.Zones =
 								},
 								["qg"] = 11616,	-- Nathaniel Dumah
 								["sourceQuests"] = { 26935 },	-- Northridge Lumber Mill
-								["isBreadcrumb"] = true,
 							}),
 							q( 27001, {	-- This Means WAR (Wild Arachnid Roundup)
 								["groups"] = {

@@ -495,7 +495,7 @@ _.Zones =
 								i(143954),	-- Paradox Spirit
 							}),
 						},
-						
+						["ids"] = { 692 },
 					}),
 					n(73819, {	-- Ku-Mo <Hand-Made Kites>
 						currency(777, { -- Timeless Coin

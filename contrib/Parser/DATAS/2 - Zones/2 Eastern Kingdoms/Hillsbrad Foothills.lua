@@ -49,7 +49,6 @@ _.Zones =
 						["qg"] = 48218,	-- Kingslayer Orkus
 						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 						["sourceQuests"] = { 28344 },	-- Can You Smell What the Lok'tar is Cooking?
-						["isBreadcrumb"] = true,
 					}),
 					qh(28237, { -- A Blight Upon the Land
 						["groups"] = {
@@ -327,7 +326,6 @@ _.Zones =
 						},
 						["qg"] = 47554,	-- Captain Keyton
 						["sourceQuests"] = { 28111 },	-- Trouble at Azurelode
-						["isBreadcrumb"] = true,
 					}),
 					qh(28487, {	-- Humbert's Personal Problems
 						["groups"] = {
@@ -570,7 +568,6 @@ _.Zones =
 						},
 						["qg"] = 2391,	-- Serge Hinott
 						["sourceQuests"] = { 28251 },	-- Trouble at Southshore
-						["isBreadcrumb"] = true,
 					}),
 					qh(28355, {	-- Terrible Little Creatures
 						["groups"] = {
@@ -715,7 +712,6 @@ _.Zones =
 						},
 						["qg"] = 2215,	-- High Executor Darthalia
 						["sourceQuests"] = { 27746, 28089 },	-- Empire of Dirt & Warchief's Command: Hillsbrad Foothills!
-						["isBreadcrumb"] = true,
 					}),
 					qh(28485, { -- Yetimus the Yeti Lord
 						["groups"] = {

@@ -26,6 +26,16 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+--[[
+					n(-50, {     -- Love is in the Air
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1693,    -- Fool For Love
+						["u"] = 18,
+					}),
+--]]
 					n(-51, {     -- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -53,6 +63,16 @@ _.Zones =
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
 					}),
+--[[
+					n(-52, {     -- Children's Week
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1793, -- For The Children
+						["u"] = 20,
+					}),
+--]]				
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-4, { 	-- Achievement
@@ -243,6 +263,16 @@ _.Zones =
 						["achievementID"] = 3478, -- Pilgrim
 						["u"] = 28,
 					}),
+--[[
+					n(-61, {     -- Feast of Winter Veil
+						["groups"] = {
+							n(-17, { 	-- Quests
+							}),
+						},
+						["achievementID"] = 1691, -- Merrymaker
+						["u"] = 29,
+					}),
+--]]
 				}),		
 				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
@@ -440,15 +470,15 @@ _.Zones =
 					}),
 					qh(25257, {	-- Ghislania
 						["qg"] = 39590, -- Spiketooth
-						["sourceQuests"] = { 25256 }, -- Sent for Help
+						["sourceQuests"] = { 25256 } -- Sent for Help
 					}),
 					qh(25258, {	-- Griswold Hanniston
 						["qg"] = 39590, -- Spiketooth
-						["sourceQuests"] = { 25256 }, -- Sent for Help
+						["sourceQuests"] = { 25256 } -- Sent for Help
 					}),
 					qh(25259, {	-- Gaur Icehorn
 						["qg"] = 39590, -- Spiketooth
-						["sourceQuests"] = { 25256 }, -- Sent for Help
+						["sourceQuests"] = { 25256 } -- Sent for Help
 					}),
 					qh(25260, {	-- Fizzled
 						["groups"] = {
@@ -497,7 +527,7 @@ _.Zones =
 						},
 						["qg"] = 86884, -- Darkspear Loyalist (additional QG 39609)
 						["races"] = {9},
-						["sourceQuests"] = { 25266 }, -- Warchief's Emissary
+						["sourceQuests"] = { 25266 } -- Warchief's Emissary
 					}),
 					qh(25648, {	-- Beyond Durotar
 						["qg"] = 39379, -- Gor the Enforcer
@@ -563,7 +593,7 @@ _.Zones =
 					}),
 					qh(44281, {	-- To Be Prepared
 						["qg"] = 4311, -- Holgar Stormaxe
-						["sourceQuests"] = { 43926 }, -- The Legion Returns
+						["sourceQuests"] = { 43926 } -- The Legion Returns
 					}),
 					
 --[[					
@@ -726,7 +756,7 @@ _.Zones =
 							}),
 							qh(24622, {	-- A Troll's Truest Companion
 								["qg"] = 38005, -- Moraya
-								["sourceQuests"] = { 25064 }, -- Moraya
+								["sourceQuests"] = { 25064 } -- Moraya
 							}),
 							qh(24623, {	-- Saving the Young
 								["qg"] = 37969, -- Kijara
@@ -742,7 +772,7 @@ _.Zones =
 							}),
 							qh(24626, {	-- Young and Vicious
 								["qg"] = 37969, -- Kijara
-								["sourceQuests"] = { 24625 }, -- Consort of the Sea Witch
+								["sourceQuests"] = { 24625 } -- Consort of the Sea Witch
 							}),
 							qh(24639, {	-- The Basics: Hitting Things
 								["qg"] = 38037, -- Nortet
@@ -932,19 +962,19 @@ _.Zones =
 							}),
 							qh(24812, {	-- No More Mercy
 								["qg"] = 38442, -- Morakki
-								["sourceQuests"] = { 25035 }, -- Breaking the Line
+								["sourceQuests"] = { 25035 } -- Breaking the Line
 							}),
 							qh(24813, {	-- Territorial Fetish
 								["qg"] = 38442, -- Morakki
-								["sourceQuests"] = { 25035 }, -- Breaking the Line
+								["sourceQuests"] = { 25035 } -- Breaking the Line
 							}),
 							qh(24814, {	-- An Ancient Enemy
 								["qg"] = 38442, -- Morakki
-								["sourceQuests"] = { 24812, 24813 }, -- No more Mercy, Territorial Fetish
+								["sourceQuests"] = { 24812, 24813 } -- No more Mercy, Territorial Fetish
 							}),
 							qh(25035, {	-- Breaking the Line
 								["qg"] = 38440, -- Tortunga
-								["sourceQuests"] = { 24626 }, -- Young and Vicious
+								["sourceQuests"] = { 24626 } -- Young and Vicious
 							}),
 							qh(25037, {	-- Crab Fishin'
 								["qg"] = 39007, -- Tora'jin
@@ -1017,11 +1047,11 @@ _.Zones =
 							}),
 							qh(32320, {	-- The Horde is Family
 								["qg"] = 68025, -- Thrall
-								["sourceQuests"] = { 32319 }, -- Find Thrall!
+								["sourceQuests"] = { 32319 } -- Find Thrall!
 							}),
 							qh(32372, {	-- De-Subjugation
 								["qg"] = 68025, -- Thrall
-								["sourceQuests"] = { 32320 }, -- The Horde is Family
+								["sourceQuests"] = { 32320 } -- The Horde is Family
 							}),
 						}),
 						n( -2, { 	-- Vendors
@@ -1061,20 +1091,19 @@ _.Zones =
 							}),
 							qh(25129, {	-- Sarkoth
 								["qg"] = 3287, -- Hana'zua
-								["sourceQuests"] = { 25128 }, -- Hana'zua
-								["isBreadcrumb"] = true,
+								["sourceQuests"] = { 25128 } -- Hana'zua
 							}),
 							qh(25130, {	-- Back to the Den
 								["qg"] = 3287, -- Hana'zua
-								["sourceQuests"] = { 25129 }, -- Sarkoth
+								["sourceQuests"] = { 25129 } -- Sarkoth
 							}),
 							qh(25131, {	-- Vile Familiars
 								["qg"] = 3145, -- Zureetha Fargaze
-								["sourceQuests"] = { 25127 }, -- Sting of the Scorpid
+								["sourceQuests"] = { 25127 } -- Sting of the Scorpid
 							}),
 							qh(25132, {	-- Burning Blade Medallion
 								["qg"] = 3145, -- Zureetha Fargaze
-								["sourceQuests"] = { 25131 }, -- Vile Familiars
+								["sourceQuests"] = { 25131 } -- Vile Familiars
 							}),
 							qh(25133, {	-- Report to Sen'jin Village
 								["qg"] = 3145, -- Zureetha Fargaze
@@ -1085,18 +1114,18 @@ _.Zones =
 							--qh(25134), -- lazy peons (replaced by 37446)
 							qh(25135, {	-- Thazz'ril's Pick
 								["qg"] = 11378, -- Foreman Thazz'ril
-								["sourceQuests"] = { 25131 }, -- Vile Familiars
+								["sourceQuests"] = { 25131 } -- Vile Familiars
 							}),
 							qh(25136, {	-- Galgar's Cactus Apple Surprise
 								["qg"] = 9796, -- Galgar
-								["sourceQuests"] = { 25126 }, -- Cutting Teeth
+								["sourceQuests"] = { 25126 } -- Cutting Teeth
 							}),
 							qh(25152, {	-- Your Place In The World
 								["qg"] = 10176, -- Kaltunk
 							}),
 							qh(25172, {	-- Invaders in our Home
 								["qg"] = 3143, -- Gornek
-								["sourceQuests"] = { 25126 }, -- Cutting Teeth
+								["sourceQuests"] = { 25126 } -- Cutting Teeth
 							}),
 							qh(37446, {	-- Lazy Peons
 								["qg"] = 11378, -- Foreman Thazz'ril

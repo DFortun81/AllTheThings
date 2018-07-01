@@ -418,7 +418,6 @@ _.Zones =
 						},
 						["qg"] = 3449,	-- Darsok Swiftdagger
 						["sourceQuests"] = { 29094 },	-- The Short Way Home
-						["isBreadcrumb"] = true,
 					}),
 					qh(  852, {	-- Hezrul Bloodmark
 						["groups"] = {
@@ -450,7 +449,6 @@ _.Zones =
 						},
 						["qg"] = 3337,	-- Kargal Battlescar
 						["sourceQuests"] = { 28494 },	-- Warchief's Command: Northern Barrens!
-						["isBreadcrumb"] = true,
 					}),
 					qh(13998, {	-- In Fungus We Trust
 						["groups"] = {
@@ -476,7 +474,6 @@ _.Zones =
 						},
 						["qg"] = 3464,	-- Gazrog
 						["sourceQuests"] = { 13991 },	-- The Purloined Payroll
-						["isBreadcrumb"] = true,
 					}),
 					q(   865, {	-- It's Gotta be the Horn
 						["groups"] = {
@@ -555,7 +552,6 @@ _.Zones =
 						},
 						["qg"] = 8582,	-- Kadrak
 						["sourceQuests"] = { 29111, 28493 },	-- Mor'shan Caravan Delivery & Warchief's Command: Ashenvale!
-						["isBreadcrumb"] = true,
 					}),
 					qh(14063, { -- Mutiny, Mon!
 						["groups"] = {

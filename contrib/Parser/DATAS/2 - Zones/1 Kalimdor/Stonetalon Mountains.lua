@@ -535,7 +535,6 @@ _.Zones =
 						},
 						["qg"] = 3995,	-- Witch Doctor Jin'Zil
 						["sourceQuests"] = { 26059 },	-- Eyes and Ears: Malaka'jin
-						["isBreadcrumb"] = true,
 					}),
 --[[ 				n( 41937, {	-- Marshal Paltrow
 						i(56474, {	-- Orders from Base Camp

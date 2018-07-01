@@ -720,7 +720,6 @@ _.Zones =
 						},
 						["qg"] = 20281,	-- Drijya
 						["sourceQuests"] = { 10311 },	-- Drijya Needs Your Help
-						["isBreadcrumb"] = true,
 					}),
 					
 					
@@ -1011,7 +1010,6 @@ _.Zones =
 						},
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuests"] = { 39201 },	-- Warchief's Command: Netherstorm!
-						["isBreadcrumb"] = true,
 					}),
 					
 					
@@ -1077,7 +1075,6 @@ _.Zones =
 								["qg"] = 19466,	-- Exarch Orelis
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["sourceQuests"] = { 11038 },	-- Assist Exarch Orelis
-								["isBreadcrumb"] = true,
 							}),
 							q(10313, {	-- Measuring Warp Energies
 								["groups"] = {
