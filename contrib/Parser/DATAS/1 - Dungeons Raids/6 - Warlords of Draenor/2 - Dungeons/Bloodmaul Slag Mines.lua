@@ -10,7 +10,7 @@ _.Instances =
 				["groups"] = {
 					d(1, {		-- Normal
 						["modID"] = 17,
-						["ids"] = { 518 }, -- Normal
+						
 						["groups"] = {
 							n(-17, {	-- Quests 						
 								q(37152, {
@@ -195,7 +195,7 @@ _.Instances =
 						},
 					}),
 					d(2, {		-- Heroic
-						["ids"] = { 524 }, -- Heroic
+						
 						["lvl"] = 100,
 						["groups"] = {
 							cr(74787, e(888, { -- Slave Watcher Crushto
@@ -376,7 +376,7 @@ _.Instances =
 						},
 					}),
 					d(23, {		-- Mythic
-						["ids"] = { 642 }, -- Mythic
+						
 						["lvl"] = 100,
 						["groups"] = {
 							cr(74787, e(888, { -- Slave Watcher Crushto

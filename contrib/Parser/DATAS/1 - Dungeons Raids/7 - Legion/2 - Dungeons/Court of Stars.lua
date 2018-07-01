@@ -9,7 +9,7 @@ _.Instances =
 			inst(800, { 	-- Court of Stars
 				["groups"] = {
 					d(2, {		-- Heroic
-						["ids"] = { 1726 }, -- Heroic
+						
 						["groups"] = {
 							cr(104215, e(1718, {	-- Patrol Captain Gerdo
 								i(134480),
@@ -50,7 +50,7 @@ _.Instances =
 						}
 					}),
 					d(23, {		-- Mythic
-						["ids"] = { 1727 }, -- Mythic
+						
 						["groups"] = {
 							cr(104215, e(1718, {	-- Patrol Captain Gerdo
 								i(134480),

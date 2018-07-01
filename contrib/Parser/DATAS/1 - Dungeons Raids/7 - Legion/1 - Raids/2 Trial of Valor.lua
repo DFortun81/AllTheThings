@@ -68,8 +68,7 @@ _.Instances =
 							}),		
 						}),
 					}),
-					d(17, {		-- LFR
-						["ids"] = { 3470 }, 
+					d(17, {		-- LFR 
 						["groups"] = {
 							n(0, { 		-- Zone Drop
 								i(142541), -- Drape of the Forgotten Souls
@@ -280,7 +279,7 @@ _.Instances =
 						}
 					}),
 					d(14, {		-- Normal
-						["ids"] = { 3467 }, -- Normal
+						
 						["groups"] = {
 							n(0, { 		-- Zone Drop
 								i(142541),
@@ -321,7 +320,7 @@ _.Instances =
 						}
 					}),
 					d(15, {		-- Heroic
-						["ids"] = { 3468 }, -- Heroic
+						
 						["groups"] = {
 							n(0, { 		-- Zone Drop
 								i(142541),
@@ -418,7 +417,7 @@ _.Instances =
 						}
 					}),
 					d(16, {		-- Mythic
-						["ids"] = { 3469 }, -- Mythic
+						
 						["groups"] = {
 							n(0, { 		-- Zone Drop
 								i(142541),

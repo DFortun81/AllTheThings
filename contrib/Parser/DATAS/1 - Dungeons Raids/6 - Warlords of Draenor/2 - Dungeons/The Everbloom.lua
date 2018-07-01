@@ -9,7 +9,7 @@ _.Instances =
 			inst(556, { 	-- The Everbloom
 				["groups"] = {
 					d(1, {		-- Normal
-						["ids"] = { 522 }, -- Normal
+						
 						["groups"] = {
 							n(-17, {	-- Quests 			
 								q(37150, {
@@ -214,7 +214,7 @@ _.Instances =
 						},
 					}),
 					d(2, {		-- Heroic
-						["ids"] = { 524 }, -- Heroic
+						
 						["groups"] = {
 							n(-17, {	-- Quests 		
 								q(37165, {
@@ -419,7 +419,7 @@ _.Instances =
 						},
 					}),
 					d(23, {		-- Mythic
-						["ids"] = { 642 }, -- Mythic
+						
 						["groups"] = {
 							cr(81522, e(1214, { -- Witherbark
 								i(119175),	-- Leafhide Penetrator
