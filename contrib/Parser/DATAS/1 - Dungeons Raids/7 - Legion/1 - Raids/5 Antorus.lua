@@ -9,7 +9,7 @@ _.Instances =
 			inst(946, { -- Antorus, the Burning Throne
 				["groups"] = {
 					d(17, {-- Looking For Raid
-						["ids"] = { 3524 }, -- May need to be changed
+						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -404,7 +404,7 @@ _.Instances =
 						},
 					}),
 					d(14, {-- Normal
-						["ids"] = { 3524 }, -- May need to be changed
+						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -791,7 +791,7 @@ _.Instances =
 						},
 					}),
 					d(15, {-- Heroic
-						["ids"] = { 3524 }, -- May need to be changed
+						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -1183,7 +1183,7 @@ _.Instances =
 						},
 					}),
 					d(16, {-- Mythic
-						["ids"] = { 3524 }, -- May need to be changed
+						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,

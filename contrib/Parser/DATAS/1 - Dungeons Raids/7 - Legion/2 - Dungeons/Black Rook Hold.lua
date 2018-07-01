@@ -9,7 +9,7 @@ _.Instances =
 			inst(740, { 	-- Black Rook Hold
 				["groups"] = {
 					d(1, {		-- Normal
-						["ids"] = { 1826 }, -- Normal
+						
 						["groups"] = {
 							cr(98542, e(1518, {	-- Amalgam of Souls
 								i(139245),
@@ -58,7 +58,7 @@ _.Instances =
 						}
 					}),
 					d(2, {		-- Heroic
-						["ids"] = { 1726 }, -- Heroic
+						
 						["groups"] = {
 							cr(98542, e(1518, {	-- Amalgam of Souls
 								i(139245),
@@ -107,7 +107,7 @@ _.Instances =
 						}
 					}),
 					d(23, {		-- Mythic
-						["ids"] = { 1727 }, -- Mythic
+						
 						["groups"] = {
 							cr(98542, e(1518, {	-- Amalgam of Souls
 								i(139245),

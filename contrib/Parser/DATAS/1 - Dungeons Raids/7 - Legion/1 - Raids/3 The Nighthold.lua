@@ -9,7 +9,7 @@ _.Instances =
 			inst(786, { 	-- The Nighthold
 				["groups"] = {
 					d(17, {		-- LFR
-						["ids"] = { 3379 }, 
+						 
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -234,7 +234,7 @@ _.Instances =
 						}
 					}),
 					d(14, {		-- Normal
-						["ids"] = { 1807 }, -- Normal
+						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -452,7 +452,7 @@ _.Instances =
 						}
 					}),
 					d(15, {		-- Heroic
-						["ids"] = { 1805 }, -- Heroic
+						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -670,7 +670,7 @@ _.Instances =
 						}
 					}),
 					d(16, {		-- Mythic
-						["ids"] = { 1806 }, -- Mythic
+						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,

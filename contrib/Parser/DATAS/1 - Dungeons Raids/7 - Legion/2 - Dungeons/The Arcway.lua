@@ -9,7 +9,7 @@ _.Instances =
 			inst(726, { 	-- The Arcway
 				["groups"] = {
 					d(2, {		-- Heroic
-						["ids"] = { 1726 }, -- Heroic
+						
 						["groups"] = {
 							cr(98203, e(1497, {	-- Ivanyr
 								i(134309),
@@ -62,7 +62,7 @@ _.Instances =
 						}
 					}),
 					d(23, {		-- Mythic
-						["ids"] = { 1727 }, -- Mythic
+						
 						["groups"] = {
 							cr(98203, e(1497, {	-- Ivanyr
 								i(134309),

@@ -9,7 +9,7 @@ _.Instances =
 			inst(559, { 	-- Upper Blackrock Spire
 				["groups"] = {
 					d(1, {		-- Normal
-						["ids"] = { 522 }, -- Normal
+						
 						["groups"] = {
 							cr(76413, e(1226, {	-- Orebender Gor'ashan
 								i(118719),	-- Petrified Willow
@@ -216,7 +216,7 @@ _.Instances =
 						},
 					}),
 					d(2, {		-- Heroic
-						["ids"] = { 524 }, -- Heroic
+						
 						["groups"] = {
 							n(-17, {	-- Quests 
 								q(37179, {
@@ -431,7 +431,7 @@ _.Instances =
 						},
 					}),
 					d(23, {		-- Mythic
-						["ids"] = { 642 }, -- Mythic
+						
 						["groups"] = {
 							cr(76413, e(1226, {	-- Orebender Gor'ashan
 								i(118719),	-- Petrified Willow
