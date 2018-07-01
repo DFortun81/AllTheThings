@@ -2123,14 +2123,14 @@ _.WorldEvents =
 						{
 							["questID"] = 11891, -- An Innocent Disguise
 							["qg"] = 25324,		 -- Earthen Ring Guide
-							["sourceQuests"] = 11886, -- Unusual Activity
+							["sourceQuests"] = { 11886, }, -- Unusual Activity
 							["maps"] = { 43, }, -- Ashenvale
 							["u"] = 21,	-- Midsummer Fire Festival
 						},
 						{
 							["questID"] = 12012, -- Inform the Elder
 							["qg"] = 25324,		 -- Earthen Ring Guide
-							["sourceQuests"] = 11891, -- An Innocent Disguise
+							["sourceQuests"] = { 11891, }, -- An Innocent Disguise
 							["maps"] = { 43, }, -- Ashenvale
 							["u"] = 21,	-- Midsummer Fire Festival
 						},
