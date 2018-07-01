@@ -166,62 +166,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					-- n(-50, {     -- Love is in the Air
-					-- 	["groups"] = {
-					-- 		n(-17, { 	-- Quests
-					-- 		}),
-					-- 	},
-					-- 	["achievementID"] = 1693,    -- Fool For Love
-					-- 	["u"] = 18,
-					-- }),
-					-- n(-51, {     -- Noblegarden
-					-- 	["groups"] = {
-					-- 		n(-17, { 	-- Quests
-					-- 		}),
-					-- 	},
-					-- 	["achievementID"] = 2798, -- Noble Gardener
-					-- 	["u"] = 19,
-					-- }),
-					-- n(-52, {     -- Children's Week
-					-- 	["groups"] = {
-					-- 		n(-17, { 	-- Quests
-					-- 		}),
-					-- 	},
-					-- 	["achievementID"] = 1793, -- For The Children
-					-- 	["u"] = 20,
-					-- }),	
-					-- n(-56, {     -- Brewfest
-					-- 	["groups"] = {
-					-- 		n(-17, { 	-- Quests
-					-- 		}),
-					-- 	},
-					-- 	["achievementID"] = 1683, -- Brewmaster
-					-- 	["u"] = 24,
-					-- }),
-					-- n(-58, {     -- Hallow's End
-					-- 	["groups"] = {
-					-- 		n(-17, { 	-- Quests
-					-- 		}),
-					-- 	},
-					-- 	["achievementID"] = 1656, -- Hallowed Be Thy Name
-					-- 	["u"] = 26,
-					-- }),	
-					-- n(-60, {     -- Pilgrim's Bounty
-					-- 	["groups"]  = {
-					-- 		n(-17, { 	-- Quests
-					-- 		}),
-					-- 	},
-					-- 	["achievementID"] = 3478, -- Pilgrim
-					-- 	["u"] = 28,
-					-- }),
-					-- n(-61, {     -- Feast of Winter Veil
-					-- 	["groups"] = {
-					-- 		n(-17, { 	-- Quests
-					-- 		}),
-					-- 	},
-					-- 	["achievementID"] = 1691, -- Merrymaker
-					-- 	["u"] = 29,
-					-- }),						
 				}),								
 				n(-25, { 	-- Pet Battle
 					p(641), 	-- Arctic Hare
@@ -721,7 +665,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
-								["sourceQuests"] = 11704,
+								["sourceQuests"] = {11704},
 							}),
 							q(11559, {	--  Winterfin Commerce
 								["groups"] = {
@@ -810,7 +754,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25251,	-- Leryssa
-								["sourceQuests"] = 11927,
+								["sourceQuests"] = {11927},
 							}),
 							q(11600, {	-- The Late William Allerton [A]
 								["groups"] = {
@@ -1235,7 +1179,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
-								["sourceQuests"] = 11704,
+								["sourceQuests"] = {11704},
 							}),
 							q(11559, {	--  Winterfin Commerce
 								["groups"] = {
@@ -1595,7 +1539,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25336,	-- Grunt Ragefist
-								["sourceQuests"] = 11591,
+								["sourceQuests"] = {11591},
 							}),
 							q(11592, {	-- We Strike! [H]
 								["groups"] = {
@@ -1791,12 +1735,16 @@ _.Zones =
 							q(29194, {	--  Through a Glass, Darkly
 								["groups"] = {
 								},
+								["classes"] = {5,7,8,9,11},
+								["lvl"] = 85,
 								["qg"] = 52835,	-- Tarecgosa
 								["sourceQuest"] = 29193,
 							}),
 							q(29234, {	--  Delegation
 								["groups"] = {
 								},
+								["classes"] = {5,7,8,9,11},
+								["lvl"] = 85,
 								["qg"] = 52995,	-- Kalecgos
 								["sourceQuest"] = 29225,
 							}),
@@ -1805,24 +1753,31 @@ _.Zones =
 									i(71084),  -- Branch of Nordrassil
 								},
 								["classes"] = {5,7,8,9,11},
+								["lvl"] = 85,
 								["qg"] = 53009,	-- Kalecgos
 								["sourceQuest"] = 29234,
 							}),
 							q(29240, {	--  Emergency Extraction
 								["groups"] = {
 								},
+								["classes"] = {5,7,8,9,11},
+								["lvl"] = 85,
 								["qg"] = 53009,	-- Kalecgos
 								["sourceQuest"] = 29239,
 							}),
 							q(29269, {	--  At One
 								["groups"] = {
 								},
+								["classes"] = {5,7,8,9,11},
+								["lvl"] = 85,
 								["qg"] = 53149,	-- Kalecgos
 								["sourceQuest"] = 29240,
 							}),
 							q(29270, {	--  Time Grows Short
 								["groups"] = {
 								},
+								["classes"] = {5,7,8,9,11},
+								["lvl"] = 85,
 								["qg"] = 53210,	-- Kalecgos
 								["sourceQuest"] = 29269,
 							}),
@@ -1838,12 +1793,16 @@ _.Zones =
 							qh(29308, {	--  Heart of Flame [H]
 								["groups"] = {
 								},
+								["classes"] = {5,7,8,9,11},
+								["lvl"] = 85,
 								["qg"] = 53349,	-- Kalecgos
 								["sourceQuest"] = 29285,
 							}),
 							qa(29307, {	--  Heart of Flame [A]
 								["groups"] = {
 								},
+								["classes"] = {5,7,8,9,11},
+								["lvl"] = 85,
 								["qg"] = 53349,	-- Kalecgos
 								["sourceQuest"] = 29285,
 							}),
@@ -1873,7 +1832,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25339,	-- Spirit Talker Snarlfang
-								["sourceQuests"] = 12486,
+								["sourceQuests"] = {12486},
 							}),
 							q(11627, {	--  Boiling Point [H]
 								["groups"] = {
@@ -2060,8 +2019,9 @@ _.Zones =
 								["sourceQuest"] = 11897,
 							}),
 						})),
-						a(sz(1264, 12, {	-- The Geyser Fields NOTE: Should be Fizzcrank Airstrip
-							q(11712, {	-- Re-Cursive [A]
+						sz(1264, 12, {	-- The Geyser Fields
+						-- Need "Fizzcrank Airstrip" Header for Alliance quests
+							qa(11712, {	-- Re-Cursive [A]
 								["groups"] = {
 									i(37234),  -- Layered Frost Hood
 									i(37356),  -- Rhinohide Wristwraps
@@ -2071,13 +2031,13 @@ _.Zones =
 								["qg"] = 25747,	-- Jinky Wingnut
 								["sourceQuest"] = 11708,
 							}),
-							q(11788, {	--  Lefty Loosey, Righty Tighty [A]
+							qa(11788, {	--  Lefty Loosey, Righty Tighty [A]
 								["groups"] = {
 								},
 								["qg"] = 25747,	-- Jinky Wingnut
 								["sourceQuest"] = 11712,
 							}),
-							q(11798, {	-- The Gearmaster [A]
+							qa(11798, {	-- The Gearmaster [A]
 								["groups"] = {
 									i(37274),  -- Mender's Cover
 									i(37352),  -- Regenerative Hide Harness
@@ -2087,37 +2047,37 @@ _.Zones =
 								["qg"] = 25747,	-- Jinky Wingnut
 								["sourceQuest"] = 11788,
 							}),
-							q(11725, {	--  Finding Pilot Tailspin [A]
+							qa(11725, {	--  Finding Pilot Tailspin [A]
 								["groups"] = {
 								},
 								["qg"] = 25590,	-- Fizzcrank Fullthrottle
 								["sourceQuest"] = 11712,
 							}),
-							q(11726, {	--  A Little Bit of Spice [A]
+							qa(11726, {	--  A Little Bit of Spice [A]
 								["groups"] = {
 								},
 								["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 								["sourceQuest"] = 11725,
 							}),
-							q(11728, {	--  Lupus Pupus [A]
+							qa(11728, {	--  Lupus Pupus [A]
 								["groups"] = {
 								},
 								["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 								["sourceQuest"] = 11726,
 							}),
-							q(11795, {	--  Emergency Protocol: Section 8.2, Paragraph C [A]
+							qa(11795, {	--  Emergency Protocol: Section 8.2, Paragraph C [A]
 								["groups"] = {
 								},
 								["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 								["sourceQuest"] = 11728,
 							}),
-							q(11796, {	--  Emergency Protocol: Section 8.2, Paragraph D [A]
+							qa(11796, {	--  Emergency Protocol: Section 8.2, Paragraph D [A]
 								["groups"] = {
 								},
 								["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 								["sourceQuest"] = 11795,
 							}),
-							q(11873, {	-- Give Fizzcrank the News [A]
+							qa(11873, {	-- Give Fizzcrank the News [A]
 								["groups"] = {
 									i(37275),  -- Mantle of Congealed Anger
 									i(37351),  -- Reinforced Caribou-Hide Leggings
@@ -2127,25 +2087,25 @@ _.Zones =
 								["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 								["sourceQuest"] = 11796,
 							}),
-							q(11713, {	--  Scouting the Sinkholes [A]
+							qa(11713, {	--  Scouting the Sinkholes [A]
 								["groups"] = {
 								},
 								["qg"] = 25780,	-- Abner Fizzletorque
 								["sourceQuest"] = 11873,
 							}),
-							q(11715, {	--  Fueling the Project [A]
+							qa(11715, {	--  Fueling the Project [A]
 								["groups"] = {
 								},
 								["qg"] = 25780,	-- Abner Fizzletorque
 								["sourceQuest"] = 11713,
 							}),
-							q(11718, {	--  A Bot in Mammoth's Clothing [A]
+							qa(11718, {	--  A Bot in Mammoth's Clothing [A]
 								["groups"] = {
 								},
 								["qg"] = 25780,	-- Abner Fizzletorque
 								["sourceQuest"] = 11715,
 							}),
-							q(11723, {	-- Deploy the Shake-n-Quake! [A]
+							qa(11723, {	-- Deploy the Shake-n-Quake! [A]
 								["groups"] = {
 									i(37228),  -- Sweltering Cuffs
 									i(37375),  -- Rhinohide Gloves
@@ -2155,19 +2115,19 @@ _.Zones =
 								["qg"] = 25780,	-- Abner Fizzletorque
 								["sourceQuest"] = 11718,
 							}),
-							q(11645, {	--  Dirty, Stinkin' Snobolds! [A]
+							qa(11645, {	--  Dirty, Stinkin' Snobolds! [A]
 								["groups"] = {
 								},
 								["qg"] = 25477,	-- Crafty Wobblesprocket
 								["sourceQuest"] = 11708,
 							}),
-							q(11650, {	--  Just a Few More Things... [A]
+							qa(11650, {	--  Just a Few More Things... [A]
 								["groups"] = {
 								},
 								["qg"] = 25477,	-- Crafty Wobblesprocket
 								["sourceQuest"] = 11645,
 							}),
-							q(11653, {	-- Hah... You're Not So Big Now! [A]
+							qa(11653, {	-- Hah... You're Not So Big Now! [A]
 								["groups"] = {
 									i(37272),  -- Wizzlenob Shoulder Covers
 									i(37388),  -- Reinforced Elastic Band
@@ -2177,13 +2137,13 @@ _.Zones =
 								["qg"] = 25477,	-- Crafty Wobblesprocket
 								["sourceQuest"] = 11650,
 							}),
-							q(11658, {	--  Plan B [A]
+							qa(11658, {	--  Plan B [A]
 								["groups"] = {
 								},
 								["qg"] = 25477,	-- Crafty Wobblesprocket
 								["sourceQuest"] = 11653,
 							}),
-							q(11670, {	-- It Was The Orcs, Honest! [A]
+							qa(11670, {	-- It Was The Orcs, Honest! [A]
 								["groups"] = {
 									i(37054),  -- Frostbiter
 									i(37073),  -- Hungering Greatstaff
@@ -2194,7 +2154,7 @@ _.Zones =
 								["qg"] = 25477,	-- Crafty Wobblesprocket
 								["sourceQuest"] = 11658,
 							}),
-							q(11673, {	-- Get Me Outa Here! [A]
+							qa(11673, {	-- Get Me Outa Here! [A]
 								["groups"] = {
 									i(37049),  -- Lost Marksman's Rifle
 									i(37047),  -- Branch of Everlasting Flame
@@ -2203,12 +2163,12 @@ _.Zones =
 								["qg"] = 25589,	-- Bonker Togglevolt
 							}),
 							i(34984, {	-- The Ultrasonic Screwdriver
-								q(11729, {	--  The Ultrasonic Screwdriver [A]
+								qa(11729, {	--  The Ultrasonic Screwdriver [A]
 									["groups"] = {
 									},
 								}),
 							}),
-							q(11730, {	-- Master and Servant [A]
+							qa(11730, {	-- Master and Servant [A]
 								["groups"] = {
 									i(37270),  -- Layered Frost Robes
 									i(37353),  -- Reinforced Caribou-Hide Helm
@@ -2230,9 +2190,8 @@ _.Zones =
 								["qg"] = 25702,	-- Mordle Cogspinner
 								["sourceQuest"] = 11710,
 							}),
-						})),
-						h(sz(1264, 12, {	-- The Geyser Fields NOTE: Should be Taunka'le Village
-							q(11647, {	-- Neutralizing the Cauldrons [H]
+						-- Need "Taunka'le Village" Header for Horde quests
+							qh(11647, {	-- Neutralizing the Cauldrons [H]
 								["groups"] = {
 									i(37234),  -- Layered Frost Hood
 									i(37356),  -- Rhinohide Wristwraps
@@ -2242,23 +2201,23 @@ _.Zones =
 								["qg"] = 24709,	-- Sage Aeire
 								["sourceQuest"] = 11633,
 							}),
-							q(11887, {	--  Emergency Supplies [H]
+							qh(11887, {	--  Emergency Supplies [H]
 								["groups"] = {
 								},
 								["qg"] = 25984,	-- Crashed Recon Pilot
 							}),
-							q(11890, {	--  What Are They Up To? [H]
+							qh(11890, {	--  What Are They Up To? [H]
 								["groups"] = {
 								},
 								["qg"] = 25982,	-- Sage Earth and Sky
 							}),
-							q(11895, {	--  Master the Storm [H]
+							qh(11895, {	--  Master the Storm [H]
 								["groups"] = {
 								},
 								["qg"] = 25982,	-- Sage Earth and Sky
 								["sourceQuest"] = 11890,
 							}),
-							q(11906, {	-- Cleaning Up the Pools [H]
+							qh(11906, {	-- Cleaning Up the Pools [H]
 								["groups"] = {
 									i(37275),  -- Mantle of Congealed Anger
 									i(37351),  -- Reinforced Caribou-Hide Leggings
@@ -2268,19 +2227,19 @@ _.Zones =
 								["qg"] = 26104,	-- Iron Eyes
 								["sourceQuest"] = 11895,
 							}),
-							q(11899, {	--  Souls of the Decursed [H]
+							qh(11899, {	--  Souls of the Decursed [H]
 								["groups"] = {
 								},
 								["qg"] = 25602,	-- Greatmother Taiga
 								["sourceQuest"] = 11895,
 							}),
-							q(11896, {	--  Weakness to Lightning [H]
+							qh(11896, {	--  Weakness to Lightning [H]
 								["groups"] = {
 								},
 								["qg"] = 25982,	-- Sage Earth and Sky
 								["sourceQuest"] = 11895,
 							}),
-							q(11907, {	-- The Sub-Chieftains [H]
+							qh(11907, {	-- The Sub-Chieftains [H]
 								["groups"] = {
 									i(37054),  -- Frostbiter
 									i(37073),  -- Hungering Greatstaff
@@ -2291,7 +2250,7 @@ _.Zones =
 								["qg"] = 25982,	-- Sage Earth and Sky
 								["sourceQuest"] = 11896,
 							}),
-							q(11909, {	-- Defeat the Gearmaster [H]
+							qh(11909, {	-- Defeat the Gearmaster [H]
 								["groups"] = {
 									i(37122),  -- Taut Driftwood Bow
 									i(37537),  -- Stave of the Spiritcaller
@@ -2302,7 +2261,7 @@ _.Zones =
 								["qg"] = 25602,	-- Greatmother Taiga
 								["sourceQuest"] = 11895,
 							}),
-						})),
+						}),
 						sz(1264, 13, {	-- The Dens of the Dying
 							qh(11674, {	--  Sage Highmesa is Missing [H]
 								["groups"] = {
