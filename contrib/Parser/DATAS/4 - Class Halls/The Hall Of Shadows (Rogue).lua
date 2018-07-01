@@ -39,9 +39,6 @@ _.ClassHalls =
 					}),
 					o(252282, {	-- Sparkling Set of Keys
 						i(94222, { -- Key to the Palace of Lei Shen
-							["description"] = "Speak to Taoshi at the bottom level of the Order Hall to start the Troves of the Thunder King scenario. 1  Key to the Palace of Lei Shen is required for each attempt of this scenario.\n\nThis is the exact same scenario that was available during Mists of Pandaria. The mobs DO SCALE with level though.\n\nComplete the scenario (reaching the end, or until the timer runs out) looting chests and obtaining as many Burial Trove Keys as possible.",
-							["maps"] = {934},
-							["qg"] = 98100,	-- Taoshi
 							["groups"] = {
 								i(95497, {	-- Burial Trove Key
 									["description"] = "Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",
@@ -52,6 +49,9 @@ _.ClassHalls =
 									},
 								}),
 							},
+							["description"] = "Speak to Taoshi at the bottom level of the Order Hall to start the Troves of the Thunder King scenario. 1  Key to the Palace of Lei Shen is required for each attempt of this scenario.\n\nThis is the exact same scenario that was available during Mists of Pandaria. The mobs DO SCALE with level though.\n\nComplete the scenario (reaching the end, or until the timer runs out) looting chests and obtaining as many Burial Trove Keys as possible.",
+							["qg"] = 98100,	-- Taoshi
+							["maps"] = { 934 },
 						}),
 						dr(1.0, i(130322)),	-- Mask of Artful Dodging
 						dr(0.9, i(130324)),	-- Boots of Artful Dodging

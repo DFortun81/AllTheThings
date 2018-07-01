@@ -592,15 +592,14 @@ _.Zones =
 				n(-2, {		-- Vendors
 					a(n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
 						["groups"] = {
-							i(137642, {	-- Mark of Honor
-								i(38356),	-- Venture Battle Wand
-								i(38354),	-- Oil-Stained Tarp
-								i(38355),	-- Thick Goblin Back Protector
-								i(38353),	-- Venture Bay Buccaneer's Cape
-								i(38358),	-- Arcane Revitalizer
-								i(38359),	-- Goblin Repetition Reducer
-							}),
+							i(38356),	-- Venture Battle Wand
+							i(38354),	-- Oil-Stained Tarp
+							i(38355),	-- Thick Goblin Back Protector
+							i(38353),	-- Venture Bay Buccaneer's Cape
+							i(38358),	-- Arcane Revitalizer
+							i(38359),	-- Goblin Repetition Reducer
 						},
+						["itemID"] = 137642,  -- Marks of Honor
 						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game."
 					})),
 					nh(26868, {	-- Provisioner Lorkran <General Goods>
@@ -609,15 +608,14 @@ _.Zones =
 					}),
 					h(n(27730, {	-- Purkom <Venture Coin Vendor>
 						["groups"] = {
-							i(137642, {	-- Mark of Honor
-								i(38356),	-- Venture Battle Wand
-								i(38354),	-- Oil-Stained Tarp
-								i(38355),	-- Thick Goblin Back Protector
-								i(38353),	-- Venture Bay Buccaneer's Cape
-								i(38358),	-- Arcane Revitalizer
-								i(38359),	-- Goblin Repetition Reducer
-							}),
+							i(38356),	-- Venture Battle Wand
+							i(38354),	-- Oil-Stained Tarp
+							i(38355),	-- Thick Goblin Back Protector
+							i(38353),	-- Venture Bay Buccaneer's Cape
+							i(38358),	-- Arcane Revitalizer
+							i(38359),	-- Goblin Repetition Reducer
 						},
+						["itemID"] = 137642,  -- Marks of Honor
 						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game."
 					})),
 					desc(n(91632, {	-- Remington Brode <Traveling Lumberjack>

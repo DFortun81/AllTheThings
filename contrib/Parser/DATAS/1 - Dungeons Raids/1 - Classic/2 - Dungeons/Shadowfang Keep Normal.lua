@@ -11,22 +11,17 @@ _.Instances =
 					n(-50, { -- Love Is In the Air
 						["groups"] = {
 							n(-17, { -- Quests
-								i(49641, { -- Faded Lovely Greeting Card
-									["groups"] = {
-										i(49641, {	-- Faded Lovely Greeting Card
-											qa(24745, { -- Something is in the Air (and it Ain't Love)
-												["groups"] = {
-												},
-												["qg"] = 36296,	-- Apothecary Hummel
-											}),
-											qh(14483, { -- Something is in the Air (and it Ain't Love)
-												["groups"] = {
-												},
-												["qg"] = 36296,	-- Apothecary Hummel
-											}),
-										}),
-									},
-									["qg"] = 36296,
+								i(49641, {	-- Faded Lovely Greeting Card
+									qa(24745, { -- Something is in the Air (and it Ain't Love)
+										["groups"] = {
+										},
+										["qg"] = 36296,	-- Apothecary Hummel
+									}),
+									qh(14483, { -- Something is in the Air (and it Ain't Love)
+										["groups"] = {
+										},
+										["qg"] = 36296,	-- Apothecary Hummel
+									}),
 								}),
 							}),
 							n(36296, { -- Apothecary Hummel
