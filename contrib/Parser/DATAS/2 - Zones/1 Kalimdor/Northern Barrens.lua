@@ -953,8 +953,6 @@ _.Zones =
 						dr(	1.6	, i(	6539	)), --	Willow Belt
 						dr(	1.5	, i(	6550	)), --	Soldier's Wristguards
 						dr(	1.4	, i(	6537	)), --	Willow Boots
-						dr(	1.2	, i(	4768	)), --	Adept's Gloves
-						dr(	1	, i(	4771	)), --	Harvest Cloak
 						nld({     -- Legacy
 							un(7, i(4768)), -- Adept's Gloves
 							un(7, i(4771)),	-- Harvest Cloak
