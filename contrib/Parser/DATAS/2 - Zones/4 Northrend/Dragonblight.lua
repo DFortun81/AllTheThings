@@ -191,7 +191,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 26673,	-- Image of Archmage Modera
-								["breadcrumbQuestID"] = {11995,12439,12440,39204},
+								["sourceQuests"] = {11995,12439,12440,39204},
 							}),
 							q(12004, {	-- Prevent the Accord [A]
 								["groups"] = {
@@ -430,7 +430,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 27060,	-- Courier Lanson
-								["breadcrumbQuestID"] = {12157},
+								["sourceQuests"] = {12157},
 							}),
 							q(12174, {	--  High Commander Halford Wyrmbane [A]
 								["groups"] = {
@@ -1009,7 +1009,7 @@ _.Zones =
 							["qg"] = 26245,	-- Tua'kea
 							["sourceQuests"] = {11959},
 						}),
-						qd(11960, {	--  Planning for the Future [Daily]
+						q(11960, {	--  Planning for the Future [Daily]
 							["groups"] = {
 							},
 							["qg"] = 26228,	-- Trapper Mau'i
