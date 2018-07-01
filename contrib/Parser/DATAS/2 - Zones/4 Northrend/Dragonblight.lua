@@ -1644,8 +1644,6 @@ _.Zones =
 						-- 	},
 						-- 	["qg"] = 105081,	-- Archmage Kalec
 						-- }),
-					}),
-					n(-494, {	-- Also Miscellaneous (These are unorganized)
 						q(13077, {	--  The Touch of an Aspect
 							-- This is part of the Icecrown Achiev...because Blizz
 							["groups"] = {
