@@ -10,7 +10,7 @@ _.WorldDrops =
 					i(10574),	-- Corpseshroud
 					i(10630),	-- Soulcatcher Halo
 					i(12549),	-- Braincage
-					i(1280),	-- Cloaked Hood
+					un(7, i(1280)),	-- Cloaked Hood
 					i(13073),	-- Mugthol's Helm
 					i(13102),	-- Cassandra's Grace
 					i(13112),	-- Winged Helm
@@ -36,10 +36,10 @@ _.WorldDrops =
 					i(3075),	-- Eye of Flame
 					i(3345),	-- Silk Wizard Hat
 					i(3392),	-- Ringed Helm
-					i(4724),	-- Humbert's Helm
+					un(7, i(4724)),	-- Humbert's Helm
 					i(5608),	-- Living Cowl
 					i(5624),	-- Circlet of the Order
-					i(5753),	-- Ruffled Chaplet
+					un(7, i(5753)),	-- Ruffled Chaplet
 					i(5819),	-- Sunblaze Coif
 					un(7, i(6204)),	-- Tribal Worg Helm
 					i(9375),	-- Expert Goldminer's Helmet
@@ -104,7 +104,7 @@ _.WorldDrops =
 					i(13121),	-- Wing of the Whelpling
 					i(13122),	-- Dark Phantom Cape
 --					i(134111),	-- Hidden Cloak
-					i(1355),	-- Buckskin Cape
+					un(7, i(1355)),	-- Buckskin Cape
 					i(14123),	-- Ritual Cape
 					i(14161),	-- Pagan Cape
 					i(14167),	-- Buccaneer's Cape
@@ -146,7 +146,7 @@ _.WorldDrops =
 					i(14745),	-- Hulking Cloak
 					i(14752),	-- Slayer's Cape
 					i(14763),	-- Enduring Cape
-					i(14771),	-- Ravager's Cloak
+					un(7, i(14771)),	-- Ravager's Cloak
 					i(14781),	-- Khan's Cloak
 					i(14791),	-- Protector Cape
 					i(14801),	-- Bloodlust Cape
@@ -224,7 +224,7 @@ _.WorldDrops =
 					i(4797),	-- Fiery Cloak
 					i(4798),	-- Heavy Runed Cloak
 					i(4799),	-- Antiquated Cloak
-					i(5111),	-- Rathorian's Cape
+					un(7, i(5111)),	-- Rathorian's Cape
 					i(5181),	-- Vibrant Silk Cape
 					i(5257),	-- Dark Hooded Cape
 					i(5751),	-- Webwing Cloak
@@ -428,7 +428,7 @@ _.WorldDrops =
 					i(13120),	-- Deepfury Bracers
 					i(13135),	-- Lordly Armguards
 					i(13199),	-- Crushridge Bindings
-					i(1351),	-- Fingerbone Bracers
+					un(7, i(1351)),	-- Fingerbone Bracers
 					i(18296),	-- Marksman Bands
 					i(18337),	-- Orphic Bracers
 					i(18700),	-- Malefic Bracers
@@ -439,7 +439,7 @@ _.WorldDrops =
 					i(18741),	-- Morlune's Bracer
 					i(1974),	-- Mindthrust Bracers
 					un(7, i(2017)),	-- Glowing Leather Bracers
-					i(3204),	-- Deepwood Bracers
+					un(7, i(3204)),	-- Deepwood Bracers
 					i(4438),	-- Pugilist Bracers
 					i(4794),	-- Wolf Bracers
 					i(4795),	-- Bear Bracers
@@ -486,7 +486,7 @@ _.WorldDrops =
 					i(3341),	-- Gauntlets of Ogre Strength
 					un(7, i(4465)),	-- Felstrom's Gauntlets
 					i(4767),	-- Coppercloth Gloves
-					i(4768),	-- Adept's Gloves
+					un(7, i(4768)),	-- Adept's Gloves
 					i(6628),	-- Raven's Claws
 					i(720),		-- Brawler Gloves
 					i(867),		-- Gloves of Holy Might
@@ -534,7 +534,7 @@ _.WorldDrops =
 					i(2899),	-- Wendigo Collar
 					i(2911),	-- Keller's Girdle
 					un(7, i(3229)), -- Tarantula Silk Sash
-					i(3429),	-- Guardsman Belt
+					un(7, i(3429)),	-- Guardsman Belt
 					i(4436),	-- Jewel-Encrusted Sash
 					i(4463),	-- Beaded Raptor Collar
 					un(7, i(4785)),	-- Brimstone Belt
@@ -576,7 +576,7 @@ _.WorldDrops =
 					un(7, i(4434)),	-- Scarecrow Trousers
 					i(4478),	-- Iridescent Scale Leggings
 					i(45052),	-- Gruffscale Leggings
-					i(4723),	-- Humbert's Pants
+					un(7, i(4723)),	-- Humbert's Pants
 					i(4800),	-- Mighty Chain Pants
 					i(4816),	-- Legionnaire's Leggings
 					i(4830),	-- Saber Leggings
