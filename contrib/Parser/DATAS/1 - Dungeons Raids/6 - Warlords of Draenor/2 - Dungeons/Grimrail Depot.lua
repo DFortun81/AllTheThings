@@ -9,7 +9,7 @@ _.Instances =
 			inst(536, { 	-- Grimrail Depot
 				["groups"] = {
 					d(1, {		-- Normal
-						
+						["ids"] = { 522 }, -- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 						
 								q(37151, {
@@ -129,7 +129,7 @@ _.Instances =
 						},
 					}),
 					d(2, {		-- Heroic
-						
+						["ids"] = { 524 }, -- Heroic
 						["groups"] = {
 							n(-17, {	-- Quests 			
 								q(37160, {
@@ -249,7 +249,7 @@ _.Instances =
 						},
 					}),
 					d(23, {		-- Mythic
-						
+						["ids"] = { 642 }, -- Mythic
 						["groups"] = {
 							cr(77803, e(1138, {	-- Railmaster Rocketspark
 								i(110051),	-- Overseer's Final Word

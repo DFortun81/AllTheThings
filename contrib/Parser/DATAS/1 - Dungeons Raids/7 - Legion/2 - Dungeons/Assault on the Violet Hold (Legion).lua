@@ -9,7 +9,7 @@ _.Instances =
 			inst(777, { 	-- Assault of Violet Hold (Legion)
 				["groups"] = {
 					d(1, {		-- Normal
-						
+						["ids"] = { 1826 }, -- Normal
 						["groups"] = {
 							cr(101995, e(1693, {	-- Festerface
 								i(137479),
@@ -93,7 +93,7 @@ _.Instances =
 						}
 					}),
 					d(2, {		-- Heroic
-						
+						["ids"] = { 1726 }, -- Heroic
 						["lvl"] = 110,
 						["groups"] = {
 							cr(101995, e(1693, {	-- Festerface
@@ -178,7 +178,7 @@ _.Instances =
 						}
 					}),
 					d(23, {		-- Mythic
-						
+						["ids"] = { 1727 }, -- Mythic
 						["lvl"] = 110,
 						["groups"] = {
 							cr(101995, e(1693, {	-- Festerface

@@ -9,7 +9,7 @@ _.Instances =
 			inst(312, { 	-- Shado-Pan Monastery
 				["groups"] = {
 					d( 1, {	-- Normal
-						
+						["ids"] = { 3543 }, -- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 				
 								q(30757, {
@@ -95,7 +95,7 @@ _.Instances =
 						},
 					}),
 					d( 2, {	-- Heroic
-						
+						["ids"] = { 524 }, -- Heroic
 						["lvl"] = 90,
 						["groups"] = {
 							cr(56747, e(673, {	-- Gu Cloudstrike
@@ -163,7 +163,7 @@ _.Instances =
 						},
 					}),
 					d(24, {	-- Timewalking
-						
+						["ids"] = { 615 },	-- Timewalking
 						["lvl"] = 85,
 						["groups"] = {
 							cr(56747, e(673, {	-- Gu Cloudstrike
