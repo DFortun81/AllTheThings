@@ -9,7 +9,7 @@ _.Instances =
 			inst(727, { 	-- Maw of Souls
 				["groups"] = {
 					d(1, {		-- Normal
-						
+						["ids"] = { 1826 }, -- Normal
 						["groups"] = {
 							cr(96756, e(1502, {	-- Ymiron, the Fallen King
 								i(133629),
@@ -49,7 +49,7 @@ _.Instances =
 						}
 					}),
 					d(2, {		-- Heroic
-						
+						["ids"] = { 1726 }, -- Heroic
 						["groups"] = {
 							cr(96756, e(1502, {	-- Ymiron, the Fallen King
 								i(133629),
@@ -89,7 +89,7 @@ _.Instances =
 						}
 					}),
 					d(23, {		-- Mythic
-						
+						["ids"] = { 1727 }, -- Mythic
 						["groups"] = {
 							cr(96756, e(1502, {	-- Ymiron, the Fallen King
 								i(133629),

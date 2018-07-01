@@ -73,12 +73,12 @@ _.Instances =
 						}),
 					}),
 					d(1, { -- Normal
-						
+						["ids"] = { 3524 },
 						["groups"] = {
 						},
 					}),
 					d(2, { -- Heroic
-						
+						["ids"] = { 3524 },
 						["groups"] = {
 							n(127882, { -- Vixx the Collector
 								i(153004), -- Unstable Portal Emitter
@@ -128,7 +128,7 @@ _.Instances =
 						},
 					}),
 					d(23, { -- Mythic
-						
+						["ids"] = { 3524 },
 						["groups"] = {
 							n(127882, { -- Vixx the Collector
 								i(153004), -- Unstable Portal Emitter

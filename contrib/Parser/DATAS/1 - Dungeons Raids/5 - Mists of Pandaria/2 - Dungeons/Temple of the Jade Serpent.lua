@@ -9,7 +9,7 @@ _.Instances =
 			inst(313, { 	-- Temple of the Jade Serpent
 				["groups"] = {
 					d( 1, {	-- Normal
-						
+						["ids"] = { 3543 },	-- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 					
 								q(31356, {
@@ -107,7 +107,7 @@ _.Instances =
 						},
 					}),
 					d( 2, {	-- Heroic
-						
+						["ids"] = { 524 },	-- Heroic
 						["lvl"] = 90,
 						["groups"] = {
 							cr(56448, e(672, {	-- Wise Mari
@@ -177,7 +177,7 @@ _.Instances =
 						},
 					}),
 					d(24, {	-- Timewalking
-						
+						["ids"] = { 615 },	-- Timewalking
 						["lvl"] = 85,
 						["groups"] = {
 							cr(56448, e(672, {	-- Wise Mari

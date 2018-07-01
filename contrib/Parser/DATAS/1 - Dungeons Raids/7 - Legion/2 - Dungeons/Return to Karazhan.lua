@@ -9,7 +9,7 @@ _.Instances =
 			inst(860, { 	-- Return to Karazhan
 				["groups"] = {
 					d(2, {		-- Heroic
-						
+						["ids"] = { 1726 }, -- Heroic
 						["groups"] = {
 							cr(114284, e(1820, {	-- Opera Hall: Wikket (Elfyra; Galindre 114251)
 								i(142296),
@@ -89,7 +89,7 @@ _.Instances =
 						}
 					}),
 					d(23, {		-- Mythic
-						
+						["ids"] = { 1727 }, -- Mythic
 						["groups"] = {
 							cr(114284, e(1820, {	-- Opera Hall: Wikket (Elfyra; Galindre 114251)
 								i(142296),
