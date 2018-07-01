@@ -804,11 +804,14 @@ _.Zones =
 						i(29744),	-- Gray Elekk
 					})),
 				}),
---[[				n(-40, {	-- Legacy
+				n(-40, {	-- Legacy
 					["groups"] = {
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 						n(-17, {	-- Quests (Legacy)
+							q(9675, {	-- Beast Training
+								un(34, i(24138)),	-- Silver Crossbow
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

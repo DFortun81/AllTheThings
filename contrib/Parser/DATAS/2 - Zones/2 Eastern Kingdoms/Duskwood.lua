@@ -353,8 +353,8 @@ _.Zones =
 						dr(01.5, i(6577)),	-- Defender Gauntlets
 						dr(01.3, i(9773)),	-- Greenweave Robe
 						nld({     -- Legacy
-							i(4474), 	-- Ravenwood Bow
-							i(6204),	-- Tribal Worg Helm
+							un(7, i(4474)), 	-- Ravenwood Bow
+							un(7, i(6204)),	-- Tribal Worg Helm
 						}),						
 					}), 
 					n(91592, {	-- Forlorn Composer
@@ -397,8 +397,8 @@ _.Zones =
 						dr(01.0, i(9812)),	-- Fortified Cloak
 						dr(01.0, i(9774)),	-- Greenweave Vest					
 						nld({     -- Legacy
-							i(3018),	-- Hide of Lupos
-							i(3227),	-- Nightbane Staff
+							un(7, i(3018)),	-- Hide of Lupos
+							un(7, i(3227)),	-- Nightbane Staff
 						}),					
 					}), 
 					n(45811, { 	-- Marina DeSirrus
@@ -499,8 +499,8 @@ _.Zones =
 						dr(01.0, i(9772)),	-- Greenweave Leggings
 						dr(01.0, i(6587)),	-- Scouting Trousers	
 						nld({     -- Legacy
-							i(4448),	-- Husk of Naraxis
-							i(4449),	-- Naraxis' Fang						
+							un(7, i(4448)),	-- Husk of Naraxis
+							un(7, i(4449)),	-- Naraxis' Fang						
 						}),						
 					}), 
 					n(534, { 	-- Nefaru
@@ -538,8 +538,8 @@ _.Zones =
 						dr(01.0, i(9817)),	-- Fortified Spaulders
 						dr(01.0, i(9795)),	-- Ivycloth Gloves		
 						nld({     -- Legacy
-							i(4477),	-- Nefarious Buckler
-							i(4476),	-- Beastwalker Robe
+							un(7, i(4477)),	-- Nefarious Buckler
+							un(7, i(4476)),	-- Beastwalker Robe
 						}),								
 					}), 
 					n(45739, { 	-- The Unknown Soldier
