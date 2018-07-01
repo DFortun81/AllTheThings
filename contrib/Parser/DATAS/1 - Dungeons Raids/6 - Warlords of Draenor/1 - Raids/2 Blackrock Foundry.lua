@@ -9,7 +9,7 @@ _.Instances =
 			inst(457, { 	-- Blackrock Foundry
 				["groups"] = {
 					d(17, {		-- LFR
-						 
+						["ids"] = { 3524 }, 
 						["groups"] = {
 							ach(8989, { 	-- Slagworks	
 								cr(77182, e(1202, {	-- Oregorger

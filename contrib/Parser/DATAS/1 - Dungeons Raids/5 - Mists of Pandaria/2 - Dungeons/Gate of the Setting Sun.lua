@@ -9,6 +9,7 @@ _.Instances =
 			inst(303, { 	-- Gate of the Setting Sun
 				["groups"] = {
 					d( 1, {	-- Normal
+						["ids"] = { 3541 },	-- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 					
 								q(31364, {	-- That's a Big Bug!
@@ -78,6 +79,7 @@ _.Instances =
 						},
 					}),
 					d( 2, {	-- Heroic
+						["ids"] = { 524 },	-- Heroic
 						["lvl"] = 90,
 						["groups"] = {
 							cr(56906, e(655, {	-- Saboteur Kip'tilak
@@ -147,7 +149,7 @@ _.Instances =
 						},
 					}),
 					d(24, {	-- Timewalking
-						
+						["ids"] = { 615 },	-- Timewalking
 						["lvl"] = 85,
 						["groups"] = {
 							cr(56906, e(655, {	-- Saboteur Kip'tilak
