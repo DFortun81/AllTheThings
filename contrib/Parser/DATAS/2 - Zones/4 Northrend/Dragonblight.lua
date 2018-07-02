@@ -818,16 +818,16 @@ _.Zones =
 					-- 	}),
 					-- })),
 					n(-168, {		-- Other Quests
-						sz(1265, 1, {	--Galakrond's Rest
-						}),
-						sz(1265, 2, {	--Lake Indu'le
-						}),
-						sz(1265, 3, {	--Obsidian Dragonshrine
-						}),
-						sz(1265, 4, {	--New Hearthglen
-						}),
-						sz(1265, 5, {	--Naxxramas
-						}),
+						-- sz(1265, 1, {	--Galakrond's Rest
+						-- }),
+						-- sz(1265, 2, {	--Lake Indu'le
+						-- }),
+						-- sz(1265, 3, {	--Obsidian Dragonshrine
+						-- }),
+						-- sz(1265, 4, {	--New Hearthglen
+						-- }),
+						-- sz(1265, 5, {	--Naxxramas
+						-- }),
 						sz(1265, 6, {	--Light's Trust
 							q(12545, {	-- The Cleansing Of Jintha'kalar
 								["groups"] = {
@@ -847,16 +847,16 @@ _.Zones =
 								["sourceQuests"] = {12545},
 							}),
 						}),
-						sz(1265, 7, {	--Icemist Village
-						}),
-						sz(1265, 8, {	--Emerald Dragonshrine
-						}),
-						sz(1265, 9, {	--Coldwind Heights
-						}),
-						sz(1265, 10, {	--Angrathar the Wrath Gate
-						}),
-						sz(1265, 11, {	--Agmar's Hammer
-						}),
+						-- sz(1265, 7, {	--Icemist Village
+						-- }),
+						-- sz(1265, 8, {	--Emerald Dragonshrine
+						-- }),
+						-- sz(1265, 9, {	--Coldwind Heights
+						-- }),
+						-- sz(1265, 10, {	--Angrathar the Wrath Gate
+						-- }),
+						-- sz(1265, 11, {	--Agmar's Hammer
+						-- }),
 						sz(1265, 12, {	--Wyrmrest Temple
 							q(12372, {	--  Defending Wyrmrest Temple
 								["groups"] = {
@@ -865,12 +865,12 @@ _.Zones =
 								["sourceQuests"] = {12435},
 							}),
 						}),
-						sz(1265, 13, {	--Westwind Refugee Camp
-						}),
-						sz(1265, 14, {	--Venomspite
-						}),
-						sz(1265, 15, {	--The Forgotten Shore
-						}),
+						-- sz(1265, 13, {	--Westwind Refugee Camp
+						-- }),
+						-- sz(1265, 14, {	--Venomspite
+						-- }),
+						-- sz(1265, 15, {	--The Forgotten Shore
+						-- }),
 						sz(1265, 16, {	--The Crystal Vice
 							q(12112, {	--  Stiff Negotiations
 								["groups"] = {
@@ -886,8 +886,8 @@ _.Zones =
 								["sourceQuests"] = {12075},
 							}),
 						}),
-						sz(1265, 17, {	--Scarlet Point
-						}),
+						-- sz(1265, 17, {	--Scarlet Point
+						-- }),
 						-- Need "Nozzlerust Post" Header
 						q(12043, {	--  Nozzlerust Defense
 							["groups"] = {
