@@ -655,7 +655,7 @@ _.WorldDrops =
 					i(13036),	-- Assassination Blade
 					un(7, i(1469)), -- Scimitar of Atun
 					i(1482),	-- Shadowfang
-					i(1493),	-- Heavy Marauder Scimitar
+					un(7, i(1493)),	-- Heavy Marauder Scimitar
 					i(15210),	-- Raider Shortsword
 					i(15211),	-- Militant Shortsword
 					i(15212),	-- Fighter Broadsword
@@ -693,8 +693,8 @@ _.WorldDrops =
 					i(809),		-- Bloodrazor
 					i(8190),	-- Hanzo Sword
 					i(8196),	-- Ebon Scimitar
-					i(8223),	-- Blade of the Basilisk
-					i(8224),	-- Silithid Ripper
+					un(7, i(8223)),	-- Blade of the Basilisk
+					un(7, i(8224)),	-- Silithid Ripper
 					i(8225),	-- Tainted Pierce
 					i(8226),	-- The Butcher
 					i(864),		-- Knightly Longsword

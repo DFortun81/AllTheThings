@@ -1131,7 +1131,7 @@ _.Zones =
 						dr(	1	, i(	7523	)), --	Gossamer Shoulderpads
 						dr(	1	, i(	10094	)), --	Gothic Plate Vambraces
 						nld({    	-- Legacy
-							i(8223), 	-- Blade of the Basilisk					
+							un(7, i(8223)), 	-- Blade of the Basilisk					
 						}),							
 					}), 
 					n(50741, { 		-- Kaxx
@@ -1198,7 +1198,7 @@ _.Zones =
 						dr(	1	, i(	7478	)), --	Ranger Leggings
 						dr(	1	, i(	9917	)), --	Tracker's Boots
 						nld({    	-- Legacy
-							i(8224), 	-- Silithid Ripper					
+							un(7, i(8224)), 	-- Silithid Ripper					
 						}),							
 					}), 
 					n(50748, { 		-- Nyaj
@@ -1340,12 +1340,7 @@ _.Zones =
 						dr(	1.1	, i(	7522	)), --	Gossamer Boots
 						dr(	1.1	, i(	9925	)), --	Tracker's Wristguards
 						dr(	1.1	, i(	9956	)), --	Warmonger's Bracers
-					}), 
-					nld({    	-- Legacy
-						n(4099, { 	-- Galak Marauder
-							i(1493),	-- Heaver Marauder Scimitar
-						}),
-					}),						
+					}), 					
 				}),
 				n( -2, {	-- Vendors
 					n(41135, {		-- "Plucky" Johnson
