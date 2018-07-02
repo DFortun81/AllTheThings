@@ -1043,7 +1043,6 @@ u(41190, 5);		-- Legplates of Conquest
 --------------------------------------------------------------------------------------------------------------------------------------------
 -- Template: u(, 7);	--
 
-u(1493, 7);		-- Heavy Marauder Scimitar  				(Galak Marauder - Thousand Needles - 4099)
 u(1521, 7);		-- Lumbering Ogre Axe  						(Dustbelcher Lords - Badlands - 2719)
 u(1539, 7);		-- Gnarled Hermit's Staff 			(13) 	(Geopriest Gukk'rok - Southern Barrens - 5863)
 u(1604, 7);		-- Chromatic Sword							(Scale Belly - The Cape of Stranglethorn - 1552)
@@ -1094,8 +1093,6 @@ u(6198, 7);		-- Jurassic Wristguards 			(19) 	(Razormaw Matriarch - Wetlands - 1
 u(6200, 7);		-- Garneg's War Belt 				(9) 	(Garneg Charskull - Wetlands - 2108)
 u(6333, 7);		-- Spikelash Dagger 				(6) 	(Lady Vespira - Darkshore - 7016)
 u(6628, 7);		-- Raven's Claws  							(Ravenclaw Regent - Silverpine Forest - 2283)
-u(8223, 7);		-- Blade of the Basilisk					(Ironeye the Invincible - Thousand Needles - 5935)
-u(8224, 7);		-- Silithid Ripper							(Krkk'kx - Thousand Needles - 4132)
 u(9375, 7);		-- Expert Goldmaker's Helmet 				(Digmaster Shovelphlange - Badlands - 7057)
 u(9378, 7);		-- Shovelphlange's Mining Axe 				(Digmaster Shovelphlange - Badlands - 7057)
 u(9382, 7);		-- Tromping Miner's Boots 					(Digmaster Shovelphlange - Badlands - 7057)
