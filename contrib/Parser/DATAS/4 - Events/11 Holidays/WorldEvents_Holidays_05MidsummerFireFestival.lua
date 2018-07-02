@@ -1840,8 +1840,6 @@ _.WorldEvents =
 					}),
 					n(-139, { -- Bosses
 						n(25740, { -- Ahune
-							["description"] = "|cff66ccffYou can only loot the satchels once per day per toon by completing your first run of the day.|r",
-							["maps"] = { 728 },	-- The Slave Pens
 							["groups"] = {
 								ach(263),	-- Ice the Frost Lord
 								un(21, i(149753, { -- Knapsack of Chilled Goods [Uncommon Quality]
@@ -1899,6 +1897,8 @@ _.WorldEvents =
 								un(21, i(117376)),	-- The Frost Lord's Battle Shroud
 								un(21, i(117377)),	-- The Frost Lord's War Cloak
 							},		
+							["description"] = "|cff66ccffYou can only loot the satchels once per day per toon by completing your first run of the day.|r",
+							["maps"] = { 728 },	-- The Slave Pens
 						}),
 					}),
 					n(-17, { -- Quests
