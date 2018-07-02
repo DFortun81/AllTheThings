@@ -726,6 +726,12 @@ _.Zones =
 								["qg"] = 26659,	-- Zort
 								["sourceQuests"] = {12076},
 							}),
+							q(12078, {	--  Worm Wrangler
+								["groups"] = {
+								},
+								["qg"] = 26659,	-- Zort
+								["sourceQuests"] = {12077},
+							}),
 							q(12080, {	-- Really Big Worm
 								["groups"] = {
 									i(37945),	-- Thin Jormungar Legwraps
@@ -866,56 +872,6 @@ _.Zones =
 						sz(1265, 15, {	--The Forgotten Shore
 						}),
 						sz(1265, 16, {	--The Crystal Vice
-							q(12045, {	--  Shaved Ice
-								["groups"] = {
-								},
-								["qg"] = 26661,	-- Zivlix
-							}),
-							q(12046, {	--  Soft Packaging
-								["groups"] = {
-								},
-								["qg"] = 26661,	-- Zivlix
-								["sourceQuests"] ={12045},
-							}),
-							q(12047, {	-- Something That Doesn't Melt
-								["groups"] = {
-									i(37948),	-- Refractive Shoulderpads
-									i(37991),	-- Hyper-Amplified Natural Leather Vest
-									i(38035),	-- Tightened Chainmesh Boots
-									i(38072),	-- Thunder Capacitator
-									i(38080),	-- Automated Weapon Coater
-								},
-								["qg"] = 26661,	-- Zivlix
-								["sourceQuests"] ={12046},
-							}),
-							q(12049, {	--  Hard to Swallow
-								["groups"] = {
-								},
-								["qg"] = 26660,	-- Xink
-								["sourceQuests"] = {12046},
-							}),
-							q(12050, {	-- Lumber Hack
-								["groups"] = {
-									i(38197),	-- Mounted Boneshredder
-									i(38141),	-- Coldwind Scratching Pole
-									i(38143),	-- Composite Harpyspine Staff
-									i(38191),	-- Compact Explosive Delivery Device
-									i(38187),	-- Reactive Waraxe
-									i(38142),	-- Infused Dragonbone Splinter
-								},
-								["qg"] = 26660,	-- Xink
-								["sourceQuests"] = {12047},
-							}),
-							q(12052, {	-- Harp on This!
-								["groups"] = {
-									i(37947),	-- Miraculous Waistwarming Band
-									i(37990),	-- Narf's Explosiveproof Strand
-									i(38034),	-- Serrated Chain Links
-									i(38097),	-- Experimental Utility Belt
-								},
-								["qg"] = 26647,	-- Narf
-								["sourceQuests"] = {12047},
-							}),
 							q(12112, {	--  Stiff Negotiations
 								["groups"] = {
 								},
@@ -923,37 +879,76 @@ _.Zones =
 								["sourceQuests"] = {12052},
 								["isBreadcrumb"] = true,
 							}),
-							q(12469, {	--  Return to Sender
-								["groups"] = {
-								},
-								["qg"] = 26896,	-- Nozzlerust Supply Runner
-								["isBreadcrumb"] = true,
-							}),
-							q(12044, {	--  Stocking Up
-								["groups"] = {
-								},
-								["qg"] = 26660,	-- Xink
-								["sourceQuests"] = {12469},
-							}),
-							q(12043, {	--  Nozzlerust Defense
-								["groups"] = {
-								},
-								["qg"] = 26647,	-- Narf
-							}),
 							q(12079, {	--  Stomping Grounds
 								["groups"] = {
 								},
 								["qg"] = 26473,	-- Ko'char the Unbreakable
 								["sourceQuests"] = {12075},
 							}),
-							q(12078, {	--  Worm Wrangler
-								["groups"] = {
-								},
-								["qg"] = 26659,	-- Zort
-								["sourceQuests"] = {12077},
-							}),
 						}),
 						sz(1265, 17, {	--Scarlet Point
+						}),
+						-- Need "Nozzlerust Post" Header
+						q(12043, {	--  Nozzlerust Defense
+							["groups"] = {
+							},
+							["qg"] = 26647,	-- Narf
+						}),
+						q(12044, {	--  Stocking Up
+							["groups"] = {
+							},
+							["qg"] = 26660,	-- Xink
+							["sourceQuests"] = {12469},
+						}),
+						q(12045, {	--  Shaved Ice
+							["groups"] = {
+							},
+							["qg"] = 26661,	-- Zivlix
+						}),
+						q(12046, {	--  Soft Packaging
+							["groups"] = {
+							},
+							["qg"] = 26661,	-- Zivlix
+							["sourceQuests"] ={12045},
+						}),
+						q(12049, {	--  Hard to Swallow
+							["groups"] = {
+							},
+							["qg"] = 26660,	-- Xink
+							["sourceQuests"] = {12046},
+						}),
+						q(12047, {	-- Something That Doesn't Melt
+							["groups"] = {
+								i(37948),	-- Refractive Shoulderpads
+								i(37991),	-- Hyper-Amplified Natural Leather Vest
+								i(38035),	-- Tightened Chainmesh Boots
+								i(38072),	-- Thunder Capacitator
+								i(38080),	-- Automated Weapon Coater
+							},
+							["qg"] = 26661,	-- Zivlix
+							["sourceQuests"] ={12046},
+						}),
+						q(12050, {	-- Lumber Hack
+							["groups"] = {
+								i(38197),	-- Mounted Boneshredder
+								i(38141),	-- Coldwind Scratching Pole
+								i(38143),	-- Composite Harpyspine Staff
+								i(38191),	-- Compact Explosive Delivery Device
+								i(38187),	-- Reactive Waraxe
+								i(38142),	-- Infused Dragonbone Splinter
+							},
+							["qg"] = 26660,	-- Xink
+							["sourceQuests"] = {12047},
+						}),
+						q(12052, {	-- Harp on This!
+							["groups"] = {
+								i(37947),	-- Miraculous Waistwarming Band
+								i(37990),	-- Narf's Explosiveproof Strand
+								i(38034),	-- Serrated Chain Links
+								i(38097),	-- Experimental Utility Belt
+							},
+							["qg"] = 26647,	-- Narf
+							["sourceQuests"] = {12047},
 						}),
 						-- Need "Moonrest Gardens" Header
 						q(12006, {	--  Avenge this Atrocity!
@@ -1154,6 +1149,12 @@ _.Zones =
 							["model"] = "World\\Generic\\Passive Doodads\\Wantedposters\\newwantedposter03.mdx",
 						}),
 						-- Need "The Dragon Wastes" Header
+						q(12469, {	--  Return to Sender
+							["groups"] = {
+							},
+							["qg"] = 26896,	-- Nozzlerust Supply Runner
+							["isBreadcrumb"] = true,
+						}),
 						q(12142, {	--  Pest Control [A]
 							["groups"] = {
 							},
