@@ -18,118 +18,42 @@ _.WorldEvents =
 								un(20, title(104)), -- Matron (Female characters)
 								un(20, title(105)), -- Patron (Male characters)
 								ach(1792, { -- Aw, Isn't It Cute?
-									["groups"] = {
-									},
+									["groups"] = {},
 									["u"] = 20, -- Children's Week
 								}),
 								ach(1788, { -- Bad Example
 									["groups"] = {
-										{
-											["achievementID"] = 1788, -- Bad Example
-											["criteriaID"] = 1, -- Tigule and Foror's Strawberry Ice Cream
-											["maps"] = {
-												301, -- Stormwind City
-												321, -- Orgrimmar
-											},
-											["u"] = 20, -- Children's Week
-										},
-										{
-											["achievementID"] = 1788, -- Bad Example
-											["criteriaID"] = 2, -- Tasty Cupcake
-											["u"] = 20, -- Children's Week
-										},
-										{
-											["achievementID"] = 1788, -- Bad Example
-											["criteriaID"] = 3, -- Red Velvet Cupcake
-											["maps"] = {
-												504, -- Dalaran (Northrend)
-												1014, -- Dalaran (Broken Isles)
-											},
-											["u"] = 20, -- Children's Week
-										},
-										{
-											["achievementID"] = 1788, -- Bad Example
-											["criteriaID"] = 4, -- Delicious Chocolate Cake
-											["u"] = 20, -- Children's Week
-										},
-										{
-											["achievementID"] = 1788, -- Bad Example
-											["criteriaID"] = 5, -- Lovely Cake Slice
-											["maps"] = {
-												504, -- Dalaran (Northrend)
-												903, -- Shrine of Two Moons
-												905, -- Shrine of Seven Stars
-											},
-											["u"] = 20, -- Children's Week
-										},
-										{
-											["achievementID"] = 1788, -- Bad Example
-											["criteriaID"] = 6, -- Dalaran Brownie
-											["maps"] = {
-												504, -- Dalaran (Northrend)
-												1014, -- Dalaran (Broken Isles
-											},
-											["u"] = 20, -- Children's Week
-										},
-										{
-											["achievementID"] = 1788, -- Bad Example
-											["criteriaID"] = 7, -- Dalaran Doughnut
-											["maps"] = {
-												504, -- Dalaran (Northrend)
-												1014, -- Dalaran (Broken Isles
-											},
-											["u"] = 20, -- Children's Week
-										},
+										crit(1), -- Tigule and Foror's Strawberry Ice Cream
+										crit(2), -- Tasty Cupcake
+										crit(3), -- Red Velvet Cupcake
+										crit(4), -- Delicious Chocolate Cake
+										crit(5), -- Lovely Cake Slice
+										crit(6), -- Dalaran Brownie
+										crit(7), -- Dalaran Doughnut
 									},
 									["u"] = 20, -- Children's Week
 								}),
 								ach(1789, { -- Daily Chores
 									["groups"] = {
-										{
-											["achievementID"] = 1789, -- Daily Chores
-											["criteriaID"] = 1, -- Complete five daily quests with your orphan out.
-											["u"] = 20, -- Children's Week
-										},
+										crit(1), -- Complete five daily quests with your orphan out.
 									},
 									["u"] = 20, -- Children's Week
 								}),
 								ach(1790, { -- Hail To The King, Baby
-									["groups"] = {
-									},
+									["groups"] = {},
 									["maps"] = { 524, }, -- Utgarde Pinnacle
 									["u"] = 20, -- Children's Week
 								}),
 								ach(1791, { -- Home Alone
-									["groups"] = {
-									},
+									["groups"] = {},
 									["u"] = 20, -- Children's Week
 								}),
 								ach(1786, { -- School of Hard Knocks
 									["groups"] = {
-										{
-											["achievementID"] = 1786, -- School of Hard Knocks
-											["criteriaID"] = 1, -- Capture the flag in Eye of the Storm
-											["maps"] = { 482, }, -- Eye of the Storm
-											["u"] = 20, -- Children's Week
-										},
-										{
-											["achievementID"] = 1786, -- School of Hard Knocks
-											["criteriaID"] = 2, -- Assault a tower in Alterac Valley
-											["maps"] = { 401, }, -- Alterac Valley
-											["u"] = 20, -- Children's Week
-										},
-										{
-											["achievementID"] = 1786, -- School of Hard Knocks
-											["criteriaID"] = 3, -- Assault a flag in Arathi Basin
-											["maps"] = { 461, }, -- Arathi Basin
-											["u"] = 20, -- Children's Week
-										},
-										{
-											["achievementID"] = 1786, -- School of Hard Knocks
-											["criteriaID"] = 4, -- Return a fallen flag in Warsong Gulch
-											["maps"] = { 443, }, -- Warsong Gulch
-											["u"] = 20, -- Children's Week
-										},
+										crit(1), -- Capture the flag in Eye of the Storm
+										crit(2), -- Assault a tower in Alterac Valley
+										crit(3), -- Assault a flag in Arathi Basin
+										crit(4), -- Return a fallen flag in Warsong Gulch
 									},
 									["u"] = 20, -- Children's Week
 								}),
@@ -137,21 +61,9 @@ _.WorldEvents =
 						}),
 						ach(275, { -- Veteran Nanny
 							["groups"] = {
-								{
-									["achievementID"] = 275, -- Veteran Nanny
-									["criteriaID"] = 1, -- Peanut (Pet)
-									["u"] = 20, -- Children's Week
-								},
-								{
-									["achievementID"] = 275, -- Veteran Nanny
-									["criteriaID"] = 2, -- Willy (Pet)
-									["u"] = 20, -- Children's Week
-								},
-								{
-									["achievementID"] = 275, -- Veteran Nanny
-									["criteriaID"] = 3, -- Egbert (Pet)
-									["u"] = 20, -- Children's Week
-								},
+								crit(1), -- Peanut (Pet)
+								crit(2), -- Willy (Pet)
+								crit(3), -- Egbert (Pet)
 							},
 							["u"] = 20, -- Children's Week
 						}),
