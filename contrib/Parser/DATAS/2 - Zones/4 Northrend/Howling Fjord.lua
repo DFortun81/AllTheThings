@@ -58,67 +58,6 @@ _.Zones =
 						},
 					},
 				}),
---[[				n(-3, { 	-- Holidays
-					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
---]]					
---[[					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),	--]]							
 				n(-25, { 	-- Pet Battle
 					p(646), 	-- Chicken
 					p(523), 	-- Devouring Maggot
@@ -138,567 +77,1759 @@ _.Zones =
 					p(1238), 	-- Unborn Val'kyr
 				}),
 				n(-17, { 	-- Quests
---[[				
-					q(11476),	-- A Carver and a Croaker
-					qh( 11282),	-- A Lesson in Fear
-					q(11568),	-- A Return to Resting
-					qh( 11272),	-- A Score to Settle
-					qh( 11305),	-- A Tailor-Made Formula
-					q(11473),	-- A Traitor Among Us
-					qa( 11330),	-- Absholutely... Thish Will Work!
-					qh( 12481),	-- Adding Injury to Insult
-					qh( 12482),	-- Against Nifflevar
-					qa( 11250),	-- All Hail the Conqueror of Skorn!
-					qa( 29608),	-- Allies in Dalaran
-					qh( 11324),	-- Alpha Worg
-					qa( 11326),	-- Alpha Worg
-					qh( 11230),	-- Ambushed!
-					qa( 11276),	-- And Then There Were Two...
-					qa( 11394),	-- And You Thought Murlocs Smelled Bad!
-					qh( 11397),	-- And You Thought Murlocs Smelled Bad!
-					qa( 11344),	-- Anguish of Nifflevar
-					qh( 11306),	-- Apply Heat and Stir
-					q(11457),	-- Arming Kamagua
-					q(11458),	-- Avenge Iskaal
-					qh( 11283),	-- Baleheim Bodycount
-					qh( 11285),	-- Baleheim Must Burn!
-					q(31931),	-- Beegle Blastfuse
-					qh( 11301),	-- Brains! Brains! Brains!
-					qa( 11153),	-- Break the Blockade
-					qh( 11399),	-- Bring Down Those Shields
-					qa( 11396),	-- Bring Down Those Shields
-					qh( 11415),	-- Brother Betrayers
-					qa( 11414),	-- Brother Betrayers
-					qa( 11247),	-- Burn Skorn, Burn!
-					qh( 11258),	-- Burn Skorn, Burn!
-					qh( 13466),	-- Candy Bucket
-					qa( 13435),	-- Candy Bucket
-					qa( 13434),	-- Candy Bucket
-					qh( 13464),	-- Candy Bucket
-					qa( 13433),	-- Candy Bucket
-					qh( 13465),	-- Candy Bucket
-					q(13452),	-- Candy Bucket
-					qa( 13268),	-- Cloth Scavenging
-					qh( 13269),	-- Cloth Scavenging
-					q(3861),	-- CLUCK!
-					q(11479),	-- "Crowleg" Dan
-					qa( 11443),	-- Daggercap Divin'
-					qa( 11218),	-- Danger! Explosives!
-					q(11467),	-- Dead Man's Debt
-					qa( 11235),	-- Dealing With Gjalerbron
-					qh( 11263),	-- Dealing With Gjalerbron
-					qa( 11359),	-- Demolishing Megalith
-					qh( 11367),	-- Demolishing Megalith
-					qa( 11755),	-- Desecrate this Fire!
-					qa( 11732),	-- Desecrate this Fire!
-					qh( 11581),	-- Desecrate this Fire!
-					qh( 11745),	-- Desecrate this Fire!
-					qh( 11749),	-- Desecrate this Fire!
-					qa( 11766),	-- Desecrate this Fire!
-					qa( 11786),	-- Desecrate this Fire!
-					qa( 13453),	-- Desecrate this Fire!
-					qa( 11580),	-- Desecrate this Fire!
-					qh( 13444),	-- Desecrate this Fire!
-					qh( 13206),	-- Disarmament
-					qa( 11269),	-- Down to the Wire
-					qh( 11280),	-- Draconis Gastritis
-					qa( 11290),	-- Dragonflayer Battle Plans
-					qa( 11429),	-- Drop It then Rock It!
-					q(11507),	-- Elder Atuik and Kamagua
-					qa( 11406),	-- Everything Must Be Ready
-					qa( 11416),	-- Eyes of the Eagle
-					qh( 11417),	-- Eyes of the Eagle
-					qa( 11468),	-- Falcon Versus Hawk
-					q(11456),	-- Feeding the Survivors
-					qh( 11307),	-- Field Test
-					qh( 11287),	-- Find Sage Mistwalker
-					q(11434),	-- Forgotten Treasure
-					qa( 11251),	-- Fresh Legs
-					qh( 29609),	-- Friends in Dalaran
-					q(11464),	-- Gambling Debt
-					qh( 12181),	-- Give it a Name
-					qh( 11266),	-- Gjalerbron Attack Plans
-					qa( 11237),	-- Gjalerbron Attack Plans
-					qh( 11279),	-- Green Eggs and Whelps
-					q(11508),	-- Grezzix Spindlesnap
-					qa( 11246),	-- Gruesome, But Necessary
-					qh( 11257),	-- Gruesome, But Necessary
-					qh( 11232),	-- Guide Our Sights
-					q(11289),	-- Guided by Honor
-					qa( 11430),	-- Harpoon Master Yavus
-					qh( 11271),	-- Hasty Preparations
-					qa( 11228),	-- Hell Has Frozen Over...
-					qh( 12566),	-- Help for Camp Winterhoof
-					qa( 12298),	-- High Commander Halford Wyrmbane
-					qa( 13488),	-- Honor the Flame
-					qh( 13496),	-- Honor the Flame
-					qa( 11329),	-- I'll Try Anything!
-					qa( 11390),	-- I've Got a Flying Machine!
-					qa( 11243),	-- If Valgarde Falls...
-					qa( 11239),	-- In Service to the Light
-					qa( 11325),	-- In Worg's Clothing
-					qh( 11323),	-- In Worg's Clothing					
-					qh( 11262),	-- Ingvar Must Die!
-					qa( 11333),	-- Into the World of Spirits
-					qa( 11489),	-- Iron Rune Constructs and You: Collecting Data
-					qa( 11485),	-- Iron Rune Constructs and You: Rocket Jumping
-					qa( 11491),	-- Iron Rune Constructs and You: The Bluff
-					qa( 11421),	-- It Goes to 11...
-					qa( 11395),	-- It's a Scourge Device
-					qh( 11398),	-- It's a Scourge Device
-					q(11466),	-- Jack Likes His Drink
-					q(11428),	-- Keeper Witherleaf
-					qh( 11297),	-- Keeping Watch on the Interlopers
-					qh( 11233),	-- Landing the Killing Blow
-					qa( 11240),	-- Leader of the Deranged
-					qh( 11227),	-- Let Them Eat Crow
-					qa( 11436),	-- Let's Go Surfing Now
-					qa( 11494),	-- Lightning Infused Relics
-					qa( 11426),	-- Locating the Mechanism
-					qa( 11187),	-- Mage-Lieutenant Malister
-					qh( 11275),	-- Making the Horn
-					qh( 11365),	-- March of the Giants
-					qa( 11355),	-- March of the Giants
-					qa( 11349),	-- Mastering the Runes
-					qh( 11351),	-- Mastering the Runes
-					qa( 11427),	-- Meet Lieutenant Icehammer...
-					q(11480),	-- Meet Number Two
-					qh( 11281),	-- Mimicking Nature's Call
-					qa( 11202),	-- Mission: Eternal Flame
-					qa( 11328),	-- Mission: Forsaken Intel
-					qa( 11327),	-- Mission: Package Retrieval
-					qa( 11332),	-- Mission: Plague This!
-					q(11527),	-- Mutiny on the Mercy
-					qa( 11175),	-- My Daughter
-					qa( 11236),	-- Necro Overlord Mezhen
-					qh( 11264),	-- Necro Overlord Mezhen
-					qh( 11304),	-- New Agamand
-					qa( 11501),	-- News From the East
-]]--
-					qh( 13089, {-- Northern Cooking
-						recipe(57421),	-- Northern Stew
+					a(ach(34, {	-- I've Toured the Fjord [A]
+						crit(1, {	--The Ill-Equipped Port
+							q(11228, {	--  Hell Has Frozen Over... [A]
+								["groups"] = {
+								},
+								["qg"] = 23547,	-- Macalroy
+							}),
+							q(11243, {	--  If Valgarde Falls... [A]
+								["groups"] = {
+								},
+								["qg"] = 23546,	-- Vice Admiral Keller
+								["sourceQuests"] = {11228},
+							}),
+							q(11244, {	--  Rescuing the Rescuers [A]
+								["groups"] = {
+								},
+								["qg"] = 23546,	-- Vice Admiral Keller
+								["sourceQuests"] = {11243},
+							}),
+							q(11420, {	--  The Path to Payback [A]
+								["groups"] = {
+								},
+								["qg"] = 23728,	-- Guard Captain Zorek
+								["sourceQuests"] = {11244},
+							}),
+							q(11426, {	--  Locating the Mechanism [A]
+								["groups"] = {
+								},
+								["qg"] = 23728,	-- Guard Captain Zorek
+								["sourceQuests"] = {11420},
+							}),
+							q(11427, {	--  Meet Lieutenant Icehammer... [A]
+								["groups"] = {
+								},
+								["qg"] = 23728,	-- Guard Captain Zorek
+								["sourceQuests"] = {11426},
+							}),
+							q(11429, {	--  Drop It then Rock It! [A]
+								["groups"] = {
+								},
+								["qg"] = 24634,	-- Lieutenant Icehammer
+								["sourceQuests"] = {11427},
+							}),
+							q(11430, {	--  Harpoon Master Yavus [A]
+								["groups"] = {
+								},
+								["qg"] = 24634,	-- Lieutenant Icehammer
+								["sourceQuests"] = {11429},
+							}),
+							q(11421, {	--  It Goes to 11... [A]
+								["groups"] = {
+								},
+								["qg"] = 24634,	-- Lieutenant Icehammer
+								["sourceQuests"] = {11430},
+							}),
+							q(11436, {	--  Let's Go Surfing Now [A]
+								["groups"] = {
+								},
+								["qg"] = 24634,	-- Lieutenant Icehammer
+								["sourceQuests"] = {11421},
+							}),
+						}),
+						crit(2, {	--Descendants of the Vrykul
+							q(11333, {	--  Into the World of Spirits [A]
+								["groups"] = {
+								},
+								["qg"] = 23975,	-- Thoralius the Wise
+								["sourceQuests"] = {11244},
+							}),
+							q(11343, {	--  The Echo of Ymiron [A]
+								["groups"] = {
+								},
+								["qg"] = 23975,	-- Thoralius the Wise
+								["sourceQuests"] = {11333},
+							}),
+							q(11344, {	-- Anguish of Nifflevar [A]
+								["groups"] = {
+									i(35832),	-- Blauvelt's Special Occasion Gloves
+									i(35834),	-- Nimblefinger Scaled Gloves
+									i(35835),	-- Antique Reinforced Legguards
+									i(35833),	-- Imperious Worghide Cap
+								},	
+								["sourceQuests"] = {11343},
+							}),	
+						}),
+						crit(3, {	--Iron Rune Constructs
+							q(11273, {	--  The Human League [A]
+								["groups"] = {
+								},
+								["qg"] = 23548,	-- Beltrand McSorf
+								["sourceQuests"] = {11244},
+							}),
+							q(11274, {	--  Zedd's Probably Dead [A]
+								["groups"] = {
+								},
+								["qg"] = 24122,	-- Pulroy the Archaeologist
+								["sourceQuests"] = {11273},
+							}),
+							q(11276, {	--  And Then There Were Two... [A]
+								["groups"] = {
+								},
+								["qg"] = 24145,	-- Zedd
+								["sourceQuests"] = {11274},
+							}),
+							q(11277, {	--  The Depths of Depravity [A]
+								["groups"] = {
+								},
+								["qg"] = 24150,	-- Glorenfeld
+								["sourceQuests"] = {11276},
+							}),
+							q(11299, {	--  The Ring of Judgment [A]
+								["groups"] = {
+								},
+								["qg"] = 24150,	-- Glorenfeld
+								["sourceQuests"] = {11277},
+							}),
+							q(11300, {	--  Stunning Defeat at the Ring [A]
+								["groups"] = {
+								},
+								["qg"] = 24151,	-- Daegarn
+								["sourceQuests"] = {11299},
+							}),
+							q(11278, {	-- Return to Valgarde [A]
+								["groups"] = {
+									i(35820),	-- Deacon's Wraps
+									i(35818),	-- Stretch-Hide Spaulders
+									i(35821),	-- Streamlined Stompers
+									i(35822),	-- Scavenged Tirasian Plate
+								},
+								["sourceQuests"] = {11300},
+							}),
+							q(11448, {	--  The Explorers' League Outpost [A]
+								["groups"] = {
+								},
+								["qg"] = 23548,	-- Beltrand McSorf
+								["sourceQuests"] = {11278},
+							}),
+							q(11474, {	--  Problems on the High Bluff [A]
+								["groups"] = {
+								},
+								["qg"] = 24717,	-- Stanwad
+								["sourceQuests"] = {11448},
+							}),
+							q(11475, {	--  Tools to Get the Job Done [A]
+								["groups"] = {
+								},
+								["qg"] = 24807,	-- Walt
+								["sourceQuests"] = {11474},
+							}),
+							q(11483, {	--  We Can Rebuild It [A]
+								["groups"] = {
+								},
+								["qg"] = 24807,	-- Walt
+								["sourceQuests"] = {11475},
+							}),
+							q(11484, {	--  We Have the Technology [A]
+								["groups"] = {
+								},
+								["qg"] = 24807,	-- Walt
+								["sourceQuests"] = {11475},
+							}),
+							q(11485, {	--  Iron Rune Constructs and You: Rocket Jumping [A]
+								["groups"] = {
+								},
+								["qg"] = 24807,	-- Walt
+								["sourceQuests"] = {11483,11484},
+							}),
+							q(11489, {	--  Iron Rune Constructs and You: Collecting Data [A]
+								["groups"] = {
+								},
+								["qg"] = 24807,	-- Walt
+								["sourceQuests"] = {11485},
+							}),
+							q(11491, {	--  Iron Rune Constructs and You: The Bluff [A]
+								["groups"] = {
+								},
+								["qg"] = 24807,	-- Walt
+								["sourceQuests"] = {11489},
+							}),
+							q(11494, {	--  Lightning Infused Relics [A]
+								["groups"] = {
+								},
+								["qg"] = 24807,	-- Walt
+								["sourceQuests"] = {11491},
+							}),
+							q(11495, {	--  The Delicate Sound of Thunder [A]
+								["groups"] = {
+								},
+								["qg"] = 24807,	-- Walt
+								["sourceQuests"] = {11491},
+							}),
+							q(11501, {	-- News From the East [A]
+								["groups"] = {
+									i(35857),	-- Munificent Bulwark
+									i(35858),	-- Tome of Alacrity
+								},
+								["sourceQuests"] = {11494,11495},
+							}),
+						}),
+						crit(4, {	--Doom Approaches
+							q(11504, {	--  The Dead Rise!
+								["groups"] = {
+								},
+								["qg"] = 23804,	-- Orfus of Kamagua
+								["sourceQuests"] = {11573},
+							}),
+							q(11507, {	--  Elder Atuik and Kamagua
+								["groups"] = {
+								},
+								["qg"] = 23804,	-- Orfus of Kamagua
+								["sourceQuests"] = {11504},
+							}),
+							q(11508, {	--  Grezzix Spindlesnap
+								["groups"] = {
+								},
+								["qg"] = 24755,	-- Elder Atuik
+								["sourceQuests"] = {11507},
+							}),
+							q(11509, {	--  Street "Cred"
+								["groups"] = {
+								},
+								["qg"] = 24643,	-- Grezzix Spindlesnap
+								["sourceQuests"] = {11508},
+							}),
+							q(11510, {	--  "Scoodles"
+								["groups"] = {
+								},
+								["qg"] = 24539,	-- "Silvermoon" Harry
+								["sourceQuests"] = {11509},
+							}),
+							q(11511, {	--  The Staff of Storm's Fury
+								["groups"] = {
+								},
+								["qg"] = 24539,	-- "Silvermoon" Harry
+								["sourceQuests"] = {11510},
+							}),
+							q(11512, {	--  The Frozen Heart of Isuldof
+								["groups"] = {
+								},
+								["qg"] = 24539,	-- "Silvermoon" Harry
+								["sourceQuests"] = {11510},
+							}),
+							q(11519, {	--  The Lost Shield of the Aesirites
+								["groups"] = {
+								},
+								["qg"] = 24539,	-- "Silvermoon" Harry
+								["sourceQuests"] = {11510},
+							}),
+							q(11527, {	--  Mutiny on the Mercy
+								["groups"] = {
+								},
+								["qg"] = 24910,	-- Captain Ellis
+								["sourceQuests"] = {11519},
+							}),
+							q(11529, {	--  Sorlof's Booty
+								["groups"] = {
+								},
+								["qg"] = 24910,	-- Captain Ellis
+								["sourceQuests"] = {11527},
+							}),
+							q(11530, {	--  The Shield of the Aesirites
+								["groups"] = {
+								},
+								["qg"] = 24910,	-- Captain Ellis
+								["sourceQuests"] = {11529},
+							}),
+							q(11567, {	--  The Ancient Armor of the Kvaldir
+								["groups"] = {
+								},
+								["qg"] = 24539,	-- "Silvermoon" Harry
+								["sourceQuests"] = {11510},
+							}),
+							q(11568, {	--  A Return to Resting
+								["groups"] = {
+								},
+								["qg"] = 23804,	-- Orfus of Kamagua
+								["sourceQuests"] = {11511,11512,11530,11567},
+							}),
+							q(11572, {	--  Return to Atuik
+								["groups"] = {
+								},
+								["qg"] = 23804,	-- Orfus of Kamagua
+								["sourceQuests"] = {11568},
+							}),
+						}),
+						crit(5, {	--The End of Jonah Sterling
+							q(11434, {	--  Forgotten Treasure
+								["groups"] = {
+								},
+								["qg"] = 24537,	-- Handsome Terry
+								["sourceQuests"] = {11509},
+							}),
+							q(11455, {	--  The Fragrance of Money
+								["groups"] = {
+								},
+								["qg"] = 24537,	-- Handsome Terry
+								["sourceQuests"] = {11434},
+							}),
+							q(11473, {	--  A Traitor Among Us
+								["groups"] = {
+								},
+								["qg"] = 24537,	-- Handsome Terry
+								["sourceQuests"] = {11455},
+							}),
+							q(11459, {	--  Zeh'gehn Sez
+								["groups"] = {
+								},
+								["qg"] = 24525,	-- Zeh'gehn
+								["sourceQuests"] = {11473},
+							}),
+							q(11476, {	--  A Carver and a Croaker
+								["groups"] = {
+								},
+								["qg"] = 24537,	-- Handsome Terry
+								["sourceQuests"] = {11459},
+							}),
+							q(11479, {	--  "Crowleg" Dan
+								["groups"] = {
+								},
+								["qg"] = 24525,	-- Zeh'gehn
+								["sourceQuests"] = {11476},
+							}),
+							q(11480, {	--  Meet Number Two
+								["groups"] = {
+								},
+								["qg"] = 24537,	-- Handsome Terry
+								["sourceQuests"] = {11479},
+							}),
+							q(11471, {	--  The Jig is Up
+								["groups"] = {
+								},
+								["qg"] = 24741,	-- Annie Bonn
+								["sourceQuests"] = {11480},
+							}),
+						}),
+						crit(6, {	--The Debt Collector
+							q(11464, {	--  Gambling Debt
+								["groups"] = {
+								},
+								["qg"] = 24541,	-- Taruk
+								["sourceQuests"] = {11434},
+							}),
+							q(11466, {	--  Jack Likes His Drink
+								["groups"] = {
+								},
+								["qg"] = 24541,	-- Taruk
+								["sourceQuests"] = {11464},
+							}),
+							q(11467, {	--  Dead Man's Debt
+								["groups"] = {
+								},
+								["qg"] = 24541,	-- Taruk
+								["sourceQuests"] = {11466},
+							}),
+						}),
+						crit(7, {	--A New Plague
+							q(11157, {	--  The Clutches of Evil
+								["groups"] = {
+								},
+								["qg"] = 23749,	-- Captain Adams
+							}),
+							q(11187, {	--  Mage-Lieutenant Malister [A]
+								["groups"] = {
+								},
+								["qg"] = 23749,	-- Captain Adams
+								["sourceQuests"] = {11157},
+							}),
+							q(11188, {	--  Two Wrongs... [A]
+								["groups"] = {
+								},
+								["qg"] = 23888,	-- Mage-Lieutenant Malister
+								["sourceQuests"] = {11187},
+							}),
+							q(11199, {	--  Report to Scout Knowles [A]
+								["groups"] = {
+								},
+								["qg"] = 23749,	-- Captain Adams
+								["sourceQuests"] = {11188},
+							}),
+							q(11202, {	-- Mission: Eternal Flame [A]
+								["groups"] = {
+									i(35889),	-- Bone-Inlaid Bracers
+									i(35888),	-- Embossed Ermine Girdle
+									i(35890),	-- Magdun Spaulders
+									i(35891),	-- Runeplate Helm
+								},
+								["sourceQuests"] = {11199},
+							}),
+							q(11327, {	--  Mission: Package Retrieval [A]
+								["groups"] = {
+								},
+								["qg"] = 23906,	-- Scout Knowles
+								["sourceQuests"] = {11202},
+							}),
+							q(11328, {	--  Mission: Forsaken Intel [A]
+								["groups"] = {
+								},
+								["qg"] = 23906,	-- Scout Knowles
+								["sourceQuests"] = {11327},
+							}),
+							q(11330, {	--  Absholutely... Thish Will Work! [A]
+								["groups"] = {
+								},
+								["qg"] = 24283,	-- Peppy Wrongnozzle
+								["sourceQuests"] = {11328},
+							}),
+							q(11331, {	--  You Tell Him ...Hic! [A]
+								["groups"] = {
+								},
+								["qg"] = 24283,	-- Peppy Wrongnozzle
+								["sourceQuests"] = {11330},
+							}),
+							q(11332, {	-- Mission: Plague This! [A]
+								["groups"] = {
+									i(35893),	-- Coldstone-Inlaid Waistguard
+									i(35892),	-- Flamebinder Handwraps
+									i(35894),	-- Purestrike Bracers
+									i(35895),	-- Emeraldscale Pauldrons
+								},
+								["sourceQuests"] = {11331},
+							}),
+						}),
+						crit(8, {	--The Conqueror of Skorn
+							q(11248, {	--  Operation: Skornful Wrath [A]
+								["groups"] = {
+								},
+								["qg"] = 23749,	-- Captain Adams
+								["sourceQuests"] = {11332},
+							}),
+							q(11245, {	--  Towers of Certain Doom [A]
+								["groups"] = {
+								},
+								["qg"] = 24060,	-- Westguard Sergeant
+								["sourceQuests"] = {11248},
+							}),
+							q(11246, {	--  Gruesome, But Necessary [A]
+								["groups"] = {
+								},
+								["qg"] = 24060,	-- Westguard Sergeant
+								["sourceQuests"] = {11248},
+							}),
+							q(11247, {	--  Burn Skorn, Burn! [A]
+								["groups"] = {
+								},
+								["qg"] = 24060,	-- Westguard Sergeant
+								["sourceQuests"] = {11248},
+							}),
+							q(11250, {	-- All Hail the Conqueror of Skorn! [A]
+								["groups"] = {
+									i(35909),	-- Sun-Fired Striders
+									i(35910),	-- Shaleground Bracers
+									i(35905),	-- Vinewoven Tunic
+								},
+								["sourceQuests"] = {11245,11246,11247},
+							}),
+						}),
+						crit(9, {	--The Scourge and the Vrykul
+							q(11235, {	--  Dealing With Gjalerbron [A]
+								["groups"] = {
+								},
+								["qg"] = 23749,	-- Captain Adams
+								["sourceQuests"] = {11250},
+							}),
+							q(11236, {	--  Necro Overlord Mezhen [A]
+								["groups"] = {
+								},
+								["qg"] = 23749,	-- Captain Adams
+								["sourceQuests"] = {11235},
+							}),
+							q(11237, {	--  Gjalerbron Attack Plans [A]
+								["groups"] = {
+								},
+								["qg"] = 0,	-- Unable to pull from Wowhead. 
+								["sourceQuests"] = {11236},
+							}),
+							q(11238, {	--  The Frost Wyrm and its Master [A]
+								["groups"] = {
+								},
+								["qg"] = 23888,	-- Mage-Lieutenant Malister
+								["sourceQuests"] = {11237},
+							}),
+						}),
+						crit(10, {	--Sisters of the Fjord
+							q(11313, {	--  Spirits of the Ice
+								["groups"] = {
+								},
+								["qg"] = 24117,	-- Lurielle
+								["sourceQuests"] = {11302},
+							}),
+							q(11314, {	--  The Fallen Sisters
+								["groups"] = {
+								},
+								["qg"] = 24117,	-- Lurielle
+								["sourceQuests"] = {11313},
+							}),
+							q(11315, {	--  Wild Vines
+								["groups"] = {
+								},
+								["qg"] = 24117,	-- Lurielle
+								["sourceQuests"] = {11313},
+							}),
+							q(11316, {	--  Spawn of the Twisted Glade
+								["groups"] = {
+								},
+								["qg"] = 24117,	-- Lurielle
+								["sourceQuests"] = {11314,11315},
+							}),
+							q(11428, {	--  Keeper Witherleaf
+								["groups"] = {
+								},
+								["qg"] = 24117,	-- Lurielle
+								["sourceQuests"] = {11316},
+							}),
+						}),
+						crit(11, {	--The Iron Dwarves
+							q(11329, {	--  I'll Try Anything! [A]
+								["groups"] = {
+								},
+								["qg"] = 24056,	-- Christopher Sloan
+							}),
+							q(11355, {	--  March of the Giants [A]
+								["groups"] = {
+								},
+								["qg"] = 24376,	-- Researcher Aderan
+								["sourceQuests"] = {11329},
+							}),
+							q(11358, {	--  The Lodestone [A]
+								["groups"] = {
+								},
+								["qg"] = 24376,	-- Researcher Aderan
+								["sourceQuests"] = {11355},
+							}),
+							q(11359, {	--  Demolishing Megalith [A]
+								["groups"] = {
+								},
+								["qg"] = 24376,	-- Researcher Aderan
+								["sourceQuests"] = {11358},
+							}),
+						}),
+						crit(12, {	--Alpha Worg
+							q(11322, {	--  The Cleansing [A]
+								["groups"] = {
+								},
+								["qg"] = 24273,	-- Watcher Moonleaf
+							}),
+							q(11325, {	--  In Worg's Clothing [A]
+								["groups"] = {
+								},
+								["qg"] = 24273,	-- Watcher Moonleaf
+								["sourceQuests"] = {11322},
+							}),
+							q(11414, {	--  Brother Betrayers [A]
+								["groups"] = {
+								},
+								["qg"] = 24261,	-- Ulfang
+								["sourceQuests"] = {11325},
+							}),
+							q(11416, {	--  Eyes of the Eagle [A]
+								["groups"] = {
+								},
+								["qg"] = 24261,	-- Ulfang
+								["sourceQuests"] = {11414},
+							}),
+							q(11326, {	-- Alpha Worg [A]
+								["groups"] = {
+									i(35913),	-- Gholamweave Leggings
+									i(35915),	-- Darksteel Ringmail Greaves
+									i(35916),	-- Worgblood Berserker's Hauberk
+									i(35914),	-- Proto-Drake Tooth Spaulders
+								},
+								["sourceQuests"] = {11416},
+							}),
+						}),
+					})),
+					n(-168, {	-- Other Quests
+						sz(1263, 1, {	--Kamagua
+						}),
+						sz(1263, 2, {	--Cauldros Isle
+						}),
+						sz(1263, 3, {	--Camp Winterhoof
+						}),
+						sz(1263, 4, {	--Apothecary Camp
+						}),
+						sz(1263, 5, {	--Vengeance Landing
+						}),
+						sz(1263, 6, {	--Steel Gate
+						}),
+						sz(1263, 7, {	--Scalawag Point
+						}),
+						sz(1263, 8, {	--Nifflevar
+						}),
+						sz(1263, 9, {	--Gjalerbron
+						}),
+						sz(1263, 10, {	--Ember Clutch
+						}),
+						sz(1263, 11, {	--Giant's Run
+						}),
+						sz(1263, 12, {	--Fort Wildervar
+						}),
+						sz(1263, 13, {	--Ivald's Ruin
+						}),
+						sz(1263, 14, {	--Halgrind
+						}),
+						sz(1263, 15, {	--New Agamand
+						}),
+						sz(1263, 16, {	--Skorn
+						}),
+						sz(1263, 17, {	--The Twisted Glade
+						}),
+						sz(1263, 18, {	--Utgarde Keep
+						}),
+						sz(1263, 19, {	--Westguard Keep
+						}),
+						sz(1263, 20, {	--Baelgun's Excavation Site
+						}),
+						sz(1263, 21, {	--Baleheim
+						}),
 					}),
-					qa( 13087, {-- Northern Cooking
-						recipe(57421),	-- Northern Stew
+					n(-383, {	-- Miscellaneous [THESE QUESTS HAVE NOT BEEN SORTED YET!!]
+						q(11250, {	--  All Hail the Conqueror of Skorn! [A]
+							["groups"] = {
+							},
+							["qg"] = 24060,	-- Westguard Sergeant
+						}),
+						q(29608, {	--  Allies in Dalaran [A]
+							["groups"] = {
+							},
+							["qg"] = 0,	-- Unable to pull from Wowhead. 
+						}),
+						q(11326, {	--  Alpha Worg [A]
+							["groups"] = {
+							},
+							["qg"] = 24261,	-- Ulfang
+						}),
+						q(11394, {	--  And You Thought Murlocs Smelled Bad! [A]
+							["groups"] = {
+							},
+							["qg"] = 23833,	-- Explorer Jaren
+						}),
+						q(11344, {	--  Anguish of Nifflevar [A]
+							["groups"] = {
+							},
+							["qg"] = 23975,	-- Thoralius the Wise
+						}),
+						q(11457, {	--  Arming Kamagua
+							["groups"] = {
+							},
+							["qg"] = 24755,	-- Elder Atuik
+						}),
+						q(11458, {	--  Avenge Iskaal
+							["groups"] = {
+							},
+							["qg"] = 24755,	-- Elder Atuik
+						}),
+						q(31931, {	--  Beegle Blastfuse
+							["groups"] = {
+							},
+							["qg"] = 66635,	-- Beegle Blastfuse
+						}),
+						q(11153, {	--  Break the Blockade [A]
+							["groups"] = {
+							},
+							["qg"] = 23895,	-- Bombardier Petrov
+						}),
+						q(11396, {	--  Bring Down Those Shields [A]
+							["groups"] = {
+							},
+							["qg"] = 23833,	-- Explorer Jaren
+						}),
+						q(13268, {	--  Cloth Scavenging [A]
+							["groups"] = {
+							},
+							["qg"] = 26914,	-- Benjamin Clegg
+						}),
+						q(3861, {	--  CLUCK!
+							["groups"] = {
+							},
+							["qg"] = 620,	-- Chicken
+						}),
+						q(11443, {	--  Daggercap Divin' [A]
+							["groups"] = {
+							},
+							["qg"] = 23730,	-- Harold Lagras
+						}),
+						q(11218, {	--  Danger! Explosives! [A]
+							["groups"] = {
+							},
+							["qg"] = 23976,	-- Sapper Steelring
+						}),
+						q(11269, {	--  Down to the Wire [A]
+							["groups"] = {
+							},
+							["qg"] = 24139,	-- Gil Grisert
+						}),
+						q(11290, {	--  Dragonflayer Battle Plans [A]
+							["groups"] = {
+							},
+							["qg"] = 23546,	-- Vice Admiral Keller
+						}),
+						q(11406, {	--  Everything Must Be Ready [A]
+							["groups"] = {
+							},
+							["qg"] = 24494,	-- Quartermaster Brevin
+						}),
+						q(11468, {	--  Falcon Versus Hawk [A]
+							["groups"] = {
+							},
+							["qg"] = 24750,	-- Hidalgo the Master Falconer
+						}),
+						q(11456, {	--  Feeding the Survivors
+							["groups"] = {
+							},
+							["qg"] = 24755,	-- Elder Atuik
+						}),
+						q(11251, {	--  Fresh Legs [A]
+							["groups"] = {
+							},
+							["qg"] = 24106,	-- Scout Valory
+						}),
+						q(11289, {	--  Guided by Honor
+							["groups"] = {
+							},
+							["qg"] = 24189,	-- Ares the Oathbound
+						}),
+						q(12298, {	--  High Commander Halford Wyrmbane [A]
+							["groups"] = {
+							},
+							["qg"] = 23859,	-- Greer Orehammer
+						}),
+						q(11390, {	--  I've Got a Flying Machine! [A]
+							["groups"] = {
+							},
+							["qg"] = 24399,	-- Steel Gate Chief Archaeologist
+						}),
+						q(11239, {	--  In Service to the Light [A]
+							["groups"] = {
+							},
+							["qg"] = 24038,	-- Father Levariol
+						}),
+						q(11395, {	--  It's a Scourge Device [A]
+							["groups"] = {
+							},
+							["qg"] = 0,	-- Unable to pull from Wowhead. 
+						}),
+						q(11240, {	--  Leader of the Deranged [A]
+							["groups"] = {
+							},
+							["qg"] = 23976,	-- Sapper Steelring
+						}),
+						q(11349, {	--  Mastering the Runes [A]
+							["groups"] = {
+							},
+							["qg"] = 24328,	-- Prospector Belvar
+						}),
+						q(11202, {	--  Mission: Eternal Flame [A]
+							["groups"] = {
+							},
+							["qg"] = 23906,	-- Scout Knowles
+						}),
+						q(11332, {	--  Mission: Plague This! [A]
+							["groups"] = {
+							},
+							["qg"] = 23749,	-- Captain Adams
+						}),
+						q(11175, {	--  My Daughter [A]
+							["groups"] = {
+							},
+							["qg"] = 23831,	-- Old Man Stonemantle
+						}),
+						q(11501, {	--  News From the East [A]
+							["groups"] = {
+							},
+							["qg"] = 24807,	-- Walt
+						}),
+						q(13087, {	-- Northern Cooking [A]
+							["groups"] = {
+									recipe(57421),	-- Northern Stew
+							},
+						}),
+						q(11231, {	--  Of Keys and Cages [A]
+							["groups"] = {
+							},
+							["qg"] = 24038,	-- Father Levariol
+						}),
+						q(12297, {	--  Of Traitors and Treason [A]
+							["groups"] = {
+							},
+							["qg"] = 23749,	-- Captain Adams
+						}),
+						q(11190, {	--  One Size Does Not Fit All [A]
+							["groups"] = {
+							},
+							["qg"] = 23770,	-- Cannoneer Ely
+						}),
+						q(11573, {	--  Orfus of Kamagua [A]
+							["groups"] = {
+							},
+							["qg"] = 25233,	-- Lunk-tusk
+							["isBreadcrumb"] = true,
+						}),
+						q(11477, {	--  Out of My Element? [A]
+							["groups"] = {
+							},
+							["qg"] = 24811,	-- Donny
+						}),
+						q(11478, {	--  Outpost Over Yonder... [A]
+							["groups"] = {
+							},
+							["qg"] = 24811,	-- Donny
+						}),
+						q(2963, {	--  Portents of Uldum [A]
+							["groups"] = {
+							},
+							["qg"] = 0,	-- Unable to pull from Wowhead. 
+						}),
+						q(11292, {	--  Preying Upon the Weak [A]
+							["groups"] = {
+							},
+							["qg"] = 24131,	-- Trapper Jethan
+						}),
+						q(11255, {	--  Prisoners of Wyrmskull [A]
+							["groups"] = {
+							},
+							["qg"] = 23546,	-- Vice Admiral Keller
+						}),
+						q(11278, {	--  Return to Valgarde [A]
+							["groups"] = {
+							},
+							["qg"] = 24150,	-- Glorenfeld
+						}),
+						q(11182, {	--  Root Causes
+							["groups"] = {
+							},
+							["qg"] = 23870,	-- Ember Clutch Ancient
+						}),
+						q(11154, {	--  Scare the Guano Out of Them! [A]
+							["groups"] = {
+							},
+							["qg"] = 24227,	-- Engineer Feknut
+						}),
+						q(11176, {	--  See to the Operations [A]
+							["groups"] = {
+							},
+							["qg"] = 23891,	-- Overseer Irena Stonemantle
+						}),
+						q(11319, {	--  Seeds of the Blacksouled Keepers
+							["groups"] = {
+							},
+							["qg"] = 24117,	-- Lurielle
+						}),
+						q(11224, {	--  Send Them Packing [A]
+							["groups"] = {
+							},
+							["qg"] = 23978,	-- Explorer Abigail
+						}),
+						q(11155, {	--  Shoveltusk Soup Again? [A]
+							["groups"] = {
+							},
+							["qg"] = 23773,	-- Chef Kettleblack
+						}),
+						q(11432, {	--  Sleeping Giants [A]
+							["groups"] = {
+							},
+							["qg"] = 23888,	-- Mage-Lieutenant Malister
+						}),
+						q(11391, {	--  Steel Gate Patrol [A]
+							["groups"] = {
+							},
+							["qg"] = 24399,	-- Steel Gate Chief Archaeologist
+						}),
+						q(11249, {	--  Stop the Ascension! [A]
+							["groups"] = {
+							},
+							["qg"] = 0,	-- Unable to pull from Wowhead. 
+						}),
+						q(11469, {	--  Swabbin' Soap
+							["groups"] = {
+							},
+							["qg"] = 24784,	-- Scuttle Frostprow
+						}),
+						q(11346, {	--  The Book of Runes [A]
+							["groups"] = {
+							},
+							["qg"] = 24328,	-- Prospector Belvar
+						}),
+						q(42005, {	--  The End of the Saga
+							["groups"] = {
+							},
+							["qg"] = 105724,	-- Orik Trueheart
+						}),
+						q(11302, {	--  The Enigmatic Frost Nymphs [A]
+							["groups"] = {
+							},
+							["qg"] = 24282,	-- Lieutenant Maeve
+						}),
+						q(12794, {	--  The Magical Kingdom of Dalaran [A]
+							["groups"] = {
+							},
+							["qg"] = 0,	-- Unable to pull from Wowhead. 
+						}),
+						q(11410, {	--  The One That Got Away [A]
+							["groups"] = {
+							},
+							["qg"] = 24056,	-- Christopher Sloan
+						}),
+						q(11465, {	--  The Ransacked Caravan [A]
+							["groups"] = {
+							},
+							["qg"] = 24750,	-- Hidalgo the Master Falconer
+						}),
+						q(11348, {	--  The Rune of Command [A]
+							["groups"] = {
+							},
+							["qg"] = 24328,	-- Prospector Belvar
+						}),
+						q(11288, {	--  The Shining Light
+							["groups"] = {
+							},
+							["qg"] = 24189,	-- Ares the Oathbound
+						}),
+						q(11472, {	--  The Way to His Heart...
+							["groups"] = {
+							},
+							["qg"] = 24810,	-- Anuniaq
+						}),
+						q(11284, {	--  The Yeti Next Door [A]
+							["groups"] = {
+							},
+							["qg"] = 24176,	-- Foreman Colbey
+						}),
+						q(11470, {	--  There Exists No Honor Among Birds [A]
+							["groups"] = {
+							},
+							["qg"] = 24750,	-- Hidalgo the Master Falconer
+						}),
+						q(11291, {	--  To Westguard Keep! [A]
+							["groups"] = {
+							},
+							["qg"] = 23546,	-- Vice Admiral Keller
+						}),
+						q(12118, {	--  Travel to Moa'ki Harbor
+							["groups"] = {
+							},
+							["qg"] = 24810,	-- Anuniaq
+						}),
+						q(11422, {	--  Trident of the Son
+							["groups"] = {
+							},
+							["qg"] = 24544,	-- Old Icefin
+						}),
+						q(11460, {	--  Trust is Earned [A]
+							["groups"] = {
+							},
+							["qg"] = 24750,	-- Hidalgo the Master Falconer
+						}),
+						q(11418, {	--  We Call Him Steelfeather [A]
+							["groups"] = {
+							},
+							["qg"] = 24139,	-- Gil Grisert
+						}),
+						q(11393, {	--  Where is Explorer Jaren? [A]
+							["groups"] = {
+							},
+							["qg"] = 23891,	-- Overseer Irena Stonemantle
+						}),
+						q(11396, {	-- Bring Down Those Shields [A]
+							["groups"] = {
+								i(35933),	-- Ramshorn Greathelm
+								i(35934),	-- Ghoul-Crushing Stompers
+							},
+						}),
+						q(11269, {	-- Down to the Wire [A]
+							["groups"] = {
+								i(35926),	-- Artfully Tooled Leggings
+								i(35927),	-- Songscale Breastplate
+								i(35928),	-- Cold-Forged Bronze Legplates
+							},
+						}),
+						q(11290, {	-- Dragonflayer Battle Plans [A]
+							["groups"] = {
+								i(35814),	-- Benevolent Hood
+								i(35816),	-- Blood-Stained Chain Leggings
+								i(35815),	-- Bone-Threaded Harness
+								i(35817),	-- Nerubian Inner Husk
+							},
+						}),
+						q(11390, {	-- I've Got a Flying Machine! [A]
+							["groups"] = {
+								i(35912),	-- Crackling Cloak
+							},
+						}),
+						q(11239, {	-- In Service to the Light [A]
+							["groups"] = {
+								i(35884),	-- Regal Pantaloons
+								i(35887),	-- Loam-Stained Greaves
+								i(35885),	-- Tribal Chestguard
+							},
+						}),
+						q(11421, {	-- It Goes to 11... [A]
+							["groups"] = {
+								i(35841),	-- Frost-Trimmed Gauntlets
+								i(35842),	-- Azure Chain Hauberk
+								i(35843),	-- Ramshorn-Inlaid Shoulders
+							},
+						}),
+						q(11240, {	-- Leader of the Deranged [A]
+							["groups"] = {
+								i(35917),	-- Wrathwrought Shoulderpads
+								i(35919),	-- Whispersteel Handguards
+								i(35920),	-- Feather-Lined Shoulderpads
+								i(35918),	-- Spiked Skullguard
+							},
+						}),
+						q(11494, {	-- Lightning Infused Relics [A]
+							["groups"] = {
+								i(35844),	-- Shock-Resistant Hood
+								i(35846),	-- Banded Chain Gloves
+								i(35848),	-- Munificent Legguards
+							},
+						}),
+						q(11236, {	-- Necro Overload Mezhen [A]
+							["groups"] = {
+								i(35938),	-- Drape of Munificence
+								i(35878),	-- Dusk-Linked Leggings
+								i(35879),	-- Gold-Plated Coldsteel Girdle
+								i(35877),	-- Worgskin Shoulders
+							},
+						}),
+						q(11292, {	-- Preying Upon the Weak [A]
+							["groups"] = {
+								i(35864),	-- Fizznik's Patented Earwarmer
+								i(35863),	-- Earth-Infused Leggings
+								i(35866),	-- Master Artilleryman Boots
+								i(35865),	-- Arcanum Shield
+							},
+						}),
+						q(11244, {	-- Rescuing the Rescuers [A]
+							["groups"] = {
+								i(35809),	-- Earthspike
+								i(35811),	-- Elekk-Horn Crossbow
+								i(35810),	-- Pacifying Pummeler
+								i(35807),	-- Bramblethorn Greatstaff
+								i(35808),	-- Coldstone Cutlass
+								i(35812),	-- Cragthumper
+							},
+						}),
+						q(11182, {	-- Root Causes
+							["groups"] = {
+								i(35921),	-- Flint-Reinforced Spaulders
+								i(35923),	-- Cold-Iron Armbands
+								i(35924),	-- Arcanum-Bound Bracers
+							},
+						}),
+						q(11154, {	-- Scare the Guano Out of Them! [A]
+							["groups"] = {
+								i(35896),	-- Icestriker Bands
+								i(35898),	-- Reinforced Tuskhide Hauberk
+								i(35899),	-- Bloodbinder's Girdle
+								i(35897),	-- Ice-Crusted Cape
+							},
+						}),
+						q(11319, {	-- Seeds of the Blacksouled Keepers
+							["groups"] = {
+								i(39074),	-- Drape of Distilled Hatred
+								i(39072),	-- Blacksoul Protector's Hauberk
+								i(39073),	-- Root of the Everlasting
+							},
+						}),
+						q(11249, {	-- Stop the Ascension! [A]
+							["groups"] = {
+								i(35900),	-- Supple Doeskin Moccasins
+								i(35902),	-- Shock-Bound Spaulders
+								i(35903),	-- Onyx Grips
+								i(35901),	-- Rejuvenating Cord
+							},
+						}),
+						q(11495, {	-- The Delicate Sound of Thunder [A]
+							["groups"] = {
+								i(35851),	-- Acid-Etched Knuckles
+								i(35849),	-- Featherweight Claymore
+								i(35852),	-- Fullered Coldsteel Dagger
+								i(35856),	-- Hair-Trigger Blunderbuss
+							},
+						}),
+						q(11238, {	-- The Frost Wyrm and its Master [A]
+							["groups"] = {
+								i(35880),	-- Earthwell Footwraps
+								i(35882),	-- Magispike Helm
+								i(35883),	-- Silversteel Gauntlets
+							},
+						}),
+						q(11288, {	-- The Shining Light
+							["groups"] = {
+								i(35829),	-- Coldspike Longbow
+								i(35823),	-- Ice-Rimed Dagger
+								i(35827),	-- Regal Sceptre
+								i(35824),	-- Stoneblade Slicer
+								i(35826),	-- Whelpling-Skull Zapper
+								i(35830),	-- Worn Vrykul Smasher
+							},
+						}),
+						q(11284, {	-- The Yeti Next Door [A]
+							["groups"] = {
+								i(35929),	-- Gholamcloth Wrap
+								i(35931),	-- Appointed Scalemail Leggings
+								i(35930),	-- Inscribed Worghide Treads
+							},
+						}),
+						q(11470, {	-- There Exists No Honor Among Birds [A]
+							["groups"] = {
+								i(35860),	-- Flexible Leather Footwraps
+								i(35859),	-- Fire-Purifying Tunic
+								i(35861),	-- Inescapable Girdle
+								i(35862),	-- Light-Bound Chestguard
+							},
+						}),
+						q(11188, {	-- Two Wrongs... [A]
+							["groups"] = {
+								i(35871),	-- Indigo Robe of Replenishment
+								i(35873),	-- Interlinked Chain Girdle
+								i(35875),	-- Beneficent Skullcap
+								i(35872),	-- Iron-Studded Leggings
+							},
+						}),
 					}),
---[[
-					qh( 11265),	-- Of Keys and Cages
-					qa( 11231),	-- Of Keys and Cages
-					qa( 12297),	-- Of Traitors and Treason
-					qa( 11190),	-- One Size Does Not Fit All
-					qa( 11248),	-- Operation: Skornful Wrath
-					qa( 11573),	-- Orfus of Kamagua
-					qa( 11477),	-- Out of My Element?
-					qa( 11478),	-- Outpost Over Yonder...
-					qh( 11309),	-- Parts for the Job
-					qa( 11882),	-- Playing with Fire
-					qh( 11915),	-- Playing with Fire
-					qa(  2963),	-- Portents of Uldum
-					qa( 11292),	-- Preying Upon the Weak
-					qa( 11255),	-- Prisoners of Wyrmskull
-					qa( 11474),	-- Problems on the High Bluff
-					qh( 11234),	-- Report to Anselm
-					qa( 11199),	-- Report to Scout Knowles
-					qh( 11221),	-- Reports from the Field
-					qa( 11244),	-- Rescuing the Rescuers
-					q(11572),	-- Return to Atuik
-					qa( 11278),	-- Return to Valgarde
-					qh( 11296),	-- Rivenwood Captives
-					q(11182),	-- Root Causes
-					qa( 11154),	-- Scare the Guano Out of Them!
-					q(11510),	-- "Scoodles"
-					qa( 11176),	-- See to the Operations
-					q(11319),	-- Seeds of the Blacksouled Keepers
-					qa( 11224),	-- Send Them Packing
-					qh( 11424),	-- Shield Hill
-					qa( 11155),	-- Shoveltusk Soup Again?
-					qh( 11256),	-- Skorn Must Fall!
-					qh( 11433),	-- Sleeping Giants
-					qa( 11432),	-- Sleeping Giants
-					qh( 11253),	-- Sniff Out the Enemy
-					q(11529),	-- Sorlof's Booty
-					q(11316),	-- Spawn of the Twisted Glade
-					qh( 11168),	-- Spiking the Mix
-					q(11313),	-- Spirits of the Ice
-					qa( 11391),	-- Steel Gate Patrol
-					qa( 11249),	-- Stop the Ascension!
-					qh( 11260),	-- Stop the Ascension!
-					q(11509),	-- Street "Cred"
-					qa( 11300),	-- Stunning Defeat at the Ring
-					qh( 11311),	-- Suppressing the Elements
-					q(11469),	-- Swabbin' Soap
-					qh( 11170),	-- Test at Sea
-					qh( 11303),	-- The Ambush
-					q(11567),	-- The Ancient Armor of the Kvaldir
-					qh( 11286),	-- The Artifacts of Steel Gate
-					qa( 11346),	-- The Book of Runes
-					qh( 11350),	-- The Book of Runes
-					qa( 11322),	-- The Cleansing
-					qh( 11317),	-- The Cleansing
-					q(11157),	-- The Clutches of Evil
-					qh( 11261),	-- The Conqueror of Skorn!
-					q(11504),	-- The Dead Rise!
-					qa( 11495),	-- The Delicate Sound of Thunder
-					qa( 11277),	-- The Depths of Depravity
-					qh( 11254),	-- The Dragonskin Map
-					qa( 11343),	-- The Echo of Ymiron
-					q(42005),	-- The End of the Saga
-					qh( 11423),	-- The Enemy's Legacy
-					qa( 11302),	-- The Enigmatic Frost Nymphs					
-					qa( 11448),	-- The Explorers' League Outpost
-					q(11314),	-- The Fallen Sisters
-					q(11455),	-- The Fragrance of Money
-					qa( 11238),	-- The Frost Wyrm and its Master
-					qh( 11267),	-- The Frost Wyrm and its Master
-					qh( 11312),	-- The Frozen Glade
-					q(11512),	-- The Frozen Heart of Isuldof
-					qa( 11273),	-- The Human League
-					q(11471),	-- The Jig is Up
-					qa( 11358),	-- The Lodestone
-					qh( 11366),	-- The Lodestone
-					q(11519),	-- The Lost Shield of the Aesirites
-					qa( 12794),	-- The Magical Kingdom of Dalaran
-					qh( 12791),	-- The Magical Kingdom of Dalaran
-					qh( 11167),	-- The New Plague
-					qh( 11295),	-- The Offensive Begins
-					qa( 11410),	-- The One That Got Away
-					qa( 11420),	-- The Path to Payback
-					qa( 11465),	-- The Ransacked Caravan
-					qa( 11299),	-- The Ring of Judgment
-					qh( 11352),	-- The Rune of Command
-					qa( 11348),	-- The Rune of Command
-					q(11530),	-- The Shield of the Aesirites
-					q(11288),	-- The Shining Light
-					qh( 11453),	-- The Slumbering King
-					q(11511),	-- The Staff of Storm's Fury
-					qh( 11268),	-- The Walking Dead
-					q(11472),	-- The Way to His Heart...
-					qh( 11229),	-- The Windrunner Fleet
-					qa( 11284),	-- The Yeti Next Door
-					qa( 11470),	-- There Exists No Honor Among Birds
-					qh( 11308),	-- Time for Cleanup
-					q(42002),	-- To Northrend
-					qh( 12182),	-- To Venomspite!
-					qa( 11291),	-- To Westguard Keep!
-					qa( 11475),	-- Tools to Get the Job Done
-					qa( 11245),	-- Towers of Certain Doom
-					qh( 11259),	-- Towers of Certain Doom
-					qh( 11241),	-- Trail of Fire
-					q(12118),	-- Travel to Moa'ki Harbor
-					q(11422),	-- Trident of the Son
-					qa( 11460),	-- Trust is Earned
-					qa( 11188),	-- Two Wrongs...
-					qh( 11270),	-- War is Hell
-					qh( 11310),	-- Warning: Some Assembly Required
-					qa( 11418),	-- We Call Him Steelfeather
-					qa( 11483),	-- We Can Rebuild It
-					qa( 11484),	-- We Have the Technology
-					qh( 11298),	-- What's in That Brew?
-					qa( 11393),	-- Where is Explorer Jaren?
-					q(11315),	-- Wild Vines
-					qa( 11331),	-- You Tell Him ...Hic!
-					qa( 11274),	-- Zedd's Probably Dead
-					q(11459),	-- Zeh'gehn Sez
---]]
-					qh(11282,  {  -- A Lesson in Fear
-						i(35868),
-						i(35869),
-						i(35870),
-					}),
-					qh(11305,  {  -- A Tailor-Made Formula
-						i(35851),
-						i(35849),
-						i(35852),
-						i(35856),
-					}),
-					qh(12481,  {  -- Adding Injury to Insult
-						i(35889),
-						i(35888),
-						i(35890),
-						i(35891),
-					}),
-					qa(11250,  {  -- All Hail the Conqueror of Skorn!
-						i(35909),
-						i(35910),
-						i(35905),
-					}),
-					qa(11326,  {  -- Alpha Worg
-						i(35913),
-						i(35915),
-						i(35916),
-						i(35914),
-					}),	
-					qh(11324,  {  -- Alpha Worg
-						i(35913),
-						i(35915),
-						i(35916),
-						i(35914),
-					}),
-					qh(11230,  {  -- Ambushed!
-						i(35815),
-						i(35814),
-						i(35817),
-					}),
-					qa(11344,  {  -- Anguish of Nifflevar
-						i(35832),
-						i(35834),
-						i(35835),
-						i(35833),
-					}),	
-					qh(11283,  {  -- Baleheim Bodycount
-						i(35820),
-						i(35818),
-						i(35821),
-						i(35822),
-					}),
-					qh(11301,  {  -- Brains! Brains! Brains!
-						i(35864),
-						i(35863),
-						i(35866),
-						i(35865),
-					}),
-					qa(11396,  {  -- Bring Down Those Shields
-						i(35933),
-						i(35934),
-					}),
-					qh(11399,  {  -- Bring Down Those Shields
-						i(35933),
-						i(35934),
-					}),
-					qa(11269,  {  -- Down to the Wire
-						i(35926),
-						i(35927),
-						i(35928),
-					}),
-					qh(11280,  {  -- Draconis Gastritis
-						i(35871),
-						i(35873),
-						i(35875),
-						i(35872),
-					}),
-					qa(11290,  {  -- Dragonflayer Battle Plans
-						i(35814),
-						i(35816),
-						i(35815),
-						i(35817),
-					}),
-					qh(11307,  {  -- Field Test
-						i(35857),
-						i(35858),
-					}),
-					qh(11271,  {  -- Hasty Preparations
-						i(35926),
-						i(35927),
-						i(35928),
-					}),
-					qa(11390,  {  -- I've Got a Flying Machine!
-						i(35912),
-					}),
-					qa(11239,  {  -- In Service to the Light
-						i(35884),
-						i(35887),
-						i(35885),
-					}),
-					qa(11421,  {  -- It Goes to 11...
-						i(35841),
-						i(35842),
-						i(35843),
-					}),
-					qh(11233,  {  -- Land the Killing Blow
-						i(35807),
-						i(35808),
-						i(35812),
-						i(35809),
-						i(35811),
-						i(35810),
-					}),
-					qa(11240,  {  -- Leader of the Deranged
-						i(35917),
-						i(35919),
-						i(35920),
-						i(35918),
-					}),
-					qa(11494,  {  -- Lightning Infused Relics
-						i(35844),
-						i(35846),
-						i(35848),
-					}),
-					qh(11281,  {  -- Mimicking Nature's Call
-						i(35929),
-						i(35931),
-						i(35930),
-					}),
-					qa(11202,  {  -- Mission: Eternal Flame
-						i(35889),
-						i(35888),
-						i(35890),
-						i(35891),
-					}),
-					qa(11332,  {  -- Mission: Plague This!
-						i(35893),
-						i(35892),
-						i(35894),
-						i(35895),
-					}),
-					qa(11236,  {  -- Necro Overload Mezhen
-						i(35938),
-						i(35878),
-						i(35879),
-						i(35877),
-					}),
-					qh(11264,  {  -- Necro Overlord Mezhen
-						i(35938),
-						i(35878),
-						i(35879),
-						i(35877),
-					}),
-					qa(11501,  {  -- News From the East
-						i(35857),
-						i(35858),
-					}),
-					qh(11309,  {  -- Parts for the Job
-						i(35844),
-						i(35846),
-						i(35848),
-					}),
-					qa(11292,  {  -- Preying Upon the Weak
-						i(35864),
-						i(35863),
-						i(35866),
-						i(35865),
-					}),
-					qa(11244,  {  -- Rescuing the Rescuers
-						i(35809),
-						i(35811),
-						i(35810),
-						i(35807),
-						i(35808),
-						i(35812),
-					}),
-					qa(11278,  {  -- Return to Valgarde
-						i(35820),
-						i(35818),
-						i(35821),
-						i(35822),
-					}),
-					qh(11296,  {  -- Rivenwood Captives
-						i(35896),
-						i(35898),
-						i(35899),
-						i(35897),
-					}),
-					q(11182,  {  -- Root Causes
-						i(35921),
-						i(35923),
-						i(35924),
-					}),
-					qa(11154,  {  -- Scare the Guano Out of Them!
-						i(35896),
-						i(35898),
-						i(35899),
-						i(35897),
-					}),
-					q(11319,  {  -- Seeds of the Blacksouled Keepers
-						i(39074),
-						i(39072),
-						i(39073),
-					}),
-					qh(11424,  {  -- Shield Hill
-						i(35893),
-						i(35892),
-						i(35894),
-						i(35895),
-					}),
-					qa(11249,  {  -- Stop the Ascension!
-						i(35900),
-						i(35902),
-						i(35903),
-						i(35901),
-					}),
-					qh(11260,  {  -- Stop the Ascension!
-						i(35900),
-						i(35902),
-						i(35903),
-						i(35901),
-					}),
-					qh(11170,  {  -- Test at Sea
-						i(35841),
-						i(35842),
-						i(35843),
-					}),
-					qh(11286,  {  -- The Artifacts of Steel Gate
-						i(35912),
-					}),
-					qh(11261,  {  -- The Conqueror of Skorn!
-						i(35909),
-						i(35910),
-						i(35905),
-					}),
-					qa(11495,  {  -- The Delicate Sound of Thunder
-						i(35851),
-						i(35849),
-						i(35852),
-						i(35856),
-					}),
-					qa(11238,  {  -- The Frost Wyrm and its Master
-						i(35880),
-						i(35882),
-						i(35883),
-					}),
-					qh(11267,  {  -- The Frost Wyrm and its Master
-						i(35880),
-						i(35882),
-						i(35883),
-					}),
-					qh(11167,  {  -- The New Plague
-						i(35832),
-						i(35834),
-						i(35835),
-						i(35833),
-					}),
-					q(11288,  {  -- The Shining Light
-						i(35829),
-						i(35823),
-						i(35827),
-						i(35824),
-						i(35826),
-						i(35830),
-					}),
-					qh(11268,  {  -- The Walking Dead
-						i(35884),
-						i(35887),
-						i(35885),
-					}),
-					qa(11284,  {  -- The Yeti Next Door
-						i(35929),
-						i(35931),
-						i(35930),
-					}),
-					qa(11470,  {  -- There Exists No Honor Among Birds
-						i(35860),
-						i(35859),
-						i(35861),
-						i(35862),
-					}),
-					qh(11241,  {  -- Trail of Fire
-						i(35829),
-						i(35827),
-						i(35830),
-						i(35826),
-						i(35823),
-						i(35824),
-					}),
-					qa(11188,  {  -- Two Wrongs...
-						i(35871),
-						i(35873),
-						i(35875),
-						i(35872),
-					}),
-					qh(11310,  {  -- Warning: Some Assembly Required
-						i(35860),
-						i(35859),
-						i(35861),
-						i(35862),
+					n(-9913, {	-- Horde [THESE QUESTS HAVE NOT BEEN SORTED YET!!]
+						h(ach(1356,	{	-- I've Toured the Fjord [H]
+							crit(1, {	--Visitors from the Keep
+							}),
+							crit(2, {	--Assassinating Bjorn Halgurdsson
+							}),
+							crit(3, {	--A New Plague
+							}),
+							crit(4, {	--Doom Approaches
+							}),
+							crit(5, {	--The End of Jonah Sterling
+							}),
+							crit(6, {	--The Debt Collector
+							}),
+							crit(7, {	--Volatile Viscera
+							}),
+							crit(8, {	--Sisters of the Fjord
+							}),
+							crit(9, {	--The Iron Dwarves
+							}),
+							crit(10, {	--The Conqueror of Skorn
+							}),
+							crit(11, {	--The Scourge and the Vrykul
+							}),
+							crit(12, {	--Alpha Worg
+							}),
+						})),
+						-- qh(11282, {	--  A Lesson in Fear
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24027,	-- Sergeant Gorth
+						-- }),
+						-- qh(11272, {	--  A Score to Settle
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 23780,	-- High Executor Anselm
+						-- }),
+						-- qh(11305, {	--  A Tailor-Made Formula
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24251,	-- Chief Plaguebringer Harris
+						-- }),
+						-- qh(12481, {	--  Adding Injury to Insult
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24458,	-- Lydell
+						-- }),
+						-- qh(12482, {	--  Against Nifflevar
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 27922,	-- Ranger Captain Areiel
+						-- }),
+						-- qh(11324, {	--  Alpha Worg
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24261,	-- Ulfang
+						-- }),
+						-- qh(11230, {	--  Ambushed!
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24037,	-- Captain Harker
+						-- }),
+						-- qh(11397, {	--  And You Thought Murlocs Smelled Bad!
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24359,	-- Apothecary Anastasia
+						-- }),
+						-- qh(11306, {	--  Apply Heat and Stir
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24251,	-- Chief Plaguebringer Harris
+						-- }),
+						-- qh(11283, {	--  Baleheim Bodycount
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24027,	-- Sergeant Gorth
+						-- }),
+						-- qh(11285, {	--  Baleheim Must Burn!
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24027,	-- Sergeant Gorth
+						-- }),
+						-- qh(11301, {	--  Brains! Brains! Brains!
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24218,	-- Apothecary Grick
+						-- }),
+						-- qh(11399, {	--  Bring Down Those Shields
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24359,	-- Apothecary Anastasia
+						-- }),
+						-- qh(11415, {	--  Brother Betrayers
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24261,	-- Ulfang
+						-- }),
+						-- qh(11258, {	--  Burn Skorn, Burn!
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24130,	-- Winterhoof Brave
+						-- }),
+						-- qh(13269, {	--  Cloth Scavenging
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 26964,	-- Alexandra McQueen
+						-- }),
+						-- qh(11263, {	--  Dealing With Gjalerbron
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24129,	-- Chieftain Ashtotem
+						-- }),
+						-- qh(11367, {	--  Demolishing Megalith
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24390,	-- Sage Edan
+						-- }),
+						-- qh(13206, {	--  Disarmament
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24137,	-- Dark Ranger Marrah
+						-- }),
+						-- qh(11280, {	--  Draconis Gastritis
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24157,	-- Plaguebringer Tillinghast
+						-- }),
+						-- qh(11417, {	--  Eyes of the Eagle
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24261,	-- Ulfang
+						-- }),
+						-- qh(11307, {	--  Field Test
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24251,	-- Chief Plaguebringer Harris
+						-- }),
+						-- qh(11287, {	--  Find Sage Mistwalker
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24135,	-- Greatmother Ankha
+						-- }),
+						-- qh(29609, {	--  Friends in Dalaran
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- }),
+						-- qh(12181, {	--  Give it a Name
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24251,	-- Chief Plaguebringer Harris
+						-- }),
+						-- qh(11266, {	--  Gjalerbron Attack Plans
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- }),
+						-- qh(11279, {	--  Green Eggs and Whelps
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24157,	-- Plaguebringer Tillinghast
+						-- }),
+						-- qh(11257, {	--  Gruesome, But Necessary
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24130,	-- Winterhoof Brave
+						-- }),
+						-- qh(11232, {	--  Guide Our Sights
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24037,	-- Captain Harker
+						-- }),
+						-- qh(11271, {	--  Hasty Preparations
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24127,	-- Ahota Whitefrost
+						-- }),
+						-- qh(12566, {	--  Help for Camp Winterhoof
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 28314,	-- Longrunner Nanik
+						-- }),
+						-- qh(11323, {	--  In Worg's Clothing
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24186,	-- Sage Mistwalker
+						-- }),
+						-- qh(11262, {	--  Ingvar Must Die!
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24137,	-- Dark Ranger Marrah
+						-- }),
+						-- qh(11398, {	--  It's a Scourge Device
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- }),
+						-- qh(11297, {	--  Keeping Watch on the Interlopers
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24234,	-- Junat the Wanderer
+						-- }),
+						-- qh(11233, {	--  Landing the Killing Blow
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 23778,	-- Dark Ranger Lyana
+						-- }),
+						-- qh(11227, {	--  Let Them Eat Crow
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 23938,	-- Pontius
+						-- }),
+						-- qh(11275, {	--  Making the Horn
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24123,	-- Nokoma Snowseer
+						-- }),
+						-- qh(11365, {	--  March of the Giants
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24390,	-- Sage Edan
+						-- }),
+						-- qh(11351, {	--  Mastering the Runes
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24362,	-- Longrunner Pembe
+						-- }),
+						-- qh(11281, {	--  Mimicking Nature's Call
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24123,	-- Nokoma Snowseer
+						-- }),
+						-- qh(11264, {	--  Necro Overlord Mezhen
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24129,	-- Chieftain Ashtotem
+						-- }),
+						-- qh(11304, {	--  New Agamand
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24126,	-- Apothecary Lysander
+						-- }),
+						-- qh(11265, {	--  Of Keys and Cages
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24135,	-- Greatmother Ankha
+						-- }),
+						-- qh(11309, {	--  Parts for the Job
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24252,	-- "Hacksaw" Jenny
+						-- }),
+						-- qh(11234, {	--  Report to Anselm
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 23778,	-- Dark Ranger Lyana
+						-- }),
+						-- qh(11221, {	--  Reports from the Field
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 23780,	-- High Executor Anselm
+						-- }),
+						-- qh(11296, {	--  Rivenwood Captives
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24209,	-- Longrunner Skycloud
+						-- }),
+						-- qh(11424, {	--  Shield Hill
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24252,	-- "Hacksaw" Jenny
+						-- }),
+						-- qh(11256, {	--  Skorn Must Fall!
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24129,	-- Chieftain Ashtotem
+						-- }),
+						-- qh(11433, {	--  Sleeping Giants
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24127,	-- Ahota Whitefrost
+						-- }),
+						-- qh(11253, {	--  Sniff Out the Enemy
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 23938,	-- Pontius
+						-- }),
+						-- qh(11168, {	--  Spiking the Mix
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24126,	-- Apothecary Lysander
+						-- }),
+						-- qh(11260, {	--  Stop the Ascension!
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- }),
+						-- qh(11311, {	--  Suppressing the Elements
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24256,	-- Wind Tamer Kagan
+						-- }),
+						-- qh(11170, {	--  Test at Sea
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24126,	-- Apothecary Lysander
+						-- }),
+						-- qh(11303, {	--  The Ambush
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24027,	-- Sergeant Gorth
+						-- }),
+						-- qh(11286, {	--  The Artifacts of Steel Gate
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24186,	-- Sage Mistwalker
+						-- }),
+						-- qh(11350, {	--  The Book of Runes
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24362,	-- Longrunner Pembe
+						-- }),
+						-- qh(11317, {	--  The Cleansing
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24186,	-- Sage Mistwalker
+						-- }),
+						-- qh(11261, {	--  The Conqueror of Skorn!
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24130,	-- Winterhoof Brave
+						-- }),
+						-- qh(11254, {	--  The Dragonskin Map
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- }),
+						-- qh(11423, {	--  The Enemy's Legacy
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24548,	-- Scribe Seguine
+						-- }),
+						-- qh(11267, {	--  The Frost Wyrm and its Master
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24032,	-- Celea Frozenmane
+						-- }),
+						-- qh(11312, {	--  The Frozen Glade
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24123,	-- Nokoma Snowseer
+						-- }),
+						-- qh(11366, {	--  The Lodestone
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24390,	-- Sage Edan
+						-- }),
+						-- qh(12791, {	--  The Magical Kingdom of Dalaran
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- }),
+						-- qh(11167, {	--  The New Plague
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24126,	-- Apothecary Lysander
+						-- }),
+						-- qh(11295, {	--  The Offensive Begins
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 23780,	-- High Executor Anselm
+						-- }),
+						-- qh(11352, {	--  The Rune of Command
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24362,	-- Longrunner Pembe
+						-- }),
+						-- qh(11453, {	--  The Slumbering King
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- }),
+						-- qh(11268, {	--  The Walking Dead
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24135,	-- Greatmother Ankha
+						-- }),
+						-- qh(11229, {	--  The Windrunner Fleet
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 23780,	-- High Executor Anselm
+						-- }),
+						-- qh(11308, {	--  Time for Cleanup
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24251,	-- Chief Plaguebringer Harris
+						-- }),
+						-- qh(12182, {	--  To Venomspite!
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24155,	-- Tobias Sarkhoff
+						-- }),
+						-- qh(11259, {	--  Towers of Certain Doom
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24130,	-- Winterhoof Brave
+						-- }),
+						-- qh(11241, {	--  Trail of Fire
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 23784,	-- Apothecary Hanes
+						-- }),
+						-- qh(11270, {	--  War is Hell
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 23780,	-- High Executor Anselm
+						-- }),
+						-- qh(11310, {	--  Warning: Some Assembly Required
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24252,	-- "Hacksaw" Jenny
+						-- }),
+						-- qh(11298, {	--  What's in That Brew?
+						-- 	["groups"] = {
+						-- 	},
+						-- 	["qg"] = 24152,	-- Apothecary Malthus
+						-- }),
+						qh(11282, {	-- A Lesson in Fear
+							["groups"] = {
+								i(35868),	-- Grounded Pants
+								i(35869),	-- Hex-Linked Stronghelm
+								i(35870),	-- Stoneground Cleaver
+							},
+						}),
+						qh(11305, {	-- A Tailor-Made Formula
+							["groups"] = {
+								i(35851),	-- Acid-Etched Knuckles
+								i(35849),	-- Featherweight Claymore
+								i(35852),	-- Fullered Coldsteel Dagger
+								i(35856),	-- Hair-Trigger Blunderbuss
+							},
+						}),
+						qh(12481, {	-- Adding Injury to Insult
+							["groups"] = {
+								i(35889),	-- Bone-Inlaid Bracers
+								i(35888),	-- Embossed Ermine Girdle
+								i(35890),	-- Magdun Spaulders
+								i(35891),	-- Runeplate Helm
+							},
+						}),
+						qh(11324, {	-- Alpha Worg
+							["groups"] = {
+								i(35913),	-- Gholamweave Leggings
+								i(35915),	-- Darksteel Ringmail Greaves
+								i(35916),	-- Worgblood Berserker's Hauberk
+								i(35914),	-- Proto-Drake Tooth Spaulders
+							},
+						}),
+						qh(11230, {	-- Ambushed!
+							["groups"] = {
+								i(35815),	-- Bone-Threaded Harness
+								i(35814),	-- Benevolent Hood
+								i(35817),	-- Nerubian Inner Husk
+							},
+						}),
+						qh(11283, {	-- Baleheim Bodycount
+							["groups"] = {
+								i(35820),	-- Deacon's Wraps
+								i(35818),	-- Stretch-Hide Spaulders
+								i(35821),	-- Streamlined Stompers
+								i(35822),	-- Scavenged Tirasian Plate
+							},
+						}),
+						qh(11301, {	-- Brains! Brains! Brains!
+							["groups"] = {
+								i(35864),	-- Fizznik's Patented Earwarmer
+								i(35863),	-- Earth-Infused Leggings
+								i(35866),	-- Master Artilleryman Boots
+								i(35865),	-- Arcanum Shield
+							},
+						}),
+						qh(11399, {	-- Bring Down Those Shields
+							["groups"] = {
+								i(35933),	-- Ramshorn Greathelm
+								i(35934),	-- Ghoul-Crushing Stompers
+							},
+						}),
+						qh(11280, {	-- Draconis Gastritis
+							["groups"] = {
+								i(35871),	-- Indigo Robe of Replenishment
+								i(35873),	-- Interlinked Chain Girdle
+								i(35875),	-- Beneficent Skullcap
+								i(35872),	-- Iron-Studded Leggings
+							},
+						}),
+						qh(11307, {	-- Field Test
+							["groups"] = {
+								i(35857),	-- Munificent Bulwark
+								i(35858),	-- Tome of Alacrity
+							},
+						}),
+						qh(11271, {	-- Hasty Preparations
+							["groups"] = {
+								i(35926),	-- Artfully Tooled Leggings
+								i(35927),	-- Songscale Breastplate
+								i(35928),	-- Cold-Forged Bronze Legplates
+							},
+						}),
+						qh(11233, {	-- Land the Killing Blow
+							["groups"] = {
+								i(35807),	-- Bramblethorn Greatstaff
+								i(35808),	-- Coldstone Cutlass
+								i(35812),	-- Cragthumper
+								i(35809),	-- Earthspike
+								i(35811),	-- Elekk-Horn Crossbow
+								i(35810),	-- Pacifying Pummeler
+							},
+						}),
+						qh(11281, {	-- Mimicking Nature's Call
+							["groups"] = {
+								i(35929),	-- Gholamcloth Wrap
+								i(35931),	-- Appointed Scalemail Leggings
+								i(35930),	-- Inscribed Worghide Treads
+							},
+						}),
+						qh(11264, {	-- Necro Overlord Mezhen
+							["groups"] = {
+								i(35938),	-- Drape of Munificence
+								i(35878),	-- Dusk-Linked Leggings
+								i(35879),	-- Gold-Plated Coldsteel Girdle
+								i(35877),	-- Worgskin Shoulders
+							},
+						}),
+						qh(13089, {	-- Northern Cooking
+							["groups"] = {
+									recipe(57421),	-- Northern Stew
+							},
+						}),
+						qh(11309, {	-- Parts for the Job
+							["groups"] = {
+								i(35844),	-- Shock-Resistant Hood
+								i(35846),	-- Banded Chain Gloves
+								i(35848),	-- Munificent Legguards
+							},
+						}),
+						qh(11296, {	-- Rivenwood Captives
+							["groups"] = {
+								i(35896),	-- Icestriker Bands
+								i(35898),	-- Reinforced Tuskhide Hauberk
+								i(35899),	-- Bloodbinder's Girdle
+								i(35897),	-- Ice-Crusted Cape
+							},
+						}),
+						qh(11424, {	-- Shield Hill
+							["groups"] = {
+								i(35893),	-- Coldstone-Inlaid Waistguard
+								i(35892),	-- Flamebinder Handwraps
+								i(35894),	-- Purestrike Bracers
+								i(35895),	-- Emeraldscale Pauldrons
+							},
+						}),
+						qh(11260, {	-- Stop the Ascension!
+							["groups"] = {
+								i(35900),	-- Supple Doeskin Moccasins
+								i(35902),	-- Shock-Bound Spaulders
+								i(35903),	-- Onyx Grips
+								i(35901),	-- Rejuvenating Cord
+							},
+						}),
+						qh(11170, {	-- Test at Sea
+							["groups"] = {
+								i(35841),	-- Frost-Trimmed Gauntlets
+								i(35842),	-- Azure Chain Hauberk
+								i(35843),	-- Ramshorn-Inlaid Shoulders
+							},
+						}),
+						qh(11286, {	-- The Artifacts of Steel Gate
+							["groups"] = {
+								i(35912),	-- Crackling Cloak
+							},
+						}),
+						qh(11261, {	-- The Conqueror of Skorn!
+							["groups"] = {
+								i(35909),	-- Sun-Fired Striders
+								i(35910),	-- Shaleground Bracers
+								i(35905),	-- Vinewoven Tunic
+							},
+						}),
+						qh(11267, {	-- The Frost Wyrm and its Master
+							["groups"] = {
+								i(35880),	-- Earthwell Footwraps
+								i(35882),	-- Magispike Helm
+								i(35883),	-- Silversteel Gauntlets
+							},
+						}),
+						qh(11167, {	-- The New Plague
+							["groups"] = {
+								i(35832),	-- Blauvelt's Special Occasion Gloves
+								i(35834),	-- Nimblefinger Scaled Gloves
+								i(35835),	-- Antique Reinforced Legguards
+								i(35833),	-- Imperious Worghide Cap
+							},
+						}),
+						qh(11268, {	-- The Walking Dead
+							["groups"] = {
+								i(35884),	-- Regal Pantaloons
+								i(35887),	-- Loam-Stained Greaves
+								i(35885),	-- Tribal Chestguard
+							},
+						}),
+						qh(11241, {	-- Trail of Fire
+							["groups"] = {
+								i(35829),	-- Coldspike Longbow
+								i(35827),	-- Regal Sceptre
+								i(35830),	-- Worn Vrykul Smasher
+								i(35826),	-- Whelpling-Skull Zapper
+								i(35823),	-- Ice-Rimed Dagger
+								i(35824),	-- Stoneblade Slicer
+							},
+						}),
+						qh(11310, {	-- Warning: Some Assembly Required
+							["groups"] = {
+								i(35860),	-- Flexible Leather Footwraps
+								i(35859),	-- Fire-Purifying Tunic
+								i(35861),	-- Inescapable Girdle
+								i(35862),	-- Light-Bound Chestguard
+							},
+						}),
 					}),
 				}),
 				n(-2, { 	-- Vendors
