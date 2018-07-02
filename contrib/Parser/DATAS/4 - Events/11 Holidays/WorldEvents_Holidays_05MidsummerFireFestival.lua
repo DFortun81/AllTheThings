@@ -2137,54 +2137,70 @@ _.WorldEvents =
 					}),
 					n(-2, { -- Vendors
 						a(n(26123, { -- Midsummer Supplier (Alliance Vendor)
-							un(21, i(23247, { -- Burning Blossom
-								n(-3199, {
-									["groups"] = { -- Midsummer Reveler Set
-										un(21, i(23324)), -- Mantle of the Fire Festival
-										un(21, i(34685)), -- Vestment of Summer
-										un(21, i(34683)), -- Sandals of Summer
+							["groups"] = {
+								un(21, i(23247, { -- Burning Blossom
+									n(-3199, {
+										["groups"] = { -- Midsummer Reveler Set
+											un(21, i(23324)), -- Mantle of the Fire Festival
+											un(21, i(34685)), -- Vestment of Summer
+											un(21, i(34683)), -- Sandals of Summer
+										},
+									}),
+									{
+										["achievementID"] = 272,	-- Torch Juggler
+										["criteriaID"] = 1,			-- Torch Juggler Criteria
+										["itemID"] = 34599,			-- Juggling Torch (Item)
+										["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
 									},
-								}),
-								{
-									["achievementID"] = 272,	-- Torch Juggler
-									["criteriaID"] = 1,			-- Torch Juggler Criteria
-									["itemID"] = 34599,			-- Juggling Torch (Item)
-									["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
-								},
-								un(21, i(34686)),	-- Brazier of Dancing Flames
-								un(21, i(116439)), 	-- Blazing Cindercrawler Pet
-								un(21, i(23083)), 	-- Captured Flame Pet
-								un(21, i(141714)), 	-- Igneous Flameling Pet
-								un(21, i(116440)), 	-- Burning Defender's Medallion Toy
-								un(21, i(116435)), 	-- Cozy Bonfire Toy
-								un(21, i(141649)), 	-- Set of Matches Toy
-								un(21, i(74278)), 	-- Helm of the Fire Festival
-							})),
+									un(21, i(34686)),	-- Brazier of Dancing Flames
+									un(21, i(116439)), 	-- Blazing Cindercrawler Pet
+									un(21, i(23083)), 	-- Captured Flame Pet
+									un(21, i(141714)), 	-- Igneous Flameling Pet
+									un(21, i(116440)), 	-- Burning Defender's Medallion Toy
+									un(21, i(116435)), 	-- Cozy Bonfire Toy
+									un(21, i(141649)), 	-- Set of Matches Toy
+									un(21, i(74278)), 	-- Helm of the Fire Festival
+								})),
+							},
+							["maps"] = {
+								301, -- Stormwind City
+								341, -- Ironforge
+								381, -- Darnassus
+								471, -- The Exodar
+							},
 						})),
 						h(n(26124, { -- Midsummer Merchant (Horde Vendor)
-							un(21, i(23247, { -- Burning Blossom
-								n(-3199, { -- Midsummer Reveler Set
-									["groups"] = {
-										un(21, i(23324)), -- Mantle of the Fire Festival
-										un(21, i(34685)), -- Vestment of Summer
-										un(21, i(34683)), -- Sandals of Summer
+							["groups"] = {
+								un(21, i(23247, { -- Burning Blossom
+									n(-3199, { -- Midsummer Reveler Set
+										["groups"] = {
+											un(21, i(23324)), -- Mantle of the Fire Festival
+											un(21, i(34685)), -- Vestment of Summer
+											un(21, i(34683)), -- Sandals of Summer
+										},
+									}),
+									{
+										["achievementID"] = 272,	-- Torch Juggler
+										["criteriaID"] = 1,			-- Torch Juggler Criteria
+										["itemID"] = 34599,			-- Juggling Torch (Item)
+										["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
 									},
-								}),
-								{
-									["achievementID"] = 272,	-- Torch Juggler
-									["criteriaID"] = 1,			-- Torch Juggler Criteria
-									["itemID"] = 34599,			-- Juggling Torch (Item)
-									["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
-								},
-								un(21, i(34686)),	-- Brazier of Dancing Flames
-								un(21, i(116439)), 	-- Blazing Cindercrawler Pet
-								un(21, i(23083)), 	-- Captured Flame Pet
-								un(21, i(141714)), 	-- Igneous Flameling Pet
-								un(21, i(116440)), 	-- Burning Defender's Medallion Toy
-								un(21, i(116435)), 	-- Cozy Bonfire Toy
-								un(21, i(141649)), 	-- Set of Matches Toy
-								un(21, i(74278)), 	-- Helm of the Fire Festival
-							})),
+									un(21, i(34686)),	-- Brazier of Dancing Flames
+									un(21, i(116439)), 	-- Blazing Cindercrawler Pet
+									un(21, i(23083)), 	-- Captured Flame Pet
+									un(21, i(141714)), 	-- Igneous Flameling Pet
+									un(21, i(116440)), 	-- Burning Defender's Medallion Toy
+									un(21, i(116435)), 	-- Cozy Bonfire Toy
+									un(21, i(141649)), 	-- Set of Matches Toy
+									un(21, i(74278)), 	-- Helm of the Fire Festival
+								})),
+							},
+							["maps"] = {
+								321, -- Orgrimmar
+								362, -- Thunder Bluff
+								382, -- Undercity
+								480, -- Silvermoon City
+							},
 						})),
 					}),
 				},
