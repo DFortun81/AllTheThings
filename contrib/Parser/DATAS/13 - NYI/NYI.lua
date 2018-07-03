@@ -452,7 +452,12 @@ _.NeverImplemented =
 	i(43016),
 	i(52446),
 	i(62898),
-
+	
+i(112935, { -- Tusks of Mannoroth [Normal]
+	["groups"] = {
+	},
+	["description"] = "|CFFFF0000If you had this item drop in SoO normal please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well.",
+}),
 	
 
 ------------------------------------------------------------

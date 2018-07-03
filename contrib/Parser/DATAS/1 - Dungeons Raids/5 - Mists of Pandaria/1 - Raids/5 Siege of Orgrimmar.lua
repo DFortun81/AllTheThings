@@ -1505,6 +1505,16 @@ _.Instances =
 								i(105858),	-- Essence of the Cursed Conqueror
 								i(105857),	-- Essence of the Cursed Protector
 								i(105859),	-- Essence of the Cursed Vanquisher
+								i(103785, { -- Tusks of Mannoroth [Heroic]
+									["groups"] = {
+									},
+									["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well.",
+								}),
+								i(105393, { -- Tusks of Mannoroth [Heroic Warforged]
+									["groups"] = {
+									},
+									["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well.",
+								}),
 								i(112932),	-- Kor'kron Spire of Supremacy
 								i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
 								i(112939),	-- Horned Mace of the Old Ones
@@ -1969,6 +1979,12 @@ _.Instances =
 								i(105867),	-- Essence of the Cursed Conqueror
 								i(105866),	-- Essence of the Cursed Protector
 								i(105868),	-- Essence of the Cursed Vanquisher
+								i(104646),  -- Tusks of Mannoroth [Mythic]
+								i(105642, { -- Tusks of Mannoroth [Mythic Warforged]
+									["groups"] = {
+									},
+									["description"] = "|CFFFF0000If you had this item drop in SoO Mythic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well.",
+								}),
 								i(104253),	-- Kor'kron Juggernaut (MOUNT!)
 								i(112932),	-- Kor'kron Spire of Supremacy
 								i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
