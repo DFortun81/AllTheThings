@@ -966,7 +966,11 @@ _.Zones =
 							i(128455),	-- Frostwolf Spaulders
 							i(128456),	-- Frostwolf Tunic
 						}),
-						i(128490),	-- Blueprint: Oil [Possible questID unlock?]
+						i(128490, {	-- Blueprint: Oil
+							["groups"] = {
+							},
+							["questID"] = 39561,
+						}),
 						i(128440, { -- Contract: Dowser Bigspark
 							["groups"] = {
 								follower(581.2), -- Dowser Bigspark
@@ -993,7 +997,11 @@ _.Zones =
 							["questID"] = 39604, -- I Sunk Your Battleship
 							--["collectible"] = true,
 						}),	
-						i(128294),	-- Trade Agreement: Arakkoa Outcasts
+						i(128294, {	-- Trade Agreement: Arakkoa Outcasts
+							["groups"] = {
+							},
+							["questID"] = 37485,
+						}),
 						i(113212, {	-- Treasure Map: Tanaan Jungle
 							["groups"] = {
 							},
@@ -1007,7 +1015,11 @@ _.Zones =
 						["description"] = "This NPC is located at |cFFFFFFFF55.2, 75.0|r.  You will need to talk to him and you will receive the toy.",
 					}),
 					na(90974, {	-- Vindicator Krethos <Hand of the Prophet>
-						i(128444),	-- Blueprint: Oil [Possible questID unlock?]
+						i(128444, {	-- Blueprint: Oil
+							["groups"] = {
+							},
+							["questID"] = 39561,
+						}),
 						i(128445, { -- Contract: Dowser Bigspark
 							["groups"] = {
 								follower(581.1), -- Dowser Bigspark
@@ -1044,7 +1056,11 @@ _.Zones =
 							["questID"] = 39601, -- I Sunk Your Battleship
 							--["collectible"] = true,
 						}),	
-						i(128294),	-- Trade Agreement: Arakkoa Outcasts
+						i(128294, {	-- Trade Agreement: Arakkoa Outcasts
+							["groups"] = {
+							},
+							["questID"] = 37485,
+						}),
 						i(113212, { -- Treasure Map: Tanaan Jungle
 							["groups"] = {
 							},
