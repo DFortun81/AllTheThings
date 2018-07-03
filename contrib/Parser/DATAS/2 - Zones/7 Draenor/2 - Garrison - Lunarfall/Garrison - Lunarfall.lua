@@ -590,13 +590,48 @@ _.Zones =
 								ach(9524, { -- Treasure Master
 									ach(9145), -- Treasure Mission Specialist
 								}),
-								garrisonMission(66, { -- Killing the Corrupted
-									i(114826, { -- Contract: Bruma Swiftstone
-										follower(153, { -- Bruma Swiftstone
+								garrisonMission(463, { -- Bird Watching
+									i(118731, { -- Spires of Arak Treasure Map
+										["groups"] = {
+										},
+										["questID"] = 36467,
+									}),
+								}),
+								garrisonMission(462, { -- Fields of Sorrow
+									i(118730, { -- Talador Treasure Map
+										["groups"] = {
+										},
+										["questID"] = 36466,
+									}),
+								}),
+								garrisonMission(2, { -- Gronnlings Abound
+									i(112737, { -- Contract: Ka'la of the Frostwolves
+										follower(153, { -- Ka'la
 											["groups"] = {
 											},
 											["description"] = "Press Shift+Click to refresh or relog once you obtain this follower",
 										}),
+									}),
+								}),
+								garrisonMission(464, { -- Highplains Robbery
+									i(118732, { -- Nagrand Treasure Map
+										["groups"] = {
+										},
+										["questID"] = 36468,
+									}),
+								}),
+								garrisonMission(461, { -- It's a Jungle Out There
+									i(118729, { -- Gorgrond Treasure Map
+										["groups"] = {
+										},
+										["questID"] = 36465,
+									}),
+								}),
+								garrisonMission(465, { -- Tomb Raider
+									i(118728, { -- Shadowmoon Valley Treasure Map
+										["groups"] = {
+										},
+										["questID"] = 36464,
 									}),
 								}),
 								i(114053, { -- Shimmering Gauntlets

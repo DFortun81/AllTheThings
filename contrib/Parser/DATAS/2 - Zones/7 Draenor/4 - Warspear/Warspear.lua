@@ -1375,6 +1375,35 @@ _.Zones =
 							i(118682),	-- Saberon Protector
 						},
 					}),
+					n(88253, {  -- Srikka
+						["groups"] = {
+							i(118727, { -- Frostfire Treasure Map
+								["groups"] = {
+								},
+								["questID"] = 34557,
+							}),
+							i(118729, { -- Gorgrond Treasure Map
+								["groups"] = {
+								},
+								["questID"] = 36465,
+							}),
+							i(118732, { -- Nagrand Treasure Map
+								["groups"] = {
+								},
+								["questID"] = 36468,
+							}),
+							i(118731, { -- Spires of Arak Treasure Map
+								["groups"] = {
+								},
+								["questID"] = 36467,
+							}),
+							i(118730, { -- Talador Treasure Map
+								["groups"] = {
+								},
+								["questID"] = 36466,
+							}),
+						},
+					}),
 					n(87774, {	-- Stone Guard Brokefist <Primal Combatant>
 						i(138626, { -- Arsenal: Primal Combatant's Weapons [ Horde ]
 							["groups"] = {

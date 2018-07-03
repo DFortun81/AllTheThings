@@ -470,6 +470,35 @@ _.Zones =
 							i(119137),	-- Steamwheedle "Preservation" Society Tabard
 						},
 					}),
+					n(87365, {  -- Grakis
+						["groups"] = {
+							i(118729, { -- Gorgrond Treasure Map
+								["groups"] = {
+								},
+								["questID"] = 36465,
+							}),
+							i(118732, { -- Nagrand Treasure Map
+								["groups"] = {
+								},
+								["questID"] = 36468,
+							}),
+							i(118728, { -- Shadowmoon Valley Treasure Map
+								["groups"] = {
+								},
+								["questID"] = 36464,
+							}),
+							i(118731, { -- Spires of Arak Treasure Map
+								["groups"] = {
+								},
+								["questID"] = 36467,
+							}),
+							i(118730, { -- Talador Treasure Map
+								["groups"] = {
+								},
+								["questID"] = 36466,
+							}),
+						},
+					}),
 					n(85946, {	-- Shadow Sage Brakoss <Arakkoa Outcasts Quartermaster>
 						["groups"] = {
 							currency (823, { -- Apexis Crystal
