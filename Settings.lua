@@ -286,7 +286,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,alerts)
 	
 	local alertsFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-alertsFrame", child, "ThinBorderTemplate");
-	alertsFrame:SetSize(child:GetWidth(),80)
+	alertsFrame:SetSize(child:GetWidth(),100)
 	alertsFrame:SetPoint("TOPLEFT",alerts,0,-frameSpacer);
 	alertsFrame:SetAlpha(0.3);
 	addObject(elm,alertsFrame)
@@ -320,6 +320,36 @@ local function createGeneralFrame(parent)
 		end);
 	playFanfare:SetPoint("TOPLEFT",notifyMe,0,-frameSpacer)
 	addObject(elm,playFanfare)
+
+	-- This creates the "Play Fanfare when I Collect Rare Things" Checkbox --
+	local playRareFindSound = createCheckBox("Play Fanfare when I Collect Rare Things", child, function(self)
+			app.SetDataMember("playRareFindSound", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("playRareFindSound", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a RARE collectible item.\n\nThis feature can very addicting.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	playRareFindSound:SetPoint("TOPLEFT",playFanfare,5,-frameSpacer)
+	addObject(elm,playRareFindSound)
+	
+	-- This creates the "Play Fanfare when I complete a group" Checkbox --
+	local playCompleteSound = createCheckBox("Play Fanfare when I complete a group", child, function(self)
+			app.SetDataMember("playCompleteSound", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("playCompleteSound", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you complete a group in the minilist.\n\nThis feature can very addicting.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	playCompleteSound:SetPoint("TOPLEFT",playRareFindSound,0,-frameSpacer)
+	addObject(elm,playCompleteSound)
 	
 	-- This creates the "Play a Warning when I Remove Things" Checkbox --
 	local playRemoveSound = createCheckBox("Play a Warning when I Remove Things", child, function(self)
@@ -333,7 +363,7 @@ local function createGeneralFrame(parent)
 			GameTooltip:SetText ("Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	playRemoveSound:SetPoint("TOPLEFT",playFanfare,0,-frameSpacer)
+	playRemoveSound:SetPoint("TOPLEFT",playCompleteSound,-5,-frameSpacer)
 	addObject(elm,playRemoveSound)	
 	
 	-- specializations options
