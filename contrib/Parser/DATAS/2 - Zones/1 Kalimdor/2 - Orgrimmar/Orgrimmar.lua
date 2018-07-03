@@ -915,7 +915,9 @@ _.Zones =
 						["classes"] = { 2 },	-- Paladin
 					})),
 					qg( 3216, qh(25264)),	-- Ak'Zeloth
-					qg(54870, qh(31853)),	-- All Aboard!
+					qh(31853, {	-- All Aboard!
+						["qg"] = 54870, -- General Nazgrim
+					}),
 					qg(14720, q(  9627, {	-- Allegiance to the Horde
 						["groups"] = {
 						},
