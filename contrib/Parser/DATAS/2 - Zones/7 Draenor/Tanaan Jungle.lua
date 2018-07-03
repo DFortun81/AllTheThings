@@ -994,7 +994,11 @@ _.Zones =
 							--["collectible"] = true,
 						}),	
 						i(128294),	-- Trade Agreement: Arakkoa Outcasts
-						i(113212),	-- Treasure Map: Tanaan Jungle
+						i(113212, {	-- Treasure Map: Tanaan Jungle
+							["groups"] = {
+							},
+							["questID"] = 39463,
+						}),
 					}),
 					n(95650, {	-- Skoller
 						["groups"] = {
@@ -1041,7 +1045,11 @@ _.Zones =
 							--["collectible"] = true,
 						}),	
 						i(128294),	-- Trade Agreement: Arakkoa Outcasts
-						i(113212),	-- Treasure Map: Tanaan Jungle
+						i(113212, { -- Treasure Map: Tanaan Jungle
+							["groups"] = {
+							},
+							["questID"] = 39463,
+						}),
 					}),
 					n(92805, {	-- Z'tenga the Walker <Saberstalker Quartermaster>
 						i(124099, { -- Blackfang Claw
