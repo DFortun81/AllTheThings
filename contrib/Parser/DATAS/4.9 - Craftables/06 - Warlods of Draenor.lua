@@ -6,30 +6,23 @@ _.Craftables =
 	tier(6, { -- Warlords of Draneor
 		n(-181, { -- Blacksmithing
 			n(-319, { -- Weapons
-				i(128016, { -- Steelforged Essence
-					WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
-					WOD_CRAFTED_ITEM(120261), -- Steelforged Aegis
-					WOD_CRAFTED_ITEM(116453), -- Steelforged Greataxe
-					WOD_CRAFTED_ITEM(116454), -- Steelforged Saber
-					WOD_CRAFTED_ITEM(116644), -- Steelforged Dagger
-					WOD_CRAFTED_ITEM(116646), -- Steelforged Hammer
-					WOD_CRAFTED_ITEM(120259), -- Steelforged Axe
-				}),
+				WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
+				WOD_CRAFTED_ITEM(120261), -- Steelforged Aegis
+				WOD_CRAFTED_ITEM(116453), -- Steelforged Greataxe
+				WOD_CRAFTED_ITEM(116454), -- Steelforged Saber
+				WOD_CRAFTED_ITEM(116644), -- Steelforged Dagger
+				WOD_CRAFTED_ITEM(116646), -- Steelforged Hammer
+				WOD_CRAFTED_ITEM(120259), -- Steelforged Axe
 			}),
 			n(-46,{ -- Plate
 				i(116426), -- Smoldering Helm
 				i(116427), -- Smoldering Breastplate
 				i(116425), -- Smoldering Greaves
-				i(128015, { -- Truesteel Essence
-					WOD_CRAFTED_ITEM(114230), -- Truesteel Helm
-					WOD_CRAFTED_ITEM(114231), -- Truesteel Pauldrons
-					WOD_CRAFTED_ITEM(114232), -- Truesteel Breastplate
-					WOD_CRAFTED_ITEM(114236), -- Truesteel Armguards
-					WOD_CRAFTED_ITEM(114237), -- Truesteel Gauntlets
-					WOD_CRAFTED_ITEM(114233), -- Truesteel Waistguard
-					WOD_CRAFTED_ITEM(114234), -- Truesteel Greaves
-					WOD_CRAFTED_ITEM(114235), -- Truesteel Boots
-				}),
+				WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades
+				WOD_CRAFTED_ITEM(109171),	-- Night-Vision Mechshades
+				WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades
+				WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
+				WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
 			}),
 		}),
 		n(-183, { -- Engineering
@@ -68,65 +61,55 @@ _.Craftables =
 		}),
 		n(-187, { -- Leatherworking
 			n(-322, { 	-- Cloak
-				i(128014, { -- Burnished Essence
-					WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
-					WOD_CRAFTED_ITEM(116174),	-- Nimble Burnished Cloak
-					WOD_CRAFTED_ITEM(116171),	-- Powerful Burnished Cloak
-				}),
+				WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
+				WOD_CRAFTED_ITEM(116174),	-- Nimble Burnished Cloak
+				WOD_CRAFTED_ITEM(116171),	-- Powerful Burnished Cloak
 			}),
 			n(-44, { 	-- Leather
 				i(116164),	-- Journeying Helm
 				i(116165),	-- Journeying Robes
 				i(116166),	-- Journeying Slacks
-				i(128014, { -- Burnished Essence
-					WOD_CRAFTED_ITEM(116182),	-- Supple Boots
-					WOD_CRAFTED_ITEM(116181),	-- Supple Bracers
-					WOD_CRAFTED_ITEM(116179),	-- Supple Gloves
-					WOD_CRAFTED_ITEM(116177),	-- Supple Helm
-					WOD_CRAFTED_ITEM(116178),	-- Supple Leggings
-					WOD_CRAFTED_ITEM(116176),	-- Supple Shoulderguards
-					WOD_CRAFTED_ITEM(116180),	-- Supple Vest
-					WOD_CRAFTED_ITEM(116183),	-- Supple Waistguard
-				}),
+				WOD_CRAFTED_ITEM(116182),	-- Supple Boots
+				WOD_CRAFTED_ITEM(116181),	-- Supple Bracers
+				WOD_CRAFTED_ITEM(116179),	-- Supple Gloves
+				WOD_CRAFTED_ITEM(116177),	-- Supple Helm
+				WOD_CRAFTED_ITEM(116178),	-- Supple Leggings
+				WOD_CRAFTED_ITEM(116176),	-- Supple Shoulderguards
+				WOD_CRAFTED_ITEM(116180),	-- Supple Vest
+				WOD_CRAFTED_ITEM(116183),	-- Supple Waistguard
 			}),
 			n(-45, { 	-- Mail
 				i(116167),	-- Traveling Helm
 				i(116169),	-- Traveling Leggings
 				i(116168),	-- Traveling Tunic
-				i(128014, { -- Burnished Essence
-					WOD_CRAFTED_ITEM(116194),	-- Wayfaring Belt
-					WOD_CRAFTED_ITEM(116193),	-- Wayfaring Boots
-					WOD_CRAFTED_ITEM(116192),	-- Wayfaring Bracers
-					WOD_CRAFTED_ITEM(116190),	-- Wayfaring Gloves
-					WOD_CRAFTED_ITEM(116188),	-- Wayfaring Helm
-					WOD_CRAFTED_ITEM(116189),	-- Wayfaring Leggings
-					WOD_CRAFTED_ITEM(116187),	-- Wayfaring Shoulderguards
-					WOD_CRAFTED_ITEM(116191),	-- Wayfaring Tunic
-				}),
+				WOD_CRAFTED_ITEM(116194),	-- Wayfaring Belt
+				WOD_CRAFTED_ITEM(116193),	-- Wayfaring Boots
+				WOD_CRAFTED_ITEM(116192),	-- Wayfaring Bracers
+				WOD_CRAFTED_ITEM(116190),	-- Wayfaring Gloves
+				WOD_CRAFTED_ITEM(116188),	-- Wayfaring Helm
+				WOD_CRAFTED_ITEM(116189),	-- Wayfaring Leggings
+				WOD_CRAFTED_ITEM(116187),	-- Wayfaring Shoulderguards
+				WOD_CRAFTED_ITEM(116191),	-- Wayfaring Tunic
 			}),
 		}),
 		n(-190, { -- Tailoring
 			n(-322, {	-- Cloak
-				i(128012, { -- Hexweave Essence
-					WOD_CRAFTED_ITEM(114819),	-- Brilliant Hexweave Cloak
-					WOD_CRAFTED_ITEM(114818),	-- Nimble Hexweave Cloak
-					WOD_CRAFTED_ITEM(114817),	-- Powerful Hexweave Cloak
-				}),
+				WOD_CRAFTED_ITEM(114819),	-- Brilliant Hexweave Cloak
+				WOD_CRAFTED_ITEM(114818),	-- Nimble Hexweave Cloak
+				WOD_CRAFTED_ITEM(114817),	-- Powerful Hexweave Cloak
 			}),
 			n(-43, { -- Cloth
 				i(114828),	-- Sumptuous Cowl
 				i(114829),	-- Sumptuous Robes
 				i(114831),	-- Sumptuous Leggings
-				i(128012, { -- Hexweave Essence
-					WOD_CRAFTED_ITEM(114810),	-- Hexweave Cowl
-					WOD_CRAFTED_ITEM(114809),	-- Hexweave Mantle
-					WOD_CRAFTED_ITEM(114813),	-- Hexweave Robe
-					WOD_CRAFTED_ITEM(114814),	-- Hexweave Bracers
-					WOD_CRAFTED_ITEM(114812),	-- Hexweave Gloves
-					WOD_CRAFTED_ITEM(114816),	-- Hexweave Belt
-					WOD_CRAFTED_ITEM(114811),	-- Hexweave Leggings
-					WOD_CRAFTED_ITEM(114815),	-- Hexweave Slippers
-				}),
+				WOD_CRAFTED_ITEM(114810),	-- Hexweave Cowl
+				WOD_CRAFTED_ITEM(114809),	-- Hexweave Mantle
+				WOD_CRAFTED_ITEM(114813),	-- Hexweave Robe
+				WOD_CRAFTED_ITEM(114814),	-- Hexweave Bracers
+				WOD_CRAFTED_ITEM(114812),	-- Hexweave Gloves
+				WOD_CRAFTED_ITEM(114816),	-- Hexweave Belt
+				WOD_CRAFTED_ITEM(114811),	-- Hexweave Leggings
+				WOD_CRAFTED_ITEM(114815),	-- Hexweave Slippers
 			}),
 		}),
 	}),

@@ -177,11 +177,13 @@ profession(202, { -- Engineering
 	}),
 	tier(6, { -- Warlords of Draenor
 		i(128011, { -- Linkgrease Locksprocket
-			WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
 			WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades
 			WOD_CRAFTED_ITEM(109171),	-- Night-Vision Mechshades
 			WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades
 			WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
+		}),
+		i(128017, { -- True Iron Trigger
+			WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
 		}),
 	}),
 	tier(7, { -- Legion
