@@ -422,6 +422,7 @@ profession(356, { 	-- Fishing
 		desc(i(44505), "Can be caught in schools or open water in Northrend."),	-- Dustbringer
 		desc(i(44703), "Can be caught from Fangtooth Herring Schools in Howling Fjord."), -- Dark Herring
 	}),
+	--[[
 	tier(1, {	-- Classic
 		
 	}),
@@ -437,6 +438,7 @@ profession(356, { 	-- Fishing
 	tier(6, { 	-- Warlords of Draenor
 		
 	}),
+	--]]
 	tier(7, { 	-- Legion
 		faction(1975, {	-- Conjurer Margoss
 			["groups"] = {

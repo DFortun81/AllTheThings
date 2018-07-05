@@ -46,6 +46,56 @@ _.ClassHalls =
 						["qg"] = 110564, -- Alonsus Faol
 						["sourceQuests"] = { 43935 }, -- A Second Legend
 					}),	
+					i(128868, { -- Light's Wrath
+						["groups"] = {
+							q(41625, {	-- The Light's Wrath
+								["groups"] = {
+								},
+								["qg"] = 101314, -- Alonsus Faol
+								["sourceQuests"] = { 40706 } , -- A Legend You Can Hold
+							}),	
+							q(41626, {	-- A New Threat
+								["groups"] = {
+								},
+								["qg"] = 101314, -- Alonsus Faol
+								["sourceQuests"] = { 41625 } , -- The Light's Wrath
+							}),	
+							q(41627, {	-- A Forgotten Enemy
+								["groups"] = {
+								},
+								["sourceQuests"] = { 41626 } , -- A New Threat
+							}),	
+							q(41628, {	-- Eyes of the Dragon
+								["groups"] = {
+								},
+								["sourceQuests"] = { 41626 } , -- A Forgotten Enemy
+							}),	
+							q(41629, {	-- Harnessing the Holy Fire
+								["groups"] = {
+								},
+								
+								["sourceQuests"] = { 41627 } , -- Eyes of the Dragon
+							}),	
+							q(41630, {	-- Unleashing Judgment
+								["groups"] = {
+								},
+								["qg"] = 105917, -- Image of Kalec
+								["sourceQuests"] = { 41628 } , -- Harnessing the Holy Fire
+							}),	
+							q(41631, {	-- The Nexus Vault
+								["groups"] = {
+								},
+								["qg"] = 105917, -- Image of Kalec
+								["sourceQuests"] = { 41629 } , -- Unleashing Judgment
+							}),	
+							q(41632, {	-- A Gift of Time
+								["groups"] = {
+								},
+								["qg"] = 105081, -- Archmage Kalec
+								["sourceQuests"] = { 41630 } , -- The Nexus Vault
+							}),	
+						},
+					}),
 					i(128825, { -- T'uure, Beacon of the Naaru
 						["groups"] = {
 							qh(41957, { -- The Vindicator's Plea	
@@ -79,105 +129,24 @@ _.ClassHalls =
 								["sourceQuests"] = { 41993 }, -- Salvation From On High
 							}),
 						},
-						["ignoreSource"] = true,
+					}),
+					i(128827, { -- Xal'atah, Blade of the Black Empire
+						["groups"] = {
+							i(133958), -- Secrets of the Void 
+							q(40710, {	-- Blade in Twilight
+								["groups"] = {
+								},
+								["qg"] = 101314, -- Alonsus Faol
+								["sourceQuests"] = { 40706 } , -- A Legend You Can Hold
+							}),	
+						},
 					}),
 				}),
-				q(44057),	-- A "Noble" Event
-				q(45343),	-- A Curious Contagion
-				q(41632),	-- A Gift of Time
-				q(43420),	-- A Hero's Weapon
-				q(43401),	-- A Light in the Darkness
-				q(41019),	-- Actions on Azeroth
-				q(43797),	-- Aiding the Conclave
-				q(43395),	-- Allies of the Light
-				q(45180),	-- An Island of War
-				q(46028),	-- An Urgent Warning
-				q(41015),	-- Artifacts Need Artificers
-				q(43487),	-- Assault on Violet Hold: The Fel Lexicon
-				q(40710),	-- Blade in Twilight
-				q(44306),	-- Blessings of the Order
-				q(43488),	-- Blood of Our Enemy
-				q(44229),	-- Champion Armaments
-				q(46034),	-- Champion: Aelthalyste
-				q(43398),	-- Champion: Alonsus Faol
-				q(43271),	-- Champion: Calia Menethil
-				q(43272),	-- Champion: High Priestess Ishanah
-				q(43381),	-- Champion: Mariella Ward
-				q(43380),	-- Champion: Sol
-				q(44275),	-- Court of Stars
-				q(43486),	-- Cracking the Codex
-				q(43394),	-- Crossing Legion Lines
-				q(43551),	-- Darkheart Thicket
-				q(44273),	-- Darkheart Thicket
-				q(44272),	-- Darkheart Thicket
-				q(47077),	-- Delivering Lost Knowledge
-				q(43384),	-- Demonic Runes
-				q(45173),	-- Desperate Times
-				q(43832),	-- Elixirs of Aid
-				q(41017),	-- Empowering Your Artifact
-				q(44270),	-- Eye of Azshara
-				q(44271),	-- Eye of Azshara
-				q(43378),	-- Eye of Azshara: Looking Through the Lens
 				qg(110564, q(43390, {	-- Forgotten Shadows
 					["groups"] = {
 					},
 					["classes"] = {5}, -- Priest
-				})),
-				q(43399),	-- Fortifying the Temple
-				q(46788),	-- Further Advancement
-				q(46153),	-- Furthering Knowledge
-				q(43377),	-- Halls of Valor: The Light Within
-				q(43402),	-- High Priest of Netherlight
-				q(43385),	-- Infiltrating Our Enemies
-				q(46029),	-- Investigate the Broken Shore
-				q(43924),	-- Leyblood
-				q(43400),	-- Lumenstone
-				q(43553),	-- Maw of Souls
-				q(44267),	-- Maw of Souls
-				q(43554),	-- Neltharion's Lair
-				q(44265),	-- Neltharion's Lair
-				q(44264),	-- Neltharion's Lair
-				q(44269),	-- Odyn's Challenge
-				q(44268),	-- Odyn's Challenge
-				q(43386),	-- Onslaught Envoy
-				q(44251),	-- Power Word: Armor
-				q(44100),	-- Proper Introductions
-				q(43851),	-- Recruiting More Troops
-				q(43275),	-- Recruiting the Troops
-				q(43371),	-- Relieving the Front Lines
-				q(44917),	-- Return to Karazhan: The Tower of Power
-				q(43270),	-- Rise, Champions
-				q(43393),	-- Rising Shadows
-				q(43925),	-- Runescale Koi
-				q(45348),	-- Safekeeping
-				q(43273),	-- Spread the Word
-				q(43923),	-- Starlight Rose
-				q(46145),	-- Sterile Surroundings
-				q(43277),	-- Tech It Up A Notch
-				q(44263),	-- The Arcway
-				q(43373),	-- The Best and Brightest
-				q(44230),	-- The Fates Bless Us
-				q(40938),	-- The Light and the Void
-				q(41625),	-- The Light's Wrath
-				q(44277),	-- The Lord of Black Rook Hold
-				q(44276),	-- The Lord of Black Rook Hold
-				q(43396),	-- The Mind of the Enemy
-				q(45788),	-- The Speaker Awaits
-				q(45789),	-- The Sunken Vault
-				q(45172),	-- To Battle!
-				q(45349),	-- To the Broken Shore
-				q(43535),	-- Translation: Danger!
-				q(43276),	-- Troops in the Field
-				q(43389),	-- Unexpected Guests
-				q(43397),	-- United As One
-				q(44261),	-- Vault of the Wardens
-				q(44260),	-- Vault of the Wardens
-				q(43379),	-- Velen's Vision
-				q(44259),	-- Violet Hold
-				q(44258),	-- Violet Hold
-				q(44058),	-- Volpin the Elusive
-				q(43372),	-- Whispers in the Void
-				q(45179),	-- Win the Crowd										
+				})),									
 				q(45789, { -- The Sunken Vault
 					["groups"] = {
 						{ ["mountID"] = 229377 }, -- High Priest's Lightsworn Seeker
@@ -214,7 +183,6 @@ _.ClassHalls =
 						i(139755), -- Feet
 					}),
 					i(140552), -- Netherlight Spire
-					
 				}),
 			}),
 		},
