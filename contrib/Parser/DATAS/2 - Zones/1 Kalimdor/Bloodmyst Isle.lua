@@ -6,19 +6,6 @@ _.Zones =
 	m(13, {		-- Kalimdor
 		m(476, {	-- Bloodmyst Isle
 			["groups"] = {
-				n(-3, {		-- Holidays
-					n(-58, {	-- Hallow's End
-						["groups"] = {
-							n(-17, {	-- Quests
-								o(190045, {	-- Candy Bucket
-									qa(12341),	-- Candy Bucket
-								}),
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),
-				}),
 				n(-25, { 	-- Pet Battle
 					p(628),		-- Infected Fawn
 					p(627),		-- Infected Squirrel

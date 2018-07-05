@@ -26,17 +26,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								o(208140, {	-- Candy Bucket
-									qh(28992),	-- Candy Bucket
-								}),
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
 				}),				
 				n(-25, { 	-- Pet Battle
 					p(378), 	-- Rabbit

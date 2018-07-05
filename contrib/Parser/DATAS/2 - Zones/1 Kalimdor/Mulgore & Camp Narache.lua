@@ -64,16 +64,6 @@ _.Zones =
 						["u"] = 19,
 					}),
 --[[					
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),	
---]]
---[[					
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -83,15 +73,6 @@ _.Zones =
 						["u"] = 24,
 					}),
 --]]
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qh(12362),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
 --[[
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {

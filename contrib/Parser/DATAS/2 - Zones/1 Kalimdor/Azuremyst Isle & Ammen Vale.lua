@@ -51,28 +51,7 @@ _.Zones =
 						},
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
-					}),
-					n(-59, {     -- Day of the Dead
-						["groups"] = {
-							qg(34484, qa(14169, {	-- The Grateful Dead
-								["groups"] = {
-								},
-								["races"] = {11},
-							})),
-						},
-						["achievementID"] = 3456, -- Dead Man's Party
-						["u"] = 27,
-					}),					
---[[
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),	
---]]
+					}),				
 --[[					
 					n(-56, {     -- Brewfest
 						["groups"] = {
@@ -83,30 +62,6 @@ _.Zones =
 						["u"] = 24,
 					}),
 --]]
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								o(190037, {	-- Candy Bucket
-									qa(12333),	-- Candy Bucket
-								}),
-								qg(24519, qa( 12135)),	-- "Let the Fires Come!" (QG and quest also in Elwynn Forest and Dun Morogh)
-								o(186887, {	-- Large Jack-o'-Lantern (QG also in Dun Morogh, Elwynn Forest, Eversong Woods, and Tirisfal Glades)
-									qa(12133),	-- Smash the Pumpkin
-									}),
-								o(186887, {	-- Large Jack-o'-Lantern
-									qh(12155),	-- Smash the Pumpkin (QG also in Tirisfal Glades, Dun Morogh, Elwynn Forest, and Eversong Woods)
-									}),
-								qg(24519, qa(11131)),	-- Stop the Fires!
-								-- qa(11356),	-- Costumed Orphan Matron (Hallow's End, QG not in Azuremyst - quest can END here, QGs listed below)
-									--[[20102 Netherstorm, Northern Barrens, Shattrath, Storm Peaks, Tanaris, The Cape of Stranglethorn, Winterspring
-										19148 and 19172 Ironforge, Isle of Thunder
-										18927 Stormwind City ]]--												
---								qg(23904, qa(11242)),	-- Free at Last! (questgiver supposedly spawns after defeating the headless horseman) will check this when event comes around again.
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),
 --[[
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {

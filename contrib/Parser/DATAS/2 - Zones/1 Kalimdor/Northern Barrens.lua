@@ -57,15 +57,7 @@ _.Zones =
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
 					}),
---[[					
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),
+--[[
 --]]				
 					n(-56, {     -- Brewfest
 						["groups"] = {
@@ -75,23 +67,7 @@ _.Zones =
 						},
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(20102, qh(29400)),	-- A Season for Celebration
-								qg(20102, qa(29074)),	-- A Season for Celebration
-								q(12396),	-- Candy Bucket
-								qh(12374),	-- Candy Bucket
-								qh(29002),	-- Candy Bucket
-								qh(29003),	-- Candy Bucket
-								qg(20102, qa(11356)),	-- Costumed Orphan Matron
-								qg(20102, qh(11357)),	-- Masked Orphan Matron
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),						
+					}),					
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests

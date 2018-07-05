@@ -32,14 +32,6 @@ _.Zones =
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),	
 --]]
 --[[					
 					n(-56, {     -- Brewfest
@@ -50,22 +42,7 @@ _.Zones =
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),
---]]					
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(29013),	-- Candy Bucket
-								qa(12347),	-- Candy Bucket
-								qa(29010),	-- Candy Bucket
-								qa(29011),	-- Candy Bucket
-								qa(29012),	-- Candy Bucket
-								qh(12378),	-- Candy Bucket
-								qh(29009),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
+--]]
 --[[					
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {

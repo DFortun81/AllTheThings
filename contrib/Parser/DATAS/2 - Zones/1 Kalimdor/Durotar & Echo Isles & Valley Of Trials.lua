@@ -62,17 +62,7 @@ _.Zones =
 						},
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
-					}),
---[[
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),
---]]				
+					}),		
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-4, { 	-- Achievement
@@ -187,38 +177,7 @@ _.Zones =
 						},
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
-					}),					
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								o(190064, {	-- Candy Bucket
-									qh(12361),	-- Candy Bucket
-								}),
-								qg(23973, qh(11449)),	-- Fire Training (QG in Tirisfal Glades)
-								qg(23973, qh(11450)),	-- Fire Training (QG in Eversong Woods)
-								qg(23973, qh(11361)),	-- Fire Training
---								qg(23904, qh(11403)),	-- Free at Last! (possibly REMOVED, marking HOLIDAY LEGACY)
-								qg(23973, qh(12139)),	-- "Let the Fires Come!" (QG also in Eversong Woods and Tirisfal Glades)
-								qh(11357),	-- Masked Orphan Matron (ENDS in Durotar; QGs listed below)
-									--[[20102 The Cape of Stranglethorn, Netherstorm, Winterspring, Shattrath City, The Storm Peaks, Tanaris, Northern Barrens
-									19176, 19177, and 19175 Orgrimmar
-									19169 Eversong Woods, Dalaran
-									19176 Thunder Bluff
-									19178 Undercity
-									--]]
-								qg(54141, qh(29415)),	-- Missing Heirlooms (QG in Orgrimmar)
-								o(186887, {	-- Large Jack-o'-Lantern (QG also in Dun Morogh, Elwynn Forest, Eversong Woods, and Tirisfal Glades)
-									qa(12133),	-- Smash the Pumpkin
-								}),
-								o(186887, {	-- Large Jack-o'-Lantern
-									qh(12155),	-- Smash the Pumpkin (QG also in Tirisfal Glades, Dun Morogh, Elwynn Forest, and Eversong Woods)
-								}),
-								qg(23973, qh(11219)),	-- Stop the Fires! (QG also in Eversong Woods and Tirisfal Glades)
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
+					}),
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
