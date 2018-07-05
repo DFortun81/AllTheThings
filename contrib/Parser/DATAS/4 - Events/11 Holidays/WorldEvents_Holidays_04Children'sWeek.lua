@@ -1,11 +1,6 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
---[[
-TODO: Figure out why the remainder of the Blood Elf orphan quest line isn't showing.
-TODO: Figure out which unobtainable flags are wrong.
-TODO: Figure out which map flags are wrong.
-]]--
 _.WorldEvents =
 {
 	n(-3, { -- Holiday
@@ -70,44 +65,50 @@ _.WorldEvents =
 					}),
 					n(-17, { -- Quests
 						-- ALLIANCE QUESTS == HUMAN ORPHAN == PART I --
-						qa(1468, { -- Children's Week [Alliance]
+						q(1468, { -- Children's Week [Alliance]
 							["qg"] = 51988, -- Orphan Matron Nightingale
 							["maps"] = { 301, }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qa(29093, { -- Cruisin' the Chasm
+						q(29093, { -- Cruisin' the Chasm
 							["qg"] = 14305, -- Human Orphan
 							["sourceQuests"] = { 1468 }, -- Children's Week [Alliance]
 							["maps"] = { 39, }, -- Westfall
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qa(29106, { -- The Biggest Diamond Ever!
+						q(29106, { -- The Biggest Diamond Ever!
 							["qg"] = 14305, -- Human Orphan
 							["sourceQuests"] = { 1468 }, -- Children's Week [Alliance]
 							["maps"] = { 341, }, -- Ironforge
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qa(29107, { -- Malfurion Has Returned!
+						q(29107, { -- Malfurion Has Returned!
 							["qg"] = 14305, -- Human Orphan
 							["sourceQuests"] = { 1468, }, -- Children's Week [Alliance]
 							["maps"] = { 381, }, -- Darnassus
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- ALLIANCE QUESTS == HUMAN ORPHAN == PART II --
-						qa(29117, { -- Let's Go Fly a Kite
+						q(29117, { -- Let's Go Fly a Kite
 							["qg"] = 14305, -- Human Orphan
 							["sourceQuests"] = { 29093, 29106, 29107, }, -- Cruisin' the Chasm / The Biggest Diamond Ever! / Malfurion Has Returned!
 							["maps"] = { 301, }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qa(29119, { -- You Scream, I Scream...
+						q(29119, { -- You Scream, I Scream...
 							["qg"] = 14305, -- Human Orphan
 							["sourceQuests"] = { 29093, 29106, 29107, }, -- Cruisin' the Chasm / The Biggest Diamond Ever! / Malfurion Has Returned!
 							["maps"] = { 301, }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- ALLIANCE QUESTS == HUMAN ORPHAN == PART III --
-						qa(171, { -- A Warden of the Alliance
+						q(171, { -- A Warden of the Alliance
 							["groups"] = { 
 								un(20, i(23007)), -- Piglet's Collar
 								un(20, i(23015)), -- Rat Cage
@@ -117,47 +118,54 @@ _.WorldEvents =
 							["qg"] = 14305, -- Human Orphan
 							["sourceQuests"] = { 29117, 29119, }, -- Let's Go Fly a Kite / You Scream, I Scream...
 							["maps"] = { 301, }, -- Stormwind City
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- ALLIANCE QUESTS == DRAENEI ORPHAN == PART I --
-						qa(10943, { -- Children's Week [Alliance - Draenei Orphan]
+						q(10943, { -- Children's Week [Alliance - Draenei Orphan]
 							["qg"] = 22819, -- Orphan Matron Mercy
 							["maps"] = { 481, }, -- Shattrath City
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qa(10950, { -- Auchindoun and the Ring of Observance
+						q(10950, { -- Auchindoun and the Ring of Observance
 							["qg"] = 22818, -- Draenei Orphan
 							["sourceQuests"] = { 10943, }, -- Children's Week [Alliance - Draenei Orphan]
 							["maps"] = { 478, }, -- Terokkar Forest
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qa(10952, { -- A Trip to the Dark Portal
+						q(10952, { -- A Trip to the Dark Portal
 							["qg"] = 22818, -- Draenei Orphan
 							["sourceQuests"] = { 10943, }, -- Children's Week [Alliance - Draenei Orphan]
 							["maps"] = { 465, }, -- Hellfire Peninsula
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qa(10954, { -- Jheel is at Aeris Landing!
+						q(10954, { -- Jheel is at Aeris Landing!
 							["qg"] = 22818, -- Draenei Orphan
 							["sourceQuests"] = { 10943, }, -- Children's Week [Alliance - Draenei Orphan]
 							["maps"] = { 477, }, -- Nagrand (Outland)
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- ALLIANCE QUESTS == DRAENEI ORPHAN == PART II --
-						qa(10956, { -- The Seat of the Naaru
+						q(10956, { -- The Seat of the Naaru
 							["qg"] = 22818, -- Draenei Orphan
 							["sourceQuests"] = { 10950, 10952, 10954, }, -- Auchindoun and the Ring of Observance / A Trip to the Dark Portal / Jheel is at Aeris Landing!
 							["maps"] = { 471, }, -- The Exodar
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qa(10962, { -- Time to Visit the Caverns
+						q(10962, { -- Time to Visit the Caverns
 							["qg"] = 22818, -- Draenei Orphan
 							["sourceQuests"] = { 10950, 10952, 10954, }, -- Auchindoun and the Ring of Observance / A Trip to the Dark Portal / Jheel is at Aeris Landing!
 							["maps"] = { 161, }, -- Tanaris
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- ALLIANCE QUESTS == DRAENEI ORPHAN == PART III --
-						qa(10966, { -- Back to the Orphanage
+						q(10966, { -- Back to the Orphanage
 							["groups"] = {
 								un(20, i(32622)), -- Elekk Training Collar
 								un(20, i(32616)), -- Egbert's Egg
@@ -167,47 +175,54 @@ _.WorldEvents =
 							["qg"] = 22818, -- Draenei Orphan
 							["sourceQuests"] = { 10956, 10962, }, -- The Seat of the Naaru / Time to Visit the Caverns
 							["maps"] = { 481, }, -- Shattrath City
+							["races"] = ALLIANCE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- HORDE QUESTS == ORC ORPHAN == PART I --
-						qh(172, { -- Children's Week [Horde]
+						q(172, { -- Children's Week [Horde]
 							["qg"] = 51989, -- Orphan Matron Battlewall
 							["maps"] = { 321, }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qh(29146, { -- Ridin' the Rocketway
+						q(29146, { -- Ridin' the Rocketway
 							["qg"] = 14444, -- Orcish Orphan
 							["sourceQuests"] = { 172 },  -- Children's Week [Horde]
 							["maps"] = { 181, }, -- Azshara
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qh(29167, { -- The Banshee Queen
+						q(29167, { -- The Banshee Queen
 							["qg"] = 14444, -- Orcish Orphan
 							["sourceQuests"] = { 172 },  -- Children's Week [Horde]
 							["maps"] = { 382, }, -- Undercity
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qh(29176, { -- The Fallen Chieftain
+						q(29176, { -- The Fallen Chieftain
 							["qg"] = 14444, -- Orcish Orphan
 							["sourceQuests"] = { 172 },  -- Children's Week [Horde]
 							["maps"] = { 362, }, -- Thunder Bluff
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- HORDE QUESTS == ORC ORPHAN == PART II --
-						qh(29190, { -- Let's Go Fly a Kite
+						q(29190, { -- Let's Go Fly a Kite
 							["qg"] = 14444, -- Orcish Orphan
 							["sourceQuests"] = { 29146, 29167, 29176 }, -- Ridin' the Rocketway / The Banshee Queen / The Fallen Chieftain
 							["maps"] = { 321, }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qh(29191, { -- You Scream, I Scream...
+						q(29191, { -- You Scream, I Scream...
 							["qg"] = 14444, -- Orcish Orphan
 							["sourceQuests"] = { 29146, 29167, 29176 }, -- Ridin' the Rocketway / The Banshee Queen / The Fallen Chieftain
 							["maps"] = { 321, }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- HORDE QUESTS == ORC ORPHAN == PART III --
-						qh(5502, { -- A Warden of the Horde
+						q(5502, { -- A Warden of the Horde
 							["groups"] = {
 								un(20, i(23007)), -- Piglet's Collar
 								un(20, i(23015)), -- Rat Cage
@@ -217,47 +232,54 @@ _.WorldEvents =
 							["qg"] = 14444, -- Orcish Orphan
 							["sourceQuests"] = { 29190, 29191 }, -- Let's Go Fly a Kite / You Scream, I Scream...
 							["maps"] = { 321, }, -- Orgrimmar
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- HORDE QUESTS == BLOOD ELF ORPHAN == PART I --
-						qh(10942, { -- Children's Week [Horde - Blood Elf Orphan]
+						q(10942, { -- Children's Week [Horde - Blood Elf Orphan]
 							["qg"] = 22819, -- Orphan Matron Mercy
 							["maps"] = { 481, }, -- Shattrath City
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qh(10945, { -- Hch'uu and the Mushroom People
+						q(10945, { -- Hch'uu and the Mushroom People
 							["qg"] = 22817, -- Blood Elf Orphan
 							["sourceQuests"] = { 10942, }, -- Children's Week [Horde - Blood Elf Orphan]
 							["maps"] = { 467, }, -- Zangarmarsh
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qh(10951, { -- A Trip to the Dark Portal
+						q(10951, { -- A Trip to the Dark Portal
 							["qg"] = 22817, -- Blood Elf Orphan
 							["sourceQuests"] = { 10942, }, -- Children's Week [Horde - Blood Elf Orphan]
 							["maps"] = { 465, }, -- Hellfire Peninsula
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qh(10953, { -- Visit the Throne of the Elements
+						q(10953, { -- Visit the Throne of the Elements
 							["qg"] = 22817, -- Blood Elf Orphan
 							["sourceQuests"] = { 10942, }, -- Children's Week [Horde - Blood Elf Orphan]
 							["maps"] = { 477, }, -- Nagrand (Outland)
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- HORDE QUESTS == BLOOD ELF ORPHAN == PART II --
-						qa(10963, { -- Time to Visit the Caverns
+						q(10963, { -- Time to Visit the Caverns
 							["qg"] = 22817, -- Blood Elf Orphan
 							["sourceQuests"] = { 10945, 10951, 10953 }, -- Hch'uu and the Mushroom People / A Trip to the Dark Portal / Visit the Throne of the Elements
 							["maps"] = { 161, }, -- Tanaris
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
-						qa(11975, { -- Now, When I Grow Up...
+						q(11975, { -- Now, When I Grow Up...
 							["qg"] = 22817, -- Blood Elf Orphan
 							["sourceQuests"] = { 10945, 10951, 10953 }, -- Hch'uu and the Mushroom People / A Trip to the Dark Portal / Visit the Throne of the Elements
 							["maps"] = { 480, }, -- Silvermoon City
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- HORDE QUESTS == BLOOD ELF ORPHAN == PART III --
-						qa(10967, { -- Back to the Orphanage
+						q(10967, { -- Back to the Orphanage
 							["groups"] = {
 								un(20, i(32622)), -- Elekk Training Collar
 								un(20, i(32616)), -- Egbert's Egg
@@ -267,6 +289,7 @@ _.WorldEvents =
 							["qg"] = 22817, -- Blood Elf Orphan
 							["sourceQuests"] = { 10963, 11975, }, -- Time to Visit the Caverns / Now, When I Grow Up...
 							["maps"] = { 481, }, -- Shattrath City
+							["races"] = HORDE_ONLY,
 							["u"] = 20, -- Children's Week
 						}),
 						-- NEUTRAL QUESTS == ORACLE ORPHAN --
