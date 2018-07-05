@@ -31,17 +31,7 @@ _.Zones =
 						},
 						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
-					}),
-					n(-52, {   	-- Children's Week
-						["groups"] = {
-							n(-17, {	-- Quests
-							}),
-						},
-						["achievementID"] = 1793,	-- For The Children
-						["u"] = 20,
-					}),
---]]
---[[					
+					}),					
 					n(-56, {   	-- Brewfest
 						["groups"] = {
 							n(-17, {	-- Quests

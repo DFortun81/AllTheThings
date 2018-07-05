@@ -56,20 +56,6 @@ _.Zones =
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),					
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(20102, qh(29400)),	-- A Season for Celebration
-								qg(20102, qa(29074)),	-- A Season for Celebration		
-								q(12399),	-- Candy Bucket
-								q(29014),	-- Candy Bucket
-								qg(20102, qa(11356)),	-- Costumed Orphan Matron
-								qg(20102, qh(11357)),	-- Masked Orphan Matron
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),						
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
