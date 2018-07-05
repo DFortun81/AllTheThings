@@ -727,7 +727,6 @@ profession(171, { -- Alchemy
 			recipe(181648),	-- Stone of the Earth
 			recipe(181649),	-- Stone of the Waters
 			recipe(181647),	-- Stone of Wind
-			recipe(227561),	-- Tome of the Clear Mind
 			recipe(162403),	-- Transmorphic Tincture
 			recipe(181643),	-- Transmute: Savage Blood
 			recipe(181637),	-- Transmute: Sorcerous Air to Earth

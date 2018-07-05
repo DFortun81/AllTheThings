@@ -937,6 +937,7 @@ AllTheThings.Locales.enUS = {
 		[-151] = "Soulare of Andorhal",
 		[-152] = "Garrison Campaign",
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
+		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
 -- Expansions
 		[-160] = TUTORIAL_TITLE53,												-- Mounts
 -- Other
