@@ -94,29 +94,7 @@ _.Zones =
 						},
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
-					}),					
-					n(-52, { 		-- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(14444, qh( 5502)),	-- A Warden of the Horde
-								qg(51989, qh(  172)),	-- Children's Week
-								qg(51989, qh(  172)),	-- Children's Week
-								qg(14444, qh(29146)),	-- Ridin' the Rocketway
-								qg(14444, qh(29167)),	-- The Banshee Queen
-								qg(14444, qh(29176)),	-- The Fallen Chieftain
-								qg(14444, qh(29191)),	-- You Scream, I Scream...
-								qg(14444, qh(29190)),	-- Let's Go Fly a Kite
-								qg(14444, qh( 5502, {	-- A Warden of the Horde
-									un(20, i(23007)),	-- Piglet's Collar (Pet)
-									un(20, i(23015)),	-- Rat Cage (Pet)
-									un(20, i(23002)),	-- Turtle Box (Pet)
-									un(20, i(66073)),	-- Snail Shell (Pet)
-								})),
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),									
+					}),							
 					n(-63, { 		-- Trial of Style
 						["groups"] = {
 							n(54473, { -- Warpweaver Dushar (Horde / Orgrimmar)

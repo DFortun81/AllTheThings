@@ -60,32 +60,6 @@ _.Zones =
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(16817, qa( 11964)),	-- Incense for the Summer Scorchlings
-								{
-									["questID"] = 11933, -- Stealing the Exodar's Flame
-									["itemID"] = 35569, -- Flame of the Exodar
-									["races"] = HORDE_ONLY,
-								},
-								qg(25975, qa(11924)),	-- More Torch Catching
-								qg(25975, qa(11921)),	-- More Torch Tossing
-								qg(26221, q(11917)),	-- Striking Back (16)
-								qg(26221, q(11947)),	-- Striking Back (29)
-								qg(26221, q(11948)),	-- Striking Back (39)
-								qg(26221, q(11952)),	-- Striking Back (49)
-								qg(26221, q(11953)),	-- Striking Back (56)
-								qg(26221, q(11954)),	-- Striking Back (64)
-								qg(19171, qa(11970)),	-- The Master of Summer Lore
-								qg(25975, qa(11657)),	-- Torch Catching
-								qg(25975, qa(11731)),	-- Torch Tossing
-								qg(26221, q(11886)),	-- Unusual Activity
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -94,16 +68,6 @@ _.Zones =
 						},
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(19171, qa(29074)),	-- A Season for Celebration
-								qa(12337),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
 					}),
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {

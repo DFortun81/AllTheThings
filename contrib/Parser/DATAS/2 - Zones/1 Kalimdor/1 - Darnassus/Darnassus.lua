@@ -77,44 +77,6 @@ _.Zones =
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(16817, qa( 9365)),	-- A Thief's Reward (add'l QGs in Shattrath City, The Exodar, Ironforge, and Stormwind City)
-								qg(16817, qa(11964)),	-- Incense for the Summer Scorchlings (add'l QGs Shattrath City, The Exodar, Ironforge, and Stormwind City)
-								qg(25975, qa(11924)),	-- More Torch Catching (QG also in The Exodar, Ironforge, and Stormwind City)
-								qg(25975, qa(11921)),	-- More Torch Tossing (QG also in The Exodar, Ironforge, and Stormwind City)
-								qg(25962, qa(11882)),	-- Playing with Fire (ENDS in Darnassus, QG in locations listed below)
-									--[[The Cape of Stranglethorn, Crystalsong Forest, Hellfire Peninsula, Terokkar Forest, Zangarmarsh, Winterspring, Howling Fjord,
-									Stonetalon Mountains, Tanaris, Netherstorm, Borean Tundra, Uldum, Twilight Highlands, Southern Barrens, Dun Morogh, 
-									Shattrath City, Sholazar Basin, Grizzly Hills, Elwynn Forest, Western Plaguelands, Northern Stranglethorn, 
-									Wetlands, Duskwood, Badlands, Blasted Lands, Swamp of Sorrows, Loch Modan, Westfall, Zul'Drak, The Storm Peaks, Teldrassil, 
-									Darkshore, Ashenvale, Dragonblight, Redridge Mountains, The Hinterlands, Arathi Highlands, and Burning Steppes --]]
-								{
-									["questID"] = 9332, -- Stealing Darnassus's Flame
-									["itemID"] = 23184, -- Flame of Darnassus
-									["races"] = HORDE_ONLY,
-								},
-								qg(26221, q(11954)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(26221, q(11917)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(26221, q(11947)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(26221, q(11948)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(26221, q(11952)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(26221, q(11953)),	-- Striking Back (QG also in Shattrath City, Silvermoon City, The Exodar, Thunder Bluff, Undercity, Stormwind City, Ironforge, Orgrimmar, and Tirisfal Glades)
-								qg(19173, qa(11970)),	-- The Master of Summer Lore (add'l QGs listed below)
-									--[[ 20102 The Cape of Stranglethorn, Shattrath City, Netherstorm, Winterspring, Tanaris, Northern Barrens, The Storm Peaks
-									19148 and 19172 Isle of Thunder, Ironforge
-									19171 The Exodar
-									18927 Stormwind City
-									--]]
-								qg(25975, qa(11657)),	-- Torch Catching (QG also in The Exodar, Ironforge, and Stormwind City)
-								qg(25975, qa(11731)),	-- Torch Tossing (QG also in The Exodar, Ironforge, and Stormwind City)
-								qg(26221, q(11886)),	-- Unusual Activity (QG also in Shattrath City, Silvermoon City, The Exodar, Tirisfal Glades, Thunder Bluff, Undercity, Orgrimmar, Stormwind City, and Ironforge)
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -127,31 +89,7 @@ _.Zones =
 						},
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
-					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(17193, qa(29074)),	-- A Season for Celebration (add'l QGs listed below)
-									--[[20102 The Cape of Stranglethorn, Winterspring, Netherstorm, Tanaris, Shattrath, Northern Barrens, The Storm Peaks
-									19172 and 19148 Ironforge, Isle of Thunder
-									19171 The Exodar
-									18927 Stormwind City
-									--]]
-								o(190038, {	-- Candy Bucket
-									qa(12334),	-- Candy Bucket
-								}),
-								qg(19173, qa(11356)),	-- Costumed Orphan Matron (add'l QGs listed below)
-									--[[
-									20102 The Cape of Stranglethorn, Shattrath City, Netherstorm, Tanaris, Northern Barrens, The Storm Peaks, Winterspring
-									19172 and 19148 Isle of Thunder, Ironforge
-									18927 Stormwind City
-									--]]
-								qg(6735, qa( 8357)),	-- Dancing for Marzipan
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),					
+					}),			
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
