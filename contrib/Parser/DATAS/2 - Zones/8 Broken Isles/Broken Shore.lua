@@ -10,12 +10,15 @@ _.Zones =
 					["groups"] = {
 						q(46065, { -- An Impossible Foe
 							["groups"] = {
-								--[[
+								i(128403, { -- Apocalypse
 									["groups"] = {
-										artifact(),
+										artifact(947),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactsoulrend_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								--[[
 									["groups"] = {
 										artifact(),
@@ -73,12 +76,24 @@ _.Zones =
 						}),
 						q(44925, { -- Closing the Eye
 							["groups"] = {
-								--[[
+								i(128292, { -- Blades of the Fallen Prince
 									["groups"] = {
-										artifact(),
+										artifact(383),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_03.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128293, { -- Blades of the Fallen Prince
+									["groups"] = {
+										artifact(383),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_03.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								--[[
 									["groups"] = {
 										artifact(),
@@ -275,12 +290,15 @@ _.Zones =
 						}),
 						q(45416, { -- The Highlord's Return
 							["groups"] = {
-								--[[
+								i(128402, { -- Maw of the Damned
 									["groups"] = {
-										artifact(),
+										artifact(364),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactmaw_d_03.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								--[[
 									["groups"] = {
 										artifact(),

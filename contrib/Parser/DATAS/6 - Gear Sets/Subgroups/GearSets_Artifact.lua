@@ -1954,6 +1954,86 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
+					i(128293, { -- Blades of the Fallen Prince
+						["groups"] = {
+							n(-5200, { -- Base Skin Line
+								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_01",
+								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_01.mdx",
+								["modelScale"] = 0.95,
+								["modelRotation"] = 45,
+								["groups"] = {
+								artifact(111), -- Standard
+								artifact(374), -- Recover one of the Pillars
+								artifact(375), -- Recover Light's Heart
+								artifact(376), -- Complete first major Order Hall campaign
+								}
+							}),
+							n(-5201, { -- Heroic Skin Line
+								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_02",
+								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_02.mdx",
+								["modelScale"] = 0.95,
+								["modelRotation"] = 45,
+								["groups"] = {
+								artifact(370), -- Finish Class Campaign
+								artifact(377), -- Unlock 30 Artifact Traits
+								artifact(378), -- Reach AK25
+								artifact(379), -- Complete "This Side Up"
+								}
+							}),
+							n(-5202, { -- Balance of Power Quest Skin Line
+								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_05",
+								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_05.mdx",
+								["modelScale"] = 0.95,
+								["modelRotation"] = 45,
+								["groups"] = {
+								artifact(371), -- Complete Quest Line
+								artifact(380), -- Complete "Unleashed Monstrosities"
+								artifact(381), -- Complete a Mythic +15
+								artifact(382), -- Complete "Glory of the Legion Hero"
+								}
+							}),
+							n(-5203, { -- PVP Skin Line
+								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_04",
+								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_04.mdx",
+								["modelScale"] = 0.95,
+								["modelRotation"] = 45,
+								["groups"] = {
+								artifact(373), -- Reach PvP Prestige Level 2
+								artifact(386), -- Reach PvP Prestige Level 6
+								artifact(387), -- Reach PvP Prestige Level 11
+								artifact(388), -- Reach PvP Prestige Level 15
+								}
+							}),
+							n(-5204, { -- Mage Tower Quest Skin Line
+								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_03",
+								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_03.mdx",
+								["modelScale"] = 0.95,
+								["modelRotation"] = 45,
+								["groups"] = {
+								artifact(383), -- Complete Legionfall: Mage Tower
+								artifact(372), -- Defeat Heroic Kil'jaeden with appearance
+								artifact(384), -- Win 10 Rated BG's with appearance
+								artifact(385), -- Defeat all Legion dungeon bosses with appearance
+								}
+							}),
+							n(-5205, { -- Hidden Artifact Skin Line
+								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_06",
+								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_06.mdx",
+								["modelScale"] = 0.95,
+								["modelRotation"] = 45,
+								["groups"] = {
+								artifact(870), -- Find Hidden Artifact Skin
+								artifact(869), -- Complete 30 Legion Dungeons Hidden
+								artifact(871), -- Complete 200 WQ Hidden
+								artifact(872), -- Kill 1,000 Players Hidden
+								}
+							}),
+						},
+						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_01.mdx",
+						["modelScale"] = 0.85,
+						["modelRotation"] = 45,
+						["ignoreSource"] = true,
+					}),
 					i(128403, { -- Apocalypse
 						["groups"] = {
 							n(-5200, { -- Base Skin Line
