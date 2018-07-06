@@ -27,29 +27,69 @@ _.Instances =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					n(-17, {	-- Quests 	
+					n(-17, {	-- Quests
 						h(q(30112,{ 	-- A Score to Settle
-							i(39679), 	-- Runecaster's Bracers
-							i(39680),	-- Vambraces of the Vengeance Bringer
-							i(39678), 	-- Vendetta Bindings
-							i(39676), 	-- Wraps of the San'layn
+							["groups"] = {
+								i(39679), 	-- Runecaster's Bracers
+								i(39680),	-- Vambraces of the Vengeance Bringer
+								i(39678), 	-- Vendetta Bindings
+								i(39676), 	-- Wraps of the San'layn
+							},
+							["qg"] = 24137,	-- Dark Ranger Marrah
 						})),
 						h(q(11272,{ 	-- A Score to Settle
-							i(39679), 	-- Runecaster's Bracers
-							i(39680),	-- Vambraces of the Vengeance Bringer
-							i(39678), 	-- Vendetta Bindings
-							i(39676), 	-- Wraps of the San'layn
+							["groups"] = {
+								i(39679), 	-- Runecaster's Bracers
+								i(39680),	-- Vambraces of the Vengeance Bringer
+								i(39678), 	-- Vendetta Bindings
+								i(39676), 	-- Wraps of the San'layn
+							},
+							["qg"] = 23780,	-- High Executor Anselm
+							["sourceQuests"] = {11234},
 						})),
-						a(q(29764)),	-- Disarmament
-						h(q(13206)),	-- Disarmament
+						a(q(29764, {	-- Disarmament
+							["groups"] = {
+								i(44374),	-- Amulet of the Tranquil Mind
+								i(44375),	-- Razor-Blade Pendant
+								i(44376),	-- Necklace of Fragmented Light
+								i(44377),	-- Woven Steel Necklace
+							},
+							["qg"] = 24111,	-- Defender Mordun
+						})),
+						h(q(13206, {	-- Disarmament
+							["groups"] = {
+								i(44400),	-- Necklace of Calm Skies
+								i(44001),	-- Hundred Tooth Necklace
+								i(44002),	-- Tiled-Stone Pendant
+								i(44003),	-- Amulet of Constrained Power
+							},
+							["qg"] = 24137,	-- Dark Ranger Marrah
+						})),
 						a(q(29803,{ 	-- Ears of the Lich King
-							i(39679), 	-- Runecaster's Bracers
-							i(39680),	-- Vambraces of the Vengeance Bringer
-							i(39678), 	-- Vendetta Bindings
-							i(39676), 	-- Wraps of the San'layn
+							["groups"] = {
+								i(39679), 	-- Runecaster's Bracers
+								i(39680),	-- Vambraces of the Vengeance Bringer
+								i(39678), 	-- Vendetta Bindings
+								i(39676), 	-- Wraps of the San'layn
+							},
+							["qg"] = 24111,	-- Defender Mordun
 						})),
-						h(q(11262)),	-- Ingvar Must Die!, No actual awards.
-						a(q(29763)),	-- Stealing Their Thunder, No actual awards.
+						h(q(11262, {	-- Ingvar Must Die!
+							["groups"] = {
+								i(38218),	-- Executioner's Band
+								i(38219),	-- Ring of Decimation
+								i(38220),	-- Signet of Swift Judgement
+							},
+							["qg"] = 24137,	-- Dark Ranger Marrah
+						})),
+						a(q(29763, {	-- Stealing Their Thunder
+							["groups"] = {
+								i(38218),	-- Executioner's Band
+								i(38219),	-- Ring of Decimation
+								i(38220),	-- Signet of Swift Judgement
+							},
+							["qg"] = 24111,	-- Defender Mordun
+						})),
 					}),
 					d(  1, {	-- Normal
 						n(0, {	-- Zone Drop
