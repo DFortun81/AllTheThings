@@ -765,7 +765,9 @@ AllTheThings.Locales.enUS = {
 		[-10045] = "Interface\\Icons\\Paladin_Protection",						-- Currencies
 		[-10046] = "Interface\\Icons\\Paladin_Protection",						-- Promotions
 		[-10047] = "Interface\\Icons\\Paladin_Protection",						-- Events
-
+		[-10048] = "Interface\\Icons\\buff_feltreasures",						-- Mage Tower
+		[-10049] = "Interface\\Icons\\buff_forcesoforder",						-- Command Center
+		[-10050] = "Interface\\Icons\\buff_epichunter",							-- Nether Disruptor
 		[-100001] = "Interface\\Icons\\inv_artifact_tome01", 					-- AK Research Book
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1501,7 +1503,9 @@ AllTheThings.Locales.enUS = {
 		[-10045] = select(1,GetCategoryInfo(15280)),	-- Currencies
 		[-10046] = select(1,GetCategoryInfo(15268)),	-- Promotions
 		[-10047] = select(1,GetCategoryInfo(15274)),	-- Events
-
+		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,		-- Mage Tower
+		[-10049] = BROKENSHORE_BUILDING_COMMANDCENTER,	-- Command Center
+		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR, -- Nether Disruptor
 
 		[-100001] = ITEM_QUALITY6_DESC, 				-- Artifact
 
