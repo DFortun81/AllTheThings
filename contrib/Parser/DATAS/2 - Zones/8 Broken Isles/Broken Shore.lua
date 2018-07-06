@@ -25,12 +25,24 @@ _.Zones =
 									},
 									["ignoreSource"] = true,
 								--]]
-								--[[
+								i(128820, { -- Felo'melorn [Main Hand]
 									["groups"] = {
-										artifact(),
+										artifact(489),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(133959, { -- Heart of the Phoenix [Off Hand]
+									["groups"] = {
+										artifact(489),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								i(128872, { -- The Dreadblades [Main Hand]
 									["groups"] = {
 										artifact(702),
@@ -49,7 +61,7 @@ _.Zones =
 									["modelScale"] = 0.5,
 									["modelRotation"] = 45,
 								}),
-								i(128935, { -- The Fist of Ra-den
+								i(128935, { -- The Fist of Ra-den [Main Hand]
 									["groups"] = {
 										artifact(684),
 									},
@@ -58,7 +70,7 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								i(128936, { -- The Highkeeper's Ward
+								i(128936, { -- The Highkeeper's Ward [Off Hand]
 									["groups"] = {
 										artifact(684),
 									},
@@ -67,7 +79,16 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),	
-								i(128908, { -- Warswords of the Valarjar
+								i(128908, { -- Warswords of the Valarjar [Main Hand]
+									["groups"] = {
+										artifact(665),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(134553, { -- Warswords of the Valarjar [Off Hand]
 									["groups"] = {
 										artifact(665),
 									},
@@ -88,7 +109,7 @@ _.Zones =
 						}),
 						q(44925, { -- Closing the Eye
 							["groups"] = {
-								i(128292, { -- Blades of the Fallen Prince
+								i(128292, { -- Blades of the Fallen Prince [Main Hand]
 									["groups"] = {
 										artifact(383),
 									},
@@ -97,7 +118,7 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								i(128293, { -- Blades of the Fallen Prince
+								i(128293, { -- Blades of the Fallen Prince [Off Hand]
 									["groups"] = {
 										artifact(383),
 									},
@@ -189,7 +210,7 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								i(128911, { -- Sharas'dal, Scepter of Tides
+								i(128911, { -- Sharas'dal, Scepter of Tides [Main Hand]
 									["groups"] = {
 										artifact(787),
 									},
@@ -198,7 +219,7 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								i(128934, { -- Shield of the Sea Queen
+								i(128934, { -- Shield of the Sea Queen [Off Hand]
 									["groups"] = {
 										artifact(787),
 									},
@@ -258,12 +279,15 @@ _.Zones =
 						}),
 						q(45526, { -- The God-Queen's Fury
 							["groups"] = {
-								--[[
+								i(127857, { -- Aluneth
 									["groups"] = {
-										artifact(),
+										artifact(144),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactaegwynsstaff_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								i(120978, { -- Ashbringer
 									["groups"] = {
 										artifact(23),
@@ -416,12 +440,15 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(128862, { -- Ebonchill
 									["groups"] = {
-										artifact(),
+										artifact(885),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactantonidas_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								i(128827, { -- Xal'atath, Blade of the Black Empire
 									["groups"] = {
 										artifact(261),
