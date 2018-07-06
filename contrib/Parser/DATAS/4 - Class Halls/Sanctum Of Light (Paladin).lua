@@ -22,6 +22,12 @@ _.ClassHalls =
 				q(43541, { -- United As One
 					i(139697), -- Bindings of the Silver Hand
 				}),
+				q(42005, {	--  The End of the Saga [Moved from Howling Fjord]
+					["groups"] = {
+					},
+					["lvl"] = 98,
+					["qg"] = 105724,	-- Orik Trueheart
+				}),
 				--[[ Artifact Appearance  Quests Commented Out For Now
 				q(43687, { -- Walking in the Shadows (Artifact Appearance)
 					i(139566), -- Heart of Corruption
