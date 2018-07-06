@@ -153,12 +153,15 @@ _.Zones =
 									},
 									["ignoreSource"] = true,
 								--]]
-								--[[
+								i(128825, { -- T'uure, Beacon of the Naaru
 									["groups"] = {
 										artifact(),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactheartofkure_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								--[[
 									["groups"] = {
 										artifact(),
@@ -197,12 +200,15 @@ _.Zones =
 									},
 									["ignoreSource"] = true,
 								--]]
-								--[[
+								i(128868, { -- Light's Wrath			
 									["groups"] = {
-										artifact(),
+										artifact(956),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifacttome_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 							},
 							["classes"] = {
 								3, -- Beast Mastery Hunter
@@ -362,12 +368,24 @@ _.Zones =
 									},
 									["ignoreSource"] = true,
 								--]]
-								--[[
+								i(128827, { -- Xal'atath, Blade of the Black Empire
 									["groups"] = {
-										artifact(),
+										artifact(261),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(133958, { -- Secrets of the Void
+									["groups"] = {
+										artifact(261),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								--[[
 									["groups"] = {
 										artifact(),
@@ -633,7 +651,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17, { -- Quests
 					ach(11546, { -- Breaching the Tomb
 						["groups"] = {
 							crit(1, { -- Armies of Legionfall
@@ -1421,7 +1439,7 @@ _.Zones =
 				}),
 				--]]
 				}),
-				n(-16, { 	-- Rares
+				n(-16, { -- Rares
 					{
 						["achievementID"] = 11841,	-- Naxt Victim
 						["description"] = "How to summon the specific bosses is very simple. Each different Sentinax Beacon summons mobs that drop additional Sentinax Beacons for that specific Beacon and ultimately the Portal Stone (boss).\n\nYou get the Uncommon (green quality) Sentinax Beacons from the standard mobs in the area, you then need to farm the mobs that come out of the Sentinax Portal until they drop a Rare (blue quality) Sentinax Beacon and use it to empower the portal, it is only after this that the Portal Stone can drop. Keep using all the Rare Sentinax Beacons you get to extend the duration of the Sentinax Beacon.",
@@ -1588,7 +1606,7 @@ _.Zones =
 						["questID"] = 46100,	-- Rare Elite 11
 					},
 				}),
-				n(-77, { 	-- Special
+				n(-77, { -- Special
 					["groups"] = {
 						n(111573, { 	-- Kosumoth the Hungering
 							["groups"] = {
@@ -1690,7 +1708,7 @@ _.Zones =
 					},		
 					["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",	
 				}),				
-				n(-2, { 	-- Vendors
+				n(-2, { -- Vendors
 					n(120076, { -- Treasure Master Iks'reeged
 						currency(1226, { -- Nethershard
 							i(142452), -- Lingering Wyrmtongue Essence Toy
