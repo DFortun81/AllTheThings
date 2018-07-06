@@ -9,8 +9,11 @@ _.WorldEvents =
 				["groups"] = {
 					q(8743, {	-- Bang A Gong
 						un(2, ach(416, {	-- Scarab Lord
-							un(2, title(33)),	-- Scarab Lord Title
-							un(2, i(21176)),	-- Black Qiraji Resonation Crystal
+							["groups"] = {
+								un(2, title(33)),	-- Scarab Lord Title
+								un(2, i(21176)),	-- Black Qiraji Resonating Crystal
+								{ ["mountID"] = 239770, ["questID"] = 8743 }, -- Black Qiraji War Tank (No item available.)
+							},
 						})),
 					}),
 					q(8730, {	-- Nefarius's Corruption
