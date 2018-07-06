@@ -745,6 +745,7 @@ _.Zones =
 									i(35914),	-- Proto-Drake Tooth Spaulders
 								},
 								["sourceQuests"] = {11416},
+								["qg"] = 24261,	-- Ulfang
 							}),
 						}),
 					})),
