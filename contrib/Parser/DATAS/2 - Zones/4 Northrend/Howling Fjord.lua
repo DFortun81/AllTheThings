@@ -594,6 +594,7 @@ _.Zones =
 								q(11237, {	--  Gjalerbron Attack Plans [A]
 									["groups"] = {
 									},
+									["qgs"] = {23991,23990,23989,24014},
 								}),
 							}),
 							q(11238, {	--  The Frost Wyrm and its Master [A]
@@ -654,11 +655,19 @@ _.Zones =
 								["qg"] = 24117,	-- Lurielle
 								["sourceQuests"] = {11314,11315},
 							}),
+							q(11319, {	-- Seeds of the Blacksouled Keepers
+								["groups"] = {
+									i(39074),	-- Drape of Distilled Hatred
+									i(39072),	-- Blacksoul Protector's Hauberk
+									i(39073),	-- Root of the Everlasting
+								},
+								["sourceQuests"] = {11314,11315},
+							}),
 							q(11428, {	--  Keeper Witherleaf
 								["groups"] = {
 								},
 								["qg"] = 24117,	-- Lurielle
-								["sourceQuests"] = {11316},
+								["sourceQuests"] = {11316,11319},
 							}),
 						}),
 						crit(11, {	--The Iron Dwarves
@@ -684,6 +693,24 @@ _.Zones =
 								},
 								["qg"] = 24376,	-- Researcher Aderan
 								["sourceQuests"] = {11358},
+							}),
+							q(11346, {	-- The Book of Runes
+								["groups"] = {
+								},
+								["qg"] = 24328,	-- Prospector Belvar
+								["sourceQuests"] = {11329},
+							}),
+							q(11349, {	-- Mastering the Runes
+								["groups"] = {
+								},
+								["qg"] = 24328,	-- Prospector Belvar
+								["sourceQuests"] = {11346},
+							}),
+							q(11348, {	-- The Rune of Command
+								["groups"] = {
+								},
+								["qg"] = 24328,	-- Prospector Belvar
+								["sourceQuests"] = {11349},
 							}),
 						}),
 						crit(12, {	--Alpha Worg
@@ -1116,15 +1143,6 @@ _.Zones =
 								["qg"] = 24717,	-- Stanwad
 								["isBreadcrumb"] = true,
 								["sourceQuests"] = {11448},
-							}),
-						-- Need "The Frozen Glade" Header
-							q(11319, {	-- Seeds of the Blacksouled Keepers
-								["groups"] = {
-									i(39074),	-- Drape of Distilled Hatred
-									i(39072),	-- Blacksoul Protector's Hauberk
-									i(39073),	-- Root of the Everlasting
-								},
-								["sourceQuests"] = {11314,11315},
 							}),
 					}),
 					n(-9913, {	-- Horde [THESE QUESTS HAVE NOT BEEN SORTED YET!!]
