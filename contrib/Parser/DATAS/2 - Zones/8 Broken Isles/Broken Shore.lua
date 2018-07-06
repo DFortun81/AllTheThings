@@ -6,7 +6,386 @@ _.Zones =
 	m(1007, { 	-- The Broken Isles
 		m(1021, { 	-- Broken Shore
 			["groups"] = {
-				n(120434, { -- Command Center
+				n(-10048, { -- Mage Tower
+					["groups"] = {
+						q(46065, { -- An Impossible Foe
+							["groups"] = {
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								i(128872, { -- The Dreadblades [Main Hand]
+									["groups"] = {
+										artifact(702),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_03.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(134552, { -- The Dreadblades [Off Hand]
+									["groups"] = {
+										artifact(702),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_01.mdx",
+									["modelScale"] = 0.5,
+									["modelRotation"] = 45,
+								}),
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								i(128908, { -- Warswords of the Valarjar
+									["groups"] = {
+										artifact(665),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+							},
+							["classes"] = {
+								6, -- Unholy Death Knight
+								11, -- Feral Druid
+								8, -- Fire Mage
+								4, -- Outlaw Rogue
+								7, -- Elemental Shaman
+								1, -- Fury Warrior
+							},
+						}),
+						q(44925, { -- Closing the Eye
+							["groups"] = {
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								i(128808, { -- Talonclaw
+									["groups"] = {
+										artifact(973),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_polearm_2h_artifacteagle_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128476, { -- Fangs of the Devourer [Main Hand]
+									["groups"] = {
+										artifact(84),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128479, { -- Fangs of the Devourer [Off Hand]
+									["groups"] = {
+										artifact(84),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_01.mdx",
+									["modelScale"] = 0.5,
+									["modelRotation"] = 45,
+								}),
+								i(128910, { -- Strom'kar, the Warbreaker
+									["groups"] = {
+										artifact(908),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactarathor_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+							},
+							["classes"] = {
+								6, -- Frost Death Knight
+								12, -- Havoc Demon Hunter
+								3, -- Survival Hunter
+								4, -- Subtlety Rogue
+								1, -- Arms Warrior
+							},
+						}),
+						q(46035, { -- End of the Risen Threat
+							["groups"] = {
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								i(128823, { -- The Silver Hand
+									["groups"] = {
+										artifact(584),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_2h_artifactsilverhand_d_03.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+							},
+							["classes"] = {
+								5, -- Restoration Druid
+								11, -- Holy Paladin
+								10, -- Holy Priest
+								7, -- Mistweaver Monk
+								2, -- Restoration Shaman
+							},
+						}),
+						q(45627, { -- Feltotem's Fall
+							["groups"] = {
+								i(128861, { -- Titanstrike
+									["groups"] = {
+										artifact(466),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_firearm_2h_artifactlegion_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+							},
+							["classes"] = {
+								3, -- Beast Mastery Hunter
+								10, -- Windwalker Monk
+								5, -- Discipline Priest
+								9, -- Destruction Warlock
+							},
+						}),
+						q(45526, { -- The God-Queen's Fury
+							["groups"] = {
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								i(120978, { -- Ashbringer
+									["groups"] = {
+										artifact(23),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactashbringerlightning_d_03.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),								
+								i(128870, { -- The Kingslayers [Main Hand]
+									["groups"] = {
+										artifact(901),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128869, { -- The Kingslayers [Off Hand]
+									["groups"] = {
+										artifact(901),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+							},
+							["classes"] = {
+								8, -- Arcane Mage
+								2, -- Retribution Paladin
+								4, -- Assassination Rogue
+								7, -- Enhancemeent Shaman
+								9, -- Demonology Warlock
+							},
+						}),
+						q(45416, { -- The Highlord's Return
+							["groups"] = {
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								i(128866, { -- Truthguard
+									["groups"] = {
+										artifact(718),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactnorgannon_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128867, { -- Oathseeker
+									["groups"] = {
+										artifact(718),
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactnorgannon_d_04.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+									},
+									["ignoreSource"] = true,
+								}),
+								i(128289, { -- Scale of the Earth-Warder
+									["groups"] = {
+										artifact(861),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactmagnar_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128288, { -- Scaleshard
+									["groups"] = {
+										artifact(861),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactmagnar_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+							},
+							["classes"] = {
+								11, -- Blood Death Knight
+								10, -- Vengeance Demon Hunter
+								12, -- Guardian Druid
+								2, -- Brewmaster Monk
+								1, -- Protection Paladin 
+								6, -- Protection Warrior
+							},
+						}),
+						q(46127, { -- Thwarting the Twins
+							["groups"] = {
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								i(128826, { -- Thas'dorah, Legacy of the Windrunners
+									["groups"] = {
+										artifact(965),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_bow_1h_artifactwindrunner_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+								--[[
+									["groups"] = {
+										artifact(),
+									},
+									["ignoreSource"] = true,
+								--]]
+							},
+							["classes"] = {
+								11, -- Balance Druid
+								3, -- Marksmanship Hunter
+								8, -- Frost Mage
+								5, -- Shadow Priest
+								9, -- Affliction Warlock
+							},
+						}),
+					},
+				}),
+				n(-10049, { -- Command Center
 					["groups"] =  {
 						n(122719, { -- Scouting Map
 							["groups"] = {
@@ -25,6 +404,10 @@ _.Zones =
 					},
 					["achievementID"] = 11736, -- Assume Command
 				}),
+				n(-10050, { -- Nether Disruptor
+					["groups"] = {
+					},
+				}),
 				n(119305, {	-- Legionfall Construction Table
 					ach(11735),	-- Take Command
 					ach(11736),	-- Assume Command
@@ -33,16 +416,6 @@ _.Zones =
 					ach(11737),	-- Disrupting the Nether
 					ach(11738),	-- It'll Nether Happen
 				}),
-				--[[
-				n(-41, { 	-- Mage Tower
-					qg(117871, q(44925, {	-- Closing the Eye
-						["groups"] = {
-						},
-						["classes"] = {1,3,4,6,12},
-						["description"] = "Closing the Eye is the Artifact Challenge for Havoc Demon Hunters, Frost Death Knights, Arms Warriors, Survival Hunters, and Subtlety Rogues. ",
-					})),
-				}),
-				--]]
 				n(-169, { -- Emissary Quests
 					q(48641, { -- Armies of Legionfall
 						i(157830, { -- Legionfall Spoils

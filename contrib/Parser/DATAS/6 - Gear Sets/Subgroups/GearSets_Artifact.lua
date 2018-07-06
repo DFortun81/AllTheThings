@@ -7,9 +7,9 @@ _.GearSets =
 		["groups"] = {
 			cl(1, { -- Warrior
 				["groups"] = {
-				i(128910, {-- Strom'kar, the Warbreaker
+				i(128910, { -- Strom'kar, the Warbreaker
 					["groups"] = {
-					n(-5200, {-- Base Skin Line
+					n(-5200, { -- Base Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactarathor_d_01",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactarathor_d_01.mdx",
 						["modelScale"] = 0.95,
@@ -21,7 +21,7 @@ _.GearSets =
 						artifact(793), -- Complete first major Order Hall campaign
 						}
 					}),
-					n(-5201, {-- Heroic Skin Line
+					n(-5201, { -- Heroic Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactarathor_d_02",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactarathor_d_02.mdx",
 						["modelScale"] = 0.95,
@@ -33,7 +33,7 @@ _.GearSets =
 						artifact(797), -- Complete "This Side Up"
 						}
 					}),
-					n(-5202, {-- Balance of Power Quest Skin Line
+					n(-5202, { -- Balance of Power Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactarathor_d_04",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactarathor_d_04.mdx",
 						["modelScale"] = 0.95,
@@ -45,7 +45,7 @@ _.GearSets =
 						artifact(802), -- Complete "Glory of the Legion Hero"
 						}
 					}),
-					n(-5203, {-- PVP Skin Line
+					n(-5203, { -- PVP Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactarathor_d_03",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactarathor_d_03.mdx",
 						["modelScale"] = 0.95,
@@ -57,7 +57,7 @@ _.GearSets =
 						artifact(801), -- Reach PvP Prestige Level 15
 						}
 					}),
-					n(-5204, {-- Mage Tower Quest Skin Line
+					n(-5204, { -- Mage Tower Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactarathor_d_05",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactarathor_d_05.mdx",
 						["modelScale"] = 0.95,
@@ -69,7 +69,7 @@ _.GearSets =
 						artifact(809), -- Defeat all Legion dungeon bosses with appearance
 						}
 					}),
-					n(-5205, {-- Hidden Artifact Skin Line
+					n(-5205, { -- Hidden Artifact Skin Line
 						["icon"] = "Interface\\Icons\\inv_axe_2h_artifactarathor_d_06",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactarathor_d_06.mdx",
 						["modelScale"] = 0.95,
@@ -87,9 +87,9 @@ _.GearSets =
 					["modelRotation"] = 45,
 					["ignoreSource"] = true,
 				}),
-				i(128908, {-- Warswords of the Valarjar
+				i(128908, { -- Warswords of the Valarjar [Main Hand]
 					["groups"] = {
-					n(-5200, {-- Base Skin Line
+					n(-5200, { -- Base Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_01",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_01.mdx",
 						["modelScale"] = 0.95,
@@ -101,7 +101,7 @@ _.GearSets =
 						artifact(656), -- Complete first major Order Hall campaign
 						}
 					}),
-					n(-5201, {-- Heroic Skin Line
+					n(-5201, { -- Heroic Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_02",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_02.mdx",
 						["modelScale"] = 0.95,
@@ -113,7 +113,7 @@ _.GearSets =
 						artifact(658), -- Complete "This Side Up"
 						}
 					}),
-					n(-5202, {-- Balance of Power Quest Skin Line
+					n(-5202, { -- Balance of Power Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_05",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_05.mdx",
 						["modelScale"] = 0.95,
@@ -125,7 +125,7 @@ _.GearSets =
 						artifact(672), -- Complete "Glory of the Legion Hero"
 						}
 					}),
-					n(-5203, {-- PVP Skin Line
+					n(-5203, { -- PVP Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_03",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_03.mdx",
 						["modelScale"] = 0.95,
@@ -137,7 +137,7 @@ _.GearSets =
 						artifact(664), -- Reach PvP Prestige Level 15
 						}
 					}),
-					n(-5204, {-- Mage Tower Quest Skin Line
+					n(-5204, { -- Mage Tower Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_04",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_04.mdx",
 						["modelScale"] = 0.95,
@@ -149,7 +149,7 @@ _.GearSets =
 						artifact(668), -- Defeat all Legion dungeon bosses with appearance
 						}
 					}),
-					n(-5205, {-- Hidden Artifact Skin Line
+					n(-5205, { -- Hidden Artifact Skin Line
 						["icon"] = "Interface\\Icons\\inv_axe_1h_artifactvigfus_d_06",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_1h_artifactvigfus_d_06.mdx",
 						["modelScale"] = 0.95,
@@ -167,9 +167,89 @@ _.GearSets =
 					["modelRotation"] = 45,
 					["ignoreSource"] = true,
 				}),
-				i(128289, {-- Scale of the Earth-Warder
+				i(134553, { -- Warswords of the Valarjar [Off Hand]
 					["groups"] = {
-					n(-5200, {-- Base Skin Line
+					n(-5200, { -- Base Skin Line
+						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_01",
+						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_01.mdx",
+						["modelScale"] = 0.95,
+						["modelRotation"] = 45,
+						["groups"] = {
+						artifact(296), -- Standard
+						artifact(654), -- Recover one of the Pillars
+						artifact(655), -- Recover Light's Heart
+						artifact(656), -- Complete first major Order Hall campaign
+						}
+					}),
+					n(-5201, { -- Heroic Skin Line
+						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_02",
+						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_02.mdx",
+						["modelScale"] = 0.95,
+						["modelRotation"] = 45,
+						["groups"] = {
+						artifact(657), -- Finish Class Campaign
+						artifact(660), -- Unlock 30 Artifact Traits
+						artifact(659), -- Reach AK25
+						artifact(658), -- Complete "This Side Up"
+						}
+					}),
+					n(-5202, { -- Balance of Power Quest Skin Line
+						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_05",
+						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_05.mdx",
+						["modelScale"] = 0.95,
+						["modelRotation"] = 45,
+						["groups"] = {
+						artifact(669), -- Complete Quest Line
+						artifact(670), -- Complete "Unleashed Monstrosities"
+						artifact(671), -- Complete a Mythic +15
+						artifact(672), -- Complete "Glory of the Legion Hero"
+						}
+					}),
+					n(-5203, { -- PVP Skin Line
+						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_03",
+						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_03.mdx",
+						["modelScale"] = 0.95,
+						["modelRotation"] = 45,
+						["groups"] = {
+						artifact(661), -- Reach PvP Prestige Level 2
+						artifact(662), -- Reach PvP Prestige Level 6
+						artifact(663), -- Reach PvP Prestige Level 11
+						artifact(664), -- Reach PvP Prestige Level 15
+						}
+					}),
+					n(-5204, { -- Mage Tower Quest Skin Line
+						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_04",
+						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_04.mdx",
+						["modelScale"] = 0.95,
+						["modelRotation"] = 45,
+						["groups"] = {
+						artifact(665), -- Complete Legionfall: Mage Tower
+						artifact(666), -- Defeat Heroic Kil'jaeden with appearance
+						artifact(667), -- Win 10 Rated BG's with appearance
+						artifact(668), -- Defeat all Legion dungeon bosses with appearance
+						}
+					}),
+					n(-5205, { -- Hidden Artifact Skin Line
+						["icon"] = "Interface\\Icons\\inv_axe_1h_artifactvigfus_d_06",
+						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_1h_artifactvigfus_d_06.mdx",
+						["modelScale"] = 0.95,
+						["modelRotation"] = 45,
+						["groups"] = {
+						artifact(964), -- Find Hidden Artifact Skin
+						artifact(962), -- Complete 30 Legion Dungeons Hidden
+						artifact(961), -- Complete 200 WQ Hidden
+						artifact(963), -- Kill 1,000 Players Hidden
+						}
+					}),
+					},
+					["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_01.mdx",
+					["modelScale"] = 0.85,
+					["modelRotation"] = 45,
+					["ignoreSource"] = true,
+				}),
+				i(128289, { -- Scale of the Earth-Warder
+					["groups"] = {
+					n(-5200, { -- Base Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactmagnar_d_01",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactmagnar_d_01.mdx",
 						["modelScale"] = 0.95,
@@ -181,7 +261,7 @@ _.GearSets =
 						artifact(146), -- Complete first major Order Hall campaign
 						}
 					}),
-					n(-5201, {-- Heroic Skin Line
+					n(-5201, { -- Heroic Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactmagnar_d_02",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactmagnar_d_02.mdx",
 						["modelScale"] = 0.95,
@@ -193,7 +273,7 @@ _.GearSets =
 						artifact(151), -- Complete "This Side Up"
 						}
 					}),
-					n(-5202, {-- Balance of Power Quest Skin Line
+					n(-5202, { -- Balance of Power Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactmagnar_d_03",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactmagnar_d_03.mdx",
 						["modelScale"] = 0.95,
@@ -205,7 +285,7 @@ _.GearSets =
 						artifact(163), -- Complete "Glory of the Legion Hero"
 						}
 					}),
-					n(-5203, {-- PVP Skin Line
+					n(-5203, { -- PVP Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactmagnar_d_04",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactmagnar_d_04.mdx",
 						["modelScale"] = 0.95,
@@ -217,7 +297,7 @@ _.GearSets =
 						artifact(156), -- Reach PvP Prestige Level 15
 						}
 					}),
-					n(-5204, {-- Mage Tower Quest Skin Line
+					n(-5204, { -- Mage Tower Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactmagnar_d_06",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactmagnar_d_06.mdx",
 						["modelScale"] = 0.95,
@@ -229,7 +309,7 @@ _.GearSets =
 						artifact(864), -- Defeat all Legion dungeon bosses with appearance
 						}
 					}),
-					n(-5205, {-- Hidden Artifact Skin Line
+					n(-5205, { -- Hidden Artifact Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactmagnar_d_05",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactmagnar_d_05.mdx",
 						["modelScale"] = 0.95,
@@ -247,9 +327,9 @@ _.GearSets =
 					["modelRotation"] = 45,
 					["ignoreSource"] = true,
 				}),
-				i(128288, {-- Scaleshard
+				i(128288, { -- Scaleshard
 					["groups"] = {
-					n(-5200, {-- Base Skin Line
+					n(-5200, { -- Base Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactmagnar_d_01",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactmagnar_d_01.mdx",
 						["modelScale"] = 0.95,
@@ -261,7 +341,7 @@ _.GearSets =
 						artifact(146), -- Complete first major Order Hall campaign
 						}
 					}),
-					n(-5201, {-- Heroic Skin Line
+					n(-5201, { -- Heroic Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactmagnar_d_02",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactmagnar_d_02.mdx",
 						["modelScale"] = 0.95,
@@ -273,7 +353,7 @@ _.GearSets =
 						artifact(151), -- Complete "This Side Up"
 						}
 					}),
-					n(-5202, {-- Balance of Power Quest Skin Line
+					n(-5202, { -- Balance of Power Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_axe_1h_artifactmagnar_d_03",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_1h_artifactmagnar_d_03.mdx",
 						["modelScale"] = 0.95,
@@ -285,7 +365,7 @@ _.GearSets =
 						artifact(163), -- Complete "Glory of the Legion Hero"
 						}
 					}),
-					n(-5203, {-- PVP Skin Line
+					n(-5203, { -- PVP Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactmagnar_d_04",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactmagnar_d_04.mdx",
 						["modelScale"] = 0.95,
@@ -297,7 +377,7 @@ _.GearSets =
 						artifact(156), -- Reach PvP Prestige Level 15
 						}
 					}),
-					n(-5204, {-- Mage Tower Quest Skin Line
+					n(-5204, { -- Mage Tower Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_1h_artifactmagnar_d_06",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactmagnar_d_06.mdx",
 						["modelScale"] = 0.95,
@@ -309,7 +389,7 @@ _.GearSets =
 						artifact(864), -- Defeat all Legion dungeon bosses with appearance
 						}
 					}),
-					n(-5205, {-- Hidden Artifact Skin Line
+					n(-5205, { -- Hidden Artifact Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_1h_artifactmagnar_d_05",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactmagnar_d_05.mdx",
 						["modelScale"] = 0.95,
@@ -332,9 +412,9 @@ _.GearSets =
 			}), 
 			cl(2, { -- Paladin
 				["groups"] = {
-				i(120978, {-- Ashbringer
+				i(120978, { -- Ashbringer
 					["groups"] = {
-					n(-5200, {-- Base Skin Line
+					n(-5200, { -- Base Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactashbringer_d_01",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactashbringer_d_01.mdx",
 						["modelScale"] = 0.95,
@@ -346,7 +426,7 @@ _.GearSets =
 						artifact(11), -- Complete first major Order Hall campaign
 						}
 					}),
-					n(-5201, {-- Heroic Skin Line
+					n(-5201, { -- Heroic Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactashbringerpurified_d_02",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactashbringerpurified_d_02.mdx",
 						["modelScale"] = 0.95,
@@ -358,7 +438,7 @@ _.GearSets =
 						artifact(15), -- Complete "This Side Up"
 						}
 					}),
-					n(-5202, {-- Balance of Power Quest Skin Line
+					n(-5202, { -- Balance of Power Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactashbringerfire_d_03",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactashbringerfire_d_03.mdx",
 						["modelScale"] = 0.95,
@@ -370,7 +450,7 @@ _.GearSets =
 						artifact(725), -- Complete "Glory of the Legion Hero"
 						}
 					}),
-					n(-5203, {-- PVP Skin Line
+					n(-5203, { -- PVP Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactashbringershadow_d_02",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactashbringershadow_d_02.mdx",
 						["modelScale"] = 0.95,
@@ -382,7 +462,7 @@ _.GearSets =
 						artifact(20), -- Reach PvP Prestige Level 15
 						}
 					}),
-					n(-5204, {-- Mage Tower Quest Skin Line
+					n(-5204, { -- Mage Tower Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactashbringerlightning_d_03",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactashbringerlightning_d_03.mdx",
 						["modelScale"] = 0.95,
@@ -394,7 +474,7 @@ _.GearSets =
 						artifact(24), -- Defeat all Legion dungeon bosses with appearance
 						}
 					}),
-					n(-5205, {-- Hidden Artifact Skin Line
+					n(-5205, { -- Hidden Artifact Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactashbringer_d_06",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactashbringer_d_06.mdx",
 						["modelScale"] = 0.95,
@@ -412,9 +492,9 @@ _.GearSets =
 					["modelRotation"] = 45,
 					["ignoreSource"] = true,
 				}),
-				i(128823, {-- The Silver Hand
+				i(128823, { -- The Silver Hand
 					["groups"] = {
-					n(-5200, {-- Base Skin Line
+					n(-5200, { -- Base Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_2h_artifactsilverhand_d_01",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_2h_artifactsilverhand_d_01.mdx",
 						["modelScale"] = 0.95,
@@ -426,7 +506,7 @@ _.GearSets =
 						artifact(549), -- Complete first major Order Hall campaign
 						}
 					}),
-					n(-5201, {-- Heroic Skin Line
+					n(-5201, { -- Heroic Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_2h_artifactsilverhand_d_02",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_2h_artifactsilverhand_d_02.mdx",
 						["modelScale"] = 0.95,
@@ -438,7 +518,7 @@ _.GearSets =
 						artifact(581), -- Complete "This Side Up"
 						}
 					}),
-					n(-5202, {-- Balance of Power Quest Skin Line
+					n(-5202, { -- Balance of Power Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_2h_artifactsilverhand_d_05",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_2h_artifactsilverhand_d_05.mdx",
 						["modelScale"] = 0.95,
@@ -450,7 +530,7 @@ _.GearSets =
 						artifact(587), -- Complete "Glory of the Legion Hero"
 						}
 					}),
-					n(-5203, {-- PVP Skin Line
+					n(-5203, { -- PVP Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_2h_artifactsilverhand_d_04",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_2h_artifactsilverhand_d_04.mdx",
 						["modelScale"] = 0.95,
@@ -462,7 +542,7 @@ _.GearSets =
 						artifact(552), -- Reach PvP Prestige Level 15
 						}
 					}),
-					n(-5204, {-- Mage Tower Quest Skin Line
+					n(-5204, { -- Mage Tower Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_2h_artifactsilverhand_d_03",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_2h_artifactsilverhand_d_03.mdx",
 						["modelScale"] = 0.95,
@@ -474,7 +554,7 @@ _.GearSets =
 						artifact(585), -- Defeat all Legion dungeon bosses with appearance
 						}
 					}),
-					n(-5205, {-- Hidden Artifact Skin Line
+					n(-5205, { -- Hidden Artifact Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_2h_artifactsilverhand_d_06",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_2h_artifactsilverhand_d_06.mdx",
 						["modelScale"] = 0.95,
@@ -492,9 +572,9 @@ _.GearSets =
 					["modelRotation"] = 45,
 					["ignoreSource"] = true,
 				}),
-				i(128866, {-- Truthguard
+				i(128866, { -- Truthguard
 					["groups"] = {
-					n(-5200, {-- Base Skin Line
+					n(-5200, { -- Base Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactnorgannon_d_01",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactnorgannon_d_01.mdx",
 						["modelScale"] = 0.95,
@@ -506,7 +586,7 @@ _.GearSets =
 						artifact(706), -- Complete first major Order Hall campaign
 						}
 					}),
-					n(-5201, {-- Heroic Skin Line
+					n(-5201, { -- Heroic Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactnorgannon_d_02",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactnorgannon_d_02.mdx",
 						["modelScale"] = 0.95,
@@ -518,7 +598,7 @@ _.GearSets =
 						artifact(710), -- Complete "This Side Up"
 						}
 					}),
-					n(-5202, {-- Balance of Power Quest Skin Line
+					n(-5202, { -- Balance of Power Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactnorgannon_d_06",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactnorgannon_d_06.mdx",
 						["modelScale"] = 0.95,
@@ -530,7 +610,7 @@ _.GearSets =
 						artifact(853), -- Complete "Glory of the Legion Hero"
 						}
 					}),
-					n(-5203, {-- PVP Skin Line
+					n(-5203, { -- PVP Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactnorgannon_d_03",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactnorgannon_d_03.mdx",
 						["modelScale"] = 0.95,
@@ -542,7 +622,7 @@ _.GearSets =
 						artifact(714), -- Reach PvP Prestige Level 15
 						}
 					}),
-					n(-5204, {-- Mage Tower Quest Skin Line
+					n(-5204, { -- Mage Tower Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactnorgannon_d_04",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactnorgannon_d_04.mdx",
 						["modelScale"] = 0.95,
@@ -554,7 +634,7 @@ _.GearSets =
 						artifact(715), -- Defeat all Legion dungeon bosses with appearance
 						}
 					}),
-					n(-5205, {-- Hidden Artifact Skin Line
+					n(-5205, { -- Hidden Artifact Skin Line
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactnorgannon_d_05",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactnorgannon_d_05.mdx",
 						["modelScale"] = 0.95,
@@ -572,9 +652,9 @@ _.GearSets =
 					["modelRotation"] = 45,
 					["ignoreSource"] = true,
 				}),
-				i(128867, {-- Oathseeker
+				i(128867, { -- Oathseeker
 					["groups"] = {
-					n(-5200, {-- Base Skin Line
+					n(-5200, { -- Base Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactnorgannon_d_01",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactnorgannon_d_01.mdx",
 						["modelScale"] = 0.95,
@@ -586,7 +666,7 @@ _.GearSets =
 						artifact(706), -- Complete first major Order Hall campaign
 						}
 					}),
-					n(-5201, {-- Heroic Skin Line
+					n(-5201, { -- Heroic Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactnorgannon_d_02",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactnorgannon_d_02.mdx",
 						["modelScale"] = 0.95,
@@ -598,7 +678,7 @@ _.GearSets =
 						artifact(710), -- Complete "This Side Up"
 						}
 					}),
-					n(-5202, {-- Balance of Power Quest Skin Line
+					n(-5202, { -- Balance of Power Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_1h_artifactnorgannon_d_06",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactnorgannon_d_06.mdx",
 						["modelScale"] = 0.95,
@@ -610,7 +690,7 @@ _.GearSets =
 						artifact(853), -- Complete "Glory of the Legion Hero"
 						}
 					}),
-					n(-5203, {-- PVP Skin Line
+					n(-5203, { -- PVP Skin Line
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactnorgannon_d_03",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactnorgannon_d_03.mdx",
 						["modelScale"] = 0.95,
@@ -622,7 +702,7 @@ _.GearSets =
 						artifact(714), -- Reach PvP Prestige Level 15
 						}
 					}),
-					n(-5204, {-- Mage Tower Quest Skin Line
+					n(-5204, { -- Mage Tower Quest Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_1h_artifactnorgannon_d_04",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactnorgannon_d_04.mdx",
 						["modelScale"] = 0.95,
@@ -634,7 +714,7 @@ _.GearSets =
 						artifact(715), -- Defeat all Legion dungeon bosses with appearance
 						}
 					}),
-					n(-5205, {-- Hidden Artifact Skin Line
+					n(-5205, { -- Hidden Artifact Skin Line
 						["icon"] = "Interface\\Icons\\inv_mace_1h_artifactnorgannon_d_05",
 						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactnorgannon_d_05.mdx",
 						["modelScale"] = 0.95,
@@ -657,7 +737,7 @@ _.GearSets =
 			}),
 			cl(3, { -- Hunter
 				["groups"] = {
-					i(128826, {-- Thas'dorah, Legacy of the Windrunners
+					i(128826, { -- Thas'dorah, Legacy of the Windrunners
 						["groups"] = {
 							n(-5200, {	-- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_bow_1h_artifactwindrunner_d_02",
@@ -737,9 +817,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true
 					}),
-					i(128861, {-- Titanstrike
+					i(128861, { -- Titanstrike
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_firearm_2h_artifactlegion_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_firearm_2h_artifactlegion_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -751,7 +831,7 @@ _.GearSets =
 								artifact(454), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_firearm_2h_artifactlegion_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_firearm_2h_artifactlegion_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -763,7 +843,7 @@ _.GearSets =
 								artifact(455), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_firearm_2h_artifactlegion_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_firearm_2h_artifactlegion_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -775,7 +855,7 @@ _.GearSets =
 								artifact(463), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_firearm_2h_artifactlegion_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_firearm_2h_artifactlegion_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -787,7 +867,7 @@ _.GearSets =
 								artifact(449), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_firearm_2h_artifactlegion_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_firearm_2h_artifactlegion_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -799,7 +879,7 @@ _.GearSets =
 								artifact(464), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_bow_1h_artifactlegion_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_bow_1h_artifactlegion_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -817,7 +897,7 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128808, {-- Talonclaw
+					i(128808, { -- Talonclaw
 						["groups"] = {
 							n(-5200, {	-- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_polearm_2h_artifacteagle_d_01",
@@ -902,9 +982,9 @@ _.GearSets =
 			}),
 			cl(4, { -- Rogue
 				["groups"] = {
-					i(128870, {-- The Kingslayers [Main Hand]
+					i(128870, { -- The Kingslayers [Main Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -916,7 +996,7 @@ _.GearSets =
 								artifact(230), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -928,7 +1008,7 @@ _.GearSets =
 								artifact(236), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -940,7 +1020,7 @@ _.GearSets =
 								artifact(239), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -952,7 +1032,7 @@ _.GearSets =
 								artifact(242), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -964,7 +1044,7 @@ _.GearSets =
 								artifact(904), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -982,9 +1062,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128869, {-- The Kingslayers [Off Hand]
+					i(128869, { -- The Kingslayers [Off Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -996,7 +1076,7 @@ _.GearSets =
 								artifact(230), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1008,7 +1088,7 @@ _.GearSets =
 								artifact(236), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -1020,7 +1100,7 @@ _.GearSets =
 								artifact(239), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1032,7 +1112,7 @@ _.GearSets =
 								artifact(242), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -1044,7 +1124,7 @@ _.GearSets =
 								artifact(904), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -1062,9 +1142,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128872, {-- The Dreadblades [Main Hand]
+					i(128872, { -- The Dreadblades [Main Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -1076,7 +1156,7 @@ _.GearSets =
 								artifact(695), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1088,7 +1168,7 @@ _.GearSets =
 								artifact(699), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -1100,7 +1180,7 @@ _.GearSets =
 								artifact(767), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -1112,7 +1192,7 @@ _.GearSets =
 								artifact(771), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1124,7 +1204,7 @@ _.GearSets =
 								artifact(703), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -1142,9 +1222,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(134552, {-- The Dreadblades [Off Hand]
+					i(134552, { -- The Dreadblades [Off Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -1156,7 +1236,7 @@ _.GearSets =
 								artifact(695), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1168,7 +1248,7 @@ _.GearSets =
 								artifact(699), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -1180,7 +1260,7 @@ _.GearSets =
 								artifact(767), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -1192,7 +1272,7 @@ _.GearSets =
 								artifact(771), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1204,7 +1284,7 @@ _.GearSets =
 								artifact(703), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -1222,9 +1302,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128476, {-- Fangs of the Devourer [Main Hand]
+					i(128476, { -- Fangs of the Devourer [Main Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -1236,7 +1316,7 @@ _.GearSets =
 								artifact(70), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1248,7 +1328,7 @@ _.GearSets =
 								artifact(78), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1260,7 +1340,7 @@ _.GearSets =
 								artifact(74), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -1272,7 +1352,7 @@ _.GearSets =
 								artifact(82), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -1284,7 +1364,7 @@ _.GearSets =
 								artifact(86), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -1302,9 +1382,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128479, {-- Fangs of the Devourer [Off Hand]
+					i(128479, { -- Fangs of the Devourer [Off Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -1316,7 +1396,7 @@ _.GearSets =
 								artifact(70), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1328,7 +1408,7 @@ _.GearSets =
 								artifact(78), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1340,7 +1420,7 @@ _.GearSets =
 								artifact(74), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -1352,7 +1432,7 @@ _.GearSets =
 								artifact(82), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -1364,7 +1444,7 @@ _.GearSets =
 								artifact(86), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -1387,7 +1467,7 @@ _.GearSets =
 			}),
 			cl(5, { -- Priest
 				["groups"] = {
-					i(128868, {-- Light's Wrath			
+					i(128868, { -- Light's Wrath			
 						["groups"] = {		
 							n(-5200, {	-- Base Skin Line
 								["icon"] = "Interface\\Icons\\INV_Staff_2H_ArtifactTome_D_01",
@@ -1468,7 +1548,7 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true
 					}),	
-					i(128825, {-- T'uure, Beacon of the Naaru			
+					i(128825, { -- T'uure, Beacon of the Naaru			
 						["groups"] = {
 							n(-5200, {	-- Base Skin Line
 								["icon"] = "Interface\\Icons\\INV_Staff_2h_ArtifactHeartofKure_D_01",
@@ -1549,9 +1629,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true
 					}),			
-					i(128827, {-- Xal'atath, Blade of the Black Empire
+					i(128827, { -- Xal'atath, Blade of the Black Empire
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactcthun_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -1563,7 +1643,7 @@ _.GearSets =
 								artifact(247), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactcthun_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1575,7 +1655,7 @@ _.GearSets =
 								artifact(251), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactcthun_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1587,7 +1667,7 @@ _.GearSets =
 								artifact(252), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactcthun_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -1599,7 +1679,7 @@ _.GearSets =
 								artifact(259), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactcthun_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -1611,7 +1691,7 @@ _.GearSets =
 								artifact(263), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactcthun_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -1629,9 +1709,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(133958, {-- Secrets of the Void
+					i(133958, { -- Secrets of the Void
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactcthun_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactcthun_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -1643,7 +1723,7 @@ _.GearSets =
 								artifact(247), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactcthun_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactcthun_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1655,7 +1735,7 @@ _.GearSets =
 								artifact(251), -- Complete "This Side Up"
 								}
 							 }),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactcthun_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactcthun_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1667,7 +1747,7 @@ _.GearSets =
 								artifact(252), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactcthun_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactcthun_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -1679,7 +1759,7 @@ _.GearSets =
 								artifact(259), -- Reach PvP Prestige Level 15
 								}
 							 }),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactcthun_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactcthun_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -1691,7 +1771,7 @@ _.GearSets =
 								artifact(263), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactcthun_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactcthun_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -1714,9 +1794,9 @@ _.GearSets =
 			}),
 			cl(6, { -- Death Knight
 				["groups"] = {
-					i(128402, {-- Maw of the Damned
+					i(128402, { -- Maw of the Damned
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_axe_2h_artifactmaw_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactmaw_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -1728,7 +1808,7 @@ _.GearSets =
 								artifact(357), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_axe_2h_artifactmaw_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactmaw_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1740,7 +1820,7 @@ _.GearSets =
 								artifact(363), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_axe_2h_artifactmaw_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactmaw_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -1752,7 +1832,7 @@ _.GearSets =
 								artifact(369), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_axe_2h_artifactmaw_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactmaw_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -1764,7 +1844,7 @@ _.GearSets =
 								artifact(579), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_axe_2h_artifactmaw_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactmaw_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1776,7 +1856,7 @@ _.GearSets =
 								artifact(366), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_axe_2h_artifactmaw_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactmaw_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -1794,9 +1874,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128292, {-- Blades of the Fallen Prince
+					i(128292, { -- Blades of the Fallen Prince
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -1808,7 +1888,7 @@ _.GearSets =
 								artifact(376), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1820,7 +1900,7 @@ _.GearSets =
 								artifact(379), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -1832,7 +1912,7 @@ _.GearSets =
 								artifact(382), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -1844,7 +1924,7 @@ _.GearSets =
 								artifact(388), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1856,7 +1936,7 @@ _.GearSets =
 								artifact(385), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -1874,9 +1954,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128403, {-- Apocalypse
+					i(128403, { -- Apocalypse
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_2h_artifactsoulrend_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactsoulrend_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -1888,7 +1968,7 @@ _.GearSets =
 								artifact(390), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_2h_artifactsoulrend_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactsoulrend_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -1900,7 +1980,7 @@ _.GearSets =
 								artifact(397), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_2h_artifactsoulrend_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactsoulrend_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1912,7 +1992,7 @@ _.GearSets =
 								artifact(393), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_2h_artifactsoulrend_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactsoulrend_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1924,7 +2004,7 @@ _.GearSets =
 								artifact(392), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_2h_artifactsoulrend_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactsoulrend_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -1936,7 +2016,7 @@ _.GearSets =
 								artifact(948), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_2h_artifactsoulrend_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactsoulrend_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -1959,9 +2039,9 @@ _.GearSets =
 					}),
 			cl(7, { -- Shaman
 				["groups"] = {
-					i(128819, {-- Doomhammer
+					i(128819, { -- Doomhammer
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -1973,7 +2053,7 @@ _.GearSets =
 								artifact(303), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -1985,7 +2065,7 @@ _.GearSets =
 								artifact(306), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -1997,7 +2077,7 @@ _.GearSets =
 								artifact(312), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2009,7 +2089,7 @@ _.GearSets =
 								artifact(309), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2021,7 +2101,7 @@ _.GearSets =
 								artifact(315), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2039,9 +2119,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128873, {-- Fury of the Stonemother
+					i(128873, { -- Fury of the Stonemother
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactdoomhammer_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2053,7 +2133,7 @@ _.GearSets =
 								artifact(303), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactdoomhammer_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2065,7 +2145,7 @@ _.GearSets =
 								artifact(306), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactdoomhammer_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2077,7 +2157,7 @@ _.GearSets =
 								artifact(312), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactdoomhammer_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2089,7 +2169,7 @@ _.GearSets =
 								artifact(309), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactdoomhammer_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2101,7 +2181,7 @@ _.GearSets =
 								artifact(315), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactdoomhammer_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2119,9 +2199,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128935, {-- The Fist of Ra-den
+					i(128935, { -- The Fist of Ra-den
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactstormfist_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2133,7 +2213,7 @@ _.GearSets =
 								artifact(675), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactstormfist_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2145,7 +2225,7 @@ _.GearSets =
 								artifact(679), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactstormfist_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2157,7 +2237,7 @@ _.GearSets =
 								artifact(683), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactstormfist_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2169,7 +2249,7 @@ _.GearSets =
 								artifact(691), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactstormfist_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2181,7 +2261,7 @@ _.GearSets =
 								artifact(687), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactstormfist_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2199,9 +2279,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128936, {-- The Highkeeper's Ward
+					i(128936, { -- The Highkeeper's Ward
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactstormfist_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2213,7 +2293,7 @@ _.GearSets =
 								artifact(675), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactstormfist_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2225,7 +2305,7 @@ _.GearSets =
 								artifact(679), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactstormfist_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2237,7 +2317,7 @@ _.GearSets =
 								artifact(683), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactstormfist_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2249,7 +2329,7 @@ _.GearSets =
 								artifact(691), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactstormfist_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2261,7 +2341,7 @@ _.GearSets =
 								artifact(687), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactstormfist_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2279,9 +2359,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128911, {-- Sharas'dal, Scepter of Tides
+					i(128911, { -- Sharas'dal, Scepter of Tides
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactazshara_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2293,7 +2373,7 @@ _.GearSets =
 								artifact(774), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactazshara_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2305,7 +2385,7 @@ _.GearSets =
 								artifact(778), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactazshara_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2317,7 +2397,7 @@ _.GearSets =
 								artifact(782), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactazshara_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2329,7 +2409,7 @@ _.GearSets =
 								artifact(786), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactazshara_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2341,7 +2421,7 @@ _.GearSets =
 								artifact(790), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_mace_1h_artifactazshara_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2359,9 +2439,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128934, {-- Shield of the Sea Queen
+					i(128934, { -- Shield of the Sea Queen
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactazshara_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactazshara_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2373,7 +2453,7 @@ _.GearSets =
 								artifact(774), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactazshara_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactazshara_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2385,7 +2465,7 @@ _.GearSets =
 								artifact(778), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactazshara_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactazshara_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2397,7 +2477,7 @@ _.GearSets =
 								artifact(782), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactazshara_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactazshara_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2409,7 +2489,7 @@ _.GearSets =
 								artifact(786), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactazshara_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactazshara_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2421,7 +2501,7 @@ _.GearSets =
 								artifact(790), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_shield_1h_artifactazshara_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactazshara_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2444,9 +2524,9 @@ _.GearSets =
 			}),
 			cl(8, { -- Mage
 				["groups"] = {
-					i(128862, {-- Ebonchill
+					i(128862, { -- Ebonchill
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactantonidas_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactantonidas_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2458,7 +2538,7 @@ _.GearSets =
 								artifact(171), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactantonidas_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactantonidas_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2470,7 +2550,7 @@ _.GearSets =
 								artifact(175), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactantonidas_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactantonidas_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2482,7 +2562,7 @@ _.GearSets =
 								artifact(187), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactantonidas_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactantonidas_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2494,7 +2574,7 @@ _.GearSets =
 								artifact(179), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactantonidas_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactantonidas_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2506,7 +2586,7 @@ _.GearSets =
 								artifact(888), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactantonidas_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactantonidas_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2524,9 +2604,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128820, {-- Felo'melorn
+					i(128820, { -- Felo'melorn
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2538,7 +2618,7 @@ _.GearSets =
 								artifact(492), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2550,7 +2630,7 @@ _.GearSets =
 								artifact(486), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2562,7 +2642,7 @@ _.GearSets =
 								artifact(501), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2574,7 +2654,7 @@ _.GearSets =
 								artifact(487), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2586,7 +2666,7 @@ _.GearSets =
 								artifact(504), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2604,9 +2684,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}), 
-					i(133959, {-- Heart of the Phoenix
+					i(133959, { -- Heart of the Phoenix
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactfelomelorn_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactfelomelorn_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2618,7 +2698,7 @@ _.GearSets =
 								artifact(492), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactfelomelorn_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactfelomelorn_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2630,7 +2710,7 @@ _.GearSets =
 								artifact(486), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactfelomelorn_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactfelomelorn_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2642,7 +2722,7 @@ _.GearSets =
 								artifact(501), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactfelomelorn_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactfelomelorn_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2654,7 +2734,7 @@ _.GearSets =
 								artifact(487), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactfelomelorn_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactfelomelorn_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2666,7 +2746,7 @@ _.GearSets =
 								artifact(504), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactfelomelorn_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactfelomelorn_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2684,9 +2764,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(127857, {-- Aluneth
+					i(127857, { -- Aluneth
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactaegwynsstaff_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2698,7 +2778,7 @@ _.GearSets =
 								artifact(128), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactaegwynsstaff_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2710,7 +2790,7 @@ _.GearSets =
 								artifact(131), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactaegwynsstaff_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2722,7 +2802,7 @@ _.GearSets =
 								artifact(135), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactaegwynsstaff_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2734,7 +2814,7 @@ _.GearSets =
 								artifact(139), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactaegwynsstaff_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2746,7 +2826,7 @@ _.GearSets =
 								artifact(142), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactaegwynsstaffsheep_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2769,9 +2849,9 @@ _.GearSets =
 			}),
 			cl(9, { -- Warlock
 				["groups"] = {
-					i(128941, {-- Scepter of Sargeras
+					i(128941, { -- Scepter of Sargeras
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactsargeras_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactsargeras_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2783,7 +2863,7 @@ _.GearSets =
 								artifact(191), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactsargeras_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactsargeras_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2795,7 +2875,7 @@ _.GearSets =
 								artifact(195), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactsargeras_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactsargeras_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2807,7 +2887,7 @@ _.GearSets =
 								artifact(199), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactsargeras_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactsargeras_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2819,7 +2899,7 @@ _.GearSets =
 								artifact(203), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactsargeras_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactsargeras_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2831,7 +2911,7 @@ _.GearSets =
 								artifact(916), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactsargeras_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactsargeras_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2849,9 +2929,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128942, {-- Ulthalesh, the Deadwind Harvester
+					i(128942, { -- Ulthalesh, the Deadwind Harvester
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactdeadwind_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactdeadwind_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2863,7 +2943,7 @@ _.GearSets =
 								artifact(322), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactdeadwind_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactdeadwind_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2875,7 +2955,7 @@ _.GearSets =
 								artifact(316), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactdeadwind_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactdeadwind_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2887,7 +2967,7 @@ _.GearSets =
 								artifact(331), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactdeadwind_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactdeadwind_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2899,7 +2979,7 @@ _.GearSets =
 								artifact(324), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactdeadwind_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactdeadwind_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -2911,7 +2991,7 @@ _.GearSets =
 								artifact(969), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactdeadwind_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactdeadwind_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2929,9 +3009,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128943, {-- Skull of the Man'ari
+					i(128943, { -- Skull of the Man'ari
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -2943,7 +3023,7 @@ _.GearSets =
 								artifact(813), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -2955,7 +3035,7 @@ _.GearSets =
 								artifact(817), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -2967,7 +3047,7 @@ _.GearSets =
 								artifact(821), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -2979,7 +3059,7 @@ _.GearSets =
 								artifact(825), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -2991,7 +3071,7 @@ _.GearSets =
 								artifact(829), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -3009,9 +3089,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(137246, {-- Spine of Thal'kiel
+					i(137246, { -- Spine of Thal'kiel
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactskulloferedar_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactskulloferedar_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -3023,7 +3103,7 @@ _.GearSets =
 								artifact(813), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactskulloferedar_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactskulloferedar_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -3035,7 +3115,7 @@ _.GearSets =
 								artifact(817), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactskulloferedar_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactskulloferedar_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -3047,7 +3127,7 @@ _.GearSets =
 								artifact(821), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactskulloferedar_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactskulloferedar_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -3059,7 +3139,7 @@ _.GearSets =
 								artifact(825), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactskulloferedar_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactskulloferedar_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -3071,7 +3151,7 @@ _.GearSets =
 								artifact(829), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactskulloferedar_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactskulloferedar_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -3094,9 +3174,9 @@ _.GearSets =
 			}),
 			cl(10, { -- Monk
 				["groups"] = {
-					i(128937, {-- Sheilun, Staff of the Mists
+					i(128937, { -- Sheilun, Staff of the Mists
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactshaohao_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactshaohao_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -3108,7 +3188,7 @@ _.GearSets =
 								artifact(511), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactshaohao_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactshaohao_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -3120,7 +3200,7 @@ _.GearSets =
 								artifact(514), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactshaohao_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactshaohao_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -3132,7 +3212,7 @@ _.GearSets =
 								artifact(506), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactshaohao_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactshaohao_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -3144,7 +3224,7 @@ _.GearSets =
 								artifact(523), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactshaohao_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactshaohao_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -3156,7 +3236,7 @@ _.GearSets =
 								artifact(936), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactshaohao_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactshaohao_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -3174,9 +3254,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128938, {-- Fu Zan, the Wanderer's Companion
+					i(128938, { -- Fu Zan, the Wanderer's Companion
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactmonkeyking_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -3188,7 +3268,7 @@ _.GearSets =
 								artifact(342), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactmonkeyking_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -3200,7 +3280,7 @@ _.GearSets =
 								artifact(345), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactmonkeyking_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -3212,7 +3292,7 @@ _.GearSets =
 								artifact(338), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactmonkeyking_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -3224,7 +3304,7 @@ _.GearSets =
 								artifact(351), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactmonkeyking_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -3236,7 +3316,7 @@ _.GearSets =
 								artifact(354), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactmonkeyking_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -3254,9 +3334,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128940, {-- Fists of the Heavens [Main Hand]
+					i(128940, { -- Fists of the Heavens [Main Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -3268,7 +3348,7 @@ _.GearSets =
 								artifact(530), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -3280,7 +3360,7 @@ _.GearSets =
 								artifact(524), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -3292,7 +3372,7 @@ _.GearSets =
 								artifact(536), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -3304,7 +3384,7 @@ _.GearSets =
 								artifact(539), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -3316,7 +3396,7 @@ _.GearSets =
 								artifact(944), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -3334,9 +3414,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(133948, {-- Fists of the Heavens [Off Hand]
+					i(133948, { -- Fists of the Heavens [Off Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -3348,7 +3428,7 @@ _.GearSets =
 								artifact(530), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -3360,7 +3440,7 @@ _.GearSets =
 								artifact(524), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -3372,7 +3452,7 @@ _.GearSets =
 								artifact(536), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -3384,7 +3464,7 @@ _.GearSets =
 								artifact(539), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -3396,7 +3476,7 @@ _.GearSets =
 								artifact(944), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -3419,9 +3499,9 @@ _.GearSets =
 			}),
 			cl(11, { -- Druid
 				["groups"] = {
-					i(128858, {-- Scythe of Elune
+					i(128858, { -- Scythe of Elune
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactelune_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactelune_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -3433,7 +3513,7 @@ _.GearSets =
 								artifact(413), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactelune_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactelune_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -3445,7 +3525,7 @@ _.GearSets =
 								artifact(416), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactelune_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactelune_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -3457,7 +3537,7 @@ _.GearSets =
 								artifact(408), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactelune_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactelune_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -3469,7 +3549,7 @@ _.GearSets =
 								artifact(422), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactelune_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactelune_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -3481,7 +3561,7 @@ _.GearSets =
 								artifact(932), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactelune_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactelune_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -3499,9 +3579,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128306, {-- G'Hanir, the Mother Tree
+					i(128306, { -- G'Hanir, the Mother Tree
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactnordrassil_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactnordrassil_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -3513,7 +3593,7 @@ _.GearSets =
 								artifact(48), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactnordrassil_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactnordrassil_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -3525,7 +3605,7 @@ _.GearSets =
 								artifact(52), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactnordrassil_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactnordrassil_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -3537,7 +3617,7 @@ _.GearSets =
 								artifact(56), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactnordrassil_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactnordrassil_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -3549,7 +3629,7 @@ _.GearSets =
 								artifact(60), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactnordrassil_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactnordrassil_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -3561,7 +3641,7 @@ _.GearSets =
 								artifact(876), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_staff_2h_artifactnordrassil_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactnordrassil_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -3580,9 +3660,9 @@ _.GearSets =
 						["ignoreSource"] = true,
 					}),
 					--Uncommenting as we want the items to show up at least.  We can work on models later
-					i(128860, {-- Fangs of Ashamane [Main Hand]
+					i(128860, { -- Fangs of Ashamane [Main Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\Druidcat2\\druidcat2_artifact1.mdx",
 								["modelScale"] = 0.95,
@@ -3597,7 +3677,7 @@ _.GearSets =
 								artifact(431), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\druidcat2\\druidcat2_artifact2.mdx",
 								["modelScale"] = 0.95,
@@ -3609,7 +3689,7 @@ _.GearSets =
 								artifact(438), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\druidcat2\\druidcat2_artifact3.mdx",
 								["modelScale"] = 0.95,
@@ -3621,7 +3701,7 @@ _.GearSets =
 								artifact(444), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\druidcat2\\druidcat2_artifact4.mdx",
 								["modelScale"] = 0.95,
@@ -3633,7 +3713,7 @@ _.GearSets =
 								artifact(441), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\druidcat2\\druidcat2_artifact6.mdx",
 								["modelScale"] = 0.95,
@@ -3645,7 +3725,7 @@ _.GearSets =
 								artifact(447), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\druidcat2\\druidcat2_artifact5.mdx",
 								["modelScale"] = 0.95,
@@ -3663,9 +3743,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),--]]
-					i(128859, {-- Fangs of Ashamane [Off Hand]
+					i(128859, { -- Fangs of Ashamane [Off Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\Druidcat2\\druidcat2_artifact1.mdx",
 								["modelScale"] = 0.95,
@@ -3680,7 +3760,7 @@ _.GearSets =
 								artifact(431), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\druidcat2\\druidcat2_artifact2.mdx",
 								["modelScale"] = 0.95,
@@ -3692,7 +3772,7 @@ _.GearSets =
 								artifact(438), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\druidcat2\\druidcat2_artifact3.mdx",
 								["modelScale"] = 0.95,
@@ -3704,7 +3784,7 @@ _.GearSets =
 								artifact(444), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\druidcat2\\druidcat2_artifact4.mdx",
 								["modelScale"] = 0.95,
@@ -3716,7 +3796,7 @@ _.GearSets =
 								artifact(441), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\druidcat2\\druidcat2_artifact6.mdx",
 								["modelScale"] = 0.95,
@@ -3728,7 +3808,7 @@ _.GearSets =
 								artifact(447), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",
 								--["model"] = "Creature\\druidcat2\\druidcat2_artifact5.mdx",
 								["modelScale"] = 0.95,
@@ -3746,9 +3826,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),--]]
-					i(128821, {-- Claws of Ursoc [Main Hand]
+					i(128821, { -- Claws of Ursoc [Main Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact1.mdx",
 								["modelScale"] = 0.95,
@@ -3763,7 +3843,7 @@ _.GearSets =
 								artifact(269), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact2.mdx",
 								["modelScale"] = 0.95,
@@ -3775,7 +3855,7 @@ _.GearSets =
 								artifact(276), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact3.mdx",
 								["modelScale"] = 0.95,
@@ -3787,7 +3867,7 @@ _.GearSets =
 								artifact(279), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact4.mdx",
 								["modelScale"] = 0.95,
@@ -3799,7 +3879,7 @@ _.GearSets =
 								artifact(282), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact6.mdx",
 								["modelScale"] = 0.95,
@@ -3811,7 +3891,7 @@ _.GearSets =
 								artifact(993), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact5.mdx",
 								["modelScale"] = 0.95,
@@ -3829,9 +3909,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),--]]
-					i(128822, {-- Claws of Ursoc [Offhand]
+					i(128822, { -- Claws of Ursoc [Offhand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact1.mdx",
 								["modelScale"] = 0.95,
@@ -3846,7 +3926,7 @@ _.GearSets =
 								artifact(269), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact2.mdx",
 								["modelScale"] = 0.95,
@@ -3858,7 +3938,7 @@ _.GearSets =
 								artifact(276), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact3.mdx",
 								["modelScale"] = 0.95,
@@ -3870,7 +3950,7 @@ _.GearSets =
 								artifact(279), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact4.mdx",
 								["modelScale"] = 0.95,
@@ -3882,7 +3962,7 @@ _.GearSets =
 								artifact(282), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact6.mdx",
 								["modelScale"] = 0.95,
@@ -3894,7 +3974,7 @@ _.GearSets =
 								artifact(993), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",
 								--["model"] = "Creature\\Druidbear2\\druidbear2_artifact5.mdx",
 								["modelScale"] = 0.95,
@@ -3917,9 +3997,9 @@ _.GearSets =
 			}),
 			cl(12, { -- Demon Hunter
 				["groups"] = {
-					i(127829, {-- Twinblades of the Deceiver [Main Hand]
+					i(127829, { -- Twinblades of the Deceiver [Main Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -3931,7 +4011,7 @@ _.GearSets =
 								artifact(28), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -3943,7 +4023,7 @@ _.GearSets =
 								artifact(32), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -3955,7 +4035,7 @@ _.GearSets =
 								artifact(33), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -3967,7 +4047,7 @@ _.GearSets =
 								artifact(44), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -3979,7 +4059,7 @@ _.GearSets =
 								artifact(40), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -3997,9 +4077,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(127830, {-- Twinblades of the Deceiver [Off Hand]
+					i(127830, { -- Twinblades of the Deceiver [Off Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -4011,7 +4091,7 @@ _.GearSets =
 								artifact(28), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -4023,7 +4103,7 @@ _.GearSets =
 								artifact(32), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -4035,7 +4115,7 @@ _.GearSets =
 								artifact(33), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -4047,7 +4127,7 @@ _.GearSets =
 								artifact(44), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -4059,7 +4139,7 @@ _.GearSets =
 								artifact(40), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_06.mdx",
 								["modelScale"] = 0.95,
@@ -4077,9 +4157,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128832, {-- Aldrachi Warblades [Main Hand]
+					i(128832, { -- Aldrachi Warblades [Main Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -4091,7 +4171,7 @@ _.GearSets =
 								artifact(557), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -4103,7 +4183,7 @@ _.GearSets =
 								artifact(561), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -4115,7 +4195,7 @@ _.GearSets =
 								artifact(565), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -4127,7 +4207,7 @@ _.GearSets =
 								artifact(569), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_06right.mdx",
 								["modelScale"] = 0.95,
@@ -4139,7 +4219,7 @@ _.GearSets =
 								artifact(860), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_05.mdx",
 								["modelScale"] = 0.95,
@@ -4157,9 +4237,9 @@ _.GearSets =
 						["modelRotation"] = 45,
 						["ignoreSource"] = true,
 					}),
-					i(128831, {-- Aldrachi Warblades [Off Hand]
+					i(128831, { -- Aldrachi Warblades [Off Hand]
 						["groups"] = {
-							n(-5200, {-- Base Skin Line
+							n(-5200, { -- Base Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_01",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_01.mdx",
 								["modelScale"] = 0.95,
@@ -4171,7 +4251,7 @@ _.GearSets =
 								artifact(557), -- Complete first major Order Hall campaign
 								}
 							}),
-							n(-5201, {-- Heroic Skin Line
+							n(-5201, { -- Heroic Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_02",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_02.mdx",
 								["modelScale"] = 0.95,
@@ -4183,7 +4263,7 @@ _.GearSets =
 								artifact(561), -- Complete "This Side Up"
 								}
 							}),
-							n(-5202, {-- Balance of Power Quest Skin Line
+							n(-5202, { -- Balance of Power Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_03",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_03.mdx",
 								["modelScale"] = 0.95,
@@ -4195,7 +4275,7 @@ _.GearSets =
 								artifact(565), -- Complete "Glory of the Legion Hero"
 								}
 							}),
-							n(-5203, {-- PVP Skin Line
+							n(-5203, { -- PVP Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_04",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_04.mdx",
 								["modelScale"] = 0.95,
@@ -4207,7 +4287,7 @@ _.GearSets =
 								artifact(569), -- Reach PvP Prestige Level 15
 								}
 							}),
-							n(-5204, {-- Mage Tower Quest Skin Line
+							n(-5204, { -- Mage Tower Quest Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_06",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_06left.mdx",
 								["modelScale"] = 0.95,
@@ -4219,7 +4299,7 @@ _.GearSets =
 								artifact(860), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
-							n(-5205, {-- Hidden Artifact Skin Line
+							n(-5205, { -- Hidden Artifact Skin Line
 								["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_05",
 								["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_05.mdx",
 								["modelScale"] = 0.95,
