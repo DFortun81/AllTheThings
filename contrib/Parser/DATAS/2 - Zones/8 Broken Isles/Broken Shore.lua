@@ -225,6 +225,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactnordrassil_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 11 },
 								}),
 								i(128823, { -- The Silver Hand
 									["groups"] = {
@@ -234,6 +235,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_2h_artifactsilverhand_d_03.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 12 },
 								}),
 								i(128937, { -- Sheilun, Staff of the Mists
 									["groups"] = {
@@ -243,6 +245,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactshaohao_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 10 },
 								}),
 								i(128825, { -- T'uure, Beacon of the Naaru
 									["groups"] = {
@@ -252,6 +255,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactheartofkure_d_04.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 5 },
 								}),
 								i(128911, { -- Sharas'dal, Scepter of Tides [Main Hand]
 									["groups"] = {
@@ -261,6 +265,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 7 },
 								}),
 								i(128934, { -- Shield of the Sea Queen [Off Hand]
 									["groups"] = {
@@ -270,14 +275,15 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 7 },
 								}),
 							},
 							["classes"] = {
-								5, -- Restoration Druid
-								11, -- Holy Paladin
-								10, -- Holy Priest
-								7, -- Mistweaver Monk
-								2, -- Restoration Shaman
+								11, -- Restoration Druid
+								12, -- Holy Paladin
+								10, -- Mistweaver Monk
+								5, -- Holy Priest
+								7, -- Restoration Shaman
 							},
 						}),
 						q(45627, { -- Feltotem's Fall
