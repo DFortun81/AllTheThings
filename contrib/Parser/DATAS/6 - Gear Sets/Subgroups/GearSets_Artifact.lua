@@ -2175,10 +2175,10 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(301), -- Complete Legionfall: Mage Tower
-								artifact(313), -- Defeat Heroic Kil'jaeden with appearance
-								artifact(314), -- Win 10 Rated BG's with appearance
-								artifact(315), -- Defeat all Legion dungeon bosses with appearance
+									artifact(301), -- Complete Legionfall: Mage Tower
+									artifact(313), -- Defeat Heroic Kil'jaeden with appearance
+									artifact(314), -- Win 10 Rated BG's with appearance
+									artifact(315), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
 							n(-5205, { -- Hidden Artifact Skin Line
@@ -2255,10 +2255,10 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(301), -- Complete Legionfall: Mage Tower
-								artifact(313), -- Defeat Heroic Kil'jaeden with appearance
-								artifact(314), -- Win 10 Rated BG's with appearance
-								artifact(315), -- Defeat all Legion dungeon bosses with appearance
+									artifact(301), -- Complete Legionfall: Mage Tower
+									artifact(313), -- Defeat Heroic Kil'jaeden with appearance
+									artifact(314), -- Win 10 Rated BG's with appearance
+									artifact(315), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
 							n(-5205, { -- Hidden Artifact Skin Line
@@ -2335,10 +2335,10 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(684), -- Complete Legionfall: Mage Tower
-								artifact(685), -- Defeat Heroic Kil'jaeden with appearance
-								artifact(686), -- Win 10 Rated BG's with appearance
-								artifact(687), -- Defeat all Legion dungeon bosses with appearance
+									artifact(684), -- Complete Legionfall: Mage Tower
+									artifact(685), -- Defeat Heroic Kil'jaeden with appearance
+									artifact(686), -- Win 10 Rated BG's with appearance
+									artifact(687), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
 							n(-5205, { -- Hidden Artifact Skin Line

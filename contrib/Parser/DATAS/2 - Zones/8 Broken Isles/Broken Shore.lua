@@ -49,12 +49,24 @@ _.Zones =
 									["modelScale"] = 0.5,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(128935, { -- The Fist of Ra-den
 									["groups"] = {
-										artifact(),
+										artifact(684),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128936, { -- The Highkeeper's Ward
+									["groups"] = {
+										artifact(684),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),	
 								i(128908, { -- Warswords of the Valarjar
 									["groups"] = {
 										artifact(665),
@@ -177,12 +189,24 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(128911, { -- Sharas'dal, Scepter of Tides
 									["groups"] = {
-										artifact(),
+										artifact(787),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128934, { -- Shield of the Sea Queen
+									["groups"] = {
+										artifact(787),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 							},
 							["classes"] = {
 								5, -- Restoration Druid
@@ -267,12 +291,24 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(128819, { -- Doomhammer
 									["groups"] = {
-										artifact(),
+										artifact(301),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128873, { -- Fury of the Stonemother
+									["groups"] = {
+										artifact(301),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								--[[
 									["groups"] = {
 										artifact(),
