@@ -296,6 +296,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_firearm_2h_artifactlegion_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 3 },
 								}),
 								i(128940, { -- Fists of the Heavens [Main Hand]
 									["groups"] = {
@@ -305,6 +306,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 10 },
 								}),
 								i(133948, { -- Fists of the Heavens [Off Hand]
 									["groups"] = {
@@ -314,6 +316,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 10 },
 								}),
 								i(128868, { -- Light's Wrath			
 									["groups"] = {
@@ -323,6 +326,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifacttome_d_04.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 5 },
 								}),
 								i(128941, { -- Scepter of Sargeras			
 									["groups"] = {
@@ -332,6 +336,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactsargeras_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 9 },
 								}),
 							},
 							["classes"] = {
@@ -351,6 +356,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactaegwynsstaff_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 8 },
 								}),
 								i(120978, { -- Ashbringer
 									["groups"] = {
@@ -360,6 +366,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactashbringerlightning_d_03.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 2 },
 								}),								
 								i(128870, { -- The Kingslayers [Main Hand]
 									["groups"] = {
@@ -369,6 +376,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 4 },
 								}),
 								i(128869, { -- The Kingslayers [Off Hand]
 									["groups"] = {
@@ -378,6 +386,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 4 },
 								}),
 								i(128819, { -- Doomhammer
 									["groups"] = {
@@ -387,6 +396,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 7 },
 								}),
 								i(128873, { -- Fury of the Stonemother
 									["groups"] = {
@@ -396,6 +406,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 7 },
 								}),
 								i(128943, { -- Skull of the Man'ari
 									["groups"] = {
@@ -405,6 +416,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 9 },
 								}),
 								i(137246, { -- Spine of Thal'kiel
 									["groups"] = {
@@ -414,6 +426,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 9 },
 								}),
 							},
 							["classes"] = {
