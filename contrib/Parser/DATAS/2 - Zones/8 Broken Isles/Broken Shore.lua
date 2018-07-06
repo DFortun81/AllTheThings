@@ -615,6 +615,7 @@ _.Zones =
 							},
 						}),
 					},
+					["description"] = "|CFFFF0000July 16th (slightly chance July 9th) is the last day you can earn these appearances.  After that you will no longer be able to earn them.  You only need to earn the base appearance for now.",
 				}),
 				n(-10049, { -- Command Center
 					["groups"] =  {

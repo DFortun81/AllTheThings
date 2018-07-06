@@ -633,52 +633,52 @@ _.Instances =
 							}),
 							n(-1, {	-- Common Boss Drops
 								["groups"] = {
-									n(-355, { -- Thunderforged
-										i(96979), -- Lost Shoulders of Fire
-										i(96981), -- Lost Shoulders of Fluidity
-										i(96980), -- Lost Shoulders of Healing
-										i(96984), -- Forgotten Mantle of the Moon
-										i(96985), -- Forgotten Mantle of the Sun
-										i(96986), -- Abandoned Spaulders of Arrowflight
-										i(96987), -- Abandoned Spaulders of Renewal
-										i(96990), -- Reconstructed Bloody Shoulderplates
-										i(96989), -- Reconstructed Furious Shoulderplates
-										i(96988), -- Reconstructed Holy Shoulderplates
-										i(96993), -- Bo-Ris, Horror in the Night
-										i(96978), -- Darkwood Spiritstaff
-										i(96992), -- Do-tharak, the Swordbreaker
-										i(96976), -- Fyn's Flickering Dagger
-										i(96991), -- Greatsword of Frozen Hells
-										i(96974), -- Invocation of the Dawn
-										i(96983), -- Jerthud, Graceful Hand of the Savior
-										i(96975), -- Miracoran, the Vehement Chord
-										i(96982), -- Nadagast's Exsanguinator
-										i(97130), -- Tia-Tia, the Scything Star
-										i(96977), -- Zeeg's Ancient Kegsmasher
-										i(96994), -- Visage of the Doomed
-									}),	
-									i(96607), -- Lost Shoulders of Fire	
-									i(96609), -- Lost Shoulders of Fluidity	
-									i(96608), -- Lost Shoulders of Healing	
-									i(96612), -- Forgotten Mantle of the Moon	
-									i(96613), -- Forgotten Mantle of the Sun	
-									i(96614), -- Abandoned Spaulders of Arrowflight	
-									i(96615), -- Abandoned Spaulders of Renewal	
-									i(96618), -- Reconstructed Bloody Shoulderplates	
-									i(96617), -- Reconstructed Furious Shoulderplates	
-									i(96616), -- Reconstructed Holy Shoulderplates	
-									i(96621), -- Bo-Ris, Horror in the Night	
-									i(96606), -- Darkwood Spiritstaff	
-									i(96620), -- Do-tharak, the Swordbreaker	
-									i(96604), -- Fyn's Flickering Dagger	
-									i(96619), -- Greatsword of Frozen Hells	
-									i(96602), -- Invocation of the Dawn	
-									i(96611), -- Jerthud, Graceful Hand of the Savior	
-									i(96603), -- Miracoran, the Vehement Chord	
-									i(96610), -- Nadagast's Exsanguinator	
-									i(97127), -- Tia-Tia, the Scything Star	
-									i(96605), -- Zeeg's Ancient Kegsmasher	
-									i(96622), -- Visage of the Doomed
+									n(-355, {	-- Thunderforged
+										i(96249),	-- Bo-Ris, Horror in the Night
+										i(96234),	-- Darkwood Spiritstaff
+										i(96247),	-- Greatsword of Frozen Hells
+										i(96230),	-- Invocation of the Dawn
+										i(96248),	-- Do-tharak, the Swordbreaker
+										i(96232),	-- Fyn's Flickering Dagger
+										i(96239),	-- Jerthud, Graceful Hand of the Savior
+										i(96238),	-- Nadagast's Exsanguinator
+										i(97128),	-- Tia-Tia, the Scything Star
+										i(96233),	-- Zeeg's Ancient Kegsmasher
+										i(96231),	-- Miracoran, the Vehement Chord
+										i(96250),	-- Visage of the Doomed
+										i(96242),	-- Abandoned Spaulders of Arrowflight
+										i(96243),	-- Abandoned Spaulders of Renewal
+										i(96240),	-- Forgotten Mantle of the Moon
+										i(96241),	-- Forgotten Mantle of the Sun
+										i(96235),	-- Lost Shoulders of Fire
+										i(96237),	-- Lost Shoulders of Fluidity
+										i(96236),	-- Lost Shoulders of Healing
+										i(96246),	-- Reconstructed Bloody Shoulderplates
+										i(96245),	-- Reconstructed Furious Shoulderplates
+										i(96244),	-- Reconstructed Holy Shoulderplates
+									}),
+									i(95498),	-- Bo-Ris, Horror in the Night
+									i(95507),	-- Darkwood Spiritstaff
+									i(95505),	-- Greatsword of Frozen Hells
+									i(95499),	-- Invocation of the Dawn
+									i(95502),	-- Do-tharak, the Swordbreaker
+									i(95501),	-- Fyn's Flickering Dagger
+									i(95500),	-- Jerthud, Graceful Hand of the Savior
+									i(95506),	-- Nadagast's Exsanguinator
+									i(97126),	-- Tia-Tia, the Scything Star
+									i(95504),	-- Zeeg's Ancient Kegsmasher
+									i(95503),	-- Miracoran, the Vehement Chord
+									i(95516),	-- Visage of the Doomed
+									i(95060),	-- Abandoned Spaulders of Arrowflight
+									i(95064),	-- Abandoned Spaulders of Renewal
+									i(95065),	-- Forgotten Mantle of the Moon
+									i(95062),	-- Forgotten Mantle of the Sun
+									i(95061),	-- Lost Shoulders of Fire
+									i(95067),	-- Lost Shoulders of Fluidity
+									i(95066),	-- Lost Shoulders of Healing
+									i(95068),	-- Reconstructed Bloody Shoulderplates
+									i(95063),	-- Reconstructed Furious Shoulderplates
+									i(95069),	-- Reconstructed Holy Shoulderplates
 								},
 								["description"] = "Don't be confused by the name, these are the rarest items in the zone and can drop from any of the bosses other than Ra-den.",
 								["crs"] = {
@@ -1462,52 +1462,52 @@ _.Instances =
 							}),
 							n(-1, {	-- Common Boss Drops
 								["groups"] = {
-									n(-355, {	-- Thunderforged
-										i(96249),	-- Bo-Ris, Horror in the Night
-										i(96234),	-- Darkwood Spiritstaff
-										i(96247),	-- Greatsword of Frozen Hells
-										i(96230),	-- Invocation of the Dawn
-										i(96248),	-- Do-tharak, the Swordbreaker
-										i(96232),	-- Fyn's Flickering Dagger
-										i(96239),	-- Jerthud, Graceful Hand of the Savior
-										i(96238),	-- Nadagast's Exsanguinator
-										i(97128),	-- Tia-Tia, the Scything Star
-										i(96233),	-- Zeeg's Ancient Kegsmasher
-										i(96231),	-- Miracoran, the Vehement Chord
-										i(96250),	-- Visage of the Doomed
-										i(96242),	-- Abandoned Spaulders of Arrowflight
-										i(96243),	-- Abandoned Spaulders of Renewal
-										i(96240),	-- Forgotten Mantle of the Moon
-										i(96241),	-- Forgotten Mantle of the Sun
-										i(96235),	-- Lost Shoulders of Fire
-										i(96237),	-- Lost Shoulders of Fluidity
-										i(96236),	-- Lost Shoulders of Healing
-										i(96246),	-- Reconstructed Bloody Shoulderplates
-										i(96245),	-- Reconstructed Furious Shoulderplates
-										i(96244),	-- Reconstructed Holy Shoulderplates
-									}),
-									i(95498),	-- Bo-Ris, Horror in the Night
-									i(95507),	-- Darkwood Spiritstaff
-									i(95505),	-- Greatsword of Frozen Hells
-									i(95499),	-- Invocation of the Dawn
-									i(95502),	-- Do-tharak, the Swordbreaker
-									i(95501),	-- Fyn's Flickering Dagger
-									i(95500),	-- Jerthud, Graceful Hand of the Savior
-									i(95506),	-- Nadagast's Exsanguinator
-									i(97126),	-- Tia-Tia, the Scything Star
-									i(95504),	-- Zeeg's Ancient Kegsmasher
-									i(95503),	-- Miracoran, the Vehement Chord
-									i(95516),	-- Visage of the Doomed
-									i(95060),	-- Abandoned Spaulders of Arrowflight
-									i(95064),	-- Abandoned Spaulders of Renewal
-									i(95065),	-- Forgotten Mantle of the Moon
-									i(95062),	-- Forgotten Mantle of the Sun
-									i(95061),	-- Lost Shoulders of Fire
-									i(95067),	-- Lost Shoulders of Fluidity
-									i(95066),	-- Lost Shoulders of Healing
-									i(95068),	-- Reconstructed Bloody Shoulderplates
-									i(95063),	-- Reconstructed Furious Shoulderplates
-									i(95069),	-- Reconstructed Holy Shoulderplates
+									n(-355, { -- Thunderforged
+										i(96979), -- Lost Shoulders of Fire
+										i(96981), -- Lost Shoulders of Fluidity
+										i(96980), -- Lost Shoulders of Healing
+										i(96984), -- Forgotten Mantle of the Moon
+										i(96985), -- Forgotten Mantle of the Sun
+										i(96986), -- Abandoned Spaulders of Arrowflight
+										i(96987), -- Abandoned Spaulders of Renewal
+										i(96990), -- Reconstructed Bloody Shoulderplates
+										i(96989), -- Reconstructed Furious Shoulderplates
+										i(96988), -- Reconstructed Holy Shoulderplates
+										i(96993), -- Bo-Ris, Horror in the Night
+										i(96978), -- Darkwood Spiritstaff
+										i(96992), -- Do-tharak, the Swordbreaker
+										i(96976), -- Fyn's Flickering Dagger
+										i(96991), -- Greatsword of Frozen Hells
+										i(96974), -- Invocation of the Dawn
+										i(96983), -- Jerthud, Graceful Hand of the Savior
+										i(96975), -- Miracoran, the Vehement Chord
+										i(96982), -- Nadagast's Exsanguinator
+										i(97130), -- Tia-Tia, the Scything Star
+										i(96977), -- Zeeg's Ancient Kegsmasher
+										i(96994), -- Visage of the Doomed
+									}),	
+									i(96607), -- Lost Shoulders of Fire	
+									i(96609), -- Lost Shoulders of Fluidity	
+									i(96608), -- Lost Shoulders of Healing	
+									i(96612), -- Forgotten Mantle of the Moon	
+									i(96613), -- Forgotten Mantle of the Sun	
+									i(96614), -- Abandoned Spaulders of Arrowflight	
+									i(96615), -- Abandoned Spaulders of Renewal	
+									i(96618), -- Reconstructed Bloody Shoulderplates	
+									i(96617), -- Reconstructed Furious Shoulderplates	
+									i(96616), -- Reconstructed Holy Shoulderplates	
+									i(96621), -- Bo-Ris, Horror in the Night	
+									i(96606), -- Darkwood Spiritstaff	
+									i(96620), -- Do-tharak, the Swordbreaker	
+									i(96604), -- Fyn's Flickering Dagger	
+									i(96619), -- Greatsword of Frozen Hells	
+									i(96602), -- Invocation of the Dawn	
+									i(96611), -- Jerthud, Graceful Hand of the Savior	
+									i(96603), -- Miracoran, the Vehement Chord	
+									i(96610), -- Nadagast's Exsanguinator	
+									i(97127), -- Tia-Tia, the Scything Star	
+									i(96605), -- Zeeg's Ancient Kegsmasher	
+									i(96622), -- Visage of the Doomed
 								},
 								["description"] = "Don't be confused by the name, these are the rarest items in the zone and can drop from any of the bosses other than Ra-den.",
 								["crs"] = {
