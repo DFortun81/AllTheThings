@@ -1038,6 +1038,11 @@ _.Instances =
 								i(112913),	-- Skeer's Bloodsoaked Talisman
 							})),
 							cr(71865, e(869, {	-- Garrosh Hellscream
+								i(112935, { -- Tusks of Mannoroth [Normal]
+									["groups"] = {
+									},
+									["description"] = "|CFFFF0000If you had this item drop in SoO Normal please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well.",
+								}),
 								i(105864),	-- Essence of the Cursed Conqueror
 								i(105863),	-- Essence of the Cursed Protector
 								i(105865),	-- Essence of the Cursed Vanquisher
