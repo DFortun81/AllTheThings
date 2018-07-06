@@ -447,6 +447,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactmaw_d_03.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 6 },
 								}),
 								i(128832, { -- Aldrachi Warblades [Main Hand]
 									["groups"] = {
@@ -456,6 +457,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_06right.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 12 },
 								}),
 								i(128831, { -- Aldrachi Warblades [Off Hand]
 									["groups"] = {
@@ -465,26 +467,31 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_06right.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 12 },
 								}),
 								i(128821, { -- Claws of Ursoc [Main Hand]
 									["groups"] = {
 										artifact(990),
 									},
 									["ignoreSource"] = true,
+									["classes"] = { 11 },
 								}),
 								i(128822, { -- Claws of Ursoc [Offhand]
 									["groups"] = {
 										artifact(990),
 									},
 									["ignoreSource"] = true,
+									["classes"] = { 11 },
 								}),
 								i(128938, { -- Fu Zan, the Wanderer's Companion
 									["groups"] = {
 										artifact(352),
 									},
-									["ignoreSource"] = true,["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_05.mdx",
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 10 },
 								}),
 								i(128866, { -- Truthguard
 									["groups"] = {
@@ -494,15 +501,17 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactnorgannon_d_04.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 2 },
 								}),
 								i(128867, { -- Oathseeker
 									["groups"] = {
 										artifact(718),
-										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactnorgannon_d_04.mdx",
-										["modelScale"] = 0.95,
-										["modelRotation"] = 45,
 									},
 									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactnorgannon_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+									["classes"] = { 2 },
 								}),
 								i(128289, { -- Scale of the Earth-Warder
 									["groups"] = {
@@ -512,6 +521,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactmagnar_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 1 },
 								}),
 								i(128288, { -- Scaleshard
 									["groups"] = {
@@ -521,15 +531,16 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactmagnar_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 1 },
 								}),
 							},
 							["classes"] = {
-								11, -- Blood Death Knight
-								10, -- Vengeance Demon Hunter
-								12, -- Guardian Druid
-								2, -- Brewmaster Monk
-								1, -- Protection Paladin 
-								6, -- Protection Warrior
+								6, -- Blood Death Knight
+								12, -- Vengeance Demon Hunter
+								11, -- Guardian Druid
+								10, -- Brewmaster Monk
+								2, -- Protection Paladin 
+								1, -- Protection Warrior
 							},
 						}),
 						q(46127, { -- Thwarting the Twins
