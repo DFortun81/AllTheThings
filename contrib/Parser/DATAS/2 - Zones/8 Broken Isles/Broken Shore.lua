@@ -134,6 +134,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_03.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 6 },
 								}),
 								i(128293, { -- Blades of the Fallen Prince [Off Hand]
 									["groups"] = {
@@ -143,6 +144,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_03.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 6 },
 								}),
 								i(127829, { -- Twinblades of the Deceiver [Main Hand]
 									["groups"] = {
@@ -152,6 +154,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_04.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 12 },
 								}),
 								i(127830, { -- Twinblades of the Deceiver [Off Hand]
 									["groups"] = {
@@ -161,6 +164,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_04.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 12 },
 								}),
 								i(128808, { -- Talonclaw
 									["groups"] = {
@@ -170,6 +174,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_polearm_2h_artifacteagle_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 3 },
 								}),
 								i(128476, { -- Fangs of the Devourer [Main Hand]
 									["groups"] = {
@@ -179,6 +184,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 4 },
 								}),
 								i(128479, { -- Fangs of the Devourer [Off Hand]
 									["groups"] = {
@@ -188,6 +194,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_01.mdx",
 									["modelScale"] = 0.5,
 									["modelRotation"] = 45,
+									["classes"] = { 4 },
 								}),
 								i(128910, { -- Strom'kar, the Warbreaker
 									["groups"] = {
@@ -197,6 +204,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactarathor_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 1 },
 								}),
 							},
 							["classes"] = {
