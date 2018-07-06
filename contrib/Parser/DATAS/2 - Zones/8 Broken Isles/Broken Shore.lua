@@ -249,7 +249,7 @@ _.Zones =
 								}),
 								i(128825, { -- T'uure, Beacon of the Naaru
 									["groups"] = {
-										artifact(),
+										artifact(758),
 									},
 									["ignoreSource"] = true,
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactheartofkure_d_04.mdx",
