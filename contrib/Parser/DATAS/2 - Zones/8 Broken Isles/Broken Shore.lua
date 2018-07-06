@@ -19,12 +19,18 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(128860, { -- Fangs of Ashamane [Main Hand]
 									["groups"] = {
-										artifact(),
+										artifact(435),
 									},
 									["ignoreSource"] = true,
-								--]]
+								}),
+								i(128859, { -- Fangs of Ashamane [Off Hand]
+									["groups"] = {
+										artifact(435),
+									},
+									["ignoreSource"] = true,
+								}),
 								i(128820, { -- Felo'melorn [Main Hand]
 									["groups"] = {
 										artifact(489),
@@ -127,12 +133,24 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(127829, { -- Twinblades of the Deceiver [Main Hand]
 									["groups"] = {
-										artifact(),
+										artifact(39),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(127830, { -- Twinblades of the Deceiver [Off Hand]
+									["groups"] = {
+										artifact(39),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								i(128808, { -- Talonclaw
 									["groups"] = {
 										artifact(973),
@@ -180,12 +198,15 @@ _.Zones =
 						}),
 						q(46035, { -- End of the Risen Threat
 							["groups"] = {
-								--[[
+								i(128306, { -- G'Hanir, the Mother Tree
 									["groups"] = {
-										artifact(),
+										artifact(875),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactnordrassil_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								i(128823, { -- The Silver Hand
 									["groups"] = {
 										artifact(584),
@@ -195,12 +216,15 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(128937, { -- Sheilun, Staff of the Mists
 									["groups"] = {
-										artifact(),
+										artifact(933),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactshaohao_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								i(128825, { -- T'uure, Beacon of the Naaru
 									["groups"] = {
 										artifact(),
@@ -248,24 +272,39 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(128940, { -- Fists of the Heavens [Main Hand]
 									["groups"] = {
-										artifact(),
+										artifact(941),
 									},
 									["ignoreSource"] = true,
-								--]]
-								--[[
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(133948, { -- Fists of the Heavens [Off Hand]
 									["groups"] = {
-										artifact(),
+										artifact(941),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								i(128868, { -- Light's Wrath			
 									["groups"] = {
 										artifact(956),
 									},
 									["ignoreSource"] = true,
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifacttome_d_04.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128941, { -- Scepter of Sargeras			
+									["groups"] = {
+										artifact(915),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactsargeras_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
@@ -333,12 +372,24 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(128943, { -- Skull of the Man'ari
 									["groups"] = {
-										artifact(),
+										artifact(828),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(137246, { -- Spine of Thal'kiel
+									["groups"] = {
+										artifact(828),
+									},
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 							},
 							["classes"] = {
 								8, -- Arcane Mage
@@ -359,24 +410,44 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(128832, { -- Aldrachi Warblades [Main Hand]
 									["groups"] = {
-										artifact(),
+										artifact(857),
 									},
 									["ignoreSource"] = true,
-								--]]
-								--[[
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_06right.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128831, { -- Aldrachi Warblades [Off Hand]
 									["groups"] = {
-										artifact(),
+										artifact(857),
 									},
 									["ignoreSource"] = true,
-								--]]
-								--[[
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_06right.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
+								i(128821, { -- Claws of Ursoc [Main Hand]
 									["groups"] = {
-										artifact(),
+										artifact(990),
 									},
 									["ignoreSource"] = true,
-								--]]
+								}),
+								i(128822, { -- Claws of Ursoc [Offhand]
+									["groups"] = {
+										artifact(990),
+									},
+									["ignoreSource"] = true,
+								}),
+								i(128938, { -- Fu Zan, the Wanderer's Companion
+									["groups"] = {
+										artifact(352),
+									},
+									["ignoreSource"] = true,["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 								i(128866, { -- Truthguard
 									["groups"] = {
 										artifact(718),
@@ -467,12 +538,15 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 								}),
-								--[[
+								i(128942, { -- Ulthalesh, the Deadwind Harvester
 									["groups"] = {
-										artifact(),
+										artifact(972),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactdeadwind_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+								}),
 							},
 							["classes"] = {
 								11, -- Balance Druid
