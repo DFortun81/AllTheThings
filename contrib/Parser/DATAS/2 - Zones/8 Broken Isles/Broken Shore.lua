@@ -18,18 +18,21 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactsoulrend_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 6 },
 								}),
 								i(128860, { -- Fangs of Ashamane [Main Hand]
 									["groups"] = {
 										artifact(435),
 									},
 									["ignoreSource"] = true,
+									["classes"] = { 11 },
 								}),
 								i(128859, { -- Fangs of Ashamane [Off Hand]
 									["groups"] = {
 										artifact(435),
 									},
 									["ignoreSource"] = true,
+									["classes"] = { 11 },
 								}),
 								i(128820, { -- Felo'melorn [Main Hand]
 									["groups"] = {
@@ -39,6 +42,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 8 },
 								}),
 								i(133959, { -- Heart of the Phoenix [Off Hand]
 									["groups"] = {
@@ -48,6 +52,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 8 },
 								}),
 								i(128872, { -- The Dreadblades [Main Hand]
 									["groups"] = {
@@ -57,6 +62,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_03.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 4 },
 								}),
 								i(134552, { -- The Dreadblades [Off Hand]
 									["groups"] = {
@@ -66,6 +72,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_01.mdx",
 									["modelScale"] = 0.5,
 									["modelRotation"] = 45,
+									["classes"] = { 4 },
 								}),
 								i(128935, { -- The Fist of Ra-den [Main Hand]
 									["groups"] = {
@@ -75,6 +82,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_04.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 7 },
 								}),
 								i(128936, { -- The Highkeeper's Ward [Off Hand]
 									["groups"] = {
@@ -84,6 +92,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_04.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 7 },
 								}),	
 								i(128908, { -- Warswords of the Valarjar [Main Hand]
 									["groups"] = {
@@ -93,6 +102,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_04.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 1 },
 								}),
 								i(134553, { -- Warswords of the Valarjar [Off Hand]
 									["groups"] = {
@@ -102,6 +112,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_04.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 1 },
 								}),
 							},
 							["classes"] = {
@@ -496,12 +507,16 @@ _.Zones =
 						}),
 						q(46127, { -- Thwarting the Twins
 							["groups"] = {
-								--[[
+								i(128858, { -- Scythe of Elune
 									["groups"] = {
-										artifact(),
+										artifact(929),
 									},
 									["ignoreSource"] = true,
-								--]]
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactelune_d_06.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+									["classes"] = { 11 },
+								}),
 								i(128826, { -- Thas'dorah, Legacy of the Windrunners
 									["groups"] = {
 										artifact(965),
@@ -510,6 +525,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_bow_1h_artifactwindrunner_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 3 },
 								}),
 								i(128862, { -- Ebonchill
 									["groups"] = {
@@ -519,6 +535,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactantonidas_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 8 },
 								}),
 								i(128827, { -- Xal'atath, Blade of the Black Empire
 									["groups"] = {
@@ -528,6 +545,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 5 },
 								}),
 								i(133958, { -- Secrets of the Void
 									["groups"] = {
@@ -537,6 +555,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_05.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 5 },
 								}),
 								i(128942, { -- Ulthalesh, the Deadwind Harvester
 									["groups"] = {
@@ -546,6 +565,7 @@ _.Zones =
 									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactdeadwind_d_06.mdx",
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
+									["classes"] = { 9 },
 								}),
 							},
 							["classes"] = {
