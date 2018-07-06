@@ -594,7 +594,7 @@ _.Zones =
 								q(11237, {	--  Gjalerbron Attack Plans [A]
 									["groups"] = {
 									},
-									["qg"] = {23991,23990,23989,24014},
+									["qgs"] = {23991,23990,23989,24014},
 								}),
 							}),
 							q(11238, {	--  The Frost Wyrm and its Master [A]
