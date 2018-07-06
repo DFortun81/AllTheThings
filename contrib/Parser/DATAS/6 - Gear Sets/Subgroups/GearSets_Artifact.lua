@@ -2660,10 +2660,10 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(885), -- Complete Legionfall: Mage Tower
-								artifact(886), -- Defeat Heroic Kil'jaeden with appearance
-								artifact(887), -- Win 10 Rated BG's with appearance
-								artifact(888), -- Defeat all Legion dungeon bosses with appearance
+									artifact(885), -- Complete Legionfall: Mage Tower
+									artifact(886), -- Defeat Heroic Kil'jaeden with appearance
+									artifact(887), -- Win 10 Rated BG's with appearance
+									artifact(888), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
 							n(-5205, { -- Hidden Artifact Skin Line
@@ -2740,10 +2740,10 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(489), -- Complete Legionfall: Mage Tower
-								artifact(502), -- Defeat Heroic Kil'jaeden with appearance
-								artifact(503), -- Win 10 Rated BG's with appearance
-								artifact(504), -- Defeat all Legion dungeon bosses with appearance
+									artifact(489), -- Complete Legionfall: Mage Tower
+									artifact(502), -- Defeat Heroic Kil'jaeden with appearance
+									artifact(503), -- Win 10 Rated BG's with appearance
+									artifact(504), -- Defeat all Legion dungeon bosses with appearance
 								}
 							}),
 							n(-5205, { -- Hidden Artifact Skin Line
