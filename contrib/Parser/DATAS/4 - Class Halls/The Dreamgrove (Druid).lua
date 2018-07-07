@@ -168,7 +168,14 @@ _.ClassHalls =
 				q(41413),	-- What Could Go Wrong?
 				q(45179),	-- Win the Crowd
 				q(40652),	-- Word on the Winds									
-				--[[
+				q(40647),	-- When Dreams Become Nightmares
+				q(41782),	-- To The Hills
+				q(41783),	-- Fallen Offerings
+				q(41790),	-- The First Trial of Ursol
+				q(41791),	-- The Second Trial of Ursol
+				q(41792),	-- The Third Trial of Ursol
+				q(41918),	-- The Dreamer Returns
+			--[[
 				q(46319, { -- You Can't Take the Sky from Me
 					["groups"] = {
 						{ ["itemID"] = 143638, ["mountID"] = 231437, ["questID"] = 46319 }, -- Moon-Kissed Feather
