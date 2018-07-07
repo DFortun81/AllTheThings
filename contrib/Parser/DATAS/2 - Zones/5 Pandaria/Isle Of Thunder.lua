@@ -371,22 +371,22 @@ _.Zones =
 						i(97191),	-- Ancient Overlord's Onyx Band
 						i(97189),	-- Ancient Primalist's Seal
 						i(95532),	-- Belt of Loa Charms
-						i(95521),	-- Cinch of the Dead Forest's Vigil
-						i(97212),	-- Cloak of the Immortal Guardian
-						i(95520),	-- Girdle of Shan'ze Glory
+						i(95530),	-- Cinch of the Dead Forest's Vigil
+						i(97207),	-- Cloak of the Immortal Guardian
+						i(95529),	-- Girdle of Shan'ze Glory
 						i(95527),	-- Pain-Binder Girdle
 						i(97187),	-- Refurbished Band of Jin
 						i(97190),	-- Refurbished Seal of Jin
 						i(97188),	-- Restored Hexxer's Signet
 						i(95531),	-- Rotting Bog Cinch
-						i(97210),	-- Shan'ze Gravetender Cloak
-						i(97211),	-- Shan'ze Partisan's Greatcloak
+						i(97205),	-- Shan'ze Gravetender Cloak
+						i(97206),	-- Shan'ze Partisan's Greatcloak
 						i(95526),	-- Shan'ze Scholar's Girdle
 						i(95534),	-- Skumblade Ritualist Links
-						i(95519),	-- Skumblade-Tooth Girdle
-						i(97209),	-- Static-Collecting Cloak
-						i(95524),	-- Thunder Caressed Waistguard
-						i(97208),	-- Thunder-Chaser Cloak
+						i(95528),	-- Skumblade-Tooth Girdle
+						i(97204),	-- Static-Collecting Cloak
+						i(95533),	-- Thunder Caressed Waistguard
+						i(97203),	-- Thunder-Chaser Cloak
 					})),
 					n(70535, {	-- Teng of the Flying Daggers <Shado-Pan Assault Quartermaster>
 						i(96569),	-- Breastplate of the All-Consuming Maw
@@ -801,20 +801,25 @@ _.Zones =
 						i(95565),	-- Reins of the Crimson Primal Direhorn Mount
 						i(95592),	-- Sunreaver Onslaught Tabard
 						i(95568),	-- Sunreaver Beacon Toy
-						i(97212),	-- Cloak of the Immortal Guardian
-						i(97211),	-- Shan'ze Partisan's Greatcloak
-						i(97210),	-- Shan'ze Gravetender Cloak
-						i(97209),	-- Static-Collecting Cloak
-						i(97208),	-- Thunder-Chaser Cloak
+						i(97196),	-- Ancient Overlord's Onyx Band
+						i(97194),	-- Ancient Primalist's Seal
 						i(95523),	-- Belt of Loa Charms
-						i(95518),	-- Pain-Binder Girdle
-						i(95517),	-- Shan'ze Scholar's Girdle
 						i(95521),	-- Cinch of the Dead Forest's Vigil
-						i(95519),	-- Skumblade-Tooth Girdle
-						i(95522),	-- Rotting Bog Cinch
-						i(95525),	-- Skumblade Ritualist Links
+						i(97212),	-- Cloak of the Immortal Guardian
 						i(95520),	-- Girdle of Shan'ze Glory
+						i(95518),	-- Pain-Binder Girdle
+						i(97192),	-- Refurbished Band of Jin
+						i(97195),	-- Refurbished Seal of Jin
+						i(97193),	-- Restored Hexxer's Signet
+						i(95522),	-- Rotting Bog Cinch
+						i(97210),	-- Shan'ze Gravetender Cloak
+						i(97211),	-- Shan'ze Partisan's Greatcloak
+						i(95517),	-- Shan'ze Scholar's Girdle
+						i(95525),	-- Skumblade Ritualist Links
+						i(95519),	-- Skumblade-Tooth Girdle
+						i(97209),	-- Static-Collecting Cloak
 						i(95524),	-- Thunder Caressed Waistguard
+						i(97208),	-- Thunder-Chaser Cloak
 					})),
 				}),
 				n(-38, { -- Profession
