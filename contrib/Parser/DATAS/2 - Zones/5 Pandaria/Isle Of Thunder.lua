@@ -378,11 +378,11 @@ _.Zones =
 						i(97187),	-- Refurbished Band of Jin
 						i(97190),	-- Refurbished Seal of Jin
 						i(97188),	-- Restored Hexxer's Signet
-						i(95522),	-- Rotting Bog Cinch
+						i(95531),	-- Rotting Bog Cinch
 						i(97210),	-- Shan'ze Gravetender Cloak
 						i(97211),	-- Shan'ze Partisan's Greatcloak
 						i(95526),	-- Shan'ze Scholar's Girdle
-						i(95525),	-- Skumblade Ritualist Links
+						i(95534),	-- Skumblade Ritualist Links
 						i(95519),	-- Skumblade-Tooth Girdle
 						i(97209),	-- Static-Collecting Cloak
 						i(95524),	-- Thunder Caressed Waistguard
