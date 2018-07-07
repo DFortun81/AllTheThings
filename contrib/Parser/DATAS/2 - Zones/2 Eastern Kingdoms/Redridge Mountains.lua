@@ -6,17 +6,6 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(36, {		-- Redridge Mountains
 			["groups"] = {							
-				n( -3, {	-- Holidays										
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(12342),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),
-				}),								
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(395), 	-- Fledgling Buzzard

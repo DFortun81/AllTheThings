@@ -43,40 +43,6 @@ _.Zones =
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
 					}),
-					n(-52, {		-- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(14450, qa( 1468)), 	-- Children's Week
-								qg(14305, qa(29093)),	-- Cruisin' the Chasm
-								qg(14305, qa(29107)),	-- Malfurion has Returned!
-								qg(14305, qa(29106)),	-- The Biggest Diamond Ever!
-								qg(14305, qa(29119)),	-- You Scream, I Scream...
-								qg(14305, qa(29117)),	-- Let's Go Fly a Kite
-								qg(14305, qa(171, {	-- A Warden of the Alliance
-									un(20, i(23007)),	-- Piglet's Collar
-									un(20, i(23015)),	-- Rat Cage
-									un(20, i(23002)),	-- Turtle Box
-									un(20, i(66073)),	-- Snail Shell
-								})),
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),
-					n(-53, { 		-- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(16817, qa( 11964)),	-- Incense for the Summer Scorchlings
-								{
-									["questID"] = 9330, -- Stealing Stormwind's Flame
-									["itemID"] = 23182, -- Flame of Stormwind
-									["races"] = HORDE_ONLY,
-								},
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
-					}),
 					n(-63, { 		-- Trial of Style
 						["groups"] = {
 							n(54442, { -- Warpweaver Hashom (Alliance / Stormwind)

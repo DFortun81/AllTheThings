@@ -6,17 +6,7 @@ _.Zones =
 	m(14, { 	-- Eastern Kingdoms
 		m(24, {		-- Hillsbrad Foothills
 			["groups"] = {				
-				n( -3, {	-- Holidays					
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qh(12376),	-- Candy Bucket
-								qh(28962),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),
+				n( -3, {	-- Holidays
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests

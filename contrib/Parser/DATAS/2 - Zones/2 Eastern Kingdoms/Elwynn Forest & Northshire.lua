@@ -1,6 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
+--[[
+qa(11242),	-- Free at Last! (LEGACY???)
+Note: This quest seemingly isn't available any longer. Some claim that the NPC still spawns, but doesn't offer any quests.
+]]--
 _.Zones =
 {
 	m(14, { 	-- Eastern Kingdoms
@@ -76,17 +81,7 @@ _.Zones =
 						},
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
-					}),
---[[
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),
---]]						
+					}),				
 --[[					
 					n(-56, {     -- Brewfest
 						["groups"] = {
@@ -97,53 +92,6 @@ _.Zones =
 						["u"] = 24,
 					}),
 --]]					
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-4, { -- Achievements
-								ach(1656, { -- Hallowed Be Thy Name
-									ach(292, { -- Sinister Calling
-										i(33154), -- Sinister Squashling
-										i(33292), -- Hallowed Helm
-									}),
-								}),
-							}),
-							n(-17, { 	-- Quests
-								qg(51665, qa(29075)),	-- A Time to Gain
-								qg(52064, qa(29371)),	-- A Time to Lose
-								qa(12286),	-- Candy Bucket
-								qg(51934, qa(29144)),	-- Clean Up in Stormwind
-								qg(24519, qa(11440)),	-- Fire Brigade Practice (unsure why there are three of these - may be one/zone but wowhead lists all three quests in all three zones)
-								qg(24519, qa(11439)),	-- Fire Brigade Practice
-								qg(24519, qa(11360)),	-- Fire Brigade Practice
---								qa(11242),	-- Free at Last! (LEGACY???)
-								qg(15310, qa( 8311)),	-- Hallow's End Treats for Jesper!
-								qg(24519, qa(12135)),	-- "Let the Fires Come!"
-								o(186887, {	-- Large Jack-o'-Lantern
-									qa(12133),	-- Smash the Pumpkin
-									qh(12155),	-- Smash the Pumpkin
-								}),
-								qg(51934, qa(29054)),	-- Stink Bombs Away!
-								qg(24519, qa(11131)),	-- Stop the Fires!
-							}),
-							n(-2, { -- Vendors
-								a(n(53728, { -- Dorothy <Candy & Toy Vendor>
-									i(151271), -- Horse Head Costume
-									i(151270), -- Horse Tail Costume
-									i(70722), -- Little Wickerman
-									i(33292), -- Hallowed Helm
-								})),
-								a(n(109685, { -- Pippi <Pet Vendor>
-									i(116801),	-- Cursed Birman
-									i(70908),	-- Feline Familiar
-									i(151269),	-- Naxxy
-									i(33154),	-- Sinister Squashling
-									i(116804),	-- Widget the Departed
-								})),
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),						
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests

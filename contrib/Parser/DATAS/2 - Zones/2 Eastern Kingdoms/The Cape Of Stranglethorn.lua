@@ -47,36 +47,6 @@ _.Zones =
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
 					}),
---[[					
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),	
---]]					
-					n(-55, { 	-- Pirate's Day
-						["groups"] = {
-							n(122396, { -- Edward Techt
-								["groups"] =  {
-									ach(871, { -- Avast Ye, Admiral!
-										i(150547), -- Jolly Roger Toy
-									}),
-								},
-								["description"] = "Purchasing the toy |cFFFFD700Jolly Roger|r requires you to have the achievement |cFFFFD700Avast Ye, Admiral|r.  He is located at |cFFFFFFFF39.67 84.29|r in |cFFFFD700The Cape of Stranglethorn|r",
-							}),
-							n(108715, {  -- Ol' Eary
-								["groups"] = {
-									i(138415), -- Slightly-Chewed Insult Book
-								},
-								["displayID"] = 70668,
-							}),
-						},
-						["achievementID"] = 3457, -- The Captain's Booty
-						["u"] = 23,
-					}),
 					
 --[[					
 					n(-56, {     -- Brewfest
@@ -87,14 +57,6 @@ _.Zones =
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests

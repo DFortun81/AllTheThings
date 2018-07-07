@@ -75,24 +75,6 @@ _.Zones =
 						},
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
-					}),										
-					n(-53, {     -- Midsummer Fire Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(16817, qa( 11964)),	-- Incense for the Summer Scorchlings
-								{
-									["questID"] = 9331, -- Stealing Ironforge's Flame
-									["itemID"] = 23183, -- Flame of Ironforge
-									["races"] = HORDE_ONLY,
-								},
-								qg(19148, qa(11970)),	-- The Master of Summer Lore (add'l QG 19172)
-								qg(25975, qa(11657)),	-- Torch Catching
-								qg(25975, qa(11731)),	-- Torch Tossing
-								qg(26221, q(11886)),	-- Unusual Activity
-							}),
-						},
-						["achievementID"] = 1038, -- The Flame Warden
-						["u"] = 21,
 					}),
 --]]
 					n(-56, {     -- Brewfest
@@ -131,20 +113,7 @@ _.Zones =
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),
---[[					
-					n(-58, {	-- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(19148, qa(29074)),	-- A Season for Celebration (add'l QG 19172)
-								qa(12335),	-- Candy Bucket
-								qg(5111, qa( 8353)),	-- Chicken Clucking for a Mint
-								qg(19148, qa(11356)),	-- Costumed Orphan Matron (add'l QG 19172)
-								qg(6826, qa( 8355)),	-- Incoming Gumdrop								
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),
+--[[
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests

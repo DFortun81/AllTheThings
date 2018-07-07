@@ -62,17 +62,7 @@ _.Zones =
 						},
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
-					}),
---[[
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),
---]]										
+					}),									
 					n(-56, {     -- Brewfest
 						["groups"] = {
 							n(-4, { -- Achievement
@@ -187,26 +177,7 @@ _.Zones =
 						},
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
-					}),					
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(12332),	-- Candy Bucket
-								qg(24519, qa(11440)),	-- Fire Brigade Practice (not sure what sets these 3 quests apart)
-								qg(24519, qa(11439)),	-- Fire Brigade Practice
-								qg(24519, qa(11360)),	-- Fire Brigade Practice
-								qg(23904, qa(11242)),	-- Free at Last! (possibly REMOVED)
-								qg(24519, qa(12135)),	-- "Let the Fires Come!"
-								o(186887, {	-- Large Jack-o'-Lantern
-									qa(12133),	-- Smash the Pumpkin
-									qh(12155),	-- Smash the Pumpkin
-								}),
-								qg(24519, qa(11131)),	-- Stop the Fires!
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
+					}),
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests

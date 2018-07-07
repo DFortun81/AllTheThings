@@ -63,17 +63,7 @@ _.Zones =
 						},
 						["achievementID"] = 2798, -- Noble Gardener
 						["u"] = 19,
-					}),
---[[					
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1793, -- For The Children
-						["u"] = 20,
-					}),
---]]					
+					}),				
 --[[					
 					n(-56, {     -- Brewfest
 						["groups"] = {
@@ -83,38 +73,7 @@ _.Zones =
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),
---]]					
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-4, { -- Achievements
-								ach(1656, { -- Hallowed Be Thy Name
-									ach(292, { -- Sinister Calling
-										i(33154), -- Sinister Squashling
-										i(33292), -- Hallowed Helm
-									}),
-								}),
-							}),
---							n(-17, { 	-- Quests
---							}),
-							n(-2, { -- Vendors
-								h(n(53757, { -- Chub <Candy & Toy Vendor>
-									i(151271), -- Horse Head Costume
-									i(151270), -- Horse Tail Costume
-									i(70722), -- Little Wickerman
-									i(33292), -- Hallowed Helm
-								})),
-								h(n(109688, { -- Woim <Pet Vendor>
-									i(116801),	-- Cursed Birman
-									i(70908),	-- Feline Familiar
-									i(151269),	-- Naxxy
-									i(33154),	-- Sinister Squashling
-									i(116804),	-- Widget the Departed
-								})),
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),
+--]]
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-2, {		-- Vendor
