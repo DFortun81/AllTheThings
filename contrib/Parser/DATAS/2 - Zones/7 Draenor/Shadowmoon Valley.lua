@@ -5,34 +5,7 @@ _.Zones =
 {
 	m(962, { 	-- Draenor
 		m(947, { 	-- Shadowmoon Valley
-			["groups"] = {								
-				n(-3, { 	-- Holidays					
-					n(-58, {     -- Hallow's End
-						["groups"] = {
---							n(-17, { 	-- Quests
---							}),
-							n(-16, { 	-- Rares
-								n(96637, { -- Boneship Reveler
-									i(128807), -- Coin of Many Faces
-								}),
-								n(96538, { -- Brackish Cultivator
-									i(128807), -- Coin of Many Faces
-								}),
-								n(96535, { -- Captain Bonerender
-									i(128807), -- Coin of Many Faces
-								}),
-								n(96545, { -- Growing Squashling
-									i(128807), -- Coin of Many Faces
-								}),
-								n(96536, { -- Salty Dreg
-									i(128807), -- Coin of Many Faces
-								}),
-							}),	
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-				}),							
+			["groups"] = {						
 				n(-25, { 	-- Pet Battle
 					p(407), 	-- Forest Spiderling
 					p(1447), 	-- Moonshell Crab

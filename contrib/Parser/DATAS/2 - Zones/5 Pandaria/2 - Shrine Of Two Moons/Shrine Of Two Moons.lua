@@ -143,14 +143,6 @@ _.Zones =
 						["achievementID"] = 1683, -- Brewmaster
 						["u"] = 24,
 					}),
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
 					n(-60, {     -- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
