@@ -125,27 +125,6 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-					-- These are for Midsummer Fire Festival:
-					-- qa( 11766),	-- Desecrate this Fire!
-					-- qa( 11580),	-- Desecrate this Fire!
-					-- qh( 11581),	-- Desecrate this Fire!
-					-- qa( 11732),	-- Desecrate this Fire!
-					-- qa( 11755),	-- Desecrate this Fire!
-					-- qa( 11786),	-- Desecrate this Fire!
-					-- qa( 13451),	-- Desecrate this Fire!
-					-- qh( 11745),	-- Desecrate this Fire!
-					-- qh( 11749),	-- Desecrate this Fire!
-					-- qh( 13443),	-- Desecrate this Fire!
-					-- qa( 13487),	-- Honor the Flame
-					-- qh( 13495),	-- Honor the Flame
-
-					-- These are for Hallow's End:
-					-- qa( 13439),	-- Candy Bucket
-					-- qa( 13438),	-- Candy Bucket
-					-- qh( 13470),	-- Candy Bucket
-					-- q(13456),	-- Candy Bucket
-					-- q(13459),	-- Candy Bucket
-					-- qh( 13469),	-- Candy Bucket
 				}),								
 				n(-25, { 	-- Pet Battle
 					p(641), 	-- Arctic Hare

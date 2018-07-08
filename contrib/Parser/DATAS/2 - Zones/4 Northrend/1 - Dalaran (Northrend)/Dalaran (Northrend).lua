@@ -1535,41 +1535,7 @@ _.Zones =
 						},
 						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
-					}),					
-					n(-52, {     -- Children's Week
-						["groups"] = {
-							n(-17, { 	-- Quests
--- CHILDREN'S WEEK NIGHTMARE - Curious Oracle Hatchling						
-								qg(34365, q(13926)),	-- Little Orphan Roo Of The Oracles
-								qg(33533, q(13929)),	-- The Biggest Tree Ever!
-								qg(33533, q(13933)),	-- The Bronze Dragonshrine
-								qg(33533, q(13950)),	-- Playmates!
-								qg(33533, q(13956)),	-- Meeting a Great One
-								qg(33533, q(13954)),	-- The Dragon Queen
-								qg(33533, q(13937)),	-- A Trip to the WonderworksS
-								qg(33533, q(13959, {	-- Back to the Orphanage
-									i(46545),	-- Curious Oracle Hatchling (mailed to you if not received in a previous year ON YOUR SPECIFIC CHARACTER)
-								})),
-											-- OR, if you received pet ON SPECIFIC CHARACTER in a previous year
-								qg(33533, q(28879)), 	-- Back to the Orphanage
-	-- CHILDREN'S WEEK NIGHTMARE - WOLVAR ORPHAN		
-								qg(34365, q(13927)),	-- Little Orphan Kekek Of The Wolvar
-								qg(33532, q(13930)),	-- Home Of The Bear-Men
-								qg(33532, q(13934)),	-- The Bronze Dragonshrine
-								qg(33532, q(13951)),	-- Playmates!
-								qg(33532, q(13955)),	-- The Dragon Queen
-								qg(33532, q(13957)),	-- The Mighty Hemet Nesingwary
-								qg(33532, q(13938)),	-- A Trip to the WonderworksS
-								qg(33532, q(13960, {	-- Back to the Orphanage
-									i(46544),	-- Curious Wolvar Pup (mailed to you if not received in a previous year ON YOUR SPECIFIC CHARACTER)
-								})),
-											-- OR, if you received pet ON SPECIFIC CHARACTER in a previous year
-								qg(33532, q(28880)), 	-- Back to the Orphanage
-							}),
-						},
-						["achievementID"] = 1793,	-- For The Children
-						["u"] = 20,
-					}),					
+					}),				
 				}),							
 				n(-4, {		-- Achievement
 					ach(1956, {	-- Higher Learning
