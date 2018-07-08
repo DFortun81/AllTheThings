@@ -5,21 +5,7 @@ _.Zones =
 {
 	m(466, { 	-- Outland
 		m(467, {	-- Zangarmarsh
-			["groups"] = {			
-				n( -3, {	-- Holidays
-					n(-58, {    	-- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(12354),	-- Candy Bucket
-								qa(12355),	-- Candy Bucket
-								qh(12390),	-- Candy Bucket
-								q( 12403),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656,	-- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
-				}),				
+			["groups"] = {		
 				n(-25, {	-- Pet Battle
 					p(419), 	-- Small Frog 
 					p(387), 	-- Snake

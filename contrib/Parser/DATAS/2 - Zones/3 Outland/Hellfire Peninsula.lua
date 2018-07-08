@@ -5,40 +5,7 @@ _.Zones =
 {
 	m(466, { 	-- Outland
 		m(465, {	-- Hellfire Peninsula			
-			["groups"] = {
-				n(-3, { 	-- Holidays	
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(12352, { -- Candy Bucket
-									["groups"] = {
-									},
-									["description"] = "Honor Hold", -- Location
-									["u"] = 26, -- Hallow's End
-								}),
-								qa(12353, { -- Candy Bucket
-									["groups"] = {
-									},
-									["description"] = "Temple of Telhamat", -- Location
-									["u"] = 26, -- Hallow's End
-								}),
-								qh(12389, { -- Candy Bucket
-									["groups"] = {
-									},
-									["description"] = "Falcon Watch", -- Location
-									["u"] = 26, -- Hallow's End
-								}),
-								qh(12388, { -- Candy Bucket
-									["groups"] = {
-									},
-									["description"] = "Thrallmar", -- Location
-									["u"] = 26, -- Hallow's End
-								}),
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-					}),	
-				}),								
+			["groups"] = {							
 				n(-25, { 	-- Pet Battle
 					p(635), -- Adder
 					p(414), -- Scorpid
