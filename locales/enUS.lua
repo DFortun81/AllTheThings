@@ -1878,6 +1878,7 @@ AllTheThings.Locales.enUS = {
 		[186648] = "Hazlek's Trunk",
 		[186667] = "Norkani's Package",
 		[186672] = "Kasha's Bag",
+		[186881] = "Dark Iron Sabotage Plans",
 		[186887] = "Large Jack-o'-Lantern",
 		[187021] = "Bakkalzu's Satchel",
 		[187273] = "Suspicious Hoofprint",
