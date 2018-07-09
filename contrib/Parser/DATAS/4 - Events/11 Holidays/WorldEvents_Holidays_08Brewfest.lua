@@ -25,15 +25,12 @@ _.WorldEvents =
 										crit(7), -- The Essential Brewfest Pretzel
 										crit(8), -- The Golden Link
 									},
-									["u"] = 24, -- Brewfest
 								}),
 								ach(2796, { -- Brew of the Month
 									["groups"] = {},
-									["u"] = 24, -- Brewfest
 								}),
 								ach(295, { -- Direbrewfest
 									["groups"] = {},
-									["u"] = 24, -- Brewfest
 								}),
 								ach(1186, { -- Down With The Dark Iron
 									["groups"] = {
@@ -42,27 +39,23 @@ _.WorldEvents =
 											["maps"] = { 27, }, -- Dun Morogh
 											["races"] = ALLIANCE_ONLY,
 											["isDaily"] = true,
-											["u"] = 24, -- Brewfest
 										}),
 										q(12192, { -- This One Time, When I Was Drunk... (Horde)
 											["groups"] = {},
 											["maps"] = { 4, }, -- Durotar
 											["races"] = HORDE_ONLY,
 											["isDaily"] = true,
-											["u"] = 24, -- Brewfest
 										}),
 									},
-									["u"] = 24, -- Brewfest
 								}),
 								ach(303, { -- Have Keg, Will Travel
 									["groups"] = {},
-									["u"] = 24, -- Brewfest
 								}),
 								ach(1936, { -- Does Your Wolpertinger Linger?
 									["groups"] = {},
-									["u"] = 24, -- Brewfest
 								}),
 							},
+							["u"] = 24, -- Brewfest
 						}),
 						ach(1260, { -- Almost Blind Luck
 							["groups"] = {},
@@ -129,7 +122,8 @@ _.WorldEvents =
 									un(24, i(32920)), -- Filled Yellow Brewfest Stein [Jungle River Water]
 								})),
 							},
-							["description"] = "\nEach Brewfest Stein has five different filled appearances.  You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement.  Once it has registered then you move on to the next brew and repeat.\n",
+							["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
+							["u"] = 24, -- Brewfest
 						}),
 						ach(1293, { -- Blue Brewfest Stein
 							["groups"] = {
@@ -141,7 +135,8 @@ _.WorldEvents =
 									un(24, i(33021)), -- Filled Blue Brewfest Stein [Jungle River 
 								})),
 							},
-							["description"] = "\nEach Brewfest Stein has five different filled appearances.  You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement.  Once it has registered then you move on to the next brew and repeat.\n",	
+							["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
+							["u"] = 24, -- Brewfest
 						}),
 						ach(4782, { -- Green Brewfest Stein
 							["groups"] = {
@@ -153,318 +148,306 @@ _.WorldEvents =
 									un(24, i(37897)), -- Filled Green Brewfest Stein [Jungle River Water]
 								})),
 							},
-							["description"] = "\nEach Brewfest Stein has five different filled appearances.  You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement.  Once it has registered then you move on to the next brew and repeat.\n",
+							["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
+							["u"] = 24, -- Brewfest
 						}),
 					}),
 					n(-139, { -- Bosses
-						n(23872, { 	-- Coren Direbrew
-							["groups"] = {
-								i(149752, { -- Keg-Shaped Treasure Box [Uncommon Quality]
-									["groups"] = {
-										un(24, i(71331)), 	-- Direbrew's Bloodied Shanker
-										un(24, i(117378)), 	-- Direbrew's Bloodied Shanker
-										un(24, i(150922)), 	-- Terrific Tankard O'Terror
-										un(24, i(117379)), 	-- Tremendous Tankard O'Terror
-									},
-									["lvl"] = 46,
-									["u"] = 24, -- Brewfest
-								}),
-								i(117393, { -- Keg-Shaped Treasure Chest [Epic Quality]
-									["groups"] = {
-										un(24, i(71331)), 	-- Direbrew's Bloodied Shanker
-										un(2, i(107217)), 	-- Direbrew's Bloodied Shanker
-										un(24, i(117378)), 	-- Direbrew's Bloodied Shanker
-										un(24, i(150922)), 	-- Terrific Tankard O'Terror
-										un(2, i(71332)), 	-- Tremendous Tankard O'Terror
-										un(2, i(107218)), 	-- Tremendous Tankard O'Terror
-										un(24, i(117379)), 	-- Tremendous Tankard O'Terror
-										un(2, i(48663)), 	-- Tankard O' Terror
-										i(37828, { -- Great Brewfest Kodo
-											["groups"] = {
-												ach(3496, { -- A Brew-FAST Mount
-													["groups"] = {},
-													["u"] = 24, -- Brewfest
-												}),
-											},
-											["u"] = 24, -- Brewfest
-										}),
-										i(33977, { -- Swift Brewfest Ram
-											["groups"] = {
-												ach(3496, { -- A Brew-FAST Mount
-													["groups"] = {},
-													["u"] = 24, -- Brewfest
-												}),
-											},
-											["u"] = 24, -- Brewfest
-										}),
-									},
-									["lvl"] = 98,
-									["u"] = 24, -- Brewfest
-								}),
-							},
-							["description"] = "|cff66ccffYou can only loot the keg once per day per toon by running it through the Dungeon queue on your first run.|r",	
-						}),
+						["groups"] = {
+							n(23872, { 	-- Coren Direbrew
+								["groups"] = {
+									i(149752, { -- Keg-Shaped Treasure Box [Uncommon Quality]
+										["groups"] = {
+											un(24, i(71331)), 	-- Direbrew's Bloodied Shanker
+											un(24, i(117378)), 	-- Direbrew's Bloodied Shanker
+											un(24, i(150922)), 	-- Terrific Tankard O'Terror
+											un(24, i(117379)), 	-- Tremendous Tankard O'Terror
+										},
+										["lvl"] = 46,
+									}),
+									i(117393, { -- Keg-Shaped Treasure Chest [Epic Quality]
+										["groups"] = {
+											un(24, i(71331)), 	-- Direbrew's Bloodied Shanker
+											un(2, i(107217)), 	-- Direbrew's Bloodied Shanker
+											un(24, i(117378)), 	-- Direbrew's Bloodied Shanker
+											un(24, i(150922)), 	-- Terrific Tankard O'Terror
+											un(2, i(71332)), 	-- Tremendous Tankard O'Terror
+											un(2, i(107218)), 	-- Tremendous Tankard O'Terror
+											un(24, i(117379)), 	-- Tremendous Tankard O'Terror
+											un(2, i(48663)), 	-- Tankard O' Terror
+											i(37828, { -- Great Brewfest Kodo
+												["groups"] = {
+													ach(3496, { -- A Brew-FAST Mount
+														["groups"] = {},
+													}),
+												},
+											}),
+											i(33977, { -- Swift Brewfest Ram
+												["groups"] = {
+													ach(3496, { -- A Brew-FAST Mount
+														["groups"] = {},
+													}),
+												},
+											}),
+										},
+										["lvl"] = 98,
+									}),
+								},
+								["description"] = "|cff66ccffYou can only loot the keg once per day per toon by running it through the Dungeon queue on your first run.|r",	
+							}),
+						},
+						["u"] = 24, -- Brewfest
 					}),
 					n(-17, { -- Quests
-						-- ALLIANCE QUESTS --
-						q(11441, { -- Brewfest!
-							["groups"] = {},
-							["qgs"] = {
-								18927, -- Human Commoner
-								19148, -- Dwarf Commoner
-								19171, -- Draenei Commoner
-								19172, -- Gnome Commoner
-								19173, -- Night Elf Commoner
-								20102, -- Goblin Commoner
-							},
-							["maps"] = {
-								301, -- Stormwind City
-								341, -- Ironforge
-								381, -- Darnassus
-								471, -- The Exodar
-								928, -- Isle of Thunder
-							},
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						q(12022, { -- Chug and Chuck! (Alliance)
-							["groups"] = {},
-							["qg"] = 27215, -- Boxey Boltspinner
-							["maps"] = { 27, }, -- Dun Morogh
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						q(11117, { -- Catch the Wild Wolpertinger! (Alliance)
-							["groups"] = {
-								i(32233, { -- Wolpertinger's Tankard (Pet)
-									ach(1936, { -- Does Your Wolpertinger Linger?
-										["groups"] = {},
-										["u"] = 24, -- Brewfest
+						["groups"] = {
+							-- ALLIANCE QUESTS --
+							q(11441, { -- Brewfest!
+								["groups"] = {},
+								["qgs"] = {
+									18927, -- Human Commoner
+									19148, -- Dwarf Commoner
+									19171, -- Draenei Commoner
+									19172, -- Gnome Commoner
+									19173, -- Night Elf Commoner
+									20102, -- Goblin Commoner
+								},
+								["maps"] = {
+									301, -- Stormwind City
+									341, -- Ironforge
+									381, -- Darnassus
+									471, -- The Exodar
+									928, -- Isle of Thunder
+								},
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(12022, { -- Chug and Chuck! (Alliance)
+								["groups"] = {},
+								["qg"] = 27215, -- Boxey Boltspinner
+								["maps"] = { 27, }, -- Dun Morogh
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(11117, { -- Catch the Wild Wolpertinger! (Alliance)
+								["groups"] = {
+									i(32233, { -- Wolpertinger's Tankard (Pet)
+										ach(1936, { -- Does Your Wolpertinger Linger?
+											["groups"] = {},
+											["u"] = 24, -- Brewfest
+										}),
 									}),
-								}),
-							},
-							["maps"] = { 27, }, -- Dun Morogh
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						q(11118, { -- Pink Elekks On Parade (Alliance)
-							["groups"] = {},
-							["qg"] = 23486, -- Goldark Snipehunter
-							["maps"] = { 27, }, -- Dun Morogh
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						q(11318, { -- Now This is Ram Racing... Almost. (Alliance)
-							["groups"] = {},
-							["qg"] = 23558, -- Neill Ramstein
-							["maps"] = { 27, }, -- Dun Morogh
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						q(29397, { -- A New Supplier of Souvenirs
-							["groups"] = {
-								un(24, i(56836)), 	-- Overflowing Purple Brewfest Stein
-							},
-							["maps"] = { 27, }, -- Dun Morogh
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 11318, }, -- Now This is Ram Racing... Almost. (Alliance)
-							["u"] = 24, -- Brewfest
-						}),
-						q(11122, { -- There and Back Again (Alliance)
-							["groups"] = {},
-							["qg"] = 23558, -- Neill Ramstein
-							["maps"] = { 27, }, -- Dun Morogh
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						-- HORDE QUESTS --
-						q(11446, { -- Brewfest!
-							["groups"] = {},
-							["qgs"] = {
-								19169, -- Blood Elf Commoner
-								19175, -- Orc Commoner
-								19176, -- Tauren Commoner
-								19177, -- Troll Commoner
-								19178, -- Forsaken Commoner
-								20102, -- Goblin Commoner
-							},
-							["maps"] = {
-								4, -- Durotar
-								11, -- Northern Barrens
-								161, -- Tanaris
-								281, -- Winterspring
-								321, -- Orgrimmar
-								362, -- Thunder Bluff
-								382, -- Undercity
-								462, -- Eversong Woods
-								479, -- Netherstorm
-								480, -- Silvermoon City
-								481, -- Shattrath City
-								495, -- The Storm Peaks
-								504, -- Dalaran (Northrend)
-								673, -- The Cape of Stranglethorn
-							},
-							["races"] = HORDE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						q(12191, { -- Chug and Chuck! (Horde)
-							["groups"] = {},
-							["qg"] = 27216, -- Bizzle Quicklift
-							["maps"] = { 4, }, -- Durotar
-							["races"] = HORDE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						q(11431, { -- Catch the Wild Wolpertinger! (Horde)
-							["groups"] = {
-								i(32233, { -- Wolpertinger's Tankard (Pet)
-									ach(1936, { -- Does Your Wolpertinger Linger?
-										["groups"] = {},
-										["u"] = 24, -- Brewfest
+								},
+								["maps"] = { 27, }, -- Dun Morogh
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(11118, { -- Pink Elekks On Parade (Alliance)
+								["groups"] = {},
+								["qg"] = 23486, -- Goldark Snipehunter
+								["maps"] = { 27, }, -- Dun Morogh
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(11318, { -- Now This is Ram Racing... Almost. (Alliance)
+								["groups"] = {},
+								["qg"] = 23558, -- Neill Ramstein
+								["maps"] = { 27, }, -- Dun Morogh
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(29397, { -- A New Supplier of Souvenirs
+								["groups"] = {
+									un(24, i(56836)), 	-- Overflowing Purple Brewfest Stein
+								},
+								["maps"] = { 27, }, -- Dun Morogh
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = { 11318, }, -- Now This is Ram Racing... Almost. (Alliance)
+							}),
+							q(11122, { -- There and Back Again (Alliance)
+								["groups"] = {},
+								["qg"] = 23558, -- Neill Ramstein
+								["maps"] = { 27, }, -- Dun Morogh
+								["races"] = ALLIANCE_ONLY,
+							}),
+							-- HORDE QUESTS --
+							q(11446, { -- Brewfest!
+								["groups"] = {},
+								["qgs"] = {
+									19169, -- Blood Elf Commoner
+									19175, -- Orc Commoner
+									19176, -- Tauren Commoner
+									19177, -- Troll Commoner
+									19178, -- Forsaken Commoner
+									20102, -- Goblin Commoner
+								},
+								["maps"] = {
+									4, -- Durotar
+									11, -- Northern Barrens
+									161, -- Tanaris
+									281, -- Winterspring
+									321, -- Orgrimmar
+									362, -- Thunder Bluff
+									382, -- Undercity
+									462, -- Eversong Woods
+									479, -- Netherstorm
+									480, -- Silvermoon City
+									481, -- Shattrath City
+									495, -- The Storm Peaks
+									504, -- Dalaran (Northrend)
+									673, -- The Cape of Stranglethorn
+								},
+								["races"] = HORDE_ONLY,
+							}),
+							q(12191, { -- Chug and Chuck! (Horde)
+								["groups"] = {},
+								["qg"] = 27216, -- Bizzle Quicklift
+								["maps"] = { 4, }, -- Durotar
+								["races"] = HORDE_ONLY,
+							}),
+							q(11431, { -- Catch the Wild Wolpertinger! (Horde)
+								["groups"] = {
+									i(32233, { -- Wolpertinger's Tankard (Pet)
+										ach(1936, { -- Does Your Wolpertinger Linger?
+											["groups"] = {},
+											["u"] = 24, -- Brewfest
+										}),
 									}),
-								}),
-							},
-							["maps"] = { 4, }, -- Durotar
-							["races"] = HORDE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						q(11120, { -- Pink Elekks On Parade (Horde)
-							["groups"] = {},
-							["qg"] = 24657, -- Glodrak Huntsniper
-							["maps"] = { 4, }, -- Durotar
-							["races"] = HORDE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						q(11409, { -- Now This is Ram Racing... Almost. (Horde)
-							["groups"] = {},
-							["qg"] = 24497, -- Ram Master Ray
-							["maps"] = { 4, }, -- Durotar
-							["races"] = HORDE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						q(29396, { -- A New Supplier of Souvenirs (Horde)
-							["groups"] = {
-								un(24, i(56836)),	-- Overflowing Purple Brewfest Stein
-							},
-							["qg"] = 24497, -- Ram Master Ray
-							["maps"] = { 4, }, -- Durotar
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 11409, }, -- Now This is Ram Racing... Almost. (Horde)
-							["u"] = 24, -- Brewfest
-						}),
-						q(11412, { -- There and Back Again (Horde)
-							["groups"] = {},
-							["qg"] = 24497, -- Ram Master Ray
-							["maps"] = { 4, }, -- Durotar
-							["races"] = HORDE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
+								},
+								["maps"] = { 4, }, -- Durotar
+								["races"] = HORDE_ONLY,
+							}),
+							q(11120, { -- Pink Elekks On Parade (Horde)
+								["groups"] = {},
+								["qg"] = 24657, -- Glodrak Huntsniper
+								["maps"] = { 4, }, -- Durotar
+								["races"] = HORDE_ONLY,
+							}),
+							q(11409, { -- Now This is Ram Racing... Almost. (Horde)
+								["groups"] = {},
+								["qg"] = 24497, -- Ram Master Ray
+								["maps"] = { 4, }, -- Durotar
+								["races"] = HORDE_ONLY,
+							}),
+							q(29396, { -- A New Supplier of Souvenirs (Horde)
+								["groups"] = {
+									un(24, i(56836)),	-- Overflowing Purple Brewfest Stein
+								},
+								["qg"] = 24497, -- Ram Master Ray
+								["maps"] = { 4, }, -- Durotar
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 11409, }, -- Now This is Ram Racing... Almost. (Horde)
+							}),
+							q(11412, { -- There and Back Again (Horde)
+								["groups"] = {},
+								["qg"] = 24497, -- Ram Master Ray
+								["maps"] = { 4, }, -- Durotar
+								["races"] = HORDE_ONLY,
+							}),
+						},
+						["u"] = 24, -- Brewfest
 					}),
 					n(-2, { -- Vendors
-						n(23710, { -- Belbi Quikswitch
-							["groups"] = {
-								un(24, i(37829, { -- Brewfest Prize Token
-									un(24, i(46707)), 	-- Pint-Sized Pink Pachyderm (Pet)
-									un(24, i(116756)), 	-- Stout Alemental (Pet)
-									un(24, i(32233)), 	-- Wolpertinger Tankard (Pet)
-									un(24, i(116758)), 	-- Brewfest Banner
-									un(24, i(71137)), 	-- Brewfest Key Pony
-									un(24, i(33927)), 	-- Brewfest Pony Keg
-									un(24, i(90427)), 	-- Pandaren Brewpack
-									un(24, i(116757)), 	-- Steamworks Sausage Grill
-									n(-3198, { -- Brewfest Garb
-										un(24, i(33968)), 	-- Blue Brewfest Hat
-										un(24, i(33864)), 	-- Brown Brewfest Hat
-										un(24, i(33967)), 	-- Green Brewfest Hat
-										un(24, i(33969)), 	-- Purple Brewfest Hatat
-										un(24, i(33863)), 	-- Brewfest Dress
-										un(24, i(33862)), 	-- Brewfest Regalia
-										un(24, i(33868)),	-- Brewfest Boots
-										un(24, i(33966)), 	-- Brewfest Slippers
-									}),
-								})),
-							},
-							["description"] = "|cff66ccffLarkin Thunderbrew <Brew of the Month Club> in Ironforge also sells these items.|r",
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						n(24495, { -- Blix Fixwidget
-							["groups"] = {
-								un(24, i(37829, { -- Brewfest Prize Token
-									un(24, i(46707)), 	-- Pint-Sized Pink Pachyderm (Pet)
-									un(24, i(116756)), 	-- Stout Alemental (Pet)
-									un(24, i(32233)), 	-- Wolpertinger Tankard (Pet)
-									un(24, i(116758)), 	-- Brewfest Banner
-									un(24, i(71137)), 	-- Brewfest Key Pony
-									un(24, i(33927)), 	-- Brewfest Pony Keg
-									un(24, i(90427)), 	-- Pandaren Brewpack
-									un(24, i(116757)), 	-- Steamworks Sausage Grill
-									n(-3198, { -- Brewfest Garb
-										un(24, i(33968)), 	-- Blue Brewfest Hat
-										un(24, i(33864)), 	-- Brown Brewfest Hat
-										un(24, i(33967)), 	-- Green Brewfest Hat
-										un(24, i(33969)), 	-- Purple Brewfest Hatat
-										un(24, i(33863)), 	-- Brewfest Dress
-										un(24, i(33862)), 	-- Brewfest Regalia
-										un(24, i(33868)),	-- Brewfest Boots
-										un(24, i(33966)), 	-- Brewfest Slippers
-									}),
-								})),
-							},
-							["description"] = "|cff66ccffRay'ma <Brew of the Month Club> in Orgrimmar also sells these items.|r",
-							["races"] = HORDE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						a(n(23481, { -- Keiran Donoghue
-							["groups"] = {
-								un(24, i(138900)), -- Gravil Goldbraid's Famous Sausage Hat
-							},
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 24, -- Brewfest
-						})),
-						h(n(23605, { -- Bron
-							["groups"] = {
-								un(24, i(138900)), -- Gravil Goldbraid's Famous Sausage Hat
-							},
-							["races"] = HORDE_ONLY,
-							["u"] = 24, -- Brewfest
-						})),
-						n(24468, { -- Pol Amberstill
-							["groups"] = {
-								{
-									["groups"] = {
-										un(24, i(33976)), -- Brewfest Ram; unobtainable 2007 Quest
-									},
-									["questID"] = 11400,
+						["groups"] = {
+							n(23710, { -- Belbi Quikswitch
+								["groups"] = {
+									un(24, i(37829, { -- Brewfest Prize Token
+										un(24, i(46707)), 	-- Pint-Sized Pink Pachyderm (Pet)
+										un(24, i(116756)), 	-- Stout Alemental (Pet)
+										un(24, i(32233)), 	-- Wolpertinger Tankard (Pet)
+										un(24, i(116758)), 	-- Brewfest Banner
+										un(24, i(71137)), 	-- Brewfest Key Pony
+										un(24, i(33927)), 	-- Brewfest Pony Keg
+										un(24, i(90427)), 	-- Pandaren Brewpack
+										un(24, i(116757)), 	-- Steamworks Sausage Grill
+										n(-3198, { -- Brewfest Garb
+											un(24, i(33968)), 	-- Blue Brewfest Hat
+											un(24, i(33864)), 	-- Brown Brewfest Hat
+											un(24, i(33967)), 	-- Green Brewfest Hat
+											un(24, i(33969)), 	-- Purple Brewfest Hatat
+											un(24, i(33863)), 	-- Brewfest Dress
+											un(24, i(33862)), 	-- Brewfest Regalia
+											un(24, i(33868)),	-- Brewfest Boots
+											un(24, i(33966)), 	-- Brewfest Slippers
+										}),
+									})),
 								},
-							},
-							["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
-						n(24510, { -- Driz Tumblequick
-							["groups"] = {{
-									["groups"] = {
-										un(24, i(33976)), -- Brewfest Ram; unobtainable 2007 Quest
-									},
-									["questID"] = 11400,
+								["description"] = "|cff66ccffLarkin Thunderbrew <Brew of the Month Club> in Ironforge also sells these items.|r",
+								["races"] = ALLIANCE_ONLY,
+							}),
+							n(24495, { -- Blix Fixwidget
+								["groups"] = {
+									un(24, i(37829, { -- Brewfest Prize Token
+										un(24, i(46707)), 	-- Pint-Sized Pink Pachyderm (Pet)
+										un(24, i(116756)), 	-- Stout Alemental (Pet)
+										un(24, i(32233)), 	-- Wolpertinger Tankard (Pet)
+										un(24, i(116758)), 	-- Brewfest Banner
+										un(24, i(71137)), 	-- Brewfest Key Pony
+										un(24, i(33927)), 	-- Brewfest Pony Keg
+										un(24, i(90427)), 	-- Pandaren Brewpack
+										un(24, i(116757)), 	-- Steamworks Sausage Grill
+										n(-3198, { -- Brewfest Garb
+											un(24, i(33968)), 	-- Blue Brewfest Hat
+											un(24, i(33864)), 	-- Brown Brewfest Hat
+											un(24, i(33967)), 	-- Green Brewfest Hat
+											un(24, i(33969)), 	-- Purple Brewfest Hatat
+											un(24, i(33863)), 	-- Brewfest Dress
+											un(24, i(33862)), 	-- Brewfest Regalia
+											un(24, i(33868)),	-- Brewfest Boots
+											un(24, i(33966)), 	-- Brewfest Slippers
+										}),
+									})),
 								},
-							},
-							["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
-							["races"] = HORDE_ONLY,
-							["u"] = 24, -- Brewfest
-						}),
+								["description"] = "|cff66ccffRay'ma <Brew of the Month Club> in Orgrimmar also sells these items.|r",
+								["races"] = HORDE_ONLY,
+							}),
+							n(23481, { -- Keiran Donoghue
+								["groups"] = {
+									un(24, i(138900)), -- Gravil Goldbraid's Famous Sausage Hat
+								},
+								["races"] = ALLIANCE_ONLY,
+							}),
+							n(23605, { -- Bron
+								["groups"] = {
+									un(24, i(138900)), -- Gravil Goldbraid's Famous Sausage Hat
+								},
+								["races"] = HORDE_ONLY,
+							}),
+							n(24468, { -- Pol Amberstill
+								["groups"] = {
+									{
+										["groups"] = {
+											un(24, i(33976)), -- Brewfest Ram; unobtainable 2007 Quest
+										},
+										["questID"] = 11400,
+										["u"] = 40, -- Legacy Quest/Quest Item
+									},
+								},
+								["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
+								["races"] = ALLIANCE_ONLY,
+							}),
+							n(24510, { -- Driz Tumblequick
+								["groups"] = {{
+										["groups"] = {
+											un(24, i(33976)), -- Brewfest Ram; unobtainable 2007 Quest
+										},
+										["questID"] = 11400,
+										["u"] = 40, -- Legacy Quest/Quest Item
+									},
+								},
+								["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
+								["races"] = HORDE_ONLY,
+							}),
+						},
+						["u"] = 24, -- Brewfest
 					}),
 					n(-100, { -- Legacy
 						["groups"] = {
 							n(-17, { -- Quests
 								o(186881, { -- Dark Iron Sabotage Plans
-									q(11454, { -- Seek the Saboteurs
-										["maps"] = {
-											4, -- Durotar
-											27, -- Dun Morogh
-										},
-										["u"] = 40, -- Legacy Quest/Quest Item
-									}),
+									["groups"] = {
+										q(11454, { -- Seek the Saboteurs
+											["maps"] = {
+												4, -- Durotar
+												27, -- Dun Morogh
+											},
+										}),
+									},
+									["u"] = 40, -- Legacy Quest/Quest Item
 								}),
 								q(11486, { -- The Best of Brews (Alliance)
 									["qg"] = 23872, -- Coren Direbrew
