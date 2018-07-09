@@ -2375,6 +2375,7 @@ AllTheThings.Locales.enUS = {
 		{1, "|CFFFF0000This title is no longer obtainable in game.|r", "Titles (37)"}; --37
 		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria|r", "Ordos - Legendary Cloak (38)"}; --38
 		{4, "|CFFFF0000This title is no longer available.|r", "Legacy Titles (39)"}; --39
+		{4, "|CFFFF0000This is a Legacy quest or quest item, and is no longer available.|r", "Legacy Quests (40)"}, -- 40
 	};
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you, please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";

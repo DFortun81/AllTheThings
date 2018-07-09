@@ -455,95 +455,98 @@ _.WorldEvents =
 						}),
 					}),
 					n(-100, { -- Legacy
-						n(-17, { -- Quests
-							o(186881, { -- Dark Iron Sabotage Plans
-								q(11454, { -- Seek the Saboteurs
-									["maps"] = {
-										4, -- Durotar
-										27, -- Dun Morogh
+						["groups"] = {
+							n(-17, { -- Quests
+								o(186881, { -- Dark Iron Sabotage Plans
+									q(11454, { -- Seek the Saboteurs
+										["maps"] = {
+											4, -- Durotar
+											27, -- Dun Morogh
+										},
+										["u"] = 40, -- Legacy Quest/Quest Item
+									}),
+								}),
+								q(11486, { -- The Best of Brews (Alliance)
+									["qg"] = 23872, -- Coren Direbrew
+									["groups"] = {
+										un(2, i(34140)), -- Dark Iron Tankard
 									},
-									["u"] = 24, -- Brewfest
+									["maps"] = { 704, }, -- Blackrock Depths
+									["races"] = ALLIANCE_ONLY,
+									["sourceQuests"] = { 11454, }, -- Seek the Saboteurs
+									["u"] = 40, -- Legacy Quest/Quest Item
+								}),
+								q(11487, { -- The Best of Brews (Horde)
+									["qg"] = 23872, -- Coren Direbrew
+									["groups"] = {
+										un(2, i(34140)), -- Dark Iron Tankard
+									},
+									["maps"] = { 704, }, -- Blackrock Depths
+									["races"] = HORDE_ONLY,
+									["sourceQuests"] = { 11454, }, -- Seek the Saboteurs
+									["u"] = 40, -- Legacy Quest/Quest Item
+								}),
+								q(11442, { -- Welcome to Brewfest! (Alliance)
+									["groups"] = {},
+									["qg"] = 24710, -- Ipfelkofer Ironkeg
+									["maps"] = { 27, }, -- Dun Morogh
+									["races"] = ALLIANCE_ONLY,
+									["u"] = 40, -- Legacy Quest/Quest Item
+								}),
+								q(11447, { -- Welcome to Brewfest! (Horde)
+									["groups"] = {},
+									["qg"] = 24711, -- Tapper Swindlekeg
+									["maps"] = { 4, }, -- Durotar
+									["races"] = HORDE_ONLY,
+									["u"] = 40, -- Legacy Quest/Quest Item
+								}),
+								q(12318, { -- Save Brewfest! (Alliance)
+									["groups"] = {},
+									["qg"] = 27584, -- Darna Honeybock
+									["maps"] = { 27, }, -- Dun Morogh
+									["sourceQuests"] = { 11442, }, -- Welcome to Brewfest! (Alliance)
+									["u"] = 40, -- Legacy Quest/Quest Item
+								}),
+								q(12318, { -- Save Brewfest! (Horde)
+									["groups"] = {},
+									["qg"] = 28329, -- Slurpo Fizzykeg
+									["maps"] = { 4, }, -- Durotar
+									["sourceQuests"] = { 11447, }, -- Welcome to Brewfest! (Horde)
+									["u"] = 40, -- Legacy Quest/Quest Item
+								}),
+								q(12062, { -- Insult Coren Direbrew
+									["groups"] = {},
+									["qg"] = 26719, -- Brewfest Spy
+									["maps"] = { 704, }, -- Blackrock Depths
+									["sourceQuests"] = { 11442, }, -- Save Brewfest!
+									["isDaily"] = true,
+									["u"] = 40, -- Legacy Quest/Quest Item
+								}),
+								i(34028, { -- "Honorary Brewer" Hand Stamp (Alliance)
+									["groups"] = {
+										q(11419, { -- Brewfest Riding Rams
+											["groups"] = {},
+											["maps"] = { 27, }, -- Dun Morogh
+											["races"] = ALLIANCE_ONLY,
+										}),
+									},
+									["races"] = ALLIANCE_ONLY,
+									["u"] = 40, -- Legacy Quest/Quest Item
+								}),
+								i(33978, { -- "Honorary Brewer" Hand Stamp (Horde)
+									["groups"] = {
+										q(11400, { -- Brewfest Riding Rams
+											["groups"] = {},
+											["maps"] = { 4, }, -- Durotar
+											["races"] = HORDE_ONLY,
+										}),
+									},
+									["races"] = HORDE_ONLY,
+									["u"] = 40, -- Legacy Quest/Quest Item
 								}),
 							}),
-							q(11486, { -- The Best of Brews (Alliance)
-								["qg"] = 23872, -- Coren Direbrew
-								["groups"] = {
-									un(2, i(34140)), -- Dark Iron Tankard
-								},
-								["maps"] = { 704, }, -- Blackrock Depths
-								["races"] = ALLIANCE_ONLY,
-								["sourceQuests"] = { 11454, }, -- Seek the Saboteurs
-								["u"] = 24, -- Brewfest
-							}),
-							q(11487, { -- The Best of Brews (Horde)
-								["qg"] = 23872, -- Coren Direbrew
-								["groups"] = {
-									un(2, i(34140)), -- Dark Iron Tankard
-								},
-								["maps"] = { 704, }, -- Blackrock Depths
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = { 11454, }, -- Seek the Saboteurs
-								["u"] = 24, -- Brewfest
-							}),
-							q(11442, { -- Welcome to Brewfest! (Alliance)
-								["groups"] = {},
-								["qg"] = 24710, -- Ipfelkofer Ironkeg
-								["maps"] = { 27, }, -- Dun Morogh
-								["races"] = ALLIANCE_ONLY,
-								["u"] = 24, -- Brewfest
-							}),
-							q(11447, { -- Welcome to Brewfest! (Horde)
-								["groups"] = {},
-								["qg"] = 24711, -- Tapper Swindlekeg
-								["maps"] = { 4, }, -- Durotar
-								["races"] = HORDE_ONLY,
-								["u"] = 24, -- Brewfest
-							}),
-							q(12318, { -- Save Brewfest! (Alliance)
-								["groups"] = {},
-								["qg"] = 27584, -- Darna Honeybock
-								["maps"] = { 27, }, -- Dun Morogh
-								["sourceQuests"] = { 11442, }, -- Welcome to Brewfest! (Alliance)
-								["u"] = 24, -- Brewfest
-							}),
-							q(12318, { -- Save Brewfest! (Horde)
-								["groups"] = {},
-								["qg"] = 28329, -- Slurpo Fizzykeg
-								["maps"] = { 4, }, -- Durotar
-								["sourceQuests"] = { 11447, }, -- Welcome to Brewfest! (Horde)
-								["u"] = 24, -- Brewfest
-							}),
-							q(12062, { -- Insult Coren Direbrew
-								["groups"] = {},
-								["qg"] = 26719, -- Brewfest Spy
-								["maps"] = { 704, }, -- Blackrock Depths
-								["sourceQuests"] = { 11442, }, -- Save Brewfest!
-								["isDaily"] = true,
-								["u"] = 24, -- Brewfest
-							}),
-							i(34028, { -- "Honorary Brewer" Hand Stamp (Alliance)
-								["groups"] = {
-									q(11419, { -- Brewfest Riding Rams
-										["groups"] = {},
-										["maps"] = { 27, }, -- Dun Morogh
-										["races"] = ALLIANCE_ONLY,
-										["u"] = 24, -- Brewfest
-									}),
-								},
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(33978, { -- "Honorary Brewer" Hand Stamp (Horde)
-								["groups"] = {
-									q(11400, { -- Brewfest Riding Rams
-										["groups"] = {},
-										["maps"] = { 4, }, -- Durotar
-										["races"] = HORDE_ONLY,
-										["u"] = 24, -- Brewfest
-									}),
-								},
-								["races"] = HORDE_ONLY,
-							}),
-						}),
+						},
+						["u"] = 24, -- Brewfest
 					}),
 				},
 				["u"] = 24, -- Brewfest
