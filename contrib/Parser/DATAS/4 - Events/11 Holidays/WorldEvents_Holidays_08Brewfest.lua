@@ -521,6 +521,28 @@ _.WorldEvents =
 								["isDaily"] = true,
 								["u"] = 24, -- Brewfest
 							}),
+							i(34028, { -- "Honorary Brewer" Hand Stamp (Alliance)
+								["groups"] = {
+									q(11419, { -- Brewfest Riding Rams
+										["groups"] = {},
+										["maps"] = { 27, }, -- Dun Morogh
+										["races"] = ALLIANCE_ONLY,
+										["u"] = 24, -- Brewfest
+									}),
+								},
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(33978, { -- "Honorary Brewer" Hand Stamp (Horde)
+								["groups"] = {
+									q(11400, { -- Brewfest Riding Rams
+										["groups"] = {},
+										["maps"] = { 4, }, -- Durotar
+										["races"] = HORDE_ONLY,
+										["u"] = 24, -- Brewfest
+									}),
+								},
+								["races"] = HORDE_ONLY,
+							}),
 						}),
 					}),
 				},
