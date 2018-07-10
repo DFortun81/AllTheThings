@@ -2554,14 +2554,18 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(38579),	-- Venomous Tome
 					}),
 					n(73190, {	-- Necrolord Sipe <Combatant Mount Quartermaster>
-						i(70909),	-- Reins of the Vicious War Steed
-						i(102514),	-- Reins of the Vicious Warsaber
-						i(140353),	-- Vicious Gilnean Warhorse
-						i(140350),	-- Vicious War Elekk
-						i(142237),	-- Vicious War Lion
-						i(124089),	-- Vicious War Mechanostrider
-						i(116777),	-- Vicious War Ram
-						i(143648),	-- Vicious War Turtle
+						["groups"] = {
+							i(70909),	-- Reins of the Vicious War Steed
+							i(102514),	-- Reins of the Vicious Warsaber
+							i(140353),	-- Vicious Gilnean Warhorse
+							i(142234),	-- Vicious War Bear
+							i(140350),	-- Vicious War Elekk
+							i(142237),	-- Vicious War Lion
+							i(124089),	-- Vicious War Mechanostrider
+							i(116777),	-- Vicious War Ram
+							i(143648),	-- Vicious War Turtle
+						},
+						["itemID"] = 103533, -- Vicious Saddle
 					}),
 					n(65068, {	-- Old Whitenose <Dragon Turtle Breeder>
 						i(91008, { 	-- Black Dragon Turtle (Panda)
