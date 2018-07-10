@@ -14,6 +14,7 @@ _.GroupFinder =
 			un(2, i(51980)),	-- Earthbound Handgrips [Probably unobtainable]
 			i(51976),	-- Earthbound Shoulderguards*
 			i(51981),	-- Earthbound Wristguards*
+			
 			i(51972),	-- Enumerated Bracers*
 			i(51973),	-- Enumerated Handwraps
 			i(51967),	-- Enumerated Sandals
@@ -32,7 +33,7 @@ _.GroupFinder =
 			i(51962),	-- Vigorous Bracers*
 			i(51960),	-- Vigorous Gloves
 			i(51965),	-- Vigorous Handguards
-			un(2, i(51998)),	-- Vigorous Spaulders (looks like other is the one in-game, unless this one has been moved to a different satchel, according to screenshot from Bully in #errors)
+			i(51998),	-- Vigorous Spaulders
 			i(51966),	-- Vigorous Spaulders
 			i(51963),	-- Vigorous Stompers*
 		},		
@@ -102,8 +103,8 @@ _.GroupFinder =
 		["groups"] = {
 			i(51969),	-- Enumerated Shoulders*
 			i(51972),	-- Enumerated Bracers*
-			i(51971),	-- Enumerated Belt (reported with screenshot by Zobblerone in #errors)
 			i(51970),	-- Enumerated Gloves*
+			i(51971),	-- Enumerated Belt [User confirmed; haven't seen]
 			i(51967),	-- Enumerated Sandals*
 			i(51961),	-- Vigorous Shoulderguards
 			i(51959),	-- Vigorous Belt

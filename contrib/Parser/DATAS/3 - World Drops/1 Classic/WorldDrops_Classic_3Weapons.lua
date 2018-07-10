@@ -162,7 +162,7 @@ _.WorldDrops =
 					i(15242),	-- Honed Stiletto
 					i(15243),	-- Deadly Kris
 					i(15244),	-- Razor Blade
-					un(7, i(15245)),	-- Vorpal Dagger
+					i(15245),	-- Vorpal Dagger
 					i(15246),	-- Demon Blade
 					i(15247),	-- Bloodstrike Dagger
 					i(1917),	-- Jeweled Dagger
