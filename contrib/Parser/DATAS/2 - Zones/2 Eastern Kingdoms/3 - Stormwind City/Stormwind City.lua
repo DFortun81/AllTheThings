@@ -487,6 +487,13 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(28564)),	-- Hero's Call: Duskwood!
 					qg(, qa(28552)),	-- Hero's Call: Dustwallow Marsh!
 					qg(, qa(28578)),	-- Hero's Call: Eastern Plaguelands!
+--]]
+					qa(28543, {	-- Hero's Call: Felwood!
+						["g"] = {
+						},
+						["isBreadcrumb"] = true,	-- for "The Corruption of the Jadefire"
+					}),
+--[[
 					qg(, qa(27726)),	-- Hero's Call: Mount Hyjal!					
 					qg(, qa(28699)),	-- Hero's Call: Northern Stranglethorn Vale!
 					qg(, qa(28709)),	-- Hero's Call: Northrend!

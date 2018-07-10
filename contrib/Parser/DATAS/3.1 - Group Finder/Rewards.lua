@@ -33,7 +33,7 @@ _.GroupFinder =
 			i(51962),	-- Vigorous Bracers*
 			i(51960),	-- Vigorous Gloves
 			i(51965),	-- Vigorous Handguards
-			i(51998),	-- Vigorous Spaulders
+			un(2, i(51998)),	-- Vigorous Spaulders (looks like other is the one in-game, unless this one has been moved to a different satchel, according to Bully in #errors)
 			i(51966),	-- Vigorous Spaulders
 			i(51963),	-- Vigorous Stompers*
 		},		

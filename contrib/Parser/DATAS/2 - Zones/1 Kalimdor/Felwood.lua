@@ -10,6 +10,12 @@ _.Zones =
 					["creatureID"] = 11558,	-- Kernda
 					["groups"] = {
 						ach(944),	-- They Love Me In That Tunnel
+						qr(q(28396, {	-- Feathers for Grazle
+							["g"] = {
+							},
+							["qg"] = 11554,	-- Grazle
+							["sourceQuests"] = { 27995 },	-- Dance for Ruumbo!
+						})),
 						n(11555, {	-- Gorn One Eye
 							i(16768),	-- Furbolg Medicine Pouch
 							i(16769),	-- Furbolg Medicine Totem
@@ -102,80 +108,136 @@ _.Zones =
 					qg(66442, qh(31907)),	-- Zoltan
 				}),
 				n(-17, {	-- Quests
---[[				qg(15603, q(8723)),	-- Nightwind the Elder (HOLIDAY - Lunar Festival)
-					o(208158, {	-- Candy Bucket
-						q(28994),	-- Candy Bucket (HOLIDAY)
+					q( 28150, {	-- An Arcane Ally
+						["g"] = {
+						},
+						["qg"] = 10923,	-- Tenell Leafrunner
+						["isBreadcrumb"] = true,	-- for Do the Imp-Possible
+						["sourceQuests"] = { 28148, 27995, 27997 },	-- Culling the Corrupted, Dance for Ruumbo!, and The Corruption of the Jadefire
 					}),
-					o(208159, {	-- Candy Bucket
-						qa(28995),	-- Candy Bucket (HOLIDAY)
+
+				
+					q( 28100, {	-- A Talking Totem
+						["g"] = {
+						},
+						["qg"] = 11554,	-- Grazle
+					}),
+					
+
+					o(206585, {	-- Totem of Ruumbo
+						q(27995, {	-- Dance for Ruumbo!
+							["g"] = {
+								i(65279),	-- Grazle's Sandals
+								i(65299),	-- Allen's Abandoned Belt
+								i(65318),	-- Ruumbo's Arm
+								i(65336),	-- Pulled Wool
+							},
+							["sourceQuests"] = { 27989, 27994 },	-- Ruumbo Demands Honey / Justice
+						}),
+						q(27989, {	-- Ruumbo Demands Honey
+							["g"] = {
+							},
+							["sourceQuests"] = { 28100 },	-- A Talking Totem
+						}),
+						q(27994, {	-- Ruumbo Demands Justice
+							["g"] = {
+							},
+							["sourceQuests"] = { 28100 },	-- A Talking Totem
+						}),
+					}),
+
+					
+					q( 28148, {	-- Culling the Corrupted
+						["g"] = {
+							i(65275),	-- Angerclaw Leggings
+							i(65295),	-- Felpaw Boots
+							i(65314),	-- Belt of the Sanctuary
+							i(65333),	-- Redfeather Band
+						},
+						["qg"] = 10921,	-- Taronn Redfeather
+					}),
+					
+
+					q( 28000, {	-- Do the Imp-Possible
+						["g"] = {
+						},
+						["qg"] = 47341,	-- Arcanist Delaris
+						["sourceQuests"] = { 28150 },	-- An Arcane Ally
+					}),
+					
+					
+					q( 27997, {	-- The Corruption of the Jadefire
+						["g"] = {
+						},
+						["qg"] = 10923,	-- Tenell Leafrunner
+						["sourceQuests"] = { 28543 },	-- Hero's Call: Felwood!
+					}),
+
+					
+					q( 28479, {	-- The Ruins of Kel'theril -- bcrumb?  unsure
+						["g"] = {
+						},
+						["qg"] = 10920,	-- Kelek Skykeeper
+					}),
+					
+					
+					
+					
+					
+--[[
+						["g"] = {
+						},
+						["qg"] = ,	-- 
+						["sourceQuests"] = {  },	-- 
 					}),
 --]]
+					
+					
+					
 					qh(28340, {	-- A Bomb Deal
 						["groups"] = {
 						},
 						["qg"] = 48333, -- Foreman Pikwik
 						["sourceQuests"] = { 28380 }, -- Pikwik in Peril
 					}),
-					--[[
-					qg(47923, q(28218)),	-- A Destiny of Flame and Sorrow
+					qg(47923, q( 28218)),	-- A Destiny of Flame and Sorrow
 					qg(48127, qh(28334)),	-- A Flare Fight
-					qg(47696, q(28207)),	-- A Slimy Situation
-					qg(11554, q(28100)),	-- A Talking Totem
-					qg(10923, q(28150)),	-- An Arcane Ally
+					qg(47696, q( 28207)),	-- A Slimy Situation
 					qg(48469, qh(28372)),	-- Back to Business
 					qg(48493, qa(28388)),	-- Bloody Wages
-					]]--
 					qg(48493, qa(28386, {	-- Borrowed Bombs
 						i(65342),
 						i(65291),
 						i(65310),
 						i(65329),
 					})),
-					qg(47341, q(28113, {	-- Break the Unbreakable
+					qg(47341, q( 28113, {	-- Break the Unbreakable
 						i(65277),
 						i(65297),
 						i(65316),
 						i(65335),
 					})),
---[[					
 					qg(48493, qa(28387)),	-- Burnout
-					qg(48032, q(28219)),	-- Buzzers for Baby
-					qg(47692, q(28214)),	-- Cleanup at Bloodvenom Post
-					qg(48339, q(28341)),	-- Collecting Corruption
---]]					
---[[				o(164885, {	-- Corrupted Night Dragon -- this block of quests has been REMOVED per wowhead comments)
+					qg(48032, q( 28219)),	-- Buzzers for Baby
+					qg(47692, q( 28214)),	-- Cleanup at Bloodvenom Post
+					qg(48339, q( 28341)),	-- Collecting Corruption
+--[[
+					o(164885, {	-- Corrupted Night Dragon -- this block of quests has been REMOVED per wowhead comments)
 						q(4447),	-- Corrupted Night Dragon
 						q(4119),	-- Corrupted Night Dragon
 					}),
-					q(3363),	-- Corrupted Songflower
-					q(2523),	-- Corrupted Songflower
-					q(4443),	-- Corrupted Whipper Root
-					q(4117),	-- Corrupted Whipper Root
-					q(998),	-- Corrupted Windblossom
-					q(996),	-- Corrupted Windblossom
 --]]
-					
---					qg(10922, q(28116)),	-- Crying Violet
-					qg(10921, q(28148,  {	-- Culling the Corrupted
-						i(65275),
-						i(65295),
-						i(65314),
-					})),
-					o(206585, {	-- Totem of Ruumbo
-						q(27995,  {	-- Dance for Ruumbo!
-							i(65279),
-							i(65299),
-							i(65318),
-							i(65336),
-						}),
-						q(27989),	-- Ruumbo Demands Honey
-						q(27994),	-- Ruumbo Demands Justice
-					}),
-					qg(15395, q(28338,  {	-- Deadwood of the North
+					q( 3363),	-- Corrupted Songflower
+					q( 2523),	-- Corrupted Songflower
+					q( 4443),	-- Corrupted Whipper Root
+					q( 4117),	-- Corrupted Whipper Root
+					q(  998),	-- Corrupted Windblossom
+					q(  996),	-- Corrupted Windblossom					
+					qg(10922, q( 28116)),	-- Crying Violet
+					qg(15395, q( 28338, {	-- Deadwood of the North
 						i(21316),
 						i(21317),
 					})),
---[[					
 					n(7156, {	-- Deadwood Den Watcher
 						i(20741, {	-- Deadwood Ritual Totem
 							q(8470),	-- Deadwood Ritual Totem
@@ -191,34 +253,29 @@ _.Zones =
 							q(8470),	-- Deadwood Ritual Totem
 						}),
 					}),
---]]					
---					qg(47923, q(28261)),	-- Deceivers In Our Midst
-					qg(15395, q(28366,  {	-- Disarming Bears
+					qg(47923, q( 28261)),	-- Deceivers In Our Midst
+					qg(15395, q( 28366, {	-- Disarming Bears
 						i(65343),
 						i(65294),
 						i(65313),
 						i(65332),
 					})),
---					qg(47341, q(28000)),	-- Do the Imp-Possible
-					qg(51664, q(28126,  {	-- Dousing the Flames of Protection
+					qg(51664, q( 28126, {	-- Dousing the Flames of Protection
 						i(65281),
 						i(65301),
 						i(65320),
 						i(65337),
 					})),
---					q(29029),	-- Dying Knowledge (REMOVED / replaced with "Purify From Corruption" per wowhead comment)
+					q( 29029),	-- Dying Knowledge (REMOVED / replaced with "Purify From Corruption" per wowhead comment)
 					qg(47931, qa(28382,  {  -- Enemy at our Roots
 						i(65341),
 						i(65290),
 						i(65309),
 						i(65328),
 					})),
---[[					
-					qg(11554, q(28396)),	-- Feathers for Grazle
-					qg(15395, q(28395)),	-- Feathers for Nafien
-					qg(48339, q(28342)),	-- Fel To Pieces
-					qg(9116, q(28102)),	-- Fight the Power
---]]					
+					qg(15395, q( 28395)),	-- Feathers for Nafien
+					qg(48339, q( 28342)),	-- Fel To Pieces
+					qg( 9116, q( 28102)),	-- Fight the Power
 					o(207104, {	-- Master Control Pump
 						qh(28368,  {  -- Fire in the Hole!
 							i(65346),   -- Gauntlets of Raw Strength
@@ -226,51 +283,45 @@ _.Zones =
 							i(65352),   -- Drilldozer Band
 						}),
 					}),
---					qg(11019, q(28121)),	-- Forces of Jaedenar
-					qg(47696, q(28213,  {  -- Hazzard Disposal
+					qg(11019, q( 28121)),	-- Forces of Jaedenar
+					qg(47696, q( 28213,  {  -- Hazzard Disposal
 						i(65283),
 						i(65303),
 						i(65322),
 						i(65338),
 					})),
---[[					
-					qg(48349, q(28358)),	-- Hunting the Damned
-					qg(10920, q(28537)),	-- In Pursuit of Shades (QG may be in Winterspring or both zones, not sure)
---					q(29028),	-- Into Jaedenar (REMOVED)
+					qg(48349, q( 28358)),	-- Hunting the Damned
+					qg(10920, q( 28537)),	-- In Pursuit of Shades (QG may be in Winterspring or both zones, not sure)
+					q(29028),	-- Into Jaedenar (REMOVED)
 					qg(47931, qa(28384)),	-- Into the Clearing
-					qg(48127, qh(28339)),	-- Is Your Oil Running?
---]]					
+					qg(48127, qh(28339)),	-- Is Your Oil Running?					
 					qg(48127, qh(28333,  {  -- It's Time to Oil Up
 						i(65344),
 						i(65347),
 						i(65350),
 						i(65353),
 					})),
---					qg(9116, q(28152)),	-- Jaedenar Awaits
+					qg(9116, q( 28152)),	-- Jaedenar Awaits
 					qg(51664, q(28155,  {  -- Lord Banehollow
 						i(65282),
 						i(65302),
 					})),
---[[					
 					o(176091, {	-- Deadwood Cauldron	
 						q(28467),	-- Mystery Goo (not sure if QG is here, in Winterspring, or both)
 					}),
-					qg(48126, q(28229)),	-- Nature and Nurture
---]]					
-					qg(47923, q(28264,  {  -- Navarax's Gambit
+					qg(48126, q( 28229)),	-- Nature and Nurture
+					qg(47923, q( 28264,  {  -- Navarax's Gambit
 						i(65285),
 					})),
---					qg(48493, qa(28385)),	-- Oil and Irony
-					qg(47341, q(28288, {	-- Open Their Eyes
+					qg(48493, qa(28385)),	-- Oil and Irony
+					qg(47341, q( 28288, {	-- Open Their Eyes
 						i(65278),
 						i(65298),
 						i(133998),  -- Rainbow Generator
 					})),
---[[					
 					qg(48127, qh(28380)),	-- Pikwik in Peril
-					qg(51664, q(28119)),	-- Purity From Corruption
---]]
-					qg(48044, q(28228,  {  -- Rejoining the Forest
+					qg(51664, q( 28119)),	-- Purity From Corruption
+					qg(48044, q( 28228,  {  -- Rejoining the Forest
 						i(65287),
 					})),
 					qg(48493, qa(28389,  {  -- Report to the Denmother
@@ -278,12 +329,12 @@ _.Zones =
 						i(65311),   -- Denmother's Cloak
 						i(65330),   -- Token of the Bond
 					})),
-					qg(11557, q(6031,  {  -- Runecloth
+					qg(11557, q(  6031,  {  -- Runecloth
 						i(15822),
 						i(15823),
 					})),
-					--qg(48459, q(28360)),	-- Running Their Course
-					qg(11557, q(6032, {	-- Sacred Cloth
+					qg(48459, q( 28360)),	-- Running Their Course
+					qg(11557, q(  6032, {	-- Sacred Cloth
 						["requireSkill"] = 197,	-- Requires: Tailoring
 						["groups"] = {
 							recipe(19435),	-- Mooncloth Boots
@@ -310,83 +361,72 @@ _.Zones =
 					qa(4106),	-- Salve via Skinning
 					qh(5885),	-- Salve via Skinning
 --]]
-					qg(47366, q(28049,  {  -- See the Invisible
+					qg(47366, q( 28049,  {  -- See the Invisible
 						i(65276),
 						i(65296),
 						i(65315),
 						i(65334),
 					})),
---[[					
-					qg(48032, q(28220)),	-- Seeking Soil
-					qg(51664, q(28153)),	-- Shadow Lord Fel'dan
-					qg(48032, q(28222)),	-- Singin' in the Sun
---]]					
+					qg(48032, q( 28220)),	-- Seeking Soil
+					qg(51664, q( 28153)),	-- Shadow Lord Fel'dan
+					qg(48032, q( 28222)),	-- Singin' in the Sun
 					qg(48127, qh(28336,  {  -- Slap and Cap
 						i(65345),
 						i(65348),
 						i(65351),
 						i(65354),
 					})),
---[[					
-					qg(15395, q(28521)),	-- Speak to Salfa
-					qg(48459, q(28361)),	-- Squirrely Clean
-					qg(48461, q(28362)),	-- Stupid Drizle!
+					qg(15395, q( 28521)),	-- Speak to Salfa
+					qg(48459, q( 28361)),	-- Squirrely Clean
+					qg(48461, q( 28362)),	-- Stupid Drizle!
 					qg(48127, qh(28357)),	-- Take it to the Tree
---]]					
 					qg(47556, q(28364,  {  -- The Chieftain's Key
 						i(65293),
 						i(65312),
 						i(65331),
 					})),
-					qg(48349, q(28359,  {  -- The Core of Kroshius
+					qg(48349, q( 28359,  {  -- The Core of Kroshius
 						i(65288),
 						i(65307),
 						i(65326),
 						i(65339),
 					})),
---[[					
-					qg(10923, q(27997)),	-- The Corruption of the Jadefire
-					qg(47617, q(28129)),	-- The Demon Prince	(QG may be 51664 or both)
+					qg(47617, q( 28129)),	-- The Demon Prince	(QG may be 51664 or both)
 					qg(48491, qa(28381)),	-- The Denmother
---]]					
-					qg(47923, q(28257,  {  -- The Fall of Tichondrius
+					qg(47923, q( 28257,  {  -- The Fall of Tichondrius
 						i(65284),
 						i(65304),
 						i(65323),
 					})),
---					qg(47617, q(28305)),	-- The Fate of Bloodvenom Post
-					qg(11019, q(28128,  {  -- The Inner Circle (add'l QG 51664, may have changed from one to the other with cata)
-						i(65280),
-						i(65300),
+					qg(47617, q( 28305)),	-- The Fate of Bloodvenom Post
+					qg(11019, q( 28128,  {  -- The Inner Circle (add'l QG 51664, may have changed from one to the other with cata)
+						i( 65280),
+						i( 65300),
 						i(156982),	-- Shadow Hold Dagger 
 					})),
---[[					
-					qg(48042, q(28224)),	-- The Last Protector
-					qg(11555, q(8481)),	-- The Root of All Evil
+					qg(48042, q( 28224)),	-- The Last Protector
+					qg(11555, q(  8481)),	-- The Root of All Evil
 					qg(48493, qa(28337)),	-- The Shredders of Irontree
-					qg(47923, q(28256)),	-- The Skull of Gul'dan
-					qg(47692, q(28190)),	-- The Tainted Ooze
+					qg(47923, q( 28256)),	-- The Skull of Gul'dan
+					qg(47692, q( 28190)),	-- The Tainted Ooze
 					qg(47931, qa(28392)),	-- The Timbermaw Tribe
-					qg(48042, q(28221)),	-- These Roots Were Made For Stompin'
+					qg(48042, q( 28221)),	-- These Roots Were Made For Stompin'
 					qg(48127, qh(28373)),	-- Timbermaw Hold
-					qg(47366, q(28044)),	-- Touch the Untouchable
+					qg(47366, q( 28044)),	-- Touch the Untouchable
 					qg(48333, qh(28335)),	-- Turn It Off! Turn It Off!
-					qg(51664, q(28131)),	-- Twin Temptresses (add'l QG 47617, not sure if both)
-					qg(47843, q(28217)),	-- Wanted: The Demon Hunter
---]]					
-					qg(48459, q(28374,  {  -- Weeding the Lawn	
+					qg(51664, q( 28131)),	-- Twin Temptresses (add'l QG 47617, not sure if both)
+					qg(47843, q( 28217)),	-- Wanted: The Demon Hunter
+					qg(48459, q( 28374,  {  -- Weeding the Lawn	
 						i(65289),
 						i(65308),
 						i(65327),
 						i(65340),
 					})),
---[[					
-					qg(47696, q(28306)),	-- Whisperwind Grove
-					qg(47696, q(28208)),	-- Winna's Kitten
-					qg(15395, q(28768)),	-- Winterspring!
+					qg(47696, q( 28306)),	-- Whisperwind Grove
+					qg(47696, q( 28208)),	-- Winna's Kitten
+					qg(15395, q( 28768)),	-- Winterspring!
 					qg(48127, qh(28370)),	-- Wisp-napping
 					qg(48492, qa(28383)),	-- Wisps of the Woods
---]]					
 				}),
 				n(-16, {	-- Rares	
 					n(14340, { 		-- Alshirr Banebreath
