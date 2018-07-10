@@ -74,7 +74,6 @@ _.WorldEvents =
 							dr(7.0, i(116064)), -- Syd the Squid
 							dr(1.7, i(89139)), -- Chain Pet Leash
 							dr(1.4, i(44820)), -- Red Ribbon Pet Leash
-							dr(1.6, i(37460)), -- Rope Pet Leash
 						}),
 					}),
 				}),
@@ -84,7 +83,6 @@ _.WorldEvents =
 							dr(1.6, i(91040)), -- Darkmoon Eye
 							dr(2.0, i(89139)), -- Chain Pet Leash
 							dr(1.5, i(44820)), -- Red Ribbon Pet Leash
-							dr(1.4, i(37460)), -- Rope Pet Leash
 						}),
 					}),
 				}),

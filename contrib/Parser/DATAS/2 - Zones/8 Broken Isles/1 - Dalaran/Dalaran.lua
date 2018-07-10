@@ -2404,7 +2404,6 @@ _.Zones =
 						i(48120), -- Obsidian Hatchling Pet
 						i(129826), -- Nursery Spider Pet
 						i(44820), -- Red Ribbon Pet Leash Toy
-	--					i(37460), -- Rope Pet Leash Toy (posted in stable master)
 					}),
 					a(n(119484, { -- Captain Roberts <Legion Elite Gladiator>
 						i(147778),	-- Enchanter's Illusion - Demonic Tyranny

@@ -182,7 +182,6 @@ _.ClassHalls =
 				}),
 				n(100661, { --  Pan the Kind Hand <Stable Master>
 					["groups"] = {
---									i(37460), -- Rope Leash (posted in stable master)
 						i(142228), -- Trust of a Dire Wolfhawk
 						i(142226), -- Trust of a Fierce Wolfhawk
 					},

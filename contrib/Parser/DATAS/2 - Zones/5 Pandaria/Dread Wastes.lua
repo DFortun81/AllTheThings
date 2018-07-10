@@ -21,7 +21,6 @@ _.Zones =
 						["groups"] = {
 							i(93147, { -- Pandaren Spirit Pet Supplies
 								i(89139),	-- Chain Pet Leash
-								i(37460),	-- Rope Pet Leash
 								i(44820),	-- Red Ribbon Pet Leash
 								i(90173),	-- Pandaren Water Spirit
 							})

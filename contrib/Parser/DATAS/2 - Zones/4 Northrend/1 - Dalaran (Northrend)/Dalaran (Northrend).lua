@@ -1874,7 +1874,6 @@ _.Zones =
 						i(48120),	-- Obsidian Hatchling Pet
 						i(129826),	-- Nursery Spider Pet
 						i(44820),	-- Red Ribbon Pet Leash Toy
-	--					i(37460),	-- Rope Pet Leash Toy (posted in stable master)
 					}),
 					n(28699, {	-- Charles Worth <Tailoring Trainer>
 						["description"] = "Your Tailor has to have completed Loremaster of Northrend for Deathchill Cloak and Northrend Dungeonmaster for Wispcloak, and not just via account wide. If you have done them account wide, but not exclusively on your tailor, you will need to go back, and finish them up to get the recipes from Charles Worth.",

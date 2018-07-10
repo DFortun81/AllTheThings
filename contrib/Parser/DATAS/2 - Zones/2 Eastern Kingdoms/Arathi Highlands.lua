@@ -1096,11 +1096,6 @@ _.Zones =
 					na(2812, {	-- Drovnar Strongbrew <Alchemy Supplies>
 						i(6056),	-- Recipe: Frost Protection Potion
 					}),
-					--[[
-					na(44123, {	-- Emily Jackson <Stable Master>
-						i(37460),	-- Rope Pet Leash
-					}),
-					]]--
 					na(2810, {	-- Hammon Karwn <Superior Tradesman>
 						i(21942),	-- Design: Ruby Crown of Restoration
 						i(5973),	-- Pattern: Barbaric Leggings
@@ -1124,11 +1119,6 @@ _.Zones =
 					na(2814, {	-- Narj Deepslice <Butcher>
 						i(4609),	-- Recipe: Barbecued Buzzard Wing
 					}),
-					--[[
-					nh(9976, {	-- Tharlidun <Stable Master>
-						i(37460),	-- Rope Pet Leash
-					}),
-					]]--
 					nh(2819, {	-- Tunkk <Leatherworking Supplies>
 						i(13287), 	-- Pattern: Raptor Hide Harness
 					}),
