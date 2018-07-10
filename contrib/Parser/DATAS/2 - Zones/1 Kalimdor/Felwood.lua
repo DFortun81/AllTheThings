@@ -166,6 +166,18 @@ _.Zones =
 					}),
 					
 					
+					q( 28049, {	-- See the Invisible
+						["g"] = {
+							i(65276),	-- Gloves of Constellas
+							i(65296),	-- Oozing Vest
+							i(65315),	-- Impish Boots
+							i(65334),	-- Impsy's Wand
+						},
+						["qg"] = 47366,	-- Impsy
+						["sourceQuests"] = { 28000 },	-- Do the Imp-Possible
+					}),
+					
+					
 					q( 27997, {	-- The Corruption of the Jadefire
 						["g"] = {
 						},
@@ -361,12 +373,6 @@ _.Zones =
 					qa(4106),	-- Salve via Skinning
 					qh(5885),	-- Salve via Skinning
 --]]
-					qg(47366, q( 28049,  {  -- See the Invisible
-						i(65276),
-						i(65296),
-						i(65315),
-						i(65334),
-					})),
 					qg(48032, q( 28220)),	-- Seeking Soil
 					qg(51664, q( 28153)),	-- Shadow Lord Fel'dan
 					qg(48032, q( 28222)),	-- Singin' in the Sun
