@@ -1640,7 +1640,11 @@ Legacy				qh( 1436),	-- Alliance Relations
 							i(70910),	-- Horn of the Vicious War Wolf Mount
 							i(102533),	-- Reins of the Vicious Skeletal Warhorse Mount
 							i(142235),	-- Vicious War Bear
-							i(152869),	-- Vicious War Fox
+							i(152869, {	-- Vicious War Fox
+								["groups"] = {
+								},
+								["mountID"] = 242897, -- Vicious War Fox
+							}),
 							i(124540),	-- Vicious War Kodo Mount
 							i(116778),	-- Vicious War Raptor Mount
 							i(142437),	-- Vicious War Scorpion Mount

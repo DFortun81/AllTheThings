@@ -1079,7 +1079,6 @@ _.Zones =
 					q(14166),	-- The Grateful Dead
 					q(41112),	-- The Great Akazamzarak
 					q(46071),	-- The Hammer of Dalaran
-					q(42454),	-- The Hammer of Khaz'goroth
 					q(40731),	-- The Heart of the Dreadscar
 					qa( 45416),	-- The Highlord's Return
 					q(38513),	-- The Highmountain Smiths
