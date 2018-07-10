@@ -3,13 +3,120 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	n(-3, { 	-- Holiday
+	n(-3, { -- Holiday
 		["groups"] = {
-			n(-61, { 	-- Feast of Winter Veil
+			n(-61, { -- Feast of Winter Veil
 				["groups"] = {
-					n(-4, { 	-- Achievements
+					n(-4, { -- Achievements
 						ach(1691, { -- Merrymaker
-							un(29, title(102)), -- Merrymaker
+							["groups"] = {
+								un(29, title(102)), -- Merrymaker
+								ach(273, { -- On Metzen!
+									["groups"] = {},
+								}),
+								ach(252, { -- With a Little Helper from My Friends
+									["groups"] = {},
+								}),
+								ach(1255, { -- Scrooge (Alliance)
+									["groups"] = {},
+									["races"] = ALLIANCE_ONLY,
+								}),
+								ach(259, { -- Scrooge (Horde)
+									["groups"] = {},
+									["races"] = HORDE_ONLY,
+								}),
+								ach(1282, { -- Fa-la-la-la-Ogri'la
+									["groups"] = {},
+								}),
+								ach(277, { -- 'Tis the Season
+									["groups"] = {},
+								}),
+								ach(279, { -- Simply Abominable
+									["groups"] = {
+										q(7045, { -- A Smokywood Pastures' Thank You! (Alliance)
+											["groups"] = {},
+											["qg"] = 13433, -- Wulmort Jinglepocket
+											["maps"] = { 341, }, -- Ironforge
+											["races"] = ALLIANCE_ONLY,
+										}),
+										q(6984, { -- A Smokywood Pastures' Thank You! (Horde)
+											["groups"] = {},
+											["qg"] = 13418, -- Kaymard Copperpinch
+											["maps"] = { 321, }, -- Orgrimmar
+											["races"] = HORDE_ONLY,
+										}),
+									},
+								}),
+								ach(1687, { -- Let It Snow
+									["groups"] = {
+										crit(1), -- Orc Death Knight
+										crit(2), -- Human Warrior
+										crit(3), -- Tauren Shaman
+										crit(4), -- Night Elf Druid
+										crit(5), -- Undead Rogue
+										crit(6), -- Troll Hunter
+										crit(7), -- Gnome Mage
+										crit(8), -- Dwarf Paladin
+										crit(9), -- Blood Elf Warlock
+										crit(10), -- Draenei Priest
+									},
+								}),
+								ach(1686, { -- Bros. Before Ho Ho Ho's (Alliance)
+									["groups"] = {
+										crit(1), -- Brother Nimetz in Stranglethorn Vale
+										crit(2), -- Brother Wilhelm in Goldshire
+										crit(3), -- Brother Karman in Theramore
+										crit(4), --	Brother Kristoff in Stormwind
+										crit(5), -- Brother Joshua in Stormwind
+										crit(6), -- Brother Crowley in Stormwind
+										crit(7), -- Brother Cassius in Stormwind
+										crit(8), -- Brother Benjamin in Stormwind
+									},
+									["races"] = ALLIANCE_ONLY,
+								}),
+								ach(1685, { -- Bros. Before Ho Ho Ho's (Horde)
+									["groups"] = {
+										crit(1), -- Brother Malach in the Undercity
+										crit(2), -- Durkot Wolfbrother in Warsong Hold
+										crit(3), -- Brother Keltan in Icecrown
+									},
+									["races"] = HORDE_ONLY,
+								}),
+								ach(1688, { -- The Winter Veil Gourmet
+									["groups"] = {
+										crit(1), -- Gingerbread Cookie
+										crit(2), -- Winter Veil Egg Nog
+										crit(3), -- Hot Apple Cider
+									},
+								}),
+								ach(1689, { -- He Knows If You've Been Naughty
+									["groups"] = {},
+								}),
+								ach(1690, { -- A Frosty Shake
+									["groups"] = {},
+								}),
+							},
+							["u"] = 29, -- Feast of Winter Veil
+						}),
+						ach(10353, { -- Iron Armada
+							["groups"] = {
+								crit(1), -- Crashin' Thrashin' Flamer
+								crit(2), -- Crashin' Thrashin' Killdozer
+								crit(3), -- Crashin' Thrashin' Mortar
+								crit(4), -- Crashin' Thrashin' Cannon
+								crit(5), -- Crashin' Thrashin' Roller
+							},
+						}),
+						ach(8699, { -- The Danger Zone
+							["groups"] = {
+								i(116762, { -- Stolen Present
+									["groups"] = {
+										i(104318, { -- Crashin' Thrashin' Flyer Controller
+											["groups"] = {},
+										}),
+									},
+								}),
+							}
 						}),
 						ach(1705, { -- (2007)
 							i(34426, { -- Winter Veil Gift
