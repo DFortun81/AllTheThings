@@ -100,82 +100,183 @@ _.WorldEvents =
 						}),
 						ach(10353, { -- Iron Armada
 							["groups"] = {
-								crit(1), -- Crashin' Thrashin' Flamer
-								crit(2), -- Crashin' Thrashin' Killdozer
-								crit(3), -- Crashin' Thrashin' Mortar
-								crit(4), -- Crashin' Thrashin' Cannon
-								crit(5), -- Crashin' Thrashin' Roller
-							},
-						}),
-						ach(8699, { -- The Danger Zone
-							["groups"] = {
-								i(116762, { -- Stolen Present
+								crit(1, { -- Crashin' Thrashin' Flamer
 									["groups"] = {
-										i(104318, { -- Crashin' Thrashin' Flyer Controller
-											["groups"] = {},
+										i(116762, { -- Stolen Present
+											["groups"] = {
+												un(29, i(108632)), -- Crashin' Thrashin' Flamer Controller
+											},
 										}),
 									},
 								}),
-							}
+								crit(2, { -- Crashin' Thrashin' Killdozer
+									["groups"] = {
+										i(128659, { -- Merry Supplies
+											["groups"] = {
+												un(29, i(108635)), -- Crashin' Thrashin' Killdozer Controller
+											},
+										}),
+									},
+								}),
+								crit(3, { -- Crashin' Thrashin' Mortar
+									["groups"] = {
+										n(98285, { -- Smashum Grabb
+											["groups"] = {
+												un(29, i(108634)), -- Crashin' Thrashin' Mortar Controller
+											},
+										}),
+									},
+								}),
+								crit(4, { -- Crashin' Thrashin' Cannon
+									["groups"] = {
+										n(98284, { -- Gondar
+											["groups"] = {
+												un(29, i(108633)), -- Crashin' Thrashin' Cannon Controller
+											},
+										}),
+									},
+								}),
+								crit(5, { -- Crashin' Thrashin' Roller
+									["groups"] = {
+										n(98283, { -- Drakum
+											["groups"] = {
+												un(29, i(108631)), -- Crashin' Thrashin' Roller Controller
+											},
+										}),
+									},
+								}),
+							},
+							["u"] = 29, -- Feast of Winter Veil
 						}),
-						ach(1705, { -- (2007)
-							i(34426, { -- Winter Veil Gift
-								un(29, i(34425)), -- Clockwork Rocket Bot
-							}),
+						ach(8699, { -- The Danger Zone
+							["groups"] = {},
+							["u"] = 29, -- Feast of Winter Veil
 						}),
-						ach(1706, { -- (2008)
-							i(43504, { -- Winter Veil Gift
-								un(29, i(37710)), -- Crashin' Thrashin' Racer Controller
-							}),
+						ach(5853, { -- A-Caroling We Will Go (Alliance)
+							["groups"] = {
+								crit(1), -- Orgrimmar
+								crit(2), -- Silvermoon City
+								crit(3), -- Thunder Bluff
+								crit(4), -- Undercity
+							},
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 29, -- Feast of Winter Veil
 						}),
-						--[[  NOTHING COLLECTIBLE =(
-						ach(6059, { -- (2009)
-							i(46740, { -- Winter Veil Gift
-								i(46725), -- Red Rider Air Rifle
-							}),
+						ach(5854, { -- A-Caroling We Will Go (Horde)
+							["groups"] = {
+								crit(1), -- Darnassus
+								crit(2), -- The Exodar
+								crit(3), -- Ironforge
+								crit(4), -- Stormwind City
+							},
+							["races"] = HORDE_ONLY,
+							["u"] = 29, -- Feast of Winter Veil
 						}),
-						--]]
-						ach(6060, { -- MiniZep Controller (2010)
-							i(67443, { -- Winter Veil Gift
-								un(29, i(46709)), -- MiniZep Controller
-							}),
+						ach(4436, { -- BB King (Alliance)
+							["groups"] = {
+								crit(1), -- Baine Bloodhoof
+								crit(2), -- Lady Sylvanas Windrunner
+								crit(3), -- Lor'themar Theron
+								crit(4), -- High Overlord Saurfang
+							},
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 29, -- Feast of Winter Veil
 						}),
-						ach(6061, { -- (2011)
-							i(70938, { -- Winter Veil Gift
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
-							}),
+						ach(4437, { -- BB King (Horde)
+							["groups"] = {
+								crit(1), -- Muradin Bronzebeard
+								crit(2), -- Prophet Velen
+								crit(3), -- Tyrande Whisperwind
+								crit(4), -- Anduin Wrynn
+							},
+							["races"] = HORDE_ONLY,
+							["u"] = 29, -- Feast of Winter Veil
 						}),
-						ach(7852, { -- (2012)
-							i(90892, { -- Winter Veil Gift
-								un(29, i(90888)), -- Foot Ball
-								un(29, i(90883)), -- The Pigskin
-							}),
+						ach(1295, { -- Crashin' & Thrashin'
+							["groups"] = {
+								crit(1), -- Gain 25 crashes with your Crashin' Thrashin' Racer
+							},
+							["u"] = 29, -- Feast of Winter Veil
 						}),
-						ach(8698, { -- (2013)
-							i(104319, { -- Winter Veil Gift
-								un(29, i(104318)), -- Crashin' Thrashin' Flyer Controller
-							}),
-						}),
-						ach(9915, { -- (2014)
-							i(116761, { -- Winter Veil Gift
-								un(29, i(116763)), -- Crashin' Thrashin' Shredder Controller
-							}),
-						}),
-						ach(10337, { -- (2015)
-							i(128653, { -- Winter Veil Gift
-								un(29, i(108632)), -- Crashin' Thrashin' Flamer Controller
-							}),
-						}),
-						ach(10751, { -- (2016)
-							i(139341, { -- Winter Veil Gift
-								un(29, i(128636)), -- Endothermic Blaster
-							}),
-						}),
-						ach(11913, { -- (2017)
-							i(151350, { -- Winter Veil Gift
-								un(29, a(i(151349))), -- Toy Weapon Set [Alliance]
-								un(29, h(i(151348))), -- Toy Weapon Set [Horde]
-							}),
+						n(-9969, { -- Feats of Strength
+							["groups"] = {
+								ach(1705, { -- Clockwork Rocket Bot (2007)
+									["groups"] = {
+										i(34426, { -- Winter Veil Gift
+											un(29, i(34425)), -- Clockwork Rocket Bot
+										}),
+									},
+								}),
+								ach(1706, { -- Crashin' Thrashin' Racer (2008)
+									["groups"] = {
+										i(43504, { -- Winter Veil Gift
+											un(29, i(37710)), -- Crashin' Thrashin' Racer Controller
+										}),
+									},
+								}),
+								ach(6059, { -- Red Rider Air Rifle (2009)
+									["groups"] = {},
+								}),
+								ach(6060, { -- MiniZep Controller (2010)
+									["groups"] = {
+										i(67443, { -- Winter Veil Gift
+											un(29, i(46709)), -- MiniZep Controller
+										}),
+									},
+								}),
+								ach(6061, { -- Gaudy Winter Veil Sweater (2011)
+									["groups"] = {
+										i(70938, { -- Winter Veil Gift
+											un(29, i(70923)), -- Gaudy Winter Veil Sweater
+										}),
+									},
+								}),
+								ach(7852, { -- They're Both Footballs? (2012)
+									["groups"] = {
+										i(90892, { -- Winter Veil Gift
+											un(29, i(90888)), -- Foot Ball
+											un(29, i(90883)), -- The Pigskin
+										}),
+									},
+								}),
+								ach(8698, { -- Crashin' Thrashin' Flyer (2013)
+									["groups"] = {
+										i(104319, { -- Winter Veil Gift
+											un(29, i(104318)), -- Crashin' Thrashin' Flyer Controller
+										}),
+									},
+								}),
+								ach(9915, { -- Crashin' Thrashin' Shredder (2014)
+									["groups"] = {
+										i(116761, { -- Winter Veil Gift
+											un(29, i(116763)), -- Crashin' Thrashin' Shredder Controller
+										}),
+									},
+								}),
+								ach(10337, { -- Crashin' Thrashin' Flamer (2015)
+									["groups"] = {
+										i(128653, { -- Winter Veil Gift
+											un(29, i(108632)), -- Crashin' Thrashin' Flamer Controller
+										}),
+									},
+								}),
+								ach(10751, { -- Brr... It's Cold in Here (2016)
+									["groups"] = {
+										i(139341, { -- Winter Veil Gift
+											un(29, i(128636)), -- Endothermic Blaster
+										}),
+									},
+								}),
+								ach(11913, { -- Don't Play With That In The House (2017)
+									["groups"] = {
+										i(151350, { -- Winter Veil Gift
+											un(29, a(i(151349))), -- Toy Weapon Set [Alliance]
+											un(29, h(i(151348))), -- Toy Weapon Set [Horde]
+										}),
+									},
+								}),
+							},
+							["u"] = 29, -- Feast of Winter Veil
 						}),
 					}),
 					n(-139, { 	-- Bosses
