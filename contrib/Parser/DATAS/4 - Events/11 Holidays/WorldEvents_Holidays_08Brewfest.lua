@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
---[[
-TODO: Update the "A New Supplier of Souvenirs" quest (for both factions) to longhand notation.
-]]--
 _.WorldEvents =
 {
 	n(-3, { -- Holiday
