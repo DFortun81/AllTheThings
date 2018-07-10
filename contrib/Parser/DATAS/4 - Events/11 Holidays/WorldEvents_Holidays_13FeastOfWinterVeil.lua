@@ -215,7 +215,49 @@ _.WorldEvents =
 									},
 								}),
 								ach(6059, { -- Red Rider Air Rifle (2009)
-									["groups"] = {},
+									["groups"] = {
+										n(-2, { -- Vendors
+											["groups"] = {
+												n(52809, { -- Blax Bottlerocket
+													["groups"] = {
+														un(29, i(46725)), -- Red Rider Air Rifle
+													},
+													["races"] = HORDE_ONLY,
+												}),
+												n(29716, { -- Clockwork Assistant (Dalaran (Northrend))
+													["groups"] = {
+														un(29, i(46725)), -- Red Rider Air Rifle
+													},
+												}),
+												n(96484, { -- Clockwork Assistant (Dalaran (Broken Isles))
+													["groups"] = {
+														un(29, i(46725)), -- Red Rider Air Rifle
+													},
+												}),
+												n(52358, { -- Craggle Wobbletop
+													["groups"] = {
+														un(29, i(46725)), -- Red Rider Air Rifle
+													},
+													["races"] = ALLIANCE_ONLY,
+												}),
+												n(29478, { -- Jepetto Joybuzz (Dalaran (Northrend))
+													["groups"] = {
+														un(29, i(46725)), -- Red Rider Air Rifle
+													},
+												}),
+												n(96483, { -- Jepetto Joybuzz (Dalaran (Broken Isles))
+													["groups"] = {
+														un(29, i(46725)), -- Red Rider Air Rifle
+													},
+												}),
+												n(84212, { -- Kazbala
+													["groups"] = {
+														un(29, i(46725)), -- Red Rider Air Rifle
+													},
+												}),
+											},
+										}),
+									},
 								}),
 								ach(6060, { -- MiniZep Controller (2010)
 									["groups"] = {
