@@ -7,7 +7,7 @@ _.Zones =
 		["groups"] = {
 			-- Quests Here
 		},
-		["description"] = "These can be obtained from any city or town.",
+		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
 		["collectible"] = false,
 		["races"] = HORDE_ONLY,
 	})),
@@ -15,7 +15,7 @@ _.Zones =
 		["groups"] = {
 			-- Quests Here
 		},
-		["description"] = "These can be obtained from any city or town.",
+		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
 		["collectible"] = false,
 		["races"] = ALLIANCE_ONLY,
 	})),
